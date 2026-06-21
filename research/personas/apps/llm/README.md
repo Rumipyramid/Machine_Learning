@@ -10,7 +10,7 @@ persona, razonadas por el modelo a partir del perfil de cada persona.
 
 ## Cómo funciona
 
-1. El backend muestrea N perfiles con el generador calibrado (`../generate_synthetic_users.py`).
+1. El backend muestrea N perfiles con el generador calibrado (`../../generador/generate_synthetic_users.py`).
 2. Construye un prompt con el **codebook** de los parámetros + la pregunta + las personas en JSON.
 3. Llama a Claude **una sola vez** con *structured outputs* (JSON schema): devuelve, validado,
    `quote` + `sentiment` (favorable/neutral/desfavorable) por persona, más `insights` ejecutivos.

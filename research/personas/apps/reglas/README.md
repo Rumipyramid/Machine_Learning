@@ -30,7 +30,7 @@ seguros (Perú) y obtener **gráficos de distribución, desglose por segmento e 
 | `explorador_standalone.html` | App en un único archivo (engine embebido). |
 | `build_standalone.js` | Reconstruye el standalone: `node build_standalone.js`. |
 
-El motor reusa las distribuciones de `../synthetic_user_schema.json` (SBS 2023, APESEG, APEIM).
+El motor reusa las distribuciones de `../../generador/synthetic_user_schema.json` (SBS 2023, APESEG, APEIM).
 
 > **Datos sintéticos:** no representan personas reales. Para prototipado, exploración de hipótesis
 > y diseño de mensajes; no sustituyen una encuesta de mercado.

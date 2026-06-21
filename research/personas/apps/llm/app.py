@@ -25,7 +25,7 @@ import random
 from flask import Flask, jsonify, request, send_from_directory
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
-GEN_PATH = os.path.normpath(os.path.join(APP_DIR, "..", "generate_synthetic_users.py"))
+GEN_PATH = os.path.normpath(os.path.join(APP_DIR, "..", "..", "generador", "generate_synthetic_users.py"))
 
 # --- Cargar el generador calibrado como módulo ---
 _spec = importlib.util.spec_from_file_location("synthgen", GEN_PATH)

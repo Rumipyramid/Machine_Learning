@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 dist/
 *.zip
+
+# Artefactos generados de personas sintéticas (regenerables)
+research/personas/**/*.csv
+!research/personas/generador/usuarios_sinteticos_ejemplo.csv

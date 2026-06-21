@@ -71,10 +71,10 @@ Insights codificados:
 
 ```bash
 # 5 perfiles en consola
-python research/personas/generate_synthetic_users.py --n 5 --seed 42
+python research/personas/generador/generate_synthetic_users.py --n 5 --seed 42
 
 # 1000 perfiles a CSV reproducible
-python research/personas/generate_synthetic_users.py --n 1000 --out usuarios.csv --seed 42
+python research/personas/generador/generate_synthetic_users.py --n 1000 --out usuarios.csv --seed 42
 ```
 
 Salida (columnas): `id, generacion, nse, region, educacion_financiera, sesgo_presente,

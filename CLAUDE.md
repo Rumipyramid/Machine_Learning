@@ -7,6 +7,25 @@ repositorio. Funciona como "bóveda/codex" persistente del proyecto.
 - **Proyecto:** Machine_Learning (`Rumipyramid/Machine_Learning`)
 - Contenido principal: `Proyecto_ML_1.ipynb`, carpeta `Self driving car`.
 
+## Mapa de la bóveda
+```
+README.md                      ← entrada / mapa del repo
+CLAUDE.md                      ← este códice
+research/
+  README.md                    ← índice de investigación
+  seguros_comportamiento_mundo_peru.md
+  personas/
+    generador/                 ← generador, esquema, matriz, dataset de ejemplo
+    laminas/                   ← lámina explicativa (script + PNG)
+    apps/reglas/               ← explorador web por reglas (autocontenido)
+    apps/llm/                  ← app de preguntas libres con Claude (API)
+  updates/                     ← reportes quincenales + generador del reporte
+.claude/skills/
+  lapuerta/                    ← skill compartible (generar + simular)
+  cerrajero/                   ← skill: actualización quincenal a demanda
+.github/workflows/             ← Action programado (reporte quincenal)
+```
+
 ## Base de conocimiento (codex)
 
 ### 📌 Seguros — comportamiento y percepción (Mundo vs. Perú)
@@ -21,11 +40,14 @@ Swiss Re, MAPFRE, APESEG, SBS Perú y literatura de economía conductual.
 ### 📌 Usuarios sintéticos de seguros (Perú)
 Matriz de variables + distribuciones para generar perfiles sintéticos calibrados a los datos.
 
-- **Matriz legible:** `research/personas/matriz_usuarios_sinteticos.md`
-- **Esquema (machine-readable):** `research/personas/synthetic_user_schema.json`
-- **Generador:** `research/personas/generate_synthetic_users.py` (solo stdlib)
-  - Uso: `python research/personas/generate_synthetic_users.py --n 1000 --out usuarios.csv --seed 42`
-- **Dataset de ejemplo:** `research/personas/usuarios_sinteticos_ejemplo.csv`
+- **Matriz legible:** `research/personas/generador/matriz_usuarios_sinteticos.md`
+- **Esquema (machine-readable):** `research/personas/generador/synthetic_user_schema.json`
+- **Generador:** `research/personas/generador/generate_synthetic_users.py` (solo stdlib)
+  - Uso: `python research/personas/generador/generate_synthetic_users.py --n 1000 --out usuarios.csv --seed 42`
+- **Dataset de ejemplo:** `research/personas/generador/usuarios_sinteticos_ejemplo.csv`
+- **Lámina explicativa:** `research/personas/laminas/` (script `build_lamina_detalle.py` + PNG)
+- **Apps web:** `research/personas/apps/reglas/` (explorador por reglas, autocontenido) y
+  `research/personas/apps/llm/` (preguntas libres con Claude vía API).
 - Variables: generación, NSE, región, educación financiera, sesgo del presente, canal,
   exposición sísmica, apertura a datos/IA, confianza, tenencia de seguro, seguro de desastres,
   WTP ratio.
@@ -59,7 +81,10 @@ variables al modelo `lapuerta`.
 <!-- LAPUERTA_REPORTS_END -->
 
 ## Convenciones
-- Documentación de investigación → carpeta `research/`.
-- Activos de personas sintéticas → `research/personas/`.
+- Documentación de investigación → `research/` (con índice en `research/README.md`).
+- Modelo de personas sintéticas → `research/personas/generador/` (fuente de verdad de desarrollo);
+  el skill `lapuerta` lleva su propia copia autocontenida para compartir.
+- Láminas/figuras → `research/personas/laminas/`; apps web → `research/personas/apps/`.
 - Skills del proyecto → `.claude/skills/`.
 - Reportes quincenales → `research/updates/` (indexados arriba).
+- Artefactos generados (CSV de muestras, ZIP, `__pycache__`, `dist/`) NO se versionan.

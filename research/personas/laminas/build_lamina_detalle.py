@@ -8,7 +8,7 @@ Cambios v6:
 - Grafico de anclas sin choque eje/nota.
 - Lienzo mas alto; diagramacion y tamanos revisados para lectura.
 
-Salida: research/personas/lamina_sistema_usuarios_sinteticos_detalle.png
+Salida: research/personas/laminas/lamina_sistema_usuarios_sinteticos_detalle.png
 """
 import matplotlib
 matplotlib.use("Agg")
@@ -205,6 +205,6 @@ bg.text(5, 5.6,
 bg.text(196, 6.8, "Elaboración: 2026-06-21 · research/personas/", ha="right", va="center",
         color="#b39aa0", fontsize=8)
 
-plt.savefig("research/personas/lamina_sistema_usuarios_sinteticos_detalle.png",
+plt.savefig("research/personas/laminas/lamina_sistema_usuarios_sinteticos_detalle.png",
             facecolor=BLANCO, bbox_inches="tight")
 print("OK")
