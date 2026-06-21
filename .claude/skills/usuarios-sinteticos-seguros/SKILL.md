@@ -76,9 +76,18 @@ Campos para filtrar: `generacion`, `nse`, `region`, `canal_preferido`, etc.
 ## Cómo simular respuestas (dos motores)
 A partir del perfil de cada persona se construye su respuesta:
 
-1. **Por reglas:** cada rasgo suma o resta y decide la postura. Las direcciones vienen de
-   los datos: `desconfia` (−), `nse` alto (+), `sesgo_presente` alto (−), `educacion alta` (+),
-   `canal broker` (+ confianza). Útil para preguntas cerradas y porcentajes reproducibles.
+1. **Por reglas (listo para usar):** `scripts/simulate_rules.py`. Cada rasgo suma o resta
+   y decide la postura; las direcciones vienen de los datos (`desconfia` −, `nse` alto +,
+   `sesgo_presente` alto −, `educacion alta` +, `canal broker` +). Para preguntas cerradas
+   y porcentajes reproducibles.
+   ```bash
+   python scripts/simulate_rules.py --list                      # preguntas disponibles
+   python scripts/simulate_rules.py --question confianza --n 1000 --seed 42
+   python scripts/simulate_rules.py --question contratar --n 1000 --by nse
+   python scripts/simulate_rules.py --question marca --brand "RIMAC" --filter nse=A --by generacion
+   ```
+   Preguntas: `confianza`, `contratar`, `tenencia`, `marca` (`--brand`), `datos_ia`.
+   Banderas: `--n`, `--seed`, `--filter campo=valor` (repetible), `--by <dimensión>`.
 2. **Con un LLM (Claude):** dale al modelo el perfil + el codebook de arriba y pídele
    responder en primera persona, coherente con los atributos, devolviendo `quote` +
    `sentiment` (favorable/neutral/desfavorable). Útil para preguntas abiertas.
@@ -122,8 +131,10 @@ mercado ni prueban relaciones causales.
 
 ## Archivos del skill
 - `scripts/generate_synthetic_users.py` — generador (stdlib).
+- `scripts/simulate_rules.py` — motor de respuestas por reglas (stdlib): distribución + desglose.
 - `scripts/synthetic_user_schema.json` — distribuciones calibradas (editable).
 - `references/matriz_usuarios_sinteticos.md` — matriz completa, grafo de dependencias y arquetipos.
+- `SKILL.en.md` — guía equivalente en inglés (para compartir).
 
 ## Instalación (para compartir)
 Copia la carpeta `usuarios-sinteticos-seguros/` a `.claude/skills/` (proyecto) o
