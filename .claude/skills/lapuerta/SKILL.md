@@ -60,7 +60,7 @@ while len(grupo) < 30:                 # 30 usuarios NSE A
 
 Campos para filtrar: `generacion`, `nse`, `region`, `canal_preferido`, etc.
 
-## Las 12 variables (qué significa cada una)
+## Las 16 variables (qué significa cada una)
 | Variable | Significado |
 |---|---|
 | `generacion` | Cohorte de edad: `Gen_Z_18_27`, `Millennial_28_43`, `Gen_X_44_59`, `Boomer_60_mas`. |
@@ -69,6 +69,10 @@ Campos para filtrar: `generacion`, `nse`, `region`, `canal_preferido`, etc.
 | `educacion_financiera` | `baja` / `media` / `alta`. |
 | `sesgo_presente` | Tendencia a postergar la decisión (`alto`/`medio`/`bajo`); frena la compra. |
 | `canal_preferido` | `directo_digital`, `bancaseguros`, `broker_corredor`, `ninguno`. |
+| `situacion_laboral` | `formal_dependiente` / `independiente_microemprendedor` / `informal` (depende de NSE). Formal → Vida Ley. |
+| `tenencia_vehiculo` | `ninguno` / `auto` / `moto_mototaxi` (depende de región). Base de SOAT y su cumplimiento. |
+| `acceso_digital` | `alta` / `media` / `baja` (región+NSE+generación). Billetera móvil / uso digital. |
+| `bancarizado` | `True`/`False`. Pertenece al sistema financiero (≈59%); habilita bancaseguros. |
 | `exposicion_riesgo_sismico` | `alta` / `media` / `baja` (depende de la región). |
 | `apertura_datos_ia` | Disposición a compartir datos y confiar en IA (mayor en jóvenes). |
 | `confianza_aseguradora` | `confia_plena` / `neutral` / `desconfia`. |

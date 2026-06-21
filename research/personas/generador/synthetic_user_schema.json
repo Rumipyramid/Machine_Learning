@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "Matriz de variables para generación de usuarios sintéticos - seguros (Perú)",
-    "version": "1.0",
-    "fecha": "2026-06-21",
-    "fuente_datos": "research/seguros_comportamiento_mundo_peru.md",
-    "nota": "Las distribuciones marginales mezclan datos reales (SBS 2023, APESEG, APEIM) con supuestos ilustrativos claramente marcados con 'origen'. Calibrar antes de usar en producción.",
+    "version": "1.1",
+    "fecha": "2026-07-06",
+    "fuente_datos": "research/seguros_comportamiento_mundo_peru.md + research/updates/",
+    "nota": "Distribuciones mezclan datos reales (SBS 2023, APESEG, APEIM, BCRP/INEI, Gestión) con supuestos ilustrativos marcados con 'origen'. v1.1 añade situacion_laboral, tenencia_vehiculo, acceso_digital y bancarizado (reportes quincenales).",
     "leyenda_origen": {
-      "dato": "anclado en una fuente citada en el documento de investigación",
+      "dato": "anclado en una fuente citada en la investigación",
       "supuesto": "estimación ilustrativa para completar la matriz; ajustable"
     }
   },
@@ -18,7 +18,7 @@
         "Gen_Z_18_27": 0.22,
         "Millennial_28_43": 0.33,
         "Gen_X_44_59": 0.25,
-        "Boomer_60_mas": 0.20
+        "Boomer_60_mas": 0.2
       }
     },
     "nse": {
@@ -38,26 +38,26 @@
       "categorias": {
         "Lima_Metropolitana": 0.33,
         "Resto_Costa": 0.25,
-        "Sierra": 0.30,
+        "Sierra": 0.3,
         "Selva": 0.12
       }
     },
     "educacion_financiera": {
       "descripcion": "Nivel de comprension de productos financieros y de seguros",
-      "origen": "supuesto (consistente con baja penetracion y confusion seguro/salud publica)",
+      "origen": "supuesto (consistente con baja penetracion)",
       "categorias": {
-        "baja": 0.50,
+        "baja": 0.5,
         "media": 0.35,
         "alta": 0.15
       }
     },
     "sesgo_presente": {
-      "descripcion": "Tendencia a posponer decisiones (procrastinacion / present bias). Predictor negativo de tenencia",
-      "origen": "dato (literatura conductual: predictor negativo fuerte)",
+      "descripcion": "Tendencia a posponer decisiones (present bias). Predictor negativo de tenencia",
+      "origen": "dato (literatura conductual)",
       "categorias": {
         "alto": 0.45,
         "medio": 0.35,
-        "bajo": 0.20
+        "bajo": 0.2
       }
     },
     "canal_preferido": {
@@ -65,9 +65,9 @@
       "origen": "supuesto",
       "categorias": {
         "directo_digital": 0.35,
-        "bancaseguros": 0.30,
+        "bancaseguros": 0.3,
         "broker_corredor": 0.25,
-        "ninguno": 0.10
+        "ninguno": 0.1
       }
     },
     "exposicion_riesgo_sismico": {
@@ -75,59 +75,267 @@
       "origen": "dato (Peru pais altamente sismico)",
       "condicional_de": "region",
       "tabla": {
-        "Lima_Metropolitana": {"alta": 0.85, "media": 0.13, "baja": 0.02},
-        "Resto_Costa": {"alta": 0.70, "media": 0.25, "baja": 0.05},
-        "Sierra": {"alta": 0.40, "media": 0.45, "baja": 0.15},
-        "Selva": {"alta": 0.20, "media": 0.45, "baja": 0.35}
+        "Lima_Metropolitana": {
+          "alta": 0.85,
+          "media": 0.13,
+          "baja": 0.02
+        },
+        "Resto_Costa": {
+          "alta": 0.7,
+          "media": 0.25,
+          "baja": 0.05
+        },
+        "Sierra": {
+          "alta": 0.4,
+          "media": 0.45,
+          "baja": 0.15
+        },
+        "Selva": {
+          "alta": 0.2,
+          "media": 0.45,
+          "baja": 0.35
+        }
       }
     },
     "apertura_datos_ia": {
-      "descripcion": "Disposicion a compartir datos / confiar en IA de la aseguradora (depende de generacion)",
-      "origen": "dato (Gen Z 87% confia en IA vs Boomers 75%; 38% vs 22% mas positivos a compartir)",
+      "descripcion": "Disposicion a compartir datos / confiar en IA (depende de generacion)",
+      "origen": "dato (Gen Z 87% confia en IA vs Boomers 75%)",
       "condicional_de": "generacion",
       "tabla": {
-        "Gen_Z_18_27": {"alta": 0.55, "media": 0.32, "baja": 0.13},
-        "Millennial_28_43": {"alta": 0.45, "media": 0.35, "baja": 0.20},
-        "Gen_X_44_59": {"alta": 0.32, "media": 0.40, "baja": 0.28},
-        "Boomer_60_mas": {"alta": 0.22, "media": 0.40, "baja": 0.38}
+        "Gen_Z_18_27": {
+          "alta": 0.55,
+          "media": 0.32,
+          "baja": 0.13
+        },
+        "Millennial_28_43": {
+          "alta": 0.45,
+          "media": 0.35,
+          "baja": 0.2
+        },
+        "Gen_X_44_59": {
+          "alta": 0.32,
+          "media": 0.4,
+          "baja": 0.28
+        },
+        "Boomer_60_mas": {
+          "alta": 0.22,
+          "media": 0.4,
+          "baja": 0.38
+        }
+      }
+    },
+    "situacion_laboral": {
+      "descripcion": "Situacion laboral; condiciona acceso a Vida Ley (formal) y bancaseguros",
+      "origen": "dato/supuesto (informalidad ~70%; OECD 2025)",
+      "condicional_de": "nse",
+      "tabla": {
+        "A": {
+          "formal_dependiente": 0.7,
+          "independiente_microemprendedor": 0.2,
+          "informal": 0.1
+        },
+        "B": {
+          "formal_dependiente": 0.55,
+          "independiente_microemprendedor": 0.25,
+          "informal": 0.2
+        },
+        "C": {
+          "formal_dependiente": 0.35,
+          "independiente_microemprendedor": 0.3,
+          "informal": 0.35
+        },
+        "D": {
+          "formal_dependiente": 0.2,
+          "independiente_microemprendedor": 0.28,
+          "informal": 0.52
+        },
+        "E": {
+          "formal_dependiente": 0.1,
+          "independiente_microemprendedor": 0.25,
+          "informal": 0.65
+        }
+      }
+    },
+    "tenencia_vehiculo": {
+      "descripcion": "Vehiculo del hogar; define base de SOAT y su cumplimiento (auto ~90%, moto ~20%)",
+      "origen": "dato (Gestion: 2/10 con seguro voluntario; 4/5 motos sin SOAT)",
+      "condicional_de": "region",
+      "tabla": {
+        "Lima_Metropolitana": {
+          "ninguno": 0.55,
+          "auto": 0.3,
+          "moto_mototaxi": 0.15
+        },
+        "Resto_Costa": {
+          "ninguno": 0.5,
+          "auto": 0.18,
+          "moto_mototaxi": 0.32
+        },
+        "Sierra": {
+          "ninguno": 0.55,
+          "auto": 0.12,
+          "moto_mototaxi": 0.33
+        },
+        "Selva": {
+          "ninguno": 0.4,
+          "auto": 0.1,
+          "moto_mototaxi": 0.5
+        }
+      }
+    },
+    "acceso_digital": {
+      "descripcion": "Acceso/uso digital y billetera movil. Score por region+nse+generacion -> {alta,media,baja}",
+      "origen": "dato (bancarizacion 59%; urbano 61% vs rural 37%; Yape/Plin)",
+      "condicional_de": [
+        "region",
+        "nse",
+        "generacion"
+      ],
+      "score": {
+        "region": {
+          "Lima_Metropolitana": 1.0,
+          "Resto_Costa": 0.4,
+          "Sierra": -0.2,
+          "Selva": -0.6
+        },
+        "nse": {
+          "A": 1.2,
+          "B": 0.8,
+          "C": 0.2,
+          "D": -0.4,
+          "E": -0.8
+        },
+        "generacion": {
+          "Gen_Z_18_27": 0.8,
+          "Millennial_28_43": 0.5,
+          "Gen_X_44_59": 0.0,
+          "Boomer_60_mas": -0.6
+        },
+        "intercepto": -0.1,
+        "umbral_alta": 0.7,
+        "umbral_media": -0.4
+      }
+    },
+    "bancarizado": {
+      "descripcion": "Pertenece al sistema financiero (cuenta/credito). Habilita canal bancaseguros",
+      "origen": "dato (~59% de adultos; BCRP/INEI)",
+      "condicional_de": [
+        "nse",
+        "region",
+        "acceso_digital"
+      ],
+      "score": {
+        "nse": {
+          "A": 2.0,
+          "B": 1.3,
+          "C": 0.4,
+          "D": -0.3,
+          "E": -0.9
+        },
+        "region": {
+          "Lima_Metropolitana": 0.5,
+          "Resto_Costa": 0.1,
+          "Sierra": -0.2,
+          "Selva": -0.3
+        },
+        "acceso_digital": {
+          "alta": 0.8,
+          "media": 0.1,
+          "baja": -0.7
+        },
+        "intercepto": 0.45
       }
     }
   },
   "modelos_derivados": {
     "confianza_aseguradora": {
-      "descripcion": "Salida {desconfia, neutral, confia_plena}. Marginal objetivo ~ desconfia 0.48, neutral 0.29, confia 0.23 (SBS/APESEG). El canal broker desplaza hacia confianza.",
+      "descripcion": "Salida {desconfia, neutral, confia_plena}. Marginal objetivo ~ desconfia 0.48 (SBS/APESEG). El broker desplaza hacia confianza.",
       "origen": "dato",
-      "marginal_objetivo": {"desconfia": 0.48, "neutral": 0.29, "confia_plena": 0.23},
+      "marginal_objetivo": {
+        "desconfia": 0.48,
+        "neutral": 0.29,
+        "confia_plena": 0.23
+      },
       "ajuste_por_canal": {
-        "broker_corredor": "+0.15 a confia_plena (la intermediacion eleva la confianza)",
+        "broker_corredor": "+0.15 a confia_plena",
         "directo_digital": "-0.03 a confia_plena",
         "bancaseguros": "0",
         "ninguno": "0"
       }
     },
     "tenencia_seguro": {
-      "descripcion": "Salida {ninguno, solo_obligatorio, voluntario}. ~4 de cada 10 tiene/tuvo seguro (SBS). Probabilidad modelada via score logistico segun NSE, educacion financiera, sesgo presente y confianza.",
-      "origen": "dato (SBS: ~40% tenencia)",
-      "marginal_objetivo_any_insurance": 0.40,
+      "descripcion": "Salida {ninguno, solo_obligatorio, voluntario}. ~4/10 tiene/tuvo seguro (SBS). Score logistico. v1.1 suma situacion_laboral, bancarizado y tenencia_vehiculo; intercepto recalibrado.",
+      "origen": "dato (SBS ~40%)",
+      "marginal_objetivo_any_insurance": 0.4,
       "drivers": {
-        "nse": {"A": 1.6, "B": 1.0, "C": 0.2, "D": -0.4, "E": -0.9},
-        "educacion_financiera": {"alta": 0.9, "media": 0.2, "baja": -0.5},
-        "sesgo_presente": {"alto": -0.7, "medio": -0.1, "bajo": 0.5},
-        "confianza_aseguradora": {"confia_plena": 0.6, "neutral": 0.0, "desconfia": -0.5},
-        "intercepto": 0.25
+        "nse": {
+          "A": 1.6,
+          "B": 1.0,
+          "C": 0.2,
+          "D": -0.4,
+          "E": -0.9
+        },
+        "educacion_financiera": {
+          "alta": 0.9,
+          "media": 0.2,
+          "baja": -0.5
+        },
+        "sesgo_presente": {
+          "alto": -0.7,
+          "medio": -0.1,
+          "bajo": 0.5
+        },
+        "confianza_aseguradora": {
+          "confia_plena": 0.6,
+          "neutral": 0.0,
+          "desconfia": -0.5
+        },
+        "situacion_laboral": {
+          "formal_dependiente": 0.5,
+          "independiente_microemprendedor": 0.1,
+          "informal": -0.5
+        },
+        "bancarizado": {
+          "true": 0.4,
+          "false": -0.2
+        },
+        "tenencia_vehiculo": {
+          "auto": 0.5,
+          "moto_mototaxi": -0.1,
+          "ninguno": 0.0
+        },
+        "intercepto": 0.0
+      },
+      "split_voluntario": {
+        "p_voluntario_por_nse": {
+          "A": 0.75,
+          "B": 0.6,
+          "C": 0.4,
+          "D": 0.25,
+          "E": 0.15
+        },
+        "factor_formal_dependiente": 0.7,
+        "factor_auto": 0.85,
+        "nota": "Formal y auto inclinan la tenencia hacia obligatorio (Vida Ley / SOAT)."
       }
     },
     "seguro_desastres_naturales": {
-      "descripcion": "Booleano. Marginal global ~3.3% de hogares (APESEG). Mas probable si NSE alto + exposicion sismica alta + ya tiene seguro voluntario.",
+      "descripcion": "Booleano. Marginal ~3.3% (APESEG). Mas probable con NSE alto + exposicion alta + seguro voluntario.",
       "origen": "dato (~3.3%)",
       "marginal_objetivo": 0.033
     },
     "wtp_ratio": {
-      "descripcion": "Disposicion a pagar como fraccion del precio justo del riesgo. No asegurados ~0.66 del precio justo (literatura). Asegurados ~1.0-1.2.",
+      "descripcion": "Disposicion a pagar como fraccion del precio justo. No asegurados ~0.66; asegurados ~1.05.",
       "origen": "dato",
       "distribucion": {
-        "no_asegurado": {"media": 0.66, "sd": 0.18},
-        "asegurado": {"media": 1.05, "sd": 0.20}
+        "no_asegurado": {
+          "media": 0.66,
+          "sd": 0.18
+        },
+        "asegurado": {
+          "media": 1.05,
+          "sd": 0.2
+        }
       }
     }
   }

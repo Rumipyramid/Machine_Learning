@@ -30,6 +30,16 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 |---|---|---|---|
 | **exposicion_riesgo_sismico** | region | Lima/Costa → mayoritariamente alta; Sierra/Selva → media/baja | dato (Perú sísmico) |
 | **apertura_datos_ia** | generacion | Gen Z muy alta → Boomer baja | dato (Gen Z 87% confía en IA vs 75% Boomers) |
+| **situacion_laboral** | nse | NSE alto → más formal_dependiente; NSE bajo → más informal | dato/supuesto (informalidad ~70%) |
+| **tenencia_vehiculo** | region | Lima → más auto; Sierra/Selva → más moto/mototaxi; ~52% ninguno | dato (2/10 con seguro; 4/5 motos sin SOAT) |
+| **acceso_digital** | region+nse+generacion | score → {alta/media/baja}; urbano/NSE alto/joven ↑ | dato (bancarización 59%; Yape/Plin) |
+| **bancarizado** | nse+region+acceso_digital | prob. logística; marginal ≈ 0.59 | dato (~59% adultos en sist. financiero) |
+
+> **v1.1 (2026-07-06):** se añadieron `situacion_laboral`, `tenencia_vehiculo`, `acceso_digital` y
+> `bancarizado` (reportes quincenales). Entran como drivers de `tenencia_seguro`
+> (formal_dependiente +, bancarizado +, auto +, moto/informal −) y el split voluntario/obligatorio
+> se inclina a obligatorio para formales (Vida Ley) y autos (SOAT). Marginales validadas tras la
+> recalibración: any-seguro ≈ 0.41, desconfía ≈ 0.45, desastres ≈ 0.035, bancarizado ≈ 0.60.
 
 ## 3. Variables derivadas (modeladas)
 

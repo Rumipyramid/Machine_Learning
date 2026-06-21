@@ -48,10 +48,11 @@ Matriz de variables + distribuciones para generar perfiles sintéticos calibrado
 - **Lámina explicativa:** `research/personas/laminas/` (script `build_lamina_detalle.py` + PNG)
 - **Apps web:** `research/personas/apps/reglas/` (explorador por reglas, autocontenido) y
   `research/personas/apps/llm/` (preguntas libres con Claude vía API).
-- Variables: generación, NSE, región, educación financiera, sesgo del presente, canal,
-  exposición sísmica, apertura a datos/IA, confianza, tenencia de seguro, seguro de desastres,
-  WTP ratio.
-- Marginales validadas: any-insurance ≈ 0.43, desconfía ≈ 0.45, desastres ≈ 0.03.
+- Variables (16, esquema v1.1): generación, NSE, región, educación financiera, sesgo del presente,
+  canal, **situación laboral, tenencia de vehículo, acceso digital, bancarizado**, exposición sísmica,
+  apertura a datos/IA, confianza, tenencia de seguro, seguro de desastres, WTP ratio.
+- Marginales validadas (v1.1): any-insurance ≈ 0.41, desconfía ≈ 0.45, desastres ≈ 0.035,
+  bancarizado ≈ 0.60.
 
 ### 📌 Skill: `lapuerta` (usuarios sintéticos de seguros)
 Generador + simulador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).

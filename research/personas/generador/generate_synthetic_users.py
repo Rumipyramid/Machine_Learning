@@ -55,19 +55,51 @@ def sample_confianza(rng: random.Random, schema: dict, canal: str) -> str:
     return weighted_choice(rng, base)
 
 
-def sample_tenencia(rng: random.Random, schema: dict, nse: str,
-                    edu: str, sesgo: str, confianza: str) -> str:
+def sample_situacion_laboral(rng: random.Random, schema: dict, nse: str) -> str:
+    return weighted_choice(rng, schema["variables"]["situacion_laboral"]["tabla"][nse])
+
+
+def sample_tenencia_vehiculo(rng: random.Random, schema: dict, region: str) -> str:
+    return weighted_choice(rng, schema["variables"]["tenencia_vehiculo"]["tabla"][region])
+
+
+def sample_acceso_digital(rng: random.Random, schema: dict, region: str, nse: str, generacion: str) -> str:
+    s = schema["variables"]["acceso_digital"]["score"]
+    score = s["intercepto"] + s["region"][region] + s["nse"][nse] + s["generacion"][generacion]
+    if score >= s["umbral_alta"]:
+        return "alta"
+    if score >= s["umbral_media"]:
+        return "media"
+    return "baja"
+
+
+def sample_bancarizado(rng: random.Random, schema: dict, nse: str, region: str, acceso: str) -> bool:
+    s = schema["variables"]["bancarizado"]["score"]
+    score = s["intercepto"] + s["nse"][nse] + s["region"][region] + s["acceso_digital"][acceso]
+    return rng.random() < sigmoid(score)
+
+
+def sample_tenencia(rng: random.Random, schema: dict, nse: str, edu: str, sesgo: str,
+                    confianza: str, situacion: str, bancarizado: bool, vehiculo: str) -> str:
     d = schema["modelos_derivados"]["tenencia_seguro"]["drivers"]
     score = (d["intercepto"]
              + d["nse"][nse]
              + d["educacion_financiera"][edu]
              + d["sesgo_presente"][sesgo]
-             + d["confianza_aseguradora"][confianza])
+             + d["confianza_aseguradora"][confianza]
+             + d["situacion_laboral"][situacion]
+             + d["bancarizado"]["true" if bancarizado else "false"]
+             + d["tenencia_vehiculo"][vehiculo])
     p_any = sigmoid(score)
     if rng.random() >= p_any:
         return "ninguno"
-    # De los que tienen seguro: mas obligatorio en NSE bajo, mas voluntario en alto.
-    p_voluntario = {"A": 0.75, "B": 0.60, "C": 0.40, "D": 0.25, "E": 0.15}[nse]
+    # De los que tienen seguro: mas obligatorio en NSE bajo; formal y auto inclinan a obligatorio.
+    sp = schema["modelos_derivados"]["tenencia_seguro"]["split_voluntario"]
+    p_voluntario = sp["p_voluntario_por_nse"][nse]
+    if situacion == "formal_dependiente":
+        p_voluntario *= sp["factor_formal_dependiente"]
+    if vehiculo == "auto":
+        p_voluntario *= sp["factor_auto"]
     return "voluntario" if rng.random() < p_voluntario else "solo_obligatorio"
 
 
@@ -99,9 +131,13 @@ def generate_user(rng: random.Random, schema: dict, idx: int) -> dict:
     canal = weighted_choice(rng, v["canal_preferido"]["categorias"])
     exposicion = weighted_choice(rng, v["exposicion_riesgo_sismico"]["tabla"][region])
     apertura = weighted_choice(rng, v["apertura_datos_ia"]["tabla"][generacion])
+    situacion = sample_situacion_laboral(rng, schema, nse)
+    vehiculo = sample_tenencia_vehiculo(rng, schema, region)
+    acceso = sample_acceso_digital(rng, schema, region, nse, generacion)
+    bancarizado = sample_bancarizado(rng, schema, nse, region, acceso)
 
     confianza = sample_confianza(rng, schema, canal)
-    tenencia = sample_tenencia(rng, schema, nse, edu, sesgo, confianza)
+    tenencia = sample_tenencia(rng, schema, nse, edu, sesgo, confianza, situacion, bancarizado, vehiculo)
     desastres = sample_desastres(rng, schema, nse, exposicion, tenencia)
     wtp = sample_wtp(rng, schema, tenencia)
 
@@ -113,6 +149,10 @@ def generate_user(rng: random.Random, schema: dict, idx: int) -> dict:
         "educacion_financiera": edu,
         "sesgo_presente": sesgo,
         "canal_preferido": canal,
+        "situacion_laboral": situacion,
+        "tenencia_vehiculo": vehiculo,
+        "acceso_digital": acceso,
+        "bancarizado": bancarizado,
         "exposicion_riesgo_sismico": exposicion,
         "apertura_datos_ia": apertura,
         "confianza_aseguradora": confianza,

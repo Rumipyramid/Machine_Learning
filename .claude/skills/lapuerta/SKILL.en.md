@@ -44,11 +44,11 @@ Generate a large batch and filter by field (`generacion`, `nse`, `region`,
 2. **LLM-based (Claude)** — give the model each profile + the codebook and ask it to
    answer in first person, returning `quote` + `sentiment` (favorable/neutral/unfavorable).
 
-## The 12 variables
-generación (age cohort) · nse (A high…E low) · region · financial literacy · present
-bias (procrastination) · preferred channel · seismic exposure · openness to data/AI ·
-trust in insurers · insurance tenure · disaster cover · WTP (willingness to pay, as a
-fraction of the fair price). Full table in `SKILL.md` / `references/`.
+## The 16 variables
+generación · nse · región · educación financiera · present bias · preferred channel ·
+**situación laboral · tenencia de vehículo · acceso digital · bancarizado** · seismic exposure ·
+openness to data/AI · trust in insurers · insurance tenure · disaster cover · WTP (fraction of
+the fair price). Full table in `SKILL.md` / `references/`.
 
 ## Where each parameter comes from
 Trust → **SBS 2023** · tenure & penetration → **APESEG** · NSE segments → **APEIM** ·
