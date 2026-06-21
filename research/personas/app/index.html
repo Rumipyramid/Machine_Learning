@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Explorador de Usuarios Sintéticos · Seguros Perú</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#ffffff; --ink:#1c2430; --muted:#6b7280;
+    --line:#e8ebf0; --accent:#2e5aac; --accent-2:#138a8a; --radius:16px;
+    --shadow:0 1px 2px rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.06);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1180px; margin:0 auto; padding:32px 24px 64px}
+  header.app{margin-bottom:24px}
+  header.app h1{font-size:24px; font-weight:700; letter-spacing:-.01em; margin:0}
+  header.app p{margin:6px 0 0; color:var(--muted); font-size:14.5px; max-width:760px}
+  .grid{display:grid; grid-template-columns:340px 1fr; gap:24px; align-items:start}
+  @media(max-width:880px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow)}
+  .card .pad{padding:22px}
+  .controls{position:sticky; top:24px}
+  .field{margin-bottom:18px}
+  .field:last-child{margin-bottom:0}
+  label.lab{display:block; font-size:12px; font-weight:600; text-transform:uppercase;
+    letter-spacing:.04em; color:var(--muted); margin-bottom:8px}
+  select,input[type=text]{
+    width:100%; padding:11px 12px; font-size:14.5px; color:var(--ink);
+    border:1px solid var(--line); border-radius:10px; background:#fff; outline:none;
+  }
+  select:focus,input[type=text]:focus{border-color:var(--accent); box-shadow:0 0 0 3px rgba(46,90,172,.12)}
+  .range-row{display:flex; align-items:center; gap:12px}
+  .range-row input[type=range]{flex:1}
+  .range-val{font-variant-numeric:tabular-nums; font-weight:600; min-width:48px; text-align:right}
+  .chips{display:flex; flex-wrap:wrap; gap:8px}
+  .chip{
+    padding:7px 12px; font-size:13px; border:1px solid var(--line); border-radius:999px;
+    background:#fff; color:var(--ink); cursor:pointer; user-select:none; transition:.12s;
+  }
+  .chip:hover{border-color:#cdd5e2}
+  .chip.on{background:var(--accent); border-color:var(--accent); color:#fff}
+  .btn{
+    width:100%; padding:13px 16px; font-size:15px; font-weight:600; color:#fff;
+    background:var(--accent); border:none; border-radius:11px; cursor:pointer; transition:.12s;
+  }
+  .btn:hover{background:#274d93}
+  .hint{font-size:12px; color:var(--muted); margin-top:8px}
+
+  /* resultados */
+  .result-head{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap}
+  .q-title{font-size:19px; font-weight:700; margin:0}
+  .q-sub{color:var(--muted); font-size:13.5px; margin:4px 0 0}
+  .pill{font-size:12px; font-weight:600; color:var(--accent); background:rgba(46,90,172,.08);
+    padding:6px 11px; border-radius:999px; white-space:nowrap}
+  .section-title{font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+    color:var(--muted); margin:26px 0 14px}
+
+  /* barras distribución */
+  .bar-row{display:grid; grid-template-columns:150px 1fr 56px; align-items:center; gap:12px; margin:11px 0}
+  .bar-row .name{font-size:13.5px; display:flex; align-items:center; gap:8px}
+  .dot{width:11px; height:11px; border-radius:3px; flex:none}
+  .track{height:14px; background:#eef1f6; border-radius:7px; overflow:hidden}
+  .fill{height:100%; border-radius:7px; transition:width .5s ease}
+  .bar-row .val{font-variant-numeric:tabular-nums; font-weight:700; font-size:14px; text-align:right}
+
+  /* stacked breakdown */
+  .stack-row{display:grid; grid-template-columns:96px 1fr; align-items:center; gap:12px; margin:10px 0}
+  .stack-row .lv{font-size:13px; color:var(--ink)}
+  .stack-row .lv small{color:var(--muted)}
+  .stack{display:flex; height:22px; border-radius:6px; overflow:hidden; background:#eef1f6}
+  .seg{height:100%; display:flex; align-items:center; justify-content:center; color:#fff;
+    font-size:11px; font-weight:600; min-width:0}
+  .legend{display:flex; flex-wrap:wrap; gap:14px; margin-top:14px}
+  .legend span{display:flex; align-items:center; gap:7px; font-size:12.5px; color:var(--muted)}
+
+  /* insights */
+  .insight-card{margin-top:24px; border-left:4px solid var(--accent-2)}
+  .insight-head{font-size:16.5px; font-weight:600; line-height:1.45; margin:0 0 14px}
+  .insight-card ul{margin:0; padding:0; list-style:none}
+  .insight-card li{position:relative; padding:9px 0 9px 26px; font-size:14px; border-top:1px solid var(--line)}
+  .insight-card li:before{content:"›"; position:absolute; left:6px; top:8px; color:var(--accent-2); font-weight:700; font-size:16px}
+  .reco{margin-top:16px; padding:14px 16px; background:rgba(19,138,138,.07); border-radius:11px; font-size:14px}
+  .reco b{color:var(--accent-2)}
+  .disclaimer{margin-top:18px; font-size:12px; color:var(--muted)}
+  .empty{color:var(--muted); font-size:14px; padding:30px 0; text-align:center}
+  .seg-dims{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="app">
+    <h1>Explorador de Usuarios Sintéticos · Seguros Perú</h1>
+    <p>Hazle una pregunta a una población sintética calibrada con datos reales (SBS, APESEG, APEIM)
+       y obtén la distribución de respuestas, el desglose por segmento y una lectura de hallazgos.</p>
+  </header>
+
+  <div class="grid">
+    <!-- Controles -->
+    <aside class="card controls">
+      <div class="pad">
+        <div class="field">
+          <label class="lab" for="q">Pregunta</label>
+          <select id="q"></select>
+        </div>
+        <div class="field" id="brandField" style="display:none">
+          <label class="lab" for="brand">Marca / aseguradora</label>
+          <input type="text" id="brand" placeholder="Ej. RIMAC Seguros" value="RIMAC Seguros" />
+        </div>
+        <div class="field">
+          <label class="lab">Tamaño de muestra</label>
+          <div class="range-row">
+            <input type="range" id="n" min="50" max="3000" step="50" value="1000" />
+            <span class="range-val" id="nVal">1000</span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="lab" for="seed">Semilla (reproducibilidad)</label>
+          <input type="text" id="seed" value="42" />
+        </div>
+        <div class="field">
+          <label class="lab">Segmento · NSE</label>
+          <div class="chips" id="f-nse"></div>
+        </div>
+        <div class="field">
+          <label class="lab">Segmento · Generación</label>
+          <div class="chips" id="f-generacion"></div>
+        </div>
+        <div class="field">
+          <label class="lab">Segmento · Región</label>
+          <div class="chips" id="f-region"></div>
+        </div>
+        <div class="field">
+          <label class="lab">Segmento · Canal</label>
+          <div class="chips" id="f-canal"></div>
+        </div>
+        <div class="field">
+          <button class="btn" id="run">Preguntar a los usuarios</button>
+          <div class="hint">Sin filtros = población completa. Cambia la semilla para una nueva muestra.</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Resultados -->
+    <main>
+      <section class="card">
+        <div class="pad">
+          <div class="result-head">
+            <div>
+              <p class="q-title" id="rTitle">—</p>
+              <p class="q-sub" id="rSub"></p>
+            </div>
+            <span class="pill" id="rPill"></span>
+          </div>
+
+          <div id="resultBody">
+            <div class="empty">Configura tu pregunta y pulsa <b>“Preguntar a los usuarios”</b>.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card insight-card" id="insightCard" style="display:none">
+        <div class="pad">
+          <p class="section-title" style="margin-top:0">Hallazgos &amp; insights</p>
+          <p class="insight-head" id="insHead"></p>
+          <ul id="insList"></ul>
+          <div class="reco" id="insReco"></div>
+          <p class="disclaimer">Datos sintéticos: no representan personas reales. Útiles para prototipado,
+            exploración de hipótesis y diseño de mensajes; no sustituyen una encuesta de mercado.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="engine.js"></script>
+<script>
+(function(){
+  var E = window.SynthEngine;
+  var $ = function(s){return document.querySelector(s);};
+  var filters = {nse:[], generacion:[], region:[], canal:[]};
+  var breakdownDim = "nse";
+
+  // poblar pregunta
+  var qSel = $("#q");
+  Object.keys(E.QUESTIONS).forEach(function(id){
+    var o=document.createElement("option"); o.value=id; o.textContent=E.QUESTIONS[id].label.replace("{brand}","una marca");
+    qSel.appendChild(o);
+  });
+  function syncBrand(){ $("#brandField").style.display = E.QUESTIONS[qSel.value].needsBrand ? "block":"none"; }
+  qSel.addEventListener("change", syncBrand); syncBrand();
+
+  // sliders
+  $("#n").addEventListener("input", function(){ $("#nVal").textContent=this.value; });
+
+  // chips de filtros
+  function buildChips(dim){
+    var box=$("#f-"+dim);
+    E.DIM[dim].forEach(function(lv){
+      var c=document.createElement("div"); c.className="chip"; c.textContent=lv;
+      c.addEventListener("click", function(){
+        c.classList.toggle("on");
+        var i=filters[dim].indexOf(lv);
+        if(i>=0) filters[dim].splice(i,1); else filters[dim].push(lv);
+      });
+      box.appendChild(c);
+    });
+  }
+  ["nse","generacion","region","canal"].forEach(buildChips);
+
+  function activeFiltersDesc(){
+    var parts=[];
+    ["nse","generacion","region","canal"].forEach(function(d){
+      if(filters[d].length) parts.push(filters[d].join("/"));
+    });
+    return parts.join(" · ");
+  }
+
+  function barChart(items){
+    var max = Math.max.apply(null, items.map(function(i){return i.pct;}).concat([1]));
+    return items.map(function(i){
+      var w = Math.max(2, (i.pct/max)*100);
+      return '<div class="bar-row">'
+        + '<div class="name"><span class="dot" style="background:'+i.color+'"></span>'+i.label+'</div>'
+        + '<div class="track"><div class="fill" style="width:'+w+'%;background:'+i.color+'"></div></div>'
+        + '<div class="val">'+i.pct+'%</div></div>';
+    }).join("");
+  }
+
+  function stacked(rows, cats){
+    var html = rows.map(function(r){
+      var segs = cats.map(function(c){
+        var cell = r.cats.filter(function(x){return x.key===c.key;})[0];
+        var p = cell?cell.pct:0;
+        if(p<=0) return "";
+        return '<div class="seg" style="width:'+p+'%;background:'+c.color+'" title="'+c.label+': '+p+'%">'
+          + (p>=11? Math.round(p)+'%':'') + '</div>';
+      }).join("");
+      return '<div class="stack-row"><div class="lv">'+r.level+' <small>(n='+r.n+')</small></div>'
+        + '<div class="stack">'+segs+'</div></div>';
+    }).join("");
+    var legend = '<div class="legend">'+cats.map(function(c){
+      return '<span><span class="dot" style="background:'+c.color+'"></span>'+c.label+'</span>';
+    }).join("")+'</div>';
+    return html+legend;
+  }
+
+  function dimSelector(){
+    var dims=[["nse","NSE"],["generacion","Generación"],["region","Región"],["canal","Canal"]];
+    return '<div class="seg-dims">'+dims.map(function(d){
+      return '<div class="chip '+(d[0]===breakdownDim?"on":"")+'" data-dim="'+d[0]+'">'+d[1]+'</div>';
+    }).join("")+'</div>';
+  }
+
+  var lastCtx=null;
+  function render(){
+    var qid=qSel.value, q=E.QUESTIONS[qid];
+    var brand = q.needsBrand ? ($("#brand").value||"la marca") : null;
+    var n=parseInt($("#n").value,10), seed=parseInt($("#seed").value,10)||0;
+    var all=E.generate(n, seed);
+    var users=E.applyFilters(all, filters);
+    lastCtx={q:q, brand:brand, users:users};
+
+    var label=q.label.replace("{brand}", brand||"");
+    $("#rTitle").textContent=label;
+    var fd=activeFiltersDesc();
+    $("#rSub").textContent = (fd? "Segmento: "+fd+" — ":"") + users.length+" de "+n+" usuarios";
+    $("#rPill").textContent = "n = "+users.length;
+
+    if(!users.length){ $("#resultBody").innerHTML='<div class="empty">Ningún usuario cumple esos filtros. Prueba ampliando la muestra o relajando segmentos.</div>'; $("#insightCard").style.display="none"; return; }
+
+    var dist=E.tally(users,q,brand);
+    var bd=E.breakdown(users,q,breakdownDim,brand);
+    var html = '<p class="section-title">Distribución de respuestas</p>'+barChart(dist)
+      + '<p class="section-title">Desglose por segmento</p>'+dimSelector()+stacked(bd,q.cats);
+    $("#resultBody").innerHTML=html;
+
+    // dim selector handlers
+    Array.prototype.forEach.call(document.querySelectorAll("[data-dim]"), function(el){
+      el.addEventListener("click", function(){ breakdownDim=el.getAttribute("data-dim"); render(); });
+    });
+
+    // insights
+    var ins=E.insights(users,q,brand,fd);
+    $("#insHead").textContent=ins.headline;
+    $("#insList").innerHTML=ins.bullets.map(function(b){return "<li>"+b+"</li>";}).join("");
+    $("#insReco").innerHTML="<b>Recomendación.</b> "+ins.recommendation;
+    $("#insightCard").style.display="block";
+  }
+
+  $("#run").addEventListener("click", render);
+})();
+</script>
+</body>
+</html>
