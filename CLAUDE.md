@@ -43,7 +43,21 @@ Generador + simulador de usuarios sintéticos empaquetado como **skill compartib
   (por reglas o con LLM). Para compartir, copiar la carpeta a `.claude/skills/` (proyecto)
   o `~/.claude/skills/` (personal).
 
+### 📌 Reportes quincenales (fortalecimiento del modelo)
+Investigación recurrente (cada ~15 días) que busca evidencia nueva y propone cómo incorporar
+variables al modelo `lapuerta`.
+
+- **Automatización:** GitHub Action `.github/workflows/fortalecimiento-modelo.yml` (cron días 1 y 16)
+  ejecuta `research/updates/generate_report.py` (API de Claude + búsqueda web) y commitea el reporte.
+- **Requisitos:** secreto `ANTHROPIC_API_KEY` en el repo + Actions habilitado. El `schedule` solo
+  corre desde la rama por defecto (mergear allí para activarlo); se puede probar con "Run workflow".
+- **Índice de reportes (auto-actualizado):**
+<!-- LAPUERTA_REPORTS_START -->
+- 2026-06-21 — `research/updates/2026-06-21_fortalecimiento_modelo.md`
+<!-- LAPUERTA_REPORTS_END -->
+
 ## Convenciones
 - Documentación de investigación → carpeta `research/`.
 - Activos de personas sintéticas → `research/personas/`.
 - Skills del proyecto → `.claude/skills/`.
+- Reportes quincenales → `research/updates/` (indexados arriba).
