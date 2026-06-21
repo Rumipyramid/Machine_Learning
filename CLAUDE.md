@@ -31,6 +31,16 @@ Matriz de variables + distribuciones para generar perfiles sintéticos calibrado
   WTP ratio.
 - Marginales validadas: any-insurance ≈ 0.43, desconfía ≈ 0.45, desastres ≈ 0.03.
 
+### 📌 Skill: `usuarios-sinteticos-seguros`
+Generador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).
+
+- **Ubicación:** `.claude/skills/usuarios-sinteticos-seguros/`
+- **Contenido:** `SKILL.md` + `scripts/generate_synthetic_users.py` + `scripts/synthetic_user_schema.json`
+  + `references/matriz_usuarios_sinteticos.md`.
+- **Uso:** se invoca al pedir generar/consultar perfiles sintéticos de asegurados peruanos.
+  Para compartir, copiar la carpeta a `.claude/skills/` (proyecto) o `~/.claude/skills/` (personal).
+
 ## Convenciones
 - Documentación de investigación → carpeta `research/`.
 - Activos de personas sintéticas → `research/personas/`.
+- Skills del proyecto → `.claude/skills/`.
