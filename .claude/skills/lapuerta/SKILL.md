@@ -1,16 +1,19 @@
 ---
-name: usuarios-sinteticos-seguros
+name: lapuerta
 description: >-
   Genera y consulta usuarios (personas) sintéticos de consumidores de seguros del
   Perú, calibrados con datos reales (SBS 2023, APESEG, APEIM y economía conductual).
-  Úsalo cuando se pidan perfiles sintéticos de asegurados peruanos, simular o
-  "entrevistar" consumidores de seguros, muestrear poblaciones para prototipado,
-  encuestas sintéticas o pruebas de mensajes/segmentos. Variables: generación, NSE,
-  región, educación financiera, sesgo del presente, canal, exposición sísmica,
+  Invócalo con /lapuerta o úsalo cuando se pidan perfiles sintéticos de asegurados
+  peruanos, simular o "entrevistar" consumidores de seguros, muestrear poblaciones para
+  prototipado, encuestas sintéticas o pruebas de mensajes/segmentos. Variables: generación,
+  NSE, región, educación financiera, sesgo del presente, canal, exposición sísmica,
   apertura a datos/IA, confianza, tenencia, seguro de desastres y disposición a pagar (WTP).
 ---
 
-# Usuarios sintéticos de seguros (Perú)
+# lapuerta · Usuarios sintéticos de seguros (Perú)
+
+> Invocación: **`/lapuerta`**. Abre la "puerta" a una población sintética de consumidores
+> de seguros peruanos.
 
 Skill autocontenido para **generar poblaciones sintéticas** de consumidores de seguros
 peruanos y **simular sus respuestas**. Las distribuciones están calibradas con datos
@@ -137,5 +140,5 @@ mercado ni prueban relaciones causales.
 - `SKILL.en.md` — guía equivalente en inglés (para compartir).
 
 ## Instalación (para compartir)
-Copia la carpeta `usuarios-sinteticos-seguros/` a `.claude/skills/` (proyecto) o
-`~/.claude/skills/` (personal). Reinicia la sesión; el skill quedará disponible.
+Copia la carpeta `lapuerta/` a `.claude/skills/` (proyecto) o `~/.claude/skills/`
+(personal). Reinicia la sesión y se invoca con **`/lapuerta`**.

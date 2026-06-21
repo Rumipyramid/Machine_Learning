@@ -1,7 +1,7 @@
-# Synthetic insurance users (Peru) — English guide
+# lapuerta · Synthetic insurance users (Peru) — English guide
 
-> English mirror of `SKILL.md`. Claude Code loads `SKILL.md` (Spanish) as the active
-> skill; this file is a reference for sharing with English-speaking users.
+> Invoke with `/lapuerta`. English mirror of `SKILL.md`. Claude Code loads `SKILL.md`
+> (Spanish) as the active skill; this file is a reference for English-speaking users.
 
 Self-contained skill to **generate synthetic populations** of Peruvian insurance
 consumers and **simulate their answers**. Distributions are calibrated with real data
@@ -69,5 +69,5 @@ Synthetic data: not real people. For prototyping, hypothesis exploration and mes
 design; **not** a substitute for a market survey, and not causal evidence.
 
 ## Install (to share)
-Copy the `usuarios-sinteticos-seguros/` folder into `.claude/skills/` (project) or
-`~/.claude/skills/` (personal), then restart the session.
+Copy the `lapuerta/` folder into `.claude/skills/` (project) or `~/.claude/skills/`
+(personal), then restart the session. Invoke with **`/lapuerta`**.
