@@ -31,10 +31,13 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 | **exposicion_riesgo_sismico** | region | Lima/Costa → mayoritariamente alta; Sierra/Selva → media/baja | dato (Perú sísmico) |
 | **apertura_datos_ia** | generacion | Gen Z muy alta → Boomer baja | dato (Gen Z 87% confía en IA vs 75% Boomers) |
 | **situacion_laboral** | nse | NSE alto → más formal_dependiente; NSE bajo → más informal | dato/supuesto (informalidad ~70%) |
+| **cobertura_previsional** | situacion_laboral | formal → AFP/ONP; informal → ninguna (~60% sin pensión) | dato (8º retiro AFP 2025) |
 | **tenencia_vehiculo** | region | Lima → más auto; Sierra/Selva → más moto/mototaxi; ~52% ninguno | dato (2/10 con seguro; 4/5 motos sin SOAT) |
 | **acceso_digital** | region+nse+generacion | score → {alta/media/baja}; urbano/NSE alto/joven ↑ | dato (bancarización 59%; Yape/Plin) |
 | **bancarizado** | nse+region+acceso_digital | prob. logística; marginal ≈ 0.59 | dato (~59% adultos en sist. financiero) |
 
+> **v1.2 (2026-07-21):** se añadió `cobertura_previsional` (AFP/ONP/ninguna), driver de `tenencia_seguro`.
+>
 > **v1.1 (2026-07-06):** se añadieron `situacion_laboral`, `tenencia_vehiculo`, `acceso_digital` y
 > `bancarizado` (reportes quincenales). Entran como drivers de `tenencia_seguro`
 > (formal_dependiente +, bancarizado +, auto +, moto/informal −) y el split voluntario/obligatorio
@@ -88,7 +91,8 @@ python research/personas/generador/generate_synthetic_users.py --n 1000 --out us
 ```
 
 Salida (columnas): `id, generacion, nse, region, educacion_financiera, sesgo_presente,
-canal_preferido, exposicion_riesgo_sismico, apertura_datos_ia, confianza_aseguradora,
+canal_preferido, situacion_laboral, cobertura_previsional, tenencia_vehiculo, acceso_digital,
+bancarizado, exposicion_riesgo_sismico, apertura_datos_ia, confianza_aseguradora,
 tenencia_seguro, seguro_desastres_naturales, wtp_ratio`.
 
 Dataset de ejemplo (200 filas): `usuarios_sinteticos_ejemplo.csv`.

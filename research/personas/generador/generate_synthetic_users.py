@@ -63,6 +63,10 @@ def sample_tenencia_vehiculo(rng: random.Random, schema: dict, region: str) -> s
     return weighted_choice(rng, schema["variables"]["tenencia_vehiculo"]["tabla"][region])
 
 
+def sample_cobertura_previsional(rng: random.Random, schema: dict, situacion: str) -> str:
+    return weighted_choice(rng, schema["variables"]["cobertura_previsional"]["tabla"][situacion])
+
+
 def sample_acceso_digital(rng: random.Random, schema: dict, region: str, nse: str, generacion: str) -> str:
     s = schema["variables"]["acceso_digital"]["score"]
     score = s["intercepto"] + s["region"][region] + s["nse"][nse] + s["generacion"][generacion]
@@ -80,7 +84,8 @@ def sample_bancarizado(rng: random.Random, schema: dict, nse: str, region: str, 
 
 
 def sample_tenencia(rng: random.Random, schema: dict, nse: str, edu: str, sesgo: str,
-                    confianza: str, situacion: str, bancarizado: bool, vehiculo: str) -> str:
+                    confianza: str, situacion: str, bancarizado: bool, vehiculo: str,
+                    cobertura_prev: str) -> str:
     d = schema["modelos_derivados"]["tenencia_seguro"]["drivers"]
     score = (d["intercepto"]
              + d["nse"][nse]
@@ -89,7 +94,8 @@ def sample_tenencia(rng: random.Random, schema: dict, nse: str, edu: str, sesgo:
              + d["confianza_aseguradora"][confianza]
              + d["situacion_laboral"][situacion]
              + d["bancarizado"]["true" if bancarizado else "false"]
-             + d["tenencia_vehiculo"][vehiculo])
+             + d["tenencia_vehiculo"][vehiculo]
+             + d["cobertura_previsional"][cobertura_prev])
     p_any = sigmoid(score)
     if rng.random() >= p_any:
         return "ninguno"
@@ -132,12 +138,13 @@ def generate_user(rng: random.Random, schema: dict, idx: int) -> dict:
     exposicion = weighted_choice(rng, v["exposicion_riesgo_sismico"]["tabla"][region])
     apertura = weighted_choice(rng, v["apertura_datos_ia"]["tabla"][generacion])
     situacion = sample_situacion_laboral(rng, schema, nse)
+    cobertura_prev = sample_cobertura_previsional(rng, schema, situacion)
     vehiculo = sample_tenencia_vehiculo(rng, schema, region)
     acceso = sample_acceso_digital(rng, schema, region, nse, generacion)
     bancarizado = sample_bancarizado(rng, schema, nse, region, acceso)
 
     confianza = sample_confianza(rng, schema, canal)
-    tenencia = sample_tenencia(rng, schema, nse, edu, sesgo, confianza, situacion, bancarizado, vehiculo)
+    tenencia = sample_tenencia(rng, schema, nse, edu, sesgo, confianza, situacion, bancarizado, vehiculo, cobertura_prev)
     desastres = sample_desastres(rng, schema, nse, exposicion, tenencia)
     wtp = sample_wtp(rng, schema, tenencia)
 
@@ -150,6 +157,7 @@ def generate_user(rng: random.Random, schema: dict, idx: int) -> dict:
         "sesgo_presente": sesgo,
         "canal_preferido": canal,
         "situacion_laboral": situacion,
+        "cobertura_previsional": cobertura_prev,
         "tenencia_vehiculo": vehiculo,
         "acceso_digital": acceso,
         "bancarizado": bancarizado,

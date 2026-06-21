@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Matriz de variables para generación de usuarios sintéticos - seguros (Perú)",
-    "version": "1.1",
+    "version": "1.2",
     "fecha": "2026-07-06",
     "fuente_datos": "research/seguros_comportamiento_mundo_peru.md + research/updates/",
     "nota": "Distribuciones mezclan datos reales (SBS 2023, APESEG, APEIM, BCRP/INEI, Gestión) con supuestos ilustrativos marcados con 'origen'. v1.1 añade situacion_laboral, tenencia_vehiculo, acceso_digital y bancarizado (reportes quincenales).",
@@ -245,6 +245,28 @@
         },
         "intercepto": 0.45
       }
+    },
+    "cobertura_previsional": {
+      "descripcion": "Cobertura previsional/pension. Condiciona brecha de proteccion en la vejez",
+      "origen": "dato (8o retiro AFP 2025 Ley 32445; informalidad ~70% sin pension)",
+      "condicional_de": "situacion_laboral",
+      "tabla": {
+        "formal_dependiente": {
+          "AFP": 0.6,
+          "ONP": 0.3,
+          "ninguna": 0.1
+        },
+        "independiente_microemprendedor": {
+          "AFP": 0.25,
+          "ONP": 0.1,
+          "ninguna": 0.65
+        },
+        "informal": {
+          "AFP": 0.1,
+          "ONP": 0.05,
+          "ninguna": 0.85
+        }
+      }
     }
   },
   "modelos_derivados": {
@@ -304,7 +326,12 @@
           "moto_mototaxi": -0.1,
           "ninguno": 0.0
         },
-        "intercepto": 0.0
+        "intercepto": 0.0,
+        "cobertura_previsional": {
+          "AFP": 0.2,
+          "ONP": 0.0,
+          "ninguna": -0.2
+        }
       },
       "split_voluntario": {
         "p_voluntario_por_nse": {
