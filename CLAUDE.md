@@ -47,8 +47,10 @@ Generador + simulador de usuarios sintéticos empaquetado como **skill compartib
 Investigación recurrente (cada ~15 días) que busca evidencia nueva y propone cómo incorporar
 variables al modelo `lapuerta`.
 
-- **Automatización:** GitHub Action `.github/workflows/fortalecimiento-modelo.yml` (cron días 1 y 16)
-  ejecuta `research/updates/generate_report.py` (API de Claude + búsqueda web) y commitea el reporte.
+- **A demanda:** skill `/cerrajero` (`.claude/skills/cerrajero/`) ejecuta la actualización en la
+  sesión (Claude investiga con búsqueda web, redacta, indexa y commitea). No necesita API key.
+- **Automatización (desatendida):** GitHub Action `.github/workflows/fortalecimiento-modelo.yml`
+  (cron días 1 y 16) ejecuta `research/updates/generate_report.py` (API de Claude + búsqueda web).
 - **Requisitos:** secreto `ANTHROPIC_API_KEY` en el repo + Actions habilitado. El `schedule` solo
   corre desde la rama por defecto (mergear allí para activarlo); se puede probar con "Run workflow".
 - **Índice de reportes (auto-actualizado):**
