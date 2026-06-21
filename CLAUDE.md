@@ -77,6 +77,7 @@ variables al modelo `lapuerta`.
   corre desde la rama por defecto (mergear allí para activarlo); se puede probar con "Run workflow".
 - **Índice de reportes (auto-actualizado):**
 <!-- LAPUERTA_REPORTS_START -->
+- 2026-07-06 — `research/updates/2026-07-06_fortalecimiento_modelo.md`
 - 2026-06-21 — `research/updates/2026-06-21_fortalecimiento_modelo.md`
 <!-- LAPUERTA_REPORTS_END -->
 
