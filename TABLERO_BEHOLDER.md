@@ -35,25 +35,25 @@ Fortalecer la fuerza de ventas de Vida Individual: agendamiento, formación y ge
 
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
-| Q-5 | Mensajes de primer contacto | To Do (Block) | 1 🎟️ | Alejandro | No existe estrategia definida sobre contacto bajo contexto CUA 🚩 | — (sin impacto definido) |
-| Q-7 | Universidad Vida | In Progress | 4 🎟️ | Melissa, Alejandro | Capacidad limitada equipo learning | Mejora ratio de agendamientos, NPS Venta y conversión de asesores jr |
+| Q-5 | Mensajes de primer contacto | To Do (Block) | 1 🎟️ | Alejandro | No existe estrategia definida sobre contacto bajo contexto CUA 🚩 | +20–30% agendamiento de citas en primer contacto (est., potencial — bloqueado) |
+| Q-7 | Universidad Vida | In Progress | 4 🎟️ | Melissa, Alejandro | Capacidad limitada equipo learning | −25–40% tiempo de ramp-up de asesores jr + mejor conversión y NPS Venta (est.) |
 | Q-8 | Skill AIDA Bot Trainer + reportería | In Review | 6 🎟️ | Felipe, Melissa | AIDA no cumple el task; entra a comité de priorización; 3 herramientas en paralelo 🚩 | Ahorro proyectado S/1.8M |
-| Q-9 | Kit de Social Selling | In Progress | 3 🎟️ | Melissa | Recursos limitados (contenido huella digital); falta de incentivos; falta de monitoreo 🚩 | Aumento de leads y agendamientos |
+| Q-9 | Kit de Social Selling | In Progress | 3 🎟️ | Melissa | Recursos limitados (contenido huella digital); falta de incentivos; falta de monitoreo 🚩 | +leads/agendamientos FFVV; social selling 15–25% conversión lead→cita, CPL −30–50% (est.) |
 
 ### EPIC-2 · Guías resumidas (Pólizas simples)
 Promover el entendimiento y uso eficiente de los seguros de salud mediante guías simples.
 
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
-| Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | 8 🎟️ | Stef, Felipe, Alejandro | Cambio en el roadmap (se iba a entregar 1 guía para el 24) | Reducción de casos NPS "no recibí información sobre mi seguro" |
-| Q-3 | Guías resumidas — 5 clientes TOP EPS | Done | 3 🎟️ | Stef, Felipe, Alejandro | Producto pide no comunicar algunos servicios valorados por el usuario | Renovación Antapacay |
+| Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | 8 🎟️ | Stef, Felipe, Alejandro | Cambio en el roadmap (se iba a entregar 1 guía para el 24) | ↓ ~25–30% casos NPS "no recibí información" (est.); ataca la palanca #1 de desconfianza en Perú (falta de información) |
+| Q-3 | Guías resumidas — 5 clientes TOP EPS | Done | 3 🎟️ | Stef, Felipe, Alejandro | Producto pide no comunicar algunos servicios valorados por el usuario | Renovación de cuentas TOP EPS (incl. Antapacay) + ↓ "no recibí información" en corporativo clave; alto valor por cuenta |
 
 ### EPIC-3 · Renovación AMI
 Reducir el churn y los reclamos por cambios en la renovación.
 
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
-| Q-2 | Batería de soluciones para la renovación AMI | In Progress | 2 🎟️ | Alejandro | La carta por sí sola no cubre las necesidades del usuario | Reducción de reclamos y churn (carta implementada; 3 soluciones on hold) |
+| Q-2 | Batería de soluciones para la renovación AMI | In Progress | 2 🎟️ | Alejandro | La carta por sí sola no cubre las necesidades del usuario | +3–5 pp retención en renovación AMI sobre base ~84% y ↓ reclamos (est.); el grueso depende de desbloquear las 3 soluciones on hold |
 
 ### EPIC-4 · Evolution+: Cobranzas
 Promover la captura de datos para la conciliación de facturas de proveedores.
@@ -67,7 +67,7 @@ Diseñar un programa de lealtad del ecosistema que asegure la permanencia de los
 
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
-| Q-6 | Programa de lealtad (MVP/piloto) | In Progress | 2 🎟️ | Alejandro | — | Diseñado con foco en 1,250 MM de clientes RIMAC (piloto 3–6 meses) |
+| Q-6 | Programa de lealtad (MVP/piloto) | In Progress | 2 🎟️ | Alejandro | — | Permanencia base RIMAC (1,250 MM clientes); benchmark loyalty bien diseñado +20–25% retención y +40% cross-sell (est.); piloto 3–6 meses |
 
 ### EPIC-6 · Bienestar 360
 Piloto con colaboradores Rimac para construir hábitos saludables sostenibles.
@@ -108,11 +108,24 @@ Piloto con colaboradores Rimac para construir hábitos saludables sostenibles.
 |---|---|---|
 | Q-8 | Skill AIDA Bot Trainer | Ahorro proyectado S/1.8M |
 | Q-4 | Evolution+ Cobranzas | Liberación de S/600k provisionados |
-| Q-6 | Loyalty | Permanencia con foco en 1,250 MM de clientes RIMAC |
-| Q-1 | Guías 4 productos AMI | Reducción de casos NPS "no recibí información sobre mi seguro" |
-| Q-2 | Batería renovación AMI | Reducción de reclamos y churn en renovación |
-| Q-7 | Universidad Vida | Mejor ratio de agendamientos, NPS Venta y conversión de asesores jr |
-| Q-9 | Kit de Social Selling | Aumento de leads y agendamientos para FFVV |
-| Q-3 | Guías 5 TOP EPS | Renovación Antapacay |
+| Q-6 | Loyalty | Permanencia base RIMAC (1,250 MM clientes); benchmark loyalty +20–25% retención y +40% cross-sell (est.) |
+| Q-1 | Guías 4 productos AMI | ↓ ~25–30% casos NPS "no recibí información" (est.); palanca #1 de desconfianza en Perú |
+| Q-2 | Batería renovación AMI | +3–5 pp retención en renovación sobre base ~84% y ↓ reclamos (est.); depende de desbloquear 3 soluciones |
+| Q-7 | Universidad Vida | −25–40% tiempo de ramp-up de asesores jr + mejor conversión y NPS Venta (est.) |
+| Q-9 | Kit de Social Selling | +leads/agendamientos FFVV; social selling 15–25% conversión lead→cita, CPL −30–50% (est.) |
+| Q-3 | Guías 5 TOP EPS | Renovación de cuentas TOP EPS (incl. Antapacay) + ↓ "no recibí información" en corporativo; alto valor/cuenta |
 | Q-10 | Bienestar 360 | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
-| Q-5 | Mensajes de primer contacto | — (sin impacto definido aún) |
+| Q-5 | Mensajes de primer contacto | +20–30% agendamiento de citas en primer contacto (est., potencial — bloqueado por estrategia CUA) |
+
+> **`(est.)` = estimación basada en benchmarks, no cifra comprometida por RIMAC.** Rangos derivados de
+> investigación interna del repo (`research/seguros_comportamiento_mundo_peru.md`: falta de información =
+> causa #1 de desconfianza, confianza plena ~23–25%) y benchmarks de industria recopilados el 2026-06-22.
+> Las cifras duras (Q-4 S/600k, Q-8 S/1.8M, Q-10 Wellby/CSAT/NPS) provienen del board original, no son estimaciones.
+>
+> **Fuentes de los benchmarks:**
+> - NPS / educación del cliente y reducción de quejas en seguros — CustomerGauge, Mantra Labs, Spixii.
+> - Retención y churn en renovación — InsuranceBackOfficeHub (retención industria ~84%, top 93–95%), Perspective AI, Agency Performance Partners.
+> - Social selling / generación de leads FFVV — Cleverly, Evaboot, Openly (15–25% conversión lead→cita; CPL −30–50%).
+> - Ramp-up / onboarding de asesores nuevos — SuperAgent, Retorio, Vymo (25–40% menor tiempo de productividad).
+> - Agendamiento en primer contacto — Touchstone BPO, Intelemark (cadencia multicanal 3–4× single-channel; +30% meeting-to-close).
+> - Programas de lealtad en seguros — Propello Cloud, Comarch, OpenLoyalty (+25% retención, +40% cross-sell en casos referidos).
