@@ -114,9 +114,32 @@ usuario lo pida). El **sobreasignado 🔴 (9–10) sí es alerta**: díselo en l
 propón un ajuste concreto (mover X fichas a otro quest) y pregunta si ajusta o lo deja
 registrado. Un **⛔ (> 10) debe corregirse** antes de cerrar. No bloquees por 🔴, sí por ⛔.
 
-**Paso 6 — Render.**
-Genera el tablero con la *Plantilla de salida*. Guárdalo si el usuario quiere
-(sugiere `TABLERO_BEHOLDER.md` en el directorio de trabajo) y muéstralo.
+**Paso 6 — Render y entrega.**
+Genera el tablero con la *Plantilla de salida*, **guárdalo siempre en un archivo**
+(sugiere `TABLERO_BEHOLDER.md` en el directorio de trabajo) y muéstralo. El render no está
+completo hasta que cierres con un **link funcional al archivo** (ver *Entrega del link* abajo):
+nombrar la ruta no basta, una ruta de archivo no es clicable fuera de la terminal.
+
+---
+
+## Entrega del link al tablero (obligatorio)
+
+El output del skill **siempre** debe terminar con un link que abra de verdad el `.md`. Una ruta
+como `TABLERO_BEHOLDER.md` solo es clicable en la terminal; en la app web o móvil no abre nada.
+Según el contexto, entrega el link así (en orden de preferencia):
+
+1. **Repo Git (web/remote):** commitea y pushea el archivo a la rama de trabajo y entrega la
+   **URL de GitHub al blob** en esa rama, p. ej.
+   `https://github.com/<owner>/<repo>/blob/<rama>/TABLERO_BEHOLDER.md`.
+   Si hay un PR abierto, agrega también el link a *Files changed* del PR (siempre resuelve,
+   aunque la rama tenga `/` en el nombre: `…/pull/<n>/files`). Cuando el entorno lo permita,
+   **adjunta además el archivo** para apertura directa.
+2. **Sin Git pero con adjuntos disponibles:** entrega el `.md` como archivo adjunto descargable.
+3. **Solo terminal local:** deja la **ruta absoluta** del archivo y aclara que es clicable solo
+   en la terminal.
+
+Cierra el render en el chat con una línea de entrega explícita, p. ej.:
+`📎 Tablero: <URL funcional>  ·  (también adjunto arriba)`.
 
 ---
 
@@ -220,3 +243,5 @@ Salida (extracto):
   La **holgura (⚪, < 8) solo se informa** en el libro mayor: nunca la conviertas en alerta.
 - En proyectos grandes, mantén el resumen y el libro mayor arriba: son la vista que el
   supervisor (el Beholder) revisa primero.
+- **Siempre cierra con un link funcional al `.md`** (ver *Entrega del link al tablero*). El
+  entregable no está completo si el usuario no puede abrir el tablero con un clic.
