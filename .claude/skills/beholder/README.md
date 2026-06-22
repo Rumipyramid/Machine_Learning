@@ -44,6 +44,11 @@ mkdir -p ~/.claude/skills
 cp -r .claude/skills/beholder ~/.claude/skills/
 ```
 
+**Desde el repo independiente** (si lo publicas como repo propio, ver más abajo):
+```bash
+git clone https://github.com/<owner>/beholder ~/.claude/skills/beholder
+```
+
 Luego **recarga / reinicia Claude Code** para que registre el skill. En una sesión nueva ya
 queda disponible automáticamente.
 
@@ -111,6 +116,22 @@ riesgos e impacto. Mira un ejemplo completo en
   dependencias ni red.
 - El entregable es Markdown legible, no una exportación real de Jira.
 
-## 📌 Versión
+## 📦 Publicar como repositorio independiente
 
-Ver [`CHANGELOG.md`](CHANGELOG.md). Licencia: hereda la del repositorio contenedor.
+La raíz del repo standalone **es** el contenido de esta carpeta (`SKILL.md`, `README.md`,
+`CHANGELOG.md`, `LICENSE`, `examples/`). Por eso, al publicarlo, se instala con un simple
+`git clone <url> ~/.claude/skills/beholder`.
+
+Desde el repo contenedor hay un script que lo empaqueta e inicializa git automáticamente:
+
+```bash
+scripts/publish_beholder_standalone.sh ~/beholder
+# luego: crear repo vacío en GitHub, agregar remote y push
+```
+
+O a mano: copia el contenido de `.claude/skills/beholder/` a una carpeta nueva, `git init`,
+commit y push a un repo llamado `beholder`.
+
+## 📌 Versión y licencia
+
+Versión actual: ver [`CHANGELOG.md`](CHANGELOG.md). Licencia: [MIT](LICENSE).

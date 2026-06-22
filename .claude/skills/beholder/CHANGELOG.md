@@ -3,6 +3,13 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.1.1] — 2026-06-22
+### Añadido
+- **Empaquetado para GitHub:** `README.md`, `CHANGELOG.md`, ejemplo en `examples/`,
+  `LICENSE` (MIT) y `.gitignore`.
+- Guía y script (`publish_beholder_standalone.sh`) para publicar el skill como repositorio
+  independiente, instalable con `git clone <url> ~/.claude/skills/beholder`.
+
 ## [1.1.0] — 2026-06-22
 ### Añadido
 - **Entrega de link funcional obligatoria.** El render ahora siempre guarda el tablero en un
