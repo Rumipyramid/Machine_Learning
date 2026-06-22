@@ -37,7 +37,7 @@ Fortalecer la fuerza de ventas de Vida Individual: agendamiento, formación y ge
 |---|---|---|---|---|---|---|
 | Q-5 | Mensajes de primer contacto | To Do (Block) | 1 🎟️ | Alejandro | No existe estrategia definida sobre contacto bajo contexto CUA 🚩 | +20–30% agendamiento de citas en primer contacto (est., potencial — bloqueado) |
 | Q-7 | Universidad Vida | In Progress | 4 🎟️ | Melissa, Alejandro | Capacidad limitada equipo learning | −25–40% tiempo de ramp-up de asesores jr + mejor conversión y NPS Venta (est.) |
-| Q-8 | Skill AIDA Bot Trainer + reportería | In Review | 6 🎟️ | Felipe, Melissa | AIDA no cumple el task; entra a comité de priorización; 3 herramientas en paralelo 🚩 | Ahorro proyectado S/1.8M |
+| Q-8 | Skill AIDA Bot Trainer + reportería | In Review | 6 🎟️ | Felipe, Melissa | AIDA no cumple el task; entra a comité de priorización; 3 herramientas en paralelo 🚩 | Agente para que el asesor practique casos; genera puntaje de efectividad y alertas por falta de principios básicos de experiencia (CX), visibles a jefaturas FFVV → más expertise y consistencia en atención. Ahorro proyectado S/1.8M |
 | Q-9 | Kit de Social Selling | In Progress | 3 🎟️ | Melissa | Recursos limitados (contenido huella digital); falta de incentivos; falta de monitoreo 🚩 | +leads/agendamientos FFVV; social selling 15–25% conversión lead→cita, CPL −30–50% (est.) |
 
 ### EPIC-2 · Guías resumidas (Pólizas simples)
@@ -106,7 +106,7 @@ Piloto con colaboradores Rimac para construir hábitos saludables sostenibles.
 ## 📈 Impacto
 | Clave | Quest | Impacto esperado |
 |---|---|---|
-| Q-8 | Skill AIDA Bot Trainer | Ahorro proyectado S/1.8M |
+| Q-8 | Skill AIDA Bot Trainer | Práctica de casos con puntaje de efectividad + alertas de principios básicos de experiencia (CX) visibles a jefaturas FFVV; sube expertise del asesor. Ahorro proyectado S/1.8M |
 | Q-4 | Evolution+ Cobranzas | Liberación de S/600k provisionados |
 | Q-6 | Loyalty | Permanencia base RIMAC (1,250 MM clientes); benchmark loyalty +20–25% retención y +40% cross-sell (est.) |
 | Q-1 | Guías 4 productos AMI | ↓ ~25–30% casos NPS "no recibí información" (est.); palanca #1 de desconfianza en Perú |
