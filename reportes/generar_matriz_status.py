@@ -17,16 +17,19 @@ from openpyxl.utils import get_column_letter
 # servicio" son estimación/inferencia (ver hoja "Leyenda y notas").
 # ----------------------------------------------------------------------------
 COLUMNS = [
-    "Clave", "Épica", "Iniciativa", "Objetivo", "Estado (Jira)",
-    "Status (detalle)", "% Avance", "Equipo que requiere el servicio",
-    "Stakeholder", "Equipo Behavioral Design", "Fichas", "Fecha de cierre",
-    "Riesgos", "Impacto esperado",
+    "Clave", "Épica", "Iniciativa", "Objetivo del proyecto",
+    "Intervención de diseño de conducta", "Estado (Jira)", "Status (detalle)",
+    "% Avance", "Equipo que requiere el servicio", "Stakeholder",
+    "Equipo Behavioral Design", "Fichas", "Fecha de cierre", "Riesgos",
+    "Impacto esperado",
 ]
 
 ROWS = [
     ["Q-1", "Guías resumidas (Pólizas simples)",
      "Guías resumidas — 4 nuevos productos AMI",
      "Promover el entendimiento y uso eficiente de los seguros de salud",
+     "Guías resumidas/simplificadas de pólizas: rediseño de la información del producto para hacerla clara "
+     "y comprensible (ataca la barrera de «falta de información»).",
      "In Progress", "WIP - Documento de primer producto en agencia", 0.40,
      "AMI – Salud (Producto)", "Estrella Damian, Soiky Bardales",
      "Stef, Felipe, Alejandro", 8, "30 de junio",
@@ -36,6 +39,8 @@ ROWS = [
     ["Q-2", "Renovación AMI",
      "Batería de soluciones para la renovación AMI",
      "Reducir el churn y reclamos por cambios en la renovación",
+     "Carta de renovación + batería de 3 soluciones de diseño en el momento de renovación; comunicación "
+     "proactiva que reduce incertidumbre y fricción ante el cambio.",
      "In Progress", "Carta de renovación implementada; 3 soluciones diseñadas on hold", 0.40,
      "AMI – Renovación / Salud", "Estrella Damian, Soiky Bardales",
      "Alejandro", 2, "30 de junio",
@@ -45,6 +50,8 @@ ROWS = [
     ["Q-3", "Guías resumidas (Pólizas simples)",
      "Guías resumidas — 5 clientes TOP EPS",
      "Promover el entendimiento y uso eficiente de los seguros de salud",
+     "Guías resumidas de pólizas para clientes corporativos TOP EPS; misma palanca de claridad/comprensión "
+     "aplicada a cuentas clave.",
      "Done", "Implementado", 1.00,
      "EPS – Salud Corporativa", "Kevin Crisanto, María Alejandra Valcarcel",
      "Stef, Felipe, Alejandro", 3, "Julio 2026",
@@ -54,6 +61,8 @@ ROWS = [
     ["Q-4", "Evolution+: Cobranzas",
      "Captura de datos para conciliación de facturas de proveedores",
      "Promover la captura de datos para conciliación de facturas proveedores",
+     "Rediseño del flujo de captura de datos (Evolution+) para facilitar/incentivar que los proveedores "
+     "entreguen la información de conciliación.",
      "In Progress", "En fase de research", 0.20,
      "Cobranzas / Finanzas", "Rosemary Moyano",
      "Stef", 4, "30 de junio",
@@ -63,6 +72,8 @@ ROWS = [
     ["Q-5", "Back to Basics FFVV Vida Individual",
      "Mensajes de primer contacto",
      "Promover el agendamiento de citas comerciales",
+     "Mensajes de primer contacto (copys/secuencia) que enmarcan la propuesta y reducen la fricción para "
+     "agendar una cita comercial.",
      "To Do (Block)", "Block", 0.10,
      "FFVV Vida Individual", "Diana Riofrío, Jaime Huerta",
      "Alejandro", 1, "Julio 2026",
@@ -72,6 +83,8 @@ ROWS = [
     ["Q-6", "Loyalty",
      "Programa de lealtad (MVP/piloto)",
      "Diseñar un programa de lealtad del ecosistema que asegure la permanencia de los asegurados",
+     "Diseño del programa de lealtad (mecánica de recompensas/beneficios) para reforzar la permanencia y el "
+     "comportamiento de continuidad del asegurado.",
      "In Progress", "Diseñando y viabilizando la propuesta MVP/piloto (3–6 meses)", 0.30,
      "Loyalty / Ecosistema RIMAC", "Denisse Galvez, Lucía Ramos, Jorge Sarmiento",
      "Alejandro", 2, "—",
@@ -81,6 +94,8 @@ ROWS = [
     ["Q-7", "Back to Basics FFVV Vida Individual",
      "Universidad Vida",
      "Acelerar la curva de aprendizaje de asesores nuevos / mejorar ratio de conversión",
+     "Programa de formación «Universidad Vida» para asesores nuevos: acelera la curva de aprendizaje con "
+     "práctica estructurada.",
      "In Progress", "WIP", 0.40,
      "FFVV Vida Individual", "Diana Riofrío, Jaime Huerta",
      "Melissa, Alejandro", 4, "Julio 2026",
@@ -89,9 +104,9 @@ ROWS = [
 
     ["Q-8", "Back to Basics FFVV Vida Individual",
      "Skill AIDA Bot Trainer + reportería",
-     "Promover el aprendizaje y capacitación de asesores y dar visibilidad de expertise a jefaturas FFVV. "
-     "Agente con el que el asesor practica casos; genera puntaje de efectividad y alertas por falta de "
-     "principios básicos de experiencia (CX), visibles a jefaturas FFVV.",
+     "Promover el aprendizaje y capacitación de asesores y dar visibilidad de expertise a jefaturas FFVV",
+     "Agente entrenador (bot) de práctica de casos con puntaje de efectividad y alertas por falta de "
+     "principios básicos de experiencia (CX); práctica deliberada con feedback y visibilidad a jefaturas.",
      "In Review", "Prototipo diseñado y validada usabilidad y valoración de usuarios", 0.80,
      "FFVV Vida Individual", "Diana Riofrío, Jaime Huerta",
      "Felipe, Melissa", 6, "—",
@@ -102,6 +117,8 @@ ROWS = [
     ["Q-9", "Back to Basics FFVV Vida Individual",
      "Kit de Social Selling",
      "Promover la generación de leads y agendamientos para FFVV",
+     "Kit de social selling (contenido + herramientas de huella digital) para que la FFVV genere leads y "
+     "agendamientos.",
      "In Progress", "WIP", 0.40,
      "FFVV Vida Individual", "Diana Riofrío, Jaime Huerta",
      "Melissa", 3, "Julio 2026",
@@ -111,9 +128,12 @@ ROWS = [
     ["Q-10", "Bienestar 360",
      "Bienestar 360",
      "Piloto con colaboradores Rimac para construir hábitos saludables sostenibles",
+     "Programa de hábitos saludables (piloto Bienestar 360) para construir y sostener hábitos de bienestar "
+     "en colaboradores.",
      "Done", "Mantenimiento", 1.00,
      "Bienestar / Estar Bien", "Erika Echegaray, Belem Rodríguez; Solange Soto, Rosa Díaz",
-     "— (Equipo Bienestar / Estar Bien)", "—", "Setiembre 2026 (solo acompañamiento)",
+     "— (Equipo Bienestar / Estar Bien)", "—",
+     "Setiembre 2026 (solo acompañamiento)",
      "Presupuesto y recursos limitados para la siguiente versión",
      "+3 ptos Wellby · CSAT 4.6/5 · NPS 78"],
 ]
@@ -137,8 +157,13 @@ ESTADO_FILL = {
     "To Do (Block)": PatternFill("solid", fgColor="FFC7CE"),
 }
 
-WIDTHS = [7, 30, 30, 40, 14, 34, 10, 26, 28, 24, 8, 22, 40, 52]
-WRAP_COLS = {2, 3, 4, 6, 8, 9, 10, 13, 14}  # 1-based columns to wrap
+# Índices de columna (1-based) con uso especial
+COL_ESTADO = 6
+COL_AVANCE = 8
+COL_FICHAS = 12
+
+WIDTHS = [7, 28, 26, 38, 46, 14, 32, 10, 24, 26, 22, 8, 20, 36, 48]
+WRAP_COLS = {2, 3, 4, 5, 7, 9, 10, 11, 14, 15}  # columnas (1-based) con texto largo
 
 # ----------------------------------------------------------------------------
 # Construcción
@@ -147,7 +172,6 @@ wb = Workbook()
 ws = wb.active
 ws.title = "Status Proyectos"
 
-# Título
 last_col = get_column_letter(len(COLUMNS))
 ws.merge_cells(f"A1:{last_col}1")
 ws["A1"] = "Matriz de Status — Behavioral Design (RIMAC)"
@@ -164,36 +188,34 @@ for c, name in enumerate(COLUMNS, start=1):
     cell.font = HEADER_FONT
     cell.alignment = CENTER
     cell.border = BORDER
-ws.row_dimensions[HEADER_ROW].height = 30
+ws.row_dimensions[HEADER_ROW].height = 32
 
 for r, row in enumerate(ROWS, start=HEADER_ROW + 1):
     for c, value in enumerate(row, start=1):
         cell = ws.cell(row=r, column=c, value=value)
         cell.border = BORDER
         cell.alignment = WRAP_TOP if c in WRAP_COLS else Alignment(vertical="top")
-        if c == 5:  # Estado
+        if c == COL_ESTADO:
             cell.alignment = CENTER
             cell.fill = ESTADO_FILL.get(value, PatternFill())
             cell.font = Font(bold=True, size=10)
-        if c == 7:  # % Avance
+        if c == COL_AVANCE:
             cell.number_format = "0%"
             cell.alignment = CENTER
-        if c == 11:  # Fichas
+        if c == COL_FICHAS:
             cell.alignment = CENTER
 
-# Anchos de columna
 for c, w in enumerate(WIDTHS, start=1):
     ws.column_dimensions[get_column_letter(c)].width = w
 
-# Filtro + panel congelado
 first_data = HEADER_ROW + 1
 last_data = HEADER_ROW + len(ROWS)
 ws.auto_filter.ref = f"A{HEADER_ROW}:{last_col}{last_data}"
 ws.freeze_panes = f"C{first_data}"
 
-# Barras de datos en % Avance (columna G)
+avance_letter = get_column_letter(COL_AVANCE)
 ws.conditional_formatting.add(
-    f"G{first_data}:G{last_data}",
+    f"{avance_letter}{first_data}:{avance_letter}{last_data}",
     DataBarRule(start_type="num", start_value=0, end_type="num", end_value=1,
                 color="4472C4", showValue=True),
 )
@@ -202,12 +224,15 @@ ws.conditional_formatting.add(
 # Hoja de leyenda y notas
 # ----------------------------------------------------------------------------
 ws2 = wb.create_sheet("Leyenda y notas")
-ws2.column_dimensions["A"].width = 30
-ws2.column_dimensions["B"].width = 90
+ws2.column_dimensions["A"].width = 32
+ws2.column_dimensions["B"].width = 92
 ws2["A1"] = "Leyenda y notas metodológicas"
 ws2["A1"].font = TITLE_FONT
 notas = [
     ("Fecha de corte", "2026-06-22"),
+    ("Objetivo del proyecto", "El para qué de negocio de la iniciativa (resultado buscado)."),
+    ("Intervención de diseño de conducta", "La solución/artefacto de behavioral design que se diseña e "
+                  "implementa: la palanca conductual concreta (guía, mensaje, programa, bot, kit, etc.)."),
     ("% Avance", "Estimación derivada del estado/status de cada iniciativa (no es un % reportado por el "
                   "equipo). Done/Mantenimiento = 100%; In Review = 80%; In Progress = 20–40% según detalle; "
                   "Block = 10%. Ajustar con el avance real de cada líder."),
@@ -216,7 +241,7 @@ notas = [
     ("Stakeholder", "Tomado del board original (Behavioral_Design.pdf)."),
     ("Equipo Behavioral Design", "Behavioral designers asignados (assignees)."),
     ("Fichas", "Capacidad asignada (8 de 10 fichas comprometibles por persona). Distribución propuesta, "
-               "pendiente de confirmación. Alerta de capacidad: Alejandro 9/8 (🔴 sobreasignado)."),
+               "pendiente de confirmación. Alerta de capacidad: Alejandro 9/8 (sobreasignado)."),
     ("(est.) en Impacto", "Estimación basada en benchmarks de industria + investigación interna del repo, "
                           "no cifra comprometida por RIMAC."),
     ("Cifras duras", "Q-4 (S/600k), Q-8 (S/1.8M) y Q-10 (Wellby/CSAT/NPS) provienen del board original."),
@@ -224,10 +249,10 @@ notas = [
 ]
 for i, (k, v) in enumerate(notas, start=3):
     ws2.cell(row=i, column=1, value=k).font = Font(bold=True, color=NAVY)
-    ws2.cell(row=i, column=1).alignment = Alignment(vertical="top")
+    ws2.cell(row=i, column=1).alignment = Alignment(vertical="top", wrap_text=True)
     c = ws2.cell(row=i, column=2, value=v)
     c.alignment = Alignment(wrap_text=True, vertical="top")
-    ws2.row_dimensions[i].height = 42
+    ws2.row_dimensions[i].height = 44
 
 OUT = Path(__file__).resolve().parent / "Status_Proyectos_Behavioral_Design.xlsx"
 wb.save(OUT)
