@@ -1,6 +1,6 @@
 # 🐉 Tablero Beholder — Behavioral Design (RIMAC)
 
-**Estado del proyecto:** WIP  ·  **Ciclo/Sprint:** Roadmap Q3-2026 (Chapter SD1, 22/06–11/09)  ·  **Fecha:** 2026-06-22
+**Estado del proyecto:** WIP  ·  **Ciclo/Sprint:** Roadmap Q3-2026 (Chapter SD1, 22/06–11/09)  ·  **Fecha:** 2026-06-23
 
 > Sincronizado con la matriz Excel (`reportes/Status_Proyectos_Behavioral_Design.xlsx`) y el
 > Roadmap Q3-2026. El PDF del roadmap tenía el texto distorsionado: los campos inciertos van
@@ -10,7 +10,7 @@
 | Métrica | Valor |
 |---|---|
 | Épicas | 10 |
-| Quests | 26 (14 previas + 12 nuevas del roadmap) |
+| Quests | 24 (12 previas + 12 nuevas del roadmap) |
 | Colaboradores (con fichas) | 4 |
 | Fichas comprometidas / capacidad | 36 / 32 |
 | Quests con riesgo alto 🚩 | 4 |
@@ -19,7 +19,7 @@
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15, Q-16, Q-17, Q-18, Q-19, Q-20 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
+| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15, Q-16, Q-19, Q-20 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
 | | | (+ Q-7, Q-12, Q-14 en «Diseñado») | | |
 
 > Nota: «Diseñado» es un estado intermedio del equipo (entre In Progress e In Review): Q-7, Q-12, Q-14.
@@ -57,8 +57,6 @@ Optimizar pagos, liberación de reservas y continuidad de venta.
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
 | Q-4 | Optimización de Cobranzas B2B | In Progress | 4 🎟️ | Stef | Track de diseño aprobado sin explorar problemática 🚩 | Liberación de S/600k provisionados |
-| Q-17 | Negociación y liberación de reservas vida | In Progress | — | (por confirmar) | — | — |
-| Q-18 | Optimización de venta nueva AMI con continuidad | In Progress | — | (por confirmar) | — | — |
 
 ### EPIC-5 · Loyalty
 Programa de lealtad del ecosistema + comunicaciones + empresas.
