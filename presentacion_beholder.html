@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>El Beholder — CoE de Diseño de Experiencias · Rimac</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B1620; --text:#1F2937; --muted:#6B7280; --red:#F7052D;
+    --bg-section:#ECEEFC; --bg-soft:#F5F6FB; --bg-warm:#FFF6EF; --bg-cool:#F7F8FE;
+    --line:#E5E7EB; --orange:#FF7A00; --magenta:#C8128B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Manrope',sans-serif;color:var(--text);background:#F2F3F7}
+  .viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#F2F3F7}
+  .stage{
+    width:1920px;height:1080px;min-width:1920px;min-height:1080px;flex-shrink:0;
+    position:relative;transform-origin:center center;background:#fff;overflow:hidden;
+    box-shadow:0 20px 60px rgba(11,22,32,.12)
+  }
+  .slide{
+    position:absolute;inset:0;padding:80px 100px 100px;
+    visibility:hidden;opacity:0;pointer-events:none;transition:opacity .35s
+  }
+  .slide.active{visibility:visible;opacity:1;pointer-events:auto}
+  .slide.section{background:var(--bg-section);display:flex;flex-direction:column;justify-content:center}
+
+  /* Typography */
+  h1{font-size:116px;font-weight:800;line-height:.96;letter-spacing:-.04em;color:var(--ink)}
+  h1.big{font-size:140px;line-height:.95}
+  h2.h{font-size:64px;font-weight:800;line-height:1.05;letter-spacing:-.025em;color:var(--ink)}
+  h3.card-title{font-size:28px;font-weight:700;line-height:1.2;color:var(--ink);margin-bottom:12px}
+  .eyebrow{font-size:18px;font-weight:700;letter-spacing:.02em;color:var(--ink);margin-bottom:24px}
+  .section-num{font-size:18px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);margin-bottom:32px;opacity:.55}
+  .sublabel{font-size:26px;font-weight:500;line-height:1.4;color:var(--text);margin-top:32px;max-width:1100px}
+  p.sub{font-size:26px;font-weight:500;line-height:1.4;margin-top:32px;max-width:1100px;color:var(--text)}
+  p.body{font-size:20px;font-weight:400;line-height:1.5;color:var(--text)}
+  p.body-sm{font-size:18px;font-weight:400;line-height:1.5;color:var(--text)}
+  .meta{font-size:18px;font-weight:500;color:var(--muted);margin-top:48px;line-height:1.6}
+
+  /* Gradient */
+  .grad{
+    background:linear-gradient(90deg,#FF7A00 0%,#F7052D 45%,#C8128B 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent
+  }
+
+  /* Footer */
+  .footer{position:absolute;left:100px;bottom:50px;display:flex;align-items:center;gap:16px}
+  .footer .logo svg{width:115px;height:auto;display:block}
+  .footer .sep{width:1px;height:20px;background:var(--muted);opacity:.4}
+  .footer .tag{font-size:14px;font-weight:500;letter-spacing:.02em;color:var(--muted)}
+
+  /* Page number */
+  .pagenum{position:absolute;right:100px;top:60px;font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--muted)}
+
+  /* Slide body wrapper */
+  .slide-body{display:flex;flex-direction:column;margin:auto 0;width:100%}
+
+  /* Cards */
+  .card{background:var(--bg-soft);border-radius:18px;padding:32px 32px 28px}
+  .card-warm{background:var(--bg-warm);border-radius:18px;padding:32px 32px 28px;border-left:6px solid var(--orange)}
+  .card-cool{background:var(--bg-cool);border-radius:18px;padding:32px 32px 28px;border-left:6px solid var(--magenta)}
+  .card-red{background:rgba(247,5,45,.06);border-radius:18px;padding:32px 32px 28px;border-left:6px solid var(--red)}
+  .tier-tag{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+  .card-body{font-size:18px;font-weight:400;line-height:1.55;color:var(--text)}
+
+  /* Callout */
+  .callout{background:var(--bg-section);border-radius:4px;border-left:6px solid var(--red);padding:28px 36px;font-size:22px;font-weight:500;line-height:1.5;color:var(--ink)}
+
+  /* Grids */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px}
+  .four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+
+  /* Num list */
+  .num-list{display:flex;flex-direction:column;gap:28px}
+  .num-item{display:grid;grid-template-columns:56px 1fr;gap:0 24px;align-items:start}
+  .num-item .num{font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--muted);padding-top:6px}
+  .num-item .item-title{font-size:26px;font-weight:700;line-height:1.2;color:var(--ink);margin-bottom:6px}
+  .num-item .item-body{font-size:18px;font-weight:400;line-height:1.5;color:var(--text)}
+
+  /* Fichas visual */
+  .ficha-grid{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+  .ficha{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px}
+  .ficha.active{background:var(--ink)}
+  .ficha.overhead{background:#D1D5DB}
+  .ficha.over{background:var(--red)}
+
+  /* State badge */
+  .state-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-size:14px;font-weight:700;letter-spacing:.04em}
+  .state-opt{background:#D1FAE5;color:#065F46}
+  .state-hol{background:#F3F4F6;color:#374151}
+  .state-over{background:#FEE2E2;color:#991B1B}
+  .state-inv{background:#1F2937;color:#fff}
+
+  /* Table */
+  .data-table{width:100%;border-collapse:collapse;font-size:19px}
+  .data-table th{font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--line);padding:14px 16px;text-align:left}
+  .data-table td{padding:16px 16px;border-bottom:1px solid var(--line);color:var(--text);vertical-align:top}
+  .data-table tr:last-child td{border-bottom:none}
+  .data-table .emph{background:rgba(247,5,45,.06);font-weight:700;color:var(--ink)}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+
+  /* Panel split */
+  .panel-split{display:grid;grid-template-columns:1fr 1fr;height:100%;margin:-80px -100px -100px;overflow:hidden}
+  .panel-left{padding:80px 72px 100px 100px;display:flex;flex-direction:column;justify-content:center}
+  .panel-right{background:var(--bg-soft);padding:80px 100px 100px 72px;display:flex;flex-direction:column;justify-content:center;position:relative}
+
+  /* Pill */
+  .pill{display:inline-block;padding:8px 18px;border-radius:999px;background:var(--bg-soft);font-size:14px;font-weight:700;letter-spacing:.04em;color:var(--ink)}
+  .pill-red{display:inline-block;padding:8px 18px;border-radius:999px;background:rgba(247,5,45,.08);font-size:14px;font-weight:700;color:var(--red)}
+
+  /* Nav */
+  .nav-controls{
+    position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+    display:flex;gap:8px;background:var(--ink);color:#fff;
+    padding:12px 22px;border-radius:999px;font-size:14px;z-index:99;
+    font-family:'Manrope',sans-serif;font-weight:500;letter-spacing:.02em;
+    pointer-events:none;user-select:none
+  }
+
+  /* Motion */
+  @keyframes riseIn{
+    from{transform:translateY(20px);opacity:0}
+    to{transform:translateY(0);opacity:1}
+  }
+  .slide.active .reveal{animation:riseIn .65s cubic-bezier(.22,1,.36,1) both}
+  .slide.active .reveal:nth-child(1){animation-delay:.05s}
+  .slide.active .reveal:nth-child(2){animation-delay:.15s}
+  .slide.active .reveal:nth-child(3){animation-delay:.25s}
+  .slide.active .reveal:nth-child(4){animation-delay:.35s}
+  .slide.active .reveal:nth-child(5){animation-delay:.45s}
+  .slide.active .reveal:nth-child(6){animation-delay:.55s}
+  @media(prefers-reduced-motion:reduce){
+    .slide.active .reveal{animation:none!important}
+    .slide{transition:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="viewport">
+  <div class="stage" id="stage">
+
+    <!-- ─── SLIDE 1: COVER ─────────────────────────────────────────────── -->
+    <section class="slide cover active">
+      <div class="eyebrow reveal">HERRAMIENTA DE GESTIÓN · CoE DE DISEÑO DE EXPERIENCIAS</div>
+      <h1 class="reveal">El Beholder:<br>el supervisor que<br><span class="grad">todo lo ve.</span></h1>
+      <p class="sub reveal">Tablero de proyecto estilo Jira con economía de fichas para equipos de diseño conductual.</p>
+      <div class="meta reveal">Documento de referencia · v1.0<br>Junio 2026</div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- ─── SLIDE 2: MAPA DEL DECK ─────────────────────────────────────── -->
+    <section class="slide">
+      <div class="eyebrow reveal">MAPA DEL DOCUMENTO</div>
+      <h2 class="h reveal">Tres preguntas que responde <span class="grad">este deck.</span></h2>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+      <div class="three-col reveal" style="margin-top:56px">
+        <div class="card">
+          <div class="tier-tag">01 · QUÉ ES</div>
+          <h3 class="card-title">¿Para qué sirve el Beholder?</h3>
+          <p class="card-body">Organiza el estado de cualquier proyecto en un tablero Markdown estilo Jira, con todas las épicas, quests y colaboradores en un solo lugar.</p>
+        </div>
+        <div class="card">
+          <div class="tier-tag">02 · CÓMO FUNCIONA</div>
+          <h3 class="card-title">¿Cómo maneja la capacidad del equipo?</h3>
+          <p class="card-body">Administra una economía de 10 fichas por colaborador: 8 comprometibles en proyectos + 2 de reserva de overhead. La saturación se vuelve visible.</p>
+        </div>
+        <div class="card">
+          <div class="tier-tag">03 · GOBERNANZA</div>
+          <h3 class="card-title">¿Cómo controla los cambios?</h3>
+          <p class="card-body">Las fechas proyectadas tienen aprobación del owner obligatoria. Todos los cambios se registran en un historial de los últimos 15 días.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 3: SECTION DIVIDER 01 ───────────────────────────────── -->
+    <section class="slide section">
+      <div class="section-num reveal">01 — Qué es el Beholder</div>
+      <h1 class="big reveal">El ojo que ordena<br>el <span class="grad">caos del proyecto.</span></h1>
+      <p class="sublabel reveal">De notas sueltas a tablero Jira en Markdown, con un skill conversacional.</p>
+      <div class="footer"></div>
+    </section>
+
+    <!-- ─── SLIDE 4: QUÉ HACE ─────────────────────────────────────────── -->
+    <section class="slide">
+      <div class="eyebrow reveal">QUÉ HACE EL BEHOLDER</div>
+      <h2 class="h reveal">Tres capas de inteligencia <span class="grad">operacional.</span></h2>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+      <div class="three-col reveal" style="margin-top:52px">
+        <div class="card-warm">
+          <div class="tier-tag">TABLERO</div>
+          <h3 class="card-title">Organiza el estado del proyecto.</h3>
+          <p class="card-body">Toma notas sueltas o un board WIP y las estructura en épicas, quests e issues al estilo Jira — en Markdown legible por cualquier editor.</p>
+          <p class="card-body" style="margin-top:14px;color:var(--muted)">Guiado por entrevista conversacional, sin formularios rígidos.</p>
+        </div>
+        <div class="card-cool">
+          <div class="tier-tag">CAPACIDAD</div>
+          <h3 class="card-title">Administra la economía de fichas.</h3>
+          <p class="card-body">Cada colaborador tiene 10 fichas. El Beholder valida en tiempo real que nadie esté sobreasignado ni que la reserva de overhead se consuma.</p>
+          <p class="card-body" style="margin-top:14px;color:var(--muted)">Satura → alerta. Holgura → solo registra, sin alarmas.</p>
+        </div>
+        <div class="card">
+          <div class="tier-tag">CONTROL</div>
+          <h3 class="card-title">Registra y controla los cambios.</h3>
+          <p class="card-body">Los cambios de fecha necesitan aprobación del owner. Todo lo demás es de edición libre y queda en el historial de 15 días — con autor, campo y delta.</p>
+          <p class="card-body" style="margin-top:14px;color:var(--muted)">El historial completo siempre vive en el git log.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 5: INVOCACIÓN ───────────────────────────────────────── -->
+    <section class="slide">
+      <div class="eyebrow reveal">CÓMO INVOCARLO</div>
+      <h2 class="h reveal">Se dispara solo cuando <span class="grad">el contexto lo pide.</span></h2>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+      <div class="two-col reveal" style="margin-top:52px;align-items:start">
+        <div>
+          <div class="num-list">
+            <div class="num-item">
+              <span class="num">01</span>
+              <div>
+                <div class="item-title">Invocación explícita</div>
+                <div class="item-body">El usuario escribe <strong>/beholder</strong> — el skill se activa de inmediato con la apertura obligatoria y el link al tablero.</div>
+              </div>
+            </div>
+            <div class="num-item">
+              <span class="num">02</span>
+              <div>
+                <div class="item-title">Detección por contexto</div>
+                <div class="item-body">Si el usuario habla de épicas, quests, fichas, capacidad o pega notas de un proyecto, el Beholder se dispara aunque no lo pida.</div>
+              </div>
+            </div>
+            <div class="num-item">
+              <span class="num">03</span>
+              <div>
+                <div class="item-title">Actualización de pendientes</div>
+                <div class="item-body">En cualquier sesión posterior, pregunta qué pasó con los quests del equipo y actualiza el tablero quest a quest.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <div class="callout">
+            <strong>Apertura obligatoria (siempre):</strong><br>
+            <em style="font-size:20px;color:var(--text)">"Has accedido al Beholder ¿Qué ha pasado últimamente con tus proyectos?"</em><br>
+            <span style="font-size:18px;color:var(--muted);margin-top:8px;display:block">+ link funcional al tablero.</span>
+          </div>
+          <div class="card">
+            <div class="tier-tag">NOTA DE ALCANCE</div>
+            <p class="card-body">Sin saludos ni preámbulos. La primera línea es siempre la pregunta. A partir de ahí, guía conversacional — no formulario.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 6: SECTION DIVIDER 02 ───────────────────────────────── -->
+    <section class="slide section">
+      <div class="section-num reveal">02 — La economía de fichas</div>
+      <h1 class="big reveal">La capacidad real,<br><span class="grad">hecha visible.</span></h1>
+      <p class="sublabel reveal">10 fichas por colaborador. 8 comprometibles. 2 de reserva. El sistema que hace honesta la carga de trabajo.</p>
+      <div class="footer"></div>
+    </section>
+
+    <!-- ─── SLIDE 7: ECONOMÍA DE FICHAS ──────────────────────────────── -->
+    <section class="slide">
+      <div class="eyebrow reveal">ECONOMÍA DE FICHAS</div>
+      <h2 class="h reveal">Cuatro estados de <span class="grad">capacidad.</span></h2>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+      <div class="four-col reveal" style="margin-top:52px">
+
+        <div class="card" style="border-top:4px solid #9CA3AF">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+            <span class="tier-tag" style="color:var(--muted)">CON HOLGURA</span>
+            <span style="font-size:24px">⚪</span>
+          </div>
+          <h3 class="card-title" style="font-size:22px">Menos de 8 fichas.</h3>
+          <div class="ficha-grid">
+            <div class="ficha active">🎟</div><div class="ficha active">🎟</div><div class="ficha active">🎟</div>
+            <div class="ficha active">🎟</div><div class="ficha active">🎟</div>
+            <div class="ficha overhead"></div><div class="ficha overhead"></div>
+            <div class="ficha overhead"></div><div class="ficha overhead"></div><div class="ficha overhead"></div>
+          </div>
+          <p class="card-body">Solo se <strong>informa</strong> en el libro mayor. No es alerta, no bloquea, no se propone mover fichas.</p>
+        </div>
+
+        <div class="card" style="border-top:4px solid #10B981">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+            <span class="tier-tag" style="color:#065F46">ÓPTIMO</span>
+            <span style="font-size:24px">🟢</span>
+          </div>
+          <h3 class="card-title" style="font-size:22px">Exactamente 8 fichas.</h3>
+          <div class="ficha-grid">
+            <div class="ficha active">🎟</div><div class="ficha active">🎟</div><div class="ficha active">🎟</div>
+            <div class="ficha active">🎟</div><div class="ficha active">🎟</div>
+            <div class="ficha active">🎟</div><div class="ficha active">🎟</div><div class="ficha active">🎟</div>
+            <div class="ficha overhead"></div><div class="ficha overhead"></div>
+          </div>
+          <p class="card-body">Capacidad operativa completa. Reserva de overhead intacta. Estado ideal para el equipo.</p>
+        </div>
+
+        <div class="card-red">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+            <span class="tier-tag">SOBREASIGNADO</span>
+            <span style="font-size:24px">🔴</span>
+          </div>
+          <h3 class="card-title" style="font-size:22px">9 a 10 fichas.</h3>
+          <div class="ficha-grid">
+            <div class="ficha active">🎟</div><div class="ficha active">🎟</div><div class="ficha active">🎟</div>
+            <div class="ficha active">🎟</div><div class="ficha active">🎟</div>
+            <div class="ficha active">🎟</div><div class="ficha active">🎟</div><div class="ficha active">🎟</div>
+            <div class="ficha over">🎟</div><div class="ficha over">🎟</div>
+          </div>
+          <p class="card-body"><strong>Alerta visible.</strong> Está consumiendo la reserva de overhead. El Beholder propone ajuste concreto.</p>
+        </div>
+
+        <div class="card" style="border-top:4px solid var(--ink);background:var(--ink)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+            <span class="tier-tag" style="color:rgba(255,255,255,.5)">INVÁLIDO</span>
+            <span style="font-size:24px">⛔</span>
+          </div>
+          <h3 class="card-title" style="font-size:22px;color:#fff">Más de 10 fichas.</h3>
+          <div class="ficha-grid">
+            <div class="ficha" style="background:rgba(255,255,255,.15)">🎟</div>
+            <div class="ficha" style="background:rgba(255,255,255,.15)">🎟</div>
+            <div class="ficha" style="background:rgba(255,255,255,.15)">🎟</div>
+            <div class="ficha" style="background:rgba(255,255,255,.15)">🎟</div>
+            <div class="ficha" style="background:rgba(255,255,255,.15)">🎟</div>
+            <div class="ficha" style="background:rgba(255,255,255,.15)">🎟</div>
+            <div class="ficha" style="background:rgba(255,255,255,.15)">🎟</div>
+            <div class="ficha" style="background:rgba(255,255,255,.15)">🎟</div>
+            <div class="ficha" style="background:rgba(247,5,45,.8)">🎟</div>
+            <div class="ficha" style="background:rgba(247,5,45,.8)">🎟</div>
+            <div class="ficha" style="background:rgba(247,5,45,.8)">🎟</div>
+          </div>
+          <p class="card-body" style="color:rgba(255,255,255,.65)"><strong style="color:#fff">Debe corregirse</strong> antes de cerrar el tablero. Imposible tener más fichas de las disponibles.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 8: SECTION DIVIDER 03 ───────────────────────────────── -->
+    <section class="slide section">
+      <div class="section-num reveal">03 — El tablero en acción</div>
+      <h1 class="big reveal">De la entrevista<br>al <span class="grad">tablero Jira.</span></h1>
+      <p class="sublabel reveal">Seis pasos conversacionales para pasar de cero a un board completo y reconciliado.</p>
+      <div class="footer"></div>
+    </section>
+
+    <!-- ─── SLIDE 9: FLUJO DE TRABAJO ───────────────────────────────────── -->
+    <section class="slide">
+      <div class="eyebrow reveal">FLUJO DE TRABAJO</div>
+      <h2 class="h reveal">Seis pasos para <span class="grad">cerrar el tablero.</span></h2>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+      <div class="two-col reveal" style="margin-top:48px;align-items:start">
+        <div class="num-list">
+          <div class="num-item">
+            <span class="num">01</span>
+            <div>
+              <div class="item-title">Apertura y modo</div>
+              <div class="item-body">La línea obligatoria + link. Detecta si es proyecto <strong>nuevo</strong>, <strong>WIP</strong> o <strong>actualización de pendientes</strong>.</div>
+            </div>
+          </div>
+          <div class="num-item">
+            <span class="num">02</span>
+            <div>
+              <div class="item-title">Cabecera del proyecto</div>
+              <div class="item-body">Nombre, ciclo/sprint, fecha. Si no la dan, usa la de hoy.</div>
+            </div>
+          </div>
+          <div class="num-item">
+            <span class="num">03</span>
+            <div>
+              <div class="item-title">Roster de colaboradores</div>
+              <div class="item-body">Quiénes participan y su contrato: 10 fichas, 8 comprometibles + 2 de reserva.</div>
+            </div>
+          </div>
+        </div>
+        <div class="num-list">
+          <div class="num-item">
+            <span class="num">04</span>
+            <div>
+              <div class="item-title">Épicas y quests</div>
+              <div class="item-body">6 campos obligatorios por quest: nombre, épica, fichas por colaborador, BDs, riesgos, impacto. Batchea por épica.</div>
+            </div>
+          </div>
+          <div class="num-item">
+            <span class="num">05</span>
+            <div>
+              <div class="item-title">Reconciliación de fichas</div>
+              <div class="item-body">Suma fichas de cada colaborador, aplica la tabla de validación y alerta si alguien supera 8. Holgura: solo informar.</div>
+            </div>
+          </div>
+          <div class="num-item">
+            <span class="num">06</span>
+            <div>
+              <div class="item-title">Render y entrega</div>
+              <div class="item-body">Genera el tablero en <strong>TABLERO_BEHOLDER.md</strong>, commitea, pushea y entrega un link funcional — nunca solo una ruta.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 10: EJEMPLO ─────────────────────────────────────────── -->
+    <section class="slide">
+      <div class="eyebrow reveal">EJEMPLO REAL — ONBOARDING 2.0</div>
+      <h2 class="h reveal">Así se ve el tablero <span class="grad">en producción.</span></h2>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+      <div class="two-col reveal" style="margin-top:44px;align-items:start;gap:48px">
+        <div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Quest</th>
+                <th>Estado</th>
+                <th>Fichas</th>
+                <th>Riesgo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Q-1</strong> · Rediseñar registro</td>
+                <td><span class="pill" style="background:#DBEAFE;color:#1E40AF;padding:5px 12px">In Progress</span></td>
+                <td class="emph">8 🎟️</td>
+                <td>🚩 Alto</td>
+              </tr>
+              <tr>
+                <td><strong>Q-2</strong> · Email de bienvenida</td>
+                <td><span class="pill" style="background:#FEF9C3;color:#854D0E;padding:5px 12px">To Do</span></td>
+                <td>3 🎟️</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td><strong>Q-3</strong> · Checklist primeros pasos</td>
+                <td><span class="pill" style="background:#DBEAFE;color:#1E40AF;padding:5px 12px">In Progress</span></td>
+                <td>4 🎟️</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Q-4</strong> · Panel de analítica</td>
+                <td><span class="pill" style="background:#E0E7FF;color:#3730A3;padding:5px 12px">In Review</span></td>
+                <td>2 🎟️</td>
+                <td>Media</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:24px">
+          <div class="card">
+            <div class="tier-tag">LIBRO MAYOR</div>
+            <div style="display:flex;flex-direction:column;gap:14px;margin-top:8px">
+              <div style="display:flex;align-items:center;gap:16px">
+                <span style="font-size:22px;font-weight:700;color:var(--ink);min-width:60px">Mara</span>
+                <span class="state-opt">🟢 Óptimo · 8/8</span>
+                <span style="font-size:16px;color:var(--muted)">Q-1:5, Q-2:3</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:16px">
+                <span style="font-size:22px;font-weight:700;color:var(--ink);min-width:60px">Cassian</span>
+                <span class="state-over">🔴 Sobreasig. · 9/8</span>
+                <span style="font-size:16px;color:var(--muted)">Q-1:3, Q-3:4, Q-4:2</span>
+              </div>
+            </div>
+          </div>
+          <div class="callout" style="font-size:19px">
+            <strong>Alerta Cassian:</strong> 9 comprometidas — usa 1 ficha de reserva.<br>
+            <span style="font-size:17px;margin-top:6px;display:block;color:var(--text)">Ajuste sugerido: mover 1 ficha de Q-4 (In Review) a reserva → 🟢 Óptimo.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 11: SECTION DIVIDER 04 ──────────────────────────────── -->
+    <section class="slide section">
+      <div class="section-num reveal">04 — Gobernanza</div>
+      <h1 class="big reveal">Los cambios que<br>necesitan <span class="grad">aprobación.</span></h1>
+      <p class="sublabel reveal">Edición libre para la mayoría. Control estricto solo donde importa: las fechas.</p>
+      <div class="footer"></div>
+    </section>
+
+    <!-- ─── SLIDE 12: GOBERNANZA ──────────────────────────────────────── -->
+    <section class="slide">
+      <div class="eyebrow reveal">GOBERNANZA · CONTROL DE CAMBIOS</div>
+      <h2 class="h reveal">Dos reglas que <span class="grad">siempre aplican.</span></h2>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+      <div class="two-col reveal" style="margin-top:52px;align-items:start">
+        <div class="card-red" style="height:100%">
+          <div class="tier-tag">CAMBIOS DE FECHA → APROBACIÓN</div>
+          <h3 class="card-title">Las fechas son campos controlados.</h3>
+          <div class="num-list" style="margin-top:24px">
+            <div class="num-item">
+              <span class="num">1</span>
+              <div class="item-body">No aplicar la fecha todavía.</div>
+            </div>
+            <div class="num-item">
+              <span class="num">2</span>
+              <div class="item-body">Registrar alerta en <strong>ALERTAS_FECHAS.md</strong>: quién pide, fecha anterior → nueva, motivo.</div>
+            </div>
+            <div class="num-item">
+              <span class="num">3</span>
+              <div class="item-body">Solo el <strong>owner</strong> (definido en config) puede aprobar con "aprobado" explícito.</div>
+            </div>
+            <div class="num-item">
+              <span class="num">4</span>
+              <div class="item-body">Al aprobarse: aplicar, marcar alerta como <strong>APROBADA</strong> y registrar en historial.</div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:28px">
+          <div class="card-cool">
+            <div class="tier-tag">HISTORIAL DE 15 DÍAS</div>
+            <h3 class="card-title">Cada cambio se registra con script.</h3>
+            <p class="card-body" style="margin-top:12px">Autor · clave del quest · campo · antes → después · tipo. El script agrega la entrada, borra las de más de 15 días y regenera <strong>CAMBIOS.md</strong>.</p>
+            <div style="background:var(--ink);border-radius:8px;padding:18px 20px;margin-top:20px;font-size:15px;color:#9CA3AF;font-family:monospace;line-height:1.7">
+              <span style="color:#F7052D">python</span> reportes/historial/registrar_cambio.py<br>
+              &nbsp;&nbsp;--autor "Nombre" --clave Q-7<br>
+              &nbsp;&nbsp;--campo "Estado" --antes "Diseñado"<br>
+              &nbsp;&nbsp;--despues "In Review" --tipo normal
+            </div>
+          </div>
+          <div class="callout" style="font-size:19px">
+            Todo lo demás (estado, % avance, riesgos, impacto, fichas) es <strong>edición libre</strong>: se aplica directo y se registra en historial.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SLIDE 13: CIERRE ──────────────────────────────────────────── -->
+    <section class="slide">
+      <div class="eyebrow reveal">POR QUÉ USARLO</div>
+      <h2 class="h reveal">El Beholder hace visible <span class="grad">lo que nadie ve.</span></h2>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+      <div class="three-col reveal" style="margin-top:56px">
+        <div class="card-warm">
+          <div class="tier-tag">VISIBILIDAD</div>
+          <h3 class="card-title">El proyecto en una sola vista.</h3>
+          <p class="card-body">Épicas, quests, estados, riesgos e impacto en un Markdown legible por cualquier miembro del equipo sin herramientas adicionales.</p>
+        </div>
+        <div class="card-cool">
+          <div class="tier-tag">HONESTIDAD</div>
+          <h3 class="card-title">La capacidad real del equipo.</h3>
+          <p class="card-body">La economía de fichas hace explícita la saturación oculta — cuando alguien "parece a tiempo" pero ya no tiene aire para lo operativo.</p>
+        </div>
+        <div class="card">
+          <div class="tier-tag">TRAZABILIDAD</div>
+          <h3 class="card-title">Qué cambió, cuándo y quién lo aprobó.</h3>
+          <p class="card-body">El historial de 15 días + las alertas de fechas dan al equipo una memoria reciente de proyecto sin depender de chats o correos.</p>
+        </div>
+      </div>
+      <div class="callout reveal" style="margin-top:48px;font-size:21px">
+        Invoca con <strong>/beholder</strong> — o simplemente empieza a describir tu proyecto.
+      </div>
+    </section>
+
+  </div><!-- /stage -->
+</div><!-- /viewport -->
+
+<div class="nav-controls">← / → para navegar &nbsp;·&nbsp; E para editar</div>
+
+<script>
+const LOGO_SVG = `<svg width="230" height="32" viewBox="0 0 230 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M41.3493 0C41.0497 0 40.4504 0.243398 40.4504 0.243398C40.3306 0.243398 1.01874 18.3727 1.01874 18.3727C0.359549 18.6769 0 19.1635 0 19.8327C0 20.6844 0.659192 21.3536 1.49816 21.3536C1.65797 21.3536 1.81776 21.2995 1.97755 21.2455C2.05745 21.2184 2.13735 21.1914 2.21725 21.1711C2.27718 21.1711 37.2743 5.96196 37.2743 5.96196L27.0269 27.924C26.8471 28.3498 26.7272 28.7757 26.7272 29.2016C26.7272 30.7225 27.9857 32 29.4839 32C29.7835 32 30.0831 31.9392 30.3827 31.8784C30.3827 31.8784 81.6199 17.2776 81.6799 17.2776C84.3766 16.6084 86.3541 14.1141 86.3541 11.1939C86.3541 7.66538 83.5376 4.86694 80.1218 4.86694C79.2229 4.86694 78.4439 5.04943 77.545 5.41445C77.4851 5.47529 36.0158 23.3612 36.0158 23.3612L43.1471 2.85933C43.267 2.55514 43.3269 2.3118 43.3269 2.00762C43.3269 0.91256 42.428 0 41.3493 0Z" fill="#F7052D"/><path d="M175.645 6.26584V28.8362H170.431V12.7145L159.285 28.8362H154.131L149.457 12.6537L142.026 28.8362H135.913L146.88 5.35333C147.659 3.83242 148.438 3.16321 149.936 3.16321C150.955 3.16321 152.034 3.77157 152.513 5.53583L157.307 23.1176L169.772 5.10993C170.851 3.58902 171.749 3.10237 172.948 3.16321C174.266 3.16321 175.585 4.07573 175.585 6.26584H175.645Z" fill="#F7052D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M113.382 7.48221C118.955 7.48221 120.513 10.7066 120.213 13.5659H120.153C119.854 16.3644 118.176 19.0412 113.322 20.3187L118.835 28.8359H112.782L107.868 20.8054H105.052L103.254 28.8359H97.7407L102.595 7.48221H113.382ZM109.846 17.2161C112.543 17.2161 114.46 15.9385 114.7 13.8701H114.76C114.94 11.8625 113.801 10.7674 111.584 10.7674H107.389L105.891 17.2161H109.846Z" fill="#F7052D"/><path d="M134.355 7.48221H128.781L123.867 28.8359H129.501L133.036 13.1401L134.355 7.48221Z" fill="#F7052D"/><path d="M219.75 24.8827C215.256 24.8219 212.679 22.1451 213.038 18.6774H213.098C213.578 14.0539 217.593 11.2554 223.166 11.2554C224.784 11.2554 226.941 11.377 228.859 11.9246L229.818 7.60514C228.2 7.17929 225.503 6.87513 223.765 6.87513C214.177 6.87513 208.064 11.5595 207.345 18.5557C206.686 24.7611 210.821 29.2021 219.69 29.2021C221.488 29.2021 222.986 29.0196 225.203 28.6546L226.282 23.9702C224.185 24.5786 222.447 24.8827 219.75 24.8827Z" fill="#F7052D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M199.015 9.67225C198.356 7.36046 197.038 6.75214 195.659 6.87382C194.82 6.93465 193.922 7.36053 192.963 8.69893L179.659 28.8358H185.112L187.989 24.3339H197.757L198.776 28.8358H204.109L198.955 9.67225H199.015ZM190.326 20.8054L195.36 12.9575L196.978 20.8054H190.326Z" fill="#F7052D"/></svg>`;
+
+/* Inyectar logo en todos los footers */
+document.querySelectorAll('.footer').forEach(f => {
+  f.innerHTML =
+    `<div class="logo">${LOGO_SVG}</div>` +
+    `<div class="sep"></div>` +
+    `<div class="tag">CoE de Diseño de Experiencias</div>`;
+});
+
+const slides = Array.from(document.querySelectorAll('.slide'));
+const total = slides.length;
+
+/* Pagenum dinámico */
+slides.forEach((s, i) => {
+  const p = s.querySelector('.pagenum');
+  if (p) p.textContent = String(i+1).padStart(2,'0') + ' / ' + String(total).padStart(2,'0');
+});
+
+/* Slide-body wrapper para centrado vertical */
+slides.forEach(s => {
+  if (s.classList.contains('cover') || s.classList.contains('section')) return;
+  if (s.querySelector('.panel-split')) return;
+  const title = s.querySelector('h2.h');
+  if (!title) return;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'slide-body';
+  let cur = title.nextElementSibling;
+  while (cur && !cur.classList.contains('pagenum') && !cur.classList.contains('footer')) {
+    const node = cur;
+    cur = cur.nextElementSibling;
+    wrapper.appendChild(node);
+  }
+  title.after(wrapper);
+});
+
+/* Navegación */
+let current = 0;
+window.show = (idx) => {
+  current = Math.max(0, Math.min(total - 1, idx));
+  slides.forEach((s, i) => s.classList.toggle('active', i === current));
+};
+
+/* Escalado 16:9 */
+window.fit = () => {
+  const stage = document.getElementById('stage');
+  const k = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+  if (stage) stage.style.transform = `scale(${k})`;
+};
+window.addEventListener('resize', fit); fit();
+
+/* Teclado */
+addEventListener('keydown', e => {
+  if (['ArrowRight', ' ', 'PageDown'].includes(e.key)) { e.preventDefault(); show(current + 1); }
+  if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); show(current - 1); }
+  if (e.key === 'Home') show(0);
+  if (e.key === 'End') show(total - 1);
+  if (e.key === 'e' || e.key === 'E') {
+    document.querySelectorAll('h1,h2,h3,p,.card-body,.item-title,.item-body,.callout')
+      .forEach(el => el.contentEditable = el.contentEditable === 'true' ? 'false' : 'true');
+  }
+});
+
+/* Touch swipe */
+let tx = 0;
+addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, {passive:true});
+addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) show(dx < 0 ? current + 1 : current - 1);
+});
+
+show(0);
+</script>
+</body>
+</html>
