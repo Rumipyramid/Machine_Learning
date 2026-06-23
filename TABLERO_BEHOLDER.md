@@ -10,7 +10,7 @@
 | Métrica | Valor |
 |---|---|
 | Épicas | 10 |
-| Quests | 24 (12 previas + 12 nuevas del roadmap) |
+| Quests | 24 (14 previas + 10 nuevas del roadmap) |
 | Colaboradores (con fichas) | 4 |
 | Fichas comprometidas / capacidad | 36 / 32 |
 | Quests con riesgo alto 🚩 | 4 |
@@ -51,8 +51,8 @@ Reducir churn y reclamos por cambios en la renovación.
 |---|---|---|---|---|---|---|
 | Q-2 | Batería de soluciones para la renovación AMI | In Review | 2 🎟️ | Alejandro | La carta sola no cubre la necesidad | +3–5 pp retención (est.); Oncológicos BBVA implementado |
 
-### EPIC-4 · Evolution+ (Cobranzas / Reservas / Continuidad)
-Optimizar pagos, liberación de reservas y continuidad de venta.
+### EPIC-4 · Evolution+: Cobranzas
+Optimizar la captura de datos para conciliación de pagos B2B.
 
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|

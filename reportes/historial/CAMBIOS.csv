@@ -3,3 +3,4 @@ timestamp,autor,clave,campo,antes,despues,tipo,estado
 2026-06-23T13:48:08,Alejandro,Q-6,Equipo Behavioral Design,Alejandro,"Meli, Alejandro",normal,aplicado
 2026-06-23T21:24:22,Stef,Q-17,Estado,In Progress,Eliminado del tablero,normal,aplicado
 2026-06-23T21:24:22,Stef,Q-18,Estado,In Progress,Eliminado del tablero,normal,aplicado
+2026-06-23T21:49:10,Alejandro,Q-17/Q-18,Iniciativa (matriz),presentes (26),retiradas (24),normal,aplicado

@@ -157,19 +157,8 @@ ROWS = [
      "Salud / Estar Bien", "(por confirmar)", "(por confirmar)", "—", "Q3 2026",
      "—", "—"],
 
-    ["Q-17", "Evolution+: Reservas Vida", "Negociación y liberación de reservas vida", NEGOCIO,
-     "Liberar reservas de vida mediante una nueva experiencia de gestión",
-     "Diseño de la experiencia vista cliente E2E (4 fases) + piloto + co-diseño del escalamiento.",
-     "In Progress", "Diseño de la experiencia E2E en 4 fases; implementación del piloto; co-diseñar el escalamiento con el equipo de proceso; adecuar a gestión externa (Rimac empresa tercera); seguimiento al despliegue", 0.20,
-     "Finanzas / Vida", "(por confirmar)", "(por confirmar)", "—", "Q3 2026",
-     "—", "—"],
-
-    ["Q-18", "Evolution+: AMI continuidad", "Optimización de venta nueva AMI con continuidad", NEGOCIO,
-     "Optimizar la venta nueva AMI con continuidad",
-     "Piloto de venta por el hub + actualización de viabilidad financiera + definición de escalamiento.",
-     "In Progress", "Implementación del piloto para venta por el hub; actualización de la viabilidad financiera (caída en venta vs costo potencial de atención); definición de escalamiento a otros frentes (brokers, online y VIP)", 0.20,
-     "AMI – Salud / Comercial", "(por confirmar)", "(por confirmar)", "—", "Q3 2026",
-     "—", "—"],
+    # Q-17 (Evolution+ Reservas Vida) y Q-18 (Evolution+ AMI continuidad) retirados del
+    # tablero por Stefanie (2026-06-23); fuera de seguimiento en esta matriz.
 
     ["Q-19", "Comunicaciones Loyalty", "Diseño de piezas y journeys de comunicación", NEGOCIO,
      "Soportar Loyalty/Renovación con piezas y journeys de comunicación",
@@ -268,8 +257,8 @@ ws.merge_cells(f"A1:{last_col}1")
 ws["A1"] = "Matriz de Status — Behavioral Design (RIMAC)"
 ws["A1"].font = TITLE_FONT
 ws.merge_cells(f"A2:{last_col}2")
-ws["A2"] = ("Roadmap Q3-2026 (Chapter SD1) · Fecha de corte: 2026-06-22 · "
-            "26 iniciativas (14 previas + 12 nuevas del roadmap)")
+ws["A2"] = ("Roadmap Q3-2026 (Chapter SD1) · Fecha de corte: 2026-06-23 · "
+            "24 iniciativas (14 previas + 10 nuevas del roadmap)")
 ws["A2"].font = Font(italic=True, color="595959", size=10)
 ws.row_dimensions[1].height = 22
 
