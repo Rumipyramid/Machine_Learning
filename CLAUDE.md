@@ -16,6 +16,8 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/personas/datasets/usuarios_sinteticos_ejemplo.csv` | 200 filas — ejemplo de referencia del generador | — |
 | `research/personas/datasets/muestra_22_usuarios.csv` | 22 filas — simulación de pregunta abierta | — |
 | `research/personas/datasets/grupo_nse_A.csv` | 10 filas — grupo NSE A (simulación de opinión RIMAC) | — |
+| `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen breve, rigurosidad metodológica, autor y año por fuente | Lo mantiene el skill `cronista` (trazabilidad de fuentes) |
+| `.claude/skills/cronista/SKILL.md` | Skill `cronista`: archivero de fuentes del códice | Se dispara al usar evidencia referenciable para crear/fundamentar |
 
 ## 📊 Datos clave — seguros (Perú vs. Mundo)
 
@@ -41,6 +43,8 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 - Investigación → `research/`. · Activos de personas sintéticas → `research/personas/`.
 - Salidas/datasets generados → `research/personas/datasets/`.
 - Spec (`schema.json`) y matriz legible (`.md`) se mantienen sincronizados con el generador.
+- **Evidencia → `cronista`:** toda fuente referenciable usada para crear o fundamentar
+  se registra en `research/fuentes/registro_fuentes.md` (resumen, rigurosidad, autor, año).
 
 ---
 *Investigación recopilada 2026-06-21 · codex reorganizado 2026-06-22.*
