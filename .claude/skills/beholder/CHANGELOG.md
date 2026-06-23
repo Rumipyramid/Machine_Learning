@@ -3,6 +3,12 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.2.1] — 2026-06-23
+### Cambiado
+- La apertura ahora ofrece **dos caminos** tras la pregunta obligatoria: **A) Contar qué pasó**
+  (actualizar pendientes) o **B) Revisar el tablero de proyectos** (ver resumen + tablero por
+  estado + link).
+
 ## [1.2.0] — 2026-06-23
 ### Añadido
 - **Apertura obligatoria:** el Beholder inicia siempre con *"Has accedido al Beholder ¿Qué ha
