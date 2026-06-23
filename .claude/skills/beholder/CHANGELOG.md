@@ -3,6 +3,16 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.2.0] — 2026-06-23
+### Añadido
+- **Apertura obligatoria:** el Beholder inicia siempre con *"Has accedido al Beholder ¿Qué ha
+  pasado últimamente con tus proyectos?"* y guía conversacionalmente al equipo para llenar pendientes.
+- **Gobernanza de fechas:** los cambios de fecha proyectada generan una **alerta a todo el equipo**
+  (`reportes/ALERTAS_FECHAS.md`) y **solo se aplican con aprobación del owner** (config en
+  `reportes/beholder.config.md`). El resto de campos es de edición libre.
+- **Repositorio de historial (15 días):** `reportes/historial/` con `registrar_cambio.py` (agrega
+  entrada + purga >15 días + regenera `CAMBIOS.md`).
+
 ## [1.1.1] — 2026-06-22
 ### Añadido
 - **Empaquetado para GitHub:** `README.md`, `CHANGELOG.md`, ejemplo en `examples/`,

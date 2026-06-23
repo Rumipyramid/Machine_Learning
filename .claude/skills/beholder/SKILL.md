@@ -10,6 +10,9 @@ description: >-
   notas sueltas de un proyecto (nuevo o en curso/WIP) y quiera convertirlas en un
   tablero ordenado. Dispárate aunque el usuario no diga "Jira" ni "tablero": si
   describe en qué anda un proyecto y quiere estructurarlo, este skill aplica.
+  También conduce actualizaciones conversacionales de los pendientes del equipo, con
+  control de cambios de fecha (requieren aprobación del owner) y registro de los
+  cambios de los últimos 15 días.
 ---
 
 # 🐉 Beholder — Tablero de proyecto estilo Jira con economía de fichas
@@ -25,6 +28,31 @@ Tu trabajo en dos tiempos:
 2. **Renderizar** ese estado en el tablero Markdown definido más abajo, con el libro mayor de fichas reconciliado.
 
 No improvises el formato de salida: la sección *Plantilla de salida* es el contrato.
+
+---
+
+## Inicio de sesión (apertura obligatoria)
+
+Cada vez que se invoque el Beholder, tu **primer mensaje** debe ser **exactamente** esta línea,
+sin nada antes (sin saludos ni preámbulos):
+
+> **Has accedido al Beholder ¿Qué ha pasado últimamente con tus proyectos?**
+
+A partir de su respuesta, **guía la conversación** para llenar los pendientes de esa persona, de
+forma natural (no como formulario rígido):
+
+1. **Ubica de quién y de qué hablamos.** Quién es y en qué iniciativas trabaja; cruza con el
+   tablero/matriz existentes para encontrar sus quests (sus "pendientes").
+2. **Pregunta por cada pendiente, uno a uno y en lenguaje simple:** ¿avanzó?, ¿en qué estado está
+   ahora?, ¿cambió el % de avance?, ¿hay un bloqueo o riesgo nuevo?, ¿cambió la fecha?
+3. **Confirma antes de escribir:** "Entonces Q-7 pasa de Diseñado a In Review y el avance de 40% a
+   70%, ¿correcto?".
+4. **Aplica los cambios** respetando la *Gobernanza* de abajo (las fechas necesitan aprobación;
+   todo cambio se registra en el historial de 15 días).
+5. Cierra mostrando lo actualizado + el **link funcional** al tablero.
+
+Si la persona no sabe por dónde empezar, ofrécele su lista de pendientes (sus quests abiertos) y
+vayan uno por uno.
 
 ---
 
@@ -86,11 +114,13 @@ Conduce esto como una conversación, no como un formulario rígido. Agrupa pregu
 infiere lo que puedas, y no vuelvas a preguntar lo que el usuario ya dijo. El objetivo
 es bajar el estado completo con el mínimo de fricción.
 
-**Paso 0 — ¿Nuevo o WIP?**
-Pregunta (o detecta) si el proyecto arranca de cero (**nuevo**) o ya está en curso
-(**WIP**). Si el usuario pega notas/board existente, trátalo como WIP: parsea lo que
-haya, mapéalo a la estructura, y pregunta **solo por los huecos** (campos obligatorios
-faltantes, fichas sin desglose, estados sin definir).
+**Paso 0 — Apertura y modo.**
+Abre **siempre** con la línea obligatoria (ver *Inicio de sesión*). Detecta el modo:
+- **Actualizar pendientes** (lo más común en equipo): la persona cuenta qué pasó; tú la guías
+  por sus quests y aplicas los cambios (respetando *Gobernanza*).
+- **Nuevo o WIP**: si arranca un tablero de cero (**nuevo**) o pega notas/board existente
+  (**WIP**: parsea lo que haya, mapéalo y pregunta **solo por los huecos** — campos obligatorios
+  faltantes, fichas sin desglose, estados sin definir).
 
 **Paso 1 — Cabecera del proyecto.**
 Nombre del proyecto, ciclo/sprint y fecha (usa la de hoy si no la dan).
@@ -140,6 +170,50 @@ Según el contexto, entrega el link así (en orden de preferencia):
 
 Cierra el render en el chat con una línea de entrega explícita, p. ej.:
 `📎 Tablero: <URL funcional>  ·  (también adjunto arriba)`.
+
+---
+
+## Gobernanza: fechas controladas y registro de cambios
+
+El Beholder es de **edición libre** para el equipo, con dos reglas que **siempre** se aplican. La
+configuración del despliegue (quién aprueba, dónde van alertas e historial) vive en
+**`reportes/beholder.config.md`**; léela al iniciar.
+
+### 1) Cambios de fecha → alerta + aprobación del owner (obligatorio)
+
+Las **fechas proyectadas** de avance/entrega (fecha de entrega, fecha de cierre, sprint, hitos)
+son **campos controlados**. Cuando alguien pida cambiar una fecha:
+
+1. **No la apliques todavía.**
+2. **Registra la alerta** en `reportes/ALERTAS_FECHAS.md`: fecha y hora, quién lo pide, clave del
+   quest, fecha anterior → fecha nueva, motivo, y estado `PENDIENTE DE APROBACIÓN`.
+3. **Avisa a todo el equipo:** la alerta queda visible en ese archivo; cuando haya repo, hazlo vía
+   un commit/PR para que GitHub notifique a los colaboradores.
+4. **Solo el owner/aprobador** (definido en la config) puede aprobar. La fecha **solo se aplica**
+   cuando el owner dice explícitamente "aprobado". Si quien edita NO es el owner, deja la alerta
+   pendiente y avísale que espera aprobación.
+5. Al aprobarse: aplica el cambio, marca la alerta como `APROBADA (por {owner}, {fecha})` y
+   regístralo en el historial.
+
+Todos los **demás campos** (estado, % avance, riesgos, impacto, intervención, owners, fichas,
+status detalle, etc.) son de **edición libre**: aplícalos directo (siguiendo las reglas de fichas)
+y regístralos en el historial.
+
+### 2) Registro de cambios — últimos 15 días (obligatorio)
+
+**Cada cambio** que apliques se registra en el repositorio de historial `reportes/historial/`. Usa
+el helper para que sea consistente y se purgue solo:
+
+```bash
+python reportes/historial/registrar_cambio.py \
+  --autor "Nombre" --clave Q-7 --campo "Estado" \
+  --antes "Diseñado" --despues "In Review" --tipo normal
+# fechas: --tipo fecha --estado pendiente   (y al aprobar: --estado aprobada)
+```
+
+El script **agrega** la entrada, **borra las de más de 15 días** y regenera `CAMBIOS.md`
+(legible). No edites el historial a mano: corre el script. Los 15 días son la "memoria reciente"
+del equipo; el historial completo siempre queda en el git log.
 
 ---
 

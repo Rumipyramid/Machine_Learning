@@ -70,9 +70,17 @@ O simplemente describe en qué anda un proyecto: el skill se dispara **aunque no
 behavioral designers, riesgos o impacto, o cuando pegas notas sueltas (nuevas o WIP) y
 quieres estructurarlas.
 
-El Beholder conduce una **entrevista corta** (¿nuevo o WIP? → cabecera → roster → épicas →
-quests con desglose de fichas → reconciliación) y luego **renderiza el tablero**, lo guarda
-(sugiere `TABLERO_BEHOLDER.md`) y **cierra con un link funcional al archivo**.
+Al invocarse, el Beholder **siempre abre** con: *"Has accedido al Beholder ¿Qué ha pasado
+últimamente con tus proyectos?"* y desde ahí **guía conversacionalmente** al miembro del equipo
+para llenar sus pendientes. También puede construir un tablero nuevo o parsear uno WIP, y al
+final **renderiza el tablero**, lo guarda (`TABLERO_BEHOLDER.md`) y **cierra con un link funcional**.
+
+### 🛡️ Gobernanza (edición de equipo)
+- **Edición libre** de casi todos los campos (estado, % avance, riesgos, impacto, owners, fichas…),
+  pero **cada cambio se registra** en el historial de los **últimos 15 días** (`reportes/historial/`).
+- **Las fechas son campos controlados:** un cambio de fecha genera una **alerta a todo el equipo**
+  (`reportes/ALERTAS_FECHAS.md`) y **solo se aplica con la aprobación del owner** definido en
+  `reportes/beholder.config.md`.
 
 ---
 
