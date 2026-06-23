@@ -12,9 +12,9 @@
 | Épicas | 10 |
 | Quests | 24 (12 previas + 12 nuevas del roadmap) |
 | Colaboradores (con fichas) | 4 |
-| Fichas comprometidas / capacidad | 36 / 32 |
+| Fichas comprometidas / capacidad | 33 / 32 |
 | Quests con riesgo alto 🚩 | 4 |
-| Alertas de capacidad (🔴/⛔) | 2 (Stef ⛔, Alejandro 🔴) |
+| Alertas de capacidad (🔴/⛔) | 1 (Alejandro 🔴) |
 
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
@@ -41,7 +41,7 @@ Promover el entendimiento y uso eficiente de los seguros de salud mediante guía
 
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
-| Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | 8 🎟️ | Stef, Felipe, Alejandro | Roadmap reajustado −6 semanas | ↓ ~25–30% casos NPS «no recibí información» (est.) |
+| Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | 5 🎟️ | Felipe, Alejandro | Roadmap reajustado −6 semanas | ↓ ~25–30% casos NPS «no recibí información» (est.) |
 | Q-3 | Guías resumidas — EPS (Top 4 cuentas + Multiempresa) | In Review | 3 🎟️ | Stef, Felipe, Alejandro | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS; ↓ «no recibí información» |
 
 ### EPIC-3 · Renovación AMI
@@ -114,17 +114,13 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 
 | Colaborador | Comprometidas (de 8) | Reserva (de 2) | Estado | Desglose por quest |
 |---|---|---|---|---|
-| Stef | 11 | 0 | ⛔ Inválido | Q-1: 3, Q-3: 1, Q-4: 4, Q-10: 3 |
+| Stef | 8 | 2 | 🟢 Óptimo | Q-3: 1, Q-4: 4, Q-10: 3 |
 | Felipe | 8 | 2 | 🟢 Óptimo | Q-1: 3, Q-3: 1, Q-8: 4 |
 | Alejandro | 9 | 1 | 🔴 Sobreasignado | Q-1: 2, Q-2: 2, Q-3: 1, Q-5: 1, Q-6: 2, Q-7: 1 |
 | Melissa / Meli | 8 | 2 | 🟢 Óptimo | Q-7: 3, Q-8: 2, Q-9: 3 (+ Q-6 Loyalty por confirmar) |
 
 **Alertas de capacidad:**
-- ⛔ **Stef: 11 fichas (> 10) — inválido.** Con Q-10 (Bienestar) asignado a Stef supera su capacidad
-  total. **Debe corregirse:** liberar ≥3 fichas (p. ej. Q-4 está en discovery; o Q-10 ya está en
-  mantenimiento y podría requerir menos). 
-- 🔴 **Alejandro: 9 comprometidas.** Usa 1 ficha de reserva → poco aire para overhead. Y entra a
-  Loyalty (Q-6) y al piloto en Q3. Revisar antes de sumarle iniciativas nuevas.
+- 🔴 **Alejandro: 9 comprometidas.** Usa 1 ficha de reserva → poco aire para overhead. Revisar antes de sumarle iniciativas nuevas.
 - **Meli en Loyalty (Q-6):** el roadmap la suma al piloto; el split de fichas Q-6 (Meli/Alejandro)
   está **por confirmar**.
 
@@ -136,7 +132,7 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 | Q-4 | Optimización Cobranzas B2B | Diseño aprobado sin explorar la problemática | Alta | Las 12 entrevistas E2E cubren esto; validar hallazgos antes de diseñar |
 | Q-5 | Mensajes de primer contacto | Estrategia CUA aún en definición | Media | Cerrar definición CUA para confirmar desbloqueo |
 | Q-1 | Guías 4 productos AMI | Reajuste de roadmap −6 semanas | Media | Re-priorizar entregables con Estrella Damian / Soiky Bardales |
-| — | Capacidad del equipo | Stef ⛔ (11) y Alejandro 🔴 (9) + 12 iniciativas nuevas sin fichas | Alta | Re-asignar fichas antes de comprometer el Backlog Q3 |
+| — | Capacidad del equipo | Alejandro 🔴 (9) + iniciativas nuevas sin fichas | Media | Re-asignar fichas antes de comprometer el Backlog Q3 |
 
 ## 📈 Impacto
 | Clave | Quest | Impacto esperado |
