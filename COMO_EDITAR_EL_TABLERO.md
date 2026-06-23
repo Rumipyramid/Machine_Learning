@@ -27,8 +27,11 @@ Como el skill **Beholder** ya está dentro del repo, el comando `/beholder` se c
    - `/beholder agrega un riesgo a Q-4: "demora del área de Finanzas", severidad media`
    - `/beholder marca Q-3 como Done`
 5. Claude edita `TABLERO_BEHOLDER.md`, hace **commit y push** y te deja el link.
+6. **Cuando termines, escribe `/actualizar`** para subir tus cambios a `main` y que todo el equipo
+   los vea. (También trae lo último de los demás antes de publicar.)
 
-> 💡 Pídele que trabaje en **tu propia rama** y abra un **PR** si quieres revisión antes de fusionar.
+> 💡 Cada sesión de Claude trabaja en **su propia rama**. Tus cambios recién aparecen para el resto
+> cuando llegan a `main` — eso es justo lo que hace `/actualizar`.
 
 ---
 
@@ -42,10 +45,17 @@ Para cambios chiquitos al **tablero Markdown**:
 
 ---
 
+## 🔄 Publicar tus cambios: `/actualizar`
+Cuando termines de editar, escribe **`/actualizar`**. Ese comando:
+1. Guarda tus cambios, 2) trae lo último de `main` (lo de tus compañeros), 3) **fusiona tus cambios
+a `main`** y 4) te deja el link. Así todos ven tu actualización.
+
+> Las **fechas** siguen necesitando aprobación del owner: `/actualizar` no las publica sin aprobar.
+
 ## 🤝 Para no pisarse entre varios
-- Lo más seguro: cada quien trabaja en **su propia rama** y abre un **PR** para fusionar a `main`.
-  Así queda registro y nadie sobrescribe a otro.
-- Si el equipo es chico y está coordinado, también pueden editar `main` directo.
+- Cada quien trabaja en **su propia rama** (su sesión de Claude). Al terminar, **`/actualizar`**
+  lleva lo tuyo a `main` y trae lo de los demás. Así queda registro y nadie sobrescribe a otro.
+- Si dos editaron lo mismo, `/actualizar` avisa del choque y lo resuelven antes de publicar.
 
 ---
 
