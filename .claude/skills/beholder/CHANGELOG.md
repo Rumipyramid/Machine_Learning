@@ -3,6 +3,11 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.2.2] — 2026-06-23
+### Cambiado
+- Apertura simplificada: la pregunta obligatoria ahora **incluye el link al tablero** en el mismo
+  mensaje y **ya no ofrece opciones A/B**.
+
 ## [1.2.1] — 2026-06-23
 ### Cambiado
 - La apertura ahora ofrece **dos caminos** tras la pregunta obligatoria: **A) Contar qué pasó**
