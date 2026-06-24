@@ -63,23 +63,37 @@ Toda entrada del ledger tiene **estos campos obligatorios**:
 
 ## Rúbrica de rigurosidad metodológica
 
-Califica **la solidez del método con que se produjo el dato**, no si te gusta la
-conclusión. Asigna un nivel y justifícalo en una línea.
+Califica el **método con que se produjo el dato**, no el tipo de fuente ni el
+prestigio de la marca. Para ubicar el nivel, lee estas **señales**: ¿datos
+primarios o reempaquetados?, ¿muestra/tamaño declarados?, ¿metodología
+transparente y replicable?, ¿revisión por pares?, ¿qué tan vigente es el dato
+(año)? Asigna el nivel y, si quieres afinar, añade un **modificador `+` / `−`**
+dentro del nivel. Justifica siempre en una línea.
 
-| Nivel | Etiqueta | Criterio | Ejemplos típicos |
+| Nivel | Etiqueta | El método cumple… | Ejemplos típicos |
 |---|---|---|---|
-| **A** | 🟢 Alta | Académico **peer-reviewed**, datos primarios, metodología y muestra explícitas, replicable. | Papers en revistas indexadas (ScienceDirect, Springer, MDPI con DOI). |
-| **B** | 🔵 Sólida | Organismo **oficial / regulador / intergubernamental** o estadística pública con metodología documentada. | SBS, APESEG, OECD, EIOPA, MAPFRE Economics, bancos centrales, INEI. |
-| **C** | 🟡 Media | **Consultora / industria / reaseguradora** con encuesta o método parcial pero propio; muestra grande aunque no auditable. | McKinsey, Bain, EY, Deloitte, Accenture, Swiss Re, Allianz Research. |
-| **D** | 🟠 Baja | **Prensa, blogs corporativos o fuentes secundarias** que citan a otros sin método propio. | Notas de Infobae, blogs de bancos/marcas, agregadores de mercado. |
-| **E** | 🔴 Débil | **Opinión sin metodología**, dato sin origen verificable, contenido anónimo o de fecha desconocida. | Posts de opinión, foros, afirmaciones sin respaldo. |
+| **A** | 🟢 Alta | Datos primarios + **revisión por pares** + muestra y metodología explícitas y replicables. | Papers indexados con DOI (ScienceDirect, Springer, MDPI). |
+| **B** | 🔵 Sólida | Datos primarios u oficiales con metodología documentada y trazable, **sin** revisión por pares. | Reguladores/organismos: SBS, APESEG, OECD, EIOPA. |
+| **C** | 🟡 Media | Estudio propio (encuesta/análisis) con muestra o método declarados pero **no auditables** por terceros. | Consultoras/reaseguradoras: McKinsey, Bain, EY, Swiss Re. |
+| **D** | 🟠 Baja | **Sin método propio**: reempaqueta o cita datos de terceros. | Prensa (Infobae), blogs corporativos, agregadores de mercado. |
+| **E** | 🔴 Débil | **Sin método ni origen verificable**: opinión, anónimo o fecha desconocida. | Posts de opinión, foros, afirmaciones sin respaldo. |
+
+**Modificadores** (opcionales, para afinar dentro del nivel):
+- `+` cuando hay una señal extra de rigor (p. ej. muestra grande y transparente:
+  *Bain con 28,765 encuestados en 14 países → C+*).
+- `−` cuando una señal resta (dato viejo, tras *paywall*, posible conflicto de
+  interés, muestra opaca).
 
 Reglas de la rúbrica:
-- Si una fuente **secundaria** (D) cita un dato **primario** fuerte, lo ideal es
-  registrar la fuente primaria. Si solo tienes la secundaria, califícala como D y
-  anota en el resumen quién es la fuente original.
+- La calificación es del **método, no del tipo de fuente ni del prestigio**: un
+  regulador con metodología floja puede bajar a C, y una consultora con muestra
+  enorme y transparente puede subir a C+.
+- **Primario > secundario.** Si una fuente secundaria (D) cita un dato primario
+  fuerte, registra de ser posible la **fuente primaria**; si solo tienes la
+  secundaria, déjala en D y anota en el resumen quién es la fuente original.
+- **Vigencia:** distingue el año de *publicación* del año de los *datos*. Un
+  informe nuevo con datos viejos merece un `−`.
 - Ante la duda entre dos niveles, **baja medio escalón** y explica por qué.
-- La calificación es del **método**, no del prestigio de la marca.
 
 ---
 
@@ -117,13 +131,15 @@ Cuando crees el archivo por primera vez, úsalo exactamente con esta estructura:
 > rigurosidad metodológica, autor y año. Fuente única de trazabilidad.
 
 ## Rúbrica de rigurosidad
-| Nivel | Etiqueta | Criterio (resumen) |
+> Califica el método, no el tipo de fuente. Modificadores opcionales `+`/`−` afinan dentro del nivel.
+
+| Nivel | Etiqueta | El método cumple… |
 |---|---|---|
-| A | 🟢 Alta | Académico peer-reviewed, datos primarios, método y muestra explícitos. |
-| B | 🔵 Sólida | Organismo oficial/regulador/intergubernamental con metodología documentada. |
-| C | 🟡 Media | Consultora/industria con encuesta o método propio, no auditable. |
-| D | 🟠 Baja | Prensa/blog/fuente secundaria que cita a otros sin método propio. |
-| E | 🔴 Débil | Opinión sin metodología, sin origen verificable o anónima. |
+| A | 🟢 Alta | Datos primarios + revisión por pares + muestra y metodología replicables. |
+| B | 🔵 Sólida | Datos primarios u oficiales con metodología documentada y trazable, sin revisión por pares. |
+| C | 🟡 Media | Estudio propio con muestra/método declarados pero no auditables por terceros. |
+| D | 🟠 Baja | Sin método propio: reempaqueta o cita datos de terceros. |
+| E | 🔴 Débil | Sin método ni origen verificable: opinión, anónimo o fecha desconocida. |
 
 ## Fuentes registradas
 | ID | Autor | Año | Fuente / Título | Rigurosidad | Resumen breve | Usado en / fundamenta | URL / referencia | Registrado |
