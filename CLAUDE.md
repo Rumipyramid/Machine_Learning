@@ -18,6 +18,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/personas/datasets/grupo_nse_A.csv` | 10 filas — grupo NSE A (simulación de opinión RIMAC) | — |
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen breve, rigurosidad metodológica, autor y año por fuente | Lo mantiene el skill `cronista` (trazabilidad de fuentes) |
 | `.claude/skills/cronista/SKILL.md` | Skill `cronista`: archivero de fuentes del códice | Se dispara al usar evidencia referenciable para crear/fundamentar |
+| `.claude/skills/seeker/SKILL.md` | Skill `seeker`: investigación de espectro amplio | Se invoca con `/seeker` tras preguntas de investigación; cruza registros empíricos y teóricos |
 
 ## 📊 Datos clave — seguros (Perú vs. Mundo)
 
