@@ -10,6 +10,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `Proyecto_ML_1.ipynb` | Notebook principal de ML | Origen Colab |
 | `Self driving car/` | Simulación de auto autónomo (Pygame + red neuronal) | Entrada: `self driving car.py`; config en `config_file.txt` |
 | `research/seguros_comportamiento_mundo_peru.md` | Investigación base: comportamiento/percepción de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS… |
+| `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro (definición + ejemplo + malentendido típico) | Derivado de investigación /seeker; alineado a glosario SBS |
 | `research/personas/matriz_usuarios_sinteticos.md` | Matriz legible: variables, distribuciones, grafo causal, arquetipos | Deriva de la investigación base |
 | `research/personas/synthetic_user_schema.json` | Esquema machine-readable de la matriz | Lo consume el generador |
 | `research/personas/generate_synthetic_users.py` | Generador de perfiles sintéticos (solo stdlib) | `python … --n 1000 --out usuarios.csv --seed 42` |
