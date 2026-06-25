@@ -10,6 +10,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `Proyecto_ML_1.ipynb` | Notebook principal de ML | Origen Colab |
 | `Self driving car/` | Simulación de auto autónomo (Pygame + red neuronal) | Entrada: `self driving car.py`; config en `config_file.txt` |
 | `research/seguros_comportamiento_mundo_peru.md` | Investigación base: comportamiento/percepción de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS… |
+| `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro (definición + ejemplo + malentendido típico) | Derivado de investigación /seeker; alineado a glosario SBS |
 | `research/personas/matriz_usuarios_sinteticos.md` | Matriz legible: variables, distribuciones, grafo causal, arquetipos | Deriva de la investigación base |
 | `research/personas/synthetic_user_schema.json` | Esquema machine-readable de la matriz | Lo consume el generador |
 | `research/personas/generate_synthetic_users.py` | Generador de perfiles sintéticos (solo stdlib) | `python … --n 1000 --out usuarios.csv --seed 42` |
@@ -18,6 +19,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/personas/datasets/grupo_nse_A.csv` | 10 filas — grupo NSE A (simulación de opinión RIMAC) | — |
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen breve, rigurosidad metodológica, autor y año por fuente | Lo mantiene el skill `cronista` (trazabilidad de fuentes) |
 | `.claude/skills/cronista/SKILL.md` | Skill `cronista`: archivero de fuentes del códice | Se dispara al usar evidencia referenciable para crear/fundamentar |
+| `.claude/skills/seeker/SKILL.md` | Skill `seeker`: investigación de espectro amplio | Se invoca con `/seeker` tras preguntas de investigación; cruza registros empíricos y teóricos |
 
 ## 📊 Datos clave — seguros (Perú vs. Mundo)
 
