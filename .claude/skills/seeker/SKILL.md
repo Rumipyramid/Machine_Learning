@@ -65,7 +65,25 @@ Lanzar búsquedas en al menos dos registros simultáneamente:
 
 Si encuentras una palabra o giro inusual ("aura erótica", "envoltura aural", "asimetría de cierre"), búscala literalmente entre comillas: suele delatar al autor que la acuñó.
 
-### Paso 4: Revisión crítica de metodología (papers empíricos)
+### Paso 4: Clasificación de tipo de evidencia
+
+Antes de evaluar la calidad, clasifica **qué tipo de evidencia** aporta cada fuente. Un mismo paper puede aportar más de un tipo; identifica todos:
+
+| Tipo | Qué es | Peso epistémico | Ejemplo |
+|---|---|---|---|
+| **Meta-análisis / revisión sistemática** | Síntesis cuantitativa de múltiples estudios con criterios de inclusión explícitos | 🟢 Máximo (si bien hecho) | Cochrane review, Campbell review |
+| **RCT** | Experimento con asignación aleatoria y grupo control | 🟢 Alto para causalidad | Safetxt trial (Michie et al.) |
+| **Cuasi-experimental** | Intervención sin aleatorización completa (pre-post, diferencias en diferencias, RDD) | 🔵 Medio-alto | Evaluaciones de política pública |
+| **Observacional / correlacional** | Mide asociaciones sin manipular variables (transversal, longitudinal, cohorte) | 🟡 Medio — no permite inferencia causal | Willmott et al. 2021 (R² de COM-B) |
+| **Cualitativo** | Entrevistas, etnografía, análisis temático, fenomenología | 🟡 Medio — aporta profundidad, no generalización | Focus groups sobre percepción de seguros |
+| **Estudio de caso** | Análisis profundo de un caso o N pequeña sin control | 🟠 Bajo para generalizar, alto para generar hipótesis | Caso de implementación en una empresa |
+| **Reporte de industria / encuesta** | Datos de consultora o gremio con método parcialmente documentado | 🟠 Variable — depende de transparencia metodológica | McKinsey, Bain, Swiss Re, APESEG |
+| **Teórico / ensayo argumentativo** | Marco conceptual, teoría, filosofía — sin datos empíricos propios | ⚪ No aplica "evidencia" en sentido empírico, pero puede ser canónico | Shove (2010), Foucault (1975) |
+| **Opinión / editorial / blog** | Juicio sin método ni datos primarios | 🔴 Mínimo | Posts corporativos, notas de prensa sin fuente |
+
+**En la respuesta**, marca el tipo de cada fuente clave al menos una vez, p. ej.: `(Willmott et al., 2021 — observacional transversal, N=582)`. Esto le da al usuario calibración instantánea sobre qué puede y qué no puede concluir de esa fuente.
+
+### Paso 5: Revisión crítica de metodología (papers empíricos)
 
 Cuando una fuente sea un paper científico o un estudio empírico, evaluar críticamente:
 
@@ -80,7 +98,52 @@ Cuando una fuente sea un paper científico o un estudio empírico, evaluar crít
 
 **Reportar al usuario cualquier inconsistencia metodológica** detectada, aunque la fuente sea ampliamente citada. Es información valiosa para que el usuario calibre el peso del hallazgo. Decir "este paper se cita mucho pero su N=24 y no tiene grupo de control" es más útil que solo citar la conclusión.
 
-### Paso 5: Recencia con override de calidad
+### Paso 6: Evaluación de validez y confiabilidad de los datos
+
+Cuando una fuente reporta datos cuantitativos (cifras, escalas, índices, effect sizes), evaluar **dos dimensiones ortogonales**:
+
+#### A) Validez — ¿mide lo que dice medir?
+
+| Tipo de validez | Pregunta clave | Señal de alerta |
+|---|---|---|
+| **De constructo** | ¿El instrumento captura realmente el concepto teórico? | Escalas tipo Likert de autopercepción usadas como proxy de conducta real (ej. "¿qué tan capaz se siente de…?" ≠ capacidad objetiva). |
+| **Interna** | ¿La relación encontrada es causal o hay explicaciones alternativas? | Diseño transversal que afirma causalidad; variables confusoras no controladas; sesgo de selección. |
+| **Externa** | ¿Los resultados son generalizables más allá de la muestra? | Muestra WEIRD (Western, Educated, Industrialized, Rich, Democratic); N de conveniencia (solo universitarios); un solo país/contexto. |
+| **Ecológica** | ¿Lo medido en laboratorio o encuesta refleja lo que pasa en la vida real? | Conducta autorreportada vs. observada; intención declarada vs. comportamiento real (el intention-behaviour gap). |
+| **De criterio** | ¿El instrumento predice un outcome externo relevante? | Un cuestionario de "motivación" que no predice la conducta que dice explicar. |
+
+**Aplicación práctica:** cuando un estudio reporta R² alto pero usa medidas autorreportadas para predictor Y outcome (como Willmott 2021 con COM-B), la **validez de constructo** y la **validez ecológica** están comprometidas — el R² captura parcialmente varianza de método común, no solo relación real entre variables.
+
+#### B) Confiabilidad — ¿los datos son consistentes y reproducibles?
+
+| Tipo de confiabilidad | Pregunta clave | Señal de alerta |
+|---|---|---|
+| **Consistencia interna** | ¿Los ítems de una escala miden lo mismo? (α de Cronbach, ω de McDonald) | α < 0.70 en escalas clave; α inflado artificialmente por ítems redundantes. |
+| **Test-retest** | ¿Si mides dos veces, obtienes lo mismo? | Sin reporte de estabilidad temporal; constructos volátiles (ej. "motivación") medidos una sola vez. |
+| **Inter-evaluador** | ¿Distintos evaluadores coinciden? | Codificación cualitativa sin kappa de Cohen; clasificaciones sin doble ciego. |
+| **Replicabilidad** | ¿Otros investigadores obtienen resultados similares? | Hallazgo único sin replicación; campos con crisis de replicación conocida (psicología social, priming). |
+
+**Cómo reportarlo:** cuando la validez o confiabilidad de un dato sean relevantes para la fuerza del claim investigado, incluir una **nota de calibración** junto a la cita. Formato:
+
+> `(Autor, año — ⚠️ validez ecológica baja: conducta autorreportada, no observada)`
+>
+> `(Autor, año — ⚠️ sin replicación independiente; α de escala no reportado)`
+>
+> `(Autor, año — ✅ RCT pre-registrado, N=4.400, outcome conductual objetivo)`
+
+La nota de calibración **no reemplaza** la cita inline `(Autor, año)` — la complementa. Usarla en las fuentes que el usuario necesita calibrar para tomar una decisión, no en todas.
+
+#### C) Tabla resumen de rigurosidad de datos (para respuestas con múltiples fuentes)
+
+Cuando una investigación use **3 o más fuentes empíricas**, cerrar la sección de evidencia con una tabla resumen de rigurosidad:
+
+| Fuente | Tipo de evidencia | N | Validez | Confiabilidad | Peso para el claim |
+|---|---|---|---|---|---|
+| Autor, año | RCT / observacional / etc. | N=… | ✅/⚠️/❌ + nota | ✅/⚠️/❌ + nota | 🟢 Alto / 🟡 Medio / 🔴 Bajo |
+
+Esto le da al usuario una **vista de portafolio** de la evidencia: no todas las fuentes pesan igual, y la tabla lo hace explícito de un vistazo.
+
+### Paso 7: Recencia con override de calidad
 
 **Priorizar** fuentes de los últimos 5 años porque:
 - Reflejan el estado actual del debate.
