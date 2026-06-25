@@ -10,16 +10,16 @@
 | Métrica | Valor |
 |---|---|
 | Épicas | 10 |
-| Quests | 24 (14 previas + 10 nuevas del roadmap) |
+| Quests | 25 (14 previas + 10 nuevas del roadmap + 1 nueva) |
 | Colaboradores (con fichas) | 4 |
-| Fichas comprometidas / capacidad | 36 / 32 |
+| Fichas comprometidas / capacidad | 33 / 32 |
 | Quests con riesgo alto 🚩 | 4 |
-| Alertas de capacidad (🔴/⛔) | 2 (Stef ⛔, Alejandro 🔴) |
+| Alertas de capacidad (🔴/⛔) | 1 (Alejandro 🔴) |
 
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15, Q-16, Q-19, Q-20 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
+| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26, Q-27 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15, Q-16, Q-19, Q-20 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
 | | | (+ Q-7, Q-12, Q-14 en «Diseñado») | | |
 
 > Nota: «Diseñado» es un estado intermedio del equipo (entre In Progress e In Review): Q-7, Q-12, Q-14.
@@ -41,7 +41,7 @@ Promover el entendimiento y uso eficiente de los seguros de salud mediante guía
 
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
-| Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | 8 🎟️ | Stef, Felipe, Alejandro | Roadmap reajustado −6 semanas | ↓ ~25–30% casos NPS «no recibí información» (est.) |
+| Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | 5 🎟️ | Felipe, Alejandro | Roadmap reajustado −6 semanas | ↓ ~25–30% casos NPS «no recibí información» (est.) |
 | Q-3 | Guías resumidas — EPS (Top 4 cuentas + Multiempresa) | In Review | 3 🎟️ | Stef, Felipe, Alejandro | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS; ↓ «no recibí información» |
 
 ### EPIC-3 · Renovación AMI
@@ -57,6 +57,7 @@ Optimizar la captura de datos para conciliación de pagos B2B.
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
 | Q-4 | Optimización de Cobranzas B2B | In Progress | 4 🎟️ | Stef | Diseño aprobado sin explorar problemática 🚩 (mitigándose: quick fix del correo de conciliación) | Quick fix: correo de conciliación corregido → evita congelar dinero; apoya liberación de S/600k provisionados |
+| Q-27 | Emisión de póliza | Backlog | — | (por confirmar) | Por definir — pendiente reunión con stakeholders | Por definir |
 
 ### EPIC-5 · Loyalty
 Programa de lealtad del ecosistema + comunicaciones + empresas.
@@ -108,23 +109,17 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 
 ## 🎟️ Libro mayor de fichas (capacidad del equipo)
 > Regla: 8 de 10 fichas comprometidas. Las 2 restantes son reserva de overhead.
-> ⚠️ **La economía de fichas necesita re-asignación:** el roadmap Q3 cambió owners (Meli entra a
-> Loyalty, Stef toma Bienestar) y agregó 12 iniciativas **sin fichas**. El desglose de abajo
-> refleja la asignación previa + esos cambios; confírmalo.
+> ⚠️ Las iniciativas nuevas (Q-15–Q-27) siguen **sin fichas asignadas**. El desglose de abajo refleja la asignación actual; confírmalo.
 
 | Colaborador | Comprometidas (de 8) | Reserva (de 2) | Estado | Desglose por quest |
 |---|---|---|---|---|
-| Stef | 11 | 0 | ⛔ Inválido | Q-1: 3, Q-3: 1, Q-4: 4, Q-10: 3 |
+| Stef | 8 | 2 | 🟢 Óptimo | Q-3: 1, Q-4: 4, Q-10: 3 |
 | Felipe | 8 | 2 | 🟢 Óptimo | Q-1: 3, Q-3: 1, Q-8: 4 |
 | Alejandro | 9 | 1 | 🔴 Sobreasignado | Q-1: 2, Q-2: 2, Q-3: 1, Q-5: 1, Q-6: 2, Q-7: 1 |
 | Melissa / Meli | 8 | 2 | 🟢 Óptimo | Q-7: 3, Q-8: 2, Q-9: 3 (+ Q-6 Loyalty por confirmar) |
 
 **Alertas de capacidad:**
-- ⛔ **Stef: 11 fichas (> 10) — inválido.** Con Q-10 (Bienestar) asignado a Stef supera su capacidad
-  total. **Debe corregirse:** liberar ≥3 fichas (p. ej. Q-4 está en discovery; o Q-10 ya está en
-  mantenimiento y podría requerir menos). 
-- 🔴 **Alejandro: 9 comprometidas.** Usa 1 ficha de reserva → poco aire para overhead. Y entra a
-  Loyalty (Q-6) y al piloto en Q3. Revisar antes de sumarle iniciativas nuevas.
+- 🔴 **Alejandro: 9 comprometidas.** Usa 1 ficha de reserva → poco aire para overhead. Revisar antes de sumarle iniciativas nuevas.
 - **Meli en Loyalty (Q-6):** el roadmap la suma al piloto; el split de fichas Q-6 (Meli/Alejandro)
   está **por confirmar**.
 

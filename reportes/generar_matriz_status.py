@@ -32,7 +32,7 @@ ROWS = [
      "Promover el entendimiento y uso eficiente de los seguros de salud",
      "Rediseño de la información del producto para hacerla clara y comprensible (ataca la barrera de «falta de información»).",
      "In Progress", "Agencia devolvió la 1ª guía resumida AMI diagramada (1/4); roadmap reajustado −6 semanas; presentación del entregable 30/6; + flyers de venta (1×producto + comparativo)", 0.50,
-     "AMI – Salud (Producto)", "Estrella Damian, Soiky Bardales", "Stef, Felipe, Alejandro", 8, "30/06 (presentación)",
+     "AMI – Salud (Producto)", "Estrella Damian, Soiky Bardales", "Felipe, Alejandro", 5, "30/06 (presentación)",
      "Cambio en el roadmap (de 1 guía a 4 productos); reajuste −6 semanas",
      "↓ ~25–30% casos NPS «no recibí información» (est.); ataca la palanca #1 de desconfianza en Perú"],
 
@@ -215,6 +215,14 @@ ROWS = [
      "Backlog", "Backlog del Chapter SD1 (sin sprint asignado)", 0.0,
      "Ahorro Salud", "(por confirmar)", "(por confirmar)", "—", "—",
      "—", "—"],
+
+    # Q-27 agregado por el equipo (Stefanie) en EPIC-4 (Cobranzas).
+    ["Q-27", "Evolution+: Cobranzas", "Emisión de póliza", BACKLOG,
+     "Por definir (pendiente reunión con stakeholders)",
+     "Por definir",
+     "Backlog", "Por definir — pendiente reunión con stakeholders", 0.0,
+     "Cobranzas / Finanzas", "(por confirmar)", "(por confirmar)", "—", "—",
+     "Por definir — pendiente reunión con stakeholders", "Por definir"],
 ]
 
 # ----------------------------------------------------------------------------
@@ -257,8 +265,8 @@ ws.merge_cells(f"A1:{last_col}1")
 ws["A1"] = "Matriz de Status — Behavioral Design (RIMAC)"
 ws["A1"].font = TITLE_FONT
 ws.merge_cells(f"A2:{last_col}2")
-ws["A2"] = ("Roadmap Q3-2026 (Chapter SD1) · Fecha de corte: 2026-06-23 · "
-            "24 iniciativas (14 previas + 10 nuevas del roadmap)")
+ws["A2"] = ("Roadmap Q3-2026 (Chapter SD1) · Fecha de corte: 2026-06-25 · "
+            "25 iniciativas (14 previas + 10 nuevas del roadmap + 1 nueva)")
 ws["A2"].font = Font(italic=True, color="595959", size=10)
 ws.row_dimensions[1].height = 22
 
