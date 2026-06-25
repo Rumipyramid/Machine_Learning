@@ -1,10 +1,13 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-06-25T02:40:54 · Cambios vigentes: 9
+> Retención: 15 días · Última actualización: 2026-06-25T14:01:40 · Cambios vigentes: 12
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-06-25T13:56:51 | Alejandro | Q-1 | % Avance / Status | Diseño 1/4 (40%) | Agencia devolvió 1ª guía diagramada (50%) | normal | aplicado |
+| 2026-06-25T13:56:51 | Stefanie | Q-10 | Status | cierre de playbook pendiente | playbook B360 entregado | normal | aplicado |
+| 2026-06-25T13:56:51 | Stefanie | Q-4 | Status / Impacto | research 20% | quick fix correo de conciliación (35%) | normal | aplicado |
 | 2026-06-25T02:40:54 | Stefanie | Q-27 | Quest nuevo | — | Emisión de póliza (Backlog, EPIC-4 Cobranzas) | normal | aplicado |
 | 2026-06-23T21:56:31 | Stefanie | Stef | Fichas comprometidas | 11 (⛔ Inválido) | 8 (🟢 Óptimo) | normal | aplicado |
 | 2026-06-23T21:56:27 | Stefanie | Q-1 | Behavioral designers | Stef, Felipe, Alejandro | Felipe, Alejandro | normal | aplicado |

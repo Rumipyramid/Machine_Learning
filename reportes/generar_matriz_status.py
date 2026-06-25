@@ -31,8 +31,8 @@ ROWS = [
     ["Q-1", "Guías resumidas (Pólizas simples)", "Guías resumidas — 4 nuevos productos AMI", NEGOCIO,
      "Promover el entendimiento y uso eficiente de los seguros de salud",
      "Rediseño de la información del producto para hacerla clara y comprensible (ataca la barrera de «falta de información»).",
-     "In Progress", "Diseño 1/4; roadmap reajustado −6 semanas; presentación del entregable 30/6; + flyers de venta (1×producto + comparativo)", 0.40,
-     "AMI – Salud (Producto)", "Estrella Damian, Soiky Bardales", "Stef, Felipe, Alejandro", 8, "30/06 (presentación)",
+     "In Progress", "Agencia devolvió la 1ª guía resumida AMI diagramada (1/4); roadmap reajustado −6 semanas; presentación del entregable 30/6; + flyers de venta (1×producto + comparativo)", 0.50,
+     "AMI – Salud (Producto)", "Estrella Damian, Soiky Bardales", "Felipe, Alejandro", 5, "30/06 (presentación)",
      "Cambio en el roadmap (de 1 guía a 4 productos); reajuste −6 semanas",
      "↓ ~25–30% casos NPS «no recibí información» (est.); ataca la palanca #1 de desconfianza en Perú"],
 
@@ -55,10 +55,10 @@ ROWS = [
     ["Q-4", "Evolution+: Cobranzas", "Optimización de Cobranzas B2B", NEGOCIO,
      "Promover la captura de datos para conciliación de facturas proveedores",
      "Rediseño del flujo de captura de datos (Evolution+) para facilitar/incentivar que los proveedores entreguen la información de conciliación.",
-     "In Progress", "12 entrevistas brokers/clientes B2B (entendimiento E2E del pago, pains de confirmación) → bajada/análisis → diseño de la nueva experiencia y pilotos → ejecutar piloto y definir experiencia final", 0.20,
+     "In Progress", "12 entrevistas E2E + quick fix de Stefanie: el correo donde algunos proveedores enviaban los datos de conciliación estaba errado → corregido (evita congelar dinero por falta de datos); sigue diseño de la nueva experiencia y pilotos", 0.35,
      "Cobranzas / Finanzas", "Rosemary Moyano", "Stef", 4, "Q3 2026",
-     "Track de diseño aprobado sin explorar la problemática",
-     "Liberación de S/600k provisionados"],
+     "Track de diseño aprobado sin explorar la problemática (mitigándose: discovery + quick fix del correo de conciliación)",
+     "Liberación de S/600k provisionados; el quick fix (correo de conciliación corregido) evita congelar dinero por falta de datos"],
 
     ["Q-5", "Back to Basics FFVV Vida Individual", "Mensajes de primer contacto", NEGOCIO,
      "Promover el agendamiento de citas comerciales",
@@ -104,7 +104,7 @@ ROWS = [
     ["Q-10", "Bienestar 360", "Bienestar 360", NEGOCIO,
      "Piloto con colaboradores Rimac para construir hábitos saludables sostenibles",
      "Programa de hábitos saludables (piloto Bienestar 360) para construir y sostener hábitos de bienestar en colaboradores.",
-     "Done", "Implementado y en mantenimiento; cierre de playbook del programa + acompañamiento a la fase de mantenimiento", 1.00,
+     "Done", "Implementado y en mantenimiento; playbook del programa entregado (Stefanie); acompañamiento a la fase de mantenimiento", 1.00,
      "Bienestar / Estar Bien", "Erika Echegaray, Belem Rodríguez; Solange Soto, Rosa Díaz", "Stef", 3,
      "Setiembre 2026 (solo acompañamiento)",
      "Presupuesto y recursos limitados para la siguiente versión",
@@ -215,6 +215,14 @@ ROWS = [
      "Backlog", "Backlog del Chapter SD1 (sin sprint asignado)", 0.0,
      "Ahorro Salud", "(por confirmar)", "(por confirmar)", "—", "—",
      "—", "—"],
+
+    # Q-27 agregado por el equipo (Stefanie) en EPIC-4 (Cobranzas).
+    ["Q-27", "Evolution+: Cobranzas", "Emisión de póliza", BACKLOG,
+     "Por definir (pendiente reunión con stakeholders)",
+     "Por definir",
+     "Backlog", "Por definir — pendiente reunión con stakeholders", 0.0,
+     "Cobranzas / Finanzas", "(por confirmar)", "(por confirmar)", "—", "—",
+     "Por definir — pendiente reunión con stakeholders", "Por definir"],
 ]
 
 # ----------------------------------------------------------------------------
@@ -257,8 +265,8 @@ ws.merge_cells(f"A1:{last_col}1")
 ws["A1"] = "Matriz de Status — Behavioral Design (RIMAC)"
 ws["A1"].font = TITLE_FONT
 ws.merge_cells(f"A2:{last_col}2")
-ws["A2"] = ("Roadmap Q3-2026 (Chapter SD1) · Fecha de corte: 2026-06-23 · "
-            "24 iniciativas (14 previas + 10 nuevas del roadmap)")
+ws["A2"] = ("Roadmap Q3-2026 (Chapter SD1) · Fecha de corte: 2026-06-25 · "
+            "25 iniciativas (14 previas + 10 nuevas del roadmap + 1 nueva)")
 ws["A2"].font = Font(italic=True, color="595959", size=10)
 ws.row_dimensions[1].height = 22
 
