@@ -56,7 +56,7 @@ Optimizar la captura de datos para conciliación de pagos B2B.
 
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
-| Q-4 | Optimización de Cobranzas B2B | In Progress | 4 🎟️ | Stef | Track de diseño aprobado sin explorar problemática 🚩 | Liberación de S/600k provisionados |
+| Q-4 | Optimización de Cobranzas B2B | In Progress | 4 🎟️ | Stef | Diseño aprobado sin explorar problemática 🚩 (mitigándose: quick fix del correo de conciliación) | Quick fix: correo de conciliación corregido → evita congelar dinero; apoya liberación de S/600k provisionados |
 
 ### EPIC-5 · Loyalty
 Programa de lealtad del ecosistema + comunicaciones + empresas.
@@ -133,7 +133,7 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 |---|---|---|---|---|
 | Q-8 | AIDA Bot Trainer | AIDA no cumple el task; comité; 3 herramientas en paralelo | Alta | Consolidar a 1 herramienta antes del comité; llevar evidencia de usabilidad |
 | Q-9 | Kit de Social Selling | Recursos de contenido + falta de incentivos/monitoreo | Alta | Definir incentivos mínimos y tablero de monitoreo |
-| Q-4 | Optimización Cobranzas B2B | Diseño aprobado sin explorar la problemática | Alta | Las 12 entrevistas E2E cubren esto; validar hallazgos antes de diseñar |
+| Q-4 | Optimización Cobranzas B2B | Diseño aprobado sin explorar la problemática | Alta | Discovery hecho (12 entrevistas E2E) + quick fix hallado: correo de conciliación corregido. Validar hallazgos antes de diseñar |
 | Q-5 | Mensajes de primer contacto | Estrategia CUA aún en definición | Media | Cerrar definición CUA para confirmar desbloqueo |
 | Q-1 | Guías 4 productos AMI | Reajuste de roadmap −6 semanas | Media | Re-priorizar entregables con Estrella Damian / Soiky Bardales |
 | — | Capacidad del equipo | Stef ⛔ (11) y Alejandro 🔴 (9) + 12 iniciativas nuevas sin fichas | Alta | Re-asignar fichas antes de comprometer el Backlog Q3 |
@@ -142,7 +142,7 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 | Clave | Quest | Impacto esperado |
 |---|---|---|
 | Q-8 | AIDA Bot Trainer | +efectividad del asesor (puntaje del bot) y consistencia CX; ahorro proyectado S/1.8M |
-| Q-4 | Optimización Cobranzas B2B | Liberación de S/600k provisionados |
+| Q-4 | Optimización Cobranzas B2B | Liberación de S/600k provisionados; quick fix (correo de conciliación) evita congelar dinero por falta de datos |
 | Q-6 | Loyalty | Permanencia base RIMAC; +20–25% retención y +40% cross-sell (est.) |
 | Q-1 | Guías 4 productos AMI | ↓ ~25–30% casos NPS «no recibí información» (est.) |
 | Q-3 | Guías EPS | Renovación de cuentas TOP EPS; ↓ «no recibí información» en corporativo |
