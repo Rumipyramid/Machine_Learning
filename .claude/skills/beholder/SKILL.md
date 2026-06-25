@@ -224,6 +224,11 @@ del equipo; el historial completo siempre queda en el git log.
 Usa exactamente esta estructura. Rellena todo; si un dato no existe, escribe `—`
 (nunca dejes un campo obligatorio en blanco sin marcarlo).
 
+> **Dos columnas de status, no confundir:** `Estado` = la **columna Jira** (`Backlog`, `To Do`,
+> `In Progress`, `In Review`, `Done`). `Status del proyecto` = la **descripción real** de en qué va
+> el quest (p. ej. "Maqueta lista; pendiente revisión de Legal"). Si hay matriz Excel, este campo
+> es el mismo que su columna *Status (detalle)*.
+
 ```markdown
 # 🐉 Tablero Beholder — {Nombre del proyecto}
 
@@ -251,10 +256,10 @@ Usa exactamente esta estructura. Rellena todo; si un dato no existe, escribe `�
 ### EPIC-1 · {Nombre de la épica}
 {una línea de objetivo/contexto de la épica, si aplica}
 
-| Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|
-| Q-1 | {nombre} | {estado} | {n} 🎟️ | {BDs} | {riesgo} {🚩 si alto} | {impacto} |
-| Q-2 | … | … | … | … | … | … |
+| Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|
+| Q-1 | {nombre} | {estado} | {status descriptivo del proyecto} | {n} 🎟️ | {BDs} | {riesgo} {🚩 si alto} | {impacto} |
+| Q-2 | … | … | … | … | … | … | … |
 
 ### EPIC-2 · {Nombre de la épica}
 …
@@ -292,9 +297,9 @@ Salida (extracto):
 
 ```markdown
 ### EPIC-1 · Flujo de bienvenida
-| Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|
-| Q-1 | Rediseñar pantalla de registro | In Progress | 8 🎟️ | Mara, Cassian | Dependencia con Legal 🚩 | −20% abandono en registro |
+| Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|
+| Q-1 | Rediseñar pantalla de registro | In Progress | Maqueta lista; pendiente revisión de Legal | 8 🎟️ | Mara, Cassian | Dependencia con Legal 🚩 | −20% abandono en registro |
 
 ## 🎟️ Libro mayor de fichas
 | Colaborador | Comprometidas (de 8) | Reserva (de 2) | Estado | Desglose por quest |

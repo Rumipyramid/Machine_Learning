@@ -8,6 +8,11 @@ Todas las versiones notables de este skill. Formato basado en
 - Apertura simplificada: la pregunta obligatoria ahora **incluye el link al tablero** en el mismo
   mensaje y **ya no ofrece opciones A/B**.
 
+## [1.2.3] — 2026-06-25
+### Añadido
+- Nueva columna **"Status del proyecto"** en las tablas de detalle del tablero (el status
+  descriptivo, distinto del `Estado` Jira). Plantilla y ejemplo actualizados.
+
 ## [1.2.1] — 2026-06-23
 ### Cambiado
 - La apertura ahora ofrece **dos caminos** tras la pregunta obligatoria: **A) Contar qué pasó**
