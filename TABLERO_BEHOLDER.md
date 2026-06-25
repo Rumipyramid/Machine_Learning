@@ -10,7 +10,7 @@
 | Métrica | Valor |
 |---|---|
 | Épicas | 10 |
-| Quests | 24 (14 previas + 10 nuevas del roadmap) |
+| Quests | 25 (14 previas + 10 nuevas del roadmap + 1 nueva) |
 | Colaboradores (con fichas) | 4 |
 | Fichas comprometidas / capacidad | 33 / 32 |
 | Quests con riesgo alto 🚩 | 4 |
@@ -19,7 +19,7 @@
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15, Q-16, Q-19, Q-20 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
+| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26, Q-27 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15, Q-16, Q-19, Q-20 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
 | | | (+ Q-7, Q-12, Q-14 en «Diseñado») | | |
 
 > Nota: «Diseñado» es un estado intermedio del equipo (entre In Progress e In Review): Q-7, Q-12, Q-14.
@@ -57,6 +57,7 @@ Optimizar la captura de datos para conciliación de pagos B2B.
 | Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|
 | Q-4 | Optimización de Cobranzas B2B | In Progress | 4 🎟️ | Stef | Track de diseño aprobado sin explorar problemática 🚩 | Liberación de S/600k provisionados |
+| Q-27 | Emisión de póliza | Backlog | — | (por confirmar) | Por definir — pendiente reunión con stakeholders | Por definir |
 
 ### EPIC-5 · Loyalty
 Programa de lealtad del ecosistema + comunicaciones + empresas.
@@ -108,7 +109,7 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 
 ## 🎟️ Libro mayor de fichas (capacidad del equipo)
 > Regla: 8 de 10 fichas comprometidas. Las 2 restantes son reserva de overhead.
-> ⚠️ Las iniciativas nuevas (Q-15–Q-26) siguen **sin fichas asignadas**. El desglose de abajo refleja la asignación actual; confírmalo.
+> ⚠️ Las iniciativas nuevas (Q-15–Q-27) siguen **sin fichas asignadas**. El desglose de abajo refleja la asignación actual; confírmalo.
 
 | Colaborador | Comprometidas (de 8) | Reserva (de 2) | Estado | Desglose por quest |
 |---|---|---|---|---|
