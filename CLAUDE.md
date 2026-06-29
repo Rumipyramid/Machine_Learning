@@ -12,6 +12,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/seguros_comportamiento_mundo_peru.md` | Investigación base: comportamiento/percepción de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS… |
 | `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro | Derivado de /seeker; alineado a glosario SBS |
 | `research/personas/generador/` | Fuente de verdad del modelo de personas sintéticas | generador + esquema + matriz + tooling de calibración |
+| `research/personas/generador/COMO_FUNCIONA_LA_PUERTA.md` | Guía explicativa: mecánica interna, validez y confiabilidad | Documento de referencia del sistema |
 | `research/personas/generador/synthetic_user_schema.json` | Esquema machine-readable (v1.2, 17 variables) | Lo consume el generador |
 | `research/personas/generador/matriz_usuarios_sinteticos.md` | Matriz legible: variables, distribuciones, grafo causal, arquetipos | Deriva de la investigación base |
 | `research/personas/generador/generate_synthetic_users.py` | Generador de perfiles (solo stdlib) | `python … --n 1000 --out usuarios.csv --seed 42` · `--joint` siembra desde ENAHO/IPF |
