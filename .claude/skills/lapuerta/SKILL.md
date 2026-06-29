@@ -114,16 +114,18 @@ diferencias por segmento (NSE, generación, canal).
 Re-muestreo de n=5 000: las marginales simuladas ≈ las reales →
 tiene seguro 43% vs 40%, desconfía 45% vs 48%, seguro de desastres 2.9% vs 3.3%.
 
-Para re-validar:
-```python
-import importlib.util, random, collections
-spec = importlib.util.spec_from_file_location("g", "scripts/generate_synthetic_users.py")
-g = importlib.util.module_from_spec(spec); spec.loader.exec_module(g)
-rng = random.Random(7); schema = g.load_schema()
-U = [g.generate_user(rng, schema, i) for i in range(5000)]
-print("any-seguro:", round(sum(1 for u in U if u["tenencia_seguro"]!="ninguno")/len(U),3))
-print("desconfia :", round(sum(1 for u in U if u["confianza_aseguradora"]=="desconfia")/len(U),3))
-print("desastres :", round(sum(1 for u in U if u["seguro_desastres_naturales"])/len(U),3))
+**Harness automático** (`scripts/validate.py`): mide los tres ejes de calidad —
+marginales vs objetivo con tolerancia, asociaciones por pares (monotonía + Cramér's V),
+intervalos bootstrap y curva de estabilidad (varianza vs n):
+```bash
+python scripts/validate.py                 # reporte completo
+python scripts/validate.py --check         # pass/fail para CI (exit 1 si falla)
+python scripts/validate.py --stability     # incluye varianza vs n
+python scripts/validate.py --joint fitted.csv   # validar sembrando desde IPF/ENAHO
+```
+El motor de reglas reporta incertidumbre con `--bootstrap B` (IC 95% por categoría):
+```bash
+python scripts/simulate_rules.py --question contratar --filter nse=A --bootstrap 1000
 ```
 
 ## Ajustar / recalibrar

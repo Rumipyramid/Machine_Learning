@@ -115,6 +115,30 @@ def tally(users, q, brand):
     return [(key, label, counts.get(key, 0), round(100 * counts.get(key, 0) / n, 1)) for key, label in q["cats"]]
 
 
+def bootstrap_cis(users, q, brand, B=1000, seed=0, alpha=0.05):
+    """IC percentil (95%) por categoría, re-muestreando la muestra obtenida.
+    Devuelve {key: (lo%, hi%)}. Cuantifica la variabilidad de muestreo del %."""
+    import random
+    answers = [q["answer"](u, brand) for u in users]
+    n = len(answers)
+    keys = [k for k, _ in q["cats"]]
+    if n == 0:
+        return {k: (0.0, 0.0) for k in keys}
+    rng = random.Random(seed)
+    dist = {k: [] for k in keys}
+    for _ in range(B):
+        c = collections.Counter(answers[rng.randrange(n)] for _ in range(n))
+        for k in keys:
+            dist[k].append(100 * c.get(k, 0) / n)
+    out = {}
+    for k in keys:
+        s = sorted(dist[k])
+        lo = s[int((alpha / 2) * B)]
+        hi = s[min(B - 1, int((1 - alpha / 2) * B))]
+        out[k] = (round(lo, 1), round(hi, 1))
+    return out
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description="Simula respuestas por reglas de usuarios sintéticos de seguros.")
     p.add_argument("--question", help="id de la pregunta (ver --list)")
@@ -124,6 +148,8 @@ def main(argv=None):
     p.add_argument("--by", choices=DIM_FIELDS, help="desglosar por esta dimensión")
     p.add_argument("--filter", action="append", default=[], metavar="campo=valor",
                    help="filtrar segmento (repetible), p. ej. --filter nse=A")
+    p.add_argument("--bootstrap", type=int, default=0, metavar="B",
+                   help="añade IC 95%% por categoría con B réplicas bootstrap (p. ej. 1000)")
     p.add_argument("--list", action="store_true", help="listar preguntas")
     args = p.parse_args(argv)
 
@@ -143,10 +169,12 @@ def main(argv=None):
     if not users:
         print("Ningún usuario cumple esos filtros."); return 0
 
-    print("Distribución:")
-    for _, lbl, cnt, pct in tally(users, q, args.brand):
+    cis = bootstrap_cis(users, q, args.brand, B=args.bootstrap, seed=args.seed) if args.bootstrap else None
+    print("Distribución:" + (f" (IC 95%, bootstrap B={args.bootstrap})" if cis else ""))
+    for key, lbl, cnt, pct in tally(users, q, args.brand):
         bar = "█" * int(pct / 2)
-        print(f"  {lbl:22} {pct:5.1f}%  {bar}")
+        ci = f"  [{cis[key][0]:.1f}–{cis[key][1]:.1f}]" if cis else ""
+        print(f"  {lbl:22} {pct:5.1f}%{ci}  {bar}")
 
     if args.by:
         print(f"\nDesglose por {args.by} (% '{dict(q['cats'])[q['favorable']]}'):")
