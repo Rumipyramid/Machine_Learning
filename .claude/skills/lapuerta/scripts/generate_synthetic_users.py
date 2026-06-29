@@ -32,6 +32,58 @@ def load_schema(path: str = SCHEMA_PATH) -> dict:
         return json.load(f)
 
 
+# Alias: columna de la tabla conjunta (IPF/ENAHO) -> campo base del generador.
+# Permite sembrar las variables base desde una conjunta ajustada (ipf.py) en vez
+# de muestrearlas de marginales independientes (mejora #1: preserva correlaciones).
+JOINT_ALIASES = {
+    "nse": "nse", "nse_proxy": "nse",
+    "region": "region",
+    "educacion": "educacion_financiera", "educacion_financiera": "educacion_financiera",
+    "generacion": "generacion",
+    "sesgo_presente": "sesgo_presente",
+    "canal_preferido": "canal_preferido",
+}
+
+
+def load_joint_sampler(path: str):
+    """Lee una tabla conjunta ajustada (salida de ipf.py o enaho_loader.py) y
+    devuelve (campos_base_cubiertos, funcion_muestreo(rng)->dict campo->valor).
+    Acepta columna de peso 'peso' (ipf) o 'peso_expandido' (enaho_loader)."""
+    with open(path, "r", encoding="utf-8", newline="") as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        ignore = {"peso", "peso_expandido", "proporcion"}
+        w_idx = None
+        for cand in ("peso", "peso_expandido"):
+            if cand in header:
+                w_idx = header.index(cand)
+                break
+        if w_idx is None:
+            raise SystemExit(f"[!] {path}: no encuentro columna de peso (peso/peso_expandido)")
+        dim_cols = [(i, c) for i, c in enumerate(header) if c not in ignore]
+        mapped = [(i, JOINT_ALIASES[c]) for i, c in dim_cols if c in JOINT_ALIASES]
+        if not mapped:
+            raise SystemExit(f"[!] {path}: ninguna columna mapea a una variable base "
+                             f"({sorted(set(JOINT_ALIASES.values()))})")
+        keys, weights = [], []
+        for row in reader:
+            if not row:
+                continue
+            try:
+                w = float(row[w_idx])
+            except ValueError:
+                continue
+            keys.append(tuple(row[i] for i, _ in mapped))
+            weights.append(w)
+    fields = [f for _, f in mapped]
+
+    def sampler(rng: random.Random) -> dict:
+        choice = rng.choices(keys, weights=weights, k=1)[0]
+        return dict(zip(fields, choice))
+
+    return fields, sampler
+
+
 def weighted_choice(rng: random.Random, dist: dict) -> str:
     """Elige una clave segun el peso (probabilidad) asociado."""
     keys = list(dist.keys())
@@ -127,14 +179,18 @@ def sample_wtp(rng: random.Random, schema: dict, tenencia: str) -> float:
     return round(max(0.0, val), 3)
 
 
-def generate_user(rng: random.Random, schema: dict, idx: int) -> dict:
+def generate_user(rng: random.Random, schema: dict, idx: int,
+                  base_override: dict | None = None) -> dict:
     v = schema["variables"]
-    generacion = weighted_choice(rng, v["generacion"]["categorias"])
-    nse = weighted_choice(rng, v["nse"]["categorias"])
-    region = weighted_choice(rng, v["region"]["categorias"])
-    edu = weighted_choice(rng, v["educacion_financiera"]["categorias"])
-    sesgo = weighted_choice(rng, v["sesgo_presente"]["categorias"])
-    canal = weighted_choice(rng, v["canal_preferido"]["categorias"])
+    # Si se provee base_override (muestra de una conjunta IPF/ENAHO), usar esos
+    # valores para las variables base cubiertas; el resto se muestrea como siempre.
+    ov = base_override or {}
+    generacion = ov.get("generacion") or weighted_choice(rng, v["generacion"]["categorias"])
+    nse = ov.get("nse") or weighted_choice(rng, v["nse"]["categorias"])
+    region = ov.get("region") or weighted_choice(rng, v["region"]["categorias"])
+    edu = ov.get("educacion_financiera") or weighted_choice(rng, v["educacion_financiera"]["categorias"])
+    sesgo = ov.get("sesgo_presente") or weighted_choice(rng, v["sesgo_presente"]["categorias"])
+    canal = ov.get("canal_preferido") or weighted_choice(rng, v["canal_preferido"]["categorias"])
     exposicion = weighted_choice(rng, v["exposicion_riesgo_sismico"]["tabla"][region])
     apertura = weighted_choice(rng, v["apertura_datos_ia"]["tabla"][generacion])
     situacion = sample_situacion_laboral(rng, schema, nse)
@@ -176,11 +232,20 @@ def main(argv=None) -> int:
     parser.add_argument("--out", type=str, default=None, help="ruta de salida CSV (opcional)")
     parser.add_argument("--seed", type=int, default=None, help="semilla para reproducibilidad")
     parser.add_argument("--schema", type=str, default=SCHEMA_PATH, help="ruta del schema JSON")
+    parser.add_argument("--joint", type=str, default=None,
+                        help="tabla conjunta ajustada (ipf.py/enaho_loader.py): siembra las "
+                             "variables base desde el dato real en vez de marginales independientes")
     args = parser.parse_args(argv)
 
     rng = random.Random(args.seed)
     schema = load_schema(args.schema)
-    users = [generate_user(rng, schema, i) for i in range(args.n)]
+    joint_sampler = None
+    if args.joint:
+        cubiertos, joint_sampler = load_joint_sampler(args.joint)
+        print(f"Sembrando variables base desde {args.joint}: {cubiertos}", file=sys.stderr)
+    users = [generate_user(rng, schema, i,
+                           base_override=joint_sampler(rng) if joint_sampler else None)
+             for i in range(args.n)]
     fields = list(users[0].keys())
 
     if args.out:
