@@ -27,7 +27,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
 | `.claude/skills/cronista/` · `seeker/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación, tablero Jira, decks Rimac, publicar a main |
-| `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
+| `.github/workflows/` | Actions: reporte quincenal desatendido + **golden test** del modelo en push/PR | `validar-modelo.yml` corre `validate.py --check` |
 
 ## Base de conocimiento (codex)
 

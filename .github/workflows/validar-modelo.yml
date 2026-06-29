@@ -1,0 +1,40 @@
+name: Validar modelo (golden test)
+
+# Golden test del generador de usuarios sintéticos (lapuerta): corre en cada push
+# y pull request que toque el modelo. Falla si una marginal se sale de tolerancia
+# o si una asociación que debe cumplirse por diseño se rompe (validate.py --check).
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "research/personas/generador/**"
+      - ".claude/skills/lapuerta/scripts/**"
+      - ".github/workflows/validar-modelo.yml"
+  pull_request:
+    paths:
+      - "research/personas/generador/**"
+      - ".claude/skills/lapuerta/scripts/**"
+      - ".github/workflows/validar-modelo.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  golden-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # El generador y el harness usan solo la librería estándar: nada que instalar.
+      - name: Validar (fuente de verdad)
+        run: python research/personas/generador/validate.py --n 20000 --seed 42 --check
+
+      - name: Validar (copia del skill)
+        run: python .claude/skills/lapuerta/scripts/validate.py --n 20000 --seed 42 --check
