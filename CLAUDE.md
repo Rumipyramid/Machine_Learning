@@ -1,50 +1,59 @@
 # CLAUDE.md — Codex de conocimiento del proyecto
 
-Este archivo lo carga Claude Code automáticamente al iniciar cualquier sesión sobre este
-repositorio. Funciona como "bóveda/codex" persistente del proyecto.
+Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
+`Rumipyramid/Machine_Learning`. Índice único de qué hay, dónde está y cómo se usa.
 
-## Repositorio
-- **Proyecto:** Machine_Learning (`Rumipyramid/Machine_Learning`)
-- Contenido principal: `Proyecto_ML_1.ipynb`, carpeta `Self driving car`.
+## 🗺️ Mapa de archivos
 
-## Mapa de la bóveda
-```
-README.md                      ← entrada / mapa del repo
-CLAUDE.md                      ← este códice
-research/
-  README.md                    ← índice de investigación
-  seguros_comportamiento_mundo_peru.md
-  personas/
-    generador/                 ← generador, esquema, matriz, dataset de ejemplo
-    laminas/                   ← lámina explicativa (script + PNG)
-    apps/reglas/               ← explorador web por reglas (autocontenido)
-    apps/llm/                  ← app de preguntas libres con Claude (API)
-  updates/                     ← reportes quincenales + generador del reporte
-.claude/skills/
-  lapuerta/                    ← skill compartible (generar + simular)
-  cerrajero/                   ← skill: actualización quincenal a demanda
-.github/workflows/             ← Action programado (reporte quincenal)
-```
+| Ruta | Qué es | Uso / notas |
+|---|---|---|
+| `Proyecto_ML_1.ipynb` | Notebook principal de ML | Origen Colab |
+| `Self driving car/` | Simulación de auto autónomo (Pygame + red neuronal) | Entrada: `self driving car.py`; config en `config_file.txt` |
+| `research/seguros_comportamiento_mundo_peru.md` | Investigación base: comportamiento/percepción de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS… |
+| `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro | Derivado de /seeker; alineado a glosario SBS |
+| `research/personas/generador/` | Fuente de verdad del modelo de personas sintéticas | generador + esquema + matriz + tooling de calibración |
+| `research/personas/generador/synthetic_user_schema.json` | Esquema machine-readable (v1.2, 17 variables) | Lo consume el generador |
+| `research/personas/generador/matriz_usuarios_sinteticos.md` | Matriz legible: variables, distribuciones, grafo causal, arquetipos | Deriva de la investigación base |
+| `research/personas/generador/generate_synthetic_users.py` | Generador de perfiles (solo stdlib) | `python … --n 1000 --out usuarios.csv --seed 42` · `--joint` siembra desde ENAHO/IPF |
+| `research/personas/generador/enaho_loader.py` | Carga/cruza microdato ENAHO → tabla conjunta ponderada | Aplica factor de expansión; recodifica a categorías del modelo |
+| `research/personas/generador/ipf.py` | Iterative Proportional Fitting (raking) | Ajusta la semilla ENAHO a marginales objetivo conservando asociación |
+| `research/personas/generador/validate.py` | Harness de validación | Marginales+tolerancia, asociaciones, IC bootstrap, estabilidad; `--check` para CI |
+| `research/personas/datos_enaho/` | Microdato ENAHO (guía + carpeta de trabajo) | CSV/ZIP gitignored (pesados, regenerables); ver su `README.md` |
+| `research/personas/datasets/` | Datasets de ejemplo del generador | ejemplo (200), muestra 22, grupo NSE A |
+| `research/personas/laminas/` | Lámina explicativa del sistema (script + PNG) | — |
+| `research/personas/apps/reglas/` · `apps/llm/` | Apps web: explorador por reglas (autocontenido) y preguntas libres con Claude (API) | — |
+| `research/updates/` | Reportes quincenales de fortalecimiento del modelo | Indexados en este códice (bloque gestionado) |
+| `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
+| `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
+| `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
+| `.claude/skills/cronista/` · `seeker/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación, tablero Jira, decks Rimac, publicar a main |
+| `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 
 ## Base de conocimiento (codex)
 
-### 📌 Seguros — comportamiento y percepción (Mundo vs. Perú)
-Investigación recopilada el 2026-06-21 con fuentes de OECD, McKinsey, EY, Bain, Accenture,
-Swiss Re, MAPFRE, APESEG, SBS Perú y literatura de economía conductual.
+## 📊 Datos clave — seguros (Perú vs. Mundo)
 
-- **Documento principal:** `research/seguros_comportamiento_mundo_peru.md`
-- **Datos clave:** penetración Perú ~2.08% del PBI (vs. 3.2% LatAm); confianza plena ~23-25%
-  y ~48% desconfía (causa #1: falta de información); ~4/10 tiene seguro; SOAT conocido por 94%;
-  solo ~3.3% de hogares con seguro de desastres; brecha de protección global ~US$1.8 billones.
+- **Penetración:** Perú ~**2.08%** del PBI · LatAm 3.2% · Chile 4.6%. CAGR ~12% (2026-2031).
+- **Confianza:** plena ~**23-25%**; ~**48% desconfía** (causa #1: falta de información).
+  Global cross-industria ~39%. El **broker eleva la confianza** (intermediación).
+- **Tenencia:** ~**4/10** tiene/tuvo seguro en 2 años. SOAT conocido por **94%**.
+- **Desastres naturales:** solo ~**3.3% de hogares** asegurados, en país altamente sísmico.
+- **Brecha de protección global:** ~**US$1.8 billones**; 60% de pérdidas por catástrofe (2024) sin asegurar.
+- **Barreras:** precio, desconfianza, baja educación financiera, **sesgos** (present bias, inercia).
 
-### 📌 Usuarios sintéticos de seguros (Perú)
-Matriz de variables + distribuciones para generar perfiles sintéticos calibrados a los datos.
+## 🧑‍🤝‍🧑 Personas sintéticas — parámetros del generador
 
 - **Matriz legible:** `research/personas/generador/matriz_usuarios_sinteticos.md`
 - **Esquema (machine-readable):** `research/personas/generador/synthetic_user_schema.json`
 - **Generador:** `research/personas/generador/generate_synthetic_users.py` (solo stdlib)
   - Uso: `python research/personas/generador/generate_synthetic_users.py --n 1000 --out usuarios.csv --seed 42`
-- **Dataset de ejemplo:** `research/personas/generador/usuarios_sinteticos_ejemplo.csv`
+  - `--joint fitted.csv` siembra las variables base desde una conjunta ENAHO/IPF (preserva correlaciones).
+- **Calibración con dato real:** `enaho_loader.py` (ENAHO → conjunta ponderada) → `ipf.py` (raking a
+  marginales objetivo) → generador `--joint` → `validate.py` (mide si calibrar mejoró). Guía en
+  `research/personas/datos_enaho/README.md`.
+- **Validación:** `research/personas/generador/validate.py` — marginales+tolerancia, asociaciones
+  (monotonía + Cramér's V), IC bootstrap, estabilidad (varianza vs n) y `--check` para CI.
+- **Datasets de ejemplo:** `research/personas/datasets/` (ejemplo 200, muestra 22, grupo NSE A).
 - **Lámina explicativa:** `research/personas/laminas/` (script `build_lamina_detalle.py` + PNG)
 - **Apps web:** `research/personas/apps/reglas/` (explorador por reglas, autocontenido) y
   `research/personas/apps/llm/` (preguntas libres con Claude vía API).
@@ -92,4 +101,12 @@ variables al modelo `lapuerta`.
 - Láminas/figuras → `research/personas/laminas/`; apps web → `research/personas/apps/`.
 - Skills del proyecto → `.claude/skills/`.
 - Reportes quincenales → `research/updates/` (indexados arriba).
+- Datasets/salidas generadas → `research/personas/datasets/`; microdato ENAHO → `research/personas/datos_enaho/`.
+- Spec (`synthetic_user_schema.json`) y matriz legible (`.md`) se mantienen sincronizados con el generador.
 - Artefactos generados (CSV de muestras, ZIP, `__pycache__`, `dist/`) NO se versionan.
+- **Evidencia → `cronista`:** toda fuente referenciable usada para crear o fundamentar
+  se registra en `research/fuentes/registro_fuentes.md` (resumen, rigurosidad, autor, año).
+- ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
+
+---
+*Investigación recopilada 2026-06-21 · codex reorganizado 2026-06-22.*

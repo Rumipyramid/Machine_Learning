@@ -1,0 +1,11 @@
+id,generacion,nse,region,educacion_financiera,sesgo_presente,canal_preferido,exposicion_riesgo_sismico,apertura_datos_ia,confianza_aseguradora,tenencia_seguro,seguro_desastres_naturales,wtp_ratio
+A_00,Gen_X_44_59,A,Resto_Costa,baja,alto,directo_digital,alta,alta,neutral,ninguno,False,0.691
+A_01,Gen_Z_18_27,A,Lima_Metropolitana,media,medio,directo_digital,alta,alta,desconfia,solo_obligatorio,False,1.172
+A_02,Millennial_28_43,A,Lima_Metropolitana,baja,alto,directo_digital,alta,baja,desconfia,ninguno,False,0.625
+A_03,Gen_X_44_59,A,Lima_Metropolitana,alta,alto,broker_corredor,alta,baja,neutral,voluntario,False,1.196
+A_04,Gen_Z_18_27,A,Resto_Costa,baja,alto,broker_corredor,alta,media,neutral,ninguno,False,0.416
+A_05,Gen_Z_18_27,A,Sierra,alta,alto,bancaseguros,media,alta,neutral,solo_obligatorio,False,1.252
+A_06,Boomer_60_mas,A,Lima_Metropolitana,media,medio,broker_corredor,media,media,confia_plena,voluntario,False,1.06
+A_07,Millennial_28_43,A,Lima_Metropolitana,baja,medio,bancaseguros,baja,media,confia_plena,voluntario,False,0.881
+A_08,Boomer_60_mas,A,Lima_Metropolitana,alta,alto,directo_digital,alta,baja,desconfia,voluntario,False,0.8
+A_09,Gen_X_44_59,A,Sierra,media,bajo,bancaseguros,alta,alta,neutral,voluntario,False,1.39

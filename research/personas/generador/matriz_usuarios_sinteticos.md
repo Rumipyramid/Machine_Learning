@@ -95,7 +95,10 @@ canal_preferido, situacion_laboral, cobertura_previsional, tenencia_vehiculo, ac
 bancarizado, exposicion_riesgo_sismico, apertura_datos_ia, confianza_aseguradora,
 tenencia_seguro, seguro_desastres_naturales, wtp_ratio`.
 
-Dataset de ejemplo (200 filas): `usuarios_sinteticos_ejemplo.csv`.
+Datasets generados en `datasets/`:
+- `datasets/usuarios_sinteticos_ejemplo.csv` — 200 filas (ejemplo de referencia del generador).
+- `datasets/muestra_22_usuarios.csv` — 22 filas (simulación de pregunta abierta).
+- `datasets/grupo_nse_A.csv` — 10 filas (grupo NSE A, simulación de opinión RIMAC).
 
 ---
 

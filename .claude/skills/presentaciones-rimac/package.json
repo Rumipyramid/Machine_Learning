@@ -1,0 +1,10 @@
+{
+  "name": "presentaciones-rimac",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Skill: exportador de presentaciones Editorial Presentations (Rimac) a PDF vectorial",
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.60.0"
+  }
+}
