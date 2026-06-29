@@ -13,12 +13,12 @@
   "variables": {
     "generacion": {
       "descripcion": "Cohorte etaria del individuo adulto",
-      "origen": "supuesto (aprox. piramide poblacional adulta de Peru)",
+      "origen": "dato (ENAHO 2025 modulo 200, poblacion 18+ ponderada por facpob07)",
       "categorias": {
-        "Gen_Z_18_27": 0.22,
-        "Millennial_28_43": 0.33,
-        "Gen_X_44_59": 0.25,
-        "Boomer_60_mas": 0.2
+        "Gen_Z_18_27": 0.197,
+        "Millennial_28_43": 0.279,
+        "Gen_X_44_59": 0.27,
+        "Boomer_60_mas": 0.254
       }
     },
     "nse": {
@@ -34,12 +34,12 @@
     },
     "region": {
       "descripcion": "Macro-region de residencia",
-      "origen": "supuesto (aprox. distribucion poblacional)",
+      "origen": "dato (ENAHO 2025 modulo 200, poblacion 18+ ponderada por facpob07)",
       "categorias": {
-        "Lima_Metropolitana": 0.33,
-        "Resto_Costa": 0.25,
-        "Sierra": 0.3,
-        "Selva": 0.12
+        "Lima_Metropolitana": 0.348,
+        "Resto_Costa": 0.231,
+        "Sierra": 0.308,
+        "Selva": 0.113
       }
     },
     "educacion_financiera": {

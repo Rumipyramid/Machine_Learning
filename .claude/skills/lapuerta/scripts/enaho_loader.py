@@ -157,6 +157,25 @@ def recode_area(row: dict) -> str | None:
     return "urbano" if e <= 5 else "rural"
 
 
+def recode_generacion(row: dict) -> str | None:
+    """`p208a` (edad en años) -> cohorte generacional (solo adultos 18+).
+    Gen Z 18-27, Millennial 28-43, Gen X 44-59, Boomer 60+."""
+    a = row.get("p208a")
+    try:
+        a = int(float(a))
+    except (TypeError, ValueError):
+        return None
+    if a < 18:
+        return None
+    if a <= 27:
+        return "Gen_Z_18_27"
+    if a <= 43:
+        return "Millennial_28_43"
+    if a <= 59:
+        return "Gen_X_44_59"
+    return "Boomer_60_mas"
+
+
 def recode_educacion(row: dict) -> str | None:
     """`p301a` (nivel educativo) -> proxy de educacion_financiera baja/media/alta.
     1 sin nivel, 2 inicial, 3 primaria incompleta, 4 primaria completa,
@@ -268,6 +287,7 @@ def compute_nse_proxy(rows: list[dict],
 RECODERS = {
     "region": recode_region,
     "area": recode_area,
+    "generacion": recode_generacion,
     "educacion": recode_educacion,
     "tenencia_vivienda": recode_tenencia_vivienda,
     "situacion_laboral": recode_situacion_laboral,
