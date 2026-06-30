@@ -13,6 +13,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro (definición + ejemplo + malentendido típico) | Derivado de investigación /seeker; alineado a glosario SBS |
 | `research/revision_conductual_modelo_venta.md` | Revisión conductual del modelo de venta RIMAC: secciones corregidas con sesgos/frameworks acotados a lo respaldado por evidencia | Reemplazos drop-in para el doc original; fuentes F-16..F-25 |
 | `research/sistema_aprendizaje_universidad_vida.md` | Diseño de sistema de aprendizaje para asesores (Universidad Vida): 5 capas basadas en ciencia del aprendizaje (transferencia, espaciamiento, evaluación, motivación) | Acota frameworks sin evidencia (70-20-10, estilos); fuentes F-26..F-34 |
+| `research/mapa_competencias_asesor.md` | Mapa de competencias del asesor (Capa 0): dominios C1–C7 atados a los 4 pasos del perfilador, niveles de maestría N1–N4 y matriz de cobertura | Base para compuertas de maestría, escalera de crecimiento y evaluación Nivel 3 |
 | `research/personas/matriz_usuarios_sinteticos.md` | Matriz legible: variables, distribuciones, grafo causal, arquetipos | Deriva de la investigación base |
 | `research/personas/synthetic_user_schema.json` | Esquema machine-readable de la matriz | Lo consume el generador |
 | `research/personas/generate_synthetic_users.py` | Generador de perfiles sintéticos (solo stdlib) | `python … --n 1000 --out usuarios.csv --seed 42` |
