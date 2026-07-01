@@ -7,6 +7,7 @@
 | Ruta | Qué es |
 |---|---|
 | [`seguros_comportamiento_mundo_peru.md`](seguros_comportamiento_mundo_peru.md) | Investigación base: comportamiento, percepción y valoración de seguros (Mundo vs. Perú), con fuentes. |
+| [`instrucciones_claude_equipo_research.md`](instrucciones_claude_equipo_research.md) | Instrucciones base (transversales y anti-sesgo) para configurar a Claude como asistente del equipo de research/diseño. |
 | [`personas/generador/`](personas/generador/) | **Fuente de verdad del modelo**: generador, esquema, matriz y dataset de ejemplo. |
 | [`personas/laminas/`](personas/laminas/) | Lámina explicativa del sistema (script `build_lamina_detalle.py` + PNG). |
 | [`personas/apps/reglas/`](personas/apps/reglas/) | App web autocontenida: preguntas por reglas (gráficos + insights), sin servidor. |
