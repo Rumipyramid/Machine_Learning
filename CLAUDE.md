@@ -26,6 +26,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
+| `.claude/skills/constructor-programa-academico/` | Skill `/constructor-programa-academico`: diseña el esqueleto de un programa de formación | Secuencia bloques, checkpoints de mentoría, gamificación y evaluación; no produce contenido final |
 | `.claude/skills/cronista/` · `seeker/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación, tablero Jira, decks Rimac, publicar a main |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 
