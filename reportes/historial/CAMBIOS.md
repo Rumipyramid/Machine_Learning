@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-02T21:08:38 · Cambios vigentes: 22
+> Retención: 15 días · Última actualización: 2026-07-02T21:14:39 · Cambios vigentes: 23
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-02T21:14:39 | Alejandro | Q-5 | Quest / Status | Mensajes de primer contacto; solo no clientes sin CUA | Estrategia de primer contacto; incluye clientes y no clientes con CUA, y no clientes sin CUA | normal | aplicado |
 | 2026-07-02T21:08:38 | Alejandro | Q-7 | Status del proyecto | Asistencia a onboarding de FFVV actual; contenido listo, falta diseño instruccional | Modelo por competencias: calendarización, evaluación y reconocimientos | normal | aplicado |
 | 2026-07-02T21:07:01 | Alejandro | Q-9 | Quest / Impacto | Kit de Social Selling; +leads/agendamientos; 15–25% conversión lead→cita | Playbook de Ventas FFVV Vida Individual; ↓ curva de aprendizaje del asesor; +conversión de venta | normal | aplicado |
 | 2026-07-02T20:59:57 | Alejandro | Q-28 | Quest nuevo | — | Complemento digital para entendimiento y uso eficiente de seguros (In Progress, EPIC-2 Guías resumidas) | normal | aplicado |

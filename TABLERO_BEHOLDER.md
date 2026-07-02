@@ -30,7 +30,7 @@ Fortalecer la FFVV de Vida Individual: agendamiento, formación y generación de
 
 | Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|
-| Q-5 | Mensajes de primer contacto | In Progress | Mesa de trabajo con Legal, Cumplimiento, CUA y FFVV para definir estrategia viable de contacto a no clientes sin CUA; speeches de primer contacto | 1 🎟️ | Alejandro | Estrategia CUA en definición (antes bloqueado) | +20–30% agendamiento de citas (est.) |
+| Q-5 | Estrategia de primer contacto | In Progress | Mesa de trabajo con Legal, Cumplimiento, CUA y FFVV para definir estrategia viable de contacto; incluye mensajes para clientes y no clientes con CUA, y no clientes sin CUA | 1 🎟️ | Alejandro | Estrategia CUA en definición (antes bloqueado) | +20–30% agendamiento de citas (est.) |
 | Q-7 | Universidad Vida | Diseñado | Modelo por competencias: calendarización, evaluación y reconocimientos; contenido listo, falta diseño instruccional (Learning) | 4 🎟️ | Melissa, Alejandro | Capacidad limitada equipo learning | −25–40% ramp-up asesores jr (est.) |
 | Q-8 | Copiloto del Asesor: AIDA — Bot trainer + reportería | In Review | Prototipo diseñado y validada usabilidad y valoración de usuarios; en track de Back to Basics / Venta Vida | 6 🎟️ | Felipe, Melissa | AIDA no cumple el task; comité de priorización; 3 herramientas en paralelo 🚩 | +efectividad (puntaje del bot) y CX; ramp −25–40% (est.). Ahorro proyectado S/1.8M |
 | Q-9 | Playbook de Ventas FFVV Vida Individual | In Progress | Estructura definida (5 bloques + apéndice): Quiénes somos, Antes de la conversación, Generación de contacto, La conversación de venta, Resolución y cierre, Info administrativa. Contenido disponible para canal físico, virtual y consumible por AIDA u otro copiloto | 3 🎟️ | Melissa | Recursos de contenido + falta incentivos/monitoreo 🚩 | ↓ curva de aprendizaje del asesor; +conversión de venta |
@@ -126,7 +126,7 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 | Q-8 | AIDA Bot Trainer | AIDA no cumple el task; comité; 3 herramientas en paralelo | Alta | Consolidar a 1 herramienta antes del comité; llevar evidencia de usabilidad |
 | Q-9 | Playbook de Ventas FFVV | Recursos de contenido + falta de incentivos/monitoreo | Alta | Definir incentivos mínimos y tablero de monitoreo |
 | Q-4 | Optimización Cobranzas B2B | Diseño aprobado sin explorar la problemática | Alta | Discovery hecho (12 entrevistas E2E) + quick fix hallado: correo de conciliación corregido. Validar hallazgos antes de diseñar |
-| Q-5 | Mensajes de primer contacto | Estrategia CUA aún en definición | Media | Cerrar definición CUA para confirmar desbloqueo |
+| Q-5 | Estrategia de primer contacto | Estrategia CUA aún en definición | Media | Cerrar definición CUA para confirmar desbloqueo |
 | Q-1 | Guías 4 productos AMI | Reajuste de roadmap −6 semanas | Media | Re-priorizar entregables con Estrella Damian / Soiky Bardales |
 | — | Capacidad del equipo | Alejandro 🔴 (9) + iniciativas del Backlog sin fichas | Alta | Re-asignar fichas antes de comprometer el Backlog Q3 |
 
