@@ -41,7 +41,7 @@ Promover el entendimiento y uso eficiente de los seguros de salud mediante guía
 | Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|
 | Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | Planes AMI diseñados; pendiente check de Producto y equipo médico sobre nombre, coberturas, red de clínicas y servicios finales | 5 🎟️ | Felipe, Alejandro | Roadmap reajustado −6 semanas | ↓ ~25–30% casos NPS «no recibí información» (est.) |
-| Q-3 | Guías resumidas — EPS (Top 4 cuentas + Multiempresa) | In Review | Top 4 cuentas: 2/4 entregadas, 2/4 en revisión; Multiempresa entregada; ajustes y presentación final | 3 🎟️ | Stef, Felipe, Alejandro | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS; ↓ «no recibí información» |
+| Q-3 | Guías resumidas — EPS (Top 4 cuentas + Multiempresa) | In Review | Top 4 cuentas: 2/4 entregadas, 2/4 en revisión; Multiempresa entregada; Dra. Ana Gabriela Ramos (Directora Médica de Seguros Salud) ha escrito para revisar las guías trabajadas para empresas | 3 🎟️ | Stef, Felipe, Alejandro | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS; ↓ «no recibí información» |
 | Q-28 | Complemento digital para entendimiento y uso eficiente de seguros | In Progress | Espacio abierto con el frente digital para complementar la propuesta de entendimiento y uso eficiente de seguros | — | Stef, Felipe, Alejandro | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
 
 ### EPIC-3 · Renovación AMI
