@@ -311,21 +311,36 @@
         <div class="nl-item"><div class="n">01</div><div class="t">Corte primario: tipo de evento</div><div class="d">A (involuntario) vs. B (voluntario) — justificado por mecanismo.</div></div>
         <div class="nl-item"><div class="n">02</div><div class="t">Corte secundario: ramo</div><div class="d">Modelos por ramo o interacciones fuertes ramo × feature.</div></div>
         <div class="nl-item"><div class="n">03</div><div class="t">NSE / perfil: como feature</div><div class="d">El impago lo predice el método de pago + formalidad, no la etiqueta NSE.</div></div>
-        <div class="nl-item"><div class="n">04</div><div class="t">Desagregar solo si es necesario</div><div class="d">Modelos separados por NSE únicamente si una prueba de heterogeneidad lo justifica.</div></div>
+        <div class="nl-item"><div class="n">04</div><div class="t">Desagregar solo si es necesario</div><div class="d">Se prueba con datos si el churn de NSE A/B se comporta distinto al del resto; solo si la diferencia es material se entrenan modelos separados.</div></div>
       </div>
       <div class="callout reveal"><p>Principio de parsimonia: no segmentar por etiqueta, solo cuando el proceso generador del dato difiere.</p></div>
       <div class="pagenum"></div>
       <div class="footer"></div>
     </section>
 
-    <!-- 13 FEATURES / METODO / METRICAS -->
+    <!-- 13 COMO FUNCIONA -->
     <section class="slide">
-      <div class="eyebrow reveal">Cómo se construye</div>
-      <h2 class="h reveal">Señales de <span class="grad">alta rigurosidad</span>, método y métricas.</h2>
-      <div class="three-col reveal">
-        <div class="card"><div class="tier-tag">Features</div><h4>Qué entra</h4><p>Pago (método, mora), precio de renovación, tenure, canal/broker, siniestro, macro regional, flag desgravamen.</p></div>
-        <div class="card"><div class="tier-tag">Método</div><h4>Cómo se modela</h4><p>Supervivencia (time-to-event) para tenure y censura + gradient boosting para operación. Base interpretable con SHAP.</p></div>
-        <div class="card"><div class="tier-tag">Métricas</div><h4>Cómo se evalúa</h4><p>PR-AUC y recall @ top-decil (no accuracy — el churn es raro), calibración y lift. Validación out-of-time.</p></div>
+      <div class="eyebrow reveal">Cómo funciona</div>
+      <h2 class="h reveal">De los datos al <span class="grad">score mensual</span> por póliza.</h2>
+      <div class="num-list reveal" style="gap:22px">
+        <div class="nl-item"><div class="n">01 · Entrada</div><div class="t">Una foto mensual de cada póliza.</div><div class="d">Historial de pagos (método, atrasos, cobros fallidos), precio y renovaciones, antigüedad, canal, siniestros y datos del cliente. Todo ya existe en los sistemas: no requiere data nueva.</div></div>
+        <div class="nl-item"><div class="n">02 · Dos modelos</div><div class="t">Cada póliza recibe dos probabilidades.</div><div class="d">Modelo A: probabilidad de caer por impago en los próximos 90 días. Modelo B: probabilidad de no renovar o rescatar en la próxima renovación. Se separan porque las causas y las acciones son distintas.</div></div>
+        <div class="nl-item"><div class="n">03 · Salida</div><div class="t">Un score de 0 a 100 con su porqué.</div><div class="d">Cada score viene con las 3 razones que más lo explican (ej. "cobro fallido hace 15 días + pago manual + primer año de póliza"). El equipo no recibe un número ciego, recibe una causa.</div></div>
+        <div class="nl-item"><div class="n">04 · Acción</div><div class="t">El score dispara la ruta correcta.</div><div class="d">Score A alto → gestión de cobro (migrar a débito, mover fecha, recordatorio). Score B alto → gestión comercial (contacto pre-renovación, oferta de valor, broker).</div></div>
+      </div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 13b VALIDACION -->
+    <section class="slide">
+      <div class="eyebrow reveal">Validación</div>
+      <h2 class="h reveal">Cómo sabremos que <span class="grad">funciona de verdad</span>.</h2>
+      <div class="num-list reveal" style="gap:22px">
+        <div class="nl-item"><div class="n">01 · Prueba honesta</div><div class="t">Entrenar con el pasado, probar con el futuro.</div><div class="d">El modelo se entrena con datos hasta una fecha de corte y se evalúa sobre los meses siguientes, que nunca vio. Así se simula exactamente cómo operará en producción.</div></div>
+        <div class="nl-item"><div class="n">02 · Precisión útil</div><div class="t">De cada 100 pólizas que el modelo señala, ¿cuántas caen de verdad?</div><div class="d">Y de las que efectivamente cayeron, ¿cuántas alcanzó a detectar a tiempo? Estas dos preguntas —no el "accuracy" global— son la vara, porque el churn es un evento raro: un modelo que dice "nadie cae" acierta 95% y no sirve de nada.</div></div>
+        <div class="nl-item"><div class="n">03 · Score confiable</div><div class="t">Si el modelo dice 30%, debe caer el 30%.</div><div class="d">Calibración: los scores tienen que reflejar probabilidades reales para poder priorizar cartera y dimensionar la gestión.</div></div>
+        <div class="nl-item"><div class="n">04 · La prueba final es de negocio</div><div class="t">Piloto con grupo de control.</div><div class="d">Se interviene a una parte de las pólizas de alto score y se compara contra un grupo igual sin intervención. El veredicto no es una métrica estadística: es la prima retenida adicional.</div></div>
       </div>
       <div class="pagenum"></div>
       <div class="footer"></div>
