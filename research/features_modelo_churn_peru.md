@@ -65,6 +65,8 @@
 | `siniestro_reciente` | 1 si hubo siniestro en 12m | Siniestros | A/B | Binaria |
 | `satisfaccion_siniestro` | Resultado/satisfacción del último siniestro | Siniestros / NPS | A/B | Ordinal |
 | `siniestro_rechazado` | 1 si último siniestro fue rechazado | Siniestros | A/B | Binaria ⚠️ |
+| `delta_prima_post_siniestro` | Δ% de prima en la renovación siguiente al siniestro | Suscripción + siniestros | B | Numérica |
+| `cancelo_otra_poliza_6m` | 1 si el cliente/hogar canceló otra póliza en 6m (contagio; Brockett et al., 2008) | Cliente | A/B | Binaria |
 | `engagement_digital` | Logins/app en ventana | Digital | A/B | Numérica |
 
 ## 6. Macro / contexto  → target **A/B (vida/salud)**

@@ -44,6 +44,18 @@ Ordenados por consistencia en la evidencia:
 
 > Calibración: la mayoría de estudios ML de churn corren sobre **datos de una sola aseguradora** → validez externa limitada; la importancia relativa es contextual. Lo más robusto entre estudios: **precio y tenure**.
 
+### Zoom: cómo predice la experiencia de siniestro (lo mejor respaldado)
+
+El siniestro es el predictor con más matices. Lo que la evidencia de mayor rigurosidad sostiene:
+
+1. **En promedio, tener un siniestro eleva la probabilidad de no renovar.** Documentado con regresión logística sobre datos reales de aseguradora (Guillén, Parner, Densgsoe & Pérez-Marín, 2003 — 🟢A). Mecanismo doble: la fricción del proceso y la **anticipación del aumento de prima** por experience rating/bonus-malus.
+2. **El efecto es condicional, no automático.** La revisión sistemática de cancelación en no-vida (Geneva Papers, 2020 — 🟢A) muestra que la dirección y magnitud **varían según el contexto y el diseño del estudio**: el "tuvo siniestro" binario es un mal predictor aislado.
+3. **Lo que de verdad dispara el churn es el *resultado* del siniestro:** rechazo, demora o mala resolución. La evidencia cuantificada aquí es de industria (Accenture: de los insatisfechos con su último siniestro, ~30% cambió de aseguradora y ~47% lo consideraba — 🟡C, encuesta propia), pero es consistente entre encuestas y con el mecanismo de confianza.
+4. **Un siniestro bien resuelto puede *retener*** ("momento de la verdad"): el cliente que fue bien atendido en el momento de estrés muestra lealtad igual o mayor que quien nunca usó el seguro (evidencia de industria — 🟡C; sin cuantificación académica robusta).
+5. **Efecto contagio en el hogar — el hallazgo riguroso más accionable:** con análisis de supervivencia sobre un portafolio de hogares, Brockett, Golden, Guillén, Nielsen, Parner & Pérez-Marín (2008, *Journal of Risk and Insurance* — 🟢A) muestran que **cuando un cliente cancela una póliza, la probabilidad de que cancele las demás del hogar sube fuertemente y la deserción total ocurre en una ventana corta**. Un siniestro mal manejado no arriesga una póliza: arriesga al cliente completo, y hay poco tiempo para reaccionar.
+
+**Implicación de modelado:** no usar `siniestro_reciente` binario como única señal. Operacionalizar el **resultado** (pagado/rechazado), el **tiempo de resolución**, la **satisfacción** (si existe), el **Δprima posterior al siniestro**, y un **flag de cancelación reciente de otra póliza del mismo cliente/hogar** (señal de contagio, ventana corta). Estas variables ya están recogidas en `research/features_modelo_churn_peru.md` (grupo 5).
+
 ---
 
 ## 3. Desagregado por ramo
