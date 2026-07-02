@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B1620; --text:#1F2937; --muted:#6B7280; --red:#F7052D;
+    --accent-orange:#FF7A00; --accent-magenta:#C8128B;
+    --bg-section:#ECEEFC; --bg-soft:#F5F6FB; --bg-warm:#FFF6EF; --bg-cool:#F7F8FE;
+    --line:#E5E7EB;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Manrope',sans-serif;color:var(--text)}
+  .viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#F2F3F7}
+  .stage{width:1920px;height:1080px;min-width:1920px;min-height:1080px;flex-shrink:0;
+         position:relative;transform-origin:center center;background:#fff;overflow:hidden;
+         box-shadow:0 20px 60px rgba(11,22,32,.12)}
+  .slide{position:absolute;inset:0;padding:80px 100px 100px;
+         visibility:hidden;opacity:0;pointer-events:none;transition:opacity .35s}
+  .slide.active{visibility:visible;opacity:1;pointer-events:auto}
+  .slide.section{background:var(--bg-section);display:flex;flex-direction:column;justify-content:center}
+  .slide.cover{display:flex;flex-direction:column;justify-content:center}
+
+  h1{font-size:112px;font-weight:800;line-height:.96;letter-spacing:-.04em;color:var(--ink)}
+  .slide.section h1{font-size:132px;line-height:.95}
+  h2.h{font-size:60px;font-weight:800;line-height:1.05;letter-spacing:-.025em;color:var(--ink)}
+  .eyebrow{font-size:18px;font-weight:700;letter-spacing:.02em;color:var(--ink);margin-bottom:24px;text-transform:uppercase}
+  .section-num{font-size:20px;font-weight:700;letter-spacing:.04em;color:var(--red);margin-bottom:28px;text-transform:uppercase}
+  p.sub{font-size:26px;font-weight:500;line-height:1.4;margin-top:32px;max-width:1180px;color:var(--text)}
+  .sublabel{font-size:24px;font-weight:500;line-height:1.4;margin-top:28px;max-width:1100px;color:var(--text)}
+  .meta{font-size:16px;font-weight:500;color:var(--muted);margin-top:44px;line-height:1.5}
+  .grad{background:linear-gradient(90deg,#FF7A00 0%,#F7052D 45%,#C8128B 100%);
+        -webkit-background-clip:text;background-clip:text;color:transparent}
+
+  .slide-body{display:flex;flex-direction:column;margin:auto 0;width:100%}
+  .lead{font-size:24px;font-weight:500;line-height:1.4;color:var(--text);max-width:1200px;margin-top:20px}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:36px}
+  .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:36px}
+
+  .card{background:var(--bg-soft);border-radius:18px;padding:30px 30px 26px}
+  .card-warm{background:var(--bg-warm);border-left:6px solid var(--accent-orange)}
+  .card-cool{background:var(--bg-section);border-left:6px solid var(--accent-magenta)}
+  .card .tier-tag{font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+  .card h4{font-size:25px;font-weight:700;color:var(--ink);line-height:1.15;margin-bottom:8px}
+  .card p{font-size:18px;font-weight:400;line-height:1.45;color:var(--text)}
+
+  .num-list{display:grid;gap:26px;margin-top:36px}
+  .num-list.cols2{grid-template-columns:1fr 1fr;gap:30px 72px}
+  .nl-item .n{font-size:18px;font-weight:500;color:var(--muted)}
+  .nl-item .t{font-size:26px;font-weight:700;color:var(--ink);line-height:1.15;margin:4px 0 6px}
+  .nl-item .d{font-size:18px;font-weight:400;color:var(--text);line-height:1.45}
+
+  .callout{background:var(--bg-section);border-left:6px solid var(--red);border-radius:4px;padding:26px 34px;margin-top:36px}
+  .callout p{font-size:22px;font-weight:500;color:var(--ink);line-height:1.4}
+
+  table.comp{width:100%;border-collapse:collapse;margin-top:36px}
+  table.comp th,table.comp td{text-align:left;padding:16px 22px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.comp th{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  table.comp td{font-size:21px;font-weight:400;color:var(--text);line-height:1.3}
+  table.comp td.ramo{font-weight:700;color:var(--ink)}
+  table.comp td.em{color:var(--red);font-weight:700}
+  table.comp .warm{background:var(--bg-warm)}
+  table.comp .cool{background:var(--bg-cool)}
+
+  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+  .stat{background:var(--bg-soft);border-radius:18px;padding:32px 30px}
+  .stat .big{font-size:60px;font-weight:800;color:var(--ink);letter-spacing:-.02em;line-height:1}
+  .stat .big.g{background:linear-gradient(90deg,#FF7A00,#F7052D 55%,#C8128B);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat .lbl{font-size:18px;font-weight:400;color:var(--text);margin-top:12px;line-height:1.35}
+
+  .footer{position:absolute;left:100px;bottom:50px;display:flex;align-items:center;gap:16px}
+  .footer .logo svg{width:115px;height:auto;display:block}
+  .footer .sep{width:1px;height:20px;background:var(--muted);opacity:.4}
+  .footer .tag{font-size:14px;font-weight:500;letter-spacing:.02em;color:var(--muted)}
+  .pagenum{position:absolute;right:100px;top:60px;font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--muted)}
+  .nav-controls{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+                display:flex;gap:8px;background:var(--ink);color:#fff;
+                padding:10px 18px;border-radius:999px;font-size:14px;z-index:99}
+
+  @keyframes riseIn{from{transform:translateY(24px);opacity:0}to{transform:translateY(0);opacity:1}}
+  .slide.active .reveal{animation:riseIn .7s cubic-bezier(.22,1,.36,1) both}
+  .slide.active .reveal:nth-child(1){animation-delay:.05s}
+  .slide.active .reveal:nth-child(2){animation-delay:.13s}
+  .slide.active .reveal:nth-child(3){animation-delay:.21s}
+  .slide.active .reveal:nth-child(4){animation-delay:.29s}
+  .slide.active .reveal:nth-child(5){animation-delay:.37s}
+  .slide.active .reveal:nth-child(6){animation-delay:.45s}
+  @media (prefers-reduced-motion:reduce){.slide.active .reveal{animation:none!important}.slide{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="viewport">
+  <div class="stage" id="stage">
+
+    <!-- 01 COVER -->
+    <section class="slide cover active">
+      <div class="eyebrow reveal">Investigación · Seguros Perú</div>
+      <h1 class="reveal">Predicción de <span class="grad">churn y renovación</span><br>en seguros.</h1>
+      <p class="sub reveal">Síntesis de la evidencia y propuesta de modelo, desagregada por ramo, región, Perú y NSE — apoyada solo en fuentes de alta rigurosidad.</p>
+      <div class="meta reveal">Documento de trabajo · Protocolo /seeker · 2026</div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 02 MAPA -->
+    <section class="slide">
+      <div class="eyebrow reveal">Qué cubre este documento</div>
+      <h2 class="h reveal">Del <span class="grad">hallazgo</span> a la propuesta de modelo.</h2>
+      <div class="num-list cols2 reveal">
+        <div class="nl-item"><div class="n">01</div><div class="t">Predictores transversales</div><div class="d">Lo que opera en casi todos los ramos.</div></div>
+        <div class="nl-item"><div class="n">02</div><div class="t">Por ramo</div><div class="d">Auto, hogar, salud, vida, comercial.</div></div>
+        <div class="nl-item"><div class="n">03</div><div class="t">Por región</div><div class="d">Qué amplifica LatAm frente a mercados maduros.</div></div>
+        <div class="nl-item"><div class="n">04</div><div class="t">Perú y NSE A/B</div><div class="d">Predictores estructurales y segmento voluntario.</div></div>
+        <div class="nl-item"><div class="n">05</div><div class="t">Propuesta de modelo</div><div class="d">Dos targets, features, método y métricas.</div></div>
+        <div class="nl-item"><div class="n">06</div><div class="t">Roadmap y rigor</div><div class="d">Fases de implementación y límites de la evidencia.</div></div>
+      </div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 03 TESIS -->
+    <section class="slide">
+      <div class="eyebrow reveal">La idea que ordena todo</div>
+      <h2 class="h reveal">El churn no es un evento: hay <span class="grad">dos churns</span>.</h2>
+      <div class="two-col reveal">
+        <div class="card card-warm">
+          <div class="tier-tag">Churn activo</div>
+          <h4>El cliente decide irse.</h4>
+          <p>Cotiza y se cambia por precio, servicio o competencia. Domina en mercados maduros y NSE A/B. Intervención comercial.</p>
+        </div>
+        <div class="card card-cool">
+          <div class="tier-tag">Caída involuntaria</div>
+          <h4>El cliente deja de pagar.</h4>
+          <p>No "decide": cae por impago (cobro fallido, shock de liquidez). Domina en el masivo peruano. Intervención operativa.</p>
+        </div>
+      </div>
+      <div class="callout reveal"><p>Modelarlos como un solo evento mezcla dos procesos y vuelve el modelo inaccionable.</p></div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 04 SECTION 01 -->
+    <section class="slide section">
+      <div class="section-num reveal">01 — Predictores</div>
+      <h1 class="reveal">Qué predice<br><span class="grad">renovación vs. churn</span>.</h1>
+      <p class="sublabel reveal">Cinco niveles: transversal, ramo, región, Perú y NSE.</p>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 05 TRANSVERSAL -->
+    <section class="slide">
+      <div class="eyebrow reveal">Nivel 1 · Transversal</div>
+      <h2 class="h reveal">Lo que opera en <span class="grad">casi todos los ramos</span>.</h2>
+      <div class="num-list cols2 reveal">
+        <div class="nl-item"><div class="n">01</div><div class="t">Cambio de precio en renovación</div><div class="d">El predictor más fuerte y consistente en P&C (Guelman & Guillén, 2014).</div></div>
+        <div class="nl-item"><div class="n">02</div><div class="t">Antigüedad / duración</div><div class="d">Churn alto al inicio y decreciente con el tenure.</div></div>
+        <div class="nl-item"><div class="n">03</div><div class="t">Bundling / n.º de pólizas</div><div class="d">Multi-línea reduce el churn de forma marcada.</div></div>
+        <div class="nl-item"><div class="n">04</div><div class="t">Experiencia de siniestros</div><div class="d">Un siniestro —y su insatisfacción o rechazo— sube el churn.</div></div>
+        <div class="nl-item"><div class="n">05</div><div class="t">Método y frecuencia de pago</div><div class="d">Débito automático y pago anual reducen la caída.</div></div>
+        <div class="nl-item"><div class="n">06</div><div class="t">Canal y relación con el broker</div><div class="d">La intermediación con asesoría retiene más.</div></div>
+      </div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 06 POR RAMO -->
+    <section class="slide">
+      <div class="eyebrow reveal">Nivel 2 · Por ramo</div>
+      <h2 class="h reveal">Cada ramo tiene un <span class="grad">predictor dominante</span>.</h2>
+      <table class="comp reveal">
+        <thead><tr><th>Ramo</th><th>Predictor dominante</th><th>Otros fuertes</th><th>Naturaleza</th></tr></thead>
+        <tbody>
+          <tr><td class="ramo">Auto</td><td class="em">Cambio de precio</td><td>Tenure, siniestro, bundling, telemática</td><td>Shopping activo</td></tr>
+          <tr><td class="ramo">Hogar</td><td class="em">Bundling</td><td>Rate change, tenure, siniestros grandes</td><td>No-renovación</td></tr>
+          <tr><td class="ramo">Salud</td><td class="em">Premium + red / elegibilidad</td><td>Star rating, empleo, disrupción admin.</td><td>Decisión + elegibilidad</td></tr>
+          <tr><td class="ramo">Vida</td><td class="em">Shock financiero / tasas</td><td>Duración temprana, canal, accesibilidad</td><td>Lapse / rescate</td></tr>
+          <tr><td class="ramo">Comercial</td><td class="em">Relación con el broker</td><td>Precio/ciclo, siniestros, tamaño</td><td>Re-cotización</td></tr>
+        </tbody>
+      </table>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 07 POR REGION -->
+    <section class="slide">
+      <div class="eyebrow reveal">Nivel 3 · Por región</div>
+      <h2 class="h reveal">LatAm <span class="grad">amplifica</span> predictores estructurales.</h2>
+      <table class="comp reveal">
+        <thead><tr><th>Predictor</th><th>Mercados maduros</th><th>LatAm</th></tr></thead>
+        <tbody>
+          <tr><td class="ramo">Precio / rate change</td><td class="warm">Dominante (auto/hogar)</td><td class="cool">Fuerte, vía accesibilidad</td></tr>
+          <tr><td class="ramo">Liquidez / timing de pago</td><td class="warm">Menor</td><td class="cool em">Dominante (informalidad)</td></tr>
+          <tr><td class="ramo">Confianza institucional</td><td class="warm">Se da por sentada</td><td class="cool em">Predictor activo</td></tr>
+          <tr><td class="ramo">Bancarización / medio de pago</td><td class="warm">Relevante</td><td class="cool em">Más fuerte (impago)</td></tr>
+          <tr><td class="ramo">Shock de empleo (EFH)</td><td class="warm">Moderado</td><td class="cool em">Amplificado</td></tr>
+        </tbody>
+      </table>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 08 PERU -->
+    <section class="slide">
+      <div class="eyebrow reveal">Nivel 4 · Perú</div>
+      <h2 class="h reveal">En Perú domina la <span class="grad">caída involuntaria</span>.</h2>
+      <div class="three-col reveal">
+        <div class="card"><div class="tier-tag">Pago</div><h4>Fricción de cobro</h4><p>Baja bancarización limita el débito automático → caída por impago, no por decisión.</p></div>
+        <div class="card"><div class="tier-tag">Contexto</div><h4>Informalidad &gt;73%</h4><p>Ingreso volátil → shock de liquidez (hipótesis del fondo de emergencia).</p></div>
+        <div class="card"><div class="tier-tag">Regulación</div><h4>Desgravamen opcional</h4><p>Dejó de ser obligatorio salvo hipotecas: quiebre estructural en la serie.</p></div>
+        <div class="card"><div class="tier-tag">Confianza</div><h4>~48% desconfía</h4><p>Causa #1: falta de información. La confianza sube con el broker.</p></div>
+        <div class="card"><div class="tier-tag">Medición</div><h4>Confusión SIS/EsSalud</h4><p>70% asocia "seguro" con salud pública → contamina la variable objetivo.</p></div>
+        <div class="card"><div class="tier-tag">Sesgos</div><h4>Present bias e inercia</h4><p>La inercia retiene al inscrito, pero produce la caída silenciosa por impago.</p></div>
+      </div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 09 NSE -->
+    <section class="slide">
+      <div class="eyebrow reveal">Nivel 5 · NSE A / B</div>
+      <h2 class="h reveal">NSE A/B concentran el <span class="grad">mercado voluntario</span>.</h2>
+      <div class="stat-row reveal">
+        <div class="stat"><div class="big grad">≈12%</div><div class="lbl">de los hogares del país son NSE A (1.2%) + B (10.6%) — APEIM 2024.</div></div>
+        <div class="stat"><div class="big">S/ 8,117</div><div class="lbl">ingreso mensual promedio NSE AB vs. S/ 3,348 nacional.</div></div>
+        <div class="stat"><div class="big">Activo</div><div class="lbl">su churn es decisión (precio/servicio), no impago: bancarización casi universal.</div></div>
+      </div>
+      <div class="callout reveal"><p>Es el segmento del perfilador de venta ("creación de patrimonio"). NSE entra como <b>feature</b>, no como partición del modelo.</p></div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 10 SECTION 02 -->
+    <section class="slide section">
+      <div class="section-num reveal">02 — Propuesta de modelo</div>
+      <h1 class="reveal">Un modelo que<br><span class="grad">separa los dos churns</span>.</h1>
+      <p class="sublabel reveal">Desagrega por NSE o perfil solo donde el mecanismo cambia.</p>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 11 DOS TARGETS -->
+    <section class="slide">
+      <div class="eyebrow reveal">Decisión de diseño #1</div>
+      <h2 class="h reveal">Dos <span class="grad">targets</span>, no uno.</h2>
+      <div class="two-col reveal">
+        <div class="card card-warm">
+          <div class="tier-tag">Target A</div>
+          <h4>Lapse involuntario (impago)</h4>
+          <p>Predice el cobro fallido / no pago. Features: método de pago, atrasos, mora, formalidad. Sustento: liquidez en mercados emergentes (Eling, 2014; EFH, Outreville, 1990).</p>
+        </div>
+        <div class="card card-cool">
+          <div class="tier-tag">Target B</div>
+          <h4>Baja voluntaria (no-renovación / rescate)</h4>
+          <p>Predice la decisión activa. Features: Δ precio en renovación, competitividad, servicio. Sustento: elasticidad precio (Guelman & Guillén, 2014; lapse Lasso, 2022).</p>
+        </div>
+      </div>
+      <div class="callout reveal"><p>La intervención de A es operativa; la de B, comercial. Por eso van separados.</p></div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 12 ARQUITECTURA -->
+    <section class="slide">
+      <div class="eyebrow reveal">Arquitectura</div>
+      <h2 class="h reveal">Targets × ramo; NSE como <span class="grad">feature, no partición</span>.</h2>
+      <div class="num-list cols2 reveal">
+        <div class="nl-item"><div class="n">01</div><div class="t">Corte primario: tipo de evento</div><div class="d">A (involuntario) vs. B (voluntario) — justificado por mecanismo.</div></div>
+        <div class="nl-item"><div class="n">02</div><div class="t">Corte secundario: ramo</div><div class="d">Modelos por ramo o interacciones fuertes ramo × feature.</div></div>
+        <div class="nl-item"><div class="n">03</div><div class="t">NSE / perfil: como feature</div><div class="d">El impago lo predice el método de pago + formalidad, no la etiqueta NSE.</div></div>
+        <div class="nl-item"><div class="n">04</div><div class="t">Desagregar solo si es necesario</div><div class="d">Modelos separados por NSE únicamente si una prueba de heterogeneidad lo justifica.</div></div>
+      </div>
+      <div class="callout reveal"><p>Principio de parsimonia: no segmentar por etiqueta, solo cuando el proceso generador del dato difiere.</p></div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 13 FEATURES / METODO / METRICAS -->
+    <section class="slide">
+      <div class="eyebrow reveal">Cómo se construye</div>
+      <h2 class="h reveal">Señales de <span class="grad">alta rigurosidad</span>, método y métricas.</h2>
+      <div class="three-col reveal">
+        <div class="card"><div class="tier-tag">Features</div><h4>Qué entra</h4><p>Pago (método, mora), precio de renovación, tenure, canal/broker, siniestro, macro regional, flag desgravamen.</p></div>
+        <div class="card"><div class="tier-tag">Método</div><h4>Cómo se modela</h4><p>Supervivencia (time-to-event) para tenure y censura + gradient boosting para operación. Base interpretable con SHAP.</p></div>
+        <div class="card"><div class="tier-tag">Métricas</div><h4>Cómo se evalúa</h4><p>PR-AUC y recall @ top-decil (no accuracy — el churn es raro), calibración y lift. Validación out-of-time.</p></div>
+      </div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 14 DEL SCORE A LA ACCION -->
+    <section class="slide">
+      <div class="eyebrow reveal">Del score a la acción</div>
+      <h2 class="h reveal">La intervención <span class="grad">depende del target</span>.</h2>
+      <div class="two-col reveal">
+        <div class="card card-warm">
+          <div class="tier-tag">Target A · Operativa</div>
+          <h4>Asegurar el pago</h4>
+          <p>Migrar a débito automático, ajustar la fecha de cobro a la liquidez, recordatorios, recuperación del cobro fallido. La palanca #1 del masivo peruano no es el precio.</p>
+        </div>
+        <div class="card card-cool">
+          <div class="tier-tag">Target B · Comercial</div>
+          <h4>Retener por valor</h4>
+          <p>Contacto pre-renovación, retención por precio/valor, refuerzo del broker, mejora de la experiencia de siniestro.</p>
+        </div>
+      </div>
+      <div class="callout reveal"><p>Usar <b>uplift modeling</b>: actuar sobre quienes la intervención cambia, no sobre quienes caerían o renovarían igual.</p></div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+    <!-- 15 ROADMAP + RIGOR -->
+    <section class="slide">
+      <div class="eyebrow reveal">Cierre</div>
+      <h2 class="h reveal"><span class="grad">Roadmap</span> y nota de rigor.</h2>
+      <div class="num-list cols2 reveal">
+        <div class="nl-item"><div class="n">Fase 0</div><div class="t">Datos y target</div><div class="d">Definir y etiquetar los dos eventos; marcar el structural break; auditar el objetivo.</div></div>
+        <div class="nl-item"><div class="n">Fase 1</div><div class="t">MVP por target × ramo</div><div class="d">Base interpretable + GBM; PR-AUC, calibración, SHAP.</div></div>
+        <div class="nl-item"><div class="n">Fase 2</div><div class="t">Heterogeneidad</div><div class="d">Probar si desagregar por NSE aporta sobre interacciones.</div></div>
+        <div class="nl-item"><div class="n">Fase 3</div><div class="t">Uplift + operación</div><div class="d">De propensión a uplift; conectar score → intervención; medir prima retenida.</div></div>
+      </div>
+      <div class="callout reveal"><p>Solo se usó evidencia 🟢A/🔵B. No hay coeficientes de churn medidos en Perú: los pesos reales salen de la data de RIMAC al entrenar.</p></div>
+      <div class="pagenum"></div>
+      <div class="footer"></div>
+    </section>
+
+  </div>
+</div>
+
+<div class="nav-controls">← / → para navegar · E para editar</div>
+
+<script>
+  const LOGO_SVG = `<svg width="230" height="32" viewBox="0 0 230 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M41.3493 0C41.0497 0 40.4504 0.243398 40.4504 0.243398C40.3306 0.243398 1.01874 18.3727 1.01874 18.3727C0.359549 18.6769 0 19.1635 0 19.8327C0 20.6844 0.659192 21.3536 1.49816 21.3536C1.65797 21.3536 1.81776 21.2995 1.97755 21.2455C2.05745 21.2184 2.13735 21.1914 2.21725 21.1711C2.27718 21.1711 37.2743 5.96196 37.2743 5.96196L27.0269 27.924C26.8471 28.3498 26.7272 28.7757 26.7272 29.2016C26.7272 30.7225 27.9857 32 29.4839 32C29.7835 32 30.0831 31.9392 30.3827 31.8784C30.3827 31.8784 81.6199 17.2776 81.6799 17.2776C84.3766 16.6084 86.3541 14.1141 86.3541 11.1939C86.3541 7.66538 83.5376 4.86694 80.1218 4.86694C79.2229 4.86694 78.4439 5.04943 77.545 5.41445C77.4851 5.47529 36.0158 23.3612 36.0158 23.3612L43.1471 2.85933C43.267 2.55514 43.3269 2.3118 43.3269 2.00762C43.3269 0.91256 42.428 0 41.3493 0Z" fill="#F7052D"/><path d="M175.645 6.26584V28.8362H170.431V12.7145L159.285 28.8362H154.131L149.457 12.6537L142.026 28.8362H135.913L146.88 5.35333C147.659 3.83242 148.438 3.16321 149.936 3.16321C150.955 3.16321 152.034 3.77157 152.513 5.53583L157.307 23.1176L169.772 5.10993C170.851 3.58902 171.749 3.10237 172.948 3.16321C174.266 3.16321 175.585 4.07573 175.585 6.26584H175.645Z" fill="#F7052D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M113.382 7.48221C118.955 7.48221 120.513 10.7066 120.213 13.5659H120.153C119.854 16.3644 118.176 19.0412 113.322 20.3187L118.835 28.8359H112.782L107.868 20.8054H105.052L103.254 28.8359H97.7407L102.595 7.48221H113.382ZM109.846 17.2161C112.543 17.2161 114.46 15.9385 114.7 13.8701H114.76C114.94 11.8625 113.801 10.7674 111.584 10.7674H107.389L105.891 17.2161H109.846Z" fill="#F7052D"/><path d="M134.355 7.48221H128.781L123.867 28.8359H129.501L133.036 13.1401L134.355 7.48221Z" fill="#F7052D"/><path d="M219.75 24.8827C215.256 24.8219 212.679 22.1451 213.038 18.6774H213.098C213.578 14.0539 217.593 11.2554 223.166 11.2554C224.784 11.2554 226.941 11.377 228.859 11.9246L229.818 7.60514C228.2 7.17929 225.503 6.87513 223.765 6.87513C214.177 6.87513 208.064 11.5595 207.345 18.5557C206.686 24.7611 210.821 29.2021 219.69 29.2021C221.488 29.2021 222.986 29.0196 225.203 28.6546L226.282 23.9702C224.185 24.5786 222.447 24.8827 219.75 24.8827Z" fill="#F7052D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M199.015 9.67225C198.356 7.36046 197.038 6.75214 195.659 6.87382C194.82 6.93465 193.922 7.36053 192.963 8.69893L179.659 28.8358H185.112L187.989 24.3339H197.757L198.776 28.8358H204.109L198.955 9.67225H199.015ZM190.326 20.8054L195.36 12.9575L196.978 20.8054H190.326Z" fill="#F7052D"/></svg>`;
+
+  document.querySelectorAll('.footer').forEach(f => {
+    f.innerHTML =
+      `<div class="logo">${LOGO_SVG}</div>` +
+      `<div class="sep"></div>` +
+      `<div class="tag">Investigación · Churn en seguros Perú</div>`;
+  });
+
+  /* Wrapper de centrado vertical (excluye cover/section/panel-split) */
+  document.querySelectorAll('.slide').forEach(s => {
+    if (s.classList.contains('cover') || s.classList.contains('section')) return;
+    const title = s.querySelector('h2.h');
+    if (!title) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'slide-body';
+    let cur = title.nextElementSibling;
+    while (cur && !cur.classList.contains('pagenum') && !cur.classList.contains('footer')) {
+      const node = cur; cur = cur.nextElementSibling; wrapper.appendChild(node);
+    }
+    title.after(wrapper);
+  });
+
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const total = slides.length;
+  slides.forEach((s, i) => {
+    const p = s.querySelector('.pagenum');
+    if (p) p.textContent = String(i+1).padStart(2,'0') + ' / ' + String(total).padStart(2,'0');
+  });
+
+  let cur = 0;
+  window.show = (idx) => {
+    cur = Math.max(0, Math.min(total-1, idx));
+    slides.forEach((s, i) => s.classList.toggle('active', i === cur));
+  };
+
+  window.fit = () => {
+    const s = document.getElementById('stage');
+    const k = Math.min(window.innerWidth/1920, window.innerHeight/1080);
+    if (s) s.style.transform = `scale(${k})`;
+  };
+  window.addEventListener('resize', fit); fit();
+
+  addEventListener('keydown', e => {
+    if (['ArrowRight',' ','PageDown'].includes(e.key)) show(cur+1);
+    if (['ArrowLeft','PageUp'].includes(e.key)) show(cur-1);
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(total-1);
+    if (e.key === 'e' || e.key === 'E') document.body.contentEditable = (document.body.contentEditable !== 'true');
+  });
+  show(0);
+</script>
+</body>
+</html>
