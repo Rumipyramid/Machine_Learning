@@ -40,7 +40,7 @@ Promover el entendimiento y uso eficiente de los seguros de salud mediante guía
 
 | Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|
-| Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | Agencia devolvió la 1ª guía resumida AMI diagramada (1/4); roadmap reajustado −6 semanas; presentación 30/6; + flyers de venta | 5 🎟️ | Felipe, Alejandro | Roadmap reajustado −6 semanas | ↓ ~25–30% casos NPS «no recibí información» (est.) |
+| Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | Planes AMI diseñados; pendiente check de Producto y equipo médico sobre nombre, coberturas, red de clínicas y servicios finales | 5 🎟️ | Felipe, Alejandro | Roadmap reajustado −6 semanas | ↓ ~25–30% casos NPS «no recibí información» (est.) |
 | Q-3 | Guías resumidas — EPS (Top 4 cuentas + Multiempresa) | In Review | Top 4 cuentas: 2/4 entregadas, 2/4 en revisión; Multiempresa entregada; ajustes y presentación final | 3 🎟️ | Stef, Felipe, Alejandro | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS; ↓ «no recibí información» |
 
 ### EPIC-3 · Renovación AMI
@@ -55,7 +55,7 @@ Optimizar la captura de datos para conciliación de pagos B2B.
 
 | Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|
-| Q-4 | Optimización de Cobranzas B2B | In Progress | 12 entrevistas E2E + quick fix de Stefanie: el correo donde algunos proveedores enviaban los datos de conciliación estaba errado → corregido; sigue diseño de la nueva experiencia y pilotos | 4 🎟️ | Stef | Diseño aprobado sin explorar problemática 🚩 (mitigándose: quick fix del correo de conciliación) | Quick fix: correo de conciliación corregido → evita congelar dinero; apoya liberación de S/600k provisionados |
+| Q-4 | Optimización de Cobranzas B2B | In Progress | 12 entrevistas E2E + quick fix correo de conciliación corregido; priorización: conciliar facturas de empresas corporativas y gran empresa (mayor volumen de dinero); sigue diseño de nueva experiencia y pilotos | 4 🎟️ | Stef | Diseño aprobado sin explorar problemática 🚩 (mitigándose: quick fix del correo de conciliación) | Quick fix: correo de conciliación corregido → evita congelar dinero; apoya liberación de S/600k provisionados |
 
 
 ### EPIC-5 · Loyalty
