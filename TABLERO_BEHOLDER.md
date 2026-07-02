@@ -9,7 +9,7 @@
 | Métrica | Valor |
 |---|---|
 | Épicas | 10 |
-| Quests | 21 |
+| Quests | 22 |
 | Colaboradores (con fichas) | 4 |
 | Fichas comprometidas / capacidad | 33 / 32 |
 | Quests con riesgo alto 🚩 | 4 |
@@ -18,7 +18,7 @@
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
+| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15, Q-28 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
 | | | (+ Q-7, Q-12, Q-14 en «Diseñado») | | |
 
 > Nota: «Diseñado» es un estado intermedio del equipo (entre In Progress e In Review): Q-7, Q-12, Q-14.
@@ -42,6 +42,7 @@ Promover el entendimiento y uso eficiente de los seguros de salud mediante guía
 |---|---|---|---|---|---|---|---|
 | Q-1 | Guías resumidas — 4 nuevos productos AMI | In Progress | Planes AMI diseñados; pendiente check de Producto y equipo médico sobre nombre, coberturas, red de clínicas y servicios finales | 5 🎟️ | Felipe, Alejandro | Roadmap reajustado −6 semanas | ↓ ~25–30% casos NPS «no recibí información» (est.) |
 | Q-3 | Guías resumidas — EPS (Top 4 cuentas + Multiempresa) | In Review | Top 4 cuentas: 2/4 entregadas, 2/4 en revisión; Multiempresa entregada; ajustes y presentación final | 3 🎟️ | Stef, Felipe, Alejandro | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS; ↓ «no recibí información» |
+| Q-28 | Complemento digital para entendimiento y uso eficiente de seguros | In Progress | Espacio abierto con el frente digital para complementar la propuesta de entendimiento y uso eficiente de seguros | — | Stef, Felipe, Alejandro | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
 
 ### EPIC-3 · Renovación AMI
 Reducir churn y reclamos por cambios en la renovación.
@@ -141,4 +142,5 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 | Q-9 | Kit de Social Selling | +leads/agendamientos; 15–25% conversión lead→cita (est.) |
 | Q-10 | Bienestar 360 | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
 | Q-2 | Renovación AMI | +3–5 pp retención (est.); ↓ reclamos |
+| Q-28 | Complemento digital (guías) | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
 | Q-15 | Nuevos planes AMI + Seguro PT/P | Impacto por definir |
