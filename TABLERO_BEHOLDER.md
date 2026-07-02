@@ -1,16 +1,15 @@
 # 🐉 Tablero Beholder — Behavioral Design (RIMAC)
 
-**Estado del proyecto:** WIP  ·  **Ciclo/Sprint:** Roadmap Q3-2026 (Chapter SD1, 22/06–11/09)  ·  **Fecha:** 2026-06-23
+**Estado del proyecto:** WIP  ·  **Ciclo/Sprint:** Roadmap Q3-2026 (Chapter SD1, 22/06–11/09)  ·  **Fecha:** 2026-07-02
 
 > Sincronizado con la matriz Excel (`reportes/Status_Proyectos_Behavioral_Design.xlsx`) y el
-> Roadmap Q3-2026. El PDF del roadmap tenía el texto distorsionado: los campos inciertos van
-> marcados **(por confirmar)**. Las iniciativas nuevas (Q-15–Q-26) están **sin fichas asignadas**.
+> Roadmap Q3-2026. Quests Q-16, Q-19, Q-20 y Q-27 retirados del tablero (2026-07-02).
 
 ## 📊 Resumen
 | Métrica | Valor |
 |---|---|
 | Épicas | 10 |
-| Quests | 25 (14 previas + 10 nuevas del roadmap + 1 nueva) |
+| Quests | 21 |
 | Colaboradores (con fichas) | 4 |
 | Fichas comprometidas / capacidad | 33 / 32 |
 | Quests con riesgo alto 🚩 | 4 |
@@ -19,7 +18,7 @@
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26, Q-27 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15, Q-16, Q-19, Q-20 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
+| Q-21, Q-22, Q-23, Q-24, Q-25, Q-26 | — | Q-1, Q-4, Q-5, Q-6, Q-9, Q-11, Q-15 | Q-2, Q-3, Q-8 | Q-10, Q-13 |
 | | | (+ Q-7, Q-12, Q-14 en «Diseñado») | | |
 
 > Nota: «Diseñado» es un estado intermedio del equipo (entre In Progress e In Review): Q-7, Q-12, Q-14.
@@ -57,7 +56,7 @@ Optimizar la captura de datos para conciliación de pagos B2B.
 | Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|
 | Q-4 | Optimización de Cobranzas B2B | In Progress | 12 entrevistas E2E + quick fix de Stefanie: el correo donde algunos proveedores enviaban los datos de conciliación estaba errado → corregido; sigue diseño de la nueva experiencia y pilotos | 4 🎟️ | Stef | Diseño aprobado sin explorar problemática 🚩 (mitigándose: quick fix del correo de conciliación) | Quick fix: correo de conciliación corregido → evita congelar dinero; apoya liberación de S/600k provisionados |
-| Q-27 | Emisión de póliza | Backlog | Por definir — pendiente reunión con stakeholders | — | (por confirmar) | Por definir — pendiente reunión con stakeholders | Por definir |
+
 
 ### EPIC-5 · Loyalty
 Programa de lealtad del ecosistema + comunicaciones + empresas.
@@ -65,8 +64,6 @@ Programa de lealtad del ecosistema + comunicaciones + empresas.
 | Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|
 | Q-6 | Programa de lealtad — Piloto/MVP | In Progress | Piloto/MVP: definición de operativa, niveles y clientes (Meli) → envío de solicitud + push de participantes (Meli) → inicio y soporte del piloto (Alejandro) | 2 🎟️ | Meli, Alejandro | — | Permanencia base RIMAC; +20–25% retención (est.) |
-| Q-19 | Comunicaciones Loyalty (piezas y journeys) | In Progress | Diseño de piezas y journeys: Angio Hogar Total, Seguro Reciclar, Protección Múltiple / Venta Hospitalaria, Renovación / WhatsApp, Cobranza transversal | — | (por confirmar) | — | — |
-| Q-20 | Modelo de relacionamiento empresas + Propuesta de valor | In Progress | Taller de ideación (30/06 Lima · 02/07 provincia); modelos de relacionamiento (directo / brokers / corporativo); propuesta de valor (con Marketing) | — | (por confirmar) | — | — |
 
 ### EPIC-6 · Bienestar / Salud
 Hábitos saludables y pilotos de salud.
@@ -74,7 +71,6 @@ Hábitos saludables y pilotos de salud.
 | Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|
 | Q-10 | Bienestar 360 | Done | Implementado y en mantenimiento; playbook del programa entregado (Stefanie); acompañamiento a la fase de mantenimiento | 3 🎟️ | Stef | Presupuesto limitado para v2 | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
-| Q-16 | MBI – Vivo (piloto) | In Progress | Revisión de la propuesta del piloto; retomar conversaciones con Salud / Estar Bien para definir el segmento; presupuesto, aterrizaje, producción y lanzamiento | — | (por confirmar) | — | — |
 
 ### EPIC-7 · Nuevo seguro AMI
 Lanzamiento de nuevos planes AMI con materiales de venta y capacitación.
@@ -109,7 +105,7 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 
 ## 🎟️ Libro mayor de fichas (capacidad del equipo)
 > Regla: 8 de 10 fichas comprometidas. Las 2 restantes son reserva de overhead.
-> ⚠️ Las iniciativas nuevas (Q-15–Q-27) siguen **sin fichas asignadas**. El desglose de abajo refleja la asignación actual; confírmalo.
+> ⚠️ La iniciativa Q-15 sigue **sin fichas asignadas**. El desglose de abajo refleja la asignación actual; confírmalo.
 
 | Colaborador | Comprometidas (de 8) | Reserva (de 2) | Estado | Desglose por quest |
 |---|---|---|---|---|
@@ -131,7 +127,7 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 | Q-4 | Optimización Cobranzas B2B | Diseño aprobado sin explorar la problemática | Alta | Discovery hecho (12 entrevistas E2E) + quick fix hallado: correo de conciliación corregido. Validar hallazgos antes de diseñar |
 | Q-5 | Mensajes de primer contacto | Estrategia CUA aún en definición | Media | Cerrar definición CUA para confirmar desbloqueo |
 | Q-1 | Guías 4 productos AMI | Reajuste de roadmap −6 semanas | Media | Re-priorizar entregables con Estrella Damian / Soiky Bardales |
-| — | Capacidad del equipo | Stef ⛔ (11) y Alejandro 🔴 (9) + 12 iniciativas nuevas sin fichas | Alta | Re-asignar fichas antes de comprometer el Backlog Q3 |
+| — | Capacidad del equipo | Alejandro 🔴 (9) + iniciativas del Backlog sin fichas | Alta | Re-asignar fichas antes de comprometer el Backlog Q3 |
 
 ## 📈 Impacto
 | Clave | Quest | Impacto esperado |
@@ -145,4 +141,4 @@ Frameworks y herramientas para gestión del conocimiento BD (Backlog del Chapter
 | Q-9 | Kit de Social Selling | +leads/agendamientos; 15–25% conversión lead→cita (est.) |
 | Q-10 | Bienestar 360 | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
 | Q-2 | Renovación AMI | +3–5 pp retención (est.); ↓ reclamos |
-| Q-15–Q-26 | Iniciativas nuevas | Impacto por definir (recién entran al roadmap Q3) |
+| Q-15 | Nuevos planes AMI + Seguro PT/P | Impacto por definir |

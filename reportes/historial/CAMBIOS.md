@@ -1,10 +1,14 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-06-25T14:01:40 · Cambios vigentes: 12
+> Retención: 15 días · Última actualización: 2026-07-02T20:41:34 · Cambios vigentes: 16
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-02T20:41:34 | Alejandro | Q-16 | Estado | In Progress | Eliminado del tablero | normal | aplicado |
+| 2026-07-02T20:41:33 | Alejandro | Q-20 | Estado | In Progress | Eliminado del tablero | normal | aplicado |
+| 2026-07-02T20:41:32 | Alejandro | Q-19 | Estado | In Progress | Eliminado del tablero | normal | aplicado |
+| 2026-07-02T20:41:31 | Alejandro | Q-27 | Estado | Backlog | Eliminado del tablero | normal | aplicado |
 | 2026-06-25T13:56:51 | Alejandro | Q-1 | % Avance / Status | Diseño 1/4 (40%) | Agencia devolvió 1ª guía diagramada (50%) | normal | aplicado |
 | 2026-06-25T13:56:51 | Stefanie | Q-10 | Status | cierre de playbook pendiente | playbook B360 entregado | normal | aplicado |
 | 2026-06-25T13:56:51 | Stefanie | Q-4 | Status / Impacto | research 20% | quick fix correo de conciliación (35%) | normal | aplicado |
