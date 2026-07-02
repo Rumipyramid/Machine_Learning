@@ -30,7 +30,7 @@ Fortalecer la FFVV de Vida Individual: agendamiento, formación y generación de
 
 | Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|
-| Q-5 | Mensajes de primer contacto | In Progress | Estrategia de primer contacto alineado a CUA (en definición → desbloqueándose); speeches de primer contacto | 1 🎟️ | Alejandro | Estrategia CUA en definición (antes bloqueado) | +20–30% agendamiento de citas (est.) |
+| Q-5 | Mensajes de primer contacto | In Progress | Mesa de trabajo con Legal, Cumplimiento, CUA y FFVV para definir estrategia viable de contacto a no clientes sin CUA; speeches de primer contacto | 1 🎟️ | Alejandro | Estrategia CUA en definición (antes bloqueado) | +20–30% agendamiento de citas (est.) |
 | Q-7 | Universidad Vida | Diseñado | Asistencia a onboarding de FFVV actual; contenido listo, falta diseño instruccional (Learning) | 4 🎟️ | Melissa, Alejandro | Capacidad limitada equipo learning | −25–40% ramp-up asesores jr (est.) |
 | Q-8 | Copiloto del Asesor: AIDA — Bot trainer + reportería | In Review | Prototipo diseñado y validada usabilidad y valoración de usuarios; en track de Back to Basics / Venta Vida | 6 🎟️ | Felipe, Melissa | AIDA no cumple el task; comité de priorización; 3 herramientas en paralelo 🚩 | +efectividad (puntaje del bot) y CX; ramp −25–40% (est.). Ahorro proyectado S/1.8M |
 | Q-9 | Kit de Social Selling | In Progress | Estrategia y contenido del Social Selling; en track de Back to Basics / Venta Vida | 3 🎟️ | Melissa | Recursos de contenido + falta incentivos/monitoreo 🚩 | +leads/agendamientos; 15–25% conversión lead→cita (est.) |
