@@ -8,6 +8,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | Ruta | Qué es | Uso / notas |
 |---|---|---|
 | `Proyecto_ML_1.ipynb` | Notebook principal de ML | Origen Colab |
+| `buenas-mierdas/` | Altar/archivo 3D web "Buenas Mierdas" (arte, web vernácula, hauntología) | Vite+React+R3F; `cd buenas-mierdas && npm install && npm run dev`; ver su `README.md` |
 | `Self driving car/` | Simulación de auto autónomo (Pygame + red neuronal) | Entrada: `self driving car.py`; config en `config_file.txt` |
 | `research/seguros_comportamiento_mundo_peru.md` | Investigación base: comportamiento/percepción de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS… |
 | `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro | Derivado de /seeker; alineado a glosario SBS |
