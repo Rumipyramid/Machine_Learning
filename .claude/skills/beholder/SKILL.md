@@ -131,6 +131,10 @@ Nombre del proyecto, ciclo/sprint y fecha (usa la de hoy si no la dan).
 **Paso 2 — Roster de colaboradores.**
 Quiénes participan. Recuérdale el contrato: cada uno tiene 10 fichas, 8 comprometibles
 + 2 de reserva. Anota la lista; la usarás para el libro mayor.
+Registra también el **nivel de expertise** de cada miembro (junior / semi senior / senior) en la
+config del despliegue (`reportes/beholder.config.md`) y úsalo en toda propuesta de distribución
+de carga: el junior no lleva solo entregables críticos ni la mayor carga total; los seniors
+acompañan lo crítico (pairing) y cargan la mayor amplitud.
 
 **Paso 3 — Épicas.**
 Qué grandes frentes hay. Una línea por épica.

@@ -9,6 +9,23 @@
 - **Repositorio de historial (15 días):** `reportes/historial/` (`CAMBIOS.md` + `CAMBIOS.csv`)
 - **Retención del historial:** **15 días**
 
+### Equipo y nivel de expertise
+> El Beholder usa este roster al proponer distribuciones de carga: el junior no lleva solo
+> entregables críticos ni la mayor carga total; los seniors acompañan lo crítico.
+
+| Miembro | Nivel de expertise | Nota |
+|---|---|---|
+| Alejandro | **Senior** | Owner del tablero y aprobador de fechas |
+| Melissa | **Semi senior** | — |
+| Stefanie | **Semi senior** | — |
+| Felipe | **Junior** | 6 meses en el equipo |
+
+### Reglas de la economía local (monedas 🪙 — Q3-2026)
+1. Las monedas miden el **esfuerzo del trimestre** por persona.
+2. **Concurrencia:** nadie usa más de **8 monedas al mismo tiempo** (suma de iniciativas cuyas fechas se solapan).
+3. **Reparto igualitario:** las monedas de una iniciativa se dividen **en partes iguales** entre los involucrados (50/50, 33/33/33).
+4. **Solo enteros:** nadie puede tener **media moneda** asignada. Si el total de la iniciativa no divide en enteros, se redondea al múltiplo válido más cercano (en empate, hacia abajo, para no inflar esfuerzo).
+
 ### Campos controlados (requieren aprobación del owner)
 - Fechas proyectadas: **Fecha de entrega**, fecha de cierre, sprint asignado, hitos.
 

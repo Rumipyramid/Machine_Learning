@@ -41,3 +41,10 @@ timestamp,autor,clave,campo,antes,despues,tipo,estado
 2026-07-03T21:39:39,Alejandro,Tablero,Columna nueva,—,Intervención conductual: descripción de la palanca de comportamiento de cada iniciativa,normal,aplicado
 2026-07-03T21:39:39,Beholder,Alerta,Código rojo,—,"🚨 Stefanie pico 11 monedas simultáneas (09-17/07); acción propuesta: mover Q-23 al 21/07, pendiente de aprobación del owner",normal,aplicado
 2026-07-03T21:39:39,Alejandro,Skill,Beholder v1.4.0,Riesgos con severidad simple,Dimensionamiento probabilidad × impacto + códigos de alerta amarillo/rojo con disparadores y protocolo,normal,aplicado
+2026-07-03T21:53:44,Alejandro,Economía,Regla de enteros,"Se permitían medias monedas (1.5, 1.3)",Nadie puede tener media moneda; totales se redondean al múltiplo válido más cercano (empate: abajo),normal,aplicado
+2026-07-03T21:53:44,Alejandro,Q-37/Q-13/Q-24/Q-25,Redistribución 50/50,F4; F3; S5; S3,"F2·A2; F1·M1; S2·M2; S1·F1 — totales: A21, M21, S20, F19 (81 🪙)",normal,aplicado
+2026-07-03T21:53:44,Alejandro,Q-2/Q-26,Ajuste por regla de enteros,Q-2: 1.5·1.5 (3); Q-26: 1.3·1.3·1.3 (4),Q-2: 1·1 (2); Q-26: 1·1·1 (3),normal,aplicado
+2026-07-03T21:53:44,Alejandro,Q-23,Fecha de inicio,09/07/2026,21/07/2026 — apaga código rojo de Stefanie (pico 11 → 8),fecha,aprobada
+2026-07-03T21:53:44,Alejandro,Q-5,Fecha de inicio,08/07/2026,09/07/2026 — pico de Alejandro dentro de la regla,fecha,aprobada
+2026-07-03T21:53:44,Beholder,Alerta,Código rojo,🚨 Stefanie pico 11 (09-17/07),RESUELTO: redistribución + fecha Q-23 aprobada; todos los picos ≤ 8,normal,aplicado
+2026-07-03T21:53:44,Alejandro,Config,Nivel de expertise,—,Roster en beholder.config.md: Alejandro Senior; Melissa y Stefanie Semi senior; Felipe Junior (6 meses),normal,aplicado

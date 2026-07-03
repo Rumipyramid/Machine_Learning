@@ -6,7 +6,8 @@
 
 | Fecha/hora | Quién pide | Quest | Fecha anterior | Fecha nueva | Motivo | Estado |
 |---|---|---|---|---|---|---|
-| — | — | — | — | — | — | (sin alertas pendientes) |
+| 2026-07-03 | Beholder (propuesta) | Q-23 Diseño de piloto | Inicio 09/07/2026 | Inicio 21/07/2026 | Apagar código rojo: pico de Stefanie 11 → 8 monedas simultáneas | APROBADA (por Alejandro, 2026-07-03) |
+| 2026-07-03 | Beholder (propuesta) | Q-5 UV Modelo de competencias | Inicio 08/07/2026 | Inicio 09/07/2026 | Bajar pico de Alejandro 8.5 → dentro de la regla de 8 | APROBADA (por Alejandro, 2026-07-03) |
 
 ---
 

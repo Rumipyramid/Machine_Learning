@@ -3,6 +3,14 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.4.1] — 2026-07-03
+### Añadido
+- **Roster con nivel de expertise** en la config del despliegue (`beholder.config.md`): el
+  Beholder lo registra en el Paso 2 y lo usa en propuestas de distribución de carga (el junior
+  no lleva solo entregables críticos; los seniors acompañan lo crítico).
+- Config: **reglas de la economía local** (esfuerzo del trimestre, ≤ 8 simultáneas, reparto
+  igualitario 50/50 y **solo monedas enteras** — sin medias monedas).
+
 ## [1.4.0] — 2026-07-03
 ### Añadido
 - **Dimensionamiento de riesgos y códigos de alerta:** matriz probabilidad × impacto que asigna
