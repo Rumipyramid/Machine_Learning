@@ -11,8 +11,9 @@ description: >-
   tablero ordenado. Dispárate aunque el usuario no diga "Jira" ni "tablero": si
   describe en qué anda un proyecto y quiere estructurarlo, este skill aplica.
   También conduce actualizaciones conversacionales de los pendientes del equipo, con
-  control de cambios de fecha (requieren aprobación del owner) y registro de los
-  cambios de los últimos 15 días.
+  control de cambios de fecha (requieren aprobación del owner), registro de los
+  cambios de los últimos 15 días y dimensionamiento de riesgos con códigos de alerta
+  (⚠️ código amarillo / 🚨 código rojo).
 ---
 
 # 🐉 Beholder — Tablero de proyecto estilo Jira con economía de fichas
@@ -219,6 +220,52 @@ del equipo; el historial completo siempre queda en el git log.
 
 ---
 
+## Dimensionamiento de riesgos y códigos de alerta
+
+El Beholder no solo lista riesgos: los **dimensiona** y **dispara alertas** cuando corresponde.
+
+### 1) Dimensiona cada riesgo
+
+Todo riesgo del registro se califica en dos ejes —**Probabilidad** (Alta/Media/Baja) e
+**Impacto** (Alto/Medio/Bajo)— y recibe un código con esta matriz:
+
+| Probabilidad \ Impacto | Alto | Medio | Bajo |
+|---|---|---|---|
+| **Alta** | 🚨 Rojo | 🚨 Rojo | ⚠️ Amarillo |
+| **Media** | 🚨 Rojo | ⚠️ Amarillo | 🟢 Verde |
+| **Baja** | ⚠️ Amarillo | 🟢 Verde | 🟢 Verde |
+
+Una **mitigación activa y creíble** (en ejecución, no solo enunciada) **baja el código un
+nivel** (rojo → amarillo, amarillo → verde); anótalo en la columna de mitigación.
+
+### 2) Disparadores automáticos (independientes de la matriz)
+
+**🚨 Código rojo**, siempre que:
+- La capacidad de alguien queda **⛔ inválida** (o su pico viola la regla de capacidad vigente).
+- Un quest de **ruta crítica está bloqueado**.
+- Una **fecha controlada venció** o se cambió **sin aprobación del owner**.
+- Un riesgo alto 🚩 **sin mitigación** está a **≤ 5 días hábiles** de su entrega.
+
+**⚠️ Código amarillo**, siempre que:
+- Alguien queda **🔴 sobreasignado**.
+- Hay **fichas/monedas asignadas sin programar** (sin fechas).
+- Una entrega está a **≤ 7 días** sin avance reportado.
+- Una **dependencia externa** sigue sin confirmarse.
+
+### 3) Protocolo de alerta
+
+- **En cada render o actualización**, evalúa todos los riesgos con la matriz y revisa los
+  disparadores automáticos.
+- Si hay códigos activos, el tablero lleva la sección **"🚨 Alertas activas"** inmediatamente
+  después del Resumen: código, motivo, responsable y acción propuesta.
+- En el chat, tras la apertura obligatoria, **anuncia primero los códigos activos** (rojo antes
+  que amarillo), antes de cualquier otro tema.
+- Todo **código rojo** además: (a) se registra en el historial (`registrar_cambio.py`), y
+  (b) cuando hay repo, se commitea/pushea de inmediato para que el equipo lo vea. Un rojo
+  **no se cierra** hasta que el owner decida (mitigar, aceptar o replanificar).
+
+---
+
 ## Plantilla de salida
 
 Usa exactamente esta estructura. Rellena todo; si un dato no existe, escribe `—`
@@ -247,6 +294,12 @@ Usa exactamente esta estructura. Rellena todo; si un dato no existe, escribe `�
 | Fichas comprometidas / capacidad | {X} / {n_colab × 8} |
 | Quests con riesgo alto 🚩 | {n} |
 | Alertas de capacidad (sobreasignados 🔴) | {n} |
+| Códigos de alerta | {n 🚨 rojos · n ⚠️ amarillos, o "🟢 sin códigos activos"} |
+
+## 🚨 Alertas activas
+{Solo si existen códigos amarillo/rojo; si no, omite la sección. Rojos primero.}
+- 🚨 **Código rojo — {motivo}:** {detalle · responsable · acción propuesta}
+- ⚠️ **Código amarillo — {motivo}:** {detalle}
 
 ## 🗂️ Tablero por estado
 > Columnas estilo Jira. Cada quest aparece bajo su estado actual.
@@ -280,9 +333,9 @@ Usa exactamente esta estructura. Rellena todo; si un dato no existe, escribe `�
 - {Si nadie está sobreasignado, escribe: "Sin alertas: nadie supera sus 8 fichas comprometidas."}
 
 ## 🚩 Registro de riesgos
-| Clave | Quest | Riesgo | Severidad | Mitigación sugerida |
-|---|---|---|---|---|
-| Q-x | {nombre} | {riesgo} | {Alta/Media/Baja} | {mitigación} |
+| Clave | Quest | Riesgo | Probabilidad | Impacto | Código | Mitigación sugerida |
+|---|---|---|---|---|---|---|
+| Q-x | {nombre} | {riesgo} | {Alta/Media/Baja} | {Alto/Medio/Bajo} | {🚨 Rojo / ⚠️ Amarillo / 🟢 Verde} | {mitigación} |
 
 ## 📈 Impacto
 | Clave | Quest | Impacto esperado |

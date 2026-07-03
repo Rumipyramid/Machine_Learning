@@ -3,6 +3,16 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.4.0] — 2026-07-03
+### Añadido
+- **Dimensionamiento de riesgos y códigos de alerta:** matriz probabilidad × impacto que asigna
+  🚨 **código rojo** / ⚠️ **código amarillo** / 🟢 verde a cada riesgo, con disparadores
+  automáticos (⛔ capacidad, ruta crítica bloqueada, fecha controlada vencida o sin aprobación,
+  🔴 sobreasignación, monedas sin programar, entregas próximas sin avance). Protocolo: sección
+  **"Alertas activas"** después del Resumen, anuncio de códigos al abrir sesión, y registro +
+  push inmediato de todo código rojo. Una mitigación activa baja el código un nivel.
+- Registro de riesgos con columnas **Probabilidad | Impacto | Código** (reemplaza "Severidad").
+
 ## [1.3.0] — 2026-07-03
 ### Añadido
 - Columnas obligatorias **"Fecha de inicio"** y **"Fecha de cierre"** en todas las tablas de

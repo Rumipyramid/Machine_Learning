@@ -1,10 +1,14 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-03T21:23:23 · Cambios vigentes: 38
+> Retención: 15 días · Última actualización: 2026-07-03T21:39:39 · Cambios vigentes: 42
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-03T21:39:39 | Alejandro | Economía | Regla 50/50 | Repartos libres por iniciativa | Las monedas de una iniciativa se reparten siempre en partes iguales entre los involucrados | normal | aplicado |
+| 2026-07-03T21:39:39 | Alejandro | Tablero | Columna nueva | — | Intervención conductual: descripción de la palanca de comportamiento de cada iniciativa | normal | aplicado |
+| 2026-07-03T21:39:39 | Beholder | Alerta | Código rojo | — | 🚨 Stefanie pico 11 monedas simultáneas (09-17/07); acción propuesta: mover Q-23 al 21/07, pendiente de aprobación del owner | normal | aplicado |
+| 2026-07-03T21:39:39 | Alejandro | Skill | Beholder v1.4.0 | Riesgos con severidad simple | Dimensionamiento probabilidad × impacto + códigos de alerta amarillo/rojo con disparadores y protocolo | normal | aplicado |
 | 2026-07-03T21:23:23 | Alejandro | Tablero | Otros perfiles | Service Designer / Equipo de Product Designers | Service Design / Product Design; Q-28 pasa a Service Design | normal | aplicado |
 | 2026-07-03T21:23:23 | Alejandro | Q-11 | Estado | Backlog (Plantillas primer contacto sin CUA, Felipe 2 🪙) | Eliminado del tablero | normal | aplicado |
 | 2026-07-03T21:08:12 | Alejandro | Tablero | Formato monedas | Total + desglose: 4 🪙 (A:2 · F:2) | Una cifra por persona: 2 🪙 2 🪙 (orden de la columna BDs) | normal | aplicado |
