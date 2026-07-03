@@ -1,10 +1,12 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-03T21:08:12 · Cambios vigentes: 36
+> Retención: 15 días · Última actualización: 2026-07-03T21:23:23 · Cambios vigentes: 38
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-03T21:23:23 | Alejandro | Tablero | Otros perfiles | Service Designer / Equipo de Product Designers | Service Design / Product Design; Q-28 pasa a Service Design | normal | aplicado |
+| 2026-07-03T21:23:23 | Alejandro | Q-11 | Estado | Backlog (Plantillas primer contacto sin CUA, Felipe 2 🪙) | Eliminado del tablero | normal | aplicado |
 | 2026-07-03T21:08:12 | Alejandro | Tablero | Formato monedas | Total + desglose: 4 🪙 (A:2 · F:2) | Una cifra por persona: 2 🪙 2 🪙 (orden de la columna BDs) | normal | aplicado |
 | 2026-07-03T21:08:12 | Alejandro | Tablero | Columna nueva | — | Otros perfiles: Service Designer en todo excepto EPS/Backlog/Arquitectura; Product Designers solo en Q-38 | normal | aplicado |
 | 2026-07-03T20:36:32 | Alejandro | Tablero | Columnas nuevas | Fechas dentro del status | Columnas fijas 'Fecha de inicio' y 'Fecha de cierre' en todas las tablas (skill v1.3.0) | normal | aplicado |
