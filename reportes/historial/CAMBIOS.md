@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-03T20:18:14 · Cambios vigentes: 32
+> Retención: 15 días · Última actualización: 2026-07-03T20:22:27 · Cambios vigentes: 33
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-03T20:22:27 | Alejandro | EPIC-2 | Épica | Guías resumidas y AMI Relanzamiento separadas (typo) | Fusionadas: AMI Relanzamiento contiene las guías resumidas (Q-16–Q-18); placeholder Q-19 eliminado | normal | aplicado |
 | 2026-07-03T20:18:14 | Alejandro | EPIC-5 | Épica nueva | — | Spark: Vivo Pack (3 iniciativas; Stefanie, Melissa, Alejandro) | normal | aplicado |
 | 2026-07-03T20:18:14 | Alejandro | EPIC-7 | Convenios | Backlog sin iniciativas | Activo: 3 iniciativas con fechas (20/07 → 21/08) | normal | aplicado |
 | 2026-07-03T20:18:14 | Alejandro | EPIC-6 | Bienestar 360 | Done | Reabierto: status + seguimiento hasta 17/07 | normal | aplicado |
