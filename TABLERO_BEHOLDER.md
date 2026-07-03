@@ -136,16 +136,17 @@ Frameworks y herramientas del Chapter (se conservan sin cambios).
 | Q-41 | Modelo de cambio de hábitos | Done | Terminado y validado | Framework interno: modelo de formación y sostenimiento de hábitos para iniciativas de salud/bienestar | — | — | — | Todos | — | — | Framework para iniciativas de cambio de hábitos |
 | Q-42 | Skill para desk research con rigurosidad científica | Diseñado | Terminado, por validar | Capacidad interna: investigación de escritorio con estándar de evidencia | — | — | — | Todos | — | — | Agilidad y calidad de la investigación de escritorio |
 
-### EPIC-9 · Backlog Q3 (previas)
-Iniciativas del Chapter SD1 sin sprint asignado (se conservan en backlog).
+### EPIC-9 · Repositorio de iniciativas en Backlog
+Repositorio de iniciativas aún no activadas. Su estado es solo **Backlog**: entran aquí sin
+fechas, monedas ni perfiles, y salen hacia una épica activa cuando se priorizan.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Q-43 | RIMAC Wrap (tangibilización pre-renovación) | Backlog | Backlog del Chapter SD1 | Por definir (hipótesis: tangibilizar el valor usado del seguro antes de renovar — efecto dotación) | — | — | — | (por confirmar) | — | — | — |
-| Q-44 | Recordatorio multicanal (SMS/WhatsApp/Push) | Backlog | Backlog del Chapter SD1 | Por definir (hipótesis: prompts oportunos multicanal contra la inercia y el olvido) | — | — | — | (por confirmar) | — | — | — |
-| Q-45 | Sistema de incentivos orientados a la experiencia | Backlog | Backlog del Chapter SD1 | Por definir | — | — | — | (por confirmar) | — | — | — |
-| Q-46 | Vida Individual — Experiencia Postventa | Backlog | Backlog del Chapter SD1 (sponsor Diana Riofrío) | Por definir | — | — | — | (por confirmar) | — | Sponsor: Diana Riofrío | — |
-| Q-47 | Ahorro Salud — Derivación eficiente MER | Backlog | Backlog del Chapter SD1 | Por definir | — | — | — | (por confirmar) | — | — | — |
+| Q-43 | RIMAC Wrap (tangibilización pre-renovación) | Backlog | Backlog | Por definir (hipótesis: tangibilizar el valor usado del seguro antes de renovar — efecto dotación) | — | — | — | (por confirmar) | — | — | — |
+| Q-44 | Recordatorio multicanal (SMS/WhatsApp/Push) | Backlog | Backlog | Por definir (hipótesis: prompts oportunos multicanal contra la inercia y el olvido) | — | — | — | (por confirmar) | — | — | — |
+| Q-45 | Sistema de incentivos orientados a la experiencia | Backlog | Backlog | Por definir | — | — | — | (por confirmar) | — | — | — |
+| Q-46 | Vida Individual — Experiencia Postventa | Backlog | Backlog | Por definir | — | — | — | (por confirmar) | — | Sponsor: Diana Riofrío | — |
+| Q-47 | Ahorro Salud — Derivación eficiente MER | Backlog | Backlog | Por definir | — | — | — | (por confirmar) | — | — | — |
 
 ## 🪙 Libro mayor de monedas (capacidad del equipo)
 > **Economía Q3:** las monedas miden el esfuerzo total del trimestre por persona.
