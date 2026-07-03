@@ -41,7 +41,7 @@ de Diseño de Experiencias de Rimac, y exportarlas a PDF vectorial de alta fidel
 - **Color:** lienzo blanco; lavanda `#ECEEFC` solo para section dividers. Tinta `#0B1620` para titulares. Rojo de marca `#F7052D` solo para logo, borde de callouts y celdas enfáticas — nunca sobre titulares ni cuerpo.
 - **El gradiente cálido** (`#FF7A00 → #F7052D → #C8128B`) es el único gesto decorativo: aplícalo con `background-clip:text` a **una sola frase clave por título** (2–3 palabras). Nunca a un título completo ni al cuerpo.
 - **Casi plano:** sin sombras salvo la del stage. La profundidad viene del tono de fondo de las cards (`#F5F6FB`, `#ECEEFC`, etc.), no de sombras ni hover.
-- **Titulares:** enunciados completos, con punto final. Tono confiado, no comercial.
+- **Titulares:** enunciados completos, sin punto final. Tono confiado, no comercial.
 - **Cards de igual altura:** deja que el grid lo resuelva; nunca uses `flex:1` en grids.
 
 > Para componentes (cards, callouts, num-list, tablas comparativas, diagramas) y
@@ -196,5 +196,5 @@ node ~/.claude/skills/presentaciones-rimac/scripts/export_pdf.js  entrada.html  
 - [ ] Logo inyectado vía JS en cada footer (no duplicado en el HTML).
 - [ ] Pagenum dinámico (no hardcodeado).
 - [ ] Sin sombras de card ni `flex:1` en grids.
-- [ ] Titulares con punto final.
+- [ ] Titulares sin punto final.
 - [ ] PDF exportado y revisado visualmente.

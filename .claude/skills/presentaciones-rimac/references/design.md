@@ -161,7 +161,7 @@ Sobriedad editorial con calidez selectiva. El sistema evoca una página impresa 
 
 Audiencia: cualquiera. El mismo deck lee bien en un comité interno, en un foro público, o circulando como PDF. La estética es confiada sin ser comercial; estructurada sin ser corporativa.
 
-Tono en slides: declarativo, oraciones completas, punto final en titulares. El gradiente es el único gesto decorativo del sistema — se usa para destacar una sola frase por slide. Todo lo demás retrocede para que ese gesto aterrice.
+Tono en slides: declarativo, oraciones completas, sin punto final en titulares. El gradiente es el único gesto decorativo del sistema — se usa para destacar una sola frase por slide. Todo lo demás retrocede para que ese gesto aterrice.
 
 ---
 
@@ -392,7 +392,7 @@ slides.forEach((s, i) => {
 
 **Do:**
 - Aplicar el gradiente a una frase por título — la frase que carga la tesis del slide.
-- Cerrar cada título con punto. Es editorial, no casual.
+- No cerrar los títulos con punto final.
 - Setear el page number dinámicamente desde JS, nunca hardcoded.
 - Inyectar el logo desde una constante SVG única; referenciarla en cada footer.
 - Centrar contenido verticalmente usando el wrapper `.slide-body`.
@@ -568,7 +568,7 @@ Modo edición flip `contentEditable` en titulares, párrafos, tablas y elementos
 
 Decks cortos pueden saltar los section dividers por completo.
 
-**Lenguaje en titulares:** enunciados completos con punto final; gradiente en la palabra clave; evitar siglas.
+**Lenguaje en titulares:** enunciados completos sin punto final; gradiente en la palabra clave; evitar siglas.
 
 **Lenguaje en cuerpos:** tono confiado pero no comercial; decimal con coma; rangos con guión-em (5–15); comillas curvas españolas en citas literales; negritas para subrayar el verbo o sustantivo clave.
 
