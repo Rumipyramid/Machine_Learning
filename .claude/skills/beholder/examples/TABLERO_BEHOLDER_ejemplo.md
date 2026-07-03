@@ -29,18 +29,18 @@
 ### EPIC-1 · Flujo de bienvenida
 Reducir la fricción del primer ingreso y activar al usuario en el día 1.
 
-| Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|
-| Q-1 | Rediseñar pantalla de registro | In Progress | 8 🎟️ | Mara, Cassian | Dependencia con Legal 🚩 | −20% abandono en registro |
-| Q-2 | Email de bienvenida conductual | To Do | 3 🎟️ | Mara | Deliverability / spam | +10% activación en D1 |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Fichas | Behavioral designers | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|
+| Q-1 | Rediseñar pantalla de registro | In Progress | Maqueta lista; pendiente revisión de Legal | 15/06/2026 | 03/07/2026 | 8 🎟️ | Mara, Cassian | Dependencia con Legal 🚩 | −20% abandono en registro |
+| Q-2 | Email de bienvenida conductual | To Do | Copy en borrador; falta setup de dominio | 06/07/2026 | 10/07/2026 | 3 🎟️ | Mara | Deliverability / spam | +10% activación en D1 |
 
 ### EPIC-2 · Activación
 Llevar al usuario a su primer "momento de valor" en la semana 1.
 
-| Clave | Quest | Estado | Fichas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|
-| Q-3 | Checklist de primeros pasos | In Progress | 4 🎟️ | Cassian | — | +8% retención semana 1 |
-| Q-4 | Panel de analítica de onboarding | In Review | 2 🎟️ | Cassian | Datos incompletos por paso | Visibilidad de drop-off por paso |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Fichas | Behavioral designers | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|
+| Q-3 | Checklist de primeros pasos | In Progress | 3 de 5 pasos instrumentados | 22/06/2026 | 08/07/2026 | 4 🎟️ | Cassian | — | +8% retención semana 1 |
+| Q-4 | Panel de analítica de onboarding | In Review | Dashboard armado; validando datos por paso | 10/06/2026 | — | 2 🎟️ | Cassian | Datos incompletos por paso | Visibilidad de drop-off por paso |
 
 ## 🎟️ Libro mayor de fichas (capacidad del equipo)
 > Regla: 8 de 10 fichas comprometidas. Las 2 restantes son reserva de overhead.

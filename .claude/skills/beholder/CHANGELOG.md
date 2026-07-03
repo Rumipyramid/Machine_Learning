@@ -3,6 +3,13 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.3.0] — 2026-07-03
+### Añadido
+- Columnas obligatorias **"Fecha de inicio"** y **"Fecha de cierre"** en todas las tablas de
+  detalle del tablero (`dd/mm/aaaa`; `—` si el quest no está programado). Son los campos
+  controlados de la gobernanza: cambiarlas requiere aprobación del owner. Plantilla y ejemplo
+  actualizados.
+
 ## [1.2.2] — 2026-06-23
 ### Cambiado
 - Apertura simplificada: la pregunta obligatoria ahora **incluye el link al tablero** en el mismo

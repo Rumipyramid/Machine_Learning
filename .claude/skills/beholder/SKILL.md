@@ -228,6 +228,10 @@ Usa exactamente esta estructura. Rellena todo; si un dato no existe, escribe `�
 > `In Progress`, `In Review`, `Done`). `Status del proyecto` = la **descripción real** de en qué va
 > el quest (p. ej. "Maqueta lista; pendiente revisión de Legal"). Si hay matriz Excel, este campo
 > es el mismo que su columna *Status (detalle)*.
+>
+> **Columnas de fechas (siempre presentes):** toda tabla de detalle lleva **`Fecha de inicio`** y
+> **`Fecha de cierre`** (formato `dd/mm/aaaa`; si el quest no está programado, `—`). Son los
+> **campos controlados** de la *Gobernanza*: cambiarlas requiere aprobación del owner.
 
 ```markdown
 # 🐉 Tablero Beholder — {Nombre del proyecto}
@@ -256,10 +260,10 @@ Usa exactamente esta estructura. Rellena todo; si un dato no existe, escribe `�
 ### EPIC-1 · {Nombre de la épica}
 {una línea de objetivo/contexto de la épica, si aplica}
 
-| Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|
-| Q-1 | {nombre} | {estado} | {status descriptivo del proyecto} | {n} 🎟️ | {BDs} | {riesgo} {🚩 si alto} | {impacto} |
-| Q-2 | … | … | … | … | … | … | … |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Fichas | Behavioral designers | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|
+| Q-1 | {nombre} | {estado} | {status descriptivo del proyecto} | {dd/mm/aaaa o —} | {dd/mm/aaaa o —} | {n} 🎟️ | {BDs} | {riesgo} {🚩 si alto} | {impacto} |
+| Q-2 | … | … | … | … | … | … | … | … | … |
 
 ### EPIC-2 · {Nombre de la épica}
 …
@@ -297,9 +301,9 @@ Salida (extracto):
 
 ```markdown
 ### EPIC-1 · Flujo de bienvenida
-| Clave | Quest | Estado | Status del proyecto | Fichas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|
-| Q-1 | Rediseñar pantalla de registro | In Progress | Maqueta lista; pendiente revisión de Legal | 8 🎟️ | Mara, Cassian | Dependencia con Legal 🚩 | −20% abandono en registro |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Fichas | Behavioral designers | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|
+| Q-1 | Rediseñar pantalla de registro | In Progress | Maqueta lista; pendiente revisión de Legal | 01/07/2026 | 15/07/2026 | 8 🎟️ | Mara, Cassian | Dependencia con Legal 🚩 | −20% abandono en registro |
 
 ## 🎟️ Libro mayor de fichas
 | Colaborador | Comprometidas (de 8) | Reserva (de 2) | Estado | Desglose por quest |
