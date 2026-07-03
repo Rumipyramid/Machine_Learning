@@ -49,3 +49,4 @@ timestamp,autor,clave,campo,antes,despues,tipo,estado
 2026-07-03T21:53:44,Beholder,Alerta,Código rojo,🚨 Stefanie pico 11 (09-17/07),RESUELTO: redistribución + fecha Q-23 aprobada; todos los picos ≤ 8,normal,aplicado
 2026-07-03T21:53:44,Alejandro,Config,Nivel de expertise,—,Roster en beholder.config.md: Alejandro Senior; Melissa y Stefanie Semi senior; Felipe Junior (6 meses),normal,aplicado
 2026-07-03T22:20:09,Alejandro,EPIC-9,Épica,"Backlog Q3 (previas), status 'Backlog del Chapter SD1'",Repositorio de iniciativas en Backlog; estado/status: solo 'Backlog',normal,aplicado
+2026-07-03T22:22:50,Alejandro,Q-40/Q-42,Estado,Diseñado (estado intermedio),Done — el estado 'Diseñado' se elimina del tablero,normal,aplicado

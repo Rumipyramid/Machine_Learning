@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-03T22:20:09 · Cambios vigentes: 50
+> Retención: 15 días · Última actualización: 2026-07-03T22:22:50 · Cambios vigentes: 51
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-03T22:22:50 | Alejandro | Q-40/Q-42 | Estado | Diseñado (estado intermedio) | Done — el estado 'Diseñado' se elimina del tablero | normal | aplicado |
 | 2026-07-03T22:20:09 | Alejandro | EPIC-9 | Épica | Backlog Q3 (previas), status 'Backlog del Chapter SD1' | Repositorio de iniciativas en Backlog; estado/status: solo 'Backlog' | normal | aplicado |
 | 2026-07-03T21:53:44 | Alejandro | Economía | Regla de enteros | Se permitían medias monedas (1.5, 1.3) | Nadie puede tener media moneda; totales se redondean al múltiplo válido más cercano (empate: abajo) | normal | aplicado |
 | 2026-07-03T21:53:44 | Alejandro | Q-37/Q-13/Q-24/Q-25 | Redistribución 50/50 | F4; F3; S5; S3 | F2·A2; F1·M1; S2·M2; S1·F1 — totales: A21, M21, S20, F19 (81 🪙) | normal | aplicado |
