@@ -1,10 +1,12 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-03T20:36:32 · Cambios vigentes: 34
+> Retención: 15 días · Última actualización: 2026-07-03T21:08:12 · Cambios vigentes: 36
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-03T21:08:12 | Alejandro | Tablero | Formato monedas | Total + desglose: 4 🪙 (A:2 · F:2) | Una cifra por persona: 2 🪙 2 🪙 (orden de la columna BDs) | normal | aplicado |
+| 2026-07-03T21:08:12 | Alejandro | Tablero | Columna nueva | — | Otros perfiles: Service Designer en todo excepto EPS/Backlog/Arquitectura; Product Designers solo en Q-38 | normal | aplicado |
 | 2026-07-03T20:36:32 | Alejandro | Tablero | Columnas nuevas | Fechas dentro del status | Columnas fijas 'Fecha de inicio' y 'Fecha de cierre' en todas las tablas (skill v1.3.0) | normal | aplicado |
 | 2026-07-03T20:22:27 | Alejandro | EPIC-2 | Épica | Guías resumidas y AMI Relanzamiento separadas (typo) | Fusionadas: AMI Relanzamiento contiene las guías resumidas (Q-16–Q-18); placeholder Q-19 eliminado | normal | aplicado |
 | 2026-07-03T20:18:14 | Alejandro | EPIC-5 | Épica nueva | — | Spark: Vivo Pack (3 iniciativas; Stefanie, Melissa, Alejandro) | normal | aplicado |

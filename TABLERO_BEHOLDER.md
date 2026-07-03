@@ -7,6 +7,7 @@
 > **iniciativas** (con fechas y monedas por persona). Claves renumeradas.
 > **Economía nueva:** las 🪙 monedas miden el **esfuerzo del trimestre**; la regla es
 > **no usar más de 8 monedas al mismo tiempo** (concurrencia por fechas).
+> **Monedas:** una cifra por persona, en el mismo orden que la columna *Behavioral designers*.
 > Las columnas **Fecha de inicio / Fecha de cierre** son campos controlados: cambiarlas
 > requiere aprobación del owner. Loyalty salió del tablero.
 > ⚠️ La matriz Excel quedó desincronizada de esta versión.
@@ -37,102 +38,102 @@
 ### EPIC-1 · Mesa Back to Basics
 FFVV Vida Individual: playbook de ventas, Universidad Vida, estrategia de contacto y AIDA.
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-1 | Playbook: Storytelling de asesoría | In Progress | En curso (5 días) | 02/07/2026 | 08/07/2026 | 2 🪙 (M:1 · F:1) | Melissa, Felipe | — | ↓ curva de aprendizaje; +conversión |
-| Q-2 | Playbook: Materiales de venta a compartir con clientes (flyer, brochure, cartaplan) | To Do | Programada (4 días) | 07/07/2026 | 10/07/2026 | 3 🪙 (M:1.5 · A:1.5) | Melissa, Alejandro | — | ↓ curva de aprendizaje; +conversión |
-| Q-3 | Modelo de venta consultiva | Done | Entregado (7 días) | 22/06/2026 | 01/07/2026 | 1 🪙 (M:1) | Melissa | — | ↓ curva de aprendizaje; +conversión |
-| Q-4 | Universidad Vida — Onboarding | To Do | Programada (3 días) | 20/07/2026 | 22/07/2026 | 4 🪙 (M:2 · F:2) | Melissa, Felipe | Capacidad limitada equipo Learning | −25–40% ramp-up asesores jr (est.) |
-| Q-5 | Universidad Vida — Modelo de competencias, calendarización y evaluación de asesores | To Do | Programada (11 días) | 08/07/2026 | 22/07/2026 | 4 🪙 (A:2 · M:2) | Alejandro, Melissa | Capacidad limitada equipo Learning | −25–40% ramp-up asesores jr (est.) |
-| Q-6 | Desk research + bench de estrategias de contacto en frío y caliente | In Progress | En curso (4 días) | 30/06/2026 | 03/07/2026 | 0 🪙 (A:0) | Alejandro | — | Insumo para estrategia de contacto |
-| Q-7 | Validación con stakeholders | In Progress | Hoy (1 día) | 03/07/2026 | 03/07/2026 | 0 🪙 (A:0 · M:0) | Alejandro, Melissa | — | Alineamiento de la mesa |
-| Q-8 | 6 sacrificial concepts: contacto no cliente sin CUA | To Do | Programada (4 días) | 06/07/2026 | 09/07/2026 | 0 🪙 (A:0) | Alejandro | — | Insumo para estrategia sin CUA |
-| Q-9 | Informe con estrategias validadas por CUA, Cumplimiento y Legal (contacto con y sin CUA) | To Do | Programada (3 días); mesa con Legal, Cumplimiento, CUA y FFVV | 10/07/2026 | 14/07/2026 | 2 🪙 (A:2) | Alejandro | Estrategia CUA en definición | +20–30% agendamiento de citas (est.) |
-| Q-10 | Plantillas WhatsApp y correo de primer contacto **con** CUA | To Do | Programada (4 días) | 10/07/2026 | 15/07/2026 | 2 🪙 (F:2) | Felipe | — | +20–30% agendamiento de citas (est.) |
-| Q-11 | Plantillas WhatsApp y correo de primer contacto **sin** CUA | Backlog | Sin programar en el gantt (0 días pintados) | — | — | 2 🪙 (F:2) | Felipe | Suma al pico de Felipe cuando se agende | +agendamiento no clientes |
-| Q-12 | Actualizar materiales de venta del asesor con statement vida + motivaciones | To Do | Programada (5 días) | 06/07/2026 | 10/07/2026 | 4 🪙 (M:2 · A:2) | Melissa, Alejandro | — | ↓ curva de aprendizaje; +conversión |
-| Q-13 | Co-diseño AIDA Skill Trainer | To Do | Programada (9 días) | 13/07/2026 | 24/07/2026 | 3 🪙 (F:3) | Felipe | Comité de priorización; 3 herramientas en paralelo 🚩 | +efectividad asesor y CX; ahorro proyectado S/1.8M |
-| Q-14 | Despliegue: FFVV stock | To Do | Programada (10 días) | 10/08/2026 | 21/08/2026 | 1 🪙 (A:1) | Alejandro | — | Adopción de la estrategia en FFVV actual |
-| Q-15 | Despliegue: Universidad Vida | To Do | Programada (15 días) | 10/08/2026 | 28/08/2026 | 1 🪙 (M:1) | Melissa | — | Adopción del modelo por competencias |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-1 | Playbook: Storytelling de asesoría | In Progress | En curso (5 días) | 02/07/2026 | 08/07/2026 | 1 🪙 1 🪙 | Melissa, Felipe | Service Designer | — | ↓ curva de aprendizaje; +conversión |
+| Q-2 | Playbook: Materiales de venta a compartir con clientes (flyer, brochure, cartaplan) | To Do | Programada (4 días) | 07/07/2026 | 10/07/2026 | 1.5 🪙 1.5 🪙 | Melissa, Alejandro | Service Designer | — | ↓ curva de aprendizaje; +conversión |
+| Q-3 | Modelo de venta consultiva | Done | Entregado (7 días) | 22/06/2026 | 01/07/2026 | 1 🪙 | Melissa | Service Designer | — | ↓ curva de aprendizaje; +conversión |
+| Q-4 | Universidad Vida — Onboarding | To Do | Programada (3 días) | 20/07/2026 | 22/07/2026 | 2 🪙 2 🪙 | Melissa, Felipe | Service Designer | Capacidad limitada equipo Learning | −25–40% ramp-up asesores jr (est.) |
+| Q-5 | Universidad Vida — Modelo de competencias, calendarización y evaluación de asesores | To Do | Programada (11 días) | 08/07/2026 | 22/07/2026 | 2 🪙 2 🪙 | Alejandro, Melissa | Service Designer | Capacidad limitada equipo Learning | −25–40% ramp-up asesores jr (est.) |
+| Q-6 | Desk research + bench de estrategias de contacto en frío y caliente | In Progress | En curso (4 días) | 30/06/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Designer | — | Insumo para estrategia de contacto |
+| Q-7 | Validación con stakeholders | In Progress | Hoy (1 día) | 03/07/2026 | 03/07/2026 | 0 🪙 0 🪙 | Alejandro, Melissa | Service Designer | — | Alineamiento de la mesa |
+| Q-8 | 6 sacrificial concepts: contacto no cliente sin CUA | To Do | Programada (4 días) | 06/07/2026 | 09/07/2026 | 0 🪙 | Alejandro | Service Designer | — | Insumo para estrategia sin CUA |
+| Q-9 | Informe con estrategias validadas por CUA, Cumplimiento y Legal (contacto con y sin CUA) | To Do | Programada (3 días); mesa con Legal, Cumplimiento, CUA y FFVV | 10/07/2026 | 14/07/2026 | 2 🪙 | Alejandro | Service Designer | Estrategia CUA en definición | +20–30% agendamiento de citas (est.) |
+| Q-10 | Plantillas WhatsApp y correo de primer contacto **con** CUA | To Do | Programada (4 días) | 10/07/2026 | 15/07/2026 | 2 🪙 | Felipe | Service Designer | — | +20–30% agendamiento de citas (est.) |
+| Q-11 | Plantillas WhatsApp y correo de primer contacto **sin** CUA | Backlog | Sin programar en el gantt (0 días pintados) | — | — | 2 🪙 | Felipe | — | Suma al pico de Felipe cuando se agende | +agendamiento no clientes |
+| Q-12 | Actualizar materiales de venta del asesor con statement vida + motivaciones | To Do | Programada (5 días) | 06/07/2026 | 10/07/2026 | 2 🪙 2 🪙 | Melissa, Alejandro | Service Designer | — | ↓ curva de aprendizaje; +conversión |
+| Q-13 | Co-diseño AIDA Skill Trainer | To Do | Programada (9 días) | 13/07/2026 | 24/07/2026 | 3 🪙 | Felipe | Service Designer | Comité de priorización; 3 herramientas en paralelo 🚩 | +efectividad asesor y CX; ahorro proyectado S/1.8M |
+| Q-14 | Despliegue: FFVV stock | To Do | Programada (10 días) | 10/08/2026 | 21/08/2026 | 1 🪙 | Alejandro | Service Designer | — | Adopción de la estrategia en FFVV actual |
+| Q-15 | Despliegue: Universidad Vida | To Do | Programada (15 días) | 10/08/2026 | 28/08/2026 | 1 🪙 | Melissa | Service Designer | — | Adopción del modelo por competencias |
 
 ### EPIC-2 · AMI Relanzamiento
 Relanzamiento AMI: guías resumidas para el entendimiento y uso eficiente de los nuevos productos.
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-16 | 6 guías resumidas (PDFs) | Done | Entregadas (6 días) | 22/06/2026 | 30/06/2026 | 0 🪙 (F:0 · A:0) | Felipe, Alejandro | — | ↓ ~25–30% casos NPS «no recibí información» (est.) |
-| Q-17 | Validación con stakeholders | In Progress | En curso (3 días); pendiente check de Producto y equipo médico (nombre, coberturas, red, servicios) | 01/07/2026 | 03/07/2026 | 0 🪙 (A:0) | Alejandro | — | ↓ «no recibí información» |
-| Q-18 | Entrega final con ajustes de producto | To Do | Programada (3 días) | 06/07/2026 | 08/07/2026 | 3 🪙 (A:3) | Alejandro | — | ↓ «no recibí información» |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-16 | 6 guías resumidas (PDFs) | Done | Entregadas (6 días) | 22/06/2026 | 30/06/2026 | 0 🪙 0 🪙 | Felipe, Alejandro | Service Designer | — | ↓ ~25–30% casos NPS «no recibí información» (est.) |
+| Q-17 | Validación con stakeholders | In Progress | En curso (3 días); pendiente check de Producto y equipo médico (nombre, coberturas, red, servicios) | 01/07/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Designer | — | ↓ «no recibí información» |
+| Q-18 | Entrega final con ajustes de producto | To Do | Programada (3 días) | 06/07/2026 | 08/07/2026 | 3 🪙 | Alejandro | Service Designer | — | ↓ «no recibí información» |
 
 ### EPIC-3 · Evolution+: B2B Cobranzas
 Optimizar la conciliación de pagos B2B; prioridad: facturas de corporativas y gran empresa (mayor volumen).
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-20 | Investigación perfil 1 | Done | Entregada (3 días) — incluye quick fix del correo de conciliación | 22/06/2026 | 24/06/2026 | 0 🪙 (S:0) | Stefanie | — | Quick fix evita congelar dinero |
-| Q-21 | Investigación perfil 2 | To Do | Programada (9 días) | 08/07/2026 | 20/07/2026 | 4 🪙 (S:4) | Stefanie | — | Liberación de S/600k provisionados (proyecto) |
-| Q-22 | Diseño de experiencia | To Do | Programada (6 días) | 06/07/2026 | 24/07/2026 | 3 🪙 (S:3) | Stefanie | — | Liberación de S/600k provisionados (proyecto) |
-| Q-23 | Diseño de piloto | To Do | Programada (10 días) | 09/07/2026 | 05/08/2026 | 3 🪙 (S:3) | Stefanie | Solapa con Q-21/Q-22 → pico ⛔ de Stefanie | — |
-| Q-24 | Ejecución de piloto | To Do | Programada (16 días) | 07/08/2026 | 28/08/2026 | 5 🪙 (S:5) | Stefanie | — | — |
-| Q-25 | Diseño de solución final | To Do | Programada (5 días) | 31/08/2026 | 04/09/2026 | 3 🪙 (S:3) | Stefanie | — | Liberación de S/600k provisionados (proyecto) |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-20 | Investigación perfil 1 | Done | Entregada (3 días) — incluye quick fix del correo de conciliación | 22/06/2026 | 24/06/2026 | 0 🪙 | Stefanie | Service Designer | — | Quick fix evita congelar dinero |
+| Q-21 | Investigación perfil 2 | To Do | Programada (9 días) | 08/07/2026 | 20/07/2026 | 4 🪙 | Stefanie | Service Designer | — | Liberación de S/600k provisionados (proyecto) |
+| Q-22 | Diseño de experiencia | To Do | Programada (6 días) | 06/07/2026 | 24/07/2026 | 3 🪙 | Stefanie | Service Designer | — | Liberación de S/600k provisionados (proyecto) |
+| Q-23 | Diseño de piloto | To Do | Programada (10 días) | 09/07/2026 | 05/08/2026 | 3 🪙 | Stefanie | Service Designer | Solapa con Q-21/Q-22 → pico ⛔ de Stefanie | — |
+| Q-24 | Ejecución de piloto | To Do | Programada (16 días) | 07/08/2026 | 28/08/2026 | 5 🪙 | Stefanie | Service Designer | — | — |
+| Q-25 | Diseño de solución final | To Do | Programada (5 días) | 31/08/2026 | 04/09/2026 | 3 🪙 | Stefanie | Service Designer | — | Liberación de S/600k provisionados (proyecto) |
 
 ### EPIC-4 · Spark: Vivo Pack
 Testeo de concepto Vivo Pack.
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-26 | Plan de testeo del concepto | In Progress | En curso (4 días) | 02/07/2026 | 07/07/2026 | 4 🪙 (S:1.3 · M:1.3 · A:1.3) | Stefanie, Melissa, Alejandro | — | Validación del concepto (por medir) |
-| Q-27 | Artefactos diseñados para el testeo | To Do | Programada (2 días) | 06/07/2026 | 07/07/2026 | 2 🪙 (S:1 · M:1) | Stefanie, Melissa | — | — |
-| Q-28 | Análisis y síntesis del test | Backlog | Sin programar en el gantt (0 días pintados) | — | — | 2 🪙 (S:1 · M:1) | Stefanie, Melissa | Suma al pico cuando se agende | Decisión go/no-go del concepto |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-26 | Plan de testeo del concepto | In Progress | En curso (4 días) | 02/07/2026 | 07/07/2026 | 1.3 🪙 1.3 🪙 1.3 🪙 | Stefanie, Melissa, Alejandro | Service Designer | — | Validación del concepto (por medir) |
+| Q-27 | Artefactos diseñados para el testeo | To Do | Programada (2 días) | 06/07/2026 | 07/07/2026 | 1 🪙 1 🪙 | Stefanie, Melissa | Service Designer | — | — |
+| Q-28 | Análisis y síntesis del test | Backlog | Sin programar en el gantt (0 días pintados) | — | — | 1 🪙 1 🪙 | Stefanie, Melissa | — | Suma al pico cuando se agende | Decisión go/no-go del concepto |
 
 ### EPIC-5 · Bienestar 360
 Programa implementado; fase de mantenimiento y seguimiento.
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-29 | Status Bienestar 360 | In Progress | En curso (3 días) | 03/07/2026 | 07/07/2026 | 1 🪙 (S:1) | Stefanie | — | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
-| Q-30 | Playbook del servicio | Done | Entregado (5 días) | 22/06/2026 | 26/06/2026 | 2 🪙 (S:2) | Stefanie | — | Continuidad del programa |
-| Q-31 | Seguimiento del servicio | To Do | Programada (10 días) | 06/07/2026 | 17/07/2026 | 1 🪙 (S:1) | Stefanie | Presupuesto limitado para v2 | Mantenimiento de métricas |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-29 | Status Bienestar 360 | In Progress | En curso (3 días) | 03/07/2026 | 07/07/2026 | 1 🪙 | Stefanie | Service Designer | — | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
+| Q-30 | Playbook del servicio | Done | Entregado (5 días) | 22/06/2026 | 26/06/2026 | 2 🪙 | Stefanie | Service Designer | — | Continuidad del programa |
+| Q-31 | Seguimiento del servicio | To Do | Programada (10 días) | 06/07/2026 | 17/07/2026 | 1 🪙 | Stefanie | Service Designer | Presupuesto limitado para v2 | Mantenimiento de métricas |
 
 ### EPIC-6 · Modelo de venta — Convenios
 Nuevo modelo de venta para convenios (antes en Backlog; ahora con iniciativas y fechas).
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-32 | Entendimiento del modelo de venta actual | To Do | Programada (11 días) | 20/07/2026 | 07/08/2026 | 4 🪙 (A:2 · M:2) | Alejandro, Melissa | Sponsors: Diana Riofrío, Patricia Romero, Claro Gomez | Escalamiento del modelo de venta VI |
-| Q-33 | Análisis de escalamiento del modelo Vida Individual | To Do | Programada (2 días) | 10/08/2026 | 11/08/2026 | 2 🪙 (A:1 · M:1) | Alejandro, Melissa | — | Escalamiento del modelo de venta VI |
-| Q-34 | Diseño del modelo de venta de convenios | To Do | Programada (8 días) | 12/08/2026 | 21/08/2026 | 4 🪙 (A:2 · M:2) | Alejandro, Melissa | — | Escalamiento del modelo de venta VI |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-32 | Entendimiento del modelo de venta actual | To Do | Programada (11 días) | 20/07/2026 | 07/08/2026 | 2 🪙 2 🪙 | Alejandro, Melissa | Service Designer | Sponsors: Diana Riofrío, Patricia Romero, Claro Gomez | Escalamiento del modelo de venta VI |
+| Q-33 | Análisis de escalamiento del modelo Vida Individual | To Do | Programada (2 días) | 10/08/2026 | 11/08/2026 | 1 🪙 1 🪙 | Alejandro, Melissa | Service Designer | — | Escalamiento del modelo de venta VI |
+| Q-34 | Diseño del modelo de venta de convenios | To Do | Programada (8 días) | 12/08/2026 | 21/08/2026 | 2 🪙 2 🪙 | Alejandro, Melissa | Service Designer | — | Escalamiento del modelo de venta VI |
 
 ### EPIC-7 · Renovación EPS
 Guías EPS y ecosistema de entendimiento; revisión de la Dra. Ana Gabriela Ramos (Dir. Médica Seguros Salud) en curso.
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-35 | Guías resumidas EPS: Multiempresa | To Do | Programada (2 días) | 06/07/2026 | 07/07/2026 | 6 🪙 (F:6) | Felipe | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS |
-| Q-36 | Validación con comercial y gestión de Salud | To Do | Programada (6 días) | 08/07/2026 | 15/07/2026 | 2 🪙 (F:2) | Felipe | — | Renovación cuentas TOP EPS |
-| Q-37 | Entrega final con ajustes de producto | To Do | Programada (1 día) | 16/07/2026 | 16/07/2026 | 4 🪙 (F:4) | Felipe | — | ↓ «no recibí información» en corporativo |
-| Q-38 | Diseño To Be: Ecosistema de entendimiento y uso eficiente de seguros | To Do | Programada (15 días) | 13/07/2026 | 05/08/2026 | 4 🪙 (A:2 · F:2) | Alejandro, Felipe | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-35 | Guías resumidas EPS: Multiempresa | To Do | Programada (2 días) | 06/07/2026 | 07/07/2026 | 6 🪙 | Felipe | — | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS |
+| Q-36 | Validación con comercial y gestión de Salud | To Do | Programada (6 días) | 08/07/2026 | 15/07/2026 | 2 🪙 | Felipe | — | — | Renovación cuentas TOP EPS |
+| Q-37 | Entrega final con ajustes de producto | To Do | Programada (1 día) | 16/07/2026 | 16/07/2026 | 4 🪙 | Felipe | — | — | ↓ «no recibí información» en corporativo |
+| Q-38 | Diseño To Be: Ecosistema de entendimiento y uso eficiente de seguros | To Do | Programada (15 días) | 13/07/2026 | 05/08/2026 | 2 🪙 2 🪙 | Alejandro, Felipe | Equipo de Product Designers | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
 
 ### EPIC-8 · Arquitectura BD (capacidades del equipo)
 Frameworks y herramientas del Chapter (se conservan sin cambios).
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-39 | Modelo de entendimiento y uso eficiente de seguros | In Progress | Framework terminado; falta alinear con los frentes involucrados | — | — | — | Todos | — | Framework de entendimiento y uso eficiente |
-| Q-40 | Sistema de generación de usuarios sintéticos | Diseñado | Terminado, por validar | — | — | — | Todos | — | Agilidad en el testeo de conducta con seguros |
-| Q-41 | Modelo de cambio de hábitos | Done | Terminado y validado | — | — | — | Todos | — | Framework para iniciativas de cambio de hábitos |
-| Q-42 | Skill para desk research con rigurosidad científica | Diseñado | Terminado, por validar | — | — | — | Todos | — | Agilidad y calidad de la investigación de escritorio |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-39 | Modelo de entendimiento y uso eficiente de seguros | In Progress | Framework terminado; falta alinear con los frentes involucrados | — | — | — | Todos | — | — | Framework de entendimiento y uso eficiente |
+| Q-40 | Sistema de generación de usuarios sintéticos | Diseñado | Terminado, por validar | — | — | — | Todos | — | — | Agilidad en el testeo de conducta con seguros |
+| Q-41 | Modelo de cambio de hábitos | Done | Terminado y validado | — | — | — | Todos | — | — | Framework para iniciativas de cambio de hábitos |
+| Q-42 | Skill para desk research con rigurosidad científica | Diseñado | Terminado, por validar | — | — | — | Todos | — | — | Agilidad y calidad de la investigación de escritorio |
 
 ### EPIC-9 · Backlog Q3 (previas)
 Iniciativas del Chapter SD1 sin sprint asignado (se conservan en backlog).
 
-| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Riesgos | Impacto |
-|---|---|---|---|---|---|---|---|---|---|
-| Q-43 | RIMAC Wrap (tangibilización pre-renovación) | Backlog | Backlog del Chapter SD1 | — | — | — | (por confirmar) | — | — |
-| Q-44 | Recordatorio multicanal (SMS/WhatsApp/Push) | Backlog | Backlog del Chapter SD1 | — | — | — | (por confirmar) | — | — |
-| Q-45 | Sistema de incentivos orientados a la experiencia | Backlog | Backlog del Chapter SD1 | — | — | — | (por confirmar) | — | — |
-| Q-46 | Vida Individual — Experiencia Postventa | Backlog | Backlog del Chapter SD1 (sponsor Diana Riofrío) | — | — | — | (por confirmar) | Sponsor: Diana Riofrío | — |
-| Q-47 | Ahorro Salud — Derivación eficiente MER | Backlog | Backlog del Chapter SD1 | — | — | — | (por confirmar) | — | — |
+| Clave | Quest | Estado | Status del proyecto | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q-43 | RIMAC Wrap (tangibilización pre-renovación) | Backlog | Backlog del Chapter SD1 | — | — | — | (por confirmar) | — | — | — |
+| Q-44 | Recordatorio multicanal (SMS/WhatsApp/Push) | Backlog | Backlog del Chapter SD1 | — | — | — | (por confirmar) | — | — | — |
+| Q-45 | Sistema de incentivos orientados a la experiencia | Backlog | Backlog del Chapter SD1 | — | — | — | (por confirmar) | — | — | — |
+| Q-46 | Vida Individual — Experiencia Postventa | Backlog | Backlog del Chapter SD1 (sponsor Diana Riofrío) | — | — | — | (por confirmar) | — | Sponsor: Diana Riofrío | — |
+| Q-47 | Ahorro Salud — Derivación eficiente MER | Backlog | Backlog del Chapter SD1 | — | — | — | (por confirmar) | — | — | — |
 
 ## 🪙 Libro mayor de monedas (capacidad del equipo)
 > **Economía Q3:** las monedas miden el esfuerzo total del trimestre por persona.
