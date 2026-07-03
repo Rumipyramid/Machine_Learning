@@ -1,10 +1,18 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-02T21:24:39 · Cambios vigentes: 24
+> Retención: 15 días · Última actualización: 2026-07-03T20:18:14 · Cambios vigentes: 32
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-03T20:18:14 | Alejandro | EPIC-5 | Épica nueva | — | Spark: Vivo Pack (3 iniciativas; Stefanie, Melissa, Alejandro) | normal | aplicado |
+| 2026-07-03T20:18:14 | Alejandro | EPIC-7 | Convenios | Backlog sin iniciativas | Activo: 3 iniciativas con fechas (20/07 → 21/08) | normal | aplicado |
+| 2026-07-03T20:18:14 | Alejandro | EPIC-6 | Bienestar 360 | Done | Reabierto: status + seguimiento hasta 17/07 | normal | aplicado |
+| 2026-07-03T20:18:14 | Alejandro | Q-38 | Ecosistema entendimiento | EPIC-2 Guías; Stef, Felipe, Alejandro | EPIC-8 Renovación EPS; Alejandro:2, Felipe:2 | normal | aplicado |
+| 2026-07-03T20:18:01 | Alejandro | Tablero | Reestructura v2 | 22 quests / 10 épicas (roadmap) | 47 quests: épicas = proyectos BD, quests = iniciativas de la tabla final; claves renumeradas | normal | aplicado |
+| 2026-07-03T20:18:01 | Alejandro | Economía | Fichas → Monedas | 8/10 fichas comprometidas por persona | Monedas = esfuerzo del trimestre; regla: máx. 8 simultáneas por persona | normal | aplicado |
+| 2026-07-03T20:18:01 | Alejandro | Loyalty | Estado | In Progress (piloto/MVP) | Eliminado del tablero | normal | aplicado |
+| 2026-07-03T20:18:01 | Alejandro | Todas | Fechas inicio/entrega | sin fechas | Fechas cargadas desde tabla final de iniciativas | fecha | aprobada |
 | 2026-07-02T21:24:39 | Alejandro | Q-3 | Status del proyecto | Top 4 cuentas: 2/4 entregadas, 2/4 en revisión; ajustes y presentación final | Dra. Ana Gabriela Ramos (Dir. Médica Seguros Salud) ha escrito para revisar las guías para empresas | normal | aplicado |
 | 2026-07-02T21:14:39 | Alejandro | Q-5 | Quest / Status | Mensajes de primer contacto; solo no clientes sin CUA | Estrategia de primer contacto; incluye clientes y no clientes con CUA, y no clientes sin CUA | normal | aplicado |
 | 2026-07-02T21:08:38 | Alejandro | Q-7 | Status del proyecto | Asistencia a onboarding de FFVV actual; contenido listo, falta diseño instruccional | Modelo por competencias: calendarización, evaluación y reconocimientos | normal | aplicado |
