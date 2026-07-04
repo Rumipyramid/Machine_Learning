@@ -56,3 +56,4 @@ timestamp,autor,clave,campo,antes,despues,tipo,estado
 2026-07-04T03:18:44,Alejandro,Gantt,Formato,Barras con clave Q-n,Barras con nombre de la iniciativa + responsables (quién hace cada cosa),normal,aplicado
 2026-07-04T03:25:12,Alejandro,Beholder,v1.6.0,Gantt con tema por defecto; apertura sin mascota,Gantt de alto contraste + apertura con lema y mascota animada (assets/beholder.svg),normal,aplicado
 2026-07-04T03:29:58,Alejandro,Gantt/Mascota,Estilo,Texto oscuro fuera de barras; mascota de colores saturados,Gantt 100% texto blanco sobre tema oscuro + nombres completos; mascota pastel con grano y trazos tenues,normal,aplicado
+2026-07-04T03:37:51,Alejandro,Mascota,Rediseño,Ojo con alas simple,"Calavera kawaii alada según referencia: cuerpo segmentado, manitas, cola rizada con corazón; pastel saturado + grano; anima parpadeo/aleteo/flote/cola",normal,aplicado

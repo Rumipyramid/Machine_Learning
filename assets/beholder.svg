@@ -1,93 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" role="img" aria-label="El Beholder — ojo con alas">
-  <!-- Mascota del Beholder: ojo con alas en estilo pastel, granular y tenue -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 320" width="380" role="img" aria-label="El Beholder — mascota alada">
+  <!-- Mascota del Beholder: calavera kawaii alada de cuerpo segmentado y cola rizada.
+       Estilo: pastel saturado + grano. Animaciones: flota, aletea, parpadea, menea la cola. -->
   <defs>
-    <radialGradient id="globo" cx="0.42" cy="0.36" r="0.85">
-      <stop offset="0%" stop-color="#FFFDF8"/>
-      <stop offset="100%" stop-color="#F1E8F6"/>
-    </radialGradient>
-    <radialGradient id="iris" cx="0.4" cy="0.35" r="0.9">
-      <stop offset="0%" stop-color="#D8C6F5"/>
-      <stop offset="100%" stop-color="#A98CE3"/>
+    <radialGradient id="hueso" cx="0.42" cy="0.32" r="0.9">
+      <stop offset="0%" stop-color="#FFFBF0"/>
+      <stop offset="100%" stop-color="#F9E9D8"/>
     </radialGradient>
     <linearGradient id="ala" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FBEAF2"/>
-      <stop offset="100%" stop-color="#EDDDF3"/>
+      <stop offset="0%" stop-color="#FDF1F7"/>
+      <stop offset="100%" stop-color="#F0E2F7"/>
     </linearGradient>
-    <!-- Textura de grano -->
     <filter id="grano">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
-      <feComponentTransfer><feFuncA type="linear" slope="0.10" intercept="0"/></feComponentTransfer>
-    </filter>
-    <filter id="suave" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="0.4"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.11" intercept="0"/></feComponentTransfer>
     </filter>
   </defs>
 
-  <g filter="url(#suave)" opacity="0.95">
-    <animateTransform attributeName="transform" type="translate" values="0 0; 0 7; 0 0" dur="2.8s" repeatCount="indefinite"/>
+  <g opacity="0.97">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 8; 0 0" dur="2.8s" repeatCount="indefinite"/>
 
-    <!-- Ala izquierda -->
-    <g transform="translate(122,105)">
+    <!-- Alas emplumadas (detrás de la cabeza) -->
+    <g transform="translate(136,92)">
       <g>
-        <animateTransform attributeName="transform" type="rotate" values="8;-13;8" dur="0.8s" repeatCount="indefinite"/>
-        <path d="M0,0 C-28,-42 -82,-52 -106,-38 C-78,-30 -73,-24 -92,-13 C-68,-10 -63,-3 -78,8 C-54,10 -42,12 -20,18 Z"
-              fill="url(#ala)" stroke="#C7A9CF" stroke-width="3.5" stroke-linejoin="round"/>
+        <animateTransform attributeName="transform" type="rotate" values="9;-14;9" dur="0.75s" repeatCount="indefinite"/>
+        <path d="M0,0 C-14,-34 -46,-52 -88,-52 C-72,-42 -68,-36 -80,-31 C-64,-27 -59,-20 -68,-13 C-54,-11 -49,-4 -56,3 C-42,6 -30,8 -14,12 Z"
+              fill="url(#ala)" stroke="#B58BC9" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M-16,4 C-30,2 -44,3 -54,5 M-18,-6 C-34,-10 -50,-11 -64,-9 M-22,-18 C-38,-24 -54,-27 -72,-26"
+              fill="none" stroke="#D9B8E3" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+    </g>
+    <g transform="translate(244,92) scale(-1,1)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="9;-14;9" dur="0.75s" repeatCount="indefinite"/>
+        <path d="M0,0 C-14,-34 -46,-52 -88,-52 C-72,-42 -68,-36 -80,-31 C-64,-27 -59,-20 -68,-13 C-54,-11 -49,-4 -56,3 C-42,6 -30,8 -14,12 Z"
+              fill="url(#ala)" stroke="#B58BC9" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M-16,4 C-30,2 -44,3 -54,5 M-18,-6 C-34,-10 -50,-11 -64,-9 M-22,-18 C-38,-24 -54,-27 -72,-26"
+              fill="none" stroke="#D9B8E3" stroke-width="2.5" stroke-linecap="round"/>
       </g>
     </g>
 
-    <!-- Ala derecha (espejo) -->
-    <g transform="translate(258,105) scale(-1,1)">
-      <g>
-        <animateTransform attributeName="transform" type="rotate" values="8;-13;8" dur="0.8s" repeatCount="indefinite"/>
-        <path d="M0,0 C-28,-42 -82,-52 -106,-38 C-78,-30 -73,-24 -92,-13 C-68,-10 -63,-3 -78,8 C-54,10 -42,12 -20,18 Z"
-              fill="url(#ala)" stroke="#C7A9CF" stroke-width="3.5" stroke-linejoin="round"/>
-      </g>
-    </g>
-
-    <!-- Globo ocular -->
-    <circle cx="190" cy="108" r="58" fill="url(#globo)" stroke="#BCA6D4" stroke-width="3.5"/>
-
-    <!-- Iris + pupila (miran de un lado a otro) -->
+    <!-- Cola rizada con corazón (se menea) -->
     <g>
-      <animateTransform attributeName="transform" type="translate" values="0 0; 9 2; -7 1; 0 0" keyTimes="0;0.3;0.65;1" dur="6s" repeatCount="indefinite"/>
-      <circle cx="190" cy="108" r="27" fill="url(#iris)"/>
-      <circle cx="190" cy="108" r="12" fill="#7A6AAE"/>
-      <circle cx="198" cy="99" r="5.5" fill="#FFFFFF" opacity="0.85"/>
-      <circle cx="182" cy="116" r="3" fill="#FFFFFF" opacity="0.5"/>
+      <animateTransform attributeName="transform" type="rotate" values="-4 190 248; 5 190 248; -4 190 248" dur="3.2s" repeatCount="indefinite"/>
+      <path d="M190,248 C193,272 216,284 235,278 C254,272 256,252 242,248 C229,245 222,257 231,266 C241,275 257,271 266,260"
+            fill="none" stroke="#8A6FD0" stroke-width="7" stroke-linecap="round"/>
+      <path d="M266,260 C262,250 272,244 277,251 C283,244 292,251 287,259 C283,266 273,268 266,260 Z"
+            fill="#8A6FD0" stroke="#8A6FD0" stroke-width="2" transform="rotate(20 276 256)"/>
     </g>
+
+    <!-- Cuerpo segmentado (de abajo hacia arriba) -->
+    <ellipse cx="190" cy="206" rx="29" ry="24" fill="url(#hueso)" stroke="#7E6796" stroke-width="4"/>
+    <!-- Anillos del enchufe -->
+    <rect x="176" y="226" width="28" height="8" rx="4" fill="#C4AEE3" stroke="#7E6796" stroke-width="3"/>
+    <rect x="180" y="234" width="20" height="7" rx="3.5" fill="#C4AEE3" stroke="#7E6796" stroke-width="3"/>
+    <rect x="183" y="241" width="14" height="7" rx="3.5" fill="#C4AEE3" stroke="#7E6796" stroke-width="3"/>
+
+    <ellipse cx="190" cy="182" rx="39" ry="21" fill="url(#hueso)" stroke="#7E6796" stroke-width="4"/>
+    <path d="M156,176 l-7,-5 M160,186 l-8,-3 M224,176 l7,-5 M220,186 l8,-3"
+          stroke="#B99FD1" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="190" cy="152" rx="49" ry="23" fill="url(#hueso)" stroke="#7E6796" stroke-width="4"/>
+    <path d="M148,146 l-8,-5 M152,157 l-9,-3 M232,146 l8,-5 M228,157 l9,-3"
+          stroke="#B99FD1" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Manitas tucadas al centro -->
+    <circle cx="181" cy="149" r="8" fill="#FFFBF0" stroke="#7E6796" stroke-width="3"/>
+    <circle cx="199" cy="149" r="8" fill="#FFFBF0" stroke="#7E6796" stroke-width="3"/>
+    <path d="M178,146 l0,6 M182,145 l0,7 M198,145 l0,7 M202,146 l0,6"
+          stroke="#B99FD1" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Cabeza calavera -->
+    <path d="M150,128 C136,120 130,106 130,90 C130,52 158,34 190,34 C222,34 250,52 250,90 C250,106 244,120 230,128 C218,135 206,138 190,138 C174,138 162,135 150,128 Z"
+          fill="url(#hueso)" stroke="#7E6796" stroke-width="4.5" stroke-linejoin="round"/>
+
+    <!-- Ojos huecos (parpadean y miran de reojo) -->
+    <g fill="#2F2542">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 4 1; -3 0; 0 0" keyTimes="0;0.3;0.65;1" dur="6s" repeatCount="indefinite"/>
+      <ellipse cx="167" cy="90" rx="17" ry="22" transform="rotate(-8 167 90)">
+        <animate attributeName="ry" values="22;22;2;22;22" keyTimes="0;0.46;0.5;0.54;1" dur="4.4s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="213" cy="90" rx="17" ry="22" transform="rotate(8 213 90)">
+        <animate attributeName="ry" values="22;22;2;22;22" keyTimes="0;0.46;0.5;0.54;1" dur="4.4s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="167" cy="102" rx="10" ry="5" fill="#7FA8A0" opacity="0.35"/>
+      <ellipse cx="213" cy="102" rx="10" ry="5" fill="#7FA8A0" opacity="0.35"/>
+    </g>
+
+    <!-- Nariz, boca y dientecitos -->
+    <circle cx="185" cy="116" r="2" fill="#7E6796"/>
+    <circle cx="195" cy="116" r="2" fill="#7E6796"/>
+    <path d="M180,124 q5,6 10,0 q5,6 10,0" fill="none" stroke="#7E6796" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M184,127 l3,8 3,-8 z M190,127 l3,8 3,-8 z" fill="#FFFBF0" stroke="#7E6796" stroke-width="2" stroke-linejoin="round"/>
 
     <!-- Rubor -->
-    <ellipse cx="146" cy="132" rx="10" ry="6" fill="#F6C9D8" opacity="0.55"/>
-    <ellipse cx="234" cy="132" rx="10" ry="6" fill="#F6C9D8" opacity="0.55"/>
-
-    <!-- Párpado (parpadeo) -->
-    <ellipse cx="190" cy="108" rx="58" ry="0" fill="#E8DBF6" stroke="#C7B3E0" stroke-width="3" opacity="0">
-      <animate attributeName="ry" values="0;0;58;0;0" keyTimes="0;0.46;0.5;0.54;1" dur="4.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.45;0.5;0.55;1" dur="4.6s" repeatCount="indefinite"/>
-    </ellipse>
+    <ellipse cx="150" cy="108" rx="9" ry="5" fill="#F6B7CE" opacity="0.6"/>
+    <ellipse cx="230" cy="108" rx="9" ry="5" fill="#F6B7CE" opacity="0.6"/>
 
     <!-- Destellos -->
-    <g>
-      <path d="M62,40 l3,8 8,3 -8,3 -3,8 -3,-8 -8,-3 8,-3 z" fill="#F4D8A9" opacity="0.8">
-        <animate attributeName="opacity" values="0.8;0.25;0.8" dur="2.2s" repeatCount="indefinite"/>
-      </path>
-      <path d="M318,52 l2.5,7 7,2.5 -7,2.5 -2.5,7 -2.5,-7 -7,-2.5 7,-2.5 z" fill="#BFE3D9" opacity="0.5">
-        <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.6s" repeatCount="indefinite"/>
-      </path>
-      <circle cx="96" cy="70" r="2.5" fill="#D8C6F5" opacity="0.6">
-        <animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.1s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="290" cy="86" r="2" fill="#F6C9D8" opacity="0.6">
-        <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.9s" repeatCount="indefinite"/>
-      </circle>
-    </g>
+    <path d="M66,52 l3,8 8,3 -8,3 -3,8 -3,-8 -8,-3 8,-3 z" fill="#F4D8A9" opacity="0.85">
+      <animate attributeName="opacity" values="0.85;0.25;0.85" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M314,64 l2.5,7 7,2.5 -7,2.5 -2.5,7 -2.5,-7 -7,-2.5 7,-2.5 z" fill="#BFE3D9" opacity="0.55">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.7s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="96" cy="180" r="2.5" fill="#D8C6F5" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="290" cy="170" r="2" fill="#F6B7CE" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- Capa de grano sobre toda la figura -->
-  <rect width="380" height="240" filter="url(#grano)"/>
+  <!-- Capa de grano -->
+  <rect width="380" height="320" filter="url(#grano)"/>
 
   <!-- Lema -->
-  <text x="190" y="212" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+  <text x="190" y="306" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
         font-style="italic" font-size="17" fill="#A78BCB">“Beauty is in the eye of the beholder”</text>
 </svg>
