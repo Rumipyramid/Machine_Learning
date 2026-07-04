@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-04T03:25:12 · Cambios vigentes: 56
+> Retención: 15 días · Última actualización: 2026-07-04T03:29:58 · Cambios vigentes: 57
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-04T03:29:58 | Alejandro | Gantt/Mascota | Estilo | Texto oscuro fuera de barras; mascota de colores saturados | Gantt 100% texto blanco sobre tema oscuro + nombres completos; mascota pastel con grano y trazos tenues | normal | aplicado |
 | 2026-07-04T03:25:12 | Alejandro | Beholder | v1.6.0 | Gantt con tema por defecto; apertura sin mascota | Gantt de alto contraste + apertura con lema y mascota animada (assets/beholder.svg) | normal | aplicado |
 | 2026-07-04T03:18:44 | Alejandro | Gantt | Formato | Barras con clave Q-n | Barras con nombre de la iniciativa + responsables (quién hace cada cosa) | normal | aplicado |
 | 2026-07-04T03:13:38 | Alejandro | Beholder | Mejoras v1.5.0 | Validación manual; Excel aparte; sin digest/gantt/retro | beholder_tools.py (validar/digest/gantt/retro), Excel desde el tablero, dependencias, vencimientos, Issues por rojo | normal | aplicado |

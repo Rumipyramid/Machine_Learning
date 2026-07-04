@@ -190,13 +190,15 @@ def cmd_digest():
 
 GANTT_INIT = (
     '%%{init: {"theme":"base","gantt":{"barHeight":22,"barGap":6,"leftPadding":110},'
-    '"themeVariables":{"fontSize":"13px","textColor":"#1F2328","titleColor":"#1F2328",'
-    '"sectionBkgColor":"#EAF0FA","altSectionBkgColor":"#FFFFFF","sectionBkgColor2":"#EAF0FA",'
-    '"taskBkgColor":"#3B6FD4","taskBorderColor":"#274E9E","taskTextColor":"#FFFFFF",'
-    '"taskTextOutsideColor":"#1F2328","taskTextDarkColor":"#1F2328",'
-    '"activeTaskBkgColor":"#FFE08A","activeTaskBorderColor":"#B58900",'
-    '"doneTaskBkgColor":"#CFD8E3","doneTaskBorderColor":"#8B98A9",'
-    '"critBkgColor":"#F4B6BC","critBorderColor":"#B42318","todayLineColor":"#D93025"}}}%%'
+    '"themeVariables":{"fontSize":"13px","textColor":"#FFFFFF","titleColor":"#FFFFFF",'
+    '"sectionBkgColor":"#2D333B","altSectionBkgColor":"#22272E","sectionBkgColor2":"#2D333B",'
+    '"taskBkgColor":"#3B6FD4","taskBorderColor":"#8AB4FF","taskTextColor":"#FFFFFF",'
+    '"taskTextOutsideColor":"#FFFFFF","taskTextDarkColor":"#FFFFFF",'
+    '"taskTextClickableColor":"#FFFFFF",'
+    '"activeTaskBkgColor":"#8A6D00","activeTaskBorderColor":"#FFD866",'
+    '"doneTaskBkgColor":"#4A5561","doneTaskBorderColor":"#8B98A9",'
+    '"critBkgColor":"#B42318","critBorderColor":"#FF8A80","todayLineColor":"#FF6B6B",'
+    '"gridColor":"#8B98A9","excludeBkgColor":"#22272E"}}}%%'
 )
 
 
@@ -219,7 +221,7 @@ def cmd_gantt():
         elif q["estado"] == "In Progress":
             tags.append("active")
         tag = (", ".join(tags) + ", ") if tags else ""
-        nombre = q["nombre"].replace(":", " —")[:36]
+        nombre = q["nombre"].replace(":", " —")  # nombre completo, sin recortar
         quien = ", ".join(q["monedas"]) if q["monedas"] else q["bds"].replace(":", "")
         fin = q["cierre"] + timedelta(days=1)  # mermaid trata el fin como exclusivo
         L.append(f"  {nombre} · {quien} :{tag}{q['inicio']:%Y-%m-%d}, {fin:%Y-%m-%d}")

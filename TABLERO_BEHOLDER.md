@@ -56,30 +56,30 @@
 
 <!-- GANTT:START -->
 ```mermaid
-%%{init: {"theme":"base","gantt":{"barHeight":22,"barGap":6,"leftPadding":110},"themeVariables":{"fontSize":"13px","textColor":"#1F2328","titleColor":"#1F2328","sectionBkgColor":"#EAF0FA","altSectionBkgColor":"#FFFFFF","sectionBkgColor2":"#EAF0FA","taskBkgColor":"#3B6FD4","taskBorderColor":"#274E9E","taskTextColor":"#FFFFFF","taskTextOutsideColor":"#1F2328","taskTextDarkColor":"#1F2328","activeTaskBkgColor":"#FFE08A","activeTaskBorderColor":"#B58900","doneTaskBkgColor":"#CFD8E3","doneTaskBorderColor":"#8B98A9","critBkgColor":"#F4B6BC","critBorderColor":"#B42318","todayLineColor":"#D93025"}}}%%
+%%{init: {"theme":"base","gantt":{"barHeight":22,"barGap":6,"leftPadding":110},"themeVariables":{"fontSize":"13px","textColor":"#FFFFFF","titleColor":"#FFFFFF","sectionBkgColor":"#2D333B","altSectionBkgColor":"#22272E","sectionBkgColor2":"#2D333B","taskBkgColor":"#3B6FD4","taskBorderColor":"#8AB4FF","taskTextColor":"#FFFFFF","taskTextOutsideColor":"#FFFFFF","taskTextDarkColor":"#FFFFFF","taskTextClickableColor":"#FFFFFF","activeTaskBkgColor":"#8A6D00","activeTaskBorderColor":"#FFD866","doneTaskBkgColor":"#4A5561","doneTaskBorderColor":"#8B98A9","critBkgColor":"#B42318","critBorderColor":"#FF8A80","todayLineColor":"#FF6B6B","gridColor":"#8B98A9","excludeBkgColor":"#22272E"}}}%%
 gantt
   dateFormat YYYY-MM-DD
   axisFormat %d/%m
   title Roadmap Q3-2026 — Behavioral Design
   section Mesa Back to Basics
   Playbook — Storytelling de asesoría · Melissa, Felipe :active, 2026-07-02, 2026-07-09
-  Playbook — Materiales de venta a com · Melissa, Alejandro :2026-07-07, 2026-07-11
+  Playbook — Materiales de venta a compartir con clientes (flyer, brochure, cartaplan) · Melissa, Alejandro :2026-07-07, 2026-07-11
   Modelo de venta consultiva · Melissa :done, 2026-06-22, 2026-07-02
   Universidad Vida — Onboarding · Melissa, Felipe :2026-07-20, 2026-07-23
-  Universidad Vida — Modelo de compete · Alejandro, Melissa :2026-07-09, 2026-07-23
-  Desk research + bench de estrategias · Alejandro :active, 2026-06-30, 2026-07-04
+  Universidad Vida — Modelo de competencias, calendarización y evaluación de asesores · Alejandro, Melissa :2026-07-09, 2026-07-23
+  Desk research + bench de estrategias de contacto en frío y caliente · Alejandro :active, 2026-06-30, 2026-07-04
   Validación con stakeholders · Alejandro, Melissa :active, 2026-07-03, 2026-07-04
-  6 sacrificial concepts — contacto no · Alejandro :2026-07-06, 2026-07-10
-  Informe con estrategias validadas po · Alejandro :2026-07-10, 2026-07-15
-  Plantillas WhatsApp y correo de prim · Felipe :2026-07-10, 2026-07-16
-  Actualizar materiales de venta del a · Melissa, Alejandro :2026-07-06, 2026-07-11
+  6 sacrificial concepts — contacto no cliente sin CUA · Alejandro :2026-07-06, 2026-07-10
+  Informe con estrategias validadas por CUA, Cumplimiento y Legal (contacto con y sin CUA) · Alejandro :2026-07-10, 2026-07-15
+  Plantillas WhatsApp y correo de primer contacto con CUA · Felipe :2026-07-10, 2026-07-16
+  Actualizar materiales de venta del asesor con statement vida + motivaciones · Melissa, Alejandro :2026-07-06, 2026-07-11
   Co-diseño AIDA Skill Trainer · Felipe, Melissa :crit, 2026-07-13, 2026-07-25
   Despliegue — FFVV stock · Alejandro :2026-08-10, 2026-08-22
   Despliegue — Universidad Vida · Melissa :2026-08-10, 2026-08-29
   section AMI Relanzamiento
   6 guías resumidas (PDFs) · Felipe, Alejandro :done, 2026-06-22, 2026-07-01
   Validación con stakeholders · Alejandro :active, 2026-07-01, 2026-07-04
-  Entrega final con ajustes de product · Alejandro :2026-07-06, 2026-07-09
+  Entrega final con ajustes de producto · Alejandro :2026-07-06, 2026-07-09
   section Evolution+: B2B Cobranzas
   Investigación perfil 1 · Stefanie :done, 2026-06-22, 2026-06-25
   Investigación perfil 2 · Stefanie :2026-07-08, 2026-07-21
@@ -95,14 +95,14 @@ gantt
   Playbook del servicio · Stefanie :done, 2026-06-22, 2026-06-27
   Seguimiento del servicio · Stefanie :2026-07-06, 2026-07-18
   section Modelo de venta — Convenios
-  Entendimiento del modelo de venta ac · Alejandro, Melissa :2026-07-20, 2026-08-08
-  Análisis de escalamiento del modelo  · Alejandro, Melissa :2026-08-10, 2026-08-12
-  Diseño del modelo de venta de conven · Alejandro, Melissa :2026-08-12, 2026-08-22
+  Entendimiento del modelo de venta actual · Alejandro, Melissa :2026-07-20, 2026-08-08
+  Análisis de escalamiento del modelo Vida Individual · Alejandro, Melissa :2026-08-10, 2026-08-12
+  Diseño del modelo de venta de convenios · Alejandro, Melissa :2026-08-12, 2026-08-22
   section Renovación EPS
   Guías resumidas EPS — Multiempresa · Felipe :2026-07-06, 2026-07-08
-  Validación con comercial y gestión d · Felipe :2026-07-08, 2026-07-16
-  Entrega final con ajustes de product · Felipe, Alejandro :2026-07-16, 2026-07-17
-  Diseño To Be — Ecosistema de entendi · Alejandro, Felipe :2026-07-13, 2026-08-06
+  Validación con comercial y gestión de Salud · Felipe :2026-07-08, 2026-07-16
+  Entrega final con ajustes de producto · Felipe, Alejandro :2026-07-16, 2026-07-17
+  Diseño To Be — Ecosistema de entendimiento y uso eficiente de seguros · Alejandro, Felipe :2026-07-13, 2026-08-06
 ```
 <!-- GANTT:END -->
 
