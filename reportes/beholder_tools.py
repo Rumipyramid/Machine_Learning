@@ -188,9 +188,21 @@ def cmd_digest():
           f"({len(recientes)} cambios, {len(prox_entregas)} entregas próximas).")
 
 
+GANTT_INIT = (
+    '%%{init: {"theme":"base","gantt":{"barHeight":22,"barGap":6,"leftPadding":110},'
+    '"themeVariables":{"fontSize":"13px","textColor":"#1F2328","titleColor":"#1F2328",'
+    '"sectionBkgColor":"#EAF0FA","altSectionBkgColor":"#FFFFFF","sectionBkgColor2":"#EAF0FA",'
+    '"taskBkgColor":"#3B6FD4","taskBorderColor":"#274E9E","taskTextColor":"#FFFFFF",'
+    '"taskTextOutsideColor":"#1F2328","taskTextDarkColor":"#1F2328",'
+    '"activeTaskBkgColor":"#FFE08A","activeTaskBorderColor":"#B58900",'
+    '"doneTaskBkgColor":"#CFD8E3","doneTaskBorderColor":"#8B98A9",'
+    '"critBkgColor":"#F4B6BC","critBorderColor":"#B42318","todayLineColor":"#D93025"}}}%%'
+)
+
+
 def cmd_gantt():
     quests = parse_tablero()
-    L = ["```mermaid", "gantt", "  dateFormat YYYY-MM-DD", "  axisFormat %d/%m",
+    L = ["```mermaid", GANTT_INIT, "gantt", "  dateFormat YYYY-MM-DD", "  axisFormat %d/%m",
          "  title Roadmap Q3-2026 — Behavioral Design"]
     epica_actual = None
     for q in quests:

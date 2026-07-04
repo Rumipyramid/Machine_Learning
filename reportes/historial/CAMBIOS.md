@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-04T03:18:44 · Cambios vigentes: 55
+> Retención: 15 días · Última actualización: 2026-07-04T03:25:12 · Cambios vigentes: 56
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-04T03:25:12 | Alejandro | Beholder | v1.6.0 | Gantt con tema por defecto; apertura sin mascota | Gantt de alto contraste + apertura con lema y mascota animada (assets/beholder.svg) | normal | aplicado |
 | 2026-07-04T03:18:44 | Alejandro | Gantt | Formato | Barras con clave Q-n | Barras con nombre de la iniciativa + responsables (quién hace cada cosa) | normal | aplicado |
 | 2026-07-04T03:13:38 | Alejandro | Beholder | Mejoras v1.5.0 | Validación manual; Excel aparte; sin digest/gantt/retro | beholder_tools.py (validar/digest/gantt/retro), Excel desde el tablero, dependencias, vencimientos, Issues por rojo | normal | aplicado |
 | 2026-07-04T03:13:38 | Alejandro | Config | Vacaciones | — | Campo Vacaciones en el roster; capacidad 0 durante el periodo (regla 5) | normal | aplicado |

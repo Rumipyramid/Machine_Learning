@@ -3,6 +3,16 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.6.0] — 2026-07-04
+### Añadido
+- **Apertura con mascota y lema:** el Beholder abre cada sesión con el banner ASCII del ojo con
+  alas y la frase *«Beauty is in the eye of the beholder»*; la versión animada
+  (`assets/beholder.svg` — parpadea, aletea y flota) queda embebida en la cabecera del tablero.
+### Cambiado
+- **Gantt con tema de alto contraste:** franjas de sección claras, texto oscuro fuera de las
+  barras y texto blanco dentro (barras azules; activas ámbar, done gris, críticas rojas) para
+  que ninguna letra se pierda contra el fondo.
+
 ## [1.5.0] — 2026-07-04
 ### Añadido
 - **Caja de herramientas** (`reportes/beholder_tools.py`): `validar` (picos de concurrencia,

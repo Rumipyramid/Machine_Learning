@@ -1,5 +1,7 @@
 # 🐉 Tablero Beholder — Behavioral Design (RIMAC)
 
+<p align="center"><img src="assets/beholder.svg" width="340" alt="El Beholder — “Beauty is in the eye of the beholder”"></p>
+
 **Estado del proyecto:** WIP  ·  **Ciclo/Sprint:** Roadmap Q3-2026 (Chapter SD1, 22/06–13/09)  ·  **Fecha:** 2026-07-04
 
 > **v2 — Reestructura del 2026-07-03:** tablero reconstruido desde la tabla final
@@ -54,6 +56,7 @@
 
 <!-- GANTT:START -->
 ```mermaid
+%%{init: {"theme":"base","gantt":{"barHeight":22,"barGap":6,"leftPadding":110},"themeVariables":{"fontSize":"13px","textColor":"#1F2328","titleColor":"#1F2328","sectionBkgColor":"#EAF0FA","altSectionBkgColor":"#FFFFFF","sectionBkgColor2":"#EAF0FA","taskBkgColor":"#3B6FD4","taskBorderColor":"#274E9E","taskTextColor":"#FFFFFF","taskTextOutsideColor":"#1F2328","taskTextDarkColor":"#1F2328","activeTaskBkgColor":"#FFE08A","activeTaskBorderColor":"#B58900","doneTaskBkgColor":"#CFD8E3","doneTaskBorderColor":"#8B98A9","critBkgColor":"#F4B6BC","critBorderColor":"#B42318","todayLineColor":"#D93025"}}}%%
 gantt
   dateFormat YYYY-MM-DD
   axisFormat %d/%m
