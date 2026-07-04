@@ -1,10 +1,14 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-04T03:37:51 · Cambios vigentes: 58
+> Retención: 15 días · Última actualización: 2026-07-04T17:02:39 · Cambios vigentes: 62
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-04T17:02:39 | Alejandro | Q-6 | Estado | In Progress (vencido, código rojo) | Done — entregado | normal | aplicado |
+| 2026-07-04T17:02:39 | Alejandro | Q-7 | Estado | In Progress (vencido, código rojo) | Done — entregado | normal | aplicado |
+| 2026-07-04T17:02:39 | Alejandro | Q-17 | Estado | In Progress (vencido, código rojo) | Done — check de Producto y equipo médico completado | normal | aplicado |
+| 2026-07-04T17:02:39 | Beholder | Alertas | Códigos rojos | 3 🚨 (Q-6, Q-7, Q-17 vencidos) | 0 🚨 — resueltos, validador confirma OK para publicar | normal | aplicado |
 | 2026-07-04T03:37:51 | Alejandro | Mascota | Rediseño | Ojo con alas simple | Calavera kawaii alada según referencia: cuerpo segmentado, manitas, cola rizada con corazón; pastel saturado + grano; anima parpadeo/aleteo/flote/cola | normal | aplicado |
 | 2026-07-04T03:29:58 | Alejandro | Gantt/Mascota | Estilo | Texto oscuro fuera de barras; mascota de colores saturados | Gantt 100% texto blanco sobre tema oscuro + nombres completos; mascota pastel con grano y trazos tenues | normal | aplicado |
 | 2026-07-04T03:25:12 | Alejandro | Beholder | v1.6.0 | Gantt con tema por defecto; apertura sin mascota | Gantt de alto contraste + apertura con lema y mascota animada (assets/beholder.svg) | normal | aplicado |

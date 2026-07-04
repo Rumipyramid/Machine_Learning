@@ -25,26 +25,25 @@
 | Monedas Q3 comprometidas | 81 🪙 |
 | Regla de capacidad | ≤ 8 🪙 simultáneas por persona |
 | Quests con riesgo alto 🚩 | 1 (Q-13 AIDA) |
-| Códigos de alerta | 3 🚨 rojos · 5 ⚠️ amarillos |
+| Códigos de alerta | 0 🚨 rojos · 5 ⚠️ amarillos |
 
 ## 🚨 Alertas activas
-- 🚨 **Código rojo — Q-6 vencido:** Desk research contacto frío/caliente cerró el 03/07 y sigue In Progress. ¿Se entregó (→ Done) o se mueve la fecha (aprobación del owner)?
-- 🚨 **Código rojo — Q-7 vencido:** Validación con stakeholders (mesa BTB) cerró el 03/07 y sigue In Progress. ¿Se entregó o se mueve la fecha?
-- 🚨 **Código rojo — Q-17 vencido:** Validación de guías AMI cerró el 03/07 y sigue In Progress (pendiente check de Producto y equipo médico). ¿Se entregó o se mueve la fecha?
 - ⚠️ **Código amarillo — Q-9 estrategia CUA en definición:** la mesa con Legal/Cumplimiento/CUA/FFVV debe cerrar antes del 10/07 (inicio del informe).
 - ⚠️ **Código amarillo — Q-35 servicios valorados:** Producto pide no comunicarlos y la guía Multiempresa arranca el 06/07.
 - ⚠️ **Código amarillo — Q-4/Q-5 Universidad Vida:** capacidad limitada del equipo Learning sin mitigación confirmada.
 - ⚠️ **Código amarillo — Q-13 AIDA (mitigado desde rojo):** comité de priorización con 3 herramientas en paralelo; mitigación activa: consolidación + evidencia de usabilidad.
 - ⚠️ **Código amarillo — Q-28 sin programar:** 2 🪙 asignadas (Stefanie 1, Melissa 1) sin fechas; al agendarse debe evitar la ventana al límite de Stefanie (08–17/07).
 
-> ✅ **Resueltos hoy (03/07):** 🚨 código rojo de Stefanie (pico 11) y ⚠️ amarillos de capacidad de
-> Felipe (9) y Alejandro (8.5) — redistribución 50/50 en monedas enteras + cambios de fecha
-> aprobados por el owner (Q-23 → 21/07, Q-5 → 09/07). Ahora todos los picos son ≤ 8.
+> ✅ **Resueltos:** 🚨 código rojo de Stefanie (pico 11) y ⚠️ amarillos de capacidad de Felipe (9)
+> y Alejandro (8.5) — redistribución 50/50 en monedas enteras + cambios de fecha aprobados por
+> el owner (Q-23 → 21/07, Q-5 → 09/07). Ahora todos los picos son ≤ 8.
+> ✅ **Resueltos (04/07):** los 3 🚨 códigos rojos por vencimiento — Q-6, Q-7 y Q-17 se
+> entregaron y pasan a Done.
 
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-28, Q-43, Q-44, Q-45, Q-46, Q-47 | Q-2, Q-4, Q-5, Q-8, Q-9, Q-10, Q-12, Q-13, Q-14, Q-15, Q-18, Q-21, Q-22, Q-23, Q-24, Q-25, Q-27, Q-31, Q-32, Q-33, Q-34, Q-35, Q-36, Q-37, Q-38 | Q-1, Q-6, Q-7, Q-17, Q-26, Q-29, Q-39 | — | Q-3, Q-16, Q-20, Q-30, Q-40, Q-41, Q-42 |
+| Q-28, Q-43, Q-44, Q-45, Q-46, Q-47 | Q-2, Q-4, Q-5, Q-8, Q-9, Q-10, Q-12, Q-13, Q-14, Q-15, Q-18, Q-21, Q-22, Q-23, Q-24, Q-25, Q-27, Q-31, Q-32, Q-33, Q-34, Q-35, Q-36, Q-37, Q-38 | Q-1, Q-26, Q-29, Q-39 | — | Q-3, Q-6, Q-7, Q-16, Q-17, Q-20, Q-30, Q-40, Q-41, Q-42 |
 
 > Estados asignados por fechas: inicio ≤ hoy ≤ entrega → In Progress; entrega pasada → Done;
 > inicio futuro → To Do; sin fechas → Backlog.
@@ -65,8 +64,8 @@ gantt
   Modelo de venta consultiva · Melissa :done, 2026-06-22, 2026-07-02
   Universidad Vida — Onboarding · Melissa, Felipe :2026-07-20, 2026-07-23
   Universidad Vida — Modelo de competencias, calendarización y evaluación de asesores · Alejandro, Melissa :2026-07-09, 2026-07-23
-  Desk research + bench de estrategias de contacto en frío y caliente · Alejandro :active, 2026-06-30, 2026-07-04
-  Validación con stakeholders · Alejandro, Melissa :active, 2026-07-03, 2026-07-04
+  Desk research + bench de estrategias de contacto en frío y caliente · Alejandro :done, 2026-06-30, 2026-07-04
+  Validación con stakeholders · Alejandro, Melissa :done, 2026-07-03, 2026-07-04
   6 sacrificial concepts — contacto no cliente sin CUA · Alejandro :2026-07-06, 2026-07-10
   Informe con estrategias validadas por CUA, Cumplimiento y Legal (contacto con y sin CUA) · Alejandro :2026-07-10, 2026-07-15
   Plantillas WhatsApp y correo de primer contacto con CUA · Felipe :2026-07-10, 2026-07-16
@@ -76,7 +75,7 @@ gantt
   Despliegue — Universidad Vida · Melissa :2026-08-10, 2026-08-29
   section AMI Relanzamiento
   6 guías resumidas (PDFs) · Felipe, Alejandro :done, 2026-06-22, 2026-07-01
-  Validación con stakeholders · Alejandro :active, 2026-07-01, 2026-07-04
+  Validación con stakeholders · Alejandro :done, 2026-07-01, 2026-07-04
   Entrega final con ajustes de producto · Alejandro :2026-07-06, 2026-07-09
   section Evolution+: B2B Cobranzas
   Investigación perfil 1 · Stefanie :done, 2026-06-22, 2026-06-25
@@ -116,8 +115,8 @@ FFVV Vida Individual: playbook de ventas, Universidad Vida, estrategia de contac
 | Q-3 | Modelo de venta consultiva | Done | Entregado (7 días) | Arquitectura de la conversación: preguntas de descubrimiento que anclan la oferta en las motivaciones del cliente, no en el producto | 22/06/2026 | 01/07/2026 | 1 🪙 | Melissa | Service Design | — | ↓ curva de aprendizaje; +conversión |
 | Q-4 | Universidad Vida — Onboarding | To Do | Programada (3 días) | Formación de hábitos tempranos del asesor: práctica espaciada y feedback inmediato desde el día 1 | 20/07/2026 | 22/07/2026 | 2 🪙 2 🪙 | Melissa, Felipe | Service Design | Capacidad limitada equipo Learning | −25–40% ramp-up asesores jr (est.) |
 | Q-5 | Universidad Vida — Modelo de competencias, calendarización y evaluación de asesores | To Do | Programada; inicio movido al 09/07 (aprobado por owner, 03/07) | Progresión por niveles con evaluación y reconocimiento: metas visibles + refuerzo de estatus para sostener la motivación del asesor | 09/07/2026 | 22/07/2026 | 2 🪙 2 🪙 | Alejandro, Melissa | Service Design | Capacidad limitada equipo Learning | −25–40% ramp-up asesores jr (est.) |
-| Q-6 | Desk research + bench de estrategias de contacto en frío y caliente | In Progress | En curso (4 días) | Evidencia de qué gatillos abren conversación en frío vs. caliente (reciprocidad, curiosidad, personalización) | 30/06/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Design | — | Insumo para estrategia de contacto |
-| Q-7 | Validación con stakeholders | In Progress | Hoy (1 día) | Co-creación con stakeholders: la participación temprana genera ownership y facilita la adopción posterior | 03/07/2026 | 03/07/2026 | 0 🪙 0 🪙 | Alejandro, Melissa | Service Design | — | Alineamiento de la mesa |
+| Q-6 | Desk research + bench de estrategias de contacto en frío y caliente | Done | Entregado (4 días) | Evidencia de qué gatillos abren conversación en frío vs. caliente (reciprocidad, curiosidad, personalización) | 30/06/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Design | — | Insumo para estrategia de contacto |
+| Q-7 | Validación con stakeholders | Done | Entregado (1 día) | Co-creación con stakeholders: la participación temprana genera ownership y facilita la adopción posterior | 03/07/2026 | 03/07/2026 | 0 🪙 0 🪙 | Alejandro, Melissa | Service Design | — | Alineamiento de la mesa |
 | Q-8 | 6 sacrificial concepts: contacto no cliente sin CUA | To Do | Programada (4 días) | Conceptos provocadores para elicitar reacciones y objeciones reales de no clientes (preferencias reveladas, no declaradas) | 06/07/2026 | 09/07/2026 | 0 🪙 | Alejandro | Service Design | — | Insumo para estrategia sin CUA |
 | Q-9 | Informe con estrategias validadas por CUA, Cumplimiento y Legal (contacto con y sin CUA) | To Do | Programada (3 días); mesa con Legal, Cumplimiento, CUA y FFVV | Arquitectura de decisión del primer contacto dentro del marco legal: canal, momento y mensaje que maximizan respuesta sin fricción normativa | 10/07/2026 | 14/07/2026 | 2 🪙 | Alejandro | Service Design | Estrategia CUA en definición | +20–30% agendamiento de citas (est.) |
 | Q-10 | Plantillas WhatsApp y correo de primer contacto **con** CUA | To Do | Programada (4 días) | Mensajes con personalización, prueba social y mínima fricción de respuesta (contestar debe costar un toque) | 10/07/2026 | 15/07/2026 | 2 🪙 | Felipe | Service Design | — | +20–30% agendamiento de citas (est.) |
@@ -132,7 +131,7 @@ Relanzamiento AMI: guías resumidas para el entendimiento y uso eficiente de los
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Q-16 | 6 guías resumidas (PDFs) | Done | Entregadas (6 días) | Simplificación radical de la póliza: lenguaje claro, ejemplos concretos y jerarquía de coberturas — ataca la sobrecarga informativa, causa #1 de desconfianza en seguros | 22/06/2026 | 30/06/2026 | 0 🪙 0 🪙 | Felipe, Alejandro | Service Design | — | ↓ ~25–30% casos NPS «no recibí información» (est.) |
-| Q-17 | Validación con stakeholders | In Progress | En curso (3 días); pendiente check de Producto y equipo médico (nombre, coberturas, red, servicios) | Chequeo de comprensión real: testear que el usuario entiende, no solo que el stakeholder aprueba | 01/07/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
+| Q-17 | Validación con stakeholders | Done | Entregada (3 días); check de Producto y equipo médico completado (nombre, coberturas, red, servicios) | Chequeo de comprensión real: testear que el usuario entiende, no solo que el stakeholder aprueba | 01/07/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
 | Q-18 | Entrega final con ajustes de producto | To Do | Programada (3 días) | Iteración final: cerrar las brechas de comprensión detectadas en la validación | 06/07/2026 | 08/07/2026 | 3 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
 
 ### EPIC-3 · Evolution+: B2B Cobranzas
