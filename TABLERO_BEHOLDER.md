@@ -59,47 +59,47 @@ gantt
   axisFormat %d/%m
   title Roadmap Q3-2026 — Behavioral Design
   section Mesa Back to Basics
-  Q-1 Playbook — Storytelling de asesoría :active, 2026-07-02, 2026-07-09
-  Q-2 Playbook — Materiales de venta a compart :2026-07-07, 2026-07-11
-  Q-3 Modelo de venta consultiva :done, 2026-06-22, 2026-07-02
-  Q-4 Universidad Vida — Onboarding :2026-07-20, 2026-07-23
-  Q-5 Universidad Vida — Modelo de competencia :2026-07-09, 2026-07-23
-  Q-6 Desk research + bench de estrategias de  :active, 2026-06-30, 2026-07-04
-  Q-7 Validación con stakeholders :active, 2026-07-03, 2026-07-04
-  Q-8 6 sacrificial concepts — contacto no cli :2026-07-06, 2026-07-10
-  Q-9 Informe con estrategias validadas por CU :2026-07-10, 2026-07-15
-  Q-10 Plantillas WhatsApp y correo de primer c :2026-07-10, 2026-07-16
-  Q-12 Actualizar materiales de venta del aseso :2026-07-06, 2026-07-11
-  Q-13 Co-diseño AIDA Skill Trainer :crit, 2026-07-13, 2026-07-25
-  Q-14 Despliegue — FFVV stock :2026-08-10, 2026-08-22
-  Q-15 Despliegue — Universidad Vida :2026-08-10, 2026-08-29
+  Playbook — Storytelling de asesoría · Melissa, Felipe :active, 2026-07-02, 2026-07-09
+  Playbook — Materiales de venta a com · Melissa, Alejandro :2026-07-07, 2026-07-11
+  Modelo de venta consultiva · Melissa :done, 2026-06-22, 2026-07-02
+  Universidad Vida — Onboarding · Melissa, Felipe :2026-07-20, 2026-07-23
+  Universidad Vida — Modelo de compete · Alejandro, Melissa :2026-07-09, 2026-07-23
+  Desk research + bench de estrategias · Alejandro :active, 2026-06-30, 2026-07-04
+  Validación con stakeholders · Alejandro, Melissa :active, 2026-07-03, 2026-07-04
+  6 sacrificial concepts — contacto no · Alejandro :2026-07-06, 2026-07-10
+  Informe con estrategias validadas po · Alejandro :2026-07-10, 2026-07-15
+  Plantillas WhatsApp y correo de prim · Felipe :2026-07-10, 2026-07-16
+  Actualizar materiales de venta del a · Melissa, Alejandro :2026-07-06, 2026-07-11
+  Co-diseño AIDA Skill Trainer · Felipe, Melissa :crit, 2026-07-13, 2026-07-25
+  Despliegue — FFVV stock · Alejandro :2026-08-10, 2026-08-22
+  Despliegue — Universidad Vida · Melissa :2026-08-10, 2026-08-29
   section AMI Relanzamiento
-  Q-16 6 guías resumidas (PDFs) :done, 2026-06-22, 2026-07-01
-  Q-17 Validación con stakeholders :active, 2026-07-01, 2026-07-04
-  Q-18 Entrega final con ajustes de producto :2026-07-06, 2026-07-09
+  6 guías resumidas (PDFs) · Felipe, Alejandro :done, 2026-06-22, 2026-07-01
+  Validación con stakeholders · Alejandro :active, 2026-07-01, 2026-07-04
+  Entrega final con ajustes de product · Alejandro :2026-07-06, 2026-07-09
   section Evolution+: B2B Cobranzas
-  Q-20 Investigación perfil 1 :done, 2026-06-22, 2026-06-25
-  Q-21 Investigación perfil 2 :2026-07-08, 2026-07-21
-  Q-22 Diseño de experiencia :2026-07-06, 2026-07-25
-  Q-23 Diseño de piloto :2026-07-21, 2026-08-06
-  Q-24 Ejecución de piloto :2026-08-07, 2026-08-29
-  Q-25 Diseño de solución final :2026-08-31, 2026-09-05
+  Investigación perfil 1 · Stefanie :done, 2026-06-22, 2026-06-25
+  Investigación perfil 2 · Stefanie :2026-07-08, 2026-07-21
+  Diseño de experiencia · Stefanie :2026-07-06, 2026-07-25
+  Diseño de piloto · Stefanie :2026-07-21, 2026-08-06
+  Ejecución de piloto · Stefanie, Melissa :2026-08-07, 2026-08-29
+  Diseño de solución final · Stefanie, Felipe :2026-08-31, 2026-09-05
   section Spark: Vivo Pack
-  Q-26 Plan de testeo del concepto :active, 2026-07-02, 2026-07-08
-  Q-27 Artefactos diseñados para el testeo :2026-07-06, 2026-07-08
+  Plan de testeo del concepto · Stefanie, Melissa, Alejandro :active, 2026-07-02, 2026-07-08
+  Artefactos diseñados para el testeo · Stefanie, Melissa :2026-07-06, 2026-07-08
   section Bienestar 360
-  Q-29 Status Bienestar 360 :active, 2026-07-03, 2026-07-08
-  Q-30 Playbook del servicio :done, 2026-06-22, 2026-06-27
-  Q-31 Seguimiento del servicio :2026-07-06, 2026-07-18
+  Status Bienestar 360 · Stefanie :active, 2026-07-03, 2026-07-08
+  Playbook del servicio · Stefanie :done, 2026-06-22, 2026-06-27
+  Seguimiento del servicio · Stefanie :2026-07-06, 2026-07-18
   section Modelo de venta — Convenios
-  Q-32 Entendimiento del modelo de venta actual :2026-07-20, 2026-08-08
-  Q-33 Análisis de escalamiento del modelo Vida :2026-08-10, 2026-08-12
-  Q-34 Diseño del modelo de venta de convenios :2026-08-12, 2026-08-22
+  Entendimiento del modelo de venta ac · Alejandro, Melissa :2026-07-20, 2026-08-08
+  Análisis de escalamiento del modelo  · Alejandro, Melissa :2026-08-10, 2026-08-12
+  Diseño del modelo de venta de conven · Alejandro, Melissa :2026-08-12, 2026-08-22
   section Renovación EPS
-  Q-35 Guías resumidas EPS — Multiempresa :2026-07-06, 2026-07-08
-  Q-36 Validación con comercial y gestión de Sa :2026-07-08, 2026-07-16
-  Q-37 Entrega final con ajustes de producto :2026-07-16, 2026-07-17
-  Q-38 Diseño To Be — Ecosistema de entendimien :2026-07-13, 2026-08-06
+  Guías resumidas EPS — Multiempresa · Felipe :2026-07-06, 2026-07-08
+  Validación con comercial y gestión d · Felipe :2026-07-08, 2026-07-16
+  Entrega final con ajustes de product · Felipe, Alejandro :2026-07-16, 2026-07-17
+  Diseño To Be — Ecosistema de entendi · Alejandro, Felipe :2026-07-13, 2026-08-06
 ```
 <!-- GANTT:END -->
 

@@ -207,9 +207,10 @@ def cmd_gantt():
         elif q["estado"] == "In Progress":
             tags.append("active")
         tag = (", ".join(tags) + ", ") if tags else ""
-        nombre = q["nombre"].replace(":", " —")[:40]
+        nombre = q["nombre"].replace(":", " —")[:36]
+        quien = ", ".join(q["monedas"]) if q["monedas"] else q["bds"].replace(":", "")
         fin = q["cierre"] + timedelta(days=1)  # mermaid trata el fin como exclusivo
-        L.append(f"  {q['clave']} {nombre} :{tag}{q['inicio']:%Y-%m-%d}, {fin:%Y-%m-%d}")
+        L.append(f"  {nombre} · {quien} :{tag}{q['inicio']:%Y-%m-%d}, {fin:%Y-%m-%d}")
     L.append("```")
     texto = TABLERO.read_text(encoding="utf-8")
     nuevo = re.sub(r"(<!-- GANTT:START -->).*?(<!-- GANTT:END -->)",
