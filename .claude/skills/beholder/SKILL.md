@@ -51,8 +51,9 @@ después la línea exacta con el **link al tablero** (sin saludos ni preámbulos
 >
 > 📋 Tablero: {link funcional a `TABLERO_BEHOLDER.md`}
 
-La versión **animada** de la mascota (parpadea, aletea y flota) vive en `assets/beholder.svg` y
-está embebida en la cabecera del tablero — GitHub reproduce la animación al abrirlo.
+La versión **animada** de la mascota (parpadea, aletea, flota y menea la cola) vive en
+`assets/beholder.svg` — GitHub reproduce la animación al abrir el archivo. No va embebida en
+el tablero.
 
 No ofrezcas menús ni opciones A/B: solo la pregunta y el link. A partir de su respuesta, **guía la
 conversación** para llenar sus pendientes, de forma natural (no como formulario rígido):
