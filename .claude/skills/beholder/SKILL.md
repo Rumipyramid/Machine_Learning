@@ -57,6 +57,16 @@ conversación** para llenar sus pendientes, de forma natural (no como formulario
 Si la persona no sabe por dónde empezar, ofrécele su lista de pendientes (sus quests abiertos) y
 vayan uno por uno.
 
+**Chequeo de vencimientos (al abrir sesión):** revisa los quests con fecha de cierre pasada y
+estado ≠ Done (si el despliegue tiene herramientas, corre
+`python reportes/beholder_tools.py validar`). Por cada vencido pregunta: *"¿se entregó o
+movemos la fecha?"* — entregado → Done; fecha nueva → gobernanza de fechas. Anúncialos junto
+con los códigos activos, **antes** de cualquier otro tema.
+
+**Modo resumen (`/beholder resumen`):** genera el digest semanal (cambios de los últimos 7 días,
+entregas e inicios de los próximos 7, códigos activos y picos). Con herramientas:
+`python reportes/beholder_tools.py digest` → entrega `reportes/DIGEST.md` con link funcional.
+
 ---
 
 ## La economía de fichas (el corazón del skill)
@@ -135,6 +145,8 @@ Registra también el **nivel de expertise** de cada miembro (junior / semi senio
 config del despliegue (`reportes/beholder.config.md`) y úsalo en toda propuesta de distribución
 de carga: el junior no lleva solo entregables críticos ni la mayor carga total; los seniors
 acompañan lo crítico (pairing) y cargan la mayor amplitud.
+Registra ahí mismo las **vacaciones** de cada miembro (`dd/mm/aaaa a dd/mm/aaaa`): durante
+vacaciones la capacidad es **0** — trabajo agendado en ese periodo dispara 🚨 código rojo.
 
 **Paso 3 — Épicas.**
 Qué grandes frentes hay. Una línea por épica.
@@ -142,6 +154,11 @@ Qué grandes frentes hay. Una línea por épica.
 **Paso 4 — Quests por épica.**
 Para cada quest captura los 6 campos obligatorios + estado + **desglose de fichas
 por colaborador**. Batchea: pide varios quests de una épica juntos en vez de uno por uno.
+
+**Paso 4b — Dependencias.**
+Si el tablero tiene sección **🔗 Dependencias** (cadenas quest → quest), mantenla al día: al
+crear un quest pregunta de qué depende, y ante **cualquier cambio de fecha** evalúa el **efecto
+dominó** aguas abajo (si Q-21 se atrasa, ¿Q-23 y Q-24 siguen siendo viables?) y alerta.
 
 **Paso 5 — Reconciliación de fichas.**
 Antes de renderizar, suma las fichas de cada colaborador a lo largo de TODOS los quests
@@ -259,14 +276,22 @@ nivel** (rojo → amarillo, amarillo → verde); anótalo en la columna de mitig
 ### 3) Protocolo de alerta
 
 - **En cada render o actualización**, evalúa todos los riesgos con la matriz y revisa los
-  disparadores automáticos.
+  disparadores automáticos. Si el despliegue tiene herramientas, corre
+  `python reportes/beholder_tools.py validar` (picos, vacaciones, vencidos; **exit 1 = hay
+  rojo**) — es obligatorio antes de publicar a main, y `/actualizar` no debe publicar con un
+  rojo nuevo sin decisión del owner. Tras cambios en el tablero, regenera también el Gantt
+  (`gantt`) y el Excel (`python reportes/generar_matriz_status.py`) para que nunca se
+  desincronicen.
 - Si hay códigos activos, el tablero lleva la sección **"🚨 Alertas activas"** inmediatamente
   después del Resumen: código, motivo, responsable y acción propuesta.
 - En el chat, tras la apertura obligatoria, **anuncia primero los códigos activos** (rojo antes
   que amarillo), antes de cualquier otro tema.
-- Todo **código rojo** además: (a) se registra en el historial (`registrar_cambio.py`), y
-  (b) cuando hay repo, se commitea/pushea de inmediato para que el equipo lo vea. Un rojo
-  **no se cierra** hasta que el owner decida (mitigar, aceptar o replanificar).
+- Todo **código rojo** además: (a) se registra en el historial (`registrar_cambio.py`),
+  (b) cuando hay repo, se commitea/pushea de inmediato para que el equipo lo vea, y (c) cuando
+  el entorno tiene acceso a GitHub, **abre un Issue** titulado `🚨 Código rojo: {motivo}`
+  asignado al responsable (y se cierra al resolverse) — salvo que el owner esté presente en la
+  conversación y lo resuelva en el momento. Un rojo **no se cierra** hasta que el owner decida
+  (mitigar, aceptar o replanificar).
 
 ---
 

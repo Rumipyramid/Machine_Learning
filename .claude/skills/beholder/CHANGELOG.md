@@ -3,6 +3,20 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.5.0] — 2026-07-04
+### Añadido
+- **Caja de herramientas** (`reportes/beholder_tools.py`): `validar` (picos de concurrencia,
+  vacaciones, vencidos, monedas sin programar — exit 1 si hay rojo, obligatorio antes de
+  publicar), `digest` (resumen semanal → `DIGEST.md`), `gantt` (Gantt Mermaid embebido en el
+  tablero) y `retro` (monedas vs. días para calibrar estimaciones).
+- **Excel desde el tablero:** `generar_matriz_status.py` ahora lee `TABLERO_BEHOLDER.md` como
+  única fuente de verdad — se acabó la desincronización.
+- **Chequeo de vencimientos al abrir sesión** (¿se entregó o movemos la fecha?), **modo
+  `/beholder resumen`**, sección **🔗 Dependencias** con evaluación de efecto dominó ante
+  cambios de fecha, e **Issues de GitHub por código rojo**.
+- **Vacaciones en el roster** de la config: capacidad 0 durante el periodo; trabajo agendado
+  en vacaciones dispara 🚨 código rojo (lo detecta el validador).
+
 ## [1.4.1] — 2026-07-03
 ### Añadido
 - **Roster con nivel de expertise** en la config del despliegue (`beholder.config.md`): el

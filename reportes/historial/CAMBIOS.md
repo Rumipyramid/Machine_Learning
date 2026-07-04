@@ -1,10 +1,13 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-03T22:22:50 · Cambios vigentes: 51
+> Retención: 15 días · Última actualización: 2026-07-04T03:13:38 · Cambios vigentes: 54
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-04T03:13:38 | Alejandro | Beholder | Mejoras v1.5.0 | Validación manual; Excel aparte; sin digest/gantt/retro | beholder_tools.py (validar/digest/gantt/retro), Excel desde el tablero, dependencias, vencimientos, Issues por rojo | normal | aplicado |
+| 2026-07-04T03:13:38 | Alejandro | Config | Vacaciones | — | Campo Vacaciones en el roster; capacidad 0 durante el periodo (regla 5) | normal | aplicado |
+| 2026-07-04T03:13:38 | Beholder | Q-6/Q-7/Q-17 | Código rojo | In Progress con cierre 03/07 | 🚨 Vencidos: pendiente decisión del owner (entregado → Done, o mover fecha) | normal | aplicado |
 | 2026-07-03T22:22:50 | Alejandro | Q-40/Q-42 | Estado | Diseñado (estado intermedio) | Done — el estado 'Diseñado' se elimina del tablero | normal | aplicado |
 | 2026-07-03T22:20:09 | Alejandro | EPIC-9 | Épica | Backlog Q3 (previas), status 'Backlog del Chapter SD1' | Repositorio de iniciativas en Backlog; estado/status: solo 'Backlog' | normal | aplicado |
 | 2026-07-03T21:53:44 | Alejandro | Economía | Regla de enteros | Se permitían medias monedas (1.5, 1.3) | Nadie puede tener media moneda; totales se redondean al múltiplo válido más cercano (empate: abajo) | normal | aplicado |

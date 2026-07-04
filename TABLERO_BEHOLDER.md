@@ -1,6 +1,6 @@
 # 🐉 Tablero Beholder — Behavioral Design (RIMAC)
 
-**Estado del proyecto:** WIP  ·  **Ciclo/Sprint:** Roadmap Q3-2026 (Chapter SD1, 22/06–13/09)  ·  **Fecha:** 2026-07-03
+**Estado del proyecto:** WIP  ·  **Ciclo/Sprint:** Roadmap Q3-2026 (Chapter SD1, 22/06–13/09)  ·  **Fecha:** 2026-07-04
 
 > **v2 — Reestructura del 2026-07-03:** tablero reconstruido desde la tabla final
 > `Proyectos_BD_iniciativas.md`. Las épicas son los **proyectos BD** y los quests son las
@@ -12,8 +12,9 @@
 > múltiplo válido más cercano; en empate, hacia abajo).
 > **Monedas:** una cifra por persona, en el mismo orden que la columna *Behavioral designers*.
 > Las columnas **Fecha de inicio / Fecha de cierre** son campos controlados: cambiarlas
-> requiere aprobación del owner. Roster y nivel de expertise: `reportes/beholder.config.md`.
-> ⚠️ La matriz Excel quedó desincronizada de esta versión.
+> requiere aprobación del owner. Roster, expertise y vacaciones: `reportes/beholder.config.md`.
+> **Herramientas:** `python reportes/beholder_tools.py {validar|digest|gantt|retro}` ·
+> el Excel se regenera desde este tablero con `python reportes/generar_matriz_status.py`.
 
 ## 📊 Resumen
 | Métrica | Valor |
@@ -24,13 +25,17 @@
 | Monedas Q3 comprometidas | 81 🪙 |
 | Regla de capacidad | ≤ 8 🪙 simultáneas por persona |
 | Quests con riesgo alto 🚩 | 1 (Q-13 AIDA) |
-| Códigos de alerta | 0 🚨 rojos · 4 ⚠️ amarillos |
+| Códigos de alerta | 3 🚨 rojos · 5 ⚠️ amarillos |
 
 ## 🚨 Alertas activas
+- 🚨 **Código rojo — Q-6 vencido:** Desk research contacto frío/caliente cerró el 03/07 y sigue In Progress. ¿Se entregó (→ Done) o se mueve la fecha (aprobación del owner)?
+- 🚨 **Código rojo — Q-7 vencido:** Validación con stakeholders (mesa BTB) cerró el 03/07 y sigue In Progress. ¿Se entregó o se mueve la fecha?
+- 🚨 **Código rojo — Q-17 vencido:** Validación de guías AMI cerró el 03/07 y sigue In Progress (pendiente check de Producto y equipo médico). ¿Se entregó o se mueve la fecha?
 - ⚠️ **Código amarillo — Q-9 estrategia CUA en definición:** la mesa con Legal/Cumplimiento/CUA/FFVV debe cerrar antes del 10/07 (inicio del informe).
 - ⚠️ **Código amarillo — Q-35 servicios valorados:** Producto pide no comunicarlos y la guía Multiempresa arranca el 06/07.
 - ⚠️ **Código amarillo — Q-4/Q-5 Universidad Vida:** capacidad limitada del equipo Learning sin mitigación confirmada.
 - ⚠️ **Código amarillo — Q-13 AIDA (mitigado desde rojo):** comité de priorización con 3 herramientas en paralelo; mitigación activa: consolidación + evidencia de usabilidad.
+- ⚠️ **Código amarillo — Q-28 sin programar:** 2 🪙 asignadas (Stefanie 1, Melissa 1) sin fechas; al agendarse debe evitar la ventana al límite de Stefanie (08–17/07).
 
 > ✅ **Resueltos hoy (03/07):** 🚨 código rojo de Stefanie (pico 11) y ⚠️ amarillos de capacidad de
 > Felipe (9) y Alejandro (8.5) — redistribución 50/50 en monedas enteras + cambios de fecha
@@ -43,6 +48,60 @@
 
 > Estados asignados por fechas: inicio ≤ hoy ≤ entrega → In Progress; entrega pasada → Done;
 > inicio futuro → To Do; sin fechas → Backlog.
+
+## 📅 Gantt del trimestre
+> Generado desde las fechas del tablero con `python reportes/beholder_tools.py gantt`.
+
+<!-- GANTT:START -->
+```mermaid
+gantt
+  dateFormat YYYY-MM-DD
+  axisFormat %d/%m
+  title Roadmap Q3-2026 — Behavioral Design
+  section Mesa Back to Basics
+  Q-1 Playbook — Storytelling de asesoría :active, 2026-07-02, 2026-07-09
+  Q-2 Playbook — Materiales de venta a compart :2026-07-07, 2026-07-11
+  Q-3 Modelo de venta consultiva :done, 2026-06-22, 2026-07-02
+  Q-4 Universidad Vida — Onboarding :2026-07-20, 2026-07-23
+  Q-5 Universidad Vida — Modelo de competencia :2026-07-09, 2026-07-23
+  Q-6 Desk research + bench de estrategias de  :active, 2026-06-30, 2026-07-04
+  Q-7 Validación con stakeholders :active, 2026-07-03, 2026-07-04
+  Q-8 6 sacrificial concepts — contacto no cli :2026-07-06, 2026-07-10
+  Q-9 Informe con estrategias validadas por CU :2026-07-10, 2026-07-15
+  Q-10 Plantillas WhatsApp y correo de primer c :2026-07-10, 2026-07-16
+  Q-12 Actualizar materiales de venta del aseso :2026-07-06, 2026-07-11
+  Q-13 Co-diseño AIDA Skill Trainer :crit, 2026-07-13, 2026-07-25
+  Q-14 Despliegue — FFVV stock :2026-08-10, 2026-08-22
+  Q-15 Despliegue — Universidad Vida :2026-08-10, 2026-08-29
+  section AMI Relanzamiento
+  Q-16 6 guías resumidas (PDFs) :done, 2026-06-22, 2026-07-01
+  Q-17 Validación con stakeholders :active, 2026-07-01, 2026-07-04
+  Q-18 Entrega final con ajustes de producto :2026-07-06, 2026-07-09
+  section Evolution+: B2B Cobranzas
+  Q-20 Investigación perfil 1 :done, 2026-06-22, 2026-06-25
+  Q-21 Investigación perfil 2 :2026-07-08, 2026-07-21
+  Q-22 Diseño de experiencia :2026-07-06, 2026-07-25
+  Q-23 Diseño de piloto :2026-07-21, 2026-08-06
+  Q-24 Ejecución de piloto :2026-08-07, 2026-08-29
+  Q-25 Diseño de solución final :2026-08-31, 2026-09-05
+  section Spark: Vivo Pack
+  Q-26 Plan de testeo del concepto :active, 2026-07-02, 2026-07-08
+  Q-27 Artefactos diseñados para el testeo :2026-07-06, 2026-07-08
+  section Bienestar 360
+  Q-29 Status Bienestar 360 :active, 2026-07-03, 2026-07-08
+  Q-30 Playbook del servicio :done, 2026-06-22, 2026-06-27
+  Q-31 Seguimiento del servicio :2026-07-06, 2026-07-18
+  section Modelo de venta — Convenios
+  Q-32 Entendimiento del modelo de venta actual :2026-07-20, 2026-08-08
+  Q-33 Análisis de escalamiento del modelo Vida :2026-08-10, 2026-08-12
+  Q-34 Diseño del modelo de venta de convenios :2026-08-12, 2026-08-22
+  section Renovación EPS
+  Q-35 Guías resumidas EPS — Multiempresa :2026-07-06, 2026-07-08
+  Q-36 Validación con comercial y gestión de Sa :2026-07-08, 2026-07-16
+  Q-37 Entrega final con ajustes de producto :2026-07-16, 2026-07-17
+  Q-38 Diseño To Be — Ecosistema de entendimien :2026-07-13, 2026-08-06
+```
+<!-- GANTT:END -->
 
 ## 📋 Épicas y quests (detalle)
 
@@ -146,6 +205,27 @@ fechas, monedas ni perfiles, y salen hacia una épica activa cuando se priorizan
 | Q-46 | Vida Individual — Experiencia Postventa | Backlog | Backlog | Por definir | — | — | — | (por confirmar) | — | Sponsor: Diana Riofrío | — |
 | Q-47 | Ahorro Salud — Derivación eficiente MER | Backlog | Backlog | Por definir | — | — | — | (por confirmar) | — | — | — |
 
+## 🔗 Dependencias
+> Cadenas inferidas de las fases de cada proyecto (confírmalas/ajústalas). Ante un cambio de
+> fecha, el Beholder evalúa el **efecto dominó** aguas abajo y alerta si la cadena se rompe.
+
+| Quest | Depende de | Cadena |
+|---|---|---|
+| Q-9 | Q-6, Q-7, Q-8 | Research + validación + sacrificial concepts → informe CUA |
+| Q-10 | Q-9 | Informe CUA → plantillas de contacto con CUA |
+| Q-14 | Q-9, Q-10, Q-12 | Estrategia + materiales → despliegue FFVV stock |
+| Q-15 | Q-4, Q-5 | Onboarding + modelo de competencias → despliegue UV |
+| Q-18 | Q-17 | Validación → entrega final guías AMI |
+| Q-23 | Q-21, Q-22 | Investigación + diseño de experiencia → piloto |
+| Q-24 | Q-23 | Diseño de piloto → ejecución |
+| Q-25 | Q-24 | Ejecución del piloto → solución final |
+| Q-27 | Q-26 | Plan de testeo → artefactos |
+| Q-28 | Q-27 | Test ejecutado → análisis y síntesis |
+| Q-33 | Q-32 | Entendimiento del modelo → análisis de escalamiento |
+| Q-34 | Q-33 | Análisis → diseño del modelo de venta |
+| Q-36 | Q-35 | Guía Multiempresa → validación |
+| Q-37 | Q-36 | Validación → entrega final EPS |
+
 ## 🪙 Libro mayor de monedas (capacidad del equipo)
 > **Economía Q3:** las monedas miden el esfuerzo total del trimestre por persona.
 > **Regla 1:** nadie usa **más de 8 monedas al mismo tiempo**. **Regla 2:** reparto en
@@ -162,6 +242,8 @@ fechas, monedas ni perfiles, y salen hacia una épica activa cuando se priorizan
 **Alertas de capacidad:** sin alertas — todos los picos respetan la regla de ≤ 8 simultáneas.
 - ⚠️ **Monedas sin programar:** Q-28 (Stefanie: 1, Melissa: 1). Sumarán al pico cuando se agende.
 - Nota: Stefanie queda **al límite (8)** entre el 08/07 y el 17/07 — no agendar nada nuevo en esa ventana.
+- 🏖️ **Vacaciones:** ninguna registrada. Se registran en el roster de la config; durante
+  vacaciones la capacidad es **0** y el trabajo agendado en ese periodo dispara 🚨 código rojo.
 
 ## 🚩 Registro de riesgos
 | Clave | Quest | Riesgo | Probabilidad | Impacto | Código | Mitigación sugerida |
