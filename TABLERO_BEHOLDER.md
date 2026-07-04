@@ -1,7 +1,5 @@
 # 🐉 Tablero Beholder — Behavioral Design (RIMAC)
 
-<p align="center"><img src="assets/beholder.svg" width="340" alt="El Beholder — “Beauty is in the eye of the beholder”"></p>
-
 **Estado del proyecto:** WIP  ·  **Ciclo/Sprint:** Roadmap Q3-2026 (Chapter SD1, 22/06–13/09)  ·  **Fecha:** 2026-07-04
 
 > **v2 — Reestructura del 2026-07-03:** tablero reconstruido desde la tabla final
