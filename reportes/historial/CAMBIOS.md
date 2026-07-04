@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-04T17:02:39 · Cambios vigentes: 62
+> Retención: 15 días · Última actualización: 2026-07-04T17:32:38 · Cambios vigentes: 63
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-04T17:32:38 | Alejandro | Q-5 | Investigación | Sin fuentes secundarias | /seeker completado: research/universidad_vida_fuentes_secundarias.md (10 fuentes registradas F-16 a F-25) | normal | aplicado |
 | 2026-07-04T17:02:39 | Alejandro | Q-6 | Estado | In Progress (vencido, código rojo) | Done — entregado | normal | aplicado |
 | 2026-07-04T17:02:39 | Alejandro | Q-7 | Estado | In Progress (vencido, código rojo) | Done — entregado | normal | aplicado |
 | 2026-07-04T17:02:39 | Alejandro | Q-17 | Estado | In Progress (vencido, código rojo) | Done — check de Producto y equipo médico completado | normal | aplicado |
