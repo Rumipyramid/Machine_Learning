@@ -27,7 +27,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
-| `.claude/skills/cronista/` · `seeker/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación, tablero Jira, decks Rimac, publicar a main |
+| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac, publicar a main |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 
 ## Base de conocimiento (codex)
@@ -64,6 +64,32 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
   seguro de desastres, WTP ratio.
 - Marginales validadas (v1.2): any-insurance ≈ 0.40, desconfía ≈ 0.46, desastres ≈ 0.035,
   bancarizado ≈ 0.59, sin cobertura previsional ≈ 0.60.
+
+### 📌 Familia de skills de investigación (`seeker` / `gossiper` / `marketer`)
+Tres skills comparten el mismo mecanismo de ancho de banda de búsqueda (tipologización
+previa → búsquedas paralelas → clasificación de fuentes → tabla resumen), pero cada uno
+cubre un registro distinto de evidencia:
+
+- **`/seeker`** (`.claude/skills/seeker/`): registro empírico + teórico/crítico. Rigor
+  académico y metodológico (papers, meta-análisis, teoría).
+- **`/gossip`** (`.claude/skills/gossiper/`): registro social/mediático — X/Twitter,
+  Reddit, foros, TikTok, comentarios de noticias. La validez se mide en **frecuencia de
+  cobertura** y **validación social** (comentarios que confirman/desmienten), no en rigor
+  académico.
+- **`/marketer`** (`.claude/skills/marketer/`): registro de negocio — benchmarks de
+  startups nacientes o empresas consolidadas. La validez se mide en **resultados
+  publicados y verificables** (ROI, market share, filings, rondas de financiamiento).
+
+Los tres registran las fuentes que usan en el ledger de `cronista`
+(`research/fuentes/registro_fuentes.md`), aplicando la misma rúbrica A-E: `gossiper`
+suele producir fuentes D/E (prensa/redes sin método propio) y `marketer` suele producir
+fuentes A/B/C (filings, informes de mercado, prensa especializada) — es esperado, no un
+defecto, dado el tipo de evidencia que cada uno busca.
+
+- **`/trinidad`** (`.claude/skills/trinidad/`): orquesta a los tres a la vez sobre el
+  mismo tema — los corre en paralelo, mantiene sus criterios de validez separados (no
+  mezcla rigor académico con tracción social ni con evidencia de negocio) y consolida
+  todo en un reporte único de 360°, registrando también en `cronista`.
 
 ### 📌 Skill: `lapuerta` (usuarios sintéticos de seguros)
 Generador + simulador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).
@@ -107,6 +133,8 @@ variables al modelo `lapuerta`.
 - Artefactos generados (CSV de muestras, ZIP, `__pycache__`, `dist/`) NO se versionan.
 - **Evidencia → `cronista`:** toda fuente referenciable usada para crear o fundamentar
   se registra en `research/fuentes/registro_fuentes.md` (resumen, rigurosidad, autor, año).
+  Aplica también a lo que traigan `/gossip` (noticias/redes) y `/marketer` (benchmarks
+  de negocio), no solo a `/seeker`.
 - ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
 
 ---
