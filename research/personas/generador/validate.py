@@ -67,6 +67,7 @@ TARGETS = {
     "seguro_desastres":             (0.033, 0.015, lambda u: u["seguro_desastres_naturales"]),
     "bancarizado":                  (0.59, 0.05, lambda u: u["bancarizado"]),
     "sin cobertura previsional":    (0.60, 0.07, lambda u: u["cobertura_previsional"] == "ninguna"),
+    "comparte datos pricing (alta)": (0.15, 0.05, lambda u: u["disposicion_compartir_datos_pricing"] == "alta"),
 }
 
 
@@ -138,6 +139,11 @@ def report_asociaciones(U: list[dict]) -> bool:
          lambda u: u["tenencia_seguro"] != "ninguno"),
         ("Desastres ↑ con exposición (alta→baja decrec.)", "exposicion_riesgo_sismico", ["alta", "media", "baja"], True,
          lambda u: u["seguro_desastres_naturales"]),
+        ("Comparte datos ↑ con apertura_datos_ia (alta→baja decrec.)", "apertura_datos_ia", ["alta", "media", "baja"], True,
+         lambda u: u["disposicion_compartir_datos_pricing"] == "alta"),
+        ("Comparte datos ↑ con confianza_aseguradora (confía→desconfía decrec.)", "confianza_aseguradora",
+         ["confia_plena", "neutral", "desconfia"], True,
+         lambda u: u["disposicion_compartir_datos_pricing"] == "alta"),
     ]
     for desc, dim, order, dec, pred in checks:
         rates = cond_rate_by(U, dim, pred)

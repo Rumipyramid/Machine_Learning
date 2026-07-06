@@ -172,6 +172,11 @@ def sample_desastres(rng: random.Random, schema: dict, nse: str,
     return rng.random() < p
 
 
+def sample_disposicion_datos(rng: random.Random, schema: dict, apertura: str, confianza: str) -> str:
+    tabla = schema["modelos_derivados"]["disposicion_compartir_datos_pricing"]["tabla"]
+    return weighted_choice(rng, tabla[apertura][confianza])
+
+
 def sample_wtp(rng: random.Random, schema: dict, tenencia: str) -> float:
     dist = schema["modelos_derivados"]["wtp_ratio"]["distribucion"]
     params = dist["asegurado"] if tenencia != "ninguno" else dist["no_asegurado"]
@@ -200,6 +205,7 @@ def generate_user(rng: random.Random, schema: dict, idx: int,
     bancarizado = sample_bancarizado(rng, schema, nse, region, acceso)
 
     confianza = sample_confianza(rng, schema, canal)
+    disposicion_datos = sample_disposicion_datos(rng, schema, apertura, confianza)
     tenencia = sample_tenencia(rng, schema, nse, edu, sesgo, confianza, situacion, bancarizado, vehiculo, cobertura_prev)
     desastres = sample_desastres(rng, schema, nse, exposicion, tenencia)
     wtp = sample_wtp(rng, schema, tenencia)
@@ -220,6 +226,7 @@ def generate_user(rng: random.Random, schema: dict, idx: int,
         "exposicion_riesgo_sismico": exposicion,
         "apertura_datos_ia": apertura,
         "confianza_aseguradora": confianza,
+        "disposicion_compartir_datos_pricing": disposicion_datos,
         "tenencia_seguro": tenencia,
         "seguro_desastres_naturales": desastres,
         "wtp_ratio": wtp,

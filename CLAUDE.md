@@ -58,12 +58,17 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 - **Lámina explicativa:** `research/personas/laminas/` (script `build_lamina_detalle.py` + PNG)
 - **Apps web:** `research/personas/apps/reglas/` (explorador por reglas, autocontenido) y
   `research/personas/apps/llm/` (preguntas libres con Claude vía API).
-- Variables (17, esquema v1.2): generación, NSE, región, educación financiera, sesgo del presente,
-  canal, **situación laboral, cobertura previsional, tenencia de vehículo, acceso digital,
-  bancarizado**, exposición sísmica, apertura a datos/IA, confianza, tenencia de seguro,
-  seguro de desastres, WTP ratio.
-- Marginales validadas (v1.2): any-insurance ≈ 0.40, desconfía ≈ 0.46, desastres ≈ 0.035,
-  bancarizado ≈ 0.59, sin cobertura previsional ≈ 0.60.
+- Variables (18, esquema v1.3): generación, NSE, región, educación financiera, sesgo del presente,
+  canal, situación laboral, cobertura previsional, tenencia de vehículo, acceso digital,
+  bancarizado, exposición sísmica, apertura a datos/IA, confianza, **disposición a compartir
+  datos para pricing**, tenencia de seguro, seguro de desastres, WTP ratio.
+- Marginales validadas (v1.3): any-insurance ≈ 0.40, desconfía ≈ 0.46, desastres ≈ 0.035,
+  bancarizado ≈ 0.59, sin cobertura previsional ≈ 0.60, comparte datos pricing (alta) ≈ 0.15.
+- **v1.3 (2026-07-06):** `disposicion_compartir_datos_pricing` separa la confianza *abstracta*
+  en IA de la disposición *conductual* real a compartir datos para UBI/pricing con IA — brecha
+  actitud-conducta calibrada con hallazgos de `/trinidad` sobre modelos de seguros rentables
+  (telemática, seguros paramétricos, riesgo reputacional de IA no transparente en claims). Ver
+  `research/personas/generador/matriz_usuarios_sinteticos.md` §3.
 
 ### 📌 Familia de skills de investigación (`seeker` / `gossiper` / `marketer`)
 Tres skills comparten el mismo mecanismo de ancho de banda de búsqueda (tipologización

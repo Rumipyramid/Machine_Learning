@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Matriz de variables para generación de usuarios sintéticos - seguros (Perú)",
-    "version": "1.2",
+    "version": "1.3",
     "fecha": "2026-07-06",
-    "fuente_datos": "research/seguros_comportamiento_mundo_peru.md + research/updates/",
-    "nota": "Distribuciones mezclan datos reales (SBS 2023, APESEG, APEIM, BCRP/INEI, Gestión) con supuestos ilustrativos marcados con 'origen'. v1.1 añade situacion_laboral, tenencia_vehiculo, acceso_digital y bancarizado (reportes quincenales).",
+    "fuente_datos": "research/seguros_comportamiento_mundo_peru.md + research/updates/ + hallazgos /trinidad 2026-07-06 (research/fuentes/registro_fuentes.md F-22..F-24)",
+    "nota": "Distribuciones mezclan datos reales (SBS 2023, APESEG, APEIM, BCRP/INEI, Gestión) con supuestos ilustrativos marcados con 'origen'. v1.1 añade situacion_laboral, tenencia_vehiculo, acceso_digital y bancarizado (reportes quincenales). v1.3 añade disposicion_compartir_datos_pricing, que separa la confianza ABSTRACTA en IA (apertura_datos_ia) de la disposición CONDUCTUAL real a compartir datos de comportamiento para pricing (UBI/telemetría), calibrada con evidencia internacional de adopción real de seguros usage-based.",
     "leyenda_origen": {
       "dato": "anclado en una fuente citada en la investigación",
       "supuesto": "estimación ilustrativa para completar la matriz; ajustable"
@@ -98,7 +98,7 @@
       }
     },
     "apertura_datos_ia": {
-      "descripcion": "Disposicion a compartir datos / confiar en IA (depende de generacion)",
+      "descripcion": "Confianza ABSTRACTA/general en la IA (depende de generacion). No mide disposicion conductual real a compartir datos de comportamiento para pricing -- ver disposicion_compartir_datos_pricing en modelos_derivados, que aplica la brecha actitud-conducta documentada por /trinidad 2026-07-06.",
       "origen": "dato (Gen Z 87% confia en IA vs Boomers 75%)",
       "condicional_de": "generacion",
       "tabla": {
@@ -364,6 +364,30 @@
           "sd": 0.2
         }
       }
+    },
+    "disposicion_compartir_datos_pricing": {
+      "descripcion": "Disposicion CONDUCTUAL a compartir datos de comportamiento (telemetria, geolocalizacion, biometria) para pricing real tipo usage-based insurance (UBI) o triage con IA -- distinta de apertura_datos_ia, que solo mide confianza abstracta/general en la IA. Depende de apertura_datos_ia Y de confianza_aseguradora: la brecha actitud-conducta muestra que la confianza general en la IA no se traduce en compartir datos reales si no hay confianza especifica en el asegurador.",
+      "origen": "supuesto ajustado por analogia internacional (Reino Unido: 62% preocupado por compartir datos de manejo, solo 32% comodo con recoleccion telematica; adopcion real de telematica ~12% pese a intencion declarada mayor -- Insurance Business Mag 2026, Carrier Management 2026). Ajustado a la baja para Peru por su mayor desconfianza institucional en seguros (48% desconfia vs. mercados maduros). Fuentes: research/fuentes/registro_fuentes.md F-22, F-23 (hallazgos /trinidad 2026-07-06).",
+      "condicional_de": ["apertura_datos_ia", "confianza_aseguradora"],
+      "marginal_implicita_aprox": 0.15,
+      "tabla": {
+        "alta": {
+          "confia_plena": {"alta": 0.45, "media": 0.35, "baja": 0.2},
+          "neutral": {"alta": 0.3, "media": 0.4, "baja": 0.3},
+          "desconfia": {"alta": 0.1, "media": 0.3, "baja": 0.6}
+        },
+        "media": {
+          "confia_plena": {"alta": 0.25, "media": 0.4, "baja": 0.35},
+          "neutral": {"alta": 0.15, "media": 0.35, "baja": 0.5},
+          "desconfia": {"alta": 0.05, "media": 0.2, "baja": 0.75}
+        },
+        "baja": {
+          "confia_plena": {"alta": 0.1, "media": 0.25, "baja": 0.65},
+          "neutral": {"alta": 0.05, "media": 0.15, "baja": 0.8},
+          "desconfia": {"alta": 0.02, "media": 0.08, "baja": 0.9}
+        }
+      },
+      "nota_riesgo_reputacional_ia": "Un evento de comunicacion no transparente sobre IA en siniestros (caso Lemonade 2021: acusacion de 'fisonomia' algoritmica tras un hilo viral -- F-24) puede erosionar confianza_aseguradora de forma abrupta y arrastrar hacia abajo esta variable en el segmento expuesto a la noticia. No modelado dinamicamente (el generador no simula shocks temporales); documentado aqui como riesgo cualitativo a considerar en el diseno de producto."
     }
   }
 }
