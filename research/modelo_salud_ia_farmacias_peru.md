@@ -82,86 +82,97 @@ adyacentes a farmacias durante la pandemia (SciELO Salud Pública — peer-revie
 
 El peruano ya gestiona su salud así, solo que sin estructura: la farmacia ya es el frente de
 atención primaria de facto, y **existe un proyecto de ley activo en el Congreso (08488/2024-CR)**
-que propone formalizar casi exactamente la mitad "humana" del modelo. Las tres pistas
-**convergen** en que la necesidad y la infraestructura ya existen. **Divergen** en que la
-evidencia empírica sobre la capa de IA de orientación es floja (precisión real ~45% en un
-estudio, no 90%+), y el caso de negocio más parecido a este modelo (Babylon Health) colapsó
-exactamente por sobreclamar ahí.
+que propone formalizar casi exactamente la mitad "humana" del modelo (Infobae, 2026). Las tres
+pistas **convergen** en que la necesidad y la infraestructura ya existen. **Divergen** en que la
+evidencia empírica sobre la capa de IA de orientación es floja — precisión real ~45% en un
+estudio, no 90%+ (PMC — estudio Japón, 2024) — y el caso de negocio más parecido a este modelo
+(Babylon Health) colapsó exactamente por sobreclamar ahí (The Lancet, 2020).
 
 ### 🔬 Pista empírica/teórica
 
 - **Precisión real de symptom-checkers, no de laboratorio**: un symptom-checker de IA en un
   hospital comunitario en Japón tuvo solo **45.1%** de precisión diagnóstica en 3 años de uso
-  real, sin mejora en el tiempo (F-43). En cambio, el instrumento finlandés **Omaolo** logró
-  una validación formal robusta como **dispositivo médico auditado** (clase IIa, marcado CE)
-  (F-42, F-63) — la diferencia es la rigurosidad de validación, no la tecnología en sí.
-- **La literatura crítica advierte sobre la métrica misma**: "Accuracy is inaccurate" (F-44)
-  argumenta que medir solo precisión diagnóstica es la métrica equivocada; lo que importa es
-  el *outcome* de salud real del paciente.
+  real, sin mejora en el tiempo (PMC — estudio Japón, 2024). En cambio, el instrumento
+  finlandés **Omaolo** logró una validación formal robusta como **dispositivo médico auditado**
+  (clase IIa, marcado CE) (PMC — estudio Finlandia/Omaolo, 2024; Protocolo Omaolo, 2023) — la
+  diferencia es la rigurosidad de validación, no la tecnología en sí.
+- **La literatura crítica advierte sobre la métrica misma**: "Accuracy is inaccurate" (PMC —
+  "Accuracy is inaccurate", 2024) argumenta que medir solo precisión diagnóstica es la métrica
+  equivocada; lo que importa es el *outcome* de salud real del paciente.
+- La automedicación en Perú tiene factores asociados documentados académicamente (SciELO Perú,
+  2021), y la telemedicina peruana enfrenta barreras multi-capa (tecnológicas, humano-sociales,
+  psicosocial-antropológicas, de gobernanza y económicas) documentadas en perspectivas
+  peer-reviewed sobre el país (PMC — perspectiva Perú, 2024; PMC — Telemedicine in Peru, 2024).
 
-| Fuente | Tipo de evidencia | Validez/Confiabilidad | Peso |
-|---|---|---|---|
-| SciELO — automedicación no responsable, Perú (F-36) | Peer-reviewed, Perú específico | ✅ contexto local directo | 🟢 Alto |
-| Symptom checker Finlandia, Omaolo (F-42, F-63) | Estudio de validación de instrumento | ✅ dispositivo médico auditado | 🟢 Alto |
-| Symptom checker Japón, 45.1% (F-43) | Observacional retrospectivo, 3 años | ⚠️ precisión moderada-baja, un solo hospital | 🟡 Medio |
-| Perspectivas telemedicina Perú (F-40, F-41) | Peer-reviewed, contexto país | ✅ directamente aplicable | 🟢 Alto |
-| Automedicación 68% vs. 20% (F-35, F-38) | Encuesta/estudio vía prensa | ⚠️ tensión entre fuentes, método no verificado | 🟡 Medio |
+| Fuente | Autor, año | Tipo de evidencia | Validez/Confiabilidad | Peso |
+|---|---|---|---|---|
+| Automedicación no responsable, Perú | SciELO Perú, 2021 | Peer-reviewed, Perú específico | ✅ contexto local directo | 🟢 Alto |
+| Symptom checker Finlandia, Omaolo | PMC — estudio Omaolo, 2024 | Estudio de validación de instrumento | ✅ dispositivo médico auditado | 🟢 Alto |
+| Symptom checker Japón, 45.1% | PMC — estudio Japón, 2024 | Observacional retrospectivo, 3 años | ⚠️ precisión moderada-baja, un solo hospital | 🟡 Medio |
+| Perspectivas telemedicina Perú | PMC — perspectiva Perú, 2024 | Peer-reviewed, contexto país | ✅ directamente aplicable | 🟢 Alto |
+| Automedicación 68% vs. 20% | Blog USIL/Infobae, 2025; Infobae, 2026 | Encuesta/estudio vía prensa | ⚠️ tensión entre fuentes, método no verificado | 🟡 Medio |
 
 ### 📱 Pista social/mediática — 🌡️ Circulando
 
 - Un caso viral de cita de EsSalud asignada para **2026** generó indignación masiva y
-  comentarios de casos similares o peores (F-45).
+  comentarios de casos similares o peores (El Popular/La República, 2025).
 - Regiones con esperas **>90 días**: Lima, Arequipa, La Libertad, Piura, Lambayeque, Huánuco,
-  Apurímac y Cusco (F-46) — el problema abarca Lima y provincias, no solo provincias.
+  Apurímac y Cusco (RPP, 2025) — el problema abarca Lima y provincias, no solo provincias.
 - **Riesgo a vigilar**: 94% de médicos encuestados está preocupado por que sus pacientes usen
-  IA para orientación médica — señal de resistencia del lado del proveedor, no solo del
-  paciente.
+  IA para orientación médica (encuesta médica, 2025, vía PMC — revisión, 2024) — señal de
+  resistencia del lado del proveedor, no solo del paciente.
 - ⚠️ Limitación honesta: no se encontró discusión específica en foros/RRSS peruanos sobre
   "farmacia vs. médico" — se usó la señal social más cercana disponible (indignación con
-  EsSalud), declarada como aproximación, no como equivalente exacto.
+  EsSalud, El Popular/La República, 2025), declarada como aproximación, no como equivalente
+  exacto.
 
 ### 📈 Pista de negocio
 
 - **Proyecto de Ley 08488/2024-CR** (en debate): farmacias privadas como puntos de atención
   primaria — adhesión voluntaria, farmacéutico licenciado obligatorio, medicamentos del stock
-  SIS, el farmacéutico **monitorea y deriva** (no diagnostica), ~1,000 de 30,000+ boticas
-  como alcance inicial (F-47). **Valida directamente** la mitad humana+delivery+derivación
+  SIS, el farmacéutico **monitorea y deriva** (no diagnostica), ~1,000 de 30,000+ boticas como
+  alcance inicial (Infobae, 2026). **Valida directamente** la mitad humana+delivery+derivación
   del modelo propuesto.
-- **Plan Nacional de Telesalud 2026** (MINSA): Red Nacional conecta >2,000 establecimientos;
-  plataforma **Teleatiendo** ya registra >3 millones de atenciones remotas (F-48).
+- **Plan Nacional de Telesalud 2026** (MINSA, 2026): Red Nacional conecta >2,000
+  establecimientos; plataforma **Teleatiendo** ya registra >3 millones de atenciones remotas.
 - **Infraestructura de delivery ya existe a escala**: InkaFarma+Mifarma suman 2,245 farmacias
   (18% de boticas del país), delivery de 30-45 min operativo, ingresos S/.6,327M en 2022
-  (F-49). No hay que construir la red — hay que integrarse a ella.
+  (Gestión/Peru Retail, 2024). No hay que construir la red — hay que integrarse a ella.
 - ⚠️ **Precedente de negocio que colapsó**: **Babylon Health** (valuación pico ~US$4.2B)
   construyó esta misma arquitectura (triage IA → derivación) y quebró en 2023. El Lancet
-  concluyó que su sistema "no ofreció evidencia convincente de desempeñarse mejor que
-  médicos humanos... con posibilidad de desempeño significativamente peor" (F-50). La causa
+  concluyó que su sistema "no ofreció evidencia convincente de desempeñarse mejor que médicos
+  humanos... con posibilidad de desempeño significativamente peor" (The Lancet, 2020). La causa
   no fue "la IA no sirve" sino **sobreclamar sin validación clínica publicada**. Ada Health
-  (misma categoría) sigue operando por mantener validación clínica peer-reviewed (F-51).
-- Mercado de salud digital LatAm crece ~20% CAGR, pero Perú no es líder regional (Brasil/
-  México/Chile sí) — oportunidad y a la vez falta de comparables locales (F-52).
+  (misma categoría) sigue operando por mantener validación clínica peer-reviewed (IntuitionLabs,
+  s.f.).
+- Mercado de salud digital LatAm crece ~20% CAGR, pero Perú no es líder regional — Brasil/
+  México/Chile sí (Grand View Research/Market Data Forecast, 2025) — oportunidad y a la vez
+  falta de comparables locales.
 
 ### ⚖️ Síntesis
 
 **Convergencia fuerte**: el modelo no inventa una necesidad ni una arquitectura nueva — formaliza
-con IA algo que ya ocurre informalmente, que el regulador ya diseña por su cuenta (PL 08488) sin
-la capa de IA, y para lo cual ya existe infraestructura de distribución (InkaFarma/Mifarma) y de
-telemedicina estatal (Teleatiendo).
+con IA algo que ya ocurre informalmente, que el regulador ya diseña por su cuenta (PL 08488;
+Infobae, 2026) sin la capa de IA, y para lo cual ya existe infraestructura de distribución
+(InkaFarma/Mifarma; Gestión/Peru Retail, 2024) y de telemedicina estatal (Teleatiendo; MINSA,
+2026).
 
 **Divergencia crítica**: la pieza específicamente nueva —la capa de IA de orientación— es la
-menos madura empíricamente y tiene el precedente de negocio más cercano fallando por sobreclamar
-desempeño sin validación (Babylon).
+menos madura empíricamente (PMC — estudio Japón, 2024) y tiene el precedente de negocio más
+cercano fallando por sobreclamar desempeño sin validación (The Lancet, 2020, sobre Babylon).
 
 **Espacios de mejora identificados**:
 1. No lanzar la IA sin estudio de validación de triage propio (sesgo conservador hacia
-   sobre-derivar).
-2. Apoyarse en el PL 08488 (IA como apoyo al farmacéutico, no sustituto).
-3. Vender velocidad, no superioridad clínica (la razón real de la automedicación es tiempo,
-   no desconfianza).
+   sobre-derivar) — lección directa del caso Babylon (The Lancet, 2020).
+2. Apoyarse en el PL 08488 (IA como apoyo al farmacéutico, no sustituto) (Infobae, 2026).
+3. Vender velocidad, no superioridad clínica — la razón real de la automedicación es tiempo
+   (51.48%) e ineficiencia (59.34%), no desconfianza (7.21%) (Infobae, 2026).
 4. Transparencia sobre qué decide la IA y qué decide el humano, desde el día uno (mismo
    patrón de brecha actitud-conducta encontrado en la investigación de seguros — ver §5).
-5. Canal de bajo ancho de banda / asistido para Sierra y Selva (no solo app/chat).
-6. Aliarse con InkaFarma/Mifarma en vez de construir logística propia.
+5. Canal de bajo ancho de banda / asistido para Sierra y Selva, dadas las barreras de
+   telemedicina peruana ya documentadas (PMC — perspectiva Perú, 2024).
+6. Aliarse con InkaFarma/Mifarma en vez de construir logística propia (Gestión/Peru Retail,
+   2024).
 
 ---
 
