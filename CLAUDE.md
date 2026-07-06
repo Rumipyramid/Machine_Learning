@@ -27,7 +27,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
-| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio), tablero Jira, decks Rimac, publicar a main |
+| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac, publicar a main |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 
 ## Base de conocimiento (codex)
@@ -85,6 +85,11 @@ Los tres registran las fuentes que usan en el ledger de `cronista`
 suele producir fuentes D/E (prensa/redes sin método propio) y `marketer` suele producir
 fuentes A/B/C (filings, informes de mercado, prensa especializada) — es esperado, no un
 defecto, dado el tipo de evidencia que cada uno busca.
+
+- **`/trinidad`** (`.claude/skills/trinidad/`): orquesta a los tres a la vez sobre el
+  mismo tema — los corre en paralelo, mantiene sus criterios de validez separados (no
+  mezcla rigor académico con tracción social ni con evidencia de negocio) y consolida
+  todo en un reporte único de 360°, registrando también en `cronista`.
 
 ### 📌 Skill: `lapuerta` (usuarios sintéticos de seguros)
 Generador + simulador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).
