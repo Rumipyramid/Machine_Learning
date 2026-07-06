@@ -11,6 +11,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `buenas-mierdas/` | Altar/archivo 3D web "Buenas Mierdas" (arte, web vernácula, hauntología) | Vite+React+R3F; `cd buenas-mierdas && npm install && npm run dev`; ver su `README.md` |
 | `Self driving car/` | Simulación de auto autónomo (Pygame + red neuronal) | Entrada: `self driving car.py`; config en `config_file.txt` |
 | `research/seguros_comportamiento_mundo_peru.md` | Investigación base: comportamiento/percepción de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS… |
+| `research/modelo_salud_ia_farmacias_peru.md` | Modelo de triage IA + farmacias + atención humana (`/trinidad` + `/seeker`) | Gestión de salud del peruano, PL 08488, RE-AIM (25 RQs), estrategias de testeo (silent trial, stepped-wedge, CFIR…) |
 | `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro | Derivado de /seeker; alineado a glosario SBS |
 | `research/personas/generador/` | Fuente de verdad del modelo de personas sintéticas | generador + esquema + matriz + tooling de calibración |
 | `research/personas/generador/synthetic_user_schema.json` | Esquema machine-readable (v1.2, 17 variables) | Lo consume el generador |
