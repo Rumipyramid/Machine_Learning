@@ -88,66 +88,116 @@ evidencia empírica sobre la capa de IA de orientación es floja — precisión 
 estudio, no 90%+ (PMC — estudio Japón, 2024) — y el caso de negocio más parecido a este modelo
 (Babylon Health) colapsó exactamente por sobreclamar ahí (The Lancet, 2020).
 
+Formato de cada afirmación de esta sección: **Afirmación** → *Evidencia* (dato/cita) →
+**Rigurosidad** (1-5) → **Fuente** (Autor, año). La escala 1-5 traduce la rúbrica A-E de
+`cronista` (`research/fuentes/registro_fuentes.md`): **5**=A (peer-reviewed/dato primario),
+**4**=B (oficial/regulador), **3**=C (industria/consultora con método propio), **2**=D
+(prensa/secundaria sin método propio), **1**=E (opinión sin método verificable).
+
 ### 🔬 Pista empírica/teórica
 
-- **Precisión real de symptom-checkers, no de laboratorio**: un symptom-checker de IA en un
-  hospital comunitario en Japón tuvo solo **45.1%** de precisión diagnóstica en 3 años de uso
-  real, sin mejora en el tiempo (PMC — estudio Japón, 2024). En cambio, el instrumento
-  finlandés **Omaolo** logró una validación formal robusta como **dispositivo médico auditado**
-  (clase IIa, marcado CE) (PMC — estudio Finlandia/Omaolo, 2024; Protocolo Omaolo, 2023) — la
-  diferencia es la rigurosidad de validación, no la tecnología en sí.
-- **La literatura crítica advierte sobre la métrica misma**: "Accuracy is inaccurate" (PMC —
-  "Accuracy is inaccurate", 2024) argumenta que medir solo precisión diagnóstica es la métrica
-  equivocada; lo que importa es el *outcome* de salud real del paciente.
-- La automedicación en Perú tiene factores asociados documentados académicamente (SciELO Perú,
-  2021), y la telemedicina peruana enfrenta barreras multi-capa (tecnológicas, humano-sociales,
-  psicosocial-antropológicas, de gobernanza y económicas) documentadas en perspectivas
-  peer-reviewed sobre el país (PMC — perspectiva Perú, 2024; PMC — Telemedicine in Peru, 2024).
+- **68.21% de peruanos se automedica con antiinflamatorios**, más común en 18-39 años
+  (60.36%), con preferencia por marca (66.2%) sobre genérico (16.23%).
+  *Evidencia:* estudio/encuesta reportado por blog universitario. **Rigurosidad: 2/5.**
+  (Blog USIL/Infobae, 2025)
+- **La automedicación no responsable en Perú tiene factores asociados documentados
+  académicamente** (más allá de la anécdota).
+  *Evidencia:* artículo peer-reviewed con metodología explícita, muestra y análisis propios.
+  **Rigurosidad: 5/5.** (SciELO Perú, 2021)
+- **~1 de cada 5 peruanos recurre a la automedicación**; los motivos dominantes son
+  ineficiencia del sistema de salud (59.34%) y falta de tiempo (51.48%), muy por encima de
+  la desconfianza médica (7.21%, la razón menos citada). ⚠️ En tensión con el dato anterior
+  de 68.21% — probable diferencia de definición (fármaco específico vs. automedicación
+  general).
+  *Evidencia:* cifra de estudio/encuesta reportada por prensa, sin acceso al método completo.
+  **Rigurosidad: 2/5.** (Infobae, 2026)
+- **Un symptom-checker de IA en un hospital comunitario japonés tuvo solo 45.1% de precisión
+  diagnóstica** en 3 años de uso real, sin mejora en el tiempo.
+  *Evidencia:* estudio observacional retrospectivo, peer-reviewed. ⚠️ Validez externa baja
+  (un solo hospital). **Rigurosidad: 5/5.** (PMC — estudio Japón, 2024)
+- **El symptom-checker finlandés Omaolo logró una validación formal robusta como dispositivo
+  médico auditado** (clase IIa, marcado CE) — la diferencia con el caso japonés es la
+  rigurosidad de la validación, no la tecnología en sí.
+  *Evidencia:* estudio de validación de instrumento + protocolo mixto de validación clínica,
+  ambos peer-reviewed. **Rigurosidad: 5/5.** (PMC — estudio Omaolo, 2024; Protocolo Omaolo,
+  2023)
+- **Medir solo "precisión diagnóstica" es la métrica equivocada para evaluar chatbots
+  médicos**; lo que importa es el *outcome* de salud real del paciente.
+  *Evidencia:* artículo crítico/teórico peer-reviewed ("Accuracy is inaccurate").
+  **Rigurosidad: 5/5.** (PMC — "Accuracy is inaccurate", 2024)
+- **La telemedicina peruana enfrenta barreras en 5 capas**: tecnológicas, humano-sociales,
+  psicosocial-antropológicas, de gobernanza y económicas.
+  *Evidencia:* perspectiva de país peer-reviewed. **Rigurosidad: 5/5.**
+  (PMC — perspectiva Perú, 2024)
+- **Perú desarrolló telemedicina antes de la pandemia, lo que permitió un escalamiento rápido
+  en 2020**; persiste la necesidad urgente de un sistema nacional de telesalud integrado.
+  *Evidencia:* artículo peer-reviewed sobre origen e implementación de la telemedicina en
+  Perú. **Rigurosidad: 5/5.** (PMC — Telemedicine in Peru, 2024)
 
-| Fuente | Autor, año | Tipo de evidencia | Validez/Confiabilidad | Peso |
-|---|---|---|---|---|
-| Automedicación no responsable, Perú | SciELO Perú, 2021 | Peer-reviewed, Perú específico | ✅ contexto local directo | 🟢 Alto |
-| Symptom checker Finlandia, Omaolo | PMC — estudio Omaolo, 2024 | Estudio de validación de instrumento | ✅ dispositivo médico auditado | 🟢 Alto |
-| Symptom checker Japón, 45.1% | PMC — estudio Japón, 2024 | Observacional retrospectivo, 3 años | ⚠️ precisión moderada-baja, un solo hospital | 🟡 Medio |
-| Perspectivas telemedicina Perú | PMC — perspectiva Perú, 2024 | Peer-reviewed, contexto país | ✅ directamente aplicable | 🟢 Alto |
-| Automedicación 68% vs. 20% | Blog USIL/Infobae, 2025; Infobae, 2026 | Encuesta/estudio vía prensa | ⚠️ tensión entre fuentes, método no verificado | 🟡 Medio |
+| Fuente | Autor, año | Tipo de evidencia | Rigurosidad |
+|---|---|---|---|
+| Automedicación no responsable, Perú | SciELO Perú, 2021 | Peer-reviewed, Perú específico | 5/5 |
+| Symptom checker Finlandia, Omaolo | PMC — estudio Omaolo, 2024 | Validación de instrumento | 5/5 |
+| Symptom checker Japón, 45.1% | PMC — estudio Japón, 2024 | Observacional retrospectivo | 5/5 (⚠️ N=1 hospital) |
+| Perspectivas telemedicina Perú | PMC — perspectiva Perú, 2024 | Peer-reviewed, contexto país | 5/5 |
+| Automedicación 68% | Blog USIL/Infobae, 2025 | Encuesta vía prensa | 2/5 |
+| Automedicación 20% | Infobae, 2026 | Encuesta vía prensa | 2/5 |
 
 ### 📱 Pista social/mediática — 🌡️ Circulando
 
-- Un caso viral de cita de EsSalud asignada para **2026** generó indignación masiva y
-  comentarios de casos similares o peores (El Popular/La República, 2025).
-- Regiones con esperas **>90 días**: Lima, Arequipa, La Libertad, Piura, Lambayeque, Huánuco,
-  Apurímac y Cusco (RPP, 2025) — el problema abarca Lima y provincias, no solo provincias.
-- **Riesgo a vigilar**: 94% de médicos encuestados está preocupado por que sus pacientes usen
-  IA para orientación médica (encuesta médica, 2025, vía PMC — revisión, 2024) — señal de
-  resistencia del lado del proveedor, no solo del paciente.
-- ⚠️ Limitación honesta: no se encontró discusión específica en foros/RRSS peruanos sobre
-  "farmacia vs. médico" — se usó la señal social más cercana disponible (indignación con
-  EsSalud, El Popular/La República, 2025), declarada como aproximación, no como equivalente
-  exacto.
+- **Un caso viral de cita de EsSalud asignada para 2026 generó indignación masiva** y
+  comentarios de usuarios compartiendo casos similares o peores.
+  *Evidencia:* cobertura de prensa de un evento viral en redes sociales.
+  **Rigurosidad: 2/5.** (El Popular/La República, 2025)
+- **Ocho regiones tienen esperas mayores a 90 días** en especialidades de alta demanda: Lima,
+  Arequipa, La Libertad, Piura, Lambayeque, Huánuco, Apurímac y Cusco — el problema abarca
+  Lima y provincias, no solo provincias.
+  *Evidencia:* informe técnico citado por prensa especializada, sin acceso directo al
+  documento. **Rigurosidad: 2/5.** (RPP, 2025)
+- **94% de médicos encuestados está preocupado por que sus pacientes usen IA para orientación
+  médica** — señal de resistencia del lado del proveedor, no solo del paciente.
+  *Evidencia:* encuesta de mayo 2025 citada dentro de una revisión académica, sin acceso
+  directo a la encuesta primaria. ⚠️ **Rigurosidad: 3/5** (la revisión que la cita es
+  peer-reviewed, pero la encuesta original no fue verificada de forma independiente).
+  (encuesta médica, 2025, vía PMC — revisión, 2024)
+- ⚠️ **Limitación honesta**: no se encontró discusión específica en foros/RRSS peruanos sobre
+  "farmacia vs. médico" — se usó la señal social más cercana disponible (indignación viral
+  con EsSalud) como aproximación, no como equivalente exacto de esa conversación específica.
 
 ### 📈 Pista de negocio
 
-- **Proyecto de Ley 08488/2024-CR** (en debate): farmacias privadas como puntos de atención
-  primaria — adhesión voluntaria, farmacéutico licenciado obligatorio, medicamentos del stock
-  SIS, el farmacéutico **monitorea y deriva** (no diagnostica), ~1,000 de 30,000+ boticas como
-  alcance inicial (Infobae, 2026). **Valida directamente** la mitad humana+delivery+derivación
-  del modelo propuesto.
-- **Plan Nacional de Telesalud 2026** (MINSA, 2026): Red Nacional conecta >2,000
-  establecimientos; plataforma **Teleatiendo** ya registra >3 millones de atenciones remotas.
-- **Infraestructura de delivery ya existe a escala**: InkaFarma+Mifarma suman 2,245 farmacias
-  (18% de boticas del país), delivery de 30-45 min operativo, ingresos S/.6,327M en 2022
-  (Gestión/Peru Retail, 2024). No hay que construir la red — hay que integrarse a ella.
-- ⚠️ **Precedente de negocio que colapsó**: **Babylon Health** (valuación pico ~US$4.2B)
-  construyó esta misma arquitectura (triage IA → derivación) y quebró en 2023. El Lancet
-  concluyó que su sistema "no ofreció evidencia convincente de desempeñarse mejor que médicos
-  humanos... con posibilidad de desempeño significativamente peor" (The Lancet, 2020). La causa
-  no fue "la IA no sirve" sino **sobreclamar sin validación clínica publicada**. Ada Health
-  (misma categoría) sigue operando por mantener validación clínica peer-reviewed (IntuitionLabs,
-  s.f.).
-- Mercado de salud digital LatAm crece ~20% CAGR, pero Perú no es líder regional — Brasil/
-  México/Chile sí (Grand View Research/Market Data Forecast, 2025) — oportunidad y a la vez
-  falta de comparables locales.
+- **El Proyecto de Ley 08488/2024-CR propone que farmacias privadas se integren como puntos
+  de atención primaria**: adhesión voluntaria, farmacéutico licenciado obligatorio,
+  medicamentos del stock SIS, el farmacéutico monitorea y deriva (no diagnostica), ~1,000 de
+  30,000+ boticas como alcance inicial. **Valida directamente** la mitad
+  humana+delivery+derivación del modelo propuesto.
+  *Evidencia:* cobertura de prensa de un proyecto de ley oficial en debate (fuente primaria =
+  Congreso de la República, no accedida directamente). **Rigurosidad: 2/5.** (Infobae, 2026)
+- **El Plan Nacional de Telesalud 2026 (MINSA) conecta más de 2,000 establecimientos**, y la
+  plataforma Teleatiendo ya registra más de 3 millones de atenciones remotas.
+  *Evidencia:* comunicado oficial del ente rector de salud (Resolución Ministerial
+  293-2026/MINSA). **Rigurosidad: 4/5.** (MINSA, 2026)
+- **InkaFarma+Mifarma ya operan 2,245 farmacias (18% de las boticas del país) con delivery de
+  30-45 minutos**, e ingresos de S/.6,327M en 2022 — no hay que construir la red de
+  distribución, hay que integrarse a ella.
+  *Evidencia:* prensa especializada que reporta cifras de la propia empresa/grupo.
+  **Rigurosidad: 2/5.** (Gestión/Peru Retail, 2024)
+- **Babylon Health (triage con IA → derivación, valuación pico ~US$4.2B) colapsó en 2023**
+  porque su sistema "no ofreció evidencia convincente de desempeñarse mejor que médicos
+  humanos... con posibilidad de desempeño significativamente peor". La causa no fue "la IA
+  no sirve" sino sobreclamar desempeño sin validación clínica publicada.
+  *Evidencia:* evaluación publicada en una revista médica peer-reviewed (The Lancet), citada
+  por prensa especializada en negocios. **Rigurosidad: 5/5.** (The Lancet, 2020)
+- **Ada Health (misma categoría de producto que Babylon) sigue operando**, con foco en
+  investigación clínica peer-reviewed y partnerships farmacéuticos (Novartis, Bayer, Pfizer)
+  — el diferenciador de supervivencia es el rigor de validación, no la tecnología.
+  *Evidencia:* artículo de reseña de industria sin metodología propia. **Rigurosidad: 2/5.**
+  (IntuitionLabs, s.f.)
+- **El mercado de salud digital de LatAm crece ~20% CAGR** (~USD 12.82B en 2024 → USD 66.4B
+  en 2033), pero Brasil/México/Chile lideran la adopción regional — Perú no aparece como
+  referente.
+  *Evidencia:* informes de firmas de investigación de mercado, metodología propia no
+  auditable. **Rigurosidad: 3/5.** (Grand View Research/Market Data Forecast, 2025)
 
 ### ⚖️ Síntesis
 
