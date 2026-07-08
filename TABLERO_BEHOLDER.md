@@ -103,9 +103,27 @@ gantt
 ```
 <!-- GANTT:END -->
 
+## 🎽 Tallas de los proyectos
+> Tallaje t-shirt por épica: combina **esfuerzo total (🪙)**, **duración**, **personas** e
+> **incertidumbre**. Rúbrica: **XS** validaciones puntuales (≤2 🪙) · **S** 3–7 🪙 y ≤3 semanas ·
+> **M** 8–16 🪙, 3–6 semanas, alcance conocido · **L** esfuerzo alto con ventana larga o
+> incertidumbre alta (pilotos en campo) · **XL** >20 🪙, todo el trimestre, 3+ personas o frente crítico.
+
+| Épica | 🪙 | Duración | Personas | Talla | Driver de la talla |
+|---|---|---|---|---|---|
+| EPIC-1 Mesa Back to Basics | 25 | 22/06 → 28/08 (10 sem.) | 3 | **XL** | Mayor esfuerzo del Q, 15 iniciativas, frente crítico (AIDA 🚩) |
+| EPIC-3 Evolution+ Cobranzas | 16 | 22/06 → 04/09 (11 sem.) | 1–2 | **L** | Piloto en campo = incertidumbre alta; casi todo sobre Stefanie |
+| EPIC-7 Renovación EPS | 16 | 06/07 → 05/08 (4.5 sem.) | 2 + PD | **M** | Esfuerzo alto pero alcance definido; denso para Felipe |
+| EPIC-6 Modelo venta Convenios | 10 | 20/07 → 21/08 (5 sem.) | 2 | **M** | Diseño de modelo nuevo, incertidumbre media |
+| EPIC-4 Spark: Vivo Pack | 7 | 02/07 → 07/07 + análisis | 3 | **S** | Ventana corta; ojo: el go/no-go (Q-28) sigue sin fecha |
+| EPIC-5 Bienestar 360 | 4 | 22/06 → 17/07 | 1 | **S** | Mantenimiento y seguimiento |
+| EPIC-2 AMI Relanzamiento | 3 | 22/06 → 08/07 | 2 | **S** | Cierre cercano, solo queda la entrega final |
+| EPIC-8 Arquitectura BD | — | — | Todos | **XS** | Solo validaciones pendientes de frameworks ya terminados |
+| EPIC-9 Repositorio Backlog | — | — | — | — | Se dimensiona al priorizarse |
+
 ## 📋 Épicas y quests (detalle)
 
-### EPIC-1 · Mesa Back to Basics
+### EPIC-1 · Mesa Back to Basics · **Talla XL**
 FFVV Vida Individual: playbook de ventas, Universidad Vida, estrategia de contacto y AIDA.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
@@ -125,7 +143,7 @@ FFVV Vida Individual: playbook de ventas, Universidad Vida, estrategia de contac
 | Q-14 | Despliegue: FFVV stock | To Do | Programada (10 días) | Estrategia de adopción: defaults, recordatorios y campeones internos para instalar las nuevas prácticas en la fuerza de venta actual | 10/08/2026 | 21/08/2026 | 1 🪙 | Alejandro | Service Design | — | Adopción de la estrategia en FFVV actual |
 | Q-15 | Despliegue: Universidad Vida | To Do | Programada (15 días) | Adopción por cohortes con hitos visibles y reconocimiento: sostener el hábito formativo más allá del lanzamiento | 10/08/2026 | 28/08/2026 | 1 🪙 | Melissa | Service Design | — | Adopción del modelo por competencias |
 
-### EPIC-2 · AMI Relanzamiento
+### EPIC-2 · AMI Relanzamiento · **Talla S**
 Relanzamiento AMI: guías resumidas para el entendimiento y uso eficiente de los nuevos productos.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
@@ -134,7 +152,7 @@ Relanzamiento AMI: guías resumidas para el entendimiento y uso eficiente de los
 | Q-17 | Validación con stakeholders | Done | Entregada (3 días); check de Producto y equipo médico completado (nombre, coberturas, red, servicios) | Chequeo de comprensión real: testear que el usuario entiende, no solo que el stakeholder aprueba | 01/07/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
 | Q-18 | Entrega final con ajustes de producto | To Do | Programada (3 días) | Iteración final: cerrar las brechas de comprensión detectadas en la validación | 06/07/2026 | 08/07/2026 | 3 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
 
-### EPIC-3 · Evolution+: B2B Cobranzas
+### EPIC-3 · Evolution+: B2B Cobranzas · **Talla L**
 Optimizar la conciliación de pagos B2B; prioridad: facturas de corporativas y gran empresa (mayor volumen).
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
@@ -146,7 +164,7 @@ Optimizar la conciliación de pagos B2B; prioridad: facturas de corporativas y g
 | Q-24 | Ejecución de piloto | To Do | Programada (16 días); entra Melissa (bus factor); total ajustado 5 → 4 🪙 por regla de enteros | Prueba en campo midiendo conducta real (conciliación a tiempo), no intención declarada | 07/08/2026 | 28/08/2026 | 2 🪙 2 🪙 | Stefanie, Melissa | Service Design | — | — |
 | Q-25 | Diseño de solución final | To Do | Programada (5 días); entra Felipe (aprendizaje de cierre E2E); total ajustado 3 → 2 🪙 por regla de enteros | Escalar solo los nudges con evidencia del piloto; descartar lo que no movió conducta | 31/08/2026 | 04/09/2026 | 1 🪙 1 🪙 | Stefanie, Felipe | Service Design | — | Liberación de S/600k provisionados (proyecto) |
 
-### EPIC-4 · Spark: Vivo Pack
+### EPIC-4 · Spark: Vivo Pack · **Talla S**
 Testeo de concepto Vivo Pack.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
@@ -155,7 +173,7 @@ Testeo de concepto Vivo Pack.
 | Q-27 | Artefactos diseñados para el testeo | To Do | Programada (2 días) | Estímulos que hacen tangible el producto: la concreción visual reduce la abstracción del seguro | 06/07/2026 | 07/07/2026 | 1 🪙 1 🪙 | Stefanie, Melissa | Service Design | — | — |
 | Q-28 | Análisis y síntesis del test | Backlog | Sin programar en el gantt (0 días pintados) | Síntesis separando lo que la gente dice de lo que hace (brecha dicho-hecho) para el go/no-go | — | — | 1 🪙 1 🪙 | Stefanie, Melissa | Service Design | Suma al pico cuando se agende | Decisión go/no-go del concepto |
 
-### EPIC-5 · Bienestar 360
+### EPIC-5 · Bienestar 360 · **Talla S**
 Programa implementado; fase de mantenimiento y seguimiento.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
@@ -164,7 +182,7 @@ Programa implementado; fase de mantenimiento y seguimiento.
 | Q-30 | Playbook del servicio | Done | Entregado (5 días) | Codificación del modelo de cambio de hábitos del programa para hacerlo replicable | 22/06/2026 | 26/06/2026 | 2 🪙 | Stefanie | Service Design | — | Continuidad del programa |
 | Q-31 | Seguimiento del servicio | To Do | Programada (10 días) | Prevención del decaimiento del hábito: refuerzos post-implementación para sostener la conducta | 06/07/2026 | 17/07/2026 | 1 🪙 | Stefanie | Service Design | Presupuesto limitado para v2 | Mantenimiento de métricas |
 
-### EPIC-6 · Modelo de venta — Convenios
+### EPIC-6 · Modelo de venta — Convenios · **Talla M**
 Nuevo modelo de venta para convenios (antes en Backlog; ahora con iniciativas y fechas).
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
@@ -173,7 +191,7 @@ Nuevo modelo de venta para convenios (antes en Backlog; ahora con iniciativas y 
 | Q-33 | Análisis de escalamiento del modelo Vida Individual | To Do | Programada (2 días) | Evaluar qué palancas conductuales del modelo VI son transferibles al canal convenios y cuáles no | 10/08/2026 | 11/08/2026 | 1 🪙 1 🪙 | Alejandro, Melissa | Service Design | — | Escalamiento del modelo de venta VI |
 | Q-34 | Diseño del modelo de venta de convenios | To Do | Programada (8 días) | Arquitectura de decisión del nuevo canal: incentivos, defaults y flujo de decisión del empleado | 12/08/2026 | 21/08/2026 | 2 🪙 2 🪙 | Alejandro, Melissa | Service Design | — | Escalamiento del modelo de venta VI |
 
-### EPIC-7 · Renovación EPS
+### EPIC-7 · Renovación EPS · **Talla M**
 Guías EPS y ecosistema de entendimiento; revisión de la Dra. Ana Gabriela Ramos (Dir. Médica Seguros Salud) en curso.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
@@ -183,7 +201,7 @@ Guías EPS y ecosistema de entendimiento; revisión de la Dra. Ana Gabriela Ramo
 | Q-37 | Entrega final con ajustes de producto | To Do | Programada (1 día); entra Alejandro (el senior co-firma la entrega) | Iteración final con ajustes de producto | 16/07/2026 | 16/07/2026 | 2 🪙 2 🪙 | Felipe, Alejandro | — | — | ↓ «no recibí información» en corporativo |
 | Q-38 | Diseño To Be: Ecosistema de entendimiento y uso eficiente de seguros | To Do | Programada (15 días) | Educación justo-a-tiempo: touchpoints de entendimiento a lo largo del journey del asegurado — la información llega en el momento de uso, no en la firma | 13/07/2026 | 05/08/2026 | 2 🪙 2 🪙 | Alejandro, Felipe | Product Design | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
 
-### EPIC-8 · Arquitectura BD (capacidades del equipo)
+### EPIC-8 · Arquitectura BD (capacidades del equipo) · **Talla XS**
 Frameworks y herramientas del Chapter (se conservan sin cambios).
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
