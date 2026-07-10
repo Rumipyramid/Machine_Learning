@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-10T13:30:22 · Cambios vigentes: 64
+> Retención: 15 días · Última actualización: 2026-07-10T17:44:27 · Cambios vigentes: 62
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-10T17:44:27 | Alejandro | ANS BD | Propuesta de tallaje | Sin ANS propio para Behavioral Design (solo el pipeline de Service Design de Milagros) | Propuesta completa en reportes/ans_behavioral_design.md: appetite por entregable (no estimado por etapa), dos relojes BD/lead-time, soporte por bolsa, respaldada con /trinidad (Kahneman planning fallacy, Shape Up appetite, debate #NoEstimates) | normal | aplicado |
 | 2026-07-10T13:30:22 | Alejandro | Cruce CoE X | Fusión CUA | CUA como fila/ficha independiente (🅲) | CUA fusionada dentro de Back to Basics FFVV como componente (a) de su problemática; ficha 🅲 absorbida en 🅰️. Agregada ficha nueva para Guías en Onboarding | normal | aplicado |
 | 2026-07-10T13:13:52 | Alejandro | Tablero | Sección nueva | Sin sección de prioridades de comité | Agregada '🎯 Prioridades del comité (CoE X — Milagros)': cruce épicas/quests vs. prioridad y estado en su Excel, con 5 lecturas rápidas | normal | aplicado |
 | 2026-07-10T13:11:25 | Alejandro | Skill | Entrega del tablero | Adjuntar .md condicional a 'cuando el entorno lo permita' | Regla permanente: siempre adjuntar el tablero en Markdown como output, sin condicionar | normal | aplicado |
@@ -66,6 +67,3 @@
 | 2026-07-02T20:41:33 | Alejandro | Q-20 | Estado | In Progress | Eliminado del tablero | normal | aplicado |
 | 2026-07-02T20:41:32 | Alejandro | Q-19 | Estado | In Progress | Eliminado del tablero | normal | aplicado |
 | 2026-07-02T20:41:31 | Alejandro | Q-27 | Estado | Backlog | Eliminado del tablero | normal | aplicado |
-| 2026-06-25T13:56:51 | Alejandro | Q-1 | % Avance / Status | Diseño 1/4 (40%) | Agencia devolvió 1ª guía diagramada (50%) | normal | aplicado |
-| 2026-06-25T13:56:51 | Stefanie | Q-10 | Status | cierre de playbook pendiente | playbook B360 entregado | normal | aplicado |
-| 2026-06-25T13:56:51 | Stefanie | Q-4 | Status / Impacto | research 20% | quick fix correo de conciliación (35%) | normal | aplicado |
