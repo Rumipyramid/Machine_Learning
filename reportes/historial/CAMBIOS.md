@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-10T01:35:58 · Cambios vigentes: 57
+> Retención: 15 días · Última actualización: 2026-07-10T01:45:36 · Cambios vigentes: 58
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-10T01:45:36 | Alejandro | Cruce CoE X | Fichas de 7 campos | Solo tabla maestra de cruce | Agregada ficha con los 7 campos del formato de Milagros por cada iniciativa (problemática, proceso actual, caso de uso, potencial USD, cálculo, datos, integración) | normal | aplicado |
 | 2026-07-10T01:35:58 | Alejandro | Tablero | Cruce CoE X | Sin cruzar con priorización de Milagros | Cruce completo: reportes/cruce_priorizacion_coex_q3.md — 11/24 iniciativas del CoE X pasan por BD; 3 hallazgos críticos (Loyalty eliminado, Cobranzas B2B invisible para comité, Convenios sin luz verde formal) | normal | aplicado |
 | 2026-07-08T13:41:41 | Alejandro | Épicas | Talla | Sin tallaje | Tallas t-shirt asignadas: BTB XL · Cobranzas L · EPS M · Convenios M · Vivo/B360/AMI S · Arquitectura XS | normal | aplicado |
 | 2026-07-04T17:32:38 | Alejandro | Q-5 | Investigación | Sin fuentes secundarias | /seeker completado: research/universidad_vida_fuentes_secundarias.md (10 fuentes registradas F-16 a F-25) | normal | aplicado |
