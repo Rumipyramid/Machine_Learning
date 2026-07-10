@@ -192,16 +192,20 @@ nombrar la ruta no basta, una ruta de archivo no es clicable fuera de la termina
 
 ## Entrega del link al tablero (obligatorio)
 
-El output del skill **siempre** debe terminar con un link que abra de verdad el `.md`. Una ruta
-como `TABLERO_BEHOLDER.md` solo es clicable en la terminal; en la app web o móvil no abre nada.
-Según el contexto, entrega el link así (en orden de preferencia):
+**Regla permanente: todo output del skill entrega el tablero en Markdown, siempre.** No importa
+si el cambio fue grande o mínimo, ni si la conversación ya lo mostró antes: cada vez que el
+Beholder responde tras tocar (o simplemente mostrar) el tablero, adjunta el archivo `.md` como
+salida — no lo resumas ni lo parafrasees como sustituto. Además, el output **siempre** debe
+terminar con un link que abra de verdad el `.md`. Una ruta como `TABLERO_BEHOLDER.md` solo es
+clicable en la terminal; en la app web o móvil no abre nada. Según el contexto:
 
 1. **Repo Git (web/remote):** commitea y pushea el archivo a la rama de trabajo y entrega la
    **URL de GitHub al blob** en esa rama, p. ej.
    `https://github.com/<owner>/<repo>/blob/<rama>/TABLERO_BEHOLDER.md`.
    Si hay un PR abierto, agrega también el link a *Files changed* del PR (siempre resuelve,
-   aunque la rama tenga `/` en el nombre: `…/pull/<n>/files`). Cuando el entorno lo permita,
-   **adjunta además el archivo** para apertura directa.
+   aunque la rama tenga `/` en el nombre: `…/pull/<n>/files`). **Adjunta siempre además el
+   archivo `.md`** para apertura directa (no lo hagas condicional a "cuando el entorno lo
+   permita" — es la regla, no la excepción).
 2. **Sin Git pero con adjuntos disponibles:** entrega el `.md` como archivo adjunto descargable.
 3. **Solo terminal local:** deja la **ruta absoluta** del archivo y aclara que es clicable solo
    en la terminal.

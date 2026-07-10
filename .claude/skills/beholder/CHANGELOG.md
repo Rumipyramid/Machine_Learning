@@ -3,6 +3,11 @@
 Todas las versiones notables de este skill. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
+## [1.6.1] — 2026-07-05
+### Cambiado
+- **Entrega del tablero siempre en Markdown:** cada output del skill adjunta el `.md` (ya no es
+  condicional a "cuando el entorno lo permita"). Regla permanente, no solo para cambios grandes.
+
 ## [1.6.0] — 2026-07-04
 ### Añadido
 - **Apertura con mascota y lema:** el Beholder abre cada sesión con el banner ASCII del ojo con
