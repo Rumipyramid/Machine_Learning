@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-10T12:41:41 · Cambios vigentes: 60
+> Retención: 15 días · Última actualización: 2026-07-10T13:08:08 · Cambios vigentes: 61
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-10T13:08:08 | Alejandro | Excel Milagros | Campos BD completados | Filas 12,13,17,19,21,22,23,24 con G/H/I/J vacíos | Completados con contenido coherente al tablero/seeker/cruce; filas 3, 11, 14 dejadas sin tocar por falta de base real | normal | aplicado |
 | 2026-07-10T12:41:41 | Alejandro | Cruce CoE X | Ficha A — problemática real | Titular: venta no opt-in (riesgo legal) | Titular corregido a las 3 causas reales: (a) desarticulación asesor-cliente, (b) sobrecarga cognitiva de herramientas, (c) formación sin sistemática ni visibilidad para líderes. Riesgo legal del contacto queda como detalle en ficha CUA | normal | aplicado |
 | 2026-07-10T02:18:07 | Alejandro | Cruce CoE X | Fichas A y C | Riesgo enmarcado como venta no opt-in (persistencia/mis-selling) | Corregido: el contacto es lo no opt-in → riesgo LEGAL (Ley 32323, multas hasta 450 UIT, enforcement real en banca); CUA = remediación legal; prima protegida como valor | normal | aplicado |
 | 2026-07-10T02:12:11 | Alejandro | Cruce CoE X | Fichas versión comité | Fichas técnicas con gaps | Reescritas con lente de relaciones corporativas: ancla en datos internos (>50% venta no opt-in, NPS 'recibí información'), evidencia citada breve (F-26/F-27 nuevas), impacto conservador donde el caso es débil; resuelto: son 5 guías AMI | normal | aplicado |
