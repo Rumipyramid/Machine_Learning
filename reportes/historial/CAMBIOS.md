@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-10T01:45:36 · Cambios vigentes: 58
+> Retención: 15 días · Última actualización: 2026-07-10T02:12:11 · Cambios vigentes: 59
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-10T02:12:11 | Alejandro | Cruce CoE X | Fichas versión comité | Fichas técnicas con gaps | Reescritas con lente de relaciones corporativas: ancla en datos internos (>50% venta no opt-in, NPS 'recibí información'), evidencia citada breve (F-26/F-27 nuevas), impacto conservador donde el caso es débil; resuelto: son 5 guías AMI | normal | aplicado |
 | 2026-07-10T01:45:36 | Alejandro | Cruce CoE X | Fichas de 7 campos | Solo tabla maestra de cruce | Agregada ficha con los 7 campos del formato de Milagros por cada iniciativa (problemática, proceso actual, caso de uso, potencial USD, cálculo, datos, integración) | normal | aplicado |
 | 2026-07-10T01:35:58 | Alejandro | Tablero | Cruce CoE X | Sin cruzar con priorización de Milagros | Cruce completo: reportes/cruce_priorizacion_coex_q3.md — 11/24 iniciativas del CoE X pasan por BD; 3 hallazgos críticos (Loyalty eliminado, Cobranzas B2B invisible para comité, Convenios sin luz verde formal) | normal | aplicado |
 | 2026-07-08T13:41:41 | Alejandro | Épicas | Talla | Sin tallaje | Tallas t-shirt asignadas: BTB XL · Cobranzas L · EPS M · Convenios M · Vivo/B360/AMI S · Arquitectura XS | normal | aplicado |
