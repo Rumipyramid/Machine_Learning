@@ -17,7 +17,9 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/personas/datasets/muestra_22_usuarios.csv` | 22 filas — simulación de pregunta abierta | — |
 | `research/personas/datasets/grupo_nse_A.csv` | 10 filas — grupo NSE A (simulación de opinión RIMAC) | — |
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen breve, rigurosidad metodológica, autor y año por fuente | Lo mantiene el skill `cronista` (trazabilidad de fuentes) |
+| `research/lobo/opinion_experto.md` | Cerebro de "El Lobo": opinión de negocio acumulada (tesis, oportunidades, riesgos, bitácora) | La refina un Routine diario 6:06 leyendo el cronista; la lee `/lobo` |
 | `.claude/skills/cronista/SKILL.md` | Skill `cronista`: archivero de fuentes del códice | Se dispara al usar evidencia referenciable para crear/fundamentar |
+| `.claude/skills/lobo/SKILL.md` | Skill `lobo`: experto en negocios invocable con `/lobo` | Responde como estratega fundamentado en el ledger y su opinión acumulada |
 
 ## 📊 Datos clave — seguros (Perú vs. Mundo)
 
@@ -45,6 +47,8 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 - Spec (`schema.json`) y matriz legible (`.md`) se mantienen sincronizados con el generador.
 - **Evidencia → `cronista`:** toda fuente referenciable usada para crear o fundamentar
   se registra en `research/fuentes/registro_fuentes.md` (resumen, rigurosidad, autor, año).
+- **Opinión de negocio → `lobo`:** un Routine diario (6:06) revisa el cronista y refina
+  `research/lobo/opinion_experto.md`; el comando `/lobo` invoca al experto que la usa.
 
 ---
 *Investigación recopilada 2026-06-21 · codex reorganizado 2026-06-22.*
