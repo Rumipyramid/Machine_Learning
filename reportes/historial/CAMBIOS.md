@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-10T17:44:27 · Cambios vigentes: 62
+> Retención: 15 días · Última actualización: 2026-07-10T20:24:47 · Cambios vigentes: 63
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-10T20:24:47 | Alejandro | ANS BD | Formato spreadsheet | Solo propuesta en Markdown (ans_behavioral_design.md) | Agregado ANS_Behavioral_Design_propuesta.xlsx: mismo formato visual que el Excel de Milagros (bloque de parámetros, header de tallas S/M/L/XL, hoja de soporte separada), pero con appetite por entregable en vez de pipeline de 7 etapas y sin factor lineal de asignación | normal | aplicado |
 | 2026-07-10T17:44:27 | Alejandro | ANS BD | Propuesta de tallaje | Sin ANS propio para Behavioral Design (solo el pipeline de Service Design de Milagros) | Propuesta completa en reportes/ans_behavioral_design.md: appetite por entregable (no estimado por etapa), dos relojes BD/lead-time, soporte por bolsa, respaldada con /trinidad (Kahneman planning fallacy, Shape Up appetite, debate #NoEstimates) | normal | aplicado |
 | 2026-07-10T13:30:22 | Alejandro | Cruce CoE X | Fusión CUA | CUA como fila/ficha independiente (🅲) | CUA fusionada dentro de Back to Basics FFVV como componente (a) de su problemática; ficha 🅲 absorbida en 🅰️. Agregada ficha nueva para Guías en Onboarding | normal | aplicado |
 | 2026-07-10T13:13:52 | Alejandro | Tablero | Sección nueva | Sin sección de prioridades de comité | Agregada '🎯 Prioridades del comité (CoE X — Milagros)': cruce épicas/quests vs. prioridad y estado en su Excel, con 5 lecturas rápidas | normal | aplicado |
