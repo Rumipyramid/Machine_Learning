@@ -1,0 +1,168 @@
+---
+name: many-brains
+description: >-
+  Organiza y mantiene un proyecto de conocimiento bajo el método Many Brains: un
+  hub como mapa, nodes que son la única fuente de verdad de cada tema, y outputs
+  que citan su fuente. Úsalo cuando el usuario quiera ordenar, estructurar o
+  migrar un proyecto —vacío o ya avanzado—, "aplicar Many Brains", o poner orden
+  en sus archivos, notas o documentos aunque no nombre el sistema; o cuando otro
+  skill necesite estructurar o citar el conocimiento del proyecto.
+---
+# Many Brains
+
+Este skill instala y mantiene el método **Many Brains** en un proyecto: en vez de
+acumular archivos sueltos, se cultiva un "cerebro" por proyecto con nodes planos,
+outputs que citan su fuente, y un `_hub.md` que actúa como mapa.
+Tu rol al usarlo es el de **bibliotecario, no autor**: ordenas y propones, pero la
+curaduría y las decisiones son del usuario. **Nunca borras nada.**
+
+## Qué hace este skill por dentro (orientación)
+
+El sistema se apoya en tres ideas que debes conocer antes de tocar nada:
+
+- **Node**: archivo `.md` que es la *única fuente de verdad* de un tema. Vive en
+  `_nodes/` (PLANO, sin subcarpetas por tema), con nombre en kebab-case
+  (`arquitectura-de-pagos.md`). Un node vale por lo que conecta con los demás, no
+  solo por lo que contiene: por eso cierra con `## Conexiones` (`[[...]]`,
+  recíprocas) y cita por afirmación lo que viene de otra fuente.
+- **Output** (= entregable): presentaciones, informes, resúmenes generados *a
+  partir de* nodes. Viven en `_outputs/` y citan su fuente ("Basado en
+  `node.md`…" más citas por afirmación). La operación de crearlos se llama
+  *derivar*.
+- **Hub**: `_hub.md` en la raíz (con prefijo `_`): lo que conecta todo. De un
+  vistazo, qué nodes hay, cuándo se actualizaron y qué output deriva de cuáles.
+
+Como `_nodes/` es plano, la navegación no la dan las carpetas: la dan el `_hub.md`
+y la capa de `## Conexiones` con `[[...]]` de cada node. Por eso esa capa es
+obligatoria.
+
+Archivos que trae este skill (léelos cuando los necesites, no todos de golpe):
+
+- `references/tutorial.md` — el resumen del sistema que le explicas al usuario.
+  **Léelo siempre antes de proponer u ordenar.**
+- `references/clasificacion.md` — las señales para decidir qué es cada archivo.
+  Léelo al entrar en modo Adoptar.
+- `assets/hub.template.md` — el esqueleto del `_hub.md` a crear.
+- `assets/instrucciones-para-claude.md` — las reglas permanentes que el proyecto necesita para
+  mantenerse vivo. Es lo que instalas en el handoff.
+
+## Primero — Detecta el modo (no asumas)
+
+Mira la raíz del proyecto e identifica en cuál de los tres estados estás:
+
+| Estado | Modo | Ir a |
+| --- | --- | --- |
+| Hay un `_hub.md` estructurado en la raíz | **Reconciliar** | sección "Modo Reconciliar" |
+| Casi sin contenido (solo config/ruido) | **Sembrar** | sección "Modo Sembrar" |
+| Hay contenido real, pero no Many Brains | **Adoptar** | sección "Modo Adoptar" |
+
+Ignora siempre el "ruido" (no cuenta como contenido y nunca lo tocas):
+`.git/`, `.DS_Store`, `node_modules/`, `.obsidian/`, archivos de config del editor.
+
+Detecta también el **entorno**, porque el handoff final cambia: ¿Cowork o Claude
+Code? Si no estás completamente seguro, **pregúntaselo al usuario** antes del
+handoff.
+
+## Antes de proponer u ordenar — Explica el sistema (siempre)
+
+Antes de proponer una estructura o sembrar, lee `references/tutorial.md` y dale al
+usuario un **resumen breve** (4-6 frases) de cómo funciona Many Brains y con qué
+lógica vas a ordenar su proyecto. Esto importa porque el usuario debe entender el
+criterio *antes* de ver su contenido reorganizado; si no, el orden le parecerá
+arbitrario.
+
+## Modo Adoptar (el corazón)
+
+Garantía central: **no borras nada y no mueves nada hasta que el usuario apruebe.**
+
+1. **Inventaria.** Lista todos los archivos (recursivo), ignorando el ruido.
+2. **Lee / hojea.** Abre cada archivo lo suficiente para entender su rol.
+3. **Clasifica (propuesta).** Para cada archivo decide un rol y un destino usando
+   las señales de `references/clasificacion.md` (léelo ahora). Esfuérzate por
+   ubicar todo dentro de la estructura; clasificar mal es preferible a rendirse (marca "(confianza baja)" tus hipótesis dudosas para que destaquen en el plan),
+   porque el usuario corrige el plan antes de que se ejecute.
+   - **`_outputs/_historico/` nunca se asigna automáticamente.** Solo va ahí lo que
+     el usuario ordene congelar explícitamente. Al adoptar, no puedes saber qué
+     versión se llevó a una instancia externa: eso es un evento del mundo real que
+     solo el usuario conoce.
+4. **Presenta el PLAN como árbol.** Muestra la estructura propuesta en el esquema
+   clásico de carpetas y subcarpetas (árbol), porque así se entiende de un
+   vistazo. Debajo, una tabla `origen → destino → por qué` para el detalle. **Aún
+   no has movido nada.** El plan va **solo en el chat**; ofrece guardarlo como
+   `plan-de-orden.md` y hazlo solo si el usuario lo confirma. Pide aprobación (por
+   lote o archivo por archivo).
+5. **Lo que no encaja (último recurso).** Solo si un documento *de verdad* no tiene
+   encaje en ninguna carpeta, ponlo en `_por-clasificar/`, con una nota de por qué,
+   y **comunícaselo al usuario** para decidir juntos. La meta es que esa carpeta
+   quede vacía: no es un buzón de descarte, es la excepción.
+6. **Ejecuta (solo con OK).** Mueve los archivos a su destino (mover, no copiar,
+   para no dejar duplicados). Crea las carpetas a medida que las necesitas (no
+   pre-crees vacías). Crea `_hub.md` a partir de `assets/hub.template.md`
+   y llena sus tablas con lo recién ordenado. Criterio de cierre: cada archivo
+   del plan quedó movido y cada fila del `_hub.md` apunta a un archivo real (sin
+   filas vacías ni archivos sin fila).
+7. **Handoff.** Ve a la sección "Handoff del mantenimiento".
+
+> Mover vs. copiar: como el usuario ve el plan completo antes de que toques nada,
+> el riesgo de mover (romper enlaces externos, p. ej. un vault de Obsidian) queda
+> controlado. Si en algún proyecto el usuario prefiere copiar, trátalo como
+> excepción y díselo.
+
+> **La adopción solo reubica, no modifica contenido.** Al mover un archivo a su
+> carpeta no cambias lo que hay dentro. Los nodes llevan `## Conexiones`
+> (recíprocas) y citas por afirmación, y los outputs una cita "Basado en…", pero
+> **no se las agregues durante la adopción**: mover no es momento de editar.
+> Propón añadirlas como un paso aparte y opcional, *después* de ordenar, archivo
+> por archivo y con el OK del usuario.
+
+## Modo Sembrar
+
+Para un proyecto vacío o casi vacío:
+
+1. **Explica el sistema** (tutorial breve, como en la sección anterior).
+2. Pregunta: "¿Hay alguna fuente, documento o información que deba cargar como
+   contexto en `_context/` antes de empezar?".
+3. Crea `_hub.md` desde `assets/hub.template.md` (reemplaza `[NOMBRE]`).
+4. No pre-crees carpetas: nacen cuando llega su primer archivo.
+5. **Handoff** del mantenimiento.
+
+## Modo Reconciliar
+
+El proyecto ya usa Many Brains (hay un `_hub.md` estructurado en la raíz). No
+re-siembres.
+
+- Compara el `_hub.md` con la realidad de las carpetas y corrige desfases
+  (filas que faltan, rutas movidas, fechas). Avisa qué reconciliaste.
+- Corre el **lint** si el usuario lo pide (health-check por razonamiento, no
+  script): nodes sin sección `## Conexiones`, wikilinks `[[...]]` rotos,
+  **backlinks no recíprocos** (A enlaza a B pero B no enlaza a A), **afirmaciones
+  sustantivas sin cita**, outputs marcados `requiere refresh` hace tiempo,
+  contradicciones entre nodes, conceptos repetidos que merecerían su propio
+  node. **Propón** correcciones; no las apliques sin confirmar.
+
+## Handoff del mantenimiento (cierre de Sembrar y Adoptar)
+
+El objetivo es dejar el proyecto **autosostenido**: que el `_hub.md` se
+mantenga vivo en cada sesión futura sin que el usuario lo pida. El mecanismo es la
+regla permanente de `assets/instrucciones-para-claude.md`, y **va siempre a nivel de proyecto**
+(no a las instrucciones globales — esa regla habla de `_hub.md` y carpetas que
+otros proyectos no tienen).
+
+- **En Cowork:** no puedes escribir el panel de instrucciones (es UI de la app).
+  Entrégale al usuario el contenido de `assets/instrucciones-para-claude.md` y dile:
+  "pega esto en Settings del proyecto → Instructions". Confirma que lo hizo.
+- **En Claude Code:** crea o actualiza el `CLAUDE.md` del proyecto con el contenido
+  de `assets/instrucciones-para-claude.md`. Confirma que quedó la regla y, si el
+  `CLAUDE.md` ya existía, que la anexaste sin pisar lo anterior.
+
+## Reglas invariables (lo que el skill promete)
+
+- **Nunca borres.** Ni siquiera el ruido: lo ignoras, no lo eliminas.
+- **Propón, decide el humano.** Nada se mueve sin OK. Eres bibliotecario, no autor.
+- **Explica antes de actuar** (siempre, antes de proponer u ordenar).
+- **Adoptar reubica, no modifica contenido.** Añadir Conexiones (recíprocas) o
+  citas por afirmación a archivos existentes es un paso aparte, propuesto y opcional.
+- **`_por-clasificar/` es último recurso, no buzón.** Reporta lo que cae ahí.
+- **`_outputs/_historico/` solo por orden explícita del usuario.**
+- **Idempotente.** Si te corren de nuevo, detectas el `_hub.md` y reconcilias;
+  no re-siembras ni duplicas.

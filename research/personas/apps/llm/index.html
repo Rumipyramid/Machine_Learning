@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Usuarios Sintéticos · Preguntas libres con Claude</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#fff; --ink:#1c2430; --muted:#6b7280; --line:#e8ebf0;
+    --accent:#2e5aac; --teal:#138a8a; --green:#2e8b57; --amber:#cf7a1f; --red:#b23a48; --gray:#8a9099;
+    --radius:16px; --shadow:0 1px 2px rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.06);
+  }
+  *{box-sizing:border-box} html,body{margin:0}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);
+    color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:32px 24px 64px}
+  header.app h1{font-size:24px;font-weight:700;margin:0;letter-spacing:-.01em}
+  header.app p{margin:6px 0 0;color:var(--muted);font-size:14.5px;max-width:780px}
+  .badge{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:var(--teal);
+    background:rgba(19,138,138,.08);padding:5px 11px;border-radius:999px}
+  .grid{display:grid;grid-template-columns:360px 1fr;gap:24px;align-items:start;margin-top:24px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .pad{padding:22px}
+  .controls{position:sticky;top:24px}
+  .field{margin-bottom:18px}.field:last-child{margin-bottom:0}
+  label.lab{display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;
+    color:var(--muted);margin-bottom:8px}
+  textarea,input[type=text]{width:100%;padding:11px 12px;font-size:14.5px;color:var(--ink);
+    border:1px solid var(--line);border-radius:10px;background:#fff;outline:none;font-family:inherit;resize:vertical}
+  textarea:focus,input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(46,90,172,.12)}
+  .range-row{display:flex;align-items:center;gap:12px}.range-row input[type=range]{flex:1}
+  .range-val{font-variant-numeric:tabular-nums;font-weight:600;min-width:32px;text-align:right}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{padding:7px 11px;font-size:12.5px;border:1px solid var(--line);border-radius:999px;background:#fff;
+    cursor:pointer;user-select:none;transition:.12s}
+  .chip:hover{border-color:#cdd5e2}.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn{width:100%;padding:13px 16px;font-size:15px;font-weight:600;color:#fff;background:var(--accent);
+    border:none;border-radius:11px;cursor:pointer;transition:.12s}
+  .btn:hover{background:#274d93}.btn:disabled{opacity:.55;cursor:default}
+  .hint{font-size:12px;color:var(--muted);margin-top:8px}
+  .section-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+    margin:26px 0 14px}.section-title:first-child{margin-top:0}
+  .bar-row{display:grid;grid-template-columns:130px 1fr 56px;align-items:center;gap:12px;margin:11px 0}
+  .bar-row .name{font-size:13.5px;display:flex;align-items:center;gap:8px}
+  .dot{width:11px;height:11px;border-radius:3px;flex:none}
+  .track{height:14px;background:#eef1f6;border-radius:7px;overflow:hidden}
+  .fill{height:100%;border-radius:7px;transition:width .5s ease}
+  .bar-row .val{font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;text-align:right}
+  .resp{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;border-left-width:4px}
+  .resp .q{font-size:14.5px;margin:0 0 10px}
+  .resp .meta{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:11px;color:var(--muted);background:#f1f3f7;border-radius:6px;padding:3px 8px}
+  .insight{margin-top:24px;border-left:4px solid var(--teal)}
+  .insight .head{font-size:16.5px;font-weight:600;line-height:1.45;margin:0 0 14px}
+  .insight ul{margin:0;padding:0;list-style:none}
+  .insight li{position:relative;padding:9px 0 9px 26px;font-size:14px;border-top:1px solid var(--line)}
+  .insight li:before{content:"›";position:absolute;left:6px;top:8px;color:var(--teal);font-weight:700;font-size:16px}
+  .reco{margin-top:16px;padding:14px 16px;background:rgba(19,138,138,.07);border-radius:11px;font-size:14px}
+  .reco b{color:var(--teal)}
+  .empty{color:var(--muted);font-size:14px;padding:30px 0;text-align:center}
+  .err{color:var(--red);font-size:14px;padding:16px;background:rgba(178,58,72,.07);border-radius:11px}
+  .spinner{display:inline-block;width:16px;height:16px;border:2px solid #fff;border-top-color:transparent;
+    border-radius:50%;animation:spin .7s linear infinite;vertical-align:-3px;margin-right:8px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .disclaimer{margin-top:18px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="app">
+    <h1>Usuarios Sintéticos · Preguntas libres</h1>
+    <p>Hazle cualquier pregunta a la población sintética. <b>Claude responde con su cerebro</b>,
+       pero haciendo role-play de cada persona <b>según los parámetros que construimos</b>
+       (NSE, confianza, sesgo del presente, canal, tenencia… calibrados con SBS/APESEG/APEIM).</p>
+    <span class="badge">Motor: claude-opus-4-8 · structured outputs</span>
+  </header>
+
+  <div class="grid">
+    <aside class="card controls">
+      <div class="pad">
+        <div class="field">
+          <label class="lab" for="q">Tu pregunta (libre)</label>
+          <textarea id="q" rows="3" placeholder="Ej. ¿Qué te haría confiar en una aseguradora? ¿Comprarías un seguro vía WhatsApp?"></textarea>
+        </div>
+        <div class="field">
+          <label class="lab">Número de personas</label>
+          <div class="range-row">
+            <input type="range" id="n" min="3" max="25" step="1" value="12" />
+            <span class="range-val" id="nVal">12</span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="lab" for="seed">Semilla</label>
+          <input type="text" id="seed" value="42" />
+        </div>
+        <div class="field"><label class="lab">NSE</label><div class="chips" id="f-nse"></div></div>
+        <div class="field"><label class="lab">Generación</label><div class="chips" id="f-generacion"></div></div>
+        <div class="field"><label class="lab">Región</label><div class="chips" id="f-region"></div></div>
+        <div class="field"><label class="lab">Canal</label><div class="chips" id="f-canal"></div></div>
+        <div class="field">
+          <button class="btn" id="run">Preguntar a los usuarios</button>
+          <div class="hint">Una sola llamada role-playea a todas las personas. Sin filtros = población completa.</div>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="card"><div class="pad" id="results">
+        <div class="empty">Escribe una pregunta y pulsa <b>“Preguntar a los usuarios”</b>.</div>
+      </div></section>
+      <section class="card insight" id="insightCard" style="display:none"><div class="pad">
+        <p class="section-title" style="margin-top:0">Hallazgos &amp; insights</p>
+        <p class="head" id="insHead"></p>
+        <ul id="insList"></ul>
+        <div class="reco" id="insReco"></div>
+        <p class="disclaimer">Datos sintéticos: personas inventadas calibradas a patrones reales.
+          Para prototipar y explorar hipótesis; no sustituye una encuesta de mercado.</p>
+      </div></section>
+    </main>
+  </div>
+</div>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s);};
+  var SENT={favorable:{label:"Favorable",color:"var(--green)"},
+            neutral:{label:"Neutral",color:"var(--gray)"},
+            desfavorable:{label:"Desfavorable",color:"var(--red)"}};
+  var DIM={
+    nse:["A","B","C","D","E"],
+    generacion:["Gen_Z_18_27","Millennial_28_43","Gen_X_44_59","Boomer_60_mas"],
+    region:["Lima_Metropolitana","Resto_Costa","Sierra","Selva"],
+    canal:["directo_digital","bancaseguros","broker_corredor","ninguno"]
+  };
+  var LABELS={Gen_Z_18_27:"Gen Z",Millennial_28_43:"Millennial",Gen_X_44_59:"Gen X",Boomer_60_mas:"Boomer",
+    Lima_Metropolitana:"Lima",Resto_Costa:"Costa",directo_digital:"Directo/Digital",
+    bancaseguros:"Bancaseguros",broker_corredor:"Broker",ninguno:"Ninguno"};
+  var lbl=function(v){return LABELS[v]||v;};
+  var filters={nse:[],generacion:[],region:[],canal:[]};
+
+  $("#n").addEventListener("input",function(){$("#nVal").textContent=this.value;});
+  Object.keys(DIM).forEach(function(dim){
+    var box=$("#f-"+dim);
+    DIM[dim].forEach(function(v){
+      var c=document.createElement("div");c.className="chip";c.textContent=lbl(v);
+      c.addEventListener("click",function(){
+        c.classList.toggle("on");
+        var i=filters[dim].indexOf(v); if(i>=0)filters[dim].splice(i,1); else filters[dim].push(v);
+      });
+      box.appendChild(c);
+    });
+  });
+
+  function sentBars(responses){
+    var c={favorable:0,neutral:0,desfavorable:0};
+    responses.forEach(function(r){ if(c[r.sentiment]!==undefined)c[r.sentiment]++; });
+    var n=responses.length||1, max=Math.max(c.favorable,c.neutral,c.desfavorable,1);
+    return Object.keys(SENT).map(function(k){
+      var pct=Math.round(1000*c[k]/n)/10, w=Math.max(2,(c[k]/max)*100);
+      return '<div class="bar-row"><div class="name"><span class="dot" style="background:'+SENT[k].color+'"></span>'
+        +SENT[k].label+'</div><div class="track"><div class="fill" style="width:'+w+'%;background:'+SENT[k].color
+        +'"></div></div><div class="val">'+pct+'%</div></div>';
+    }).join("");
+  }
+
+  function escapeHtml(s){return (s||"").replace(/[&<>]/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[m];});}
+
+  function renderResponses(responses,users){
+    var byId={}; users.forEach(function(u){byId[u.id]=u;});
+    return responses.map(function(r){
+      var u=byId[r.id]||{}, color=(SENT[r.sentiment]||SENT.neutral).color;
+      var tags=[lbl(u.generacion),"NSE "+u.nse,lbl(u.region),u.confianza_aseguradora,u.tenencia_seguro,lbl(u.canal_preferido)]
+        .filter(Boolean).map(function(t){return '<span class="tag">'+escapeHtml(t)+'</span>';}).join("");
+      return '<div class="resp" style="border-left-color:'+color+'">'
+        +'<p class="q">“'+escapeHtml(r.quote)+'”</p><div class="meta">'+tags+'</div></div>';
+    }).join("");
+  }
+
+  $("#run").addEventListener("click",function(){
+    var question=$("#q").value.trim();
+    if(!question){ $("#q").focus(); return; }
+    var btn=$("#run"); btn.disabled=true; btn.innerHTML='<span class="spinner"></span>Pensando…';
+    $("#results").innerHTML='<div class="empty">Claude está entrevistando a las personas…</div>';
+    $("#insightCard").style.display="none";
+
+    fetch("/api/ask",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({question:question,n:parseInt($("#n").value,10),seed:parseInt($("#seed").value,10)||0,filters:filters})})
+    .then(function(res){return res.json().then(function(d){return {ok:res.ok,d:d};});})
+    .then(function(o){
+      if(!o.ok||o.d.error){ $("#results").innerHTML='<div class="err">'+escapeHtml(o.d.error||"Error")+'</div>'; return; }
+      var responses=o.d.result.responses||[], users=o.d.users||[], ins=o.d.result.insights||{};
+      $("#results").innerHTML='<p class="section-title">Distribución de respuestas</p>'+sentBars(responses)
+        +'<p class="section-title">Respuestas ('+responses.length+')</p>'+renderResponses(responses,users);
+      $("#insHead").textContent=ins.headline||"";
+      $("#insList").innerHTML=(ins.findings||[]).map(function(f){return "<li>"+escapeHtml(f)+"</li>";}).join("");
+      $("#insReco").innerHTML="<b>Recomendación.</b> "+escapeHtml(ins.recommendation||"");
+      $("#insightCard").style.display="block";
+    })
+    .catch(function(e){ $("#results").innerHTML='<div class="err">Error de red: '+escapeHtml(String(e))+'</div>'; })
+    .finally(function(){ btn.disabled=false; btn.textContent="Preguntar a los usuarios"; });
+  });
+})();
+</script>
+</body>
+</html>

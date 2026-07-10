@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rimac CoE · Proof v2 · rimac-slides-v2-claude</title>
+<style>
+/* ===== FUENTES DE MARCA (locked) — Opción B: cada peso ES su familia ===== */
+@font-face{ font-family:'BRSonoma Regular';  src:url('../assets/fonts/BRSonoma-Regular.ttf')  format('truetype'); font-display:swap; }
+@font-face{ font-family:'BRSonoma Medium';   src:url('../assets/fonts/BRSonoma-Medium.ttf')   format('truetype'); font-display:swap; }
+@font-face{ font-family:'BRSonoma SemiBold'; src:url('../assets/fonts/BRSonoma-SemiBold.ttf') format('truetype'); font-display:swap; }
+@font-face{ font-family:'BRSonoma Bold';     src:url('../assets/fonts/BRSonoma-Bold.ttf')     format('truetype'); font-display:swap; }
+@font-face{ font-family:'BRSonoma Black';    src:url('../assets/fonts/BRSonoma-Black.ttf')    format('truetype'); font-display:swap; }
+@font-face{ font-family:'Rimac Display';     src:url('../assets/fonts/Rimac-Display.ttf')     format('truetype'); font-display:swap; }
+
+/* ===== TOKENS (locked) ===== */
+:root{
+  --primary:#0B1620; --text:#1F2937; --secondary:#6B7280; --tertiary:#F7052D;
+  --neutral:#FFFFFF; --accent-orange:#FF7A00; --accent-magenta:#C8128B;
+  --bg-section:#ECEEFC; --bg-soft:#F5F6FB; --bg-warm-soft:#FFF6EF; --bg-cool-soft:#F7F8FE;
+  --bg-viewport:#F2F3F7; --line:#E5E7EB;
+  --grad-hero:linear-gradient(90deg,#FF7A00 0%,#F7052D 45%,#C8128B 100%);
+}
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+html,body{ width:100%; height:100%; overflow:hidden; background:var(--bg-viewport); font-family:'BRSonoma Regular','Helvetica Neue',Helvetica,Arial,sans-serif; font-synthesis:none; }
+
+/* ===== STAGE 1920×1080 (locked) ===== */
+.viewport{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:var(--bg-viewport); }
+.stage{ width:1920px; height:1080px; min-width:1920px; min-height:1080px; flex-shrink:0; position:relative; transform-origin:center center; background:var(--neutral); overflow:hidden; box-shadow:0 20px 60px rgba(11,22,32,0.12); }
+.slide{ position:absolute; inset:0; width:1920px; height:1080px; overflow:hidden; visibility:hidden; opacity:0; pointer-events:none; transition:opacity .45s cubic-bezier(.22,1,.36,1), visibility 0s linear .45s; background:var(--neutral); }
+.slide.active{ visibility:visible; opacity:1; pointer-events:auto; transition:opacity .45s cubic-bezier(.22,1,.36,1), visibility 0s linear 0s; }
+
+/* ===== MOTION (locked) ===== */
+@keyframes riseIn{ from{ transform:translateY(28px); opacity:0; } to{ transform:translateY(0); opacity:1; } }
+.slide.active .reveal{ animation:riseIn .75s cubic-bezier(.22,1,.36,1) both; }
+.slide.active .reveal:nth-child(1){ animation-delay:.05s; } .slide.active .reveal:nth-child(2){ animation-delay:.15s; }
+.slide.active .reveal:nth-child(3){ animation-delay:.25s; } .slide.active .reveal:nth-child(4){ animation-delay:.35s; }
+.slide.active .reveal:nth-child(5){ animation-delay:.45s; } .slide.active .reveal:nth-child(6){ animation-delay:.55s; }
+@media (prefers-reduced-motion:reduce){ .slide.active .reveal{ animation:none !important; } .slide{ transition:none !important; } }
+
+/* ===== TIPOGRAFÍA (locked) ===== */
+.cover-title{ font-family:'Rimac Display','BRSonoma Bold',sans-serif; font-size:116px; line-height:.96; letter-spacing:-.04em; color:var(--tertiary); }
+.section-h1{ font-family:'BRSonoma Bold',sans-serif; font-size:118px;  line-height:.98; letter-spacing:-.03em; color:var(--primary); }   /* ← más pequeño y Bold (no Black) */
+.h2{ font-family:'BRSonoma Bold',sans-serif; font-size:64px;  line-height:1.05; letter-spacing:-.025em; color:var(--primary); }
+.eyebrow{ font-family:'BRSonoma Bold',sans-serif; font-size:18px;  letter-spacing:.08em; text-transform:uppercase; color:var(--secondary); }
+.grad{ background:var(--grad-hero); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.red{ color:var(--tertiary); }
+
+/* ===== FOOTER + PAGENUM (locked) — footer un poco más grande, pagenum abajo-derecha ===== */
+.footer{ position:absolute; left:100px; bottom:50px; display:flex; align-items:center; gap:22px; z-index:10; }
+.footer .logo svg{ width:132px; height:auto; display:block; }
+.footer .sep{ width:1px; height:28px; background:var(--line); }
+.footer .tag{ font-family:'BRSonoma Medium',sans-serif; font-size:16px;  letter-spacing:.02em; color:var(--secondary); }
+.pagenum{ position:absolute; right:100px; bottom:54px; font-family:'BRSonoma Medium',sans-serif; font-size:15px;  letter-spacing:.04em; color:var(--secondary); z-index:10; }
+
+/* ===== slide-cover (locked) — CON foto, SOLO título (sin subtítulo) ===== */
+.slide.cover{ padding:64px 100px; display:flex; flex-direction:column; justify-content:space-between; }
+.wave-bg{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:bottom right; pointer-events:none; z-index:0; }
+.cover-photo{ position:absolute; top:28px; right:28px; bottom:28px; width:46%; border-radius:28px 28px 28px 0; overflow:hidden; z-index:2; }
+.cover-photo img{ width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
+.cover-logo{ position:relative; z-index:1; } .cover-logo svg{ width:160px; height:auto; display:block; }
+.cover-title-block{ flex:1; display:flex; flex-direction:column; justify-content:center; position:relative; z-index:1; max-width:50%; }
+.cover-footer{ font-family:'BRSonoma Regular',sans-serif; font-size:22px;  color:var(--primary); letter-spacing:.01em; position:relative; z-index:1; }
+
+/* ===== slide-section (locked) ===== */
+.slide.section{ background:var(--bg-section); display:flex; flex-direction:column; justify-content:center; padding:80px 100px 100px; }
+.section-num{ font-family:'BRSonoma Bold',sans-serif; font-size:18px;  letter-spacing:.08em; text-transform:uppercase; color:var(--tertiary); margin-bottom:38px; }
+.section-sublabel{ font-family:'BRSonoma Regular',sans-serif; font-size:26px;  line-height:1.4; color:var(--secondary); max-width:980px; margin-top:38px; }
+
+/* ===== slide-body (locked) ===== */
+.slide.content{ padding:80px 100px 100px; display:flex; flex-direction:column; }
+.slide-body{ display:flex; flex-direction:column; margin:auto 0; width:100%; }
+
+/* ============================================================
+   CAPA LIBRE — composición a medida (usa tokens)
+   ============================================================ */
+
+/* Slide "fábrica de apuestas" — RECREACIÓN del slide blueprint:
+   mismo layout (texto izq + grilla 3×3 der), re-skin a marca Rimac. */
+.split-bets{ display:grid; grid-template-columns:0.92fr 1.08fr; gap:64px; align-items:center; margin-top:44px; }
+.lead2{ font:26px/1.42 'BRSonoma Medium'; color:var(--text); }
+.lead2 b{ color:var(--primary); font-family:'BRSonoma Bold'; }
+.blist{ list-style:none; display:flex; flex-direction:column; gap:14px; margin-top:26px; }
+.blist li{ position:relative; padding-left:30px; font:21px/1.4 'BRSonoma Regular'; color:var(--text); }
+.blist li b{ color:var(--primary); font-family:'BRSonoma Bold'; }
+.blist li::before{ content:""; position:absolute; left:2px; top:9px; width:12px; height:12px; border-radius:999px; background:var(--tertiary); }
+.note-red{ margin-top:24px; font:20px 'BRSonoma SemiBold'; color:var(--tertiary); }
+.bets{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.bet{ border-radius:14px; padding:18px 18px 16px; min-height:120px; display:flex; flex-direction:column; justify-content:space-between; position:relative; }
+.bet.win{ background:var(--neutral); border:1.5px solid var(--line); border-left:4px solid var(--tertiary); }
+.bet.win .name{ font:19px/1.15 'BRSonoma Bold'; color:var(--primary); }
+.bet.win .dot{ position:absolute; top:16px; right:16px; width:10px; height:10px; border-radius:999px; background:var(--tertiary); }
+.bet.win .tag{ font:12px 'BRSonoma Bold'; letter-spacing:.06em; text-transform:uppercase; color:var(--tertiary); }
+.bet.fold{ background:repeating-linear-gradient(135deg, rgba(107,114,128,.07) 0 10px, transparent 10px 20px), var(--bg-soft); border:1.5px dashed #D7DBE3; }
+.bet.fold .name{ font:15px 'BRSonoma Medium'; color:var(--secondary); text-decoration:line-through; }
+.bet.fold .tag{ font:12px 'BRSonoma Medium'; letter-spacing:.06em; text-transform:uppercase; color:var(--secondary); }
+.bets-cap{ font:16px 'BRSonoma Regular'; color:var(--secondary); margin-top:16px; }
+
+/* Arquetipo · split asimétrico + diagrama (cuello de botella) */
+.split-a{ display:grid; grid-template-columns:0.92fr 1.08fr; gap:80px; align-items:center; margin-top:44px; }
+.split-a .lead{ font:26px/1.42 'BRSonoma Medium'; color:var(--text); }
+.split-a .lead b{ color:var(--primary); font-family:'BRSonoma Bold'; }
+.shift{ margin-top:30px; font:40px/1.12 'BRSonoma Bold'; letter-spacing:-.02em; color:var(--primary); }
+.shift .old{ color:var(--secondary); font-family:'BRSonoma Medium'; text-decoration:line-through; text-decoration-color:var(--tertiary); }
+.cmp{ display:flex; flex-direction:column; gap:18px; }
+.cmp-cap{ font:14px 'BRSonoma Bold'; letter-spacing:.06em; text-transform:uppercase; color:var(--secondary); margin-bottom:6px; }
+.cmp-row{ display:flex; align-items:center; gap:18px; }
+.cmp-when{ width:96px; text-align:right; font:17px 'BRSonoma Medium'; color:var(--secondary); }
+.cmp-bar{ height:46px; border-radius:8px; display:flex; align-items:center; padding-left:20px; color:#fff; font:16px 'BRSonoma Bold'; }
+.cmp-bar.b1{ width:92%; background:var(--primary); } .cmp-bar.b2{ width:44%; background:var(--secondary); }
+.cmp-bar.b3{ width:20%; background:var(--accent-orange); } .cmp-bar.b4{ width:9%; min-width:70px; background:var(--tertiary); }
+.cmp-foot{ font:17px 'BRSonoma Regular'; color:var(--secondary); margin-top:6px; }
+
+/* Arquetipo · dato dominante */
+.stat-hero{ display:flex; flex-direction:column; align-items:flex-start; margin-top:36px; }
+.stat-hero .big{ font:280px/0.9 'BRSonoma Black'; letter-spacing:-.03em; padding-right:.06em; }
+.stat-hero .say{ font:34px/1.3 'BRSonoma Medium'; color:var(--text); max-width:1100px; margin-top:10px; }
+.stat-hero .say b{ color:var(--primary); font-family:'BRSonoma Bold'; }
+.stat-hero .foot{ font:19px 'BRSonoma Regular'; color:var(--secondary); margin-top:24px; }
+
+/* Arquetipo · declaración editorial */
+.manifesto{ max-width:1480px; margin-top:44px; }
+.manifesto .stmt{ font:88px/1.06 'BRSonoma Bold'; letter-spacing:-.03em; color:var(--primary); }
+.manifesto .sub{ font:26px/1.45 'BRSonoma Medium'; color:var(--secondary); margin-top:36px; max-width:980px; }
+.manifesto .sub b{ color:var(--text); font-family:'BRSonoma Bold'; }
+.rule-red{ width:120px; height:6px; background:var(--tertiary); border-radius:999px; margin-top:44px; }
+
+/* ===== Excepción §Elevation & Depth: slide sobre fondo oscuro (logo en NEGATIVO) ===== */
+.slide.dark{ background:var(--primary); }
+.slide.dark .h2{ color:var(--neutral); }
+.slide.dark .manifesto .stmt{ color:var(--neutral); }
+.slide.dark .manifesto .sub{ color:rgba(255,255,255,.68); }
+.slide.dark .manifesto .sub b{ color:var(--neutral); }
+.slide.dark .footer .tag{ color:rgba(255,255,255,.68); }
+.slide.dark .footer .sep{ background:rgba(255,255,255,.25); }
+.slide.dark .footer .logo svg path{ fill:var(--neutral); }   /* logo blanco sobre oscuro */
+.slide.dark .pagenum{ color:rgba(255,255,255,.6); }
+</style>
+</head>
+<body>
+
+<div class="viewport">
+  <div class="stage" id="stage">
+
+    <!-- ===== SLIDE 1 · COVER (con foto, solo título) ===== -->
+    <section class="slide cover active">
+      <img class="wave-bg" src="../assets/Wave-Soft.png" alt="">
+      <div class="cover-photo reveal"><img src="../assets/Background.jpg" alt=""></div>
+      <div class="cover-logo reveal"></div>
+      <div class="cover-title-block">
+        <h1 class="cover-title reveal">Diseñar<br>con Claude</h1>
+      </div>
+      <div class="cover-footer reveal">CoE Diseño Estratégico</div>
+    </section>
+
+    <!-- ===== SLIDE 2 · SECTION DIVIDER (título Bold, más pequeño) ===== -->
+    <section class="slide section">
+      <div class="pagenum"></div>
+      <div class="section-num reveal">01 — El motor</div>
+      <h1 class="section-h1 reveal">Enviar, observar,<br>aprender — pero <span class="grad">muy rápido</span></h1>
+      <p class="section-sublabel reveal">La misma idea del lean startup. La diferencia está en una sola cosa: la velocidad del bucle, corrido entre 50 y 100 veces en diez semanas.</p>
+      <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
+    </section>
+
+    <!-- ===== SLIDE 3 · RECREACIÓN "fábrica de apuestas" (un solo título) ===== -->
+    <section class="slide content">
+      <div class="pagenum"></div>
+      <h2 class="h2 reveal">Una <span class="red">fábrica de apuestas</span> dentro de un laboratorio</h2>
+      <div class="split-bets">
+        <div class="reveal">
+          <p class="lead2">Equipos pequeñísimos exploran la frontera de lo que el modelo puede hacer y <b>apuestan</b> a si algo va a funcionar.</p>
+          <ul class="blist">
+            <li><b>Corren experimentos</b> para descubrir qué sirve.</li>
+            <li><b>Doblan la apuesta</b> en lo que funciona.</li>
+            <li><b>Pliegan</b> sin drama lo que no.</li>
+          </ul>
+          <p class="note-red">~ una docena de apuestas vivas a la vez</p>
+        </div>
+        <div class="reveal">
+          <div class="bets">
+            <div class="bet win"><span class="dot"></span><span class="name">Claude Code</span><span class="tag">▲ doblada</span></div>
+            <div class="bet win"><span class="dot"></span><span class="name">Claude Design</span><span class="tag">▲ doblada</span></div>
+            <div class="bet win"><span class="dot"></span><span class="name">MCP</span><span class="tag">▲ doblada</span></div>
+            <div class="bet fold"><span class="name">apuesta #07</span><span class="tag">plegada</span></div>
+            <div class="bet win"><span class="dot"></span><span class="name">Skills</span><span class="tag">▲ doblada</span></div>
+            <div class="bet fold"><span class="name">apuesta #11</span><span class="tag">plegada</span></div>
+            <div class="bet win"><span class="dot"></span><span class="name">Claude en Chrome</span><span class="tag">▲ doblada</span></div>
+            <div class="bet fold"><span class="name">apuesta #14</span><span class="tag">plegada</span></div>
+            <div class="bet win"><span class="dot"></span><span class="name">Audio manos libres</span><span class="tag">▲ doblada</span></div>
+          </div>
+          <p class="bets-cap">Lo marcado en rojo nació en Labs. La mayoría de las apuestas se pliegan — y está bien.</p>
+        </div>
+      </div>
+      <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
+    </section>
+
+    <!-- ===== SLIDE 4 · dato dominante (un solo título + el dato, sin eyebrow) ===== -->
+    <section class="slide content">
+      <div class="pagenum"></div>
+      <h2 class="h2 reveal">No en la idea inicial</h2>
+      <div class="stat-hero">
+        <div class="big grad reveal">99%</div>
+        <p class="say reveal">del valor vino de <b>diez semanas iterando</b> y hablando con usuarios cada día — no del primer prototipo.</p>
+      </div>
+      <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
+    </section>
+
+    <!-- ===== SLIDE 5 · split + diagrama (un solo título) ===== -->
+    <section class="slide content">
+      <div class="pagenum"></div>
+      <h2 class="h2 reveal">El cuello de botella <span class="grad">se movió</span></h2>
+      <div class="split-a">
+        <div class="reveal">
+          <p class="lead">Claude Code volvió rapidísimos a los ingenieros. El resto del equipo tuvo que <b>alcanzarlos</b>.</p>
+          <div class="shift"><span class="old">construir la función</span><br>→ decidir qué construir.</div>
+        </div>
+        <div class="reveal">
+          <div class="cmp">
+            <div class="cmp-cap">De idea → a usuarios · se comprimió</div>
+            <div class="cmp-row"><span class="cmp-when">antes</span><div class="cmp-bar b1">6 meses</div></div>
+            <div class="cmp-row"><span class="cmp-when">luego</span><div class="cmp-bar b2">1 mes</div></div>
+            <div class="cmp-row"><span class="cmp-when">después</span><div class="cmp-bar b3">1 semana</div></div>
+            <div class="cmp-row"><span class="cmp-when">hoy</span><div class="cmp-bar b4">1 día</div></div>
+            <div class="cmp-foot">A veces lo de una semana ahora sale en un par de horas.</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
+    </section>
+
+    <!-- ===== SLIDE 6 · declaración editorial (la frase ES el título, sin eyebrow) ===== -->
+    <section class="slide content">
+      <div class="pagenum"></div>
+      <h2 class="h2 reveal" style="position:absolute; left:-9999px">La lección</h2>
+      <div class="manifesto">
+        <p class="stmt reveal">Rápido no es la meta. La meta: iterar en <span class="grad">ciclos tan cortos</span> que descubres pronto cuándo te equivocas.</p>
+        <div class="rule-red reveal"></div>
+        <p class="sub reveal">Cuando construyeron la función equivocada, <b>cortarla tomó una semana</b> — no un trimestre. La velocidad no evita el error; lo hace barato.</p>
+      </div>
+      <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
+    </section>
+
+    <!-- ===== SLIDE 7 · cierre sobre fondo oscuro (excepción §Elevation · logo en negativo) ===== -->
+    <section class="slide content dark">
+      <div class="pagenum"></div>
+      <h2 class="h2 reveal" style="position:absolute; left:-9999px">El error no se evita, se abarata</h2>
+      <div class="manifesto">
+        <p class="stmt reveal">Cuando el ciclo dura <span class="grad">una semana</span>, equivocarse cuesta días — no un trimestre.</p>
+        <div class="rule-red reveal"></div>
+        <p class="sub reveal">Fondo oscuro: excepción de marca. El logo va en <b>negativo</b>, el texto en blanco, el acento se mantiene.</p>
+      </div>
+      <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
+    </section>
+
+  </div><!-- /stage -->
+</div><!-- /viewport -->
+
+<script>
+/* ===== LOGO RIMAC (constante única) ===== */
+const LOGO_SVG = `<svg width="230" height="32" viewBox="0 0 230 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41.3493 0C41.0497 0 40.4504 0.243398 40.4504 0.243398C40.3306 0.243398 1.01874 18.3727 1.01874 18.3727C0.359549 18.6769 0 19.1635 0 19.8327C0 20.6844 0.659192 21.3536 1.49816 21.3536C1.65797 21.3536 1.81776 21.2995 1.97755 21.2455C2.05745 21.2184 2.13735 21.1914 2.21725 21.1711C2.27718 21.1711 37.2743 5.96196 37.2743 5.96196L27.0269 27.924C26.8471 28.3498 26.7272 28.7757 26.7272 29.2016C26.7272 30.7225 27.9857 32 29.4839 32C29.7835 32 30.0831 31.9392 30.3827 31.8784C30.3827 31.8784 81.6199 17.2776 81.6799 17.2776C84.3766 16.6084 86.3541 14.1141 86.3541 11.1939C86.3541 7.66538 83.5376 4.86694 80.1218 4.86694C79.2229 4.86694 78.4439 5.04943 77.545 5.41445C77.4851 5.47529 36.0158 23.3612 36.0158 23.3612L43.1471 2.85933C43.267 2.55514 43.3269 2.3118 43.3269 2.00762C43.3269 0.91256 42.428 0 41.3493 0Z" fill="#F7052D"/>
+<path d="M175.645 6.26584V28.8362H170.431V12.7145L159.285 28.8362H154.131L149.457 12.6537L142.026 28.8362H135.913L146.88 5.35333C147.659 3.83242 148.438 3.16321 149.936 3.16321C150.955 3.16321 152.034 3.77157 152.513 5.53583L157.307 23.1176L169.772 5.10993C170.851 3.58902 171.749 3.10237 172.948 3.16321C174.266 3.16321 175.585 4.07573 175.585 6.26584H175.645Z" fill="#F7052D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M113.382 7.48221C118.955 7.48221 120.513 10.7066 120.213 13.5659H120.153C119.854 16.3644 118.176 19.0412 113.322 20.3187L118.835 28.8359H112.782L107.868 20.8054H105.052L103.254 28.8359H97.7407L102.595 7.48221H113.382ZM109.846 17.2161C112.543 17.2161 114.46 15.9385 114.7 13.8701H114.76C114.94 11.8625 113.801 10.7674 111.584 10.7674H107.389L105.891 17.2161H109.846Z" fill="#F7052D"/>
+<path d="M134.355 7.48221H128.781L123.867 28.8359H129.501L133.036 13.1401L134.355 7.48221Z" fill="#F7052D"/>
+<path d="M219.75 24.8827C215.256 24.8219 212.679 22.1451 213.038 18.6774H213.098C213.578 14.0539 217.593 11.2554 223.166 11.2554C224.784 11.2554 226.941 11.377 228.859 11.9246L229.818 7.60514C228.2 7.17929 225.503 6.87513 223.765 6.87513C214.177 6.87513 208.064 11.5595 207.345 18.5557C206.686 24.7611 210.821 29.2021 219.69 29.2021C221.488 29.2021 222.986 29.0196 225.203 28.6546L226.282 23.9702C224.185 24.5786 222.447 24.8827 219.75 24.8827Z" fill="#F7052D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M199.015 9.67225C198.356 7.36046 197.038 6.75214 195.659 6.87382C194.82 6.93465 193.922 7.36053 192.963 8.69893L179.659 28.8358H185.112L187.989 24.3339H197.757L198.776 28.8358H204.109L198.955 9.67225H199.015ZM190.326 20.8054L195.36 12.9575L196.978 20.8054H190.326Z" fill="#F7052D"/>
+</svg>`;
+document.querySelectorAll('.footer .logo, .cover-logo').forEach(el => el.innerHTML = LOGO_SVG);
+
+/* ===== STAGE SCALING ===== */
+function fit(){ const s=Math.min(innerWidth/1920, innerHeight/1080); document.getElementById('stage').style.transform='scale('+s+')'; }
+addEventListener('resize', fit); fit();
+
+/* ===== slide-body wrapper (excluye cover y section) ===== */
+document.querySelectorAll('.slide').forEach(s => {
+  if (s.classList.contains('cover') || s.classList.contains('section')) return;
+  const title = s.querySelector('h2.h2');
+  if (!title) return;
+  const wrapper = document.createElement('div'); wrapper.className = 'slide-body';
+  let cur = title.nextElementSibling;
+  while (cur && !cur.classList.contains('footer') && !cur.classList.contains('pagenum')) {
+    const node = cur; cur = cur.nextElementSibling; wrapper.appendChild(node);
+  }
+  title.after(wrapper);
+});
+
+/* ===== PAGENUM dinámico ===== */
+const slides = Array.from(document.querySelectorAll('.slide'));
+const total = slides.length;
+slides.forEach((s,i)=>{ const p=s.querySelector('.pagenum'); if(p) p.textContent = String(i+1).padStart(2,'0')+' / '+String(total).padStart(2,'0'); });
+
+/* ===== NAV (teclado + swipe, sin pill visible) ===== */
+let current = 0;
+function goTo(n){ slides[current].classList.remove('active'); current=(n+total)%total; slides[current].classList.add('active'); }
+function next(){ goTo(current+1); } function prev(){ goTo(current-1); }
+addEventListener('keydown', e=>{
+  if(['ArrowRight','Space',' ','PageDown'].includes(e.key)){ e.preventDefault(); next(); }
+  if(['ArrowLeft','PageUp'].includes(e.key)){ e.preventDefault(); prev(); }
+  if(e.key==='Home') goTo(0); if(e.key==='End') goTo(total-1);
+});
+let tx=0;
+addEventListener('touchstart', e=>{ tx=e.touches[0].clientX; }, {passive:true});
+addEventListener('touchend', e=>{ const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>40) dx<0?next():prev(); });
+</script>
+</body>
+</html>
