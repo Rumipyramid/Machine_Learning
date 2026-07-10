@@ -1,6 +1,6 @@
 ---
 name: seeker
-description: Investigar afirmaciones, claims o preguntas factuales con un enfoque riguroso que abarca simultáneamente fuentes empíricas (papers, datos cuantitativos, estudios históricos) y fuentes teóricas/críticas/humanísticas (filosofía, teoría literaria, estudios culturales, historia de las ideas, autores canónicos). Activar SIEMPRE que el usuario pida investigar, verificar, refutar o profundizar en una afirmación; cuando use formulaciones como "qué tan cierto es", "investiga si", "revisa críticamente", "busca fuentes sobre", "es verdad que"; o cuando un tema pueda tener tanto evidencia empírica como una discusión teórica subyacente que cambie su interpretación. Incluye revisión crítica de metodología en papers científicos, reporta inconsistencias metodológicas detectadas, prioriza fuentes de los últimos 5 años pero incorpora fuentes más antiguas cuando tengan valor canónico o metodológico, y usa citas inline en formato (Autor, año) junto a las afirmaciones fuerza.
+description: Investigar afirmaciones, claims o preguntas factuales con un enfoque riguroso que abarca simultáneamente fuentes empíricas (papers, datos cuantitativos, estudios históricos) y fuentes teóricas/críticas/humanísticas (filosofía, teoría literaria, estudios culturales, historia de las ideas, autores canónicos). Activar SIEMPRE que el usuario pida investigar, verificar, refutar o profundizar en una afirmación; cuando use formulaciones como "qué tan cierto es", "investiga si", "revisa críticamente", "busca fuentes sobre", "es verdad que"; o cuando un tema pueda tener tanto evidencia empírica como una discusión teórica subyacente que cambie su interpretación. Incluye revisión crítica de metodología en papers científicos, reporta inconsistencias metodológicas detectadas, reporta explícitamente si cada fuente académica pasó o no revisión por pares (peer review) —sin asumirlo por el repositorio o buscador donde aparece—, prioriza fuentes de los últimos 5 años pero incorpora fuentes más antiguas cuando tengan valor canónico o metodológico, y usa citas inline en formato (Autor, año) junto a las afirmaciones fuerza.
 ---
 
 # Investigación de Espectro Amplio
@@ -83,7 +83,36 @@ Antes de evaluar la calidad, clasifica **qué tipo de evidencia** aporta cada fu
 
 **En la respuesta**, marca el tipo de cada fuente clave al menos una vez, p. ej.: `(Willmott et al., 2021 — observacional transversal, N=582)`. Esto le da al usuario calibración instantánea sobre qué puede y qué no puede concluir de esa fuente.
 
-### Paso 5: Revisión crítica de metodología (papers empíricos)
+### Paso 5: Reportar si el artículo tuvo revisión por pares
+
+La revisión por pares (peer review) es un eje **distinto** del tipo de evidencia (Paso 4) y de la validez/confiabilidad (Paso 7): una fuente puede ser un RCT bien diseñado y aun así no haber pasado revisión por pares (ej. un preprint), o un meta-análisis puede estar publicado en una revista sin proceso de arbitraje serio. No lo asumas por el tipo de fuente ni por el repositorio donde está alojada — verifícalo.
+
+**Para cada fuente de tipo empírico o teórico/académico** (las categorías del Paso 4: meta-análisis, RCT, cuasi-experimental, observacional, cualitativo, estudio de caso, teórico/ensayo), determina y reporta explícitamente su estado de revisión por pares:
+
+| Señal | Interpretación |
+|---|---|
+| Publicado en revista indexada (Scopus, Web of Science, PubMed, SciELO, DOAJ, Redalyc) con proceso de arbitraje declarado | 🟢 Peer-reviewed |
+| Preprint (arXiv, bioRxiv, medRxiv, SSRN, preprint de ResearchGate, "working paper") | 🔴 NO peer-reviewed — aunque esté alojado en un repositorio serio, el preprint es la versión previa al arbitraje |
+| Tesis/disertación no publicada posteriormente en revista | 🔴 NO peer-reviewed (revisión de comité de tesis ≠ arbitraje por pares ciego) |
+| Ponencia/paper de conferencia | 🟡 Variable — algunas conferencias tienen arbitraje riguroso (ej. top-tier de cómputo); otras no. Verificar caso por caso |
+| Capítulo de libro académico | 🟡 Variable — depende de si el volumen fue arbitrado o es de invitación editorial sin arbitraje |
+| Reporte de industria, informe de consultora, estadística oficial | ⚪ No aplica — no es un artículo académico; evalúalo con la rúbrica de "reporte de industria" del Paso 4, no con este criterio |
+
+**Cómo verificarlo cuando no es evidente**: revisar si la revista aparece en índices reconocidos (Scopus/WoS/SciELO/DOAJ), buscar su ISSN, o revisar si la página del artículo declara explícitamente "peer-reviewed"/"arbitrado por pares". ⚠️ **Los repositorios como PMC/NCBI, ResearchGate o SSRN alojan tanto artículos ya publicados y arbitrados como preprints sin arbitrar** — el dominio del enlace no basta para asumir revisión por pares; hay que verificar la publicación de origen (¿en qué revista salió?, ¿tiene DOI de una revista o es un preprint con su propio identificador?).
+
+**Cómo reportarlo**: agregar la marca junto a la cita, igual que la nota de calibración de validez/confiabilidad (Paso 7):
+
+> `(Autor, año — 🟢 peer-reviewed, [Revista], indexada en Scopus)`
+>
+> `(Autor, año — 🔴 preprint, aún sin revisión por pares, arXiv)`
+>
+> `(Autor, año — ⚪ no aplica, reporte de industria)`
+
+Si no se pudo verificar el estado de revisión por pares con la información disponible, decirlo explícitamente: `(Autor, año — ⚠️ estado de revisión por pares no verificado)`. **No asumas "peer-reviewed" por defecto** solo porque la fuente suena académica o aparece en un buscador académico.
+
+Cuando la investigación use **3 o más fuentes empíricas/académicas**, incluir la columna de revisión por pares en la tabla resumen de rigurosidad (ver Paso 7C) para que quede visible de un vistazo cuántas fuentes clave sí pasaron arbitraje y cuántas no.
+
+### Paso 6: Revisión crítica de metodología (papers empíricos)
 
 Cuando una fuente sea un paper científico o un estudio empírico, evaluar críticamente:
 
@@ -98,7 +127,7 @@ Cuando una fuente sea un paper científico o un estudio empírico, evaluar crít
 
 **Reportar al usuario cualquier inconsistencia metodológica** detectada, aunque la fuente sea ampliamente citada. Es información valiosa para que el usuario calibre el peso del hallazgo. Decir "este paper se cita mucho pero su N=24 y no tiene grupo de control" es más útil que solo citar la conclusión.
 
-### Paso 6: Evaluación de validez y confiabilidad de los datos
+### Paso 7: Evaluación de validez y confiabilidad de los datos
 
 Cuando una fuente reporta datos cuantitativos (cifras, escalas, índices, effect sizes), evaluar **dos dimensiones ortogonales**:
 
@@ -137,13 +166,13 @@ La nota de calibración **no reemplaza** la cita inline `(Autor, año)` — la c
 
 Cuando una investigación use **3 o más fuentes empíricas**, cerrar la sección de evidencia con una tabla resumen de rigurosidad:
 
-| Fuente | Tipo de evidencia | N | Validez | Confiabilidad | Peso para el claim |
-|---|---|---|---|---|---|
-| Autor, año | RCT / observacional / etc. | N=… | ✅/⚠️/❌ + nota | ✅/⚠️/❌ + nota | 🟢 Alto / 🟡 Medio / 🔴 Bajo |
+| Fuente | Tipo de evidencia | Revisión por pares | N | Validez | Confiabilidad | Peso para el claim |
+|---|---|---|---|---|---|---|
+| Autor, año | RCT / observacional / etc. | 🟢/🔴/🟡/⚪ + nota | N=… | ✅/⚠️/❌ + nota | ✅/⚠️/❌ + nota | 🟢 Alto / 🟡 Medio / 🔴 Bajo |
 
-Esto le da al usuario una **vista de portafolio** de la evidencia: no todas las fuentes pesan igual, y la tabla lo hace explícito de un vistazo.
+Esto le da al usuario una **vista de portafolio** de la evidencia: no todas las fuentes pesan igual, y la tabla lo hace explícito de un vistazo — incluida la proporción de fuentes que efectivamente pasaron arbitraje por pares.
 
-### Paso 7: Recencia con override de calidad
+### Paso 8: Recencia con override de calidad
 
 **Priorizar** fuentes de los últimos 5 años porque:
 - Reflejan el estado actual del debate.
@@ -174,6 +203,8 @@ Si una afirmación combina varias fuentes que convergen, listarlas: `(Houston, 2
 
 Si dos fuentes están en tensión, marcarlo explícitamente: `(Schenda, 1970, sostiene ~15%; cf. Houston, 2011, para una visión más alta en Inglaterra)`.
 
+Para fuentes empíricas o teóricas/académicas (Paso 4), incluir además la marca de revisión por pares del Paso 5 la primera vez que se cita cada fuente clave: `(Autor, año — 🟢 peer-reviewed)` / `(Autor, año — 🔴 preprint, sin revisión por pares)` / `(Autor, año — ⚠️ revisión por pares no verificada)`. No hace falta repetirla en cada mención subsiguiente de la misma fuente dentro de la respuesta.
+
 ### Estructura recomendada para investigaciones de claims
 
 Para respuestas a investigaciones de afirmaciones específicas, organizar en este orden:
@@ -192,6 +223,7 @@ Para respuestas a investigaciones de afirmaciones específicas, organizar en est
 - Cuando una tesis es de un autor específico, atribuirla. No presentarla como "consenso histórico" ni como dato neutro.
 - Cuando un debate sigue abierto, presentar las posiciones. No imponer una.
 - Si el usuario señala una fuente que se pasó por alto (como ocurrió con Kittler en esta sesión), reconocer el error explícitamente, integrar la fuente, y revisar las conclusiones que dependían de ella.
+- Si no se pudo determinar si una fuente pasó revisión por pares, decirlo explícitamente (Paso 5) — no asumir "peer-reviewed" ni "no peer-reviewed" por defecto.
 
 ## Anti-patrones a evitar
 
@@ -202,6 +234,7 @@ Para respuestas a investigaciones de afirmaciones específicas, organizar en est
 - **Suavizar para no contradecir al usuario**: si la afirmación es falsa, decirlo. La honestidad es más útil que el acomodo. El usuario está pidiendo investigación, no validación.
 - **Citar de memoria sin verificar**: las citas en formato (Autor, año) deben corresponder a fuentes efectivamente consultadas o ampliamente conocidas. No inventar atribuciones para dar apariencia de rigor.
 - **Sobre-extender la teoría**: si Kittler aplica para el 1800, no extenderlo automáticamente al siglo XV. Cada tesis tiene su período y su dominio de aplicación.
+- **Asumir revisión por pares por el repositorio o la apariencia académica**: un preprint en arXiv/bioRxiv/medRxiv o un working paper en SSRN no ha pasado revisión por pares aunque esté alojado junto a artículos que sí, o aparezca en un buscador académico (PMC/NCBI incluye tanto artículos arbitrados como manuscritos y preprints). Verificar la publicación de origen, no el repositorio ni el buscador que lo indexó.
 
 ## Ejemplo de aplicación
 
