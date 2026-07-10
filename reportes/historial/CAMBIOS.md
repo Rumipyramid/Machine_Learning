@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-08T13:41:41 · Cambios vigentes: 64
+> Retención: 15 días · Última actualización: 2026-07-10T01:35:58 · Cambios vigentes: 57
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-10T01:35:58 | Alejandro | Tablero | Cruce CoE X | Sin cruzar con priorización de Milagros | Cruce completo: reportes/cruce_priorizacion_coex_q3.md — 11/24 iniciativas del CoE X pasan por BD; 3 hallazgos críticos (Loyalty eliminado, Cobranzas B2B invisible para comité, Convenios sin luz verde formal) | normal | aplicado |
 | 2026-07-08T13:41:41 | Alejandro | Épicas | Talla | Sin tallaje | Tallas t-shirt asignadas: BTB XL · Cobranzas L · EPS M · Convenios M · Vivo/B360/AMI S · Arquitectura XS | normal | aplicado |
 | 2026-07-04T17:32:38 | Alejandro | Q-5 | Investigación | Sin fuentes secundarias | /seeker completado: research/universidad_vida_fuentes_secundarias.md (10 fuentes registradas F-16 a F-25) | normal | aplicado |
 | 2026-07-04T17:02:39 | Alejandro | Q-6 | Estado | In Progress (vencido, código rojo) | Done — entregado | normal | aplicado |
@@ -61,11 +62,3 @@
 | 2026-06-25T13:56:51 | Stefanie | Q-10 | Status | cierre de playbook pendiente | playbook B360 entregado | normal | aplicado |
 | 2026-06-25T13:56:51 | Stefanie | Q-4 | Status / Impacto | research 20% | quick fix correo de conciliación (35%) | normal | aplicado |
 | 2026-06-25T02:40:54 | Stefanie | Q-27 | Quest nuevo | — | Emisión de póliza (Backlog, EPIC-4 Cobranzas) | normal | aplicado |
-| 2026-06-23T21:56:31 | Stefanie | Stef | Fichas comprometidas | 11 (⛔ Inválido) | 8 (🟢 Óptimo) | normal | aplicado |
-| 2026-06-23T21:56:27 | Stefanie | Q-1 | Behavioral designers | Stef, Felipe, Alejandro | Felipe, Alejandro | normal | aplicado |
-| 2026-06-23T21:56:27 | Stefanie | Q-1 | Fichas | 8 | 5 | normal | aplicado |
-| 2026-06-23T21:49:10 | Alejandro | Q-17/Q-18 | Iniciativa (matriz) | presentes (26) | retiradas (24) | normal | aplicado |
-| 2026-06-23T21:24:22 | Stef | Q-17 | Estado | In Progress | Eliminado del tablero | normal | aplicado |
-| 2026-06-23T21:24:22 | Stef | Q-18 | Estado | In Progress | Eliminado del tablero | normal | aplicado |
-| 2026-06-23T13:48:08 | Alejandro | Q-3 | Estado | Done | In Review | normal | aplicado |
-| 2026-06-23T13:48:08 | Alejandro | Q-6 | Equipo Behavioral Design | Alejandro | Meli, Alejandro | normal | aplicado |
