@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-10T02:18:07 · Cambios vigentes: 60
+> Retención: 15 días · Última actualización: 2026-07-10T12:41:41 · Cambios vigentes: 60
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-10T12:41:41 | Alejandro | Cruce CoE X | Ficha A — problemática real | Titular: venta no opt-in (riesgo legal) | Titular corregido a las 3 causas reales: (a) desarticulación asesor-cliente, (b) sobrecarga cognitiva de herramientas, (c) formación sin sistemática ni visibilidad para líderes. Riesgo legal del contacto queda como detalle en ficha CUA | normal | aplicado |
 | 2026-07-10T02:18:07 | Alejandro | Cruce CoE X | Fichas A y C | Riesgo enmarcado como venta no opt-in (persistencia/mis-selling) | Corregido: el contacto es lo no opt-in → riesgo LEGAL (Ley 32323, multas hasta 450 UIT, enforcement real en banca); CUA = remediación legal; prima protegida como valor | normal | aplicado |
 | 2026-07-10T02:12:11 | Alejandro | Cruce CoE X | Fichas versión comité | Fichas técnicas con gaps | Reescritas con lente de relaciones corporativas: ancla en datos internos (>50% venta no opt-in, NPS 'recibí información'), evidencia citada breve (F-26/F-27 nuevas), impacto conservador donde el caso es débil; resuelto: son 5 guías AMI | normal | aplicado |
 | 2026-07-10T01:45:36 | Alejandro | Cruce CoE X | Fichas de 7 campos | Solo tabla maestra de cruce | Agregada ficha con los 7 campos del formato de Milagros por cada iniciativa (problemática, proceso actual, caso de uso, potencial USD, cálculo, datos, integración) | normal | aplicado |
@@ -64,4 +65,3 @@
 | 2026-06-25T13:56:51 | Alejandro | Q-1 | % Avance / Status | Diseño 1/4 (40%) | Agencia devolvió 1ª guía diagramada (50%) | normal | aplicado |
 | 2026-06-25T13:56:51 | Stefanie | Q-10 | Status | cierre de playbook pendiente | playbook B360 entregado | normal | aplicado |
 | 2026-06-25T13:56:51 | Stefanie | Q-4 | Status / Impacto | research 20% | quick fix correo de conciliación (35%) | normal | aplicado |
-| 2026-06-25T02:40:54 | Stefanie | Q-27 | Quest nuevo | — | Emisión de póliza (Backlog, EPIC-4 Cobranzas) | normal | aplicado |
