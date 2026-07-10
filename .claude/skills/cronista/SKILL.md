@@ -4,7 +4,7 @@ description: >-
   El Cronista es el archivero del códice: cada vez que usas evidencia
   referenciable para crear o fundamentar algo, anota esa fuente en un ledger
   persistente con su resumen breve, una calificación de rigurosidad
-  metodológica, autor y año. Úsalo SIEMPRE que cites o te apoyes en una fuente
+  metodológica, si tiene revisión de pares, autor y año. Úsalo SIEMPRE que cites o te apoyes en una fuente
   externa —papers, estudios, reportes de industria, estadísticas oficiales,
   encuestas, libros, normativa, datasets o páginas web— para afirmar un dato,
   sustentar una investigación, parametrizar un modelo, calibrar un supuesto o
@@ -54,6 +54,7 @@ Toda entrada del ledger tiene **estos campos obligatorios**:
 | **Año** | Año de publicación de la fuente | Si no hay fecha, `s.f.`. Si es serie/actualización, el año de la edición citada. |
 | **Fuente / Título** | Nombre del documento, estudio o página | Lo más específico posible (no solo el dominio). |
 | **Rigurosidad** | Calificación metodológica `A`–`E` (ver rúbrica) | Siempre asignada, con una justificación de una línea. |
+| **Revisión de pares** | ¿El artículo pasó por *peer review*? | `✅ Sí` / `❌ No` / `❓ No verificable` (ver criterio abajo). Siempre reportado. |
 | **Resumen breve** | 1–2 frases: qué dice y por qué es relevante | Conciso; no copies abstracts largos. |
 | **Usado en / fundamenta** | Dónde y para qué la usaste en el proyecto | Ej. "dato de penetración 2.08% en `seguros_…md`". |
 | **URL / referencia** | Enlace o cita completa | Si es offline (libro/PDF local), pon la cita bibliográfica. |
@@ -97,6 +98,30 @@ Reglas de la rúbrica:
 
 ---
 
+## Revisión de pares (cómo decidirlo)
+
+La revisión de pares (*peer review*) es un campo **propio y binario**, separado de
+la rúbrica: dice si el artículo pasó por evaluación editorial de expertos antes de
+publicarse. No lo deduzcas del prestigio; míralo por el canal de publicación.
+
+| Valor | Cuándo | Señales |
+|---|---|---|
+| **✅ Sí** | Publicado en revista científica con proceso editorial de pares. | Revista indexada con DOI e ISSN (ScienceDirect/Elsevier, Springer, Wiley, MDPI, SAGE…); volumen/número/páginas; sección "peer-reviewed". |
+| **❌ No** | Sin proceso de pares académico. | Reportes de reguladores/organismos, consultoras y reaseguradoras, prensa, blogs corporativos, agregadores de datos, *working papers*/preprints sin revisar, estadísticas. |
+| **❓ No verificable** | No puedes confirmar el canal. | Fuente sin metadatos claros; PDF suelto sin revista identificable. |
+
+Notas:
+- **No lo confundas con la rigurosidad.** Un regulador oficial (B) normalmente es
+  `❌ No` en pares, y no por eso deja de ser sólido. Y un paper peer-reviewed puede
+  tener rigurosidad A− si la revista es de revisión laxa (p. ej. algunas de MDPI).
+- **Coherencia con la rúbrica:** el nivel **A exige `✅ Sí`**. Si marcas A pero el
+  artículo no tiene pares, o corriges el nivel o corriges el campo — no deben
+  contradecirse.
+- Estadísticas, notas de prensa y páginas corporativas se reportan como `❌ No`
+  (no son artículos revisados), aunque el dato de fondo sea confiable.
+
+---
+
 ## Flujo cuando el skill se dispara
 
 1. **Detecta la evidencia usada.** Recorre lo que acabas de escribir/crear e
@@ -109,7 +134,8 @@ Reglas de la rúbrica:
      agregando el nuevo contexto, y corrige datos si tienes mejor información.
    - **Si es nueva:** asígnale el siguiente `F-n` y crea la fila.
 4. **Rellena los campos obligatorios**, calificando la rigurosidad con la rúbrica
-   y su justificación de una línea.
+   y su justificación de una línea, y **reportando la revisión de pares**
+   (`✅ Sí` / `❌ No` / `❓ No verificable`) según el canal de publicación.
 5. **Guarda** el ledger y, en tu respuesta al usuario, menciona brevemente qué
    fuentes registraste (p. ej. *"Registré 2 fuentes en el ledger: F-12 (SBS 2023, B)
    y F-13 (Bain 2023, C)."*).
@@ -142,9 +168,11 @@ Cuando crees el archivo por primera vez, úsalo exactamente con esta estructura:
 | E | 🔴 Débil | Sin método ni origen verificable: opinión, anónimo o fecha desconocida. |
 
 ## Fuentes registradas
-| ID | Autor | Año | Fuente / Título | Rigurosidad | Resumen breve | Usado en / fundamenta | URL / referencia | Registrado |
-|---|---|---|---|---|---|---|---|---|
-| F-1 | … | … | … | 🟢 A — {justificación} | … | … | … | YYYY-MM-DD |
+> Pares: ✅ Sí (revista con peer review) · ❌ No · ❓ No verificable.
+
+| ID | Autor | Año | Fuente / Título | Rigurosidad | Pares | Resumen breve | Usado en / fundamenta | URL / referencia | Registrado |
+|---|---|---|---|---|---|---|---|---|---|
+| F-1 | … | … | … | 🟢 A — {justificación} | ✅ Sí | … | … | … | YYYY-MM-DD |
 ```
 
 ---
