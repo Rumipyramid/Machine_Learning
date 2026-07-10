@@ -40,6 +40,33 @@
 > ✅ **Resueltos (04/07):** los 3 🚨 códigos rojos por vencimiento — Q-6, Q-7 y Q-17 se
 > entregaron y pasan a Done.
 
+## 🎯 Prioridades del comité (CoE X — Milagros)
+> Cruce contra `Priorización_CoE_X_Q3_2026` (backlog que Milagros lleva a comité). Detalle
+> completo, fichas de 7 campos y hallazgos en `reportes/cruce_priorizacion_coex_q3.md`.
+> Última sincronización: 2026-07-05.
+
+| Épica / Quest (Beholder) | Iniciativa en el Excel de Milagros | Prioridad de negocio | Estado en comité |
+|---|---|---|---|
+| EPIC-2 AMI Relanzamiento (Q-16–18) | Rimac Salud — Nuevo portafolio de productos AMI | 🔴 **Alta** | En progreso |
+| EPIC-1 Mesa Back to Basics (Q-1–15) | Back to Basics — FFVV Vida Individual | Sin marcar | En progreso |
+| Sub-hilo de EPIC-1 (Q-6, Q-8, Q-9) | Back to Basics — CUA | Sin marcar | Sin estado en comité |
+| EPIC-6 Modelo de venta Convenios (Q-32–34) | Back to Basics — Convenios | Sin marcar | **Backlog en comité** ⚠️ (tu tablero ya la programó desde 20/07) |
+| EPIC-7 Renovación EPS (Q-35–38) | Ecosistema de entendimiento y uso eficiente de seguros EPS | Sin marcar | **Backlog en comité** |
+| EPIC-1 (Q-4, Q-5, Q-15) | Universidad de Vida (modelo de competencias) | Sin marcar | **Backlog en comité** |
+| EPIC-4 Spark: Vivo Pack (Q-26–28) | Piloto MBI Crónicos/Pre-crónicos | Sin marcar | Sin estado en comité |
+| EPIC-5 Bienestar 360 (Q-29–31) | Bienestar 360 — Piloto | Sin marcar | Sin estado en comité |
+| ❌ Sin quest en el tablero | Rediseño de la Home (+Agente) | Sin marcar | En progreso |
+| ❌ Sin quest en el tablero | Nuevo OMT Kit | Sin marcar | Sin estado en comité |
+| ❌ Sin quest en el tablero | Evolution+ \| AMI Venta Hub Multigestión | Sin marcar | En progreso |
+| ❌ Sin quest en el tablero | Guías resumidas en todos los Journeys de Onboarding activos | Sin marcar | En progreso |
+
+**Lecturas rápidas:**
+- 🔴 **Solo 1 de las 12 iniciativas de BD tiene prioridad "Alta" explícita del comité**: AMI Relanzamiento — y es, además, la más cerca de cerrarse (2 de 3 quests Done).
+- ⚠️ **Cobranzas B2B (EPIC-3, S/600k, íntegramente de Stefanie) no aparece en el Excel de Milagros con capacidad Behavioral** — el comité no ve ese trabajo como tuyo.
+- ⚠️ **Convenios (EPIC-6) y Ecosistema EPS (EPIC-7) siguen en Backlog para el comité**, aunque tu tablero ya les dio fecha de inicio — confirmar luz verde antes de comprometer más capacidad.
+- 🚫 **"Programa de lealtad" (Alta prioridad para Milagros) se eliminó de este tablero** en la reestructura v2 y sigue sin resolver si tu equipo debe retomarlo.
+- 📎 4 iniciativas donde participa BD **no tienen quest propio** en este tablero (Home+Agente, OMT Kit, Venta Hub Multigestión, Guías en Onboarding) — candidatas a incorporar si son trabajo real y activo.
+
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
