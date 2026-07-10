@@ -8,6 +8,10 @@ Milagros lleva al comité cross-capacidad: Product, Service, Research, Behaviora
 De las **24 filas** del Excel de Milagros, **11 tienen a alguien de Behavioral Design** (Alejandro/
 "Alejo", Melissa/"Meli", Stefanie/"Stef", Felipe) como responsable CoE X — **~46% del portafolio
 que va a comité pasa por el equipo**. Este documento cruza esas 11 filas contra el Tablero Beholder.
+> **Actualización 2026-07-05:** "Back to Basics — CUA" ya no es fila independiente en el Excel de
+> Milagros — se fusionó dentro de "Back to Basics — FFVV Vida Individual" como el componente (a)
+> de su problemática. La tabla de abajo refleja la fusión (10 filas visibles + 1 nueva:
+> "Guías resumidas en Journeys de Onboarding", agregada por Milagros después del primer cruce).
 
 ## 2. Tabla maestra de cruce
 
@@ -18,12 +22,12 @@ que va a comité pasa por el equipo**. Este documento cruza esas 11 filas contra
 | Piloto MBI Crónicos/Pre-crónicos | Salud/Vida | Carla, Jona, **Stef** | — | — | ✅ EPIC-4 Spark: Vivo Pack (Q-26–28) | In Progress/To Do |
 | Bienestar 360 — Piloto | — | Carla, **Stef** | — | — | ✅ EPIC-5 Bienestar 360 (Q-29–31) | In Progress/To Do |
 | Evolution+ \| AMI Venta Hub Multigestión | Telemarketing | Jean, **Stef** | — | En progreso | ❌ **Sin quest en el tablero** | — |
-| Back to Basics — FFVV Vida Individual | FFVV | César, **Alejo, Meli**, Iki, Dani | — | En progreso | ✅ EPIC-1 Mesa Back to Basics (Q-1–15) | In Progress (talla XL) |
+| Back to Basics — FFVV Vida Individual (incluye CUA, fusionada como componente a) | FFVV | César, **Alejo, Meli**, Iki, Dani | — | En progreso | ✅ EPIC-1 Mesa Back to Basics (Q-1–15, incl. Q-6/Q-8/Q-9 de CUA) | In Progress (talla XL) |
 | Back to Basics — Convenios | Convenios | César, Auri, **Alejo, Meli** | — | **Backlog** | ✅ EPIC-6 Modelo de venta Convenios (Q-32–34) | **To Do (Q-32 inicia 20/07)** ⚠️ |
-| Back to Basics — CUA | FFVV | **Alejo**, César | — | — | ✅ Sub-hilo de EPIC-1 (Q-6, Q-8, Q-9) | In Progress/To Do |
-| Pólizas simples / Ecosistema de entendimiento EPS | APP | **Alejo, Stef, Felipe** | — | — | ✅ EPIC-7 Renovación EPS, esp. Q-38 | To Do |
+| Ecosistema de entendimiento y uso eficiente de seguros EPS | Multicanal | **Alejo, Stef, Felipe** | — | Backlog | ✅ EPIC-7 Renovación EPS, esp. Q-38 | To Do |
 | Universidad de Vida (competencias) | FFVV | **(sin responsable listado)** | — | — | ✅ EPIC-1, Q-4/Q-5/Q-15 | To Do |
 | Rimac Salud — Nuevo portafolio AMI | Cross | Andrea, Iki, Auri, **Alejo** | **Alta** ✅ | En progreso | ✅ EPIC-2 AMI Relanzamiento (Q-16–18) | Done/Done/To Do |
+| Guías resumidas en todos los Journeys de Onboarding activos | Journeys de comunicación Clientes | **Alejo** | — | En progreso | ❌ **Sin quest en el tablero** | — |
 
 ## 3. Hallazgos críticos (ordenados por urgencia)
 
@@ -76,17 +80,20 @@ no-AMI; ajustar Q-16/Q-18 si corresponde.
 > Cifras en S/. sin convertir a USD hasta tener el tipo de cambio oficial de Finanzas.
 > **[Pendiente]** = dato real por conseguir; no se inventa.
 
-### 🅰️ Back to Basics — FFVV Vida Individual (EPIC-1, talla XL)
+### 🅰️ Back to Basics — FFVV Vida Individual (EPIC-1, talla XL) · incluye CUA (fusionado)
+
+> **CUA ya no es ficha independiente** (04/07): Milagros la fusionó dentro de esta iniciativa como
+> el componente (a) del problema. La ficha 🅲 original queda absorbida aquí.
 
 | Campo | Contenido |
 |---|---|
-| **Problemática actual** | La venta en Vida Individual tiene **3 problemáticas detectadas**: **(a) desarticulación** — la información que recibe el asesor y la que recibe el cliente no responden a una misma estrategia de venta, así que el discurso del asesor y el material del cliente pueden contarse historias distintas; **(b) sobrecarga cognitiva del asesor** — la cantidad de herramientas, materiales educativos, operativa y otros elementos satura su capacidad de atención y perjudica la gestión consultiva (la carga cognitiva es un limitante documentado del desempeño experto — Sweller, ⚪ marco canónico); **(c) formación sin sistemática** — descansa en dos activos reales, la calidad del contenido y de las capacitaciones, pero **sin una sistemática que asegure el aprendizaje ni dé visibilidad cuantificable del progreso a los líderes**. Adicionalmente, el primer contacto arrastra un riesgo legal de consentimiento que se detalla en la ficha 🅲 (Ley 32323). |
-| **¿Cómo se realiza hoy?** | Materiales para el asesor y para el cliente producidos por separado, sin una estrategia de venta que los articule. El asesor navega un inventario creciente de herramientas y operativa sin curaduría (cada frente agrega piezas, nadie resta). Formación presencial de alta calidad humana, sin calendarización formal, sin evaluación por competencias y sin tablero de progreso: el líder se entera del desempeño del asesor cuando ya se reflejó (o no) en la venta. |
-| **Descripción de caso de uso** | Sistema integral que ataca las 3 problemáticas: **(a→)** playbook de ventas de 5 bloques como **estrategia única** que articula el material del asesor y del cliente (físico, virtual y consumible por copilotos); **(b→)** consolidación y curaduría de herramientas — AIDA como copiloto entrega lo necesario en el momento de uso, en vez de sumar una herramienta más al inventario; **(c→)** Universidad Vida (ficha 🅴) con evaluación por competencias y **tablero de progreso cuantificable para líderes**, alimentado por el puntaje de práctica de AIDA. |
-| **Potencial inicial estimado (USD/año)** | Componente AIDA (ataca b y c): **proyección interna S/1.8M/año** en ahorro/eficiencia — sujeta al comité de consolidación de herramientas; ajustada por ese riesgo, ~S/1.2–1.3M. Componente formación (c): −25% de ramp-up como base conservadora. Componente articulación (a) y sobrecarga (b): sin cifra propia todavía — el valor es **capacidad consultiva recuperada** (tiempo del asesor liberado de navegar herramientas dispersas), a cuantificar con datos internos **[Pendiente]**. El riesgo legal del contacto (Ley 32323) se cuantifica aparte, en la ficha 🅲. |
-| **Explicación del cálculo** | Impacta: (1) **eficiencia/ahorro** — AIDA reduce el ramp-up (−25–40% est.) al sustituir práctica real por simulada, y consolida herramientas dispersas en un solo copiloto; (2) **prima** — un asesor con estrategia articulada y sin sobrecarga cognitiva convierte mejor (efecto no cuantificado aún); (3) **retención de talento** — visibilidad de progreso para líderes permite intervenir antes de perder al asesor (LIMRA: la calidad del training es uno de los 5 factores que más pesan en la retención 🟡). |
-| **Datos requeridos / fuente** | Inventario de herramientas/materiales activos por asesor (para medir la sobrecarga real); tiempo del asesor en tareas operativas vs. consultivas (si existe medición); attrition y producción de asesores año 1 (Comercial/RR.HH.); logs de práctica de AIDA. |
-| **Sistema de integración** | CRM de FFVV **[Pendiente: confirmar plataforma]**; LMS de Universidad Vida (por definir); AIDA Skill Trainer. |
+| **Problemática actual** | La venta en Vida Individual tiene **3 problemáticas detectadas**: **(a) contacto sin CUA — riesgo legal** — la FFVV ha estado habituada a contactar sin CUA, y hoy más del 50% de la venta nace de un contacto que no es opt-in; bajo la **Ley 32323**, el contacto comercial sin consentimiento previo, expreso e inequívoco es infracción sancionable (multas de hasta 450 UIT ≈ S/2.4M, fiscalizadas por INDECOPI/ANPDP — ya sancionaron a BBVA por una sola llamada en jun-2026, y Scotiabank enfrenta una sanción que podría superar S/2.4M); **(b) desarticulación** — la información que recibe el asesor y la que recibe el cliente no están articuladas bajo una misma estrategia de venta; **(c) sobrecarga cognitiva** — la cantidad de herramientas, materiales educativos, operativa y otros elementos sobrecarga cognitivamente al asesor, perjudicando su capacidad de gestión consultiva (limitante documentado del desempeño experto — Sweller, ⚪ marco canónico). |
+| **¿Cómo se realiza hoy?** | **(a)** Contacto sin lineamiento unificado ni verificación sistemática de consentimiento previo; mesa Legal/Cumplimiento/CUA/FFVV en curso (debe cerrar antes del 10/07). **(b, c)** La estrategia de venta a nivel comunicacional y de flujos de experiencia está fragmentada en islas; el contenido y las herramientas que recibe el asesor no usan un lenguaje unificado, y el asesor navega un inventario creciente sin curaduría. |
+| **Descripción de caso de uso** | Consolidación del Método de Venta RIMAC Vida Individual en un **playbook único** para asesores (ataca b y c) + **plantillas de mensaje para primer contacto** legalmente viables, exploradas vía 6 sacrificial concepts con no clientes sin CUA (ataca a) + material visual para compartir por WhatsApp durante la venta. Complementario: AIDA Skill Trainer como copiloto que consolida herramientas en vez de sumar una más, y Universidad Vida (ficha 🅴) con tablero de progreso para líderes. |
+| **Potencial inicial estimado (USD/año)** | **(a)** prima protegida — venta que migra de contacto no conforme a un pipeline legal, más multas evitadas; requiere la prima anual originada en contacto no opt-in **[Pendiente]**. **(b, c)** sin cifra propia — el valor es capacidad consultiva recuperada, a cuantificar con datos internos **[Pendiente]**. Componente relacionado en la misma épica — AIDA: proyección interna de **S/1.8M/año** en ahorro/eficiencia, sujeta a la decisión del comité de consolidación de herramientas (~S/1.2–1.3M ajustado por ese riesgo). |
+| **Explicación del cálculo** | Impacta: (1) **prima protegida** — venta que sobrevive al enforcement de la Ley 32323 + venta con estrategia articulada que convierte mejor; (2) **riesgo legal evitado** — multas de hasta 450 UIT (se presenta como cumplimiento, no como cifra); (3) **eficiencia comercial** — menos tiempo del asesor curando material disperso; (4) AIDA impacta además el ahorro por reducción de ramp-up. |
+| **Datos requeridos / fuente** | % de ventas originadas en contacto con/sin CUA (CRM de FFVV); tasa actual de agendamiento por canal; resultados de los sacrificial concepts; inventario de herramientas/materiales activos por asesor; attrition y producción de asesores año 1; logs de práctica de AIDA. |
+| **Sistema de integración** | CRM de FFVV **[Pendiente: confirmar plataforma]**; WhatsApp Business API para plantillas de contacto; AIDA Skill Trainer (componente relacionado). |
 
 ### 🅱️ Back to Basics — Convenios (EPIC-6, talla M)
 
@@ -99,18 +106,6 @@ no-AMI; ajustar Q-16/Q-18 si corresponde.
 | **Explicación del cálculo** | Mismo mecanismo que BTB (prima protegida por venta consentida + eficiencia comercial); indicador y magnitud se definen con el volumen del canal. |
 | **Datos requeridos / fuente** | Ventas y persistencia del canal Convenios; estructura de incentivos actual (sponsors del negocio). |
 | **Sistema de integración** | Por definir tras el mapeo del canal. |
-
-### 🅲 Back to Basics — CUA (sub-hilo de EPIC-1: Q-6, Q-8, Q-9)
-
-| Campo | Contenido |
-|---|---|
-| **Problemática actual** | Es la **remediación legal directa** del riesgo de la ficha 🅰️: bajo la Ley 32323, cada contacto comercial sin consentimiento previo es una infracción sancionable (hasta 450 UIT), y hoy **más del 50% de la venta nace de contactos así**. Sin una estrategia de contacto validada por Legal/Cumplimiento/CUA, el negocio elige entre dejar de contactar (caída de venta) o seguir contactando con exposición a multas — la mesa de trabajo existe para construir la tercera opción. |
-| **¿Cómo se realiza hoy?** | Contacto sin lineamiento unificado ni verificación sistemática de consentimiento previo; mesa Legal/Cumplimiento/CUA/FFVV en curso (debe cerrar antes del 10/07). |
-| **Descripción de caso de uso** | Desk research de gatillos de contacto frío/caliente → 6 sacrificial concepts con no clientes sin CUA (explorar rutas de contacto **legalmente viables**: el cliente inicia el contacto, referidos, canales con consentimiento) → informe de estrategias validadas por CUA/Cumplimiento/Legal → plantillas de WhatsApp/correo con y sin CUA. |
-| **Potencial inicial estimado (USD/año)** | Conservador: el valor primario es **convertir un flujo de venta legalmente vulnerable en un pipeline conforme** — prima protegida (compartida con ficha 🅰️) + multas evitadas. El +20–30% de agendamiento del tablero pasa a **estimación interna a validar** con los sacrificial concepts — sin dato de campo, no se lleva a comité como promesa. |
-| **Explicación del cálculo** | Impacta prima protegida (venta que sobrevive al enforcement de la Ley 32323) y riesgo legal evitado (hasta 450 UIT por caso; se presenta como cumplimiento, no como proyección de ingreso). |
-| **Datos requeridos / fuente** | Tasa actual de agendamiento por canal (CRM FFVV); resultados de los sacrificial concepts. |
-| **Sistema de integración** | WhatsApp Business API y CRM de FFVV **[Pendiente: confirmar]**. |
 
 ### 🅳 Pólizas simples / Ecosistema de entendimiento EPS (EPIC-7, esp. Q-38)
 
@@ -172,7 +167,19 @@ no-AMI; ajustar Q-16/Q-18 si corresponde.
 | **Datos requeridos / fuente** | Métricas de adherencia/uso; siniestralidad y RT de participantes vs. no participantes. |
 | **Sistema de integración** | — |
 
-### 🅸 Rediseño Home (+Agente) · Nuevo OMT Kit · Venta Hub Multigestión
+### 🅹 Guías resumidas en todos los Journeys de Onboarding activos
+
+| Campo | Contenido |
+|---|---|
+| **Problemática actual** | Igual raíz que la ficha 🅳 (NPS "recibí información"), con un riesgo específico: hoy se distribuye por un único canal (correo), con **~23% de Open Rate** promedio — la mayoría de los destinatarios no llega a abrir el material. |
+| **¿Cómo se realiza hoy?** | Distribución únicamente por correo dentro del journey de onboarding. |
+| **Descripción de caso de uso** | Extender la distribución a todos los journeys de onboarding activos, diversificando canales más allá del correo (evaluar push, WhatsApp, in-app) para superar la limitación de alcance del 23% de OR. |
+| **Potencial inicial estimado (USD/año)** | Conservador, sin cifra USD: el valor esperado es alcance efectivo del material (más destinatarios que sí lo abren), no conversión o retención directa. |
+| **Explicación del cálculo** | Impacta la categoría "no recibí información" del NPS al ampliar la cobertura real (no solo el envío) del material educativo entre nuevos clientes. |
+| **Datos requeridos / fuente** | Open Rate y tasa de lectura por canal y journey; segmentación de journeys activos y sus canales actuales. |
+| **Sistema de integración** | **[Pendiente]** — no hay base para proponer una plataforma de envío específica. |
+
+### 🅺 Rediseño Home (+Agente) · Nuevo OMT Kit · Venta Hub Multigestión
 Sin quest en el Beholder (hallazgo #6). Solo existe lo que Milagros ya escribió — no se fabrica
 contenido de proyectos que el equipo no ha documentado como propios. Para llenar sus fichas:
 Home (faltan datos/integración), OMT Kit (solo tiene problemática), Venta Hub (conversación con

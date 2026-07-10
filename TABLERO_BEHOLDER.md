@@ -48,8 +48,7 @@
 | Épica / Quest (Beholder) | Iniciativa en el Excel de Milagros | Prioridad de negocio | Estado en comité |
 |---|---|---|---|
 | EPIC-2 AMI Relanzamiento (Q-16–18) | Rimac Salud — Nuevo portafolio de productos AMI | 🔴 **Alta** | En progreso |
-| EPIC-1 Mesa Back to Basics (Q-1–15) | Back to Basics — FFVV Vida Individual | Sin marcar | En progreso |
-| Sub-hilo de EPIC-1 (Q-6, Q-8, Q-9) | Back to Basics — CUA | Sin marcar | Sin estado en comité |
+| EPIC-1 Mesa Back to Basics (Q-1–15, incluye CUA: Q-6, Q-8, Q-9) | Back to Basics — FFVV Vida Individual (CUA fusionado como componente (a) del problema) | Sin marcar | En progreso |
 | EPIC-6 Modelo de venta Convenios (Q-32–34) | Back to Basics — Convenios | Sin marcar | **Backlog en comité** ⚠️ (tu tablero ya la programó desde 20/07) |
 | EPIC-7 Renovación EPS (Q-35–38) | Ecosistema de entendimiento y uso eficiente de seguros EPS | Sin marcar | **Backlog en comité** |
 | EPIC-1 (Q-4, Q-5, Q-15) | Universidad de Vida (modelo de competencias) | Sin marcar | **Backlog en comité** |
@@ -61,7 +60,8 @@
 | ❌ Sin quest en el tablero | Guías resumidas en todos los Journeys de Onboarding activos | Sin marcar | En progreso |
 
 **Lecturas rápidas:**
-- 🔴 **Solo 1 de las 12 iniciativas de BD tiene prioridad "Alta" explícita del comité**: AMI Relanzamiento — y es, además, la más cerca de cerrarse (2 de 3 quests Done).
+- 🔴 **Solo 1 de las 11 iniciativas de BD tiene prioridad "Alta" explícita del comité**: AMI Relanzamiento — y es, además, la más cerca de cerrarse (2 de 3 quests Done).
+- 🔀 **CUA ya no es una fila propia para el comité**: Milagros la fusionó dentro de "Back to Basics — FFVV Vida Individual" como el componente (a) del problema (contacto sin CUA = riesgo legal). Q-6, Q-8, Q-9 se siguen trackeando como quests propios en tu tablero, pero reportan hacia arriba como parte de BTB, no por separado.
 - ⚠️ **Cobranzas B2B (EPIC-3, S/600k, íntegramente de Stefanie) no aparece en el Excel de Milagros con capacidad Behavioral** — el comité no ve ese trabajo como tuyo.
 - ⚠️ **Convenios (EPIC-6) y Ecosistema EPS (EPIC-7) siguen en Backlog para el comité**, aunque tu tablero ya les dio fecha de inicio — confirmar luz verde antes de comprometer más capacidad.
 - 🚫 **"Programa de lealtad" (Alta prioridad para Milagros) se eliminó de este tablero** en la reestructura v2 y sigue sin resolver si tu equipo debe retomarlo.

@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-10T13:13:52 · Cambios vigentes: 63
+> Retención: 15 días · Última actualización: 2026-07-10T13:30:22 · Cambios vigentes: 64
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-10T13:30:22 | Alejandro | Cruce CoE X | Fusión CUA | CUA como fila/ficha independiente (🅲) | CUA fusionada dentro de Back to Basics FFVV como componente (a) de su problemática; ficha 🅲 absorbida en 🅰️. Agregada ficha nueva para Guías en Onboarding | normal | aplicado |
 | 2026-07-10T13:13:52 | Alejandro | Tablero | Sección nueva | Sin sección de prioridades de comité | Agregada '🎯 Prioridades del comité (CoE X — Milagros)': cruce épicas/quests vs. prioridad y estado en su Excel, con 5 lecturas rápidas | normal | aplicado |
 | 2026-07-10T13:11:25 | Alejandro | Skill | Entrega del tablero | Adjuntar .md condicional a 'cuando el entorno lo permita' | Regla permanente: siempre adjuntar el tablero en Markdown como output, sin condicionar | normal | aplicado |
 | 2026-07-10T13:08:08 | Alejandro | Excel Milagros | Campos BD completados | Filas 12,13,17,19,21,22,23,24 con G/H/I/J vacíos | Completados con contenido coherente al tablero/seeker/cruce; filas 3, 11, 14 dejadas sin tocar por falta de base real | normal | aplicado |
