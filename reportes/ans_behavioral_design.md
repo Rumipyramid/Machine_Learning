@@ -102,20 +102,51 @@ historial, no una predicción derivada de descomponer el trabajo en pasos. Si el
 cabe en la talla, se recorta alcance antes que se negocia más tiempo.
 
 ### 3.1 Catálogo de entregables BD con appetite por talla
+
+> **Las categorías son cajones por función, no por artefacto.** Cada una responde a "¿qué
+> trabajo hace este entregable?", de modo que lo que el equipo haga a futuro cae en un cajón
+> existente sin rediseñar la tabla. Ejemplos actuales *(en cursiva)* y futuros (en lista) por
+> categoría:
+>
+> 1. **🔍 Evidencia y diagnóstico** — producir conocimiento sobre la conducta. *Desk research,
+>    bench frío/caliente, behavioral journey, diagnóstico de barreras.* Futuro: análisis de
+>    data conductual, entrevistas/observación en campo, matriz de sesgos de un journey.
+> 2. **📣 Comunicación conductual** — piezas y mensajes que mueven entendimiento o acción, para
+>    **cualquier audiencia** (cliente o asesor). *Guías resumidas, flyers, cartas, plantillas
+>    de mensaje para asesores, guías de comunicación con speeches, journeys de comunicación.*
+>    Futuro: campañas de recordatorios con framing, copy de notificaciones/push, cartas de
+>    renovación, scripts de bots.
+> 3. **🎛️ Arquitectura de intervención** — rediseñar el contexto de decisión en un flujo,
+>    producto o servicio. *Estrategia de primer contacto, batería de soluciones de renovación.*
+>    Futuro: defaults y reordenamiento de opciones, rediseño de momentos de decisión (checkout,
+>    renovación), sistemas de incentivos, arquitectura de decisión de un producto digital.
+> 4. **🧪 Validación y experimentación** — probar antes de escalar. *Sacrificial concepts, test
+>    de concepto Vivo Pack.* Futuro: pilotos en campo, experimentos A/B con tracking, series de
+>    experimentación sobre un journey.
+> 5. **📚 Sistemas y frameworks** — codificar conocimiento reutilizable del equipo o del negocio.
+>    *Playbook de ventas, playbook B360, modelo de competencias, modelo de cambio de hábitos.*
+>    Futuro: bibliotecas de intervenciones probadas, guidelines conductuales para otros equipos,
+>    frameworks por línea de negocio.
+> 6. **🚀 Adopción y despliegue** — instalar el cambio en la organización. *Despliegue FFVV
+>    stock, despliegue Universidad Vida.* Futuro: capacitaciones, campañas de adopción con
+>    campeones, seguimiento post-implementación.
+>
+> **Regla de encaje:** si un quest combina dos funciones (p. ej. research + framework), se
+> talla cada función por separado y se suman — no se infla una sola categoría.
+>
 > Días = **días hábiles efectivos de trabajo BD al 100% en esa tarea** (no calendario).
 > Conversión a monedas: **1 🪙 ≈ 1.5 días efectivos** (calibrada con la retro del tablero:
 > ratio medio actual 0.72 🪙/día; se recalibra cada trimestre con `beholder_tools.py retro`).
 
-| Tipo de entregable (ejemplos reales del Q3) | S | M | L | XL |
+| Categoría (función) | S | M | L | XL |
 |---|---|---|---|---|
-| **Material de entendimiento** (guía resumida, flyer, carta) — *guías AMI, EPS* | Ajuste sobre plantilla existente · 1–2d · 1🪙 | Producto nuevo con validación de Producto/médica · 3–4d · 2–3🪙 | Familia de productos o multiempresa · 6–8d · 4–5🪙 | Ecosistema multicanal de entendimiento · 12d+ · 8🪙+ |
-| **Playbook / método** — *playbook de ventas, playbook B360* | Ajuste de sección · 1–2d · 1🪙 | Bloque nuevo · 3–4d · 2–3🪙 | Playbook completo de un frente · 7–9d · 5–6🪙 | Método E2E multicanal (físico + virtual + copiloto) · 12d+ · 8🪙+ |
-| **Estrategia + plantillas de contacto** — *informe CUA, plantillas WhatsApp/correo* | Ajuste de copy conductual · 1d · 1🪙 | Set de plantillas para 1 canal · 3d · 2🪙 | Estrategia validada (gate legal) + plantillas multicanal · 6d · 4🪙 | Programa de contacto completo por segmento · 10d+ · 7🪙+ |
-| **Diagnóstico conductual / research** — *desk research, bench frío/caliente* | Desk research acotado · 2d · 1–2🪙 | Bench + síntesis con hipótesis · 4d · 3🪙 | Research con entrevistas/observación · 7–9d · 5–6🪙 | Diagnóstico E2E con data + campo · 12d+ · 8🪙+ |
-| **Test de concepto / experimento** — *Vivo Pack, sacrificial concepts* | Test guerrilla (conceptos + reacciones) · 3d · 2🪙 | Test moderado con artefactos · 5d · 3–4🪙 | Experimento A/B con tracking · 9–11d · 6–7🪙 | Programa de experimentación (serie) · 15d+ · 10🪙+ |
-| **Modelo / framework** — *modelo de competencias, cambio de hábitos* | — (no existe talla S honesta) | Framework adaptado de uno existente · 5d · 3–4🪙 | Modelo nuevo con validación · 9–11d · 6–7🪙 | Sistema con evaluación + gobernanza (Universidad Vida) · 15d+ · 10🪙+ |
-| **Despliegue / adopción** — *despliegue FFVV stock, UV* | — | 1 cohorte con materiales listos · 4d · 3🪙 | Multi-cohorte con campeones y refuerzos · 8d · 5–6🪙 | Organización completa con medición de adopción · 12d+ · 8🪙+ |
-| **Consultoría a otros equipos** — *agente AI App, Home* | Se gestiona como **soporte por horas** (ver 3.3), no como proyecto: sesión 0.5–1h · revisión 2–4h · co-diseño puntual 1–2d | | | |
+| **🔍 Evidencia y diagnóstico** | Desk research acotado · 2d · 1🪙 | Bench + síntesis con hipótesis · 4d · 3🪙 | Research con entrevistas/observación · 8d · 5🪙 | Diagnóstico E2E con data + campo · 12d+ · 8🪙+ |
+| **📣 Comunicación conductual** | Ajuste de pieza/copy sobre plantilla existente · 1–2d · 1🪙 | Pieza o set nuevo para 1 canal/producto, con validación · 3–4d · 2–3🪙 | Familia de piezas o journey multicanal (o con gate legal) · 6–8d · 4–5🪙 | Ecosistema de comunicación E2E · 12d+ · 8🪙+ |
+| **🎛️ Arquitectura de intervención** | Micro-fricción o default en un paso · 1–2d · 1🪙 | Intervención en un momento de decisión · 4d · 3🪙 | Estrategia conductual de un flujo completo · 8d · 5–6🪙 | Programa conductual E2E / arquitectura de un producto · 15d+ · 10🪙+ |
+| **🧪 Validación y experimentación** | Test guerrilla / sacrificial concepts · 3d · 2🪙 | Test moderado con artefactos · 5d · 3–4🪙 | Experimento A/B con tracking · 10d · 6–7🪙 | Programa de experimentación (serie) · 15d+ · 10🪙+ |
+| **📚 Sistemas y frameworks** | Ajuste de sección de un playbook/modelo · 1–2d · 1🪙 | Bloque nuevo o framework adaptado · 5d · 3–4🪙 | Playbook/modelo completo con validación · 10d · 6–7🪙 | Sistema con evaluación + gobernanza · 15d+ · 10🪙+ |
+| **🚀 Adopción y despliegue** | Sesión de capacitación con material listo · 1–2d · 1🪙 | 1 cohorte con materiales listos · 4d · 3🪙 | Multi-cohorte con campeones y refuerzos · 8d · 5–6🪙 | Organización completa con medición de adopción · 12d+ · 8🪙+ |
+| **🤝 Consultoría a otros equipos** — *agente AI App, Home* | Se gestiona como **soporte por horas** (ver 3.3), no como proyecto: sesión 0.5–1h · revisión 2–4h · co-diseño puntual 1–2d | | | |
 
 ### 3.2 Drivers de tallado (cómo decidir la talla sin discutir 20 minutos)
 La talla se determina con **3 preguntas**, no por "tamaño del journey":
