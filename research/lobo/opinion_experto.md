@@ -63,6 +63,39 @@ básica, no de diferenciación ESG) es **instinto**, no dato.
 - **Confianza:** Baja para el mercado peruano específicamente
 - **Actualizado:** 2026-07-12
 
+### 6. La era del "nudge de catálogo" terminó — testear en la propia población es el estándar, no copiar el tamaño de efecto de un paper
+El meta-análisis fundacional pro-nudge (447 experimentos) fue revertido por un
+re-análisis bayesiano que corrige sesgo de publicación: ajustado, no queda
+evidencia de un efecto promedio del nudging. Con datos reales a escala (123+ RCTs
+administrativos, >20M personas) el efecto que sobrevive ronda ~1.4 puntos
+porcentuales, muy por debajo del ~8.7pp que reportan los papers académicos — un
+"voltage drop" de ~6x entre laboratorio y despliegue real. Un meta-análisis de
+segundo orden matiza esto: hay impacto, pero es menor y muy heterogéneo por
+dominio/técnica, no un cero absoluto. Esto extiende la tesis 1: no solo la
+divulgación es una palanca débil — el nudge genérico importado de un paper también
+lo es, salvo que se valide en la propia base de usuarios.
+- **Evidencia:** F-16 (🟢A, meta-análisis original), F-17 (🟢A, re-análisis que lo
+  revierte), F-18 (🟢A, matiza: efecto real pero heterogéneo), F-20 (🟢A, megastudy
+  como metodología correcta: testear muchas variantes a la vez, en casa), F-21
+  (🟢A, voltage drop cuantificado). Contrapeso a mirar con cautela: F-26 (🟡C,
+  McKinsey reporta +10% retención en nudge units corporativas) es un caso de
+  consultora, no auditable — no pesa contra la evidencia A de arriba.
+- **Confianza:** Alta
+- **Actualizado:** 2026-07-12
+
+### 7. El diseño de producto embebido (s-frame) gana sobre el nudge cosmético (i-frame)
+El campo se desvió priorizando soluciones a nivel individual (recordatorios,
+defaults, copy) sobre el rediseño estructural del producto. El caso con outcome
+telemático real (no autoreportado) lo prueba: seguros por uso (UBI) redujeron
+velocidad 11-13%, frenadas bruscas 16-21% y aceleraciones agresivas 16-25% —
+conducta cambiada por el diseño del producto (pricing dinámico + feedback), no por
+un mensaje. Es la misma lógica de la tesis 2: la palanca de mayor ROI es rediseñar
+el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
+- **Evidencia:** F-19 (🟢A, marco teórico i-frame/s-frame, canónico), F-23 (🟢A,
+  RCT de campo nacional con outcome telemático objetivo)
+- **Confianza:** Alta
+- **Actualizado:** 2026-07-12
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -80,6 +113,18 @@ básica, no de diferenciación ESG) es **instinto**, no dato.
   intermediación humana suele convertir mejor que el canal digital directo. Vale
   la pena que `seeker` o `marketer` busquen evidencia dura (tasa de conversión
   bróker vs. digital en Perú) antes de apostarle presupuesto.
+- **Pricing dinámico por uso (UBI) como producto, no como campaña de nudge.**
+  Tesis 7 lo prueba con outcome real: telemática + feedback + precio variable
+  cambia la conducta de manejo de forma medible. Jugada: extender la lógica UBI
+  más allá de auto (salud, hogar) donde exista dato de uso, en vez de invertir en
+  otra campaña de comunicación sobre manejo seguro.
+- **Posicionar `lapuerta` en la frontera de "AI Behavioral Science".** La agenda
+  formal del subcampo (agentes sintéticos, simulación conductual con IA) recién se
+  está formando, con autores de primer nivel detrás (F-27, aunque todavía
+  preprint sin peer review). `lapuerta` ya hace exactamente eso. *Instinto, no
+  ledger-backed como oportunidad de negocio*: hay ventana para posicionar el
+  trabajo como caso aplicado temprano antes de que el subcampo se sature — vale
+  que `seeker` monitoree este preprint hacia su publicación final.
 
 ## ⚠️ Riesgos
 
@@ -98,6 +143,28 @@ básica, no de diferenciación ESG) es **instinto**, no dato.
 - **F-15 sigue marcada "NO USAR" en el ledger** (cifra de UnitedHealth sin método
   verificable, ~9% entiende términos básicos). Cuidado con que se cuele en algún
   deck o caso de negocio — no tiene respaldo.
+- **Dimensionar el ROI de un nudge con el tamaño de efecto de un paper académico.**
+  Tesis 6: el "voltage drop" es ~6x (1.4pp de campo vs 8.7pp de laboratorio).
+  Cualquier caso de negocio de una nudge unit interna debe presupuestar con el
+  número de campo, no con el del paper que lo inspiró — si no, el forecast de
+  retorno queda sobreestimado desde el día uno.
+- **Confiar en estudios de "honestidad"/nudges éticos sin verificar su
+  integridad.** El escándalo Ariely/Gino (F-24) mostró fabricación de datos en
+  investigación de honestidad ampliamente citada por la industria de seguros
+  (declaraciones juradas, formularios de siniestros, firma-al-inicio vs.
+  firma-al-final). Antes de citar un estudio de honestidad conductual para
+  diseñar un formulario o proceso antifraude, verificar que no sea parte del
+  corpus retractado — es un riesgo de credibilidad tan serio como F-15.
+- **Tratar los resultados de Vitality (F-25) como evidencia dura.** Es dato
+  autoreportado corporativo sin auditoría externa (🟠D) — misma categoría de
+  fragilidad que F-15/F-5. Útil como benchmark direccional de "shared-value
+  insurance" (76% menor mortalidad en miembros engaged, +15% en manejo), pero no
+  como input numérico de un caso de negocio.
+- **La tenencia de seguros de vida en EE.UU. cayó de 63% (2011) a 51% (2024)**
+  pese a que las intervenciones de comprensión sí mejoran el journey de compra
+  puntual (F-22, 🟡C). Refuerza la tesis 1 en la dirección más incómoda: mejorar
+  el entendimiento en el punto de venta no basta para sostener ni crecer la
+  categoría a nivel agregado.
 
 ## 📔 Bitácora
 
@@ -109,3 +176,17 @@ básica, no de diferenciación ESG) es **instinto**, no dato.
   probada en Perú. Marqué 3 oportunidades y 4 riesgos, incluyendo la advertencia
   de no usar F-15. Sin entradas previas contra las cuales comparar — este es el
   punto de partida.
+- **2026-07-12** — El ledger creció de F-15 a F-27 (investigación `/trinidad`
+  sobre behavioral design, volcada en `research/behavioral_design_360.md`).
+  Novedad sustancial: la "crisis del nudge" (F-16/F-17/F-18/F-21) — el
+  meta-análisis fundacional pro-nudge fue revertido por un re-análisis que
+  corrige sesgo de publicación, y el "voltage drop" de campo vs. laboratorio es
+  ~6x. Sumé tesis 6 (nudge de catálogo ya no es apuesta segura) y tesis 7
+  (diseño de producto embebido/s-frame gana sobre nudge cosmético, con el caso
+  UBI de F-19/F-23). Agregué 2 oportunidades (UBI como producto extensible,
+  posicionar `lapuerta` en la frontera de "AI behavioral science" vía F-27) y 4
+  riesgos (sobreestimar ROI de nudge con cifra de paper, citar estudios de
+  honestidad sin chequear el corpus retractado de Ariely/Gino en F-24, tratar
+  Vitality/F-25 como dato duro, y la caída de tenencia de vida en EE.UU. pese a
+  mejor comprensión en F-22 — refuerza tesis 1). Ninguna tesis 1-5 cambió de
+  confianza; la evidencia nueva no las contradice, las extiende.
