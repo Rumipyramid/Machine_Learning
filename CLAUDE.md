@@ -27,7 +27,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
-| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac, publicar a main |
+| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 
 ## Base de conocimiento (codex)
