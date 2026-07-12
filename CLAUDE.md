@@ -10,9 +10,11 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `Proyecto_ML_1.ipynb` | Notebook principal de ML | Origen Colab |
 | `buenas-mierdas/` | Altar/archivo 3D web "Buenas Mierdas" (arte, web vernácula, hauntología) | Vite+React+R3F; `cd buenas-mierdas && npm install && npm run dev`; ver su `README.md` |
 | `Self driving car/` | Simulación de auto autónomo (Pygame + red neuronal) | Entrada: `self driving car.py`; config en `config_file.txt` |
-| `research/seguros_comportamiento_mundo_peru.md` | Investigación base: comportamiento/percepción de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS… |
-| `research/modelo_salud_ia_farmacias_peru.md` | Modelo de triage IA + farmacias + atención humana (`/trinidad` + `/seeker`) | Gestión de salud del peruano, PL 08488, RE-AIM (25 RQs), estrategias de testeo (silent trial, stepped-wedge, CFIR…) |
-| `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro | Derivado de /seeker; alineado a glosario SBS |
+| `research/_hub.md` | **Mapa del conocimiento de investigación** (Many Brains: nodes + outputs) | Punto de entrada; ver regla de mantenimiento más abajo |
+| `research/_nodes/seguros-comportamiento-mundo-peru.md` | Comportamiento/percepción y mercado global de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS, Rothschild-Stiglitz, Arrow, Kunreuther… |
+| `research/_nodes/modelo-salud-ia-farmacias-peru.md` | Modelo de triage IA + farmacias + atención humana (`/trinidad` + `/seeker`) | Gestión de salud del peruano, PL 08488, RE-AIM (25 RQs), estrategias de testeo (silent trial, stepped-wedge, CFIR…) |
+| `research/_nodes/mecanismos-seguros-salud.md` | Mecanismos de seguros de salud: presión de costo/demografía y modelos que la navegan (global) | Singapur 3M, NHS, capitación, Discovery Vitality, Kaiser, Oak Street, ChenMed… |
+| `research/_nodes/glosario-seguro-salud-peru.md` | Glosario de seguro de salud en Perú en lenguaje claro | Derivado de /seeker; alineado a glosario SBS |
 | `research/personas/generador/` | Fuente de verdad del modelo de personas sintéticas | generador + esquema + matriz + tooling de calibración |
 | `research/personas/generador/synthetic_user_schema.json` | Esquema machine-readable (v1.2, 17 variables) | Lo consume el generador |
 | `research/personas/generador/matriz_usuarios_sinteticos.md` | Matriz legible: variables, distribuciones, grafo causal, arquetipos | Deriva de la investigación base |
@@ -96,6 +98,38 @@ defecto, dado el tipo de evidencia que cada uno busca.
   mismo tema — los corre en paralelo, mantiene sus criterios de validez separados (no
   mezcla rigor académico con tracción social ni con evidencia de negocio) y consolida
   todo en un reporte único de 360°, registrando también en `cronista`.
+
+### 📌 Mantenimiento del hub de conocimiento (Many Brains, `research/`)
+
+`research/` usa un `_hub.md` en su raíz como índice vivo de todo el conocimiento de
+investigación (seguros, salud, Perú) — **no** cubre `research/personas/` (subsistema del
+generador de personas sintéticas) ni `research/updates/` (reportes quincenales), que ya
+tienen su propia estructura documentada arriba. Léelo (`research/_hub.md`) al inicio de
+cualquier sesión que investigue o cite conocimiento del proyecto: es tu mapa de qué node
+es la fuente de verdad de cada tema, cuándo se actualizó y qué se relaciona con qué.
+
+El flujo es generativo: las investigaciones cristalizan en **nodes** temáticos (`.md`
+planos en `research/_nodes/`, uno por tema, kebab-case), y de esos nodes se derivan
+**outputs** (presentaciones, informes) en `research/_outputs/`. Como `_nodes/` es plano,
+la navegación no la dan carpetas: la dan `_hub.md` y la sección `## Conexiones`
+(wikilinks `[[...]]`, recíprocos) de cada node. Mantén esto vivo sin que el usuario lo
+pida:
+
+1. **Una fuente de verdad por tema.** No dupliques contenido entre nodes; si ya existe un
+   node del tema, amplíalo en vez de crear uno nuevo.
+2. **`/seeker` y `/trinidad` escriben directo a `_nodes/`, no solo responden en el chat.**
+   Al terminar una investigación con hallazgos que valga la pena retener, créala o
+   ampliala como node (proponlo si no está claro que el usuario lo quiere guardado), cita
+   las fuentes por ID (`F-n`) del ledger de `cronista` (`research/fuentes/registro_fuentes.md`,
+   que sigue en su ruta actual — no se movió a `_nodes/`), y cierra con `## Conexiones`
+   recíprocas a los nodes relacionados.
+3. **Versionado solo por cambio estructural** (premisa, modelo, alcance); lo incremental
+   solo actualiza la fecha de cabecera del node.
+4. **Actualiza `_hub.md`** al crear, mover o modificar un node: fila en "Nodes vigentes",
+   fecha, versión. Marca `requiere refresh` cualquier output que dependa de un node que
+   cambió.
+5. **Nunca borres nodes existentes.** Si un node queda obsoleto, dilo y pregunta antes de
+   tocarlo.
 
 ### 📌 Skill: `lapuerta` (usuarios sintéticos de seguros)
 Generador + simulador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).

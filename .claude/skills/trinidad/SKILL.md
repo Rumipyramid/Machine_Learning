@@ -111,6 +111,17 @@ todas las fuentes usadas en las tres pistas, con la misma rúbrica A-E de siempr
   investigación (un paper A junto a un hilo de Reddit E) — regístralas todas, cada una
   con su nivel real, sin forzar equivalencia.
 
+### Paso 6: Persistir el reporte consolidado (Many Brains)
+
+Si el proyecto tiene un `research/_hub.md` (método Many Brains), el reporte de 360° no debe
+quedar solo en el chat: **créalo o amplíalo como node** en `research/_nodes/` (kebab-case),
+manteniendo las tres pistas visualmente separadas igual que en la respuesta al usuario. Si el
+tema ya tiene un node relacionado, amplíalo con una sección nueva en vez de crear un node
+redundante — una fuente de verdad por tema. Cita fuentes por ID (`F-n`) del ledger de `cronista`,
+no las repitas completas. Actualiza `_hub.md` (fila del node, fecha, versión si el cambio es
+estructural) y cierra el node con `## Conexiones` recíprocas. Si el proyecto no usa Many Brains
+todavía, sigue respondiendo solo en el chat.
+
 ## Anti-patrones a evitar
 
 - **Correr las tres búsquedas en serie** cuando podrían ir en paralelo — pierde tiempo y

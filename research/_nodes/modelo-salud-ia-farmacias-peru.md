@@ -434,3 +434,16 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   ninguna fue aplicada específicamente a un flujo idéntico (triage IA + backlog farmacéutico +
   delivery) en Perú — son la mejor práctica disponible, no una garantía de que funcionen
   igual en este contexto.
+
+---
+
+## Conexiones
+
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — este node es el diseño concreto
+  para Perú; ese node aporta el marco global de mecanismos (capitación, atención primaria,
+  Singapur/NHS) que valida y matiza este diseño (ver su §3 y su síntesis §4).
+- [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros]] — §1.2-1.3 y
+  §2 de ese node (confianza, sesgos conductuales) sustentan las decisiones de diseño de este
+  documento.
+- [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para la
+  comunicación del flujo con usuarios finales.

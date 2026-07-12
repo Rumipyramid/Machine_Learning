@@ -151,4 +151,17 @@ Por eso este glosario funciona mejor como parte de un sistema:
 ---
 
 *Fuentes registradas en `research/fuentes/registro_fuentes.md` (F-6 a F-15).
+
+---
+
+## Conexiones
+
+- [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros]] — la falta de
+  información/comprensión es la causa #1 de desconfianza en Perú (§3.3 de ese node); este
+  glosario es una respuesta directa a esa brecha.
+- [[modelo-salud-ia-farmacias-peru|Modelo de triage IA + farmacias (Perú)]] — vocabulario base
+  para diseñar la comunicación del flujo de triage/kit de medicinas.
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — términos como "capitación",
+  "mancomunación de riesgo" o "selección adversa" que aparecen ahí no están en este glosario
+  (está enfocado en el consumidor final, no en diseño de producto) — posible ampliación futura.
 Definiciones alineadas al Glosario de términos de seguros de la SBS.*

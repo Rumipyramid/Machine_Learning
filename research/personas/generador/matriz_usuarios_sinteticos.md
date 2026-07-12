@@ -1,6 +1,6 @@
 # Matriz de variables para usuarios sintéticos — consumidores de seguros (Perú)
 
-> Deriva de `research/seguros_comportamiento_mundo_peru.md`.
+> Deriva de `research/_nodes/seguros-comportamiento-mundo-peru.md`.
 > Esquema machine-readable: `synthetic_user_schema.json` · Generador: `generate_synthetic_users.py`
 > Fecha: 2026-06-21
 

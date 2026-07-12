@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-06-21
+> Última actualización: 2026-07-10 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -169,7 +169,57 @@ Ideas accionables si el objetivo es modelar o predecir comportamiento de seguros
 
 ---
 
-## 6. Fuentes
+## 7. Mercado global: los seguros más comprados y mejor valorados (2026)
+
+> Investigación `/seeker` 2026-07-10. "Más comprados" (valor de primas) y "mejor valorados"
+> (satisfacción del consumidor) miden cosas distintas y no coinciden en el mismo ramo — ver
+> tensión más abajo. Fuentes indexadas en `fuentes/registro_fuentes.md` (F-78 a F-85).
+
+### 7.1 Volumen global por ramo (2025)
+
+Pool total de primas: **~€6.9 billones**, +7.1% (Swiss Re Institute, 2025 — reporte de industria).
+
+| Ramo | Primas 2025 | Crecimiento | Característica |
+|---|---|---|---|
+| **Vida** | €2,861bn (mayor segmento) | +6.9% | Híbrido protección+ahorro/inversión; dominado por Asia (envejecimiento, pensión pública débil) |
+| **P&C** | €2,320bn | +3.8% | Motor, propiedad, responsabilidad civil; alta frecuencia/baja severidad salvo catástrofes |
+| **Salud** | €1,688bn | **+12.3%** (el más rápido) | Envejecimiento + inflación médica + presión sobre sistemas públicos |
+
+**Concentración geográfica**: EE.UU. es el mercado más grande (~USD 3.22 billones, ~59.1% del
+mercado OECD); China #2 (~€754bn); EE.UU.+China+UK ≈ **55% de las primas globales** (NAIC/Statista).
+
+**El más "comprado" en número de pólizas, probablemente**: el seguro vehicular de
+responsabilidad civil (TPL) — obligatorio por ley en la mayoría de países (UE, UK desde 1930,
+Australia, India). Solo cubre a terceros, nunca el vehículo propio. ⚠️ No hay conteo global de
+pólizas que lo confirme con cifra dura — es inferencia razonable, no dato verificado.
+
+### 7.2 Satisfacción del consumidor (NPS)
+
+⚠️ **Tensión no resuelta entre fuentes**: NPS promedio del sector reportado como 35 en una fuente
+y 23 en otra. Lo consistente: salud puntúa mejor que P&C, y la varianza **entre aseguradoras**
+(Allianz 79, USAA 75, State Farm 28, GEICO 20, Liberty Mutual 10) es mucho mayor que la varianza
+**entre ramos** — la ejecución de marca pesa más que el tipo de producto.
+
+### 7.3 Por qué el mercado se estructura así (teoría)
+
+- **Rothschild & Stiglitz (1976)** — bajo selección adversa, el equilibrio competitivo puede no
+  existir; cuando existe, alto riesgo obtiene cobertura completa y bajo riesgo cobertura
+  incompleta como señal costosa.
+- **Arrow (1963)** — la incertidumbre sobre salud y tratamiento, más la relación asimétrica
+  médico-paciente-asegurador, hacen que confianza y moral sean centrales en salud — no solo precio.
+- **Kunreuther (1984-2013)** — el "rompecabezas del subaseguramiento": la gente no asegura
+  riesgos de baja probabilidad/alta consecuencia (catástrofes) ni con subsidio; ~60% de
+  catástrofes naturales 1960-2011 quedaron sin asegurar. El seguro más necesario económicamente
+  es uno de los menos comprados — contraejemplo directo de "más comprado = más valioso".
+
+### 7.4 Matiz importante
+
+"Vida" mezcla protección pura con ahorro/inversión (sobre todo en Asia) — comparar 1:1 contra un
+seguro de auto (protección pura) mezcla categorías económicamente distintas bajo la misma etiqueta.
+
+---
+
+## 8. Fuentes
 
 **Global / regional**
 - OECD — Global Insurance Market Trends 2025: https://www.oecd.org/en/publications/global-insurance-market-trends-2025_0d11ecf4-en/full-report/component-3.html
@@ -205,6 +255,16 @@ Ideas accionables si el objetivo es modelar o predecir comportamiento de seguros
 - RGA — Behavioral Approach to Insurance: https://www.rgare.com/knowledge-center/article/behavioral-approach-to-insurance
 - MDPI — Insurance in the Aspects of Sustainable Development (SEM): https://doi.org/10.3390/su18010233
 
+**Mercado global / teoría (§7, F-78 a F-85 en `fuentes/registro_fuentes.md`)**
+- Swiss Re Institute — sigma 2025 (volumen global de primas por ramo)
+- Allianz Research — Global Insurance Report 2025/2026
+- NAIC / Statista — Top international insurance markets
+- CustomerGauge / QuestionPro — Insurance NPS Benchmarks 2025 (⚠️ cifras inconsistentes entre sí)
+- Rothschild & Stiglitz (1976) — Equilibrium in Competitive Insurance Markets (QJE)
+- Arrow, K.J. (1963) — Uncertainty and the Welfare Economics of Medical Care (AER)
+- Kunreuther, H. et al. (1984-2013) — Insurance and Behavioral Economics (Cambridge University Press)
+- The Zebra / European Commission / World Bank — Compulsory motor TPL insurance, comparativa
+
 ---
 
 > **Nota metodológica:** las cifras provienen de reportes de industria, reguladores (SBS, APESEG),
@@ -212,3 +272,16 @@ Ideas accionables si el objetivo es modelar o predecir comportamiento de seguros
 > académica, recopilados en junio de 2026 vía búsqueda web. Algunos porcentajes pueden variar
 > según año de medición y metodología de cada fuente. Verificar contra el documento original
 > antes de citar en publicaciones formales.
+
+---
+
+## Conexiones
+
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — el ramo salud (§7.1, el de mayor
+  crecimiento) se desarrolla en profundidad ahí: mecanismos que funcionan bajo la presión de costo
+  y demografía descrita en §7.
+- [[modelo-salud-ia-farmacias-peru|Modelo de triage IA + farmacias (Perú)]] — aplica varios de los
+  hallazgos de comportamiento/confianza de este node (§1.2-1.3, §2) al diseño de un producto
+  concreto para Perú.
+- [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para leer
+  este node y el de mecanismos de seguros de salud.
