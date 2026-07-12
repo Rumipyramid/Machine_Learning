@@ -4,7 +4,7 @@
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
-carpetas: la dan este `_hub.md` y la vista **local** de cada node, en su sección
+carpetas: la dan este `alma.md` y la vista **local** de cada node, en su sección
 `## Conexiones`.
 
 > **Alcance de este hub**: cubre el conocimiento de investigación de `research/` (seguros, salud,
@@ -37,7 +37,7 @@ por afirmación cuando corresponda.
 
 | Ruta | Contenido |
 |---|---|
-| `_hub.md` | Este índice vivo (raíz de `research/`) |
+| `alma.md` | Este índice vivo (raíz de `research/`) |
 | `_nodes/` | Todo el conocimiento, plano, un `.md` por tema (kebab-case) |
 | `fuentes/registro_fuentes.md` | Ledger de `cronista` — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 116+ filas existentes. |
 | `personas/` | Subsistema de código del modelo de personas sintéticas (`lapuerta`) — fuera del alcance de este hub, ver `CLAUDE.md` |

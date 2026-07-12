@@ -218,11 +218,11 @@ Para respuestas a investigaciones de afirmaciones específicas, organizar en est
 
 ### Paso 9: Persistir el hallazgo (Many Brains)
 
-Si el proyecto tiene un `research/_hub.md` (método Many Brains), la investigación no debe quedar
+Si el proyecto tiene un `research/alma.md` (método Many Brains), la investigación no debe quedar
 solo en el chat: al terminar, **crea o amplía el node correspondiente** en `research/_nodes/`
 (kebab-case, un `.md` por tema) con el veredicto, lo documentado, la capa teórica y la tabla de
 rigurosidad. Si ya existe un node del mismo tema, amplíalo (una fuente de verdad por tema, no
-duplicar); si no, créalo y agrégalo a la tabla "Nodes vigentes" de `_hub.md`. Cita las fuentes por
+duplicar); si no, créalo y agrégalo a la tabla "Nodes vigentes" de `alma.md`. Cita las fuentes por
 ID (`F-n`) del ledger de `cronista`, no las repitas completas dentro del node. Cierra el node con
 `## Conexiones` a los nodes relacionados (recíprocas). Si el proyecto no usa Many Brains todavía,
 sigue respondiendo solo en el chat — no lo impongas.

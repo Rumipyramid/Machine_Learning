@@ -2,11 +2,11 @@
 
 Índice de la carpeta de investigación de seguros (Perú) y del modelo de usuarios sintéticos.
 
-## Conocimiento de investigación → ver [`_hub.md`](_hub.md)
+## Conocimiento de investigación → ver [`alma.md`](alma.md)
 
 Las investigaciones de `/seeker` y `/trinidad` (seguros, salud, Perú) se organizan con el método
 **Many Brains**: cada tema vive en un solo `.md` ("node") dentro de [`_nodes/`](_nodes/), y
-[`_hub.md`](_hub.md) es el mapa que conecta todo — qué node existe, cuándo se actualizó y qué se
+[`alma.md`](alma.md) es el mapa que conecta todo — qué node existe, cuándo se actualizó y qué se
 relaciona con qué. Empieza por ahí, no por esta tabla.
 
 | Ruta | Qué es |
