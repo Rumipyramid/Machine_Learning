@@ -7,6 +7,7 @@
 | Ruta | Qué es |
 |---|---|
 | [`seguros_comportamiento_mundo_peru.md`](seguros_comportamiento_mundo_peru.md) | Investigación base: comportamiento, percepción y valoración de seguros (Mundo vs. Perú), con fuentes. |
+| [`behavioral_design_360.md`](behavioral_design_360.md) | Investigación 360° (/trinidad): estado del behavioral design como disciplina y mercado + qué se necesita para ser los mejores (seguros/Rimac). |
 | [`personas/generador/`](personas/generador/) | **Fuente de verdad del modelo**: generador, esquema, matriz y dataset de ejemplo. |
 | [`personas/laminas/`](personas/laminas/) | Lámina explicativa del sistema (script `build_lamina_detalle.py` + PNG). |
 | [`personas/apps/reglas/`](personas/apps/reglas/) | App web autocontenida: preguntas por reglas (gráficos + insights), sin servidor. |
