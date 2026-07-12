@@ -13,6 +13,8 @@
 | [`personas/apps/reglas/`](personas/apps/reglas/) | App web autocontenida: preguntas por reglas (gráficos + insights), sin servidor. |
 | [`personas/apps/llm/`](personas/apps/llm/) | App de preguntas libres respondidas por Claude (backend Flask + API). |
 | [`updates/`](updates/) | Reportes quincenales de fortalecimiento + `generate_report.py` (usado por el Action). |
+| [`yopersona/perfil.md`](yopersona/perfil.md) | Perfil profesional del usuario (CV): fuente de verdad para cartas de presentación y asesoría de carrera. |
+| [`lobo/opinion_experto.md`](lobo/opinion_experto.md) | Opinión de negocio acumulada de "El Lobo", refinada contra el ledger de `cronista`. |
 
 ## Modelo de personas sintéticas — `personas/generador/`
 
