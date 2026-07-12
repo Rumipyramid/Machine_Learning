@@ -27,8 +27,9 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
-| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac, publicar a main |
+| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
+| `.claude-plugin/marketplace.json` · `plugin.json` | Marketplace personal de plugins | Expone `.claude/skills/` como plugin instalable en cualquier máquina/cuenta — ver sección abajo |
 
 ## Base de conocimiento (codex)
 
@@ -121,12 +122,34 @@ variables al modelo `lapuerta`.
 - 2026-06-21 — `research/updates/2026-06-21_fortalecimiento_modelo.md`
 <!-- LAPUERTA_REPORTS_END -->
 
+### 📌 Marketplace personal de skills (portabilidad entre máquinas/cuentas)
+Este repo se auto-referencia como un **marketplace de plugins de Claude Code**
+(`.claude-plugin/marketplace.json` + `.claude-plugin/plugin.json`), sin mover ni duplicar
+nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fuente de skills.
+
+- **Qué resuelve:** las skills dejan de depender de tener este repo abierto en una sesión
+  de Claude Code — se instalan una vez y quedan disponibles en cualquier proyecto, máquina
+  o cuenta (incluida una laptop corporativa con su propia cuenta de Claude), sin exponer
+  el resto del repo ni requerir acceso de esa cuenta a este código.
+- **Instalar desde cualquier Claude Code (una sola vez por máquina/cuenta):**
+  ```
+  /plugin marketplace add Rumipyramid/Machine_Learning
+  /plugin install rumipyramid-skills@rumipyramid-machine-learning
+  ```
+- **Actualizar tras un cambio en `.claude/skills/`:** `/plugin marketplace update rumipyramid-machine-learning`.
+- **Regla de consolidación:** ninguna skill debe quedar viviendo solo en el historial de una
+  conversación o como archivo suelto fuera de `.claude/skills/<nombre>/SKILL.md` — si se redacta
+  una skill nueva en una sesión, se commitea aquí antes de darla por terminada (ver caso
+  `contexto-peruano`, que existía como archivo suelto y por eso Claude Code no la reconocía).
+
 ## Convenciones
 - Documentación de investigación → `research/` (con índice en `research/README.md`).
 - Modelo de personas sintéticas → `research/personas/generador/` (fuente de verdad de desarrollo);
   el skill `lapuerta` lleva su propia copia autocontenida para compartir.
 - Láminas/figuras → `research/personas/laminas/`; apps web → `research/personas/apps/`.
-- Skills del proyecto → `.claude/skills/`.
+- Skills del proyecto → `.claude/skills/<nombre>/SKILL.md` (nunca como archivo suelto ni
+  solo dentro de una conversación — si no está commiteado así, Claude Code no la reconoce).
+  Se distribuyen a otras máquinas/cuentas vía el marketplace personal (ver sección arriba).
 - Reportes quincenales → `research/updates/` (indexados arriba).
 - Datasets/salidas generadas → `research/personas/datasets/`; microdato ENAHO → `research/personas/datos_enaho/`.
 - Spec (`synthetic_user_schema.json`) y matriz legible (`.md`) se mantienen sincronizados con el generador.

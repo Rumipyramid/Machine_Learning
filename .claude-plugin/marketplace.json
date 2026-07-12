@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "rumipyramid-machine-learning",
+  "version": "1.0.0",
+  "description": "Marketplace personal de Alejandro — expone las skills de este repo para instalarlas en cualquier máquina o cuenta de Claude Code, sin depender de este repo estando abierto ni de que la conversación las recuerde.",
+  "owner": {
+    "name": "Rumipyramid"
+  },
+  "plugins": [
+    {
+      "name": "rumipyramid-skills",
+      "description": "Investigación (seeker/gossiper/marketer/trinidad/contexto-peruano), gestión de proyecto (beholder/actualizar/cronista/many-brains), personas sintéticas de seguros (lapuerta), presentaciones (rimac-slides/presentaciones-rimac) y reportes quincenales (cerrajero).",
+      "source": "./"
+    }
+  ]
+}
