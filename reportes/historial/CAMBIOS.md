@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-12T00:54:26 · Cambios vigentes: 64
+> Retención: 15 días · Última actualización: 2026-07-12T23:09:34 · Cambios vigentes: 65
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-12T23:09:34 | Alejandro | ANS-BD | Excel ANS Behavioral Design | 1 hoja de tallas + soporte; feedback plano por talla L; factor 0.67 supuesto | feedback escala por talla; factor 0.72 calibrado con retro; nueva hoja Ejemplos de Tallaje (2da pestaña) con casos reales del tablero | normal | aplicado |
 | 2026-07-12T00:54:26 | Alejandro | ANS BD | Taxonomía de entregables | 8 tipos específicos por artefacto (plantillas de contacto, material de entendimiento, etc.) | 6 categorías por función a prueba de futuro: Evidencia y diagnóstico · Comunicación conductual · Arquitectura de intervención · Validación y experimentación · Sistemas y frameworks · Adopción y despliegue (+ consultoría como soporte) | normal | aplicado |
 | 2026-07-10T20:24:47 | Alejandro | ANS BD | Formato spreadsheet | Solo propuesta en Markdown (ans_behavioral_design.md) | Agregado ANS_Behavioral_Design_propuesta.xlsx: mismo formato visual que el Excel de Milagros (bloque de parámetros, header de tallas S/M/L/XL, hoja de soporte separada), pero con appetite por entregable en vez de pipeline de 7 etapas y sin factor lineal de asignación | normal | aplicado |
 | 2026-07-10T17:44:27 | Alejandro | ANS BD | Propuesta de tallaje | Sin ANS propio para Behavioral Design (solo el pipeline de Service Design de Milagros) | Propuesta completa en reportes/ans_behavioral_design.md: appetite por entregable (no estimado por etapa), dos relojes BD/lead-time, soporte por bolsa, respaldada con /trinidad (Kahneman planning fallacy, Shape Up appetite, debate #NoEstimates) | normal | aplicado |
