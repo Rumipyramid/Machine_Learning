@@ -206,13 +206,28 @@ necesitar.
   sí se puede definir (un research es 🔍, una estrategia es 🎛️, un set de materiales es 📣...).
   Lo que este eje agrega es la **modalidad de compromiso** con la que BD entra al proyecto:
   entregable puntual (3.1) vs. acompañamiento embebido (esta sección).
-- **El ANS es de capacidad, no de entregable.** Como no se puede prometer una fecha de entrega de
-  algo que aún no existe, lo que se compromete es **cuánta capacidad del equipo se reserva y por
-  cuánto tiempo** — en 🪙 por trimestre, no en días de un entregable. Un compromiso de 6 meses cruza
-  2 trimestres: **se re-compromete en cada retro**, no se fija una sola vez para todo el periodo
-  (misma lógica de reference-class forecasting de la sección 0 — recalibrar con datos, no negociar
-  una sola vez al inicio).
-- **Talla por % de capacidad reservada** (no por entregable):
+- **El ANS es de capacidad, no de entregable — pero solo mientras dura la incertidumbre.** Como no
+  se puede prometer una fecha de entrega de algo que aún no existe, lo que se compromete es
+  **cuánta capacidad del equipo se reserva y por cuánto tiempo** — en 🪙 por trimestre, no en días
+  de un entregable. Un compromiso de 6 meses puede cruzar 2 trimestres: **se re-compromete en cada
+  retro**, no se fija una sola vez para todo el periodo (misma lógica de reference-class
+  forecasting de la sección 0 — recalibrar con datos, no negociar una sola vez al inicio).
+- **Dos fases, no una sola bolsa de 6 meses.** El acompañamiento no es un tipo de ANS que dura todo
+  el proyecto — es un **puente que solo existe mientras no hay roadmap**:
+  1. **Exploración y priorización** (incertidumbre alta): no hay entregable definido todavía →
+     aplica el ANS de capacidad reservada de esta sección (talla en la tabla de abajo).
+  2. **Roadmap de soluciones priorizadas** (la incertidumbre baja de nuevo): en cuanto el proyecto
+     prioriza sus soluciones y las ordena en un roadmap, **las que le correspondan a BD se tallan
+     de nuevo con el catálogo normal (3.1)**, como cualquier otro entregable — dejan de ser
+     "capacidad reservada" y vuelven a ser quests con appetite propio, drivers (3.2) y su propio
+     par de relojes (3.4). El equipo las trabaja igual que trabajaría cualquier quest que hubiera
+     entrado directo por la puerta de un entregable puntual.
+
+  Esto evita que el acompañamiento se quede indefinidamente como una bolsa de monedas sin tallar:
+  la incertidumbre solo dura mientras no existe roadmap. En cuanto existe, el modelo por defecto
+  (3.1) vuelve a mandar — es el mismo modelo con el que Milagros y el comité ya trabajan el resto
+  del portafolio, solo que llegamos a él un poco más tarde que en un entregable puntual.
+- **Talla de la fase de exploración** por % de capacidad reservada (no por entregable):
 
 | Talla | Monedas 🪙 reservadas / trimestre | Qué implica |
 |---|---|---|
@@ -221,16 +236,20 @@ necesitar.
 | **L** | 5–6 🪙 | Hilo conductor de BD a través de la mayoría de las funciones (research → estrategia → materiales) |
 | **XL** | 7–8 🪙 | Casi dedicación completa; pairing senior/junior recomendado (regla 3.5) |
 
-- **Cierre del compromiso BD = delegación, no implementación.** Reusa el mecanismo de los dos
-  relojes (3.4): el Reloj BD se detiene cuando el diseño/fix queda delegado y aceptado por quien
-  lo va a implementar; el Lead time del proyecto de negocio puede seguir corriendo después, pero
-  ya bajo otro dueño — no cuenta contra el ANS de BD.
+- **Cierre de CADA solución BD del roadmap = delegación, no implementación.** Una vez en fase de
+  roadmap, cada solución tallada por 3.1 reusa el mecanismo de los dos relojes (3.4): el Reloj BD
+  se detiene cuando el diseño/fix de ESA solución queda delegado y aceptado por quien lo va a
+  implementar; el Lead time puede seguir corriendo después bajo otro dueño, sin contar contra el
+  ANS de BD. No es un cierre único al final de los 6 meses — es por solución, según van saliendo.
 - **Ya está pasando, sin nombre propio:** EPIC-1 Mesa Back to Basics (10 semanas, 3 personas,
-  25 🪙 — research → sacrificial concepts → informe CUA → materiales → AIDA → despliegue FFVV) y
-  EPIC-7 Renovación EPS (guías → validación → entrega → Diseño To Be del ecosistema, ahora extendida
-  por Q-48 sin fecha de cierre) son este patrón. El tablero ya las trackea como épica; lo que
-  faltaba era nombrar el tipo de ANS que Milagros necesita para negociarlas con el comité *antes*
-  de que exista el primer entregable.
+  25 🪙) ya sigue este patrón en la práctica: research + validación + sacrificial concepts fue la
+  fase de exploración; el informe CUA priorizó las soluciones (plantillas, AIDA, despliegue FFVV),
+  y esas soluciones ya se tallaron individualmente con el catálogo normal. EPIC-7 Renovación EPS
+  (guías → validación → entrega → Diseño To Be del ecosistema, extendida por Q-48 sin fecha de
+  cierre) va en la misma dirección. El tablero ya las trackea como épica; lo que faltaba era
+  nombrar el tipo de ANS que Milagros necesita para negociarlas con el comité *antes* de que exista
+  el primer entregable, y dejar explícito que ese ANS especial se cierra solo cuando aparece
+  el roadmap — no dura los 6 meses completos.
 
 ## 4. Qué proponerle a Milagros (resumen ejecutivo)
 1. **Mantener su estructura para Service Design** si a ese rol le calza el pipeline — no es
@@ -243,9 +262,11 @@ necesitar.
    vuelve proyecto tallado.
 5. Recalibración **trimestral con datos** (retro), no renegociación por reunión — es la misma
    lógica de reference-class forecasting que respalda el appetite en la sección 0.
-6. **Para proyectos que aún no tienen entregable definido** (exploración → diseño → delegación,
-   hasta 6 meses), el ANS es de **capacidad reservada por trimestre** (3.7), no de fecha de
-   entrega — y se re-negocia en cada retro, no una sola vez al inicio.
+6. **Para proyectos que aún no tienen entregable definido** (exploración, hasta 6 meses), el ANS
+   es de **capacidad reservada por trimestre** (3.7), no de fecha de entrega — pero solo mientras
+   dura esa incertidumbre. En cuanto el proyecto prioriza soluciones en un roadmap, las que le
+   corresponden a BD **vuelven al modelo normal de entregable tallado** (tabla 3.1) — el mismo con
+   el que ella y el comité ya trabajan el resto del portafolio.
 
 ## 5. Fuentes citadas (/trinidad)
 - Kahneman, D. & Tversky, A. (1979) — origen del *planning fallacy*; ver también
