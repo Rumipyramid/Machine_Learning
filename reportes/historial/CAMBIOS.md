@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-13T02:42:18 · Cambios vigentes: 66
+> Retención: 15 días · Última actualización: 2026-07-13T03:59:52 · Cambios vigentes: 67
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-13T03:59:52 | Alejandro | ANS-BD | Hoja Ejemplos de Tallaje | ejemplo XL de Evidencia era hipotético (Ecosistema EPS futuro) | ejemplo L de Evidencia ahora cita Q-48 (modelo retención con Edu Rebata, real); Sistemas y frameworks y Consultoría suman el caso de alinear CX/mkt/guías/App | normal | aplicado |
 | 2026-07-13T02:42:18 | Alejandro | Q-48 | Nuevo quest | — (no existía) | Modelo predictivo de retención en seguros de salud (con Edu Rebata), EPIC-7 Renovación EPS, Alejandro 6 🪙, Backlog sin fechas | normal | aplicado |
 | 2026-07-12T23:09:34 | Alejandro | ANS-BD | Excel ANS Behavioral Design | 1 hoja de tallas + soporte; feedback plano por talla L; factor 0.67 supuesto | feedback escala por talla; factor 0.72 calibrado con retro; nueva hoja Ejemplos de Tallaje (2da pestaña) con casos reales del tablero | normal | aplicado |
 | 2026-07-12T00:54:26 | Alejandro | ANS BD | Taxonomía de entregables | 8 tipos específicos por artefacto (plantillas de contacto, material de entendimiento, etc.) | 6 categorías por función a prueba de futuro: Evidencia y diagnóstico · Comunicación conductual · Arquitectura de intervención · Validación y experimentación · Sistemas y frameworks · Adopción y despliegue (+ consultoría como soporte) | normal | aplicado |
