@@ -20,12 +20,12 @@
 | Métrica | Valor |
 |---|---|
 | Épicas | 9 |
-| Quests (iniciativas) | 45 |
+| Quests (iniciativas) | 46 |
 | Colaboradores (con monedas) | 4 |
-| Monedas Q3 comprometidas | 81 🪙 |
+| Monedas Q3 comprometidas | 87 🪙 |
 | Regla de capacidad | ≤ 8 🪙 simultáneas por persona |
 | Quests con riesgo alto 🚩 | 1 (Q-13 AIDA) |
-| Códigos de alerta | 0 🚨 rojos · 5 ⚠️ amarillos |
+| Códigos de alerta | 0 🚨 rojos · 6 ⚠️ amarillos |
 
 ## 🚨 Alertas activas
 - ⚠️ **Código amarillo — Q-9 estrategia CUA en definición:** la mesa con Legal/Cumplimiento/CUA/FFVV debe cerrar antes del 10/07 (inicio del informe).
@@ -33,6 +33,7 @@
 - ⚠️ **Código amarillo — Q-4/Q-5 Universidad Vida:** capacidad limitada del equipo Learning sin mitigación confirmada.
 - ⚠️ **Código amarillo — Q-13 AIDA (mitigado desde rojo):** comité de priorización con 3 herramientas en paralelo; mitigación activa: consolidación + evidencia de usabilidad.
 - ⚠️ **Código amarillo — Q-28 sin programar:** 2 🪙 asignadas (Stefanie 1, Melissa 1) sin fechas; al agendarse debe evitar la ventana al límite de Stefanie (08–17/07).
+- ⚠️ **Código amarillo — Q-48 sin programar:** 6 🪙 asignadas a Alejandro (modelo de retención con Edu Rebata); sin fechas porque el acceso a data de renovación/siniestros aún depende de otras áreas. Al agendarse, revisar que no empuje el pico de Alejandro (hoy 7, margen de solo 1 antes del límite de 8).
 
 > ✅ **Resueltos:** 🚨 código rojo de Stefanie (pico 11) y ⚠️ amarillos de capacidad de Felipe (9)
 > y Alejandro (8.5) — redistribución 50/50 en monedas enteras + cambios de fecha aprobados por
@@ -70,7 +71,7 @@
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-28, Q-43, Q-44, Q-45, Q-46, Q-47 | Q-2, Q-4, Q-5, Q-8, Q-9, Q-10, Q-12, Q-13, Q-14, Q-15, Q-18, Q-21, Q-22, Q-23, Q-24, Q-25, Q-27, Q-31, Q-32, Q-33, Q-34, Q-35, Q-36, Q-37, Q-38 | Q-1, Q-26, Q-29, Q-39 | — | Q-3, Q-6, Q-7, Q-16, Q-17, Q-20, Q-30, Q-40, Q-41, Q-42 |
+| Q-28, Q-43, Q-44, Q-45, Q-46, Q-47, Q-48 | Q-2, Q-4, Q-5, Q-8, Q-9, Q-10, Q-12, Q-13, Q-14, Q-15, Q-18, Q-21, Q-22, Q-23, Q-24, Q-25, Q-27, Q-31, Q-32, Q-33, Q-34, Q-35, Q-36, Q-37, Q-38 | Q-1, Q-26, Q-29, Q-39 | — | Q-3, Q-6, Q-7, Q-16, Q-17, Q-20, Q-30, Q-40, Q-41, Q-42 |
 
 > Estados asignados por fechas: inicio ≤ hoy ≤ entrega → In Progress; entrega pasada → Done;
 > inicio futuro → To Do; sin fechas → Backlog.
@@ -140,7 +141,7 @@ gantt
 |---|---|---|---|---|---|
 | EPIC-1 Mesa Back to Basics | 25 | 22/06 → 28/08 (10 sem.) | 3 | **XL** | Mayor esfuerzo del Q, 15 iniciativas, frente crítico (AIDA 🚩) |
 | EPIC-3 Evolution+ Cobranzas | 16 | 22/06 → 04/09 (11 sem.) | 1–2 | **L** | Piloto en campo = incertidumbre alta; casi todo sobre Stefanie |
-| EPIC-7 Renovación EPS | 16 | 06/07 → 05/08 (4.5 sem.) | 2 + PD | **M** | Esfuerzo alto pero alcance definido; denso para Felipe |
+| EPIC-7 Renovación EPS | 22 | 06/07 → sin cerrar (Q-48 sin fecha) | 2 + PD | **L** | Sube de M a L: al esfuerzo ya alto de las guías se suma Q-48 (modelo de retención), con incertidumbre alta por depender de acceso a data cross-área |
 | EPIC-6 Modelo venta Convenios | 10 | 20/07 → 21/08 (5 sem.) | 2 | **M** | Diseño de modelo nuevo, incertidumbre media |
 | EPIC-4 Spark: Vivo Pack | 7 | 02/07 → 07/07 + análisis | 3 | **S** | Ventana corta; ojo: el go/no-go (Q-28) sigue sin fecha |
 | EPIC-5 Bienestar 360 | 4 | 22/06 → 17/07 | 1 | **S** | Mantenimiento y seguimiento |
@@ -218,8 +219,8 @@ Nuevo modelo de venta para convenios (antes en Backlog; ahora con iniciativas y 
 | Q-33 | Análisis de escalamiento del modelo Vida Individual | To Do | Programada (2 días) | Evaluar qué palancas conductuales del modelo VI son transferibles al canal convenios y cuáles no | 10/08/2026 | 11/08/2026 | 1 🪙 1 🪙 | Alejandro, Melissa | Service Design | — | Escalamiento del modelo de venta VI |
 | Q-34 | Diseño del modelo de venta de convenios | To Do | Programada (8 días) | Arquitectura de decisión del nuevo canal: incentivos, defaults y flujo de decisión del empleado | 12/08/2026 | 21/08/2026 | 2 🪙 2 🪙 | Alejandro, Melissa | Service Design | — | Escalamiento del modelo de venta VI |
 
-### EPIC-7 · Renovación EPS · **Talla M**
-Guías EPS y ecosistema de entendimiento; revisión de la Dra. Ana Gabriela Ramos (Dir. Médica Seguros Salud) en curso.
+### EPIC-7 · Renovación EPS · **Talla L**
+Guías EPS y ecosistema de entendimiento; revisión de la Dra. Ana Gabriela Ramos (Dir. Médica Seguros Salud) en curso. Desde el 13/07 suma Q-48: modelo predictivo de retención pedido por Milagros.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -227,6 +228,7 @@ Guías EPS y ecosistema de entendimiento; revisión de la Dra. Ana Gabriela Ramo
 | Q-36 | Validación con comercial y gestión de Salud | To Do | Programada (6 días) | Chequeo de comprensión y viabilidad comercial: qué comunicar sin generar expectativas que el producto no cumple | 08/07/2026 | 15/07/2026 | 2 🪙 | Felipe | — | — | Renovación cuentas TOP EPS |
 | Q-37 | Entrega final con ajustes de producto | To Do | Programada (1 día); entra Alejandro (el senior co-firma la entrega) | Iteración final con ajustes de producto | 16/07/2026 | 16/07/2026 | 2 🪙 2 🪙 | Felipe, Alejandro | — | — | ↓ «no recibí información» en corporativo |
 | Q-38 | Diseño To Be: Ecosistema de entendimiento y uso eficiente de seguros | To Do | Programada (15 días) | Educación justo-a-tiempo: touchpoints de entendimiento a lo largo del journey del asegurado — la información llega en el momento de uso, no en la firma | 13/07/2026 | 05/08/2026 | 2 🪙 2 🪙 | Alejandro, Felipe | Product Design | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
+| Q-48 | Modelo predictivo de retención en seguros de salud (data renovación + siniestros, con Edu Rebata) | Backlog | Sin programar; pendiente que las áreas dueñas den acceso a la data para Edu Rebata | Diagnóstico conductual de drivers de retención: qué variables de conducta y percepción (no solo actuariales) predicen la caída antes de la renovación — el insumo de BD alimenta las features del modelo que construye Edu Rebata, con apoyo del equipo en su construcción | — | — | 6 🪙 | Alejandro | Edu Rebata (modelo), áreas dueñas de data (renovación, siniestros) | Acceso a data cross-área depende de gestión externa a otras áreas — mismo patrón de fricción que la mesa CUA de Q-9: se registra en el Reloj BD vs. Lead time (§3.4 del ANS BD), no como días de esfuerzo BD | Insumo conductual para intervención proactiva antes de la renovación en seguros de salud (impacto cuantitativo pendiente de validar con el modelo) |
 
 ### EPIC-8 · Arquitectura BD (capacidades del equipo) · **Talla XS**
 Frameworks y herramientas del Chapter (se conservan sin cambios).
@@ -270,6 +272,7 @@ fechas, monedas ni perfiles, y salen hacia una épica activa cuando se priorizan
 | Q-34 | Q-33 | Análisis → diseño del modelo de venta |
 | Q-36 | Q-35 | Guía Multiempresa → validación |
 | Q-37 | Q-36 | Validación → entrega final EPS |
+| Q-48 | (externa: acceso a data de renovación y siniestros) | Gestión de accesos cross-área → diagnóstico conductual → features del modelo (Edu Rebata) |
 
 ## 🪙 Libro mayor de monedas (capacidad del equipo)
 > **Economía Q3:** las monedas miden el esfuerzo total del trimestre por persona.
@@ -279,13 +282,13 @@ fechas, monedas ni perfiles, y salen hacia una épica activa cuando se priorizan
 
 | Colaborador | Expertise | Monedas Q3 (total) | Pico simultáneo | Ventana del pico | Estado |
 |---|---|---|---|---|---|
-| Alejandro | Senior | 21 | 7 | 07/07 y 10/07 | 🟢 Dentro de la regla |
+| Alejandro | Senior | 27 | 7 | 07/07 y 10/07 | 🟢 Dentro de la regla |
 | Melissa | Semi senior | 21 | 7 | 20/07 → 22/07 | 🟢 Dentro de la regla |
 | Stefanie | Semi senior | 20 | 8 | 08/07 → 17/07 | 🟢 Al límite (8) |
 | Felipe | Junior (6 meses) | 19 | 7 | 06/07 → 07/07 y 13/07 → 15/07 | 🟢 Dentro de la regla |
 
 **Alertas de capacidad:** sin alertas — todos los picos respetan la regla de ≤ 8 simultáneas.
-- ⚠️ **Monedas sin programar:** Q-28 (Stefanie: 1, Melissa: 1). Sumarán al pico cuando se agende.
+- ⚠️ **Monedas sin programar:** Q-28 (Stefanie: 1, Melissa: 1) y Q-48 (Alejandro: 6). Sumarán al pico cuando se agenden — el de Alejandro es el que más margen consume (hoy pico 7, solo 1 🪙 de holgura antes del límite de 8).
 - Nota: Stefanie queda **al límite (8)** entre el 08/07 y el 17/07 — no agendar nada nuevo en esa ventana.
 - 🏖️ **Vacaciones:** ninguna registrada. Se registran en el roster de la config; durante
   vacaciones la capacidad es **0** y el trabajo agendado en ese periodo dispara 🚨 código rojo.
@@ -297,6 +300,7 @@ fechas, monedas ni perfiles, y salen hacia una épica activa cuando se priorizan
 | Q-9 | Informe estrategias CUA | Estrategia CUA aún en definición (mesa Legal/Cumplimiento/CUA/FFVV) | Media | Medio | ⚠️ Amarillo | Cerrar definición en la mesa antes del 10/07 |
 | Q-35 | Guías EPS Multiempresa | Producto pide no comunicar servicios valorados | Media | Medio | ⚠️ Amarillo | Alinear con Producto en la validación (Q-36) |
 | Q-4/Q-5 | Universidad Vida | Capacidad limitada del equipo Learning | Media | Medio | ⚠️ Amarillo | Priorizar diseño instruccional con Learning |
+| Q-48 | Modelo predictivo retención salud | Acceso a data de renovación y siniestros depende de gestionar accesos en otras áreas; posible gate adicional de Legal/Cumplimiento por sensibilidad de datos de salud | Media | Medio | ⚠️ Amarillo | Priorizar la gestión de accesos como primer hito; medir y reportar ese tiempo como Lead time, no como esfuerzo del Reloj BD (mismo patrón que Q-9) |
 | — | Capacidad Stefanie | Al límite (8) entre 08–17/07; cualquier agregado la pasa de la regla | Baja | Medio | 🟢 Verde | No agendar trabajo nuevo en esa ventana (Q-28 incluido) |
 | Q-28 | Sin programar | Monedas asignadas sin fechas → riesgo de pico al agendar | Baja | Medio | 🟢 Verde | Agendar fuera de la ventana 08–17/07 de Stefanie |
 
@@ -314,3 +318,4 @@ fechas, monedas ni perfiles, y salen hacia una épica activa cuando se priorizan
 | Q-29–Q-31 | Bienestar 360 | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
 | Q-26–Q-28 | Spark: Vivo Pack | Validación del concepto (por medir en el test) |
 | Q-32–Q-34 | Modelo de venta Convenios | Escalamiento del modelo de venta de Vida Individual |
+| Q-48 | Modelo predictivo de retención en salud | Insumo conductual para intervención proactiva antes de la renovación (impacto cuantitativo pendiente de validar con el modelo) |
