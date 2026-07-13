@@ -140,6 +140,31 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   /plugin install rumipyramid-skills@rumipyramid-machine-learning
   ```
 - **Actualizar tras un cambio en `.claude/skills/`:** `/plugin marketplace update rumipyramid-machine-learning`.
+- **Portabilidad real por skill:** instalar el plugin da la *definición* de cada skill en
+  cualquier lado, pero algunas leen/escriben rutas fuera de su propia carpeta — esas rutas
+  solo existen si además hay un checkout de este repo (o de `research/`) accesible desde esa
+  sesión. Auditado 2026-07-13:
+
+  | Skill | Portabilidad | Ruta externa que usa | Qué se pierde sin el repo |
+  |---|---|---|---|
+  | `contexto-peruano` | ✅ Autocontenida | — | — |
+  | `lapuerta` | ✅ Autocontenida | — | — |
+  | `many-brains` | ✅ Autocontenida | — | — |
+  | `presentaciones-rimac` | ✅ Autocontenida | — | — |
+  | `rimac-slides` | ✅ Autocontenida | — | — |
+  | `seeker` | ✅ Autocontenida | — | — |
+  | `gossiper` | ⚠️ Parcial | `research/fuentes/registro_fuentes.md` (solo el paso final) | La investigación corre igual; el registro en el ledger de `cronista` no tiene dónde escribirse |
+  | `marketer` | ⚠️ Parcial | `research/fuentes/registro_fuentes.md` (solo el paso final) | Igual que `gossiper` |
+  | `actualizar` | ⚠️ Repo-dependiente | `reportes/beholder.config.md`, `reportes/ALERTAS_FECHAS.md`, `TABLERO_BEHOLDER.md` | El push a main funciona; el guardrail de gobernanza de fechas no tiene config ni tablero que consultar |
+  | `cronista` | ❌ Repo-dependiente | `research/fuentes/registro_fuentes.md`, `CLAUDE.md` | No hay ledger central donde anotar fuentes |
+  | `beholder` | ❌ Repo-dependiente | `reportes/beholder.config.md`, `reportes/ALERTAS_FECHAS.md`, `reportes/historial/` | Puede armar un tablero nuevo, pero sin historial ni aprobación de fechas |
+  | `cerrajero` | ❌ Repo-dependiente | `research/updates/*.md`, `CLAUDE.md`, `.github/workflows/fortalecimiento-modelo.yml`, `lapuerta/scripts/synthetic_user_schema.json` | No hay dónde indexar el reporte quincenal |
+  | `trinidad` | ❌ Repo-dependiente | `.claude/skills/{seeker,gossiper,marketer}/SKILL.md`, `research/fuentes/registro_fuentes.md` | Orquesta a los otros tres — si no están instalados también, sus pasos apuntan a nada |
+
+  **Regla práctica:** en una máquina sin el repo (p. ej. laptop corporativa), instalar el
+  plugin te da de inmediato las 6 skills autocontenidas completas. Las demás funcionan para
+  su tarea principal, pero pierden el paso de registro/gobernanza compartido — no fallan
+  silenciosamente, simplemente no hay archivo que tocar.
 - **Regla de consolidación:** ninguna skill debe quedar viviendo solo en el historial de una
   conversación o como archivo suelto fuera de `.claude/skills/<nombre>/SKILL.md` — si se redacta
   una skill nueva en una sesión, se commitea aquí antes de darla por terminada (ver caso
