@@ -194,6 +194,44 @@ el patrón clásico de "muerte por soporte" invisible.
 | Retro trimestral | `beholder_tools.py retro` compara monedas vs. días reales por entrega → recalibra la tabla 3.1 cada trimestre con datos, no con negociación. |
 | Digest semanal | Reporta cumplimiento de reloj BD vs. lead time por entrega — el dato político clave para el comité. |
 
+### 3.7 Acompañamiento de proyecto (embebido E2E) — cuando no hay un entregable que tallar todavía
+No todo lo que entra es un entregable con alcance conocido. Algunas iniciativas meten a BD **desde
+la exploración de un proyecto de negocio**, lo acompañan por definición de soluciones y diseño, y
+terminan **delegando** el diseño/fix final a quien lo implementa (Producto, Dev, agencia) — no a
+que BD lo despliegue. Pueden durar **hasta 6 meses**. Forzar esto dentro del catálogo 3.1 no
+funciona: en el kickoff no existe todavía el entregable a tallar, solo el proyecto que lo va a
+necesitar.
+
+- **Es un eje distinto, no una 7ª función.** Las categorías 3.1 siguen tallando cada hito real que
+  sí se puede definir (un research es 🔍, una estrategia es 🎛️, un set de materiales es 📣...).
+  Lo que este eje agrega es la **modalidad de compromiso** con la que BD entra al proyecto:
+  entregable puntual (3.1) vs. acompañamiento embebido (esta sección).
+- **El ANS es de capacidad, no de entregable.** Como no se puede prometer una fecha de entrega de
+  algo que aún no existe, lo que se compromete es **cuánta capacidad del equipo se reserva y por
+  cuánto tiempo** — en 🪙 por trimestre, no en días de un entregable. Un compromiso de 6 meses cruza
+  2 trimestres: **se re-compromete en cada retro**, no se fija una sola vez para todo el periodo
+  (misma lógica de reference-class forecasting de la sección 0 — recalibrar con datos, no negociar
+  una sola vez al inicio).
+- **Talla por % de capacidad reservada** (no por entregable):
+
+| Talla | Monedas 🪙 reservadas / trimestre | Qué implica |
+|---|---|---|
+| **S** | 1–2 🪙 | Check-ins puntuales en 1–2 de las 6 funciones; BD consultado, no embebido a diario |
+| **M** | 3–4 🪙 | Participación activa en 2–3 funciones del proyecto |
+| **L** | 5–6 🪙 | Hilo conductor de BD a través de la mayoría de las funciones (research → estrategia → materiales) |
+| **XL** | 7–8 🪙 | Casi dedicación completa; pairing senior/junior recomendado (regla 3.5) |
+
+- **Cierre del compromiso BD = delegación, no implementación.** Reusa el mecanismo de los dos
+  relojes (3.4): el Reloj BD se detiene cuando el diseño/fix queda delegado y aceptado por quien
+  lo va a implementar; el Lead time del proyecto de negocio puede seguir corriendo después, pero
+  ya bajo otro dueño — no cuenta contra el ANS de BD.
+- **Ya está pasando, sin nombre propio:** EPIC-1 Mesa Back to Basics (10 semanas, 3 personas,
+  25 🪙 — research → sacrificial concepts → informe CUA → materiales → AIDA → despliegue FFVV) y
+  EPIC-7 Renovación EPS (guías → validación → entrega → Diseño To Be del ecosistema, ahora extendida
+  por Q-48 sin fecha de cierre) son este patrón. El tablero ya las trackea como épica; lo que
+  faltaba era nombrar el tipo de ANS que Milagros necesita para negociarlas con el comité *antes*
+  de que exista el primer entregable.
+
 ## 4. Qué proponerle a Milagros (resumen ejecutivo)
 1. **Mantener su estructura para Service Design** si a ese rol le calza el pipeline — no es
    nuestra pelea.
@@ -205,6 +243,9 @@ el patrón clásico de "muerte por soporte" invisible.
    vuelve proyecto tallado.
 5. Recalibración **trimestral con datos** (retro), no renegociación por reunión — es la misma
    lógica de reference-class forecasting que respalda el appetite en la sección 0.
+6. **Para proyectos que aún no tienen entregable definido** (exploración → diseño → delegación,
+   hasta 6 meses), el ANS es de **capacidad reservada por trimestre** (3.7), no de fecha de
+   entrega — y se re-negocia en cada retro, no una sola vez al inicio.
 
 ## 5. Fuentes citadas (/trinidad)
 - Kahneman, D. & Tversky, A. (1979) — origen del *planning fallacy*; ver también
