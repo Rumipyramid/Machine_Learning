@@ -51,8 +51,11 @@ favorable), no vía fuente primaria auditada directamente.
 - **Confianza:** Media — la dirección del hallazgo (brecha enorme) es creíble y
   consistente con la baja penetración general del mercado peruano, pero el número
   exacto no está verificado en fuente primaria. Antes de dimensionar un caso de
-  negocio con el 3.3%, pedir el dato directo de APESEG/SBS.
-- **Actualizado:** 2026-07-12
+  negocio con el 3.3%, pedir el dato directo de APESEG/SBS. **Tope explícito:**
+  esta tesis se sostiene en una única fuente D — no sube a Alta por consistencia
+  narrativa; solo sube si aparece un F-n con rigurosidad B o mejor que confirme el
+  número directamente desde APESEG/SBS.
+- **Actualizado:** 2026-07-13
 
 ### 5. ESG como diferenciador de marca: aplica al consumidor global premium, no está probado en Perú
 Bain reporta que ~80% de consumidores globales quiere criterios ESG integrados en
@@ -190,3 +193,14 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   Vitality/F-25 como dato duro, y la caída de tenencia de vida en EE.UU. pese a
   mejor comprensión en F-22 — refuerza tesis 1). Ninguna tesis 1-5 cambió de
   confianza; la evidencia nueva no las contradice, las extiende.
+- **2026-07-13** — Sin cambios sustanciales: el ledger sigue en F-1 a F-27, sin
+  fuentes nuevas desde la entrada anterior. Revisé las 7 tesis contra la rúbrica
+  de rigurosidad; ninguna cambia de nivel de confianza. Único matiz aplicado:
+  hice explícito en la tesis 4 (brecha sísmica) que su confianza Media tiene un
+  tope duro por depender de una sola fuente D (F-5, prensa vía APESEG) — no debe
+  subir a Alta por mera consistencia narrativa con la baja penetración general,
+  solo por una fuente B o mejor que confirme el dato directo del gremio/regulador.
+  Las tesis 6 y 7 (crisis del nudge, s-frame > i-frame) siguen siendo las más
+  accionables y mejor blindadas (evidencia A múltiple y convergente); tesis 3 y 4
+  siguen siendo las más frágiles (una sola fuente C/D cada una) y son las
+  candidatas naturales para la próxima ronda de `/seeker` o `/marketer`.
