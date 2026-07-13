@@ -285,3 +285,6 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
   concreto para Perú.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para leer
   este node y el de mecanismos de seguros de salud.
+- [[material-visual-venta-consultiva|Material visual en la venta consultiva]] — aplica el
+  problema de confianza/déficit de información (§1.2-1.3) al momento de explicación del
+  producto y su material visual de apoyo.
