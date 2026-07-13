@@ -28,8 +28,10 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
 | `research/yopersona/perfil.md` | Nodo de conocimiento: perfil profesional del usuario (CV) | Fuente de verdad para cartas de presentación, CVs adaptados y asesoría de carrera |
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis con evidencia F-n del ledger + confianza; refinada diariamente contra `cronista` |
+| `research/calendario/agenda.md` | Nodo de conocimiento: bitácora de compromisos con fecha agendados en Google Calendar | Lo mantiene el skill `calendario`; registra fecha, estado y evento |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
+| `.claude/skills/calendario/` | Skill `calendario`: regla de fondo (no requiere `/`) | Detecta fechas que el usuario menciona, pregunta si agendar y crea el evento en Google Calendar (MCP) |
 | `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 | `.claude-plugin/marketplace.json` · `plugin.json` | Marketplace personal de plugins | Expone `.claude/skills/` como plugin instalable en cualquier máquina/cuenta — ver sección abajo |
@@ -107,6 +109,19 @@ Generador + simulador de usuarios sintéticos empaquetado como **skill compartib
   (por reglas o con LLM). Para compartir, copiar la carpeta a `.claude/skills/` (proyecto)
   o `~/.claude/skills/` (personal).
 
+### 📌 Skill: `calendario` (agendar compromisos con fecha)
+Regla permanente de fondo (no un comando `/` que haya que invocar): cada vez que el usuario
+diga que hará algo en una fecha exacta o aproximada, Claude pregunta si quiere agendarlo en su
+Google Calendar y, si dice que sí, crea el evento con el MCP de Google Calendar.
+
+- **Ubicación:** `.claude/skills/calendario/`
+- **Nodo de conocimiento:** `research/calendario/agenda.md` — bitácora local de qué se agendó
+  (fecha, compromiso, estado, evento). No reemplaza al Google Calendar real; deja trazabilidad
+  de la conversación que originó cada agendado.
+- **Comportamiento:** si el usuario dice que no, no se crea evento ni fila en el nodo. Fechas
+  aproximadas se agendan con la mejor estimación y quedan marcadas como `Aproximada` hasta
+  confirmar el día exacto.
+
 ### 📌 Reportes quincenales (fortalecimiento del modelo)
 Investigación recurrente (cada ~15 días) que busca evidencia nueva y propone cómo incorporar
 variables al modelo `lapuerta`.
@@ -161,6 +176,10 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   se registra en `research/fuentes/registro_fuentes.md` (resumen, rigurosidad, autor, año).
   Aplica también a lo que traigan `/gossip` (noticias/redes) y `/marketer` (benchmarks
   de negocio), no solo a `/seeker`.
+- **Fecha mencionada → `calendario`:** cada vez que el usuario diga que hará algo en una
+  fecha exacta o aproximada, preguntar si quiere agendarlo en Google Calendar y, si dice
+  que sí, crear el evento (MCP de Google Calendar) y registrarlo en `research/calendario/agenda.md`.
+  Ver skill `calendario` (`.claude/skills/calendario/SKILL.md`).
 - ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
 
 ---

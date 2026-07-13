@@ -15,6 +15,7 @@
 | [`updates/`](updates/) | Reportes quincenales de fortalecimiento + `generate_report.py` (usado por el Action). |
 | [`yopersona/perfil.md`](yopersona/perfil.md) | Perfil profesional del usuario (CV): fuente de verdad para cartas de presentación y asesoría de carrera. |
 | [`lobo/opinion_experto.md`](lobo/opinion_experto.md) | Opinión de negocio acumulada de "El Lobo", refinada contra el ledger de `cronista`. |
+| [`calendario/agenda.md`](calendario/agenda.md) | Bitácora de compromisos con fecha agendados en Google Calendar. Mantenida por el skill `calendario`. |
 
 ## Modelo de personas sintéticas — `personas/generador/`
 
