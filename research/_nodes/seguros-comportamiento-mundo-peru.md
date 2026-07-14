@@ -288,3 +288,6 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[material-visual-venta-consultiva|Material visual en la venta consultiva]] — aplica el
   problema de confianza/déficit de información (§1.2-1.3) al momento de explicación del
   producto y su material visual de apoyo.
+- [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in]] — cómo
+  organizaciones (seguros y sectores análogos) migran de prospección en frío a modelos de
+  consentimiento previo, y qué pasa con el volumen/confianza durante esa transición.

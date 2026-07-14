@@ -210,3 +210,6 @@ señuelo/anclaje en la opción intermedia), no por "choice overload" en sí.
   seguros (Mundo vs. Perú)]] — este node aplica el problema general de confianza/déficit
   de información (§1.2-1.3 de ese node) al momento específico de explicación del producto
   y su material de apoyo.
+- [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in]] — este node
+  cubre el momento anterior en el journey: cómo llegar a un primer contacto ya consentido,
+  antes de que aplique el material visual de explicación de producto de aquí.
