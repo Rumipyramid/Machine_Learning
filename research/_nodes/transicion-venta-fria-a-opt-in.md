@@ -1,7 +1,7 @@
 # Transición de venta fría a venta opt-in: cómo lo hacen las organizaciones
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-14 · Versión: v1.0
+> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-07-14 · Versión: v1.0
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 
 ---
@@ -84,9 +84,83 @@ sino como estrategia de supervivencia personal. Esto sugiere que el puente hacia
 fuerza de ventas**, no solo resistencia — el asesor promedio también quiere dejar de hacer
 llamadas en frío, no solo la empresa por presión legal.
 
+**Detalle adicional del foro (revisión ampliada, misma fuente F-137):** el hilo "Call
+Reluctance" documenta que solo **7 de cada 100 agentes de seguros llegan a los 4 años** en
+la profesión, y **80% no dura ni 12 meses** — cifra de deserción citada por los propios
+foristas, sin fuente primaria verificable, pero consistente con el tono general de
+agotamiento. Un agente resume el rechazo a la llamada en frío como incapacidad de
+sostenerla ("no soporto más ese teléfono"), mientras otro empuja en la dirección contraria:
+hace 70 llamadas al día como forma deliberada de superar su propio "call reluctance".
+
+**Divergencia dentro de la misma pista — no se resuelve artificialmente:** no todo el foro
+coincide en que la venta fría esté agotada. Un participante cita el caso de **Ben Feldman**,
+uno de los vendedores de seguros de vida con más récords históricos de ventas, que construyó
+su carrera **con llamada en frío, explícitamente sin depender de referidos**. Esto matiza la
+narrativa de "todos migran a referidos" — el foro muestra una tensión real entre quienes ya
+migraron por agotamiento y quienes defienden que la venta fría, bien ejecutada, sigue
+funcionando. Se reporta la divergencia tal cual, sin promediarla en una conclusión única.
+
 **Nivel de instalación social:** 💬 (discusión real pero de nicho — foros especializados de
 asesores, no viral ni masivo). No se encontró volumen equivalente en Reddit/TikTok
 específicamente sobre este tema.
+
+---
+
+## 6. Cómo reducir la desconfianza al pedir datos personales
+
+Pregunta derivada, directamente relevante para el formulario de autorregistro de la
+Estrategia 4 de RIMAC y para cualquier punto de captura de CUA.
+
+### 6.1 La confianza en la marca pesa más que la explicación legal
+
+El hallazgo canónico del campo (Norberg, Horne & Horne, 2007 — F-144, muy citado) es la
+**paradoja de la privacidad**: lo que la gente dice que le importa sobre su privacidad no
+predice su comportamiento real de divulgación. Lo que sí predice divulgación real es la
+**confianza situacional** — en la marca, en el momento, en el contexto — más que la
+información legal en sí. Esto tiene una implicación directa: un aviso de privacidad
+perfecto no compensa una marca en la que la persona ya desconfía (coherente con el ~48% de
+desconfianza en seguros documentado en `seguros-comportamiento-mundo-peru.md`, §1.2).
+
+### 6.2 Lo que sí mueve la aguja, con evidencia real
+
+- **Explicar "por qué pedimos este dato" en cada campo**, no solo tener un aviso de
+  privacidad genérico al final. Baymard Institute (F-145, testeo de usabilidad documentado)
+  encuentra que esto reduce fricción percibida directamente; en checkout, cada campo después
+  del 8vo reduce la tasa de finalización 4-6%, y 26% de abandonos ocurren solo porque el
+  formulario se percibió largo o complejo — aplicable directamente al formulario de
+  autorregistro de la Estrategia 4.
+- **Pedir lo mínimo primero, no todo junto.** Un paper reciente y peer-reviewed (F-142,
+  2025) confirma que secuenciar los campos en orden ascendente de intrusión (lo menos
+  sensible primero) y repartirlos en varias pantallas aumenta significativamente cuánto
+  divulga la persona, comparado con pedir todo de una vez.
+- **Dar control real** (acceso fácil para revisar/actualizar/revocar lo que se compartió) —
+  consistente con el requisito ya exigido por DS 016 (derecho a revocar por medio sencillo y
+  gratuito, ≤10 días) y con el framework práctico de F-140.
+
+### 6.3 La advertencia ética que hay que poner sobre la mesa
+
+Dos hallazgos peer-reviewed complican el punto 6.2 y merecen decirse con la misma
+honestidad que el resto de este node:
+
+- **La técnica del pie en la puerta (Freedman & Fraser, 1966 — F-141, canónico)** muestra
+  que conceder una petición pequeña primero aumenta la probabilidad de aceptar una petición
+  grande después, por presión de consistencia — no porque la persona haya evaluado
+  racionalmente el pedido más grande.
+- **F-143 (Journal of Cybersecurity, 2023)** confirma que pedir datos reales de forma
+  repetida aumenta la divulgación **sin que cambie la preocupación de privacidad de la
+  persona** — la repetición hace sobre-divulgar incluso cuando la actitud hacia la
+  privacidad no cambió.
+
+**La tensión:** estas mismas técnicas (divulgación progresiva, repetición) son
+psicológicamente efectivas para conseguir más datos, pero funcionan **por presión de
+consistencia, no por convicción informada** — lo cual choca con el estándar de
+consentimiento "libre, previo, expreso, informado, inequívoco" que ya exige el DS 016 (y
+que el propio documento maestro FFVV cita en su diseño de la Estrategia 4, §6.5). Usar
+"pedir poco primero" como táctica de manipulación de consistencia es distinto a usarlo como
+diseño genuino de fricción reducida — la diferencia está en si cada paso sigue siendo
+verdaderamente opcional y revocable, o si el diseño depende de que la persona no se dé
+cuenta de que podría decir que no. Antes de adoptar cualquiera de estas tácticas para CUA,
+vale la pena que Compliance las revise con este matiz explícito, no solo por su efectividad.
 
 ---
 
@@ -238,4 +312,6 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   es parte de por qué la venta fría erosiona la relación que este node describe.
 - [[material-visual-venta-consultiva|Material visual en la venta consultiva]] — una vez que
   el contacto es opt-in, este node cubre cómo explicar el producto en ese primer contacto ya
-  consentido.
+  consentido. §6 de este node (reducir desconfianza al pedir datos) comparte el mismo
+  problema de fondo — reducir fricción/incertidumbre percibida — que ese node aplica a la
+  explicación del producto.
