@@ -78,6 +78,33 @@ escalas de usabilidad (que tienen 25+ años de validación). No hay todavía un 
 sólido como el de PARADISE/SASSI — es una capa de ingeniería en evolución activa, no una
 escala psicométrica estabilizada.
 
+### 3.1 Instrumentos que puntúan la respuesta individual directamente
+
+RAGAS (arriba) mide fidelidad a una fuente — pero no es lo único que existe cuando la
+pregunta es "¿cómo califico *esta* respuesta puntual del agente?". Hay tres instrumentos
+de referencia diseñados exactamente para eso, con más historial de validación que RAGAS:
+
+- **G-Eval** (Liu et al., 2023 — F-156, peer-reviewed EMNLP): el evaluador (un LLM) razona
+  paso a paso contra criterios explícitos y asigna un puntaje 1-5 por dimensión (coherencia,
+  consistencia, fluidez, relevancia) a **cada respuesta individual**. Es hoy el método de
+  LLM-as-judge con mejor correlación documentada con juicio humano entre los comparados en
+  su paper original.
+- **MQM** (F-157, estándar de industria, nacido en traducción): en vez de un puntaje
+  holístico, **anota cada error dentro de la respuesta** por categoría y severidad
+  (neutral/menor/mayor/crítico) y calcula un puntaje agregado ponderado. Es el más útil si
+  a RIMAC le interesa distinguir un error factual grave sobre una póliza (crítico, pesa
+  25) de un error de fraseo (menor, pesa 1) — no todos los errores de un chatbot de seguros
+  tienen el mismo costo.
+- **FED / USR** (Mehri & Eskenazi, 2020 — F-158, peer-reviewed ACL): esquemas de anotación
+  turno por turno con dimensiones explícitas, incluida **"Correct"** como una dimensión
+  separada de "Fluent" o "Appropriate" — diseñados originalmente para anotación humana,
+  hoy replicables también con un LLM como evaluador.
+
+**Diferencia clave con la Familia 1 (usabilidad):** estos tres puntúan **la respuesta**,
+no la experiencia agregada del usuario con toda la conversación — son el instrumento
+correcto si lo que se quiere es una nota por interacción/respuesta, no una encuesta de
+satisfacción post-conversación.
+
 ---
 
 ## 4. Familia 3 — Frameworks específicos de banca/seguros
@@ -115,10 +142,13 @@ decir cuando no entiende), o de tono/percepción:
 
 1. **CUQ o BUS-11** administrado a una muestra de usuarios reales tras interactuar con el
    agente — mide percepción y aísla específicamente el factor de manejo de errores (CUQ).
-2. **RAGAS o LLM-as-judge con rúbrica** sobre una muestra de transcripciones reales — mide
-   si las respuestas fueron objetivamente fieles a la información de producto de RIMAC, no
-   solo si "se sintieron bien". Esto es lo único de las tres familias que puede confirmar o
-   descartar alucinación como causa raíz.
+2. **RAGAS** sobre una muestra de transcripciones reales, para confirmar o descartar
+   alucinación (¿inventa datos de producto?) — y **MQM** en paralelo sobre las mismas
+   transcripciones, para clasificar cada error encontrado por severidad. La combinación
+   importa: RAGAS dice *si* hay un problema de fidelidad; MQM dice *qué tan grave* es cada
+   caso encontrado (un error factual sobre una póliza no es del mismo orden que una
+   respuesta con fraseo torpe), lo cual es más útil para priorizar qué corregir primero
+   que un puntaje único agregado.
 3. **Resolution rate** como métrica operativa continua, con el techo esperado ajustado a la
    baja por tratarse de un sector complejo (seguros) — no comparar contra el 80%+ que se
    reporta como "best-in-class" para chatbots de propósito general.
