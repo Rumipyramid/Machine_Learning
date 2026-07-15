@@ -215,3 +215,17 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   prensa. Ninguna otra tesis, oportunidad o riesgo requiere matiz hoy; las 7
   tesis, 5 oportunidades y 7 riesgos vigentes siguen representando bien la
   evidencia disponible en el ledger.
+- **2026-07-15** — Sin cambios sustanciales: tercer día consecutivo con el
+  ledger fijo en F-1 a F-27 — no hay corrida nueva de `/seeker`, `/gossip`,
+  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
+  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
+  confianza. La racha de "sin novedad" en sí misma es una señal para el
+  negocio, no solo un no-evento: tesis 3 y 4 llevan ya tres revisiones seguidas
+  marcadas como las más frágiles del set sin que nadie haya cerrado el hueco
+  (segunda fuente generacional fuera de EE.UU. para tesis 3; dato primario
+  APESEG/SBS para tesis 4). Instinto: si ningún otro skill va a levantar esa
+  evidencia pronto, más vale bajar la prioridad de cualquier caso de negocio
+  que dependa hoy del 3.3% de tesis 4 y tratarlo explícitamente como
+  provisional, en vez de dejarlo languidecer en confianza "Media" indefinida.
+  No se tocó ninguna cifra ni fuente — es una nota de gestión de la cartera de
+  tesis, no un cambio de evidencia.
