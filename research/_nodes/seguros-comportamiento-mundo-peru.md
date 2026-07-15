@@ -291,3 +291,6 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in]] — cómo
   organizaciones (seguros y sectores análogos) migran de prospección en frío a modelos de
   consentimiento previo, y qué pasa con el volumen/confianza durante esa transición.
+- [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de calidad de agentes
+  conversacionales de IA]] — un chatbot con errores alimenta directamente el problema de
+  desconfianza (§1.2-1.3) descrito aquí; ese node cubre cómo medirlo y diagnosticarlo.
