@@ -191,6 +191,28 @@ cambiar el modelo de fondo.
 
 ---
 
+## 4.1 Dos artículos de práctica, para lectura directa (no académicos)
+
+A pedido del usuario, dos piezas que hablan del tema de forma más legible/directa que los
+casos ancla de arriba — ambas de rigor D (blog de práctica/vendor, sin estudio propio), no
+sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
+
+- **"Why Cold Calling is Dead: The Shift to Relationship-Based Selling"** (New Sales
+  Expert, F-139) — el argumento de fondo es la brecha de respuesta: <2% de las llamadas en
+  frío se contestan, vs. ~40% de respuesta a un referido personal (cifra sin fuente
+  primaria citada). Encuadra la transición como cambio de mentalidad del equipo comercial
+  ("calidad de introducciones" en vez de "volumen de llamadas"), con el argumento adicional
+  de que es mejor calidad de vida para el vendedor — coincide con lo encontrado en la pista
+  social (§2, foros de asesores).
+- **"Consent-Based Marketing: Turning Privacy into Business Growth"** (Seers AI, F-140) —
+  traza la línea histórica marketing de interrupción → marketing de permiso (Godin, F-128)
+  → marketing basado en consentimiento (impulsado por regulación de privacidad, no por
+  elección). Propone un framework de implementación de 4 pasos: capturar consentimiento de
+  forma transparente, dar acceso fácil para actualizar preferencias, auditar registros
+  regularmente, e integrar el consentimiento en el pipeline en vez de tratarlo como
+  checkbox legal aparte — útil como checklist operativo, con la salvedad de que la fuente
+  vende software de gestión de consentimiento (conflicto de interés declarado).
+
 ## 5. Limitaciones
 
 - No se encontró estudio académico peer-reviewed específico sobre transición de fuerza de
