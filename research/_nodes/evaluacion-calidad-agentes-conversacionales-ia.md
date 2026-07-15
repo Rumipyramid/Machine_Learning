@@ -138,29 +138,57 @@ satisfacción post-conversación.
 
 ---
 
-## 5. Aplicación recomendada para el caso de RIMAC
+## 5. Aplicación recomendada para el caso de RIMAC — plan en 3 fases
 
-Dado que "tiene errores en la experiencia" es una descripción general, sin especificar si
-el error es de exactitud (inventa datos de producto), de manejo de fallos (no sabe qué
-decir cuando no entiende), o de tono/percepción:
+No conviene elegir un instrumento pesado (RAGAS, encuesta CUQ) antes de saber **qué tipo de
+error** es el que ya se observó — eso es barato de averiguar y evita instrumentar de más.
 
-1. **CUQ o BUS-11** administrado a una muestra de usuarios reales tras interactuar con el
-   agente — mide percepción y aísla específicamente el factor de manejo de errores (CUQ).
-2. **RAGAS** sobre una muestra de transcripciones reales, para confirmar o descartar
-   alucinación (¿inventa datos de producto?) — y, en paralelo, una **taxonomía de errores
-   propia con severidad ponderada** (inspirada en el método de MQM, no en MQM literal —
-   ver §3.1) para clasificar cada error encontrado. La combinación importa: RAGAS dice *si*
-   hay un problema de fidelidad; la taxonomía de severidad dice *qué tan grave* es cada
-   caso encontrado (un error factual sobre una póliza no es del mismo orden que una
-   respuesta con fraseo torpe), lo cual es más útil para priorizar qué corregir primero
-   que un puntaje único agregado.
-3. **Resolution rate** como métrica operativa continua, con el techo esperado ajustado a la
-   baja por tratarse de un sector complejo (seguros) — no comparar contra el 80%+ que se
-   reporta como "best-in-class" para chatbots de propósito general.
+### Fase 1 — Diagnóstico manual, barato, primero
 
-Sin acceso directo al agente de RIMAC para inspeccionar transcripciones reales, no es
-posible determinar aquí cuál de los tres ejes (§1) es la causa del problema reportado — es
-el paso que sigue antes de elegir la escala definitiva.
+- Reunir una muestra de **20-30 conversaciones reales** del agente (referencia de tamaño:
+  la validación de CUQ usó N=26 — suficiente para un primer diagnóstico, no para
+  generalizar con rigor estadístico).
+- Que **al menos 2 personas** revisen la muestra de forma independiente (no una sola, para
+  poder detectar si hay desacuerdo — un desacuerdo alto entre revisores es señal de que el
+  criterio no está claro, no solo de que el agente falla) y clasifiquen cada respuesta con
+  errores según esta taxonomía de severidad (adaptada de la lógica de MQM — no MQM en sí,
+  ver §3.1):
+
+| Severidad | Peso | Qué es | Ejemplo en un agente de seguros |
+|---|---|---|---|
+| 🔴 Crítico | 25 | Riesgo regulatorio, legal o de decisión de compra equivocada | Dice mal una condición de cobertura, un plazo, un monto, o afirma algo que contradice el condicionado real |
+| 🟠 Mayor | 5 | Rompe la tarea, aunque no sea un dato falso | No entiende la pregunta y no lo reconoce; da una respuesta genérica que no resuelve nada; se queda "trabado" en un loop |
+| 🟡 Menor | 1 | No impide resolver la tarea, pero se nota | Tono desalineado, respuesta demasiado larga/corta, formato inconsistente |
+| ⚪ Neutral | 0 | Válido, sin problema | — |
+
+- Quien revisa debe **conocer la respuesta correcta** (idealmente alguien de producto/FFVV,
+  no un revisor sin contexto de seguros) — sin eso no se puede distinguir un error crítico
+  de uno menor con confianza.
+
+**Este paso ya responde lo esencial:** si la mayoría de lo encontrado es 🔴/🟠, el problema
+es de exactitud/capacidad — ahí es donde escalar con RAGAS tiene sentido. Si es
+mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rinde más.
+
+### Fase 2 — Escalar el eje que resultó dominante en la Fase 1
+
+- **Si domina 🔴/🟠 (exactitud/capacidad):** correr **RAGAS** sobre un volumen mayor de
+  conversaciones (requiere acceso a los documentos/base de conocimiento que el agente usa
+  como fuente) para automatizar la detección de alucinación a escala, en vez de seguir
+  revisando todo a mano.
+- **Si domina 🟡 (percepción/tono):** aplicar **CUQ o BUS-11** como encuesta a usuarios
+  reales tras interactuar con el agente — CUQ en particular aísla un factor específico de
+  "manejo de errores".
+- Es común que ambos ejes aparezcan a la vez — no son excluyentes, pero conviene
+  invertir primero donde pesó más en la Fase 1, no en los dos por igual desde el día uno.
+
+### Fase 3 — Monitoreo continuo, no una auditoría única
+
+- **Resolution rate** como métrica operativa continua, con el techo esperado ajustado a la
+  baja por tratarse de un sector complejo (seguros) — no comparar contra el 80%+ que se
+  reporta como "best-in-class" para chatbots de propósito general (§4, F-155).
+- Repetir la Fase 1 (muestreo + taxonomía de severidad) de forma periódica sobre una
+  muestra nueva, no solo una vez — un agente puede degradarse silenciosamente si cambia el
+  contenido fuente o el modelo subyacente sin que nadie lo note hasta la próxima auditoría.
 
 ---
 
