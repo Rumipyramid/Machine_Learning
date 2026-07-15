@@ -89,12 +89,16 @@ de referencia diseñados exactamente para eso, con más historial de validación
   consistencia, fluidez, relevancia) a **cada respuesta individual**. Es hoy el método de
   LLM-as-judge con mejor correlación documentada con juicio humano entre los comparados en
   su paper original.
-- **MQM** (F-157, estándar de industria, nacido en traducción): en vez de un puntaje
-  holístico, **anota cada error dentro de la respuesta** por categoría y severidad
-  (neutral/menor/mayor/crítico) y calcula un puntaje agregado ponderado. Es el más útil si
-  a RIMAC le interesa distinguir un error factual grave sobre una póliza (crítico, pesa
-  25) de un error de fraseo (menor, pesa 1) — no todos los errores de un chatbot de seguros
-  tienen el mismo costo.
+- **MQM** (F-157) — ⚠️ **corregido tras pregunta del usuario**: MQM en su forma real es
+  específico de calidad de traducción; sus 7 dimensiones (Terminology, Locale Conventions,
+  etc.) no mapean a una respuesta conversacional. No es una escala que "también sirva" para
+  un chatbot. Lo que sí es real y aplicable es su **método**: anotar cada error por
+  categoría y severidad (neutral/menor/mayor/crítico) en vez de un puntaje holístico único
+  — un enfoque que investigación reciente ha usado como inspiración para construir marcos
+  *nuevos* en otros dominios (código, salud, salidas de LLM en general), no MQM aplicado
+  literalmente. Para RIMAC, esto significa **construir una taxonomía de errores propia**
+  (ej. error factual de póliza = crítico, error de tono = menor) con la misma lógica de
+  severidad ponderada — no adoptar MQM como si fuera un estándar ya hecho para este caso.
 - **FED / USR** (Mehri & Eskenazi, 2020 — F-158, peer-reviewed ACL): esquemas de anotación
   turno por turno con dimensiones explícitas, incluida **"Correct"** como una dimensión
   separada de "Fluent" o "Appropriate" — diseñados originalmente para anotación humana,
@@ -143,9 +147,10 @@ decir cuando no entiende), o de tono/percepción:
 1. **CUQ o BUS-11** administrado a una muestra de usuarios reales tras interactuar con el
    agente — mide percepción y aísla específicamente el factor de manejo de errores (CUQ).
 2. **RAGAS** sobre una muestra de transcripciones reales, para confirmar o descartar
-   alucinación (¿inventa datos de producto?) — y **MQM** en paralelo sobre las mismas
-   transcripciones, para clasificar cada error encontrado por severidad. La combinación
-   importa: RAGAS dice *si* hay un problema de fidelidad; MQM dice *qué tan grave* es cada
+   alucinación (¿inventa datos de producto?) — y, en paralelo, una **taxonomía de errores
+   propia con severidad ponderada** (inspirada en el método de MQM, no en MQM literal —
+   ver §3.1) para clasificar cada error encontrado. La combinación importa: RAGAS dice *si*
+   hay un problema de fidelidad; la taxonomía de severidad dice *qué tan grave* es cada
    caso encontrado (un error factual sobre una póliza no es del mismo orden que una
    respuesta con fraseo torpe), lo cual es más útil para priorizar qué corregir primero
    que un puntaje único agregado.
@@ -161,9 +166,13 @@ el paso que sigue antes de elegir la escala definitiva.
 
 ## 6. Limitaciones
 
-- No se accedió al paper original de RAGAS (arXiv/EACL) — se documentó vía descripciones
-  técnicas de terceros (Langfuse, Confident AI). Verificar el paper primario antes de citar
-  las métricas con más precisión técnica.
+- ~~No se accedió al paper original de RAGAS~~ — corregido: se verificó el paper primario
+  (EACL 2024) al preparar enlaces para el usuario.
+- **Corrección registrada (2026-07-15):** la primera versión de este node presentó MQM
+  como un framework "extendido a evaluación de LLMs", lo cual sobreextendía su alcance real
+  — MQM es específico de traducción; lo aplicable a chatbots es su método de severidad
+  ponderada, no el framework en sí. Corregido en §3.1 tras pregunta directa del usuario.
+  Se deja esta nota como registro del error y la corrección, no solo el texto ya arreglado.
 - El framework más específico al caso de uso (F-152) tiene rigor editorial no verificable —
   se usa su contenido con esa salvedad explícita, no como fuente A.
 - No existe un estándar único, obligatorio o universalmente adoptado por la industria de
