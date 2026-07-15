@@ -109,6 +109,33 @@ no la experiencia agregada del usuario con toda la conversación — son el inst
 correcto si lo que se quiere es una nota por interacción/respuesta, no una encuesta de
 satisfacción post-conversación.
 
+### 3.2 Banco de preguntas estandarizadas + juez LLM (lo que preguntó el usuario)
+
+Sí existe, y tiene nombre: **MT-Bench** (Zheng et al., 2023 — F-159, peer-reviewed
+NeurIPS, ampliamente adoptado). La metodología es exactamente la que se preguntó: un
+**banco fijo de preguntas** (MT-Bench usa 80, multi-turno, agrupadas por categoría de
+habilidad) evaluado por un **LLM juez** que puntúa cada respuesta contra una rúbrica.
+
+**Lo que el propio paper obliga a decir con honestidad, porque lo mide él mismo:** un LLM
+juez tiene sesgos documentados — de **posición** (favorece la primera opción en una
+comparación), de **verbosidad** (favorece respuestas más largas aunque no sean mejores), y
+de **auto-favorecimiento** (tiende a puntuar mejor respuestas parecidas a las que él mismo
+generaría). El paper propone mitigarlos con rúbricas explícitas y aleatorizando el orden —
+no eliminarlos, mitigarlos. Aplicado a este proyecto: si yo actúo como juez, debo puntuar
+contra criterios explícitos y verificables (la taxonomía de severidad de §5, con ejemplos
+concretos de "qué cuenta como crítico"), no con un juicio abierto de "¿esto suena bien?" —
+así el sesgo de verbosidad/estilo pesa menos.
+
+**Cómo se vería aplicado a RIMAC:** un banco de 15-20 preguntas estandarizadas, cubriendo
+los 3 productos Vida ya trabajados en este proyecto (Garantizado, con Devolución,
+Flexible) más objeciones comunes y casos límite, cada una con una **respuesta de
+referencia** (la respuesta correcta, verificada por alguien de producto) — y luego
+comparar la respuesta real del agente contra esa referencia, puntuando con la taxonomía de
+severidad de §5. Esto no reemplaza el diagnóstico con muestra real de la Fase 1 (§5) — lo
+complementa: la muestra real te dice qué está fallando *en la práctica*; el banco
+estandarizado te permite repetir la misma prueba exacta cada vez que cambie el agente, para
+saber si una corrección realmente funcionó.
+
 ---
 
 ## 4. Familia 3 — Frameworks específicos de banca/seguros
