@@ -168,6 +168,13 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   puntual (F-22, 🟡C). Refuerza la tesis 1 en la dirección más incómoda: mejorar
   el entendimiento en el punto de venta no basta para sostener ni crecer la
   categoría a nivel agregado.
+- **La cartera de tesis lleva 4 revisiones diarias seguidas sin insumo nuevo.**
+  *Instinto, no ledger-backed*: ninguna tesis está siendo puesta a prueba por
+  evidencia activa ahora mismo — este archivo es un snapshot con fecha de
+  vencimiento implícita, no una fuente viva. Si se va a apalancar una decisión
+  de negocio grande (pricing, entrada a categoría, pitch a inversionista) sobre
+  tesis 3 o 4 —las dos más frágiles del set—, correr `/seeker` o `/marketer`
+  antes de usarlas, no asumir que "nadie las refutó" equivale a "siguen firmes".
 
 ## 📔 Bitácora
 
@@ -229,3 +236,15 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   provisional, en vez de dejarlo languidecer en confianza "Media" indefinida.
   No se tocó ninguna cifra ni fuente — es una nota de gestión de la cartera de
   tesis, no un cambio de evidencia.
+- **2026-07-16** — Sin cambios sustanciales: cuarto día consecutivo con el
+  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
+  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
+  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
+  confianza. Convertí la observación de ayer sobre la racha de "sin novedad"
+  en un riesgo explícito de la cartera (nuevo bullet en ⚠️ Riesgos, marcado
+  instinto): esta opinión es un snapshot con vencimiento implícito, y las
+  tesis 3 (Gen Z, una sola fuente 🟡C) y 4 (brecha sísmica, una sola fuente
+  🟠D con tope explícito) no deben tratarse como validadas por el mero hecho
+  de que nadie las refutó en cuatro días — si alguna va a sostener una
+  decisión grande de negocio, corresponde correr `/seeker` o `/marketer`
+  antes de usarla tal cual está. No se tocó ninguna cifra ni fuente.
