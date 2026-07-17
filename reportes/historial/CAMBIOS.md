@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-16T16:43:08 · Cambios vigentes: 71
+> Retención: 15 días · Última actualización: 2026-07-17T13:54:39 · Cambios vigentes: 72
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-17T13:54:39 | Alejandro | SIZING-BD | Nuevo archivo | — (no existía) | Sizing_Behavioral_Design.xlsx: mismo formato que el Sizing.xlsx de Service Design (ETAPA/SUB-ETAPA/MÍNIMO/MÁXIMO/CON IA), calibrado con esos rangos como referencia y ajustado con datos reales del tablero BD; TOTAL REFINADO 20-75 días efectivos | normal | aplicado |
 | 2026-07-16T16:43:08 | Melissa | ANS-BD | Orden de columnas hoja principal | Base(días) → Monedas(del base) → Feedback(días) → Total(días); monedas no reflejaban el feedback | Base(días) → Feedback(días) → Total(días) → Monedas(del total, con fórmula); una sola pasada construyo→valido→total días→total monedas | normal | aplicado |
 | 2026-07-13T20:03:10 | Alejandro | ANS-BD | Nomenclatura Excel | ejemplos citaban claves internas Q-n del tablero | ejemplos describen el trabajo por nombre/contenido, sin códigos Q-n (el Excel es para uso externo/Milagros, no acoplado a la nomenclatura interna del Beholder) | normal | aplicado |
 | 2026-07-13T19:45:39 | Alejandro | ANS-BD | §3.7 fases | capacidad reservada durante todo el acompañamiento (hasta 6 meses) | dos fases: capacidad reservada solo en exploración; en cuanto sale el roadmap, las soluciones BD vuelven al catálogo normal (3.1) y se tallan como cualquier entregable | normal | aplicado |
