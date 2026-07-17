@@ -39,8 +39,11 @@ Cualquier estrategia que apueste a "la próxima generación va a entender mejor"
 tiene sustento.
 - **Evidencia:** F-8 (🟡C, NAIC 2024 — nota de asociación, método no detallado)
 - **Confianza:** Media (una sola fuente C; consistente con F-6/F-7 pero no del
-  mismo rigor)
-- **Actualizado:** 2026-07-12
+  mismo rigor). **Tope explícito** (mismo criterio aplicado a tesis 4 el
+  2026-07-13): no sube a Alta por consistencia narrativa con F-6/F-7 — solo
+  sube si aparece un F-n con rigurosidad B o mejor que confirme el patrón
+  generacional, idealmente con dato peruano/latinoamericano en vez de EE.UU.
+- **Actualizado:** 2026-07-17
 
 ### 4. La brecha de aseguramiento sísmico en Perú es una categoría de producto casi vacía
 Solo ~3.3% de los hogares peruanos tiene seguro contra sismos/desastres en un país
@@ -248,3 +251,16 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   de que nadie las refutó en cuatro días — si alguna va a sostener una
   decisión grande de negocio, corresponde correr `/seeker` o `/marketer`
   antes de usarla tal cual está. No se tocó ninguna cifra ni fuente.
+- **2026-07-17** — Sin cambios sustanciales: quinto día consecutivo con el
+  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
+  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
+  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
+  confianza. Único matiz aplicado hoy: extendí a la tesis 3 (Gen Z) el mismo
+  tope explícito que ya tenía la tesis 4 (brecha sísmica) desde el
+  2026-07-13 — ambas son las tesis más frágiles del set (una sola fuente
+  🟡C/🟠D cada una) y ninguna debe subir de confianza por mera consistencia
+  narrativa con otras tesis; solo sube con una fuente B o mejor que confirme
+  el hallazgo de forma directa. No se sumó ningún riesgo nuevo: la racha de
+  estancamiento del ledger (ya señalada como riesgo el 2026-07-16) sigue
+  siendo la observación de portafolio más relevante — cinco días sin
+  evidencia nueva es la señal en sí misma, no solo la ausencia de una.
