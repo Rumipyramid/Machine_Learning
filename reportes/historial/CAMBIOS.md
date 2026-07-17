@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-17T15:19:59 · Cambios vigentes: 73
+> Retención: 15 días · Última actualización: 2026-07-17T15:31:31 · Cambios vigentes: 74
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-17T15:31:31 | Alejandro | ANS-SIZING-BD | Nuevo archivo + corrección | Resumen S-M-L-XL tenía los números de Service Design copiados por error | ANS_Sizing_Behavioral_Design.xlsx: modelo completo adaptado de ANS_Sizing_SD.xlsx (parámetro de asignación en vivo, feedback+VB, ANS épica, sprints/meses, hoja Entregables, hoja v1 sin curar); Resumen S-M-L-XL corregido con números propios de BD (TOTAL 22/36/53/77, 1.1-3.9 meses) | normal | aplicado |
 | 2026-07-17T15:19:59 | Alejandro | SIZING-BD | Hoja Resumen S-M-L-XL | — (no existía) | nueva hoja con la talla final por etapa (Refinamiento 4/6/8/12, Investigación 6/11/16/33, Definición 4/6/8/12, Diseño 6/9/14/24, Pruebas 2/4/6/18, Acompañamiento 5/6/8/21; TOTAL 27/42/60/120; equivalencia 1.4/2.1/3/6 meses) | normal | aplicado |
 | 2026-07-17T13:54:39 | Alejandro | SIZING-BD | Nuevo archivo | — (no existía) | Sizing_Behavioral_Design.xlsx: mismo formato que el Sizing.xlsx de Service Design (ETAPA/SUB-ETAPA/MÍNIMO/MÁXIMO/CON IA), calibrado con esos rangos como referencia y ajustado con datos reales del tablero BD; TOTAL REFINADO 20-75 días efectivos | normal | aplicado |
 | 2026-07-16T16:43:08 | Melissa | ANS-BD | Orden de columnas hoja principal | Base(días) → Monedas(del base) → Feedback(días) → Total(días); monedas no reflejaban el feedback | Base(días) → Feedback(días) → Total(días) → Monedas(del total, con fórmula); una sola pasada construyo→valido→total días→total monedas | normal | aplicado |
