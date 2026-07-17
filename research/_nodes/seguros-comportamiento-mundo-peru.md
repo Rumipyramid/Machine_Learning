@@ -294,3 +294,6 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de calidad de agentes
   conversacionales de IA]] — un chatbot con errores alimenta directamente el problema de
   desconfianza (§1.2-1.3) descrito aquí; ese node cubre cómo medirlo y diagnosticarlo.
+- [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del
+  mercado]] — el caso Vitality y la brecha de confianza en seguros de este node son parte
+  de la evidencia de negocio de ese.

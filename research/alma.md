@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-15.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-17.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -42,6 +42,8 @@ por afirmación cuando corresponda.
 | `fuentes/registro_fuentes.md` | Ledger de `cronista` — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 116+ filas existentes. |
 | `personas/` | Subsistema de código del modelo de personas sintéticas (`lapuerta`) — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `updates/` | Reportes quincenales de fortalecimiento del modelo — fuera del alcance de este hub, ver `CLAUDE.md` |
+| `lobo/opinion_experto.md` | Opinión de negocio acumulada del skill `lobo`, refinada diariamente contra el ledger de `cronista` — subsistema con su propia lógica de confianza/tope, fuera del alcance de este hub, ver `CLAUDE.md` |
+| `yopersona/perfil.md` | Perfil profesional del usuario (CV) — fuente de verdad para cartas de presentación y asesoría de carrera, fuera del alcance de este hub, ver `CLAUDE.md` |
 
 `_nodes/` es plano: nada de subcarpetas por tema.
 
@@ -58,6 +60,7 @@ por afirmación cuando corresponda.
 | `_nodes/material-visual-venta-consultiva.md` | Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección (empírico + negocio; pista social sin cobertura) | 2026-07-13 | v1.0 |
 | `_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan las organizaciones de venta fría a venta opt-in (seguros y sectores análogos): disparadores, impacto en volumen, tácticas puente | 2026-07-14 | v1.0 |
 | `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y frameworks para medir la calidad de un agente/chatbot de IA (usabilidad, métricas técnicas RAG, específicos de banca/seguros) | 2026-07-15 | v1.0 |
+| `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-17 | v1.1 (migrado desde `main` a Many Brains, ver nota de reconciliación abajo) |
 
 ---
 
@@ -79,12 +82,23 @@ por afirmación cuando corresponda.
 
 ## Bibliografía compartida
 
-`fuentes/registro_fuentes.md` (ledger de `cronista`, mantenido por ese skill) — 116+ fuentes
+`fuentes/registro_fuentes.md` (ledger de `cronista`, mantenido por ese skill) — 171+ fuentes
 (F-1...) citadas por ID desde cualquier node. Reglas de uso desde este hub:
 
 - Cada node cita fuentes por ID (`F-n`) en vez de repetir la referencia completa.
 - Al crear/actualizar un node con evidencia nueva, registrar la fuente en el ledger primero
   (skill `cronista`), luego citarla por ID en el node.
+
+**Nota de reconciliación (2026-07-17):** el PR de esta rama divergió de `main` — `main` nunca
+recibió la migración a Many Brains y avanzó en paralelo (skill `lobo`, `yopersona`, skill
+`contexto-peruano`, marketplace de plugins, e investigación propia de behavioral design con
+IDs F-16 a F-27 del ledger). Al reconciliar: los flat files que `main` mantenía
+(`seguros_comportamiento_mundo_peru.md`, `glosario_seguro_salud_peru.md`) eran superset-subset
+exactos de los nodes ya migrados — se descartaron sin pérdida de contenido.
+`behavioral_design_360.md` era investigación nueva y real — se migró como
+`_nodes/behavioral-design-estado-disciplina.md`, conservando sus IDs F-16 a F-27 sin cambio.
+Los IDs F-16 a F-27 que esta rama había asignado a otra investigación (rentabilidad P/C,
+telemática, seguros paramétricos) se renumeraron a F-160 a F-171 para no chocar — ver ledger.
 
 ---
 

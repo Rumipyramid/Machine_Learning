@@ -155,3 +155,6 @@ estadounidense — buena señal para el diseño de
   node (mercado global por ramo) es el punto de partida cuantitativo de este; el NPS de ChenMed
   (§3 aquí) se compara contra el NPS de aseguradoras documentado ahí (§7.2).
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base.
+- [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del
+  mercado]] — Discovery Vitality aparece en ambos: ahí como caso de referencia de
+  behavioral design aplicado a seguros, aquí como mecanismo que navega presión de costo.

@@ -56,7 +56,7 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 | **tenencia_seguro** | score logístico: NSE + edu. financiera + sesgo presente (−) + confianza | any-insurance ≈ 0.40 | dato (SBS ~4/10) |
 | **seguro_desastres_naturales** | base 3.3% × NSE × exposición × tenencia | ≈ 0.033 | dato (APESEG) |
 | **wtp_ratio** | gaussiana: no asegurado μ≈0.66 · asegurado μ≈1.05 | — | dato (literatura WTP) |
-| **disposicion_compartir_datos_pricing** | tabla condicional: `apertura_datos_ia` × `confianza_aseguradora` → {alta/media/baja} | marginal implícita ≈ 0.15 "alta" | supuesto ajustado por analogía internacional (F-22, F-23) |
+| **disposicion_compartir_datos_pricing** | tabla condicional: `apertura_datos_ia` × `confianza_aseguradora` → {alta/media/baja} | marginal implícita ≈ 0.15 "alta" | supuesto ajustado por analogía internacional (F-166, F-167) |
 
 **`disposicion_compartir_datos_pricing`** (nueva en v1.3): separa la confianza **abstracta**
 en IA (`apertura_datos_ia`, que en Gen Z llega a "alta" 55%) de la disposición **conductual**
@@ -65,7 +65,7 @@ usage-based insurance o triage con IA. La brecha entre ambas está documentada
 internacionalmente: en el Reino Unido, 62% de los conductores está preocupado por compartir
 sus datos de manejo y solo 32% se siente cómodo con que el asegurador recolecte telemática, y
 la adopción real de telemática es de solo ~12% pese a intenciones declaradas más altas
-(Insurance Business Mag 2026; Carrier Management 2026 — F-22, F-23). Incluso en el segmento
+(Insurance Business Mag 2026; Carrier Management 2026 — F-166, F-167). Incluso en el segmento
 más favorable del modelo (`apertura_datos_ia=alta` + `confianza_aseguradora=confía_plena`),
 el techo de "alta" disposición se calibró en 45%, no en 90%+, precisamente para capturar esa
 brecha. La marginal implícita resultante (~15%) es consistente con el orden de magnitud de
@@ -73,7 +73,7 @@ adopción real observado en mercados más maduros que el peruano.
 
 ⚠️ **Riesgo reputacional no modelado dinámicamente**: un evento de comunicación no transparente
 sobre IA en siniestros (caso Lemonade 2021: acusación viral de "fisonomía" algorítmica tras un
-hilo de Twitter — F-24) puede erosionar `confianza_aseguradora` de forma abrupta en el segmento
+hilo de Twitter — F-168) puede erosionar `confianza_aseguradora` de forma abrupta en el segmento
 expuesto, arrastrando hacia abajo esta variable. El generador no simula shocks temporales; se
 documenta aquí como advertencia cualitativa para el diseño de producto (transparencia en cómo
 se usa la IA en claims es condición previa para conseguir datos, no un extra opcional).
