@@ -15,14 +15,16 @@
 */
 
 :root {
-  /* paleta pastel única de la UI */
-  --rosa: #ffd6e8;
-  --lila: #e2d7ff;
-  --celeste: #d3f2ff;
-  --vainilla: #fff6e8;
-  --crema: #fffaf4;          /* fondo de ventanas */
-  --tinta: #6b5570;          /* la "tinta negra" del System 1, en morado apagado */
-  --tinta-suave: #a68fac;    /* texto secundario */
+  /* paleta 90s: los pasteles de los juguetes — más saturados y golosos
+     (bubblegum, menta, lavanda de My Little Pony, mantequilla, aqua) */
+  --rosa: #ffb3d9;
+  --lila: #d4bdff;
+  --celeste: #a8e8ff;
+  --menta: #b0f2cd;
+  --vainilla: #fff0b3;
+  --crema: #fffaf0;          /* fondo de ventanas */
+  --tinta: #5c4370;          /* la "tinta negra" del System 1, en morado juguete */
+  --tinta-suave: #a186b3;    /* texto secundario */
   --fuente-pixel: 'PixelFont', 'Courier New', monospace;
 }
 
@@ -75,9 +77,32 @@ body {
 }
 
 .titulo-sitio {
-  font-size: 14px;
+  font-size: 22px; /* el nombre del altar merece presencia */
   color: var(--tinta);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 var(--crema);
+}
+
+/* ---------- hint de navegación (abajo, titilando cuando estás quieta) ---------- */
+.ayuda-nav {
+  position: absolute;
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: var(--tinta);
+  background: var(--crema);
+  border: 1px solid var(--tinta);
+  padding: 4px 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+}
+
+.ayuda-nav.visible {
+  opacity: 0.55; /* baja opacidad: presente, sin gritar */
+  animation: parpadear 1.6s steps(2, start) infinite;
 }
 
 /* ---------- botones System 1: rectángulo redondeado PLANO ---------- */

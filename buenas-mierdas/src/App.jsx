@@ -4,10 +4,13 @@ import { useEffect, useState } from 'react'
 import Cielo, { COLORES } from './scene/Cielo.jsx'
 import ConstelacionGifs from './scene/ConstelacionGifs.jsx'
 import Velos from './scene/Velos.jsx'
+import Brillitos from './scene/Brillitos.jsx'
 import Afecto from './scene/Afecto.jsx'
 import ControlesCamara from './scene/ControlesCamara.jsx'
 import VentanaRetro from './ui/VentanaRetro.jsx'
 import PantallaCarga from './ui/PantallaCarga.jsx'
+import AyudaNavegacion from './ui/AyudaNavegacion.jsx'
+import { alternarMusica } from './lib/musica.js'
 import Tutorial from './ui/Tutorial.jsx'
 import Buscador from './ui/Buscador.jsx'
 import VistaDetalle from './ui/VistaDetalle.jsx'
@@ -29,6 +32,7 @@ export default function App() {
   const [destino, setDestino] = useState(null)
   const [reapropiaciones, setReapropiaciones] = useState({})
   const [pulsos, setPulsos] = useState({})
+  const [musicaSonando, setMusicaSonando] = useState(false)
 
   const t = TEXTOS[idioma]
 
@@ -93,9 +97,10 @@ export default function App() {
 
           <Cielo />
           <Velos cantidad={10} />
-          <Sparkles count={220} scale={[70, 40, 70]} size={4} speed={0.35} color="#ffd9f2" opacity={0.8} />
-          <Sparkles count={120} scale={[50, 30, 50]} size={2.5} speed={0.2} color="#c9f6ff" opacity={0.6} />
-          <Sparkles count={80} scale={[36, 24, 36]} size={7} speed={0.5} color="#fff3c9" opacity={0.5} />
+          {/* glitter titilante de tamaños variados (un draw call) + polvo en deriva */}
+          <Brillitos cantidad={750} />
+          <Brillitos cantidad={300} alcance={[80, 35, 80]} semilla={29} />
+          <Sparkles count={200} scale={[70, 40, 70]} size={4} speed={0.35} color="#ffd9f2" opacity={0.7} />
           <ConstelacionGifs />
 
           {afectos.map((a) => (
@@ -127,6 +132,13 @@ export default function App() {
               <header className="barra-superior">
                 <span className="titulo-sitio">✦ buenas mierdas ✦</span>
                 <span>
+                  <button
+                    className="boton-retro"
+                    onClick={async () => setMusicaSonando(await alternarMusica())}
+                    aria-label="música"
+                  >
+                    {musicaSonando ? '❚❚' : '♪ ▶'}
+                  </button>{' '}
                   <button className="boton-retro" onClick={() => setBuscadorAbierto(true)}>
                     {t.botonBuscar}
                   </button>{' '}
@@ -139,6 +151,8 @@ export default function App() {
               <button className="boton-retro boton-subir" onClick={() => setPantalla('subir')}>
                 {t.botonSubir}
               </button>
+
+              <AyudaNavegacion />
             </>
           )}
 

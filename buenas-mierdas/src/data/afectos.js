@@ -92,15 +92,19 @@ export const AFECTOS = [
     forma: 'dodecaedro',
     color: '#ffd6e8',
   },
-  // ejemplo con .glb (descomenta cuando pongas tu archivo en public/modelos/):
-  // {
-  //   id: 'a9',
-  //   nombre: 'mi primer escaneo',
-  //   historia: 'Escaneado con Polycam en la sala.',
-  //   ubicacion: 'mi sala',
-  //   tags: ['prueba'],
-  //   posicion: [-39, 8, 31],
-  //   glb: '/modelos/mi_escaneo.glb',
-  //   color: '#ffffff',
-  // },
+  // ejemplo REAL con .glb: la palta CC0 de los samples oficiales de glTF,
+  // comprimida de 8.3 MB a 0.6 MB con gltf-transform (así se verán los
+  // escaneos). `escala` agranda modelos que vienen en tamaño real.
+  {
+    id: 'a9',
+    nombre: 'palta de muestra',
+    historia: 'No es una ruina de nadie todavía: es la palta de prueba que demuestra que los escaneos pueden vivir aquí.',
+    ubicacion: 'los ejemplos oficiales de glTF (CC0)',
+    tags: ['prueba', 'glb', 'fruta'],
+    posicion: [-39, 8, 31],
+    glb: '/modelos/palta.glb',
+    escala: 34,
+    forma: 'esfera',
+    color: '#b8e6c9',
+  },
 ]
