@@ -73,9 +73,13 @@ buenas-mierdas/
 - [x] **Fase 2** — Navegación 3D completa (volar con teclado + pan), tutorial de controles,
       buscador Ctrl+F con vuelo de cámara, afectos con vista de detalle, contador de
       reapropiaciones + destello, soporte `.glb` con carga perezosa por distancia
-- [ ] Fase 3 — Backend Pocketbase local + formulario de subida (drag & drop)
+- [x] **Fase 3** — Formulario "Subir un afecto" (drag & drop + campos + validación),
+      instrucciones de escaneo, confirmación con vuelo a la coordenada nueva, y backend
+      Pocketbase (ver `backend/README.md`) con modo ensayo automático si está apagado.
+      Además: cielo gaseoso (ruido fbm + grano + glitter en shader), velos de vapor
+      translúcidos, y rediseño UI a Mac OS clásico en pasteles.
 - [ ] Fase 4 — Reapropiación visual acumulada (grietas/mugre) y consagración persistente
-- [ ] Fase 5 — Pantallas de carga e idioma, música 8-bits, instrucciones de escaneo
+- [ ] Fase 5 — Pantallas de carga e idioma, música 8-bits
 - [ ] Fase 6 — Cloudflare Tunnel + moderación de textos
 
 ## Stack
