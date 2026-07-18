@@ -32,28 +32,50 @@ buenas-mierdas/
 ├── vite.config.js          ← configuración de Vite
 ├── public/
 │   ├── gifs/               ← AQUÍ van tus GIFs de GifCities
+│   ├── modelos/            ← AQUÍ van tus .glb escaneados (ver su LEEME.txt)
 │   └── fonts/              ← aquí irá la fuente pixelada (.woff2)
 └── src/
     ├── main.jsx            ← arranca React
-    ├── App.jsx             ← el lienzo 3D + la UI 2D superpuesta
+    ├── App.jsx             ← el lienzo 3D + la UI 2D + el flujo de pantallas
+    ├── data/
+    │   └── afectos.js      ← catálogo de objetos del altar (editable a mano)
     ├── styles/
     │   └── global.css      ← estética Windows 95 / web vernácula
     ├── scene/              ← todo lo que vive DENTRO del 3D
     │   ├── Cielo.jsx       ← esfera-cielo con degradé pastel (shader)
     │   ├── ConstelacionGifs.jsx  ← reparte billboards por el cielo
     │   ├── GifBillboard.jsx      ← GIF animado como sprite 3D
-    │   └── EstrellaPixel.jsx     ← estrellita procedural de relleno
+    │   ├── EstrellaPixel.jsx     ← estrellita procedural de relleno
+    │   ├── Afecto.jsx            ← objeto del altar (.glb o forma, hover, destello)
+    │   └── ControlesCamara.jsx   ← orbitar + pan + volar con teclado + vuelo automático
     └── ui/                 ← componentes HTML que flotan sobre el canvas
-        └── VentanaRetro.jsx      ← ventana estilo Win95 reutilizable
+        ├── VentanaRetro.jsx      ← ventana estilo Win95 reutilizable
+        ├── Tutorial.jsx          ← guía de controles + botón Start
+        ├── Buscador.jsx          ← Ctrl+F: índice con filtro y vuelo de cámara
+        └── VistaDetalle.jsx      ← ficha del afecto + botón Reapropiar
 ```
+
+## Controles
+
+| Acción | Cómo |
+|---|---|
+| Girar alrededor | arrastrar con clic izquierdo |
+| Desplazarse de lado | arrastrar con clic derecho |
+| Acercarse / alejarse | rueda del mouse |
+| Volar | `W` `A` `S` `D` o flechas |
+| Subir / bajar | `Q` / `E` |
+| Buscar un afecto | `Ctrl + F` (la cámara vuela sola al elegido) |
+| Ver la historia de un objeto | clic sobre él |
 
 ## Fases del proyecto
 
 - [x] **Fase 1** — Cielo infinito: fog, degradé pastel, brillitos, billboards de GIFs, UI retro base
-- [ ] Fase 2 — Carga de `.glb` (objetos escaneados) + vista de detalle
+- [x] **Fase 2** — Navegación 3D completa (volar con teclado + pan), tutorial de controles,
+      buscador Ctrl+F con vuelo de cámara, afectos con vista de detalle, contador de
+      reapropiaciones + destello, soporte `.glb` con carga perezosa por distancia
 - [ ] Fase 3 — Backend Pocketbase local + formulario de subida (drag & drop)
-- [ ] Fase 4 — Reapropiación visual (grietas/glitch, consagración a las 100)
-- [ ] Fase 5 — Buscador Ctrl+F + vuelo de cámara
+- [ ] Fase 4 — Reapropiación visual acumulada (grietas/mugre) y consagración persistente
+- [ ] Fase 5 — Pantallas de carga e idioma, música 8-bits, instrucciones de escaneo
 - [ ] Fase 6 — Cloudflare Tunnel + moderación de textos
 
 ## Stack

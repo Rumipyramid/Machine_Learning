@@ -153,6 +153,136 @@ body {
   margin-top: 12px;
 }
 
+/* ---------- tutorial (tabla de controles) ---------- */
+.tabla-controles {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.tabla-controles td {
+  padding: 5px 8px;
+  border-bottom: 1px dotted var(--gris-oscuro);
+  font-size: 12px;
+}
+
+.tabla-controles td:first-child {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.boton-start {
+  font-size: 14px;
+  padding: 8px 26px;
+}
+
+/* ---------- buscador ---------- */
+.input-retro {
+  font-family: var(--fuente-pixel);
+  font-size: 13px;
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: 2px solid;
+  border-color: var(--gris-oscuro) #ffffff #ffffff var(--gris-oscuro);
+  outline: none;
+}
+
+.lista-afectos {
+  max-height: 45vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-afecto {
+  font-family: var(--fuente-pixel);
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  grid-template-areas:
+    'muestra nombre coords'
+    'muestra tags tags';
+  align-items: center;
+  gap: 2px 8px;
+  text-align: left;
+  padding: 6px 8px;
+  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid var(--gris-oscuro);
+  cursor: pointer;
+}
+
+.item-afecto:hover {
+  background: var(--celeste);
+}
+
+.muestra-color {
+  grid-area: muestra;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--gris-oscuro);
+  image-rendering: pixelated;
+}
+
+.item-nombre {
+  grid-area: nombre;
+  font-weight: bold;
+}
+
+.item-coords {
+  grid-area: coords;
+  color: var(--gris-oscuro);
+  font-size: 11px;
+}
+
+.item-tags {
+  grid-area: tags;
+}
+
+.chip-tag {
+  display: inline-block;
+  font-size: 10px;
+  background: var(--rosa);
+  border: 1px solid var(--gris-oscuro);
+  padding: 1px 5px;
+  margin-right: 4px;
+}
+
+.sin-resultados {
+  color: var(--gris-oscuro);
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* ---------- vista de detalle ---------- */
+.detalle-campo {
+  margin-bottom: 8px;
+}
+
+.contador-reapropiaciones {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.consagrado {
+  color: #a06a00;
+  font-weight: bold;
+  animation: parpadear 1.2s steps(2, start) infinite;
+}
+
+.botones-detalle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
 /* ---------- textito que parpadea, muy geocities ---------- */
 .parpadeo {
   animation: parpadear 1.2s steps(2, start) infinite;
