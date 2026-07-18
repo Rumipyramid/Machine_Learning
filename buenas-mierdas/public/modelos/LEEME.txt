@@ -1,0 +1,15 @@
+Pon aquí tus modelos 3D escaneados (.glb) para probarlos en el altar.
+
+Cómo escanear (gratis, con el celular):
+  1. Descarga Polycam (iPhone/Android). Alternativas: Luma AI, Kiri Engine.
+  2. Escanea tu objeto dándole la vuelta despacio con la cámara.
+  3. Exporta como GLB. Si te deja elegir calidad, elige la MÁS BAJA
+     (lo tosco es parte de la estética, y carga más rápido).
+  4. Pasa el archivo a esta carpeta, ej: public/modelos/taza.glb
+
+Luego regístralo en  src/data/afectos.js  agregando un objeto a la lista
+(hay un ejemplo comentado al final del archivo): pon glb: '/modelos/taza.glb'
+y las coordenadas posicion: [x, y, z] donde quieras que flote.
+
+Consejo de peso: si tu .glb pesa más de ~5 MB, la carga se sentirá lenta.
+En la Fase 3 la compresión será automática al subir; por ahora exporta en baja.
