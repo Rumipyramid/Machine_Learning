@@ -89,6 +89,20 @@ const fragmentShader = /* glsl */ `
   }
 `
 
+// ---------------------------------------------------------------------------
+// EL MUNDO CAMBIA MIENTRAS LO EXPLORAS: hay tres "climas" pastel repartidos
+// por el espacio. Cerca del origen reina el alba rosa; volando hacia un lado
+// el cielo se vuelve celeste-menta; hacia el otro, durazno-lavanda. La
+// transición es un fundido lento según la posición de la cámara, y la
+// niebla siempre acompaña el color del horizonte (por eso nunca se nota
+// dónde termina el mundo).
+// ---------------------------------------------------------------------------
+const CLIMAS = [
+  { cenit: '#b8a9f0', horizonte: '#ffd6e8', nadir: '#cdefff' }, // origen: alba rosa
+  { cenit: '#93cfe8', horizonte: '#d6f4ff', nadir: '#e2ffee' }, // lejos, lado A: celeste-menta
+  { cenit: '#d9a9c9', horizonte: '#ffe4cf', nadir: '#f2d9ff' }, // lejos, lado B: durazno-lavanda
+]
+
 export default function Cielo() {
   const uniforms = useMemo(
     () => ({
@@ -102,8 +116,48 @@ export default function Cielo() {
     [],
   )
 
-  useFrame(({ clock }) => {
+  // paletas y colores temporales (se crean una sola vez, se reusan cada cuadro)
+  const clima = useMemo(
+    () => ({
+      paletas: CLIMAS.map((c) => ({
+        cenit: new THREE.Color(c.cenit),
+        horizonte: new THREE.Color(c.horizonte),
+        nadir: new THREE.Color(c.nadir),
+      })),
+      objetivo: {
+        cenit: new THREE.Color(),
+        horizonte: new THREE.Color(),
+        nadir: new THREE.Color(),
+      },
+    }),
+    [],
+  )
+
+  useFrame(({ clock, camera, scene }) => {
     uniforms.uTiempo.value = clock.elapsedTime
+
+    // ¿en qué zona del mundo estás? (0 = origen; lejos, según el ángulo)
+    const distancia = Math.min(1, camera.position.length() / 42)
+    const angulo = Math.atan2(camera.position.z, camera.position.x)
+    let pesoA = distancia * (0.5 + 0.5 * Math.sin(angulo))
+    let pesoB = distancia * (0.5 + 0.5 * Math.cos(angulo + 2.1))
+    const pesoOrigen = Math.max(0, 1 - pesoA - pesoB)
+
+    const [p0, pA, pB] = clima.paletas
+    for (const capa of ['cenit', 'horizonte', 'nadir']) {
+      clima.objetivo[capa]
+        .copy(p0[capa]).multiplyScalar(pesoOrigen)
+        .add(pA[capa].clone().multiplyScalar(pesoA))
+        .add(pB[capa].clone().multiplyScalar(pesoB))
+    }
+
+    // fundido suave hacia el clima de la zona (2% por cuadro)
+    uniforms.uCenit.value.lerp(clima.objetivo.cenit, 0.02)
+    uniforms.uHorizonte.value.lerp(clima.objetivo.horizonte, 0.02)
+    uniforms.uNadir.value.lerp(clima.objetivo.nadir, 0.02)
+
+    // la niebla acompaña SIEMPRE al horizonte: el mundo cambia entero
+    if (scene.fog) scene.fog.color.copy(uniforms.uHorizonte.value)
   })
 
   return (
