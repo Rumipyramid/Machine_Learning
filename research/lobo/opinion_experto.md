@@ -178,6 +178,17 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   de negocio grande (pricing, entrada a categoría, pitch a inversionista) sobre
   tesis 3 o 4 —las dos más frágiles del set—, correr `/seeker` o `/marketer`
   antes de usarlas, no asumir que "nadie las refutó" equivale a "siguen firmes".
+- **Esperar pasivamente a que aparezca evidencia nueva ya no es gratis.** *Instinto*:
+  con seis días seguidos sin corridas de `/seeker`, `/gossip`, `/marketer` ni
+  `/trinidad`, el costo de oportunidad ya no es "la cartera está desactualizada"
+  sino "nadie está encargando el insumo que la actualizaría". La jugada correcta
+  no es seguir revisando el mismo ledger cada día esperando que cambie solo —es
+  encargar explícitamente dos búsquedas puntuales: (a) `/seeker` sobre
+  comprensión de seguros en Gen Z/millennials peruanos o latinoamericanos
+  (cierra tesis 3), y (b) `/marketer` o `/seeker` sobre el dato primario de
+  APESEG/SBS de penetración de seguros contra desastres (cierra tesis 4). Hasta
+  que eso ocurra, tesis 3 y 4 deben tratarse como **congeladas en Media**, no
+  como candidatas a subir por defecto de antigüedad.
 
 ## 📔 Bitácora
 
@@ -264,3 +275,16 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   estancamiento del ledger (ya señalada como riesgo el 2026-07-16) sigue
   siendo la observación de portafolio más relevante — cinco días sin
   evidencia nueva es la señal en sí misma, no solo la ausencia de una.
+- **2026-07-18** — Sin cambios sustanciales: sexto día consecutivo con el
+  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
+  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
+  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
+  confianza. Cambié el tono del riesgo de estancamiento: ya no es solo una
+  observación de portafolio, es una llamada a la acción concreta — encargar
+  `/seeker` sobre comprensión de seguros en Gen Z/millennials peruanos (cierra
+  tesis 3) y el dato primario de APESEG/SBS sobre penetración sísmica (cierra
+  tesis 4), en vez de seguir revisando el mismo ledger esperando que cambie
+  solo. Formalicé que tesis 3 y 4 quedan **congeladas en Media** hasta que
+  llegue esa evidencia — no suben por antigüedad ni por repetición de la
+  revisión diaria. Bitácora dentro de la ventana de ~30 días; no hubo entradas
+  que podar.
