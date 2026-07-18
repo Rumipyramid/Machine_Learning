@@ -1,31 +1,20 @@
 import VentanaRetro from './VentanaRetro.jsx'
+import { useTexto } from '../lib/idioma.js'
 
 // Pantalla 7: cómo escanear tu objeto con el celular (DIY, gratis).
 export default function InstruccionesEscaneo({ onVolver }) {
+  const { t } = useTexto()
   return (
-    <VentanaRetro titulo="como_escanear.txt" onCerrar={onVolver}>
-      <p>
-        <b>1.</b> Descarga <b>Polycam</b> en tu celular (también sirven Luma AI
-        o Kiri Engine — todas tienen modo gratis).
-      </p>
-      <p>
-        <b>2.</b> Pon tu objeto sobre una mesa con buena luz y dale la vuelta
-        despacio con la cámara, como si lo acariciaras con la mirada. Entre 20
-        y 50 fotos alcanzan.
-      </p>
-      <p>
-        <b>3.</b> Exporta como <b>GLB</b>. Si te deja elegir calidad, elige la
-        MÁS BAJA: lo tosco y lo roto son parte de la estética de este altar, y
-        además carga rápido.
-      </p>
-      <p>
-        <b>4.</b> Pásate el archivo a la computadora (correo, WhatsApp,
-        cable…) y arrástralo al formulario.
-      </p>
-      <p className="parpadeo">▸ las ruinas no necesitan verse perfectas</p>
+    <VentanaRetro titulo={t.escaneoTitulo} onCerrar={onVolver}>
+      {t.escaneoPasos.map((paso, i) => (
+        <p key={i}>
+          <b>{i + 1}.</b> {paso}
+        </p>
+      ))}
+      <p className="parpadeo">{t.escaneoLema}</p>
       <div className="centrado">
         <button className="boton-retro" onClick={onVolver}>
-          ← volver al formulario
+          {t.escaneoVolver}
         </button>
       </div>
     </VentanaRetro>

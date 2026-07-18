@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import VentanaRetro from './VentanaRetro.jsx'
+import { useTexto } from '../lib/idioma.js'
 
 // ---------------------------------------------------------------------------
-// Buscador (pantalla 5): se abre con Ctrl+F o con el botón 🔍.
-// Índice visual de afectos: muestrita de color, nombre, coordenadas X,Y,Z
-// y tags. Puedes filtrar escribiendo. Al hacer clic en uno, la cámara
-// vuela automáticamente hacia él.
+// Buscador (pantalla 5): se abre con Ctrl+F o con el botón ⌕.
+// Índice visual de afectos; al hacer clic la cámara vuela hacia el elegido.
 // ---------------------------------------------------------------------------
 
 export default function Buscador({ afectos, onVolar, onCerrar }) {
+  const { t } = useTexto()
   const [filtro, setFiltro] = useState('')
 
   const texto = filtro.trim().toLowerCase()
@@ -20,20 +20,18 @@ export default function Buscador({ afectos, onVolar, onCerrar }) {
   )
 
   return (
-    <VentanaRetro titulo="buscar_afecto.exe" onCerrar={onCerrar}>
+    <VentanaRetro titulo={t.buscadorTitulo} onCerrar={onCerrar}>
       <input
         className="input-retro"
         type="text"
-        placeholder="escribe un nombre o etiqueta…"
+        placeholder={t.buscadorPlaceholder}
         value={filtro}
         onChange={(e) => setFiltro(e.target.value)}
         autoFocus
       />
 
       <div className="lista-afectos">
-        {resultados.length === 0 && (
-          <p className="sin-resultados">no se encontró ese afecto…</p>
-        )}
+        {resultados.length === 0 && <p className="sin-resultados">{t.buscadorVacio}</p>}
         {resultados.map((a) => (
           <button key={a.id} className="item-afecto" onClick={() => onVolar(a)}>
             <span className="muestra-color" style={{ background: a.color }} />

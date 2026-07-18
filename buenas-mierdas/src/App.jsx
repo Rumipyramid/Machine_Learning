@@ -7,6 +7,7 @@ import Velos from './scene/Velos.jsx'
 import Afecto from './scene/Afecto.jsx'
 import ControlesCamara from './scene/ControlesCamara.jsx'
 import VentanaRetro from './ui/VentanaRetro.jsx'
+import PantallaCarga from './ui/PantallaCarga.jsx'
 import Tutorial from './ui/Tutorial.jsx'
 import Buscador from './ui/Buscador.jsx'
 import VistaDetalle from './ui/VistaDetalle.jsx'
@@ -14,11 +15,13 @@ import FormularioSubida from './ui/FormularioSubida.jsx'
 import InstruccionesEscaneo from './ui/InstruccionesEscaneo.jsx'
 import Confirmacion from './ui/Confirmacion.jsx'
 import { cargarAfectos, registrarReapropiacion } from './lib/api.js'
+import { IdiomaContext, TEXTOS } from './lib/idioma.js'
 
 export default function App() {
-  // flujo de pantallas: manifiesto → tutorial → null (altar libre)
+  // flujo de pantallas: carga → manifiesto → tutorial → null (altar libre)
   // además: 'subir', 'instrucciones', 'confirmacion'
-  const [pantalla, setPantalla] = useState('manifiesto')
+  const [pantalla, setPantalla] = useState('carga')
+  const [idioma, setIdioma] = useState('es')
   const [afectos, setAfectos] = useState([])
   const [nuevoAfecto, setNuevoAfecto] = useState(null)
   const [buscadorAbierto, setBuscadorAbierto] = useState(false)
@@ -26,6 +29,8 @@ export default function App() {
   const [destino, setDestino] = useState(null)
   const [reapropiaciones, setReapropiaciones] = useState({})
   const [pulsos, setPulsos] = useState({})
+
+  const t = TEXTOS[idioma]
 
   // al abrir: cargar los afectos (de Pocketbase si está encendido, si no del navegador)
   useEffect(() => {
@@ -74,108 +79,115 @@ export default function App() {
   }
 
   return (
-    <div className="app">
-      {/* ---------- EL LIENZO 3D (el altar) ---------- */}
-      <Canvas
-        dpr={[1, 1.5]}
-        camera={{ position: [0, 3, 14], fov: 55, near: 0.1, far: 400 }}
-        gl={{ antialias: false }}
-      >
-        <fog attach="fog" args={[COLORES.horizonte, 15, 120]} />
-        <ambientLight intensity={0.9} color={COLORES.luzAmbiente} />
-        <directionalLight position={[5, 10, 5]} intensity={0.7} color={COLORES.luzSol} />
+    <IdiomaContext.Provider value={{ idioma, t }}>
+      <div className="app">
+        {/* ---------- EL LIENZO 3D (el altar) ---------- */}
+        <Canvas
+          dpr={[1, 1.5]}
+          camera={{ position: [0, 3, 14], fov: 55, near: 0.1, far: 400 }}
+          gl={{ antialias: false }}
+        >
+          <fog attach="fog" args={[COLORES.horizonte, 15, 120]} />
+          <ambientLight intensity={0.9} color={COLORES.luzAmbiente} />
+          <directionalLight position={[5, 10, 5]} intensity={0.7} color={COLORES.luzSol} />
 
-        <Cielo />
-        <Velos cantidad={10} />
-        {/* glitter en capas: partículas de tres tamaños y colores */}
-        <Sparkles count={220} scale={[70, 40, 70]} size={4} speed={0.35} color="#ffd9f2" opacity={0.8} />
-        <Sparkles count={120} scale={[50, 30, 50]} size={2.5} speed={0.2} color="#c9f6ff" opacity={0.6} />
-        <Sparkles count={80} scale={[36, 24, 36]} size={7} speed={0.5} color="#fff3c9" opacity={0.5} />
-        <ConstelacionGifs />
+          <Cielo />
+          <Velos cantidad={10} />
+          <Sparkles count={220} scale={[70, 40, 70]} size={4} speed={0.35} color="#ffd9f2" opacity={0.8} />
+          <Sparkles count={120} scale={[50, 30, 50]} size={2.5} speed={0.2} color="#c9f6ff" opacity={0.6} />
+          <Sparkles count={80} scale={[36, 24, 36]} size={7} speed={0.5} color="#fff3c9" opacity={0.5} />
+          <ConstelacionGifs />
 
-        {afectos.map((a) => (
-          <Afecto
-            key={a.id}
-            afecto={a}
-            reapropiaciones={reapropiaciones[a.id] || 0}
-            pulso={pulsos[a.id] || 0}
-            onClick={setSeleccionado}
-          />
-        ))}
+          {afectos.map((a) => (
+            <Afecto
+              key={a.id}
+              afecto={a}
+              reapropiaciones={reapropiaciones[a.id] || 0}
+              pulso={pulsos[a.id] || 0}
+              onClick={setSeleccionado}
+            />
+          ))}
 
-        <ControlesCamara destino={destino} onFinDeVuelo={() => setDestino(null)} />
-      </Canvas>
+          <ControlesCamara destino={destino} onFinDeVuelo={() => setDestino(null)} />
+        </Canvas>
 
-      {/* ---------- LA UI 2D (HTML plano flotando encima) ---------- */}
-      <div className="ui-overlay">
-        <header className="barra-superior">
-          <span className="titulo-sitio">✦ buenas mierdas ✦</span>
-          <span>
-            <button className="boton-retro" onClick={() => setBuscadorAbierto(true)}>
-              🔍 buscar
-            </button>{' '}
-            <button className="boton-retro" onClick={() => setPantalla('manifiesto')}>
-              manifiesto.txt
-            </button>
-          </span>
-        </header>
+        {/* ---------- LA UI 2D (HTML plano flotando encima) ---------- */}
+        <div className="ui-overlay">
+          {pantalla === 'carga' && (
+            <PantallaCarga
+              onElegirIdioma={(codigo) => {
+                setIdioma(codigo)
+                setPantalla('manifiesto')
+              }}
+            />
+          )}
 
-        <button className="boton-retro boton-subir" onClick={() => setPantalla('subir')}>
-          ⬆ Subir un afecto
-        </button>
+          {pantalla !== 'carga' && (
+            <>
+              <header className="barra-superior">
+                <span className="titulo-sitio">✦ buenas mierdas ✦</span>
+                <span>
+                  <button className="boton-retro" onClick={() => setBuscadorAbierto(true)}>
+                    {t.botonBuscar}
+                  </button>{' '}
+                  <button className="boton-retro" onClick={() => setPantalla('manifiesto')}>
+                    {t.botonManifiesto}
+                  </button>
+                </span>
+              </header>
 
-        {pantalla === 'manifiesto' && (
-          <VentanaRetro titulo="manifiesto.txt" onCerrar={() => setPantalla('tutorial')}>
-            <p>
-              Archivo de ruinas digitales y afectos reapropiados.
-              <br />
-              <br />
-              Contra el colonialismo de datos, este altar vive en una
-              computadora portátil. Aquí las cosas rotas, viejas y amadas
-              existen en un plano más allá del físico.
-            </p>
-            <p className="parpadeo">▸ cierra esta ventana para continuar</p>
-          </VentanaRetro>
-        )}
+              <button className="boton-retro boton-subir" onClick={() => setPantalla('subir')}>
+                {t.botonSubir}
+              </button>
+            </>
+          )}
 
-        {pantalla === 'tutorial' && <Tutorial onEmpezar={() => setPantalla(null)} />}
+          {pantalla === 'manifiesto' && (
+            <VentanaRetro titulo={t.manifiestoTitulo} onCerrar={() => setPantalla('tutorial')}>
+              <p style={{ whiteSpace: 'pre-line' }}>{t.manifiestoCuerpo}</p>
+              <p className="parpadeo">{t.manifiestoContinuar}</p>
+            </VentanaRetro>
+          )}
 
-        {pantalla === 'subir' && (
-          <FormularioSubida
-            onCreado={alCrearAfecto}
-            onCerrar={() => setPantalla(null)}
-            onInstrucciones={() => setPantalla('instrucciones')}
-          />
-        )}
+          {pantalla === 'tutorial' && <Tutorial onEmpezar={() => setPantalla(null)} />}
 
-        {pantalla === 'instrucciones' && (
-          <InstruccionesEscaneo onVolver={() => setPantalla('subir')} />
-        )}
+          {pantalla === 'subir' && (
+            <FormularioSubida
+              onCreado={alCrearAfecto}
+              onCerrar={() => setPantalla(null)}
+              onInstrucciones={() => setPantalla('instrucciones')}
+            />
+          )}
 
-        {pantalla === 'confirmacion' && nuevoAfecto && (
-          <Confirmacion
-            afecto={nuevoAfecto}
-            onIr={() => {
-              setPantalla(null)
-              volarHacia(nuevoAfecto)
-            }}
-          />
-        )}
+          {pantalla === 'instrucciones' && (
+            <InstruccionesEscaneo onVolver={() => setPantalla('subir')} />
+          )}
 
-        {buscadorAbierto && (
-          <Buscador afectos={afectos} onVolar={volarHacia} onCerrar={() => setBuscadorAbierto(false)} />
-        )}
+          {pantalla === 'confirmacion' && nuevoAfecto && (
+            <Confirmacion
+              afecto={nuevoAfecto}
+              onIr={() => {
+                setPantalla(null)
+                volarHacia(nuevoAfecto)
+              }}
+            />
+          )}
 
-        {seleccionado && (
-          <VistaDetalle
-            afecto={seleccionado}
-            reapropiaciones={reapropiaciones[seleccionado.id] || 0}
-            onReapropiar={() => reapropiar(seleccionado)}
-            onVolar={() => volarHacia(seleccionado)}
-            onCerrar={() => setSeleccionado(null)}
-          />
-        )}
+          {buscadorAbierto && (
+            <Buscador afectos={afectos} onVolar={volarHacia} onCerrar={() => setBuscadorAbierto(false)} />
+          )}
+
+          {seleccionado && (
+            <VistaDetalle
+              afecto={seleccionado}
+              reapropiaciones={reapropiaciones[seleccionado.id] || 0}
+              onReapropiar={() => reapropiar(seleccionado)}
+              onVolar={() => volarHacia(seleccionado)}
+              onCerrar={() => setSeleccionado(null)}
+            />
+          )}
+        </div>
       </div>
-    </div>
+    </IdiomaContext.Provider>
   )
 }

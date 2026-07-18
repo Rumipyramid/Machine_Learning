@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import VentanaRetro from './VentanaRetro.jsx'
 import { subirAfecto } from '../lib/api.js'
+import { useTexto } from '../lib/idioma.js'
 
 // ---------------------------------------------------------------------------
 // FormularioSubida (pantalla 8): drag & drop del .glb + los campos del afecto.
@@ -8,6 +9,7 @@ import { subirAfecto } from '../lib/api.js'
 // ---------------------------------------------------------------------------
 
 export default function FormularioSubida({ onCreado, onCerrar, onInstrucciones }) {
+  const { t } = useTexto()
   const inputArchivo = useRef()
   const [archivo, setArchivo] = useState(null)
   const [arrastrando, setArrastrando] = useState(false)
@@ -18,21 +20,21 @@ export default function FormularioSubida({ onCreado, onCerrar, onInstrucciones }
   const [error, setError] = useState('')
   const [subiendo, setSubiendo] = useState(false)
 
-  const recibirArchivo = (f) => {
-    if (!f) return
-    const nombreArchivo = f.name.toLowerCase()
+  const recibirArchivo = (archivoNuevo) => {
+    if (!archivoNuevo) return
+    const nombreArchivo = archivoNuevo.name.toLowerCase()
     if (!nombreArchivo.endsWith('.glb') && !nombreArchivo.endsWith('.gltf')) {
-      setError('Ese archivo no es un modelo 3D — necesito un .glb (exportado de Polycam o similar).')
+      setError(t.errorArchivo)
       return
     }
     setError('')
-    setArchivo(f)
+    setArchivo(archivoNuevo)
   }
 
   const enviar = async (e) => {
     e.preventDefault()
     if (!nombre.trim()) {
-      setError('Tu afecto necesita al menos un nombre.')
+      setError(t.errorNombre)
       return
     }
     setError('')
@@ -44,20 +46,20 @@ export default function FormularioSubida({ onCreado, onCerrar, onInstrucciones }
         historia: historia.trim(),
         tags: tags
           .split(',')
-          .map((t) => t.trim().replace(/^#/, '').toLowerCase())
+          .map((etiqueta) => etiqueta.trim().replace(/^#/, '').toLowerCase())
           .filter(Boolean),
         archivo,
       })
       onCreado(nuevo)
     } catch (err) {
       console.error(err)
-      setError('No se pudo subir. ¿El altar (Pocketbase) está encendido? Intenta de nuevo.')
+      setError(t.errorSubida)
       setSubiendo(false)
     }
   }
 
   return (
-    <VentanaRetro titulo="subir_un_afecto" onCerrar={onCerrar}>
+    <VentanaRetro titulo={t.subirTitulo} onCerrar={onCerrar}>
       <form onSubmit={enviar}>
         <div
           className={
@@ -72,11 +74,9 @@ export default function FormularioSubida({ onCreado, onCerrar, onInstrucciones }
             recibirArchivo(e.dataTransfer.files[0])
           }}
         >
-          {archivo ? (
-            <>📦 {archivo.name} ({Math.round(archivo.size / 1024)} KB) — clic para cambiar</>
-          ) : (
-            <>⬇ arrastra aquí tu escaneo .glb<br />(o haz clic para buscarlo)</>
-          )}
+          {archivo
+            ? `▣ ${archivo.name} (${Math.round(archivo.size / 1024)} KB) — ${t.subirDropCambiar}`
+            : t.subirDrop}
           <input
             ref={inputArchivo}
             type="file"
@@ -87,58 +87,58 @@ export default function FormularioSubida({ onCreado, onCerrar, onInstrucciones }
         </div>
 
         <p className="nota-form">
-          ¿todavía no escaneas tu objeto?{' '}
+          {t.subirNota1}{' '}
           <button type="button" className="enlace-retro" onClick={onInstrucciones}>
-            aprende a escanearlo aquí
+            {t.subirNota2}
           </button>{' '}
-          — también puedes subir solo la historia y el objeto flotará como forma pastel.
+          {t.subirNota3}
         </p>
 
         <div className="campo-form">
-          <label>nombre de tu afecto *</label>
+          <label>{t.subirNombre}</label>
           <input
             className="input-retro"
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
-            placeholder="taza despostillada de la abuela"
+            placeholder={t.subirNombreEj}
           />
         </div>
 
         <div className="campo-form">
-          <label>ubicación (texto libre — sin GPS, tu anonimato importa)</label>
+          <label>{t.subirUbicacion}</label>
           <input
             className="input-retro"
             value={ubicacion}
             onChange={(e) => setUbicacion(e.target.value)}
-            placeholder="cocina de una casa que ya no existe"
+            placeholder={t.subirUbicacionEj}
           />
         </div>
 
         <div className="campo-form">
-          <label>historia (el porqué)</label>
+          <label>{t.subirHistoria}</label>
           <textarea
             className="input-retro"
             value={historia}
             onChange={(e) => setHistoria(e.target.value)}
-            placeholder="por qué este objeto merece existir en otro plano…"
+            placeholder={t.subirHistoriaEj}
           />
         </div>
 
         <div className="campo-form">
-          <label>etiquetas (separadas por comas)</label>
+          <label>{t.subirTags}</label>
           <input
             className="input-retro"
             value={tags}
             onChange={(e) => setTags(e.target.value)}
-            placeholder="cerámica, familia, desayuno"
+            placeholder={t.subirTagsEj}
           />
         </div>
 
         {error && <p className="error-form">{error}</p>}
 
         <div className="centrado">
-          <button className="boton-retro boton-start" type="submit" disabled={subiendo}>
-            {subiendo ? 'subiendo…' : '✧ Situar en el altar'}
+          <button className="boton-retro boton-start boton-primario" type="submit" disabled={subiendo}>
+            {subiendo ? t.subirSubiendo : t.subirBoton}
           </button>
         </div>
       </form>

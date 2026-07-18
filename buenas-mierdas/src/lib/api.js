@@ -42,13 +42,13 @@ export function estaEnModoAltar() {
   return modoBackend === true
 }
 
-// coordenada nueva en el domo del altar
+// coordenada nueva en el domo del altar (bien espaciado: hay que explorar)
 function posicionNueva() {
   const angulo = Math.random() * Math.PI * 2
-  const radio = 12 + Math.random() * 22
+  const radio = 18 + Math.random() * 42
   return [
     Math.round(Math.cos(angulo) * radio * 10) / 10,
-    Math.round((1 + Math.random() * 13) * 10) / 10,
+    Math.round((1 + Math.random() * 26) * 10) / 10,
     Math.round(Math.sin(angulo) * radio * 10) / 10,
   ]
 }
