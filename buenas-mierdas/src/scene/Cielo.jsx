@@ -79,11 +79,16 @@ const fragmentShader = /* glsl */ `
     // 3) grano fino: rompe el degradé "perfecto", textura de ruido
     color += (hash(vDir * 380.0) - 0.5) * 0.045;
 
-    // 4) glitter: escarcha rala que titila con el tiempo
-    vec3 celda = floor(vDir * 240.0);
-    float esChispa = step(0.9982, hash(celda));
+    // 4) glitter: escarcha que titila, en DOS escalas (chispas finas y gordas)
+    vec3 celda = floor(vDir * 300.0);
+    float esChispa = step(0.9962, hash(celda));
     float titilar = 0.5 + 0.5 * sin(uTiempo * 2.5 + hash(celda + 5.0) * 6.2831);
-    color += esChispa * titilar * 0.30;
+    color += esChispa * titilar * 0.34;
+
+    vec3 celdaGorda = floor(vDir * 90.0);
+    float esChispaGorda = step(0.9975, hash(celdaGorda + 3.3));
+    float titilar2 = 0.5 + 0.5 * sin(uTiempo * 1.4 + hash(celdaGorda + 8.0) * 6.2831);
+    color += esChispaGorda * titilar2 * 0.28;
 
     gl_FragColor = vec4(color, 1.0);
   }

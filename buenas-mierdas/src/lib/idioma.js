@@ -75,6 +75,7 @@ export const TEXTOS = {
     confirmacionTexto: 'Tu afecto ahora existe en este plano.',
     confirmacionFlota: 'flota en',
     confirmacionIr: 'Ve con él →',
+    ayudaNav: 'arrastra para girar · W A S D para volar · Q / E subir y bajar · Ctrl+F para buscar',
   },
 
   en: {
@@ -145,6 +146,7 @@ export const TEXTOS = {
     confirmacionTexto: 'Your affect now exists on this plane.',
     confirmacionFlota: 'it floats at',
     confirmacionIr: 'Go with it →',
+    ayudaNav: 'drag to orbit · W A S D to fly · Q / E up and down · Ctrl+F to search',
   },
 
   de: {
@@ -215,6 +217,7 @@ export const TEXTOS = {
     confirmacionTexto: 'Dein Affekt existiert jetzt auf dieser Ebene.',
     confirmacionFlota: 'er schwebt bei',
     confirmacionIr: 'Geh mit ihm →',
+    ayudaNav: 'ziehen zum Kreisen · W A S D zum Fliegen · Q / E auf und ab · Strg+F zum Suchen',
   },
 }
 
