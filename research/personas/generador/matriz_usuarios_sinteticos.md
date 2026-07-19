@@ -35,6 +35,16 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 | **tenencia_vehiculo** | region | Lima → más auto; Sierra/Selva → más moto/mototaxi; ~52% ninguno | dato (2/10 con seguro; 4/5 motos sin SOAT) |
 | **acceso_digital** | region+nse+generacion | score → {alta/media/baja}; urbano/NSE alto/joven ↑ | dato (bancarización 59%; Yape/Plin) |
 | **bancarizado** | nse+region+acceso_digital | prob. logística; marginal ≈ 0.59 | dato (~59% adultos en sist. financiero) |
+| **trabajo_plataforma_digital** | situacion_laboral+generacion+acceso_digital | score logístico; marginal ≈ 0.07; joven+informal/independiente+alto acceso ↑ | dato (Bloomberg Línea/Pandape: ~113k repartidores, ~2M usuarios de apps) |
+
+> **v1.3 (2026-07-19):** se añadieron `trabajo_plataforma_digital` (booleano) y `propension_microseguro`
+> (derivada), únicas propuestas de prioridad **Alta** del reporte 2026-08-05 — incorporadas de forma
+> automática (ver `.claude/skills/cerrajero/`). Intercepto de `trabajo_plataforma_digital` recalibrado
+> de -2.2 (propuesto) a **-3.2**: el valor propuesto daba ≈15% de marginal (~2× el objetivo ~6-8% del
+> reporte) por el efecto de mezcla logística sobre el subsegmento joven+informal+alto acceso digital;
+> -3.2 la deja en 0.073. `propension_microseguro` no mueve `tenencia_seguro` (eje paralelo, por diseño:
+> any-insurance se mantiene en 0.401). Marginales tras incorporar: any-seguro ≈ 0.40, desconfía ≈ 0.45,
+> desastres ≈ 0.031, bancarizado ≈ 0.59 — todas dentro de tolerancia (`validate.py --check` → PASS).
 
 > **v1.2 (2026-07-21):** se añadió `cobertura_previsional` (AFP/ONP/ninguna), driver de `tenencia_seguro`.
 >
@@ -45,13 +55,13 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 > recalibración: any-seguro ≈ 0.41, desconfía ≈ 0.45, desastres ≈ 0.035, bancarizado ≈ 0.60.
 
 > **Pendientes de incorporar** — candidatas ya redactadas (evidencia + JSON propuesto) en
-> `research/updates/`, todavía no calibradas en el esquema. Ordenadas por prioridad declarada
-> en su reporte de origen:
+> `research/updates/`, todavía no calibradas en el esquema. Las de prioridad **Alta** ya no se
+> acumulan aquí: `cerrajero` las aplica automáticamente al esquema/generador y las re-valida en
+> el momento (ver nota v1.3 arriba); esta tabla queda para Media/Baja, que siguen requiriendo
+> revisión manual antes de incorporarse. Ordenadas por prioridad declarada en su reporte de origen:
 >
 > | Variable | Prioridad | Reporte | Nota |
 > |---|---|---|---|
-> | `trabajo_plataforma_digital` | Alta | 2026-08-05 | booleano nuevo; falta fijar intercepto y re-validar marginales |
-> | `propension_microseguro` | Alta | 2026-08-05 | derivada nueva; depende de `trabajo_plataforma_digital` |
 > | `enfermedad_cronica` | Media-Alta | 2026-07-06 | — |
 > | `tenencia_vivienda` | Media-Alta | 2026-07-21 | — |
 > | `canal_preferido` (recalibrar) | Media | 2026-08-05 | pasar de marginal plana a condicional de `generacion`; revisar impacto en `confianza_aseguradora` |
@@ -72,6 +82,7 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 | **tenencia_seguro** | score logístico: NSE + edu. financiera + sesgo presente (−) + confianza | any-insurance ≈ 0.40 | dato (SBS ~4/10) |
 | **seguro_desastres_naturales** | base 3.3% × NSE × exposición × tenencia | ≈ 0.033 | dato (APESEG) |
 | **wtp_ratio** | gaussiana: no asegurado μ≈0.66 · asegurado μ≈1.05 | — | dato (literatura WTP) |
+| **propension_microseguro** | score: NSE+situación laboral+acceso digital+trabajo plataforma+sesgo presente → {alta/media/baja} | alta ≈ 0.34 · media ≈ 0.46 · baja ≈ 0.20 | dato/supuesto (Mordor, BID Invest, MAPFRE) |
 
 ---
 
@@ -112,8 +123,9 @@ python research/personas/generador/generate_synthetic_users.py --n 1000 --out us
 
 Salida (columnas): `id, generacion, nse, region, educacion_financiera, sesgo_presente,
 canal_preferido, situacion_laboral, cobertura_previsional, tenencia_vehiculo, acceso_digital,
-bancarizado, exposicion_riesgo_sismico, apertura_datos_ia, confianza_aseguradora,
-tenencia_seguro, seguro_desastres_naturales, wtp_ratio`.
+bancarizado, trabajo_plataforma_digital, exposicion_riesgo_sismico, apertura_datos_ia,
+confianza_aseguradora, tenencia_seguro, seguro_desastres_naturales, wtp_ratio,
+propension_microseguro`.
 
 Datasets generados en `datasets/`:
 - `datasets/usuarios_sinteticos_ejemplo.csv` — 200 filas (ejemplo de referencia del generador).
