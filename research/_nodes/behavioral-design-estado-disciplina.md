@@ -6,7 +6,7 @@
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta: **¿cómo le va al behavioral design como disciplina y mercado, y qué se
 > necesita para ser los mejores — aplicado a seguros (Rimac)?**
-> Fuentes registradas en `research/fuentes/registro_fuentes.md` (F-16 a F-27).
+> Fuentes registradas en `research/fuentes/codice.md` (F-16 a F-27).
 
 ## Resumen ejecutivo
 

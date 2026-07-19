@@ -1,9 +1,10 @@
-# 📜 Registro de fuentes — Códice de evidencia
+# 📜 Códice — Registro de fuentes
 
-> Ledger persistente que mantiene el skill `cronista`. Cada fuente usada para
-> crear o fundamentar contenido del proyecto se anota aquí: resumen breve,
-> rigurosidad metodológica, autor y año. Fuente única de trazabilidad.
-> Iniciado: 2026-06-22.
+> Ledger persistente que mantiene el skill `cronista` y que se consulta con el skill
+> `/codice`. Cada fuente usada para crear o fundamentar contenido del proyecto se anota
+> aquí: resumen breve, rigurosidad metodológica, autor y año. Fuente única de
+> trazabilidad. Iniciado: 2026-06-22 · renombrado de `registro_fuentes.md` a `codice.md`
+> el 2026-07-19.
 
 ## Rúbrica de rigurosidad
 | Nivel | Etiqueta | Criterio (resumen) |

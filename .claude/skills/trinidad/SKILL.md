@@ -101,7 +101,7 @@ de dejar la sección vacía sin explicación.
 
 ### Paso 5: Registro consolidado en el cronista
 
-Al terminar, registra en el ledger de `cronista` (`research/fuentes/registro_fuentes.md`)
+Al terminar, registra en el ledger de `cronista` (`research/fuentes/codice.md`)
 todas las fuentes usadas en las tres pistas, con la misma rúbrica A-E de siempre:
 
 - Deduplica contra el ledger existente antes de escribir (por URL o Autor+Año+Título).

@@ -150,7 +150,7 @@ Por eso este glosario funciona mejor como parte de un sistema:
 
 ---
 
-*Fuentes registradas en `research/fuentes/registro_fuentes.md` (F-6 a F-15).
+*Fuentes registradas en `research/fuentes/codice.md` (F-6 a F-15).
 
 ---
 

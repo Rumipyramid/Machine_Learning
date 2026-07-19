@@ -3,7 +3,7 @@
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
 > Fecha de elaboración: 2026-07-06.
-> Fuentes citadas indexadas en [`research/fuentes/registro_fuentes.md`](fuentes/registro_fuentes.md) (F-35 a F-66).
+> Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada
 
@@ -90,7 +90,7 @@ estudio, no 90%+ (PMC — estudio Japón, 2024) — y el caso de negocio más pa
 
 Formato de cada afirmación de esta sección: **Afirmación** → *Evidencia* (dato/cita) →
 **Rigurosidad** (1-5) → **Fuente** (Autor, año). La escala 1-5 traduce la rúbrica A-E de
-`cronista` (`research/fuentes/registro_fuentes.md`): **5**=A (peer-reviewed/dato primario),
+`cronista` (`research/fuentes/codice.md`): **5**=A (peer-reviewed/dato primario),
 **4**=B (oficial/regulador), **3**=C (industria/consultora con método propio), **2**=D
 (prensa/secundaria sin método propio), **1**=E (opinión sin método verificable).
 

@@ -186,7 +186,7 @@ Formato: `(Plataforma, autor/medio, fecha)`. Ejemplos:
 ## Registro en el cronista
 
 Al terminar una investigación de `gossiper`, registra las fuentes usadas en el ledger de
-`cronista` (`research/fuentes/registro_fuentes.md`), igual que haría cualquier otro skill
+`cronista` (`research/fuentes/codice.md`), igual que haría cualquier otro skill
 que se apoye en evidencia externa:
 
 - La mayoría de las fuentes de `gossiper` caerán en los niveles **D** (prensa/blogs sin

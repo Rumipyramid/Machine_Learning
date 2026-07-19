@@ -173,7 +173,7 @@ Ideas accionables si el objetivo es modelar o predecir comportamiento de seguros
 
 > Investigación `/seeker` 2026-07-10. "Más comprados" (valor de primas) y "mejor valorados"
 > (satisfacción del consumidor) miden cosas distintas y no coinciden en el mismo ramo — ver
-> tensión más abajo. Fuentes indexadas en `fuentes/registro_fuentes.md` (F-78 a F-85).
+> tensión más abajo. Fuentes indexadas en `fuentes/codice.md` (F-78 a F-85).
 
 ### 7.1 Volumen global por ramo (2025)
 
@@ -255,7 +255,7 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - RGA — Behavioral Approach to Insurance: https://www.rgare.com/knowledge-center/article/behavioral-approach-to-insurance
 - MDPI — Insurance in the Aspects of Sustainable Development (SEM): https://doi.org/10.3390/su18010233
 
-**Mercado global / teoría (§7, F-78 a F-85 en `fuentes/registro_fuentes.md`)**
+**Mercado global / teoría (§7, F-78 a F-85 en `fuentes/codice.md`)**
 - Swiss Re Institute — sigma 2025 (volumen global de primas por ramo)
 - Allianz Research — Global Insurance Report 2025/2026
 - NAIC / Statista — Top international insurance markets

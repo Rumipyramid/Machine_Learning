@@ -39,7 +39,7 @@ por afirmación cuando corresponda.
 |---|---|
 | `alma.md` | Este índice vivo (raíz de `research/`) |
 | `_nodes/` | Todo el conocimiento, plano, un `.md` por tema (kebab-case) |
-| `fuentes/registro_fuentes.md` | Ledger de `cronista` — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 116+ filas existentes. |
+| `fuentes/codice.md` | Ledger de `cronista` (se consulta con `/codice`) — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 171+ filas existentes. |
 | `personas/` | Subsistema de código del modelo de personas sintéticas (`lapuerta`) — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `updates/` | Reportes quincenales de fortalecimiento del modelo — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `lobo/opinion_experto.md` | Opinión de negocio acumulada del skill `lobo`, refinada diariamente contra el ledger de `cronista` — subsistema con su propia lógica de confianza/tope, fuera del alcance de este hub, ver `CLAUDE.md` |
@@ -82,8 +82,9 @@ por afirmación cuando corresponda.
 
 ## Bibliografía compartida
 
-`fuentes/registro_fuentes.md` (ledger de `cronista`, mantenido por ese skill) — 171+ fuentes
-(F-1...) citadas por ID desde cualquier node. Reglas de uso desde este hub:
+`fuentes/codice.md` (ledger de `cronista`, mantenido por ese skill; se consulta con el skill
+`/codice`) — 171+ fuentes (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
+este hub:
 
 - Cada node cita fuentes por ID (`F-n`) en vez de repetir la referencia completa.
 - Al crear/actualizar un node con evidencia nueva, registrar la fuente en el ledger primero

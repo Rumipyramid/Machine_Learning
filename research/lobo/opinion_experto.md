@@ -2,7 +2,7 @@
 
 > No vengo a resumir papers. Vengo a decir dónde hay plata, dónde se quema plata,
 > y qué jugada haría yo con lo que el `cronista` ya verificó. Cada tesis carga su
-> evidencia (F-n del ledger `research/fuentes/registro_fuentes.md`) y un nivel de
+> evidencia (F-n del ledger `research/fuentes/codice.md`) y un nivel de
 > confianza que sube o baja según la rigurosidad de lo que la sostiene. Lo que no
 > tiene fuente en el ledger va marcado como **instinto** — razonado desde
 > principios de negocio, no dato verificado.

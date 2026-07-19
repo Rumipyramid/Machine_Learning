@@ -31,12 +31,12 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/personas/laminas/` | Lámina explicativa del sistema (script + PNG) | — |
 | `research/personas/apps/reglas/` · `apps/llm/` | Apps web: explorador por reglas (autocontenido) y preguntas libres con Claude (API) | — |
 | `research/updates/` | Reportes quincenales de fortalecimiento del modelo | Indexados en este códice (bloque gestionado) |
-| `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
+| `research/fuentes/codice.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista`; se consulta con `/codice` |
 | `research/yopersona/perfil.md` | Nodo de conocimiento: perfil profesional del usuario (CV) | Fuente de verdad para cartas de presentación, CVs adaptados y asesoría de carrera |
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis con evidencia F-n del ledger + confianza; refinada diariamente contra `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
-| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
+| `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 | `.claude-plugin/marketplace.json` · `plugin.json` | Marketplace personal de plugins | Expone `.claude/skills/` como plugin instalable en cualquier máquina/cuenta — ver sección abajo |
 
@@ -96,15 +96,23 @@ cubre un registro distinto de evidencia:
   publicados y verificables** (ROI, market share, filings, rondas de financiamiento).
 
 Los tres registran las fuentes que usan en el ledger de `cronista`
-(`research/fuentes/registro_fuentes.md`), aplicando la misma rúbrica A-E: `gossiper`
-suele producir fuentes D/E (prensa/redes sin método propio) y `marketer` suele producir
-fuentes A/B/C (filings, informes de mercado, prensa especializada) — es esperado, no un
-defecto, dado el tipo de evidencia que cada uno busca.
+(`research/fuentes/codice.md`, consultable con el skill `/codice`), aplicando la misma
+rúbrica A-E: `gossiper` suele producir fuentes D/E (prensa/redes sin método propio) y
+`marketer` suele producir fuentes A/B/C (filings, informes de mercado, prensa
+especializada) — es esperado, no un defecto, dado el tipo de evidencia que cada uno
+busca.
 
 - **`/trinidad`** (`.claude/skills/trinidad/`): orquesta a los tres a la vez sobre el
   mismo tema — los corre en paralelo, mantiene sus criterios de validez separados (no
   mezcla rigor académico con tracción social ni con evidencia de negocio) y consolida
   todo en un reporte único de 360°, registrando también en `cronista`.
+
+### 📌 Skill: `codice` (consulta del ledger de fuentes)
+`cronista` **registra** fuentes en `research/fuentes/codice.md`; el skill `/codice`
+(`.claude/skills/codice/`) **muestra y responde consultas** sobre lo ya registrado —
+buscar por ID (`F-n`), autor, tema/node o nivel de rigurosidad A-E. No reemplaza a
+`cronista` (que sigue disparándose automáticamente para registrar evidencia nueva), es
+el punto de invocación explícito para leer el códice en vez de escribirlo.
 
 ### 📌 Mantenimiento del hub de conocimiento (Many Brains, `research/`)
 
@@ -127,8 +135,8 @@ pida:
 2. **`/seeker` y `/trinidad` escriben directo a `_nodes/`, no solo responden en el chat.**
    Al terminar una investigación con hallazgos que valga la pena retener, créala o
    ampliala como node (proponlo si no está claro que el usuario lo quiere guardado), cita
-   las fuentes por ID (`F-n`) del ledger de `cronista` (`research/fuentes/registro_fuentes.md`,
-   que sigue en su ruta actual — no se movió a `_nodes/`), y cierra con `## Conexiones`
+   las fuentes por ID (`F-n`) del ledger de `cronista` (`research/fuentes/codice.md`,
+   consultable con `/codice` — no se movió a `_nodes/`), y cierra con `## Conexiones`
    recíprocas a los nodes relacionados.
 3. **Versionado solo por cambio estructural** (premisa, modelo, alcance); lo incremental
    solo actualiza la fecha de cabecera del node.
@@ -201,9 +209,9 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
 - Spec (`synthetic_user_schema.json`) y matriz legible (`.md`) se mantienen sincronizados con el generador.
 - Artefactos generados (CSV de muestras, ZIP, `__pycache__`, `dist/`) NO se versionan.
 - **Evidencia → `cronista`:** toda fuente referenciable usada para crear o fundamentar
-  se registra en `research/fuentes/registro_fuentes.md` (resumen, rigurosidad, autor, año).
-  Aplica también a lo que traigan `/gossip` (noticias/redes) y `/marketer` (benchmarks
-  de negocio), no solo a `/seeker`.
+  se registra en `research/fuentes/codice.md` (resumen, rigurosidad, autor, año) —
+  consultable con el skill `/codice`. Aplica también a lo que traigan `/gossip`
+  (noticias/redes) y `/marketer` (benchmarks de negocio), no solo a `/seeker`.
 - ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
 
 ---

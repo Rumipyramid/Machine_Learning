@@ -2,7 +2,7 @@
 
 > Node. Fuente de verdad de este tema. Rescata 3 investigaciones `/seeker`/`/trinidad` que
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
-> `fuentes/registro_fuentes.md` (F-86 a F-116).
+> `fuentes/codice.md` (F-86 a F-116).
 >
 > Fecha de elaboración: 2026-07-10 · Última actualización: 2026-07-10 · Versión: v1.0
 
