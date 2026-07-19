@@ -70,8 +70,10 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
   bancarizado ≈ 0.59, sin cobertura previsional ≈ 0.60, trabajo en plataforma digital ≈ 0.07.
 - **Incorporación automática:** las propuestas de prioridad Alta de cada reporte quincenal
   (`research/updates/`) se aplican solas al esquema/generador y se re-validan con
-  `validate.py --check`; si no pasa, se revierte y la variable queda pendiente. Ver
-  `.claude/skills/cerrajero/`.
+  `validate.py --check`; si no pasa, se revierte y la variable queda pendiente. En `/cerrajero`
+  (a demanda) el cambio va a la rama de trabajo actual; en el ciclo **desatendido** (GitHub
+  Action) va a un **PR aparte** (`lapuerta/alta-auto-AAAA-MM-DD` contra main) para revisión
+  humana antes de mergear — nunca se pushea directo a main. Ver `.claude/skills/cerrajero/`.
 
 ### 📌 Familia de skills de investigación (`seeker` / `gossiper` / `marketer`)
 Tres skills comparten el mismo mecanismo de ancho de banda de búsqueda (tipologización

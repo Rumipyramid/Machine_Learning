@@ -14,6 +14,13 @@ description: >-
 > Invocación: **`/cerrajero`**. Es la versión **a demanda** (la corre Claude en la sesión,
 > con su propia búsqueda web — no necesita API key) del GitHub Action
 > `.github/workflows/fortalecimiento-modelo.yml`, que es la versión **desatendida**.
+>
+> Diferencia importante en el paso 3 (aplicar Alta): esta versión a demanda deja el cambio en
+> la rama de trabajo actual de la sesión (igual que el resto de tus ediciones — la revisión
+> humana ocurre cuando esa rama se publica a main, p. ej. con `/actualizar`). La versión
+> desatendida en cambio **nunca pushea el cambio de esquema directo a main**: lo manda a un
+> PR aparte (`lapuerta/alta-auto-AAAA-MM-DD`) para que alguien lo revise antes de mergear,
+> porque ahí no hay nadie mirando la sesión en vivo.
 
 Cuando se invoque, ejecuta estos pasos de principio a fin:
 
