@@ -44,6 +44,26 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 > se inclina a obligatorio para formales (Vida Ley) y autos (SOAT). Marginales validadas tras la
 > recalibración: any-seguro ≈ 0.41, desconfía ≈ 0.45, desastres ≈ 0.035, bancarizado ≈ 0.60.
 
+> **Pendientes de incorporar** — candidatas ya redactadas (evidencia + JSON propuesto) en
+> `research/updates/`, todavía no calibradas en el esquema. Ordenadas por prioridad declarada
+> en su reporte de origen:
+>
+> | Variable | Prioridad | Reporte | Nota |
+> |---|---|---|---|
+> | `trabajo_plataforma_digital` | Alta | 2026-08-05 | booleano nuevo; falta fijar intercepto y re-validar marginales |
+> | `propension_microseguro` | Alta | 2026-08-05 | derivada nueva; depende de `trabajo_plataforma_digital` |
+> | `enfermedad_cronica` | Media-Alta | 2026-07-06 | — |
+> | `tenencia_vivienda` | Media-Alta | 2026-07-21 | — |
+> | `canal_preferido` (recalibrar) | Media | 2026-08-05 | pasar de marginal plana a condicional de `generacion`; revisar impacto en `confianza_aseguradora` |
+> | `genero` | Media | 2026-07-06 | — |
+> | `vulnerabilidad_economica` | Media | 2026-07-06 | — |
+> | `recibe_remesas` | Media | 2026-07-21 | — |
+> | `dependientes_hogar` | Baja | 2026-07-21 | — |
+> | `nivel_endeudamiento` | Baja | 2026-07-06 | — |
+> | Recalibración de marginales por ramo (salud/vida) | Baja | 2026-08-05 | no es variable nueva; chequeo de calibración |
+>
+> Al incorporar una, moverla a su tabla correspondiente arriba y anotar la versión (como v1.1/v1.2).
+
 ## 3. Variables derivadas (modeladas)
 
 | Variable | Modelo | Marginal objetivo | Origen |
