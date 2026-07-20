@@ -60,6 +60,10 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 - **Generador:** `research/personas/generador/generate_synthetic_users.py` (solo stdlib)
   - Uso: `python research/personas/generador/generate_synthetic_users.py --n 1000 --out usuarios.csv --seed 42`
   - `--joint fitted.csv` siembra las variables base desde una conjunta ENAHO/IPF (preserva correlaciones).
+  - **Semilla estándar: `--seed 42`.** Úsala siempre que se generen usuarios sintéticos (ejemplos,
+    pruebas, exploración), salvo que el usuario pida explícitamente otra semilla o pida variedad/
+    aleatoriedad real (ahí sí, omitir `--seed`). Mantiene los ejemplos reproducibles y comparables
+    entre sesiones.
 - **Calibración con dato real:** `enaho_loader.py` (ENAHO → conjunta ponderada) → `ipf.py` (raking a
   marginales objetivo) → generador `--joint` → `validate.py` (mide si calibrar mejoró). Guía en
   `research/personas/datos_enaho/README.md`.
