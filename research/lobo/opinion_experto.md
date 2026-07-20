@@ -15,11 +15,14 @@
 Dos fuentes A independientes (RCT de campo con ~124k usuarios reales + síntesis
 académica canónica) muestran lo mismo: mejorar la comprensión del consumidor casi
 nunca cambia su conducta de compra. Un glosario, una guía o un "explicador" suben
-el conocimiento, no la conversión. Si el negocio mide éxito de un glosario en
-ventas, está midiendo la métrica equivocada.
-- **Evidencia:** F-9 (🟢A, RCT N≈124,000), F-10 (🟢A, síntesis canónica)
+el conocimiento, no la conversión. Un estudio oficial de la Comisión Europea
+específico del ramo seguros confirma el mismo patrón dentro del sector: no basta
+con dar más información, tiene que estar bien estructurada — la estructura
+importa más que el volumen de divulgación.
+- **Evidencia:** F-9 (🟢A, RCT N≈124,000), F-10 (🟢A, síntesis canónica), F-124
+  (🔵B, Comisión Europea, específico de seguros)
 - **Confianza:** Alta
-- **Actualizado:** 2026-07-12
+- **Actualizado:** 2026-07-20
 
 ### 2. El coaseguro variable es el cuello de botella de comprensión #1 en seguros de salud
 Dos estudios (uno con dos encuestas representativas EE.UU., otro con encuesta
@@ -32,39 +35,36 @@ un problema de comunicación — es un problema de diseño de producto.
 - **Actualizado:** 2026-07-12
 
 ### 3. El problema de comprensión es estructural, no generacional — no lo resuelve "educar a los jóvenes"
-Solo ~1 de cada 4 adultos Gen Z en EE.UU. puede definir deducible o copago. Cruzado
-con la tesis 1 y 2, el patrón es consistente: ni la generación más "nativa digital"
-entiende los términos base, y aunque los entendiera, eso no predice que compre.
-Cualquier estrategia que apueste a "la próxima generación va a entender mejor" no
-tiene sustento.
+Solo ~1 de cada 4 adultos Gen Z en EE.UU. puede definir deducible o copago. Ningún
+`F-n` nuevo desde el 2026-07-12 toca este patrón generacional.
 - **Evidencia:** F-8 (🟡C, NAIC 2024 — nota de asociación, método no detallado)
-- **Confianza:** Media (una sola fuente C; consistente con F-6/F-7 pero no del
-  mismo rigor). **Tope explícito** (mismo criterio aplicado a tesis 4 el
-  2026-07-13): no sube a Alta por consistencia narrativa con F-6/F-7 — solo
-  sube si aparece un F-n con rigurosidad B o mejor que confirme el patrón
-  generacional, idealmente con dato peruano/latinoamericano en vez de EE.UU.
+- **Confianza:** Media. **Tope explícito:** no sube a Alta por consistencia
+  narrativa — solo sube si aparece un F-n con rigurosidad B o mejor que confirme
+  el patrón generacional, idealmente con dato peruano/latinoamericano.
 - **Actualizado:** 2026-07-17
 
-### 4. La brecha de aseguramiento sísmico en Perú es una categoría de producto casi vacía
-Solo ~3.3% de los hogares peruanos tiene seguro contra sismos/desastres en un país
-de altísima exposición sísmica. El dato circula vía prensa citando a APESEG (el
-gremio del sector — incentivo a dramatizar la brecha para pedir regulación
-favorable), no vía fuente primaria auditada directamente.
-- **Evidencia:** F-5 (🟠D, Infobae vía APESEG)
-- **Confianza:** Media — la dirección del hallazgo (brecha enorme) es creíble y
-  consistente con la baja penetración general del mercado peruano, pero el número
-  exacto no está verificado en fuente primaria. Antes de dimensionar un caso de
-  negocio con el 3.3%, pedir el dato directo de APESEG/SBS. **Tope explícito:**
-  esta tesis se sostiene en una única fuente D — no sube a Alta por consistencia
-  narrativa; solo sube si aparece un F-n con rigurosidad B o mejor que confirme el
-  número directamente desde APESEG/SBS.
-- **Actualizado:** 2026-07-13
+### 4. La brecha de aseguramiento sísmico en Perú es una categoría de producto casi vacía — y hoy tiene ruta de producto concreta
+Solo ~3.3% de los hogares peruanos tiene seguro contra sismos/desastres (dato aún
+vía prensa/APESEG, no primario). Lo nuevo: el mercado de seguros **paramétricos**
+—el vehículo natural para llenar este vacío— pasó de tesis abstracta a categoría
+con tracción real: proyectado de ~USD 21B (2026) a ~USD 39B (2030), y ya existe
+marco académico publicado sobre cómo diseñar el trigger para minimizar riesgo de
+base. La oportunidad ya no depende solo de que el 3.3% sea exacto — depende de que
+la categoría "producto paramétrico" tiene demanda de capital y diseño técnico
+maduro detrás, mundialmente.
+- **Evidencia:** F-5 (🟠D, Infobae vía APESEG — número de brecha sin cambio),
+  F-163 (🟡C, SOA, tamaño de mercado paramétrico), F-164 (🟢A, diseño óptimo de
+  trigger)
+- **Confianza:** Media en el número exacto de brecha (sin cambio, mismo tope que
+  antes); **Alta** en que "paramétrico sísmico" es la jugada de producto correcta
+  independientemente del número exacto — la ventana de mercado/capital ya no es
+  instinto, tiene evidencia A+C detrás.
+- **Actualizado:** 2026-07-20
 
 ### 5. ESG como diferenciador de marca: aplica al consumidor global premium, no está probado en Perú
 Bain reporta que ~80% de consumidores globales quiere criterios ESG integrados en
 sus seguros. Es una encuesta propia de consultora (no auditable) y de alcance
-global — extrapolarla al consumidor peruano medio (con problemas de tenencia
-básica, no de diferenciación ESG) es **instinto**, no dato.
+global — extrapolarla al consumidor peruano medio es **instinto**, no dato.
 - **Evidencia:** F-4 (🟡C, Bain & Company 2023, alcance global)
 - **Confianza:** Baja para el mercado peruano específicamente
 - **Actualizado:** 2026-07-12
@@ -72,238 +72,283 @@ básica, no de diferenciación ESG) es **instinto**, no dato.
 ### 6. La era del "nudge de catálogo" terminó — testear en la propia población es el estándar, no copiar el tamaño de efecto de un paper
 El meta-análisis fundacional pro-nudge (447 experimentos) fue revertido por un
 re-análisis bayesiano que corrige sesgo de publicación: ajustado, no queda
-evidencia de un efecto promedio del nudging. Con datos reales a escala (123+ RCTs
-administrativos, >20M personas) el efecto que sobrevive ronda ~1.4 puntos
-porcentuales, muy por debajo del ~8.7pp que reportan los papers académicos — un
-"voltage drop" de ~6x entre laboratorio y despliegue real. Un meta-análisis de
-segundo orden matiza esto: hay impacto, pero es menor y muy heterogéneo por
-dominio/técnica, no un cero absoluto. Esto extiende la tesis 1: no solo la
-divulgación es una palanca débil — el nudge genérico importado de un paper también
-lo es, salvo que se valide en la propia base de usuarios.
-- **Evidencia:** F-16 (🟢A, meta-análisis original), F-17 (🟢A, re-análisis que lo
-  revierte), F-18 (🟢A, matiza: efecto real pero heterogéneo), F-20 (🟢A, megastudy
-  como metodología correcta: testear muchas variantes a la vez, en casa), F-21
-  (🟢A, voltage drop cuantificado). Contrapeso a mirar con cautela: F-26 (🟡C,
-  McKinsey reporta +10% retención en nudge units corporativas) es un caso de
-  consultora, no auditable — no pesa contra la evidencia A de arriba.
+evidencia de un efecto promedio del nudging. Con datos reales a escala el efecto
+que sobrevive ronda ~1.4pp, muy por debajo del ~8.7pp de los papers académicos —
+un "voltage drop" de ~6x entre laboratorio y despliegue real.
+- **Evidencia:** F-16, F-17, F-18, F-20, F-21 (todas 🟢A)
 - **Confianza:** Alta
 - **Actualizado:** 2026-07-12
 
-### 7. El diseño de producto embebido (s-frame) gana sobre el nudge cosmético (i-frame)
-El campo se desvió priorizando soluciones a nivel individual (recordatorios,
-defaults, copy) sobre el rediseño estructural del producto. El caso con outcome
-telemático real (no autoreportado) lo prueba: seguros por uso (UBI) redujeron
-velocidad 11-13%, frenadas bruscas 16-21% y aceleraciones agresivas 16-25% —
-conducta cambiada por el diseño del producto (pricing dinámico + feedback), no por
-un mensaje. Es la misma lógica de la tesis 2: la palanca de mayor ROI es rediseñar
-el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
-- **Evidencia:** F-19 (🟢A, marco teórico i-frame/s-frame, canónico), F-23 (🟢A,
-  RCT de campo nacional con outcome telemático objetivo)
+### 7. El diseño de producto embebido (s-frame) gana sobre el nudge cosmético (i-frame) — pero la telemática tiene techo de confianza incluso donde funciona
+El caso UBI (seguro por uso) con outcome telemático real —no autoreportado—
+prueba que rediseñar el producto (pricing dinámico + feedback) cambia conducta de
+manejo medible: velocidad -11-13%, frenadas bruscas -16-21%. Matiz nuevo: incluso
+en un mercado maduro y con marco regulatorio claro (UK), la adopción real es baja
+y la desconfianza persiste — solo ~12% usa telemática hoy, 73% no la usa, y solo
+32% se siente cómodo con que el asegurador recolecte ese dato. El producto
+funciona; la barrera no es de diseño, es de confianza en el punto de entrada.
+- **Evidencia:** F-19 (🟢A, marco i-frame/s-frame), F-23 (🟢A, RCT de campo
+  telemático), F-166/F-167 (🟠D, techo de adopción/confianza en UK)
+- **Confianza:** Alta en que el producto funciona donde se adopta; Media en la
+  velocidad de adopción masiva sin trabajar antes la confianza de entrada.
+- **Actualizado:** 2026-07-20
+
+### 8. El riesgo regulatorio por contacto comercial no consentido en seguros peruanos ya no es teórico — es expediente activo, y ya tocó al sector
+INDECOPI fiscaliza con IA más de 7 millones de audios de llamadas comerciales al
+año y ya sancionó 26 empresas en 2025 por S/2.6M. Lo que cambia el cálculo de
+riesgo: **Pacífico Seguros** está bajo investigación directa (50,000 audios de su
+call center Impulsa365 analizados) y BBVA fue sancionado dos veces, la segunda
+tras pedir explícitamente ser excluido de la base de datos — la corrección
+regulatoria ya alcanzó a un competidor directo del ramo seguros, no es un riesgo
+de otro sector que "podría" llegar a seguros.
+- **Evidencia:** F-70 (🔵B, INDECOPI, escala de fiscalización), F-117 (🔵B,
+  Pacífico Seguros bajo investigación), F-118 (🔵B, caso BBVA + texto legal),
+  F-138 (🔵B, segunda sanción BBVA)
 - **Confianza:** Alta
-- **Actualizado:** 2026-07-12
+- **Actualizado:** 2026-07-20
+
+### 9. El modelo farmacia-frente-primario + triage IA + derivación tiene tracción estatal y de infraestructura real en Perú, no es apuesta especulativa
+Tres señales independientes convergen: (a) el Congreso tiene en debate el PL
+08488 para incorporar farmacias privadas como puntos de atención primaria; (b)
+MINSA ya aprobó el Plan Nacional de Telesalud 2026 con red de >2,000
+establecimientos y >3M atenciones remotas registradas; (c) la infraestructura de
+delivery de farmacia ya opera a escala nacional (InkaFarma+Mifarma, 2,245
+locales, 18% de boticas del país). Y el comportamiento real del usuario ya apunta
+hacia ahí: la automedicación en Perú **no** nace principalmente de desconfianza
+en el médico (solo 7.2% la cita como razón) sino de ineficiencia del sistema
+formal (59%) y falta de tiempo (51%) — el frente de farmacia no compite contra la
+confianza del paciente, compite contra la lentitud del Estado.
+- **Evidencia:** F-38 (🟠D, razones de automedicación), F-47 (🟠D, PL 08488),
+  F-48 (🔵B, Plan Nacional de Telesalud MINSA), F-49 (🟠D, escala de InkaFarma/Mifarma)
+- **Confianza:** Alta en la oportunidad de mercado/distribución; el riesgo de
+  ejecución técnica del triage IA es un problema aparte (ver tesis 10).
+- **Actualizado:** 2026-07-20
+
+### 10. El punto de fracaso más probable de un triage con IA no es la tecnología — es sobreclamar precisión clínica sin validación formal
+Babylon Health colapsó de USD 4.2B de valuación a bancarrota exactamente por
+esto: el Lancet no encontró evidencia convincente de que su triage superara a
+médicos humanos en ningún escenario realista. En el mundo real, los
+symptom-checkers de IA en producción rondan ~45% de precisión diagnóstica sin
+mejora en 3 años de uso — muy por debajo de lo que sugiere el marketing típico
+del sector. La literatura ya tiene el playbook para evitarlo: correr el modelo en
+"silent trial"/shadow mode 60-90 días (sin influir en la atención real, sin
+necesitar consentimiento) antes de producción, y separar explícitamente
+validación técnica de validación clínica (la que casi siempre se salta).
+- **Evidencia:** F-50 (🟢A/vía prensa especializada, caso Babylon), F-43 (🟢A,
+  precisión real 45%), F-56/F-57 (🟢A, protocolo de silent trial), F-62 (🔵B,
+  marco FDA SaMD)
+- **Confianza:** Alta
+- **Actualizado:** 2026-07-20
+
+### 11. El ciclo de rentabilidad del seguro global está en su mejor momento en 25 años — no es momento de jugar defensivo
+Combined ratio P&C de EE.UU. en 91.9% con la mayor ganancia de suscripción en 25
+años; reaseguro (Munich Re, Swiss Re, Hannover Re, Scor) con ROE conjunto récord
+de 19.6%. Converge con tesis 4: la ventana para lanzar el producto paramétrico
+sísmico no solo tiene demanda sin cubrir del lado del consumidor peruano, tiene
+ciclo de capital reasegurador favorable del lado de la oferta, al mismo tiempo.
+- **Evidencia:** F-160 (🟠D, combined ratio 25-year high), F-32/F-33/F-34 (🔵B/🔵B/🟠D,
+  récords de ROE en reaseguro), F-163/F-164 (ver tesis 4)
+- **Confianza:** Media-Alta — converge desde múltiples jugadores independientes,
+  pero ninguna fuente A pura mide directamente "ciclo favorable = buen momento
+  de lanzamiento", es lectura de negocio sobre datos financieros oficiales.
+- **Actualizado:** 2026-07-20
+
+### 12. "Menos opciones convierte más" es folklore de UX, no un efecto confiable — la palanca real es estructurar la comparación, no podar el catálogo
+El meta-análisis que agrega 50 estudios de choice overload da un efecto promedio
+prácticamente cero; el estudio clásico de las mermeladas que originó la narrativa
+no replica de forma consistente. Lo que sí tiene evidencia sólida y específica
+del ramo seguros: las ayudas de decisión visuales (icon arrays, formato de
+frecuencia "3 de 100" en vez de porcentaje) mejoran comprensión de riesgo en
+segmentos de baja numeracidad — exactamente el segmento peruano de baja
+educación financiera que ya modela `lapuerta`.
+- **Evidencia:** F-119 (🟢A, meta-análisis ~efecto cero), F-121 (🟢A, el
+  estudio original no replica bien), F-122 (🟢A, decision aids mejoran
+  conocimiento/reducen conflicto decisional), F-123 (🟢A, icon arrays en baja
+  numeracidad), F-124 (🔵B, seguros específicamente)
+- **Confianza:** Alta
+- **Actualizado:** 2026-07-20
+
+### 13. La divulgación progresiva de datos convierte mejor — y funciona incluso sin cambiar la actitud real del cliente hacia su privacidad
+Dos estudios A recientes confirman el mecanismo exacto: secuenciar los campos de
+un formulario de menos a más sensibles (y repartirlos en varias pantallas)
+aumenta cuánto divulga la persona; pedir datos repetidamente aumenta la
+divulgación con el tiempo **sin que cambie la preocupación real de privacidad**
+— funciona aunque no debería. El antecedente más fuerte de divulgación real no es
+la explicación legal sino la confianza situacional en la marca (paradoja de la
+privacidad: la intención declarada de proteger datos no predice la conducta
+real). Jugada directa para el onboarding de `disposicion_compartir_datos_pricing`
+(variable ya calibrada en `lapuerta` v1.3) y para cualquier flujo de
+consentimiento de telemática/UBI: pedir en pasos progresivos anclados a marca de
+confianza, no en un formulario legal único.
+- **Evidencia:** F-142 (🟢A, secuenciar campos aumenta divulgación), F-143 (🟢A,
+  repetición aumenta divulgación sin cambiar actitud), F-144 (🟢A, paradoja de la
+  privacidad, canónico), F-141 (🟢A, foot-in-the-door original)
+- **Confianza:** Alta en el mecanismo; **riesgo ético explícito** — el mismo
+  mecanismo que convierte mejor puede leerse como manipulador si se abusa, no es
+  carta libre para maximizar divulgación sin límite.
+- **Actualizado:** 2026-07-20
 
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
-  hogares sin cobertura (tesis 4) en un país donde SOAT —un seguro obligatorio de
-  bajo entendimiento y alto conocimiento (94%, F-1)— ya probó que la distribución
-  masiva funciona cuando el producto es simple y el precio es bajo. Jugada:
-  bundling o cross-sell sobre la base de SOAT, no venta desde cero.
+  hogares sin cobertura (tesis 4), y ahora con mercado global creciendo a
+  ~USD 39B para 2030 y marco de diseño técnico ya publicado (tesis 4/11). SOAT
+  ya probó que la distribución masiva funciona con producto simple y precio
+  bajo. Jugada: bundling o cross-sell sobre la base de SOAT, con diseño de
+  trigger validado académicamente, en un ciclo de reaseguro favorable — la
+  ventana de oferta y demanda coinciden hoy.
 - **Rediseñar el producto, no el glosario.** Si el coaseguro variable es el
   problema (tesis 2) y la divulgación no cambia conducta (tesis 1), la jugada de
   mayor ROI es lanzar variantes con deducible fijo y simuladores de costo en el
-  punto de venta — no otro explicador. Esto convierte un hallazgo académico en
-  ventaja de producto frente a competidores que siguen invirtiendo en "educar".
-- **Distribución por bróker/intermediario para superar desconfianza.** *Instinto,
-  no ledger-backed todavía*: en mercados de baja confianza institucional, la
-  intermediación humana suele convertir mejor que el canal digital directo. Vale
-  la pena que `seeker` o `marketer` busquen evidencia dura (tasa de conversión
-  bróker vs. digital en Perú) antes de apostarle presupuesto.
+  punto de venta.
+- **Farmacia + triage IA + derivación como frente primario de salud.** Tracción
+  estatal (PL 08488, Plan Nacional de Telesalud) e infraestructura de delivery ya
+  a escala (tesis 9) hacen esta una apuesta con demanda y canal ya validados —
+  no hay que crear el hábito de ir a la farmacia, ya existe. **Condición dura:**
+  el triage IA solo se lanza después de un silent trial de 60-90 días (tesis
+  10); saltarse ese paso es repetir el error de Babylon con capital propio.
+- **Material comparativo visual estructurado, no reducción de catálogo.** Tesis
+  12: invertir en icon arrays y estructura "good-better-best" en el punto de
+  venta consultiva, no en podar opciones de producto — la evidencia dice que la
+  fricción es de comparación, no de cantidad.
+- **Divulgación progresiva para el onboarding de pricing por datos/telemática.**
+  Tesis 13: pedir consentimiento de UBI/pricing IA en pasos ligados a marca de
+  confianza, campo por campo, en vez de un formulario legal único — convierte
+  mejor sin depender de cambiar la actitud del cliente hacia la privacidad.
+- **Distribución por intermediario humano de confianza — pero estrictamente
+  inbound/opt-in, nunca llamada en frío.** *Parcialmente instinto, parcialmente
+  ledger-backed*: en mercados de baja confianza institucional la intermediación
+  humana suele convertir mejor que el canal digital directo, pero el riesgo
+  regulatorio de tesis 8 hace que cualquier variante de contacto saliente no
+  consentido sea hoy una apuesta con S/2M+ de multa potencial y precedente
+  directo contra un competidor. La jugada válida es bróker como canal de
+  confianza que el cliente busca (referidos, punto de venta), no como fuerza de
+  prospección saliente.
 - **Pricing dinámico por uso (UBI) como producto, no como campaña de nudge.**
-  Tesis 7 lo prueba con outcome real: telemática + feedback + precio variable
-  cambia la conducta de manejo de forma medible. Jugada: extender la lógica UBI
-  más allá de auto (salud, hogar) donde exista dato de uso, en vez de invertir en
-  otra campaña de comunicación sobre manejo seguro.
+  Tesis 7 lo prueba con outcome real, pero extenderlo (salud, hogar) debe
+  presupuestar una curva de adopción lenta por el techo de confianza documentado
+  incluso en mercados maduros — no asumir adopción masiva rápida.
 - **Posicionar `lapuerta` en la frontera de "AI Behavioral Science".** La agenda
-  formal del subcampo (agentes sintéticos, simulación conductual con IA) recién se
-  está formando, con autores de primer nivel detrás (F-27, aunque todavía
-  preprint sin peer review). `lapuerta` ya hace exactamente eso. *Instinto, no
-  ledger-backed como oportunidad de negocio*: hay ventana para posicionar el
-  trabajo como caso aplicado temprano antes de que el subcampo se sature — vale
-  que `seeker` monitoree este preprint hacia su publicación final.
+  formal del subcampo recién se está formando (F-27, preprint). *Instinto*: vale
+  la pena posicionar el trabajo como caso aplicado temprano antes de que el
+  subcampo se sature.
 
 ## ⚠️ Riesgos
 
+- **Contacto comercial no consentido, con precedente ya dentro del sector
+  seguros.** Tesis 8: Pacífico Seguros bajo investigación directa, BBVA
+  sancionado dos veces, INDECOPI escaneando millones de audios con IA. Cualquier
+  call center o campaña saliente sin consentimiento explícito y verificable hoy
+  arriesga multa de hasta 450 UIT y una orden de cese que borra bases de datos
+  completas, incluidas las de terceros (agencias, referidos).
+- **Lanzar un triage con IA sin shadow-mode previo.** Tesis 10: el precedente
+  Babylon Health (USD 4.2B → bancarrota) y la precisión real de ~45% de los
+  symptom-checkers en producción hacen que cualquier lanzamiento sin 60-90 días
+  de silent trial sea apostar capital contra un patrón de fracaso ya documentado.
+- **Tratar el modelo de atención primaria basada en valor (capitación,
+  farmacia-como-frente-primario) como camino rápido a rentabilidad.** Los casos
+  internacionales que mejor navegan la presión de costo (Singapur, NHS, Kaiser,
+  Oak Street, ChenMed) son arquitecturas sólidas a largo plazo, pero
+  financieramente lentas: Oak Street operaba con pérdidas >USD 200M/año al
+  momento de ser adquirida por USD 10.6B, y hasta Kaiser —líder de la categoría—
+  enfrentó presión de costos crecientes en 2025. Dimensionar la oportunidad de
+  tesis 9 con expectativa de rentabilidad de corto plazo es un error de
+  proyección, no de estrategia.
+- **Sobreclamar capacidad de IA en comunicación pública (claims, pricing,
+  antifraude).** Lemonade tuvo que retractarse públicamente tras presumir en
+  redes que su IA analiza señales faciales para detectar fraude — la reacción
+  viral por "fisonomía" sigue citándose como caso de cautela cinco años después.
+  Mismo patrón que el riesgo ya señalado sobre Vitality (F-25): dato de negocio
+  autopublicado o comunicación pública sobre IA en seguros necesita revisión de
+  riesgo reputacional antes de salir, no solo revisión legal.
+- **Medir el agente conversacional de IA con la métrica equivocada.** Si el
+  agente de RIMAC se evalúa solo por tasa de resolución o satisfacción
+  autorreportada, no se está midiendo si **alucina coberturas o pólizas que no
+  existen** — el estándar de la industria para eso es distinto (RAGAS mide
+  fidelidad al contexto recuperado verificando cada afirmación por separado;
+  G-Eval/MT-Bench puntúan la respuesta individual, no la experiencia agregada).
+  Es un riesgo silencioso: un agente puede "sonar bien" en una encuesta de
+  satisfacción y seguir inventando datos de producto.
 - **Quemar presupuesto de marketing en "educación financiera" esperando ventas.**
-  Es el error más respaldado por evidencia del ledger (tesis 1, dos fuentes A). Si
-  el objetivo real es conversión, ese presupuesto rinde más en simplificación de
-  producto o en el canal de bróker.
+  Tesis 1, ahora con respaldo adicional específico de seguros (F-124). Si el
+  objetivo real es conversión, ese presupuesto rinde más en simplificación de
+  producto o en material comparativo estructurado (tesis 12).
 - **Lanzar producto Gen Z con coaseguro variable pensando que "ya van a entender".**
-  Tesis 2 + 3 combinadas: ni el consumidor promedio ni el más joven entienden el
-  coaseguro. Ese diseño produce fricción, quejas y probable lapse/churn temprano.
+  Tesis 2 + 3 combinadas.
 - **Dimensionar un caso de negocio de seguros de desastres con el 3.3% sin
-  verificar la fuente primaria.** Es un número de gremio (APESEG) vía prensa (D),
-  no auditado. Usarlo para levantar capital o justificar inversión sin
-  confirmación directa es un riesgo de credibilidad si el número no resiste
-  escrutinio.
+  verificar la fuente primaria.** Sigue siendo un número de gremio vía prensa, no
+  auditado — aunque la jugada de producto (paramétrico) ya no depende solo de
+  ese número exacto (tesis 4).
 - **F-15 sigue marcada "NO USAR" en el ledger** (cifra de UnitedHealth sin método
-  verificable, ~9% entiende términos básicos). Cuidado con que se cuele en algún
-  deck o caso de negocio — no tiene respaldo.
-- **Dimensionar el ROI de un nudge con el tamaño de efecto de un paper académico.**
-  Tesis 6: el "voltage drop" es ~6x (1.4pp de campo vs 8.7pp de laboratorio).
-  Cualquier caso de negocio de una nudge unit interna debe presupuestar con el
-  número de campo, no con el del paper que lo inspiró — si no, el forecast de
-  retorno queda sobreestimado desde el día uno.
+  verificable). Cuidado con que se cuele en algún deck o caso de negocio.
+- **Dimensionar el ROI de un nudge con el tamaño de efecto de un paper
+  académico.** Tesis 6: "voltage drop" de ~6x entre campo y laboratorio.
 - **Confiar en estudios de "honestidad"/nudges éticos sin verificar su
   integridad.** El escándalo Ariely/Gino (F-24) mostró fabricación de datos en
-  investigación de honestidad ampliamente citada por la industria de seguros
-  (declaraciones juradas, formularios de siniestros, firma-al-inicio vs.
-  firma-al-final). Antes de citar un estudio de honestidad conductual para
-  diseñar un formulario o proceso antifraude, verificar que no sea parte del
-  corpus retractado — es un riesgo de credibilidad tan serio como F-15.
-- **Tratar los resultados de Vitality (F-25) como evidencia dura.** Es dato
-  autoreportado corporativo sin auditoría externa (🟠D) — misma categoría de
-  fragilidad que F-15/F-5. Útil como benchmark direccional de "shared-value
-  insurance" (76% menor mortalidad en miembros engaged, +15% en manejo), pero no
-  como input numérico de un caso de negocio.
+  investigación ampliamente citada por la industria de seguros — verificar que
+  no sea parte del corpus retractado antes de citarlo para diseñar un formulario
+  o proceso antifraude.
+- **Usar la divulgación progresiva de datos (tesis 13) sin límite ético.** El
+  mismo mecanismo que aumenta conversión de datos funciona "aunque no debería" —
+  usarlo para maximizar divulgación sin que el cliente entienda realmente qué
+  autorizó es un riesgo reputacional y regulatorio (LPDP exige consentimiento
+  informado e inequívoco), no solo una táctica de UX.
 - **La tenencia de seguros de vida en EE.UU. cayó de 63% (2011) a 51% (2024)**
   pese a que las intervenciones de comprensión sí mejoran el journey de compra
-  puntual (F-22, 🟡C). Refuerza la tesis 1 en la dirección más incómoda: mejorar
-  el entendimiento en el punto de venta no basta para sostener ni crecer la
-  categoría a nivel agregado.
-- **La cartera de tesis lleva 4 revisiones diarias seguidas sin insumo nuevo.**
-  *Instinto, no ledger-backed*: ninguna tesis está siendo puesta a prueba por
-  evidencia activa ahora mismo — este archivo es un snapshot con fecha de
-  vencimiento implícita, no una fuente viva. Si se va a apalancar una decisión
-  de negocio grande (pricing, entrada a categoría, pitch a inversionista) sobre
-  tesis 3 o 4 —las dos más frágiles del set—, correr `/seeker` o `/marketer`
-  antes de usarlas, no asumir que "nadie las refutó" equivale a "siguen firmes".
-- **Esperar pasivamente a que aparezca evidencia nueva ya no es gratis — pero
-  seguir pidiendo `/seeker`/`/marketer` cada día tampoco lo es.** *Instinto*: con
-  siete días seguidos sin corridas de `/seeker`, `/gossip`, `/marketer` ni
-  `/trinidad` desde el 2026-07-12, insistir a diario en encargar esas búsquedas
-  sin que nadie las ejecute es una jugada que ya rindió lo que tenía que rendir
-  (dejar la brecha visible) y ahora solo repite la misma nota. El checkpoint
-  natural más cercano ya está en el propio códice: el reporte quincenal
-  automatizado de `cerrajero`/GitHub Action tiene su próxima corrida programada
-  para **2026-07-21** (ver índice en `CLAUDE.md`) — es el punto donde
-  razonablemente puede entrar evidencia nueva sin depender de que alguien
-  encargue manualmente `/seeker` sobre Gen Z peruano (tesis 3) o el dato primario
-  APESEG/SBS (tesis 4). Hasta esa fecha, tesis 3 y 4 siguen **congeladas en
-  Media** y esta bitácora puede dejar de repetir la misma llamada a la acción a
-  diario — el siguiente chequeo con sustancia real es el 21, no mañana.
+  puntual. Refuerza tesis 1 en la dirección más incómoda.
+- **Corrección de proceso, no de evidencia:** el ledger de fuentes se renombró
+  de `registro_fuentes.md` a `codice.md` el 2026-07-19; las revisiones diarias
+  del 2026-07-13 al 2026-07-19 leyeron una ruta que había quedado congelada en
+  F-27 y reportaron "sin novedad" siete días seguidos — mientras tanto, entre el
+  2026-07-06 y el 2026-07-19 ya se habían registrado 144 fuentes nuevas (F-28 a
+  F-171) vía `/trinidad` y `/seeker` que nunca llegaron a esta opinión. La
+  lectura de hoy (2026-07-20) contra `codice.md` es la que corrigió esto. Tesis
+  3 y 4 seguían correctamente congeladas en Media (no había evidencia
+  generacional/sísmica nueva específica), pero el resto de la cartera estaba
+  desactualizada sin que la bitácora lo supiera. Vigilar que futuras revisiones
+  lean siempre la ruta vigente indicada en `CLAUDE.md`, no una ruta fija
+  hardcodeada.
 
 ## 📔 Bitácora
 
 - **2026-07-12** — Primera creación de la opinión. Revisé las 15 fuentes del
-  ledger (`registro_fuentes.md`, F-1 a F-15). Construí 5 tesis iniciales: (1)
-  la divulgación no convierte, (2) el coaseguro es el cuello de botella de
-  comprensión, (3) el problema es estructural/no generacional, (4) la brecha
-  sísmica peruana es una categoría casi vacía, (5) ESG es palanca global, no
-  probada en Perú. Marqué 3 oportunidades y 4 riesgos, incluyendo la advertencia
-  de no usar F-15. Sin entradas previas contra las cuales comparar — este es el
-  punto de partida.
-- **2026-07-12** — El ledger creció de F-15 a F-27 (investigación `/trinidad`
-  sobre behavioral design, volcada en `research/behavioral_design_360.md`).
-  Novedad sustancial: la "crisis del nudge" (F-16/F-17/F-18/F-21) — el
-  meta-análisis fundacional pro-nudge fue revertido por un re-análisis que
-  corrige sesgo de publicación, y el "voltage drop" de campo vs. laboratorio es
-  ~6x. Sumé tesis 6 (nudge de catálogo ya no es apuesta segura) y tesis 7
-  (diseño de producto embebido/s-frame gana sobre nudge cosmético, con el caso
-  UBI de F-19/F-23). Agregué 2 oportunidades (UBI como producto extensible,
-  posicionar `lapuerta` en la frontera de "AI behavioral science" vía F-27) y 4
-  riesgos (sobreestimar ROI de nudge con cifra de paper, citar estudios de
-  honestidad sin chequear el corpus retractado de Ariely/Gino en F-24, tratar
-  Vitality/F-25 como dato duro, y la caída de tenencia de vida en EE.UU. pese a
-  mejor comprensión en F-22 — refuerza tesis 1). Ninguna tesis 1-5 cambió de
-  confianza; la evidencia nueva no las contradice, las extiende.
-- **2026-07-13** — Sin cambios sustanciales: el ledger sigue en F-1 a F-27, sin
-  fuentes nuevas desde la entrada anterior. Revisé las 7 tesis contra la rúbrica
-  de rigurosidad; ninguna cambia de nivel de confianza. Único matiz aplicado:
-  hice explícito en la tesis 4 (brecha sísmica) que su confianza Media tiene un
-  tope duro por depender de una sola fuente D (F-5, prensa vía APESEG) — no debe
-  subir a Alta por mera consistencia narrativa con la baja penetración general,
-  solo por una fuente B o mejor que confirme el dato directo del gremio/regulador.
-  Las tesis 6 y 7 (crisis del nudge, s-frame > i-frame) siguen siendo las más
-  accionables y mejor blindadas (evidencia A múltiple y convergente); tesis 3 y 4
-  siguen siendo las más frágiles (una sola fuente C/D cada una) y son las
-  candidatas naturales para la próxima ronda de `/seeker` o `/marketer`.
-- **2026-07-14** — Sin cambios sustanciales: el ledger permanece en F-1 a F-27,
-  sin fuentes nuevas registradas desde la revisión anterior. Repasé las 7 tesis
-  contra la rúbrica de rigurosidad; ninguna cambia de nivel de confianza — el
-  conjunto de evidencia que las sostiene no varió. Confirmo que tesis 3 (Gen Z,
-  una sola fuente 🟡C) y tesis 4 (brecha sísmica, una sola fuente 🟠D con tope
-  explícito) siguen siendo las más frágiles: tesis 3 necesita una segunda fuente
-  independiente que confirme el patrón generacional fuera de EE.UU. (idealmente
-  Perú), y tesis 4 necesita el dato directo de APESEG/SBS en vez de la cifra vía
-  prensa. Ninguna otra tesis, oportunidad o riesgo requiere matiz hoy; las 7
-  tesis, 5 oportunidades y 7 riesgos vigentes siguen representando bien la
-  evidencia disponible en el ledger.
-- **2026-07-15** — Sin cambios sustanciales: tercer día consecutivo con el
-  ledger fijo en F-1 a F-27 — no hay corrida nueva de `/seeker`, `/gossip`,
-  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
-  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
-  confianza. La racha de "sin novedad" en sí misma es una señal para el
-  negocio, no solo un no-evento: tesis 3 y 4 llevan ya tres revisiones seguidas
-  marcadas como las más frágiles del set sin que nadie haya cerrado el hueco
-  (segunda fuente generacional fuera de EE.UU. para tesis 3; dato primario
-  APESEG/SBS para tesis 4). Instinto: si ningún otro skill va a levantar esa
-  evidencia pronto, más vale bajar la prioridad de cualquier caso de negocio
-  que dependa hoy del 3.3% de tesis 4 y tratarlo explícitamente como
-  provisional, en vez de dejarlo languidecer en confianza "Media" indefinida.
-  No se tocó ninguna cifra ni fuente — es una nota de gestión de la cartera de
-  tesis, no un cambio de evidencia.
-- **2026-07-16** — Sin cambios sustanciales: cuarto día consecutivo con el
-  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
-  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
-  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
-  confianza. Convertí la observación de ayer sobre la racha de "sin novedad"
-  en un riesgo explícito de la cartera (nuevo bullet en ⚠️ Riesgos, marcado
-  instinto): esta opinión es un snapshot con vencimiento implícito, y las
-  tesis 3 (Gen Z, una sola fuente 🟡C) y 4 (brecha sísmica, una sola fuente
-  🟠D con tope explícito) no deben tratarse como validadas por el mero hecho
-  de que nadie las refutó en cuatro días — si alguna va a sostener una
-  decisión grande de negocio, corresponde correr `/seeker` o `/marketer`
-  antes de usarla tal cual está. No se tocó ninguna cifra ni fuente.
-- **2026-07-17** — Sin cambios sustanciales: quinto día consecutivo con el
-  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
-  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
-  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
-  confianza. Único matiz aplicado hoy: extendí a la tesis 3 (Gen Z) el mismo
-  tope explícito que ya tenía la tesis 4 (brecha sísmica) desde el
-  2026-07-13 — ambas son las tesis más frágiles del set (una sola fuente
-  🟡C/🟠D cada una) y ninguna debe subir de confianza por mera consistencia
-  narrativa con otras tesis; solo sube con una fuente B o mejor que confirme
-  el hallazgo de forma directa. No se sumó ningún riesgo nuevo: la racha de
-  estancamiento del ledger (ya señalada como riesgo el 2026-07-16) sigue
-  siendo la observación de portafolio más relevante — cinco días sin
-  evidencia nueva es la señal en sí misma, no solo la ausencia de una.
-- **2026-07-18** — Sin cambios sustanciales: sexto día consecutivo con el
-  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
-  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
-  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
-  confianza. Cambié el tono del riesgo de estancamiento: ya no es solo una
-  observación de portafolio, es una llamada a la acción concreta — encargar
-  `/seeker` sobre comprensión de seguros en Gen Z/millennials peruanos (cierra
-  tesis 3) y el dato primario de APESEG/SBS sobre penetración sísmica (cierra
-  tesis 4), en vez de seguir revisando el mismo ledger esperando que cambie
-  solo. Formalicé que tesis 3 y 4 quedan **congeladas en Media** hasta que
-  llegue esa evidencia — no suben por antigüedad ni por repetición de la
-  revisión diaria. Bitácora dentro de la ventana de ~30 días; no hubo entradas
-  que podar.
-- **2026-07-19** — Sin cambios sustanciales: séptimo día consecutivo con el
-  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
-  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
-  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
-  confianza. Único matiz aplicado: reformulé el riesgo de estancamiento — pedir
-  `/seeker`/`/marketer` cada día sin que nadie los ejecute ya no aporta señal
-  nueva, así que fijé un checkpoint concreto en vez de repetir el llamado a
-  diario: el códice (`CLAUDE.md`) ya tiene programada la próxima corrida del
-  reporte quincenal automatizado (`cerrajero`) para **2026-07-21**, que es donde
-  razonablemente puede entrar evidencia fresca sobre el sector. Tesis 3 y 4
-  siguen **congeladas en Media** hasta esa fecha; esta bitácora no repetirá la
-  misma advertencia de "sin novedad" cada 24h si el 21 tampoco trae nada — a
-  partir de entonces corresponde una evaluación distinta (por ejemplo, si
-  siguen sin cerrarse, degradarlas fuera de "tesis vigentes" en vez de
-  mantenerlas indefinidamente en Media). Bitácora dentro de la ventana de ~30
-  días; no hubo entradas que podar.
+  ledger (F-1 a F-15). Construí 5 tesis iniciales: (1) la divulgación no
+  convierte, (2) el coaseguro es el cuello de botella de comprensión, (3) el
+  problema es estructural/no generacional, (4) la brecha sísmica peruana es una
+  categoría casi vacía, (5) ESG es palanca global, no probada en Perú. Marqué 3
+  oportunidades y 4 riesgos, incluyendo la advertencia de no usar F-15.
+- **2026-07-12** — El ledger creció a F-27 (`/trinidad` sobre behavioral
+  design). Sumé tesis 6 (crisis del nudge) y tesis 7 (s-frame > i-frame, caso
+  UBI). Agregué 2 oportunidades y 4 riesgos nuevos (ROI de nudge sobreestimado,
+  corpus retractado Ariely/Gino, Vitality como dato autopublicado, caída de
+  tenencia de vida en EE.UU.).
+- **2026-07-13 a 2026-07-19** — Siete revisiones diarias consecutivas
+  reportaron "sin cambios sustanciales" contra `registro_fuentes.md`, fijo en
+  F-1 a F-27. Único ajuste real en esa ventana: se puso tope explícito de
+  confianza a tesis 3 y 4 (no suben por consistencia narrativa, solo por fuente
+  B+ directa) y se fijó un checkpoint para el 2026-07-21 (próxima corrida de
+  `cerrajero`). *Nota de la revisión de hoy:* esta racha de "sin novedad" fue en
+  parte un artefacto de ruta de archivo (ver entrada 2026-07-20) — el ledger
+  real sí creció durante esta ventana, solo que bajo un nombre de archivo
+  distinto (`codice.md`, vigente desde el 2026-07-19).
+- **2026-07-20** — Cambio sustancial: leí el ledger vigente (`codice.md`, ahora
+  con 171 fuentes) y encontré 144 fuentes nuevas (F-28 a F-171) nunca antes
+  incorporadas a esta opinión, producto de `/trinidad`/`/seeker` entre el
+  2026-07-06 y el 2026-07-19 (salud/farmacias/PL 08488, mecanismos de seguros de
+  salud, material visual de venta consultiva, transición venta fría→opt-in,
+  evaluación de agentes conversacionales de IA, y datos de rentabilidad/mercado
+  global de seguros). Sumé 6 tesis nuevas (8-13): riesgo regulatorio de contacto
+  no consentido ya activo contra Pacífico Seguros y BBVA; oportunidad de
+  farmacia+triage IA validada por señal estatal e infraestructura real; riesgo
+  de sobreclamar precisión clínica de IA (caso Babylon); ciclo de rentabilidad
+  del seguro global en máximo de 25 años; choice overload como folklore de UX
+  (la palanca real es estructurar, no podar catálogo); y divulgación progresiva
+  de datos como mecanismo de conversión que funciona incluso sin cambiar la
+  actitud real del cliente hacia su privacidad. Actualicé tesis 4 (paramétrico
+  ahora con mercado/diseño técnico real detrás, no solo instinto) y tesis 7
+  (UBI funciona pero con techo de confianza documentado). Reescribí
+  Oportunidades y Riesgos para reflejar todo esto, incluyendo un riesgo de
+  proceso: la racha de "sin cambios" de la semana pasada fue en parte un
+  artefacto de que se leía una ruta de archivo congelada, no evidencia real de
+  estancamiento del ledger.
+</content>
