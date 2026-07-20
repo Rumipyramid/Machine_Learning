@@ -20,7 +20,7 @@ persona, razonadas por el modelo a partir del perfil de cada persona.
 ## Requisitos y ejecución
 
 ```bash
-cd research/personas/llm_app
+cd research/personas/apps/llm
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY=sk-ant-...     # tu clave de la API de Claude
 python app.py                            # → http://localhost:5000/

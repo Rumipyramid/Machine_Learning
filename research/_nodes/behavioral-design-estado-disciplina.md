@@ -225,3 +225,5 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
 - [[material-visual-venta-consultiva|Material visual en la venta consultiva]] — aplica
   varios de los mismos principios (experimentar en la propia población, diseño a nivel de
   producto no solo de mensaje) al problema específico de explicar un producto de seguros.
+- [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — el activo concreto
+  que posiciona al proyecto en la frontera de "AI Behavioral Science" que este node identifica.

@@ -297,3 +297,5 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del
   mercado]] — el caso Vitality y la brecha de confianza en seguros de este node son parte
   de la evidencia de negocio de ese.
+- [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — este node calibra
+  sus marginales (SBS, APESEG) directamente en el esquema del generador.

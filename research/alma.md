@@ -10,7 +10,10 @@ carpetas: la dan este `alma.md` y la vista **local** de cada node, en su secció
 > **Alcance de este hub**: cubre el conocimiento de investigación de `research/` (seguros, salud,
 > Perú). **No** cubre `research/personas/` (subsistema de código del generador de personas
 > sintéticas — schema JSON + matriz + scripts, ya estructurado y referenciado en `CLAUDE.md`) ni
-> `research/updates/` (reportes quincenales, ya estructurado y auto-indexado en `CLAUDE.md`).
+> `research/updates/` (reportes quincenales, ya estructurado y auto-indexado en `CLAUDE.md`) —
+> con una excepción declarada: `_nodes/modelo-personas-sinteticas.md` cuenta la historia
+> *conceptual* del modelo (que no vivía en un solo doc) sin mover ni duplicar el código/schema,
+> que sigue exactamente donde estaba.
 
 ---
 
@@ -61,6 +64,7 @@ por afirmación cuando corresponda.
 | `_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan las organizaciones de venta fría a venta opt-in (seguros y sectores análogos): disparadores, impacto en volumen, tácticas puente | 2026-07-14 | v1.0 |
 | `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y frameworks para medir la calidad de un agente/chatbot de IA (usabilidad, métricas técnicas RAG, específicos de banca/seguros) | 2026-07-15 | v1.0 |
 | `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-17 | v1.1 (migrado desde `main` a Many Brains, ver nota de reconciliación abajo) |
+| `_nodes/modelo-personas-sinteticas.md` | Cómo funciona y se calibra el modelo `lapuerta` (20 variables, v1.3) — excepción declarada de alcance, no mueve el código | 2026-07-20 | v1.0 |
 
 ---
 

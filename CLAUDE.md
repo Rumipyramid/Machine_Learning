@@ -19,6 +19,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/_nodes/material-visual-venta-consultiva.md` | Material visual en venta consultiva: qué reduce incertidumbre y facilita la elección | Fuentes F-119 a F-127 |
 | `research/_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan organizaciones de venta fría a opt-in; reducir desconfianza al pedir datos | Fuentes F-128 a F-146 |
 | `research/_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y metodologías para medir calidad de agentes de IA conversacionales | Fuentes F-147 a F-159 |
+| `research/_nodes/modelo-personas-sinteticas.md` | Historia conceptual del modelo `lapuerta` (excepción de alcance de `alma.md`: no cubre `research/personas/`, pero este node sí existe) | No mueve el código/schema — solo los cita |
 | `research/personas/generador/` | Fuente de verdad del modelo de personas sintéticas | generador + esquema + matriz + tooling de calibración |
 | `research/personas/generador/synthetic_user_schema.json` | Esquema machine-readable (v1.2, 17 variables) | Lo consume el generador |
 | `research/personas/generador/matriz_usuarios_sinteticos.md` | Matriz legible: variables, distribuciones, grafo causal, arquetipos | Deriva de la investigación base |
