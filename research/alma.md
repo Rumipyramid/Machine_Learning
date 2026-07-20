@@ -101,6 +101,14 @@ exactos de los nodes ya migrados — se descartaron sin pérdida de contenido.
 Los IDs F-16 a F-27 que esta rama había asignado a otra investigación (rentabilidad P/C,
 telemática, seguros paramétricos) se renumeraron a F-160 a F-171 para no chocar — ver ledger.
 
+**Segunda reconciliación (2026-07-20):** `main` siguió evolucionando el layout viejo en
+paralelo tras la primera reconciliación (nunca recibió el merge, sigue sin `alma.md`/`_nodes/`).
+El ledger (renombrado `registro_fuentes.md`→`codice.md` el 2026-07-19) solo recibió cambios
+cosméticos de `main` (formato `[[wikilink]]`, sin filas nuevas) — se conservó la versión de esta
+rama, ya migrada. De paso se corrigió una referencia obsoleta que había quedado de la primera
+reconciliación: F-16 a F-27 en `codice.md` seguían apuntando a `research/behavioral_design_360.md`
+(ruta pre-migración) en vez de `research/_nodes/behavioral-design-estado-disciplina.md`.
+
 ---
 
 ## Cómo se mantiene este hub

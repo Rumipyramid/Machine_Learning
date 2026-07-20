@@ -1,5 +1,9 @@
 /* ==========================================================================
-   Buenas Mierdas — estilos globales (estética web vernácula 90s/2000s)
+   Buenas Mierdas — estilos globales
+   Estética: Macintosh System 1 (1984) en pasteles. TODO PLANO:
+   sin degradés, sin relieves 3D, sin sombras difusas. Solo línea fina de
+   tinta sobre crema, títulos centrados con rayitas, y botones que se
+   INVIERTEN al presionarlos (fondo tinta, letra crema), como en 1984.
    ========================================================================== */
 
 /* Fuente pixelada: cuando tengas el archivo, ponlo en public/fonts/ y
@@ -11,12 +15,16 @@
 */
 
 :root {
-  --rosa: #ffd6e8;
-  --lila: #b8a9f0;
-  --celeste: #cdefff;
-  --gris-95: #c0c0c0;
-  --gris-oscuro: #808080;
-  --azul-titulo: #000080;
+  /* paleta 90s: los pasteles de los juguetes — más saturados y golosos
+     (bubblegum, menta, lavanda de My Little Pony, mantequilla, aqua) */
+  --rosa: #ffb3d9;
+  --lila: #d4bdff;
+  --celeste: #a8e8ff;
+  --menta: #b0f2cd;
+  --vainilla: #fff0b3;
+  --crema: #fffaf0;          /* fondo de ventanas */
+  --tinta: #5c4370;          /* la "tinta negra" del System 1, en morado juguete */
+  --tinta-suave: #a186b3;    /* texto secundario */
   --fuente-pixel: 'PixelFont', 'Courier New', monospace;
 }
 
@@ -38,11 +46,10 @@ body,
 body {
   font-family: var(--fuente-pixel);
   background: var(--rosa);
-  /* que el navegador NO suavice las imágenes pixeladas */
+  color: var(--tinta);
   image-rendering: pixelated;
 }
 
-/* el canvas 3D ocupa toda la pantalla, la UI flota encima */
 .app {
   position: relative;
 }
@@ -56,7 +63,8 @@ body {
 
 .ui-overlay button,
 .ui-overlay .ventana-retro,
-.ui-overlay .barra-superior {
+.ui-overlay .barra-superior,
+.ui-overlay .pantalla-carga {
   pointer-events: auto; /* ...excepto en los elementos de UI */
 }
 
@@ -69,26 +77,61 @@ body {
 }
 
 .titulo-sitio {
-  font-size: 14px;
-  color: #7a4a6d;
-  text-shadow: 1px 1px 0 #ffffff;
-  letter-spacing: 1px;
+  font-size: 22px; /* el nombre del altar merece presencia */
+  color: var(--tinta);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 var(--crema);
 }
 
-/* ---------- botones estilo Windows 95 ---------- */
+/* ---------- hint de navegación (abajo, titilando cuando estás quieta) ---------- */
+.ayuda-nav {
+  position: absolute;
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: var(--tinta);
+  background: var(--crema);
+  border: 1px solid var(--tinta);
+  padding: 4px 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+}
+
+.ayuda-nav.visible {
+  opacity: 0.55; /* baja opacidad: presente, sin gritar */
+  animation: parpadear 1.6s steps(2, start) infinite;
+}
+
+/* ---------- botones System 1: rectángulo redondeado PLANO ---------- */
 .boton-retro {
   font-family: var(--fuente-pixel);
   font-size: 12px;
-  padding: 6px 14px;
-  background: var(--gris-95);
-  color: #000;
-  border: 2px solid;
-  border-color: #ffffff var(--gris-oscuro) var(--gris-oscuro) #ffffff;
+  color: var(--tinta);
+  padding: 6px 16px;
+  background: var(--crema);
+  border: 1.5px solid var(--tinta);
+  border-radius: 10px;   /* el rounded-rect clásico del Mac */
   cursor: pointer;
 }
 
+.boton-retro:hover {
+  background: var(--lila);
+}
+
+/* al presionar: INVERSIÓN, como los botones del Mac original */
 .boton-retro:active {
-  border-color: var(--gris-oscuro) #ffffff #ffffff var(--gris-oscuro);
+  background: var(--tinta);
+  color: var(--crema);
+}
+
+/* botón por defecto (el "OK" de 1984): doble borde exterior */
+.boton-primario {
+  box-shadow:
+    0 0 0 3px var(--crema),
+    0 0 0 4.5px var(--tinta);
 }
 
 .boton-subir {
@@ -97,66 +140,361 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
-  padding: 10px 22px;
+  padding: 10px 24px;
 }
 
-/* ---------- ventana retro (manifiesto, buscador, formularios…) ---------- */
+/* ---------- ventana System 1: crema, línea fina, esquinas rectas ---------- */
 .ventana-fondo {
   position: absolute;
   inset: 0;
   display: grid;
   place-items: center;
-  /* el blur del 3D detrás del pop-up, como pediste en la pantalla 2 */
   backdrop-filter: blur(6px);
-  background: rgba(255, 214, 232, 0.25);
+  background: rgba(255, 214, 232, 0.22);
   pointer-events: auto;
 }
 
 .ventana-retro {
-  width: min(440px, 90vw);
-  background: var(--gris-95);
-  border: 2px solid;
-  border-color: #ffffff var(--gris-oscuro) var(--gris-oscuro) #ffffff;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
+  width: min(460px, 92vw);
+  background: var(--crema);
+  border: 1.5px solid var(--tinta);
+  /* sombra sólida desplazada, sin difuminar: plano sobre plano */
+  box-shadow: 3px 3px 0 var(--tinta-suave);
 }
 
+/* barra de título: las 6 rayitas horizontales del System 1, título al centro */
 .ventana-titulo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--azul-titulo);
-  color: #fff;
+  position: relative;
+  text-align: center;
   font-size: 12px;
-  padding: 4px 8px;
+  color: var(--tinta);
+  padding: 6px 30px;
+  background: repeating-linear-gradient(
+    180deg,
+    var(--tinta) 0 1px,
+    var(--crema) 1px 4px
+  );
+  border-bottom: 1.5px solid var(--tinta);
 }
 
+.ventana-titulo > span {
+  background: var(--crema); /* el título "interrumpe" las rayitas */
+  padding: 0 10px;
+}
+
+/* botón de cerrar: cuadradito vacío a la IZQUIERDA, como en 1984 */
 .ventana-cerrar {
-  font-family: var(--fuente-pixel);
-  background: var(--gris-95);
-  border: 1px solid;
-  border-color: #ffffff var(--gris-oscuro) var(--gris-oscuro) #ffffff;
-  width: 20px;
-  height: 18px;
-  font-size: 10px;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  font-size: 8px;
   line-height: 1;
+  color: var(--crema); /* invisible hasta hover: el cuadrado va vacío */
+  font-family: var(--fuente-pixel);
+  background: var(--crema);
+  border: 1.5px solid var(--tinta);
   cursor: pointer;
+}
+
+.ventana-cerrar:hover {
+  color: var(--tinta);
+}
+
+.ventana-cerrar:active {
+  background: var(--tinta);
 }
 
 .ventana-cuerpo {
   padding: 16px;
   font-size: 13px;
   line-height: 1.6;
-  color: #1a1a1a;
+  color: var(--tinta);
 }
 
 .ventana-cuerpo p + p {
   margin-top: 12px;
 }
 
+/* ---------- pantalla de carga (pantalla 1) ---------- */
+.pantalla-carga {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  background: var(--rosa); /* tapa el 3D mientras carga: plano total */
+  pointer-events: auto;
+}
+
+.ventana-carga {
+  width: min(380px, 90vw);
+}
+
+.carga-texto {
+  font-size: 12px;
+  margin-bottom: 12px;
+  min-height: 2.6em;
+  color: var(--tinta);
+}
+
+/* barra pixelada: marco fino + bloques cuadrados */
+.barra-carga {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1.5px solid var(--tinta);
+  background: var(--crema);
+  margin-bottom: 14px;
+}
+
+.barra-celda {
+  width: 12px;
+  height: 14px;
+  background: var(--crema);
+}
+
+.barra-celda.llena {
+  background: var(--tinta);
+}
+
+.banderitas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.boton-idioma {
+  font-size: 13px;
+  padding: 7px 14px;
+}
+
+.bandera {
+  font-size: 15px;
+}
+
+/* ---------- tutorial (tabla de controles) ---------- */
+.tabla-controles {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.tabla-controles td {
+  padding: 5px 8px;
+  border-bottom: 1px dotted var(--tinta-suave);
+  font-size: 12px;
+}
+
+.tabla-controles td:first-child {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.boton-start {
+  font-size: 14px;
+  padding: 8px 26px;
+}
+
+/* ---------- buscador ---------- */
+.input-retro {
+  font-family: var(--fuente-pixel);
+  font-size: 13px;
+  color: var(--tinta);
+  width: 100%;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: 1.5px solid var(--tinta);
+  border-radius: 0; /* recto, 1984 */
+  outline: none;
+}
+
+.input-retro:focus {
+  background: var(--vainilla);
+}
+
+.lista-afectos {
+  max-height: 45vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item-afecto {
+  font-family: var(--fuente-pixel);
+  color: var(--tinta);
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  grid-template-areas:
+    'muestra nombre coords'
+    'muestra tags tags';
+  align-items: center;
+  gap: 2px 8px;
+  text-align: left;
+  padding: 7px 9px;
+  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid var(--tinta);
+  cursor: pointer;
+}
+
+.item-afecto:hover {
+  background: var(--celeste);
+}
+
+.item-afecto:active {
+  background: var(--tinta);
+  color: var(--crema);
+}
+
+.muestra-color {
+  grid-area: muestra;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--tinta);
+  image-rendering: pixelated;
+}
+
+.item-nombre {
+  grid-area: nombre;
+  font-weight: bold;
+}
+
+.item-coords {
+  grid-area: coords;
+  color: var(--tinta-suave);
+  font-size: 11px;
+}
+
+.item-tags {
+  grid-area: tags;
+}
+
+.chip-tag {
+  display: inline-block;
+  font-size: 10px;
+  color: var(--tinta);
+  background: var(--rosa);
+  border: 1px solid var(--tinta);
+  border-radius: 999px;
+  padding: 1px 8px;
+  margin-right: 4px;
+}
+
+.sin-resultados {
+  color: var(--tinta-suave);
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* ---------- vista de detalle ---------- */
+.detalle-campo {
+  margin-bottom: 8px;
+}
+
+.contador-reapropiaciones {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.consagrado {
+  color: #c78a00;
+  font-weight: bold;
+  animation: parpadear 1.2s steps(2, start) infinite;
+}
+
+.botones-detalle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ---------- formulario de subida ---------- */
+.zona-drop {
+  border: 1.5px dashed var(--tinta);
+  background: var(--vainilla);
+  padding: 22px 14px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--tinta-suave);
+  cursor: pointer;
+  margin-bottom: 12px;
+  white-space: pre-line;
+}
+
+.zona-drop.arrastrando {
+  background: var(--lila);
+  color: var(--tinta);
+}
+
+.zona-drop.con-archivo {
+  border-style: solid;
+  background: var(--celeste);
+  color: var(--tinta);
+}
+
+.campo-form {
+  margin-bottom: 10px;
+}
+
+.campo-form label {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 3px;
+  color: var(--tinta-suave);
+}
+
+.campo-form textarea {
+  resize: vertical;
+  min-height: 56px;
+}
+
+.nota-form {
+  font-size: 11px;
+  color: var(--tinta-suave);
+  margin-bottom: 10px;
+}
+
+.enlace-retro {
+  background: none;
+  border: none;
+  font-family: var(--fuente-pixel);
+  font-size: 11px;
+  color: var(--tinta);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.error-form {
+  font-size: 12px;
+  color: var(--tinta);
+  background: var(--rosa);
+  border: 1.5px solid var(--tinta);
+  padding: 6px 10px;
+  margin-bottom: 10px;
+}
+
+.mensaje-confirmacion {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 8px 0;
+}
+
 /* ---------- textito que parpadea, muy geocities ---------- */
 .parpadeo {
   animation: parpadear 1.2s steps(2, start) infinite;
-  color: var(--azul-titulo);
+  color: var(--tinta-suave);
 }
 
 @keyframes parpadear {

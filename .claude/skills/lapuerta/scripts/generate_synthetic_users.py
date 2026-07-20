@@ -135,6 +135,14 @@ def sample_bancarizado(rng: random.Random, schema: dict, nse: str, region: str, 
     return rng.random() < sigmoid(score)
 
 
+def sample_trabajo_plataforma_digital(rng: random.Random, schema: dict, situacion: str,
+                                      generacion: str, acceso: str) -> bool:
+    s = schema["variables"]["trabajo_plataforma_digital"]["score"]
+    score = (s["intercepto"] + s["situacion_laboral"][situacion]
+             + s["generacion"][generacion] + s["acceso_digital"][acceso])
+    return rng.random() < sigmoid(score)
+
+
 def sample_tenencia(rng: random.Random, schema: dict, nse: str, edu: str, sesgo: str,
                     confianza: str, situacion: str, bancarizado: bool, vehiculo: str,
                     cobertura_prev: str) -> str:
@@ -184,6 +192,20 @@ def sample_wtp(rng: random.Random, schema: dict, tenencia: str) -> float:
     return round(max(0.0, val), 3)
 
 
+def sample_propension_microseguro(rng: random.Random, schema: dict, nse: str, situacion: str,
+                                  acceso: str, trabajo_plataforma: bool, sesgo: str) -> str:
+    s = schema["modelos_derivados"]["propension_microseguro"]["score"]
+    score = (s["intercepto"] + s["nse"][nse] + s["situacion_laboral"][situacion]
+             + s["acceso_digital"][acceso]
+             + s["trabajo_plataforma_digital"]["true" if trabajo_plataforma else "false"]
+             + s["sesgo_presente"][sesgo])
+    if score >= s["umbral_alta"]:
+        return "alta"
+    if score >= s["umbral_media"]:
+        return "media"
+    return "baja"
+
+
 def generate_user(rng: random.Random, schema: dict, idx: int,
                   base_override: dict | None = None) -> dict:
     v = schema["variables"]
@@ -203,12 +225,15 @@ def generate_user(rng: random.Random, schema: dict, idx: int,
     vehiculo = sample_tenencia_vehiculo(rng, schema, region)
     acceso = sample_acceso_digital(rng, schema, region, nse, generacion)
     bancarizado = sample_bancarizado(rng, schema, nse, region, acceso)
+    trabajo_plataforma_digital = sample_trabajo_plataforma_digital(rng, schema, situacion, generacion, acceso)
 
     confianza = sample_confianza(rng, schema, canal)
     disposicion_datos = sample_disposicion_datos(rng, schema, apertura, confianza)
     tenencia = sample_tenencia(rng, schema, nse, edu, sesgo, confianza, situacion, bancarizado, vehiculo, cobertura_prev)
     desastres = sample_desastres(rng, schema, nse, exposicion, tenencia)
     wtp = sample_wtp(rng, schema, tenencia)
+    propension_microseguro = sample_propension_microseguro(rng, schema, nse, situacion, acceso,
+                                                            trabajo_plataforma_digital, sesgo)
 
     return {
         "id": f"user_{idx:06d}",
@@ -223,6 +248,7 @@ def generate_user(rng: random.Random, schema: dict, idx: int,
         "tenencia_vehiculo": vehiculo,
         "acceso_digital": acceso,
         "bancarizado": bancarizado,
+        "trabajo_plataforma_digital": trabajo_plataforma_digital,
         "exposicion_riesgo_sismico": exposicion,
         "apertura_datos_ia": apertura,
         "confianza_aseguradora": confianza,
@@ -230,6 +256,7 @@ def generate_user(rng: random.Random, schema: dict, idx: int,
         "tenencia_seguro": tenencia,
         "seguro_desastres_naturales": desastres,
         "wtp_ratio": wtp,
+        "propension_microseguro": propension_microseguro,
     }
 
 

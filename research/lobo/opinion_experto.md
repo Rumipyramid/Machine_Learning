@@ -178,6 +178,20 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   de negocio grande (pricing, entrada a categoría, pitch a inversionista) sobre
   tesis 3 o 4 —las dos más frágiles del set—, correr `/seeker` o `/marketer`
   antes de usarlas, no asumir que "nadie las refutó" equivale a "siguen firmes".
+- **Esperar pasivamente a que aparezca evidencia nueva ya no es gratis — pero
+  seguir pidiendo `/seeker`/`/marketer` cada día tampoco lo es.** *Instinto*: con
+  siete días seguidos sin corridas de `/seeker`, `/gossip`, `/marketer` ni
+  `/trinidad` desde el 2026-07-12, insistir a diario en encargar esas búsquedas
+  sin que nadie las ejecute es una jugada que ya rindió lo que tenía que rendir
+  (dejar la brecha visible) y ahora solo repite la misma nota. El checkpoint
+  natural más cercano ya está en el propio códice: el reporte quincenal
+  automatizado de `cerrajero`/GitHub Action tiene su próxima corrida programada
+  para **2026-07-21** (ver índice en `CLAUDE.md`) — es el punto donde
+  razonablemente puede entrar evidencia nueva sin depender de que alguien
+  encargue manualmente `/seeker` sobre Gen Z peruano (tesis 3) o el dato primario
+  APESEG/SBS (tesis 4). Hasta esa fecha, tesis 3 y 4 siguen **congeladas en
+  Media** y esta bitácora puede dejar de repetir la misma llamada a la acción a
+  diario — el siguiente chequeo con sustancia real es el 21, no mañana.
 
 ## 📔 Bitácora
 
@@ -264,3 +278,32 @@ el producto (coaseguro fijo, pricing por uso), no explicarlo mejor.
   estancamiento del ledger (ya señalada como riesgo el 2026-07-16) sigue
   siendo la observación de portafolio más relevante — cinco días sin
   evidencia nueva es la señal en sí misma, no solo la ausencia de una.
+- **2026-07-18** — Sin cambios sustanciales: sexto día consecutivo con el
+  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
+  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
+  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
+  confianza. Cambié el tono del riesgo de estancamiento: ya no es solo una
+  observación de portafolio, es una llamada a la acción concreta — encargar
+  `/seeker` sobre comprensión de seguros en Gen Z/millennials peruanos (cierra
+  tesis 3) y el dato primario de APESEG/SBS sobre penetración sísmica (cierra
+  tesis 4), en vez de seguir revisando el mismo ledger esperando que cambie
+  solo. Formalicé que tesis 3 y 4 quedan **congeladas en Media** hasta que
+  llegue esa evidencia — no suben por antigüedad ni por repetición de la
+  revisión diaria. Bitácora dentro de la ventana de ~30 días; no hubo entradas
+  que podar.
+- **2026-07-19** — Sin cambios sustanciales: séptimo día consecutivo con el
+  ledger fijo en F-1 a F-27 — sin corridas nuevas de `/seeker`, `/gossip`,
+  `/marketer` ni `/trinidad` desde el 2026-07-12. Repasé las 7 tesis, 5
+  oportunidades y 7 riesgos contra la rúbrica; ninguna cambia de nivel de
+  confianza. Único matiz aplicado: reformulé el riesgo de estancamiento — pedir
+  `/seeker`/`/marketer` cada día sin que nadie los ejecute ya no aporta señal
+  nueva, así que fijé un checkpoint concreto en vez de repetir el llamado a
+  diario: el códice (`CLAUDE.md`) ya tiene programada la próxima corrida del
+  reporte quincenal automatizado (`cerrajero`) para **2026-07-21**, que es donde
+  razonablemente puede entrar evidencia fresca sobre el sector. Tesis 3 y 4
+  siguen **congeladas en Media** hasta esa fecha; esta bitácora no repetirá la
+  misma advertencia de "sin novedad" cada 24h si el 21 tampoco trae nada — a
+  partir de entonces corresponde una evaluación distinta (por ejemplo, si
+  siguen sin cerrarse, degradarlas fuera de "tesis vigentes" en vez de
+  mantenerlas indefinidamente en Media). Bitácora dentro de la ventana de ~30
+  días; no hubo entradas que podar.

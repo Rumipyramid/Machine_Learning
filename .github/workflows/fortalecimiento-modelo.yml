@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   reporte:
@@ -36,8 +37,40 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add research/updates CLAUDE.md
           if git diff --cached --quiet; then
-            echo "Sin cambios que commitear."
+            echo "Sin cambios que commitear (reporte)."
           else
             git commit -m "Reporte quincenal de fortalecimiento del modelo ($(date +%F))"
             git push
+          fi
+
+      # Las variables de prioridad Alta se aplican solas al esquema/generador (ver
+      # generate_report.py: apply_alta_proposals) y ya pasaron validate.py --check, pero
+      # siguen siendo código reescrito por un LLM sin ojo humano previo -> en vez de
+      # pushear directo a main, van en un PR aparte para revisión antes de mergear.
+      - name: PR con variables Alta aplicadas al modelo (si hubo)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "lapuerta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git status --porcelain -- research/personas/generador | grep -q .; then
+            DATE=$(date +%F)
+            BRANCH="lapuerta/alta-auto-${DATE}"
+            REPORTE="research/updates/${DATE}_fortalecimiento_modelo.md"
+            git checkout -b "$BRANCH"
+            git add research/personas/generador
+            git commit -m "Variables de prioridad Alta aplicadas automáticamente al modelo (${DATE})"
+            git push -u origin "$BRANCH" --force
+            if gh pr view "$BRANCH" >/dev/null 2>&1; then
+              echo "Ya existe un PR abierto para $BRANCH; el push ya lo actualizó, no se crea otro."
+            else
+              gh pr create \
+                --base main \
+                --head "$BRANCH" \
+                --title "lapuerta: variables Alta aplicadas automáticamente (${DATE})" \
+                --body "Generado por el ciclo quincenal desatendido (\`generate_report.py\`). \`validate.py --check\` pasó (marginales + asociaciones dentro de tolerancia), pero el esquema/generador fue reescrito por un LLM sin revisión humana previa — revisar el diff antes de mergear. Reporte de origen: \`${REPORTE}\`."
+            fi
+          else
+            echo "Sin cambios en research/personas/generador (ninguna Alta aplicada este ciclo)."
           fi
