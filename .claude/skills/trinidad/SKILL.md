@@ -101,7 +101,7 @@ de dejar la sección vacía sin explicación.
 
 ### Paso 5: Registro consolidado en el cronista
 
-Al terminar, registra en el ledger de `cronista` (`research/fuentes/registro_fuentes.md`)
+Al terminar, registra en el ledger de `cronista` (`research/fuentes/codice.md`)
 todas las fuentes usadas en las tres pistas, con la misma rúbrica A-E de siempre:
 
 - Deduplica contra el ledger existente antes de escribir (por URL o Autor+Año+Título).
@@ -110,6 +110,17 @@ todas las fuentes usadas en las tres pistas, con la misma rúbrica A-E de siempr
 - Es normal que las tres pistas produzcan fuentes de rigor muy distinto en la misma
   investigación (un paper A junto a un hilo de Reddit E) — regístralas todas, cada una
   con su nivel real, sin forzar equivalencia.
+
+### Paso 6: Persistir el reporte consolidado (Many Brains)
+
+Si el proyecto tiene un `research/alma.md` (método Many Brains), el reporte de 360° no debe
+quedar solo en el chat: **créalo o amplíalo como node** en `research/_nodes/` (kebab-case),
+manteniendo las tres pistas visualmente separadas igual que en la respuesta al usuario. Si el
+tema ya tiene un node relacionado, amplíalo con una sección nueva en vez de crear un node
+redundante — una fuente de verdad por tema. Cita fuentes por ID (`F-n`) del ledger de `cronista`,
+no las repitas completas. Actualiza `alma.md` (fila del node, fecha, versión si el cambio es
+estructural) y cierra el node con `## Conexiones` recíprocas. Si el proyecto no usa Many Brains
+todavía, sigue respondiendo solo en el chat.
 
 ## Anti-patrones a evitar
 

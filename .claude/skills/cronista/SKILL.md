@@ -33,9 +33,10 @@ se pierde.
 
 | | |
 |---|---|
-| **Archivo único** | `research/fuentes/registro_fuentes.md` |
+| **Archivo único** | `research/fuentes/codice.md` |
 | **Rol** | "El espacio del códice" donde se acumulan los resúmenes de fuentes. |
 | **Indexado en** | `CLAUDE.md` (mapa de archivos). |
+| **Se consulta con** | skill `/codice` (`.claude/skills/codice/`) — `cronista` escribe/registra, `codice` muestra y responde consultas sobre lo ya registrado. |
 
 Si el archivo no existe, **créalo** con la cabecera, la rúbrica de rigurosidad y la
 tabla vacía (ver *Plantilla del ledger* abajo) antes de añadir la primera entrada.
@@ -88,7 +89,7 @@ Reglas de la rúbrica:
 1. **Detecta la evidencia usada.** Recorre lo que acabas de escribir/crear e
    identifica cada fuente referenciable en la que te apoyaste (papers, reportes,
    estadísticas, normas, datasets, páginas web, resultados de búsqueda).
-2. **Abre o crea el ledger** (`research/fuentes/registro_fuentes.md`).
+2. **Abre o crea el ledger** (`research/fuentes/codice.md`).
 3. **Deduplica.** Antes de añadir, busca si la fuente ya existe (por URL, o por
    `Autor + Año + Título`):
    - **Si ya existe:** no dupliques. Actualiza su campo *Usado en / fundamenta*

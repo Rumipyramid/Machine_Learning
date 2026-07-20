@@ -1,10 +1,12 @@
-# Behavioral Design — Investigación 360° (trinidad)
+# Behavioral design: estado de la disciplina y del mercado
 
-> Reporte consolidado `/trinidad` · 2026-07-12
+> Documento de investigación. Fuente persistente y versionada en el repositorio.
+> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-07-17 · Versión: v1.1
+> (migrado desde `research/behavioral_design_360.md` a Many Brains, sin cambios de fondo)
+> Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta: **¿cómo le va al behavioral design como disciplina y mercado, y qué se
 > necesita para ser los mejores — aplicado a seguros (Rimac)?**
-> Pistas: 🔬 empírica/teórica (`seeker`) · 📱 social/mediática (`gossiper`) · 📈 negocio (`marketer`).
-> Fuentes registradas en `research/fuentes/registro_fuentes.md` (F-16 a F-27).
+> Fuentes registradas en `research/fuentes/codice.md` (F-16 a F-27).
 
 ## Resumen ejecutivo
 
@@ -209,3 +211,17 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   consolidación, que sí es verificable operación por operación.
 - No se accedió a bases de venture (PitchBook/Crunchbase) para dimensionar funding de
   boutiques conductuales.
+
+---
+
+## Conexiones
+
+- [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
+  seguros (Mundo vs. Perú)]] — el caso Vitality y la brecha de confianza en seguros que
+  describe ese node son parte de la evidencia de negocio de este.
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — Discovery Vitality aparece
+  en ambos nodes desde ángulos distintos: ahí como mecanismo que navega presión de costo,
+  aquí como caso de referencia de behavioral design aplicado a seguros.
+- [[material-visual-venta-consultiva|Material visual en la venta consultiva]] — aplica
+  varios de los mismos principios (experimentar en la propia población, diseño a nivel de
+  producto no solo de mensaje) al problema específico de explicar un producto de seguros.

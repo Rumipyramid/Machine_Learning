@@ -1,6 +1,6 @@
 # Matriz de variables para usuarios sintéticos — consumidores de seguros (Perú)
 
-> Deriva de `research/seguros_comportamiento_mundo_peru.md`.
+> Deriva de `research/_nodes/seguros-comportamiento-mundo-peru.md`.
 > Esquema machine-readable: `synthetic_user_schema.json` · Generador: `generate_synthetic_users.py`
 > Fecha: 2026-06-21
 
@@ -29,13 +29,27 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 | Variable | Depende de | Lógica | Origen |
 |---|---|---|---|
 | **exposicion_riesgo_sismico** | region | Lima/Costa → mayoritariamente alta; Sierra/Selva → media/baja | dato (Perú sísmico) |
-| **apertura_datos_ia** | generacion | Gen Z muy alta → Boomer baja | dato (Gen Z 87% confía en IA vs 75% Boomers) |
+| **apertura_datos_ia** | generacion | Gen Z muy alta → Boomer baja. Mide confianza **abstracta** en IA, no conducta real de compartir datos (ver `disposicion_compartir_datos_pricing` en §3) | dato (Gen Z 87% confía en IA vs 75% Boomers) |
 | **situacion_laboral** | nse | NSE alto → más formal_dependiente; NSE bajo → más informal | dato/supuesto (informalidad ~70%) |
 | **cobertura_previsional** | situacion_laboral | formal → AFP/ONP; informal → ninguna (~60% sin pensión) | dato (8º retiro AFP 2025) |
 | **tenencia_vehiculo** | region | Lima → más auto; Sierra/Selva → más moto/mototaxi; ~52% ninguno | dato (2/10 con seguro; 4/5 motos sin SOAT) |
 | **acceso_digital** | region+nse+generacion | score → {alta/media/baja}; urbano/NSE alto/joven ↑ | dato (bancarización 59%; Yape/Plin) |
 | **bancarizado** | nse+region+acceso_digital | prob. logística; marginal ≈ 0.59 | dato (~59% adultos en sist. financiero) |
+| **trabajo_plataforma_digital** | situacion_laboral+generacion+acceso_digital | score logístico; marginal ≈ 0.07; joven+informal/independiente+alto acceso ↑ | dato (Bloomberg Línea/Pandape: ~113k repartidores, ~2M usuarios de apps) |
 
+> **v1.3 (2026-07-19):** se añadieron `trabajo_plataforma_digital` (booleano) y `propension_microseguro`
+> (derivada), únicas propuestas de prioridad **Alta** del reporte 2026-08-05 — incorporadas de forma
+> automática (ver `.claude/skills/cerrajero/`). Intercepto de `trabajo_plataforma_digital` recalibrado
+> de -2.2 (propuesto) a **-3.2**: el valor propuesto daba ≈15% de marginal (~2× el objetivo ~6-8% del
+> reporte) por el efecto de mezcla logística sobre el subsegmento joven+informal+alto acceso digital;
+> -3.2 la deja en 0.073. `propension_microseguro` no mueve `tenencia_seguro` (eje paralelo, por diseño:
+> any-insurance se mantiene en 0.401). Marginales tras incorporar: any-seguro ≈ 0.40, desconfía ≈ 0.45,
+> desastres ≈ 0.031, bancarizado ≈ 0.59 — todas dentro de tolerancia (`validate.py --check` → PASS).
+
+> **v1.3 (2026-07-06):** se añadió `disposicion_compartir_datos_pricing` (§3), derivada de
+> `apertura_datos_ia` × `confianza_aseguradora`, a partir de hallazgos de `/trinidad` sobre cómo
+> funcionan hoy los modelos de seguros más rentables. Ver detalle abajo.
+>
 > **v1.2 (2026-07-21):** se añadió `cobertura_previsional` (AFP/ONP/ninguna), driver de `tenencia_seguro`.
 >
 > **v1.1 (2026-07-06):** se añadieron `situacion_laboral`, `tenencia_vehiculo`, `acceso_digital` y
@@ -43,6 +57,26 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 > (formal_dependiente +, bancarizado +, auto +, moto/informal −) y el split voluntario/obligatorio
 > se inclina a obligatorio para formales (Vida Ley) y autos (SOAT). Marginales validadas tras la
 > recalibración: any-seguro ≈ 0.41, desconfía ≈ 0.45, desastres ≈ 0.035, bancarizado ≈ 0.60.
+
+> **Pendientes de incorporar** — candidatas ya redactadas (evidencia + JSON propuesto) en
+> `research/updates/`, todavía no calibradas en el esquema. Las de prioridad **Alta** ya no se
+> acumulan aquí: `cerrajero` las aplica automáticamente al esquema/generador y las re-valida en
+> el momento (ver nota v1.3 arriba); esta tabla queda para Media/Baja, que siguen requiriendo
+> revisión manual antes de incorporarse. Ordenadas por prioridad declarada en su reporte de origen:
+>
+> | Variable | Prioridad | Reporte | Nota |
+> |---|---|---|---|
+> | `enfermedad_cronica` | Media-Alta | 2026-07-06 | — |
+> | `tenencia_vivienda` | Media-Alta | 2026-07-21 | — |
+> | `canal_preferido` (recalibrar) | Media | 2026-08-05 | pasar de marginal plana a condicional de `generacion`; revisar impacto en `confianza_aseguradora` |
+> | `genero` | Media | 2026-07-06 | — |
+> | `vulnerabilidad_economica` | Media | 2026-07-06 | — |
+> | `recibe_remesas` | Media | 2026-07-21 | — |
+> | `dependientes_hogar` | Baja | 2026-07-21 | — |
+> | `nivel_endeudamiento` | Baja | 2026-07-06 | — |
+> | Recalibración de marginales por ramo (salud/vida) | Baja | 2026-08-05 | no es variable nueva; chequeo de calibración |
+>
+> Al incorporar una, moverla a su tabla correspondiente arriba y anotar la versión (como v1.1/v1.2).
 
 ## 3. Variables derivadas (modeladas)
 
@@ -52,6 +86,34 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 | **tenencia_seguro** | score logístico: NSE + edu. financiera + sesgo presente (−) + confianza | any-insurance ≈ 0.40 | dato (SBS ~4/10) |
 | **seguro_desastres_naturales** | base 3.3% × NSE × exposición × tenencia | ≈ 0.033 | dato (APESEG) |
 | **wtp_ratio** | gaussiana: no asegurado μ≈0.66 · asegurado μ≈1.05 | — | dato (literatura WTP) |
+| **disposicion_compartir_datos_pricing** | tabla condicional: `apertura_datos_ia` × `confianza_aseguradora` → {alta/media/baja} | marginal implícita ≈ 0.15 "alta" | supuesto ajustado por analogía internacional (F-166, F-167) |
+| **propension_microseguro** | score: NSE+situación laboral+acceso digital+trabajo plataforma+sesgo presente → {alta/media/baja} | alta ≈ 0.34 · media ≈ 0.46 · baja ≈ 0.20 | dato/supuesto (Mordor, BID Invest, MAPFRE) |
+
+**`disposicion_compartir_datos_pricing`** (nueva en v1.3): separa la confianza **abstracta**
+en IA (`apertura_datos_ia`, que en Gen Z llega a "alta" 55%) de la disposición **conductual**
+real a compartir datos de comportamiento (telemetría, geolocalización) para un producto tipo
+usage-based insurance o triage con IA. La brecha entre ambas está documentada
+internacionalmente: en el Reino Unido, 62% de los conductores está preocupado por compartir
+sus datos de manejo y solo 32% se siente cómodo con que el asegurador recolecte telemática, y
+la adopción real de telemática es de solo ~12% pese a intenciones declaradas más altas
+(Insurance Business Mag 2026; Carrier Management 2026 — F-166, F-167). Incluso en el segmento
+más favorable del modelo (`apertura_datos_ia=alta` + `confianza_aseguradora=confía_plena`),
+el techo de "alta" disposición se calibró en 45%, no en 90%+, precisamente para capturar esa
+brecha. La marginal implícita resultante (~15%) es consistente con el orden de magnitud de
+adopción real observado en mercados más maduros que el peruano.
+
+⚠️ **Riesgo reputacional no modelado dinámicamente**: un evento de comunicación no transparente
+sobre IA en siniestros (caso Lemonade 2021: acusación viral de "fisonomía" algorítmica tras un
+hilo de Twitter — F-168) puede erosionar `confianza_aseguradora` de forma abrupta en el segmento
+expuesto, arrastrando hacia abajo esta variable. El generador no simula shocks temporales; se
+documenta aquí como advertencia cualitativa para el diseño de producto (transparencia en cómo
+se usa la IA en claims es condición previa para conseguir datos, no un extra opcional).
+
+**`propension_microseguro`** (nueva en v1.3, ver nota de incorporación automática arriba):
+eje independiente de la tenencia tradicional — mide propensión a un microseguro de bajo costo
+(S/ 5-15/mes) a partir de NSE, situación laboral, acceso digital, `trabajo_plataforma_digital`
+y sesgo del presente. Por diseño no mueve `tenencia_seguro` (any-insurance se mantiene en 0.401
+tras incorporarla).
 
 ---
 
@@ -59,16 +121,25 @@ peruanos. Cada celda marca su **origen**: `dato` (anclado en fuente citada) o `s
 
 ```
 region ───────────────▶ exposicion_riesgo_sismico ─┐
-generacion ───────────▶ apertura_datos_ia          │
-canal_preferido ──────▶ confianza_aseguradora ──┐   │
-nse ─────────────────┐                          │   │
-educacion_financiera ┼─▶ tenencia_seguro ◀───────┘   │
-sesgo_presente ──────┘          │                     │
-                                ▼                     ▼
+generacion ───────────▶ apertura_datos_ia ──┐       │
+canal_preferido ──────▶ confianza_aseguradora ┼─▶ disposicion_compartir_datos_pricing
+                                          │    │
+nse ─────────────────┐                   │    │
+educacion_financiera ┼─▶ tenencia_seguro ◀┘    │
+sesgo_presente ──────┘          │              │
+                                ▼               ▼
                      seguro_desastres_naturales ◀─────┘
                                 │
                                 ▼
                             wtp_ratio  (◀ tenencia)
+
+situacion_laboral ────┐
+generacion ───────────┼─▶ trabajo_plataforma_digital ──┐
+acceso_digital ────────┘                                │
+nse ────────────────────────────────────────────────────┼─▶ propension_microseguro
+situacion_laboral ──────────────────────────────────────┤   (eje paralelo, no mueve
+acceso_digital ─────────────────────────────────────────┤    tenencia_seguro)
+sesgo_presente ─────────────────────────────────────────┘
 ```
 
 Insights codificados:
@@ -77,6 +148,12 @@ Insights codificados:
 - **NSE y educación financiera** son los principales empujes positivos de tenencia.
 - **El seguro contra desastres es marginal** (~3.3%) incluso con alta exposición sísmica.
 - **Los no asegurados subvaloran el riesgo**: WTP ≈ 2/3 del precio justo.
+- **Confiar en la IA en abstracto no implica compartir datos reales**: la disposición a
+  compartir datos para pricing depende tanto de `apertura_datos_ia` como, con igual o mayor
+  peso, de `confianza_aseguradora` — la confianza específica en el asegurador es la que
+  destraba (o bloquea) la adopción de modelos data-driven (hallazgo de `/trinidad` 2026-07-06).
+- **La propensión a microseguro es un eje paralelo a la tenencia tradicional**: corre por
+  trabajo en plataforma digital + NSE/acceso/sesgo, sin mover `tenencia_seguro` (by design).
 
 ---
 
@@ -92,10 +169,14 @@ python research/personas/generador/generate_synthetic_users.py --n 1000 --out us
 
 Salida (columnas): `id, generacion, nse, region, educacion_financiera, sesgo_presente,
 canal_preferido, situacion_laboral, cobertura_previsional, tenencia_vehiculo, acceso_digital,
-bancarizado, exposicion_riesgo_sismico, apertura_datos_ia, confianza_aseguradora,
-tenencia_seguro, seguro_desastres_naturales, wtp_ratio`.
+bancarizado, trabajo_plataforma_digital, exposicion_riesgo_sismico, apertura_datos_ia,
+confianza_aseguradora, disposicion_compartir_datos_pricing, tenencia_seguro,
+seguro_desastres_naturales, wtp_ratio, propension_microseguro`.
 
-Dataset de ejemplo (200 filas): `usuarios_sinteticos_ejemplo.csv`.
+Datasets generados en `datasets/`:
+- `datasets/usuarios_sinteticos_ejemplo.csv` — 200 filas (ejemplo de referencia del generador).
+- `datasets/muestra_22_usuarios.csv` — 22 filas (simulación de pregunta abierta).
+- `datasets/grupo_nse_A.csv` — 10 filas (grupo NSE A, simulación de opinión RIMAC).
 
 ---
 
@@ -123,6 +204,10 @@ servicio y claims ágiles.*
 
 - Varias marginales son **supuestos ilustrativos**; recalibrar con micro-datos reales (ENAHO,
   encuestas SBS, datos propios de la aseguradora) antes de usar en decisiones.
+- `disposicion_compartir_datos_pricing` (v1.3) se calibró por **analogía internacional** (Reino
+  Unido/EE.UU., mercados con mayor madurez de telemática que Perú), no con dato peruano directo.
+  Es la variable más especulativa del esquema: úsala para explorar la brecha actitud-conducta
+  cualitativamente, no como cifra dura, hasta que se valide con una encuesta local.
 - Los **sesgos** de la matriz reflejan los de las fuentes (urbano-céntricas, 2023-2025).
 - Datos sintéticos = **no representan personas reales**; aptos para prototipado, prueba de
   pipelines, balanceo de clases y simulación, no para inferencia causal.

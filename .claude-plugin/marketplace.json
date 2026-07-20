@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "rumipyramid-skills",
-      "description": "Investigación (seeker/gossiper/marketer/trinidad/contexto-peruano), gestión de proyecto (beholder/actualizar/cronista/many-brains), personas sintéticas de seguros (lapuerta), presentaciones (rimac-slides/presentaciones-rimac) y reportes quincenales (cerrajero).",
+      "description": "Investigación (seeker/gossiper/marketer/trinidad/contexto-peruano), gestión de proyecto (beholder/actualizar/cronista/codice/many-brains), personas sintéticas de seguros (lapuerta), presentaciones (rimac-slides/presentaciones-rimac) y reportes quincenales (cerrajero).",
       "source": "./"
     }
   ]

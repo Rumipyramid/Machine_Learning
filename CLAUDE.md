@@ -10,9 +10,15 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `Proyecto_ML_1.ipynb` | Notebook principal de ML | Origen Colab |
 | `buenas-mierdas/` | Altar/archivo 3D web "Buenas Mierdas" (arte, web vernácula, hauntología) | Vite+React+R3F; `cd buenas-mierdas && npm install && npm run dev`; ver su `README.md` |
 | `Self driving car/` | Simulación de auto autónomo (Pygame + red neuronal) | Entrada: `self driving car.py`; config en `config_file.txt` |
-| `research/seguros_comportamiento_mundo_peru.md` | Investigación base: comportamiento/percepción de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS… |
-| `research/behavioral_design_360.md` | Investigación 360° (/trinidad): estado del behavioral design y checklist para ser los mejores (seguros/Rimac) | Pistas empírica/social/negocio; fuentes F-16 a F-27 del ledger |
-| `research/glosario_seguro_salud_peru.md` | Glosario de seguro de salud en Perú en lenguaje claro | Derivado de /seeker; alineado a glosario SBS |
+| `research/alma.md` | **Mapa del conocimiento de investigación** (Many Brains: nodes + outputs) | Punto de entrada; ver regla de mantenimiento más abajo |
+| `research/_nodes/seguros-comportamiento-mundo-peru.md` | Comportamiento/percepción y mercado global de seguros (Mundo vs. Perú) | Fuentes OECD, McKinsey, EY, Bain, Swiss Re, APESEG, SBS, Rothschild-Stiglitz, Arrow, Kunreuther… |
+| `research/_nodes/modelo-salud-ia-farmacias-peru.md` | Modelo de triage IA + farmacias + atención humana (`/trinidad` + `/seeker`) | Gestión de salud del peruano, PL 08488, RE-AIM (25 RQs), estrategias de testeo (silent trial, stepped-wedge, CFIR…) |
+| `research/_nodes/mecanismos-seguros-salud.md` | Mecanismos de seguros de salud: presión de costo/demografía y modelos que la navegan (global) | Singapur 3M, NHS, capitación, Discovery Vitality, Kaiser, Oak Street, ChenMed… |
+| `research/_nodes/glosario-seguro-salud-peru.md` | Glosario de seguro de salud en Perú en lenguaje claro | Derivado de /seeker; alineado a glosario SBS |
+| `research/_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | Migrado a Many Brains desde `main`; pistas empírica/social/negocio; fuentes F-16 a F-27 |
+| `research/_nodes/material-visual-venta-consultiva.md` | Material visual en venta consultiva: qué reduce incertidumbre y facilita la elección | Fuentes F-119 a F-127 |
+| `research/_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan organizaciones de venta fría a opt-in; reducir desconfianza al pedir datos | Fuentes F-128 a F-146 |
+| `research/_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y metodologías para medir calidad de agentes de IA conversacionales | Fuentes F-147 a F-159 |
 | `research/personas/generador/` | Fuente de verdad del modelo de personas sintéticas | generador + esquema + matriz + tooling de calibración |
 | `research/personas/generador/synthetic_user_schema.json` | Esquema machine-readable (v1.2, 17 variables) | Lo consume el generador |
 | `research/personas/generador/matriz_usuarios_sinteticos.md` | Matriz legible: variables, distribuciones, grafo causal, arquetipos | Deriva de la investigación base |
@@ -25,12 +31,12 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/personas/laminas/` | Lámina explicativa del sistema (script + PNG) | — |
 | `research/personas/apps/reglas/` · `apps/llm/` | Apps web: explorador por reglas (autocontenido) y preguntas libres con Claude (API) | — |
 | `research/updates/` | Reportes quincenales de fortalecimiento del modelo | Indexados en este códice (bloque gestionado) |
-| `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
+| `research/fuentes/codice.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista`; se consulta con `/codice` |
 | `research/yopersona/perfil.md` | Nodo de conocimiento: perfil profesional del usuario (CV) | Fuente de verdad para cartas de presentación, CVs adaptados y asesoría de carrera |
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis con evidencia F-n del ledger + confianza; refinada diariamente contra `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
-| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
+| `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 | `.claude-plugin/marketplace.json` · `plugin.json` | Marketplace personal de plugins | Expone `.claude/skills/` como plugin instalable en cualquier máquina/cuenta — ver sección abajo |
 
@@ -62,13 +68,22 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 - **Lámina explicativa:** `research/personas/laminas/` (script `build_lamina_detalle.py` + PNG)
 - **Apps web:** `research/personas/apps/reglas/` (explorador por reglas, autocontenido) y
   `research/personas/apps/llm/` (preguntas libres con Claude vía API).
-- Variables (19, esquema v1.3): generación, NSE, región, educación financiera, sesgo del presente,
+- Variables (20, esquema v1.3): generación, NSE, región, educación financiera, sesgo del presente,
   canal, situación laboral, cobertura previsional, tenencia de vehículo, acceso digital,
   bancarizado, **trabajo en plataforma digital**, exposición sísmica, apertura a datos/IA, confianza,
-  tenencia de seguro, seguro de desastres, WTP ratio, **propensión a microseguro**.
+  **disposición a compartir datos para pricing**, tenencia de seguro, seguro de desastres, WTP
+  ratio, **propensión a microseguro**.
 - Marginales validadas (v1.3): any-insurance ≈ 0.40, desconfía ≈ 0.46, desastres ≈ 0.035,
-  bancarizado ≈ 0.59, sin cobertura previsional ≈ 0.60, trabajo en plataforma digital ≈ 0.07.
-- **Incorporación automática:** las propuestas de prioridad Alta de cada reporte quincenal
+  bancarizado ≈ 0.59, sin cobertura previsional ≈ 0.60, comparte datos pricing (alta) ≈ 0.15,
+  trabajo en plataforma digital ≈ 0.07.
+- **v1.3 (2026-07-06):** `disposicion_compartir_datos_pricing` separa la confianza *abstracta*
+  en IA de la disposición *conductual* real a compartir datos para UBI/pricing con IA — brecha
+  actitud-conducta calibrada con hallazgos de `/trinidad` sobre modelos de seguros rentables
+  (telemática, seguros paramétricos, riesgo reputacional de IA no transparente en claims). Ver
+  `research/personas/generador/matriz_usuarios_sinteticos.md` §3.
+- **v1.3 (2026-07-19):** `trabajo_plataforma_digital` y `propension_microseguro` — únicas
+  propuestas de prioridad Alta del reporte 2026-08-05, incorporadas por el mecanismo de
+  **incorporación automática**: las propuestas de prioridad Alta de cada reporte quincenal
   (`research/updates/`) se aplican solas al esquema/generador y se re-validan con
   `validate.py --check`; si no pasa, se revierte y la variable queda pendiente. En `/cerrajero`
   (a demanda) el cambio va a la rama de trabajo actual; en el ciclo **desatendido** (GitHub
@@ -91,15 +106,55 @@ cubre un registro distinto de evidencia:
   publicados y verificables** (ROI, market share, filings, rondas de financiamiento).
 
 Los tres registran las fuentes que usan en el ledger de `cronista`
-(`research/fuentes/registro_fuentes.md`), aplicando la misma rúbrica A-E: `gossiper`
-suele producir fuentes D/E (prensa/redes sin método propio) y `marketer` suele producir
-fuentes A/B/C (filings, informes de mercado, prensa especializada) — es esperado, no un
-defecto, dado el tipo de evidencia que cada uno busca.
+(`research/fuentes/codice.md`, consultable con el skill `/codice`), aplicando la misma
+rúbrica A-E: `gossiper` suele producir fuentes D/E (prensa/redes sin método propio) y
+`marketer` suele producir fuentes A/B/C (filings, informes de mercado, prensa
+especializada) — es esperado, no un defecto, dado el tipo de evidencia que cada uno
+busca.
 
 - **`/trinidad`** (`.claude/skills/trinidad/`): orquesta a los tres a la vez sobre el
   mismo tema — los corre en paralelo, mantiene sus criterios de validez separados (no
   mezcla rigor académico con tracción social ni con evidencia de negocio) y consolida
   todo en un reporte único de 360°, registrando también en `cronista`.
+
+### 📌 Skill: `codice` (consulta del ledger de fuentes)
+`cronista` **registra** fuentes en `research/fuentes/codice.md`; el skill `/codice`
+(`.claude/skills/codice/`) **muestra y responde consultas** sobre lo ya registrado —
+buscar por ID (`F-n`), autor, tema/node o nivel de rigurosidad A-E. No reemplaza a
+`cronista` (que sigue disparándose automáticamente para registrar evidencia nueva), es
+el punto de invocación explícito para leer el códice en vez de escribirlo.
+
+### 📌 Mantenimiento del hub de conocimiento (Many Brains, `research/`)
+
+`research/` usa un `alma.md` en su raíz como índice vivo de todo el conocimiento de
+investigación (seguros, salud, Perú) — **no** cubre `research/personas/` (subsistema del
+generador de personas sintéticas) ni `research/updates/` (reportes quincenales), que ya
+tienen su propia estructura documentada arriba. Léelo (`research/alma.md`) al inicio de
+cualquier sesión que investigue o cite conocimiento del proyecto: es tu mapa de qué node
+es la fuente de verdad de cada tema, cuándo se actualizó y qué se relaciona con qué.
+
+El flujo es generativo: las investigaciones cristalizan en **nodes** temáticos (`.md`
+planos en `research/_nodes/`, uno por tema, kebab-case), y de esos nodes se derivan
+**outputs** (presentaciones, informes) en `research/_outputs/`. Como `_nodes/` es plano,
+la navegación no la dan carpetas: la dan `alma.md` y la sección `## Conexiones`
+(wikilinks `[[...]]`, recíprocos) de cada node. Mantén esto vivo sin que el usuario lo
+pida:
+
+1. **Una fuente de verdad por tema.** No dupliques contenido entre nodes; si ya existe un
+   node del tema, amplíalo en vez de crear uno nuevo.
+2. **`/seeker` y `/trinidad` escriben directo a `_nodes/`, no solo responden en el chat.**
+   Al terminar una investigación con hallazgos que valga la pena retener, créala o
+   ampliala como node (proponlo si no está claro que el usuario lo quiere guardado), cita
+   las fuentes por ID (`F-n`) del ledger de `cronista` (`research/fuentes/codice.md`,
+   consultable con `/codice` — no se movió a `_nodes/`), y cierra con `## Conexiones`
+   recíprocas a los nodes relacionados.
+3. **Versionado solo por cambio estructural** (premisa, modelo, alcance); lo incremental
+   solo actualiza la fecha de cabecera del node.
+4. **Actualiza `alma.md`** al crear, mover o modificar un node: fila en "Nodes vigentes",
+   fecha, versión. Marca `requiere refresh` cualquier output que dependa de un node que
+   cambió.
+5. **Nunca borres nodes existentes.** Si un node queda obsoleto, dilo y pregunta antes de
+   tocarlo.
 
 ### 📌 Skill: `lapuerta` (usuarios sintéticos de seguros)
 Generador + simulador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).
@@ -164,9 +219,9 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
 - Spec (`synthetic_user_schema.json`) y matriz legible (`.md`) se mantienen sincronizados con el generador.
 - Artefactos generados (CSV de muestras, ZIP, `__pycache__`, `dist/`) NO se versionan.
 - **Evidencia → `cronista`:** toda fuente referenciable usada para crear o fundamentar
-  se registra en `research/fuentes/registro_fuentes.md` (resumen, rigurosidad, autor, año).
-  Aplica también a lo que traigan `/gossip` (noticias/redes) y `/marketer` (benchmarks
-  de negocio), no solo a `/seeker`.
+  se registra en `research/fuentes/codice.md` (resumen, rigurosidad, autor, año) —
+  consultable con el skill `/codice`. Aplica también a lo que traigan `/gossip`
+  (noticias/redes) y `/marketer` (benchmarks de negocio), no solo a `/seeker`.
 - ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
 
 ---

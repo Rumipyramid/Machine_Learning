@@ -165,7 +165,7 @@ Formato: `(Empresa/Fuente, tipo de evidencia, año)`. Ejemplos:
 ## Registro en el cronista
 
 Al terminar una investigación de `marketer`, registra las fuentes usadas en el ledger de
-`cronista` (`research/fuentes/registro_fuentes.md`):
+`cronista` (`research/fuentes/codice.md`):
 
 - Filings regulatorios e informes de mercado con metodología pública suelen caer en
   **A/B** de la rúbrica de rigurosidad de `cronista`; prensa especializada con cifras
