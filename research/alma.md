@@ -42,7 +42,7 @@ por afirmación cuando corresponda.
 |---|---|
 | `alma.md` | Este índice vivo (raíz de `research/`) |
 | `_nodes/` | Todo el conocimiento, plano, un `.md` por tema (kebab-case) |
-| `fuentes/codice.md` | Ledger de `cronista` (se consulta con `/codice`) — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 171+ filas existentes. |
+| `fuentes/codice.md` | Ledger de `cronista` (se consulta con `/codice`) — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 179+ filas existentes. |
 | `personas/` | Subsistema de código del modelo de personas sintéticas (`lapuerta`) — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `updates/` | Reportes quincenales de fortalecimiento del modelo — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `lobo/opinion_experto.md` | Opinión de negocio acumulada del skill `lobo`, refinada diariamente contra el ledger de `cronista` — subsistema con su propia lógica de confianza/tope, fuera del alcance de este hub, ver `CLAUDE.md` |
@@ -60,7 +60,7 @@ por afirmación cuando corresponda.
 | `_nodes/glosario-seguro-salud-peru.md` | Glosario de términos de seguro de salud en lenguaje claro (Perú) | 2026-07-21 | v1.0 |
 | `_nodes/modelo-salud-ia-farmacias-peru.md` | Modelo de triage con IA + farmacias + atención humana (Perú): investigación, RE-AIM, estrategias de testeo | 2026-07-06 | v1.0 |
 | `_nodes/mecanismos-seguros-salud.md` | Mecanismos de seguros de salud: presión demográfica/costo, y modelos que la navegan (global, comparativo) | 2026-07-10 | v1.0 |
-| `_nodes/material-visual-venta-consultiva.md` | Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección (empírico + negocio; pista social sin cobertura) | 2026-07-13 | v1.0 |
+| `_nodes/material-visual-venta-consultiva.md` | Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección (empírico + negocio + regulatorio; pista social sin cobertura) | 2026-07-21 | v1.1 (amplía con anclaje/regulatorio/confianza; aplicada a flyers Vida Ahorro) |
 | `_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan las organizaciones de venta fría a venta opt-in (seguros y sectores análogos): disparadores, impacto en volumen, tácticas puente | 2026-07-14 | v1.0 |
 | `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y frameworks para medir la calidad de un agente/chatbot de IA (usabilidad, métricas técnicas RAG, específicos de banca/seguros) | 2026-07-15 | v1.0 |
 | `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-21 | v1.1 (migrado desde `main` a Many Brains, ver nota de reconciliación abajo) |
@@ -87,7 +87,7 @@ por afirmación cuando corresponda.
 ## Bibliografía compartida
 
 `fuentes/codice.md` (ledger de `cronista`, mantenido por ese skill; se consulta con el skill
-`/codice`) — 171+ fuentes (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
+`/codice`) — 179+ fuentes (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
 este hub:
 
 - Cada node cita fuentes por ID (`F-n`) en vez de repetir la referencia completa.
