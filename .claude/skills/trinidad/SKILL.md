@@ -52,16 +52,20 @@ empezar la siguiente):
 
 - **Pista empírica/teórica**: aplica la metodología completa de `seeker`
   (`.claude/skills/seeker/SKILL.md`) — tipologizar capas del claim, mapear registros
-  empírico/teórico, buscar en paralelo, clasificar tipo de evidencia, evaluar validez y
-  confiabilidad.
+  empírico/teórico, buscar en paralelo (con expansión de términos), ampliar por
+  snowballing y rastreo por autor, clasificar tipo de evidencia, chequear eco de cita,
+  evaluar validez y confiabilidad, y cerrar con la búsqueda adversarial de contraevidencia.
 - **Pista social/mediática**: aplica la metodología completa de `gossiper`
   (`.claude/skills/gossiper/SKILL.md`) — mapear plataformas (X/Twitter, Reddit, TikTok,
-  foros, comentarios de noticias), buscar cobertura y reacción, medir frecuencia y
-  validación social.
+  foros, comentarios de noticias), buscar cobertura y reacción con expansión de términos,
+  rastrear cadena de amplificación y cuentas clave, chequear churnalism/eco de cita, medir
+  frecuencia y validación social, y buscar activamente el desmentido antes de cerrar.
 - **Pista de negocio**: aplica la metodología completa de `marketer`
   (`.claude/skills/marketer/SKILL.md`) — mapear fuentes de negocio (filings, bases de
-  venture, informes de mercado, prensa especializada), buscar métricas, clasificar tipo
-  de evidencia, evaluar comparabilidad.
+  venture, informes de mercado, prensa especializada), buscar métricas con expansión de
+  términos, ampliar por snowballing y rastreo de analista, clasificar tipo de evidencia,
+  chequear eco de cita, evaluar comparabilidad, y buscar activamente señales de problema
+  antes de cerrar el veredicto.
 
 Cada pista conserva su **propio criterio de validez** — nunca promedies ni mezcles rigor
 académico con validación social ni con evidencia de negocio: son ejes distintos que miden

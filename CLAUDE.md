@@ -97,8 +97,10 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 
 ### 📌 Familia de skills de investigación (`seeker` / `gossiper` / `marketer`)
 Tres skills comparten el mismo mecanismo de ancho de banda de búsqueda (tipologización
-previa → búsquedas paralelas → clasificación de fuentes → tabla resumen), pero cada uno
-cubre un registro distinto de evidencia:
+previa → búsquedas paralelas con expansión de términos → ampliación por snowballing y
+rastreo por autor/fuente → clasificación de fuentes → chequeo de eco de cita → tabla
+resumen → búsqueda adversarial de contraevidencia antes de cerrar el veredicto), pero
+cada uno cubre un registro distinto de evidencia:
 
 - **`/seeker`** (`.claude/skills/seeker/`): registro empírico + teórico/crítico. Rigor
   académico y metodológico (papers, meta-análisis, teoría).
