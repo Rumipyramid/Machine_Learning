@@ -65,7 +65,19 @@ Lanzar búsquedas en al menos dos registros simultáneamente:
 
 Si encuentras una palabra o giro inusual ("aura erótica", "envoltura aural", "asimetría de cierre"), búscala literalmente entre comillas: suele delatar al autor que la acuñó.
 
-### Paso 4: Clasificación de tipo de evidencia
+**Expande los términos de cada búsqueda, no te quedes con una sola formulación**: un mismo concepto suele tener nombre distinto en la literatura académica, en la prensa y en el habla cotidiana (jerga). Prueba explícitamente: sinónimos del término central, la variante técnica y la coloquial, y la traducción al inglés — buena parte de la literatura académica está en inglés incluso para temas locales/peruanos, y quedarte solo con el término en español deja fuera fuentes reales. Ejemplo: investigar "riesgo moral" en seguros también debería probar "moral hazard", "selección adversa" y "adverse selection".
+
+### Paso 4: Ampliar la búsqueda — snowballing y rastreo por autor
+
+Una vez que aparece una fuente central (muy citada, o claramente el origen de una tesis), no te quedes solo con lo que trajo la búsqueda inicial — persíguela en dos direcciones:
+
+- **Snowballing hacia atrás**: revisa la bibliografía/referencias de esa fuente — a quién cita. A menudo la fuente primaria real, o el debate del que surge, está un nivel más atrás de lo que apareció primero en la búsqueda.
+- **Snowballing hacia adelante**: busca qué trabajos posteriores citan esa fuente (Google Scholar → "citado por", Semantic Scholar, Connected Papers). Esto es clave para saber si un hallazgo fue **confirmado, matizado o refutado** después — citar un paper de 2013 sin revisar qué se dijo de él desde entonces es quedarse con una foto vieja de un debate que puede haber avanzado.
+- **Rastreo por autor**: cuando un autor resulta central para el tema, busca el resto de su obra sobre el mismo asunto y con quién dialoga (coautores recurrentes, réplicas que le hicieron, debates en los que participó). La mejor fuente casi nunca es la primera que aparece en un buscador genérico — aparece siguiendo a la persona que ya sabes que es relevante.
+
+No hace falta aplicar esto a cada fuente periférica — resérvalo para las 1-3 fuentes que resulten centrales en la respuesta.
+
+### Paso 5: Clasificación de tipo de evidencia
 
 Antes de evaluar la calidad, clasifica **qué tipo de evidencia** aporta cada fuente. Un mismo paper puede aportar más de un tipo; identifica todos:
 
@@ -83,11 +95,19 @@ Antes de evaluar la calidad, clasifica **qué tipo de evidencia** aporta cada fu
 
 **En la respuesta**, marca el tipo de cada fuente clave al menos una vez, p. ej.: `(Willmott et al., 2021 — observacional transversal, N=582)`. Esto le da al usuario calibración instantánea sobre qué puede y qué no puede concluir de esa fuente.
 
-### Paso 5: Reportar si el artículo tuvo revisión por pares
+### Paso 6: Chequeo de eco de cita
 
-La revisión por pares (peer review) es un eje **distinto** del tipo de evidencia (Paso 4) y de la validez/confiabilidad (Paso 7): una fuente puede ser un RCT bien diseñado y aun así no haber pasado revisión por pares (ej. un preprint), o un meta-análisis puede estar publicado en una revista sin proceso de arbitraje serio. No lo asumas por el tipo de fuente ni por el repositorio donde está alojada — verifícalo.
+Antes de contar varias fuentes como "confirmación independiente" de un dato, verifica si en realidad todas citan, en última instancia, a **una misma fuente primaria**. Un dato repetido por cinco medios o cinco papers que a su vez citan un solo estudio original no es "cinco fuentes que confirman" — es una fuente con cinco altavoces, y contarlas por separado infla artificialmente la confianza en el hallazgo.
 
-**Para cada fuente de tipo empírico o teórico/académico** (las categorías del Paso 4: meta-análisis, RCT, cuasi-experimental, observacional, cualitativo, estudio de caso, teórico/ensayo), determina y reporta explícitamente su estado de revisión por pares:
+- **Cómo detectarlo**: para cada fuente que parezca "confirmar" a otra, rastrea su cadena de atribución hasta el origen (¿de dónde sacó el dato? ¿cita un estudio, una encuesta, otro artículo de prensa?). Si dos o más fuentes convergen en el mismo origen, son **una sola pieza de evidencia**, no varias.
+- **Cómo reportarlo**: dilo explícitamente cuando ocurra, p. ej.: *"Estas 3 notas de prensa citan en última instancia al mismo estudio de Bain 2023 — no constituyen evidencia independiente entre sí."*
+- **En la tabla resumen de rigurosidad** (Paso 9C), agrupa las fuentes que comparten origen bajo una sola fila o anota la relación, en vez de dejarlas contar como si fueran hallazgos separados.
+
+### Paso 7: Reportar si el artículo tuvo revisión por pares
+
+La revisión por pares (peer review) es un eje **distinto** del tipo de evidencia (Paso 5) y de la validez/confiabilidad (Paso 9): una fuente puede ser un RCT bien diseñado y aun así no haber pasado revisión por pares (ej. un preprint), o un meta-análisis puede estar publicado en una revista sin proceso de arbitraje serio. No lo asumas por el tipo de fuente ni por el repositorio donde está alojada — verifícalo.
+
+**Para cada fuente de tipo empírico o teórico/académico** (las categorías del Paso 5: meta-análisis, RCT, cuasi-experimental, observacional, cualitativo, estudio de caso, teórico/ensayo), determina y reporta explícitamente su estado de revisión por pares:
 
 | Señal | Interpretación |
 |---|---|
@@ -96,11 +116,11 @@ La revisión por pares (peer review) es un eje **distinto** del tipo de evidenci
 | Tesis/disertación no publicada posteriormente en revista | 🔴 NO peer-reviewed (revisión de comité de tesis ≠ arbitraje por pares ciego) |
 | Ponencia/paper de conferencia | 🟡 Variable — algunas conferencias tienen arbitraje riguroso (ej. top-tier de cómputo); otras no. Verificar caso por caso |
 | Capítulo de libro académico | 🟡 Variable — depende de si el volumen fue arbitrado o es de invitación editorial sin arbitraje |
-| Reporte de industria, informe de consultora, estadística oficial | ⚪ No aplica — no es un artículo académico; evalúalo con la rúbrica de "reporte de industria" del Paso 4, no con este criterio |
+| Reporte de industria, informe de consultora, estadística oficial | ⚪ No aplica — no es un artículo académico; evalúalo con la rúbrica de "reporte de industria" del Paso 5, no con este criterio |
 
 **Cómo verificarlo cuando no es evidente**: revisar si la revista aparece en índices reconocidos (Scopus/WoS/SciELO/DOAJ), buscar su ISSN, o revisar si la página del artículo declara explícitamente "peer-reviewed"/"arbitrado por pares". ⚠️ **Los repositorios como PMC/NCBI, ResearchGate o SSRN alojan tanto artículos ya publicados y arbitrados como preprints sin arbitrar** — el dominio del enlace no basta para asumir revisión por pares; hay que verificar la publicación de origen (¿en qué revista salió?, ¿tiene DOI de una revista o es un preprint con su propio identificador?).
 
-**Cómo reportarlo**: agregar la marca junto a la cita, igual que la nota de calibración de validez/confiabilidad (Paso 7):
+**Cómo reportarlo**: agregar la marca junto a la cita, igual que la nota de calibración de validez/confiabilidad (Paso 9):
 
 > `(Autor, año — 🟢 peer-reviewed, [Revista], indexada en Scopus)`
 >
@@ -110,9 +130,9 @@ La revisión por pares (peer review) es un eje **distinto** del tipo de evidenci
 
 Si no se pudo verificar el estado de revisión por pares con la información disponible, decirlo explícitamente: `(Autor, año — ⚠️ estado de revisión por pares no verificado)`. **No asumas "peer-reviewed" por defecto** solo porque la fuente suena académica o aparece en un buscador académico.
 
-Cuando la investigación use **3 o más fuentes empíricas/académicas**, incluir la columna de revisión por pares en la tabla resumen de rigurosidad (ver Paso 7C) para que quede visible de un vistazo cuántas fuentes clave sí pasaron arbitraje y cuántas no.
+Cuando la investigación use **3 o más fuentes empíricas/académicas**, incluir la columna de revisión por pares en la tabla resumen de rigurosidad (ver Paso 9C) para que quede visible de un vistazo cuántas fuentes clave sí pasaron arbitraje y cuántas no.
 
-### Paso 6: Revisión crítica de metodología (papers empíricos)
+### Paso 8: Revisión crítica de metodología (papers empíricos)
 
 Cuando una fuente sea un paper científico o un estudio empírico, evaluar críticamente:
 
@@ -127,7 +147,7 @@ Cuando una fuente sea un paper científico o un estudio empírico, evaluar crít
 
 **Reportar al usuario cualquier inconsistencia metodológica** detectada, aunque la fuente sea ampliamente citada. Es información valiosa para que el usuario calibre el peso del hallazgo. Decir "este paper se cita mucho pero su N=24 y no tiene grupo de control" es más útil que solo citar la conclusión.
 
-### Paso 7: Evaluación de validez y confiabilidad de los datos
+### Paso 9: Evaluación de validez y confiabilidad de los datos
 
 Cuando una fuente reporta datos cuantitativos (cifras, escalas, índices, effect sizes), evaluar **dos dimensiones ortogonales**:
 
@@ -170,9 +190,9 @@ Cuando una investigación use **3 o más fuentes empíricas**, cerrar la secció
 |---|---|---|---|---|---|---|
 | Autor, año | RCT / observacional / etc. | 🟢/🔴/🟡/⚪ + nota | N=… | ✅/⚠️/❌ + nota | ✅/⚠️/❌ + nota | 🟢 Alto / 🟡 Medio / 🔴 Bajo |
 
-Esto le da al usuario una **vista de portafolio** de la evidencia: no todas las fuentes pesan igual, y la tabla lo hace explícito de un vistazo — incluida la proporción de fuentes que efectivamente pasaron arbitraje por pares.
+Esto le da al usuario una **vista de portafolio** de la evidencia: no todas las fuentes pesan igual, y la tabla lo hace explícito de un vistazo — incluida la proporción de fuentes que efectivamente pasaron arbitraje por pares, y agrupando las que comparten origen (Paso 6).
 
-### Paso 8: Recencia con override de calidad
+### Paso 10: Recencia con override de calidad
 
 **Priorizar** fuentes de los últimos 5 años porque:
 - Reflejan el estado actual del debate.
@@ -186,6 +206,16 @@ Esto le da al usuario una **vista de portafolio** de la evidencia: no todas las 
 - Marcan un debate aún vigente que no se ha desplazado.
 
 Cuando uses una fuente antigua, justifica brevemente por qué la incluiste. Ejemplo: "(Ariès, 1960) — referencia canónica e ineludible para la historia de la infancia en Occidente, aún en debate."
+
+### Paso 11: Búsqueda adversarial — contraevidencia deliberada
+
+Antes de cerrar el veredicto, lanza **al menos una búsqueda diseñada específicamente para encontrar lo que contradice** la conclusión que se está formando — no esperes pasivamente a que la contraevidencia aparezca sola entre los resultados de los pasos anteriores.
+
+- **Cómo hacerlo**: reformula la pregunta en su forma opuesta ("¿hay evidencia de que X *no* es cierto?", "¿qué estudios fallaron en replicar este efecto?"), y busca explícitamente réplicas fallidas, retractaciones, meta-análisis posteriores que revirtieron el hallazgo original (como el caso Mertens/Maier del nudging), o críticas metodológicas publicadas sobre las fuentes ya encontradas.
+- **Si la búsqueda adversarial no encuentra nada**, dilo explícitamente en la respuesta: *"se buscó contraevidencia de forma activa (réplicas fallidas, críticas metodológicas) y no se encontró"* — eso es una señal de robustez distinta y más fuerte que simplemente no haber buscado.
+- **Si sí encuentra algo**, repórtalo con el mismo peso que la evidencia a favor — no lo entierres al final ni lo minimices porque contradiga el veredicto inicial del Paso 1.
+
+Este paso es el antídoto directo al sesgo de confirmación: increíblemente fácil de omitir porque nada en el proceso normal de búsqueda lo fuerza — hay que hacerlo a propósito.
 
 ## Formato de respuesta
 
@@ -203,7 +233,7 @@ Si una afirmación combina varias fuentes que convergen, listarlas: `(Houston, 2
 
 Si dos fuentes están en tensión, marcarlo explícitamente: `(Schenda, 1970, sostiene ~15%; cf. Houston, 2011, para una visión más alta en Inglaterra)`.
 
-Para fuentes empíricas o teóricas/académicas (Paso 4), incluir además la marca de revisión por pares del Paso 5 la primera vez que se cita cada fuente clave: `(Autor, año — 🟢 peer-reviewed)` / `(Autor, año — 🔴 preprint, sin revisión por pares)` / `(Autor, año — ⚠️ revisión por pares no verificada)`. No hace falta repetirla en cada mención subsiguiente de la misma fuente dentro de la respuesta.
+Para fuentes empíricas o teóricas/académicas (Paso 5), incluir además la marca de revisión por pares del Paso 7 la primera vez que se cita cada fuente clave: `(Autor, año — 🟢 peer-reviewed)` / `(Autor, año — 🔴 preprint, sin revisión por pares)` / `(Autor, año — ⚠️ revisión por pares no verificada)`. No hace falta repetirla en cada mención subsiguiente de la misma fuente dentro de la respuesta.
 
 ### Estructura recomendada para investigaciones de claims
 
@@ -214,9 +244,10 @@ Para respuestas a investigaciones de afirmaciones específicas, organizar en est
 3. **Lo que es interpretación o teoría**: afirmaciones que dependen del autor que las formula. Atribuir explícitamente.
 4. **Lo que no cuadra o es falso**: inconsistencias, errores empíricos, sobreinterpretaciones, anacronismos.
 5. **De dónde puede venir el claim**: hipótesis sobre el origen de la confusión, si aplica (es frecuente que un claim viral mezcle un dato real con una capa interpretativa que lo distorsiona).
-6. **Limitaciones de la búsqueda**: qué quedó pendiente, qué tipo de fuente no se pudo verificar, qué requeriría acceso a bases de datos no disponibles.
+6. **Contraevidencia buscada** (Paso 11): qué se encontró, o que se buscó activamente y no apareció nada.
+7. **Limitaciones de la búsqueda**: qué quedó pendiente, qué tipo de fuente no se pudo verificar, qué requeriría acceso a bases de datos no disponibles.
 
-### Paso 9: Persistir el hallazgo (Many Brains)
+### Paso 12: Persistir el hallazgo (Many Brains)
 
 Si el proyecto tiene un `research/alma.md` (método Many Brains), la investigación no debe quedar
 solo en el chat: al terminar, **crea o amplía el node correspondiente** en `research/_nodes/`
@@ -234,7 +265,7 @@ sigue respondiendo solo en el chat — no lo impongas.
 - Cuando una tesis es de un autor específico, atribuirla. No presentarla como "consenso histórico" ni como dato neutro.
 - Cuando un debate sigue abierto, presentar las posiciones. No imponer una.
 - Si el usuario señala una fuente que se pasó por alto (como ocurrió con Kittler en esta sesión), reconocer el error explícitamente, integrar la fuente, y revisar las conclusiones que dependían de ella.
-- Si no se pudo determinar si una fuente pasó revisión por pares, decirlo explícitamente (Paso 5) — no asumir "peer-reviewed" ni "no peer-reviewed" por defecto.
+- Si no se pudo determinar si una fuente pasó revisión por pares, decirlo explícitamente (Paso 7) — no asumir "peer-reviewed" ni "no peer-reviewed" por defecto.
 
 ## Anti-patrones a evitar
 
@@ -246,6 +277,8 @@ sigue respondiendo solo en el chat — no lo impongas.
 - **Citar de memoria sin verificar**: las citas en formato (Autor, año) deben corresponder a fuentes efectivamente consultadas o ampliamente conocidas. No inventar atribuciones para dar apariencia de rigor.
 - **Sobre-extender la teoría**: si Kittler aplica para el 1800, no extenderlo automáticamente al siglo XV. Cada tesis tiene su período y su dominio de aplicación.
 - **Asumir revisión por pares por el repositorio o la apariencia académica**: un preprint en arXiv/bioRxiv/medRxiv o un working paper en SSRN no ha pasado revisión por pares aunque esté alojado junto a artículos que sí, o aparezca en un buscador académico (PMC/NCBI incluye tanto artículos arbitrados como manuscritos y preprints). Verificar la publicación de origen, no el repositorio ni el buscador que lo indexó.
+- **Contar eco de cita como confirmación independiente**: dar por buena una cifra solo porque "varias fuentes la repiten" sin verificar si todas remontan al mismo origen (Paso 6).
+- **Saltarse la búsqueda adversarial** porque el veredicto "ya parece claro": la conclusión más peligrosa es la que nunca se puso a prueba a propósito (Paso 11).
 
 ## Ejemplo de aplicación
 
@@ -274,4 +307,5 @@ sigue respondiendo solo en el chat — no lo impongas.
 3. Teoría real: Kittler (1985) sí argumenta que la Madre se constituye como agente primario de alfabetización hacia 1800, con una carga libidinal vía Lacan, anclada en la reforma fonética de Stephani.
 4. Lo falso: los porcentajes 5%/95% no existen en ninguna fuente; el siglo es 1800, no XVII→XVIII; la causalidad simple ignora la imprenta, la Reforma, las escuelas de caridad.
 5. Origen del claim: probable mezcla de Kittler (mal recordado) + cifras infladas de origen viral.
-6. Limitaciones: no se accedió al texto alemán original de Kittler ni a series cuantitativas de archivos parroquiales primarios.
+6. Contraevidencia buscada: se buscó explícitamente evidencia de que la maternidad NO fuera el canal dominante de alfabetización temprana — aparecen las dame schools y la instrucción parroquial como canales alternativos documentados, que matizan pero no refutan la tesis de Kittler.
+7. Limitaciones: no se accedió al texto alemán original de Kittler ni a series cuantitativas de archivos parroquiales primarios.

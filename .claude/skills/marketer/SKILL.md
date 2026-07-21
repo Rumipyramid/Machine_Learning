@@ -75,7 +75,32 @@ Antes de buscar, identifica:
 - **Búsqueda 4 (opcional)**: histórico de la métrica en el tiempo, para distinguir un
   pico puntual de una tendencia sostenida.
 
-### Paso 4: Clasificación de tipo de evidencia de negocio
+**Expande los términos de cada búsqueda**: la misma métrica tiene nombres distintos según
+quién la reporta — "ARR" vs. "revenue run-rate", "valuación" vs. "post-money valuation",
+el nombre legal de la empresa vs. su marca comercial vs. su ticker si cotiza. Busca también
+en inglés aunque la empresa sea local — la cobertura de fondos/prensa especializada
+internacional suele estar solo en inglés incluso para rondas latinoamericanas.
+
+### Paso 4: Ampliar la búsqueda — snowballing y rastreo por analista/fuente
+
+Una cifra de negocio rara vez aparece completa en el primer artículo que la reporta —
+persíguela en ambas direcciones:
+
+- **Snowballing hacia atrás**: cuando una cifra aparece citada en un artículo, rastrea su
+  **fuente primaria real** (¿de qué filing, encuesta, comunicado conjunto o post del
+  fundador/inversionista sale?) en vez de quedarte con el artículo que la reporta de
+  segunda mano.
+- **Snowballing hacia adelante**: busca si eventos posteriores actualizaron o
+  contradijeron la cifra — una ronda más reciente puede haber revisado la valuación, un
+  trimestre siguiente puede haber revertido un "récord de crecimiento", una rectificación
+  puede haber corregido el monto original.
+- **Rastreo por analista/fuente**: cuando un analista, fondo o medio especializado resulta
+  ser la fuente recurrente de la cobertura de un sector o empresa, revisa su otra
+  cobertura del mismo tema — ¿tiene un historial de calls acertados? ¿tiene un sesgo
+  conocido (p. ej. un fondo que invirtió en la empresa que está cubriendo, un medio que
+  vive de la publicidad de ese sector)?
+
+### Paso 5: Clasificación de tipo de evidencia de negocio
 
 | Tipo | Qué es | Peso epistémico | Ejemplo |
 |---|---|---|---|
@@ -86,7 +111,22 @@ Antes de buscar, identifica:
 | **Comunicado de prensa propio / self-reported** | La empresa reporta su propio resultado, sin auditoría externa | 🟠 Bajo — sesgo de marketing, cherry-picking de periodo | Press release de "revenue creció 300%" sin base ni periodo claro |
 | **Cifra sin fuente / ranking sin metodología pública** | "Se dice que", listas virales sin explicar cómo se calculó | 🔴 Débil | Rankings de "startups más prometedoras" sin criterios explícitos |
 
-### Paso 5: Evaluación de validez propia — ¿el número es comparable?
+### Paso 6: Chequeo de eco de cita
+
+Antes de contar "3 medios reportan la Serie B de $30M" como tres confirmaciones
+independientes, verifica si los tres citan el **mismo comunicado de prensa o post
+original** (de la empresa, el fondo, o el fundador en LinkedIn/X). Si es así, es una sola
+fuente primaria con tres altavoces, no una triangulación independiente — y no debe
+pesar como si tres fuentes distintas hubieran verificado el dato por separado.
+
+- **Por qué es especialmente frecuente en negocio**: los comunicados de financiamiento se
+  redistribuyen ampliamente vía el mismo press release o el mismo post del inversionista;
+  que la cobertura sea amplia no significa que el monto haya sido verificado por nadie más
+  allá de la propia empresa/fondo.
+- **Cómo reportarlo**: *"Estas 3 notas citan el mismo comunicado conjunto de la ronda —
+  cuenta como 1 fuente primaria (el comunicado), no como triangulación independiente."*
+
+### Paso 7: Evaluación de validez propia — ¿el número es comparable?
 
 Antes de usar una cifra para concluir algo, verifica:
 
@@ -105,13 +145,13 @@ Antes de usar una cifra para concluir algo, verifica:
   ¿cuántas empresas componen esa muestra? Un benchmark con N=8 pesa distinto que uno
   con N=500.
 
-### Paso 6: Tabla resumen de rigurosidad de benchmarks (3+ fuentes)
+### Paso 8: Tabla resumen de rigurosidad de benchmarks (3+ fuentes)
 
 | Empresa | Métrica | Valor | Fuente | Tipo de evidencia | Vigencia | Comparabilidad | Peso |
 |---|---|---|---|---|---|---|---|
 | Ej. Empresa X | Market share | 18% | Statista 2026 | Informe de mercado | Q1 2026 | Definición de mercado declarada | 🟢 Alto |
 
-### Paso 7: Recencia con override por tipo de filing
+### Paso 9: Recencia con override por tipo de filing
 
 - Prioriza siempre el **último período fiscal reportado**; marca explícitamente si un
   dato es de un trimestre/año anterior.
@@ -119,6 +159,22 @@ Antes de usar una cifra para concluir algo, verifica:
   métrica en el tiempo), reporta la serie completa, no solo el último punto.
 - Ante un dato de financiamiento o valuación, verifica si hubo una ronda más reciente que
   lo haya vuelto obsoleto.
+
+### Paso 10: Búsqueda adversarial — contraevidencia deliberada
+
+Antes de cerrar el veredicto sobre el desempeño de una empresa, busca **activamente
+señales de problema**, no solo lo que la empresa o la prensa amigable reportan: despidos,
+salida de ejecutivos clave, downgrades de analistas, demandas, caída sostenida de
+reseñas/NPS, quema de caja sin camino claro a rentabilidad.
+
+- Esto lleva el anti-patrón de *survivorship bias* (buscar también los fracasos del
+  sector, no solo los casos de éxito) al nivel de una sola empresa: cada narrativa
+  positiva debe ponerse a prueba a propósito antes de repetirla.
+- **Si no se encuentra nada negativo o contradictorio**, dilo explícitamente: *"se buscó
+  activamente evidencia de problemas (despidos, demandas, downgrades) y no apareció nada
+  verificable"* — es una señal distinta y más fuerte que simplemente no haberlo buscado.
+- **Si se encuentra**, repórtalo con el mismo peso que las cifras positivas, en la sección
+  "Lo que no cuadra" de la respuesta.
 
 ## Formato de respuesta
 
@@ -132,7 +188,8 @@ Antes de usar una cifra para concluir algo, verifica:
    explícitamente como tales y con su sesgo esperado.
 4. **Comparables de industria**: dónde cae la cifra respecto al sector (si aplica).
 5. **Lo que no cuadra**: métricas vanity, cifras infladas, definiciones no comparables
-   entre las fuentes usadas.
+   entre las fuentes usadas, y la contraevidencia encontrada en el Paso 10 (o la
+   constancia de que se buscó y no apareció ninguna).
 6. **Limitaciones**: qué dato no se pudo verificar, qué filing no está disponible
    públicamente, qué benchmark de industria falta.
 
@@ -161,6 +218,12 @@ Formato: `(Empresa/Fuente, tipo de evidencia, año)`. Ejemplos:
   revenue — distinguir siempre cuál de estas se está reportando.
 - **Survivorship bias en "casos de éxito"**: al buscar benchmarks de un sector, buscar
   también los fracasos — de lo contrario el benchmark queda sesgado hacia arriba.
+- **Contar cobertura amplia de un comunicado como triangulación**: varias notas que citan
+  el mismo press release no son verificación independiente — chequear el eco de cita
+  (Paso 6) antes de sumar fuentes.
+- **Saltarse la búsqueda de señales de problema** porque la narrativa de éxito "ya suena
+  consistente": buscar activamente lo contrario es lo que distingue un benchmark de un
+  comunicado de prensa reformulado (Paso 10).
 
 ## Registro en el cronista
 

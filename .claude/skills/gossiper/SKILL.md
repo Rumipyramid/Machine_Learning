@@ -81,7 +81,30 @@ Lanza búsquedas simultáneas en al menos estos frentes:
 - **Búsqueda 4 (opcional) — Origen del rumor**: rastrear la primera mención verificable;
   buscar la frase exacta entre comillas suele delatar el post/cuenta originaria.
 
-### Paso 4: Clasificación de tipo de fuente social
+**Expande los términos de cada búsqueda**: prueba hashtags alternativos, variantes de
+escritura/errores de tipeo comunes, jerga o apodos con los que se conoce el tema en redes
+(que suelen ser distintos del nombre "oficial"), y la versión en inglés si el tema tiene
+alcance internacional. Un rumor puede estar circulando activamente bajo un hashtag que no
+es el obvio — quedarte con un solo término de búsqueda subestima la instalación real.
+
+### Paso 4: Ampliar la búsqueda — cadena de amplificación y cuentas clave
+
+Una vez identificado el origen aproximado del tema (Búsqueda 4 del Paso 3), persíguelo en
+ambas direcciones, igual que se rastrea una cita académica:
+
+- **Hacia atrás**: confirma la mención verificable más antigua — no te quedes con la primera
+  que apareció en tu búsqueda, sigue retrocediendo hasta el post/cuenta que parece el origen real.
+- **Hacia adelante**: rastrea quién lo retomó después y **si saltó de capa** — ¿pasó de un
+  foro de nicho a X/Twitter masivo? ¿lo recogió un medio de prensa establecido? Ese salto
+  entre capas es información valiosa por sí sola sobre qué tan instalado está el tema, más
+  allá del conteo simple de menciones.
+- **Rastreo por cuenta/autor clave**: cuando una cuenta o periodista resulta ser quien
+  originó o amplificó de forma decisiva el tema, revisa su historial reciente — ¿tiene
+  patrón de viralizar cosas que después resultan falsas o exageradas? ¿tiene trayectoria y
+  expertise real en el tema que está comentando? Esto te ahorra tener que evaluar cada
+  mención nueva de esa cuenta desde cero.
+
+### Paso 5: Clasificación de tipo de fuente social
 
 Antes de evaluar cuánta tracción tiene un tema, clasifica **qué tipo de fuente** aporta
 cada pieza. Una misma búsqueda puede traer varios tipos; identifícalos todos:
@@ -95,15 +118,31 @@ cada pieza. Una misma búsqueda puede traer varios tipos; identifícalos todos:
 | **Hilo viral de cuenta anónima** | Mucho engagement, sin trayectoria verificable | 🟠 Bajo para veracidad, alto para "instalación" | Post con miles de RT sin autor identificable |
 | **Comentario aislado / cuenta nueva** | Sin trayectoria, posible bot o cuenta creada ad hoc | 🔴 Mínimo — señal de alerta de amplificación artificial | Cuentas sin historial que repiten el mismo mensaje |
 
-### Paso 5: La métrica de validez propia — Frecuencia y Validación Social
+### Paso 6: Chequeo de eco de cita (churnalism)
+
+Antes de contar cuántas piezas "cubren" el tema, verifica cuántas son en realidad
+**republicaciones de la misma nota** sin reporteo propio — en periodismo esto se llama
+*churnalism*. Ocho portales que republican el mismo despacho de agencia (EFE, Reuters,
+etc.) sin agregar nada propio no son ocho piezas de cobertura independiente, son una sola
+pieza con ocho vitrinas.
+
+- **Cómo detectarlo**: compara el texto — si dos notas de medios distintos coinciden casi
+  palabra por palabra, casi seguro comparten origen. Busca si citan una fuente común
+  (comunicado, despacho de agencia, un post viral específico) en vez de reporteo propio.
+- **Cómo reportarlo**: *"Estas 6 notas republican el mismo despacho de agencia — cuentan
+  como 1 pieza de cobertura, no 6, al medir frecuencia (Paso 7A)."*
+- Esto aplica igual dentro de redes sociales: una cadena de retweets/reposts del mismo
+  post original es eco, no piezas independientes — ver Paso 7A.
+
+### Paso 7: La métrica de validez propia — Frecuencia y Validación Social
 
 A diferencia de `seeker` (que pesa rigor metodológico), aquí la validez de la evidencia
 se mide con dos ejes:
 
-**A) Frecuencia**: cuántas piezas *independientes* (no republicaciones de la misma nota)
-mencionan el tema en una ventana temporal razonable (últimos 7/30 días según el caso).
-Cuenta medios y cuentas distintas, no menciones totales — 500 retweets del mismo post
-cuentan como una sola fuente, no 500.
+**A) Frecuencia**: cuántas piezas *independientes* (no republicaciones de la misma nota,
+ver Paso 6) mencionan el tema en una ventana temporal razonable (últimos 7/30 días según
+el caso). Cuenta medios y cuentas distintas, no menciones totales — 500 retweets del mismo
+post cuentan como una sola fuente, no 500.
 
 **B) Validación social**: no solo cuánto engagement hay, sino **de qué tipo**. Distingue:
 - Comentarios que **confirman** el hecho (testigos, capturas, fuentes propias).
@@ -122,13 +161,13 @@ Con ambos ejes, clasifica el nivel de instalación social:
 | 💬 **Rumor aislado** | Poca cobertura, sin confirmación externa | 1-2 fuentes o un solo hilo, sin corroboración independiente |
 | 🧊 **Sin tracción** | Fuente única, no verificable | Una sola mención, cuenta sin trayectoria, sin eco |
 
-### Paso 6: Tabla resumen (cuando haya 3+ fuentes)
+### Paso 8: Tabla resumen (cuando haya 3+ fuentes)
 
 | Fuente/plataforma | Tipo | Fecha | Validación (confirma/desmiente/amplifica) | Nivel |
 |---|---|---|---|---|
 | Ej. Reddit r/…, hilo de u/… | Comunidad grande | YYYY-MM-DD | Mayoría confirma, 2 desmentidos | 🌡️ Circulando |
 
-### Paso 7: Recencia estricta
+### Paso 9: Recencia estricta
 
 A diferencia de `seeker`, aquí **no aplica** el override de calidad por fuentes canónicas
 antiguas: lo social decae rápido. Prioriza:
@@ -137,6 +176,23 @@ antiguas: lo social decae rápido. Prioriza:
   haber cambiado"*.
 - Si el tema tiene más de unas semanas, verifica si sigue activo o ya se apagó — no
   reportes como "instalado" algo que se apagó hace tiempo.
+
+### Paso 10: Búsqueda adversarial — contraevidencia deliberada
+
+Antes de cerrar el nivel de instalación social, lanza una búsqueda **específicamente
+diseñada para encontrar el desmentido**, no esperes a que aparezca solo entre los
+resultados de los pasos anteriores — una búsqueda genérica sobre el tema tiende a traer
+más de lo mismo que ya confirma el rumor, porque eso es lo que domina el volumen.
+
+- **Cómo hacerlo**: busca explícitamente `"[tema]" desmentido`, `"[tema]" falso`,
+  `"[tema]" fake`, y revisa cuentas/medios de verificación de datos conocidos en el
+  contexto del tema (p. ej. en Perú: Ojo Público, Verificador, Salud con Lupa según el
+  tema).
+- **Si no se encuentra nada**, dilo explícitamente: *"se buscó activamente un desmentido
+  o cuestionamiento y no apareció ninguno verificable"* — eso es una señal distinta y más
+  fuerte que simplemente no haberlo buscado.
+- **Si se encuentra**, repórtalo con el mismo peso que la evidencia que confirma, aunque
+  contradiga el nivel de instalación que parecía obvio al principio.
 
 ## Formato de respuesta
 
@@ -156,9 +212,10 @@ uno solo — decir "esto es viral" no es decir "esto es cierto".
 4. **Validación vs. amplificación**: qué proporción de la reacción confirma/desmiente vs.
    solo comparte.
 5. **Origen probable** (si se pudo rastrear) y evolución temporal.
-6. **Señales de alerta**: amplificación artificial, churnalism (muchas "noticias" que son
-   la misma nota republicada), cuentas sospechosas.
-7. **Limitaciones**: qué plataformas no se pudieron revisar, qué quedó sin verificar.
+6. **Señales de alerta**: amplificación artificial, churnalism (Paso 6), cuentas sospechosas.
+7. **Contraevidencia buscada** (Paso 10): qué desmentido se encontró, o que se buscó
+   activamente y no apareció ninguno.
+8. **Limitaciones**: qué plataformas no se pudieron revisar, qué quedó sin verificar.
 
 ### Citas inline
 
@@ -179,9 +236,12 @@ Formato: `(Plataforma, autor/medio, fecha)`. Ejemplos:
   bots, decirlo explícitamente en vez de contarlo como validación orgánica.
 - **Confundir churnalism con cobertura real**: muchas "noticias" pueden ser la misma nota
   de agencia republicada por decenas de portales sin reporteo propio — cuenta fuentes
-  *independientes*, no republicaciones.
+  *independientes*, no republicaciones (Paso 6).
 - **Mezclar el juicio de instalación con el juicio de verdad** — son ejes distintos y
   deben reportarse por separado.
+- **Saltarse la búsqueda del desmentido** porque el rumor "ya suena instalado": la
+  instalación social y la existencia de un desmentido son cosas distintas — buscar el
+  segundo no invalida al primero, solo lo completa (Paso 10).
 
 ## Registro en el cronista
 
