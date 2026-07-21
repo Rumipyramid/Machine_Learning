@@ -253,6 +253,31 @@ financiera genérica que ya intenta la SBS.
   la creencia/marco correcto), pero falta el dato de intervención.
 - **Actualizado:** 2026-07-21
 
+### 15. Una cifra headline de retorno en % no es solo una elección de diseño — es un ancla persuasiva y un patrón ya fiscalizado en Perú al mismo tiempo
+Un número inicial grande y prominente ("170% de devolución") sesga el juicio de valor
+del consumidor incluso cuando el número es poco relevante — efecto de anclaje robusto,
+no específico de seguros pero bien establecido. El mismo patrón (cifra grande + condición
+real en letra chica) es justo el que un marco regulatorio de referencia (NAIC, EE.UU.)
+prohíbe expresar como porcentaje —exige monto—; no es norma peruana, pero marca la
+categoría de riesgo. En Perú, Indecopi fiscaliza publicidad financiera engañosa de forma
+activa y ya sancionó a una entidad financiera comparable (BBVA, 2025) por una promesa
+publicitaria que no se cumplía en la práctica — el riesgo de fiscalización no es
+hipotético. Información "a confirmar" (montos/plazos sin cerrar) visible en piezas que
+llegan al cliente reduce de forma medible tanto la confianza en la fuente como la
+disposición a comprar: no es un detalle de producción pendiente, es una fuga de
+conversión y un riesgo regulatorio a la vez, con el mismo origen.
+- **Evidencia:** F-175 (🟢A, efecto de anclaje), F-172 (🔵B, modelo NAIC, EE.UU. — no
+  aplicable directo en Perú), F-173 (🔵B, lineamientos Indecopi, sí aplicable), F-174
+  (🟠D, caso BBVA vía prensa sobre resolución oficial), F-176 (🟢A, info incompleta →
+  menos confianza y disposición a comprar), F-177 (🟠D, cifra direccional de abandono)
+- **Confianza:** Alta en que el patrón (cifra % headline + condición chica + dato "a
+  confirmar" visible) es simultáneamente el de mayor poder persuasivo y el de mayor
+  riesgo regulatorio-reputacional. Media en si Indecopi sancionaría específicamente el
+  caso "% vs. monto" — F-173 no se investigó al mismo nivel de detalle que F-172 (que es
+  de EE.UU.); no tratar como bloqueante legal cierto en Perú sin verificación adicional
+  del marco peruano en ese punto específico.
+- **Actualizado:** 2026-07-21
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -302,6 +327,11 @@ financiera genérica que ya intenta la SBS.
   rediseñar el producto (tesis 1/2/12); ataca el marco mental que hace que la
   gente no vea sus decisiones de seguro como parte de un mismo portafolio de
   riesgo.
+- **Rediseñar cifras headline de retorno como monto, no como porcentaje, y
+  nunca mostrar datos "a confirmar" en piezas cliente-facing.** Tesis 15: el
+  mismo cambio de diseño reduce a la vez el riesgo regulatorio-reputacional y
+  la fuga de conversión por desconfianza — no son dos arreglos distintos, es
+  uno solo con doble retorno.
 
 ## ⚠️ Riesgos
 
@@ -366,6 +396,11 @@ financiera genérica que ya intenta la SBS.
 - **La tenencia de seguros de vida en EE.UU. cayó de 63% (2011) a 51% (2024)**
   pese a que las intervenciones de comprensión sí mejoran el journey de compra
   puntual. Refuerza tesis 1 en la dirección más incómoda.
+- **Publicidad con cifra de retorno garantizado en % como elemento dominante,
+  y datos "a confirmar" visibles en piezas que llegan al cliente.** Tesis 15:
+  patrón ya sancionado por Indecopi en un caso comparable (BBVA, 2025); no es
+  solo un riesgo de conversión (ancla + desconfianza), es un riesgo de multa y
+  orden de cese sobre material que ya está circulando o por circular.
 - **Corrección de proceso, no de evidencia:** el ledger de fuentes se renombró
   de `registro_fuentes.md` a `codice.md` el 2026-07-19; las revisiones diarias
   del 2026-07-13 al 2026-07-19 leyeron una ruta que había quedado congelada en
@@ -451,4 +486,22 @@ financiera genérica que ya intenta la SBS.
   explícitamente como **instinto** (razonamiento propio conectando dos tesis ya
   existentes), no como dato nuevo — ningún nivel de confianza numérico cambió
   por esto. Ninguna otra tesis, oportunidad o riesgo requirió ajuste.
-</content>
+- **2026-07-21 (segunda corrida del día)** — El ledger creció de F-171 a F-179
+  entre la corrida anterior de hoy y esta: `/trinidad` revisó un artefacto
+  concreto (flyers "Vida Ahorro") y registró 8 fuentes nuevas sobre publicidad
+  de retorno garantizado — efecto de anclaje de cifras prominentes (F-175, A),
+  un modelo regulatorio de referencia que restringe expresar retorno como %
+  (F-172, B, EE.UU.), el marco peruano de Indecopi sobre publicidad engañosa
+  (F-173, B) y un caso real de sanción a una entidad financiera comparable
+  (F-174, BBVA 2025, D), más evidencia de que información incompleta visible
+  al cliente reduce confianza y disposición a comprar (F-176 A, F-177 D) y de
+  que contenido emocional e informativo son complementarios, no sustitutos
+  (F-178 A, F-179 D). Sumé tesis 15 (cifra headline en % = ancla persuasiva +
+  riesgo regulatorio simultáneo, mismo origen) y una oportunidad/riesgo
+  espejados. Confianza fijada en Alta para el patrón de riesgo, Media para si
+  Indecopi sancionaría específicamente el caso "% vs. monto" — el marco
+  peruano no se investigó al mismo nivel de detalle que el modelo de EE.UU.
+  citado como categoría de riesgo. Ninguna tesis previa (1-14) requirió
+  ajuste de confianza. *Limpieza de proceso:* removí una etiqueta `</content>`
+  suelta al final del archivo, remanente de una operación de escritura
+  anterior — no era contenido de El Lobo.
