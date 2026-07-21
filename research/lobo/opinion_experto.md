@@ -74,14 +74,27 @@ marco académico publicado sobre cómo diseñar el trigger para minimizar riesgo
 base. La oportunidad ya no depende solo de que el 3.3% sea exacto — depende de que
 la categoría "producto paramétrico" tiene demanda de capital y diseño técnico
 maduro detrás, mundialmente.
+**[Nota 2026-07-21 — instinto, no fuente nueva]** La revisión profunda de hoy
+sobre F-3 (tesis 14: miopía + narrow framing) da una lectura de por qué el
+3.3% es tan bajo, no solo cuánto: un hogar que asegura su auto pero no su
+casa contra sismo no está siendo irracional respecto al sismo específicamente
+— está evaluando cada póliza aislada (narrow framing) en vez de ver que ambas
+exposiciones son parte del mismo portafolio de riesgo. Esto es razonamiento
+desde tesis 14, no un dato nuevo del ledger: implica que el mensaje de venta
+del paramétrico sísmico debería anclarse explícitamente al seguro que el
+cliente ya tiene (auto, SOAT), no venderse como categoría nueva aislada — pero
+esto no está probado con un experimento de conversión real, es hipótesis de
+producto derivada, no verificada.
 - **Evidencia:** F-5 (🟠D, Infobae vía APESEG — número de brecha sin cambio),
   F-163 (🟡C, SOA, tamaño de mercado paramétrico), F-164 (🟢A, diseño óptimo de
-  trigger)
+  trigger); conexión con F-3 (🟢A, tesis 14) es razonamiento propio, no cita
+  directa del paper sobre seguros de desastre.
 - **Confianza:** Media en el número exacto de brecha (sin cambio, mismo tope que
   antes); **Alta** en que "paramétrico sísmico" es la jugada de producto correcta
   independientemente del número exacto — la ventana de mercado/capital ya no es
-  instinto, tiene evidencia A+C detrás.
-- **Actualizado:** 2026-07-20
+  instinto, tiene evidencia A+C detrás. La lectura de mensaje anclado a
+  narrow framing es **instinto**, no probada.
+- **Actualizado:** 2026-07-21
 
 ### 5. ESG como diferenciador de marca: aplica al consumidor global premium, no está probado en Perú
 Bain reporta que ~80% de consumidores globales quiere criterios ESG integrados en
@@ -425,4 +438,17 @@ financiera genérica que ya intenta la SBS.
   Enriquecí en paralelo 3 nodes de Many Brains (`seguros-comportamiento-mundo-peru.md`,
   `glosario-seguro-salud-peru.md`, `behavioral-design-estado-disciplina.md`) con
   las mismas citas, sin mover ni reestructurar nada.
+- **2026-07-21 (proceso diario)** — Corrida separada del proceso diario de
+  refinamiento (distinto de la revisión profunda de más arriba, que corrió antes
+  hoy mismo vía `cronista`). Comparé `codice.md` contra la última entrada de la
+  bitácora: el ledger sigue tope en F-171, sin fuentes nuevas desde la revisión
+  profunda de esta mañana — **sin cambios sustanciales** en evidencia. Sí agregué
+  un matiz a tesis 4 (seguro paramétrico sísmico): conecté el mecanismo de
+  narrow framing de la tesis 14 recién creada con la brecha de aseguramiento
+  sísmico — un hogar que asegura su auto pero no su casa contra sismo no
+  necesariamente desconfía del producto, puede estar evaluando cada póliza de
+  forma aislada en vez de como un mismo portafolio de riesgo. Marcado
+  explícitamente como **instinto** (razonamiento propio conectando dos tesis ya
+  existentes), no como dato nuevo — ningún nivel de confianza numérico cambió
+  por esto. Ninguna otra tesis, oportunidad o riesgo requirió ajuste.
 </content>
