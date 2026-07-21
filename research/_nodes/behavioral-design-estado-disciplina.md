@@ -1,7 +1,7 @@
 # Behavioral design: estado de la disciplina y del mercado
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-07-17 · Versión: v1.1
+> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-07-21 · Versión: v1.1
 > (migrado desde `research/behavioral_design_360.md` a Many Brains, sin cambios de fondo)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta: **¿cómo le va al behavioral design como disciplina y mercado, y qué se
@@ -41,6 +41,19 @@ siga vendiendo "el nudge universal" está una década atrás.
   RoBMA; ⚠️ el debate metodológico sigue abierto). Un meta-análisis de segundo orden más
   reciente matiza: hay impacto, pero menor y muy heterogéneo por dominio y técnica
   (Hu, 2025 — Journal of Behavioral Decision Making).
+- **La granularidad importa más que el promedio (F-16, revisión profunda
+  2026-07-21).** Dentro del propio meta-análisis original de Mertens et al.
+  (447 efectos/212 estudios — corregido después a 455/214 sin cambiar la
+  conclusión sustantiva), el ranking por técnica no era parejo: las
+  intervenciones de **default/esfuerzo** tuvieron el efecto más grande
+  específicamente en los dominios de **salud y finanzas** — los dos más
+  relevantes para un asegurador — mientras que **incentivos** domina en
+  educación y políticas públicas. Esto no contradice que el efecto promedio
+  agregado no sea robusto a sesgo de publicación (Maier et al., abajo); pero si
+  hay que elegir qué técnica testear primero en la propia población, el ranking
+  direccional del propio dataset (defaults > incentivos > mensajero/afecto >
+  saliencia > priming > ego/compromiso/normas) es un prior razonable, no una
+  garantía.
 - **Efectos reales a escala son chicos pero rentables.** Los RCTs de unidades de nudging
   gubernamentales a escala (123+ RCTs, >20 millones de personas) muestran efectos mucho
   menores que los de papers académicos — del orden de ~1.4 puntos porcentuales vs ~8.7 en

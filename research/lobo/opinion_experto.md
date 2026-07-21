@@ -19,10 +19,21 @@ el conocimiento, no la conversión. Un estudio oficial de la Comisión Europea
 específico del ramo seguros confirma el mismo patrón dentro del sector: no basta
 con dar más información, tiene que estar bien estructurada — la estructura
 importa más que el volumen de divulgación.
+**[Revisión profunda 2026-07-21]** Leer F-9 y F-10 completos (no solo el
+resumen) agrega el *mecanismo*, no solo el resultado. En el RCT real de F-9,
+cambiarse de producto tomaba ~15 minutos y la ganancia promedio rondaba
+~US$190/año — y aun así casi nadie cambió. La causa que identifican los
+autores es la **creencia pesimista** del consumidor sobre si la alternativa
+vale el esfuerzo, no la complejidad de la información. F-10 añade la razón
+estructural de por qué el sector sigue invirtiendo aquí pese a la evidencia: la
+gente **recorta información en vez de acumularla** al decidir, y "divulgar
+mejor" es la palanca regulatoria más fácil de accionar para un legislador, no
+la que más funciona — riesgo directo para cualquier enfoque tipo "glosario
+oficial" (SBS incluida) que se apoye solo en explicar mejor.
 - **Evidencia:** F-9 (🟢A, RCT N≈124,000), F-10 (🟢A, síntesis canónica), F-124
   (🔵B, Comisión Europea, específico de seguros)
 - **Confianza:** Alta
-- **Actualizado:** 2026-07-20
+- **Actualizado:** 2026-07-21
 
 ### 2. El coaseguro variable es el cuello de botella de comprensión #1 en seguros de salud
 Dos estudios (uno con dos encuestas representativas EE.UU., otro con encuesta
@@ -30,9 +41,20 @@ nacional del regulador de salud) coinciden: el coaseguro es el término peor
 entendido, y quien tiene un plan con coaseguro/tarifas variables subestima sus
 costos reales por un margen mucho mayor que quien tiene deducible fijo. Esto no es
 un problema de comunicación — es un problema de diseño de producto.
+**[Revisión profunda 2026-07-21]** La segunda encuesta del propio estudio F-6
+(no solo la primera, ya citada) separa dos cosas que se suelen mezclar: la
+evidencia de que la gente **entendería mejor** un plan simplificado
+(todo-copago, sin coaseguro) es sólida — pero la evidencia de que ese plan
+simplificado **les atraería más o cambiaría su elección real** es bastante más
+débil. Comprensión y preferencia no son lo mismo: un cliente puede entender
+perfectamente el coaseguro y aun así preferirlo, por ejemplo por una prima más
+baja. **Tope explícito:** esta tesis sostiene el diagnóstico de comprensión con
+confianza Alta; el salto a "por tanto simplificar el producto aumenta ventas"
+hereda el tope de la tesis 1 y necesita su propia validación de elección real.
 - **Evidencia:** F-6 (🟢A, Loewenstein et al. 2013), F-7 (🔵B, KFF 2017)
-- **Confianza:** Alta
-- **Actualizado:** 2026-07-12
+- **Confianza:** Alta en el diagnóstico de comprensión; el paso a "simplificar
+  vende más" no está probado por esta fuente y hereda el tope de tesis 1.
+- **Actualizado:** 2026-07-21
 
 ### 3. El problema de comprensión es estructural, no generacional — no lo resuelve "educar a los jóvenes"
 Solo ~1 de cada 4 adultos Gen Z en EE.UU. puede definir deducible o copago. Ningún
@@ -75,9 +97,20 @@ re-análisis bayesiano que corrige sesgo de publicación: ajustado, no queda
 evidencia de un efecto promedio del nudging. Con datos reales a escala el efecto
 que sobrevive ronda ~1.4pp, muy por debajo del ~8.7pp de los papers académicos —
 un "voltage drop" de ~6x entre laboratorio y despliegue real.
+**[Revisión profunda 2026-07-21]** Dentro del propio dataset de Mertens et al.
+(F-16: 447 efectos/212 estudios, corregido después a 455/214 sin cambiar la
+conclusión sustantiva), el ranking por técnica no era parejo: **default/
+esfuerzo** tuvo el efecto más grande específicamente en los dominios de
+**salud y finanzas** —los dos más relevantes para un asegurador— mientras que
+**incentivos** domina en educación y políticas públicas. Esto no contradice
+que "murió el efecto promedio" (F-17 sigue en pie); pero si hay que elegir qué
+técnica testear primero en la propia población —que es justo lo que pide esta
+tesis— el ranking direccional del propio dataset dice "empieza por defaults",
+no por mensajes/priming. No es garantía, es prior razonable para priorizar el
+primer experimento.
 - **Evidencia:** F-16, F-17, F-18, F-20, F-21 (todas 🟢A)
 - **Confianza:** Alta
-- **Actualizado:** 2026-07-12
+- **Actualizado:** 2026-07-21
 
 ### 7. El diseño de producto embebido (s-frame) gana sobre el nudge cosmético (i-frame) — pero la telemática tiene techo de confianza incluso donde funciona
 El caso UBI (seguro por uso) con outcome telemático real —no autoreportado—
@@ -188,6 +221,25 @@ confianza, no en un formulario legal único.
   carta libre para maximizar divulgación sin límite.
 - **Actualizado:** 2026-07-20
 
+### 14. La subaseguración tiene dos mecanismos conductuales específicos y accionables — miopía y narrow framing — que la educación financiera genérica no ataca
+Un survey académico de 2021 (revisado a fondo el 2026-07-21) descompone
+"sesgos" —la palabra genérica que usan `CLAUDE.md` y `lapuerta`— en mecanismos
+concretos: **miopía** (cortoplacismo que subestima riesgos futuros) y **narrow
+framing** (evaluar cada decisión de seguro de forma aislada, sin ver el
+portafolio de riesgo total — por eso alguien asegura su auto y no su salud sin
+sentir contradicción, aunque ambas son la misma exposición al riesgo
+agregado). La mitigación que propone la literatura no es "más educación
+financiera" sino alfabetización **específicamente sobre los sesgos** — un
+contenido distinto al glosario de términos (tesis 1/2) o a la educación
+financiera genérica que ya intenta la SBS.
+- **Evidencia:** F-3 (🟢A, Pitthan & De Witte 2021 — nota: el ledger tenía mal
+  atribuida la autoría a "Platteau", corregido en esta revisión)
+- **Confianza:** Media — es un survey teórico sin RCT propio que mida si
+  "alfabetización en sesgos" cambia la tenencia real de seguros en Perú; el
+  mecanismo es plausible y coherente con tesis 1 (educar no basta si no ataca
+  la creencia/marco correcto), pero falta el dato de intervención.
+- **Actualizado:** 2026-07-21
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -232,6 +284,11 @@ confianza, no en un formulario legal único.
   formal del subcampo recién se está formando (F-27, preprint). *Instinto*: vale
   la pena posicionar el trabajo como caso aplicado temprano antes de que el
   subcampo se sature.
+- **Programa de alfabetización conductual específica (miopía, narrow framing),
+  no educación financiera genérica.** Tesis 14: complemento —no sustituto— de
+  rediseñar el producto (tesis 1/2/12); ataca el marco mental que hace que la
+  gente no vea sus decisiones de seguro como parte de un mismo portafolio de
+  riesgo.
 
 ## ⚠️ Riesgos
 
@@ -351,4 +408,21 @@ confianza, no en un formulario legal único.
   proceso: la racha de "sin cambios" de la semana pasada fue en parte un
   artefacto de que se leía una ruta de archivo congelada, no evidencia real de
   estancamiento del ledger.
+- **2026-07-21** — Primera corrida de la rutina de **revisión profunda** (cada
+  ~3 días, lee 5 fuentes del ledger a fondo en vez de solo su resumen de una
+  línea). Revisadas F-3, F-6, F-9, F-10 y F-16 (las 5 fuentes 🟢A de ID más
+  antiguo, ninguna tenía revisión profunda previa — ver
+  `research/fuentes/revision_profunda.md`). Encontré y corregí un error de
+  atribución en el ledger (F-3 decía "Platteau", son Pitthan & De Witte). Sumé
+  tesis 14 (miopía/narrow framing como mecanismos específicos de subaseguración,
+  distintos de "sesgos" en genérico). Agregué matiz de mecanismo (no solo
+  resultado) a tesis 1 (creencia pesimista + recorte de información como causa
+  de por qué la divulgación no convierte), a tesis 2 (comprensión ≠ preferencia,
+  tope heredado de tesis 1) y a tesis 6 (el ranking por técnica/dominio dentro
+  del propio meta-análisis de Mertens favorece probar defaults primero en
+  salud/finanzas). Ningún cambio de confianza hacia abajo esta vez — las 5
+  lecturas profundizaron el mecanismo sin contradecir el resumen previo.
+  Enriquecí en paralelo 3 nodes de Many Brains (`seguros-comportamiento-mundo-peru.md`,
+  `glosario-seguro-salud-peru.md`, `behavioral-design-estado-disciplina.md`) con
+  las mismas citas, sin mover ni reestructurar nada.
 </content>

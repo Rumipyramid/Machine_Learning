@@ -141,6 +141,31 @@ comprensión, pero rara vez cambia la decisión** (Adams et al., 2021, RCT N≈1
 Ben-Shahar & Schneider, 2014). Además, definir "coaseguro" no garantiza que la
 persona pueda **calcular** cuánto pagará (Loewenstein et al., 2013).
 
+**El mecanismo detrás de por qué no basta (revisión profunda 2026-07-21):**
+
+- **F-9 (Adams et al., 2021):** en el RCT real (124,000 titulares de cuenta de
+  ahorro en Reino Unido, 5 bancos), cambiarse a una alternativa mejor tomaba
+  ~15 minutos y la ganancia promedio rondaba ~US$190/año — y aun así casi nadie
+  cambió, sin importar qué tan clara o saliente fuera la divulgación. La causa
+  que identifican los autores **no es la complejidad de la información sino la
+  creencia pesimista** del consumidor sobre si la alternativa realmente vale el
+  esfuerzo de cambiar. Aplicado a seguros: mostrar el coaseguro más claro no
+  basta si el cliente ya asume ("todos los seguros son iguales") que cambiar de
+  plan no vale la pena.
+- **F-10 (Ben-Shahar & Schneider, 2014):** el fracaso no es solo de ejecución —
+  la gente **recorta información en vez de acumularla** al decidir (lee menos,
+  no más, cuando hay demasiados documentos), y los reguladores siguen mandando
+  "divulgar mejor" porque es la palanca política más fácil de accionar, no
+  porque funcione. Esto aplica directamente a cómo la SBS aborda la comprensión
+  de seguros en Perú: un glosario oficial (F-11, F-12) es necesario pero, por sí
+  solo, repite el mismo patrón que el libro documenta como fallido en EE.UU.
+- **F-6 (Loewenstein et al., 2013), segunda encuesta:** la evidencia de que la
+  gente entendería mejor un plan simplificado (todo-copago, sin coaseguro) es
+  sólida — pero la evidencia de que ese plan simplificado **les atraería más o
+  cambiaría su elección real** es bastante más débil. Comprensión y preferencia
+  no son lo mismo: un cliente puede entender perfectamente el coaseguro y aun
+  así preferirlo, por ejemplo por una prima más baja.
+
 Por eso este glosario funciona mejor como parte de un sistema:
 
 1. **Define en contexto**: muestra la definición *donde* aparece el término (en la app, la cotización, el contrato), no solo en una lista aparte.

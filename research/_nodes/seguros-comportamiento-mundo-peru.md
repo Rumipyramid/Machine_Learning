@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-07-10 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-07-21 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -95,6 +95,15 @@ Hallazgos de economía conductual aplicados a seguros (incluye países en desarr
   entendimiento del producto reduce la confianza y la compra.
 - **Desconfianza institucional:** debilita la protección, aumenta la vulnerabilidad y perpetúa
   desigualdades en el acceso a la seguridad financiera.
+- **Miopía y narrow framing (F-3, revisión profunda 2026-07-21):** dos mecanismos específicos
+  detrás de la subaseguración, más allá de "sesgos" en genérico. **Miopía** = cortoplacismo que
+  hace subestimar la probabilidad/severidad de riesgos futuros (emparentado con el present bias
+  de arriba). **Narrow framing** = evaluar cada decisión de seguro de forma aislada en vez de
+  como parte de un portafolio de riesgo total — la persona no "ve" que no asegurar la casa y no
+  asegurar la salud son la misma exposición al riesgo agregado, solo en categorías distintas.
+  La mitigación que propone la literatura no es educación financiera genérica, sino
+  **alfabetización financiera enfocada específicamente en los sesgos conductuales** (Pitthan &
+  De Witte, 2021 — F-3).
 
 ---
 
@@ -250,7 +259,7 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 **Economía conductual / académico**
 - ScienceDirect — The Demand for Microinsurance: A Literature Review: https://www.sciencedirect.com/science/article/abs/pii/S0305750X1730013X
 - ScienceDirect — Cognitive bias in insurance: Evidence from a health scheme in India: https://www.sciencedirect.com/science/article/abs/pii/S0305750X21001108
-- ScienceDirect — Puzzles of insurance demand and its biases (sesgos + educación financiera): https://www.sciencedirect.com/science/article/abs/pii/S2214635021000150
+- ScienceDirect — Puzzles of insurance demand and its biases (sesgos + educación financiera; F-3, autores reales Pitthan & De Witte): https://www.sciencedirect.com/science/article/abs/pii/S2214635021000150
 - Springer — A behavioral decomposition of willingness to pay for health insurance: https://link.springer.com/article/10.1007/s11166-022-09371-2
 - RGA — Behavioral Approach to Insurance: https://www.rgare.com/knowledge-center/article/behavioral-approach-to-insurance
 - MDPI — Insurance in the Aspects of Sustainable Development (SEM): https://doi.org/10.3390/su18010233
