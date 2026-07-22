@@ -2,11 +2,11 @@
 
 > Node. Fuente de verdad de este tema. Rescata 3 investigaciones `/seeker`/`/trinidad` que
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
-> `fuentes/codice.md` (F-86 a F-116, F-193 a F-202).
+> `fuentes/codice.md` (F-86 a F-116, F-193 a F-207).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-07-22 · Versión: v1.1
-> (amplía con §2: balance financiero global/rentabilidad de la categoría — pregunta
-> directa del usuario sobre si el ramo salud es rentable a nivel mundial)
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-07-22 · Versión: v1.2
+> (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
+> con §2.6: contraste regional Europa/Asia/Perú-Latam — corrida adicional de `/trinidad`)
 
 ---
 
@@ -129,6 +129,50 @@ actual de "nueva tecnología médica" — la causa #1 de presión de costo que y
 §1 (F-88) — no una categoría nueva de reto, sino la manifestación más reciente y aguda de
 la misma causa.
 
+### 2.6 Fuera de EE.UU.: ¿el mismo patrón de margen delgado?
+
+La limitación declarada en la v1.1 de este node (ver Limitaciones) era que todo el dato
+financiero agregado de §2.1-§2.5 era estadounidense. Una ronda adicional de `/trinidad`
+buscó específicamente el contraste regional — Europa, Asia y Perú/Latinoamérica — y
+encuentra que **el patrón de EE.UU. (margen delgado, regulado por ley) no se repite igual
+en mercados sin un techo regulatorio equivalente a la regla 80/20**.
+
+- **Europa — rentabilidad sólida y creciente.** El segmento Vida y Salud de Allianz (el
+  mayor grupo asegurador europeo) tuvo una utilidad operativa récord de EUR 9,000 millones
+  en el año completo 2025, y EUR 2,400 millones solo en el primer trimestre de 2026
+  (+11.1% interanual) — impulsada por un mejor resultado del propio servicio de seguros, no
+  por inversión financiera (F-203, 🔵B). Bupa Group reportó una utilidad subyacente de GBP
+  1,009 millones para 2025 (+16% a tipo de cambio constante), impulsada por el crecimiento
+  de primas en seguro de salud individual/corporativo e IPMI (F-204, 🟠D). Ninguno de los
+  dos mercados europeos de estos casos tiene un equivalente estricto de la regla 80/20
+  estadounidense — consistente con la hipótesis de §2.3 de que el margen delgado de EE.UU.
+  es en buena parte un techo regulatorio, no solo el resultado de la competencia.
+- **Asia — crecimiento fuerte, con la misma sombra de selección adversa que EE.UU.** Niva
+  Bupa (India) reportó un salto de utilidad de 67% en el trimestre cerrado en marzo de 2026
+  (F-205, 🟠D). El mercado de seguros de salud de China se proyecta de USD 150,628M (2025) a
+  USD 254,657M (2033), aunque el segmento público —no el privado— sigue siendo el mayor
+  (78.31% del total, F-206, 🟡C). Pero el crecimiento de primas de salud comercial en China
+  se desaceleró de forma marcada: 8.2% en 2024 vs. un CAGR de 20.5% en 2016-2019, con el
+  Swiss Re Institute atribuyéndolo en parte a un **riesgo creciente de selección adversa**
+  (F-207, 🔵B) — el mismo mecanismo teórico de §1, ahora con evidencia de mercado real fuera
+  de EE.UU.
+- **Perú/Latinoamérica — hueco de dato confirmado, no relleno.** Se buscó explícitamente
+  rentabilidad/balance financiero agregado del mercado de EPS peruano y de seguros de salud
+  privados en Latinoamérica. No se encontró ninguna fuente con datos de margen o utilidad
+  agregada del sector (ni de SUSALUD ni de asociaciones gremiales) — solo aparecieron sitios
+  de comparación de precios al consumidor, sin dato financiero agregado utilizable como
+  fuente. Se declara la ausencia de resultado en el texto del node en vez de forzar una
+  entrada débil en el ledger de `cronista` (mismo criterio que la "pista social sin
+  cobertura" en [[material-visual-venta-consultiva|Material visual en venta consultiva]]).
+  **Sigue siendo una pregunta abierta del proyecto.**
+
+**Lectura conjunta con §2.1-§2.5**: el hallazgo central no cambia — el margen delgado
+documentado en EE.UU. es en gran parte una consecuencia de su propio diseño regulatorio
+(regla 80/20), no una propiedad universal del ramo de seguros de salud. Fuera de ese marco
+regulatorio específico, la categoría muestra rentabilidad sólida y en expansión en Europa y
+Asia, con el mismo riesgo estructural de selección adversa (§1) apareciendo en China según
+crece el mercado privado.
+
 ### Tabla de rigurosidad (balance financiero)
 
 | Fuente | Tipo | Rigor | Nota |
@@ -143,6 +187,11 @@ la misma causa.
 | Bloomberg, Optum Rx (F-200) | Prensa financiera | 🟡 C | Cambio de modelo de utilidad del PBM más grande |
 | MedCity News, GLP-1 (F-201) | Prensa de negocio de salud | 🟠 D | Farmacia +14.8% interanual, el driver más agudo |
 | Mercer, GLP-1 2026 (F-202) | Consultora de beneficios | 🟡 C | 43% de planes priorizan manejo de costo especializado |
+| Allianz SE, comunicado de resultados (F-203) | Filing/comunicado oficial de empresa pública | 🔵 B | Vida y Salud: EUR 9,000M utilidad operativa FY2025 |
+| Health & Protection, Bupa Group (F-204) | Prensa especializada | 🟠 D | GBP 1,009M utilidad subyacente 2025, +16% |
+| Insurance Business Asia, Niva Bupa (F-205) | Prensa especializada | 🟠 D | +67% utilidad trimestral (India) |
+| Grand View Research, China (F-206) | Firma de investigación de mercado | 🟡 C | Mercado USD 150,628M (2025) → USD 254,657M (2033) |
+| Swiss Re Institute, China (F-207) | Instituto de investigación de reaseguradora | 🔵 B | Crecimiento de primas desacelera 20.5%→8.2%, selección adversa |
 
 ---
 
@@ -247,15 +296,21 @@ estadounidense — buena señal para el diseño de
   sin resultados de búsqueda en foros/RRSS para estos temas técnico-institucionales.
 - La fuente F-98 (revisión sistemática de ACOs) no se pudo verificar con autor/journal exacto —
   tratar con reserva.
-- **(§2, v1.1)** Todos los datos financieros agregados (márgenes, MLR, regla 80/20) son de
-  EE.UU. — el único con datos públicos agregados y auditables encontrados en esta ronda.
-  Se usa como proxy del "balance global" solo porque concentra ~80% de las primas de salud
-  privadas del mundo (F-196, 🟠D, dato no verificado con rigor A/B) — no hay evidencia
-  agregada equivalente para Europa, Asia o Latinoamérica en esta investigación.
+- **(§2, v1.1)** Todos los datos financieros agregados de §2.1-§2.5 (márgenes, MLR, regla
+  80/20) son de EE.UU. — el único con datos públicos agregados y auditables encontrados en
+  esa ronda. Se usaba como proxy del "balance global" solo porque concentra ~80% de las
+  primas de salud privadas del mundo (F-196, 🟠D, dato no verificado con rigor A/B).
+  **(Parcialmente resuelto en v1.2, §2.6)**: se sumó contraste de Europa y Asia (rentable y
+  en expansión, sin el mismo techo regulatorio) — pero Perú/Latinoamérica **sigue sin dato
+  agregado de rentabilidad** pese a búsqueda dedicada; hueco confirmado, no cerrado.
 - **(§2, v1.1)** La cifra de Optum Rx (F-198) es de un solo trimestre y de un solo actor,
   aunque sea el más grande — no se puede generalizar sin más datos que "todo PBM integrado
   es igual de rentable"; se reporta como el caso mejor documentado (filing primario), no
   como promedio de la industria.
+- **(§2.6, v1.2)** Los casos europeos y asiáticos (F-203 a F-207) son, igual que Optum
+  Rx, actores individuales (o un país, en el caso de China) en un trimestre/año dado — no
+  se puede generalizar a "toda Europa/Asia es rentable en salud" sin más muestra, se
+  reportan como evidencia direccional consistente, no como promedio regional verificado.
 
 ## Conexiones
 
