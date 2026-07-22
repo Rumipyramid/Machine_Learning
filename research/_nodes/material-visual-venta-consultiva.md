@@ -352,3 +352,7 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
 - [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in]] — este node
   cubre el momento anterior en el journey: cómo llegar a un primer contacto ya consentido,
   antes de que aplique el material visual de explicación de producto de aquí.
+- [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — ese
+  node concluye que el asesor humano persiste especialmente en productos complejos; este
+  node es la implicación práctica directa — invertir en mejores herramientas visuales
+  para esa conversación, no en eliminarla.

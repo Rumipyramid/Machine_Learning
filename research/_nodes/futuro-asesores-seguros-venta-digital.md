@@ -1,0 +1,288 @@
+# ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario
+
+> Documento de investigación. Fuente persistente y versionada en el repositorio.
+> Fecha de elaboración: 2026-07-22 · Versión: v1.0
+> Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
+> Pregunta original: ¿en el futuro desaparecerán los asesores de seguros? ¿Qué sucede
+> en sociedades donde la tecnología permite venta 100% digital?
+> Fuentes registradas en `research/fuentes/codice.md` (F-180 a F-192).
+
+---
+
+## 0. Resumen ejecutivo (TL;DR)
+
+**Veredicto corto: no desaparecen — se redistribuyen según la complejidad del producto.**
+La evidencia de las tres pistas converge en el mismo eje explicativo: allí donde el
+producto es simple y de bajo riesgo (viaje, mascotas, algunas pólizas P&C básicas), la
+venta 100% digital ya funciona y sigue creciendo. Allí donde el producto es complejo,
+de alto riesgo, requiere entender al cliente a fondo o involucra un momento de alta
+carga emocional (vida, salud, siniestros complejos), la evidencia — académica, de
+negocio, y hasta el propio comportamiento viral del público — apunta en la dirección
+contraria: el intermediario humano no solo persiste, gana relevancia relativa.
+
+- **Pista empírica/teórica:** sólida y con marco causal, no solo correlacional. La
+  economía de la intermediación de seguros (Cummins & Doherty, 2006, canónico) explica
+  *por qué* el agente persiste — no por falta de tecnología, sino porque cumple una
+  función estructural (mitigar asimetría de información y selección adversa) que la
+  tecnología no elimina, solo puede automatizar parcialmente. Estudios más recientes
+  confirman que la complejidad del producto y la confianza moderan directamente la
+  disposición a comprar 100% online.
+- **Pista social/mediática:** no se encontró discusión directa de asesores debatiendo su
+  propio futuro laboral (mismo vacío que ya reportaban otras investigaciones de este
+  proyecto sobre contenido genuino de práctica entre pares). Pero sí apareció una señal
+  social fortísima y no buscada: el backlash viral (diciembre 2024) contra la
+  automatización de decisiones de alto impacto en seguros de salud, tras el asesinato
+  del CEO de UnitedHealthcare — evidencia de que el público reacciona con enojo masivo,
+  no con alivio, cuando la IA reemplaza juicio humano en el momento que más importa.
+- **Pista de negocio:** convergente y con datos duros, incluyendo contraevidencia
+  buscada a propósito. Un banco de inversión cuantifica el riesgo real de IA en
+  distribución de seguros en ~USD 15,000 millones — pero solo en el segmento de "baja
+  complejidad"; los riesgos comerciales grandes quedan explícitamente fuera. El caso
+  insignia del seguro 100% digital (Lemonade) aún no es rentable de forma sostenida
+  doce años después de fundado. En Corea del Sur, uno de los mercados más digitalizados
+  del mundo, el canal 100% online de seguros de vida **retrocedió 33.6% en una década**
+  mientras el canal de agentes retenía su participación. El mercado global de brokers
+  está **creciendo**, no encogiendo.
+- **Convergencia:** las tres pistas señalan la misma variable moderadora — complejidad
+  del producto y del momento (venta vs. siniestro) — como lo que determina si la
+  tecnología reemplaza o refuerza al intermediario.
+- **Divergencia real, no forzada:** el discurso de marketing de ciertas startups de IA
+  ("agente autónomo que reemplaza completamente al asesor humano para fin de año") no
+  tiene ningún respaldo de negocio verificable detrás — es autopromoción de vendor,
+  contrastada explícitamente contra datos reales de mercado que muestran lo opuesto.
+
+---
+
+## 1. 🔬 Pista empírica/teórica
+
+### 1.1 El marco causal: por qué el intermediario persiste (no por inercia)
+
+El trabajo más citado y riguroso sobre economía de la intermediación de seguros
+(Cummins & Doherty, 2006, F-180, 🟢A, _Journal of Risk and Insurance_) explica el
+mecanismo, no solo el patrón: los agentes/brokers funcionan como **"market makers"**
+que resuelven un problema estructural del mercado de seguros — la asimetría de
+información entre asegurado y asegurador, y el riesgo de selección adversa que esa
+asimetría produce. Esto es relevante porque implica que la pregunta correcta no es
+"¿la tecnología puede hacer lo que hace un agente?" sino "¿la tecnología resuelve el
+problema estructural que el agente resuelve, o solo automatiza la parte administrativa
+alrededor de él?" — la evidencia de negocio (§3) sugiere que hoy resuelve mayormente lo
+segundo.
+
+### 1.2 La complejidad del producto como variable que decide el resultado
+
+Dos estudios directos sobre compra de seguros online confirman el mismo patrón desde
+ángulos distintos. Un estudio en Malasia (Hanaysha et al., 2023, F-191, 🔵B) encuentra
+que la **confianza modera** la relación entre normas sociales e intención de compra de
+seguro de vida online, y que la complejidad del producto es un factor crítico junto con
+la autoeficacia del comprador. Un estudio independiente con consumidores reales de
+seguros online (N=177, F-192, ⚠️ revista no verificada, tratar con cautela) confirma que
+la **complejidad percibida del producto** es un determinante significativo de
+satisfacción e intención de recompra — no un detalle menor del diseño de la web.
+
+**Lectura conjunta:** ambos estudios apuntan a que la variable que determina si alguien
+compra sin intermediario no es "cuán digital es la sociedad" en general, sino **cuán
+complejo es el producto específico** que se está comprando en ese momento.
+
+### Tabla de rigurosidad (pista empírica)
+
+| Fuente | Tipo | Rigor | Nota |
+|---|---|---|---|
+| Cummins & Doherty 2006 (F-180) | Paper teórico/empírico canónico | 🟢 A | Marco causal de por qué persiste la intermediación |
+| Hanaysha et al. 2023 (F-191) | Estudio empírico, revista arbitrada | 🔵 B | Confianza y complejidad moderan compra online |
+| Estudio N=177 online insurance (F-192) | Estudio empírico | ⚠️ No verificado | Complejidad percibida predice satisfacción/recompra |
+
+---
+
+## 2. 📱 Pista social/mediática
+
+**Búsqueda directa sin resultado utilizable — se declara explícitamente, como en
+investigaciones previas de este proyecto sobre el mismo tipo de tema.** No se encontró
+discusión genuina y verificable de asesores de seguros debatiendo entre pares (Reddit,
+foros) si la IA los reemplazará — el motor de búsqueda devolvió sobre todo contenido de
+vendors de IA promocionando sus propios productos ("agente autónomo que reemplaza
+totalmente al asesor humano para fin de año"), que se trata aquí como **marketing, no
+como evidencia social real** (ver §3.6 sobre esto mismo desde la pista de negocio).
+
+**Lo que sí apareció, sin buscarlo directamente, es una señal social fuerte y
+verificable:** en diciembre de 2024, el asesinato del CEO de UnitedHealthcare disparó
+una reacción viral masiva en redes sociales — un post de la propia empresa en Facebook
+recibió 62,000 reacciones, 57,000 de ellas emoji de risa (CNN Business, F-187, 🟠D). La
+cobertura documenta que el trasfondo de esa reacción era rabia acumulada
+específicamente contra la **negación automatizada/algorítmica de reclamos de salud**
+(una demanda colectiva alega uso de IA en vez de personal médico real, con más del 90%
+de esas negaciones revertidas en apelación — PBS NewsHour, F-188, 🟠D). Una herramienta
+de IA para ayudar a *apelar* negaciones ("Fight Health Insurance") se viralizó en
+Reddit/TikTok/YouTube/Instagram — la gente no está usando la IA para preferir menos
+contacto humano en sus seguros, la está usando para **pelear contra decisiones que
+sintió que un humano no tomó**.
+
+**Conclusión de esta pista:** no hay evidencia social directa sobre el futuro laboral
+de los asesores, pero sí hay una señal social muy fuerte —no buscada, encontrada casi
+por accidente— de que el público reacciona con enojo, no alivio, cuando percibe que una
+decisión de seguros de alto impacto fue automatizada sin criterio humano. Es evidencia
+indirecta pero robusta a favor de que la desconfianza hacia la automatización total
+tiene una base social real, más allá de la teoría económica de §1.
+
+---
+
+## 3. 📈 Pista de negocio
+
+### 3.1 Qué SÍ está en riesgo — y qué explícitamente no
+
+Un banco de inversión global cuantifica el riesgo real: hasta USD 15,000 millones en
+comisiones de agentes independientes clasificadas como **"baja complejidad"** están en
+riesgo de desintermediación por IA (BofA Global Research vía Fortune, F-181, 🟡C) — pero
+el mismo informe señala explícitamente que los **riesgos comerciales grandes no están en
+riesgo**, dada su complejidad. Es la misma variable moderadora de §1.2, ahora en cifras
+de negocio reales.
+
+### 3.2 Donde falla lo 100% digital hoy: el momento del reclamo, no solo la venta
+
+La evidencia de negocio más incómoda para la tesis "lo digital ya reemplazó al humano"
+viene de los reclamos, no de la venta: las tasas de fallo en reclamos 100% digitales son
+del 39% en seguros de hogar y 33% en auto — e incluso entre los mejores del mercado, más
+del 30% de los clientes termina necesitando ayuda humana de todos modos (Bain & Company,
+F-183, 🟡C). Y quienes empiezan el proceso digital pero terminan escalando a un humano
+reportan una experiencia **peor**, no neutral (NPS cae 11 puntos en promedio) — sugiere
+que el modelo híbrido mal ejecutado (digital como filtro, humano como rescate) es peor
+que cualquiera de los dos extremos bien ejecutados.
+
+### 3.3 La brecha entre "investigar online" y "comprar sin humano"
+
+92% de consumidores investiga seguros de vida online — pero solo 25% está listo para
+completar toda la compra 100% digital; el 75% restante quiere guía profesional en
+puntos clave de decisión (Bain & Company, F-182, 🟡C). Esto es consistente con lo que ya
+documentaba este proyecto sobre Perú específicamente: la confianza en la aseguradora
+**sube significativamente** cuando hay intermediación de un broker/corredor (ver
+[[seguros-comportamiento-mundo-peru]] §3.3) — el mismo patrón, en un mercado mucho menos
+digitalizado que los estudiados aquí.
+
+### 3.4 Contraevidencia buscada a propósito: mercados de alta madurez digital
+
+Se buscó explícitamente el caso contrario — sociedades donde la tecnología ya permite
+venta 100% digital madura, para ver si ahí sí desapareció el asesor:
+
+- **Corea del Sur** (uno de los mercados de seguros más digitalizados del mundo): las
+  primas del canal 100% online ("cyber marketing") **cayeron 33.6% en una década** (de
+  138,700 a 92,100 millones de wones), mientras el canal de agentes retenía 48.25% de
+  participación en 2025 (The Korea Times, F-185, 🟠D, cita cifras del sector). No es
+  estancamiento — es **retroceso** del canal digital puro.
+- **China** (el mercado insurtech más grande y de más rápido crecimiento del mundo): pese
+  a que el sector insurtech creció 20 veces, los canales de agentes + bancaseguros
+  siguen acumulando **más del 90%** del ingreso de primas de vida (Fintech Hong Kong vía
+  informe KPMG/ZhongAn, F-186, 🟠D). El crecimiento digital es real en volumen absoluto
+  (más clientes, más pólizas simples) pero no ha desplazado al canal tradicional en
+  participación de las primas más grandes/complejas.
+- **El caso insignia de "seguro 100% digital"** (Lemonade, fundado 2015, EE.UU.): doce
+  años después, aún no es rentable de forma sostenida — loss ratio bruto de 62% en Q1
+  2026, guía a EBITDA ajustado positivo recién para fin de 2026, rentabilidad GAAP no
+  esperada hasta 2027 (The Motley Fool, F-189, 🟠D, cobertura de resultados trimestrales
+  de una empresa pública). No ha quebrado ni es un fracaso — pero tampoco es la prueba
+  de que "digital-only" sea económicamente superior al modelo con intermediarios.
+
+### 3.5 El mercado de brokers está creciendo, no encogiendo
+
+El mercado global de corretaje de seguros está valorado en USD 335,870 millones (2025) y
+proyectado a casi duplicarse a USD 695,030 millones para 2033 (CAGR 9.6%) — sin señal de
+declive en ninguna región grande (Grand View Research, F-190, 🟡C). Esto no contradice
+§3.1 (que sí hay un segmento en riesgo real) — contradice la versión extrema de la
+pregunta ("¿van a desaparecer"): el canal, agregado, está en expansión.
+
+### 3.6 Nota sobre marketing de vendors de IA vs. evidencia real
+
+En la búsqueda de la pista de negocio también aparecieron anuncios de empresas de IA
+prometiendo un "agente autónomo que reemplaza totalmente al asesor humano para fin de
+año" — contenido promocional de la propia empresa que lo vende, sin ningún resultado de
+negocio verificable detrás (no se registra como fuente citable, se documenta aquí solo
+para dejar constancia de que se encontró y se descartó como evidencia, siguiendo el
+mismo criterio que otras investigaciones de este proyecto aplican a cifras de marketing
+sin método).
+
+### Tabla de rigurosidad (pista de negocio)
+
+| Fuente | Tipo | Rigor | Nota |
+|---|---|---|---|
+| BofA Global Research (F-181) | Research de banco de inversión | 🟡 C | USD 15B en riesgo, solo baja complejidad |
+| Bain, Digital Shake-up (F-182) | Consultora | 🟡 C | 92% investiga online, solo 25% compra 100% digital |
+| Bain, Digital Dilemma Claims (F-183) | Consultora | 🟡 C | Reclamos 100% digitales fallan 33-39% |
+| PwC, Direct Distribution (F-184) | Consultora | 🟡 C | Canales directos han tenido dificultades reales |
+| Korea Times (F-185) | Prensa sobre cifras de sector | 🟠 D | Canal digital retrocedió 33.6% en una década |
+| Fintech HK / KPMG-ZhongAn (F-186) | Prensa sobre informe de consultora | 🟠 D | Canal tradicional retiene >90% de primas en China |
+| Motley Fool, Lemonade (F-189) | Prensa financiera | 🟠 D | Caso insignia aún no rentable, 12 años después |
+| Grand View Research (F-190) | Firma de investigación de mercado | 🟡 C | Mercado de brokers en expansión global |
+
+---
+
+## 4. ⚖️ Síntesis
+
+**Respuesta directa a la pregunta original:** no, la evidencia disponible no respalda
+que los asesores de seguros vayan a desaparecer. Respalda algo más específico y más
+útil: que la distribución de seguros se está **segmentando por complejidad**, no
+reemplazando en bloque. Lo simple, de bajo riesgo y bajo involucramiento emocional
+(viaje, mascotas, algunas pólizas P&C básicas) sigue migrando a 100% digital con éxito
+real. Lo complejo, de alto riesgo o alta carga emocional (vida, salud, siniestros, y por
+extensión razonable el ahorro/inversión de largo plazo que investiga este proyecto)
+muestra el patrón contrario en cada pista investigada: marco teórico que explica por qué
+el intermediario resuelve un problema estructural (§1.1), estudios que muestran que la
+complejidad predice la necesidad de humano (§1.2), una reacción social visceral contra
+la automatización total en el momento más sensible —el reclamo— (§2), y datos de negocio
+duros en tres mercados/casos distintos (Corea, China, Lemonade) que apuntan todos en la
+misma dirección (§3.4).
+
+**Sobre "sociedades donde la tecnología permite venta 100% digital":** la pregunta
+asume que la tecnología es el factor limitante, y la evidencia sugiere que no lo es —
+Corea del Sur y China tienen tecnología de sobra para vender 100% digital a escala, y
+aun así el canal humano no solo sobrevive, retiene o gana participación en el segmento
+de mayor valor. El factor limitante no es tecnológico, es lo que Cummins & Doherty (§1.1)
+describen como estructural: mientras exista asimetría de información entre asegurado y
+asegurador en un producto dado, existe una función económica real para alguien que la
+medie — humano o no.
+
+**Implicación para el proyecto:** esto no es un llamado a no invertir en tecnología de
+venta — es evidencia de que la inversión de mayor retorno probablemente no es
+"reemplazar al asesor", sino lo que ya señalaba
+[[material-visual-venta-consultiva|el node sobre material visual de venta consultiva]]:
+dar al asesor mejores herramientas para las conversaciones complejas, en vez de
+apostar a que la conversación compleja deje de necesitar a una persona.
+
+---
+
+## 5. Limitaciones
+
+- **Pista social/mediática sin cobertura directa** del tema específico (asesores
+  debatiendo su propio futuro) — la señal social usada (§2) es indirecta: mide reacción
+  a automatización de reclamos, no a automatización de venta. Es evidencia relacionada,
+  no evidencia directa de la pregunta exacta.
+- **La mayoría de la evidencia de negocio es C/D** (consultoras, prensa financiera) —
+  ninguna fuente de negocio en esta investigación supera B en la rúbrica de rigurosidad;
+  se recomienda no citar las cifras puntuales (USD 15B, 92%/25%, NPS -11) como si
+  fueran dato de método auditado, sino como dirección consistente entre múltiples
+  fuentes independientes.
+- **F-192 (estudio N=177) no pudo verificarse su revista de publicación ni proceso de
+  arbitraje** — se registró con esa salvedad explícita, tratar con cautela.
+- **Ningún dato es específico del mercado peruano** — toda la evidencia de negocio es de
+  EE.UU., Corea, China y Malasia (más el marco teórico general de Cummins & Doherty).
+  La transferencia al Perú es razonable dado que ya existe evidencia local convergente
+  sobre el rol del broker en confianza (ver Conexiones), pero no es evidencia *directa*
+  del mercado peruano sobre el futuro del canal.
+- **No se investigó el ángulo regulatorio** (¿en algún país se exige intermediario
+  humano por ley para ciertos productos?) — quedó fuera del alcance de esta ronda.
+
+---
+
+## Conexiones
+
+- [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
+  seguros (Mundo vs. Perú)]] — ese node documenta que en Perú, específicamente, la
+  confianza sube con intermediación de un broker (§3.3); este node aporta el marco
+  causal de por qué eso pasa y evidencia de que el mismo patrón se repite en mercados
+  mucho más digitalizados.
+- [[material-visual-venta-consultiva|Material visual en la venta consultiva]] — si el
+  asesor humano persiste especialmente en productos complejos, la implicación práctica
+  es invertir en mejores herramientas para esa conversación (lo que investiga ese node),
+  no en reemplazar la conversación.
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — ese node documenta casos
+  de negocio (Babylon Health, Oscar Health) donde apostar fuerte por tecnología/disrupción
+  sin disciplina humana/actuarial de por medio terminó en colapso o en un "reset"
+  costoso — mismo patrón de este node aplicado a la capa de suscripción/operación, no
+  solo distribución.
