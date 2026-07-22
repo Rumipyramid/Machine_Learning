@@ -2,9 +2,11 @@
 
 > Node. Fuente de verdad de este tema. Rescata 3 investigaciones `/seeker`/`/trinidad` que
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
-> `fuentes/codice.md` (F-86 a F-116).
+> `fuentes/codice.md` (F-86 a F-116, F-193 a F-202).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-07-10 · Versión: v1.0
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-07-22 · Versión: v1.1
+> (amplía con §2: balance financiero global/rentabilidad de la categoría — pregunta
+> directa del usuario sobre si el ramo salud es rentable a nivel mundial)
 
 ---
 
@@ -47,7 +49,104 @@ Conecta directamente con `disposicion_compartir_datos_pricing` en el modelo `lap
 
 ---
 
-## 2. Modelos que navegan bien esta presión
+## 2. Balance financiero global: ¿es rentable la categoría de seguros de salud?
+
+**Pregunta original**: ¿cuál es el balance de los seguros de salud en el mundo? ¿la
+categoría está siendo rentable?
+
+**Veredicto**: sí es rentable, pero con un margen de utilidad de suscripción
+estructuralmente delgado y bajo compresión — y la mayor parte de la utilidad real del
+sector hoy no viene de asegurar, viene de negocios adyacentes verticalmente integrados
+(farmacia/PBM). "Rentable" y "con márgenes de suscripción altos" son dos afirmaciones
+distintas; la evidencia solo respalda la primera.
+
+### 2.1 El dato agregado más reciente: rentable, pero con margen fino
+
+La industria de seguros de salud de EE.UU. (el mercado que concentra ~80% de las primas
+de salud privadas del mundo, F-196, 🟠D) reportó una ganancia de suscripción de USD 8,900
+millones en el primer semestre de 2025 — un margen de utilidad de apenas **1.8%** sobre
+ingresos (NAIC, F-193, 🔵B, regulador oficial). No es una categoría en pérdida agregada,
+pero tampoco es un negocio de márgenes altos: 1.8% es un margen fino para cualquier
+industria.
+
+### 2.2 La tendencia es de compresión, no de expansión
+
+El medical loss ratio (proporción de la prima que se destina a pagar atención médica,
+ver §2.3) superó el **87%** en años recientes, y los márgenes de suscripción cayeron a un
+mínimo de 7 años (**2%**) en 2022, por el retorno de procedimientos médicos post-pandemia
+y el alza de costos unitarios (KFF, F-194, 🔵B). Esto confirma, con cifra agregada, la
+misma presión de costo que documenta §1: el costo médico global sube consistentemente
+(9.5%→10%→10.3%, F-88), y ese costo se traduce directamente en menos margen para el
+asegurador, no solo en primas más altas para el asegurado.
+
+### 2.3 Por qué el margen es delgado: está limitado por regulación, no solo por competencia
+
+En EE.UU., la regla del **80/20** de la ACA (el "medical loss ratio" o MLR) obliga
+legalmente a los aseguradores a destinar al menos 80% (pólizas individuales/grupo
+pequeño) u 85% (grupo grande) de cada prima a atención médica o mejora de calidad — el
+resto (administración + utilidad) no puede superar 15-20% de la prima, y si lo supera,
+el excedente se devuelve como reembolso a los asegurados (entre 2012-2023 se devolvieron
+USD 11,800 millones en reembolsos por este motivo — HealthCare.gov/Commonwealth Fund,
+F-197, 🔵B). **Esto es un techo de utilidad puesto por diseño regulatorio**, no solo el
+resultado de competencia de mercado — un dato importante para no asumir que un margen
+delgado significa automáticamente una industria en crisis: en parte es una industria
+regulada explícitamente para que no gane más de cierto umbral sobre la prima pura.
+
+### 2.4 Dónde está la rentabilidad real: no en asegurar, en la integración vertical
+
+Si el margen de suscripción está topado por regulación, ¿dónde gana dinero el sector?
+La evidencia más directa (un filing regulatorio primario, no una estimación de prensa)
+lo muestra con un solo número: en el segundo trimestre de 2026, la unidad de gestión de
+beneficios farmacéuticos (PBM) del asegurador más grande de EE.UU. —Optum Rx, de
+UnitedHealth Group— reportó **USD 38,300 millones en ingresos y USD 1,500 millones en
+utilidad operativa en un solo trimestre** (UnitedHealth Group, SEC Form 8-K, F-198, 🟢A)
+— y su principal cliente es la propia aseguradora del mismo grupo. No es un caso aislado:
+tres empresas (CVS Caremark, Cigna Express Scripts, UnitedHealth Optum Rx) procesan el
+**80% de los reclamos de recetas** en EE.UU., y las tres están integradas verticalmente
+con una aseguradora grande (Drug Channels, F-199, 🟡C). El propio sector reconoce que el
+modelo tradicional de utilidad del PBM (ganar por la diferencia entre lo que cobra al
+plan y lo que paga a la farmacia — "spread pricing") atraía crítica suficiente como para
+que Optum Rx anunciara en 2026 un cambio a tarifa fija por miembro, independiente del
+precio de lista del fabricante (Bloomberg, F-200, 🟡C).
+
+**Lectura para el proyecto**: la pregunta "¿es rentable el seguro de salud?" tiene una
+respuesta distinta según qué parte del negocio se mida. El *seguro puro* (prima menos
+reclamos) es rentable pero con margen fino y regulado. El *negocio adyacente
+verticalmente integrado* (farmacia, gestión de beneficios, y en otros mercados also
+provisión directa — ver Kaiser Permanente en §3) es donde se concentra la utilidad real
+hoy en los actores más grandes.
+
+### 2.5 El reto de costo más agudo y actual: medicamentos especializados (GLP-1)
+
+Dentro de "sube el costo médico" (§1), el driver más agudo en 2026 tiene nombre propio:
+el gasto en farmacia es el componente de costo médico de más rápido crecimiento del año
+(+14.8% interanual), impulsado principalmente por medicamentos GLP-1 para pérdida de
+peso/diabetes (MedCity News, F-201, 🟠D). 43% de los planes de salud rankean el manejo de
+costos de medicamentos especializados como su objetivo número uno para 2026, y algunos
+empleadores vieron los GLP-1 saltar de ser su gasto farmacéutico #32 a ser el #1 en un
+solo año (Mercer, F-202, 🟡C, encuesta propia a empleadores). Es un ejemplo concreto y
+actual de "nueva tecnología médica" — la causa #1 de presión de costo que ya identificaba
+§1 (F-88) — no una categoría nueva de reto, sino la manifestación más reciente y aguda de
+la misma causa.
+
+### Tabla de rigurosidad (balance financiero)
+
+| Fuente | Tipo | Rigor | Nota |
+|---|---|---|---|
+| NAIC, 2025 Mid-Year Results (F-193) | Regulador oficial, datos agregados | 🔵 B | Margen de utilidad agregado: 1.8% |
+| KFF, Health Insurer Financial Performance (F-194) | Organización de políticas de salud | 🔵 B | MLR >87%, margen mínimo de 7 años en 2022 |
+| Oliver Wyman, Q1 2025 (F-195) | Consultora actuarial | 🟡 C | Dato trimestral de MLR de grandes públicas |
+| Risk & Insurance (F-196) | Prensa especializada | 🟠 D | Crecimiento global desacelerando a 0.5% en 2026 |
+| HealthCare.gov / Commonwealth Fund, regla 80/20 (F-197) | Regulación oficial + análisis de fundación | 🔵 B | Techo de utilidad puesto por diseño regulatorio |
+| UnitedHealth Group, filing SEC Q2 2026 (F-198) | Filing regulatorio primario | 🟢 A | Optum Rx: USD 1,500M de utilidad operativa en un trimestre |
+| Drug Channels (F-199) | Analista especializado | 🟡 C | 3 PBMs = 80% de reclamos, integrados verticalmente |
+| Bloomberg, Optum Rx (F-200) | Prensa financiera | 🟡 C | Cambio de modelo de utilidad del PBM más grande |
+| MedCity News, GLP-1 (F-201) | Prensa de negocio de salud | 🟠 D | Farmacia +14.8% interanual, el driver más agudo |
+| Mercer, GLP-1 2026 (F-202) | Consultora de beneficios | 🟡 C | 43% de planes priorizan manejo de costo especializado |
+
+---
+
+## 3. Modelos que navegan bien esta presión
 
 **Principio de diseño que se repite en toda la evidencia**: los modelos **híbridos** (mancomunación
 para riesgo catastrófico + mecanismos individuales para riesgo rutinario/moral hazard) superan
@@ -84,7 +183,7 @@ independiente es más cautelosa (F-100). No se promedia: se presentan en tensió
 
 ---
 
-## 3. La capa de atención primaria específicamente
+## 4. La capa de atención primaria específicamente
 
 **Pregunta original**: dentro de la arquitectura de capas (ahorro/rutina, seguro catastrófico, red
 de seguridad), ¿existen modelos que cubran bien la atención primaria?
@@ -97,7 +196,7 @@ de seguridad), ¿existen modelos que cubran bien la atención primaria?
 | **Gatekeeping + capitación (China, piloto)** | Consultas primarias **+55.3%**, visitas hospitalarias **-23.9%**, sin aumento de gasto (F-109, 🟢 cuasi-experimental — diseño fuerte) | Alto |
 | **Gatekeeping — revisión general** | Reduce especialistas/gasto, **pero con diagnóstico tardío documentado, particularmente cáncer** (F-110, 🟢 revisión sistemática) | Medio — beneficio real con riesgo real |
 | **Capitación NHS (UK)** | Modelo híbrido (capitación ajustada por necesidad + bono por desempeño + FFS para extras) en uso real a escala nacional (F-111, 🟢) | Alto |
-| **Singapur — policlínicas + CHAS** | ⚠️ Incluso Singapur (el mejor caso de riesgo catastrófico, §2) lucha aquí: su reforma "Healthier SG" tuvo **éxito limitado** — subsidios insuficientes para cambiar práctica de proveedores establecidos (F-112, 🔵 B) | Medio |
+| **Singapur — policlínicas + CHAS** | ⚠️ Incluso Singapur (el mejor caso de riesgo catastrófico, §3) lucha aquí: su reforma "Healthier SG" tuvo **éxito limitado** — subsidios insuficientes para cambiar práctica de proveedores establecidos (F-112, 🔵 B) | Medio |
 
 **⚠️ Problema estructural del modelo más simple (DPC)**: excluye a quien no puede pagar la
 membresía — exactamente lo opuesto de lo que necesita un sistema como el peruano, donde
@@ -121,11 +220,14 @@ sistema capitado más amplio (NHS).
 
 ---
 
-## 4. Síntesis transversal (las 3 secciones)
+## 5. Síntesis transversal (las 4 secciones)
 
-**Convergencia**: la capitación/valor-por-resultado gana en las tres capas investigadas
-(aseguradoras generales §2, atención primaria específicamente §3) — no es casualidad, es un
-principio de diseño transversal.
+**Convergencia**: la capitación/valor-por-resultado gana en las capas investigadas
+(aseguradoras generales §3, atención primaria específicamente §4) — no es casualidad, es un
+principio de diseño transversal. Conecta directamente con §2.4: Kaiser Permanente (§3) es
+en esencia el mismo principio de integración vertical que hace rentable a Optum —
+capitación + provisión propia en una sola organización, en vez de negocio de seguro puro
+separado del negocio de atención/farmacia.
 
 **Divergencia/tensión que no se resuelve artificialmente**: el entusiasmo de negocio (Discovery,
 ChenMed) es sistemáticamente más optimista que la evidencia académica independiente sobre el
@@ -145,6 +247,15 @@ estadounidense — buena señal para el diseño de
   sin resultados de búsqueda en foros/RRSS para estos temas técnico-institucionales.
 - La fuente F-98 (revisión sistemática de ACOs) no se pudo verificar con autor/journal exacto —
   tratar con reserva.
+- **(§2, v1.1)** Todos los datos financieros agregados (márgenes, MLR, regla 80/20) son de
+  EE.UU. — el único con datos públicos agregados y auditables encontrados en esta ronda.
+  Se usa como proxy del "balance global" solo porque concentra ~80% de las primas de salud
+  privadas del mundo (F-196, 🟠D, dato no verificado con rigor A/B) — no hay evidencia
+  agregada equivalente para Europa, Asia o Latinoamérica en esta investigación.
+- **(§2, v1.1)** La cifra de Optum Rx (F-198) es de un solo trimestre y de un solo actor,
+  aunque sea el más grande — no se puede generalizar sin más datos que "todo PBM integrado
+  es igual de rentable"; se reporta como el caso mejor documentado (filing primario), no
+  como promedio de la industria.
 
 ## Conexiones
 
@@ -153,7 +264,7 @@ estadounidense — buena señal para el diseño de
   automedicación, InkaFarma/Mifarma).
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros]] — §7 de ese
   node (mercado global por ramo) es el punto de partida cuantitativo de este; el NPS de ChenMed
-  (§3 aquí) se compara contra el NPS de aseguradoras documentado ahí (§7.2).
+  (§4 aquí) se compara contra el NPS de aseguradoras documentado ahí (§7.2).
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base.
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del
   mercado]] — Discovery Vitality aparece en ambos: ahí como caso de referencia de
