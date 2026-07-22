@@ -121,9 +121,45 @@ técnica testear primero en la propia población —que es justo lo que pide est
 tesis— el ranking direccional del propio dataset dice "empieza por defaults",
 no por mensajes/priming. No es garantía, es prior razonable para priorizar el
 primer experimento.
-- **Evidencia:** F-16, F-17, F-18, F-20, F-21 (todas 🟢A)
-- **Confianza:** Alta
-- **Actualizado:** 2026-07-21
+**[Revisión profunda 2026-07-22]** Leí a fondo las 5 fuentes 🟢A que sostienen esta tesis
+(F-17 a F-21 — antes solo tenían el resumen de una línea del ledger). Tres hallazgos
+nuevos, ninguno cambia la dirección de la tesis, pero la profundizan:
+1. **"No hay efecto promedio" no es solo el veredicto de Maier — es el mismo resultado
+   por tres caminos metodológicos independientes.** F-17 (RoBMA sobre el propio dataset
+   de Mertens) ya lo decía; F-18 (Hu et al. 2025) lo repite a escala mucho mayor —14
+   meta-análisis, 1,638 estudios, ~30M de participantes— y el efecto agregado cae de
+   d=0.27 a **d=0.004** tras corregir sesgo de publicación; F-21 (DellaVigna & Linos)
+   llega ahí por una ruta totalmente distinta (RCTs reales de unidades de gobierno vs.
+   RCTs publicados en journals) y encuentra que el sesgo de publicación + bajo poder
+   estadístico académico **alcanzan para explicar toda la brecha** de ~6x ("voltage
+   drop"), no una supuesta diferencia laboratorio-vs-mundo-real. **Caveat que templa la
+   contundencia:** Hu et al. reportan que la mayoría de los 14 meta-análisis que agregan
+   tiene calidad metodológica baja o crítica (AMSTAR-2, por falta de pre-registro y de
+   evaluación de riesgo de sesgo) — el corpus que sostiene "no hay efecto" es él mismo de
+   calidad mediocre. Es la mejor estimación disponible hoy, no un caso cerrado con
+   evidencia impecable.
+2. **F-20 (Milkman) en detalle da una receta de diseño, no solo un método a copiar.** El
+   megastudy real fue 54 programas de 4 semanas sobre 61,293 miembros reales de gimnasio;
+   45% de las intervenciones subió asistencia 9-27%, y la que más funcionó no fue un
+   recordatorio genérico sino un microincentivo (~US$0.09) dirigido específicamente al
+   **momento de recaída** (faltar a una sesión programada y volver a la siguiente). Prior
+   accionable para el primer experimento propio: diseñar el nudge alrededor del momento de
+   lapso, no de la adherencia general.
+3. **F-19 (Chater & Loewenstein) da un mecanismo de negocio, no solo académico, para por
+   qué el i-frame domina.** Documentan que BP acuñó "huella de carbono" en 2004
+   específicamente para reencuadrar el cambio climático como responsabilidad individual
+   mientras cabildeaba contra la regulación sistémica que sí reduciría emisiones — su
+   lectura es que firmas de sectores diversos "promueven el i-frame mientras cabildean sin
+   descanso por políticas s-frame que favorecen sus propios intereses". Conexión directa
+   con tesis 1: apostar solo por "educación financiera" o "glosarios" sin rediseñar el
+   producto no es solo una jugada de ROI débil (tesis 1) — corre el riesgo de leerse como
+   el mismo patrón de desvío de responsabilidad que describe este caso, si no se acompaña
+   de cambios reales de producto.
+- **Evidencia:** F-16, F-17, F-18, F-19, F-20, F-21 (todas 🟢A)
+- **Confianza:** Alta — ahora sostenida por tres metodologías independientes que convergen
+  en la misma conclusión, con el caveat explícito de que el corpus agregado más reciente
+  (Hu et al.) es de calidad mediocre.
+- **Actualizado:** 2026-07-22
 
 ### 7. El diseño de producto embebido (s-frame) gana sobre el nudge cosmético (i-frame) — pero la telemática tiene techo de confianza incluso donde funciona
 El caso UBI (seguro por uso) con outcome telemático real —no autoreportado—
@@ -335,6 +371,15 @@ conversión y un riesgo regulatorio a la vez, con el mismo origen.
 
 ## ⚠️ Riesgos
 
+- **Vender "educación financiera"/glosario como la solución, sin rediseñar el producto,
+  puede leerse como desvío de responsabilidad — no solo como ROI débil.** Tesis 6
+  (revisión profunda 2026-07-22, F-19): el caso documentado de BP acuñando "huella de
+  carbono" en 2004 para reencuadrar el cambio climático como problema individual mientras
+  cabildeaba contra regulación sistémica es el precedente nombrado de esta dinámica.
+  Riesgo reputacional, no solo de conversión: cualquier campaña de "educamos al
+  consumidor" sin acompañarla de cambios reales de producto (deducible fijo en vez de
+  coaseguro, tesis 2; icon arrays, tesis 12) corre el riesgo de leerse —o de funcionar—
+  como desvío de responsabilidad hacia el cliente.
 - **Contacto comercial no consentido, con precedente ya dentro del sector
   seguros.** Tesis 8: Pacífico Seguros bajo investigación directa, BBVA
   sancionado dos veces, INDECOPI escaneando millones de audios con IA. Cualquier
@@ -518,3 +563,33 @@ conversión y un riesgo regulatorio a la vez, con el mismo origen.
   nuevas en el ledger, o a que la próxima revisión profunda (rutina de
   `cronista`, cada ~3 días) encuentre un matiz de mecanismo al leer una
   fuente ya citada a fondo.
+- **2026-07-22 (revisión profunda)** — Segunda corrida de la rutina de revisión
+  profunda (cada ~3 días). Las 5 fuentes 🟢A de ID más antiguo sin lectura profunda
+  previa eran F-17 a F-21 — el mismo cluster que ya sostenía tesis 6 (crisis del
+  nudge), todas con solo el resumen de una línea del ledger hasta hoy — ver
+  `research/fuentes/revision_profunda.md`. Nota de acceso: los URLs directos
+  (PNAS, Wiley, SSRN, Nature, NBER) devolvieron 403 en esta sesión — el proxy de
+  red del entorno bloquea todo tráfico saliente directo, confirmado con curl
+  crudo, no es un bloqueo específico de estas fuentes — así que la lectura
+  profunda se hizo vía múltiples búsquedas dirigidas que devolvieron contenido
+  sustancial de cada paper (cifras exactas, metodología, citas textuales), no
+  solo el resumen que ya tenía el ledger. Profundicé tesis 6 con tres hallazgos:
+  (1) tres metodologías independientes (RoBMA de Maier, meta-meta-análisis de Hu
+  et al. a ~30M de participantes con caída de d=0.27 a d=0.004, y la
+  descomposición de DellaVigna & Linos que atribuye toda la brecha "voltage
+  drop" a sesgo de publicación) convergen en que el efecto promedio del nudge
+  publicado estaba inflado por sesgo de publicación, no por una brecha
+  laboratorio-vs-mundo-real — con el caveat de que el corpus de Hu et al. es en
+  su mayoría de calidad AMSTAR-2 baja/crítica; (2) el megastudy de Milkman en
+  detalle (54 programas, 61,293 personas) da una receta de diseño concreta: el
+  nudge que más funcionó apuntó al momento de recaída, no a la adherencia
+  general; (3) Chater & Loewenstein documentan que BP acuñó "huella de carbono"
+  en 2004 para reencuadrar el cambio climático como responsabilidad individual
+  mientras cabildeaba contra regulación sistémica — mecanismo de negocio, no
+  solo académico, para el sesgo hacia el i-frame, que conecté como riesgo nuevo
+  (no solo de ROI sino reputacional) a la práctica de vender solo "educación
+  financiera" sin rediseñar producto. Ningún cambio de confianza hacia abajo;
+  tesis 6 se mantiene en Alta, ahora con base metodológica más amplia. Enriquecí
+  en paralelo el node `_nodes/behavioral-design-estado-disciplina.md` (pista
+  empírica y tabla de rigurosidad) con las mismas citas, sin mover ni
+  reestructurar nada.

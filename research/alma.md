@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-21.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-22.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -63,7 +63,7 @@ por afirmación cuando corresponda.
 | `_nodes/material-visual-venta-consultiva.md` | Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección (empírico + negocio + regulatorio; pista social sin cobertura) | 2026-07-21 | v1.1 (amplía con anclaje/regulatorio/confianza; aplicada a flyers Vida Ahorro) |
 | `_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan las organizaciones de venta fría a venta opt-in (seguros y sectores análogos): disparadores, impacto en volumen, tácticas puente | 2026-07-14 | v1.0 |
 | `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y frameworks para medir la calidad de un agente/chatbot de IA (usabilidad, métricas técnicas RAG, específicos de banca/seguros) | 2026-07-15 | v1.0 |
-| `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-21 | v1.1 (migrado desde `main` a Many Brains, ver nota de reconciliación abajo) |
+| `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-22 | v1.1 (migrado desde `main` a Many Brains, ver nota de reconciliación abajo) |
 | `_nodes/modelo-personas-sinteticas.md` | Cómo funciona y se calibra el modelo `lapuerta` (20 variables, v1.3) — excepción declarada de alcance, no mueve el código | 2026-07-20 | v1.0 |
 
 ---

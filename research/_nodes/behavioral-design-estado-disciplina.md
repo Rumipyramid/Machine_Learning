@@ -1,7 +1,7 @@
 # Behavioral design: estado de la disciplina y del mercado
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-07-21 · Versión: v1.1
+> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-07-22 · Versión: v1.1
 > (migrado desde `research/behavioral_design_360.md` a Many Brains, sin cambios de fondo)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta: **¿cómo le va al behavioral design como disciplina y mercado, y qué se
@@ -41,6 +41,29 @@ siga vendiendo "el nudge universal" está una década atrás.
   RoBMA; ⚠️ el debate metodológico sigue abierto). Un meta-análisis de segundo orden más
   reciente matiza: hay impacto, pero menor y muy heterogéneo por dominio y técnica
   (Hu, 2025 — Journal of Behavioral Decision Making).
+- **[Revisión profunda 2026-07-22, F-17/F-18/F-21] Tres métodos independientes convergen
+  en el mismo resultado — y por la misma razón.** Maier et al. re-analizaron el propio
+  dataset de Mertens (447→455 efectos) con **RoBMA** (robust Bayesian meta-analysis,
+  model-averaging de selection models + PET-PEESE): tras la corrección, no queda evidencia
+  bayesiana de un efecto promedio positivo — la severidad del sesgo de publicación en la
+  literatura de nudge es tal que se lo "traga" entero. Hu et al. (2025) repiten el
+  ejercicio a una escala mucho mayor: 13 artículos / 14 meta-análisis, 1,638 estudios
+  primarios, ~30 millones de participantes — el efecto agregado cae de **d=0.27 (IC95%
+  [0.16, 0.38])** antes de corregir sesgo de publicación a **d=0.004** después de
+  corregirlo, prácticamente cero. DellaVigna & Linos (F-21, más abajo) llegan al mismo
+  punto por una vía totalmente distinta —no reanalizan meta-análisis, comparan RCTs reales
+  de unidades de gobierno contra RCTs publicados en journals— y encuentran que el sesgo de
+  publicación y el bajo poder estadístico de los estudios académicos **alcanzan para
+  explicar toda la diferencia** entre ambas muestras; que un académico participe en el
+  diseño no explica la brecha por sí solo. Tres metodologías independientes (Bayesiano,
+  meta-meta-análisis, comparación campo-vs-publicado) aterrizan en la misma conclusión por
+  razones distintas: **el efecto promedio del nudge en la literatura publicada estaba
+  inflado por sesgo de publicación, no por una brecha real laboratorio-vs-mundo-real.**
+  Caveat de Hu et al. que templa la contundencia: la mayoría de los 14 meta-análisis que
+  agregan tiene calidad metodológica **baja o críticamente baja** por AMSTAR-2 (falta de
+  pre-registro, ausencia de evaluación de riesgo de sesgo en los meta-análisis originales)
+  — el corpus que sostiene esta conclusión es él mismo de calidad mediocre; es la mejor
+  estimación disponible hoy, no un caso cerrado con evidencia impecable.
 - **La granularidad importa más que el promedio (F-16, revisión profunda
   2026-07-21).** Dentro del propio meta-análisis original de Mertens et al.
   (447 efectos/212 estudios — corregido después a 455/214 sin cambiar la
@@ -59,13 +82,31 @@ siga vendiendo "el nudge universal" está una década atrás.
   menores que los de papers académicos — del orden de ~1.4 puntos porcentuales vs ~8.7 en
   la literatura publicada (DellaVigna & Linos, 2022 — Econometrica; ampliamente replicado
   como referencia del "voltage drop"). Chicos, pero a costo casi nulo por persona: el ROI
-  puede seguir siendo alto si el denominador es grande.
+  puede seguir siendo alto si el denominador es grande. **[Revisión profunda 2026-07-22,
+  F-21]** Lo que explica la brecha, según los propios autores: no es que el nudge funcione
+  peor "en el mundo real" per se — es que el sesgo de publicación y el bajo poder
+  estadístico de los estudios académicos alcanzan para explicar toda la diferencia de ~6x;
+  el canal de entrega (en persona vs. carta, reflejo de restricciones institucionales) sí
+  explica parte de la variación restante. La heterogeneidad entre tipos de nudge es
+  sustancial —algunos efectos son nulos o incluso negativos aun a escala—; los *defaults*
+  embebidos en un entorno de elección sensible a normas sociales son los que mejor
+  persisten al escalar, más que los mensajes o recordatorios genéricos.
 - **Megastudies y heterogeneidad.** El enfoque de megastudy (decenas de brazos, cientos de
   miles de personas, un outcome objetivo común) es hoy el estándar para saber *qué* funciona
-  *dónde* (Milkman et al., 2021 — Nature, megastudy de ejercicio con 61 arms/60k personas;
+  *dónde* (Milkman et al., 2021 — Nature, megastudy de ejercicio con 54 arms/61,293 personas;
   megastudies de vacunación con N=689,693). La investigación 2024-2025 se concentra en
   **cuándo la heterogeneidad es accionable para personalizar** (arXiv 2411.16552, 2024 —
-  ⚠️ preprint).
+  ⚠️ preprint). **[Revisión profunda 2026-07-22, F-20]** El megastudy de ejercicio en
+  detalle: 30 científicos de 15 universidades, 54 programas digitales de 4 semanas cada
+  uno, corridos sobre 61,293 miembros reales de una cadena de gimnasios de EE.UU. (24 Hour
+  Fitness) — outcome objetivo (asistencia real registrada, no autorreportada). 45% de las
+  intervenciones subió las visitas semanales entre 9-27%; la que más funcionó no fue el
+  recordatorio genérico sino un microincentivo dirigido al **momento de recaída**:
+  bonificar con puntos (~US$0.09) específicamente a quien había faltado a una sesión
+  programada y volvía a la siguiente. Costo de despliegue a escala: ~US$0.75 por persona
+  por mes — coherente con la lectura de "efectos chicos pero de costo casi nulo" de
+  DellaVigna & Linos. Lección de diseño: apuntar el nudge al momento de lapso/recaída, no
+  a la adherencia general.
 - **Evidencia específica en seguros.** RCTs de RGA/SOA (N≈2,001 y 2,005) muestran que
   intervenciones de comprensión (video vs texto, simplificación) mejoran el journey de
   compra de vida (RGA/SOA, 2024-2025 — C, industria con método declarado). Un experimento
@@ -77,7 +118,19 @@ siga vendiendo "el nudge universal" está una década atrás.
   sistémicas (s-frame); los mejores resultados vienen de cambiar la estructura — defaults
   de producto, pricing, arquitectura del sistema — no la "psicología del usuario"
   (Chater & Loewenstein, 2022 — Behavioral and Brain Sciences; cf. Sunstein y BIT, que
-  responden que ambos marcos son complementarios).
+  responden que ambos marcos son complementarios). **[Revisión profunda 2026-07-22, F-19]**
+  El mecanismo que proponen no es solo "moda académica" sino incentivo de actor:
+  documentan que BP acuñó el término "huella de carbono" en 2004 dentro de una campaña
+  ("Beyond Petroleum") diseñada específicamente para reencuadrar el cambio climático como
+  un problema de conducta individual — mientras la empresa seguía cabildeando activamente
+  contra la regulación sistémica (s-frame) que de verdad reduciría emisiones. Su lectura
+  general, citada textual: "firmas de un amplio rango de sectores encuentran que pueden
+  promover sus propios intereses promoviendo el i-frame mientras cabildean sin descanso
+  por políticas s-frame que favorecen esos mismos intereses" — el i-frame no solo distrae
+  por default, puede ser una estrategia activa de desvío de responsabilidad. Relevancia
+  directa para seguros: cualquier apuesta de la industria en "educación financiera" o
+  "glosarios" sin acompañarla de rediseño real de producto corre el riesgo de leerse —o de
+  funcionar— exactamente así, aunque no sea la intención declarada.
 - **La crisis de integridad.** Los dos investigadores más famosos del campo aplicado
   (Ariely, Gino) enfrentan evidencia sustancial de fabricación de datos justamente en los
   estudios de honestidad usados por la industria de seguros (firma arriba del formulario);
@@ -97,8 +150,9 @@ siga vendiendo "el nudge universal" está una década atrás.
 |---|---|---|---|---|
 | Mertens et al., 2022 | Meta-análisis | 447 estudios | ⚠️ sesgo de publicación demostrado | 🟡 Medio |
 | Maier et al., 2022 | Re-análisis bayesiano | (mismos datos) | ✅ método robusto; debate abierto | 🟢 Alto |
+| Hu et al., 2025 | Meta-meta-análisis | 14 meta-análisis / 1,638 estudios / ~30M | ⚠️ calidad AMSTAR-2 baja/crítica en la mayoría del corpus agregado | 🟢 Alto en escala, 🟡 Medio en calidad del corpus |
 | DellaVigna & Linos, 2022 | RCTs a escala | >20M personas | ✅ outcomes administrativos reales | 🟢 Alto |
-| Milkman et al., 2021 | Megastudy | 61 arms / ~60k | ✅ outcome objetivo | 🟢 Alto |
+| Milkman et al., 2021 | Megastudy | 54 arms / 61,293 personas | ✅ outcome objetivo | 🟢 Alto |
 | Chater & Loewenstein, 2022 | Teórico | — | (marco, no dato) | 🟢 Alto como brújula |
 | RGA/SOA, 2024-25 | RCT industria | ~2k × 2 | ⚠️ industria, no auditado | 🟡 Medio |
 | UBI field experiment, 2025 | RCT de campo | nacional | ✅ conducta observada (telemática) | 🟢 Alto |
