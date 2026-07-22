@@ -158,3 +158,7 @@ estadounidense — buena señal para el diseño de
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del
   mercado]] — Discovery Vitality aparece en ambos: ahí como caso de referencia de
   behavioral design aplicado a seguros, aquí como mecanismo que navega presión de costo.
+- [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — los
+  casos de Babylon Health y el "reset" de Oscar Health (§3 aquí) son la misma advertencia
+  a nivel de suscripción/operación que ese node documenta a nivel de distribución: apostar
+  por tecnología sin disciplina humana de por medio tiende a salir caro.

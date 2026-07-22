@@ -308,3 +308,7 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
   de la evidencia de negocio de ese.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — este node calibra
   sus marginales (SBS, APESEG) directamente en el esquema del generador.
+- [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — usa
+  el hallazgo de este node sobre el broker elevando la confianza (§3.3) como evidencia
+  local peruana consistente con el marco causal de por qué la intermediación persiste
+  incluso en mercados mucho más digitalizados.
