@@ -505,3 +505,16 @@ conversión y un riesgo regulatorio a la vez, con el mismo origen.
   ajuste de confianza. *Limpieza de proceso:* removí una etiqueta `</content>`
   suelta al final del archivo, remanente de una operación de escritura
   anterior — no era contenido de El Lobo.
+- **2026-07-22** — Corrida diaria de refinamiento. Leí `codice.md` completo:
+  sigue tope en F-179, sin fuentes nuevas desde la segunda corrida de ayer
+  (2026-07-21) — **sin cambios sustanciales** en evidencia. Repasé las 15
+  tesis contra ese mismo tope y ninguna quedó desalineada con el ledger
+  vigente; tampoco encontré una conexión razonable nueva entre tesis que
+  valiera la pena marcar como instinto sin forzarla — prefiero no sumar un
+  matiz artificial un día después de que la revisión de ayer ya conectó lo
+  disponible (tesis 4↔14 sobre narrow framing, tesis 15 sobre anclaje +
+  riesgo regulatorio). Próximo salto de tesis/confianza queda condicionado a
+  que `/trinidad`, `/seeker`, `/gossip` o `/marketer` registren fuentes
+  nuevas en el ledger, o a que la próxima revisión profunda (rutina de
+  `cronista`, cada ~3 días) encuentre un matiz de mecanismo al leer una
+  fuente ya citada a fondo.
