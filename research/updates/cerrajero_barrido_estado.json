@@ -26,7 +26,20 @@
       ],
       "candidatas_nuevas": [],
       "resultado": "sin candidatas nuevas ni recalibraciones — las 5 fuentes de este grupo pertenecen a la misma investigación de origen (behavioral-design-estado-disciplina.md, /trinidad 2026-07-12) y son sobre metodología/efectividad del nudging en general, no sobre variables demográficas/conductuales de aseguramiento"
+    },
+    {
+      "fecha": "2026-07-23",
+      "f_ids": ["F-23", "F-36", "F-40", "F-41", "F-42"],
+      "hallazgos": [
+        "F-23 (RCT nacional de UBI/telemática, Accident Analysis & Prevention 2025): (c) sin variable nueva — tangencialmente relacionada con disposicion_compartir_datos_pricing y tenencia_vehiculo (ya existen), pero mide efecto de tratamiento sobre conducta de manejo tras adopción de UBI, no un rasgo muestreable del perfil inicial de la persona.",
+        "F-36 (automedicación no responsable en Perú, SciELO 2021): (c) sin relación directa con el generador de seguros — pertenece al dominio de research/_nodes/modelo-salud-ia-farmacias-peru.md (conducta de búsqueda de atención médica, no de aseguramiento).",
+        "F-40 (barreras a telemedicina en Perú, NCBI/PMC 2024): (c) sin relación directa — mismo node modelo-salud-ia-farmacias-peru.md.",
+        "F-41 (historia/prospectiva telemedicina peruana, NCBI/PMC 2024): (c) sin relación directa — mismo node.",
+        "F-42 (validación de symptom-checker Omaolo, Finlandia 2024): (c) sin relación directa — mismo node (evidencia de que el triage IA sí puede validarse formalmente)."
+      ],
+      "candidatas_nuevas": [],
+      "resultado": "sin candidatas nuevas — 4 de 5 fuentes pertenecen a modelo-salud-ia-farmacias-peru.md (investigación /trinidad 2026-07-06); F-23 es de behavioral-design y solo toca tangencialmente variables ya existentes (disposicion_compartir_datos_pricing, tenencia_vehiculo)"
     }
   ],
-  "f_ids_barridos_total": ["F-3", "F-6", "F-9", "F-10", "F-16", "F-17", "F-18", "F-19", "F-20", "F-21"]
+  "f_ids_barridos_total": ["F-3", "F-6", "F-9", "F-10", "F-16", "F-17", "F-18", "F-19", "F-20", "F-21", "F-23", "F-36", "F-40", "F-41", "F-42"]
 }
