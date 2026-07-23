@@ -13,7 +13,20 @@
       ],
       "candidatas_nuevas": [],
       "resultado": "sin candidatas nuevas ni recalibraciones en este grupo"
+    },
+    {
+      "fecha": "2026-07-23",
+      "f_ids": ["F-17", "F-18", "F-19", "F-20", "F-21"],
+      "hallazgos": [
+        "F-17 (Maier et al. 2022, no evidence for nudging tras corregir sesgo de publicación, PNAS): (c) sin relación directa con el generador — pieza de la 'crisis del nudge', ya aprovechada en research/_nodes/behavioral-design-estado-disciplina.md. Relevante para diseño de intervenciones conductuales, no para una variable demográfica del modelo de personas.",
+        "F-18 (Hu et al. 2025, meta-análisis de segundo orden sobre nudging): (c) sin relación directa — matiza efectividad del nudging por dominio/técnica, mismo node que F-17.",
+        "F-19 (Chater & Loewenstein 2022, i-frame vs s-frame): (c) marco teórico sobre soluciones individuales vs. estructurales — informa diseño de producto/intervención, no aporta variable muestreable al generador.",
+        "F-20 (Milkman et al. 2021, megastudies, Nature): (c) estándar metodológico para testear intervenciones — no es una variable de persona.",
+        "F-21 (DellaVigna & Linos 2022, 'voltage drop' en RCTs a escala, Econometrica): (c) sin relación directa — fija expectativas realistas de ROI conductual a escala, útil para diseño de intervención, no para el generador."
+      ],
+      "candidatas_nuevas": [],
+      "resultado": "sin candidatas nuevas ni recalibraciones — las 5 fuentes de este grupo pertenecen a la misma investigación de origen (behavioral-design-estado-disciplina.md, /trinidad 2026-07-12) y son sobre metodología/efectividad del nudging en general, no sobre variables demográficas/conductuales de aseguramiento"
     }
   ],
-  "f_ids_barridos_total": ["F-3", "F-6", "F-9", "F-10", "F-16"]
+  "f_ids_barridos_total": ["F-3", "F-6", "F-9", "F-10", "F-16", "F-17", "F-18", "F-19", "F-20", "F-21"]
 }
