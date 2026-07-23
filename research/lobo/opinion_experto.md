@@ -314,6 +314,68 @@ conversión y un riesgo regulatorio a la vez, con el mismo origen.
   del marco peruano en ese punto específico.
 - **Actualizado:** 2026-07-21
 
+### 16. El asesor de seguros no desaparece con la venta digital — se redistribuye por complejidad de producto, y el reclamo (no la venta) es donde lo 100%-digital falla más
+Investigación 360° (`/trinidad`) sobre si la tecnología elimina al intermediario da un
+veredicto convergente en las tres pistas: no. El marco causal canónico (Cummins &
+Doherty 2006) explica que el agente/broker es un "market maker" que mitiga asimetría de
+información y selección adversa — un problema estructural que la tecnología automatiza
+parcialmente, no elimina. Dos estudios empíricos confirman que la complejidad del
+producto y la confianza (no "cuán digital es la sociedad") predicen si alguien compra
+sin humano. La evidencia de negocio es la que más pesa aquí, y es incómoda para el
+discurso "todo se automatiza": en Corea del Sur (mercado altamente digitalizado) el
+canal 100% online de seguros de vida **cayó 33.6% en una década**; en China, pese a
+20x de crecimiento insurtech, agentes+bancaseguros retienen >90% de las primas de vida;
+Lemonade —el caso insignia de "seguro 100% digital"— sigue sin ser rentable 12 años
+después de fundado; y el mercado global de corretaje está **creciendo** (USD 336B→695B
+proyectado a 2033), no encogiendo. El punto de falla más agudo de lo digital-only no es
+la venta, es el reclamo: 33-39% de reclamos 100% digitales fallan y requieren rescate
+humano, y quien escala de digital a humano reporta una experiencia **peor** (NPS -11)
+que cualquiera de los dos canales bien ejecutados solos. Señal social que refuerza esto
+sin buscarla: el backlash viral de diciembre 2024 contra UnitedHealthcare (62,000
+reacciones en un post, 57,000 de risa) fue rabia específica contra la negación
+automatizada de reclamos de salud — el público no celebra que una IA decida sin criterio
+humano en el momento de mayor impacto.
+- **Evidencia:** F-180 (🟢A, marco causal), F-191 (🔵B, confianza+complejidad), F-192
+  (⚠️ no verificado, tratar con cautela), F-181 a F-186, F-189, F-190 (🟡C/🟠D, datos de
+  negocio convergentes de 3 mercados independientes), F-183 (🟡C, falla de reclamos
+  digitales), F-187/F-188 (🟠D, señal social)
+- **Confianza:** Alta en la dirección (el intermediario se redistribuye por complejidad,
+  no desaparece); Media en la magnitud exacta de cualquier cifra puntual — casi toda la
+  evidencia de negocio es C/D, ninguna supera B. Ningún dato es específico de Perú; la
+  transferencia se apoya en que el patrón (confianza sube con broker) ya está
+  documentado localmente en tesis previas de este mismo ledger.
+- **Actualizado:** 2026-07-23
+
+### 17. La rentabilidad real del seguro de salud no viene de suscribir riesgo — viene de integrarse verticalmente con farmacia/PBM, y el costo especializado (GLP-1) es hoy el driver más agudo
+Datos oficiales de EE.UU. (mercado que concentra ~80% de las primas de salud privadas
+del mundo) muestran un margen de suscripción de apenas 1.8% (H1 2025) y un medical loss
+ratio >87% con mínimo de 7 años en 2022 — parte de esto es diseño regulatorio a
+propósito (la regla 80/20 obliga a devolver el excedente como reembolso; se devolvieron
+USD 11,800M entre 2012-2023), no solo competencia de mercado. Pero el dato que cambia el
+análisis es otro: en el mismo trimestre, la unidad de farmacia (PBM) del asegurador más
+grande de EE.UU. —Optum Rx, cuyo principal cliente es su propia aseguradora hermana—
+generó USD 1,500M de utilidad operativa sobre USD 38,300M de ingresos, con un filing
+regulatorio primario (no estimación de prensa) como fuente. No es un caso aislado: 3
+PBMs procesan el 80% de los reclamos de recetas en EE.UU. y las 3 están integradas
+verticalmente con una aseguradora grande. **Lectura de negocio:** "rentable" y "con
+margen de suscripción alto" son dos afirmaciones distintas — la utilidad real del sector
+hoy vive en el negocio adyacente integrado (farmacia), no en el seguro puro. Esto
+refuerza directamente la tesis 9 (farmacia-frente-primario en Perú): no es solo una
+oportunidad de distribución/acceso, es el mismo mecanismo estructural por el que el
+asegurador más grande del mundo genera utilidad real hoy. Dentro de la presión de costo
+médico general, el driver más agudo y actual tiene nombre propio: gasto en farmacia
++14.8% interanual en 2026, impulsado por GLP-1 (pérdida de peso/diabetes) — 43% de
+planes de salud lo rankean como prioridad #1 de manejo de costo.
+- **Evidencia:** F-193 (🔵B, margen 1.8%), F-194 (🔵B, MLR >87%), F-197 (🔵B, techo
+  regulatorio 80/20), F-198 (🟢A, filing SEC primario, utilidad de Optum Rx), F-199
+  (🟡C, concentración de PBMs), F-200 (🟡C, cambio de modelo de utilidad del PBM), F-201
+  (🟠D, GLP-1 +14.8%), F-202 (🟡C, GLP-1 como prioridad #1)
+- **Confianza:** Alta en el patrón de EE.UU. (sostenido por un filing primario, no solo
+  prensa/consultora); la extrapolación a que el mismo mecanismo aplicaría en Perú es
+  **instinto** — no hay dato peruano de márgenes de aseguradora de salud vs. margen de
+  farmacia en este ledger todavía.
+- **Actualizado:** 2026-07-23
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -342,14 +404,36 @@ conversión y un riesgo regulatorio a la vez, con el mismo origen.
   confianza, campo por campo, en vez de un formulario legal único — convierte
   mejor sin depender de cambiar la actitud del cliente hacia la privacidad.
 - **Distribución por intermediario humano de confianza — pero estrictamente
-  inbound/opt-in, nunca llamada en frío.** *Parcialmente instinto, parcialmente
-  ledger-backed*: en mercados de baja confianza institucional la intermediación
-  humana suele convertir mejor que el canal digital directo, pero el riesgo
-  regulatorio de tesis 8 hace que cualquier variante de contacto saliente no
-  consentido sea hoy una apuesta con S/2M+ de multa potencial y precedente
-  directo contra un competidor. La jugada válida es bróker como canal de
-  confianza que el cliente busca (referidos, punto de venta), no como fuerza de
-  prospección saliente.
+  inbound/opt-in, nunca llamada en frío.** Ya no es solo instinto: tesis 16 le da
+  respaldo A/B convergente en tres mercados de alta digitalización (Corea, China,
+  caso Lemonade) de que el intermediario no desaparece en productos complejos —
+  se redistribuye hacia ellos. El riesgo regulatorio de tesis 8 sigue vigente:
+  cualquier variante de contacto saliente no consentido es una apuesta con S/2M+
+  de multa potencial y precedente directo contra un competidor. La jugada válida
+  es bróker como canal de confianza que el cliente busca (referidos, punto de
+  venta), no como fuerza de prospección saliente.
+- **Invertir en herramientas para el asesor humano en el momento del reclamo, no
+  en digitalizar el reclamo completo.** Tesis 16: 33-39% de reclamos 100%
+  digitales fallan y requieren rescate humano, y el que escala tarde reporta peor
+  experiencia (NPS -11) que un canal humano directo. La jugada de mayor ROI en
+  siniestros complejos es un flujo híbrido bien diseñado desde el inicio, no un
+  "self-service" que empuja al cliente frustrado a escalar tarde.
+- **Integración vertical seguro + farmacia como motor de utilidad real, no solo
+  de acceso/distribución.** Tesis 17 eleva la oportunidad de tesis 9
+  (farmacia-frente-primario en Perú): en el mercado que mejor se documenta hoy
+  (EE.UU.), la utilidad real del sector de salud vive en el negocio de farmacia
+  integrado (PBM), no en el margen de suscripción (delgado por diseño
+  regulatorio). Un modelo peruano que combine aseguramiento + farmacia bajo un
+  mismo techo no es solo un canal de distribución más barato — replica el
+  mecanismo por el que el asegurador de salud más grande del mundo genera
+  utilidad real hoy. **Instinto, no probado en Perú:** el dato es de EE.UU.; no
+  hay cifra local de margen de farmacia vs. margen de aseguradora todavía.
+- **Estrategia explícita de costo de medicamentos especializados (GLP-1 y
+  análogos), no solo "contener costo médico" en genérico.** Tesis 17: es el
+  driver de costo más agudo y actual documentado, con saltos de #32 a #1 en el
+  gasto farmacéutico de un empleador en un solo año — cualquier diseño de
+  producto de salud/farmacia en el modelo debería presupuestar este rubro
+  específico, no tratarlo como "inflación médica" genérica.
 - **Pricing dinámico por uso (UBI) como producto, no como campaña de nudge.**
   Tesis 7 lo prueba con outcome real, pero extenderlo (salud, hogar) debe
   presupuestar una curva de adopción lenta por el techo de confianza documentado
@@ -446,6 +530,24 @@ conversión y un riesgo regulatorio a la vez, con el mismo origen.
   patrón ya sancionado por Indecopi en un caso comparable (BBVA, 2025); no es
   solo un riesgo de conversión (ancla + desconfianza), es un riesgo de multa y
   orden de cese sobre material que ya está circulando o por circular.
+- **Apostar por "reemplazar al asesor" en productos complejos (vida, salud,
+  siniestros) en vez de darle mejores herramientas.** Tesis 16: en los dos
+  mercados más digitalizados investigados (Corea, China) el canal humano no
+  perdió terreno en el segmento de mayor valor — perderlo sería repetir un error
+  ya documentado, no una apuesta original.
+- **Lanzar un flujo de reclamos 100% digital sin ruta de escalamiento humano bien
+  diseñada.** Tesis 16: 33-39% de reclamos digitales fallan igual, y escalar
+  tarde/mal genera peor experiencia (NPS -11) que atender el reclamo con un
+  humano desde el inicio — el "self-service primero, humano de rescate" mal
+  ejecutado es la peor de las tres opciones, no la más barata.
+- **Dimensionar el modelo de farmacia-frente-primario (tesis 9) solo como
+  ahorro/acceso, sin ver la integración vertical como motor de utilidad
+  propio.** Tesis 17: en EE.UU. la utilidad real del sector de salud está en el
+  negocio de farmacia integrado (PBM), no en el margen de suscripción — dato de
+  filing primario (Optum Rx), no de prensa. Extrapolar el mecanismo exacto a
+  Perú sin dato local es instinto, pero ignorarlo por completo en el diseño del
+  modelo sería descartar la señal más fuerte (🟢A) que entró al ledger esta
+  semana sobre dónde está la plata en salud.
 - **Corrección de proceso, no de evidencia:** el ledger de fuentes se renombró
   de `registro_fuentes.md` a `codice.md` el 2026-07-19; las revisiones diarias
   del 2026-07-13 al 2026-07-19 leyeron una ruta que había quedado congelada en
@@ -593,3 +695,24 @@ conversión y un riesgo regulatorio a la vez, con el mismo origen.
   en paralelo el node `_nodes/behavioral-design-estado-disciplina.md` (pista
   empírica y tabla de rigurosidad) con las mismas citas, sin mover ni
   reestructurar nada.
+- **2026-07-23** — Corrida diaria de refinamiento. El ledger creció de F-179 a
+  F-202 desde la última corrida (2026-07-22): una investigación `/trinidad`
+  completa sobre el futuro de los asesores de seguros frente a la venta 100%
+  digital (F-180 a F-192, node nuevo `_nodes/futuro-asesores-seguros-venta-digital.md`)
+  y una ampliación del node `mecanismos-seguros-salud.md` con datos de balance
+  financiero/rentabilidad de seguros de salud en EE.UU. (F-193 a F-202) —
+  **cambio sustancial**. Sumé tesis 16 (el asesor no desaparece con lo digital,
+  se redistribuye por complejidad de producto; el reclamo, no la venta, es
+  donde falla lo 100%-digital) y tesis 17 (la utilidad real del seguro de salud
+  vive en la integración vertical con farmacia/PBM, no en el margen de
+  suscripción — dato sostenido por un filing SEC primario, 🟢A). Tesis 17
+  refuerza directamente a tesis 9 (farmacia-frente-primario en Perú): ya no es
+  solo oportunidad de acceso/distribución, es el mismo mecanismo de utilidad
+  del asegurador de salud más grande del mundo — marcado explícitamente como
+  instinto en la extrapolación a Perú, porque no hay dato local de margen de
+  farmacia vs. margen de aseguradora en el ledger todavía. Añadí 4
+  oportunidades y 3 riesgos nuevos reflejando ambas tesis (herramientas para el
+  asesor en el momento del reclamo en vez de digitalizarlo por completo;
+  integración farmacia+seguro como motor de utilidad; estrategia explícita de
+  costo de medicamentos especializados/GLP-1). Ninguna tesis previa (1-15)
+  requirió ajuste de confianza — el ledger nuevo no las tocó.
