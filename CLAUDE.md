@@ -36,7 +36,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/yopersona/perfil.md` | Nodo de conocimiento: perfil profesional del usuario (CV) | Fuente de verdad para cartas de presentación, CVs adaptados y asesoría de carrera |
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis con evidencia F-n del ledger + confianza; refinada diariamente contra `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
-| `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
+| `.claude/skills/cerrajero/` | Skill `/cerrajero`: barrido incremental (grupos de 5) de literatura 🟢A del códice para el modelo `lapuerta` | Nunca aplica solo — memoria en `research/updates/cerrajero_barrido_estado.json`, siempre pregunta antes de tocar el modelo |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 | `.claude-plugin/marketplace.json` · `plugin.json` | Marketplace personal de plugins | Expone `.claude/skills/` como plugin instalable en cualquier máquina/cuenta — ver sección abajo |
@@ -93,7 +93,10 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
   `validate.py --check`; si no pasa, se revierte y la variable queda pendiente. En `/cerrajero`
   (a demanda) el cambio va a la rama de trabajo actual; en el ciclo **desatendido** (GitHub
   Action) va a un **PR aparte** (`lapuerta/alta-auto-AAAA-MM-DD` contra main) para revisión
-  humana antes de mergear — nunca se pushea directo a main. Ver `.claude/skills/cerrajero/`.
+  humana antes de mergear — nunca se pushea directo a main. ⚠️ Esto describe cómo operaba
+  `/cerrajero` **hasta 2026-07-22**; desde 2026-07-23 la versión a demanda ya no aplica Alta
+  sola — ver mecanismo nuevo (barrido de literatura verde) más abajo y en
+  `.claude/skills/cerrajero/`. El ciclo desatendido (GitHub Action) sigue igual que aquí.
 
 ### 📌 Familia de skills de investigación (`seeker` / `gossiper` / `marketer`)
 Tres skills comparten el mismo mecanismo de ancho de banda de búsqueda (tipologización
@@ -179,10 +182,17 @@ Generador + simulador de usuarios sintéticos empaquetado como **skill compartib
 Investigación recurrente (cada ~15 días) que busca evidencia nueva y propone cómo incorporar
 variables al modelo `lapuerta`.
 
-- **A demanda:** skill `/cerrajero` (`.claude/skills/cerrajero/`) ejecuta la actualización en la
-  sesión (Claude investiga con búsqueda web, redacta, indexa y commitea). No necesita API key.
+- **A demanda:** skill `/cerrajero` (`.claude/skills/cerrajero/`) — desde 2026-07-23 **ya no
+  busca evidencia nueva en la web**: barre en grupos de 5, con memoria persistente
+  (`research/updates/cerrajero_barrido_estado.json`), la literatura de rigor 🟢A que otras
+  investigaciones del proyecto ya registraron en `research/fuentes/codice.md`, evalúa si
+  implica una variable/recalibración para `lapuerta`, y **siempre pregunta al usuario** antes
+  de aplicar — nunca aplica solo, ni la prioridad Alta. No necesita API key.
 - **Automatización (desatendida):** GitHub Action `.github/workflows/fortalecimiento-modelo.yml`
-  (cron días 1 y 16) ejecuta `research/updates/generate_report.py` (API de Claude + búsqueda web).
+  (cron días 1 y 16) ejecuta `research/updates/generate_report.py` (API de Claude + búsqueda
+  web) — **este mecanismo no cambió**: sigue buscando evidencia nueva (no relee el códice) y
+  sigue aplicando sola la prioridad Alta (con PR aparte para revisión). Las dos versiones de
+  "fortalecimiento del modelo" divergen deliberadamente en mecanismo desde 2026-07-23.
 - **Requisitos:** secreto `ANTHROPIC_API_KEY` en el repo + Actions habilitado. El `schedule` solo
   corre desde la rama por defecto (mergear allí para activarlo); se puede probar con "Run workflow".
 - **Índice de reportes (auto-actualizado):**

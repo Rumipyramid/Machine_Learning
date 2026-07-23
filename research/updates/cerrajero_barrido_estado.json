@@ -1,0 +1,19 @@
+{
+  "descripcion": "Estado del barrido incremental de fuentes de rigurosidad verde (🟢A) del códice (research/fuentes/codice.md), usado por /cerrajero para no revisar dos veces el mismo estudio entre invocaciones. Orden de barrido: F-n ascendente.",
+  "barridos": [
+    {
+      "fecha": "2026-07-23",
+      "f_ids": ["F-3", "F-6", "F-9", "F-10", "F-16"],
+      "hallazgos": [
+        "F-3 (Pitthan & De Witte 2021, sesgos conductuales en demanda de seguros): (c) sin candidata nueva — miopía ya cubierta por sesgo_presente y educacion_financiera. 'Narrow framing' (evaluar cada seguro aislado, no como portafolio) es un mecanismo distinto no modelado, pero una sola fuente es evidencia insuficiente para una variable nueva (nota para vigilar, no propuesta).",
+        "F-6 (Loewenstein et al. 2013, incomprensión de seguros de salud): (c) sin relación directa con el generador — ya aprovechada en research/_nodes/glosario-seguro-salud-peru.md.",
+        "F-9 (Adams et al. 2021, RCT divulgación financiera UK): (c) sin relación directa con el generador — evidencia de diseño de disclosure, no de una variable demográfica/conductual muestreable.",
+        "F-10 (Ben-Shahar & Schneider 2014, fracaso de la divulgación obligatoria): (c) marco teórico/crítico, no aporta variable al generador.",
+        "F-16 (Mertens et al. 2022, meta-análisis de nudging, PNAS): (c) sin relación directa con el generador — ya aprovechada en research/_nodes/behavioral-design-estado-disciplina.md."
+      ],
+      "candidatas_nuevas": [],
+      "resultado": "sin candidatas nuevas ni recalibraciones en este grupo"
+    }
+  ],
+  "f_ids_barridos_total": ["F-3", "F-6", "F-9", "F-10", "F-16"]
+}
