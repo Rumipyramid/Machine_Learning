@@ -1,112 +1,138 @@
 ---
 name: cerrajero
 description: >-
-  Ejecuta a demanda, dentro de la sesión, la actualización quincenal del modelo de
-  usuarios sintéticos de seguros ("lapuerta"): investiga evidencia/datos recientes con
-  búsqueda web, redacta un reporte en Markdown con propuestas para incorporar nuevas
-  variables, lo guarda en research/updates/, lo indexa en el códice (CLAUDE.md) y lo
-  commitea. Invócalo con /cerrajero o cuando se pida "actualizar/fortalecer el modelo",
-  "generar el reporte quincenal" o "buscar evidencia nueva para el modelo de seguros".
+  Invocado con /cerrajero. Barre incrementalmente, en grupos de 5, las fuentes de máximo
+  rigor (🟢A "verde") ya registradas en el códice de cronista (research/fuentes/codice.md),
+  con memoria persistente entre invocaciones para no revisar dos veces el mismo estudio.
+  Evalúa si cada fuente del grupo sugiere una variable nueva o una recalibración para el
+  modelo de usuarios sintéticos ("lapuerta"), y siempre cierra preguntándole al usuario si
+  quiere aplicar los hallazgos al modelo — nunca aplica solo. Invócalo con /cerrajero o
+  cuando se pida "barrer el códice", "revisar la literatura verde" o "seguir con el
+  siguiente grupo de fuentes para el modelo".
 ---
 
-# cerrajero · Actualización quincenal del modelo `lapuerta`
+# cerrajero · Barrido incremental de literatura verde para el modelo `lapuerta`
 
-> Invocación: **`/cerrajero`**. Es la versión **a demanda** (la corre Claude en la sesión,
-> con su propia búsqueda web — no necesita API key) del GitHub Action
-> `.github/workflows/fortalecimiento-modelo.yml`, que es la versión **desatendida**.
+> Invocación: **`/cerrajero`**.
 >
-> Diferencia importante en el paso 3 (aplicar Alta): esta versión a demanda deja el cambio en
-> la rama de trabajo actual de la sesión (igual que el resto de tus ediciones — la revisión
-> humana ocurre cuando esa rama se publica a main, p. ej. con `/actualizar`). La versión
-> desatendida en cambio **nunca pushea el cambio de esquema directo a main**: lo manda a un
-> PR aparte (`lapuerta/alta-auto-AAAA-MM-DD`) para que alguien lo revise antes de mergear,
-> porque ahí no hay nadie mirando la sesión en vivo.
+> **Mecanismo (2026-07-23):** este skill ya no busca evidencia nueva en la web — relee,
+> en grupos de 5, la literatura de rigor **🟢A** que otras investigaciones del proyecto
+> (`/seeker`, `/trinidad`, etc.) ya registraron en el códice de `cronista`
+> (`research/fuentes/codice.md`), evaluando si algo de eso implica una variable nueva o una
+> recalibración para el modelo `lapuerta` que no se haya aplicado todavía. Mantiene memoria
+> persistente entre invocaciones (no repite estudios ya barridos) y **nunca aplica cambios
+> por su cuenta**: siempre termina preguntándole al usuario si quiere actualizar el modelo.
+>
+> **Divergencia con la versión desatendida:** el GitHub Action
+> `.github/workflows/fortalecimiento-modelo.yml` (`research/updates/generate_report.py`)
+> **no se modificó** junto con este skill — sigue haciendo búsqueda web de evidencia nueva
+> de forma automática y aplicando sola la prioridad Alta (con PR aparte para revisión). Las
+> dos versiones de "fortalecimiento del modelo" ahora usan mecanismos distintos: `/cerrajero`
+> relee literatura ya vetada del proyecto; el Action busca evidencia nueva en internet. Avisar
+> al usuario si en algún momento se quiere alinear ambas.
 
 Cuando se invoque, ejecuta estos pasos de principio a fin:
 
-## 1. Investigar (búsqueda web)
-Busca evidencia/datos **recientes (~últimos 6 meses)** sobre comportamiento, percepción y
-demanda de seguros en **Perú** (y LatAm como referencia). Prioriza fuentes verificables con
-cifras concretas: **INEI, BCRP, SBS, APESEG, APEIM, MAPFRE, OECD**, prensa especializada y
-literatura. Haz 3–5 búsquedas con ángulos distintos. **No inventes datos**; si no hay evidencia
-nueva fuerte para algo, dilo.
+## 1. Armar el siguiente grupo de 5
 
-**Evita repetir** variables que ya existen o ya fueron propuestas:
-- Ya en el modelo: lee las claves de `variables` y `modelos_derivados` en
-  `research/personas/generador/synthetic_user_schema.json` **en el momento** (no uses una lista
-  fija — el esquema cambia cada vez que este skill aplica una propuesta de prioridad Alta).
-- Ya propuestas pero aún sin aplicar (Media/Baja, pendientes de revisión manual): tabla
-  "Pendientes de incorporar" en `research/personas/generador/matriz_usuarios_sinteticos.md`.
-- Busca **ángulos nuevos** o **recalibraciones** con cifras frescas.
+1. Lee `research/fuentes/codice.md` y filtra las filas cuya columna de Rigurosidad empiece
+   con **🟢 A** ("verde"), en el orden en que aparecen (orden ascendente de `F-n`).
+2. Lee (o crea si no existe) `research/updates/cerrajero_barrido_estado.json` — la memoria
+   persistente del barrido. Si no existe, créalo con `f_ids_barridos_total: []` y `barridos: []`.
+3. Descarta de la lista de 🟢A los `F-n` que ya estén en `f_ids_barridos_total`.
+4. Toma los siguientes **5** IDs no barridos (los primeros 5 la primera vez que se invoque
+   el skill). Si quedan menos de 5, toma los que queden.
+5. Si no queda ninguno sin barrer: informa al usuario que ya se revisó toda la literatura
+   🟢A del códice al menos una vez, y pregúntale si quiere **reiniciar el ciclo** (útil porque
+   el códice sigue creciendo con cada investigación nueva). No reinicies sin confirmación —
+   termina aquí si no la da.
 
-## 2. Redactar el reporte
-Crea `research/updates/AAAA-MM-DD_fortalecimiento_modelo.md` (fecha de hoy) con esta estructura:
-1. Encabezado: fecha + "Próxima revisión" (+15 días) + alcance/método.
-2. **Resumen ejecutivo** (3–6 viñetas con la evidencia más fuerte y su cifra).
-3. **Tabla**: variable candidata | evidencia/dato | fuente | cómo incorporarla | prioridad | origen.
-4. **Detalle por variable**: definición, evidencia, incorporación (distribución/dependencias/efecto).
-5. **Cambios propuestos al esquema** (`synthetic_user_schema.json`): snippets JSON ilustrativos
-   + nota de re-validación (no romper: tiene seguro ≈ 0.40, desconfía ≈ 0.48, desastres ≈ 0.033).
-6. **Fuentes** (lista de URLs).
+## 2. Revisar cada una de las 5 fuentes
 
-Marca cada propuesta como `dato` (anclado en fuente) o `supuesto`. Cierra con:
-`*Generado por el ciclo quincenal de fortalecimiento del modelo `lapuerta`.*`
+Para cada fuente del grupo, relee su fila completa (resumen, autor/año, "usado en/fundamenta")
+y evalúa explícitamente contra el modelo `lapuerta` — lee `variables`/`modelos_derivados` de
+`research/personas/generador/synthetic_user_schema.json` **en el momento** (no una lista fija)
+más la tabla "Pendientes de incorporar" de `matriz_usuarios_sinteticos.md`, igual que hacía
+este skill antes para no proponer duplicados. Clasifica cada fuente en una de tres:
 
-## 3. Aplicar automáticamente las propuestas de prioridad Alta
-Para **cada** variable candidata marcada **Prioridad: Alta** en la tabla del reporte recién creado:
-1. Agrégala a `research/personas/generador/synthetic_user_schema.json` (a `variables` si es
-   independiente/condicional, a `modelos_derivados` si es derivada), usando el snippet JSON del
-   reporte como punto de partida.
-2. Agrega su función `sample_*` a `generate_synthetic_users.py` y su llamada en `generate_user()`
-   (en orden de dependencia), y el campo correspondiente al dict de salida.
-3. Genera una muestra grande (`--n 20000 --seed 42`) y **mide** la marginal resultante de la
-   variable nueva contra el objetivo que declara el reporte. La mezcla logística sobre subgrupos
-   suele desviar el resultado del snippet propuesto (p. ej. un intercepto pensado para ~7% puede
-   dar ~15% si hay un subsegmento con score alto) — si se desvía, ajusta el intercepto
-   empíricamente (barrido de valores) hasta acercarla al objetivo. No confíes en el snippet sin medir.
+- **(a) Variable candidata nueva** — la evidencia sugiere una dimensión que el esquema no
+  captura todavía.
+- **(b) Recalibración** — la evidencia afina/corrige una variable o distribución ya existente.
+- **(c) Sin relación con el modelo de personas** — la fuente fundamenta otro node del proyecto
+  (glosario, behavioral design, salud, etc.) pero no aporta nada al generador. **Es un
+  resultado legítimo y esperado para buena parte del barrido — no fuerces una relación que
+  no existe.**
+
+## 3. Registrar el barrido en la memoria
+
+Actualiza `research/updates/cerrajero_barrido_estado.json`: agrega una entrada al array
+`barridos` con `fecha` (hoy), `f_ids` (los 5 de este grupo) y un `hallazgo` de una línea por
+fuente (a/b/c + qué implica). Agrega esos mismos `F-n` a `f_ids_barridos_total`.
+
+## 4. Redactar hallazgos (solo si hubo candidatas)
+
+Si el grupo produjo al menos una candidata (a) o (b), crea/actualiza
+`research/updates/AAAA-MM-DD_barrido_verde_cerrajero.md` (fecha de hoy; si ya existe uno de
+hoy, amplíalo) con: resumen ejecutivo, tabla `variable candidata | evidencia (F-n) | cómo
+incorporarla | tipo (nueva/recalibración) | prioridad`, y detalle por variable (definición,
+evidencia, snippet JSON ilustrativo si aplica). Cita las fuentes por `F-n`, no repitas el
+texto completo del códice. Si el grupo no produjo ninguna candidata, no crees archivo —
+repórtalo solo en el chat.
+
+## 5. Preguntar al usuario (el entregable central de este skill)
+
+Cierra **siempre** con una pregunta explícita — nunca apliques nada sin que el usuario
+responda que sí, sin importar cuán clara parezca la evidencia:
+
+- Si hubo candidatas: resume cada una en una línea y pregunta *"¿Quieres que actualice el
+  modelo de personas sintéticas con [estos hallazgos / esta variable]?"*
+- Si no hubo candidatas: dilo con honestidad ("este grupo no aportó nada nuevo al modelo —
+  ya estaba cubierto por `sesgo_presente`/`educacion_financiera`/etc., o fundamenta otro
+  node") y pregunta si quiere continuar de una vez con el siguiente grupo de 5 o dejarlo
+  para otra sesión.
+
+## 6. Aplicar (solo si el usuario confirma que sí)
+
+Si el usuario confirma, aplica cada candidata con la misma disciplina que este skill ya
+usaba para prioridad Alta:
+1. Agrégala a `synthetic_user_schema.json` (`variables` si es independiente/condicional,
+   `modelos_derivados` si es derivada).
+2. Agrega su función `sample_*` a `generate_synthetic_users.py` y su llamada en
+   `generate_user()` (en orden de dependencia), más el campo en el dict de salida.
+3. Genera una muestra grande (`--n 20000 --seed 42`) y **mide** la marginal resultante contra
+   el objetivo de la evidencia — ajusta el intercepto empíricamente si se desvía (no confíes
+   en el snippet sin medir).
 4. Corre `python research/personas/generador/validate.py --check`.
-   - Si **falla**: revierte los cambios de esquema/generador para esa variable, y déjala en la
-     tabla "Pendientes de incorporar" de `matriz_usuarios_sinteticos.md` con una nota
-     "⚠️ intentó aplicarse automáticamente el AAAA-MM-DD, no pasó validate.py --check".
+   - Si **falla**: revierte los cambios de esquema/generador para esa variable y déjala en
+     "Pendientes de incorporar" de `matriz_usuarios_sinteticos.md` con nota "⚠️ intentó
+     aplicarse vía /cerrajero (barrido AAAA-MM-DD) sobre F-n, no pasó validate.py --check".
    - Si **pasa**: consérvala.
-5. Actualiza `matriz_usuarios_sinteticos.md`: mueve la variable a su tabla correspondiente (§2 si
-   es condicional, §3 si es derivada) y agrega una nota de versión (`v1.N (fecha)`) con lo que se
-   validó, siguiendo el formato de las notas v1.1/v1.2/v1.3 existentes (incluye la marginal medida
-   y cualquier recalibración de intercepto que hiciste en el paso 3).
-6. Sube `meta.version` (+0.1) y `meta.fecha` (hoy) en el esquema.
+5. Actualiza `matriz_usuarios_sinteticos.md` (mueve la variable a su tabla, nota de versión
+   `v1.N (fecha)` con la marginal medida y cualquier recalibración de intercepto).
+6. Sube `meta.version` (+0.1) y `meta.fecha` en el esquema.
+7. Indexa en `CLAUDE.md`: si se aplicó alguna variable, actualiza la línea "Variables (N,
+   esquema v1.N)" y "Marginales validadas" del bloque de personas sintéticas.
 
-Las propuestas de prioridad Media/Baja **no** se aplican solas: quedan en "Pendientes de
-incorporar" para revisión manual del usuario.
+Si el usuario dice que no (o "todavía no"), no toques nada del modelo — el barrido ya quedó
+registrado en la memoria de todos modos (paso 3), así que la próxima invocación sigue con el
+siguiente grupo sin volver a preguntar por estas mismas fuentes.
 
-## 4. Indexar en el códice
-Edita `CLAUDE.md`: inserta la nueva entrada **arriba** del bloque gestionado, entre los
-marcadores (más reciente primero):
-```
-<!-- LAPUERTA_REPORTS_START -->
-- AAAA-MM-DD — `research/updates/AAAA-MM-DD_fortalecimiento_modelo.md`
-... (entradas previas) ...
-<!-- LAPUERTA_REPORTS_END -->
-```
-Si el paso 3 aplicó alguna variable, actualiza también la línea "Variables (N, esquema v1.N)" y
-"Marginales validadas" del bloque de personas sintéticas en `CLAUDE.md`.
+## 7. Commitear y subir
 
-## 5. Commitear y subir
-Haz commit de todo lo que haya cambiado — reporte nuevo + `CLAUDE.md` siempre; además
-`synthetic_user_schema.json`, `generate_synthetic_users.py` y `matriz_usuarios_sinteticos.md` si
-el paso 3 aplicó alguna variable — y push a la rama de trabajo actual (mensaje: `Reporte
-quincenal de fortalecimiento del modelo (AAAA-MM-DD)`, + una línea extra si se aplicaron Altas).
-
-## 6. Resumir al usuario
-Muestra en el chat el **resumen ejecutivo**, las 2–3 variables candidatas de mayor prioridad, la
-ruta del archivo creado, y **qué se aplicó automáticamente** (variable, marginal validada) vs qué
-quedó pendiente de revisión manual (y por qué, si algo falló validate.py).
+Commitea siempre `research/updates/cerrajero_barrido_estado.json` (y el reporte de hallazgos
+si se creó) — el barrido en sí es progreso que no debe repetirse, independientemente de si el
+usuario aplicó algo. Si además se aplicó una variable (paso 6), súmala al mismo commit o haz
+uno inmediatamente después con `synthetic_user_schema.json`, `generate_synthetic_users.py`,
+`matriz_usuarios_sinteticos.md` y `CLAUDE.md`. Push a la rama de trabajo actual.
 
 ## Notas
-- Si ya existe un reporte con la fecha de hoy, **actualízalo** en vez de duplicarlo.
-- Mantén el mismo formato/tono del primer reporte (`research/updates/2026-06-21_fortalecimiento_modelo.md`)
-  como referencia de calidad.
-- Las propuestas Media/Baja son de diseño; recordar que deben recalibrarse con micro-datos
-  (ENAHO/ENDES) y revisión humana antes de aplicarse.
-- La incorporación automática (paso 3) solo alcanza a prioridad Alta, y siempre está condicionada
-  a que `validate.py --check` pase — es una red de seguridad, no una garantía de que la propuesta
-  sea correcta; sigue siendo evidencia de un solo reporte, no una recalibración con micro-datos.
+
+- El orden de barrido es por `F-n` ascendente (orden de registro en el códice), no por fecha
+  de publicación del estudio ni por tema.
+- Las fuentes 🟢A nuevas que se agreguen al códice más adelante (por cualquier skill de
+  investigación) quedan automáticamente en la cola de "no barridas" — el barrido las alcanza
+  en su turno según su `F-n`.
+- Este skill nunca decide solo por prioridad — a diferencia de la versión anterior (que
+  aplicaba Alta automáticamente), ahora **toda aplicación pasa por confirmación explícita del
+  usuario**, porque el barrido revisita literatura ya usada para otros fines, no evidencia
+  nueva dedicada al modelo.
