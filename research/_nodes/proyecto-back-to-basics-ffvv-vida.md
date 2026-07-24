@@ -128,6 +128,49 @@ habilitadora O) y estado de la influencia (continua/discontinua). Es el mapa ref
 del deck al VP (§1) — existe también como diagrama visual (ver Limitaciones sobre su
 disponibilidad en el repo).
 
+**Origen del ejercicio (confirmado por el usuario, 2026-07-24):** este mapeo sistémico no nace
+de cero en 2026 — viene de una línea que arranca en **2024**, cuando se consolidó una
+intervención en la fuerza de ventas de **telemarketing**, hecha por un equipo llamado **Digital
+Engagement**. Back to Basics (Vida Individual, FFVV presencial) extiende esa misma lógica de
+diagnóstico sistémico a un canal distinto, no la inventa — vale la pena nombrar este precedente
+en cualquier presentación al VP o a Milagros como evidencia de que el enfoque ya tiene una
+trayectoria dentro de RIMAC, no es un experimento aislado del CoE.
+
+**Insumos del diagnóstico (confirmados por el usuario, 2026-07-24):**
+- Shadowing con asesores; entrevistas con asesores; entrevistas/reuniones con stakeholders
+  (Legal, Cumplimiento, CUA, FFVV); entrevistas con otras áreas que manejan frentes de venta;
+  análisis de procesos.
+- **Desk research y benchmark — específicamente sobre cuál es la mejor forma de llevar la venta
+  en productos de vida** (no benchmarking genérico de estrategias de contacto). De este
+  benchmark salen dos definiciones de diseño clave:
+  - **Por qué el modelo es híbrido, con el asesor como parte no negociable de la gestión**: se
+    apoya en el mismo cuerpo de evidencia de
+    [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — el
+    marco causal de por qué el intermediario persiste (Cummins & Doherty 2006, mitiga asimetría
+    de información y selección adversa) y el benchmark de negocio de mercados de alta
+    digitalización que **no** reemplazaron al asesor humano: Corea del Sur (canal 100% online de
+    vida retrocedió 33.6% en una década), China (agentes + bancaseguros retienen >90% de las
+    primas de vida pese a 20x de crecimiento insurtech), y el caso Lemonade (100% digital, sigue
+    sin ser rentable 12 años después de fundado). El mercado global de corretaje además está
+    **creciendo** (USD 336B→695B proyectado a 2033), no encogiendo — evidencia de negocio, no
+    solo intuición, de que "vender vida sin asesor" no es el modelo que gana.
+  - **Cómo surge la propuesta del copiloto del asesor (AIDA)**: si el benchmark descarta
+    reemplazar al asesor, la pregunta de diseño pasa de "¿automatizamos la venta?" a "¿cómo
+    potenciamos al asesor sin sumarle más carga?" (conecta directo con Dx3). RIMAC ya tenía una
+    señal propia a favor de esa dirección — un asesor web con IA generativa que, según prensa
+    local, duplicó conversión (Business Empresarial 2025, autorreportado, 🟠D) — y la literatura
+    de simulación de entrenamiento en adultos (Sitzmann 2011, F-219, 🟢A) da la base para que el
+    copiloto empiece como herramienta de *práctica* (AIDA Skill Trainer) antes que como
+    herramienta de *producción* en vivo — reduce el riesgo de lanzar algo sin validar, coherente
+    con la tesis 10 del Lobo (no sobreclamar precisión de IA sin validación, caso Babylon
+    Health).
+- **Auditoría de materiales existentes** (confirmado por el usuario, 2026-07-24): material
+  recibido de **Learning** (contenido de formación existente), de **Marketing** (piezas y
+  campañas), material que **los propios asesores** habían construido por su cuenta, y material
+  bajado desde canales como el **Cartaplan**. Esto es evidencia operativa directa de por qué
+  "Cartaplan/Manuales" aparece verde en el mapa (§2) pero "cartillas simplificadas" aparece
+  amarillo — existe material, pero de origen disperso y sin curaduría única.
+
 **Clusters del ecosistema:** Producto (Coberturas, Beneficios, Precio, Experiencia); Unidad de
 Negocio e Inteligencia Comercial (nodo articulador central); Marketing (Benchmark, Speeches,
 Cartillas); Palancas de Venta (Promociones, KPIs de performance y de experiencia); Espacio
