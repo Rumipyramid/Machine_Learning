@@ -775,3 +775,12 @@ eliminación unilateral — la decisión de retirar o renombrar esa técnica que
   (1-17) requirió ajuste de
   confianza — es evidencia nueva sobre un documento del proyecto, no sobre el ledger externo
   existente.
+- **2026-07-24 (proceso diario)** — Corrida automática diaria de refinamiento, separada de la
+  auditoría a pedido del usuario que ya corrió hoy mismo (entrada anterior). Confirmé que
+  `codice.md` sigue tope en F-228 — verifiqué la secuencia completa F-1 a F-228 sin huecos, sin
+  fuente nueva registrada desde la corrida anterior de hoy — **sin cambios sustanciales** en
+  evidencia. Repasé las 18 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger
+  vigente. No forcé ninguna conexión nueva entre tesis solo por completar el paso — la corrida de
+  hoy ya conectó lo disponible (tesis 18 sobre el Playbook). Próximo salto de tesis/confianza
+  queda condicionado a que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o `cronista` registren
+  fuentes nuevas en el ledger.
