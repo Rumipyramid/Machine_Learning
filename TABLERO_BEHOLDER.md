@@ -33,7 +33,7 @@
 | Métrica | Valor |
 |---|---|
 | Épicas | 10 |
-| Quests (iniciativas) | 66 |
+| Quests (iniciativas) | 67 |
 | Colaboradores (con monedas) | 4 |
 | Monedas Q3 comprometidas | 93 🪙 |
 | Regla de capacidad | ≤ 8 🪙 simultáneas por persona |
@@ -103,7 +103,7 @@
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-28, Q-43, Q-44, Q-45, Q-46, Q-47, Q-48, Q-49, Q-50, Q-51, Q-52, Q-53, Q-54, Q-55, Q-56, Q-57, Q-58, Q-59, Q-62, Q-63, Q-64, Q-65, Q-66 | Q-2, Q-4, Q-5, Q-8, Q-9, Q-10, Q-12, Q-13, Q-14, Q-15, Q-18, Q-21, Q-22, Q-23, Q-24, Q-25, Q-27, Q-32, Q-33, Q-34, Q-35, Q-36, Q-37, Q-38 | Q-1, Q-26, Q-29, Q-39 | — | Q-3, Q-6, Q-7, Q-16, Q-17, Q-20, Q-30, Q-40, Q-41, Q-42, Q-60, Q-61 |
+| Q-28, Q-43, Q-44, Q-45, Q-46, Q-47, Q-48, Q-49, Q-50, Q-51, Q-52, Q-53, Q-54, Q-55, Q-56, Q-57, Q-58, Q-59, Q-62, Q-63, Q-64, Q-65, Q-66, Q-67 | Q-2, Q-4, Q-5, Q-8, Q-9, Q-10, Q-12, Q-13, Q-14, Q-15, Q-18, Q-21, Q-22, Q-23, Q-24, Q-25, Q-27, Q-32, Q-33, Q-34, Q-35, Q-36, Q-37, Q-38 | Q-1, Q-26, Q-29, Q-39 | — | Q-3, Q-6, Q-7, Q-16, Q-17, Q-20, Q-30, Q-40, Q-41, Q-42, Q-60, Q-61 |
 
 > Estados asignados por fechas: inicio ≤ hoy ≤ entrega → In Progress; entrega pasada → Done;
 > inicio futuro → To Do; sin fechas → Backlog. **Q-31 queda fuera de estas 5 columnas**: está
@@ -211,6 +211,7 @@ Equipo: Melissa y Alejandro, junto con **César** (Lead de Service Design, otro 
 | Q-57 | Piloto modelo de ventas: Validación técnica con AI | Backlog | Sin programar; sin días comprometidos aún | Chequeo de que el copiloto/AIDA reproduce el modelo calibrado antes de escalarlo a toda la FFVV | — | — | — | Alejandro, Melissa | Service Design | Sin monedas asignadas — pendiente de tallar | Asegura consistencia entre el modelo humano y el asistido por AI |
 | Q-62 | Transversalizar Back to Basics a los ramos | Backlog | Backlog — fase 2 del proyecto, después de cerrar la creación de contenido y herramientas de la primera tanda | Escalar el playbook y la estrategia de contacto más allá de Vida Individual: primero a los canales de Vida, luego al resto de ramos | — | — | — | (por confirmar) | — | Depende de cerrar la primera tanda de Back to Basics | Escalamiento del modelo de venta a más ramos |
 | Q-63 | Estrategia de alertas CRM para consentimiento CUA | Backlog | Backlog — mitigación del golpe de la Ley 32323 (CUA) | Arquitectura de fricción deliberada: alertar al asesor si el cliente pidió no ser contactado, o condicionar el contacto a tener consentimiento — protección legal para RIMAC vía default seguro en el CRM | — | — | — | (por confirmar) | CRM (equipo dueño del sistema) | Requiere coordinación con el equipo de CRM; sin equipo BD asignado aún | Lineamientos de protección legal para RIMAC (riesgo Ley 32323) |
+| Q-67 | Programa de referidos | Backlog | Backlog — segunda mitigación del golpe de la Ley 32323 (CUA), complementa Q-63 | Contacto por referido de un cliente existente en vez de contacto en frío: la introducción cálida trae consentimiento implícito y evita el riesgo de contacto no autorizado (además, los referidos convierten mejor por prueba social y reciprocidad) | — | — | — | (por confirmar) | — | Sin equipo BD asignado aún; requiere definir mecánica de incentivo al cliente referente | Reduce dependencia del contacto en frío; mitigación legal + mejor conversión |
 | Q-64 | AIDA: de piloto a herramienta funcional para asesores | Backlog | Backlog — evolución de Q-13 (Co-diseño AIDA Skill Trainer) una vez validado el piloto | Escalar el simulador de práctica deliberada de un piloto acotado a una herramienta funcional de uso diario del asesor | — | — | — | (por confirmar) | Equipo GenAI (definir alcances conjuntos) | Requiere reunión con GenAI para definir alcances; sin equipo BD asignado aún | Herramienta funcional de entrenamiento continuo para FFVV |
 | Q-65 | Potenciamiento de la estrategia de entrenamiento de asesores | Backlog | Backlog — extiende Q-5 (modelo de competencias, calendarización y evaluación) hacia un programa de crecimiento completo | Modelo por competencias + calendarización con práctica espaciada + programa de crecimiento del asesor, más allá del onboarding inicial | — | — | — | (por confirmar) | — | Sin equipo BD asignado aún | Ramp-up y retención de asesores a mediano plazo |
 
