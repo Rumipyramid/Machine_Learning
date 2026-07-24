@@ -251,26 +251,30 @@ Back to Basics (§1: plataforma de leads, copiloto, alertas de churn) son la res
 **Hallazgo 2 — hueco de citas en Bloque 4 (✅ cerrado 2026-07-24, con una corrección).** Bloque 3
 (imagen/presencia digital) estaba bien citado con literatura nivel A, aunque son estudios de
 laboratorio con validez ecológica limitada para conversión real. Bloque 4 (manejo de objeciones
-C.1-C.9, donde se juega el cierre de venta) no citaba ninguna fuente para los 8 sesgos que
-nombraba. Revisión dedicada (2026-07-24, análisis con el Lobo) encontró la cita académica
-fundacional para 7 de los 8 y una corrección importante para el octavo:
+C.1-C.9, donde se juega el cierre de venta) no citaba ninguna fuente para ninguno de los 9 sesgos
+que nombraba. Revisión dedicada (2026-07-24, análisis con el Lobo, esta vez sobre el documento
+real `Playbook_del_asesor.md` — la primera pasada había trabajado solo con el resumen, que no
+traía la numeración C.n exacta) encontró la cita académica fundacional para 8 de los 9 y una
+corrección importante para el noveno:
 
-| Estrategia C. | Sesgo/técnica | Fuente académica | Nota |
-|---|---|---|---|
-| C.1 | Prueba social | Cialdini & Goldstein 2004 (F-224, 🟢A) | Sistematiza el trabajo de Cialdini (*Influence*, 1984) |
-| C.2 | Anclaje | Tversky & Kahneman 1974 (F-220, 🟢A) | Complementa a F-175 (aplicación 2022 a precio) |
-| C.3 | Dotación (endowment) | Kahneman, Knetsch & Thaler 1990 (F-223, 🟢A) | — |
-| C.4 | Aversión a la pérdida | Kahneman & Tversky 1979 (F-221, 🟢A) | Prospect Theory, base del Nobel 2002 |
-| C.5 | Dilución de responsabilidad | Darley & Latané 1968 (F-226, 🟢A) | ⚠️ dominio original es emergencias con testigos, no venta 1-a-1 — encaje con objeciones no verificado en literatura, tratar con cautela (ver F-226) |
-| C.6 | "Regla del 10x" | Cardone 2011 (F-227, 🔴E) | **No es un sesgo cognitivo** — es una heurística de metas de un libro de ventas motivacional, mal categorizada junto a los demás; recomendación: retirarla de la lista de "sesgos cognitivos" o renombrarla explícitamente como técnica de mentalidad de ventas, no de ciencia conductual |
-| C.7 | Encuadre (framing) | Tversky & Kahneman 1981 (F-222, 🟢A) | Mismo mecanismo que C.4, aplicado a redacción de la oferta |
-| C.9 | Facilidad cognitiva | Alter & Oppenheimer 2009 (F-225, 🟢A) | Base académica de un término popularizado por Kahneman (2011) |
+| Estrategia C. | Nombre en el Playbook | Sesgo/técnica | Fuente académica | Nota |
+|---|---|---|---|---|
+| C.1 | Referentes sociales | Prueba social | Cialdini & Goldstein 2004 (F-224, 🟢A) | Sistematiza el trabajo de Cialdini (*Influence*, 1984) |
+| C.2 | Punto de referencia | Anclaje | Tversky & Kahneman 1974 (F-220, 🟢A) | Complementa a F-175 (aplicación 2022 a precio) |
+| C.3 | Proteger lo que ya tienes | Dotación (endowment) | Kahneman, Knetsch & Thaler 1990 (F-223, 🟢A) | — |
+| C.4 | El costo de esperar | Sesgo del presente | Pitthan & De Witte 2021 (F-3, 🟢A) | Mismo paper que ya sostiene `sesgo_presente` en el modelo `lapuerta` — identifica miopía y narrow framing como mecanismos específicos |
+| C.5 | Lo que está en riesgo | Aversión a la pérdida | Kahneman & Tversky 1979 (F-221, 🟢A) | Prospect Theory, base del Nobel 2002 |
+| C.6 | Cuando la decisión se posterga | Dilución de responsabilidad | Darley & Latané 1968 (F-226, 🟢A) | ⚠️ dominio original es emergencias con testigos, no venta 1-a-1 — encaje con objeciones no verificado en literatura, tratar con cautela (ver F-226) |
+| C.7 | Poner el precio en contexto | "Regla del 10x" | Cardone 2011 (F-227, 🔴E) | **No es un sesgo cognitivo** — es una heurística de metas de un libro de ventas motivacional, sin relación real con "poner el precio en perspectiva" (que sí es un uso legítimo de anclaje/encuadre); mal categorizada junto a sesgos reales; recomendación: retirarla de la lista o renombrarla explícitamente como técnica de mentalidad de ventas, no de ciencia conductual |
+| C.8 | Tu ingreso es tu mayor activo | Encuadre (framing) | Tversky & Kahneman 1981 (F-222, 🟢A) | Mismo mecanismo que C.5, aplicado a redacción de la oferta |
+| C.9 | Números claros | Facilidad cognitiva | Alter & Oppenheimer 2009 (F-225, 🟢A) | Base académica de un término popularizado por Kahneman (2011) |
 
 Sigue siendo lo inverso de cómo debería repartirse el rigor visible en el documento original (la
 sección de menor validez ecológica tenía más cita que la sección donde se decide si la venta se
-cierra) — pero el respaldo evidencial ya existe y puede incorporarse al Playbook. El pendiente de
-§7 ("agregar respaldo evidencial a C.1-C.9") pasa de *sin evidencia* a *evidencia lista para
-insertar, con una corrección de contenido pendiente en C.6*.
+cierra) — pero el respaldo evidencial ya existe y ya se insertó directamente en el documento
+`Playbook_del_asesor.md` (2026-07-24, ver nota de aplicación abajo). El pendiente de §7 ("agregar
+respaldo evidencial a C.1-C.9") queda **resuelto**, con la corrección de C.7 aplicada como nota
+en el documento (no se retiró la sección — se marcó para decisión del equipo).
 
 **Hallazgo 3 — tensión con tesis 1 y 6 del Lobo.** La **tesis 1** (divulgación/comprensión es
 palanca de conversión débil, confianza Alta — F-9 RCT N≈124k, F-10, F-124 específico de seguros)
@@ -344,10 +348,10 @@ retirado) es el mismo patrón de riesgo que ese node señala en el caso del Do N
   referido — ninguna de las 5 estrategias lo resuelve.** El pendiente de mayor riesgo legal y de
   negocio del proyecto.
 - ~~Bloque 4 del playbook: agregar respaldo evidencial a las 9 estrategias de manejo de
-  objeciones (C.1-C.9)~~ — **evidencia lista (2026-07-24), ver Hallazgo 2 de §5.** Queda como
-  pendiente de acción (no de investigación): insertar las citas F-220 a F-227 en el documento
-  interno del playbook, y decidir qué hacer con C.6 ("regla del 10x") — retirarla de la lista de
-  sesgos cognitivos o renombrarla como técnica de mentalidad de ventas.
+  objeciones (C.1-C.9)~~ — **resuelto (2026-07-24)**, ver Hallazgo 2 de §5: citas insertadas
+  directamente en `Playbook_del_asesor.md`, con nota de corrección en C.7 ("regla del 10x") en
+  vez de retirar la sección sin decisión del equipo — queda pendiente que el equipo confirme si
+  retirarla o renombrarla como técnica de mentalidad de ventas.
 - Secciones aún "Pendiente" del playbook: banco de recursos de marketing, FAQ de
   coberturas/exclusiones, gestión de referidos e indicadores (Bloque 5), certificación e
   incentivos (Apéndice), meta de reviews en Google.
