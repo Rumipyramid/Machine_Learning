@@ -38,11 +38,9 @@
 | Monedas Q3 comprometidas | 93 🪙 |
 | Regla de capacidad | ≤ 8 🪙 simultáneas por persona |
 | Quests con riesgo alto 🚩 | 1 (Q-13 AIDA) |
-| Códigos de alerta | 2 🚨 rojos (nuevos, de capacidad) · 10 ⚠️ amarillos — aparte, 17 quests vencidos sin resolver (crónico, ver nota) |
+| Códigos de alerta | 0 🚨 rojos (los 2 de capacidad se resolvieron faseando) · 11 ⚠️ amarillos — aparte, 15 quests vencidos sin resolver (crónico, ver nota) |
 
 ## 🚨 Alertas activas
-- 🚨 **Código rojo — Stefanie viola la regla de capacidad:** pico de **12 🪙** entre 13/07–17/07 (> 8). Causa directa de este batch de cambios: reasignar Q-38 (4 🪙) a Stefanie se suma a Q-21 (4 🪙) y Q-22 (3 🪙), que ya ocupaban esa ventana. Necesita decisión del owner: redistribuir monedas, mover fechas, o confirmar que se acepta el pico.
-- 🚨 **Código rojo — Alejandro viola la regla de capacidad:** pico de **10 🪙** el 10/07 (> 8). Causa directa: extender el cierre de Q-18 al 28/07 alargó su ventana y ahora se solapa con más quests de Alejandro de los que se solapaba antes (Q-2, Q-5, Q-9, Q-12...). Necesita decisión del owner.
 - ⚠️ **Código amarillo — Q-9 estrategia CUA en definición:** la mesa con Legal/Cumplimiento/CUA/FFVV debe cerrar antes del 10/07 (inicio del informe).
 - ⚠️ **Código amarillo — Q-35 servicios valorados:** Producto pide no comunicarlos y la guía Multiempresa arranca el 06/07.
 - ⚠️ **Código amarillo — Q-4/Q-5 Universidad Vida:** capacidad limitada del equipo Learning sin mitigación confirmada.
@@ -52,6 +50,7 @@
 - ⚠️ **Código amarillo — Q-53 sin programar:** 3 🪙 asignadas a Felipe (plantillas de contacto sin CUA) sin fechas.
 - ⚠️ **Código amarillo — Q-58 sin programar:** 1 🪙 asignada a Felipe (guías EPS Banbif: validación) sin fechas.
 - ⚠️ **Código amarillo — Q-59 sin programar:** 2 🪙 (Alejandro 1, Felipe 1) — guías EPS Banbif: entrega final — sin fechas.
+- ⚠️ **Código amarillo — Q-31 sin programar:** 1 🪙 (Stefanie) — quedó sin fechas al pausar el quest (on hold); no cuenta para capacidad mientras siga en pausa.
 - ⚠️ **Código amarillo — Q-32 (Convenios) ya inició pese a la secuencia pedida:** el owner pidió esperar al cierre de Back to Basics (EPIC-1, sigue abierto) antes de avanzar Convenios, pero Q-32 ya tiene inicio el 20/07. Confirmar si se pausa o se acepta el solape.
 
 > ✅ **Resueltos:** 🚨 código rojo de Stefanie (pico 11) y ⚠️ amarillos de capacidad de Felipe (9)
@@ -59,6 +58,11 @@
 > el owner (Q-23 → 21/07, Q-5 → 09/07). Ahora todos los picos son ≤ 8.
 > ✅ **Resueltos (04/07):** los 3 🚨 códigos rojos por vencimiento — Q-6, Q-7 y Q-17 se
 > entregaron y pasan a Done.
+> ✅ **Resueltos (fasear, no redistribuir):** los 2 🚨 rojos de capacidad de este batch —
+> Stefanie (pico 12 → 7) y Alejandro (pico 10 → 7) — se resolvieron **sin mover a nadie de las
+> historias**: Q-18 se concentró en una ventana corta justo antes de su deadline (24–28/07 en
+> vez de 06–28/07) y Q-38 se corrió para arrancar cuando Stefanie libera capacidad de Cobranzas
+> (25/07 en vez de 13/07). Ver § Análisis de capacidad (experto en gestión) más abajo.
 
 ## 🔍 Pendientes de confirmar (cruce con el sheet de compromisos a Milagros)
 > Del cruce entre este tablero y las tareas comprometidas que compartiste — no son riesgos de
@@ -133,7 +137,7 @@ gantt
   section AMI Relanzamiento
   6 guías resumidas (PDFs) · Felipe, Alejandro :done, 2026-06-22, 2026-07-01
   Validación con stakeholders · Alejandro :done, 2026-07-01, 2026-07-04
-  Entrega final con ajustes de producto · Alejandro :2026-07-06, 2026-07-09
+  Entrega final con ajustes de producto (faseada) · Alejandro :2026-07-24, 2026-07-28
   section Evolution+: B2B Cobranzas
   Investigación perfil 1 · Stefanie :done, 2026-06-22, 2026-06-25
   Investigación perfil 2 · Stefanie :2026-07-08, 2026-07-21
@@ -144,19 +148,18 @@ gantt
   section Spark: Vivo Pack
   Plan de testeo del concepto · Stefanie, Melissa, Alejandro :active, 2026-07-02, 2026-07-08
   Artefactos diseñados para el testeo · Stefanie, Melissa :2026-07-06, 2026-07-08
-  section Bienestar 360
+  section Bienestar 360 (on hold)
   Status Bienestar 360 · Stefanie :active, 2026-07-03, 2026-07-08
   Playbook del servicio · Stefanie :done, 2026-06-22, 2026-06-27
-  Seguimiento del servicio · Stefanie :2026-07-06, 2026-07-18
   section Modelo de venta — Convenios
   Entendimiento del modelo de venta actual · Alejandro, Melissa :2026-07-20, 2026-08-08
   Análisis de escalamiento del modelo Vida Individual · Alejandro, Melissa :2026-08-10, 2026-08-12
   Diseño del modelo de venta de convenios · Alejandro, Melissa :2026-08-12, 2026-08-22
-  section Renovación EPS
+  section Estrategia EPS
   Guías resumidas EPS — Multiempresa · Felipe :2026-07-06, 2026-07-08
   Validación con comercial y gestión de Salud · Felipe :2026-07-08, 2026-07-16
   Entrega final con ajustes de producto · Felipe, Alejandro :2026-07-16, 2026-07-17
-  Diseño To Be — Ecosistema de entendimiento y uso eficiente de seguros · Alejandro, Felipe :2026-07-13, 2026-08-06
+  Diseño To Be — Ecosistema de entendimiento (faseado, Stefanie) · Stefanie :2026-07-25, 2026-08-18
 ```
 <!-- GANTT:END -->
 
@@ -219,7 +222,7 @@ Cierre de la entrega de guías resumidas confirmado para el **28/07**.
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Q-16 | 6 guías resumidas (PDFs) | Done | Entregadas (6 días) | Simplificación radical de la póliza: lenguaje claro, ejemplos concretos y jerarquía de coberturas — ataca la sobrecarga informativa, causa #1 de desconfianza en seguros | 22/06/2026 | 30/06/2026 | 0 🪙 0 🪙 | Felipe, Alejandro | Service Design | — | ↓ ~25–30% casos NPS «no recibí información» (est.) |
 | Q-17 | Validación con stakeholders | Done | Entregada (3 días); check de Producto y equipo médico completado (nombre, coberturas, red, servicios) | Chequeo de comprensión real: testear que el usuario entiende, no solo que el stakeholder aprueba | 01/07/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
-| Q-18 | Entrega final con ajustes de producto | To Do | Programada; cierre movido al 28/07 (aprobado por el owner) | Iteración final: cerrar las brechas de comprensión detectadas en la validación | 06/07/2026 | 28/07/2026 | 3 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
+| Q-18 | Entrega final con ajustes de producto | To Do | Programada; faseada al 24–28/07 (aprobado por el owner) para no solapar con Q-2/Q-5/Q-9/Q-12 de Alejandro — el trabajo real de cierre se concentra justo antes del deadline del 28/07, no distribuido en 3 semanas de espera | Iteración final: cerrar las brechas de comprensión detectadas en la validación | 24/07/2026 | 28/07/2026 | 3 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
 | Q-60 | Flyer Venta | Done | Entregado (0 días comprometidos en el sheet a Milagros) | Simplificación y saliencia: pieza de venta con los beneficios clave jerarquizados visualmente | — | — | 0 🪙 | Felipe | Service Design | — | Apoyo a la venta del relanzamiento AMI |
 | Q-61 | Speech Venta | Done | Entregado (0 días comprometidos en el sheet a Milagros) | Guion de venta con framing y respuestas a objeciones frecuentes del nuevo portafolio | — | — | 0 🪙 | Felipe | Service Design | — | Apoyo a la venta del relanzamiento AMI |
 
@@ -256,7 +259,7 @@ trabajar con **Estar Bien** como frente de Bienestar. Q-29/Q-30 ya entregados qu
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Q-29 | Status Bienestar 360 | In Progress | En curso (3 días) | Monitoreo de métricas conductuales del programa (adherencia y engagement, no solo satisfacción) | 03/07/2026 | 07/07/2026 | 1 🪙 | Stefanie | Service Design | — | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
 | Q-30 | Playbook del servicio | Done | Entregado (5 días) | Codificación del modelo de cambio de hábitos del programa para hacerlo replicable | 22/06/2026 | 26/06/2026 | 2 🪙 | Stefanie | Service Design | — | Continuidad del programa |
-| Q-31 | Seguimiento del servicio | On Hold | En pausa — despriorizado en comité; pendiente definir estrategia con Estar Bien antes de continuar | Prevención del decaimiento del hábito: refuerzos post-implementación para sostener la conducta | 06/07/2026 | 17/07/2026 | 1 🪙 | Stefanie | Service Design, Estar Bien (por definir) | Despriorizado; presupuesto limitado para v2 | Mantenimiento de métricas (en pausa) |
+| Q-31 | Seguimiento del servicio | On Hold | En pausa — despriorizado en comité; fechas liberadas (no cuentan para capacidad mientras esté en pausa); pendiente definir estrategia con Estar Bien antes de re-agendar | Prevención del decaimiento del hábito: refuerzos post-implementación para sostener la conducta | — | — | 1 🪙 | Stefanie | Service Design, Estar Bien (por definir) | Despriorizado; presupuesto limitado para v2 | Mantenimiento de métricas (en pausa) |
 
 ### EPIC-6 · Modelo de venta — Convenios · **Talla M** · Perform
 Nuevo modelo de venta para convenios. **Debe esperar a que cierre Back to Basics (EPIC-1)** antes
@@ -282,7 +285,7 @@ de confirmar que quedó abierto la sesión pasada.
 | Q-35 | Guías resumidas EPS: Multiempresa | To Do | Programada (2 días) | Simplificación de la póliza EPS multiempresa: lenguaje claro y saliencia de las coberturas que el afiliado más usa | 06/07/2026 | 07/07/2026 | 6 🪙 | Felipe | — | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS |
 | Q-36 | Validación con comercial y gestión de Salud | To Do | Programada (6 días) | Chequeo de comprensión y viabilidad comercial: qué comunicar sin generar expectativas que el producto no cumple | 08/07/2026 | 15/07/2026 | 2 🪙 | Felipe | — | — | Renovación cuentas TOP EPS |
 | Q-37 | Entrega final con ajustes de producto | To Do | Programada (1 día); entra Alejandro (el senior co-firma la entrega) | Iteración final con ajustes de producto | 16/07/2026 | 16/07/2026 | 2 🪙 2 🪙 | Felipe, Alejandro | — | — | ↓ «no recibí información» en corporativo |
-| Q-38 | Diseño To Be: Ecosistema de entendimiento y uso eficiente de seguros | To Do | Programada (15 días); reasignada de Alejandro/Felipe a Stefanie por indicación del owner (equipo de la Estrategia EPS); monedas antes repartidas 2+2, ahora las 4 quedan en Stefanie | Educación justo-a-tiempo: touchpoints de entendimiento a lo largo del journey del asegurado — la información llega en el momento de uso, no en la firma | 13/07/2026 | 05/08/2026 | 4 🪙 | Stefanie | Product Design, Jonathan (Lead Service Design) | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
+| Q-38 | Diseño To Be: Ecosistema de entendimiento y uso eficiente de seguros | To Do | Programada (15 días); reasignada de Alejandro/Felipe a Stefanie por indicación del owner (equipo de la Estrategia EPS); monedas antes repartidas 2+2, ahora las 4 quedan en Stefanie. Faseada para arrancar el 25/07, justo después de que cierre Q-22 (Diseño de experiencia, Cobranzas) — así no compite por capacidad con el tramo de investigación de Cobranzas | Educación justo-a-tiempo: touchpoints de entendimiento a lo largo del journey del asegurado — la información llega en el momento de uso, no en la firma | 25/07/2026 | 18/08/2026 | 4 🪙 | Stefanie | Product Design, Jonathan (Lead Service Design) | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
 | Q-48 | Modelo predictivo de retención en seguros de salud (data renovación + siniestros, con Edu Rebata) | Backlog | Sin programar; pendiente que las áreas dueñas den acceso a la data para Edu Rebata | Diagnóstico conductual de drivers de retención: qué variables de conducta y percepción (no solo actuariales) predicen la caída antes de la renovación — el insumo de BD alimenta las features del modelo que construye Edu Rebata, con apoyo del equipo en su construcción | — | — | 6 🪙 | Alejandro | Edu Rebata (modelo), áreas dueñas de data (renovación, siniestros) | Acceso a data cross-área depende de gestión externa a otras áreas — mismo patrón de fricción que la mesa CUA de Q-9: se registra en el Reloj BD vs. Lead time (§3.4 del ANS BD), no como días de esfuerzo BD | Insumo conductual para intervención proactiva antes de la renovación en seguros de salud (impacto cuantitativo pendiente de validar con el modelo) |
 | Q-58 | Guías Resumidas EPS — Banbif: Validación con comercial | Backlog | Sin programar; 2 días comprometidos a Milagros. Frente nuevo (cuenta Banbif), no trackeado hasta este cruce | Chequeo de comprensión y viabilidad comercial para la cuenta Banbif, análogo a Q-36 en Multiempresa | — | — | 1 🪙 | Felipe | — | Mismo riesgo que Q-35/Q-36: Producto podría pedir no comunicar servicios valorados | Renovación cuenta Banbif |
 | Q-59 | Guías Resumidas EPS — Banbif: Entrega final con ajustes de producto | Backlog | Sin programar; 4 días comprometidos a Milagros | Iteración final con ajustes de producto para la cuenta Banbif | — | — | 1 🪙 1 🪙 | Alejandro, Felipe | — | — | ↓ «no recibí información» en Banbif |
@@ -360,18 +363,52 @@ Es el frente **Transform de Salud** que Alejandro y Jonathan trabajan a nivel in
 
 | Colaborador | Expertise | Monedas Q3 (total) | Pico simultáneo | Ventana del pico | Estado |
 |---|---|---|---|---|---|
-| Alejandro | Senior | 26 | 7 | 07/07 y 10/07 | 🟢 Dentro de la regla |
+| Alejandro | Senior | 26 | 7 | 10/07 | 🟢 Dentro de la regla |
 | Melissa | Semi senior | 21 | 7 | 20/07 → 22/07 | 🟢 Dentro de la regla |
-| Stefanie | Semi senior | 24 | 8 | 08/07 → 17/07 | 🟢 Al límite (8) |
-| Felipe | Junior (6 meses) | 22 | 7 | 06/07 → 07/07 y 13/07 → 15/07 | 🟢 Dentro de la regla |
+| Stefanie | Semi senior | 24 | 7 | 08/07 → 05/08 | 🟢 Dentro de la regla |
+| Felipe | Junior (6 meses) | 22 | 7 | 06/07 → 07/07 | 🟢 Dentro de la regla |
 
-**Alertas de capacidad:** sin alertas — todos los picos respetan la regla de ≤ 8 simultáneas.
-- ⚠️ **Monedas sin programar:** Q-28 (Stefanie: 1, Melissa: 1), Q-48 (Alejandro: 6), Q-53 (Felipe: 3), Q-58 (Felipe: 1), Q-59 (Alejandro: 1, Felipe: 1). Sumarán al pico cuando se agenden. Felipe es quien más monedas sin programar acumula (5 🪙 entre Q-53/Q-58/Q-59) — vigilar su pico cuando se agenden, hoy con margen (7).
+**Alertas de capacidad:** sin alertas — todos los picos respetan la regla de ≤ 8 simultáneas (todos en 7, con 1 🪙 de margen).
+- ⚠️ **Monedas sin programar:** Q-28 (Stefanie: 1, Melissa: 1), Q-48 (Alejandro: 6), Q-53 (Felipe: 3), Q-58 (Felipe: 1), Q-59 (Alejandro: 1, Felipe: 1). Sumarán al pico cuando se agenden. Felipe es quien más monedas sin programar acumula (5 🪙 entre Q-53/Q-58/Q-59) — vigilar su pico cuando se agenden, con margen de solo 1 antes del límite.
 - Q-54–Q-57 (pilotos), Q-62–Q-66 (backlog nuevo de EPIC-1/EPIC-8) y Q-49–Q-52 (Exploración Salud) no tienen monedas asignadas todavía — no suman al total hasta tallarse.
-- **Q-38 se reasignó de Alejandro/Felipe (2+2) a Stefanie (4) por indicación del owner** — Alejandro y Felipe bajan 2🪙 cada uno, Stefanie sube 4🪙. Sus picos simultáneos (07/07–10/07 y 06–15/07 respectivamente) no incluían la ventana de Q-38 (13/07→05/08), así que no cambian; el pico de Stefanie tampoco cambia porque Q-38 cae después de su ventana al límite (08–17/07).
-- Nota: Stefanie queda **al límite (8)** entre el 08/07 y el 17/07 — no agendar nada nuevo en esa ventana.
+- **Q-38 se reasignó de Alejandro/Felipe (2+2) a Stefanie (4)** y se **faseó** para arrancar el 25/07 (no el 13/07) — evita competir por capacidad con Q-21/Q-22 de Cobranzas. **Q-18 se faseó** a una ventana corta (24–28/07, no 06–28/07) — evita competir con Q-2/Q-5/Q-9/Q-12 de Alejandro. Ningún pico quedó por encima de 7.
 - 🏖️ **Vacaciones:** ninguna registrada. Se registran en el roster de la config; durante
   vacaciones la capacidad es **0** y el trabajo agendado en ese periodo dispara 🚨 código rojo.
+
+## 🧭 Análisis de capacidad (experto en gestión)
+Dos principios de asignación, vigentes de aquí en adelante:
+
+1. **Compartir historias está bien; compartir la épica completa es mejor.** Cuando 2 personas
+   trabajan un frente, lo ideal no es que cada una posea quests disjuntos sin cruce — es que
+   ambas atraviesen la épica de punta a punta, dividiendo tareas dentro de cada tramo.
+2. **Fasear antes que redistribuir personas.** Cuando la carga simultánea de alguien supera el
+   límite, la primera palanca no es sacar a alguien de una historia o repartir sus monedas a
+   otra persona — es **secuenciar en el tiempo** para que el trabajo avance cuando se libera
+   capacidad, no todo a la vez. Redistribuir personas queda como último recurso, solo si fasear
+   no alcanza por dependencias duras o deadlines fijos que no se pueden mover.
+
+### Cómo se aplicó en los 2 códigos rojos de este batch
+| Quién | Problema | Causa | Fix (fasear, no redistribuir) |
+|---|---|---|---|
+| Stefanie | Pico 12 🪙 (13–17/07) | Q-38 (4🪙, Estrategia EPS) arrancaba en medio del tramo de investigación de Cobranzas (Q-21 4🪙 + Q-22 3🪙) | Q-38 se corrió al **25/07** (justo cuando cierra Q-22) — mismo alcance, mismo equipo, solo después en el tiempo. Pico bajó de 12 a 7 |
+| Alejandro | Pico 10 🪙 (10/07) | Q-18 (3🪙, AMI) tenía una ventana de 22 días abierta (06→28/07) que se solapaba con 4 quests de Back to Basics | Q-18 se **concentró** en los 5 días antes de su deadline real (24→28/07) — la entrega no necesita 22 días de ventana abierta, solo el tramo final de trabajo efectivo. Pico bajó de 10 a 7 |
+
+### Revisión de pairing por épica (¿las personas atraviesan toda la épica?)
+| Épica | Patrón actual | Lectura |
+|---|---|---|
+| EPIC-1 Back to Basics | Alejandro y Melissa aparecen en la mayoría de los quests grandes; piezas tácticas puntuales en solitario (Q-6, Q-8, Q-9, Q-10, Q-14) | Bien encaminado — el núcleo (Alejandro/Melissa) atraviesa la épica; lo solitario es trabajo puntual acotado, no un tramo completo dejado a una sola persona |
+| EPIC-6 Convenios | Alejandro y Melissa juntos en los 3 quests | Ejemplo ideal del patrón pedido |
+| EPIC-7 Estrategia EPS | Dos sub-equipos: Felipe(+Alejandro puntual) en las guías tácticas (Q-35–37, 58–59); Stefanie sola en la pieza estratégica (Q-38) | No es incumplimiento — son dos tramos de naturaleza distinta (táctico vs. estratégico) con equipos ya definidos por el owner. ⚠️ Ojo: Stefanie sola en Q-38 no tiene backup — si se atrasa o se enferma, ese tramo no tiene quién lo cubra |
+| EPIC-3 Cobranzas | Casi todo Stefanie sola; Melissa entra solo en Q-24, Felipe solo en Q-25 | Bus factor ya señalado en el tablero original ("entra Melissa (bus factor)") — decisión ya tomada, no un hallazgo nuevo |
+
+### Tensión sin resolver: EPIC-6 no puede esperar a que EPIC-1 cierre del todo
+Se evaluó fasear Convenios (Q-32–34) para que arranque después del cierre completo de Back to
+Basics, como pidió el owner. **No entra en el trimestre**: EPIC-1 ya no tiene fecha de cierre fija
+(crece con Q-53–65) y la cadena de Convenios necesita ~21 días corridos; si se le hace esperar al
+cierre más optimista de EPIC-1 (Q-15, 28/08), Q-34 terminaría después del cierre del Q3 (13/09).
+**No se movió la fecha de Q-32** por esta razón — se deja como está (20/07) y se abre la pregunta
+al owner: ¿"cerrar Back to Basics" significa la primera tanda (Q-1–15, que si cierra a tiempo) o
+la épica completa (que ya no tiene fin fijo)? Si es la primera tanda, no hay conflicto real.
 
 ## 🚩 Registro de riesgos
 | Clave | Quest | Riesgo | Probabilidad | Impacto | Código | Mitigación sugerida |
