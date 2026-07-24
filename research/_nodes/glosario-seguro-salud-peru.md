@@ -189,4 +189,7 @@ Por eso este glosario funciona mejor como parte de un sistema:
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — términos como "capitación",
   "mancomunación de riesgo" o "selección adversa" que aparecen ahí no están en este glosario
   (está enfocado en el consumidor final, no en diseño de producto) — posible ampliación futura.
+- [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — misma
+  plantilla y advertencia de fondo (F-6, F-9, F-10), aplicada al registro de seguro de
+  vida en vez de salud.
 Definiciones alineadas al Glosario de términos de seguros de la SBS.*

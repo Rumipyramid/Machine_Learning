@@ -42,7 +42,7 @@ por afirmación cuando corresponda.
 |---|---|
 | `alma.md` | Este índice vivo (raíz de `research/`) |
 | `_nodes/` | Todo el conocimiento, plano, un `.md` por tema (kebab-case) |
-| `fuentes/codice.md` | Ledger de `cronista` (se consulta con `/codice`) — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 230+ filas existentes. |
+| `fuentes/codice.md` | Ledger de `cronista` (se consulta con `/codice`) — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 235+ filas existentes. |
 | `personas/` | Subsistema de código del modelo de personas sintéticas (`lapuerta`) — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `updates/` | Reportes quincenales de fortalecimiento del modelo — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `lobo/opinion_experto.md` | Opinión de negocio acumulada del skill `lobo`, refinada diariamente contra el ledger de `cronista` — subsistema con su propia lógica de confianza/tope, fuera del alcance de este hub, ver `CLAUDE.md` |
@@ -68,6 +68,7 @@ por afirmación cuando corresponda.
 | `_nodes/futuro-asesores-seguros-venta-digital.md` | ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario (empírico + social + negocio) | 2026-07-22 | v1.0 |
 | `_nodes/proyecto-back-to-basics-ffvv-vida.md` | Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido — Modelo de Experiencia de Venta Vida (deck al VP, Dx1-Dx3), mapa sistémico AS IS, estrategias de contacto (DS 016), playbook del asesor, cruce con evidencia/tesis del Lobo, Plan Piloto de validación (10 asesores) | 2026-07-24 | v1.2 (suma Plan Piloto §8; corrige descripción de AIDA — única herramienta en vivo, no simulador previo) |
 | `_nodes/matriz-productos-vida-rimac.md` | Matriz de productos Vida RIMAC: catálogo de 3(+1) productos reales (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total), coberturas/addons, trazabilidad de fuentes y niveles de confianza | 2026-07-24 | v1.0 |
+| `_nodes/glosario-seguro-vida-peru.md` | Glosario de seguro de vida en lenguaje claro — FAQ de cliente (investigación `/trinidad`: pista empírica + social + negocio) para completar el Playbook del Asesor | 2026-07-24 | v1.0 |
 
 ---
 
@@ -90,7 +91,7 @@ por afirmación cuando corresponda.
 ## Bibliografía compartida
 
 `fuentes/codice.md` (ledger de `cronista`, mantenido por ese skill; se consulta con el skill
-`/codice`) — 230+ fuentes (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
+`/codice`) — 235+ fuentes (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
 este hub:
 
 - Cada node cita fuentes por ID (`F-n`) en vez de repetir la referencia completa.
