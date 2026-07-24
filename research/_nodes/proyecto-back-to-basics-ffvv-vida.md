@@ -13,10 +13,12 @@
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
 > cómo se debe narrar todo lo demás: liderar con el sistema, no con las iniciativas.)
 > Fuentes: documento interno "Conocimiento construido — Proyecto FFVV Vida Individual (RIMAC)"
-> (consolidado al 2026-07-21, v1.0 de este node) + su continuación (consolidado al 2026-07-23,
-> esta actualización) + imagen del mapa AS IS 2026 compartida en la sesión (no persistida como
-> archivo en el repo — ver Limitaciones). No introduce fuentes externas nuevas al ledger de
-> `cronista` — las citas `F-n` mencionadas abajo ya estaban registradas.
+> (consolidado al 2026-07-21, v1.0 de este node) + su continuación (consolidado al 2026-07-23) +
+> imagen del mapa AS IS 2026 compartida en la sesión (no persistida como archivo en el repo — ver
+> Limitaciones). **Actualización 2026-07-24 (sin bump de versión, incremental):** análisis con el
+> Lobo (`research/lobo/opinion_experto.md`) para cerrar el hueco de citas del Bloque 4 (§5,
+> Hallazgo 2) y fortalecer Dx3 (§1) — suma F-220 a F-228 al ledger de `cronista`, únicas fuentes
+> externas nuevas que introduce este node hasta ahora.
 
 ---
 
@@ -65,7 +67,11 @@ proyecto debe anclarse a uno de estos tres, en vez de crear otra taxonomía:**
   información inconsistente durante su compra. (Es el diagnóstico que sostiene directamente el
   mapa del ecosistema de §2.)
 - **Dx3** — El asesor tiene alta carga cognitiva y emocional que le deja poca capacidad para
-  gestionar con calidad → el usuario experimenta una venta acelerada y fracturada.
+  gestionar con calidad → el usuario experimenta una venta acelerada y fracturada. **(Fortalecido
+  2026-07-24):** la Teoría de Carga Cognitiva (Sweller 1988, F-228, 🟢A) da a este diagnóstico
+  base académica explícita — la capacidad de procesamiento consciente es limitada, y tareas con
+  muchos elementos que gestionar a la vez degradan el desempeño incluso en expertos. Antes era
+  solo diagnóstico interno; ahora tiene respaldo de la literatura de ciencia cognitiva.
 
 **Iniciativas aisladas ya existentes** (evidencia de que hoy se soluciona en piezas sueltas, no
 como sistema — el contraste que justifica todo el proyecto): Póliza simple, Welcome Pack,
@@ -242,13 +248,29 @@ manifestación directa de Dx3** (el asesor recibe herramientas i-frame que le pi
 menos carga) **sin haber resuelto Dx1/Dx2 primero** — las palancas s-frame propuestas en la Mesa
 Back to Basics (§1: plataforma de leads, copiloto, alertas de churn) son la respuesta pendiente.
 
-**Hallazgo 2 — hueco de citas en Bloque 4.** Bloque 3 (imagen/presencia digital) está bien citado
-con literatura nivel A, aunque son estudios de laboratorio con validez ecológica limitada para
-conversión real. **Bloque 4 (manejo de objeciones C.1-C.9, donde se juega el cierre de venta) no
-cita ninguna fuente** para los 9 sesgos que nombra (prueba social, anclaje, dotación, aversión a
-la pérdida, dilución de responsabilidad, regla del 10x, encuadre, facilidad cognitiva). Es lo
-inverso de cómo debería repartirse el rigor — la sección de menor validez ecológica (imagen
-digital) tiene más cita que la sección donde se decide si la venta se cierra.
+**Hallazgo 2 — hueco de citas en Bloque 4 (✅ cerrado 2026-07-24, con una corrección).** Bloque 3
+(imagen/presencia digital) estaba bien citado con literatura nivel A, aunque son estudios de
+laboratorio con validez ecológica limitada para conversión real. Bloque 4 (manejo de objeciones
+C.1-C.9, donde se juega el cierre de venta) no citaba ninguna fuente para los 8 sesgos que
+nombraba. Revisión dedicada (2026-07-24, análisis con el Lobo) encontró la cita académica
+fundacional para 7 de los 8 y una corrección importante para el octavo:
+
+| Estrategia C. | Sesgo/técnica | Fuente académica | Nota |
+|---|---|---|---|
+| C.1 | Prueba social | Cialdini & Goldstein 2004 (F-224, 🟢A) | Sistematiza el trabajo de Cialdini (*Influence*, 1984) |
+| C.2 | Anclaje | Tversky & Kahneman 1974 (F-220, 🟢A) | Complementa a F-175 (aplicación 2022 a precio) |
+| C.3 | Dotación (endowment) | Kahneman, Knetsch & Thaler 1990 (F-223, 🟢A) | — |
+| C.4 | Aversión a la pérdida | Kahneman & Tversky 1979 (F-221, 🟢A) | Prospect Theory, base del Nobel 2002 |
+| C.5 | Dilución de responsabilidad | Darley & Latané 1968 (F-226, 🟢A) | ⚠️ dominio original es emergencias con testigos, no venta 1-a-1 — encaje con objeciones no verificado en literatura, tratar con cautela (ver F-226) |
+| C.6 | "Regla del 10x" | Cardone 2011 (F-227, 🔴E) | **No es un sesgo cognitivo** — es una heurística de metas de un libro de ventas motivacional, mal categorizada junto a los demás; recomendación: retirarla de la lista de "sesgos cognitivos" o renombrarla explícitamente como técnica de mentalidad de ventas, no de ciencia conductual |
+| C.7 | Encuadre (framing) | Tversky & Kahneman 1981 (F-222, 🟢A) | Mismo mecanismo que C.4, aplicado a redacción de la oferta |
+| C.9 | Facilidad cognitiva | Alter & Oppenheimer 2009 (F-225, 🟢A) | Base académica de un término popularizado por Kahneman (2011) |
+
+Sigue siendo lo inverso de cómo debería repartirse el rigor visible en el documento original (la
+sección de menor validez ecológica tenía más cita que la sección donde se decide si la venta se
+cierra) — pero el respaldo evidencial ya existe y puede incorporarse al Playbook. El pendiente de
+§7 ("agregar respaldo evidencial a C.1-C.9") pasa de *sin evidencia* a *evidencia lista para
+insertar, con una corrección de contenido pendiente en C.6*.
 
 **Hallazgo 3 — tensión con tesis 1 y 6 del Lobo.** La **tesis 1** (divulgación/comprensión es
 palanca de conversión débil, confianza Alta — F-9 RCT N≈124k, F-10, F-124 específico de seguros)
@@ -321,8 +343,11 @@ retirado) es el mismo patrón de riesgo que ese node señala en el caso del Do N
 - **Cómo cubrir el 80% del volumen de venta que hoy depende de prospección en frío sin CUA ni
   referido — ninguna de las 5 estrategias lo resuelve.** El pendiente de mayor riesgo legal y de
   negocio del proyecto.
-- Bloque 4 del playbook: agregar respaldo evidencial a las 9 estrategias de manejo de objeciones
-  (C.1-C.9) — ver Hallazgo 2 de §5.
+- ~~Bloque 4 del playbook: agregar respaldo evidencial a las 9 estrategias de manejo de
+  objeciones (C.1-C.9)~~ — **evidencia lista (2026-07-24), ver Hallazgo 2 de §5.** Queda como
+  pendiente de acción (no de investigación): insertar las citas F-220 a F-227 en el documento
+  interno del playbook, y decidir qué hacer con C.6 ("regla del 10x") — retirarla de la lista de
+  sesgos cognitivos o renombrarla como técnica de mentalidad de ventas.
 - Secciones aún "Pendiente" del playbook: banco de recursos de marketing, FAQ de
   coberturas/exclusiones, gestión de referidos e indicadores (Bloque 5), certificación e
   incentivos (Apéndice), meta de reviews en Google.

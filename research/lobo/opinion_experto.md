@@ -376,6 +376,32 @@ planes de salud lo rankean como prioridad #1 de manejo de costo.
   farmacia en este ledger todavía.
 - **Actualizado:** 2026-07-23
 
+### 18. El playbook de venta de RIMAC mezclaba una técnica real de persuasión conductual con una heurística de ventas sin base científica, vendidas como si fueran del mismo tipo
+Auditoría dedicada (2026-07-24, a pedido del usuario) del Bloque 4 del Playbook del Asesor —
+manejo de objeciones, 8 "sesgos cognitivos" nombrados sin una sola cita— para el proyecto
+`_nodes/proyecto-back-to-basics-ffvv-vida.md`. Resultado: 7 de los 8 sí tienen origen académico
+sólido y verificable (prueba social, anclaje, dotación, aversión a la pérdida, encuadre,
+facilidad cognitiva, dilución de responsabilidad), con papers fundacionales de Kahneman,
+Tversky, Thaler, Cialdini y Sweller detrás. El octavo —"regla del 10x"— **no es un sesgo
+cognitivo**: es una heurística de fijación de metas de un libro de ventas motivacional (Grant
+Cardone, 2011), sin metodología ni evidencia empírica propia. Mezclarlo con los otros siete en la
+misma lista lo presenta con una autoridad que no tiene — no es un error trivial de formato, es
+presentar una opinión de negocio como si fuera ciencia conductual verificada, exactamente el tipo
+de vulnerabilidad que ya señalaba la **tesis 6** (no confiar en catálogo sin verificar origen) y
+un caso concreto, no hipotético, de por qué auditar cada "sesgo" antes de enseñarlo a un asesor.
+Un matiz adicional en "dilución de responsabilidad" (C.5): el paper original (Darley & Latané
+1968) describe por qué la gente *no actúa* frente a una emergencia cuando hay testigos —
+aplicarlo a "manejo de objeciones" en una venta 1-a-1 es una transferencia de dominio que la
+literatura no valida directamente; la cita es real, el encaje con el uso que le da el Playbook no
+lo es todavía.
+- **Evidencia:** F-220 a F-225, F-228 (🟢A, fuentes fundacionales de cada sesgo real); F-226
+  (🟢A, cita real con encaje de dominio cuestionable); F-227 (🔴E, confirma que "regla del 10x"
+  no es ciencia conductual)
+- **Confianza:** Alta en que 7 de 8 técnicas tienen base académica sólida y en que la técnica #8
+  está mal categorizada; Media en el encaje específico de "dilución de responsabilidad" al
+  contexto de objeciones de venta 1-a-1 (cita real, transferencia de dominio no verificada).
+- **Actualizado:** 2026-07-24
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -560,6 +586,12 @@ planes de salud lo rankean como prioridad #1 de manejo de costo.
   desactualizada sin que la bitácora lo supiera. Vigilar que futuras revisiones
   lean siempre la ruta vigente indicada en `CLAUDE.md`, no una ruta fija
   hardcodeada.
+- **Enseñar "regla del 10x" a la fuerza de venta como si fuera un sesgo cognitivo con la misma
+  autoridad que anclaje o aversión a la pérdida.** Tesis 18: es una heurística de metas de un
+  libro motivacional, no ciencia conductual — si se corrige el Bloque 4 del Playbook agregando
+  citas a las otras 7 técnicas sin corregir esta, el efecto neto es darle a una idea sin evidencia
+  el mismo peso visual que a las que sí la tienen, un riesgo de credibilidad silencioso si algún
+  día alguien en Legal/Compliance o el propio VP pide la fuente de cada "sesgo".
 
 ## 📔 Bitácora
 
@@ -716,3 +748,17 @@ planes de salud lo rankean como prioridad #1 de manejo de costo.
   integración farmacia+seguro como motor de utilidad; estrategia explícita de
   costo de medicamentos especializados/GLP-1). Ninguna tesis previa (1-15)
   requirió ajuste de confianza — el ledger nuevo no las tocó.
+- **2026-07-24** — Corrida a pedido explícito del usuario: "revisa todo el conocimiento sobre la
+  venta de seguros de vida en RIMAC y analízalo con el lobo para reforzar los argumentos". Audité
+  el Bloque 4 del Playbook del Asesor (`_nodes/proyecto-back-to-basics-ffvv-vida.md` §5,
+  Hallazgo 2) — 8 "sesgos cognitivos" sin una sola cita en el documento original. Busqué el
+  origen académico de cada uno: 7 sí tienen respaldo fundacional real (Kahneman, Tversky, Thaler,
+  Cialdini, Sweller), el octavo ("regla del 10x") resultó ser una heurística de metas de un libro
+  de ventas motivacional (Cardone 2011), no ciencia conductual — mal categorizado junto a los
+  otros siete. Sumé tesis 18 con este hallazgo, un riesgo nuevo (enseñar la regla del 10x con la
+  misma autoridad que un sesgo real), y F-220 a F-228 al ledger (9 fuentes nuevas: 6 fundacionales
+  de sesgos reales, 1 cita real con encaje de dominio cuestionable, 1 fuente que confirma que
+  algo NO es ciencia conductual, y Sweller 1988 para fortalecer Dx3 del Modelo de Experiencia de
+  Venta Vida con base académica explícita). Ninguna tesis previa (1-17) requirió ajuste de
+  confianza — es evidencia nueva sobre un documento del proyecto, no sobre el ledger externo
+  existente.
