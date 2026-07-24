@@ -22,6 +22,15 @@
 
 ---
 
+## 0. Equipo del proyecto
+
+**(Agregado 2026-07-24, confirmado por el usuario)** Back to Basics — Venta Vida Individual ha
+sido trabajado por **Alejandro Rojas** y **Melissa Ramírez** (ambos Behavioral Designers) y
+**César Cordero** (Service Design). Nota de trazabilidad: §3 de este node lista además a
+"Melissa (Consentimiento/CUA)" como stakeholder del workstream de estrategias de contacto — no
+se asume que sea la misma persona que Melissa Ramírez sin confirmación explícita; se documentan
+ambas referencias tal como aparecen en las fuentes originales.
+
 ## 1. Modelo de Experiencia de Venta Vida (deck presentado al VP)
 
 Presentación "Modelo de Experiencia de Venta Vida" (actualizado mayo 2026, CoE Experience
@@ -55,7 +64,13 @@ testimonios, transparencia de letra chica); Sin fricciones (autogestión para lo
 escalamiento humano para lo complejo).
 
 **4 Motivaciones de personas (Vida Individual):** Proteger a los míos; Hacer crecer mi dinero;
-Llegar a una meta específica; Rentabilizar lo que ya pago.
+Llegar a una meta específica; Rentabilizar lo que ya pago. **(Fortalecido 2026-07-24):** perfilar
+por motivación en vez de por perfil demográfico estándar tiene respaldo en literatura —
+Piercy, Campbell & Heinrich 2011 (F-229, 🟢A, específico de servicios financieros) encuentra que
+la segmentación demográfica explica poco de la conducta real de compra/preferencia de marca en
+este sector; la Teoría de la Autodeterminación (Deci & Ryan 2000, F-230, 🟢A) da el marco
+psicológico general de por qué la motivación subyacente predice mejor la conducta que una
+categoría externa asignada.
 
 **Diagnóstico sistémico formalizado (Dx1-Dx3)** — numeración oficial ya validada por el VP, que
 acompaña al mapa del ecosistema (mismo mapa AS IS 2026 de §2). **Cualquier hallazgo nuevo del
