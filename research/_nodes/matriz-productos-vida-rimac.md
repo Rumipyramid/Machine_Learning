@@ -138,3 +138,6 @@ lámina o deck ya construido que use "170%" como cifra puntual.
   propuesta) y del ejercicio de dimensionamiento del Plan Piloto (§8 de ese node, Casos C y D) —
   ambos requieren saber qué cubre y cuánto cuesta cada producto real, no solo el modelo de
   conversación.
+- [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — glosario de
+  cliente que deliberadamente no cubre el detalle técnico de coberturas (IAFA, EG, ITP,
+  PEI, DPP); ese detalle vive en el §3 de este node.

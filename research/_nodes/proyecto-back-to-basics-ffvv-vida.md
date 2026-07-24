@@ -571,6 +571,10 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   de 4 pasos) y de los Casos C/D de dimensionamiento del Plan Piloto (§8) — incluye el caveat de
   no citar "170%" de devolución como cifra fija, relevante para cualquier material de este
   proyecto que mencione Vida Contigo.
+- [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — investigación
+  `/trinidad` (2026-07-24) que completó la sección "Preguntas frecuentes de producto" del
+  Playbook del Asesor (Bloque 4, Momento 4) con un glosario de cliente; hallazgo clave: la
+  barrera real no es vocabulario técnico sino precio percibido y desconfianza de fondo.
 - [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in]] — evidencia externa
   que sostiene el diseño de las 5 estrategias de §3 y la resolución del Bloque 4 en §6; ese node
   documenta que ninguna transición real evita contracción de volumen, directamente relevante al
