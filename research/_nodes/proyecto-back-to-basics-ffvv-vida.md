@@ -7,18 +7,25 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-24 · Versión: v1.1
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-24 · Versión: v1.2
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
-> cómo se debe narrar todo lo demás: liderar con el sistema, no con las iniciativas.)
+> cómo se debe narrar todo lo demás: liderar con el sistema, no con las iniciativas.
+> v1.2 suma el Plan Piloto de validación del modelo — §8 — y corrige la descripción de AIDA: no es
+> un simulador de práctica previo a un uso en producción ("AIDA Skill Trainer"), es ya la única
+> herramienta que el asesor usa en conversación real con el cliente, ver nota en §2 — cambio
+> estructural porque corrige cómo se describe una pieza del modelo mismo, no solo agrega
+> información nueva.)
 > Fuentes: documento interno "Conocimiento construido — Proyecto FFVV Vida Individual (RIMAC)"
 > (consolidado al 2026-07-21, v1.0 de este node) + su continuación (consolidado al 2026-07-23) +
 > imagen del mapa AS IS 2026 compartida en la sesión (no persistida como archivo en el repo — ver
-> Limitaciones). **Actualización 2026-07-24 (sin bump de versión, incremental):** análisis con el
-> Lobo (`research/lobo/opinion_experto.md`) para cerrar el hueco de citas del Bloque 4 (§5,
-> Hallazgo 2) y fortalecer Dx3 (§1) — suma F-220 a F-228 al ledger de `cronista`, únicas fuentes
-> externas nuevas que introduce este node hasta ahora.
+> Limitaciones) + documento interno "Plan Piloto · Modelo de Experiencia de Venta Vida" (CoE
+> Diseño Estratégico, v1, julio 2026, subido a la sesión 2026-07-24 — ver §8). **Actualización
+> 2026-07-24 (sin bump de versión, incremental):** análisis con el Lobo
+> (`research/lobo/opinion_experto.md`) para cerrar el hueco de citas del Bloque 4 (§5, Hallazgo 2)
+> y fortalecer Dx3 (§1) — suma F-220 a F-228 al ledger de `cronista`, únicas fuentes externas
+> nuevas que introduce este node hasta ahora.
 
 ---
 
@@ -163,7 +170,15 @@ trayectoria dentro de RIMAC, no es un experimento aislado del CoE.
     copiloto empiece como herramienta de *práctica* (AIDA Skill Trainer) antes que como
     herramienta de *producción* en vivo — reduce el riesgo de lanzar algo sin validar, coherente
     con la tesis 10 del Lobo (no sobreclamar precisión de IA sin validación, caso Babylon
-    Health).
+    Health). **Corrección (2026-07-24, vía Plan Piloto — ver §8):** esa secuencia
+    "práctica antes que producción" no es lo que terminó construyéndose. El Plan Piloto describe
+    a AIDA como **"la única herramienta" del asesor**, usada en vivo durante la conversación real
+    con el cliente ("el agente vive dentro de Claude", con "los dos modos" sin detallar aún cuáles
+    son) — el playbook deja de ser un documento que el asesor consulta y pasa a ser la base de
+    conocimiento que alimenta al agente. No hay evidencia en el Plan Piloto de una fase previa de
+    solo-práctica; el riesgo que motivaba empezar por ahí (lanzar sin validar) sigue vigente, pero
+    ahora se gestiona distinto — vía el propio piloto de 10 asesores (§8), no vía una etapa de
+    simulador aislada.
 - **Auditoría de materiales existentes** (confirmado por el usuario, 2026-07-24): material
   recibido de **Learning** (contenido de formación existente), de **Marketing** (piezas y
   campañas), material que **los propios asesores** habían construido por su cuenta, y material
@@ -425,6 +440,101 @@ retirado) es el mismo patrón de riesgo que ese node señala en el caso del Do N
 
 ---
 
+## 8. Plan Piloto de validación del modelo (10 asesores, agosto 2026)
+
+Documento interno "Plan Piloto · Modelo de Experiencia de Venta Vida" (CoE Diseño Estratégico,
+v1, julio 2026 — no vive en este repositorio). Es el diseño de validación de campo del modelo
+descrito en §1, antes de decidir su implementación en AIDA.
+
+**Objetivo general:** validar la recepción del modelo en un grupo de asesores en operación —
+si lo comprenden, lo aplican y lo incorporan a su forma de trabajar a través del agente — y qué
+le falta al modelo para sostenerse cuando se implemente. **No es un experimento comercial**: en
+dos semanas no se espera (ni se busca) movimiento en tasa de cierre.
+
+**Objetivos específicos**, en dos ejes:
+- Eje 1 · El modelo — OE1 Comprensión (día 1: ¿el asesor interioriza el modelo como recorrido, no
+  como colección de técnicas?), OE2 Aplicación (campo: ¿respeta la secuencia — motivación antes
+  que producto, dimensiona un número, cierra pidiendo un siguiente paso?), OE3 Suficiencia del
+  contenido (¿qué le pide el asesor al agente que hoy no está resuelto?).
+- Eje 2 · El agente — OE4 Adopción (¿cómo se integra a la rutina real, y sigue volviendo después
+  de la novedad inicial?).
+
+**Tres premisas de diseño:** (1) el asesor interactúa con una sola herramienta, el agente — el
+playbook es la base de conocimiento que lo alimenta, no una superficie de uso paralela; (2) dos
+fases con lógicas distintas — transferencia (día 1) y puesta en acción (dos semanas) — para
+diagnosticar *dónde* está el problema, no solo constatar que existe; (3) no es experimento
+comercial, ver arriba.
+
+**Muestra — 10 asesores**, compuesta por antigüedad, territorio y forma de originar demanda (no
+para comparar rendimiento, sino para detectar si el modelo asume condiciones que no todos
+tienen): 4 de 6 meses de antigüedad, 4 de 2-3 años, 2 con rasgo diferencial (asesor diamante,
+generador de contenido en redes); 6 Lima, 2 Arequipa, 2 Cuzco/Trujillo; orígenes de demanda
+mixtos (pauta digital, contenido propio, cartera propia, flujo estándar).
+
+**Desarrollo:**
+- **Día 1 — sesión de transferencia (90 min):** estructura del playbook (10 min); *la asesoría*
+  (el modelo de 4 pasos, 25 min — el bloque con más tiempo asignado, "es el corazón"); *social
+  selling en acción* (25 min, se hace ahí mismo con acompañamiento de la CoE: foto profesional,
+  historia profesional en 3 partes, perfiles y firma — no queda como tarea, porque "si sale como
+  tarea para después, no se hace"); el agente (15 min, cómo se usa, los dos modos, entrega de
+  accesos); ejercicio de comprensión (15 min, mide OE1).
+- **Ejercicio de comprensión — 4 casos**, aplicados el día 1 y el día de cierre (mismos casos,
+  para leer el delta): Caso A (primer contacto en frío — revela si evita mencionar
+  producto/precio en el primer mensaje), Caso B (el cliente salta al precio — revela si redirige
+  con una pregunta en vez de dar un precio suelto o negarse en seco), Caso C (dimensionar una
+  meta — ej. universidad de una hija — el número sale del costo de la meta), Caso D (dimensionar
+  protección — el número sale de lo que la familia dejaría de percibir, no de una meta con precio
+  conocido). C y D exigen razonamientos distintos a propósito: un asesor puede resolver bien uno
+  y fallar en el otro, y ese contraste ya es un hallazgo sobre qué reforzar.
+- **Dos semanas de campo:** agenda del piloto (inicial + viva, declarada por el asesor, columna
+  vertebral de qué observar); shadowing continuo por cobertura (todo asesor al menos una vez,
+  provincia por videollamada); bitácora post-conversación (3 preguntas, 30 seg, por WhatsApp);
+  cierres de semana (10 min, reflexivos, los viernes ×2). **Principio de diseño explícito: la
+  carga de recolección es de la CoE, no del asesor** — todo lo que se pueda levantar sin
+  preguntarle, se levanta sin preguntarle.
+- **Cierre:** consolidación de hallazgos, sesión con líderes de venta, priorización de vacíos de
+  contenido, decisión sobre implementación en AIDA.
+
+**Indicadores (6):** comprensión inicial y su delta al cierre; cobertura de uso (tasa, no conteo
+— en cuántas de sus interacciones reales usó el agente); conversaciones que respetan la
+secuencia del modelo (shadowing); momento de uso respecto de la interacción (antes/durante/
+después); consultas sin respuesta satisfactoria y temas más consultados (insumo directo para la
+v2 del contenido); **brecha comprensión → aplicación** (cruce comprendió×aplicó — distingue si un
+fallo en campo es "brecha de activación" [comprendió pero no aplica: problema de agente/
+acompañamiento/contexto] de "brecha de transferencia" [no comprendió: problema de cómo se enseña
+el modelo] — sin esta medición, cualquier falla en campo se leería como "no les gustó el modelo",
+sin decir qué arreglar).
+
+**Alcance y limitaciones declaradas por el propio documento:**
+- Fuera de alcance: Bloque 5 (postventa, opera en hitos de mes 1/6/9) e indicadores comerciales
+  (el ciclo de venta de Vida excede el plazo del piloto — un movimiento en conversión sería
+  direccional, no concluyente).
+- Dependencia técnica: el tracking del prototipo no existe todavía (hay que habilitarlo antes del
+  24/07); el acceso de los 10 asesores al agente requiere asiento activo en el Team/Enterprise de
+  Claude de RIMAC (a confirmar antes del 24/07) — **confirma como hecho técnico concreto** lo que
+  la corrección de §2 ya señalaba: AIDA es un prototipo construido sobre Claude, de uso en vivo,
+  no un simulador aislado.
+- **Vacíos de contenido conocidos, declarados explícitamente por el propio Plan Piloto: "La
+  Estrategia de Contacto Inicial (CUA) sigue pendiente."** Esto **corrobora de forma
+  independiente** el hallazgo de la revisión directa del playbook real (línea 131,
+  `_(Pendiente — Alejo)_` — ver Limitaciones de este node): la brecha entre "lo que la
+  documentación interna del proyecto da por resuelto" (§6 de este node) y "lo que está escrito en
+  el documento fuente" no es una lectura desactualizada de una sola revisión — el equipo que
+  escribió el Plan Piloto, trabajando en paralelo, llegó a la misma conclusión sin que se le
+  señalara. **Tratar la resolución descrita en §6 como no verificada hasta confirmar contra el
+  documento fuente actual.**
+
+**Hitos comprometidos:** envío de playbook y artefactos + selección de asesores (vie 24/07, CoE/
+Producto y Líderes de Venta); revisión de playbook y artefactos (mar 04/08, Líderes de Venta y
+Producto); inicio de piloto (vie 07/08, CoE).
+
+**Conexión con §1 y §2:** este piloto es la validación de campo del modelo cuyo diseño se
+describe en §1 (statement, pilares, motivaciones, journey) y de la hipótesis de copiloto descrita
+en §2 — sus resultados (indicador 6 en particular) son el insumo directo para decidir si las 16
+palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
+
+---
+
 ## Limitaciones
 
 - Este node consolida documentos internos de RIMAC (no públicos, subidos directamente a la
@@ -432,9 +542,14 @@ retirado) es el mismo patrón de riesgo que ese node señala en el caso del Do N
   nuevas; las citas `F-n` que aparecen aquí ya estaban registradas en `research/fuentes/codice.md`
   antes de este node.
 - Los documentos de referencia citados (`documento_maestro_estrategias_FFVV_v2.md`,
-  `Playbook_del_asesor - VF.md` y su v3, el deck "Modelo de Experiencia de Venta Vida") **no
-  viven en este repositorio** — este node resume su contenido relevante, no los reemplaza como
-  fuente primaria interna.
+  `Playbook_del_asesor - VF.md` y su v3, el deck "Modelo de Experiencia de Venta Vida", "Plan
+  Piloto · Modelo de Experiencia de Venta Vida" de §8) **no viven en este repositorio** — este
+  node resume su contenido relevante, no los reemplaza como fuente primaria interna.
+- **La resolución descrita en §6 (Bloque 4 vs. CUA) no está verificada contra el documento fuente
+  actual** — una revisión directa de `Playbook_del_asesor.md` (2026-07-24) encontró los
+  placeholders "Pendiente" todavía en las secciones que §6 da por resueltas, y el Plan Piloto de
+  §8 corrobora el mismo vacío de forma independiente. Tratar §6 como la resolución *documentada
+  por el proyecto*, no como el estado *verificado* del documento en uso.
 - **El mapa AS IS 2026 (§2) existe como diagrama visual** (compartido en la sesión el
   2026-07-24) pero no se pudo persistir el archivo de imagen en este repo — este node solo
   guarda su lectura textual (clusters, semáforo de nodos). Si se necesita el diagrama en sí para
@@ -450,6 +565,12 @@ retirado) es el mismo patrón de riesgo que ese node señala en el caso del Do N
 
 ## Conexiones
 
+- [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC — catálogo y coberturas]] —
+  catálogo de qué cubre y cuánto cuesta cada producto real (VFP, Plan Vida Flexible, Vida
+  Contigo, Vida Temporal Total); insumo directo del Bloque 4 del Playbook (§4, venta consultiva
+  de 4 pasos) y de los Casos C/D de dimensionamiento del Plan Piloto (§8) — incluye el caveat de
+  no citar "170%" de devolución como cifra fija, relevante para cualquier material de este
+  proyecto que mencione Vida Contigo.
 - [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in]] — evidencia externa
   que sostiene el diseño de las 5 estrategias de §3 y la resolución del Bloque 4 en §6; ese node
   documenta que ninguna transición real evita contracción de volumen, directamente relevante al
