@@ -315,3 +315,8 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   consentido. §6 de este node (reducir desconfianza al pedir datos) comparte el mismo
   problema de fondo — reducir fricción/incertidumbre percibida — que ese node aplica a la
   explicación del producto.
+- [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual]] — aplica
+  directamente la evidencia de este node a un proyecto real de RIMAC: las 5 estrategias de
+  contacto de su §2 y la resolución del Bloque 4 del playbook (§5) siguen el mismo patrón que
+  este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
+  vez de cambiar el modelo de fondo es un riesgo, no una solución).
