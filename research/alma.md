@@ -42,7 +42,7 @@ por afirmación cuando corresponda.
 |---|---|
 | `alma.md` | Este índice vivo (raíz de `research/`) |
 | `_nodes/` | Todo el conocimiento, plano, un `.md` por tema (kebab-case) |
-| `fuentes/codice.md` | Ledger de `cronista` (se consulta con `/codice`) — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 217+ filas existentes. |
+| `fuentes/codice.md` | Ledger de `cronista` (se consulta con `/codice`) — bibliografía compartida de todos los nodes, citada por ID (`F-n`). No se movió a `_nodes/` porque `cronista` referencia esta ruta en su propio SKILL.md y en las 219+ filas existentes. |
 | `personas/` | Subsistema de código del modelo de personas sintéticas (`lapuerta`) — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `updates/` | Reportes quincenales de fortalecimiento del modelo — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `lobo/opinion_experto.md` | Opinión de negocio acumulada del skill `lobo`, refinada diariamente contra el ledger de `cronista` — subsistema con su propia lógica de confianza/tope, fuera del alcance de este hub, ver `CLAUDE.md` |
@@ -73,7 +73,7 @@ por afirmación cuando corresponda.
 
 | Output | Construido sobre (nodes) | Última actualización | Estado |
 |---|---|---|---|
-| _(vacío — aún no se ha generado ningún output formal desde los nodes)_ | | | |
+| `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
 
 > **Estado**: `al día` o `requiere refresh`.
 
@@ -88,7 +88,7 @@ por afirmación cuando corresponda.
 ## Bibliografía compartida
 
 `fuentes/codice.md` (ledger de `cronista`, mantenido por ese skill; se consulta con el skill
-`/codice`) — 217+ fuentes (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
+`/codice`) — 219+ fuentes (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
 este hub:
 
 - Cada node cita fuentes por ID (`F-n`) en vez de repetir la referencia completa.
