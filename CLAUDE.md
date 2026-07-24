@@ -40,6 +40,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 | `.claude-plugin/marketplace.json` · `plugin.json` | Marketplace personal de plugins | Expone `.claude/skills/` como plugin instalable en cualquier máquina/cuenta — ver sección abajo |
+| `scripts/bootstrap_claude_code.sh` | Bootstrap de una línea: agrega el marketplace + instala el plugin de skills | Idempotente; correr en cualquier Claude Code nuevo (laptop corporativa incluida) — ver sección abajo |
 
 ## Base de conocimiento (codex)
 
@@ -217,6 +218,10 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   /plugin marketplace add Rumipyramid/Machine_Learning
   /plugin install rumipyramid-skills@rumipyramid-machine-learning
   ```
+  Equivalente de un comando (útil cuando hay CLI de shell a mano, no solo el chat):
+  `bash <(curl -fsSL https://raw.githubusercontent.com/Rumipyramid/Machine_Learning/main/scripts/bootstrap_claude_code.sh)`
+  — o, con el repo ya clonado, `scripts/bootstrap_claude_code.sh`. Es idempotente (no
+  duplica marketplace ni plugin si ya están instalados).
 - **Actualizar tras un cambio en `.claude/skills/`:** `/plugin marketplace update rumipyramid-machine-learning`.
 - **Regla de consolidación:** ninguna skill debe quedar viviendo solo en el historial de una
   conversación o como archivo suelto fuera de `.claude/skills/<nombre>/SKILL.md` — si se redacta
