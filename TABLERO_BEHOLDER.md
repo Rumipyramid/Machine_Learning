@@ -16,18 +16,33 @@
 > **Herramientas:** `python reportes/beholder_tools.py {validar|digest|gantt|retro}` ·
 > el Excel se regenera desde este tablero con `python reportes/generar_matriz_status.py`.
 
+## 🎯 Perform vs. Transform (marco del trimestre)
+> Lógica **80% Perform / 20% Transform**. Todo lo priorizado en comité hasta ahora es de
+> naturaleza **Perform** — no hay todavía un frente Transform de equipo con luz verde. Excepción:
+> **Alejandro y Jonathan (Lead Service Design)** van a trabajar, a nivel individual (no de
+> equipo), algunas iniciativas **Transform de Salud** — es cómo Alejandro cubre más frentes.
+> EPIC-10 Exploración Salud queda etiquetada Transform por esto.
+
+**Las 2 prioridades del comité, en orden:**
+1. **Back to Basics — Fuerza de Venta Vida** (EPIC-1). Equipo: Melissa y Alejandro, junto con
+   **César** (Lead de Service Design, otro equipo).
+2. **Estrategia EPS** (EPIC-7, antes "Renovación EPS" — nueva propuesta de valor). Equipo:
+   **Stefanie y Jonathan** (Lead Service Design).
+
 ## 📊 Resumen
 | Métrica | Valor |
 |---|---|
 | Épicas | 10 |
-| Quests (iniciativas) | 59 |
+| Quests (iniciativas) | 66 |
 | Colaboradores (con monedas) | 4 |
 | Monedas Q3 comprometidas | 93 🪙 |
 | Regla de capacidad | ≤ 8 🪙 simultáneas por persona |
 | Quests con riesgo alto 🚩 | 1 (Q-13 AIDA) |
-| Códigos de alerta | 0 🚨 rojos · 9 ⚠️ amarillos |
+| Códigos de alerta | 2 🚨 rojos (nuevos, de capacidad) · 10 ⚠️ amarillos — aparte, 17 quests vencidos sin resolver (crónico, ver nota) |
 
 ## 🚨 Alertas activas
+- 🚨 **Código rojo — Stefanie viola la regla de capacidad:** pico de **12 🪙** entre 13/07–17/07 (> 8). Causa directa de este batch de cambios: reasignar Q-38 (4 🪙) a Stefanie se suma a Q-21 (4 🪙) y Q-22 (3 🪙), que ya ocupaban esa ventana. Necesita decisión del owner: redistribuir monedas, mover fechas, o confirmar que se acepta el pico.
+- 🚨 **Código rojo — Alejandro viola la regla de capacidad:** pico de **10 🪙** el 10/07 (> 8). Causa directa: extender el cierre de Q-18 al 28/07 alargó su ventana y ahora se solapa con más quests de Alejandro de los que se solapaba antes (Q-2, Q-5, Q-9, Q-12...). Necesita decisión del owner.
 - ⚠️ **Código amarillo — Q-9 estrategia CUA en definición:** la mesa con Legal/Cumplimiento/CUA/FFVV debe cerrar antes del 10/07 (inicio del informe).
 - ⚠️ **Código amarillo — Q-35 servicios valorados:** Producto pide no comunicarlos y la guía Multiempresa arranca el 06/07.
 - ⚠️ **Código amarillo — Q-4/Q-5 Universidad Vida:** capacidad limitada del equipo Learning sin mitigación confirmada.
@@ -37,6 +52,7 @@
 - ⚠️ **Código amarillo — Q-53 sin programar:** 3 🪙 asignadas a Felipe (plantillas de contacto sin CUA) sin fechas.
 - ⚠️ **Código amarillo — Q-58 sin programar:** 1 🪙 asignada a Felipe (guías EPS Banbif: validación) sin fechas.
 - ⚠️ **Código amarillo — Q-59 sin programar:** 2 🪙 (Alejandro 1, Felipe 1) — guías EPS Banbif: entrega final — sin fechas.
+- ⚠️ **Código amarillo — Q-32 (Convenios) ya inició pese a la secuencia pedida:** el owner pidió esperar al cierre de Back to Basics (EPIC-1, sigue abierto) antes de avanzar Convenios, pero Q-32 ya tiene inicio el 20/07. Confirmar si se pausa o se acepta el solape.
 
 > ✅ **Resueltos:** 🚨 código rojo de Stefanie (pico 11) y ⚠️ amarillos de capacidad de Felipe (9)
 > y Alejandro (8.5) — redistribución 50/50 en monedas enteras + cambios de fecha aprobados por
@@ -55,37 +71,39 @@
 ## 🎯 Prioridades del comité (CoE X — Milagros)
 > Cruce contra `Priorización_CoE_X_Q3_2026` (backlog que Milagros lleva a comité). Detalle
 > completo, fichas de 7 campos y hallazgos en `reportes/cruce_priorizacion_coex_q3.md`.
-> Última sincronización: 2026-07-05.
+> Última sincronización de la tabla: 2026-07-05. **Actualización verbal del owner (posterior):**
+> el comité ya definió Back to Basics y Estrategia EPS como las 2 prioridades — ver
+> § Perform vs. Transform arriba; esa es la fuente más reciente donde entren en conflicto.
 
 | Épica / Quest (Beholder) | Iniciativa en el Excel de Milagros | Prioridad de negocio | Estado en comité |
 |---|---|---|---|
-| EPIC-2 AMI Relanzamiento (Q-16–18) | Rimac Salud — Nuevo portafolio de productos AMI | 🔴 **Alta** | En progreso |
-| EPIC-1 Mesa Back to Basics (Q-1–15, incluye CUA: Q-6, Q-8, Q-9) | Back to Basics — FFVV Vida Individual (CUA fusionado como componente (a) del problema) | Sin marcar | En progreso |
-| EPIC-6 Modelo de venta Convenios (Q-32–34) | Back to Basics — Convenios | Sin marcar | **Backlog en comité** ⚠️ (tu tablero ya la programó desde 20/07) |
-| EPIC-7 Renovación EPS (Q-35–38) | Ecosistema de entendimiento y uso eficiente de seguros EPS | Sin marcar | **Backlog en comité** |
-| EPIC-1 (Q-4, Q-5, Q-15) | Universidad de Vida (modelo de competencias) | Sin marcar | **Backlog en comité** |
-| EPIC-4 Spark: Vivo Pack (Q-26–28) | Piloto MBI Crónicos/Pre-crónicos | Sin marcar | Sin estado en comité |
-| EPIC-5 Bienestar 360 (Q-29–31) | Bienestar 360 — Piloto | Sin marcar | Sin estado en comité |
-| ❌ Sin quest en el tablero | Rediseño de la Home (+Agente) | Sin marcar | En progreso |
+| EPIC-1 Mesa Back to Basics (Q-1–15, Q-53–65, incluye CUA: Q-6, Q-8, Q-9) | Back to Basics — FFVV Vida Individual (CUA fusionado como componente (a) del problema) | 🔴 **Alta — Prioridad #1** (actualizado por el owner) | En progreso |
+| EPIC-7 Estrategia EPS (Q-35–38, Q-48, Q-58–59) | Ecosistema de entendimiento y uso eficiente de seguros EPS | 🔴 **Alta — Prioridad #2** (actualizado por el owner; antes "Backlog en comité") | En progreso |
+| EPIC-2 AMI Relanzamiento (Q-16–18, Q-60–61) | Rimac Salud — Nuevo portafolio de productos AMI | 🔴 **Alta** | Cerrando (28/07) |
+| EPIC-4 Spark: Vivo Pack (Q-26–28) | Piloto MBI Crónicos/Pre-crónicos | Sin marcar | Confirmado por el owner — continúa |
+| EPIC-6 Modelo de venta Convenios (Q-32–34) | Back to Basics — Convenios | Sin marcar | **Backlog en comité** ⚠️ — además, el owner pidió secuenciarlo después del cierre de EPIC-1 (ver conflicto de fechas en la épica) |
+| EPIC-5 Bienestar 360 (Q-29–31) | Bienestar 360 — Piloto | Sin marcar | **Despriorizado por el owner** — on hold hasta definir con Estar Bien |
+| EPIC-1 (Q-4, Q-5, Q-65) | Universidad de Vida (modelo de competencias) | Sin marcar | **Backlog en comité**; Q-65 la extiende a programa de crecimiento |
+| ❌ Sin quest en el tablero | Rediseño de la Home (+Agente) | Sin marcar | En progreso — posible mismo frente que Q-52 (Agente Web y App, EPIC-10) |
 | ❌ Sin quest en el tablero | Nuevo OMT Kit | Sin marcar | Sin estado en comité |
 | ❌ Sin quest en el tablero | Evolution+ \| AMI Venta Hub Multigestión | Sin marcar | En progreso |
 | ❌ Sin quest en el tablero | Guías resumidas en todos los Journeys de Onboarding activos | Sin marcar | En progreso |
 
 **Lecturas rápidas:**
-- 🔴 **Solo 1 de las 11 iniciativas de BD tiene prioridad "Alta" explícita del comité**: AMI Relanzamiento — y es, además, la más cerca de cerrarse (2 de 3 quests Done).
-- 🔀 **CUA ya no es una fila propia para el comité**: Milagros la fusionó dentro de "Back to Basics — FFVV Vida Individual" como el componente (a) del problema (contacto sin CUA = riesgo legal). Q-6, Q-8, Q-9 se siguen trackeando como quests propios en tu tablero, pero reportan hacia arriba como parte de BTB, no por separado.
-- ⚠️ **Cobranzas B2B (EPIC-3, S/600k, íntegramente de Stefanie) no aparece en el Excel de Milagros con capacidad Behavioral** — el comité no ve ese trabajo como tuyo.
-- ⚠️ **Convenios (EPIC-6) y Ecosistema EPS (EPIC-7) siguen en Backlog para el comité**, aunque tu tablero ya les dio fecha de inicio — confirmar luz verde antes de comprometer más capacidad.
+- 🔴 **El comité ya elevó a Back to Basics y Estrategia EPS a Alta prioridad** — antes solo AMI Relanzamiento tenía esa marca explícita en el Excel de Milagros; la actualización verbal del owner es más reciente que el Excel.
+- 🔀 **CUA ya no es una fila propia para el comité**: Milagros la fusionó dentro de "Back to Basics — FFVV Vida Individual" como el componente (a) del problema (contacto sin CUA = riesgo legal); Q-63 (alertas CRM) es la mitigación concreta que sale de esta fusión.
+- ⚠️ **Cobranzas B2B (EPIC-3, S/600k, íntegramente de Stefanie) no aparece en el Excel de Milagros con capacidad Behavioral** — el comité no ve ese trabajo como tuyo. Ahora además está cerrando, así que probablemente deje de ser relevante para este cruce.
 - 🚫 **"Programa de lealtad" (Alta prioridad para Milagros) se eliminó de este tablero** en la reestructura v2 y sigue sin resolver si tu equipo debe retomarlo.
-- 📎 4 iniciativas donde participa BD **no tienen quest propio** en este tablero (Home+Agente, OMT Kit, Venta Hub Multigestión, Guías en Onboarding) — candidatas a incorporar si son trabajo real y activo.
+- 📎 4 iniciativas donde participa BD **no tienen quest propio** en este tablero (Home+Agente, OMT Kit, Venta Hub Multigestión, Guías en Onboarding) — candidatas a incorporar si son trabajo real y activo. "Home+Agente" probablemente ya es Q-52.
 
 ## 🗂️ Tablero por estado
 | Backlog | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Q-28, Q-43, Q-44, Q-45, Q-46, Q-47, Q-48, Q-49, Q-50, Q-51, Q-52, Q-53, Q-54, Q-55, Q-56, Q-57, Q-58, Q-59 | Q-2, Q-4, Q-5, Q-8, Q-9, Q-10, Q-12, Q-13, Q-14, Q-15, Q-18, Q-21, Q-22, Q-23, Q-24, Q-25, Q-27, Q-31, Q-32, Q-33, Q-34, Q-35, Q-36, Q-37, Q-38 | Q-1, Q-26, Q-29, Q-39 | — | Q-3, Q-6, Q-7, Q-16, Q-17, Q-20, Q-30, Q-40, Q-41, Q-42, Q-60, Q-61 |
+| Q-28, Q-43, Q-44, Q-45, Q-46, Q-47, Q-48, Q-49, Q-50, Q-51, Q-52, Q-53, Q-54, Q-55, Q-56, Q-57, Q-58, Q-59, Q-62, Q-63, Q-64, Q-65, Q-66 | Q-2, Q-4, Q-5, Q-8, Q-9, Q-10, Q-12, Q-13, Q-14, Q-15, Q-18, Q-21, Q-22, Q-23, Q-24, Q-25, Q-27, Q-32, Q-33, Q-34, Q-35, Q-36, Q-37, Q-38 | Q-1, Q-26, Q-29, Q-39 | — | Q-3, Q-6, Q-7, Q-16, Q-17, Q-20, Q-30, Q-40, Q-41, Q-42, Q-60, Q-61 |
 
 > Estados asignados por fechas: inicio ≤ hoy ≤ entrega → In Progress; entrega pasada → Done;
-> inicio futuro → To Do; sin fechas → Backlog.
+> inicio futuro → To Do; sin fechas → Backlog. **Q-31 queda fuera de estas 5 columnas**: está
+> **On Hold** (despriorizado, ver EPIC-5) — no cuenta como To Do activo.
 
 ## 📅 Gantt del trimestre
 > Generado desde las fechas del tablero con `python reportes/beholder_tools.py gantt`.
@@ -163,8 +181,9 @@ gantt
 
 ## 📋 Épicas y quests (detalle)
 
-### EPIC-1 · Mesa Back to Basics · **Talla XL**
+### EPIC-1 · Mesa Back to Basics · **Talla XL** · Perform · Prioridad #1 del comité
 FFVV Vida Individual: playbook de ventas, Universidad Vida, estrategia de contacto y AIDA.
+Equipo: Melissa y Alejandro, junto con **César** (Lead de Service Design, otro equipo).
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -187,20 +206,28 @@ FFVV Vida Individual: playbook de ventas, Universidad Vida, estrategia de contac
 | Q-55 | Piloto modelo de ventas: Campo | Backlog | Sin programar; sin días comprometidos aún | Prueba en campo del playbook calibrado, midiendo conducta real del asesor y del cliente | — | — | — | Alejandro, Melissa | Service Design | Sin monedas asignadas — pendiente de tallar | Validación del modelo antes del despliegue completo |
 | Q-56 | Piloto modelo de ventas: Calibración 2 | Backlog | Sin programar; sin días comprometidos aún | Segunda ronda de ajuste con evidencia del piloto de campo | — | — | — | Alejandro, Melissa | Service Design | Sin monedas asignadas — pendiente de tallar | Refinamiento del modelo antes del despliegue completo |
 | Q-57 | Piloto modelo de ventas: Validación técnica con AI | Backlog | Sin programar; sin días comprometidos aún | Chequeo de que el copiloto/AIDA reproduce el modelo calibrado antes de escalarlo a toda la FFVV | — | — | — | Alejandro, Melissa | Service Design | Sin monedas asignadas — pendiente de tallar | Asegura consistencia entre el modelo humano y el asistido por AI |
+| Q-62 | Transversalizar Back to Basics a los ramos | Backlog | Backlog — fase 2 del proyecto, después de cerrar la creación de contenido y herramientas de la primera tanda | Escalar el playbook y la estrategia de contacto más allá de Vida Individual: primero a los canales de Vida, luego al resto de ramos | — | — | — | (por confirmar) | — | Depende de cerrar la primera tanda de Back to Basics | Escalamiento del modelo de venta a más ramos |
+| Q-63 | Estrategia de alertas CRM para consentimiento CUA | Backlog | Backlog — mitigación del golpe de la Ley 32323 (CUA) | Arquitectura de fricción deliberada: alertar al asesor si el cliente pidió no ser contactado, o condicionar el contacto a tener consentimiento — protección legal para RIMAC vía default seguro en el CRM | — | — | — | (por confirmar) | CRM (equipo dueño del sistema) | Requiere coordinación con el equipo de CRM; sin equipo BD asignado aún | Lineamientos de protección legal para RIMAC (riesgo Ley 32323) |
+| Q-64 | AIDA: de piloto a herramienta funcional para asesores | Backlog | Backlog — evolución de Q-13 (Co-diseño AIDA Skill Trainer) una vez validado el piloto | Escalar el simulador de práctica deliberada de un piloto acotado a una herramienta funcional de uso diario del asesor | — | — | — | (por confirmar) | Equipo GenAI (definir alcances conjuntos) | Requiere reunión con GenAI para definir alcances; sin equipo BD asignado aún | Herramienta funcional de entrenamiento continuo para FFVV |
+| Q-65 | Potenciamiento de la estrategia de entrenamiento de asesores | Backlog | Backlog — extiende Q-5 (modelo de competencias, calendarización y evaluación) hacia un programa de crecimiento completo | Modelo por competencias + calendarización con práctica espaciada + programa de crecimiento del asesor, más allá del onboarding inicial | — | — | — | (por confirmar) | — | Sin equipo BD asignado aún | Ramp-up y retención de asesores a mediano plazo |
 
-### EPIC-2 · AMI Relanzamiento · **Talla S**
+### EPIC-2 · AMI Relanzamiento · **Talla S** · Perform · Cerrando
 Relanzamiento AMI: guías resumidas para el entendimiento y uso eficiente de los nuevos productos.
+Cierre de la entrega de guías resumidas confirmado para el **28/07**.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Q-16 | 6 guías resumidas (PDFs) | Done | Entregadas (6 días) | Simplificación radical de la póliza: lenguaje claro, ejemplos concretos y jerarquía de coberturas — ataca la sobrecarga informativa, causa #1 de desconfianza en seguros | 22/06/2026 | 30/06/2026 | 0 🪙 0 🪙 | Felipe, Alejandro | Service Design | — | ↓ ~25–30% casos NPS «no recibí información» (est.) |
 | Q-17 | Validación con stakeholders | Done | Entregada (3 días); check de Producto y equipo médico completado (nombre, coberturas, red, servicios) | Chequeo de comprensión real: testear que el usuario entiende, no solo que el stakeholder aprueba | 01/07/2026 | 03/07/2026 | 0 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
-| Q-18 | Entrega final con ajustes de producto | To Do | Programada (3 días) | Iteración final: cerrar las brechas de comprensión detectadas en la validación | 06/07/2026 | 08/07/2026 | 3 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
+| Q-18 | Entrega final con ajustes de producto | To Do | Programada; cierre movido al 28/07 (aprobado por el owner) | Iteración final: cerrar las brechas de comprensión detectadas en la validación | 06/07/2026 | 28/07/2026 | 3 🪙 | Alejandro | Service Design | — | ↓ «no recibí información» |
 | Q-60 | Flyer Venta | Done | Entregado (0 días comprometidos en el sheet a Milagros) | Simplificación y saliencia: pieza de venta con los beneficios clave jerarquizados visualmente | — | — | 0 🪙 | Felipe | Service Design | — | Apoyo a la venta del relanzamiento AMI |
 | Q-61 | Speech Venta | Done | Entregado (0 días comprometidos en el sheet a Milagros) | Guion de venta con framing y respuestas a objeciones frecuentes del nuevo portafolio | — | — | 0 🪙 | Felipe | Service Design | — | Apoyo a la venta del relanzamiento AMI |
 
-### EPIC-3 · Evolution+: B2B Cobranzas · **Talla L**
-Optimizar la conciliación de pagos B2B; prioridad: facturas de corporativas y gran empresa (mayor volumen).
+### EPIC-3 · Evolution+: B2B Cobranzas · **Talla L** · Perform · Cerrando
+Optimizar la conciliación de pagos B2B; prioridad: facturas de corporativas y gran empresa (mayor
+volumen). **El frente cierra con Q-25** (04/09) — no se agenda más trabajo de Cobranzas después
+de eso, para que Stefanie quede libre para la Estrategia EPS (Transform Salud) y otra iniciativa
+Perform por confirmar.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -220,17 +247,22 @@ Testeo de concepto Vivo Pack.
 | Q-27 | Artefactos diseñados para el testeo | To Do | Programada (2 días) | Estímulos que hacen tangible el producto: la concreción visual reduce la abstracción del seguro | 06/07/2026 | 07/07/2026 | 1 🪙 1 🪙 | Stefanie, Melissa | Service Design | — | — |
 | Q-28 | Análisis y síntesis del test | Backlog | Sin programar en el gantt (0 días pintados) | Síntesis separando lo que la gente dice de lo que hace (brecha dicho-hecho) para el go/no-go | — | — | 1 🪙 1 🪙 | Stefanie, Melissa | Service Design | Suma al pico cuando se agende | Decisión go/no-go del concepto |
 
-### EPIC-5 · Bienestar 360 · **Talla S**
-Programa implementado; fase de mantenimiento y seguimiento.
+### EPIC-5 · Bienestar 360 · **Talla S** · Perform · Despriorizado (on hold)
+Programa implementado; **despriorizado en comité** — en pausa hasta confirmar la estrategia para
+trabajar con **Estar Bien** como frente de Bienestar. Q-29/Q-30 ya entregados quedan igual; Q-31
+(seguimiento futuro) queda condicionado a esa definición.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Q-29 | Status Bienestar 360 | In Progress | En curso (3 días) | Monitoreo de métricas conductuales del programa (adherencia y engagement, no solo satisfacción) | 03/07/2026 | 07/07/2026 | 1 🪙 | Stefanie | Service Design | — | +3 ptos Wellby · CSAT 4.6/5 · NPS 78 |
 | Q-30 | Playbook del servicio | Done | Entregado (5 días) | Codificación del modelo de cambio de hábitos del programa para hacerlo replicable | 22/06/2026 | 26/06/2026 | 2 🪙 | Stefanie | Service Design | — | Continuidad del programa |
-| Q-31 | Seguimiento del servicio | To Do | Programada (10 días) | Prevención del decaimiento del hábito: refuerzos post-implementación para sostener la conducta | 06/07/2026 | 17/07/2026 | 1 🪙 | Stefanie | Service Design | Presupuesto limitado para v2 | Mantenimiento de métricas |
+| Q-31 | Seguimiento del servicio | On Hold | En pausa — despriorizado en comité; pendiente definir estrategia con Estar Bien antes de continuar | Prevención del decaimiento del hábito: refuerzos post-implementación para sostener la conducta | 06/07/2026 | 17/07/2026 | 1 🪙 | Stefanie | Service Design, Estar Bien (por definir) | Despriorizado; presupuesto limitado para v2 | Mantenimiento de métricas (en pausa) |
 
-### EPIC-6 · Modelo de venta — Convenios · **Talla M**
-Nuevo modelo de venta para convenios (antes en Backlog; ahora con iniciativas y fechas).
+### EPIC-6 · Modelo de venta — Convenios · **Talla M** · Perform
+Nuevo modelo de venta para convenios. **Debe esperar a que cierre Back to Basics (EPIC-1)** antes
+de avanzar. ⚠️ Conflicto detectado: Q-32 ya tiene inicio programado el 20/07, pero EPIC-1 sigue
+abierto más allá de esa fecha (crece con Q-53–Q-65) — confirmar si Q-32–Q-34 se pausan/atrasan o
+si la secuencia ya se cumple en la práctica.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -238,15 +270,19 @@ Nuevo modelo de venta para convenios (antes en Backlog; ahora con iniciativas y 
 | Q-33 | Análisis de escalamiento del modelo Vida Individual | To Do | Programada (2 días) | Evaluar qué palancas conductuales del modelo VI son transferibles al canal convenios y cuáles no | 10/08/2026 | 11/08/2026 | 1 🪙 1 🪙 | Alejandro, Melissa | Service Design | — | Escalamiento del modelo de venta VI |
 | Q-34 | Diseño del modelo de venta de convenios | To Do | Programada (8 días) | Arquitectura de decisión del nuevo canal: incentivos, defaults y flujo de decisión del empleado | 12/08/2026 | 21/08/2026 | 2 🪙 2 🪙 | Alejandro, Melissa | Service Design | — | Escalamiento del modelo de venta VI |
 
-### EPIC-7 · Renovación EPS · **Talla L**
-Guías EPS y ecosistema de entendimiento; revisión de la Dra. Ana Gabriela Ramos (Dir. Médica Seguros Salud) en curso. Desde el 13/07 suma Q-48: modelo predictivo de retención pedido por Milagros.
+### EPIC-7 · Estrategia EPS (antes "Renovación EPS") · **Talla L** · Perform · Prioridad #2 del comité
+Nueva propuesta de valor EPS. Guías EPS (Multiempresa, Banbif) y ecosistema de entendimiento;
+revisión de la Dra. Ana Gabriela Ramos (Dir. Médica Seguros Salud) en curso. Desde el 13/07 suma
+Q-48: modelo predictivo de retención pedido por Milagros. **Equipo de la estrategia: Stefanie y
+Jonathan** (Lead Service Design) — reemplaza a Felipe/Alejandro en Q-38, resolviendo el pendiente
+de confirmar que quedó abierto la sesión pasada.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Q-35 | Guías resumidas EPS: Multiempresa | To Do | Programada (2 días) | Simplificación de la póliza EPS multiempresa: lenguaje claro y saliencia de las coberturas que el afiliado más usa | 06/07/2026 | 07/07/2026 | 6 🪙 | Felipe | — | Producto pide no comunicar servicios valorados | Renovación cuentas TOP EPS |
 | Q-36 | Validación con comercial y gestión de Salud | To Do | Programada (6 días) | Chequeo de comprensión y viabilidad comercial: qué comunicar sin generar expectativas que el producto no cumple | 08/07/2026 | 15/07/2026 | 2 🪙 | Felipe | — | — | Renovación cuentas TOP EPS |
 | Q-37 | Entrega final con ajustes de producto | To Do | Programada (1 día); entra Alejandro (el senior co-firma la entrega) | Iteración final con ajustes de producto | 16/07/2026 | 16/07/2026 | 2 🪙 2 🪙 | Felipe, Alejandro | — | — | ↓ «no recibí información» en corporativo |
-| Q-38 | Diseño To Be: Ecosistema de entendimiento y uso eficiente de seguros | To Do | Programada (15 días) | Educación justo-a-tiempo: touchpoints de entendimiento a lo largo del journey del asegurado — la información llega en el momento de uso, no en la firma | 13/07/2026 | 05/08/2026 | 2 🪙 2 🪙 | Alejandro, Felipe | Product Design | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
+| Q-38 | Diseño To Be: Ecosistema de entendimiento y uso eficiente de seguros | To Do | Programada (15 días); reasignada de Alejandro/Felipe a Stefanie por indicación del owner (equipo de la Estrategia EPS); monedas antes repartidas 2+2, ahora las 4 quedan en Stefanie | Educación justo-a-tiempo: touchpoints de entendimiento a lo largo del journey del asegurado — la información llega en el momento de uso, no en la firma | 13/07/2026 | 05/08/2026 | 4 🪙 | Stefanie | Product Design, Jonathan (Lead Service Design) | — | Palancas de entendimiento capturadas en encuesta NPS y CSAT |
 | Q-48 | Modelo predictivo de retención en seguros de salud (data renovación + siniestros, con Edu Rebata) | Backlog | Sin programar; pendiente que las áreas dueñas den acceso a la data para Edu Rebata | Diagnóstico conductual de drivers de retención: qué variables de conducta y percepción (no solo actuariales) predicen la caída antes de la renovación — el insumo de BD alimenta las features del modelo que construye Edu Rebata, con apoyo del equipo en su construcción | — | — | 6 🪙 | Alejandro | Edu Rebata (modelo), áreas dueñas de data (renovación, siniestros) | Acceso a data cross-área depende de gestión externa a otras áreas — mismo patrón de fricción que la mesa CUA de Q-9: se registra en el Reloj BD vs. Lead time (§3.4 del ANS BD), no como días de esfuerzo BD | Insumo conductual para intervención proactiva antes de la renovación en seguros de salud (impacto cuantitativo pendiente de validar con el modelo) |
 | Q-58 | Guías Resumidas EPS — Banbif: Validación con comercial | Backlog | Sin programar; 2 días comprometidos a Milagros. Frente nuevo (cuenta Banbif), no trackeado hasta este cruce | Chequeo de comprensión y viabilidad comercial para la cuenta Banbif, análogo a Q-36 en Multiempresa | — | — | 1 🪙 | Felipe | — | Mismo riesgo que Q-35/Q-36: Producto podría pedir no comunicar servicios valorados | Renovación cuenta Banbif |
 | Q-59 | Guías Resumidas EPS — Banbif: Entrega final con ajustes de producto | Backlog | Sin programar; 4 días comprometidos a Milagros | Iteración final con ajustes de producto para la cuenta Banbif | — | — | 1 🪙 1 🪙 | Alejandro, Felipe | — | — | ↓ «no recibí información» en Banbif |
@@ -260,6 +296,7 @@ Frameworks y herramientas del Chapter (se conservan sin cambios).
 | Q-40 | Sistema de generación de usuarios sintéticos | Done | Terminado, por validar | Capacidad interna: simular conducta de usuarios para pretestear intervenciones antes del campo | — | — | — | Todos | — | — | Agilidad en el testeo de conducta con seguros |
 | Q-41 | Modelo de cambio de hábitos | Done | Terminado y validado | Framework interno: modelo de formación y sostenimiento de hábitos para iniciativas de salud/bienestar | — | — | — | Todos | — | — | Framework para iniciativas de cambio de hábitos |
 | Q-42 | Skill para desk research con rigurosidad científica | Done | Terminado, por validar | Capacidad interna: investigación de escritorio con estándar de evidencia | — | — | — | Todos | — | — | Agilidad y calidad de la investigación de escritorio |
+| Q-66 | Arquitectura del conocimiento hacia el cloud de la CoE | Backlog | En construcción; migración al cloud del CoE por definir | Ecosistema de construcción del conocimiento del equipo (frameworks, playbooks, research) trasladado a infraestructura compartida del CoE | — | — | — | Alejandro | CoE (infraestructura) | Sin fecha ni monedas definidas | Conocimiento del equipo accesible y reusable a nivel CoE |
 
 ### EPIC-9 · Repositorio de iniciativas en Backlog
 Repositorio de iniciativas aún no activadas. Su estado es solo **Backlog**: entran aquí sin
@@ -273,13 +310,15 @@ fechas, monedas ni perfiles, y salen hacia una épica activa cuando se priorizan
 | Q-46 | Vida Individual — Experiencia Postventa | Backlog | Backlog | Por definir | — | — | — | (por confirmar) | — | Sponsor: Diana Riofrío | — |
 | Q-47 | Ahorro Salud — Derivación eficiente MER | Backlog | Backlog | Por definir | — | — | — | (por confirmar) | — | — | — |
 
-### EPIC-10 · Exploración Salud
-Nueva épica: apareció en el sheet de compromisos a Milagros sin ningún precedente en este tablero. Sin días/monedas informados en el sheet — falta tallar cada iniciativa.
+### EPIC-10 · Exploración Salud · **Transform**
+Nueva épica: apareció en el sheet de compromisos a Milagros sin ningún precedente en este tablero.
+Es el frente **Transform de Salud** que Alejandro y Jonathan trabajan a nivel individual (ver
+§ Perform vs. Transform). Sin días/monedas informados en el sheet — falta tallar cada iniciativa.
 
 | Clave | Quest | Estado | Status del proyecto | Intervención conductual | Fecha de inicio | Fecha de cierre | Monedas | Behavioral designers | Otros perfiles | Riesgos | Impacto |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Q-49 | Testeo Maia | Backlog | Sin programar; sin días comprometidos informados | Por definir — nombre "Maia" sin contexto propio en el tablero, confirmar de qué se trata | — | — | — | Stefanie | — | Sin tallar; sin descripción de alcance | Por definir |
-| Q-50 | Exploración Data RIMAC | Backlog | Sin programar; sin días comprometidos informados | Por definir — posible solape con Q-48 (cruce de data para modelo de retención); confirmar si es lo mismo o un frente distinto | — | — | — | Stefanie | — | Sin tallar; posible duplicado de Q-48 | Por definir |
+| Q-50 | Exploración Data RIMAC | Backlog | Sin programar; sin días comprometidos informados. ⚠️ Alejandro también describió estar viendo personalmente una "exploración de data de renovación de salud" — confirmar si Q-50 es lo mismo (y la persona correcta), o si son dos iniciativas distintas | Por definir — posible solape con Q-48 (cruce de data para modelo de retención) y con la exploración personal de Alejandro; confirmar si es lo mismo o un frente distinto | — | — | — | Stefanie | — | Sin tallar; posible duplicado de Q-48 y/o de la exploración de Alejandro | Por definir |
 | Q-51 | Exploración cualitativa con usuarios salud | Backlog | Sin programar; sin días comprometidos informados | Por definir — investigación de comportamiento de usuarios de seguros de salud | — | — | — | Alejandro | — | Sin tallar | Por definir |
 | Q-52 | Agente Web y App | Backlog | Sin programar; sin días comprometidos informados | Por definir — probable mismo frente que "Rediseño de la Home (+Agente)" señalado como sin quest en `cruce_priorizacion_coex_q3.md` | — | — | — | Alejandro | — | Sin tallar; confirmar si es el mismo frente que Home+Agente | Por definir |
 
@@ -309,6 +348,9 @@ Nueva épica: apareció en el sheet de compromisos a Milagros sin ningún preced
 | Q-56 | Q-55 | Piloto de campo → calibración 2 |
 | Q-57 | Q-56 | Calibración 2 → validación técnica con AI |
 | Q-59 | Q-58 | Validación Banbif → entrega final Banbif |
+| Q-62 | (cierre de la primera tanda de EPIC-1) | Contenido y herramientas base → transversalización a ramos |
+| EPIC-6 (Q-32) | (cierre de EPIC-1) | Back to Basics FFVV Vida → Convenios; ⚠️ Q-32 ya inició antes de que EPIC-1 cierre |
+| Q-64 | Q-13 | AIDA Skill Trainer (piloto) → herramienta funcional |
 
 ## 🪙 Libro mayor de monedas (capacidad del equipo)
 > **Economía Q3:** las monedas miden el esfuerzo total del trimestre por persona.
@@ -318,14 +360,15 @@ Nueva épica: apareció en el sheet de compromisos a Milagros sin ningún preced
 
 | Colaborador | Expertise | Monedas Q3 (total) | Pico simultáneo | Ventana del pico | Estado |
 |---|---|---|---|---|---|
-| Alejandro | Senior | 28 | 7 | 07/07 y 10/07 | 🟢 Dentro de la regla |
+| Alejandro | Senior | 26 | 7 | 07/07 y 10/07 | 🟢 Dentro de la regla |
 | Melissa | Semi senior | 21 | 7 | 20/07 → 22/07 | 🟢 Dentro de la regla |
-| Stefanie | Semi senior | 20 | 8 | 08/07 → 17/07 | 🟢 Al límite (8) |
-| Felipe | Junior (6 meses) | 24 | 7 | 06/07 → 07/07 y 13/07 → 15/07 | 🟢 Dentro de la regla |
+| Stefanie | Semi senior | 24 | 8 | 08/07 → 17/07 | 🟢 Al límite (8) |
+| Felipe | Junior (6 meses) | 22 | 7 | 06/07 → 07/07 y 13/07 → 15/07 | 🟢 Dentro de la regla |
 
 **Alertas de capacidad:** sin alertas — todos los picos respetan la regla de ≤ 8 simultáneas.
 - ⚠️ **Monedas sin programar:** Q-28 (Stefanie: 1, Melissa: 1), Q-48 (Alejandro: 6), Q-53 (Felipe: 3), Q-58 (Felipe: 1), Q-59 (Alejandro: 1, Felipe: 1). Sumarán al pico cuando se agenden. Felipe es quien más monedas sin programar acumula (5 🪙 entre Q-53/Q-58/Q-59) — vigilar su pico cuando se agenden, hoy con margen (7).
-- Q-54–Q-57 (pilotos del modelo de ventas) y Q-49–Q-52 (Exploración Salud) no tienen monedas asignadas todavía — no suman al total hasta tallarse.
+- Q-54–Q-57 (pilotos), Q-62–Q-66 (backlog nuevo de EPIC-1/EPIC-8) y Q-49–Q-52 (Exploración Salud) no tienen monedas asignadas todavía — no suman al total hasta tallarse.
+- **Q-38 se reasignó de Alejandro/Felipe (2+2) a Stefanie (4) por indicación del owner** — Alejandro y Felipe bajan 2🪙 cada uno, Stefanie sube 4🪙. Sus picos simultáneos (07/07–10/07 y 06–15/07 respectivamente) no incluían la ventana de Q-38 (13/07→05/08), así que no cambian; el pico de Stefanie tampoco cambia porque Q-38 cae después de su ventana al límite (08–17/07).
 - Nota: Stefanie queda **al límite (8)** entre el 08/07 y el 17/07 — no agendar nada nuevo en esa ventana.
 - 🏖️ **Vacaciones:** ninguna registrada. Se registran en el roster de la config; durante
   vacaciones la capacidad es **0** y el trabajo agendado en ese periodo dispara 🚨 código rojo.
@@ -342,6 +385,8 @@ Nueva épica: apareció en el sheet de compromisos a Milagros sin ningún preced
 | — | Capacidad Stefanie | Al límite (8) entre 08–17/07; cualquier agregado la pasa de la regla | Baja | Medio | 🟢 Verde | No agendar trabajo nuevo en esa ventana (Q-28 incluido) |
 | Q-28 | Sin programar | Monedas asignadas sin fechas → riesgo de pico al agendar | Baja | Medio | 🟢 Verde | Agendar fuera de la ventana 08–17/07 de Stefanie |
 | Q-53, Q-58, Q-59 | Sin programar | Monedas asignadas sin fechas (frentes nuevos: sin CUA, Banbif) | Baja | Medio | 🟢 Verde | Agendar en cuanto haya luz verde de los frentes nuevos |
+| Q-32 | Modelo de venta Convenios | Ya inició (20/07) pese a que el owner pidió secuenciarlo después del cierre de Back to Basics (EPIC-1), que sigue abierto | Media | Medio | ⚠️ Amarillo | Confirmar con el owner si se pausa Q-32–Q-34 o si se acepta el solape |
+| Q-31 | Seguimiento Bienestar 360 | Despriorizado en comité; en pausa hasta definir estrategia con Estar Bien | Baja | Bajo | 🟢 Verde | No tocar hasta que exista definición con Estar Bien |
 
 ## 📈 Impacto
 | Clave | Quest | Impacto esperado |
