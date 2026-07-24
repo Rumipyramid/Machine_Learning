@@ -286,3 +286,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   sin disciplina humana/actuarial de por medio terminó en colapso o en un "reset"
   costoso — mismo patrón de este node aplicado a la capa de suscripción/operación, no
   solo distribución.
+- [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual]] — caso
+  real de RIMAC donde la Formación del asesor y el Espacio Digital del Asesor (Agente AI
+  copiloto) son justamente la inversión en el intermediario humano que este node recomienda,
+  en vez de apostar por reemplazarlo en Vida Individual, un producto complejo.

@@ -294,3 +294,8 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   producto no solo de mensaje) al problema específico de explicar un producto de seguros.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — el activo concreto
   que posiciona al proyecto en la frontera de "AI Behavioral Science" que este node identifica.
+- [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual]] — aplica
+  la asimetría i-frame/s-frame de este node a un caso real: el Playbook del Asesor de RIMAC es
+  casi enteramente i-frame (guiones, manejo de objeciones), mientras los nodos rojos del mapa
+  sistémico del proyecto (perfilamiento, monitoreo de calidad) — el rediseño s-frame pendiente —
+  siguen sin resolverse.

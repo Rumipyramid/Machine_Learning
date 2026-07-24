@@ -66,6 +66,7 @@ por afirmación cuando corresponda.
 | `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-22 | v1.1 (migrado desde `main` a Many Brains, ver nota de reconciliación abajo) |
 | `_nodes/modelo-personas-sinteticas.md` | Cómo funciona y se calibra el modelo `lapuerta` (20 variables, v1.3) — excepción declarada de alcance, no mueve el código | 2026-07-20 | v1.0 |
 | `_nodes/futuro-asesores-seguros-venta-digital.md` | ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario (empírico + social + negocio) | 2026-07-22 | v1.0 |
+| `_nodes/proyecto-back-to-basics-ffvv-vida.md` | Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido — mapa sistémico AS IS, estrategias de contacto (DS 016), playbook del asesor, cruce con evidencia/tesis del Lobo | 2026-07-23 | v1.0 |
 
 ---
 
