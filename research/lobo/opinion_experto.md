@@ -409,6 +409,51 @@ eliminación unilateral — la decisión de retirar o renombrar esa técnica que
   contexto de objeciones de venta 1-a-1 (cita real, transferencia de dominio no verificada).
 - **Actualizado:** 2026-07-24
 
+### 19. Perfilar por motivación, no por demografía, ya no es solo elegancia de diseño — y puede ser el punto ciego estructural de `lapuerta`
+Un paper específico de servicios financieros (no marketing genérico) encuentra que la
+segmentación demográfica estándar (edad, ingreso, ocupación) explica poco de la conducta
+real de compra, preferencia de marca o adopción de canal/tecnología en este sector. La
+Teoría de la Autodeterminación —una de las teorías de motivación humana más replicadas en
+psicología— da el marco de por qué: la conducta sostenida conecta con necesidades
+psicológicas (autonomía, competencia, relación) y metas personales, no con una categoría
+externa asignada. Esto no es una curiosidad académica: es evidencia convergente A+A de que
+"perfilar por el por qué del cliente" (protección / crecimiento / meta / rentabilizar) le
+gana estructuralmente a perfilar por edad/NSE/ocupación en este sector específico.
+**Instinto conectado, no dato nuevo:** `lapuerta` construye sus personas sintéticas
+mayormente sobre variables demográficas (NSE, generación, región, educación financiera,
+exposición sísmica) — ninguna variable del esquema v1.3 captura directamente la
+*motivación* del cliente frente al seguro. Si el hallazgo de F-229 se extiende más allá de
+vida individual (no verificado, es el escenario donde se encontró la evidencia), el modelo
+puede estar optimizando la variable de segmentación equivocada para lo que de verdad
+predice conducta. No es una recomendación de cambio inmediato al esquema — es una hipótesis
+de brecha para poner sobre la mesa en la próxima revisión de variables (`/cerrajero`).
+- **Evidencia:** F-229 (🟢A, Piercy/Campbell/Heinrich 2011, específico de servicios
+  financieros), F-230 (🟢A, Deci & Ryan 2000, marco teórico canónico)
+- **Confianza:** Alta en el patrón general (empírico sectorial + teoría robusta convergen);
+  Media en que aplique tal cual fuera de vida individual — es extrapolación razonada, no
+  verificada, y la conexión con el esquema de `lapuerta` es instinto explícito.
+- **Actualizado:** 2026-07-25
+
+### 20. En vida individual, el freno más caro no es la incomprensión del producto — es un precio percibido 7-12x inflado, y solo saliencia+calculadora (no lenguaje simple solo) lo revierte
+Una encuesta de gremio (LIMRA/Life Happens) encuentra que 72% sobreestima el costo de una
+póliza term life básica, solo 25% acierta el precio real, y los adultos jóvenes y sanos
+—el segmento de menor riesgo real, el que menos debería sobreestimar— la sobreestiman de 7
+a 12 veces. Esto es un problema distinto al de tesis 1/2 (comprensión de términos): no es
+que el cliente no entienda "coaseguro", es que tiene un número equivocado en la cabeza
+antes de que empiece la conversación de venta. Dos RCT declarados (SOA/RGA 2024) muestran
+qué sí mueve esa aguja: FAQs + resúmenes + íconos de saliencia mejoraron comprensión 21%;
+combinar lenguaje simple con una **calculadora de precio personalizada** llegó a 28% — y
+el lenguaje simplificado por sí solo, sin más, no bastó. La jugada no es "explicar mejor
+el producto" (palanca ya débil según tesis 1), es corregir un número concreto y mal
+calculado, con una herramienta, no con un texto.
+- **Evidencia:** F-231 (🔵B, dos RCT declarados N=2,001/2,005, revisión por pares no
+  verificada por ser informe de instituto, no revista arbitrada), F-232 (🟡C, encuesta de
+  gremio, N no verificado en esta búsqueda por bloqueo de acceso a la fuente primaria)
+- **Confianza:** Media-Alta — el mecanismo (saliencia+calculadora > lenguaje solo) tiene
+  respaldo B; la magnitud exacta de sobreestimación (7-12x) es C, cifra de gremio sin
+  verificación independiente en esta pasada.
+- **Actualizado:** 2026-07-25
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -485,6 +530,22 @@ eliminación unilateral — la decisión de retirar o renombrar esa técnica que
   mismo cambio de diseño reduce a la vez el riesgo regulatorio-reputacional y
   la fuga de conversión por desconfianza — no son dos arreglos distintos, es
   uno solo con doble retorno.
+- **Calculadora de precio real en el punto de entrada de vida individual, no
+  al final del funnel.** Tesis 20: ataca directamente la sobreestimación de
+  7-12x que bloquea la conversación antes de que empiece — acompañada de FAQ
+  con íconos/resúmenes de saliencia, no de lenguaje simplificado solo (F-231
+  ya muestra que eso no basta).
+- **Abrir el copy de vida individual con la pregunta que el cliente ya hace en
+  abierto ("¿vale la pena?"), no con definiciones técnicas.** Señal social
+  débil (🔴E, tesis 20) pero coherente con el patrón cuantificado del precio
+  percibido — empezar el glosario/FAQ por ahí, dejar el vocabulario técnico
+  (prima, endoso, coaseguro) como segunda capa, igual que ya se decidió para
+  el glosario de salud.
+- **Perfilar campañas y bundling de vida individual por motivación (proteger /
+  crecer / meta / rentabilizar), no por edad/NSE/ocupación.** Tesis 19: ya no
+  es solo intuición de producto — tiene respaldo empírico específico del
+  sector financiero (F-229) y marco psicológico robusto (F-230) de que la
+  motivación predice mejor la conducta que la categoría demográfica asignada.
 
 ## ⚠️ Riesgos
 
@@ -599,6 +660,20 @@ eliminación unilateral — la decisión de retirar o renombrar esa técnica que
   citas a las otras 7 técnicas sin corregir esta, el efecto neto es darle a una idea sin evidencia
   el mismo peso visual que a las que sí la tienen, un riesgo de credibilidad silencioso si algún
   día alguien en Legal/Compliance o el propio VP pide la fuente de cada "sesgo".
+- **Optimizar el glosario/calculadora de vida individual solo para bajar el precio percibido, sin
+  explicar bien la declaración de salud.** Tesis 20: la distinción legal entre dolo/culpa grave
+  (puede anular la póliza o negar el siniestro) y omisión involuntaria de algo leve (típicamente
+  solo ajusta la prima) es real y consecuente — omitirla del material orientado a conversión deja
+  al cliente firmando sin entender un riesgo concreto de negación de reclamo, exactamente el
+  momento de mayor fricción reputacional (siniestro), no un tecnicismo legal menor. Nota de
+  proceso: la aplicación exacta al marco normativo peruano no está verificada — usar como
+  lenguaje orientativo, no como texto legal validado por Legal/Cumplimiento.
+- **Asumir que el esquema de segmentación de `lapuerta` (mayormente demográfico: NSE, generación,
+  región) captura lo que de verdad predice conducta de seguros.** Tesis 19: la evidencia
+  específica de servicios financieros dice que la demografía explica poco frente a la motivación
+  subyacente. Instinto, no diagnóstico confirmado sobre el propio modelo — pero ignorarlo sin
+  evaluarlo en la próxima revisión de variables sería descartar la señal más directa que ha
+  entrado al ledger sobre el propio diseño de segmentación de `lapuerta`.
 
 ## 📔 Bitácora
 
@@ -784,3 +859,21 @@ eliminación unilateral — la decisión de retirar o renombrar esa técnica que
   hoy ya conectó lo disponible (tesis 18 sobre el Playbook). Próximo salto de tesis/confianza
   queda condicionado a que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o `cronista` registren
   fuentes nuevas en el ledger.
+- **2026-07-25** — Corrida diaria de refinamiento. El ledger creció de F-228 a F-235 desde la
+  última corrida (2026-07-24): una investigación `/trinidad` sobre el glosario de seguro de vida
+  en lenguaje sencillo y el perfilamiento por motivación (nodes nuevos
+  `_nodes/glosario-seguro-vida-peru.md` y `_nodes/matriz-productos-vida-rimac.md`, ampliación de
+  `_nodes/proyecto-back-to-basics-ffvv-vida.md`) — **cambio sustancial**. Sumé tesis 19
+  (perfilar por motivación, no por demografía, tiene ahora respaldo A+A específico de servicios
+  financieros — y puede exponer un punto ciego estructural en el propio esquema de `lapuerta`,
+  construido mayormente sobre variables demográficas) y tesis 20 (en vida individual, el freno
+  más caro no es la incomprensión del producto sino un precio percibido 7-12x inflado; solo
+  saliencia+calculadora lo revierte, no lenguaje simple solo). Añadí 3 oportunidades (calculadora
+  de precio en el punto de entrada, abrir el copy con "¿vale la pena?" en vez de tecnicismos,
+  perfilar campañas por motivación) y 2 riesgos nuevos (glosario/calculadora que omite la
+  distinción legal dolo/culpa grave vs. omisión en declaración de salud; el propio esquema de
+  `lapuerta` sin evaluar frente a la señal de que la demografía predice poco en este sector).
+  Ninguna tesis previa (1-18) requirió ajuste de confianza — el ledger nuevo no las tocó
+  directamente, aunque tesis 19 se conecta con instinto explícito al diseño de `lapuerta` sin
+  tocar su esquema todavía. Mantuve la bitácora sin podar — con 14 días de historial
+  (2026-07-12 a hoy) sigue dentro de la ventana de ~30 días indicada.
