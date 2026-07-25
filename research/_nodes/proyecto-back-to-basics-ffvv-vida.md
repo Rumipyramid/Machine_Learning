@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-24 · Versión: v1.2
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-25 · Versión: v1.3
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -16,13 +16,23 @@
 > un simulador de práctica previo a un uso en producción ("AIDA Skill Trainer"), es ya la única
 > herramienta que el asesor usa en conversación real con el cliente, ver nota en §2 — cambio
 > estructural porque corrige cómo se describe una pieza del modelo mismo, no solo agrega
-> información nueva.)
+> información nueva.
+> v1.3 (2026-07-25, confirmado por Alejo) cierra la ambigüedad de fondo del workstream de
+> contacto: **el lineamiento ya no es "5 estrategias en escalera con estados mixtos" — es
+> categórico: solo aparecen en el playbook estrategias que parten de consentimiento ya existente.**
+> Estrategias 2 y 3 pasan de "pendientes" a cerradas por diseño (§3); §6 se actualiza con la
+> resolución real aplicada directamente al documento de la sesión, corrigiendo un bug que ya se
+> había detectado y creído resuelto antes (ver Resolución definitiva); el "80% de volumen sin
+> CUA" deja de tratarse como problema a resolver con una estrategia nueva y pasa a tratarse como
+> compensado por calidad de conversación, no por cantidad de contactos — cambio estructural
+> porque redefine qué cuenta como estrategia válida, no solo actualiza un estado.)
 > Fuentes: documento interno "Conocimiento construido — Proyecto FFVV Vida Individual (RIMAC)"
 > (consolidado al 2026-07-21, v1.0 de este node) + su continuación (consolidado al 2026-07-23) +
 > imagen del mapa AS IS 2026 compartida en la sesión (no persistida como archivo en el repo — ver
 > Limitaciones) + documento interno "Plan Piloto · Modelo de Experiencia de Venta Vida" (CoE
-> Diseño Estratégico, v1, julio 2026, subido a la sesión 2026-07-24 — ver §8). **Actualización
-> 2026-07-24 (sin bump de versión, incremental):** análisis con el Lobo
+> Diseño Estratégico, v1, julio 2026, subido a la sesión 2026-07-24 — ver §8) + lineamiento
+> definitivo de CUA comunicado directamente por el usuario (Alejo) el 2026-07-25 — ver §3 y §6.
+> **Actualización 2026-07-24 (sin bump de versión, incremental):** análisis con el Lobo
 > (`research/lobo/opinion_experto.md`) para cerrar el hueco de citas del Bloque 4 (§5, Hallazgo 2)
 > y fortalecer Dx3 (§1) — suma F-220 a F-228 al ledger de `cronista`, únicas fuentes externas
 > nuevas que introduce este node hasta ahora.
@@ -221,24 +231,50 @@ una escalera de 5 estrategias de contacto conformes con el Art. 26 de DS 016-202
 Documento de referencia interno: `documento_maestro_estrategias_FFVV_v2.md` (no vive en este
 repo).
 
-**Estado de validación (al 2026-07-20):**
-- Estrategia 1 (sondeo encubierto): cerrada/descartada.
-- Estrategia 2 (gancho suave) y Estrategia 3 (solo-consentimiento): pendientes, sin validación de
-  CUA.
-- **Estrategia 4 (autorregistro mediado por referente): única validada explícitamente por
-  CUA — la más sólida de las cinco.** Principio no negociable: "RIMAC nunca escribe a un número
-  que no se haya autorregistrado."
-- Estrategia 5 (sorteo): válida como pauta/canal no dirigido; cerrada en su versión dirigida por
-  el asesor.
+> ### ⚠️ Lineamiento definitivo (2026-07-25, confirmado por Alejo — sustituye el estado "en
+> escalera" de abajo)
+>
+> **Hoy solo pueden aparecer en el playbook estrategias que parten de consentimiento comercial
+> ya existente. No va a haber ninguna estrategia para contactar a alguien que no tiene ese
+> consentimiento — ni como excepción, ni como variante "diluida" de contacto en frío.** Esto no
+> es una postura diplomática para la mesa con Legal/Cumplimiento (como se documentaba antes en
+> esta sección) — es la regla de diseño que rige de aquí en adelante, y cierra por decisión
+> propia (no solo por falta de validación de Compliance) a cualquier estrategia que dependiera de
+> escribir primero para conseguir el consentimiento.
+>
+> **Lo que esto implica en la práctica:** el playbook del asesor solo puede documentar dos
+> caminos — contactar directo a quien ya tiene CUA vigente, o esperar a que alguien sin CUA
+> consienta por su cuenta (vía referente) antes de que el asesor le escriba. Ver el detalle
+> aplicado en §6 (Resolución definitiva).
+>
+> **Marcado explícitamente como "vigente — no definitivo"** en el playbook mismo: es el
+> lineamiento que rige hoy, sujeto a ajuste si avanza la validación formal con Legal/Cumplimiento
+> — pero mientras eso no cambie, aplica sin excepciones.
 
-La presentación usada en la mesa con Legal/Cumplimiento muestra a propósito las Estrategias 2-5
-como "pendientes" (postura diplomática), aunque el estado real tras conversación con CUA es que
-la Estrategia 4 ya tiene luz verde de Consentimiento.
+**Estado de validación (histórico al 2026-07-20, mantenido por trazabilidad — ver el lineamiento
+definitivo arriba, que reemplaza este estado):**
+- Estrategia 1 (sondeo encubierto): cerrada/descartada.
+- Estrategia 2 (gancho suave) y Estrategia 3 (solo-consentimiento): **cerradas (2026-07-25) —
+  no por falta de validación de Compliance, sino porque por definición ambas requieren que el
+  asesor escriba primero para obtener el consentimiento, lo cual el lineamiento definitivo ya no
+  permite.** Antes figuraban como "pendientes, sin validación de CUA".
+- **Estrategia 4 (autorregistro mediado por referente): única validada explícitamente por
+  CUA — y ahora, con el lineamiento definitivo, la única vía para prospectos sin CUA, punto.**
+  Principio no negociable: "RIMAC nunca escribe a un número que no se haya autorregistrado."
+- Estrategia 5 (sorteo): válida como pauta/canal no dirigido (la persona se autoselecciona y
+  consiente antes de cualquier contacto — compatible con el lineamiento definitivo); cerrada en
+  su versión dirigida por el asesor.
+- Estrategia 6 (segmentación por CUA vigente, documentada en la conversación de CUA pero no
+  detallada antes en este node): lógica correcta y compatible con el lineamiento — no es una vía
+  para contactar sin consentimiento, es una forma de saber quién ya lo dio antes de escribir —
+  pero bloqueada en la práctica por un problema circular: verificar CUA suele requerir el DNI,
+  dato que normalmente solo se obtiene después de haber contactado.
 
 **Stakeholders:** Alejandro (Behavioral Design/CoE Experiencia, autor), Patricia (FFVV), Melissa
 (Consentimiento/CUA), Dayana (Legal), Karen y María Alejandra (Compliance — validación final
-pendiente), Milagros (validó sorteo digital con Legal), Lorena (FFVV, a incluir en próxima sesión
-con Compliance).
+pendiente sobre lo que quede vivo de la escalera, ahora reducida a Estrategias 4, 5 no dirigida y
+6), Milagros (validó sorteo digital con Legal), Lorena (FFVV, a incluir en próxima sesión con
+Compliance).
 
 **Novedades abiertas:**
 - Incentivo a referentes (pago solo al referente, vía YAPE/Plin) — CUA abrió la posibilidad,
@@ -246,8 +282,14 @@ con Compliance).
 - FFVV propuso 4 cambios a reglas de Salesforce (bloquear contacto sin CUA, marcar contacto
   reciente, marcar negativa de contacto, marcar reclamos) — sin evaluación de factibilidad de
   Tecnología aún.
-- **Tensión sin resolver, la más grande del proyecto:** ~80% del volumen de venta de FFVV depende
-  de prospección en frío sin CUA ni referido; ninguna de las 5 estrategias lo cubre.
+- **Tensión de mayor magnitud del proyecto, reencuadrada (2026-07-25):** ~80% del volumen de
+  venta de FFVV dependía de prospección en frío sin CUA ni referido. Con el lineamiento
+  definitivo, esto **deja de ser un problema que se resuelve encontrando una sexta estrategia de
+  contacto** — no la va a haber. Pasa a ser un problema que se compensa distinto: con la calidad
+  de las conversaciones que sí se pueden tener (modelo de 4 pasos, manejo de objeciones,
+  postventa — todo lo que sí vive en el playbook), no con más volumen de contacto. Ver la
+  "Oportunidad: Compensar el impacto de CUA" en la presentación del proyecto, y la nota que se
+  agregó al propio playbook en §6.
 
 **Conexión con el mapa sistémico:** la Estrategia 4 y la falta de trazabilidad del canal FFVV son
 consistentes con los nodos críticos ya identificados en rojo en §2: "Sistemas para perfilamiento
@@ -286,7 +328,8 @@ usado en la visión To Be de la Mesa Back to Basics FFVV (§1).
 
 **Secciones marcadas "Pendiente" en el documento original:**
 - "Estrategia de contacto inicial — CUA" (Bloque 3) — dependía directamente del workstream de §3
-  (**resuelto**, ver §6).
+  (**resuelto de verdad el 2026-07-25**, ver §6 "Resolución definitiva" — la resolución anterior
+  del 2026-07-20 no estaba realmente aplicada, esta sí).
 - Banco de recursos de marketing para repostear (Bloque 3).
 - FAQ de coberturas específicas, exclusiones, qué pasa si el cliente deja de pagar (Bloque 4).
 - Gestión de referidos e indicadores de negocio (Bloque 5).
@@ -410,16 +453,54 @@ previo; intentar mantener una versión "diluida" del contacto en frío (como hac
 retirado) es el mismo patrón de riesgo que ese node señala en el caso del Do Not Call Registry
 (empresas que migraron la táctica en vez de cambiar el modelo de fondo).
 
+**Resolución definitiva (2026-07-25, aplicada directamente por Alejo al documento de la
+sesión).** La "resolución" de 2026-07-20 de arriba resultó, tras verificación directa contra
+`Playbook_del_asesor.md` el 2026-07-24, **no estar realmente aplicada** — el placeholder
+"Pendiente" seguía en el documento en uso, y el Plan Piloto (§8) corroboró el mismo vacío de
+forma independiente (ver Limitaciones). El 2026-07-25 se cerró de verdad, con el lineamiento
+definitivo de §3 aplicado directamente al documento de la sesión (no a un archivo `v3` aparte que
+después no se usó):
+
+- **"Estrategia de contacto inicial — CUA" (Bloque 3) ya no dice "Pendiente".** Contiene la regla
+  completa, marcada explícitamente como "vigente — no definitivo": Ruta 1 (CON CUA, 3 orígenes
+  cerrados) y Ruta 2 (SIN CUA → único camino es el autorregistro mediado por referente, contacto
+  solo después de que la persona consiente por su cuenta).
+- **El bug recurrente del Hallazgo 1 volvió a aparecer y se corrigió otra vez.** Al incorporar
+  contenido de una versión distinta del playbook (`Playbook_del_asesor__VF_2.md`, 2026-07-25) se
+  trajo, sin querer, la misma mecánica que el Hallazgo 1 ya había señalado el 2026-07-20: el
+  speech "cliente llega referido" hacía que el asesor escribiera directo a la persona referida con
+  información de segunda mano. Se corrigió en el momento, alineándolo con la Ruta 2 (el asesor
+  contacta solo después de que el referido ya se autorregistró y consintió). **Lección para este
+  proyecto:** este error no es un despiste puntual — es el patrón de riesgo más fácil de
+  reintroducir sin querer cada vez que se combina contenido de distintas versiones del playbook;
+  cualquier fusión futura de material debe revisar explícitamente los speechs de primer contacto
+  contra la Ruta 2 antes de aceptarlos.
+- **El "80% de volumen sin CUA" deja de tratarse como pendiente de resolver con una estrategia
+  nueva** (ver §3, reencuadre 2026-07-25) — el propio Bloque 3 del playbook ahora dice
+  explícitamente que el documento mismo (mejor conversación, no más contactos) es la forma en
+  que se compensa ese impacto.
+
+Esto **sustituye** la resolución de 2026-07-20 como estado verificado — no como un evento
+adicional. La brecha "lo que el proyecto dice que está resuelto" vs. "lo que el documento real
+dice" que motivó la Limitación de abajo queda cerrada para esta sección específica, aunque el
+documento aplicado (`Playbook_del_asesor.md`) sigue sin vivir en este repositorio.
+
 ---
 
 ## 7. Pendientes activos (al 2026-07-23)
 
-- Validación final de Compliance (Karen, María Alejandra) sobre Estrategias 2 y 3.
+- ~~Validación final de Compliance (Karen, María Alejandra) sobre Estrategias 2 y 3~~ — **ya no
+  aplica (2026-07-25)**: Estrategias 2 y 3 quedaron cerradas por decisión de diseño (lineamiento
+  definitivo, §3), no por falta de validación de Compliance. Lo que sí sigue pendiente de
+  Compliance es la validación de lo que quedó vivo: Estrategia 4, Estrategia 5 no dirigida y
+  Estrategia 6.
 - Confirmación de Legal sobre incentivo a referentes (pago vía YAPE/Plin).
 - Evaluación de factibilidad de Tecnología para los 4 cambios propuestos a reglas de Salesforce.
-- **Cómo cubrir el 80% del volumen de venta que hoy depende de prospección en frío sin CUA ni
-  referido — ninguna de las 5 estrategias lo resuelve.** El pendiente de mayor riesgo legal y de
-  negocio del proyecto.
+- **El 80% del volumen de venta que dependía de prospección en frío sin CUA ni referido sigue sin
+  cobertura de contacto — pero con el lineamiento definitivo (§3), esto ya no se trata como un
+  pendiente a resolver con una sexta estrategia.** Queda como pendiente de negocio real (cuánto
+  volumen se pierde, cómo se compensa con retención/referidos/conversión), no como pendiente de
+  diseño de estrategia de contacto.
 - ~~Bloque 4 del playbook: agregar respaldo evidencial a las 9 estrategias de manejo de
   objeciones (C.1-C.9)~~ — **resuelto (2026-07-24)**, ver Hallazgo 2 de §5: citas insertadas
   directamente en `Playbook_del_asesor.md`, con nota de corrección en C.7 ("regla del 10x") en
@@ -545,11 +626,14 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   `Playbook_del_asesor - VF.md` y su v3, el deck "Modelo de Experiencia de Venta Vida", "Plan
   Piloto · Modelo de Experiencia de Venta Vida" de §8) **no viven en este repositorio** — este
   node resume su contenido relevante, no los reemplaza como fuente primaria interna.
-- **La resolución descrita en §6 (Bloque 4 vs. CUA) no está verificada contra el documento fuente
-  actual** — una revisión directa de `Playbook_del_asesor.md` (2026-07-24) encontró los
-  placeholders "Pendiente" todavía en las secciones que §6 da por resueltas, y el Plan Piloto de
-  §8 corrobora el mismo vacío de forma independiente. Tratar §6 como la resolución *documentada
-  por el proyecto*, no como el estado *verificado* del documento en uso.
+- **La resolución descrita en §6 (Bloque 4 vs. CUA) no estaba verificada contra el documento
+  fuente actual — actualizado (2026-07-25): la "Resolución definitiva" de §6 sí se aplicó
+  directamente al documento de la sesión** (verificado porque se hizo en esta misma sesión, no
+  por revisión posterior). Sigue aplicando la limitación de fondo: `Playbook_del_asesor.md` **no
+  vive en este repositorio** — este node resume y confía en el estado del archivo de sesión, sin
+  poder versionarlo ni auditarlo como el resto de este repo. Si ese archivo se pierde o se edita
+  fuera de esta trazabilidad, este node puede volver a quedar desactualizado del mismo modo que
+  pasó entre el 2026-07-20 y el 2026-07-24.
 - **El mapa AS IS 2026 (§2) existe como diagrama visual** (compartido en la sesión el
   2026-07-24) pero no se pudo persistir el archivo de imagen en este repo — este node solo
   guarda su lectura textual (clusters, semáforo de nodos). Si se necesita el diagrama en sí para
