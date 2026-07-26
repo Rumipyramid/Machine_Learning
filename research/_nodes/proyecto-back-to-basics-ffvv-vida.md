@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-25 · Versión: v1.3
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-26 · Versión: v1.3
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -40,7 +40,13 @@
 > Darley & Latané 1968, F-226, cuyo encaje cuestionable ya advertía esta misma tabla) y aplica el
 > renombrado ya recomendado de C.7 ("Poner el precio en perspectiva (anclaje aplicado)", cita
 > ahora Tversky & Kahneman 1974, F-220, en vez de la "regla del 10x") — ambos a pedido del
-> usuario, aplicados directamente al Playbook de la sesión también.
+> usuario, aplicados directamente al Playbook de la sesión también. **Actualización 2026-07-26
+> (sin bump de versión, incremental):** el lineamiento de CUA de §3 pasa de "vigente — no
+> definitivo" a definitivo/resuelto; se agrega la precisión de que ninguna base de datos armada a
+> partir de referidos sin consentimiento es legal (riesgo penal, incluso un solo número); y se
+> documenta el mecanismo concreto de la Estrategia 4 — tarjeta del asesor con código QR al
+> formulario de consentimiento — que resuelve "Gestión de referidos" en el Playbook de la sesión
+> (Bloque 5, antes `(Pendiente)`).
 
 ---
 
@@ -252,9 +258,24 @@ repo).
 > consienta por su cuenta (vía referente) antes de que el asesor le escriba. Ver el detalle
 > aplicado en §6 (Resolución definitiva).
 >
-> **Marcado explícitamente como "vigente — no definitivo"** en el playbook mismo: es el
-> lineamiento que rige hoy, sujeto a ajuste si avanza la validación formal con Legal/Cumplimiento
-> — pero mientras eso no cambie, aplica sin excepciones.
+> **Actualización 2026-07-26 (confirmada por Alejo): el lineamiento pasa de "vigente — no
+> definitivo" a definitivo, resuelto.** No hay contacto sin CUA, punto — ya no se presenta como
+> un estado provisional sujeto a validación de Compliance.
+>
+> **Precisión legal agregada en esta misma actualización: ninguna base de datos armada a partir
+> de referidos es legal — conlleva riesgo penal.** "Base de datos" incluye el caso más simple y
+> más frecuente en la práctica: que un referente le pase al asesor el número de un familiar o
+> amigo sin que esa persona haya dado su consentimiento — un solo número ya cuenta, no hace falta
+> una lista. Esto cierra una ambigüedad que la Estrategia 4 dejaba abierta en la práctica (¿qué
+> hace el asesor si el cliente simplemente le dicta un número?): la respuesta es que ese número no
+> se recibe ni se guarda bajo ninguna circunstancia — ver el mecanismo concreto abajo.
+>
+> **Mecanismo concreto de la Estrategia 4, agregado en esta actualización: tarjeta del asesor con
+> código QR.** El "enlace único" de la Estrategia 4 se implementa como una tarjeta (física o
+> digital) con un código QR que apunta al formulario de toma de consentimiento — el cliente se la
+> comparte a quien quiera recomendar, esa persona escanea el QR y decide por su cuenta si deja sus
+> datos. El asesor no ve ni recibe ningún número hasta que eso ocurre. Aplicado directamente en el
+> Playbook de la sesión, sección "Gestión de referidos" (Bloque 5) — antes marcada `(Pendiente)`.
 
 **Estado de validación (histórico al 2026-07-20, mantenido por trazabilidad — ver el lineamiento
 definitivo arriba, que reemplaza este estado):**
