@@ -877,3 +877,12 @@ calculado, con una herramienta, no con un texto.
   directamente, aunque tesis 19 se conecta con instinto explícito al diseño de `lapuerta` sin
   tocar su esquema todavía. Mantuve la bitácora sin podar — con 14 días de historial
   (2026-07-12 a hoy) sigue dentro de la ventana de ~30 días indicada.
+- **2026-07-26** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  78584ad→b74f2a1) y leí `codice.md` completo: sigue tope en F-235, sin fuente nueva registrada
+  desde la corrida de ayer (2026-07-25) — **sin cambios sustanciales** en evidencia. Repasé las 20
+  tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente. No forcé ninguna
+  conexión nueva entre tesis solo por completar el paso — tesis 19 y 20 (las más recientes) ya
+  quedaron conectadas con el resto de la cartera en la corrida de ayer. Próximo salto de
+  tesis/confianza queda condicionado a que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o
+  `cronista` registren fuentes nuevas en el ledger. Bitácora con 15 días de historial
+  (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
