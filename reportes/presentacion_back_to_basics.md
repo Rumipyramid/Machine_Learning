@@ -2,9 +2,30 @@
 
 *Behavioral Design · RIMAC · Q3 2026*
 
+*Documento base para construir la presentación a Milagros. Cada sección numerada está pensada
+para volverse 1–2 slides; los bloques de cifras están aislados a propósito para que se puedan
+convertir directo en gráficos o callouts.*
+
 ---
 
-## Origen: cómo nació el pedido
+## Resumen ejecutivo
+
+Back to Basics es el frente que unifica las soluciones de comportamiento para la Fuerza de Venta
+de Vida Individual (FFVV). Nació de un pedido puntual (speeches), pero la exploración obligatoria
+del sistema reveló un problema más grande: el propio equipo trabajaba sin articulación. Hoy es
+**prioridad #1 del comité**.
+
+| | |
+|---|---|
+| **Qué ya está construido (V1)** | Estrategia de contacto, playbook de venta, materiales, Universidad Vida y AIDA — validados con evidencia propia y con Legal/Cumplimiento/CUA |
+| **Evidencia que lo respalda** | Encuesta a 19 asesores + taller piloto con NPS 96.67 |
+| **Qué falta para cerrar la V1** | Cuatro pilotos de calibración del modelo antes del despliegue completo |
+| **Qué viene después** | Entrenamiento continuo, más canales de Vida, el ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
+| **Por qué ahora** | Prioridad #1 del comité; más del 50% de la venta actual depende de resolver el contacto sin consentimiento |
+
+---
+
+## 1. Origen del proyecto
 
 En un momento en que RIMAC despriorizó varios proyectos estratégicos, las áreas de negocio
 siguieron buscando al equipo de Behavioral Design para resolver problemas puntuales — la
@@ -12,38 +33,52 @@ necesidad del negocio no se detuvo aunque la prioridad formal sí. Así llegó u
 crear speeches para distintos momentos del journey del asesor.
 
 La metodología del equipo es recibir todo pedido y, antes de diseñar nada, hacer
-**obligatoriamente una exploración inicial del sistema** en el que está inscrito el problema — no
-se diseña una pieza suelta sin entender primero el ecosistema completo que la rodea (ver el mapa
-del ecosistema de Venta Vida más abajo, resultado de esa exploración).
-
-Esa exploración reveló varios **dolores sistémicos**. Uno de los más importantes: **el propio
-equipo de Behavioral Design venía produciendo diseños y soluciones no articuladas entre sí** —
-respuestas puntuales a pedidos puntuales (un speech aquí, una plantilla allá), sin atacar los
-problemas estructurales que los originaban ni acumular ningún aprendizaje de un pedido al
-siguiente.
+**obligatoriamente una exploración inicial del sistema** en el que está inscrito el problema (ver
+§2). Esa exploración reveló varios **dolores sistémicos**. Uno de los más importantes: **el
+propio equipo de Behavioral Design venía produciendo diseños y soluciones no articuladas entre
+sí** — respuestas puntuales a pedidos puntuales (un speech aquí, una plantilla allá), sin atacar
+los problemas estructurales que los originaban ni acumular aprendizaje de un pedido al siguiente.
 
 De ese hallazgo surgió la decisión de **unificar los frentes de Venta Vida** en vez de seguir
 respondiendo pedido por pedido, y **Back to Basics** nació como el frente que concentra las
-soluciones relacionadas a la Fuerza de Venta (FFVV).
+soluciones relacionadas a la FFVV.
+
+## 2. Metodología: explorar el sistema antes de diseñar
+
+Todo pedido que llega al equipo recibe, obligatoriamente, una exploración del sistema en el que
+está inscrito el problema — antes de diseñar ninguna solución. No se diseña una pieza suelta sin
+entender primero el ecosistema completo que la rodea: qué otras palancas existen, cómo se
+conectan, y qué resultados ya está produciendo ese sistema.
+
+El resultado típico de esa exploración es un mapa del ecosistema — ver §4. Esta regla es la razón
+por la que Back to Basics existe como frente unificado en vez de como una colección de piezas
+sueltas, y es la misma razón por la que este proyecto trae consigo evidencia primaria propia
+(§6), no solo intuición del equipo.
 
 ---
 
-## Contexto
+## 3. Contexto y problema
 
-**El problema de negocio.** La Fuerza de Venta de Vida Individual necesita fortalecer tres cosas
-a la vez: cómo agenda citas, cómo forma a sus asesores (especialmente a los nuevos) y cómo genera
-leads de forma sostenible. Hoy el asesor navega con herramientas dispersas, sin una estrategia de
-contacto unificada y sin un modelo de venta consultiva estandarizado — cada quien vende "a su
-manera", con curvas de aprendizaje largas para los asesores junior.
+**El problema de negocio.** La FFVV de Vida Individual necesita fortalecer tres cosas a la vez:
+cómo agenda citas, cómo forma a sus asesores (especialmente a los nuevos) y cómo genera leads de
+forma sostenible. Hoy el asesor navega con herramientas dispersas, sin una estrategia de contacto
+unificada y sin un modelo de venta consultiva estandarizado — cada quien vende "a su manera", con
+curvas de aprendizaje largas para los asesores junior.
 
 **El riesgo legal que lo hace urgente.** Más de la mitad de la venta de Vida Individual nace de
 contacto que hoy no tiene opt-in previo. La Ley 32323 (vigente 2025, "ley antispam") prohíbe la
 comunicación comercial sin consentimiento previo, expreso e inequívoco, y la fiscalización ya es
-activa en el sistema financiero: sanciones de hasta 450 UIT (~S/2.4M), con casos ya aplicados
-(BBVA por una sola llamada, Scotiabank por más de S/2.4M). El componente CUA (gestión del
-consentimiento) se integró dentro de Back to Basics como parte del mismo problema, no como
-iniciativa aparte: no se puede rediseñar la estrategia de contacto sin resolver primero cómo se
-contacta de forma legal.
+activa en el sistema financiero:
+
+| Caso | Sanción |
+|---|---|
+| Tope legal | Hasta 450 UIT (~S/2.4M) |
+| BBVA | Sancionado por una sola llamada |
+| Scotiabank | Sancionado por más de S/2.4M |
+
+El componente CUA (gestión del consentimiento) se integró dentro de Back to Basics como parte del
+mismo problema, no como iniciativa aparte: no se puede rediseñar la estrategia de contacto sin
+resolver primero cómo se contacta de forma legal.
 
 **El problema conductual detrás.** Dos mecanismos explican por qué el asesor no rinde lo que
 podría: (1) sobrecarga cognitiva — demasiadas herramientas y materiales sin estructura, lo que
@@ -51,23 +86,29 @@ degrada la toma de decisión incluso de un vendedor experimentado; (2) ausencia 
 formación con práctica espaciada y feedback — el onboarding actual no sostiene el aprendizaje en
 el tiempo, así que el ramp-up de un asesor junior es lento y costoso.
 
-**Por qué importa a nivel de negocio.** Perú tiene una penetración de seguros de ~2.08% del PBI
-(vs. 4.6% en Chile), una tenencia de solo ~4 de cada 10 personas, y ~48% de la población desconfía
-del seguro — la causa #1 declarada es la falta de información. El asesor es, en la práctica, el
-punto de contacto humano que puede revertir esa desconfianza si tiene la estrategia y las
-herramientas correctas para hacerlo.
+**Por qué importa a nivel de negocio.**
+
+| Indicador | Perú | Referencia |
+|---|---|---|
+| Penetración de seguros (% PBI) | ~2.08% | Chile: 4.6% |
+| Tenencia de seguro | ~4 de cada 10 personas | — |
+| Desconfianza del seguro | ~48% | Causa #1: falta de información |
+
+El asesor es, en la práctica, el punto de contacto humano que puede revertir esa desconfianza si
+tiene la estrategia y las herramientas correctas para hacerlo.
 
 **Prioridad.** El comité de CoE X ya elevó Back to Basics a **prioridad #1** del trimestre.
 Equipo: Melissa y Alejandro, junto con César (Lead de Service Design, de otro equipo).
 
 ---
 
-## Lámina: mapa del ecosistema de Venta Vida
+## 4. Lámina: mapa del ecosistema de Venta Vida
 
-Resultado de la exploración inicial obligatoria del sistema. No es un mapa exhaustivo de todas las
-causas de venta — es el mapa de **palancas que el equipo puede accionar** y cómo se conectan entre
-sí, organizado en 9 frentes: Producto, Palancas de venta, Formación, Selección, Incentivos,
-Personalidad del Asesor, Seguimiento, Espacio Digital del asesor y Espacio Físico del asesor.
+Resultado de la exploración inicial obligatoria del sistema (§2). No es un mapa exhaustivo de
+todas las causas de venta — es el mapa de **palancas que el equipo puede accionar** y cómo se
+conectan entre sí, organizado en 9 frentes: Producto, Palancas de venta, Formación, Selección,
+Incentivos, Personalidad del Asesor, Seguimiento, Espacio Digital del asesor y Espacio Físico del
+asesor.
 
 Dos nodos concentran la mayoría de las relaciones — son los resultados que todo lo demás explica:
 **KPIs de Performance de Venta** (con entradas de Producto, Formación y Personalidad del Asesor) y
@@ -81,12 +122,12 @@ guías, agente AI copiloto).
 
 ---
 
-## Entregables V1
+## 5. Entregables V1
 
 La primera tanda del proyecto cubre **toda la creación de contenido y herramientas** del modelo de
 venta. Organizados por lo que resuelven, no por el orden en que se hicieron:
 
-### Evidencia que sostiene el diseño
+### 5.1 Evidencia que sostiene el diseño
 - **Desk research y bench de estrategias de contacto** en frío vs. caliente: qué gatillos abren
   una conversación (reciprocidad, curiosidad, personalización).
 - **Shadowing con asesores, entrevistas y cliente incógnito**: observación directa de la conducta
@@ -96,7 +137,7 @@ venta. Organizados por lo que resuelven, no por el orden en que se hicieron:
   antes de comprometerse con el diseño final.
 - **Validación con stakeholders** en cada hito, para que el diseño no avance sin alineamiento.
 
-### Estrategia de contacto (el corazón legal y conductual del proyecto)
+### 5.2 Estrategia de contacto (el corazón legal y conductual del proyecto)
 - **Informe de estrategia de primer contacto** validado en conjunto con Legal, Cumplimiento y
   CUA: qué canal, qué momento y qué mensaje maximizan la respuesta sin fricción normativa —
   cubriendo tanto el escenario con CUA como el escenario sin CUA.
@@ -104,7 +145,7 @@ venta. Organizados por lo que resuelven, no por el orden en que se hicieron:
   respuesta, para el flujo con consentimiento (la versión para el flujo sin consentimiento está en
   construcción).
 
-### Playbook y materiales de venta
+### 5.3 Playbook y materiales de venta
 - **Modelo de venta consultiva**: arquitectura de la conversación basada en preguntas de
   descubrimiento que anclan la oferta en las motivaciones del cliente, no en el producto.
 - **Playbook de storytelling de asesoría**: encuadre narrativo — historias que activan
@@ -114,7 +155,7 @@ venta. Organizados por lo que resuelven, no por el orden en que se hicieron:
 - **Materiales actualizados con statement de vida + motivaciones**: pitch segmentado por perfil
   motivacional del cliente, con el statement de vida como compromiso público del asesor.
 
-### Formación del asesor
+### 5.4 Formación del asesor
 - **Universidad Vida — Onboarding**: formación de hábitos tempranos con práctica espaciada y
   feedback inmediato desde el día 1.
 - **Universidad Vida — Modelo de competencias**: progresión por niveles con evaluación y
@@ -122,13 +163,13 @@ venta. Organizados por lo que resuelven, no por el orden en que se hicieron:
 - **AIDA Skill Trainer** (co-diseño): simulador de práctica deliberada — role-play con IA y
   feedback inmediato que acelera la curva de aprendizaje sin costo de clientes reales.
 
-### Validación antes de escalar
+### 5.5 Validación antes de escalar
 Cuatro hitos de piloto en curso para calibrar el modelo con datos reales de campo antes del
 despliegue completo: una calibración inicial, una prueba en campo, una segunda calibración con
 esa evidencia, y una validación técnica de que el copiloto de IA reproduce fielmente el modelo
 calibrado.
 
-### Despliegue
+### 5.6 Despliegue
 Estrategia de adopción diseñada para dos frentes — la fuerza de venta actual (defaults,
 recordatorios, campeones internos) y Universidad Vida (adopción por cohortes con hitos visibles y
 reconocimiento) — para que las nuevas prácticas se sostengan más allá del lanzamiento.
@@ -139,26 +180,80 @@ proyectado de S/1.8M vía AIDA.
 
 ---
 
-## Siguientes pasos
+## 6. Evidencia que respalda el proyecto
 
-### 1. Evolución del entrenamiento
+Dos piezas de evidencia primaria propia, recolectadas durante la V1, que validan hacia dónde
+apunta el backlog de siguientes pasos (§7).
+
+### 6.1 Encuesta a asesores sobre herramientas (n=19)
+
+| Indicador | Resultado |
+|---|---|
+| Ayuda general de las herramientas RIMAC (0–10) | **8.05 / 10** promedio |
+| Tema de capacitación más pedido | **Manejo de objeciones** — 42% (8/19) |
+| Momento de la venta con más necesidad de apoyo | **Cierre** — ~40% de las respuestas abiertas |
+| Herramientas de uso casi universal | Salesforce (16/19 "siempre"), WhatsApp (14/19 "siempre") |
+| Herramientas de adopción muy baja | CartaPlan (7/19 "nunca"), Ticker (9/19 "nunca") |
+
+**El hallazgo más accionable:** manejo de objeciones y "cierre" son el mismo dolor visto desde dos
+preguntas distintas — el asesor no pide más información de producto, pide ayuda para manejar la
+conversación en el momento en que el cliente objeta, justo antes de cerrar.
+
+**AIDA tiene un problema de calidad reportado explícitamente:** varios asesores señalan que "da
+respuestas equivocadas", "no brinda información correcta", "no contesta bien casi nunca" — el uso
+es alto pero la confianza en la herramienta no acompaña, evidencia concreta que respalda evolucionar
+AIDA de piloto a herramienta funcional.
+
+### 6.2 Taller de Manejo de Objeciones — resultados del piloto
+
+Taller para fortalecer las capacidades de gestión de objeciones en la interacción con clientes,
+reportado por CoE Experience Design:
+
+| Indicador | Resultado |
+|---|---|
+| Satisfacción con el contenido | **99.33%** |
+| Desempeño del speaker | **98.67%** |
+| NPS (recomendación) | **96.67** |
+| Asistencia | 83.33% (30 de 36 invitados) |
+
+**Qué generó el valor:** aprendizaje basado en casuística real (principal driver), uso de un
+copiloto de IA para potenciar la calidad y creatividad de las respuestas, y una metodología
+práctica con interacción y feedback directo.
+
+**Oportunidades de mejora identificadas:** ampliar la práctica con más diversidad de casos (role
+play, videos), ajustar la consistencia del copiloto de IA — el mismo defecto que reporta la
+encuesta de asesores sobre AIDA, dos fuentes independientes apuntando al mismo problema — y
+optimizar la logística (duración, horarios, espacio de práctica).
+
+**Lectura conjunta de ambas piezas de evidencia:** el tema (manejo de objeciones), el momento
+(cierre) y el mecanismo (simulación con IA + feedback) coinciden en la encuesta, en el taller y en
+el diseño ya en marcha del entrenamiento con IA — tres señales independientes apuntando en la
+misma dirección, lo que hace de "evolucionar el entrenamiento con IA en manejo de objeciones" la
+apuesta mejor respaldada de todo el backlog de siguientes pasos.
+
+---
+
+## 7. Siguientes pasos
+
+### 7.1 Evolución del entrenamiento
 
 Pasar de un onboarding puntual a un **programa de crecimiento continuo**: modelo por competencias
 + calendarización con práctica espaciada + programa de crecimiento del asesor más allá del primer
 mes. La práctica espaciada supera consistentemente a la práctica masiva en retención de
 aprendizaje — este paso extiende esa misma lógica del onboarding al desarrollo de mediano plazo.
 
-En paralelo, evolucionar **AIDA de piloto a herramienta funcional** de uso diario para el asesor
-(no solo para el comité) — para esto se necesita una reunión con el equipo de GenAI que defina
-alcances conjuntos.
+En paralelo, evolucionar el **entrenamiento con IA de piloto a herramienta funcional** de uso
+diario para el asesor (no solo para el taller) — para esto se necesita una reunión con el equipo
+de GenAI que defina alcances conjuntos, y resolver la consistencia de las respuestas que ya
+señalan tanto la encuesta como el taller (§6).
 
-### 2. Adaptación del proyecto a otros canales de venta Vida
+### 7.2 Adaptación del proyecto a otros canales de venta Vida
 
 Antes de saltar a otro ramo, escalar el playbook y la estrategia de contacto **dentro de Vida**:
 a los demás canales de venta (no solo el canal donde se construyó la V1). Es la fase de
 transversalización más segura porque el producto no cambia, solo el canal.
 
-### 3. Adaptación a otro ramo: AMI
+### 7.3 Adaptación a otro ramo: AMI
 
 Una vez transversalizado dentro de Vida, llevar la **metodología** de Back to Basics —no solo
 piezas de comunicación— al ramo AMI: estrategia de contacto, playbook de venta y arquitectura de
@@ -168,7 +263,7 @@ Esto es distinto del proyecto de guías resumidas de AMI Relanzamiento (que resu
 de producto, no modelo de venta) — aquí se trata de escalar el *modelo de venta* que Back to
 Basics ya validó en Vida, no las piezas de comunicación de un producto específico.
 
-### 4. Estrategias para mitigar el golpe de CUA
+### 7.4 Estrategias para mitigar el golpe de CUA
 
 Dos frentes concretos, pensados para trabajar en conjunto:
 
@@ -186,12 +281,23 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 
 ---
 
-## Resumen para la conversación con Milagros
+## 8. Equipo y prioridad
+
+- **Modalidad:** Perform — parte del 80% de iniciativas ya priorizadas por el comité (no es una
+  apuesta de Transform).
+- **Prioridad del comité:** #1 del trimestre.
+- **Equipo del frente:** Melissa y Alejandro, junto con César (Lead de Service Design, de otro
+  equipo).
+
+---
+
+## 9. Cierre para la conversación con Milagros
 
 | | |
 |---|---|
 | **Cómo nació** | De un pedido puntual (speeches), tras la exploración obligatoria del sistema se detectó que el propio equipo trabajaba sin articulación — de ahí la unificación en Back to Basics |
-| **Qué ya está construido** | Estrategia de contacto, playbook de venta, materiales, Universidad Vida y AIDA — validados con evidencia propia y con Legal/Cumplimiento/CUA |
+| **Qué ya está construido** | Estrategia de contacto, playbook de venta, materiales, Universidad Vida y entrenamiento con IA — validados con evidencia propia y con Legal/Cumplimiento/CUA |
+| **Con qué evidencia cuenta** | Encuesta a 19 asesores + taller piloto con NPS 96.67 — no es solo intuición del equipo |
 | **Qué falta para cerrar la V1** | Cuatro pilotos de calibración del modelo antes del despliegue completo |
 | **Qué viene después** | Entrenamiento continuo, más canales de Vida, el ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
 | **Por qué ahora** | Prioridad #1 del comité; más del 50% de la venta actual depende de resolver el problema de contacto sin consentimiento |

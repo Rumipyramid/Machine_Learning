@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-26T23:46:20 · Cambios vigentes: 21
+> Retención: 15 días · Última actualización: 2026-07-26T23:52:57 · Cambios vigentes: 22
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-26T23:52:57 | Alejandro | DOC | presentacion_back_to_basics.md (expandido) | Origen, contexto, entregables V1, siguientes pasos | Suma resumen ejecutivo, sección de metodología, nueva sección de evidencia (encuesta 19 asesores + taller NPS 96.67), tablas de cifras para conversión directa a slides; numerado por secciones para mapear a la presentación | normal | aplicado |
 | 2026-07-26T23:46:20 | Alejandro | Q-69 | Resultados completos del taller | NPS 96 aproximado, sin detalle | NPS 96.67, satisfacción contenido 99.33%, speaker 98.67%, asistencia 83.33% (30/36); fuente CoE Experience Design; Copilot=probable AIDA, 3 puntos de coincidencia con Q-13 | normal | aplicado |
 | 2026-07-26T23:41:12 | Alejandro | Q-68/Q-69 | Nueva evidencia primaria | — (no existía) | Q-68: encuesta a 19 asesores (uso/satisfacción herramientas, manejo de objeciones #1 dolor); Q-69: piloto de capacitación manejo de objeciones NPS 96 (posible mismo piloto que Q-13 AIDA, a confirmar). Análisis completo en research/evidencia_asesores_back_to_basics.md | normal | aplicado |
 | 2026-07-26T23:26:30 | Alejandro | DOC | presentacion_back_to_basics.md — evidencia V1 | Sacrificial concepts descrito como elicitar objeciones de no clientes (sin CUA); sin mención de shadowing/entrevistas/cliente incógnito | Sacrificial concepts corregido a validación con Legal/Cumplimiento/clientes; se suma shadowing con asesores, entrevistas y cliente incógnito | normal | aplicado |
