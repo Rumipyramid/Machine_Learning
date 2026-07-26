@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-25.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-26.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -69,6 +69,7 @@ por afirmación cuando corresponda.
 | `_nodes/proyecto-back-to-basics-ffvv-vida.md` | Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido — Modelo de Experiencia de Venta Vida (deck al VP, Dx1-Dx3), mapa sistémico AS IS, estrategias de contacto (DS 016), playbook del asesor, cruce con evidencia/tesis del Lobo, Plan Piloto de validación (10 asesores) | 2026-07-25 | v1.3 (lineamiento definitivo de CUA — solo estrategias con consentimiento ya existente; cierra Estrategias 2 y 3; resolución real aplicada al playbook de sesión) |
 | `_nodes/matriz-productos-vida-rimac.md` | Matriz de productos Vida RIMAC: catálogo de 3(+1) productos reales (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total), coberturas/addons, trazabilidad de fuentes y niveles de confianza | 2026-07-24 | v1.0 |
 | `_nodes/glosario-seguro-vida-peru.md` | Glosario de seguro de vida en lenguaje claro — FAQ de cliente (investigación `/trinidad`: pista empírica + social + negocio) para completar el Playbook del Asesor | 2026-07-24 | v1.0 |
+| `_nodes/tendencias-diseno.md` | **Node acumulativo** — Tendencias en diseño: qué tiene impacto tangible demostrado y qué es propuesta innovadora sin respaldo (producto/UX, IA, design systems, servicio, visual). Incluye escala de madurez de evidencia, tablero de 18 hipótesis vivas y 14 reglas de criterio destiladas | 2026-07-26 | v1.0 (iteración 1) |
 
 ---
 

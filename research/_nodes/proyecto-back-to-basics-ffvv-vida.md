@@ -681,3 +681,7 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   sobre una versión más resumida de este mismo proyecto (el documento "Back to Basics" de alto
   nivel, previo a que se sumara el marco de §1); este node es la capa de detalle y de marco
   narrativo (Dx1-Dx3, statement, pilares) que ese output no cubría todavía.
+- [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué es propuesta]] — sus
+  reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
+  transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la
+  experiencia de venta.
