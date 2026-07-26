@@ -25,6 +25,8 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/personas/apps/reglas/` · `apps/llm/` | Apps web: explorador por reglas (autocontenido) y preguntas libres con Claude (API) | — |
 | `research/updates/` | Reportes quincenales de fortalecimiento del modelo | Indexados en este códice (bloque gestionado) |
 | `research/fuentes/registro_fuentes.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista` |
+| `research/metodologia_behavioral_design.md` | Metodología del equipo BD: exploración de sistema obligatoria antes de diseñar; origen de Back to Basics | Conocimiento interno del rol, no investigación externa |
+| `reportes/presentacion_back_to_basics.md` · `reportes/assets/ecosistema_venta_vida.jpg` | Presentación del proyecto Back to Basics (FFVV Vida Individual) para Milagros/comité | Origen, contexto, entregables V1, siguientes pasos, mapa del ecosistema |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
 | `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac, publicar a main |

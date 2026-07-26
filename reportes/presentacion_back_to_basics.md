@@ -4,6 +4,30 @@
 
 ---
 
+## Origen: cómo nació el pedido
+
+En un momento en que RIMAC despriorizó varios proyectos estratégicos, las áreas de negocio
+siguieron buscando al equipo de Behavioral Design para resolver problemas puntuales — la
+necesidad del negocio no se detuvo aunque la prioridad formal sí. Así llegó uno de esos pedidos:
+crear speeches para distintos momentos del journey del asesor.
+
+La metodología del equipo es recibir todo pedido y, antes de diseñar nada, hacer
+**obligatoriamente una exploración inicial del sistema** en el que está inscrito el problema — no
+se diseña una pieza suelta sin entender primero el ecosistema completo que la rodea (ver el mapa
+del ecosistema de Venta Vida más abajo, resultado de esa exploración).
+
+Esa exploración reveló varios **dolores sistémicos**. Uno de los más importantes: **el propio
+equipo de Behavioral Design venía produciendo diseños y soluciones no articuladas entre sí** —
+respuestas puntuales a pedidos puntuales (un speech aquí, una plantilla allá), sin atacar los
+problemas estructurales que los originaban ni acumular ningún aprendizaje de un pedido al
+siguiente.
+
+De ese hallazgo surgió la decisión de **unificar los frentes de Venta Vida** en vez de seguir
+respondiendo pedido por pedido, y **Back to Basics** nació como el frente que concentra las
+soluciones relacionadas a la Fuerza de Venta (FFVV).
+
+---
+
 ## Contexto
 
 **El problema de negocio.** La Fuerza de Venta de Vida Individual necesita fortalecer tres cosas
@@ -35,6 +59,25 @@ herramientas correctas para hacerlo.
 
 **Prioridad.** El comité de CoE X ya elevó Back to Basics a **prioridad #1** del trimestre.
 Equipo: Melissa y Alejandro, junto con César (Lead de Service Design, de otro equipo).
+
+---
+
+## Lámina: mapa del ecosistema de Venta Vida
+
+Resultado de la exploración inicial obligatoria del sistema. No es un mapa exhaustivo de todas las
+causas de venta — es el mapa de **palancas que el equipo puede accionar** y cómo se conectan entre
+sí, organizado en 9 frentes: Producto, Palancas de venta, Formación, Selección, Incentivos,
+Personalidad del Asesor, Seguimiento, Espacio Digital del asesor y Espacio Físico del asesor.
+
+Dos nodos concentran la mayoría de las relaciones — son los resultados que todo lo demás explica:
+**KPIs de Performance de Venta** (con entradas de Producto, Formación y Personalidad del Asesor) y
+**KPIs de experiencia de Venta** (NPS, EJO), alimentado principalmente por las Habilidades
+comerciales del asesor y su Experiencia. Back to Basics interviene sobre todo en **Personalidad
+del Asesor** (habilidades comerciales, capacidades cognitivas), **Formación** y una parte de
+**Palancas de venta** (speeches, materiales) y **Espacio Digital/Físico del asesor** (manuales,
+guías, agente AI copiloto).
+
+![Mapa del ecosistema de Venta Vida](assets/ecosistema_venta_vida.jpg)
 
 ---
 
@@ -145,6 +188,7 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 
 | | |
 |---|---|
+| **Cómo nació** | De un pedido puntual (speeches), tras la exploración obligatoria del sistema se detectó que el propio equipo trabajaba sin articulación — de ahí la unificación en Back to Basics |
 | **Qué ya está construido** | Estrategia de contacto, playbook de venta, materiales, Universidad Vida y AIDA — validados con evidencia propia y con Legal/Cumplimiento/CUA |
 | **Qué falta para cerrar la V1** | Cuatro pilotos de calibración del modelo antes del despliegue completo |
 | **Qué viene después** | Entrenamiento continuo, más canales de Vida, el ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
