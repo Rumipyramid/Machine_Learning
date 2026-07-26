@@ -5,7 +5,7 @@
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta permanente: **¿qué tendencias de diseño tienen impacto tangible demostrado y
 > cuáles son propuestas innovadoras todavía sin respaldo?**
-> Fuentes registradas en `research/fuentes/codice.md` (F-236 a F-327).
+> Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328).
 
 ## 🔁 Cómo se usa y se enriquece este node
 
@@ -65,40 +65,40 @@ predice que fallará en aprendibilidad.
 ### 2.1 Lo documentado
 
 - **Capacidad de diseño ↔ desempeño de firma: asociación real, medida con datos objetivos.** El
-  estudio canónico (Hertenstein, Platt & Veryzer, 2005 — F-236, peer-reviewed, 93 firmas) encuentra
+  estudio canónico (Hertenstein, Platt & Veryzer, 2005 — F-237, peer-reviewed, 93 firmas) encuentra
   mejor ROA/ROS/crecimiento en firmas con diseño industrial efectivo. ⚠️ La variable independiente
   es una *percepción experta*, contaminable por halo. La réplica moderna es mucho mejor: panel GLS
   sobre **1.659 firmas públicas estadounidenses, 1980-2015**, con capacidad de diseño
   operacionalizada objetivamente vía inventores presentes a la vez en patentes de diseño y de
-  utilidad (F-237, 2025, peer-reviewed) — confirma efecto directo **y** efecto moderador que
+  utilidad (F-238, 2025, peer-reviewed) — confirma efecto directo **y** efecto moderador que
   amplifica el retorno de la innovación. **Es la mejor evidencia disponible del vínculo
   diseño→negocio.** Sigue siendo observacional.
 - **Design thinking: efecto real pero *mediado*, no directo.** El efecto sobre el desempeño del
-  proyecto está **totalmente mediado por empoderamiento psicológico** (Roth et al., 2020 — F-238):
+  proyecto está **totalmente mediado por empoderamiento psicológico** (Roth et al., 2020 — F-239):
   el design thinking funciona en parte como práctica de motivación de equipo, no como método
   superior de resolución de problemas. La revisión posterior confirma que los mecanismos causales
-  siguen sin establecerse (Mayer et al., 2025 — F-239).
+  siguen sin establecerse (Mayer et al., 2025 — F-240).
 - **La mayoría de los cambios de diseño no mejoran las métricas.** El dato más incómodo y mejor
   sostenido del reporte: en Microsoft solo **~1/3** de los experimentos bien diseñados logró mejorar
   su métrica objetivo; en Bing, Google Ads, Netflix y Airbnb las tasas de fracaso reportadas van del
-  **85% al 90%** (Kohavi & Thomke, 2017 — F-261). Es evidencia causal (miles de A/B tests
+  **85% al 90%** (Kohavi & Thomke, 2017 — F-262). Es evidencia causal (miles de A/B tests
   aleatorizados) y contradice de frente la narrativa de multiplicadores: el valor se **acumula en
   mejoras de 0,1-0,2%**, no llega en un rediseño transformador.
 - **Dark patterns: efecto causal grande, medido experimentalmente.** Aceptación de un plan dudoso:
   **11,3% (control) → 25,8% con dark patterns leves → 41,9% con agresivos** (~4x) en experimento
-  aleatorizado con muestra ponderada por censo, N=1.773 (Luguri & Strahilevitz, 2021 — F-240). Los
+  aleatorizado con muestra ponderada por censo, N=1.773 (Luguri & Strahilevitz, 2021 — F-241). Los
   agresivos generan backlash; los leves no. **La evidencia más fuerte del "poder del diseño" es
   sobre su capacidad de daño, no de valor** — un hecho que la industria del diseño rara vez cita.
   La susceptibilidad es transversal: los proxies clásicos de vulnerabilidad (ingreso, edad)
-  explican poco (F-250).
+  explican poco (F-251).
 - **Claridad > ornamento.** La correlación estética-usabilidad percibida **cae de r=0,79 a r=0,34
-  al controlar por fluidez de procesamiento** (Preßler et al., 2023 — F-248): buena parte del
+  al controlar por fluidez de procesamiento** (Preßler et al., 2023 — F-249): buena parte del
   "efecto estética" es en realidad *facilidad de procesamiento*, no belleza. El caso Liquid Glass
-  de Apple lo valida en el mundo real (F-271): pérdida de contraste y jerarquía degradada, caída de
+  de Apple lo valida en el mundo real (F-272): pérdida de contraste y jerarquía degradada, caída de
   calificaciones de accesibilidad, y corrección posterior por la propia Apple.
 - **Accesibilidad dejó de ser argumento de ROI y pasó a ser obligación con sanción**: el European
   Accessibility Act es exigible desde el **28 de junio de 2025**, con primeras demandas en Francia
-  en noviembre de 2025 (F-264).
+  en noviembre de 2025 (F-265).
 
 ### 2.2 Interfaces con IA: confianza, explicabilidad y adaptación
 
@@ -106,20 +106,20 @@ Es aquí donde el desfase entre discurso y evidencia es mayor, y donde hay halla
 contraintuitivos:
 
 - **Explicabilidad → confianza: correlación significativa pero *moderada*.** Meta-análisis PRISMA
-  de **90 estudios** (Atf & Lewis, 2025 — F-241): los propios autores concluyen que la
+  de **90 estudios** (Atf & Lewis, 2025 — F-242): los propios autores concluyen que la
   explicabilidad **no es el factor único ni predominante** de la confianza. Refuta la premisa
   implícita de casi todo el discurso de "capas de transparencia de IA" de los reportes de tendencias.
 - **Explicaciones ≠ mejor decisión conjunta.** Las explicaciones **no** produjeron desempeño
   complementario humano-IA: subieron la precisión cuando la IA acertaba y la bajaron cuando erraba
-  — firma diagnóstica de **sobre-confianza**, no de calibración (Bansal et al., 2021 — F-243). La
+  — firma diagnóstica de **sobre-confianza**, no de calibración (Bansal et al., 2021 — F-244). La
   teoría explicativa: las explicaciones solo sirven **en la medida en que permiten verificar** la
   corrección de la predicción, y en la mayoría de contextos no lo permiten (Fok & Weld, 2024 —
-  F-242).
+  F-243).
 - **Pero la sobre-confianza es estratégica, no inevitable.** Las explicaciones **sí** reducen
   sobre-confianza y mejoran precisión **solo en tareas difíciles**; en tareas fáciles o medias no
   hay diferencia frente a mostrar solo la predicción (Vasconcelos et al., 2023 — 5 estudios, N=731 —
-  F-245). Las *cognitive forcing functions* también reducen sobre-confianza, con costo en
-  satisfacción y carga percibida (Buçinca et al., 2021 — F-244).
+  F-246). Las *cognitive forcing functions* también reducen sobre-confianza, con costo en
+  satisfacción y carga percibida (Buçinca et al., 2021 — F-245).
 - **⭐ Síntesis accionable**: añadir "explicabilidad" genérica **no calibra la confianza**. Lo que
   la calibra es (a) hacer **verificable** la salida, (b) introducir **fricción deliberada donde la
   tarea es difícil**, (c) **no ponerla donde la tarea es fácil**.
@@ -127,31 +127,31 @@ contraintuitivos:
   **estáticos** significativamente más rápidos que los **adaptativos**; los **adaptables** (control
   del usuario) superaron a los adaptativos (control del sistema); y la alta precisión de adaptación
   **reduce la conciencia del usuario sobre el conjunto completo de funciones**, dañando la
-  aprendibilidad (Findlater & McGrenere, 2004/2010 — F-246). La adaptación lenta ayuda; la rápida
+  aprendibilidad (Findlater & McGrenere, 2004/2010 — F-247). La adaptación lenta ayuda; la rápida
   perjudica.
 - **Este es el mayor punto ciego del discurso 2026**: "la interfaz se genera de nuevo para cada
   usuario en cada turno" es la versión extrema de la adaptación rápida controlada por el sistema
   que la literatura ya identificó como perjudicial.
 - **Más personalización no es mejor**: bajo saliencia de privacidad, la personalización con datos
-  personales **no supera al mensaje genérico** y es peor que la contextual moderada (F-252);
+  personales **no supera al mensaje genérico** y es peor que la contextual moderada (F-253);
   evidencia de campo confirma que el consejo de IA personalizado puede reducir la compra por
-  intrusividad percibida (F-253). Relevante directamente para seguros.
+  intrusividad percibida (F-254). Relevante directamente para seguros.
 
 ### 2.3 Design systems
 
 - La cifra estrella (**"47% más rápido"**) viene de un estudio con **N=8 desarrolladores de la
   propia agencia que vende design systems**, sin cegamiento y **con efecto de orden no controlado**
   (todos hicieron primero la versión desde cero, así que el aprendizaje de la tarea infla el
-  beneficio atribuido al design system) — Sparkbox, 2022 (F-268). Es generador de hipótesis, no
+  beneficio atribuido al design system) — Sparkbox, 2022 (F-269). Es generador de hipótesis, no
   evidencia de efecto.
 - La evidencia más reciente y mejor diseñada es un **preprint sin revisión por pares**: experimento
   controlado en una gran empresa brasileña, **49 desarrolladores profesionales**, 3 stacks, 3
   condiciones; reporta −46,7% a −69,4% de time-to-delivery con IA alineada al design system, y
-  **menor variabilidad de desempeño** (F-258). *El hallazgo de reducción de variabilidad es más
+  **menor variabilidad de desempeño** (F-259). *El hallazgo de reducción de variabilidad es más
   creíble y más interesante que el de velocidad.*
 - **Contrapeso**: la industria reporta lo contrario de lo que promociona — la satisfacción con el
   buy-in **cayó de 42% a 32% interanual** y Gartner ubica a los design systems deslizándose al
-  valle de la desilusión (zeroheight, 2025 — F-269). **La promesa de eficiencia coexiste con una
+  valle de la desilusión (zeroheight, 2025 — F-270). **La promesa de eficiencia coexiste con una
   crisis documentada de adopción y mantenimiento.**
 
 ### 2.4 Registro teórico/crítico
@@ -159,27 +159,27 @@ contraintuitivos:
 No aporta evidencia empírica, pero cambia cómo se lee todo lo anterior:
 
 - **Post-Norman: el propio Norman se auto-refuta parcialmente.** En *Design for a Better World*
-  (2023 — F-273) argumenta que el human-centered design es **insuficiente y potencialmente dañino**:
+  (2023 — F-274) argumenta que el human-centered design es **insuficiente y potencialmente dañino**:
   optimiza el problema inmediato de un individuo mientras ignora efectos sistémicos, y ha servido
   para **monetizar consumidores**. Tesis atribuible a Norman, no consenso.
 - **Crítica ontológica/decolonial**: el diseño es constitutivamente *world-making* — no resuelve
   problemas dentro de un mundo dado, fabrica el mundo en el que los problemas aparecen (Escobar,
-  2018 — F-274); y reproduce desigualdad estructural salvo que sea liderado por comunidades
-  marginadas (Costanza-Chock, 2020 — F-275). ⚠️ **Se buscó específicamente fricción interna entre
+  2018 — F-275); y reproduce desigualdad estructural salvo que sea liderado por comunidades
+  marginadas (Costanza-Chock, 2020 — F-276). ⚠️ **Se buscó específicamente fricción interna entre
   ambos marcos (2024-2026) y no se encontró** — se tratan como complementarios. Esa ausencia de
   contraste es un dato: es un campo teórico con poca fricción interna, lo que debilita su valor
   probatorio.
 - **Diseño y capitalismo de plataforma**: el capitalismo depende materialmente del trabajo del
   diseño gráfico, y —el punto más filoso— **las estrategias anticonsumistas (social design,
   speculative design) son sistemáticamente reapropiadas para servir al crecimiento** (Pater, 2021 —
-  F-276; Fry, 2020 — F-277).
+  F-277; Fry, 2020 — F-278).
 - **Aplicación del marco a la propia literatura de "valor del diseño"**: la producción de evidencia
   sobre el valor del diseño es **ella misma un producto con función comercial**. No es un argumento
   *ad hominem*: es una hipótesis sobre por qué la industria produce estudios correlacionales con
   cifras grandes y no experimentos con cifras pequeñas. **Los experimentos con cifras pequeñas
   (Kohavi) los produce quien no vende diseño.**
 - **Anti-patrones: único punto donde teoría y evidencia convergen.** La crítica teórica ("el diseño
-  es instrumento de captura de atención y consentimiento") tiene respaldo experimental duro (F-240)
+  es instrumento de captura de atención y consentimiento") tiene respaldo experimental duro (F-241)
   y respaldo regulatorio (FTC, CMA, Comisión Europea).
 
 ### 2.5 Chequeo de eco de cita — tres cadenas que colapsan en una sola fuente
@@ -188,19 +188,19 @@ Esto es un hallazgo en sí mismo y debe sobrevivir a todas las iteraciones:
 
 1. **"+32% de crecimiento / +56% de retorno al accionista"** — decenas de altavoces (Fast Company,
    Wallpaper*, AMA, blogs de agencia) → **todos citan McKinsey (2018)**, un único reporte sin
-   significancia estadística publicada, sin referencias y sin análisis de sesgo de muestreo (F-265).
+   significancia estadística publicada, sin referencias y sin análisis de sesgo de muestreo (F-266).
    Es **una** pieza de evidencia con ~30 megáfonos.
 2. **"$1 invertido en UX devuelve $100"** — la cadena termina en un reporte de Forrester (2016)
-   **tras un muro de pago de ~US$1.495**, que prácticamente ningún citante ha leído (F-267). Hay
+   **tras un muro de pago de ~US$1.495**, que prácticamente ningún citante ha leído (F-268). Hay
    indicios fuertes de **conflación de tres claims distintos**, incluida la **curva de costo de
    cambio de Boehm** (corregir un error tarde cuesta ~100x) — que **no es un ROI de inversión en UX
    en absoluto**. El "100x de UX" es, con alta probabilidad, un error de transcripción de una regla
    de ingeniería de software.
-3. **"47% más rápido con design system"** → Sparkbox (2022), N=8 (F-268). Una fuente, muchos
+3. **"47% más rápido con design system"** → Sparkbox (2022), N=8 (F-269). Una fuente, muchos
    megáfonos.
 4. **"671% de ROI de design systems según Forrester"** → **no existe estudio primario rastreable**
-   (F-326). Lo que sí existe es un Forrester TEI **comisionado y pagado por InVision** con 475% de
-   ROI sobre una organización compuesta de 4 entrevistas (F-327). Registrado explícitamente como 🔴 E
+   (F-327). Lo que sí existe es un Forrester TEI **comisionado y pagado por InVision** con 475% de
+   ROI sobre una organización compuesta de 4 entrevistas (F-328). Registrado explícitamente como 🔴 E
    para que no vuelva a entrar al proyecto por otra vía.
 
 *Nota simétrica de honestidad: el dato de Kohavi también se repite mucho y proviene esencialmente de
@@ -233,26 +233,26 @@ amargo: **el rol perdió definición y el mercado de entrada se cerró.**
 
 - El dato ancla del gremio es un empate a tres bandas casi perfecto: **36% dice que el campo mejoró,
   35% que empeoró, 29% sin cambio** — y simultáneamente **89% dice trabajar más rápido** (Figma /
-  NewtonX, n=906 — F-279). Esa combinación de *mejora instrumental + malestar existencial* es la
+  NewtonX, n=906 — F-280). Esa combinación de *mejora instrumental + malestar existencial* es la
   firma emocional de 2026: **la gente no está peor en su día a día, está peor en su expectativa de
   futuro.** NN/g confirma la división, no el pánico: 47% ve "algún valor" en la IA, 20% no está
-  impresionado (F-280).
+  impresionado (F-281).
 - La queja mejor validada desde la experiencia personal es sobre **contratación, no reemplazo**: un
   aviso de "Product Designer" pide hoy estrategia, front-end, research y "mentalidad de builder" en
-  una persona (F-300). Y hay una ironía perfecta documentada: hiring managers desbordados por
+  una persona (F-301). Y hay una ironía perfecta documentada: hiring managers desbordados por
   **portafolios generados con IA que se ven todos iguales** — la IA no les quitó el trabajo a los
   diseñadores, **les rompió el mecanismo de selección**.
 - El daño percibido se concentra en **junior**; senior y generalistas estratégicos se recuperan.
 - **Estacionalidad, no tendencia**: el ciclo "el diseño ha muerto" es estructuralmente recurrente y
   repica con cada lanzamiento de modelo (el pico de 2026 lo detonó ChatGPT Images 2.0 el 21 de
-  abril) — F-295, F-299. **Antes de leer un pico como cambio estructural, verificar contra el
+  abril) — F-296, F-300. **Antes de leer un pico como cambio estructural, verificar contra el
   calendario de releases.**
 
 ### 3.2 Liquid Glass: el caso más limpio de backlash exitoso
 
 Cadena rastreada: WWDC 2025 → iOS 26 (sept-2025) → burla masiva por legibilidad y contraste, con
-post viral ancla en X (F-288) → Apple introduce control "Tinted" en iOS 26.1 (F-290) → iOS 27
-(jun-2026) suma **slider de transparencia** (F-291).
+post viral ancla en X (F-289) → Apple introduce control "Tinted" en iOS 26.1 (F-291) → iOS 27
+(jun-2026) suma **slider de transparencia** (F-292).
 
 ⭐ **Hallazgo metodológico que vale para todas las iteraciones: la validación más fuerte de toda
 esta investigación no es un comentario, es una conducta corporativa.** Apple envió un control de
@@ -267,8 +267,8 @@ compromiso.**
 
 El vocabulario está totalmente instalado (degradados morados, sans gruesas, blobs, esquinas
 redondeadas apiladas, sombras suaves en todo) — la comunidad desarrolló **taxonomía propia**, señal
-fuerte de instalación. Cadena: manifiesto **Slopless** de un creador individual (F-285) → newsletters
-de diseño (F-286) → **Landor le pone nombre corporativo: "Anti-AI Crafting"** (F-287). Ese salto de
+fuerte de instalación. Cadena: manifiesto **Slopless** de un creador individual (F-286) → newsletters
+de diseño (F-287) → **Landor le pone nombre corporativo: "Anti-AI Crafting"** (F-288). Ese salto de
 capa es el indicador de instalación más significativo, más que cualquier conteo de menciones.
 
 ⚠️ **Dos alertas que deben conservarse:**
@@ -277,21 +277,21 @@ capa es el indicador de instalación más significativo, más que cualquier cont
   Su incentivo está alineado con mantener al gremio en estado de urgencia, **en cualquier dirección**.
 - **Las dos grandes narrativas estéticas "anti-IA" de 2026 están promovidas por empresas de
   herramientas de IA y por agencias globales de branding.** Canva vende generación con IA y a la vez
-  decreta el año de la imperfección humana (F-294). **Es una tendencia industria-hacia-abajo
+  decreta el año de la imperfección humana (F-295). **Es una tendencia industria-hacia-abajo
   disfrazada de rebelión comunitaria-hacia-arriba.**
 
 ### 3.4 Validación genuina vs. mera amplificación
 
 - **Validación** (experiencia propia o conducta observable): Apple enviando el control de
   transparencia; usuarios del foro oficial de Figma criticando Figma Make con especificidad técnica
-  (F-292); reviews que fijan el techo real de las herramientas ("Lovable te lleva como máximo al 70%,
-  no es production-ready" — F-293); hiring managers reportando el problema de portafolios
+  (F-293); reviews que fijan el techo real de las herramientas ("Lovable te lleva como máximo al 70%,
+  no es production-ready" — F-294); hiring managers reportando el problema de portafolios
   indistinguibles; **inscripciones pagadas** a talleres de riso/zines; adopción medible de design
-  tokens (84%, desde 56%) y de shadcn/ui (>75.000 estrellas en GitHub) — F-297.
+  tokens (84%, desde 56%) y de shadcn/ui (>75.000 estrellas en GitHub) — F-298.
 - **Mera amplificación**: "Designers are cooked" / "UX is dead" con lápidas generadas por IA en
   LinkedIn — volumen enorme, aporte informativo nulo, **cero testimonios de primera mano de despidos
   atribuibles a IA**. Y las listicles de "tendencias 2026" de Wix, Figma, Adobe, Envato: contenido
-  de marketing de fabricantes de herramientas, no sentimiento de comunidad (F-278).
+  de marketing de fabricantes de herramientas, no sentimiento de comunidad (F-279).
 - **Churnalism detectado**: el reporte "Imperfect by Design" de Canva es **una sola pieza con al
   menos seis vitrinas** (Businesswire → financialcontent, MSN, campaignbrief, LBBOnline, lotiva…)
   con el mismo texto y las mismas cifras. **Cuenta como 1 pieza de cobertura, no 6.**
@@ -301,31 +301,31 @@ capa es el indicador de instalación más significativo, más que cualquier cont
 ### 3.5 Búsqueda adversarial: el backlash que sí apareció
 
 1. **Contra "la IA se lleva los empleos de diseño" — el desmentido más fuerte.** Sí hay 87.714
-   recortes *atribuidos* a IA en 5 meses de 2026 (F-282). Pero **Gallup encontró que 62% de los
+   recortes *atribuidos* a IA en 5 meses de 2026 (F-283). Pero **Gallup encontró que 62% de los
    despedidos eran NO usuarios de IA, y solo 1% citó IA o automatización como razón principal**
-   (F-281); el economista jefe de Glassdoor señala *scapegoating*: "una empresa puede decir que la
+   (F-282); el economista jefe de Glassdoor señala *scapegoating*: "una empresa puede decir que la
    IA es la razón, pero eso no significa que lo sea". Se reporta además que 55% de esos empleadores
    se arrepintió. **La atribución a IA es narrativa corporativa conveniente, no causalidad
    demostrada.**
 2. **Contra el propio movimiento anti-slop.** Un análisis de **25 millones de comentarios** concluye
    que las acusaciones de "AI slop" funcionan crecientemente como **forma emergente de gatekeeping
    social** más que como identificación real de contenido IA — y ese aumento **no** forma parte de un
-   alza general de hostilidad online (F-283). Es la contraevidencia más incómoda para el gremio:
+   alza general de hostilidad online (F-284). Es la contraevidencia más incómoda para el gremio:
    **parte de la indignación estética es defensa de estatus profesional.**
 3. **Contra la estética anti-diseño.** Un estudio de usabilidad separó brutalismo disciplinado de
    anti-diseño caótico y encontró que la versión caótica llegó a tasas de éxito de tarea de
-   **8-10%** en páginas con mucha información (F-296). **La tendencia que el gremio celebra como
+   **8-10%** en páginas con mucha información (F-297). **La tendencia que el gremio celebra como
    rebelión destruye la usabilidad cuando se aplica sin disciplina** — y esto circula en el registro
    técnico, casi no en el social.
 4. **Contra las figuras de autoridad.** Jakob Nielsen provocó rechazo amplio, sostenido y en
    publicaciones independientes al declarar que la IA "invalidará completamente el proceso manual de
-   diseño UX" (F-298).
+   diseño UX" (F-299).
 
 ### 3.6 Hallazgo negativo: el silencio del service design
 
 Se buscó activamente conversación social sobre service design y **prácticamente no existe** (las
 búsquedas se contaminan con layoffs de ServiceNow). Lo poco cuantificable: 459 contratos citando
-"Service Design" en Inglaterra en 6 meses (1,45% del total) — F-301. **Lectura: silencio social no
+"Service Design" en Inglaterra en 6 meses (1,45% del total) — F-302. **Lectura: silencio social no
 equivale a decadencia, pero sí significa que el service design no está participando de la
 conversación identitaria del gremio. No hay ansiedad porque no hay tribuna.**
 
@@ -341,38 +341,38 @@ en uno solo.** Confianza alta en (1) y (2) — filings SEC y transacciones confi
 
 | Empresa | Métrica | Valor | Corte | Evidencia |
 |---|---|---|---|---|
-| **Figma** | Revenue Q1'26 | **$333,4M, +46% YoY** (acelerando desde +40%) | 31-mar-2026 | 8-K SEC (F-302) |
-| Figma | Net Dollar Retention | **139%** (⚠️ definición no estándar) | 31-mar-2026 | 8-K SEC (F-302) |
-| Figma | Revenue FY2025 | ~**$1,05B, +41%** | FY2025 | 8-K SEC (F-303) |
-| Figma | Precio de la acción | ~**−49% YTD, ~−83/87% desde el pico, bajo el precio de IPO ($33)** | jul-2026 | Prensa (F-325) |
-| **Adobe** | Revenue Q2 FY26 | **$6,62B, +13% YoY** (récord); suscripción 97% | may-2026 | 10-Q SEC (F-305) |
-| Adobe | ARR total | **$27,10B, +12,5%** — incluye ~$480M **inorgánicos** (Semrush) | may-2026 | 10-Q SEC (F-305) |
-| **Canva** | ARR | ~**$4B**; valuación $42B (secundario); **IPO postergada a 2027** | 2025-26 | Auto-reportado (F-322, F-323) |
-| **Lovable** | ARR | ~**$400-500M**; ronda **en conversaciones** a $12-13,2B (no cerrada) | 2026 | Auto-reportado (F-319, F-320) |
+| **Figma** | Revenue Q1'26 | **$333,4M, +46% YoY** (acelerando desde +40%) | 31-mar-2026 | 8-K SEC (F-303) |
+| Figma | Net Dollar Retention | **139%** (⚠️ definición no estándar) | 31-mar-2026 | 8-K SEC (F-303) |
+| Figma | Revenue FY2025 | ~**$1,05B, +41%** | FY2025 | 8-K SEC (F-304) |
+| Figma | Precio de la acción | ~**−49% YTD, ~−83/87% desde el pico, bajo el precio de IPO ($33)** | jul-2026 | Prensa (F-326) |
+| **Adobe** | Revenue Q2 FY26 | **$6,62B, +13% YoY** (récord); suscripción 97% | may-2026 | 10-Q SEC (F-306) |
+| Adobe | ARR total | **$27,10B, +12,5%** — incluye ~$480M **inorgánicos** (Semrush) | may-2026 | 10-Q SEC (F-306) |
+| **Canva** | ARR | ~**$4B**; valuación $42B (secundario); **IPO postergada a 2027** | 2025-26 | Auto-reportado (F-323, F-324) |
+| **Lovable** | ARR | ~**$400-500M**; ronda **en conversaciones** a $12-13,2B (no cerrada) | 2026 | Auto-reportado (F-320, F-321) |
 
 ⚠️ **El desacople es el hallazgo, no el crecimiento.** Figma crece *acelerando* y su acción cotiza
 **bajo el precio de IPO**. Causas concurrentes documentadas: vencimiento del lock-up (27-ene-2026),
-lanzamiento de **Claude Design de Anthropic el 17-abr-2026** con caída inmediata de 6-7,7% (F-317), y
+lanzamiento de **Claude Design de Anthropic el 17-abr-2026** con caída inmediata de 6-7,7% (F-318), y
 recortes en cadena de precio objetivo. **El mercado no está descontando desempeño: está descontando
-obsolescencia por IA.** El propio S-1 de Figma declara ese riesgo (F-304).
+obsolescencia por IA.** El propio S-1 de Figma declara ese riesgo (F-305).
 
 ⚠️ **Degradación del reporting bajo presión**: Adobe **fusionó Digital Media, Digital Experience y
 Publishing en un solo segmento reportable** desde Q1 FY2026 — la pregunta "cómo va Digital Media" ya
 no es respondible con datos públicos. Webflow **dejó de publicar ARR** (último dato duro: $200M de
-2023) e hizo layoffs en mayo 2026 (F-321).
+2023) e hizo layoffs en mayo 2026 (F-322).
 
 ### 4.2 Consultoras de diseño: crisis estructural documentada
 
 Cuatro señales convergentes, no anecdóticas:
 
 - **IDEO**: revenue cayó a **<$100M desde ~$300M cuatro años antes** (~−67%), tras recortar 32% de
-  la plantilla en 2023 (F-315, F-316). El propio CEO dice que la centralidad en el cliente "ya es
+  la plantilla en 2023 (F-316, F-317). El propio CEO dice que la centralidad en el cliente "ya es
   *table stakes*". ⚠️ Discrepancia abierta: ZoomInfo estima $238,4M — se privilegia Fortune
   (reportería con cifra atribuida) sobre un estimador algorítmico sin metodología.
 - **Veryday**: McKinsey **cerró** el estudio que había adquirido en 2016.
 - **R/GA**: IPG la **vendió a private equity** con **términos no revelados** — señal en sí misma
-  (F-306).
-- **Accenture Song**: reestructurada y luego **absorbida** dentro de otra línea de negocio (F-324).
+  (F-307).
+- **Accenture Song**: reestructurada y luego **absorbida** dentro de otra línea de negocio (F-325).
 
 **No se encontró ninguna consultora de diseño con evidencia publicada de crecimiento en 2025-2026.
 Esa ausencia, tras buscarla, es evidencia.**
@@ -381,11 +381,11 @@ Esa ausencia, tras buscarla, es evidencia.**
 
 | Cifra | Metodología real | Veredicto |
 |---|---|---|
-| McKinsey +32 pp / +56 pp (F-265) | 300 empresas, correlacional, **sin significancia publicada, sin citas, sin análisis de sesgo de muestreo**; 8 años sin replicar | 🔴 No usar como afirmación fuerza |
-| "671% ROI de Forrester" (F-326) | **No existe estudio primario rastreable** | 🔴 Eco de cita puro |
-| DMI Design Value Index +211% (F-266) | Selección **retrospectiva** de empresas ya reconocidas como design-centric | 🔴 Look-ahead bias + sesgo de supervivencia |
-| Sparkbox −47% (F-268) | N=8, misma agencia, efecto de orden no controlado | 🟡 Honesta pero no generalizable |
-| Baymard +35,26% de conversión (F-310) | **Potencial modelado, no lift medido** — nadie ejecutó las 32 mejoras y midió | 🟡 Se cita como si fuera resultado observado |
+| McKinsey +32 pp / +56 pp (F-266) | 300 empresas, correlacional, **sin significancia publicada, sin citas, sin análisis de sesgo de muestreo**; 8 años sin replicar | 🔴 No usar como afirmación fuerza |
+| "671% ROI de Forrester" (F-327) | **No existe estudio primario rastreable** | 🔴 Eco de cita puro |
+| DMI Design Value Index +211% (F-267) | Selección **retrospectiva** de empresas ya reconocidas como design-centric | 🔴 Look-ahead bias + sesgo de supervivencia |
+| Sparkbox −47% (F-269) | N=8, misma agencia, efecto de orden no controlado | 🟡 Honesta pero no generalizable |
+| Baymard +35,26% de conversión (F-311) | **Potencial modelado, no lift medido** — nadie ejecutó las 32 mejoras y midió | 🟡 Se cita como si fuera resultado observado |
 
 ⭐ **No se encontró ni un solo caso donde una empresa pública atribuya un lift de conversión a un
 rediseño en un documento auditado (10-K/10-Q). Esa ausencia es en sí un hallazgo.**
@@ -394,15 +394,15 @@ rediseño en un documento auditado (10-K/10-Q). Esa ausencia es en sí un hallaz
 
 - **BLS** (organismo oficial): diseñadores gráficos **+2% 2024-2034** (más lento que el promedio),
   con mención explícita de que las herramientas de IA pueden reducir la contratación de freelancers
-  (F-307). En contraste, web developers y digital designers **+7%** (F-308). **El estancamiento no
+  (F-308). En contraste, web developers y digital designers **+7%** (F-309). **El estancamiento no
   es del "diseño": es del diseño gráfico.**
 - **UXPA 2024**: 35% de organizaciones **redujeron** staff de UX — mismo porcentaje que las que lo
-  aumentaron (F-312). ⚠️ **No hay edición 2025 ni 2026**: el mejor dato laboral del gremio tiene
+  aumentaron (F-313). ⚠️ **No hay edición 2025 ni 2026**: el mejor dato laboral del gremio tiene
   ~2 años. El benchmark de tamaño de equipo de NN/g (ratio 1:5:50) tiene **6 años y es pre-IA
-  generativa** (F-311).
+  generativa** (F-312).
 - **Las encuestas optimistas las publican empresas que le venden a ese mismo público**: Figma (82%
   de hiring managers dice que la necesidad se mantuvo o aumentó) y Adobe (46% percibe más
-  oportunidades) — F-279, F-313. **Conflicto de interés del emisor, declarado.**
+  oportunidades) — F-280, F-314. **Conflicto de interés del emisor, declarado.**
 
 ---
 
@@ -412,22 +412,22 @@ Esta tabla es el **entregable operativo** del node. Cada iteración la actualiza
 
 | Tendencia | Estado | Base |
 |---|---|---|
-| **Dark patterns mueven conducta económica** | 🟢 Documentado (causal) | F-240, F-250 |
-| **Accesibilidad como obligación legal (UE)** | 🟢 Documentado (normativo) | F-264 |
-| **Capacidad de diseño ↔ desempeño de firma** | 🟢 Documentado (asociación, no causalidad) | F-236, F-237 |
-| **Claridad/fluidez > ornamento** | 🟢 Documentado | F-248, F-271 |
-| **La mayoría de rediseños no mueve la métrica** | 🟢 Documentado (causal, A/B a escala) | F-261 |
-| **Crisis del modelo consultora de diseño** | 🟢 Documentado (4 señales convergentes) | F-306, F-315, F-316, F-324 |
-| **Explicabilidad de IA aumenta confianza** | 🟡 Parcial — sobrevendido (efecto moderado) | F-241 |
-| **Design systems aceleran el desarrollo** | 🟡 Plausible, mal probado | F-258, F-268, F-269 |
-| **Explicaciones mejoran la decisión humano-IA** | 🔴 Contradicho en su forma general | F-242, F-243, F-245 |
-| **ROI del diseño 100:1 / MDI +32%/+56% / 671%** | 🔴 Hype (eco de cita) | F-265, F-267, F-326 |
-| **Generative UI / interfaces generadas por LLM** | 🔴 Propuesta sin respaldo independiente | F-246, F-255, F-257, F-259 |
-| **Agentic UX** | 🔴 Hype declarado por sus propios autores | F-260 |
-| **Spatial computing como tendencia de diseño** | 🔴 Hype (~5% de diseñadores construye para ello) | F-278 |
-| **Personalización con IA a escala** | 🔴 Contradicho / condicional (efecto backfire) | F-252, F-253 |
-| **La IA acelera el trabajo de diseño/producto** | ⚔️ **Evidencia en conflicto directo** | F-256 vs. F-258 |
-| **La IA está causando el desempleo de diseñadores** | ⚔️ Atribución declarada ≠ causalidad | F-281 vs. F-282 |
+| **Dark patterns mueven conducta económica** | 🟢 Documentado (causal) | F-241, F-251 |
+| **Accesibilidad como obligación legal (UE)** | 🟢 Documentado (normativo) | F-265 |
+| **Capacidad de diseño ↔ desempeño de firma** | 🟢 Documentado (asociación, no causalidad) | F-237, F-238 |
+| **Claridad/fluidez > ornamento** | 🟢 Documentado | F-249, F-272 |
+| **La mayoría de rediseños no mueve la métrica** | 🟢 Documentado (causal, A/B a escala) | F-262 |
+| **Crisis del modelo consultora de diseño** | 🟢 Documentado (4 señales convergentes) | F-307, F-316, F-317, F-325 |
+| **Explicabilidad de IA aumenta confianza** | 🟡 Parcial — sobrevendido (efecto moderado) | F-242 |
+| **Design systems aceleran el desarrollo** | 🟡 Plausible, mal probado | F-259, F-269, F-270 |
+| **Explicaciones mejoran la decisión humano-IA** | 🔴 Contradicho en su forma general | F-243, F-244, F-246 |
+| **ROI del diseño 100:1 / MDI +32%/+56% / 671%** | 🔴 Hype (eco de cita) | F-266, F-268, F-327 |
+| **Generative UI / interfaces generadas por LLM** | 🔴 Propuesta sin respaldo independiente | F-247, F-256, F-258, F-260 |
+| **Agentic UX** | 🔴 Hype declarado por sus propios autores | F-261 |
+| **Spatial computing como tendencia de diseño** | 🔴 Hype (~5% de diseñadores construye para ello) | F-279 |
+| **Personalización con IA a escala** | 🔴 Contradicho / condicional (efecto backfire) | F-253, F-254 |
+| **La IA acelera el trabajo de diseño/producto** | ⚔️ **Evidencia en conflicto directo** | F-257 vs. F-259 |
+| **La IA está causando el desempleo de diseñadores** | ⚔️ Atribución declarada ≠ causalidad | F-282 vs. F-283 |
 
 ### Convergencias entre las tres pistas
 
@@ -465,15 +465,15 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 | **H1** | Un índice de empresas "design-centric" definido **ex ante** tendrá exceso de retorno sobre el S&P **indistinguible de cero** (el +211% del DVI es look-ahead bias + supervivencia) | `abierta` — predicción del node: el exceso se reduce >70% | Replicación prospectiva del DVI con criterios congelados en t₀ |
 | **H2** | El reporte de Forrester (2016) **no contiene** la afirmación "$1 → $100" en la forma en que circula | `abierta` | Compra y lectura del reporte (~US$1.495) |
 | **H3** | En tarea repetida a lo largo de ≥5 sesiones, la **generative UI** dará **peor** tiempo de tarea y **peor** aprendibilidad que una UI estática equivalente, aunque gane en preferencia declarada en la sesión 1 | `abierta` — predicción: se replica Findlater & McGrenere | Estudio longitudinal independiente entre-sujetos |
-| **H4** | Añadir explicación ("¿por qué veo esto?") **no** mejora precisión ni calibración en decisiones de **baja** dificultad; **sí** en alta | `parcial` — respaldada por F-245 en laboratorio, sin replicar en dominio aplicado | RCT con dificultad manipulada en recomendación de producto financiero/seguros |
+| **H4** | Añadir explicación ("¿por qué veo esto?") **no** mejora precisión ni calibración en decisiones de **baja** dificultad; **sí** en alta | `parcial` — respaldada por F-246 en laboratorio, sin replicar en dominio aplicado | RCT con dificultad manipulada en recomendación de producto financiero/seguros |
 | **H5** | En cualquier estudio que mida **a la vez** desempeño objetivo y percibido, la mejora subjetiva **excederá** a la objetiva en ≥20 pp | `abierta` — **la hipótesis de mayor valor destructivo**: si se sostiene, invalida casi todo reporte de industria sobre design systems, IA y madurez de diseño | Meta-análisis de estudios que reporten ambas medidas |
 | **H6** | El efecto de un design system sobre el tiempo de desarrollo será **<20%** (no 47%, no 69%) con contrabalanceo de orden, N≥40 y devs externos a la organización que mantiene el sistema | `abierta` | Replicación independiente de Sparkbox con diseño corregido |
 | **H7** | En un A/B real, las variantes que aumentan **fluidez** (contraste, jerarquía, menos elementos) superarán a las que aumentan atractivo estético sin aumentar fluidez | `abierta` — **aplicable directamente al contexto Rimac/seguros** | Experimento de campo |
 | **H8** | En Perú, donde la causa #1 de desconfianza en seguros es la falta de información, la exposición a patterns de *hidden information* predecirá desconfianza en aseguradoras **con más fuerza que las variables demográficas** | `abierta` — **el puente más directo con el resto del proyecto** | Experimento sobre muestra peruana replicando Luguri & Strahilevitz |
 | **H9** | **Brecha actitud-conducta en diseñadores**: el discurso público es anti-IA/anti-slop pero la adopción declarada es altísima (89% trabaja más rápido) | `abierta` — **estructuralmente el mismo fenómeno que `disposicion_compartir_datos_pricing` en `lapuerta`** | Medir si la indignación estética predice o no comportamiento de uso |
 | **H10** | La ansiedad gremial es un fenómeno de **seniority**, no de gremio: el daño está concentrado en juniors pero se enuncia en nombre de "los diseñadores" | `abierta` — no se pudo segmentar por seniority | Datos de empleo o encuesta segmentada por años de experiencia |
-| **H11** | **El doom tiene modelo de negocio**: la proporción de amplificadores del discurso "la IA mata al diseño" con incentivo comercial directo (cursos, bootcamps, portafolios) es alta; si lo es, el volumen social debe descontarse fuertemente | `abierta` — caso testigo identificado (F-285) | Auditar los N amplificadores principales y clasificar su modelo de ingresos |
-| **H12** | El backlash estético es **señalización de estatus profesional**, no preferencia de usuario | `parcial` — respaldada por F-283 (gatekeeping) y F-296 (usabilidad) | Testear si la "autenticidad imperfecta" mejora alguna métrica de usuario |
+| **H11** | **El doom tiene modelo de negocio**: la proporción de amplificadores del discurso "la IA mata al diseño" con incentivo comercial directo (cursos, bootcamps, portafolios) es alta; si lo es, el volumen social debe descontarse fuertemente | `abierta` — caso testigo identificado (F-286) | Auditar los N amplificadores principales y clasificar su modelo de ingresos |
+| **H12** | El backlash estético es **señalización de estatus profesional**, no preferencia de usuario | `parcial` — respaldada por F-284 (gatekeeping) y F-297 (usabilidad) | Testear si la "autenticidad imperfecta" mejora alguna métrica de usuario |
 | **H13** | **Desacople valuación/desempeño**: si Figma reporta ≥40% de crecimiento en Q2 2026 y la acción **no** recupera sobre $33, el mercado descuenta disrupción por IA, no ejecución | `abierta` — **falsable el 5-ago-2026** (fecha de reporte) y en los 90 días siguientes | Reporte Q2 2026 de Figma + evolución del precio |
 | **H14** | **El ARR de vibe coding no retiene**: si Lovable cierra a $12-13,2B, su ARR a 12 meses crecerá <50% (vs. 150%+ histórico), revelando la cohorte de churn | `abierta` | Comparar ARR jul-2026 vs. jul-2027; se resuelve de inmediato si publican NRR |
 | **H15** | **La consultora de diseño pura no vuelve**: ninguna de las cuatro publicará crecimiento de dos dígitos en 2026-2027; la recuperación, si ocurre, será como implementadoras de IA | `abierta` | Cualquier reporte de revenue o adquisición a múltiplo alto |
@@ -562,7 +562,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 
 | # | Fecha | Foco de la corrida | Qué cambió | Pendiente que hereda la siguiente |
 |---|---|---|---|---|
-| 1 | 2026-07-26 | Barrido fundacional de 360°: impacto tangible vs. propuesta innovadora, en producto/UX, IA, design systems, servicio y visual | **Creación del node.** 92 fuentes registradas (F-236 a F-327). Escala de madurez (§5) y 14 reglas de criterio (§7) establecidas. Tablero abierto con 18 hipótesis | (a) **H13 es falsable el 5-ago-2026** — Figma reporta Q2; (b) barrido en **español/portugués** (H17), todo lo hallado es anglosajón; (c) **service design** merece pasada propia (H18); (d) leer los preprints de generative UI de primera mano (el proxy bloqueó arXiv); (e) buscar si apareció **replicación independiente** del efecto design systems (H6) |
+| 1 | 2026-07-26 | Barrido fundacional de 360°: impacto tangible vs. propuesta innovadora, en producto/UX, IA, design systems, servicio y visual | **Creación del node.** 92 fuentes registradas (F-237 a F-328). Escala de madurez (§5) y 14 reglas de criterio (§7) establecidas. Tablero abierto con 18 hipótesis | (a) **H13 es falsable el 5-ago-2026** — Figma reporta Q2; (b) barrido en **español/portugués** (H17), todo lo hallado es anglosajón; (c) **service design** merece pasada propia (H18); (d) leer los preprints de generative UI de primera mano (el proxy bloqueó arXiv); (e) buscar si apareció **replicación independiente** del efecto design systems (H6) |
 
 ---
 
@@ -577,7 +577,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   hilos de primera mano** — es decir, el eje de *validación social*, que es justamente lo que
   distingue a esa pista de un resumen de prensa, quedó medido con menor confianza que el eje de
   frecuencia.
-- **Autoría no verificada** en tres fuentes (F-237 y dos preprints de 2026): citadas por título y
+- **Autoría no verificada** en tres fuentes (F-238 y dos preprints de 2026): citadas por título y
   URL, sin inventar nombres.
 - **Sesgo geográfico**: todo lo hallado es anglosajón. No se cubrió literatura ni conversación en
   español/portugués — crítico dado el contexto peruano del proyecto (H17).
