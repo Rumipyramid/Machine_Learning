@@ -6,76 +6,76 @@
 > proyecto Back to Basics (ver Conexiones) — ese node documenta el modelo de venta y el estado
 > del proyecto; este node documenta el producto que se vende.
 >
-> Fecha de elaboración: 2026-07-24 · Última actualización: 2026-07-26 · Versión: v1.1
+> Fecha de elaboración: 2026-07-24 · Última actualización: 2026-07-26 · Versión: v1.2
 > (v1.0: catálogo inicial, "3(+1) productos reales" a partir de consolidar 5 nombres comerciales
 > — Vida Contigo y Vida Ahorro Garantizado se trataban como el mismo producto dotal 170% con
 > nombres distintos, y VFP figuraba como producto activo con confianza Alta.
-> v1.1 (2026-07-26, confirmado por el usuario) corrige la premisa: **los productos finales son 6**
-> — Vida Contigo y Vida Ahorro Garantizado son productos distintos, no el mismo producto con dos
-> nombres; VFP queda fuera del catálogo activo (descontinuado); se agregan VCD digital y
-> Endosable digital como productos finales aún sin caracterizar. Cambio estructural — reordena la
-> tabla de §1, la trazabilidad de fuentes de §2, el catálogo de coberturas de §3 y los niveles de
-> confianza de §6.)
+> v1.1 (2026-07-26) revirtió esa premisa a partir de una instrucción del usuario sin documento
+> fuente adjunto — **resultó ser un error**, aplicado sin verificar contra la fuente primaria.
+> v1.2 (2026-07-26, mismo día) el usuario adjuntó el documento fuente original
+> (`matriz_productos_vida_rimac_notas.md`) — confirma que **v1.0 era la lectura correcta** y
+> revierte v1.1 en su totalidad: VFP vigente, Vida Contigo = Vida Ahorro Garantizado = Vida Ahorro
+> con Devolución (mismo producto), 3 productos reales + Vida Temporal Total. El usuario instruyó
+> además que **"todos los otros nombres de producto deben quedar pendientes"** — VCD digital,
+> Endosable digital y cualquier otro nombre que aparezca en el Playbook del Asesor u otro material
+> quedan marcados explícitamente como no confirmados, no como productos finales adicionales.
+> Cambio estructural — revierte la tabla de §1, la trazabilidad de fuentes de §2, el catálogo de
+> coberturas de §3 y los niveles de confianza de §6 al estado de v1.0, con la precisión nueva
+> sobre nombres pendientes.)
 > Fuentes: documento interno "Matriz de productos Vida RIMAC — Notas y catálogo de coberturas"
-> (complementario a `matriz_productos_vida_rimac.csv`, ninguno de los dos vive en este
-> repositorio), consolidado a partir de 6 documentos fuente internos (3 decks de
-> capacitación/lanzamiento + 3 fichas comerciales vigentes desde 01/01/2025); corrección de
-> alcance v1.1 confirmada directamente por el usuario en sesión (2026-07-26), sin documento fuente
-> nuevo.
+> — ahora persistido en `research/_fuentes_internas/matriz_productos_vida_rimac_notas.md`
+> (complementario a `matriz_productos_vida_rimac.csv`, que sigue sin vivir en este repositorio),
+> consolidado a partir de 6 documentos fuente internos (3 decks de capacitación/lanzamiento + 3
+> fichas comerciales vigentes desde 01/01/2025); adjuntado directamente por el usuario en sesión
+> el 2026-07-26, confirmando la lectura de v1.0 y cerrando la corrección incorrecta de v1.1.
 
 ---
 
-## 1. Alcance — 6 productos finales
+## 1. Alcance — 3(+1) productos reales, todo lo demás pendiente
 
-**Los productos finales de Vida Individual son 6** (confirmado por el usuario, 2026-07-26 —
-sustituye el conteo "3(+1)" de v1.0 de este node):
+Lo que en un inicio parecían 5 productos distintos son en realidad **3 productos reales**, cuyo
+nombre comercial varía según la pieza (deck de capacitación, ficha comercial, material de
+lanzamiento) — la consolidación de nombres fue confirmada explícitamente con el usuario y con el
+documento fuente adjuntado el 2026-07-26, no es una inferencia de este node:
 
-| Producto | Nombres detectados | Estado de caracterización |
+| Producto | Nombres detectados | Variantes en la matriz |
 |---|---|---|
-| Plan Vida Flexible | Plan Vida Flexible / Vida Ahorro Flexible (VAF) / Vida Inversión Flexible (VIF) | Caracterizado (1 fila en la matriz fuente) |
-| Vida Contigo | Vida Contigo / Vida Ahorro con Devolución | Caracterizado (1 fila en la matriz fuente) |
-| Vida Ahorro Garantizado | Vida Ahorro Garantizado | Caracterizado (ficha comercial propia, §2) |
-| Vida Temporal Total | Vida Temporal Total | Caracterizado cualitativamente; sin cifras duras (edad, prima, suma asegurada) — ver §5 |
-| VCD digital | VCD digital | **Pendiente de caracterizar** — sin ficha ni fuente propia todavía |
-| Endosable digital | Endosable digital | **Pendiente de caracterizar** — sin ficha ni fuente propia todavía |
+| Vida Futuro Protegido | VFP | 4 filas (Plan 35, Plan 65, Plus 35, Plus 65) |
+| Plan Vida Flexible | Plan Vida Flexible / Vida Ahorro Flexible (VAF) / Vida Inversión Flexible (VIF) | 1 fila |
+| Producto dotal 170% | Vida Contigo / Vida Ahorro Garantizado / Vida Ahorro con Devolución | 1 fila |
 
-**VFP (Vida Futuro Protegido) queda fuera del catálogo activo — descontinuado** (confirmado por
-el usuario, 2026-07-26). Se conserva como referencia histórica en §2 (trazabilidad) y §3
-(catálogo de coberturas, donde varias coberturas compartidas estaban documentadas también para
-VFP) porque esas fuentes ya estaban consolidadas en v1.0 de este node, pero **no tratar a VFP
-como parte de la oferta comercial vigente** en ningún material nuevo.
+Hay un **cuarto producto, distinto de los tres anteriores: Vida Temporal Total** (protección
+pura, sin ahorro ni devolución), con ficha comercial propia. Confirma características
+cualitativas (moneda, plazos, endoso, coberturas), pero todavía no tiene cifras de edad de
+ingreso/permanencia, prima mínima ni suma asegurada — campos marcados "PENDIENTE" en la matriz
+fuente.
 
-**Nota sobre la consolidación anterior:** v1.0 de este node trataba a Vida Contigo y Vida Ahorro
-Garantizado como el mismo "producto dotal 170%" con nombres distintos, apoyado en que ambas
-fichas comerciales (§2) documentan una cobertura de sobrevivencia/devolución similar. Esa lectura
-queda corregida: son dos productos distintos con ficha comercial propia cada uno.
+**Todos los demás nombres de producto quedan pendientes** (instrucción explícita del usuario,
+2026-07-26): **VCD digital** y **Endosable digital** aparecen mencionados en el Playbook del
+Asesor (tabla del Paso 4 de Venta consultiva) pero **no están confirmados como productos reales
+distintos** — no tienen ficha, fuente, coberturas ni condiciones documentadas. No tratarlos como
+un 5º/6º producto del catálogo activo; no usarlos para cotizar ni comprometer condiciones con un
+cliente hasta que Producto confirme si son variantes de los 3(+1) ya conocidos o productos
+nuevos.
 
 ## 2. Trazabilidad de fuentes
 
 | Documento | Tipo | Vigencia | Producto(s) que documenta |
 |---|---|---|---|
-| `Productos_VUL.pptx` | Capacitación interna | 2023 | Vida Futuro Protegido (VFP) — **descontinuado, ver §1**; se conserva la fila por trazabilidad histórica |
+| `Productos_VUL.pptx` | Capacitación interna | 2023 | Vida Futuro Protegido (VFP) |
 | `Flexivida_-_Producto.pptx` | Comercial/capacitación | Marzo 2022 | Plan Vida Flexible |
 | `Seguro_de_Vida_Flexible_2.pdf` | Ficha comercial | Vigente desde 01/01/2025 | Plan Vida Flexible |
 | `Lanzamiento_Vida_Contigo_170_Devolución.pptx` | Repricing/lanzamiento | Junio 2023 | Vida Contigo (tabla de devolución por plazo/edad/moneda) |
 | `Seguro_de_Vida_Contigo_2__1___1_.pdf` | Ficha comercial | Vigente desde 01/01/2025 | Vida Contigo |
-| `Seguro_de_Vida_Ahorro_Garantizado.pdf` | Ficha comercial | Vigente desde 01/01/2025 | Vida Ahorro Garantizado |
+| `Seguro_de_Vida_Ahorro_Garantizado.pdf` | Ficha comercial | Vigente desde 01/01/2025 | Vida Ahorro Garantizado (mismo producto que Vida Contigo, §1) |
 | `Brochure_Temporal_Total_1__1_.pdf` | Ficha comercial | Vigente desde 01/01/2025 | Vida Temporal Total |
-| *(sin documento fuente todavía)* | — | — | VCD digital — **pendiente**, ver §5 |
-| *(sin documento fuente todavía)* | — | — | Endosable digital — **pendiente**, ver §5 |
+| *(sin documento fuente)* | — | — | VCD digital / Endosable digital — **pendientes, no confirmados como producto real distinto**, ver §1 y §4 |
 
 Ninguno de estos documentos vive en este repositorio ni es fuente externa citable por `cronista`
 — son documentación comercial/interna de RIMAC, mismo tratamiento que los documentos fuente del
 node [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual]].
 
 ## 3. Catálogo de coberturas / addons
-
-**Nota (2026-07-26):** la columna "Presente en" de esta tabla sigue listando a VFP tal como se
-consolidó en v1.0 de este node, porque la fuente (`Flexivida_-_Producto.pptx`) documentaba las
-coberturas compartidas citando a VFP junto con Plan Vida Flexible y Vida Contigo. **VFP está
-descontinuado (§1)** — al usar esta tabla para un material nuevo, leer esas menciones como
-referencia histórica de qué cobertura existía en el producto descontinuado, no como parte de la
-oferta vigente.
 
 Estas coberturas se repiten entre productos con reglas propias por producto — de ahí que se
 documenten aparte en vez de ser columnas de una matriz única:
@@ -113,18 +113,15 @@ lámina o deck ya construido que use "170%" como cifra puntual.
 
 ## 5. Preguntas abiertas / pendientes
 
-- **VCD digital y Endosable digital**: confirmados como 2 de los 6 productos finales (§1,
-  2026-07-26), pero **sin ninguna fuente ni ficha todavía** — no hay coberturas, montos, edades ni
-  condiciones documentadas. Máxima prioridad de levantamiento si el proyecto necesita citarlos en
-  cualquier material dirigido al asesor o al cliente.
+- **VCD digital y Endosable digital**: aparecen en la tabla del Paso 4 del Playbook del Asesor,
+  pero **no están confirmados como productos reales distintos** (§1, 2026-07-26) — sin fuente,
+  ficha, coberturas ni condiciones. No usarlos para cotizar ni comprometer condiciones con un
+  cliente hasta que Producto confirme si son variantes de los 3(+1) ya conocidos o productos
+  nuevos.
 - **Vida Temporal Total**: tiene ficha propia (`Brochure_Temporal_Total_1__1_.pdf`), que confirma
   moneda, plazos, endoso y las 4 coberturas. Sigue sin edad de ingreso/permanencia, prima mínima
   ni suma asegurada — la ficha es comercial resumida, no el condicionado. Si se necesita para la
   matriz completa, hay que pedir el condicionado o la ficha técnica interna.
-- **Vida Ahorro Garantizado**: tiene ficha propia (`Seguro_de_Vida_Ahorro_Garantizado.pdf`), antes
-  tratada como el mismo producto que Vida Contigo (v1.0 de este node) — separados en v1.1 (§1).
-  No se re-auditó el detalle de coberturas de su ficha de forma independiente de Vida Contigo;
-  pendiente si se necesita el detalle línea por línea.
 - **Depósitos extraordinarios en Plan Vida Flexible**: dos versiones del mismo deck 2022 dan
   cifras distintas ("4 veces al año hasta $500,000" vs. "ilimitadamente") — no resuelto.
 - **Riesgo de suscripción, prima mínima y frecuencia de pago de Vida Contigo**: no especificados
@@ -135,18 +132,14 @@ lámina o deck ya construido que use "170%" como cifra puntual.
 
 ## 6. Nivel de confianza por producto
 
+- **VFP — Alta**: una sola fuente (deck de capacitación 2023), datos internamente consistentes.
 - **Plan Vida Flexible — Media-alta**: 3 fuentes con datos compatibles entre sí (2022 y 2025),
   pero con la duda de depósitos extraordinarios sin resolver.
-- **Vida Contigo — Media**: 2 fuentes (repricing 2023 + ficha 2025) con datos compatibles.
-- **Vida Ahorro Garantizado — Media**: tiene ficha propia (2025); no se auditó su detalle de forma
-  tan profunda como Vida Contigo, al haberse tratado como el mismo producto hasta v1.0.
+- **Vida Contigo (3 nombres) — Media**: consolidación de 3 nombres comerciales confirmada por el
+  usuario; el detalle exacto de coberturas varía levemente entre fichas.
 - **Vida Temporal Total — Media**: tiene ficha propia y confirma características cualitativas,
   pero le faltan las cifras duras (edad, montos, prima) que sí tienen los demás productos.
-- **VCD digital — Sin caracterizar**: ningún dato disponible todavía (§5).
-- **Endosable digital — Sin caracterizar**: ningún dato disponible todavía (§5).
-- **VFP — Descontinuado (§1)**: ya no forma parte del catálogo activo; su confianza histórica
-  (Alta, una sola fuente internamente consistente) queda solo como referencia por si se necesita
-  material retrospectivo.
+- **VCD digital / Endosable digital — Sin caracterizar, no confirmados como producto real (§1)**.
 
 ---
 
@@ -156,15 +149,18 @@ lámina o deck ya construido que use "170%" como cifra puntual.
   el 2026-07-24) — no es investigación con fuentes externas nuevas; no se registraron filas
   nuevas en `research/fuentes/codice.md` porque ninguna de las fuentes citadas aquí es evidencia
   externa citable (son documentación comercial/interna propia de RIMAC).
-- Los documentos fuente (`Productos_VUL.pptx`, `Flexivida_-_Producto.pptx`, las fichas
-  comerciales, `matriz_productos_vida_rimac.csv`) **no viven en este repositorio** — este node
-  resume su contenido relevante, no los reemplaza como fuente primaria.
-- Vida Temporal Total tiene la confianza más baja entre los productos con ficha propia por falta
-  de cifras duras — no tratar sus datos cualitativos como equivalentes en completitud a los de
-  Plan Vida Flexible.
-- VCD digital y Endosable digital son productos finales confirmados (§1) pero sin ninguna
-  caracterización todavía — no inventar coberturas, montos ni condiciones para ellos en ningún
-  material derivado de este node.
+- `matriz_productos_vida_rimac_notas.md` (la fuente principal de este node) **ya vive en el
+  repositorio** desde 2026-07-26, en `research/_fuentes_internas/matriz_productos_vida_rimac_notas.md`
+  — deja de aplicar la limitación de "se pierde entre sesiones" para ese documento específico.
+  Los documentos que él mismo cita como fuente (`Productos_VUL.pptx`, `Flexivida_-_Producto.pptx`,
+  las fichas comerciales en PDF, `matriz_productos_vida_rimac.csv`) **siguen sin vivir en este
+  repositorio** — este node resume su contenido relevante, no los reemplaza como fuente primaria.
+- Vida Temporal Total tiene la confianza más baja de los tres productos con ficha propia por
+  falta de cifras duras — no tratar sus datos cualitativos como equivalentes en completitud a los
+  de VFP o Plan Vida Flexible.
+- VCD digital y Endosable digital **no son productos finales confirmados** (§1) — son nombres
+  vistos en el Playbook del Asesor sin fuente ni ficha propia. No inventar coberturas, montos ni
+  condiciones para ellos en ningún material derivado de este node.
 - El caveat del §4 (no usar "170%" como cifra fija) aplica retroactivamente a cualquier material
   ya construido por el proyecto que haya citado esa cifra sin la tabla completa — no se auditó en
   este node si algún material existente (p. ej. el deck del proyecto Back to Basics) incurre en
@@ -179,9 +175,9 @@ lámina o deck ya construido que use "170%" como cifra puntual.
   node, "venta consultiva de 4 pasos" — motivación → dimensionamiento → perfil financiero →
   propuesta) y del ejercicio de dimensionamiento del Plan Piloto (§8 de ese node, Casos C y D) —
   ambos requieren saber qué cubre y cuánto cuesta cada producto real, no solo el modelo de
-  conversación. Los 6 productos finales de §1 (Plan Vida Flexible, Vida Contigo, Vida Temporal
-  Total, Vida Ahorro Garantizado, VCD digital, Endosable digital) son los que debe reflejar
-  cualquier mención de catálogo en ese node.
+  conversación. Los 3(+1) productos reales de §1 (VFP, Plan Vida Flexible, Vida Contigo,
+  Vida Temporal Total) son los que debe reflejar cualquier mención de catálogo en ese node — VCD
+  digital y Endosable digital quedan pendientes, no confirmados.
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — glosario de
   cliente que deliberadamente no cubre el detalle técnico de coberturas (IAFA, EG, ITP,
   PEI, DPP); ese detalle vive en el §3 de este node.

@@ -656,11 +656,15 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 - **La resolución descrita en §6 (Bloque 4 vs. CUA) no estaba verificada contra el documento
   fuente actual — actualizado (2026-07-25): la "Resolución definitiva" de §6 sí se aplicó
   directamente al documento de la sesión** (verificado porque se hizo en esta misma sesión, no
-  por revisión posterior). Sigue aplicando la limitación de fondo: `Playbook_del_asesor.md` **no
-  vive en este repositorio** — este node resume y confía en el estado del archivo de sesión, sin
-  poder versionarlo ni auditarlo como el resto de este repo. Si ese archivo se pierde o se edita
-  fuera de esta trazabilidad, este node puede volver a quedar desactualizado del mismo modo que
-  pasó entre el 2026-07-20 y el 2026-07-24.
+  por revisión posterior). **Actualizado (2026-07-26): `Playbook_del_asesor.md` ya vive en este
+  repositorio** — el usuario lo adjuntó y quedó persistido en
+  `research/_fuentes_internas/Playbook_del_asesor.md` (v1.0 · jun 2026 · borrador interno,
+  contenido verificado contra este node el mismo día: coincide con el estado que §3/§6 ya
+  documentaban — 2 rutas de contacto CUA, sin speech "en frío"). Esto cierra la limitación de
+  fondo que motivó esta nota: el archivo deja de depender de sobrevivir solo en el estado de una
+  sesión externa y ya puede versionarse y auditarse como el resto de este repo. Si se genera una
+  versión más nueva del Playbook fuera de esta sesión, hay que volver a subirla aquí para que este
+  node y el archivo persistido no diverjan otra vez.
 - **El mapa AS IS 2026 (§2) existe como diagrama visual** (compartido en la sesión el
   2026-07-24) pero no se pudo persistir el archivo de imagen en este repo — este node solo
   guarda su lectura textual (clusters, semáforo de nodos). Si se necesita el diagrama en sí para
@@ -677,12 +681,14 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 ## Conexiones
 
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC — catálogo y coberturas]] —
-  catálogo de qué cubre y cuánto cuesta cada producto real: **6 productos finales** (Plan Vida
-  Flexible, Vida Contigo, Vida Temporal Total, Vida Ahorro Garantizado, VCD digital, Endosable
-  digital — VFP descontinuado, ver §1 de ese node); insumo directo del Bloque 4 del Playbook (§4,
-  venta consultiva de 4 pasos) y de los Casos C/D de dimensionamiento del Plan Piloto (§8) — incluye
-  el caveat de no citar "170%" de devolución como cifra fija, relevante para cualquier material de
-  este proyecto que mencione Vida Contigo.
+  catálogo de qué cubre y cuánto cuesta cada producto real (VFP, Plan Vida Flexible, Vida
+  Contigo, Vida Temporal Total); insumo directo del Bloque 4 del Playbook del Asesor (§4 de ese
+  node, "venta consultiva de 4 pasos" — motivación → dimensionamiento → perfil financiero →
+  propuesta) y del ejercicio de dimensionamiento del Plan Piloto (§8 de ese node, Casos C y D) —
+  incluye el caveat de no citar "170%" de devolución como cifra fija, relevante para cualquier
+  material de este proyecto que mencione Vida Contigo. VCD digital y Endosable digital, que
+  aparecen en el Playbook del Asesor, quedan pendientes — no confirmados como producto real
+  distinto (§1 de ese node).
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — investigación
   `/trinidad` (2026-07-24) que completó la sección "Preguntas frecuentes de producto" del
   Playbook del Asesor (Bloque 4, Momento 4) con un glosario de cliente; hallazgo clave: la
