@@ -89,9 +89,11 @@ venta. Organizados por lo que resuelven, no por el orden en que se hicieron:
 ### Evidencia que sostiene el diseño
 - **Desk research y bench de estrategias de contacto** en frío vs. caliente: qué gatillos abren
   una conversación (reciprocidad, curiosidad, personalización).
-- **Sacrificial concepts**: seis conceptos de contacto probados con no-clientes para elicitar
-  objeciones reales antes de invertir en el diseño final, específicamente para el escenario sin
-  CUA.
+- **Shadowing con asesores, entrevistas y cliente incógnito**: observación directa de la conducta
+  real del asesor y del cliente en el proceso de venta actual, no solo lo declarado.
+- **Sacrificial concepts**: seis conceptos de contacto usados como vehículo de validación
+  temprana con Legal, Cumplimiento y clientes reales — poner a prueba la estrategia de contacto
+  antes de comprometerse con el diseño final.
 - **Validación con stakeholders** en cada hito, para que el diseño no avance sin alineamiento.
 
 ### Estrategia de contacto (el corazón legal y conductual del proyecto)
