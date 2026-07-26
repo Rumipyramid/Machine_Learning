@@ -677,11 +677,12 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 ## Conexiones
 
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC — catálogo y coberturas]] —
-  catálogo de qué cubre y cuánto cuesta cada producto real (VFP, Plan Vida Flexible, Vida
-  Contigo, Vida Temporal Total); insumo directo del Bloque 4 del Playbook (§4, venta consultiva
-  de 4 pasos) y de los Casos C/D de dimensionamiento del Plan Piloto (§8) — incluye el caveat de
-  no citar "170%" de devolución como cifra fija, relevante para cualquier material de este
-  proyecto que mencione Vida Contigo.
+  catálogo de qué cubre y cuánto cuesta cada producto real: **6 productos finales** (Plan Vida
+  Flexible, Vida Contigo, Vida Temporal Total, Vida Ahorro Garantizado, VCD digital, Endosable
+  digital — VFP descontinuado, ver §1 de ese node); insumo directo del Bloque 4 del Playbook (§4,
+  venta consultiva de 4 pasos) y de los Casos C/D de dimensionamiento del Plan Piloto (§8) — incluye
+  el caveat de no citar "170%" de devolución como cifra fija, relevante para cualquier material de
+  este proyecto que mencione Vida Contigo.
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — investigación
   `/trinidad` (2026-07-24) que completó la sección "Preguntas frecuentes de producto" del
   Playbook del Asesor (Bloque 4, Momento 4) con un glosario de cliente; hallazgo clave: la
