@@ -69,7 +69,7 @@ por afirmación cuando corresponda.
 | `_nodes/proyecto-back-to-basics-ffvv-vida.md` | Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido — Modelo de Experiencia de Venta Vida (deck al VP, Dx1-Dx3), mapa sistémico AS IS, estrategias de contacto (DS 016), playbook del asesor, cruce con evidencia/tesis del Lobo, Plan Piloto de validación (10 asesores) | 2026-07-25 | v1.3 (lineamiento definitivo de CUA — solo estrategias con consentimiento ya existente; cierra Estrategias 2 y 3; resolución real aplicada al playbook de sesión) |
 | `_nodes/matriz-productos-vida-rimac.md` | Matriz de productos Vida RIMAC: catálogo de 3(+1) productos reales (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total), coberturas/addons, trazabilidad de fuentes y niveles de confianza | 2026-07-24 | v1.0 |
 | `_nodes/glosario-seguro-vida-peru.md` | Glosario de seguro de vida en lenguaje claro — FAQ de cliente (investigación `/trinidad`: pista empírica + social + negocio) para completar el Playbook del Asesor | 2026-07-24 | v1.0 |
-| `_nodes/tendencias-diseno.md` | **Node acumulativo** — Tendencias en diseño: qué tiene impacto tangible demostrado y qué es propuesta innovadora sin respaldo (producto/UX, IA, design systems, servicio, visual). Incluye escala de madurez de evidencia, tablero de 18 hipótesis vivas y 14 reglas de criterio destiladas | 2026-07-26 | v1.0 (iteración 1) |
+| `_nodes/tendencias-diseno.md` | **Node acumulativo** — Tendencias en diseño: qué tiene impacto tangible demostrado y qué es propuesta innovadora sin respaldo (producto/UX, IA, design systems, servicio, visual). Incluye escala de madurez de evidencia, tablero de 18 hipótesis vivas, 14 reglas de criterio destiladas y el protocolo del entregable fijo de cada corrida de DaVinci (pieza de vanguardia + estado del arte) | 2026-07-26 | v1.1 (iteración 1 + entregable de corrida) |
 
 ---
 
@@ -78,6 +78,7 @@ por afirmación cuando corresponda.
 | Output | Construido sobre (nodes) | Última actualización | Estado |
 |---|---|---|---|
 | `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
+| `_outputs/davinci/001-adaptable-no-adaptivo.html` — pieza DaVinci 001: ejemplo de diseño de vanguardia (instrumento interactivo "adaptable, no adaptivo") + comentario del estado del arte. **Serie recurrente**: una pieza por corrida, ver protocolo en §🔁 del node fuente | `tendencias-diseno` | 2026-07-26 | al día |
 
 > **Estado**: `al día` o `requiere refresh`.
 

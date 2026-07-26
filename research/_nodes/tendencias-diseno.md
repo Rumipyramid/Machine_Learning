@@ -1,7 +1,7 @@
 # Tendencias en diseño: qué tiene impacto real y qué es propuesta
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-07-26 · Versión: v1.0
+> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-07-26 · Versión: v1.1
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta permanente: **¿qué tendencias de diseño tienen impacto tangible demostrado y
 > cuáles son propuestas innovadoras todavía sin respaldo?**
@@ -25,6 +25,39 @@ recurrente de `/trinidad` sobre tendencias de diseño debe:
    lo que se puede usar sin volver a consultar la evidencia; todo lo demás sigue siendo provisional.
 5. **Descontar por estacionalidad y por incentivo del emisor** (ver §7, reglas C4 y C5) antes de
    leer cualquier pico de conversación como cambio estructural.
+6. **Entregar la pieza de la corrida** (ver abajo). No es opcional ni decorativa: es el examen
+   práctico de si el criterio acumulado sirve para diseñar algo, no solo para juzgar lo ajeno.
+
+### 📐 Entregable fijo de cada corrida de DaVinci
+
+Además de actualizar el node, **cada corrida entrega al usuario una pieza publicada** con dos
+partes inseparables:
+
+1. **Un ejemplo de diseño de vanguardia** — construido, no citado. Una pieza real y autocontenida
+   que *encarna* una posición de frontera, en vez de describirla. Se publica como artifact y se
+   versiona en `research/_outputs/davinci/NNN-slug.html`.
+2. **Un comentario sobre el estado del arte** — dentro de la misma pieza, anclado a la evidencia
+   del node y citando por ID (`F-n`).
+
+Reglas de la pieza, derivadas del criterio del propio node:
+
+- **La vanguardia que se elige debe ser defendible con §5, no con el discurso de la industria.**
+  Si una tendencia está clasificada 🔴, la pieza puede tratarla — pero como objeto de crítica o
+  proponiendo la versión que sí resiste la evidencia, nunca celebrándola.
+- **Preferir el instrumento sobre la ilustración.** Si la tesis se puede *medir* en manos del
+  lector, se mide (regla C6: conducta antes que volumen; C11: cronometrar antes que preguntar).
+- **La pieza declara sus propios límites en el cuerpo, no al pie.** Una demo n=1 se rotula como
+  demo n=1. Un instrumento que puede refutar a su autor debe decirlo y reportar ese resultado
+  igual (ver §7, C3 y C7).
+- **Identidad visual específica de cada corrida.** Nada de plantilla reutilizada: la corrida 001
+  no debe parecerse a la 002. La pieza es también la demostración de que el criterio produce
+  diseño, no solo veredictos.
+
+**Índice de piezas**
+
+| # | Fecha | Pieza | Tesis de vanguardia |
+|---|---|---|---|
+| 001 | 2026-07-26 | `research/_outputs/davinci/001-adaptable-no-adaptivo.html` | **Adaptable, no adaptivo.** La frontera vendida (generative UI: el sistema rehace la interfaz) es la versión extrema de la adaptación rápida que F-247 ya midió y descartó; la versión defendible mueve el control al usuario. Incluye instrumento que cronometra la pérdida de memoria espacial |
 
 ---
 
@@ -562,7 +595,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 
 | # | Fecha | Foco de la corrida | Qué cambió | Pendiente que hereda la siguiente |
 |---|---|---|---|---|
-| 1 | 2026-07-26 | Barrido fundacional de 360°: impacto tangible vs. propuesta innovadora, en producto/UX, IA, design systems, servicio y visual | **Creación del node.** 92 fuentes registradas (F-237 a F-328). Escala de madurez (§5) y 14 reglas de criterio (§7) establecidas. Tablero abierto con 18 hipótesis | (a) **H13 es falsable el 5-ago-2026** — Figma reporta Q2; (b) barrido en **español/portugués** (H17), todo lo hallado es anglosajón; (c) **service design** merece pasada propia (H18); (d) leer los preprints de generative UI de primera mano (el proxy bloqueó arXiv); (e) buscar si apareció **replicación independiente** del efecto design systems (H6) |
+| 1 | 2026-07-26 | Barrido fundacional de 360° + pieza DaVinci 001: impacto tangible vs. propuesta innovadora, en producto/UX, IA, design systems, servicio y visual | **Creación del node.** 92 fuentes registradas (F-237 a F-328). Escala de madurez (§5) y 14 reglas de criterio (§7) establecidas. Tablero abierto con 18 hipótesis. Se incorpora el **entregable fijo de cada corrida** (pieza de vanguardia + comentario del estado del arte) al protocolo de §🔁, con la pieza 001 publicada | (a) **H13 es falsable el 5-ago-2026** — Figma reporta Q2; (b) barrido en **español/portugués** (H17), todo lo hallado es anglosajón; (c) **service design** merece pasada propia (H18); (d) leer los preprints de generative UI de primera mano (el proxy bloqueó arXiv); (e) buscar si apareció **replicación independiente** del efecto design systems (H6) |
 
 ---
 

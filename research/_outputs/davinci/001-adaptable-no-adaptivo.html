@@ -1,0 +1,711 @@
+<title>DaVinci 001 — Adaptable, no adaptivo</title>
+
+<style>
+  :root {
+    --paper:   #E2E7DF;
+    --raised:  #EDF0EA;
+    --ink:     #14201C;
+    --ink-2:   #4A5852;
+    --rule:    #C3CCC0;
+    --grid:    rgba(20, 32, 28, .055);
+    --signal:  #1F4FD8;
+    --unstable:#9C4F2E;
+    --focus:   #1F4FD8;
+
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, "DejaVu Sans Mono", Consolas, monospace;
+    --serif: "Iowan Old Style", Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+
+    --step: 28px;
+    --measure: 62ch;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:   #0F1613;
+      --raised:  #17211C;
+      --ink:     #DCE4DE;
+      --ink-2:   #8A9A92;
+      --rule:    #27332E;
+      --grid:    rgba(220, 228, 222, .05);
+      --signal:  #7A9CFF;
+      --unstable:#D2795A;
+      --focus:   #7A9CFF;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #0F1613;
+    --raised:  #17211C;
+    --ink:     #DCE4DE;
+    --ink-2:   #8A9A92;
+    --rule:    #27332E;
+    --grid:    rgba(220, 228, 222, .05);
+    --signal:  #7A9CFF;
+    --unstable:#D2795A;
+    --focus:   #7A9CFF;
+  }
+  :root[data-theme="light"] {
+    --paper:   #E2E7DF;
+    --raised:  #EDF0EA;
+    --ink:     #14201C;
+    --ink-2:   #4A5852;
+    --rule:    #C3CCC0;
+    --grid:    rgba(20, 32, 28, .055);
+    --signal:  #1F4FD8;
+    --unstable:#9C4F2E;
+    --focus:   #1F4FD8;
+  }
+
+  * { box-sizing: border-box; }
+
+  .sheet {
+    min-height: 100%;
+    background-color: var(--paper);
+    background-image:
+      repeating-linear-gradient(to right,  var(--grid) 0 1px, transparent 1px var(--step)),
+      repeating-linear-gradient(to bottom, var(--grid) 0 1px, transparent 1px var(--step));
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.62;
+    padding: clamp(20px, 5vw, 64px) clamp(16px, 5vw, 48px) 96px;
+  }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  /* ---- rótulos de instrumento ---- */
+  .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    margin: 0;
+  }
+
+  .masthead { display: flex; flex-direction: column; gap: 20px; }
+
+  .masthead-rule {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: clamp(30px, 6.2vw, 58px);
+    line-height: 1.02;
+    letter-spacing: -.045em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h1 .dim { color: var(--ink-2); }
+
+  .standfirst {
+    max-width: var(--measure);
+    font-size: 19px;
+    color: var(--ink);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .standfirst em { font-style: italic; }
+
+  /* ---- instrumento ---- */
+  .instrument {
+    border: 1px solid var(--rule);
+    background: var(--raised);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .instrument-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--rule);
+    flex-wrap: wrap;
+  }
+
+  .panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 720px) {
+    .panels { grid-template-columns: 1fr; }
+  }
+
+  .panel {
+    padding: 18px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+  }
+  .panel + .panel { border-left: 1px solid var(--rule); }
+  @media (max-width: 720px) {
+    .panel + .panel { border-left: 0; border-top: 1px solid var(--rule); }
+  }
+
+  .panel-head { display: flex; flex-direction: column; gap: 4px; }
+  .panel-name {
+    font-family: var(--mono);
+    font-size: 15px;
+    letter-spacing: -.02em;
+    margin: 0;
+  }
+  .panel-a .panel-name { color: var(--unstable); }
+  .panel-b .panel-name { color: var(--signal); }
+  .panel-note { font-size: 14px; color: var(--ink-2); margin: 0; line-height: 1.45; }
+
+  .prompt {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: .02em;
+    border: 1px dashed var(--rule);
+    padding: 9px 11px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ink-2);
+  }
+  .prompt strong { color: var(--ink); font-weight: 600; letter-spacing: .04em; }
+
+  .chips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .chip {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: -.01em;
+    padding: 11px 6px;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    color: var(--ink);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0;
+    min-height: 44px;
+  }
+  .chip:hover { border-color: var(--ink-2); }
+  .chip:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .chip[data-picked="1"] { border-color: var(--signal); box-shadow: inset 0 0 0 1px var(--signal); }
+  .chip[data-wrong="1"] { border-color: var(--unstable); color: var(--unstable); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .chip { transition: border-color .12s ease, color .12s ease; }
+  }
+
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+  button.act {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 9px 13px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    cursor: pointer;
+    border-radius: 0;
+  }
+  button.act.ghost { background: transparent; color: var(--ink); }
+  button.act:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  button.act[disabled] { opacity: .38; cursor: not-allowed; }
+
+  .trace { display: flex; align-items: flex-end; gap: 10px; }
+  canvas { display: block; width: 100%; height: 46px; }
+
+  .stat {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 12px;
+    color: var(--ink-2);
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .stat b { color: var(--ink); font-weight: 600; }
+
+  .verdict {
+    border-top: 1px solid var(--rule);
+    padding: 14px 16px;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+  .verdict b { color: var(--ink); }
+
+  .caveat {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .04em;
+    color: var(--ink-2);
+    border-left: 2px solid var(--unstable);
+    padding-left: 10px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ---- comentario ---- */
+  .essay { display: flex; flex-direction: column; gap: 28px; max-width: var(--measure); }
+  .essay h2 {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: -.03em;
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .essay h3 {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .01em;
+    margin: 0 0 6px;
+  }
+  .essay p { margin: 0 0 12px; text-wrap: pretty; }
+  .essay p:last-child { margin-bottom: 0; }
+  .essay section { margin: 0; }
+  .essay strong { font-weight: 600; }
+  .src { font-family: var(--mono); font-size: .78em; color: var(--ink-2); letter-spacing: .02em; }
+
+  .table-scroll { overflow-x: auto; border: 1px solid var(--rule); }
+  table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  thead th {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    font-weight: 500;
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  td.state { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
+
+  .colophon {
+    border-top: 1px solid var(--rule);
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+</style>
+
+<div class="sheet">
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="masthead-rule">
+      <p class="label">DaVinci · corrida 001 · 2026-07-26</p>
+      <p class="label">Vanguardia + estado del arte</p>
+    </div>
+    <h1>adaptable,<br><span class="dim">no adaptivo</span></h1>
+    <p class="standfirst">
+      La vanguardia que se vende en 2026 es la interfaz que <em>se rehace sola</em> para ti.
+      La vanguardia defendible es la contraria: la interfaz que <em>tú</em> rehaces. Abajo no
+      hay un argumento sobre eso — hay un instrumento para medirlo en tus propias manos.
+    </p>
+  </header>
+
+  <!-- ============ EL INSTRUMENTO ============ -->
+  <section class="instrument" aria-label="Experimento: adaptativo contra adaptable">
+    <div class="instrument-head">
+      <p class="label">Instrumento 001 — tiempo de localización</p>
+      <p class="label">6 pruebas por panel</p>
+    </div>
+
+    <div class="panels">
+
+      <!-- PANEL A -->
+      <div class="panel panel-a">
+        <div class="panel-head">
+          <p class="panel-name">A · adaptativo</p>
+          <p class="panel-note">El sistema decide. Tras cada acierto, lo último que usaste sube al primer lugar y lo demás se corre — igual que un menú por frecuencia/recencia.</p>
+        </div>
+        <div class="prompt" id="promptA">Pulsa iniciar para empezar.</div>
+        <div class="chips" id="chipsA"></div>
+        <div class="controls">
+          <button class="act" id="startA" type="button">Iniciar</button>
+        </div>
+        <div class="trace"><canvas id="traceA" width="600" height="92" aria-label="Traza de tiempos, panel adaptativo"></canvas></div>
+        <div class="stat" id="statA"><span>mediana <b>—</b></span></div>
+      </div>
+
+      <!-- PANEL B -->
+      <div class="panel panel-b">
+        <div class="panel-head">
+          <p class="panel-name">B · adaptable</p>
+          <p class="panel-note">Tú decides. El orden nunca cambia solo. Puedes reordenarlo antes de empezar: activa reordenar y pulsa dos fichas para intercambiarlas.</p>
+        </div>
+        <div class="prompt" id="promptB">Pulsa iniciar para empezar.</div>
+        <div class="chips" id="chipsB"></div>
+        <div class="controls">
+          <button class="act" id="startB" type="button">Iniciar</button>
+          <button class="act ghost" id="swapB" type="button" aria-pressed="false">Reordenar</button>
+        </div>
+        <div class="trace"><canvas id="traceB" width="600" height="92" aria-label="Traza de tiempos, panel adaptable"></canvas></div>
+        <div class="stat" id="statB"><span>mediana <b>—</b></span></div>
+      </div>
+
+    </div>
+
+    <div class="verdict" id="verdict" role="status">
+      Corre los dos paneles. La comparación aparece cuando cada uno tenga al menos 4 pruebas.
+    </div>
+  </section>
+
+  <p class="caveat">
+    Demostración, no evidencia. n=1, sin control, sin contrabalanceo de orden, y quien la
+    escribió tiene una hipótesis previa. Sirve para que sientas el mecanismo — la memoria
+    espacial que el reordenamiento te quita — no para probar nada. Esa distinción es el
+    punto entero de esta corrida.
+  </p>
+
+  <!-- ============ ESTADO DEL ARTE ============ -->
+  <div class="essay">
+
+    <h2>Estado del arte</h2>
+
+    <section>
+      <h3>Por qué esto es vanguardia y no nostalgia</h3>
+      <p>
+        La frontera declarada de 2026 es la <strong>generative UI</strong>: la interfaz se
+        genera de nuevo, para cada usuario, en cada turno. Suena a futuro. Es, término por
+        término, la versión extrema de la <em>adaptación rápida controlada por el sistema</em>
+        que la investigación de interfaces ya evaluó — y que perdió.
+      </p>
+      <p>
+        Los menús estáticos resultaron significativamente más rápidos que los adaptativos, y
+        los <strong>adaptables</strong> (control del usuario) le ganaron a los adaptativos
+        (control del sistema). El hallazgo más filoso es el que casi nadie cita: cuanto
+        <em>mejor</em> acierta la adaptación, <em>menos</em> conciencia tiene el usuario del
+        conjunto completo de funciones. La precisión del sistema se paga en aprendibilidad.
+        <span class="src">Findlater &amp; McGrenere, 2004 / 2010 — F-247</span>
+      </p>
+      <p>
+        Lo vanguardista, entonces, no es rechazar la generación: es <strong>mover el control
+        de sitio</strong>. Interfaz maleable que el usuario compone, con el modelo como
+        material y no como piloto. Es la única lectura de la frontera que no choca con veinte
+        años de medición.
+      </p>
+    </section>
+
+    <section>
+      <h3>Qué sostiene la evidencia hoy</h3>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">Tendencia</th><th scope="col">Estado</th><th scope="col">Nota</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Dark patterns mueven conducta</td><td class="state">🟢 documentado</td><td>Causal: aceptación 11,3% → 41,9% <span class="src">F-241</span></td></tr>
+            <tr><td>Claridad por encima de ornamento</td><td class="state">🟢 documentado</td><td>El efecto estética cae de r=,79 a r=,34 al controlar fluidez <span class="src">F-249</span></td></tr>
+            <tr><td>La mayoría de rediseños no mueve la métrica</td><td class="state">🟢 documentado</td><td>~1/3 de los experimentos acierta <span class="src">F-262</span></td></tr>
+            <tr><td>Explicabilidad de IA da confianza</td><td class="state">🟡 sobrevendido</td><td>Correlación moderada, no dominante <span class="src">F-242</span></td></tr>
+            <tr><td>Generative UI mejora la experiencia</td><td class="state">🔴 sin respaldo</td><td>Evidencia positiva, de sus propios proponentes <span class="src">F-258</span></td></tr>
+            <tr><td>ROI del diseño 100:1 · +32%/+56% · 671%</td><td class="state">🔴 hype</td><td>Eco de cita; el 671% no tiene estudio primario <span class="src">F-266, F-268, F-327</span></td></tr>
+            <tr><td>La IA acelera el trabajo de diseño</td><td class="state">⚔️ en conflicto</td><td>−19% real creyendo +20% <span class="src">F-257</span>, contra −46/−69% <span class="src">F-259</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h3>La regla que se llevan puesta casi todos</h3>
+      <p>
+        Existe un ensayo aleatorizado donde desarrolladores expertos fueron <strong>19% más
+        lentos</strong> usando IA mientras estimaban ser 20% más rápidos: una brecha de
+        percepción de casi cuarenta puntos, en la dirección cómoda.
+        <span class="src">METR, 2025 — F-257</span>
+      </p>
+      <p>
+        Si eso generaliza, casi todo reporte de industria sobre design systems, madurez de
+        diseño y productividad con IA está medido con el instrumento equivocado — porque está
+        medido preguntando. De ahí que este instrumento cronometre en vez de encuestar, y de
+        ahí que su propia advertencia esté impresa arriba en vez de en una nota al pie.
+      </p>
+    </section>
+
+    <section>
+      <h3>Qué mirar a continuación</h3>
+      <p>
+        El <strong>5 de agosto</strong> Figma reporta su segundo trimestre. Crece acelerando
+        —+46% interanual— y cotiza por debajo de su precio de salida a bolsa. Si publica ≥40%
+        y la acción no recupera, queda confirmado que el mercado no está descontando ejecución
+        sino <em>obsolescencia</em>: la tesis de que un modelo generalista come la categoría.
+        Es la hipótesis del tablero que se resuelve primero, y la más barata de verificar.
+        <span class="src">H13 · F-303, F-326</span>
+      </p>
+    </section>
+
+  </div>
+
+  <footer class="colophon">
+    <p class="label">Rumipyramid · Machine_Learning</p>
+    <p class="label">Fuentes F-237 a F-328 · node tendencias-diseno.md</p>
+  </footer>
+
+</div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var LABELS = ["Exportar","Duplicar","Alinear","Capa nueva","Máscara","Fusionar",
+                "Rotar","Recortar","Historial","Rejilla","Guías","Muestras"];
+  var TRIALS = 6;
+
+  function median(a) {
+    if (!a.length) return null;
+    var s = a.slice().sort(function (x, y) { return x - y; });
+    var m = Math.floor(s.length / 2);
+    return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+  }
+
+  function Panel(key, adaptive) {
+    this.key = key;
+    this.adaptive = adaptive;
+    this.order = LABELS.slice();
+    this.times = [];
+    this.errors = 0;
+    this.running = false;
+    this.target = null;
+    this.t0 = 0;
+    this.swapMode = false;
+    this.pendingSwap = null;
+
+    this.chips  = document.getElementById("chips" + key);
+    this.prompt = document.getElementById("prompt" + key);
+    this.start  = document.getElementById("start" + key);
+    this.canvas = document.getElementById("trace" + key);
+    this.stat   = document.getElementById("stat" + key);
+
+    var self = this;
+    this.start.addEventListener("click", function () { self.begin(); });
+    this.render();
+    this.draw();
+  }
+
+  Panel.prototype.render = function () {
+    var self = this;
+    this.chips.textContent = "";
+    this.order.forEach(function (label) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip";
+      b.textContent = label;
+      b.addEventListener("click", function () { self.hit(label, b); });
+      self.chips.appendChild(b);
+    });
+  };
+
+  Panel.prototype.begin = function () {
+    this.times = [];
+    this.errors = 0;
+    this.running = true;
+    this.swapMode = false;
+    this.pendingSwap = null;
+    if (this.swapBtn) {
+      this.swapBtn.setAttribute("aria-pressed", "false");
+      this.swapBtn.classList.add("ghost");
+    }
+    this.start.disabled = true;
+    this.next();
+    this.draw();
+    updateVerdict();
+  };
+
+  Panel.prototype.next = function () {
+    var pool = this.order.filter(function (l) { return l !== this.target; }, this);
+    this.target = pool[Math.floor(Math.random() * pool.length)];
+    this.prompt.innerHTML = "prueba " + (this.times.length + 1) + "/" + TRIALS +
+                            " &nbsp;·&nbsp; busca <strong>" + this.target + "</strong>";
+    this.t0 = performance.now();
+  };
+
+  Panel.prototype.hit = function (label, node) {
+    if (this.swapMode) { this.doSwap(label, node); return; }
+    if (!this.running) return;
+
+    if (label !== this.target) {
+      this.errors++;
+      node.setAttribute("data-wrong", "1");
+      var n = node;
+      setTimeout(function () { n.removeAttribute("data-wrong"); }, 260);
+      return;
+    }
+
+    this.times.push(performance.now() - this.t0);
+    node.setAttribute("data-picked", "1");
+    var picked = node;
+    setTimeout(function () { picked.removeAttribute("data-picked"); }, 200);
+
+    if (this.adaptive) {
+      // Promoción por recencia: exactamente lo que hace un menú adaptativo real.
+      var i = this.order.indexOf(label);
+      this.order.splice(i, 1);
+      this.order.unshift(label);
+      this.render();
+    }
+
+    this.draw();
+
+    if (this.times.length >= TRIALS) {
+      this.running = false;
+      this.start.disabled = false;
+      this.start.textContent = "Repetir";
+      this.prompt.innerHTML = "ronda completa &nbsp;·&nbsp; " + this.errors + " error(es)";
+      updateVerdict();
+      return;
+    }
+    this.next();
+    updateVerdict();
+  };
+
+  Panel.prototype.doSwap = function (label, node) {
+    if (this.pendingSwap === null) {
+      this.pendingSwap = label;
+      node.setAttribute("data-picked", "1");
+      return;
+    }
+    if (this.pendingSwap === label) {
+      this.pendingSwap = null;
+      node.removeAttribute("data-picked");
+      return;
+    }
+    var i = this.order.indexOf(this.pendingSwap);
+    var j = this.order.indexOf(label);
+    this.order[i] = label;
+    this.order[j] = this.pendingSwap;
+    this.pendingSwap = null;
+    this.render();
+  };
+
+  Panel.prototype.css = function (name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  };
+
+  Panel.prototype.draw = function () {
+    var c = this.canvas;
+    var dpr = window.devicePixelRatio || 1;
+    var w = c.clientWidth || 300;
+    var h = 46;
+    c.width = Math.round(w * dpr);
+    c.height = Math.round(h * dpr);
+    var g = c.getContext("2d");
+    g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    g.clearRect(0, 0, w, h);
+
+    var rule = this.css("--rule");
+    var col = this.adaptive ? this.css("--unstable") : this.css("--signal");
+
+    // base
+    g.strokeStyle = rule;
+    g.lineWidth = 1;
+    g.beginPath();
+    g.moveTo(0, h - 0.5);
+    g.lineTo(w, h - 0.5);
+    g.stroke();
+
+    if (this.times.length < 1) { this.readout(); return; }
+
+    var max = Math.max.apply(null, this.times) * 1.12;
+    var min = 0;
+    var step = this.times.length > 1 ? w / (TRIALS - 1) : w;
+
+    var pts = this.times.map(function (t, i) {
+      return [i * step, h - 4 - ((t - min) / (max - min)) * (h - 12)];
+    });
+
+    g.strokeStyle = col;
+    g.lineWidth = 1.5;
+    g.beginPath();
+    pts.forEach(function (p, i) { i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1]); });
+    g.stroke();
+
+    var last = pts[pts.length - 1];
+    g.fillStyle = col;
+    g.beginPath();
+    g.arc(last[0] === 0 ? 2 : Math.min(last[0], w - 2), last[1], 2.6, 0, Math.PI * 2);
+    g.fill();
+
+    this.readout();
+  };
+
+  Panel.prototype.readout = function () {
+    var m = median(this.times);
+    this.stat.innerHTML =
+      "<span>mediana <b>" + (m === null ? "—" : Math.round(m) + " ms") + "</b></span>" +
+      "<span>pruebas <b>" + this.times.length + "/" + TRIALS + "</b></span>" +
+      "<span>errores <b>" + this.errors + "</b></span>";
+  };
+
+  var A = new Panel("A", true);
+  var B = new Panel("B", false);
+
+  // Reordenar (solo panel adaptable)
+  var swapBtn = document.getElementById("swapB");
+  B.swapBtn = swapBtn;
+  swapBtn.addEventListener("click", function () {
+    if (B.running) return;
+    B.swapMode = !B.swapMode;
+    B.pendingSwap = null;
+    swapBtn.setAttribute("aria-pressed", B.swapMode ? "true" : "false");
+    swapBtn.classList.toggle("ghost", !B.swapMode);
+    B.prompt.textContent = B.swapMode
+      ? "reordenar: pulsa dos fichas para intercambiarlas."
+      : "Pulsa iniciar para empezar.";
+    B.render();
+  });
+
+  var verdict = document.getElementById("verdict");
+  function updateVerdict() {
+    if (A.times.length < 4 || B.times.length < 4) return;
+    var ma = median(A.times), mb = median(B.times);
+    var diff = ma - mb;
+    var pct = Math.round((diff / ma) * 100);
+    var txt = "<b>A adaptativo</b> " + Math.round(ma) + " ms &nbsp;·&nbsp; " +
+              "<b>B adaptable</b> " + Math.round(mb) + " ms &nbsp;·&nbsp; ";
+    if (Math.abs(pct) < 6) {
+      txt += "diferencia dentro del ruido. En tu caso el reordenamiento no costó nada medible — " +
+             "anótalo: es el resultado que refuta la tesis, y por eso el instrumento lo dice igual.";
+    } else if (diff > 0) {
+      txt += "el panel que se reordena solo te costó <b>" + pct + "% más tiempo</b>. " +
+             "Eso es la memoria espacial que la adaptación te quitó.";
+    } else {
+      txt += "el panel adaptable salió <b>" + Math.abs(pct) + "% más lento</b>. " +
+             "Contrario a la hipótesis — con n=1 eso es perfectamente posible, y queda registrado.";
+    }
+    verdict.innerHTML = txt;
+  }
+
+  var redraw;
+  window.addEventListener("resize", function () {
+    clearTimeout(redraw);
+    redraw = setTimeout(function () { A.draw(); B.draw(); }, 120);
+  });
+})();
+</script>
