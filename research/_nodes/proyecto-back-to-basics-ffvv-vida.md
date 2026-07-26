@@ -35,7 +35,12 @@
 > **Actualización 2026-07-24 (sin bump de versión, incremental):** análisis con el Lobo
 > (`research/lobo/opinion_experto.md`) para cerrar el hueco de citas del Bloque 4 (§5, Hallazgo 2)
 > y fortalecer Dx3 (§1) — suma F-220 a F-228 al ledger de `cronista`, únicas fuentes externas
-> nuevas que introduce este node hasta ahora.
+> nuevas que introduce este node hasta ahora. **Actualización 2026-07-25 (sin bump de versión,
+> incremental):** corrige la fuente de C.6 en la tabla de §5 (Davis 1976, F-236, reemplaza a
+> Darley & Latané 1968, F-226, cuyo encaje cuestionable ya advertía esta misma tabla) y aplica el
+> renombrado ya recomendado de C.7 ("Poner el precio en perspectiva (anclaje aplicado)", cita
+> ahora Tversky & Kahneman 1974, F-220, en vez de la "regla del 10x") — ambos a pedido del
+> usuario, aplicados directamente al Playbook de la sesión también.
 
 ---
 
@@ -380,8 +385,8 @@ corrección importante para el noveno:
 | C.3 | Proteger lo que ya tienes | Dotación (endowment) | Kahneman, Knetsch & Thaler 1990 (F-223, 🟢A) | — |
 | C.4 | El costo de esperar | Sesgo del presente | Pitthan & De Witte 2021 (F-3, 🟢A) | Mismo paper que ya sostiene `sesgo_presente` en el modelo `lapuerta` — identifica miopía y narrow framing como mecanismos específicos |
 | C.5 | Lo que está en riesgo | Aversión a la pérdida | Kahneman & Tversky 1979 (F-221, 🟢A) | Prospect Theory, base del Nobel 2002 |
-| C.6 | Cuando la decisión se posterga | Dilución de responsabilidad | Darley & Latané 1968 (F-226, 🟢A) | ⚠️ dominio original es emergencias con testigos, no venta 1-a-1 — encaje con objeciones no verificado en literatura, tratar con cautela (ver F-226) |
-| C.7 | Poner el precio en contexto | "Regla del 10x" | Cardone 2011 (F-227, 🔴E) | **No es un sesgo cognitivo** — es una heurística de metas de un libro de ventas motivacional, sin relación real con "poner el precio en perspectiva" (que sí es un uso legítimo de anclaje/encuadre); mal categorizada junto a sesgos reales; recomendación: retirarla de la lista o renombrarla explícitamente como técnica de mentalidad de ventas, no de ciencia conductual |
+| C.6 | Cuando la decisión se posterga | Decisión conjunta / difusión de responsabilidad entre quienes deciden | **Corregida 2026-07-25:** Davis 1976 (F-236, 🟢A) — reemplaza a Darley & Latané 1968 (F-226, 🟢A, conservada por trazabilidad) | La fuente original (emergencias con testigos) tenía encaje no verificado con objeciones de venta 1-a-1, tal como ya advertía esta misma fila; Davis (1976, *Decision Making Within the Household*) sí describe directamente el fenómeno de la objeción — una decisión de compra compartida en pareja/familia, no una emergencia. Corrección a pedido del usuario. |
+| C.7 | **Renombrada 2026-07-25:** "Poner el precio en perspectiva (anclaje aplicado)" (antes "Poner el precio en contexto") | Anclaje | Tversky & Kahneman 1974 (F-220, 🟢A) — mismo mecanismo que C.2 | **Aplicado el cambio recomendado el 2026-07-24:** ya no cita "la regla del 10x" (Cardone 2011, F-227, 🔴E — no era un sesgo cognitivo, quedó registrada en el ledger solo como hallazgo de la corrección); la técnica se cita ahora con su mecanismo real (anclaje, mismo que C.2/C.8), sin cambiar el contenido del ✗/✓ ni los tips. |
 | C.8 | Tu ingreso es tu mayor activo | Encuadre (framing) | Tversky & Kahneman 1981 (F-222, 🟢A) | Mismo mecanismo que C.5, aplicado a redacción de la oferta |
 | C.9 | Números claros | Facilidad cognitiva | Alter & Oppenheimer 2009 (F-225, 🟢A) | Base académica de un término popularizado por Kahneman (2011) |
 
@@ -503,9 +508,10 @@ documento aplicado (`Playbook_del_asesor.md`) sigue sin vivir en este repositori
   diseño de estrategia de contacto.
 - ~~Bloque 4 del playbook: agregar respaldo evidencial a las 9 estrategias de manejo de
   objeciones (C.1-C.9)~~ — **resuelto (2026-07-24)**, ver Hallazgo 2 de §5: citas insertadas
-  directamente en `Playbook_del_asesor.md`, con nota de corrección en C.7 ("regla del 10x") en
-  vez de retirar la sección sin decisión del equipo — queda pendiente que el equipo confirme si
-  retirarla o renombrarla como técnica de mentalidad de ventas.
+  directamente en `Playbook_del_asesor.md`. ~~Queda pendiente que el equipo confirme si retirar o
+  renombrar C.7~~ — **resuelto (2026-07-25):** el usuario confirmó renombrarla ("Poner el precio
+  en perspectiva (anclaje aplicado)"), aplicado directamente en el playbook y en la tabla de §5.
+  También se corrigió la fuente de C.6 (Davis 1976 reemplaza a Darley & Latané 1968).
 - Secciones aún "Pendiente" del playbook: banco de recursos de marketing, FAQ de
   coberturas/exclusiones, gestión de referidos e indicadores (Bloque 5), certificación e
   incentivos (Apéndice), meta de reviews en Google.
