@@ -60,19 +60,48 @@ en su día a día. Archivo fuente: `Herramientas_para_asesores119.xlsx`.
   huecos de AIDA o del cotizador — señal de que la necesidad ya se resuelve informalmente cuando
   la herramienta oficial no alcanza.
 
-## 2. Piloto de capacitación: Manejo de objeciones — NPS 96
+## 2. Taller de Manejo de Objeciones (CoE Experience Design) — resultados completos
 
-Se corrió un piloto de un sistema de capacitación para asesores sobre el tema **manejo de
-objeciones**, con un resultado de **NPS 96**.
+Taller orientado a fortalecer las capacidades de gestión de objeciones en la interacción con
+clientes, reportado por CoE Experience Design.
 
-- El tema del piloto (manejo de objeciones) es exactamente el dolor #1 que reporta la encuesta de
-  arriba — no es una coincidencia, es la misma señal desde dos fuentes independientes.
-- **Posible relación con AIDA Skill Trainer** (co-diseño en curso en el tablero): dado que ambos
-  tratan sobre entrenamiento de manejo de objeciones con apoyo de un simulador/sistema, podría
-  tratarse del mismo piloto o de uno directamente relacionado — **queda pendiente de confirmar**
-  con el equipo antes de fusionar el registro en el tablero.
-- El NPS 96 es evidencia fuerte a favor de priorizar "evolución de AIDA hacia herramienta
-  funcional" y "potenciamiento de la estrategia de entrenamiento" en el backlog de Back to Basics.
+### Métricas
+| Indicador | Resultado |
+|---|---|
+| Satisfacción con el contenido | 99.33% |
+| Desempeño del speaker | 98.67% |
+| NPS (recomendación) | **96.67** |
+| Asistencia | 83.33% (30 de 36 invitados) |
+
+### Qué generó el valor (drivers)
+1. **Aprendizaje basado en casuística real** — principal driver de valor; facilita la aplicación
+   directa en la gestión con clientes.
+2. **Uso de Copilot como herramienta diferenciadora** — potencia la calidad de las respuestas y
+   la creatividad en el manejo de objeciones. **Casi con certeza es AIDA** (el "copiloto" de IA
+   que el equipo co-diseñó en Q-13, con el mismo patrón de role-play + feedback + puntaje) — el
+   nombre "Copilot" en el reporte de CoE Experience Design probablemente es coloquial, no el
+   producto de Microsoft.
+3. **Metodología práctica y dinámica** — interacción, práctica y feedback fortalecen habilidades
+   críticas del rol.
+
+### Oportunidades de mejora identificadas
+1. Ampliar la práctica y diversidad de casos: incorporar role play, videos y más escenarios.
+2. Ajustar el uso de Copilot/AIDA: mejorar la consistencia en evaluaciones y el alineamiento con
+   lineamientos internos — **el mismo problema de calidad de información que ya reportan los
+   asesores en la encuesta de arriba** (AIDA "da respuestas equivocadas", "no brinda información
+   correcta"). Dos fuentes independientes apuntando al mismo defecto concreto.
+3. Optimizar logística: duración, horarios y espacios dedicados a práctica.
+
+### Relación con el tablero
+- El tema (manejo de objeciones), el mecanismo (role-play + feedback + IA) y el hallazgo de
+  calidad de información de la IA coinciden con **Q-13 (Co-diseño AIDA Skill Trainer)** en tres
+  puntos independientes — la evidencia para que sea el mismo piloto (o su primera corrida real)
+  es ahora fuerte, no solo una coincidencia temática. Sigue pendiente confirmar con el equipo si
+  se fusiona el registro de Q-69 dentro de Q-13 o se mantienen separados (el taller lo organizó
+  CoE Experience Design, no está claro si fue 100% el mismo entregable o una ejecución conjunta).
+- La oportunidad de mejora #2 (consistencia de Copilot/AIDA) es el mismo hallazgo que ya
+  respalda Q-64 (AIDA: de piloto a herramienta funcional) — ahora con evidencia de una ejecución
+  real, no solo de la encuesta.
 
 ## Cómo se usa esta evidencia
 
