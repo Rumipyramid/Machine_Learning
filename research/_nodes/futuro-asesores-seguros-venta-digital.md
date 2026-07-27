@@ -8,7 +8,7 @@
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: ¿en el futuro desaparecerán los asesores de seguros? ¿Qué sucede
 > en sociedades donde la tecnología permite venta 100% digital?
-> Fuentes registradas en `research/fuentes/codice.md` (F-180 a F-192, F-362 a F-369).
+> Fuentes registradas en `research/fuentes/codice.md` (F-180 a F-192, F-362 a F-371).
 
 ---
 
@@ -240,6 +240,39 @@ proyectado a superar USD 100M para fin de 2025, líder del canal directo del mer
 HK (F-365, 🟠D — comunicado propio redistribuido, no triangulación independiente). No se encontró
 confirmación de rentabilidad neta — la nota que sí la reporta corresponde a OneDegree, una empresa
 distinta del mismo mercado, que no se investigó a fondo en esta ronda.
+
+**Qué hace bien Bowtie, específicamente (ampliación 2026-07-27, pregunta de seguimiento):**
+
+1. **Eligió el producto correcto para digital puro.** Se enfocó en VHIS (esquema de salud
+   voluntario *estandarizado y regulado por el gobierno de HK*) y vida a término — productos con
+   condiciones ya homogeneizadas por regulación, no negociadas caso a caso. Es la misma variable
+   que predice §1.2 de este node (la complejidad del producto decide si digital funciona): Bowtie
+   no intentó digitalizar lo complejo, escogió lo que ya venía simplificado por ley.
+2. **Comisión cero, no "menos intermediación".** La licencia de "virtual insurer" de HK (la
+   primera otorgada, dic. 2018, régimen "Fast Track") le prohíbe por diseño vender vía
+   agentes/bancos — toda la prima va a protección, sin comisión. No es que eliminó al humano por
+   estrategia; el modelo regulatorio se lo exige, y lo convirtió en ventaja de precio (F-370).
+3. **Reduce fricción de entrada sin pedir confianza por adelantado.** Cotización instantánea sin
+   pedir datos personales antes de cotizar, pago mensual sin permanencia forzada — coherente con
+   lo que documenta [[transicion-venta-fria-a-opt-in|el node sobre transición a venta opt-in]]
+   sobre reducir la carga de "pedir antes de dar valor".
+4. **Ataca exactamente el punto donde el resto del sector falla: el reclamo, no la venta.** §3.2
+   de este mismo node documenta que los reclamos 100% digitales fallan 33-39% del tiempo en el
+   sector (Bain, F-183). Bowtie reporta ~70.000 reclamos procesados con 99.53% de aprobación
+   (F-371, autorreportado, no auditado por tercero) — si esa cifra es siquiera direccionalmente
+   correcta, es la única evidencia de este node de un actor digital-first resolviendo el momento
+   más débil del modelo, no solo la venta inicial.
+5. **Mantiene soporte humano, pero sin incentivo comercial.** Sus especialistas de atención al
+   cliente están licenciados como agentes tradicionales, pero operan bajo la misma política de
+   comisión cero — hay humano disponible, sin la presión de venta que la asimetría de información
+   (§1.1) predice que erosiona confianza. Mismo patrón que Ethos (§3.7 arriba): humano presente,
+   pero no como vendedor con comisión.
+
+**Lectura conjunta con Ethos:** los dos casos de mejor evidencia de este node no ganaron
+eliminando al humano ni compitiendo en "más digital que nadie" — ganaron **eligiendo el segmento de
+producto ya simplificado por regulación/estandarización, y usando al humano donde hace falta sin
+incentivarlo a presionar.** Es una confirmación más específica de la síntesis de §4, no un caso
+nuevo que la contradiga.
 
 **Contraevidencia buscada a propósito (Paso 10 de `marketer`):** dos señales de que "éxito
 comercial" y "modelo 100% digital sostenido" no son lo mismo. (1) **Bestow** (EE.UU.) vendió su
