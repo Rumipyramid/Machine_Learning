@@ -17,9 +17,9 @@ del sistema reveló un problema más grande: el propio equipo trabajaba sin arti
 
 | | |
 |---|---|
-| **Qué ya está construido (V1)** | El modelo de venta (5 bloques) con su agente conversacional, el sistema de perfilamiento por motivaciones, el toolkit de social selling, playbook y materiales, y Universidad Vida |
+| **Qué ya está construido (Fase 1)** | El modelo de venta (5 bloques) con su agente conversacional, el sistema de perfilamiento por motivaciones, el toolkit de social selling, playbook y materiales, y Universidad Vida |
 | **Evidencia que lo respalda** | Encuesta a 19 asesores + taller piloto con NPS 96.67 |
-| **Qué falta para cerrar la V1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
+| **Qué falta para cerrar la Fase 1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
 | **Qué viene después** | Entrenamiento continuo, espejo a más canales de Vida, transformación al ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
 | **Por qué ahora** | Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
 
@@ -109,14 +109,14 @@ Equipo: Melissa y Alejandro, junto con César (Lead de Service Design, de otro e
 
 ## 5. Diagnóstico y resultados
 
-Antes de construir la V1, el equipo se apoyó en tres fuentes de diagnóstico: el mapa completo del
+Antes de construir la Fase 1, el equipo se apoyó en tres fuentes de diagnóstico: el mapa completo del
 ecosistema (resultado de la exploración obligatoria, §3), una encuesta a los propios asesores, y
 los resultados de un taller piloto sobre el dolor #1 que ese diagnóstico detectó. Las tres apuntan
 en la misma dirección.
 
 ### 5.1 Diagnóstico sistémico: qué reveló el mapa del ecosistema
 
-La exploración obligatoria del sistema (§3) no arrojó una lista plana de palancas — arrojó tres
+La exploración obligatoria del sistema (§3) no arrojó una lista plana de palancas — arrojó cuatro
 hallazgos que se explican entre sí, y que son el verdadero resultado del diagnóstico. Todo lo demás
 que muestra el mapa (9 frentes, decenas de nodos) es contexto de apoyo, no el hallazgo central.
 
@@ -145,18 +145,20 @@ propio mapa, el nodo que representa el resultado hacia el cliente —**KPIs de e
 (NPS, EJO)**— depende casi enteramente de las Habilidades comerciales y la Experiencia del asesor:
 el cliente hereda directamente cualquier inconsistencia que el sistema no resolvió antes de llegar
 al asesor. No existe, en el mapa, ninguna palanca dedicada a sostener una experiencia consistente
-entre asesores — es un efecto secundario no gestionado de todo lo anterior. Esto también corrige
-una lectura frecuente del problema: cuando el cliente se queja, en general no es por un tema de
-consentimiento formal — es porque **se sintió acosado o maltratado** en el contacto. El riesgo
-legal (§4) y la experiencia del cliente son dos problemas relacionados pero distintos: resolver el
-consentimiento no resuelve, por sí solo, el trato.
+entre asesores — es un efecto secundario no gestionado de todo lo anterior.
+
+**4 · La queja es sobre el trato, no sobre el consentimiento.** Esto corrige una lectura frecuente
+del problema: cuando el cliente se queja, en general no es por un tema de consentimiento formal —
+es porque **se sintió acosado o maltratado** en el contacto. El riesgo legal (§4) y la experiencia
+del cliente son dos problemas relacionados pero distintos: resolver el consentimiento no resuelve,
+por sí solo, el trato.
 
 **Hallazgos secundarios.** El mapa organiza 9 frentes (Producto, Palancas de venta, Formación,
 Selección, Incentivos, Personalidad del Asesor, Seguimiento, Espacio Digital del asesor y Espacio
 Físico del asesor) — no es un inventario exhaustivo de todas las causas de venta, sino el mapa de
 las palancas que el equipo puede accionar y cómo se conectan entre sí. Back to Basics interviene
 sobre todo en Personalidad del Asesor, Formación, y una parte de Palancas de venta y Espacio
-Digital/Físico del asesor — exactamente donde convergen los tres hallazgos centrales.
+Digital/Físico del asesor — exactamente donde convergen los cuatro hallazgos centrales.
 
 Uno de los outputs tangibles de esta exploración es el mapa completo — nodos, relaciones causales
 (+/−) y agrupación por frente:
@@ -241,16 +243,27 @@ momento de máxima sobrecarga para el asesor, donde todas las lógicas del siste
 presión de cierre, guion de producto) tienen que resolverse en tiempo real y sin apoyo. El tema
 (manejo de objeciones), el momento (cierre) y el mecanismo (simulación con IA + feedback) coinciden
 en el mapa del ecosistema, en la encuesta y en el taller — tres señales independientes apuntando en
-la misma dirección. Esto hace de "evolucionar el entrenamiento con IA en manejo de objeciones" la
-apuesta mejor respaldada de todo el backlog de siguientes pasos (§8), y es la base de diagnóstico
-sobre la que se construyó la V1 (§6).
+la misma dirección.
+
+Pero el diagnóstico completo pide algo más amplio que solo entrenamiento. Si las lógicas del
+sistema colisionan (hallazgo 2) y la experiencia del cliente se desarticula porque hereda esa
+inconsistencia —sintiéndose además mal tratado, no solo mal informado (hallazgos 3 y 4)—, la
+respuesta no puede ser una sola pieza: tiene que ser contenido y herramientas que, entre ellos,
+hablen el mismo idioma. Y si tanto la encuesta como el taller señalan, de forma independiente, el
+mismo defecto de calidad en el copiloto de IA (§5.2, §5.3), corregir esa falla deja de ser un
+detalle de mantenimiento y pasa a ser condición para que cualquier otra apuesta funcione.
+
+**Crear contenido y herramientas que hablen el mismo idioma, corregir las fallas del copiloto y
+evolucionar el entrenamiento con IA son las apuestas mejor respaldadas del backlog, y son la base
+de la Fase 1 (§6).**
 
 ---
 
 ## 6. Qué se construyó
 
-La primera tanda del proyecto es un modelo de venta completo, no piezas sueltas de comunicación.
-Esto es lo que existe hoy, construido:
+La Fase 1 del proyecto es un modelo de venta completo, no piezas sueltas de comunicación — la
+respuesta a que el contenido y las herramientas hablen el mismo idioma (§5.4). Esto es lo que
+existe hoy, construido:
 
 **El Modelo de Experiencia de Venta Vida, en 5 bloques.** Quiénes somos · Qué vendes · Que te
 encuentren · **La asesoría** · Después del sí. La asesoría es el corazón del modelo: un recorrido
@@ -379,12 +392,12 @@ entrega. Por eso es una **estrategia de espejo**: replicar lo ya validado, no re
 
 Producto distinto, cliente con otras motivaciones de compra, otro ciclo de venta y otras
 objeciones típicas — por eso esto es una **estrategia de transformación**, no una copia. Antes de
-construir una V1 para AMI hay que repetir la exploración obligatoria del sistema (§3) para ese
+construir una Fase 1 para AMI hay que repetir la exploración obligatoria del sistema (§3) para ese
 ramo: el mapa del ecosistema de Vida (§5.1) no es válido para AMI.
 
-- **Se hereda:** la metodología completa (exploración de sistema → diagnóstico → V1 con evidencia
-  propia), el enfoque de formación con práctica espaciada, y el modelo de validación por piloto
-  (§7).
+- **Se hereda:** la metodología completa (exploración de sistema → diagnóstico → Fase 1 con
+  evidencia propia), el enfoque de formación con práctica espaciada, y el modelo de validación por
+  piloto (§7).
 - **Se transforma:** la arquitectura de decisión (qué preguntas anclan la oferta), el manejo de
   objeciones específico de AMI, y el sistema de perfilamiento por motivaciones — que necesita
   recalibrarse para el comprador de AMI, no reusarse tal cual.
@@ -427,8 +440,8 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 | | |
 |---|---|
 | **Cómo nació** | De un pedido puntual (speeches), tras la exploración obligatoria del sistema se detectó que el propio equipo trabajaba sin articulación — de ahí la unificación en Back to Basics |
-| **Qué muestra el diagnóstico** | Sobrecarga del asesor, lógicas de sistema que colisionan y experiencia desarticulada de cara al cliente — confirmado por el mapa del ecosistema, la encuesta a 19 asesores y el taller piloto (NPS 96.67), que además apuntan al mismo dolor concreto: manejo de objeciones en el cierre |
+| **Qué muestra el diagnóstico** | Sobrecarga del asesor, lógicas de sistema que colisionan, experiencia desarticulada de cara al cliente, y que la queja es sobre el trato — no sobre el consentimiento — confirmado por el mapa del ecosistema, la encuesta a 19 asesores y el taller piloto (NPS 96.67), que además apuntan al mismo dolor concreto: manejo de objeciones en el cierre |
 | **Qué ya está construido** | El modelo de venta (5 bloques) con su agente conversacional, el sistema de perfilamiento por motivaciones, el toolkit de social selling, playbook y materiales, y Universidad Vida — validados con ese diagnóstico y con Legal/Cumplimiento/CUA |
-| **Qué falta para cerrar la V1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
+| **Qué falta para cerrar la Fase 1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
 | **Qué viene después** | Entrenamiento continuo, espejo a más canales de Vida, transformación al ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
 | **Por qué ahora** | Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
