@@ -1,10 +1,11 @@
 # 🕝 Historial de cambios del Beholder — últimos 15 días
 
 > Generado por `registrar_cambio.py`. **No editar a mano.** El historial completo siempre queda en el git log.
-> Retención: 15 días · Última actualización: 2026-07-27T04:18:24 · Cambios vigentes: 23
+> Retención: 15 días · Última actualización: 2026-07-27T04:27:36 · Cambios vigentes: 24
 
 | Fecha/hora | Autor | Quest | Campo | Antes | Después | Tipo | Estado |
 |---|---|---|---|---|---|---|---|
+| 2026-07-27T04:27:36 | Alejandro | DOC | presentacion_back_to_basics_lowfi.html (nuevo) | No existía versión low-fi guardada en el repo (solo como Artifact de revisión) | Guardada en reportes/presentacion_back_to_basics_lowfi.html: storyboard de 15 láminas (skill /low-fi-slides), con el mapa del ecosistema embebido tal cual en la sección de diagnóstico sistémico; indexada en CLAUDE.md | normal | aplicado |
 | 2026-07-27T04:18:24 | Alejandro | DOC | presentacion_back_to_basics.md (§5.1–5.4 diagnóstico) | §5.1 describía el mapa por sus 9 frentes y dos nodos concentradores; §5.2/§5.3 con hallazgos resumidos | §5.1 reescrita como 'Diagnóstico sistémico' con 3 hallazgos centrales (sobrecarga del asesor, lógicas que colisionan, experiencia desarticulada de cara al cliente) + hallazgos secundarios + imagen del mapa como output; §5.2 ampliada con tabla completa de uso de herramientas, desglose de satisfacción por pregunta y hallazgos secundarios (onboarding, uso informal de IA); §5.3 ampliada con drivers y oportunidades numerados; §5.4 y cierre (§9) actualizados para amarrar con los 3 hallazgos | normal | aplicado |
 | 2026-07-26T23:59:50 | Alejandro | DOC | presentacion_back_to_basics.md (orden de secciones) | Evidencia (encuesta+taller) en §6, después de Entregables V1 (§5); lámina de ecosistema en §4 separada | Evidencia movida antes de los entregables: nuevo §5 'Diagnóstico y resultados' fusiona ecosistema (§5.1) + encuesta asesores (§5.2) + taller manejo de objeciones (§5.3) + lectura conjunta (§5.4); Entregables V1 pasa a §6, Siguientes pasos a §7 | normal | aplicado |
 | 2026-07-26T23:52:57 | Alejandro | DOC | presentacion_back_to_basics.md (expandido) | Origen, contexto, entregables V1, siguientes pasos | Suma resumen ejecutivo, sección de metodología, nueva sección de evidencia (encuesta 19 asesores + taller NPS 96.67), tablas de cifras para conversión directa a slides; numerado por secciones para mapear a la presentación | normal | aplicado |
