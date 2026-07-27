@@ -454,6 +454,54 @@ calculado, con una herramienta, no con un texto.
   verificación independiente en esta pasada.
 - **Actualizado:** 2026-07-25
 
+### 21. El "valor del diseño" que sostiene cualquier caso de negocio interno debe argumentarse por mecanismo, no por multiplicador — las cuatro cifras más citadas de la industria no resisten escrutinio de fuente primaria
+Investigación 360° sobre tendencias de diseño (node nuevo `_nodes/tendencias-diseno.md`) rastrea las
+cuatro cifras de ROI de diseño más repetidas globalmente y las cuatro colapsan: "McKinsey +32%/+56%"
+es un reporte de 2018 sin significancia estadística publicada, sin citas y sin análisis de sesgo de
+muestreo, 8 años sin replicar; "$1 invertido en UX devuelve $100" termina en un reporte de Forrester
+tras un muro de pago que casi nadie leyó, con indicios fuertes de que es un error de transcripción de
+una regla de ingeniería de software (curva de costo de Boehm) que no mide ROI de UX en absoluto;
+"47% más rápido con design systems" es N=8 desarrolladores de la propia agencia que vende design
+systems, sin cegamiento; y "671% de ROI de design systems (Forrester)" **no tiene estudio primario
+rastreable** — lo más cercano que existe es un TEI de 2019 comisionado y pagado por el vendor
+(InVision, 475%). Del otro lado, la evidencia causal real y mejor sostenida (miles de A/B tests
+aleatorizados en Microsoft/Bing/Google Ads/Netflix/Airbnb) dice algo mucho más modesto: **~2/3 de
+los rediseños bien ejecutados no mueven la métrica objetivo**, y el valor real se acumula en mejoras
+de 0,1-0,2%, no en saltos transformadores. **Aplicación directa:** el proyecto Back to Basics FFVV
+Vida (tesis 18) tiene un deck al VP en preparación — cualquier cifra de "retorno del rediseño de la
+experiencia de venta" que se use ahí debe construirse sobre mecanismo (menos pasos, menos error,
+menos retrabajo, menos riesgo regulatorio — todo medible y auditable), nunca sobre un multiplicador
+tipo "$1→$100", que es exactamente el tipo de cifra que no sobrevive a la primera pregunta de un CFO
+o de Legal/Compliance en la sala.
+- **Evidencia:** F-266 (🔴E de facto pese a origen McKinsey — sin significancia ni réplica), F-268
+  (🔴E de facto, eco de cita), F-269 (🟡C, N=8), F-327 (🔴E, sin fuente primaria), F-328 (🟠D, TEI
+  pagado por vendor), F-262 (🟢A, causal, A/B a escala — la mayoría de rediseños no mueve la métrica)
+- **Confianza:** Alta — no es que el diseño no valga, es que las cifras espectaculares que circulan
+  para justificarlo son, las cuatro, no auditables o directamente sin fuente.
+- **Actualizado:** 2026-07-27
+
+### 22. La personalización con IA puede reducir la conversión en vez de aumentarla cuando el dato es sensible — riesgo directo para telemática/UBI y para cualquier asesor conversacional de Rimac
+La misma investigación 360° encuentra evidencia de campo (no solo laboratorio) de que el consejo
+personalizado con IA puede **reducir** la compra por intrusividad percibida, y que bajo saliencia de
+privacidad la personalización con datos personales no supera al mensaje genérico. El mecanismo
+específico que sí calibra bien la confianza en sistemas de IA no es "explicar más" (meta-análisis de
+90 estudios: la explicabilidad tiene correlación con confianza significativa pero moderada, no es el
+factor dominante) — es hacer la salida **verificable**, meter fricción deliberada solo donde la tarea
+es difícil, y no ponerla donde es fácil. Esto conecta directo con dos tesis ya vigentes: tesis 7 (UBI
+tiene techo de confianza documentado incluso en mercados maduros) y tesis 13 (divulgación progresiva
+de datos convierte mejor, con riesgo ético explícito si se abusa) — y refina un riesgo ya anotado
+sobre el agente conversacional de Rimac: el riesgo no es solo que alucine coberturas, es que
+"agregar explicabilidad" al agente puede generar sobre-confianza del cliente sin mejorar de verdad su
+decisión, si no está diseñada para ser verificable.
+- **Evidencia:** F-253, F-254 (🟢A, personalización con IA reduce conversión bajo saliencia de
+  privacidad), F-242 (🟢A, meta-análisis PRISMA 90 estudios, explicabilidad → confianza moderada, no
+  dominante), F-244 (🟢A, explicaciones sin verificabilidad producen sobre-confianza), F-246 (🟢A,
+  explicaciones sí ayudan, pero solo en tareas difíciles)
+- **Confianza:** Alta en el mecanismo (personalización + dato sensible + baja verificabilidad =
+  riesgo de conversión, no ventaja); la extrapolación exacta a un producto de telemática/UBI peruano
+  específico es instinto razonado, no medido en Perú.
+- **Actualizado:** 2026-07-27
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -546,6 +594,16 @@ calculado, con una herramienta, no con un texto.
   es solo intuición de producto — tiene respaldo empírico específico del
   sector financiero (F-229) y marco psicológico robusto (F-230) de que la
   motivación predice mejor la conducta que la categoría demográfica asignada.
+- **Argumentar el caso de negocio del rediseño de experiencia de venta (Back to
+  Basics FFVV Vida) por mecanismo, no por multiplicador.** Tesis 21: el deck al
+  VP gana credibilidad citando fricción/error/retrabajo/riesgo regulatorio
+  reducidos —medible y auditable— en vez de una cifra tipo "$1→$100" que un CFO
+  o Legal puede tumbar con una pregunta.
+- **Diseñar cualquier capa de explicabilidad del agente conversacional o del
+  asesor de IA de Rimac para ser verificable, no solo explicativa.** Tesis 22:
+  la fricción deliberada en decisiones difíciles calibra mejor la confianza del
+  cliente que "explicar más"; en decisiones fáciles, agregar explicación no
+  suma y puede generar sobre-confianza.
 
 ## ⚠️ Riesgos
 
@@ -591,7 +649,10 @@ calculado, con una herramienta, no con un texto.
   fidelidad al contexto recuperado verificando cada afirmación por separado;
   G-Eval/MT-Bench puntúan la respuesta individual, no la experiencia agregada).
   Es un riesgo silencioso: un agente puede "sonar bien" en una encuesta de
-  satisfacción y seguir inventando datos de producto.
+  satisfacción y seguir inventando datos de producto. **Matiz añadido (tesis
+  22, 2026-07-27):** agregar "capas de explicabilidad" al agente sin diseñarlas
+  para ser verificables no resuelve esto — puede empeorarlo, generando
+  sobre-confianza del cliente en una respuesta que suena bien y no lo es.
 - **Quemar presupuesto de marketing en "educación financiera" esperando ventas.**
   Tesis 1, ahora con respaldo adicional específico de seguros (F-124). Si el
   objetivo real es conversión, ese presupuesto rinde más en simplificación de
@@ -674,6 +735,21 @@ calculado, con una herramienta, no con un texto.
   subyacente. Instinto, no diagnóstico confirmado sobre el propio modelo — pero ignorarlo sin
   evaluarlo en la próxima revisión de variables sería descartar la señal más directa que ha
   entrado al ledger sobre el propio diseño de segmentación de `lapuerta`.
+- **Usar cualquiera de las cuatro cifras de ROI de diseño más citadas globalmente (McKinsey
+  +32%/+56%, "$1 UX→$100", "47% más rápido con design systems", "671% ROI de Forrester") en un
+  deck o caso de negocio interno.** Tesis 21: las cuatro colapsan al rastrear la fuente primaria —
+  una no tiene estudio rastreable, otra depende de un reporte tras muro de pago que nadie leyó,
+  otra es N=8 de la propia agencia que vende el producto. Es vulnerable en cualquier sala con un
+  CFO o Legal/Compliance presente.
+- **Tratar "agregar explicabilidad" a un asistente o agente de IA como solución genérica de
+  confianza.** Tesis 22: la explicabilidad tiene correlación moderada, no dominante, con la
+  confianza — y sin verificabilidad puede producir sobre-confianza en vez de calibrarla,
+  especialmente si se despliega parejo en decisiones fáciles y difíciles por igual.
+- **Sobreinvertir en personalización con IA (ofertas, pricing, mensajes) en momentos donde el
+  cliente está atento a la privacidad de su dato.** Tesis 22: hay evidencia de campo de que el
+  consejo personalizado con IA puede reducir la compra por intrusividad percibida — el mismo
+  riesgo que ya señalaba tesis 7 sobre el techo de confianza de la telemática/UBI, ahora con un
+  mecanismo específico (saliencia de privacidad) que lo explica.
 
 ## 📔 Bitácora
 
@@ -886,3 +962,31 @@ calculado, con una herramienta, no con un texto.
   tesis/confianza queda condicionado a que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o
   `cronista` registren fuentes nuevas en el ledger. Bitácora con 15 días de historial
   (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-07-27** — Corrida diaria de refinamiento. El ledger creció de F-235 a F-328 desde la
+  última corrida (2026-07-26): investigación `/trinidad` de 360° sobre tendencias de diseño (node
+  nuevo `_nodes/tendencias-diseno.md`, 92 fuentes) — **cambio sustancial**. Es el node menos
+  centrado en seguros de los que ha entrado al ledger hasta hoy (cubre producto/UX, IA, design
+  systems, consultoras de diseño, mercado laboral del gremio), así que filtré con criterio de
+  negocio qué de ahí es accionable para Rimac en vez de sumarlo todo: tomé solo lo que el propio
+  node ya marca como "aplicable directamente al contexto Rimac/seguros" o que conecta con tesis ya
+  vigentes de esta opinión. Sumé tesis 21 (el ROI del diseño que sostenga cualquier caso de negocio
+  interno —incluido el deck al VP de Back to Basics, tesis 18— debe argumentarse por mecanismo, no
+  por multiplicador; las 4 cifras de ROI de diseño más citadas globalmente no tienen fuente
+  primaria auditable) y tesis 22 (la personalización con IA puede reducir conversión, no
+  aumentarla, cuando el dato es sensible y la privacidad está saliente — conecta directo con tesis
+  7/UBI y tesis 13/divulgación progresiva; el mecanismo que sí calibra confianza es
+  verificabilidad, no explicabilidad genérica). Añadí un matiz al riesgo ya existente sobre el
+  agente conversacional de Rimac (agregar explicabilidad sin verificabilidad puede generar
+  sobre-confianza, no calibrarla) y 3 riesgos/2 oportunidades nuevos espejando ambas tesis. Ninguna
+  tesis 1-20 requirió ajuste de confianza — el ledger nuevo las toca solo por conexión razonada
+  (tesis 7, 13), no por evidencia directa nueva sobre seguros/salud/Perú. *Nota aparte, no ledger:*
+  el node `proyecto-back-to-basics-ffvv-vida.md` (documentación interna del proyecto, no evidencia
+  externa de `cronista`) registra que el lineamiento de CUA pasó de "vigente" a "definitivo" el
+  2026-07-25: RIMAC cerró por completo el contacto en frío sin consentimiento (Estrategias 2 y 3
+  quedan inválidas por definición, no por falta de validación de Compliance) y formalizó un
+  mecanismo de tarjeta+QR para la única vía que queda (Estrategia 4). No lo convertí en tesis nueva
+  por no ser evidencia externa citable con F-n, pero es la validación interna más fuerte posible de
+  tesis 8 (riesgo regulatorio de contacto no consentido) y tesis 16 (el asesor se redistribuye
+  hacia canales de consentimiento, no desaparece) — la registro aquí como instinto/contexto de
+  proyecto, no como fuente nueva del ledger. Bitácora con 16 días de historial (2026-07-12 a hoy),
+  dentro de la ventana de ~30 días — sin podar todavía.
