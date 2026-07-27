@@ -96,6 +96,25 @@ el tiempo, así que el ramp-up de un asesor junior es lento y costoso.
 El asesor es, en la práctica, el punto de contacto humano que puede revertir esa desconfianza si
 tiene la estrategia y las herramientas correctas para hacerlo.
 
+**Por qué potenciar al asesor, no digitalizar la venta.** No es una corazonada del equipo — es
+donde apunta la evidencia de la industria:
+
+> "Insurers cannot sacrifice the human touch in CX — especially for life customers, who rank
+> agents as the most trusted source for learning about insurance products."
+> — McKinsey & Company, *Elevating customer experience: A win–win for insurers and customers*
+> (sep. 2023)
+
+En Asia-Pacífico, el mix de canales de seguros de vida sigue dominado por agencias (~40%) y
+partnerships (~35%); el contacto cara a cara sigue siendo la forma dominante de distribución,
+aunque ~80% de las ventas ya están habilitadas por tecnología digital — **lo digital potencia al
+agente, no lo reemplaza** (McKinsey, *Life insurers: how to win in Asia-Pacific*).
+
+El contraejemplo es Lemonade: salió a bolsa en 2020 con la tesis de IA sin agentes —cero fricción,
+cero intermediación humana— y su loss ratio pasó de 166% (2017) a 86% (2019) y se mantuvo cerca de
+90% en 2021-2022. La tecnología redujo costos operativos, pero no resolvió el problema de fondo
+(selección adversa, juicio en casos ambiguos) que un canal 100% digital, sin agentes, no sabe
+resolver solo.
+
 **Por qué es urgente ahora mismo.** La competencia viene ganando market share en el ramo de
 seguros de vida mientras RIMAC no crece — revertir esa brecha depende, en gran parte, de que la
 fuerza de venta convierta más y mejor con lo que ya tiene, no de esperar una palanca nueva de
