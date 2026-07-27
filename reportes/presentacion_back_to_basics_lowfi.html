@@ -148,6 +148,42 @@
   .stat .n { font-family: "SF Mono", monospace; font-size: clamp(22px, 3vw, 30px); color: var(--accent); line-height: 1; }
   .stat .l { margin-top: 6px; font-size: 11.5px; color: var(--ink-soft); }
 
+  .barchart { display: flex; flex-direction: column; gap: 9px; justify-content: center; height: 100%; }
+  .barrow { display: flex; align-items: center; gap: 10px; }
+  .barrow .lbl {
+    width: 92px; flex-shrink: 0; text-align: right;
+    font-family: "SF Mono", monospace; font-size: 11px; color: var(--ink-soft);
+  }
+  .barrow .track {
+    flex: 1; height: 17px; border: 1px solid var(--grid-major); background: var(--placeholder-bg);
+    position: relative;
+  }
+  .barrow .fill { height: 100%; background: var(--accent); }
+  .barrow .val {
+    width: 40px; flex-shrink: 0; font-family: "SF Mono", monospace; font-size: 11px; color: var(--ink);
+  }
+  .barrow .nunca {
+    width: 76px; flex-shrink: 0; font-family: "SF Mono", monospace; font-size: 9.5px; color: var(--ink-faint);
+  }
+  .chart-axis {
+    font-family: "SF Mono", monospace; font-size: 9.5px; color: var(--ink-faint);
+    padding-left: 102px; margin-top: 2px;
+  }
+
+  .compare2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; height: 100%; }
+  @media (max-width: 720px) { .compare2 { grid-template-columns: 1fr; } }
+  .compare-col {
+    border: 1px solid var(--grid-major); padding: 12px 14px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .compare-col .ctitle {
+    font-family: "SF Mono", monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--accent); border-bottom: 1px dashed var(--grid-major); padding-bottom: 6px; margin-bottom: 2px;
+  }
+  .compare-col p { font-size: 12.5px; }
+  .compare-col ul { font-size: 12px; padding-left: 16px; margin: 0; }
+  .compare-col li { margin-bottom: 4px; }
+
   table.wire { border-collapse: collapse; width: 100%; font-size: 12.5px; }
   table.wire th, table.wire td { border: 1px solid var(--grid-major); padding: 5px 8px; text-align: left; vertical-align: top; }
   table.wire th {
@@ -218,9 +254,9 @@
 <div class="cover">
   <div class="kicker">Behavioral Design · Rimac · Q3 2026 · versión low-fi — wireframe de contenido, no diseño final</div>
   <h1>Back to Basics</h1>
-  <p class="lede">Fuerza de Venta — Vida Individual. 15 láminas, una idea por lámina. Actualizado con el
-    diagnóstico sistémico consolidado (sobrecarga del asesor, lógicas que colisionan, experiencia
-    desarticulada de cara al cliente) y evidencia ampliada de encuesta y taller.</p>
+  <p class="lede">Fuerza de Venta — Vida Individual. 15 láminas, una idea por lámina. Diagnóstico
+    sistémico consolidado, entregables replanteados sobre lo que realmente se construyó, y
+    siguientes pasos diferenciados entre estrategia de espejo (canales) y de transformación (AMI).</p>
   <div class="divider"></div>
 </div>
 
@@ -367,15 +403,17 @@
     <div class="eyebrow">§5.2</div>
     <h2>19 asesores: qué usan y qué tan satisfechos están</h2>
     <div class="body split">
-      <table class="wire">
-        <tr><th>Herramienta</th><th>Siempre</th><th>Nunca</th></tr>
-        <tr><td>Salesforce</td><td>16/19</td><td>0/19</td></tr>
-        <tr><td>WhatsApp</td><td>14/19</td><td>0/19</td></tr>
-        <tr><td>Email</td><td>11/19</td><td>0/19</td></tr>
-        <tr><td>AIDA</td><td>7/19</td><td>1/19</td></tr>
-        <tr><td>Excel</td><td>10/19</td><td>1/19</td></tr>
-        <tr><td>CartaPlan</td><td>1/19</td><td>7/19</td></tr>
-      </table>
+      <div class="colgap">
+        <div class="barchart">
+          <div class="barrow"><span class="lbl">Salesforce</span><div class="track"><div class="fill" style="width:84.2%"></div></div><span class="val">16/19</span><span class="nunca">nunca 0/19</span></div>
+          <div class="barrow"><span class="lbl">WhatsApp</span><div class="track"><div class="fill" style="width:73.7%"></div></div><span class="val">14/19</span><span class="nunca">nunca 0/19</span></div>
+          <div class="barrow"><span class="lbl">Email</span><div class="track"><div class="fill" style="width:57.9%"></div></div><span class="val">11/19</span><span class="nunca">nunca 0/19</span></div>
+          <div class="barrow"><span class="lbl">Excel</span><div class="track"><div class="fill" style="width:52.6%"></div></div><span class="val">10/19</span><span class="nunca">nunca 1/19</span></div>
+          <div class="barrow"><span class="lbl">AIDA</span><div class="track"><div class="fill" style="width:36.8%"></div></div><span class="val">7/19</span><span class="nunca">nunca 1/19</span></div>
+          <div class="barrow"><span class="lbl">CartaPlan</span><div class="track"><div class="fill" style="width:5.3%"></div></div><span class="val">1/19</span><span class="nunca">nunca 7/19</span></div>
+        </div>
+        <div class="chart-axis">"siempre" de 19 asesores · barra = frecuencia de uso</div>
+      </div>
       <div class="colgap">
         <div class="stat"><div class="n mono">8.05<span style="font-size:14px;">/10</span></div><div class="l">ayuda general — el promedio no cuenta toda la historia (ver abajo)</div></div>
         <div class="box"><div class="label">Comprensión de producto</div><div class="val">8/19 bastante · 8/19 regular · 3/19 poco</div></div>
@@ -410,7 +448,7 @@
         <div class="stat"><div class="n mono">96.67</div><div class="l">NPS de recomendación</div></div>
         <div class="stat"><div class="n mono">83.33%</div><div class="l">asistencia (30 de 36 invitados)</div></div>
       </div>
-      <p style="font-size:12.5px;"><b>Drivers de valor:</b> casuística real (principal) · copiloto de IA — probablemente el mismo simulador de práctica deliberada que el equipo co-diseñó (§6.4) · metodología práctica con feedback.</p>
+      <p style="font-size:12.5px;"><b>Drivers de valor:</b> casuística real (principal) · copiloto de IA — probablemente el mismo simulador de práctica deliberada que el equipo co-diseñó (§6.3) · metodología práctica con feedback.</p>
       <p style="font-size:12.5px; color:var(--ink-soft);"><b style="color:var(--ink);">Mejoras:</b> más diversidad de casos · consistencia del copiloto de IA — mismo defecto que AIDA en la encuesta (§5.2) · logística.</p>
     </div>
   </div>
@@ -439,9 +477,9 @@
     <h2>Qué se construyó con ese diagnóstico</h2>
     <div class="body">
       <div class="grid3">
-        <div class="box"><div class="label">Evidencia</div><div class="val">Desk research, shadowing, entrevistas, cliente incógnito, sacrificial concepts</div></div>
-        <div class="box"><div class="label">Estrategia de contacto</div><div class="val">Informe validado con Legal/Cumplimiento/CUA + plantillas WhatsApp y correo</div></div>
+        <div class="box"><div class="label">Estrategia de contacto</div><div class="val">Informe validado con Legal/Cumplimiento/CUA + plantillas WhatsApp y correo — construido sobre desk research, shadowing y sacrificial concepts</div></div>
         <div class="box"><div class="label">Playbook y materiales</div><div class="val">Venta consultiva, storytelling de asesoría, materiales simplificados</div></div>
+        <div class="box"><div class="label">Perfilamiento y social selling</div><div class="val">Sistema de perfilamiento por motivaciones (alimenta el resto de materiales) + toolkit de social selling en dos niveles</div></div>
         <div class="box"><div class="label">Formación del asesor</div><div class="val">Universidad Vida (onboarding + competencias) + AIDA Skill Trainer</div></div>
         <div class="box"><div class="label">Validación antes de escalar</div><div class="val">1 piloto, 4 fases: calibración, campo, recalibración, validación técnica</div></div>
         <div class="box"><div class="label">Despliegue</div><div class="val">Adopción en dos frentes: fuerza de venta actual + cohortes de Universidad Vida</div></div>
@@ -450,35 +488,49 @@
     <div class="foot">Impacto esperado (estimado): −25–40% ramp-up de asesor junior · +20–30% agendamiento de citas · S/1.8M ahorro proyectado vía AIDA</div>
   </div>
 
-  <!-- 14 — Siguientes pasos -->
-  <div class="rail"><span class="num">14 / 15</span><span class="line"></span><span class="num">siguientes pasos</span></div>
+  <!-- 14 — Siguientes pasos 1/2: entrenamiento y CUA -->
+  <div class="rail"><span class="num">14 / 15</span><span class="line"></span><span class="num">siguientes pasos 1/2 — entrenamiento y CUA</span></div>
   <div class="frame">
-    <span class="tag">Siguientes pasos</span>
-    <div class="eyebrow">§7</div>
-    <h2>Qué viene después</h2>
+    <span class="tag">Siguientes pasos (1/2)</span>
+    <div class="eyebrow">§7.1 · §7.4</div>
+    <h2>Qué viene después: entrenamiento y riesgo de CUA</h2>
     <div class="body">
       <div class="grid2">
-        <div class="box"><div class="label">Evolución del entrenamiento</div><div class="val">De onboarding puntual a programa continuo; entrenamiento con IA de piloto a herramienta de uso diario (requiere alcance conjunto con GenAI)</div></div>
-        <div class="box"><div class="label">Otros canales de Vida</div><div class="val">Escalar playbook y estrategia de contacto a los demás canales de venta dentro de Vida</div></div>
-        <div class="box"><div class="label">Otro ramo: AMI</div><div class="val">Llevar la metodología (no solo piezas) al ramo AMI, ya transversalizado dentro de Vida</div></div>
-        <div class="box"><div class="label">Mitigar el golpe de CUA</div><div class="val">Alertas de CRM (default seguro) + programa de referidos (consentimiento implícito, prueba social)</div></div>
+        <div class="box"><div class="label">Entrenamiento — corto plazo</div><div class="val">Resolver la consistencia de respuestas del copiloto de IA — mismo defecto que señalan encuesta y taller (§5)</div></div>
+        <div class="box"><div class="label">Entrenamiento — mediano plazo</div><div class="val">De onboarding puntual a programa de crecimiento continuo (competencias + práctica espaciada); IA de piloto a herramienta de uso diario (requiere alcance con GenAI)</div></div>
+        <div class="box"><div class="label">Alertas de CRM</div><div class="val">Default seguro: avisa o condiciona el contacto al consentimiento registrado — protege sin depender de que el asesor lo recuerde</div></div>
+        <div class="box"><div class="label">Programa de referidos</div><div class="val">Contacto por referido en vez de en frío: consentimiento implícito + prueba social + reciprocidad. Falta definir el incentivo al cliente que refiere</div></div>
       </div>
     </div>
   </div>
 
-  <!-- 15 — Equipo, prioridad y cierre -->
-  <div class="rail"><span class="num">15 / 15</span><span class="line"></span><span class="num">cierre</span></div>
-  <div class="frame">
-    <span class="tag">Cierre</span>
-    <div class="eyebrow">§8 · §9</div>
-    <h2>Equipo, prioridad y el pedido a Milagros</h2>
+  <!-- 15 — Siguientes pasos 2/2: espejo vs. transformación -->
+  <div class="rail"><span class="num">15 / 15</span><span class="line"></span><span class="num">siguientes pasos 2/2 — espejo vs. transformación</span></div>
+  <div class="frame tall">
+    <span class="tag">Siguientes pasos (2/2)</span>
+    <div class="eyebrow">§7.2 · §7.3</div>
+    <h2>Escalar no es lo mismo en todos lados</h2>
     <div class="body">
-      <p style="font-size:12.5px; color:var(--ink-soft);"><b style="color:var(--ink);">Modalidad:</b> Perform, dentro del 80% priorizado por el comité · <b style="color:var(--ink);">Prioridad:</b> #1 del trimestre · <b style="color:var(--ink);">Equipo:</b> Melissa y Alejandro, con César (Service Design)</p>
-      <table class="wire">
-        <tr><td style="width:30%"><b>Qué muestra el diagnóstico</b></td><td>Sobrecarga del asesor, lógicas que colisionan y experiencia desarticulada de cara al cliente — confirmado por el mapa, la encuesta a 19 asesores y el taller (NPS 96.67), que además apuntan al mismo dolor: manejo de objeciones en el cierre</td></tr>
-        <tr><td><b>Qué falta para cerrar la V1</b></td><td>Un piloto de calibración del modelo, en 4 fases, antes del despliegue completo</td></tr>
-        <tr><td><b>Por qué ahora</b></td><td>Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece</td></tr>
-      </table>
+      <div class="compare2">
+        <div class="compare-col">
+          <div class="ctitle">Espejo → otros canales de Vida</div>
+          <p>Mismo producto, mismo cliente, mismo modelo — solo cambia el canal de entrega.</p>
+          <ul>
+            <li><b>Se replica sin cambios:</b> venta consultiva, storytelling, estrategia de contacto, perfilamiento por motivaciones.</li>
+            <li><b>Se ajusta:</b> el canal, el ritmo de seguimiento, el tono si aplica.</li>
+            <li><b>Riesgo/esfuerzo:</b> bajo — no requiere repetir la exploración del sistema (§3).</li>
+          </ul>
+        </div>
+        <div class="compare-col">
+          <div class="ctitle">Transformación → ramo AMI</div>
+          <p>Producto distinto, otras motivaciones, otro ciclo de venta y otras objeciones.</p>
+          <ul>
+            <li><b>Se hereda:</b> la metodología completa, la formación con práctica espaciada, la validación por fases.</li>
+            <li><b>Se transforma:</b> arquitectura de decisión, manejo de objeciones, y el perfilamiento por motivaciones — se recalibra, no se reusa.</li>
+            <li><b>Riesgo/esfuerzo:</b> mayor — exige repetir la exploración del sistema (§3) para AMI antes de construir nada.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
