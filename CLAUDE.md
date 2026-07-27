@@ -30,7 +30,8 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `reportes/presentacion_back_to_basics.md` · `reportes/assets/ecosistema_venta_vida.jpg` | Presentación del proyecto Back to Basics (FFVV Vida Individual) para Milagros/comité | Origen, contexto, entregables V1, siguientes pasos, mapa del ecosistema |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: actualización quincenal a demanda | Investiga, redacta reporte, indexa y commitea |
-| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac, publicar a main |
+| `.claude/skills/low-fi-slides/` | Skill `/low-fi-slides`: presentación wireframe de baja fidelidad | Analiza+sintetiza cualquier doc/tablero en láminas y renderiza storyboard HTML (estética "blueprint" fija); paso previo a un deck final pulido |
+| `.claude/skills/cronista/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` | Otras skills del proyecto | Fuentes, investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (dos variantes), publicar a main |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 
 ## Base de conocimiento (codex)

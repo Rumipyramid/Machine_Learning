@@ -1,0 +1,319 @@
+<title>{{TÍTULO DEL PROYECTO}} — low-fi</title>
+<style>
+  :root {
+    --paper: #eef1f4;
+    --grid: #ccd6de;
+    --grid-major: #b4c1cb;
+    --ink: #1c232c;
+    --ink-soft: #52606d;
+    --ink-faint: #7c8895;
+    --card: #ffffff;
+    --frame: #1c232c;
+    --accent: #cf4520;
+    --accent-soft: #e0653f;
+    --placeholder: #8b98a6;
+    --placeholder-bg: #e3e8ec;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #10151b;
+      --grid: #232c35;
+      --grid-major: #2c3742;
+      --ink: #e9edf1;
+      --ink-soft: #9aa7b4;
+      --ink-faint: #6c7883;
+      --card: #161d25;
+      --frame: #e9edf1;
+      --accent: #ff8a5c;
+      --accent-soft: #ffab8a;
+      --placeholder: #4c5863;
+      --placeholder-bg: #1b232b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #10151b; --grid: #232c35; --grid-major: #2c3742;
+    --ink: #e9edf1; --ink-soft: #9aa7b4; --ink-faint: #6c7883;
+    --card: #161d25; --frame: #e9edf1; --accent: #ff8a5c; --accent-soft: #ffab8a;
+    --placeholder: #4c5863; --placeholder-bg: #1b232b;
+  }
+  :root[data-theme="light"] {
+    --paper: #eef1f4; --grid: #ccd6de; --grid-major: #b4c1cb;
+    --ink: #1c232c; --ink-soft: #52606d; --ink-faint: #7c8895;
+    --card: #ffffff; --frame: #1c232c; --accent: #cf4520; --accent-soft: #e0653f;
+    --placeholder: #8b98a6; --placeholder-bg: #e3e8ec;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px),
+      linear-gradient(var(--grid-major) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-major) 1px, transparent 1px);
+    background-size: 16px 16px, 16px 16px, 96px 96px, 96px 96px;
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+  .mono {
+    font-family: "SF Mono", "IBM Plex Mono", Menlo, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .cover { max-width: 1100px; margin: 0 auto; padding: 64px 24px 12px; }
+  .cover .kicker {
+    font-family: "SF Mono", "IBM Plex Mono", Menlo, Consolas, monospace;
+    font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent);
+  }
+  .cover h1 { font-size: clamp(28px, 4vw, 40px); margin: 10px 0 4px; letter-spacing: -0.01em; }
+  .cover p.lede {
+    font-family: "SF Mono", "IBM Plex Mono", Menlo, Consolas, monospace;
+    font-size: 13px; color: var(--ink-soft); max-width: 62ch; line-height: 1.6;
+  }
+  .cover .divider { margin-top: 22px; border-top: 1px dashed var(--grid-major); }
+
+  .deck {
+    max-width: 1100px; margin: 0 auto; padding: 20px 24px 96px;
+    display: flex; flex-direction: column; gap: 26px;
+  }
+
+  .rail { display: flex; align-items: center; gap: 10px; margin: 4px 2px 0; }
+  .rail .num { font-family: "SF Mono", monospace; font-size: 11px; color: var(--ink-faint); }
+  .rail .line { flex: 1; height: 1px; background: var(--grid-major); }
+
+  .frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border: 1.5px solid var(--frame);
+    background: var(--card);
+    display: flex; flex-direction: column;
+    padding: clamp(18px, 3.4vw, 36px) clamp(22px, 4vw, 48px);
+    overflow: hidden;
+  }
+  .frame::before, .frame::after {
+    content: ""; position: absolute; width: 9px; height: 9px;
+    border: 1.5px solid var(--frame); opacity: 0.55;
+  }
+  .frame::before { top: -1.5px; left: -1.5px; border-right: none; border-bottom: none; }
+  .frame::after  { bottom: -1.5px; right: -1.5px; border-left: none; border-top: none; }
+
+  .tag {
+    position: absolute; top: 14px; right: clamp(18px, 3vw, 32px);
+    font-family: "SF Mono", monospace; font-size: 10.5px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-faint);
+  }
+  .eyebrow {
+    font-family: "SF Mono", monospace; font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 6px;
+  }
+  .frame h2 {
+    font-size: clamp(19px, 2.6vw, 27px); margin: 0 0 14px; letter-spacing: -0.01em;
+    text-wrap: balance; max-width: 34ch;
+  }
+  .frame .body {
+    flex: 1; display: flex; flex-direction: column; justify-content: center;
+    gap: 12px; overflow: auto;
+  }
+  .frame .foot {
+    font-family: "SF Mono", monospace; font-size: 10.5px; color: var(--ink-faint);
+    padding-top: 10px; border-top: 1px dashed var(--grid-major);
+  }
+
+  p, li { line-height: 1.5; }
+  .frame p { margin: 0; font-size: 14px; }
+  .frame ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .frame li { margin-bottom: 4px; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .grid6 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 720px) { .grid2, .grid3, .grid6 { grid-template-columns: 1fr; } }
+
+  .box { border: 1px solid var(--grid-major); padding: 10px 12px; }
+  .box .label {
+    font-family: "SF Mono", monospace; font-size: 10px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-faint); margin-bottom: 5px;
+  }
+  .box .val { font-size: 13.5px; }
+
+  .stat { border: 1px solid var(--grid-major); padding: 12px 14px; text-align: left; }
+  .stat .n { font-family: "SF Mono", monospace; font-size: clamp(22px, 3vw, 30px); color: var(--accent); line-height: 1; }
+  .stat .l { margin-top: 6px; font-size: 11.5px; color: var(--ink-soft); }
+
+  table.wire { border-collapse: collapse; width: 100%; font-size: 13px; }
+  table.wire th, table.wire td { border: 1px solid var(--grid-major); padding: 6px 9px; text-align: left; vertical-align: top; }
+  table.wire th {
+    font-family: "SF Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--ink-soft); font-weight: 500; background: var(--placeholder-bg);
+  }
+
+  .steps { display: flex; flex-direction: column; gap: 0; }
+  .step {
+    display: flex; gap: 14px; align-items: flex-start; padding: 7px 0;
+    border-left: 1.5px dashed var(--grid-major); padding-left: 16px; position: relative;
+  }
+  .step::before {
+    content: ""; position: absolute; left: -4.5px; top: 13px; width: 7px; height: 7px;
+    border: 1.5px solid var(--accent); background: var(--card); border-radius: 50%;
+  }
+  .step .idx { font-family: "SF Mono", monospace; font-size: 11px; color: var(--accent); min-width: 18px; }
+  .step .txt { font-size: 13.5px; }
+  .step .txt b { color: var(--ink); }
+
+  .callout { border: 1.5px solid var(--accent); padding: 12px 16px; font-size: 14px; }
+  .callout b { color: var(--accent); }
+
+  .placeholder {
+    border: 1.5px dashed var(--placeholder);
+    background: repeating-linear-gradient(45deg, var(--placeholder-bg), var(--placeholder-bg) 8px, var(--card) 8px, var(--card) 16px);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 4px; padding: 18px; min-height: 120px; text-align: center;
+  }
+  .placeholder .pf { font-family: "SF Mono", monospace; font-size: 11px; color: var(--ink-soft); }
+  .placeholder .pf b { color: var(--ink); }
+  .placeholder .pn { font-family: "SF Mono", monospace; font-size: 9.5px; color: var(--ink-faint); }
+
+  .colgap { display: flex; flex-direction: column; gap: 10px; }
+  .split { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 22px; height: 100%; }
+  @media (max-width: 720px) { .split { grid-template-columns: 1fr; } }
+
+  .endnote {
+    max-width: 1100px; margin: 0 auto; padding: 0 24px 60px;
+    font-family: "SF Mono", monospace; font-size: 11.5px; color: var(--ink-faint);
+    display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  }
+</style>
+
+<!--
+  ARCHIVO DE PATRONES — no es contenido final. Cada bloque comentado abajo es un
+  "archetype" de lámina. Instancia solo los que necesites, en el orden que dicte el
+  material fuente, y reemplaza todo el copy de ejemplo por contenido real. Actualiza
+  .rail y .tag con la numeración final (NN / total) al terminar.
+-->
+
+<div class="cover">
+  <div class="kicker">{{Equipo/Área}} · {{Fecha o ciclo}} · versión low-fi — wireframe de contenido, no diseño final</div>
+  <h1>{{Nombre del proyecto}}</h1>
+  <p class="lede">{{Una o dos líneas: qué es y para quién es esta presentación}}</p>
+  <div class="divider"></div>
+</div>
+
+<div class="deck">
+
+  <!-- ARCHETYPE: portada -->
+  <div class="rail"><span class="num">01 / N</span><span class="line"></span><span class="num">portada</span></div>
+  <div class="frame">
+    <span class="tag">01 / N</span>
+    <div class="body" style="justify-content:center; gap:16px;">
+      <div class="eyebrow">{{Contexto corto}}</div>
+      <h2 style="font-size:clamp(30px,5vw,46px); max-width:none;">{{Título}}</h2>
+      <p style="font-size:16px; color:var(--ink-soft); max-width:44ch;">{{Subtítulo — una frase}}</p>
+    </div>
+    <div class="foot">{{Para quién es / borrador de contenido}}</div>
+  </div>
+
+  <!-- ARCHETYPE: spec-grid (resumen ejecutivo, campos clave-valor) -->
+  <div class="rail"><span class="num">02 / N</span><span class="line"></span><span class="num">resumen</span></div>
+  <div class="frame">
+    <span class="tag">{{Nombre corto}}</span>
+    <div class="eyebrow">§{{ref. al doc fuente}}</div>
+    <h2>{{Título de la lámina}}</h2>
+    <div class="body">
+      <div class="grid2">
+        <div class="box"><div class="label">{{Campo}}</div><div class="val">{{Valor real}}</div></div>
+        <div class="box"><div class="label">{{Campo}}</div><div class="val">{{Valor real}}</div></div>
+      </div>
+      <div class="callout"><b>{{Énfasis —</b> síntesis de una línea, si aplica.</div>
+    </div>
+  </div>
+
+  <!-- ARCHETYPE: sequence-steps (SOLO si el contenido es una secuencia real) -->
+  <div class="rail"><span class="num">03 / N</span><span class="line"></span><span class="num">secuencia</span></div>
+  <div class="frame">
+    <span class="tag">{{Nombre corto}}</span>
+    <div class="eyebrow">§{{ref.}}</div>
+    <h2>{{Título}}</h2>
+    <div class="body">
+      <div class="steps">
+        <div class="step"><span class="idx">1</span><span class="txt">{{Paso 1 con <b>énfasis</b> en lo clave}}</span></div>
+        <div class="step"><span class="idx">2</span><span class="txt">{{Paso 2}}</span></div>
+        <div class="step"><span class="idx">3</span><span class="txt">{{Paso 3}}</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARCHETYPE: narrativa + tabla (split asimétrico) -->
+  <div class="rail"><span class="num">04 / N</span><span class="line"></span><span class="num">contexto</span></div>
+  <div class="frame">
+    <span class="tag">{{Nombre corto}}</span>
+    <div class="eyebrow">§{{ref.}}</div>
+    <h2>{{Título}}</h2>
+    <div class="body split">
+      <div class="colgap">
+        <div class="box"><div class="label">{{Campo}}</div><div class="val">{{Texto real}}</div></div>
+      </div>
+      <table class="wire">
+        <tr><th>{{Columna}}</th><th>{{Columna}}</th></tr>
+        <tr><td>{{Dato real}}</td><td>{{Dato real}}</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ARCHETYPE: stat-grid (cifras duras — nunca inventadas) -->
+  <div class="rail"><span class="num">05 / N</span><span class="line"></span><span class="num">cifras</span></div>
+  <div class="frame">
+    <span class="tag">{{Nombre corto}}</span>
+    <div class="eyebrow">§{{ref.}}</div>
+    <h2>{{Título}}</h2>
+    <div class="body">
+      <div class="grid3">
+        <div class="stat"><div class="n mono">{{XX%}}</div><div class="l">{{lectura de la cifra}}</div></div>
+        <div class="stat"><div class="n mono">{{XX}}</div><div class="l">{{lectura de la cifra}}</div></div>
+        <div class="stat"><div class="n mono">{{XX}}</div><div class="l">{{lectura de la cifra}}</div></div>
+      </div>
+      <div class="callout"><b>Hallazgo —</b> {{lectura conjunta de las cifras, si aplica}}</div>
+    </div>
+  </div>
+
+  <!-- ARCHETYPE: placeholder de asset (imagen/gráfico final, no embebido) -->
+  <div class="rail"><span class="num">06 / N</span><span class="line"></span><span class="num">asset</span></div>
+  <div class="frame">
+    <span class="tag">{{Nombre corto}}</span>
+    <div class="eyebrow">§{{ref.}}</div>
+    <h2>{{Título}}</h2>
+    <div class="body split">
+      <div class="placeholder">
+        <span class="pf"><b>imagen/gráfico real</b><br>{{nombre_del_archivo.ext si existe}}</span>
+        <span class="pn">{{qué muestra, en una línea}}</span>
+      </div>
+      <div class="colgap">
+        <p>{{Lectura del asset en texto plano}}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARCHETYPE: cierre (tabla de síntesis / el "ask") -->
+  <div class="rail"><span class="num">N / N</span><span class="line"></span><span class="num">cierre</span></div>
+  <div class="frame">
+    <span class="tag">Cierre</span>
+    <div class="eyebrow">§{{ref.}}</div>
+    <h2>{{Título de cierre}}</h2>
+    <div class="body">
+      <table class="wire">
+        <tr><td style="width:30%"><b>{{Pregunta implícita}}</b></td><td>{{Respuesta real}}</td></tr>
+        <tr><td><b>{{Pregunta implícita}}</b></td><td>{{Respuesta real}}</td></tr>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<div class="endnote">
+  <span>{{nombre-del-proyecto}} · low-fi review deck</span>
+  <span>N láminas · contenido tomado de {{documento/tablero fuente}}, sin datos nuevos</span>
+</div>
