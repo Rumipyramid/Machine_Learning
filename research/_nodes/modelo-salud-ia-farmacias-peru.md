@@ -447,3 +447,11 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   documento.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para la
   comunicación del flujo con usuarios finales.
+- **(2026-07-27)** [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué es
+  propuesta]] — aporta dos cosas a este node: (a) una **vía institucional peruana** documentada
+  (Decreto Supremo **090-2026-PCM**, que incorpora la innovación pública al Sistema de Modernización
+  de la Gestión Pública, y el Concurso Nacional de Buenas Prácticas en Calidad de Servicios 2026 de
+  la PCM); y (b) una **advertencia metodológica dura**: la revisión sistemática de codiseño en salud
+  encontró que de **14.376 reportes cribados solo 2 midieron outcomes de salud**, y de 17 outcomes
+  **solo 4 favorecieron** a la intervención codiseñada. **Refuerza que este node mida resultados y no
+  proceso — que es justamente lo que su marco RE-AIM exige.**
