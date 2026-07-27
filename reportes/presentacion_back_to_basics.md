@@ -109,41 +109,91 @@ ecosistema (resultado de la exploración obligatoria, §3), una encuesta a los p
 los resultados de un taller piloto sobre el dolor #1 que ese diagnóstico detectó. Las tres apuntan
 en la misma dirección.
 
-### 5.1 Mapa del ecosistema de Venta Vida
+### 5.1 Diagnóstico sistémico: qué reveló el mapa del ecosistema
 
-No es un mapa exhaustivo de todas las causas de venta — es el mapa de **palancas que el equipo
-puede accionar** y cómo se conectan entre sí, organizado en 9 frentes: Producto, Palancas de
-venta, Formación, Selección, Incentivos, Personalidad del Asesor, Seguimiento, Espacio Digital del
-asesor y Espacio Físico del asesor.
+La exploración obligatoria del sistema (§3) no arrojó una lista plana de palancas — arrojó tres
+hallazgos que se explican entre sí, y que son el verdadero resultado del diagnóstico. Todo lo demás
+que muestra el mapa (9 frentes, decenas de nodos) es contexto de apoyo, no el hallazgo central.
 
-Dos nodos concentran la mayoría de las relaciones — son los resultados que todo lo demás explica:
-**KPIs de Performance de Venta** (con entradas de Producto, Formación y Personalidad del Asesor) y
-**KPIs de experiencia de Venta** (NPS, EJO), alimentado principalmente por las Habilidades
-comerciales del asesor y su Experiencia. Back to Basics interviene sobre todo en **Personalidad
-del Asesor** (habilidades comerciales, capacidades cognitivas), **Formación** y una parte de
-**Palancas de venta** (speeches, materiales) y **Espacio Digital/Físico del asesor** (manuales,
-guías, agente AI copiloto).
+**1 · Sobrecarga del asesor.** Casi todos los frentes del ecosistema —Producto, Selección,
+Formación, Incentivos, Seguimiento, Espacio Digital y Espacio Físico— convergen sobre un mismo
+punto: las habilidades y capacidades del asesor individual. En el mapa, **Habilidades comerciales**
+y **Capacidades cognitivas** son los nodos con más conexiones entrantes de todo el sistema:
+onboarding, supervisión y mentoría, evaluaciones de entrada, cuatro tipos distintos de incentivos,
+monitoreo de calidad, materiales y hasta el agente de IA copiloto desembocan ahí. El asesor termina
+siendo el amortiguador de toda la complejidad del sistema — lo que cada frente no resuelve por su
+cuenta, se lo pasa a él, en el momento de la venta.
+
+**2 · Lógicas que colisionan.** Cada frente opera con una lógica propia, y ninguna está diseñada
+pensando en las demás. Incentivos combina permanencia, calidad y performance en circuitos de
+recompensa distintos y no necesariamente alineados entre sí; Selección filtra en la entrada con
+evaluaciones, pero convive con rotación de personal activa; Formación impone un ritmo pedagógico
+(onboarding + mentoría) que no está sincronizado con la lógica comercial de Producto y Palancas de
+venta (precio, promociones, marketing) ni con la lógica de control de Seguimiento (monitoreo de
+calidad, KPIs). El mapa no muestra ningún nodo que traduzca o concilie estas lógicas entre sí — el
+único lugar donde todas se encuentran es, otra vez, el asesor (hallazgo 1).
+
+**3 · Experiencia desarticulada de cara al cliente.** La consecuencia de los dos hallazgos
+anteriores no se queda en el asesor: se traslada al cliente. Sin una estrategia de contacto y un
+modelo de venta unificados, cada asesor termina vendiendo "a su manera" (ver también §4). En el
+propio mapa, el nodo que representa el resultado hacia el cliente —**KPIs de experiencia de Venta
+(NPS, EJO)**— depende casi enteramente de las Habilidades comerciales y la Experiencia del asesor:
+el cliente hereda directamente cualquier inconsistencia que el sistema no resolvió antes de llegar
+al asesor. No existe, en el mapa, ninguna palanca dedicada a sostener una experiencia consistente
+entre asesores — es un efecto secundario no gestionado de todo lo anterior.
+
+**Hallazgos secundarios.** El mapa organiza 9 frentes (Producto, Palancas de venta, Formación,
+Selección, Incentivos, Personalidad del Asesor, Seguimiento, Espacio Digital del asesor y Espacio
+Físico del asesor) — no es un inventario exhaustivo de todas las causas de venta, sino el mapa de
+las palancas que el equipo puede accionar y cómo se conectan entre sí. Back to Basics interviene
+sobre todo en Personalidad del Asesor, Formación, y una parte de Palancas de venta y Espacio
+Digital/Físico del asesor — exactamente donde convergen los tres hallazgos centrales.
+
+Uno de los outputs tangibles de esta exploración es el mapa completo — nodos, relaciones causales
+(+/−) y agrupación por frente:
 
 ![Mapa del ecosistema de Venta Vida](assets/ecosistema_venta_vida.jpg)
 
 ### 5.2 Encuesta a asesores sobre herramientas (n=19)
 
-| Indicador | Resultado |
-|---|---|
-| Ayuda general de las herramientas RIMAC (0–10) | **8.05 / 10** promedio |
-| Tema de capacitación más pedido | **Manejo de objeciones** — 42% (8/19) |
-| Momento de la venta con más necesidad de apoyo | **Cierre** — ~40% de las respuestas abiertas |
-| Herramientas de uso casi universal | Salesforce (16/19 "siempre"), WhatsApp (14/19 "siempre") |
-| Herramientas de adopción muy baja | CartaPlan (7/19 "nunca"), Ticker (9/19 "nunca") |
+**Uso de herramientas (frecuencia auto-reportada):**
 
-**El hallazgo más accionable:** manejo de objeciones y "cierre" son el mismo dolor visto desde dos
-preguntas distintas — el asesor no pide más información de producto, pide ayuda para manejar la
-conversación en el momento en que el cliente objeta, justo antes de cerrar.
+| Herramienta | "Siempre" | "Nunca" | Lectura |
+|---|---|---|---|
+| Salesforce | 16/19 | 0/19 | Herramienta troncal, uso casi universal |
+| WhatsApp | 14/19 | 0/19 | Canal de contacto dominante |
+| Email | 11/19 | 0/19 | Uso alto, más variable |
+| AIDA | 7/19 | 1/19 | Uso alto, con quejas de calidad (ver abajo) |
+| Excel | 10/19 | 1/19 | Varios asesores arman sus propias tablas cuando otra herramienta falla |
+| Cartillas de producto | 4/19 | 4/19 | Uso mixto |
+| CartaPlan | 1/19 | 7/19 | Adopción baja — mayoría "nunca" o "rara vez" |
+| Ticker | 1/19 | 9/19 | Adopción muy baja — mayoría "nunca" o "rara vez" |
 
-**AIDA tiene un problema de calidad reportado explícitamente:** varios asesores señalan que "da
-respuestas equivocadas", "no brinda información correcta", "no contesta bien casi nunca" — el uso
-es alto pero la confianza en la herramienta no acompaña, evidencia concreta que respalda evolucionar
-AIDA de piloto a herramienta funcional.
+**Satisfacción, y por qué el promedio no cuenta toda la historia.** El promedio general es
+**8.05/10** — alto en el agregado. Pero convive con fricciones concretas y repetidas en las
+respuestas abiertas: la ayuda para que el cliente **entienda el producto** se califica 8/19
+"bastante", 8/19 "regular", 3/19 "poco"; la ayuda para **manejar objeciones y persuadir** cae a
+6/19 "bastante", 9/19 "regular", 4/19 "poco" — peor calificada que la comprensión de producto.
+
+**El hallazgo más accionable: manejo de objeciones y cierre son el mismo dolor.** "Manejo de
+objeciones" es el tema de capacitación más pedido (8/19, 42%, muy por encima de "Conocimiento de
+producto" o "Conocimiento de los clientes", 4/19 cada uno), y "el cierre" es el momento de la venta
+donde más apoyo se pide (~7–8/19, ~40% de las respuestas abiertas). Lectura conjunta: el asesor no
+pide más información de producto — pide ayuda para manejar la conversación en el momento en que el
+cliente objeta, justo antes de cerrar. Es un problema de habilidad conversacional, no de
+conocimiento declarativo.
+
+**Herramienta que más se pide mejorar (empate a 4/19 cada una):**
+- **AIDA** — con motivo explícito y repetido: *"no da la información adecuada y se equivoca con
+  otro producto"*, *"no brinda información correcta"*, *"no contesta bien casi nunca"*.
+- **Recursos visuales** (cartillas, flyers) — piden brochures digitales y plantillas listas; varios
+  mencionan que hoy tienen que crear sus propios materiales.
+- **Cotizador** — piden poder usarlo sin registro/autorización previa y con más ejemplos.
+
+**Otros hallazgos:** un asesor señala una falla de onboarding explícita — *"no enseñan bien a usar
+el salesforce en las capacitaciones del inicio... tenemos que aprender en marcha"*; varios asesores
+mencionan usar ChatGPT o Gemini de forma no oficial para compensar huecos de AIDA o del cotizador —
+la necesidad ya se resuelve informalmente cuando la herramienta oficial no alcanza.
 
 ### 5.3 Taller de Manejo de Objeciones — resultados del piloto
 
@@ -157,22 +207,35 @@ reportado por CoE Experience Design:
 | NPS (recomendación) | **96.67** |
 | Asistencia | 83.33% (30 de 36 invitados) |
 
-**Qué generó el valor:** aprendizaje basado en casuística real (principal driver), uso de un
-copiloto de IA para potenciar la calidad y creatividad de las respuestas, y una metodología
-práctica con interacción y feedback directo.
+**Qué generó el valor (drivers, en orden):**
+1. **Casuística real** — el principal driver de valor; facilita la aplicación directa en la
+   gestión con clientes.
+2. **Copiloto de IA** — potencia la calidad de las respuestas y la creatividad en el manejo de
+   objeciones. El mecanismo (role-play + feedback + puntaje) coincide con el simulador de IA que
+   el equipo co-diseñó para práctica deliberada (ver §6.4) — es probable que sea la misma
+   herramienta en su primera corrida real, aunque el taller lo organizó CoE Experience Design.
+3. **Metodología práctica y dinámica** — interacción, práctica y feedback fortalecen habilidades
+   críticas del rol.
 
-**Oportunidades de mejora identificadas:** ampliar la práctica con más diversidad de casos (role
-play, videos), ajustar la consistencia del copiloto de IA — el mismo defecto que reporta la
-encuesta de asesores sobre AIDA, dos fuentes independientes apuntando al mismo problema — y
-optimizar la logística (duración, horarios, espacio de práctica).
+**Oportunidades de mejora identificadas:**
+1. Ampliar la práctica y diversidad de casos: incorporar role play, videos y más escenarios.
+2. Ajustar el uso del copiloto de IA: mejorar la consistencia de las evaluaciones y el
+   alineamiento con lineamientos internos — **el mismo problema de calidad de información que ya
+   reportan los asesores sobre AIDA en la encuesta** (§5.2): dos fuentes independientes apuntando
+   al mismo defecto concreto.
+3. Optimizar logística: duración, horarios y espacios dedicados a práctica.
 
 ### 5.4 Lectura conjunta del diagnóstico
 
-El tema (manejo de objeciones), el momento (cierre) y el mecanismo (simulación con IA + feedback)
-coinciden en el mapa del ecosistema, en la encuesta y en el taller — tres señales independientes
-apuntando en la misma dirección. Esto hace de "evolucionar el entrenamiento con IA en manejo de
-objeciones" la apuesta mejor respaldada de todo el backlog de siguientes pasos (§7), y es la base
-de diagnóstico sobre la que se construyó la V1 (§6).
+El dolor específico que reportan la encuesta y el taller —manejo de objeciones, justo en el
+cierre— es la expresión más concreta del hallazgo 1 del diagnóstico sistémico (§5.1): es el
+momento de máxima sobrecarga para el asesor, donde todas las lógicas del sistema (incentivo,
+presión de cierre, guion de producto) tienen que resolverse en tiempo real y sin apoyo. El tema
+(manejo de objeciones), el momento (cierre) y el mecanismo (simulación con IA + feedback) coinciden
+en el mapa del ecosistema, en la encuesta y en el taller — tres señales independientes apuntando en
+la misma dirección. Esto hace de "evolucionar el entrenamiento con IA en manejo de objeciones" la
+apuesta mejor respaldada de todo el backlog de siguientes pasos (§7), y es la base de diagnóstico
+sobre la que se construyó la V1 (§6).
 
 ---
 
@@ -298,7 +361,7 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 | | |
 |---|---|
 | **Cómo nació** | De un pedido puntual (speeches), tras la exploración obligatoria del sistema se detectó que el propio equipo trabajaba sin articulación — de ahí la unificación en Back to Basics |
-| **Qué muestra el diagnóstico** | Mapa del ecosistema + encuesta a 19 asesores + taller piloto con NPS 96.67, las tres apuntando al mismo dolor: manejo de objeciones en el cierre |
+| **Qué muestra el diagnóstico** | Sobrecarga del asesor, lógicas de sistema que colisionan y experiencia desarticulada de cara al cliente — confirmado por el mapa del ecosistema, la encuesta a 19 asesores y el taller piloto (NPS 96.67), que además apuntan al mismo dolor concreto: manejo de objeciones en el cierre |
 | **Qué ya está construido** | Estrategia de contacto, playbook de venta, materiales, Universidad Vida y entrenamiento con IA — validados con ese diagnóstico y con Legal/Cumplimiento/CUA |
 | **Qué falta para cerrar la V1** | Cuatro pilotos de calibración del modelo antes del despliegue completo |
 | **Qué viene después** | Entrenamiento continuo, más canales de Vida, el ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
