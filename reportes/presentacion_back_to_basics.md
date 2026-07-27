@@ -370,7 +370,10 @@ S/1.8M vía AIDA.
 
 **Corto plazo:** resolver la consistencia de las respuestas del copiloto de IA que ya señalan
 tanto la encuesta como el taller (§5) — sin eso, escalar el entrenamiento con IA solo escala el
-mismo defecto.
+mismo defecto. En paralelo, **centralizar funciones en el copiloto** en vez de sumar herramientas
+sueltas al asesor: es la forma concreta de no repetir el hallazgo 1 del diagnóstico (§5.1) —
+sobrecarga del asesor por acumulación de herramientas sin estructura. Cada función nueva que se
+suma al copiloto es una que no se le suma, aparte, al asesor.
 
 **Mediano plazo:** pasar de un onboarding puntual a un **programa de crecimiento continuo**:
 modelo por competencias + calendarización con práctica espaciada + desarrollo del asesor más allá
