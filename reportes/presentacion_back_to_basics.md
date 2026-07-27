@@ -12,8 +12,7 @@ convertir directo en gráficos o callouts.*
 
 Back to Basics es el frente que unifica las soluciones de comportamiento para la Fuerza de Venta
 de Vida Individual (FFVV). Nació de un pedido puntual (speeches), pero la exploración obligatoria
-del sistema reveló un problema más grande: el propio equipo trabajaba sin articulación. Hoy es
-**prioridad #1 del comité**.
+del sistema reveló un problema más grande: el propio equipo trabajaba sin articulación.
 
 | | |
 |---|---|
@@ -21,7 +20,7 @@ del sistema reveló un problema más grande: el propio equipo trabajaba sin arti
 | **Evidencia que lo respalda** | Encuesta a 19 asesores + taller piloto con NPS 96.67 |
 | **Qué falta para cerrar la Fase 1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
 | **Qué viene después** | Entrenamiento continuo, espejo a más canales de Vida, transformación al ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
-| **Por qué ahora** | Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
+| **Por qué ahora** | La competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
 
 ---
 
@@ -101,9 +100,6 @@ tiene la estrategia y las herramientas correctas para hacerlo.
 seguros de vida mientras RIMAC no crece — revertir esa brecha depende, en gran parte, de que la
 fuerza de venta convierta más y mejor con lo que ya tiene, no de esperar una palanca nueva de
 producto.
-
-**Prioridad.** El comité de CoE X ya elevó Back to Basics a **prioridad #1** del trimestre.
-Equipo: Melissa y Alejandro, junto con César (Lead de Service Design, de otro equipo).
 
 ---
 
@@ -425,11 +421,10 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 
 ---
 
-## 9. Equipo y prioridad
+## 9. Equipo y modalidad
 
 - **Modalidad:** Perform — parte del 80% de iniciativas ya priorizadas por el comité (no es una
   apuesta de Transform).
-- **Prioridad del comité:** #1 del trimestre.
 - **Equipo del frente:** Melissa y Alejandro, junto con César (Lead de Service Design, de otro
   equipo).
 
@@ -444,4 +439,4 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 | **Qué ya está construido** | El modelo de venta (5 bloques) con su agente conversacional, el sistema de perfilamiento por motivaciones, el toolkit de social selling, playbook y materiales, y Universidad Vida — validados con ese diagnóstico y con Legal/Cumplimiento/CUA |
 | **Qué falta para cerrar la Fase 1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
 | **Qué viene después** | Entrenamiento continuo, espejo a más canales de Vida, transformación al ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
-| **Por qué ahora** | Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
+| **Por qué ahora** | La competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
