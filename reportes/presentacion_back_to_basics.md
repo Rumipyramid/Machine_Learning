@@ -16,7 +16,7 @@ del sistema reveló un problema más grande: el propio equipo trabajaba sin arti
 
 | | |
 |---|---|
-| **Qué ya está construido (Fase 1)** | El modelo de venta (5 bloques) con su agente conversacional, el sistema de perfilamiento por motivaciones, el toolkit de social selling, playbook y materiales, y Universidad Vida |
+| **Qué ya está construido (Fase 1)** | La base de conocimientos completa (modelo de venta de 5 bloques, perfilamiento por motivaciones, playbook, materiales, estrategia de contacto y toolkit de social selling) y 2 prototipos del copiloto que la ponen en manos del asesor |
 | **Evidencia que lo respalda** | Encuesta a 19 asesores + taller piloto con NPS 96.67 |
 | **Qué falta para cerrar la Fase 1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
 | **Qué viene después** | Entrenamiento continuo, espejo a más canales de Vida, transformación al ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
@@ -257,47 +257,56 @@ de la Fase 1 (§6).**
 
 ## 6. Qué se construyó
 
-La Fase 1 del proyecto es un modelo de venta completo, no piezas sueltas de comunicación — la
-respuesta a que el contenido y las herramientas hablen el mismo idioma (§5.4). Esto es lo que
-existe hoy, construido:
+La Fase 1 construye **dos cosas**, no una lista larga de entregables sueltos: **la base de
+conocimientos completa** y **2 prototipos del copiloto** que la ponen en manos del asesor — la
+respuesta a que el contenido y las herramientas hablen el mismo idioma (§5.4).
 
-**El Modelo de Experiencia de Venta Vida, en 5 bloques.** Quiénes somos · Qué vendes · Que te
-encuentren · **La asesoría** · Después del sí. La asesoría es el corazón del modelo: un recorrido
-de 4 pasos donde el asesor descubre la motivación del cliente antes de hablar de producto,
-dimensiona un número concreto —no un precio suelto— y cierra pidiendo un siguiente paso. Es una
-secuencia evaluable, no una colección de técnicas sueltas.
+### La base de conocimientos
 
-**El sistema de perfilamiento por motivaciones**, con dos mecánicas de dimensionamiento distintas
-según lo que mueve al cliente: **meta** (el número sale del costo de lo que quiere lograr — p. ej.
-una carrera universitaria) y **protección** (el número sale del ingreso que la familia dejaría de
-percibir). Son dos razonamientos distintos, no una sola fórmula — y alimentan el resto de
-materiales (statement de vida, pitch, storytelling).
+Todo el contenido y la lógica del modelo de venta vive acá — es lo que alimenta al copiloto, no
+documentos sueltos que el asesor tiene que ir a buscar:
 
-**El agente conversacional — la superficie de uso real del asesor.** El asesor no busca el
-playbook en un documento: el agente es la base de conocimiento que alimenta la conversación, con
-el portafolio de producto, las nueve objeciones documentadas y los speeches (que cambian según el
-origen del lead) disponibles en dos modos de uso. El PDF del playbook existe como respaldo y
-entregable de implementación, no como la herramienta de uso diario. Es probable que sea la misma
-línea de desarrollo que el copiloto de IA usado en el taller de manejo de objeciones (§5.3), ahora
-aplicado al flujo completo de venta y no solo al entrenamiento — pendiente de confirmar con el
-equipo.
+- **El Modelo de Experiencia de Venta Vida, en 5 bloques.** Quiénes somos · Qué vendes · Que te
+  encuentren · **La asesoría** · Después del sí. La asesoría es el corazón del modelo: un recorrido
+  de 4 pasos donde el asesor descubre la motivación del cliente antes de hablar de producto,
+  dimensiona un número concreto —no un precio suelto— y cierra pidiendo un siguiente paso. Es una
+  secuencia evaluable, no una colección de técnicas sueltas.
+- **El sistema de perfilamiento por motivaciones**, con dos mecánicas de dimensionamiento
+  distintas según lo que mueve al cliente: **meta** (el número sale del costo de lo que quiere
+  lograr — p. ej. una carrera universitaria) y **protección** (el número sale del ingreso que la
+  familia dejaría de percibir). Alimentan el resto de materiales (statement de vida, pitch,
+  storytelling).
+- **Playbook de storytelling y materiales de venta** — encuadre narrativo para donde la cifra sola
+  no persuade, más materiales simplificados (flyer, brochure, cartaplan) que reducen la carga
+  cognitiva del mensaje.
+- **Estrategia de contacto** validada en conjunto con Legal, Cumplimiento y CUA — informe de
+  primer contacto y plantillas de WhatsApp/correo para el flujo con consentimiento (la versión sin
+  consentimiento está en construcción) — construida sobre desk research, shadowing, entrevistas,
+  cliente incógnito y seis sacrificial concepts.
+- **Toolkit de social selling, en dos niveles.** Nivel 1 — lo que se resuelve en el momento: foto
+  profesional, historia profesional en 3 partes (quién soy · por qué elegí esto/a quién ayudo ·
+  cómo puedo ayudarte hoy), perfiles y firma de correo actualizados. Nivel 2 — lo que se completa
+  después con apoyo del copiloto: actualización completa de redes y banco de contenido para
+  repostear.
+- **Portafolio de producto, las nueve objeciones documentadas y los speeches** (que cambian según
+  el origen del lead).
 
-**Toolkit de social selling, en dos niveles.** Nivel 1 — lo que se resuelve en el momento: foto
-profesional, historia profesional en 3 partes (quién soy · por qué elegí esto/a quién ayudo · cómo
-puedo ayudarte hoy), perfiles y firma de correo actualizados. Nivel 2 — lo que se completa después
-con apoyo del agente: actualización completa de redes y banco de contenido para repostear.
+El onboarding de asesores no es una pieza aparte: se entrega usando esta misma base de
+conocimientos, en la sesión de transferencia del piloto (§7).
 
-**Playbook de storytelling y materiales de venta** — encuadre narrativo para donde la cifra sola no
-persuade, más materiales simplificados (flyer, brochure, cartaplan) que reducen la carga cognitiva
-del mensaje.
+### 2 prototipos del copiloto
 
-**Estrategia de contacto** validada en conjunto con Legal, Cumplimiento y CUA — informe de primer
-contacto y plantillas de WhatsApp/correo para el flujo con consentimiento (la versión sin
-consentimiento está en construcción) — construida sobre desk research, shadowing, entrevistas,
-cliente incógnito y seis sacrificial concepts.
+El copiloto es la superficie de uso real del asesor: no busca el playbook en un documento, se lo
+pregunta al copiloto, y este responde con la base de conocimientos de arriba, en dos modos de uso.
+El PDF del playbook existe como respaldo y entregable de implementación, no como la herramienta de
+uso diario. Es probable que sea la misma línea de desarrollo que el copiloto de IA usado en el
+taller de manejo de objeciones (§5.3), ahora aplicado al flujo completo de venta y no solo al
+entrenamiento — pendiente de confirmar con el equipo.
 
-**Universidad Vida** — onboarding con práctica espaciada desde el día 1, y un modelo de
-competencias por niveles para sostener la motivación del asesor más allá del arranque.
+### Qué no entra en la Fase 1
+
+- **El modelo de competencias por niveles de Universidad Vida** (progresión, evaluación y
+  reconocimiento del asesor más allá del onboarding) — queda para una fase posterior.
 
 ---
 
@@ -436,7 +445,7 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 |---|---|
 | **Cómo nació** | De un pedido puntual (speeches), tras la exploración obligatoria del sistema se detectó que el propio equipo trabajaba sin articulación — de ahí la unificación en Back to Basics |
 | **Qué muestra el diagnóstico** | Sobrecarga del asesor, lógicas de sistema que colisionan, experiencia desarticulada de cara al cliente, y que la queja es sobre el trato — no sobre el consentimiento — confirmado por el mapa del ecosistema, la encuesta a 19 asesores y el taller piloto (NPS 96.67), que además apuntan al mismo dolor concreto: manejo de objeciones en el cierre |
-| **Qué ya está construido** | El modelo de venta (5 bloques) con su agente conversacional, el sistema de perfilamiento por motivaciones, el toolkit de social selling, playbook y materiales, y Universidad Vida — validados con ese diagnóstico y con Legal/Cumplimiento/CUA |
+| **Qué ya está construido** | La base de conocimientos completa (modelo de venta, perfilamiento por motivaciones, playbook, materiales, estrategia de contacto y toolkit de social selling) y 2 prototipos del copiloto — validados con ese diagnóstico y con Legal/Cumplimiento/CUA |
 | **Qué falta para cerrar la Fase 1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
 | **Qué viene después** | Entrenamiento continuo, espejo a más canales de Vida, transformación al ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
 | **Por qué ahora** | La competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
