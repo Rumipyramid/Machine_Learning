@@ -1024,26 +1024,38 @@ este mismo Momento), no un producto a adivinar.
 
 **Flyers de venta**
 
+> ⚠️ **Actualizado 2026-07-26 (confirmado por el usuario):** los flyers dejan de ser la ficha
+> comercial en PDF — pasan a ser **imágenes JPG dedicadas**, una por producto, más **un flyer
+> comparativo** pensado para compartir pantalla en videollamada (no para enviar por WhatsApp). El
+> usuario va a adjuntar los archivos JPG directamente a este playbook; hasta que eso ocurra, esta
+> tabla solo reserva el lugar de cada uno — no hay ficha PDF de respaldo listada aquí porque el
+> formato cambió, no porque falte encontrar el documento.
+
 Un flyer por producto, para compartir directo en el chat durante o después de la conversación —
 no para reemplazarla (ver "Los materiales acompañan la conversación — no la reemplazan", Bloque
-3). Fuente conocida por producto, según la ficha comercial ya identificada en la Matriz de
-productos:
+3) — más un flyer comparativo para la conversación en vivo (pantalla compartida, no chat). Cubre
+los 3(+1) productos reales de la Matriz de productos (VFP, Plan Vida Flexible, Vida Contigo,
+Vida Temporal Total) — **VCD digital y Endosable digital no tienen flyer todavía**, porque
+siguen sin confirmarse como producto real distinto (ver "Nuestros productos y sus
+características", arriba en este mismo Momento).
 
-| Producto | Ficha / flyer fuente | Estado |
+| Producto | Archivo JPG | Estado |
 |---|---|---|
-| Vida Futuro Protegido (VFP) | _(Pendiente — no identificada en la matriz de productos)_ | `(Pendiente)` |
-| Plan Vida Flexible | `Seguro_de_Vida_Flexible_2.pdf` | `(Pendiente — adjuntar archivo)` |
-| Vida Contigo | `Seguro_de_Vida_Contigo_2.pdf` | `(Pendiente — adjuntar archivo)` |
-| Vida Ahorro Garantizado (VAG) | `Seguro_de_Vida_Ahorro_Garantizado.pdf` | `(Pendiente — adjuntar archivo)` |
-| Vida Temporal Total | `Brochure_Temporal_Total_1.pdf` | `(Pendiente — adjuntar archivo)` |
-| VCD digital / Endosable digital | _(Pendiente — sin ficha, producto sin caracterizar)_ | `(Pendiente)` |
+| Vida Futuro Protegido (VFP) | _(Pendiente — el usuario adjuntará el JPG)_ | `(Pendiente)` |
+| Plan Vida Flexible | _(Pendiente — el usuario adjuntará el JPG)_ | `(Pendiente)` |
+| Vida Contigo | _(Pendiente — el usuario adjuntará el JPG)_ | `(Pendiente)` |
+| Vida Temporal Total | _(Pendiente — el usuario adjuntará el JPG)_ | `(Pendiente)` |
+| **Comparativo (para compartir pantalla)** | _(Pendiente — el usuario adjuntará el JPG)_ | `(Pendiente)` |
 
-Estas fichas comerciales son documentos formales, completos — no siempre son el mejor flyer para
-enviar en el primer contacto por WhatsApp (ver la distinción en Bloque 3: "flyers e imágenes que
-se ven directo en el chat" vs. "documentos formales que el cliente solicita"). Si Marketing tiene
-o produce una versión resumida tipo imagen/infografía de cada producto, esa es la que debería
-vivir aquí — por ahora, hasta tener esa versión, la ficha comercial completa es lo único
-disponible.
+**Cómo usar cada uno:**
+- **Flyer de producto (4):** para enviar por WhatsApp durante o después de la conversación, una
+  vez que ya identificaste qué producto calza con la motivación del cliente (ver "Cómo elegir
+  cuál mencionar primero", arriba).
+- **Flyer comparativo (1):** para compartir pantalla en la propia conversación (llamada o
+  videollamada) cuando el cliente está decidiendo entre más de una opción — no se envía suelto
+  por chat, se usa en vivo mientras lo explicas.
+
+_(Pendiente: que el usuario adjunte los 5 JPG a este documento.)_
 
 ---
 

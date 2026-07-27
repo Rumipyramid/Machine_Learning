@@ -358,6 +358,11 @@ usado en la visión To Be de la Mesa Back to Basics FFVV (§1).
   del 2026-07-20 no estaba realmente aplicada, esta sí).
 - Banco de recursos de marketing para repostear (Bloque 3).
 - FAQ de coberturas específicas, exclusiones, qué pasa si el cliente deja de pagar (Bloque 4).
+- **Flyers de venta (Bloque 4, agregado 2026-07-26):** formato definido — 1 JPG por producto real
+  (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total) + 1 JPG comparativo para compartir
+  pantalla en conversación (no para chat). VCD digital/Endosable digital quedan sin flyer hasta
+  que se confirmen como producto real (ver [[matriz-productos-vida-rimac|Matriz de productos Vida
+  RIMAC]] §1). Pendiente que el usuario adjunte los 5 JPG.
 - Gestión de referidos e indicadores de negocio (Bloque 5).
 - Certificación e incentivos, esquema remunerativo (Apéndice).
 - Meta de reviews en Google (15 reviews, 4.8+) — por validar.
