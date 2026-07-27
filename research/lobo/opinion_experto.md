@@ -990,3 +990,14 @@ decisión, si no está diseñada para ser verificable.
   hacia canales de consentimiento, no desaparece) — la registro aquí como instinto/contexto de
   proyecto, no como fuente nueva del ledger. Bitácora con 16 días de historial (2026-07-12 a hoy),
   dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-07-27 (segunda corrida del día)** — Corrida diaria de refinamiento disparada por segunda
+  vez en la misma fecha. Confirmé `main` actualizado (HEAD ya en `e304055`, sin fast-forward
+  pendiente) y leí `codice.md` completo: sigue tope en F-328, idéntico al que ya procesó la corrida
+  de hoy más temprano (mismo día, commit anterior) — **sin cambios sustanciales** en evidencia, cero
+  fuentes nuevas entre una corrida y otra. Repasé las 22 tesis contra ese mismo tope: ninguna quedó
+  desalineada, y no forcé ninguna conexión nueva entre tesis solo por completar el paso — la corrida
+  anterior de hoy mismo ya agotó las conexiones razonables disponibles (tesis 21, 22, y el matiz
+  sobre el agente conversacional de Rimac). Próximo salto de tesis/confianza sigue condicionado a
+  que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o `cronista` registren fuentes nuevas en el
+  ledger. Bitácora con 16 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días —
+  sin podar todavía.
