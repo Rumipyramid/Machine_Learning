@@ -17,9 +17,9 @@ del sistema reveló un problema más grande: el propio equipo trabajaba sin arti
 
 | | |
 |---|---|
-| **Qué ya está construido (V1)** | Estrategia del ramo, estrategias de comunicación, playbook de venta, materiales, contenido de la Universidad Vida y documentación para entrenamiento de AIDA |
+| **Qué ya está construido (V1)** | El modelo de venta (5 bloques) con su agente conversacional, el sistema de perfilamiento por motivaciones, el toolkit de social selling, playbook y materiales, y Universidad Vida |
 | **Evidencia que lo respalda** | Encuesta a 19 asesores + taller piloto con NPS 96.67 |
-| **Qué falta para cerrar la V1** | Un piloto de calibración del modelo, en 4 fases, antes del despliegue completo |
+| **Qué falta para cerrar la V1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
 | **Qué viene después** | Entrenamiento continuo, espejo a más canales de Vida, transformación al ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
 | **Por qué ahora** | Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
 
@@ -220,7 +220,7 @@ reportado por CoE Experience Design:
    gestión con clientes.
 2. **Copiloto de IA** — potencia la calidad de las respuestas y la creatividad en el manejo de
    objeciones. El mecanismo (role-play + feedback + puntaje) coincide con el simulador de IA que
-   el equipo co-diseñó para práctica deliberada (ver §6.3) — es probable que sea la misma
+   el equipo co-diseñó para práctica deliberada (ver §6) — es probable que sea la misma
    herramienta en su primera corrida real, aunque el taller lo organizó CoE Experience Design.
 3. **Metodología práctica y dinámica** — interacción, práctica y feedback fortalecen habilidades
    críticas del rol.
@@ -242,70 +242,112 @@ presión de cierre, guion de producto) tienen que resolverse en tiempo real y si
 (manejo de objeciones), el momento (cierre) y el mecanismo (simulación con IA + feedback) coinciden
 en el mapa del ecosistema, en la encuesta y en el taller — tres señales independientes apuntando en
 la misma dirección. Esto hace de "evolucionar el entrenamiento con IA en manejo de objeciones" la
-apuesta mejor respaldada de todo el backlog de siguientes pasos (§7), y es la base de diagnóstico
+apuesta mejor respaldada de todo el backlog de siguientes pasos (§8), y es la base de diagnóstico
 sobre la que se construyó la V1 (§6).
 
 ---
 
-## 6. Entregables V1
+## 6. Qué se construyó
 
-Con ese diagnóstico como base, la primera tanda del proyecto cubre **toda la creación de
-contenido y herramientas** del modelo de venta — lo que efectivamente se construyó, no la
-investigación que lo sostiene (esa ya está en §3 y §5). Organizados por lo que resuelven, no por
-el orden en que se hicieron:
+La primera tanda del proyecto es un modelo de venta completo, no piezas sueltas de comunicación.
+Esto es lo que existe hoy, construido:
 
-### 6.1 Estrategia de contacto (el corazón legal y conductual del proyecto)
-Construida sobre desk research y bench de estrategias de contacto, shadowing con asesores,
-entrevistas, cliente incógnito y seis sacrificial concepts validados tempranamente con Legal,
-Cumplimiento y clientes reales.
-- **Informe de estrategia de primer contacto** validado en conjunto con Legal, Cumplimiento y
-  CUA: qué canal, qué momento y qué mensaje maximizan la respuesta sin fricción normativa —
-  cubriendo tanto el escenario con CUA como el escenario sin CUA.
-- **Plantillas de WhatsApp y correo** de primer contacto, con personalización y mínima fricción de
-  respuesta, para el flujo con consentimiento (la versión para el flujo sin consentimiento está en
-  construcción).
+**El Modelo de Experiencia de Venta Vida, en 5 bloques.** Quiénes somos · Qué vendes · Que te
+encuentren · **La asesoría** · Después del sí. La asesoría es el corazón del modelo: un recorrido
+de 4 pasos donde el asesor descubre la motivación del cliente antes de hablar de producto,
+dimensiona un número concreto —no un precio suelto— y cierra pidiendo un siguiente paso. Es una
+secuencia evaluable, no una colección de técnicas sueltas.
 
-### 6.2 Playbook y materiales de venta
-- **Modelo de venta consultiva**: arquitectura de la conversación basada en preguntas de
-  descubrimiento que anclan la oferta en las motivaciones del cliente, no en el producto.
-- **Sistema de perfilamiento por motivaciones**: clasifica al cliente por perfil motivacional y
-  alimenta con eso al resto de materiales — el statement de vida, el pitch y el playbook de
-  storytelling se segmentan a partir de este sistema, no al revés.
-- **Playbook de storytelling de asesoría**: encuadre narrativo — historias que activan
-  identificación y emoción donde la cifra sola no persuade.
-- **Toolkit de social selling, en dos niveles**: contenido y guiones para vender por canales
-  digitales/redes, estructurado en dos niveles de uso.
-- **Materiales de venta** (flyer, brochure, cartaplan) simplificados para reducir la carga
-  cognitiva del mensaje y jerarquizar visualmente los beneficios.
+**El sistema de perfilamiento por motivaciones**, con dos mecánicas de dimensionamiento distintas
+según lo que mueve al cliente: **meta** (el número sale del costo de lo que quiere lograr — p. ej.
+una carrera universitaria) y **protección** (el número sale del ingreso que la familia dejaría de
+percibir). Son dos razonamientos distintos, no una sola fórmula — y alimentan el resto de
+materiales (statement de vida, pitch, storytelling).
 
-### 6.3 Formación del asesor
-- **Universidad Vida — Onboarding**: formación de hábitos tempranos con práctica espaciada y
-  feedback inmediato desde el día 1.
-- **Universidad Vida — Modelo de competencias**: progresión por niveles con evaluación y
-  reconocimiento, para sostener la motivación del asesor en el tiempo (no solo al inicio).
-- **AIDA Skill Trainer** (co-diseño): simulador de práctica deliberada — role-play con IA y
-  feedback inmediato que acelera la curva de aprendizaje sin costo de clientes reales.
+**El agente conversacional — la superficie de uso real del asesor.** El asesor no busca el
+playbook en un documento: el agente es la base de conocimiento que alimenta la conversación, con
+el portafolio de producto, las nueve objeciones documentadas y los speeches (que cambian según el
+origen del lead) disponibles en dos modos de uso. El PDF del playbook existe como respaldo y
+entregable de implementación, no como la herramienta de uso diario. Es probable que sea la misma
+línea de desarrollo que el copiloto de IA usado en el taller de manejo de objeciones (§5.3), ahora
+aplicado al flujo completo de venta y no solo al entrenamiento — pendiente de confirmar con el
+equipo.
 
-### 6.4 Validación antes de escalar
-Un piloto de calibración del modelo, con cuatro fases en curso, para validarlo con datos reales de
-campo antes del despliegue completo: una fase de calibración inicial, una fase de prueba en campo,
-una segunda fase de calibración con esa evidencia, y una fase de validación técnica de que el
-copiloto de IA reproduce fielmente el modelo calibrado.
+**Toolkit de social selling, en dos niveles.** Nivel 1 — lo que se resuelve en el momento: foto
+profesional, historia profesional en 3 partes (quién soy · por qué elegí esto/a quién ayudo · cómo
+puedo ayudarte hoy), perfiles y firma de correo actualizados. Nivel 2 — lo que se completa después
+con apoyo del agente: actualización completa de redes y banco de contenido para repostear.
 
-### 6.5 Despliegue
-Estrategia de adopción diseñada para dos frentes — la fuerza de venta actual (defaults,
-recordatorios, campeones internos) y Universidad Vida (adopción por cohortes con hitos visibles y
-reconocimiento) — para que las nuevas prácticas se sostengan más allá del lanzamiento.
+**Playbook de storytelling y materiales de venta** — encuadre narrativo para donde la cifra sola no
+persuade, más materiales simplificados (flyer, brochure, cartaplan) que reducen la carga cognitiva
+del mensaje.
 
-**Impacto esperado de la V1:** ↓ curva de aprendizaje y +conversión de venta; −25–40% en tiempo de
-ramp-up de asesores junior (estimado); +20–30% en agendamiento de citas (estimado); ahorro
-proyectado de S/1.8M vía AIDA.
+**Estrategia de contacto** validada en conjunto con Legal, Cumplimiento y CUA — informe de primer
+contacto y plantillas de WhatsApp/correo para el flujo con consentimiento (la versión sin
+consentimiento está en construcción) — construida sobre desk research, shadowing, entrevistas,
+cliente incógnito y seis sacrificial concepts.
+
+**Universidad Vida** — onboarding con práctica espaciada desde el día 1, y un modelo de
+competencias por niveles para sostener la motivación del asesor más allá del arranque.
 
 ---
 
-## 7. Siguientes pasos
+## 7. Piloto y despliegue
 
-### 7.1 Evolución del entrenamiento
+Antes del despliegue completo, el modelo se valida con datos reales de campo: un piloto de dos
+fases con 10 asesores en operación.
+
+### Objetivo y diseño
+Validar si el asesor comprende el modelo, lo aplica como fue diseñado, y lo incorpora a su forma
+de trabajar a través del agente — y qué le falta al modelo para sostenerse cuando se implemente.
+No es un experimento comercial: en dos semanas no se espera (ni se busca) movimiento en tasa de
+cierre; lo que se valida es recepción, aplicación y adopción.
+
+- **Día 1 — Transferencia** (sesión de 90 min): estructura del modelo, La asesoría en profundidad,
+  social selling en acción (se hace, no se explica), entrega de accesos al agente, y un ejercicio
+  de comprensión con 4 casos escritos.
+- **Campo — Puesta en acción** (2 semanas): el asesor trabaja con el agente en interacciones
+  reales; se mide con shadowing por cobertura, bitácora post-conversación (30 seg) y tracking
+  automático de uso — casi nada se le pregunta directamente al asesor.
+- **Cierre — 2da calibración**: mismo ejercicio de comprensión (para medir el delta), valoración
+  del agente, consolidación de hallazgos y decisión sobre implementación en AIDA.
+
+### Muestra: 10 asesores
+Compuesta a propósito por antigüedad, territorio y forma de originar demanda — no para comparar
+rendimiento entre grupos, sino para detectar si el modelo asume condiciones que no todos los
+asesores tienen: 6 Lima / 2 Arequipa / 2 Cuzco-Trujillo; 4 de 6 meses / 4 de 2–3 años / 2 perfiles
+particulares (asesor diamante, generador de contenido en redes).
+
+### Qué decide este piloto
+1. Si el modelo se implementa en AIDA, y bajo qué condiciones.
+2. Qué contenido falta cerrar antes del rollout, priorizado por demanda real (no por supuesto).
+3. Cómo se lanza — si el modelo se sostiene solo o necesita acompañamiento, y si eso cambia según
+   el perfil del asesor.
+4. Qué ajustar del modelo mismo.
+
+### Hitos comprometidos
+| Fecha | Hito |
+|---|---|
+| Vie 24/07 | Envío de playbook y artefactos · selección de asesores |
+| Mar 04/08 | Revisión de playbook y artefactos con Líderes de Venta y Producto |
+| Vie 07/08 | Inicio del piloto |
+
+### Despliegue (post-piloto)
+Con el piloto validado, la estrategia de adopción cubre dos frentes — la fuerza de venta actual
+(defaults, recordatorios, campeones internos) y Universidad Vida (adopción por cohortes con hitos
+visibles y reconocimiento) — para que las nuevas prácticas se sostengan más allá del lanzamiento.
+La decisión de implementación en AIDA es, en sí misma, una salida directa del piloto (arriba), no
+un paso posterior independiente.
+
+**Impacto esperado:** ↓ curva de aprendizaje y +conversión de venta; −25–40% en tiempo de ramp-up
+de asesores junior (estimado); +20–30% en agendamiento de citas (estimado); ahorro proyectado de
+S/1.8M vía AIDA.
+
+---
+
+## 8. Siguientes pasos
+
+### 8.1 Evolución del entrenamiento
 
 **Corto plazo:** resolver la consistencia de las respuestas del copiloto de IA que ya señalan
 tanto la encuesta como el taller (§5) — sin eso, escalar el entrenamiento con IA solo escala el
@@ -320,20 +362,20 @@ En paralelo, evolucionar el **entrenamiento con IA de piloto a herramienta funci
 diario para el asesor (no solo para el taller) — requiere una reunión con el equipo de GenAI que
 defina alcances conjuntos.
 
-### 7.2 Adaptación a otros canales de venta Vida — estrategia de espejo
+### 8.2 Adaptación a otros canales de venta Vida — estrategia de espejo
 
 Mismo producto (Vida), mismo cliente, mismo modelo de venta — lo único que cambia es el canal de
 entrega. Por eso es una **estrategia de espejo**: replicar lo ya validado, no rediseñarlo.
 
 - **Se replica sin cambios:** el modelo de venta consultiva, el playbook de storytelling, la
   estrategia de contacto validada con Legal/Cumplimiento/CUA, y el sistema de perfilamiento por
-  motivaciones (§6.2).
+  motivaciones (§6).
 - **Se ajusta por canal:** el canal de contacto en sí (WhatsApp/correo vs. el canal nuevo), el
   ritmo de seguimiento y, si aplica, el tono del mensaje.
 - **Riesgo y esfuerzo:** bajo — no requiere repetir la exploración del sistema (§3), porque el
   mapa que ya se hizo (§5.1) es el de Vida Individual, no el del canal.
 
-### 7.3 Adaptación a otro ramo: AMI — estrategia de transformación
+### 8.3 Adaptación a otro ramo: AMI — estrategia de transformación
 
 Producto distinto, cliente con otras motivaciones de compra, otro ciclo de venta y otras
 objeciones típicas — por eso esto es una **estrategia de transformación**, no una copia. Antes de
@@ -341,8 +383,8 @@ construir una V1 para AMI hay que repetir la exploración obligatoria del sistem
 ramo: el mapa del ecosistema de Vida (§5.1) no es válido para AMI.
 
 - **Se hereda:** la metodología completa (exploración de sistema → diagnóstico → V1 con evidencia
-  propia), el enfoque de formación con práctica espaciada, y el modelo de validación por fases
-  (§6.4).
+  propia), el enfoque de formación con práctica espaciada, y el modelo de validación por piloto
+  (§7).
 - **Se transforma:** la arquitectura de decisión (qué preguntas anclan la oferta), el manejo de
   objeciones específico de AMI, y el sistema de perfilamiento por motivaciones — que necesita
   recalibrarse para el comprador de AMI, no reusarse tal cual.
@@ -352,7 +394,7 @@ Esto es distinto del proyecto de guías resumidas de AMI Relanzamiento (que resu
 de producto, no modelo de venta) — aquí se trata de transformar el *modelo de venta* que Back to
 Basics validó en Vida, no replicar piezas de comunicación de un producto específico.
 
-### 7.4 Estrategias para mitigar el golpe de CUA
+### 8.4 Estrategias para mitigar el golpe de CUA
 
 Dos frentes concretos, pensados para trabajar en conjunto:
 
@@ -370,7 +412,7 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 
 ---
 
-## 8. Equipo y prioridad
+## 9. Equipo y prioridad
 
 - **Modalidad:** Perform — parte del 80% de iniciativas ya priorizadas por el comité (no es una
   apuesta de Transform).
@@ -380,13 +422,13 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 
 ---
 
-## 9. Cierre para la conversación con Milagros
+## 10. Cierre para la conversación con Milagros
 
 | | |
 |---|---|
 | **Cómo nació** | De un pedido puntual (speeches), tras la exploración obligatoria del sistema se detectó que el propio equipo trabajaba sin articulación — de ahí la unificación en Back to Basics |
 | **Qué muestra el diagnóstico** | Sobrecarga del asesor, lógicas de sistema que colisionan y experiencia desarticulada de cara al cliente — confirmado por el mapa del ecosistema, la encuesta a 19 asesores y el taller piloto (NPS 96.67), que además apuntan al mismo dolor concreto: manejo de objeciones en el cierre |
-| **Qué ya está construido** | Estrategia del ramo, estrategias de comunicación, playbook de venta, materiales, contenido de la Universidad Vida y documentación para entrenamiento de AIDA — validadas con ese diagnóstico y con Legal/Cumplimiento/CUA |
-| **Qué falta para cerrar la V1** | Un piloto de calibración del modelo, en 4 fases, antes del despliegue completo |
+| **Qué ya está construido** | El modelo de venta (5 bloques) con su agente conversacional, el sistema de perfilamiento por motivaciones, el toolkit de social selling, playbook y materiales, y Universidad Vida — validados con ese diagnóstico y con Legal/Cumplimiento/CUA |
+| **Qué falta para cerrar la V1** | El piloto con 10 asesores (día 1 + 2 semanas de campo, arranca 07/08) y la decisión de despliegue que sale de él |
 | **Qué viene después** | Entrenamiento continuo, espejo a más canales de Vida, transformación al ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
 | **Por qué ahora** | Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
