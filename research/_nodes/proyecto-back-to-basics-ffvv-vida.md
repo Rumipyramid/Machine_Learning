@@ -74,14 +74,13 @@ sido trabajado por **Alejandro Rojas** y **Melissa Ramírez** (ambos Behavioral 
 se asume que sea la misma persona que Melissa Ramírez sin confirmación explícita; se documentan
 ambas referencias tal como aparecen en las fuentes originales.
 
-**(Agregado 2026-07-27, vía deck "Back to Basics — low-fi", lámina 17 "Entregables del equipo"):
-aparece un cuarto colaborador, Felipe**, con autoría o co-autoría en: prototipo de agente para
-entrenamiento de asesores (con Melissa), diseño del prototipo funcional del front agéntico, y
-capacidad del agente de entrenamiento para generar reportería de resultados (además de la
-encuesta pre-post, con Alejandro). No se especifica su rol/disciplina en el deck fuente — se
-documenta el nombre y los entregables tal como aparecen, sin asumir que reemplaza o se superpone
-a César Cordero (que no aparece en esta lámina de entregables, pero tampoco hay indicación de que
-haya dejado el proyecto). Verificar rol y vigencia de ambos si se necesita el roster completo.
+**(Agregado 2026-07-27, vía deck "Back to Basics — low-fi", lámina 17 "Entregables del equipo";
+rol confirmado por el usuario el mismo día): aparece un cuarto colaborador, Felipe, practicante
+de Behavioral Design**, con autoría o co-autoría en: prototipo de agente para entrenamiento de
+asesores (con Melissa), diseño del prototipo funcional del front agéntico, y capacidad del agente
+de entrenamiento para generar reportería de resultados (además de la encuesta pre-post, con
+Alejandro). César Cordero es de un equipo distinto (Service Design) — no hay superposición ni
+reemplazo entre ambos; simplemente no aparece en esta lámina de entregables puntual.
 
 ## 1. Modelo de Experiencia de Venta Vida (deck presentado al VP)
 
