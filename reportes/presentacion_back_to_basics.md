@@ -297,7 +297,8 @@ conocimientos, en la sesión de transferencia del piloto (§7).
 ### 2 prototipos del copiloto
 
 El copiloto es la superficie de uso real del asesor: no busca el playbook en un documento, se lo
-pregunta al copiloto, y este responde con la base de conocimientos de arriba, en dos modos de uso.
+pregunta al copiloto, y este responde entrenado con un cuerpo de conocimiento en cuatro frentes —
+**modelo de venta, portafolio, manejo de objeciones e identidad RIMAC** —, en dos modos de uso.
 El PDF del playbook existe como respaldo y entregable de implementación, no como la herramienta de
 uso diario. Es probable que sea la misma línea de desarrollo que el copiloto de IA usado en el
 taller de manejo de objeciones (§5.3), ahora aplicado al flujo completo de venta y no solo al
