@@ -17,11 +17,11 @@ del sistema reveló un problema más grande: el propio equipo trabajaba sin arti
 
 | | |
 |---|---|
-| **Qué ya está construido (V1)** | Estrategia de contacto, playbook de venta, materiales, Universidad Vida y AIDA — validados con evidencia propia y con Legal/Cumplimiento/CUA |
+| **Qué ya está construido (V1)** | Estrategia del ramo, estrategias de comunicación, playbook de venta, materiales, contenido de la Universidad Vida y documentación para entrenamiento de AIDA |
 | **Evidencia que lo respalda** | Encuesta a 19 asesores + taller piloto con NPS 96.67 |
-| **Qué falta para cerrar la V1** | Cuatro pilotos de calibración del modelo antes del despliegue completo |
+| **Qué falta para cerrar la V1** | Un piloto de calibración del modelo, en 4 fases, antes del despliegue completo |
 | **Qué viene después** | Entrenamiento continuo, más canales de Vida, el ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
-| **Por qué ahora** | Prioridad #1 del comité; más del 50% de la venta actual depende de resolver el contacto sin consentimiento |
+| **Por qué ahora** | Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
 
 ---
 
@@ -97,6 +97,11 @@ el tiempo, así que el ramp-up de un asesor junior es lento y costoso.
 El asesor es, en la práctica, el punto de contacto humano que puede revertir esa desconfianza si
 tiene la estrategia y las herramientas correctas para hacerlo.
 
+**Por qué es urgente ahora mismo.** La competencia viene ganando market share en el ramo de
+seguros de vida mientras RIMAC no crece — revertir esa brecha depende, en gran parte, de que la
+fuerza de venta convierta más y mejor con lo que ya tiene, no de esperar una palanca nueva de
+producto.
+
 **Prioridad.** El comité de CoE X ya elevó Back to Basics a **prioridad #1** del trimestre.
 Equipo: Melissa y Alejandro, junto con César (Lead de Service Design, de otro equipo).
 
@@ -140,7 +145,11 @@ propio mapa, el nodo que representa el resultado hacia el cliente —**KPIs de e
 (NPS, EJO)**— depende casi enteramente de las Habilidades comerciales y la Experiencia del asesor:
 el cliente hereda directamente cualquier inconsistencia que el sistema no resolvió antes de llegar
 al asesor. No existe, en el mapa, ninguna palanca dedicada a sostener una experiencia consistente
-entre asesores — es un efecto secundario no gestionado de todo lo anterior.
+entre asesores — es un efecto secundario no gestionado de todo lo anterior. Esto también corrige
+una lectura frecuente del problema: cuando el cliente se queja, en general no es por un tema de
+consentimiento formal — es porque **se sintió acosado o maltratado** en el contacto. El riesgo
+legal (§4) y la experiencia del cliente son dos problemas relacionados pero distintos: resolver el
+consentimiento no resuelve, por sí solo, el trato.
 
 **Hallazgos secundarios.** El mapa organiza 9 frentes (Producto, Palancas de venta, Formación,
 Selección, Incentivos, Personalidad del Asesor, Seguimiento, Espacio Digital del asesor y Espacio
@@ -167,7 +176,6 @@ Uno de los outputs tangibles de esta exploración es el mapa completo — nodos,
 | Excel | 10/19 | 1/19 | Varios asesores arman sus propias tablas cuando otra herramienta falla |
 | Cartillas de producto | 4/19 | 4/19 | Uso mixto |
 | CartaPlan | 1/19 | 7/19 | Adopción baja — mayoría "nunca" o "rara vez" |
-| Ticker | 1/19 | 9/19 | Adopción muy baja — mayoría "nunca" o "rara vez" |
 
 **Satisfacción, y por qué el promedio no cuenta toda la historia.** El promedio general es
 **8.05/10** — alto en el agregado. Pero convive con fricciones concretas y repetidas en las
@@ -282,10 +290,10 @@ en que se hicieron:
   feedback inmediato que acelera la curva de aprendizaje sin costo de clientes reales.
 
 ### 6.5 Validación antes de escalar
-Cuatro hitos de piloto en curso para calibrar el modelo con datos reales de campo antes del
-despliegue completo: una calibración inicial, una prueba en campo, una segunda calibración con
-esa evidencia, y una validación técnica de que el copiloto de IA reproduce fielmente el modelo
-calibrado.
+Un piloto de calibración del modelo, con cuatro fases en curso, para validarlo con datos reales de
+campo antes del despliegue completo: una fase de calibración inicial, una fase de prueba en campo,
+una segunda fase de calibración con esa evidencia, y una fase de validación técnica de que el
+copiloto de IA reproduce fielmente el modelo calibrado.
 
 ### 6.6 Despliegue
 Estrategia de adopción diseñada para dos frentes — la fuerza de venta actual (defaults,
@@ -362,7 +370,7 @@ reconocer). Queda por definir la mecánica de incentivo para el cliente que refi
 |---|---|
 | **Cómo nació** | De un pedido puntual (speeches), tras la exploración obligatoria del sistema se detectó que el propio equipo trabajaba sin articulación — de ahí la unificación en Back to Basics |
 | **Qué muestra el diagnóstico** | Sobrecarga del asesor, lógicas de sistema que colisionan y experiencia desarticulada de cara al cliente — confirmado por el mapa del ecosistema, la encuesta a 19 asesores y el taller piloto (NPS 96.67), que además apuntan al mismo dolor concreto: manejo de objeciones en el cierre |
-| **Qué ya está construido** | Estrategia de contacto, playbook de venta, materiales, Universidad Vida y entrenamiento con IA — validados con ese diagnóstico y con Legal/Cumplimiento/CUA |
-| **Qué falta para cerrar la V1** | Cuatro pilotos de calibración del modelo antes del despliegue completo |
+| **Qué ya está construido** | Estrategia del ramo, estrategias de comunicación, playbook de venta, materiales, contenido de la Universidad Vida y documentación para entrenamiento de AIDA — validadas con ese diagnóstico y con Legal/Cumplimiento/CUA |
+| **Qué falta para cerrar la V1** | Un piloto de calibración del modelo, en 4 fases, antes del despliegue completo |
 | **Qué viene después** | Entrenamiento continuo, más canales de Vida, el ramo AMI, y dos mitigaciones concretas al riesgo de CUA |
-| **Por qué ahora** | Prioridad #1 del comité; más del 50% de la venta actual depende de resolver el problema de contacto sin consentimiento |
+| **Por qué ahora** | Prioridad #1 del comité; la competencia viene ganando market share en seguros de vida mientras RIMAC no crece |
