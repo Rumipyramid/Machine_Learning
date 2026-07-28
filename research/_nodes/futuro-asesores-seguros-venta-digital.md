@@ -379,3 +379,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   real de RIMAC donde la Formación del asesor y el Espacio Digital del Asesor (Agente AI
   copiloto) son justamente la inversión en el intermediario humano que este node recomienda,
   en vez de apostar por reemplazarlo en Vida Individual, un producto complejo.
+- [[venta-vida-digital-hibrida-latam|Venta de seguros de vida en LATAM: digital vs. híbrido vs.
+  tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
+  patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
+  (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
