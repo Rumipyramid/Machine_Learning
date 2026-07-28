@@ -1,13 +1,16 @@
 # Venta de seguros de vida en LATAM: modelo digital vs. híbrido vs. tradicional, y cómo performa cada uno
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-27 · Versión: v1.0
-> Origen: `/marketer` — investigación de espectro de negocio
+> Fecha de elaboración: 2026-07-27 · Última actualización: 2026-07-27 · Versión: v1.0
+> (Actualización 2026-07-27, sin bump de versión, incremental: ampliada el mismo día con
+> `/trinidad` — pista empírica/teórica y pista social/mediática — sobre la base de negocio
+> ya construida con `/marketer`. Afina la síntesis, no la cambia.)
+> Origen: `/marketer` (pista de negocio) + `/trinidad` (ampliación 360°, mismo día)
 > Pregunta original: ¿cómo están funcionando las aseguradoras de LATAM en venta de seguros
 > de vida — 100% digital, híbrido, o tradicional — y cómo performa cada modelo?
 > Alcance: LATAM excluyendo Perú, que el proyecto ya cubre en detalle en
 > [[seguros-comportamiento-mundo-peru]] y en `proyecto-back-to-basics-ffvv-vida.md`.
-> Fuentes registradas en `research/fuentes/codice.md` (F-372 a F-379).
+> Fuentes registradas en `research/fuentes/codice.md` (F-372 a F-384).
 
 ---
 
@@ -164,6 +167,58 @@ desempeño de retención.
 
 ---
 
+## Ampliación 360° (`/trinidad`, 2026-07-27): pista empírica/teórica y pista social/mediática
+
+Las secciones §1 a §4 arriba son la pista de negocio (`/marketer`). Esta ampliación corre la
+misma pregunta por las otras dos pistas del proyecto, manteniendo sus criterios de validez
+separados — no se mezclan con las cifras de negocio de arriba.
+
+### 🔬 Pista empírica/teórica
+
+**No existe literatura académica específica sobre adopción de seguros digitales en LATAM que se
+haya podido localizar en esta ronda** — es un vacío real, no una omisión. Lo que sí se encontró:
+
+- **McKinsey, Informe Global de Seguros 2023 (edición LatAm), F-380, 🔵B:** 67% de los
+  consumidores latinoamericanos inicia su búsqueda de seguro de vida en canales digitales, pero
+  la mayoría de las pólizas **no** se compran por ese canal — lo digital domina la fase de
+  búsqueda de información, el asesoramiento humano sigue siendo clave en la fase de decisión.
+  Recomienda explícitamente un modelo híbrido para la región.
+- **Salcedo-Farro et al. 2024, revisión sistemática PRISMA, IROCAMM (revista arbitrada de la
+  Universidad de Sevilla), F-381, 🟢A** — la única fuente de rigor A de esta investigación, pero
+  con una salvedad importante: es sobre comercio electrónico general en LATAM (2020-2023), **no
+  específica del sector seguros**. Su hallazgo central — que la confianza y la seguridad
+  percibida son el factor crítico que limita convertir interés digital en compra digital — se
+  aplica aquí por transferencia de dominio razonable, no como evidencia directa del sector
+  asegurador.
+
+**Lectura:** la pista empírica es la más débil de las tres en esta investigación — hay
+consultoría (McKinsey) pero no ciencia específica de seguros en la región. Lo poco que hay
+converge con la pista de negocio: digital domina la búsqueda, no la decisión de compra.
+
+### 📱 Pista social/mediática
+
+**Nivel de instalación social: 💬 (moderado, no viral) — con un hallazgo específico que vale la
+pena señalar.** No se encontró discusión genuina y verificable en foros o redes
+*específicamente latinoamericana* (Reddit LATAM, foros regionales) sobre comprar seguro de vida
+online — los foros en español que sí tienen esa conversación (Rankia, Forocoches, F-384) son
+predominantemente España-céntricos y no se pudo confirmar el origen geográfico real de sus
+usuarios, así que se declara explícitamente como vacío de esta pista, en vez de forzar la lectura
+regional.
+
+**Lo que sí apareció, con valor específico:** Reclame Aqui —la plataforma de reclamos de
+consumidores más usada de Brasil— tiene el perfil de **Azos**, el mismo insurtech que la pista de
+negocio identificó como el de mejor desempeño comercial de la región (F-377). Nota 9.1/10, pero
+con 30 reclamos registrados, mayormente sobre **negativas de cobertura sin justificación clara,
+cancelaciones por declaraciones de salud (DPS) incompletas, y falta de claridad en los criterios
+de suscripción** (F-382, 🟠D). Es un hallazgo de **divergencia real, no forzada**: el mismo actor
+que más éxito de negocio tiene en la región muestra fricción social concreta justo en el momento
+de la suscripción/rechazo — coherente con el patrón que ya documenta
+[[futuro-asesores-seguros-venta-digital]] (Bain, §3.2 de ese node): lo digital falla más en el
+momento de la decisión/reclamo que en la venta inicial. También se registró una reseña aislada
+muy negativa sobre Mapfre Colombia (F-383, 🔴E, un solo caso, no tendencia).
+
+---
+
 ## 5. ⚖️ Síntesis
 
 **Respuesta directa a la pregunta:** en LATAM (excluyendo Perú), el modelo que domina y que
@@ -191,10 +246,29 @@ adicional sobre el riesgo de escalar un modelo nuevo a muchos mercados simultán
 validación profunda en cada uno — relevante para cualquier fase de expansión geográfica del
 proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 
+**Convergencia y divergencia de las tres pistas (`/trinidad`):** las tres pistas **convergen** en
+que digital domina la búsqueda de información y no la decisión de compra — es el mismo mensaje en
+la cifra de negocio (bancaseguros/corredores dominan la distribución), en la cifra empírica (67%
+busca online, la mayoría no compra online, McKinsey F-380) y en la lectura teórica por
+transferencia de dominio (confianza como factor limitante, IROCAMM F-381). Hay una **divergencia
+real y no forzada** entre negocio y social: Azos es el mejor caso de negocio de la región (F-377)
+y al mismo tiempo el único caso con evidencia social concreta de fricción en suscripción/reclamos
+(F-382) — no se resuelve artificialmente; ambas cosas son ciertas a la vez, y es exactamente el
+patrón que predice el marco teórico de este hub (asimetría de información/complejidad del
+producto) sobre dónde falla lo digital incluso cuando el negocio funciona.
+
 ---
 
 ## 6. Limitaciones
 
+- **Pista empírica sin literatura académica específica de seguros digitales en LATAM.** El único
+  hallazgo 🟢A (IROCAMM, F-381) es de comercio electrónico general, no del sector asegurador —
+  aplicado por transferencia de dominio, no como evidencia directa. Vacío real, declarado
+  explícitamente en vez de forzar una lectura que la evidencia no sostiene.
+- **Pista social sin discusión LATAM-específica verificable.** Los foros en español encontrados
+  (Rankia, Forocoches) no se pudieron confirmar como de usuarios latinoamericanos — se trató
+  como vacío de esta pista en vez de atribuir su contenido a la región sin base. El hallazgo social
+  más sólido (Reclame Aqui sobre Azos, F-382) es de una sola plataforma de un solo país (Brasil).
 - **Cobertura desigual por país.** Brasil (el mercado más grande) tiene el mejor dato disponible
   (Azos, CNseg); México, Argentina y el resto de países de la región no se investigaron a fondo
   en esta ronda — quedan fuera del alcance de esta versión del node.

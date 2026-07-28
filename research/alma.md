@@ -70,7 +70,7 @@ por afirmación cuando corresponda.
 | `_nodes/matriz-productos-vida-rimac.md` | Matriz de productos Vida RIMAC: catálogo de 3(+1) productos reales (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total), coberturas/addons, trazabilidad de fuentes y niveles de confianza — VCD digital/Endosable digital pendientes, no confirmados | 2026-07-26 | v1.2 |
 | `_nodes/glosario-seguro-vida-peru.md` | Glosario de seguro de vida en lenguaje claro — FAQ de cliente (investigación `/trinidad`: pista empírica + social + negocio) para completar el Playbook del Asesor | 2026-07-24 | v1.0 |
 | `_nodes/tendencias-diseno.md` | **Node acumulativo** — Tendencias en diseño: qué tiene impacto tangible demostrado y qué es propuesta innovadora sin respaldo (producto/UX, IA, design systems, servicio, visual). Incluye escala de madurez de evidencia, tablero de 18 hipótesis vivas y 14 reglas de criterio destiladas | 2026-07-26 | v1.0 (iteración 1) |
-| `_nodes/venta-vida-digital-hibrida-latam.md` | Venta de seguros de vida en LATAM (Brasil, Chile, Colombia; excluye Perú): modelo digital vs. híbrido vs. tradicional y cómo performa cada uno — extensión regional de `futuro-asesores-seguros-venta-digital.md` | 2026-07-27 | v1.0 |
+| `_nodes/venta-vida-digital-hibrida-latam.md` | Venta de seguros de vida en LATAM (Brasil, Chile, Colombia; excluye Perú): modelo digital vs. híbrido vs. tradicional y cómo performa cada uno — extensión regional de `futuro-asesores-seguros-venta-digital.md`; ampliada 360° con `/trinidad` (pistas empírica y social) el mismo día | 2026-07-27 | v1.0 (amplía con 360°, sin bump) |
 
 ---
 
@@ -79,6 +79,7 @@ por afirmación cuando corresponda.
 | Output | Construido sobre (nodes) | Última actualización | Estado |
 |---|---|---|---|
 | `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
+| `_outputs/venta-vida-latam-360-2026-07-27.md` — informe de 360° (`/trinidad`) entregado al usuario sobre venta de vida en LATAM: digital vs. híbrido vs. tradicional | `venta-vida-digital-hibrida-latam`, `futuro-asesores-seguros-venta-digital` | 2026-07-27 | al día |
 
 > **Estado**: `al día` o `requiere refresh`.
 
