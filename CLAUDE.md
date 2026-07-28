@@ -38,6 +38,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis con evidencia F-n del ledger + confianza; refinada diariamente contra `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: barrido incremental (grupos de 5) de literatura 🟢A del códice para el modelo `lapuerta` | Nunca aplica solo — memoria en `research/updates/cerrajero_barrido_estado.json`, siempre pregunta antes de tocar el modelo |
+| `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 | `.claude-plugin/marketplace.json` · `plugin.json` | Marketplace personal de plugins | Expone `.claude/skills/` como plugin instalable en cualquier máquina/cuenta — ver sección abajo |
@@ -203,6 +204,28 @@ variables al modelo `lapuerta`.
 - 2026-07-06 — `research/updates/2026-07-06_fortalecimiento_modelo.md`
 - 2026-06-21 — `research/updates/2026-06-21_fortalecimiento_modelo.md`
 <!-- LAPUERTA_REPORTS_END -->
+
+### 📌 Skill: `edipo2` (oráculo personal)
+Lectura del presente y del futuro que cruza cuatro fuentes: (1) lo que el repo y la sesión
+saben del usuario como persona (`research/yopersona/perfil.md`, actividad reciente, nodes,
+agenda si el conector está disponible), (2) una tirada simulada de **I Ching** nueva en cada
+ejecución, (3) el **cielo del día sobre Lima** con posiciones planetarias calculadas en local,
+y (4) una tirada de **tarot de Marsella** leída con el marco de **Jung** (sincronicidad,
+sombra, ánima, función inferior, individuación).
+
+- **Invocación:** `/edipo2` (con pregunta opcional; sin pregunta, la lectura es espontánea).
+- **Ubicación:** `.claude/skills/edipo2/` — `SKILL.md`, `scripts/` (`tirada.py` orquestador +
+  `iching.py`, `astro.py`, `tarot.py`, todos solo stdlib) y `references/` (64 hexagramas,
+  78 cartas con clave junguiana, `marco-jungiano.md` con la regla de convergencia).
+- **Astronomía real, no inventada:** `astro.py` usa elementos keplerianos de la JPL para los
+  planetas, la fórmula de baja precisión del Astronomical Almanac para la Luna, y calcula
+  Ascendente/MC por tiempo sidéreo local para Lima (UTC-5, 12°02'S). Verificado contra
+  ingresos planetarios y lunaciones conocidas: Sol exacto en equinoccios/solsticios, planetas
+  ~0.05°, Luna ~0.25°.
+- **Reglas propias:** nunca `--seed` en consulta real (cada tirada debe ser nueva); nunca
+  inventar cartas ni posiciones; correspondencia privada (Gmail/Drive) solo si el usuario lo
+  pide en esa consulta; la lectura **no se guarda** en el repo salvo pedido explícito (y si se
+  guarda, va a `research/_outputs/edipo2/` con su fila en `research/alma.md`).
 
 ### 📌 Marketplace personal de skills (portabilidad entre máquinas/cuentas)
 Este repo se auto-referencia como un **marketplace de plugins de Claude Code**

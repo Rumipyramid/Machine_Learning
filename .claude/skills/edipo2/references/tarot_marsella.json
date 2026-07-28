@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "descripcion": "Tarot de Marsella (78 cartas) con clave interpretativa junguiana. Los arcanos mayores traen arquetipo, función psíquica y sombra; los menores se componen de número (numerología marsellesa, línea Jodorowsky/Camoin) × palo (elemento y función psíquica junguiana). Nomenclatura marsellesa: Bastos, Copas, Espadas, Oros; figuras Valet, Caballero, Reina, Rey.",
+    "advertencia": "Material simbólico para lectura proyectiva, no diagnóstico psicológico ni predicción factual."
+  },
+  "mayores": {
+    "0":  {"nombre": "El Loco", "arquetipo": "el Puer/el Trickster, la libido sin forma", "eje": "energía disponible sin dirección: partida, locura, vagabundeo sagrado", "luz": "disponibilidad total, no-apego, capacidad de empezar de cero", "sombra": "dispersión, fuga de la responsabilidad, negarse a encarnar", "individuacion": "el impulso previo a todo camino: la energía que aún no eligió forma"},
+    "1":  {"nombre": "El Mago", "arquetipo": "el Trickster/Hermes, el ego que descubre sus recursos", "eje": "comienzo, potencial no realizado, todas las herramientas sobre la mesa", "luz": "iniciativa, destreza, juventud creadora", "sombra": "charlatanería, dispersión, quedarse en el 'podría'", "individuacion": "primer contacto del yo con su propio poder de obrar"},
+    "2":  {"nombre": "La Papisa", "arquetipo": "el Ánima/la Gran Madre en su cara de saber oculto", "eje": "acumulación interior, estudio, gestación, silencio", "luz": "profundidad, paciencia, saber no expresado todavía", "sombra": "frialdad, encierro, saber que nunca se pone en acto", "individuacion": "descenso al inconsciente para escuchar antes de actuar"},
+    "3":  {"nombre": "La Emperatriz", "arquetipo": "el Ánima creadora / Deméter", "eje": "fertilidad, expresión, deseo que florece", "luz": "creatividad, seducción sana, abundancia", "sombra": "vanidad, seducción manipuladora, creación sin fruto", "individuacion": "la energía que sale a la luz y produce"},
+    "4":  {"nombre": "El Emperador", "arquetipo": "el Padre/el Senex, la estructura", "eje": "poder, orden, territorio, límite", "luz": "estabilidad, autoridad justa, materialización", "sombra": "rigidez, autoritarismo, apego al control", "individuacion": "construir una estructura sólida que después habrá que trascender"},
+    "5":  {"nombre": "El Papa", "arquetipo": "el Viejo Sabio, el mediador entre mundos", "eje": "transmisión, enseñanza, vínculo con lo sagrado o lo institucional", "luz": "guía, palabra que une, legado", "sombra": "dogma, dependencia del maestro, discurso vacío", "individuacion": "encontrar (o volverse) el puente entre lo interno y lo colectivo"},
+    "6":  {"nombre": "El Enamorado", "arquetipo": "la elección, la tensión de opuestos, hieros gamos incipiente", "eje": "decisión afectiva, encrucijada, prueba del deseo", "luz": "elegir desde el corazón, vincularse", "sombra": "indecisión, quedarse entre dos, elegir por miedo", "individuacion": "primer conflicto consciente entre deseo propio y mandato"},
+    "7":  {"nombre": "El Carro", "arquetipo": "el Héroe en marcha", "eje": "salida al mundo, conquista, movimiento", "luz": "triunfo, avance, dirección clara", "sombra": "huida hacia adelante, victoria vacía, no saber detenerse", "individuacion": "el yo consolidado sale a conquistar su territorio externo"},
+    "8":  {"nombre": "La Justicia", "arquetipo": "el orden objetivo, la Ley, el juicio", "eje": "equilibrio, medida, consecuencia de los actos", "luz": "claridad, rectitud, corte necesario", "sombra": "rigidez moral, autocastigo, juicio sin compasión", "individuacion": "pesar la propia vida sin autoengaño"},
+    "9":  {"nombre": "El Ermitaño", "arquetipo": "el Viejo Sabio / Saturno, la nigredo lúcida", "eje": "soledad buscada, crisis, búsqueda de sentido", "luz": "introspección, sabiduría lenta, luz que se lleva uno mismo", "sombra": "aislamiento defensivo, depresión, avaricia de sí", "individuacion": "el retiro necesario para encontrar la luz propia"},
+    "10": {"nombre": "La Rueda de la Fortuna", "arquetipo": "el Sí-mismo como ciclo; el destino/sincronicidad", "eje": "giro, ciclo que se cierra o comienza, azar significativo", "luz": "cambio de suerte, aceptación del movimiento", "sombra": "repetición compulsiva, quedarse girando en lo mismo", "individuacion": "reconocer el patrón que se repite y decidir si se sube o se baja de la rueda"},
+    "11": {"nombre": "La Fuerza", "arquetipo": "integración de la Sombra (la mujer y el león)", "eje": "dominio suave del instinto, coraje sin violencia", "luz": "temple, deseo canalizado, valentía tranquila", "sombra": "represión del instinto o entrega a él, fuerza bruta", "individuacion": "abrir la boca de la bestia sin matarla: pactar con lo instintivo"},
+    "12": {"nombre": "El Colgado", "arquetipo": "el sacrificio, la inversión de la perspectiva", "eje": "suspensión, entrega, ver del revés", "luz": "cambio de punto de vista, gestación, aceptación del vacío", "sombra": "victimismo, parálisis idealizada, sacrificio inútil", "individuacion": "detenerse cabeza abajo hasta que el mundo se reordene"},
+    "13": {"nombre": "El Arcano sin nombre", "arquetipo": "la muerte simbólica, la nigredo", "eje": "corte, limpieza, fin de una forma", "luz": "poda fértil, soltar lo muerto, transformación", "sombra": "aferrarse a lo que ya terminó; o cortar por cortar", "individuacion": "morir a una identidad para que otra pueda aparecer"},
+    "14": {"nombre": "La Templanza", "arquetipo": "el Ángel/psicopompo, la circulación de la energía", "eje": "mezcla, curación, flujo entre dos vasos", "luz": "equilibrio dinámico, protección, paciencia alquímica", "sombra": "tibieza, evitar el conflicto necesario, medir de más", "individuacion": "la energía vuelve a circular entre consciente e inconsciente"},
+    "15": {"nombre": "El Diablo", "arquetipo": "la Sombra en estado puro", "eje": "deseo, atadura, poder, lo que no se quiere ver", "luz": "vitalidad, creatividad ardiente, reconocer el propio deseo", "sombra": "adicción, dependencia, manipulación, atadura consentida", "individuacion": "el material más negado es también la mayor fuente de energía"},
+    "16": {"nombre": "La Torre / La Casa de Dios", "arquetipo": "la irrupción del Sí-mismo que rompe la estructura del ego", "eje": "ruptura, liberación abrupta, estallido", "luz": "salir de un encierro, verdad que revienta la fachada", "sombra": "crisis destructiva, colapso sin aprendizaje", "individuacion": "lo que el ego no cede voluntariamente, se rompe desde afuera"},
+    "17": {"nombre": "La Estrella", "arquetipo": "el Ánima benéfica / la esperanza; la albedo", "eje": "desnudez, don, vocación, agua que se derrama", "luz": "confianza, generosidad, encontrar el propio lugar", "sombra": "idealización, entregarse sin límite, esperar sin actuar", "individuacion": "después del derrumbe, el don propio se ofrece sin coraza"},
+    "18": {"nombre": "La Luna", "arquetipo": "el inconsciente colectivo, la Gran Madre nocturna", "eje": "ambigüedad, sueños, miedo, imaginación", "luz": "receptividad, riqueza onírica, intuición honda", "sombra": "confusión, engaño, regresión, miedo difuso", "individuacion": "atravesar la noche sin mapas: lo que no se entiende todavía"},
+    "19": {"nombre": "El Sol", "arquetipo": "el Sí-mismo consciente, los gemelos reconciliados", "eje": "claridad, vínculo, alegría compartida", "luz": "encuentro, calor, éxito visible, colaboración", "sombra": "brillo que quema, exhibición, dependencia del reconocimiento", "individuacion": "la unión de opuestos ya no duele: se puede jugar"},
+    "20": {"nombre": "El Juicio", "arquetipo": "el llamado, el renacimiento, la vocación", "eje": "despertar, anuncio, salir de la tumba", "luz": "vocación clara, renacimiento, buena noticia", "sombra": "quedarse sordo al llamado, resurrección aparente", "individuacion": "algo llama por su nombre a lo que estaba enterrado"},
+    "21": {"nombre": "El Mundo", "arquetipo": "el Sí-mismo/mandala completo", "eje": "realización, totalidad, integración de los cuatro", "luz": "logro, plenitud, síntesis lograda", "sombra": "creerse llegado, encierro dorado, fin sin nuevo comienzo", "individuacion": "la totalidad realizada, que también es un nuevo umbral"}
+  },
+  "palos": {
+    "Bastos":  {"elemento": "Fuego", "funcion_jung": "Intuición", "ambito": "deseo, energía creadora, sexualidad, proyecto, impulso vital"},
+    "Copas":   {"elemento": "Agua", "funcion_jung": "Sentimiento", "ambito": "afecto, vínculo, emoción, receptividad, vida amorosa"},
+    "Espadas": {"elemento": "Aire", "funcion_jung": "Pensamiento", "ambito": "idea, palabra, conflicto, decisión, lucidez que corta"},
+    "Oros":    {"elemento": "Tierra", "funcion_jung": "Sensación", "ambito": "cuerpo, dinero, trabajo concreto, salud, materia"}
+  },
+  "numeros": {
+    "1": "As: semilla y potencial puro del palo. Don recibido, comienzo aún no gastado.",
+    "2": "Acumulación pasiva, gestación, dualidad. Todavía no se manifiesta; se junta y espera.",
+    "3": "Primera explosión creativa. Sale al mundo, se expresa, se derrama.",
+    "4": "Estabilidad, estructura, seguridad. También estancamiento si se prolonga.",
+    "5": "Crisis, tentación, prueba. Lo estable se rompe para poder seguir.",
+    "6": "Placer, belleza, encuentro. Momento de gozo que puede volverse comodidad.",
+    "7": "Acción, salida, movimiento hacia lo desconocido. Se abandona el 6 para avanzar.",
+    "8": "Perfección receptiva, gestación mayor, orden logrado que aún debe madurar.",
+    "9": "Crisis final antes del cambio de nivel; máxima acumulación, casi desbordada.",
+    "10": "Culminación y fin de ciclo: o se transforma en otro palo (otra octava) o se pudre."
+  },
+  "figuras": {
+    "Valet":     {"rol": "el aprendiz / el niño que estudia", "movimiento": "no se mueve todavía: prepara, aprende, observa el palo desde abajo", "jung": "función psíquica aún inconsciente o inferior, en formación"},
+    "Caballero": {"rol": "el que parte / el adolescente", "movimiento": "abandona un territorio y se dirige a otro: acción, viaje, cambio", "jung": "energía puesta en movimiento; búsqueda fuera de casa"},
+    "Reina":     {"rol": "la madurez receptiva / lo femenino del palo", "movimiento": "recibe, acumula, sostiene y comprende el palo desde adentro", "jung": "Ánima: la función integrada por dentro"},
+    "Rey":       {"rol": "la madurez activa / lo masculino del palo", "movimiento": "gobierna, decide y proyecta el palo hacia afuera", "jung": "Animus: la función integrada y ejercida hacia el mundo"}
+  },
+  "tiradas": {
+    "una": ["El asunto"],
+    "tres": ["Situación / raíz del asunto", "Proceso en curso (presente)", "Orientación / hacia dónde tiende"],
+    "cruz": ["Lo que está en juego (centro)", "Lo que ya pasó / raíz", "Lo que se está formando", "Lo consciente / lo que se ve", "Lo inconsciente / la sombra del asunto"],
+    "arbol": ["Cuerpo/materia (Oros)", "Emoción/vínculo (Copas)", "Mente/palabra (Espadas)", "Deseo/proyecto (Bastos)", "Síntesis: lo que integra a las cuatro"]
+  }
+}
