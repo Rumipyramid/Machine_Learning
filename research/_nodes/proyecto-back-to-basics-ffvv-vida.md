@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-26 · Versión: v1.3
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-27 · Versión: v1.4
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -47,6 +47,21 @@
 > documenta el mecanismo concreto de la Estrategia 4 — tarjeta del asesor con código QR al
 > formulario de consentimiento — que resuelve "Gestión de referidos" en el Playbook de la sesión
 > (Bloque 5, antes `(Pendiente)`).
+> **v1.4 (2026-07-27)** incorpora el deck "Back to Basics — low-fi" (17 láminas, presentación para
+> Milagros, persistido en `research/_outputs/back-to-basics-presentacion-lowfi-2026-07-27.html`):
+> formaliza el origen del pedido y la regla metodológica del equipo ("toda exploración del sistema
+> es obligatoria antes de diseñar"), suma 4 hallazgos previos de investigación (Research CoE
+> 2023-2025) nunca antes documentados en este node, reencuadra el mapa sistémico con una
+> terminología de "9 frentes" (ver nota de reconciliación en §2) y 4 hallazgos operativos nuevos que
+> se anclan a Dx1-Dx3, agrega evidencia externa nueva (McKinsey, F-359/F-360; trayectoria de loss
+> ratio de Lemonade, F-361), suma datos primarios de diagnóstico (encuesta a 19 asesores + resultados
+> del Taller de Manejo de Objeciones) nunca antes cuantificados en este node, introduce "Universidad
+> Vida" como programa de onboarding, un backlog estructurado de 5 frentes (incluye un mecanismo
+> nuevo — alertas de CRM como default seguro — complementario al de la tarjeta QR de §3), la
+> bifurcación estratégica Espejo (otros canales de Vida) vs. Transformación (ramo **AMI**, no
+> mencionado antes en este node), y la lista de entregables del equipo — que revela a **Felipe**
+> como colaborador no listado en el §0 Equipo hasta ahora. Cambio estructural: agrega alcance
+> (AMI), evidencia nueva y un miembro de equipo no documentado — no es solo actualización de estado.
 
 ---
 
@@ -58,6 +73,14 @@ sido trabajado por **Alejandro Rojas** y **Melissa Ramírez** (ambos Behavioral 
 "Melissa (Consentimiento/CUA)" como stakeholder del workstream de estrategias de contacto — no
 se asume que sea la misma persona que Melissa Ramírez sin confirmación explícita; se documentan
 ambas referencias tal como aparecen en las fuentes originales.
+
+**(Agregado 2026-07-27, vía deck "Back to Basics — low-fi", lámina 17 "Entregables del equipo";
+rol confirmado por el usuario el mismo día): aparece un cuarto colaborador, Felipe, practicante
+de Behavioral Design**, con autoría o co-autoría en: prototipo de agente para entrenamiento de
+asesores (con Melissa), diseño del prototipo funcional del front agéntico, y capacidad del agente
+de entrenamiento para generar reportería de resultados (además de la encuesta pre-post, con
+Alejandro). César Cordero es de un equipo distinto (Service Design) — no hay superposición ni
+reemplazo entre ambos; simplemente no aparece en esta lámina de entregables puntual.
 
 ## 1. Modelo de Experiencia de Venta Vida (deck presentado al VP)
 
@@ -146,6 +169,152 @@ Estrategia de Clientes y Canal — ver §7):
   perfilamiento y gestión de ventas", "Monitoreo de calidad"): plataforma única de inteligencia
   de leads, copiloto del asesor, alertas automatizadas de churn.
 
+**Origen del pedido (agregado 2026-07-27, vía deck "Back to Basics — low-fi", lámina 03):**
+RIMAC había despriorizado varios proyectos estratégicos, pero la necesidad de negocio no se
+detuvo — llegó un pedido puntual (speeches para distintos momentos del journey del asesor). El
+equipo de behavioral design aplicó su regla de trabajo (ver siguiente párrafo) antes de
+responder al pedido literal, y encontró que la misma CoE venía produciendo diseños no
+articulados entre sí — de ahí nace la decisión de unificar los frentes de Venta Vida bajo
+"Back to Basics", en vez de simplemente entregar los speeches pedidos.
+
+**Regla metodológica del equipo (agregado 2026-07-27):** "todo pedido recibe, obligatoriamente,
+una exploración del sistema en el que está inscrito el problema — antes de diseñar ninguna
+solución." No se diseña una pieza suelta (un speech, una plantilla) sin entender el ecosistema
+completo que la rodea; el resultado típico de esa exploración es un mapa del ecosistema (§2). Es
+la razón formal, ya articulada como regla de equipo y no solo como práctica implícita, de por qué
+este proyecto existe como frente unificado y trae diagnóstico propio en vez de piezas sueltas.
+
+**Hallazgos previos de investigación — Research CoE 2023-2025 (agregado 2026-07-27, vía deck
+low-fi, lámina 04):** cuatro hallazgos de investigaciones internas anteriores a este proyecto,
+que ya apuntaban a la misma dirección antes de la exploración sistémica de 2026:
+1. **El asesor es "la cara" de RIMAC** — una buena experiencia con el asesor se traduce en
+   recomendación; una mala experiencia genera rechazo hacia RIMAC como marca, no solo hacia esa
+   persona.
+2. **Los brokers ganan la confianza que RIMAC no gana directamente** — se les percibe como más
+   confiables y transparentes que RIMAC al ofrecer sus propios productos.
+3. **La venta agresiva genera rechazo** — usuarios reportan ser abordados con mensajes invasivos
+   y confusos.
+4. **El problema es sistémico, no solo del asesor** — el asesor es el primer frente de cara al
+   usuario, pero hay una lógica sistémica detrás que impacta la experiencia del cliente durante
+   la venta. Es el precedente directo, previo a 2026, de lo que Dx1-Dx3 formaliza más arriba en
+   esta misma sección.
+
+**Evidencia externa adicional para "potenciar al asesor, no digitalizar" (agregado 2026-07-27,
+vía deck low-fi, lámina 08) — complementa el benchmark de Corea/China/Lemonade ya citado en §2:**
+McKinsey (2023, F-359, 🔵B): *"Insurers cannot sacrifice the human touch in CX — especially for
+life customers, who rank agents as the most trusted source for learning about insurance
+products."* En Asia-Pacífico el mix de canales de vida sigue dominado por agencias (~40%) y
+partnerships (~35%) — el contacto cara a cara sigue siendo la forma dominante aunque ~80% de las
+ventas ya están habilitadas por tecnología digital (McKinsey, F-360, 🔵B): lo digital potencia al
+agente, no lo reemplaza. Contraejemplo citado en el mismo deck: Lemonade (IA sin agentes, IPO
+2020) mantuvo un loss ratio de 166% (2017) → 86% (2019) → ~90% (2021-22) (F-361, 🟠D, fuente
+original no verificada — complementa a F-189/F-29, ya en el ledger, con datos más recientes)
+— digitalizar sin potenciar el juicio humano no resolvió la economía del seguro.
+
+**Diagnóstico interno — encuesta a 19 asesores y Taller de Manejo de Objeciones (agregado
+2026-07-27, vía deck low-fi, láminas 09-12):** primeros datos primarios cuantificados de este
+proyecto sobre uso y valoración de herramientas por parte de los propios asesores.
+
+- **Uso de herramientas ("siempre", de 19 asesores):** Salesforce 16/19 (84.2%, nunca 0/19) ·
+  WhatsApp 14/19 (73.7%, nunca 0/19) · Email 11/19 (57.9%, nunca 0/19) · Excel 10/19 (52.6%,
+  nunca 1/19) · **AIDA 7/19 (36.8%, nunca 1/19)** · CartaPlan 1/19 (5.3%, nunca 7/19).
+- **Satisfacción general con la ayuda que reciben:** 8.05/10 en promedio — pero el promedio no
+  cuenta toda la historia: comprensión de producto 8/19 bastante · 8/19 regular · 3/19 poco;
+  **manejo de objeciones/persuasión, la peor calificada: 6/19 bastante · 9/19 regular · 4/19
+  poco.**
+- **Hallazgo accionable central:** manejo de objeciones es el tema más pedido (42%, 8/19) y el
+  cierre es el momento con más necesidad de apoyo (~40%) — el asesor no pide más información de
+  producto, pide ayuda para manejar la conversación justo antes de cerrar. Herramientas a
+  mejorar, empatadas a 4/19 cada una: **AIDA** ("no da la información adecuada", "no contesta
+  bien casi nunca" — mismo defecto de consistencia que reporta el taller, ver abajo), recursos
+  visuales (piden brochures digitales listos), cotizador (piden usarlo sin autorización previa).
+  Otros hallazgos: falla de onboarding citada explícitamente ("no enseñan bien a usar
+  Salesforce... aprendemos en marcha"); uso informal de ChatGPT/Gemini para compensar huecos de
+  AIDA y del cotizador.
+- **Taller de Manejo de Objeciones (piloto, 36 invitados):** 99.33% satisfacción con el
+  contenido · 98.67% desempeño del speaker · **NPS de 96.67** · 83.33% de asistencia (30 de 36).
+  Drivers de valor: casuística real (principal), copiloto de IA (probablemente el mismo
+  simulador de práctica deliberada co-diseñado por el equipo — ver AIDA Skill Trainer en §2),
+  metodología práctica con feedback. Mejoras pedidas: más diversidad de casos, **consistencia del
+  copiloto de IA — mismo defecto que AIDA reporta la encuesta**, logística.
+- **Lectura conjunta:** el dolor de encuesta y taller (tema: manejo de objeciones; momento: el
+  cierre; mecanismo: simulación con IA + feedback) es la expresión más concreta del Hallazgo 1
+  del mapa (sobrecarga del asesor, ver nota de reconciliación en §2) — pero el diagnóstico
+  completo pide algo más amplio que solo entrenamiento, porque si las lógicas colisionan
+  (Hallazgo 2) y el cliente hereda esa inconsistencia (Hallazgo 3), la respuesta tiene que ser
+  más de una pieza. Tres apuestas mejor respaldadas, base de la Fase 1 ya construida (ver más
+  abajo): (1) contenido y herramientas que hablen el mismo idioma, (2) corregir las fallas del
+  copiloto — mismo defecto en encuesta y taller, (3) evolucionar el entrenamiento con IA.
+
+**Qué se construyó — Fase 1 (agregado 2026-07-27, vía deck low-fi, lámina 13; consolida y nombra
+lo que §3, §4 y §6 de este node ya documentaban por partes):** Modelo de Venta de 5 bloques
+(Quiénes somos · Qué vendes · Que te encuentren · La asesoría, 4 pasos · Después del sí, mismos
+bloques que el Playbook de §4) · Perfilamiento por motivaciones (dos mecánicas: meta — costo de
+lo que el cliente quiere lograr — y protección — ingreso que la familia perdería) · Agente
+(cuerpo de conocimiento para entrenamiento: modelo de venta, portafolio, manejo de objeciones e
+identidad RIMAC, con speeches por origen de lead) · Toolkit de social selling (Nivel 1: foto,
+historia, perfiles, firma; Nivel 2: redes completas, banco de contenido) · Playbook y materiales
+(storytelling de asesoría + materiales simplificados: flyer, brochure, cartaplan) · Estrategia de
+contacto (validada con Legal/Cumplimiento/CUA — ver §3; plantillas WhatsApp y correo) ·
+**Universidad Vida** (programa nuevo, no mencionado antes en este node: onboarding con práctica
+espaciada desde el día 1 — ver también "Despliegue" más abajo).
+
+**Backlog estructurado de siguientes pasos (agregado 2026-07-27, vía deck low-fi, láminas 15-16
+— más específico y accionable que las "16 palancas sin priorizar" ya documentadas arriba):**
+1. **Consulta (corto plazo):** resolver la consistencia de respuestas del copiloto de IA — mismo
+   defecto que señalan la encuesta y el taller. Centralizar funciones en el copiloto en vez de
+   sumar herramientas sueltas, cuidando no sobresaturar al asesor (Hallazgo 1 del mapa).
+2. **Entrenamiento (mediano plazo):** de onboarding puntual a programa de crecimiento continuo
+   (competencias + práctica espaciada); la IA pasa de piloto a herramienta de uso diario (requiere
+   alcance ampliado con GenAI).
+3. **Alertas de CRM — mecanismo nuevo, complementario a la tarjeta QR de §3:** un "default
+   seguro" en Salesforce que avisa o condiciona el contacto al consentimiento registrado —
+   protege sin depender de que el asesor lo recuerde. No sustituye el mecanismo de autorregistro
+   de la Estrategia 4 (§3); opera un nivel más abajo, como salvaguarda técnica dentro del CRM.
+4. **Programa de referidos:** contacto por referido en vez de en frío, apoyado en consentimiento
+   implícito + prueba social + reciprocidad — falta definir el incentivo al cliente que refiere
+   (ver también la "Novedades abiertas" de §3 sobre pago YAPE/Plin, pendiente de Legal).
+5. **Seguimiento e incentivos:** diseñar un sistema de seguimiento del aprendizaje y del
+   cumplimiento de lineamientos RIMAC, atado a un sistema de incentivos y crecimiento — responde
+   directamente a los nodos rojos de "incentivos por calidad/experiencia" y "monitoreo de
+   calidad" del mapa (§2).
+
+**Despliegue post-piloto (agregado 2026-07-27):** dos frentes en paralelo — la fuerza de venta
+actual (por defaults y campeones) y **Universidad Vida** (por cohortes). La decisión de
+implementación en AIDA sale del piloto de §8, no es un paso aparte.
+
+**Espejo vs. Transformación — bifurcación estratégica (agregado 2026-07-27, vía deck low-fi,
+lámina 16):** el proyecto ya distingue explícitamente dos caminos de escalamiento con riesgo y
+esfuerzo distintos, más allá de las "16 palancas sin priorizar" ya documentadas:
+- **Espejo → otros canales de Vida (riesgo/esfuerzo bajo):** mismo producto, mismo cliente, mismo
+  modelo — solo cambia el canal de entrega. Se replica sin cambios: venta consultiva,
+  storytelling, estrategia de contacto, perfilamiento por motivaciones. Se ajusta: el canal, el
+  ritmo de seguimiento, el tono si aplica. No requiere repetir la exploración obligatoria del
+  sistema (ver regla metodológica arriba).
+- **Transformación → ramo AMI (riesgo/esfuerzo mayor) — alcance nuevo, no mencionado antes en
+  este node.** Producto distinto, otras motivaciones, otro ciclo de venta y otras objeciones. Se
+  hereda la metodología completa, la formación con práctica espaciada, la validación por piloto.
+  Se transforma (no se reusa): arquitectura de decisión, manejo de objeciones, y el perfilamiento
+  por motivaciones se recalibra. **Exige repetir la exploración obligatoria del sistema para AMI
+  antes de construir nada** — no hay diagnóstico sistémico de AMI todavía en este repositorio.
+  *(Nota: el deck fuente no expande la sigla "AMI" — verificar con el equipo antes de usarla en
+  materiales externos sin definirla.)*
+
+**Entregables del equipo de behavioral design (agregado 2026-07-27, vía deck low-fi, lámina 17
+— primer inventario consolidado con autoría por persona):** (1) Diagnóstico sistémico de la
+Venta Vida (Alejandro); (2) Piloto de capacitación en manejo de objeciones — diseño de la
+capacitación (Melissa), guía digital para manejo de objeciones (Alejandro y Melissa), resumen
+físico de la guía (Alejandro), prototipo de agente para entrenamiento de asesores (Felipe y
+Melissa); (3) Estrategia y mensajes de primer contacto — sacrificial concepts para validación
+con legal y cumplimiento (Alejandro), plantillas de mensaje para WhatsApp/email (Alejandro); (4)
+Playbook para el asesor — estrategia de social selling (Melissa), consolidado de contenido y
+diseño del manual (Melissa); (5) Materiales de venta — flyers de venta (Alejandro), tarjeta de
+presentación del asesor (Melissa — ver la maqueta con mecanismo QR construida en sesión, sección
+de flyers/tarjeta de este proyecto); (6) Diseño del piloto — prototipo funcional del front
+agéntico (Felipe); (7) Herramientas de medición — encuesta pre-post de asesores (Alejandro y
+Felipe), matriz para mystery shoppers con rúbricas de experiencia (Alejandro y Melissa),
+capacidad del agente de entrenamiento para generar reportería (Felipe).
+
 ---
 
 ## 2. Mapa sistémico AS IS 2026 (diagnóstico de ecosistema)
@@ -232,6 +401,35 @@ Cartaplan, ambientación funcional, creencias y motivación, evaluaciones de ent
 **Enfoque metodológico:** diagnóstico basado en evidencia, sin soluciones todavía (Sección 1 del
 documento maestro: hallazgos con evidencia; Sección 2: ejes de trabajo con evidencia). Se
 mantiene coherencia entre el mapa visual y el documento diagnóstico, y entre ambos y Dx1-Dx3 (§1).
+
+**Nota de reconciliación de terminología (2026-07-27, vía deck "Back to Basics — low-fi", lámina
+06):** el deck presenta el mismo mapa agrupado en **"9 frentes"** — Producto, Palancas de venta,
+Formación, Selección, Incentivos, Personalidad del Asesor, Seguimiento, Espacio Digital, Espacio
+Físico — una simplificación de los 11 clusters listados arriba (no incluye "Unidad de Negocio e
+Inteligencia Comercial" ni "Marketing" como frentes separados). No está confirmado si es una
+consolidación deliberada o una simplificación de la lámina para audiencia ejecutiva — tratar
+"9 frentes" como el lenguaje de presentación y los 11 clusters de arriba como el detalle
+completo, hasta que se confirme cuál es la fuente de verdad vigente. El deck aclara además el
+alcance de intervención: **Back to Basics interviene en Personalidad del Asesor, Formación, y
+parte de Palancas de venta y Espacio Digital/Físico** — no en los 9 frentes completos.
+
+**Cuatro hallazgos operativos del mapa (2026-07-27, vía el mismo deck, lámina 07) — reformulan
+Dx1-Dx3 (§1) en términos más concretos, no los reemplazan:**
+1. **Sobrecarga del asesor** — "Habilidades comerciales" y "Capacidades cognitivas" son los
+   nodos con más conexiones entrantes de todo el mapa: onboarding, incentivos, monitoreo,
+   materiales, IA, todo desemboca en el asesor en el momento de la venta. Versión operativa de
+   Dx3.
+2. **Lógicas que colisionan** — cada frente opera con su propia lógica sin coordinarse con las
+   demás (incentivos, selección, formación, control); el mapa no muestra ningún nodo que las
+   concilie — el único punto de encuentro es, otra vez, el asesor. Versión operativa de Dx1/Dx2.
+3. **Experiencia desarticulada de cara al cliente** — sin estrategia unificada, cada asesor
+   vende "a su manera"; el cliente hereda cualquier inconsistencia no resuelta antes. Consecuencia
+   directa de Dx2.
+4. **La queja es sobre el trato, no el consentimiento** — cuando el cliente se queja, rara vez es
+   por consentimiento formal: es porque se sintió acosado o maltratado en el contacto. Precisión
+   importante para el workstream de §3: riesgo legal (CUA) y experiencia del cliente son
+   problemas relacionados pero **distintos** — resolver CUA no resuelve automáticamente la
+   percepción de trato.
 
 ---
 
@@ -358,6 +556,11 @@ usado en la visión To Be de la Mesa Back to Basics FFVV (§1).
   del 2026-07-20 no estaba realmente aplicada, esta sí).
 - Banco de recursos de marketing para repostear (Bloque 3).
 - FAQ de coberturas específicas, exclusiones, qué pasa si el cliente deja de pagar (Bloque 4).
+- **Flyers de venta (Bloque 4, agregado 2026-07-26):** formato definido — 1 JPG por producto real
+  (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total) + 1 JPG comparativo para compartir
+  pantalla en conversación (no para chat). VCD digital/Endosable digital quedan sin flyer hasta
+  que se confirmen como producto real (ver [[matriz-productos-vida-rimac|Matriz de productos Vida
+  RIMAC]] §1). Pendiente que el usuario adjunte los 5 JPG.
 - Gestión de referidos e indicadores de negocio (Bloque 5).
 - Certificación e incentivos, esquema remunerativo (Apéndice).
 - Meta de reviews en Google (15 reviews, 4.8+) — por validar.
@@ -656,11 +859,15 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 - **La resolución descrita en §6 (Bloque 4 vs. CUA) no estaba verificada contra el documento
   fuente actual — actualizado (2026-07-25): la "Resolución definitiva" de §6 sí se aplicó
   directamente al documento de la sesión** (verificado porque se hizo en esta misma sesión, no
-  por revisión posterior). Sigue aplicando la limitación de fondo: `Playbook_del_asesor.md` **no
-  vive en este repositorio** — este node resume y confía en el estado del archivo de sesión, sin
-  poder versionarlo ni auditarlo como el resto de este repo. Si ese archivo se pierde o se edita
-  fuera de esta trazabilidad, este node puede volver a quedar desactualizado del mismo modo que
-  pasó entre el 2026-07-20 y el 2026-07-24.
+  por revisión posterior). **Actualizado (2026-07-26): `Playbook_del_asesor.md` ya vive en este
+  repositorio** — el usuario lo adjuntó y quedó persistido en
+  `research/_fuentes_internas/Playbook_del_asesor.md` (v1.0 · jun 2026 · borrador interno,
+  contenido verificado contra este node el mismo día: coincide con el estado que §3/§6 ya
+  documentaban — 2 rutas de contacto CUA, sin speech "en frío"). Esto cierra la limitación de
+  fondo que motivó esta nota: el archivo deja de depender de sobrevivir solo en el estado de una
+  sesión externa y ya puede versionarse y auditarse como el resto de este repo. Si se genera una
+  versión más nueva del Playbook fuera de esta sesión, hay que volver a subirla aquí para que este
+  node y el archivo persistido no diverjan otra vez.
 - **El mapa AS IS 2026 (§2) existe como diagrama visual** (compartido en la sesión el
   2026-07-24) pero no se pudo persistir el archivo de imagen en este repo — este node solo
   guarda su lectura textual (clusters, semáforo de nodos). Si se necesita el diagrama en sí para
@@ -678,10 +885,13 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC — catálogo y coberturas]] —
   catálogo de qué cubre y cuánto cuesta cada producto real (VFP, Plan Vida Flexible, Vida
-  Contigo, Vida Temporal Total); insumo directo del Bloque 4 del Playbook (§4, venta consultiva
-  de 4 pasos) y de los Casos C/D de dimensionamiento del Plan Piloto (§8) — incluye el caveat de
-  no citar "170%" de devolución como cifra fija, relevante para cualquier material de este
-  proyecto que mencione Vida Contigo.
+  Contigo, Vida Temporal Total); insumo directo del Bloque 4 del Playbook del Asesor (§4 de ese
+  node, "venta consultiva de 4 pasos" — motivación → dimensionamiento → perfil financiero →
+  propuesta) y del ejercicio de dimensionamiento del Plan Piloto (§8 de ese node, Casos C y D) —
+  incluye el caveat de no citar "170%" de devolución como cifra fija, relevante para cualquier
+  material de este proyecto que mencione Vida Contigo. VCD digital y Endosable digital, que
+  aparecen en el Playbook del Asesor, quedan pendientes — no confirmados como producto real
+  distinto (§1 de ese node).
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — investigación
   `/trinidad` (2026-07-24) que completó la sección "Preguntas frecuentes de producto" del
   Playbook del Asesor (Bloque 4, Momento 4) con un glosario de cliente; hallazgo clave: la
@@ -708,6 +918,13 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   sobre una versión más resumida de este mismo proyecto (el documento "Back to Basics" de alto
   nivel, previo a que se sumara el marco de §1); este node es la capa de detalle y de marco
   narrativo (Dx1-Dx3, statement, pilares) que ese output no cubría todavía.
+- `research/_outputs/back-to-basics-presentacion-lowfi-2026-07-27.html` — deck de 17 láminas
+  (low-fi, para Milagros), persistido tal cual el 2026-07-27; es la fuente de la mayoría de las
+  adiciones de esta versión v1.4 del node (origen del pedido, regla metodológica, hallazgos
+  previos, encuesta a 19 asesores, Taller de Manejo de Objeciones, Universidad Vida, backlog
+  estructurado, Espejo/Transformación-AMI, entregables del equipo). Más reciente y más completo
+  que el output de 2026-07-23 citado arriba — ver también sus dos láminas explícitamente nuevas
+  (04 y 17, "añadidas a pedido, no están en el reporte original" según su propio endnote).
 - [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué es propuesta]] — sus
   reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
   transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la

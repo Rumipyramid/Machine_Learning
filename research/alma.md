@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-26.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-27.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -65,11 +65,12 @@ por afirmación cuando corresponda.
 | `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y frameworks para medir la calidad de un agente/chatbot de IA (usabilidad, métricas técnicas RAG, específicos de banca/seguros) | 2026-07-15 | v1.0 |
 | `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-22 | v1.1 (migrado desde `main` a Many Brains, ver nota de reconciliación abajo) |
 | `_nodes/modelo-personas-sinteticas.md` | Cómo funciona y se calibra el modelo `lapuerta` (20 variables, v1.3) — excepción declarada de alcance, no mueve el código | 2026-07-20 | v1.0 |
-| `_nodes/futuro-asesores-seguros-venta-digital.md` | ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario (empírico + social + negocio) | 2026-07-22 | v1.0 |
-| `_nodes/proyecto-back-to-basics-ffvv-vida.md` | Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido — Modelo de Experiencia de Venta Vida (deck al VP, Dx1-Dx3), mapa sistémico AS IS, estrategias de contacto (DS 016), playbook del asesor, cruce con evidencia/tesis del Lobo, Plan Piloto de validación (10 asesores) | 2026-07-26 | v1.3 (lineamiento definitivo de CUA — resuelto, no solo "vigente"; riesgo penal de bases de datos de referidos; mecanismo de tarjeta+QR de la Estrategia 4) |
-| `_nodes/matriz-productos-vida-rimac.md` | Matriz de productos Vida RIMAC: catálogo de 3(+1) productos reales (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total), coberturas/addons, trazabilidad de fuentes y niveles de confianza | 2026-07-24 | v1.0 |
+| `_nodes/futuro-asesores-seguros-venta-digital.md` | ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario (empírico + social + negocio); §3.7 amplía con casos de éxito comercial verificable en venta de vida 100% digital (Ethos, Bowtie) | 2026-07-27 | v1.0 (amplía §3.7, sin bump — afina la tesis, no la cambia) |
+| `_nodes/proyecto-back-to-basics-ffvv-vida.md` | Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido — Modelo de Experiencia de Venta Vida (deck al VP, Dx1-Dx3), mapa sistémico AS IS (9 frentes / 4 hallazgos operativos), estrategias de contacto (DS 016), playbook del asesor, encuesta a 19 asesores + Taller de Manejo de Objeciones, Universidad Vida, backlog Espejo/Transformación (ramo AMI), cruce con evidencia/tesis del Lobo, Plan Piloto de validación (10 asesores) | 2026-07-27 | v1.4 (deck low-fi para Milagros: origen del pedido, regla metodológica, hallazgos previos, evidencia McKinsey nueva, datos primarios de diagnóstico, alcance nuevo AMI, Felipe como colaborador no listado antes) |
+| `_nodes/matriz-productos-vida-rimac.md` | Matriz de productos Vida RIMAC: catálogo de 3(+1) productos reales (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total), coberturas/addons, trazabilidad de fuentes y niveles de confianza — VCD digital/Endosable digital pendientes, no confirmados | 2026-07-26 | v1.2 |
 | `_nodes/glosario-seguro-vida-peru.md` | Glosario de seguro de vida en lenguaje claro — FAQ de cliente (investigación `/trinidad`: pista empírica + social + negocio) para completar el Playbook del Asesor | 2026-07-24 | v1.0 |
 | `_nodes/tendencias-diseno.md` | **Node acumulativo** — Tendencias en diseño: qué tiene impacto tangible demostrado y qué es propuesta innovadora sin respaldo (producto/UX, IA, design systems, servicio, visual). Incluye escala de madurez de evidencia, tablero de 18 hipótesis vivas y 14 reglas de criterio destiladas | 2026-07-26 | v1.0 (iteración 1) |
+| `_nodes/venta-vida-digital-hibrida-latam.md` | Venta de seguros de vida en LATAM (Brasil, Chile, Colombia; excluye Perú): modelo digital vs. híbrido vs. tradicional y cómo performa cada uno — extensión regional de `futuro-asesores-seguros-venta-digital.md` | 2026-07-27 | v1.0 |
 
 ---
 

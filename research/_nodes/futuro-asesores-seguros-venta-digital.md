@@ -1,11 +1,14 @@
 # ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-22 · Versión: v1.0
+> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-07-27 · Versión: v1.0
+> (Actualización 2026-07-27, sin bump de versión, incremental: §3.7 ampliación sobre casos de
+> éxito comercial verificable en venta 100% digital de vida — Ethos, Bowtie, contraevidencia
+> Bestow/Singlife — afina la tesis existente, no la cambia.)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: ¿en el futuro desaparecerán los asesores de seguros? ¿Qué sucede
 > en sociedades donde la tecnología permite venta 100% digital?
-> Fuentes registradas en `research/fuentes/codice.md` (F-180 a F-192).
+> Fuentes registradas en `research/fuentes/codice.md` (F-180 a F-192, F-362 a F-371).
 
 ---
 
@@ -211,6 +214,92 @@ sin método).
 | Motley Fool, Lemonade (F-189) | Prensa financiera | 🟠 D | Caso insignia aún no rentable, 12 años después |
 | Grand View Research (F-190) | Firma de investigación de mercado | 🟡 C | Mercado de brokers en expansión global |
 
+### 3.7 Ampliación (2026-07-27, `/marketer`): ¿existe algún caso de éxito comercial verificable de venta de VIDA 100% digital?
+
+Pregunta de seguimiento del usuario, más acotada que la original de este node: no "¿desaparece el
+asesor?" sino "¿quién sí lo está logrando, y qué tan sólido es ese éxito?". Se buscó
+específicamente en vida (no P&C/viaje/mascotas) en EE.UU., Hong Kong, Singapur, China e India.
+Fuentes F-362 a F-369.
+
+**El caso más sólido: Ethos (EE.UU.).** Salió a bolsa en NASDAQ (ticker `LIFE`, enero 2026);
+revenue FY2025 de USD 388M (+52% interanual), 198,338 pólizas activadas (+55%), margen EBITDA
+ajustado de 23% — la evidencia de negocio de mayor calidad de esta ampliación, por ser una empresa
+pública con divulgación regulada (F-362, F-363, 🟡C — no se releyó el filing SEC primario en esta
+sesión, solo el comunicado de resultados). **Matiz que corrige la pregunta original:** Ethos no
+opera con flujo 100% sin humano — es una agencia de seguros licenciada que distribuye pólizas de
+aseguradoras terceras, y un agente humano licenciado interviene específicamente cuando la
+entrevista de salud conversacional produce respuestas ambiguas o inciertas, antes de que el motor
+de suscripción decida (F-364, 🟡C). Es decir: **el caso de mayor éxito comercial encontrado no
+refuta la tesis de este node — la confirma con más precisión.** No es "cero intermediación humana
+en producto complejo, y funciona"; es "digital-first con humano como red de seguridad dirigida
+justo a los casos de mayor incertidumbre", el mismo patrón que predice §1.1 (asimetría de
+información) aplicado de forma disciplinada.
+
+**Segundo caso relevante: Bowtie (Hong Kong).** ARR >USD 80M a mayo 2025, +100% interanual,
+proyectado a superar USD 100M para fin de 2025, líder del canal directo del mercado de seguros de
+HK (F-365, 🟠D — comunicado propio redistribuido, no triangulación independiente). No se encontró
+confirmación de rentabilidad neta — la nota que sí la reporta corresponde a OneDegree, una empresa
+distinta del mismo mercado, que no se investigó a fondo en esta ronda.
+
+**Qué hace bien Bowtie, específicamente (ampliación 2026-07-27, pregunta de seguimiento):**
+
+1. **Eligió el producto correcto para digital puro.** Se enfocó en VHIS (esquema de salud
+   voluntario *estandarizado y regulado por el gobierno de HK*) y vida a término — productos con
+   condiciones ya homogeneizadas por regulación, no negociadas caso a caso. Es la misma variable
+   que predice §1.2 de este node (la complejidad del producto decide si digital funciona): Bowtie
+   no intentó digitalizar lo complejo, escogió lo que ya venía simplificado por ley.
+2. **Comisión cero, no "menos intermediación".** La licencia de "virtual insurer" de HK (la
+   primera otorgada, dic. 2018, régimen "Fast Track") le prohíbe por diseño vender vía
+   agentes/bancos — toda la prima va a protección, sin comisión. No es que eliminó al humano por
+   estrategia; el modelo regulatorio se lo exige, y lo convirtió en ventaja de precio (F-370).
+3. **Reduce fricción de entrada sin pedir confianza por adelantado.** Cotización instantánea sin
+   pedir datos personales antes de cotizar, pago mensual sin permanencia forzada — coherente con
+   lo que documenta [[transicion-venta-fria-a-opt-in|el node sobre transición a venta opt-in]]
+   sobre reducir la carga de "pedir antes de dar valor".
+4. **Ataca exactamente el punto donde el resto del sector falla: el reclamo, no la venta.** §3.2
+   de este mismo node documenta que los reclamos 100% digitales fallan 33-39% del tiempo en el
+   sector (Bain, F-183). Bowtie reporta ~70.000 reclamos procesados con 99.53% de aprobación
+   (F-371, autorreportado, no auditado por tercero) — si esa cifra es siquiera direccionalmente
+   correcta, es la única evidencia de este node de un actor digital-first resolviendo el momento
+   más débil del modelo, no solo la venta inicial.
+5. **Mantiene soporte humano, pero sin incentivo comercial.** Sus especialistas de atención al
+   cliente están licenciados como agentes tradicionales, pero operan bajo la misma política de
+   comisión cero — hay humano disponible, sin la presión de venta que la asimetría de información
+   (§1.1) predice que erosiona confianza. Mismo patrón que Ethos (§3.7 arriba): humano presente,
+   pero no como vendedor con comisión.
+
+**Lectura conjunta con Ethos:** los dos casos de mejor evidencia de este node no ganaron
+eliminando al humano ni compitiendo en "más digital que nadie" — ganaron **eligiendo el segmento de
+producto ya simplificado por regulación/estandarización, y usando al humano donde hace falta sin
+incentivarlo a presionar.** Es una confirmación más específica de la síntesis de §4, no un caso
+nuevo que la contradiga.
+
+**Contraevidencia buscada a propósito (Paso 10 de `marketer`):** dos señales de que "éxito
+comercial" y "modelo 100% digital sostenido" no son lo mismo. (1) **Bestow** (EE.UU.) vendió su
+propia aseguradora D2C (Bestow Life Insurance Company) a Sammons Financial en 2024 y pivotó a
+vender software B2B a otras aseguradoras — abandonó el modelo de venta digital directa al
+consumidor que originalmente lo hizo conocido; el sector reporta layoffs simultáneos en Bestow,
+Vouch, Ethos, Cover, Loop, TrustLayer y PolicyGenius (F-366, 🟡C). (2) **Singlife** (Singapur, el
+insignia digital-first de ese mercado) terminó con su participación mayoritaria adquirida por
+Sumitomo Life —una aseguradora tradicional japonesa— en diciembre 2023 por USD 1,21B: el desenlace
+de mayor magnitud de ese caso fue ser absorbido por un incumbente, no permanecer independiente
+(F-367, 🟡C). Consistente con lo que ya documenta el mercado de brokers en expansión (§3.5): la
+tecnología digital-first parece rendir mejor como **capacidad que un actor establecido adquiere o
+integra**, no como reemplazo independiente que le gana el mercado desde afuera.
+
+**India (Acko, Digit, PolicyBazaar):** crecimiento fuerte de GWP (+132%, +74%, +46%
+respectivamente, F-368, 🟡C) — pero son *agregadores/brokers* que combinan compra online con
+consultoría telefónica, no evidencia de flujo sin contacto humano. Mismo patrón: crecimiento
+digital real, pero digital-asistido, no digital-solo.
+
+**Conclusión de la ampliación:** sí existen casos de éxito comercial verificable en venta de vida
+con fuerte componente digital (Ethos es el más sólido, con divulgación de empresa pública) — pero
+ninguno de los casos investigados sostiene un flujo genuinamente 100% sin intervención humana en
+producto complejo. El patrón que mejor describe el éxito real es "digital-first con intervención
+humana dirigida a la incertidumbre", no "digital puro". Esto no cambia la síntesis de §4 — la
+afina con el primer caso de éxito comercial de calidad de evidencia B/A-adyacente (empresa pública)
+encontrado para este node.
+
 ---
 
 ## 4. ⚖️ Síntesis
@@ -290,3 +379,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   real de RIMAC donde la Formación del asesor y el Espacio Digital del Asesor (Agente AI
   copiloto) son justamente la inversión en el intermediario humano que este node recomienda,
   en vez de apostar por reemplazarlo en Vida Individual, un producto complejo.
+- [[venta-vida-digital-hibrida-latam|Venta de seguros de vida en LATAM: digital vs. híbrido vs.
+  tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
+  patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
+  (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
