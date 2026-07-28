@@ -1001,3 +1001,12 @@ decisión, si no está diseñada para ser verificable.
   que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o `cronista` registren fuentes nuevas en el
   ledger. Bitácora con 16 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días —
   sin podar todavía.
+- **2026-07-28** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  78584ad→b3fa77b) y leí `codice.md` completo: sigue tope en F-328, idéntico al de las dos
+  corridas de ayer (2026-07-27) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
+  desde entonces. Repasé las 22 tesis contra ese mismo tope: ninguna quedó desalineada con el
+  ledger vigente. No forcé ninguna conexión nueva entre tesis solo por completar el paso — las dos
+  corridas de ayer ya agotaron las conexiones razonables disponibles entre tesis 7, 13, 21 y 22.
+  Próximo salto de tesis/confianza sigue condicionado a que `/trinidad`, `/seeker`, `/gossip`,
+  `/marketer` o `cronista` registren fuentes nuevas en el ledger. Bitácora con 17 días de
+  historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
