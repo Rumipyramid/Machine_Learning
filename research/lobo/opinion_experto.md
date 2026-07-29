@@ -216,11 +216,21 @@ del sector. La literatura ya tiene el playbook para evitarlo: correr el modelo e
 "silent trial"/shadow mode 60-90 días (sin influir en la atención real, sin
 necesitar consentimiento) antes de producción, y separar explícitamente
 validación técnica de validación clínica (la que casi siempre se salta).
+**[Matiz 2026-07-29]** F-358 añade el detalle final del colapso de Babylon: el
+detonante no fue que el consumidor rechazara el triaje IA — fue que **la
+aseguradora pagadora (Centene, ~50% del revenue) decidió no renovar el
+contrato** tras pérdidas de USD 212-274M en 2022 y terminó en quiebra Cap. 7,
+vendiendo su operación UK por £500,000 (vs. USD 4.2B de valuación en el IPO
+2021). Matiz de negocio, no solo de producto: validar precisión clínica
+(silent trial) es necesario pero no suficiente — el caso de negocio también
+tiene que sostenerse para el pagador que firma el contrato, no solo para el
+paciente que lo usa. Un triage IA puede pasar el silent trial y aun así morir
+si el pagador que lo financia no ve retorno a tiempo.
 - **Evidencia:** F-50 (🟢A/vía prensa especializada, caso Babylon), F-43 (🟢A,
   precisión real 45%), F-56/F-57 (🟢A, protocolo de silent trial), F-62 (🔵B,
-  marco FDA SaMD)
+  marco FDA SaMD), F-358 (🟡C, ángulo de negocio/pagador del colapso Babylon)
 - **Confianza:** Alta
-- **Actualizado:** 2026-07-20
+- **Actualizado:** 2026-07-29
 
 ### 11. El ciclo de rentabilidad del seguro global está en su mejor momento en 25 años — no es momento de jugar defensivo
 Combined ratio P&C de EE.UU. en 91.9% con la mayor ganancia de suscripción en 25
@@ -335,16 +345,57 @@ sin buscarla: el backlash viral de diciembre 2024 contra UnitedHealthcare (62,00
 reacciones en un post, 57,000 de risa) fue rabia específica contra la negación
 automatizada de reclamos de salud — el público no celebra que una IA decida sin criterio
 humano en el momento de mayor impacto.
+**[Ampliación 2026-07-29]** El caso de mayor éxito comercial rastreado a fondo (Ethos,
+EE.UU., revenue USD 388M FY2025, +52% YoY, margen EBITDA ajustado 23%, IPO NASDAQ
+ene-2026) confirma el patrón, no lo contradice: es una agencia licenciada que
+distribuye pólizas de aseguradoras terceras (no asume riesgo), y un agente humano
+licenciado interviene específicamente cuando la entrevista de salud conversacional
+produce respuestas ambiguas antes de alimentar el motor de suscripción — no es "cero
+humano", es digital-first con humano como red de seguridad (F-364). Bowtie (Hong Kong,
+primera licencia de "virtual insurer" de HK, ARR >USD 80M, +100% YoY) logra comisión
+cero y cotización instantánea, pero lo hace enfocándose en producto **estandarizado**
+(VHIS, esquema regulado) — es la simplificación del producto, no la eliminación
+general del intermediario, lo que le permite prescindir de agente (F-370). Contraevidencia
+buscada a propósito confirma el límite: Bestow (EE.UU.) vendió su propia aseguradora D2C
+a Sammons Financial y pivotó a software B2B; Singlife (Singapur) terminó absorbida por
+Sumitomo Life (aseguradora tradicional japonesa, USD 1.21B) en vez de escalar
+independiente (F-366/F-367). El dato nuevo más transferible a Perú —LATAM, no Corea/China—
+repite el patrón con más fuerza: Azos (Brasil, el insurtech de vida de mejor desempeño
+verificable de la región, facturación duplicada dos años seguidos) opera con **más de
+9,000 corredores/agentes socios**, no vende D2C (F-377); bancaseguros controla hasta 80%
+de la distribución de vida en Brasil y el modelo "phygital" (agente + digital) duplica la
+retención a primer año frente a canales puramente digitales o puramente físicos (F-375/F-376);
+y Betterfly (Chile, unicornio regional de bienestar+seguro dinámico) cerró operaciones en
+5 países en 2025 tras dos rondas de despidos —aunque es categoría de negocio distinta,
+B2B2C, no venta directa de póliza (F-372/F-373). El ecosistema insurtech agregado de toda
+LATAM (USD 199M en financiamiento 2025, +117% interanual) es una fracción de lo que mueve
+una sola ronda de un insurtech grande de EE.UU./Brasil (F-374) — la escala del "digital
+puro" en la región sigue siendo marginal frente al modelo híbrido. Cita directa que ancla
+esto al proyecto interno: McKinsey documenta que los clientes de vida rankean al agente
+como la fuente de mayor confianza para aprender sobre productos de seguros incluso cuando
+la aseguradora no puede sacrificar el "human touch" en CX (F-359), y en Asia-Pacífico el
+mix de canal de vida sigue dominado por agencia (~40%) y partnerships (~35%) pese a que
+~80% de las ventas ya están habilitadas por tecnología digital — lo digital potencia al
+agente, no lo reemplaza (F-360). Contraejemplo adicional dentro del propio ledger: la
+trayectoria de loss ratio de Lemonade (166%→86%→~90%, 2017-2022) muestra que digitalizar
+sin potenciar el juicio humano no resolvió la economía del seguro años después del IPO
+(F-361, cifra sin fuente primaria confirmada — tratar como dirección, no dato exacto).
 - **Evidencia:** F-180 (🟢A, marco causal), F-191 (🔵B, confianza+complejidad), F-192
   (⚠️ no verificado, tratar con cautela), F-181 a F-186, F-189, F-190 (🟡C/🟠D, datos de
   negocio convergentes de 3 mercados independientes), F-183 (🟡C, falla de reclamos
-  digitales), F-187/F-188 (🟠D, señal social)
+  digitales), F-187/F-188 (🟠D, señal social), F-359/F-360 (🔵B, McKinsey — human touch y
+  mix de canal APAC), F-361 (🟠D, loss ratio Lemonade), F-362 a F-371 (🟡C/🟠D, casos Ethos/
+  Bowtie/Bestow/Singlife/India — autorreportadas en su mayoría), F-372 a F-379 (🟡C/🔵B,
+  LATAM: Azos, Betterfly, bancaseguros, ecosistema insurtech regional)
 - **Confianza:** Alta en la dirección (el intermediario se redistribuye por complejidad,
-  no desaparece); Media en la magnitud exacta de cualquier cifra puntual — casi toda la
-  evidencia de negocio es C/D, ninguna supera B. Ningún dato es específico de Perú; la
-  transferencia se apoya en que el patrón (confianza sube con broker) ya está
-  documentado localmente en tesis previas de este mismo ledger.
-- **Actualizado:** 2026-07-23
+  no desaparece) — reforzada, no debilitada, por la evidencia nueva más transferible
+  geográficamente (LATAM). Media en la magnitud exacta de cualquier cifra puntual — casi
+  toda la evidencia de negocio es C/D, ninguna supera B salvo los datos de McKinsey/CNseg/
+  Fundación Mapfre (B). Ningún dato es específico de Perú; la transferencia se apoya en
+  que el patrón (confianza sube con broker, bancaseguros domina, digital-first vía
+  corredores gana sobre D2C puro) ya está documentado en tres mercados/regiones
+  independientes (Corea/China, EE.UU./HK, LATAM).
+- **Actualizado:** 2026-07-29
 
 ### 17. La rentabilidad real del seguro de salud no viene de suscribir riesgo — viene de integrarse verticalmente con farmacia/PBM, y el costo especializado (GLP-1) es hoy el driver más agudo
 Datos oficiales de EE.UU. (mercado que concentra ~80% de las primas de salud privadas
@@ -502,6 +553,48 @@ decisión, si no está diseñada para ser verificable.
   específico es instinto razonado, no medido en Perú.
 - **Actualizado:** 2026-07-27
 
+### 23. El steering hacia un canal de atención más barato (triaje remoto/telesalud) sí ahorra costo real — pero es el mecanismo con la reactancia documentada más fuerte del sector cuando se percibe como interés del pagador, no del paciente
+Evidencia convergente —mayormente RCT y cuasi-experimentos de sistemas públicos (VA,
+NHS, Países Bajos), transferida a aseguradora comercial— confirma que dirigir al
+paciente hacia el canal correcto de menor costo (enfermera de triaje antes que
+emergencias) sí reduce gasto real: -USD 404/28 días vs. ED en la VA, caída de 38%→36%
+en derivación a ED tras acceso on-demand (>1M llamadas), 9.5% de desvío seguro en un
+cluster RCT neerlandés (solo 2.4% de lo desviado terminó hospitalizado). El único caso
+encontrado en una aseguradora comercial real (Medical Mutual) llega a ~90% de tasa de
+evitación de ED con el tiempo — pero es la fuente de menor rigor de todo el cluster (D).
+Lo que este ledger nunca había cuantificado así es el riesgo espejo: cuando el steering
+se percibe como conflicto de interés del pagador (ahorra dinero de la aseguradora, no
+necesariamente del paciente), la reactancia escala de queja a evento político-mediático
+en días, no meses. Anthem revirtió en 5 días una política de límite de tiempo de
+anestesia bajo presión de senadores de EE.UU. (dic. 2024) y ya había hecho lo mismo en
+2019 con su política de "ER evitable"; Cigna/EviCore enfrenta litigio y regulación
+estatal activa por denegaciones algorítmicas (300,000 reclamos en 2 meses, 90%
+revertidas en apelación — paralelo directo al riesgo INDECOPI de tesis 8); y el
+asesinato del CEO de UnitedHealthcare generó 62,000 reacciones en un post de
+condolencias, 57,000 de risa — la validación social más fuerte encontrada en todo el
+ledger de que el público no perdona el steering que se lee como ahorro del pagador
+disfrazado de cuidado del paciente. Conecta directo con tesis 9/10: el vacío que
+"farmacia+triage IA" debe cerrar no es solo precisión clínica (tesis 10) — es que el
+mensaje al paciente tiene que leerse siempre como "te dirijo a lo mejor para ti", nunca
+como "te dirijo a lo más barato para nosotros", aunque las dos cosas coincidan en la
+práctica. Matiz adicional que corrige un supuesto de trabajo: F-357 (RCT real, JAMA
+Network Open, N=424, U. of Pennsylvania) refuta que el framing opt-out sea una táctica
+de adopción probada — no superó al opt-in en tasa de enrolamiento de monitoreo remoto.
+Cualquier plan de "inscribir por default y dejar salir" para telesalud/triaje/UBI no
+tiene evidencia de que funcione mejor que pedir consentimiento activo, y si se percibe
+como empuje no consentido hereda el riesgo regulatorio ya documentado en tesis 8.
+- **Evidencia:** F-329 a F-336, F-338 a F-341 (🟢A en su mayoría, transferidas de
+  sistemas públicos), F-332 (🟠D, único caso de aseguradora comercial real), F-342 a
+  F-350 (🟠D/🟡C/🔵B, contraevidencia adversarial y casos de reactancia/backlash), F-344
+  a F-346 (🟡C/🔵B, reacción social), F-349 (🟢A, investigación ProPublica sobre EviCore),
+  F-357 (🟢A, refutación de opt-out>opt-in)
+- **Confianza:** Alta en que el mecanismo de ahorro funciona (evidencia A convergente,
+  aunque transferida de sistemas públicos, no de aseguradora comercial); Alta en que la
+  reactancia por conflicto de interés percibido —no la tecnología— es el riesgo
+  dominante; Media en la magnitud exacta transferible a una aseguradora comercial
+  peruana, porque el único dato de aseguradora comercial real disponible es de rigor D.
+- **Actualizado:** 2026-07-29
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -531,13 +624,24 @@ decisión, si no está diseñada para ser verificable.
   mejor sin depender de cambiar la actitud del cliente hacia la privacidad.
 - **Distribución por intermediario humano de confianza — pero estrictamente
   inbound/opt-in, nunca llamada en frío.** Ya no es solo instinto: tesis 16 le da
-  respaldo A/B convergente en tres mercados de alta digitalización (Corea, China,
-  caso Lemonade) de que el intermediario no desaparece en productos complejos —
-  se redistribuye hacia ellos. El riesgo regulatorio de tesis 8 sigue vigente:
-  cualquier variante de contacto saliente no consentido es una apuesta con S/2M+
-  de multa potencial y precedente directo contra un competidor. La jugada válida
-  es bróker como canal de confianza que el cliente busca (referidos, punto de
-  venta), no como fuerza de prospección saliente.
+  respaldo A/B convergente en cuatro mercados/regiones de alta digitalización (Corea,
+  China, EE.UU./HK vía Ethos/Bowtie, y ahora LATAM vía Azos/bancaseguros) de que el
+  intermediario no desaparece en productos complejos — se redistribuye hacia ellos, y
+  el dato LATAM (Azos con 9,000+ corredores, bancaseguros con hasta 80% de la
+  distribución de vida en Brasil) es el más transferible a Perú de todos los
+  encontrados hasta ahora. El riesgo regulatorio de tesis 8 sigue vigente: cualquier
+  variante de contacto saliente no consentido es una apuesta con S/2M+ de multa
+  potencial y precedente directo contra un competidor. La jugada válida es bróker como
+  canal de confianza que el cliente busca (referidos, punto de venta), no como fuerza
+  de prospección saliente.
+- **Diseñar cualquier mensaje de steering hacia canal de atención más barato (farmacia
+  como frente primario, triaje remoto, telesalud) explícitamente como beneficio del
+  paciente, nunca como ahorro del pagador — y pedir consentimiento activo (opt-in), no
+  apoyarse en opt-out.** Tesis 23: el mecanismo de ahorro funciona, pero el mismo
+  mecanismo dispara la reactancia más fuerte documentada del sector si se percibe como
+  interés de la aseguradora. Esto no es un matiz de comunicación menor — es la
+  diferencia entre replicar el ahorro real de Medical Mutual (~90% de evitación de ED)
+  o el backlash político-mediático de Anthem/Cigna/UnitedHealthcare.
 - **Invertir en herramientas para el asesor humano en el momento del reclamo, no
   en digitalizar el reclamo completo.** Tesis 16: 33-39% de reclamos 100%
   digitales fallan y requieren rescate humano, y el que escala tarde reporta peor
@@ -626,6 +730,23 @@ decisión, si no está diseñada para ser verificable.
   Babylon Health (USD 4.2B → bancarrota) y la precisión real de ~45% de los
   symptom-checkers en producción hacen que cualquier lanzamiento sin 60-90 días
   de silent trial sea apostar capital contra un patrón de fracaso ya documentado.
+  **Matiz de negocio (F-358):** el detonante final de Babylon fue que su
+  pagador (Centene) no renovó el contrato tras pérdidas de USD 212-274M —
+  pasar el silent trial clínico no basta si el caso de negocio no convence a
+  quien firma el contrato.
+- **Diseñar o comunicar cualquier programa de steering/derivación hacia un canal más
+  barato (farmacia, triaje remoto, telesalud) sin blindar el mensaje como beneficio
+  del paciente.** Tesis 23: el precedente de Anthem (revertido en 5 días bajo presión
+  de senadores de EE.UU.), Cigna/EviCore (litigio y regulación estatal activa por
+  denegaciones algorítmicas) y la reacción social al caso UnitedHealthcare muestran que
+  la reactancia por conflicto de interés percibido escala de queja a evento
+  político-mediático nacional en cuestión de días, no meses.
+- **Apoyar cualquier flujo de consentimiento de telesalud/triaje/UBI en framing
+  opt-out ("inscribe por default, deja salir al que no quiera") asumiendo que
+  convierte mejor.** Tesis 23: un RCT real (F-357, N=424) refuta directamente esa
+  suposición — opt-out no superó a opt-in en tasa de enrolamiento. Sin evidencia de
+  que funcione mejor, y con riesgo de leerse como empuje no consentido (tesis 8), la
+  jugada por defecto debería ser opt-in explícito.
 - **Tratar el modelo de atención primaria basada en valor (capitación,
   farmacia-como-frente-primario) como camino rápido a rentabilidad.** Los casos
   internacionales que mejor navegan la presión de costo (Singapur, NHS, Kaiser,
@@ -1010,3 +1131,23 @@ decisión, si no está diseñada para ser verificable.
   Próximo salto de tesis/confianza sigue condicionado a que `/trinidad`, `/seeker`, `/gossip`,
   `/marketer` o `cronista` registren fuentes nuevas en el ledger. Bitácora con 17 días de
   historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-07-29** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  78584ad→c76a3bf) y leí `codice.md` completo: el ledger creció de F-328 a F-379 desde la última
+  corrida (2026-07-28) — **cambio sustancial**, 51 fuentes nuevas en tres clusters: (1) un documento
+  externo del usuario sobre steering conductual hacia atención primaria/triaje remoto (F-329 a
+  F-358, sin node propio en este repo — cruzado directamente contra esta opinión), (2) ampliación de
+  `_nodes/futuro-asesores-seguros-venta-digital.md` con los casos Ethos y Bowtie a mayor detalle más
+  tres citas del deck interno "Back to Basics" (F-359 a F-371), y (3) node nuevo
+  `_nodes/venta-vida-digital-hibrida-latam.md` sobre venta de vida en Brasil/Chile/Colombia (F-372 a
+  F-379). Sumé tesis 23 (el steering hacia canal más barato ahorra costo real, pero es el mecanismo
+  con la reactancia más fuerte documentada del sector cuando se percibe como interés del pagador —
+  con matiz que refuta el supuesto de que opt-out convierte mejor que opt-in, F-357). Amplié tesis 16
+  con el detalle de Ethos/Bowtie (ninguno es "cero humano" real) y, sobre todo, con el dato LATAM —
+  más transferible a Perú que Corea/China: Azos (Brasil) crece vía 9,000+ corredores, no D2C;
+  bancaseguros controla hasta 80% de la distribución de vida en Brasil; Betterfly (Chile) cerró
+  operaciones en 5 países. Añadí un matiz a tesis 10: el colapso de Babylon lo gatilló el pagador
+  (Centene no renovó), no el paciente — validar precisión clínica no basta si el caso de negocio no
+  convence a quien firma el contrato. Sumé 2 oportunidades y 3 riesgos nuevos reflejando tesis 23 y
+  el refuerzo LATAM de tesis 16. Ninguna tesis 1-22 requirió ajuste de confianza a la baja — toda la
+  evidencia nueva refuerza o matiza tesis ya vigentes, ninguna las contradice. Bitácora con 18 días
+  de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
