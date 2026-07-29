@@ -113,6 +113,16 @@ siga vendiendo "el nudge universal" está una década atrás.
   de campo nacional de seguros basados en uso (UBI) redujo exceso de velocidad 11-13%,
   frenadas bruscas 16-21% y aceleraciones 16-25% (Accident Analysis & Prevention, 2025 —
   RCT de campo). Ambos casos son **diseño del producto/feedback loop**, no solo mensajes.
+  **[Revisión profunda 2026-07-29, F-23]** Lectura completa del experimento UBI: es un RCT
+  preregistrado (NCT06101251), N=1,449 conductores reclutados a nivel nacional, con 6
+  semanas de línea base y 12 semanas de intervención en 4 brazos (control / feedback
+  estándar / meta asignada / meta elegida, con incentivo de US$100). Dato que el resumen de
+  una línea no traía: las mejoras de conducta **se sostuvieron durante un período de
+  seguimiento posterior al fin de la intervención** — no es solo efecto Hawthorne mientras
+  el conductor sabe que lo miden. Matiz que acota el caso: lo validado es un mecanismo de
+  **feedback + microincentivo** ("UBI simulado"), no necesariamente el pricing dinámico real
+  de una prima — conviene no generalizar automáticamente de uno a otro al citar este caso
+  como ejemplo de "producto embebido".
 - **El giro teórico i-frame → s-frame.** La crítica más influyente de la década: el campo
   se desvió al enfocarse en soluciones individuales (i-frame) para problemas con causas
   sistémicas (s-frame); los mejores resultados vienen de cambiar la estructura — defaults

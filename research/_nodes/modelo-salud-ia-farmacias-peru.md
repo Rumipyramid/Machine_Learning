@@ -49,6 +49,14 @@ Usuario ──▶ Triage con IA (orientación primaria)
   20-68%**, no como cifra cerrada.
 - Factores asociados a la automedicación no responsable están documentados académicamente
   para población peruana (SciELO, 2021 — F-36, 🟢 peer-reviewed, contexto local directo).
+  **[Revisión profunda 2026-07-29]** Estudio transversal, análisis secundario de la Encuesta
+  Nacional de Satisfacción de Usuarios en Salud (ENSUSALUD) 2016. El factor de riesgo más
+  fuerte por lejos es que **el dispensador no pidió receta** (OR ajustado = 29.06) — muy por
+  encima de acudir a la farmacia a pedir consejo (OR=1.88), consumo eventual del medicamento
+  comprado (OR=1.93), comprar en menos de 5 minutos (OR=1.59) o ser hombre (OR=1.32).
+  Implicación de diseño directa: el modelo de farmacia-frente-primario no solo formaliza una
+  conducta existente — tiene que corregir activamente la práctica de dispensar sin preguntar,
+  que es la causa dominante documentada, no un detalle de proceso.
 
 ### 1.2 La razón NO es principalmente desconfianza médica
 
@@ -72,7 +80,20 @@ adyacentes a farmacias durante la pandemia (SciELO Salud Pública — peer-revie
   Plan Nacional de Telesalud 2026 — F-48).
 - Telemedicina en Perú tiene barreras documentadas en 5 capas: tecnológicas, humano-sociales,
   psicosocial-antropológicas, de gobernanza y económicas (perspectivas peer-reviewed sobre
-  Perú — F-40, F-41).
+  Perú — F-40, F-41). **[Revisión profunda 2026-07-29]** F-40 (MDPI/IJERPH) detalla las
+  capas con más precisión: infraestructura de conectividad de alta velocidad en
+  establecimientos de salud, "infoestructura" (interoperabilidad de sistemas de información
+  con la historia clínica electrónica), monitoreo/evaluación de la agenda nacional de salud
+  2020-2025, expansión de la fuerza laboral en salud digital, y alfabetización digital en
+  salud del usuario final. F-41 (Rees & Peralta, Oxford Open Digital Health 2024) añade un
+  matiz que templa el optimismo de la sección anterior: el marco regulatorio de telesalud
+  peruano arrancó en **2005**, y ese desarrollo previo a la pandemia sí permitió el
+  escalamiento rápido de 2020 — pero los propios autores registran que los volúmenes de
+  teleconsulta **crecieron rápido y luego cayeron**, lo que leen como señal de que se trató
+  más de una medida de emergencia pandémica que de un cambio estructural en la mezcla de
+  provisión de salud. Su conclusión: Perú tiene hoy una "ventana de oportunidad de corto
+  plazo" para consolidar inversión regulatoria, no una tendencia de adopción que sube por sí
+  sola.
 
 ---
 
@@ -118,6 +139,14 @@ Formato de cada afirmación de esta sección: **Afirmación** → *Evidencia* (d
 - **El symptom-checker finlandés Omaolo logró una validación formal robusta como dispositivo
   médico auditado** (clase IIa, marcado CE) — la diferencia con el caso japonés es la
   rigurosidad de la validación, no la tecnología en sí.
+  **[Revisión profunda 2026-07-29]** Sobre 877 evaluaciones reales en atención primaria de
+  Finlandia, el symptom-checker fue **seguro en 97.6%** de los casos (856/877; IC95%
+  95.6-98.0%) pero solo tuvo **coincidencia exacta con el triage de enfermería en 53.7%**
+  (471/877; IC95% 49.2-55.9%). Lectura clave para este modelo: la métrica que evita repetir
+  el error de Babylon no es "coincidencia exacta con el humano" (que puede ser modesta,
+  ~50-55%, y aun así ser un producto seguro y viable) — es la **tasa de sub-triage
+  peligroso**, medida y reportada por separado. El gate de aprobación del piloto (§3.0,
+  RQ1/RQ2) debería fijarse en esa métrica de seguridad, no en el % de acierto exacto.
   *Evidencia:* estudio de validación de instrumento + protocolo mixto de validación clínica,
   ambos peer-reviewed. **Rigurosidad: 5/5.** (PMC — estudio Omaolo, 2024; Protocolo Omaolo,
   2023)

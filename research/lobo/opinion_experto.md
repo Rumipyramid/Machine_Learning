@@ -169,11 +169,24 @@ en un mercado maduro y con marco regulatorio claro (UK), la adopción real es ba
 y la desconfianza persiste — solo ~12% usa telemática hoy, 73% no la usa, y solo
 32% se siente cómodo con que el asegurador recolecte ese dato. El producto
 funciona; la barrera no es de diseño, es de confianza en el punto de entrada.
+**[Revisión profunda 2026-07-29]** Lectura completa de F-23 (antes solo el resumen de una
+línea): es un RCT preregistrado (NCT06101251), N=1,449 conductores reclutados a nivel
+nacional, con 6 semanas de línea base y 12 semanas de intervención en 4 brazos (control /
+feedback estándar / meta asignada / meta elegida, con incentivo de US$100). El dato nuevo
+más relevante no estaba en el resumen: las mejoras de conducta **se sostuvieron durante un
+período de seguimiento posterior al fin de la intervención** — no es solo un efecto
+Hawthorne mientras el conductor sabe que lo miden activamente. Matiz importante que acota la
+tesis: lo validado aquí es un mecanismo de **feedback + microincentivo** ("UBI simulado"),
+no necesariamente el pricing real de la prima — separa el mecanismo conductual que sí
+sostiene el cambio de manejo (feedback y metas) del vehículo comercial (telemática con
+precio dinámico real), que es el que carga el techo de confianza documentado en UK.
 - **Evidencia:** F-19 (🟢A, marco i-frame/s-frame), F-23 (🟢A, RCT de campo
-  telemático), F-166/F-167 (🟠D, techo de adopción/confianza en UK)
-- **Confianza:** Alta en que el producto funciona donde se adopta; Media en la
-  velocidad de adopción masiva sin trabajar antes la confianza de entrada.
-- **Actualizado:** 2026-07-20
+  telemático, N=1,449, preregistrado), F-166/F-167 (🟠D, techo de adopción/confianza en UK)
+- **Confianza:** Alta en que el producto funciona donde se adopta y en que el efecto persiste
+  más allá de la ventana activa de monitoreo; Media en la velocidad de adopción masiva sin
+  trabajar antes la confianza de entrada. El mecanismo validado es feedback+incentivo, no
+  pricing dinámico real — no generalizar automáticamente de uno a otro.
+- **Actualizado:** 2026-07-29
 
 ### 8. El riesgo regulatorio por contacto comercial no consentido en seguros peruanos ya no es teórico — es expediente activo, y ya tocó al sector
 INDECOPI fiscaliza con IA más de 7 millones de audios de llamadas comerciales al
@@ -200,11 +213,33 @@ hacia ahí: la automedicación en Perú **no** nace principalmente de desconfian
 en el médico (solo 7.2% la cita como razón) sino de ineficiencia del sistema
 formal (59%) y falta de tiempo (51%) — el frente de farmacia no compite contra la
 confianza del paciente, compite contra la lentitud del Estado.
+**[Revisión profunda 2026-07-29]** Tres fuentes 🟢A releídas a fondo (antes solo el resumen
+de una línea) matizan la oportunidad. F-36 (peer-reviewed, análisis secundario de la
+Encuesta Nacional de Satisfacción de Usuarios en Salud 2016) encuentra que el factor de
+riesgo más fuerte para automedicación no responsable en Perú, por lejos, no es ninguno de
+los citados arriba — es que **el dispensador no pidió receta** (OR=29.06, muy por encima de
+pedir consejo en la farmacia OR=1.88, comprar en <5 min OR=1.59, o ser hombre OR=1.32).
+Implicación de diseño directa: el modelo de farmacia-frente-primario no solo formaliza una
+conducta que ya existe — tiene que **corregir activamente** la práctica actual de dispensar
+sin preguntar, que es la causa dominante documentada del daño, no un detalle menor de
+proceso. F-40 y F-41 (ambos peer-reviewed, perspectiva-país) matizan además la
+infraestructura de telesalud que sostiene la tesis: los volúmenes de teleconsulta en Perú
+crecieron rápido durante la pandemia pero **luego cayeron**, lo que los propios autores leen
+como señal de que se trató más de una medida de emergencia que de un cambio estructural en
+la mezcla de provisión de salud — llaman a esto una "ventana de oportunidad de corto plazo"
+para que el Estado consolide la inversión regulatoria, no un hábito ya adquirido de forma
+permanente. No debilita la tracción estatal real (PL 08488, Plan Nacional de Telesalud), pero
+sí el supuesto implícito de que la adopción de telesalud remota en Perú sigue una tendencia
+que solo sube por sí sola.
 - **Evidencia:** F-38 (🟠D, razones de automedicación), F-47 (🟠D, PL 08488),
-  F-48 (🔵B, Plan Nacional de Telesalud MINSA), F-49 (🟠D, escala de InkaFarma/Mifarma)
-- **Confianza:** Alta en la oportunidad de mercado/distribución; el riesgo de
-  ejecución técnica del triage IA es un problema aparte (ver tesis 10).
-- **Actualizado:** 2026-07-20
+  F-48 (🔵B, Plan Nacional de Telesalud MINSA), F-49 (🟠D, escala de InkaFarma/Mifarma),
+  F-36 (🟢A, factor dominante OR=29 en automedicación no responsable), F-40/F-41 (🟢A,
+  barreras y ventana de adopción de telesalud en Perú)
+- **Confianza:** Alta en la oportunidad de mercado/distribución; el riesgo de ejecución
+  técnica del triage IA es un problema aparte (ver tesis 10). Nuevo: Alta en que "corregir la
+  dispensación sin receta" debe ser un objetivo de diseño explícito, no un efecto colateral
+  esperado de formalizar el canal.
+- **Actualizado:** 2026-07-29
 
 ### 10. El punto de fracaso más probable de un triage con IA no es la tecnología — es sobreclamar precisión clínica sin validación formal
 Babylon Health colapsó de USD 4.2B de valuación a bancarrota exactamente por
@@ -226,9 +261,23 @@ vendiendo su operación UK por £500,000 (vs. USD 4.2B de valuación en el IPO
 tiene que sostenerse para el pagador que firma el contrato, no solo para el
 paciente que lo usa. Un triage IA puede pasar el silent trial y aun así morir
 si el pagador que lo financia no ve retorno a tiempo.
+**[Revisión profunda 2026-07-29 — segunda lectura del día]** F-42 (validación real de
+Omaolo, Finlandia, dispositivo médico marcado CE clase IIa) da el contraejemplo positivo
+completo, con números que el resumen de una línea no traía: sobre 877 evaluaciones reales
+en atención primaria, el symptom-checker fue **seguro en 97.6%** de los casos (856/877) pero
+solo tuvo **coincidencia exacta con el triage de enfermería en 53.7%** (471/877). Lectura de
+negocio directa: la métrica que evita repetir el error de Babylon no es "precisión
+diagnóstica exacta" (que puede ser modesta, ~50-55%, y aun así ser un producto seguro y
+comercialmente viable) — es la **tasa de sub-triage peligroso**, medida y reportada por
+separado. Babylon nunca publicó esa separación; Omaolo sí, y por eso sobrevive como
+dispositivo médico auditado mientras Babylon colapsó. Implicación directa para el gate de
+aprobación del piloto farmacia+IA (RQ1/RQ2 en §3.0 del node de salud): fijar el criterio de
+éxito en seguridad (falsos negativos graves), no en % de coincidencia exacta con el juicio
+humano — son métricas distintas y la segunda puede ser mediocre sin que el producto sea malo.
 - **Evidencia:** F-50 (🟢A/vía prensa especializada, caso Babylon), F-43 (🟢A,
   precisión real 45%), F-56/F-57 (🟢A, protocolo de silent trial), F-62 (🔵B,
-  marco FDA SaMD), F-358 (🟡C, ángulo de negocio/pagador del colapso Babylon)
+  marco FDA SaMD), F-358 (🟡C, ángulo de negocio/pagador del colapso Babylon), F-42 (🟢A,
+  Omaolo — safety 97.6% vs. exact-match 53.7%, separación explícita de métricas)
 - **Confianza:** Alta
 - **Actualizado:** 2026-07-29
 
@@ -1151,3 +1200,24 @@ como empuje no consentido hereda el riesgo regulatorio ya documentado en tesis 8
   el refuerzo LATAM de tesis 16. Ninguna tesis 1-22 requirió ajuste de confianza a la baja — toda la
   evidencia nueva refuerza o matiza tesis ya vigentes, ninguna las contradice. Bitácora con 18 días
   de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-07-29 (revisión profunda, tercera corrida del día)** — Rutina de revisión profunda
+  (cada ~3 días): no busca fuentes nuevas en la web, relee a fondo 5 fuentes 🟢A que el ledger
+  ya tenía registradas pero solo con el resumen de una línea de `cronista` — las primeras 🟢A
+  aún sin lectura profunda, en orden de ID (F-23, F-36, F-40, F-41, F-42; F-3 a F-21 ya se
+  habían releído en corridas anteriores del 2026-07-21/22, registradas en
+  `research/fuentes/revision_profunda.md`). Ninguna tesis cambió de dirección; las cinco
+  matizaron tesis ya vigentes con detalle que el resumen breve no dejaba ver: **tesis 7** (F-23,
+  UBI) — el RCT es preregistrado (N=1,449, NCT06101251, 4 brazos, 12 semanas) y el efecto se
+  sostuvo en seguimiento posterior a la intervención, pero lo validado es feedback+incentivo
+  ("UBI simulado"), no pricing dinámico real — separa el mecanismo conductual del vehículo
+  comercial. **Tesis 9** (F-36, F-40, F-41, farmacia+telesalud Perú) — el factor de riesgo
+  dominante de automedicación no responsable es que el dispensador no pide receta (OR=29,
+  muy por encima de cualquier otro factor), lo que convierte "corregir esa práctica" en
+  objetivo de diseño explícito, no efecto colateral; y el crecimiento de telesalud peruana
+  cayó tras el pico pandémico — ventana de oportunidad de corto plazo, no tendencia asegurada.
+  **Tesis 10** (F-42, Omaolo Finlandia) — el contraejemplo positivo a Babylon separa
+  explícitamente seguridad (97.6%) de coincidencia exacta con el humano (53.7%): el gate de un
+  triage IA debe fijarse en la primera métrica, no en la segunda. Actualicé `revision_profunda.md`
+  con las 5 fuentes de este ciclo y enriquecí los nodes `modelo-salud-ia-farmacias-peru.md` y
+  `behavioral-design-estado-disciplina.md` en Many Brains con el mismo detalle, sin mover ni
+  reestructurar nada. Bitácora con 18 días de historial (2026-07-12 a hoy) — sin podar todavía.

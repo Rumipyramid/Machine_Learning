@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-27.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-29.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -58,12 +58,12 @@ por afirmación cuando corresponda.
 |---|---|---|---|
 | `_nodes/seguros-comportamiento-mundo-peru.md` | Comportamiento, percepción y mercado global de seguros (Mundo vs. Perú) | 2026-07-21 | v1.1 |
 | `_nodes/glosario-seguro-salud-peru.md` | Glosario de términos de seguro de salud en lenguaje claro (Perú) | 2026-07-21 | v1.0 |
-| `_nodes/modelo-salud-ia-farmacias-peru.md` | Modelo de triage con IA + farmacias + atención humana (Perú): investigación, RE-AIM, estrategias de testeo | 2026-07-06 | v1.0 |
+| `_nodes/modelo-salud-ia-farmacias-peru.md` | Modelo de triage con IA + farmacias + atención humana (Perú): investigación, RE-AIM, estrategias de testeo | 2026-07-29 | v1.0 (revisión profunda de F-36/F-40/F-41/F-42: factor dominante de automedicación OR=29, ventana de adopción de telesalud, safety vs. exact-match en Omaolo) |
 | `_nodes/mecanismos-seguros-salud.md` | Mecanismos de seguros de salud: presión demográfica/costo, balance financiero/rentabilidad global (incl. contraste Europa/Asia/Perú-Latam), y modelos que la navegan (global, comparativo) | 2026-07-22 | v1.2 (amplía con contraste regional del balance financiero) |
 | `_nodes/material-visual-venta-consultiva.md` | Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección (empírico + negocio + regulatorio; pista social sin cobertura) | 2026-07-21 | v1.1 (amplía con anclaje/regulatorio/confianza; aplicada a flyers Vida Ahorro) |
 | `_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan las organizaciones de venta fría a venta opt-in (seguros y sectores análogos): disparadores, impacto en volumen, tácticas puente | 2026-07-14 | v1.0 |
 | `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y frameworks para medir la calidad de un agente/chatbot de IA (usabilidad, métricas técnicas RAG, específicos de banca/seguros) | 2026-07-15 | v1.0 |
-| `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-22 | v1.1 (migrado desde `main` a Many Brains, ver nota de reconciliación abajo) |
+| `_nodes/behavioral-design-estado-disciplina.md` | Estado del behavioral design como disciplina/mercado + checklist para ser los mejores (seguros/Rimac) | 2026-07-29 | v1.1 (revisión profunda de F-23: UBI es RCT preregistrado con efecto sostenido en seguimiento, pero valida feedback+incentivo, no pricing dinámico real) |
 | `_nodes/modelo-personas-sinteticas.md` | Cómo funciona y se calibra el modelo `lapuerta` (20 variables, v1.3) — excepción declarada de alcance, no mueve el código | 2026-07-20 | v1.0 |
 | `_nodes/futuro-asesores-seguros-venta-digital.md` | ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario (empírico + social + negocio); §3.7 amplía con casos de éxito comercial verificable en venta de vida 100% digital (Ethos, Bowtie) | 2026-07-27 | v1.0 (amplía §3.7, sin bump — afina la tesis, no la cambia) |
 | `_nodes/proyecto-back-to-basics-ffvv-vida.md` | Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido — Modelo de Experiencia de Venta Vida (deck al VP, Dx1-Dx3), mapa sistémico AS IS (9 frentes / 4 hallazgos operativos), estrategias de contacto (DS 016), playbook del asesor, encuesta a 19 asesores + Taller de Manejo de Objeciones, Universidad Vida, backlog Espejo/Transformación (ramo AMI), cruce con evidencia/tesis del Lobo, Plan Piloto de validación (10 asesores) | 2026-07-27 | v1.4 (deck low-fi para Milagros: origen del pedido, regla metodológica, hallazgos previos, evidencia McKinsey nueva, datos primarios de diagnóstico, alcance nuevo AMI, Felipe como colaborador no listado antes) |
