@@ -1,11 +1,19 @@
 # Tendencias en diseño: qué tiene impacto real y qué es propuesta
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-07-26 · Versión: v1.0
+> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-07-29 · Versión: v2.0 (iteración 2)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta permanente: **¿qué tendencias de diseño tienen impacto tangible demostrado y
 > cuáles son propuestas innovadoras todavía sin respaldo?**
-> Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328).
+> Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iteración 2: F-380 a F-398).
+>
+> **Lo último (iteración 2, 2026-07-29):** cuatro hipótesis se movieron. **H17 refutada**
+> (el ciclo identitario del gremio *no* llega desfasado a LatAm: MercadoLibre despidió 119
+> personas de UX integrando diseño y contenido con IA, y Brasil adopta IA **más** que el
+> mundo anglosajón, 94% vs. 89%). **H3 y H18 pasan a `parcial`**. **H6 gana una quinta
+> cadena de eco de cita** (el "135% de ROI" de design systems es una calculadora, no un
+> estudio). Y apareció el **mecanismo que reconcilia** la divergencia ⚔️ de productividad
+> con IA: el *impuesto de verificación*. Ver §10.
 
 ## 🔁 Cómo se usa y se enriquece este node
 
@@ -202,6 +210,15 @@ Esto es un hallazgo en sí mismo y debe sobrevivir a todas las iteraciones:
    (F-327). Lo que sí existe es un Forrester TEI **comisionado y pagado por InVision** con 475% de
    ROI sobre una organización compuesta de 4 entrevistas (F-328). Registrado explícitamente como 🔴 E
    para que no vuelva a entrar al proyecto por otra vía.
+5. **"135% de ROI de un design system"** *(detectada en la iteración 2)* — la cifra que reemplazó al
+   671% en la circulación de 2026 **no es un resultado medido: es una calculadora**. Sale de un
+   artículo de Smashing Magazine (2022 — F-397) que *modela* US$646.000 invertidos → US$1.517.400 de
+   ahorro estimado a 5 años. Y los insumos del modelo son a su vez cifras autorreportadas por la
+   industria (Klüver 2019, Ray 2018, Slack 2019). **Es un modelo alimentado con ecos.** Mismo defecto
+   estructural que el +35,26% de Baymard (F-311): nadie ejecutó y midió.
+   ⭐ *Patrón que ya es regla:* cada vez que una cifra estrella del ROI del diseño se desmonta,
+   **la industria no deja de citar cifras: cambia de cifra.** 671% → 135%. La cadena de eco no es un
+   accidente de una fuente, es la forma en que este mercado produce su evidencia.
 
 *Nota simétrica de honestidad: el dato de Kohavi también se repite mucho y proviene esencialmente de
 una organización (Microsoft ExP), aunque las cifras análogas de Google/Bing/Netflix/Airbnb vienen de
@@ -421,8 +438,12 @@ Esta tabla es el **entregable operativo** del node. Cada iteración la actualiza
 | **Explicabilidad de IA aumenta confianza** | 🟡 Parcial — sobrevendido (efecto moderado) | F-242 |
 | **Design systems aceleran el desarrollo** | 🟡 Plausible, mal probado | F-259, F-269, F-270 |
 | **Explicaciones mejoran la decisión humano-IA** | 🔴 Contradicho en su forma general | F-243, F-244, F-246 |
-| **ROI del diseño 100:1 / MDI +32%/+56% / 671%** | 🔴 Hype (eco de cita) | F-266, F-268, F-327 |
-| **Generative UI / interfaces generadas por LLM** | 🔴 Propuesta sin respaldo independiente | F-247, F-256, F-258, F-260 |
+| **ROI del diseño 100:1 / MDI +32%/+56% / 671% / 135%** | 🔴 Hype (eco de cita — 5 cadenas) | F-266, F-268, F-327, **F-397** |
+| **Generative UI: *gusta más* que el texto plano** | 🟢 Documentado (preferencia declarada, sesión única) ⬆️ *iter. 2* | **F-380, F-381** |
+| **Generative UI: *funciona mejor*** | 🔴 Contradicho en los atributos de soporte ⬆️ *iter. 2* | **F-382, F-384** + F-247 |
+| **Generative UI / interfaces generadas por LLM (como paradigma)** | 🔴 Propuesta sin respaldo independiente | F-247, F-256, F-258, F-260, **F-383, F-385, F-386** |
+| **Service design tiene base de evidencia institucional** | 🟡 Existe pero es pre-IA y sin outcomes de largo plazo ⬆️ *iter. 2* | **F-387, F-395** |
+| **El ciclo identitario del gremio llega desfasado a LatAm** | 🔴 Refutado (llega simultáneo, con conducta corporativa local) ⬆️ *iter. 2* | **F-389, F-391, F-392** |
 | **Agentic UX** | 🔴 Hype declarado por sus propios autores | F-261 |
 | **Spatial computing como tendencia de diseño** | 🔴 Hype (~5% de diseñadores construye para ello) | F-279 |
 | **Personalización con IA a escala** | 🔴 Contradicho / condicional (efecto backfire) | F-253, F-254 |
@@ -447,7 +468,15 @@ Esta tabla es el **entregable operativo** del node. Cada iteración la actualiza
 - **⚔️ Productividad con IA**: METR (RCT, devs expertos, **−19% de velocidad real** mientras estimaban
   ser 20% más rápidos) vs. preprint DS-aware AI (**−46% a −69% de time-to-delivery**). Explicación
   plausible de la diferencia: METR midió tareas en repos maduros que los devs conocían a fondo; el
-  otro midió construcción de componentes nuevos con un design system. **Sin resolver.**
+  otro midió construcción de componentes nuevos con un design system.
+  ⬆️ **Iteración 2 — la divergencia deja de ser un misterio y pasa a ser una variable moderadora.**
+  La hipótesis que la iteración 1 formuló a mano ahora tiene nombre y cifras: el **impuesto de
+  verificación** (*verification tax*) — ~4,3 min por sugerencia para seniors vs. ~1,2 min para
+  juniors, que **escala con la madurez del código base y puede exceder el ahorro de generación**
+  (F-388). Los dos estudios no se contradicen: **miden puntos opuestos de la misma curva.** ⚠️ El
+  mecanismo viene de un preprint sin revisión por pares — es la mejor explicación disponible, no un
+  hecho establecido. **Reclasificada de "sin resolver" a "reconciliada por mecanismo, pendiente de
+  confirmación independiente"** (ver H19).
 - **⚔️ Percepción gremial vs. dato oficial**: Figma/Adobe (encuestas de emisor interesado) reportan
   demanda estable o creciente; BLS proyecta +2% a diez años para diseño gráfico.
 - **⚔️ Estética anti-IA**: alta validación social, evidencia de usabilidad negativa (8-10% de éxito
@@ -464,10 +493,10 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 |---|---|---|---|
 | **H1** | Un índice de empresas "design-centric" definido **ex ante** tendrá exceso de retorno sobre el S&P **indistinguible de cero** (el +211% del DVI es look-ahead bias + supervivencia) | `abierta` — predicción del node: el exceso se reduce >70% | Replicación prospectiva del DVI con criterios congelados en t₀ |
 | **H2** | El reporte de Forrester (2016) **no contiene** la afirmación "$1 → $100" en la forma en que circula | `abierta` | Compra y lectura del reporte (~US$1.495) |
-| **H3** | En tarea repetida a lo largo de ≥5 sesiones, la **generative UI** dará **peor** tiempo de tarea y **peor** aprendibilidad que una UI estática equivalente, aunque gane en preferencia declarada en la sesión 1 | `abierta` — predicción: se replica Findlater & McGrenere | Estudio longitudinal independiente entre-sujetos |
+| **H3** | En tarea repetida a lo largo de ≥5 sesiones, la **generative UI** dará **peor** tiempo de tarea y **peor** aprendibilidad que una UI estática equivalente, aunque gane en preferencia declarada en la sesión 1 | ⬆️ **`parcial`** *(iter. 2)* — **la mitad de la predicción está confirmada y la otra mitad sigue sin medirse.** Confirmado: gana en preferencia de sesión única (hasta 72%, F-381; F-380). Confirmado indirectamente: falla justo en prevención de errores, eficiencia de uso, recuperación y ayuda (F-382), y **produce interfaces distintas ante el mismo prompt incluso en ejecuciones repetidas de la misma herramienta** (F-384) — la inconsistencia que destruiría la aprendibilidad ya está medida. Sigue abierto: **nadie ha corrido el estudio longitudinal** | Estudio longitudinal independiente entre-sujetos. ⚠️ Tras 2 iteraciones **sigue sin existir** — y esa ausencia, buscándola, ya es un hallazgo (C7) |
 | **H4** | Añadir explicación ("¿por qué veo esto?") **no** mejora precisión ni calibración en decisiones de **baja** dificultad; **sí** en alta | `parcial` — respaldada por F-246 en laboratorio, sin replicar en dominio aplicado | RCT con dificultad manipulada en recomendación de producto financiero/seguros |
 | **H5** | En cualquier estudio que mida **a la vez** desempeño objetivo y percibido, la mejora subjetiva **excederá** a la objetiva en ≥20 pp | `abierta` — **la hipótesis de mayor valor destructivo**: si se sostiene, invalida casi todo reporte de industria sobre design systems, IA y madurez de diseño | Meta-análisis de estudios que reporten ambas medidas |
-| **H6** | El efecto de un design system sobre el tiempo de desarrollo será **<20%** (no 47%, no 69%) con contrabalanceo de orden, N≥40 y devs externos a la organización que mantiene el sistema | `abierta` | Replicación independiente de Sparkbox con diseño corregido |
+| **H6** | El efecto de un design system sobre el tiempo de desarrollo será **<20%** (no 47%, no 69%) con contrabalanceo de orden, N≥40 y devs externos a la organización que mantiene el sistema | `abierta` — **se buscó replicación independiente en la iter. 2 y no existe**; lo que sí apareció es una quinta cadena de eco (135% modelado, F-397) y evidencia de que **solo ~40% de los sistemas sigue activo pasados 18 meses** (F-396). El campo produce calculadoras de ROI, no experimentos | Replicación independiente de Sparkbox con diseño corregido |
 | **H7** | En un A/B real, las variantes que aumentan **fluidez** (contraste, jerarquía, menos elementos) superarán a las que aumentan atractivo estético sin aumentar fluidez | `abierta` — **aplicable directamente al contexto Rimac/seguros** | Experimento de campo |
 | **H8** | En Perú, donde la causa #1 de desconfianza en seguros es la falta de información, la exposición a patterns de *hidden information* predecirá desconfianza en aseguradoras **con más fuerza que las variables demográficas** | `abierta` — **el puente más directo con el resto del proyecto** | Experimento sobre muestra peruana replicando Luguri & Strahilevitz |
 | **H9** | **Brecha actitud-conducta en diseñadores**: el discurso público es anti-IA/anti-slop pero la adopción declarada es altísima (89% trabaja más rápido) | `abierta` — **estructuralmente el mismo fenómeno que `disposicion_compartir_datos_pricing` en `lapuerta`** | Medir si la indignación estética predice o no comportamiento de uso |
@@ -478,8 +507,17 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 | **H14** | **El ARR de vibe coding no retiene**: si Lovable cierra a $12-13,2B, su ARR a 12 meses crecerá <50% (vs. 150%+ histórico), revelando la cohorte de churn | `abierta` | Comparar ARR jul-2026 vs. jul-2027; se resuelve de inmediato si publican NRR |
 | **H15** | **La consultora de diseño pura no vuelve**: ninguna de las cuatro publicará crecimiento de dos dígitos en 2026-2027; la recuperación, si ocurre, será como implementadoras de IA | `abierta` | Cualquier reporte de revenue o adquisición a múltiplo alto |
 | **H16** | **El estándar de reporting se degrada donde hay presión de IA**: si Figma deja de reportar NDR o paid customers en algún trimestre 2026-2027, se refuerza | `parcial` — ya ocurrió con Adobe (fusión de segmentos) y Webflow (dejó de publicar ARR) | Trimestre a trimestre |
-| **H17** | **Desfase geográfico**: el ciclo identitario del gremio llega a Perú/LatAm desfasado, atenuado, o el mercado local ni siquiera participa de esa conversación | `abierta` — todo lo hallado es anglosajón | Barrido en español/portugués en una iteración futura |
-| **H18** | **El silencio del service design** es señal de madurez (absorbido en operaciones), no de irrelevancia | `abierta` — hallazgo negativo que merece pasada propia | Contratos, ofertas de empleo y presencia en operaciones vs. en discurso |
+| **H17** | **Desfase geográfico**: el ciclo identitario del gremio llega a Perú/LatAm desfasado, atenuado, o el mercado local ni siquiera participa de esa conversación | ⬇️ **`refutada`** *(iter. 2)* — **no hay desfase.** Brasil adopta IA **por encima** del mundo anglosajón (94% vs. 89%, N=823 — F-389); MercadoLibre ejecutó la compresión del rol en LatAm con **119 desvinculaciones de UX** integrando diseño y contenido (F-391); el vocabulario anti-slop circula en español en medios masivos (F-390). El ciclo es **simultáneo**, no diferido | Refutada. Ver H20, que es lo que quedó vivo del barrido |
+| **H18** | **El silencio del service design** es señal de madurez (absorbido en operaciones), no de irrelevancia | ⬆️ **`parcial`** *(iter. 2)* — **la mitad favorable**: existe base de evidencia institucional (revisión oficial del gobierno británico, F-387), infraestructura viva (SDN, conferencia global, Touchpoint — F-395) y **comunidad activa en Perú desde 2017** (F-394). **La mitad adversa**: una figura interna de la disciplina describe una "**crisis de la práctica**" por no haber sabido demostrar valor (F-393), y **no hay métricas públicas de membresía** para medirlo. *Silencio social ≠ irrelevancia — pero tampoco es prueba de madurez* | Métricas de membresía SDN, o presupuesto/plantilla de service design en organizaciones grandes |
+
+### Hipótesis abiertas en la iteración 2
+
+| # | Hipótesis | Estado | Cómo se falsa |
+|---|---|---|---|
+| **H19** | **El impuesto de verificación es la variable moderadora**: el efecto de la IA sobre la velocidad de entrega será **negativo en código base maduro y positivo en construcción nueva**, y el punto de cruce dependerá de la seniority, no de la calidad del modelo | `abierta` — mecanismo propuesto por un preprint (F-388); si se sostiene, **el debate "¿la IA acelera o no?" está mal planteado** y la pregunta correcta es *¿en qué punto de la curva estoy?* | Un experimento que manipule **madurez del código base** como factor y mida seniority como moderador. Se refuta si el efecto es del mismo signo en ambas condiciones |
+| **H20** | **La conducta es local, el discurso es importado**: LatAm/España **generan evidencia y decisiones propias** (estudio brasileño N=823, despidos de UX en MercadoLibre) pero **consumen el marco interpretativo traducido del inglés** — se re-emite el 89% de Figma sin el descuento por interés del emisor que la propia fuente exige | `abierta` — **lo que quedó vivo tras refutar H17, y probablemente más útil que ella**. Predicción: >70% de las cifras citadas en piezas hispanohablantes de tendencias 2026 serán de emisores anglosajones con interés comercial | Auditar N piezas en español/portugués y clasificar el origen y el interés del emisor de cada cifra que citan |
+| **H21** | **Brecha de gobernanza, no de adopción**: en mercados emergentes el problema real no es que los diseñadores no usen IA sino que la usan **sin marco corporativo** — 60% en cuentas personales, 14% con capacitación de la empresa (F-389). Si es así, la intervención de mayor retorno es **gobernanza, no capacitación en herramientas** | `abierta` — **directamente accionable en el contexto Rimac**; conecta con el riesgo de dato sensible del negocio asegurador | Replicar la medición de *shadow AI* en una organización peruana; se refuta si la adopción sin lineamientos es marginal |
+| **H22** | **El ROI del diseño se cita por rotación, no por evidencia**: cuando una cifra estrella se desmonta públicamente, la industria **la sustituye por otra igual de trazable-a-una-fuente** en vez de dejar de citar cifras (671% → 135%) | `abierta` — patrón observado en 2 iteraciones consecutivas; predicción: **la iteración 3 encontrará una cifra nueva y distinta** ocupando el mismo lugar retórico | Registrar en cada iteración qué cifra ocupa el lugar de "el ROI del diseño". Se refuta si la cifra dominante se mantiene estable o si desaparece sin reemplazo |
 
 ---
 
@@ -547,6 +585,38 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 - **C13 — El anti-diseño sin disciplina destruye la usabilidad.** Brutalismo con grilla clara ≠
   anti-diseño caótico; el segundo llegó a 8-10% de éxito de tarea en páginas densas de información.
 
+**Sobre cómo leer la evidencia de una tecnología nueva** *(ascendidas en la iteración 2)*
+
+- **C15 — Preguntar siempre qué se midió: preferencia, desempeño o consecuencia.** Toda la evidencia
+  favorable a la generative UI mide **preferencia declarada en sesión única, contra una línea base
+  débil** (texto plano) y producida por quien vende la tecnología; toda la evidencia desfavorable
+  mide **atributos de soporte** (prevención de errores, recuperación, ayuda, eficiencia) y
+  **consistencia**. No se contradicen: miden cosas distintas. La pregunta operativa ante cualquier
+  claim de una tecnología de diseño es *¿esto es un dato de gusto, de desempeño o de consecuencia?*
+  — y el discurso casi siempre presenta el primero como si fuera el tercero.
+- **C16 — La curva antes que el signo.** Ante "¿la IA acelera el trabajo?", la respuesta correcta no
+  es sí ni no: es *¿en qué punto de la curva está este equipo?* Construcción nueva y perfiles junior
+  ganan; código base maduro y perfiles senior pagan un **impuesto de verificación** que puede
+  superar el ahorro. Un piloto que mida el promedio de ambos mundos medirá cero y concluirá mal.
+  Diseñar el piloto **segmentando por madurez del sistema y por seniority**, no agregando.
+- **C17 — Cuando desmontes una cifra estrella, prepárate para la siguiente.** Este campo no responde
+  a la refutación dejando de citar cifras: **rota la cifra**. El 671% cayó y lo reemplazó el 135% —
+  igual de modelado, igual de no medido. La defensa no es tumbar la cifra del día, es **exigir el
+  diseño del estudio**: ¿alguien ejecutó el cambio y midió el resultado, o alguien estimó el ahorro?
+  ⚠️ *Provisional: ascendida con una sola iteración de respaldo; se confirma o cae en la iteración 3
+  (H22).*
+
+**Sobre geografía y contexto local** *(ascendida en la iteración 2)*
+
+- **C18 — En LatAm, la conducta es local y el marco es importado; usar el primero, descontar el
+  segundo.** Se creyó que el ciclo identitario del gremio llegaría desfasado a la región y **no es
+  así**: la adopción de IA en Brasil supera a la anglosajona y la compresión del rol de diseño ya se
+  ejecutó en la empresa más valiosa de la región. Pero el *relato* que circula en español y
+  portugués es traducción, y arrastra sin filtro las cifras de emisores interesados. Regla operativa
+  para cualquier entregable regional: **buscar el dato de conducta local** (decisiones corporativas,
+  estudios con muestra propia) y **no citar la cifra anglosajona sin su descuento por emisor** (C4).
+  ⚠️ *Provisional: ascendida con una sola iteración de respaldo.*
+
 **Sobre el poder del diseño**
 
 - **C14 — La evidencia causal más fuerte del poder del diseño es sobre su capacidad de daño.** Los
@@ -563,6 +633,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 | # | Fecha | Foco de la corrida | Qué cambió | Pendiente que hereda la siguiente |
 |---|---|---|---|---|
 | 1 | 2026-07-26 | Barrido fundacional de 360°: impacto tangible vs. propuesta innovadora, en producto/UX, IA, design systems, servicio y visual | **Creación del node.** 92 fuentes registradas (F-237 a F-328). Escala de madurez (§5) y 14 reglas de criterio (§7) establecidas. Tablero abierto con 18 hipótesis | (a) **H13 es falsable el 5-ago-2026** — Figma reporta Q2; (b) barrido en **español/portugués** (H17), todo lo hallado es anglosajón; (c) **service design** merece pasada propia (H18); (d) leer los preprints de generative UI de primera mano (el proxy bloqueó arXiv); (e) buscar si apareció **replicación independiente** del efecto design systems (H6) |
+| 2 | 2026-07-29 | **Confrontación**, no novedad: los 5 pendientes heredados (H17 español/portugués · H18 service design · H6 replicación · H3 generative UI · H13 Figma) | **4 hipótesis movidas.** ⬇️ **H17 `refutada`** (no hay desfase geográfico). ⬆️ **H3 `parcial`** (preferencia confirmada; desempeño de soporte y consistencia refutados; longitudinal sigue sin existir). ⬆️ **H18 `parcial`** (base institucional sí, madurez no probada, crisis declarada desde adentro). **H6 sigue abierta** pero suma la **5.ª cadena de eco** (135% modelado, F-397). **Divergencia ⚔️ de productividad reconciliada por mecanismo** (impuesto de verificación, F-388). 19 fuentes nuevas (F-380 a F-398), 4 hipótesis nuevas (H19-H22), 4 reglas nuevas (C15-C18) | (a) **H13 se resuelve el 5-ago-2026** — leer el reporte Q2 de Figma y el precio a 90 días; (b) **H22 se pone a prueba sola**: registrar qué cifra ocupa el lugar del "ROI del diseño" en la iteración 3; (c) **H21 (shadow AI / gobernanza) es la más accionable para Rimac** — no se buscó dato peruano equivalente al brasileño; (d) sigue sin leerse **ningún texto completo** (proxy 403 en arXiv, ACM, MDPI, gov.uk, IBPAD): las 19 fuentes nuevas están soportadas en abstracts y snippets; (e) **H20** (conducta local vs. marco importado) requiere una auditoría sistemática de piezas hispanohablantes |
 
 ---
 
@@ -590,6 +661,202 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 
 ---
 
+## 10. 🔁 Iteración 2 (2026-07-29) — confrontación de las hipótesis heredadas
+
+Corrida de `/trinidad` con mandato explícito de **confrontar antes que buscar novedad**. Los cinco
+pendientes que dejó la iteración 1 se atacaron uno por uno. Las tres pistas se mantienen separadas.
+
+**Resumen de la corrida en una frase por pista:**
+
+- 🔬 **Empírica**: la evidencia de generative UI **por fin llegó**, y dice exactamente lo que la
+  teoría de 2004 predecía — gusta en la primera sesión y falla en todo lo que sostiene el uso
+  repetido.
+- 📱 **Social**: la hipótesis del desfase latinoamericano **era falsa**, y su refutación vino de
+  conducta corporativa, no de conversación.
+- 📈 **Negocio**: el ROI del diseño **no se corrigió, se recicló** — cayó el 671% y ocupó su lugar
+  un 135% igual de modelado.
+
+### 10.1 🔬 Generative UI: la evidencia llegó y se partió en dos mitades limpias
+
+La iteración 1 clasificó la generative UI como 🔴 *propuesta sin respaldo independiente* y lo fundó
+en literatura de hace 20 años (Findlater & McGrenere, F-247). En estos meses aparecieron **siete
+piezas nuevas**, y el resultado no es que la clasificación estuviera mal: es que ahora se puede
+partir el claim en dos, y cada mitad tiene un veredicto distinto.
+
+**Mitad que gana — "gusta más":**
+
+- El paper insignia (F-380, Leviathan/Valevski, Google) muestra preferencia humana abrumadora frente
+  a la salida markdown de un LLM. ⚠️ Tres descuentos que el titular no lleva: es **preprint sin
+  revisión por pares**, la línea base es **texto plano** (un rival deliberadamente débil), y **sus
+  propios autores admiten que los resultados son peores que los de expertos humanos**, "al menos
+  comparables en el 50% de los casos". Un 50% de empate contra un humano se está comunicando como
+  una victoria.
+- La versión peer-reviewed existe y es más seria: hasta **72% de preferencia** sobre interfaces
+  conversacionales en tareas densas en información (F-381, Findings of ACL 2026). Sigue siendo
+  **preferencia declarada en sesión única**.
+
+**Mitad que pierde — "funciona mejor":**
+
+- **138 pantallas** generadas por Figma, Banani y Stitch, evaluadas contra las 10 heurísticas de
+  Nielsen (F-382, CHI 2026): baja tasa de soporte justo en **H5 prevención de errores, H7 eficiencia
+  de uso, H9 recuperación de errores y H10 ayuda/documentación**. Es decir, **falla precisamente en
+  los atributos que solo importan cuando el usuario vuelve** — y brilla en los que se juzgan de un
+  vistazo. Esa es la firma exacta de un artefacto optimizado para la primera impresión.
+- Una revisión sistemática (F-384) mide el defecto de base: **prompts idénticos producen interfaces
+  sustancialmente distintas, incluso entre ejecuciones repetidas de la misma herramienta**. La
+  inconsistencia **no es inmadurez del modelo: es una propiedad del paradigma**.
+- La comunidad HCI produjo contrapeso publicado, no solo tuits: un position paper explícito
+  *Against Generative UI* (F-383), el traslado del marco de deuda técnica oculta a las interfaces
+  maleables (F-385), y un reencuadre útil de Microsoft Research (F-386): con generative UI **el
+  objeto de usabilidad deja de ser la interfaz y pasa a ser el generador**.
+
+⭐ **Lo que esto le hace a H3.** La hipótesis predecía: *gana en preferencia en la sesión 1, pierde
+en tiempo de tarea y aprendibilidad a lo largo de ≥5 sesiones.* La primera mitad está **confirmada**.
+La segunda no está confirmada — pero sus dos precondiciones causales (inconsistencia entre
+ejecuciones, ausencia de andamiaje de error y ayuda) **ya están medidas**. H3 pasa a `parcial`.
+
+⚠️ **Y el hallazgo negativo que vale tanto como los positivos:** tras dos iteraciones buscándolo,
+**sigue sin existir un solo estudio longitudinal independiente de generative UI**. Toda la evidencia
+favorable la producen los fabricantes y mide una sola sesión. Los autores de F-382 lo declaran ellos
+mismos como limitación. **Un paradigma se está adoptando con evidencia que, por construcción, no
+puede detectar su modo de falla principal.**
+
+### 10.2 🔬📱 Service design: no está en silencio, está en otra tribuna — y en crisis según los suyos
+
+La iteración 1 registró un hallazgo negativo (🧊: el service design no aparece en la conversación
+social) y lo dejó como H18 con una lectura optimista: *silencio = madurez*. La pasada propia
+encuentra las dos mitades, y la optimista **no gana**.
+
+**A favor de "existe y está institucionalizado":**
+
+- El gobierno británico comisionó y publicó una **revisión de evidencia sobre diseño público**
+  (PDER, F-387): tres revisiones de literatura por un equipo académico interdisciplinario más un
+  banco de casos, con evidencia sobre outcomes (efectividad, innovación, eficiencia) y sobre
+  barreras institucionales (liderazgo, capacidad, financiamiento, oportunidad de iterar). ⚠️ Con un
+  detalle que la vuelve menos útil de lo que parece: **se redactó entre sept-2023 y mar-2024 y se
+  publicó en jul-2025** — su corpus es **anterior a la IA generativa**.
+- La infraestructura sigue viva: SDN (2004), conferencia global 2026, y una edición de *Touchpoint*
+  titulada precisamente "From AI to Synthetic Services" (F-395).
+- **Y hay tribuna local**: existe una comunidad de service design en **Lima desde junio de 2017**,
+  activa en 2026 con su Jam de 48 horas (dentro del Global Service Jam simultáneo en 85 ciudades) y
+  sesiones periódicas (F-394). Directamente relevante para el proyecto: **el service design en Perú
+  no hay que fundarlo, hay que encontrarlo.**
+
+**En contra de "es madurez":**
+
+- Búsqueda adversarial explícita: una figura reconocida *dentro* de la disciplina describe el campo
+  en "una verdadera **crisis de la práctica**" (F-393), atribuida a que las organizaciones
+  invirtieron en diseño durante el crecimiento **sin posicionar los equipos ni demostrar valor**, y
+  a que el design thinking no cumplió su promesa. Es el mismo diagnóstico que la pista de negocio de
+  la iteración 1 encontró en las consultoras (IDEO −67%, Veryday cerrada, R/GA a PE).
+- **No existen métricas públicas de membresía de SDN** ni de presupuesto de service design en
+  organizaciones. Se buscaron y no aparecieron: H18 **no se puede cerrar con dato duro en ninguna
+  dirección**.
+
+⭐ **Veredicto honesto:** *silencio social ≠ irrelevancia* queda **respaldado**. *Silencio social =
+madurez* queda **sin respaldo, y con contraevidencia interna**. La lectura que sobrevive es la
+tercera: el service design tiene instituciones, evidencia y comunidad, pero **no tiene un relato con
+el que participar de la conversación identitaria del gremio** — y por eso es invisible justo en el
+momento en que el gremio decide quién es. H18 → `parcial`.
+
+### 10.3 📈 Design systems y productividad: una cifra reciclada y un mecanismo que reconcilia
+
+**Lo que no apareció (y se buscó):** ninguna replicación independiente del efecto de un design
+system sobre el tiempo de desarrollo. **H6 sigue abierta tras dos iteraciones de búsqueda.**
+
+**Lo que sí apareció:**
+
+- **Quinta cadena de eco de cita.** El "**135% de ROI**" que circula en 2026 no es un estudio: es una
+  **calculadora** publicada en 2022 (F-397) que modela US$646.000 → US$1.517.400 de ahorro estimado
+  a cinco años, alimentada con cifras autorreportadas por la industria. Nadie ejecutó y midió.
+  ⭐ **El patrón importa más que la cifra**: cuando el 671% se desmontó, la industria **no dejó de
+  citar cifras — cambió de cifra**. De ahí sale H22 y la regla C17.
+- **Dato de supervivencia**, que es más informativo que cualquier ROI: la satisfacción con el buy-in
+  cae de 42% a 32% interanual y **solo ~40% de los design systems sigue activo pasados 18 meses**
+  (F-396). ⚠️ Fuente con interés del emisor directo (vende la herramienta) — lo que hace *más*
+  creíble el dato negativo, no menos.
+- ⭐ **El hallazgo más valioso de la corrida para el resto del proyecto: el impuesto de
+  verificación.** La iteración 1 dejó abierta la divergencia ⚔️ entre METR (−19% de velocidad real
+  en devs expertos) y el preprint de IA alineada a design system (−46/−69% de time-to-delivery), y
+  aventuró a mano que la diferencia estaba en la madurez del código base. Ahora eso tiene nombre y
+  cifras (F-388): **~4,3 minutos de verificación por sugerencia para un senior vs. ~1,2 para un
+  junior, escalando con la madurez del código base hasta exceder el ahorro de generación**; juniors
+  ganan 30-40% pero con atrofia de habilidad. **Los dos estudios no se contradicen: miden extremos
+  opuestos de la misma curva.** ⚠️ Preprint sin revisión por pares — es la mejor explicación
+  disponible, no un hecho establecido (H19).
+
+### 10.4 📱 El barrido en español y portugués: H17 refutada, y lo que quedó vale más
+
+La iteración 1 declaró su sesgo anglosajón como limitación crítica y apostó a H17: *el ciclo
+identitario del gremio llega a LatAm desfasado, atenuado, o el mercado local ni participa.*
+**Es falso en las tres formas.**
+
+- **Adopción: LatAm va por delante, no por detrás.** El estudio brasileño (F-389, Môre + IBPAD,
+  **N=823 profesionales**, nov-2025) reporta **94% de adopción de IA** entre diseñadores brasileños
+  y 66% de uso diario — **por encima del 89% anglosajón** (F-280). Es, además, **la única evidencia
+  local con muestra propia** hallada en toda la corrida.
+- **Conducta: la compresión del rol ya se ejecutó en la región.** MercadoLibre —la empresa
+  latinoamericana más valiosa en bolsa— desvinculó **119 personas del área de UX** (32 en Argentina)
+  en una reestructuración que **integra explícitamente los roles de diseño y contenido** apoyándose
+  en IA; los perfiles más golpeados fueron **UX writers y especialistas de contenido** (F-391).
+  ⭐ Aplicando C6 (contar conducta, no volumen): esto pesa más que todo el discurso anglosajón sobre
+  "el fin del UX designer" junto, porque **es una decisión corporativa fechada y documentada, no una
+  queja de LinkedIn**. La ironía es que la iteración 1 registró que el daño se concentraba en
+  juniors; aquí el rol eliminado es **una especialización entera**.
+- **Discurso: existe, y es traducción.** El vocabulario anti-slop, la "fatiga visual post-IA" y el
+  neo-brutalismo circulan en medios masivos en español (F-390), y el debate identitario tiene sus
+  propios podcasts en español. Pero el material **cita cifras anglosajonas de emisores interesados**
+  —el 89% de Figma reaparece en prensa argentina y en escuelas españolas— **sin el descuento que la
+  propia fuente exige** (C4).
+
+⭐ **Lo que quedó vivo es mejor que la hipótesis refutada.** La distinción útil no es *anglosajón vs.
+LatAm* sino **conducta local vs. marco importado** (H20): la región **genera datos y decisiones
+propias** y **consume interpretación traducida**. Y de ahí sale el hallazgo más accionable para el
+proyecto: en Brasil, **60% de los diseñadores usa IA en cuentas personales sin lineamiento
+corporativo y solo 14% recibió capacitación de la empresa** (F-389). **El problema no es adopción,
+es gobernanza** (H21) — lo cual, en un negocio asegurador donde el dato del cliente es sensible por
+definición, no es un detalle de RRHH.
+
+⚠️ **Nota de honestidad sobre este barrido:** el dato duro local es **brasileño y argentino**. Para
+**Perú** solo se hallaron portales de empleo y una comunidad de service design (F-394): **no se
+encontró ningún estudio peruano con muestra propia** sobre diseñadores e IA. El sesgo geográfico se
+redujo, no se eliminó.
+
+### 10.5 📈 Figma antes del 5 de agosto: H13 sigue en pie y se resuelve en una semana
+
+Al 13-jul-2026 FIG cotizaba ~**US$23,57**, con rango de 52 semanas de **US$16,60 a US$142,92** —
+**~−83/−84% desde el pico y todavía bajo el precio de IPO (US$33)** — mientras el consenso de
+analistas apunta a US$30,56 a 12 meses, con 5 compras y **0 ventas** (F-398). El desacople que la
+iteración 1 identificó **se mantiene intacto**: 46% de crecimiento interanual y NDR de 139% (el más
+alto en más de dos años) conviviendo con una acción por debajo de su precio de salida.
+
+**H13 se resuelve el 5 de agosto de 2026** (reporte Q2) y en los 90 días siguientes. La condición
+está fijada de antemano: *si Figma reporta ≥40% de crecimiento y la acción no recupera sobre US$33,
+el mercado descuenta disrupción por IA, no ejecución.* La iteración 3 debe leerlo y cerrarla.
+
+### 10.6 Limitaciones de la iteración 2
+
+- ⚠️ **Ninguna de las 19 fuentes nuevas se leyó en texto completo.** El proxy devolvió **403 en
+  todos los intentos de lectura directa**: arXiv, ACM Digital Library, MDPI, gov.uk, IBPAD, Xataka.
+  Todo el §10 está construido sobre **abstracts y snippets de búsqueda**. Consecuencias concretas:
+  no se verificaron tamaños de muestra ni métodos línea por línea; **las cifras del PDER, del estudio
+  brasileño y de la revisión sistemática de consistencia deben revalidarse antes de publicarse en un
+  entregable**. Es la misma limitación de la iteración 1 y **no mejoró**: asumirla como estructural
+  del entorno, no como mala suerte.
+- **Autoría no verificada** en 6 de las 19 fuentes nuevas (F-381 a F-386, F-388): citadas por título,
+  venue y URL, sin inventar nombres.
+- **El barrido hispanohablante no alcanzó a Perú con dato propio** (ver §10.4).
+- **H18 quedó sin dato duro**: no hay métricas públicas de membresía ni de presupuesto de service
+  design. Se buscaron.
+- **La pista social sigue midiéndose por frecuencia y no por validación**: sin acceso a X ni Reddit,
+  no se pudieron contar reacciones ni leer hilos de primera mano. La compensación deliberada de esta
+  iteración fue **apoyarse en conducta observable** (despidos de MercadoLibre, eventos con fecha de
+  Service Design Lima, control de transparencia de Apple en la iteración 1) en vez de en volumen —
+  lo cual es más sólido, pero mide otra cosa.
+- **H16 (degradación del reporting) no se pudo avanzar** en esta corrida.
+
+---
+
 ## Conexiones
 
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] —
@@ -604,6 +871,11 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 - [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de calidad de agentes conversacionales
   de IA]] — las reglas C8 y C11 (verificabilidad > explicabilidad; desconfiar del autorreporte) son
   criterios de diseño que ese node debería incorporar a su instrumentación de medición.
+  ⬆️ *Iteración 2*: **C15 es la advertencia más directa para ese node** — la evidencia de generative
+  UI muestra que un artefacto de IA puede ganar en **preferencia declarada** mientras falla en
+  prevención de errores, recuperación y ayuda (F-382). Cualquier instrumento que mida satisfacción
+  de un agente conversacional **sin medir recuperación de error mide la mitad optimista del
+  fenómeno**.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros
   (Mundo vs. Perú)]] — H8 conecta los dark patterns con la causa #1 de desconfianza en seguros en
   Perú (falta de información), que es un hallazgo central de ese node.
@@ -613,3 +885,8 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 - [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual]] — C1 y C2
   (argumentar por mecanismo, prometer acumulación) aplican a cómo se sustenta el valor del rediseño
   de la experiencia de venta ante el VP.
+  ⬆️ *Iteración 2*: **C16 cambia cómo debería diseñarse el Plan Piloto de validación**. Si el
+  impuesto de verificación es real (F-388), un piloto que promedie perfiles y niveles de madurez
+  medirá cero; hay que **segmentar por seniority del asesor y por madurez del proceso** que se
+  interviene. Y **existe una comunidad de service design en Lima desde 2017** (F-394) — interlocutor
+  local para el frente de Service Design del proyecto, no hay que construirlo de cero.
