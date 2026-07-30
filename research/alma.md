@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-27.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-30.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -70,6 +70,7 @@ por afirmación cuando corresponda.
 | `_nodes/matriz-productos-vida-rimac.md` | Matriz de productos Vida RIMAC: catálogo de 3(+1) productos reales (VFP, Plan Vida Flexible, Vida Contigo, Vida Temporal Total), coberturas/addons, trazabilidad de fuentes y niveles de confianza — VCD digital/Endosable digital pendientes, no confirmados | 2026-07-26 | v1.2 |
 | `_nodes/glosario-seguro-vida-peru.md` | Glosario de seguro de vida en lenguaje claro — FAQ de cliente (investigación `/trinidad`: pista empírica + social + negocio) para completar el Playbook del Asesor | 2026-07-24 | v1.0 |
 | `_nodes/tendencias-diseno.md` | **Node acumulativo** — Tendencias en diseño: qué tiene impacto tangible demostrado y qué es propuesta innovadora sin respaldo (producto/UX, IA, design systems, servicio, visual). Incluye escala de madurez de evidencia, tablero de 18 hipótesis vivas y 14 reglas de criterio destiladas | 2026-07-26 | v1.0 (iteración 1) |
+| `_nodes/modelo-churn-renovacion-rimac.md` | Modelo de Churn y Matriz de Renovación de RIMAC (AMI/VEH): hallazgos de un documento interno + validación externa (`/trinidad`) — benchmark de concentración/lift, selección adversa dinámica AMI vs. VEH, cancelación voluntaria como fuerza de industria | 2026-07-30 | v1.0 |
 | `_nodes/venta-vida-digital-hibrida-latam.md` | Venta de seguros de vida en LATAM (Brasil, Chile, Colombia; excluye Perú): modelo digital vs. híbrido vs. tradicional y cómo performa cada uno — extensión regional de `futuro-asesores-seguros-venta-digital.md`; ampliada 360° con `/trinidad` (pistas empírica y social) el mismo día | 2026-07-27 | v1.0 (amplía con 360°, sin bump) |
 
 ---

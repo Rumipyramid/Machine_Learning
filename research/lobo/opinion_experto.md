@@ -454,6 +454,50 @@ calculado, con una herramienta, no con un texto.
   verificación independiente en esta pasada.
 - **Actualizado:** 2026-07-25
 
+### 21. RIMAC ya tiene el "quién" de la fuga con precisión de clase mundial — el vacío de valor real está en el "por qué" de la cancelación voluntaria, no en el modelo
+Análisis de dos decks internos (Modelo de Churn — Visión Cliente, abril 2026; Matriz de
+Renovación AMI y VEH, ene-feb 2026) más validación externa (`/trinidad`, 2026-07-30) sobre
+el nivel de sofisticación real de esa capacidad. Los 7 modelos (3 de Churn + 4 de
+Renovación) capturan 79-91% del evento con solo 26-36% de la base — un benchmark académico
+publicado reciente (revista arbitrada) reporta lift de ~1.9-3.01x en el decil superior
+como el estándar/mejor-caso de la literatura, con 50% de la base necesaria para el mismo
+~90% de captura. RIMAC necesita casi la mitad de esa base para el mismo resultado, y el
+score "Muy Alto" de Morosidad tiene lift x11.6 — muy por encima del x3.01 publicado como
+mejor caso. **Esto no es una comparación controlada perfecta (datasets distintos), pero la
+brecha es demasiado grande para ser ruido:** la capacidad técnica de detección ya no es el
+cuello de botella de esta operación. El hallazgo de mayor valor de negocio no es técnico:
+la cancelación **voluntaria** (pedido del cliente, APC, 59% del total) supera a la
+**involuntaria** (morosidad, 41%), y es consistente con una tendencia de industria mucho
+más amplia y reciente —no una anomalía del dato de RIMAC— documentada externamente: ~29% de
+asegurados en EE.UU. cambiaron de aseguradora en 2025 por presión de precio acumulada, y
+60% cambiaría por mejor personalización/experiencia, no por precio más bajo. **Ningún
+documento interno reporta la causa raíz de ese 59%** (precio, servicio, competencia) — es
+el vacío de mayor valor de negocio de todo el cruce: RIMAC tiene el "quién" con precisión,
+no el "por qué". Segundo hallazgo, más especulativo: la matriz AMI muestra un patrón
+inverso al de VEH — baja persistencia predicha se asocia a *más* siniestralidad relativa en
+AMI (ratio 1.30) y a *menos* en VEH (ratio 0.68), algo que ningún documento fuente señala.
+La literatura de selección adversa dinámica en seguros de salud (revista especializada en
+economía del seguro, 2026) da el marco teórico más cercano —quienes lapsan tienen una
+experiencia de siniestros distinta de quienes permanecen— pero el dato de RIMAC es
+*predictivo* (dos scores sobre clientes que aún no decidieron), no retrospectivo, así que
+la analogía no se puede confirmar 1:1: se reporta como divergencia señalada, no como
+hallazgo cerrado. Tercer hallazgo, de gobernanza de datos, no de negocio: "% Efectividad"
+significa cosas opuestas en cada uno de los dos decks (recall en Churn, precisión en
+Renovación), hay 4 láminas con contenido incompleto (placeholders sin llenar) ocultas en
+vez de corregidas, y al menos 3 inconsistencias puntuales (etiqueta cruzada VEH/AMI, campo
+vacío, valores idénticos entre segmentos que deberían diferir) — nada que invalide los
+modelos, pero si alguien en el equipo compara ambos decks asumiendo que los términos
+significan lo mismo, va a leer mal los números.
+- **Evidencia:** F-388 (🟢A, benchmark de lift de churn), F-389 (🟡C, cancelación voluntaria
+  como tendencia de industria), F-390 (🟢A, selección adversa dinámica en salud — divergencia
+  señalada, no confirmación directa), F-391 (🔵B, mismo mecanismo en cuidado a largo plazo),
+  F-392 (🟡C, ventana de decisión 30-90 días — tratar con cautela)
+- **Confianza:** Alta en que la capacidad técnica de RIMAC está por encima del benchmark
+  publicado y en que el vacío real es la causa raíz de la cancelación voluntaria, no el
+  modelo; Media en la lectura de selección adversa dinámica para el patrón AMI/VEH — es el
+  marco teórico más cercano encontrado, no una confirmación causal con el dato disponible.
+- **Actualizado:** 2026-07-30
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -546,6 +590,18 @@ calculado, con una herramienta, no con un texto.
   es solo intuición de producto — tiene respaldo empírico específico del
   sector financiero (F-229) y marco psicológico robusto (F-230) de que la
   motivación predice mejor la conducta que la categoría demográfica asignada.
+- **Instrumentar la causa raíz del 59% de cancelación voluntaria (APC), no solo el score.**
+  Tesis 21: RIMAC ya identifica *quién* va a cancelar con precisión por encima del
+  benchmark de industria — el ROI marginal más alto ya no está en mejorar el modelo, está en
+  capturar *por qué* decide irse (precio, servicio, competencia) con una encuesta de salida
+  o modelo de causa raíz, para poder diseñar tratamientos distintos en vez de una sola
+  gestión de retención genérica sobre un evento que mezcla al menos tres causas distintas.
+- **Diseñar oferta específica para el cuadrante "alta siniestralidad + baja persistencia" en
+  AMI, antes de que el cliente decida irse.** Tesis 21: si el patrón de selección adversa
+  dinámica aplica (marco teórico, no confirmado con el dato disponible), ese cuadrante es
+  el de mayor pérdida potencial doble — se va Y cuesta caro mientras se queda — y es
+  exactamente el segmento que la matriz Persistencia × Siniestralidad ya aísla, sin que
+  ningún documento interno proponga todavía una jugada específica para él.
 
 ## ⚠️ Riesgos
 
@@ -674,6 +730,20 @@ calculado, con una herramienta, no con un texto.
   subyacente. Instinto, no diagnóstico confirmado sobre el propio modelo — pero ignorarlo sin
   evaluarlo en la próxima revisión de variables sería descartar la señal más directa que ha
   entrado al ledger sobre el propio diseño de segmentación de `lapuerta`.
+- **Comparar los dos decks de churn/renovación de RIMAC asumiendo que sus términos significan lo
+  mismo.** Tesis 21: "% Efectividad" es recall en el deck de Churn y precisión en el de
+  Renovación — mismo nombre, definición opuesta. Sumado a 4 láminas ocultas con contenido
+  incompleto (placeholders sin llenar) y al menos 3 inconsistencias puntuales detectadas
+  (etiqueta cruzada VEH/AMI, campo vacío, valores idénticos entre segmentos que deberían
+  diferir), el riesgo no es que el modelo esté mal — es que alguien tome una decisión de negocio
+  citando el número equivocado por leer ambos documentos como si compartieran vocabulario.
+- **Confundir "el modelo concentra bien el evento" con "la gestión ya reduce el churn real."**
+  Tesis 21: tanto el deck de Churn como el de Renovación validan con backtest fuera de tiempo —
+  miden qué tan bien habría funcionado el score en el pasado, no el efecto de una intervención
+  real ya desplegada. Dimensionar el ROI del piloto (próximo hito, sin fecha en el deck de
+  Renovación) con el mismo nivel de confianza que el score de concentración sería repetir, en
+  analítica de retención, el mismo error que tesis 6 ya señaló para el nudge: tamaño de efecto
+  de laboratorio/backtest no es tamaño de efecto de campo.
 
 ## 📔 Bitácora
 
@@ -885,4 +955,27 @@ calculado, con una herramienta, no con un texto.
   quedaron conectadas con el resto de la cartera en la corrida de ayer. Próximo salto de
   tesis/confianza queda condicionado a que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o
   `cronista` registren fuentes nuevas en el ledger. Bitácora con 15 días de historial
+  (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-07-30** — Corrida a pedido explícito del usuario: "usa trinidad y el lobo para
+  analizar" un documento nuevo (`Analisis_Detallado_Churn_Renovacion.md`, análisis detallado de
+  2 decks internos de RIMAC sobre modelos de churn y matriz de renovación AMI/VEH), persistido
+  en `research/_fuentes_internas/`. Corrí `/trinidad` para validar externamente 4 preguntas
+  concretas del documento (benchmark de concentración/lift de churn, cancelación voluntaria vs.
+  morosidad como patrón de industria, selección adversa dinámica para el patrón inverso
+  persistencia-siniestralidad AMI/VEH, y ventanas de gestión anticipada) — registré F-388 a
+  F-392 en el ledger y creé el node `_nodes/modelo-churn-renovacion-rimac.md` (v1.0) con el
+  detalle completo. Sumé tesis 21: RIMAC ya tiene capacidad de detección de churn por encima del
+  benchmark académico publicado (lift x11.6 en el score top de Morosidad vs. x3.01 reportado
+  como mejor caso en la literatura) — el vacío de mayor valor de negocio no es el modelo, es que
+  ningún documento interno reporta la causa raíz del 59% de cancelación voluntaria (APC), pese a
+  que esa proporción (voluntaria > involuntaria) es consistente con una tendencia de industria
+  más amplia, no una anomalía local. Señalé como divergencia explícita (no forzada) que el marco
+  teórico más cercano para el patrón AMI/VEH (selección adversa dinámica) no se puede confirmar
+  1:1 porque el dato de RIMAC es predictivo, no retrospectivo. Añadí 2 oportunidades
+  (instrumentar causa raíz de APC; oferta para el cuadrante alta-siniestralidad/baja-persistencia
+  en AMI) y 2 riesgos (comparar ambos decks asumiendo vocabulario compartido — "% Efectividad"
+  significa cosas opuestas en cada uno; confundir buena concentración de backtest con evidencia
+  de que la gestión real reduce el churn, mismo error de tesis 6 aplicado a retención). Ninguna
+  tesis previa (1-20) requirió ajuste de confianza — es evidencia nueva sobre un documento del
+  proyecto, no sobre el ledger externo existente. Bitácora con 18 días de historial
   (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
