@@ -5,7 +5,9 @@
 > del proyecto `Rumipyramid/Machine_Learning`, que amplía a su vez
 > `research/_nodes/futuro-asesores-seguros-venta-digital.md`. Fuentes citadas por ID (`F-n`) del
 > ledger `research/fuentes/codice.md`.
-> Alcance: LATAM excluyendo Perú (cubierto en detalle en otros nodes del proyecto).
+> Alcance: LATAM excluyendo Perú (cubierto en detalle en otros nodes del proyecto), más una
+> sección de caso de referencia global (Bowtie, Hong Kong) agregada el mismo día a pedido del
+> usuario, para dar contexto completo a la comparación que ya hacía la Síntesis.
 
 ---
 
@@ -18,7 +20,11 @@ efectiva. El caso de mejor desempeño comercial verificable de la región (Azos,
 directo al consumidor: distribuye a través de más de 9.000 corredores. Hay una divergencia real,
 no forzada, entre negocio y percepción social: ese mismo actor de mejor desempeño comercial
 muestra fricción social concreta en el momento de la suscripción y el reclamo — el punto donde lo
-digital falla más en toda esta línea de investigación del proyecto, no solo en LATAM.
+digital falla más en toda esta línea de investigación del proyecto, no solo en LATAM. El caso
+global de referencia más fuerte de este patrón, Bowtie (Hong Kong), se detalla en su propia
+sección más abajo: su mejor desempeño (99.53% de aprobación de reclamos) coexiste con haber
+terminado capitalizado por una aseguradora tradicional incumbente (Sun Life), el mismo desenlace
+estructural que Singlife en Singapur.
 
 ---
 
@@ -46,6 +52,48 @@ el node fuente.)*
   530+ insurtechs activas. Corredores/agentes representan 60-65% de las primas de la región, con
   210.000+ intermediarios activos (F-374, F-375). El modelo "phygital" (agente comunitario +
   digital) duplica la retención a primer año frente a los canales puros (McKinsey, F-376).
+
+---
+
+## 🌏 Caso de referencia global: Bowtie (Hong Kong)
+
+*(Fuera del alcance geográfico de LATAM, pero integrado aquí porque la Síntesis de este informe
+ya lo cita como el mismo patrón que Azos — este es el detalle completo detrás de esa referencia.
+Fuente: `research/_nodes/futuro-asesores-seguros-venta-digital.md` §3.7, F-365, F-370, F-371,
+F-385 a F-387.)*
+
+Bowtie es, junto con Ethos (EE.UU.), uno de los dos casos globales de mejor desempeño comercial
+verificable en venta de vida con fuerte componente digital que encontró este proyecto — y el más
+cercano a un flujo verdaderamente sin agentes.
+
+- **Origen:** fundada en 2018 por Fred Ngan y Michael Chan, dos actuarios locales, bajo la visión
+  "Make Insurance Good Again". Recibió la primera licencia de **"virtual insurer"** de Hong Kong
+  (20 dic. 2018) — una licencia que por regulación le prohíbe vender vía agentes o bancos.
+- **Por qué funciona:** se enfocó en VHIS (esquema de salud voluntario *estandarizado por el
+  gobierno de HK*) y vida a término — productos ya simplificados por regulación, no negociados
+  caso a caso, lo que hace viable prescindir del intermediario. Comisión cero por diseño
+  regulatorio (toda la prima va a protección) y fricción de entrada mínima (cotización instantánea
+  sin pedir datos personales).
+- **Desempeño:** ARR >USD 80M (mayo 2025, +100% interanual), líder del canal directo de HK.
+  ~70.000 reclamos procesados desde 2019 con **99.53% de aprobación**; tiempo mediano de
+  procesamiento de un reclamo VHIS (dic. 2024–nov. 2025): **6 días hábiles** — el único caso de
+  este proyecto de un actor digital-first resolviendo bien el momento más débil del modelo (el
+  reclamo, no solo la venta). Es objeto de un caso de estudio de Harvard Business School.
+- **El matiz que más importa para la lectura de este informe:** en julio de 2025, Bowtie cerró una
+  Serie C de hasta USD 70M liderada por **Sun Life Hong Kong** — una aseguradora tradicional
+  incumbente que ya había liderado su Serie B2 en 2023 y que ha ido **aumentando su participación
+  en cada ronda**. Financiamiento total acumulado: ~USD 157M en 4 rondas. Es el mismo patrón
+  estructural que Singlife en Singapur (absorbida por Sumitomo Life): los insurtechs de vida más
+  exitosos de Asia no terminan completamente independientes del sector tradicional — terminan
+  capitalizados e integrados progresivamente por un incumbente que apuesta cada vez más fuerte.
+  Bowtie sigue siendo operativamente independiente (a diferencia de Singlife), pero la trayectoria
+  de propiedad apunta en la misma dirección.
+
+**Por qué es relevante para LATAM:** Bowtie confirma, desde un mercado completamente distinto, el
+mismo patrón que Azos en Brasil — el mejor desempeño comercial digital no viene de eliminar toda
+forma de estructura tradicional, sino de (a) elegir el segmento de producto ya simplificado y (b)
+terminar, tarde o temprano, capitalizado o distribuido junto con el sector incumbente en vez de
+compitiéndole desde completamente afuera.
 
 ---
 
@@ -102,8 +150,8 @@ la decisión de compra. Es el mismo mensaje en la cifra de negocio (bancaseguros
 dominan la distribución), en la cifra empírica (67% busca online, la mayoría no compra online) y
 en la lectura teórica por transferencia de dominio (confianza como factor limitante). El caso de
 mejor desempeño de negocio de la región (Azos) no vende directo al consumidor — distribuye a
-través de 9.000+ corredores, el mismo patrón que Ethos en EE.UU. y Bowtie en Hong Kong (ver el
-node global del proyecto).
+través de 9.000+ corredores, el mismo patrón que Ethos en EE.UU. y Bowtie en Hong Kong (detalle
+completo en la sección "Caso de referencia global" arriba).
 
 **Divergencia real, no forzada:** Azos es el mejor caso de negocio de la región, y al mismo
 tiempo el único caso con evidencia social concreta de fricción en suscripción/reclamos. No se
@@ -133,5 +181,6 @@ directa de pólizas).
 
 ---
 
-*Fuente completa y versionada: `research/_nodes/venta-vida-digital-hibrida-latam.md` (v1.0).
-Fuentes F-372 a F-384 en `research/fuentes/codice.md`.*
+*Fuente completa y versionada: `research/_nodes/venta-vida-digital-hibrida-latam.md` (v1.0) y
+`research/_nodes/futuro-asesores-seguros-venta-digital.md` §3.7 (caso Bowtie). Fuentes F-372 a
+F-384 (LATAM) y F-365, F-370, F-371, F-385 a F-387 (Bowtie) en `research/fuentes/codice.md`.*
