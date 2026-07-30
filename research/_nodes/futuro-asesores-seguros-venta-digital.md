@@ -8,7 +8,7 @@
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: ¿en el futuro desaparecerán los asesores de seguros? ¿Qué sucede
 > en sociedades donde la tecnología permite venta 100% digital?
-> Fuentes registradas en `research/fuentes/codice.md` (F-180 a F-192, F-362 a F-371).
+> Fuentes registradas en `research/fuentes/codice.md` (F-180 a F-192, F-362 a F-371, F-385 a F-387).
 
 ---
 
@@ -267,6 +267,27 @@ distinta del mismo mercado, que no se investigó a fondo en esta ronda.
    comisión cero — hay humano disponible, sin la presión de venta que la asimetría de información
    (§1.1) predice que erosiona confianza. Mismo patrón que Ethos (§3.7 arriba): humano presente,
    pero no como vendedor con comisión.
+
+**Profundización (2026-07-27, pregunta de seguimiento del usuario): fundadores, historia y un
+matiz importante sobre su independencia.** Bowtie fue fundada en 2018 por Fred Ngan y Michael
+Chan, dos actuarios locales, bajo la visión "Make Insurance Good Again"; recibió la primera
+licencia de "virtual insurer" de Hong Kong el 20 de diciembre de 2018 (F-385). Es objeto de un
+caso de estudio de Harvard Business School (F-386, contenido no accesible en esta sesión —
+paywall — pero su existencia es señal de legitimidad independiente del caso). Dato operativo
+adicional sobre reclamos: entre diciembre 2024 y noviembre 2025, el tiempo mediano de
+procesamiento de un reclamo VHIS fue de **6 días hábiles** (complementa el 99.53% de aprobación
+ya registrado, F-371).
+
+**El matiz que corrige la lectura de "éxito independiente":** Bowtie cerró una Serie C de hasta
+USD 70M en julio 2025, liderada por **Sun Life Hong Kong** — una aseguradora tradicional
+incumbente que ya había liderado la Serie B2 de Bowtie en 2023 y que aumentó su participación en
+cada ronda desde entonces (F-387). Financiamiento total acumulado: ~USD 157M en 4 rondas, con
+Mitsui & Co. como otro inversionista relevante. Es el **mismo patrón estructural que Singlife en
+Singapur** (§3.7 arriba, F-367): el desenlace de los insurtechs de vida más exitosos de Asia no
+es permanecer completamente independientes del sector tradicional — es ser capitalizados e
+integrados progresivamente por una aseguradora incumbente que aumenta su apuesta con el tiempo.
+Bowtie sigue siendo operativamente independiente (a diferencia de Singlife, que fue absorbida en
+participación mayoritaria), pero la trayectoria de propiedad apunta en la misma dirección.
 
 **Lectura conjunta con Ethos:** los dos casos de mejor evidencia de este node no ganaron
 eliminando al humano ni compitiendo en "más digital que nadie" — ganaron **eligiendo el segmento de
