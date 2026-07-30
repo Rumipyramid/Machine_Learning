@@ -578,7 +578,23 @@ o de Legal/Compliance en la sala.
   pagado por vendor), F-262 (🟢A, causal, A/B a escala — la mayoría de rediseños no mueve la métrica)
 - **Confianza:** Alta — no es que el diseño no valga, es que las cifras espectaculares que circulan
   para justificarlo son, las cuatro, no auditables o directamente sin fuente.
-- **Actualizado:** 2026-07-27
+**[Ampliación 2026-07-30]** Apareció una **quinta** cadena de eco del mismo patrón, específica de
+design systems: el "135% de ROI" que circula en 2026 no es un estudio, es una calculadora de 2022
+(Smashing Magazine) que modela US$646,000 invertidos → US$1,517,400 de ahorro *estimado* a 5 años,
+alimentada por cifras autorreportadas de otras tres empresas — nadie ejecutó y midió el ahorro real
+(F-397, mismo defecto estructural que Baymard/F-311 en la iteración 1). El propio Design Systems
+Report 2026 (F-396, encuesta del proveedor zeroheight, no auditada) documenta que la satisfacción
+con el respaldo interno ("buy-in") a design systems **cayó de 42% a 32%** interanual — el mercado
+mismo empieza a desconfiar del retorno prometido, no solo los escépticos externos. El mismo principio
+de "argumentar por mecanismo, no por multiplicador" aparece también fuera de diseño: un preprint
+(F-388, sin revisión por pares) nombra el "**impuesto de verificación**" en desarrollo de software
+asistido por IA — revisar código generado toma ~4.3 min para un senior vs. ~1.2 min para un junior,
+y ese costo **escala con la madurez del código base** y puede comerse el ahorro de generación. Es la
+misma lección que tesis 21 ya aplicaba a diseño, ahora con un caso paralelo en ingeniería: cualquier
+cifra de "productividad con IA" para las propias herramientas internas del proyecto (`lapuerta`,
+`cerrajero`, el agente conversacional) debe presupuestar ese costo de verificación, no solo el tiempo
+de generación — instinto, no medido en este proyecto específico.
+- **Actualizado:** 2026-07-30
 
 ### 22. La personalización con IA puede reducir la conversión en vez de aumentarla cuando el dato es sensible — riesgo directo para telemática/UBI y para cualquier asesor conversacional de Rimac
 La misma investigación 360° encuentra evidencia de campo (no solo laboratorio) de que el consejo
@@ -643,6 +659,38 @@ como empuje no consentido hereda el riesgo regulatorio ya documentado en tesis 8
   dominante; Media en la magnitud exacta transferible a una aseguradora comercial
   peruana, porque el único dato de aseguradora comercial real disponible es de rigor D.
 - **Actualizado:** 2026-07-29
+
+### 24. La interfaz generada dinámicamente por IA ("generative UI") ya tiene evidencia real — y es un empate técnico, no la ventaja que promete el marketing: sube la preferencia declarada, baja específicamente la usabilidad de soporte
+Barrido de la iteración 2 del node de tendencias de diseño trae el primer cluster de evidencia
+empírica sustancial sobre interfaces que un modelo de IA genera on-the-fly (no una pantalla fija
+diseñada por humanos). El propio paper insignia del optimismo (Google, F-380) reconoce que sus
+salidas son **peores que las hechas por expertos humanos** y solo "comparables" el 50% de las
+veces — no es una fuente neutral escondiendo el dato, lo reconoce en el propio abstract. La mejor
+evidencia peer-reviewed a favor (F-381, Findings of ACL) sí encuentra preferencia real de hasta
+72% en tareas exploratorias densas en información — pero sigue siendo **preferencia declarada**,
+no desempeño de tarea ni aprendibilidad. Y donde sí se midió con método (F-382, CHI, 138 pantallas
+móviles reales generadas por tres herramientas comerciales contra las heurísticas de Nielsen), la
+falla no es estética — es específicamente en **soporte**: ayuda/documentación, recuperación de
+errores, prevención de errores, eficiencia de uso. Un estudio separado (F-384) mide la causa
+estructural: el mismo prompt produce interfaces distintas entre herramientas **y entre ejecuciones
+repetidas de la misma herramienta** — la inconsistencia no es un problema de madurez del modelo, es
+una propiedad del paradigma, tal como ya lo advertía la comunidad de HCI en un position paper
+publicado (F-383: consistencia y predictibilidad son valores centrales de la disciplina, rotos por
+construcción). Traducción de negocio: si Rimac evalúa alguna vez una interfaz que la IA genera de
+forma dinámica (para el agente conversacional, un configurador de producto, un simulador), la
+pregunta correcta no es "¿gusta más?" —probablemente sí, en el primer contacto— sino "¿sigue siendo
+consistente y confiable la quinta vez que el mismo cliente vuelve, y qué pasa cuando necesita ayuda
+o comete un error?" — que es justo donde la evidencia dice que falla hoy.
+- **Evidencia:** F-380 (🟡C, Google, preferencia declarada, admite calidad inferior a humano), F-381
+  (🟢A, ACL peer-reviewed, preferencia hasta 72%, no desempeño), F-382 (🔵B, CHI, 138 pantallas
+  reales, falla en heurísticas de soporte), F-383 (🔵B, position paper HCI contra el paradigma),
+  F-384 (🔵B, revisión sistemática, inconsistencia entre y dentro de herramientas), F-385/F-386
+  (🟡C/🔵B, deuda técnica oculta y reencuadre del objeto de usabilidad)
+- **Confianza:** Alta en que la evidencia hoy no sostiene "generative UI = mejor experiencia" sin
+  matiz — es preferencia real en el primer contacto, con falla medida específicamente en soporte y
+  consistencia. Media-baja en la transferencia directa a un producto de seguros peruano — ninguna
+  fuente es de Perú ni de seguros; la lectura de riesgo para Rimac es instinto razonado, no medido.
+- **Actualizado:** 2026-07-30
 
 ## 💰 Oportunidades
 
@@ -920,6 +968,28 @@ como empuje no consentido hereda el riesgo regulatorio ya documentado en tesis 8
   consejo personalizado con IA puede reducir la compra por intrusividad percibida — el mismo
   riesgo que ya señalaba tesis 7 sobre el techo de confianza de la telemática/UBI, ahora con un
   mecanismo específico (saliencia de privacidad) que lo explica.
+- **Adoptar una interfaz que la IA genera dinámicamente (agente conversacional, configurador,
+  simulador) evaluándola solo por qué tan bien gusta en el primer contacto.** Tesis 24: la
+  evidencia real mide preferencia declarada alta pero falla medida específicamente en soporte
+  (ayuda, recuperación de errores) y en consistencia entre sesiones — justo las dos cosas que
+  más importan quejas de reclamo o de error de cobertura, el mismo terreno que ya cubre el
+  riesgo de "medir el agente conversacional con la métrica equivocada" más arriba.
+- **Tratar el "shadow AI" (uso de IA por cuenta personal, sin lineamiento corporativo) como un
+  tema de productividad interna y no de gobierno de dato.** El dato más reciente de la región
+  (Brasil, F-389) encuentra 94% de adopción de IA en equipos de diseño pero solo 14% con
+  capacitación de la empresa y 60% operando con cuentas personales sin lineamiento corporativo.
+  Para cualquier equipo de una aseguradora —diseño, atención al cliente, actuarial— que maneje
+  dato de cliente, esto es superficie de fuga de información regulada por la LPDP (mismo marco
+  normativo que ya preocupa en tesis 13), no solo un tema de adopción de herramientas.
+- **Asumir que "reemplazar con IA" en funciones internas (diseño, contenido, soporte) es todavía
+  una apuesta especulativa de Silicon Valley, no una decisión ya tomada en la región.**
+  MercadoLibre —la empresa latinoamericana más valiosa en bolsa— desvinculó 119 personas de UX en
+  LatAm en 2026 integrando explícitamente los roles de diseño y contenido apoyándose en IA
+  (F-391). Es una decisión corporativa documentada, no una anécdota de LinkedIn: si Rimac evalúa
+  algún día consolidar roles internos (contenido, soporte, diseño) apoyándose en IA, el
+  precedente geográfico más cercano ya existe y es de reducción de headcount, no de mejora de
+  producto — instinto de negocio, no una recomendación, solo el dato de que la conversación ya
+  dejó de ser hipotética en la región.
 
 ## 📔 Bitácora
 
@@ -1221,3 +1291,32 @@ como empuje no consentido hereda el riesgo regulatorio ya documentado en tesis 8
   con las 5 fuentes de este ciclo y enriquecí los nodes `modelo-salud-ia-farmacias-peru.md` y
   `behavioral-design-estado-disciplina.md` en Many Brains con el mismo detalle, sin mover ni
   reestructurar nada. Bitácora con 18 días de historial (2026-07-12 a hoy) — sin podar todavía.
+- **2026-07-30** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  78584ad→ef3a2a3) y leí `codice.md` completo: el ledger creció de F-379 a F-398 desde la última
+  corrida (2026-07-29) — **cambio sustancial** en volumen, pero el crecimiento entero es la
+  iteración 2 de un solo node (`_nodes/tendencias-diseno.md`), que ya venía marcado como el menos
+  centrado en seguros de todos los que ha recibido esta opinión (mismo criterio de filtro que
+  apliqué el 2026-07-27). Integré con criterio de negocio solo lo transferible a Rimac/seguros, no
+  el lote completo: sumé tesis 24 (generative UI — interfaces que la IA genera dinámicamente ya
+  tienen evidencia real de que suben la preferencia declarada pero fallan específicamente en
+  soporte y consistencia entre sesiones, F-380 a F-386; caución directa para cualquier interfaz
+  dinámica que Rimac evalúe para su agente conversacional o un configurador/simulador). Amplié
+  tesis 21 con una quinta cadena de eco de cita en design systems ("135% de ROI" es una calculadora
+  de 2022, no un estudio medido, F-397) y con un caso paralelo fuera de diseño: el "impuesto de
+  verificación" en desarrollo asistido por IA (F-388, preprint sin revisión por pares) — mismo
+  principio de tesis 21 ("argumentar por mecanismo, no por multiplicador"), ahora aplicable
+  también a cualquier cifra de productividad con IA sobre las propias herramientas del proyecto
+  (`lapuerta`, `cerrajero`, el agente conversacional). Sumé dos riesgos nuevos: shadow AI sin
+  gobierno de dato corporativo (60% de adopción sin lineamiento en el dato brasileño más reciente,
+  F-389 — superficie de fuga de dato regulada por LPDP para cualquier equipo de una aseguradora,
+  no solo tema de productividad) y el precedente de MercadoLibre desvinculando 119 roles de UX en
+  LatAm citando integración con IA (F-391 — decisión corporativa ya documentada en la región, no
+  apuesta especulativa). Filtré explícitamente sin integrar: F-387 (revisión de diseño público del
+  gobierno UK, sin conexión directa a seguros), F-390/F-392 (circulación del meme "AI slop" en
+  español y cifra agregada de despidos tech con atribución autodeclarada — mismo descuento ya
+  aplicado a F-282/F-283 en la iteración 1), F-393 a F-395 (estado gremial del service design,
+  incluida su comunidad en Lima — señal social sin puente de negocio directo a Rimac hoy), F-396
+  (ya absorbida como refuerzo de tesis 21, no tesis propia), y F-398 (cotización de Figma en bolsa
+  — sin conexión de negocio con el proyecto). Ninguna tesis 1-23 requirió ajuste de confianza a la
+  baja — la evidencia nueva no las toca, es un node distinto. Bitácora con 19 días de historial
+  (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
