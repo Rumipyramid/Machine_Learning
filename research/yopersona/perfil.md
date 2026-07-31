@@ -16,6 +16,16 @@
 - **Email:** alejandrorv89@gmail.com
 - **LinkedIn:** linkedin.com/in/alejandrorv
 
+## Datos natales (para el skill `/edipo2`)
+- **Fecha de nacimiento:** 17 de mayo de 1989.
+- **Hora de nacimiento:** *pendiente* — sin ella no se pueden calcular Ascendente, Medio
+  Cielo ni casas, y el grado de la Luna queda con ~12° de incertidumbre (el signo, Libra,
+  sí es seguro).
+- **Lugar de nacimiento:** *pendiente* — necesario para el Ascendente y para confirmar el
+  huso (se asume Perú, UTC-5, sin horario de verano en mayo de 1989).
+- Registrado a pedido explícito del usuario (2026-07-30) para que las consultas de
+  `/edipo2` puedan leerse sobre su carta natal y no solo sobre el cielo del momento.
+
 ## Perfil
 Psicólogo y diseñador conductual con +10 años de experiencia en investigación aplicada y
 diseño de comportamiento. Enfoque que integra ciencias del comportamiento con otras
@@ -79,4 +89,6 @@ datos para convertir el diagnóstico en mejoras medibles de productos y servicio
   inventar logros o cifras que no estén aquí o en el CV original.
 - Actualizar cuando cambie de rol, sume logros medibles nuevos, o postule a algo que
   requiera evidencia distinta a la ya registrada.
-- Última actualización: 2026-07-12.
+- Los datos natales de la sección superior los usa `/edipo2`; no tienen relación con el uso
+  profesional del nodo (cartas, CV, asesoría de carrera).
+- Última actualización: 2026-07-30.
