@@ -1320,3 +1320,15 @@ o comete un error?" — que es justo donde la evidencia dice que falla hoy.
   — sin conexión de negocio con el proyecto). Ninguna tesis 1-23 requirió ajuste de confianza a la
   baja — la evidencia nueva no las toca, es un node distinto. Bitácora con 19 días de historial
   (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-07-31** — Corrida diaria de refinamiento. Confirmé `main` actualizado (sin cambios
+  pendientes) y leí `codice.md` completo: sigue tope en F-398, idéntico al que ya procesó la
+  corrida de ayer (2026-07-30) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
+  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h.
+  Repasé las 24 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no
+  forcé ninguna conexión nueva entre tesis solo por completar el paso — la corrida de ayer ya
+  agotó las conexiones razonables disponibles (tesis 21/generative UI, shadow AI, MercadoLibre).
+  Próximo salto de tesis/confianza sigue condicionado a que alguna de las skills de investigación
+  registre fuentes nuevas en el ledger, o a que la próxima revisión profunda (cada ~3 días, la
+  última corrió el 2026-07-29 sobre F-23/F-36/F-40/F-41/F-42) encuentre un matiz de mecanismo al
+  leer a fondo una fuente ya citada solo por su resumen. Bitácora con 20 días de historial
+  (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
