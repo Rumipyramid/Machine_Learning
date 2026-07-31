@@ -1,19 +1,23 @@
 # Tendencias en diseño: qué tiene impacto real y qué es propuesta
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-07-29 · Versión: v2.0 (iteración 2)
+> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-07-31 · Versión: v3.0 (iteración 3)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta permanente: **¿qué tendencias de diseño tienen impacto tangible demostrado y
 > cuáles son propuestas innovadoras todavía sin respaldo?**
-> Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iteración 2: F-380 a F-398).
+> Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iter. 2: F-380 a F-398 ·
+> iter. 3: F-399 a F-411).
 >
-> **Lo último (iteración 2, 2026-07-29):** cuatro hipótesis se movieron. **H17 refutada**
-> (el ciclo identitario del gremio *no* llega desfasado a LatAm: MercadoLibre despidió 119
-> personas de UX integrando diseño y contenido con IA, y Brasil adopta IA **más** que el
-> mundo anglosajón, 94% vs. 89%). **H3 y H18 pasan a `parcial`**. **H6 gana una quinta
-> cadena de eco de cita** (el "135% de ROI" de design systems es una calculadora, no un
-> estudio). Y apareció el **mecanismo que reconcilia** la divergencia ⚔️ de productividad
-> con IA: el *impuesto de verificación*. Ver §10.
+> **Lo último (iteración 3, 2026-07-31):** seis hipótesis se movieron y la corrida se comió
+> su propia predicción. **H22 refutada**: el campo **no rota** sus cifras de ROI, las
+> **apila** — el 135%, el "$1→$100", el +32%/+56% y el 47% conviven en las mismas
+> compilaciones de 2026, y el "$1→$100" se reexpresa ahora como "**ROI = 9.900%**".
+> **H21 `respaldada` con dato peruano**: EY halla que **90% de las empresas del Perú adoptó
+> IA sin políticas aprobadas** (N=250 directorios). **H1 `parcial`**: apareció la primera
+> contraevidencia al Design Value Index — las empresas *no* design-centric rindieron igual o
+> mejor. **H19 `parcial`**, **H15 `respaldada`**, **H14 se cae por su premisa**. Y el paper
+> del mes se llama **"Design Theater"**: mide que **>25% de los fundamentos de diseño que una
+> herramienta generativa declara al usuario no están implementados** en lo que produce. Ver §11.
 
 ## 🔁 Cómo se usa y se enriquece este node
 
@@ -436,11 +440,14 @@ Esta tabla es el **entregable operativo** del node. Cada iteración la actualiza
 | **La mayoría de rediseños no mueve la métrica** | 🟢 Documentado (causal, A/B a escala) | F-262 |
 | **Crisis del modelo consultora de diseño** | 🟢 Documentado (4 señales convergentes) | F-307, F-316, F-317, F-325 |
 | **Explicabilidad de IA aumenta confianza** | 🟡 Parcial — sobrevendido (efecto moderado) | F-242 |
-| **Design systems aceleran el desarrollo** | 🟡 Plausible, mal probado | F-259, F-269, F-270 |
+| **Design systems aceleran el desarrollo** | 🟡 Plausible, **mal medido por defecto de diseño verificado** ⬇️ *iter. 3* | F-259, F-269, F-270, **F-403** |
 | **Explicaciones mejoran la decisión humano-IA** | 🔴 Contradicho en su forma general | F-243, F-244, F-246 |
-| **ROI del diseño 100:1 / MDI +32%/+56% / 671% / 135%** | 🔴 Hype (eco de cita — 5 cadenas) | F-266, F-268, F-327, **F-397** |
+| **ROI del diseño 100:1 / MDI +32%/+56% / 671% / 135% / DVI 211-231%** | 🔴 Hype (eco de cita — **7 cadenas, todas vivas a la vez**) ⬆️ *iter. 3* | F-266, F-268, F-327, F-397, **F-403, F-404, F-410** |
+| **Brecha adopción-gobernanza de IA en organizaciones (Perú/LatAm)** | 🟢 Documentado (descriptivo, muestra declarada) ⬆️ *iter. 3* | **F-400, F-401, F-411** |
+| **"Arreglar la gobernanza de IA multiplica el ROI 3,5×"** | 🔴 Hype (multiplicador emitido por quien vende la certificación) ⬆️ *iter. 3* | **F-401** |
 | **Generative UI: *gusta más* que el texto plano** | 🟢 Documentado (preferencia declarada, sesión única) ⬆️ *iter. 2* | **F-380, F-381** |
 | **Generative UI: *funciona mejor*** | 🔴 Contradicho en los atributos de soporte ⬆️ *iter. 2* | **F-382, F-384** + F-247 |
+| **Generative UI: *hace lo que dice que hace*** | 🔴 Contradicho con medida objetiva (>25% de fundamentos no implementados; ≤6% de principios funcionales en 4 de 5 herramientas) ⬆️ *iter. 3* | **F-399** |
 | **Generative UI / interfaces generadas por LLM (como paradigma)** | 🔴 Propuesta sin respaldo independiente | F-247, F-256, F-258, F-260, **F-383, F-385, F-386** |
 | **Service design tiene base de evidencia institucional** | 🟡 Existe pero es pre-IA y sin outcomes de largo plazo ⬆️ *iter. 2* | **F-387, F-395** |
 | **El ciclo identitario del gremio llega desfasado a LatAm** | 🔴 Refutado (llega simultáneo, con conducta corporativa local) ⬆️ *iter. 2* | **F-389, F-391, F-392** |
@@ -491,21 +498,21 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 
 | # | Hipótesis | Estado | Cómo se falsa |
 |---|---|---|---|
-| **H1** | Un índice de empresas "design-centric" definido **ex ante** tendrá exceso de retorno sobre el S&P **indistinguible de cero** (el +211% del DVI es look-ahead bias + supervivencia) | `abierta` — predicción del node: el exceso se reduce >70% | Replicación prospectiva del DVI con criterios congelados en t₀ |
+| **H1** | Un índice de empresas "design-centric" definido **ex ante** tendrá exceso de retorno sobre el S&P **indistinguible de cero** (el +211% del DVI es look-ahead bias + supervivencia) | ⬆️ **`parcial`** *(iter. 3)* — **apareció la primera contraevidencia en tres iteraciones**: un análisis crítico reporta que las empresas que **no** cumplían los criterios del DMI rindieron **igual o mejor** que las del índice de diseño (F-404), que es literalmente la predicción de H1. Se suman tres agravantes: el DVI **no se actualiza desde 2015-2016** mientras su cifra se cita como vigente en 2026; la misma cifra circula en **cuatro versiones** (211% / 219% / 228% / 231%) sin que nadie note la discrepancia; y el índice fue **financiado por Microsoft**, una de las empresas del universo que evalúa. ⚠️ Sigue sin ser una replicación prospectiva formal — de ahí `parcial`, no `respaldada` | Replicación prospectiva del DVI con criterios congelados en t₀ |
 | **H2** | El reporte de Forrester (2016) **no contiene** la afirmación "$1 → $100" en la forma en que circula | `abierta` | Compra y lectura del reporte (~US$1.495) |
-| **H3** | En tarea repetida a lo largo de ≥5 sesiones, la **generative UI** dará **peor** tiempo de tarea y **peor** aprendibilidad que una UI estática equivalente, aunque gane en preferencia declarada en la sesión 1 | ⬆️ **`parcial`** *(iter. 2)* — **la mitad de la predicción está confirmada y la otra mitad sigue sin medirse.** Confirmado: gana en preferencia de sesión única (hasta 72%, F-381; F-380). Confirmado indirectamente: falla justo en prevención de errores, eficiencia de uso, recuperación y ayuda (F-382), y **produce interfaces distintas ante el mismo prompt incluso en ejecuciones repetidas de la misma herramienta** (F-384) — la inconsistencia que destruiría la aprendibilidad ya está medida. Sigue abierto: **nadie ha corrido el estudio longitudinal** | Estudio longitudinal independiente entre-sujetos. ⚠️ Tras 2 iteraciones **sigue sin existir** — y esa ausencia, buscándola, ya es un hallazgo (C7) |
+| **H3** | En tarea repetida a lo largo de ≥5 sesiones, la **generative UI** dará **peor** tiempo de tarea y **peor** aprendibilidad que una UI estática equivalente, aunque gane en preferencia declarada en la sesión 1 | ⬆️ **`parcial`** *(iter. 2)* — **la mitad de la predicción está confirmada y la otra mitad sigue sin medirse.** Confirmado: gana en preferencia de sesión única (hasta 72%, F-381; F-380). Confirmado indirectamente: falla justo en prevención de errores, eficiencia de uso, recuperación y ayuda (F-382), y **produce interfaces distintas ante el mismo prompt incluso en ejecuciones repetidas de la misma herramienta** (F-384) — la inconsistencia que destruiría la aprendibilidad ya está medida. Sigue abierto: **nadie ha corrido el estudio longitudinal**. ⬆️ *Iter. 3*: llegó la **primera medida objetiva** del campo y es demoledora sin ser longitudinal — el benchmark *Design Theater* (F-399) mide que **>25% de los fundamentos de diseño que la herramienta declara al usuario no están implementados** (34% en requisitos funcionales), que las herramientas reconocen solo ~**la mitad** de los principios de UX del prompt (media 0,54) y que **4 de 5 implementan ≤6% de los principios funcionales** | Estudio longitudinal independiente entre-sujetos. ⚠️ Tras **3** iteraciones **sigue sin existir** — y esa ausencia, buscándola tres veces, ya no es un hallazgo circunstancial sino una **propiedad del campo** (C7) |
 | **H4** | Añadir explicación ("¿por qué veo esto?") **no** mejora precisión ni calibración en decisiones de **baja** dificultad; **sí** en alta | `parcial` — respaldada por F-246 en laboratorio, sin replicar en dominio aplicado | RCT con dificultad manipulada en recomendación de producto financiero/seguros |
 | **H5** | En cualquier estudio que mida **a la vez** desempeño objetivo y percibido, la mejora subjetiva **excederá** a la objetiva en ≥20 pp | `abierta` — **la hipótesis de mayor valor destructivo**: si se sostiene, invalida casi todo reporte de industria sobre design systems, IA y madurez de diseño | Meta-análisis de estudios que reporten ambas medidas |
-| **H6** | El efecto de un design system sobre el tiempo de desarrollo será **<20%** (no 47%, no 69%) con contrabalanceo de orden, N≥40 y devs externos a la organización que mantiene el sistema | `abierta` — **se buscó replicación independiente en la iter. 2 y no existe**; lo que sí apareció es una quinta cadena de eco (135% modelado, F-397) y evidencia de que **solo ~40% de los sistemas sigue activo pasados 18 meses** (F-396). El campo produce calculadoras de ROI, no experimentos | Replicación independiente de Sparkbox con diseño corregido |
+| **H6** | El efecto de un design system sobre el tiempo de desarrollo será **<20%** (no 47%, no 69%) con contrabalanceo de orden, N≥40 y devs externos a la organización que mantiene el sistema | `abierta` tras 3 iteraciones — pero ⬆️ *iter. 3* **el defecto dejó de ser sospecha y pasó a estar documentado**: el estudio original de Sparkbox es **N=8 desarrolladores de la propia agencia**, cada uno construyendo el formulario **primero desde cero (mediana 4,2 h) y después con Carbon (2 h)** — **orden fijo, sin contrabalanceo**, de modo que el efecto de haber resuelto ya el problema está **totalmente confundido** con el efecto del design system (F-403). A favor del estudio: incluyó el tiempo de familiarización y ninguno conocía Carbon. En 2026 los agregadores lo ascienden a "*verified payoff*" y lo generalizan a "31-47% para cualquier librería" | Replicación independiente de Sparkbox con diseño corregido. **La predicción de H6 se vuelve más falsable, no menos**: con el orden confundido, el 47% es un techo, no una estimación |
 | **H7** | En un A/B real, las variantes que aumentan **fluidez** (contraste, jerarquía, menos elementos) superarán a las que aumentan atractivo estético sin aumentar fluidez | `abierta` — **aplicable directamente al contexto Rimac/seguros** | Experimento de campo |
 | **H8** | En Perú, donde la causa #1 de desconfianza en seguros es la falta de información, la exposición a patterns de *hidden information* predecirá desconfianza en aseguradoras **con más fuerza que las variables demográficas** | `abierta` — **el puente más directo con el resto del proyecto** | Experimento sobre muestra peruana replicando Luguri & Strahilevitz |
 | **H9** | **Brecha actitud-conducta en diseñadores**: el discurso público es anti-IA/anti-slop pero la adopción declarada es altísima (89% trabaja más rápido) | `abierta` — **estructuralmente el mismo fenómeno que `disposicion_compartir_datos_pricing` en `lapuerta`** | Medir si la indignación estética predice o no comportamiento de uso |
 | **H10** | La ansiedad gremial es un fenómeno de **seniority**, no de gremio: el daño está concentrado en juniors pero se enuncia en nombre de "los diseñadores" | `abierta` — no se pudo segmentar por seniority | Datos de empleo o encuesta segmentada por años de experiencia |
 | **H11** | **El doom tiene modelo de negocio**: la proporción de amplificadores del discurso "la IA mata al diseño" con incentivo comercial directo (cursos, bootcamps, portafolios) es alta; si lo es, el volumen social debe descontarse fuertemente | `abierta` — caso testigo identificado (F-286) | Auditar los N amplificadores principales y clasificar su modelo de ingresos |
 | **H12** | El backlash estético es **señalización de estatus profesional**, no preferencia de usuario | `parcial` — respaldada por F-284 (gatekeeping) y F-297 (usabilidad) | Testear si la "autenticidad imperfecta" mejora alguna métrica de usuario |
-| **H13** | **Desacople valuación/desempeño**: si Figma reporta ≥40% de crecimiento en Q2 2026 y la acción **no** recupera sobre $33, el mercado descuenta disrupción por IA, no ejecución | `abierta` — **falsable el 5-ago-2026** (fecha de reporte) y en los 90 días siguientes | Reporte Q2 2026 de Figma + evolución del precio |
-| **H14** | **El ARR de vibe coding no retiene**: si Lovable cierra a $12-13,2B, su ARR a 12 meses crecerá <50% (vs. 150%+ histórico), revelando la cohorte de churn | `abierta` | Comparar ARR jul-2026 vs. jul-2027; se resuelve de inmediato si publican NRR |
-| **H15** | **La consultora de diseño pura no vuelve**: ninguna de las cuatro publicará crecimiento de dos dígitos en 2026-2027; la recuperación, si ocurre, será como implementadoras de IA | `abierta` | Cualquier reporte de revenue o adquisición a múltiplo alto |
+| **H13** | **Desacople valuación/desempeño**: si Figma reporta ≥40% de crecimiento en Q2 2026 y la acción **no** recupera sobre $33, el mercado descuenta disrupción por IA, no ejecución | `abierta` — **se resuelve en 5 días**. Estado al 28-jul-2026 (F-407): FIG ~**US$23,65**, recuperando desde el mínimo histórico de US$16,80 pero aún **~28% bajo el precio de IPO**; consenso Buy con objetivo medio US$36,11 (13 analistas); Morgan Stanley bajó a Hold el 28-jul. **La condición de falsación está intacta y la fecha no se movió** | Reporte Q2 2026 de Figma (**5-ago-2026**, tras el cierre) + evolución del precio a 90 días |
+| **H14** | **El ARR de vibe coding no retiene**: si Lovable cierra a $12-13,2B, su ARR a 12 meses crecerá <50% (vs. 150%+ histórico), revelando la cohorte de churn | ⬇️ **`refutada en su predicción, huérfana en su premisa`** *(iter. 3)* — **el antecedente nunca ocurrió**: la ronda cerró en **US$6,6B**, no en los US$12-13,2B del rumor (F-408). Y el consecuente falla en la dirección opuesta: el ARR autorreportado fue **US$100M (jul-2025) → US$500M (jun-2026)**, +400%, no <50%. ⚠️ **Lección metodológica**: la hipótesis se construyó sobre una **valuación rumoreada**, no sobre un hecho — se contaminó de la misma fuente que este node desconfía en otros contextos | Sigue sin poder probarse la tesis de churn: **no publican NRR ni retención**, y el "ARR" es *run-rate anualizado* autorreportado, no ingreso realizado (C7) |
+| **H15** | **La consultora de diseño pura no vuelve**: ninguna de las cuatro publicará crecimiento de dos dígitos en 2026-2027; la recuperación, si ocurre, será como implementadoras de IA | ⬆️ **`respaldada`** *(iter. 3)* — **tercera búsqueda explícita de contraejemplo, tercer resultado vacío**. frog aparece estimada en ~US$25M de ingresos 2026 (agregador, baja confianza) con cierre del estudio de Austin; IDEO perdió ~la mitad de su plantilla desde 2020. **Ninguna publicó crecimiento de dos dígitos** (F-409). Diagnóstico convergente en la cobertura: las organizaciones internalizaron design thinking/UX/HCD | Cualquier reporte de revenue o adquisición a múltiplo alto. ⚠️ `respaldada` **por acumulación de hallazgos negativos** (C7), no por dato positivo — es el estado de evidencia más débil que permite salir de `abierta` |
 | **H16** | **El estándar de reporting se degrada donde hay presión de IA**: si Figma deja de reportar NDR o paid customers en algún trimestre 2026-2027, se refuerza | `parcial` — ya ocurrió con Adobe (fusión de segmentos) y Webflow (dejó de publicar ARR) | Trimestre a trimestre |
 | **H17** | **Desfase geográfico**: el ciclo identitario del gremio llega a Perú/LatAm desfasado, atenuado, o el mercado local ni siquiera participa de esa conversación | ⬇️ **`refutada`** *(iter. 2)* — **no hay desfase.** Brasil adopta IA **por encima** del mundo anglosajón (94% vs. 89%, N=823 — F-389); MercadoLibre ejecutó la compresión del rol en LatAm con **119 desvinculaciones de UX** integrando diseño y contenido (F-391); el vocabulario anti-slop circula en español en medios masivos (F-390). El ciclo es **simultáneo**, no diferido | Refutada. Ver H20, que es lo que quedó vivo del barrido |
 | **H18** | **El silencio del service design** es señal de madurez (absorbido en operaciones), no de irrelevancia | ⬆️ **`parcial`** *(iter. 2)* — **la mitad favorable**: existe base de evidencia institucional (revisión oficial del gobierno británico, F-387), infraestructura viva (SDN, conferencia global, Touchpoint — F-395) y **comunidad activa en Perú desde 2017** (F-394). **La mitad adversa**: una figura interna de la disciplina describe una "**crisis de la práctica**" por no haber sabido demostrar valor (F-393), y **no hay métricas públicas de membresía** para medirlo. *Silencio social ≠ irrelevancia — pero tampoco es prueba de madurez* | Métricas de membresía SDN, o presupuesto/plantilla de service design en organizaciones grandes |
@@ -514,10 +521,18 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 
 | # | Hipótesis | Estado | Cómo se falsa |
 |---|---|---|---|
-| **H19** | **El impuesto de verificación es la variable moderadora**: el efecto de la IA sobre la velocidad de entrega será **negativo en código base maduro y positivo en construcción nueva**, y el punto de cruce dependerá de la seniority, no de la calidad del modelo | `abierta` — mecanismo propuesto por un preprint (F-388); si se sostiene, **el debate "¿la IA acelera o no?" está mal planteado** y la pregunta correcta es *¿en qué punto de la curva estoy?* | Un experimento que manipule **madurez del código base** como factor y mida seniority como moderador. Se refuta si el efecto es del mismo signo en ambas condiciones |
+| **H19** | **El impuesto de verificación es la variable moderadora**: el efecto de la IA sobre la velocidad de entrega será **negativo en código base maduro y positivo en construcción nueva**, y el punto de cruce dependerá de la seniority, no de la calidad del modelo | ⬆️ **`parcial`** *(iter. 3)* — el mecanismo **se corrobora en dirección** desde varias síntesis independientes del preprint original: juniors ganan **21-40%** de velocidad mientras los seniors pagan sobrecarga de verificación depurando salida de IA; >75% de los devs usa asistentes y las organizaciones **no ven mejora medible en velocidad de entrega**; y **77% de los freelancers que usan IA generativa reporta que les *añadió* carga**, por revisión y validación (F-406). ⚠️ Todo son síntesis de proveedores o agregadores: es **convergencia de dirección, no confirmación independiente** | Un experimento que manipule **madurez del código base** como factor y mida seniority como moderador. Se refuta si el efecto es del mismo signo en ambas condiciones. **Sigue sin existir** |
 | **H20** | **La conducta es local, el discurso es importado**: LatAm/España **generan evidencia y decisiones propias** (estudio brasileño N=823, despidos de UX en MercadoLibre) pero **consumen el marco interpretativo traducido del inglés** — se re-emite el 89% de Figma sin el descuento por interés del emisor que la propia fuente exige | `abierta` — **lo que quedó vivo tras refutar H17, y probablemente más útil que ella**. Predicción: >70% de las cifras citadas en piezas hispanohablantes de tendencias 2026 serán de emisores anglosajones con interés comercial | Auditar N piezas en español/portugués y clasificar el origen y el interés del emisor de cada cifra que citan |
-| **H21** | **Brecha de gobernanza, no de adopción**: en mercados emergentes el problema real no es que los diseñadores no usen IA sino que la usan **sin marco corporativo** — 60% en cuentas personales, 14% con capacitación de la empresa (F-389). Si es así, la intervención de mayor retorno es **gobernanza, no capacitación en herramientas** | `abierta` — **directamente accionable en el contexto Rimac**; conecta con el riesgo de dato sensible del negocio asegurador | Replicar la medición de *shadow AI* en una organización peruana; se refuta si la adopción sin lineamientos es marginal |
-| **H22** | **El ROI del diseño se cita por rotación, no por evidencia**: cuando una cifra estrella se desmonta públicamente, la industria **la sustituye por otra igual de trazable-a-una-fuente** en vez de dejar de citar cifras (671% → 135%) | `abierta` — patrón observado en 2 iteraciones consecutivas; predicción: **la iteración 3 encontrará una cifra nueva y distinta** ocupando el mismo lugar retórico | Registrar en cada iteración qué cifra ocupa el lugar de "el ROI del diseño". Se refuta si la cifra dominante se mantiene estable o si desaparece sin reemplazo |
+| **H21** | **Brecha de gobernanza, no de adopción**: en mercados emergentes el problema real no es que los diseñadores no usen IA sino que la usan **sin marco corporativo** — 60% en cuentas personales, 14% con capacitación de la empresa (F-389). Si es así, la intervención de mayor retorno es **gobernanza, no capacitación en herramientas** | ⬆️ **`respaldada`** *(iter. 3)* — **el dato peruano apareció y es más extremo que el brasileño**. EY, N=250 miembros de directorio y alta dirección, campo ene-mar 2026: solo **10% tiene políticas de IA aprobadas**, **24%** asignó supervisión a un comité, **18%** tiene protocolos de uso seguro y ético, **66% de los directorios no tiene especialistas** y **68% de los ejecutivos no recibió capacitación** — mientras **78% cree que la IA mejora las decisiones y 97% quiere aprender más** (F-400). Encuadre regional: 92% de las empresas LatAm usa IA y 8% tiene política formal (F-401, ⚠️ emisor interesado); global: 56% de empleados usa herramientas no autorizadas (F-411). **Converge con F-389 desde el extremo opuesto del organigrama**: Brasil lo midió en el escritorio del diseñador, Perú en la mesa del directorio, y da lo mismo | Replicar la medición de *shadow AI* en una organización peruana; se refuta si la adopción sin lineamientos es marginal. ⚠️ **La parte de "mayor retorno" NO está probada** — ver H24 |
+| **H22** | **El ROI del diseño se cita por rotación, no por evidencia**: cuando una cifra estrella se desmonta públicamente, la industria **la sustituye por otra igual de trazable-a-una-fuente** en vez de dejar de citar cifras (671% → 135%) | ⬇️ **`refutada`** *(iter. 3)* — **la predicción falló y su fallo enseña más que su acierto**. No hubo sustitución: en las compilaciones de 2026 **conviven todas a la vez** — 135%, "$1→$100", +32%/+56%, 47% de Sparkbox y 211-231% del DVI (F-410). El campo **no rota, apila**. Lo que quedó vivo del barrido pasa a H23 | Refutada. Ver H23 |
+
+### Hipótesis abiertas en la iteración 3
+
+| # | Hipótesis | Estado | Cómo se falsa |
+|---|---|---|---|
+| **H23** | **Las cifras del valor del diseño no se sustituyen: se apilan, se reexpresan y se relanzan.** Tres mecanismos, no uno: (a) **acumulación** — una cifra desmontada no sale de circulación, solo deja de ser la única; (b) **inflación de unidad** — la misma fuente no auditable se reexpresa en la unidad más espectacular disponible ("$1→$100" → "**ROI = 9.900%**"); (c) **deriva numérica** — un mismo estudio se cita con valores distintos sin que nadie note la discrepancia (DVI como 211% / 219% / 228% / 231%) | `abierta` — **reemplaza a H22, que se refutó a sí misma**. Los tres mecanismos están observados en la iteración 3 (F-410, F-404); lo que falta es probar que **persisten**. Predicción para la iteración 4: ninguna de las cifras de §5 habrá desaparecido, y al menos una habrá aparecido en una unidad todavía más grande | Registrar cada iteración el **conjunto completo** de cifras en circulación, no la dominante. Se refuta si alguna cifra desmontada efectivamente **desaparece** de las compilaciones, o si el conjunto se reduce |
+| **H24** | **Toda brecha bien documentada llega con el multiplicador de quien vende el remedio — incluidas las brechas que a este node le gustan.** El hallazgo de gobernanza de IA (H21) viene empaquetado con un "las empresas con gobernanza obtienen **3,5× más ROI**" emitido por un organismo que **vende la certificación ISO 42001** (F-401), y el hallazgo peruano lo publica una firma que **vende asesoría de gobernanza a directorios** (F-400) | `abierta` — **es la hipótesis reflexiva del node**: si C1/C3/C4 son reglas y no consignas, deben aplicarse con el mismo filo al hallazgo propio más útil. La brecha descriptiva sobrevive (muestra y campo declarados, convergencia con Brasil); **el multiplicador del remedio no** | Buscar una medición de la brecha de gobernanza emitida por alguien **sin negocio en cerrarla** (regulador, academia, censo estadístico). Se refuta si aparece y coincide; se refuerza si la brecha se encoge cuando la mide un emisor desinteresado |
+| **H25** | **La generative UI converge estéticamente mientras diverge estructuralmente** — la peor combinación posible: interfaces que se parecen entre sí (nada distintivo) pero que **no se comportan igual dos veces** (nada aprendible) | `abierta` — nace de una tensión real entre dos fuentes: F-384 mide que un mismo prompt produce interfaces sustancialmente distintas entre herramientas *y entre corridas de la misma herramienta*, mientras F-399 mide **convergencia en apariencia visual y organización de layout** entre herramientas (con variación solo en color). **No se contradicen si lo que converge es la piel y lo que diverge es el esqueleto** | Medir por separado similitud **visual** y similitud **estructural/funcional** sobre el mismo corpus de salidas. Se refuta si ambas convergen o ambas divergen |
 
 ---
 
@@ -599,12 +614,27 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   ganan; código base maduro y perfiles senior pagan un **impuesto de verificación** que puede
   superar el ahorro. Un piloto que mida el promedio de ambos mundos medirá cero y concluirá mal.
   Diseñar el piloto **segmentando por madurez del sistema y por seniority**, no agregando.
-- **C17 — Cuando desmontes una cifra estrella, prepárate para la siguiente.** Este campo no responde
-  a la refutación dejando de citar cifras: **rota la cifra**. El 671% cayó y lo reemplazó el 135% —
-  igual de modelado, igual de no medido. La defensa no es tumbar la cifra del día, es **exigir el
-  diseño del estudio**: ¿alguien ejecutó el cambio y midió el resultado, o alguien estimó el ahorro?
-  ⚠️ *Provisional: ascendida con una sola iteración de respaldo; se confirma o cae en la iteración 3
-  (H22).*
+- **C17 — Cuando desmontes una cifra estrella, no esperes que desaparezca: espera que se acumule.**
+  ⚠️ *Corregida en la iteración 3.* La versión anterior de esta regla decía que el campo **rota** sus
+  cifras (el 671% cae, lo reemplaza el 135%). **Es falso, y se puso a prueba a propósito**: en las
+  compilaciones de 2026 conviven simultáneamente el 135%, el "$1→$100", el +32%/+56% de McKinsey, el
+  47% de Sparkbox y el 211-231% del DVI (F-410). Nada sale de circulación. Peor: la misma fuente se
+  **reexpresa en la unidad más grande disponible** ("$1→$100" se publica ahora como "ROI = 9.900%")
+  y **deriva numéricamente** al recitarse (el DVI aparece como 211, 219, 228 y 231%). Consecuencia
+  operativa, que no cambia: la defensa nunca es tumbar la cifra del día — es **exigir el diseño del
+  estudio**. ¿Alguien ejecutó el cambio y midió el resultado, o alguien estimó el ahorro? Y ahora
+  también: **¿en qué unidad me lo están contando y por qué en esa?** Una cifra expresada en
+  porcentaje de cuatro dígitos es una decisión retórica, no un resultado.
+
+- **C19 — Cuando una cifra no se puede defender, se agranda la unidad o se construye un vehículo
+  nuevo.** Dos movimientos observados en la misma corrida. El primero es de unidad: 100:1 suena a
+  ratio discutible, "9.900%" suena a hallazgo. El segundo es institucional: ante el desgaste del
+  Design Value Index, el campo no produjo un estudio mejor — produjo **otro índice nacional** (Spain
+  Design Index 2026, firmado por una asociación de marcas, una universidad de diseño y dos
+  consultoras de diseño), cuyo propio hallazgo más citado es que **52,6% de las empresas carece de
+  indicadores para medir el impacto del diseño** (F-402). Un índice de impacto medible que reporta
+  que la mayoría no lo mide. **Regla: ante un "índice", "observatorio" o "barómetro" de diseño nuevo,
+  preguntar primero qué se midió y con qué muestra — antes de mirar el titular.**
 
 **Sobre geografía y contexto local** *(ascendida en la iteración 2)*
 
@@ -615,7 +645,28 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   portugués es traducción, y arrastra sin filtro las cifras de emisores interesados. Regla operativa
   para cualquier entregable regional: **buscar el dato de conducta local** (decisiones corporativas,
   estudios con muestra propia) y **no citar la cifra anglosajona sin su descuento por emisor** (C4).
-  ⚠️ *Provisional: ascendida con una sola iteración de respaldo.*
+  ⬆️ *Iteración 3 — confirmada y ampliada.* Buscando el dato peruano que faltaba, apareció: **90% de
+  las empresas del Perú adoptó IA sin políticas aprobadas**, con muestra y trabajo de campo
+  declarados (F-400). El dato local **existe**; lo que falta no es dato, es el hábito de buscarlo
+  antes de importar el marco. La regla asciende de provisional a establecida.
+
+**Sobre el propio criterio** *(ascendida en la iteración 3)*
+
+- **C20 — Aplicar el filo a la evidencia propia, sobre todo cuando conviene.** Las reglas C1, C3 y C4
+  se ganaron desmontando cifras ajenas; su prueba real es si sobreviven aplicadas al hallazgo
+  **propio** más útil. Caso testigo de esta iteración: la brecha de gobernanza de IA (H21) es el
+  hallazgo más accionable del node para el contexto Rimac — y llega firmada por **una consultora que
+  vende asesoría de gobernanza a directorios** (F-400) y acompañada de un "**3,5× más ROI**" emitido
+  por **un organismo que vende la certificación** correspondiente (F-401). Separación operativa que
+  hay que hacer siempre, y no solo con la evidencia incómoda: **la parte descriptiva de una brecha
+  (cuánta gente no tiene política) puede usarse; el multiplicador del remedio (cuánto ganarías si la
+  tuvieras) casi nunca.** Lo primero es un conteo; lo segundo es el argumento de venta.
+
+- **C21 — Una hipótesis construida sobre un rumor hereda la fragilidad del rumor.** H14 se formuló
+  sobre una valuación *rumoreada* de Lovable (US$12-13,2B) que nunca ocurrió — cerró en US$6,6B — y
+  se quedó sin antecedente que probar (F-408). Cuando se escriba una hipótesis condicional, **el
+  antecedente debe ser un hecho verificable o una fecha, no una expectativa de mercado**. Compárese
+  con H13, anclada a un evento con fecha (reporte del 5-ago-2026): esa sí se puede resolver.
 
 **Sobre el poder del diseño**
 
@@ -634,6 +685,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 |---|---|---|---|---|
 | 1 | 2026-07-26 | Barrido fundacional de 360°: impacto tangible vs. propuesta innovadora, en producto/UX, IA, design systems, servicio y visual | **Creación del node.** 92 fuentes registradas (F-237 a F-328). Escala de madurez (§5) y 14 reglas de criterio (§7) establecidas. Tablero abierto con 18 hipótesis | (a) **H13 es falsable el 5-ago-2026** — Figma reporta Q2; (b) barrido en **español/portugués** (H17), todo lo hallado es anglosajón; (c) **service design** merece pasada propia (H18); (d) leer los preprints de generative UI de primera mano (el proxy bloqueó arXiv); (e) buscar si apareció **replicación independiente** del efecto design systems (H6) |
 | 2 | 2026-07-29 | **Confrontación**, no novedad: los 5 pendientes heredados (H17 español/portugués · H18 service design · H6 replicación · H3 generative UI · H13 Figma) | **4 hipótesis movidas.** ⬇️ **H17 `refutada`** (no hay desfase geográfico). ⬆️ **H3 `parcial`** (preferencia confirmada; desempeño de soporte y consistencia refutados; longitudinal sigue sin existir). ⬆️ **H18 `parcial`** (base institucional sí, madurez no probada, crisis declarada desde adentro). **H6 sigue abierta** pero suma la **5.ª cadena de eco** (135% modelado, F-397). **Divergencia ⚔️ de productividad reconciliada por mecanismo** (impuesto de verificación, F-388). 19 fuentes nuevas (F-380 a F-398), 4 hipótesis nuevas (H19-H22), 4 reglas nuevas (C15-C18) | (a) **H13 se resuelve el 5-ago-2026** — leer el reporte Q2 de Figma y el precio a 90 días; (b) **H22 se pone a prueba sola**: registrar qué cifra ocupa el lugar del "ROI del diseño" en la iteración 3; (c) **H21 (shadow AI / gobernanza) es la más accionable para Rimac** — no se buscó dato peruano equivalente al brasileño; (d) sigue sin leerse **ningún texto completo** (proxy 403 en arXiv, ACM, MDPI, gov.uk, IBPAD): las 19 fuentes nuevas están soportadas en abstracts y snippets; (e) **H20** (conducta local vs. marco importado) requiere una auditoría sistemática de piezas hispanohablantes |
+| 3 | 2026-07-31 | Los 3 pendientes accionables de la iter. 2 (**H22** cifra del ROI · **H21** dato peruano de gobernanza · **H13** estado pre-reporte), más barrido de estado de las hipótesis de negocio abiertas (H14, H15) | **6 hipótesis movidas y la corrida se refutó a sí misma.** ⬇️ **H22 `refutada`**: el campo **no rota** cifras, las **apila** — todas conviven en las compilaciones 2026, el "$1→$100" se reexpresa como "9.900%" y el DVI deriva entre 211/219/228/231%. ⬆️ **H21 `respaldada`** con el dato peruano que faltaba (EY, N=250: **90% adoptó IA sin políticas aprobadas**). ⬆️ **H1 `parcial`** — primera contraevidencia al DVI en 3 iteraciones: las empresas no design-centric rindieron igual o mejor. ⬆️ **H19 `parcial`**, ⬆️ **H15 `respaldada`** (3.er hallazgo negativo), ⬇️ **H14 huérfana de premisa** (la valuación rumoreada nunca ocurrió). **H3 gana su primera medida objetiva**: el benchmark *Design Theater* (>25% de fundamentos declarados no implementados). **H6: el defecto del "47%" pasa de sospecha a documentado** (N=8, orden fijo sin contrabalanceo). 13 fuentes nuevas (F-399 a F-411), 3 hipótesis nuevas (H23-H25), **C17 corregida**, 3 reglas nuevas (C19-C21), C18 asciende a establecida | (a) **H13 vence el 5-ago-2026** — es el pendiente más urgente y ya está vencido para la iter. 4: leer el reporte Q2 y el precio; (b) **H24 es la más exigente**: buscar una medición de la brecha de gobernanza emitida por alguien **sin negocio en cerrarla** (regulador, academia, censo); (c) **H25** requiere medir por separado similitud visual y estructural de salidas de generative UI; (d) **H23** pide registrar el **conjunto completo** de cifras en circulación, no la dominante; (e) el proxy **sigue devolviendo 403 en todo** (arXiv, ACM, gov.uk, medios peruanos, Sparkbox, udit.es): **tercera iteración consecutiva sin leer un solo texto completo** — dejar de tratarlo como incidencia y **diseñar alrededor de ello**; (f) **H10 y H11 llevan 3 iteraciones sin tocarse** — o se atacan en la iter. 4 o se declaran fuera de alcance |
 
 ---
 
@@ -857,6 +909,219 @@ el mercado descuenta disrupción por IA, no ejecución.* La iteración 3 debe le
 
 ---
 
+## 11. 🔁 Iteración 3 (2026-07-31) — la corrida que refutó su propia predicción
+
+Corrida de `/trinidad` sobre los tres pendientes accionables que dejó la iteración 2. La iteración 2
+había hecho una predicción explícita y falsable sobre lo que encontraría esta corrida (H22: *"la
+iteración 3 encontrará una cifra nueva y distinta ocupando el lugar del ROI del diseño"*). **La
+predicción falló**, y su fallo es el hallazgo más valioso de la corrida: enseñó que el mecanismo real
+es peor que el que se había supuesto.
+
+**Resumen de la corrida en una frase por pista:**
+
+- 🔬 **Empírica**: llegó la **primera medida objetiva** de generative UI y no mide usabilidad —
+  mide **honestidad**: cuánto de lo que la herramienta dice que hizo, efectivamente hizo.
+- 📱 **Social**: el dato peruano de gobernanza de IA existía, y es **más extremo** que el brasileño
+  que lo motivó — pero lo publica quien vende el remedio.
+- 📈 **Negocio**: las cifras del ROI del diseño **no rotan: se apilan, se inflan de unidad y se
+  relanzan en vehículos institucionales nuevos**.
+
+### 11.1 🔬 "Design Theater": la evidencia de generative UI deja de medir gusto y empieza a medir honestidad
+
+Las dos iteraciones anteriores dejaron a la generative UI en un empate incómodo: gana en
+**preferencia declarada** (hasta 72%, F-381) y pierde en **atributos de soporte** evaluados por
+heurística experta (F-382). Ambas medidas eran indirectas — una pregunta qué prefiere la gente, la
+otra qué opina un evaluador. La iteración 3 encontró la primera medida que no es ninguna de las dos.
+
+El benchmark **Design Theater** (F-399, preprint de ~julio 2026) evalúa **120 interfaces producidas
+por 5 herramientas generativas sobre 24 tareas**, y su pregunta es distinta a todas las anteriores:
+*¿el razonamiento de diseño que la herramienta le muestra al usuario se corresponde con lo que
+realmente implementó?* Resultados:
+
+- **Más del 25% de los fundamentos de diseño declarados al usuario no están implementados** en la
+  interfaz generada.
+- En **requisitos funcionales la falla sube al 34%**.
+- Las herramientas reconocen aproximadamente **la mitad de los principios de UX embebidos en el
+  prompt** (media = 0,54).
+- **Cuatro de cinco herramientas implementan el 6% o menos de los principios funcionales.**
+
+El nombre del paper es el hallazgo: *teatro de diseño* — justificaciones plausibles y seguras de sí
+mismas con poca relación con la implementación. **Esto es exactamente lo que la regla C15 de este
+node predijo desde afuera del campo**, y es la primera vez en tres iteraciones que una fuente
+independiente nombra el mecanismo en los mismos términos: un artefacto que *parece confiable* mientras
+falla en usabilidad, accesibilidad e interacción.
+
+⚠️ **Lo que sigue sin existir, por tercera vez consecutiva:** el estudio longitudinal. Tres
+iteraciones buscándolo y tres hallazgos negativos. A esta altura la ausencia deja de ser mala suerte
+de búsqueda: el campo **produce benchmarks de generación y no estudios de uso repetido**, y eso es un
+dato sobre el campo, no sobre la evidencia.
+
+### 11.2 📱🔬 Gobernanza de IA: el dato peruano apareció, y es peor que el brasileño
+
+La iteración 2 refutó el desfase geográfico (H17) con el estudio brasileño de N=823 diseñadores
+(F-389) y dejó anotado el hueco: **faltaba el equivalente peruano**. Apareció, y mide la misma cosa
+desde el otro extremo del organigrama.
+
+**EY Perú, *AI & Boards 2026*** (F-400) — N=250 miembros de directorio y alta dirección, trabajo de
+campo del **12 de enero al 5 de marzo de 2026**, siete sectores:
+
+| Qué se midió | Perú (directorios, F-400) | Brasil (diseñadores, F-389) |
+|---|---|---|
+| Marco corporativo formal | **10%** tiene políticas de IA aprobadas | **14%** recibió capacitación de la empresa |
+| Uso fuera del marco | 90% adoptó sin política | **60%** usa cuentas personales |
+| Supervisión | **24%** asignó supervisión a un comité; **12%** tiene planes de mitigación de riesgo | — |
+| Capacidad instalada | **66%** de directorios sin especialistas en IA; **68%** de ejecutivos sin capacitación | **51%** aprendió por cuenta propia |
+| Apetito | **78%** cree que mejora las decisiones; **97%** quiere aprender más | **94%** ya usa IA; 66% a diario |
+
+**La convergencia es el hallazgo.** Dos estudios independientes, dos países, dos poblaciones
+opuestas —el diseñador frente a su pantalla y el director en su mesa— y el mismo retrato: **adopción
+casi universal, gobierno casi inexistente**. El encuadre regional (92% de empresas LatAm usando IA,
+8% con política formal, F-401) y el global (56% de empleados con herramientas no autorizadas, F-411)
+apuntan igual. **H21 pasa a `respaldada`.**
+
+**Y aquí la corrida se aplicó su propio filo.** El hallazgo es el más accionable del node para el
+contexto Rimac — un negocio asegurador donde el dato es sensible por definición. Precisamente por eso
+hay que separar dos cosas que vienen en el mismo paquete:
+
+- ✅ **Usable — la parte descriptiva**: *cuánta* gente opera sin marco. Muestra declarada, campo
+  fechado, convergencia con un estudio independiente en otro país.
+- ❌ **No usable — el multiplicador del remedio**: el "las empresas con gobernanza de IA obtienen
+  **3,5× más ROI**" (F-401) lo emite un organismo que **vende la certificación ISO 42001**. Es la
+  misma forma retórica que este node lleva tres iteraciones desmontando en el ROI del diseño: una
+  cifra espectacular, sin estudio primario, emitida por quien cobra la solución. **Que el hallazgo
+  nos convenga no le cambia el rigor.** De ahí nace H24 y la regla C20.
+
+Nota de eco de cita: el dato de EY llegó por **cinco medios peruanos reproduciendo el mismo
+comunicado**. Son cinco altavoces de un evento, no cinco confirmaciones (C6). Y EY vende asesoría de
+gobernanza de IA a directorios — incluso dicta talleres sobre el tema. La cifra es usable con
+descuento por emisor; no es independiente.
+
+### 11.3 📈 El ROI del diseño: no rota, se apila — y ahora se mide en cuatro dígitos
+
+La iteración 2 formuló H22 con una predicción nítida: *la iteración 3 encontrará una cifra nueva y
+distinta ocupando el lugar retórico del ROI del diseño*. Se barrió a propósito para verificarlo.
+**No pasó eso.** En las compilaciones de "UX statistics 2026" y "design system ROI 2026" (F-410)
+**conviven simultáneamente**:
+
+| Cifra | Origen real | Estado en el node |
+|---|---|---|
+| 135% de ROI de design systems | Calculadora modelada, nadie ejecutó (F-397) | 🔴 desmontada en iter. 2 |
+| "$1 → $100" de Forrester | Reporte de US$1.495 que nadie del gremio leyó (F-266) | 🔴 desmontada en iter. 1 |
+| McKinsey +32% / +56% | Correlacional, emisor interesado (F-268) | 🔴 desmontada en iter. 1 |
+| 47% de Sparkbox | N=8, orden fijo sin contrabalanceo (F-403) | 🔴 desmontada **en esta iteración** |
+| DVI 211% / 219% / 228% / 231% | Índice de 16 acciones, sin actualizar desde 2015 (F-404) | 🔴 desmontada **en esta iteración** |
+
+Ninguna salió de circulación. **El campo no sustituye: acumula.** Y aparecieron dos mecanismos que
+la iteración 2 no había visto:
+
+**(a) Inflación de unidad.** El "$1 → $100" ya no se publica solo como ratio: circula como
+"**ROI = 9.900%**" — hay piezas cuyo título literal es esa cifra. La fuente no mejoró; la unidad se
+agrandó. Se le suman "+200% de conversión" y "+400% de conversión" sin fuente primaria alguna.
+
+**(b) Deriva numérica.** El Design Value Index se cita en 2026 como **211%**, **219%**, **228%** y
+**231%** (esta última atribuida al Reino Unido) sin que ninguna pieza note la discrepancia. Es la
+firma de una cifra que se transmite de artículo en artículo sin volver nunca a la fuente. El propio
+gremio ya nombró el mecanismo, sin sacar la conclusión: *"cada fuente de esta estadística cita otro
+artículo que a su vez cita otro, en una cadena interminable"* (F-410).
+
+**Dos cifras cayeron del todo en esta corrida:**
+
+- **El 47% de Sparkbox** (F-403) — el estudio existe y sus autores son transparentes, pero el diseño
+  no soporta la afirmación: **8 desarrolladores de la propia agencia**, cada uno construyendo el
+  mismo formulario **primero desde cero (mediana 4,2 h) y después con Carbon (2 h)**. Orden fijo,
+  sin contrabalanceo: el segundo build siempre es el del design system, y por lo tanto siempre es el
+  que se beneficia de haber resuelto ya el problema. A su favor: incluyeron el tiempo de aprender
+  Carbon y ninguno lo conocía. Aun así, **el 47% es un techo contaminado por efecto de orden, no una
+  estimación de efecto** — y en 2026 los agregadores lo ascendieron a "*verified payoff*"
+  generalizándolo a "31-47% para cualquier librería de componentes".
+- **El Design Value Index** (F-404) — apareció la **primera contraevidencia en tres iteraciones**: un
+  análisis crítico reporta que las empresas que **no** cumplían los criterios del DMI rindieron
+  **igual o mejor** que las del índice de diseño. Es la predicción textual de H1, que pasa a
+  `parcial`. Agravantes: el índice **no se actualiza desde 2015-2016** mientras su número se cita
+  como vigente diez años después, y fue **financiado por Microsoft**.
+
+**Y un vehículo nuevo, que es el hallazgo estructural.** Ante el desgaste del DVI, el campo no
+produjo un estudio mejor: produjo **otro índice**. El **Spain Design Index 2026** (F-402), firmado
+por el Foro de Marcas Renombradas Españolas, una universidad privada de diseño y dos consultoras de
+diseño, se presenta como "evidencia clara de que el diseño genera impacto medible en resultados de
+negocio". Su dato propio más citado lo desarma solo: **52,6% de las empresas españolas carece de
+indicadores para medir ese impacto**. Un índice de impacto medible cuyo hallazgo es que la mayoría no
+lo mide.
+
+⚠️ **Nota para no sobrecorregir:** que las *cifras* sean malas no significa que el diseño no valga.
+La escala de §5 sigue teniendo seis filas 🟢 documentadas. Lo que se degrada con cada iteración es la
+**retórica del multiplicador**, no el mecanismo (C1).
+
+### 11.4 📱 La brecha actitud-conducta, medida por primera vez en el mismo instrumento
+
+El *Canva 2026 Design Trends Report* (F-405) es C4 en estado puro —el vendedor de herramientas de IA
+de diseño declarando la tendencia anti-perfección, "Imperfect by Design"— y aun así aporta algo que
+ninguna fuente anterior tenía: **declaración y conducta medidas juntas**, sobre 1.000 creadores de
+EE.UU. **y Brasil** más telemetría de plataforma.
+
+- **Declarado:** 80% dice que "2026 es el año en que recuperamos el control creativo" — y el propio
+  reporte aclara que **no** es rechazo a la IA sino "usarla en nuestros términos". 77% la describe
+  como "socio esencial".
+- **Conducta:** búsquedas de elementos DIY y de collage **+90%** en la plataforma.
+
+Las dos cosas son verdad a la vez, en la misma gente: se reivindica el control humano *mientras* se
+usa intensivamente la herramienta y *dentro* de ella se buscan estéticas hechas a mano. Es material
+directo para **H9**, y refuerza C6 desde un ángulo nuevo: aquí el dato de conducta (+90% de búsquedas)
+y el de declaración (80%) **no se contradicen — se complementan**, y leer solo uno de los dos daría un
+retrato falso en cualquiera de las dos direcciones. Nota para H20: es de las pocas mediciones
+"globales" del gremio que **incluye LatAm en la muestra**.
+
+### 11.5 📈 Estado de las hipótesis de negocio abiertas
+
+- **H13 (Figma) — intacta y vence en 5 días.** Al 28-jul-2026 FIG cotiza ~**US$23,65**, recuperado
+  desde el mínimo histórico de US$16,80 pero todavía **~28% bajo el precio de IPO (US$33)**; consenso
+  Buy con objetivo medio US$36,11 (13 analistas), aunque Morgan Stanley bajó a Hold el 28-jul.
+  **Reporte Q2: 5 de agosto de 2026, tras el cierre** (F-407). La condición de falsación no se movió:
+  ≥40% de crecimiento sin recuperación sobre $33 confirma que el mercado descuenta disrupción, no
+  ejecución.
+- **H14 (Lovable) — se cayó por la premisa.** La ronda **nunca cerró en los US$12-13,2B** del rumor:
+  cerró en **US$6,6B** (F-408). Y el ARR autorreportado fue de **US$100M a US$500M en doce meses**
+  (+400%), no el <50% predicho. La tesis de la cohorte de churn **sigue sin poder probarse** porque no
+  publican NRR ni retención, y el "ARR" es *run-rate anualizado*, no ingreso realizado. De aquí sale
+  la regla **C21**: una hipótesis anclada a un rumor hereda la fragilidad del rumor.
+- **H15 (consultoras) — `respaldada` por acumulación de vacío.** Tercera búsqueda explícita de
+  contraejemplo, tercer resultado vacío: **ninguna consultora de diseño publicó crecimiento de dos
+  dígitos**. frog aparece estimada en ~US$25M de ingresos 2026 con el estudio de Austin cerrado;
+  IDEO perdió cerca de la mitad de su plantilla desde 2020 (F-409). ⚠️ Es `respaldada` por hallazgos
+  negativos (C7), el estado de evidencia más débil que permite salir de `abierta`.
+- **H19 (impuesto de verificación) — `parcial`.** El mecanismo se corrobora en dirección desde varias
+  síntesis: juniors **+21-40%** de velocidad, seniors pagando sobrecarga de verificación, >75% de
+  adopción sin mejora medible en velocidad de entrega organizacional, y **77% de freelancers que
+  reportan que la IA generativa les *añadió* carga** por revisión y validación (F-406). Sigue sin
+  existir el experimento que manipule madurez del código base como factor.
+
+### 11.6 Limitaciones de la iteración 3
+
+- ⚠️ **Tercera iteración consecutiva sin leer un solo texto completo.** El proxy devolvió **403 en
+  todos los intentos**: arXiv, ACM, medios peruanos (`businessempresarial`, `pqs.pe`), `udit.es`,
+  `sparkbox.com`, `thecdo.school`, `faros.ai`. Todo el §11 está construido sobre **abstracts,
+  snippets y cobertura secundaria**. Consecuencia concreta y no menor: las cifras de *Design Theater*
+  (F-399), del estudio de EY (F-400) y del diseño del estudio de Sparkbox (F-403) **deben
+  revalidarse contra el primario antes de publicarse en cualquier entregable**. A esta altura hay que
+  **diseñar alrededor de la restricción** en vez de anotarla: priorizar fuentes con cifras
+  reproducidas por varios medios independientes y desconfiar sistemáticamente de todo dato de una sola
+  aparición.
+- **Autoría no verificada** en F-399 y F-404: citadas por título, venue y URL, sin inventar nombres.
+- **La contraevidencia al DVI (F-404) es un ensayo, no un análisis replicable.** Reporta un
+  contra-resultado (las no-design-centric rindieron igual o mejor) **sin publicar los datos ni el
+  método**. Por eso H1 pasa a `parcial` y no a `respaldada`: es contraevidencia direccional del mismo
+  grado de rigor que aquello que critica.
+- **H10 (seniority) y H11 (el doom tiene modelo de negocio) llevan tres iteraciones sin tocarse.** No
+  por falta de importancia sino porque ambas requieren auditar amplificadores o segmentar datos de
+  empleo, y ninguna búsqueda oportunista las alcanza. **Decisión para la iteración 4: atacarlas
+  explícitamente o declararlas fuera del alcance del node.**
+- **H16 (degradación del reporting) sigue sin avanzar**, por segunda iteración.
+- **La pista social volvió a medirse por conducta y no por validación**: sin acceso a X ni Reddit, se
+  usaron telemetría de plataforma (F-405) y decisiones corporativas. Es más sólido que contar likes,
+  pero mide otra cosa — el node **todavía no tiene una medición real de validación social**.
+
+---
+
 ## Conexiones
 
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] —
@@ -890,3 +1155,16 @@ el mercado descuenta disrupción por IA, no ejecución.* La iteración 3 debe le
   medirá cero; hay que **segmentar por seniority del asesor y por madurez del proceso** que se
   interviene. Y **existe una comunidad de service design en Lima desde 2017** (F-394) — interlocutor
   local para el frente de Service Design del proyecto, no hay que construirlo de cero.
+  ⬆️ *Iteración 3*: **C19 y C20 son la advertencia para cómo se sustenta el proyecto ante el VP.**
+  Si el deck cita "el ROI del diseño", está citando una de siete cifras que conviven sin que ninguna
+  tenga estudio primario ejecutado (§11.3) — y basta que alguien en la sala pregunte por la
+  metodología para perder el argumento entero. La versión defendible es la de C1: mecanismo,
+  no multiplicador.
+- [[modelo-salud-ia-farmacias-peru|Modelo de triage IA + farmacias + atención humana]] — ⬆️ *nueva
+  conexión, iteración 3*: **H21 y C20 aplican directamente**. Ese node diseña un servicio de salud
+  asistido por IA en el Perú, y el hallazgo de F-400 dice que **el 90% de las empresas peruanas opera
+  IA sin políticas aprobadas y solo 18% tiene protocolos de uso seguro y ético** — es decir, el
+  entorno organizacional donde ese modelo aterrizaría **no tiene gobierno de IA instalado**. Para un
+  servicio que toca dato de salud, eso es un riesgo de implementación de primer orden, no un detalle
+  de cumplimiento. Y C20 advierte sobre el otro lado: los multiplicadores de "cuánto ganarías con
+  gobernanza" que venden los certificadores no sirven para justificar la inversión.
