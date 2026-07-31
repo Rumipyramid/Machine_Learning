@@ -1,0 +1,660 @@
+<title>Tendencias en diseño — estado del conocimiento</title>
+<style>
+  :root{
+    --ground:#EEF0F2; --panel:#F7F8F9; --ink:#12171C; --ink-soft:#455059;
+    --ink-faint:#6E7A83; --rule:#D3D9DE; --rule-strong:#B4BDC4;
+    --accent:#3C5A6B;
+    --doc:#1F6248; --doc-bg:#E2EDE8;
+    --par:#8A6114; --par-bg:#F2EADB;
+    --hype:#A32E22; --hype-bg:#F4E3E1;
+    --conf:#4C4396; --conf-bg:#E7E5F3;
+    --serif:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    --measure:68ch;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#101418; --panel:#171C21; --ink:#DDE3E8; --ink-soft:#A3AEB7;
+      --ink-faint:#7C8891; --rule:#2A3239; --rule-strong:#3D474F;
+      --accent:#7FA6BC;
+      --doc:#6FBF9B; --doc-bg:#16281F;
+      --par:#D6A44A; --par-bg:#2A2213;
+      --hype:#E0796B; --hype-bg:#2B1815;
+      --conf:#9C93DE; --conf-bg:#1D1A2E;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#101418; --panel:#171C21; --ink:#DDE3E8; --ink-soft:#A3AEB7;
+    --ink-faint:#7C8891; --rule:#2A3239; --rule-strong:#3D474F;
+    --accent:#7FA6BC;
+    --doc:#6FBF9B; --doc-bg:#16281F;
+    --par:#D6A44A; --par-bg:#2A2213;
+    --hype:#E0796B; --hype-bg:#2B1815;
+    --conf:#9C93DE; --conf-bg:#1D1A2E;
+  }
+  :root[data-theme="light"]{
+    --ground:#EEF0F2; --panel:#F7F8F9; --ink:#12171C; --ink-soft:#455059;
+    --ink-faint:#6E7A83; --rule:#D3D9DE; --rule-strong:#B4BDC4;
+    --accent:#3C5A6B;
+    --doc:#1F6248; --doc-bg:#E2EDE8;
+    --par:#8A6114; --par-bg:#F2EADB;
+    --hype:#A32E22; --hype-bg:#F4E3E1;
+    --conf:#4C4396; --conf-bg:#E7E5F3;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:var(--serif); font-size:17px; line-height:1.62;
+    margin:0; -webkit-font-smoothing:antialiased;
+  }
+  .shell{display:grid; grid-template-columns:1fr; gap:0}
+  @media (min-width:1080px){
+    .shell{grid-template-columns:236px minmax(0,1fr); max-width:1240px; margin:0 auto}
+  }
+
+  /* ---------- rail ---------- */
+  nav.rail{display:none}
+  @media (min-width:1080px){
+    nav.rail{
+      display:block; position:sticky; top:0; align-self:start;
+      max-height:100vh; overflow-y:auto; padding:48px 28px 48px 32px;
+      border-right:1px solid var(--rule);
+    }
+  }
+  .rail-label{
+    font-family:var(--sans); font-size:10px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--ink-faint); margin:0 0 14px;
+  }
+  .rail ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px}
+  .rail a{
+    display:block; font-family:var(--sans); font-size:13px; line-height:1.4;
+    color:var(--ink-soft); text-decoration:none; padding:5px 0 5px 11px;
+    border-left:2px solid transparent;
+  }
+  .rail a:hover,.rail a:focus-visible{color:var(--ink); border-left-color:var(--accent)}
+
+  /* ---------- page ---------- */
+  main{padding:44px 22px 90px; min-width:0}
+  @media (min-width:1080px){main{padding:64px 40px 120px}}
+  .col{max-width:var(--measure)}
+
+  .eyebrow{
+    font-family:var(--sans); font-size:10.5px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--ink-faint); margin:0 0 18px;
+  }
+  h1{
+    font-size:clamp(30px,5.2vw,46px); line-height:1.1; font-weight:600;
+    letter-spacing:-.018em; text-wrap:balance; margin:0 0 18px; max-width:19ch;
+  }
+  .standfirst{
+    font-size:19px; line-height:1.55; color:var(--ink-soft);
+    max-width:56ch; margin:0 0 34px;
+  }
+  h2{
+    font-size:24px; line-height:1.22; font-weight:600; letter-spacing:-.012em;
+    text-wrap:balance; margin:0 0 6px;
+  }
+  h3{
+    font-family:var(--sans); font-size:13px; font-weight:650; letter-spacing:.03em;
+    color:var(--ink); margin:0 0 10px;
+  }
+  section{padding-top:52px; scroll-margin-top:24px}
+  .sec-head{
+    display:flex; align-items:baseline; gap:14px; margin-bottom:20px;
+    padding-bottom:12px; border-bottom:1px solid var(--rule-strong);
+  }
+  .sec-num{
+    font-family:var(--mono); font-size:12px; color:var(--accent);
+    letter-spacing:.02em; flex:none; padding-top:3px;
+  }
+  p{margin:0 0 16px; max-width:var(--measure)}
+  a{color:var(--accent)}
+  strong{font-weight:650}
+  em{font-style:italic}
+  code,.mono{font-family:var(--mono); font-size:.87em; font-variant-numeric:tabular-nums}
+  .fid{
+    font-family:var(--mono); font-size:11.5px; color:var(--ink-faint);
+    white-space:nowrap; letter-spacing:.01em;
+  }
+
+  /* ---------- meta strip ---------- */
+  .meta{
+    display:flex; flex-wrap:wrap; gap:0; border-top:1px solid var(--rule-strong);
+    border-bottom:1px solid var(--rule-strong); margin:0 0 8px;
+  }
+  .meta div{
+    flex:1 1 116px; padding:13px 18px 14px 0;
+  }
+  .meta dt{
+    font-family:var(--sans); font-size:10px; letter-spacing:.13em;
+    text-transform:uppercase; color:var(--ink-faint); margin:0 0 5px;
+  }
+  .meta dd{
+    margin:0; font-family:var(--mono); font-size:19px; font-variant-numeric:tabular-nums;
+    letter-spacing:-.01em;
+  }
+  .meta dd span{font-family:var(--sans); font-size:11px; color:var(--ink-faint); letter-spacing:0}
+
+  /* ---------- status chips ---------- */
+  .chip{
+    display:inline-flex; align-items:center; gap:6px; white-space:nowrap;
+    font-family:var(--sans); font-size:10.5px; font-weight:600; letter-spacing:.07em;
+    text-transform:uppercase; padding:3px 8px 3px 7px; border-radius:2px;
+    border-left:3px solid currentColor;
+  }
+  .c-doc{color:var(--doc); background:var(--doc-bg)}
+  .c-par{color:var(--par); background:var(--par-bg)}
+  .c-hype{color:var(--hype); background:var(--hype-bg)}
+  .c-conf{color:var(--conf); background:var(--conf-bg)}
+
+  /* ---------- tables ---------- */
+  .scroller{overflow-x:auto; margin:0 0 10px; border-bottom:1px solid var(--rule)}
+  table{border-collapse:collapse; width:100%; min-width:620px; font-size:15px}
+  thead th{
+    font-family:var(--sans); font-size:10px; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--ink-faint); text-align:left; font-weight:600;
+    padding:0 16px 9px 0; border-bottom:1px solid var(--rule-strong); vertical-align:bottom;
+  }
+  tbody td{
+    padding:12px 16px 12px 0; border-bottom:1px solid var(--rule);
+    vertical-align:top; line-height:1.45;
+  }
+  tbody tr:last-child td{border-bottom:none}
+  td.claim{font-size:15px}
+  td.st{width:1%; white-space:nowrap}
+  .src{font-family:var(--mono); font-size:11px; color:var(--ink-faint); white-space:nowrap}
+
+  /* ---------- echo chains ---------- */
+  .chains{display:flex; flex-direction:column; gap:0; margin:6px 0 18px}
+  .chain{
+    display:grid; grid-template-columns:auto 1fr; gap:0 18px;
+    padding:15px 0; border-bottom:1px solid var(--rule);
+  }
+  .chain:last-child{border-bottom:none}
+  .figure{
+    font-family:var(--mono); font-size:15px; font-weight:600; color:var(--hype);
+    font-variant-numeric:tabular-nums; white-space:nowrap; padding-top:1px;
+    min-width:8ch;
+  }
+  .chain-body p{margin:0; font-size:15px; line-height:1.5; max-width:58ch}
+  .chain-body .what{color:var(--ink-soft); font-size:14px; margin-top:4px}
+
+  /* ---------- rules ---------- */
+  .rulegroup{margin:0 0 26px}
+  .rulegroup > h3{
+    padding-bottom:7px; border-bottom:1px solid var(--rule); margin-bottom:14px;
+    color:var(--accent); letter-spacing:.08em; text-transform:uppercase; font-size:11px;
+  }
+  .rule{
+    display:grid; grid-template-columns:auto 1fr; gap:0 16px;
+    padding:0 0 15px; margin:0 0 15px; border-bottom:1px solid var(--rule);
+  }
+  .rule:last-child{border-bottom:none; margin-bottom:0; padding-bottom:0}
+  .rid{
+    font-family:var(--mono); font-size:12.5px; font-weight:600; color:var(--accent);
+    padding-top:3px; min-width:4ch;
+  }
+  .rule p{margin:0; max-width:58ch; font-size:15.5px; line-height:1.55}
+  .rule .lede{font-weight:650; display:block; margin-bottom:3px}
+
+  /* ---------- callout ---------- */
+  .callout{
+    background:var(--panel); border-left:3px solid var(--accent);
+    padding:20px 24px; margin:0 0 22px; max-width:var(--measure);
+  }
+  .callout p:last-child{margin-bottom:0}
+  .callout.warn{border-left-color:var(--hype)}
+
+  /* ---------- timeline ---------- */
+  .tl{list-style:none; margin:0; padding:0}
+  .tl li{
+    display:grid; grid-template-columns:auto 1fr; gap:0 20px;
+    padding:0 0 24px; position:relative;
+  }
+  .tl li:not(:last-child)::before{
+    content:""; position:absolute; left:11px; top:24px; bottom:0;
+    width:1px; background:var(--rule-strong);
+  }
+  .tl .dot{
+    width:23px; height:23px; border-radius:50%; border:1px solid var(--rule-strong);
+    background:var(--ground); display:grid; place-items:center;
+    font-family:var(--mono); font-size:11px; color:var(--accent); flex:none;
+  }
+  .tl .when{
+    font-family:var(--sans); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ink-faint); margin:0 0 4px;
+  }
+  .tl .body p{margin:0 0 8px; font-size:15.5px; max-width:58ch}
+  .tl .body p:last-child{margin-bottom:0}
+
+  footer{
+    margin-top:70px; padding-top:22px; border-top:1px solid var(--rule-strong);
+    font-family:var(--sans); font-size:12.5px; color:var(--ink-faint);
+    max-width:var(--measure); line-height:1.6;
+  }
+  footer p{max-width:none; margin:0 0 8px}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+</style>
+
+<div class="shell">
+  <nav class="rail" aria-label="Secciones">
+    <p class="rail-label">Contenido</p>
+    <ol>
+      <li><a href="#tesis">La tesis</a></li>
+      <li><a href="#madurez">Escala de madurez</a></li>
+      <li><a href="#eco">Las 7 cadenas de eco</a></li>
+      <li><a href="#criterio">Criterio acumulado</a></li>
+      <li><a href="#tablero">Tablero de hipótesis</a></li>
+      <li><a href="#divergencias">Divergencias abiertas</a></li>
+      <li><a href="#bitacora">Las tres iteraciones</a></li>
+      <li><a href="#limites">Qué no sabemos</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <p class="eyebrow">Node acumulativo · <span class="mono">research/_nodes/tendencias-diseno.md</span> · v3.0</p>
+    <h1>Tendencias en diseño: qué resiste el escrutinio</h1>
+    <p class="standfirst">
+      Tres corridas de investigación de 360° sobre una sola pregunta permanente: ¿qué tendencias de
+      diseño tienen impacto tangible demostrado y cuáles son propuestas todavía sin respaldo? Este es
+      el estado del conocimiento al 31 de julio de 2026.
+    </p>
+
+    <dl class="meta">
+      <div><dt>Iteraciones</dt><dd>3</dd></div>
+      <div><dt>Fuentes en el códice</dt><dd>124</dd></div>
+      <div><dt>Hipótesis vivas</dt><dd>25</dd></div>
+      <div><dt>Reglas destiladas</dt><dd>21</dd></div>
+      <div><dt>Cadenas de eco</dt><dd>7</dd></div>
+    </dl>
+    <p class="fid" style="margin-bottom:0">
+      Rangos de fuente: F-237 a F-328 (iter. 1) · F-380 a F-398 (iter. 2) · F-399 a F-411 (iter. 3)
+    </p>
+
+    <section id="tesis">
+      <div class="sec-head"><span class="sec-num">01</span><h2>La tesis</h2></div>
+      <div class="col">
+        <div class="callout">
+          <p style="font-size:18px; line-height:1.5">
+            <strong>El diseño importa, pero no por las razones ni en la magnitud que la industria del
+            diseño afirma.</strong> Lo que resiste escrutinio es el <em>mecanismo</em> —reducir fricción,
+            error, retrabajo y riesgo regulatorio— no el <em>multiplicador</em>.
+          </p>
+        </div>
+        <p>
+          Tres caminos metodológicamente independientes llegan a la misma conclusión, y esa convergencia
+          es el hallazgo más sólido del node. La pista empírica desarma las cifras estrella por
+          metodología; la de negocio las desarma por trazabilidad, porque no existe el estudio primario;
+          la social muestra que quienes sostienen el discurso tienen incentivo comercial directo en que
+          se lo crea.
+        </p>
+        <p>
+          El corolario incómodo también se sostiene: <strong>la evidencia causal más fuerte del poder del
+          diseño es sobre su capacidad de daño.</strong> Los dark patterns casi cuadruplican la aceptación
+          de un plan dudoso en experimento aleatorizado con muestra representativa, y afectan a todos los
+          grupos. Leído en positivo: el diseño mueve conducta de verdad; lo que está mal probado es que la
+          mueva hacia el valor. <span class="fid">F-241, F-251</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="madurez">
+      <div class="sec-head"><span class="sec-num">02</span><h2>Escala de madurez de evidencia</h2></div>
+      <div class="col">
+        <p>
+          Es el entregable operativo del node: ninguna tendencia entra sin nivel asignado. Cuatro estados
+          —documentado, parcial, hype y evidencia en conflicto— y la regla de que una tendencia solo sube
+          de nivel con evidencia nueva, nunca con repetición.
+        </p>
+      </div>
+      <div class="scroller">
+        <table>
+          <thead>
+            <tr><th>Tendencia</th><th>Estado</th><th>Base</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="claim">Los dark patterns mueven conducta económica</td><td class="st"><span class="chip c-doc">Documentado · causal</span></td><td class="src">F-241, F-251</td></tr>
+            <tr><td class="claim">Accesibilidad como obligación legal en la UE</td><td class="st"><span class="chip c-doc">Documentado · normativo</span></td><td class="src">F-265</td></tr>
+            <tr><td class="claim">Capacidad de diseño ↔ desempeño de firma</td><td class="st"><span class="chip c-doc">Documentado · asociación</span></td><td class="src">F-237, F-238</td></tr>
+            <tr><td class="claim">Claridad y fluidez por encima del ornamento</td><td class="st"><span class="chip c-doc">Documentado</span></td><td class="src">F-249, F-272</td></tr>
+            <tr><td class="claim">La mayoría de rediseños no mueve la métrica objetivo</td><td class="st"><span class="chip c-doc">Documentado · A/B a escala</span></td><td class="src">F-262</td></tr>
+            <tr><td class="claim">Crisis del modelo de consultora de diseño</td><td class="st"><span class="chip c-doc">Documentado · 4 señales</span></td><td class="src">F-307, F-316, F-317, F-325</td></tr>
+            <tr><td class="claim">Brecha adopción-gobernanza de IA en Perú y LatAm</td><td class="st"><span class="chip c-doc">Documentado · descriptivo</span></td><td class="src">F-400, F-401, F-411</td></tr>
+            <tr><td class="claim">Generative UI: <em>gusta más</em> que el texto plano</td><td class="st"><span class="chip c-doc">Documentado · preferencia declarada</span></td><td class="src">F-380, F-381</td></tr>
+            <tr><td class="claim">La explicabilidad de la IA aumenta la confianza</td><td class="st"><span class="chip c-par">Parcial · sobrevendido</span></td><td class="src">F-242</td></tr>
+            <tr><td class="claim">Los design systems aceleran el desarrollo</td><td class="st"><span class="chip c-par">Parcial · mal medido</span></td><td class="src">F-259, F-269, F-270, F-403</td></tr>
+            <tr><td class="claim">El service design tiene base de evidencia institucional</td><td class="st"><span class="chip c-par">Parcial · pre-IA</span></td><td class="src">F-387, F-395</td></tr>
+            <tr><td class="claim">Las explicaciones mejoran la decisión humano-IA</td><td class="st"><span class="chip c-hype">Contradicho en general</span></td><td class="src">F-243, F-244, F-246</td></tr>
+            <tr><td class="claim">ROI del diseño 100:1 · +32%/+56% · 671% · 135% · DVI 211-231%</td><td class="st"><span class="chip c-hype">Hype · 7 cadenas de eco</span></td><td class="src">F-266, F-268, F-327, F-397, F-403, F-404, F-410</td></tr>
+            <tr><td class="claim">Generative UI: <em>funciona mejor</em></td><td class="st"><span class="chip c-hype">Contradicho · atributos de soporte</span></td><td class="src">F-382, F-384, F-247</td></tr>
+            <tr><td class="claim">Generative UI: <em>hace lo que dice que hace</em></td><td class="st"><span class="chip c-hype">Contradicho · medida objetiva</span></td><td class="src">F-399</td></tr>
+            <tr><td class="claim">«Arreglar la gobernanza de IA multiplica el ROI 3,5×»</td><td class="st"><span class="chip c-hype">Hype · lo vende quien certifica</span></td><td class="src">F-401</td></tr>
+            <tr><td class="claim">Agentic UX</td><td class="st"><span class="chip c-hype">Hype · declarado por sus autores</span></td><td class="src">F-261</td></tr>
+            <tr><td class="claim">Spatial computing como tendencia de diseño</td><td class="st"><span class="chip c-hype">Hype · ~5% construye para ello</span></td><td class="src">F-279</td></tr>
+            <tr><td class="claim">Personalización con IA a escala</td><td class="st"><span class="chip c-hype">Contradicho · efecto backfire</span></td><td class="src">F-253, F-254</td></tr>
+            <tr><td class="claim">El ciclo identitario del gremio llega desfasado a LatAm</td><td class="st"><span class="chip c-hype">Refutado · llega simultáneo</span></td><td class="src">F-389, F-391, F-392</td></tr>
+            <tr><td class="claim">La IA acelera el trabajo de diseño y producto</td><td class="st"><span class="chip c-conf">En conflicto · reconciliado por mecanismo</span></td><td class="src">F-257 vs. F-259, F-388</td></tr>
+            <tr><td class="claim">La IA está causando el desempleo de diseñadores</td><td class="st"><span class="chip c-conf">En conflicto · atribución ≠ causalidad</span></td><td class="src">F-282 vs. F-283</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="eco">
+      <div class="sec-head"><span class="sec-num">03</span><h2>Las siete cadenas de eco de cita</h2></div>
+      <div class="col">
+        <p>
+          El hallazgo forense central. Cada una de las cifras más citadas sobre el valor del diseño
+          colapsa, al rastrearla, en una sola fuente no auditable —o en ninguna. Ninguna proviene de
+          alguien que haya <em>ejecutado</em> el cambio y <em>medido</em> el resultado.
+        </p>
+        <p>
+          En la iteración 3 se comprobó que estas cifras <strong>no se sustituyen entre sí: coexisten</strong>.
+          Todas siguen circulando a la vez en las compilaciones de 2026.
+        </p>
+      </div>
+      <div class="chains col">
+        <div class="chain">
+          <div class="figure">100:1</div>
+          <div class="chain-body">
+            <p>«Cada dólar invertido en UX devuelve 100».</p>
+            <p class="what">Se atribuye a un reporte de Forrester de 2016 que cuesta US$1.495 y que
+              prácticamente nadie del gremio ha leído. Hoy circula además reexpresado como
+              <strong>«ROI = 9.900%»</strong>: misma fuente, unidad más espectacular.</p>
+          </div>
+        </div>
+        <div class="chain">
+          <div class="figure">+32/56%</div>
+          <div class="chain-body">
+            <p>Las empresas del cuartil superior del índice de diseño de McKinsey crecen 32 puntos más.</p>
+            <p class="what">Correlacional, no auditable, y publicado por una consultora que vende
+              servicios de diseño. Conflicto de interés estructural.</p>
+          </div>
+        </div>
+        <div class="chain">
+          <div class="figure">671%</div>
+          <div class="chain-body">
+            <p>ROI de la investigación de usuarios.</p>
+            <p class="what">No colapsa en una fuente débil: <strong>no colapsa en ninguna</strong>. No se
+              encontró estudio primario en tres iteraciones.</p>
+          </div>
+        </div>
+        <div class="chain">
+          <div class="figure">135%</div>
+          <div class="chain-body">
+            <p>ROI de un design system.</p>
+            <p class="what">No es un estudio: es una <strong>calculadora</strong>. US$646.000 invertidos
+              contra US$1.517.400 de ahorro <em>estimado</em>, con insumos autorreportados por la
+              industria. Nadie ejecutó y midió.</p>
+          </div>
+        </div>
+        <div class="chain">
+          <div class="figure">47%</div>
+          <div class="chain-body">
+            <p>Un design system hace el desarrollo 47% más rápido.</p>
+            <p class="what">El estudio existe y sus autores son transparentes, pero el diseño no soporta la
+              afirmación: <strong>8 desarrolladores de la propia agencia</strong>, cada uno construyendo el
+              mismo formulario primero desde cero y después con el design system. <strong>Orden fijo, sin
+              contrabalanceo</strong>: el segundo build siempre es el que se beneficia de haber resuelto ya
+              el problema. En 2026 los agregadores lo ascendieron a «<em>verified payoff</em>».</p>
+          </div>
+        </div>
+        <div class="chain">
+          <div class="figure">211-231%</div>
+          <div class="chain-body">
+            <p>El Design Value Index: las empresas «design-centric» superan al S&amp;P.</p>
+            <p class="what">Índice de 16 acciones seleccionadas, financiado por Microsoft, <strong>sin
+              actualizar desde 2015-2016</strong> mientras su cifra se cita como vigente diez años después.
+              Circula en cuatro versiones distintas —211, 219, 228 y 231%— sin que ninguna pieza note la
+              discrepancia. Y apareció contraevidencia: las empresas que <em>no</em> cumplían los criterios
+              rindieron igual o mejor.</p>
+          </div>
+        </div>
+        <div class="chain">
+          <div class="figure">3,5×</div>
+          <div class="chain-body">
+            <p>«Las empresas con gobernanza de IA obtienen 3,5× más ROI».</p>
+            <p class="what">La cadena más reciente, y la que obliga al node a aplicarse su propio filo: la
+              emite <strong>un organismo que vende la certificación</strong> que el informe concluye que
+              hace falta. Es la misma forma retórica que este node lleva tres iteraciones desmontando, solo
+              que esta vez respalda un hallazgo que nos conviene.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="callout warn">
+          <p><strong>Para no sobrecorregir:</strong> que las cifras sean malas no significa que el diseño no
+            valga. La escala de madurez tiene ocho filas documentadas. Lo que se degrada con cada iteración
+            es la retórica del multiplicador, no el mecanismo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="criterio">
+      <div class="sec-head"><span class="sec-num">04</span><h2>Criterio e intuición acumulada</h2></div>
+      <div class="col">
+        <p>
+          Veintiuna reglas de decisión destiladas de la evidencia. Son la parte del node que
+          <strong>se usa sin volver a consultar las fuentes</strong>. Una regla solo asciende aquí cuando
+          sobrevivió al menos a una búsqueda adversarial explícita.
+        </p>
+
+        <div class="rulegroup">
+          <h3>Sobre cómo argumentar el valor del diseño</h3>
+          <div class="rule"><span class="rid">C1</span><p><span class="lede">Argumentar por mecanismo, nunca por multiplicador.</span> «Este cambio reduce N pasos, M errores y X horas de retrabajo» resiste a un CFO. «El diseño devuelve 100×» no sobrevive a la primera pregunta por la metodología.</p></div>
+          <div class="rule"><span class="rid">C2</span><p><span class="lede">Prometer acumulación, no transformación.</span> La distribución real de efectos es de cola larga con moda cero: dos tercios de los cambios bien diseñados no mueven su métrica. La promesa defendible es iterar y medir.</p></div>
+          <div class="rule"><span class="rid">C3</span><p><span class="lede">Ante una cifra espectacular, rastrear la fuente primaria antes de usarla.</span> Si no puedo leer el estudio primario, no entra a un entregable.</p></div>
+        </div>
+
+        <div class="rulegroup">
+          <h3>Sobre cómo leer tendencias</h3>
+          <div class="rule"><span class="rid">C4</span><p><span class="lede">Descontar por incentivo del emisor, siempre.</span> Los reportes de tendencias los publica quien vende las herramientas de la tendencia. No los descarta: obliga a preguntar <em>quién gana si creo esto</em>.</p></div>
+          <div class="rule"><span class="rid">C5</span><p><span class="lede">Distinguir pico de tendencia.</span> El pánico gremial es estacional y repica con cada lanzamiento de modelo. Verificar todo pico contra el calendario de releases.</p></div>
+          <div class="rule"><span class="rid">C6</span><p><span class="lede">Contar conducta, no volumen.</span> La mejor evidencia social de esta investigación no fue un hilo viral: fue Apple enviando un slider de transparencia y gente pagando por talleres de riso. Una nota publicada en seis medios con el mismo texto es <em>una</em> pieza de cobertura, no seis.</p></div>
+          <div class="rule"><span class="rid">C7</span><p><span class="lede">El hallazgo negativo es un hallazgo.</span> «No existe replicación independiente», «ninguna consultora publicó crecimiento»: se obtuvieron buscando y no encontrando, y son informativas.</p></div>
+        </div>
+
+        <div class="rulegroup">
+          <h3>Sobre diseñar con IA</h3>
+          <div class="rule"><span class="rid">C8</span><p><span class="lede">La explicabilidad genérica no calibra la confianza; la verificabilidad sí.</span> Poner «¿por qué veo esto?» en todos lados aumenta la confianza con independencia de la calidad de la explicación — produce sobre-confianza.</p></div>
+          <div class="rule"><span class="rid">C9</span><p><span class="lede">Sospechar de la interfaz que se reconfigura sola.</span> Hay 20 años de evidencia de que lo <em>adaptable</em> (control del usuario) le gana a lo <em>adaptativo</em> (control del sistema). La generative UI es la versión extrema de lo que ya falló.</p></div>
+          <div class="rule"><span class="rid">C10</span><p><span class="lede">Más personalización no es mejor cuando la privacidad está saliente.</span> Puede rendir peor que el mensaje genérico. Directamente relevante para seguros, donde el dato es sensible por definición.</p></div>
+          <div class="rule"><span class="rid">C11</span><p><span class="lede">Desconfiar de toda métrica de productividad autorreportada.</span> Existe un RCT donde desarrolladores expertos fueron 19% más lentos con IA creyendo ser 20% más rápidos: una brecha percepción-realidad de 39 puntos.</p></div>
+          <div class="rule"><span class="rid">C15</span><p><span class="lede">Preguntar siempre qué se midió: preferencia, desempeño o consecuencia.</span> El discurso casi siempre presenta el primero como si fuera el tercero.</p></div>
+          <div class="rule"><span class="rid">C16</span><p><span class="lede">La curva antes que el signo.</span> Ante «¿la IA acelera el trabajo?», la respuesta correcta no es sí ni no: es <em>¿en qué punto de la curva está este equipo?</em> Un piloto que promedie seniority y madurez del sistema medirá cero y concluirá mal.</p></div>
+        </div>
+
+        <div class="rulegroup">
+          <h3>Sobre estética</h3>
+          <div class="rule"><span class="rid">C12</span><p><span class="lede">Claridad antes que ornamento, con evidencia.</span> El efecto estética-usabilidad se reduce a menos de la mitad al controlar por fluidez de procesamiento: buena parte de lo que se atribuye a la belleza es facilidad de procesamiento.</p></div>
+          <div class="rule"><span class="rid">C13</span><p><span class="lede">El anti-diseño sin disciplina destruye la usabilidad.</span> Brutalismo con grilla clara ≠ anti-diseño caótico; el segundo llegó a 8-10% de éxito de tarea en páginas densas.</p></div>
+        </div>
+
+        <div class="rulegroup">
+          <h3>Sobre el poder del diseño</h3>
+          <div class="rule"><span class="rid">C14</span><p><span class="lede">La evidencia causal más fuerte del poder del diseño es sobre su capacidad de daño.</span> Es el único punto donde la crítica teórica al diseño está empíricamente confirmada.</p></div>
+        </div>
+
+        <div class="rulegroup">
+          <h3>Sobre las cifras del gremio <span style="color:var(--ink-faint); font-weight:400; text-transform:none; letter-spacing:0">· corregidas y ampliadas en la iteración 3</span></h3>
+          <div class="rule"><span class="rid">C17</span><p><span class="lede">Cuando desmontes una cifra estrella, no esperes que desaparezca: espera que se acumule.</span> La versión anterior de esta regla decía que el campo <em>rota</em> sus cifras. Se puso a prueba a propósito y es falso: nada sale de circulación. La defensa nunca es tumbar la cifra del día — es exigir el diseño del estudio, y ahora también preguntar <em>en qué unidad me lo están contando y por qué en esa</em>.</p></div>
+          <div class="rule"><span class="rid">C19</span><p><span class="lede">Cuando una cifra no se puede defender, se agranda la unidad o se construye un vehículo nuevo.</span> 100:1 suena a ratio discutible; «9.900%» suena a hallazgo. Y ante el desgaste de un índice, el campo produce otro índice, no un estudio mejor. Ante un «observatorio» o «barómetro» de diseño nuevo, preguntar primero qué se midió y con qué muestra.</p></div>
+        </div>
+
+        <div class="rulegroup">
+          <h3>Sobre geografía y sobre el propio criterio</h3>
+          <div class="rule"><span class="rid">C18</span><p><span class="lede">En LatAm la conducta es local y el marco es importado; usar el primero, descontar el segundo.</span> El dato local existe —el 90% de las empresas peruanas adoptó IA sin políticas aprobadas—; lo que falta no es dato, es el hábito de buscarlo antes de importar el marco.</p></div>
+          <div class="rule"><span class="rid">C20</span><p><span class="lede">Aplicar el filo a la evidencia propia, sobre todo cuando conviene.</span> La parte descriptiva de una brecha —cuánta gente no tiene política— puede usarse; el multiplicador del remedio —cuánto ganarías si la tuvieras— casi nunca. Lo primero es un conteo; lo segundo es el argumento de venta.</p></div>
+          <div class="rule"><span class="rid">C21</span><p><span class="lede">Una hipótesis construida sobre un rumor hereda la fragilidad del rumor.</span> El antecedente de una hipótesis condicional debe ser un hecho verificable o una fecha, no una expectativa de mercado.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tablero">
+      <div class="sec-head"><span class="sec-num">05</span><h2>Tablero de hipótesis vivas</h2></div>
+      <div class="col">
+        <p>
+          El corazón iterativo del node. Cada corrida debe intentar mover al menos una fila: cambiar el
+          estado de una hipótesis vale más que encontrar una tendencia nueva. Veinticinco hipótesis, cada
+          una con su condición de falsación explícita.
+        </p>
+      </div>
+      <div class="scroller">
+        <table>
+          <thead><tr><th>#</th><th>Hipótesis</th><th>Estado</th></tr></thead>
+          <tbody>
+            <tr><td class="src">H21</td><td class="claim"><strong>Brecha de gobernanza, no de adopción.</strong> El problema en mercados emergentes no es que no usen IA, sino que la usan sin marco corporativo</td><td class="st"><span class="chip c-doc">Respaldada</span></td></tr>
+            <tr><td class="src">H15</td><td class="claim"><strong>La consultora de diseño pura no vuelve.</strong> Ninguna publicará crecimiento de dos dígitos en 2026-2027</td><td class="st"><span class="chip c-doc">Respaldada</span></td></tr>
+            <tr><td class="src">H17</td><td class="claim"><strong>Desfase geográfico:</strong> el ciclo identitario del gremio llega tarde a LatAm</td><td class="st"><span class="chip c-hype">Refutada</span></td></tr>
+            <tr><td class="src">H22</td><td class="claim"><strong>El ROI del diseño se cita por rotación:</strong> una cifra desmontada es sustituida por otra</td><td class="st"><span class="chip c-hype">Refutada</span></td></tr>
+            <tr><td class="src">H14</td><td class="claim"><strong>El ARR de vibe coding no retiene.</strong> Formulada sobre una valuación rumoreada que nunca ocurrió</td><td class="st"><span class="chip c-hype">Huérfana de premisa</span></td></tr>
+            <tr><td class="src">H1</td><td class="claim">Un índice de empresas «design-centric» definido <em>ex ante</em> tendrá exceso de retorno indistinguible de cero</td><td class="st"><span class="chip c-par">Parcial</span></td></tr>
+            <tr><td class="src">H3</td><td class="claim">En tarea repetida, la generative UI dará peor tiempo y peor aprendibilidad, aunque gane en preferencia declarada</td><td class="st"><span class="chip c-par">Parcial</span></td></tr>
+            <tr><td class="src">H4</td><td class="claim">La explicación no mejora la decisión en tareas fáciles; sí en difíciles</td><td class="st"><span class="chip c-par">Parcial</span></td></tr>
+            <tr><td class="src">H12</td><td class="claim">El backlash estético es señalización de estatus profesional, no preferencia de usuario</td><td class="st"><span class="chip c-par">Parcial</span></td></tr>
+            <tr><td class="src">H16</td><td class="claim">El estándar de reporting se degrada donde hay presión de IA</td><td class="st"><span class="chip c-par">Parcial</span></td></tr>
+            <tr><td class="src">H18</td><td class="claim">El silencio del service design es señal de madurez, no de irrelevancia</td><td class="st"><span class="chip c-par">Parcial</span></td></tr>
+            <tr><td class="src">H19</td><td class="claim"><strong>El impuesto de verificación es la variable moderadora:</strong> la IA acelera en construcción nueva y frena en código maduro</td><td class="st"><span class="chip c-par">Parcial</span></td></tr>
+            <tr><td class="src">H13</td><td class="claim"><strong>Desacople valuación/desempeño en Figma.</strong> Falsable el 5 de agosto de 2026</td><td class="st"><span class="chip c-conf">Abierta · con fecha</span></td></tr>
+            <tr><td class="src">H2</td><td class="claim">El reporte de Forrester no contiene la afirmación «$1 → $100» en la forma en que circula</td><td class="st"><span class="chip c-conf">Abierta</span></td></tr>
+            <tr><td class="src">H5</td><td class="claim">Donde se mida desempeño objetivo y percibido a la vez, la mejora subjetiva excederá a la objetiva en ≥20 pp</td><td class="st"><span class="chip c-conf">Abierta</span></td></tr>
+            <tr><td class="src">H6</td><td class="claim">El efecto de un design system sobre el tiempo de desarrollo será &lt;20%, no 47%</td><td class="st"><span class="chip c-conf">Abierta</span></td></tr>
+            <tr><td class="src">H7</td><td class="claim">Las variantes que aumentan fluidez superarán a las que aumentan atractivo estético sin fluidez</td><td class="st"><span class="chip c-conf">Abierta</span></td></tr>
+            <tr><td class="src">H8</td><td class="claim">En Perú, la exposición a <em>hidden information</em> predecirá desconfianza en aseguradoras más que las variables demográficas</td><td class="st"><span class="chip c-conf">Abierta</span></td></tr>
+            <tr><td class="src">H9</td><td class="claim">Brecha actitud-conducta en diseñadores: discurso anti-IA con adopción altísima</td><td class="st"><span class="chip c-conf">Abierta</span></td></tr>
+            <tr><td class="src">H10</td><td class="claim">La ansiedad gremial es un fenómeno de seniority, no de gremio</td><td class="st"><span class="chip c-conf">Abierta · 3 iter. sin tocar</span></td></tr>
+            <tr><td class="src">H11</td><td class="claim">El doom tiene modelo de negocio: los amplificadores tienen incentivo comercial directo</td><td class="st"><span class="chip c-conf">Abierta · 3 iter. sin tocar</span></td></tr>
+            <tr><td class="src">H20</td><td class="claim">La conducta es local, el discurso es importado</td><td class="st"><span class="chip c-conf">Abierta</span></td></tr>
+            <tr><td class="src">H23</td><td class="claim"><strong>Las cifras no se sustituyen: se apilan, se reexpresan y se relanzan.</strong> Reemplaza a H22</td><td class="st"><span class="chip c-conf">Abierta · nueva</span></td></tr>
+            <tr><td class="src">H24</td><td class="claim"><strong>Toda brecha documentada llega con el multiplicador de quien vende el remedio</strong> — incluidas las que nos gustan</td><td class="st"><span class="chip c-conf">Abierta · nueva</span></td></tr>
+            <tr><td class="src">H25</td><td class="claim"><strong>La generative UI converge estéticamente mientras diverge estructuralmente:</strong> nada distintivo, nada aprendible</td><td class="st"><span class="chip c-conf">Abierta · nueva</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="divergencias">
+      <div class="sec-head"><span class="sec-num">06</span><h2>Divergencias que el node no resuelve</h2></div>
+      <div class="col">
+        <p>
+          Tensiones reales entre fuentes sólidas. El node las reporta como tales en vez de promediarlas
+          en una conclusión falsamente armoniosa.
+        </p>
+        <h3 style="margin-top:22px">Productividad con IA — reconciliada por mecanismo</h3>
+        <p>
+          Un RCT halló que desarrolladores expertos fueron <strong>19% más lentos</strong> con IA; otro
+          estudio halló reducciones de <strong>46 a 69%</strong> en time-to-delivery. Los dos miden puntos
+          opuestos de la misma curva: el <strong>impuesto de verificación</strong> —unos 4,3 minutos por
+          sugerencia para seniors contra 1,2 para juniors— escala con la madurez del código base y puede
+          exceder el ahorro de generación. <span class="fid">F-388, F-406</span>
+        </p>
+        <h3 style="margin-top:22px">Generative UI — converge la piel, diverge el esqueleto</h3>
+        <p>
+          Una revisión sistemática mide que un mismo prompt produce interfaces sustancialmente distintas
+          entre herramientas y entre corridas; un benchmark posterior mide convergencia visual y de layout
+          entre herramientas. No se contradicen si lo que converge es la apariencia y lo que diverge es la
+          estructura. Es la hipótesis H25. <span class="fid">F-384 vs. F-399</span>
+        </p>
+        <h3 style="margin-top:22px">Percepción gremial contra dato oficial</h3>
+        <p>
+          Las encuestas de emisores interesados reportan demanda estable o creciente; la oficina de
+          estadísticas laborales proyecta +2% a diez años para diseño gráfico.
+          <span class="fid">F-282 vs. F-283</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="bitacora">
+      <div class="sec-head"><span class="sec-num">07</span><h2>Las tres iteraciones</h2></div>
+      <div class="col">
+        <p>
+          El node no se reescribe en cada corrida: <strong>se confronta</strong>. Su valor está en acumular
+          criterio, no titulares.
+        </p>
+        <ul class="tl">
+          <li>
+            <span class="dot">1</span>
+            <div class="body">
+              <p class="when">26 de julio de 2026 · Barrido fundacional</p>
+              <p>Creación del node con 92 fuentes. Se establecen la escala de madurez, 14 reglas de criterio
+                y un tablero de 18 hipótesis. Hallazgo estructural: las cuatro cifras más citadas del valor
+                del diseño colapsan cada una en una única fuente no auditable, y una de ellas en ninguna.</p>
+            </div>
+          </li>
+          <li>
+            <span class="dot">2</span>
+            <div class="body">
+              <p class="when">29 de julio de 2026 · Confrontación, no novedad</p>
+              <p>Se atacan los cinco pendientes heredados. <strong>H17 refutada</strong>: no hay desfase
+                geográfico —Brasil adopta IA por encima del mundo anglosajón, 94% contra 89%, y MercadoLibre
+                ejecutó la compresión del rol con 119 desvinculaciones de UX. <strong>H3 y H18 pasan a
+                parcial.</strong> Aparece el <em>impuesto de verificación</em>, que reconcilia la divergencia
+                de productividad.</p>
+            </div>
+          </li>
+          <li>
+            <span class="dot">3</span>
+            <div class="body">
+              <p class="when">31 de julio de 2026 · La corrida que refutó su propia predicción</p>
+              <p>La iteración 2 había predicho que esta corrida encontraría una cifra <em>nueva</em>
+                ocupando el lugar del ROI del diseño. <strong>La predicción falló, y su fallo enseñó más que
+                su acierto</strong>: el campo no rota, apila. Se suman el dato peruano de gobernanza que
+                faltaba, la primera contraevidencia al Design Value Index en tres iteraciones, y la primera
+                medida <em>objetiva</em> de generative UI —el benchmark que mide que más de un cuarto de los
+                fundamentos de diseño que una herramienta declara al usuario no están implementados.</p>
+              <p>Seis hipótesis movidas, 13 fuentes nuevas, C17 corregida, tres reglas nuevas.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="limites">
+      <div class="sec-head"><span class="sec-num">08</span><h2>Qué no sabemos</h2></div>
+      <div class="col">
+        <p>
+          Las limitaciones no son una nota al pie: condicionan cuánto pesa cada afirmación de arriba.
+        </p>
+        <div class="callout warn">
+          <p><strong>Tres iteraciones consecutivas sin leer un solo texto completo.</strong> El proxy de red
+            devolvió 403 en todos los intentos de lectura directa: arXiv, ACM, MDPI, gov.uk, medios
+            peruanos, los sitios primarios. Todo el aparato de evidencia está construido sobre abstracts,
+            snippets y cobertura secundaria. Las cifras marcadas para revalidación no deben publicarse en un
+            entregable sin contrastarlas contra el primario.</p>
+        </div>
+        <p>
+          <strong>La pista social se mide por frecuencia, no por validación.</strong> Sin acceso a X ni
+          Reddit no se pudieron contar reacciones ni leer hilos de primera mano. La compensación deliberada
+          fue apoyarse en conducta observable —decisiones corporativas, eventos con fecha, telemetría de
+          plataforma— lo cual es más sólido, pero mide otra cosa.
+        </p>
+        <p>
+          <strong>Dos hipótesis llevan tres iteraciones sin tocarse.</strong> H10 (la ansiedad como fenómeno
+          de seniority) y H11 (el doom como modelo de negocio) requieren auditar amplificadores o segmentar
+          datos de empleo, y ninguna búsqueda oportunista las alcanza. La próxima corrida las ataca o las
+          declara fuera de alcance.
+        </p>
+        <p>
+          <strong>El estudio longitudinal de generative UI sigue sin existir.</strong> Tres iteraciones
+          buscándolo, tres hallazgos negativos. A esta altura la ausencia dejó de ser mala suerte de
+          búsqueda: el campo produce benchmarks de generación y no estudios de uso repetido, y eso es un
+          dato sobre el campo.
+        </p>
+      </div>
+
+      <footer>
+        <p>Informe generado el 31 de julio de 2026 a partir del node acumulativo
+          <span class="mono">research/_nodes/tendencias-diseno.md</span> (v3.0). Las fuentes se citan por su
+          ID <span class="mono">F-n</span> en el ledger de evidencia del proyecto,
+          <span class="mono">research/fuentes/codice.md</span>, consultable con <span class="mono">/codice</span>.</p>
+        <p>Método: tres corridas de <span class="mono">/trinidad</span> —evidencia empírica, percepción
+          social y desempeño de negocio investigados en paralelo, con criterios de validez separados y sin
+          promediar entre sí.</p>
+        <p>Próximo hito con fecha: <strong>H13 vence el 5 de agosto de 2026</strong> con el reporte Q2 de
+          Figma.</p>
+      </footer>
+    </section>
+  </main>
+</div>

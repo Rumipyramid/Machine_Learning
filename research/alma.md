@@ -79,6 +79,7 @@ por afirmación cuando corresponda.
 | Output | Construido sobre (nodes) | Última actualización | Estado |
 |---|---|---|---|
 | `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
+| `_outputs/tendencias-diseno-informe-2026-07-31.html` — **informe del estado del conocimiento acumulado por la rutina DaVinci** (3 iteraciones): tesis, escala de madurez de evidencia, las 7 cadenas de eco de cita, las 21 reglas de criterio, el tablero de 25 hipótesis, divergencias abiertas y limitaciones. Publicado también como artifact | `tendencias-diseno` | 2026-07-31 | al día — **refrescar cuando corra la iteración 4** (H13 vence el 5-ago-2026) |
 
 > **Estado**: `al día` o `requiere refresh`.
 
