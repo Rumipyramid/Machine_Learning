@@ -222,10 +222,20 @@ sombra, ánima, función inferior, individuación).
   Ascendente/MC por tiempo sidéreo local para Lima (UTC-5, 12°02'S). Verificado contra
   ingresos planetarios y lunaciones conocidas: Sol exacto en equinoccios/solsticios, planetas
   ~0.05°, Luna ~0.25°.
+- **Doble registro (desde 2026-07-31):** cada tirada se lee **dos veces** y se entregan las dos
+  por separado — (a) **adivinatoria/tradicional**, con significadores, casas, dignidades y
+  perfección del asunto, que sí habla de la situación y de terceros como figuras simbólicas y
+  cierra con veredicto en lenguaje llano; y (b) **junguiana/proyectiva**, que habla del
+  consultante. No se promedian: donde coinciden está lo más firme, y **donde divergen, la
+  brecha es la medida de la proyección**. Ver `references/marco-jungiano.md` §1b.
 - **Reglas propias:** nunca `--seed` en consulta real (cada tirada debe ser nueva); nunca
-  inventar cartas ni posiciones; correspondencia privada (Gmail/Drive) solo si el usuario lo
-  pide en esa consulta; la lectura **no se guarda** en el repo salvo pedido explícito (y si se
-  guarda, va a `research/_outputs/edipo2/` con su fila en `research/alma.md`).
+  inventar cartas ni posiciones; nunca afirmar el estado interior de una persona real como
+  hecho (sí leer su significador, etiquetado); no repetir la misma pregunta buscando otra
+  respuesta (dictamen del hexagrama 4); correspondencia privada (Gmail/Drive) solo si el
+  usuario lo pide en esa consulta; la lectura **no se guarda** en el repo salvo pedido
+  explícito (y si se guarda, va a `research/_outputs/edipo2/` con su fila en `research/alma.md`).
+- **Datos natales del usuario:** en `research/yopersona/perfil.md` (fecha 17-05-1989; hora y
+  lugar pendientes — sin ellos no hay Ascendente, casas ni grado exacto de la Luna natal).
 
 ### 📌 Marketplace personal de skills (portabilidad entre máquinas/cuentas)
 Este repo se auto-referencia como un **marketplace de plugins de Claude Code**

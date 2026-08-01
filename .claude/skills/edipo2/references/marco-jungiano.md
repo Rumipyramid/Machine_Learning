@@ -17,6 +17,35 @@ Consecuencia operativa para este skill: **la validez de la lectura no está en q
 "acierte", sino en que el símbolo movilice material real de quien pregunta.** Por eso el
 paso más importante no es la tirada sino el cruce con lo que se sabe de la persona.
 
+## 1b. El otro registro: la lectura adivinatoria (y por qué conviven)
+
+Desde 2026-07-31 el skill **no lee solo en clave junguiana**. Toda tirada se lee dos veces:
+
+| | Registro adivinatorio | Registro junguiano |
+|---|---|---|
+| **De qué habla** | La situación y su desenlace | El consultante |
+| **Herramientas** | Significadores, casas, dignidades, aspectos, perfección; hexagrama de llegada; carta de orientación | Proyección, sombra, función inferior, arquetipo, individuación |
+| **Criterio de verdad** | Correspondencia: afirma algo del mundo y puede errar | Resonancia: que el símbolo movilice material real |
+| **Terceros** | Se leen como significadores y cartas en su posición, etiquetado como simbólico | No accede a ellos: solo a lo que el consultante proyecta |
+
+**No se fusionan ni se promedian.** Jung adoptó la sincronicidad justamente para no reclamar
+poder predictivo, y la horaria clásica sí lo reclama: son epistemologías rivales. Se entregan
+como dos voces separadas y después se cruzan.
+
+**Regla del cruce entre registros:**
+- Donde coinciden, esa es la afirmación más fuerte que la lectura puede sostener.
+- Donde divergen, **la brecha es la medida de la proyección**: la distancia entre lo que el
+  mapa describe y la imagen que el consultante tiene de eso. Esa brecha es el contenido más
+  valioso de la lectura, no un defecto a resolver.
+
+**Dos disciplinas de honestidad, aprendidas en uso:**
+1. *No esconderse detrás del aparato.* Exponer significadores, dignidades y aspectos y luego
+   negarse a decir qué indican no es prudencia: es evasión. La lectura adivinatoria cierra
+   con un veredicto en lenguaje llano.
+2. *Simetría de la duda.* Una lectura que dice lo que el consultante no quería oír no es más
+   confiable que una que le da la razón. Se dice explícitamente cuando el resultado es
+   desfavorable, para que no se sobrepondere en ninguna de las dos direcciones.
+
 ## 2. Las piezas junguianas que se usan
 
 | Concepto | Qué es | Dónde aparece en la tirada |

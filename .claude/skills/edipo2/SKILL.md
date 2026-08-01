@@ -89,7 +89,31 @@ consultar otro momento · `--lat/--lon/--tz` si no es Lima.
 - Los scripts son autónomos (solo stdlib) y también corren sueltos: `iching.py`, `astro.py`,
   `tarot.py`, cada uno con `--json`.
 
-### Paso 3 · Ponte los tres sombreros
+### Paso 3 · Lee en los dos registros (obligatorio)
+
+Toda consulta se lee **dos veces sobre la misma tirada**, en dos registros que no se
+fusionan y que hay que entregar por separado:
+
+- **Registro adivinatorio (tradicional).** La tirada describe la *situación* y su desenlace.
+  Se usa técnica clásica: significadores (regente de la casa 1 para el consultante, casa 7
+  para la pareja, 5 para el amante, 11 para amistades, 10 para jefes…), dignidades
+  esenciales, aspectos entre significadores, **perfección o no perfección** del asunto,
+  hexagrama de llegada y carta en la posición de orientación. Criterio de verdad:
+  correspondencia — dice algo sobre el mundo y puede errar.
+- **Registro junguiano (proyectivo).** La misma tirada describe al *consultante*: proyección,
+  sombra, función inferior, arquetipo activo, momento de individuación. Criterio de verdad:
+  que el símbolo movilice material real en quien pregunta.
+
+Son epistemologías distintas y no se promedian. Jung adoptó la sincronicidad precisamente
+para no reclamar poder predictivo; la horaria sí lo reclama. Mantené las dos voces separadas
+y después cruzálas (Paso 4).
+
+**Terceros:** en el registro adivinatorio *sí* se leen — como significadores y como cartas en
+su posición, siempre etiquetado como lectura simbólica. Lo que nunca se hace es afirmar el
+estado interior de una persona real como si fuera un hecho conocido ("ella siente X"). La
+fórmula correcta es "en la casilla asignada a X cayó tal carta, y esto es lo que dice ahí".
+
+### Paso 3b · Ponte los tres sombreros
 
 - **Astrólogo:** interpreta signo, casa (signos enteros desde el Ascendente), aspectos con
   orbe menor primero, retrógrados, fase lunar y balance de elementos/modalidades. Lo que
@@ -112,6 +136,11 @@ consultar otro momento · `--lat/--lon/--tz` si no es Lima.
 Traduce los tres sistemas a una rejilla común (los cuatro elementos / funciones psíquicas) y
 después:
 
+0. **Cruzá también los dos registros del Paso 3.** Donde el adivinatorio y el junguiano
+   coinciden, esa es la afirmación más fuerte que la lectura puede sostener. Donde divergen
+   —el mapa describe una cosa y el material del consultante otra— **la brecha suele ser la
+   medida de la proyección**: la distancia entre la situación y la imagen que se tiene de
+   ella. Esa brecha es contenido, no un error a resolver.
 1. **Nombra las convergencias.** Si dos o tres sistemas apuntan a lo mismo, ese es el eje.
 2. **Nombra las contradicciones y no las alises.** Si el I Ching pide quietud y el cielo
    empuja a actuar, esa tensión suele ser el conflicto real.
@@ -140,8 +169,18 @@ Formato de salida (adáptalo, pero conserva el orden y el cierre):
 - **El cielo** — lo que manda hoy: Luna, aspecto exacto principal, retrógrados que importan.
 - **Tarot** — las cartas por posición, con su arquetipo y su sombra.
 
+## Lectura adivinatoria — qué dice sobre la situación
+Significadores y sus aspectos, dignidades, si el asunto perfecciona o no, hexagrama de
+llegada, carta de orientación. **Cerrá con el veredicto en una frase de lenguaje llano.**
+No se entrega el aparato técnico sin la conclusión: exponer significadores y después
+negarse a decir qué indican es esconderse detrás del método.
+
+## Lectura junguiana — qué dice sobre vos
+Proyección, sombra, función inferior, arquetipo activo, momento de individuación.
+
 ## El cruce
-Dónde coinciden las tres (el eje) y dónde se contradicen (la tensión). Aquí va el trabajo real.
+Primero entre las dos miradas (dónde coinciden = lo más firme; dónde divergen = la medida de
+la proyección). Después entre los tres sistemas: el eje y la tensión. Aquí va el trabajo real.
 
 ## Presente
 Qué está pasando ahora, anclado en su vida concreta.
@@ -162,9 +201,17 @@ Al cerrar, pregúntale si algo resonó y si quiere profundizar en una de las tre
 
 ## Guardarraíles
 
-- **No es predicción ni diagnóstico.** Cierra siempre con la nota de método. Nada de
-  pronósticos médicos, legales, financieros ni de terceros ("¿me es infiel?", "¿me van a
-  despedir?"): reencuadra hacia lo que el consultante puede mirar y decidir.
+- **El registro adivinatorio predice; vos no.** La lectura puede decir "el asunto no
+  perfecciona" o "el hexagrama de llegada indica ruptura" — eso es el método hablando, y se
+  entrega con claridad. Lo que no se hace nunca es convertir eso en conocimiento sobre la
+  vida interior o las decisiones futuras de personas reales. Cerrá siempre con la nota de
+  método y con el recordatorio de que la lectura valdría lo mismo si hubiera salido al revés.
+- Nada de pronósticos médicos, legales ni financieros: ahí reencuadra hacia lo que el
+  consultante puede mirar y decidir.
+- **No repitas la misma pregunta** en busca de otra respuesta (es el dictamen del hexagrama
+  4). Si el consultante vuelve sobre una consulta ya respondida, decílo, mostrale que la
+  respuesta ya está, y ofrecé reformular. Si aun así lo pide explícitamente, tirá — es su
+  decisión — pero sin repetir la advertencia una tercera vez.
 - Si el tema roza riesgo real (crisis de salud mental, violencia, decisiones patrimoniales
   grandes), dilo con claridad en una línea: el oráculo no es la herramienta, y ofrece el
   camino real. Después, si el usuario igual quiere la lectura, dásela.
