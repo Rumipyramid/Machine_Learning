@@ -77,6 +77,12 @@ cd .claude/skills/edipo2/scripts
 python3 tirada.py --pregunta "<la pregunta, o omitir si es espontánea>"
 ```
 
+**Sistema de tarot:** `--baraja marsella` (default: menores por número × palo) o `--baraja waite`
+(Rider-Waite-Smith: cada menor tiene escena e interpretación propia, VIII es La Fuerza y XI La
+Justicia, y las inversiones son práctica corriente). **Preferencia registrada del usuario de este
+repo: Waite** — usá `--baraja waite` salvo que pida Marsella explícitamente. Los dos sistemas dan
+lecturas distintas de las mismas cartas; si el contraste es informativo, mostralo.
+
 Opciones útiles: `--tarot cruz` (5 cartas, incluye posición de sombra) · `--tarot arbol`
 (4 palos + síntesis) · `--tarot una` · `--iching monedas` · `--invertidas` (permite cartas
 invertidas; no es canon marsellés, úsalo solo si el usuario lo pide) · `--fecha/--hora` para
@@ -225,9 +231,10 @@ Al cerrar, pregúntale si algo resonó y si quiere profundizar en una de las tre
 | `scripts/tirada.py` | Orquestador: corre los tres oráculos y sella la consulta |
 | `scripts/iching.py` | Tirada de I Ching (milenrama/monedas), tabla King Wen completa |
 | `scripts/astro.py` | Efemérides aproximadas (elementos keplerianos JPL + Luna del Astronomical Almanac), Asc/MC, casas, aspectos, fase lunar |
-| `scripts/tarot.py` | Baraja de 78 cartas marsellesas; menores compuestos número × palo |
+| `scripts/tarot.py` | Baraja de 78 cartas; menores por número × palo (Marsella) o por escena (Waite), con `--baraja` |
 | `references/hexagramas.json` | 64 hexagramas (clave, dictamen, imagen), trigramas y sentido de las 6 posiciones |
-| `references/tarot_marsella.json` | 22 mayores con arquetipo/luz/sombra/individuación, palos, numerología, figuras, tiradas |
+| `references/tarot_marsella.json` | Marsella: 22 mayores con arquetipo/luz/sombra/individuación, palos, numerología, figuras, y definición de las tiradas |
+| `references/tarot_waite.json` | Rider-Waite-Smith: 78 cartas con escena, lectura derecha e invertida; VIII/XI intercambiados |
 | `references/marco-jungiano.md` | Sincronicidad, sombra, ánima, función inferior y **regla de convergencia** |
 
 Precisión astronómica verificada contra ingresos planetarios y lunaciones conocidas: Sol

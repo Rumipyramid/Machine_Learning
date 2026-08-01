@@ -1,0 +1,99 @@
+{
+  "_meta": {
+    "descripcion": "Tarot Rider-Waite-Smith (Waite/Colman Smith, 1909) — 78 cartas con significado por escena. A diferencia del Marsella, los arcanos menores NO se derivan de número × palo: cada uno tiene una imagen narrativa con lectura propia, según la tradición de Waite (Pictorial Key to the Tarot) y la Golden Dawn.",
+    "diferencias_con_marsella": [
+      "VIII es La Fuerza y XI es La Justicia (intercambio de la Golden Dawn respecto del Marsella).",
+      "Los menores tienen escena ilustrada y significado individual, no numerológico.",
+      "XIII sí lleva nombre (La Muerte), a diferencia del arcano sin nombre marsellés.",
+      "El palo de Oros se llama Pentáculos; se conserva la clave 'Oros' por compatibilidad.",
+      "Las inversiones son práctica corriente en este sistema (en Marsella no lo son)."
+    ],
+    "advertencia": "Material simbólico para lectura, no diagnóstico ni predicción factual."
+  },
+  "mayores": {
+    "0":  {"nombre": "El Loco", "escena": "Un joven a punto de pisar el borde de un acantilado, con un hatillo y un perro que le ladra", "derecho": "Comienzo, salto de fe, inocencia, espontaneidad, libertad sin plan", "invertido": "Imprudencia, riesgo tonto, miedo a comprometerse, ingenuidad"},
+    "1":  {"nombre": "El Mago", "escena": "Con los cuatro palos sobre la mesa, una mano al cielo y otra a la tierra", "derecho": "Poder de manifestar, recursos disponibles, voluntad enfocada, iniciativa", "invertido": "Manipulación, talento desaprovechado, engaño, dispersión"},
+    "2":  {"nombre": "La Suma Sacerdotisa", "escena": "Sentada entre las columnas Boaz y Jachin, velo de granadas, rollo de la Torá en el regazo", "derecho": "Intuición, saber no revelado, misterio, escuchar la voz interior", "invertido": "Secretos que dañan, desconexión de la intuición, información retenida"},
+    "3":  {"nombre": "La Emperatriz", "escena": "Mujer coronada de estrellas en un campo de trigo, entre naturaleza fértil", "derecho": "Abundancia, fertilidad, cuidado, creatividad que da fruto, sensualidad", "invertido": "Bloqueo creativo, dependencia, descuido de sí, exceso de entrega"},
+    "4":  {"nombre": "El Emperador", "escena": "Trono de carneros en un paisaje árido de montañas", "derecho": "Autoridad, estructura, límites, protección, disciplina", "invertido": "Rigidez, control, autoritarismo, o falta de disciplina"},
+    "5":  {"nombre": "El Hierofante", "escena": "Figura religiosa bendiciendo a dos acólitos, llaves cruzadas a sus pies", "derecho": "Tradición, enseñanza, institución, valores compartidos, consejo", "invertido": "Dogma, rebelión contra la norma, hipocresía, camino propio"},
+    "6":  {"nombre": "Los Enamorados", "escena": "Hombre y mujer bajo un ángel; detrás, el árbol del conocimiento y el de la vida", "derecho": "Unión, elección importante, alineación de valores, vínculo consciente", "invertido": "Desalineación, indecisión, elección hecha por miedo, ruptura de acuerdos"},
+    "7":  {"nombre": "El Carro", "escena": "Conductor coronado tirado por dos esfinges, una negra y una blanca, sin riendas", "derecho": "Voluntad, avance por control de fuerzas opuestas, victoria, determinación", "invertido": "Falta de rumbo, agresividad, fuerzas que tiran en direcciones opuestas"},
+    "8":  {"nombre": "La Fuerza", "escena": "Mujer cerrando suavemente la boca de un león, lemniscata sobre su cabeza", "derecho": "Coraje sereno, dominio del instinto por ternura, paciencia, compasión", "invertido": "Duda de sí, fuerza bruta, instinto reprimido o desbordado", "nota": "En Waite es VIII (en Marsella es XI)"},
+    "9":  {"nombre": "El Ermitaño", "escena": "Anciano en la cima con farol y bastón, la estrella de seis puntas dentro del farol", "derecho": "Introspección, búsqueda de sentido, retiro, guía interior o mentor", "invertido": "Aislamiento, soledad no elegida, rechazo a pedir ayuda"},
+    "10": {"nombre": "La Rueda de la Fortuna", "escena": "Rueda con figuras cabalísticas y los cuatro vivientes en las esquinas", "derecho": "Ciclo, giro de la suerte, destino en movimiento, punto de inflexión", "invertido": "Mala racha, resistencia al cambio, ciclo que se repite"},
+    "11": {"nombre": "La Justicia", "escena": "Figura entronizada con espada erguida y balanza", "derecho": "Verdad, causa y efecto, decisión justa, asumir consecuencias", "invertido": "Injusticia, evasión de responsabilidad, deshonestidad con uno mismo", "nota": "En Waite es XI (en Marsella es VIII)"},
+    "12": {"nombre": "El Colgado", "escena": "Hombre suspendido por un pie de un árbol en forma de T, halo en la cabeza", "derecho": "Pausa, cambio de perspectiva, entrega voluntaria, ver del revés", "invertido": "Estancamiento, sacrificio inútil, resistirse a soltar, martirio"},
+    "13": {"nombre": "La Muerte", "escena": "Esqueleto armado a caballo; el sol sale entre dos torres al fondo", "derecho": "Fin necesario, transformación, cierre de un capítulo, transición", "invertido": "Resistencia al final, aferrarse, cambio postergado, estancamiento"},
+    "14": {"nombre": "La Templanza", "escena": "Ángel con un pie en el agua y otro en tierra, vertiendo entre dos copas", "derecho": "Equilibrio, moderación, síntesis de opuestos, paciencia, sanación", "invertido": "Exceso, desequilibrio, impaciencia, mezclar lo que no se mezcla"},
+    "15": {"nombre": "El Diablo", "escena": "Baphomet sobre un pedestal; dos figuras encadenadas con cadenas flojas", "derecho": "Apego, deseo que ata, adicción, materialismo, sombra no reconocida", "invertido": "Liberación de la atadura, ver la cadena floja, recuperar el poder"},
+    "16": {"nombre": "La Torre", "escena": "Rayo que parte una torre; dos figuras caen; la corona sale despedida", "derecho": "Ruptura súbita, revelación que destruye una estructura falsa, crisis liberadora", "invertido": "Desastre evitado, cambio postergado, resistir lo inevitable"},
+    "17": {"nombre": "La Estrella", "escena": "Mujer desnuda vertiendo dos cántaros, uno en el agua y otro en la tierra; ocho estrellas", "derecho": "Esperanza, renovación, inspiración, vulnerabilidad serena, fe después de la crisis", "invertido": "Desesperanza, desconexión de la propia fuente, autoexigencia"},
+    "18": {"nombre": "La Luna", "escena": "Perro y lobo aullando, un cangrejo que sale del agua, un sendero entre dos torres", "derecho": "Ilusión, miedo, sueños, lo inconsciente, no ver con claridad", "invertido": "La confusión se disipa, se revela el engaño, miedo enfrentado"},
+    "19": {"nombre": "El Sol", "escena": "Niño desnudo sobre un caballo blanco, girasoles, sol pleno", "derecho": "Claridad, alegría, éxito visible, vitalidad, verdad a la luz", "invertido": "Optimismo forzado, brillo apagado, éxito que no se disfruta"},
+    "20": {"nombre": "El Juicio", "escena": "Ángel con trompeta; figuras que se alzan de sus tumbas con los brazos abiertos", "derecho": "Llamado, despertar, balance de vida, absolución, segunda oportunidad", "invertido": "Autocrítica dura, ignorar el llamado, negarse a perdonar"},
+    "21": {"nombre": "El Mundo", "escena": "Figura danzante dentro de una corona de laurel, los cuatro vivientes en las esquinas", "derecho": "Culminación, integración, ciclo completo, plenitud, logro", "invertido": "Cierre incompleto, falta de cierre, atajos, meta que no satisface"}
+  },
+  "menores": {
+    "Bastos": {
+      "1":  {"escena": "Una mano surge de una nube ofreciendo una vara que retoña", "derecho": "Chispa creativa, impulso nuevo, inspiración, potencial de proyecto", "invertido": "Falso comienzo, energía bloqueada, falta de dirección"},
+      "2":  {"escena": "Hombre con globo terráqueo mirando el mar desde una almena", "derecho": "Planificación, mirar más lejos, decisión sobre el futuro, salir de lo conocido", "invertido": "Miedo a lo desconocido, planes sin ejecutar, quedarse en la almena"},
+      "3":  {"escena": "Figura de espaldas viendo partir sus barcos", "derecho": "Expansión, resultados en camino, visión que empieza a rendir, previsión", "invertido": "Demoras, planes que no despegan, visión corta"},
+      "4":  {"escena": "Cuatro varas coronadas de guirnaldas; celebración a las puertas de un castillo", "derecho": "Celebración, hogar, estabilidad lograda, comunidad, umbral feliz", "invertido": "Celebración postergada, inestabilidad en casa, transición incómoda"},
+      "5":  {"escena": "Cinco jóvenes peleando con varas, sin daño real", "derecho": "Competencia, fricción, desacuerdo, tensión que puede ser fértil", "invertido": "Conflicto evitado, tensión interna, rendirse antes de empezar"},
+      "6":  {"escena": "Jinete con corona de laurel, aclamado por la multitud", "derecho": "Victoria, reconocimiento público, confianza, éxito visible tras el esfuerzo", "invertido": "Caída del pedestal, éxito no reconocido, ego, victoria vacía"},
+      "7":  {"escena": "Hombre en terreno alto defendiéndose de seis varas que suben", "derecho": "Defender la posición, sostener lo propio bajo presión, convicción", "invertido": "Ceder terreno, agotamiento, sentirse superado"},
+      "8":  {"escena": "Ocho varas volando por el aire sobre un paisaje abierto, sin figuras", "derecho": "Movimiento rápido, mensajes, todo se acelera, lo detenido se pone en marcha", "invertido": "Demoras, energía dispersa, precipitación"},
+      "9":  {"escena": "Hombre herido y vendado apoyado en una vara, vigilando las otras ocho", "derecho": "Resistencia, última guardia, cansancio con perseverancia, desconfianza", "invertido": "Agotamiento total, paranoia, soltar la guardia"},
+      "10": {"escena": "Figura cargando diez varas que le tapan la vista, camino a una casa", "derecho": "Sobrecarga, responsabilidad excesiva, cargar solo, meta cerca pero pesada", "invertido": "Delegar, soltar el peso, colapso por no soltar"}
+    },
+    "Copas": {
+      "1":  {"escena": "Mano que sostiene una copa desbordante con cinco chorros; paloma descendiendo", "derecho": "Amor nuevo, apertura emocional, don afectivo, corazón que se abre", "invertido": "Emoción bloqueada, amor no correspondido, vacío afectivo"},
+      "2":  {"escena": "Hombre y mujer intercambiando copas bajo el caduceo y el león alado", "derecho": "Unión, atracción mutua, sociedad afectiva, reconciliación, pacto entre dos", "invertido": "Desequilibrio en el vínculo, ruptura, atracción no correspondida"},
+      "3":  {"escena": "Tres mujeres alzando copas en círculo, entre frutas", "derecho": "Celebración, amistad, comunidad afectiva, alegría compartida", "invertido": "Exceso, chismes, tercero que sobra, aislamiento del grupo"},
+      "4":  {"escena": "Joven bajo un árbol, brazos cruzados, ignorando una copa que le ofrece una nube", "derecho": "Apatía, insatisfacción, no ver lo que se ofrece, aburrimiento, contemplación", "invertido": "Salir del letargo, aceptar lo ofrecido, renovación del interés"},
+      "5":  {"escena": "Figura encapuchada llorando tres copas derramadas; detrás, dos copas siguen en pie, sin mirar", "derecho": "Duelo, pérdida, mirar lo derramado y no ver lo que queda, arrepentimiento", "invertido": "Aceptación, girar y ver lo que queda, perdón, seguir adelante"},
+      "6":  {"escena": "Niño ofreciendo una copa con flores a otro, en un patio antiguo", "derecho": "Nostalgia, infancia, dulzura, reencuentro con el pasado, inocencia", "invertido": "Idealizar el pasado, quedarse ahí, madurar y soltar"},
+      "7":  {"escena": "Silueta ante siete copas en las nubes: rostro, castillo, joyas, dragón, corona, serpiente", "derecho": "Ilusiones, demasiadas opciones, fantasía, deseo que no distingue lo real", "invertido": "Claridad, elegir una, ver a través de la fantasía"},
+      "8":  {"escena": "Figura que se aleja de ocho copas ordenadas, hacia las montañas, bajo la luna", "derecho": "Retirarse de algo que ya no llena, dejar atrás por elección, búsqueda de sentido", "invertido": "Miedo a irse, volver sobre lo dejado, quedarse por costumbre"},
+      "9":  {"escena": "Hombre satisfecho, brazos cruzados, ante nueve copas en arco", "derecho": "Deseo cumplido, satisfacción, bienestar, gusto por lo que se tiene", "invertido": "Satisfacción hueca, complacencia, desear lo que no se necesita"},
+      "10": {"escena": "Pareja con los brazos alzados y dos niños danzando, bajo un arcoíris de diez copas; casa al fondo", "derecho": "Plenitud afectiva, armonía familiar, felicidad compartida, hogar logrado", "invertido": "La imagen no coincide con lo que se siente, hogar fracturado, valores desalineados"}
+    },
+    "Espadas": {
+      "1":  {"escena": "Mano que sostiene una espada coronada de laurel", "derecho": "Claridad súbita, verdad, decisión, avance mental, cortar la confusión", "invertido": "Confusión, verdad usada como arma, idea que no cuaja"},
+      "2":  {"escena": "Mujer con los ojos vendados sosteniendo dos espadas cruzadas, de espaldas al mar", "derecho": "Decisión postergada, tregua incómoda, negarse a ver, bloqueo por no elegir", "invertido": "Se quita la venda, la decisión se toma, información que llega"},
+      "3":  {"escena": "Corazón atravesado por tres espadas, bajo lluvia", "derecho": "Dolor, traición, verdad que hiere, duelo declarado", "invertido": "Cicatrización, dolor que empieza a ceder, perdón"},
+      "4":  {"escena": "Caballero yacente en una tumba, tres espadas en la pared y una debajo", "derecho": "Reposo obligado, pausa, recuperación, retiro para sanar", "invertido": "Volver a la actividad, agotamiento por no parar, inquietud"},
+      "5":  {"escena": "Figura recogiendo espadas con sonrisa; dos hombres se alejan derrotados", "derecho": "Victoria a costa de otros, conflicto que deja daño, ganar y perder a la vez", "invertido": "Reconciliación, dejar de pelear, asumir el costo de haber ganado"},
+      "6":  {"escena": "Barquero que lleva a una mujer y un niño a través del agua, seis espadas clavadas en la barca", "derecho": "Tránsito hacia aguas más calmas, dejar atrás, mudanza, mejora gradual", "invertido": "No poder irse, cargar el pasado al nuevo lugar, viaje postergado"},
+      "7":  {"escena": "Hombre alejándose de un campamento con cinco espadas, dejando dos clavadas", "derecho": "Estrategia solitaria, ocultamiento, actuar por fuera, quedarse con parte", "invertido": "Confesión, verdad que sale, devolver lo tomado"},
+      "8":  {"escena": "Mujer atada y vendada entre ocho espadas clavadas, con los pies libres", "derecho": "Sentirse atrapado, limitación autoimpuesta, la salida existe y no se ve", "invertido": "Liberarse, ver que las ataduras eran flojas, recuperar movimiento"},
+      "9":  {"escena": "Figura sentada en la cama con la cara entre las manos; nueve espadas en la pared", "derecho": "Angustia, insomnio, culpa, la mente de madrugada, sufrimiento anticipado", "invertido": "El miedo cede, hablar de lo que atormenta, la noche pasa"},
+      "10": {"escena": "Cuerpo tendido con diez espadas en la espalda; el cielo se aclara al fondo", "derecho": "Final rotundo, tocar fondo, lo peor ya ocurrió, no hay más que caer", "invertido": "Recuperación, levantarse, dramatismo excesivo"}
+    },
+    "Oros": {
+      "1":  {"escena": "Mano que sostiene un pentáculo sobre un jardín con arco de flores", "derecho": "Oportunidad material, semilla concreta, salud, comienzo próspero", "invertido": "Oportunidad perdida, mala inversión, base insegura"},
+      "2":  {"escena": "Joven haciendo malabares con dos pentáculos unidos por una cinta infinita; barcos en olas al fondo", "derecho": "Malabarismo, equilibrar dos cosas, adaptabilidad, prioridades en tensión", "invertido": "Sobrecarga, perder el equilibrio, dejar caer una"},
+      "3":  {"escena": "Cantero trabajando en una catedral, observado por un monje y un arquitecto con planos", "derecho": "Oficio, trabajo bien hecho, colaboración, reconocimiento de la destreza, construir algo que dura", "invertido": "Trabajo mediocre, falta de colaboración, esfuerzo no reconocido"},
+      "4":  {"escena": "Figura coronada abrazando un pentáculo, uno en la cabeza y dos bajo los pies", "derecho": "Retener, seguridad material, control, no soltar lo que se tiene", "invertido": "Aflojar el puño, generosidad, miedo a perder que se suelta"},
+      "5":  {"escena": "Dos mendigos en la nieve pasando frente a un vitral iluminado", "derecho": "Carencia, exclusión, dificultad material o afectiva, no pedir la ayuda que está ahí", "invertido": "Fin de la mala racha, pedir ayuda, recuperación"},
+      "6":  {"escena": "Mercader con balanza repartiendo monedas a dos mendigos", "derecho": "Generosidad, dar y recibir, ayuda con condiciones, equilibrio de poder", "invertido": "Deuda, caridad interesada, desequilibrio entre quien da y quien recibe"},
+      "7":  {"escena": "Hombre apoyado en su azada contemplando un arbusto con siete pentáculos", "derecho": "Pausa para evaluar, cosecha aún no lista, paciencia, invertir a largo plazo", "invertido": "Impaciencia, esfuerzo mal invertido, abandonar antes de tiempo"},
+      "8":  {"escena": "Artesano cincelando pentáculos uno tras otro, en serie", "derecho": "Aprendizaje, práctica repetida, dedicación al oficio, mejora por trabajo", "invertido": "Repetición sin sentido, perfeccionismo, trabajo sin alma"},
+      "9":  {"escena": "Mujer en su viñedo con un halcón en la mano enguantada", "derecho": "Logro propio, autosuficiencia, disfrute de lo construido, refinamiento", "invertido": "Dependencia, logro sin disfrute, soledad en la abundancia"},
+      "10": {"escena": "Anciano con perros, pareja y niño ante un arco familiar; diez pentáculos en árbol de la vida", "derecho": "Legado, riqueza duradera, familia, estabilidad de largo plazo", "invertido": "Conflicto por herencia, familia fracturada, seguridad que se pierde"}
+    }
+  },
+  "figuras": {
+    "Valet": {"nombre_waite": "Sota (Page)", "rol": "el mensajero y el estudiante", "generico": "Noticia nueva, curiosidad, comenzar a aprender el palo, entusiasmo sin experiencia", "invertido": "Inmadurez, noticia mala o postergada, no querer aprender"},
+    "Caballero": {"nombre_waite": "Caballero (Knight)", "rol": "el que se lanza", "generico": "Acción decidida, movimiento, ir tras el asunto del palo con impulso", "invertido": "Impulsividad o parálisis, acción sin dirección"},
+    "Reina": {"nombre_waite": "Reina (Queen)", "rol": "la que sostiene desde adentro", "generico": "Maestría interior del palo: comprender, nutrir, sostener con hondura", "invertido": "Sobreprotección, frialdad, maestría vuelta hacia adentro sin salida"},
+    "Rey": {"nombre_waite": "Rey (King)", "rol": "el que gobierna hacia afuera", "generico": "Maestría ejercida: autoridad, decisión y responsabilidad en el ámbito del palo", "invertido": "Autoritarismo, control, poder mal usado o abdicado"}
+  },
+  "palos_matices": {
+    "Bastos": "Fuego: acción, voluntad, proyecto, deseo, energía vital.",
+    "Copas": "Agua: afecto, emoción, vínculo, intuición sentida, vida amorosa.",
+    "Espadas": "Aire: pensamiento, palabra, conflicto, verdad, decisión — el palo más duro del mazo Waite.",
+    "Oros": "Tierra (Pentáculos): cuerpo, dinero, trabajo, salud, resultados concretos."
+  }
+}

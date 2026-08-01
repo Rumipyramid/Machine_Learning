@@ -22,7 +22,9 @@ import os
 import random
 from pathlib import Path
 
-REF = Path(__file__).resolve().parent.parent / "references" / "tarot_marsella.json"
+_REFS = Path(__file__).resolve().parent.parent / "references"
+REF = _REFS / "tarot_marsella.json"          # significados marselleses + definición de tiradas
+REF_WAITE = _REFS / "tarot_waite.json"       # significados Rider-Waite-Smith
 PALOS = ("Bastos", "Copas", "Espadas", "Oros")
 FIGURAS = ("Valet", "Caballero", "Reina", "Rey")
 ROMANOS = {
@@ -48,6 +50,45 @@ def mazo(solo_mayores: bool = False) -> list[tuple]:
             for f in FIGURAS:
                 cartas.append(("figura", (f, palo)))
     return cartas
+
+
+def describe_waite(carta: tuple, w: dict, invertida: bool) -> dict:
+    """Significado según Rider-Waite-Smith: cada menor tiene escena e interpretación propias."""
+    tipo, dato = carta
+    d = {"tipo": tipo, "invertida": invertida, "baraja": "waite"}
+    if tipo == "mayor":
+        m = w["mayores"][str(dato)]
+        d.update(
+            numero=dato, romano=ROMANOS[dato],
+            nombre=f"{ROMANOS[dato]} · {m['nombre']}" if dato else m["nombre"],
+            carta=m["nombre"], escena=m["escena"],
+            derecho=m["derecho"], invertido=m["invertido"],
+            lectura=m["invertido"] if invertida else m["derecho"],
+        )
+        if "nota" in m:
+            d["nota_numeracion"] = m["nota"]
+    elif tipo == "menor":
+        n, palo = dato
+        c = w["menores"][palo][str(n)]
+        d.update(
+            nombre=f"{n} de {palo}", carta=f"{n} de {palo}", palo=palo, numero=n,
+            escena=c["escena"], derecho=c["derecho"], invertido=c["invertido"],
+            matiz_palo=w["palos_matices"][palo],
+            lectura=c["invertido"] if invertida else c["derecho"],
+        )
+    else:
+        fig, palo = dato
+        f = w["figuras"][fig]
+        d.update(
+            nombre=f"{f['nombre_waite']} de {palo}", carta=f"{fig} de {palo}",
+            palo=palo, figura=fig, rol=f["rol"],
+            matiz_palo=w["palos_matices"][palo],
+            lectura=(f["invertido"] if invertida else f["generico"]) + f" · Ámbito: {w['palos_matices'][palo]}",
+        )
+    if invertida:
+        d["nota_inversion"] = ("Carta invertida: en Waite la inversión es práctica corriente y "
+                               "modifica el sentido de la carta, no solo su intensidad.")
+    return d
 
 
 def describe(carta: tuple, ref: dict, invertida: bool) -> dict:
@@ -104,8 +145,10 @@ def describe(carta: tuple, ref: dict, invertida: bool) -> dict:
 
 
 def tirada(nombre_tirada: str = "tres", solo_mayores: bool = False,
-           invertidas: bool = False, seed: int | None = None) -> dict:
+           invertidas: bool = False, seed: int | None = None,
+           baraja_estilo: str = "marsella") -> dict:
     ref = json.loads(REF.read_text(encoding="utf-8"))
+    waite = json.loads(REF_WAITE.read_text(encoding="utf-8")) if baraja_estilo == "waite" else None
     posiciones = ref["tiradas"][nombre_tirada]
     rng = _rng(seed)
     baraja = mazo(solo_mayores)
@@ -115,7 +158,7 @@ def tirada(nombre_tirada: str = "tres", solo_mayores: bool = False,
     cartas = []
     for pos, c in zip(posiciones, sacadas):
         inv = invertidas and rng.random() < 0.5
-        d = describe(c, ref, inv)
+        d = describe_waite(c, waite, inv) if waite else describe(c, ref, inv)
         d["posicion"] = pos
         cartas.append(d)
 
@@ -130,7 +173,9 @@ def tirada(nombre_tirada: str = "tres", solo_mayores: bool = False,
         dominante = empatados[0] if top > 1 and len(empatados) == 1 else None
 
     return {
-        "sistema": "Tarot de Marsella (marco junguiano)",
+        "sistema": ("Tarot Rider-Waite-Smith (menores por escena)" if waite
+                    else "Tarot de Marsella (marco junguiano)"),
+        "baraja_estilo": baraja_estilo,
         "tirada": nombre_tirada,
         "mazo": "solo arcanos mayores (22)" if solo_mayores else "78 cartas",
         "inversiones": invertidas,
@@ -148,11 +193,24 @@ def tirada(nombre_tirada: str = "tres", solo_mayores: bool = False,
 
 
 def a_markdown(t: dict) -> str:
-    L = [f"## Tarot de Marsella — tirada simulada ({t['tirada']})", "",
+    titulo = ("Tarot Rider-Waite-Smith" if t.get("baraja_estilo") == "waite"
+              else "Tarot de Marsella")
+    L = [f"## {titulo} — tirada simulada ({t['tirada']})", "",
          f"*Mazo:* {t['mazo']}{' · con inversiones' if t['inversiones'] else ''}", ""]
     for i, c in enumerate(t["cartas"], 1):
         inv = " (invertida)" if c["invertida"] else ""
         L.append(f"**{i}. {c['posicion']} → {c['nombre']}{inv}**")
+        if c.get("baraja") == "waite":
+            L.append(f"- Escena: {c['escena']}" if "escena" in c else f"- Figura: {c['rol']}")
+            L.append(f"- Lectura ({'invertida' if c['invertida'] else 'derecha'}): {c['lectura']}")
+            if not c["invertida"] and "invertido" in c:
+                L.append(f"- (Invertida diría: {c['invertido']})")
+            if "matiz_palo" in c:
+                L.append(f"- Palo: {c['matiz_palo']}")
+            if "nota_numeracion" in c:
+                L.append(f"- ⚠ {c['nota_numeracion']}")
+            L.append("")
+            continue
         if c["tipo"] == "mayor":
             L.append(f"- Arquetipo: {c['arquetipo']}")
             L.append(f"- Eje: {c['eje']}")
@@ -177,12 +235,14 @@ def main() -> None:
     ref_tiradas = json.loads(REF.read_text(encoding="utf-8"))["tiradas"]
     ap = argparse.ArgumentParser(description="Tirada simulada de Tarot de Marsella")
     ap.add_argument("--tirada", choices=tuple(ref_tiradas), default="tres")
+    ap.add_argument("--baraja", choices=("marsella", "waite"), default="marsella",
+                    help="sistema de significados: Marsella (número × palo) o Rider-Waite-Smith (por escena)")
     ap.add_argument("--solo-mayores", action="store_true")
     ap.add_argument("--invertidas", action="store_true")
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
-    t = tirada(a.tirada, a.solo_mayores, a.invertidas, a.seed)
+    t = tirada(a.tirada, a.solo_mayores, a.invertidas, a.seed, a.baraja)
     print(json.dumps(t, ensure_ascii=False, indent=2) if a.json else a_markdown(t))
 
 

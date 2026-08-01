@@ -40,12 +40,12 @@ def consultar(pregunta: str | None = None, metodo_iching: str = "yarrow",
               tipo_tarot: str = "tres", invertidas: bool = False,
               dt_local: datetime | None = None, tz: float = -5.0,
               lat: float = -12.0464, lon: float = -77.0428,
-              seed: int | None = None) -> dict:
+              seed: int | None = None, baraja: str = "marsella") -> dict:
     if dt_local is None:
         dt_local = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(hours=tz)
     ich = iching.tirada(metodo_iching, seed)
     cielo = astro.carta(dt_local, tz, lat, lon)
-    tar = tarot.tirada(tipo_tarot, False, invertidas, seed)
+    tar = tarot.tirada(tipo_tarot, False, invertidas, seed, baraja)
     datos = {"iching": ich, "cielo": cielo, "tarot": tar}
     return {"sello": sello(pregunta, dt_local, datos), **datos}
 
@@ -79,6 +79,8 @@ def main() -> None:
     ap.add_argument("--iching", choices=("yarrow", "monedas"), default="yarrow")
     ap.add_argument("--tarot", choices=("una", "tres", "cruz", "arbol"), default="tres")
     ap.add_argument("--invertidas", action="store_true")
+    ap.add_argument("--baraja", choices=("marsella", "waite"), default="marsella",
+                    help="sistema de significados del tarot")
     ap.add_argument("--fecha", help="AAAA-MM-DD (hora local)")
     ap.add_argument("--hora", help="HH:MM (hora local)")
     ap.add_argument("--lat", type=float, default=-12.0464)
@@ -96,7 +98,8 @@ def main() -> None:
         h, mi = (int(x) for x in a.hora.split(":"))
         dt = dt.replace(hour=h, minute=mi, second=0, microsecond=0)
 
-    c = consultar(a.pregunta, a.iching, a.tarot, a.invertidas, dt, a.tz, a.lat, a.lon, a.seed)
+    c = consultar(a.pregunta, a.iching, a.tarot, a.invertidas, dt, a.tz, a.lat, a.lon,
+                  a.seed, a.baraja)
     print(json.dumps(c, ensure_ascii=False, indent=2) if a.json else a_markdown(c))
 
 
