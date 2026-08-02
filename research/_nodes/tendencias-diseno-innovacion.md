@@ -1,10 +1,13 @@
-# Tendencias en diseño: qué tiene impacto real y qué es propuesta
+# Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
+> 📌 *Este node se llamaba `tendencias-diseno.md` hasta el 2026-08-02, cuando el alcance se amplió
+> de **diseño** a **diseño e innovación** (ver §0). Las iteraciones 1 a 3 (§1 a §11) cubren solo la
+> mitad de diseño; la mitad de innovación arranca en §12.*
 > Fecha de elaboración: 2026-07-26 · Última actualización: 2026-08-02 · Versión: v3.0 (iteración 3)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
-> Pregunta permanente: **¿qué tendencias de diseño tienen impacto tangible demostrado y
-> cuáles son propuestas innovadoras todavía sin respaldo?**
+> Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
+> demostrado y cuáles son propuestas todavía sin respaldo?**
 > Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iter. 2: F-380 a F-398 ·
 > iter. 3: F-399 a F-429).
 >
@@ -19,6 +22,41 @@
 > atribuyen a un Gartner que nunca las publicó), **H5, H10, H11 y H15 pasan a `parcial`**, y el
 > **desmentido oficial de MercadoLibre** vuelve contestado el caso testigo con el que la
 > iteración 2 refutó H17. Ver §11.
+
+## 0. 🎯 Alcance del node (ampliado el 2026-08-02)
+
+Este node cubre **dos dominios hermanos, no uno**:
+
+| Dominio | Qué entra | Dónde vive |
+|---|---|---|
+| 🎨 **Diseño** | Producto/UX, interfaces con IA, design systems, service design, estética y visual, valor del diseño y su crítica | §1 a §11 (iteraciones 1-3) |
+| 💡 **Innovación** | Gestión de la innovación (I+D, ambidestreza, stage-gate, open innovation), innovación corporativa e *innovation labs*, difusión y adopción, medición y ROI de la innovación, insurtech | §12 en adelante (desde la iteración 4) |
+
+**Por qué se amplió y por qué en el mismo node, no en uno nuevo.** No es una anexión oportunista:
+las dos disciplinas comparten la **estructura del problema** que este node investiga desde su
+creación — *una industria que sobrevendió su efecto promedio y produce su propia evidencia con
+función comercial*. La regla del proyecto es una fuente de verdad por tema, y aquí el tema real no
+es "diseño": es **cómo se distingue el impacto tangible de la propuesta sin respaldo en las
+disciplinas que se venden a sí mismas como motores de valor**. Diseño e innovación son dos casos del
+mismo fenómeno, y separarlos duplicaría el aparato (escala de madurez, tablero de hipótesis, reglas
+de criterio) en vez de ponerlo a prueba en un segundo dominio.
+
+**Lo que la ampliación exige de cada corrida.** Además de lo de siempre (§ siguiente), toda
+iteración a partir de la 4 debe:
+
+1. **Cubrir los dos dominios**, o declarar explícitamente cuál no tocó y por qué. Una corrida que
+   solo trae diseño está incompleta, no neutra.
+2. **Probar la transferencia de las reglas.** Las 21 reglas de §7 se destilaron con evidencia de
+   diseño. Cada una es una **hipótesis** en el dominio de innovación hasta que se verifique allí.
+   Marcar en §7 qué reglas ya se probaron en ambos dominios y cuáles siguen siendo solo de diseño.
+3. **No promediar los dominios.** Si el patrón se sostiene en diseño y falla en innovación, eso es un
+   hallazgo — no se resuelve con una conclusión intermedia.
+
+⚠️ **Nota operativa para futuras sesiones:** el prompt de la rutina programada todavía dice
+"tendencias en diseño". **Este node manda sobre ese prompt**: el alcance vigente es el de esta
+sección. Si la rutina se edita alguna vez, ampliarlo allí también.
+
+---
 
 ## 🔁 Cómo se usa y se enriquece este node
 

@@ -312,7 +312,7 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
   el hallazgo de este node sobre el broker elevando la confianza (§3.3) como evidencia
   local peruana consistente con el marco causal de por qué la intermediación persiste
   incluso en mercados mucho más digitalizados.
-- [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué es propuesta]] — su
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — su
   hipótesis H8 conecta la evidencia causal sobre *dark patterns* (que casi cuadruplican la
   aceptación de un plan dudoso) con la causa #1 de desconfianza en seguros en Perú que documenta
   este node: la falta de información.

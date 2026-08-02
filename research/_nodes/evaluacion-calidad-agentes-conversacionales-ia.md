@@ -245,7 +245,7 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   seguros (Mundo vs. Perú)]] — una mala experiencia con el agente de IA alimenta
   directamente el problema de desconfianza (~48%) ya documentado en ese node; medir y
   corregir errores del agente es una palanca concreta sobre ese número.
-- [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué es propuesta]] — sus
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — sus
   reglas C8 y C11 son criterios de diseño que este node debería incorporar a su instrumentación:
   la explicabilidad genérica **no** calibra la confianza (produce sobre-confianza; lo que la calibra
   es la verificabilidad de la salida), y toda métrica de productividad autorreportada debe

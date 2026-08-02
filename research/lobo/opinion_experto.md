@@ -555,7 +555,7 @@ calculado, con una herramienta, no con un texto.
 - **Actualizado:** 2026-07-25
 
 ### 21. El "valor del diseño" que sostiene cualquier caso de negocio interno debe argumentarse por mecanismo, no por multiplicador — las cuatro cifras más citadas de la industria no resisten escrutinio de fuente primaria
-Investigación 360° sobre tendencias de diseño (node nuevo `_nodes/tendencias-diseno.md`) rastrea las
+Investigación 360° sobre tendencias de diseño (node nuevo `_nodes/tendencias-diseno-innovacion.md`) rastrea las
 cuatro cifras de ROI de diseño más repetidas globalmente y las cuatro colapsan: "McKinsey +32%/+56%"
 es un reporte de 2018 sin significancia estadística publicada, sin citas y sin análisis de sesgo de
 muestreo, 8 años sin replicar; "$1 invertido en UX devuelve $100" termina en un reporte de Forrester
@@ -1204,7 +1204,7 @@ o comete un error?" — que es justo donde la evidencia dice que falla hoy.
   (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
 - **2026-07-27** — Corrida diaria de refinamiento. El ledger creció de F-235 a F-328 desde la
   última corrida (2026-07-26): investigación `/trinidad` de 360° sobre tendencias de diseño (node
-  nuevo `_nodes/tendencias-diseno.md`, 92 fuentes) — **cambio sustancial**. Es el node menos
+  nuevo `_nodes/tendencias-diseno-innovacion.md`, 92 fuentes) — **cambio sustancial**. Es el node menos
   centrado en seguros de los que ha entrado al ledger hasta hoy (cubre producto/UX, IA, design
   systems, consultoras de diseño, mercado laboral del gremio), así que filtré con criterio de
   negocio qué de ahí es accionable para Rimac en vez de sumarlo todo: tomé solo lo que el propio
@@ -1294,7 +1294,7 @@ o comete un error?" — que es justo donde la evidencia dice que falla hoy.
 - **2026-07-30** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
   78584ad→ef3a2a3) y leí `codice.md` completo: el ledger creció de F-379 a F-398 desde la última
   corrida (2026-07-29) — **cambio sustancial** en volumen, pero el crecimiento entero es la
-  iteración 2 de un solo node (`_nodes/tendencias-diseno.md`), que ya venía marcado como el menos
+  iteración 2 de un solo node (`_nodes/tendencias-diseno-innovacion.md`), que ya venía marcado como el menos
   centrado en seguros de todos los que ha recibido esta opinión (mismo criterio de filtro que
   apliqué el 2026-07-27). Integré con criterio de negocio solo lo transferible a Rimac/seguros, no
   el lote completo: sumé tesis 24 (generative UI — interfaces que la IA genera dinámicamente ya
