@@ -63,8 +63,8 @@ tienen simulación de consumidores calibrada con microdato nacional, no solo sup
   frente a seguros (Mundo vs. Perú)]] (SBS, APESEG, marginales)
 - Posicionado por → [[behavioral-design-estado-disciplina|Behavioral design: estado de la
   disciplina y del mercado]] en la frontera de IA + usuarios sintéticos
-- Patrón compartido con → [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué
-  es propuesta]]: su hipótesis H9 (los diseñadores declaran rechazo a la IA mientras la adoptan
+- Patrón compartido con → [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto
+  real y qué es propuesta]]: su hipótesis H9 (los diseñadores declaran rechazo a la IA mientras la adoptan
   masivamente) es estructuralmente el mismo fenómeno que modela la variable
   `disposicion_compartir_datos_pricing` — desconfianza abstracta declarada ≠ conducta real.
 

@@ -360,7 +360,7 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
   Bloque 4 del Playbook del Asesor de RIMAC (manejo de objeciones, C.1-C.9) es exactamente el
   punto donde este node señala la brecha de citas más grande del playbook — nombra 9 sesgos
   cognitivos sin ninguna fuente, lo inverso de cómo debería repartirse el rigor.
-- [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué es propuesta]] — aporta
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — aporta
   el respaldo general de lo que este node aplica al caso de seguros: el efecto estética-usabilidad
   se reduce a menos de la mitad al controlar por **fluidez de procesamiento** (claridad > ornamento),
   y su hipótesis H7 propone testear exactamente eso en material de venta de Rimac.

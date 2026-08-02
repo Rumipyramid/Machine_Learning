@@ -925,7 +925,7 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   estructurado, Espejo/Transformación-AMI, entregables del equipo). Más reciente y más completo
   que el output de 2026-07-23 citado arriba — ver también sus dos láminas explícitamente nuevas
   (04 y 17, "añadidas a pedido, no están en el reporte original" según su propio endnote).
-- [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué es propuesta]] — sus
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — sus
   reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
   transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la
   experiencia de venta.

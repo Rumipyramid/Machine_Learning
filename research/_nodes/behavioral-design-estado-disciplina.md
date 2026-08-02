@@ -309,7 +309,7 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   casi enteramente i-frame (guiones, manejo de objeciones), mientras los nodos rojos del mapa
   sistémico del proyecto (perfilamiento, monitoreo de calidad) — el rediseño s-frame pendiente —
   siguen sin resolverse.
-- [[tendencias-diseno|Tendencias en diseño: qué tiene impacto real y qué es propuesta]] — node
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — node
   hermano: el mismo patrón que este node documenta en behavioral design (efecto promedio
   sobrevendido, corregido por sesgo de publicación) aparece allí en el diseño (ROI sobrevendido,
   desarmado por eco de cita). Ambos concluyen lo mismo: la disciplina se defiende mejor por
