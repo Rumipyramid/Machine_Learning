@@ -1344,3 +1344,16 @@ o comete un error?" — que es justo donde la evidencia dice que falla hoy.
   última corrió el 2026-07-29 sobre F-23/F-36/F-40/F-41/F-42) encuentre un matiz de mecanismo al
   leer a fondo una fuente ya citada solo por su resumen. Bitácora con 21 días de historial
   (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-02** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  02ad91d→c46dbd3) y leí `codice.md` completo: sigue tope en F-398, idéntico al que ya procesó la
+  corrida de ayer (2026-08-01) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
+  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h. Repasé
+  las 24 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé
+  ninguna conexión nueva entre tesis solo por completar el paso — la racha de "sin cambios" desde
+  el 2026-07-30 ya agotó las conexiones razonables disponibles entre las tesis más recientes
+  (21-24). La última revisión profunda (rutina de `cronista`, cada ~3 días) sigue siendo la del
+  2026-07-29 (F-23/F-36/F-40/F-41/F-42) — cuatro días sin corrida nueva, pero esa rutina es de
+  `cronista`, no de este proceso diario, así que no la disparo aquí. Próximo salto de
+  tesis/confianza sigue condicionado a que alguna skill de investigación registre fuentes nuevas en
+  el ledger. Bitácora con 22 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30
+  días — sin podar todavía.
