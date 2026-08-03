@@ -180,13 +180,26 @@ tesis: lo validado aquí es un mecanismo de **feedback + microincentivo** ("UBI 
 no necesariamente el pricing real de la prima — separa el mecanismo conductual que sí
 sostiene el cambio de manejo (feedback y metas) del vehículo comercial (telemática con
 precio dinámico real), que es el que carga el techo de confianza documentado en UK.
+**[Nota 2026-08-03 — corrección de duplicado, no evidencia nueva]** El barrido de innovación
+(`_nodes/tendencias-diseno-innovacion.md` §12.4) registró F-442 presentándolo como "la mejor
+evidencia causal de todo el node" — pero es el **mismo estudio** que ya sostiene esta tesis:
+mismo NCT06101251, mismo N=1,449, mismos cuatro brazos, mismos efectos. No es una segunda fuente
+independiente, es el mismo RCT re-registrado desde una pista distinta (marketer/innovación en vez
+de seeker/comportamiento). El único dato genuinamente nuevo que aporta esa segunda pasada: el
+**conflicto de interés del financiador no se verificó** en ninguna de las dos lecturas — si pagó el
+estudio una aseguradora o una plataforma de telemática con interés en el resultado, eso pesa antes
+de citarlo en un caso de negocio interno. No sube la confianza de la tesis (sigue siendo la misma
+evidencia), pero es la corrección de proceso correcta: contar F-442 como respaldo adicional habría
+sido inflar artificialmente el número de fuentes independientes detrás de tesis 7.
 - **Evidencia:** F-19 (🟢A, marco i-frame/s-frame), F-23 (🟢A, RCT de campo
-  telemático, N=1,449, preregistrado), F-166/F-167 (🟠D, techo de adopción/confianza en UK)
+  telemático, N=1,449, preregistrado — re-registrado también como F-442, mismo estudio),
+  F-166/F-167 (🟠D, techo de adopción/confianza en UK)
 - **Confianza:** Alta en que el producto funciona donde se adopta y en que el efecto persiste
   más allá de la ventana activa de monitoreo; Media en la velocidad de adopción masiva sin
   trabajar antes la confianza de entrada. El mecanismo validado es feedback+incentivo, no
-  pricing dinámico real — no generalizar automáticamente de uno a otro.
-- **Actualizado:** 2026-07-29
+  pricing dinámico real — no generalizar automáticamente de uno a otro. Pendiente: verificar
+  conflicto de interés del financiador del RCT antes de usarlo como prueba neutral en un deck.
+- **Actualizado:** 2026-08-03
 
 ### 8. El riesgo regulatorio por contacto comercial no consentido en seguros peruanos ya no es teórico — es expediente activo, y ya tocó al sector
 INDECOPI fiscaliza con IA más de 7 millones de audios de llamadas comerciales al
@@ -594,7 +607,27 @@ misma lección que tesis 21 ya aplicaba a diseño, ahora con un caso paralelo en
 cifra de "productividad con IA" para las propias herramientas internas del proyecto (`lapuerta`,
 `cerrajero`, el agente conversacional) debe presupuestar ese costo de verificación, no solo el tiempo
 de generación — instinto, no medido en este proyecto específico.
-- **Actualizado:** 2026-07-30
+**[Corrección 2026-08-03]** La cifra que cité el 07-30 sobre el "impuesto de verificación" (~4.3
+min/senior vs. ~1.2 min/junior, escalando con la madurez del código base) **no tiene fuente primaria
+rastreable** — es la sexta cadena de eco de cita que encuentra el mismo node que ya había desmontado
+las cuatro cifras de ROI de diseño (iteración 3, `_nodes/tendencias-diseno-innovacion.md` §11.2): el
+rastreo llega a un artículo de DZone que cita "un estudio reciente de 250 desarrolladores" sin nombrar
+autor, institución ni enlace, y el preprint que yo mismo cité como respaldo (F-388) resulta ser de
+autor único y de naturaleza sintética — un marco teórico que cita cifras de terceros, no un
+experimento propio. **Retiro esa cifra específica** de cualquier caso de negocio interno sobre
+productividad con IA (`lapuerta`, `cerrajero`, agente conversacional). Lo que sí sobrevive con
+telemetría real e independiente (F-406, N grande): la IA sí desplaza esfuerzo de generación hacia
+revisión (+98% de PRs, +91% de tiempo de revisión). Y lo que se invierte respecto a lo que yo mismo
+asumí en julio: un estudio real (F-407, 400 revisores, 11,429 revisiones) muestra que **más
+experiencia/exposición acumulada produce MENOS escrutinio, no más** — el riesgo no está en el junior
+que revisa con cuidado por inseguridad, está en el senior que ya se acostumbró a confiar en la salida
+de la IA. Corrijo mi propia lectura de julio: cualquier control de calidad sobre trabajo asistido por
+IA en el proyecto debería vigilar más de cerca al revisor experimentado y complaciente, no al novato
+cauteloso. Esto refuerza, con un dato adicional propio, el patrón central de esta tesis: la iteración 3
+confirma que las cinco cifras de ROI de diseño ya desmontadas siguen circulando sin que nadie las
+retire — "no rota, acumula". El mercado no se autocorrige; el filtro tiene que ser interno, cada vez
+que una cifra bonita entra al ledger.
+- **Actualizado:** 2026-08-03
 
 ### 22. La personalización con IA puede reducir la conversión en vez de aumentarla cuando el dato es sensible — riesgo directo para telemática/UBI y para cualquier asesor conversacional de Rimac
 La misma investigación 360° encuentra evidencia de campo (no solo laboratorio) de que el consejo
@@ -691,6 +724,30 @@ o comete un error?" — que es justo donde la evidencia dice que falla hoy.
   consistencia. Media-baja en la transferencia directa a un producto de seguros peruano — ninguna
   fuente es de Perú ni de seguros; la lectura de riesgo para Rimac es instinto razonado, no medido.
 - **Actualizado:** 2026-07-30
+
+### 25. La rentabilidad del insurtech no depende del canal digital ni de la IA — depende de disciplina de suscripción, y hoy hay evidencia auditada de ambos signos dentro del mismo subsector
+La iteración 4 del node de tendencias (ampliado a "diseño e innovación") abrió un ángulo de negocio
+directo de seguros que no tenía precedente en este ledger: dos insurtechs de auto 100% digital,
+mismo modelo declarado, misma clase de evidencia (filing SEC/carta a accionistas), y resultados
+opuestos. **Root Inc.** cerró con combined ratio de **91.4%** (rentable en suscripción, <100%),
+net income positivo el trimestre y un giro de −US$101.3M (2023) a +US$78.5M operativo. **Lemonade**
+sigue en **~139%** de combined ratio — todavía con pérdida técnica de suscripción, aunque su gross
+loss ratio mejoró 16pp interanual y guía EBITDA ajustado positivo recién para Q4 2026. Es el mismo
+subsector, la misma promesa de "seguro nativo digital" — y una diferencia de casi 50 puntos de
+combined ratio entre ambas. El propio node marca esto como hipótesis abierta (H29), no resuelta: la
+variable que separa a Root de Lemonade **todavía no está aislada** — la lectura razonable, no
+probada, es que no es la capa tecnológica sino la disciplina de suscripción y selección de riesgo,
+exactamente el tipo de ejecución que un insurtech puro no puede comprarse con capital de venture. Un
+descuento honesto que el propio node señala: ninguna de las dos cifras controla por mix de producto
+ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" de "cartera más madura".
+- **Evidencia:** F-449 (🟢A/filing SEC, Root Inc. 10-Q/10-K), F-450 (🟡C/agregador sobre datos SEC +
+  carta a accionistas, Lemonade)
+- **Confianza:** Alta en que la divergencia es real y auditada (ambas fuentes se apoyan en datos de
+  filing, no en autorreporte de marketing); Media-baja en la causa — el propio node deja la pregunta
+  abierta (H29) y advierte que ninguna cifra controla por mix de producto o antigüedad de cartera. Leer
+  "digital = rentable" o "digital = insostenible" en cualquiera de las dos direcciones sería forzar una
+  lectura que la evidencia todavía no sostiene.
+- **Actualizado:** 2026-08-03
 
 ## 💰 Oportunidades
 
@@ -805,6 +862,14 @@ o comete un error?" — que es justo donde la evidencia dice que falla hoy.
   la fricción deliberada en decisiones difíciles calibra mejor la confianza del
   cliente que "explicar más"; en decisiones fáciles, agregar explicación no
   suma y puede generar sobre-confianza.
+- **Exigir combined ratio o loss ratio auditado antes de leer cualquier apuesta de
+  innovación/insurtech como éxito.** Tesis 25: Root y Lemonade muestran que el mismo modelo
+  digital produce resultados opuestos — "es digital" o "levantó capital" no dice nada sobre
+  rentabilidad real. Aplica también puertas adentro: los labs corporativos peruanos activos hoy
+  (BCP CIX, Pacífico "La Cápsula") no tienen ningún dato público de retorno auditado, y BCP nunca
+  verificó públicamente si cumplió su propia meta 2022 de 10% de ingresos nuevos vía innovación
+  para 2025 — el estándar de evidencia que exige tesis 21 para "ROI de diseño" debe aplicarse
+  igual de estricto a cualquier cifra de "ROI de innovación" que circule internamente.
 
 ## ⚠️ Riesgos
 
@@ -958,7 +1023,18 @@ o comete un error?" — que es justo donde la evidencia dice que falla hoy.
   deck o caso de negocio interno.** Tesis 21: las cuatro colapsan al rastrear la fuente primaria —
   una no tiene estudio rastreable, otra depende de un reporte tras muro de pago que nadie leyó,
   otra es N=8 de la propia agencia que vende el producto. Es vulnerable en cualquier sala con un
-  CFO o Legal/Compliance presente.
+  CFO o Legal/Compliance presente. **Mismo cuidado aplica del lado de innovación:** el barrido de
+  agosto encontró un caso peor que el eco de cita — cifras del tipo "80-95% de nuevos productos
+  fracasan" que no tienen **ninguna** fuente primaria localizable (huérfano de cita, F-444). Ni
+  diseño ni innovación tienen las cifras espectaculares que su propio marketing repite.
+- **Citar el "impuesto de verificación" (~4.3 min/senior vs. ~1.2 min/junior en revisión de código
+  con IA) como dato medido.** Corrección propia (tesis 21, nota 2026-08-03): esa cifra específica
+  no tiene fuente primaria — la retiré. Lo que sí hay evidencia real: el revisor con más experiencia
+  acumulada escrutina **menos**, no más, un hallazgo que invierte lo que yo mismo asumí en julio.
+- **Tratar "agregar explicabilidad" a un asistente o agente de IA como solución genérica de
+  confianza.** Tesis 22: la explicabilidad tiene correlación moderada, no dominante, con la
+  confianza — y sin verificabilidad puede producir sobre-confianza en vez de calibrarla,
+  especialmente si se despliega parejo en decisiones fáciles y difíciles por igual.
 - **Tratar "agregar explicabilidad" a un asistente o agente de IA como solución genérica de
   confianza.** Tesis 22: la explicabilidad tiene correlación moderada, no dominante, con la
   confianza — y sin verificabilidad puede producir sobre-confianza en vez de calibrarla,
@@ -1357,3 +1433,29 @@ o comete un error?" — que es justo donde la evidencia dice que falla hoy.
   tesis/confianza sigue condicionado a que alguna skill de investigación registre fuentes nuevas en
   el ledger. Bitácora con 22 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30
   días — sin podar todavía.
+- **2026-08-03** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  02ad91d→725dbf0) y leí `codice.md` completo: el ledger creció de F-398 a F-468 desde la última
+  corrida (2026-08-02) — **cambio sustancial**, 70 fuentes nuevas en dos iteraciones del mismo node
+  (`_nodes/tendencias-diseno-innovacion.md`): iteración 3 (F-399 a F-429, el node se audita a sí
+  mismo — desmonta su propio hallazgo de julio) e iteración 4 (F-430 a F-468, primera apertura del
+  node al dominio de **innovación**, no solo diseño). Filtré con el mismo criterio de negocio que ya
+  usé el 07-27/07-29/07-30 para este node: integré solo lo transferible a Rimac/seguros. Sumé tesis
+  25 (Root vs. Lemonade — mismo modelo insurtech digital, combined ratio de 91.4% vs. ~139%; la
+  rentabilidad depende de disciplina de suscripción, no de la capa tecnológica, con la causa exacta
+  todavía como hipótesis abierta del propio node, H29). Corregí tesis 21: la cifra del "impuesto de
+  verificación" que sumé el 07-30 (4.3 min/senior vs. 1.2 min/junior) resultó ser, en la propia
+  auditoría del node, una sexta cadena de eco de cita sin fuente primaria — la retiré, y el dato real
+  que sí sobrevive invierte lo que yo había asumido: más experiencia acumulada produce **menos**
+  escrutinio del código generado por IA, no más. Añadí un matiz de proceso a tesis 7: F-442 (el RCT
+  de UBI que el barrido de innovación presentó como "el hallazgo más accionable") es el **mismo**
+  estudio que ya sostiene esa tesis (F-23, mismo NCT06101251) — no lo sumé como respaldo adicional
+  para no inflar el conteo de fuentes independientes, solo tomé el dato nuevo real que aportaba
+  (conflicto de interés del financiador sin verificar). Sumé una oportunidad (exigir combined/loss
+  ratio auditado antes de leer cualquier apuesta de innovación como éxito — incluye que los labs
+  peruanos activos hoy, BCP CIX y Pacífico "La Cápsula", no tienen ningún dato público de retorno) y
+  dos riesgos (cifras de fracaso de producto sin fuente primaria localizable, F-444; y la cifra ya
+  retirada del impuesto de verificación). Ninguna tesis 1-20, 22-24 requirió ajuste de confianza —
+  el ledger nuevo las toca solo por conexión razonada, no por evidencia directa nueva sobre
+  seguros/salud/Perú, salvo tesis 25 (nueva, con evidencia directa de filing) y las correcciones ya
+  descritas en tesis 7 y 21. Bitácora con 23 días de historial (2026-07-12 a hoy), dentro de la
+  ventana de ~30 días — sin podar todavía.
