@@ -82,6 +82,7 @@ por afirmación cuando corresponda.
 | `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
 | `_outputs/venta-vida-latam-360-2026-07-27.md` — informe de 360° (`/trinidad`) entregado al usuario sobre venta de vida en LATAM: digital vs. híbrido vs. tradicional | `venta-vida-digital-hibrida-latam`, `futuro-asesores-seguros-venta-digital` | 2026-07-27 | al día |
 | `_outputs/analisis-churn-renovacion-rimac-2026-07-30.md` — informe entregado al usuario: análisis del modelo de churn/renovación de RIMAC + validación con literatura + alertas y recomendaciones por ramo (Churn transversal, VEH, AMI) | `modelo-churn-renovacion-rimac` | 2026-07-30 | al día |
+| `_outputs/churn-renovacion-rimac-resumen-claro-2026-07-30.md` — versión en lenguaje simple (sin jerga de analítica) del análisis anterior, para audiencia no especialista, con la voz de El Lobo | `modelo-churn-renovacion-rimac`, `research/lobo/opinion_experto.md` §tesis 21 | 2026-07-30 | al día |
 
 > **Estado**: `al día` o `requiere refresh`.
 
