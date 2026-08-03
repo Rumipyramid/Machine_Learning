@@ -18,40 +18,26 @@
 
 ## Datos natales (para el skill `/edipo2`)
 - **Fecha de nacimiento:** 17 de mayo de 1989.
-- **Hora de nacimiento:** 12:30 (hora local).
-- **Lugar de nacimiento:** San Isidro, Lima, Perú (12°05'50"S, 77°02'20"W). Huso UTC-5
-  (Perú no aplicó horario de verano en mayo de 1989) → 17:30 UTC.
-- Registrado a pedido explícito del usuario (fecha 2026-07-30; hora y lugar 2026-08-03) para
-  que las consultas de `/edipo2` puedan leerse sobre su carta natal y no solo sobre el cielo
-  del momento.
+- **Hora de nacimiento:** *pendiente de verificación por el usuario* — **no registrar hasta
+  que la confirme** (pedido explícito, 2026-08-03). Sin ella no hay Ascendente, Medio Cielo
+  ni casas, y el grado de la Luna queda con ~12° de incertidumbre (el signo, Libra, sí es
+  seguro). No derivar ni guardar carta natal calculada mientras siga pendiente.
+- **Lugar de nacimiento:** San Isidro, Lima, Perú (12°05'50"S, 77°02'20"W). Huso UTC-5 (Perú
+  no aplicó horario de verano en mayo de 1989).
+- Registrado a pedido explícito del usuario (fecha 2026-07-30; lugar 2026-08-03) para que las
+  consultas de `/edipo2` puedan leerse sobre su carta natal y no solo sobre el cielo del momento.
 
-### Carta natal calculada (para no recomputar en cada sesión)
-Calculada con `.claude/skills/edipo2/scripts/astro.py`. **Casas por signos enteros**; en
-Placidus algunos cuerpos caen en la casa anterior (ver nota del Sol).
+### Lo que sí se puede calcular sin la hora
+Posiciones planetarias (signo y grado) y aspectos entre planetas, porque no dependen de la
+hora salvo la Luna. **No** se pueden calcular Ascendente, MC, casas ni nada derivado de ellos.
 
-| Punto | Posición | Casa (signos enteros) |
-|---|---|---|
-| **Ascendente** | 25°46' Leo | — (regente: Sol) |
-| **Medio Cielo** | 2°54' Géminis | — |
-| Sol | 26°46' Tauro | 10 · **a 6°08' del MC: conjunción al Medio Cielo en cualquier sistema** |
-| Luna | 22°51' Libra | 3 |
-| Mercurio ℞ | 5°48' Géminis | 11 |
-| Venus | 7°57' Géminis | 11 |
-| Júpiter | 13°22' Géminis | 11 |
-| Marte | 11°28' Cáncer | 12 (en caída) |
-| Saturno ℞ | 13°22' Capricornio | 6 |
-| Urano ℞ | 4°44' Capricornio | 6 |
-| Neptuno ℞ | 12°04' Capricornio | 6 |
-| Plutón ℞ | 13°25' Escorpio | 4 |
-| Nodo Norte | 0°32' Piscis | 8 |
-
-- **Aspectos natales cerrados:** Marte oposición Neptuno 0.6° · Marte oposición Saturno 1.9° ·
-  Saturno conjunción Neptuno 1.3° · Mercurio conjunción Venus 2.1° · Saturno sextil Plutón 0.04°.
-- **Balance:** Fuego 0 · Tierra 4 · Aire 4 · Agua 2 — sin ningún planeta en fuego pese al
-  Ascendente Leo. Cardinal 5 · Fijo 2 · Mutable 3.
-- **Tránsitos largos vigentes (2026):** Urano cruzando el MC natal y el stellium de casa 11 ·
-  Plutón en casa 7 desde 2024 · Saturno en cuadratura a su Saturno natal (~37 años) ·
-  segundo retorno nodal exacto a fines de julio de 2026.
+- Sol 26-27° Tauro · Mercurio ℞ ~6° Géminis · Venus ~8° Géminis · Júpiter ~13° Géminis ·
+  Marte ~11° Cáncer · Saturno ℞ ~13° Capricornio · Urano ℞ ~5° Capricornio ·
+  Neptuno ℞ ~12° Capricornio · Plutón ℞ ~13° Escorpio · Nodo Norte ~0°32' Piscis.
+- Luna en **Libra** todo el día, entre 16° y 28° según la hora.
+- **Ciclos vigentes que no dependen de la hora:** Saturno en cuadratura a su Saturno natal
+  (chequeo de los ~37 años, vuelve en 2027) y segundo retorno nodal, exacto a fines de julio
+  de 2026.
 
 ## Perfil
 Psicólogo y diseñador conductual con +10 años de experiencia en investigación aplicada y
