@@ -498,6 +498,48 @@ significan lo mismo, va a leer mal los números.
   marco teórico más cercano encontrado, no una confirmación causal con el dato disponible.
 - **Actualizado:** 2026-07-30
 
+### 22. El voicebot de seguros no es tecnología nueva disfrazada de IA — es el mismo patrón de riesgo del canal 100% digital, ahora con un problema de confianza heredado de 90 años de IVR malo
+Investigación 360° (`/trinidad`, 2026-07-30) sobre IVR y voicebots en seguros. El origen técnico
+no es una novedad: del Voder de Bell Labs (1930s) a los menús DTMF de los 90 y los voicebots
+conversacionales con LLM de esta década hay 90 años de evolución en pasos discretos, no un
+salto repentino — lo único genuinamente nuevo es que ahora el sistema puede entender lenguaje
+natural en vez de forzar un árbol de opciones. Tres papers peer-reviewed convergentes (pista
+empírica) muestran un mecanismo causal específico del canal de voz que no aplica igual a texto:
+la **confianza en un asistente de voz depende de cómo suena** (entonación, velocidad del habla,
+personalidad percibida) — no solo de si responde bien — y esa confianza percibida es la que
+predice si el cliente está dispuesto a dar información sensible o aceptar una recomendación.
+La pista social confirma que el punto de partida no es neutral: existe una cultura ya asentada
+de "frases secretas" para forzar el escalamiento a un humano, y quejas de que un voicebot de
+seguros "ni siquiera puede terminar su propia despedida" — el cliente llega desconfiado por
+décadas de IVR tradicional malo, con un listón de tolerancia más bajo que hacia un chat que
+falla. La pista de negocio es la de mayor volumen y menor independencia: casi toda la cifra de
+ROI/containment (~50% de containment, 40-60% menos tiempo de gestión, hasta 331% de ROI a 3
+años) viene de vendors de la misma categoría de producto con el mismo interés comercial —mismo
+patrón de riesgo epistémico que ya señalé en la investigación de LATAM y Bowtie— pero la
+búsqueda adversarial encontró tres riesgos reales y específicos del canal de voz que el
+discurso de ROI no menciona: (1) **riesgo de E&O**, porque un bot improvisando precio o consejo
+de cobertura está tocando actividad con licencia regulatoria; (2) **fraude por clonación de
+voz**, un vector que no existe en canales de texto y que crece junto con la adopción del canal;
+y (3) la señal más fuerte de todas — **AIG, WR Berkley y Great American ya piden exclusiones de
+póliza para no cubrir responsabilidad derivada de sus propios sistemas de IA**, es decir, ni
+las propias aseguradoras grandes confían lo suficiente en su IA conversacional como para
+asegurarla sin blindaje. Conecta directo con dos tesis previas: con tesis 16 (el reclamo, no la
+venta, es donde falla más lo digital) y con tesis 21 de hoy mismo (RIMAC ya tiene ventanas de
+contacto anticipado bien diseñadas para retención — un voicebot mal diseñado desplegado
+justamente en esa ventana podría generar la fricción exacta que empuja al 59% de cancelación
+voluntaria, en vez de reducirlo).
+- **Evidencia:** F-393 (🟡C, origen histórico), F-396, F-397, F-398 (🟢A, mecanismo de confianza
+  vía antropomorfismo — 3 fuentes convergentes), F-394 (🟠D, ROI/containment autorreportado por
+  vendors, tratar con cautela), F-395 (🟠D/🔴E, fricción social), F-400 (🟠D, riesgo de E&O y
+  fraude de voz), F-401 (🟡C, aseguradoras grandes pidiendo exclusión de póliza para su propia
+  IA), F-399 (🟠D, contexto sectorial de riesgo de confianza en IA de seguros)
+- **Confianza:** Alta en el mecanismo de confianza vía voz/antropomorfismo (3 fuentes A
+  convergentes); Baja-Media en las cifras de ROI/containment (autorreportadas por vendors, sin
+  ninguna fuente que supere C); Alta en que el riesgo de E&O y el meta-riesgo de las
+  aseguradoras pidiendo exclusión de su propia IA son señales reales que ameritan cautela antes
+  de dar a un voicebot autonomía para hablar de cobertura o precio sin supervisión.
+- **Actualizado:** 2026-07-30
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -602,6 +644,17 @@ significan lo mismo, va a leer mal los números.
   el de mayor pérdida potencial doble — se va Y cuesta caro mientras se queda — y es
   exactamente el segmento que la matriz Persistencia × Siniestralidad ya aísla, sin que
   ningún documento interno proponga todavía una jugada específica para él.
+- **Usar voicebot/IA de voz para lo repetitivo y de alto volumen, no para la conversación de
+  cobertura o el reclamo.** Tesis 22: los casos de uso con mejor evidencia (aun autorreportada)
+  son cobertura fuera de horario, absorción de picos de demanda y liberar a agentes licenciados
+  de lecturas de estado repetitivas — exactamente el mismo patrón que ya recomendaba tesis 16
+  para lo digital en general (potenciar al humano en lo complejo, automatizar lo rutinario
+  alrededor de él).
+- **Invertir en el diseño de voz/personalidad del voicebot como palanca de confianza, no solo
+  en la precisión del motor de IA.** Tesis 22, con respaldo de 3 papers A convergentes: la
+  entonación y la personalidad percibida de la voz predicen la confianza y la disposición a
+  compartir información sensible — es una decisión de diseño con evidencia causal detrás, no
+  un detalle estético secundario.
 
 ## ⚠️ Riesgos
 
@@ -744,6 +797,22 @@ significan lo mismo, va a leer mal los números.
   Renovación) con el mismo nivel de confianza que el score de concentración sería repetir, en
   analítica de retención, el mismo error que tesis 6 ya señaló para el nudge: tamaño de efecto
   de laboratorio/backtest no es tamaño de efecto de campo.
+- **Dejar que un voicebot improvise consejo de cobertura o precio sin supervisión.** Tesis 22:
+  las conversaciones de cobertura son actividad con licencia regulatoria — un bot que se sale
+  del guion en esa conversación es, literalmente, un reclamo de E&O en formación. Mismo tipo de
+  riesgo regulatorio ya documentado en tesis 8 (contacto comercial no consentido), ahora en la
+  forma de contenido no supervisado en vez de canal no consentido.
+- **Dimensionar el ROI de un voicebot con las cifras que publican sus propios proveedores.**
+  Tesis 22: casi toda la cifra de containment/ROI encontrada en esta investigación viene de
+  vendors con el mismo interés comercial — mismo patrón de riesgo epistémico que ya señalé para
+  el ecosistema insurtech de LATAM y para Bowtie. Ni una fuente superó C en la rúbrica de
+  rigurosidad para estas cifras específicas.
+- **Desplegar un voicebot en la ventana de contacto anticipado de retención (tesis 21) sin
+  probarlo primero contra la fricción que puede generar.** Tesis 22: el cliente ya llega
+  desconfiado del canal de voz automatizado por años de IVR tradicional — un voicebot mal
+  diseñado justo en el momento en que RIMAC intenta retenerlo podría empujarlo más rápido hacia
+  la cancelación voluntaria que este mismo informe identifica como el problema más grande y
+  menos entendido.
 
 ## 📔 Bitácora
 
@@ -979,3 +1048,20 @@ significan lo mismo, va a leer mal los números.
   tesis previa (1-20) requirió ajuste de confianza — es evidencia nueva sobre un documento del
   proyecto, no sobre el ledger externo existente. Bitácora con 18 días de historial
   (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-07-30 (segunda corrida del día)** — Corrida a pedido explícito del usuario: "quiero
+  saber cómo nacieron las herramientas IVR (Voicebots), cuál es su rol en las empresas de
+  seguros, cómo performa y cuáles son las oportunidades — usa trinidad y al lobo". Corrí
+  `/trinidad` completo (seeker + gossiper + marketer) sobre IVR/voicebots en seguros — registré
+  F-393 a F-401 y creé el node `_nodes/ivr-voicebots-seguros.md` (v1.0). Sumé tesis 22: el
+  origen técnico no es novedad (90 años de evolución desde el Voder de Bell Labs), la confianza
+  en un voicebot depende de cómo suena (3 papers 🟢A convergentes sobre antropomorfismo de voz),
+  el cliente ya llega desconfiado por décadas de IVR tradicional malo (pista social), y el ROI
+  que reportan los proveedores es mayormente autorreportado — pero la búsqueda adversarial
+  encontró riesgo real de E&O (bot improvisando consejo de cobertura), fraude por clonación de
+  voz, y la señal más fuerte: aseguradoras grandes (AIG, WR Berkley, Great American) ya piden
+  exclusión de póliza para no cubrir responsabilidad de su propia IA. Conecté explícitamente con
+  tesis 16 (el reclamo es donde falla más lo digital) y con tesis 21 de la corrida anterior de
+  hoy (un voicebot mal diseñado en la ventana de contacto anticipado de retención podría
+  aumentar, no reducir, la cancelación voluntaria). Añadí 3 oportunidades y 3 riesgos nuevos.
+  Ninguna tesis previa (1-21) requirió ajuste de confianza. Bitácora con 18 días de historial,
+  dentro de la ventana de ~30 días — sin podar todavía.

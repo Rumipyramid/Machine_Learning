@@ -404,3 +404,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[ivr-voicebots-seguros|IVR y Voicebots en seguros]] — confirma en el canal de voz el mismo
+  patrón que este node documenta en general: lo digital falla más en el momento de mayor carga
+  (reclamo), no en la consulta simple; aporta además el mecanismo de por qué (confianza ligada
+  al antropomorfismo de la voz, no solo a la precisión de la respuesta).

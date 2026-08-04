@@ -142,3 +142,8 @@ mezclar ambas causas en una sola gestión de retención desperdicia la ventana y
   tratamiento diferenciado por causa, no la tecnología de detección.
 - `research/lobo/opinion_experto.md` — tesis 21 traduce estos hallazgos a oportunidades y
   riesgos de negocio concretos para RIMAC.
+- [[ivr-voicebots-seguros|IVR y Voicebots en seguros]] — un voicebot mal diseñado en la
+  ventana de gestión anticipada que este node identifica (2-4 meses antes de la fuga/
+  renovación) podría generar la fricción exacta que aumenta, en vez de reducir, la
+  cancelación voluntaria (APC) que este node señala como el vacío de mayor valor sin causa
+  raíz medida.
