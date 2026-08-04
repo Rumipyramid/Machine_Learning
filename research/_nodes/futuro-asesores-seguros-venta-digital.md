@@ -370,6 +370,11 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   asesor humano persiste especialmente en productos complejos, la implicación práctica
   es invertir en mejores herramientas para esa conversación (lo que investiga ese node),
   no en reemplazar la conversación.
+- [[cobranza-seguros-empresariales|Cobranza de seguros con clientes empresariales]] —
+  contraste de visibilidad social: la venta digital de seguros genera cobertura y debate
+  público; la cobranza B2B, tema de este node, no genera ninguno (🧊 sin tracción) —
+  refuerza que la fricción visible depende de si el interlocutor es consumidor individual
+  o empresa.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — ese node documenta casos
   de negocio (Babylon Health, Oscar Health) donde apostar fuerte por tecnología/disrupción
   sin disciplina humana/actuarial de por medio terminó en colapso o en un "reset"

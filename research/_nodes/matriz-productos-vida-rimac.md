@@ -178,6 +178,9 @@ lámina o deck ya construido que use "170%" como cifra puntual.
   conversación. Los 3(+1) productos reales de §1 (VFP, Plan Vida Flexible, Vida Contigo,
   Vida Temporal Total) son los que debe reflejar cualquier mención de catálogo en ese node — VCD
   digital y Endosable digital quedan pendientes, no confirmados.
+- [[cobranza-seguros-empresariales|Cobranza de seguros con clientes empresariales]] —
+  proceso de cobranza corporativa (marco legal, tercerización, automatización) aplicable
+  al ramo Vida cuando el contratante es una empresa.
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — glosario de
   cliente que deliberadamente no cubre el detalle técnico de coberturas (IAFA, EG, ITP,
   PEI, DPP); ese detalle vive en el §3 de este node.
