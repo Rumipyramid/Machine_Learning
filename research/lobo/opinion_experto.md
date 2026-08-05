@@ -1459,3 +1459,16 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   seguros/salud/Perú, salvo tesis 25 (nueva, con evidencia directa de filing) y las correcciones ya
   descritas en tesis 7 y 21. Bitácora con 23 días de historial (2026-07-12 a hoy), dentro de la
   ventana de ~30 días — sin podar todavía.
+- **2026-08-05** — Corrida diaria de refinamiento (no corrió el 2026-08-04: sin commit de este
+  proceso ese día). Confirmé `main` actualizado (fast-forward 02ad91d→c00c843, que ya trajo consigo
+  el propio commit del 2026-08-03 de esta opinión) y leí `codice.md` completo: sigue tope en F-468,
+  idéntico al que ya procesó la corrida del 2026-08-03 — **sin cambios sustanciales** en evidencia,
+  cero fuentes nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde
+  entonces. Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger
+  vigente, y no forcé ninguna conexión nueva entre tesis solo por completar el paso — la corrida del
+  08-03 ya agotó las conexiones razonables disponibles (tesis 25, correcciones a tesis 7 y 21). La
+  última revisión profunda (rutina de `cronista`, cada ~3 días) sigue siendo la del 2026-07-29
+  (F-23/F-36/F-40/F-41/F-42) — seis días sin corrida nueva, pero esa rutina no es de este proceso
+  diario, así que no la disparo aquí. Próximo salto de tesis/confianza sigue condicionado a que
+  alguna skill de investigación registre fuentes nuevas en el ledger. Bitácora con 24 días de
+  historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
