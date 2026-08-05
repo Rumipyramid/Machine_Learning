@@ -134,6 +134,16 @@ Formato de cada afirmación de esta sección: **Afirmación** → *Evidencia* (d
   **Rigurosidad: 2/5.** (Infobae, 2026)
 - **Un symptom-checker de IA en un hospital comunitario japonés tuvo solo 45.1% de precisión
   diagnóstica** en 3 años de uso real, sin mejora en el tiempo.
+  **[Revisión profunda 2026-08-05]** El dato interesante no es el 45.1% agregado sino *qué lo
+  explica*: en el modelo de regresión logística multivariante de los propios autores, la
+  precisión depende casi enteramente de si la enfermedad es **común y de presentación típica**
+  — con enfermedades poco comunes la precisión cae a **24.2%** (30/124) y con presentaciones
+  atípicas a **14.5%** (12/83). Y el hallazgo central del estudio (3 años de seguimiento
+  longitudinal, 2019-2022) es que **no hubo curva de aprendizaje**: la precisión no mejoró con
+  más uso real en producción. Implicación directa para el gate de seguridad (§3.0, RQ1/RQ20):
+  el symptom-checker falla más justo donde el riesgo clínico es mayor (lo raro/atípico es lo
+  que un triage automatizado necesita atrapar, no lo común), y desplegarlo más tiempo sin
+  reentrenamiento activo no lo corrige solo.
   *Evidencia:* estudio observacional retrospectivo, peer-reviewed. ⚠️ Validez externa baja
   (un solo hospital). **Rigurosidad: 5/5.** (PMC — estudio Japón, 2024)
 - **El symptom-checker finlandés Omaolo logró una validación formal robusta como dispositivo
@@ -152,6 +162,17 @@ Formato de cada afirmación de esta sección: **Afirmación** → *Evidencia* (d
   2023)
 - **Medir solo "precisión diagnóstica" es la métrica equivocada para evaluar chatbots
   médicos**; lo que importa es el *outcome* de salud real del paciente.
+  **[Revisión profunda 2026-08-05]** El argumento completo de Milford (2024, *Bioethics*) no es
+  solo "mide outcomes en vez de precisión" en abstracto: sostiene que la relación
+  médico-paciente aporta elementos de **percepción y observación clínica** (lenguaje corporal,
+  contexto no verbalizado, juicio situado) que un chatbot **resta** de la consulta incluso
+  cuando su precisión diagnóstica es comparable a la de un médico humano (el autor cita
+  modelos que aprueban los tres exámenes de licencia médica de EE.UU.). Es decir: un triage con
+  precisión alta en papel puede producir peores desenlaces si desplaza esos elementos
+  relacionales, no por error de clasificación. Implicación de diseño directa para el flujo
+  farmacia+IA: la capa de "atención humana" (farmacéutico, derivación a emergencia) no es solo
+  una red de seguridad para los casos que la IA clasifica mal — cumple una función de outcome
+  que la precisión del triage, aunque fuera perfecta, no reemplaza.
   *Evidencia:* artículo crítico/teórico peer-reviewed ("Accuracy is inaccurate").
   **Rigurosidad: 5/5.** (PMC — "Accuracy is inaccurate", 2024)
 - **La telemedicina peruana enfrenta barreras en 5 capas**: tecnológicas, humano-sociales,
@@ -167,7 +188,7 @@ Formato de cada afirmación de esta sección: **Afirmación** → *Evidencia* (d
 |---|---|---|---|
 | Automedicación no responsable, Perú | SciELO Perú, 2021 | Peer-reviewed, Perú específico | 5/5 |
 | Symptom checker Finlandia, Omaolo | PMC — estudio Omaolo, 2024 | Validación de instrumento | 5/5 |
-| Symptom checker Japón, 45.1% | PMC — estudio Japón, 2024 | Observacional retrospectivo | 5/5 (⚠️ N=1 hospital) |
+| Symptom checker Japón, 45.1% (24.2% en enf. poco comunes, 14.5% en atípicas, sin curva de aprendizaje en 3 años) | PMC — estudio Japón, 2024 | Observacional retrospectivo | 5/5 (⚠️ N=1 hospital) |
 | Perspectivas telemedicina Perú | PMC — perspectiva Perú, 2024 | Peer-reviewed, contexto país | 5/5 |
 | Automedicación 68% | Blog USIL/Infobae, 2025 | Encuesta vía prensa | 2/5 |
 | Automedicación 20% | Infobae, 2026 | Encuesta vía prensa | 2/5 |
@@ -215,6 +236,20 @@ Formato de cada afirmación de esta sección: **Afirmación** → *Evidencia* (d
   porque su sistema "no ofreció evidencia convincente de desempeñarse mejor que médicos
   humanos... con posibilidad de desempeño significativamente peor". La causa no fue "la IA
   no sirve" sino sobreclamar desempeño sin validación clínica publicada.
+  **[Revisión profunda 2026-08-05]** La carta original de Lancet (Fraser, Coiera & Wong, 2018)
+  detalla el defecto metodológico exacto del estudio de Babylon, no solo la conclusión: los
+  datos de la prueba de "precisión diagnóstica" fueron **ingresados por médicos actuando como
+  pacientes simulados en viñetas artificiales**, no por usuarios legos reales con síntomas
+  reales — exactamente el tipo de variabilidad (descripciones vagas, ansiedad, errores de
+  tecleo) que un triage de producción enfrenta y que la prueba de Babylon nunca midió. Suma
+  muestra pequeña y el hecho de que quienes condujeron el estudio original tenían **interés
+  financiero directo en el resultado**. Por separado, la MHRA (regulador británico) había
+  recibido en mayo 2018 dos reportes de incidentes de seguridad reales: un caso de síntomas de
+  infarto no detectados y otro de trombosis venosa profunda no detectada. Implicación directa
+  para el gate de seguridad del piloto (§3.0): cualquier validación de precisión del triage
+  farmacia+IA debe testearse con **usuarios legos reales** ingresando sus propios síntomas, no
+  con personal clínico simulando pacientes — de lo contrario se repite exactamente el defecto
+  que hundió a Babylon, no solo su conclusión superficial de "sobreclamó desempeño".
   *Evidencia:* evaluación publicada en una revista médica peer-reviewed (The Lancet), citada
   por prensa especializada en negocios. **Rigurosidad: 5/5.** (The Lancet, 2020)
 - **Ada Health (misma categoría de producto que Babylon) sigue operando**, con foco en
@@ -257,8 +292,28 @@ cercano fallando por sobreclamar desempeño sin validación (The Lancet, 2020, s
 
 ## 3. Preguntas de investigación para el piloto (framework RE-AIM)
 
-Estructuradas con RE-AIM (Glasgow, Vogt & Boles, 1999 — F-53), más una capa de **seguridad
+Estructuradas con RE-AIM (Glasgow, Vogt & Boles, 1999), más una capa de **seguridad
 clínica** como gate previo y dos capas transversales (regulatorio, negocio).
+
+**[Revisión profunda 2026-08-05 — F-53]** ⚠️ Corrección de cita: la fuente que el ledger tenía
+enlazada bajo F-53 no es el paper fundacional de 1999 sino uno posterior — Holtrop et al. 2021,
+"Understanding and applying the RE-AIM framework: Clarifications and resources" (mismo
+framework, Glasgow es coautor senior de ambos papers). Vale la pena leerlo porque documenta
+**13 malentendidos específicos** sobre cómo se aplica mal RE-AIM en la práctica — dos son
+directamente relevantes para el diseño de este piloto: (1) tratar las 5 dimensiones como una
+lista de verificación secuencial que hay que completar entera, en vez de una aplicación
+pragmática donde el peso relativo de cada dimensión depende del objetivo del estudio (para este
+piloto, seguridad clínica y adopción del farmacéutico pesan más que alcance poblacional en la
+fase 0); y (2) medir Maintenance solo como "el usuario sigue usándolo" (nivel individual) sin la
+capa de **institucionalización a nivel de la farmacia/cadena** (¿el flujo sobrevive un cambio de
+personal, se vuelve parte del protocolo estándar, o depende de un farmacéutico específico
+comprometido?). El paper también documenta la evolución de RE-AIM hacia el **PRISM** (Pragmatic
+Robust Implementation and Sustainability Model), que agrega explícitamente el contexto
+organizacional/de infraestructura (características de la farmacia aliada, no solo del
+usuario) — dimensión que las 25 RQs actuales de este documento no separan de Adoption/
+Implementation. No se reestructuran las 25 RQs por esta lectura (fuera del alcance de esta
+rutina), pero PRISM queda anotado como candidato a extensión del framework en una revisión
+futura del piloto.
 
 ### 3.0 Seguridad clínica (gate bloqueante)
 1. ¿Cuál es la tasa de **falsos negativos** del triage (casos graves clasificados como leves)?
@@ -331,6 +386,23 @@ Prueba la efectividad clínica y la viabilidad de implementación como **objetiv
 simultáneos**, en vez de secuenciales — acelera la traducción a la práctica real. Aplicado con
 éxito en atención primaria (F-55, terapia breve tipo 2). Revisión metodológica que extiende el
 framework (F-54).
+
+**[Revisión profunda 2026-08-05 — F-54]** ⚠️ Corrección de autoría: el paper es de **Bryan R.
+Garner** (Ohio State University), no de "Kirchner, J.E. et al." como tenía el ledger, y su
+publicación original en Frontiers in Health Services es de 2022. Lo que agrega más allá de los
+tipos 1/2/3 de Curran es la extensión **DIeSEL** (Dissemination, Implementation, effectiveness,
+Sustainment, Economics, Level-of-scaling): un diseño por fases que arranca con el enganche de
+stakeholders comunitarios/organizacionales (aquí: farmacéuticos, cadenas de farmacia aliadas,
+posiblemente MINSA dado el PL 08488) y termina ayudándolos a escalar la práctica, incorporando
+desde el diseño inicial —no como paso posterior— la relevancia económica (RQ24/RQ25 de este
+documento) y el nivel de escalamiento (de un piloto en pocas farmacias a la red completa
+InkaFarma/Mifarma). El ejemplo aplicado que usa el propio paper (proyecto STS4HIV, integración
+de tratamiento de sustancias en organizaciones de servicio VIH) es la misma lógica de
+"formalizar con evidencia un flujo de atención que ya corre de forma informal en una red de
+proveedores existente" que aplica este modelo. Si el piloto avanza más allá de una prueba
+técnica de precisión de triage, DIeSEL es un candidato más completo que el tipo 2 de Curran
+solo, porque no separa la pregunta de sostenibilidad económica (§3.7) del diseño del estudio
+—las trata como parte del mismo diseño desde el inicio.
 
 **Resuelve**: RQ9, RQ10, RQ11, RQ16, RQ17, RQ18, RQ19.
 

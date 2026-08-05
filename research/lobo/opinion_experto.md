@@ -293,6 +293,28 @@ humano — son métricas distintas y la segunda puede ser mediocre sin que el pr
   Omaolo — safety 97.6% vs. exact-match 53.7%, separación explícita de métricas)
 - **Confianza:** Alta
 - **Actualizado:** 2026-07-29
+**[Revisión profunda 2026-08-05]** Leí a fondo F-43, F-44 y la carta original de F-50 (antes
+solo el resumen de una línea del ledger). Tres matices que afinan el mecanismo, no la
+dirección de la tesis:
+1. **F-50, el defecto exacto de Babylon:** la carta de Lancet (Fraser, Coiera & Wong 2018) no
+   dice solo "sobreclamó" — dice que los datos de "precisión" de Babylon fueron ingresados por
+   **médicos actuando como pacientes en viñetas simuladas**, no por usuarios legos reales. Es
+   la misma falla que un piloto de triage propio repetiría si valida su precisión con personal
+   clínico haciendo de paciente en vez de con usuarios reales tecleando síntomas reales — el
+   gate de validación tiene que especificar explícitamente *quién* genera los casos de prueba,
+   no solo cuántos.
+2. **F-43, el patrón detrás del 45%:** la precisión del symptom-checker japonés no es un número
+   plano — colapsa a 24.2% en enfermedades poco comunes y 14.5% en presentaciones atípicas, y
+   no mejoró en 3 años de uso real (sin curva de aprendizaje). El triage automatizado falla
+   sistemáticamente justo en los casos de mayor riesgo clínico (lo raro es lo que hay que
+   atrapar), y el tiempo de despliegue por sí solo no lo corrige.
+3. **F-44 da la razón de fondo para no vender "% de precisión" como KPI único:** el argumento
+   de Milford (Bioethics 2024) es que la relación médico-paciente aporta percepción/observación
+   clínica que un chatbot resta de la consulta incluso con precisión diagnóstica comparable a
+   la de un humano — la capa de "atención humana" del modelo no es solo backup para errores de
+   clasificación, cumple una función de outcome que la precisión, aunque fuera perfecta, no
+   sustituye. Refuerza el mismo punto que F-42 (Omaolo) ya daba desde el ángulo de negocio:
+   el KPI correcto es seguridad/outcome, no % de coincidencia con el juicio humano.
 
 ### 11. El ciclo de rentabilidad del seguro global está en su mejor momento en 25 años — no es momento de jugar defensivo
 Combined ratio P&C de EE.UU. en 91.9% con la mayor ganancia de suscripción en 25
@@ -1472,3 +1494,30 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   diario, así que no la disparo aquí. Próximo salto de tesis/confianza sigue condicionado a que
   alguna skill de investigación registre fuentes nuevas en el ledger. Bitácora con 24 días de
   historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-05 (revisión profunda, rutina `cronista` cada ~3 días)** — Leí a fondo las 5 fuentes
+  🟢A más antiguas sin lectura profunda previa: F-43, F-44, F-50, F-53, F-54 (todas del rango de
+  `modelo-salud-ia-farmacias-peru.md`, registradas originalmente el 2026-07-06). No sumé tesis
+  nueva — las cinco ya sostenían tesis 10, y la lectura completa la afina sin cambiar su
+  dirección ni su confianza (sigue Alta). Tres matices de mecanismo: (1) F-50 — el defecto
+  metodológico exacto de Babylon fue que su prueba de precisión usó **médicos simulando
+  pacientes en viñetas**, no usuarios legos reales; cualquier piloto propio debe validar con
+  usuarios reales o repite el mismo error, no solo su titular; (2) F-43 — el 45.1% de precisión
+  del symptom-checker japonés no es plano: cae a 24.2% en enfermedades poco comunes y 14.5% en
+  presentaciones atípicas, sin curva de aprendizaje en 3 años de producción — falla justo donde
+  el riesgo clínico es mayor; (3) F-44 — el argumento de por qué "precisión diagnóstica" es la
+  métrica equivocada no es genérico: la relación médico-paciente aporta percepción/observación
+  que un chatbot resta de la consulta aunque su precisión sea comparable a la humana, lo que
+  refuerza que la capa de atención humana del modelo cumple una función de outcome, no solo de
+  respaldo ante error de clasificación. Encontré además dos **correcciones de cita/autoría** que
+  el resumen de una línea del ledger no dejaba ver: F-53 tenía la URL de un paper (Holtrop et
+  al. 2021, "Clarifications and resources") mal atribuida al fundacional de Glasgow/Vogt/Boles
+  1999 — mismo framework RE-AIM, Glasgow es coautor de ambos, pero es un artículo distinto que
+  documenta 13 malentendidos de aplicación y la evolución del framework hacia PRISM (contexto
+  organizacional que RE-AIM 1999 no cubre); F-54 estaba atribuido a "Kirchner, J.E. et al. 2023"
+  cuando el autor real es Bryan R. Garner (2022) y el aporte propio del paper es la extensión
+  DIeSEL (agrega sostenibilidad económica y nivel de escalamiento al diseño desde el inicio, no
+  como paso posterior a los tipos 1/2/3 de Curran). Corregí ambas en `codice.md` (mismo criterio
+  que la corrección de autoría de F-3 el 2026-07-21) y enriquecí `modelo-salud-ia-farmacias-
+  peru.md` (§2 con los tres matices de mecanismo, §3 con los 13 malentendidos de RE-AIM/PRISM, §4/E2
+  con DIeSEL). Actualicé `alma.md` con la fecha y nota de esta revisión. Bitácora de revisión
+  profunda con 15 fuentes acumuladas (F-3 a F-54, todas 🟢A) desde el 2026-07-21.

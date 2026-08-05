@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-07-29.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-08-05.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -58,7 +58,7 @@ por afirmación cuando corresponda.
 |---|---|---|---|
 | `_nodes/seguros-comportamiento-mundo-peru.md` | Comportamiento, percepción y mercado global de seguros (Mundo vs. Perú) | 2026-07-21 | v1.1 |
 | `_nodes/glosario-seguro-salud-peru.md` | Glosario de términos de seguro de salud en lenguaje claro (Perú) | 2026-07-21 | v1.0 |
-| `_nodes/modelo-salud-ia-farmacias-peru.md` | Modelo de triage con IA + farmacias + atención humana (Perú): investigación, RE-AIM, estrategias de testeo | 2026-07-29 | v1.0 (revisión profunda de F-36/F-40/F-41/F-42: factor dominante de automedicación OR=29, ventana de adopción de telesalud, safety vs. exact-match en Omaolo) |
+| `_nodes/modelo-salud-ia-farmacias-peru.md` | Modelo de triage con IA + farmacias + atención humana (Perú): investigación, RE-AIM, estrategias de testeo | 2026-08-05 | v1.0 (revisión profunda de F-36/F-40/F-41/F-42 (2026-07-29): factor dominante de automedicación OR=29, ventana de adopción de telesalud, safety vs. exact-match en Omaolo; revisión profunda de F-43/F-44/F-50/F-53/F-54 (2026-08-05): por qué falla el symptom-checker japonés (enfermedad rara + presentación atípica, sin curva de aprendizaje), el argumento relacional de por qué precisión≠outcome, el defecto metodológico exacto de Babylon (datos de médicos simulando pacientes, no usuarios legos reales), y dos correcciones de cita/autoría — F-53 apuntaba en realidad a Holtrop et al. 2021 (13 malentendidos de RE-AIM + evolución a PRISM), F-54 es de Garner 2022, no "Kirchner", con la extensión DIeSEL) |
 | `_nodes/mecanismos-seguros-salud.md` | Mecanismos de seguros de salud: presión demográfica/costo, balance financiero/rentabilidad global (incl. contraste Europa/Asia/Perú-Latam), y modelos que la navegan (global, comparativo) | 2026-07-22 | v1.2 (amplía con contraste regional del balance financiero) |
 | `_nodes/material-visual-venta-consultiva.md` | Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección (empírico + negocio + regulatorio; pista social sin cobertura) | 2026-07-21 | v1.1 (amplía con anclaje/regulatorio/confianza; aplicada a flyers Vida Ahorro) |
 | `_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan las organizaciones de venta fría a venta opt-in (seguros y sectores análogos): disparadores, impacto en volumen, tácticas puente | 2026-07-14 | v1.0 |
