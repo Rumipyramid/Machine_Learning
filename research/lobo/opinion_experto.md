@@ -1521,3 +1521,20 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   peru.md` (§2 con los tres matices de mecanismo, §3 con los 13 malentendidos de RE-AIM/PRISM, §4/E2
   con DIeSEL). Actualicé `alma.md` con la fecha y nota de esta revisión. Bitácora de revisión
   profunda con 15 fuentes acumuladas (F-3 a F-54, todas 🟢A) desde el 2026-07-21.
+- **2026-08-06** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  02ad91d→4f03b8d, que trajo consigo commits ajenos a esta opinión: la corrección de nombres de
+  variables en `_nodes/modelo-salud-ia-farmacias-peru.md`, la renombrada de
+  `_nodes/tendencias-diseno.md` a `tendencias-diseno-innovacion.md`, y una simulación nueva de la
+  Guía de triaje sobre 200 usuarios sintéticos con `lapuerta`) y leí `codice.md` completo: sigue
+  tope exacto en F-468 (468 entradas, F-1 a F-468 sin huecos), idéntico al que ya procesó la
+  corrida del 2026-08-05 — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
+  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h.
+  Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no
+  forcé ninguna conexión nueva entre tesis solo por completar el paso — la revisión profunda de
+  ayer (F-43/F-44/F-50/F-53/F-54) ya agotó los matices disponibles sobre tesis 10, y ningún commit
+  de hoy en `main` toca evidencia externa citable con `F-n` (son artefactos de proyecto — dataset
+  simulado, corrección de nombres, renombrado de node — no investigación nueva de `cronista`). La
+  próxima revisión profunda (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no vence
+  hoy. Próximo salto de tesis/confianza sigue condicionado a que alguna skill de investigación
+  registre fuentes nuevas en el ledger. Bitácora con 25 días de historial (2026-07-12 a hoy),
+  dentro de la ventana de ~30 días — sin podar todavía.
