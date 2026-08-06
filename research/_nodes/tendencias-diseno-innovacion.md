@@ -95,6 +95,23 @@ sección. Si la rutina se edita alguna vez, ampliarlo allí también.
 
 ---
 
+## 🧭 Cómo leer este node
+
+El node acumula cinco iteraciones y ~2.000 líneas. **No se lee entero.** Según a qué vengas:
+
+| Vengo a… | Leo | Y nada más |
+|---|---|---|
+| **Usar esto** para fundamentar algo (deck, informe, decisión) | **§1** (la respuesta) + **§7** (las 25 reglas) | Sí. §7 está escrita para usarse sin volver a la evidencia |
+| **Saber el estado** de una tendencia concreta | **§5** (escala de madurez) | Sí. Una fila por tendencia, con su nivel y sus fuentes |
+| **Aportar** en la siguiente iteración | **§6** (tablero) + última fila de **§8** (bitácora) | Sí. Lo demás es contexto |
+| **Verificar** cómo se llegó a una conclusión | El archivo: **§2-4** (iter. 1) y **§9-13** (iter. 2-5) | Es archivo, no estado actual |
+
+⚠️ **§2 a §4 y §9 a §13 son archivo histórico**, no la respuesta vigente. Están fechados y
+conservados a propósito (ver la nota al final de §1), pero **si contradicen a §1, §5 o §7, mandan
+estos últimos**.
+
+---
+
 ## 🔁 Cómo se usa y se enriquece este node
 
 Este node **no se reescribe en cada iteración: se confronta**. Es la memoria larga del proyecto
@@ -128,36 +145,63 @@ recurrente de `/trinidad` sobre tendencias de diseño debe:
 
 ---
 
-## 1. Resumen ejecutivo
+## 1. 🎯 La respuesta (estado al 2026-08-06)
 
-- 🔬 **Empírica**: la afirmación "el diseño produce impacto de negocio tangible" es *probablemente
-  cierta pero está mal probada*. La evidencia sólida existe (econometría de firmas, experimentación
-  online) y dice algo mucho más modesto que la retórica de la industria: el efecto del diseño es
-  **real, pequeño, acumulativo y mediado**. Las cifras estrella (McKinsey +32%/+56%, "$1 → $100")
-  son correlacionales, no auditables y con conflicto de interés estructural.
-- 📱 **Social**: el eje dominante del gremio es **IA × identidad profesional**, con dos subtramas
-  🔥: la ansiedad laboral y el rechazo al "AI slop". Pero el volumen de la ansiedad **no está
-  respaldado por la evidencia de causalidad**, y hay actores con incentivo económico directo en
-  sostener el pánico — **en los dos bandos**: también quien la desmiente vive de la audiencia
-  (iter. 3, H11). ⬆️ *Iter. 3*: el eje **se normaliza** — la conversación pasó de "¿nos va a
-  reemplazar?" a "así se trabaja ahora" (Figma Config 2026), y el propio ciclo del "diseño ha
-  muerto" empieza a generar su anticuerpo desde adentro.
-- 📈 **Negocio**: hay que separar tres mercados que la conversación confunde. Las **herramientas**
-  crecen fuerte con datos auditados (Figma +46% YoY) pero el mercado de capitales las castiga por
-  riesgo de disrupción de IA (Figma cotiza bajo su precio de IPO). Las **consultoras de diseño**
-  están en crisis estructural documentada (IDEO −67% de revenue, Veryday cerrada, R/GA vendida a
-  PE, Song absorbida). El **ROI del diseño** es el eslabón más débil de los tres.
-- ⚖️ **Convergencia central de las tres pistas**: *el diseño importa, pero no por las razones ni en
-  la magnitud que la industria del diseño afirma.* Lo que resiste escrutinio es el **mecanismo**
-  (reducir fricción, error, retrabajo y riesgo regulatorio), no el **multiplicador**. Y la ansiedad
-  del gremio, medida contra los datos, es desproporcionada respecto de la evidencia causal
-  disponible.
-- ⚔️ **Divergencia que este node no resuelve**: la evidencia sobre si la IA acelera o frena el
-  trabajo está en conflicto directo (METR: −19% de productividad con IA en devs expertos; estudio
-  de design-system-aware AI: −46% a −69% de time-to-delivery). ⚠️ **La iteración 2 creyó haberla
-  reconciliado y la iteración 3 revirtió esa conclusión**: el mecanismo del *impuesto de
-  verificación* perdió su cifra ancla por falta de fuente primaria. **Vuelve a estar sin resolver.**
-  Ver §11.2 y §6/H19.
+*Esta sección responde la pregunta permanente del node sin historia, sin cronología y sin citar el
+proceso. Es lo único que hay que leer para usar el node.*
+
+### Las tres tesis
+
+**1. El efecto existe, es real, y es pequeño, acumulativo y mediado.** Vale por igual para diseño y
+para innovación: la elasticidad I+D→productividad es ≈0,05 (F-430) y la capacidad de diseño se
+asocia al desempeño de la firma sin causalidad demostrada (F-237, F-238). Ninguna cifra
+espectacular del dominio —ni el "$1→$100", ni el +32%/+56% de McKinsey, ni el 671%, ni el 135%, ni
+el 70-20-10— sobrevive al rastreo de su fuente primaria. **Cuando el efecto se mide bien, sale
+modesto; cuando sale grande, es porque no se midió.**
+
+**2. La evidencia dura de estas disciplinas está del lado de los costos.** Es el hallazgo que
+ordena todo lo demás (regla **C24**). Lo que está bien medido: el daño de los dark patterns, que
+2 de cada 3 rediseños no mueven su métrica, el costo de inferencia al punto porcentual, el ratio de
+gastos que separa a un insurtech rentable de uno que no. Lo que vive de eco de cita: todo el lado
+del valor. **El mecanismo es trivial —los costos los auditan contadores y reguladores, el valor lo
+declara quien lo vende— y la consecuencia es operativa: el argumento defendible se construye sobre
+la columna de costos.**
+
+**3. La industria no corrige: acumula.** Una cifra desmentida no sale de circulación; se le suma la
+siguiente (**C17**). Por lo tanto **la única defensa que funciona es local y previa**: exigir el
+diseño del estudio antes de dejar entrar la cifra. No esperar que el campo se depure solo.
+
+### Qué usar y qué no usar
+
+| Para sostener… | ✅ Usar | ❌ No usar |
+|---|---|---|
+| Que el diseño mueve conducta | Dark patterns: efecto causal, experimental, muestra representativa (F-241, F-251) | "El diseño aumenta ingresos X%" |
+| Que vale la pena invertir | Mecanismo y costos evitados: retrabajo, error, abandono, riesgo regulatorio | ROI 100:1, MDI de McKinsey, DVI, Innovation Premium |
+| Una promesa de resultado | Acumulación e iteración medida (**C2**) | Transformación / despegue de métrica |
+| Que la IA acelera el trabajo | Nada todavía: la evidencia está en conflicto abierto (⚔️) | Cualquier autorreporte de productividad (**C11**) |
+| Un caso de negocio con IA | Las dos cifras juntas: ingreso incremental **y** costo de inferencia (**C25**) | Proyectar margen de SaaS clásico |
+| Innovación en seguros | Ratio de gastos y canal de distribución (F-475) | "La telemática/IA selecciona mejor el riesgo" |
+| Que el UBI cambia conducta | Feedback + incentivo de US$100 reduce 3 métricas telemáticas y **no** el uso del teléfono, en programa **simulado** (F-477) | "El UBI funciona" |
+
+### Lo que este node NO resuelve
+
+- ⚔️ **Si la IA acelera o frena el trabajo de diseño.** Evidencia en conflicto directo (−19% de
+  productividad en devs expertos vs. −46/−69% de time-to-delivery). La iteración 2 creyó
+  reconciliarlo y la 3 revirtió esa conclusión: el mecanismo que lo explicaba perdió su cifra ancla.
+  **Sigue abierto** (§6/H19).
+- **Si existe algún efecto grande y bien medido del lado del valor.** C24 predice que no. Es la
+  prueba pendiente que podría tumbar la tesis central del node (§8, pendiente *(e)*).
+- **El dato peruano de diseño.** Cuatro barridos en blanco. La ruta ya no es buscar: es **adosar la
+  medición a un instrumento estatal existente** (§13.6).
+
+> 📌 **Por qué el archivo se conserva con los errores adentro.** Este node registra en su propio
+> cuerpo las veces que se equivocó: el "impuesto de verificación" que celebró y luego desmontó
+> (§11.2), el RCT que transcribió inflado (§13.3), la hipótesis cuyo mecanismo refutó tres días
+> después de proponerlo (§13.2). **Eso no es desorden: es el activo del node.** Un documento que
+> solo conserva sus aciertos no puede detectar que su modo de fallar tiene un patrón — y aquí lo
+> tiene: los errores se concentran en los hallazgos que *cierran* una tensión abierta, y las
+> omisiones van siempre en la dirección que hace el hallazgo más impresionante (H24, H35). Por eso
+> el archivo no se limpia.
 - 🪞 **Regla de higiene que este node aprendió sobre sí mismo (iter. 3)**: el hallazgo con más
   riesgo de entrar sin verificar no es el espectacular — es **el que cierra una contradicción
   propia**. Ver C20 y H24.
@@ -173,6 +217,11 @@ recurrente de `/trinidad` sobre tendencias de diseño debe:
   diseño no tiene el monopolio del rigor ni la innovación el del teatro.* Ver §12.
 
 ---
+
+> 🗄️ **ARCHIVO — §2 a §4 son el barrido fundacional de la iteración 1 (2026-07-26).** Se conservan
+> como registro de cómo se construyó la respuesta, con las actualizaciones marcadas ⬆️ en su sitio.
+> **El estado vigente de cada tendencia está en §5, no aquí.** Si algo de estas tres secciones
+> contradice a §1, §5 o §7, mandan §1, §5 y §7.
 
 ## 2. 🔬 Pista empírica/teórica (seeker)
 
@@ -658,6 +707,40 @@ Esta tabla es el **entregable operativo** del node. Cada iteración la actualiza
 **Este es el corazón iterativo del node.** Cada corrida debe intentar mover al menos una fila.
 Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 
+### 📋 Índice por estado *(añadido en la iteración 5 — las tablas de abajo están agrupadas por
+### iteración de origen, que sirve para el historial pero no para saber qué se sabe)*
+
+**Saldadas — 3 respaldadas, 1 refutada.** Son las únicas que ya no hay que seguir probando:
+
+| # | En una línea | Estado |
+|---|---|---|
+| **H13** | Figma crece ≥40% y la acción no recupera → el mercado no descuenta ejecución | ✅ `respaldada` *(iter. 5 — con su mecanismo corregido)* |
+| **H20** | En español se cita, pero solo a emisores anglosajones interesados | ✅ `respaldada` *(13/13 = 100%)* |
+| **H24** | Los errores del node se concentran en los hallazgos que le convienen | ✅ `respaldada` *(iter. 5 — y el fallo fue de transcripción, no de fuente)* |
+| **H17** | El ciclo identitario del gremio llega desfasado a LatAm | ❌ `refutada` *(llega simultáneo)* |
+
+**Parciales — 11.** Confirmadas en parte; se sabe qué mitad falta:
+
+| # | En una línea | Qué falta |
+|---|---|---|
+| **H3** | Generative UI gana en preferencia y pierde en uso repetido | El estudio longitudinal; **no existe tras 3 barridos** |
+| **H4** | La explicación de IA solo ayuda en decisiones difíciles | Réplica en dominio aplicado |
+| **H5** | La mejora percibida excede a la objetiva | Acierta el signo, **falla la escala** (~1 pt, no ≥20 pp) |
+| **H10** | La ansiedad gremial es de seniority, no de gremio | Encuesta segmentada con N reportado |
+| **H11** | El doom tiene modelo de negocio — **y el antídoto también** | Censo, no muestra de conveniencia |
+| **H12** | El backlash estético es señalización de estatus | Testear si mejora alguna métrica de usuario |
+| **H15** | La consultora de diseño pura no vuelve | Un revenue **auditado**; el contraejemplo R/GA es autorreportado |
+| **H16** | El reporting se degrada bajo presión de IA | ⚠️ **Falló en el actor que eligió** (Figma no degradó nada) |
+| **H18** | El silencio del service design es madurez, no irrelevancia | Métricas de membresía; hay "crisis" declarada desde adentro |
+| **H29** | Lo que separa a un insurtech rentable no es la tecnología | ⚠️ **Mitad refutada**: tampoco es la selección de riesgo → H32 |
+| **H31** | En innovación se importó el marco, no la cifra | ⚠️ **Blanco designado de la auditoría de la iter. 6** (es reconciliadora) |
+
+**Abiertas — 19, más 1 reformulada.** Agrupadas por lo que haría falta para moverlas:
+
+| Se mueven con **un dato que existe y no se ha buscado bien** | Se mueven con **un estudio que no existe todavía** | Se mueven **solo con el tiempo** |
+|---|---|---|
+| **H2** (leer el reporte de Forrester) · **H21** (shadow AI peruano — ruta nueva en §13.6) · **H23** (rastrear N cifras atribuidas) · **H25** (muestreo del corpus hispano) · **H27** (rastrear cifras de fracaso vs. de éxito) · **H30** (metas de innovación vencidas) · **H35** (auditar las transcripciones del propio node) | **H1** (replicación prospectiva del DVI) · **H6** (replicación independiente de design systems) · **H7** (⚠️ **necesita reformulación antes de seguir**) · **H8** (experimento peruano de dark patterns) · **H9** (brecha actitud-conducta en diseñadores) · **H19** (⚠️ degradada; manipular madurez del código) · **H26** (escrutinio vs. exposición acumulada) · **H33** (precio fijo vs. consumo) · **H34** (dominio sin medición estatal) | **H14** (ARR de Lovable a 12 meses) · **H28** (supervivencia por absorbibilidad) · **H32** (Root y Lemonade, próximo trimestre) · **H22** 🔄 *reformulada*: no se mide corrida a corrida sino **semestre a semestre** |
+
 | # | Hipótesis | Estado | Cómo se falsa |
 |---|---|---|---|
 | **H1** | Un índice de empresas "design-centric" definido **ex ante** tendrá exceso de retorno sobre el S&P **indistinguible de cero** (el +211% del DVI es look-ahead bias + supervivencia) | `abierta` — predicción del node: el exceso se reduce >70% | Replicación prospectiva del DVI con criterios congelados en t₀ |
@@ -940,6 +1023,11 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 | 5 | 2026-08-06 | 💰 **El lado del costo**: cobrar los pendientes con fecha (H13/H16 tras el reporte de Figma del 5-ago), atacar el ángulo de negocio del insurtech que la iter. 4 dejó fuera (H29), auditar hacia adentro el hallazgo estrella de la iter. 4 (C20) y desbloquear H31 | **5 hipótesis movidas, una de ellas la única con fecha de vencimiento.** ⬆️ **H13 `respaldada`**: Figma +48% (pedía ≥40%), NDR 136%, guidance +US$40M, y la acción **cae a ~US$23,50** (umbral: $33) — ⭐ pero **el mecanismo se corrige**: no es descuento narrativo, es **transferencia de margen medida** (margen bruto 89%→84%, costo de ingresos +112%). ⬇️ **H16 falla en el actor que ella misma eligió**: Figma no degradó reporting, publicó una NDR que empeora y **abrió** la métrica desfavorable. ⚡ **H29 `parcial` con su mecanismo refutado**: Root y Lemonade tienen siniestralidad casi igual (56,6% vs. 60%) — lo que los separa es el **ratio de gastos** y el canal (los agentes ya son 51% de las nuevas suscripciones de Root). ⬆️ **H24 `respaldada` en forma nueva**: la auditoría de C20 encontró la fuente **mejor** de lo creído (CDC, sin asegurador) y **la transcripción del node inflada** — UBI simulado, US$100 de incentivo, y el resultado nulo omitido → **C23**. ⚠️⚠️ **Agravante estructural**: el estudio ya estaba en el ledger (F-23, 2026-07-12) y el node de behavioral design ya lo había acotado bien (2026-07-29); la iter. 4 lo duplicó y lo leyó peor. **F-442 queda marcada como obsoleta.** ⬆️ **H31 `parcial`**: el corpus hispanohablante de innovación **sí** tiene evidencia propia (ENIIM del INEI, informes CDTI/Orkestra) porque **el Estado mide innovación y no mide diseño** → **H34**. ⭐ **Convergencia n.º 4 de §5: las tres pistas miden por primera vez la misma magnitud —el costo de un token— y de ahí sale C24**, la regla más operativa del node. 13 fuentes nuevas (F-469 a F-481), 4 hipótesis nuevas (H32-H35), 3 reglas nuevas (C23, C24, C25) | (a) ⚠️ **H34/H31 es el hallazgo más reconciliador de esta corrida y por C20 es el blanco designado de la auditoría de la iter. 6** — verificar que la ENIIM existe como microdato accesible y no solo como instrumento anunciado; (b) **H32 necesita el trimestre siguiente** de Root y Lemonade (nov-2026) para separar frontera de disciplina; (c) **el GII 2026 sale el 29-sep-2026** — sigue siendo la fecha de falsación natural del dato peruano; (d) **aplicar C23 retroactivamente**: reauditar la transcripción de las fuentes 🟢A más citadas del node, empezando por F-430 y F-401, y clasificar cada omisión como favorable o desfavorable (H35); (e) **probar C24 en su punto débil**: buscar deliberadamente un caso de **valor** bien auditado (no de costo) — si existe y es grande, C24 se cae; (f) **el proxy 403 ya no se declara como limitación**: se asume en el diseño de la corrida (heredado de la iter. 3 y cumplido aquí) |
 
 ---
+
+> 🗄️ **ARCHIVO — §9 a §13 son el desarrollo iteración por iteración (2026-07-26 a 2026-08-06).**
+> Se leen para verificar cómo se llegó a una conclusión o para no repetir un barrido, no para saber
+> qué se sabe hoy. **Incluyen los errores del node sin corregir en su sitio y eso es deliberado**
+> (ver la nota al cierre de §1). El estado vigente está en §1, §5, §6 y §7.
 
 ## 9. Limitaciones de la iteración 1
 
