@@ -35,7 +35,8 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/updates/` | Reportes quincenales de fortalecimiento del modelo | Indexados en este códice (bloque gestionado) |
 | `research/fuentes/codice.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista`; se consulta con `/codice` |
 | `research/yopersona/perfil.md` | Nodo de conocimiento: perfil profesional del usuario (CV) | Fuente de verdad para cartas de presentación, CVs adaptados y asesoría de carrera |
-| `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis con evidencia F-n del ledger + confianza; refinada diariamente contra `cronista` |
+| `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis + 🧠 Intuición acumulada (heurísticas de decisión) + Bitácora; refinada diariamente contra `cronista` — ver regla de lectura profunda diaria más abajo |
+| `research/lobo/fuentes_leidas_lobo.md` | Registro de qué fuentes ya leyó a fondo El Lobo para intuición | Evita repetir lectura; independiente del `revision_profunda.md` de `cronista` (ver sección abajo) |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: barrido incremental (grupos de 5) de literatura 🟢A del códice para el modelo `lapuerta` | Nunca aplica solo — memoria en `research/updates/cerrajero_barrido_estado.json`, siempre pregunta antes de tocar el modelo |
 | `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
@@ -204,6 +205,29 @@ variables al modelo `lapuerta`.
 - 2026-07-06 — `research/updates/2026-07-06_fortalecimiento_modelo.md`
 - 2026-06-21 — `research/updates/2026-06-21_fortalecimiento_modelo.md`
 <!-- LAPUERTA_REPORTS_END -->
+
+### 📌 Proceso diario: opinión de negocio de "El Lobo"
+Proceso automatizado (fuera de `.claude/skills/`, disparado por una tarea programada a nivel de
+cuenta, no por un cron de este repo) que cada día actualiza `research/lobo/opinion_experto.md`:
+compara `research/fuentes/codice.md` contra la última entrada de la Bitácora, integra evidencia
+nueva a las tesis vigentes, y cierra con una entrada fechada. Regla fija, léase como parte del
+proceso diario aunque el prompt externo que dispara la tarea no la repita cada vez (esto es lo que
+sí persiste entre corridas — cada corrida es una sesión nueva sin memoria de las anteriores):
+
+- **Lectura profunda diaria para intuición (regla añadida 2026-08-06).** Cada corrida, El Lobo
+  selecciona **3 fuentes** del ledger que él mismo **aún no haya leído a fondo** —registro propio
+  en `research/lobo/fuentes_leidas_lobo.md`, independiente del `research/fuentes/revision_profunda.md`
+  de `cronista` (ese es cada ~3 días, 5 fuentes, orden por ID más antiguo, y su salida son matices a
+  tesis/nodes; este es diario, 3 fuentes, y su salida es una heurística de juicio, no una tesis de
+  negocio específica). **Orden de selección:** agotar primero todo 🟢A (al azar, sin reemplazo,
+  dentro del nivel); una vez agotado, seguir con 🔵B, luego 🟡C, 🟠D, 🔴E; al agotar todos los
+  niveles, reiniciar el ciclo. Lee cada fuente **a fondo** (no solo el resumen de una línea) y
+  destila una entrada en la sección **"🧠 Intuición acumulada"** de `opinion_experto.md`: no repite
+  el formato de tesis (evidencia → confianza → oportunidad/riesgo de negocio puntual), sino una
+  lección o heurística de decisión/juicio transferible a evaluaciones futuras — puede o no conectar
+  con una tesis ya vigente. Actualiza `fuentes_leidas_lobo.md` con lo leído ese día. Si en un día
+  dado no hay 3 fuentes nuevas disponibles en el nivel de rigor actual (poco probable dado el tamaño
+  del ledger), completar con el nivel siguiente en la misma corrida, nunca saltarse el paso.
 
 ### 📌 Skill: `edipo2` (oráculo personal)
 Lectura del presente y del futuro que cruza cuatro fuentes: (1) lo que el repo y la sesión

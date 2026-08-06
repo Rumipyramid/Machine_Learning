@@ -5,7 +5,12 @@
 > evidencia (F-n del ledger `research/fuentes/codice.md`) y un nivel de
 > confianza que sube o baja según la rigurosidad de lo que la sostiene. Lo que no
 > tiene fuente en el ledger va marcado como **instinto** — razonado desde
-> principios de negocio, no dato verificado.
+> principios de negocio, no dato verificado. Desde 2026-08-06 sumo también una
+> sección de **🧠 Intuición acumulada**: no tesis de negocio puntuales, sino
+> heurísticas de juicio que voy afilando leyendo 3 fuentes a fondo cada día
+> (empezando por las de mayor rigurosidad, registro en
+> `research/lobo/fuentes_leidas_lobo.md`) — lo que me hace mejor para decidir,
+> no solo lo que sé.
 >
 > Creado: 2026-07-12.
 
@@ -1089,6 +1094,81 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   producto — instinto de negocio, no una recomendación, solo el dato de que la conversación ya
   dejó de ser hipotética en la región.
 
+## 🧠 Intuición acumulada
+
+> Distinto de las tesis de arriba: una tesis es una apuesta de negocio con evidencia y confianza
+> puntual (F-n → oportunidad/riesgo concreto). Esto es otra cosa — heurísticas de juicio y de toma
+> de decisión que se acumulan de leer fuentes a fondo, transferibles a cualquier evaluación futura,
+> conectadas o no a una tesis ya vigente. Alimentada por la rutina diaria de lectura profunda (3
+> fuentes/día, orden por rigurosidad, registro en `research/lobo/fuentes_leidas_lobo.md` — regla en
+> `CLAUDE.md`). Empezada 2026-08-06.
+
+### 1. Antes de lanzar cualquier producto de seguro nuevo, correr primero el test de selección adversa — no solo el de demanda
+Rothschild & Stiglitz (1976) prueban algo más fuerte que "la selección adversa sube el costo": si
+los tipos de riesgo no se pueden separar y la distorsión de la auto-selección es demasiado grande,
+**puede no existir ningún equilibrio competitivo** — el mercado entero se desarma, no solo se
+encarece. Cuando sí existe equilibrio, nunca es un contrato único para todos (pooling): es
+siempre un par de contratos donde el riesgo bajo acepta cobertura **incompleta** a cambio de un
+precio más bajo, como señal costosa que lo distingue del riesgo alto. **Heurística de decisión:**
+frente a cualquier producto nuevo (paramétrico sísmico, microseguro, UBI, cualquier variante de
+`lapuerta`), la primera pregunta no es "¿hay demanda insatisfecha?" sino "¿esta estructura de
+precio/elegibilidad separa los riesgos, o solo va a atraer al riesgo alto y ahuyentar al bajo?" —
+si la respuesta no es clara, el diseño del producto (no el canal, no el mensaje) es el riesgo
+central del lanzamiento, antes que cualquier otra variable.
+- **Fuente:** F-82 (🟢A, Rothschild & Stiglitz 1976, *Quarterly Journal of Economics* — paper
+  fundacional de la economía de la información, ya citado en el ledger para explicar por qué
+  ciertos seguros estructuran su cobertura como lo hacen)
+- **Leído a fondo:** 2026-08-06 (URL directa del NBER bloqueada con 403 por el proxy del entorno,
+  igual que otras fuentes académicas — reconstruido vía múltiples búsquedas dirigidas que
+  confirman el resultado central y el mecanismo de separación, no solo el resumen ya citado)
+
+### 2. "Bueno en teoría para quien participa" y "bueno para el sistema/población" son dos preguntas distintas — evaluar ambas, no asumir que la primera implica la segunda
+El paper de Direct Primary Care (JABFM 2018) encuentra que el modelo es teóricamente sólido para
+mejorar first-contact y longitudinalidad **a nivel de la consulta, para el paciente que ya está
+adentro** — pero señala una brecha de evidencia estructural: a nivel de sistema de salud, el
+mecanismo de acceso (cuota de membresía) excluye por diseño a los pacientes más vulnerables y
+complejos, exactamente los que más se beneficiarían. Nadie ha medido comparativamente a los
+excluidos contra los incluidos. **Heurística de decisión:** cualquier modelo de atención
+value-based o de frente primario que el Lobo evalúe (farmacia-frente-primario, capitación,
+telesalud) debe pasar por dos preguntas separadas, no una: (1) ¿funciona para quien logra
+participar? y (2) ¿quién queda afuera por el mecanismo de acceso mismo, y es justo el segmento de
+mayor necesidad? Una respuesta positiva a la primera no dice nada sobre la segunda — y el "buen
+modelo en teoría" que tiene un filtro de acceso que expulsa al riesgo/necesidad más alta puede ser
+simultáneamente exitoso a nivel clínico y regresivo a nivel de sistema.
+- **Fuente:** F-107 (🟢A, JABFM 2018, *Direct Primary Care: Applying Theory to Potential Changes
+  in Delivery and Outcomes*)
+- **Leído a fondo:** 2026-08-06 (mismo bloqueo de URL directa, reconstruido vía búsqueda dirigida
+  con el hallazgo textual del propio abstract/resumen del paper)
+- **Conexión razonada, no forzada:** aplica directo a tesis 9 (farmacia-frente-primario en Perú) —
+  no cambia su confianza (Alta se mantiene, es un ángulo nuevo, no evidencia que la contradiga),
+  pero agrega una pregunta de diseño que esa tesis todavía no tenía explícita: ¿el canal de
+  farmacia+triage excluye por costo/fricción a alguien, y es el mismo segmento de mayor riesgo que
+  ya identifica tesis 9 (OR=29 por dispensación sin receta)?
+
+### 3. En seguros de alto involucramiento (vida, salud, hogar), la unidad real de decisión suele ser el hogar, no el individuo que está frente al asesor
+Davis (1976), revisión canónica de decisión de compra en el hogar, documenta que gran parte de la
+literatura de marketing sobrestima los modelos de decisión individual y subestima que la compra se
+negocia entre cónyuges/familia, con roles que cambian según la etapa de la decisión (quién inicia,
+quién busca información, quién decide, quién paga) — no es un rol fijo ni simétrico. **Heurística
+de decisión:** cuando el Lobo evalúa un embudo de venta, un guion de manejo de objeciones o
+cualquier métrica de conversión en categorías de alto involucramiento (vida individual, salud,
+hogar — no tanto SOAT o microseguro de ticket bajo), el modelo mental correcto del "cliente" no es
+una persona sola tomando una decisión racional en el punto de venta, es un proceso de decisión de
+hogar del que el asesor solo ve una fracción. Una objeción como "lo voy a consultar" no es
+necesariamente evasión ni fricción a resolver con más información — puede ser el proceso de
+decisión real funcionando como debe. Medir "tasa de cierre en la primera cita" sin dar espacio a
+ese proceso puede estar optimizando contra la forma real en que la categoría se decide, no a favor.
+- **Fuente:** F-236 (🟢A, Davis, H.L. 1976, *Decision Making Within the Household*, Journal of
+  Consumer Research — ya en el ledger, reemplazó a Darley & Latané como fuente de C.6 del Bloque 4
+  del Playbook, tesis 18)
+- **Leído a fondo:** 2026-08-06 (mismo patrón de bloqueo de URL directa; contenido reconstruido vía
+  búsqueda dirigida con las tres preguntas centrales del paper y sus problemas metodológicos
+  identificados)
+- **Conexión razonada, no forzada:** refuerza desde un ángulo distinto el matiz que tesis 18 ya
+  hizo sobre C.6 (objeción "lo consulto con mi pareja" ≠ emergencia con testigos de Darley &
+  Latané, es decisión de hogar) — esta lectura profunda confirma que el marco correcto para esa
+  objeción tiene 50 años de literatura propia, no es una intuición nueva del Lobo.
+
 ## 📔 Bitácora
 
 - **2026-07-12** — Primera creación de la opinión. Revisé las 15 fuentes del
@@ -1538,3 +1618,28 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   hoy. Próximo salto de tesis/confianza sigue condicionado a que alguna skill de investigación
   registre fuentes nuevas en el ledger. Bitácora con 25 días de historial (2026-07-12 a hoy),
   dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-06 (ampliación — nueva rutina de intuición, a pedido del usuario)** — El usuario pidió
+  que, cada día, el Lobo lea a profundidad 3 fuentes aleatorias del ledger (empezando por las de
+  mayor rigurosidad) y transforme esa lectura en conocimiento propio que mejore su intuición y
+  capacidad de decisión — no solo en refinamiento de tesis. Diseñé el mecanismo: sección nueva
+  **"🧠 Intuición acumulada"** en esta opinión (heurísticas de juicio, no tesis de negocio
+  puntuales), registro propio `research/lobo/fuentes_leidas_lobo.md` (evita releer, independiente
+  de `revision_profunda.md` de `cronista` — selección aleatoria diaria por nivel de rigor agotado
+  en orden A→B→C→D→E, vs. la de `cronista`: 5 fuentes, ID más antiguo, cada ~3 días), y documenté
+  la regla en `CLAUDE.md` §"Proceso diario: opinión de negocio de 'El Lobo'" para que persista
+  entre corridas (cada corrida es una sesión nueva sin memoria de esta conversación — la regla
+  tiene que vivir en el repo, no en el prompt externo que dispara la tarea, que no puedo editar
+  desde aquí). Ejecuté la primera corrida como semilla del mecanismo: seleccioné al azar 3 fuentes
+  🟢A del ledger que ni el Lobo ni la revisión profunda de `cronista` habían leído a fondo (de 137
+  fuentes A totales, 117 seguían sin lectura profunda) — F-82 (Rothschild & Stiglitz 1976,
+  selección adversa en seguros), F-107 (Direct Primary Care, JABFM 2018) y F-236 (Davis 1976,
+  decisión de compra en el hogar). Las URLs directas dieron 403 (mismo bloqueo de proxy ya
+  documentado para fuentes académicas); reconstruí el contenido sustancial de las tres vía
+  búsqueda dirigida. Sumé las tres primeras entradas de Intuición acumulada: (1) correr el test de
+  selección adversa antes de lanzar cualquier producto nuevo — no solo preguntar si hay demanda;
+  (2) separar "bueno para quien participa" de "bueno para el sistema/población" al evaluar
+  cualquier modelo de atención con mecanismo de acceso restrictivo (conecta con tesis 9, sin
+  cambiarle la confianza); (3) en seguros de alto involucramiento la unidad real de decisión suele
+  ser el hogar, no el individuo frente al asesor (refuerza desde otro ángulo el matiz ya hecho a
+  C.6 de tesis 18). Ninguna tesis de negocio cambió de confianza por esta corrida — es un
+  mecanismo nuevo y paralelo, no una revisión de evidencia sobre las tesis existentes.
