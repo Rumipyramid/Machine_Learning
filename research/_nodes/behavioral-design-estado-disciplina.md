@@ -314,3 +314,18 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   sobrevendido, corregido por sesgo de publicación) aparece allí en el diseño (ROI sobrevendido,
   desarmado por eco de cita). Ambos concluyen lo mismo: la disciplina se defiende mejor por
   **mecanismo** que por **multiplicador**.
+  ⭐ *Iteración 5 de ese node (2026-08-06) — este node tenía razón y llegó primero.* La revisión
+  profunda de **F-23** hecha aquí el 2026-07-29 —*"lo validado es un mecanismo de feedback +
+  microincentivo ('UBI simulado'), no el pricing dinámico real de una prima"*— resultó ser **la
+  lectura correcta del estudio**, confirmada tres semanas después por una auditoría independiente
+  (F-477: el programa era simulado, el incentivo era de US$100, y el uso de teléfono en mano no
+  cambió). Ese node había registrado el mismo estudio como fuente nueva (F-442) con una lectura más
+  ancha y lo corrigió. **Consecuencia para este node: su §"revisión profunda" no es un adorno
+  metodológico — produjo el matiz que el proyecto necesitaba y que otro node perdió por no
+  consultarlo.**
+  ⬆️ **Y la regla C24 de ese node es la más aprovechable para este**: *la evidencia dura de estas
+  disciplinas está del lado de los costos; el lado del valor es donde vive el eco de cita* — porque
+  los costos los auditan contadores y reguladores, y el valor lo declaran quienes lo venden. Encaja
+  exactamente con lo que este node ya sabe: **el daño de los dark patterns está medido
+  experimentalmente y el retorno del nudge no**. Cualquier caso de negocio de behavioral design
+  debería construirse sobre la columna que alguien está obligado a auditar.
