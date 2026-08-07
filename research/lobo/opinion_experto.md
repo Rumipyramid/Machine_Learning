@@ -1169,6 +1169,85 @@ ese proceso puede estar optimizando contra la forma real en que la categoría se
   Latané, es decisión de hogar) — esta lectura profunda confirma que el marco correcto para esa
   objeción tiene 50 años de literatura propia, no es una intuición nueva del Lobo.
 
+### 4. La incomprensión no solo empuja a elegir peor entre opciones pagadas — puede anular por completo el uso de un beneficio que ya es gratuito
+La segunda encuesta de F-6 (la misma fuente que ya sostiene tesis 2, ahora leída a fondo más allá
+del hallazgo de coaseguro que cita el resumen breve) encuentra algo más específico y más barato de
+corregir que "el consumidor no entiende su plan": los asegurados bajo planes con deducible, al
+malinterpretar la estructura, **reducen su uso de atención preventiva que ya está cubierta sin
+costo de bolsillo bajo el ACA** — no es que la atención preventiva sea cara y la eviten por precio,
+es que creen que les van a cobrar y la evitan por error puro. **Heurística de decisión:** cuando un
+producto/póliza incluye una prestación gratuita condicionada a una estructura compleja (deducible,
+copago, coaseguro), no basta con que esté "técnicamente" cubierta en el contrato — hay que verificar
+activamente que el asegurado *sepa* que es gratis, porque el default conductual documentado es
+asumir que cuesta y evitarla. A diferencia de tesis 1 (donde "explicar mejor" no cambia conducta de
+compra), aquí el objetivo no es vender más — es no perder utilización de algo ya pagado por la
+aseguradora, que es una pérdida silenciosa de valor para el cliente y una oportunidad perdida de
+mostrar valor del producto. Aplicable directo a cualquier chequeo anual, telemedicina o beneficio
+incluido sin costo adicional en un plan de salud.
+- **Fuente:** F-6 (🟢A, Loewenstein et al. 2013 — ya citada en tesis 2; este es el hallazgo de la
+  segunda encuesta del propio estudio, no cubierto por el resumen de una línea que ya tenía el
+  ledger)
+- **Leído a fondo:** 2026-08-07 (mismo bloqueo de URL directa vía proxy del entorno para
+  sciencedirect.com; reconstruido vía búsqueda dirigida que confirma el mecanismo específico —
+  subutilización de preventiva gratuita por malentendido, no por costo real)
+- **Conexión razonada, no forzada:** matiza tesis 2 sin cambiar su confianza (sigue Alta) — el
+  costo de la incomprensión del coaseguro no es solo "elegir peor", es también "no usar lo que ya
+  se pagó", un ángulo que tesis 2 no tenía explícito.
+
+### 5. Antes de aplicar cualquier framework con nombre propio a un proyecto propio, buscar su literatura de "malentendidos/clarificaciones" — casi siempre existe, y documenta fallas ya observadas, no hipotéticas
+F-53 (Holtrop et al. 2021), ya usado para estructurar las preguntas de investigación del piloto
+farmacia+triage IA (tesis 9), es en sí mismo un caso de estudio de esta heurística: es un paper
+publicado 22 años después del RE-AIM original (1999) específicamente para corregir 13 malentendidos
+documentados sobre cómo los propios equipos de salud pública lo aplicaban mal en la práctica —
+tratar las cinco dimensiones como checklist secuencial obligatorio en vez de guía pragmática, medir
+"Maintenance" solo a nivel del paciente individual sin la capa de institucionalización a nivel de la
+organización, entre otros. El framework evolucionó a PRISM precisamente porque RE-AIM 1999 no cubría
+contexto organizacional/de infraestructura. **Heurística de decisión:** un framework con ~20+ años de
+uso real genera su propio corpus de "cómo la gente lo usa mal" — y ese corpus documenta con precisión
+los atajos que cualquier equipo nuevo (incluido el propio proyecto aplicando RE-AIM al piloto de
+tesis 9) va a tomar por defecto. Antes de aplicar cualquier framework con nombre propio (RE-AIM, pero
+el mismo principio aplica a Jobs-to-be-Done, OKRs, Design Thinking, Stage-Gate — este último ya
+señalado como vulnerable en tesis 21) al propio trabajo, vale la pena buscar activamente su
+literatura de clarificaciones — no solo el paper fundacional — porque ahí está el mapa de errores ya
+cometidos por otros, no una lista hipotética.
+- **Fuente:** F-53 (🟢A, Holtrop et al. 2021 — ya releído a fondo por la revisión profunda de
+  `cronista` el 2026-08-05 desde el ángulo de salud/RE-AIM específico; esta lectura del Lobo es
+  independiente y extrae el ángulo de heurística general de framework, no el matiz de contenido de
+  salud que ya capturó esa revisión)
+- **Leído a fondo:** 2026-08-07 (mismo bloqueo de proxy para pmc.ncbi.nlm.nih.gov; contenido
+  reconstruido vía búsqueda dirigida, consistente con el detalle ya registrado en el ledger)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 9 ni de tesis 21 — es una
+  heurística de proceso propio (cómo evaluar frameworks antes de adoptarlos), no evidencia nueva
+  sobre seguros/salud/Perú.
+
+### 6. Antes de poner un incentivo económico contingente sobre una conducta, preguntar si esa conducta ya tiene motivación intrínseca en parte del segmento — el mismo incentivo que activa al desmotivado puede debilitar al que ya lo hacía por convicción propia
+La lectura completa de F-230 (ya citada en tesis 19 solo por el marco general de necesidades
+psicológicas) trae el hallazgo más operativo de la teoría de la autodeterminación que el resumen no
+capturaba: el **efecto de socavamiento** (*undermining effect*, meta-análisis de Deci, Koestner &
+Ryan 1999 sobre 128 experimentos controlados) — las recompensas económicas contingentes a una tarea
+**reducen la motivación intrínseca** cuando esa tarea ya era genuinamente interesante o valorada por
+la persona, y la motivación "autónoma" (identificada/intrínseca) predice mejores resultados
+sostenidos que la motivación "controlada" (por recompensa o presión externa). **Heurística de
+decisión:** esto conecta directo con tesis 7 (UBI con microincentivo de US$100 sobre conducción
+segura) y con el hallazgo de defaults de tesis 6 (Milkman, microincentivo en el momento de recaída):
+la evidencia de que el incentivo contingente funciona es real y de campo, pero la propia teoría de la
+que se deriva advierte que el mismo pago puede erosionar la motivación de quien ya manejaba con
+cuidado por razones propias (proteger a su familia, evitar el riesgo) — si el incentivo se retira
+después, ese segundo segmento puede terminar con peor conducta que si nunca se le hubiera ofrecido
+pago. No es razón para descartar los incentivos (tesis 7 ya los valida con RCT real) — es razón para
+segmentar el diseño: el microincentivo probablemente rinde más en el cliente de baja motivación de
+base, mientras que en el que ya es buen riesgo por convicción propia, reconocimiento/feedback sin
+pago (que es justo lo que separa el brazo "meta elegida" del brazo "incentivo" en el propio F-23)
+puede ser la jugada más segura a largo plazo.
+- **Fuente:** F-230 (🟢A, Deci & Ryan 2000 — ya citada en tesis 19 por el marco general de SDT; esta
+  lectura profunda añade el efecto de socavamiento, no citado antes en esta opinión)
+- **Leído a fondo:** 2026-08-07 (mismo bloqueo de proxy para doi.org; contenido reconstruido vía
+  búsqueda dirigida sobre el meta-análisis de 1999 de recompensas contingentes y la distinción
+  motivación autónoma/controlada)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 7 ni de tesis 19 — es un matiz
+  de diseño (a quién conviene pagar vs. a quién conviene solo dar feedback) que ninguna de las dos
+  tesis tenía explícito, marcado como instinto razonado sobre teoría, no como dato de campo peruano.
+
 ## 📔 Bitácora
 
 - **2026-07-12** — Primera creación de la opinión. Revisé las 15 fuentes del
@@ -1643,3 +1722,24 @@ ese proceso puede estar optimizando contra la forma real en que la categoría se
   ser el hogar, no el individuo frente al asesor (refuerza desde otro ángulo el matiz ya hecho a
   C.6 de tesis 18). Ninguna tesis de negocio cambió de confianza por esta corrida — es un
   mecanismo nuevo y paralelo, no una revisión de evidencia sobre las tesis existentes.
+- **2026-08-07** — Corrida diaria de refinamiento. Confirmé `main` actualizado (ya en el commit del
+  2026-08-06) y leí `codice.md` completo: sigue tope exacto en F-468 (F-1 a F-468 sin huecos),
+  idéntico al que ya procesó la corrida de ayer (2026-08-06) — **sin cambios sustanciales** en
+  evidencia, cero fuentes nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/
+  `/marketer` en las últimas 24h. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con el ledger vigente, y no forcé ninguna conexión de tesis nueva solo por completar
+  el paso. La última revisión profunda (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no
+  vence hoy. Sí corrió la rutina diaria de intuición (segunda corrida desde que se creó el
+  2026-08-06): seleccioné al azar 3 fuentes 🟢A adicionales sin lectura previa del Lobo — F-6
+  (Loewenstein 2013, ya citada en tesis 2), F-53 (Holtrop et al. 2021 RE-AIM, ya citada en tesis 9 y
+  ya releída por la revisión profunda de `cronista` el 2026-08-05 desde otro ángulo) y F-230 (Deci &
+  Ryan 2000, ya citada en tesis 19) — y sumé las entradas 4, 5 y 6 de Intuición acumulada: (4) la
+  incomprensión puede anular el uso de un beneficio ya gratuito, no solo empeorar la elección entre
+  pagados (matiza tesis 2 sin cambiar su confianza); (5) buscar la literatura de
+  "malentendidos/clarificaciones" de cualquier framework con nombre propio antes de adoptarlo, no
+  solo el paper fundacional (heurística de proceso, sin tocar confianza de tesis 9/21); (6) un
+  incentivo económico contingente puede socavar la motivación de quien ya actuaba por convicción
+  propia (efecto de socavamiento, Deci/Koestner/Ryan 1999) — matiza el diseño de incentivos de tesis
+  7 y 19 sin cambiar su confianza, es instinto razonado sobre teoría, no dato de campo peruano.
+  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 26
+  días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.

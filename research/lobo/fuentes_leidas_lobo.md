@@ -20,3 +20,6 @@
 | F-82 | 🟢 A | 2026-08-06 | Intuición 1 — correr el test de selección adversa antes de lanzar cualquier producto nuevo |
 | F-107 | 🟢 A | 2026-08-06 | Intuición 2 — separar "bueno para quien participa" de "bueno para el sistema/población" |
 | F-236 | 🟢 A | 2026-08-06 | Intuición 3 — en seguros de alto involucramiento, la unidad de decisión suele ser el hogar, no el individuo |
+| F-6 | 🟢 A | 2026-08-07 | Intuición 4 — la incomprensión puede anular el uso de un beneficio ya gratuito, no solo empeorar la elección entre pagados |
+| F-53 | 🟢 A | 2026-08-07 | Intuición 5 — buscar la literatura de "malentendidos/clarificaciones" de cualquier framework antes de adoptarlo |
+| F-230 | 🟢 A | 2026-08-07 | Intuición 6 — un incentivo económico contingente puede socavar la motivación de quien ya actuaba por convicción propia |
