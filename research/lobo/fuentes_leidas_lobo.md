@@ -23,3 +23,6 @@
 | F-6 | 🟢 A | 2026-08-07 | Intuición 4 — la incomprensión puede anular el uso de un beneficio ya gratuito, no solo empeorar la elección entre pagados |
 | F-53 | 🟢 A | 2026-08-07 | Intuición 5 — buscar la literatura de "malentendidos/clarificaciones" de cualquier framework antes de adoptarlo |
 | F-230 | 🟢 A | 2026-08-07 | Intuición 6 — un incentivo económico contingente puede socavar la motivación de quien ya actuaba por convicción propia |
+| F-220 | 🟢 A | 2026-08-08 | Intuición 7 — un disclaimer de que una cifra es "referencial" no neutraliza su efecto de ancla |
+| F-148 | 🟢 A | 2026-08-08 | Intuición 8 — satisfacción subjetiva y desempeño objetivo de un sistema conversacional pueden divergir por segmento |
+| F-66 | 🟢 A | 2026-08-08 | Intuición 9 — el silencio metodológico sobre perspectiva/año de precios en costeo de salud es la norma, no la excepción |

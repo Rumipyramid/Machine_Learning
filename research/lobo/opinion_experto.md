@@ -1248,6 +1248,73 @@ puede ser la jugada más segura a largo plazo.
   de diseño (a quién conviene pagar vs. a quién conviene solo dar feedback) que ninguna de las dos
   tesis tenía explícito, marcado como instinto razonado sobre teoría, no como dato de campo peruano.
 
+### 7. Un disclaimer de que una cifra es "referencial" o "arbitraria" no neutraliza su efecto de ancla — solo cambiarla o quitarla lo hace
+Lectura profunda de F-220 (Tversky & Kahneman 1974, el experimento original de la rueda de la
+fortuna): sujetos vieron girar una rueda de números que sabían manipulada para caer solo en 10 o
+65, y aun así su estimación posterior (¿qué % de países africanos hay en la ONU?) se desplazó ~20
+puntos porcentuales entre el grupo que vio 10 (mediana 25%) y el que vio 65 (mediana 45%) — el
+mecanismo que proponen los autores es ajuste insuficiente desde el ancla, no desconocimiento de que
+es arbitraria. **Heurística de decisión:** cualquier mitigación de riesgo de anclaje que dependa de
+"aclarar que la cifra es referencial/estimada/no vinculante" (el tipo de disclaimer legal que
+Compliance suele pedir) no está probada por esta evidencia — el experimento fundacional muestra el
+efecto sobreviviendo intacto pese a que el sujeto ve con sus propios ojos que el número es
+aleatorio. La única mitigación que la evidencia sí sostiene es no mostrar el ancla, o reemplazarla
+por una de menor magnitud persuasiva — no explicarla. Conecta con tesis 15 (cifra headline como
+ancla) y con C.2 del Bloque 4 del Playbook (tesis 18): el disclaimer "sujeto a evaluación" en una
+pieza de venta no es, por esta evidencia, una defensa de compliance suficiente contra el efecto de
+anclaje que la misma pieza genera — son dos riesgos distintos (regulatorio vs. conductual) que un
+mismo texto legal no resuelve los dos a la vez.
+- **Fuente:** F-220 (🟢A, Tversky & Kahneman 1974, *Science* — paper fundacional)
+- **Leído a fondo:** 2026-08-08 (URL de science.org bloqueada por el proxy del entorno; reconstruido
+  vía búsqueda dirigida que confirma el diseño experimental exacto, las medianas de 25%/45% y la
+  explicación mecanística de ajuste insuficiente)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 15 ni de tesis 18 (ambas ya
+  citan a F-220/F-175) — agrega una heurística de proceso: la mitigación textual/legal del efecto de
+  anclaje no tiene respaldo en la fuente fundacional, solo el rediseño de qué ancla se muestra.
+
+### 8. La satisfacción subjetiva y el desempeño objetivo de un sistema conversacional no solo pueden divergir — pueden moverse en direcciones opuestas en el mismo segmento
+Lectura profunda de F-148 (Hone & Graham 2000, cuestionario SASSI): en los estudios de validación
+del cuestionario, los usuarios de mayor edad necesitaron más tiempo para completar las tareas (peor
+desempeño objetivo) pero calificaron el sistema de forma consistentemente más favorable que los
+usuarios más jóvenes (mejor satisfacción subjetiva) — la misma variable (edad) empuja las dos
+métricas en direcciones opuestas, no solo con distinta magnitud. **Heurística de decisión:** al
+evaluar cualquier asistente o agente conversacional (el de Rimac incluido), no basta con separar
+métrica objetiva de métrica subjetiva — hay que cruzarlas por segmento, porque un promedio agregado
+de satisfacción alta puede estar escondiendo exactamente al segmento (típicamente el de menor
+familiaridad digital, más edad) que peor lo está usando en términos de tarea completada con éxito.
+Reportar solo NPS/satisfacción sin desagregar por segmento de usuario puede leer como éxito un
+producto que sistemáticamente sirve peor a quien más lo necesita.
+- **Fuente:** F-148 (🟢A, Hone & Graham 2000, *Natural Language Engineering*, Cambridge)
+- **Leído a fondo:** 2026-08-08 (URL de cambridge.org bloqueada por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que confirma los 6 factores del cuestionario y el hallazgo de
+  divergencia por edad entre tiempo de tarea y calificación subjetiva)
+- **Conexión razonada, no forzada:** no cambia la confianza de ningún riesgo ya vigente — profundiza
+  el riesgo ya anotado "medir el agente conversacional de IA con la métrica equivocada" con un
+  mecanismo concreto de por qué agregar sin segmentar puede ocultar el problema en vez de revelarlo.
+
+### 9. El silencio metodológico (no decir qué perspectiva de costeo o año de precios se usó) es la norma, no la excepción, en la literatura de costeo en salud — y debe leerse como bandera roja, no como neutralidad
+Lectura profunda de F-66 (Xu et al. 2020, revisión crítica de micro-costing): el método formal tiene
+tres etapas (identificar los recursos usados, medir cada uno con estudios de tiempos/movimientos,
+valorizarlos a precio unitario), pero la revisión encuentra que la mayoría de estudios publicados no
+las documenta bien — cerca de un tercio no especifica la perspectiva de costeo (¿del sistema de
+salud? ¿del paciente? ¿social?), solo 20.5% adopta perspectiva social (la más completa), 32.8% no
+especifica el año de precios usado y 44.1% no aclara si ajustó por inflación al combinar costos de
+años distintos. **Heurística de decisión:** cuando aparezca cualquier cifra de "costo por atención",
+"ahorro por triage" o "costo unitario evitado" (el tipo de número que sostendría el caso de negocio
+de farmacia+triage IA de tesis 9, o cualquier cálculo de unit economics de `lapuerta`/proyectos de
+salud), la ausencia de perspectiva/año de precios/ajuste por inflación explícitos no es un detalle
+de reporting menor — es, según esta revisión, lo que le pasa a más de un tercio de la literatura
+publicada, así que un número sin esos tres datos no debe tratarse como comparable o confiable por
+default: hay que pedirlos antes de citarlo en un caso de negocio interno.
+- **Fuente:** F-66 (🟢A, Xu et al. 2020/2021, *Health Economics Review*)
+- **Leído a fondo:** 2026-08-08 (URLs de ncbi.nlm.nih.gov y del PDF alojado en squarespace
+  bloqueadas por el proxy del entorno; reconstruido vía búsqueda dirigida que confirma las tres
+  etapas y los porcentajes exactos de vacíos de reporting)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 9/10 (farmacia+triage IA) —
+  agrega un criterio de auditoría específico para cualquier cifra de costo-efectividad que el
+  proyecto use en el futuro para dimensionar esa oportunidad, algo que ninguna tesis vigente tenía
+  explícito todavía.
+
 ## 📔 Bitácora
 
 - **2026-07-12** — Primera creación de la opinión. Revisé las 15 fuentes del
@@ -1743,3 +1810,29 @@ puede ser la jugada más segura a largo plazo.
   7 y 19 sin cambiar su confianza, es instinto razonado sobre teoría, no dato de campo peruano.
   Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 26
   días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-08** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  d739018→22e9aee, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
+  verifiqué la secuencia F-1 a F-468 sin huecos — sigue tope exacto en F-468, idéntico al que ya
+  procesó la corrida de ayer (2026-08-07) — **sin cambios sustanciales** en evidencia, cero fuentes
+  nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h.
+  Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no
+  forcé ninguna conexión de tesis nueva solo por completar el paso. La última revisión profunda
+  (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no vence hoy. Sí corrió la rutina diaria
+  de intuición (tercera corrida desde que se creó el 2026-08-06): de las 137 fuentes 🟢A del ledger,
+  6 ya tenían lectura profunda del Lobo (F-6, F-53, F-82, F-107, F-230, F-236) — seleccioné al azar 3
+  de las 131 restantes: F-220 (Tversky & Kahneman 1974, anclaje), F-148 (Hone & Graham 2000, SASSI)
+  y F-66 (Xu et al. 2020, micro-costing en salud). Sumé las entradas 7, 8 y 9 de Intuición
+  acumulada: (7) un disclaimer de que una cifra es "referencial" no neutraliza su efecto de
+  ancla — el experimento fundacional de la rueda de la fortuna mostró el efecto (~20pp de
+  desplazamiento) sobreviviendo intacto aunque el sujeto viera que el número era aleatorio; conecta
+  con tesis 15/18 sin cambiarles la confianza; (8) satisfacción subjetiva y desempeño objetivo de un
+  sistema conversacional pueden moverse en direcciones opuestas en el mismo segmento (usuarios
+  mayores: peor tiempo de tarea, mejor calificación) — profundiza el riesgo ya anotado sobre medir
+  mal al agente conversacional de Rimac; (9) el silencio metodológico sobre perspectiva de costeo,
+  año de precios y ajuste por inflación es la norma (no la excepción) en la literatura de
+  micro-costing en salud, y debe leerse como bandera roja al evaluar cualquier cifra de
+  costo-efectividad que en el futuro sostenga el caso de negocio de farmacia+triage IA (tesis 9/10).
+  Ninguna tesis de negocio cambió de confianza por esta corrida — es el mecanismo paralelo de
+  intuición, no una revisión de evidencia sobre las tesis existentes. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 27 días de
+  historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
