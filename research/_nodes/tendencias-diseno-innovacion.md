@@ -126,6 +126,22 @@ recurrente de `/trinidad` sobre tendencias de diseño debe:
    del título (*"simulado"*) y omitido el resultado nulo del estudio. El chequeo obligatorio ahora
    tiene **dos** pasos: (1) ¿existe la fuente?, y (2) **¿mi enunciado dice lo mismo que su título y
    su abstract literales?**
+7. **Pasar la salida por el filtro de lectura humana** *(añadido el 2026-08-07, por pedido explícito
+   del usuario; aplica también a las corridas programadas, cuyo prompt no lo repite)*. Ni el node ni
+   la respuesta en el chat terminan en el reporte de evidencia. **Antes de decidir qué escribir**,
+   revisar el **🗺️ Mapa de espacios** y preguntarse qué habría que cubrir para generar conocimiento
+   sobre el tema y **para que un equipo de diseño pueda usarlo e inspirarse**. La corrida debe:
+   - **Tomar posición, no solo dictaminar evidencia.** Un veredicto sobre una fuente no es un juicio
+     sobre el diseño. Cada iteración deja al menos **un juicio nuevo o revisado en 💎 Juicios
+     vigentes**, con la estructura *qué sostiene · con qué · qué cambia el lunes*.
+   - **Cubrir el oficio, no solo la epistemología.** Experimentación es el ejemplo obvio, y no
+     alcanza: prototipado, colaboración con ingeniería, accesibilidad como práctica, artesanía,
+     carrera y formación son espacios en 🔴 que la corrida debe ir cerrando.
+   - **Ordenar para leer.** Primero el juicio, después la evidencia que lo sostiene, al final el
+     detalle y las salvedades — no al revés. El aparato de auditoría es el **soporte** de la
+     conclusión, no su sustituto.
+   - **Terminar en algo utilizable.** Si al cerrar la corrida no hay nada que un diseñador pueda
+     hacer distinto el lunes, la iteración está incompleta aunque sus hallazgos sean correctos.
 
 ---
 
@@ -186,6 +202,199 @@ recurrente de `/trinidad` sobre tendencias de diseño debe:
   el feedback genérico, igual que las interfaces adaptativas pierden contra las estáticas y que la
   personalización con datos rinde peor con la privacidad saliente. **La capa que personaliza es
   justamente la que no funciona** → **H32**.
+
+---
+
+## 🗺️ Mapa de espacios: qué hay que cubrir para que esto le sirva a un equipo de diseño
+
+*Sección permanente, añadida el 2026-08-07. Se revisa al inicio de cada iteración, **antes** de
+decidir qué se investiga y qué se escribe.*
+
+Este node nació como una investigación sobre **si el diseño tiene impacto demostrable**, y esa
+pregunta lo llevó, iteración tras iteración, hacia la auditoría de evidencia: quién cita qué, qué
+cifra colapsa dónde. Es un buen aparato y hay que conservarlo. Pero un conteo simple del propio node
+muestra el desbalance:
+
+| Espacio | Presencia en el node | Diagnóstico |
+|---|---|---|
+| Epistemología (eco, huérfano, autoridad prestada, erosión) | muy alta | ✅ el aparato más fuerte del proyecto |
+| Cómo se argumenta el valor del diseño | muy alta | ✅ maduro (C1, C2, C3) |
+| Experimentación y medición | alta | ✅ fuerte, y con juicio nuevo (ver J1) |
+| Estética y fluidez | media | 🟡 buena evidencia, dicotomía mal planteada (H7) |
+| IA como economía (costo, margen) | media | 🟢 nuevo y potente (C24) |
+| IA como material de interfaz | media-baja | 🟡 evidencia clara, poca traducción a oficio |
+| Carrera, rol e identidad | media-baja | 🟡 diagnosticado, sin recomendación |
+| Contexto peruano / LatAm | baja | 🔴 tres iteraciones en blanco (H21, H31) |
+| **Accesibilidad** | **casi nula** | 🔴 solo como obligación legal; **cero** como práctica |
+| **Prototipado y velocidad de aprendizaje** | **nula** | 🔴 vacío total |
+| **Research ops / cómo se organiza el aprendizaje** | **nula** | 🔴 vacío total |
+| **Colaboración diseño ↔ ingeniería** | **muy baja** | 🔴 el punto donde más valor se pierde, sin cubrir |
+| **Motion, contenido, artesanía** | **muy baja** | 🔴 vacío |
+
+**El juicio sobre el propio node, entonces, es este: sabe defenderse de una cifra falsa y no sabe
+todavía decirle a alguien qué hacer el lunes.** Las iteraciones 6 en adelante deben cerrar los
+espacios en 🔴 con la misma disciplina con que se construyó el aparato de evidencia — empezando por
+**prototipado/velocidad de aprendizaje** y **colaboración diseño-ingeniería**, que son donde un
+equipo real gasta su tiempo, y por **accesibilidad como práctica**, que hoy en el node existe solo
+como riesgo regulatorio.
+
+⚠️ **Regla de balance**: una iteración que solo produzca hallazgos de epistemología está
+**incompleta**, aunque sean buenos. Cada corrida debe dejar al menos **un juicio utilizable** en la
+sección siguiente.
+
+---
+
+## 💎 Juicios vigentes: lo que este node sostiene hoy
+
+*Sección permanente, añadida el 2026-08-07. Es la capa de **lectura humana** del node: no reporta
+evidencia, toma posición. Cada juicio dice qué sostiene, con qué se sostiene y **qué cambia en la
+práctica**. Un juicio solo entra aquí si se apoya en evidencia ya clasificada en §5 y sobrevivió a la
+búsqueda adversarial. Se revisa entera en cada iteración: los juicios pueden degradarse.*
+
+### J1 — El brazo de control correcto casi nunca es "nada": es "la versión genérica bien hecha"
+
+**Qué sostiene.** La mayoría de los experimentos de la industria comparan la novedad contra la
+ausencia, o contra una línea base débil, y por eso casi siempre "ganan". Cuando alguien se toma el
+trabajo de comparar la novedad contra **una versión simple bien ejecutada**, la ventaja desaparece.
+
+**Con qué.** El RCT de UBI comparó feedback genérico contra meta asignada por algoritmo contra meta
+autoelegida: **los tres mejoraron igual** (F-474). Toda la evidencia favorable a la *generative UI*
+mide preferencia contra **texto plano**, una línea base deliberadamente pobre (C15, F-380 a F-386).
+La personalización con datos personales rinde **peor** que el mensaje genérico cuando la privacidad
+está saliente (C10).
+
+**Qué cambia el lunes.** En cualquier prueba que el equipo diseñe —de una función con IA, de una
+personalización, de un flujo nuevo— **el control no es "como estaba" ni "sin nada": es la versión
+genérica hecha con cuidado**. Sin ese brazo no se mide la innovación, se mide el esfuerzo. Y es la
+prueba más barata de correr, porque la versión genérica ya suele existir.
+
+### J2 — Lo que se adapta solo pierde contra lo estático bien hecho, y eso es una buena noticia
+
+**Qué sostiene.** La promesa de la interfaz que se reconfigura, se personaliza y se genera sola no
+está sostenida por la evidencia; lo que sí está sostenido, con 20 años de literatura, es lo
+contrario. **La ventaja competitiva no está en la capa que se adapta: está en hacer bien la cosa
+base.**
+
+**Con qué.** Adaptable (control del usuario) le gana a adaptativo (control del sistema) de forma
+consistente (C9). La generative UI falla justo en prevención de errores, recuperación, ayuda y
+consistencia (F-382), y produce interfaces distintas ante el mismo prompt (F-384). Y ahora J1 lo
+confirma causalmente fuera del software.
+
+**Qué cambia el lunes.** Usar la IA **en el proceso** (generar opciones, explorar, acelerar el
+prototipo) y desconfiar de usarla **en el producto en tiempo de ejecución** para decidir qué ve el
+usuario. Es la distinción más útil que este node puede ofrecerle hoy a un roadmap.
+
+⭐ **Y es la conclusión más inspiradora del node**, aunque no lo parezca: *si lo genérico bien hecho
+es tan difícil de superar, entonces el trabajo de artesanía sigue siendo el trabajo*. La ventaja no
+se compra con una capa de modelo encima.
+
+### J3 — Diseñar con IA es diseñar con un material que se consume, y eso es nuevo
+
+**Qué sostiene.** Durante veinte años el software tuvo costo marginal ≈ cero: una pantalla más, una
+validación más, un estado vacío más no le costaban nada a nadie. **Con la IA eso se terminó.** Cada
+invocación de modelo que un diseñador pone en un flujo tiene una factura.
+
+**Con qué.** Figma monetizó créditos de IA con éxito —más del 75% de los usuarios enterprise que
+agotaron su límite volvió a pagar— y aun así su **margen bruto GAAP cayó de 89% a 84%** y el costo
+de ingresos **se duplicó** (F-469, F-470, F-477). Del lado del usuario, el mismo fenómeno se ve en
+crudo: gente quemando **3.000+ créditos en menos de una hora** haciendo que la IA arregle lo que la
+IA rompió (F-475).
+
+**Qué cambia el lunes.** Aparece una competencia de diseño que antes no existía: **decidir cuándo
+vale la pena invocar el modelo**. Un flujo que llama al modelo tres veces donde una regla simple
+bastaba ya no es solo inelegante — es caro. Y el reciclaje de F-475 es un **fallo de diseño con
+factura**: cada iteración que el usuario gasta corrigiendo a la IA es dinero que él paga por un
+defecto de producto. Diseñar el presupuesto de IA de un flujo es ahora parte del oficio.
+
+### J4 — El valor del diseño se argumenta por mecanismo y por costo, nunca por multiplicador
+
+**Qué sostiene.** Los multiplicadores del gremio (el "$1 → $100", el +32%/+56%, el 671%, el 135%) no
+resisten el rastreo, y usarlos ante un CFO es entregar el argumento. Lo que resiste es el mecanismo:
+menos pasos, menos errores, menos retrabajo, menos riesgo regulatorio.
+
+**Con qué.** Las cinco cifras estrella colapsan cada una en una fuente única no auditable o en
+ninguna (C3, C17, F-266, F-268, F-327, F-397). Y ~2/3 de los cambios bien diseñados **no** mueven su
+métrica objetivo (F-262, C2).
+
+**Qué cambia el lunes, con un matiz nuevo de 2026.** Al argumento por mecanismo hay que sumarle
+ahora el argumento por **costo por resultado** (J3). Figma es la demostración de que ni crecer 48%
+te protege si el margen se rompe: en un mercado que castiga la dilución, **"esto cuesta menos por
+caso resuelto" es un argumento más fuerte que "esto crecerá"**.
+
+### J5 — La dicotomía "claridad contra ornamento" está mal planteada en sistemas maduros
+
+**Qué sostiene.** El ornamento **con sistema** no compite con la claridad: la produce. El ornamento
+**sin sistema** destruye la usabilidad. La pregunta útil no es cuál gana, sino en qué condiciones se
+sacrifica una por la otra.
+
+**Con qué.** Material 3 Expressive contra Material 3: fijación **33% más rápida**, tarea **20% más
+rápida** *y* mejores calificaciones estéticas — las dos subieron juntas (F-403, CHI 2026). En la
+otra dirección, el anti-diseño caótico llega a **8-10% de éxito de tarea** (C13), y Liquid Glass
+muestra que ni la organización con más recursos de diseño del mundo es inmune (C12, F-272).
+
+**Qué cambia el lunes.** Dejar de pedirle al equipo que elija entre "bonito" y "usable" — es una
+falsa elección que empobrece el trabajo. Lo que hay que vigilar es otra cosa: **si el recurso
+expresivo tiene gramática** (jerarquía, foco, consistencia) o si es decoración suelta.
+
+### J6 — El poder del diseño está probado; lo que está mal probado es su dirección
+
+**Qué sostiene.** La evidencia causal más fuerte que existe sobre la capacidad del diseño de mover
+conducta humana es la evidencia sobre su **capacidad de daño**. Los dark patterns funcionan, con
+muestra representativa y asignación aleatoria, y afectan a todos los grupos.
+
+**Con qué.** C14, F-241, F-251: casi cuadruplican la aceptación de un plan dudoso, y los proxies
+clásicos de vulnerabilidad explican poco.
+
+**Qué cambia el lunes, y por qué es inspirador y no deprimente.** Está demostrado que **el diseño
+mueve conducta de verdad**. Lo que no está demostrado es que la mueva hacia el valor del usuario —
+y eso no es una condena, es una **vacante**. Convierte al equipo en el que tiene que producir esa
+evidencia, no en el que la recibe de un reporte de consultora. Es, probablemente, el trabajo más
+valioso que un equipo de diseño con acceso a datos reales puede hacer hoy.
+
+### J7 — La ansiedad del gremio no se gestiona con discurso, se gestiona con estructura
+
+**Qué sostiene.** El pánico profesional por la IA está mal distribuido y mal financiado: el daño
+está concentrado en los juniors pero se enuncia en nombre de todos, y los dos bandos del debate
+tienen modelo de negocio.
+
+**Con qué.** Testimonio segmentado: el mercado es *"pésimo si eres junior o recién graduado; si eres
+senior, no es ideal pero está cerca de lo normal"* (F-414, H10). ~60-70% de los amplificadores del
+discurso tienen incentivo comercial identificable — **y también lo tienen los que lo desmienten**
+(F-415, H11). Y la conducta contradice al discurso: los mismos que se quejan del precio de los
+créditos **los vuelven a pagar en más del 75% de los casos** (F-475 vs. F-477, H9).
+
+**Qué cambia el lunes.** Ninguna charla interna sobre "la IA no nos va a reemplazar" resuelve esto,
+porque el problema no está distribuido como el discurso dice. Lo que sí opera: **rutas de formación
+y de exposición para los juniors**, que son quienes cargan el costo real, y **gobernanza de uso** en
+vez de capacitación en herramientas (H21).
+
+### J8 — Una meta de innovación sin fecha de reporte es un anuncio, no una meta
+
+**Qué sostiene.** Las metas públicas de innovación tienden a anunciarse y no reportarse, y cuando se
+puede verificar, no se cumplieron.
+
+**Con qué.** 3M **inventó** el índice de vitalidad de nuevos productos con meta de 30% y hoy está en
+10-11% (F-454). BCP declaró en 2022 una meta de 10% de ingresos nuevos por innovación disruptiva
+hacia 2025, sin verificación pública de cumplimiento (F-460). H30.
+
+**Qué cambia el lunes.** Si el equipo fija una meta pública, **fijar en el mismo documento cómo y
+cuándo se reportará el cumplimiento**. Es la diferencia barata entre un compromiso y una campaña, y
+cuesta un párrafo.
+
+### J9 — Ante una cifra, el orden de las preguntas importa más que el escepticismo
+
+**Qué sostiene.** El escepticismo genérico no protege. Lo que protege es una secuencia, porque cada
+defecto se detecta con una pregunta distinta y en el orden equivocado no se ven.
+
+**Con qué.** Cuatro modos de fallo ya documentados en el node, cada uno inmune a la defensa
+anterior: **eco de cita** (colapsa en una fuente mala, C3), **autoridad prestada** (el emisor nunca
+lo publicó, C19), **huérfano de cita** (no existe ningún documento, C22) y **erosión de la cita** (la
+fuente es impecable y el enunciado no le es fiel, C23).
+
+**Qué cambia el lunes.** El orden es: **(1) ¿existe el documento? (2) ¿dice literalmente lo que se
+le atribuye? (3) ¿qué midió — gusto, desempeño o consecuencia? (4) ¿quién gana si lo creo?** Ninguna
+de las cuatro sustituye a las otras, y la (2) es la que casi nadie hace — este mismo node falló ahí
+en la iteración 5, con su propio hallazgo favorito.
 
 ---
 
