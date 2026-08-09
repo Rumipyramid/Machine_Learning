@@ -1315,6 +1315,88 @@ default: hay que pedirlos antes de citarlo en un caso de negocio interno.
   proyecto use en el futuro para dimensionar esa oportunidad, algo que ninguna tesis vigente tenía
   explícito todavía.
 
+### 10. Que un modelo de IA clínica haya pasado el silent trial una vez no es una garantía permanente — es una fotografía de un momento, sin estándar todavía de cuándo repetirlo
+Lectura profunda de F-56 (Nature Health, scoping review 2025): el propio review encuentra que **no
+existen guías formales** todavía sobre cómo correr una evaluación silenciosa de IA clínica —cribó
+literatura de 2015 a 2025, 891 artículos, solo 75 cumplieron criterio de inclusión— pese a que el
+mecanismo ya se reconoce como la fase crítica que menos atención recibe frente al desarrollo in
+silico del modelo. El caso que cita el review es la evidencia más aguda: un modelo pasó su
+validación inicial, pero en un silent trial posterior su AUC **colapsó de 0.90 a 0.50** — no por un
+error del modelo en sí, sino por *distribution shift* real (cambió la distribución de edad, la
+lateralidad de los riñones obstruidos en la cohorte, y el formato de imagen del equipo). **Heurística
+de decisión:** tesis 10 ya trata el silent trial como el gate correcto antes de producción (60-90
+días, no saltárselo) — esta lectura agrega el matiz que falta: "pasó el silent trial" no es un
+casillero que se marca una vez y queda válido para siempre, es una medición vigente solo mientras la
+población/contexto de despliegue no cambie. Si el piloto de farmacia+triage IA (tesis 9/10) cambia de
+zona geográfica, de mezcla de síntomas/edad de pacientes, o de dispositivo/formato de captura después
+de pasar su silent trial inicial, eso es un disparador para **repetirlo**, no evidencia de que "ya
+está validado" — y hoy no hay ni siquiera un estándar de la industria que diga cada cuánto.
+- **Fuente:** F-56 (🟢A, Nature Health 2025, scoping review de silent trials para IA médica — ya
+  citada en tesis 10 solo por el resumen de una línea del ledger)
+- **Leído a fondo:** 2026-08-09 (URL de nature.com bloqueada por el proxy del entorno; reconstruido
+  vía búsqueda dirigida que confirma el conteo de artículos cribados/incluidos, la ausencia de guías
+  formales, y el caso de colapso de AUC por distribution shift)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 10 (sigue Alta) — agrega un
+  criterio de vigencia temporal al gate de silent trial que la tesis no tenía explícito: el gate
+  correcto no es solo "correrlo antes de lanzar", es "re-correrlo cuando cambie la población".
+
+### 11. Probar si una intervención funciona y probar si se puede implementar con fidelidad son dos preguntas que conviene correr a la vez desde el día uno del piloto, no en secuencia
+Lectura profunda de F-55 (Cully et al./Bauer 2012, protocolo de estudio en *Implementation
+Science*): el diseño "híbrido tipo 2" que usa este estudio de terapia cognitivo-conductual breve en
+atención primaria no es solo un detalle metodológico — es una de tres variantes con lógica de
+negocio distinta (Curran et al. 2012): tipo 1 prioriza probar si la intervención funciona y solo
+recolecta implementación como dato secundario; tipo 3 hace lo inverso (foco en la estrategia de
+implementación de algo ya probado efectivo); tipo 2 mide las dos cosas **con el mismo peso, en
+paralelo, desde el mismo piloto** — en este caso, desenlaces clínicos (depresión, ansiedad,
+funcionamiento físico) junto con desenlaces de implementación (adherencia del paciente, adopción y
+fidelidad del proveedor) medidos en el mismo protocolo de 320 participantes. **Heurística de
+decisión:** el error de secuenciar ("primero probamos si el triage IA funciona clínicamente, después
+—en un piloto aparte— vemos si el farmacéutico lo puede operar con fidelidad en la práctica real") es
+exactamente lo que un diseño tipo 2 evita — y las 13 "clarificaciones" del propio marco RE-AIM que ya
+citó tesis 9 (heurística 5 de esta sección, F-53) documentan que los equipos tienden por defecto a
+tratar la implementación como un paso posterior, no simultáneo. Para el piloto de farmacia+triage IA
+(tesis 9/10), la jugada de diseño correcta es medir desde el primer día tanto la precisión/seguridad
+clínica (tesis 10) como la fidelidad de uso real por el dispensador (¿sigue el protocolo?, ¿deriva
+cuando corresponde?, ¿mantiene el hábito documentado de OR=29 de no pedir receta, tesis 9?) en el
+mismo estudio, no en dos fases separadas.
+- **Fuente:** F-55 (🟢A, Cully/Bauer et al. 2012, *Implementation Science* — ya citada en tesis 9
+  solo como "ejemplo aplicado" sin desarrollar el mecanismo del diseño híbrido tipo 2)
+- **Leído a fondo:** 2026-08-09 (URLs de ncbi.nlm.nih.gov/pmc.ncbi.nlm.nih.gov bloqueadas por el
+  proxy del entorno; reconstruido vía búsqueda dirigida que confirma la taxonomía Curran et al. 2012
+  de los tres tipos híbridos y el diseño exacto del estudio de Bauer/Cully, N=320)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 9 (sigue Alta) — agrega un
+  criterio de diseño de piloto que ni tesis 9 ni tesis 10 tenían explícito: correr efectividad clínica
+  e implementación en paralelo desde el inicio, no en fases separadas.
+
+### 12. Un material visual bien diseñado no es por sí solo una "ayuda de decisión" rigurosa — el estándar de la disciplina exige, entre otros, declarar el conflicto de interés de quien la construye
+Lectura profunda de F-122 (IPDAS Collaboration, *Evidence Update 2.0*, 2021): el resumen que ya tenía
+el ledger ("la calidad visual/estética favorece aceptabilidad y uso") es real —la revisión sistemática
+de 105 RCTs sí confirma que las ayudas de decisión mejoran conocimiento, expectativas realistas y
+reducen conflicto decisional frente a la atención usual, y que el formato visual influye en
+aceptabilidad— pero es solo uno de **11 dominios** que la actualización 2021 define como estándar de
+una ayuda de decisión rigurosa: proceso de desarrollo, información balanceada, comunicación de
+probabilidades, clarificación de valores, uso de historias personales, guía/coaching de decisión,
+**divulgación de conflictos de interés**, alfabetización en salud, base en evidencia científica,
+medición de efectividad, e implementación. **Heurística de decisión:** tesis 12 (icon arrays/formato
+"3 de 100" mejoran comprensión en baja numeracidad) tiene razón en que la fricción es de comparación,
+no de cantidad de opciones — pero un icon array bien diseñado no es, por sí solo, una "ayuda de
+decisión" en el sentido que exige la disciplina que mide esto. El dominio más incómodo para cualquier
+material que construya un asegurador es el de **divulgación de conflicto de interés**: IPDAS lo trata
+como un dominio explícito porque quien financia o construye la ayuda de decisión tiene, casi por
+definición, un interés en el resultado — exactamente el caso de cualquier comparador de productos que
+Rimac diseñe para su propio catálogo. Si el proyecto alguna vez construye un "comparador" o
+"simulador" formal (no solo material publicitario) y quiere poder llamarlo una ayuda de decisión seria
+—no solo una pieza de conversión bien diseñada—, el checklist correcto es el de los 11 dominios de
+IPDAS, no solo el criterio visual de tesis 12.
+- **Fuente:** F-122 (🟢A, IPDAS Collaboration/Stacey & Volk 2021, *Medical Decision Making* — ya
+  citada en tesis 12 solo por el hallazgo de calidad visual/aceptabilidad)
+- **Leído a fondo:** 2026-08-09 (URL de pmc.ncbi.nlm.nih.gov bloqueada por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que confirma los 105 RCTs de la revisión sistemática base y los
+  11 dominios/13 revisiones de la actualización 2021)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 12 (sigue Alta) — agrega un
+  criterio de rigor más exigente que la tesis no tenía explícito: "material visual estructurado" y
+  "ayuda de decisión IPDAS-completa, con conflicto de interés declarado" no son la misma barra.
+
 ## 📔 Bitácora
 
 - **2026-07-12** — Primera creación de la opinión. Revisé las 15 fuentes del
@@ -1836,3 +1918,30 @@ default: hay que pedirlos antes de citarlo en un caso de negocio interno.
   intuición, no una revisión de evidencia sobre las tesis existentes. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 27 días de
   historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-09** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  d739018→daad3e9, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
+  verifiqué la secuencia F-1 a F-468 sin huecos — sigue tope exacto en F-468, idéntico al que ya
+  procesó la corrida de ayer (2026-08-08) — **sin cambios sustanciales** en evidencia, cero fuentes
+  nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h.
+  Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no
+  forcé ninguna conexión de tesis nueva solo por completar el paso. La última revisión profunda
+  (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no vence hoy. Sí corrió la rutina diaria
+  de intuición (cuarta corrida desde que se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 9
+  ya tenían lectura profunda del Lobo (F-6, F-53, F-66, F-82, F-107, F-148, F-220, F-230, F-236) —
+  seleccioné al azar 3 de las 132 restantes: F-56 (Nature Health 2025, scoping review de silent
+  trials), F-55 (Cully/Bauer 2012, diseño híbrido tipo 2) y F-122 (IPDAS Collaboration 2021, ayudas de
+  decisión). Sumé las entradas 10, 11 y 12 de Intuición acumulada: (10) el silent trial pasado una vez
+  no es garantía permanente — el propio scoping review no encuentra guías formales sobre cuándo
+  repetirlo, y cita un caso real de colapso de AUC (0.90→0.50) por distribution shift tras un pase
+  inicial exitoso, matiz de vigencia temporal que tesis 10 no tenía explícito; (11) probar
+  efectividad clínica e implementación con fidelidad conviene correr en paralelo desde el día uno del
+  piloto (diseño "híbrido tipo 2" de Curran et al. 2012), no en dos fases separadas — aplicación
+  directa al diseño del piloto de farmacia+triage IA de tesis 9/10; (12) una ayuda de decisión rigurosa
+  según el estándar IPDAS no es solo un material visual bien diseñado (tesis 12) — exige, entre 11
+  dominios, declarar el conflicto de interés de quien la construye, dominio incómodo para cualquier
+  comparador que el propio asegurador diseñe sobre su catálogo. Ninguna tesis de negocio cambió de
+  confianza por esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia
+  sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 28 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días
+  — sin podar todavía; la próxima corrida (2026-08-10) cumple el umbral y debe evaluar podar/resumir
+  las entradas de la primera semana (2026-07-12 a 2026-07-19).

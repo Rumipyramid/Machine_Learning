@@ -26,3 +26,6 @@
 | F-220 | 🟢 A | 2026-08-08 | Intuición 7 — un disclaimer de que una cifra es "referencial" no neutraliza su efecto de ancla |
 | F-148 | 🟢 A | 2026-08-08 | Intuición 8 — satisfacción subjetiva y desempeño objetivo de un sistema conversacional pueden divergir por segmento |
 | F-66 | 🟢 A | 2026-08-08 | Intuición 9 — el silencio metodológico sobre perspectiva/año de precios en costeo de salud es la norma, no la excepción |
+| F-56 | 🟢 A | 2026-08-09 | Intuición 10 — el silent trial pasado una vez no es garantía permanente; falta estándar de cuándo repetirlo |
+| F-55 | 🟢 A | 2026-08-09 | Intuición 11 — probar efectividad e implementación en paralelo desde el día uno del piloto, no en secuencia |
+| F-122 | 🟢 A | 2026-08-09 | Intuición 12 — una ayuda de decisión rigurosa exige, entre otros dominios, declarar el conflicto de interés de quien la construye |
