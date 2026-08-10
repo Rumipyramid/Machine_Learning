@@ -241,6 +241,7 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
 
 ## Conexiones
 
+- [[metodologias-diseno-sistemas-complejos|Metodologías de diseño para sistemas complejos]] — ese node identifica que el vacío del campo está en la evaluación, no en el diagnóstico; este node aporta instrumentos concretos de medición para cerrarlo.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — una mala experiencia con el agente de IA alimenta
   directamente el problema de desconfianza (~48%) ya documentado en ese node; medir y

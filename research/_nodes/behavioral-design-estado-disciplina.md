@@ -293,6 +293,7 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
 
 ## Conexiones
 
+- [[metodologias-diseno-sistemas-complejos|Metodologías de diseño para sistemas complejos]] — repite el mismo patrón en el campo hermano del diseño de sistemas: marcos ampliamente adoptados cuya evidencia de efectividad es mucho más débil que su popularidad, con la crítica más dura viniendo de dentro del propio gremio.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — el caso Vitality y la brecha de confianza en seguros que
   describe ese node son parte de la evidencia de negocio de este.

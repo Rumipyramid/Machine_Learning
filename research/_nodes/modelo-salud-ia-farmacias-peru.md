@@ -540,6 +540,7 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
 
 ## Conexiones
 
+- [[metodologias-diseno-sistemas-complejos|Metodologías de diseño para sistemas complejos]] — este modelo es un sistema socio-técnico complejo; ese node aporta el criterio de método aplicable (rediseñar el backstage, no solo el frontstage; medir failure demand; riesgo de suboptimización al optimizar un subsistema).
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — este node es el diseño concreto
   para Perú; ese node aporta el marco global de mecanismos (capitación, atención primaria,
   Singapur/NHS) que valida y matiza este diseño (ver su §3 y su síntesis §4).
