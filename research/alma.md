@@ -81,6 +81,8 @@ por afirmación cuando corresponda.
 | `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
 | `_outputs/guia-triaje-200-usuarios-sinteticos-2026-08-05.md` — simulación de la "Guía de preguntas" (estudio de triaje digital + kit) sobre 200 usuarios sintéticos `lapuerta` (18-65, NSE A/B/C). ⚠️ Parcial: 8 de 16 preguntas quedaron sin responder porque el prototipo no fue alcanzable desde el entorno | `modelo-salud-ia-farmacias-peru`, `modelo-personas-sinteticas`, `futuro-asesores-seguros-venta-digital` | 2026-08-05 | al día |
 
+| `_outputs/criterio-diseno-briefing-equipo-2026-08-10.md` — **briefing para el equipo de diseño**: destila las 5 iteraciones del node en criterio accionable, organizado por *situación en la que estás* (sustentar valor · trabajar con IA · medir un diseño · citar una cifra) en vez de por tema. Incluye la tabla "no digas / di en su lugar" con las 5 cifras desmontadas y sus reemplazos, el checklist de 4 preguntas antes de citar, y una sección explícita de lo que no sabemos. Versión web publicada como artifact | `tendencias-diseno-innovacion` (v5.0) | 2026-08-10 | al día |
+
 > **Estado**: `al día` o `requiere refresh`.
 
 ---
