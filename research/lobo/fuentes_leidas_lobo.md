@@ -29,3 +29,6 @@
 | F-56 | 🟢 A | 2026-08-09 | Intuición 10 — el silent trial pasado una vez no es garantía permanente; falta estándar de cuándo repetirlo |
 | F-55 | 🟢 A | 2026-08-09 | Intuición 11 — probar efectividad e implementación en paralelo desde el día uno del piloto, no en secuencia |
 | F-122 | 🟢 A | 2026-08-09 | Intuición 12 — una ayuda de decisión rigurosa exige, entre otros dominios, declarar el conflicto de interés de quien la construye |
+| F-41 | 🟢 A | 2026-08-10 | Intuición 13 — la ventana de un canal de salud digital se cierra sin inversión paralela en competencia del recurso humano que lo opera |
+| F-303 | 🟢 A | 2026-08-10 | Intuición 14 — un salto en NDR/retención no es moat durable hasta abrir qué línea de producto específica lo generó |
+| F-434 | 🟢 A | 2026-08-10 | Intuición 15 — un efecto "estrella" de management suele depender de si el desempeño se midió objetiva o autoreportadamente |

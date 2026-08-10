@@ -1397,28 +1397,101 @@ IPDAS, no solo el criterio visual de tesis 12.
   criterio de rigor más exigente que la tesis no tenía explícito: "material visual estructurado" y
   "ayuda de decisión IPDAS-completa, con conflicto de interés declarado" no son la misma barra.
 
+### 13. La ventana regulatoria/de infraestructura para un canal de salud digital se cierra si no se invierte a la par en la competencia del recurso humano que lo opera
+Lectura profunda de F-41 (Rees & Peralta 2024, *Oxford Open Digital Health*, historia de la
+telemedicina peruana): el resumen que ya tenía el ledger ("necesidad urgente de un sistema nacional
+de telesalud integrado que atienda brechas socioculturales") no decía el mecanismo — el estudio
+documenta que Perú ya tenía política y regulación de telesalud preparada antes de la pandemia, lo que
+permitió una expansión rápida en 2020, pero los volúmenes de atención remota **crecieron y luego
+cayeron** tras el pico pandémico (mismo patrón que ya citó tesis 9 vía F-40/F-41), y el propio
+artículo señala como brecha específica no resuelta la **competencia digital/de telesalud del recurso
+humano en salud**, no solo la infraestructura o el marco regulatorio. **Heurística de decisión:**
+tener la política y la infraestructura listas (lo que ya tenía Perú) es condición necesaria para
+escalar rápido cuando llega el evento forzador (pandemia, mandato regulatorio, lanzamiento de
+producto) — pero si no se invierte a la par en que el operador humano del canal (médico, farmacéutico,
+asesor) sepa usarlo bien, el volumen se retrae cuando termina la urgencia, no se sostiene como cambio
+estructural. Aplica directo al piloto de farmacia+triage IA (tesis 9): la infraestructura de delivery
+y el PL 08488 no bastan si no hay entrenamiento explícito del dispensador (que ya falla en pedir
+receta, OR=29, tesis 9) para operar el nuevo canal.
+- **Fuente:** F-41 (🟢A, Rees & Peralta 2024, *Oxford Open Digital Health* — ya citada en tesis 9
+  junto con F-40 solo por el hallazgo de "ventana de oportunidad de corto plazo")
+- **Leído a fondo:** 2026-08-10 (URLs de ncbi.nlm.nih.gov y ouci.dntb.gov.ua bloqueadas por el proxy
+  del entorno; reconstruido vía búsqueda dirigida sobre el resumen de Oxford Academic/PubMed que
+  confirma la preparación regulatoria pre-pandemia, el patrón de crecimiento-caída, y la brecha de
+  competencias de recurso humano)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 9 (sigue Alta) — agrega un
+  criterio de ejecución que la tesis no tenía explícito: la ventana de oportunidad no se sostiene con
+  solo política+infraestructura, necesita inversión paralela en competencia del operador humano.
+
+### 14. Antes de tratar un salto en una métrica de retención/crecimiento como evidencia de un moat durable, hay que abrir qué línea de producto específica lo generó
+Lectura profunda de F-303 (Figma Inc., Form 8-K, resultados Q1 2026): el ledger ya tenía el dato
+agregado (revenue +46% YoY, NDR 139%, ~690.000 clientes de pago) con la advertencia de que la
+definición de NDR de Figma excluye clientes con churn. Lo que la lectura de hoy añade es el impulsor
+específico: la cobertura de la propia earnings call describe el salto de NDR (el más alto en más de
+dos años, +3pp vs. Q4) como impulsado en particular por la **monetización de créditos de IA**, no por
+expansión pareja de asientos en la base de clientes existente. **Heurística de decisión:** un salto en
+una métrica de retención/expansión no es automáticamente evidencia de un negocio estructuralmente más
+pegajoso — antes de citarlo como benchmark (p. ej. en cualquier caso de negocio interno que compare a
+Rimac con un SaaS de alto NDR), hay que abrir qué línea de producto específica lo generó. Un NDR alto
+impulsado por un producto nuevo todavía no maduro (créditos de IA) es una señal más volátil —con
+exposición a que ese mismo producto sea el origen de la próxima caída— que un NDR alto sostenido por
+expansión ancha de la base ya asentada. Conecta directo con tesis 21 (argumentar por mecanismo, no por
+multiplicador) y tesis 25 (exigir el ratio auditado, no la cifra headline, antes de leer cualquier
+apuesta como éxito).
+- **Fuente:** F-303 (🟢A, filing SEC primario — ya citada en `_nodes/tendencias-diseno-innovacion.md`
+  §4.1 solo por la cifra agregada)
+- **Leído a fondo:** 2026-08-10 (sec.gov bloqueado por el proxy del entorno, igual que en el registro
+  original de `cronista`; reconstruido vía búsqueda dirigida sobre cobertura de la misma earnings call
+  —stocktitan, biggo, mlq— que coincide en cifras y añade el detalle del impulsor de IA)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis existente — es un caso
+  concreto nuevo que ilustra el principio ya vigente en tesis 21/25 (desconfiar de una cifra headline
+  sin abrir su mecanismo), aplicado por primera vez a una métrica de retención de SaaS en vez de a un
+  ROI de diseño o un combined ratio de seguros.
+
+### 15. Un efecto "estrella" de la literatura de management casi siempre depende de cómo se midió el desempeño — desconfiar de una correlación cuando el estudio no reporta si usó medición objetiva o autoreportada
+Lectura profunda de F-434 (Junni, Sarala, Taras & Tarba 2013, *Academy of Management Perspectives*,
+meta-análisis de 66 estudios sobre ambidestreza organizacional): el resumen que ya tenía el ledger
+decía que la relación ambidestreza→desempeño "es positiva pero fuertemente moderada por contexto y
+elección metodológica", con el paralelo ya trazado a F-239 (design thinking, efecto mediado por
+empoderamiento psicológico). La lectura de hoy pone número y mecanismo exacto al moderador
+metodológico: el efecto agregado es moderado (r≈0.26), pero es sistemáticamente **más alto cuando el
+estudio mide desempeño con una escala percibida/autoreportada por el propio gerente** en vez de con un
+indicador objetivo (contable, de mercado), y más alto también cuando se usa una medida "combinada" de
+ambidestreza en vez de una medida "balanceada". **Heurística de decisión:** cuando un estudio de
+management reporta que un constructo de moda (ambidestreza, design thinking, agilidad, cultura de
+innovación) "predice desempeño", el primer chequeo antes de citarlo en un caso de negocio no es solo
+buscar el tamaño de efecto — es preguntar **cómo se midió el desempeño**. Un efecto sostenido por
+autoreporte del mismo gerente que también reporta cuán "ambidiestra" es su empresa es candidato a
+inflarse por el mismo sesgo de deseabilidad/consistencia que un cuestionario de satisfacción de
+cliente autoreportado. Refuerza, con un segundo caso independiente, el mismo patrón que ya daba F-239
+en tesis 21: el constructo estrella de la literatura de gestión rara vez funciona por el mecanismo
+directo que su nombre sugiere.
+- **Fuente:** F-434 (🟢A, meta-análisis peer-reviewed — ya citada en
+  `_nodes/tendencias-diseno-innovacion.md` §12.1 solo por el paralelo con F-239, sin el detalle del
+  moderador de medición)
+- **Leído a fondo:** 2026-08-10 (journals.aom.org con acceso restringido en esta sesión; reconstruido
+  vía búsqueda dirigida sobre scispace/researchgate/sciencedirect que confirma el tamaño de efecto
+  agregado r≈0.26 sobre 66 estudios y el moderador de tipo de medición de desempeño)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 21 (sigue Alta) — agrega un
+  segundo caso, de una disciplina de gestión distinta al diseño, del mismo patrón: escrutar el
+  instrumento de medición de desempeño antes de aceptar una correlación de management como palanca de
+  negocio.
+
 ## 📔 Bitácora
 
-- **2026-07-12** — Primera creación de la opinión. Revisé las 15 fuentes del
-  ledger (F-1 a F-15). Construí 5 tesis iniciales: (1) la divulgación no
-  convierte, (2) el coaseguro es el cuello de botella de comprensión, (3) el
-  problema es estructural/no generacional, (4) la brecha sísmica peruana es una
-  categoría casi vacía, (5) ESG es palanca global, no probada en Perú. Marqué 3
-  oportunidades y 4 riesgos, incluyendo la advertencia de no usar F-15.
-- **2026-07-12** — El ledger creció a F-27 (`/trinidad` sobre behavioral
-  design). Sumé tesis 6 (crisis del nudge) y tesis 7 (s-frame > i-frame, caso
-  UBI). Agregué 2 oportunidades y 4 riesgos nuevos (ROI de nudge sobreestimado,
-  corpus retractado Ariely/Gino, Vitality como dato autopublicado, caída de
-  tenencia de vida en EE.UU.).
-- **2026-07-13 a 2026-07-19** — Siete revisiones diarias consecutivas
-  reportaron "sin cambios sustanciales" contra `registro_fuentes.md`, fijo en
-  F-1 a F-27. Único ajuste real en esa ventana: se puso tope explícito de
-  confianza a tesis 3 y 4 (no suben por consistencia narrativa, solo por fuente
-  B+ directa) y se fijó un checkpoint para el 2026-07-21 (próxima corrida de
-  `cerrajero`). *Nota de la revisión de hoy:* esta racha de "sin novedad" fue en
-  parte un artefacto de ruta de archivo (ver entrada 2026-07-20) — el ledger
-  real sí creció durante esta ventana, solo que bajo un nombre de archivo
-  distinto (`codice.md`, vigente desde el 2026-07-19).
+- **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
+  detalle de cada tesis creada en esta ventana vive en 🎯 Tesis vigentes, cada una con su propia
+  fecha de "Actualizado".)* Creación inicial de la opinión (2026-07-12) sobre las primeras 15
+  fuentes del ledger (F-1 a F-15): tesis 1-5 (divulgación no convierte, coaseguro como cuello de
+  botella de comprensión, problema estructural no generacional, brecha sísmica peruana como
+  categoría casi vacía, ESG como palanca global no probada en Perú). El mismo día el ledger creció a
+  F-27 (`/trinidad` sobre behavioral design): sumé tesis 6 (crisis del nudge) y 7 (s-frame > i-frame,
+  caso UBI). Siete revisiones diarias consecutivas (07-13 a 07-19) reportaron "sin cambios
+  sustanciales" contra `registro_fuentes.md`, fijo en F-1 a F-27; único ajuste real en la ventana:
+  tope explícito de confianza a tesis 3 y 4 (no suben por consistencia narrativa, solo por fuente B+
+  directa). Esa racha de "sin novedad" resultó ser en parte un artefacto de ruta de archivo: el
+  ledger real sí creció mientras tanto bajo un nombre de archivo distinto (`codice.md`, vigente desde
+  el 2026-07-19) — corregido el 2026-07-20 (entrada siguiente).
 - **2026-07-20** — Cambio sustancial: leí el ledger vigente (`codice.md`, ahora
   con 171 fuentes) y encontré 144 fuentes nuevas (F-28 a F-171) nunca antes
   incorporadas a esta opinión, producto de `/trinidad`/`/seeker` entre el
@@ -1945,3 +2018,36 @@ IPDAS, no solo el criterio visual de tesis 12.
   leídas hoy. Bitácora con 28 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días
   — sin podar todavía; la próxima corrida (2026-08-10) cumple el umbral y debe evaluar podar/resumir
   las entradas de la primera semana (2026-07-12 a 2026-07-19).
+- **2026-08-10** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  d739018→5b9beab, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
+  verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (468 filas exactas) — sigue tope exacto
+  en F-468, idéntico al que ya procesó la corrida de ayer (2026-08-09) — **sin cambios sustanciales**
+  en evidencia, cero fuentes nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/
+  `/marketer` en las últimas 24h. Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada
+  con el ledger vigente, y no forcé ninguna conexión de tesis nueva solo por completar el paso. La
+  última revisión profunda (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no vence hoy —
+  cinco días sin corrida nueva, pero esa rutina no es de este proceso diario. **Cumplí el umbral de
+  poda de bitácora** señalado ayer: consolidé las tres entradas de la primera semana (2026-07-12,
+  2026-07-12 segunda, 2026-07-13 a 2026-07-19) en una sola entrada resumida — el detalle de cada tesis
+  que crearon ya vive en 🎯 Tesis vigentes con su propia fecha, así que no se pierde información, solo
+  se deja de repetir en la bitácora. Sí corrió la rutina diaria de intuición (sexta corrida desde que
+  se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 12 ya tenían lectura profunda del Lobo
+  (F-6, F-53, F-55, F-56, F-66, F-82, F-107, F-122, F-148, F-220, F-230, F-236) — seleccioné al azar 3
+  de las 129 restantes: F-41 (Rees & Peralta 2024, telemedicina en Perú — ya citada en tesis 9), F-303
+  (Figma Inc., 8-K Q1 2026 — filing SEC ya citado en el node de tendencias) y F-434 (Junni et al. 2013,
+  meta-análisis de ambidestreza organizacional — ya citada en el node de tendencias). Sumé las entradas
+  13, 14 y 15 de Intuición acumulada: (13) la ventana regulatoria/de infraestructura para un canal de
+  salud digital se cierra si no se invierte a la par en la competencia del recurso humano que lo opera
+  (matiza tesis 9 con el hallazgo específico de Perú: brecha de competencias del recurso humano en
+  telesalud, no solo de política/infraestructura); (14) un salto en NDR u otra métrica de
+  retención/crecimiento no es evidencia de moat durable hasta abrir qué línea de producto específica lo
+  generó — el caso Figma Q1 2026 muestra un NDR récord (139%) impulsado por monetización de créditos de
+  IA, una fuente más volátil que expansión ancha de asientos (conecta con tesis 21/25 sin cambiarles
+  confianza); (15) un efecto "estrella" de la literatura de management (ambidestreza, design thinking,
+  etc.) suele depender de si el estudio midió desempeño con autoreporte del gerente o con un indicador
+  objetivo — el meta-análisis de ambidestreza (r≈0.26, más alto con medición percibida) da un segundo
+  caso independiente del mismo patrón que ya conectaba tesis 21 vía F-239/design thinking. Ninguna
+  tesis de negocio cambió de confianza por esta corrida — es el mecanismo paralelo de intuición, no una
+  revisión de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md`
+  con las tres fuentes leídas hoy. Bitácora con 26 días de historial (2026-07-20 a hoy) tras la poda de
+  la primera semana — dentro de la ventana de ~30 días.
