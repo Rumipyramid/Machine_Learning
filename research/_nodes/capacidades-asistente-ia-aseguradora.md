@@ -362,6 +362,136 @@ resueltas** — que es además la mitigación que el propio F-517 reporta.
 
 ---
 
+## 7. Aterrizaje al ramo SALUD (segunda corrida de `/trinidad`, 2026-08-12)
+
+Salud no es "un ramo más con vocabulario propio". Cambia tres cosas de fondo: **el costo del
+error deja de ser económico**, **entra un segundo regulador**, y **el dato de la conversación es
+dato sensible**. Fuentes F-526 a F-534.
+
+### 7.1 El límite duro: el agente no puede hacer triaje clínico, y no es por cautela legal
+
+La revisión sistemática del campo (F-526, 🟢A) es concluyente y desagradable:
+
+- La precisión de triaje de los verificadores de síntomas está **estancada**: **55,8% en 2020 vs.
+  59,1% en 2015**. Cinco años sin mejora.
+- Las apps de 2020 son **menos aversas al riesgo** que las de 2015 y **omiten más del 40% de las
+  emergencias**.
+- En urgencias reales, **22% de los casos de Ada Health fueron calificados como inseguros por al
+  menos un médico**, y 14% por al menos dos (F-527, 🔵B).
+- Caso testigo: se alegó que el verificador de Babylon **interpretó infartos como ataques de
+  pánico** (F-528, 🟠D — alegación, no hecho verificado).
+
+⭐ **La conclusión operativa no es "por si acaso, mejor no": es que la mejor tecnología dedicada
+del rubro falla en más de 4 de cada 10 emergencias.** Un agente de seguros —que ni siquiera está
+optimizado para eso— no debe aproximarse a evaluar síntomas.
+
+**Pero eso no significa que el agente no hable de salud.** Ver §7.4.
+
+### 7.2 El hallazgo a favor: el registro empático sí es una fortaleza real del canal
+
+F-529 (🔵B — *JAMA Internal Medicine*): un panel de profesionales licenciados **prefirió las
+respuestas del chatbot el 79% de las veces** frente a las de médicos verificados, calificándolas
+**mejor en calidad y en empatía**.
+
+⚠️ El límite importa tanto como el hallazgo: se comparó contra médicos voluntarios respondiendo en
+un foro público (Reddit), **no contra atención clínica**, y se midió **calidad percibida de la
+respuesta, no resultado en salud**.
+
+**Uso legítimo:** sostiene que explicar bien, con calma y sin jerga, es una ventaja genuina del
+canal — no un adorno. Es exactamente lo que la evaluación propia encontró como fortaleza del
+agente (9 de 20 sin hallazgo, concentrados en trámites claros y en zonas de incertidumbre bien
+manejadas).
+
+### 7.3 Los dos casos que obligan a diseñar el peor escenario
+
+**Tessa / NEDA (F-530, 🔵B).** La asociación estadounidense de trastornos alimentarios reemplazó
+su línea humana por un chatbot. Tras **agregarle capacidades generativas**, empezó a recomendar a
+personas con trastornos alimentarios **déficit calórico de 500-1.000 kcal/día, pesarse
+semanalmente y medirse la grasa corporal con calibradores**. Fue retirado **en menos de 24 horas**.
+
+⭐ Es la analogía más cercana que existe a este proyecto, por tres razones simultáneas:
+(1) sustituir atención humana por bot; (2) **la falla apareció al agregar capacidad generativa a
+algo que antes era guionado**; (3) el daño fue **dar un consejo estándar y bienintencionado a una
+población para la que ese consejo es tóxico**. Las tres condiciones están disponibles acá.
+
+**Evaluación de crisis (F-531, 🔵B, incluye artículo arbitrado en *Scientific Reports*):**
+
+- De **29 agentes evaluados ante escenarios simulados de riesgo suicida, ninguno alcanzó el
+  criterio de respuesta adecuada.** Solo ~52% llegó a "marginal".
+- ⭐ **Las barandas se debilitan en conversaciones extendidas** — justo el patrón de uso que el
+  producto quiere fomentar para MAU.
+- Modo de falla específico: los sistemas **afirman acciones que no pueden ejecutar** ("voy a
+  contactar a emergencias"), creando **falsa sensación de seguridad y retrasando el acceso a
+  atención real**.
+
+⚠️ **Esto describe con precisión el riesgo del patrón de P13 en la evaluación propia.** El agente
+respondió *"Llama a una ambulancia: comunícate con nuestra Central de Emergencias"* — que se
+calificó sin hallazgo con un matiz de secuencia. A la luz de F-531, ese matiz sube de categoría:
+**la instrucción debe ser inequívoca sobre quién ejecuta la acción y en qué orden**, y el agente
+nunca debe redactar como si él fuera a hacer algo.
+
+### 7.4 La contraevidencia que corrige al propio node: rechazar no es gratis en salud
+
+F-532 (🟡C — preprint, a contracorriente) sostiene que el entrenamiento de seguridad que induce
+**rechazo indiscriminado en temas de salud puede ser clínicamente dañino**: negar información que
+la persona necesita no es una posición neutral.
+
+⭐ **Es el contrapeso necesario a §7.1, y confirma el diagnóstico central de este node**: la
+respuesta a "el agente no puede hacer triaje" **no es "el agente no habla de salud"**. Es que la
+frontera está mal trazada. Aplicado al ramo:
+
+| El agente **sí** debe | El agente **no** debe |
+|---|---|
+| Decir la carencia de maternidad de tu plan | Decir si tu embarazo está en riesgo |
+| Calcular cuánto pagas por una atención de S/1.000 | Decir si esa atención te conviene |
+| Decir que tienes 60 días para inscribir al recién nacido | Decir cómo cuidar al recién nacido |
+| Decir qué clínicas de tu red atienden psiquiatría | Evaluar tu estado de salud mental |
+| Explicar qué es una preexistencia y cómo opera | Opinar sobre tu diagnóstico |
+
+**La regla en una línea: el agente responde sobre el contrato y sobre el sistema; nunca sobre el
+cuerpo.**
+
+### 7.5 El marco peruano: dos reguladores, no uno — y un dato sensible
+
+**F-533 (🔵B — normativa vigente).** El agente de salud opera bajo **SBS** por el lado asegurador
+y bajo **SUSALUD** por los derechos del usuario de servicios de salud (Ley 29414). Dos
+consecuencias operativas que no aparecen en ninguna propuesta hasta ahora:
+
+1. **Si lo que el usuario escribe constituye un reclamo, dispara un plazo regulado** — máximo
+   **30 días hábiles** de respuesta, con presentación gratuita. El agente necesita **reconocer un
+   reclamo cuando lo ve y registrarlo como tal**, no responderlo como consulta. Esto conecta con
+   la falla documentada por el CFPB de que los bots reconocen disputas solo por sintaxis
+   específica (F-519).
+2. **Los datos de salud son datos sensibles** bajo Ley 29733, con régimen reforzado de
+   consentimiento y **finalidad**. ⭐ Consecuencia incómoda y directa para el objetivo comercial:
+   **usar la conversación clínica del cliente para alimentar cross-sell es usar dato sensible con
+   una finalidad distinta de aquella para la que se recogió.** No es un detalle legal menor —
+   es el punto donde el objetivo de cross-sell choca con el ramo.
+
+⚠️ **No se halló pronunciamiento específico de SUSALUD sobre agentes conversacionales de IA.**
+Es un vacío, no una autorización.
+
+**El clima en el que esto se va a leer (F-534, 🟡C — alegaciones de demanda, no hechos probados).**
+La demanda contra UnitedHealth por el algoritmo nH Predict alega denegación de atención post-aguda
+sobreescribiendo indicaciones médicas. ⚠️ **No usar la cifra del "90% de error" como dato** — es
+afirmación de la parte demandante. Usar el caso por lo que es: **"IA + decisión que afecta el
+acceso a atención" es hoy la combinación de mayor riesgo reputacional en seguros de salud.**
+Cualquier agente de IA de una aseguradora va a ser leído por el público dentro de ese marco,
+merecidamente o no.
+
+### 7.6 Qué cambia respecto de la versión multi-ramo
+
+| | Multi-ramo (§4) | **Salud** |
+|---|---|---|
+| Costo del error | Económico y reputacional | **Clínico** — puede retrasar atención |
+| Reguladores | SBS | **SBS + SUSALUD** |
+| Naturaleza del dato | Personal | **Sensible** (Ley 29733) |
+| Conversación larga | Buena para MAU | ⚠️ **Degrada las barandas** (F-531) |
+| Cross-sell | Penalización de confianza (F-517) | ⚠️ Además **choca con la finalidad del dato** |
+| Techo de autoatención | 55% en productos simples (F-524) | **Más bajo** — preexistencias, carencias, red |
+
+---
+
 ## Conexiones
 
 - [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de calidad de agentes conversacionales de IA]]

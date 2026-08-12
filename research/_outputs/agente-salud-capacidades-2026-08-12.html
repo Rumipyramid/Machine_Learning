@@ -1,0 +1,500 @@
+<title>Frontera del agente de salud</title>
+<style>
+:root{
+  --paper:#F7F8F6;
+  --surface:#FFFFFF;
+  --surface-2:#EFF2EF;
+  --ink:#141A18;
+  --ink-2:#3D4744;
+  --muted:#6B7671;
+  --line:#D8DEDA;
+  --line-strong:#B4BEB9;
+  --accent:#0F5C57;
+  --accent-soft:#E2EEEC;
+  --yes:#2E6B4F;
+  --yes-soft:#E4EFE8;
+  --no:#9A4A2E;
+  --no-soft:#F5E7E0;
+  --warn:#8A6414;
+  --warn-soft:#F4ECD9;
+  --shadow:0 1px 2px rgba(20,26,24,.05), 0 8px 24px -16px rgba(20,26,24,.25);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#101413;
+    --surface:#181D1B;
+    --surface-2:#1F2523;
+    --ink:#E9ECE9;
+    --ink-2:#B6BFBB;
+    --muted:#8B958F;
+    --line:#2A312E;
+    --line-strong:#3C4441;
+    --accent:#5EBFB3;
+    --accent-soft:#16302D;
+    --yes:#6FBE92;
+    --yes-soft:#152A20;
+    --no:#D89272;
+    --no-soft:#2E1D15;
+    --warn:#D2AC55;
+    --warn-soft:#2A2413;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101413;
+  --surface:#181D1B;
+  --surface-2:#1F2523;
+  --ink:#E9ECE9;
+  --ink-2:#B6BFBB;
+  --muted:#8B958F;
+  --line:#2A312E;
+  --line-strong:#3C4441;
+  --accent:#5EBFB3;
+  --accent-soft:#16302D;
+  --yes:#6FBE92;
+  --yes-soft:#152A20;
+  --no:#D89272;
+  --no-soft:#2E1D15;
+  --warn:#D2AC55;
+  --warn-soft:#2A2413;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16.5px;
+  line-height:1.62;
+  margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:56rem;margin:0 auto;padding:clamp(2rem,5vw,4.5rem) clamp(1.1rem,4vw,2.5rem) 6rem}
+
+/* ---- type roles ---- */
+.serif{font-family:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}
+.mono{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace}
+
+h1{
+  font-family:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  font-size:clamp(2.1rem,5.6vw,3.35rem);
+  line-height:1.08;
+  letter-spacing:-.015em;
+  font-weight:600;
+  margin:0 0 .6rem;
+  text-wrap:balance;
+}
+h2{
+  font-family:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  font-size:clamp(1.45rem,3.2vw,1.95rem);
+  line-height:1.18;
+  letter-spacing:-.01em;
+  font-weight:600;
+  margin:0;
+  text-wrap:balance;
+}
+h3{font-size:1.06rem;line-height:1.3;font-weight:650;margin:0;letter-spacing:-.005em;text-wrap:balance}
+p{margin:0}
+
+.eyebrow{
+  font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.7rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* ---- header ---- */
+header{border-bottom:1px solid var(--line);padding-bottom:2.4rem;margin-bottom:3rem;display:flex;flex-direction:column;gap:1.4rem}
+.lede{font-size:1.12rem;color:var(--ink-2);max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:.78rem;color:var(--muted);font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace}
+
+/* ---- thesis ---- */
+.thesis{
+  background:var(--accent-soft);
+  border-left:3px solid var(--accent);
+  padding:1.5rem 1.7rem;
+  display:flex;flex-direction:column;gap:.5rem;
+}
+.thesis p{
+  font-family:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  font-size:clamp(1.2rem,2.8vw,1.5rem);
+  line-height:1.35;
+  color:var(--ink);
+}
+.thesis strong{color:var(--accent);font-weight:650}
+
+section{display:flex;flex-direction:column;gap:1.5rem;margin-top:3.6rem}
+.sec-head{display:flex;flex-direction:column;gap:.45rem;border-bottom:1px solid var(--line);padding-bottom:.9rem}
+.sec-head p{color:var(--ink-2);max-width:64ch;font-size:.95rem}
+
+/* ---- frontera split ---- */
+.frontera{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line-strong);background:var(--surface)}
+.frontera > div{padding:1.3rem 1.4rem;display:flex;flex-direction:column;gap:.9rem}
+.frontera > div + div{border-left:1px solid var(--line-strong)}
+.f-head{display:flex;align-items:baseline;gap:.55rem;font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600}
+.f-yes .f-head{color:var(--yes)}
+.f-no .f-head{color:var(--no)}
+.frontera ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.62rem}
+.frontera li{font-size:.93rem;line-height:1.45;padding-left:1.05rem;position:relative;color:var(--ink-2)}
+.frontera li::before{position:absolute;left:0;top:0;font-family:ui-monospace,monospace;font-size:.85rem;font-weight:700}
+.f-yes li::before{content:"+";color:var(--yes)}
+.f-no li::before{content:"\2013";color:var(--no)}
+@media(max-width:640px){
+  .frontera{grid-template-columns:1fr}
+  .frontera > div + div{border-left:0;border-top:1px solid var(--line-strong)}
+}
+
+/* ---- capability bands ---- */
+.family{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--ink);}
+.family-label{
+  display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;
+  padding:.85rem 0 1rem;
+}
+.family-label h3{font-family:ui-serif,"Iowan Old Style",Palatino,Georgia,serif;font-size:1.3rem;font-weight:600}
+.family-label span{font-size:.88rem;color:var(--muted)}
+
+.cap{
+  display:grid;
+  grid-template-columns:2.6rem 1fr;
+  gap:0 1.1rem;
+  padding:1.2rem 0;
+  border-top:1px solid var(--line);
+}
+.cap-n{
+  font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.82rem;font-weight:600;color:var(--accent);
+  padding-top:.15rem;font-variant-numeric:tabular-nums;
+}
+.cap-body{display:flex;flex-direction:column;gap:.55rem;min-width:0}
+.cap-why{color:var(--ink-2);font-size:.95rem}
+.cap-ev{
+  font-size:.85rem;color:var(--muted);
+  border-left:2px solid var(--line-strong);
+  padding-left:.8rem;
+}
+.cap-ev b{color:var(--ink-2);font-weight:600}
+
+/* ---- evidence chips ---- */
+.chip{
+  display:inline-flex;align-items:center;gap:.38rem;
+  font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;
+  padding:.2rem .5rem;border-radius:2px;white-space:nowrap;
+}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
+.chip-strong{color:var(--yes);background:var(--yes-soft)}
+.chip-mid{color:var(--accent);background:var(--accent-soft)}
+.chip-weak{color:var(--warn);background:var(--warn-soft)}
+.chip-against{color:var(--no);background:var(--no-soft)}
+.cap-head{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap}
+
+/* ---- tables ---- */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:34rem}
+th,td{text-align:left;padding:.72rem .9rem;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{
+  font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  font-weight:600;background:var(--surface-2);
+}
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;color:var(--ink)}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---- objectives ---- */
+.objs{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.obj{background:var(--surface);padding:1.15rem 1.2rem;display:flex;flex-direction:column;gap:.55rem}
+.obj h3{font-size:1.02rem}
+.obj p{font-size:.89rem;color:var(--ink-2)}
+.gauge{display:flex;gap:3px;margin-top:.1rem}
+.gauge i{height:4px;flex:1;background:var(--line-strong);border-radius:1px}
+.g3 i:nth-child(-n+3){background:var(--yes)}
+.g2 i:nth-child(-n+2){background:var(--warn)}
+.g1 i:nth-child(-n+1){background:var(--no)}
+
+/* ---- rules ---- */
+.rules{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--no);border-left-width:3px}
+.rule{background:var(--surface);padding:1.05rem 1.2rem;display:flex;flex-direction:column;gap:.35rem}
+.rule strong{color:var(--no);font-size:.97rem}
+.rule p{font-size:.9rem;color:var(--ink-2)}
+
+/* ---- footer ---- */
+footer{margin-top:4rem;padding-top:1.6rem;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:.7rem}
+footer p{font-size:.82rem;color:var(--muted);max-width:66ch}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">CoE Diseño de Experiencia · Asistente de IA · Ramo Salud</div>
+  <div>
+    <h1>Frontera del agente de salud</h1>
+    <p class="lede">Qué tiene que saber hacer el asistente que vivirá dentro de la app, ordenado por lo que la evidencia realmente sostiene — y por lo que no.</p>
+  </div>
+  <div class="meta">
+    <span>12 ago 2026</span>
+    <span>v2 · aterrizada a salud</span>
+    <span>24 fuentes · F-511 a F-534</span>
+  </div>
+</header>
+
+<div class="thesis">
+  <div class="eyebrow">La idea en una frase</div>
+  <p>El agente responde sobre <strong>el contrato</strong> y sobre <strong>el sistema</strong>. Nunca sobre <strong>el cuerpo</strong>.</p>
+</div>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Punto de partida</div>
+    <h2>El problema no es cuánta cautela tiene. Es que la frontera no está trazada.</h2>
+    <p>En la evaluación del agente web aparecieron tres fallas que parecían opuestas: rechazó una suma que sí podía calcular, omitió cinco cifras públicas que sí conocía, y ofreció cotizar un producto que ya no se vende. No son tres problemas. Es uno solo: <b>nadie definió dónde termina lo que el agente debe responder</b>. Por eso falla en las dos direcciones a la vez.</p>
+  </div>
+
+  <div class="frontera">
+    <div class="f-yes">
+      <div class="f-head"><span>Sí responde</span></div>
+      <ul>
+        <li>La carencia de maternidad <em>de tu plan</em></li>
+        <li>Cuánto pagas por una atención de S/1.000 con tu deducible y tu coaseguro</li>
+        <li>Que tienes 60 días para inscribir a tu recién nacido</li>
+        <li>Qué clínicas de tu red atienden psiquiatría</li>
+        <li>Qué es una preexistencia y cómo opera en tu caso</li>
+        <li>Cuánto te queda de suma asegurada este año</li>
+      </ul>
+    </div>
+    <div class="f-no">
+      <div class="f-head"><span>Nunca responde</span></div>
+      <ul>
+        <li>Si tu embarazo está en riesgo</li>
+        <li>Si esa atención te conviene médicamente</li>
+        <li>Cómo cuidar a tu recién nacido</li>
+        <li>Si necesitas ver a un psiquiatra</li>
+        <li>Qué significa tu diagnóstico</li>
+        <li>Si tus síntomas son graves</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="cap-ev"><b>Por qué el lado derecho no se negocia.</b> La precisión de triaje de los verificadores de síntomas lleva cinco años estancada en <span class="num">~56%</span>, y las versiones más recientes <b>omiten más del 40% de las emergencias</b>. En urgencias reales, un médico calificó como inseguro el <span class="num">22%</span> de los casos de Ada Health. Es la mejor tecnología dedicada que existe. Un agente de seguros no debe acercarse.</p>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Las diez capacidades</div>
+    <h2>Agrupadas por lo que cada una protege</h2>
+    <p>El orden importa: las tres primeras son condición de las demás. Un agente rápido y proactivo que no tiene resuelto el bloque A es un pasivo, no un producto.</p>
+  </div>
+
+  <div class="family">
+    <div class="family-label">
+      <h3>A · Que no haga daño</h3>
+      <span>Sin esto, lo demás no debería salir a producción</span>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">01</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Frontera de conocimiento, en las dos direcciones</h3><span class="chip chip-mid">Evidencia moderada</span></div>
+        <p class="cap-why">Una lista explícita de qué puede afirmar y qué no. Omitir un dato que sí conoce debe contar como falla, igual que inventarlo.</p>
+        <p class="cap-ev"><b>Por qué:</b> los sistemas entrenados con evaluaciones que castigan el «no sé» aprenden a adivinar. Y los que se entrenan a rechazar de más terminan negando información que la persona necesita — en salud eso también hace daño.</p>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">02</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Protocolo de emergencia y de crisis</h3><span class="chip chip-strong">Evidencia fuerte</span></div>
+        <p class="cap-why">Guion fijo, no generado, para dolor torácico, ideación suicida y cualquier señal de riesgo vital. El agente <b>nunca</b> redacta como si él fuera a ejecutar la acción.</p>
+        <p class="cap-ev"><b>Por qué:</b> de <span class="num">29</span> agentes evaluados ante riesgo suicida simulado, <b>ninguno</b> dio una respuesta adecuada. El modo de falla más citado es prometer algo que el sistema no puede hacer («voy a contactar a emergencias»), lo que genera falsa seguridad y retrasa la atención real. Y las barandas <b>se debilitan en conversaciones largas</b> — justo el uso que queremos fomentar.</p>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">03</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Reconocer un reclamo cuando lo ve</h3><span class="chip chip-mid">Requisito regulatorio</span></div>
+        <p class="cap-why">Si lo que el cliente escribe constituye un reclamo, se registra como reclamo. No se responde como consulta.</p>
+        <p class="cap-ev"><b>Por qué:</b> en salud operamos bajo <b>dos reguladores</b> — SBS y SUSALUD. Un reclamo dispara un plazo regulado de <span class="num">30 días hábiles</span>. Y el regulador financiero de EE.UU. ya documentó que los bots reconocen disputas solo por sintaxis específica: se les escapan.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="family" style="margin-top:2.6rem">
+    <div class="family-label">
+      <h3>B · Que sirva de verdad</h3>
+      <span>Dentro de la app, «revisa tu póliza» ya no es una respuesta</span>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">04</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Responder con el dato del cliente, no con el genérico</h3><span class="chip chip-mid">Evidencia moderada</span></div>
+        <p class="cap-why">El cliente está autenticado: el agente sabe cuál es su plan. «Depende de tu plan» deja de ser un resguardo razonable y pasa a ser evasión.</p>
+        <p class="cap-ev"><b>Por qué:</b> este es el cambio que reencuadra toda la evaluación anterior. Se hizo sobre un agente <b>web y anónimo</b>. Los cinco hallazgos de omisión suben de categoría al mudarse a la app.</p>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">05</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Calcular con una calculadora, no con el modelo</h3><span class="chip chip-strong">Evidencia fuerte</span></div>
+        <p class="cap-why">Deducible, coaseguro, saldo de suma asegurada, días a vencimiento y edad se resuelven en una función determinista. El modelo solo redacta el resultado.</p>
+        <p class="cap-ev"><b>Por qué:</b> los modelos de frontera pasan de <span class="num">95,6%</span> de acierto en búsqueda simple a prácticamente <span class="num">0%</span> en cálculo con varias variables, y un error temprano se propaga por toda la cadena. No es una habilidad que se pida: es una herramienta que se conecta.</p>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">06</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Preguntar solo cuando la respuesta cambia</h3><span class="chip chip-mid">Evidencia moderada</span></div>
+        <p class="cap-why">Desambiguar entre pólizas, entender «mi seguro del carro», aceptar una corrección a media conversación, resolver dos preguntas en un mensaje. Pero si las tres pólizas tienen el mismo copago, responder — no preguntar.</p>
+        <p class="cap-ev"><b>Por qué:</b> los modelos <b>reconocen</b> la ambigüedad y responden igual, y el sesgo empeora conforme avanza el diálogo. Pero preguntar tampoco es gratis: el cuello de botella se muda a responder bien <em>después</em> de la aclaración, y cada turno extra es esfuerzo que el cliente paga.</p>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">07</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Hacer el trámite, no explicar cómo hacerlo</h3><span class="chip chip-weak">Evidencia indirecta</span></div>
+        <p class="cap-why">Reembolso, inclusión de dependiente, descarga de póliza, actualización de datos. Autoatención es completar, no instruir.</p>
+        <p class="cap-ev"><b>Por qué:</b> «anda a la app y haz X», dicho <em>por</em> la app, es esfuerzo puro. En la aseguradora más automatizada del mundo, <span class="num">96%</span> de los avisos de siniestro entran sin humano pero solo <span class="num">55%</span> se resuelven de punta a punta — y eso en productos mucho más simples que salud.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="family" style="margin-top:2.6rem">
+    <div class="family-label">
+      <h3>C · Que sostenga la relación</h3>
+      <span>Y el negocio, en ese orden</span>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">08</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Salida a un humano, por culpa y por emoción</h3><span class="chip chip-strong">Evidencia fuerte</span></div>
+        <p class="cap-why">El criterio de escalamiento no es la complejidad del caso. Es de quién fue la falla y cuánta carga emocional trae el cliente. Falla de la empresa → humano, aunque el agente sepa la respuesta.</p>
+        <p class="cap-ev"><b>Por qué:</b> los clientes prefieren IA cuando la falla fue suya y <b>humano cuando la falla fue de la empresa</b>. Y la IA rinde <span class="num">37%</span> menos cuando el cliente llega con emoción negativa intensa. Además, lo que más enfurece en el registro público no es que sea un bot — es quedarse sin salida.</p>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">09</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Iniciar la conversación, no solo esperarla</h3><span class="chip chip-weak">Evidencia débil</span></div>
+        <p class="cap-why">Avisos útiles y oportunos: tu póliza vence, te queda saldo por usar, tu reembolso avanzó, tienes un chequeo preventivo incluido sin usar.</p>
+        <p class="cap-ev"><b>Por qué:</b> es el único mecanismo de MAU documentado. En el asistente bancario más grande del mundo, entre <span class="num">50%</span> y <span class="num">60%</span> de las interacciones <b>las inicia el asistente</b>. ⚠️ Pero es autorreporte corporativo sin auditar, y no hay ninguna prueba causal de que un asistente suba MAU.</p>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-n">10</div>
+      <div class="cap-body">
+        <div class="cap-head"><h3>Puente comercial después de resolver, nunca en lugar de resolver</h3><span class="chip chip-against">Contraevidencia fuerte</span></div>
+        <p class="cap-why">El agente sí debe cruzar el puente ante señal implícita de compra — una pregunta comparativa bien formada es mejor predictor que un «me interesa». Pero después de haber resuelto, no antes.</p>
+        <p class="cap-ev"><b>Por qué, y es incómodo:</b> en un experimento de campo a gran escala, <b>divulgar que el interlocutor era una IA redujo las compras cerca de <span class="num">80%</span></b>. No divulgar no es opción. Lo que queda es compensar con utilidad, y desinflar cualquier proyección de cross-sell calcada de venta humana. En salud hay además un problema propio: usar la conversación clínica para vender es usar <b>dato sensible con una finalidad distinta</b> de aquella para la que se recogió.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Lo que cambia en salud</div>
+    <h2>Salud no es un ramo más con vocabulario propio</h2>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Dimensión</th><th>Otros ramos</th><th>Salud</th></tr></thead>
+      <tbody>
+        <tr><td>Costo del error</td><td>Económico y reputacional</td><td>Clínico — puede retrasar una atención</td></tr>
+        <tr><td>Reguladores</td><td>SBS</td><td>SBS <b>y</b> SUSALUD</td></tr>
+        <tr><td>Naturaleza del dato</td><td>Personal</td><td>Sensible (Ley 29733)</td></tr>
+        <tr><td>Conversación larga</td><td>Buena para engagement</td><td>Degrada las barandas de seguridad</td></tr>
+        <tr><td>Cross-sell</td><td>Penaliza la confianza</td><td>Además choca con la finalidad del dato</td></tr>
+        <tr><td>Techo de autoatención</td><td>~55% en productos simples</td><td>Más bajo: preexistencias, carencias, red</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Los tres objetivos</div>
+    <h2>Qué tan sostenido está cada uno, y por qué compiten entre sí</h2>
+    <p>La autoatención empuja a <em>cerrar</em> conversaciones rápido. El MAU empuja a <em>abrirlas</em>. El cross-sell empuja a <em>extenderlas</em>. Optimizar uno cuesta los otros dos: es exactamente lo que le pasó a Klarna, que anunció que su IA hacía el trabajo de 700 agentes y en 2025 volvió a contratar humanos.</p>
+  </div>
+  <div class="objs">
+    <div class="obj">
+      <h3>Autoatención</h3>
+      <div class="gauge g3"><i></i><i></i><i></i><i></i></div>
+      <span class="eyebrow">Evidencia moderada — el mejor sostenido</span>
+      <p>Hay casos a escala y un techo conocido. Pero ese techo se midió en productos mucho más simples que salud.</p>
+    </div>
+    <div class="obj">
+      <h3>MAU</h3>
+      <div class="gauge g2"><i></i><i></i><i></i><i></i></div>
+      <span class="eyebrow">Evidencia débil e indirecta</span>
+      <p>Un solo mecanismo documentado — la proactividad — y ninguna prueba causal. Volumen de interacciones no es usuarios activos.</p>
+    </div>
+    <div class="obj">
+      <h3>Cross-sell</h3>
+      <div class="gauge g1"><i></i><i></i><i></i><i></i></div>
+      <span class="eyebrow">La más débil, con evidencia en contra</span>
+      <p>Nada verificable en seguros, y un experimento de campo que muestra una penalización fuerte al divulgar la IA.</p>
+    </div>
+  </div>
+  <p class="cap-ev"><b>Recomendación de secuencia, no de simultaneidad.</b> Autoatención primero — es lo mejor sostenido y construye la competencia percibida, que explica el <span class="num">45%</span> del efecto sobre la recuperación de confianza. Proactividad después. Cross-sell al final y solo sobre conversaciones ya resueltas.</p>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">No negociables</div>
+    <h2>Tres reglas que no dependen de la roadmap</h2>
+  </div>
+  <div class="rules">
+    <div class="rule">
+      <strong>Todo lo que el agente afirme, lo afirmó la empresa.</strong>
+      <p>Un tribunal ya rechazó el argumento de que el chatbot es una entidad separada: la empresa responde por toda la información que publica, sea estática o conversacional. En salud eso incluye cobertura, carencias, exclusiones y preexistencias — que son materia de contrato. Hace falta registrar qué se le prometió a quién.</p>
+    </div>
+    <div class="rule">
+      <strong>Nada generativo sobre síntomas, diagnóstico o tratamiento.</strong>
+      <p>La asociación estadounidense de trastornos alimentarios retiró su chatbot en menos de 24 horas: al agregarle capacidad generativa, empezó a recomendar déficit calórico y conteo de calorías a personas con trastornos alimentarios. Consejo estándar, bienintencionado, tóxico para esa población. Las tres condiciones de ese caso están disponibles acá.</p>
+    </div>
+    <div class="rule">
+      <strong>La salida a un humano se ve siempre.</strong>
+      <p>Nunca escondida detrás de intentos del bot. El patrón que erosiona la confianza en la institución — no solo en el canal — es el bucle sin salida, y ya está documentado por un regulador sobre 98 millones de usuarios.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Antes de construir</div>
+    <h2>Cómo vamos a saber si sirvió</h2>
+    <p>La lección más cara del expediente no es técnica. Klarna rendía bien en las métricas agregadas de volumen, y esas métricas <b>enmascararon el deterioro de calidad en tipos específicos de interacción</b>. Si gobernamos el agente por tasa de deflexión, vamos a repetirlo.</p>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Medir</th><th>En vez de</th></tr></thead>
+      <tbody>
+        <tr><td>Resolución por tipo de consulta</td><td>Tasa de deflexión agregada</td></tr>
+        <tr><td>Esfuerzo del cliente: turnos, repeticiones, cambios de canal</td><td>Satisfacción declarada al cierre</td></tr>
+        <tr><td>Abstenciones correctas (puntúan a favor)</td><td>Cobertura de respuesta</td></tr>
+        <tr><td>Escalamientos oportunos vs. tardíos</td><td>Escalamientos evitados</td></tr>
+        <tr><td>Omisión de datos que el agente sí tenía</td><td>Solo alucinaciones detectadas</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div class="eyebrow">Sobre este documento</div>
+  <p>Síntesis de dos investigaciones de 360° (evidencia académica, registro social y benchmarks de negocio) contrastadas contra la evaluación propia del agente web sobre un banco de 20 preguntas. Cada afirmación está trazada a su fuente y a su nivel de rigurosidad en el códice del proyecto, F-511 a F-534.</p>
+  <p><b>Lo que no sabemos:</b> no existe evidencia causal de que un asistente in-app suba MAU o cross-sell en seguros; no hay ningún caso peruano ni latinoamericano medido; toda la evidencia de negocio es autorreporte corporativo sin auditar; y no se halló pronunciamiento de SUSALUD sobre agentes conversacionales — lo cual es un vacío, no una autorización.</p>
+</footer>
+
+</div>
