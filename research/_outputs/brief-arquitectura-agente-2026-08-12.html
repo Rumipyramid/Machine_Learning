@@ -99,6 +99,16 @@ tbody tr:last-child td{border-bottom:0}
 .note strong{font-size:.93rem}
 .note p{font-size:.86rem;color:var(--ink-2)}
 
+.refs{display:flex;flex-direction:column;gap:0}
+.ref{padding:.62rem 0;border-top:1px solid var(--line);font-size:.86rem;color:var(--ink-2);
+  display:grid;grid-template-columns:2.6rem 1fr;gap:0 .8rem;align-items:baseline}
+.ref:first-child{border-top:0}
+.ref .rid{font-family:ui-monospace,Menlo,monospace;font-size:.72rem;font-weight:700;color:var(--muted)}
+.ref b{color:var(--ink);font-weight:600}
+.ref i{color:var(--muted);font-style:normal}
+.refgrp{font-family:ui-monospace,Menlo,monospace;font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--muted);font-weight:700;padding:1.1rem 0 .3rem;border-top:2px solid var(--ink);margin-top:.9rem}
+.refgrp:first-of-type{margin-top:0}
 footer{margin-top:3.2rem;padding-top:1.4rem;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:.6rem}
 footer p{font-size:.81rem;color:var(--muted);max-width:66ch}
 a{color:var(--accent)}
@@ -164,7 +174,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
         <tr><td class="idcell">D3</td><td>Evaluar el turno posterior a la repregunta</td><td><span class="mark m-l">▲ L</span></td><td class="num">5</td></tr>
 
         <tr class="grp"><td colspan="4">E · Paso a un humano</td></tr>
-        <tr><td class="idcell">E1</td><td>Derivar por culpa y por emoción</td><td><span class="mark m-l">▲ L</span></td><td class="num">2</td></tr>
+        <tr><td class="idcell">E1</td><td>Derivar según de quién fue la falla</td><td><span class="mark m-l">▲ L</span></td><td class="num">2</td></tr>
         <tr><td class="idcell">E2</td><td>Salida a humano siempre visible</td><td><span class="mark m-l">▲ L</span></td><td class="num">2</td></tr>
 
         <tr class="grp"><td colspan="4">F · Comercial</td></tr>
@@ -234,7 +244,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">A3</span><h3>Tabla de datos autorizados</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Una tabla con plan, concepto, valor, vigencia y quién lo aprobó. El agente cita de ahí o no cita.</span>
-        <span class="k">Por qué</span><span class="v">Carencia de maternidad, 60 días para inscribir al recién nacido, sumas aseguradas: <b>todos públicos, todos omitidos</b>. Y buscar dentro de textos largos no garantiza que el dato sea exacto ni que esté vigente.</span>
+        <span class="k">Por qué</span><span class="v">Carencia de maternidad, 60 días para inscribir al recién nacido, sumas aseguradas: <b>todos públicos, todos omitidos</b>. Y buscar dentro de textos largos no garantiza que el dato sea exacto ni que esté vigente <em>(An Industrial-Scale Insurance LLM, 2026)</em>.</span>
       </div>
     </div>
 
@@ -242,7 +252,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">A4</span><h3>Revisión automática antes de responder</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Un paso que compara la respuesta con las fuentes usadas y con la lista oficial de nombres. Si algo no calza, no sale.</span>
-        <span class="k">Por qué</span><span class="v">Inventó «Salud Nacional» y «Programa Oncológico Integral». Es además el paso que la arquitectura de referencia del sector incluye como auto-verificación.</span>
+        <span class="k">Por qué</span><span class="v">Inventó «Salud Nacional» y «Programa Oncológico Integral». Es además el paso que la arquitectura de referencia del sector incluye como auto-verificación <em>(An Industrial-Scale Insurance LLM, 2026)</em>.</span>
       </div>
     </div>
 
@@ -262,7 +272,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">B1</span><h3>Los cálculos los hace una calculadora, no el modelo</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Deducible, coaseguro, saldo disponible, días a vencimiento y edad se calculan en una función. El modelo solo redacta el resultado.</span>
-        <span class="k">Por qué</span><span class="v">Se negó a resolver una suma simple. Y los modelos aciertan <span class="num">95,6%</span> cuando buscan un dato y <b>casi 0% cuando calculan con varias variables</b>.</span>
+        <span class="k">Por qué</span><span class="v">Se negó a resolver una suma simple. Y los modelos aciertan <span class="num">95,6%</span> cuando buscan un dato y <b>casi 0% cuando calculan con varias variables</b> <em>(FAITH, 2025)</em>.</span>
       </div>
     </div>
 
@@ -270,7 +280,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">B2</span><h3>Lectura de la póliza del cliente identificado</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Definir qué campos puede leer el agente, con qué permiso y con qué registro de auditoría.</span>
-        <span class="k">Por qué</span><span class="v">En la app el cliente está identificado. <b>«Depende de tu plan» deja de ser prudencia: el agente sabe cuál es.</b> La evaluación no pudo ver esto porque se hizo sobre el agente web anónimo.</span>
+        <span class="k">Por qué</span><span class="v">En la app el cliente está identificado. <b>«Depende de tu plan» deja de ser prudencia: el agente sabe cuál es.</b> La evaluación no pudo ver esto porque se hizo sobre el agente web anónimo. Y hacer que el cliente vaya a buscar el dato es esfuerzo, que predice deslealtad mejor que la satisfacción <em>(Dixon, Freeman &amp; Toman, 2010)</em>.</span>
       </div>
     </div>
 
@@ -278,7 +288,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">B3</span><h3>Hacer los trámites, no explicarlos</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Reembolso, inclusión de dependiente, descarga de póliza y actualización de datos, resueltos dentro de la conversación.</span>
-        <span class="k">Por qué</span><span class="v">«Anda a la app y haz X», dicho <b>por</b> la app, es esfuerzo puro. Capturar una solicitud es fácil; resolverla es donde se cae.</span>
+        <span class="k">Por qué</span><span class="v">«Anda a la app y haz X», dicho <b>por</b> la app, es esfuerzo puro. Capturar una solicitud es fácil; resolverla es donde se cae: <span class="num">96%</span> de los avisos de siniestro entran sin humano pero solo <span class="num">55%</span> se resuelven de punta a punta <em>(Lemonade, 2024)</em>.</span>
       </div>
     </div>
   </div>
@@ -290,7 +300,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">C1</span><h3>Tres reglas separadas, no una sola</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Separar <b>seguridad</b>, <b>alcance de rol</b> y <b>política comercial</b>. La de seguridad debe mirar si la pregunta necesita datos privados, no de qué tema es.</span>
-        <span class="k">Por qué</span><span class="v">Los tres huecos aparecen en el banco: bloqueó una suma legítima, no puso límite cuando le preguntaron por fondos mutuos, y ofreció un producto que no correspondía. <b>El contenido de la política comercial lo define Negocio; arquitectura provee el mecanismo.</b></span>
+        <span class="k">Por qué</span><span class="v">Los tres huecos aparecen en el banco: bloqueó una suma legítima, no puso límite cuando le preguntaron por fondos mutuos, y ofreció un producto que no correspondía. El diagnóstico de fondo: una frontera de conocimiento sin definir produce fallas en las dos direcciones a la vez <em>(Kalai, Nachum, Vempala &amp; Zhang, 2025)</em>. <b>El contenido de la política comercial lo define Negocio; arquitectura provee el mecanismo.</b></span>
       </div>
     </div>
 
@@ -306,7 +316,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">C3</span><h3>Guion fijo para emergencias</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Ante señales de riesgo vital, una respuesta preescrita que se activa antes de llegar al modelo. Y nunca decir que el agente va a hacer algo que no puede hacer.</span>
-        <span class="k">Por qué</span><span class="v">Respondió bien, pero respondió <b>generando</b>. De 29 agentes evaluados ante riesgo suicida, <b>ninguno</b> dio una respuesta adecuada, y el error más común fue prometer acciones imposibles.</span>
+        <span class="k">Por qué</span><span class="v">Respondió bien, pero respondió <b>generando</b>. De 29 agentes evaluados ante riesgo suicida simulado, <b>ninguno</b> dio una respuesta adecuada, y el error más común fue prometer acciones que el sistema no puede ejecutar <em>(Scientific Reports, 2025)</em>.</span>
       </div>
     </div>
 
@@ -314,7 +324,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">C4</span><h3>Nada generado sobre el cuerpo</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">El agente no opina sobre síntomas, diagnóstico ni tratamiento. Es distinto de C3: C3 atiende la emergencia, C4 evita el consejo clínico en cualquier momento.</span>
-        <span class="k">Por qué</span><span class="v">Un chatbot de salud terminó recomendando déficit calórico a personas con trastornos alimentarios. Y los evaluadores de síntomas <b>fallan en 4 de cada 10 emergencias</b>.</span>
+        <span class="k">Por qué</span><span class="v">Un chatbot de salud terminó recomendando déficit calórico a personas con trastornos alimentarios <em>(NEDA / Tessa, 2023)</em>. Y en cinco años los evaluadores de síntomas <b>no mejoraron su precisión de triaje, y empeoraron justamente al indicar cuándo se requiere atención de emergencia</b> <em>(Schmieding et al., 2022)</em>; la revisión sistemática del campo sitúa la precisión diagnóstica entre <span class="num">5%</span> y <span class="num">50%</span> <em>(Wallace et al., 2022)</em>.</span>
       </div>
     </div>
 
@@ -322,7 +332,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">C5</span><h3>Revalidar las reglas en cada turno</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Las reglas se aplican turno a turno, no solo al empezar la conversación.</span>
-        <span class="k">Por qué</span><span class="v">Las protecciones <b>se aflojan en conversaciones largas</b> — justo el uso que queremos fomentar. Es lo más barato de construir de toda esta capa.</span>
+        <span class="k">Por qué</span><span class="v">Las protecciones <b>se aflojan en conversaciones largas</b> — justo el uso que queremos fomentar <em>(Scientific Reports, 2025)</em>. Es lo más barato de construir de toda esta capa.</span>
       </div>
     </div>
   </div>
@@ -334,7 +344,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">D1</span><h3>Preguntar solo si cambia la respuesta</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Antes de repreguntar, revisar si la respuesta varía entre las pólizas del cliente. Si no varía, responder.</span>
-        <span class="k">Por qué</span><span class="v">Los modelos preguntan poco cuando deberían preguntar. Pero <b>cada pregunta de más es esfuerzo que el cliente paga</b>, y el esfuerzo predice deslealtad.</span>
+        <span class="k">Por qué</span><span class="v">Los modelos reconocen la ambigüedad y aun así responden sin preguntar <em>(Knowing but Not Showing, 2026)</em>. Pero <b>cada pregunta de más es esfuerzo que el cliente paga</b>, y el esfuerzo predice deslealtad mejor que la satisfacción <em>(Dixon, Freeman &amp; Toman, 2010)</em>.</span>
       </div>
     </div>
 
@@ -342,7 +352,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">D2</span><h3>Memoria de la conversación</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">No repreguntar lo ya dicho, responder dos preguntas en un mismo mensaje, y aceptar «no, me refería al SOAT» sin reiniciar.</span>
-        <span class="k">Por qué</span><span class="v">Coincide con lo que ya propuso Product Design. Nadie lo ha probado todavía.</span>
+        <span class="k">Por qué</span><span class="v">Coincide con lo que ya propuso Product Design, y el sesgo de no repreguntar <b>empeora conforme avanza el diálogo</b> <em>(Knowing but Not Showing, 2026)</em>. Nadie lo ha probado todavía: el banco es de un solo turno.</span>
       </div>
     </div>
 
@@ -350,7 +360,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">D3</span><h3>Evaluar el turno posterior a la repregunta</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Medir aparte la calidad de la respuesta que viene <em>después</em> de pedir una aclaración.</span>
-        <span class="k">Por qué</span><span class="v">Ahí está el problema real, no en preguntar. <b>Un agente que pregunta mucho y responde mal es peor que uno que responde directo.</b></span>
+        <span class="k">Por qué</span><span class="v">Ahí está el problema real, no en preguntar <em>(Clarification Is Not Enough, 2026)</em>. <b>Un agente que pregunta mucho y responde mal es peor que uno que responde directo.</b></span>
       </div>
     </div>
   </div>
@@ -359,10 +369,10 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     <div class="layer-head"><h3>E · Paso a un humano</h3><span>La capa que faltaba entera</span></div>
 
     <div class="rec">
-      <div class="rec-head"><span class="rec-id">E1</span><h3>Derivar por culpa y por emoción</h3><span class="mark m-l">▲ L</span></div>
+      <div class="rec-head"><span class="rec-id">E1</span><h3>Derivar según de quién fue la falla</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
-        <span class="k">Qué</span><span class="v">Si la falla fue de la empresa, va a humano <b>aunque el agente sepa responder</b>. Si el cliente llega alterado, también.</span>
-        <span class="k">Por qué</span><span class="v">Es la evidencia más sólida de todo el expediente: el criterio no es qué tan complejo es el caso, <b>es de quién fue la culpa</b>. Y la IA rinde <span class="num">37%</span> menos cuando hay emoción negativa fuerte.</span>
+        <span class="k">Qué</span><span class="v">Si la falla fue de la empresa, va a humano <b>aunque el agente sepa responder</b>. Si lo que corresponde es una disculpa, también. Si es una explicación o una compensación, puede resolverlo el agente.</span>
+        <span class="k">Por qué</span><span class="v">Es la evidencia más sólida del expediente — tres experimentos en banca y salud. <b>El criterio no es qué tan complejo es el caso: es de quién fue la culpa.</b> Los clientes prefieren IA cuando la falla fue suya y humano cuando fue de la empresa; y prefieren humano cuando reciben una disculpa, pero aceptan IA con una explicación o una compensación <em>(Fürst, Trißler, Friedrich &amp; Wirtz, 2025)</em>. ⚠️ Con una advertencia: prefieren un humano para resolver reclamos <b>incluso después de que un bot resolvió su caso con éxito</b> <em>(Chacon et al., 2026)</em>.</span>
       </div>
     </div>
 
@@ -370,7 +380,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">E2</span><h3>Salida a humano siempre visible</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Nunca escondida detrás de intentos del bot. Y ofrecida sola cuando detecta que el cliente está dando vueltas.</span>
-        <span class="k">Por qué</span><span class="v"><b>Lo que enfurece no es que sea un bot: es no poder salir.</b> Un regulador lo documentó sobre 98 millones de usuarios, y el daño es a la confianza en la empresa, no solo en el canal.</span>
+        <span class="k">Por qué</span><span class="v"><b>Lo que enfurece no es que sea un bot: es no poder salir.</b> Un regulador lo documentó sobre 98 millones de usuarios de chatbots bancarios: bucles repetitivos, clientes mayores sin salida, y daño a la confianza en la institución, no solo en el canal <em>(CFPB, 2023)</em>. La falla escala como frustración hacia la marca <em>(Ozuem et al., 2024)</em>.</span>
       </div>
     </div>
   </div>
@@ -382,7 +392,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">F1</span><h3>Detectar interés real, no palabras clave</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Una pregunta comparativa debe pesar más que un «me interesa».</span>
-        <span class="k">Por qué</span><span class="v">El agente conecta cuando oye vocabulario de compra y no conecta cuando alguien está comparando de verdad. <b>Está al revés:</b> decir «me interesa» no cuesta nada; comparar productos sí.</span>
+        <span class="k">Por qué</span><span class="v">El agente conecta cuando oye vocabulario de compra y no conecta cuando alguien está comparando de verdad. <b>Está al revés:</b> decir «me interesa» no cuesta nada; comparar productos sí — es una señal costosa y por eso más diagnóstica <em>(Fitzsimons &amp; Morwitz, citado en la evaluación)</em>.</span>
       </div>
     </div>
 
@@ -390,7 +400,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">F2</span><h3>Ofrecer después de resolver</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">La oferta es un componente aparte, que se activa al final y se puede apagar sin tocar nada más.</span>
-        <span class="k">Por qué</span><span class="v">Ante la señal de compra más clara del banco, la respuesta fue <b>la que menos conectó</b>. Y ofrecer antes de resolver cuesta confianza.</span>
+        <span class="k">Por qué</span><span class="v">Ante la señal de compra más clara del banco, la respuesta fue <b>la que menos conectó</b>. Y ofrecer antes de resolver cuesta confianza: la penalización por saber que se habla con una IA se reduce cuando se divulga <em>después</em> de haber ayudado <em>(Luo, Tong, Fang &amp; Qu, 2019)</em>.</span>
       </div>
     </div>
 
@@ -398,7 +408,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">F3</span><h3>Cuándo avisar que es una IA</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Avisar es obligatorio. Lo que se decide es <b>en qué momento</b>.</span>
-        <span class="k">Por qué</span><span class="v">Avisarlo antes de conversar redujo las compras cerca de <span class="num">80%</span> en un experimento real; avisarlo después de haber ayudado reduce ese castigo. <b>Toda proyección de venta calcada de un asesor humano está inflada.</b></span>
+        <span class="k">Por qué</span><span class="v">Avisarlo antes de conversar redujo las compras cerca de <span class="num">80%</span> en un experimento de campo aleatorizado con una fintech real; avisarlo después de haber ayudado reduce ese castigo <em>(Luo, Tong, Fang &amp; Qu, 2019)</em>. <b>Toda proyección de venta calcada de un asesor humano está inflada.</b></span>
       </div>
     </div>
   </div>
@@ -410,7 +420,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">G1</span><h3>Avisos que inicia el agente</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Póliza por vencer, saldo sin usar, reembolso en curso, chequeo preventivo incluido y no utilizado.</span>
-        <span class="k">Por qué</span><span class="v">Es lo único documentado que mueve el uso recurrente: en el asistente bancario más grande del mundo, <b>la mitad de las conversaciones las inicia él</b>. ⚠️ Pero no hay prueba causal — conviene construirlo como experimento medible, no como supuesto.</span>
+        <span class="k">Por qué</span><span class="v">Es lo único documentado que mueve el uso recurrente: en el asistente bancario más grande del mundo, <b>entre 50% y 60% de las interacciones las inicia él</b> <em>(Bank of America, 2025)</em>. ⚠️ Pero no hay prueba causal — conviene construirlo como experimento medible, no como supuesto.</span>
       </div>
     </div>
   </div>
@@ -422,7 +432,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">H1</span><h3>Reconocer un reclamo cuando llega</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Si el mensaje del cliente es un reclamo, se registra como reclamo y entra al flujo formal.</span>
-        <span class="k">Por qué</span><span class="v">En salud responde <b>SUSALUD</b> además de SBS, con <span class="num">30</span> días hábiles de plazo. Y está documentado que los bots no detectan reclamos salvo que estén escritos de cierta forma. <b>Es exposición regulatoria, no deuda técnica.</b></span>
+        <span class="k">Por qué</span><span class="v">En salud responde <b>SUSALUD</b> además de SBS, con <span class="num">30</span> días hábiles de plazo <em>(Ley 29414 y su reglamento; SUSALUD)</em>. Y está documentado que los bots reconocen disputas solo por sintaxis específica <em>(CFPB, 2023)</em>. <b>Es exposición regulatoria, no deuda técnica.</b></span>
       </div>
     </div>
 
@@ -430,7 +440,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">H2</span><h3>Guardar lo que el agente afirmó</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Registro de qué dijo, con qué fuente y a quién, guardado el tiempo que dure el contrato.</span>
-        <span class="k">Por qué</span><span class="v">Un tribunal ya definió que <b>la empresa responde por lo que dice su chatbot</b>. Y con la oferta del producto no vendible, hoy no podríamos reconstruir qué se le prometió a quién.</span>
+        <span class="k">Por qué</span><span class="v">Un tribunal ya definió que <b>la empresa responde por lo que dice su chatbot</b>, sea contenido estático o conversacional <em>(Moffatt v. Air Canada, 2024)</em>. Y con la oferta del producto no vendible, hoy no podríamos reconstruir qué se le prometió a quién.</span>
       </div>
     </div>
 
@@ -438,7 +448,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">H3</span><h3>Separar uso de atención y uso comercial</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">La conversación clínica no alimenta la venta sin un consentimiento propio para eso.</span>
-        <span class="k">Por qué</span><span class="v">Los datos de salud son <b>datos sensibles</b>: usarlos con otra finalidad requiere otro permiso. Es el punto donde el objetivo comercial choca con el ramo.</span>
+        <span class="k">Por qué</span><span class="v">Los datos de salud son <b>datos sensibles</b>: usarlos con otra finalidad requiere otro permiso <em>(Ley 29733 y D.S. 003-2013-JUS)</em>. Es el punto donde el objetivo comercial choca con el ramo.</span>
       </div>
     </div>
   </div>
@@ -458,7 +468,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">I2</span><h3>Medir también lo que el agente calla</h3><span class="mark m-b">◆ L+E</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Que omitir un dato disponible cuente como error, y que decir «no lo tengo» cuando de verdad no lo tiene <b>sume puntos</b>.</span>
-        <span class="k">Por qué</span><span class="v">5 de 20 respuestas omitieron datos públicos. Y castigar el «no sé» le enseña al sistema a inventar. <b>Son las dos caras de la misma decisión</b>, y explican por qué el agente falla en ambas direcciones.</span>
+        <span class="k">Por qué</span><span class="v">5 de 20 respuestas omitieron datos públicos. Y castigar el «no sé» le enseña al sistema a inventar: las evaluaciones que penalizan la abstención <b>fuerzan estadísticamente la alucinación</b> <em>(Kalai, Nachum, Vempala &amp; Zhang, 2025)</em>. <b>Son las dos caras de la misma decisión</b>, y explican por qué el agente falla en ambas direcciones.</span>
       </div>
     </div>
 
@@ -466,7 +476,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">I3</span><h3>Métricas por tipo de consulta</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Medir resolución por tipo de consulta, no un porcentaje global de casos que no llegaron a un humano.</span>
-        <span class="k">Por qué</span><span class="v">La marcha atrás más conocida del sector ocurrió porque <b>el promedio tapaba el deterioro en casos específicos</b>.</span>
+        <span class="k">Por qué</span><span class="v">La marcha atrás más conocida del sector ocurrió porque <b>el promedio tapaba el deterioro en casos específicos</b> <em>(Klarna, 2025)</em>.</span>
       </div>
     </div>
 
@@ -474,7 +484,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <div class="rec-head"><span class="rec-id">I4</span><h3>Medir el esfuerzo del cliente</h3><span class="mark m-l">▲ L</span></div>
       <div class="pair">
         <span class="k">Qué</span><span class="v">Turnos hasta resolver, repeticiones, cambios de canal, reformulaciones.</span>
-        <span class="k">Por qué</span><span class="v">Son exactamente lo que produce un agente mal diseñado, y <b>el esfuerzo predice la lealtad mejor que la satisfacción</b>.</span>
+        <span class="k">Por qué</span><span class="v">Cambio de canal, contactos repetidos y volver a explicar son los mayores generadores de esfuerzo, y <b>el esfuerzo predice la lealtad mejor que la satisfacción</b> <em>(Dixon, Freeman &amp; Toman, 2010)</em>.</span>
       </div>
     </div>
   </div>
@@ -491,6 +501,49 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     <div class="note"><strong>Aprobar la tabla de datos autorizados → Producto y Legal</strong><p>Sin esa firma A3 no puede salir. Es la dependencia externa más crítica del plan.</p></div>
     <div class="note"><strong>Definir cuándo no vender → Negocio y CoE</strong><p>Es una política de negocio; arquitectura solo provee el mecanismo que la hace ejecutable.</p></div>
     <div class="note"><strong>Permiso para uso comercial de la conversación clínica → Legal</strong><p>De esto depende H3, y con él todo el bloque comercial.</p></div>
+  </div>
+</section>
+
+
+<section>
+  <div class="sec-head">
+    <div class="eyebrow">Referencias</div>
+    <h2>En qué se apoya cada recomendación</h2>
+    <p>Todas las fuentes marcadas como literatura, con su identificador en el códice del proyecto. Se citan en el texto como (autor, año).</p>
+  </div>
+
+  <div class="refs">
+    <div class="refgrp">Revistas arbitradas</div>
+    <div class="ref"><span class="rid">F-517</span><span><b>Luo, X., Tong, S., Fang, Z. &amp; Qu, Z. (2019).</b> Frontiers: Machines vs. Humans — The Impact of Artificial Intelligence Chatbot Disclosure on Customer Purchases. <i>Marketing Science, 38(6).</i> Experimento de campo aleatorizado a gran escala en una fintech real. <i>Usada en F2, F3.</i></span></div>
+    <div class="ref"><span class="rid">F-515</span><span><b>Fürst, A., Trißler, L., Friedrich, R. &amp; Wirtz, J. (2025).</b> Service recovery by AI or human agents: Do failure and strategy context matter? <i>Journal of Service Management, 36(3), 390-418.</i> Tres experimentos con escenarios en banca y salud. <i>Usada en E1.</i></span></div>
+    <div class="ref"><span class="rid">F-515</span><span><b>Chacon, A. et al. (2026).</b> Chatbot or Human? Rethinking Complaint Handling in Customer Service. <i>Journal of Consumer Behaviour.</i> Cuatro estudios preregistrados. <i>Usada en E1.</i></span></div>
+    <div class="ref"><span class="rid">F-516</span><span><b>Ozuem, W. et al. (2024).</b> Exploring the relationship between chatbots, service failure recovery and customer loyalty: A frustration–aggression perspective. <i>Psychology &amp; Marketing.</i> <i>Usada en E2.</i></span></div>
+    <div class="ref"><span class="rid">F-526</span><span><b>Wallace, W., Chan, C., Chidambaram, S. et al. (2022).</b> The diagnostic and triage accuracy of digital and online symptom checker tools: a systematic review. <i>npj Digital Medicine, 5:118.</i> Revisión sistemática. <i>Usada en C4.</i></span></div>
+    <div class="ref"><span class="rid">F-526</span><span><b>Schmieding, M.L., Kopka, M., Schmidt, K., Schulz-Niethammer, S., Balzer, F. &amp; Feufel, M.A. (2022).</b> Triage Accuracy of Symptom Checker Apps: 5-Year Follow-up Evaluation. <i>JMIR, 24(5):e31810.</i> <i>Usada en C4.</i></span></div>
+    <div class="ref"><span class="rid">F-529</span><span><b>Ayers, J.W. et al. (2023).</b> Comparing Physician and Artificial Intelligence Chatbot Responses to Patient Questions Posted to a Public Social Media Forum. <i>JAMA Internal Medicine, 183(6), 589-596.</i> <i>Contexto del registro empático; no sustenta ninguna recomendación por sí sola.</i></span></div>
+    <div class="ref"><span class="rid">F-531</span><span><b>Performance of mental health chatbot agents in detecting and managing suicidal ideation (2025).</b> <i>Scientific Reports (Nature).</i> Escenarios simulados. <i>Usada en C3, C5.</i></span></div>
+
+    <div class="refgrp">Preprints y benchmarks técnicos</div>
+    <div class="ref"><span class="rid">F-512</span><span><b>Kalai, A.T., Nachum, O., Vempala, S. &amp; Zhang, E. (2025).</b> Why Language Models Hallucinate. <i>arXiv:2509.04664.</i> <i>Usada en C1, I2.</i></span></div>
+    <div class="ref"><span class="rid">F-511</span><span><b>Knowing but Not Showing: LLMs Recognize Ambiguity but Rarely Ask Clarifying Questions (2026)</b> y <b>Clarification Is Not Enough (2026).</b> <i>arXiv.</i> Hallazgo replicado en cuatro trabajos independientes. <i>Usadas en D1, D2, D3.</i></span></div>
+    <div class="ref"><span class="rid">F-514</span><span><b>FAITH y benchmarks de razonamiento numérico (2025-2026).</b> <i>arXiv.</i> <i>Usada en B1.</i></span></div>
+    <div class="ref"><span class="rid">F-513</span><span><b>An Industrial-Scale Insurance LLM Achieving Verifiable Domain Mastery and Hallucination Control (2026).</b> <i>arXiv.</i> ⚠️ Preprint de autores de industria describiendo su propio sistema, sin reproducción independiente. <i>Usada en A3, A4.</i></span></div>
+
+    <div class="refgrp">Reguladores, normativa y jurisprudencia</div>
+    <div class="ref"><span class="rid">F-533</span><span><b>Ley N° 29414</b> y su reglamento — derechos de las personas usuarias de los servicios de salud; <b>SUSALUD</b>, procedimiento de reclamos. <i>Usadas en H1.</i></span></div>
+    <div class="ref"><span class="rid">F-533</span><span><b>Ley N° 29733</b> de Protección de Datos Personales y <b>D.S. 003-2013-JUS.</b> Los datos de salud son datos sensibles. <i>Usadas en H3.</i></span></div>
+    <div class="ref"><span class="rid">F-518</span><span><b>Moffatt v. Air Canada (2024).</b> <i>Civil Resolution Tribunal de Columbia Británica, 2024 BCCRT 149.</i> ⚠️ Tribunal de cuantía menor, sin precedente vinculante fuera de su jurisdicción. <i>Usada en H2.</i></span></div>
+    <div class="ref"><span class="rid">F-519</span><span><b>Consumer Financial Protection Bureau (2023).</b> Chatbots in consumer finance — Issue Spotlight. 98 millones de usuarios de chatbots bancarios en 2022. <i>Usada en E2, H1.</i></span></div>
+
+    <div class="refgrp">Empresas y consultoría — autorreportado, sin auditar</div>
+    <div class="ref"><span class="rid">F-522</span><span><b>Bank of America (2025).</b> Comunicados institucionales sobre el asistente Erica. ⚠️ Métricas de definición propia sin metodología publicada. <i>Usada en G1.</i></span></div>
+    <div class="ref"><span class="rid">F-523</span><span><b>Klarna (2025),</b> declaraciones de su CEO vía Forbes sobre la reversión del reemplazo de atención humana. ⚠️ Las cifras originales de 2024 nunca fueron auditadas. <i>Usada en I3.</i></span></div>
+    <div class="ref"><span class="rid">F-524</span><span><b>Lemonade (2024).</b> 96% de avisos de siniestro sin humano; 55% resueltos de punta a punta. ⚠️ Cifras de la empresa reproducidas por terceros con interés comercial. <i>Usada en B3.</i></span></div>
+    <div class="ref"><span class="rid">F-525</span><span><b>Dixon, M., Freeman, K. &amp; Toman, N. (2010).</b> Stop Trying to Delight Your Customers. <i>Harvard Business Review</i> / CEB-Gartner, Customer Effort Score. ⚠️ Investigación propietaria no auditable; la cifra ancla circula desde 2010 sin dataset público — se usa el mecanismo, no el multiplicador. <i>Usada en B2, D1, I4.</i></span></div>
+    <div class="ref"><span class="rid">F-530</span><span><b>NEDA / Tessa (2023),</b> vía NPR, CBS y BBC. Retiro del chatbot en menos de 24 horas. <i>Usada en C4.</i></span></div>
+
+    <div class="refgrp">Citada dentro de la evaluación, no verificada por separado</div>
+    <div class="ref"><span class="rid">—</span><span><b>Fitzsimons &amp; Morwitz</b> — efecto de mera medición, citado en el registro de la evaluación como fundamento de que una pregunta comparativa es señal más diagnóstica que una declaración de interés. <i>Usada en F1.</i></span></div>
   </div>
 </section>
 
