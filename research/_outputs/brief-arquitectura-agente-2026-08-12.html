@@ -81,8 +81,6 @@ section{display:flex;flex-direction:column;gap:1.35rem;margin-top:3.2rem}
 .rec-what{color:var(--ink-2);font-size:.94rem}
 .rec-src{font-size:.83rem;color:var(--muted);border-left:2px solid var(--line-strong);padding-left:.75rem}
 .rec-src b{color:var(--ink-2);font-weight:600}
-.new{font-family:ui-monospace,Menlo,monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--no);background:var(--no-soft);padding:.16rem .4rem;border-radius:2px;font-weight:700}
 
 .tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
 table{border-collapse:collapse;width:100%;font-size:.89rem;min-width:32rem}
@@ -114,9 +112,9 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
   <div class="eyebrow">CoE Diseño de Experiencia → Arquitectura de Capacidad · CIA</div>
   <div>
     <h1>Brief de arquitectura del agente</h1>
-    <p class="lede">Treinta y cinco recomendaciones para cerrar las brechas que reveló la evaluación del asesor guía web, cruzadas con la evidencia disponible. Cada una marcada según de dónde viene.</p>
+    <p class="lede">Veintinueve recomendaciones para cerrar las brechas que reveló la evaluación del asesor guía web, cruzadas con la evidencia disponible. Cada una marcada según de dónde viene.</p>
   </div>
-  <div class="meta"><span>12 ago 2026</span><span>v1</span><span>35 recomendaciones · 9 capas</span><span>Evidencia: F-511 a F-534</span></div>
+  <div class="meta"><span>12 ago 2026</span><span>v1</span><span>29 recomendaciones · 9 capas</span><span>Evidencia: F-511 a F-534</span></div>
 </header>
 
 <div class="callout">
@@ -134,17 +132,17 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
   <div class="legend">
     <div class="leg">
       <span class="mark m-e">■ Evaluación</span>
-      <span class="n">8</span>
+      <span class="n">5</span>
       <p>Salen de la performance observada del asesor guía web sobre el banco de 20 preguntas. Son específicas de nuestro caso y no se habrían encontrado leyendo literatura.</p>
     </div>
     <div class="leg">
       <span class="mark m-l">▲ Literatura</span>
-      <span class="n">19</span>
+      <span class="n">15</span>
       <p>Salen de la evidencia externa. <b>No aparecen en la evaluación porque el banco no las probó</b> — no porque el agente las tenga resueltas.</p>
     </div>
     <div class="leg">
       <span class="mark m-b">◆ Convergen</span>
-      <span class="n">8</span>
+      <span class="n">9</span>
       <p>Las dos fuentes apuntan al mismo componente por caminos independientes. <b>Máxima prioridad.</b></p>
     </div>
   </div>
@@ -178,9 +176,9 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     </div></div>
 
     <div class="rec"><div class="rec-id">A4</div><div class="rec-body">
-      <div class="rec-head"><h3>Nombres canónicos con validador de entidades post-generación</h3><span class="mark m-e">■ E</span></div>
-      <p class="rec-what">Lista controlada de entidades; si aparece un nombre que no está en el catálogo, la respuesta no sale.</p>
-      <p class="rec-src"><b>Origen:</b> P1, P5, P6. «Salud Nacional» y «Programa Oncológico Integral» — nombres plausibles que el modelo compuso.</p>
+      <div class="rec-head"><h3>Validación post-generación contra catálogo y fuentes</h3><span class="mark m-b">◆ L+E</span></div>
+      <p class="rec-what">Etapa separada de la generación que contrasta la respuesta contra las fuentes recuperadas y contra la lista controlada de entidades. Si aparece un nombre que no está en el catálogo, o una afirmación que no se sostiene en lo recuperado, la respuesta no sale.</p>
+      <p class="rec-src"><b>Evaluación:</b> P1, P5 y P6 — «Salud Nacional» y «Programa Oncológico Integral» son nombres plausibles que el modelo compuso. <b>Literatura:</b> la única arquitectura publicada de LLM de seguros a escala industrial descompone el RAG en cuatro tareas, y la cuarta es corrección de alucinación posterior a la generación. La validación de nombres es el caso particular; la auto-verificación contra fuentes es el mecanismo general — <b>un solo componente resuelve los dos</b>.</p>
     </div></div>
 
     <div class="rec"><div class="rec-id">A5</div><div class="rec-body">
@@ -189,12 +187,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <p class="rec-src"><b>Origen:</b> el 404 de P6 indica composición de URL o índice desactualizado.</p>
     </div></div>
 
-    <div class="rec"><div class="rec-id">A6</div><div class="rec-body">
-      <div class="rec-head"><h3>Auto-verificación post-generación como etapa propia</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
-      <p class="rec-what">Contrastar la respuesta generada contra las fuentes recuperadas antes de emitirla, como paso separado de la generación.</p>
-      <p class="rec-src"><b>Origen:</b> la única arquitectura publicada de LLM de seguros a escala industrial descompone el RAG en cuatro tareas, y la cuarta es corrección de alucinación posterior a la generación. A4 es el caso particular de esto para nombres; A6 es el mecanismo general.</p>
-    </div></div>
-  </div>
+      </div>
 
   <div class="layer">
     <div class="layer-head"><h3>B · Herramientas y acción</h3><span>Sacar del modelo lo que el modelo no puede garantizar</span></div>
@@ -206,13 +199,13 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     </div></div>
 
     <div class="rec"><div class="rec-id">B2</div><div class="rec-body">
-      <div class="rec-head"><h3>Consulta de póliza autenticada, con capa de identidad y entitlements</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Consulta de póliza autenticada, con capa de identidad y entitlements</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Contrato de la herramienta, qué campos puede leer, con qué base de consentimiento y con qué registro de auditoría.</p>
       <p class="rec-src"><b>Origen:</b> el asistente de la app opera con cliente autenticado. Eso cambia el requisito de fondo — «depende de tu plan» deja de ser resguardo y pasa a ser evasión, porque el agente sabe cuál es el plan. <b>La evaluación no pudo detectar esto porque se hizo sobre el agente web anónimo.</b></p>
     </div></div>
 
     <div class="rec"><div class="rec-id">B3</div><div class="rec-body">
-      <div class="rec-head"><h3>Capa de ejecución de trámites, no solo de explicación</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Capa de ejecución de trámites, no solo de explicación</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Reembolso, inclusión de dependiente, descarga de póliza, actualización de datos: completarlos, no instruir cómo hacerlos.</p>
       <p class="rec-src"><b>Origen:</b> en la aseguradora más automatizada del mundo, <span class="num">96%</span> de los avisos de siniestro entran sin humano pero solo <span class="num">55%</span> se resuelven de punta a punta. La brecha entre capturar y resolver es lo que separa un asistente informativo de uno que hace autoatención. Dentro de la app, «anda a la app y haz X» es esfuerzo puro.</p>
     </div></div>
@@ -223,8 +216,8 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
     <div class="rec"><div class="rec-id">C1</div><div class="rec-body">
       <div class="rec-head"><h3>Separar seguridad, alcance de rol y política comercial</h3><span class="mark m-b">◆ L+E</span></div>
-      <p class="rec-what">Tres políticas independientes con sus propios clasificadores. La de seguridad debe discriminar por <b>dependencia de dato</b>, no por tema.</p>
-      <p class="rec-src"><b>Evaluación:</b> P3 (seguridad disparada sobre un cálculo legítimo), P14 (sin límite de rol), P19 (sin política comercial). <b>Literatura:</b> el diagnóstico de fondo es una frontera de conocimiento sin definir, que produce fallas en las dos direcciones a la vez.</p>
+      <p class="rec-what">Tres políticas independientes con sus propios clasificadores. La de seguridad debe discriminar por <b>dependencia de dato</b>, no por tema. La comercial es la que aloja el criterio de «cuándo no vender».</p>
+      <p class="rec-src"><b>Evaluación:</b> los tres huecos aparecen en el banco — P3 (seguridad disparada sobre un cálculo legítimo), P14 (sin límite de rol: convierte una pregunta fuera de alcance en cross-sell) y P19 (sin política comercial: no reconoce el perfil de bajo riesgo antes de ofrecer). <b>Literatura:</b> el diagnóstico de fondo es una frontera de conocimiento sin definir, que produce fallas en las dos direcciones a la vez. ⚠️ El <em>contenido</em> de la política comercial lo define Negocio y el CoE; arquitectura provee el mecanismo que la hace ejecutable.</p>
     </div></div>
 
     <div class="rec"><div class="rec-id">C2</div><div class="rec-body">
@@ -240,41 +233,36 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     </div></div>
 
     <div class="rec"><div class="rec-id">C4</div><div class="rec-body">
-      <div class="rec-head"><h3>Filtro de contenido clínico: nada generativo sobre síntomas, diagnóstico o tratamiento</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Filtro de contenido clínico: nada generativo sobre síntomas, diagnóstico o tratamiento</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Distinto de C3: C3 intercepta la emergencia; C4 impide que el agente opine sobre el cuerpo en cualquier registro.</p>
       <p class="rec-src"><b>Origen:</b> la asociación estadounidense de trastornos alimentarios retiró su chatbot en menos de 24 horas — al agregarle capacidad generativa, empezó a recomendar déficit calórico a personas con trastornos alimentarios. Y la precisión de triaje de los verificadores de síntomas lleva cinco años estancada en ~<span class="num">56%</span>, omitiendo más del <span class="num">40%</span> de las emergencias.</p>
     </div></div>
 
     <div class="rec"><div class="rec-id">C5</div><div class="rec-body">
-      <div class="rec-head"><h3>Re-afirmación de guardarraíles por turno, con límite de sesión</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Re-afirmación de guardarraíles por turno, con límite de sesión</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Las políticas se revalidan en cada turno, no solo al inicio de la sesión.</p>
       <p class="rec-src"><b>Origen:</b> las barandas de seguridad <b>se debilitan en conversaciones extendidas</b> — justo el patrón de uso que el producto quiere fomentar para engagement. Es la recomendación con mayor relación impacto/costo de esta capa, y el banco de 20 preguntas no podía detectarla porque es de un solo turno.</p>
     </div></div>
 
-    <div class="rec"><div class="rec-id">C6</div><div class="rec-body">
-      <div class="rec-head"><h3>Regla explícita de «cuándo no vender»</h3><span class="mark m-e">■ E</span></div>
-      <p class="rec-what">Criterio operativo para que el objetivo comercial ceda ante la honestidad informativa.</p>
-      <p class="rec-src"><b>Origen:</b> P14 y P19 son el mismo vacío. En P19 el agente no reconoce el perfil de bajo riesgo antes de ofrecer; en P14 convierte una pregunta de límite de rol en cross-sell.</p>
-    </div></div>
-  </div>
+      </div>
 
   <div class="layer">
     <div class="layer-head"><h3>D · Conversación y estado</h3><span>Ausente por completo del brief original</span></div>
 
     <div class="rec"><div class="rec-id">D1</div><div class="rec-body">
-      <div class="rec-head"><h3>Desambiguación por varianza: preguntar solo si la respuesta cambia</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Desambiguación por varianza: preguntar solo si la respuesta cambia</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Antes de pedir aclaración, verificar si la respuesta varía entre las pólizas del cliente. Si no varía, responder.</p>
       <p class="rec-src"><b>Origen:</b> los modelos tienen un sesgo consistente de sub-clarificación — reconocen la ambigüedad y responden igual, y empeora conforme avanza el diálogo. Pero <b>preguntar tampoco es gratis</b>: cada turno extra es esfuerzo que el cliente paga, y el esfuerzo predice deslealtad mejor que la satisfacción.</p>
     </div></div>
 
     <div class="rec"><div class="rec-id">D2</div><div class="rec-body">
-      <div class="rec-head"><h3>Estado de sesión: memoria corta, multi-intención y aceptación de corrección</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Estado de sesión: memoria corta, multi-intención y aceptación de corrección</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">No volver a preguntar lo ya establecido; separar y responder dos preguntas en un mensaje; aceptar «no, me refería al SOAT» sin reiniciar.</p>
       <p class="rec-src"><b>Origen:</b> coincide con el bloque 3 de la propuesta de Product Design. El banco de 20 preguntas es de un solo turno, así que <b>no pudo evaluar nada de esto</b>.</p>
     </div></div>
 
     <div class="rec"><div class="rec-id">D3</div><div class="rec-body">
-      <div class="rec-head"><h3>Evaluación propia del turno posterior a la aclaración</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Evaluación propia del turno posterior a la aclaración</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Medir la calidad de la respuesta que sigue a una pregunta de desambiguación, como caso de prueba separado.</p>
       <p class="rec-src"><b>Origen:</b> el cuello de botella documentado no es preguntar — es responder bien <em>después</em> de la aclaración. Un agente que pregunta mucho y responde mal después es peor que uno que responde directo.</p>
     </div></div>
@@ -284,29 +272,19 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     <div class="layer-head"><h3>E · Enrutamiento a humano</h3><span>La capa que más faltaba</span></div>
 
     <div class="rec"><div class="rec-id">E1</div><div class="rec-body">
-      <div class="rec-head"><h3>Clasificador de atribución de falla como criterio de enrutamiento</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
-      <p class="rec-what">Falla de la empresa → humano, aunque el agente sepa la respuesta. Falla del cliente → puede resolverla el agente.</p>
-      <p class="rec-src"><b>Origen:</b> la mejor evidencia disponible de toda la investigación — artículo arbitrado con análisis de mediación. <b>El criterio de escalamiento no es la complejidad del caso, es de quién fue la culpa.</b> Un rechazo de siniestro, una prima cobrada de más o un reembolso demorado son fallas de la empresa.</p>
+      <div class="rec-head"><h3>Enrutamiento por atribución de falla y carga emocional</h3><span class="mark m-l">▲ L</span></div>
+      <p class="rec-what">Dos criterios sobre el mismo servicio de enrutamiento. Falla de la empresa → humano, aunque el agente sepa la respuesta. Emoción negativa intensa → humano, sea cual sea el tema.</p>
+      <p class="rec-src"><b>Origen:</b> la mejor evidencia disponible de toda la investigación — artículo arbitrado con análisis de mediación. <b>El criterio de escalamiento no es la complejidad del caso, es de quién fue la culpa</b>: un rechazo de siniestro, una prima cobrada de más o un reembolso demorado son fallas de la empresa. Y el soporte informativo por IA es <span class="num">37%</span> menos efectivo cuando el cliente expresa emoción negativa intensa — condición frecuente en salud, no excepcional.</p>
     </div></div>
 
     <div class="rec"><div class="rec-id">E2</div><div class="rec-body">
-      <div class="rec-head"><h3>Detección de intensidad emocional como segundo criterio</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
-      <p class="rec-what">Emoción negativa intensa dispara oferta de humano, independientemente del tema.</p>
-      <p class="rec-src"><b>Origen:</b> el soporte informativo por IA es <span class="num">37%</span> menos efectivo cuando el cliente expresa emoción negativa intensa. En salud, esa condición es frecuente, no excepcional.</p>
+      <div class="rec-head"><h3>Salida a humano: siempre disponible, y ofrecida al detectar bucle</h3><span class="mark m-l">▲ L</span></div>
+      <p class="rec-what">Nunca condicionada a un número mínimo de intentos del bot. Y un detector de repetición de consulta, turnos sin resolución y reformulaciones sucesivas que dispara la oferta de forma proactiva.</p>
+      <p class="rec-src"><b>Origen:</b> el regulador financiero estadounidense documentó, sobre <span class="num">98</span> millones de usuarios, que los consumidores quedan atrapados en bucles repetitivos y que el efecto neto es <b>erosión de la confianza en la institución, no solo en el canal</b> — con impacto desproporcionado en clientes mayores. En todo el registro público, lo que enfurece no es que sea un bot: es quedarse sin salida.</p>
     </div></div>
 
-    <div class="rec"><div class="rec-id">E3</div><div class="rec-body">
-      <div class="rec-head"><h3>Detector de bucle y frustración</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
-      <p class="rec-what">Repetición de la misma consulta, turnos sin resolución, reformulaciones sucesivas → oferta proactiva de humano.</p>
-      <p class="rec-src"><b>Origen:</b> el regulador financiero estadounidense documentó, sobre <span class="num">98</span> millones de usuarios, que los consumidores quedan atrapados en bucles repetitivos y que el efecto neto es <b>erosión de la confianza en la institución, no solo en el canal</b>.</p>
-    </div></div>
-
-    <div class="rec"><div class="rec-id">E4</div><div class="rec-body">
-      <div class="rec-head"><h3>Salida a humano siempre disponible, no condicionada a intentos previos</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
-      <p class="rec-what">Nunca escondida detrás de un número mínimo de intentos del bot.</p>
-      <p class="rec-src"><b>Origen:</b> lo que enfurece en todo el registro público no es que sea un bot — es quedarse sin salida. Y afecta de forma desproporcionada a clientes mayores.</p>
-    </div></div>
-  </div>
+    
+      </div>
 
   <div class="layer">
     <div class="layer-head"><h3>F · Intención y puente comercial</h3><span>Donde la evaluación fue más específica y la literatura más incómoda</span></div>
@@ -324,7 +302,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     </div></div>
 
     <div class="rec"><div class="rec-id">F3</div><div class="rec-body">
-      <div class="rec-head"><h3>Política de divulgación de IA, con decisión sobre el momento</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Política de divulgación de IA, con decisión sobre el momento</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Divulgar es obligatorio. Lo que sí se decide es <em>cuándo</em>.</p>
       <p class="rec-src"><b>Origen:</b> en un experimento de campo aleatorizado a gran escala, divulgar la IA <b>antes</b> de la conversación redujo las compras cerca de <span class="num">80%</span>; el propio estudio reporta que la penalización se reduce al divulgar después de la interacción útil. Consecuencia directa: <b>toda proyección de cross-sell calcada de venta humana está inflada.</b></p>
     </div></div>
@@ -334,7 +312,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     <div class="layer-head"><h3>G · Proactividad</h3><span>Evidencia débil, pero es el único mecanismo que hay</span></div>
 
     <div class="rec"><div class="rec-id">G1</div><div class="rec-body">
-      <div class="rec-head"><h3>Motor de disparadores proactivos sobre eventos de póliza</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Motor de disparadores proactivos sobre eventos de póliza</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Vencimiento próximo, saldo sin usar, avance de reembolso, chequeo preventivo incluido y no utilizado.</p>
       <p class="rec-src"><b>Origen:</b> en el asistente bancario más grande del mundo, entre <span class="num">50%</span> y <span class="num">60%</span> de las interacciones <b>las inicia el asistente</b>. Es el único mecanismo de engagement documentado. ⚠️ Pero es autorreporte corporativo sin auditar y no existe prueba causal — <b>construirlo como experimento medible, no como supuesto</b>.</p>
     </div></div>
@@ -344,7 +322,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     <div class="layer-head"><h3>H · Cumplimiento y trazabilidad</h3><span>Dos reguladores, no uno</span></div>
 
     <div class="rec"><div class="rec-id">H1</div><div class="rec-body">
-      <div class="rec-head"><h3>Clasificador de reclamo con integración al sistema de reclamos</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Clasificador de reclamo con integración al sistema de reclamos</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Si lo que el cliente escribe constituye un reclamo, se registra como reclamo — no se responde como consulta.</p>
       <p class="rec-src"><b>Origen:</b> en salud operamos bajo SBS <b>y SUSALUD</b>. Un reclamo dispara un plazo regulado de <span class="num">30</span> días hábiles. Y está documentado que los bots reconocen disputas solo por sintaxis específica: se les escapan. <b>Es exposición regulatoria, no deuda técnica.</b></p>
     </div></div>
@@ -356,7 +334,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     </div></div>
 
     <div class="rec"><div class="rec-id">H3</div><div class="rec-body">
-      <div class="rec-head"><h3>Vinculación de finalidad sobre dato sensible</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Vinculación de finalidad sobre dato sensible</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Separar técnicamente el uso prestacional del uso comercial de la conversación clínica, con bases de consentimiento distintas.</p>
       <p class="rec-src"><b>Origen:</b> los datos de salud son <b>dato sensible</b> bajo Ley 29733, con régimen reforzado de finalidad. Usar la conversación clínica para alimentar cross-sell es usar dato sensible con una finalidad distinta de aquella para la que se recogió. Es el punto donde el objetivo comercial choca con el ramo.</p>
     </div></div>
@@ -366,41 +344,31 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     <div class="layer-head"><h3>I · Observabilidad y evaluación</h3><span>Lo que evita que todo lo anterior se degrade</span></div>
 
     <div class="rec"><div class="rec-id">I1</div><div class="rec-body">
-      <div class="rec-head"><h3>La suite de 20 preguntas como gate de regresión en CI</h3><span class="mark m-e">■ E</span></div>
-      <p class="rec-what">De ejercicio puntual a control automático en cada despliegue.</p>
-      <p class="rec-src"><b>Origen:</b> es el activo más valioso que salió de este trabajo, y hoy no está incorporado a ningún pipeline.</p>
+      <div class="rec-head"><h3>La suite de 20 preguntas como gate de regresión, con referencias validadas</h3><span class="mark m-e">■ E</span></div>
+      <p class="rec-what">De ejercicio puntual a control automático en cada despliegue — con la columna de respuesta de referencia validada por Producto, que hoy está incompleta.</p>
+      <p class="rec-src"><b>Origen:</b> es el activo más valioso que salió de este trabajo y no está incorporado a ningún pipeline. La referencia validada no es un refinamiento: <b>sin ella el gate no tiene contra qué comparar</b>, y es una limitación que la propia evaluación declara.</p>
     </div></div>
 
     <div class="rec"><div class="rec-id">I2</div><div class="rec-body">
-      <div class="rec-head"><h3>Medir la omisión como tipo de defecto propio</h3><span class="mark m-b">◆ L+E</span></div>
-      <p class="rec-what">Un tablero que solo mide alucinación no ve el defecto dominante de este agente.</p>
-      <p class="rec-src"><b>Evaluación:</b> <span class="num">5</span> de <span class="num">20</span> respuestas omitieron un dato público que el agente podía dar. <b>Literatura:</b> es la contracara de la sobre-abstención, y no se corrige lo que no se mide.</p>
+      <div class="rec-head"><h3>Rúbrica bidireccional: la omisión cuenta como defecto, la abstención correcta puntúa a favor</h3><span class="mark m-b">◆ L+E</span></div>
+      <p class="rec-what">Un tablero que solo mide alucinación no ve el defecto dominante de este agente, y una rúbrica que castiga el «no sé» produce el defecto contrario.</p>
+      <p class="rec-src"><b>Evaluación:</b> <span class="num">5</span> de <span class="num">20</span> respuestas omitieron un dato público que el agente podía dar. <b>Literatura:</b> los regímenes de evaluación que penalizan la abstención <b>fuerzan estadísticamente la alucinación</b> — el sistema aprende que adivinar rinde más que decir que no sabe. Las dos mitades son la misma decisión de diseño de la rúbrica, y reflejan la tesis central del brief: el agente falla en ambas direcciones.</p>
     </div></div>
 
+    
     <div class="rec"><div class="rec-id">I3</div><div class="rec-body">
-      <div class="rec-head"><h3>La abstención correcta puntúa a favor en la rúbrica</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
-      <p class="rec-what">Dar crédito explícito al «no tengo ese dato» cuando efectivamente no lo hay.</p>
-      <p class="rec-src"><b>Origen:</b> los regímenes de evaluación que penalizan la abstención <b>fuerzan estadísticamente la alucinación</b> — el sistema aprende que adivinar rinde más que decir que no sabe. Es una decisión de diseño de la rúbrica, no del prompt.</p>
-    </div></div>
-
-    <div class="rec"><div class="rec-id">I4</div><div class="rec-body">
-      <div class="rec-head"><h3>Métricas segmentadas por tipo de interacción, nunca agregadas</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+      <div class="rec-head"><h3>Métricas segmentadas por tipo de interacción, nunca agregadas</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Resolución por tipo de consulta, no tasa de deflexión global.</p>
       <p class="rec-src"><b>Origen:</b> la reversión más conocida del sector ocurrió porque <b>las métricas agregadas de volumen enmascararon el deterioro de calidad en tipos específicos de interacción</b>. Gobernar el agente por tasa de deflexión reproduce ese error.</p>
     </div></div>
 
-    <div class="rec"><div class="rec-id">I5</div><div class="rec-body">
-      <div class="rec-head"><h3>Instrumentar el esfuerzo del cliente</h3><span class="mark m-l">▲ L</span> <span class="new">nueva</span></div>
+    <div class="rec"><div class="rec-id">I4</div><div class="rec-body">
+      <div class="rec-head"><h3>Instrumentar el esfuerzo del cliente</h3><span class="mark m-l">▲ L</span></div>
       <p class="rec-what">Turnos hasta resolución, repeticiones, cambios de canal, reformulaciones.</p>
       <p class="rec-src"><b>Origen:</b> los mayores generadores de esfuerzo documentados son exactamente los que produce un agente mal diseñado: cambio de canal, contactos repetidos y tener que volver a explicar. Y el esfuerzo predice lealtad mejor que la satisfacción.</p>
     </div></div>
 
-    <div class="rec"><div class="rec-id">I6</div><div class="rec-body">
-      <div class="rec-head"><h3>Completar la columna de respuesta de referencia validada por Producto</h3><span class="mark m-e">■ E</span></div>
-      <p class="rec-what">Antes de tratar la evaluación como calificación definitiva.</p>
-      <p class="rec-src"><b>Origen:</b> es una limitación declarada de la propia evaluación, y es prerrequisito de I1 — sin referencia validada, el gate de regresión no tiene contra qué comparar.</p>
-    </div></div>
-  </div>
+      </div>
 </section>
 
 <section>
@@ -413,12 +381,12 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       <thead><tr><th>Bloque</th><th>Qué incluye</th><th>Por qué en ese orden</th></tr></thead>
       <tbody>
         <tr><td>0 · Bloqueante</td><td>A1</td><td>Único riesgo de promesa incumplible hoy en producción</td></tr>
-        <tr><td>1 · Base de verdad</td><td>A2, A3, A4, A5, B1, I6</td><td>Cierran 6 de los 11 hallazgos y no requieren tocar el modelo</td></tr>
-        <tr><td>2 · Seguridad clínica</td><td>C3, C4, C5, E1, E2, E4</td><td>Condición de salida para el ramo salud; C5 es el de mejor relación impacto/costo</td></tr>
+        <tr><td>1 · Base de verdad</td><td>A2, A3, A4, A5, B1, I1</td><td>Cierran 6 de los 11 hallazgos y no requieren tocar el modelo</td></tr>
+        <tr><td>2 · Seguridad clínica</td><td>C3, C4, C5, E1, E2</td><td>Condición de salida para el ramo salud; C5 es el de mejor relación impacto/costo</td></tr>
         <tr><td>3 · Cumplimiento</td><td>H1, H2, H3</td><td>Exposición regulatoria — corre en paralelo, no después</td></tr>
-        <tr><td>4 · Control</td><td>C1, C2, A6, I1, I2, I3, I4, I5</td><td>Sin reason codes y sin métrica de omisión no se puede medir si algo mejoró</td></tr>
-        <tr><td>5 · Experiencia</td><td>B2, B3, D1, D2, D3, E3</td><td>El salto real de autoatención al mudarse a la app</td></tr>
-        <tr><td>6 · Comercial</td><td>C6, F1, F2, F3, G1</td><td>Lo más débil en evidencia y lo que más riesgo agrega si se adelanta</td></tr>
+        <tr><td>4 · Control</td><td>C1, C2, I2, I3, I4</td><td>Sin reason codes y sin métrica de omisión no se puede medir si algo mejoró</td></tr>
+        <tr><td>5 · Experiencia</td><td>B2, B3, D1, D2, D3</td><td>El salto real de autoatención al mudarse a la app</td></tr>
+        <tr><td>6 · Comercial</td><td>F1, F2, F3, G1</td><td>Lo más débil en evidencia y lo que más riesgo agrega si se adelanta</td></tr>
       </tbody>
     </table>
   </div>
@@ -433,7 +401,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
   <div class="notes">
     <div class="note"><strong>Confirmar la disponibilidad comercial del Oncológico Integral → Producto</strong><p>Arquitectura construye el mecanismo de A1; alguien tiene que poblar el estado.</p></div>
     <div class="note"><strong>Aprobar la lista de hechos autorizados → Producto y Legal</strong><p>Sin esa firma, A3 no puede salir. Es la dependencia externa más crítica del plan.</p></div>
-    <div class="note"><strong>Definir el criterio de «cuándo no vender» → Negocio y CoE</strong><p>C6 es una política de negocio; arquitectura solo la hace ejecutable.</p></div>
+    <div class="note"><strong>Definir el criterio de «cuándo no vender» → Negocio y CoE</strong><p>Es una política de negocio; arquitectura solo provee el mecanismo (C1) que la hace ejecutable.</p></div>
     <div class="note"><strong>Base de consentimiento para uso comercial de conversación clínica → Legal y DPO</strong><p>H3 depende de esa definición, y condiciona todo el bloque comercial.</p></div>
   </div>
 </section>
