@@ -320,6 +320,45 @@ dirección de la tesis:
    clasificación, cumple una función de outcome que la precisión, aunque fuera perfecta, no
    sustituye. Refuerza el mismo punto que F-42 (Omaolo) ya daba desde el ángulo de negocio:
    el KPI correcto es seguridad/outcome, no % de coincidencia con el juicio humano.
+**[Revisión profunda 2026-08-12]** Leí a fondo F-55, F-56, F-57, F-58 y F-59 (antes solo el
+resumen de una línea del ledger; URLs de nature.com/ncbi.nlm.nih.gov bloqueadas por el proxy del
+entorno, reconstruido vía búsqueda dirigida). Estos cinco matizan la **rigurosidad del proceso de
+testeo** que esta tesis exige, no solo la precisión del modelo:
+1. **F-56 confirma que el "playbook" de silent trial no es tan maduro como sugiere citarlo como
+   estándar:** el propio scoping review (891 artículos cribados, 2015-2025, solo 75 incluidos)
+   encuentra que **no existen guías formales** todavía sobre cómo correr uno, con adopción
+   concentrada en EE.UU./China/Reino Unido — sin precedente documentado en Perú/LatAm. El caso más
+   agudo que cita: un modelo colapsó de AUC 0.90 a 0.50 en un silent trial posterior a su
+   validación inicial, por *distribution shift* real (cambió edad, lateralidad de la condición,
+   formato del equipo), no por error del modelo — "pasó el silent trial" no es una garantía
+   permanente, es una fotografía vigente solo mientras la población no cambie (ver también
+   heurística 10 de "Intuición acumulada", misma fuente, ángulo distinto).
+2. **F-57 (Kwong et al. 2022 — autoría corregida en `codice.md`, no solo "PMC") acota el alcance
+   real del caso que respalda los 60-90 días:** es un modelo de una sola condición (hidronefrosis
+   obstructiva pediátrica), no un kit multi-síntoma — la duración recomendada no fue validada en
+   un contexto tan amplio como el que este modelo propone.
+3. **F-55 (autoría corregida: Cully, J.A. et al., no "Bauer, M.S." como tenía el ledger) resuelve
+   qué tan bien funcionó en la práctica el diseño tipo 2 que tesis 9 cita como ejemplo de éxito:**
+   el protocolo de 2012 no tiene resultados propios — los resultados reales se publicaron en Cully
+   et al. 2017 (*J Gen Intern Med*, N=302, 50% de respuesta exitosa vs. 32.8% del control a los 4
+   meses, sostenido a 8-12 meses). Pero la mejora es "modesta aunque persistente" según los propios
+   autores, y el impacto en salud física se limitó a corto plazo y solo al subgrupo con EPOC, no al
+   de insuficiencia cardíaca — **no asumir un resultado uniforme "funciona" en un kit
+   multi-condición**; medir por subgrupo desde el diseño del piloto.
+4. **F-58/F-59 abren una controversia metodológica activa sobre el stepped-wedge que la tesis
+   nunca declaró:** Hemming & Taljaard (2020) afirman que el diseño escalonado está en **mayor**
+   riesgo de sesgo que el cluster-RCT paralelo clásico (por eso CONSORT exige justificar la
+   elección), y la ventaja ética que cita F-59 (Mdege et al. 2011) es objeto de una crítica formal
+   directa — Kotz et al. (2012, mismo journal): "Use of the stepped wedge design cannot be
+   recommended", con réplica académica activa de ambos lados. Implicación: si el piloto usa
+   stepped-wedge para comparar el flujo IA vs. atención tradicional, hay que documentar por qué se
+   prefirió sobre un diseño paralelo — no presentarlo como la opción obviamente superior.
+- **Evidencia añadida:** F-55 (🟢A, Cully et al. 2012/2017), F-56/F-57 (🟢A, silent trial —
+  autoría de F-57 corregida a Kwong et al.), F-58/F-59 (🟢A, stepped-wedge, con contraevidencia de
+  Kotz et al. 2012)
+- **Confianza:** Alta (sin cambio — el mecanismo central de la tesis se sostiene; lo nuevo es que
+  cada estrategia de testeo del piloto tiene su propio costado de rigor/controversia que había que
+  declarar, no solo citarla como "la literatura ya tiene el playbook")
 
 ### 11. El ciclo de rentabilidad del seguro global está en su mejor momento en 25 años — no es momento de jugar defensivo
 Combined ratio P&C de EE.UU. en 91.9% con la mayor ganancia de suscripción en 25
@@ -2160,3 +2199,26 @@ explicabilidad).
   de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
   fuentes leídas hoy. Bitácora con 24 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30
   días — sin podar todavía.
+- **2026-08-12 (revisión profunda, rutina `cronista` cada ~3 días)** — Leí a fondo las 5 fuentes 🟢A
+  más antiguas sin revisión completa según `research/fuentes/revision_profunda.md`: F-55, F-56, F-57,
+  F-58 y F-59 (todas de `/seeker` 2026-07-06, sección de estrategias de testeo del piloto
+  farmacia+triage IA). Las cinco URLs (nature.com, ncbi.nlm.nih.gov, pmc.ncbi.nlm.nih.gov) están
+  bloqueadas por el proxy de red de este entorno — el mismo bloqueo que ya había registrado la rutina
+  diaria de intuición el 2026-08-08/09; reconstruí el contenido con búsquedas dirigidas múltiples por
+  fuente (no solo el resumen de una línea), incluyendo el hallazgo de que el artículo de resultados
+  reales de F-55 (Cully et al. 2017, no solo el protocolo de 2012) está indexado y accesible por
+  búsqueda aunque el PDF original no lo esté. Encontré y corregí dos errores de autoría en
+  `codice.md`: F-55 estaba atribuido a "Bauer, M.S. et al." (el autor principal real es Jeffrey A.
+  Cully) y F-57 solo decía "PMC (framework metodológico)" (autor principal real: Jethro C.C. Kwong).
+  Agregué un bloque "[Revisión profunda 2026-08-12]" a tesis 10 (tres años de aprendizaje sobre
+  rigurosidad de testeo: el silent trial no tiene guías formales todavía y puede colapsar por
+  distribution shift; el ejemplo tipo 2 de tesis 9 sí funcionó pero con efecto modesto y desigual por
+  subgrupo; el stepped-wedge tiene una controversia metodológica activa — Kotz et al. 2012 vs.
+  Mdege/Hemming — que la tesis nunca declaraba) — confianza sin cambio (Alta), matiza el proceso de
+  testeo, no la dirección. Enriquecí también `research/_nodes/modelo-salud-ia-farmacias-peru.md` §4
+  (E1, E2, E3) con el mismo detalle y actualicé su fila en `research/alma.md`. F-55 y F-56 ya habían
+  sido leídos a fondo por la rutina diaria de intuición (entradas 10 y 11, 2026-08-08/09) — sin
+  conflicto: esta rutina lee para matizar tesis/nodes, la diaria lee para heurísticas transferibles;
+  el ángulo de esta corrida (resultados cuantitativos de Cully 2017, alcance del caso de Kwong,
+  controversia Kotz-vs-Mdege) es nuevo en ambos casos. Actualicé
+  `research/fuentes/revision_profunda.md` con las 5 fuentes de este ciclo.

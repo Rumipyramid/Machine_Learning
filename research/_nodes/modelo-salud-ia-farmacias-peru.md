@@ -377,6 +377,26 @@ alto riesgo, correr mínimo **60-90 días** (variación estacional + fin de sema
 semana). No requiere consentimiento porque no influye en la atención (F-56, F-57 — 🟢 scoping
 review + paper de framework, peer-reviewed).
 
+**[Revisión profunda 2026-08-12 — F-56, F-57]** Lectura completa (vía búsqueda dirigida — URLs
+de nature.com y pmc.ncbi.nlm.nih.gov bloqueadas por el proxy de red del entorno) matiza el
+estándar que este documento trata como "el gate correcto". El propio scoping review (2015-2025,
+891 artículos cribados, solo 75 cumplieron criterio de inclusión) encuentra que **no existen
+guías formales todavía** sobre cómo correr un silent trial, con heterogeneidad fuerte en qué se
+mide — algunos trials midieron métricas sin utilidad clínica real. La adopción está además
+concentrada en países ricos (EE.UU. 48%, China 19%, Reino Unido 7%) — no hay precedente
+documentado en Perú/LatAm que este piloto pueda copiar directamente; hay que diseñar el propio
+protocolo desde cero. El caso más agudo que cita el review: un modelo que ya había pasado su
+validación inicial colapsó de **AUC 0.90 a AUC 0.50** en un silent trial posterior, no por error
+del modelo sino por *distribution shift* real (cambió la distribución de edad, la lateralidad de
+la condición y el formato del equipo de captura) — el silent trial no es un casillero que se
+marca una vez, es una medición vigente solo mientras la población de despliegue no cambie; si el
+piloto cambia de región, mezcla de síntomas/edad o dispositivo tras aprobar su silent trial
+inicial, eso es un disparador para **repetirlo**. El caso aplicado del propio paper de framework
+(F-57, Kwong et al. 2022, *Frontiers in Digital Health* — autoría corregida en `codice.md`, no
+solo "PMC") es un modelo de hidronefrosis obstructiva pediátrica: una sola condición, mucho más
+angosto que un kit multi-condición de triage farmacéutico; la duración de 60-90 días fue validada
+en ese contexto acotado, no en uno multi-síntoma.
+
 **Resuelve**: RQ1, RQ2, RQ4 (parcial — el desenlace real solo se mide en la etapa 3 del
 roadmap), RQ20 (si se repite periódicamente).
 
@@ -404,6 +424,21 @@ técnica de precisión de triage, DIeSEL es un candidato más completo que el ti
 solo, porque no separa la pregunta de sostenibilidad económica (§3.7) del diseño del estudio
 —las trata como parte del mismo diseño desde el inicio.
 
+**[Revisión profunda 2026-08-12 — F-55]** ⚠️ Corrección de autoría: el ledger atribuía este paper
+(protocolo, no resultados) a "Bauer, M.S. et al."; el autor principal real es **Jeffrey A. Cully**
+(*Implementation Science* 2012;7:64) — corregido en `codice.md`. Más importante: el artículo de
+2012 solo describe el protocolo; los **resultados reales se publicaron después** (Cully et al.
+2017, *J Gen Intern Med*, N=302 veteranos con insuficiencia cardíaca y/o EPOC con síntomas
+elevados de depresión/ansiedad, 180 recibieron la terapia). El desenlace: 50% de respuesta
+exitosa al tratamiento a los 4 meses vs. 32.8% del grupo control, efecto sostenido a los 8 y 12
+meses — pero los propios autores describen la mejora como "modesta aunque persistente", y el
+impacto en desenlaces de **salud física** se limitó a corto plazo y solo al subgrupo con EPOC, no
+al de insuficiencia cardíaca. Implicación directa para este piloto: un diseño híbrido tipo 2 bien
+ejecutado sí puede producir efecto real medible, pero no hay que asumir un resultado uniforme
+"funciona/no funciona" en un kit multi-condición — hay que medir por subgrupo/condición desde el
+diseño del piloto, porque el propio caso de referencia que este documento cita como ejemplo de
+éxito tuvo resultados desiguales entre las dos condiciones que testeó.
+
 **Resuelve**: RQ9, RQ10, RQ11, RQ16, RQ17, RQ18, RQ19.
 
 ### E3 — Diseño escalonado (stepped-wedge) por clusters de farmacias/regiones
@@ -414,6 +449,25 @@ que todos lo reciben. Permite inferencia causal sin negar el servicio a nadie pe
 — más aceptable en un contexto de servicio público de salud (F-58, F-59). ⚠️ **Riesgo
 metodológico a declarar**: el diseño confunde por tiempo (el control siempre se mide antes
 cronológicamente); requiere ajuste por tendencia temporal.
+
+**[Revisión profunda 2026-08-12 — F-58, F-59]** Lectura completa (vía búsqueda dirigida — URL de
+ncbi.nlm.nih.gov bloqueada por el proxy de red del entorno) matiza el tono de "más aceptable" de
+este párrafo. Hemming & Taljaard (2020, *International Journal of Epidemiology*) no presentan el
+stepped-wedge como alternativa neutral — afirman explícitamente que el diseño escalonado está **en
+mayor riesgo de sesgo** que el cluster-RCT paralelo clásico, y por eso la extensión CONSORT para
+stepped-wedge **exige** que los investigadores justifiquen explícitamente por qué eligieron este
+diseño en vez del paralelo; no lo trata como opción por defecto. Además, la ventaja
+ética/de aceptabilidad que cita F-59 (Mdege et al. 2011, revisión de 25 estudios, la mayoría
+citando razones éticas) no es consenso académico: Kotz et al. (2012, mismo journal —
+*Journal of Clinical Epidemiology*) publicaron una crítica formal titulada "Use of the stepped
+wedge design cannot be recommended", argumentando que esa ventaja ética percibida (nadie se queda
+permanentemente sin la intervención) no es real porque la implementación secuencial también es
+posible dentro de un cluster-RCT paralelo clásico — generó una réplica académica activa
+(defensores del diseño responden que sigue siendo "eficiente y permite evaluar intervenciones que
+de otra forma no se evaluarían"). Implicación para el piloto: elegir stepped-wedge para comparar
+el flujo IA vs. atención tradicional por región de farmacias no es una decisión libre de
+controversia metodológica — hay que documentar explícitamente por qué se prefiere sobre un
+cluster-RCT paralelo (como exige CONSORT), no presentarlo como la opción obviamente superior.
 
 **Resuelve**: RQ6, RQ7 (al escalonar por región, genera comparación Lima vs. provincias de
 forma natural), RQ9, RQ10, RQ11.
