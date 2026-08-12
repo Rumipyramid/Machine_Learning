@@ -32,3 +32,6 @@
 | F-41 | 🟢 A | 2026-08-10 | Intuición 13 — la ventana de un canal de salud digital se cierra sin inversión paralela en competencia del recurso humano que lo opera |
 | F-303 | 🟢 A | 2026-08-10 | Intuición 14 — un salto en NDR/retención no es moat durable hasta abrir qué línea de producto específica lo generó |
 | F-434 | 🟢 A | 2026-08-10 | Intuición 15 — un efecto "estrella" de management suele depender de si el desempeño se midió objetiva o autoreportadamente |
+| F-91 | 🟢 A | 2026-08-12 | Intuición 16 — dar "elección" entre planes con el mismo subsidio puede detonar una espiral de selección adversa que colapsa el plan generoso en pocos años |
+| F-111 | 🟢 A | 2026-08-12 | Intuición 17 — auditar qué variable de necesidad real queda AFUERA de una fórmula de asignación/precio, no solo si las que entran son plausibles |
+| F-243 | 🟢 A | 2026-08-12 | Intuición 18 — antes de invertir en explicar una decisión de IA, preguntar si la tarea es verificable; si no lo es, la explicación no mejora el desempeño complementario |

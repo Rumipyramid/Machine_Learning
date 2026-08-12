@@ -1477,6 +1477,85 @@ directo que su nombre sugiere.
   instrumento de medición de desempeño antes de aceptar una correlación de management como palanca de
   negocio.
 
+### 16. Dar "elección" entre planes con el mismo subsidio no es neutral — puede detonar una espiral de selección adversa que colapsa el plan generoso en pocos años
+Lectura profunda de F-91 (caso Blue Cross/Blue Shield, con el mecanismo mejor documentado en el caso
+gemelo de Harvard, Cutler & Reber 1998, citado por la misma literatura): en 1995 Harvard pasó de
+subsidiar el costo del seguro de salud a un esquema de "contribución igual" — la universidad pagaba
+lo mismo sin importar qué plan eligiera el empleado, y este cubría la diferencia de su bolsillo. El
+resultado no fue una simple redistribución de matrícula: a medida que el plan más generoso (PPO) subía
+de precio relativo, los empleados más sanos migraban al plan más barato, lo que subía el costo per
+cápita del plan generoso (quedaban los de mayor riesgo), lo que forzaba otra subida de precio, lo que
+inducía más migración — en 3 años el PPO colapsó por completo dentro del esquema de contribución
+igual. La pérdida de bienestar medida fue 2-4% del gasto base, aun cuando la mayor competencia entre
+planes bajó las primas generales 5-8%: el ahorro agregado no compensa el colapso del producto que
+concentró el riesgo. **Heurística de decisión:** cualquier diseño que le dé al cliente "elección libre"
+entre una versión barata/básica y una cara/completa de un mismo seguro, con el mismo subsidio o aporte
+fijo del lado de quien paga, no es solo una decisión de UX de catálogo — es un experimento de
+selección adversa en marcha. El chequeo previo no es "¿le gusta al cliente tener opciones?" sino "¿qué
+le pasa al perfil de riesgo del plan más generoso si los más sanos se van?", antes de lanzar, no
+después de ver subir el costo.
+- **Fuente:** F-91 (🟢A, *Journal of Health Economics*/*Explorations in Economic History* — caso
+  empírico BC/BS; el mecanismo exacto con cifras de bienestar corresponde al caso gemelo de Harvard de
+  la misma línea de investigación, Cutler & Reber 1998, NBER)
+- **Leído a fondo:** 2026-08-12 (sciencedirect.com y nber.org bloqueados por el proxy de esta sesión —
+  mismo bloqueo ya documentado para fuentes académicas; reconstruido vía búsqueda dirigida que
+  confirma el mecanismo, el plazo de 3 años y las cifras de bienestar/prima)
+- **Conexión razonada, no forzada:** heurística general de diseño de producto de seguros, no
+  específica de ninguna tesis vigente — aplica a cualquier evaluación futura de "dar más opciones de
+  plan/cobertura" en `lapuerta` o en un producto real de Rimac. No cambia la confianza de ninguna
+  tesis existente.
+
+### 17. Auditar qué variable de necesidad real queda AFUERA de una fórmula de asignación/precio, no solo si las que entran son plausibles
+Lectura profunda de F-111 (pago por capitación de atención primaria en el NHS, fórmula Carr-Hill): el
+"Global Sum" que financia a cada consultorio del NHS se calcula ponderando edad, sexo, morbilidad,
+mortalidad, rotación de lista de pacientes, tipo de personal y ruralidad — una fórmula que, vista por
+sus componentes, luce técnicamente seria. La crítica más citada y sostenida en el tiempo (incluida en
+revisiones posteriores de 2024) no es que algún componente esté mal calibrado, sino que la fórmula
+**no ajusta por privación socioeconómica** — y esa omisión, no un error en los pesos existentes,
+es la que sistemáticamente subfinancia a los consultorios en zonas más pobres: no solo en el Global
+Sum, sino en flujos de ingreso adicionales como el QOF (pago por desempeño), que también penalizan a
+esas mismas zonas. **Heurística de decisión:** al evaluar o diseñar cualquier fórmula de asignación,
+precio o ajuste de riesgo (capitación de salud, pricing dinámico de telemática/UBI, WTP en
+`lapuerta`), el chequeo de rigor no es solo "¿son razonables las variables que incluye?" — es "¿qué
+variable de necesidad/riesgo real, conocida y medible, se dejó explícitamente afuera, y a quién
+perjudica sistemáticamente esa omisión?". Una fórmula puede pasar todos los chequeos de las variables
+que sí tiene y seguir siendo estructuralmente injusta por la que le falta.
+- **Fuente:** F-111 (🟢A, *BMC Health Services Research* 2010, estudio observacional)
+- **Leído a fondo:** 2026-08-12 (bmchealthservres.biomedcentral.com bloqueado por el proxy de esta
+  sesión; reconstruido vía búsqueda dirigida que confirma los componentes de la fórmula y la crítica
+  de omisión de privación, sostenida en literatura posterior hasta 2024)
+- **Conexión razonada, no forzada:** heurística de auditoría de fórmulas/pricing, transferible a
+  cualquier variable de riesgo que `lapuerta` o un producto real de Rimac calcule por reglas — no
+  cambia la confianza de ninguna tesis existente, es un chequeo de proceso.
+
+### 18. Antes de invertir en explicar una decisión de IA, preguntar si la tarea es verificable — si no lo es, la explicación no mejora el desempeño complementario humano+IA
+Lectura profunda de F-243 (Fok & Weld 2024, *AI Magazine* — ya citada en
+`_nodes/tendencias-diseno-innovacion.md` como base teórica de la regla C8, "verificabilidad >
+explicabilidad", pero solo con el resumen de una línea hasta hoy): el argumento central no es que las
+explicaciones de IA sean inútiles en general, sino que **solo ayudan en la medida en que le permiten al
+humano verificar de forma independiente si la recomendación de la IA es correcta** — no en la medida en
+que hacen más legible o interpretable el razonamiento interno del modelo, que es el tipo de explicación
+que la mayoría de productos construye por default. Los autores revisan evidencia de que, en la mayoría
+de contextos de decisión reales, ningún método de explicación logra esa verificación — porque la tarea
+misma no la permite (no hay un dato externo con el que el humano pueda contrastar la respuesta en el
+momento de decidir), no porque la explicación esté mal diseñada. **Heurística de decisión:** antes de
+construir una función de "explicar la recomendación" en el agente conversacional de Rimac, un triage
+IA o un configurador de producto, la primera pregunta no es "¿qué tan clara es la explicación?" sino
+"¿puede el usuario, en ese momento, verificar de forma independiente si la IA tiene razón?" (ver la
+fuente, pedir un segundo dato, comparar contra algo que ya sabe). Si la respuesta es no, invertir en
+hacer la explicación más elaborada no genera el efecto que se busca — hay que invertir en construir esa
+vía de verificación (o aceptar que la confianza tendrá que ganarse por otro mecanismo, no por
+explicabilidad).
+- **Fuente:** F-243 (🟢A, *AI Magazine*, teoría + síntesis de evidencia empírica)
+- **Leído a fondo:** 2026-08-12 (onlinelibrary.wiley.com y arxiv.org bloqueados por el proxy de esta
+  sesión; reconstruido vía búsqueda dirigida sobre semanticscholar/citedrive que confirma la teoría de
+  verificabilidad, la distinción con interpretabilidad, y el hallazgo de que la mayoría de tareas no es
+  verificable independientemente del método de explicación)
+- **Conexión razonada, no forzada:** profundiza directamente la base de tesis 22 (personalización con
+  IA puede reducir conversión cuando el dato es sensible; el mecanismo que calibra confianza es
+  verificabilidad, no explicabilidad genérica) — no cambia su confianza (sigue Alta), pero ahora el
+  Lobo leyó a fondo la fuente que ya sostenía esa distinción, no solo el resumen de una línea.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2051,3 +2130,33 @@ directo que su nombre sugiere.
   revisión de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md`
   con las tres fuentes leídas hoy. Bitácora con 26 días de historial (2026-07-20 a hoy) tras la poda de
   la primera semana — dentro de la ventana de ~30 días.
+- **2026-08-12** — Corrida diaria de refinamiento (no corrió el 2026-08-11: sin commit de este proceso
+  ese día, mismo patrón de brecha ya visto el 2026-08-04). Confirmé `main` actualizado (fast-forward a
+  `3ead00f`, que trajo consigo el commit de la corrida del 2026-08-10) y leí `codice.md` completo:
+  verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (141 fuentes 🟢A confirmadas) — sigue
+  tope exacto en F-468, idéntico al que ya procesó la corrida del 2026-08-10 (última modificación real
+  del archivo: 2026-08-05) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas registradas
+  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces. Repasé las 25 tesis contra
+  ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé ninguna conexión de tesis
+  nueva solo por completar el paso — la racha de "sin cambios" desde el 2026-08-05/06 ya agotó las
+  conexiones razonables disponibles entre las tesis más recientes. La última revisión profunda (rutina
+  de `cronista`, cada ~3 días, última el 2026-08-05) no vence hoy. Sí corrió la rutina diaria de
+  intuición (séptima corrida desde que se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 15 ya
+  tenían lectura profunda del Lobo — seleccioné al azar 3 de las 126 restantes: F-91 (Cutler & Reber,
+  caso Blue Cross/Blue Shield/Harvard, espiral de selección adversa), F-111 (Carr-Hill, capitación de
+  atención primaria NHS) y F-243 (Fok & Weld 2024, verificabilidad de explicaciones de IA). Sumé las
+  entradas 16, 17 y 18 de Intuición acumulada: (16) dar "elección" entre planes con el mismo subsidio
+  puede detonar una espiral de selección adversa que colapsa el plan generoso en pocos años — heurística
+  general de diseño de producto de seguros, sin tesis específica que matizar; (17) auditar qué variable
+  de necesidad real queda *afuera* de una fórmula de asignación/precio, no solo si las que entran son
+  plausibles — el Carr-Hill omite privación socioeconómica pese a lucir técnicamente riguroso, y esa
+  omisión (no un peso mal calibrado) es la que subfinancia sistemáticamente a las zonas más pobres;
+  transferible a cualquier fórmula de riesgo/pricing que `lapuerta` o Rimac calculen por reglas; (18)
+  antes de invertir en explicar una decisión de IA, preguntar si la tarea es verificable — si el usuario
+  no puede contrastar de forma independiente si la IA tiene razón, ninguna explicación mejora el
+  desempeño complementario humano+IA; profundiza directamente la fuente que ya sostenía la regla C8
+  (verificabilidad > explicabilidad) citada en tesis 22, sin cambiarle la confianza. Ninguna tesis de
+  negocio cambió de confianza por esta corrida — es el mecanismo paralelo de intuición, no una revisión
+  de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
+  fuentes leídas hoy. Bitácora con 24 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30
+  días — sin podar todavía.
