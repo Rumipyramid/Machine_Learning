@@ -60,6 +60,10 @@ section{display:flex;flex-direction:column;gap:1.2rem;margin-top:3rem}
 .callout{background:var(--accent-soft);border-left:3px solid var(--accent);padding:1.15rem 1.35rem;display:flex;flex-direction:column;gap:.5rem}
 .callout p{font-size:.96rem;color:var(--ink-2)}
 .callout strong{color:var(--ink)}
+.callouts{display:flex;flex-direction:column;gap:1rem}
+.callout-l{background:var(--lit-soft);border-left-color:var(--lit)}
+.callout h3{font-family:ui-serif,"Iowan Old Style",Palatino,Georgia,serif;font-size:1.18rem;font-weight:600;margin:0}
+.callout .top{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
 
 /* leyenda compacta */
 .legend{display:flex;flex-wrap:wrap;gap:.55rem 1.6rem;padding:.9rem 1.1rem;border:1px solid var(--line);background:var(--surface)}
@@ -126,10 +130,22 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
   <div class="meta"><span>12 ago 2026</span><span>29 recomendaciones · 9 capas</span><span>Evidencia: F-511 a F-534</span></div>
 </header>
 
-<div class="callout">
-  <div class="eyebrow">La idea principal</div>
-  <p><strong>Casi ningún problema del agente es del modelo.</strong> Son de las capas que lo rodean: qué información puede consultar, qué herramientas tiene conectadas y qué reglas lo gobiernan. Si el planteo llega como «el agente responde mal», la conversación se va a ir a ajustar el prompt y no va a resolver nada.</p>
-  <p>La prueba: el agente <strong>falla en dos direcciones opuestas</strong>. Se niega a resolver una suma que sí podía hacer, y omite cinco datos públicos que sí conocía. Eso no es falta de cautela ni exceso de cautela — <strong>es que nadie definió qué debe responder y qué no.</strong></p>
+<div class="callouts">
+
+  <div class="callout">
+    <div class="top"><span class="mark m-e">■ E</span><h3>Lo que encontró la evaluación</h3></div>
+    <p>Sobre 20 preguntas verificadas contra fuentes oficiales: <strong>2 fallas críticas, 5 mayores, 4 menores y 9 respuestas sin hallazgo.</strong> Rinde bien en trámites con pasos claros y en reglas sin ambigüedad.</p>
+    <p>Lo que importa no es cuánto falla, es <strong>cómo</strong>: falla en <strong>dos direcciones opuestas a la vez</strong>. Se niega a resolver una suma que sí podía hacer, y omite cinco datos públicos que sí conocía. Además ofrece un producto que ya no se vende, y solo conecta con lo comercial cuando escucha vocabulario de compra explícito.</p>
+    <p><strong>Eso no es falta de cautela ni exceso de cautela: es que nadie definió qué debe responder y qué no.</strong></p>
+  </div>
+
+  <div class="callout callout-l">
+    <div class="top"><span class="mark m-l">▲ L</span><h3>Lo que dice la evidencia</h3></div>
+    <p><strong>Casi ningún problema de un agente así es del modelo.</strong> Son de las capas que lo rodean: qué información puede consultar, qué herramientas tiene conectadas y qué reglas lo gobiernan. Si el planteo llega como «el agente responde mal», la conversación se va a ir a ajustar el prompt y no va a resolver nada.</p>
+    <p>Y hay tres cosas que la evaluación <strong>no podía ver</strong>, porque probó un solo turno sobre un agente anónimo: las protecciones <strong>se aflojan en conversaciones largas</strong>; falta entera la capa de paso a un humano, con un criterio contraintuitivo —se deriva según <strong>de quién fue la falla</strong>, no según qué tan complejo es el caso—; y en salud responden <strong>dos reguladores</strong> sobre un dato que es sensible.</p>
+    <p><strong>Con un techo que enmarca todo lo demás: la empresa responde legalmente por lo que dice su chatbot</strong> <em>(Moffatt v. Air Canada, 2024)</em>.</p>
+  </div>
+
 </div>
 
 <section>
