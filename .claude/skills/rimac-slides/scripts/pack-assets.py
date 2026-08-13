@@ -28,15 +28,19 @@ import io
 import os
 import sys
 
-# ── Mapeo de nombre de archivo de fuente → (font-family, weight, style) ──────────
-# Solo embebemos los pesos que el sistema usa de verdad (design.md §1.2):
-# 400 cuerpo / 500 lead·footer / 700 sub-titulares·tier-tags / 800 titulares.
+# ── Mapeo de nombre de archivo de fuente → font-family ──────────────────────────
+# Opción B (design.md §Typography): CADA PESO ES SU PROPIA FAMILIA. No se declara
+# font-weight — si se le pone un weight numérico al @font-face (p.ej. 500 para
+# 'BRSonoma Medium'), un uso con el shorthand `font: 23px/1.5 'BRSonoma Medium'`
+# resetea el weight implícito a 400 y dejaría de matchear esa cara → fallback a
+# serif del navegador, silencioso (sin error de consola). Ver design.md: "no se
+# re-declara fontWeight — se referencia el archivo real".
 FONT_MAP = {
-    "BRSonoma-Regular.ttf": ("BRSonoma", 400, "normal"),
-    "BRSonoma-Medium.ttf":  ("BRSonoma", 500, "normal"),
-    "BRSonoma-Bold.ttf":    ("BRSonoma", 700, "normal"),
-    "BRSonoma-Black.ttf":   ("BRSonoma", 800, "normal"),
-    "Rimac-Display.ttf":    ("Rimac Display", 800, "normal"),
+    "BRSonoma-Regular.ttf": "BRSonoma Regular",
+    "BRSonoma-Medium.ttf":  "BRSonoma Medium",
+    "BRSonoma-Bold.ttf":    "BRSonoma Bold",
+    "BRSonoma-Black.ttf":   "BRSonoma Black",
+    "Rimac-Display.ttf":    "Rimac Display",
 }
 
 
@@ -65,7 +69,7 @@ def build_font_face_css(assets_dir):
         sys.exit(f"No encuentro la carpeta de fuentes: {fonts_dir}")
 
     blocks = []
-    for filename, (family, weight, style) in FONT_MAP.items():
+    for filename, family in FONT_MAP.items():
         path = os.path.join(fonts_dir, filename)
         if not os.path.exists(path):
             print(f"  ⚠  falta {filename} — se omite", file=sys.stderr)
@@ -74,9 +78,9 @@ def build_font_face_css(assets_dir):
         blocks.append(
             f"@font-face{{font-family:'{family}';"
             f"src:url(data:font/woff2;base64,{b64}) format('woff2');"
-            f"font-weight:{weight};font-style:{style};font-display:swap;}}"
+            f"font-display:swap;}}"
         )
-        print(f"  ✓ {filename:28s} → {family} {weight} ({len(b64)//1024}KB b64)")
+        print(f"  ✓ {filename:28s} → {family} ({len(b64)//1024}KB b64)")
     return "\n".join(blocks)
 
 
