@@ -1595,6 +1595,88 @@ explicabilidad).
   verificabilidad, no explicabilidad genérica) — no cambia su confianza (sigue Alta), pero ahora el
   Lobo leyó a fondo la fuente que ya sostenía esa distinción, no solo el resumen de una línea.
 
+### 19. La advertencia sobre el propio sesgo de un hallazgo a veces ya está en el paper original — pero vive en el análisis de sensibilidad, no en el titular
+Lectura profunda de F-16 (Mertens et al. 2022, PNAS — el meta-análisis fundacional pro-nudge que
+tesis 6 ya cuestiona, pero solo vía las cinco fuentes que lo rebaten, F-17 a F-21; el propio F-16
+nunca se había leído a fondo): confirma el tamaño exacto (447 tamaños de efecto, 212 estudios,
+N=2,148,439, d=0.43 agregado) y agrega dos datos que el resumen de una línea no traía. Primero, el
+rango de d individuales va de -0.69 a 3.08 — una dispersión tan amplia que citar "el efecto del
+nudge es d=0.43" ya era estadísticamente indefendible como cifra única incluso antes de que llegara
+la crítica de Maier (F-17): la heterogeneidad por técnica y dominio no es un matiz posterior, está
+en el propio dataset original. Segundo, y más importante: los propios autores corrieron un análisis
+de sensibilidad para sesgo de publicación severo y encontraron que el efecto colapsaba a un tamaño
+mínimo bajo ese escenario — el mismo resultado que después popularizó la corrección de
+Maier/Data Colada como la refutación definitiva ya estaba, en germen, en el propio paper de 2022,
+pero enterrado en un análisis secundario, no en el abstract ni en el titular que circuló.
+**Heurística de decisión:** antes de citar el hallazgo central de un paper por su cifra de abstract,
+vale la pena revisar si el propio estudio ya corrió —y reportó, sin destacar— un análisis de
+sensibilidad o robustez que apunta en la dirección contraria; encontrarlo ahí, no en una réplica
+posterior, es la señal más barata de que una cifra headline no va a sobrevivir escrutinio.
+- **Fuente:** F-16 (🟢A, Mertens et al. 2022, PNAS — ya citada indirectamente en tesis 6 vía F-17-21)
+- **Leído a fondo:** 2026-08-13 (pnas.org bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que confirma N=2,148,439, rango de d -0.69 a 3.08, y el análisis de sensibilidad
+  de publication bias de los propios autores)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 6 (sigue Alta) — profundiza el
+  propio F-16, que hasta hoy solo se conocía por lo que decían las fuentes que lo refutan, nunca
+  leído directamente.
+
+### 20. Medir la fidelidad de una IA con otra IA (RAGAS/LLM-as-judge) no es una vara neutral — correlaciona modestamente con el juicio humano y hereda sesgos sistemáticos que promediar más jueces no cancela
+Lectura profunda de F-151 (Es et al. 2024, RAGAS — ya citada en el riesgo vigente "medir el agente
+conversacional de IA con la métrica equivocada" solo como "el estándar de la industria"): confirma
+el mecanismo técnico (faithfulness: un LLM extrae las afirmaciones discretas de la respuesta y
+verifica cada una contra el contexto recuperado; answer relevancy: cosine similarity entre preguntas
+sintéticas generadas a partir de la respuesta y la pregunta original) pero añade el límite que el
+resumen de una línea no capturaba: la validación empírica de qué tan bien estas métricas
+automatizadas correlacionan con el juicio humano real da una media armónica de apenas ~0.55 — lejos
+de lo que se necesitaría para tratarlas como vara de verdad. La razón de fondo es estructural, no un
+defecto de implementación de RAGAS específicamente: usar un LLM para juzgar la fidelidad de otro LLM
+(o de sí mismo) hereda los sesgos sistemáticos documentados del "LLM-as-judge" —sesgo de posición,
+de verbosidad, de auto-favorecimiento— y ese sesgo no se cancela promediando más jueces del mismo
+tipo, porque el sesgo es compartido entre modelos de la misma generación/familia, no aleatorio.
+**Heurística de decisión:** si Rimac adopta RAGAS (u otro framework LLM-as-judge) para medir si su
+agente conversacional alucina coberturas, el número que arroje debe tratarse como una señal de
+monitoreo continuo y barata, nunca como el veredicto final de si el agente es seguro — necesita
+triangularse con una muestra de revisión humana real, no reemplazarla, exactamente el mismo
+principio que ya advierte el riesgo vigente sobre medir el agente con la métrica equivocada, ahora
+aplicado a la métrica que el propio ledger ya proponía como solución.
+- **Fuente:** F-151 (🟢A, Es, S. et al. 2024, EACL — ya citada en el riesgo del agente conversacional,
+  ahora leída a fondo)
+- **Leído a fondo:** 2026-08-13 (aclanthology.org bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que confirma el mecanismo de extracción/verificación de claims y la correlación
+  de ~0.55 con juicio humano reportada en literatura posterior de evaluación LLM-as-judge)
+- **Conexión razonada, no forzada:** no cambia la confianza de ningún riesgo/tesis vigente — matiza
+  directamente el riesgo ya anotado "medir el agente conversacional de IA con la métrica equivocada":
+  la solución que el propio ledger cita (RAGAS) tiene su propio techo de confiabilidad, no es una
+  vara neutral.
+
+### 21. La interfaz "correcta" no es una apuesta global de plataforma — el mismo estudio puede dar veredictos opuestos por escenario dentro de la misma tarea
+Lectura profunda de F-250 (Flohr, Kalinke, Krüger & Wallach 2021, MobileHCI — ya citada en tesis
+24/generative UI solo como "contraevidencia a que el chatbot es intrínsecamente mejor"): confirma que
+la GUI clásica superó al chatbot en atractivo y satisfacción en el estudio de simulador (n=34, más
+dos estudios de expertos previos), pero el resumen de una línea no capturaba el detalle condicional:
+la ventaja se invierte específicamente en el escenario de **cambio de plan/interrupción** (el viaje
+no sale como estaba previsto) — ahí la intención de uso favorece al chatbot sobre la GUI, con datos
+de curva emocional y entrevista respaldando el efecto. En el escenario de "camino feliz" (todo sale
+como se planeó) gana la GUI con claridad. **Heurística de decisión:** la pregunta correcta al evaluar
+un canal conversacional vs. uno estructurado (para Rimac: el agente conversacional vs. un
+flujo/formulario clásico de cotización o reclamo) no es "¿cuál gana en promedio?" — es "¿en qué tipo
+específico de momento de la interacción gana cada uno?". La evidencia de este estudio sugiere un
+patrón transferible y plausible para seguros: la interfaz estructurada gana en el flujo estándar
+(cotizar, contratar, consultar cobertura), pero el canal conversacional puede tener ventaja real
+específicamente en el momento de excepción/desvío (algo salió mal, el cliente necesita reencauzar) —
+el mismo tipo de momento que ya señala el riesgo vigente sobre reclamos digitales fallidos (tesis 16)
+como el punto de mayor fricción. Instinto razonado, no medido en seguros: el estudio es de movilidad
+autónoma, no de seguros, pero el mecanismo (chatbot gana en desvío, pierde en rutina) es coherente
+con lo ya documentado sobre dónde falla lo 100%-digital.
+- **Fuente:** F-250 (🟢A, Flohr et al. 2021, MobileHCI — ya citada en tesis 24)
+- **Leído a fondo:** 2026-08-13 (dl.acm.org y el preprint de la Universidad de Saarland bloqueados por
+  el proxy del entorno; reconstruido vía búsqueda dirigida que confirma el diseño n=34 + 2 estudios de
+  expertos, la ventaja de la GUI en atractivo/satisfacción, y la inversión del efecto específicamente
+  en el escenario de cambio de plan)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 24 — agrega un matiz
+  condicional-por-escenario que tesis 24 no tenía explícito, y conecta con tesis 16 (el reclamo, no
+  la venta, es el punto de falla de lo 100%-digital) desde un ángulo de diseño de interfaz nuevo.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2222,3 +2304,35 @@ explicabilidad).
   el ángulo de esta corrida (resultados cuantitativos de Cully 2017, alcance del caso de Kwong,
   controversia Kotz-vs-Mdege) es nuevo en ambos casos. Actualicé
   `research/fuentes/revision_profunda.md` con las 5 fuentes de este ciclo.
+- **2026-08-13** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  d739018→a3f9789, que trajo consigo el commit de la revisión profunda del 2026-08-12) y leí
+  `codice.md` completo: verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (141 fuentes 🟢A
+  confirmadas) — sigue tope exacto en F-468, idéntico al que ya procesó la corrida del 2026-08-12 —
+  **sin cambios sustanciales** en evidencia, cero fuentes nuevas registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces. Repasé las 25 tesis contra
+  ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé ninguna conexión de
+  tesis nueva solo por completar el paso. La última revisión profunda (rutina de `cronista`, cada ~3
+  días, última el 2026-08-12) no vence hoy. Sí corrió la rutina diaria de intuición (octava corrida
+  desde que se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 18 ya tenían lectura profunda
+  del Lobo — seleccioné al azar 3 de las 123 restantes: F-16 (Mertens et al. 2022, PNAS, el
+  meta-análisis fundacional de nudging que sostiene tesis 6 solo indirectamente vía las fuentes que
+  lo rebaten, nunca leído directo hasta hoy), F-151 (Es et al. 2024, RAGAS — el framework que el
+  ledger ya cita como estándar para detectar alucinación del agente conversacional) y F-250 (Flohr et
+  al. 2021, MobileHCI, chatbot vs. GUI clásica — ya citada en tesis 24 como contraevidencia a
+  generative UI). Sumé las entradas 19, 20 y 21 de Intuición acumulada: (19) el propio F-16 ya
+  corrió y reportó, sin destacarlo, un análisis de sensibilidad a sesgo de publicación que anticipaba
+  el colapso del efecto que después popularizó la crítica de Maier (F-17) — la advertencia sobre el
+  sesgo de un hallazgo a veces ya vive en el paper original, enterrada en un análisis secundario, no
+  en el titular; (20) RAGAS (y cualquier framework LLM-as-judge) correlaciona apenas ~0.55 con juicio
+  humano y hereda sesgos sistemáticos que promediar más jueces del mismo tipo no cancela — matiza
+  directamente el riesgo vigente sobre medir mal al agente conversacional de Rimac: la métrica que el
+  propio ledger propone como solución no es una vara neutral, necesita triangularse con revisión
+  humana real; (21) el mismo estudio puede dar veredictos opuestos por escenario dentro de la misma
+  tarea — GUI gana en el "camino feliz", chatbot gana específicamente en el momento de
+  interrupción/cambio de plan — la pregunta correcta para un canal conversacional no es "¿cuál gana
+  en promedio?" sino "¿en qué momento específico gana cada uno?", con paralelo directo al punto de
+  falla de reclamos 100%-digitales ya documentado en tesis 16. Ninguna tesis de negocio cambió de
+  confianza por esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia
+  sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 25 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días
+  — sin podar todavía.

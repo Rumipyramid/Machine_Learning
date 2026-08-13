@@ -35,3 +35,6 @@
 | F-91 | 🟢 A | 2026-08-12 | Intuición 16 — dar "elección" entre planes con el mismo subsidio puede detonar una espiral de selección adversa que colapsa el plan generoso en pocos años |
 | F-111 | 🟢 A | 2026-08-12 | Intuición 17 — auditar qué variable de necesidad real queda AFUERA de una fórmula de asignación/precio, no solo si las que entran son plausibles |
 | F-243 | 🟢 A | 2026-08-12 | Intuición 18 — antes de invertir en explicar una decisión de IA, preguntar si la tarea es verificable; si no lo es, la explicación no mejora el desempeño complementario |
+| F-16 | 🟢 A | 2026-08-13 | Intuición 19 — la advertencia sobre el propio sesgo de un hallazgo a veces ya está en el paper original, en el análisis de sensibilidad, no en el titular |
+| F-151 | 🟢 A | 2026-08-13 | Intuición 20 — medir la fidelidad de una IA con otra IA (RAGAS/LLM-as-judge) correlaciona modestamente con el juicio humano y hereda sesgos que promediar jueces no cancela |
+| F-250 | 🟢 A | 2026-08-13 | Intuición 21 — la interfaz "correcta" no es una apuesta global de plataforma; el mismo estudio da veredictos opuestos por escenario |
