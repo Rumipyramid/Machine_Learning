@@ -4,14 +4,37 @@
 > 📌 *Este node se llamaba `tendencias-diseno.md` hasta el 2026-08-02, cuando el alcance se amplió
 > de **diseño** a **diseño e innovación** (ver §0). Las iteraciones 1 a 3 (§1 a §11) cubren solo la
 > mitad de diseño; la mitad de innovación arranca en §12.*
-> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-08-02 · Versión: **v4.0 (iteración 4)**
+> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-08-14 · Versión: **v4.1 (iteración 5)**
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
 > demostrado y cuáles son propuestas todavía sin respaldo?**
 > Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iter. 2: F-380 a F-398 ·
-> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468).
+> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · ⏰ iter. 5: F-469 a F-480).
 >
-> **Lo último (iteración 4, 2026-08-02) — el alcance se amplió a 💡 innovación y la tesis pasó la
+> **Lo último (iteración 5, 2026-08-14) — venció el plazo: el node acertó su predicción con fecha y
+> falló su explicación.** ⬆️ **H13 `respaldada`**, la única hipótesis del tablero con vencimiento:
+> Figma creció **+48%** (pedía ≥40%), subió guidance y reportó NDR de 136%, y la acción quedó **~30%
+> por debajo de su IPO de US$33** (F-469, F-470). ⚠️ **Pero el mecanismo enunciado es el equivocado**:
+> el mercado **aceptó la ejecución y castigó el costo de defenderla** — el opex GAAP casi se duplicó
+> y US$2,1M de utilidad operativa se volvieron **−US$117,3M**. El descuento por IA es real y viaja
+> por el **canal de costo, no por el de ingreso** (**H32**). ⬇️ Y **H16 pierde su caso de prueba
+> designado**: bajo máxima presión de IA, Figma **aumentó** su divulgación en vez de recortarla.
+> ⭐ **Las dos joyas de la iteración 4 se corrigieron en la misma corrida.** (1) La **auditoría hacia
+> adentro** (C20) del RCT de UBI: **resiste la procedencia** —peer-reviewed en *Accident Analysis &
+> Prevention*, 14 autores de UPenn, y **el financiador no es una aseguradora**— y **falla el
+> alcance**: es un UBI **simulado** con pago de investigación, sin ningún brazo que separe la
+> retroalimentación del dinero (F-475, F-476) → **C23**. (2) El contraste **Root vs. Lemonade** que
+> fundó H29 **no era *like-for-like*** (un *combined ratio* de filing contra un número de agregador);
+> con dato del emisor, el loss ratio de Lemonade es **60%** y lo que lo penaliza es el gasto de
+> crecimiento, no la siniestralidad (F-474) → **C24**. ⭐ Lo que queda en su lugar es **mejor y es lo
+> más accionable que el node ha producido para Rimac**: **ningún insurtech cotizado ha demostrado
+> crecer y suscribir con rentabilidad a la vez**, y el mercado castigó a los dos en el mismo trimestre
+> — Root −21% por no crecer, Lemonade −24% por no ganar (**H33**). ⬆️ **H24 `parcial`**: 2 de 2
+> hallazgos estrella corregidos, pero **el error no estuvo donde el node lo buscaba**. ⏰ **H14 hereda
+> el reloj** (Lovable cerró a US$13,3B el 12-ago; se resuelve en ago-2027). Ver §13.
+>
+> *Iteración 4 (apertura del dominio de innovación):*
+> **Lo anterior (iteración 4, 2026-08-02) — el alcance se amplió a 💡 innovación y la tesis pasó la
 > prueba.** La pregunta de esta corrida era la más peligrosa que el node podía hacerse: *lo que
 > descubrí sobre el diseño, ¿es sobre el diseño o sobre cómo las disciplinas que se venden como
 > motores de valor fabrican su evidencia?* **Es lo segundo.** El vínculo I+D→desempeño es real,
@@ -629,10 +652,10 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 | **H10** | La ansiedad gremial es un fenómeno de **seniority**, no de gremio: el daño está concentrado en juniors pero se enuncia en nombre de "los diseñadores" | ⬆️ **`parcial`** *(iter. 3)* — **primera evidencia segmentada en tres iteraciones**, cualitativa pero en plataforma con identidad corporativa verificada (Blind, F-414): seniors describen el mercado como *"pésimo si eres junior o recién graduado; si eres senior o superior, no es ideal pero está cerca de lo normal"*. Consistente con F-280/F-301, ahora con testimonio por nivel en vez de encuesta agregada | Encuesta segmentada por años de experiencia **con N reportado** — sigue sin existir |
 | **H11** | **El doom tiene modelo de negocio**: la proporción de amplificadores del discurso "la IA mata al diseño" con incentivo comercial directo (cursos, bootcamps, portafolios) es alta; si lo es, el volumen social debe descontarse fuertemente | ⬆️ **`parcial`** *(iter. 3)* — auditoría de n≈8 piezas: **~60-70% tiene incentivo comercial identificable** en el formato o el publisher (bootcamp, Substack de pago, YouTube monetizado, agencia de contenido) — proporción aproximada, muestra de conveniencia, declarada como tal. ⭐ **Ampliación que no estaba en la hipótesis: el discurso que *corrige* el pánico también tiene modelo de negocio.** Varias piezas que dicen "dejen de decir que el diseño murió" son newsletters o bootcamps que necesitan tráfico (F-415). **El descuento por incentivo aplica a los dos bandos, no solo al alarmista** | Censo (no muestra) de los principales amplificadores con clasificación de su modelo de ingresos |
 | **H12** | El backlash estético es **señalización de estatus profesional**, no preferencia de usuario | `parcial` — respaldada por F-284 (gatekeeping) y F-297 (usabilidad) | Testear si la "autenticidad imperfecta" mejora alguna métrica de usuario |
-| **H13** | **Desacople valuación/desempeño**: si Figma reporta ≥40% de crecimiento en Q2 2026 y la acción **no** recupera sobre $33, el mercado descuenta disrupción por IA, no ejecución | `abierta` — **se resuelve el 5-ago-2026, tres días después de esta corrida.** Estado al corte: FIG cerró en **US$24,30 el 31-jul**, precio objetivo promedio **cayó de ~$40 (mar) a $31-33 (fin de jul)** ⚠️ con dispersión real entre compiladores, y **apareció la primera recomendación de venta** entre 16 casas (antes 0) — F-421. **Guidance oficial de Q2: $348-350M, ~40% YoY** (F-420), lo que deja la condición de falsación perfectamente limpia | Reporte Q2 2026 de Figma (5-ago) + evolución del precio a 90 días. **Es la única hipótesis del tablero con fecha de vencimiento** |
-| **H14** | **El ARR de vibe coding no retiene**: si Lovable cierra a $12-13,2B, su ARR a 12 meses crecerá <50% (vs. 150%+ histórico), revelando la cohorte de churn | `abierta` — **la ronda sigue sin cerrar** al 2-ago-2026 (F-426). ARR autorreportado ~$400M (feb) → ~$500M (jun) con 146 empleados. ⭐ **Lo más informativo es una conducta, no una cifra: preguntada de forma directa, Lovable se negó a compartir su churn y su split mensual/anual** (F-427). Barclays estima tráfico **−40% desde el pico** y valuación implícita de **$1,8B** — 3x a 7x por debajo de la narrativa de ronda | Comparar ARR jul-2026 vs. jul-2027; se resuelve de inmediato si publican NRR con desglose de cohortes |
+| **H13** | **Desacople valuación/desempeño**: si Figma reporta ≥40% de crecimiento en Q2 2026 y la acción **no** recupera sobre $33, el mercado descuenta disrupción por IA, no ejecución | ⬆️ **`respaldada`** *(iter. 5)* — **la hipótesis venció y acertó por los dos lados.** Crecimiento **+48%** (US$370,1M, tercer trimestre consecutivo de aceleración, sobre guidance y consenso), NDR 136%, clientes >US$100K **+46%**, guidance FY **elevado** a +39%; y la acción a **US$23,29** (7-ago), ~30% bajo el IPO de US$33, con mínimo histórico de US$16,80 (F-469, F-470). ⚠️ **Pero el mecanismo enunciado es el equivocado**: el mercado **aceptó la ejecución** y castigó **el costo de defenderla** — opex GAAP de US$219,7M a US$426,9M, de +US$2,1M de utilidad operativa a **−US$117,3M de pérdida**. El descuento por IA es real y viaja por el **canal de costo, no por el de ingreso** → ver **H32**. ⭐ Y la dispersión no se cerró con el dato: **Citi US$37 vs. RBC US$28** sobre el mismo trimestre (F-471) | Resuelta. **El reloj del tablero pasa a H14** |
+| **H14** | **El ARR de vibe coding no retiene**: si Lovable cierra a $12-13,2B, su ARR a 12 meses crecerá <50% (vs. 150%+ histórico), revelando la cohorte de churn | ⏰ **`abierta` — condición de disparo CUMPLIDA, el reloj arrancó** *(iter. 5)*. La ronda cerró el **12-ago-2026: US$400M a US$13,3B** post-money (Menlo Ventures + Scaleup Europe Fund de la UE, con Tencent), apenas sobre la banda predicha; la valuación **se duplicó en 8 meses** desde US$6,6B (F-477). ⚠️ **La ronda no resolvió la divergencia: eligió un lado** — Barclays implicaba US$1,8B (F-426), el mercado privado pagó **7x** eso. El churn y el split mensual/anual que Lovable se negó a compartir (F-427) **siguen sin publicarse**, y el ARR de US$600M que circula es **proyección interna autorreportada** (C11) | Comparar ARR ago-2026 (~US$500-600M) vs. ago-2027. ⏰ **Hereda de H13 el rol de única hipótesis del tablero con fecha de vencimiento: se resuelve en agosto de 2027** |
 | **H15** | **La consultora de diseño pura no vuelve**: ninguna de las cuatro publicará crecimiento de dos dígitos en 2026-2027; la recuperación, si ocurre, será como implementadoras de IA | ⬆️ **`parcial`** *(iter. 3)* — **primer contraejemplo en tres iteraciones: R/GA reporta +30% H2'25 vs. H1'25 y +25% YoY en Q1 2026** (F-422). ⚠️ Tres descuentos: es **autorreportado** (privada, sin filing), R/GA **nunca fue consultora de diseño puro** (es agencia digital/publicitaria), y la propia nota enmarca el giro como **pivote a IA y consolidación** — es decir, **cae dentro de la cláusula de escape que la hipótesis ya preveía**. La predicción central sigue sin refutarse: IDEO sin cifra auditada, Veryday cerrada, y **Accenture no reporta Song como segmento** (F-428), lo que vuelve la pregunta estructuralmente no respondible | Reporte de revenue **auditado** de una consultora de diseño pura, o adquisición a múltiplo alto |
-| **H16** | **El estándar de reporting se degrada donde hay presión de IA**: si Figma deja de reportar NDR o paid customers en algún trimestre 2026-2027, se refuerza | `parcial` — ya ocurrió con Adobe (fusión de segmentos), Webflow (dejó de publicar ARR, y suma **un segundo layoff del ~20% en may-2026**) y ahora **Accenture, que no reporta Song como segmento SEC** (F-428). ⚠️ **En Figma todavía no**: el Q1'26 reportó NDR (139%) y todos los tramos de paid customers. El reporte del 5-ago es la próxima prueba | Trimestre a trimestre |
+| **H16** | **El estándar de reporting se degrada donde hay presión de IA**: si Figma deja de reportar NDR o paid customers en algún trimestre 2026-2027, se refuerza | ⬇️ **`parcial` — su caso de prueba designado salió negativo** *(iter. 5)*. En el trimestre con la peor óptica GAAP de su historia como cotizada, Figma **aumentó** su divulgación: NDR (136%), **ambos** tramos de paid customers con crecimiento YoY (15.964 >US$10K, +34%; 1.635 >US$100K, +46%) y una métrica nueva de adopción de IA (F-469). La hipótesis sobrevive solo por Adobe, Webflow y Accenture (F-428). ⭐ **Lo que sugiere el fallo**: la degradación no la causa la presión competitiva sino la **fusión de segmentos tras adquisición o reorganización** — el mecanismo común a los tres casos que sí la mostraron | Trimestre a trimestre. **Reformular hacia el mecanismo de fusión de segmentos** en vez de "presión de IA" |
 | **H17** | **Desfase geográfico**: el ciclo identitario del gremio llega a Perú/LatAm desfasado, atenuado, o el mercado local ni siquiera participa de esa conversación | ⬇️ **`refutada`** *(iter. 2)* — **no hay desfase.** Brasil adopta IA **por encima** del mundo anglosajón (94% vs. 89%, N=823 — F-389); MercadoLibre ejecutó la compresión del rol en LatAm con **119 desvinculaciones de UX** integrando diseño y contenido (F-391); el vocabulario anti-slop circula en español en medios masivos (F-390). El ciclo es **simultáneo**, no diferido | Refutada. Ver H20, que es lo que quedó vivo del barrido |
 | **H18** | **El silencio del service design** es señal de madurez (absorbido en operaciones), no de irrelevancia | ⬆️ **`parcial`** *(iter. 2)* — **la mitad favorable**: existe base de evidencia institucional (revisión oficial del gobierno británico, F-387), infraestructura viva (SDN, conferencia global, Touchpoint — F-395) y **comunidad activa en Perú desde 2017** (F-394). **La mitad adversa**: una figura interna de la disciplina describe una "**crisis de la práctica**" por no haber sabido demostrar valor (F-393), y **no hay métricas públicas de membresía** para medirlo. *Silencio social ≠ irrelevancia — pero tampoco es prueba de madurez* | Métricas de membresía SDN, o presupuesto/plantilla de service design en organizaciones grandes |
 
@@ -650,7 +673,7 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 | # | Hipótesis | Estado | Cómo se falsa |
 |---|---|---|---|
 | **H23** | **Autoridad prestada**: en el contenido de tendencias de diseño, una fracción no trivial de las cifras atribuidas a una autoridad nombrada (Gartner, Forrester, NN/g) **no existe en ningún reporte rastreable de ese emisor**. No es sesgo del emisor: es atribución fabricada o mal transcrita | `abierta` — caso testigo fuerte: tres cifras ("60% de tareas de diseño con IA", "80%", "68%") atribuidas a Gartner en una misma pieza (F-408); la búsqueda del reporte primario **no encontró ninguno** (F-418). Sí existen predicciones reales de Gartner con "60%", pero sobre temas distintos. ⭐ **Es un fallo de un orden peor que C4**: contra el emisor interesado sirve descontar; contra el emisor que nunca lo dijo, descontar no alcanza — hay que verificar que la afirmación exista | Tomar N cifras atribuidas a autoridades nombradas e intentar rastrear cada una hasta el reporte primario. Se refuta si la tasa de no-rastreables es marginal |
-| **H24** | **El hallazgo satisfactorio no se audita**: los errores de este node se concentrarán en los hallazgos que **resuelven** una tensión que el node ya arrastraba, no en los que la contradicen. Un mecanismo que reconcilia una divergencia entra con menos escrutinio que una cifra que la agrava | `abierta` — **fundada en el propio error de la iteración 2**: el impuesto de verificación se adoptó sin rastrear su fuente primaria precisamente porque *cerraba* la divergencia ⚔️ abierta desde la iteración 1. Ninguna de las cifras que el node desmontó de otros (671%, 135%, McKinsey) tuvo ese trato. Predicción para la iter. 4: **si algo se cae, será otro hallazgo reconciliador, no una refutación** | Revisar, en cada iteración, si los hallazgos que se cayeron eran mayoritariamente reconciliadores. Se refuta si los errores se distribuyen por igual entre hallazgos que confirman y que contradicen |
+| **H24** | **El hallazgo satisfactorio no se audita**: los errores de este node se concentrarán en los hallazgos que **resuelven** una tensión que el node ya arrastraba, no en los que la contradicen. Un mecanismo que reconcilia una divergencia entra con menos escrutinio que una cifra que la agrava | ⬆️ **`parcial`** *(iter. 5)* — **se cumplió dos de dos, y con un matiz que la mejora.** Los **dos** hallazgos estrella de la iteración 4 se corrigieron en esta corrida: el RCT de UBI (F-442 → F-475/F-476) y el contraste Root/Lemonade que fundó H29 (F-450 → F-474). Ningún hallazgo *incómodo* de la iteración 4 se cayó. ⭐ **El matiz**: el error **no estuvo donde el node lo buscaba.** Se auditó la *procedencia* del RCT (financiador, autoría) y salió **limpia**; el defecto estaba en **qué se administró** — un UBI *simulado* con pago de investigación, sin brazo que separe retroalimentación de dinero. Auditar la fuente no es auditar el constructo → **C23** | Revisar en cada iteración si lo que se cayó fue reconciliador. Se refuta si los errores se distribuyen por igual entre hallazgos que confirman y que contradicen |
 | **H25** | **El corpus hispanohablante de tendencias no cita nada**: más del 70% de las piezas en español/portugués sobre tendencias de diseño **no cita ninguna fuente verificable** — ni local ni anglosajona. El problema no es solo importar el marco: es la ausencia total de aparato de evidencia | `abierta` — observado **15/20 (75%)** en la auditoría de la iter. 3: la mayoría afirma tendencias ("el minimalismo sigue ganando fuerza", "la tipografía audaz rompe normas") **sin ninguna cita**. Es distinto en naturaleza de H20 (que describe *qué* se cita cuando se cita) y probablemente más determinante del nivel de la conversación regional | Muestreo sistemático con N mayor. Se refuta si una réplica encuentra que la mayoría de las piezas sí ancla sus afirmaciones |
 | **H26** | **El escrutinio decae con la exposición, no crece con la seniority**: frente a salidas de IA, lo que predice el nivel de verificación no es la antigüedad del profesional sino **cuántas salidas de IA ya revisó** — y la relación es negativa (habituación), no positiva | `abierta` — respaldo inicial en F-407 (400 revisores, 11.429 revisiones: aprobación **+14,5 pp** a través de deciles de exposición). Está en tensión con la narrativa lineal "los seniors verifican más" que sostenía H19. ⭐ **Si se sostiene, invierte el diseño de cualquier control de calidad sobre trabajo asistido por IA**: el riesgo no está en el novato que no sabe revisar, sino en el veterano que ya se acostumbró | Medir tasa de detección de error contra exposición acumulada, controlando por seniority. Se refuta si la seniority predice mejor que la exposición |
 
@@ -660,9 +683,17 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 |---|---|---|---|
 | **H27** | **El huérfano de cita es el modo dominante de las cifras de *fracaso***, así como el eco de cita lo es de las cifras de *éxito*. Predicción: las cifras que justifican **invertir** en una disciplina colapsan en una fuente única mala pero rastreable; las que justifican **desconfiar** de ella no colapsan en ninguna | `abierta` — fundada en F-444: "90% de los labs fracasa", "70-90% del intraemprendimiento fracasa (Harvard)" y "80-95% de los productos fracasa" **no tienen fuente primaria localizable**, mientras las cifras de éxito del mismo dominio (F-438, F-439, F-440, F-445, F-453) **sí** llegan a un documento identificable. ⭐ Si se sostiene, explica por qué el escepticismo sobre una disciplina es tan difícil de auditar como su promoción | Tomar N cifras de fracaso y N de éxito del mismo dominio e intentar rastrear cada una. Se refuta si ambas familias tienen la misma tasa de trazabilidad |
 | **H28** | **La crisis le ocurre al eslabón que no puede fusionarse.** En diseño colapsó el proveedor externo (consultoras) y sobrevivió la función interna; en innovación colapsa la función interna (labs, CVC) y sobrevive el proveedor externo **fusionándose** dentro de una matriz mayor. Predicción: lo que determina la supervivencia no es el valor entregado sino la **capacidad de absorción en una oferta más grande** | `abierta` — respaldo inicial: BCG X, McKinsey Business Building y Doblin by Deloitte siguen operando **fusionadas** (F-456) mientras Walmart, IKEA, General Mills, Munich Re y PayPal cierran función interna (F-447, F-448, F-457). ⚠️ Con dos descuentos: la conducta es mayoritariamente 2023-2025 (C5) y las causas están en disputa (C21) | Buscar un caso de función interna que sobreviva fusionándose, o de proveedor externo puro que crezca sin fusionarse. Se refuta si la supervivencia se explica mejor por desempeño que por absorbibilidad |
-| **H29** | **En insurtech el signo no es la pregunta: la condición lo es.** Con la misma clase de evidencia auditada y el mismo modelo declarado, Root es rentable en suscripción (combined ratio 91,4%) y Lemonade no (~139%). Predicción: la variable que los separa **no es la tecnología ni la IA**, sino la disciplina de suscripción y la selección de riesgo | `abierta` — **la hipótesis más accionable para el contexto Rimac**. F-449 vs. F-450, ambas con dato de filing. ⭐ Es el mismo movimiento intelectual que C16 hizo con la IA: dejar de preguntar *¿funciona?* y empezar a preguntar *¿bajo qué condiciones?* | Comparar la evolución de loss ratio de ambas controlando por mix de producto y antigüedad de cohorte. Se refuta si la diferencia se explica por la capa tecnológica |
+| **H29** | **En insurtech el signo no es la pregunta: la condición lo es.** Con la misma clase de evidencia auditada y el mismo modelo declarado, Root es rentable en suscripción (combined ratio 91,4%) y Lemonade no (~139%). Predicción: la variable que los separa **no es la tecnología ni la IA**, sino la disciplina de suscripción y la selección de riesgo | 🔄 **Reformulada** *(iter. 5)* — **la pregunta sobrevive, su evidencia base no.** ⚠️ El contraste 91,4% vs. ~139% **no era *like-for-like***: el primero es un *combined ratio* de filing, el segundo un número de agregador con definición distinta (F-450 estaba calificada 🟡 C por eso). Con dato del emisor en Q2 2026: el **loss ratio bruto de Lemonade es 60%** (desde 67%) y su LAE (5%) es **la mitad** del promedio de industria (F-474). Lo que mantiene alto su combined **no es la siniestralidad: es el gasto de crecimiento** → **C24**. ⭐ Y la respuesta real no es una variable que *separa* sino un **trade-off**: Root suscribe rentable **y su prima se contrae −2%**; Lemonade crece 32% **y no gana dinero**. Ninguno tiene las dos → **H33** | Reformulada. La versión falsable ahora es **H33** |
 | **H30** | **Las metas de innovación se anuncian y no se reportan.** Predicción: la mayoría de las metas públicas de innovación (tipo "X% de ingresos de productos nuevos hacia el año N") **no tiene reporte público de cumplimiento**, y cuando lo tiene, no se cumplió | `abierta` — dos casos testigo fuertes: **3M inventó el índice de vitalidad con meta de 30% y hoy está en 10-11%** (F-454), y **BCP declaró en 2022 una meta de 10% de nuevos ingresos por innovación disruptiva hacia 2025 sin verificación pública de cumplimiento** (F-460). ⭐ Conecta con H16: es degradación de reporting, pero **auto-infligida y anticipada** | Tomar N metas públicas de innovación con fecha ya vencida y buscar su reporte de cumplimiento. Se refuta si la mayoría reporta |
 | **H31** | **En innovación lo importado es el marco, no la cifra.** A diferencia del corpus hispanohablante de diseño (H20: 100% de cifras de emisores anglosajones interesados), en innovación el vocabulario crítico se naturalizó en español hace **seis años** (desde dic-2020) — lo que cambia la pregunta de *"¿citan sin descuento?"* a *"¿generaron estudio propio o solo adoptaron el término?"* | `abierta` — **no auditada por bloqueo**, no por hallazgo: los cuatro intentos de lectura completa en español devolvieron 403 (F-464). ⚠️ **No debe leerse como confirmación ni refutación de H20 en el dominio de innovación** | Auditar N piezas hispanohablantes sobre innovación corporativa y clasificar si citan evidencia con muestra propia local o solo reproducen el marco |
+
+### Hipótesis abiertas en la iteración 5
+
+| # | Hipótesis | Estado | Cómo se falsa |
+|---|---|---|---|
+| **H32** | **El descuento por IA viaja por el canal de costo, no por el de ingreso.** El mercado dejó de castigar a las empresas de software de diseño por *creer que la IA les quitará clientes* y pasó a castigarlas por *lo que gastan defendiéndose*. Predicción: en las notas de analista de 2026-2027 sobre herramientas de diseño, la razón dominante del descuento será **margen/opex**, no desplazamiento competitivo | `abierta` — caso testigo fuerte y limpio: Figma acelera a +48%, sube guidance, NDR 136%, y la acción cae 16,5% con opex GAAP casi duplicado y pérdida operativa de US$117,3M (F-469, F-470). ⭐ **Tiene consecuencia práctica**: un descuento por ingreso se revierte demostrando retención; uno por costo se revierte demostrando que el gasto tiene fondo — **son dos argumentos con dos calendarios distintos** | Clasificar N notas de analista por razón declarada del descuento. Se refuta si la mayoría sigue citando desplazamiento competitivo. **Contraevidencia ya presente**: la dispersión Citi $37 / RBC $28 (F-471) sugiere que las dos tesis conviven |
+| **H33** | **La frontera del insurtech: nadie crece y suscribe rentable a la vez.** Ningún insurtech cotizado ha demostrado simultáneamente crecimiento de primas de dos dígitos altos y combined ratio bajo 100%. Predicción: la disciplina de suscripción y el crecimiento son un **trade-off estructural**, no una escalera de madurez — y el mercado castiga la esquina que falte, cualquiera que sea | `abierta` — ⭐ **la versión falsable de H29 y lo más accionable que el node ha producido para Rimac.** Q2 2026, mismo trimestre: Root con combined 92,1% y **prima bruta −2%**, castigada −21% en 30 días (F-472, F-473); Lemonade con IFP **+32,4%** y EBITDA aj. negativo, castigada −24% (F-474). ⚠️ Root y Lemonade son **casos, no el mercado**: el top 10 del insurtech de EE.UU. es ~5% del revenue del sector (F-478) | **Un solo contraejemplo la refuta**: un insurtech cotizado con combined <100% y crecimiento de prima >20% sostenidos dos trimestres. **Fecha natural de prueba: Q4 2026**, cuando Lemonade prometió su primer EBITDA ajustado positivo manteniendo guía de 33% de IFP — si lo cumple, H33 cae |
+| **H34** | **Tribunas separadas**: el gremio del diseño y el mercado que financia sus herramientas **no se leen mutuamente**. Predicción: los eventos financieros de las herramientas de diseño no generan conversación gremial rastreable, y la ansiedad gremial no mueve el precio — aunque ambos discursos hablen de "la IA y el futuro del diseño" | `abierta` — hallazgo negativo de la iter. 5 (§13.6): búsqueda deliberada de reacción comunitaria al desplome de FIG, **cero hilos rastreables**; toda la cobertura es financiera. Es el mismo patrón que el service design de la iter. 2 (F-393): la disciplina y su tribuna institucional ocurren en canales que no se cruzan. ⚠️ **Descuento fuerte**: la indexación de Reddit/HN por buscadores es pobre — es *no encontrado*, no *inexistente* | Buscar en las plataformas directamente (no vía buscador) alrededor de una fecha de reporte. Se refuta si aparece volumen gremial medible ligado a un evento financiero |
 
 ---
 
@@ -815,6 +846,29 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   evidencia** (H27).
   ⚠️ *Provisional: ascendida con una sola iteración de respaldo.*
 
+**Sobre qué autoriza a afirmar un estudio, y cómo se comparan dos cifras** *(ascendidas en la iteración 5)*
+
+- **C23 — Auditar también qué se *administró*, no solo qué se *midió*.** C15 enseñó a preguntar si un
+  dato es de preferencia, desempeño o consecuencia — eso interroga el **outcome**. La auditoría del
+  RCT de UBI mostró el punto ciego: el outcome era impecable (telemetría real de manejo, consecuencia
+  pura) y el defecto estaba en el **tratamiento** — un UBI **simulado**, con un pago de investigación
+  condicionado al desempeño en vez de un descuento de prima, y **sin ningún brazo que separe la
+  retroalimentación del dinero** (F-475, F-476). Regla operativa: antes de trasladar un efecto a una
+  decisión de negocio, escribir **exactamente qué recibió el grupo de tratamiento** y preguntarse si
+  eso es lo que la organización piensa desplegar. **Si no lo es, el efecto medido no es el efecto
+  prometido** — y el error es invisible, porque el estudio puede ser impecable en todo lo demás.
+  ⚠️ *Provisional: ascendida con una sola iteración de respaldo (H24).*
+- **C24 — Antes de comparar dos empresas, verificar que la métrica sea la misma métrica.** La
+  iteración 4 puso "91,4%" al lado de "~139%" y concluyó que uno funcionaba y el otro no; eran un
+  *combined ratio* de filing y un número de agregador con definición distinta, y la conclusión
+  sobrevivió tres meses y fundó una hipótesis (F-450 vs. F-474). Señal de alerta: **cuando dos cifras
+  del mismo sector vienen de fuentes distintas, la probabilidad de que midan lo mismo es baja.** Y el
+  riesgo es peor que el de una cifra mala aislada, porque **una comparación falsa *parece* análisis**
+  — tiene la forma del rigor. Pedir la definición y el emisor de **ambos** lados antes de poner dos
+  números en la misma frase; si uno de los dos no publica la métrica, comparar cada empresa contra su
+  propia trayectoria en vez de forzar un número único.
+  ⚠️ *Provisional: ascendida con una sola iteración de respaldo (H33).*
+
 **Sobre el poder del diseño**
 
 - **C14 — La evidencia causal más fuerte del poder del diseño es sobre su capacidad de daño.** Los
@@ -833,6 +887,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 | 1 | 2026-07-26 | Barrido fundacional de 360°: impacto tangible vs. propuesta innovadora, en producto/UX, IA, design systems, servicio y visual | **Creación del node.** 92 fuentes registradas (F-237 a F-328). Escala de madurez (§5) y 14 reglas de criterio (§7) establecidas. Tablero abierto con 18 hipótesis | (a) **H13 es falsable el 5-ago-2026** — Figma reporta Q2; (b) barrido en **español/portugués** (H17), todo lo hallado es anglosajón; (c) **service design** merece pasada propia (H18); (d) leer los preprints de generative UI de primera mano (el proxy bloqueó arXiv); (e) buscar si apareció **replicación independiente** del efecto design systems (H6) |
 | 2 | 2026-07-29 | **Confrontación**, no novedad: los 5 pendientes heredados (H17 español/portugués · H18 service design · H6 replicación · H3 generative UI · H13 Figma) | **4 hipótesis movidas.** ⬇️ **H17 `refutada`** (no hay desfase geográfico). ⬆️ **H3 `parcial`** (preferencia confirmada; desempeño de soporte y consistencia refutados; longitudinal sigue sin existir). ⬆️ **H18 `parcial`** (base institucional sí, madurez no probada, crisis declarada desde adentro). **H6 sigue abierta** pero suma la **5.ª cadena de eco** (135% modelado, F-397). **Divergencia ⚔️ de productividad reconciliada por mecanismo** (impuesto de verificación, F-388). 19 fuentes nuevas (F-380 a F-398), 4 hipótesis nuevas (H19-H22), 4 reglas nuevas (C15-C18) | (a) **H13 se resuelve el 5-ago-2026** — leer el reporte Q2 de Figma y el precio a 90 días; (b) **H22 se pone a prueba sola**: registrar qué cifra ocupa el lugar del "ROI del diseño" en la iteración 3; (c) **H21 (shadow AI / gobernanza) es la más accionable para Rimac** — no se buscó dato peruano equivalente al brasileño; (d) sigue sin leerse **ningún texto completo** (proxy 403 en arXiv, ACM, MDPI, gov.uk, IBPAD): las 19 fuentes nuevas están soportadas en abstracts y snippets; (e) **H20** (conducta local vs. marco importado) requiere una auditoría sistemática de piezas hispanohablantes |
 | 3 | 2026-08-02 | **Auditoría, incluida la del propio node**: los 5 pendientes heredados (H13 Figma · H22 rotación de la cifra · H21 shadow AI peruano · H20 auditoría hispanohablante · lectura de texto completo) + confrontación de H3, H5, H6, H7 | **6 hipótesis movidas y una autocorrección estructural.** ⬇️ **H19 degradada**: la cifra ancla del *impuesto de verificación* (4,3/1,2 min) **no tiene fuente primaria rastreable** — sexta cadena de eco del node y **la primera propia** (F-404); F-388 resultó síntesis de autor único, no experimento. ⬆️ **H20 `respaldada`** con 13/13 (100%) vs. el >70% predicho. ⬆️ **H5 `parcial`** (F-401, peer-reviewed, N=452: la brecha existe pero es de ~1 pt, no ≥20 pp — la hipótesis acierta el signo y falla la escala). ⬆️ **H10 y H11 `parcial`**. ⬆️ **H15 `parcial`** (R/GA +25% YoY, primer contraejemplo en 3 iteraciones, pero dentro de la cláusula de escape). 🔄 **H22 reformulada**: la industria no rota cifras, **las acumula**. ⚠️ **Desmentido oficial de MercadoLibre** vuelve contestado el caso testigo de la iter. 2. 31 fuentes nuevas (F-399 a F-429), 4 hipótesis nuevas (H23-H26), 3 reglas nuevas (C19-C21) y **2 reglas corregidas** (C16, C17) | (a) **H13 se resuelve el 5-ago-2026**: leer el reporte Q2 de Figma contra el guidance de $348-350M (~40%) y el precio a 90 días — **es la única hipótesis con fecha de vencimiento y ya venció**; (b) **H21: dejar de barrer genéricamente** — tres iteraciones en blanco; requiere fuente primaria (asociación de diseño peruana o encuesta interna de Rimac); (c) **H24 se pone a prueba sola**: registrar si lo que se cae en la iter. 4 es otra vez un hallazgo *reconciliador*; (d) **H7 necesita reformulación** antes de seguir buscando (F-403 muestra fluidez y estética subiendo juntas); (e) el proxy 403 es **estructural, no mala suerte** — tercera iteración sin leer un solo texto completo: **asumirlo en el diseño de la corrida** en vez de declararlo como limitación cada vez |
+| 5 | 2026-08-14 | ⏰ **Venció el plazo**: la corrida se ordenó alrededor de H13 (única hipótesis con fecha, vencida el 5-ago) + los pendientes accionables de la iter. 4: corrida propia de insurtech (*a*), H29 para Rimac (*b*) y la auditoría hacia adentro que exige C20 | **1 hipótesis resuelta, 2 corregidas, 3 nuevas.** ⬆️ **H13 `respaldada`**: Figma creció **+48%** (vs. ≥40% predicho) con guidance al alza y NDR 136%, y la acción quedó ~30% bajo el IPO de US$33 — ⚠️ **pero el mecanismo enunciado es el equivocado**: el mercado aceptó la ejecución y castigó el **costo** (opex GAAP casi duplicado, −US$117,3M operativo) → **H32**. ⬇️ **H16 pierde su caso de prueba designado**: Figma **aumentó** su divulgación bajo máxima presión de IA. 🔄 **H29 reformulada**: el contraste 91,4% vs. ~139% de la iter. 4 **no era like-for-like** (combined ratio vs. número de agregador); con dato del emisor, el loss ratio de Lemonade es 60% y lo que lo penaliza es el gasto de crecimiento, no la siniestralidad → **C24** y **H33** (*nadie crece y suscribe rentable a la vez*; ambos castigados el mismo trimestre). ⭐ **Auditoría C20 sobre F-442**: el RCT existe, es peer-reviewed en *Accident Analysis & Prevention*, 14 autores de UPenn, y **el financiador no es una aseguradora** — resiste la procedencia; **falla el alcance**: es un UBI **simulado** con pago de investigación y ningún brazo aísla feedback de dinero → **C23**. ⬆️ **H24 `parcial`** (2 de 2 hallazgos estrella corregidos, pero el error **no estuvo donde el node lo buscaba**). ⏰ **H14 hereda el reloj**: la ronda de Lovable cerró a **US$13,3B** el 12-ago, se resuelve en ago-2027. 12 fuentes nuevas (F-469 a F-480), 3 hipótesis (H32-H34), 2 reglas (C23, C24) | (a) ⭐ **F-480 es el objetivo prioritario**: el mismo grupo corrió un ensayo pragmático sobre **clientes reales de aseguradoras** — si replica, el UBI pasa de "el mecanismo funciona" a "el producto funciona"; (b) **H33 se prueba en Q4 2026**: Lemonade prometió EBITDA aj. positivo manteniendo 33% de IFP — si lo cumple, H33 cae; (c) **decidir cuáles de las 11 reglas pendientes son realmente transferibles a innovación** y cuáles son propias de diseño, en vez de arrastrarlas (§13.8); (d) **GII 2026 sale el 29-sep**; (e) **la pista social lleva dos iteraciones débil** — H34 requiere buscar en las plataformas directamente, no vía buscador; (f) ⚠️ **el egress está bloqueado por política de red, no es un 403 intermitente**: diseñar la iteración 6 asumiendo que **solo hay buscador**, y revalidar contra documento primario toda cifra antes de cualquier entregable |
 | 4 | 2026-08-02 | 💡 **Apertura del dominio de innovación** (alcance ampliado, §0). Mandato distinto: no confrontar hipótesis existentes sino **probar si la tesis del node —construida entera con evidencia de diseño— se transfiere a un segundo dominio** | **La tesis sobrevive el cambio de dominio.** ✅ Se transfiere: el mecanismo es real, pequeño y mediado (F-430, elasticidad 0,05 — el gemelo exacto de F-238); el constructo estrella opera por vías distintas de las que su nombre sugiere (F-434 ≈ F-239); las cifras estrella colapsan en el emisor que las vende (4 cadenas nuevas: F-438, F-439, F-440, F-445). ⭐ **Se agrava**: aparece el **huérfano de cita** (F-444) — cifras de fracaso sin *ninguna* fuente primaria, defecto peor que el eco → **C22** y **H27**. ⭐ **No se transfiere, y a favor de innovación**: la disciplina **se autocorrige** (F-431/F-432 desmienten el mito del 80-95% con 83.719 SKU reales; F-436 prueba la teoría de la disrupción contra sus 77 casos de origen), y **tiene el RCT preregistrado que el node buscó tres iteraciones en diseño y nunca encontró — y es de seguros** (F-442, N=1.449). ⭐ **La crisis se replica pero le ocurre a otro eslabón**: muere la función interna (labs, CVC), sobrevive el proveedor externo **fusionándose** (F-456) → **H28**. **H16 gana su primera confirmación fuera de diseño.** 39 fuentes nuevas (F-430 a F-468), 5 hipótesis nuevas (H27-H31), 1 regla nueva (C22) | (a) **Insurtech merece corrida propia**: los dos ángulos tocados (RCT de UBI, contraste Root/Lemonade) fueron de los hallazgos más fuertes del node y el ángulo de negocio quedó fuera; (b) **H29 es la más accionable para Rimac** — qué separa a un Root de un Lemonade no es la capa tecnológica; (c) **el GII 2026 sale el 29-sep-2026**: fecha de falsación natural para el dato peruano (F-466); (d) **H31 quedó sin auditar por bloqueo**, no por hallazgo — el corpus hispanohablante de innovación sigue sin medirse; (e) **probar una por una las 21 reglas de §7 en innovación** (§0, punto 2): esta corrida confirmó C4, C5, C6, C7, C15, C17 y C21 en el dominio nuevo; **las demás siguen siendo reglas de diseño**; (f) **H13 sigue vencida** — el Q2 de Figma del 5-ago no se leyó en esta corrida, que fue de innovación |
 
 ---
@@ -1708,6 +1763,261 @@ reportarse como pico del año en curso.**
 
 ---
 
+## 13. ⏰ Iteración 5 (2026-08-14) — la iteración en que venció el plazo
+
+**Mandato de esta corrida.** Por primera vez el node llegó a una corrida con una **fecha**, no con
+una pregunta: H13 era la única hipótesis del tablero con vencimiento y venció el 5 de agosto, nueve
+días antes de esta iteración. Alrededor de eso se ordenaron los tres pendientes que la iteración 4
+heredó y que sí eran accionables hoy: la **corrida propia de insurtech** (pendiente *a*), **H29 como
+la hipótesis más accionable para Rimac** (pendiente *b*), y la **auditoría hacia adentro** que C20
+obliga a hacer cada vez. El GII 2026 (pendiente *c*) no sale hasta el 29-sep.
+
+⭐ **El resultado corto: el node acertó su predicción con fecha y falló su explicación; y las dos
+cosas que había celebrado como sus mejores hallazgos —el contraste Root/Lemonade y el RCT de UBI—
+se corrigieron a la vez, cada una por un motivo distinto.**
+
+### 13.1 🎨📈 H13 se resuelve: la predicción acierta, el mecanismo no
+
+Figma reportó el 5-ago-2026 (F-469). La condición de falsación era limpia y se cumplió por los dos
+lados:
+
+| Condición de H13 | Umbral | Resultado | Veredicto |
+|---|---|---|---|
+| Crecimiento de ingresos en Q2 2026 | ≥40% | **+48% YoY** (US$370,1M) — tercer trimestre consecutivo de crecimiento *acelerado*, por encima del guidance propio (US$348-350M) y del consenso | ✅ superado por 8 pp |
+| Precio de la acción | **no** recupera sobre US$33 | US$23,29 (7-ago), mínimo histórico US$16,80, ~US$23,65 en la recuperación. IPO a **US$33** | ✅ ~30% por debajo |
+
+Y no fue un trimestre ambiguo que se pueda leer a conveniencia: **NDR 136%**, clientes >US$100K de
+ARR **+46%**, margen bruto no-GAAP 85%, y guidance anual **elevado** en US$40M a +39%. La ejecución
+no está en duda.
+
+⬆️ **H13 pasa a `respaldada`.**
+
+⭐ **Pero el mecanismo que H13 enunció es el equivocado, y eso importa más que el acierto.** H13 decía
+que un desacople así probaría que *el mercado descuenta disrupción por IA, no ejecución* — es decir,
+que los inversionistas creen que la IA le va a quitar el ingreso a Figma. Lo que efectivamente pasó
+es lo contrario en su forma: el mercado **aceptó el ingreso** (aceleró, y la guía subió) y castigó
+**lo que cuesta defenderlo**. El opex GAAP pasó de US$219,7M a **US$426,9M**, convirtiendo
+US$2,1M de utilidad operativa en una **pérdida de US$117,3M** (F-469, F-470).
+
+El descuento por IA es real, pero **viaja por el canal de costo, no por el de ingreso**. Es una
+distinción con consecuencia práctica: un descuento por desplazamiento de ingreso se revierte
+demostrando retención; uno por costo se revierte demostrando que el gasto tiene fondo. Son dos
+argumentos distintos, con dos calendarios distintos. → **H32**.
+
+⭐ **Y la dispersión no se cerró con el dato publicado.** Sobre el mismo trimestre, **Citi subió su
+precio objetivo a US$37 y RBC a US$28** (F-471): un rango de 32% entre dos casas leyendo idénticos
+estados financieros. La iteración 3 había registrado la dispersión de precio objetivo como ruido
+previo al dato; con el dato encima, **sigue ahí**. Eso confirma que el desacuerdo nunca fue sobre
+los hechos del trimestre sino sobre cuánto durará el gasto — exactamente lo que dice el párrafo
+anterior.
+
+### 13.1b 🎨 H16 pierde su caso de prueba designado
+
+H16 predice que **el estándar de reporting se degrada donde hay presión de IA**, y desde la
+iteración 2 su prueba explícita era Figma: *"si Figma deja de reportar NDR o paid customers en algún
+trimestre 2026-2027, se refuerza"*.
+
+En el trimestre con la peor óptica GAAP de su historia como empresa pública, Figma reportó **NDR
+(136%)** y **los dos tramos de paid customers con su crecimiento YoY** — 15.964 sobre US$10K (+34%)
+y 1.635 sobre US$100K (+46%) — más una métrica nueva de adopción de IA (F-469).
+
+⬇️ **H16 no se refuerza: su caso de prueba designado salió negativo.** La hipótesis sobrevive
+`parcial` por Adobe, Webflow y Accenture (F-428), pero hay que decirlo sin adorno: **la empresa bajo
+más presión de IA de todo el node aumentó su divulgación en vez de recortarla**. Aplicando C7, el
+hallazgo negativo es el hallazgo — y sugiere que la degradación de reporting no la causa la presión
+competitiva sino algo más específico (la fusión de segmentos tras una adquisición, en los tres casos
+que sí la mostraron).
+
+### 13.2 💡📈 Insurtech: H29 se reformula, y la iteración 4 se corrige a sí misma
+
+Esta es la corrida propia que la iteración 4 pidió, y devuelve dos cosas: una **corrección de un
+error propio** y una **hipótesis mejor**.
+
+**Los números comparables del mismo trimestre (Q2 2026):**
+
+| | **Root** (F-472) | **Lemonade** (F-474) |
+|---|---|---|
+| Suscripción | **Combined ratio neto 92,1%** (bruto 91,9%), −3 pp YoY | **Loss ratio bruto 60%** (desde 67%), LAE 5% vs. ~9% de industria |
+| Resultado | **Utilidad neta US$25,4M (+15%)** | EBITDA aj. **−US$18,7M** (desde −US$40,9M); guía Q4'26 positivo |
+| Crecimiento | Revenue +2%; PIF +6%; ⚠️ **prima bruta suscrita −2%** | **IFP US$1,43B, +32,4%** (11.º trimestre de aceleración); revenue +79% |
+| Mercado | **−11 a −16%** al reporte, −21% en 30 días; Jefferies baja recomendación (F-473) | **−24%** al cierre, por guidance de IFP floja |
+
+⚠️ **Primero, la corrección.** La iteración 4 contrastó "Root 91,4% rentable vs. Lemonade ~139% en
+pérdida técnica" y de ahí salió H29. **Esa comparación no era *like-for-like***: 91,9% de Root es un
+**combined ratio bruto** (incluye adquisición y gastos operativos); 60% de Lemonade es un **loss
+ratio bruto** (no los incluye); y el ~139% venía de un **agregador**, no del emisor — F-450 estaba
+calificada 🟡 C exactamente por eso, y la calificación tenía razón. Con el dato del emisor,
+la siniestralidad de Lemonade **mejoró 7 pp interanuales** y su LAE es **la mitad** del promedio de
+la industria. Lo que mantiene alto su combined ratio **no es que suscriba mal: es lo que gasta en
+crecer**. → **C24**.
+
+⭐ **Segundo, el hallazgo, que es mejor que la hipótesis que reemplaza.** H29 preguntaba qué variable
+*separa* a un Root de un Lemonade y apostaba por la disciplina de suscripción sobre la capa
+tecnológica. La respuesta del trimestre es que **no están en una escalera: están en dos esquinas de
+un mismo trade-off.** Root tiene suscripción rentable y **su prima se contrae** —la dirección admite
+que las pólizas vigentes cerrarán 2026 apenas por encima de 2025 si el canal directo sigue con
+precio agresivo—. Lemonade tiene crecimiento de 32% y **todavía no gana dinero**. Y el mercado, en
+el mismo trimestre, **castigó a los dos**: −21% en 30 días a la disciplina sin crecimiento, −24% al
+crecimiento sin utilidad.
+
+⭐ **La lectura para Rimac, que es lo más accionable que ha producido el node hasta ahora:** con
+evidencia auditada de emisores cotizados, **ningún insurtech ha demostrado todavía crecer y suscribir
+con rentabilidad al mismo tiempo**. Cualquier caso de negocio que prometa *ambas cosas a la vez* como
+resultado del mismo stack tecnológico **no tiene precedente público que lo respalde** — y eso se
+puede decir en una sala citando dos filings, que es precisamente lo que C1 pide. → **H33**.
+
+⚠️ **Contexto que impide inflar todo lo anterior:** el top 10 del insurtech estadounidense es ~5% del
+revenue del sector (F-478). Root y Lemonade son **casos, no el mercado**. Y la misma fuente ilustra
+C15 en estado puro al presentar un "55,8% de *citas* del sector" con la forma gramatical de una cuota
+de mercado, cuando mide menciones en respuestas de modelos de lenguaje.
+
+### 13.3 💡🔬 Auditoría hacia adentro (C20): el RCT de UBI resiste la procedencia y falla el alcance
+
+C20 obliga a tomar **el hallazgo más satisfactorio de la iteración anterior** y rastrearlo con el
+rigor con que se desmontan las cifras ajenas. El candidato era obvio: **F-442**, el RCT preregistrado
+de UBI/telemática que el node persiguió tres iteraciones en diseño sin encontrar y que apareció a la
+primera en innovación — y encima en seguros. La propia iteración 4 declaró el riesgo: *"autoría no
+verificada… no se verificó el conflicto de interés del financiador, que es material dado que es el
+hallazgo más fuerte de la corrida"*.
+
+**Lo que la auditoría encontró (F-475):** el estudio existe, está publicado en **Accident Analysis &
+Prevention, vol. 225** (feb-2026, peer-reviewed, la revista de referencia del campo), tiene **14
+autores nombrados** —autor principal Jeffrey P. Ebert, sénior M. Kit Delgado—, la mayoría de la
+**Perelman School of Medicine de UPenn**, patrocinador principal **University of Pennsylvania**, y
+colaborador la **AAA Foundation for Traffic Safety**, una fundación de investigación sin fines de
+lucro cuyos científicos Brian Tefft y William Horrey firman el paper. Preregistro **NCT06101251**,
+n=1.449, línea base de 6 semanas + 12 de intervención + seguimiento.
+
+✅ **El financiador no es una aseguradora.** El conflicto de interés que la iteración 4 temió **no se
+materializa en la dirección temida**. El hallazgo más fuerte del node sobrevive su propia auditoría.
+
+⭐ **Pero la auditoría encontró un defecto en un eje que el node no había pensado en revisar
+(F-476).** El programa es **simulado**: el incentivo era un pago de investigación —US$150 por
+completar procedimientos y **hasta US$100 condicionados al puntaje de seguridad**—, **no un descuento
+de prima**, y no hubo póliza de por medio. Y **ningún brazo aísla la retroalimentación del dinero**:
+los tres tratamientos combinan ambos, de modo que el contraste contra el control mide **el paquete
+completo**.
+
+**Consecuencia operativa, y es una corrección a lo que este node le dijo a otros nodes:** el estudio
+autoriza afirmar que *retroalimentación telemática + dinero condicionado al desempeño* cambia la
+conducta de manejo (−11 a −25%, sostenido, homogéneo por edad/sexo/raza-etnia). **No** autoriza
+afirmar que un producto comercial de UBI la cambie, ni que la telemetría sin dinero en juego baste.
+La iteración 4 escribió en Conexiones que F-442 mostraba que *"el UBI/telemática produce cambios
+reales de conducta"* — hay que leer eso con el matiz de arriba a partir de ahora.
+
+⭐ **Y el puente ya existe: no hay que esperarlo, hay que rastrearlo.** El mismo grupo corrió un
+**ensayo pragmático sobre clientes reales de aseguradoras estadounidenses** (F-480). Si su resultado
+replica los efectos en población asegurada, la evidencia de UBI pasa de *"el mecanismo conductual
+funciona"* a *"el producto funciona"*. **Es el objetivo prioritario de rastreo de la iteración 6.**
+
+⭐ **Qué le hace esto a H24** (*"el hallazgo satisfactorio no se audita"*). El resultado es más
+interesante que un sí o un no: el hallazgo satisfactorio **sí** concentró el error, confirmando el
+espíritu de H24 — pero **no en el eje que el node sospechaba**. Se auditó la procedencia (¿quién lo
+financió, quién lo firma?) y salió limpia; el defecto estaba en **qué se administró realmente**.
+⬆️ **H24 pasa a `parcial`** y genera **C23**.
+
+⚠️ **Y ocurrió dos veces en la misma corrida.** El otro hallazgo estrella de la iteración 4 —el
+contraste Root/Lemonade que fundó H29, declarado "el más accionable para Rimac"— también se corrigió
+(§13.2), y también por su eslabón más débil: la cifra tomada de un agregador en vez del emisor. **Dos
+de dos.** El patrón que H24 describe ya no se sostiene en un solo caso.
+
+### 13.4 💡📈 H14 hereda el reloj: la ronda de Lovable cerró
+
+La iteración 3 dejó H14 esperando: *"la ronda sigue sin cerrar"*. Cerró el **12-ago-2026, dos días
+antes de esta corrida**: **US$400M a US$13.300M** post-money, liderada por Menlo Ventures y el
+Scaleup Europe Fund de la UE, con Tencent participando (F-477). La ronda previa fue US$330M a
+US$6.600M en dic-2025 — **la valuación se duplicó en ocho meses**.
+
+H14 predijo: *si Lovable cierra a US$12-13,2B, su ARR a 12 meses crecerá <50%*. Cerró en **US$13,3B**,
+apenas por encima de la banda: **la condición de disparo se cumplió**.
+
+⚠️ **La ronda no resolvió la divergencia que el node registró: eligió un lado.** Barclays estimaba
+tráfico −40% desde el pico y valuación implícita de **US$1,8B** (F-426); el mercado privado pagó
+**7x** eso. Y lo que Lovable se negó a compartir cuando se lo preguntaron directamente —churn y split
+mensual/anual (F-427)— **sigue sin publicarse**. El ARR de US$600M que circula con la ronda es
+**proyección interna autorreportada**: C11 en su forma más literal.
+
+⏰ **H14 hereda de H13 el rol de única hipótesis del node con fecha de vencimiento. Se resuelve en
+agosto de 2027.** Es una propiedad estructural que vale la pena notar: **el tablero mantiene siempre
+exactamente un reloj corriendo**, y cuando uno se detiene otro arranca.
+
+### 13.5 💡📱 H31 sigue sin auditarse, pero ya no por la misma razón
+
+La iteración 4 dejó H31 (*el corpus hispanohablante de innovación*) abierta **por bloqueo**. Sigue
+abierta, y el bloqueo también — pero apareció una señal que impide dar por supuesto el pesimismo:
+existe un **informe institucional español de 2026 con vocación de dato propio** (*Informe Innovación
+España 2026*, ICEX/Invest in Spain, F-479). No alcanza para responder H31, que pregunta si el corpus
+**genera estudio propio o solo adopta el marco**; sí alcanza para saber que la respuesta no es
+trivialmente "nada". ⚠️ Con C4 aplicado sin piedad: es un documento de **promoción de inversión** —
+el emisor gana si el lector concluye que España innova.
+
+### 13.6 📱 Hallazgo negativo: el gremio no leyó la caída de Figma como su historia
+
+Búsqueda deliberada de la reacción comunitaria (Reddit, Hacker News, foros de diseño) al desplome de
+FIG: **cero hilos rastreables**. Toda la cobertura del evento es financiera.
+
+Aplicando C7, esto es informativo y algo incómodo para la narrativa de las iteraciones 1-3. El node
+documentó una ansiedad gremial intensa sobre la IA y el futuro del oficio; y sin embargo **el evento
+financiero más concreto relacionado con la IA y con la herramienta central del gremio no produjo
+conversación gremial rastreable**. Las dos historias —la identitaria y la financiera— ocurren en
+**tribunas separadas**, igual que el service design de la iteración 2. ⚠️ Con el descuento debido: la
+indexación de Reddit y HN por buscadores es pobre, así que esto es *no encontrado*, no *inexistente*.
+
+### 13.7 Reglas nuevas de la iteración 5
+
+Ascendidas a §7 (texto canónico allí; aquí solo el origen y por qué merecieron regla):
+
+1. **C23** (*auditar también qué se administró, no solo qué se midió*) — nace del punto ciego que
+   destapó §13.3: el outcome del RCT de UBI era impecable y el defecto estaba en el **tratamiento**.
+   Es el complemento exacto de C15, que solo interroga el lado del resultado.
+2. **C24** (*antes de comparar dos empresas, verificar que la métrica sea la misma métrica*) — nace
+   del error propio de §13.2, que sobrevivió tres meses y llegó a fundar una hipótesis. Lo que la
+   hace necesaria como regla aparte: **una comparación falsa *parece* análisis** — tiene la forma
+   del rigor, así que ninguna de las reglas anteriores la detiene.
+
+### 13.8 Reglas de §7 probadas en 💡 innovación en esta corrida
+
+El punto 2 de §0 exige registrar el avance de la transferencia. Esta corrida **confirma en el dominio
+de innovación**: **C1** (el argumento por mecanismo es lo único que se sostiene con dos filings en la
+mano, §13.2), **C3** (rastrear la fuente primaria: se hizo con F-442 y cambió su alcance), **C11**
+(desconfiar del autorreporte: el ARR proyectado de Lovable), **C15** (preguntar qué se midió: el
+"citation share" de F-478 y el propio F-476), **C16** (la curva antes que el signo: el insurtech no
+admite un veredicto de signo único) y **C20** (auditar hacia adentro, ejecutada sobre innovación).
+
+**Acumulado de transferencia: 13 de 24 reglas probadas en innovación** (C1, C3, C4, C5, C6, C7, C11,
+C15, C16, C17, C20, C21, C22). **Siguen siendo solo de diseño: C2, C8, C9, C10, C12, C13, C14, C18,
+C19, C23, C24** — las de estética e interfaz probablemente no transfieran nunca, y conviene decidir
+en la iteración 6 **cuáles son realmente transferibles y cuáles son propias del dominio**, en vez de
+arrastrar indefinidamente once pendientes que quizá no correspondan.
+
+### 13.9 Limitaciones de la iteración 5
+
+- ⚠️ **Quinta iteración consecutiva sin leer un solo texto completo, y ya no es "el proxy devuelve
+  403": el egress está bloqueado por política de red** para todo destino externo salvo el buscador.
+  Bloqueados en esta corrida: investor.figma.com, sec.gov, pubmed, clinicaltrials.gov, sciencedirect,
+  aaafoundation.org, trid.trb.org y los cuatro sitios en español. **Todas las cifras de esta
+  iteración provienen de extractos de búsqueda**, cruzados entre fuentes independientes cuando fue
+  posible. Consecuencia honesta: **ninguna cifra de esta corrida debería entrar a un entregable sin
+  revalidarse contra el documento primario** — y eso incluye las de los filings, por más que la
+  fuente última sea 🟢 A.
+- **La sección de limitaciones del paper de F-475 no se leyó.** La corrección de alcance de §13.3 se
+  deriva del **diseño registrado** del ensayo (brazos e incentivos), no de lo que los autores
+  declaren como limitación. Es probable que ellos mismos lo digan; no está verificado.
+- **F-480 no se leyó ni se localizó su publicación arbitrada** — se registró la existencia del
+  ensayo pragmático, no su resultado. No usarlo como evidencia de nada todavía.
+- **La comparación Root/Lemonade sigue sin ser estrictamente like-for-like**, ahora por
+  transparencia y no por error: Lemonade **no publica un combined ratio**. §13.2 evita el problema
+  comparando cada empresa contra su propio trade-off en vez de contra la otra en un número único, que
+  es exactamente lo que C24 recomienda.
+- **La pista social quedó débil por segunda iteración consecutiva** (§13.6): un hallazgo negativo con
+  indexación pobre no es lo mismo que un barrido social hecho.
+- **H21 (shadow AI peruano) sigue sin tocarse** — cuarta iteración. La iteración 3 ya dictaminó que
+  barrer genéricamente no sirve y que requiere fuente primaria; esta corrida respetó ese dictamen y
+  **no lo intentó**, que es distinto de haberlo intentado y fallado.
+- **El GII 2026 (F-466) sale el 29-sep-2026** — fuera del alcance temporal de esta corrida.
+
+---
+
 ## Conexiones
 
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] —
@@ -1797,3 +2107,46 @@ reportarse como pico del año en curso.**
   cifras atribuidas venía de emisores interesados y que **tres de ellas se atribuían a una
   institución que nunca las publicó**. Antes de que una cifra externa entre al esquema, verificar
   que **el emisor citado la haya publicado**, no solo que la cifra suene plausible.
+
+⏰ **Conexiones nuevas y correcciones de la iteración 5:**
+
+- [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros
+  (Mundo vs. Perú)]] — ⚠️ **CORRECCIÓN de lo que la iteración 4 escribió aquí.** Esa iteración afirmó
+  que F-442 mostraba que *"el UBI/telemática produce cambios reales de conducta de manejo"*. La
+  auditoría de esta corrida (F-475, F-476) obliga a un matiz que **cambia lo que ese node puede
+  afirmar**: el estudio es un **UBI simulado**, el incentivo fue un pago de investigación de hasta
+  US$100 condicionado al puntaje —**no un descuento de prima**— y **ningún brazo separa la
+  retroalimentación del dinero**. Lo que está probado es que **retroalimentación telemática + dinero
+  condicionado al desempeño** cambia la conducta (−11 a −25%, sostenido, homogéneo por
+  edad/sexo/raza-etnia, peer-reviewed y preregistrado). **No** está probado que un producto comercial
+  de UBI la cambie, ni que la telemetría sin dinero en juego baste. ⭐ La buena noticia: **la fuente
+  resiste todo lo demás** —revista de referencia del campo, 14 autores de UPenn, financiador que no
+  es una aseguradora— así que sigue siendo la mejor evidencia causal del node; solo se le acota el
+  alcance. Y el puente a población asegurada real **ya existe** (F-480): es lo primero que hay que
+  rastrear.
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — ⚠️ **CORRECCIÓN del caso testigo que
+  la iteración 4 le pasó a ese node.** El contraste "Root 91,4% rentable vs. Lemonade ~139% en
+  pérdida técnica" **no era una comparación válida**: mezclaba un *combined ratio* de filing con un
+  número de agregador de definición distinta (C24). El dato del emisor en Q2 2026 dice otra cosa: el
+  **loss ratio bruto de Lemonade es 60%**, mejoró 7 pp interanuales, y su LAE (5%) es **la mitad** del
+  promedio de la industria (F-474). ⭐ **Lo que reemplaza a ese caso testigo es más útil para ese
+  node**: no hay un modelo que funcione y otro que no — hay un **trade-off** entre disciplina de
+  suscripción y crecimiento, y **ningún insurtech cotizado ha demostrado las dos cosas a la vez**
+  (H33). Para el análisis de qué modelos navegan bien la presión de costo, esa es la pregunta:
+  no *¿cuál modelo gana?* sino *¿qué está dispuesto a sacrificar este modelo, y por cuánto tiempo
+  puede sostenerlo?*
+- [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual]] — ⭐ **C23 es
+  la regla más directamente aplicable al Plan Piloto**, y es nueva. Cuando ese proyecto cite un
+  estudio para justificar una intervención, no basta con verificar qué se midió (C15) ni de dónde
+  viene la cifra (C3, C19): hay que escribir **qué recibió exactamente el grupo de tratamiento** y
+  compararlo con lo que Rimac piensa desplegar. El caso de F-442 es el ejemplo perfecto de por qué:
+  un estudio impecable, preregistrado y peer-reviewed, cuyo tratamiento incluye **dinero condicionado
+  al desempeño** — si el piloto despliega solo retroalimentación sin incentivo económico, **no está
+  desplegando lo que el estudio midió**, y el efecto esperado no tiene respaldo.
+- [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de calidad de agentes conversacionales
+  de IA]] — **C24 aplica a su instrumentación comparativa.** Ese node compara escalas e instrumentos
+  provenientes de tradiciones distintas (usabilidad de chatbots, métricas RAG, LLM-as-judge). La
+  lección de esta iteración es que **una comparación entre métricas de definición distinta parece
+  análisis y no lo es**: poner dos puntajes de escalas distintas en la misma tabla es exactamente el
+  error que el node cometió con 91,4% vs. ~139%, y sobrevivió tres meses sin que nadie lo notara
+  porque tenía la forma del rigor.
