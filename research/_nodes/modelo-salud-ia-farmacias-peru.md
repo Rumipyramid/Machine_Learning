@@ -602,3 +602,7 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   documento.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para la
   comunicación del flujo con usuarios finales.
+- [[tamizaje-cervical-asc-us-peru|Tamizaje cervical y manejo de ASC-US (Mundo vs. Perú)]] — caso
+  concreto del mismo diagnóstico de fondo: **la pérdida de seguimiento en el sistema peruano
+  reconfigura cuál es la guía clínica óptima** (ver su §3 y §6), y es exactamente el problema que
+  este node intenta resolver por vía de triage y acompañamiento.

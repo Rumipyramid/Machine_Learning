@@ -297,6 +297,10 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[material-visual-venta-consultiva|Material visual en la venta consultiva]] — aplica el
   problema de confianza/déficit de información (§1.2-1.3) al momento de explicación del
   producto y su material visual de apoyo.
+- [[tamizaje-cervical-asc-us-peru|Tamizaje cervical y manejo de ASC-US (Mundo vs. Perú)]] — mismo
+  patrón que este node documenta en seguros, en registro clínico: **brecha entre norma
+  internacional y práctica local**, y la desconfianza del usuario como costo real (ahí, la
+  ansiedad que hace no volver al control, §7).
 - [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in]] — cómo
   organizaciones (seguros y sectores análogos) migran de prospección en frío a modelos de
   consentimiento previo, y qué pasa con el volumen/confianza durante esa transición.
