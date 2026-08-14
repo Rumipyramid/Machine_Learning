@@ -1797,3 +1797,10 @@ reportarse como pico del año en curso.**
   cifras atribuidas venía de emisores interesados y que **tres de ellas se atribuían a una
   institución que nunca las publicó**. Antes de que una cifra externa entre al esquema, verificar
   que **el emisor citado la haya publicado**, no solo que la cifra suene plausible.
+- [[copiloto-ia-fuerza-de-ventas|¿Un copiloto de IA potencia a la fuerza de ventas?]] — aplica las
+  reglas de criterio de este node a un dominio nuevo: **C4** (descuento por incentivo del emisor)
+  sobre las cifras de Gong, Forrester-comisionado-por-Microsoft, Salesforce y McKinsey; y **C22**
+  (huérfano de cita) sobre el "15% vs. 25% de AI SDR contra humanos" (F-492), que tiene la anatomía
+  exacta de F-444. ⭐ Aporte en la dirección inversa: es la primera investigación del proyecto que
+  reúne **cinco papers peer-reviewed con diseño experimental sobre una misma pregunta de herramienta
+  comercial** — el estándar de prueba que este node persiguió en diseño y casi nunca encontró.

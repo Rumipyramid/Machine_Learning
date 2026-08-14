@@ -383,3 +383,10 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[copiloto-ia-fuerza-de-ventas|¿Un copiloto de IA potencia a la fuerza de ventas?]] — continuación
+  natural de este node: si la conclusión aquí es "invertir en el asesor, no reemplazarlo", aquel
+  responde **cómo hacerlo con evidencia causal**. Aporta el dato más duro que existe sobre por qué
+  la IA no debe ponerse frente al cliente en servicios financieros (Luo et al. 2019, F-472: revelar
+  que el interlocutor es IA cuesta **−79.7%** de tasa de cierre), y replica de forma independiente
+  el hallazgo de §3.2 de este node sobre el rescate humano tardío (Bain NPS −11 aquí; escalamientos
+  emocionales irreparables en el RCT de Alibaba allí).

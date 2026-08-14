@@ -314,3 +314,9 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   sobrevendido, corregido por sesgo de publicación) aparece allí en el diseño (ROI sobrevendido,
   desarmado por eco de cita). Ambos concluyen lo mismo: la disciplina se defiende mejor por
   **mecanismo** que por **multiplicador**.
+- [[copiloto-ia-fuerza-de-ventas|¿Un copiloto de IA potencia a la fuerza de ventas?]] — replica en
+  un dominio nuevo el patrón central de este node: la divergencia rigor↔magnitud de su §4.2
+  (+26/+35% en cifras de vendors sin control vs. **+7/+14% con asignación aleatoria**) es el mismo
+  **"voltage drop"** que documentan DellaVigna & Linos (F-21) para intervenciones conductuales —
+  efectos grandes en papers y en promesas de proveedor, efectos chicos al medirse a escala con
+  método. Tercera confirmación del mismo mecanismo en tres disciplinas distintas.

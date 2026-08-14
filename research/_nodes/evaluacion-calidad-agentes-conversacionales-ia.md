@@ -250,3 +250,9 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   la explicabilidad genérica **no** calibra la confianza (produce sobre-confianza; lo que la calibra
   es la verificabilidad de la salida), y toda métrica de productividad autorreportada debe
   descontarse frente a la medición objetiva.
+- [[copiloto-ia-fuerza-de-ventas|¿Un copiloto de IA potencia a la fuerza de ventas?]] — este node
+  provee los instrumentos para medir exactamente el defecto que aquel identifica como el de mayor
+  prioridad operativa: la **consistencia** de las respuestas del copiloto del asesor. Relación
+  recíproca y directa: aquel establece *por qué* la inconsistencia es crítica (fuera de su frontera
+  de competencia el copiloto degrada el desempeño **−19 pp**, y el usuario no lo detecta), este
+  establece *con qué* medirla.

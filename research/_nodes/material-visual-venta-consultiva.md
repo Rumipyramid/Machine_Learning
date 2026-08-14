@@ -364,3 +364,9 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
   el respaldo general de lo que este node aplica al caso de seguros: el efecto estética-usabilidad
   se reduce a menos de la mitad al controlar por **fluidez de procesamiento** (claridad > ornamento),
   y su hipótesis H7 propone testear exactamente eso en material de venta de Rimac.
+- [[copiloto-ia-fuerza-de-ventas|¿Un copiloto de IA potencia a la fuerza de ventas?]] — misma
+  familia de intervención (herramientas que **asisten** al asesor en la conversación compleja en
+  vez de reemplazarla), con evidencia experimental de que **el caudal de la ayuda importa tanto
+  como su contenido**: restringir el nivel de feedback fue lo que convirtió un coach de IA que no
+  funcionaba en uno que sí (Luo et al. 2021, Exp. 2). Es el mismo argumento de fondo que este node
+  hace sobre choice overload, aplicado a la ayuda al vendedor en vez de al cliente.

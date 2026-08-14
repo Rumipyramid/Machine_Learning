@@ -929,3 +929,15 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
   transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la
   experiencia de venta.
+- [[copiloto-ia-fuerza-de-ventas|¿Un copiloto de IA potencia a la fuerza de ventas?]] — base de
+  evidencia del copiloto del asesor (AIDA / Espacio Digital del Asesor §2). Su §5 traduce la
+  evidencia a seis implicaciones directas para este proyecto: (1) la **inconsistencia de respuestas
+  del copiloto** que reportan la encuesta y el Taller es la manifestación operativa del hallazgo
+  de que fuera de su frontera de competencia el copiloto **resta** en vez de sumar; (2) la
+  arquitectura copiloto + formación + mentoría **es** el ensamblaje IA+humano que ganó el
+  experimento de Luo et al. 2021; (3) "centralizar funciones en el copiloto" (ítem 1 del backlog)
+  necesita un límite explícito de **caudal de feedback**, que es lo que arregló el fallo en el
+  Experimento 2; (4) el **Plan Piloto de 10 asesores debe estratificar por nivel de desempeño
+  previo**, porque con un efecto en U invertida el promedio puede dar cero aunque el copiloto
+  funcione; (5) el indicador de éxito no puede ser satisfacción declarada del asesor; (6) la línea
+  roja de mantener la IA detrás del asesor coincide con lo ya decidido y ahora tiene respaldo 🟢A.
