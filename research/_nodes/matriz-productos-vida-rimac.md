@@ -171,6 +171,12 @@ lámina o deck ya construido que use "170%" como cifra puntual.
 ## Conexiones
 
 - [[diagnostico-copiloto-ai-asesor-vida-rimac|Diagnóstico del Copiloto AI del asesor de Vida]] —
+  ⭐ **(2026-08-14) Este node es candidato a promoverse a fuente canónica de parámetros de
+  producto.** §10 de ese node documenta la barrera sistémica de actualización de información de
+  producto, y concluye que la matriz que hace falta **ya existe aquí**: catálogo con coberturas,
+  add-ons y —lo que ningún proveedor trae de fábrica— **trazabilidad de fuente y nivel de confianza
+  por dato**. Se construyó a mano para otro fin; la decisión pendiente es si se le nombra dueño y
+  cadencia. Además —
   este catálogo es lo que la base de conocimiento del copiloto debe representar sin error: es la
   capa donde una falla del agente deja de ser molestia y pasa a ser riesgo de cumplimiento
   (coberturas, exclusiones, precios dichos a un cliente). Su trazabilidad de fuentes y niveles de

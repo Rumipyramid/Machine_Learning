@@ -7,7 +7,14 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.3
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.4
+> (v1.4: corrige §9.2 — **el modelo de venta ES la fuente canónica** y las contradicciones se
+> resuelven ahí, lo que convierte la base de AIDA en una **derivación del modelo** en vez de una
+> carpeta a ordenar; y agrega §10, la barrera sistémica de actualización de producto: el retraso
+> tiene un componente regulatorio irreducible (SBS, F-482) y uno comercial que no lo es, hoy
+> acoplados; la dirección de traducción propuesta está invertida; y la evidencia de aceleración es
+> **12/12 de proveedores** (F-483), con una sola fuente independiente que además reporta alta tasa
+> de fracaso de implementación (F-484).)
 > (v1.3: precisa el **mandato del copiloto** —centralizar y reducir carga cognitiva/emocional— y
 > agrega §9, el hallazgo mayor hasta ahora: **el copiloto no puede resolver la contradicción aguas
 > arriba, solo ocultarla**, por lo que la inconsistencia reportada de AIDA puede ser la
@@ -531,24 +538,144 @@ cosas incompatibles. Hay que agregar un paso:
 salen del corpus de F1) y, para cada uno, poner lado a lado lo que dice cada frente. Donde haya
 discrepancia, esa es una contradicción que el copiloto está reflejando hoy.
 
-### 9.2 La implicación incómoda
+### 9.2 Quién resuelve la contradicción (corregido en v1.4 por Alejo)
 
-**Si no hay fuente canónica, el copiloto no debería ser el primer arreglo.** Un copiloto excelente
-sobre contenido contradictorio produce respuestas confiadas e inconsistentes — que es exactamente
-el estado actual. El orden lógico es:
+> ⚠️ **Corrección a la v1.3 de este node.** La v1.3 planteaba que "si no hay fuente canónica, el
+> copiloto no debería ser el primer arreglo" y proponía que el agente respondiera *"esto no está
+> resuelto"*. **El planteamiento estaba mal encuadrado: daba por buscar una fuente canónica que ya
+> está declarada.**
 
-1. **Declarar la fuente canónica del modelo** (quién manda cuando dos frentes discrepan) — decisión
-   de gobierno, no de tecnología.
-2. **Resolver las contradicciones** en los temas de mayor consulta.
-3. **Reformatear** para que el agente pueda consumirlo (§4 del node de arquitectura).
-4. **Consolidar la interfaz** (§8).
+**El modelo de venta es la fuente canónica.** Es el único material y cuerpo de conocimiento de
+consulta para todos los frentes multimodales (Alejo, 2026-08-14). **Las contradicciones se resuelven
+en el modelo**, no en cada frente ni dentro del copiloto.
 
-⚠️ Esto **no** significa parar el trabajo del copiloto hasta que la organización se ordene — sería
-irreal y el paso 1 puede tardar. Significa que **el alcance del copiloto debe declararse sobre los
-dominios donde sí hay fuente canónica**, y que los demás se marquen como "sin respuesta autoritativa
-todavía" en vez de ser respondidos con seguridad falsa. **Un agente que dice "esto no está resuelto,
-consulta con tu jefatura" es más útil que uno que elige una de dos versiones** — y es una decisión
-de diseño de comportamiento (capa B de §3), implementable sin esperar al gobierno.
+Eso convierte una discusión de gobierno abierta en **una regla operativa cerrada**, con tres
+consecuencias inmediatas:
+
+1. **La base de conocimiento de AIDA no debe ser una carpeta de documentos: debe ser una derivación
+   del modelo.** Esto reencuadra F2 y F3 — el trabajo no es "ordenar la carpeta", es **reemplazar la
+   carpeta por una derivación**. Ordenar una carpeta que no deriva del modelo produce una base
+   limpia y aun así divergente.
+2. **Toda contradicción detectada es un defecto contra el modelo**, no una decisión del equipo del
+   copiloto. Se escala, se resuelve en el modelo, y **todos los frentes re-derivan**. Que el equipo
+   del copiloto resuelva por su cuenta cuál versión es la buena es precisamente cómo se generó la
+   divergencia.
+3. **Todo lo que el copiloto necesite y no esté en el modelo es un hueco del modelo**, no un hueco
+   de la base. El copiloto deja de ser un consumidor pasivo y pasa a ser **el mejor detector de
+   huecos que el modelo puede tener**, porque recibe las preguntas reales de los asesores.
+
+⭐ **El bucle que esto cierra.** El modelo ya es generativo hacia producto: cuando ninguna oferta
+hace match con una motivación real, **emite un requerimiento de producto** (§1.1 de
+`[[proyecto-back-to-basics-ffvv-vida]]`). Con esta regla, el modelo se vuelve generativo también
+hacia el conocimiento: **cuando el copiloto no puede responder o encuentra una contradicción, emite
+un requerimiento de contenido contra el modelo.** Mismo mecanismo, otra salida. Y le da al indicador
+"consultas sin respuesta satisfactoria" un destino claro: **es el backlog del modelo.**
+
+**Lo que sí sobrevive de la v1.3** como comportamiento de la herramienta (capa B, §3): mientras una
+contradicción está en cola de resolución, **es preferible que el agente declare que el punto no está
+resuelto a que elija en silencio una de dos versiones.** Ya no como sustituto del gobierno —que
+existe— sino como **comportamiento de degradación honesta** mientras el modelo resuelve.
+
+⚠️ **Matiz a confirmar (P8).** El modelo es canónico para el **conocimiento de venta** (cómo vender,
+qué decir, cuándo). Los **parámetros de producto** (coberturas, exclusiones, precios) son un dominio
+distinto, con otro dueño y otra cadencia — y con piso regulatorio (§10). La lectura de este node es
+que el modelo **referencia** una fuente canónica de producto en vez de contenerla, lo que además es
+consistente con la regla de dominios no superpuestos de §8. **Confirmar con Alejo.**
+
+---
+
+## 10. Barrera sistémica: la cadena de suministro de conocimiento de producto (v1.4)
+
+**Declarada por Alejo (2026-08-14):** el negocio **no tiene forma de actualizar ágilmente la
+información de productos** — cambios, bajas, altas. Hipótesis propuesta por él: un sistema que
+traduzca documentos ejecutivos en una **matriz de productos con parámetros claros**.
+
+Pregunta que hizo, textual: *¿existe alguna forma comprobada de agilizar esto?* Respuesta honesta en
+tres partes.
+
+### 10.1 Parte del retraso es irreducible — y conviene medirlo antes de atacarlo
+
+En Perú los modelos de póliza están sujetos al **Registro de la SBS** (Res. SBS N° 7044-2013,
+**F-482**). Modificar documentación registrada tiene plazos y condiciones normados, obliga a
+identificar claramente las cláusulas modificadas, y **el modelo modificado recién se vuelve
+obligatorio 30 días calendario después de notificada la Resolución**.
+
+⭐ **Pero eso aplica a la capa contractual, no a la comercial.** El retraso que se vive tiene **dos
+componentes con pisos totalmente distintos:**
+
+| Capa | Qué es | Piso | ¿Acelerable? |
+|---|---|---|---|
+| **Contractual/registrada** | Condiciones, cláusulas, el modelo de póliza | **Regulatorio (SBS)** | ❌ No — es el costo de operar en el mercado |
+| **Comercial/explicativa** | Cómo se explica, a qué motivación sirve, qué objeciones aparece, cómo se dimensiona | **Ninguno** | ✅ Sí — horas, no meses |
+
+**El diagnóstico probable no es "el negocio es lento": es que las dos capas están acopladas** porque
+viven en el mismo documento ejecutivo. La capa comercial hereda la cadencia regulatoria de la
+contractual sin necesitarla. **Desacoplarlas es la palanca, y no requiere permiso de nadie.**
+
+**Primera medición sugerida, barata:** tomar los 3 últimos cambios de producto y cronometrar dónde
+se fue el tiempo — aprobación regulatoria vs. traducción interna a materiales. Si el grueso está en
+la traducción interna, el problema es de proceso propio y se resuelve solo.
+
+### 10.2 La dirección de la traducción está invertida
+
+La hipótesis propuesta —*traducir documentos ejecutivos a una matriz*— **automatiza el síntoma**.
+Mientras se siga autorando en PPT/PDF y luego traduciendo, hay un **desfase permanente** y la matriz
+está desactualizada por diseño: cada cambio nace en el documento y llega tarde a la matriz.
+
+La práctica establecida invierte el flujo:
+
+> **La matriz es la fuente; los documentos ejecutivos se generan desde ella.** Se autora una vez en
+> forma estructurada y se publica a N canales (autoría estructurada / publicación de fuente única).
+
+Es exactamente la regla de **"una fuente canónica, N instanciaciones"** de §1.1 de
+`[[proyecto-back-to-basics-ffvv-vida]]`, aplicada al dato de producto. Y encaja con §8: el modelo de
+venta es canónico para el conocimiento de venta; la matriz de producto lo es para los parámetros.
+
+⭐ **RIMAC ya tiene un prototipo de esto en este repositorio:**
+`[[matriz-productos-vida-rimac]]` — catálogo de productos con coberturas, add-ons, **trazabilidad de
+fuentes y niveles de confianza**. Se construyó a mano para otro fin, pero **es la especificación de
+la matriz que se necesita**, incluida la parte que los proveedores no traen de fábrica: decir de
+dónde salió cada dato y cuánto se confía en él. No hay que diseñarla desde cero — hay que decidir si
+se promueve a fuente canónica, con dueño y cadencia.
+
+### 10.3 Qué está comprobado y qué no
+
+⚠️ **Advertencia de evidencia (F-483), y es fuerte:** se buscó específicamente evidencia de
+aceleración y **12 de 12 fuentes encontradas en dos búsquedas independientes eran proveedores** que
+venden la solución que la cifra justifica. Las cifras que circulan —"de 12-18 meses a 4-8 semanas",
+"de 8-16 semanas a 20 minutos"— **no tienen estudio, muestra ni método**. **No usarlas en ningún
+material de RIMAC.**
+
+**Lo que sí está establecido:**
+
+- **La práctica existe y es madura.** Los configuradores de producto ("product factory") son una
+  categoría real usada por aseguradoras reales; la autoría estructurada de fuente única es
+  disciplina de décadas (DITA es estándar OASIS). El **mecanismo** —parametrizar el producto y
+  versionarlo con fecha de vigencia, en vez de describirlo en prosa— es sólido, y tiene un beneficio
+  colateral relevante en seguros: permite **reconstruir qué condiciones aplicaban a una póliza
+  emitida hace años**, en vez de aplicarle la configuración de hoy.
+- **Evidencia independiente, la única encontrada (F-484):** la calidad del dato maestro de producto
+  **sí impacta significativamente el desempeño del proceso** (peer-reviewed, aunque en dominio
+  logístico, no seguros). Beneficios donde funciona: menor esfuerzo de reconciliación, mejor
+  auditabilidad, mayor alineación regulatoria.
+- ⚠️ **Y la contraevidencia, que hay que decir en la misma frase:** el análisis empírico de estas
+  implementaciones encuentra **adopción heterogénea, capacidades fragmentadas y gobierno solo
+  parcialmente formalizado** (F-484). Es decir: **la mayoría de las implementaciones no logran lo que
+  la categoría promete.** El riesgo dominante de este frente no es elegir mal la herramienta — es
+  comprar plataforma y no cambiar el proceso de autoría.
+
+**Recomendación que se sigue de lo anterior:** no empezar por plataforma. Empezar por **un dominio
+acotado** —los productos de Vida Individual, que ya están mapeados— con la matriz existente
+promovida a fuente, un dueño nombrado, una cadencia declarada, y **medición propia antes/después**
+del tiempo de actualización. Es la misma disciplina que el proyecto ya aplica: no importar tamaños
+de efecto de catálogo, medir en la propia población.
+
+### 10.4 Por qué esto es del copiloto y no solo del negocio
+
+Si la matriz existe y es canónica, **la base de conocimiento de AIDA deja de ser un problema
+recurrente**: se deriva de la matriz y se regenera con cada cambio, en vez de volver a ensuciarse
+cada vez que alguien sube un PPT nuevo. Sin eso, cualquier limpieza que haga F2 **tiene fecha de
+vencimiento** — la carpeta se vuelve a desordenar porque nada impide que se desordene.
 
 ---
 
