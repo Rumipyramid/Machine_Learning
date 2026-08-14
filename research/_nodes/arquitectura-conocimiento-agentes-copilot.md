@@ -5,11 +5,15 @@
 > capa de **evidencia externa** — el estado y las decisiones internas del Copiloto AI de RIMAC
 > viven en `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md`, que consume este node.
 >
-> Fecha de elaboración: 2026-08-14 · Versión: v1.0
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.1
+> (v1.1, mismo día: agrega §8 — **uno o varios agentes**, y por qué consolidar bases de conocimiento
+> es distinto de consolidar la interfaz. Cambio estructural: el node pasa de cubrir *cómo se escribe
+> el contenido* a cubrir también *cómo se reparte entre agentes*, que es una decisión anterior.
+> Fuentes nuevas: F-479, F-480.)
 > Origen: investigación disparada por el diagnóstico del Copiloto AI del asesor de Vida (RIMAC),
 > a pedido del usuario: "buscando evidencia o justificándome cuál es la forma correcta de
 > almacenar información para que este agente copiloto consuma la información".
-> Fuentes: F-469 a F-475 del ledger de `cronista` (`research/fuentes/codice.md`).
+> Fuentes: F-469 a F-475, F-479 y F-480 del ledger de `cronista` (`research/fuentes/codice.md`).
 
 ---
 
@@ -215,6 +219,62 @@ Honestidad sobre los límites, para que este node no se cite más fuerte de lo q
 - **No cubre Claude Projects ni otras plataformas.** Si el agente en cuestión no corre sobre
   Copilot, los principios de §1, §4 y §5 se transfieren (son propiedades de cómo funciona la
   recuperación, no del proveedor), pero **los límites numéricos de §2 y §3 no aplican.**
+
+---
+
+## 8. Uno o varios agentes — y qué significa "consolidar"
+
+Decisión anterior a todo lo de arriba: **antes de escribir el contenido hay que decidir cuántas
+bases habrá y cuántos agentes las consumirán.** Es donde se equivoca la intuición más común en
+empresas — *"unifiquemos todo en un solo asistente para que la gente no tenga que aprender dónde
+buscar"*.
+
+Esa intuición es **correcta sobre la interfaz y equivocada sobre la recuperación**, y hay que
+separarlas:
+
+| Capa | Consolidar | Por qué |
+|---|---|---|
+| **Interfaz** — a cuántos lugares va el usuario | ✅ **Sí** | Menos superficies, menos carga cognitiva |
+| **Recuperación** — cuántas bases hay detrás | ❌ **No** | Mezclar dominios degrada la exactitud (abajo) |
+
+### Por qué mezclar dominios degrada la recuperación
+
+- **Fabricante (F-479):** asignar a cada subagente **fuentes distintas y no superpuestas** — si dos
+  buscan en la misma base, uno encuentra primero y el otro devuelve duplicados o se salta la
+  búsqueda, sin aportar valor. Y **"multi-agente aporta valor solo cuando las fuentes son
+  genuinamente distintas"**: con una sola fuente, **no dividir**.
+- **Externo (F-480, preprint):** centralizar todos los documentos en un solo sistema RAG **agranda
+  el espacio de recuperación y aumenta la evidencia irrelevante**; la señal-ruido cae cuando las
+  bases no se separan por dominio. Particionar y rutear **reduce el ruido y la interferencia entre
+  temas**, con mayor exactitud y **menor alucinación**.
+
+⭐ Es coherente con el techo de ≤300 páginas de §3: **el problema de una base gigante no es de
+almacenamiento, es de competencia entre fragmentos.** Cada documento irrelevante que entra al mismo
+espacio de recuperación compite con el relevante. Consolidar bases es agrandar esa competencia.
+
+### Los criterios del fabricante para separar (F-479)
+
+Un dominio merece su propio agente/base cuando cumple alguno:
+
+1. Tiene **expertise propio** (otro cuerpo de conocimiento, no un subtema del mismo).
+2. Requiere **reglas de gobierno o control de acceso distintas** — el criterio más subestimado, y el
+   que suele decidir en dominios regulados.
+3. Es **reutilizable como servicio** por varios agentes principales.
+
+Regla de arranque del propio fabricante: **empezar con un agente** y dividir solo cuando aparezca
+una necesidad clara de modularidad o *"un límite que un solo agente no debería cruzar"*. No
+sobre-arquitecturar al inicio.
+
+### El patrón que satisface ambas capas
+
+**Una puerta de entrada, varios dominios detrás:** el usuario habla con un solo agente, que rutea a
+la base correcta. Está soportado explícitamente en Copilot Studio (orquestación multi-agente) — no
+requiere desarrollo a medida.
+
+⚠️ **Advertencia de secuencia:** poner una puerta única delante de bases cuya calidad no se ha
+auditado **destruye la señal de diagnóstico** — el usuario deja de saber cuál dominio falló, y el
+equipo pierde la capacidad de atribuir el error. **La auditoría (§6) va antes que la consolidación
+de interfaz.**
 
 ---
 

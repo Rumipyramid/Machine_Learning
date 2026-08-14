@@ -106,24 +106,42 @@ que los asesores dijeron por su cuenta hace semanas.
 mismo defecto — **inconsistencia**, no ausencia de información. Eso es una pista causal fuerte, y
 apunta a un mecanismo concreto: ver §3, capa A.
 
-⭐ **Hallazgo agregado en v1.1 — el asesor tiene (o iba a tener) dos IA en paralelo.** Al separar
-AIDA del prototipo del piloto aparece algo que ningún documento del proyecto había hecho explícito:
-AIDA **ya está desplegada** en la fuerza de ventas, y el prototipo sobre Claude sería **una segunda
-herramienta de IA** para el mismo asesor. Eso:
+### 2.1 El mapa real de frentes del asesor (agregado en v1.2, declarado por Alejo 2026-08-14)
 
-- **contradice la premisa de diseño del Plan Piloto** — *"el asesor interactúa con una sola
-  herramienta"* (§8 de Back to Basics) — que describe el mundo del piloto, no el del campo;
-- **contradice el propio lineamiento del backlog** de *"centralizar funciones en el copiloto en vez
-  de sumar herramientas sueltas, cuidando no sobresaturar al asesor"*;
-- **cae de lleno en Dx3** (alta carga cognitiva y emocional del asesor), que es justamente el
-  diagnóstico que el proyecto dice estar atacando.
+El asesor no opera contra una herramienta ni contra dos. Opera hoy contra **seis frentes**:
 
-No se sigue de esto que el prototipo sobre Claude esté mal planteado — se sigue que **la relación
-entre las dos herramientas es una decisión de diseño pendiente y no declarada**: ¿el prototipo
-reemplaza a AIDA, la alimenta, se fusiona con ella, o convive? Conviene resolverlo explícitamente
-antes de que el campo lo resuelva por su cuenta (que es lo que ya pasó con ChatGPT/Gemini).
-⚠️ El rediseño del piloto anunciado por Alejo el 2026-08-14 puede haber cambiado esto — pendiente
-de recibir la actualización.
+| # | Frente | Naturaleza | ¿Es un agente de IA? |
+|---|---|---|---|
+| 1 | **Salesforce** | Sistema de **registro** (CRM) — obligación operativa, no ayuda | No |
+| 2 | **AIDA** | Superficie de **conocimiento/conversación**, en producción | ✅ Sí (Microsoft Copilot) |
+| 3 | **Material físico** | Artefacto para el **cliente**, no para el asesor | No |
+| 4 | **Agente de suscripción** | Apoyo en el proceso de **suscripción/underwriting** | ✅ Sí |
+| 5 | **Sales Coach** | **Entrenamiento** en fases iniciales | ✅ Sí |
+| 6 | **Feedback de jefatura** | Canal **humano**, relacional | No |
+
+⭐ **Hallazgo (corrige y amplía el de v1.1): no son dos IA en paralelo, son tres agentes ya
+desplegados** —AIDA, suscripción y Sales Coach— más el prototipo del piloto como cuarto candidato.
+La v1.1 de este node subestimó el problema porque solo conocía dos.
+
+**Esto reancla el diagnóstico.** v1.1 lo ataba a Dx3 (carga cognitiva del asesor). Con el mapa
+completo, el frente principal es **Dx2** — *los elementos del sistema no siempre conversan entre sí,
+y el usuario recibe información inconsistente durante su compra*. Tres agentes con bases de
+conocimiento distintas, sin contrato de consistencia entre ellos, **son literalmente el mecanismo
+que Dx2 describe.** Dx3 sigue aplicando, pero como consecuencia, no como causa raíz.
+
+**Dos distinciones que hay que hacer antes de decidir qué consolidar** — porque "seis frentes" no
+son seis cosas del mismo tipo:
+
+- **Frentes 3 y 6 no compiten con el copiloto: lo complementan.** El material físico tiene otra
+  audiencia (el cliente — ver `[[material-visual-venta-consultiva]]`), y el feedback de jefatura es
+  un vínculo humano cuyo valor no es informacional. **Absorberlos sería un error de diseño**, no un
+  avance de consolidación.
+- **El frente 1 es de otra especie.** Salesforce es el **sistema de registro**: tiene obligaciones
+  de dato, trazabilidad y reportería que no son "una función front". Lo que puede consolidarse es
+  **la interacción** con Salesforce (que el copiloto registre por el asesor), no el sistema.
+
+La pregunta de qué hacer con los frentes 2, 4 y 5 —los tres agentes— es de arquitectura y tiene
+respuesta con evidencia: ver §8.
 
 ---
 
@@ -320,6 +338,13 @@ Determina qué reglas de gobierno de §5 del node de arquitectura son aplicables
 **P4 — ¿Quién es el dueño de la base hoy?** Si nadie la gobierna, el problema **volverá** aunque se
 limpie una vez. Es la diferencia entre un arreglo y una solución.
 
+**P6 — ¿Los tres agentes comparten base de conocimiento o cada uno tiene la suya?** Decide si el
+mapa de §8.1 describe la arquitectura actual o la contradice. Si comparten base, el problema de
+recuperación es peor de lo estimado.
+
+**P7 — ¿Quién es dueño de cada agente?** Si AIDA, el agente de suscripción y Sales Coach dependen de
+equipos distintos, "una sola puerta de entrada" es un problema de gobierno antes que de tecnología.
+
 **P5 — ¿Existe medición previa?** ¿Hay logs de conversaciones, tasa de uso, consultas sin respuesta?
 El Plan Piloto declaraba que **el tracking del prototipo no existía todavía** al 24/07 — confirmar
 si se habilitó, porque de eso depende si F1 se levanta de datos o de entrevistas.
@@ -350,6 +375,90 @@ la exactitud al reformatear una base corporativa (§7 del node de arquitectura).
 con medición antes/después **produce la cifra propia** en vez de importar una de un proveedor — y
 es exactamente la disciplina que el proyecto ya aplica (tesis 6 del Lobo: no copiar tamaño de
 efecto de catálogo, testear en la propia población).
+
+---
+
+## 8. ¿Debe el copiloto concentrar todos los frentes? (agregado en v1.2)
+
+**El lineamiento declarado** (Alejo, 2026-08-14, derivado del diagnóstico sistémico de la FFVV): el
+modelo de ventas debe funcionar de forma **multimodal, desplegado en distintos frentes**, pero el
+copiloto **debería concentrar todas o la mayoría de las funciones front** del asesor.
+
+Leído literal, eso parece contradictorio (desplegar en varios frentes *y* concentrar en uno) y
+además choca con el techo de ≤300 páginas de `[[arquitectura-conocimiento-agentes-copilot]]`. No es
+contradictorio: es que **se están mezclando tres capas que hay que decidir por separado.**
+
+| Capa | Pregunta | Respuesta con evidencia |
+|---|---|---|
+| **Distribución** | ¿Dónde vive el modelo de venta? | **Multimodal** — en todas las superficies donde el asesor trabaja. Aquí "desplegado en distintos frentes" es correcto. |
+| **Interfaz** | ¿A cuántos lugares tiene que ir el asesor? | **Uno** — consolidar. Es lo que ataca Dx3 y lo que pide el lineamiento. |
+| **Recuperación** | ¿Cuántas bases de conocimiento hay detrás? | **Varias, separadas por dominio.** ⚠️ **Consolidarlas empeora el problema.** |
+
+### 8.1 Por qué consolidar las bases sería un error
+
+Es el punto donde la intuición de consolidación falla, y la evidencia es consistente en dos frentes
+independientes:
+
+- **El fabricante (F-479):** cada subagente debe tener **fuentes de conocimiento distintas y no
+  superpuestas**; si dos buscan en la misma base, uno encuentra primero y el otro no aporta nada.
+  Recomienda agentes separados cuando hay **dominio de expertise propio**, **reglas de gobierno o
+  control de acceso distintas**, o reutilización como servicio.
+- **Evidencia externa (F-480, preprint):** centralizar todo en un solo sistema RAG **agranda el
+  espacio de recuperación y aumenta la evidencia irrelevante**; la señal-ruido cae cuando las bases
+  no están separadas por dominio. Particionar por dominio y rutear **reduce el ruido y la
+  interferencia entre temas**, con **mayor exactitud y menor alucinación** que el agente único.
+
+⭐ **Aplicado a RIMAC, esto invierte la conclusión intuitiva:** los tres agentes (venta, suscripción,
+entrenamiento) **cumplen casi uno a uno los criterios de Microsoft para estar separados** —
+dominios de expertise distintos, y la suscripción con reglas de gobierno claramente distintas. **Es
+probable que estén bien separados en la capa de conocimiento.** El problema no es que sean tres: es
+que **el asesor tiene que saber cuál es cuál y entrar a cada uno por su cuenta.**
+
+### 8.2 La forma que sí satisface el lineamiento
+
+**Una puerta de entrada, varios dominios detrás.** El asesor le habla a un solo copiloto; el
+copiloto rutea a la base correcta según lo que le pregunten. Es un patrón soportado explícitamente
+por Copilot Studio (orquestación multi-agente, F-479), no un desarrollo a medida.
+
+Eso satisface las tres capas a la vez: el modelo se despliega multimodal, el asesor ve una sola
+superficie, y cada dominio conserva su espacio de recuperación limpio.
+
+**Qué se consolida y qué no:**
+
+| Frente | Decisión | Por qué |
+|---|---|---|
+| AIDA (venta) | **Es la puerta** | Ya es la superficie conversacional en producción |
+| Agente de suscripción | **Detrás de la puerta**, base separada | Dominio y gobierno distintos (F-479) — mezclarlo sube el riesgo donde el error es más caro |
+| Sales Coach | **Detrás de la puerta**, modo separado | Práctica y producción son modos distintos; ver 8.3 |
+| Salesforce | **Se consolida la interacción, no el sistema** | Que el copiloto registre por el asesor; el CRM sigue siendo el sistema de registro |
+| Material físico | **No se absorbe** | Otra audiencia: el cliente |
+| Feedback de jefatura | **No se absorbe** | Su valor no es informacional |
+
+### 8.3 Dos advertencias de secuencia
+
+**1. La puerta única sobre bases rotas empeora el diagnóstico, no lo mejora.** Si se pone un
+orquestador delante de tres agentes cuya calidad de conocimiento no se ha auditado, el asesor deja
+de saber **cuál** falló — y el equipo pierde la señal que hoy sí tiene ("AIDA no contesta bien").
+**F2 (auditoría de la base) va antes que cualquier consolidación de interfaz**, no después.
+
+**2. El entrenamiento no sobrevive al contacto con una herramienta rota.** Hoy el asesor nuevo se
+entrena en Sales Coach y luego trabaja en AIDA. Pero la mejor evidencia causal disponible (F-476)
+dice que **el mayor efecto de un copiloto se da precisamente en los novatos (+34%)** — es decir, la
+herramienta de la que más depende un asesor nuevo es **la de producción**, no la de entrenamiento.
+Si AIDA falla, el asesor nuevo aprende un modelo en Sales Coach que después no puede ejecutar.
+**Arreglar AIDA es precondición para que el valor de Sales Coach se materialice**, y probablemente
+la intervención de mayor retorno de todo el mapa. (No se sigue de esto que Sales Coach deba
+fusionarse con AIDA: la literatura de simulación en adultos —Sitzmann 2011, F-219— sostiene el valor
+de un espacio de práctica seguro y separado de la conversación real con cliente.)
+
+### 8.4 Lo que falta para cerrar esta sección
+
+- **No se ha visto ninguno de los tres agentes.** Todo §8 es diseño deducido de la descripción de
+  los frentes, no de una inspección.
+- **No se sabe si los tres comparten base de conocimiento o tienen la suya.** Es la pregunta que
+  decide si §8.1 describe la situación actual o la contradice — **P6**, ver §6.
+- **No se sabe quién es dueño de cada agente** (¿el mismo equipo? ¿TI, Producto, Academia?).
+  Determina si "una puerta de entrada" es un problema técnico o uno organizacional. **P7.**
 
 ---
 
