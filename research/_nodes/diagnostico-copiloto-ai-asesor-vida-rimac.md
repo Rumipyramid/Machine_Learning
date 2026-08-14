@@ -7,7 +7,13 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Versión: v1.0
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.1
+> (v1.1, mismo día, confirmado por Alejo: **se resuelve la ambigüedad de plataforma que v1.0
+> declaraba bloqueante**. La herramienta diagnosticada es **AIDA**, construida con **Microsoft
+> Copilot** y **ya desplegada en producción** para la fuerza de ventas. El prototipo sobre Claude
+> es otra cosa —el del Plan Piloto, cuyo diseño además cambió—. Cambio estructural: fija el objeto
+> del diagnóstico, activa con fuerza plena los límites técnicos de Copilot, y obliga a corregir una
+> fuente de insumos que v1.0 había asignado mal — ver §4.)
 > Origen: brief en borrador del usuario (Alejandro Rojas) el 2026-08-14, ordenado a pedido
 > explícito ("todo lo que te voy diciendo por ahora es emborrador, ayúdame a ordenarlo").
 > Fuentes nuevas: F-476 a F-478. Fuentes heredadas: el diagnóstico interno ya documentado en
@@ -17,6 +23,16 @@
 ---
 
 ## 0. Encuadre — qué es este proyecto y qué no
+
+**Objeto del diagnóstico: AIDA** — el copiloto de IA del asesor de Vida, **construido con
+Microsoft Copilot** y **ya desplegado en producción** para la fuerza de ventas (confirmado por
+Alejo, 2026-08-14).
+
+⚠️ **No confundir con el prototipo sobre Claude** del Plan Piloto (§8 de
+`[[proyecto-back-to-basics-ffvv-vida]]`), que es una herramienta distinta, creada para validar el
+modelo de venta, y cuyo diseño cambió. Este node **no** diagnostica ese prototipo. La confusión
+entre ambos estuvo documentada como hecho en el repositorio hasta el 2026-08-14 — ver la
+corrección v1.5 de ese node.
 
 **Es:** un diagnóstico de una herramienta **ya en producción**, con fallas reportadas por sus
 usuarios, cuya base de conocimiento se sospecha causa principal. El entregable inmediato es
@@ -48,8 +64,12 @@ cuarto depende de los tres.
 de una base de conocimientos desordenada, cargada con PPT, PDF, imágenes, documentos vacíos de
 diferentes formatos y Words".
 
-**Plataforma declarada:** construido "con las capacidades de Copilot". ⚠️ Ver §6 — hay una
-ambigüedad de plataforma sin resolver que condiciona parte del diagnóstico técnico.
+**Plataforma: confirmada.** AIDA está construida con **Microsoft Copilot** y desplegada en
+producción. ⭐ Esto **activa con fuerza plena** todos los límites técnicos de
+`[[arquitectura-conocimiento-agentes-copilot]]` — ya no son "principios que se transfieren", son
+**los techos exactos bajo los que AIDA opera hoy**: tablas no parseadas, 36.000 caracteres por
+archivo, ≤300 páginas totales, PDF escaneado ilegible, imagen sin alt-text invisible, y el techo de
+7 MB o 200 MB según licencia.
 
 **Expectativa declarada:** "que ayude al asesor durante su gestión de venta."
 
@@ -85,6 +105,25 @@ que los asesores dijeron por su cuenta hace semanas.
 **Lectura:** tres instrumentos independientes (encuesta, taller, brief de hoy) convergen en el
 mismo defecto — **inconsistencia**, no ausencia de información. Eso es una pista causal fuerte, y
 apunta a un mecanismo concreto: ver §3, capa A.
+
+⭐ **Hallazgo agregado en v1.1 — el asesor tiene (o iba a tener) dos IA en paralelo.** Al separar
+AIDA del prototipo del piloto aparece algo que ningún documento del proyecto había hecho explícito:
+AIDA **ya está desplegada** en la fuerza de ventas, y el prototipo sobre Claude sería **una segunda
+herramienta de IA** para el mismo asesor. Eso:
+
+- **contradice la premisa de diseño del Plan Piloto** — *"el asesor interactúa con una sola
+  herramienta"* (§8 de Back to Basics) — que describe el mundo del piloto, no el del campo;
+- **contradice el propio lineamiento del backlog** de *"centralizar funciones en el copiloto en vez
+  de sumar herramientas sueltas, cuidando no sobresaturar al asesor"*;
+- **cae de lleno en Dx3** (alta carga cognitiva y emocional del asesor), que es justamente el
+  diagnóstico que el proyecto dice estar atacando.
+
+No se sigue de esto que el prototipo sobre Claude esté mal planteado — se sigue que **la relación
+entre las dos herramientas es una decisión de diseño pendiente y no declarada**: ¿el prototipo
+reemplaza a AIDA, la alimenta, se fusiona con ella, o convive? Conviene resolverlo explícitamente
+antes de que el campo lo resuelva por su cuenta (que es lo que ya pasó con ChatGPT/Gemini).
+⚠️ El rediseño del piloto anunciado por Alejo el 2026-08-14 puede haber cambiado esto — pendiente
+de recibir la actualización.
 
 ---
 
@@ -147,10 +186,28 @@ producto regulado?"** separa la falla cosmética de la falla con riesgo: un erro
 exclusiones o precio dicho a un cliente no es un problema de calidad, es un problema de
 cumplimiento.
 
-**Fuente de preguntas reales, ya disponible:** el Plan Piloto (§8 de Back to Basics) mide como
-indicador *"consultas sin respuesta satisfactoria y temas más consultados"*, declarado como insumo
-directo para la v2 del contenido. **Ese indicador es exactamente el corpus de F1** — no hay que
-levantarlo de nuevo, hay que ir a buscarlo.
+**⚠️ Corrección de v1.1 — de dónde salen las preguntas reales.** La v1.0 de este node decía que el
+indicador del Plan Piloto (*"consultas sin respuesta satisfactoria y temas más consultados"*, §8 de
+Back to Basics) **era** el corpus de F1 y solo había que ir a buscarlo. **Eso era incorrecto**: ese
+indicador mide **el prototipo sobre Claude**, no AIDA. Sirve para el prototipo; no dice nada sobre
+la herramienta desplegada.
+
+Para AIDA, las fuentes de preguntas reales son otras, en este orden de preferencia:
+
+1. **Telemetría propia de AIDA** — logs de conversación de la herramienta en producción. Es la
+   fuente ideal: volumen real, sin sesgo de recuerdo, y permite medir frecuencia además de tipo.
+   **Verificar primero si existe y si es accesible** (ver P4 en §6); en muchos despliegues de
+   Copilot la analítica está disponible pero nadie la ha mirado.
+2. **Las 19 respuestas de la encuesta ya levantada** — contienen quejas textuales pero no los pares
+   pregunta/respuesta que el corpus necesita. Sirven para *tipificar* las fallas, no para medirlas.
+3. **Levantamiento dirigido con asesores** — pedir a un grupo pequeño que registre, durante una
+   semana, las consultas que AIDA no resolvió. Es lo más caro en tiempo de asesor: usarlo solo si 1
+   no existe, y respetando el principio de que la carga de recolección es de la CoE.
+4. **Las conversaciones que los asesores están teniendo con ChatGPT/Gemini** (§2) son, en la
+   práctica, **el registro de lo que AIDA no les resolvió**. Es la fuente más rica y la más difícil
+   de obtener por la vía formal — pero como diagnóstico cualitativo, preguntarle a un asesor "¿qué
+   le preguntas a ChatGPT que no le preguntas a AIDA?" es probablemente la pregunta más eficiente
+   de todo este proyecto.
 
 ---
 
@@ -244,25 +301,15 @@ cifras al proyecto sin rastrear el origen** — es exactamente la falla que
 
 ## 6. Preguntas abiertas — lo que hay que confirmar antes de avanzar
 
-**⚠️ P1 — La ambigüedad de plataforma (bloqueante para el diagnóstico técnico).**
-El brief dice que el copiloto está construido "con las capacidades de Copilot" (Microsoft). Pero
-`[[proyecto-back-to-basics-ffvv-vida]]` documenta que **AIDA es un prototipo construido sobre
-Claude**, que requiere asiento activo en el Team/Enterprise de Claude de RIMAC. Tres lecturas
-posibles, con consecuencias distintas:
+**✅ P1 — Plataforma: RESUELTA (2026-08-14, confirmado por Alejo).** AIDA es la herramienta
+**creada con Microsoft Copilot y ya desplegada** para la fuerza de ventas; el prototipo sobre Claude
+es el del Plan Piloto, una herramienta distinta cuyo diseño además cambió. **Era la lectura (a) de
+las tres que v1.0 planteaba** — es decir, hay dos herramientas de IA, y eso es en sí mismo un
+hallazgo de diagnóstico (ver §2). Consecuencia práctica: **todos los límites técnicos de
+`[[arquitectura-conocimiento-agentes-copilot]]` aplican a AIDA con fuerza plena**, no como
+principios transferidos.
 
-- **(a) Son dos herramientas distintas** — AIDA (Claude, entrenamiento/venta) y el Copiloto AI
-  (Microsoft, gestión de venta). Entonces el asesor tiene **dos asistentes de IA en paralelo**, lo
-  que contradice directamente la premisa del Plan Piloto de que *"el asesor interactúa con una sola
-  herramienta"*, y sería en sí mismo un hallazgo de diagnóstico de primer orden.
-- **(b) Es la misma herramienta y el node está desactualizado** — migró a Copilot. Entonces hay que
-  corregir el node de Back to Basics.
-- **(c) Arquitectura mixta** — base de conocimiento en SharePoint/M365, modelo por debajo distinto.
-
-**Por qué bloquea:** los límites duros de §3 del node de arquitectura (7 MB vs. 200 MB, 36.000
-caracteres, tablas no parseadas, PDF imagen ilegible) **son específicos de Copilot/M365**. Los
-principios de redacción y gobierno se transfieren a cualquier plataforma; los números no.
-
-**P2 — Licenciamiento.** ¿El agente opera con licencia de Microsoft 365 Copilot en el mismo tenant?
+**P2 — Licenciamiento (ahora es la pregunta técnica #1).** ¿El agente opera con licencia de Microsoft 365 Copilot en el mismo tenant?
 Es la diferencia entre poder usar archivos de 200 MB o solo de **menos de 7 MB** (F-470). Un deck
 comercial con imágenes supera 7 MB con facilidad — si la respuesta es "sin licencia en el tenant",
 buena parte de la base podría estar fuera de alcance por esta sola razón.
@@ -286,9 +333,10 @@ antes de gastar en lo demás**.
 
 | Paso | Qué | Depende de | Salida |
 |---|---|---|---|
-| **0** | Resolver P1 y P2 (plataforma y licencia) | — | Confirma qué límites técnicos aplican |
-| **1** | **F2 · Inventario de la base** — protocolo de 6 pasos (§6 del node de arquitectura) | P1, P3 | Cuánto de la base es inconsumible, duplicado o vacío |
-| **2** | **F1 · Corpus de fallas** — 20-30 casos reales, clasificados por capa A/B/C | Acceso a logs o a asesores (P5) | Línea base medible + mapa de huecos |
+| ~~**0**~~ | ~~Resolver P1 (plataforma)~~ | — | ✅ **Resuelto 2026-08-14: AIDA = Copilot, desplegada** |
+| **0b** | Resolver **P2 (licencia)** y **P3 (dónde vive la base)** | — | Define si aplica el techo de 7 MB o el de 200 MB |
+| **1** | **F2 · Inventario de la base** — protocolo de 7 pasos (§6 del node de arquitectura) | P2, P3 | Cuánto de la base es inconsumible, duplicado o vacío |
+| **2** | **F1 · Corpus de fallas** — 20-30 casos reales, clasificados por capa A/B/C | Telemetría de AIDA o levantamiento dirigido (§4, P5) | Línea base medible + mapa de huecos |
 | **3** | **Prueba A/B de capa** (§3) — pegar el fragmento correcto y volver a preguntar | Paso 2 | Veredicto: ¿es conocimiento o es comportamiento? |
 | **4** | Reanálisis de la encuesta **cortando por antigüedad** | Datos ya levantados | Confirma o refuta la tesis de segmentación de §5.1 |
 | **5** | Piloto de reescritura sobre **un** dominio acotado (p. ej. objeciones de cierre) | Pasos 1-3 | Prueba de que reformatear mueve la aguja, antes de reescribir todo |
@@ -314,8 +362,13 @@ efecto de catálogo, testear en la propia población).
 - **No se ha visto la base de conocimiento ni el agente.** Todo el diagnóstico técnico es
   deductivo, a partir de los formatos que el usuario enumeró y de la documentación de la
   plataforma.
-- **La ambigüedad de plataforma (P1) no está resuelta** y afecta la aplicabilidad de los límites
-  numéricos, aunque no la de los principios.
+- ~~La ambigüedad de plataforma (P1) no está resuelta.~~ **Resuelta el 2026-08-14** (AIDA =
+  Microsoft Copilot, desplegada). Queda en pie **P2**: sin saber el licenciamiento, no se sabe si el
+  techo de archivo aplicable es de 7 MB o de 200 MB — una diferencia de casi 30× que puede cambiar
+  sola el veredicto del inventario.
+- **El Plan Piloto (§8 de Back to Basics) cambió** y la actualización no se ha recibido. Todo lo que
+  este node dice sobre el piloto y sobre la relación entre AIDA y el prototipo describe el diseño de
+  julio 2026, no el vigente.
 - Los datos internos citados en §2 provienen de `proyecto-back-to-basics-ffvv-vida.md`, que a su vez
   los toma de documentos internos que **no viven en este repositorio**.
 - F-476 es de soporte al cliente, no de venta consultiva de vida: dirección sólida, magnitud a

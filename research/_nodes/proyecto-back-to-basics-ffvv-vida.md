@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-27 · Versión: v1.4
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-08-14 · Versión: v1.5
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -16,7 +16,8 @@
 > un simulador de práctica previo a un uso en producción ("AIDA Skill Trainer"), es ya la única
 > herramienta que el asesor usa en conversación real con el cliente, ver nota en §2 — cambio
 > estructural porque corrige cómo se describe una pieza del modelo mismo, no solo agrega
-> información nueva.
+> información nueva. ⚠️ **Esta corrección de v1.2 era ella misma incorrecta en su parte central —
+> ver v1.5.**
 > v1.3 (2026-07-25, confirmado por Alejo) cierra la ambigüedad de fondo del workstream de
 > contacto: **el lineamiento ya no es "5 estrategias en escalera con estados mixtos" — es
 > categórico: solo aparecen en el playbook estrategias que parten de consentimiento ya existente.**
@@ -26,6 +27,23 @@
 > CUA" deja de tratarse como problema a resolver con una estrategia nueva y pasa a tratarse como
 > compensado por calidad de conversación, no por cantidad de contactos — cambio estructural
 > porque redefine qué cuenta como estrategia válida, no solo actualiza un estado.)
+> **v1.5 (2026-08-14, confirmado por Alejo) — desconflación de AIDA y el prototipo del piloto.**
+> Cambio estructural: corrige qué **es** una de las piezas centrales del modelo, y la corrección
+> anterior (v1.2) era ella misma errónea. Este node venía describiendo **una sola** herramienta de
+> IA del asesor; son **dos**:
+> - **AIDA** — construida con **Microsoft Copilot**, **ya desplegada en producción** para la fuerza
+>   de ventas. Es la herramienta que mide la encuesta de §5 y la que sufre los problemas de base de
+>   conocimiento y de output que ahora se diagnostican en
+>   `[[diagnostico-copiloto-ai-asesor-vida-rimac]]`.
+> - **El prototipo del Plan Piloto (§8)** — construido sobre **Claude**, creado para validar el
+>   modelo de venta. **Su diseño de julio cambió**; actualización pendiente de recibir, por lo que
+>   todo §8 debe leerse como estado histórico, no vigente.
+>
+> Origen del error: el documento del Plan Piloto habla de "el agente"; v1.2 leyó ese "agente" como
+> AIDA y lo propagó a §2 y §8. Correcciones aplicadas en ambas secciones, marcadas en línea.
+> ⭐ **Hallazgo que se desprende de la desconflación** (no es solo higiene documental): la premisa
+> de diseño del Plan Piloto —"el asesor interactúa con una sola herramienta"— no describe el campo
+> real, donde AIDA ya está desplegada. Ver §2.
 > Fuentes: documento interno "Conocimiento construido — Proyecto FFVV Vida Individual (RIMAC)"
 > (consolidado al 2026-07-21, v1.0 de este node) + su continuación (consolidado al 2026-07-23) +
 > imagen del mapa AS IS 2026 compartida en la sesión (no persistida como archivo en el repo — ver
@@ -362,13 +380,32 @@ trayectoria dentro de RIMAC, no es un experimento aislado del CoE.
     con la tesis 10 del Lobo (no sobreclamar precisión de IA sin validación, caso Babylon
     Health). **Corrección (2026-07-24, vía Plan Piloto — ver §8):** esa secuencia
     "práctica antes que producción" no es lo que terminó construyéndose. El Plan Piloto describe
-    a AIDA como **"la única herramienta" del asesor**, usada en vivo durante la conversación real
-    con el cliente ("el agente vive dentro de Claude", con "los dos modos" sin detallar aún cuáles
-    son) — el playbook deja de ser un documento que el asesor consulta y pasa a ser la base de
-    conocimiento que alimenta al agente. No hay evidencia en el Plan Piloto de una fase previa de
-    solo-práctica; el riesgo que motivaba empezar por ahí (lanzar sin validar) sigue vigente, pero
-    ahora se gestiona distinto — vía el propio piloto de 10 asesores (§8), no vía una etapa de
-    simulador aislada.
+    al agente como **"la única herramienta" del asesor**, usada en vivo durante la conversación
+    real con el cliente ("el agente vive dentro de Claude", con "los dos modos" sin detallar aún
+    cuáles son) — el playbook deja de ser un documento que el asesor consulta y pasa a ser la base
+    de conocimiento que alimenta al agente. No hay evidencia en el Plan Piloto de una fase previa
+    de solo-práctica; el riesgo que motivaba empezar por ahí (lanzar sin validar) sigue vigente,
+    pero ahora se gestiona distinto — vía el propio piloto de 10 asesores (§8), no vía una etapa
+    de simulador aislada.
+    > ⚠️ **CORRECCIÓN DE LA CORRECCIÓN (2026-08-14, confirmada por Alejo).** El párrafo de arriba
+    > decía "el Plan Piloto describe **a AIDA** como la única herramienta"; **decía mal**. Ese
+    > "agente que vive dentro de Claude" es el **prototipo del piloto**, no AIDA. Son dos
+    > herramientas distintas y hay que mantenerlas separadas en todo material de este proyecto:
+    > - **AIDA** — creada con **Copilot**, **ya desplegada** para la fuerza de ventas. Es la que
+    >   reporta la encuesta de §5 (7/19 la usa siempre; "no da la información adecuada") y la que
+    >   se diagnostica en `[[diagnostico-copiloto-ai-asesor-vida-rimac]]`.
+    > - **El prototipo del piloto** — construido sobre **Claude**, para validar el modelo de venta.
+    >   Su diseño de julio cambió; actualización pendiente.
+    >
+    > ⭐ **Consecuencia que este node debe registrar como hallazgo, no como nota al pie:** la
+    > premisa de diseño del Plan Piloto —*"el asesor interactúa con una sola herramienta"*— **no
+    > describe la realidad de campo**. El asesor ya tiene AIDA desplegada; el prototipo del piloto
+    > sería una segunda IA en paralelo. Eso pertenece de lleno al Dx3 (carga cognitiva del asesor)
+    > y al lineamiento del backlog de "centralizar funciones en el copiloto en vez de sumar
+    > herramientas sueltas" — que hoy el propio proyecto estaría contradiciendo sin haberlo hecho
+    > explícito.
+    > ⚠️ Queda **sin confirmar** si el "AIDA Skill Trainer" mencionado arriba es la misma AIDA
+    > desplegada, una función suya, o un tercer artefacto. No asumirlo en ninguna dirección.
 - **Auditoría de materiales existentes** (confirmado por el usuario, 2026-07-24): material
   recibido de **Learning** (contenido de formación existente), de **Marketing** (piezas y
   campañas), material que **los propios asesores** habían construido por su cuenta, y material
@@ -822,9 +859,17 @@ sin decir qué arreglar).
   direccional, no concluyente).
 - Dependencia técnica: el tracking del prototipo no existe todavía (hay que habilitarlo antes del
   24/07); el acceso de los 10 asesores al agente requiere asiento activo en el Team/Enterprise de
-  Claude de RIMAC (a confirmar antes del 24/07) — **confirma como hecho técnico concreto** lo que
-  la corrección de §2 ya señalaba: AIDA es un prototipo construido sobre Claude, de uso en vivo,
-  no un simulador aislado.
+  Claude de RIMAC (a confirmar antes del 24/07).
+  > ⚠️ **CORRECCIÓN (2026-08-14, confirmada por Alejo — ver v1.5 en la cabecera).** Esta viñeta
+  > decía antes que este hecho técnico "confirma que AIDA es un prototipo construido sobre
+  > Claude". **Es falso, y era una conflación de dos herramientas distintas.** El agente del Plan
+  > Piloto —el que requiere asiento en el Team/Enterprise de Claude— es un **prototipo construido
+  > sobre Claude**, hecho para este piloto. **AIDA es otra cosa: la herramienta creada con
+  > Copilot que ya está desplegada en producción para la fuerza de ventas.** El documento del
+  > Plan Piloto habla de "el agente" y este node leyó "el agente" como AIDA; no lo es.
+  > ⚠️ **Además, el Plan Piloto de esta sección cambió** (avisado por Alejo el 2026-08-14,
+  > actualización pendiente de recibir): tratar todo el §8 como **descripción histórica del
+  > diseño de julio 2026**, no como el plan vigente.
 - **Vacíos de contenido conocidos, declarados explícitamente por el propio Plan Piloto: "La
   Estrategia de Contacto Inicial (CUA) sigue pendiente."** Esto **corrobora de forma
   independiente** el hallazgo de la revisión directa del playbook real (línea 131,
@@ -889,9 +934,10 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   19 asesores: "no da la información adecuada"; Taller de Manejo de Objeciones: "consistencia del
   copiloto de IA"; backlog de corto plazo, frente #1). Ese node hereda de aquí los datos primarios y
   el Plan Piloto (§8), cuyo indicador de "consultas sin respuesta satisfactoria" es su insumo
-  directo. ⚠️ Levanta además una ambigüedad que este node debe resolver: aquí AIDA se documenta como
-  prototipo **sobre Claude**, mientras el brief del Copiloto AI declara plataforma **Copilot** — ver
-  §6/P1 de ese node.
+  directo. ⚠️ **Resolvió una ambigüedad que este node tenía mal documentada:** aquí AIDA se
+  describía como prototipo **sobre Claude**; es falso — AIDA es la herramienta de **Copilot ya
+  desplegada**, y el prototipo sobre Claude es el del Plan Piloto. Ver la corrección v1.5 en la
+  cabecera y las notas en línea de §2 y §8.
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC — catálogo y coberturas]] —
   catálogo de qué cubre y cuánto cuesta cada producto real (VFP, Plan Vida Flexible, Vida
   Contigo, Vida Temporal Total); insumo directo del Bloque 4 del Playbook del Asesor (§4 de ese
