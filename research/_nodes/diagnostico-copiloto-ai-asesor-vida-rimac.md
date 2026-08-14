@@ -7,7 +7,14 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.6
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.7
+> (v1.7: §13 — **trabajo de campo con asesores**, a propuesta de Alejo. Dos correcciones de fondo:
+> el campo **alimenta el banco de preguntas del protocolo, no lo sigue** (el banco actual es
+> sintético, deducido de la matriz), y hay que preguntar por **incidentes concretos, no por
+> opiniones** — F-488 (técnica del incidente crítico) sobre la base de F-257, que documenta ~39
+> puntos de brecha entre percepción y desempeño real con herramientas de IA. Nombra además el hueco
+> que ninguna telemetría cubre —**qué dejaron de preguntar**— y la deuda de credibilidad con
+> asesores ya consultados dos veces.)
 > (v1.6: §12 — **diseño de validación de los fixes**, a propuesta de Alejo. Separa **dos
 > experimentos** que la propuesta unía: la re-corrida del banco de preguntas contra la base
 > arreglada —que no necesita asesores y es la **compuerta**— y el piloto de desempeño con asesores.
@@ -912,6 +919,129 @@ node de tendencias es también la evidencia que más peso recibe ahí.
 - **No resuelve la contradicción aguas arriba** (§9). Si el modelo de venta no es efectivamente
   canónico para todos los frentes, la base volverá a divergir y el efecto medido se degradará con el
   tiempo. **El piloto mide el fix, no lo sostiene.**
+
+---
+
+## 13. Trabajo de campo con asesores (v1.7)
+
+**Propuesta de Alejo (2026-08-14):** incorporar entrevistas y shadowing con asesores dentro de la
+exploración, dado que quedan preguntas que solo ellos pueden responder.
+
+Correcto, y con dos precisiones que cambian cuándo se hace y cómo se pregunta.
+
+### 13.1 Criterio: reservar el campo para lo que nada más puede responder
+
+El asesor es un recurso escaso y ya fue consultado dos veces (encuesta de 19, taller de 36). Todo lo
+que pueda levantarse de telemetría o de la base **no debe preguntársele** — es el principio que el
+propio Plan Piloto declara: *la carga de recolección es de la CoE, no del asesor*.
+
+Seis cosas que **solo el campo entrega**:
+
+1. **Qué le preguntan a ChatGPT/Gemini que no le preguntan a AIDA.** Es el mapa del hueco sin
+   auditar un solo archivo.
+2. ⭐ **Qué dejaron de preguntar.** El hallazgo más importante y el más invisible: después de
+   suficientes malas respuestas, la gente deja de hacer categorías enteras de pregunta. **La
+   telemetría tiene un problema de supervivencia — no puede mostrar una pregunta que nunca se
+   hizo.** Ninguna métrica de logs detecta esto; solo se detecta preguntando.
+3. **Qué hacen cuando sospechan que la respuesta está mal.** ¿Verifican? ¿Con quién? ¿La usan igual?
+   Es conducta de rodeo, invisible en logs.
+4. **En qué momento del flujo consultan y por qué ahí.** Los timestamps dan la hora, no la
+   situación.
+5. **Qué contradicciones han vivido en carne propia.** El asesor es el punto donde todas las
+   instanciaciones del modelo se encuentran (§9) — **sabe dónde están las contradicciones porque las
+   sufre.** Es la fuente más eficiente para F2b.
+6. **La carga emocional.** El mandato del copiloto la nombra explícitamente (§1). No hay telemetría
+   que la mida.
+
+### 13.2 ⭐ Corrección de secuencia: el campo alimenta el protocolo, no lo sigue
+
+**Esto corrige el instrumento tal como está hoy.** El banco de preguntas del Bloque B
+(`_outputs/protocolo-interrogacion-aida-vida.md`) lo construí **deduciéndolo de la matriz de
+productos** — son preguntas verificables, pero **sintéticas**: son las que *deberían* hacerse, no
+las que los asesores *hacen*.
+
+Un banco sintético mide lo que a nosotros nos parece importante. Un banco derivado del campo mide lo
+que realmente rompe la venta. **El trabajo de campo va antes o en paralelo a la corrida del
+protocolo, no después** — y su salida principal es el banco de preguntas real.
+
+**Consecuencia práctica:** el Bloque B queda marcado como provisional. Después del campo se
+reemplaza o se amplía con las 20-30 preguntas más frecuentes y más costosas que reporten los
+asesores, conservando las de control (producto inexistente, duplicado de tres nombres, cifra con
+riesgo regulatorio) porque esas sí tienen que ser diseñadas.
+
+### 13.3 Cómo preguntar: incidentes, no opiniones
+
+⚠️ **Preguntar "¿te ayuda AIDA?" produce una evaluación, y las evaluaciones autorreportadas de
+herramientas de IA están sistemáticamente desalineadas de la conducta real.** El proyecto ya tiene
+la evidencia dura de eso: **F-257** (METR) — desarrolladores fueron **19% más lentos** con IA
+mientras estimaban ser **20% más rápidos**: una brecha de ~39 puntos entre percepción y desempeño.
+
+La corrección es metodológica y tiene nombre: **técnica del incidente crítico** (Flanagan 1954,
+**F-488**). Se pide **el último caso concreto en que ocurrió**, con contexto, conducta y
+consecuencia. El asesor recuerda lo que pasó en vez de juzgar la herramienta, y eso esquiva la
+brecha.
+
+| ❌ En vez de preguntar | ✅ Preguntar |
+|---|---|
+| ¿AIDA te da buena información? | Cuéntame **la última vez** que le preguntaste algo y la respuesta no te sirvió. ¿Qué preguntaste? ¿Qué te dijo? ¿Qué hiciste después? |
+| ¿Confías en AIDA? | ¿Cuándo fue **la última vez** que verificaste una respuesta suya por otro lado? ¿Con qué la verificaste? |
+| ¿Usas ChatGPT? | ¿Cuál fue **lo último** que le preguntaste a ChatGPT o Gemini para el trabajo? ¿Por qué a esa y no a AIDA? |
+| ¿Te falta información? | ¿Hay algo que **antes le preguntabas y ya no**? ¿Qué pasó? |
+| ¿Encuentras información contradictoria? | Cuéntame **la última vez** que dos fuentes de RIMAC te dijeron cosas distintas. ¿Cuáles eran? ¿A cuál le hiciste caso? |
+
+La última fila es doble: produce insumo para F2b **y** revela el criterio informal que el asesor usa
+para arbitrar — que hoy es la única regla de resolución de contradicciones que existe.
+
+### 13.4 A quién — el muestreo importa más que el número
+
+De la encuesta ya se conoce la variación: AIDA usada "siempre" por 7/19, **"nunca" por 1/19**.
+
+- ⭐ **El que no la usa nunca es la entrevista más informativa que existe.** Decidió que no valía la
+  pena y puede decir exactamente por qué. Una sola conversación con esa persona probablemente rinde
+  más que cinco con usuarios satisfechos.
+- **Usuarios intensivos** (del grupo de 7): qué sí les funciona — hay que saber qué **no** romper.
+- **Por antigüedad**, obligatorio: novatos vs. expertos usan la herramienta distinto y el efecto de
+  un copiloto se concentra en los primeros (F-476). Sin este corte, el campo describe un asesor
+  promedio que no existe.
+- **Lima y provincias**: el Plan Piloto ya usaba esa proporción (6 Lima, 2 Arequipa, 2
+  Cuzco/Trujillo) y provincia se cubría por videollamada.
+
+**Volumen sugerido:** 8-12 entrevistas de incidente crítico (~45 min) + shadowing de 4-6 asesores.
+Lo suficiente para saturar los modos de falla, no para estimar frecuencias — la frecuencia sale de
+la telemetría y del protocolo, no del campo.
+
+### 13.5 Shadowing: qué mirar
+
+El diseño **ya existe** en el Plan Piloto y se reutiliza: shadowing por cobertura (todos al menos
+una vez, provincia por videollamada), **bitácora post-conversación de 3 preguntas / 30 segundos por
+WhatsApp**, y cierres de semana reflexivos de 10 minutos.
+
+Qué observar específicamente para este diagnóstico, que la entrevista no da:
+
+- **El momento exacto de la consulta** — ¿antes, durante o después de hablar con el cliente?
+- **El salto entre herramientas** — la secuencia real: AIDA → Salesforce → WhatsApp → ChatGPT →
+  material físico. Ahí está la carga que el copiloto debería absorber, y se ve, no se recuerda.
+- **Qué hace con la respuesta** — ¿la copia, la reformula, la descarta, la verifica?
+- **Cuánto tarda** en obtener algo usable, y cuántos intentos hace.
+- **Qué no consulta** aunque le habría servido — visible solo en observación, y conecta con 13.1.2.
+
+### 13.6 Dos riesgos que hay que gestionar
+
+**1 · Ser observado cambia la conducta.** Un asesor acompañado va a usar AIDA más de lo habitual,
+para verse alineado. **El shadowing sobreestima el uso.** Mitigación: triangular con telemetría,
+decir explícitamente que no se evalúa a la persona sino a la herramienta, y no compartir los
+registros individuales con jefaturas.
+
+**2 · ⭐ Deuda de credibilidad — el riesgo relacional, y es el más serio.** Los asesores **ya
+opinaron dos veces**: 19 respondieron una encuesta y 30 asistieron a un taller donde pidieron
+mejoras concretas. Si se les vuelve a preguntar y no ven que lo anterior sirvió de algo, **el costo
+no es que respondan mal: es que dejen de responder**, y eso cierra la única fuente de estas seis
+preguntas.
+
+**Obligación que se sigue de esto:** abrir cada entrevista contando **qué produjo lo que dijeron
+antes** — que su queja sobre AIDA está documentada, que originó este proyecto, y qué se está
+haciendo. No es cortesía: es la condición para que la segunda ronda tenga la misma calidad que la
+primera.
 
 ---
 

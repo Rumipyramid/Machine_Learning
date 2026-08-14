@@ -160,7 +160,7 @@
   <h1>Diagnóstico de <em>AIDA</em></h1>
   <p class="standfirst">Estrategia para establecer qué falla en el copiloto del asesor, con qué frecuencia y en qué capa — antes de invertir en arreglarlo.</p>
   <div class="meta">
-    <span>v2.1 · 14 ago 2026</span><span>CoE Diseño Estratégico</span><span>Estado: instrumentos listos, medición no iniciada</span>
+    <span>v2.2 · 14 ago 2026</span><span>CoE Diseño Estratégico</span><span>Estado: instrumentos listos, medición no iniciada</span>
   </div>
 </header>
 
@@ -324,6 +324,7 @@
         <li>Detección de contradicciones entre frentes sobre los 10 temas más consultados</li>
         <li>Prueba del fragmento pegado, para separar conocimiento de comportamiento</li>
         <li>Reanálisis de la encuesta cortando por antigüedad — datos ya levantados, una tarde de trabajo</li>
+        <li><strong>Entrevistas de incidente crítico y shadowing</strong> — ver §07; va antes o en paralelo a la Fase 1, porque alimenta su banco de preguntas</li>
       </ul>
     </div>
   </div>
@@ -339,7 +340,51 @@
 </section>
 
 <section>
-  <div class="sechead"><span class="secnum">07</span><h2>Lo que el copiloto no puede resolver</h2></div>
+  <div class="sechead"><span class="secnum">07</span><h2>Trabajo de campo con asesores</h2></div>
+  <div class="col">
+    <p>Quedan preguntas que solo los asesores pueden responder, y la exploración necesita entrevistas y shadowing. Con dos precisiones que cambian <em>cuándo</em> se hace y <em>cómo</em> se pregunta.</p>
+    <h3>Reservarlo para lo que nada más puede responder</h3>
+    <p>El asesor ya fue consultado dos veces. Todo lo que salga de telemetría o de la base <strong>no debe preguntársele</strong>. Seis cosas que solo el campo entrega:</p>
+    <ul class="plain">
+      <li><strong>Qué le preguntan a ChatGPT que no le preguntan a AIDA</strong> — el mapa del hueco sin auditar un archivo.</li>
+      <li><strong>Qué dejaron de preguntar.</strong> Después de suficientes malas respuestas, la gente abandona categorías enteras de pregunta. <strong>La telemetría no puede mostrar una pregunta que nunca se hizo</strong> — solo se detecta preguntando.</li>
+      <li><strong>Qué hacen cuando sospechan que la respuesta está mal.</strong> Conducta de rodeo, invisible en logs.</li>
+      <li><strong>En qué momento del flujo consultan y por qué ahí.</strong> Los timestamps dan la hora, no la situación.</li>
+      <li><strong>Qué contradicciones han vivido en carne propia.</strong> El asesor es el punto donde todas las versiones del modelo se encuentran — sabe dónde están porque las sufre.</li>
+      <li><strong>La carga emocional.</strong> El mandato del copiloto la nombra, y no hay telemetría que la mida.</li>
+    </ul>
+    <div class="note">
+      <span class="lab">Corrección de secuencia</span>
+      <p>El banco de preguntas del protocolo está <strong>deducido de la matriz de productos</strong>: son preguntas verificables, pero sintéticas — las que <em>deberían</em> hacerse, no las que <em>se hacen</em>. Un banco sintético mide lo que a nosotros nos parece importante; uno derivado del campo mide lo que rompe la venta. <strong>El campo va antes o en paralelo a la corrida del protocolo, no después</strong>, y su salida principal es el banco real.</p>
+    </div>
+    <h3>Preguntar por incidentes, no por opiniones</h3>
+    <p>Preguntar «¿te ayuda AIDA?» produce una evaluación, y las evaluaciones autorreportadas de herramientas de IA están sistemáticamente desalineadas de la conducta real: en el estudio más citado sobre esto, los usuarios fueron <strong>19% más lentos con IA mientras estimaban ser 20% más rápidos</strong> — una brecha de casi 40 puntos. La corrección tiene nombre y es de 1954: pedir <strong>el último caso concreto</strong>, con contexto, conducta y consecuencia.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>En vez de</th><th>Preguntar</th></tr></thead>
+    <tbody>
+      <tr><td>¿AIDA te da buena información?</td><td>Cuéntame <strong>la última vez</strong> que le preguntaste algo y no te sirvió. ¿Qué preguntaste, qué te dijo, qué hiciste después?</td></tr>
+      <tr><td>¿Confías en AIDA?</td><td>¿Cuándo fue <strong>la última vez</strong> que verificaste una respuesta suya por otro lado? ¿Con qué la verificaste?</td></tr>
+      <tr><td>¿Usas ChatGPT?</td><td>¿Cuál fue <strong>lo último</strong> que le preguntaste a ChatGPT para el trabajo? ¿Por qué a esa y no a AIDA?</td></tr>
+      <tr><td>¿Te falta información?</td><td>¿Hay algo que <strong>antes le preguntabas y ya no</strong>? ¿Qué pasó?</td></tr>
+      <tr><td>¿Encuentras información contradictoria?</td><td>Cuéntame <strong>la última vez</strong> que dos fuentes de RIMAC te dijeron cosas distintas. ¿A cuál le hiciste caso?</td></tr>
+    </tbody>
+  </table></div>
+  <div class="col">
+    <p>La última pregunta rinde doble: alimenta la detección de contradicciones <em>y</em> revela el criterio informal con que el asesor arbitra — que hoy es la única regla de resolución que existe.</p>
+    <h3>A quién, y qué mirar</h3>
+    <p>De la encuesta se sabe que AIDA se usa «siempre» en 7 de 19 casos y <strong>«nunca» en 1</strong>. Ese asesor que no la usa es probablemente <strong>la entrevista más informativa disponible</strong>: decidió que no valía la pena y puede decir por qué. Además hay que cubrir usuarios intensivos, cortar por antigüedad — novatos y expertos usan la herramienta distinto — y cubrir Lima y provincias. Ocho a doce entrevistas y shadowing de cuatro a seis asesores alcanzan para saturar los modos de falla; la frecuencia sale de la telemetría, no del campo.</p>
+    <p>En shadowing, lo que la entrevista no da: el momento exacto de la consulta, <strong>el salto entre herramientas</strong> — la secuencia real de AIDA a Salesforce a WhatsApp a ChatGPT al material físico, que es la carga que el copiloto debería absorber —, qué hace con la respuesta, cuánto tarda, y qué no consulta aunque le habría servido.</p>
+    <div class="note alert">
+      <span class="lab">El riesgo más serio no es metodológico</span>
+      <p>Los asesores <strong>ya opinaron dos veces</strong>: 19 en una encuesta, 30 en un taller donde pidieron mejoras concretas. Si se les pregunta de nuevo y no ven que lo anterior sirvió, el costo no es que respondan mal — <strong>es que dejen de responder</strong>, y eso cierra la única fuente de estas seis preguntas. Cada entrevista debe abrir contando qué produjo lo que dijeron antes: que su queja está documentada, que originó este proyecto, y qué se está haciendo con ella.</p>
+      <p>Aparte, ser observado infla el uso: un asesor acompañado usará AIDA más de lo habitual. Triangular con telemetría y dejar claro que se evalúa la herramienta, no a la persona.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">08</span><h2>Lo que el copiloto no puede resolver</h2></div>
   <div class="col">
     <p>Al copiloto se le pide reducir la carga de leer información contradictoria. <strong>Ningún sistema de recuperación puede hacer eso.</strong> Frente a dos fuentes que se contradicen no dice «hay dos versiones»: toma una y responde con seguridad.</p>
     <p>Es decir, no elimina la contradicción — <strong>la oculta</strong>, y le quita al asesor incluso la señal de que había conflicto. Cuando leía dos documentos contradictorios, al menos veía el problema.</p>
@@ -353,7 +398,7 @@
 </section>
 
 <section>
-  <div class="sechead"><span class="secnum">08</span><h2>Cómo se valida que los fixes sirvieron</h2></div>
+  <div class="sechead"><span class="secnum">09</span><h2>Cómo se valida que los fixes sirvieron</h2></div>
   <div class="col">
     <p>Una vez logrado el primer set de arreglos — documentación en formato consumible, cuerpo de conocimiento unificado y no contradictorio, más lo que salga de la exploración — hay que probar que sirvieron. La propuesta natural es un piloto que compare asesores con la herramienta antigua y con la nueva. Es la dirección correcta, pero <strong>son dos experimentos, no uno</strong>, y confundirlos gasta el capital político de la fuerza de venta en una prueba que podía hacerse sin ella.</p>
   </div>
@@ -399,7 +444,7 @@
 </section>
 
 <section>
-  <div class="sechead"><span class="secnum">09</span><h2>Riesgos de esta estrategia</h2></div>
+  <div class="sechead"><span class="secnum">10</span><h2>Riesgos de esta estrategia</h2></div>
   <div class="col">
     <ul class="plain">
       <li><strong>Que el framework no sea el asumido.</strong> Si AIDA no corre sobre Copilot, los techos técnicos documentados no aplican y esa parte del diagnóstico se rehace. Es la razón por la que la Fase 0 existe.</li>

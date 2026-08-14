@@ -1,6 +1,6 @@
 # Protocolo de interrogación de AIDA — ramo Vida
 
-**Instrumento de diagnóstico.** Versión 0.2 · 2026-08-14
+**Instrumento de diagnóstico.** Versión 0.3 · 2026-08-14
 Construido sobre `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md` (v1.4),
 `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` (v1.0),
 `_nodes/arquitectura-conocimiento-agentes-copilot.md` (v1.1) y
@@ -81,6 +81,13 @@ se mezclan.
 con Sí no es un problema de calidad: es de cumplimiento, y escala distinto.
 
 ### 3.2 Banco de preguntas — Vida
+
+⚠️ **PROVISIONAL — v0.3.** Este banco está **deducido de la matriz de productos**, no levantado de
+los asesores: son preguntas que *deberían* hacerse, no las que *se hacen*. Mide lo que a nosotros
+nos parece importante, no lo que rompe la venta. **Se reemplaza o amplía con las 20-30 preguntas
+reales que salgan del trabajo de campo** (§13 del node de diagnóstico), conservando las de control
+—B5, B7, B12— porque esas sí tienen que ser diseñadas. El campo va **antes o en paralelo**, no
+después.
 
 Diseñadas para que **la respuesta correcta sea verificable** contra la matriz.
 
