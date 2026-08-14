@@ -1,0 +1,373 @@
+<title>Diagnóstico de AIDA</title>
+<style>
+  :root{
+    --paper:#F7F8F7; --ink:#16232B; --muted:#63757D; --rule:#D6DDDC;
+    --accent:#0F6E6E; --accent-soft:#E4EFEE; --signal:#A84A1C; --signal-soft:#F6E9E1;
+    --card:#FFFFFF; --rail:#EEF2F1;
+    --ok:#2F6B4F; --warn:#A8791C; --crit:#9E3320;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+    --measure:68ch;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#101A1E; --ink:#E3EAE9; --muted:#93A3A9; --rule:#26343A;
+      --accent:#57B7B1; --accent-soft:#152C2E; --signal:#DD8A57; --signal-soft:#2C2019;
+      --card:#16232799; --rail:#162226;
+      --ok:#6FBF93; --warn:#D8AE55; --crit:#E0705A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101A1E; --ink:#E3EAE9; --muted:#93A3A9; --rule:#26343A;
+    --accent:#57B7B1; --accent-soft:#152C2E; --signal:#DD8A57; --signal-soft:#2C2019;
+    --card:#16232799; --rail:#162226;
+    --ok:#6FBF93; --warn:#D8AE55; --crit:#E0705A;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:var(--serif); font-size:17px; line-height:1.62;
+    margin:0; padding:0 5vw 6rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px; margin:0 auto}
+  .col{max-width:var(--measure)}
+
+  /* ── masthead ── */
+  header.mast{
+    padding:4.5rem 0 2rem; border-bottom:2px solid var(--ink);
+    display:flex; flex-direction:column; gap:1.1rem;
+  }
+  .kicker{
+    font-family:var(--mono); font-size:.7rem; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--accent); display:flex; flex-wrap:wrap; gap:.9rem;
+  }
+  h1{
+    font-size:clamp(2.3rem,5.2vw,3.5rem); line-height:1.06; margin:0;
+    font-weight:400; letter-spacing:-.018em; text-wrap:balance;
+  }
+  h1 em{font-style:italic; color:var(--accent)}
+  .standfirst{font-size:1.14rem; color:var(--muted); margin:0; max-width:60ch; text-wrap:pretty}
+  .meta{
+    font-family:var(--mono); font-size:.72rem; color:var(--muted);
+    display:flex; flex-wrap:wrap; gap:.4rem 1.4rem; padding-top:.4rem;
+  }
+
+  /* ── sections ── */
+  section{padding:3.4rem 0 .6rem; border-bottom:1px solid var(--rule)}
+  section:last-of-type{border-bottom:0}
+  .sechead{display:flex; gap:1rem; align-items:baseline; margin-bottom:1.4rem}
+  .secnum{
+    font-family:var(--mono); font-size:.72rem; color:var(--accent);
+    letter-spacing:.1em; padding-top:.45rem; flex:none;
+  }
+  h2{font-size:1.72rem; font-weight:400; letter-spacing:-.012em; margin:0; text-wrap:balance}
+  h3{
+    font-family:var(--mono); font-size:.76rem; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--muted); margin:2.3rem 0 .7rem; font-weight:600;
+  }
+  p{margin:0 0 1.05rem}
+  strong{font-weight:700}
+  a{color:var(--accent)}
+
+  /* ── evidence chips ── */
+  .chip{
+    font-family:var(--mono); font-size:.63rem; letter-spacing:.09em; text-transform:uppercase;
+    padding:.2rem .5rem; border-radius:2px; white-space:nowrap; font-weight:600;
+    border:1px solid currentColor;
+  }
+  .c-ver{color:var(--ok)} .c-dec{color:var(--warn)} .c-ded{color:var(--accent)} .c-hip{color:var(--crit)}
+
+  /* ── tables ── */
+  .tw{overflow-x:auto; margin:1.2rem 0 1.6rem; border:1px solid var(--rule); border-radius:3px; background:var(--card)}
+  table{border-collapse:collapse; width:100%; min-width:600px; font-size:.9rem}
+  th,td{padding:.72rem .85rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--rule)}
+  tr:last-child td{border-bottom:0}
+  th{
+    font-family:var(--mono); font-size:.66rem; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--muted); font-weight:600; background:var(--rail); white-space:nowrap;
+  }
+  td.n{font-family:var(--mono); font-size:.78rem; color:var(--accent); white-space:nowrap; font-weight:600}
+
+  /* ── causal chain ── */
+  .chain{list-style:none; padding:0; margin:1.4rem 0 0; counter-reset:lk}
+  .chain li{
+    position:relative; padding:0 0 1.7rem 3rem; counter-increment:lk;
+    border-left:2px solid var(--rule); margin-left:.9rem;
+  }
+  .chain li:last-child{border-left-color:transparent; padding-bottom:.4rem}
+  .chain li::before{
+    content:counter(lk); position:absolute; left:-.95rem; top:-.1rem;
+    width:1.85rem; height:1.85rem; border-radius:50%;
+    background:var(--accent); color:var(--paper);
+    font-family:var(--mono); font-size:.76rem; font-weight:700;
+    display:grid; place-items:center;
+  }
+  .chain b{display:block; font-size:1.02rem; margin-bottom:.25rem}
+  .chain .test{
+    font-family:var(--mono); font-size:.76rem; color:var(--muted);
+    margin-top:.5rem; padding-left:.7rem; border-left:2px solid var(--accent);
+  }
+  .chain .test span{color:var(--accent); font-weight:600}
+
+  /* ── callouts ── */
+  .note{
+    background:var(--accent-soft); border-left:3px solid var(--accent);
+    padding:1rem 1.15rem; margin:1.4rem 0; border-radius:0 3px 3px 0;
+  }
+  .note.alert{background:var(--signal-soft); border-left-color:var(--signal)}
+  .note p:last-child{margin-bottom:0}
+  .note .lab{
+    font-family:var(--mono); font-size:.66rem; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--accent); font-weight:700; display:block; margin-bottom:.35rem;
+  }
+  .note.alert .lab{color:var(--signal)}
+
+  /* ── phases ── */
+  .phase{
+    display:grid; grid-template-columns:auto 1fr; gap:0 1.4rem;
+    padding:1.15rem 0; border-top:1px solid var(--rule);
+  }
+  .phase:first-of-type{border-top:0}
+  .ph-n{
+    font-family:var(--mono); font-size:.68rem; letter-spacing:.09em; color:var(--paper);
+    background:var(--ink); padding:.25rem .5rem; border-radius:2px; height:fit-content;
+    white-space:nowrap; font-weight:700;
+  }
+  .phase h4{margin:0 0 .35rem; font-size:1.08rem; font-weight:700; letter-spacing:-.005em}
+  .phase p{margin:0 0 .5rem; font-size:.95rem}
+  .phase ul{margin:.3rem 0 0; padding-left:1.1rem; font-size:.93rem}
+  .phase li{margin-bottom:.3rem}
+  .gate{font-family:var(--mono); font-size:.74rem; color:var(--signal); font-weight:600}
+
+  ul.plain{padding-left:1.15rem; margin:.6rem 0 1.1rem}
+  ul.plain li{margin-bottom:.5rem}
+
+  footer{padding:3rem 0 0; font-family:var(--mono); font-size:.73rem; color:var(--muted); line-height:1.7}
+
+  @media (max-width:620px){
+    body{font-size:16px; padding:0 6vw 4rem}
+    .phase{grid-template-columns:1fr; gap:.5rem}
+    .sechead{flex-direction:column; gap:.2rem}
+  }
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker"><span>RIMAC · Vida Individual</span><span>Asociado a Back to Basics</span></div>
+  <h1>Diagnóstico de <em>AIDA</em></h1>
+  <p class="standfirst">Estrategia para establecer qué falla en el copiloto del asesor, con qué frecuencia y en qué capa — antes de invertir en arreglarlo.</p>
+  <div class="meta">
+    <span>v2.0 · 14 ago 2026</span><span>CoE Diseño Estratégico</span><span>Estado: instrumentos listos, medición no iniciada</span>
+  </div>
+</header>
+
+<section>
+  <div class="sechead"><span class="secnum">01</span><h2>Qué se diagnostica</h2></div>
+  <div class="col">
+    <p><strong>AIDA</strong> — el copiloto de IA ya desplegado en producción para la fuerza de ventas. Tiene fallas de output reportadas por sus usuarios y se alimenta de una base de conocimiento cargada con PPT, PDF, imágenes, documentos vacíos y Words.</p>
+    <div class="note alert">
+      <span class="lab">No confundir</span>
+      <p>AIDA <strong>no</strong> es el prototipo del Plan Piloto. Ese es una herramienta distinta, construida sobre Claude para validar el modelo de venta, y su diseño cambió. El repositorio del proyecto documentaba ambos como uno solo hasta el 14 de agosto.</p>
+    </div>
+    <p>Y un hallazgo que reencuadra el alcance: <strong>AIDA no es una herramienta de Vida.</strong> Declara cinco subagentes — Salud, Vehicular, Vida/Financiero, Operaciones y SalesCoach — de los cuales <strong>solo uno es Vida</strong>. Es una herramienta corporativa multi-ramo que el asesor de Vida usa, no un copiloto suyo.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">02</span><h2>Qué sabemos, y con cuánta confianza</h2></div>
+  <div class="col"><p>La estrategia se apoya en cuatro niveles de evidencia que <strong>no deben mezclarse al comunicar hallazgos</strong>. Buena parte del riesgo del proyecto está en presentar como hecho algo que es autorreporte de la propia herramienta.</p></div>
+  <div class="tw"><table>
+    <thead><tr><th>Nivel</th><th>Qué incluye</th><th>Cómo tratarlo</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="chip c-ver">Verificado</span></td>
+        <td>Encuesta a 19 asesores: AIDA usada «siempre» por <strong>7/19</strong>, muy por debajo de Salesforce (16/19). Quejas textuales: «no da la información adecuada», «no contesta bien casi nunca». Taller de objeciones pide «consistencia del copiloto». Asesores usan ChatGPT/Gemini por su cuenta para cubrir huecos.</td>
+        <td>Es dato primario. Se puede citar sin reservas.</td>
+      </tr>
+      <tr>
+        <td><span class="chip c-dec">Declarado</span></td>
+        <td>La arquitectura de 5 subagentes, las reglas operativas («tengo prohibido responder de memoria»), los productos que dice manejar y la función <code>transfer_to_agent</code> — todo proviene de <strong>AIDA describiéndose a sí misma</strong>.</td>
+        <td>Hipótesis a triangular, nunca documentación. Un modelo puede estar leyendo su prompt o reconstruyendo un patrón genérico, y no distingue entre ambos al responder.</td>
+      </tr>
+      <tr>
+        <td><span class="chip c-ded">Deducido</span></td>
+        <td>Los techos técnicos: sin tablas parseables, 36.000 caracteres por archivo, ≤300 páginas totales, PDF escaneado ilegible, imagen sin alt-text invisible, 7 MB o 200 MB según licencia.</td>
+        <td><strong>En suspenso</strong> hasta resolver sobre qué plataforma corre AIDA realmente.</td>
+      </tr>
+      <tr>
+        <td><span class="chip c-hip">Hipótesis</span></td>
+        <td>Que la inconsistencia venga de duplicados; que los errores de ruteo expliquen «información inadecuada»; que el conocimiento de Vida esté anclado a material de 2022.</td>
+        <td>Es lo que la estrategia existe para falsar. No comunicar como hallazgo.</td>
+      </tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">03</span><h2>La cadena causal a falsar</h2></div>
+  <div class="col"><p>El diagnóstico tiene una hipótesis encadenada. Cada eslabón es falsable por separado, y romper cualquiera cambia dónde conviene invertir. La estrategia es el conjunto de pruebas que los confronta, ordenadas por costo.</p></div>
+  <ol class="chain col">
+    <li>
+      <b>La base de AIDA no deriva del modelo de venta</b>
+      El modelo de venta es la fuente canónica de todos los frentes. Si la base del copiloto se armó por acumulación en vez de derivarse de él, divergió desde el primer día.
+      <div class="test"><span>Prueba →</span> Contrastar 10 temas de alta consulta entre el modelo, el material físico, la base de AIDA y la pauta comercial.</div>
+    </li>
+    <li>
+      <b>La base contiene formatos que el agente no puede leer</b>
+      PDF escaneados de los que solo se lee el título, imágenes sin alt-text invisibles, tablas de coberturas que se aplanan, documentos vacíos que compiten por espacio.
+      <div class="test"><span>Prueba →</span> Inventario por formato y peso, más la prueba del texto seleccionable en cada PDF.</div>
+    </li>
+    <li>
+      <b>Existen duplicados y versiones contradictorias</b>
+      Un sistema de recuperación no arbitra contradicciones: toma una versión y responde con seguridad, y puede tomar la otra en la consulta siguiente.
+      <div class="test"><span>Prueba →</span> Misma pregunta técnica, tres veces, en sesiones distintas. Si varía, queda medido lo que hoy solo es testimonio.</div>
+    </li>
+    <li>
+      <b>Vida compite con tres ramos por el presupuesto de recuperación</b>
+      Con cinco subagentes y un solo dominio de Vida, el techo de material relevante se reparte — y las preguntas ambiguas entre ramos pueden rutearse mal.
+      <div class="test"><span>Prueba →</span> Preguntas con términos que existen en varios ramos: deducible, plan Oro, DPS, preexistencias.</div>
+    </li>
+    <li>
+      <b>El asesor deja de confiar y se va a una IA de afuera</b>
+      Es el único eslabón ya observado: uso intermitente, más uso documentado de ChatGPT y Gemini para cubrir lo que AIDA no resuelve.
+      <div class="test"><span>Prueba →</span> Preguntar a los asesores qué le consultan a ChatGPT que no le consultan a AIDA. Es el mapa del hueco sin auditar un solo archivo.</div>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">04</span><h2>Cuatro capas de falla, y cómo separarlas</h2></div>
+  <div class="col"><p>«Fallas graves en el output» no es un diagnóstico: es un síntoma que puede venir de cuatro capas distintas, que se arreglan con equipos, presupuestos y plazos distintos. <strong>Atribuir todo a la base de conocimiento es la hipótesis más plausible y la menos verificada.</strong></p></div>
+  <div class="tw"><table>
+    <thead><tr><th>Capa</th><th>Qué falla</th><th>Cómo se ve para el asesor</th><th>Cómo se confirma</th></tr></thead>
+    <tbody>
+      <tr><td class="n">A · Conocimiento</td><td>El dato no está, no es legible, está duplicado o vencido</td><td>Inventa · no encuentra · responde distinto cada vez</td><td>Inventario de la base + métricas de recuperación</td></tr>
+      <tr><td class="n">B · Instrucciones</td><td>Tiene el dato pero se comporta mal</td><td>Correcto pero inútil · rompe la secuencia de venta</td><td>Mismo dato, otra instrucción: ¿cambia la respuesta?</td></tr>
+      <tr><td class="n">C · Plataforma</td><td>Techos duros de tamaño, formato o licencia</td><td>Ignora documentos completos · trunca · no cita</td><td>Verificación técnica con TI</td></tr>
+      <tr><td class="n">D · Ruteo</td><td>Delega al subagente equivocado</td><td><strong>Respuesta correcta del ramo equivocado</strong> — indistinguible de un dato falso</td><td>Preguntas ambiguas entre ramos</td></tr>
+    </tbody>
+  </table></div>
+  <div class="col">
+    <div class="note">
+      <span class="lab">La prueba que cuesta una tarde</span>
+      <p>Tomar 20 preguntas reales de asesores. Para cada una, <strong>pegar manualmente el fragmento correcto de la fuente</strong> y volver a preguntar. Si con el fragmento pegado responde bien, la información existe y el problema es que no la encuentra: es capa A y se arregla con contenido. Si sigue respondiendo mal, es capa B y ninguna limpieza de la base lo va a resolver.</p>
+    </div>
+    <p>La capa D es nueva y merece su propia atención: <strong>una falla de ruteo se ve idéntica a una falla de conocimiento</strong> pero se arregla en el clasificador, no en la base. Sin separarla, un proyecto de limpieza de contenido podría no mover la aguja en nada.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">05</span><h2>Los cuatro frentes de trabajo</h2></div>
+  <div class="tw"><table>
+    <thead><tr><th>Frente</th><th>Pregunta que responde</th><th>Entregable</th><th>Estado</th></tr></thead>
+    <tbody>
+      <tr><td class="n">F1 · Fallas</td><td>¿Qué falla, con qué frecuencia y de qué tipo?</td><td>Corpus clasificado + línea base medida</td><td>Instrumento listo, no ejecutado</td></tr>
+      <tr><td class="n">F2 · Base</td><td>¿Qué hay realmente, y cuánto no puede leerse?</td><td>Inventario + lista de inconsumibles + contradicciones</td><td>Protocolo listo, no ejecutado</td></tr>
+      <tr><td class="n">F3 · Almacenamiento</td><td>¿Cómo debe estructurarse el conocimiento?</td><td>Reglas de redacción y gobierno</td><td><strong>Resuelto con evidencia</strong></td></tr>
+      <tr><td class="n">F4 · Capacidades</td><td>¿Qué debe hacer el asesor, verificado?</td><td>Mapa priorizado</td><td>Criterio resuelto, falta cruzar con el journey</td></tr>
+    </tbody>
+  </table></div>
+  <div class="col">
+    <h3>Lo que F3 ya resolvió</h3>
+    <p>La forma correcta de almacenar es <strong>texto plano, corto, monotemático, estructurado por encabezados, sin tablas, con resumen al inicio y con dueño y fecha de revisión</strong>. Es casi lo contrario de lo que un equipo comercial produce: el PPT bonito y el PDF con tablas de coberturas son los peores insumos posibles, porque la información que vive en la maqueta no sobrevive a la extracción de texto.</p>
+    <p>Y un techo contraintuitivo: <strong>más documentación no es mejor agente.</strong> Pasado cierto volumen, cada documento nuevo compite con el relevante por los pocos fragmentos que el sistema recupera.</p>
+    <h3>El criterio que ordena F4</h3>
+    <p>Dos hallazgos externos convergen con lo que los asesores ya pedían. El efecto de un copiloto <strong>no se reparte parejo</strong>: +14% de productividad en promedio, pero +34% en novatos y prácticamente nulo en expertos — se diseña y se mide para el asesor nuevo, no para el promedio. Y lo que se paga en desempeño objetivo es la <strong>venta adaptativa</strong> — cambiar de camino según lo que el cliente muestra — mientras que la orientación al cliente sube solo el desempeño autorreportado.</p>
+    <p>Manejo de objeciones en el cierre <em>es</em> venta adaptativa. Es también el tema más pedido por los asesores (42%) y el momento de mayor necesidad declarada. Ahí va la prioridad.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">06</span><h2>Secuencia</h2></div>
+  <div class="col"><p>El orden importa más que la velocidad. Cada fase tiene una compuerta: si no se cumple, la siguiente produce resultados que no se pueden interpretar.</p></div>
+
+  <div class="phase">
+    <span class="ph-n">FASE 0</span>
+    <div>
+      <h4>Desbloquear · días</h4>
+      <p>Cinco preguntas que no requieren trabajo, solo respuesta del área correcta. Bloquean la interpretación de todo lo demás.</p>
+      <ul>
+        <li><strong>¿Sobre qué framework corre AIDA realmente?</strong> — la función que declara apunta a Google ADK, no a Copilot Studio</li>
+        <li>¿Bajo qué licencia opera? — define si el techo de archivo es 7 MB o 200 MB</li>
+        <li>¿Dónde vive la base de conocimiento?</li>
+        <li>¿Los subagentes comparten base o cada uno tiene la suya?</li>
+        <li>¿Quién es dueño de cada agente?</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <span class="ph-n">FASE 1</span>
+    <div>
+      <h4>Medir · 2–3 semanas</h4>
+      <p>Correr el protocolo de interrogación completo y establecer la línea base. Produce el corpus de F1.</p>
+      <ul>
+        <li>Arquitectura declarada, incluida la repetición en sesión nueva para detectar confabulación</li>
+        <li>Calidad de respuesta en Vida, calificada contra la matriz de productos como patrón oro</li>
+        <li>Pruebas de ruteo entre ramos y de la regla de delegación que AIDA dice cumplir</li>
+        <li>Auditoría asistida con Claude como juez, <strong>calibrada primero contra anotadores humanos</strong></li>
+      </ul>
+      <p class="gate">Compuerta: sin calibración humana, la cifra del juez es decorativa y no se reporta.</p>
+    </div>
+  </div>
+
+  <div class="phase">
+    <span class="ph-n">FASE 2</span>
+    <div>
+      <h4>Localizar · en paralelo</h4>
+      <p>Averiguar en qué capa vive cada falla del corpus. Es lo que convierte una lista de quejas en un plan de inversión.</p>
+      <ul>
+        <li>Inventario de la base por formato, peso, vigencia y duplicados</li>
+        <li>Detección de contradicciones entre frentes sobre los 10 temas más consultados</li>
+        <li>Prueba del fragmento pegado, para separar conocimiento de comportamiento</li>
+        <li>Reanálisis de la encuesta cortando por antigüedad — datos ya levantados, una tarde de trabajo</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase">
+    <span class="ph-n">FASE 3</span>
+    <div>
+      <h4>Probar el arreglo · acotado</h4>
+      <p>Antes de reescribir nada a escala: elegir <strong>un</strong> dominio — objeciones de cierre — derivarlo del modelo de venta, reformatearlo y medir antes/después con el mismo instrumento.</p>
+      <p>No existe evidencia independiente de cuánto mejora la exactitud al reformatear una base corporativa; las cifras que circulan son de proveedores. Un dominio acotado con medición propia <strong>produce la cifra propia</strong> en vez de importar una de catálogo.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">07</span><h2>Lo que el copiloto no puede resolver</h2></div>
+  <div class="col">
+    <p>Al copiloto se le pide reducir la carga de leer información contradictoria. <strong>Ningún sistema de recuperación puede hacer eso.</strong> Frente a dos fuentes que se contradicen no dice «hay dos versiones»: toma una y responde con seguridad.</p>
+    <p>Es decir, no elimina la contradicción — <strong>la oculta</strong>, y le quita al asesor incluso la señal de que había conflicto. Cuando leía dos documentos contradictorios, al menos veía el problema.</p>
+    <div class="note alert">
+      <span class="lab">Consecuencia para el diagnóstico</span>
+      <p>La inconsistencia de AIDA puede ser <strong>la inconsistencia de la organización, reflejada</strong>. Si el modelo de venta se instancia en varios frentes sin que todos deriven de él, las versiones divergen, la base hereda la divergencia y el agente la devuelve como respuestas que cambian.</p>
+    </div>
+    <p>De ahí una regla operativa que cierra la discusión: <strong>toda contradicción es un defecto contra el modelo de venta</strong>, se escala y se resuelve ahí, y todos los frentes re-derivan. Que el equipo del copiloto decida por su cuenta cuál versión es la buena es precisamente cómo se generó la divergencia.</p>
+    <p>Y un bucle que conviene aprovechar: el modelo ya emite requerimientos de producto cuando ninguna oferta hace match con una motivación real. Con esta regla emite también <strong>requerimientos de contenido</strong> cuando el copiloto no puede responder. El copiloto deja de ser consumidor pasivo y pasa a ser el mejor detector de huecos que el modelo puede tener, porque recibe las preguntas reales de los asesores.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">08</span><h2>Riesgos de esta estrategia</h2></div>
+  <div class="col">
+    <ul class="plain">
+      <li><strong>Que el framework no sea el asumido.</strong> Si AIDA no corre sobre Copilot, los techos técnicos documentados no aplican y esa parte del diagnóstico se rehace. Es la razón por la que la Fase 0 existe.</li>
+      <li><strong>Creerle a la herramienta.</strong> Todo lo que AIDA dice de sí misma puede ser confabulación fluida. Por eso el protocolo repite preguntas en sesiones nuevas y exige triangulación con TI.</li>
+      <li><strong>Medir elegancia en vez de exactitud.</strong> El sesgo dominante de un juez automático es el de estilo, no el de posición — y AIDA produce prosa fluida, numerada y segura, que es justo el estímulo que lo dispara. La mitigación va explícita en el prompt del auditor.</li>
+      <li><strong>Limpiar y que se vuelva a ensuciar.</strong> Si la base no deriva del modelo y nadie la gobierna, cualquier limpieza tiene fecha de vencimiento.</li>
+      <li><strong>Consolidar antes de auditar.</strong> Poner una puerta única delante de subagentes cuya calidad no se midió destruye la señal de diagnóstico: el asesor deja de saber cuál falló.</li>
+      <li><strong>Importar cifras de proveedores.</strong> Tanto en aceleración de actualización de producto como en adopción de metodologías de venta, la evidencia disponible es casi enteramente de quienes venden la solución. Ninguna de esas cifras debe entrar a un material de RIMAC.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>Documentación completa en el repositorio del proyecto: nodes de diagnóstico, arquitectura de conocimiento y evaluación de agentes · Instrumento ejecutable: protocolo de interrogación v0.2 · Evidencia registrada en el códice de fuentes, F-469 a F-487.</p>
+</footer>
+
+</div>
