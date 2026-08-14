@@ -7,7 +7,14 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.4
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.5
+> (v1.5: §11 — primera corrida de **auto-interrogación de AIDA**. Cinco hallazgos: AIDA es
+> **multi-ramo, no de Vida** (1 de 5 subagentes); la arquitectura de ruteo que §8 recomendaba **ya
+> existe**, así que falta medirla, no construirla; los productos que declara **no coinciden con el
+> portafolio vigente** y apuntan a material de 2022; ⚠️ **`transfer_to_agent` es de Google ADK, no
+> de Copilot Studio** — puede invalidar los límites técnicos asumidos (nueva P9, prioridad #1); y
+> `SalesCoachAgent` contradice el mapa de frentes. Agrega la **capa D · Ruteo** a la taxonomía de
+> §3. Instrumento en `_outputs/protocolo-interrogacion-aida-vida.md`.)
 > (v1.4: corrige §9.2 — **el modelo de venta ES la fuente canónica** y las contradicciones se
 > resuelven ahí, lo que convierte la base de AIDA en una **derivación del modelo** en vez de una
 > carpeta a ordenar; y agrega §10, la barrera sistémica de actualización de producto: el retraso
@@ -361,6 +368,13 @@ Determina qué reglas de gobierno de §5 del node de arquitectura son aplicables
 **P4 — ¿Quién es el dueño de la base hoy?** Si nadie la gobierna, el problema **volverá** aunque se
 limpie una vez. Es la diferencia entre un arreglo y una solución.
 
+**⭐ P9 (nueva, prioridad #1) — ¿Sobre qué framework corre AIDA realmente?** `transfer_to_agent`
+apunta a Google ADK, no a Copilot Studio. Determina si los límites técnicos documentados aplican o
+si esa parte del diagnóstico se rehace. **Solo se resuelve con TI o el equipo dueño.**
+
+**P8 — ✅ RESUELTA (Alejo, 2026-08-14):** el modelo de venta es canónico para el conocimiento de
+venta y **referencia** una fuente canónica de parámetros de producto, sin contenerla.
+
 **P6 — ¿Los tres agentes comparten base de conocimiento o cada uno tiene la suya?** Decide si el
 mapa de §8.1 describe la arquitectura actual o la contradice. Si comparten base, el problema de
 recuperación es peor de lo estimado.
@@ -676,6 +690,72 @@ Si la matriz existe y es canónica, **la base de conocimiento de AIDA deja de se
 recurrente**: se deriva de la matriz y se regenera con cada cambio, en vez de volver a ensuciarse
 cada vez que alguien sube un PPT nuevo. Sin eso, cualquier limpieza que haga F2 **tiene fecha de
 vencimiento** — la carpeta se vuelve a desordenar porque nada impide que se desordene.
+
+---
+
+## 11. Auto-interrogación de AIDA — primera corrida (v1.5)
+
+**Frente de diagnóstico nuevo, abierto por Alejo:** preguntarle a la herramienta por sí misma. El
+instrumento vive en `_outputs/protocolo-interrogacion-aida-vida.md`; aquí quedan los hallazgos.
+
+⚠️ **Estatus epistémico de todo lo que sigue:** proviene de **un autorreporte de AIDA**, no de
+inspección de configuración. Un modelo al que se le pregunta por su arquitectura produce una
+narración plausible —leyendo su prompt de sistema, o reconstruyendo un patrón genérico— y **no
+distingue entre ambas al responder**. Son hipótesis a triangular, **no documentación**.
+
+**Lo que AIDA declara ser:** "AIDA FFVV", un Coordinador Principal con **cinco subagentes** —
+`SaludAgent`, `VehicularAgent`, `VidaFinancieroAgent`, `GeneralOpsAgent`, `SalesCoachAgent` —, tres
+lógicas (clasificación y enrutamiento; modo coach con contexto; reglas operativas estrictas que le
+prohíben responder de memoria en temas técnicos) y una función, `transfer_to_agent`.
+
+**Cinco hallazgos, dos de los cuales cambian el diagnóstico:**
+
+**H1 · AIDA no es el copiloto del asesor de Vida: es multi-ramo.** Solo 1 de 5 subagentes es Vida.
+⭐ Esto convierte **el error de ruteo entre ramos en candidato principal** de la queja "no da la
+información adecuada": una respuesta correcta del ramo equivocado es, para el asesor,
+indistinguible de un error de conocimiento. Y el presupuesto de recuperación (≤300 páginas, §3 del
+node de arquitectura) se reparte entre cuatro dominios — Vida recibe una fracción.
+**Corrección de encuadre:** este node venía tratando a AIDA como herramienta de Vida. No lo es. Es
+una herramienta corporativa **que el asesor de Vida usa**.
+
+**H2 · La arquitectura que §8 recomendaba ya existe.** Coordinador + subagentes por dominio con
+fuentes separadas es exactamente el patrón de F-479/F-480. ⭐ **Cambia la conclusión de §8: el
+arreglo no es construir el ruteo — el ruteo existe, y lo que falta es medir si acierta.**
+
+**H3 · Los productos que AIDA nombra no coinciden con el portafolio vigente.** Declara "Flexivida,
+Inversión Global, Renta Garantizada, UltraCash"; `[[matriz-productos-vida-rimac]]` (fichas vigentes
+desde 01/01/2025) tiene **VFP, Plan Vida Flexible, Vida Contigo/Vida Ahorro Garantizado y Vida
+Temporal Total**. ⭐ **"Flexivida" es el nombre del PPT de marzo 2022**, no el de la ficha vigente —
+huella de que el conocimiento de Vida podría estar anclado a material de 2022. Los otros tres no
+aparecen en Vida Individual, y tres productos vigentes no son nombrados.
+Dos lecturas, ambas verificables con una pregunta (A3 del protocolo): **desfase de vigencia** o
+**desalineación de alcance** (el agente cubre la línea *Vida e Inversiones*, no *Vida Individual
+FFVV*). ⚠️ Descuento: AIDA dijo "productos **como**…" — son ejemplos, no catálogo.
+
+**H4 · `transfer_to_agent` es la función de delegación de Google ADK, no de Copilot Studio.**
+⚠️ **Puede invalidar parte del trabajo previo.** Si AIDA no corre sobre Copilot Studio, **los
+límites técnicos del node de arquitectura (36.000 caracteres, 7 MB/200 MB, tablas, PDF imagen) no
+aplican** y esa parte del diagnóstico se rehace. Las otras dos lecturas: que el autorreporte esté
+confabulado, o que sea una construcción mixta. **No se resuelve preguntándole otra vez a AIDA.**
+👉 **Pasa a ser la pregunta técnica #1 del proyecto (P9), por encima del licenciamiento (P2).**
+
+**H5 · `SalesCoachAgent` vive dentro de AIDA**, pero §2.1 lista Sales Coach como frente separado de
+entrenamiento inicial. O son dos cosas homónimas, o el mapa de 6 frentes se corrige. Sin resolver.
+
+### 11.1 Lo que esto agrega a la taxonomía de §3
+
+Los hallazgos obligan a una capa que la taxonomía de tres no tenía:
+
+| Capa | Qué falla | Cómo se ve | Cómo se confirma |
+|---|---|---|---|
+| **A · Conocimiento** | El dato no está o está mal | Inventa, no encuentra | Auditoría + RAGAS |
+| **B · Instrucciones** | Tiene el dato, se comporta mal | Correcto pero inútil | Mismo dato, otra instrucción |
+| **C · Plataforma** | Techos duros | Ignora documentos | Verificación técnica |
+| **⭐ D · Ruteo** *(nueva)* | **Delega al agente equivocado** | **Respuesta correcta del ramo equivocado** — el asesor la lee como dato falso | Bloque C del protocolo: preguntas con términos que existen en varios ramos |
+
+**Por qué importa que sea una capa aparte:** una falla de ruteo **se ve idéntica a una falla de
+conocimiento** desde afuera, pero se arregla en un lugar completamente distinto — el clasificador,
+no la base. Sin separarla, un proyecto de limpieza de contenido podría no mover la aguja en nada.
 
 ---
 

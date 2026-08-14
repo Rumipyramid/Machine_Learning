@@ -32,6 +32,14 @@ vive en la *disposición visual* de una lámina (columnas, cajas, jerarquía tip
 no sobrevive a la extracción de texto: llega al agente como una lista de fragmentos sueltos sin
 la relación que los hacía significar algo.
 
+> ⚠️ **ADVERTENCIA DE APLICABILIDAD (2026-08-14).** Este node describe **Microsoft Copilot**. La
+> auto-interrogación de AIDA devolvió la función `transfer_to_agent`, que es de **Google ADK**, no
+> de Copilot Studio — ver §11/H4 de `[[diagnostico-copiloto-ai-asesor-vida-rimac]]`. **Hasta
+> confirmar el framework real de AIDA con TI, los límites numéricos de §2 y §3 (36.000 caracteres,
+> 7 MB/200 MB, tablas no parseadas, PDF imagen ilegible) están en suspenso para ese caso.** Los
+> principios de §1, §4, §5 y §8 se sostienen en cualquier plataforma RAG — son propiedades de cómo
+> funciona la recuperación, no del proveedor.
+
 ⚠️ **Fecha de caducidad declarada.** Todo lo que sigue describe el comportamiento de un producto
 comercial que cambia rápido. Las cifras concretas (36.000 caracteres, 7 MB, 512 MB) hay que
 **reverificarlas contra la documentación vigente antes de tomar una decisión de arquitectura**,
