@@ -1677,6 +1677,99 @@ con lo ya documentado sobre dónde falla lo 100%-digital.
   condicional-por-escenario que tesis 24 no tenía explícito, y conecta con tesis 16 (el reclamo, no
   la venta, es el punto de falla de lo 100%-digital) desde un ángulo de diseño de interfaz nuevo.
 
+### 22. Cuando un cliente "abusa" de un beneficio asegurado, la primera hipótesis de diseño debe ser el precio marginal que percibe — no la mala fe
+Lectura profunda de F-89 (Pauly 1968, AER — el "comment" a Arrow 1963 que fundó el campo del riesgo
+moral en seguros de salud, citado en el ledger solo como capa teórica de fondo, nunca leído a fondo
+hasta hoy): el hallazgo central no es que la gente use más el seguro de lo debido — es que ese uso
+extra es una respuesta **racional** a un precio marginal más bajo (lo que el asegurado paga por unidad
+de atención cae de p a p×(1-coaseguro)), no un fallo moral ni un síntoma de mala fe. Arrow había
+argumentado que el riesgo moral ex post era motivo suficiente para intervención pública; Pauly le
+respondió con un contraejemplo numérico donde ese mismo riesgo moral genera una pérdida de bienestar
+que puede hacer que asegurar completamente no sea óptimo — Arrow aceptó el punto en su propia réplica
+en el mismo número de la revista. **Heurística:** frente a sobreutilización de un beneficio (consultas
+médicas, reclamos, uso de un servicio incluido), la primera pregunta de diseño no es "¿cómo detectamos
+al que abusa?" sino "¿qué precio marginal —en plata, tiempo o esfuerzo— está viendo el asegurado en
+este punto de la póliza?". La palanca que corrige esto es estructura de coaseguro/deducible (cambiar
+el precio), no control antifraude (cambiar el castigo) — son intervenciones para causas distintas y
+conviene no aplicar la segunda cuando el diagnóstico real es la primera. Conecta con tesis 2 (el
+coaseguro como cuello de botella de comprensión): la misma variable de producto que aquí opera como
+precio marginal racional es, en la tesis 2, el término que el cliente peor entiende — dos mecanismos
+distintos (uno de incentivo, uno de comprensión) actuando sobre la misma palanca de producto, no el
+mismo problema con dos nombres.
+- **Fuente:** F-89 (🟢A, Pauly 1968, *American Economic Review* — paper fundacional del campo)
+- **Leído a fondo:** 2026-08-14 (ldi.upenn.edu accesible; confirmado también contra el resumen de la
+  réplica de Arrow en el mismo número)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis — es una heurística de
+  diagnóstico (precio vs. mala fe) que matiza cómo leer cualquier futura señal de sobreutilización,
+  sin evidencia de campo peruana todavía que la ponga a prueba.
+
+### 23. Un efecto pequeño no contradice "vale la pena intentarlo" cuando el canal cuesta casi cero — son dos preguntas distintas, no una en tensión
+Lectura profunda de F-21 (DellaVigna & Linos 2022, *Econometrica* — ya citada como una de las tres
+metodologías independientes detrás de tesis 6, pero nunca leída a fondo por este mecanismo de
+intuición; la revisión profunda de `cronista` del 2026-07-22 sí la trabajó desde el ángulo de
+"por qué murió el efecto promedio"). El dato que el resumen de tesis 6 no explicita: el propio paper
+no solo documenta la caída de 8.7pp (papers académicos) a 1.4pp (unidades de gobierno a escala,
+126 RCTs, 23 millones de personas) — también nota que casi todos los efectos estimados a escala,
+aunque chicos, siguen siendo positivos y estadísticamente significativos, y que la selección
+publicación + bajo poder estadístico académico explica ~70% de la brecha (no una diferencia real
+laboratorio-vs-mundo, coherente con lo que ya tenía tesis 6 vía Hu et al. y DellaVigna-Linos).
+**Heurística que sí es nueva para este ledger:** "el efecto promedio murió" (tesis 6) y "vale la
+pena seguir corriendo experimentos de bajo costo" no son afirmaciones en tensión — responden
+preguntas distintas. Un nudge que cuesta casi cero implementar (un mensaje de texto, un default,
+un recordatorio) puede seguir siendo la apuesta correcta con un efecto de 1-2pp, porque el costo
+marginal por experimento es casi cero — la vara correcta no es "¿el efecto es grande como en el
+paper?" sino "¿el efecto observado, por chico que sea, justifica el costo casi nulo de la
+intervención?". Aplicación directa a la propia tesis 6 (probar primero defaults en salud/finanzas):
+el criterio de éxito del primer experimento propio no debería fijarse en replicar el tamaño de
+efecto de un paper académico, sino en confirmar que el efecto a escala real es positivo y
+significativo, que ya es suficiente para justificar el canal si el costo de correrlo es bajo.
+- **Fuente:** F-21 (🟢A, DellaVigna & Linos 2022, *Econometrica*, 126 RCTs administrativos, 23M
+  personas — ya citada en tesis 6)
+- **Leído a fondo:** 2026-08-14 (onlinelibrary.wiley.com y el PDF del autor bloqueados por el proxy
+  del entorno; reconstruido vía búsqueda dirigida que confirma el diseño, las cifras 8.7pp/1.4pp y la
+  descomposición ~70% sesgo de publicación)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 6 (sigue Alta) — separa
+  explícitamente dos preguntas (tamaño del efecto vs. si vale la pena el experimento) que el
+  resumen previo dejaba mezcladas.
+
+### 24. Un aumento de visitas al canal barato puede ser fricción disfrazada de éxito — verificar por qué se movió el volumen, no solo que se movió
+Lectura profunda de F-109 (estudio cuasi-experimental China, gatekeeping de atención primaria —
+citado en el ledger solo por su cifra agregada: +55.3% en consultas de atención primaria, -23.9% en
+visitas hospitalarias, sin aumento significativo del gasto en atención primaria). El detalle que el
+resumen de una línea no capturaba: los propios autores leen ese patrón como evidencia de
+**inefectividad**, no de éxito — si la atención primaria realmente hubiera absorbido la demanda
+desviada del hospital, el gasto en atención primaria debería haber subido con las visitas; que no
+subiera (apenas +1.6%, no significativo) sugiere que la caída de visitas/gasto hospitalario se debe
+en parte a que los pacientes encontraron **engorroso o difícil obtener el reembolso** en el hospital,
+no a que la atención primaria mejoró su capacidad real de resolver el caso. Un estudio cualitativo
+sobre el mismo tipo de piloto (bibliografía relacionada, no en el ledger) documenta el mecanismo de
+fondo: un esquema de salario por desempeño desincentivaba la motivación clínica en atención primaria,
+atrapando el sistema en ciclos que erosionan capacidad, personal y confianza del paciente a la vez.
+**Heurística:** cuando una métrica de "volumen redirigido a un canal más barato" mejora (consultas
+que migran de hospital a atención primaria, o en el caso de Rimac, de un canal caro a uno digital/de
+menor costo), la pregunta que decide si es una victoria real no es "¿subió el volumen del canal
+barato?" sino "¿por qué bajó el volumen del canal caro?" — si la caída viene de que el canal caro
+se volvió más difícil de usar (fricción), en vez de que el canal barato se volvió genuinamente mejor,
+la señal es frágil y puede revertirse o generar resentimiento del cliente en cuanto se note la
+fricción. Segunda confirmación independiente, en un país y sector distintos, de la intuición 13
+(2026-08-10: la ventana de un canal de salud digital se cierra sin invertir a la par en la
+competencia del recurso humano que lo opera) — aquí el mecanismo es salarial/incentivo del proveedor
+de atención primaria china, no telesalud peruana, pero el patrón (redirigir volumen sin invertir en
+la capacidad real del canal receptor) es el mismo. Aplicación directa a tesis 9: si el modelo
+farmacia-frente-primario de Perú mide éxito solo en "consultas atendidas en farmacia" sin verificar
+si la caída en el canal formal viene de fricción de acceso (tiempo de espera, costo de traslado) en
+vez de mejor resolución en farmacia, corre el mismo riesgo de falso positivo que documenta este caso.
+- **Fuente:** F-109 (🟢A, estudio DiD, China, New Rural Cooperative Medical Scheme, 200,685
+  afiliados, 17 municipios, 2012-2014)
+- **Leído a fondo:** 2026-08-14 (pmc.ncbi.nlm.nih.gov bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que confirma cifras exactas y la lectura de "inefectividad" de
+  los propios autores, más el mecanismo cualitativo de un estudio relacionado sobre el mismo tipo de
+  piloto)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 9 (sigue Alta en la oportunidad
+  de mercado/distribución) — agrega un criterio de verificación explícito (auditar la causa de la
+  caída en el canal caro, no solo el alza en el barato) que la tesis no tenía, y refuerza desde un
+  país distinto la intuición 13 ya registrada.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2336,3 +2429,37 @@ con lo ya documentado sobre dónde falla lo 100%-digital.
   sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 25 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días
   — sin podar todavía.
+- **2026-08-14** — Corrida diaria de refinamiento. Confirmé `main` actualizado (sin cambios
+  pendientes) y leí `codice.md` completo: verifiqué la secuencia F-1 a F-468 sin huecos ni
+  duplicados (141 fuentes 🟢A confirmadas) — sigue tope exacto en F-468, idéntico al que ya procesó
+  la corrida de ayer (2026-08-13) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
+  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces. Repasé las
+  25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé
+  ninguna conexión de tesis nueva solo por completar el paso. La última revisión profunda (rutina de
+  `cronista`, cada ~3 días, última el 2026-08-12) no vence hoy. Sí corrió la rutina diaria de
+  intuición (novena corrida desde que se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 21
+  ya tenían lectura profunda del Lobo — seleccioné al azar 3 de las 120 restantes: F-89 (Pauly 1968,
+  AER, el "comment" fundacional que abrió el campo del riesgo moral en seguros de salud — citado en
+  el ledger solo como capa teórica de fondo, nunca leído a fondo), F-21 (DellaVigna & Linos 2022,
+  *Econometrica* — ya citada en tesis 6, pero desde un ángulo distinto al que ya trabajó la revisión
+  profunda de `cronista` el 2026-07-22) y F-109 (estudio DiD de gatekeeping de atención primaria en
+  China, citado en el ledger solo por su cifra agregada). A diferencia de corridas anteriores, las
+  URLs académicas (ldi.upenn.edu) sí fueron accesibles esta vez; onlinelibrary.wiley.com,
+  sdellavi.com y pmc.ncbi.nlm.nih.gov siguieron bloqueadas por el proxy del entorno — reconstruidas
+  vía búsqueda dirigida. Sumé las entradas 22, 23 y 24 de Intuición acumulada: (22) frente a
+  sobreutilización de un beneficio asegurado, diagnosticar primero el precio marginal percibido, no
+  la mala fe — la palanca correctora es coaseguro/deducible (cambiar el precio), no control
+  antifraude (cambiar el castigo), son remedios para causas distintas; conecta con tesis 2 (mismo
+  término de producto, dos mecanismos distintos: incentivo racional vs. comprensión); (23) "el efecto
+  promedio del nudge murió" (tesis 6) y "vale la pena seguir corriendo experimentos de bajo costo" no
+  están en tensión — son dos preguntas distintas, y un canal casi gratis (SMS, default, recordatorio)
+  puede justificarse con un efecto de 1-2pp si el costo marginal de probarlo es casi cero; (24) un
+  aumento de volumen en el canal barato puede ser fricción de acceso al canal caro disfrazada de
+  éxito — verificar por qué cayó el canal caro (¿mejoró el barato o se volvió engorroso el caro?), no
+  solo que el volumen se movió; segunda confirmación independiente, en un país y sector distintos, de
+  la intuición 13 (invertir en recurso humano del canal receptor, no solo en su infraestructura),
+  aplicable directamente al gate de éxito del piloto farmacia+triage IA de tesis 9. Ninguna tesis de
+  negocio cambió de confianza por esta corrida — es el mecanismo paralelo de intuición, no una
+  revisión de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md`
+  con las tres fuentes leídas hoy. Bitácora con 26 días de historial (2026-07-20 a hoy), dentro de
+  la ventana de ~30 días — sin podar todavía.

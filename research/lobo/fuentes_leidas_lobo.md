@@ -38,3 +38,6 @@
 | F-16 | 🟢 A | 2026-08-13 | Intuición 19 — la advertencia sobre el propio sesgo de un hallazgo a veces ya está en el paper original, en el análisis de sensibilidad, no en el titular |
 | F-151 | 🟢 A | 2026-08-13 | Intuición 20 — medir la fidelidad de una IA con otra IA (RAGAS/LLM-as-judge) correlaciona modestamente con el juicio humano y hereda sesgos que promediar jueces no cancela |
 | F-250 | 🟢 A | 2026-08-13 | Intuición 21 — la interfaz "correcta" no es una apuesta global de plataforma; el mismo estudio da veredictos opuestos por escenario |
+| F-89 | 🟢 A | 2026-08-14 | Intuición 22 — frente a sobreutilización de un beneficio, diagnosticar primero el precio marginal percibido, no la mala fe |
+| F-21 | 🟢 A | 2026-08-14 | Intuición 23 — un efecto chico no contradice "vale la pena" cuando el canal cuesta casi cero: son preguntas distintas |
+| F-109 | 🟢 A | 2026-08-14 | Intuición 24 — un aumento de volumen en el canal barato puede ser fricción del canal caro disfrazada de éxito |
