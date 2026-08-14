@@ -1,12 +1,16 @@
 # Tamizaje cervical y manejo de ASC-US (Mundo vs. Perú)
 
-*Node de conocimiento · v1.0 · Creado 2026-08-14 · Investigación `/trinidad` (360°)*
+*Node de conocimiento · **v2.0** · Creado 2026-08-14 · Investigación `/trinidad` (360°)*
 
-> **Alcance.** Qué significa clínicamente un resultado **ASC-US** (células escamosas atípicas
-> de significado indeterminado) en una citología cervical, qué conducta indica la evidencia,
-> en qué difiere la norma peruana del estándar internacional, y dónde están los incentivos
-> económicos que empujan la decisión. Cubre tamizaje cervical, triaje por VPH y la economía
-> del procedimiento en Perú.
+> **Alcance (ampliado en v2.0).** Qué significa clínicamente un resultado **ASC-US** (células
+> escamosas atípicas de significado indeterminado) en una citología cervical, qué conducta
+> indica la evidencia, en qué difiere la norma peruana del estándar internacional, y dónde
+> están los incentivos económicos que empujan la decisión.
+>
+> ⚠️ **v2.0 amplía el alcance de *tamizaje asintomático* a *tamizaje + evaluación de hallazgo
+> clínico***. La v1.0 razonaba implícitamente sobre una mujer sin síntomas, y sus conclusiones
+> **no se transfieren** a una con hallazgos al examen físico. La distinción está desarrollada
+> en §0.1 y §11, y es el cambio estructural que motiva el bump de versión.
 >
 > **Este node no contiene ni deriva de ningún caso clínico individual.** Es conocimiento
 > general de guía y evidencia poblacional. No es consejo médico ni sustituye evaluación
@@ -16,9 +20,26 @@
 
 ## 0. Veredicto en una línea
 
-Ante un ASC-US, **la conducta con mejor respaldo no es biopsiar de entrada: es triar con
-prueba de VPH y decidir con ese resultado** — pero la norma peruana vigente deriva la
-citología anormal directamente a colposcopía, y esa divergencia es deliberada, no un error.
+Ante un ASC-US **en una mujer asintomática y con examen normal**, la conducta con mejor
+respaldo no es biopsiar de entrada: es **triar con prueba de VPH** y decidir con ese resultado
+— aunque la norma peruana vigente deriva la citología anormal directamente a colposcopía, y esa
+divergencia es deliberada, no un error.
+
+## 0.1 ⭐ La bifurcación que manda sobre todo el resto del node
+
+**Antes de aplicar cualquier cosa de este documento, hay que responder una sola pregunta:
+¿el examen físico es normal?**
+
+| Contexto | Marco que aplica | Conducta |
+|---|---|---|
+| **Asintomática, examen normal** | Tamizaje poblacional | Triaje por VPH primero (§2-§4). El resto de este node |
+| **Hallazgo clínico** (cuello friable, sangrado de contacto, lesión visible, sangrado intermenstrual/poscoital) | **Evaluación diagnóstica** | **Colposcopía + biopsia, sin esperar el VPH** (§11) |
+
+⭐ **Regla destilada:** *el ASC-US es un dato de cribado; un cuello que sangra al tacto es un
+hallazgo diagnóstico. El segundo manda sobre el primero, y la aritmética de riesgo de §2 no
+aplica.* ⚠️ **Este es el error de razonamiento más fácil de cometer con este node**: usar el
+0,43% del ASC-US VPH− (F-471) para tranquilizar a alguien que además tiene un hallazgo al
+examen. Ese número proviene de cohortes de tamizaje, no de mujeres sintomáticas.
 
 ---
 
@@ -292,6 +313,102 @@ inadecuada?
 - **Precio de colposcopía+biopsia en Perú: no verificable** — ningún proveedor lo publica.
 - **No verificado:** si el flujograma normativo peruano clasifica ASC-US específicamente como
   "citología positiva" (§3).
+
+---
+
+## 11. ⭐ Cuando hay hallazgo clínico: el ASC-US deja de gobernar la decisión
+
+*Sección añadida en v2.0. Es el complemento que faltaba: todo lo anterior asume examen normal.*
+
+### 11.1 El principio, y por qué invierte la conclusión del node
+
+**Friabilidad cervical y sangrado de contacto son, por sí solos, indicación de colposcopía —
+independientemente del resultado citológico** (F-501). El fundamento es explícito en la
+literatura: *una citología normal en una mujer con sangrado poscoital **no excluye** NIC ni
+cáncer invasor.*
+
+⭐ **Esto invierte la conclusión de §0**: con hallazgo al examen, la biopsia **ya no se hace
+"por el ASC-US"**, se hace por lo observado. El ASC-US pasa de ser el motivo a ser un dato
+concordante. Y el triaje por VPH, que en §4 era el paso previo correcto, **deja de ser un filtro
+y pasa a ser información complementaria** — no debe demorar el procedimiento.
+
+**Por qué la citología no basta aquí:** el adenocarcinoma **triplica el riesgo de citología
+falsamente negativa (OR 3,83)**; las lesiones altas en el canal endocervical escapan al
+muestreo. ⚠️ Matiz en la dirección opuesta, del mismo estudio: la presencia de **cambios
+macroscópicos visibles en el cuello *reduce* el riesgo de falso negativo (OR 0,39)** — es decir,
+cuando hay algo que ver, la citología acierta más. Ambos datos conviven y ninguno anula al otro
+(F-502).
+
+### 11.2 Las cifras — el ancla contra el alarmismo
+
+| Métrica en derivadas por sangrado poscoital | Valor |
+|---|---|
+| **Sin** precáncer ni cáncer | **97,7%** |
+| VPP para **cáncer** cervical | **1,70%** (IC95% 0,64-3,7) |
+| VPP de cuello de aspecto anormal para cáncer | 0,31% (IC95% 0,0008-1,7) |
+| VPP para **NIC2+** | **0,7%** |
+| VPP para bajo grado (NIC1/coilocitosis) | 15,6% |
+| Cáncer en cohorte de 604 derivadas | 1,16% |
+
+⭐ **El estratificador más útil de toda la sección:** en esa cohorte de 604, **ninguna de las
+mujeres al día con su tamizaje fue diagnosticada con cáncer**; el **6,25%** que sí lo fue estaba
+**fuera de control o fuera del rango etario de cribado** (F-503). El antecedente de tamizaje
+regular es el dato que más mueve la probabilidad, más que el síntoma mismo.
+
+⭐ **Regla destilada:** *no se biopsia porque el cáncer sea probable — es ~2%. Se biopsia porque
+descartarlo es barato y no descartarlo es caro.* Es la lógica inversa a la de §5, donde el
+argumento era **no** escalar. Ambas conviven: **umbral bajo para mirar, umbral alto para
+cortar.**
+
+### 11.3 La explicación unificadora — y la prueba que suele faltar
+
+**Friabilidad con sangrado fácilmente inducido es la definición literal de cervicitis** (F-504).
+Y una sola etiología encadena los tres hallazgos:
+
+```
+Cervicitis → inflamación → cambios reactivos → ASC-US
+           → friabilidad → sangrado de contacto + intermenstrual
+```
+
+⭐ Conecta directamente con §1: la cervicitis ya estaba listada como causa no-VPH de ASC-US,
+pero ahí era hipótesis. Con examen físico compatible **es un hallazgo observado**.
+
+**Etiología de la cervicitis, por frecuencia:** *Chlamydia trachomatis* (la más común, **4-5×
+más frecuente que gonorrea**), *Neisseria gonorrhoeae*, luego *Trichomonas vaginalis*, VHS,
+vaginosis bacteriana y *Mycoplasma genitalium* (F-504).
+
+⚠️ **El hueco operativo más frecuente:** la prueba correcta es **NAAT** para clamidia y gonorrea
+sobre muestra cervical, más examen en fresco para tricomonas y células clave. **Se pide *junto
+con* la biopsia, no en su lugar.** Importa por tres razones que no son el cáncer:
+
+1. **Es tratable** — doxiciclina 7 días (clamidia), ceftriaxona IM dosis única (gonorrea),
+   metronidazol (tricomonas/VB).
+2. ⭐ **La clamidia no tratada asciende y causa EPI, con riesgo de infertilidad.** Es un daño
+   evitable **mucho más probable que el cáncer** en este cuadro — y el node lo habría pasado por
+   alto razonando solo con la lógica oncológica de §2.
+3. **Tratada la infección, se repite la citología**: si la inflamación era la causa, el ASC-US
+   desaparece con ella. **La pareja sexual se trata siempre**, aunque esté asintomática, o hay
+   reinfección.
+
+### 11.4 Desambiguación: ¿cuál biopsia?
+
+"Útero inflamado" en lenguaje de consulta admite dos lecturas con procedimientos distintos:
+
+| Lectura | Procedimiento | Cuándo |
+|---|---|---|
+| **Cuello uterino (cervicitis)** | Biopsia **dirigida por colposcopía** | Lo esperable si el hallazgo fue al espéculo con sangrado al tacto |
+| **Endometrio / sangrado uterino anormal** | **Biopsia endometrial** (toma ambulatoria) | De rutina **>45 años**; antes solo con factores de riesgo — obesidad, SOP, exposición a estrógenos sin oposición, o SUA persistente pese a tratamiento (F-505) |
+
+Marco de referencia para sangrado uterino anormal: **PALM-COEIN** (causas estructurales:
+pólipo, adenomiosis, leiomioma, malignidad/hiperplasia). Causas cervicales frecuentes de
+sangrado de contacto que la colposcopía identifica: **ectropión, pólipo cervical y cervicitis**
+(F-505).
+
+### 11.5 Plazo
+
+El Reino Unido opera una **vía de derivación rápida de 2 semanas** para sangrado poscoital con
+cuello de aspecto anormal (F-501); la norma peruana fija **≤4 semanas** para los casos que van a
+colposcopía (F-475). **Semanas, no meses** — y tampoco urgencia del día.
 
 ---
 
