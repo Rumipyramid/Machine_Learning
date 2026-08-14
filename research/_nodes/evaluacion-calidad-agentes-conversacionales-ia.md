@@ -241,6 +241,15 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
 
 ## Conexiones
 
+- [[diagnostico-copiloto-ai-asesor-vida-rimac|Diagnóstico del Copiloto AI del asesor de Vida]] —
+  la primera aplicación concreta de este node a un agente real de RIMAC en producción: sus tres ejes
+  son el instrumento con el que se documenta el corpus de fallas (§4 de ese node), y la distinción
+  entre *faithfulness* y *context precision* de RAGAS es lo que ahí separa una falla de conocimiento
+  de una de comportamiento.
+- [[arquitectura-conocimiento-agentes-copilot|Arquitectura de base de conocimiento para agentes de
+  Copilot]] — el complemento aguas arriba de este node: aquí se mide si el agente responde bien, ahí
+  se define cómo debe estar almacenada la información para que pueda hacerlo. Medir antes de auditar
+  la base solo confirma que está mal, sin decir por qué.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — una mala experiencia con el agente de IA alimenta
   directamente el problema de desconfianza (~48%) ya documentado en ese node; medir y

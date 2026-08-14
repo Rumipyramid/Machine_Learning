@@ -170,6 +170,12 @@ lámina o deck ya construido que use "170%" como cifra puntual.
 
 ## Conexiones
 
+- [[diagnostico-copiloto-ai-asesor-vida-rimac|Diagnóstico del Copiloto AI del asesor de Vida]] —
+  este catálogo es lo que la base de conocimiento del copiloto debe representar sin error: es la
+  capa donde una falla del agente deja de ser molestia y pasa a ser riesgo de cumplimiento
+  (coberturas, exclusiones, precios dichos a un cliente). Su trazabilidad de fuentes y niveles de
+  confianza es directamente reutilizable como criterio de vigencia — ver §5.3, prioridad 3, de ese
+  node.
 - [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual (RIMAC)]] —
   este catálogo de producto es insumo directo del Bloque 4 del Playbook del Asesor (§4 de ese
   node, "venta consultiva de 4 pasos" — motivación → dimensionamiento → perfil financiero →

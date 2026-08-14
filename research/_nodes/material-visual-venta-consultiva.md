@@ -345,6 +345,13 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
 
 ## Conexiones
 
+- [[arquitectura-conocimiento-agentes-copilot|Arquitectura de base de conocimiento para agentes de
+  Copilot]] — **tensión productiva a tener presente:** este node documenta que el material visual
+  reduce la incertidumbre del **cliente**; ese node documenta que el material visual es
+  prácticamente ilegible para un **agente de IA** (las imágenes sin alt-text son invisibles, las
+  tablas no se parsean, la maqueta de un PPT no sobrevive a la extracción de texto). No se
+  contradicen: implican que el material de venta y la base de conocimiento del copiloto son **dos
+  artefactos distintos con dos audiencias distintas**, y que producir uno no produce el otro.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — este node aplica el problema general de confianza/déficit
   de información (§1.2-1.3 de ese node) al momento específico de explicación del producto

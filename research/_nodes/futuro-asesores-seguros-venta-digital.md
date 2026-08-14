@@ -361,6 +361,12 @@ apostar a que la conversación compleja deje de necesitar a una persona.
 
 ## Conexiones
 
+- [[diagnostico-copiloto-ai-asesor-vida-rimac|Diagnóstico del Copiloto AI del asesor de Vida]] —
+  instancia concreta de la tesis de este node ("potenciar al asesor, no reemplazarlo") puesta a
+  prueba en una herramienta real ya en producción. Aporta además la mejor evidencia causal que este
+  node puede citar sobre el tamaño de ese "potenciar": +14% de productividad en promedio pero **+34%
+  en novatos y ~0 en expertos** (F-476, QJE 2025) — el beneficio del copiloto no se reparte parejo
+  entre los asesores.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — ese node documenta que en Perú, específicamente, la
   confianza sube con intermediación de un broker (§3.3); este node aporta el marco

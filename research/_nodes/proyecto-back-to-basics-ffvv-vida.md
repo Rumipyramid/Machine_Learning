@@ -883,6 +883,15 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 
 ## Conexiones
 
+- [[diagnostico-copiloto-ai-asesor-vida-rimac|Diagnóstico del Copiloto AI del asesor de Vida]] —
+  proyecto **asociado** a este (no una sección suya, abierto 2026-08-14): diagnostica la herramienta
+  de IA que usa el asesor, cuyo defecto de consistencia ya aparecía aquí por triplicado (encuesta a
+  19 asesores: "no da la información adecuada"; Taller de Manejo de Objeciones: "consistencia del
+  copiloto de IA"; backlog de corto plazo, frente #1). Ese node hereda de aquí los datos primarios y
+  el Plan Piloto (§8), cuyo indicador de "consultas sin respuesta satisfactoria" es su insumo
+  directo. ⚠️ Levanta además una ambigüedad que este node debe resolver: aquí AIDA se documenta como
+  prototipo **sobre Claude**, mientras el brief del Copiloto AI declara plataforma **Copilot** — ver
+  §6/P1 de ese node.
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC — catálogo y coberturas]] —
   catálogo de qué cubre y cuánto cuesta cada producto real (VFP, Plan Vida Flexible, Vida
   Contigo, Vida Temporal Total); insumo directo del Bloque 4 del Playbook del Asesor (§4 de ese
