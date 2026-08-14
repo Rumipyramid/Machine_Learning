@@ -1,17 +1,17 @@
 # Protocolo de interrogación de AIDA — ramo Vida
 
-**Instrumento de diagnóstico.** Versión 0.1 · 2026-08-14
+**Instrumento de diagnóstico.** Versión 0.2 · 2026-08-14
 Construido sobre `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md` (v1.4),
 `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` (v1.0),
 `_nodes/arquitectura-conocimiento-agentes-copilot.md` (v1.1) y
 `_nodes/matriz-productos-vida-rimac.md` (v1.2, **fuente de verdad para calificar exactitud**).
 
-> ⚠️ **Slot pendiente — "modelo de Shang".** Alejo pidió construir esto usando el modelo de Shang.
-> **No se pudo identificar con certeza cuál es**, y el proyecto no permite citar por aproximación
-> (ver reglas de eco de cita). Se buscó y no aparece en el códice ni como framework establecido de
-> evaluación de chatbots. Los dos candidatos encontrados están al final (§6). **Las dimensiones de
-> §3 son provisionales y están construidas sobre instrumentos ya verificados del repo; se
-> reemplazan o se reordenan en cuanto se confirme el modelo.**
+> ✅ **Referencia metodológica identificada (v0.2).** Alejo se refería a **Zheng, L. et al.
+> (2023), *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*** (NeurIPS 2023) — el paper que
+> fundó el método de evaluar un LLM con otro LLM, usando GPT-4 como juez. **Ya estaba registrado en
+> el códice como F-159.** Se suma **G-Eval** (Liu et al. 2023, EMNLP, **F-156**), que puntúa cada
+> respuesta con razonamiento paso a paso contra criterios explícitos. El **Bloque D** aplica ese
+> método actualizado a 2026 (F-485 a F-487), con **Claude como auditor**.
 
 ---
 
@@ -207,25 +207,111 @@ A6 y con el equipo.
 
 ---
 
-## 6. El slot de Shang — los dos candidatos encontrados
+## 6. Bloque D — Claude como auditor de la calidad de AIDA
 
-Ninguno se aplicó, porque ninguno es claramente "el modelo de Shang" para evaluar respuestas:
+Aplica el método de **juez LLM** (Zheng et al. 2023, **F-159**; G-Eval, **F-156**) con las
+correcciones que el campo acumuló hasta 2026 (**F-485 a F-487**).
 
-1. **Shang & Seddon (2000/2002)** — *A Comprehensive Framework for Classifying the Benefits of ERP
-   Systems* / *Assessing and managing the benefits of enterprise systems* (Information Systems
-   Journal 12(4):271-299). Cinco dimensiones de beneficio: **operacional, gerencial, estratégico,
-   infraestructura TI y organizacional.** Es el "modelo de Shang" más conocido en sistemas
-   empresariales, peer-reviewed y sólido — pero clasifica **beneficios de un sistema**, no calidad
-   de respuestas. Encajaría muy bien para evaluar **qué valor entrega AIDA**, como bloque aparte.
-2. **Otro Shang no identificado** — la búsqueda de "Shang" + evaluación de chatbots no devuelve un
-   framework establecido con ese nombre.
+### D1 · Por qué Claude es el juez correcto aquí (y no es una preferencia)
 
-**Tercera posibilidad a descartar:** que "Shang" sea una transcripción de otro apellido.
+El sesgo más documentado del método es el de **auto-favorecimiento**: un juez tiende a premiar
+respuestas de su propia familia de modelos. La versión moderna del problema es la **fuga de
+preferencia** (*preference leakage*, F-485): contaminación cuando generador y evaluador están
+emparentados.
 
-👉 **Confirmar con Alejo antes de la v0.2.** Si es Shang & Seddon, se agrega como **Bloque D** —
-evaluación de beneficio en cinco dimensiones— sin tocar los Bloques A-C, que miden otra cosa.
+⭐ **Aquí eso juega a favor.** AIDA corre sobre Copilot o sobre Google ADK (sin resolver, ver H4) —
+en cualquiera de los dos casos, **una familia distinta de la de Claude**. La auditoría es
+*cross-family* por construcción, que es la condición limpia. **Si AIDA algún día migra a Claude,
+esta elección de juez deja de ser válida** y hay que cambiar de auditor. Dejarlo escrito ahora
+evita el error después.
 
----
+### D2 · Las tres decisiones de diseño, y por qué
+
+| Decisión | Elegida | Por qué |
+|---|---|---|
+| **Pointwise vs. pairwise** | **Pointwise** (puntuar cada respuesta sola) | Se audita un sistema, no se comparan dos. Además elimina el sesgo de posición — que de todos modos resultó marginal (≤0,04, F-486) |
+| **Con o sin referencia** | ⭐ **Con referencia** (*reference-guided*) | Existe patrón oro: `[[matriz-productos-vida-rimac]]`. Es **la palanca de fiabilidad más grande disponible** — juzgar contra la respuesta correcta es mucho más confiable que juzgar "en abstracto" (F-487) |
+| **Holístico vs. por criterio** | **Por criterio, sin promediar** | Las seis dimensiones de §3 se puntúan y reportan separadas. Promediarlas esconde justo lo que hay que ver |
+
+### D3 · El sesgo que hay que mitigar aquí — y no es el que se cree
+
+**Actualización que invierte la guía de 2023 (F-486):** el **sesgo de estilo es dominante (0,76 a
+0,92** en todos los modelos probados**)**, mientras que el de posición es **≤0,04**. Casi dos
+órdenes de magnitud de diferencia. Todo el mundo aleatoriza el orden y casi nadie controla el
+estilo.
+
+⚠️ **Y este caso es el peor escenario posible para ese sesgo.** Basta mirar la respuesta de AIDA a
+A1: prosa fluida, numerada, con negritas, tono seguro y cierre en "en resumen". **Es exactamente el
+estímulo que hace que un juez premie una respuesta que puede estar equivocada.** Sin mitigación
+explícita, el Bloque D mediría elegancia, no exactitud.
+
+**Mitigaciones a incluir en el prompt del juez, en este orden:**
+1. **Instrucción explícita de ignorar formato, longitud, fluidez y seguridad del tono.** La
+   confianza con que AIDA afirma algo **no es evidencia** de que sea correcto.
+2. **Anclaje a la referencia**: la pregunta que el juez debe responderse es *"¿coincide con la
+   ficha vigente?"*, no *"¿suena bien?"*.
+3. **Razonamiento antes del puntaje** (chain-of-thought, G-Eval/F-156): primero contrastar contra
+   la referencia, después puntuar. Nunca el puntaje primero.
+4. **Puntaje por criterio separado**, con justificación citando la referencia en cada uno.
+5. ⚠️ **No apilar mitigaciones a ciegas:** F-486 documenta que **una estrategia que mitiga un sesgo
+   puede empeorar otro**. No hay combo universal — por eso existe D5.
+
+### D4 · Prompt del juez (plantilla)
+
+> Eres auditor de calidad de un asistente de IA para asesores de seguros de vida en Perú.
+>
+> **Evalúa SOLO exactitud y fidelidad a la referencia. Ignora explícitamente el formato, la
+> longitud, la fluidez, el orden y la seguridad del tono.** Una respuesta segura, bien redactada y
+> equivocada debe puntuar 0. Una respuesta correcta y mal redactada debe puntuar 2.
+>
+> **PREGUNTA:** {pregunta}
+> **RESPUESTA DE AIDA:** {respuesta literal}
+> **REFERENCIA (fuente de verdad):** {extracto de la matriz de productos}
+>
+> Paso 1 — Lista cada afirmación factual de la respuesta, una por una.
+> Paso 2 — Para cada una: ¿la referencia la confirma, la contradice, o no la cubre?
+> Paso 3 — Recién entonces puntúa 0/1/2 en D1 exactitud, D2 fidelidad, D3 vigencia,
+> D4 trazabilidad, D5 completitud, D6 borde. Justifica cada puntaje citando la referencia.
+> Paso 4 — Marca `riesgo_regulatorio: sí` si algún error toca cobertura, exclusión, carencia,
+> edad de ingreso o permanencia, suma asegurada o precio.
+> Paso 5 — Si la referencia no cubre el tema, responde `FUERA DE REFERENCIA` y no puntúes.
+> **No completes con tu propio conocimiento de seguros.**
+
+El paso 5 es el que impide que el auditor se convierta en una segunda fuente de alucinación: **si la
+matriz no lo cubre, el caso se escala a humano** — y de paso queda registrado como hueco de la
+matriz.
+
+### D5 · Calibración — obligatoria, y es el paso que casi todos se saltan
+
+> **Un juez sin calibrar no produce una medición: produce un número decorativo** (F-487).
+
+Procedimiento, convergente en las cuatro fuentes consultadas:
+
+1. Separar una **submuestra de 100 a 300 respuestas** de AIDA, estratificada para cubrir la forma
+   real del uso (producto, objeción, borde, ruteo entre ramos).
+   *Para arrancar, 30-50 alcanzan para una señal preliminar; declararlo como preliminar.*
+2. Que **2 o 3 personas** (asesor senior + alguien de Producto) las etiqueten **con la misma
+   rúbrica de §3**, a ciegas del puntaje de Claude.
+3. Calcular acuerdo **juez-humano**: **κ de Cohen** con dos anotadores, **α de Krippendorff** con
+   tres o más. ⭐ **Por criterio, no en agregado** — el juez puede acertar en exactitud y fallar en
+   vigencia, y el promedio lo escondería. Intervalos de confianza por bootstrap.
+4. **Solo si el acuerdo es aceptable** se usa el juez a escala. Si no, se corrige la rúbrica —
+   normalmente el problema es que un criterio está mal definido, no que el juez sea malo.
+5. **Recalibrar** cuando cambie la rúbrica, el modelo juez o la base de AIDA.
+
+⚠️ **Un desacuerdo entre humanos también es un hallazgo.** Si el asesor senior y Producto no
+coinciden en qué es correcto, **eso no es ruido de anotación: es la contradicción organizacional de
+§9 apareciendo en la medición.**
+
+### D6 · Lo que este bloque no puede hacer
+
+- **No reemplaza la calibración humana**, la requiere (D5).
+- **No juzga lo que la matriz no cubre.** Objeciones, tono y calidad de speech comercial quedan
+  fuera del alcance guiado por referencia — para eso sirven las escalas de percepción (BUS-11, CUQ)
+  con asesores reales, que miden otro eje y no se mezclan con este.
+- **No distingue por sí solo una falla de conocimiento de una de ruteo.** El juez ve la respuesta
+  final; para separar capas hacen falta el Bloque C y la prueba del fragmento pegado (§3 del node).
+- **Es una medición, no una explicación.** Dice cuánto falla y en qué dimensión, no por qué.
 
 ## 7. Hoja de registro
 

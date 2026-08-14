@@ -1,7 +1,8 @@
 # Evaluación de calidad de agentes conversacionales de IA (chatbots)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-15 · Versión: v1.0
+> Fecha de elaboración: 2026-07-15 · Última actualización: 2026-08-14 · Versión: v1.1
+> (v1.1: §6 actualiza el método de juez LLM al estado 2026 — F-485 a F-487. Cambio estructural: invierte cuál es el sesgo prioritario a mitigar y agrega la calibración humana como paso obligatorio.)
 > Origen: `/seeker` — investigación de espectro amplio (empírico + teórico)
 
 ---
@@ -238,6 +239,33 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   agente real.
 
 ---
+
+---
+
+## 6. Actualización del método de juez LLM (agregado 2026-08-14) — v1.1
+
+Este node quedó cerrado en 2026-07-15 con **MT-Bench / LLM-as-a-Judge** (Zheng et al. 2023, F-159)
+y **G-Eval** (Liu et al. 2023, F-156) como referencias del método de evaluar un LLM con otro. El
+campo se movió lo suficiente desde entonces como para cambiar una prioridad operativa:
+
+- **F-485** — *A Survey on LLM-as-a-Judge* consolida el estado del método (pointwise vs. pairwise,
+  con y sin referencia) y documenta la **fuga de preferencia** (*preference leakage*): contaminación
+  cuando el modelo que genera y el que evalúa están emparentados. **Implicación práctica: elegir un
+  juez de familia distinta a la del sistema evaluado.**
+- ⭐ **F-486** — *Judging the Judges* (9 estrategias × 5 modelos de 4 familias × 3 benchmarks)
+  **invierte la prioridad de mitigación que fijaba la guía de 2023**: el **sesgo de estilo es
+  dominante (0,76-0,92)** y el **de posición es marginal (≤0,04)**. Los modelos sí distinguen calidad
+  de longitud (0,92-1,00 con controles de truncamiento) — el problema no es el largo, es el
+  **estilo**. Y ⚠️ **las mitigaciones interactúan: una que corrige un sesgo puede empeorar otro.**
+- **F-487** — el paso que casi todos omiten: **calibrar el juez contra 2-3 anotadores humanos** sobre
+  100-300 casos, con **κ de Cohen (o α de Krippendorff) por criterio**, antes de reportar cifra
+  alguna. Sin eso, el puntaje del juez es decorativo.
+
+**Consecuencia para el eje 3 de §1** (corrección objetiva de la respuesta): sigue siendo el eje
+correcto y RAGAS sigue sirviendo, pero cuando se use un **juez LLM con rúbrica**, la mitigación
+prioritaria ya no es aleatorizar el orden — es **instruir explícitamente al juez a ignorar formato,
+fluidez y seguridad del tono, y anclarlo a una referencia**. Aplicación concreta en
+`_outputs/protocolo-interrogacion-aida-vida.md`, Bloque D.
 
 ## Conexiones
 
