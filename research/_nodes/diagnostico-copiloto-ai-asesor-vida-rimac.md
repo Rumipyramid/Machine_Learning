@@ -7,7 +7,13 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.5
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.6
+> (v1.6: §12 — **diseño de validación de los fixes**, a propuesta de Alejo. Separa **dos
+> experimentos** que la propuesta unía: la re-corrida del banco de preguntas contra la base
+> arreglada —que no necesita asesores y es la **compuerta**— y el piloto de desempeño con asesores.
+> Aplica sin investigación nueva las estrategias de testeo que el repo ya tenía en
+> `modelo-salud-ia-farmacias-peru` §4, con sus controversias declaradas. Estratificación por
+> antigüedad **obligatoria**, y la sustitución por ChatGPT/Gemini como métrica conductual.)
 > (v1.5: §11 — primera corrida de **auto-interrogación de AIDA**. Cinco hallazgos: AIDA es
 > **multi-ramo, no de Vida** (1 de 5 subagentes); la arquitectura de ruteo que §8 recomendaba **ya
 > existe**, así que falta medirla, no construirla; los productos que declara **no coinciden con el
@@ -756,6 +762,156 @@ Los hallazgos obligan a una capa que la taxonomía de tres no tenía:
 **Por qué importa que sea una capa aparte:** una falla de ruteo **se ve idéntica a una falla de
 conocimiento** desde afuera, pero se arregla en un lugar completamente distinto — el clasificador,
 no la base. Sin separarla, un proyecto de limpieza de contenido podría no mover la aguja en nada.
+
+---
+
+## 12. Diseño de validación de los fixes (v1.6)
+
+**Propuesta de Alejo (2026-08-14):** una vez logrado el primer set de fixes —documentación en
+formato adecuado, cuerpo de conocimiento unificado y no contradictorio del modelo de venta, más lo
+que salga de la exploración— correr **un piloto que compare la performance de asesores con la
+herramienta antigua y con la nueva.**
+
+La propuesta es correcta en dirección. Lo que sigue son las decisiones de diseño que la hacen
+interpretable — y una separación que conviene hacer antes de comprometer asesores.
+
+⭐ **Nota de método:** esta sección **no requirió investigación nueva**. El repositorio ya tenía la
+evidencia de estrategias de testeo levantada para un caso análogo (IA desplegada a profesionales en
+Perú) en `[[modelo-salud-ia-farmacias-peru]]` §4 — E1 silent trial, E2 híbrido de Curran, E3
+stepped-wedge —, con sus revisiones profundas y sus controversias ya documentadas. Se aplica tal
+cual, incluidas las advertencias.
+
+### 12.1 Son dos experimentos, no uno
+
+Confundirlos es el error más caro disponible aquí, porque hace gastar el capital político de la
+fuerza de venta en una prueba que podía haberse hecho sin ella.
+
+| | **Experimento 1 · La herramienta** | **Experimento 2 · El asesor** |
+|---|---|---|
+| **Pregunta** | ¿Los fixes mejoraron las respuestas? | ¿La mejor herramienta cambia el desempeño? |
+| **Necesita asesores** | **No** | Sí |
+| **Duración** | Días | Semanas o meses |
+| **Ruido** | Muy bajo — banco de preguntas fijo | Alto — estacionalidad, campañas, cartera, ánimo |
+| **Qué aísla** | El efecto del fix, limpio | El efecto del fix **más** todo lo demás |
+| **Costo** | Bajo | Alto, y consume goodwill de la FFVV |
+
+**El Experimento 1 es la compuerta del 2.** Si la calidad de respuesta no se mueve en el mismo
+banco de preguntas, **no hay nada que testear con asesores** — y se evita quemar la disposición de
+la fuerza de venta en un piloto que nunca iba a mostrar nada.
+
+### 12.2 Experimento 1 — la re-corrida (silent trial adaptado)
+
+Es E1 de `[[modelo-salud-ia-farmacias-peru]]` §4 trasladado: medir el sistema **sin que su salida
+influya en ninguna decisión real**.
+
+- **Mismo banco de preguntas, mismo juez, misma rúbrica, misma calibración** que la línea base
+  (`_outputs/protocolo-interrogacion-aida-vida.md`).
+- **Comparación pareada pregunta por pregunta** (antes → después). Esto da **alta potencia
+  estadística con pocos ítems**, porque cada pregunta es su propio control — no hay varianza entre
+  sujetos que absorber.
+- **Aísla el mecanismo:** como el banco está fijo, un cambio en el puntaje es atribuible al fix y no
+  a variación de asesores o de mercado.
+- ⚠️ **Advertencia heredada de la revisión profunda de F-56/F-57:** un silent trial **no es un
+  casillero que se marca una vez** — vale mientras la población de uso no cambie. El caso citado
+  ahí (un modelo que colapsó de AUC 0,90 a 0,50 por *distribution shift*) aplica: si después se
+  amplía a otro ramo, otra región o cambia el mix de consultas, **hay que repetirlo**.
+
+**Regla de decisión sugerida, a declarar antes de correrlo:** los fixes pasan si la exactitud (D1)
+y la vigencia (D3) suben de forma clara **y** las fallas marcadas con riesgo regulatorio bajan a
+cero. Sin eso, no se avanza al Experimento 2 — se itera el contenido.
+
+### 12.3 Experimento 2 — cinco decisiones que hay que tomar antes
+
+**1 · ¿Se pueden tener dos versiones a la vez?** Pregunta técnica, y es la primera. Si la base de
+conocimiento es infraestructura compartida, **puede no ser posible que un grupo use la vieja y otro
+la nueva simultáneamente**. Determina todo el diseño: si no se puede, el paralelo queda descartado
+y hay que ir a escalonado o a antes/después. **Verificar con TI antes de diseñar nada más.**
+
+**2 · Contaminación entre asesores.** Los asesores se hablan, se pasan capturas y se recomiendan
+herramientas. Aleatorizar individuos dentro de una misma oficina **filtra**: el grupo control se
+entera y, si puede, la usa. → **Aleatorizar por cluster** (equipo, oficina, territorio), no por
+persona.
+
+**3 · La conversión no sirve como desenlace primario.** Ya está declarado por el propio equipo en
+el Plan Piloto: *el ciclo de venta de Vida excede el plazo del piloto; un movimiento en conversión
+sería direccional, no concluyente*. Diseñar el piloto con conversión como métrica principal
+garantiza un resultado nulo o ruidoso. Ver 12.5.
+
+**4 · ⭐ Estratificar por antigüedad es obligatorio, no un análisis posterior.** Dos fuentes
+independientes del propio repositorio convergen:
+- **F-476** (QJE 2025): el efecto de un copiloto es **+34% en novatos y prácticamente nulo en
+  expertos**. Un promedio mezcla dos poblaciones distintas.
+- **F-55** (Cully et al. 2017, vía revisión profunda del node de salud): el caso de referencia de
+  diseño híbrido que el proyecto ya cita tuvo **resultados desiguales entre subgrupos** — funcionó
+  en uno y no en el otro.
+
+**Implicación dura: un piloto sin estratificar puede reportar "sin efecto" cuando existe un efecto
+grande en el grupo que más importa.** La estratificación va en el diseño y en el análisis
+preespecificado, no se descubre después.
+
+**5 · Efecto novedad.** Una herramienta nueva genera entusiasmo que se confunde con utilidad. El
+Plan Piloto ya lo nombraba: interesa si el asesor *"sigue volviendo después de la novedad
+inicial"*. → **Medir uso sostenido a partir de la semana 3**, no el pico inicial.
+
+### 12.4 Qué diseño recomendar — y su controversia, declarada
+
+**Recomendación: escalonado por clusters (stepped-wedge)** — los equipos pasan de la versión
+antigua a la nueva en orden aleatorio hasta que todos la reciben.
+
+Por qué encaja: resuelve la contaminación (el cluster entero cambia junto), no le niega
+permanentemente la mejora a nadie —lo que importa cuando la herramienta vieja está reconocidamente
+fallada—, y es compatible con un despliegue gradual, que es como esto va a ocurrir de todos modos.
+
+⚠️ **Y ahora la advertencia que el repositorio ya tiene documentada, y que hay que declarar en el
+protocolo en vez de omitirla:** el stepped-wedge **no es una elección libre de controversia**.
+Hemming & Taljaard (F-58/F-59, revisión profunda 2026-08-12) sostienen que está en **mayor riesgo
+de sesgo que un cluster-RCT paralelo** y que su supuesta ventaja ética **no es real**, porque la
+implementación secuencial también cabe en un paralelo clásico; hay réplica académica activa. Además
+**confunde por tiempo** — el control siempre se mide antes cronológicamente — y exige **ajuste por
+tendencia temporal**, algo especialmente sensible en venta de seguros, donde hay estacionalidad y
+campañas.
+
+**Consecuencia práctica:** si se elige stepped-wedge, hay que **documentar explícitamente por qué se
+prefiere sobre un paralelo** (como exige CONSORT), no presentarlo como la opción obviamente
+superior. Si TI confirma que se pueden mantener dos instancias y hay suficientes equipos, **un
+cluster-RCT paralelo es metodológicamente más limpio.**
+
+### 12.5 Qué medir — tres niveles que no se mezclan
+
+| Nivel | Métrica | Ventana |
+|---|---|---|
+| **1 · Herramienta** | Exactitud, vigencia, fidelidad y fallas con riesgo regulatorio, sobre el banco fijo | Inmediata (Exp. 1) |
+| **2 · Conducta del asesor** | Tasa de uso sostenida (sem. 3+) · consultas resueltas sin escalar · conversaciones que respetan la secuencia del modelo (shadowing) · carga cognitiva autorreportada · **uso de ChatGPT/Gemini como sustituto** | 4-8 semanas |
+| **3 · Comercial** | Propuestas enviadas y agendamiento como adelantados; conversión, prima y persistencia como rezagados | Fuera de ventana — **direccional, nunca concluyente** |
+
+⭐ **La métrica más elegante del conjunto es la sustitución por IA externa.** Hoy está documentado
+que los asesores usan ChatGPT y Gemini **para cubrir los huecos de AIDA**. Eso la convierte en un
+indicador conductual, no declarativo, directamente derivado del diagnóstico: **si los fixes
+funcionan, el uso de IA externa debería caer.** No requiere que el asesor evalúe nada — solo que se
+le pregunte con qué frecuencia recurrió a una IA de afuera esta semana. Y tiene una lectura de
+riesgo adicional que ya conviene al negocio: mide exposición de información por herramientas no
+gobernadas.
+
+### 12.6 Preregistrar antes de correr
+
+Declarar **por escrito y antes de empezar**: hipótesis, desenlace primario, estratos (antigüedad
+como mínimo), regla de decisión y análisis planeado.
+
+No es formalismo académico: es la defensa contra el sesgo que este proyecto documentó seis veces en
+otros contextos — **decidir después de ver los datos qué métrica contaba**. Y es coherente con el
+criterio que el repositorio ya aplica al valorar evidencia externa: el único RCT preregistrado del
+node de tendencias es también la evidencia que más peso recibe ahí.
+
+### 12.7 Lo que este piloto no puede probar
+
+- **No prueba que el modelo de venta funcione.** Prueba que la herramienta que lo vehicula mejoró.
+  Son cosas distintas y confundirlas atribuiría al modelo un mérito o un fracaso de la herramienta.
+- **No aísla cuál fix funcionó.** Los fixes van en paquete, así que el Experimento 2 responde
+  "¿sirvió el paquete?", que es la pregunta correcta para decidir inversión. El **por qué** lo
+  responde el Experimento 1, ítem por ítem.
+- **No resuelve la contradicción aguas arriba** (§9). Si el modelo de venta no es efectivamente
+  canónico para todos los frentes, la base volverá a divergir y el efecto medido se degradará con el
+  tiempo. **El piloto mide el fix, no lo sostiene.**
 
 ---
 

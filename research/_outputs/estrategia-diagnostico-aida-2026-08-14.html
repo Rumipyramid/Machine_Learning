@@ -160,7 +160,7 @@
   <h1>Diagnóstico de <em>AIDA</em></h1>
   <p class="standfirst">Estrategia para establecer qué falla en el copiloto del asesor, con qué frecuencia y en qué capa — antes de invertir en arreglarlo.</p>
   <div class="meta">
-    <span>v2.0 · 14 ago 2026</span><span>CoE Diseño Estratégico</span><span>Estado: instrumentos listos, medición no iniciada</span>
+    <span>v2.1 · 14 ago 2026</span><span>CoE Diseño Estratégico</span><span>Estado: instrumentos listos, medición no iniciada</span>
   </div>
 </header>
 
@@ -353,7 +353,53 @@
 </section>
 
 <section>
-  <div class="sechead"><span class="secnum">08</span><h2>Riesgos de esta estrategia</h2></div>
+  <div class="sechead"><span class="secnum">08</span><h2>Cómo se valida que los fixes sirvieron</h2></div>
+  <div class="col">
+    <p>Una vez logrado el primer set de arreglos — documentación en formato consumible, cuerpo de conocimiento unificado y no contradictorio, más lo que salga de la exploración — hay que probar que sirvieron. La propuesta natural es un piloto que compare asesores con la herramienta antigua y con la nueva. Es la dirección correcta, pero <strong>son dos experimentos, no uno</strong>, y confundirlos gasta el capital político de la fuerza de venta en una prueba que podía hacerse sin ella.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th></th><th>Experimento 1 · La herramienta</th><th>Experimento 2 · El asesor</th></tr></thead>
+    <tbody>
+      <tr><td class="n">Pregunta</td><td>¿Los fixes mejoraron las respuestas?</td><td>¿La mejor herramienta cambia el desempeño?</td></tr>
+      <tr><td class="n">¿Necesita asesores?</td><td><strong>No</strong></td><td>Sí</td></tr>
+      <tr><td class="n">Duración</td><td>Días</td><td>Semanas o meses</td></tr>
+      <tr><td class="n">Ruido</td><td>Muy bajo — banco de preguntas fijo</td><td>Alto — estacionalidad, campañas, cartera</td></tr>
+      <tr><td class="n">Qué aísla</td><td>El efecto del fix, limpio</td><td>El efecto del fix <em>más</em> todo lo demás</td></tr>
+    </tbody>
+  </table></div>
+  <div class="col">
+    <div class="note">
+      <span class="lab">El primero es compuerta del segundo</span>
+      <p>Se vuelve a correr el mismo banco de preguntas contra la base arreglada, con el mismo juez y la misma rúbrica, comparando <strong>pregunta por pregunta</strong> — cada una es su propio control, lo que da alta potencia con pocos ítems. Si la calidad no se mueve ahí, <strong>no hay nada que testear con asesores.</strong></p>
+    </div>
+    <h3>Cinco decisiones antes de tocar el piloto</h3>
+    <ul class="plain">
+      <li><strong>¿Se pueden mantener dos versiones a la vez?</strong> Si la base es infraestructura compartida, quizá no. Es pregunta técnica y va primero: define si el diseño puede ser paralelo o tiene que ser escalonado.</li>
+      <li><strong>Contaminación.</strong> Los asesores se pasan capturas y se recomiendan herramientas. Aleatorizar personas dentro de una oficina filtra — hay que aleatorizar por equipo o territorio.</li>
+      <li><strong>La conversión no sirve como desenlace primario.</strong> El propio Plan Piloto ya lo declaró: el ciclo de venta de Vida excede la ventana, y un movimiento sería direccional, no concluyente.</li>
+      <li><strong>Estratificar por antigüedad es obligatorio.</strong> El efecto de un copiloto es +34% en novatos y prácticamente nulo en expertos. Un piloto sin estratificar <strong>puede reportar «sin efecto» cuando hay un efecto grande en el grupo que más importa.</strong></li>
+      <li><strong>Efecto novedad.</strong> Medir uso sostenido desde la semana 3, no el pico inicial.</li>
+    </ul>
+    <h3>Diseño recomendado, con su controversia declarada</h3>
+    <p><strong>Escalonado por clusters:</strong> los equipos pasan a la versión nueva en orden aleatorio hasta que todos la tienen. Resuelve la contaminación, no le niega la mejora a nadie de forma permanente — relevante cuando la herramienta vieja está reconocidamente fallada — y coincide con cómo el despliegue va a ocurrir igual.</p>
+    <div class="note alert">
+      <span class="lab">Advertencia que hay que poner en el protocolo, no omitir</span>
+      <p>El diseño escalonado <strong>no es una elección libre de controversia</strong>. Hay literatura que sostiene que está en mayor riesgo de sesgo que un ensayo paralelo por clusters, y que su ventaja ética no es real porque el despliegue secuencial también cabe en un paralelo. Además confunde por tiempo y exige ajuste por tendencia — sensible en un negocio con estacionalidad y campañas. Si se puede tener dos instancias y hay equipos suficientes, <strong>el paralelo es más limpio</strong>.</p>
+    </div>
+    <h3>Qué medir, en tres niveles que no se mezclan</h3>
+    <p><strong>Herramienta:</strong> exactitud, vigencia y fallas con riesgo regulatorio sobre el banco fijo. <strong>Conducta:</strong> uso sostenido, consultas resueltas sin escalar, conversaciones que respetan la secuencia del modelo, carga autorreportada. <strong>Comercial:</strong> propuestas y agendamiento como adelantados; conversión y persistencia como rezagados, fuera de ventana y siempre direccionales.</p>
+    <div class="note">
+      <span class="lab">La métrica más limpia del conjunto</span>
+      <p>Hoy está documentado que los asesores recurren a ChatGPT y Gemini <strong>para cubrir los huecos de AIDA</strong>. Eso convierte ese uso en un indicador conductual — no declarativo — derivado directamente del diagnóstico: <strong>si los fixes funcionan, el uso de IA externa debería caer.</strong> Solo hay que preguntar con qué frecuencia recurrieron a una IA de afuera esta semana. Y de paso mide exposición de información por herramientas no gobernadas.</p>
+    </div>
+    <p><strong>Preregistrar antes de correr:</strong> hipótesis, desenlace primario, estratos y regla de decisión, por escrito y antes de empezar. Es la defensa contra decidir después de ver los datos qué métrica contaba.</p>
+    <h3>Lo que el piloto no puede probar</h3>
+    <p>No prueba que el modelo de venta funcione — prueba que la herramienta que lo vehicula mejoró. No aísla cuál fix sirvió, porque van en paquete; eso lo responde el Experimento 1, ítem por ítem. Y <strong>no resuelve la contradicción aguas arriba</strong>: si el modelo no es efectivamente canónico para todos los frentes, la base volverá a divergir y el efecto medido se degradará. El piloto mide el fix, no lo sostiene.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sechead"><span class="secnum">09</span><h2>Riesgos de esta estrategia</h2></div>
   <div class="col">
     <ul class="plain">
       <li><strong>Que el framework no sea el asumido.</strong> Si AIDA no corre sobre Copilot, los techos técnicos documentados no aplican y esa parte del diagnóstico se rehace. Es la razón por la que la Fase 0 existe.</li>
