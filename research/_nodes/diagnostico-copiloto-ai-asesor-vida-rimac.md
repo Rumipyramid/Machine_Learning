@@ -7,7 +7,14 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.7
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.8
+> (v1.8: §14 — **evaluación del Playbook del Asesor**, recibido de Alejo y persistido en
+> `research/_fuentes_internas/`. Hallazgo central: **la fuente canónica contiene las
+> contradicciones que debía resolver** — duplica Vida Contigo/VAG, omite VFP y usa el nombre
+> desactualizado "Flexivida". Eso **corrige H3 de §11**: AIDA probablemente reproduce fielmente el
+> playbook en vez de estar anclada a 2022 por su cuenta. Confirma P8 —el modelo no contiene
+> parámetros de producto, los referencia— y de ahí sale una predicción falsable sobre B2-B4.
+> Formato: 100.173 caracteres y 29 tablas, pero **partir por bloque resuelve el techo casi solo**.)
 > (v1.7: §13 — **trabajo de campo con asesores**, a propuesta de Alejo. Dos correcciones de fondo:
 > el campo **alimenta el banco de preguntas del protocolo, no lo sigue** (el banco actual es
 > sintético, deducido de la matriz), y hay que preguntar por **incidentes concretos, no por
@@ -744,6 +751,11 @@ aparecen en Vida Individual, y tres productos vigentes no son nombrados.
 Dos lecturas, ambas verificables con una pregunta (A3 del protocolo): **desfase de vigencia** o
 **desalineación de alcance** (el agente cubre la línea *Vida e Inversiones*, no *Vida Individual
 FFVV*). ⚠️ Descuento: AIDA dijo "productos **como**…" — son ejemplos, no catálogo.
+> ⚠️ **CORRECCIÓN (v1.8, tras leer el Playbook — ver §14.1).** La lectura de "desfase de vigencia"
+> era demasiado dura con AIDA. **El propio Playbook del Asesor, que es la fuente canónica, también
+> dice "Flexivida"** — no "Plan Vida Flexible". Es más probable que **AIDA esté reproduciendo
+> fielmente el playbook** que que esté anclada a un PPT de 2022 por su cuenta. El desfase existe,
+> pero está **aguas arriba**, en la fuente. Mueve la culpa del agente al catálogo.
 
 **H4 · `transfer_to_agent` es la función de delegación de Google ADK, no de Copilot Studio.**
 ⚠️ **Puede invalidar parte del trabajo previo.** Si AIDA no corre sobre Copilot Studio, **los
@@ -1042,6 +1054,181 @@ preguntas.
 antes** — que su queja sobre AIDA está documentada, que originó este proyecto, y qué se está
 haciendo. No es cortesía: es la condición para que la segunda ronda tenga la misma calidad que la
 primera.
+
+---
+
+## 14. Evaluación del Playbook del Asesor como fuente canónica (v1.8)
+
+**Documento recibido de Alejo el 2026-08-14** (`research/_fuentes_internas/Playbook_del_Asesor.md`,
+100.173 caracteres, 1.743 líneas). Es el **modelo de venta Vida** — la fuente canónica declarada en
+§9.2. Primera evaluación real contra todo lo construido en este node.
+
+**Veredicto en una línea:** el contenido es sólido y la estructura es mejor de lo esperado, pero
+**el documento que debe resolver las contradicciones contiene contradicciones**, y no es consumible
+por un agente en su forma actual.
+
+### 14.1 ⭐ La contradicción está dentro de la fuente canónica
+
+Contraste del portafolio del Bloque 2 contra `[[matriz-productos-vida-rimac]]` (derivada de fichas
+comerciales **vigentes desde 01/01/2025**):
+
+| Playbook (Bloque 2) | Matriz del repo | Estado |
+|---|---|---|
+| Temporal Total | Vida Temporal Total | ✅ Coincide |
+| **Vida Contigo** | Vida Contigo = **VAG** = Vida Ahorro con Devolución — **un solo producto** | ⚠️ |
+| **VAG** *(fila aparte, descripción distinta)* | ...es el mismo producto que Vida Contigo | 🔴 **El playbook lo trata como dos productos**, con descripciones que los diferencian ("un monto que también queda disponible" vs. "montos y plazos mayores") |
+| **Flexivida** | Nombre vigente: **Plan Vida Flexible**; "Flexivida" es el nombre del **PPT de marzo 2022** | 🔴 Nombre desactualizado |
+| VCD digital | "Pendiente — **no confirmado** como producto real distinto" | ⚠️ |
+| Endosable digital | "Pendiente — **no confirmado**" | ⚠️ |
+| *(ausente)* | **Vida Futuro Protegido (VFP)**, con 4 variantes (Plan 35/65, Plus 35/65) | 🔴 **Un producto vigente que el playbook no menciona** |
+
+Dos hallazgos graves: **el playbook duplica un producto** (Vida Contigo / VAG) y **omite otro**
+(VFP), que la matriz v1.2 confirma explícitamente como vigente.
+
+⭐⭐ **Y esto obliga a corregir H3 de §11.** Ahí se interpretó que AIDA usara "Flexivida" como huella
+de que su base estaba anclada a material de 2022. **Es más probable que AIDA esté reproduciendo
+fielmente el playbook**, que usa ese mismo nombre. Es decir: **AIDA puede no estar equivocada — puede
+estar siendo exacta respecto de una fuente que ya no lo es.**
+
+Eso mueve el diagnóstico un eslabón aguas arriba y es exactamente lo que predecía §9: **la
+inconsistencia del agente es la inconsistencia de la organización, reflejada.** Aquí queda
+demostrado con nombres de producto concretos, no como hipótesis.
+
+### 14.2 El playbook no contiene los datos que el asesor más consulta
+
+Declarado por el propio documento: *"**Detalle técnico de cada producto (Pendiente)** — coberturas
+exactas, exclusiones, tiempos de espera, edades de contratación, qué pasa si el cliente deja de
+pagar, y montos/plazos mínimos y máximos… depende del equipo de Producto."*
+
+✅ **Esto confirma P8**: el modelo es canónico para el **conocimiento de venta** y **referencia** una
+fuente de producto sin contenerla. La lectura propuesta era correcta y ahora está confirmada por el
+documento mismo.
+
+⭐ **Pero produce una predicción falsable y valiosa.** Si la base de Vida de AIDA deriva del
+playbook, **no tiene ningún dato de cobertura, exclusión ni carencia** — y las preguntas B2, B3 y B4
+del protocolo (suma asegurada mínima de VFP, carencia de Enfermedades Graves, edad máxima de PEI)
+**deberían fallar**.
+
+**Los dos resultados posibles son ambos hallazgos:**
+- **Si fallan** → confirma que el hueco es de contenido, no de recuperación. Se arregla trayendo la
+  matriz de producto, no limpiando formatos.
+- **Si AIDA las responde con seguridad** → está tomando datos de producto de **una fuente que no es
+  el playbook y que nadie declaró**. Eso es una fuente no gobernada, y es más grave.
+
+**Correr B2-B4 temprano.** Es la prueba más informativa por unidad de esfuerzo que hay disponible
+hoy.
+
+### 14.3 Formato: no consumible hoy, pero la conversión es barata
+
+| Criterio (§4 del node de arquitectura) | Estado | Detalle |
+|---|---|---|
+| ≤36.000 caracteres por archivo | 🔴 **No** | **100.173** — 2,8× el techo |
+| Sin tablas | 🔴 **No** | **29 tablas**, varias en el contenido más crítico |
+| Estructura por encabezados | 🟢 **Sí** | Jerarquía limpia y profunda (bloques → H2 → H3 → H4/H5) |
+| Un documento, un tema | 🟡 Parcial | 5 bloques temáticos bien separados, pero en un solo archivo |
+| Sin imágenes | 🟢 **Sí** | Cero |
+| Resumen al inicio | 🟡 Parcial | Tiene "Para empezar" y "Estado de esta versión" |
+| Formato base | 🟢 **Óptimo** | Ya es markdown |
+
+⭐ **La buena noticia, y es grande: partir por bloque resuelve el techo casi solo.**
+
+| Archivo resultante | Caracteres | ¿Bajo 36k? |
+|---|---|---|
+| Portada + journey | 5.349 | ✅ |
+| Bloque 1 · Quiénes somos | 13.701 | ✅ |
+| **Bloque 2 · Qué vendes** | **5.396** | ✅ |
+| Bloque 3 · Que te encuentren | 27.063 | ✅ |
+| **Bloque 4 · La asesoría** | **34.390** | ⚠️ Al filo — **y crecerá** con lo pendiente. Partir en contacto / conversación / decisión |
+| Bloque 5 · Después del sí | 3.838 | ✅ |
+| Apéndice | **133** | 🔴 **Documento vacío** — bajo el umbral de indexación (~4 KB) |
+| Índice de Confianza Profesional | 7.685 | ✅ (pero ver 14.5) |
+
+**El trabajo real no es reescribir: es partir y des-tabular.** Mucho más barato de lo que el
+diagnóstico inicial hacía temer, porque el documento ya nació en markdown y con jerarquía.
+
+⚠️ **Dato incómodo de esa tabla: el Bloque 2 (Qué vendes) es el bloque sustantivo más pequeño —
+5.396 caracteres, contra 27.063 de social selling.** El conocimiento de producto, que es lo que se
+le pregunta a AIDA, es la parte más delgada del playbook. No es un problema de formato: es de
+contenido faltante (14.2).
+
+### 14.4 Las tablas están justo donde más duele
+
+Las 29 tablas no están repartidas parejo. La **"Guía rápida: qué hay detrás de cada objeción"** —
+tres columnas: lo que dice el cliente / qué puede haber detrás / estrategia sugerida — es
+probablemente **el fragmento más valioso de todo el playbook**: manejo de objeciones es el tema más
+pedido (42%) y el cierre el momento de mayor necesidad.
+
+Es exactamente el contenido que un agente debe recuperar bien, **en el formato que peor sobrevive**:
+aplanada, la relación entre la frase del cliente y su estrategia se pierde, y quedan tres listas
+sueltas.
+
+**Reescritura recomendada** — una entrada por objeción, con encabezado propio:
+
+> `##### Objeción: "Está muy caro"`
+> **Qué puede haber detrás:** no tiene puntos de referencia.
+> **Estrategias:** Punto de referencia · Tu ingreso es tu mayor activo.
+> **Cómo suena:** …
+
+Así cada objeción se vuelve un fragmento autosuficiente y recuperable por sí mismo — que es
+justamente lo que el asesor necesita en vivo.
+
+### 14.5 El playbook es dos artefactos en uno
+
+Contiene el **modelo de venta** (normativo, transversal, estable) y además contenido operativo de
+otra naturaleza: el **Índice de Confianza Profesional** (autodiagnóstico personal), el **Apéndice
+administrativo** (certificación, incentivos, esquema remunerativo) y buena parte del **social
+selling** (cómo tomarse la foto, cómo vestirse, qué publicar).
+
+Para un humano eso es útil y está bien reunido. **Para el agente es ruido que compite por el
+presupuesto de recuperación** (§3 del node de arquitectura, ≤300 páginas).
+
+Es el mismo principio de "dos artefactos, dos audiencias" que ya aplicaba al material visual —
+ahora aplicado al documento canónico: **la derivación hacia la base del agente debe seleccionar, no
+solo reformatear.** El autodiagnóstico y el apéndice no deberían entrar.
+
+### 14.6 Ocho vacíos declarados — y uno depende de Alejo
+
+El propio documento lista lo pendiente y de quién depende: detalle técnico de producto y glosario
+(Producto), perfil de cliente objetivo (Estrategia de Clientes), gestión de referidos e indicadores
+(por definir), certificación, incentivos y esquema remunerativo (por definir), y **estrategia de
+contacto inicial CUA — "depende de Alejo"**.
+
+⚠️ **La CUA sigue diciendo `_(Pendiente — Alejo)_` en el documento** (línea 898). Este node ya
+advertía en Limitaciones que la "Resolución definitiva" de §6 de
+`[[proyecto-back-to-basics-ffvv-vida]]` **no estaba verificada contra el documento fuente**. Queda
+verificada: **el documento sigue sin la sección.** Es la tercera confirmación independiente del
+mismo hueco (Plan Piloto, revisión directa del playbook, y ahora esta lectura).
+
+**Estos ocho vacíos son el backlog de contenido del agente**, y hay que declararlos como tales: son
+las preguntas que AIDA **no puede** responder bien hoy porque la respuesta no existe en ninguna
+fuente canónica.
+
+### 14.7 Lo que está bien y no hay que romper
+
+- **El modelo de 4 pasos y el manejo de objeciones son contenido de calidad** — con procedimiento,
+  ejemplo dialogado y estrategias codificadas (C.1 Referentes sociales, C.2 Punto de referencia,
+  C.3 Proteger lo que ya tienes…). La codificación además ya es compatible con recuperación por
+  fragmento.
+- **28 fuentes citadas con DOI/enlace**, varias de primer nivel (*Journal of Applied Psychology*,
+  *Psychological Science*, *Journal of Business Ethics*). Es un playbook con respaldo, poco común.
+  ⚠️ Con una capa más débil que conviene marcar antes de citarla hacia afuera: BrightLocal, Forbes
+  Finance Council, AdvisorRankings y Statista son del tipo que este proyecto trata con descuento.
+  **Ninguna de las 28 está en el códice** — registrarlas es una tarea aparte, a decidir.
+- **La lógica de match motivación ↔ perfil financiero → producto está clara y bien construida**, y
+  es exactamente el núcleo generativo que §1.1 de Back to Basics describe.
+
+### 14.8 Qué hacer con esto
+
+1. **Resolver las tres discrepancias de producto (14.1)** con Producto: ¿VAG y Vida Contigo son uno
+   o dos? ¿Flexivida o Plan Vida Flexible? ¿Dónde está VFP? **Es trabajo de días y desbloquea todo
+   lo demás** — mientras el catálogo canónico esté mal, cualquier base derivada de él hereda el
+   error.
+2. **Correr B2-B4 del protocolo temprano** (14.2), porque distingue hueco de contenido de fuente no
+   gobernada.
+3. **Partir por bloque y des-tabular** (14.3, 14.4), empezando por el Bloque 4 — objeciones — que
+   es el de mayor demanda.
+4. **Definir qué NO entra a la base del agente** (14.5).
+5. **Declarar los ocho vacíos como backlog de contenido** (14.6), y cerrar la CUA.
 
 ---
 

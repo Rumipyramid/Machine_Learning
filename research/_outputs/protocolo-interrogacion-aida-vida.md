@@ -1,6 +1,6 @@
 # Protocolo de interrogación de AIDA — ramo Vida
 
-**Instrumento de diagnóstico.** Versión 0.3 · 2026-08-14
+**Instrumento de diagnóstico.** Versión 0.4 · 2026-08-14
 Construido sobre `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md` (v1.4),
 `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` (v1.0),
 `_nodes/arquitectura-conocimiento-agentes-copilot.md` (v1.1) y
@@ -92,14 +92,29 @@ después.
 Diseñadas para que **la respuesta correcta sea verificable** contra la matriz.
 
 **Producto y cobertura (D1-D4)**
+
+> ⭐ **PREDICCIÓN FALSABLE (v0.4, tras leer el Playbook).** El Playbook del Asesor declara que el
+> **detalle técnico de producto está Pendiente** — no contiene coberturas, exclusiones, carencias ni
+> edades. Si la base de Vida de AIDA deriva del playbook, **B2, B3 y B4 deberían fallar**. Si en
+> cambio AIDA las responde con seguridad, está tomando datos de producto de **una fuente que nadie
+> declaró** — lo que es más grave que el hueco. **Ambos resultados son hallazgos. Correr estas tres
+> primero.**
+
 - B1. ¿Qué productos de vida individual puede ofrecer un asesor hoy?
+  *(⭐ Contraste triple: el Playbook lista Temporal Total, Vida Contigo, VCD digital, VAG, Flexivida
+  y Endosable digital; la matriz del repo tiene VFP, Plan Vida Flexible, Vida Contigo/VAG —**un solo
+  producto**— y Vida Temporal Total. **Ver a cuál de las dos se parece la respuesta de AIDA ubica su
+  fuente.**)*
 - B2. ¿Qué cubre exactamente Vida Futuro Protegido y cuál es la suma asegurada mínima?
 - B3. ¿Cuál es el periodo de carencia de la cobertura de Enfermedades Graves?
 - B4. ¿Hasta qué edad se puede contratar la cobertura de Pérdida de Existencia Independiente?
 - B5. ¿Qué diferencia hay entre Vida Contigo, Vida Ahorro Garantizado y Vida Ahorro con Devolución?
   *(⭐ Prueba de duplicado: **son el mismo producto con tres nombres**. Si AIDA los describe como
   tres productos distintos, es la confirmación directa de la hipótesis de casi-duplicados de §3
-  capa A del node.)*
+  capa A del node.* ⚠️ **Atenuante descubierto en v0.4: el Playbook mismo los presenta como dos
+  filas distintas con descripciones distintas.** Si AIDA los separa, probablemente **no está
+  alucinando — está copiando bien una fuente equivocada.** Calificar D1=0 igual, pero anotar la
+  causa como aguas arriba, no del agente.)*
 - B6. ¿Qué es Flexivida y sigue vigente con ese nombre?
   *(⭐ Prueba de vigencia — ver hallazgo H3.)*
 - B7. ¿Qué devolución ofrece Vida Contigo? *(⚠️ La matriz advierte **no citar "170%" como cifra
