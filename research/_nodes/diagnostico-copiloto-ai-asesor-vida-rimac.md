@@ -7,7 +7,13 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.1
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.3
+> (v1.3: precisa el **mandato del copiloto** —centralizar y reducir carga cognitiva/emocional— y
+> agrega §9, el hallazgo mayor hasta ahora: **el copiloto no puede resolver la contradicción aguas
+> arriba, solo ocultarla**, por lo que la inconsistencia reportada de AIDA puede ser la
+> inconsistencia de la organización reflejada. Corrige además la lectura estrecha de "multimodal"
+> que hizo v1.2 — ver §8. v1.2: mapa de 6 frentes y 3 agentes desplegados, reancla a Dx2, §8 de
+> arquitectura.)
 > (v1.1, mismo día, confirmado por Alejo: **se resuelve la ambigüedad de plataforma que v1.0
 > declaraba bloqueante**. La herramienta diagnosticada es **AIDA**, construida con **Microsoft
 > Copilot** y **ya desplegada en producción** para la fuerza de ventas. El prototipo sobre Claude
@@ -71,7 +77,17 @@ producción. ⭐ Esto **activa con fuerza plena** todos los límites técnicos d
 archivo, ≤300 páginas totales, PDF escaneado ilegible, imagen sin alt-text invisible, y el techo de
 7 MB o 200 MB según licencia.
 
-**Expectativa declarada:** "que ayude al asesor durante su gestión de venta."
+**Expectativa declarada (v1.0):** "que ayude al asesor durante su gestión de venta."
+
+**Mandato precisado (v1.3, Alejo 2026-08-14) — vale la pena citarlo entero porque nombra la causa,
+no solo la función:** el copiloto debe **centralizar y facilitar el trabajo del asesor, reduciendo
+su carga cognitiva y emocional**, hoy alta por dos demandas concretas:
+
+1. **registrar en distintas plataformas**, y
+2. **leer información física y virtual que a veces puede ser contradictoria.**
+
+⚠️ La segunda causa no es un problema de la herramienta y **no se resuelve dentro de ella** — ver §9.
+Es el hallazgo más importante de esta versión del node.
 
 ---
 
@@ -388,11 +404,24 @@ Leído literal, eso parece contradictorio (desplegar en varios frentes *y* conce
 además choca con el techo de ≤300 páginas de `[[arquitectura-conocimiento-agentes-copilot]]`. No es
 contradictorio: es que **se están mezclando tres capas que hay que decidir por separado.**
 
+> ⚠️ **Corrección de v1.3 a mi propia lectura de v1.2.** La v1.2 de este node interpretó
+> "multimodal" como *"el modelo está presente en todas las superficies del asesor"*. **Es más
+> estrecho que lo que el lineamiento dice.** Multimodal significa que el modelo de venta es
+> **transversal al ecosistema de ventas** y se instancia en frentes institucionales distintos, la
+> mayoría de los cuales **no son superficies del asesor**: el modelo por competencias de selección y
+> entrenamiento, el diseño de pautas publicitarias, el copiloto, y los sistemas del canal. Ver §1.1
+> de `[[proyecto-back-to-basics-ffvv-vida]]`, donde queda documentado el modelo mismo.
+
 | Capa | Pregunta | Respuesta con evidencia |
 |---|---|---|
-| **Distribución** | ¿Dónde vive el modelo de venta? | **Multimodal** — en todas las superficies donde el asesor trabaja. Aquí "desplegado en distintos frentes" es correcto. |
-| **Interfaz** | ¿A cuántos lugares tiene que ir el asesor? | **Uno** — consolidar. Es lo que ataca Dx3 y lo que pide el lineamiento. |
+| **Distribución del modelo** | ¿Dónde vive el modelo de venta? | **Multimodal y transversal** — se instancia en 4 frentes institucionales con dueños distintos (talento, marketing, tecnología, canal). **El copiloto es uno de ellos, no su casa.** |
+| **Interfaz del asesor** | ¿A cuántos lugares tiene que ir el asesor? | **Uno** — consolidar. Es lo que ataca Dx3 y lo que pide el lineamiento. |
 | **Recuperación** | ¿Cuántas bases de conocimiento hay detrás? | **Varias, separadas por dominio.** ⚠️ **Consolidarlas empeora el problema.** |
+
+**Consecuencia de la primera fila, que conviene tener explícita:** el copiloto es un **consumidor**
+del modelo, no su dueño. Sus criterios de éxito (carga reducida, respuestas correctas) **no son** los
+del modelo (adopción consistente en los cuatro frentes). Confundirlos hace que el copiloto cargue
+con culpas del modelo, y que problemas del copiloto se lean como fracaso del modelo.
 
 ### 8.1 Por qué consolidar las bases sería un error
 
@@ -459,6 +488,67 @@ de un espacio de práctica seguro y separado de la conversación real con client
   decide si §8.1 describe la situación actual o la contradice — **P6**, ver §6.
 - **No se sabe quién es dueño de cada agente** (¿el mismo equipo? ¿TI, Producto, Academia?).
   Determina si "una puerta de entrada" es un problema técnico o uno organizacional. **P7.**
+
+---
+
+## 9. La contradicción aguas arriba: lo que el copiloto no puede resolver (agregado en v1.3)
+
+**El mandato del copiloto incluye una tarea que ningún copiloto puede cumplir.** Se le pide reducir
+la carga de "leer información que a veces puede ser contradictoria". Pero:
+
+> **Un sistema de recuperación no arbitra contradicciones. Recupera fragmentos y responde con lo que
+> recuperó.** Frente a dos fuentes que se contradicen, no dice "hay dos versiones" — **toma una y
+> responde con seguridad**, y puede tomar la otra en la consulta siguiente.
+
+Es decir: el copiloto **no elimina la contradicción, la oculta** — y la convierte en algo peor,
+porque el asesor pierde incluso la señal de que había dos versiones. Cuando leía dos documentos
+contradictorios, al menos *veía* el conflicto.
+
+⭐ **Esto reencuadra el defecto principal reportado.** Los asesores dicen que AIDA es **inconsistente**
+("no contesta bien casi nunca", "consistencia del copiloto de IA"). Hasta v1.2 este node trataba la
+inconsistencia como hipótesis de **duplicados en la base** (§3, capa A). Sigue siendo plausible, pero
+ahora hay una hipótesis hermana **más profunda y con confirmación independiente del propio equipo**:
+
+> **La inconsistencia de AIDA puede ser la inconsistencia de la organización, reflejada.**
+> Si el modelo de venta se instancia en cuatro frentes sin fuente canónica (§1.1 de
+> `[[proyecto-back-to-basics-ffvv-vida]]`), las versiones divergen; la base del copiloto hereda esa
+> divergencia; y el agente la devuelve como respuestas que cambian.
+
+La confirmación no viene de un análisis: viene de que **Alejo describe la contradicción como un
+hecho ya observado en el material que el asesor lee hoy**, antes y fuera del copiloto.
+
+### 9.1 Qué cambia esto en el plan
+
+**Limpiar formatos es necesario y no es suficiente.** F2 (auditoría) detecta duplicados por
+similitud; **no detecta contradicciones semánticas** entre documentos que se ven distintos y dicen
+cosas incompatibles. Hay que agregar un paso:
+
+| Paso | Qué | Por qué es distinto de F2 |
+|---|---|---|
+| **F2b · Detección de contradicciones** | Sobre los temas de mayor consulta (objeciones de cierre, coberturas, precios), contrastar **qué dice cada frente**: playbook, material físico, base de AIDA, pauta publicitaria, sistemas del canal | F2 pregunta *"¿es legible?"*; F2b pregunta *"¿dicen lo mismo?"*. Un documento puede ser perfectamente legible y perfectamente contradictorio |
+
+**Cómo hacerlo barato:** no hace falta auditar todo. Tomar **los 10 temas más consultados** (que
+salen del corpus de F1) y, para cada uno, poner lado a lado lo que dice cada frente. Donde haya
+discrepancia, esa es una contradicción que el copiloto está reflejando hoy.
+
+### 9.2 La implicación incómoda
+
+**Si no hay fuente canónica, el copiloto no debería ser el primer arreglo.** Un copiloto excelente
+sobre contenido contradictorio produce respuestas confiadas e inconsistentes — que es exactamente
+el estado actual. El orden lógico es:
+
+1. **Declarar la fuente canónica del modelo** (quién manda cuando dos frentes discrepan) — decisión
+   de gobierno, no de tecnología.
+2. **Resolver las contradicciones** en los temas de mayor consulta.
+3. **Reformatear** para que el agente pueda consumirlo (§4 del node de arquitectura).
+4. **Consolidar la interfaz** (§8).
+
+⚠️ Esto **no** significa parar el trabajo del copiloto hasta que la organización se ordene — sería
+irreal y el paso 1 puede tardar. Significa que **el alcance del copiloto debe declararse sobre los
+dominios donde sí hay fuente canónica**, y que los demás se marquen como "sin respuesta autoritativa
+todavía" en vez de ser respondidos con seguridad falsa. **Un agente que dice "esto no está resuelto,
+consulta con tu jefatura" es más útil que uno que elige una de dos versiones** — y es una decisión
+de diseño de comportamiento (capa B de §3), implementable sin esperar al gobierno.
 
 ---
 

@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-08-14 · Versión: v1.5
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-08-14 · Versión: v1.6
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -27,6 +27,16 @@
 > CUA" deja de tratarse como problema a resolver con una estrategia nueva y pasa a tratarse como
 > compensado por calidad de conversación, no por cantidad de contactos — cambio estructural
 > porque redefine qué cuenta como estrategia válida, no solo actualiza un estado.)
+> **v1.6 (2026-08-14, formulado con Alejo) — se declara qué clase de objeto es el Modelo de Venta.**
+> Nueva §1.1: no es un guion ni una metodología comercial, es un **modelo de referencia transversal**
+> (normativo, transversal y **generativo** — cuando no hay producto que haga match con una motivación
+> real, emite un requerimiento de producto). Se documentan por primera vez **los cuatro frentes donde
+> se instancia** (competencias/selección y entrenamiento, pautas publicitarias, copiloto, sistemas
+> del canal), la regla de **una fuente canónica, N instanciaciones**, y por qué su ausencia produce
+> la información contradictoria que agota al asesor — Dx2 como causa, Dx3 como síntoma. Cambio
+> estructural: fija la naturaleza del artefacto central del proyecto y su alcance institucional, que
+> excede a la FFVV.
+>
 > **v1.5 (2026-08-14, confirmado por Alejo) — desconflación de AIDA y el prototipo del piloto.**
 > Cambio estructural: corrige qué **es** una de las piezas centrales del modelo, y la corrección
 > anterior (v1.2) era ella misma errónea. Este node venía describiendo **una sola** herramienta de
@@ -334,6 +344,75 @@ Felipe), matriz para mystery shoppers con rúbricas de experiencia (Alejandro y 
 capacidad del agente de entrenamiento para generar reportería (Felipe).
 
 ---
+
+### 1.1 Qué tipo de objeto es el Modelo de Venta (agregado 2026-08-14, formulado con Alejo)
+
+Sección agregada porque el proyecto venía llamándolo "modelo de venta" sin declarar **qué clase de
+artefacto es**, y esa imprecisión tiene consecuencias prácticas: determina quién lo mantiene, cómo
+se despliega y contra qué se mide.
+
+**No es un guion de venta, ni una metodología comercial, ni un playbook.** Es un **modelo de
+referencia transversal del ecosistema de venta**: un cuerpo normativo sobre **cómo debe venderse el
+seguro de vida** —no solo cómo debe vender *este* asesor— que **ningún frente posee y todos
+instancian**.
+
+Tiene tres propiedades que conviene nombrar por separado:
+
+1. **Normativo.** Prescribe cómo *debe* venderse; no describe cómo se vende hoy. Es lo opuesto al
+   mapa AS IS de §2, y por eso ambos son necesarios: el mapa dice dónde está el sistema, el modelo
+   dice hacia dónde debe moverse.
+2. **Transversal.** No vive en un frente. Vive en varios a la vez, y **su dueño no es ninguno de
+   ellos** (ni la CoE, ni la academia, ni marketing, ni el copiloto).
+3. **Generativo** — la propiedad más distintiva y la menos documentada hasta ahora. La lógica
+   central es un **match entre motivaciones de la persona y productos ofrecidos**; cuando **no hay
+   producto que haga match con una motivación real**, el modelo **no descarta al cliente: emite un
+   requerimiento de producto**. Es decir, el modelo es también un **canal de entrada al desarrollo
+   de producto**, no solo un instrumento de venta. Un modelo de venta que produce requerimientos de
+   producto es una pieza de estrategia, no de capacitación.
+
+**Contenido del modelo, en cuatro capas:** (a) una **lógica de match** motivación ↔ producto;
+(b) una **secuencia** — en qué momento del recorrido se comunica qué; (c) un **cuerpo de
+conocimiento** — qué decir y cómo; (d) un **bucle de producto** — qué falta en el portafolio.
+
+Respaldo de la lógica central, ya en el ledger: la segmentación demográfica explica poco de la
+conducta real en servicios financieros (Piercy, Campbell & Heinrich 2011, **F-229**, 🟢A), y la
+Teoría de la Autodeterminación explica por qué la motivación subyacente predice mejor que una
+categoría externa asignada (Deci & Ryan 2000, **F-230**, 🟢A).
+
+#### Los frentes donde el modelo se instancia
+
+"Multimodal" en este proyecto significa esto, y **no** significa "el modelo está en todas las
+pantallas del asesor":
+
+| Frente | En qué se convierte el modelo ahí | Dueño típico |
+|---|---|---|
+| **Modelo por competencias** (selección y entrenamiento) | Criterios de contratación + currículo de formación | Talento / Academia |
+| **Pautas publicitarias** | Promesa, segmentación del mensaje, oferta comunicada | Marketing |
+| **Copiloto (AIDA)** | Base de conocimiento + comportamiento del agente | Tecnología / CoE |
+| **Sistemas del canal** | Campos, estados, validaciones y reglas del flujo | TI / Canal |
+
+⭐ **La relación correcta entre el modelo y cada frente es de instanciación, no de copia.** Cada
+frente **traduce** el modelo a su propio idioma. Y de ahí sale el requisito arquitectónico que el
+proyecto todavía no tiene declarado:
+
+> **Una fuente canónica, N instanciaciones.** Debe existir **un** lugar donde el modelo es
+> verdadero, y cada frente deriva de él. Sin eso, cada frente escribe su propia versión y las
+> versiones divergen con el tiempo.
+
+**Por qué esto no es una formalidad:** el asesor es el punto donde todas las instanciaciones se
+encuentran. Si divergen, **el asesor es quien recibe la contradicción** — lo que Alejo describe como
+"información física y virtual que a veces hasta puede ser contradictoria". Eso es **Dx2 en su forma
+más pura** (los elementos del sistema no conversan entre sí), y **Dx3 es cómo se siente** (carga
+cognitiva y emocional). La contradicción que agota al asesor no es un problema de documentación: es
+el modo de falla predecible de un modelo transversal sin fuente canónica.
+
+⚠️ **Trampa a evitar al defender este modelo ante un comité (F-481):** el mercado de sales
+enablement está lleno de cifras del tipo "+12% de win rate con adopción >75%" o "+10% de revenue por
+cada 10% de adopción", **todas de proveedores y sin fuente primaria rastreable**. No incorporarlas.
+El concepto que sí importa —que existe una **brecha entre proceso documentado y proceso
+adoptado**— el proyecto **ya lo mide con instrumento propio**: el indicador 6 del Plan Piloto
+(brecha comprensión → aplicación).
+
 
 ## 2. Mapa sistémico AS IS 2026 (diagnóstico de ecosistema)
 
