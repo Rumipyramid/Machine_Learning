@@ -29,12 +29,39 @@ pero tampoco constituyen lesión intraepitelial. Su interpretación tiene **repr
 pobre entre patólogos**: los criterios son sutiles y subjetivos, y dos citólogos sobre la
 misma lámina no coinciden de forma confiable (F-478).
 
-Causas frecuentes que **no son VPH**:
+⭐ **La definición operativa que más aclara el término:** ASC-US describe células que se ven
+anormales **cuando no es posible distinguir si la causa es infección, irritación o precáncer**
+(F-499). No es un juicio de gravedad — es una declaración de indeterminación. Las tres
+etiologías producen una imagen citológica parecida.
 
-- Inflamación e infecciones no-VPH.
-- **Atrofia** por descenso estrogénico — eleva la tasa de ASC-US en postmenopáusicas
-  mientras *baja* la de NIC2+ en ese mismo grupo, es decir, aumenta los falsos positivos (F-478).
-- Alteraciones del ecosistema vaginal.
+### Diagnóstico diferencial: qué más produce un ASC-US
+
+| Causa no-VPH | Nota |
+|---|---|
+| **Vaginosis bacteriana** | Descenso de *Lactobacillus* con aumento de *Gardnerella*/*Mycoplasma*; cambios reactivos (F-499) |
+| **Candidiasis** | ⚠️ *Candida* puede ser comensal — en asintomáticas puede no requerir tratamiento (F-500) |
+| **Tricomoniasis** (*T. vaginalis*) | Tratable; hallarla en el Pap puede bastar como indicación de tratamiento (F-500) |
+| **Inflamación / cervicitis** de cualquier origen | La vía final común de la mayoría de los casos reactivos |
+| **Atrofia** por descenso estrogénico | Menopausia, posparto, lactancia. Eleva ASC-US mientras *baja* NIC2+ → sube el falso positivo (F-478) |
+| **Irritación mecánica** | DIU, relaciones recientes, trauma menor (F-499). Las usuarias de DIU además tienen mayor tasa de tricomonas y cándida (F-500) |
+
+⭐ **El dato que prueba el mecanismo, no solo lo postula:** entre mujeres **VPH-negativas**, se
+detectó *T. vaginalis* en el **1,3%** de las que tenían ASC-US frente al **0,03%** de las que
+tenían citología normal — un enriquecimiento de ~40× (F-500). Es evidencia directa de que las
+infecciones no-VPH **generan falsos positivos de ASC-US**, con frecuencia suficiente para
+aparecer en las estadísticas poblacionales.
+
+⭐ **Y en Perú el peso relativo de esta rama es mayor:** en la serie de 72.644 citologías de
+Lima, **el 49% de las muestras inadecuadas lo fue por >75% de leucocitos** — es decir, por
+inflamación (F-481). La inflamación no es una causa exótica en el contexto local: es el motivo
+número uno de muestra alterada. ⚠️ Matiz honesto: esa cifra es de muestras *inadecuadas*, no de
+ASC-US; sirve como indicador de prevalencia de inflamación en las muestras locales, **no como
+proporción de ASC-US atribuible a inflamación** — ese denominador no se localizó.
+
+**Implicación práctica:** el informe Bethesda completo suele nombrar la causa alternativa
+(inflamación, flora alterada, tricomonas, cándida, atrofia) en la sección de hallazgos no
+neoplásicos. **Pedir el informe completo y no el resumen** puede revelar una explicación
+tratable ya escrita en el propio documento — se trata la infección y se repite la citología.
 
 ⚠️ **Implicación operativa:** en mujeres >50 años, un ASC-US tiene *mayor* probabilidad de ser
 un artefacto y *menor* de ser lesión. La edad mueve la interpretación en direcciones opuestas
