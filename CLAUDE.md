@@ -228,6 +228,10 @@ sombra, ánima, función inferior, individuación).
   cierra con veredicto en lenguaje llano; y (b) **junguiana/proyectiva**, que habla del
   consultante. No se promedian: donde coinciden está lo más firme, y **donde divergen, la
   brecha es la medida de la proyección**. Ver `references/marco-jungiano.md` §1b.
+- **Capa hermética (desde 2026-08-14):** tercer registro **operativo** que cierra cada lectura —
+  Paracelso (dosis), Dee (auditoría del canal), Crowley (Voluntad vs. deseo, soltar el resultado),
+  encadenados en círculo. De ahí se deriva la consigna. Ver `references/capa-hermetica.md`, que
+  incluye la advertencia de que los tres se usan como gramática operativa y no como autoridad.
 - **Reglas propias:** nunca `--seed` en consulta real (cada tirada debe ser nueva); nunca
   inventar cartas ni posiciones; nunca afirmar el estado interior de una persona real como
   hecho (sí leer su significador, etiquetado); no repetir la misma pregunta buscando otra

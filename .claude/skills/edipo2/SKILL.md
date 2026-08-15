@@ -110,9 +110,16 @@ fusionan y que hay que entregar por separado:
   sombra, función inferior, arquetipo activo, momento de individuación. Criterio de verdad:
   que el símbolo movilice material real en quien pregunta.
 
+- **Registro hermético (operativo).** Los dos anteriores describen; éste **prescribe**. Recorre
+  tres fases que se nutren en círculo — **Paracelso** (¿cuál es la sustancia y en qué dosis?),
+  **Dee** (¿por qué canal llega y qué gana quien lo trae?), **Crowley** (¿es Voluntad o deseo,
+  y puede soltarse el resultado?). De acá sale la consigna final. Marco completo y advertencia
+  de uso en `references/capa-hermetica.md` — **léelo antes de aplicarlo**.
+
 Son epistemologías distintas y no se promedian. Jung adoptó la sincronicidad precisamente
-para no reclamar poder predictivo; la horaria sí lo reclama. Mantené las dos voces separadas
-y después cruzálas (Paso 4).
+para no reclamar poder predictivo; la horaria sí lo reclama; la capa hermética no describe
+nada, solo indica qué operación corresponde. Mantené las voces separadas y después cruzálas
+(Paso 4).
 
 **Terceros:** en el registro adivinatorio *sí* se leen — como significadores y como cartas en
 su posición, siempre etiquetado como lectura simbólica. Lo que nunca se hace es afirmar el
@@ -188,6 +195,13 @@ Proyección, sombra, función inferior, arquetipo activo, momento de individuaci
 Primero entre las dos miradas (dónde coinciden = lo más firme; dónde divergen = la medida de
 la proyección). Después entre los tres sistemas: el eje y la tensión. Aquí va el trabajo real.
 
+## La operación — qué corresponde hacer
+Las tres fases sobre lo que los registros anteriores ya establecieron, en dos o tres líneas
+cada una y **sin moralizar** (los tres condenan la mala ejecución, no el material):
+- **Sustancia y dosis** (Paracelso) — qué es esto y en qué cantidad se está tomando.
+- **Canal** (Dee) — quién trae la señal y qué gana con que se crea. Incluye a este oráculo.
+- **Voluntad** (Crowley) — Voluntad o deseo; y si el resultado puede soltarse.
+
 ## Presente
 Qué está pasando ahora, anclado en su vida concreta.
 
@@ -196,7 +210,8 @@ La tendencia si nada cambia, la bifurcación, y en qué señal se reconocerá el
 Ventana temporal explícita (días/semanas/meses) según los cuerpos implicados.
 
 ## La consigna
-Una sola cosa concreta y hacible, hoy o esta semana. Una imagen que se le quede.
+Una sola cosa concreta y hacible, hoy o esta semana — **y debe pertenecer a la fase peor
+resuelta** de las tres, no a la más cómoda. Cierra con una imagen que se le quede.
 
 ---
 *Cómo se hizo: tiradas generadas al azar en el momento; posiciones planetarias calculadas
