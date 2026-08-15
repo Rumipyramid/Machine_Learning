@@ -1770,6 +1770,88 @@ vez de mejor resolución en farmacia, corre el mismo riesgo de falso positivo qu
   caída en el canal caro, no solo el alza en el barato) que la tesis no tenía, y refuerza desde un
   país distinto la intuición 13 ya registrada.
 
+### 25. El precio no es la única palanca de selección — el propio diseño de cobertura es un cuarto instrumento, y los aseguradores lo usan para repeler al riesgo caro sin tocar la tarifa
+Lectura profunda de F-92 (Geruso & Layton 2017, *Journal of Economic Perspectives* — citado en el
+ledger solo como "contrapeso a 'el modelo está roto'", nunca leído a fondo). El paper distingue dos
+marcos para pensar la selección: el de **"contrato fijo"** (el más intuitivo — el contrato ya está
+definido, y el trabajo de la política pública es ajustar precio: rating comunitario, subsidios/multas,
+ajuste de riesgo) y el de **"contrato endógeno"** — la cobertura misma se diseña en respuesta a la
+selección. Un asegurador que no puede subir el precio a un diabético (rating comunitario) puede en
+cambio angostar la red de endocrinólogos o el formulario de insulina — no para ahorrar costo directo,
+sino porque un plan deliberadamente peor en esa dimensión repele selectivamente al riesgo caro sin
+tocar la tarifa que ve el regulador. El ajuste de riesgo (la herramienta que la tesis 9/17 asume como
+la palanca principal) es siempre imperfecto porque no observa todo lo que el asegurador sí observa vía
+el diseño del producto — por eso el paper trata la cobertura reducida en servicios de alto uso por
+enfermos crónicos como una **cuarta** palanca de política (junto a rating, subsidios y ajuste de
+riesgo: la regulación directa del contrato), no como una falla de implementación de las otras tres.
+**Heurística:** al auditar el riesgo de selección adversa de cualquier producto propio (o de un
+competidor), no basta con mirar el precio y el ajuste de riesgo declarado — hay que revisar si la
+cobertura específica de las condiciones caras (no la lista de beneficios en general) está diseñada más
+angosta que el resto del plan, porque ese es el canal indirecto y menos visible por el que un
+asegurador selecciona riesgo cuando el precio está regulado.
+- **Fuente:** F-92 (🟢A, Geruso, M. & Layton, T.J. 2017, *Journal of Economic Perspectives* 31(4),
+  también circula como NBER Working Paper 23876)
+- **Leído a fondo:** 2026-08-15 (pmc.ncbi.nlm.nih.gov bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que confirma el marco "contrato fijo vs. endógeno" y los cuatro
+  instrumentos de política — rating comunitario, subsidios/multas, ajuste de riesgo, regulación de
+  contrato)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 9/17 (siguen Alta) — agrega un
+  cuarto instrumento de política que el resumen previo no distinguía, y un criterio de auditoría de
+  producto (cobertura angosta como selección disfrazada) transferible a cualquier diseño propio.
+
+### 26. El intervalo de repaso óptimo no es fijo — se encoge, como proporción del tiempo que la retención debe durar, cuanto más lejos está la prueba
+Lectura profunda de F-218 (Cepeda et al. 2006, *Psychological Bulletin* — citado en el ledger solo
+para respaldar "la práctica espaciada supera a la masiva" en el deck de onboarding de Universidad
+Vida, nunca leído a fondo). El meta-análisis (839 comparaciones, 317 experimentos, 184 artículos) no
+solo confirma que espaciar gana — encuentra que el intervalo entre sesiones de estudio (ISI) que
+maximiza la retención **no es un número fijo**: como proporción del intervalo de retención (RI, el
+tiempo hasta la prueba real), el gap óptimo cae de **~20-40% del RI para una prueba a 1 semana** a
+solo **~5-10% del RI para una prueba a 1 año**. Es decir, cuanto más lejos está el momento en que el
+conocimiento tiene que sobrevivir, proporcionalmente **más cerca**, no más lejos, hay que poner las
+sesiones de repaso entre sí. **Heurística:** una recomendación genérica de "usa práctica espaciada" es
+incompleta sin fijar primero el horizonte de retención que importa — un programa de onboarding que
+necesita sobrevivir hasta la primera venta (semanas) puede espaciar con un gap generoso; un programa
+de compliance o de producto que debe sostenerse un año entero necesita sesiones de repaso
+proporcionalmente más frecuentes, no el mismo cronograma escalado. Aplicación directa al propio deck
+de Universidad Vida (F-218 ya citado ahí): el cronograma de refuerzo debería fijarse según cuánto
+tiempo después del onboarding se espera que el asesor use el conocimiento sin apoyo, no copiar un
+espaciado estándar.
+- **Fuente:** F-218 (🟢A, Cepeda, N.J. et al. 2006, *Psychological Bulletin* 132(3):354-380)
+- **Leído a fondo:** 2026-08-15 (augmentingcognition.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que confirma la función en U invertida ISI/RI y los porcentajes
+  20-40%→5-10%)
+- **Conexión razonada, no forzada:** no crea tesis nueva (F-218 no sostiene ninguna de las 25 tesis de
+  negocio, es evidencia de un proyecto interno específico) — refina el uso ya dado a la fuente con el
+  parámetro cuantitativo que el resumen de una línea no traía.
+
+### 27. Que la IA suba el desempeño objetivo no cierra la brecha de autopercepción — y quien más sabe de IA en teoría es quien peor calibra su propio desempeño con ella
+Lectura profunda de F-401 (Fernandes et al. 2026, *Computers in Human Behavior* — citado en el ledger
+del node de tendencias como la fuente que manda H5 a "parcial", nunca leído a fondo por este
+mecanismo). Dos estudios (N=246 y N=452, el segundo réplica interna del primero): con asistencia de
+IA en razonamiento lógico, el desempeño objetivo sube ~3 puntos sobre la norma poblacional, pero la
+autoestimación sube ~4 puntos — la brecha percepción-realidad existe pero es modesta (~1 punto),
+bastante por debajo de lo que el node esperaba. El hallazgo que el resumen de una línea del ledger no
+capturaba: el clásico efecto Dunning-Kruger (los de peor desempeño se sobreestiman más) **desaparece**
+con el uso de IA — la asistencia nivela el desempeño real de todos, pero sin corregir la
+sobreestimación de nadie. Y el dato más contraintuitivo de los dos estudios: **mayor alfabetización en
+IA correlaciona con menor precisión metacognitiva** — quien más sabe técnicamente de cómo funciona un
+modelo no es quien mejor calibra su propio desempeño usándolo, es peor. **Heurística:** un programa de
+alfabetización en IA (para asesores usando el agente conversacional, o para el equipo evaluando el
+triage IA de tesis 10) no entrena por sí solo la calibración de cuándo confiar o no en la
+recomendación del modelo — son dos habilidades distintas, y este hallazgo sugiere que pueden moverse
+en direcciones opuestas. Cualquier piloto que combine capacitación técnica en IA con una decisión de
+alto riesgo (aprobar un reclamo, confiar un triage) debería medir la calibración por separado, no
+asumir que sube junto con el conocimiento técnico.
+- **Fuente:** F-401 (🟢A, Fernandes, D. et al. 2026, *Computers in Human Behavior* 175:108779 — Study
+  1 N=246, Study 2/réplica N=452)
+- **Leído a fondo:** 2026-08-15 (sciencedirect.com con URL de journal genérica en el ledger, no de
+  artículo — reconstruido vía búsqueda dirigida que ubicó el artículo exacto, incluyendo el dato de
+  Study 1 (N=246) que el ledger no distinguía del N=452 de la réplica)
+- **Conexión razonada, no forzada:** no cambia el estado de H5 en `_nodes/tendencias-diseno-innovacion.md`
+  (sigue "parcial", el propio node ya lo registró) — agrega el hallazgo de alfabetización↔calibración
+  inversa, ausente del resumen previo, con aplicación directa a tesis 10 (gate de triage IA) y al
+  riesgo ya vigente sobre el agente conversacional de Rimac.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2463,3 +2545,35 @@ vez de mejor resolución en farmacia, corre el mismo riesgo de falso positivo qu
   revisión de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md`
   con las tres fuentes leídas hoy. Bitácora con 26 días de historial (2026-07-20 a hoy), dentro de
   la ventana de ~30 días — sin podar todavía.
+- **2026-08-15** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
+  8a90dc2→e0c9040, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
+  verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (134 fuentes 🟢A confirmadas por conteo
+  propio, cifra ligeramente distinta al conteo de 141 de corridas previas por variación de método de
+  conteo, no por fuentes nuevas) — sigue tope exacto en F-468, idéntico al que ya procesó la última
+  modificación real del archivo (2026-08-12, revisión profunda de `cronista`) — **sin cambios
+  sustanciales** en evidencia, cero fuentes nuevas registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces. Repasé las 25 tesis contra ese
+  mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé ninguna conexión de tesis
+  nueva solo por completar el paso. La última revisión profunda (rutina de `cronista`, cada ~3 días,
+  última el 2026-08-12) no vence hoy — tres días sin corrida nueva. Sí corrió la rutina diaria de
+  intuición (décima corrida desde que se creó el 2026-08-06): de las fuentes 🟢A del ledger, 24 ya
+  tenían lectura profunda del Lobo — seleccioné 3 de las restantes: F-92 (Geruso & Layton 2017,
+  selección en mercados de seguros de salud — ya citada en tesis 9/17 solo como "contrapeso" sin
+  lectura completa), F-218 (Cepeda et al. 2006, práctica espaciada — citada en el deck de onboarding
+  de Universidad Vida) y F-401 (Fernandes et al. 2026, brecha desempeño-metacognición con IA — ya
+  citada en `_nodes/tendencias-diseno-innovacion.md` para H5). Sumé las entradas 25, 26 y 27 de
+  Intuición acumulada: (25) el diseño de cobertura (no solo el precio) es un cuarto instrumento de
+  selección de riesgo — un asegurador puede angostar la red/formulario de una condición cara para
+  repeler ese riesgo sin tocar la tarifa regulada, canal indirecto que una auditoría centrada solo en
+  precio/ajuste de riesgo no detecta; (26) el intervalo de repaso óptimo no es fijo — cae de ~20-40%
+  del horizonte de retención para una prueba a 1 semana a solo ~5-10% para una prueba a 1 año, así que
+  un cronograma de refuerzo debe fijarse según cuánto debe durar el conocimiento, no copiar un
+  espaciado estándar; (27) mayor alfabetización en IA correlaciona con **menor** precisión al calibrar
+  el propio desempeño asistido por IA — dato nuevo que el resumen de una línea del ledger no traía,
+  con aplicación directa al gate de triage IA de tesis 10 y al riesgo ya vigente sobre medir mal al
+  agente conversacional de Rimac. Ninguna tesis de negocio cambió de confianza por esta corrida — es
+  el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes.
+  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 27
+  días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin podar todavía; la
+  próxima corrida (2026-08-20, cuando la ventana llegue a ~30 días desde el 2026-07-20) debe evaluar
+  podar/resumir de nuevo.

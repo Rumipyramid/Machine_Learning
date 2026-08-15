@@ -41,3 +41,6 @@
 | F-89 | 🟢 A | 2026-08-14 | Intuición 22 — frente a sobreutilización de un beneficio, diagnosticar primero el precio marginal percibido, no la mala fe |
 | F-21 | 🟢 A | 2026-08-14 | Intuición 23 — un efecto chico no contradice "vale la pena" cuando el canal cuesta casi cero: son preguntas distintas |
 | F-109 | 🟢 A | 2026-08-14 | Intuición 24 — un aumento de volumen en el canal barato puede ser fricción del canal caro disfrazada de éxito |
+| F-92 | 🟢 A | 2026-08-15 | Intuición 25 — el diseño de cobertura, no solo el precio, es una cuarta palanca de selección de riesgo |
+| F-218 | 🟢 A | 2026-08-15 | Intuición 26 — el intervalo de repaso óptimo se encoge, como % del horizonte de retención, cuanto más lejos está la prueba |
+| F-401 | 🟢 A | 2026-08-15 | Intuición 27 — mayor alfabetización en IA correlaciona con menor precisión al calibrar el propio desempeño asistido por IA |
