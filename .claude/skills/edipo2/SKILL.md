@@ -198,9 +198,14 @@ la proyección). Después entre los tres sistemas: el eje y la tensión. Aquí v
 ## La operación — qué corresponde hacer
 Las tres fases sobre lo que los registros anteriores ya establecieron, en dos o tres líneas
 cada una y **sin moralizar** (los tres condenan la mala ejecución, no el material):
-- **Sustancia y dosis** (Paracelso) — qué es esto y en qué cantidad se está tomando.
-- **Canal** (Dee) — quién trae la señal y qué gana con que se crea. Incluye a este oráculo.
-- **Voluntad** (Crowley) — Voluntad o deseo; y si el resultado puede soltarse.
+- **La vía** (§4b) — ¿lo que se está pidiendo pertenece a la vía de la ligadura o a la del
+  diagnóstico? Decilo sin moralizar: informá qué es cada una y qué produce.
+- **Sustancia y dosis** (Paracelso, refinado por Ficino) — qué es esto realmente y en qué
+  cantidad. Prueba de Ficino: ¿el retrato de esa persona lo reconocería un tercero?
+- **Canal** (Dee, con Ibn Hazm) — quién trae la señal y qué gana con que se crea. Incluye a
+  este oráculo y a cualquier intermediario.
+- **Voluntad** (Crowley, con Avicena) — Voluntad o deseo; si el resultado puede soltarse; y si
+  la facultad imaginativa está fijada al punto de que el juicio ya no corrige.
 
 ## Presente
 Qué está pasando ahora, anclado en su vida concreta.

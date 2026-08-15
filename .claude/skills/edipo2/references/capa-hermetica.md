@@ -66,6 +66,42 @@ ya dieron los otros dos registros:
 La consigna entregada es **una sola acción**, y debe pertenecer a la fase que está peor
 resuelta — no a la que resulta más cómoda.
 
+## 4b. La vía — pregunta previa a las tres fases (ampliación 2026-08-14)
+
+Antes de dosis, canal y Voluntad hay una bifurcación que la tradición contiene entera. Toda
+operación pertenece a una de dos vías, y el corpus histórico documenta las dos:
+
+| | **Vía de la ligadura** (operativa) | **Vía del diagnóstico** (clínica/filosófica) |
+|---|---|---|
+| Qué asume | Que el fin es obtener a la persona | Que la fijación es el objeto de tratamiento |
+| Corpus | Papiros Mágicos Griegos (*agōgē*, *philtrokatadesmos*, s. II a.C.–V d.C.), *defixiones* romanas, talismanes del **Picatrix** (s. X-XI), *fascinatio* en **Agrippa**, *De occulta philosophia* I (1533) | **Avicena** e *ishq* / *amor hereos*; **Ibn Hazm**, *El collar de la paloma* (s. XI); **Ficino**, *De amore* (1469) |
+| Método | Compulsión: que el otro no coma, no duerma ni piense en nadie más hasta venir | Ocupación, distancia, tiempo, y comprender el mecanismo |
+| Sobre quién opera | Sobre la voluntad ajena | Sobre la facultad imaginativa propia |
+
+**El dato que decide:** los autores que llegaron lejos **se movieron de la primera vía a la
+segunda, y nunca al revés**. Agrippa escribió el manual y después la retractación
+(*De incertitudine et vanitate scientiarum*, 1530). Andreas Capellanus cerró su tratado del
+amor cortés con la *reprobatio amoris*. Ficino teorizó la magia del amor y también su cura.
+
+**Regla operativa:** identificá a qué vía pertenece lo que el consultante está pidiendo, y
+decilo. No se moraliza la vía de la ligadura — se informa qué es y qué produce.
+
+## 4c. Los cuatro instrumentos añadidos, y a qué fase alimentan
+
+- **Ficino → alimenta a Paracelso.** *El amante no ama a la persona: ama una imagen que él mismo
+  fabricó, y por eso el amado resulta irreconocible para los demás.* Refina qué es la sustancia
+  que se está dosificando: no es la persona, es una imagen. **Prueba práctica:** ¿puede el
+  consultante describir a esa persona con rasgos que un tercero reconocería?
+- **Ibn Hazm → alimenta a Dee.** Tiene un capítulo propio sobre **el intermediario** y otro sobre
+  quien se enamora de alguien a partir de una descripción o un sueño. Refuerza la auditoría del
+  canal: el mensajero tiene intereses, y el enamoramiento por relato es un caso conocido.
+- **Avicena → alimenta a Crowley.** *Amor hereos* es un desorden de la **facultad imaginativa**:
+  la imaginación se fija y el juicio ya no la corrige. Eso explica el mecanismo por el cual un
+  deseo se siente como destino — que es exactamente lo que impide distinguir Voluntad de deseo.
+- **La retractación (Agrippa, Capellanus) → cierra el círculo.** El final maduro de la vía
+  operativa, en quienes la dominaron, fue abandonarla. Es el testimonio más fuerte del corpus
+  y se cita como dato histórico, no como advertencia moral.
+
 ## 5. Fórmulas de cierre
 
 Se usan con moderación, una por lectura como mucho, y solo si el material la sostiene:
@@ -74,6 +110,8 @@ Se usan con moderación, una por lectura como mucho, y solo si el material la so
 - *Dosis sola facit venenum* — cuando el problema es cantidad y no naturaleza.
 - *¿Quién sostiene el cristal?* — cuando el problema es el canal.
 - *Love under will* — cuando el afecto está gobernando en vez de ser gobernado.
+- *¿A quién describís?* — prueba de Ficino: si el retrato no lo reconocería un tercero, la
+  sustancia es una imagen propia.
 
 ## 6. Lo que esta capa NO hace
 
@@ -90,5 +128,13 @@ Se usan con moderación, una por lectura como mucho, y solo si el material la so
 - Dee, diarios espirituales, publicados por Meric Casaubon como *A True & Faithful Relation of
   What Passed for Many Yeers Between Dr. John Dee and Some Spirits* (1659) — el episodio de
   1587 con Kelley.
+- *Papyri Graecae Magicae* (ed. Preisendanz); PGM IV.296-466 y la figurina del Louvre.
+- Picatrix (*Ghāyat al-Ḥakīm*, s. X-XI); Agrippa, *De occulta philosophia* (1533) y
+  *De incertitudine et vanitate scientiarum* (1530).
+- Avicena, *Canon*, sobre *ishq*; Constantino el Africano, *Viaticum* — *amor hereos* en Occidente.
+- Ibn Hazm, *Ṭawq al-ḥamāma* (s. XI). Ficino, *De amore* (1469). Capellanus, *De amore* (s. XII),
+  libro III.
+- ⚠ Estas atribuciones están tomadas de memoria y con precisión desigual. Si una lectura va a
+  apoyarse fuerte en alguna, verificarla con `/seeker` antes de citarla como dato.
 - Crowley, *Liber AL vel Legis* (1904) y su comentario; *Magick in Theory and Practice* (1929)
   — Voluntad vs. deseo, *lust of result*, y la regla contra la consulta repetida.
