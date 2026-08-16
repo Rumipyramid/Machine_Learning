@@ -1852,6 +1852,91 @@ asumir que sube junto con el conocimiento técnico.
   inversa, ausente del resumen previo, con aplicación directa a tesis 10 (gate de triage IA) y al
   riesgo ya vigente sobre el agente conversacional de Rimac.
 
+### 28. Un modelo de clasificación que fuerza "una persona = un bucket" por eje subcompensa sistemáticamente a quien combina rasgos — el arreglo es de arquitectura, no de mejor calibración dentro del bucket
+Oskam, van Kleef & van Vliet (2023) analizan el modelo holandés de ajuste de riesgo (risk
+equalization) para seguros de salud: el sistema clasifica a cada persona en un solo
+Diagnosis-based Cost Group (DCG) por capa (primaria y secundaria), aunque tenga múltiples
+condiciones a la vez. Esa camisa de fuerza de "una etiqueta por capa" produce heterogeneidad
+interna dentro de cada DCG (diagnósticos distintos agrupados bajo una sola etiqueta) y, en
+promedio, **subcompensa a la población con multimorbilidad** — exactamente los pacientes de
+mayor costo real, el segmento que el modelo más necesita tarificar bien. Los autores prueban
+un método que permite clasificar a la persona en múltiples DCGs simultáneamente
+(multi-qualification), usando los 209 grupos de diagnóstico como variables explicativas
+separadas en vez de forzar una sola etiqueta por persona. **Heurística de decisión:** cuando
+el Lobo evalúe cualquier modelo de segmentación, tarificación o ajuste de riesgo — `lapuerta`
+incluido — la pregunta de diagnóstico no es solo "¿la fórmula usa las variables correctas?"
+(intuición 17) sino "¿la arquitectura del modelo permite que una persona pertenezca a más de
+una categoría relevante a la vez, o fuerza una sola etiqueta por eje?". Si fuerza una sola
+etiqueta, el sesgo sistemático contra quien combina rasgos no se corrige recalibrando los
+coeficientes dentro de cada bucket — hay que rediseñar la arquitectura de clasificación misma.
+- **Fuente:** F-97 (🟢A, Oskam, M.; van Kleef, R.C.; van Vliet, R.C.J.A. 2023, *International
+  Journal of Health Care Finance and Economics* — dataset de 17M de holandeses con seguro
+  básico más submuestra de 1,3M con datos de morbilidad de médicos de cabecera)
+- **Leído a fondo:** 2026-08-16 (pmc.ncbi.nlm.nih.gov bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida — EconPapers y PubMed confirman el mecanismo de "una
+  etiqueta por capa" y el drawback explícito de heterogeneidad interna que citan los autores)
+- **Conexión razonada, no forzada:** amplía la intuición 17 (F-111) desde un ángulo distinto —
+  no es solo qué variable de necesidad real queda afuera de la fórmula, es si el axioma de
+  "una etiqueta por eje" es en sí mismo la fuente del sesgo. Transferible a auditar la
+  arquitectura (no solo las variables) de cualquier extensión futura de `lapuerta`.
+
+### 29. Que la tasa de divulgación suba en pasos sucesivos de un formulario no prueba que la confianza subió — puede ser puro foot-in-the-door operando sobre la conducta mientras la actitud no se mueve
+Lectura profunda de F-143 (ya citada en tesis 13 solo por su resumen de una línea). Fleming,
+Edwards, Bayliss & Seger (2023, *Journal of Cybersecurity*) corren dos estudios —uno de
+laboratorio, uno online como réplica— pidiendo datos personales reales de forma repetida: la
+divulgación aumenta en la solicitud posterior, y la preocupación de privacidad medida **no
+cambia**. Los autores encuadran el mecanismo explícitamente como *foot-in-the-door* (un pedido
+pequeño facilita uno mayor) y lo proponen como explicación de la paradoja de la privacidad. Su
+recomendación práctica concreta —ausente del resumen breve que ya sostiene tesis 13— es que
+**advertir a la persona de antemano** ("forewarning") sobre el patrón de solicitudes repetidas
+es la palanca que sí reduce el efecto. **Heurística de decisión:** cuando el Lobo o el equipo
+midan el éxito de un flujo de divulgación progresiva de datos (tesis 13,
+`disposicion_compartir_datos_pricing` de `lapuerta`, cualquier onboarding de telemática/UBI)
+por la tasa de campos completados paso a paso, esa métrica de conducta **no es evidencia de
+que la confianza o la comodidad real con compartir datos mejoró** — puede ser el mismo
+mecanismo de cumplimiento incremental que documenta este paper, operando sin que la actitud
+subyacente se mueva. Medir actitud (encuesta) y conducta (tasa de completado) por separado, no
+una como proxy de la otra; y si el diseño ya usa pasos progresivos a propósito, la
+contramedida ética documentada (advertir del patrón) es la palanca a considerar para
+consentimiento genuinamente informado, no solo alto en conversión.
+- **Fuente:** F-143 (🟢A, Fleming, D.; Edwards, M.; Bayliss, J.; Seger, C. 2023, *Journal of
+  Cybersecurity* 9(1):tyad005 — ya citada en tesis 13)
+- **Leído a fondo:** 2026-08-16 (academic.oup.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida, incluyendo la cobertura del propio centro CREATe y el
+  research portal de la University of East Anglia)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 13 (sigue Alta) — agrega
+  el nombre explícito del mecanismo (foot-in-the-door) y la contramedida de forewarning,
+  ausentes del resumen de una línea que la tesis ya citaba.
+
+### 30. La tasa base de fracaso de un producto nuevo es alta y sistemática, no aleatoria — antes de escribir un post-mortem a medida, revisar primero los dos factores estructurales que ya la predicen: categoría de alta rotación y marca matriz débil
+Victory, Nenycz-Thiel & Dawes (2021, *Marketing Letters*) miden fracaso de producto no con
+encuesta de percepción sino con datos de panel de consumo real: **83.719 SKUs nuevos en 31
+categorías de consumo masivo en EE.UU. (2002-2009)**. Un **25% de los SKUs nuevos deja de
+venderse al año 1; ~40% a los 2 años**. Y el fracaso no es parejo: es sistemáticamente más
+probable en categorías de **mayor revenue/rotación** (más competidas) y en SKUs lanzados por
+**marcas matriz de menor participación de mercado**. **Heurística de decisión:** antes de
+evaluar por qué un producto nuevo (de Rimac o de cualquier cliente que el Lobo asesore)
+fracasó, la primera pregunta no es "¿qué hicimos mal en el mensaje/canal/precio?" — es si el
+producto ya estaba en el cuadrante de riesgo estructural conocido: categoría grande y
+competida más marca matriz sin fuerza suficiente para sostenerlo. Si la respuesta es sí, gran
+parte del "fracaso" ya estaba predicho por la tasa base (1 de cada 4 al año, no una excepción)
+y por dos factores medibles **antes** del lanzamiento, no por un error específico de ejecución
+que amerite un rediseño completo. Aplicación directa antes de cualquier lanzamiento propio
+(producto paramétrico, microseguro, canal nuevo de `lapuerta`): calcular la tasa base esperada
+de la categoría y evaluar la fuerza relativa de la marca matriz ANTES de lanzar, como filtro de
+priorización — no solo después, como excusa.
+- **Fuente:** F-432 (🟢A, Victory, K.; Nenycz-Thiel, M.; Dawes, J. et al. 2021, *Marketing
+  Letters* 32 — datos observacionales de mercado real, ya citado en
+  `_nodes/tendencias-diseno-innovacion.md` §12.2)
+- **Leído a fondo:** 2026-08-16 (link.springer.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida — ProQuest y ResearchGate confirman la n de 83.719 SKU,
+  las tasas 25%/40% y los dos moderadores de categoría y fuerza de marca)
+- **Conexión razonada, no forzada:** no crea tesis nueva (F-432 no sostiene ninguna de las 25
+  tesis de negocio del Lobo, es evidencia del node de diseño/innovación) — pero la tasa base y
+  los dos factores predictivos son transferibles a cualquier evaluación de lanzamiento de
+  producto que haga el Lobo, incluida la ruta de producto sísmico de tesis 4 y cualquier
+  extensión futura de `lapuerta` hacia microseguro/propensión.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2577,3 +2662,41 @@ asumir que sube junto con el conocimiento técnico.
   días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin podar todavía; la
   próxima corrida (2026-08-20, cuando la ventana llegue a ~30 días desde el 2026-07-20) debe evaluar
   podar/resumir de nuevo.
+- **2026-08-16** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios,
+  working tree limpio) y verifiqué `codice.md` por conteo directo de filas: **468 filas, F-1 a
+  F-468 sin huecos**, mismo tope exacto que ya procesó la corrida de ayer (2026-08-15) — **cero
+  fuentes nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde
+  entonces, tercer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra
+  ese mismo tope: ninguna quedó desalineada con la evidencia vigente y no encontré matiz genuino
+  que agregar — no forcé ningún bloque "[Revisión...]" solo por completar el paso (el último real
+  sigue siendo el del 2026-08-12, mecanismo de `cronista`, que corre cada ~3 días y no vence hoy).
+  Sí corrió la rutina diaria de intuición (undécima corrida desde el 2026-08-06): de las 154
+  fuentes 🟢A del ledger, 27 ya tenían lectura profunda del Lobo — de las 127 restantes elegí 3 sin
+  patrón temático deliberado: F-97 (Oskam, van Kleef & van Vliet 2023, ajuste de riesgo holandés
+  por diagnóstico — citada en el ledger solo como "campo activo de mejora continua", nunca leída a
+  fondo), F-143 (Fleming et al. 2023, divulgación repetida de datos — ya sostiene tesis 13, pero
+  solo por su resumen de una línea) y F-432 (Victory, Nenycz-Thiel & Dawes 2021, tasa real de
+  fracaso de producto nuevo — citada en el node de diseño/innovación). Las tres bloqueadas por el
+  proxy en su URL directa (pmc.ncbi.nlm.nih.gov, academic.oup.com, link.springer.com);
+  reconstruidas vía búsqueda dirigida contra agregadores académicos (PubMed, EconPapers, CREATe,
+  ProQuest, ResearchGate) que confirman método y hallazgo, no solo el resumen ya citado. Sumé las
+  entradas 28, 29 y 30 de Intuición acumulada: (28) un modelo de clasificación que fuerza "una
+  persona = un bucket" por eje (como el DCG holandés, que solo permite una etiqueta de diagnóstico
+  por capa) subcompensa sistemáticamente a quien combina rasgos — multimorbilidad en ese caso — y
+  el arreglo correcto es de arquitectura del modelo (permitir multi-pertenencia), no de mejor
+  calibración dentro de cada bucket; amplía la intuición 17 desde el ángulo de "falta de variable"
+  hacia "el axioma de una sola etiqueta es en sí mismo el sesgo"; (29) que la tasa de campos
+  completados suba en un formulario de divulgación progresiva no prueba que la confianza real del
+  cliente subió — puede ser puro *foot-in-the-door* operando sobre la conducta mientras la actitud
+  de privacidad medida no se mueve, con forewarning documentado como la contramedida ética; agrega
+  precisión al mecanismo ya citado en tesis 13 sin cambiar su confianza (sigue Alta); (30) la tasa
+  base de fracaso de un producto de consumo nuevo es alta y sistemática (25% al año 1, ~40% a los 2
+  años, medida en panel de ventas real sobre 83.719 SKU, no en encuesta) y predecible antes de
+  lanzar por dos factores — categoría de alta rotación y marca matriz débil — así que un
+  post-mortem debe descartar primero esos dos factores estructurales antes de inventar una
+  explicación a medida; transferible a cualquier lanzamiento propio (producto sísmico de tesis 4,
+  extensiones de `lapuerta` a microseguro). Ninguna tesis de negocio cambió de confianza por esta
+  corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis
+  existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
+  Bitácora con 28 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin
+  podar todavía; la corrida del 2026-08-20 sigue siendo la programada para evaluar podar/resumir.

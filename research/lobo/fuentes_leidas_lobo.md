@@ -44,3 +44,6 @@
 | F-92 | 🟢 A | 2026-08-15 | Intuición 25 — el diseño de cobertura, no solo el precio, es una cuarta palanca de selección de riesgo |
 | F-218 | 🟢 A | 2026-08-15 | Intuición 26 — el intervalo de repaso óptimo se encoge, como % del horizonte de retención, cuanto más lejos está la prueba |
 | F-401 | 🟢 A | 2026-08-15 | Intuición 27 — mayor alfabetización en IA correlaciona con menor precisión al calibrar el propio desempeño asistido por IA |
+| F-97 | 🟢 A | 2026-08-16 | Intuición 28 — un modelo que fuerza "una persona = un bucket" por eje subcompensa sistemáticamente a quien combina rasgos; el arreglo es de arquitectura, no de calibración |
+| F-143 | 🟢 A | 2026-08-16 | Intuición 29 — que la divulgación suba en pasos sucesivos no prueba que la confianza subió; puede ser foot-in-the-door operando solo sobre la conducta |
+| F-432 | 🟢 A | 2026-08-16 | Intuición 30 — la tasa base de fracaso de producto nuevo es alta y sistemática, predecible por categoría de alta rotación y fuerza de marca matriz |
