@@ -5,7 +5,8 @@
 > capa de **evidencia externa** — el estado y las decisiones internas del Copiloto AI de RIMAC
 > viven en `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md`, que consume este node.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.1
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.2
+> (v1.2: **§7 corregido** — la cuantificación que este node declaraba inexistente sí existe; la trajo el research de Felipe. F-490 a F-492 cuantifican las reglas de §4 y §8, y F-492 responde con evidencia la disyuntiva reentrenar-vs-ordenar. Reconciliación agregada: **troceado por estructura ≠ troceado semántico avanzado** — el primero usa encabezados existentes y rinde; el segundo calcula cortes y no justifica su costo (NAACL 2025). El solapamiento del 20-25% que el fabricante trae por default es prácticamente inútil e infla el índice ~25%: **partir por encabezado y no invertir en solapamiento**.)
 > (v1.1, mismo día: agrega §8 — **uno o varios agentes**, y por qué consolidar bases de conocimiento
 > es distinto de consolidar la interfaz. Cambio estructural: el node pasa de cubrir *cómo se escribe
 > el contenido* a cubrir también *cómo se reparte entre agentes*, que es una decisión anterior.
@@ -213,9 +214,16 @@ Honestidad sobre los límites, para que este node no se cite más fuerte de lo q
 - **No dice que limpiar la base arregle el agente.** Dice que sin base limpia, el agente no puede
   funcionar bien. Es condición necesaria, no suficiente — las fallas de comportamiento e
   instrucciones son otra capa (ver §3 del node de diagnóstico).
-- **No hay un estudio con muestra que cuantifique cuánto mejora la exactitud al reformatear una
-  base corporativa.** No existe un "+X% por quitar las tablas". Lo que hay es documentación
-  normativa del fabricante + dos preprints sobre troceado. **Cualquier cifra de mejora que aparezca
+- ~~**No hay un estudio con muestra que cuantifique cuánto mejora la exactitud al reformatear una
+  base corporativa.**~~ ⚠️ **CORREGIDO 2026-08-14 — sí existe, y lo trajo el research de Felipe**
+  (F-490 a F-492, venues arbitrados: ICCV, ACL, ICLR, AAAI, SIGIR). Conversión estructurada vs.
+  extracción plana: **86,2% → 94,1%**, con **33 puntos de brecha en preguntas que dependen de
+  tablas** — es la regla "sin tablas" de §4, cuantificada. Un solo documento distractor: **−25%** de
+  precisión. Crecer el corpus **sin separarlo por dominio: 75% → menos de 40%** — es la regla de §8,
+  cuantificada. En presentaciones la brecha es **3 a 6× peor** que en texto.
+  **Lo que sigue sin existir** es un estudio que aísle el retorno de ordenar **una base corporativa
+  real de punta a punta**; por eso medir el propio antes/después genera un dato que hoy no está
+  publicado. No existe un "+X% por quitar las tablas" de una base entera. **Cualquier cifra de mejora que aparezca
   en un blog de proveedor sobre esto debe tratarse como sospechosa de eco de cita** — la disciplina
   del proyecto sobre cadenas de eco (ver reglas C19-C22 en `[[tendencias-diseno-innovacion]]`)
   aplica de lleno a este mercado, que está saturado de proveedores de parsing vendiendo urgencia.

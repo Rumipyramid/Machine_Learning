@@ -7,7 +7,13 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.8
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.9
+> (v1.9: §15 — integra el research *"La biblioteca de AIDA"* de Felipe y produce el **Release 1**
+> (`_outputs/release-1-base-conocimiento-aida.md`). Aporta la cuantificación que faltaba, la
+> respuesta con evidencia a reentrenar-vs-ordenar, y el argumento de que **ordenar el repositorio es
+> lo que hace cumplible la regla que AIDA ya tiene** — tercera lectura de la prueba C8. Este node le
+> aporta el hueco de su plan: la copia autoritativa está mal, así que el Release 1 abre resolviendo
+> el catálogo.)
 > (v1.8: §14 — **evaluación del Playbook del Asesor**, recibido de Alejo y persistido en
 > `research/_fuentes_internas/`. Hallazgo central: **la fuente canónica contiene las
 > contradicciones que debía resolver** — duplica Vida Contigo/VAG, omite VFP y usa el nombre
@@ -1229,6 +1235,56 @@ fuente canónica.
    es el de mayor demanda.
 4. **Definir qué NO entra a la base del agente** (14.5).
 5. **Declarar los ocho vacíos como backlog de contenido** (14.6), y cerrar la CUA.
+
+---
+
+## 15. Integración del research de Felipe y el Release 1 (v1.9)
+
+**Documento recibido de Alejo el 2026-08-14:** *"La biblioteca de AIDA"* (Felipe, practicante de
+Behavioral Design), persistido en `research/_fuentes_internas/`. Research de mercado sobre por qué
+el orden del repositorio decide la calidad del agente. **Es el trabajo externo de mayor calidad que
+ha entrado a este proyecto.**
+
+**Integración completa en `_outputs/release-1-base-conocimiento-aida.md`.** Aquí solo lo que cambia
+este node.
+
+**Lo que aporta y este node no tenía:**
+- ⭐ **La cuantificación que el node de arquitectura declaraba inexistente** (F-490 a F-492) —
+  corregido allí en su v1.2.
+- ⭐ **La respuesta con evidencia a reentrenar-vs-ordenar** (F-492, EMNLP 2024): recuperar solo rinde
+  **0,875** contra **0,504** de reentrenar; añadir reentrenamiento **restó**; y entrenar con hechos
+  nuevos **aumenta linealmente la alucinación**.
+- ⭐ **El mejor argumento del documento, que reinterpreta la prueba C8 del protocolo:** *AIDA ya
+  tiene la regla correcta —no responder de memoria, delegar siempre—; el problema es que **hoy no se
+  puede cumplir**, porque el especialista sale a buscar y encuentra contenido contradictorio, vacío o
+  ilegible, y en ese vacío el modelo cae de vuelta en la memoria.* **Ordenar el repositorio no es el
+  plan B: es lo que hace cumplible la regla que AIDA ya tiene.** Aparece así una **tercera lectura de
+  C8** que este node no tenía: la regla puede estar **declarada, ser sincera y ser inejecutable** —
+  una falla de **capa A disfrazada de capa B**. Se distingue con la prueba del fragmento pegado.
+- **Taxonomía de láminas por tipo** (reescribir · describir con multimodal · excluir del índice ·
+  recuperación visual), bastante más accionable que el "los PPT son malos" de §14.
+- **Límites operativos de SharePoint** —hipervínculos internos que no se siguen, contenido cifrado
+  que falla en silencio, quitar del índice es todo-o-nada— y el **riesgo de adopción** de §6 del
+  Release 1.
+
+**Convergencias independientes**, que valen como corroboración y no como eco —son dos trabajos
+hechos por separado—: el **ruteo** como punto de falla propio (su paso 1 = **capa D** de §3), **una
+sola copia autoritativa por tema** (= la fuente canónica de §9.2), y armar el **banco de control
+temprano para tener la medición del antes** (= el Experimento 1 de §12).
+
+⭐ **Lo que este node le aporta a él, y es el hueco de su plan:** su acción #2 —resolver
+contradicciones dejando una sola copia autoritativa— **supone que la copia autoritativa es
+correcta. §14 demuestra que no lo es**: el Playbook duplica Vida Contigo/VAG, omite VFP, usa
+"Flexivida" y declara Pendiente el detalle técnico de producto. Dejar el playbook como copia única
+**propagaría el error**. De ahí que el Release 1 abra con **R1.0 · resolver el catálogo**, que su
+plan no contemplaba.
+
+⚠️ **Advertencia de fuente (F-489):** su cifra ancla —79,5% → 24,2% por documentos contradictorios—
+tiene un **problema de cita abierto**: el arXiv citado resuelve a otro paper y el mecanismo de ese
+paper es **conflicto contexto-memoria**, no contradicción entre documentos del corpus. **El fenómeno
+y la dirección se sostienen** por literatura adyacente; **la magnitud y la atribución hay que
+reverificarlas antes de que entren a un comité.** El orden de prioridades del Release 1 **no cambia**
+— se sostiene igual en F-490, F-491 y F-492, todas de venues arbitrados.
 
 ---
 
