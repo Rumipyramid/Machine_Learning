@@ -1,0 +1,307 @@
+<title>Release 1 de AIDA</title>
+<style>
+  :root{
+    --paper:#F7F8F7; --ink:#16232B; --muted:#5F7178; --rule:#D6DDDC;
+    --accent:#0F6E6E; --accent-soft:#E4EFEE; --signal:#A84A1C; --signal-soft:#F7EAE2;
+    --card:#FFFFFF; --rail:#EDF2F1;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#101A1E; --ink:#E3EAE9; --muted:#93A3A9; --rule:#26343A;
+      --accent:#57B7B1; --accent-soft:#152C2E; --signal:#DD8A57; --signal-soft:#2C2019;
+      --card:#16232799; --rail:#162226;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101A1E; --ink:#E3EAE9; --muted:#93A3A9; --rule:#26343A;
+    --accent:#57B7B1; --accent-soft:#152C2E; --signal:#DD8A57; --signal-soft:#2C2019;
+    --card:#16232799; --rail:#162226;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:var(--serif); font-size:18px; line-height:1.68;
+    margin:0; padding:0 5vw 6rem; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px; margin:0 auto}
+  .col{max-width:64ch}
+
+  header.mast{padding:4.5rem 0 2.2rem; border-bottom:2px solid var(--ink); display:flex; flex-direction:column; gap:1.1rem}
+  .kicker{font-family:var(--mono); font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--accent)}
+  h1{font-size:clamp(2.4rem,5.5vw,3.6rem); line-height:1.05; margin:0; font-weight:400; letter-spacing:-.02em; text-wrap:balance}
+  h1 em{font-style:italic; color:var(--accent)}
+  .standfirst{font-size:1.18rem; color:var(--muted); margin:0; max-width:58ch; text-wrap:pretty}
+  .meta{font-family:var(--mono); font-size:.72rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:.4rem 1.4rem}
+
+  section{padding:3.6rem 0 .8rem; border-bottom:1px solid var(--rule)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:1.85rem; font-weight:400; letter-spacing:-.014em; margin:0 0 1.3rem; text-wrap:balance}
+  h3{font-size:1.12rem; font-weight:700; margin:2.2rem 0 .5rem; letter-spacing:-.005em}
+  p{margin:0 0 1.1rem}
+  a{color:var(--accent)}
+
+  .lede{font-size:1.22rem; line-height:1.55; color:var(--ink); border-left:3px solid var(--accent); padding-left:1.2rem; margin:0 0 1.6rem}
+
+  /* metáfora */
+  .split{display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; margin:1.6rem 0}
+  .split > div{background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:1.15rem 1.25rem}
+  .split h4{margin:0 0 .4rem; font-family:var(--mono); font-size:.68rem; letter-spacing:.11em; text-transform:uppercase; color:var(--muted)}
+  .split p{margin:0; font-size:.98rem; line-height:1.55}
+  .split .yes{border-color:var(--accent)}
+  .split .yes h4{color:var(--accent)}
+
+  /* problemas */
+  .probs{display:flex; flex-direction:column; gap:0; margin:1.4rem 0 0}
+  .prob{display:grid; grid-template-columns:2.4rem 1fr; gap:0 1.1rem; padding:1.05rem 0; border-top:1px solid var(--rule)}
+  .prob:first-child{border-top:0}
+  .prob .ix{font-family:var(--mono); font-size:.78rem; color:var(--accent); font-weight:700; padding-top:.28rem}
+  .prob b{display:block; font-size:1.05rem; margin-bottom:.15rem}
+  .prob p{margin:0; font-size:.98rem; color:var(--muted); line-height:1.55}
+  .prob p strong{color:var(--ink)}
+
+  /* entregables */
+  .del{display:grid; grid-template-columns:auto 1fr; gap:0 1.3rem; padding:1.35rem 0; border-top:1px solid var(--rule)}
+  .del:first-of-type{border-top:0}
+  .tag{font-family:var(--mono); font-size:.66rem; letter-spacing:.08em; font-weight:700; padding:.28rem .5rem; border-radius:3px; height:fit-content; white-space:nowrap; background:var(--rail); color:var(--accent)}
+  .tag.block{background:var(--signal-soft); color:var(--signal)}
+  .del h3{margin:0 0 .3rem; font-size:1.16rem}
+  .del p{margin:0 0 .55rem; font-size:1rem}
+  .del p:last-child{margin-bottom:0}
+  .dep{font-family:var(--mono); font-size:.72rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:.3rem 1.1rem; padding-top:.3rem}
+  .dep b{color:var(--accent); font-weight:700}
+
+  .note{background:var(--accent-soft); border-left:3px solid var(--accent); padding:1.05rem 1.2rem; margin:1.5rem 0; border-radius:0 4px 4px 0}
+  .note.alert{background:var(--signal-soft); border-left-color:var(--signal)}
+  .note p:last-child{margin-bottom:0}
+  .note .lab{font-family:var(--mono); font-size:.66rem; letter-spacing:.11em; text-transform:uppercase; color:var(--accent); font-weight:700; display:block; margin-bottom:.4rem}
+  .note.alert .lab{color:var(--signal)}
+
+  .tw{overflow-x:auto; margin:1.3rem 0; border:1px solid var(--rule); border-radius:4px; background:var(--card)}
+  table{border-collapse:collapse; width:100%; min-width:520px; font-size:.95rem}
+  th,td{padding:.75rem .9rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--rule)}
+  tr:last-child td{border-bottom:0}
+  th{font-family:var(--mono); font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:600; background:var(--rail)}
+  td.big{font-family:var(--mono); font-weight:700; color:var(--accent); white-space:nowrap}
+
+  ul.plain{padding-left:1.2rem; margin:.7rem 0 1.2rem}
+  ul.plain li{margin-bottom:.55rem}
+
+  footer{padding:3rem 0 0; font-family:var(--mono); font-size:.74rem; color:var(--muted); line-height:1.75}
+
+  @media (max-width:640px){
+    body{font-size:17px; padding:0 6vw 4rem}
+    .split{grid-template-columns:1fr}
+    .del{grid-template-columns:1fr; gap:.5rem}
+  }
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">RIMAC · Vida Individual · Agosto 2026</div>
+  <h1>Release 1 de <em>AIDA</em></h1>
+  <p class="standfirst">Qué vamos a arreglar primero en el copiloto del asesor, por qué eso y no otra cosa, y cómo vamos a saber si funcionó.</p>
+  <div class="meta"><span>CoE Diseño Estratégico</span><span>Behavioral Design</span></div>
+</header>
+
+<section>
+  <h2>La promesa</h2>
+  <div class="col">
+    <p class="lede">Que cuando un asesor de Vida le pregunte algo a AIDA, la respuesta sea correcta, esté vigente y se pueda verificar — o que AIDA diga que no lo sabe.</p>
+    <p>No prometemos “que AIDA funcione bien”. Prometemos algo acotado y comprobable: <strong>un ramo (Vida), un cuerpo de conocimiento ordenado, y una medición del antes y el después.</strong></p>
+  </div>
+</section>
+
+<section>
+  <h2>Primero, qué es AIDA en realidad</h2>
+  <div class="col">
+    <p>Cuando decimos que AIDA “sabe de seguros”, la imagen que se forma es la de alguien que estudió los productos y los recuerda. No funciona así, y esa diferencia explica todo lo demás.</p>
+  </div>
+  <div class="split">
+    <div>
+      <h4>Lo que imaginamos</h4>
+      <p>Un experto que memorizó el portafolio y responde de memoria. Para mejorarlo habría que volver a enseñarle.</p>
+    </div>
+    <div class="yes">
+      <h4>Lo que es</h4>
+      <p>Un bibliotecario muy rápido. Cada vez que le preguntan, sale a buscar en el repositorio y responde con lo que encuentra ahí.</p>
+    </div>
+  </div>
+  <div class="col">
+    <p><strong>Si la biblioteca está desordenada, el mejor bibliotecario del mundo trae el libro equivocado.</strong> Y eso es exactamente lo que reportan los asesores: “no da la información adecuada”, “no contesta bien casi nunca”.</p>
+    <div class="note">
+      <span class="lab">La consecuencia práctica</span>
+      <p>La palanca no es el modelo, es el contenido. Y hay evidencia comparativa: sobre información que un modelo no traía aprendida, <strong>volver a entrenarlo casi no mejora nada, mientras que darle el documento al momento de responder es lo que mejor funciona — y lo más barato.</strong> Cuando se hicieron las dos cosas juntas, el reentrenamiento restó en vez de sumar.</p>
+    </div>
+    <p>Hay un detalle que hace todo esto más fácil de lo que parece: <strong>AIDA ya tiene la instrucción correcta.</strong> Su lógica le prohíbe responder de memoria sobre temas técnicos y la obliga a consultar al especialista. Esa es justo la buena práctica.</p>
+    <p>El problema no es la regla. Es que <strong>hoy no se puede cumplir</strong>: cuando el especialista sale a buscar, encuentra documentos que se contradicen, archivos vacíos o láminas que no puede leer. Y en ese vacío, el modelo vuelve a responder de memoria.</p>
+    <p class="lede">Ordenar el repositorio no es el plan B. Es lo que hace cumplible la regla que AIDA ya tiene.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Qué tiene hoy la biblioteca</h2>
+  <div class="col"><p>Cinco problemas. Los cuatro primeros los identificó el research de mercado; el quinto apareció al revisar nuestros propios documentos.</p></div>
+  <div class="probs">
+    <div class="prob"><span class="ix">01</span><div>
+      <b>Versiones que conviven</b>
+      <p>Si en el repositorio están la circular vieja y la nueva sobre el mismo tema, <strong>el agente no tiene forma de saber cuál es la vigente</strong>. Las dos le parecen igual de relevantes. Es el problema de mayor impacto medido.</p>
+    </div></div>
+    <div class="prob"><span class="ix">02</span><div>
+      <b>Presentaciones con mucho diseño</b>
+      <p>Es el más grande y el menos obvio, porque los PPT se ven perfectos al abrirlos. Pero un cuadro comparativo de planes le llega a AIDA como una lista de textos sueltos: <strong>la relación entre el plan y su precio desaparece.</strong> En presentaciones se pierde entre 3 y 6 veces más que en un documento de texto.</p>
+    </div></div>
+    <div class="prob"><span class="ix">03</span><div>
+      <b>Documentos vacíos o de relleno</b>
+      <p>Parecen inofensivos: no dicen nada, no pueden decir nada malo. Pero <strong>ocupan uno de los pocos lugares que el agente alcanza a revisar</strong> antes de responder, y desplazan al documento correcto.</p>
+    </div></div>
+    <div class="prob"><span class="ix">04</span><div>
+      <b>Documentos de veinte páginas</b>
+      <p>Los modelos priorizan el principio y el final de un archivo. Un manual largo tiene, en la práctica, <strong>un centro que el agente casi no ve.</strong></p>
+    </div></div>
+    <div class="prob"><span class="ix">05</span><div>
+      <b>El catálogo de productos no está cerrado</b>
+      <p>Al comparar el Playbook contra las fichas comerciales vigentes aparecieron tres discrepancias: <strong>un producto aparece dos veces con nombres distintos, otro producto vigente no aparece, y uno figura con el nombre que tenía en 2022.</strong> Además, el detalle técnico —coberturas, exclusiones, carencias— está marcado como pendiente.</p>
+    </div></div>
+  </div>
+  <div class="col">
+    <div class="note alert">
+      <span class="lab">Por qué el quinto cambia el orden del trabajo</span>
+      <p>El plan natural es “dejar una sola copia autoritativa de cada tema”. Correcto — pero <strong>eso supone que la copia autoritativa está bien</strong>. Si ordenamos todo alrededor de un catálogo que tiene errores, terminamos con una biblioteca impecable y equivocada.</p>
+      <p>Por eso el Release 1 abre cerrando el catálogo, antes de tocar nada más.</p>
+    </div>
+    <p>Y una ventaja que conviene decir en voz alta, porque no es lo normal: <strong>el contenido lo controla el mismo equipo.</strong> En la mayoría de las organizaciones, ordenar un repositorio exige negociar con cada área dueña de lo suyo. Aquí no. Es lo que hace que esto se pueda hacer en semanas y no en trimestres.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Qué vamos a hacer</h2>
+  <div class="col"><p>Cinco entregables, en este orden. <strong>Tres de ellos no dependen de nadie más</strong> — ni de presupuesto, ni de tecnología, ni de otra área.</p></div>
+
+  <div class="del">
+    <span class="tag block">BLOQUEA</span>
+    <div>
+      <h3>Cerrar el catálogo de Vida</h3>
+      <p>Resolver con Producto las tres discrepancias y publicar una matriz de productos única y fechada. Ya existe un borrador construido a partir de las fichas vigentes, con la fuente y el nivel de confianza de cada dato — <strong>hay que validarla, no construirla.</strong></p>
+      <div class="dep"><span><b>Depende de:</b> Producto</span><span><b>Esfuerzo:</b> días</span></div>
+    </div>
+  </div>
+
+  <div class="del">
+    <span class="tag">RÁPIDO</span>
+    <div>
+      <h3>Sacar del índice lo que no debería responder</h3>
+      <p>Documentos vacíos, plantillas, portadas, láminas de marca y versiones antiguas. Es la acción de mayor impacto que <strong>no depende de nadie</strong>: cada documento de ruido que sale devuelve precisión de forma directa.</p>
+      <p>Existe una función que <strong>saca contenido de las respuestas del agente sin quitarle el acceso a nadie</strong> — es la correcta, y conviene activarla temprano porque en repositorios grandes puede tardar más de una semana en aplicarse.</p>
+      <div class="dep"><span><b>Depende de:</b> nadie</span><span><b>Esfuerzo:</b> bajo</span></div>
+    </div>
+  </div>
+
+  <div class="del">
+    <span class="tag">RÁPIDO</span>
+    <div>
+      <h3>Cargar el modelo de venta en la forma que AIDA sí puede leer</h3>
+      <p>El Playbook no se copia: <strong>se deriva</strong>. Tres cosas concretas:</p>
+      <ul class="plain">
+        <li><strong>Partirlo por bloque.</strong> Está medido: cada bloque queda dentro del tamaño que el agente maneja bien, salvo el de la asesoría, que se parte en tres.</li>
+        <li><strong>Sacar las tablas</strong>, empezando por la guía de objeciones — una entrada por objeción, con su título. Es el contenido que más se consulta (lo pide el 42% de los asesores) y hoy está en el formato que peor sobrevive.</li>
+        <li><strong>Dejar afuera lo que no es conocimiento de venta:</strong> el autodiagnóstico, el apéndice administrativo, el detalle operativo de redes sociales. Sirven para una persona; para el agente solo compiten por espacio.</li>
+      </ul>
+      <p>Es más barato de lo que parece: el documento ya está bien estructurado. El trabajo es partir y desarmar tablas, no reescribir.</p>
+      <div class="dep"><span><b>Depende de:</b> nadie</span><span><b>Esfuerzo:</b> medio</span></div>
+    </div>
+  </div>
+
+  <div class="del">
+    <span class="tag">MEDIO</span>
+    <div>
+      <h3>Reescribir los cuadros que más se consultan</h3>
+      <p>Los veinte o treinta cuadros de planes, tarifas y coberturas que hoy viven como láminas de diseño, pasados a texto. La pregunta que ordena este trabajo <strong>no es “qué láminas hay” sino “qué láminas se consultan”</strong>: reescribir esas veinte rinde más que cualquier solución técnica sobre todo el repositorio, y cuesta una fracción.</p>
+      <div class="dep"><span><b>Depende de:</b> el inventario</span><span><b>Esfuerzo:</b> medio</span></div>
+    </div>
+  </div>
+
+  <div class="del">
+    <span class="tag">RÁPIDO</span>
+    <div>
+      <h3>Armar el banco de preguntas de control</h3>
+      <p>Un conjunto fijo de preguntas de Vida con respuesta conocida — <strong>incluidas preguntas que AIDA debería rechazar</strong> — que se corre antes y después de cada cambio. El instrumento ya está construido.</p>
+      <p><strong>Se corre antes de tocar nada.</strong> Es lo único que convierte “ordenamos el repositorio” en “la precisión pasó de esto a esto”.</p>
+      <div class="dep"><span><b>Depende de:</b> nadie</span><span><b>Esfuerzo:</b> bajo</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Antes de empezar: el inventario</h2>
+  <div class="col">
+    <p>Necesitamos saber qué hay: cuántos documentos por ramo, cuántos están vacíos, cuántas presentaciones tienen cuadros comparativos, y <strong>qué temas concentran las consultas reales</strong>.</p>
+    <p>No es un estudio. Es una corrida sobre el repositorio más el histórico de preguntas a AIDA. Microsoft incluye además una evaluación automática del estado del repositorio, repetible cada 30 días, que probablemente no estamos usando.</p>
+    <div class="note">
+      <span class="lab">El atajo más barato para saber qué se consulta</span>
+      <p>Preguntarle a los asesores <strong>qué le preguntan a ChatGPT que no le preguntan a AIDA</strong>. Hoy ya usan herramientas de afuera para tapar los huecos — esa conversación es el mapa del problema, y no requiere revisar un solo archivo.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Qué dejamos para después</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Queda fuera</th><th>Por qué</th></tr></thead>
+    <tbody>
+      <tr><td class="big">Describir las láminas con IA</td><td>Recupera diagramas sin rehacerlos, pero reescribir los cuadros más consultados cubre lo importante a menor costo</td></tr>
+      <tr><td class="big">Mejoras técnicas del buscador</td><td>Buena relación costo-beneficio, pero requiere al equipo de la plataforma. No bloquea nada de lo anterior</td></tr>
+      <tr><td class="big">El resto del repositorio</td><td>El Release 1 se acota a Vida. Los demás ramos se hacen después, con el método ya probado</td></tr>
+      <tr><td class="big">Que la pregunta llegue al especialista correcto</td><td>AIDA cubre cinco ramos y una pregunta ambigua puede ir al equivocado. <strong>Es diseño del coordinador, no contenido</strong></td></tr>
+      <tr><td class="big">El agente de speech de ventas</td><td>Es el único que necesita el contexto de otro agente para trabajar, y ese patrón es el más frágil. Merece revisión aparte</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>El riesgo que puede anular todo esto</h2>
+  <div class="col">
+    <p>Llegar a AIDA no es el problema: los asesores saben dónde está y entran sin fricción. <strong>El problema es lo que hay al llegar: una pantalla en blanco.</strong> Ningún botón, ningún ejemplo, nada que le diga al asesor qué puede pedirle.</p>
+    <div class="note alert">
+      <span class="lab">Y esto es lo que lo vuelve urgente</span>
+      <p><strong>El asesor que ya dejó de usar AIDA no va a volver a comprobar si mejoró.</strong> Está documentado: después de ver fallar una herramienta, la gente la abandona incluso cuando pasa a ser mejor que la alternativa, y no la reevalúa por su cuenta.</p>
+      <p>Una mejora de fondo sin nada visible <strong>no llega a quien ya se fue</strong> — que es justamente a quien queremos recuperar.</p>
+    </div>
+    <p>La calidad sigue siendo la palanca principal: cuarenta años de investigación sobre adopción de tecnología muestran que la utilidad percibida pesa más que la facilidad de uso. Pero hay un matiz que es exactamente nuestro caso: <strong>la pantalla en blanco no compite con la calidad, la oculta.</strong> El asesor no puede notar que AIDA mejoró si nunca llega a hacerle la pregunta que se lo mostraría.</p>
+    <p>Por eso el Release 1 necesita <strong>una pieza mínima de reintroducción</strong>: aunque sean tres ejemplos de qué preguntarle y un aviso de que cambió. No es el rediseño de la herramienta — esa es una conversación aparte, con su propio presupuesto. Es lo mínimo para que el trabajo llegue a alguien.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Qué no arregla el Release 1</h2>
+  <div class="col">
+    <p>Conviene decirlo ahora y no después.</p>
+    <ul class="plain">
+      <li><strong>La invención no desaparece.</strong> Herramientas comerciales que buscan sobre documentos oficiales y muestran citas reales <strong>siguen inventando entre 17% y 33% de las veces</strong>, y la falla más común es citar un documento auténtico afirmando que dice algo que no dice. Peor aún: mostrar citas sube la confianza del usuario incluso cuando la cita es falsa. Por eso no basta con poner un enlace — hay que <strong>mostrar el fragmento y la fecha de vigencia</strong>, y el banco de control no es un entregable que se cierra: es permanente.</li>
+      <li><strong>El ruteo entre ramos sigue igual.</strong> Y para el asesor, una respuesta correcta del ramo equivocado se ve idéntica a un dato falso.</li>
+      <li><strong>No evita que la biblioteca se vuelva a ensuciar.</strong> Si nada impide que mañana alguien suba un PPT sin dueño ni fecha, volvemos al punto de partida. El release tiene que dejar <strong>un dueño y una cadencia de revisión</strong>, o tiene fecha de vencimiento.</li>
+      <li><strong>No prueba que el modelo de venta funcione.</strong> Prueba que la herramienta que lo transporta mejoró. Son cosas distintas.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Cómo sabremos si funcionó</h2>
+  <div class="col">
+    <p>El mismo banco de preguntas, corrido antes y después, comparando pregunta por pregunta. Eso da una respuesta limpia y rápida <strong>sin ocupar tiempo de ningún asesor</strong>.</p>
+    <p>Recién si eso mejora tiene sentido medir el efecto sobre la venta con asesores reales. Si la calidad de respuesta no se movió, no hay nada que medir en campo — y nos ahorramos gastar la disposición de la fuerza de venta en una prueba que no iba a mostrar nada.</p>
+    <div class="note">
+      <span class="lab">Un dato que hoy no existe</span>
+      <p>No hay ningún estudio publicado que aísle cuánto rinde ordenar la base de conocimiento de una empresa real. <strong>Si medimos bien nuestro antes y después, generamos un dato que nadie tiene</strong> — y que sostiene cualquier conversación futura de presupuesto sobre AIDA.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Construido sobre el research «La biblioteca de AIDA» (Behavioral Design) y el diagnóstico del copiloto (CoE Diseño Estratégico). Evidencia de venues arbitrados —ICCV, ACL, ICLR, AAAI, SIGIR, EMNLP, NeurIPS— más documentación oficial de Microsoft. Detalle de fuentes, cifras y salvedades en la versión extendida del repositorio.</p>
+</footer>
+
+</div>
