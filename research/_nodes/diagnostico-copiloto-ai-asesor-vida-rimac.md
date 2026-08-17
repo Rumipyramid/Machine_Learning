@@ -7,7 +7,13 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.9
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v2.0
+> (v2.0: §16 fija la **estructura definitiva del Release 1 en tres etapas** —diagnóstico de la
+> herramienta · intervención · testeo—, que manda sobre cualquier descripción anterior. Agrega la
+> **velocidad** como segundo objetivo (y su medición en la Etapa 1), y nombra el "full con puntos de
+> corte" como **serie temporal interrumpida**, con el hallazgo de que su serie de control ya existe
+> gratis: los ramos que no reciben la intervención. Abre **P10** — "el modelo SHUNK", sin
+> identificar.)
 > (v1.9: §15 — integra el research *"La biblioteca de AIDA"* de Felipe y produce el **Release 1**
 > (`_outputs/release-1-base-conocimiento-aida.md`). Aporta la cuantificación que faltaba, la
 > respuesta con evidencia a reentrenar-vs-ordenar, y el argumento de que **ordenar el repositorio es
@@ -393,6 +399,15 @@ Determina qué reglas de gobierno de §5 del node de arquitectura son aplicables
 
 **P4 — ¿Quién es el dueño de la base hoy?** Si nadie la gobierna, el problema **volverá** aunque se
 limpie una vez. Es la diferencia entre un arreglo y una solución.
+
+**P10 — ¿Qué es "el modelo SHUNK"?** Alejo lo nombra (2026-08-14) como el marco de la evaluación
+con LLM de la Etapa 1, en dimensiones de "usabilidad, error, etc.". **No se pudo identificar y no se
+aplicó por aproximación** — misma regla que evitó el error con "Shang"/Zheng en la referencia de
+juez LLM. Candidatos buscados y descartados: **Shackel (1991)**, definición operacional canónica de
+usabilidad (efectividad, aprendibilidad, flexibilidad, actitud), que no centra el error; y las
+escalas de usabilidad de chatbots **BUS-11 / BUS-15 / CUQ**, de las cuales **CUQ sí tiene un factor
+específico de manejo de errores** y ya está registrada como F-149. La Etapa 1 se construye mientras
+tanto sobre los instrumentos ya verificados del proyecto.
 
 **⭐ P9 (nueva, prioridad #1) — ¿Sobre qué framework corre AIDA realmente?** `transfer_to_agent`
 apunta a Google ADK, no a Copilot Studio. Determina si los límites técnicos documentados aplican o
@@ -1285,6 +1300,60 @@ paper es **conflicto contexto-memoria**, no contradicción entre documentos del 
 y la dirección se sostienen** por literatura adyacente; **la magnitud y la atribución hay que
 reverificarlas antes de que entren a un comité.** El orden de prioridades del Release 1 **no cambia**
 — se sostiene igual en F-490, F-491 y F-492, todas de venues arbitrados.
+
+---
+
+## 16. Estructura definitiva del Release 1 — tres etapas (v2.0)
+
+**Definida por Alejo el 2026-08-14.** Es la estructura canónica del Release 1 y **manda sobre
+cualquier descripción anterior de este node**. §12 (diseño de validación) y §13 (trabajo de campo)
+siguen vigentes como el detalle metodológico de las etapas 1 y 3; lo que cambia es el encuadre.
+
+**El Release 1 no es solo la intervención: empieza midiendo y termina comprobando.**
+
+| Etapa | Qué es | Detalle metodológico |
+|---|---|---|
+| **1 · Diagnóstico de la herramienta** | Encuestas y shadowing con asesores → banco de preguntas reales → evaluación asistida con LLM (usabilidad, error, exactitud) → **medición de tiempo** | §13 (campo) + `_outputs/protocolo-interrogacion-aida-vida.md` Bloques A-D |
+| **2 · Intervención en AIDA** | Rediseño de la base de conocimiento. **Objetivo declarado: menos errores y consulta más rápida** | `_outputs/release-1-base-conocimiento-aida.md` R1.0-R1.3 |
+| **3 · Testeo** | Contra línea base, o A/B con la nueva solución | §12 |
+
+### 16.1 Lo que la reestructuración agrega
+
+**La velocidad como segundo objetivo declarado.** No requiere trabajo aparte —sale del mismo
+movimiento: menos documentos compitiendo por la recuperación y archivos más cortos hacen que el
+agente encuentre antes— pero **hay que cronometrarla en la Etapa 1**, o después no se puede
+demostrar. Métrica: tiempo hasta obtener algo usable, y número de intentos. **La v1.0 del Release no
+la tenía.**
+
+### 16.2 El nombre correcto de "full con puntos de corte"
+
+Alejo plantea la disyuntiva de la Etapa 3 así: *si es posible aislar a AIDA para un grupo de
+asesores, o si se debe hacer un full con puntos de corte.* Lo segundo tiene nombre y literatura
+propia: **serie temporal interrumpida** (*interrupted time series*), el diseño cuasi-experimental
+más fuerte disponible cuando no se puede aleatorizar.
+
+**Tres caminos, según lo que permita la plataforma** — y la pregunta técnica de si se pueden
+sostener dos versiones a la vez **va a TI antes que cualquier otra cosa**:
+
+| Si… | Diseño | Nota |
+|---|---|---|
+| Se pueden dos versiones en paralelo | **A/B por clusters** (equipos, nunca personas) | El más limpio. Aleatorizar personas dentro de una oficina filtra: se pasan capturas |
+| Se puede por tandas | **Escalonado** (stepped-wedge) | Requiere ajuste por tendencia temporal, y no está libre de debate metodológico (§12.4) |
+| Es todo o nada | **Serie temporal interrumpida** | Necesita **varios puntos de medición antes y después**, no dos fotos |
+
+⭐ **Y la debilidad clásica de la serie temporal interrumpida ya está resuelta por el alcance que
+elegimos.** Su problema es que algo más pudo cambiar en el mismo periodo (campaña, estacionalidad).
+La solución estándar es agregar una serie de comparación — y **aquí ya la tenemos: el Release 1 se
+acota a Vida, así que Salud y Vehicular siguen con la base vieja.** Funcionan como serie de control
+natural, sin montar nada. Si Vida mejora y los otros ramos no, el efecto es de la intervención. Es
+la variante **comparativa** del diseño, que es la que la literatura recomienda, y **no cuesta
+esfuerzo adicional**.
+
+### 16.3 Dos condiciones que se arrastran de §12 y no son negociables
+
+- **Estratificar por antigüedad desde el diseño** — el efecto se concentra en novatos (F-476); sin
+  el corte, un efecto real puede leerse como nulo.
+- **La conversión no es desenlace primario** — el ciclo de venta de Vida excede la ventana.
 
 ---
 
