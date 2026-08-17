@@ -47,3 +47,6 @@
 | F-97 | 🟢 A | 2026-08-16 | Intuición 28 — un modelo que fuerza "una persona = un bucket" por eje subcompensa sistemáticamente a quien combina rasgos; el arreglo es de arquitectura, no de calibración |
 | F-143 | 🟢 A | 2026-08-16 | Intuición 29 — que la divulgación suba en pasos sucesivos no prueba que la confianza subió; puede ser foot-in-the-door operando solo sobre la conducta |
 | F-432 | 🟢 A | 2026-08-16 | Intuición 30 — la tasa base de fracaso de producto nuevo es alta y sistemática, predecible por categoría de alta rotación y fuerza de marca matriz |
+| F-119 | 🟢 A | 2026-08-17 | Intuición 31 — un metaanálisis con efecto promedio cero no cierra el debate; verificar si hay una réplica rival que lo reencuadre por moderadores |
+| F-180 | 🟢 A | 2026-08-17 | Intuición 32 — la comisión de un intermediario puede financiar mejor selección de riesgo y más competencia de precio, no solo distribución/confianza |
+| F-198 | 🟢 A | 2026-08-17 | Intuición 33 — utilidad que sube mientras el volumen propio cae es señal de mezcla de producto, no de demanda sana; verificar el mecanismo antes de citarla |

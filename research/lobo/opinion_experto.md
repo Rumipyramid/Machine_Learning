@@ -1937,6 +1937,90 @@ priorización — no solo después, como excusa.
   producto que haga el Lobo, incluida la ruta de producto sísmico de tesis 4 y cualquier
   extensión futura de `lapuerta` hacia microseguro/propensión.
 
+### 31. Un metaanálisis con efecto promedio cercano a cero no cierra el debate — verificar si existe una réplica rival que reencuadre el mismo corpus por moderadores antes de citar "no hay efecto" como veredicto final
+Scheibehenne, Greifeneder & Todd (2010, F-119 — ya sostiene tesis 12, nunca leído a fondo)
+agregan 50 estudios de choice overload y encuentran efecto promedio virtualmente cero — la base
+de la tesis 12 ("menos opciones convierte más es folklore de UX"). Lo que el resumen de una
+línea no traía: existe una réplica activa y no zanjada del mismo debate. Chernev, Böckenholt &
+Goodman (*Journal of Consumer Psychology*, 2015) reanalizan un corpus solapado (99
+observaciones, 7.202 participantes) y encuentran que el choice overload **sí** aparece de forma
+confiable bajo cuatro condiciones específicas — complejidad del conjunto de opciones, dificultad
+de la tarea de decisión, incertidumbre de preferencia del propio decisor, y si la meta es elegir
+vs. explorar — y Scheibehenne publicó una réplica formal a esa crítica (el intercambio sigue
+activo en la literatura, no hay veredicto único aceptado). **No cambia la confianza de tesis 12**
+(el efecto promedio cero sigue siendo el mejor resumen del campo agregado), pero sí acota su
+alcance: el catálogo de seguros cae justo en las cuatro condiciones donde el efecto reaparece —
+alta complejidad de producto (coaseguro/exclusiones, tesis 2), alta dificultad de tarea para el
+segmento de baja educación financiera, e incertidumbre de preferencia genuina sobre cuánto riesgo
+cubrir. Heurística transferible: "efecto promedio cero" en un metaanálisis nunca es el final de
+la pregunta — preguntar primero si el propio caso de uso cae en el subconjunto de condiciones
+donde una réplica rival encontró que el efecto sí existe, antes de usar el metaanálisis original
+como licencia para ignorar el riesgo por completo.
+- **Fuente:** F-119 (🟢A, Scheibehenne, Greifeneder & Todd 2010, *Journal of Consumer Research*)
+- **Leído a fondo:** 2026-08-17 (academic.oup.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida — ResearchGate, Academia.edu y la réplica publicada de
+  Scheibehenne a Chernev et al. confirman el debate activo, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 12 (sigue Alta en el efecto
+  promedio) — acota su alcance a un subconjunto de condiciones donde el catálogo de seguros
+  probablemente cae, sin contradecir la recomendación ya vigente de estructurar la comparación
+  en vez de solo podar el catálogo.
+
+### 32. La comisión de un intermediario no es fricción pura — puede financiar una función de mercado (mejor selección de riesgo, más competencia de precio) que un canal directo tendría que replicar de otra forma para no perder esa ventaja
+Cummins & Doherty (2006, F-180 — marco teórico central de tesis 16, citado solo por su hallazgo
+de "market maker", nunca leído a fondo) dan dos mecanismos concretos que el resumen de una línea
+no traía. Primero, evidencia empírica de que tanto la comisión base como la contingente **se
+trasladan al asegurado en la prima** — la intermediación no es gratis para el cliente, tiene un
+costo real y medible. Segundo, y más importante para el negocio: la comisión contingente (basada
+en rentabilidad/persistencia del negocio colocado) **alinea el incentivo del intermediario con
+el del asegurador**, lo que le da al asegurador más confianza en la calidad de la selección de
+riesgo que trae el bróker — y esa confianza rompe la "maldición del ganador" (winner's curse) y
+empuja a los aseguradores a **competir más agresivamente en precio** por ese negocio. Es decir:
+la comisión no compra solo distribución/confianza del cliente (el ángulo que ya cubre tesis 16)
+— compra una mejor competencia de precio del lado de la oferta, un mecanismo que un canal 100%
+digital sin intermediario tendría que replicar con otra herramienta (scoring de riesgo más
+verificable, por ejemplo) para no perder esa ventaja competitiva de precio. Heurística
+transferible: antes de asumir que quitar al intermediario baja el costo neto para el cliente,
+descomponer la comisión en lo que compra — si una parte financia una función de mercado real
+(mejor selección de riesgo, más competencia entre aseguradores), removerla sin sustituto puede
+subir el precio final aunque desaparezca la línea de comisión visible.
+- **Fuente:** F-180 (🟢A, Cummins, J.D. & Doherty, N.A. 2006, *Journal of Risk and Insurance*)
+- **Leído a fondo:** 2026-08-17 (onlinelibrary.wiley.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida — JSTOR, IDEAS/RePEc y el resumen del propio paper vía
+  Wharton confirman el mecanismo de comisión contingente y winner's curse, no solo el resumen ya
+  citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 16 (sigue Alta) — agrega un
+  segundo mecanismo (competencia de precio vía alineación de incentivos) al ya citado
+  (reducción de asimetría de información), ambos del mismo paper fundacional.
+
+### 33. Que la utilidad de un segmento crezca mientras su propio volumen se contrae no es evidencia de demanda sana — verificar si el crecimiento viene de mezcla de producto antes de citarlo como prueba de que el modelo de negocio funciona
+El filing SEC de UnitedHealth Q2 2026 (F-198 — evidencia primaria central de tesis 17, citado
+solo por su cifra agregada de utilidad, nunca leído a fondo) tiene un matiz que el resumen de una
+línea no traía: los "adjusted scripts" de Optum Rx **cayeron** de 414 a 387 millones interanual
+(-6,5%), explícitamente por la **contracción de membresía dentro de UnitedHealthcare** — su
+propia aseguradora hermana — y de otros clientes. Y sin embargo la utilidad operativa **subió**
+de USD 1.400M a USD 1.500M en el mismo trimestre, atribuida por la propia empresa a "adopción de
+genéricos especializados y mejoras operativas continuas", no a más volumen. Lectura de negocio
+directa para tesis 17: el número que sostiene la tesis (Optum Rx como motor de utilidad real) es
+genuino y de fuente primaria, pero su resiliencia no depende de que el libro de asegurados crezca
+— depende de mezcla de producto hacia farmacia especializada, un mecanismo más frágil frente a
+shocks regulatorios de precio de especialidad (rebates, negociación de precios, presión política
+sobre PBMs) que "más miembros asegurados = más utilidad de farmacia". Heurística transferible:
+cuando una cifra de utilidad de un segmento se cita como prueba de que "el modelo funciona",
+verificar primero si el volumen que la sostiene creció o se contrajo — utilidad que sube sobre
+volumen que cae es una señal de mezcla de producto o poder de precio, no de demanda sana, y ese
+tipo de crecimiento suele ser más frágil a shocks regulatorios específicos que el crecimiento
+impulsado por más clientes.
+- **Fuente:** F-198 (🟢A, UnitedHealth Group Inc. 2026, SEC Form 8-K, Q2 2026)
+- **Leído a fondo:** 2026-08-17 (sec.gov y businesswire.com bloqueados por el proxy del entorno;
+  reconstruido vía búsqueda dirigida — TradingView, StockTitan y 24/7 Wall St. confirman la cifra
+  de scripts ajustados y su atribución explícita a mezcla de producto, no solo la cifra agregada
+  ya citada)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 17 (sigue Alta en el patrón
+  de EE.UU.) — matiza el mecanismo detrás del número: el motor de utilidad de farmacia es más
+  resiliente a la pérdida de miembros de lo que sugiere el resumen agregado, pero ese mismo
+  mecanismo (mezcla hacia especialidad) es una exposición distinta y no cubierta por la tesis tal
+  como está escrita hoy.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2700,3 +2784,41 @@ priorización — no solo después, como excusa.
   existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
   Bitácora con 28 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin
   podar todavía; la corrida del 2026-08-20 sigue siendo la programada para evaluar podar/resumir.
+- **2026-08-17** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward 8a90dc2→3acec5d, el commit de la corrida de ayer, 2026-08-16) y verifiqué
+  `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
+  exacto que procesó la corrida de ayer — **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuarto día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`,
+  cada ~3 días, no vence hoy). Sí corrió la rutina diaria de intuición (duodécima corrida desde el
+  2026-08-06): de 136 fuentes 🟢A confirmadas por conteo propio en el ledger, 30 ya tenían lectura
+  profunda del Lobo — de las 106 restantes elegí 3 deliberadamente ancladas a tesis existentes que
+  solo tenían el resumen de una línea nunca leído a fondo, en vez de al azar puro: F-119
+  (Scheibehenne, Greifeneder & Todd 2010, meta-análisis fundacional de choice overload que
+  sostiene tesis 12), F-180 (Cummins & Doherty 2006, marco causal de "market maker" que sostiene
+  tesis 16) y F-198 (filing SEC de UnitedHealth Q2 2026, evidencia primaria de tesis 17). Las tres
+  bloqueadas por el proxy en su URL directa (academic.oup.com, onlinelibrary.wiley.com, sec.gov,
+  businesswire.com); reconstruidas vía búsqueda dirigida contra agregadores (ResearchGate,
+  Academia.edu, JSTOR, IDEAS/RePEc, TradingView, StockTitan, 24/7 Wall St.) que confirman detalle
+  nuevo, no solo el resumen ya citado. Sumé las entradas 31, 32 y 33 de Intuición acumulada: (31)
+  un metaanálisis con efecto promedio cero (F-119, base de tesis 12) tiene una réplica activa y no
+  zanjada (Chernev, Böckenholt & Goodman 2015) que encuentra el efecto sí presente bajo cuatro
+  condiciones — complejidad, dificultad de tarea, incertidumbre de preferencia, meta de
+  exploración vs. elección — que el catálogo de seguros probablemente cumple; no baja la confianza
+  de tesis 12 pero acota su alcance; (32) la comisión de un intermediario (F-180, marco de tesis
+  16) no es solo el precio de la distribución/confianza — la comisión contingente alinea
+  incentivos y rompe el "winner's curse", empujando a los aseguradores a competir más agresivo en
+  precio por ese negocio; quitar al intermediario sin sustituto de ese mecanismo puede subir el
+  precio final aunque desaparezca la comisión visible; (33) la utilidad de Optum Rx (F-198,
+  evidencia central de tesis 17) subió en el mismo trimestre en que su propio volumen de scripts
+  cayó 6,5% por contracción de membresía en su aseguradora hermana — el crecimiento vino de mezcla
+  hacia farmacia especializada, no de más asegurados, una exposición a shock regulatorio de precio
+  de especialidad que la tesis tal como está escrita no cubre. Ninguna tesis de negocio cambió de
+  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
+  evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance de
+  tesis 12, 16 y 17 sin tocar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md`
+  con las tres fuentes leídas hoy. Bitácora con 29 días de historial (2026-07-20 a hoy), dentro de
+  la ventana de ~30 días — sin podar todavía; la corrida del 2026-08-20 sigue siendo la programada
+  para evaluar podar/resumir.
