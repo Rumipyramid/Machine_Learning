@@ -1,6 +1,37 @@
 # Release 1 · La base de conocimiento de AIDA (Vida)
 
-**Propuesta de alcance ejecutable.** v1.0 · 2026-08-14
+**Propuesta de alcance ejecutable.** v2.0 · 2026-08-14
+
+> ⭐ **v2.0 — reestructurado en tres etapas** (definición de Alejo, 2026-08-14). El Release 1 no es
+> solo la intervención: **empieza midiendo y termina comprobando.**
+>
+> | | Etapa | Qué incluye |
+> |---|---|---|
+> | **1** | **Diagnóstico de la herramienta** | Encuestas y shadowing con asesores → banco de preguntas reales → evaluación asistida con LLM (usabilidad, error, exactitud) → **medición de tiempo**, que la v1.0 no tenía |
+> | **2** | **Intervención en AIDA** | Los entregables R1.0 a R1.3 de abajo. Objetivo declarado: **menos errores y consulta más rápida** |
+> | **3** | **Testeo** | Prueba 1 contra línea base (sin asesores, es la compuerta) → Prueba 2 con asesores: A/B por equipos, escalonado, o **serie temporal interrumpida** según lo que permita la plataforma |
+>
+> **Dos cosas que la reestructuración agrega:**
+> - **La velocidad como segundo objetivo.** No requiere trabajo aparte —sale del mismo movimiento:
+>   menos documentos compitiendo y archivos más cortos hacen que el agente encuentre antes— pero
+>   **hay que cronometrarla en la Etapa 1**, o después no se puede demostrar.
+> - **El nombre correcto del "full con puntos de corte": serie temporal interrumpida.** Es el diseño
+>   cuasi-experimental más fuerte disponible cuando no se puede aleatorizar. Requiere **varios puntos
+>   de medición antes y después**, no dos fotos. ⭐ Y su debilidad —que algo más pudo cambiar en el
+>   mismo periodo— **se resuelve con algo que ya tenemos**: como el Release 1 se acota a Vida, Salud
+>   y Vehicular siguen con la base vieja y funcionan como **serie de comparación natural**. Si Vida
+>   mejora y los otros ramos no, el efecto es de la intervención. Es la variante *comparativa* del
+>   diseño, y no cuesta montar nada.
+>
+> ⚠️ **Pendiente de confirmar — "el modelo SHUNK".** Alejo lo nombra como el marco de la evaluación
+> con LLM (usabilidad, error). **No se pudo identificar** y no se aplica por aproximación — misma
+> regla que evitó el error con "Shang"/Zheng. Candidatos encontrados y descartados por no encajar:
+> **Shackel (1991)**, definición operacional canónica de usabilidad (efectividad, aprendibilidad,
+> flexibilidad, actitud) — no centra el error; y **BUS-11 / BUS-15 / CUQ**, escalas de usabilidad de
+> chatbots, de las cuales **CUQ sí tiene un factor específico de manejo de errores** y ya está en el
+> códice como F-149. **La Etapa 1 se construye mientras tanto sobre los instrumentos ya verificados
+> del proyecto**, y el marco de Shunk se incorpora en cuanto se confirme cuál es.
+
 Integra el research *"La biblioteca de AIDA"* (Felipe, Behavioral Design,
 `research/_fuentes_internas/La_biblioteca_de_AIDA_Felipe.docx`) con el diagnóstico del proyecto
 (`_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md` v1.8), la evidencia de arquitectura
