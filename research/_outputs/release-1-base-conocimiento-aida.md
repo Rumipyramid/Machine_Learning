@@ -1,6 +1,15 @@
 # Release 1 · La base de conocimiento de AIDA (Vida)
 
-**Propuesta de alcance ejecutable.** v2.0 · 2026-08-14
+**Propuesta de alcance ejecutable.** v2.1 · 2026-08-18
+
+> **v2.1 (2026-08-18) — trazabilidad y horizonte.** Cuatro cambios pedidos por Alejo, aplicados
+> aquí y en la versión presentable (artifact `0bb009a6`): (1) **citación (Autor, año) en línea** de
+> toda afirmación que venga de fuente primaria o secundaria; (2) **§9 Insumos** — lista completa de
+> lo que sostiene el documento, separando internos de externos y declarando lo que quedó fuera;
+> (3) **§5.1 Las fases siguientes** — incluida la **Fase 4 de prototipado**, que responde la
+> pregunta que el Release 1 no responde (*qué más debería hacer AIDA*) y le da un rol al prototipo
+> Claude en vez de dejarlo compitiendo con AIDA; (4) **§5 reformulado**: cada ítem diferido ahora
+> declara **por qué no ahora y adónde va**, en vez de ser una lista de descartes sin destino.
 
 > ⭐ **v2.0 — reestructurado en tres etapas** (definición de Alejo, 2026-08-14). El Release 1 no es
 > solo la intervención: **empieza midiendo y termina comprobando.**
@@ -231,17 +240,82 @@ archivo.
 
 ---
 
-## 5. Qué va a fases siguientes
+## 5. Qué no entra ahora, y adónde va
 
-| Diferido | Por qué no en el Release 1 |
+> ⭐ **v2.1 — reformulado (2026-08-18).** La versión anterior era una lista de descartes sin destino:
+> mezclaba "se hace después" con "es otro problema" con "lo hace otro equipo", y quien la leía no
+> podía distinguirlos. **Cada ítem diferido ahora declara dos cosas: por qué no ahora, y dónde entra.**
+> Nada de esto se descarta — se ordena.
+
+| Qué | Por qué no ahora | Dónde entra |
+|---|---|---|
+| Describir las láminas para que el agente las lea | Recupera los diagramas sin rehacerlos, pero R1.3 cubre lo más consultado a menor costo | **Fase 3** (motor) |
+| Reordenador + cita forzada con fragmento textual | Es la técnica con mejor costo-beneficio, pero **no es contenido: es cambio técnico**, y depende del equipo de plataforma | **Fase 3** (motor) |
+| Partir y etiquetar el resto del repositorio | El Release 1 se acota a Vida a propósito, para tener un control natural en los otros ramos | **Fase 2** (extensión) |
+| Recuperación visual de página | La opción más cara, y **rinde menos en español que en inglés** | **Fase 3**, y solo si la Fase 1 muestra que la falla es visual |
+| **El ruteo entre ramos** | Es diseño del coordinador, no contenido — **capa D** del diagnóstico. Felipe también lo deja fuera de alcance | **Fase 5** (arquitectura de agentes) |
+| **El agente coach de ventas** | Es el único que necesita el contexto de otro agente, y ese patrón es el más frágil de la literatura | **Fase 5** (arquitectura de agentes) |
+| **El front: qué mostrarle al asesor** | No es que sea menor — es que es **rediseño de producto**, no limpieza de base. Confundirlos hunde los dos | Pieza mínima **ya en el Release 1** (ver §6); el rediseño completo, **Fase 4** |
+| **Capacidades nuevas de la herramienta** | Todavía no sabemos cuáles valen la pena; construirlas antes de saberlo es el error caro | **Fase 4** (prototipado) |
+
+---
+
+## 5.1 Las fases siguientes
+
+El Release 1 arregla el cuerpo de conocimiento de Vida. Lo que sigue no es una lista de deseos: cada
+fase **depende de que la anterior haya dejado una medición**.
+
+### Fase 2 · Extender a los demás ramos
+
+Salud y Vehicular con el método ya probado en Vida. **Requisito de entrada:** que la Etapa 3 del
+Release 1 haya mostrado mejora medida en Vida. Si no la mostró, extender el método es propagar algo
+que no sabemos que funciona.
+
+⚠️ **Costo de la Fase 2:** al extender, **se pierde la serie de comparación natural**. Por eso la
+medición de Vida tiene que quedar cerrada antes, no en paralelo.
+
+### Fase 3 · Mejorar el motor
+
+Las técnicas de recuperación que el Release 1 deja fuera por ser cambio técnico: reordenador, cita
+forzada con fragmento textual, descripción de láminas. **Requisito de entrada:** el diagnóstico de
+la Etapa 1 tiene que haber mostrado que la falla que queda es de recuperación y no de contenido —
+son fallas distintas y se arreglan distinto (capas A vs. C de la taxonomía).
+
+### Fase 4 · Prototipar capacidades antes de construirlas
+
+⭐ **Esta fase existe porque hay una pregunta que el Release 1 no responde: qué más debería hacer
+AIDA.** El Release 1 mejora lo que ya hace. No dice si el asesor necesita otra cosa.
+
+La forma barata de averiguarlo es **prototipar la capacidad y ponerla frente a asesores antes de
+pedirle a nadie que la construya** — una capacidad prototipada y rechazada cuesta días; la misma
+capacidad construida y rechazada cuesta un trimestre.
+
+**Qué prototipar, y por qué esas tres:**
+
+| Capacidad | Por qué es candidata |
 |---|---|
-| Descripción multimodal de láminas | Recupera diagramas sin rehacerlos, pero R1.3 cubre lo más consultado a menor costo |
-| Reordenador + cita forzada con fragmento textual | Mejor relación costo-beneficio de las técnicas, pero **es cambio técnico**: necesita al equipo de la plataforma |
-| Partir y etiquetar el resto del repositorio | El Release 1 se acota a Vida; el resto se hace con el método ya probado |
-| Recuperación visual de página | La opción más cara, y **rinde menos en español que en inglés** |
-| **El ruteo entre ramos** | Es diseño del coordinador, no contenido. Felipe lo identifica como fuera de alcance y coincide con la **capa D** del diagnóstico |
-| **El agente coach de ventas** | Es el único que necesita contexto de otro agente, y la literatura marca ese patrón como el más frágil. Revisar aparte |
-| **El front: qué mostrarle al asesor** | Ver §6 — es el riesgo más subestimado de todo esto |
+| **Apoyo en objeciones durante el cierre** | Es el momento de mayor carga y donde el asesor hoy no tiene a quién preguntar |
+| **Casuística de los mejores asesores** | El conocimiento que gana ventas hoy vive en conversaciones, no en documentos — y por eso ninguna base lo tiene |
+| **Registro asistido** | El asesor registra en Salesforce lo que ya le contó a AIDA. Es la duplicación más visible de los seis frentes |
+
+⭐ **Y hay un recurso que ya existe y no está siendo usado para esto: el prototipo construido con
+Claude del Plan Piloto.** Hoy se lee como una herramienta que compite con AIDA. **No debería
+competir: debería ser el banco de prototipado** — el lugar donde una capacidad se prueba con
+asesores reales antes de decidir si se lleva a AIDA. Eso convierte una ambigüedad del proyecto
+(¿cuál de las dos herramientas es la buena?) en una división de trabajo clara: **AIDA produce, el
+prototipo explora.**
+
+### Fase 5 · La arquitectura de agentes
+
+El ruteo entre ramos y la relación entre los tres agentes desplegados (AIDA, suscripción, Sales
+Coach). **Requisito de entrada bloqueante:** confirmar sobre qué framework corre AIDA realmente
+(P9 — `transfer_to_agent` apunta a Google ADK, no a Copilot Studio). Sin eso, cualquier decisión de
+arquitectura se toma sobre un supuesto no verificado.
+
+### En paralelo · Que la mejora llegue a quien ya se fue
+
+No espera a ninguna fase, porque **el asesor que abandonó AIDA no va a volver a comprobar si
+mejoró** (ver §6). Es la pieza mínima de reintroducción, y corre junto con la Etapa 2.
 
 ---
 
@@ -309,3 +383,54 @@ EMNLP, NeurIPS) y no tienen este problema.
 
 Esto no debilita la propuesta: **el orden de prioridades no cambia**, porque se sostiene igual en
 F-490, F-491 y F-492, todas verificables.
+
+---
+
+## 9. Insumos — qué sostiene este documento
+
+> Añadido en v2.1 (2026-08-18) a pedido de Alejo, junto con la citación **(Autor, año)** en línea de
+> toda afirmación que venga de una fuente. **Criterio:** si una afirmación no tiene fuente rastreable,
+> o se marca como criterio propio del proyecto, o no entra.
+
+### 9.1 Primarios — internos de RIMAC
+
+| # | Insumo | Nota |
+|---|---|---|
+| 1 | **Playbook del Asesor** (RIMAC, versión 2026-08-14) — modelo de venta Vida, 5 bloques | Fuente canónica declarada. ⚠️ Contiene **8 pendientes** y las discrepancias de catálogo evaluadas en el diagnóstico §14 |
+| 2 | **Matriz de productos Vida RIMAC**, derivada de fichas comerciales vigentes desde 2025-01-01 | Patrón oro para calificar exactitud (Bloque B del protocolo) |
+| 3 | **Encuesta a 19 asesores** (CoE, 2026) | Uso de herramientas, satisfacción, temas más pedidos, uso compensatorio de IA externa |
+| 4 | **Taller de Manejo de Objeciones** (36 invitados / 30 asistentes, 2026) | Drivers de valor y mejoras pedidas |
+| 5 | **Auto-interrogación de AIDA** (2026-08-14) | ⚠️ **Autorreporte**: hipótesis a triangular con IT, no documentación de arquitectura |
+| 6 | **Plan Piloto · Modelo de Experiencia de Venta Vida** (CoE Diseño Estratégico, julio 2026) | ⚠️ Estado histórico — el plan cambió; sus indicadores miden el **prototipo Claude**, no AIDA |
+| 7 | **Mapa sistémico AS IS y diagnóstico Dx1-Dx3** (CoE Experience Design, 2026) | Origen del mapa de 6 frentes; reancla el diagnóstico a **Dx2** |
+| 8 | **«La biblioteca de AIDA»** — research de Behavioral Design (Felipe, agosto 2026) | Aporta la cuantificación de formatos y la comparación reentrenar-vs-recuperar. ⚠️ Su cifra ancla (79,5%→24,2%) tiene problema de cita abierto (F-489) y **no se usa** |
+
+### 9.2 Secundarios — evidencia externa, por rigor
+
+| # | Fuente | ID |
+|---|---|---|
+| 1 | **Brynjolfsson, Li & Raymond (2025)**, «Generative AI at Work», *QJE* 140(2) — 5.179 agentes, despliegue escalonado | F-464 |
+| 2 | **Franke & Park (2006)**, meta-análisis de venta adaptativa, *JMR* 43(4) — 155 muestras, >31.000 vendedores | F-477 |
+| 3 | **Dietvorst, Simmons & Massey (2015)**, «Algorithm Aversion», *JEP: General* 144(1), 114-126 | F-494 |
+| 4 | **Ovadia et al. (2024)** · **Gekhman et al. (2024)**, *EMNLP* — fine-tuning vs. recuperación | F-490, F-491 |
+| 5 | **Zheng et al. (2023)**, MT-Bench, *NeurIPS* · **Liu et al. (2023)**, G-Eval, *EMNLP* | F-159, F-158 |
+| 6 | **Magesh et al. (2025)**, *J. Empirical Legal Studies* (Stanford RegLab) · **Ding et al. (2025)**, *AAAI* | F-493 |
+| 7 | **Flanagan (1954)**, «The Critical Incident Technique», *Psychological Bulletin* 51(4) | F-485 |
+| 8 | **King & He (2006)**, meta-análisis de TAM, *Information & Management* 44(1) — 88 estudios. ⚠️ **Los coeficientes específicos (r=,59 / r=,43 / r=,49) provienen del research interno; verifiqué el paper y su muestra, no esos coeficientes** | F-492 |
+| 9 | **Lopez Bernal, Cummins & Gasparrini (2018)**, *IJE* 47(6) · **Hemming & Taljaard (2020)**, *IJE* | F-487, F-486 |
+| 10 | **OHR-Bench** (ICCV 2025) · **REAL-MM-RAG** (IBM, ACL 2025) · **ColPali** (ICLR 2025) · *Applied Sciences* (2026) · **«The Power of Noise»** (SIGIR 2024) + reproducción (SIGIR 2026) | F-469 a F-475 |
+| 11 | **Microsoft Learn** (2026) — SharePoint para Copilot, índice semántico, límites de fuentes, orquestación. ⚠️ **Documentación de fabricante**; reverificar antes de decidir arquitectura | F-479, F-480 |
+| 12 | **METR (2025)** — impacto de IA en desarrolladores experimentados. ⚠️ Preprint | F-488 |
+| 13 | **«Judging the Judges»** (2026) · **T2-RAGBench** (2026) · **«When More Documents Hurt RAG»** (2026) · **Microsoft ISE** (2024). ⚠️ Preprints y documentación técnica: **usar la dirección, no la magnitud** | F-482, F-476 |
+
+### 9.3 Lo que quedó deliberadamente fuera
+
+Cuatro familias de cifras que circulan en este mercado **no entraron** por no tener fuente primaria
+rastreable — y quedan registradas como trampas para que no reaparezcan en un deck:
+
+| Cifra | Por qué no entra | ID |
+|---|---|---|
+| Adopción de metodologías de venta | Las cifras disponibles vienen de vendors de *sales enablement* | F-481 |
+| Aceleración por configuradores de producto | 12 de 12 fuentes son del proveedor que vende el configurador | F-483 |
+| Retorno de gestión de datos maestros (MDM) | El mecanismo es real, pero la cifra es de vendor y la tasa de fracaso de implementación es alta | F-484 |
+| «79,5% → 24,2%» por documentos contradictorios | El arXiv citado resuelve a otro paper, con otro mecanismo | F-489 |

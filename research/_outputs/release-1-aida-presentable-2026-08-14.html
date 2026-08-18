@@ -38,13 +38,14 @@
   h3{font-size:1.1rem; font-weight:700; margin:2rem 0 .5rem; letter-spacing:-.005em}
   p{margin:0 0 1.1rem}
   a{color:var(--accent)}
+  cite{font-style:normal; color:var(--muted); font-size:.92em; white-space:nowrap}
   .lede{font-size:1.2rem; line-height:1.55; border-left:3px solid var(--accent); padding-left:1.2rem; margin:0 0 1.5rem}
 
-  /* etapas */
   .stage{padding:2.6rem 0 .5rem; border-top:1px solid var(--rule)}
   .stage:first-of-type{border-top:0; padding-top:1rem}
   .shead{display:flex; align-items:baseline; gap:1.1rem; margin-bottom:.4rem; flex-wrap:wrap}
   .snum{font-family:var(--mono); font-size:.72rem; font-weight:700; letter-spacing:.1em; color:var(--paper); background:var(--accent); padding:.3rem .6rem; border-radius:3px; white-space:nowrap}
+  .snum.later{background:var(--muted)}
   .shead h3{margin:0; font-size:1.55rem; font-weight:400; letter-spacing:-.012em}
   .sgoal{font-family:var(--mono); font-size:.75rem; color:var(--muted); margin:0 0 1.1rem}
   .sgoal b{color:var(--accent); font-weight:700}
@@ -63,16 +64,27 @@
   .note.alert .lab{color:var(--signal)}
 
   .tw{overflow-x:auto; margin:1.3rem 0; border:1px solid var(--rule); border-radius:4px; background:var(--card)}
-  table{border-collapse:collapse; width:100%; min-width:540px; font-size:.95rem}
+  table{border-collapse:collapse; width:100%; min-width:560px; font-size:.94rem}
   th,td{padding:.75rem .9rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--rule)}
   tr:last-child td{border-bottom:0}
   th{font-family:var(--mono); font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:600; background:var(--rail)}
-  td.big{font-family:var(--mono); font-weight:700; color:var(--accent); white-space:nowrap; font-size:.82rem}
+  td.big{font-family:var(--mono); font-weight:700; color:var(--accent); white-space:nowrap; font-size:.8rem}
+  td.dest{font-family:var(--mono); font-size:.74rem; font-weight:700; white-space:nowrap}
 
   .gate{font-family:var(--mono); font-size:.76rem; color:var(--signal); font-weight:700; display:block; margin-top:1rem; padding-left:.8rem; border-left:3px solid var(--signal)}
 
   ul.plain{padding-left:1.2rem; margin:.7rem 0 1.2rem}
   ul.plain li{margin-bottom:.55rem}
+
+  /* fuentes */
+  .srcgroup{margin:1.6rem 0}
+  .srcgroup h3{margin:0 0 .3rem}
+  .srcgroup > p.hint{font-size:.94rem; color:var(--muted); margin:0 0 .8rem}
+  ol.src{padding-left:1.4rem; margin:0; font-size:.93rem; line-height:1.6}
+  ol.src li{margin-bottom:.6rem}
+  ol.src b{font-weight:700}
+  ol.src .tag{font-family:var(--mono); font-size:.66rem; letter-spacing:.06em; color:var(--muted)}
+  ol.src .warn{color:var(--signal); font-weight:700}
 
   footer{padding:3rem 0 0; font-family:var(--mono); font-size:.74rem; color:var(--muted); line-height:1.75}
 
@@ -84,16 +96,15 @@
 <header class="mast">
   <div class="kicker">RIMAC · Vida Individual · Agosto 2026</div>
   <h1>Release 1 de <em>AIDA</em></h1>
-  <p class="standfirst">Tres etapas: medir cómo está, arreglar la base de conocimiento, y comprobar que mejoró.</p>
-  <div class="meta"><span>CoE Diseño Estratégico</span><span>Behavioral Design</span></div>
+  <p class="standfirst">Tres etapas: medir cómo está, arreglar la base de conocimiento, y comprobar que mejoró. Con las fases que vienen después.</p>
+  <div class="meta"><span>v3 · CoE Diseño Estratégico</span><span>Behavioral Design</span></div>
 </header>
 
 <section>
   <h2>La promesa</h2>
   <div class="col">
     <p class="lede">Que cuando un asesor de Vida le pregunte algo a AIDA, la respuesta llegue rápido, sea correcta, esté vigente y se pueda verificar — o que AIDA diga que no lo sabe.</p>
-    <p>No prometemos “que AIDA funcione bien”. Prometemos algo acotado y comprobable: <strong>un ramo, una base ordenada, y una medición del antes y el después.</strong></p>
-    <p>El release no es solo la intervención. <strong>Empieza midiendo y termina comprobando</strong>, porque sin las dos puntas no hay forma de decir si sirvió — y esa es justamente la conversación que va a venir después.</p>
+    <p>No prometemos “que AIDA funcione bien”. Prometemos algo acotado y comprobable: <strong>un ramo, una base ordenada, y una medición del antes y el después.</strong> El release empieza midiendo y termina comprobando, porque sin las dos puntas no hay forma de decir si sirvió.</p>
   </div>
 </section>
 
@@ -101,29 +112,50 @@
   <h2>Por qué arreglar la base y no el modelo</h2>
   <div class="col">
     <p>AIDA no es un experto que memorizó el portafolio. Funciona más como <strong>un bibliotecario muy rápido</strong>: cada vez que le preguntan, sale a buscar en el repositorio y responde con lo que encuentra ahí. Si la biblioteca está desordenada, el mejor bibliotecario del mundo trae el libro equivocado.</p>
-    <p>Y hay evidencia comparativa: sobre información que un modelo no traía aprendida, <strong>volver a entrenarlo casi no mejora nada, mientras que darle el documento correcto al momento de responder es lo que mejor funciona — y lo más barato.</strong> Cuando se hicieron las dos cosas juntas, el reentrenamiento restó en vez de sumar.</p>
-    <p>Hay además un detalle que lo hace más fácil de lo que parece: <strong>AIDA ya tiene la instrucción correcta</strong> — su lógica le prohíbe responder de memoria sobre temas técnicos y la obliga a consultar al especialista.</p>
+    <p>Esa es la pregunta de presupuesto de fondo — ¿arreglar la base o volver a entrenar el modelo? — y tiene respuesta medida. Sobre conocimiento que el modelo no traía aprendido, reentrenarlo lo llevó de <strong>0,481 a 0,504</strong>, es decir prácticamente nada, y en otro de los modelos probados <strong>empeoró</strong>. Darle el documento al momento de responder lo llevó a <strong>0,875</strong>, el mejor resultado y el más barato. Hacer las dos cosas juntas dio 0,830: <strong>añadir el reentrenamiento restó</strong> <cite>(Ovadia et al., 2024)</cite>. Y hay un costo adicional: entrenar un modelo con hechos nuevos <strong>aumenta linealmente su tendencia a inventar</strong> <cite>(Gekhman et al., 2024)</cite>.</p>
+    <p>Hay además un detalle que lo hace más fácil de lo que parece: <strong>AIDA ya tiene la instrucción correcta</strong> — su lógica le prohíbe responder de memoria sobre temas técnicos y la obliga a consultar al especialista <cite>(auto-interrogación, 2026)</cite>.</p>
     <p class="lede">El problema no es la regla. Es que hoy no se puede cumplir: cuando el especialista sale a buscar, encuentra documentos que se contradicen, archivos vacíos o láminas que no puede leer. En ese vacío, el modelo vuelve a responder de memoria.</p>
   </div>
 </section>
 
 <section>
-  <h2>Las tres etapas</h2>
+  <h2>Qué tiene hoy la biblioteca</h2>
+  <div class="col"><p>Cinco problemas. Los cuatro primeros vienen del research de mercado <cite>(Behavioral Design, 2026)</cite>; el quinto apareció al comparar nuestros propios documentos.</p></div>
+  <div class="tw"><table>
+    <thead><tr><th>Problema</th><th>Qué le hace a AIDA</th></tr></thead>
+    <tbody>
+      <tr><td class="big">Versiones que conviven</td><td>El agente <strong>no tiene forma de saber cuál es la vigente</strong>: las dos le parecen igual de relevantes. Es el problema de mayor impacto medido, y ninguna herramienta del mercado resuelve contradicciones sola — es prevención o nada</td></tr>
+      <tr><td class="big">Presentaciones con diseño</td><td>Un cuadro comparativo llega como una lista de textos sueltos: <strong>la relación entre el plan y su precio desaparece</strong>. En presentaciones se pierde <strong>3 a 6 veces más</strong> que en un documento de texto <cite>(IBM Research, 2025; ColPali, 2025)</cite>. Pasar de extracción plana a conversión estructurada mueve la precisión de <strong>86,2% a 94,1%</strong>, y en preguntas que dependen de tablas la brecha es de <strong>33 puntos</strong> <cite>(Applied Sciences, 2026)</cite></td></tr>
+      <tr><td class="big">Documentos vacíos</td><td>Ocupan uno de los pocos lugares que el agente alcanza a revisar. <strong>Un solo documento distractor baja la precisión 25%</strong>; con dieciocho, cae de 56,4% a 23,5% <cite>(SIGIR, 2024)</cite></td></tr>
+      <tr><td class="big">Documentos largos</td><td>Los modelos priorizan el principio y el final de un archivo <cite>(Microsoft Learn, 2026)</cite>. Un manual de veinte páginas tiene <strong>un centro que el agente casi no ve</strong></td></tr>
+      <tr><td class="big">El catálogo sin cerrar</td><td>Comparando el Playbook contra las fichas vigentes: <strong>un producto figura dos veces con nombres distintos, otro producto vigente no aparece, y uno conserva el nombre de 2022</strong>. Y el detalle técnico —coberturas, exclusiones, carencias— está marcado como pendiente <cite>(Playbook del Asesor, 2026; Matriz de productos, 2025)</cite></td></tr>
+    </tbody>
+  </table></div>
+  <div class="col">
+    <div class="note alert">
+      <span class="lab">Por qué el quinto cambia el orden del trabajo</span>
+      <p>El plan natural es “dejar una sola copia autoritativa de cada tema”. Correcto — pero <strong>eso supone que la copia autoritativa está bien</strong>. Si ordenamos todo alrededor de un catálogo con errores, terminamos con una biblioteca impecable y equivocada. Por eso el Release 1 abre cerrando el catálogo.</p>
+    </div>
+    <p>Y una ventaja que conviene decir en voz alta: <strong>el contenido lo controla el mismo equipo.</strong> En la mayoría de las organizaciones ordenar un repositorio exige negociar con cada área dueña de lo suyo. Aquí no — es lo que permite hacer esto en semanas y no en trimestres <cite>(Behavioral Design, 2026)</cite>.</p>
+  </div>
+</section>
 
-  <!-- ETAPA 1 -->
+<section>
+  <h2>Las tres etapas del Release 1</h2>
+
   <div class="stage">
     <div class="shead"><span class="snum">ETAPA 1</span><h3>Diagnóstico de la herramienta</h3></div>
-    <p class="sgoal"><b>Objetivo:</b> saber exactamente qué falla, con qué frecuencia, y de qué tipo es cada falla — con una línea base que se pueda volver a correr.</p>
+    <p class="sgoal"><b>Objetivo:</b> saber qué falla, con qué frecuencia y de qué tipo es cada falla — con una línea base repetible.</p>
     <div class="col">
       <ul class="steps">
         <li><b>Encuestas y shadowing con asesores</b>
-          <p>Va <strong>primero</strong>, y no es un complemento: es lo que define qué vamos a medir después. Hay seis cosas que solo el asesor puede responder — entre ellas <strong>qué le pregunta a ChatGPT que no le pregunta a AIDA</strong>, y sobre todo <strong>qué dejó de preguntarle</strong>. Ninguna telemetría muestra una pregunta que nunca se hizo.</p>
+          <p>Va <strong>primero</strong>: es lo que define qué medir después. Seis cosas solo las puede responder el asesor — entre ellas qué le pregunta a ChatGPT que no le pregunta a AIDA, y sobre todo <strong>qué dejó de preguntarle</strong>: ninguna telemetría muestra una pregunta que nunca se hizo. Se pregunta por <strong>incidentes concretos, no por opiniones</strong> <cite>(Flanagan, 1954)</cite>, porque las evaluaciones autorreportadas de herramientas de IA se desalinean de la conducta real — en el estudio más citado, los usuarios fueron 19% más lentos con IA mientras estimaban ser 20% más rápidos <cite>(METR, 2025)</cite>.</p>
         </li>
         <li><b>Armar el banco de preguntas reales</b>
-          <p>Las 20 a 30 preguntas que los asesores efectivamente hacen, con su respuesta correcta conocida, más preguntas de control que <strong>AIDA debería rechazar</strong>. Sin esto medimos lo que a nosotros nos parece importante, no lo que rompe la venta.</p>
+          <p>De 20 a 30 preguntas que los asesores efectivamente hacen, con respuesta correcta conocida, más preguntas de control que <strong>AIDA debería rechazar</strong>.</p>
         </li>
         <li><b>Evaluación asistida con un LLM</b>
-          <p>Un modelo audita cada respuesta de AIDA contra la fuente correcta, calificando por separado <strong>exactitud, fidelidad a la fuente, vigencia, trazabilidad, completitud y manejo del error</strong> — qué hace cuando no sabe. Es el método estándar de evaluar un modelo con otro, con las correcciones que la literatura acumuló hasta este año.</p>
+          <p>Un modelo audita cada respuesta contra la fuente correcta, calificando por separado <strong>exactitud, fidelidad, vigencia, trazabilidad, completitud y manejo del error</strong> <cite>(Zheng et al., 2023; Liu et al., 2023)</cite>. ⚠️ La mitigación prioritaria no es la que se suele aplicar: el sesgo dominante de un juez automático <strong>es el de estilo (0,76-0,92), no el de posición (≤0,04)</strong> <cite>(Judging the Judges, 2026)</cite> — hay que instruirlo explícitamente a ignorar formato y fluidez.</p>
         </li>
         <li><b>Medir también el tiempo</b>
           <p>Cuánto tarda el asesor en obtener algo usable y cuántos intentos hace. <strong>Si no se cronometra ahora, después no se puede demostrar que se volvió más rápida.</strong></p>
@@ -131,28 +163,27 @@
       </ul>
       <div class="note">
         <span class="lab">La regla que protege esta etapa</span>
-        <p>Antes de reportar cualquier cifra del evaluador automático, hay que <strong>calibrarlo contra dos o tres personas</strong> que califiquen las mismas respuestas a ciegas. Sin eso el número es decorativo. Y si esas personas no coinciden entre sí, eso no es ruido: es la contradicción de la organización apareciendo dentro de la medición.</p>
+        <p>Antes de reportar cualquier cifra del evaluador automático hay que <strong>calibrarlo contra dos o tres personas</strong> que califiquen las mismas respuestas a ciegas, y medir el acuerdo por criterio. Sin eso el número es decorativo <cite>(prácticas convergentes de calibración, 2026)</cite>. Y si esas personas no coinciden entre sí, eso no es ruido: es la contradicción de la organización apareciendo dentro de la medición.</p>
       </div>
     </div>
   </div>
 
-  <!-- ETAPA 2 -->
   <div class="stage">
     <div class="shead"><span class="snum">ETAPA 2</span><h3>Intervención en AIDA</h3></div>
     <p class="sgoal"><b>Objetivo:</b> menos errores y consulta más rápida. <b>Ya sabemos cómo hacerlo.</b></p>
     <div class="col">
       <ul class="steps">
         <li><b>Cerrar el catálogo de Vida</b> <span style="font-family:var(--mono);font-size:.68rem;color:var(--signal);font-weight:700">· BLOQUEA AL RESTO</span>
-          <p>Al comparar el Playbook contra las fichas vigentes aparecieron tres discrepancias: <strong>un producto figura dos veces con nombres distintos, otro producto vigente no aparece, y uno conserva el nombre que tenía en 2022.</strong> Si ordenamos todo alrededor de un catálogo con errores, terminamos con una biblioteca impecable y equivocada.</p>
+          <p>Resolver con Producto las tres discrepancias y publicar una matriz única y fechada. Ya existe un borrador construido desde las fichas vigentes, con fuente y nivel de confianza por dato — <strong>hay que validarla, no construirla</strong> <cite>(Matriz de productos Vida, 2025)</cite>.</p>
         </li>
         <li><b>Sacar del índice lo que no debería responder</b>
-          <p>Vacíos, plantillas, portadas y versiones antiguas. Es la acción de mayor impacto que <strong>no depende de nadie</strong>. Hay una función que saca contenido de las respuestas del agente sin quitarle el acceso a nadie — conviene activarla temprano, porque tarda en aplicarse.</p>
+          <p>Vacíos, plantillas, portadas y versiones antiguas. Es la acción de mayor impacto que <strong>no depende de nadie</strong>. Existe una función que saca contenido de las respuestas del agente sin quitarle el acceso a nadie <cite>(Microsoft Learn, 2026)</cite> — activarla temprano, porque tarda en aplicarse.</p>
         </li>
         <li><b>Cargar el modelo de venta en la forma que AIDA sí puede leer</b>
           <p>El Playbook no se copia, <strong>se deriva</strong>: partirlo por bloque, sacar las tablas empezando por la guía de objeciones —una entrada por objeción—, y dejar fuera lo que no es conocimiento de venta. Es más barato de lo que parece: el documento ya está bien estructurado.</p>
         </li>
         <li><b>Reescribir los cuadros que más se consultan</b>
-          <p>Los veinte o treinta cuadros de planes y coberturas que hoy viven como láminas de diseño. La pregunta que ordena el trabajo <strong>no es “qué láminas hay” sino “qué láminas se consultan”</strong>.</p>
+          <p>Los veinte o treinta cuadros de planes y coberturas que hoy viven como láminas. La pregunta que ordena el trabajo <strong>no es “qué láminas hay” sino “qué láminas se consultan”</strong>.</p>
         </li>
       </ul>
       <div class="note">
@@ -162,103 +193,213 @@
     </div>
   </div>
 
-  <!-- ETAPA 3 -->
   <div class="stage">
     <div class="shead"><span class="snum">ETAPA 3</span><h3>Testeo</h3></div>
     <p class="sgoal"><b>Objetivo:</b> comprobar que mejoró, con un diseño que resista una pregunta difícil.</p>
     <div class="col">
-      <p>Son <strong>dos pruebas distintas</strong>, y conviene no mezclarlas: primero la herramienta, después el asesor.</p>
-
+      <p>Son <strong>dos pruebas distintas</strong>: primero la herramienta, después el asesor.</p>
       <h3>Prueba 1 · Contra la línea base</h3>
-      <p>Se vuelve a correr <strong>el mismo banco de preguntas</strong> de la Etapa 1, con el mismo evaluador y la misma rúbrica, comparando pregunta por pregunta. No requiere a ningún asesor, se hace en días, y como el banco está fijo, la diferencia es atribuible a la intervención y no a la temporada o a la cartera.</p>
-      <span class="gate">Si la calidad no se mueve aquí, no hay nada que probar en campo — y nos ahorramos gastar la disposición de la fuerza de venta en una prueba que no iba a mostrar nada.</span>
-
+      <p>Se vuelve a correr <strong>el mismo banco de preguntas</strong> de la Etapa 1, con el mismo evaluador y la misma rúbrica, comparando pregunta por pregunta. No requiere a ningún asesor, se hace en días, y como el banco está fijo la diferencia es atribuible a la intervención.</p>
+      <span class="gate">Si la calidad no se mueve aquí, no hay nada que probar en campo — y nos ahorramos gastar la disposición de la fuerza de venta.</span>
       <h3>Prueba 2 · Con asesores</h3>
-      <p>Recién si la primera mejora. Y aquí hay una pregunta técnica que <strong>define todo el diseño y hay que hacerle a TI antes que nada</strong>: ¿se puede tener dos versiones de AIDA a la vez, una vieja y una nueva? De la respuesta salen tres caminos:</p>
+      <p>Recién si la primera mejora. Hay una pregunta técnica que <strong>define todo el diseño y va a TI antes que nada</strong>: ¿se pueden tener dos versiones de AIDA a la vez? De la respuesta salen tres caminos.</p>
     </div>
     <div class="tw"><table>
       <thead><tr><th>Si se puede…</th><th>Diseño</th><th>Qué gana y qué cuesta</th></tr></thead>
       <tbody>
-        <tr>
-          <td class="big">Sí, dos versiones en paralelo</td>
-          <td><strong>A/B por equipos</strong> — no por personas</td>
-          <td>El más limpio. <strong>Aleatorizar personas dentro de una oficina no funciona</strong>: los asesores se pasan capturas y se recomiendan herramientas</td>
-        </tr>
-        <tr>
-          <td class="big">Sí, pero por tandas</td>
-          <td><strong>Despliegue escalonado</strong> — los equipos pasan a la nueva en orden aleatorio</td>
-          <td>Nadie se queda sin la mejora, y coincide con cómo va a desplegarse igual. A cambio, hay que <strong>ajustar por el paso del tiempo</strong>, y no es una elección libre de debate metodológico</td>
-        </tr>
-        <tr>
-          <td class="big">No, es todo o nada</td>
-          <td><strong>Serie temporal interrumpida</strong> — el “full con puntos de corte”</td>
-          <td>Es el más fuerte de los diseños disponibles cuando no se puede aleatorizar. Necesita <strong>varios puntos de medición antes y después</strong>, no dos fotos</td>
-        </tr>
+        <tr><td class="big">Dos versiones en paralelo</td><td><strong>A/B por equipos</strong>, no por personas</td><td>El más limpio. <strong>Aleatorizar personas dentro de una oficina no funciona</strong>: los asesores se pasan capturas</td></tr>
+        <tr><td class="big">Por tandas</td><td><strong>Despliegue escalonado</strong> en orden aleatorio</td><td>Nadie se queda sin la mejora. A cambio hay que <strong>ajustar por el paso del tiempo</strong>, y el diseño no está libre de debate metodológico <cite>(Hemming &amp; Taljaard, 2020)</cite></td></tr>
+        <tr><td class="big">Es todo o nada</td><td><strong>Serie temporal interrumpida</strong> — el “full con puntos de corte”</td><td>El diseño más fuerte disponible cuando no se puede aleatorizar. Necesita <strong>varios puntos de medición antes y después</strong>, no dos fotos <cite>(Lopez Bernal et al., 2018)</cite></td></tr>
       </tbody>
     </table></div>
     <div class="col">
       <div class="note">
         <span class="lab">Si toca el tercer camino, tenemos algo que casi nadie tiene</span>
-        <p>La debilidad de medir antes-y-después sin grupo de control es que algo más pudo haber cambiado en el mismo periodo — una campaña, la estacionalidad. La solución es agregar una serie de comparación.</p>
-        <p>Y aquí ya la tenemos: <strong>el Release 1 se acota a Vida, así que Salud y Vehicular siguen con la base vieja.</strong> Sirven como serie de comparación natural, sin montar nada. Si Vida mejora y los otros ramos no, el efecto es de la intervención.</p>
+        <p>La debilidad de medir antes-y-después sin grupo de control es que algo más pudo cambiar en el mismo periodo. La solución estándar es agregar una serie de comparación <cite>(Lopez Bernal et al., 2018)</cite> — y aquí ya la tenemos: <strong>el Release 1 se acota a Vida, así que Salud y Vehicular siguen con la base vieja.</strong> Si Vida mejora y los otros ramos no, el efecto es de la intervención. No cuesta montar nada.</p>
       </div>
       <h3>Dos condiciones que no son negociables</h3>
       <ul class="plain">
-        <li><strong>Separar por antigüedad desde el diseño.</strong> El efecto de un copiloto se concentra en los asesores nuevos y es casi nulo en los expertos. <strong>Un test sin separar puede reportar “sin efecto” cuando hay un efecto grande justo en el grupo que más importa.</strong></li>
-        <li><strong>La conversión no sirve como métrica principal.</strong> El ciclo de venta de Vida es más largo que cualquier ventana de prueba razonable. Se miran <strong>propuestas enviadas y agendamiento</strong> como indicadores adelantados, y la conversión solo como señal direccional.</li>
+        <li><strong>Separar por antigüedad desde el diseño.</strong> El efecto de un copiloto se concentra en los novatos: <strong>+34% en trabajadores de baja calificación contra un efecto mínimo en los expertos</strong>, con un promedio de +14% que esconde a las dos poblaciones <cite>(Brynjolfsson, Li &amp; Raymond, 2025)</cite>. Un test sin separar puede reportar “sin efecto” cuando hay un efecto grande en el grupo que más importa.</li>
+        <li><strong>La conversión no sirve como métrica principal.</strong> El ciclo de venta de Vida excede cualquier ventana de prueba razonable <cite>(Plan Piloto, 2026)</cite>. Se miran propuestas y agendamiento como indicadores adelantados.</li>
       </ul>
       <div class="note">
         <span class="lab">La métrica más limpia que tenemos</span>
-        <p>Hoy los asesores usan ChatGPT y Gemini para tapar los huecos de AIDA. Eso convierte ese uso en un indicador de conducta, no de opinión: <strong>si la intervención funciona, el uso de IA de afuera debería caer.</strong> Basta preguntar con qué frecuencia recurrieron a una IA externa esta semana. Y de paso mide exposición de información por herramientas no gobernadas.</p>
+        <p>Hoy los asesores usan ChatGPT y Gemini para tapar los huecos de AIDA <cite>(encuesta a 19 asesores, 2026)</cite>. Eso lo convierte en un indicador de conducta, no de opinión: <strong>si la intervención funciona, el uso de IA de afuera debería caer.</strong> Y de paso mide exposición de información por herramientas no gobernadas.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>El riesgo que puede anular las tres etapas</h2>
+  <h2>Qué no entra ahora, y adónde va</h2>
   <div class="col">
-    <p>Llegar a AIDA no es el problema: los asesores saben dónde está. <strong>El problema es lo que hay al llegar — una pantalla en blanco.</strong> Ningún ejemplo, nada que le diga al asesor qué puede pedirle.</p>
-    <div class="note alert">
-      <span class="lab">Y por eso urge</span>
-      <p><strong>El asesor que ya dejó de usar AIDA no va a volver a comprobar si mejoró.</strong> Está documentado: después de ver fallar una herramienta, la gente la abandona incluso cuando pasa a ser mejor que la alternativa, y no la reevalúa por su cuenta.</p>
-      <p>Una mejora sin nada visible <strong>no llega a quien ya se fue</strong> — que es exactamente a quien queremos recuperar. Y si no vuelve, la Etapa 3 mide una población que no usó lo que arreglamos.</p>
-    </div>
-    <p>Por eso el release necesita <strong>una pieza mínima de reintroducción</strong>: tres ejemplos de qué preguntarle y un aviso de que cambió. No es el rediseño de la herramienta — esa es otra conversación, con su propio presupuesto.</p>
+    <p>Nada de esto se descarta. Cada cosa está fuera del Release 1 <strong>por una razón distinta</strong>, y esa razón determina cuándo y cómo vuelve.</p>
   </div>
-</section>
-
-<section>
-  <h2>Qué queda fuera</h2>
   <div class="tw"><table>
-    <thead><tr><th>Fuera del Release 1</th><th>Por qué</th></tr></thead>
+    <thead><tr><th>Qué</th><th>Por qué no ahora</th><th>Dónde entra</th></tr></thead>
     <tbody>
-      <tr><td class="big">Que la pregunta llegue al especialista correcto</td><td>AIDA cubre cinco ramos y una pregunta ambigua puede ir al equivocado — y para el asesor eso se ve idéntico a un dato falso. Pero <strong>es diseño del coordinador, no contenido</strong></td></tr>
-      <tr><td class="big">Mejoras técnicas del buscador</td><td>Buena relación costo-beneficio, pero requieren al equipo de la plataforma. No bloquean nada</td></tr>
-      <tr><td class="big">Describir las láminas con IA</td><td>Reescribir los cuadros más consultados cubre lo importante a menor costo</td></tr>
-      <tr><td class="big">Los otros cuatro ramos</td><td>Se hacen después con el método ya probado — y mientras tanto <strong>sirven como grupo de comparación</strong></td></tr>
-      <tr><td class="big">El agente de speech de ventas</td><td>Es el único que necesita el contexto de otro agente, y ese patrón es el más frágil. Merece revisión aparte</td></tr>
+      <tr>
+        <td class="big">Los otros cuatro ramos</td>
+        <td>Es <strong>la misma solución en más terreno</strong>. Hacerlo todo junto multiplica el riesgo sin enseñar nada nuevo — y mientras tanto sirven de grupo de comparación</td>
+        <td class="dest" style="color:var(--accent)">FASE 2</td>
+      </tr>
+      <tr>
+        <td class="big">Describir las láminas con IA · Reordenador · Cita con fragmento</td>
+        <td>Son <strong>mejoras del motor, no del contenido</strong>. Buenas, pero requieren al equipo de la plataforma y no bloquean nada de lo anterior</td>
+        <td class="dest" style="color:var(--accent)">FASE 3</td>
+      </tr>
+      <tr>
+        <td class="big">Capacidades nuevas de la herramienta</td>
+        <td>Todavía <strong>no sabemos cuáles valen la pena</strong>. Construir antes de saberlo es la forma más cara de averiguarlo</td>
+        <td class="dest" style="color:var(--accent)">FASE 4</td>
+      </tr>
+      <tr>
+        <td class="big">Que la pregunta llegue al especialista correcto</td>
+        <td><strong>Es otro problema, no de contenido.</strong> AIDA cubre cinco ramos y una pregunta ambigua puede ir al equivocado — para el asesor eso se ve idéntico a un dato falso, pero se arregla en el clasificador, no en la biblioteca</td>
+        <td class="dest" style="color:var(--signal)">FASE 5</td>
+      </tr>
+      <tr>
+        <td class="big">El agente de speech de ventas</td>
+        <td><strong>Es otro problema.</strong> Es el único de los cinco que necesita el contexto de otro agente para trabajar, y ese patrón es el más frágil de los sistemas multi-agente</td>
+        <td class="dest" style="color:var(--signal)">FASE 5</td>
+      </tr>
+      <tr>
+        <td class="big">El rediseño del front</td>
+        <td><strong>Es otro presupuesto y otra conversación.</strong> Pero una parte mínima sí entra ahora — ver más abajo</td>
+        <td class="dest" style="color:var(--muted)">PISTA PARALELA</td>
+      </tr>
     </tbody>
   </table></div>
 </section>
 
 <section>
-  <h2>Y lo que no arregla, dicho antes</h2>
+  <h2>Las fases siguientes</h2>
+
+  <div class="stage">
+    <div class="shead"><span class="snum later">FASE 2</span><h3>Extender a los demás ramos</h3></div>
+    <p class="sgoal"><b>Cuándo:</b> con el método ya probado y la cifra propia de mejora en la mano.</p>
+    <div class="col"><p>Salud, Vehicular y Operaciones, con el mismo procedimiento: cerrar catálogo, sacar ruido, derivar el cuerpo canónico, reescribir cuadros. La diferencia es que ya no hay que discutir el método — solo aplicarlo. <strong>Ojo:</strong> al intervenir los otros ramos se pierde el grupo de comparación, así que la medición de la Etapa 3 debe estar cerrada antes.</p></div>
+  </div>
+
+  <div class="stage">
+    <div class="shead"><span class="snum later">FASE 3</span><h3>Mejorar el motor</h3></div>
+    <p class="sgoal"><b>Cuándo:</b> con el contenido ya ordenado, porque estas mejoras amplifican lo que hay.</p>
+    <div class="col">
+      <p>Tres cosas, en orden de retorno: un <strong>reordenador</strong> que filtre los resultados antes de pasarlos al modelo <cite>(T2-RAGBench, 2026)</cite>; <strong>forzar la cita con fragmento textual y fecha de vigencia</strong>; y <strong>describir con un modelo multimodal</strong> las láminas que no se reescribieron, guardando esa descripción como fragmento aparte <cite>(Microsoft ISE, 2024)</cite>.</p>
+      <p>La segunda no es cosmética. Herramientas comerciales que buscan sobre documentos oficiales <em>y muestran citas reales</em> siguen inventando entre <strong>17% y 33%</strong> de las veces, y la falla dominante es citar un documento auténtico afirmando que dice algo que no dice <cite>(Magesh et al., 2025)</cite>. Peor aún: <strong>mostrar citas sube la confianza del usuario incluso cuando la cita es falsa</strong> <cite>(Ding et al., 2025)</cite>. Por eso no basta el enlace — hace falta el fragmento a la vista.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="shead"><span class="snum later">FASE 4</span><h3>Prototipar capacidades antes de construirlas</h3></div>
+    <p class="sgoal"><b>Cuándo:</b> en paralelo desde la Etapa 1, porque se alimenta de lo que digan los asesores.</p>
+    <div class="col">
+      <p>Hasta aquí el Release 1 arregla <em>lo que AIDA ya intenta hacer</em>. Esta fase es distinta: sirve para decidir <strong>qué debería hacer y todavía no hace</strong>.</p>
+      <p>La lógica es la de siempre en diseño, aplicada a una herramienta: <strong>probar la capacidad con un prototipo antes de comprometer desarrollo</strong>. Un prototipo se arma en días, se pone frente a cuatro o cinco asesores, y responde si la capacidad resuelve algo real — o si sonaba mejor en la reunión que en la conversación con el cliente.</p>
+      <h3>Qué prototipar, y por qué esas</h3>
+      <p>La prioridad no es una lista de deseos: sale de cruzar lo que los asesores piden con lo que está verificado que mueve el desempeño.</p>
+      <ul class="plain">
+        <li><strong>Apoyo a la objeción en el cierre.</strong> Es el tema más pedido por los asesores (42%) y el momento de mayor necesidad declarada <cite>(encuesta a 19 asesores, 2026)</cite>. Y coincide con lo único que la evidencia asocia a desempeño <em>objetivo</em>: la <strong>venta adaptativa</strong> —cambiar de camino según lo que el cliente muestra— sube el desempeño autorreportado, el evaluado por el jefe <em>y</em> el objetivo, mientras que la orientación al cliente sube solo el autorreportado <cite>(Franke &amp; Park, 2006)</cite>.</li>
+        <li><strong>Casuística real de los mejores asesores</strong>, recuperable por situación. Es el mecanismo por el que un copiloto produce su efecto: difunde las prácticas de los trabajadores más capaces <cite>(Brynjolfsson, Li &amp; Raymond, 2025)</cite>. Hoy ese conocimiento no está escrito en ninguna parte.</li>
+        <li><strong>Registro asistido.</strong> Que el copiloto registre en Salesforce por el asesor, en vez de que él repita el dato en dos sistemas. Ataca directamente la carga que el mandato del copiloto nombra.</li>
+      </ul>
+      <div class="note">
+        <span class="lab">Una pieza que ya existe y puede ser el banco de pruebas</span>
+        <p>El equipo ya construyó un <strong>prototipo de agente sobre Claude</strong> para el Plan Piloto <cite>(Plan Piloto, 2026)</cite>. Visto como herramienta paralela a AIDA compite con ella y suma carga al asesor. Visto como <strong>banco de prototipado</strong> deja de competir: es donde se prueba una capacidad antes de decidir si se construye en AIDA. Cambiarle el rol no cuesta desarrollo — cuesta declararlo.</p>
+      </div>
+      <p><strong>Regla para esta fase:</strong> un prototipo sirve para decidir, no para desplegar. Lo que pase la prueba entra al backlog de AIDA; lo que no, se descarta con evidencia y sin haber gastado desarrollo.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="shead"><span class="snum later">FASE 5</span><h3>La arquitectura de agentes</h3></div>
+    <p class="sgoal"><b>Cuándo:</b> cuando el contenido deje de ser la explicación dominante de las fallas.</p>
+    <div class="col">
+      <p>Dos problemas que ninguna limpieza de contenido resuelve: <strong>el ruteo entre ramos</strong> — que una pregunta ambigua llegue al especialista correcto — y <strong>el agente de speech</strong>, que depende del contexto de otro agente.</p>
+      <p>Hay además una decisión de fondo que conviene tomar aquí y no antes: <strong>consolidar la puerta de entrada del asesor, sin consolidar las bases de conocimiento.</strong> Juntar todo en una sola base empeora las respuestas — crecer el corpus sin separarlo por dominio llevó la precisión de 75% a menos de 40% <cite>(When More Documents Hurt RAG, 2026)</cite>, y la propia guía del fabricante recomienda asignar a cada subagente fuentes distintas y no superpuestas <cite>(Microsoft Learn, 2026)</cite>.</p>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="shead"><span class="snum later">PARALELO</span><h3>Que la mejora llegue a quien ya se fue</h3></div>
+    <p class="sgoal"><b>Cuándo:</b> una pieza mínima dentro del Release 1; el resto, conversación aparte.</p>
+    <div class="col">
+      <p>Llegar a AIDA no es el problema: los asesores saben dónde está. <strong>El problema es lo que hay al llegar — una pantalla en blanco</strong>, sin ejemplos ni nada que indique qué se le puede pedir <cite>(Behavioral Design, 2026)</cite>.</p>
+      <div class="note alert">
+        <span class="lab">Y esto es lo que lo vuelve urgente</span>
+        <p><strong>El asesor que ya dejó de usar AIDA no va a volver a comprobar si mejoró.</strong> Está documentado: después de ver fallar a un sistema automatizado, la gente lo abandona <em>incluso cuando sigue siendo mejor que la alternativa</em>, y pierde confianza en él más rápido que en un humano que comete el mismo error <cite>(Dietvorst, Simmons &amp; Massey, 2015)</cite>.</p>
+        <p>Una mejora sin nada visible <strong>no llega a quien ya se fue</strong> — y si no vuelve, la Etapa 3 mide una población que no usó lo que arreglamos.</p>
+      </div>
+      <p>La calidad sigue siendo la palanca principal: el meta-análisis de referencia sobre adopción de tecnología, con 88 estudios, encuentra que la utilidad percibida predice el uso más que la facilidad de uso <cite>(King &amp; He, 2006)</cite>. Pero la facilidad de uso también predice la utilidad percibida, y ahí está nuestro caso: <strong>la pantalla en blanco no compite con la calidad, la oculta.</strong> El asesor no puede notar que AIDA mejoró si nunca llega a hacerle la pregunta que se lo mostraría.</p>
+      <p>Por eso el Release 1 necesita <strong>una pieza mínima de reintroducción</strong>: tres ejemplos de qué preguntarle y un aviso de que cambió. El rediseño del front es otra conversación, con su propio presupuesto.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Qué no arregla el Release 1</h2>
   <div class="col">
     <ul class="plain">
-      <li><strong>La invención no desaparece.</strong> Herramientas comerciales que buscan sobre documentos oficiales <em>y muestran citas reales</em> siguen inventando entre <strong>17% y 33% de las veces</strong>, y la falla más común es citar un documento auténtico afirmando que dice algo que no dice. Peor: mostrar citas sube la confianza del usuario aunque la cita sea falsa. Por eso hay que <strong>mostrar el fragmento y la fecha</strong>, y el banco de control no se cierra nunca.</li>
-      <li><strong>No evita que la biblioteca se vuelva a ensuciar.</strong> Si nada impide que mañana se suba un PPT sin dueño ni fecha, volvemos al punto de partida. El release tiene que dejar <strong>un dueño y una cadencia de revisión</strong>.</li>
+      <li><strong>La invención no desaparece</strong> — ver Fase 3. Baja mucho con un corpus limpio, pero el banco de control no se cierra nunca: es permanente.</li>
+      <li><strong>El ruteo entre ramos sigue igual</strong> — Fase 5.</li>
+      <li><strong>No evita que la biblioteca se vuelva a ensuciar.</strong> Si nada impide que mañana se suba un PPT sin dueño ni fecha, volvemos al punto de partida. El release tiene que dejar <strong>un dueño y una cadencia de revisión</strong>, o tiene fecha de vencimiento.</li>
       <li><strong>No prueba que el modelo de venta funcione.</strong> Prueba que la herramienta que lo transporta mejoró.</li>
     </ul>
     <div class="note">
       <span class="lab">Un dato que hoy no existe</span>
-      <p>No hay ningún estudio publicado que aísle cuánto rinde ordenar la base de conocimiento de una empresa real. <strong>Si medimos bien el antes y el después, generamos un dato que nadie tiene</strong> — y que sostiene cualquier conversación futura de presupuesto sobre AIDA.</p>
+      <p>No hay ningún estudio publicado que aísle cuánto rinde ordenar la base de conocimiento de una empresa real <cite>(Behavioral Design, 2026)</cite>. <strong>Si medimos bien el antes y el después, generamos un dato que nadie tiene</strong> — y que sostiene cualquier conversación futura de presupuesto sobre AIDA.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Insumos</h2>
+
+  <div class="srcgroup">
+    <h3>Primarios — internos de RIMAC</h3>
+    <p class="hint">Documentos y levantamientos propios. Son la materia prima del diagnóstico.</p>
+    <ol class="src">
+      <li><b>Playbook del Asesor</b> (RIMAC, versión del 14-ago-2026). Modelo de venta Vida, 5 bloques. <span class="tag">Fuente canónica declarada; contiene 8 pendientes y las discrepancias de catálogo de §3.</span></li>
+      <li><b>Matriz de productos Vida RIMAC</b>, derivada de fichas comerciales vigentes desde el 01-01-2025. <span class="tag">Patrón oro para calificar exactitud.</span></li>
+      <li><b>Encuesta a 19 asesores</b> (CoE, 2026). Uso de herramientas, satisfacción, temas más pedidos, uso compensatorio de IA externa.</li>
+      <li><b>Taller de Manejo de Objeciones</b> (36 invitados, 30 asistentes, 2026). Drivers de valor y mejoras pedidas.</li>
+      <li><b>Auto-interrogación de AIDA</b> (14-ago-2026). Arquitectura declarada por la propia herramienta. <span class="warn">⚠️ Es autorreporte: hipótesis a triangular, no documentación.</span></li>
+      <li><b>Plan Piloto · Modelo de Experiencia de Venta Vida</b> (CoE Diseño Estratégico, julio 2026). <span class="tag">Diseño de julio; el plan cambió — leer como estado histórico.</span></li>
+      <li><b>Mapa sistémico AS IS y diagnóstico Dx1-Dx3</b> (CoE Experience Design, 2026).</li>
+      <li><b>«La biblioteca de AIDA»</b> — research de mercado, Behavioral Design (agosto 2026). <span class="tag">Aporta la cuantificación de §3 y la comparación reentrenar-vs-recuperar.</span> <span class="warn">⚠️ Su cifra ancla sobre contradicciones (79,5%→24,2%) tiene un problema de cita abierto y no se usa en este documento.</span></li>
+    </ol>
+  </div>
+
+  <div class="srcgroup">
+    <h3>Secundarios — evidencia externa</h3>
+    <p class="hint">Ordenados por rigor. Los venues arbitrados van primero.</p>
+    <ol class="src">
+      <li><b>Brynjolfsson, E., Li, D. &amp; Raymond, L. (2025).</b> «Generative AI at Work». <i>Quarterly Journal of Economics</i>, 140(2). <span class="tag">5.179 agentes, despliegue escalonado. +14% promedio, +34% novatos, mínimo en expertos.</span></li>
+      <li><b>Franke, G. R. &amp; Park, J.-E. (2006).</b> «Salesperson Adaptive Selling Behavior and Customer Orientation: A Meta-Analysis». <i>Journal of Marketing Research</i>, 43(4). <span class="tag">155 muestras, &gt;31.000 vendedores.</span></li>
+      <li><b>Dietvorst, B. J., Simmons, J. P. &amp; Massey, C. (2015).</b> «Algorithm Aversion». <i>Journal of Experimental Psychology: General</i>, 144(1), 114-126.</li>
+      <li><b>Ovadia et al. (2024).</b> «Fine-Tuning or Retrieval?» · <b>Gekhman et al. (2024).</b> «Does Fine-Tuning on New Knowledge Encourage Hallucinations?» <i>EMNLP</i>. <span class="tag">La comparación de presupuesto de §2.</span></li>
+      <li><b>Zheng, L. et al. (2023).</b> «Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena». <i>NeurIPS</i> · <b>Liu, Y. et al. (2023).</b> «G-Eval». <i>EMNLP</i>. <span class="tag">El método de evaluar un modelo con otro.</span></li>
+      <li><b>Magesh et al. (2025).</b> «Hallucination-Free?». <i>Journal of Empirical Legal Studies</i>, Stanford RegLab · <b>Ding et al. (2025).</b> «Citations and Trust in LLM Generated Responses». <i>AAAI</i>.</li>
+      <li><b>Flanagan, J. C. (1954).</b> «The Critical Incident Technique». <i>Psychological Bulletin</i>, 51(4).</li>
+      <li><b>King, W. R. &amp; He, J. (2006).</b> «A meta-analysis of the technology acceptance model». <i>Information &amp; Management</i>, 44(1). <span class="tag">88 estudios.</span> <span class="warn">⚠️ Los coeficientes específicos citados provienen del research interno; no se verificaron contra el paper.</span></li>
+      <li><b>Lopez Bernal, J., Cummins, S. &amp; Gasparrini, A. (2018).</b> «The use of controls in interrupted time series studies». <i>International Journal of Epidemiology</i>, 47(6) · <b>Hemming, K. &amp; Taljaard, M. (2020).</b> <i>International Journal of Epidemiology</i>. <span class="tag">Diseños de la Etapa 3 y sus límites.</span></li>
+      <li><b>OHR-Bench</b> (ICCV 2025) · <b>REAL-MM-RAG</b> (IBM Research, ACL 2025) · <b>ColPali</b> (ICLR 2025) · <b>«From PDF to RAG-Ready»</b> (<i>Applied Sciences</i>, 2026) · <b>«The Power of Noise»</b> (SIGIR 2024) y su reproducción (SIGIR 2026). <span class="tag">Toda la cuantificación de formatos y distractores de §3.</span></li>
+      <li><b>Microsoft Learn</b> (2026). Documentación de producto: mejores prácticas de SharePoint para Copilot, índice semántico, límites de fuentes de conocimiento, orquestación multi-agente. <span class="warn">⚠️ Documentación de fabricante; la superficie del producto cambia, reverificar antes de decidir arquitectura.</span></li>
+      <li><b>METR (2025).</b> Medición del impacto de la IA en desarrolladores experimentados. <span class="tag">Preprint. La brecha percepción-desempeño que funda el método de entrevista.</span></li>
+      <li><b>«Judging the Judges»</b> (2026) · <b>T2-RAGBench</b> (2026) · <b>«When More Documents Hurt RAG»</b> (2026) · <b>Microsoft ISE</b> (2024). <span class="tag">Preprints y documentación técnica: usar la dirección, no la magnitud.</span></li>
+    </ol>
+  </div>
+
+  <div class="col">
+    <div class="note">
+      <span class="lab">Nota de método</span>
+      <p>Cuatro cifras que circulan en este mercado quedaron <strong>deliberadamente fuera</strong> de este documento por no tener fuente primaria rastreable: las de adopción de metodologías de venta, las de aceleración por configuradores de producto, las de retorno de gestión de datos maestros, y la cifra ancla sobre contradicciones del research interno. El detalle de por qué está en el registro de fuentes del proyecto.</p>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Construido sobre el research «La biblioteca de AIDA» (Behavioral Design) y el diagnóstico del copiloto (CoE Diseño Estratégico). Evidencia de venues arbitrados —ICCV, ACL, ICLR, AAAI, SIGIR, EMNLP, NeurIPS— más documentación oficial de Microsoft. Detalle de fuentes, instrumentos y salvedades en la versión extendida del repositorio.</p>
+  <p>CoE Diseño Estratégico · Behavioral Design · RIMAC Seguros. Versión extendida, instrumentos ejecutables y registro completo de fuentes con su nivel de rigor en el repositorio del proyecto.</p>
 </footer>
 
 </div>
