@@ -560,7 +560,7 @@ Auditoría dedicada (2026-07-24, a pedido del usuario) del Bloque 4 del Playbook
 manejo de objeciones, 9 "sesgos cognitivos" (C.1-C.9) nombrados sin una sola cita— para el
 proyecto `_nodes/proyecto-back-to-basics-ffvv-vida.md`. Primera pasada (mismo día) trabajó solo
 sobre el resumen del proyecto, que no traía la numeración C.n exacta; segunda pasada, ya sobre el
-documento real `Playbook_del_asesor.md`, corrigió la numeración y sumó la novena técnica que
+documento real `Playbook_del_Asesor_2026-07_SUPERADO.md`, corrigió la numeración y sumó la novena técnica que
 faltaba (C.4, sesgo del presente). Resultado final: 8 de las 9 sí tienen origen académico sólido
 y verificable (prueba social, anclaje, dotación, sesgo del presente, aversión a la pérdida,
 dilución de responsabilidad, encuadre, facilidad cognitiva), con papers fundacionales de
@@ -1923,7 +1923,7 @@ vez de mejor resolución en farmacia, corre el mismo riesgo de falso positivo qu
   el Bloque 4 del Playbook del Asesor (`_nodes/proyecto-back-to-basics-ffvv-vida.md` §5,
   Hallazgo 2) — 9 "sesgos cognitivos" (C.1-C.9) sin una sola cita en el documento original.
   Primera pasada trabajó solo sobre el resumen del proyecto (sin numeración C.n exacta); al pedir
-  el usuario aplicar los cambios, releí el documento real `Playbook_del_asesor.md` y corregí la
+  el usuario aplicar los cambios, releí el documento real `Playbook_del_Asesor_2026-07_SUPERADO.md` y corregí la
   numeración + encontré una novena técnica (C.4, sesgo del presente) que la primera pasada no
   había cubierto. Resultado final: 8 de 9 sí tienen respaldo fundacional real (Kahneman, Tversky,
   Thaler, Cialdini, y F-3 ya existente para sesgo del presente), la novena (C.7, "regla del 10x")

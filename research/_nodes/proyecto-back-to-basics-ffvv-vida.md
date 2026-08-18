@@ -714,7 +714,7 @@ Back to Basics (§1: plataforma de leads, copiloto, alertas de churn) son la res
 laboratorio con validez ecológica limitada para conversión real. Bloque 4 (manejo de objeciones
 C.1-C.9, donde se juega el cierre de venta) no citaba ninguna fuente para ninguno de los 9 sesgos
 que nombraba. Revisión dedicada (2026-07-24, análisis con el Lobo, esta vez sobre el documento
-real `Playbook_del_asesor.md` — la primera pasada había trabajado solo con el resumen, que no
+real `Playbook_del_Asesor_2026-07_SUPERADO.md` — la primera pasada había trabajado solo con el resumen, que no
 traía la numeración C.n exacta) encontró la cita académica fundacional para 8 de los 9 y una
 corrección importante para el noveno:
 
@@ -733,7 +733,7 @@ corrección importante para el noveno:
 Sigue siendo lo inverso de cómo debería repartirse el rigor visible en el documento original (la
 sección de menor validez ecológica tenía más cita que la sección donde se decide si la venta se
 cierra) — pero el respaldo evidencial ya existe y ya se insertó directamente en el documento
-`Playbook_del_asesor.md` (2026-07-24, ver nota de aplicación abajo). El pendiente de §7 ("agregar
+`Playbook_del_Asesor_2026-07_SUPERADO.md` (2026-07-24, ver nota de aplicación abajo). El pendiente de §7 ("agregar
 respaldo evidencial a C.1-C.9") queda **resuelto**, con la corrección de C.7 aplicada como nota
 en el documento (no se retiró la sección — se marcó para decisión del equipo).
 
@@ -800,7 +800,7 @@ retirado) es el mismo patrón de riesgo que ese node señala en el caso del Do N
 
 **Resolución definitiva (2026-07-25, aplicada directamente por Alejo al documento de la
 sesión).** La "resolución" de 2026-07-20 de arriba resultó, tras verificación directa contra
-`Playbook_del_asesor.md` el 2026-07-24, **no estar realmente aplicada** — el placeholder
+`Playbook_del_Asesor_2026-07_SUPERADO.md` el 2026-07-24, **no estar realmente aplicada** — el placeholder
 "Pendiente" seguía en el documento en uso, y el Plan Piloto (§8) corroboró el mismo vacío de
 forma independiente (ver Limitaciones). El 2026-07-25 se cerró de verdad, con el lineamiento
 definitivo de §3 aplicado directamente al documento de la sesión (no a un archivo `v3` aparte que
@@ -828,7 +828,7 @@ después no se usó):
 Esto **sustituye** la resolución de 2026-07-20 como estado verificado — no como un evento
 adicional. La brecha "lo que el proyecto dice que está resuelto" vs. "lo que el documento real
 dice" que motivó la Limitación de abajo queda cerrada para esta sección específica, aunque el
-documento aplicado (`Playbook_del_asesor.md`) sigue sin vivir en este repositorio.
+documento aplicado (`Playbook_del_Asesor_2026-07_SUPERADO.md`) sigue sin vivir en este repositorio.
 
 ---
 
@@ -848,7 +848,7 @@ documento aplicado (`Playbook_del_asesor.md`) sigue sin vivir en este repositori
   diseño de estrategia de contacto.
 - ~~Bloque 4 del playbook: agregar respaldo evidencial a las 9 estrategias de manejo de
   objeciones (C.1-C.9)~~ — **resuelto (2026-07-24)**, ver Hallazgo 2 de §5: citas insertadas
-  directamente en `Playbook_del_asesor.md`. ~~Queda pendiente que el equipo confirme si retirar o
+  directamente en `Playbook_del_Asesor_2026-07_SUPERADO.md`. ~~Queda pendiente que el equipo confirme si retirar o
   renombrar C.7~~ — **resuelto (2026-07-25):** el usuario confirmó renombrarla ("Poner el precio
   en perspectiva (anclaje aplicado)"), aplicado directamente en el playbook y en la tabla de §5.
   También se corrigió la fuente de C.6 (Davis 1976 reemplaza a Darley & Latané 1968).
@@ -983,9 +983,9 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 - **La resolución descrita en §6 (Bloque 4 vs. CUA) no estaba verificada contra el documento
   fuente actual — actualizado (2026-07-25): la "Resolución definitiva" de §6 sí se aplicó
   directamente al documento de la sesión** (verificado porque se hizo en esta misma sesión, no
-  por revisión posterior). **Actualizado (2026-07-26): `Playbook_del_asesor.md` ya vive en este
+  por revisión posterior). **Actualizado (2026-07-26): `Playbook_del_Asesor_2026-07_SUPERADO.md` ya vive en este
   repositorio** — el usuario lo adjuntó y quedó persistido en
-  `research/_fuentes_internas/Playbook_del_asesor.md` (v1.0 · jun 2026 · borrador interno,
+  `research/_fuentes_internas/Playbook_del_Asesor_2026-07_SUPERADO.md` (v1.0 · jun 2026 · borrador interno,
   contenido verificado contra este node el mismo día: coincide con el estado que §3/§6 ya
   documentaban — 2 rutas de contacto CUA, sin speech "en frío"). Esto cierra la limitación de
   fondo que motivó esta nota: el archivo deja de depender de sobrevivir solo en el estado de una
