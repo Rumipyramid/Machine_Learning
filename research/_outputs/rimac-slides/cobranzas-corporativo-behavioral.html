@@ -74,6 +74,15 @@ img, video, canvas, svg { max-width: 100%; max-height: 100%; }
 .stagger-3{ transition-delay:.34s !important; } .stagger-4{ transition-delay:.46s !important; }
 
 /* ===========================================
+   SALIENCIA — pill de categoría (problema de negocio / de comportamiento /
+   objetivo comportamental). Marca en qué capa del relato está cada slide.
+   =========================================== */
+.pill-tag{ display:inline-flex; align-self:flex-start; align-items:center; font-family:'BRSonoma Bold'; font-size:15px; letter-spacing:.06em; text-transform:uppercase; color:#fff; border-radius:999px; padding:9px 22px; margin-bottom:28px; }
+.pill-tag.negocio{ background:var(--primary); }
+.pill-tag.problema{ background:var(--tertiary); }
+.pill-tag.objetivo{ background:var(--accent-magenta); }
+
+/* ===========================================
    MARCO — título, footer, pagenum (idéntico en todo slide de contenido)
    =========================================== */
 .slide.content{ padding:80px 100px 100px; display:flex; flex-direction:column; height:100%; }
@@ -119,9 +128,6 @@ img, video, canvas, svg { max-width: 100%; max-height: 100%; }
 .s2-card{ flex:1; border-radius:18px; padding:44px 44px 40px; }
 .s2-card.warm{ background:var(--bg-warm-soft); }
 .s2-card.cool{ background:var(--bg-cool-soft); }
-.s2-eyebrow{ font-family:'BRSonoma Bold'; font-size:16px; letter-spacing:.06em; text-transform:uppercase; margin-bottom:18px; }
-.s2-card.warm .s2-eyebrow{ color:var(--tertiary); }
-.s2-card.cool .s2-eyebrow{ color:var(--accent-magenta); }
 .s2-card h3{ font-family:'BRSonoma Bold'; font-size:32px; color:var(--primary); line-height:1.15; margin-bottom:18px; }
 .s2-card p{ font-family:'BRSonoma Regular'; font-size:21px; line-height:1.5; color:var(--text); }
 .s2-card p b{ font-family:'BRSonoma Bold'; color:var(--primary); }
@@ -167,6 +173,20 @@ img, video, canvas, svg { max-width: 100%; max-height: 100%; }
 .s4-callout p{ font-family:'BRSonoma Medium'; font-size:20px; line-height:1.48; color:var(--text); }
 .s4-callout b{ font-family:'BRSonoma Bold'; color:var(--primary); }
 
+.s4-roadmap{ margin-top:44px; padding-top:36px; border-top:1px solid var(--line); }
+.s4-roadmap-label{ font-family:'BRSonoma Bold'; font-size:16px; letter-spacing:.06em; text-transform:uppercase; color:var(--secondary); margin-bottom:26px; }
+.roadmap-row{ position:relative; display:flex; }
+.roadmap-row::before{ content:''; position:absolute; top:9px; left:0; right:0; height:2px; background:var(--line); }
+.rm-step{ position:relative; flex:1; padding-right:36px; }
+.rm-step:last-child{ padding-right:0; }
+.rm-dot{ width:20px; height:20px; border-radius:50%; margin-bottom:16px; position:relative; z-index:1; }
+.rm-step.done .rm-dot{ background:var(--tertiary); border:2px solid var(--tertiary); }
+.rm-step.next .rm-dot{ background:#fff; border:2px solid var(--tertiary); }
+.rm-step.future .rm-dot{ background:#fff; border:2px dashed var(--secondary); }
+.rm-text b{ display:block; font-family:'BRSonoma Bold'; font-size:22px; color:var(--primary); margin-bottom:4px; }
+.rm-step.future .rm-text b{ color:var(--secondary); }
+.rm-text span{ font-family:'BRSonoma Regular'; font-size:17px; color:var(--secondary); }
+
 /* ===========================================
    EDICIÓN INLINE — afordancia liviana
    =========================================== */
@@ -184,6 +204,7 @@ img, video, canvas, svg { max-width: 100%; max-height: 100%; }
   <section class="slide content active">
     <h1 class="slide-title reveal" style="font-size:60px;">El dinero ya llegó, pero no sabemos a qué corresponde</h1>
     <div class="slide-body centered">
+      <div class="pill-tag negocio reveal">Problema de negocio</div>
       <div class="s1-body">
         <div class="s1-stats">
           <div class="reveal">
@@ -235,12 +256,12 @@ img, video, canvas, svg { max-width: 100%; max-height: 100%; }
     <div class="slide-body centered">
       <div class="s2-cards">
         <div class="s2-card warm reveal">
-          <div class="s2-eyebrow">Problema de comportamiento</div>
+          <div class="pill-tag problema" style="margin-bottom:22px;">Problema de comportamiento</div>
           <h3>El corredor no declara el detalle del abono</h3>
           <p>El <b>cliente corporativo o su corredor</b> no informa a Rimac qué facturas cubre cada abono, en el momento del pago o inmediatamente después, para poder realizar las conciliaciones.</p>
         </div>
         <div class="s2-card cool reveal">
-          <div class="s2-eyebrow">Objetivo comportamental</div>
+          <div class="pill-tag objetivo" style="margin-bottom:22px;">Objetivo comportamental</div>
           <h3>Más declaraciones, a tiempo</h3>
           <p><b>Incrementar</b> la cantidad de declaraciones de abonos que clientes y corredores envían a Rimac, para que el equipo pueda <b>conciliar a tiempo</b>.</p>
         </div>
@@ -319,6 +340,23 @@ img, video, canvas, svg { max-width: 100%; max-height: 100%; }
         <div class="s4-callout-block">
           <div class="s4-callout-tag">Próximo paso</div>
           <p>Activar mesas de trabajo para traccionar los tracks priorizados y extender el research a Gran Empresa, Empresarial, Micro y Pequeña empresa.</p>
+        </div>
+      </div>
+      <div class="s4-roadmap reveal">
+        <div class="s4-roadmap-label">Parte de una exploración más grande — cobranzas B2B por segmento</div>
+        <div class="roadmap-row">
+          <div class="rm-step done">
+            <div class="rm-dot"></div>
+            <div class="rm-text"><b>Corporativo</b><span>Este research — completado</span></div>
+          </div>
+          <div class="rm-step next">
+            <div class="rm-dot"></div>
+            <div class="rm-text"><b>Gran Empresa</b><span>Siguiente frente</span></div>
+          </div>
+          <div class="rm-step future">
+            <div class="rm-dot"></div>
+            <div class="rm-text"><b>Growth y Pequeña Empresa</b><span>Por explorar</span></div>
+          </div>
         </div>
       </div>
     </div>
