@@ -327,21 +327,16 @@ svg {
 /* ===========================================
    CORAZÓN — Slide 2: esto es Back to Basics (diagrama radial)
    =========================================== */
-.s3-layout { position: relative; width: 100%; height: 100%; }
+.s3-layout { display: flex; flex-direction: column; }
 .s3-intro {
     font: 22px 'BRSonoma Regular';
     color: var(--text);
     line-height: 1.5;
-    max-width: 900px;
-    margin-bottom: 20px;
+    max-width: 1650px;
+    margin-bottom: 26px;
 }
-.s3-diagram-corner {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 620px;
-}
-.s3-diagram-corner svg { display: block; width: 100%; height: auto; }
+.s3-diagram-row { display: flex; }
+.s3-diagram-row svg { display: block; width: 830px; height: auto; flex-shrink: 0; }
 
 /* ===========================================
    CORAZÓN — Slide 3: el dolor más grande primero (mixto: tesis + dato)
@@ -512,10 +507,10 @@ body.edit-mode [contenteditable="true"]:focus { outline: 1.5px solid var(--terti
             <h2 class="slide-title reveal editable" style="transition-delay:0.05s">
                 Nuestro enfoque: un ecosistema, no piezas sueltas
             </h2>
-            <div class="slide-body full">
+            <div class="slide-body">
                 <div class="s3-layout">
                     <p class="s3-intro reveal editable" style="transition-delay:0.1s">Ese enfoque, propuesto por nuestro equipo de behavioral design, es el que ves aquí: un ecosistema construido para el asesor, que habla un solo idioma. Modelo de Venta, Perfilamiento por motivaciones, Agente copiloto, Playbook y materiales, Toolkit de social selling, Universidad Vida.</p>
-                    <div class="s3-diagram-corner">
+                    <div class="s3-diagram-row">
                         <svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg" aria-label="Diagrama radial: seis componentes de Back to Basics">
                             <path data-draw d="M450,325 L450,95"  fill="none" stroke="var(--line)" stroke-width="3"/>
                             <path data-draw d="M450,325 L710,210" fill="none" stroke="var(--line)" stroke-width="3"/>
