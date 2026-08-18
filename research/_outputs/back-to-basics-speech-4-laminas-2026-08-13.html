@@ -327,17 +327,21 @@ svg {
 /* ===========================================
    CORAZÓN — Slide 2: esto es Back to Basics (diagrama radial)
    =========================================== */
-.s3-col { display: flex; flex-direction: column; align-items: center; }
+.s3-layout { position: relative; width: 100%; height: 100%; }
 .s3-intro {
     font: 22px 'BRSonoma Regular';
     color: var(--text);
     line-height: 1.5;
-    text-align: center;
-    max-width: 1420px;
+    max-width: 900px;
     margin-bottom: 20px;
 }
-.s3-wrap { display: flex; justify-content: center; }
-.s3-wrap svg { display: block; width: 820px; height: auto; }
+.s3-diagram-corner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 620px;
+}
+.s3-diagram-corner svg { display: block; width: 100%; height: auto; }
 
 /* ===========================================
    CORAZÓN — Slide 3: el dolor más grande primero (mixto: tesis + dato)
@@ -508,10 +512,10 @@ body.edit-mode [contenteditable="true"]:focus { outline: 1.5px solid var(--terti
             <h2 class="slide-title reveal editable" style="transition-delay:0.05s">
                 Nuestro enfoque: un ecosistema, no piezas sueltas
             </h2>
-            <div class="slide-body">
-                <div class="s3-col">
+            <div class="slide-body full">
+                <div class="s3-layout">
                     <p class="s3-intro reveal editable" style="transition-delay:0.1s">Ese enfoque, propuesto por nuestro equipo de behavioral design, es el que ves aquí: un ecosistema construido para el asesor, que habla un solo idioma. Modelo de Venta, Perfilamiento por motivaciones, Agente copiloto, Playbook y materiales, Toolkit de social selling, Universidad Vida.</p>
-                    <div class="s3-wrap">
+                    <div class="s3-diagram-corner">
                         <svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg" aria-label="Diagrama radial: seis componentes de Back to Basics">
                             <path data-draw d="M450,325 L450,95"  fill="none" stroke="var(--line)" stroke-width="3"/>
                             <path data-draw d="M450,325 L710,210" fill="none" stroke="var(--line)" stroke-width="3"/>
@@ -531,34 +535,19 @@ body.edit-mode [contenteditable="true"]:focus { outline: 1.5px solid var(--terti
                                 <text class="node-label" x="710" y="223">por motivaciones</text>
                             </g>
                             <g class="svg-reveal" style="transition-delay:0.29s">
-                                <circle cx="710" cy="440" r="68" fill="var(--bg-soft)" stroke="var(--tertiary)" stroke-width="1.5" stroke-dasharray="3 5"/>
-                                <g aria-hidden="true">
-                                    <rect x="699" y="409" width="22" height="14" rx="3" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                    <rect x="706" y="403" width="8" height="4" rx="1" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                    <circle cx="710" cy="417" r="4.2" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                </g>
-                                <text class="node-label" x="710" y="442">Agente</text>
-                                <text class="node-label" x="710" y="459">copiloto</text>
+                                <circle cx="710" cy="440" r="68" fill="var(--bg-soft)" stroke="var(--tertiary)" stroke-width="1.5"/>
+                                <text class="node-label" x="710" y="435">Agente</text>
+                                <text class="node-label" x="710" y="453">copiloto</text>
                             </g>
                             <g class="svg-reveal" style="transition-delay:0.36s">
-                                <circle cx="450" cy="555" r="68" fill="var(--bg-soft)" stroke="var(--tertiary)" stroke-width="1.5" stroke-dasharray="3 5"/>
-                                <g aria-hidden="true">
-                                    <rect x="439" y="524" width="22" height="14" rx="3" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                    <rect x="446" y="518" width="8" height="4" rx="1" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                    <circle cx="450" cy="532" r="4.2" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                </g>
-                                <text class="node-label" x="450" y="557">Playbook y</text>
-                                <text class="node-label" x="450" y="574">materiales</text>
+                                <circle cx="450" cy="555" r="68" fill="var(--bg-soft)" stroke="var(--tertiary)" stroke-width="1.5"/>
+                                <text class="node-label" x="450" y="550">Playbook y</text>
+                                <text class="node-label" x="450" y="568">materiales</text>
                             </g>
                             <g class="svg-reveal" style="transition-delay:0.43s">
-                                <circle cx="190" cy="440" r="68" fill="var(--bg-soft)" stroke="var(--tertiary)" stroke-width="1.5" stroke-dasharray="3 5"/>
-                                <g aria-hidden="true">
-                                    <rect x="179" y="409" width="22" height="14" rx="3" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                    <rect x="186" y="403" width="8" height="4" rx="1" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                    <circle cx="190" cy="417" r="4.2" fill="none" stroke="var(--tertiary)" stroke-width="1.6"/>
-                                </g>
-                                <text class="node-label" x="190" y="442">Toolkit de</text>
-                                <text class="node-label" x="190" y="459">social selling</text>
+                                <circle cx="190" cy="440" r="68" fill="var(--bg-soft)" stroke="var(--tertiary)" stroke-width="1.5"/>
+                                <text class="node-label" x="190" y="435">Toolkit de</text>
+                                <text class="node-label" x="190" y="453">social selling</text>
                             </g>
                             <g class="svg-reveal" style="transition-delay:0.5s">
                                 <circle cx="190" cy="210" r="68" fill="var(--bg-soft)" stroke="var(--tertiary)" stroke-width="1.5"/>
