@@ -2021,6 +2021,86 @@ impulsado por más clientes.
   mecanismo (mezcla hacia especialidad) es una exposición distinta y no cubierta por la tesis tal
   como está escrita hoy.
 
+### 34. El efecto "pie en la puerta" no necesita continuidad temática entre el pedido chico y el grande — la obligación de ser consistente se generaliza a un pedido no relacionado casi tan bien como a uno relacionado
+Freedman & Fraser (1966, F-141 — base citada de la "divulgación progresiva" en tesis 13, nunca
+leído más allá del resumen de una línea) corren dos experimentos, no uno. El primero (encuesta
+telefónica → inventario de cocina en persona) ya está bien resumido en el ledger. El segundo —el
+del cartel de "maneje con cuidado"— es el que aporta el matiz real: cuando el pedido chico previo
+era del **mismo tema** (un cartel pequeño de seguridad vial), 76% aceptó el cartel grande dos
+semanas después, contra apenas 17% de quien recibió el pedido grande directo, sin pedido chico
+previo. Pero cuando el pedido chico era de un **tema no relacionado** (firmar una petición para
+mantener bella California), el pedido grande de seguridad vial igual obtuvo 48% de aceptación —
+menos que la condición temática, pero casi tres veces el nivel base de 17%. Heurística
+transferible: el mecanismo de "pie en la puerta" no depende de que el segundo pedido continúe el
+tema del primero — depende de que la persona ya se haya visto a sí misma como alguien que coopera
+con quien pide. Eso es una oportunidad de secuenciación (un primer contacto de bajo compromiso en
+cualquier tema puede ablandar el terreno para un pedido de datos más sensible después, no solo uno
+del mismo formulario) y a la vez el límite ético más incómodo de tesis 13: si el mecanismo
+funciona incluso sin relación temática, la línea entre "diseño de onboarding" y "manipulación de
+consistencia" no la traza el contenido del pedido, la traza si el cliente entendería, si se lo
+explicaran, por qué el segundo pedido llegó después del primero.
+- **Fuente:** F-141 (🟢A, Freedman, J.L. & Fraser, S.C. 1966, *Journal of Personality and Social
+  Psychology*)
+- **Leído a fondo:** 2026-08-18 (bulidomics.com bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida — MIT (curhan.mit.edu), Quizlet y reseñas académicas del Experimento 2
+  confirman los porcentajes por condición, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 13 (sigue Alta en el
+  mecanismo) — agrega el dato de que el efecto sobrevive incluso sin continuidad temática entre
+  pedidos, lo que amplía dónde aplica la advertencia ética ya declarada en esa tesis, no la crea.
+
+### 35. Un incentivo financiero no compra cambio de conducta durable por sí solo — sin plan de mantenimiento explícito, el efecto se apaga en los primeros meses tras retirarlo
+Vlaev et al. (2019, F-100 — ya citado en el ledger solo como "contrapeso independiente" a la
+evidencia autopublicada de Discovery Vitality, F-99, nunca leído a fondo) da el detalle que el
+resumen de una línea no traía: los efectos de un incentivo financiero sobre conducta de salud
+tienden a **disiparse dentro de los tres meses posteriores a que se retira el incentivo**, salvo
+que la conducta ya se haya vuelto hábito por otra vía. La revisión también precisa las cuatro
+condiciones que hacen que un incentivo funcione mejor mientras está activo: que sea sustancial (no
+simbólico), inmediato (no diferido), contextualizado al momento de la decisión, y medido con
+seguimiento objetivo (no autorreportado). Heurística transferible, directa para cualquier diseño
+tipo Vitality/telemática que `lapuerta` o Rimac evalúen: el incentivo no es el producto final, es
+el puente hacia un hábito — si el plan de producto no tiene un mecanismo explícito para lo que pasa
+cuando el incentivo se retira o se reduce (transición a refuerzo social, a feedback sin premio, a
+identidad del usuario como "buen conductor/asegurado"), el caso de negocio que asume "el hábito
+persiste" está asumiendo la parte que la evidencia independiente dice que es la que más falla.
+Conecta directo con tesis 7 (UBI/telemática): el mecanismo validado ahí es feedback+incentivo, no
+solo incentivo — esta fuente explica por qué esa combinación importa y no alcanza con el premio
+solo.
+- **Fuente:** F-100 (🟢A, Vlaev, I. et al. 2019, *BMC Public Health*, revisión desde economía
+  conductual)
+- **Leído a fondo:** 2026-08-18 (link.springer.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida — PubMed, ResearchGate y la revisión posterior de 2025 en
+  *European Journal of Health Economics* confirman la ventana de disipación de ~3 meses y las
+  cuatro condiciones de efectividad, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis vigente (tesis 7 sigue
+  Alta en que el producto funciona donde se adopta) — precisa el mecanismo de por qué tesis 7 exige
+  feedback+incentivo y no incentivo puro, y da el número concreto (~3 meses) que faltaba para
+  diseñar la fase de mantenimiento de cualquier programa de incentivos propio.
+
+### 36. La usabilidad percibida de un chatbot comercial se mide en cinco palancas independientes de la calidad conversacional — dos de ellas (tiempo de respuesta, señal de privacidad) son más baratas de arreglar que "hacer el modelo más inteligente"
+Borsci & Schmettow (2024, F-150 — citado en el ledger solo como "la escala más parecida al caso de
+uso del agente de Rimac", nunca leído a fondo) re-validan el BUS-11 sobre 3.186 observaciones de 44
+chatbots reales y confirman una estructura de cinco subescalas: **Accesibilidad, Calidad del
+proceso de interacción, Calidad de la información, Privacidad y seguridad, y Tiempo de
+respuesta**. El punto que el resumen de una línea no traía: solo dos de las cinco (calidad del
+proceso de interacción y calidad de la información) dependen directamente de qué tan bien
+razona/responde el modelo — las otras tres son percepción del usuario sobre variables de producto
+que un equipo de ingeniería puede mover sin tocar el modelo conversacional en absoluto. Heurística
+transferible para evaluar o mejorar el agente conversacional de Rimac (tema ya vigilado por
+intuición 20 sobre RAGAS/LLM-as-judge y por el riesgo de medir mal al agente): si una evaluación de
+usabilidad da puntaje bajo, la primera pregunta no debería ser "¿el modelo entiende peor de lo que
+creíamos?" — debería ser "¿en cuál de las cinco palancas está el problema?", porque la respuesta
+más barata y rápida de ejecutar (latencia de respuesta, señales visibles de manejo seguro de datos)
+puede no tener nada que ver con la calidad del modelo que consume la mayor parte del presupuesto de
+mejora.
+- **Fuente:** F-150 (🟢A, Borsci, S. & Schmettow, M. 2024, *Personal and Ubiquitous Computing*)
+- **Leído a fondo:** 2026-08-18 (dl.acm.org bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida — JMIR Human Factors 2026 y ResearchGate confirman los nombres de las cinco
+  subescalas y el tamaño de muestra, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis vigente (el agente
+  conversacional de Rimac no tiene tesis propia todavía en este documento) — da un marco de
+  diagnóstico concreto y citable para cuando el proyecto necesite evaluarlo, con las cinco palancas
+  nombradas en vez de "usabilidad" genérica.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2036,325 +2116,41 @@ impulsado por más clientes.
   directa). Esa racha de "sin novedad" resultó ser en parte un artefacto de ruta de archivo: el
   ledger real sí creció mientras tanto bajo un nombre de archivo distinto (`codice.md`, vigente desde
   el 2026-07-19) — corregido el 2026-07-20 (entrada siguiente).
-- **2026-07-20** — Cambio sustancial: leí el ledger vigente (`codice.md`, ahora
-  con 171 fuentes) y encontré 144 fuentes nuevas (F-28 a F-171) nunca antes
-  incorporadas a esta opinión, producto de `/trinidad`/`/seeker` entre el
-  2026-07-06 y el 2026-07-19 (salud/farmacias/PL 08488, mecanismos de seguros de
-  salud, material visual de venta consultiva, transición venta fría→opt-in,
-  evaluación de agentes conversacionales de IA, y datos de rentabilidad/mercado
-  global de seguros). Sumé 6 tesis nuevas (8-13): riesgo regulatorio de contacto
-  no consentido ya activo contra Pacífico Seguros y BBVA; oportunidad de
-  farmacia+triage IA validada por señal estatal e infraestructura real; riesgo
-  de sobreclamar precisión clínica de IA (caso Babylon); ciclo de rentabilidad
-  del seguro global en máximo de 25 años; choice overload como folklore de UX
-  (la palanca real es estructurar, no podar catálogo); y divulgación progresiva
-  de datos como mecanismo de conversión que funciona incluso sin cambiar la
-  actitud real del cliente hacia su privacidad. Actualicé tesis 4 (paramétrico
-  ahora con mercado/diseño técnico real detrás, no solo instinto) y tesis 7
-  (UBI funciona pero con techo de confianza documentado). Reescribí
-  Oportunidades y Riesgos para reflejar todo esto, incluyendo un riesgo de
-  proceso: la racha de "sin cambios" de la semana pasada fue en parte un
-  artefacto de que se leía una ruta de archivo congelada, no evidencia real de
-  estancamiento del ledger.
-- **2026-07-21** — Primera corrida de la rutina de **revisión profunda** (cada
-  ~3 días, lee 5 fuentes del ledger a fondo en vez de solo su resumen de una
-  línea). Revisadas F-3, F-6, F-9, F-10 y F-16 (las 5 fuentes 🟢A de ID más
-  antiguo, ninguna tenía revisión profunda previa — ver
-  `research/fuentes/revision_profunda.md`). Encontré y corregí un error de
-  atribución en el ledger (F-3 decía "Platteau", son Pitthan & De Witte). Sumé
-  tesis 14 (miopía/narrow framing como mecanismos específicos de subaseguración,
-  distintos de "sesgos" en genérico). Agregué matiz de mecanismo (no solo
-  resultado) a tesis 1 (creencia pesimista + recorte de información como causa
-  de por qué la divulgación no convierte), a tesis 2 (comprensión ≠ preferencia,
-  tope heredado de tesis 1) y a tesis 6 (el ranking por técnica/dominio dentro
-  del propio meta-análisis de Mertens favorece probar defaults primero en
-  salud/finanzas). Ningún cambio de confianza hacia abajo esta vez — las 5
-  lecturas profundizaron el mecanismo sin contradecir el resumen previo.
-  Enriquecí en paralelo 3 nodes de Many Brains (`seguros-comportamiento-mundo-peru.md`,
-  `glosario-seguro-salud-peru.md`, `behavioral-design-estado-disciplina.md`) con
-  las mismas citas, sin mover ni reestructurar nada.
-- **2026-07-21 (proceso diario)** — Corrida separada del proceso diario de
-  refinamiento (distinto de la revisión profunda de más arriba, que corrió antes
-  hoy mismo vía `cronista`). Comparé `codice.md` contra la última entrada de la
-  bitácora: el ledger sigue tope en F-171, sin fuentes nuevas desde la revisión
-  profunda de esta mañana — **sin cambios sustanciales** en evidencia. Sí agregué
-  un matiz a tesis 4 (seguro paramétrico sísmico): conecté el mecanismo de
-  narrow framing de la tesis 14 recién creada con la brecha de aseguramiento
-  sísmico — un hogar que asegura su auto pero no su casa contra sismo no
-  necesariamente desconfía del producto, puede estar evaluando cada póliza de
-  forma aislada en vez de como un mismo portafolio de riesgo. Marcado
-  explícitamente como **instinto** (razonamiento propio conectando dos tesis ya
-  existentes), no como dato nuevo — ningún nivel de confianza numérico cambió
-  por esto. Ninguna otra tesis, oportunidad o riesgo requirió ajuste.
-- **2026-07-21 (segunda corrida del día)** — El ledger creció de F-171 a F-179
-  entre la corrida anterior de hoy y esta: `/trinidad` revisó un artefacto
-  concreto (flyers "Vida Ahorro") y registró 8 fuentes nuevas sobre publicidad
-  de retorno garantizado — efecto de anclaje de cifras prominentes (F-175, A),
-  un modelo regulatorio de referencia que restringe expresar retorno como %
-  (F-172, B, EE.UU.), el marco peruano de Indecopi sobre publicidad engañosa
-  (F-173, B) y un caso real de sanción a una entidad financiera comparable
-  (F-174, BBVA 2025, D), más evidencia de que información incompleta visible
-  al cliente reduce confianza y disposición a comprar (F-176 A, F-177 D) y de
-  que contenido emocional e informativo son complementarios, no sustitutos
-  (F-178 A, F-179 D). Sumé tesis 15 (cifra headline en % = ancla persuasiva +
-  riesgo regulatorio simultáneo, mismo origen) y una oportunidad/riesgo
-  espejados. Confianza fijada en Alta para el patrón de riesgo, Media para si
-  Indecopi sancionaría específicamente el caso "% vs. monto" — el marco
-  peruano no se investigó al mismo nivel de detalle que el modelo de EE.UU.
-  citado como categoría de riesgo. Ninguna tesis previa (1-14) requirió
-  ajuste de confianza. *Limpieza de proceso:* removí una etiqueta `</content>`
-  suelta al final del archivo, remanente de una operación de escritura
-  anterior — no era contenido de El Lobo.
-- **2026-07-22** — Corrida diaria de refinamiento. Leí `codice.md` completo:
-  sigue tope en F-179, sin fuentes nuevas desde la segunda corrida de ayer
-  (2026-07-21) — **sin cambios sustanciales** en evidencia. Repasé las 15
-  tesis contra ese mismo tope y ninguna quedó desalineada con el ledger
-  vigente; tampoco encontré una conexión razonable nueva entre tesis que
-  valiera la pena marcar como instinto sin forzarla — prefiero no sumar un
-  matiz artificial un día después de que la revisión de ayer ya conectó lo
-  disponible (tesis 4↔14 sobre narrow framing, tesis 15 sobre anclaje +
-  riesgo regulatorio). Próximo salto de tesis/confianza queda condicionado a
-  que `/trinidad`, `/seeker`, `/gossip` o `/marketer` registren fuentes
-  nuevas en el ledger, o a que la próxima revisión profunda (rutina de
-  `cronista`, cada ~3 días) encuentre un matiz de mecanismo al leer una
-  fuente ya citada a fondo.
-- **2026-07-22 (revisión profunda)** — Segunda corrida de la rutina de revisión
-  profunda (cada ~3 días). Las 5 fuentes 🟢A de ID más antiguo sin lectura profunda
-  previa eran F-17 a F-21 — el mismo cluster que ya sostenía tesis 6 (crisis del
-  nudge), todas con solo el resumen de una línea del ledger hasta hoy — ver
-  `research/fuentes/revision_profunda.md`. Nota de acceso: los URLs directos
-  (PNAS, Wiley, SSRN, Nature, NBER) devolvieron 403 en esta sesión — el proxy de
-  red del entorno bloquea todo tráfico saliente directo, confirmado con curl
-  crudo, no es un bloqueo específico de estas fuentes — así que la lectura
-  profunda se hizo vía múltiples búsquedas dirigidas que devolvieron contenido
-  sustancial de cada paper (cifras exactas, metodología, citas textuales), no
-  solo el resumen que ya tenía el ledger. Profundicé tesis 6 con tres hallazgos:
-  (1) tres metodologías independientes (RoBMA de Maier, meta-meta-análisis de Hu
-  et al. a ~30M de participantes con caída de d=0.27 a d=0.004, y la
-  descomposición de DellaVigna & Linos que atribuye toda la brecha "voltage
-  drop" a sesgo de publicación) convergen en que el efecto promedio del nudge
-  publicado estaba inflado por sesgo de publicación, no por una brecha
-  laboratorio-vs-mundo-real — con el caveat de que el corpus de Hu et al. es en
-  su mayoría de calidad AMSTAR-2 baja/crítica; (2) el megastudy de Milkman en
-  detalle (54 programas, 61,293 personas) da una receta de diseño concreta: el
-  nudge que más funcionó apuntó al momento de recaída, no a la adherencia
-  general; (3) Chater & Loewenstein documentan que BP acuñó "huella de carbono"
-  en 2004 para reencuadrar el cambio climático como responsabilidad individual
-  mientras cabildeaba contra regulación sistémica — mecanismo de negocio, no
-  solo académico, para el sesgo hacia el i-frame, que conecté como riesgo nuevo
-  (no solo de ROI sino reputacional) a la práctica de vender solo "educación
-  financiera" sin rediseñar producto. Ningún cambio de confianza hacia abajo;
-  tesis 6 se mantiene en Alta, ahora con base metodológica más amplia. Enriquecí
-  en paralelo el node `_nodes/behavioral-design-estado-disciplina.md` (pista
-  empírica y tabla de rigurosidad) con las mismas citas, sin mover ni
-  reestructurar nada.
-- **2026-07-23** — Corrida diaria de refinamiento. El ledger creció de F-179 a
-  F-202 desde la última corrida (2026-07-22): una investigación `/trinidad`
-  completa sobre el futuro de los asesores de seguros frente a la venta 100%
-  digital (F-180 a F-192, node nuevo `_nodes/futuro-asesores-seguros-venta-digital.md`)
-  y una ampliación del node `mecanismos-seguros-salud.md` con datos de balance
-  financiero/rentabilidad de seguros de salud en EE.UU. (F-193 a F-202) —
-  **cambio sustancial**. Sumé tesis 16 (el asesor no desaparece con lo digital,
-  se redistribuye por complejidad de producto; el reclamo, no la venta, es
-  donde falla lo 100%-digital) y tesis 17 (la utilidad real del seguro de salud
-  vive en la integración vertical con farmacia/PBM, no en el margen de
-  suscripción — dato sostenido por un filing SEC primario, 🟢A). Tesis 17
-  refuerza directamente a tesis 9 (farmacia-frente-primario en Perú): ya no es
-  solo oportunidad de acceso/distribución, es el mismo mecanismo de utilidad
-  del asegurador de salud más grande del mundo — marcado explícitamente como
-  instinto en la extrapolación a Perú, porque no hay dato local de margen de
-  farmacia vs. margen de aseguradora en el ledger todavía. Añadí 4
-  oportunidades y 3 riesgos nuevos reflejando ambas tesis (herramientas para el
-  asesor en el momento del reclamo en vez de digitalizarlo por completo;
-  integración farmacia+seguro como motor de utilidad; estrategia explícita de
-  costo de medicamentos especializados/GLP-1). Ninguna tesis previa (1-15)
-  requirió ajuste de confianza — el ledger nuevo no las tocó.
-- **2026-07-24** — Corrida a pedido explícito del usuario: "revisa todo el conocimiento sobre la
-  venta de seguros de vida en RIMAC y analízalo con el lobo para reforzar los argumentos". Audité
-  el Bloque 4 del Playbook del Asesor (`_nodes/proyecto-back-to-basics-ffvv-vida.md` §5,
-  Hallazgo 2) — 9 "sesgos cognitivos" (C.1-C.9) sin una sola cita en el documento original.
-  Primera pasada trabajó solo sobre el resumen del proyecto (sin numeración C.n exacta); al pedir
-  el usuario aplicar los cambios, releí el documento real `Playbook_del_asesor.md` y corregí la
-  numeración + encontré una novena técnica (C.4, sesgo del presente) que la primera pasada no
-  había cubierto. Resultado final: 8 de 9 sí tienen respaldo fundacional real (Kahneman, Tversky,
-  Thaler, Cialdini, y F-3 ya existente para sesgo del presente), la novena (C.7, "regla del 10x")
-  resultó ser una heurística de metas de un libro de ventas motivacional (Cardone 2011), no
-  ciencia conductual — mal categorizada junto a las demás. Sumé tesis 18 con este hallazgo, un
-  riesgo nuevo (enseñar la regla del 10x con la misma autoridad que un sesgo real), y F-220 a
-  F-228 al ledger (8 fuentes nuevas + reutilización de F-3 ya existente: 6 fundacionales de
-  sesgos reales, 1 cita real con encaje de dominio cuestionable, 1 fuente que confirma que algo
-  NO es ciencia conductual, y Sweller 1988 para fortalecer Dx3 del Modelo de Experiencia de Venta
-  Vida con base académica explícita). Inserté las 8 citas directamente en el documento real del
-  Playbook (no solo en el ledger) y envié la versión corregida al usuario. Ninguna tesis previa
-  (1-17) requirió ajuste de
-  confianza — es evidencia nueva sobre un documento del proyecto, no sobre el ledger externo
-  existente.
-- **2026-07-24 (proceso diario)** — Corrida automática diaria de refinamiento, separada de la
-  auditoría a pedido del usuario que ya corrió hoy mismo (entrada anterior). Confirmé que
-  `codice.md` sigue tope en F-228 — verifiqué la secuencia completa F-1 a F-228 sin huecos, sin
-  fuente nueva registrada desde la corrida anterior de hoy — **sin cambios sustanciales** en
-  evidencia. Repasé las 18 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger
-  vigente. No forcé ninguna conexión nueva entre tesis solo por completar el paso — la corrida de
-  hoy ya conectó lo disponible (tesis 18 sobre el Playbook). Próximo salto de tesis/confianza
-  queda condicionado a que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o `cronista` registren
-  fuentes nuevas en el ledger.
-- **2026-07-25** — Corrida diaria de refinamiento. El ledger creció de F-228 a F-235 desde la
-  última corrida (2026-07-24): una investigación `/trinidad` sobre el glosario de seguro de vida
-  en lenguaje sencillo y el perfilamiento por motivación (nodes nuevos
-  `_nodes/glosario-seguro-vida-peru.md` y `_nodes/matriz-productos-vida-rimac.md`, ampliación de
-  `_nodes/proyecto-back-to-basics-ffvv-vida.md`) — **cambio sustancial**. Sumé tesis 19
-  (perfilar por motivación, no por demografía, tiene ahora respaldo A+A específico de servicios
-  financieros — y puede exponer un punto ciego estructural en el propio esquema de `lapuerta`,
-  construido mayormente sobre variables demográficas) y tesis 20 (en vida individual, el freno
-  más caro no es la incomprensión del producto sino un precio percibido 7-12x inflado; solo
-  saliencia+calculadora lo revierte, no lenguaje simple solo). Añadí 3 oportunidades (calculadora
-  de precio en el punto de entrada, abrir el copy con "¿vale la pena?" en vez de tecnicismos,
-  perfilar campañas por motivación) y 2 riesgos nuevos (glosario/calculadora que omite la
-  distinción legal dolo/culpa grave vs. omisión en declaración de salud; el propio esquema de
-  `lapuerta` sin evaluar frente a la señal de que la demografía predice poco en este sector).
-  Ninguna tesis previa (1-18) requirió ajuste de confianza — el ledger nuevo no las tocó
-  directamente, aunque tesis 19 se conecta con instinto explícito al diseño de `lapuerta` sin
-  tocar su esquema todavía. Mantuve la bitácora sin podar — con 14 días de historial
-  (2026-07-12 a hoy) sigue dentro de la ventana de ~30 días indicada.
-- **2026-07-26** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  78584ad→b74f2a1) y leí `codice.md` completo: sigue tope en F-235, sin fuente nueva registrada
-  desde la corrida de ayer (2026-07-25) — **sin cambios sustanciales** en evidencia. Repasé las 20
-  tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente. No forcé ninguna
-  conexión nueva entre tesis solo por completar el paso — tesis 19 y 20 (las más recientes) ya
-  quedaron conectadas con el resto de la cartera en la corrida de ayer. Próximo salto de
-  tesis/confianza queda condicionado a que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o
-  `cronista` registren fuentes nuevas en el ledger. Bitácora con 15 días de historial
-  (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
-- **2026-07-27** — Corrida diaria de refinamiento. El ledger creció de F-235 a F-328 desde la
-  última corrida (2026-07-26): investigación `/trinidad` de 360° sobre tendencias de diseño (node
-  nuevo `_nodes/tendencias-diseno-innovacion.md`, 92 fuentes) — **cambio sustancial**. Es el node menos
-  centrado en seguros de los que ha entrado al ledger hasta hoy (cubre producto/UX, IA, design
-  systems, consultoras de diseño, mercado laboral del gremio), así que filtré con criterio de
-  negocio qué de ahí es accionable para Rimac en vez de sumarlo todo: tomé solo lo que el propio
-  node ya marca como "aplicable directamente al contexto Rimac/seguros" o que conecta con tesis ya
-  vigentes de esta opinión. Sumé tesis 21 (el ROI del diseño que sostenga cualquier caso de negocio
-  interno —incluido el deck al VP de Back to Basics, tesis 18— debe argumentarse por mecanismo, no
-  por multiplicador; las 4 cifras de ROI de diseño más citadas globalmente no tienen fuente
-  primaria auditable) y tesis 22 (la personalización con IA puede reducir conversión, no
-  aumentarla, cuando el dato es sensible y la privacidad está saliente — conecta directo con tesis
-  7/UBI y tesis 13/divulgación progresiva; el mecanismo que sí calibra confianza es
-  verificabilidad, no explicabilidad genérica). Añadí un matiz al riesgo ya existente sobre el
-  agente conversacional de Rimac (agregar explicabilidad sin verificabilidad puede generar
-  sobre-confianza, no calibrarla) y 3 riesgos/2 oportunidades nuevos espejando ambas tesis. Ninguna
-  tesis 1-20 requirió ajuste de confianza — el ledger nuevo las toca solo por conexión razonada
-  (tesis 7, 13), no por evidencia directa nueva sobre seguros/salud/Perú. *Nota aparte, no ledger:*
-  el node `proyecto-back-to-basics-ffvv-vida.md` (documentación interna del proyecto, no evidencia
-  externa de `cronista`) registra que el lineamiento de CUA pasó de "vigente" a "definitivo" el
-  2026-07-25: RIMAC cerró por completo el contacto en frío sin consentimiento (Estrategias 2 y 3
-  quedan inválidas por definición, no por falta de validación de Compliance) y formalizó un
-  mecanismo de tarjeta+QR para la única vía que queda (Estrategia 4). No lo convertí en tesis nueva
-  por no ser evidencia externa citable con F-n, pero es la validación interna más fuerte posible de
-  tesis 8 (riesgo regulatorio de contacto no consentido) y tesis 16 (el asesor se redistribuye
-  hacia canales de consentimiento, no desaparece) — la registro aquí como instinto/contexto de
-  proyecto, no como fuente nueva del ledger. Bitácora con 16 días de historial (2026-07-12 a hoy),
-  dentro de la ventana de ~30 días — sin podar todavía.
-- **2026-07-27 (segunda corrida del día)** — Corrida diaria de refinamiento disparada por segunda
-  vez en la misma fecha. Confirmé `main` actualizado (HEAD ya en `e304055`, sin fast-forward
-  pendiente) y leí `codice.md` completo: sigue tope en F-328, idéntico al que ya procesó la corrida
-  de hoy más temprano (mismo día, commit anterior) — **sin cambios sustanciales** en evidencia, cero
-  fuentes nuevas entre una corrida y otra. Repasé las 22 tesis contra ese mismo tope: ninguna quedó
-  desalineada, y no forcé ninguna conexión nueva entre tesis solo por completar el paso — la corrida
-  anterior de hoy mismo ya agotó las conexiones razonables disponibles (tesis 21, 22, y el matiz
-  sobre el agente conversacional de Rimac). Próximo salto de tesis/confianza sigue condicionado a
-  que `/trinidad`, `/seeker`, `/gossip`, `/marketer` o `cronista` registren fuentes nuevas en el
-  ledger. Bitácora con 16 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días —
-  sin podar todavía.
-- **2026-07-28** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  78584ad→b3fa77b) y leí `codice.md` completo: sigue tope en F-328, idéntico al de las dos
-  corridas de ayer (2026-07-27) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
-  desde entonces. Repasé las 22 tesis contra ese mismo tope: ninguna quedó desalineada con el
-  ledger vigente. No forcé ninguna conexión nueva entre tesis solo por completar el paso — las dos
-  corridas de ayer ya agotaron las conexiones razonables disponibles entre tesis 7, 13, 21 y 22.
-  Próximo salto de tesis/confianza sigue condicionado a que `/trinidad`, `/seeker`, `/gossip`,
-  `/marketer` o `cronista` registren fuentes nuevas en el ledger. Bitácora con 17 días de
-  historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
-- **2026-07-29** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  78584ad→c76a3bf) y leí `codice.md` completo: el ledger creció de F-328 a F-379 desde la última
-  corrida (2026-07-28) — **cambio sustancial**, 51 fuentes nuevas en tres clusters: (1) un documento
-  externo del usuario sobre steering conductual hacia atención primaria/triaje remoto (F-329 a
-  F-358, sin node propio en este repo — cruzado directamente contra esta opinión), (2) ampliación de
-  `_nodes/futuro-asesores-seguros-venta-digital.md` con los casos Ethos y Bowtie a mayor detalle más
-  tres citas del deck interno "Back to Basics" (F-359 a F-371), y (3) node nuevo
-  `_nodes/venta-vida-digital-hibrida-latam.md` sobre venta de vida en Brasil/Chile/Colombia (F-372 a
-  F-379). Sumé tesis 23 (el steering hacia canal más barato ahorra costo real, pero es el mecanismo
-  con la reactancia más fuerte documentada del sector cuando se percibe como interés del pagador —
-  con matiz que refuta el supuesto de que opt-out convierte mejor que opt-in, F-357). Amplié tesis 16
-  con el detalle de Ethos/Bowtie (ninguno es "cero humano" real) y, sobre todo, con el dato LATAM —
-  más transferible a Perú que Corea/China: Azos (Brasil) crece vía 9,000+ corredores, no D2C;
-  bancaseguros controla hasta 80% de la distribución de vida en Brasil; Betterfly (Chile) cerró
-  operaciones en 5 países. Añadí un matiz a tesis 10: el colapso de Babylon lo gatilló el pagador
-  (Centene no renovó), no el paciente — validar precisión clínica no basta si el caso de negocio no
-  convence a quien firma el contrato. Sumé 2 oportunidades y 3 riesgos nuevos reflejando tesis 23 y
-  el refuerzo LATAM de tesis 16. Ninguna tesis 1-22 requirió ajuste de confianza a la baja — toda la
-  evidencia nueva refuerza o matiza tesis ya vigentes, ninguna las contradice. Bitácora con 18 días
-  de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
-- **2026-07-29 (revisión profunda, tercera corrida del día)** — Rutina de revisión profunda
-  (cada ~3 días): no busca fuentes nuevas en la web, relee a fondo 5 fuentes 🟢A que el ledger
-  ya tenía registradas pero solo con el resumen de una línea de `cronista` — las primeras 🟢A
-  aún sin lectura profunda, en orden de ID (F-23, F-36, F-40, F-41, F-42; F-3 a F-21 ya se
-  habían releído en corridas anteriores del 2026-07-21/22, registradas en
-  `research/fuentes/revision_profunda.md`). Ninguna tesis cambió de dirección; las cinco
-  matizaron tesis ya vigentes con detalle que el resumen breve no dejaba ver: **tesis 7** (F-23,
-  UBI) — el RCT es preregistrado (N=1,449, NCT06101251, 4 brazos, 12 semanas) y el efecto se
-  sostuvo en seguimiento posterior a la intervención, pero lo validado es feedback+incentivo
-  ("UBI simulado"), no pricing dinámico real — separa el mecanismo conductual del vehículo
-  comercial. **Tesis 9** (F-36, F-40, F-41, farmacia+telesalud Perú) — el factor de riesgo
-  dominante de automedicación no responsable es que el dispensador no pide receta (OR=29,
-  muy por encima de cualquier otro factor), lo que convierte "corregir esa práctica" en
-  objetivo de diseño explícito, no efecto colateral; y el crecimiento de telesalud peruana
-  cayó tras el pico pandémico — ventana de oportunidad de corto plazo, no tendencia asegurada.
-  **Tesis 10** (F-42, Omaolo Finlandia) — el contraejemplo positivo a Babylon separa
-  explícitamente seguridad (97.6%) de coincidencia exacta con el humano (53.7%): el gate de un
-  triage IA debe fijarse en la primera métrica, no en la segunda. Actualicé `revision_profunda.md`
-  con las 5 fuentes de este ciclo y enriquecí los nodes `modelo-salud-ia-farmacias-peru.md` y
-  `behavioral-design-estado-disciplina.md` en Many Brains con el mismo detalle, sin mover ni
-  reestructurar nada. Bitácora con 18 días de historial (2026-07-12 a hoy) — sin podar todavía.
-- **2026-07-30** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  78584ad→ef3a2a3) y leí `codice.md` completo: el ledger creció de F-379 a F-398 desde la última
-  corrida (2026-07-29) — **cambio sustancial** en volumen, pero el crecimiento entero es la
-  iteración 2 de un solo node (`_nodes/tendencias-diseno-innovacion.md`), que ya venía marcado como el menos
-  centrado en seguros de todos los que ha recibido esta opinión (mismo criterio de filtro que
-  apliqué el 2026-07-27). Integré con criterio de negocio solo lo transferible a Rimac/seguros, no
-  el lote completo: sumé tesis 24 (generative UI — interfaces que la IA genera dinámicamente ya
-  tienen evidencia real de que suben la preferencia declarada pero fallan específicamente en
-  soporte y consistencia entre sesiones, F-380 a F-386; caución directa para cualquier interfaz
-  dinámica que Rimac evalúe para su agente conversacional o un configurador/simulador). Amplié
-  tesis 21 con una quinta cadena de eco de cita en design systems ("135% de ROI" es una calculadora
-  de 2022, no un estudio medido, F-397) y con un caso paralelo fuera de diseño: el "impuesto de
-  verificación" en desarrollo asistido por IA (F-388, preprint sin revisión por pares) — mismo
-  principio de tesis 21 ("argumentar por mecanismo, no por multiplicador"), ahora aplicable
-  también a cualquier cifra de productividad con IA sobre las propias herramientas del proyecto
-  (`lapuerta`, `cerrajero`, el agente conversacional). Sumé dos riesgos nuevos: shadow AI sin
-  gobierno de dato corporativo (60% de adopción sin lineamiento en el dato brasileño más reciente,
-  F-389 — superficie de fuga de dato regulada por LPDP para cualquier equipo de una aseguradora,
-  no solo tema de productividad) y el precedente de MercadoLibre desvinculando 119 roles de UX en
-  LatAm citando integración con IA (F-391 — decisión corporativa ya documentada en la región, no
-  apuesta especulativa). Filtré explícitamente sin integrar: F-387 (revisión de diseño público del
-  gobierno UK, sin conexión directa a seguros), F-390/F-392 (circulación del meme "AI slop" en
-  español y cifra agregada de despidos tech con atribución autodeclarada — mismo descuento ya
-  aplicado a F-282/F-283 en la iteración 1), F-393 a F-395 (estado gremial del service design,
-  incluida su comunidad en Lima — señal social sin puente de negocio directo a Rimac hoy), F-396
-  (ya absorbida como refuerzo de tesis 21, no tesis propia), y F-398 (cotización de Figma en bolsa
-  — sin conexión de negocio con el proyecto). Ninguna tesis 1-23 requirió ajuste de confianza a la
-  baja — la evidencia nueva no las toca, es un node distinto. Bitácora con 19 días de historial
-  (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
-- **2026-07-31** — Corrida diaria de refinamiento. Confirmé `main` actualizado (sin cambios
-  pendientes) y leí `codice.md` completo: sigue tope en F-398, idéntico al que ya procesó la
-  corrida de ayer (2026-07-30) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
-  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h.
-  Repasé las 24 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no
-  forcé ninguna conexión nueva entre tesis solo por completar el paso — la corrida de ayer ya
-  agotó las conexiones razonables disponibles (tesis 21/generative UI, shadow AI, MercadoLibre).
-  Próximo salto de tesis/confianza sigue condicionado a que alguna de las skills de investigación
-  registre fuentes nuevas en el ledger, o a que la próxima revisión profunda (cada ~3 días, la
-  última corrió el 2026-07-29 sobre F-23/F-36/F-40/F-41/F-42) encuentre un matiz de mecanismo al
-  leer a fondo una fuente ya citada solo por su resumen. Bitácora con 20 días de historial
-  (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-07-20 a 2026-07-31** — *(Resumida el 2026-08-18 al cumplir la ventana de ~30 días; el
+  detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con
+  su propia fecha de "Actualizado".)* Doce corridas que llevaron el ledger de F-171 a F-398 y la
+  cartera de tesis de 7 a 24. Hitos principales: **2026-07-20** — se detectó que el ledger real
+  vivía bajo `codice.md` (no `registro_fuentes.md`), incorporando de golpe 144 fuentes represadas;
+  sumó tesis 8-13 (riesgo regulatorio de contacto no consentido, farmacia+triage IA, riesgo de
+  sobreclamar precisión clínica, ciclo de rentabilidad de 25 años, choice overload como folklore,
+  divulgación progresiva de datos). **2026-07-21** — primera revisión profunda (F-3, F-6, F-9,
+  F-10, F-16: corrigió autoría de F-3, sumó tesis 14 miopía/narrow framing) más una segunda corrida
+  del día que sumó tesis 15 (ancla de cifra % + riesgo regulatorio Indecopi, 8 fuentes nuevas sobre
+  el flyer "Vida Ahorro"). **2026-07-22** — segunda revisión profunda (F-17 a F-21): confirmó por
+  tres metodologías independientes que el efecto promedio del nudge no existe, sin bajar la
+  confianza de tesis 6. **2026-07-23** — investigación `/trinidad` sobre asesores vs. venta digital
+  y balance financiero de salud EE.UU.: sumó tesis 16 (el asesor se redistribuye, no desaparece) y
+  17 (la utilidad real vive en farmacia/PBM, filing SEC primario). **2026-07-24** — auditoría a
+  pedido del usuario del Playbook del Asesor RIMAC: sumó tesis 18 (8 de 9 "sesgos" del Bloque 4 sí
+  tienen base académica; el noveno, "regla del 10x", es heurística de ventas sin evidencia,
+  mezclada con la misma autoridad). **2026-07-25** — glosario de vida y perfilamiento por
+  motivación: sumó tesis 19 (perfilar por motivación expone punto ciego en `lapuerta`, construido
+  sobre demografía) y 20 (precio percibido 7-12x inflado como freno real en vida individual).
+  **2026-07-27** — node de tendencias de diseño (92 fuentes, filtrado con criterio de negocio): sumó
+  tesis 21 (ROI de diseño debe argumentarse por mecanismo, ninguna cifra citada globalmente tiene
+  fuente primaria auditable) y 22 (personalización con IA puede bajar conversión si el dato es
+  sensible y la privacidad está saliente); registró como instinto/contexto de proyecto (no F-n) que
+  RIMAC cerró por completo el contacto en frío sin consentimiento. **2026-07-29** — 51 fuentes
+  nuevas (steering conductual, casos Ethos/Bowtie, LATAM vida digital-híbrida): sumó tesis 23
+  (steering hacia canal barato ahorra costo pero genera la reactancia más fuerte del sector cuando
+  se percibe como interés del pagador) y amplió tesis 16 con el dato LATAM (Azos vía 9,000+
+  corredores, bancaseguros 80% de distribución en Brasil); tercera revisión profunda (F-23, F-36,
+  F-40, F-41, F-42) matizó tesis 7, 9 y 10 sin bajar ninguna confianza. **2026-07-30** — iteración 2
+  del node de diseño: sumó tesis 24 (generative UI sube preferencia declarada pero falla en soporte
+  y consistencia entre sesiones) y dos riesgos nuevos (shadow AI sin gobierno de dato, precedente
+  MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
+  tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
+  suma de tesis nueva sobre evidencia que la refuerza.
 - **2026-08-01** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
   02ad91d→d8aa4a2) y leí `codice.md` completo: sigue tope en F-398, idéntico al que ya procesó la
   corrida de ayer (2026-07-31) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
@@ -2822,3 +2618,39 @@ impulsado por más clientes.
   con las tres fuentes leídas hoy. Bitácora con 29 días de historial (2026-07-20 a hoy), dentro de
   la ventana de ~30 días — sin podar todavía; la corrida del 2026-08-20 sigue siendo la programada
   para evaluar podar/resumir.
+- **2026-08-18** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward cf8c4a7 sobre el commit de ayer, working tree limpio) y verifiqué `codice.md` por
+  conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope exacto que
+  procesó la corrida de ayer — **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, quinto día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
+  ~3 días, no vence hoy). Sí corrió la rutina diaria de intuición (decimotercera corrida desde el
+  2026-08-06): de 134 fuentes 🟢A confirmadas por conteo propio en el ledger, 33 ya tenían lectura
+  profunda del Lobo — de las 110 restantes elegí 3 ancladas a tesis existentes que solo tenían el
+  resumen de una línea nunca leído a fondo: F-141 (Freedman & Fraser 1966, el estudio fundacional
+  de pie-en-la-puerta que ya sostiene tesis 13, pero solo por su Experimento 1), F-100 (Vlaev et
+  al. 2019, revisión de incentivos financieros en salud, citada solo como "contrapeso" a Discovery
+  Vitality/F-99 sin lectura completa) y F-150 (Borsci & Schmettow 2024, escala BUS-11 de
+  usabilidad de chatbots, citada solo como "la más parecida al caso Rimac" sin detalle de sus
+  subescalas). Las tres bloqueadas por el proxy en su URL directa (bulidomics.com,
+  link.springer.com, dl.acm.org); reconstruidas vía búsqueda dirigida contra agregadores (MIT/
+  curhan.mit.edu, PubMed, ResearchGate, JMIR Human Factors) que confirman detalle nuevo, no solo
+  el resumen ya citado. Sumé las entradas 34, 35 y 36 de Intuición acumulada: (34) el efecto
+  pie-en-la-puerta del Experimento 2 de Freedman & Fraser sobrevive incluso cuando el pedido chico
+  y el grande son de temas no relacionados (48% de aceptación vs. 17% base, contra 76% cuando sí
+  comparten tema) — amplía dónde aplica la advertencia ética ya declarada en tesis 13, sin
+  cambiar su confianza; (35) un incentivo financiero de salud tiende a disipar su efecto dentro de
+  los ~3 meses posteriores a retirarlo salvo que ya se haya vuelto hábito por otra vía — precisa
+  por qué tesis 7 (UBI/telemática) exige feedback+incentivo combinados y no incentivo puro; (36) la
+  usabilidad percibida de un chatbot comercial se descompone en cinco palancas casi independientes
+  de la calidad del modelo (accesibilidad, calidad de interacción, calidad de información,
+  privacidad/seguridad, tiempo de respuesta) — da un marco de diagnóstico concreto para cuando el
+  proyecto evalúe el agente conversacional de Rimac, con dos de las cinco palancas más baratas de
+  arreglar que "mejorar el modelo". Ninguna tesis de negocio cambió de confianza por esta corrida
+  — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes.
+  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30
+  días de historial (2026-07-20 a hoy) — cumple la ventana de ~30 días; podé/resumí las entradas
+  del 2026-07-20 al 2026-07-31 en un solo bloque resumido para mantener el archivo legible, y dejo
+  el detalle completo desde 2026-08-01 en adelante.

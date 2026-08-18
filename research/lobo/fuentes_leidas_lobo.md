@@ -50,3 +50,6 @@
 | F-119 | 🟢 A | 2026-08-17 | Intuición 31 — un metaanálisis con efecto promedio cero no cierra el debate; verificar si hay una réplica rival que lo reencuadre por moderadores |
 | F-180 | 🟢 A | 2026-08-17 | Intuición 32 — la comisión de un intermediario puede financiar mejor selección de riesgo y más competencia de precio, no solo distribución/confianza |
 | F-198 | 🟢 A | 2026-08-17 | Intuición 33 — utilidad que sube mientras el volumen propio cae es señal de mezcla de producto, no de demanda sana; verificar el mecanismo antes de citarla |
+| F-141 | 🟢 A | 2026-08-18 | Intuición 34 — el efecto pie-en-la-puerta sobrevive incluso sin continuidad temática entre el pedido chico y el grande (48% vs. 17% base) |
+| F-100 | 🟢 A | 2026-08-18 | Intuición 35 — un incentivo financiero de salud disipa su efecto en ~3 meses tras retirarlo salvo que ya se haya vuelto hábito por otra vía |
+| F-150 | 🟢 A | 2026-08-18 | Intuición 36 — la usabilidad percibida de un chatbot comercial se descompone en 5 palancas, solo 2 dependientes de la calidad del modelo |
