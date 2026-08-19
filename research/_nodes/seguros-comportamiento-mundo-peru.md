@@ -286,6 +286,10 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 
 ## Conexiones
 
+- [[escalamiento-a-humano-en-flujos-de-bot|Escalamiento a humano en flujos de bot]] — un canal
+  automatizado sin salida a humano refuerza exactamente la causa #1 de desconfianza documentada
+  aquí (falta de información/atención) sobre el ~48% que ya desconfía.
+
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — el ramo salud (§7.1, el de mayor
   crecimiento) se desarrolla en profundidad ahí: mecanismos que funcionan bajo la presión de costo
   y demografía descrita en §7.

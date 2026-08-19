@@ -241,6 +241,11 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
 
 ## Conexiones
 
+- [[escalamiento-a-humano-en-flujos-de-bot|Escalamiento a humano en flujos de bot]] — define
+  **qué conducta medir** además de la satisfacción declarada (pedido de humano, opt-out por paso,
+  momento del escalamiento dentro de la curva de frustración) y advierte contra optimizar el KPI
+  de *containment*, que puede premiar al bot por retener usuarios que en realidad se rindieron.
+
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — una mala experiencia con el agente de IA alimenta
   directamente el problema de desconfianza (~48%) ya documentado en ese node; medir y

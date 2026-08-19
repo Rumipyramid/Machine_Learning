@@ -594,6 +594,11 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
 
 ## Conexiones
 
+- [[escalamiento-a-humano-en-flujos-de-bot|Escalamiento a humano en flujos de bot]] — el paso a
+  atención humana que este modelo asume debe ofrecerse **temprano y visible** (evidencia
+  preregistrada), es **obligatorio por norma de OSIPTEL en Perú desde 2023**, y humanizar el bot
+  ante un usuario angustiado puede ser contraproducente.
+
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — este node es el diseño concreto
   para Perú; ese node aporta el marco global de mecanismos (capitación, atención primaria,
   Singapur/NHS) que valida y matiza este diseño (ver su §3 y su síntesis §4).
