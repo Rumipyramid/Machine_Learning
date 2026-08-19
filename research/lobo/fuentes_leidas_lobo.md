@@ -53,3 +53,6 @@
 | F-141 | 🟢 A | 2026-08-18 | Intuición 34 — el efecto pie-en-la-puerta sobrevive incluso sin continuidad temática entre el pedido chico y el grande (48% vs. 17% base) |
 | F-100 | 🟢 A | 2026-08-18 | Intuición 35 — un incentivo financiero de salud disipa su efecto en ~3 meses tras retirarlo salvo que ya se haya vuelto hábito por otra vía |
 | F-150 | 🟢 A | 2026-08-18 | Intuición 36 — la usabilidad percibida de un chatbot comercial se descompone en 5 palancas, solo 2 dependientes de la calidad del modelo |
+| F-334 | 🟢 A | 2026-08-19 | Intuición 37 — desconfianza en un asegurador puede ser vacío de información, no juicio negativo ya formado |
+| F-87 | 🟢 A | 2026-08-19 | Intuición 38 — las ganancias de esperanza de vida se desaceleran en los más viejos; no extrapolar longevidad como tendencia lineal |
+| F-428 | 🟢 A | 2026-08-19 | Intuición 39 — un beat de ingresos no neutraliza un indicador líder que empeora, sobre todo con narrativa de disrupción por IA plausible |

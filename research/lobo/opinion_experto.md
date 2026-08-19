@@ -2101,6 +2101,90 @@ mejora.
   diagnóstico concreto y citable para cuando el proyecto necesite evaluarlo, con las cinco palancas
   nombradas en vez de "usabilidad" genérica.
 
+### 37. La desconfianza en un asegurador no siempre es un veredicto negativo ya formado — a veces es un vacío de información que todavía no permite juzgar
+Estudio holandés (2025, F-334 — citado en el ledger solo por su hallazgo de una línea, "los
+consumidores desconfían por conflicto financiero de interés", nunca leído a fondo) sobre el sistema
+de competencia gestionada de Países Bajos, con metodología mixta (grupos focales + encuesta), da un
+cuadro más matizado que el resumen: la mayoría de consumidores **sí sabe** que el asegurador compra
+atención en su nombre y **sí cree** que esa tarea le corresponde, con una confianza "razonable
+aunque frágil" en su competencia para comprarla bien — pero no tiene información suficiente para
+formarse un juicio real sobre qué tan bien lo hace, y por default asume que el asegurador es una
+organización puramente comercial. Heurística transferible: "desconfianza" en un asegurador no es un
+solo fenómeno — hay que distinguir entre un veredicto negativo ya formado ("sé lo que hace y no me
+gusta") y un vacío informativo ("no tengo con qué juzgar, así que asumo el peor marco por defecto").
+Tesis 1 (divulgar mejor no convierte) habla de explicar el *producto*; esta fuente habla de un tipo
+de información distinta — mostrar específicamente *cómo* el asegurador negocia/compra en nombre del
+cliente — que podría mover una confianza "frágil" de un modo que un glosario de términos no logra,
+porque el objetivo no es comprensión de cláusulas sino percepción de de qué lado está el asegurador.
+Es hipótesis testeable, no dato peruano confirmado — no forzar como palanca probada.
+- **Fuente:** F-334 (🟢A, *Health Economics, Policy and Law*, Cambridge, 2025 — autoría no
+  especificada en el resumen del ledger)
+- **Leído a fondo:** 2026-08-19 (cambridge.org bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida — resultado indexado por el propio buscador confirma metodología mixta focus
+  groups+encuesta y los dos hallazgos centrales, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis vigente — matiza tesis
+  1 con una distinción de mecanismo (vacío informativo vs. juicio negativo) que el resumen de una
+  línea no traía, aplicable al vacío §4.2 de reactancia por desvío del asegurador que ya cita el
+  documento externo del usuario.
+
+### 38. Las ganancias de esperanza de vida se están desacelerando en países de altos ingresos, sobre todo en los más viejos — no extrapolar la tendencia histórica de longevidad como lineal hacia adelante
+Callaway, Strozza, Christensen et al. (BMC Public Health 2025, F-87 — citado en el ledger solo como
+"mecanismo directo entre vivir más y siniestrarse más", nunca leído a fondo) analizan la Human
+Mortality Database y el Global Burden of Disease y encuentran que, aunque la esperanza de vida
+sigue subiendo en países de altos ingresos, el **ritmo de mejora se ha desacelerado**,
+específicamente en los "oldest-old" (los de mayor edad) — y documentan el mecanismo detrás del
+aumento de siniestralidad con la edad: mayor prevalencia de enfermedades crónicas, síndromes
+geriátricos y multimorbilidad. Heurística transferible: cualquier supuesto actuarial o de producto
+(vida, renta vitalicia, salud de largo plazo) que extrapole "la gente vive cada vez más" como
+tendencia lineal indefinida corre el riesgo de sobreestimar el riesgo de longevidad a futuro si esa
+desaceleración ya está en curso en el segmento de edad relevante — la pregunta correcta no es solo
+"¿la esperanza de vida sube?" sino "¿a qué tasa, y esa tasa se está frenando en el tramo de edad que
+me importa pricear?". Sin dato peruano en esta fuente (es de países de altos ingresos), pero es un
+chequeo de higiene aplicable antes de fijar cualquier supuesto de mortalidad/longevidad a largo
+plazo, y converge con la advertencia ya vigente de la intuición 17 sobre auditar qué variable queda
+afuera de una fórmula, aplicada aquí a una tendencia temporal en vez de a una variable estática.
+- **Fuente:** F-87 (🟢A, Callaway, J.; Strozza, C.; Christensen, K. et al. 2025, *BMC Public
+  Health*, vol. 25, art. 4395)
+- **Leído a fondo:** 2026-08-19 (link.springer.com bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida — ResearchGate y la propia indexación de Springer Nature confirman autoría,
+  fuentes de datos y el hallazgo de desaceleración en oldest-old, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis vigente (ninguna tesis
+  de vida/longevidad tiene número propio todavía en este documento) — deja un chequeo de higiene
+  actuarial documentado para cuando el proyecto sí necesite fijar un supuesto de mortalidad/
+  longevidad de largo plazo.
+
+### 39. Un beat de ingresos no neutraliza un indicador líder que empeora — cuando ambos divergen y hay una narrativa de disrupción estructural plausible, pesar el indicador líder, no el titular
+Accenture reportó Q3 FY26 (F-428 — citado en el ledger solo por el hallazgo negativo de que Song no
+se reporta como segmento separado, nunca leído a fondo el resto del caso) con ingresos de USD 18.7B
+(+6% interanual) — un "beat" superficial — y aun así cayó ~18-20% en un solo día, su peor caída como
+empresa pública, porque (a) recortó su guía de crecimiento a 3-4% (desde 3-5%) y (b) reportó una
+caída de 2% en nuevos *bookings* — leído por analistas (Bloomberg Intelligence, TD Cowen recortando
+su precio objetivo en más de USD 100) no como una narrativa temporal sino como evidencia de que la
+IA generativa ya sustituye trabajo de consultoría facturable por hora. El propio hallazgo del F-428
+del ledger completa el cuadro: Accenture no reporta a Song (su unidad creativa/CX, el tipo de
+trabajo más fácil de automatizar) como segmento separado en sus filings SEC — la pregunta "¿esa
+unidad crece o no?" es estructuralmente no verificable con datos públicos, mismo patrón de opacidad
+que el node de innovación ya documentó en Adobe (F-306). Heurística doble: (1) un titular de
+ingresos positivo no cierra el caso si el indicador líder (bookings, guía a futuro) se mueve en
+sentido contrario — pesar el indicador líder, no el rezagado, cuando divergen; (2) cuando una
+empresa de servicios profesionales deja de reportar por separado el segmento que más debería mostrar
+sustitución por IA, la opacidad en sí misma es una señal, no un dato neutral que falta. Aplicación
+directa: el mismo mecanismo de sustitución de trabajo facturable por hora que golpeó a la
+consultoría de mayor prestigio del mundo es la amenaza estructural de largo plazo para cualquier
+canal de asesoría humana en seguros — el argumento de tesis 16 ("el asesor no desaparece, se
+redistribuye por complejidad") necesita vigilar activamente esta señal en vez de darla por sentada
+indefinidamente, sobre todo para el trabajo de asesor más rutinario/facturable por hora, no el de
+mayor complejidad de producto.
+- **Fuente:** F-428 (🟢A, Accenture plc, filing 8-K/SEC, Q3 FY26, 18-jun-2026)
+- **Leído a fondo:** 2026-08-19 (sec.gov bloqueado por proxy 403, ya señalado en el propio ledger;
+  reconstruido vía búsqueda dirigida — Investing.com, Motley Fool, Yahoo Finance y cobertura de
+  analistas confirman la caída de ~18-20% en un día, el recorte de guía, la caída de bookings y la
+  narrativa de sustitución por IA, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 16 (sigue Alta en la dirección
+  general) — agrega una señal de vigilancia activa específica (sustitución de trabajo facturable por
+  IA en consultoría, con opacidad de reporte del segmento más expuesto) que la tesis, tal como está
+  redactada, todavía no cubre explícitamente.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2654,3 +2738,41 @@ mejora.
   días de historial (2026-07-20 a hoy) — cumple la ventana de ~30 días; podé/resumí las entradas
   del 2026-07-20 al 2026-07-31 en un solo bloque resumido para mantener el archivo legible, y dejo
   el detalle completo desde 2026-08-01 en adelante.
+- **2026-08-19** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward 8a90dc2→ccba768, el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
+  exacto que procesó la corrida de ayer — **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, sexto día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
+  ~3 días, no vence hoy — siete días sin corrida nueva). Sí corrió la rutina diaria de intuición
+  (decimocuarta corrida desde el 2026-08-06): de 137 fuentes 🟢A confirmadas por conteo propio en el
+  ledger, 36 ya tenían lectura profunda del Lobo — de las 101 restantes elegí 3 al azar puro (sin
+  anclar a tesis existentes, a diferencia de las últimas corridas): F-334 (estudio holandés 2025,
+  confianza del consumidor en el asegurador como comprador prudente de atención — citado en el
+  ledger solo por su hallazgo de conflicto de interés, nunca leído a fondo), F-87 (Callaway et al.
+  2025, BMC Public Health, envejecimiento poblacional y longevidad) y F-428 (filing 8-K de Accenture
+  Q3 FY26, citado solo por el hallazgo negativo de que Song no se reporta como segmento separado).
+  Las tres bloqueadas por el proxy en su URL directa (cambridge.org, link.springer.com, sec.gov, el
+  último ya señalado como bloqueo conocido en el propio ledger); reconstruidas vía búsqueda dirigida
+  (el buscador indexó directamente los hallazgos centrales de F-334 y F-87 pese al bloqueo de la
+  URL; F-428 se reconstruyó contra cobertura de prensa financiera — Investing.com, Motley Fool,
+  Yahoo Finance) que confirman detalle nuevo, no solo el resumen ya citado. Sumé las entradas 37, 38
+  y 39 de Intuición acumulada: (37) la desconfianza en un asegurador no siempre es un veredicto
+  negativo ya formado — puede ser un vacío de información que el consumidor no puede llenar, y por
+  default asume el peor marco ("puramente comercial"); distinción de mecanismo que matiza tesis 1
+  sin cambiarle la confianza; (38) las ganancias de esperanza de vida se están desacelerando en
+  países de altos ingresos, sobre todo en los más viejos — chequeo de higiene antes de fijar
+  cualquier supuesto actuarial de longevidad como tendencia lineal indefinida; (39) un beat de
+  ingresos no neutraliza un indicador líder que empeora (bookings, guía) cuando hay una narrativa de
+  disrupción estructural plausible detrás — el caso Accenture (caída de ~18-20% en un día pese a
+  +6% de ingresos, por sustitución de trabajo facturable por IA) es una señal de vigilancia activa
+  para tesis 16, no solo una curiosidad de otro sector. Ninguna tesis de negocio cambió de confianza
+  por esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las
+  tesis existentes, aunque la entrada 39 sí liga una amenaza estructural concreta (sustitución de
+  trabajo facturable por IA) a la vigilancia futura de tesis 16. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 31 días de
+  historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin podar todavía; evaluar poda
+  de la primera semana del bloque actual (2026-08-01 a 2026-08-07) en las próximas corridas si la
+  ventana sigue creciendo.
