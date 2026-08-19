@@ -5,7 +5,12 @@
 > capa de **evidencia externa** — el estado y las decisiones internas del Copiloto AI de RIMAC
 > viven en `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md`, que consume este node.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v1.2
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-19 · Versión: v1.3
+> (v1.3: ⛔ **La advertencia de aplicabilidad se resuelve — AIDA corre sobre Google, no sobre
+> Copilot.** Los límites numéricos de §2 y §3 quedan **descartados** para ese caso; todo lo
+> demás —troceado, un tema por documento, sin tablas, fuentes no superpuestas y la
+> cuantificación de F-469 a F-475 y F-490 a F-492— **se sostiene igual**, porque no es de
+> Microsoft: es de cómo funciona la recuperación.)
 > (v1.2: **§7 corregido** — la cuantificación que este node declaraba inexistente sí existe; la trajo el research de Felipe. F-490 a F-492 cuantifican las reglas de §4 y §8, y F-492 responde con evidencia la disyuntiva reentrenar-vs-ordenar. Reconciliación agregada: **troceado por estructura ≠ troceado semántico avanzado** — el primero usa encabezados existentes y rinde; el segundo calcula cortes y no justifica su costo (NAACL 2025). El solapamiento del 20-25% que el fabricante trae por default es prácticamente inútil e infla el índice ~25%: **partir por encabezado y no invertir en solapamiento**.)
 > (v1.1, mismo día: agrega §8 — **uno o varios agentes**, y por qué consolidar bases de conocimiento
 > es distinto de consolidar la interfaz. Cambio estructural: el node pasa de cubrir *cómo se escribe
@@ -33,13 +38,25 @@ vive en la *disposición visual* de una lámina (columnas, cajas, jerarquía tip
 no sobrevive a la extracción de texto: llega al agente como una lista de fragmentos sueltos sin
 la relación que los hacía significar algo.
 
-> ⚠️ **ADVERTENCIA DE APLICABILIDAD (2026-08-14).** Este node describe **Microsoft Copilot**. La
-> auto-interrogación de AIDA devolvió la función `transfer_to_agent`, que es de **Google ADK**, no
-> de Copilot Studio — ver §11/H4 de `[[diagnostico-copiloto-ai-asesor-vida-rimac]]`. **Hasta
-> confirmar el framework real de AIDA con TI, los límites numéricos de §2 y §3 (36.000 caracteres,
-> 7 MB/200 MB, tablas no parseadas, PDF imagen ilegible) están en suspenso para ese caso.** Los
-> principios de §1, §4, §5 y §8 se sostienen en cualquier plataforma RAG — son propiedades de cómo
-> funciona la recuperación, no del proveedor.
+> ⛔ **RESUELTO (2026-08-19) — AIDA NO CORRE SOBRE COPILOT, CORRE SOBRE GOOGLE.** Confirmado en la
+> reunión con la jefatura (§18.1 de `[[diagnostico-copiloto-ai-asesor-vida-rimac]]`). La señal de la
+> auto-interrogación era correcta: `transfer_to_agent` es de **Google ADK**.
+>
+> **Qué significa para este node, aplicado a AIDA:**
+> - ⛔ **Los límites numéricos de §2 y §3 quedan DESCARTADOS, no suspendidos** — 36.000 caracteres,
+>   7 MB/200 MB, ≤300 páginas son de Microsoft y **no rigen aquí**. No usarlos para dimensionar la
+>   intervención ni citarlos en material de RIMAC.
+> - ✅ **Todo lo demás se sostiene, y con más fuerza:** §1, §4, §5, §7 y §8 son propiedades de **cómo
+>   funciona la recuperación**, no del proveedor — troceado por encabezado, un tema por documento,
+>   sin tablas para el agente, fuentes no superpuestas por dominio, y la cuantificación de F-469 a
+>   F-475 y F-490 a F-492. **Ninguna de esas fuentes es de Microsoft.**
+> - ⚠️ **Queda abierto P15:** qué es exactamente "es de Google" (Gemini Enterprise, Agentspace, ADK a
+>   medida). De eso dependen los límites reales de archivo y la capacidad de inferencia — que **hay
+>   que medir, no suponer**. El supuesto anterior ("es Copilot, luego infiere poco") estuvo
+>   condicionando el diagnóstico.
+>
+> **El título de este node sigue siendo correcto** —describe Copilot y agentes RAG en general—, pero
+> **su parte específica de Copilot dejó de aplicar al caso que lo originó.**
 
 ⚠️ **Fecha de caducidad declarada.** Todo lo que sigue describe el comportamiento de un producto
 comercial que cambia rápido. Las cifras concretas (36.000 caracteres, 7 MB, 512 MB) hay que

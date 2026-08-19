@@ -1,6 +1,15 @@
 # Release 1 · La base de conocimiento de AIDA (Vida)
 
-**Propuesta de alcance ejecutable.** v2.1 · 2026-08-18
+**Propuesta de alcance ejecutable.** v2.2 · 2026-08-18
+
+> **v2.2 (2026-08-18) — la Fase 4 cambia de naturaleza.** Behavioral Design **ya construyó 2
+> prototipos**, uno de práctica agéntica de objeciones sobre Copilot (con puntaje, reporte a
+> jefatura y retroalimentación a AIDA). La Fase 4 deja de ser *prototipar capacidades* y pasa a ser
+> **evaluar los prototipos que existen**. Incorpora el proceso aclarado de captura de casuística
+> (AIDA captura las mejores respuestas durante el entrenamiento), sus **dos diferencias con el
+> mecanismo validado** y el arreglo (**separar la captura de la etiqueta**), la advertencia sobre el
+> **reporte individual a jefatura** (F-495) y la acotación honesta de lo que el entrenamiento puede
+> prometer (F-496, F-497, F-498). Detalle completo en el node §17.
 
 > **v2.1 (2026-08-18) — trazabilidad y horizonte.** Cuatro cambios pedidos por Alejo, aplicados
 > aquí y en la versión presentable (artifact `0bb009a6`): (1) **citación (Autor, año) en línea** de
@@ -281,29 +290,67 @@ forzada con fragmento textual, descripción de láminas. **Requisito de entrada:
 la Etapa 1 tiene que haber mostrado que la falla que queda es de recuperación y no de contenido —
 son fallas distintas y se arreglan distinto (capas A vs. C de la taxonomía).
 
-### Fase 4 · Prototipar capacidades antes de construirlas
+### Fase 4 · Entrenamiento, casuística y los prototipos que ya existen
 
-⭐ **Esta fase existe porque hay una pregunta que el Release 1 no responde: qué más debería hacer
-AIDA.** El Release 1 mejora lo que ya hace. No dice si el asesor necesita otra cosa.
+> ⭐ **Reformulada el 2026-08-18.** Esta fase estaba escrita como "prototipar capacidades antes de
+> construirlas". **Ya no aplica en esos términos: Behavioral Design ya construyó 2 prototipos.** La
+> fase deja de ser *construir prototipos* y pasa a ser **evaluar los que hay y decidir cuáles se
+> promueven** — más barato y más rápido de lo que estaba planteado.
 
-La forma barata de averiguarlo es **prototipar la capacidad y ponerla frente a asesores antes de
-pedirle a nadie que la construya** — una capacidad prototipada y rechazada cuesta días; la misma
-capacidad construida y rechazada cuesta un trimestre.
+**Qué existe hoy.** Uno de los prototipos es una **funcionalidad agéntica de práctica sobre Copilot**:
+el asesor practica con **casos ficticios de objeciones**, recibe consejos y **es puntuado**; más la
+capacidad de guardar los puntajes, **reportarlos a la jefatura** y **retroalimentar a AIDA**.
 
-**Qué prototipar, y por qué esas tres:**
+⚠️ **P11 abierta:** el brief dice "2 prototipos" y describe uno. Se asume que el segundo es el
+prototipo sobre Claude del Plan Piloto, **sin confirmar**.
 
-| Capacidad | Por qué es candidata |
-|---|---|
-| **Apoyo en objeciones durante el cierre** | Es el momento de mayor carga y donde el asesor hoy no tiene a quién preguntar |
-| **Casuística de los mejores asesores** | El conocimiento que gana ventas hoy vive en conversaciones, no en documentos — y por eso ninguna base lo tiene |
-| **Registro asistido** | El asesor registra en Salesforce lo que ya le contó a AIDA. Es la duplicación más visible de los seis frentes |
+**Las tres capacidades candidatas, y cómo se relacionan:**
 
-⭐ **Y hay un recurso que ya existe y no está siendo usado para esto: el prototipo construido con
-Claude del Plan Piloto.** Hoy se lee como una herramienta que compite con AIDA. **No debería
-competir: debería ser el banco de prototipado** — el lugar donde una capacidad se prueba con
-asesores reales antes de decidir si se lleva a AIDA. Eso convierte una ambigüedad del proyecto
-(¿cuál de las dos herramientas es la buena?) en una división de trabajo clara: **AIDA produce, el
-prototipo explora.**
+| Capacidad | Por qué es candidata | Estado |
+|---|---|---|
+| **Entrenar habilidades de venta** | Interés declarado del equipo; y es **el mecanismo de captura** de la casuística | **Prototipo construido** |
+| **Casuística de los mejores asesores, recuperable por situación** | El conocimiento que gana ventas vive en conversaciones, no en documentos — por eso ninguna base lo tiene | Se **produce** desde la práctica |
+| **Registro asistido** | El asesor registra en Salesforce lo que ya le contó a AIDA. La duplicación más visible de los seis frentes | Sin prototipar |
+
+⭐ **El proceso, aclarado: AIDA captura las mejores respuestas durante el entrenamiento con AIDA.**
+Eso resuelve el problema real, que nunca fue *querer* la casuística sino **adquirirla** — pedirle a
+alguien que la escriba falla dos veces: no lo hace, y si lo hace escribe la versión declarada. La
+práctica la produce como subproducto de algo que el asesor ya tiene razón para hacer.
+
+**Pero el mecanismo validado no funciona exactamente así, y las diferencias deciden si el efecto se
+reproduce** (F-476):
+
+| | Brynjolfsson, Li & Raymond (2025) | La propuesta |
+|---|---|---|
+| Qué se capturó | Conversaciones **reales con clientes** | Respuestas de **práctica** |
+| Cómo se definió "la mejor" | Por el **desenlace**, sobreponderando a los agentes con mejor desempeño real | Por el **puntaje que AIDA misma asigna** |
+
+⭐ **El arreglo, y no cuesta trabajo extra: separar la captura de la etiqueta.** La captura sigue en
+la práctica; **qué entra al corpus canónico lo decide el desempeño real** (conversión, persistencia),
+no el puntaje de práctica. Sin eso, AIDA puntúa, selecciona lo que ella puntuó y enseña el resultado
+— un bucle que nada externo corrige. Y la señal de desenlace **ya hay que levantarla para la Etapa 3**.
+
+⚠️ **El reporte individual a la jefatura puede invertir el signo de todo lo demás.** Kluger & DeNisi
+(1996) — 607 tamaños de efecto: el feedback mejora en promedio (d = 0,41) pero **más de un tercio de
+las intervenciones lo empeoró**, y el moderador es si dirige la atención a la tarea o a la persona
+(F-495). Un puntaje que llega al jefe es lo segundo. Peor: si el puntaje es evaluativo, el asesor
+practica para puntuar bien — **y eso contamina justamente el corpus que se quiere construir**. Las
+dos funcionalidades se atacan entre sí. **Recomendación:** al asesor su puntaje completo; a la
+jefatura **agregado y por tema, no por persona**.
+
+**Qué esperar, honestamente** — tres resultados que acotan la promesa:
+
+- La práctica simulada rinde **igual que practicar con una persona real** (27 ECAs, 1.480
+  participantes, F-497). **El valor es la disponibilidad y el costo, no la superioridad pedagógica.**
+- Contra ninguna instrucción el efecto es grande; contra instrucción activa cae a 0,30-0,66 (F-498).
+  Si ya hay role-play con la jefatura, el delta es modesto.
+- ⚠️ **En profesiones, la práctica deliberada explica menos del 1% de la varianza de desempeño** —la
+  categoría más débil de las cinco medidas (F-496). **No se puede vender el entrenamiento como la
+  palanca de productividad.** Lo que sí sostiene la evidencia es la **captura de casuística**.
+
+⚠️ **Y una colisión que hay que decidir, no dejar que ocurra: Sales Coach ya entrena.** Si AIDA
+entrena, hay **dos agentes que enseñan** — la misma falla que se está diagnosticando en los
+documentos, un nivel más arriba. **P12.**
 
 ### Fase 5 · La arquitectura de agentes
 
@@ -421,7 +468,10 @@ F-490, F-491 y F-492, todas verificables.
 | 10 | **OHR-Bench** (ICCV 2025) · **REAL-MM-RAG** (IBM, ACL 2025) · **ColPali** (ICLR 2025) · *Applied Sciences* (2026) · **«The Power of Noise»** (SIGIR 2024) + reproducción (SIGIR 2026) | F-469 a F-475 |
 | 11 | **Microsoft Learn** (2026) — SharePoint para Copilot, índice semántico, límites de fuentes, orquestación. ⚠️ **Documentación de fabricante**; reverificar antes de decidir arquitectura | F-479, F-480 |
 | 12 | **METR (2025)** — impacto de IA en desarrolladores experimentados. ⚠️ Preprint | F-488 |
-| 13 | **«Judging the Judges»** (2026) · **T2-RAGBench** (2026) · **«When More Documents Hurt RAG»** (2026) · **Microsoft ISE** (2024). ⚠️ Preprints y documentación técnica: **usar la dirección, no la magnitud** | F-482, F-476 |
+| 13 | **Kluger & DeNisi (1996)**, *Psychological Bulletin* 119(2), 254-284 — 607 tamaños de efecto / 23.663 observaciones; **más de un tercio de las intervenciones de feedback empeoró el desempeño** | F-495 |
+| 14 | **Macnamara, Hambrick & Oswald (2014)**, *Psychological Science* 25(8) — 88 estudios; **profesiones <1% de varianza explicada**. ⚠️ Controversia académica activa sobre la magnitud | F-496 |
+| 15 | **JMIR (2024)** 26:e56195 — 27 ECAs / 1.480 participantes, metodología Cochrane · **Cook et al. (2011)**, *JAMA* 306(9) y su revisión comparativa (2012). ⚠️ Dominio salud: dirección transferible, magnitud a validar | F-497, F-498 |
+| 16 | **«Judging the Judges»** (2026) · **T2-RAGBench** (2026) · **«When More Documents Hurt RAG»** (2026) · **Microsoft ISE** (2024). ⚠️ Preprints y documentación técnica: **usar la dirección, no la magnitud** | F-482, F-476 |
 
 ### 9.3 Lo que quedó deliberadamente fuera
 

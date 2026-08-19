@@ -7,7 +7,26 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-14 · Versión: v2.0
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-19 · Versión: v2.2
+> (v2.2: **§18 — la reunión con la jefatura.** ⭐ **P9 RESUELTA: AIDA no corre sobre Copilot,
+> corre sobre Google** — los límites numéricos de Copilot quedan **descartados**, no suspendidos.
+> ⛔ **No hay sandbox de AIDA** (confirmado por el equipo de la herramienta): ninguna
+> funcionalidad nueva se puede testear en AIDA, lo que convierte a los prototipos en el único
+> banco de pruebas disponible. **El frente de entrenamiento queda deliberadamente fuera de la
+> fase 1** por decisión de Alejo — §17 se reencuadra como expediente para cuando se decida, no
+> como propuesta activa. Registra las **3 funciones declaradas de AIDA**, la **estrategia
+> política de la presentación** (no confrontar a la PO: contrastar la herramienta contra su
+> propia declaración), los **6 fixes** de la fase 1 y la **metodología de jueces por área**.)
+> (v2.1: **§17 — la capacidad de entrenamiento y el bucle de casuística.** Behavioral Design
+> **ya construyó 2 prototipos**, uno de práctica agéntica de objeciones sobre Copilot con
+> puntaje, reporte a jefatura y retroalimentación a AIDA — la Fase 4 deja de ser *prototipar*
+> y pasa a ser *evaluar lo que ya existe*. Aclara el proceso de captura de casuística (AIDA
+> captura las mejores respuestas durante el entrenamiento) y marca sus **dos diferencias con
+> el mecanismo validado de F-476** —práctica vs. conversación real, y puntaje propio vs.
+> desenlace real— con el arreglo: **separar la captura de la etiqueta**. ⚠️ Advierte que el
+> **reporte individual a jefatura puede invertir el signo** (F-495) y contaminar el corpus que
+> se quiere construir. Acota la promesa del entrenamiento con F-496/F-497/F-498. Abre **P11**
+> (cuál es el segundo prototipo) y **P12** (¿el prototipo reemplaza a Sales Coach?).)
 > (v2.0: §16 fija la **estructura definitiva del Release 1 en tres etapas** —diagnóstico de la
 > herramienta · intervención · testeo—, que manda sobre cualquier descripción anterior. Agrega la
 > **velocidad** como segundo objetivo (y su medición en la Etapa 1), y nombra el "full con puntos de
@@ -426,6 +445,16 @@ equipos distintos, "una sola puerta de entrada" es un problema de gobierno antes
 **P5 — ¿Existe medición previa?** ¿Hay logs de conversaciones, tasa de uso, consultas sin respuesta?
 El Plan Piloto declaraba que **el tracking del prototipo no existía todavía** al 24/07 — confirmar
 si se habilitó, porque de eso depende si F1 se levanta de datos o de entrevistas.
+
+**P11 — ¿Cuál es el segundo prototipo de Behavioral Design?** (abierta en v2.1) El brief dice "2
+prototipos" y describe uno —la práctica agéntica de objeciones sobre Copilot—. Se asume que el otro
+es el prototipo sobre Claude del Plan Piloto, **pero no está confirmado**. Si es un tercer artefacto,
+hay un inventario incompleto de lo que el equipo ya construyó. Ver §17.1.
+
+**P12 — ¿El prototipo de práctica reemplaza a Sales Coach, lo reemplaza en parte, o es un cuarto
+agente?** (abierta en v2.1) Si AIDA adquiere capacidad de entrenamiento hay **dos agentes que
+enseñan**. Las tres respuestas son defendibles; **no decidirlo no lo es** — por omisión quedan dos
+agentes enseñando modelos de venta que nadie garantizó que coincidan. Ver §17.6.
 
 ---
 
@@ -1354,6 +1383,334 @@ esfuerzo adicional**.
 - **Estratificar por antigüedad desde el diseño** — el efecto se concentra en novatos (F-476); sin
   el corte, un efecto real puede leerse como nulo.
 - **La conversión no es desenlace primario** — el ciclo de venta de Vida excede la ventana.
+
+---
+
+## 17. La capacidad de entrenamiento y el bucle de casuística (v2.1)
+
+Aporte de Alejo, 2026-08-18. Tres piezas de información que **cambian el estado de la Fase 4**: deja
+de ser "prototipar capacidades" y pasa a ser "**ya hay prototipos; falta la evidencia sobre ellos**".
+
+> ⚠️ **Reencuadre (v2.2, 2026-08-19).** En la reunión con la jefatura, **Alejo sacó deliberadamente
+> el frente de entrenamiento de la fase 1** — por dos razones que dijo explícitamente: requiere otro
+> nivel de desarrollo, y **"la literatura no sostiene que el asesor tenga que entrenar a través de
+> AIDA"**, siendo una idea que vino de la propuesta de la herramienta, no de la necesidad levantada.
+>
+> ⭐ **Esa cautela ahora tiene respaldo citable: F-496** — en profesiones, la práctica deliberada
+> explica **menos del 1% de la varianza de desempeño**, la categoría más débil de las cinco medidas.
+> Lo que dijo por criterio, la evidencia lo sostiene.
+>
+> **Entonces este §17 no es una propuesta activa: es el expediente** de lo que hay que tener resuelto
+> el día que se decida entrar — y sobre todo, de los dos errores que serían caros de cometer
+> (§17.3 la etiqueta, §17.4 el reporte a jefatura). El orden correcto lo fijó la propia reunión:
+> **primero el diagnóstico de uso y potencial, después la decisión de desarrollar.**
+
+### 17.1 Lo que se sabe ahora
+
+1. **Entrenar habilidades de venta con AIDA** es una de las capacidades que el equipo quiere probar.
+2. **El proceso de captura de casuística se aclara:** AIDA **captura las mejores respuestas durante
+   el entrenamiento con AIDA**. La práctica no es solo práctica — es el mecanismo de adquisición.
+3. **Behavioral Design ya construyó 2 prototipos.** Uno es una **funcionalidad agéntica de práctica
+   sobre Copilot**: el asesor practicaba con **casos ficticios de objeciones**, recibía consejos y
+   **era puntuado**; más la capacidad de **guardar los puntajes**, **reportar resultados a la
+   jefatura**, y **retroalimentar las capacidades de AIDA**.
+
+⚠️ **Supuesto declarado:** el brief dice "2 prototipos" y describe uno. Se asume que el segundo es el
+**prototipo sobre Claude del Plan Piloto** ya documentado en §0 — pero **no está confirmado**, y si
+es un tercer artefacto distinto, hay que inventariarlo. **Pregunta P11.**
+
+### 17.2 Por qué la aclaración del proceso es el aporte más valioso, y a la vez el más frágil
+
+**Lo valioso.** El problema de la casuística de los mejores asesores nunca fue *quererla* — fue
+**adquirirla**. Ese conocimiento no está escrito, y pedirle a alguien que lo escriba falla dos veces:
+no lo hace, y si lo hace escribe la versión declarada, no la que ejecuta. **La práctica lo produce
+como subproducto de una actividad que el asesor tiene su propia razón para hacer.** Eso resuelve la
+adquisición sin pedirle trabajo extra a nadie. Es la mejor idea del bloque.
+
+**Lo frágil.** El mecanismo validado no funciona exactamente así. Vale la pena poner la comparación
+al lado, porque las dos diferencias no son de detalle — deciden si el efecto se reproduce:
+
+| | Brynjolfsson, Li & Raymond (2025) — F-476 | La propuesta |
+|---|---|---|
+| **Qué se capturó** | Conversaciones **reales con clientes** | Respuestas de **práctica** sobre casos ficticios |
+| **Cómo se definió "la mejor"** | Por el **desenlace**: el caso se resolvió. Las conversaciones se **sobreponderaron según el desempeño real** del agente | Por el **puntaje que AIDA misma asigna** contra una rúbrica |
+
+De ahí salen dos riesgos distintos:
+
+**Riesgo 1 · La práctica no es la conducta.** Lo que un asesor dice cuando lo están puntuando es lo
+que **cree** que es la respuesta correcta, no necesariamente lo que hace frente al cliente. El corpus
+resultante es de práctica **declarada**. No es fatal —sigue siendo mejor que nada, y sigue siendo lo
+que hoy no existe— pero hay que nombrarlo, porque cambia lo que se puede prometer.
+
+**Riesgo 2 · El bucle cerrado, y este sí es serio.** Si AIDA puntúa, AIDA selecciona las respuestas
+mejor puntuadas, y AIDA después enseña ese corpus, entonces **nada externo corrige nunca la rúbrica**.
+La rúbrica pasa a ser la definición operativa de "vender bien" y deriva libre de si efectivamente
+vende. Es el mismo problema de fondo que el proyecto ya diagnosticó en la base de conocimiento
+—una fuente que se valida a sí misma— reproducido un nivel más arriba.
+
+### 17.3 El arreglo: separar la captura de la etiqueta
+
+⭐ **No hay que renunciar a la idea. Hay que anclar el bucle a una señal de afuera.**
+
+- **La captura sigue igual** — durante la práctica, que es lo barato y lo que funciona.
+- **La etiqueta viene de afuera:** qué respuestas entran al corpus canónico se decide por el
+  **desempeño real** del asesor (conversión, persistencia de la póliza), **no por su puntaje de
+  práctica**. Se sobreponderan las respuestas de quien vende bien de verdad, que es exactamente lo
+  que hizo F-476.
+- **Y no cuesta trabajo extra:** esa señal de desenlace **ya hay que levantarla** para la Etapa 3 del
+  Release 1. Es el mismo dato, usado dos veces.
+
+Beneficio secundario: si la casuística de los mejores-por-resultado rinde distinto que la de los
+mejores-por-rúbrica, **eso mismo es un hallazgo** — dice si la rúbrica está midiendo lo que importa.
+
+### 17.4 El reporte a la jefatura puede invertir el signo de todo lo demás
+
+Esta es la pieza más barata de implementar y la más fácil de equivocar, porque **parece una función
+gratis**. No lo es.
+
+- **Kluger & DeNisi (1996)** — 607 tamaños de efecto, 23.663 observaciones. El feedback mejora el
+  desempeño en promedio (d = 0,41), pero **más de un tercio de las intervenciones de feedback lo
+  empeoró**. El moderador es **hacia dónde dirige la atención**: el feedback sobre **la tarea** ayuda;
+  el feedback sobre **la persona** perjudica. Un puntaje que llega a tu jefe es, por construcción,
+  feedback sobre la persona (F-495).
+- **Y hay un efecto de segundo orden propio de este diseño:** si el puntaje es evaluativo, el asesor
+  deja de usar la práctica para fallar barato y empieza a usarla para puntuar bien. **Eso contamina
+  justamente el corpus que se quiere construir** — se capturan actuaciones para la jefatura, no
+  mejores respuestas. **Las dos funcionalidades se atacan entre sí.**
+
+**Recomendación — es decisión de diseño, no técnica:**
+
+| Destinatario | Qué ve | Por qué |
+|---|---|---|
+| **El asesor** | Su puntaje, su progreso, todo | Feedback de tarea, es el que funciona |
+| **La jefatura** | **Agregado y por tema, no por persona** — "en tu equipo la objeción de precio es la debilidad" | Accionable para el jefe sin convertir la práctica en examen |
+| **Individual a jefatura** | Solo si se decide después, declarado, y **con el corpus ya construido** | Evita contaminar la captura en el momento en que más importa |
+
+Si el negocio igual quiere reporte individual —decisión legítima—, entonces como mínimo **conservar
+un modo de práctica que no puntúe ni reporte**, para que siga existiendo un lugar donde fallar.
+
+### 17.5 Qué esperar de la capacidad de entrenamiento, honestamente
+
+Tres resultados verificados que acotan la promesa:
+
+- **La práctica simulada funciona tan bien como practicar con una persona real** — meta-análisis de
+  27 ECAs, 1.480 participantes: sin diferencia significativa en habilidades de comunicación,
+  razonamiento ni desempeño global (F-497). ⭐ **Léase bien: el valor no es que enseñe mejor. Es la
+  disponibilidad y el costo** — se practica un martes a las 11 de la noche sin agendar a nadie. Ese
+  es el argumento correcto, y es suficientemente bueno.
+- **La simulación gana mucho contra no hacer nada y poco contra otra instrucción activa** — efectos
+  grandes vs. ninguna intervención, pero de 0,30 a 0,66 contra otros métodos (F-498). Si hoy ya hay
+  role-play con el jefe, el delta es modesto; si no hay nada, es grande.
+- ⚠️ **Y el techo incómodo:** en la meta-analítica de práctica deliberada, **las profesiones son la
+  categoría donde la práctica explica menos varianza de desempeño: por debajo del 1%** — contra 26%
+  en juegos, 21% en música, 18% en deportes (F-496). **No se puede vender el entrenamiento como la
+  palanca de productividad.** Lo que sí sostiene la evidencia es el otro lado: **la práctica como
+  mecanismo de captura de casuística** (§17.2), que es un argumento de conocimiento, no de
+  aprendizaje.
+
+### 17.6 La colisión con Sales Coach, que nadie ha nombrado todavía
+
+Sales Coach es el **frente 5** del mapa de §2.1: entrenamiento en fases iniciales. **Si AIDA adquiere
+capacidad de entrenamiento, hay dos agentes que enseñan** — y dos agentes que enseñan sin una fuente
+común es exactamente la falla que este proyecto está diagnosticando en los documentos, reproducida un
+nivel más arriba.
+
+§8.1 ya había resuelto la forma —Sales Coach **detrás de la puerta, como modo separado**, apoyado en
+Sitzmann 2011 (F-219) sobre el valor de un espacio de práctica seguro y distinto de la conversación
+real. **Lo nuevo es que ese "modo separado" ya existe: es el prototipo.** Entonces la pregunta deja
+de ser arquitectónica y pasa a ser de propiedad:
+
+**P12 — ¿El prototipo de práctica es el reemplazo de Sales Coach, su reemplazo parcial, o un cuarto
+agente?** Las tres son respuestas defendibles; **la que no es defendible es no decidirlo**, porque el
+resultado por omisión son dos agentes enseñando modelos de venta que nadie garantizó que coincidan.
+
+### 17.7 Consecuencia para el plan
+
+La Fase 4 se reformula: **ya no es "prototipar capacidades", es "evaluar los prototipos que ya
+existen y decidir cuáles se promueven"** — más barato y más rápido de lo que estaba escrito. Y el
+orden correcto no es construir más, es:
+
+1. **Inventariar los 2 prototipos** (P11) — qué hace cada uno, sobre qué corre, quién lo tiene.
+2. **Decidir la señal de etiqueta** antes de capturar nada (§17.3), porque un corpus construido con
+   la etiqueta equivocada hay que rehacerlo entero.
+3. **Decidir el destinatario del puntaje** antes de la primera corrida (§17.4), por la misma razón.
+4. **Resolver P12** antes de que existan dos agentes que enseñan.
+
+⚠️ **Y una dependencia que no cambia:** todo esto se apoya en que AIDA responda bien. Un agente que
+entrena sobre una base contradictoria enseña la contradicción, y la enseña con más eficacia que un
+documento. **El Release 1 sigue yendo primero.**
+
+---
+
+## 18. La reunión con la jefatura y el encuadre de la presentación (v2.2)
+
+Conversación de Alejo con Mili (jefatura), agosto 2026. **Es la fuente más informativa que ha
+entrado a este node**: resuelve la pregunta técnica que estaba bloqueando el diagnóstico, impone una
+restricción que cambia el diseño de validación, y fija el encuadre político del primer entregable.
+
+### 18.1 ⭐ P9 RESUELTA — AIDA no corre sobre Copilot, corre sobre Google
+
+Declarado en la reunión: *"suponíamos que como era de Copilot, incluso su capacidad de inferencia era
+poca, pero **sí sabemos que ahora es de Google**"*.
+
+**Esto confirma la señal de la auto-interrogación** (§11, H4): AIDA declaró `transfer_to_agent`, que
+es de **Google ADK**, no de Copilot Studio. La contradicción no era un error de la herramienta — era
+el dato correcto.
+
+**Consecuencias, y son varias:**
+
+| Qué cambia | Antes | Ahora |
+|---|---|---|
+| Límites numéricos de Copilot (7 MB / 200 MB, 36.000 caracteres/archivo, ≤300 págs.) | Suspendidos hasta confirmar | ⛔ **Descartados** — no aplican. `[[arquitectura-conocimiento-agentes-copilot]]` §3 queda acotado a su título |
+| Las **reglas de redacción y formato** (F-490 a F-492, F-469 a F-475) | Vigentes | ✅ **Siguen vigentes** — son propiedades de la recuperación, no del fabricante |
+| Capacidad de inferencia esperada | Baja (supuesto) | **Desconocida y probablemente mayor** — hay que medirla, no suponerla |
+| Argumento con este auditorio | Neutro | ⭐ **Favorable**: la organización ya evalúa mover toda la ofimática a Google (análisis a cargo de Miguel Portugal, tentativo, no cerrado). El trabajo sobre AIDA **rema a favor** de esa dirección, no en contra |
+
+⚠️ **Y una advertencia de método que la reunión deja explícita:** el supuesto "es Copilot, luego
+infiere poco" estuvo condicionando el diagnóstico. **Ya no se supone: se mide.** Es exactamente lo
+que justifica el bloque de auditoría con LLM.
+
+### 18.2 ⛔ No hay sandbox de AIDA — la restricción que más cambia el plan
+
+Confirmado por el equipo de la herramienta y ratificado por la jefatura: **no existe espacio de
+sandboxing.** No se puede crear una funcionalidad y dársela a 10 asesores.
+
+**Qué sobrevive y qué no:**
+
+| Diseño | Estado |
+|---|---|
+| A/B de **funcionalidad nueva** dentro de AIDA | ⛔ **Imposible.** No hay forma de aislar un grupo |
+| Serie temporal interrumpida sobre la **base de conocimiento** | ✅ **Sigue en pie** — la intervención es de contenido, no de código, y los otros ramos siguen siendo la serie de comparación |
+| Testeo de funcionalidades **en los prototipos** | ✅ **Es la única vía** |
+
+⭐ **Esto convierte la propuesta de "el prototipo como banco de prototipado" en la única opción
+disponible, no en una preferencia de diseño.** Y hay antecedente presupuestal: para Back to Basics
+ya hubo disposición a invertir en un prototipo para probar una funcionalidad.
+
+### 18.3 Las tres funciones declaradas de AIDA, y el estado real de cada una
+
+Levantadas de **dos fuentes que no obligan a confrontar a nadie**: la documentación de RIMAC sobre el
+proyecto AIDA, y **lo que la propia herramienta responde cuando se le pregunta para qué sirve**.
+
+| # | Función declarada | Estado según el diagnóstico |
+|---|---|---|
+| 1 | **Centralizar el conocimiento y los recursos del asesor** | ⛔ **Muy poco.** El conocimiento sigue viviendo en el cartapacio, en la capa y en el onboarding. En recursos, **Sales Coach: cero** |
+| 2 | **Dar soporte comercial** | 🟡 **Parcial.** Se le dieron lógicas para construir mensajes recomendados a partir de una base de conocimiento — la función existe, la calidad del insumo es el problema |
+| 3 | **Consultar información oficial y actualizada de producto** | 🟡 **Arquitectura sí, contenido no.** Existe la consulta a un SharePoint, pero la información no está seteada de la manera correcta |
+
+**Hipótesis de la jefatura, y vale la pena retenerla:** AIDA **nació para la función 2**, y las otras
+dos se le agregaron después. El argumento es de coherencia de diseño — si las tres hubieran sido la
+premisa, la orquestación sería otra. ⚠️ Es hipótesis, no dato; **P13**.
+
+⚠️ **Riesgo epistémico de usar la auto-descripción de AIDA como línea base.** Es elegante
+políticamente y §11 ya lo advirtió: **es autorreporte**. Si AIDA describe mal su propio propósito, la
+brecha se mide contra una promesa alucinada. **Mitigación: la documentación manda, la auto-descripción
+corrobora.** Y si divergen, esa divergencia **es un hallazgo gratis** —la herramienta no sabe para
+qué es— y sigue sin confrontar a nadie.
+
+### 18.4 El encuadre político del entregable (definido por la jefatura)
+
+**Regla dura: no confrontar a la PO de AIDA.** No se va a preguntar "para qué sirve AIDA" para
+después contrastar esa respuesta con los hechos. **Se contrasta la herramienta contra su propia
+declaración documentada.**
+
+**Estructura acordada:**
+
+1. **De dónde venimos** — del trabajo de estrategia de Vida (Back to Basics); en el camino
+   aparecieron oportunidades que afectan **transversalmente** a la fuerza de ventas.
+2. **Esto dice la documentación y esto dice la herramienta de sí misma** (la promesa).
+3. **Esto es lo que encontramos que hace** (auditoría) **y esto es lo que el asesor hace con ella**
+   (campo).
+4. **¿Cómo cerramos estas brechas?** — pregunta abierta, no lista de exigencias.
+5. **Backlog de quick fixes: de respaldo**, no de contenido principal. Sale cuando la conversación
+   gira hacia soluciones.
+
+**El pedido no es "arreglen esto".** Es **feedback + co-crear una matriz de priorización**: el equipo
+trae la voz del asesor; los dueños de la capacidad traen la factibilidad. Encuadre declarado:
+**responsabilidad colectiva**.
+
+- **Auditorio:** Emanuel, Will y Miguel Portugal. La jefatura la lleva después a comité y
+  posiblemente a Giselle.
+- **Formato:** **presentación pequeña**, explícitamente no extensa.
+- **Fuera del alcance de esta conversación:** las **integraciones con Salesforce**. Will las declaró
+  viables (un front en AIDA con métricas de Salesforce, y registro desde ahí), pero **cruzan a otro
+  dueño** — la puerta se abre recién después de consultarlo. Se mapea, no se propone.
+
+### 18.5 Los seis fixes de la fase 1, como los enumeró Alejo
+
+Todos son **fixes mínimos**: cambios de lógica y de carga de documentos. **No requieren inversión —
+requieren capacidad.**
+
+| # | Fix | Correspondencia en el Release 1 |
+|---|---|---|
+| 1 | Cargar el **catálogo de productos** con gobierno de actualización comprometido por Productos | **R1.0**, el bloqueante |
+| 2 | Cargar el **modelo de venta** (Playbook) partido en secciones, sin las partes gráficas | **R1.2** |
+| 3 | **Sacar del índice** lo que no debe responder y ordenar los documentos | **R1.1** |
+| 4 | **Láminas → cuadros** | **R1.3** |
+| 5 | **Evaluar la consistencia** de las respuestas | **R1.4** + §18.6 |
+| 6 | **Que la pantalla no aparezca en blanco** — guía de uso y recuperación de desertores | La pieza de reintroducción de §6 del Release 1 |
+
+⭐ **La correspondencia es casi exacta con lo que el Release 1 ya tenía.** Eso es corroboración
+independiente del alcance: se llegó a la misma lista por dos caminos.
+
+**Y el punto de gobernanza que la jefatura marcó como condición, no como deseo:** *"si le vamos a dar
+un Excel, puede terminar pasando lo mismo... necesitamos que **Productos se comprometa** a tener por
+lo menos un flujo de actualización"*. Sin eso, **la promesa de información actualizada no tiene
+sentido**. Es la misma conclusión de §10 y de "lo que el Release 1 no arregla".
+
+### 18.6 ⭐ Metodología de jueces por área — un patrón oro que el proyecto no tenía
+
+Propuesta nueva de la reunión: preguntarle a **Experiencia, Negocio y Marketing** qué *debería*
+responder AIDA ante una pregunta dada, y usar eso como referencia contra la respuesta real.
+
+**Por qué es un aporte y no una variante:** el protocolo actual usa **la matriz de producto** como
+patrón oro, y eso solo sirve para la capa de **dato de producto**. Esto abre patrón oro para la capa
+de **mensaje** —cómo hablarle al cliente—, que no tenía ninguno.
+
+**Y tiene un segundo efecto que vale más que el primero:** si las tres áreas responden distinto, **la
+inconsistencia no es de AIDA — es de la organización**, y queda medida. Es exactamente la tesis de §9
+(*el copiloto no puede resolver la contradicción aguas arriba, solo ocultarla*), convertida en
+instrumento. **Se incorpora al protocolo como Bloque E.**
+
+### 18.7 Los tres artefactos de exploración, y el cuarto que cambió de dueño
+
+| Artefacto | Qué hace |
+|---|---|
+| **Auditoría de la herramienta** | Estresarla, evaluar la calidad de sus respuestas con método estructurado (Bloque D + Bloque E) |
+| **Reporte del asesor** | Encuesta + **shadowing** (~3 asesores, unas horas) — con foco en **cómo y para qué usan las herramientas de afuera**, que es lo que hoy no se ve |
+| **Reporte de fallos técnicos** | Tiempos, inconsistencias. Simple y hoy inexistente |
+| ~~Qué debería y qué no debería ser AIDA~~ | ⭐ **Cambió de dueño:** la jefatura definió que **no sale del diagnóstico** — lo tienen que declarar los **dueños de la capacidad**. Deja de ser entregable y pasa a ser **la pregunta que se lleva a la reunión** |
+
+**Herramienta de campo:** **Wiser** (vía Dani) para las encuestas, incluida su modalidad
+cuantitativa. ⚠️ **Restricción operativa:** los asesores tienen la IA bloqueada en la computadora —
+**responden desde el teléfono**.
+
+### 18.8 Datos de campo que la reunión agrega o precisa
+
+- ⭐ **La mayoría de asesores usa AIDA y a la vez declara que no le es útil.** La lectura de Alejo:
+  el uso está **movido por una métrica de uso, no por utilidad percibida**. **Consecuencia directa
+  para este auditorio: cualquier número de adopción que se esté reportando hacia arriba no es señal
+  de valor.** Es el hallazgo más filoso de la reunión y merece existir solo.
+- **Conducta compensatoria confirmada por los propios asesores:** usan **ChatGPT y Gemini** por fuera
+  para "qué respondo en este caso", "cómo manejo esta objeción".
+- **La mejora más pedida es la consistencia de las respuestas.**
+- **La capacidad peor calificada es el manejo de objeciones** — y ahí se refiere a **los recursos que
+  se le dan al asesor**, no a AIDA. **Solo 6 asesores** consideran que reciben información suficiente
+  para manejarlas.
+- **Donde los asesores ven la mayor oportunidad de mejora es en AIDA.** ⭐ Dato de adopción
+  favorable: no la dieron por perdida.
+
+### 18.9 Preguntas nuevas
+
+**P13 — ¿AIDA nació para "soporte comercial" y el resto se le agregó?** (hipótesis de la jefatura,
+§18.3). Cambia si el diagnóstico mide una promesa real o una promesa retrospectiva.
+
+**P14 — ¿Cuál es el objetivo declarado de AIDA según sus dueños?** Qué se espera que haga y **qué se
+espera que NO haga**. La jefatura la marcó como **la pregunta a llevar a la reunión**, no a inferir.
+
+**P15 — ¿Qué implica exactamente "es de Google"?** ¿Gemini Enterprise, Agentspace, ADK a medida? De
+eso dependen los límites reales de archivo, la capacidad de inferencia y qué se puede pedir. **Miguel
+Portugal es el interlocutor natural.**
 
 ---
 
