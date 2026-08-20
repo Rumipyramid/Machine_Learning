@@ -53,6 +53,9 @@
   .case .q{font-family:var(--mono); font-size:.92rem; background:var(--rail);
            padding:.15rem .4rem; border-radius:3px}
 
+  .case .quote{background:var(--rail); border-radius:4px; padding:1rem 1.2rem; margin:.6rem 0 0;
+        font-family:var(--mono); font-size:.9rem; line-height:1.55}
+  .case .quote p{margin:0}
   .figure{display:flex; align-items:baseline; gap:1.1rem; margin:0 0 1.3rem; flex-wrap:wrap}
   .figure .n{font-size:3.1rem; line-height:1; letter-spacing:-.03em; color:var(--signal);
              font-variant-numeric:tabular-nums}
@@ -328,9 +331,84 @@
 
 <section>
   <div class="col">
+    <h2>Sí da cifras incompatibles sobre el mismo producto</h2>
+
+    <p>Esta era la afirmación más delicada del informe y la única que había dejado fuera, porque una medición automática no alcanzaba para sostenerla. <strong>Se verificó a mano, caso por caso.</strong> El resultado es afirmativo, y hay un ejemplo que no requiere saber nada de seguros para juzgarlo.</p>
+
+    <div class="case">
+      <span class="lab">Una sola respuesta, dos cifras que no pueden ser ambas correctas</span>
+      <p>Un asesor preguntó: <span class="q">cuál es la prima mínima del seguro vida flex</span></p>
+      <p style="margin-top:.9rem">AIDA respondió, en renglones consecutivos:</p>
+      <div class="quote">
+        <p>La prima mínima para el seguro <strong>Vida Flexible (Flexivida)</strong> es la siguiente:</p>
+        <p style="margin-top:.5rem">• <strong>Prima mínima mensual:</strong> $35 o <strong>S/&nbsp;180</strong>.<br>
+        • <strong>Monto mínimo para invertir:</strong> $35 o <strong>S/&nbsp;135</strong>.</p>
+      </div>
+      <p style="margin-top:.9rem"><strong>El mismo $35, en la misma respuesta, convertido a dos montos distintos en soles.</strong></p>
+    </div>
+
+    <p><strong>Por qué este caso no admite discusión.</strong> No hace falta saber qué es cada uno de esos dos conceptos, ni cuál de las dos cifras es la correcta. <strong>Si el monto en dólares es el mismo, el monto en soles no puede ser distinto.</strong> O el $35 está mal en una de las líneas, o una de las conversiones lo está. Es imposible que las dos sean ciertas — <strong>y la herramienta no lo detecta.</strong></p>
+
+    <div class="note warn">
+      <span class="lab">Y es el número que se le dice al cliente</span>
+      <p>No es un detalle técnico interno ni una nota al pie: <strong>es el precio de entrada del producto.</strong> Es lo primero que un asesor cita en una conversación de venta.</p>
+    </div>
+
+    <h3>No es un caso aislado</h3>
+    <p>El mismo tipo de incoherencia aparece de forma sistemática en todo el registro. Estos son los montos en dólares que aparecen convertidos a más de una cifra en soles:</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Monto en dólares</th><th>Aparece en soles como</th><th>De qué se trata</th></tr></thead>
+      <tbody>
+        <tr class="bad">
+          <td class="num"><strong>US$ 35</strong></td>
+          <td class="num"><strong>S/ 180</strong> · <strong>S/ 135</strong> · <strong>S/ 130</strong></td>
+          <td>Prima mínima — el precio de entrada</td>
+        </tr>
+        <tr class="bad">
+          <td class="num"><strong>US$ 50.000</strong></td>
+          <td class="num"><strong>S/ 180.000</strong> · <strong>S/ 175.000</strong></td>
+          <td>Suma asegurada mínima de Vida Flexible</td>
+        </tr>
+        <tr>
+          <td class="num">US$ 3.000</td>
+          <td class="num">S/ 10.500 · S/ 10.000</td>
+          <td>Suma asegurada de la cobertura de sepelio</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col">
+    <div class="note">
+      <span class="lab">Y esto cierra el círculo con el hallazgo anterior</span>
+      <p>Los tres documentos que conviven bajo el rótulo de Vida Flexible <strong>aparecen citados tanto en las respuestas que dicen S/&nbsp;180 como en las que dicen S/&nbsp;135.</strong> No es que un documento diga una cosa y otro diga otra de forma limpia: <strong>el mismo material produce las dos cifras.</strong></p>
+    </div>
+
+    <h3>Tres cosas que parecían contradicciones y no lo eran</h3>
+    <p>Esto importa tanto como lo anterior, porque es lo que evita llevar una acusación equivocada a una reunión. <strong>En los tres casos la herramienta estaba siendo más precisa de lo que sugería el análisis automático:</strong></p>
+
+    <ul class="plain">
+      <li><strong>“La edad de ingreso es 64 en un lado y 74 en otro.”</strong> No: <strong>64 es para el cónyuge y 74 para los padres</strong> en la cobertura de sepelio. AIDA estaba bien.</li>
+      <li><strong>“Dice que la carencia es cero, 90 días y un año.”</strong> No: son <strong>coberturas y productos distintos</strong> — cero en Temporal Total, 90 días en enfermedades graves, un año en la cobertura principal de Flexivida.</li>
+      <li><strong>“US$ 5.000 aparece como S/ 15.000 y como S/ 16.000.”</strong> No: son <strong>productos distintos</strong>, uno de vida y otro de salud.</li>
+    </ul>
+
+    <div class="note">
+      <span class="lab">Cómo decirlo sin exponerse</span>
+      <p><strong>Se puede afirmar:</strong> que AIDA entrega cifras incompatibles sobre el mismo producto, con el caso de la prima mínima como prueba, y que el patrón se repite con la suma asegurada.</p>
+      <p style="margin-top:.7rem"><strong>No se debe afirmar:</strong> que la mayoría de las respuestas se contradigan — no está medido; cuál de las dos cifras es la correcta — eso lo dice Producto; ni que haya negligencia de alguien — <strong>es el efecto de tener varios documentos por producto, que es un problema de gobierno, no de personas.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col">
     <h2>Una cifra que retiré</h2>
     <p>Durante el análisis, una medición intermedia daba <strong>“81% de discrepancia entre respuestas a la misma pregunta”</strong>. Al revisar los casos uno por uno, <strong>no se sostuvo</strong>: la mayor parte de esa diferencia era <strong>cuánto detalle menciona cada respuesta</strong>, no datos contradictorios — y en un caso el método estaba leyendo montos en soles como si fueran porcentajes.</p>
-    <p><strong>No se usa.</strong> Para afirmar que AIDA se contradice en un dato hace falta revisar una muestra a mano, y eso entra en la corrida manual de esta semana.</p>
+    <p><strong>Esa cifra no se usa.</strong> Para afirmar que AIDA se contradice en un dato hacía falta revisar una muestra a mano — <strong>y eso ya se hizo</strong>: es la sección anterior. La contradicción existe y está probada caso por caso. Lo que no existe es un porcentaje fiable de cuántas respuestas se contradicen, y por eso <strong>se lleva el caso, no una estadística.</strong></p>
     <p>La cifra del 68% sí se sostiene, y por una razón concreta: <strong>compara un campo del registro contra sí mismo, sin interpretar el texto de ninguna respuesta.</strong></p>
   </div>
 </section>
@@ -346,6 +424,7 @@
       <li><strong>Material de Salud, Vehicular y la agenda corporativa</strong> alimenta al agente de venta de Vida.</li>
       <li><strong>La mitad de lo que lee está en PDF o Excel.</strong></li>
       <li><strong>Los asesores castigan la falta de fuente el doble</strong>, y el “no tengo esa información” seis veces más.</li>
+      <li><strong>Da cifras incompatibles sobre el mismo producto</strong> — el mismo $35 convertido a S/ 180 y S/ 135 en una sola respuesta.</li>
       <li><strong>274 asesores en dos días</strong> — el problema no es de adopción.</li>
     </ul>
     <p>Ninguna de las seis requiere interpretar nada ni cuestionar la palabra de nadie. <strong>Salen del propio sistema.</strong></p>

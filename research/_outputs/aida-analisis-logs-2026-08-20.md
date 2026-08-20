@@ -1,6 +1,12 @@
 # Análisis de los logs de AIDA — primera corrida
 
-**Hallazgos sobre datos reales.** v1.0 · 2026-08-20
+**Hallazgos sobre datos reales.** v1.1 · 2026-08-20
+
+> **v1.1 — ⭐⭐⭐ §2.7: verificación manual de contradicción.** Se confirmó, caso por caso, que AIDA
+> entrega cifras incompatibles sobre el mismo producto, con un ejemplo que no requiere conocimiento
+> de seguros para juzgarse. También se documentan **tres candidatos que se descartaron** porque AIDA
+> era correcta.
+
 Fuente: `aida_logs_19_08.csv`, entregado por el equipo de la capacidad.
 
 ---
@@ -176,6 +182,80 @@ medición.
 
 ---
 
+## 2.7 ⭐⭐⭐ VERIFICADO: sí da información contradictoria sobre el mismo producto
+
+> **Añadido el 2026-08-20 tras verificación manual dirigida.** La §5 de este documento retiraba una
+> medición automática de discrepancia por no sobrevivir al escrutinio, y dejaba dicho que **afirmar
+> contradicción requería revisión humana de una muestra**. Se hizo. **El resultado es afirmativo, y
+> hay un caso que no necesita conocimiento de producto para juzgarse.**
+
+### El caso definitivo — una sola respuesta, dos cifras incompatibles
+
+**Pregunta de un asesor:** *"cuál es la prima mínima del seguro vida flex"*
+**Fuentes que AIDA citó:** `999993. VIDA_PLAN VIDA FLEXIBLE_080125.docx` · `999993. Vida_Flexible_info.docx`
+
+> La prima mínima para el seguro **Vida Flexible (Flexivida)** es la siguiente:
+> * **Prima mínima mensual:** **$35 o S/ 180**.
+> * **Monto mínimo para invertir:** **$35 o S/ 135**.
+
+⭐⭐⭐ **El mismo `$35`, en renglones consecutivos de la misma respuesta, convertido a S/ 180 y a
+S/ 135.**
+
+**Por qué este caso es incontestable:** no hace falta saber nada de seguros de vida para juzgarlo, ni
+decidir cuál de los dos atributos es cuál. **Si la cifra en dólares es la misma, la cifra en soles no
+puede ser distinta.** O el `$35` está mal en una de las dos líneas, o una de las conversiones está
+mal. **Es aritméticamente imposible que ambas sean correctas — y AIDA no lo detecta.**
+
+⚠️ **Y es el número que el asesor le dice al cliente.** No es un detalle técnico interno: es el precio.
+
+### El patrón, en todo el corpus
+
+El mismo tipo de incoherencia aparece de forma sistemática. Barrido de **pares dólar↔sol dentro de una
+misma frase** —una clase de afirmación que se puede juzgar sin conocimiento de producto—:
+
+| Monto en USD | Conversiones distintas encontradas | Frecuencia | Atributo |
+|---|---|---|---|
+| **US$ 35** | ⚠️ **S/ 180 · S/ 135 · S/ 130** | 32 · 13 · 12 | Prima mínima |
+| **US$ 50.000** | ⚠️ **S/ 180.000 · S/ 175.000** | 27 · 5 | Suma asegurada mínima de Vida Flexible |
+| **US$ 3.000** | 🟡 **S/ 10.500 · S/ 10.000** | 38 · 1 | Suma asegurada de sepelio |
+
+⭐ **Y los tres documentos del código 999993 aparecen citados tanto en las respuestas que dicen
+S/ 180 como en las que dicen S/ 135.** No es que un documento diga una cosa y otro diga otra de forma
+limpia: **el mismo conjunto de fuentes produce las dos cifras.** Eso apunta a que la incoherencia está
+dentro del material, no solo entre documentos.
+
+### ⚠️ Tres candidatos que se verificaron y se DESCARTARON
+
+**Esto importa tanto como lo confirmado**, porque es lo que impide llevar una acusación falsa a una
+reunión:
+
+| Candidato | Parecía | Qué era realmente | Veredicto |
+|---|---|---|---|
+| **Edad de ingreso de Vida Flexible: 64 vs 74 años** | Contradicción directa | **64 es para el cónyuge, 74 para los padres**, en la cobertura de sepelio | ✅ **AIDA estaba bien** |
+| **Carencia: "cero" vs 90 días vs 1 año** | Contradicción grave | Coberturas y productos distintos: cero en Temporal Total, 90 días en enfermedades graves de Vida Contigo, 1 año en la principal de Flexivida | ✅ **Sin contradicción probada** |
+| **US$ 5.000 = S/ 15.000 vs S/ 16.000** | Conversión incoherente | **Productos distintos**: UltraCash vs un plan de Salud | ✅ **Descartado** |
+
+⭐ **En los tres casos AIDA era más precisa de lo que sugería el análisis automático.** Es la razón por
+la que la medición del 81% se retiró y por la que ésta se hizo a mano.
+
+### Cómo enunciarlo sin exponerse
+
+**Lo que se puede afirmar con total seguridad:**
+
+> **AIDA entrega cifras incompatibles sobre el mismo producto.** El caso verificado: en una misma
+> respuesta sobre la prima mínima de Vida Flexible, el mismo importe de $35 aparece convertido a
+> S/ 180 y a S/ 135. Es aritméticamente imposible que las dos sean correctas, y el sistema no lo
+> detecta. El patrón se repite en el corpus con la suma asegurada mínima.
+
+**Lo que NO se debe afirmar:**
+
+- ⛔ Que la mayoría de las respuestas se contradigan. **No está medido y probablemente no es cierto.**
+- ⛔ Cuál de las dos cifras es la correcta. **Eso lo dice Producto, no el diagnóstico.**
+- ⛔ Que sea intencional o negligencia de alguien. **Es un efecto de tener varios documentos por
+  producto**, que es un problema de gobierno, no de personas.
+
+---
+
 ## 3. ⚠️ Lo que retracté durante el análisis
 
 **Una medición intermedia daba "81% de discrepancia sustantiva entre respuestas a la misma pregunta".
@@ -189,8 +269,10 @@ el patrón capturaba montos en soles como si fueran porcentajes.
 ⭐ **La versión que sí aguanta es la de §2.1** —inestabilidad de recuperación, 68,2%— porque **compara
 un campo del log contra sí mismo, sin interpretar el texto.**
 
-**Para afirmar contradicción de datos hace falta revisión humana de una muestra**, y eso entra en la
-corrida manual. **No se lleva al miércoles como cifra.**
+**Para afirmar contradicción de datos hacía falta revisión humana de una muestra.** ✅ **Se hizo, y el
+resultado fue afirmativo — ver §2.7.** La contradicción existe y está verificada caso por caso; lo
+que no existe es la cifra agregada de cuántas respuestas se contradicen. **Al miércoles va el caso,
+no un porcentaje.**
 
 ---
 
