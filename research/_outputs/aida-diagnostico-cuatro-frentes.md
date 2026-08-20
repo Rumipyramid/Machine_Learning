@@ -1,6 +1,10 @@
 # Diagnóstico de AIDA — la arquitectura de cuatro frentes
 
-**Marco del diagnóstico + entrega del frente 3.** v1.0 · 2026-08-20
+**Marco del diagnóstico + entrega del frente 3.** v1.1 · 2026-08-20
+
+> **v1.1 —** agrega el **objetivo y el criterio de cierre de cada frente**, más el objetivo conjunto:
+> los cuatro tienen que producir **una decisión, no un informe**.
+
 Definición de la arquitectura: Alejo, 2026-08-20.
 
 ---
@@ -22,7 +26,42 @@ puede responder**, y los cuatro se triangulan. La promesa (frente 1) se contrast
 
 ---
 
+## Los objetivos, en una tabla
+
+**Cada frente tiene un objetivo distinto y un criterio de cierre propio.** Sin eso, un frente se
+vuelve recolección sin final: siempre se puede entrevistar a una persona más o mirar un log más.
+
+| # | Frente | Objetivo en una línea | Se cierra cuando… |
+|---|---|---|---|
+| **1** | Owners | ⭐ **Fijar la vara** contra la que se mide todo lo demás | Se puede enunciar la promesa en una frase **que los propios dueños firmarían**, y está declarado el límite (qué NO debe hacer) |
+| **2** | Asesores | ⭐ **Separar lo que el asesor dice de lo que hace** | Hay **incidentes concretos, no opiniones** — mínimo 3 por modo de falla — y una explicación de la brecha de objeciones (§3.4) |
+| **3** | Cliente | ⭐ **Derivar el requerimiento desde el cliente**, no desde la herramienta ni desde nosotros | Existe una **lista priorizada de problemáticas** utilizable como criterio de evaluación del frente 4 · ✅ **Cerrado** |
+| **4** | Auditoría | ⭐ **Localizar la falla, no describirla** | Hay un **corpus de fallas clasificado por capa con sus proporciones**, y el juez está calibrado (κ ≥ 0,60) |
+
+⭐⭐ **Y el objetivo de los cuatro juntos, que no es el de ninguno por separado: producir una
+decisión, no un informe.** Al cerrar, el diagnóstico tiene que poder decir **qué se arregla ya, qué
+necesita presupuesto y qué no se toca** — y sostener cada una de esas tres con evidencia de un frente
+distinto.
+
+---
+
 ## 1. Frente de los owners — qué falta
+
+> ### 🎯 Objetivo
+> **Establecer, con fuentes que no dependan de nuestra interpretación, qué se propuso hacer AIDA,
+> qué se propuso NO hacer, y quién decide sobre ella.**
+>
+> ⭐ **Este frente no produce conocimiento: produce un estándar.** Todo lo que miden los otros tres
+> se mide contra lo que este fije. Por eso importa que salga de **documentación y de la palabra de
+> los dueños**, no de una deducción nuestra — una vara que nosotros inventamos no aguanta una
+> reunión.
+>
+> **Preguntas que tiene que cerrar:** ✅ qué se propuso hacer · ⚠️ qué NO debe hacer (**P14**) ·
+> ⚠️ sobre qué corre y con qué límites reales (**P15**) · ✅ cómo se decide un cambio y quién lo
+> aprueba · ⚠️ qué se prometió hacia afuera.
+>
+> **Criterio de cierre:** poder escribir la promesa de AIDA en una frase **que Radille, Emanuel y
+> Will firmarían sin objetar**, más el límite declarado.
 
 **Lo que ya existe:**
 - ✅ **Entrevista con la PO** (Radille): objetivo declarado, dos AIDAs, arquitectura, medición,
@@ -48,6 +87,22 @@ entregado, no para probar que funciona.
 
 ## 2. Frente de los asesores — qué falta
 
+> ### 🎯 Objetivo
+> **Establecer la conducta real del asesor —con AIDA y con las IA de afuera— y medir su distancia
+> con lo que declara hacer.**
+>
+> ⭐ **La brecha entre lo declarado y lo observado no es ruido de este frente: es su producto.** Está
+> documentado que las evaluaciones retrospectivas de herramientas de IA se desvían de la conducta
+> real —el caso mejor medido tiene a los usuarios 19% más lentos creyéndose 20% más rápidos—, así
+> que **preguntar y observar tienen que hacerse por separado y después compararse.**
+>
+> **Preguntas que tiene que cerrar:** con qué frecuencia y en qué momento la usan · qué resuelven por
+> fuera y por qué · ⭐ qué dejaron de preguntarle · qué hacen cuando dudan de la respuesta · cuánta
+> carga de salto entre herramientas hay.
+>
+> **Criterio de cierre:** tener **incidentes concretos y fechados, no opiniones** —al menos tres por
+> modo de falla— y una respuesta a la brecha del 42% al 1,1% en objeciones (§3.4).
+
 **Lo que ya existe:** encuesta a 19 asesores · taller de objeciones (30 asistentes) · el kit de campo
 listo para enviar · y ahora, **la conducta real de 274 asesores en los logs**.
 
@@ -66,6 +121,21 @@ campo más valiosa que existe hoy**, y solo se responde preguntándola.
 ---
 
 # 3. ⭐ FRENTE DEL CLIENTE — entregado
+
+> ### 🎯 Objetivo
+> **Establecer qué problemática del cliente tiene que resolver el asesor en la conversación, para
+> tener un criterio de evaluación que no venga ni de la herramienta ni de nosotros.**
+>
+> ⭐ **Este frente existe para evitar un error específico:** que el frente 4 termine evaluando a AIDA
+> contra lo que a nosotros nos parece importante. **La vara de "¿responde bien?" tiene que salir de
+> lo que el cliente efectivamente le pone enfrente al asesor.**
+>
+> ⚠️ **Lo que este frente NO se propone:** entender al cliente. No hay ni un dato del cliente en el
+> log. Se propone **derivar el requerimiento** — que es una ambición mucho más chica y alcanzable con
+> lo que hay.
+>
+> **Criterio de cierre:** una lista priorizada de problemáticas, con volumen y con calidad de
+> atención, utilizable directamente para apuntar la auditoría. ✅ **Cerrado — es lo que sigue.**
 
 **Método:** clasificación de las **2.697 consultas** del log (agente `ffvv`, excluida la cuenta de
 servicio) según **qué problema del cliente hay detrás de cada pregunta**. La taxonomía se derivó
@@ -186,6 +256,23 @@ serie temporal larga; bastó cruzar la encuesta con el log.
 ---
 
 ## 4. Frente de la auditoría — mitad hecha
+
+> ### 🎯 Objetivo
+> **Establecer el estándar de calidad real de la herramienta y localizar en qué capa está cada
+> falla, para saber qué se arregla con contenido y qué no.**
+>
+> ⭐ **La palabra clave es *localizar*, no *describir*.** "AIDA responde mal" no es accionable y no
+> sostiene un pedido de presupuesto. **"El 70% de las fallas son de contenido y se arreglan cargando
+> documentos" sí lo es** — y apunta a un dueño concreto. Por eso la taxonomía de capas
+> (conocimiento · instrucciones · plataforma · ruteo) es el entregable, no un detalle metodológico.
+>
+> **Preguntas que tiene que cerrar:** exactitud contra el patrón oro · suficiencia contra el objetivo
+> declarado · consistencia · en qué capa está cada falla y en qué proporción · qué es reparable sin
+> desarrollo.
+>
+> **Criterio de cierre:** un **corpus de fallas clasificado por capa, con proporciones**, y el juez
+> LLM **calibrado contra evaluadores humanos con κ ≥ 0,60**. Sin la calibración, el número no es
+> evidencia — es una opinión con formato de dato.
 
 **✅ Lo hecho:** análisis completo del log — inestabilidad de recuperación (68,2%), duplicación de
 documentos por producto, contaminación cruzada de ramos, formatos, patrón de calificaciones, y la
