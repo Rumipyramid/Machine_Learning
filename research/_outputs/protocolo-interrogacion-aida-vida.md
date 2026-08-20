@@ -1,6 +1,14 @@
 # Protocolo de interrogación de AIDA — ramo Vida
 
-**Instrumento de diagnóstico.** Versión 0.4 · 2026-08-14
+**Instrumento de diagnóstico.** Versión 1.0 · 2026-08-20
+
+> ⭐ **v1.0 — PARTE II.** Añade lo que el instrumento no tenía: **evaluación contra el objetivo
+> declarado por la PO** (consolidar información · reducir tiempos de búsqueda), las **tres
+> funcionalidades declaradas**, la **prueba de consistencia** —la mejora #1 pedida por los asesores—,
+> el **bloque de eficiencia técnica** con 12 ítems y su línea base, y el **protocolo del juez
+> actualizado** con Claude Opus 5, sus tres modalidades y la calibración humana obligatoria.
+> ⭐ **Hallazgo previo de la Parte II: el objetivo primario de AIDA nunca se midió** — ninguno de los
+> cinco indicadores del dashboard es tiempo.
 Construido sobre `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md` (v1.4),
 `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` (v1.0),
 `_nodes/arquitectura-conocimiento-agentes-copilot.md` (v1.1) y
@@ -334,6 +342,361 @@ coinciden en qué es correcto, **eso no es ruido de anotación: es la contradicc
 - **No distingue por sí solo una falla de conocimiento de una de ruteo.** El juez ve la respuesta
   final; para separar capas hacen falta el Bloque C y la prueba del fragmento pegado (§3 del node).
 - **Es una medición, no una explicación.** Dice cuánto falla y en qué dimensión, no por qué.
+
+---
+
+# PARTE II · Evaluación contra el objetivo declarado y eficiencia técnica
+
+> **Añadido en v1.0 (2026-08-20)**, a pedido de Alejo, después de que la PO declarara el objetivo
+> real de AIDA (§19 del node). Aplica **Zheng et al. (2023)** —el método de juez LLM, F-159— más
+> **G-Eval** (Liu et al., 2023, F-156) y el estado 2026 del campo, con **Claude Opus 5 como juez**.
+
+## 8. Por qué el Bloque B no alcanza
+
+**El Bloque B mide si AIDA acierta. No mide si AIDA cumple su objetivo.** Son dos cosas distintas, y
+la diferencia es la razón de ser de esta parte:
+
+> **El objetivo declarado por la PO es: consolidar la información para el asesor y reducir sus
+> tiempos de búsqueda.**
+
+Una respuesta puede ser **exacta, fiel a la fuente y vigente** —2/2 en todas las dimensiones del
+Bloque B— **y aun así fallar el objetivo**, si el asesor tiene que abrir el documento igual para
+usarla, o salir a verificarla, o completarla con otra consulta. En ese caso la búsqueda no se
+redujo: **se movió de lugar**.
+
+⭐ **Corolario incómodo y comprobable:** es posible que AIDA tenga buena exactitud y **cero efecto
+sobre el objetivo**. Ningún instrumento del proyecto podía detectar eso hasta ahora.
+
+---
+
+## 9. Bloque F — Calidad contra el objetivo declarado
+
+### 9.1 Las cuatro dimensiones del objetivo
+
+Se califican **además** de D1-D6 del Bloque B, no en su lugar. Misma escala **0-2**, y **no se
+promedian** con las de exactitud: son ejes distintos y mezclarlos oculta exactamente lo que este
+bloque busca.
+
+| Dim. | Qué mide | 0 | 1 | 2 |
+|---|---|---|---|---|
+| **O1 · Suficiencia** | ¿La respuesta **cierra** la consulta o empuja al asesor a otra fuente? Es *consolidación* medida en la respuesta | Obliga a ir a otra fuente para poder usarla | Sirve, pero hay que completarla | Cierra la consulta |
+| **O2 · Autosuficiencia de la cita** | ¿La cita permite **verificar sin abrir el documento**? | Solo nombra el documento | Documento + sección | **Fragmento textual + vigencia visibles** |
+| **O3 · Accionabilidad** | ¿Sirve **tal cual** frente al cliente o hay que reelaborarla? | Hay que reescribirla entera | Sirve con ajustes | Usable tal cual |
+| **O4 · Economía** | ¿Cuánto hay que leer para obtener el dato? | El dato está enterrado en un muro de texto | Presente pero disperso | Al frente, en la primera línea útil |
+
+⭐ **O2 es la dimensión más importante de las cuatro, y la que nadie mide.** AIDA ya cita sus fuentes
+—lo confirmó la PO—, pero **citar el nombre del documento no reduce el tiempo de búsqueda: lo
+traslada.** Y hay evidencia dura de por qué esto importa más de lo que parece: el modo de falla
+dominante de los sistemas con recuperación **no es inventar sin cita, es citar un documento real y
+afirmar falsamente que dice algo** (Magesh et al., 2025 — F-493). Peor: **mostrar citas sube la
+confianza del usuario incluso cuando son falsas** (Ding et al., 2025).
+
+**Por eso O2 se califica contra el fragmento, no contra la existencia del enlace.** La pregunta del
+juez no es *"¿citó?"* sino ***"¿lo citado sustenta lo afirmado?"***
+
+### 9.2 Banco F — consolidación (¿cierra o deriva?)
+
+Diseñadas para que **la única forma de sacar 2 en O1 sea resolver sin salir de AIDA**.
+
+- **F1.** ¿Cuál es la edad máxima de ingreso de Vida Futuro Protegido y qué documentos necesito para
+  presentar la solicitud? *(dos partes que viven en fuentes distintas — producto y proceso)*
+- **F2.** ¿Qué pasa si mi cliente deja de pagar la prima, y cómo consulto el estado de su póliza?
+  *(⭐ prueba de consolidación pura: el playbook declara esto como pendiente)*
+- **F3.** El cliente declara hipertensión. ¿Qué implica para la suscripción y qué le digo mientras
+  tanto? *(⭐ **prueba de frontera con el agente de suscripción**: ¿consolida, deriva, o inventa?)*
+- **F4.** ¿Dónde está la ficha vigente de Vida Futuro Protegido? *(debe entregar el documento, no una
+  paráfrasis)*
+- **F5.** Muéstrame la tabla de coberturas de Plan Vida Flexible. *(⭐ **las tablas son el punto débil
+  conocido** — F-471, F-490: 33 puntos de brecha en preguntas con tabla)*
+- **F6.** Necesito el argumento y el dato exacto para responder a un cliente que dice que el seguro
+  de su banco es más barato. *(cruza objeción + dato duro — el momento de mayor necesidad declarada)*
+
+### 9.3 Banco G — las tres funcionalidades declaradas
+
+La PO nombró tres funcionalidades concretas. **Cada una necesita su propia prueba**, porque una
+puede funcionar y las otras no.
+
+**G-A · Speeches de venta personalizados**
+- **G1.** Genera el abordaje para un cliente de 38 años, casado, dos hijos menores, que ya tiene EPS
+  por su empleador.
+- **G2.** El mismo cliente, pero es independiente y sin cobertura previsional.
+  *(⭐ **Prueba de personalización real:** si G1 y G2 devuelven esencialmente el mismo speech con el
+  dato cambiado, la funcionalidad es plantilla, no personalización. Es una de las pruebas más
+  informativas del banco.)*
+- **G3.** ¿Ese speech de dónde sale? *(traza el speech al modelo de venta — si no puede, el speech no
+  está anclado al Playbook y la promesa de alineamiento estratégico no se cumple)*
+
+**Dimensión extra para G-A:** **O5 · Alineamiento al modelo de venta** (0 = contradice el Playbook ·
+1 = genérico, ni lo sigue ni lo contradice · 2 = ejecuta el modelo de 4 pasos y usa sus estrategias
+codificadas).
+
+**G-B · Cuadros comparativos entre planes**
+- **G4.** Compara Vida Temporal Total con Plan Vida Flexible para un cliente de 45 años.
+- **G5.** Compárame las cuatro variantes de Vida Futuro Protegido. *(⚠️ **Si el playbook es su fuente,
+  VFP no existe ahí** — debería fallar. Ambos resultados son hallazgo)*
+- **G6.** ¿Cuál conviene más para alguien que quiere ahorro y no solo protección?
+  *(⭐ el comparativo con **recomendación**: prueba si sabe distinguir comparar de aconsejar)*
+
+**Dimensión extra para G-B:** **O6 · Integridad del cuadro** (0 = omite filas o inventa columnas ·
+1 = completo pero con algún dato errado · 2 = completo y exacto contra la matriz).
+
+**G-C · Entrega de brochures**
+- **G7.** Mándame el brochure vigente de Vida Contigo.
+- **G8.** Necesito el material que le puedo dejar a un cliente que está evaluando Vida Temporal Total.
+- **G9.** ¿Este brochure está vigente? *(⭐ prueba de vigencia sobre el propio documento entregado)*
+
+**Dimensión extra para G-C:** **O7 · Vigencia del entregable** (0 = entrega material superado o no
+entrega · 1 = entrega el correcto sin declarar vigencia · 2 = entrega el vigente **y lo declara**).
+
+### 9.4 Banco H — consistencia, que es la mejora más pedida
+
+⭐ **La consistencia es la mejora #1 que piden los asesores y no tiene ninguna prueba en el protocolo
+actual.** Además, la inconsistencia tiene una firma causal específica —casi-duplicados en la base—,
+así que medirla es a la vez medir un síntoma y falsar una hipótesis.
+
+**Protocolo, y hay que respetarlo o el resultado no dice nada:**
+
+| Condición | Cómo |
+|---|---|
+| **H-a · Misma pregunta, misma sesión** | Preguntar B2 tres veces seguidas |
+| **H-b · Misma pregunta, sesiones distintas** | B2 en tres sesiones separadas, distintos días |
+| **H-c · Misma pregunta, distinta formulación** | *"¿Cuál es la suma asegurada mínima de VFP?"* · *"¿Desde cuánto se puede contratar Vida Futuro Protegido?"* · *"¿Cuál es el monto más bajo que puedo ofrecer en VFP?"* |
+| **H-d · Misma pregunta, distinto asesor** | Dos usuarios distintos, misma formulación |
+
+**Métrica:** **tasa de discrepancia sustantiva** = proporción de pares de respuestas que difieren en
+**el dato**, no en la redacción. ⭐ **La redacción distinta es esperable y no es el problema. El dato
+distinto sí.**
+
+**Repetir H-c sobre B5, B6 y F5**, que son las de mayor riesgo de duplicado.
+
+### 9.5 ⚠️ Qué puede calificar el juez y qué no
+
+**Esta separación es obligatoria y es donde la mayoría de las evaluaciones con LLM se rompen.**
+
+| El juez **sí** puede | El juez **no** puede |
+|---|---|
+| Exactitud contra una referencia (D1) | Si el asesor **va a** verificar |
+| Fidelidad: ¿la cita sustenta lo afirmado? (D2, O2) | Si la respuesta **ahorró** tiempo |
+| Vigencia declarada (D3) | Si el asesor **la usó** frente al cliente |
+| Completitud, economía, accionabilidad textual (D5, O3, O4) | Si el cliente **respondió mejor** |
+| Alineamiento al modelo de venta (O5) | Adopción, satisfacción, desempeño |
+| Integridad del cuadro y vigencia del entregable (O6, O7) | Cualquier cosa **conductual** |
+| Discrepancia sustantiva entre respuestas (Banco H) | |
+
+⭐ **Todo lo de la derecha se mide con instrumentación y con personas — Bloque I y el trabajo de
+campo. Pedirle eso al juez produce un número que parece dato y no lo es.**
+
+---
+
+## 10. Bloque I — Eficiencia técnica
+
+### 10.1 ⭐⭐ El hallazgo previo, y es grande: el objetivo primario nunca se midió
+
+Los dashboards de AIDA miden —según la PO— **cantidad de consultas, promedio de consultas diarias,
+ratio de feedback positivo/negativo, margen de error y actividad.**
+
+**Ninguno de esos cinco es tiempo.**
+
+⭐ **El objetivo declarado de AIDA es reducir los tiempos de búsqueda, y no existe ningún indicador
+que mida tiempo de búsqueda.** Después de más de un año en producción, no hay evidencia de que el
+objetivo primario se esté cumpliendo — no porque se haya medido mal, sino porque **no se ha medido.**
+
+⭐ **Y hay una trampa de medición que hay que evitar desde el día uno: la latencia de AIDA no es el
+tiempo de búsqueda.** Si AIDA responde en 4 segundos y el asesor pasa 6 minutos verificando en el
+cartapacio, **el tiempo de búsqueda subió**. Lo que hay que medir es el **ciclo completo**: desde que
+le nace la duda hasta que tiene algo que puede usar con confianza.
+
+### 10.2 Los doce ítems, con su fuente de instrumentación
+
+| # | Ítem | Definición operativa | Fuente | Dificultad |
+|---|---|---|---|---|
+| **T1** | **Latencia a primera señal** | Del envío al primer texto visible | Cronómetro / logs | Baja |
+| **T2** | **Latencia total** | Del envío a la respuesta completa | Cronómetro / logs | Baja |
+| **T3** | ⭐ **Turnos hasta respuesta usable** | Nº de mensajes hasta que el asesor tiene lo que necesita | Logs (secuencias del mismo usuario) + shadowing | Media |
+| **T4** | **Reformulaciones** | Nº de veces que reescribe la misma pregunta | Logs (similitud semántica entre consultas consecutivas) | Media |
+| **T5** | ⭐⭐ **Tiempo total hasta decisión** | Desde que abre AIDA hasta que cierra la duda | **Cronometraje en sesión** | Media |
+| **T6** | ⭐⭐⭐ **Tiempo de verificación externa** | Minutos gastados comprobando la respuesta por otra vía | **Shadowing** (no hay otra forma) | Alta |
+| **T7** | **Tasa de fuga** | % de consultas que terminan en ChatGPT / Gemini / preguntarle a alguien | Shadowing + incidente crítico | Alta |
+| **T8** | **Tasa de abandono** | % de consultas iniciadas sin respuesta usable | Logs (sesiones sin cierre) + shadowing | Media |
+| **T9** | **Disponibilidad y errores** | Timeouts, errores, respuestas vacías | Logs | Baja |
+| **T10** | **Longitud de respuesta** | Caracteres / palabras | Logs | Baja |
+| **T11** | **Densidad de cita** | Nº de documentos citados · **tasa de cita rota** (citado pero inexistente o que no dice lo afirmado) | Logs + juez | Media |
+| **T12** | ⭐⭐ **Delta contra el método anterior** | T5 con AIDA vs. T5 por la vía tradicional | **Sesión controlada** (§10.4) | Media |
+
+**Tres notas de diseño que evitan errores caros:**
+
+- **T10 no es una métrica de calidad, es un covariable.** Se registra porque (a) el asesor tiene que
+  leerla, así que entra en T5, y (b) **el sesgo de estilo es el sesgo dominante de los jueces LLM en
+  el estado actual del campo**: respuestas más largas tienden a puntuar mejor sin ser mejores. Sin
+  T10 registrado no se puede controlar ese sesgo.
+- **T11 mide cita rota, no cita ausente.** Es el modo de falla dominante (F-493) y el que la
+  intuición no busca.
+- ⭐ **T6 es la métrica que decide si el proyecto tiene sentido, y es la única que no sale de ningún
+  log.** Solo se obtiene mirando. Si nadie verifica, AIDA cumple su objetivo aunque falle a veces. Si
+  todos verifican siempre, AIDA no redujo la búsqueda ni cuando acierta.
+
+### 10.3 La línea base sin AIDA — sin esto no se puede afirmar "reducción"
+
+**"Reducir los tiempos de búsqueda" es una afirmación comparativa y hoy no existe el término de
+comparación.** Hay que construirlo, y es barato.
+
+**Diseño intra-sujeto contrabalanceado:**
+
+1. **20 preguntas reales** (de los logs, no inventadas), divididas en dos mitades equivalentes.
+2. Cada asesor resuelve **la mitad A con AIDA** y **la mitad B por la vía tradicional** —cartapacio,
+   SharePoint, preguntarle al jefe o a un colega—, **cronometrando cada una**.
+3. **El orden se contrabalancea**: la mitad de los asesores empieza con AIDA, la otra mitad no.
+4. Se registra **T5 (tiempo hasta decisión)** y **si la respuesta obtenida era correcta**.
+
+⭐ **Cada asesor es su propio control.** Eso da potencia estadística con muy pocos participantes —el
+mismo principio de comparación pareada del Experimento 1.
+
+⚠️ **Dos amenazas a declarar:**
+- **Ser observado infla el uso de AIDA.** Mitigación: presentar la sesión como prueba de la
+  herramienta, no del asesor, y **no compartir resultados individuales con jefaturas**.
+- **Velocidad sin exactitud no es mejora.** Registrar siempre las dos: una respuesta rápida y
+  equivocada es peor que una lenta y correcta. **T5 solo se interpreta junto con D1.**
+
+### 10.4 Protocolo de cronometraje
+
+| Momento | Qué se marca |
+|---|---|
+| **t0** | El asesor recibe la pregunta |
+| **t1** | Envía la consulta a AIDA (o abre la primera fuente, en la condición sin AIDA) |
+| **t2** | Primera señal de respuesta |
+| **t3** | Respuesta completa en pantalla |
+| **t4** | ⭐ El asesor declara **"con esto ya puedo responderle al cliente"** |
+| **t5** | Fin de cualquier verificación adicional |
+
+**Derivados:** T1 = t2−t1 · T2 = t3−t1 · **T5 = t4−t0** · **T6 = t5−t4**
+
+⭐ **t4 es el punto crítico y hay que capturarlo con una pregunta explícita al asesor**, no inferirlo.
+Es el único momento que separa *"AIDA terminó de escribir"* de *"el asesor terminó de necesitar"*.
+
+---
+
+## 11. Protocolo del juez — Claude Opus 5 (v1.0)
+
+Aplica **Zheng et al. (2023)** con las correcciones que el campo acumuló desde entonces.
+
+### 11.1 Las tres modalidades, y cuándo usar cada una
+
+| Modalidad | Cuándo | Por qué |
+|---|---|---|
+| ⭐ **Con referencia** *(reference-guided)* | **B1-B12, F1-F6, G4-G6** — todo lo que tiene respuesta verificable | Es la modalidad **más fiable de las tres**: se le entrega al juez la entrada de la matriz como patrón oro y solo tiene que comparar. Reduce drásticamente el error del juez |
+| **Puntaje directo con rúbrica y razonamiento paso a paso** *(G-Eval)* | **G1-G3, F6** — speeches y accionabilidad, donde no hay respuesta única | Obliga al juez a explicitar el criterio antes de puntuar. **Sin el paso a paso, el puntaje es una impresión** |
+| **Comparación pareada con intercambio de posición** | **Antes vs. después del Release 1** | Es más sensible que comparar puntajes absolutos. **Obligatorio correr cada par dos veces invirtiendo el orden** |
+
+### 11.2 Reglas de aplicación, no negociables
+
+1. ⛔ **El juez trabaja a ciegas.** Nunca debe saber si una respuesta es del "antes" o del "después",
+   ni cuál condición espera el equipo que gane. En la comparación pareada, las respuestas se
+   etiquetan A/B al azar.
+2. **Una dimensión por llamada, o rúbrica explícita por dimensión en la misma llamada.** Pedir "un
+   puntaje general" produce un promedio implícito que oculta justamente lo que buscamos.
+3. **El juez cita el fragmento que justifica cada puntaje.** Si no puede señalar en qué parte de la
+   respuesta se basa, el puntaje no se registra.
+4. **Registrar la longitud (T10) junto a cada puntaje**, para poder detectar después si el juez
+   premió verbosidad.
+5. **Temperatura baja y varias corridas.** Correr cada evaluación **3 veces** y registrar la
+   dispersión. ⭐ **Si el propio juez es inconsistente consigo mismo en un ítem, ese ítem no se puede
+   usar** — y eso también es un dato sobre la rúbrica, no sobre AIDA.
+
+### 11.3 Prompt de juez — plantilla con referencia
+
+```
+Eres un evaluador experto de respuestas de un asistente de IA usado por asesores de
+seguros de vida en Perú. Evalúas UNA respuesta contra UNA dimensión.
+
+CONTEXTO
+El asistente evaluado tiene un objetivo declarado: consolidar la información
+para el asesor y reducir sus tiempos de búsqueda.
+
+PREGUNTA DEL ASESOR:
+{pregunta}
+
+RESPUESTA DEL ASISTENTE:
+{respuesta}
+
+REFERENCIA (patrón oro — si la respuesta la contradice, gana la referencia):
+{entrada de la matriz de productos, o "NO APLICA"}
+
+DIMENSIÓN A EVALUAR: {nombre}
+{definición de la dimensión y qué significa 0, 1 y 2}
+
+INSTRUCCIONES
+1. Antes de puntuar, razona paso a paso: identifica qué afirma la respuesta,
+   qué dice la referencia, y en qué difieren.
+2. Cita textualmente el fragmento de la respuesta en que basas tu puntaje.
+3. NO premies la extensión. Una respuesta corta y correcta vale más que una
+   larga y correcta. Si la respuesta es larga, verifica que la longitud aporte.
+4. NO asumas que la respuesta es correcta porque suene segura o porque cite
+   un documento. Verifica que lo citado sustente lo afirmado.
+5. Si no tienes elementos para decidir, responde puntaje = NULO. No adivines.
+
+FORMATO DE SALIDA (JSON):
+{"razonamiento": "...", "fragmento_citado": "...", "puntaje": 0|1|2|"NULO",
+ "riesgo_regulatorio": true|false}
+```
+
+⚠️ **La instrucción 3 no es opcional.** El sesgo de estilo/verbosidad es el sesgo dominante de los
+jueces LLM en el estado actual del campo, por encima del sesgo de posición que la literatura
+original de 2023 destacaba.
+
+### 11.4 ⭐ Calibración humana — obligatoria, y es el paso que casi todos se saltan
+
+**Un juez sin calibrar no produce evidencia, produce una opinión con formato de número.**
+
+| Paso | Detalle |
+|---|---|
+| **1 · Muestra** | **Mínimo 20%** de los ítems, elegidos al azar, **nunca los más fáciles** |
+| **2 · Jueces humanos** | **Dos personas independientes**, con la misma rúbrica, sin ver el puntaje del modelo ni el del otro |
+| **3 · Estadístico** | **Cohen's κ** para dos evaluadores; **Krippendorff's α** si son más de dos o si se trata la escala como ordinal |
+| **4 · Umbral** | **κ ≥ 0,60** para usar el juez con supervisión · **κ ≥ 0,70** para usarlo solo. **Por debajo de 0,60 el problema es la rúbrica, no el juez** — se reescribe la definición de la dimensión y se recalibra |
+| **5 · Recalibración** | Repetir **cada vez que cambie la rúbrica, el banco de preguntas o la versión del modelo juez** |
+
+⭐ **La referencia de aceptabilidad:** en el trabajo fundacional, el juez LLM alcanzó **>80% de
+acuerdo con evaluadores humanos — el mismo nivel de acuerdo que tienen los humanos entre sí.** Ese
+es el techo razonable a esperar, y el criterio: **el juez es aceptable cuando concuerda con un humano
+tanto como dos humanos concuerdan entre ellos.**
+
+### 11.5 Los sesgos, en orden de importancia real para este caso
+
+| Sesgo | Riesgo aquí | Mitigación |
+|---|---|---|
+| ⭐ **Estilo / verbosidad** | **Alto.** AIDA genera speeches y cuadros: respuestas largas por diseño | Instrucción explícita + registrar T10 + revisar correlación puntaje-longitud al final |
+| **Posición** | Bajo, pero presente en la comparación pareada | Correr cada par dos veces con orden invertido |
+| **Auto-preferencia** | ⭐ **Bajo, y a favor.** El juez es Claude; **AIDA corre sobre Google**, así que no se está evaluando a sí mismo | Ninguna necesaria. **Declararlo como fortaleza del diseño** |
+| **Razonamiento numérico** | **Medio-alto.** Sumas aseguradas, edades, carencias, porcentajes | ⭐ **Los ítems con cifras se verifican a mano contra la matriz, no se delegan al juez** |
+| **Deferencia a la seguridad** | Alto — el modo de falla dominante es afirmar con cita falsa | Instrucción 4 del prompt + T11 (tasa de cita rota) |
+
+### 11.6 Lo que este bloque no puede hacer
+
+- **No prueba que AIDA sea mala o buena para el asesor.** Prueba que sus respuestas cumplen o no una
+  rúbrica. La relación entre eso y la venta es una hipótesis, no un resultado.
+- **No reemplaza el campo.** Todo lo conductual —verificación, fuga, abandono, carga emocional— queda
+  fuera por definición.
+- **No mide el objetivo por sí solo.** El objetivo tiene una mitad de calidad (Bloque F) y una mitad
+  de tiempo (Bloque I). **Correr solo una de las dos deja el objetivo sin evaluar.**
+
+---
+
+## 12. Orden de ejecución recomendado
+
+| # | Qué | Por qué primero | Costo |
+|---|---|---|---|
+| **1** | **B2, B3, B4** | ⭐ Distinguen *hueco de contenido* de *fuente no gobernada*. La prueba más informativa por unidad de esfuerzo | Horas |
+| **2** | **Banco H (consistencia)** | Es la mejora #1 pedida y falsa la hipótesis de casi-duplicados | Horas |
+| **3** | **Prueba del fragmento pegado** (§7 del dossier) | Separa capa A de capa B antes de invertir en limpiar nada | Una tarde |
+| **4** | **Análisis de los logs** | Ya solicitados. Dan T1-T4, T8-T11 y el banco real de preguntas | Días |
+| **5** | **Reemplazar el banco sintético** por preguntas reales de los logs | ⭐ El banco actual mide lo que a nosotros nos parece importante | Días |
+| **6** | **Bancos F y G + juez calibrado** | Requiere el banco real y la calibración humana | 1-2 semanas |
+| **7** | **Cronometraje y línea base sin AIDA (T5, T12)** | Necesita asesores; se agenda junto al shadowing | 1-2 semanas |
+| **8** | **T6 y T7 en shadowing** | Las únicas que solo se obtienen mirando | Con el campo |
+
+⚠️ **Los pasos 1-4 no requieren tocar a ningún asesor.** Conviene agotarlos antes de gastar la
+disponibilidad de la fuerza de venta, que es el recurso escaso y el que carga la deuda de
+credibilidad.
 
 ## 7. Hoja de registro
 
