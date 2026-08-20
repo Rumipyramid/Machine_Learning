@@ -7,7 +7,18 @@
 > Capa de **estado interno**. La capa de **evidencia externa** sobre cómo almacenar el
 > conocimiento vive en `[[arquitectura-conocimiento-agentes-copilot]]`.
 >
-> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-19 · Versión: v2.2
+> Fecha de elaboración: 2026-08-14 · Última actualización: 2026-08-20 · Versión: v2.3
+> (v2.3: **§19 — entrevista con Radille, PO de AIDA.** La entrada de mayor valor del proyecto.
+> ✅ **P4, P5, P13 y P14 RESUELTAS.** El objetivo declarado es **uno** —consolidar información y
+> reducir tiempo de búsqueda—, no tres. ⭐⭐⭐ **El uso de AIDA está en la variable del asesor**:
+> la inferencia de que la adopción no mide utilidad pasa a ser hecho. ⭐⭐⭐ **Es RAG puro** — el
+> modelo no genera data, lee SharePoint y cita: el debate de reentrenar queda cerrado por la PO.
+> ⭐⭐ **El feedback negativo ya está trazado a documentación desactualizada o incompleta** (capa A).
+> ⭐⭐⭐ **Hay un canal barato ya abierto** (Jaime, mesas de los jueves) y 4 de los 6 arreglos caen
+> ahí. ⛔ **No hay roadmap de AIDA**; los cambios entran por solicitud del negocio + captura de
+> valor, y la capacidad ES presupuesto. ⛔⛔ **Contradicción abierta: la base vive en SharePoint**
+> (Microsoft) aunque el motor sea Google — P15 se precisa. ⚠️ Los 5 subagentes del autorreporte
+> **no fueron confirmados** por la PO. Abre P16 a P19.)
 > (v2.2: **§18 — la reunión con la jefatura.** ⭐ **P9 RESUELTA: AIDA no corre sobre Copilot,
 > corre sobre Google** — los límites numéricos de Copilot quedan **descartados**, no suspendidos.
 > ⛔ **No hay sandbox de AIDA** (confirmado por el equipo de la herramienta): ninguna
@@ -442,9 +453,14 @@ recuperación es peor de lo estimado.
 **P7 — ¿Quién es dueño de cada agente?** Si AIDA, el agente de suscripción y Sales Coach dependen de
 equipos distintos, "una sola puerta de entrada" es un problema de gobierno antes que de tecnología.
 
-**P5 — ¿Existe medición previa?** ¿Hay logs de conversaciones, tasa de uso, consultas sin respuesta?
-El Plan Piloto declaraba que **el tracking del prototipo no existía todavía** al 24/07 — confirmar
-si se habilitó, porque de eso depende si F1 se levanta de datos o de entrevistas.
+**✅ P4 — RESUELTA (v2.3). Existe telemetría y ya se solicitó.** Los logs contienen **todas las
+preguntas que le llegan a AIDA, cómo responde, y el feedback positivo/negativo**. Es exactamente el
+corpus de fallas que §4 describía como fuente ideal. Ver §19.5.
+
+**✅ P5 — RESUELTA (v2.3). Existe línea base y es sólida.** AIDA Sales está desplegada desde **mayo de
+2025**; hay dashboards con cantidad de consultas, promedio diario, ratio de feedback y margen de
+error. Volumen actual estable: **>30.000 consultas mensuales**, **3 a 3,5 consultas diarias** por
+asesor. Más de un año de serie temporal. Ver §19.4.
 
 **P11 — ¿Cuál es el segundo prototipo de Behavioral Design?** (abierta en v2.1) El brief dice "2
 prototipos" y describe uno —la práctica agéntica de objeciones sobre Copilot—. Se asume que el otro
@@ -1711,6 +1727,346 @@ espera que NO haga**. La jefatura la marcó como **la pregunta a llevar a la reu
 **P15 — ¿Qué implica exactamente "es de Google"?** ¿Gemini Enterprise, Agentspace, ADK a medida? De
 eso dependen los límites reales de archivo, la capacidad de inferencia y qué se puede pedir. **Miguel
 Portugal es el interlocutor natural.**
+
+---
+
+## 19. Entrevista con la PO de AIDA — objetivos, alcance y gobierno (v2.3)
+
+Reunión del equipo (Alejo, Melissa, Felipe) con **Radille, PO de las funcionalidades de AIDA
+asociadas a la FFVV**, agosto 2026.
+
+⭐ **Es la entrada de mayor valor que ha recibido el proyecto.** Resuelve cinco preguntas abiertas,
+**confirma tres hipótesis centrales del diagnóstico desde la propia dueña de la capacidad**, revela
+un canal de intervención barato que ya está abierto, y abre una contradicción técnica que hay que
+resolver antes de decidir arquitectura.
+
+⭐ **Nota de encuadre:** todo lo que sigue es **declaración de la PO**, no inspección. Pero a
+diferencia del autorreporte de AIDA (§11), aquí la fuente es **la persona responsable de la
+capacidad**, y varias de sus afirmaciones son verificables contra los logs que ya se solicitaron.
+
+### 19.1 Qué es AIDA, según su PO
+
+**Nace de una iniciativa estratégica del año pasado con dos frentes**, y de ahí salen **dos versiones
+distintas**:
+
+| | **AIDA Service** | **AIDA Sales** |
+|---|---|---|
+| **Para** | Central de Consultas | **Plaza de ventas (FFVV)**, BI Pro, equipo del Hub, piloto del canal BIF |
+| **Qué hace** | Procedimientos, para el asesor atendiendo al cliente en línea. Consulta por DNI del cliente | Información de producto abocada a la venta |
+| **Arquitectura** | ✅ **La misma en ambas** | ✅ La misma |
+| **Base de conocimiento** | Independiente | Independiente |
+| **¿Conversan entre sí?** | ⛔ **No.** Cada base es independiente | ⛔ No |
+
+⚠️ **Y acá aparece una discrepancia con §11 que hay que declarar.** La auto-interrogación devolvió
+**cinco subagentes por ramo** (`SaludAgent`, `VehicularAgent`, `VidaFinancieroAgent`,
+`GeneralOpsAgent`, `SalesCoachAgent`). **La PO no describe esa segmentación** — describe **dos
+productos separados por caso de uso** (Service / Sales), y dentro de Sales, distintos canales.
+
+Las dos descripciones **no se contradicen necesariamente** —AIDA Sales podría tener subagentes por
+ramo adentro— pero **tampoco se confirman**. ⭐ **Esto refuerza la advertencia epistémica de §11: el
+autorreporte de un modelo sobre su propia arquitectura no es documentación.** H1, H2 y H5 quedan
+**sin confirmar por la PO**, y hay que resolverlos contra el diagrama de arquitectura, no contra
+AIDA. **P16.**
+
+### 19.2 ✅ P14 RESUELTA — el objetivo declarado, en palabras de la PO
+
+Melissa lo formuló y Radille lo confirmó textualmente:
+
+> *"¿Podríamos decir que fue para un tema de **consolidación de información** para el asesor y
+> justamente **reducir tiempos de búsqueda**?"*
+> — **"Ese fue el objetivo."**
+
+**Y las funcionalidades declaradas de AIDA Sales son tres, concretas:**
+
+1. **Genera speeches de venta personalizados**
+2. **Genera cuadros comparativos entre planes**
+3. **Comparte los brochures** cargados en la base, para que el asesor no los busque en distintos lugares
+
+⭐⭐ **Esto corrige el encuadre del proyecto, y también corrige a P13.** El repo venía trabajando con
+**tres funciones declaradas** de igual jerarquía —centralizar conocimiento · dar soporte comercial ·
+consultar información de producto—, levantadas de documentación y de la auto-descripción.
+
+**La PO dice que hay un objetivo, no tres:** *consolidar información y reducir el tiempo de búsqueda*.
+Las otras dos son **funcionalidades construidas al servicio de ese objetivo**, no fines en sí mismas.
+
+⭐ **Consecuencia para la lectura de la brecha:** la función que el diagnóstico marcaba como "sin
+avance" —centralizar el conocimiento y los recursos— **no era una de tres promesas. Era la promesa.**
+La brecha es más seria de lo que estaba presentada, y a la vez **más fácil de conversar**, porque
+ataca exactamente lo que la capacidad se propuso hacer.
+
+⚠️ **P13 queda resuelta al revés de como se planteó.** La hipótesis de la jefatura era que AIDA nació
+para *soporte comercial* y lo demás se le agregó. **No: nació para consolidación.** El soporte
+comercial es una funcionalidad encima.
+
+### 19.3 ⭐⭐⭐ Cómo se mide el éxito — y la confirmación del hallazgo más filoso
+
+**Los dashboards de seguimiento miden:**
+- Cantidad de consultas de los asesores
+- Promedio de consultas diarias
+- **Ratio de feedback positivo / negativo**
+- Margen de error de las respuestas
+- Actividad
+
+Alejo preguntó directo: *"¿Entonces el objetivo es la métrica de adopción?"*
+Radille: **"Sí, la cantidad de consultas, el promedio de consultas diarias y la actividad."**
+
+⭐⭐⭐ **Y la pieza que faltaba, que Melissa desenterró con la pregunta correcta:**
+
+> *"¿Hubo algún tipo de incentivos, o se metió dentro de los indicadores de los asesores para
+> incentivar ese uso?"*
+> — **"Están en su business, en su variable."**
+
+**El uso de AIDA está dentro de la retribución variable del asesor.**
+
+⭐⭐⭐ **Esto convierte en hecho lo que §18.8 tenía como inferencia.** El diagnóstico había deducido
+—de la coexistencia de "la usa" y "no me sirve"— que el uso no lo movía la utilidad. **Ahora está
+confirmado por la dueña de la capacidad: el uso está incentivado directamente y el criterio de éxito
+declarado es la métrica de adopción.**
+
+**Consecuencia, y hay que decirla con cuidado porque es delicada:** la cifra de adopción **no puede
+leerse como señal de valor**, no porque nadie haya hecho trampa, sino **por construcción del
+indicador**. Un asesor que consulta AIDA porque está en su variable produce el mismo número que uno
+que la consulta porque le sirve. **El indicador no distingue, y no fue diseñado para distinguir.**
+
+⭐ **La lectura constructiva, y es la que va a la presentación:** no es que la medición esté mal
+hecha. Es que **mide adopción, y adopción no es utilidad** — y hoy no existe ningún indicador que
+mida lo segundo. Ese es el hueco, y llenarlo es barato.
+
+### 19.4 Línea base real — ✅ P5 RESUELTA
+
+| Dato | Valor |
+|---|---|
+| **Despliegue de AIDA Sales** | **Mayo de 2025** — lleva más de un año en producción |
+| Trayectoria | Crecimiento sostenido desde mayo hasta cierre de año |
+| **Estado actual** | **Volumen estable** |
+| **Volumen** | **>30.000 consultas mensuales** |
+| **Promedio por asesor** | **3 a 3,5 consultas diarias** |
+
+⭐ **Existe línea base y es sólida.** El diagnóstico no arranca de cero: hay más de un año de serie
+temporal, que es exactamente lo que necesita el diseño de serie temporal interrumpida (§16.2).
+
+### 19.5 ✅✅ P4 RESUELTA — los logs existen, son accesibles y ya se pidieron
+
+Radille confirmó que hay **logs**, y precisó qué contienen:
+
+> *"No es la conversación de Radille con AIDA. Es **todas las preguntas que le llegan a AIDA, cómo
+> responde, y si le pusieron feedback positivo o negativo**."*
+
+⭐⭐⭐ **Eso es exactamente el corpus de fallas que §4 declaraba como fuente ideal y no sabía si
+existía.** Tiene los tres campos que el formato necesita —pregunta · respuesta · señal de calidad— con
+volumen real y sin sesgo de recuerdo.
+
+**Alejo ya los solicitó por correo.**
+
+⭐ **Consecuencia para el plan de campo:** la opción 3 de la jerarquía de §4 —pedirle a un grupo de
+asesores que registre durante una semana las consultas no resueltas— **queda descartada por
+innecesaria**. Se ahorra tiempo de asesor, que era el recurso más caro y el que carga la deuda de
+credibilidad de §13.6.
+
+⚠️ **Lo que los logs no dan, y el campo sigue teniendo que dar:** las seis cosas de §13.1 — sobre
+todo **qué dejaron de preguntar**, que es invisible en cualquier telemetría por definición.
+
+### 19.6 ⭐⭐⭐ La arquitectura: es RAG puro, y la PO cierra el debate de reentrenar
+
+Alejo preguntó si el modelo fue entrenado con la información. La respuesta es inequívoca:
+
+> *"El modelo lee la documentación de SharePoint. **El modelo no genera data, extrae.** El modelo no
+> genera ningún tipo de información. Lo que hace es **interpretar la base de conocimientos**,
+> identificar qué se está consultando y sobre esa información responde. Inclusive **en la respuesta te
+> pone los documentos de referencia** sobre los cuales se basó."*
+
+Y Alejo lo formuló de vuelta, que es como quedó cerrado:
+
+> *"Entonces, dependiendo de la calidad de la información que tenga el negocio actualizada, el modelo
+> va a poder razonar mejor."*
+
+⭐⭐⭐ **Esto es la validación más fuerte posible de la tesis del Release 1, y no viene del CoE — viene
+de la dueña de la capacidad.**
+
+| Lo que el proyecto venía argumentando con evidencia externa | Lo que la PO declara |
+|---|---|
+| Reentrenar casi no mueve la aguja; darle el documento correcto al responder es el mejor resultado y el más barato (F-490, F-492) | **No hay nada que reentrenar. El modelo no genera información, la extrae** |
+| Ordenar el repositorio no es el plan B, es lo que vuelve cumplible la regla que AIDA ya tiene | **La calidad de la respuesta es función directa de la calidad del SharePoint** |
+| El diseño debe mostrar fragmento y fuente, no solo el enlace | **AIDA ya cita los documentos de referencia** en cada respuesta |
+
+⭐ **La discusión "¿arreglamos la base o reentrenamos el modelo?" queda cerrada. No era una
+disyuntiva.**
+
+### 19.7 ⛔⛔ La contradicción técnica: SharePoint vs. Google
+
+**La PO dice, dos veces y sin ambigüedad, que la base de conocimiento vive en SharePoint** —
+"ambas son SharePoint", "es un SharePoint que tiene una estructura de carpetas".
+
+**SharePoint es Microsoft.** Y la reunión con la jefatura (§18.1) estableció que **AIDA corre sobre
+Google**.
+
+**Las dos afirmaciones pueden ser compatibles, y la lectura más probable las reconcilia:**
+
+| Capa | Probable | Estado |
+|---|---|---|
+| **Motor / modelo** | Google | Declarado por la jefatura |
+| **Repositorio documental** | **SharePoint (Microsoft)** | ✅ Declarado por la PO, dos veces |
+
+Un motor de Google indexando un repositorio SharePoint es una arquitectura común y perfectamente
+viable. **Pero no está confirmado**, y hay dos consecuencias que obligan a resolverlo:
+
+1. ⚠️ **Algunos límites de SharePoint podrían sí aplicar** —umbral de indexación, tratamiento de
+   formatos, permisos— aunque los de **Copilot Studio** sigan descartados. **No reabrir los números de
+   Copilot; sí verificar los del repositorio.**
+2. ⚠️ **La decisión de arquitectura de la Fase 5 depende de saber qué habla con qué.**
+
+⭐ **P15 se precisa:** ya no es solo *"¿qué servicio de Google?"* sino **"¿qué servicio de Google
+indexa un SharePoint de Microsoft, y con qué límites?"** Interlocutores: Miguel Portugal y el equipo
+técnico de Radille. **Existe un diagrama de arquitectura** — pedirlo explícitamente.
+
+### 19.8 ⭐⭐ El gobierno de la base: dónde está exactamente el hueco
+
+> *"Es un SharePoint que tiene una estructura de carpetas."*
+> *"**Cada ramo vela porque sus características estén bien.**"*
+> *"Internamente **no** [hay un analista asignado]... **cómo se organicen** [es de cada ramo]."*
+
+⭐⭐ **Esto identifica el hueco de gobernanza con precisión, y de forma no acusatoria.**
+
+La responsabilidad **está asignada** —cada ramo responde por su carpeta— pero **sin rol declarado, sin
+cadencia, sin criterio de calidad y sin nadie que verifique.** Cada ramo se organiza como puede.
+
+⭐ **Y ese es exactamente el mecanismo por el que se llega a un catálogo con duplicados, versiones de
+2022 conviviendo con vigentes, y archivos vacíos.** No hay nadie haciendo mal su trabajo. **El trabajo
+no está definido.**
+
+**Consecuencia directa para el Release 1:** la condición de gobernanza de §11.3 del dossier —que
+Productos se comprometa a un flujo de actualización— **no es un pedido extraordinario. Es completar
+algo que la arquitectura ya asume que existe.**
+
+### 19.9 ⭐⭐ La calidad se mide con feedback — y el feedback ya apunta a la capa A
+
+> *"Los asesores tienen que darle feedback positivo o negativo a cada [respuesta]."*
+> *"**En los últimos meses, cualquier feedback negativo estaba más en relación a alguna documentación
+> que no estaba actualizada o alguna documentación que no estaba completa.**"*
+
+⭐⭐⭐ **La PO confirma el diagnóstico central del proyecto, con sus propios datos.**
+
+El feedback negativo de AIDA **ya está trazado a documentación desactualizada o incompleta** — es
+decir, **capa A (conocimiento)**, que era la hipótesis principal y la que el proyecto se proponía
+falsar.
+
+⭐ **Valor para la presentación:** la brecha deja de ser una interpretación del CoE. **Es lo que el
+propio sistema de feedback de AIDA viene registrando.** No hay que convencer a nadie de que el
+problema es el contenido — el instrumento de la capacidad ya lo dice.
+
+⚠️ **Lo que esto no cierra:** la proporción. Saber que el feedback negativo "está más en relación a"
+documentación no dice **cuánto** del total es capa A y cuánto es B, C o D. **Eso sale de los logs**, y
+es la primera pregunta a hacerles.
+
+### 19.10 ✅ Confirmación en población propia del efecto por antigüedad
+
+Melissa preguntó si habían analizado quiénes usan más la herramienta:
+
+> *"La tendencia es que **los que tienen mayor uso son asesores nuevos**, y los que tienen menos uso
+> son **asesores ya antiguos o más expertos**."*
+
+⭐⭐ **Esto confirma F-476 en la población de RIMAC.** Brynjolfsson, Li & Raymond midieron +34% en
+novatos y efecto mínimo en expertos. El patrón de uso de AIDA reproduce esa distribución.
+
+⭐ **Y ahorra trabajo:** §5.1 proponía *"reanalizar la encuesta cortando por antigüedad, es trabajo de
+una tarde"*. **La PO ya tiene el dato y confirma el patrón.** Lo que queda es cuantificarlo contra los
+logs.
+
+⚠️ **Precisión importante:** esto confirma el patrón de **uso**, no el de **efecto**. Que los novatos
+la usen más no prueba que les rinda más — aunque es consistente con que así sea. **La estratificación
+por antigüedad en el diseño de validación (§16.3) sigue siendo obligatoria.**
+
+### 19.11 ⛔⛔⛔ No hay roadmap de AIDA — y el proceso real de cambio
+
+**Declarado sin rodeos:**
+
+> *"**No hay ahorita un roadmap de mejora de AIDA.** Bajo la nueva estructura del modelo operativo,
+> **el negocio es quien tiene que gatillar las solicitudes** de cualquier cambio o mejora nueva. Si
+> pasa algo con AIDA, alguna incidencia, se soluciona. Pero si son cosas nuevas o cambios, tienen que
+> entrar por este [proceso]."*
+
+**El proceso formal de solicitud, en cuatro pasos:**
+
+| # | Paso | Detalle |
+|---|---|---|
+| 1 | **El negocio genera una solicitud** | No el CoE, no TI. **El negocio** |
+| 2 | **Acompañada de una captura de valor** | *"No llega a ser un business case, es algo más sencillo, pero el objetivo es que cualquier solución genere una captura: puede ser en plata, puede ser en KPIs"* |
+| 3 | **Evaluación por "metodología de fricción de la demanda"** | ⚠️ Metodología no detallada — **P17** |
+| 4 | **En base a eso se desarrolla la capacidad** | |
+
+⭐⭐ **Y el cuello de botella real, que el proyecto tenía mal caracterizado:**
+
+> *"En la mayoría de casos hay un tema de presupuesto, porque necesita perfiles que no tenemos. Los
+> recursos son **staffeables**: están en el equipo de IA pero **no son recursos asignados al BAU**. Si
+> vienes con una iniciativa y necesitas uno de ellos, **tienes la plata, lo pagas y te lo llevas**."*
+
+⚠️ **Corrección al Release 1.** El proyecto venía afirmando que los seis arreglos *"no necesitan
+inversión, solo capacidad"*. **Eso es impreciso: en esta organización, capacidad ES presupuesto** —
+los recursos del equipo de IA son staffeables y los paga el negocio que los solicita.
+
+### 19.12 ⭐⭐⭐ El camino barato, declarado por la propia PO — y ya está abierto
+
+Radille lo dijo sin que se lo preguntaran, cerrando la reunión:
+
+> *"Lo más sencillo es **agregar base de conocimiento**. Es un poco lo que estamos haciendo con Jaime,
+> que sale de **las mesas de trabajo de los jueves**: todo lo que están actualizando del manual, de los
+> catálogos de beneficios, todo eso se está **centralizando a través de AIDA**. Eso es lo más sencillo:
+> **cargar nueva base de conocimientos es lo más sencillo**."*
+
+⭐⭐⭐ **Esto es lo más accionable de toda la entrevista, y cambia la táctica del Release 1.**
+
+Hay **dos caminos**, con costos radicalmente distintos, y la PO acaba de decir cuál es cuál:
+
+| Camino | Qué incluye | Costo | Proceso |
+|---|---|---|---|
+| ⭐ **Carga de base de conocimiento** | Documentos nuevos, corregidos o reformateados en el SharePoint | **El más sencillo.** Sin presupuesto ni staffing | **Ya existe un canal abierto y funcionando** (Jaime, mesas de los jueves) |
+| **Cambio de capacidad** | Funcionalidad nueva, cambios de lógica, interfaz | Requiere presupuesto y recursos staffeables | Solicitud del negocio + captura de valor + fricción de la demanda |
+
+**Ahora se puede clasificar cada uno de los seis arreglos de §18.5 contra esa división:**
+
+| # | Arreglo | Camino |
+|---|---|---|
+| 1 | Cerrar el catálogo de producto | ⭐ **Carga de base** — barato, canal abierto |
+| 2 | Cargar el modelo de venta (Playbook partido y des-tabulado) | ⭐ **Carga de base** — barato, canal abierto |
+| 3 | Sacar del índice lo que no debe responder | ⭐ **Carga de base** (bajas) — barato |
+| 4 | Convertir láminas en cuadros | ⭐ **Carga de base** — barato |
+| 5 | Evaluar la consistencia de las respuestas | 🟡 **Mixto** — el banco de control lo corre el CoE; instrumentarlo dentro de AIDA sí es capacidad |
+| 6 | Que la pantalla no arranque en blanco | 🔴 **Capacidad** — requiere solicitud, captura de valor y presupuesto |
+
+⭐⭐ **Cuatro de los seis arreglos —y son los que sostienen la promesa del Release 1— caen del lado
+barato, por un canal que ya está operando.** No hay que crear un proceso: hay que **sumarse a las
+mesas de los jueves**.
+
+⭐ **Y el arreglo 6 —la pantalla en blanco— es el que necesita el business case.** Que es justamente
+donde el proyecto tiene el argumento más fuerte: es la pieza que decide si la mejora **llega** a los
+asesores que ya la abandonaron (§20 del dossier).
+
+### 19.13 Contexto político
+
+- ⚠️ **El equipo de Radille depende de Giselle**, y Radille identificó a **Giselle como quien originó
+  el pedido de la reunión**. La misma persona a quien la jefatura pensaba escalar el tema. Conviene
+  tenerlo presente antes de mover piezas.
+- Radille preguntó explícitamente si el interés va por *"factibilidades técnicas o lo que ya hayamos
+  hecho"* o por *"un wish de lo que pueda querer el asesor"*. ⭐ **La respuesta honesta es que va por
+  lo segundo, y conviene decirlo así** — encaja con el encuadre de responsabilidad compartida y evita
+  que la conversación se lea como auditoría.
+- **Existe un diagrama de arquitectura.** Radille lo mencionó con reticencia (*"no me queda claro cuál
+  sería la [utilidad]"*). **Acceso no confirmado** — pedirlo con propósito explícito.
+
+### 19.14 Preguntas nuevas y estado actualizado
+
+**P16 — ¿AIDA Sales tiene subagentes por ramo adentro?** La auto-interrogación declaró cinco; la PO
+describe segmentación por caso de uso y canal. Se resuelve con el diagrama, no preguntándole a AIDA.
+
+**P17 — ¿Qué es la "metodología de fricción de la demanda"?** Es el filtro por el que pasa cualquier
+solicitud. **Conocerla es saber cómo se escribe una solicitud que pasa.**
+
+**P18 — ¿Qué proporción del feedback negativo es capa A?** La PO dice que "está más en relación a"
+documentación desactualizada o incompleta. **Los logs deberían permitir cuantificarlo**, y es la
+primera pregunta que hay que hacerles.
+
+**P19 — ¿Cómo se entra a las mesas de trabajo de los jueves?** Es el canal barato ya abierto (§19.12).
+**Probablemente la pregunta operativa más rentable del proyecto.**
 
 ---
 

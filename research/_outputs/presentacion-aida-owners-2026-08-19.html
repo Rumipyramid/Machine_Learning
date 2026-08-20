@@ -124,6 +124,14 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
 .pill.no{background:#FDE7EB;color:var(--tertiary)}
 .pill.half{background:#FFF0E0;color:#B85A00}
 
+/* === S3 · cita de la PO === */
+.quote-big{display:grid;grid-template-columns:96px 1fr;gap:24px;align-items:start;
+  background:var(--bg-section);border-radius:18px;padding:44px 52px}
+.qmark{font-family:'BRSonoma Black';font-size:118px;line-height:.72;color:var(--tertiary)}
+.qtext{font-family:'BRSonoma Bold';font-size:44px;line-height:1.2;letter-spacing:-.02em;color:var(--primary)}
+.qattr{font-family:'BRSonoma Medium';font-size:22px;color:var(--text);margin-top:18px}
+.pill.ok{background:#E8F3EC;color:#1B7A45}
+
 /* === S6 · dos hechos que no deberían convivir === */
 .two-facts{display:grid;grid-template-columns:1fr 150px 1fr;align-items:center}
 .fact{background:var(--bg-soft);border-radius:18px;padding:32px 36px;min-height:150px;
@@ -145,6 +153,19 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
 .six-item .sn{font-family:'BRSonoma Bold';font-size:16px;color:var(--tertiary)}
 .six-item .st{font-family:'BRSonoma Bold';font-size:22px;line-height:1.2;color:var(--primary);margin-top:6px}
 .six-item .sd{font-family:'BRSonoma Regular';font-size:16px;line-height:1.35;color:var(--secondary);margin-top:7px}
+
+/* === S8 · citas cortas · S10 · caminos === */
+.quote-sm{background:var(--bg-section);border-radius:4px;border-left:5px solid var(--tertiary);
+  padding:18px 24px;font-family:'BRSonoma Medium';font-size:20px;line-height:1.35;
+  color:var(--text);margin-top:14px}
+.path{background:var(--bg-warm-soft);border-radius:18px;padding:32px 34px;min-height:420px;
+  display:flex;flex-direction:column}
+.path.cool{background:var(--bg-cool-soft)}
+.pathnote{margin-top:auto;padding-top:20px;font-family:'BRSonoma Bold';font-size:21px;
+  line-height:1.25;color:var(--primary)}
+
+.ourread{background:var(--primary);border-radius:14px;padding:24px 28px;
+  font-family:'BRSonoma Medium';font-size:21px;line-height:1.35;color:var(--neutral);margin-top:26px}
 
 /* === S11 · pedidos === */
 .asks{display:flex;flex-direction:column;gap:20px}
@@ -188,27 +209,17 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
 
 <!-- ══════════ S3 · LA PROMESA ══════════ -->
 <section class="slide content">
-  <h2 class="s-title reveal" style="--d:.05s">AIDA declara tres funciones, y esas tres son la vara</h2>
+  <h2 class="s-title reveal" style="--d:.05s">El objetivo de AIDA, en palabras de su propia dueña</h2>
   <div class="s-body">
-    <p class="lead reveal" style="--d:.13s;max-width:1440px">No las definimos nosotros. Salen de <strong style="font-family:'BRSonoma Bold'">la documentación de Rimac sobre el proyecto</strong> y de <strong style="font-family:'BRSonoma Bold'">lo que la propia herramienta responde</strong> cuando se le pregunta para qué sirve.</p>
-    <div class="fx" style="margin-top:46px">
-      <div class="card reveal" style="--d:.25s;min-height:330px">
-        <div class="n">1</div>
-        <div class="h3" style="margin-top:14px">Centralizar el conocimiento y los recursos del asesor</div>
-        <div class="md" style="margin-top:14px">Un solo lugar donde encontrar lo que hoy vive repartido en documentos, plataformas y personas.</div>
-      </div>
-      <div class="card reveal" style="--d:.35s;min-height:330px">
-        <div class="n">2</div>
-        <div class="h3" style="margin-top:14px">Dar soporte comercial</div>
-        <div class="md" style="margin-top:14px">Ayudar al asesor a resolver la conversación con el cliente: qué decir, cómo plantearlo, cómo responder una objeción.</div>
-      </div>
-      <div class="card reveal" style="--d:.45s;min-height:330px">
-        <div class="n">3</div>
-        <div class="h3" style="margin-top:14px">Consultar información oficial y actualizada de producto</div>
-        <div class="md" style="margin-top:14px">Coberturas, condiciones y parámetros vigentes, sin tener que ir a buscarlos a otro lado.</div>
+    <div class="quote-big reveal" style="--d:.15s">
+      <div class="qmark">“</div>
+      <div>
+        <p class="qtext">Consolidar la información para el asesor<br>y reducir sus tiempos de búsqueda.</p>
+        <p class="qattr">— <strong style="font-family:'BRSonoma Bold'">Ese fue el objetivo.</strong></p>
       </div>
     </div>
-    <p class="sm reveal" style="--d:.58s;margin-top:30px">Medimos la herramienta contra su propia declaración. Es la vara más justa disponible y no depende de la opinión de nadie.</p>
+    <p class="lead reveal" style="--d:.32s;margin-top:38px;max-width:1560px">Un objetivo, no tres. Sobre él se construyeron <strong style="font-family:'BRSonoma Bold'">tres funcionalidades</strong>: generar speeches de venta personalizados, generar cuadros comparativos entre planes, y poner los brochures al alcance para que el asesor no los busque en distintos lugares.</p>
+    <div class="callout reveal" style="--d:.45s;margin-top:34px">Esa frase es la vara de este diagnóstico. <strong style="font-family:'BRSonoma Bold'">No medimos AIDA contra lo que nosotros creemos que debería hacer — la medimos contra lo que se propuso hacer.</strong></div>
   </div>
   <div class="footer"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
   <div class="pagenum"></div>
@@ -222,7 +233,7 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
       <div class="card-cool reveal" style="--d:.15s;min-height:330px">
         <div class="ic">Instrumento 1</div>
         <div class="h3" style="margin-top:12px">Auditoría de la herramienta</div>
-        <div class="md" style="margin-top:14px">Le hacemos a AIDA las preguntas reales del asesor y evaluamos la calidad de cada respuesta con una rúbrica, no a ojo.</div>
+        <div class="md" style="margin-top:14px">Le hacemos a AIDA las preguntas reales del asesor y evaluamos la calidad de cada respuesta con una rúbrica, no a ojo. <strong style="font-family:'BRSonoma Bold'">Los logs de AIDA ya nos dan las preguntas reales</strong>, con su respuesta y su feedback.</div>
         <div class="sm" style="margin-top:14px">Método publicado de evaluación de modelos con modelos, con calibración humana obligatoria.</div>
       </div>
       <div class="card-cool reveal" style="--d:.25s;min-height:330px">
@@ -246,30 +257,30 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
 
 <!-- ══════════ S5 · LA BRECHA ══════════ -->
 <section class="slide content">
-  <h2 class="s-title reveal" style="--d:.05s">La brecha, función por función</h2>
+  <h2 class="s-title reveal" style="--d:.05s">La brecha está en el objetivo, no en las funcionalidades</h2>
   <div class="s-body">
     <div class="gap-head reveal" style="--d:.12s">
-      <div></div><div>La promesa declarada</div><div>Lo que encontramos</div><div>Estado</div>
+      <div></div><div>Lo que se propuso</div><div>Lo que encontramos</div><div>Estado</div>
     </div>
     <div class="gap-row reveal" style="--d:.2s">
       <div class="gap-n">01</div>
-      <div class="gap-h">Centralizar el conocimiento y los recursos del asesor</div>
-      <div class="gap-t">El conocimiento sigue viviendo en el cartapacio, en la capa y en el onboarding. En recursos, <strong style="font-family:'BRSonoma Bold'">Sales Coach no está integrado de ninguna forma</strong>.</div>
-      <div><span class="pill no">Sin avance</span></div>
+      <div class="gap-h">Consolidar la información del asesor</div>
+      <div class="gap-t">Los brochures sí se consolidaron. <strong style="font-family:'BRSonoma Bold'">El resto del conocimiento sigue viviendo en el cartapacio, en la capa y en el onboarding</strong> — y Sales Coach no está integrado de ninguna forma.</div>
+      <div><span class="pill no">Parcial</span></div>
     </div>
     <div class="gap-row reveal" style="--d:.33s">
       <div class="gap-n">02</div>
-      <div class="gap-h">Dar soporte comercial</div>
-      <div class="gap-t">La función existe: se le dieron lógicas para construir mensajes recomendados. <strong style="font-family:'BRSonoma Bold'">El problema no es la función, es el material del que los construye.</strong></div>
-      <div><span class="pill half">Parcial</span></div>
+      <div class="gap-h">Reducir los tiempos de búsqueda</div>
+      <div class="gap-t">La herramienta responde rápido. Pero <strong style="font-family:'BRSonoma Bold'">el asesor sale a verificar por fuera</strong>, y eso reintroduce el tiempo que se había ahorrado. Hoy nadie está midiendo ese ciclo completo.</div>
+      <div><span class="pill half">Sin medir</span></div>
     </div>
     <div class="gap-row reveal" style="--d:.46s">
       <div class="gap-n">03</div>
-      <div class="gap-h">Consultar información oficial y actualizada de producto</div>
-      <div class="gap-t">La arquitectura está: AIDA consulta un repositorio. Lo que no está es el contenido en la forma que puede leer.</div>
-      <div><span class="pill half">Parcial</span></div>
+      <div class="gap-h">Las tres funcionalidades construidas encima</div>
+      <div class="gap-t">Speeches, cuadros comparativos y brochures <strong style="font-family:'BRSonoma Bold'">funcionan como fueron diseñadas.</strong> El problema no está en ellas: está en el material del que se alimentan.</div>
+      <div><span class="pill ok">Operativas</span></div>
     </div>
-    <p class="sm reveal" style="--d:.6s;margin-top:28px">Lectura preliminar. Se cierra con los resultados de la auditoría estructurada y el shadowing, en curso.</p>
+    <p class="sm reveal" style="--d:.6s;margin-top:28px">Lectura preliminar. Se cierra con la auditoría estructurada, el shadowing y el análisis de los logs de AIDA, en curso.</p>
   </div>
   <div class="footer"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
   <div class="pagenum"></div>
@@ -296,9 +307,9 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
         <path d="M7 32 L17 44 L27 32" stroke="#F7052D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
       </svg>
     </div>
-    <div class="concl reveal" style="--d:.55s">Las dos cosas solo conviven si <strong style="font-family:'BRSonoma Bold'">el uso no lo está moviendo la utilidad</strong>. Lo mueve la métrica de uso.</div>
-    <p class="lead reveal" style="--d:.68s;margin-top:34px;max-width:1560px">Y ahí está la consecuencia más accionable del diagnóstico: <strong style="font-family:'BRSonoma Bold'">cualquier número de adopción que hoy se reporte hacia arriba no es una señal de valor.</strong> Se puede subir el uso sin mover nada de lo que importa — y hoy no tendríamos cómo notarlo.</p>
-    <p class="sm reveal" style="--d:.78s;margin-top:22px">Encuesta a asesores de Vida (2026). La magnitud exacta se cierra con la muestra ampliada; la coexistencia de ambas respuestas ya está registrada.</p>
+    <div class="concl reveal" style="--d:.55s">No hay que deducirlo: <strong style="font-family:'BRSonoma Bold'">el uso de AIDA está en la variable del asesor</strong>, y el criterio de éxito declarado de la herramienta es la cantidad de consultas.</div>
+    <p class="lead reveal" style="--d:.68s;margin-top:32px;max-width:1560px">Nadie hizo nada mal. El punto es de construcción del indicador: <strong style="font-family:'BRSonoma Bold'">un asesor que consulta porque está en su variable produce el mismo número que uno que consulta porque le sirve.</strong> El indicador no distingue, y no fue diseñado para distinguir.</p>
+    <p class="sm reveal" style="--d:.78s;margin-top:20px">La medición no está mal hecha: mide adopción. Lo que no existe hoy es un indicador de utilidad — y ese hueco es barato de llenar.</p>
   </div>
   <div class="footer"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
   <div class="pagenum"></div>
@@ -339,13 +350,16 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px">
       <div>
         <div class="h3 reveal" style="--d:.15s">Lo que hay hoy en el repositorio</div>
-        <div class="md reveal" style="--d:.22s;margin-top:18px">El catálogo de producto no cierra: <strong style="font-family:'BRSonoma Bold'">un producto figura dos veces con nombres distintos</strong>, otro vigente no aparece, y uno conserva el nombre que tenía en 2022. Conviven versiones distintas del mismo material.</div>
-        <div class="md reveal" style="--d:.29s;margin-top:16px">Junto a eso: archivos vacíos, plantillas sin contenido y láminas donde la información vive en el diseño — y el diseño no sobrevive a la lectura automática.</div>
+        <div class="md reveal" style="--d:.22s;margin-top:16px">El catálogo de producto no cierra: <strong style="font-family:'BRSonoma Bold'">un producto figura dos veces con nombres distintos</strong>, otro vigente no aparece, y uno conserva el nombre que tenía en 2022. Conviven versiones distintas del mismo material.</div>
+        <div class="md reveal" style="--d:.29s;margin-top:14px">Junto a eso: archivos vacíos, plantillas sin contenido y láminas donde la información vive en el diseño — y el diseño no sobrevive a la lectura automática.</div>
+        <div class="md reveal" style="--d:.36s;margin-top:14px">Nadie está haciendo mal su trabajo. <strong style="font-family:'BRSonoma Bold'">Cada ramo responde por su carpeta, pero sin rol declarado, sin cadencia y sin criterio de calidad.</strong> El trabajo no está definido.</div>
       </div>
       <div>
-        <div class="h3 reveal" style="--d:.36s">Por qué esto es lo primero, y no un paso previo</div>
-        <div class="md reveal" style="--d:.43s;margin-top:18px">La pregunta natural es si hay que reentrenar el modelo. La evidencia publicada dice que no: sobre conocimiento nuevo, <strong style="font-family:'BRSonoma Bold'">reentrenar casi no mueve la aguja, mientras que darle el documento correcto al responder es el mejor resultado — y el más barato.</strong></div>
-        <div class="callout reveal" style="--d:.52s;margin-top:22px;font-size:22px">Ordenar el repositorio no es el plan B. Es lo que vuelve cumplible la regla que AIDA ya tiene.</div>
+        <div class="h3 reveal" style="--d:.44s">Y esto no lo decimos nosotros</div>
+        <div class="quote-sm reveal" style="--d:.5s">El modelo no genera data, extrae. Interpreta la base de conocimientos y sobre esa información responde.</div>
+        <div class="quote-sm reveal" style="--d:.57s">En los últimos meses, cualquier feedback negativo estaba en relación a <strong style="font-family:'BRSonoma Bold'">documentación que no estaba actualizada o que no estaba completa</strong>.</div>
+        <div class="sm reveal" style="--d:.63s;margin-top:14px">— La dueña de la capacidad, sobre cómo funciona AIDA y qué dice su propio sistema de feedback.</div>
+        <div class="ourread reveal" style="--d:.7s">Lo que se sigue de eso: <strong style="font-family:'BRSonoma Bold'">no hay nada que reentrenar. La calidad de la respuesta es función directa de la calidad del repositorio.</strong></div>
       </div>
     </div>
   </div>
@@ -371,7 +385,33 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
   <div class="pagenum"></div>
 </section>
 
-<!-- ══════════ S10 · EL PEDIDO ══════════ -->
+<!-- ══════════ S10 · DOS CAMINOS ══════════ -->
+<section class="slide content">
+  <h2 class="s-title reveal" style="--d:.05s">Cuatro de los seis arreglos no necesitan presupuesto</h2>
+  <div class="s-body">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+      <div class="path reveal" style="--d:.15s">
+        <div class="tier red">Camino 1 · Carga de base de conocimiento</div>
+        <div class="h3" style="margin-top:14px">Los arreglos 1 a 4</div>
+        <div class="md" style="margin-top:16px">Cerrar el catálogo, cargar el modelo de venta, sacar del índice lo que no debe responder, convertir las láminas en cuadros.</div>
+        <div class="md" style="margin-top:14px"><strong style="font-family:'BRSonoma Bold'">Son documentos, no desarrollo.</strong> Y ya existe un canal abierto y operando: las mesas de trabajo donde hoy se está centralizando el manual y los catálogos de beneficios a través de AIDA.</div>
+        <div class="pathnote">Lo que pedimos acá es entrar a esa mesa</div>
+      </div>
+      <div class="path cool reveal" style="--d:.3s">
+        <div class="tier" style="color:var(--secondary)">Camino 2 · Cambio de capacidad</div>
+        <div class="h3" style="margin-top:14px">Los arreglos 5 y 6</div>
+        <div class="md" style="margin-top:16px">Instrumentar la medición de consistencia dentro de la herramienta, y que la pantalla no arranque en blanco.</div>
+        <div class="md" style="margin-top:14px">Estos sí requieren solicitud del negocio, captura de valor y presupuesto — porque los recursos del equipo de IA no están asignados al día a día.</div>
+        <div class="pathnote">Lo que pedimos acá es construir juntos ese caso</div>
+      </div>
+    </div>
+    <div class="callout reveal" style="--d:.48s;margin-top:38px">No estamos proponiendo un proceso nuevo. <strong style="font-family:'BRSonoma Bold'">Para la mayor parte del trabajo, el proceso ya existe y está funcionando</strong> — solo hay que sumar el contenido de Vida.</div>
+  </div>
+  <div class="footer"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Diseño Estratégico</span></div>
+  <div class="pagenum"></div>
+</section>
+
+<!-- ══════════ S11 · LA MATRIZ ══════════ -->
 <section class="slide content">
   <h2 class="s-title reveal" style="--d:.05s">Lo que proponemos es priorizar juntos, no pedir</h2>
   <div class="s-body">
@@ -379,7 +419,6 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
       <div class="reveal" style="--d:.18s">
         <svg viewBox="0 0 820 470" width="820" height="470" role="img"
              aria-label="Matriz de priorización vacía: las seis acciones esperan a la izquierda para ser ubicadas según impacto y factibilidad">
-          <!-- fichas esperando -->
           <text x="10" y="28" font-family="BRSonoma Bold" font-size="14" fill="#6B7280" letter-spacing="1">LOS SEIS ARREGLOS</text>
           <g>
             <circle cx="34" cy="76"  r="18" fill="#F7052D"/><text x="34" y="83"  font-family="BRSonoma Bold" font-size="16" fill="#fff" text-anchor="middle">1</text>
@@ -391,7 +430,6 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
           </g>
           <path d="M72 206 H150" stroke="#C7CBD1" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round"/>
           <path d="M142 198 L152 206 L142 214" stroke="#C7CBD1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <!-- plano -->
           <rect x="230" y="26" width="560" height="360" fill="#F5F6FB" rx="8"/>
           <line x1="510" y1="26" x2="510" y2="386" stroke="#E5E7EB" stroke-width="1.5"/>
           <line x1="230" y1="206" x2="790" y2="206" stroke="#E5E7EB" stroke-width="1.5"/>
@@ -417,7 +455,7 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
   <div class="pagenum"></div>
 </section>
 
-<!-- ══════════ S11 · LO QUE NECESITAMOS ══════════ -->
+<!-- ══════════ S12 · LO QUE NECESITAMOS ══════════ -->
 <section class="slide content">
   <h2 class="s-title reveal" style="--d:.05s">Tres cosas que necesitamos de ustedes para avanzar</h2>
   <div class="s-body">
@@ -425,22 +463,22 @@ img,video,canvas,svg{max-width:100%;max-height:100%}
       <div class="ask reveal" style="--d:.15s">
         <div class="an">01</div>
         <div>
-          <div class="h3">El objetivo declarado de AIDA, en sus palabras</div>
-          <div class="md" style="margin-top:10px">Qué se espera que haga y —tanto o más importante— <strong style="font-family:'BRSonoma Bold'">qué se espera que no haga</strong>. Sin eso, cualquier diagnóstico mide contra una vara que nos inventamos nosotros.</div>
+          <div class="h3">Qué <em>no</em> debe hacer AIDA</div>
+          <div class="md" style="margin-top:10px">Ya sabemos para qué se construyó: consolidar información y reducir tiempos de búsqueda. <strong style="font-family:'BRSonoma Bold'">Lo que falta declarar es el límite</strong> — qué consultas no debería atender, y en qué casos es mejor que diga que no sabe.</div>
         </div>
       </div>
       <div class="ask reveal" style="--d:.28s">
         <div class="an">02</div>
         <div>
-          <div class="h3">Precisar sobre qué corre AIDA hoy</div>
-          <div class="md" style="margin-top:10px">Confirmamos que <strong style="font-family:'BRSonoma Bold'">no corre sobre Copilot sino sobre Google</strong>, y eso abre posibilidades que el diagnóstico venía asumiendo cerradas. Necesitamos saber exactamente cuál es el servicio para dimensionar qué se le puede pedir.</div>
+          <div class="h3">Precisar la arquitectura, con el diagrama a la vista</div>
+          <div class="md" style="margin-top:10px">Sabemos que la base vive en <strong style="font-family:'BRSonoma Bold'">SharePoint</strong> y que el motor es de <strong style="font-family:'BRSonoma Bold'">Google</strong>. Necesitamos entender cómo se conectan, qué límites reales tiene ese repositorio, y si dentro de AIDA Sales hay agentes por ramo.</div>
         </div>
       </div>
       <div class="ask reveal" style="--d:.41s">
         <div class="an">03</div>
         <div>
-          <div class="h3">Un compromiso de actualización desde Producto</div>
-          <div class="md" style="margin-top:10px">Podemos dejar el catálogo impecable esta vez. <strong style="font-family:'BRSonoma Bold'">Si no hay un flujo que lo mantenga, vuelve a ensuciarse</strong> y la promesa de información vigente deja de sostenerse. Es la única condición que no podemos resolver nosotros.</div>
+          <div class="h3">Un dueño y una cadencia para la base de Vida</div>
+          <div class="md" style="margin-top:10px">Hoy cada ramo responde por su carpeta, pero sin rol ni periodicidad definida. Podemos dejar el catálogo impecable esta vez; <strong style="font-family:'BRSonoma Bold'">si no hay un flujo que lo mantenga, vuelve a ensuciarse</strong> y la promesa deja de sostenerse.</div>
         </div>
       </div>
     </div>
