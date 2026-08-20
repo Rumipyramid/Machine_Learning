@@ -1,0 +1,368 @@
+<title>Lo que dicen los logs de AIDA</title>
+<style>
+  :root{
+    --paper:#F7F8F7; --ink:#16232B; --muted:#5F7178; --rule:#D6DDDC;
+    --accent:#0F6E6E; --accent-soft:#E4EFEE; --signal:#A84A1C; --signal-soft:#F7EAE2;
+    --card:#FFFFFF; --rail:#EDF2F1; --flat:#B3BFC2;
+    --serif:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#101A1E; --ink:#E3EAE9; --muted:#93A3A9; --rule:#26343A;
+      --accent:#57B7B1; --accent-soft:#152C2E; --signal:#DD8A57; --signal-soft:#2C2019;
+      --card:#16232799; --rail:#162226; --flat:#3D4E54;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101A1E; --ink:#E3EAE9; --muted:#93A3A9; --rule:#26343A;
+    --accent:#57B7B1; --accent-soft:#152C2E; --signal:#DD8A57; --signal-soft:#2C2019;
+    --card:#16232799; --rail:#162226; --flat:#3D4E54;
+  }
+
+  *{box-sizing:border-box}
+  body{background:var(--paper); color:var(--ink); font-family:var(--serif); font-size:18px;
+       line-height:1.68; margin:0; padding:0 5vw 6rem; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px; margin:0 auto}
+  .col{max-width:64ch}
+
+  header.mast{padding:4.5rem 0 2.2rem; border-bottom:2px solid var(--ink);
+              display:flex; flex-direction:column; gap:1.1rem}
+  .kicker{font-family:var(--mono); font-size:.7rem; letter-spacing:.16em;
+          text-transform:uppercase; color:var(--accent)}
+  h1{font-size:clamp(2.4rem,5.5vw,3.6rem); line-height:1.05; margin:0; font-weight:400;
+     letter-spacing:-.02em; text-wrap:balance}
+  h1 em{font-style:italic; color:var(--accent)}
+  .standfirst{font-size:1.18rem; color:var(--muted); margin:0; max-width:58ch; text-wrap:pretty}
+  .meta{font-family:var(--mono); font-size:.72rem; color:var(--muted);
+        display:flex; flex-wrap:wrap; gap:.4rem 1.4rem}
+
+  section{padding:3.4rem 0 .8rem; border-bottom:1px solid var(--rule)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:1.85rem; font-weight:400; letter-spacing:-.014em; margin:0 0 1.2rem; text-wrap:balance}
+  h3{font-size:1.06rem; font-weight:700; margin:2rem 0 .5rem; letter-spacing:-.005em}
+  p{margin:0 0 1.1rem}
+  strong{font-weight:700}
+
+  /* el patrón de lectura: caso → cifra → por qué */
+  .case{background:var(--card); border:1px solid var(--rule); border-left:3px solid var(--signal);
+        padding:1.15rem 1.35rem; margin:0 0 1.4rem; border-radius:0 4px 4px 0}
+  .case .lab{font-family:var(--mono); font-size:.68rem; letter-spacing:.13em;
+             text-transform:uppercase; color:var(--signal); display:block; margin-bottom:.4rem}
+  .case p{margin:0; font-size:1.05rem}
+  .case .q{font-family:var(--mono); font-size:.92rem; background:var(--rail);
+           padding:.15rem .4rem; border-radius:3px}
+
+  .figure{display:flex; align-items:baseline; gap:1.1rem; margin:0 0 1.3rem; flex-wrap:wrap}
+  .figure .n{font-size:3.1rem; line-height:1; letter-spacing:-.03em; color:var(--signal);
+             font-variant-numeric:tabular-nums}
+  .figure .n.calm{color:var(--accent)}
+  .figure .d{font-size:1rem; color:var(--muted); max-width:38ch; line-height:1.45}
+
+  .note{background:var(--accent-soft); border-left:3px solid var(--accent);
+        padding:1.05rem 1.2rem; margin:1.4rem 0; border-radius:0 4px 4px 0}
+  .note .lab{font-family:var(--mono); font-size:.68rem; letter-spacing:.13em;
+             text-transform:uppercase; color:var(--accent); display:block; margin-bottom:.35rem}
+  .note p{margin:0}
+  .note.warn{background:var(--signal-soft); border-left-color:var(--signal)}
+  .note.warn .lab{color:var(--signal)}
+
+  /* diagrama */
+  .diag{margin:1.6rem 0 1.2rem; overflow-x:auto}
+  .diag svg{display:block; min-width:520px; width:100%; height:auto}
+  .cap{font-family:var(--mono); font-size:.72rem; color:var(--muted); margin:.3rem 0 0}
+
+  /* tablas */
+  .tw{overflow-x:auto; margin:1.3rem 0}
+  table{border-collapse:collapse; width:100%; font-size:.94rem; line-height:1.5}
+  th{font-family:var(--mono); font-size:.68rem; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); text-align:left; padding:.5rem .8rem .5rem 0; border-bottom:1px solid var(--ink);
+     font-weight:400; vertical-align:bottom}
+  td{padding:.7rem .8rem .7rem 0; border-bottom:1px solid var(--rule); vertical-align:top}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap}
+  tr.bad td{background:var(--signal-soft)}
+  .fn{font-family:var(--mono); font-size:.82rem}
+
+  /* barras comparativas */
+  .bars{display:flex; flex-direction:column; gap:.9rem; margin:1.2rem 0 1.4rem}
+  .bar{display:grid; grid-template-columns:minmax(9rem,15rem) 1fr auto; gap:.9rem; align-items:center}
+  .bar .bl{font-size:.95rem; line-height:1.35}
+  .bar .bt{height:16px; background:var(--rail); border-radius:2px; overflow:hidden; min-width:60px}
+  .bar .bf{height:100%; background:var(--signal); border-radius:2px}
+  .bar .bf.base{background:var(--flat)}
+  .bar .bv{font-family:var(--mono); font-size:.82rem; font-variant-numeric:tabular-nums; color:var(--muted)}
+
+  .stats{display:flex; flex-wrap:wrap; gap:2.2rem; margin:1.4rem 0}
+  .stat .v{font-size:2rem; line-height:1; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+  .stat .k{font-family:var(--mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
+           color:var(--muted); margin-top:.35rem}
+
+  ul.plain{list-style:none; padding:0; margin:1rem 0}
+  ul.plain li{position:relative; padding:0 0 .75rem 1.4rem}
+  ul.plain li::before{content:""; position:absolute; left:0; top:.66rem; width:6px; height:6px;
+                      border-radius:50%; background:var(--accent)}
+
+  footer{padding:3rem 0 0; font-family:var(--mono); font-size:.74rem; color:var(--muted); line-height:1.7}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <span class="kicker">Diagnóstico de AIDA · Primera corrida sobre datos reales</span>
+  <h1>Lo que dicen<br>los <em>logs</em> de AIDA</h1>
+  <p class="standfirst">Hasta ahora el diagnóstico se apoyaba en documentos, entrevistas y en preguntarle a la herramienta. Esta es la primera vez que se mira lo que realmente pasa cuando 274 asesores la usan.</p>
+  <div class="meta"><span>CoE Diseño Estratégico</span><span>Behavioral Design</span><span>20 de agosto, 2026</span></div>
+</header>
+
+<section>
+  <div class="col">
+    <h2>Antes de los números, dos cosas</h2>
+
+    <div class="note warn">
+      <span class="lab">El archivo no es lo que dice ser</span>
+      <p>Llegó descrito como <strong>el histórico de los últimos tres meses</strong>. En realidad cubre <strong>dos días</strong>: del 17 al 19 de agosto. Nada de lo que sigue se cae por eso — pero <strong>no se puede hablar de tendencias</strong>, ni averiguar qué preguntas los asesores dejaron de hacer con el tiempo, que era uno de los análisis más prometedores. Conviene volver a pedirlo indicando el rango.</p>
+    </div>
+
+    <div class="note warn">
+      <span class="lab">Hay una cuenta que no es un asesor</span>
+      <p>Una cuenta llamada <span class="fn">aida_service</span> hizo <strong>651 consultas en dos días, todas la misma pregunta</strong>. Es un chequeo automático, no una persona. Representa el <strong>18% del volumen</strong> y está excluida de todas las cifras de este informe.</p>
+      <p style="margin-top:.7rem">Vale la pena confirmarlo con el equipo: <strong>si esa cuenta está contando dentro de las 30.000 consultas mensuales que se reportan, la cifra de adopción está inflada.</strong> Puede ser un monitoreo perfectamente legítimo — pero mejor saberlo antes que después.</p>
+    </div>
+
+    <h2 style="margin-top:2.8rem">Lo que se miró</h2>
+    <p>Ya limpio, el archivo tiene el registro completo de las conversaciones del agente de la fuerza de ventas durante dos días hábiles: cada pregunta, la respuesta, los documentos que consultó y si el asesor la calificó bien o mal.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="v">2.697</div><div class="k">consultas</div></div>
+    <div class="stat"><div class="v">274</div><div class="k">asesores distintos</div></div>
+    <div class="stat"><div class="v">501</div><div class="k">sesiones</div></div>
+    <div class="stat"><div class="v">42%</div><div class="k">del volumen es Vida</div></div>
+  </div>
+
+  <div class="col">
+    <div class="note">
+      <span class="lab">Un dato que conviene tener presente</span>
+      <p><strong>274 asesores la usaron en dos días.</strong> Sea cual sea el problema del que habla este informe, <strong>no es que la herramienta no se use.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <h2>El hallazgo principal: la misma pregunta no lee siempre lo mismo</h2>
+
+    <div class="case">
+      <span class="lab">El caso más claro</span>
+      <p>Un asesor le pidió a AIDA <span class="q">speech para endosar crédito hipotecario</span>. Esa misma pregunta, con las mismas palabras, se hizo <strong>14 veces</strong> en dos días.</p>
+      <p style="margin-top:.7rem">AIDA consultó <strong>13 combinaciones distintas de documentos</strong> para responderla. Prácticamente <strong>nunca leyó lo mismo dos veces.</strong></p>
+    </div>
+  </div>
+
+  <div class="diag">
+    <svg viewBox="0 0 900 250" role="img" aria-label="Una misma pregunta llega a AIDA cuatro veces y cada vez consulta documentos distintos; una de las veces no consulta ninguno">
+      <defs>
+        <marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+          <path d="M0,0 L7,3.5 L0,7 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <g style="color:var(--muted)">
+        <rect x="330" y="8" width="240" height="40" rx="4" fill="var(--rail)" stroke="var(--rule)"/>
+        <text x="450" y="33" text-anchor="middle" font-family="ui-monospace,monospace" font-size="14" fill="var(--ink)">la misma pregunta</text>
+        <path d="M420 50 L150 92" stroke="currentColor" stroke-width="1.4" fill="none" marker-end="url(#ar)"/>
+        <path d="M440 50 L370 92" stroke="currentColor" stroke-width="1.4" fill="none" marker-end="url(#ar)"/>
+        <path d="M460 50 L590 92" stroke="currentColor" stroke-width="1.4" fill="none" marker-end="url(#ar)"/>
+        <path d="M480 50 L800 92" stroke="currentColor" stroke-width="1.4" fill="none" marker-end="url(#ar)"/>
+      </g>
+      <g font-family="ui-monospace,monospace" font-size="12">
+        <rect x="30" y="100" width="200" height="86" rx="4" fill="var(--card)" stroke="var(--rule)"/>
+        <text x="44" y="122" fill="var(--muted)">consultó</text>
+        <rect x="44" y="132" width="130" height="15" rx="2" fill="var(--accent)" opacity=".75"/>
+        <rect x="44" y="153" width="98" height="15" rx="2" fill="var(--accent)" opacity=".75"/>
+
+        <rect x="255" y="100" width="200" height="86" rx="4" fill="var(--card)" stroke="var(--rule)"/>
+        <text x="269" y="122" fill="var(--muted)">consultó</text>
+        <rect x="269" y="132" width="98" height="15" rx="2" fill="var(--accent)" opacity=".75"/>
+
+        <rect x="480" y="100" width="200" height="86" rx="4" fill="var(--card)" stroke="var(--rule)"/>
+        <text x="494" y="122" fill="var(--muted)">consultó</text>
+        <rect x="494" y="132" width="112" height="15" rx="2" fill="var(--accent)" opacity=".75"/>
+        <rect x="494" y="153" width="140" height="15" rx="2" fill="var(--accent)" opacity=".75"/>
+
+        <rect x="705" y="100" width="165" height="86" rx="4" fill="var(--signal-soft)" stroke="var(--signal)" stroke-dasharray="4 3"/>
+        <text x="787" y="140" text-anchor="middle" fill="var(--signal)">no consultó</text>
+        <text x="787" y="158" text-anchor="middle" fill="var(--signal)">ningún documento</text>
+      </g>
+      <text x="450" y="222" text-anchor="middle" font-family="ui-monospace,monospace" font-size="12.5" fill="var(--muted)">con material distinto, la respuesta cambia — sin que nadie haya cambiado nada</text>
+    </svg>
+  </div>
+
+  <div class="col">
+    <p>Ese caso no es una anomalía. De las <strong>66 preguntas que se hicieron tres o más veces</strong> en esos dos días:</p>
+  </div>
+
+  <div class="col">
+    <div class="figure">
+      <div class="n">68%</div>
+      <div class="d">no recuperaron siempre las mismas fuentes. <strong>En Vida sube a 76%.</strong></div>
+    </div>
+    <div class="figure">
+      <div class="n">47%</div>
+      <div class="d">unas veces consultaron documentos y otras veces <strong>ninguno</strong>, para la misma pregunta.</div>
+    </div>
+
+    <p><strong>Por qué esto importa más que cualquier medición de exactitud.</strong> La mejora que más piden los asesores es que la herramienta sea consistente. Acá está la causa, y es mecánica: <strong>no es que AIDA a veces se equivoque — es que a la misma pregunta le entra material distinto cada vez.</strong></p>
+
+    <div class="note">
+      <span class="lab">Lo que esto cierra</span>
+      <p>El diagnóstico venía sosteniendo, como hipótesis, que la base tenía documentos casi iguales compitiendo entre sí. <strong>Deja de ser hipótesis.</strong> Y no hace falta interpretar nada: sale de comparar un campo del registro consigo mismo.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <h2>Por qué pasa: hay varios documentos para el mismo producto</h2>
+
+    <p>Cada documento de producto lleva un código numérico. Al agruparlos por código, el problema aparece con nombre y archivo.</p>
+
+    <div class="case">
+      <span class="lab">El error más serio, y es verificable</span>
+      <p>Bajo el código de <strong>Plan Vida Flexible</strong> hay <strong>cuatro documentos</strong>. Tres son de ese producto. El cuarto son las <strong>Condiciones Generales de Vida Futuro Protegido</strong> — que es <strong>otro producto</strong>.</p>
+      <p style="margin-top:.7rem">Un asesor que pregunta por Vida Flexible <strong>puede recibir las condiciones de un producto distinto.</strong> Eso no es un problema de calidad: es de cumplimiento.</p>
+    </div>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Código</th><th>Cuántos documentos</th><th>Qué contiene</th><th class="num">Citas</th></tr></thead>
+      <tbody>
+        <tr class="bad">
+          <td class="fn">999993</td><td class="num"><strong>4</strong></td>
+          <td>Tres de <strong>Vida Flexible</strong> — más las <strong>Condiciones Generales de Vida Futuro Protegido</strong>, que es otro producto</td>
+          <td class="num">822</td>
+        </tr>
+        <tr class="bad">
+          <td class="fn">999994</td><td class="num"><strong>5</strong></td>
+          <td>Cuatro de <strong>Inversión Global</strong> — más un <span class="fn">Formatos.docx</span> genérico</td>
+          <td class="num">440</td>
+        </tr>
+        <tr>
+          <td class="fn">999992</td><td class="num">3</td>
+          <td><strong>Vida Contigo</strong> y <strong>Ahorro con Devolución</strong> bajo el mismo código</td>
+          <td class="num">348</td>
+        </tr>
+        <tr>
+          <td class="fn">999998</td><td class="num">2</td>
+          <td>Dos documentos distintos del mismo producto (Vida Ahorro Garantizado)</td>
+          <td class="num">442</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col">
+    <div class="note">
+      <span class="lab">Y de paso, esto resuelve una discusión abierta</span>
+      <p>El Playbook del Asesor lista <strong>Vida Contigo</strong> y <strong>Vida Ahorro con Devolución</strong> como dos productos distintos, con descripciones distintas. <strong>La base los tiene bajo el mismo código: son el mismo producto.</strong></p>
+      <p style="margin-top:.7rem">Es decir: <strong>el desfase no está en AIDA, está aguas arriba, en el documento que debería resolver las contradicciones.</strong></p>
+    </div>
+
+    <h3>Y hay material de otros ramos mezclado</h3>
+    <p>El agente que atiende a la fuerza de venta de Vida está consultando documentos que no son de su dominio:</p>
+    <ul class="plain">
+      <li><strong>Certificación en Salud</strong> — 72 citas</li>
+      <li><strong>Agenda corporativa de RIMAC</strong> — 45 citas</li>
+      <li><strong>Condiciones Generales del Seguro Vehicular</strong> — 40 citas</li>
+      <li>Y alrededor de diez documentos más de Salud, Vehicular y SOAT</li>
+    </ul>
+    <p>Cada uno de esos documentos <strong>compite por el espacio que debería ocupar el documento correcto.</strong></p>
+
+    <h3>Y la mitad está en formatos que la herramienta lee mal</h3>
+    <p>De las 4.127 citas registradas, <strong>el 48% son PDF y un 3% son Excel</strong> — justamente los formatos donde la información se pierde al extraerse. Los brochures en PDF están entre los documentos más consultados.</p>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <h2>Los asesores ya están señalando el problema</h2>
+
+    <p>De las consultas calificadas, el <strong>96% recibió pulgar arriba</strong>. Visto así, la herramienta parece funcionar bien. Pero al mirar qué distinguía a las <strong>80 respuestas calificadas mal</strong>, aparece un patrón muy nítido.</p>
+  </div>
+
+  <div class="col">
+    <div class="bars">
+      <div class="bar">
+        <div class="bl"><strong>Respuestas sin ninguna fuente</strong><br><span style="color:var(--muted);font-size:.85rem">en las calificadas mal</span></div>
+        <div class="bt"><div class="bf" style="width:50%"></div></div>
+        <div class="bv">50%</div>
+      </div>
+      <div class="bar">
+        <div class="bl">en el conjunto general</div>
+        <div class="bt"><div class="bf base" style="width:23.7%"></div></div>
+        <div class="bv">24%</div>
+      </div>
+      <div class="bar" style="margin-top:.6rem">
+        <div class="bl"><strong>“No tengo esa información”</strong><br><span style="color:var(--muted);font-size:.85rem">en las calificadas mal</span></div>
+        <div class="bt"><div class="bf" style="width:13.8%"></div></div>
+        <div class="bv">14%</div>
+      </div>
+      <div class="bar">
+        <div class="bl">en el conjunto general</div>
+        <div class="bt"><div class="bf base" style="width:2.2%"></div></div>
+        <div class="bv">2%</div>
+      </div>
+    </div>
+
+    <p><strong>El asesor castiga exactamente cuando AIDA no encuentra en qué apoyarse.</strong> No castiga el estilo ni la longitud: castiga la falta de fundamento. Las respuestas sin fuente reciben el doble de calificaciones negativas, y las que admiten no tener la información, <strong>seis veces más</strong>.</p>
+
+    <p>Y sobre qué tratan esas 80 quejas: coberturas y exclusiones, montos y tasas, edades y requisitos. <strong>Casi la mitad son detalle técnico de producto</strong> — que es justamente lo que el Playbook declara como pendiente.</p>
+
+    <div class="note warn">
+      <span class="lab">Lo más incómodo no está en las negativas</span>
+      <p><strong>Un cuarto de las consultas no recibe ninguna calificación</strong>, y hay respuestas sin fuente que igual reciben pulgar arriba. <strong>El sistema de feedback detecta el problema, pero no de forma fiable.</strong> Sirve como señal de alerta — no como medición.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <h2>Una cifra que retiré</h2>
+    <p>Durante el análisis, una medición intermedia daba <strong>“81% de discrepancia entre respuestas a la misma pregunta”</strong>. Al revisar los casos uno por uno, <strong>no se sostuvo</strong>: la mayor parte de esa diferencia era <strong>cuánto detalle menciona cada respuesta</strong>, no datos contradictorios — y en un caso el método estaba leyendo montos en soles como si fueran porcentajes.</p>
+    <p><strong>No se usa.</strong> Para afirmar que AIDA se contradice en un dato hace falta revisar una muestra a mano, y eso entra en la corrida manual de esta semana.</p>
+    <p>La cifra del 68% sí se sostiene, y por una razón concreta: <strong>compara un campo del registro contra sí mismo, sin interpretar el texto de ninguna respuesta.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <h2>Qué cambia con esto</h2>
+
+    <h3>Seis cosas que ahora se pueden decir con datos</h3>
+    <ul class="plain">
+      <li><strong>La misma pregunta no lee siempre lo mismo</strong> — 68% de las repetidas, 76% en Vida.</li>
+      <li><strong>Hay cuatro documentos bajo el código de Vida Flexible</strong>, y uno es de otro producto.</li>
+      <li><strong>Material de Salud, Vehicular y la agenda corporativa</strong> alimenta al agente de venta de Vida.</li>
+      <li><strong>La mitad de lo que lee está en PDF o Excel.</strong></li>
+      <li><strong>Los asesores castigan la falta de fuente el doble</strong>, y el “no tengo esa información” seis veces más.</li>
+      <li><strong>274 asesores en dos días</strong> — el problema no es de adopción.</li>
+    </ul>
+    <p>Ninguna de las seis requiere interpretar nada ni cuestionar la palabra de nadie. <strong>Salen del propio sistema.</strong></p>
+
+    <h3>Y cinco cosas que conviene pedir ahora</h3>
+    <ul class="plain">
+      <li><strong>El histórico completo de tres meses</strong>, con el rango declarado.</li>
+      <li><strong>Los tiempos de respuesta por consulta</strong>, si el sistema los guarda — el archivo no los trae.</li>
+      <li><strong>El inventario completo del repositorio</strong>: los logs muestran los 199 documentos que se usaron, no los que están ahí y nunca se recuperan.</li>
+      <li><strong>Qué es la cuenta <span class="fn">aida_service</span></strong> y si cuenta en las métricas de adopción.</li>
+      <li><strong>Qué significan las categorías internas</strong> con que se clasifican las consultas — son el 40% del volumen y no está claro si pasan por búsqueda documental.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>CoE Diseño Estratégico · Behavioral Design · RIMAC Seguros. Análisis sobre el registro de conversaciones del agente de la fuerza de ventas, 17 al 19 de agosto de 2026. El detalle metodológico completo, incluidas las mediciones descartadas, está en el repositorio del proyecto.</p>
+</footer>
+
+</div>
