@@ -2185,6 +2185,80 @@ mayor complejidad de producto.
   IA en consultoría, con opacidad de reporte del segmento más expuesto) que la tesis, tal como está
   redactada, todavía no cubre explícitamente.
 
+### 40. Al evaluar un agente conversacional, "¿entendió bien lo que dije?" puede pesar más en la satisfacción del usuario que "¿logró la tarea?" — medir ambos por separado, no solo el resultado final
+PARADISE (Walker, Litman, Kamm & Abella 1997), el framework fundacional para evaluar diálogo
+hablado que el ledger ya citaba como estándar de referencia (sección de escalas del agente
+conversacional de Rimac), nunca se había leído a fondo más allá del resumen de una línea. Su
+aporte real no es solo "modela satisfacción como éxito menos costo" — es que, al correr la
+regresión sobre datos reales de un sistema en producción, el término que más pesó no fue el
+éxito de tarea: fue el **reconocimiento correcto** de lo que dijo el usuario (Mean Recognition,
+peso .45), por encima del éxito de tarea (.33) y por encima del costo de tiempo transcurrido
+(-.14) — juntos explican ~55% de la varianza en satisfacción. **Heurística de decisión:** un
+agente que completa la tarea pero que el usuario siente que "no lo entendió" en el camino puede
+calificar peor que uno que tardó más pero demostró comprensión — separar en la medición del
+agente de Rimac una métrica explícita de "¿el sistema entendió lo que quise decir?" de la métrica
+de "¿resolvió mi caso?", en vez de inferir la primera de la segunda. Profundiza, desde un ángulo
+distinto, el riesgo ya vigente sobre medir mal al agente conversacional de Rimac (intuición 8, 20,
+21, 36): el eje que más mueve la aguja de satisfacción percibida puede no ser el que el equipo
+técnico está optimizando.
+- **Fuente:** F-147 (🟢A, Walker, Litman, Kamm & Abella 1997, *PARADISE: A Framework for
+  Evaluating Spoken Dialogue Agents*, ACL — framework canónico, ya citado en el ledger solo por su
+  resumen de una línea)
+- **Leído a fondo:** 2026-08-20 (aclanthology.org bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida — incluyendo el paper de seguimiento "The PARADISE Evaluation Framework:
+  Issues and Findings" — que confirma los pesos exactos de la regresión, no solo el mecanismo
+  general ya citado)
+
+### 41. El daño de una publicidad de precio incompleta o ambigua no se reparte parejo entre la audiencia — se concentra en quien ya desconfía, justo el segmento más caro de recuperar
+Romani (2006), estudio experimental italiano sobre publicidad de precio engañosa que ya sostenía
+el riesgo regulatorio/reputacional de tesis 15 solo por su resumen de una línea, tipifica ocho
+prácticas distintas de comunicación de precio engañosa (desde información directamente falsa
+hasta aplicación incompleta o confusa de esquemas de precio complejos — la categoría que más se
+parece al caso Vida Ahorro del propio proyecto) y encuentra que la caída en confianza hacia la
+fuente y en disposición a comprar **no es uniforme**: es significativamente mayor en
+consumidores que ya llegan con sospecha ("suspicious") que en los que no. **Heurística de
+decisión:** el costo de un flyer o pieza publicitaria con datos "a confirmar" visibles no se
+puede estimar promediando la reacción del público general — hay que pesarlo por el segmento que
+ya desconfía, porque es justo ahí donde el daño pega más fuerte. Conecta directamente con tesis 1
+(~48% de peruanos desconfía del seguro, causa #1: falta de información) y tesis 15 (cifra %
+headline + condición chica + dato "a confirmar" visible): la misma pieza que tesis 15 ya marcaba
+como riesgo es, según este mecanismo, más cara precisamente en el segmento que el proyecto más
+necesita convertir — no matiza la confianza de tesis 15 (sigue Alta), pero afina por qué el riesgo
+no es solo regulatorio sino de conversión concentrada donde más duele.
+- **Fuente:** F-176 (🟢A, Romani 2006, *Price misleading advertising: effects on trustworthiness
+  toward the source of information and willingness to buy*, Journal of Product & Brand
+  Management — ya citado en el ledger solo por su resumen de una línea)
+- **Leído a fondo:** 2026-08-20 (researchgate.net bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida contra Emerald Publishing/DeepDyve/Scribd, que confirman la tipología de
+  ocho prácticas y el moderador de sospecha, no solo el resumen ya citado)
+
+### 42. La sobreconfianza en una respuesta de IA es una decisión estratégica de costo-beneficio, no un sesgo cognitivo automático — la inversión en explicabilidad rinde solo donde la tarea es difícil
+Vasconcelos et al. (2023), ya citado en el node de tendencias-diseño-innovación para la regla C8
+(verificabilidad > explicabilidad, intuición 18) solo por su resumen de una línea, corre 5
+estudios (N=731) manipulando el costo y el beneficio de escrutinar una explicación de IA en una
+tarea de laberinto. Hallazgo central: las explicaciones **sí** reducen la sobreconfianza y suben
+la precisión de la decisión, pero **solo en la condición de tarea difícil** — en tareas fáciles o
+medias no hay ninguna diferencia frente a mostrar solo la predicción sin explicación. Es decir, la
+gente no ignora la explicación por pereza cognitiva generalizada: la ignora cuando el
+costo-beneficio de leerla no vale la pena (tarea fácil, poco en juego), y la usa cuando sí vale
+(tarea difícil). **Heurística de decisión:** invertir en explicabilidad de forma uniforme en todo
+el flujo del agente conversacional o del triage IA es gastar donde no rinde — el retorno de
+mostrar "por qué" el sistema recomendó algo se concentra en los momentos objetivamente más
+difíciles de la interacción (síntomas atípicos, casos límite de cobertura), no en las respuestas
+rutinarias. Profundiza directamente la intuición 18 (verificabilidad de la tarea) con el matiz de
+que el *costo* de involucrarse con la explicación, no solo su *verificabilidad*, es la otra mitad
+de la ecuación — y da un criterio operacional (dificultad de la tarea) para decidir dónde priorizar
+el diseño de explicaciones primero.
+- **Fuente:** F-246 (🟢A, Vasconcelos, H. et al. 2023, *Explanations Can Reduce Overreliance on AI
+  Systems During Decision-Making*, PACM HCI 7, CSCW1, art. 129, N=731, 5 estudios — ya citado en
+  el ledger solo por su resumen de una línea)
+- **Leído a fondo:** 2026-08-20 (hci.stanford.edu bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida contra arXiv/ScholarSpace, que confirman el diseño de los 5 estudios y los
+  pesos de costo/beneficio manipulados, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis — profundiza el
+  mecanismo detrás de la intuición 18 (misma familia de evidencia, ángulo distinto: costo de
+  involucrarse, no solo verificabilidad del resultado).
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2776,3 +2850,42 @@ mayor complejidad de producto.
   historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin podar todavía; evaluar poda
   de la primera semana del bloque actual (2026-08-01 a 2026-08-07) en las próximas corridas si la
   ventana sigue creciendo.
+- **2026-08-20** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward 8a90dc2→bb8062c, el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
+  exacto que procesó la corrida de ayer (2026-08-19) — **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, séptimo día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
+  ~3 días, no vence hoy — ocho días sin corrida nueva, pero esa rutina no es de este proceso
+  diario). Sí corrió la rutina diaria de intuición (decimoquinta corrida desde el 2026-08-06): de
+  134 fuentes 🟢A confirmadas por conteo propio en el ledger, 39 ya tenían lectura profunda del Lobo
+  — de las 95 restantes elegí 3 al azar puro: F-147 (Walker, Litman, Kamm & Abella 1997, PARADISE —
+  framework de evaluación de diálogo hablado, citado en el ledger solo por su resumen de una
+  línea), F-176 (Romani 2006, publicidad de precio engañosa — ya sostiene tesis 15, pero solo por
+  su resumen) y F-246 (Vasconcelos et al. 2023, explicaciones y sobreconfianza en IA — ya citada en
+  el node de diseño/innovación para la regla C8). Las tres bloqueadas por el proxy en su URL
+  directa (aclanthology.org, researchgate.net, hci.stanford.edu); reconstruidas vía búsqueda
+  dirigida (arXiv, Emerald/DeepDyve/Scribd, el paper de seguimiento de PARADISE en *Computational
+  Linguistics* 2006) que confirman detalle nuevo — los pesos exactos de la regresión de PARADISE, la
+  tipología de ocho prácticas y el moderador de sospecha de Romani, el diseño de los 5 estudios de
+  Vasconcelos — no solo el resumen ya citado. Sumé las entradas 40, 41 y 42 de Intuición acumulada:
+  (40) en un agente conversacional, si el sistema entendió bien lo que dijo el usuario puede pesar
+  más en la satisfacción percibida que si completó la tarea (PARADISE: reconocimiento .45 > éxito
+  de tarea .33 > tiempo -.14 en su regresión original) — profundiza el riesgo ya vigente sobre medir
+  mal al agente de Rimac (intuición 8/20/21/36) con un eje de medición concreto que faltaba; (41) el
+  daño de una publicidad de precio incompleta o ambigua se concentra en quien ya desconfía, no se
+  reparte parejo en la audiencia — conecta tesis 1 (48% desconfía) con tesis 15 (riesgo del flyer
+  "a confirmar"): el segmento más caro de convertir es también el que más castiga la pieza mal
+  hecha; (42) la sobreconfianza en una respuesta de IA es una decisión estratégica de
+  costo-beneficio, no un sesgo automático — las explicaciones solo reducen sobreconfianza en tareas
+  objetivamente difíciles, no en las rutinarias, lo que da un criterio operacional (dificultad de la
+  tarea) para priorizar dónde invertir en explicabilidad primero; profundiza la intuición 18 sin
+  cambiarle la confianza. Ninguna tesis de negocio cambió de confianza numérica por esta corrida —
+  es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes,
+  aunque las tres entradas de hoy sí conectan con riesgos y tesis ya vigentes (8/20/21/36, 1/15, 18).
+  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 32
+  días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días pero ya en su borde — la
+  próxima corrida (2026-08-21) debe evaluar podar/resumir la primera semana del bloque actual
+  (2026-08-01 a 2026-08-07) para no seguir creciendo por encima del umbral.

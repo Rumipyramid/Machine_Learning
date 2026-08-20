@@ -56,3 +56,6 @@
 | F-334 | 🟢 A | 2026-08-19 | Intuición 37 — desconfianza en un asegurador puede ser vacío de información, no juicio negativo ya formado |
 | F-87 | 🟢 A | 2026-08-19 | Intuición 38 — las ganancias de esperanza de vida se desaceleran en los más viejos; no extrapolar longevidad como tendencia lineal |
 | F-428 | 🟢 A | 2026-08-19 | Intuición 39 — un beat de ingresos no neutraliza un indicador líder que empeora, sobre todo con narrativa de disrupción por IA plausible |
+| F-147 | 🟢 A | 2026-08-20 | Intuición 40 — en un agente conversacional, si el sistema entendió bien lo que dijo el usuario puede pesar más en la satisfacción que si completó la tarea |
+| F-176 | 🟢 A | 2026-08-20 | Intuición 41 — el daño de una publicidad de precio incompleta se concentra en quien ya desconfía, no se reparte parejo en la audiencia |
+| F-246 | 🟢 A | 2026-08-20 | Intuición 42 — la sobreconfianza en IA es costo-beneficio estratégico, no sesgo automático; las explicaciones solo rinden en tareas difíciles |
