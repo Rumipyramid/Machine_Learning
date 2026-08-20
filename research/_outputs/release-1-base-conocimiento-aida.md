@@ -30,9 +30,9 @@
 > | **3** | **Testeo** | Prueba 1 contra línea base (sin asesores, es la compuerta) → Prueba 2 con asesores: A/B por equipos, escalonado, o **serie temporal interrumpida** según lo que permita la plataforma |
 >
 > **Dos cosas que la reestructuración agrega:**
-> - **La velocidad como segundo objetivo.** No requiere trabajo aparte —sale del mismo movimiento:
->   menos documentos compitiendo y archivos más cortos hacen que el agente encuentre antes— pero
->   **hay que cronometrarla en la Etapa 1**, o después no se puede demostrar.
+> - ⚠️ **La velocidad como segundo objetivo — CORREGIDO (2026-08-20).** La v2.0 afirmaba que la
+>   velocidad *"sale del mismo movimiento"* que la limpieza. **Se buscó la evidencia y esa afirmación
+>   no se sostiene tal como estaba escrita.** Ver la corrección completa abajo.
 > - **El nombre correcto del "full con puntos de corte": serie temporal interrumpida.** Es el diseño
 >   cuasi-experimental más fuerte disponible cuando no se puede aleatorizar. Requiere **varios puntos
 >   de medición antes y después**, no dos fotos. ⭐ Y su debilidad —que algo más pudo cambiar en el
@@ -49,6 +49,91 @@
 > chatbots, de las cuales **CUQ sí tiene un factor específico de manejo de errores** y ya está en el
 > códice como F-149. **La Etapa 1 se construye mientras tanto sobre los instrumentos ya verificados
 > del proyecto**, y el marco de Shunk se incorpora en cuanto se confirme cuál es.
+
+
+---
+
+## 0.1 ⚠️ Corrección al objetivo de velocidad (2026-08-20)
+
+**Pregunta que originó esto:** *¿hay evidencia de que cambiar el formato de los documentos o
+parametrizar la información reduzca los tiempos de respuesta de la herramienta?*
+
+**Respuesta corta: no directamente, y hay que separar dos variables que el objetivo mezclaba.**
+
+| Variable | Qué es | Evidencia |
+|---|---|---|
+| **Latencia de la herramienta** | Segundos entre la pregunta y la respuesta (T1, T2) | 🟡 **Mecanismo medido, pero el formato no lo mueve solo** |
+| **Tiempo de búsqueda del asesor** | Desde que le nace la duda hasta que puede responderle al cliente (T5, T6) | ⚠️ **Sin estudio directo; el argumento es mecanístico** |
+
+⭐ **El objetivo declarado de AIDA es el segundo.** El del Release 1, tal como estaba escrito, sonaba
+al primero.
+
+### Lo que sí está medido (F-500)
+
+- En una consulta RAG típica, **60-98% de los tokens de entrada vienen de los fragmentos
+  recuperados**, no de la pregunta.
+- El prefill —lo que produce el tiempo hasta la primera palabra— tiene **costo cuadrático** con la
+  longitud del contexto: **pasar de 2.000 a 4.000 tokens no duplica el costo, lo cuadruplica.**
+- Medición reportada: **de 23,1 ms con 1 fragmento a 1,25 s con 500.**
+- ⭐⭐ **El número de fragmentos NO afecta significativamente la latencia de recuperación** —el costo
+  de carga domina— **pero SÍ la de generación**, porque cambia la longitud de la entrada.
+
+⭐ **Traducción: lo que reduce la latencia es enviarle menos tokens al modelo. No documentos más
+prolijos.**
+
+### Por qué el argumento anterior no cerraba
+
+**Limpiar el formato no reduce por sí solo el número de fragmentos recuperados.** El top-k suele ser
+un parámetro fijo (5-15 en producción). Si se limpia la base y el top-k sigue en 8, **se siguen
+enviando 8 fragmentos y la latencia no se mueve.**
+
+### La cadena que sí es defendible, y es condicional (F-501)
+
+1. Base limpia y monotemática → **cada fragmento es más relevante**
+2. → se puede **bajar el top-k sin perder exactitud**
+3. → menos tokens de entrada
+4. → **menos latencia** — y este paso sí está medido
+
+⭐ **El paso 2 tiene respaldo:** la calidad de respuesta **no crece monótonamente con top-k**. El
+hit@k sube de 0,726 (k=2) a 0,834 (k=5) —recupera más— pero **el F1 de la respuesta final pica en
+k=3 y baja después.** Más fragmentos recuperan mejor y responden peor. Bajar k puede mejorar
+exactitud **y** velocidad a la vez.
+
+⚠️ **Pero el paso 2 es un cambio de parámetro, no de contenido.** Es **capa C**, requiere al equipo
+de la herramienta y **cae del lado caro** del camino que declaró la PO: no entra por "cargar base de
+conocimiento".
+
+### Sobre parametrizar (la matriz de producto) — F-502
+
+⚠️ **Se buscó específicamente evidencia cuantitativa de que parametrizar reduzca la latencia y no se
+encontró.** Lo que sí está establecido es de **exactitud**: la búsqueda vectorial no es la
+herramienta correcta para datos estructurados, y la práctica recomendada es consulta estructurada
+para el dato duro más recuperación vectorial para el contenido no estructurado.
+
+⭐ **El argumento a favor de la matriz es de exactitud y gobierno, no de velocidad.** Presentarlo
+como argumento de velocidad sería el mismo tipo de afirmación sin fuente primaria que el proyecto
+viene marcando como trampa (F-481, F-483, F-484).
+
+### Qué hacer con el objetivo declarado
+
+**Opción A — recomendada.** Cambiar *"consulta más rápida"* por **"menos vueltas para llegar a una
+respuesta utilizable"**. Es defendible por el mecanismo que sí opera: una respuesta exacta con cita
+verificable **elimina el ciclo de verificación**; una dudosa lo dispara. **El tiempo del asesor no lo
+dominan los segundos de AIDA — lo domina lo que hace después.** Y es exactamente lo que mide T6.
+
+**Opción B.** Mantener la promesa de latencia, pero **declarar que depende de bajar el top-k**, que
+es cambio de parámetro y va por el camino caro.
+
+⛔ **Lo que no se puede hacer es dejarlo como estaba**, prometiendo velocidad como subproducto
+gratuito de la limpieza.
+
+### Consecuencia para la medición
+
+⭐ **Registrar la latencia desde la primera corrida, aunque no se prometa mejorarla.** Si el top-k no
+cambia, la latencia no debería moverse — y sin línea base no habría forma de mostrar que eso era lo
+esperado. **La línea base protege de la promesa mal formulada tanto como de la falla.**
+
+---
 
 Integra el research *"La biblioteca de AIDA"* (Felipe, Behavioral Design,
 `research/_fuentes_internas/La_biblioteca_de_AIDA_Felipe.docx`) con el diagnóstico del proyecto
