@@ -12,7 +12,18 @@ para ejecutar**; la rúbrica, el protocolo del juez y la calibración viven all�
 
 1. **Pegar la respuesta literal, sin editar ni resumir.** Las paráfrasis destruyen el corpus — sobre
    todo hay que conservar **los documentos que AIDA cita**, que son la mitad de lo que se evalúa.
-2. **Anotar los segundos** entre que se envía y que termina de responder. Con una aproximación basta.
+2. ⭐ **Anotar DOS tiempos, no uno** (cambio 2026-08-20, y es el que decide si se puede prometer
+   mejorar la latencia):
+   - **t-primera:** segundos hasta que aparece **la primera palabra** en pantalla
+   - **t-final:** segundos hasta que **termina** de escribir
+
+   ⚠️ **Si AIDA no escribe progresivamente** —si se queda en blanco y de golpe aparece todo—
+   **anotarlo como "sin streaming"**. Eso ya es un hallazgo: significa que los ~9 segundos actuales
+   son 9 segundos de pantalla vacía.
+
+   **Por qué importa:** la diferencia entre los dos tiempos separa lo que depende de la base
+   (recuperación y lectura del contexto) de lo que depende del largo de la respuesta. **Son dos
+   problemas distintos con dos dueños distintos**, y sin el corte no se sabe cuál es.
 3. **Anotar la sesión y el día.** Varias pruebas dependen de que ciertas preguntas corran en sesiones
    distintas.
 4. **Si tuviste que hacer algo más para poder usar la respuesta** —abrir el documento citado,
@@ -21,7 +32,7 @@ para ejecutar**; la rúbrica, el protocolo del juez y la calibración viven all�
 **Formato para devolverme:**
 
 ```
-[ID] · sesión N · día DD/MM · ~XX seg
+[ID] · sesión N · día DD/MM · t-primera: ~XX seg · t-final: ~XX seg
 PREGUNTA: (como la enviaste, si la cambiaste)
 RESPUESTA:
 (pegada literal, con las citas)

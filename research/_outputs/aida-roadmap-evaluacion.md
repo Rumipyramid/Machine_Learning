@@ -39,9 +39,10 @@ corrida busca cosas distintas. **Mandármelas el jueves mismo** para ajustar el 
 |---|---|---|
 | 1 | 🔴 **Correo de seguimiento por los logs.** Ya los pediste; insistir ahora, no el lunes. Si llegan esta semana dan las latencias, los turnos, el abandono y **el banco real de preguntas** | 5 |
 | 2 | ⚠️ **Probar el acceso a AIDA desde fuera de la oficina** (celular o casa) — decide si el sábado existe | 5 |
-| 3 | ⭐ **Tanda 1** — B2, B3, B4 | 20 |
-| 4 | ⭐ **7A · consistencia en la misma sesión** — B2 tres veces seguidas, sin salir de la conversación | 10 |
-| 5 | **Tanda 2** — catálogo: B1, B5, B6, B7, B12 | 25 |
+| 3 | ⭐⭐ **Descomponer los 9 segundos** — en las tres primeras preguntas, anotar **t-primera** y **t-final** por separado, y si AIDA escribe progresivamente o se queda en blanco. **Decide si la promesa de latencia es hacible** | +0 |
+| 4 | ⭐ **Tanda 1** — B2, B3, B4 | 20 |
+| 5 | ⭐ **7A · consistencia en la misma sesión** — B2 tres veces seguidas, sin salir de la conversación | 10 |
+| 6 | **Tanda 2** — catálogo: B1, B5, B6, B7, B12 | 25 |
 
 **Al cierre del jueves:** mandarme Tanda 1 + 7A + Tanda 2.
 **Yo devuelvo esa noche:** la calificación de la Tanda 1 y **qué ajustar para el viernes**.
