@@ -13,7 +13,12 @@ Fuente: `aida_logs_19_08.csv`, entregado por el equipo de la capacidad.
 
 ## ⚠️ Advertencia de procedencia — leer antes que nada
 
-**El archivo se recibió descrito como "el histórico de los últimos 3 meses". No lo es.**
+> ✅ **Aclarado (2026-08-20).** El archivo se recibió primero descrito como *"el histórico de los
+> últimos 3 meses"*; la definición posterior del diagnóstico lo describe como **"un período de 3 días
+> de uso"**, que **sí coincide con el contenido**. La advertencia de abajo se conserva porque acota
+> qué se puede afirmar, pero **ya no hay que leerla como una discrepancia sin resolver.**
+
+**El archivo cubre un período corto, no un histórico largo.**
 
 | | Declarado | Real en el archivo |
 |---|---|---|
@@ -26,8 +31,13 @@ Fuente: `aida_logs_19_08.csv`, entregado por el equipo de la capacidad.
 - ⛔ **No se puede** hablar de tendencias, estacionalidad, ni de **qué preguntas se dejaron de
   hacer** — que era uno de los análisis más prometedores y **necesita la serie completa**.
 
-🔴 **Acción: volver a pedir el histórico completo**, indicando explícitamente el rango. Es probable
-que la exportación se haya truncado por defecto.
+🔴 **Acción: pedir igual el histórico completo.** Con 3 días alcanza para todo lo de este informe,
+pero **la serie larga es la única vía para ver qué preguntas se dejaron de hacer** — y ese análisis
+sigue siendo el de mayor probabilidad de dar un hallazgo que nadie más tiene.
+
+⭐ **Nota (2026-08-20):** parte de ese hallazgo **se recuperó por otra vía** — cruzando lo que los
+asesores declaran necesitar contra lo que efectivamente preguntan. Ver §3.4 de
+`[[aida-diagnostico-cuatro-frentes]]`.
 
 ---
 
