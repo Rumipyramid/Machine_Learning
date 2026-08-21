@@ -1,0 +1,3 @@
+mes,concepto,categoria,tipo,monto,estado,nota
+2026-11,CTS,extraordinario,ingreso,4500,estimado,Retiro de CTS disponible en noviembre — monto por confirmar en el estado de cuenta CTS
+2026-12,Gratificacion,extraordinario,ingreso,6500,estimado,Gratificacion de diciembre — asumida en un sueldo. Verificar: se calcula sobre el bruto y no descuenta AFP/ONP, mas bonificacion extraordinaria (~9%). Si 6500 es neto, el deposito real es mayor

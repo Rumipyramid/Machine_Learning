@@ -25,6 +25,7 @@ import sys
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 MOV_DIR = os.path.join(BASE, "movimientos")
+CALENDARIO = os.path.join(BASE, "calendario.csv")
 
 TIPOS = ("ingreso", "fijo", "variable", "deuda")
 
@@ -73,6 +74,38 @@ def leer_mes(mes: str) -> list[dict]:
             fila["categoria"] = (fila.get("categoria") or "").strip()
             filas.append(fila)
     return filas
+
+
+def leer_calendario() -> dict:
+    """Eventos de ingreso/egreso irregulares ya conocidos, indexados por mes."""
+    if not os.path.exists(CALENDARIO):
+        return {}
+    cal = {}
+    with open(CALENDARIO, newline="", encoding="utf-8") as fh:
+        for i, fila in enumerate(csv.DictReader(fh), start=2):
+            if not (fila.get("concepto") or "").strip():
+                continue
+            try:
+                monto = float(fila["monto"])
+            except (KeyError, TypeError, ValueError):
+                sys.exit(f"{CALENDARIO}:{i} monto invalido para '{fila.get('concepto')}'")
+            cal.setdefault(fila["mes"].strip(), []).append({
+                "concepto": fila["concepto"].strip(),
+                "monto": monto,
+                "estado": (fila.get("estado") or "").strip(),
+            })
+    return cal
+
+
+def meses_desde(mes: str, n: int) -> list[str]:
+    y, m = (int(x) for x in mes.split("-"))
+    out = []
+    for _ in range(n):
+        out.append(f"{y:04d}-{m:02d}")
+        m += 1
+        if m > 12:
+            m, y = 1, y + 1
+    return out
 
 
 # ------------------------------------------------------------------ resumen
@@ -252,32 +285,81 @@ def imprimir_deuda(saldo: float, cuota: float, esc: list[dict],
 
 # --------------------------------------------------------------- proyeccion
 
-def imprimir_proyeccion(r: dict, saldo: float, cuota: float, tcea: float,
-                        meses: int) -> None:
+def proyectar(r: dict, saldo_tc: float, cuota: float, tcea: float, meses: int,
+              variables: float | None = None, otros_deuda_hasta: str | None = None,
+              destino_extra: str = "deuda") -> list[dict]:
     """
-    Proyecta repitiendo la estructura del mes. Si el mes cierra en negativo,
-    ese deficit se carga a la tarjeta — que es lo que pasa en la practica.
+    Proyecta mes a mes desde el mes base de `r`, aplicando el calendario de
+    ingresos irregulares (CTS, gratificacion) en el mes que corresponde.
+
+    Modela lo que pasa de verdad cuando el mes no alcanza: la cuota se paga
+    igual, pero el faltante vuelve a la tarjeta.
     """
-    extra = -min(0.0, r["balance"])
+    cal = leer_calendario()
     i = tasa_mensual(tcea)
+    var = r["variables"] if variables is None else variables
+    otros_deuda = max(0.0, r["servicio_deuda"] - cuota)   # p.ej. el adelanto
 
-    print(f"\n{'=' * 62}")
-    print(f"  PROYECCION — {meses} meses repitiendo la estructura de {r['mes']}")
-    print(f"  TCEA {tcea:.0f}% · balance mensual {soles(r['balance'])}")
-    if extra:
-        print(f"  El deficit de {soles(extra)}/mes se carga a la tarjeta")
-    print(f"{'=' * 62}\n")
-    print(f"  {'Mes':>4}  {'Interes':>10}  {'Consumo':>10}  {'Pago':>10}  {'Saldo TC':>12}")
-    print(f"  {'-' * 4}  {'-' * 10}  {'-' * 10}  {'-' * 10}  {'-' * 12}")
+    filas = []
+    saldo, caja = saldo_tc, 0.0
 
-    s = saldo
-    for m in range(1, meses + 1):
-        interes = s * i
-        bruto = s + interes + extra
-        pago = min(cuota, bruto)
-        s = bruto - pago
-        print(f"  {m:>4}  {soles(interes, 10)}  {soles(extra, 10)}"
-              f"  {soles(pago, 10)}  {soles(s, 12)}")
+    for mes in meses_desde(r["mes"], meses):
+        eventos = cal.get(mes, [])
+        extra = sum(e["monto"] for e in eventos)
+        paga_otros = otros_deuda if (otros_deuda_hasta is None or mes <= otros_deuda_hasta) else 0.0
+
+        disponible = r["ingresos"] + extra - r["fijos"] - var - paga_otros
+
+        interes = saldo * i
+        bruto = saldo + interes
+        deseado = cuota + (extra if destino_extra == "deuda" else 0.0)
+        pago = min(deseado, bruto)
+        faltante = max(0.0, pago - disponible)     # lo que no alcanza vuelve a la TC
+        saldo = bruto - pago + faltante
+        caja += disponible - pago + faltante
+
+        filas.append({
+            "mes": mes, "extra": extra, "eventos": [e["concepto"] for e in eventos],
+            "otros_deuda": paga_otros, "disponible": disponible, "interes": interes,
+            "pago": pago, "faltante": faltante, "saldo": saldo, "caja": caja,
+        })
+    return filas
+
+
+def imprimir_proyeccion(filas: list[dict], r: dict, tcea: float, var: float,
+                        destino_extra: str) -> None:
+    print(f"\n{'=' * 78}")
+    print(f"  PROYECCION desde {r['mes']} — TCEA {tcea:.0f}% · "
+          f"gasto variable asumido {soles(var)}/mes")
+    print(f"  Ingreso extraordinario (CTS, gratificacion) -> {destino_extra.upper()}")
+    print(f"{'=' * 78}\n")
+    print(f"  {'Mes':>8}  {'Extra':>9}  {'Disponible':>11}  {'Pago TC':>10}"
+          f"  {'A la TC':>9}  {'Saldo TC':>10}  {'Caja':>10}")
+    print(f"  {'-' * 8}  {'-' * 9}  {'-' * 11}  {'-' * 10}  {'-' * 9}  {'-' * 10}  {'-' * 10}")
+
+    libre = None
+    for f in filas:
+        extra_s = soles(f["extra"], 9) if f["extra"] else " " * 9
+        falt_s = soles(f["faltante"], 9) if f["faltante"] > 0.5 else " " * 9
+        print(f"  {f['mes']:>8}  {extra_s}  {soles(f['disponible'], 11)}"
+              f"  {soles(f['pago'], 10)}  {falt_s}  {soles(f['saldo'], 10)}"
+              f"  {soles(f['caja'], 10)}")
+        if libre is None and f["saldo"] <= 0.5:
+            libre = f["mes"]
+        if f["eventos"]:
+            print(f"  {'':>8}  ({', '.join(f['eventos'])})")
+
+    print()
+    if libre:
+        print(f"  Tarjeta en cero: {libre}")
+    else:
+        print(f"  La tarjeta NO se cancela en el horizonte proyectado "
+              f"(saldo final {soles(filas[-1]['saldo'])})")
+    print(f"  Caja acumulada al cierre: {soles(filas[-1]['caja'])}")
+    meses_falt = [f['mes'] for f in filas if f['faltante'] > 0.5]
+    if meses_falt:
+        print(f"  Meses en que la cuota no alcanza y vuelve a la tarjeta: "
+              f"{', '.join(meses_falt)}")
     print()
 
 
@@ -301,12 +383,20 @@ def main() -> None:
                        help="Gasto mensual que se sigue cargando a la deuda")
     p_deu.add_argument("--json", action="store_true")
 
-    p_pro = sub.add_parser("proyeccion", help="Repetir el mes N veces")
-    p_pro.add_argument("--mes", required=True)
-    p_pro.add_argument("--saldo", type=float, required=True)
+    p_pro = sub.add_parser("proyeccion",
+                           help="Proyecta N meses aplicando calendario.csv")
+    p_pro.add_argument("--mes", required=True, help="Mes base cuya estructura se repite")
+    p_pro.add_argument("--saldo", type=float, required=True, help="Saldo TC inicial")
     p_pro.add_argument("--cuota", type=float, required=True)
     p_pro.add_argument("--tcea", type=float, default=60.0)
     p_pro.add_argument("--meses", type=int, default=12)
+    p_pro.add_argument("--variables", type=float, default=None,
+                       help="Gasto variable mensual asumido (llena el hueco del presupuesto)")
+    p_pro.add_argument("--otros-deuda-hasta", default=None, metavar="AAAA-MM",
+                       help="Ultimo mes en que se paga el otro servicio de deuda (adelanto)")
+    p_pro.add_argument("--extraordinario", choices=["deuda", "caja"], default="deuda",
+                       help="Destino de CTS/gratificacion (default: deuda)")
+    p_pro.add_argument("--json", action="store_true")
 
     a = p.parse_args()
 
@@ -327,7 +417,13 @@ def main() -> None:
 
     elif a.cmd == "proyeccion":
         r = calcular_resumen(a.mes)
-        imprimir_proyeccion(r, a.saldo, a.cuota, a.tcea, a.meses)
+        var = r["variables"] if a.variables is None else a.variables
+        filas = proyectar(r, a.saldo, a.cuota, a.tcea, a.meses, a.variables,
+                          a.otros_deuda_hasta, a.extraordinario)
+        if a.json:
+            print(json.dumps(filas, ensure_ascii=False, indent=2))
+        else:
+            imprimir_proyeccion(filas, r, a.tcea, var, a.extraordinario)
 
 
 if __name__ == "__main__":

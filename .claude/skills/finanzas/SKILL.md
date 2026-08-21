@@ -32,7 +32,8 @@ desde el chat — el mes cerrado manda.
 | "cómo voy", "cómo cierra el mes" | `python finanzas.py resumen --mes AAAA-MM` |
 | Datos nuevos del mes (sueldo, gastos, cuotas) | Agrega filas al CSV del mes, corre `resumen`, actualiza `estado.md` |
 | "cuándo salgo de la deuda", "cuánto me cuesta" | `python finanzas.py deuda --saldo N --cuota N --tcea ...` |
-| "y si sigo así" | `python finanzas.py proyeccion --mes AAAA-MM --saldo N --cuota N` |
+| "y si sigo así" | `python finanzas.py proyeccion --mes AAAA-MM --saldo N --cuota N --variables N` |
+| Menciona CTS, gratificación, bono, utilidades | Agrégalo a `calendario.csv` en su mes y **vuelve a proyectar** — puede cambiar el plan |
 | "¿puedo pagar X?" | Compara contra la **brecha** del resumen, no contra el sueldo |
 | Cerrar el mes | Nueva entrada en la Bitácora (§5) + nuevo CSV para el mes siguiente |
 
@@ -51,10 +52,20 @@ desde el chat — el mes cerrado manda.
 4. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
    suma ese déficit a la deuda — es lo que pasa en la práctica. Proyectar con el
    déficit "cubierto por arte de magia" da un plan que no se cumple.
-5. **Los supuestos se escriben** en §4 de `estado.md`, con lo que se interpretó y qué
+5. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
+   utilidades son eventos de un mes. Mezclarlos con la estructura mensual infla el promedio y
+   simula una holgura que no existe.
+6. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
+   (`--extraordinario deuda` y `--extraordinario caja`) y compara. Si la diferencia es chica,
+   dilo: significa que la decisión no es esa, y seguir tratándola como importante distrae del
+   número que sí manda.
+7. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
+   un diagnóstico. Casi siempre pesa más que los extraordinarios, y sin eso el consejo apunta
+   al lugar equivocado.
+8. **Los supuestos se escriben** en §6 de `estado.md`, con lo que se interpretó y qué
    dato lo confirmaría.
-6. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
-7. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
+9. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
+10. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
    montos y saldos.
 
 ## Tono
