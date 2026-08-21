@@ -35,10 +35,12 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/updates/` | Reportes quincenales de fortalecimiento del modelo | Indexados en este códice (bloque gestionado) |
 | `research/fuentes/codice.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista`; se consulta con `/codice` |
 | `research/yopersona/perfil.md` | Nodo de conocimiento: perfil profesional del usuario (CV) | Fuente de verdad para cartas de presentación, CVs adaptados y asesoría de carrera |
+| `finanzas/` | **Seguimiento de finanzas personales** (mensual) | `estado.md` es la fuente de verdad; datos en `movimientos/AAAA-MM.csv` + `deuda.csv`; cálculos con `finanzas.py` (solo stdlib). Se opera con `/finanzas` |
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis + 🧠 Intuición acumulada (heurísticas de decisión) + Bitácora; refinada diariamente contra `cronista` — ver regla de lectura profunda diaria más abajo |
 | `research/lobo/fuentes_leidas_lobo.md` | Registro de qué fuentes ya leyó a fondo El Lobo para intuición | Evita repetir lectura; independiente del `revision_profunda.md` de `cronista` (ver sección abajo) |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: barrido incremental (grupos de 5) de literatura 🟢A del códice para el modelo `lapuerta` | Nunca aplica solo — memoria en `research/updates/cerrajero_barrido_estado.json`, siempre pregunta antes de tocar el modelo |
+| `.claude/skills/finanzas/` | Skill `/finanzas`: llevar las finanzas personales mes a mes | Lee `finanzas/estado.md` antes de responder; nunca inventa la TCEA; los supuestos se escriben |
 | `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
@@ -271,6 +273,27 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   una skill nueva en una sesión, se commitea aquí antes de darla por terminada (ver caso
   `contexto-peruano`, que existía como archivo suelto y por eso Claude Code no la reconocía).
 
+### 📌 Skill: `finanzas` (finanzas personales)
+Seguimiento mensual de la plata del usuario. Vive en `finanzas/` (fuera de `research/`:
+no es conocimiento de investigación sino un registro operativo con su propia bitácora).
+
+- **Invocación:** `/finanzas` — o solo, cuando el usuario pone números de su plata sobre
+  la mesa (sueldo, gastos, cuotas, deudas, "cómo voy este mes").
+- **Fuente de verdad:** `finanzas/estado.md` — foto vigente, deuda, **supuestos abiertos**
+  y bitácora mensual. Se lee **antes** de responder cualquier consulta: nunca se
+  reconstruye el panorama de memoria ni desde el chat.
+- **Datos:** `finanzas/movimientos/AAAA-MM.csv` (un archivo por mes, `monto` firmado,
+  `tipo` ∈ ingreso/fijo/variable/deuda) y `finanzas/deuda.csv` (saldos por acreedor).
+- **Cálculos:** `finanzas/finanzas.py` (solo stdlib) — `resumen`, `deuda`, `proyeccion`.
+- **Reglas que no se negocian:** el sueldo entra íntegro y los descuentos que repagan algo
+  ya cobrado (adelantos) salen como `tipo=deuda`, para que el servicio de deuda quede
+  visible; una categoría sin registrar es un **hueco**, no un gasto de cero; **ninguna
+  tasa se inventa** (mientras no esté la TCEA real se muestran escenarios etiquetados como
+  rango de referencia); al proyectar, el déficit del mes se carga a la tarjeta porque es
+  lo que pasa en la práctica; no se editan meses cerrados; y no se guardan datos bancarios
+  de identificación (números de tarjeta, cuentas, credenciales).
+- ⚠️ Es contabilidad personal, **no asesoría financiera regulada**.
+
 ## Convenciones
 - Documentación de investigación → `research/` (con índice en `research/README.md`).
 - Modelo de personas sintéticas → `research/personas/generador/` (fuente de verdad de desarrollo);
@@ -280,6 +303,7 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   solo dentro de una conversación — si no está commiteado así, Claude Code no la reconoce).
   Se distribuyen a otras máquinas/cuentas vía el marketplace personal (ver sección arriba).
 - Reportes quincenales → `research/updates/` (indexados arriba).
+- Finanzas personales → `finanzas/` (fuera de `research/`: registro operativo, no investigación).
 - Datasets/salidas generadas → `research/personas/datasets/`; microdato ENAHO → `research/personas/datos_enaho/`.
 - Spec (`synthetic_user_schema.json`) y matriz legible (`.md`) se mantienen sincronizados con el generador.
 - Artefactos generados (CSV de muestras, ZIP, `__pycache__`, `dist/`) NO se versionan.

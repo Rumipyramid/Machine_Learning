@@ -1,0 +1,10 @@
+mes,concepto,categoria,tipo,monto,estado,nota
+2026-08,Sueldo,trabajo,ingreso,6500,confirmado,Sueldo neto mensual
+2026-08,Cochera,alquiler,ingreso,200,confirmado,Ingreso por alquiler de la cochera
+2026-08,Alquiler,vivienda,fijo,-1250,confirmado,
+2026-08,Mantenimiento,vivienda,fijo,-340,confirmado,Cuota de mantenimiento del edificio
+2026-08,Camara,equipamiento,fijo,-420,confirmado,Cuota mensual — falta confirmar cuantas cuotas quedan
+2026-08,Terapia,salud,fijo,-360,confirmado,
+2026-08,Suscripciones IA,herramientas,fijo,-240,confirmado,
+2026-08,Cuota TC agosto,deuda,deuda,-3000,confirmado,Pago a la deuda de tarjeta de credito
+2026-08,Adelanto de sueldo,deuda,deuda,-1200,confirmado,Descuento en planilla por un adelanto ya cobrado

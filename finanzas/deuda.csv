@@ -1,0 +1,3 @@
+mes,acreedor,instrumento,saldo_inicial,pago,saldo_final,tcea,nota
+2026-08,Banco,Tarjeta de credito,10000,3000,7000,,TCEA por confirmar en el estado de cuenta. saldo_final asume que no hubo consumo nuevo en el mes
+2026-08,Empleador,Adelanto de sueldo,,1200,,0,Saldo total del adelanto por confirmar — puede quedar mas de una cuota
