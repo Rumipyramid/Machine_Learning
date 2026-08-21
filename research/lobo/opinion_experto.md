@@ -2259,6 +2259,91 @@ el diseño de explicaciones primero.
   mecanismo detrás de la intuición 18 (misma familia de evidencia, ángulo distinto: costo de
   involucrarse, no solo verificabilidad del resultado).
 
+### 43. Un combined ratio rentable auditado no es un estado alcanzado — es una versión de un modelo de riesgo que se sigue reentrenando, combinada con un cambio simultáneo de mezcla de canal hacia menor CAC
+F-449 (Root, Inc., ya citado en tesis 25 solo por la cifra de combined ratio 91,4% del Q3 2025) da
+el mecanismo detrás del número, no solo el resultado: Root lanzó en el mismo trimestre una versión
+nueva de su modelo UBI que la propia gerencia estima ~10% más predictiva, entrenada sobre 36,000
+millones de millas acumuladas de datos de manejo — y, en paralelo, el canal de partnerships
+(seguro embebido en el punto de venta con socios como Hyundai Capital America) casi triplicó su
+volumen interanual y ya representa 44% de las pólizas nuevas, un canal de adquisición
+estructuralmente más barato que performance marketing directo. **Heurística de decisión:** cuando
+se audite cualquier caso de "insurtech rentable" (el propio ejercicio que tesis 25 les exige a
+labs internos como BCP CIX y Pacífico "La Cápsula"), no basta con verificar el combined ratio de
+un trimestre — hay que verificar si la rentabilidad viene de una mejora de modelo que sigue
+iterando (no de un ajuste de precio único ya agotado) y si coincide con una migración de mezcla de
+canal hacia menor costo de adquisición al mismo tiempo; un número bueno sostenido por ambos motores
+a la vez es una señal mucho más fuerte que el mismo número sostenido por uno solo.
+- **Fuente:** F-449 (🟢A, Root Inc. — filings SEC 10-Q/10-K y shareholder letter Q3 2025, ya citado
+  en el ledger y en tesis 25 solo por la cifra agregada de combined ratio)
+- **Leído a fondo:** 2026-08-21 (ir.joinroot.com y sec.gov bloqueados por el proxy del entorno,
+  mismo patrón ya documentado; reconstruido vía cobertura financiera especializada — StockTitan,
+  Motley Fool, Globe and Mail — que confirma el detalle del modelo UBI v10%-más-predictivo y el
+  mix de canal, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 25 (Alta, sin cambio) — le da
+  el mecanismo causal que la tesis todavía no tenía explícito, y sirve como criterio de auditoría
+  operacional para cuando algún lab peruano publique, si alguna vez lo hace, una cifra propia.
+
+### 44. La divulgación pasiva ("explicar mejor") y el consejo digital activo (una herramienta que recomienda) no son el mismo objeto de estudio — uno no mueve la conducta, el otro sí, y por un mecanismo distinto al de informar
+F-338 (Bundorf, Polyakova & Tai-Seale 2024, *Management Science*, RCT real en seguro de salud/
+recetas, ya citado en el ledger solo por su hallazgo de WTP) separa dos canales por los que un
+consejo digital puede cambiar una elección: **aprendizaje** (actualizar lo que el consumidor cree
+sobre las características del producto) e **interpretación** (cambiar cuánto pesa cada
+característica en su decisión, no solo lo que sabe de ella). El hallazgo más fuerte: el consejo
+digital termina **desplazando** el peso que marca/reputación tenía sobre la disposición a pagar del
+consumidor — no solo lo informa mejor sobre lo mismo que ya valoraba, le cambia la función de valor
+misma. **Heurística de decisión:** esto no contradice la tesis 1 (glosarios/divulgación pasiva no
+cambian conducta de compra) — la acota. La diferencia no es "más información vs. menos
+información", es **pasivo vs. activo/recomendador**: un glosario deja al usuario decidir qué pesar
+y cómo; una herramienta de consejo activa —que ordena, recomienda o resalta— cambia directamente
+los pesos con los que el usuario decide, y por eso sí mueve la elección real. Cualquier
+"comparador" o asistente de decisión que Rimac construya para `lapuerta` o para el canal digital
+propio hereda esta distinción de diseño: un buscador/filtro pasivo no va a mover conducta (tesis
+1); un motor que activamente recomienda y reordena sí puede, y con eso hereda también el riesgo
+ético/regulatorio ya declarado en tesis 13 (mismo mecanismo que convierte mejor puede leerse como
+manipulador si no se declara el criterio de recomendación).
+- **Fuente:** F-338 (🟢A, Bundorf, M.K.; Polyakova, M.; Tai-Seale, M. 2024, *Management Science*
+  70(11):7617-7643 — RCT real, ya citado en el ledger de un documento externo del usuario solo por
+  la cifra de WTP)
+- **Leído a fondo:** 2026-08-21 (pubsonline.informs.org de pago; reconstruido vía la versión
+  working paper del NBER — "How do Humans Interact with Algorithms?" NBER WP 25976, mismos
+  autores/hallazgo — y cobertura secundaria que confirma el mecanismo de dos canales, no solo el
+  resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 1 (Alta, sin cambio) — acota
+  su alcance: "la divulgación no convierte" aplica a información pasiva, no a herramientas activas
+  de recomendación, que son un objeto de diseño distinto con su propio mecanismo y su propio riesgo.
+
+### 45. El efecto de framing (ganancia vs. pérdida) no tiene una magnitud fija que se pueda citar de memoria — se encoge o se invierte según el tiempo disponible para decidir y cuánto está en juego
+El paper fundacional de Tversky & Kahneman (1981, ya citado en tesis 18/C.8 solo por su mecanismo
+general) tiene una réplica de condiciones límite (Diederich & Wyszynski, *Judgment and Decision
+Making* 2018) que mide el mismo "problema de la enfermedad asiática" cruzado con presión de tiempo
+y magnitud de la necesidad (cuánta gente está en juego). Tres moderadores estadísticamente
+significativos, más allá del frame mismo: (1) bajo **límite de tiempo corto**, el efecto de framing
+se debilita en el marco de ganancia (la gente elige menos la opción segura de lo esperado cuando
+tiene que decidir rápido); (2) el tamaño de la "necesidad" (cuánta gente afectada) invierte su
+efecto según la enfermedad —para leucemia el framing pega más fuerte con necesidad alta, para SIDA
+pega más fuerte con necesidad baja—, es decir el mismo frame no produce el mismo tamaño de efecto
+en escenarios que a primera vista parecen equivalentes; (3) probabilidades más altas empujan hacia
+más toma de riesgo en ambos frames. **Heurística de decisión:** citar "el framing funciona" como
+si fuera una palanca de magnitud constante (el riesgo que corre cualquier aplicación directa de
+C.5/C.8 del Playbook del Asesor a un guion de venta) es exactamente el mismo error que tesis 6 ya
+identificó para el nudging genérico — el efecto promedio esconde variación real por contexto. Antes
+de anclar un guion de venta a un frame de ganancia o pérdida, verificar bajo qué condición se va a
+usar: una llamada bajo presión de tiempo (cierre rápido de fin de mes) no hereda automáticamente el
+mismo tamaño de efecto que una decisión reposada de escritorio, y el "monto en juego" percibido
+puede invertir cuál frame conviene más, no solo amplificarlo.
+- **Fuente:** F-222 (🟢A, Tversky, A. & Kahneman, D. 1981, *Science* 211(4481) — ya citado en el
+  ledger y en tesis 18 solo por su mecanismo general de framing); moderadores vía Diederich, A. &
+  Wyszynski, C. (2018, *Journal of Judgment and Decision Making* 13(4), no registrada previamente
+  en el ledger — no se suma como F-n nueva por ser hallazgo de contexto sobre una fuente ya citada,
+  no evidencia independiente que sostenga una tesis nueva)
+- **Leído a fondo:** 2026-08-21 (science.org de pago para el original; ambos reconstruidos vía
+  agregadores — MPRA, Academia.edu, journal.sjdm.org de acceso abierto — que confirman el
+  experimento del Asian Disease problem y los tres moderadores significativos)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 18 (Alta, sin cambio) — acota
+  su alcance operacional: el mecanismo de framing (C.8) es real, pero su tamaño de efecto no es
+  constante entre contextos de venta, y asumir que sí lo es repite el error de sobregeneralización
+  que tesis 6 ya corrigió para el nudging.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -2442,27 +2527,26 @@ el diseño de explicaciones primero.
   ser el hogar, no el individuo frente al asesor (refuerza desde otro ángulo el matiz ya hecho a
   C.6 de tesis 18). Ninguna tesis de negocio cambió de confianza por esta corrida — es un
   mecanismo nuevo y paralelo, no una revisión de evidencia sobre las tesis existentes.
-- **2026-08-07** — Corrida diaria de refinamiento. Confirmé `main` actualizado (ya en el commit del
-  2026-08-06) y leí `codice.md` completo: sigue tope exacto en F-468 (F-1 a F-468 sin huecos),
-  idéntico al que ya procesó la corrida de ayer (2026-08-06) — **sin cambios sustanciales** en
-  evidencia, cero fuentes nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/
-  `/marketer` en las últimas 24h. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con el ledger vigente, y no forcé ninguna conexión de tesis nueva solo por completar
-  el paso. La última revisión profunda (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no
-  vence hoy. Sí corrió la rutina diaria de intuición (segunda corrida desde que se creó el
-  2026-08-06): seleccioné al azar 3 fuentes 🟢A adicionales sin lectura previa del Lobo — F-6
-  (Loewenstein 2013, ya citada en tesis 2), F-53 (Holtrop et al. 2021 RE-AIM, ya citada en tesis 9 y
-  ya releída por la revisión profunda de `cronista` el 2026-08-05 desde otro ángulo) y F-230 (Deci &
-  Ryan 2000, ya citada en tesis 19) — y sumé las entradas 4, 5 y 6 de Intuición acumulada: (4) la
-  incomprensión puede anular el uso de un beneficio ya gratuito, no solo empeorar la elección entre
-  pagados (matiza tesis 2 sin cambiar su confianza); (5) buscar la literatura de
-  "malentendidos/clarificaciones" de cualquier framework con nombre propio antes de adoptarlo, no
-  solo el paper fundacional (heurística de proceso, sin tocar confianza de tesis 9/21); (6) un
-  incentivo económico contingente puede socavar la motivación de quien ya actuaba por convicción
-  propia (efecto de socavamiento, Deci/Koestner/Ryan 1999) — matiza el diseño de incentivos de tesis
-  7 y 19 sin cambiar su confianza, es instinto razonado sobre teoría, no dato de campo peruano.
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 26
-  días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-01 a 2026-08-07** — *(Resumida el 2026-08-21 al cumplir la ventana de ~30 días; el
+  detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con
+  su propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
+  fuente/fecha.)* Siete corridas. **2026-08-01/02** — sin cambios sustanciales, ledger fijo en
+  F-398. **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del
+  node `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4%
+  vs. ~139%, la rentabilidad depende de disciplina de suscripción, no de la capa tecnológica);
+  corrigió tesis 21 (retiró la cifra del "impuesto de verificación", una cadena de eco de cita sin
+  fuente primaria — el dato real que sobrevive invierte el supuesto: más experiencia produce
+  *menos* escrutinio del código de IA, no más); matizó tesis 7 (F-442 resultó ser el mismo estudio
+  que ya sostenía la tesis vía F-23, no un respaldo independiente adicional). **2026-08-05** — sin
+  cambios sustanciales en el tope (F-468); revisión profunda de `cronista` el mismo día (F-43, F-44,
+  F-50, F-53, F-54) matizó tesis 10 sin cambiar su confianza y corrigió dos autorías mal atribuidas
+  en `codice.md` (F-53, F-54). **2026-08-06** — sin cambios sustanciales en el tope; a pedido del
+  usuario, diseñé el mecanismo de **"🧠 Intuición acumulada"** (lectura diaria de 3 fuentes al azar,
+  orden por rigurosidad agotado A→E, registro en `research/lobo/fuentes_leidas_lobo.md`) y ejecuté
+  su primera corrida (entradas 1-3: F-82, F-107, F-236). **2026-08-07** — sin cambios sustanciales
+  en el tope; segunda corrida de intuición (entradas 4-6: F-6, F-53, F-230). Ningún nivel de
+  confianza de tesis bajó en toda la ventana; todo ajuste fue matiz, corrección de cita o suma de
+  tesis nueva sobre evidencia que la refuerza.
 - **2026-08-08** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
   d739018→22e9aee, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
   verifiqué la secuencia F-1 a F-468 sin huecos — sigue tope exacto en F-468, idéntico al que ya
@@ -2889,3 +2973,48 @@ el diseño de explicaciones primero.
   días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días pero ya en su borde — la
   próxima corrida (2026-08-21) debe evaluar podar/resumir la primera semana del bloque actual
   (2026-08-01 a 2026-08-07) para no seguir creciendo por encima del umbral.
+- **2026-08-21** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward 8a90dc2→e8ba645, el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados**, mismo tope exacto que procesó la corrida de ayer (2026-08-20) — **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  octavo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
+  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por
+  completar el paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12
+  (mecanismo de `cronista`, cada ~3 días, no vence formalmente hoy pero ya lleva nueve días sin
+  correr; no lo disparo aquí porque es rutina de `cronista`, no de este proceso diario). **Cumplí
+  el umbral de poda señalado ayer:** consolidé las siete entradas de la primera semana del bloque
+  actual (2026-08-01 a 2026-08-07) en un solo bloque resumido — el detalle de cada tesis e
+  intuición que generaron ya vive en sus propias secciones con fecha, así que no se pierde
+  información, solo se deja de repetir en la bitácora; queda el detalle completo desde 2026-08-08
+  en adelante. Sí corrió la rutina diaria de intuición (decimosexta corrida desde el 2026-08-06):
+  de 134 fuentes 🟢A confirmadas por conteo propio en el ledger, 42 ya tenían lectura profunda del
+  Lobo — de las 92 restantes elegí 3 al azar puro: F-449 (Root, Inc., filings SEC — combined ratio
+  91,4% Q3 2025, ya citado en tesis 25 solo por la cifra agregada), F-338 (Bundorf, Polyakova &
+  Tai-Seale 2024, *Management Science*, RCT de consejo digital en seguro de salud, citado en un
+  documento externo del usuario solo por su hallazgo de disposición a pagar) y F-222 (Tversky &
+  Kahneman 1981, *Science*, framing — ya citado en tesis 18/C.8 solo por su mecanismo general). Las
+  tres bloqueadas por el proxy en su URL directa (ir.joinroot.com/sec.gov,
+  pubsonline.informs.org, science.org); reconstruidas vía búsqueda dirigida (cobertura financiera
+  especializada para F-449; el working paper del NBER "How do Humans Interact with Algorithms?"
+  para F-338, mismos autores/hallazgo; agregadores de acceso abierto — MPRA, journal.sjdm.org —
+  para F-222, incluyendo una réplica de condiciones límite del framing nunca antes citada en el
+  ledger) que confirman detalle nuevo, no solo el resumen ya citado. Sumé las entradas 43, 44 y 45
+  de Intuición acumulada: (43) un combined ratio rentable auditado combina un modelo de riesgo que
+  se sigue reentrenando (Root: UBI ~10% más predictivo tras 36,000 millones de millas) con un
+  cambio simultáneo hacia mezcla de canal más barata (partnerships embebidos, 44% de pólizas
+  nuevas) — da el criterio de auditoría operacional que tesis 25 todavía no tenía explícito para
+  cuando algún lab peruano publique cifra propia; (44) la divulgación pasiva (tesis 1) y el consejo
+  digital activo/recomendador no son el mismo objeto de estudio — el segundo desplaza el peso que
+  marca/reputación tiene sobre la disposición a pagar, cambia los pesos de decisión, no solo
+  informa; acota el alcance de tesis 1 sin bajarle la confianza, y hereda el riesgo ético ya
+  declarado en tesis 13 si se aplica a un comparador propio; (45) el efecto de framing no tiene
+  magnitud fija citable de memoria — se debilita bajo presión de tiempo y se invierte según el
+  tamaño de lo que está en juego, con paralelo directo al error de sobregeneralización que tesis 6
+  ya corrigió para el nudging; acota el alcance operacional de C.8 en tesis 18 sin cambiar su
+  confianza. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el
+  mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque
+  las tres entradas de hoy sí acotan el alcance de tesis 25, 1 y 18. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 14 días de
+  historial (2026-08-08 a hoy) tras la poda de la primera semana del bloque actual — dentro de la
+  ventana de ~30 días.

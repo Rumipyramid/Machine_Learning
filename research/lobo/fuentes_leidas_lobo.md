@@ -59,3 +59,6 @@
 | F-147 | 🟢 A | 2026-08-20 | Intuición 40 — en un agente conversacional, si el sistema entendió bien lo que dijo el usuario puede pesar más en la satisfacción que si completó la tarea |
 | F-176 | 🟢 A | 2026-08-20 | Intuición 41 — el daño de una publicidad de precio incompleta se concentra en quien ya desconfía, no se reparte parejo en la audiencia |
 | F-246 | 🟢 A | 2026-08-20 | Intuición 42 — la sobreconfianza en IA es costo-beneficio estratégico, no sesgo automático; las explicaciones solo rinden en tareas difíciles |
+| F-449 | 🟢 A | 2026-08-21 | Intuición 43 — un combined ratio rentable auditado combina un modelo de riesgo que se sigue reentrenando con un cambio simultáneo hacia mezcla de canal más barata |
+| F-338 | 🟢 A | 2026-08-21 | Intuición 44 — la divulgación pasiva y el consejo digital activo (recomendador) no son el mismo objeto: el segundo cambia los pesos de decisión, no solo la información |
+| F-222 | 🟢 A | 2026-08-21 | Intuición 45 — el efecto de framing no tiene magnitud fija; se encoge o invierte según presión de tiempo y tamaño de lo que está en juego |
