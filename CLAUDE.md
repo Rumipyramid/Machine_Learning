@@ -35,7 +35,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/updates/` | Reportes quincenales de fortalecimiento del modelo | Indexados en este códice (bloque gestionado) |
 | `research/fuentes/codice.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista`; se consulta con `/codice` |
 | `research/yopersona/perfil.md` | Nodo de conocimiento: perfil profesional del usuario (CV) | Fuente de verdad para cartas de presentación, CVs adaptados y asesoría de carrera |
-| `finanzas/` | **Seguimiento de finanzas personales** (mensual) | `estado.md` es la fuente de verdad; datos en `movimientos/AAAA-MM.csv` + `deuda.csv` + `calendario.csv` (irregulares); cálculos con `finanzas.py` (solo stdlib). Se opera con `/finanzas` |
+| `finanzas/` | **Seguimiento de finanzas personales** (mensual) | `estado.md` es la fuente de verdad; datos en `movimientos/AAAA-MM.csv` + `deuda.csv` + `calendario.csv` + `patrimonio.csv`; cálculos con `finanzas.py` (solo stdlib). Se opera con `/finanzas` |
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis + 🧠 Intuición acumulada (heurísticas de decisión) + Bitácora; refinada diariamente contra `cronista` — ver regla de lectura profunda diaria más abajo |
 | `research/lobo/fuentes_leidas_lobo.md` | Registro de qué fuentes ya leyó a fondo El Lobo para intuición | Evita repetir lectura; independiente del `revision_profunda.md` de `cronista` (ver sección abajo) |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
@@ -284,15 +284,18 @@ no es conocimiento de investigación sino un registro operativo con su propia bi
   reconstruye el panorama de memoria ni desde el chat.
 - **Datos:** `finanzas/movimientos/AAAA-MM.csv` (un archivo por mes, `monto` firmado,
   `tipo` ∈ ingreso/fijo/variable/deuda), `finanzas/deuda.csv` (saldos por acreedor) y
-  `finanzas/calendario.csv` (ingresos irregulares ya conocidos: CTS, gratificación, bonos).
-- **Cálculos:** `finanzas/finanzas.py` (solo stdlib) — `resumen`, `deuda`, `proyeccion`.
+  `finanzas/calendario.csv` (ingresos irregulares: CTS, gratificación, bonos) y
+  `finanzas/patrimonio.csv` (activos, con liquidez y confianza de valuación).
+- **Cálculos:** `finanzas/finanzas.py` (solo stdlib) — `resumen`, `deuda`, `proyeccion`, `patrimonio`.
 - **Reglas que no se negocian:** el sueldo entra íntegro y los descuentos que repagan algo
   ya cobrado (adelantos) salen como `tipo=deuda`, para que el servicio de deuda quede
   visible; una categoría sin registrar es un **hueco**, no un gasto de cero; **ninguna
   tasa se inventa** (mientras no esté la TCEA real se muestran escenarios etiquetados como
   rango de referencia); al proyectar, el déficit del mes se carga a la tarjeta porque es
   lo que pasa en la práctica; lo irregular (CTS, gratificación) va al calendario y nunca al CSV
-  mensual; no se editan meses cerrados; y no se guardan datos bancarios
+  mensual; antes de recomendar liquidar un activo se corren las dos proyecciones y se contrasta
+  contra el **runway** (días de gasto fijo que cubre lo líquido), porque la tasa valla sola
+  exagera el beneficio cuando la deuda es corta; no se editan meses cerrados; y no se guardan datos bancarios
   de identificación (números de tarjeta, cuentas, credenciales).
 - ⚠️ Es contabilidad personal, **no asesoría financiera regulada**.
 

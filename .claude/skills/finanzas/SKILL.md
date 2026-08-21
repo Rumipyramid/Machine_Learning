@@ -33,6 +33,8 @@ desde el chat — el mes cerrado manda.
 | Datos nuevos del mes (sueldo, gastos, cuotas) | Agrega filas al CSV del mes, corre `resumen`, actualiza `estado.md` |
 | "cuándo salgo de la deuda", "cuánto me cuesta" | `python finanzas.py deuda --saldo N --cuota N --tcea ...` |
 | "y si sigo así" | `python finanzas.py proyeccion --mes AAAA-MM --saldo N --cuota N --variables N` |
+| Menciona ahorros, inversiones, ETFs, un bien de valor | Agrégalo a `patrimonio.csv` y corre `patrimonio` |
+| "cuánto tengo", "cuánto valgo", "me conviene vender X" | `python finanzas.py patrimonio --tcea N --colchon N` |
 | Menciona CTS, gratificación, bono, utilidades | Agrégalo a `calendario.csv` en su mes y **vuelve a proyectar** — puede cambiar el plan |
 | "¿puedo pagar X?" | Compara contra la **brecha** del resumen, no contra el sueldo |
 | Cerrar el mes | Nueva entrada en la Bitácora (§5) + nuevo CSV para el mes siguiente |
@@ -59,13 +61,18 @@ desde el chat — el mes cerrado manda.
    (`--extraordinario deuda` y `--extraordinario caja`) y compara. Si la diferencia es chica,
    dilo: significa que la decisión no es esa, y seguir tratándola como importante distrae del
    número que sí manda.
-7. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
+7. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
+   (`--saldo` con y sin el activo aplicado) y resta lo que el usuario deja de tener. La tasa
+   valla sola exagera el beneficio: si la deuda muere en pocos meses, el interés evitado
+   corre solo esos meses. Y contrasta siempre contra el **runway** — cuántos días de gasto
+   fijo cubre lo líquido. Quedarse sin colchón para ahorrar intereses reconstruye la deuda.
+8. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
    un diagnóstico. Casi siempre pesa más que los extraordinarios, y sin eso el consejo apunta
    al lugar equivocado.
-8. **Los supuestos se escriben** en §6 de `estado.md`, con lo que se interpretó y qué
+9. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
    dato lo confirmaría.
-9. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
-10. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
+10. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
+11. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
    montos y saldos.
 
 ## Tono

@@ -35,7 +35,7 @@ es la deuda.
 
 **La cuota de 3,000 está calibrada por encima de la capacidad de pago.** Descontando
 fijos y el adelanto, quedan S/ 2,890 para la tarjeta. La cuota es 3,000. Faltan 110,
-más todo lo que cuesten los huecos del §5.
+más todo lo que cuesten los huecos del §6.
 
 ---
 
@@ -194,7 +194,75 @@ El orden que se desprende de los números:
 
 ---
 
-## 5. Lo que falta para que el modelo sea real
+## 5. Patrimonio
+
+Activos en `patrimonio.csv`, ordenados por qué tan rápido se convierten en plata.
+
+| Activo | Liquidez | Valor | Nota |
+|---|---|---:|---|
+| Caja Arequipa | inmediata | S/ 700 | |
+| ETFs y acciones | días | S/ 1,125 | US$ 300 |
+| S&P 500 | días | S/ 1,125 | US$ 300 |
+| Pokémon TCG | baja | S/ 790 | valuación incierta; el precio de venta real suele ser menor |
+| Cámara profesional | baja | S/ 4,000 | herramienta de trabajo, todavía en cuotas |
+| **Total activos** | | **S/ 7,740** | |
+| Pasivos registrados | | S/ 10,000 | + adelanto y cuotas de cámara sin confirmar |
+| **Patrimonio neto** | | **S/ -2,260** | es un **techo**: faltan pasivos por registrar |
+
+```
+python finanzas.py patrimonio --tcea 60 --colchon 700
+```
+
+### El número que importa no es el patrimonio, es el runway
+
+Tu colchón líquido inmediato son S/ 700. Tus gastos fijos son S/ 2,610 al mes. Eso son
+**ocho días** de cobertura. Contando ETFs y acciones (que se liquidan en días), sube a
+**34 días**.
+
+Esa es la fragilidad real. Un mes que cierra en cero, sin reserva y con una tarjeta
+disponible es exactamente la máquina que produjo los 10,000 actuales.
+
+### ¿Liquidar las inversiones para pagar la tarjeta?
+
+La lógica de tasa valla dice que sí, y fuerte: tu deuda cuesta ~60% anual, y ningún ETF
+rinde eso. Mantener S/ 2,250 invertidos mientras existe la deuda cuesta ~S/ 90 al mes.
+
+Pero al correrlo contra el calendario real, el beneficio se achica mucho:
+
+| Escenario | Sin liquidar (caja a marzo) | Liquidando 2,250 | Ganancia neta |
+|---|---:|---:|---:|
+| Realista (variables 1,500) | S/ 19,312 | S/ 21,943 | **S/ 381** |
+| Pesimista (variables 2,500) | S/ 2,299 | S/ 5,035 | **S/ 486** |
+
+*(Ganancia neta = diferencia de caja menos los 2,250 que dejas de tener invertidos.)*
+
+La razón es la misma que con el CTS: la tarjeta se muere en noviembre/diciembre de todas
+formas, así que el interés que evitas solo corre tres o cuatro meses.
+
+**Veredicto: no liquides.** Ganar S/ 400 a cambio de pasar de 34 días de runway a 8, en la
+situación exacta donde un imprevisto vuelve a la tarjeta al 60%, es un mal cambio. Los
+S/ 400 se pierden en un solo mes malo.
+
+Lo que sí conviene es **dejar de llamarlos inversión**: hasta que la tarjeta esté en cero y
+el colchón construido, esos S/ 2,250 son tu fondo de emergencia, no tu cartera. No se tocan
+para gastar, y no se aportan más hasta que la deuda muera.
+
+*(Si igual decides liquidar, verifica antes el costo tributario de la ganancia de capital y
+las comisiones de salida del bróker — pueden comerse buena parte de los S/ 400.)*
+
+### La cámara
+
+S/ 4,000 de valor: **52% de todo tu patrimonio en un solo activo ilíquido que además todavía
+estás pagando.** Los 420/mes son el tercer gasto fijo más grande, después del alquiler y del
+mantenimiento, y equivalen al 6% de tu ingreso.
+
+Eso no la hace un problema — la hace la línea que más cambia según un dato que no tengo:
+**¿genera ingresos?** Si es herramienta de trabajo que factura, es un activo productivo y la
+cuota se paga sola. Si no, es la línea más discrecional de un presupuesto que cierra en rojo.
+
+---
+
+## 6. Lo que falta para que el modelo sea real
 
 Cuatro datos cambian materialmente el diagnóstico. En orden de impacto:
 
@@ -208,13 +276,15 @@ Cuatro datos cambian materialmente el diagnóstico. En orden de impacto:
    cuándo permite planificar.
 
 A eso se suman dos del calendario (§3): el **monto real de la gratificación** (posiblemente
-mayor que 6,500) y el **saldo exacto del CTS**.
+mayor que 6,500) y el **saldo exacto del CTS**. Y dos del patrimonio (§5): **cuántas cuotas
+faltan de la cámara** —que es un pasivo sin registrar contra un activo de 4,000— y si la
+cámara **genera ingresos**.
 
 Mientras esos datos no estén, los números de este documento son un piso, no un retrato.
 
 ---
 
-## 6. Supuestos vigentes
+## 7. Supuestos vigentes
 
 Se registran para poder corregirlos, no porque estén verificados:
 
@@ -227,13 +297,34 @@ Se registran para poder corregirlos, no porque estén verificados:
 - **"IA -240"** se interpreta como suscripciones mensuales de herramientas.
 - **El saldo TC de 10,000** se asume anterior al pago de agosto; el saldo de cierre
   proyectado (7,000) asume cero consumo nuevo en el mes.
+- **Tipo de cambio S/ 3.75 por USD**, asumido. Los US$ 600 valen S/ 2,250 a esa tasa; el
+  tipo de cambio real del día está en el BCRP y se pasa con `--tc`.
+- **Los S/ 790 de Pokémon TCG** son valuación de mercado, no precio de venta. Los
+  coleccionables se venden con descuento y con demora: como reserva de emergencia, no cuentan.
+- **La cámara vale S/ 4,000** hoy; los equipos se deprecian, así que es un techo, no un piso.
+- **Los US$ 300 en ETFs y los US$ 300 en S&P** se tratan como dos posiciones separadas
+  (US$ 600 en total), según cómo fueron reportados.
 
 ---
 
-## 7. Bitácora
+## 8. Bitácora
 
 Una entrada por mes, al cerrar. Formato: qué pasó, qué cambió respecto al mes anterior,
 qué decisión se tomó.
+
+### 2026-08 (c) — Entra el patrimonio
+
+Se registran los activos: S/ 700 en Caja Arequipa, US$ 600 entre ETFs/acciones y S&P,
+S/ 790 en Pokémon TCG y una cámara de S/ 4,000. Nuevo `patrimonio.csv` y comando
+`patrimonio`.
+
+Patrimonio neto **negativo: S/ -2,260**, y es un techo porque faltan pasivos por registrar
+(adelanto, cuotas de la cámara). El dato operativo es otro: el colchón líquido inmediato
+cubre **ocho días** de gastos fijos.
+
+Se evaluó liquidar los US$ 600 contra la tarjeta. Ganancia neta S/ 381 (escenario realista)
+a S/ 486 (pesimista) — poco, porque la tarjeta muere en noviembre/diciembre igual. Decisión:
+**no liquidar**; se reclasifican como fondo de emergencia en vez de cartera de inversión.
 
 ### 2026-08 (b) — Entran CTS y gratificación al modelo
 

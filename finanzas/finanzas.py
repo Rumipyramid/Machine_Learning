@@ -26,6 +26,8 @@ import sys
 BASE = os.path.dirname(os.path.abspath(__file__))
 MOV_DIR = os.path.join(BASE, "movimientos")
 CALENDARIO = os.path.join(BASE, "calendario.csv")
+PATRIMONIO = os.path.join(BASE, "patrimonio.csv")
+DEUDA = os.path.join(BASE, "deuda.csv")
 
 TIPOS = ("ingreso", "fijo", "variable", "deuda")
 
@@ -106,6 +108,51 @@ def meses_desde(mes: str, n: int) -> list[str]:
         if m > 12:
             m, y = 1, y + 1
     return out
+
+
+def leer_patrimonio(tc: float) -> list[dict]:
+    """Activos, convertidos a soles al tipo de cambio dado."""
+    if not os.path.exists(PATRIMONIO):
+        return []
+    filas = []
+    with open(PATRIMONIO, newline="", encoding="utf-8") as fh:
+        for i, f in enumerate(csv.DictReader(fh), start=2):
+            if not (f.get("activo") or "").strip():
+                continue
+            try:
+                monto = float(f["monto"])
+            except (KeyError, TypeError, ValueError):
+                sys.exit(f"{PATRIMONIO}:{i} monto invalido para '{f.get('activo')}'")
+            moneda = (f.get("moneda") or "PEN").strip().upper()
+            filas.append({
+                "activo": f["activo"].strip(),
+                "categoria": (f.get("categoria") or "").strip(),
+                "moneda": moneda,
+                "monto": monto,
+                "pen": monto * tc if moneda == "USD" else monto,
+                "liquidez": (f.get("liquidez") or "baja").strip(),
+                "confianza": (f.get("confianza_valuacion") or "").strip(),
+                "nota": (f.get("nota") or "").strip(),
+            })
+    return filas
+
+
+def leer_pasivos() -> list[dict]:
+    """Saldo de inicio del mes mas reciente registrado en deuda.csv."""
+    if not os.path.exists(DEUDA):
+        return []
+    por_acreedor = {}
+    with open(DEUDA, newline="", encoding="utf-8") as fh:
+        for f in csv.DictReader(fh):
+            if not (f.get("instrumento") or "").strip():
+                continue
+            crudo = (f.get("saldo_inicial") or "").strip()
+            por_acreedor[f["instrumento"].strip()] = {
+                "instrumento": f["instrumento"].strip(),
+                "saldo": float(crudo) if crudo else None,
+                "nota": (f.get("nota") or "").strip(),
+            }
+    return list(por_acreedor.values())
 
 
 # ------------------------------------------------------------------ resumen
@@ -363,6 +410,68 @@ def imprimir_proyeccion(filas: list[dict], r: dict, tcea: float, var: float,
     print()
 
 
+# --------------------------------------------------------------- patrimonio
+
+ORDEN_LIQUIDEZ = ("inmediata", "dias", "baja")
+
+
+def imprimir_patrimonio(tc: float, tcea: float, colchon: float) -> None:
+    activos = leer_patrimonio(tc)
+    pasivos = leer_pasivos()
+
+    print(f"\n{'=' * 70}")
+    print(f"  PATRIMONIO — tipo de cambio asumido S/ {tc:.2f} por USD")
+    print(f"{'=' * 70}\n")
+
+    print("ACTIVOS")
+    total_activos = 0.0
+    por_liq = {}
+    for niv in ORDEN_LIQUIDEZ:
+        grupo = [a for a in activos if a["liquidez"] == niv]
+        if not grupo:
+            continue
+        sub = sum(a["pen"] for a in grupo)
+        por_liq[niv] = sub
+        total_activos += sub
+        print(f"  {niv}")
+        for a in grupo:
+            og = f"  (US$ {a['monto']:,.0f})" if a["moneda"] == "USD" else ""
+            duda = "  ~valuacion incierta" if a["confianza"] == "baja" else ""
+            print(f"    {a['activo']:<26} {soles(a['pen'], 10)}{og}{duda}")
+        print(f"    {'':<26} {soles(sub, 10)}  <- subtotal\n")
+    print(f"  {'TOTAL ACTIVOS':<28} {soles(total_activos, 10)}\n")
+
+    print("PASIVOS")
+    total_pasivos = 0.0
+    for p in pasivos:
+        if p["saldo"] is None:
+            print(f"    {p['instrumento']:<26} {'por confirmar':>10}")
+        else:
+            total_pasivos += p["saldo"]
+            print(f"    {p['instrumento']:<26} {soles(p['saldo'], 10)}")
+    print(f"    {'':<26} {soles(total_pasivos, 10)}  <- registrado\n")
+
+    neto = total_activos - total_pasivos
+    print(f"{'-' * 70}")
+    print(f"  PATRIMONIO NETO             {soles(neto, 10)}")
+    if any(p["saldo"] is None for p in pasivos):
+        print("  (es un techo: hay pasivos sin confirmar — el neto real es menor)")
+    print(f"{'-' * 70}\n")
+
+    # --- tasa valla: que tiene que rendir un activo para justificar tenerlo ---
+    liquido = por_liq.get("inmediata", 0.0) + por_liq.get("dias", 0.0)
+    aplicable = max(0.0, liquido - colchon)
+    i = tasa_mensual(tcea)
+    print("TASA VALLA (que tiene que rendir un activo para valer la pena)")
+    print(f"  Tu deuda cuesta {tcea:.0f}% anual ({i * 100:.2f}% mensual). Cualquier activo que")
+    print(f"  rinda menos que eso te cuesta plata mientras la deuda exista.\n")
+    print(f"  Liquido o casi liquido (dias)      {soles(liquido, 10)}")
+    if colchon:
+        print(f"  Reservado como colchon             {soles(colchon, 10)}")
+    print(f"  Aplicable a la tarjeta hoy         {soles(aplicable, 10)}")
+    print(f"  Lo que cuesta NO aplicarlo         {soles(aplicable * i, 10)} / mes\n")
+
+
 # --------------------------------------------------------------------- main
 
 def main() -> None:
@@ -398,6 +507,14 @@ def main() -> None:
                        help="Destino de CTS/gratificacion (default: deuda)")
     p_pro.add_argument("--json", action="store_true")
 
+    p_pat = sub.add_parser("patrimonio", help="Activos, pasivos y patrimonio neto")
+    p_pat.add_argument("--tc", type=float, default=3.75,
+                       help="Tipo de cambio USD->PEN (default 3.75; verificar en BCRP)")
+    p_pat.add_argument("--tcea", type=float, default=60.0,
+                       help="TCEA de la deuda, para calcular la tasa valla")
+    p_pat.add_argument("--colchon", type=float, default=0.0,
+                       help="Monto liquido que se reserva como fondo de emergencia")
+
     a = p.parse_args()
 
     if a.cmd == "resumen":
@@ -414,6 +531,9 @@ def main() -> None:
             print(json.dumps(esc, ensure_ascii=False, indent=2))
         else:
             imprimir_deuda(a.saldo, a.cuota, esc, a.consumo_nuevo)
+
+    elif a.cmd == "patrimonio":
+        imprimir_patrimonio(a.tc, a.tcea, a.colchon)
 
     elif a.cmd == "proyeccion":
         r = calcular_resumen(a.mes)

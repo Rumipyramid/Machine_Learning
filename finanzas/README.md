@@ -9,6 +9,7 @@ sin dependencias, e interpretación en un documento vivo.
 | `movimientos/AAAA-MM.csv` | Movimientos del mes — fuente de verdad de los montos |
 | `deuda.csv` | Saldos por acreedor, mes a mes |
 | `calendario.csv` | Ingresos/egresos irregulares ya conocidos (CTS, gratificación, bonos) |
+| `patrimonio.csv` | Activos, con su liquidez y qué tan confiable es la valuación |
 | `finanzas.py` | Calculadora (solo stdlib) |
 
 ## Uso
@@ -25,6 +26,9 @@ python finanzas.py deuda --saldo 10000 --cuota 3000 --tcea 0 40 60 90
 # ...y si el déficit se sigue cargando a la tarjeta
 python finanzas.py deuda --saldo 10000 --cuota 3000 --tcea 60 --consumo-nuevo 1610
 
+# Activos, pasivos, patrimonio neto y tasa valla
+python finanzas.py patrimonio --tcea 60 --colchon 700
+
 # Qué pasa si este mes se repite (aplica calendario.csv en su mes)
 python finanzas.py proyeccion --mes 2026-08 --saldo 10000 --cuota 3000 --tcea 60 --meses 8 \
     --variables 1500 --otros-deuda-hasta 2026-08
@@ -39,12 +43,20 @@ Flags útiles de `proyeccion`:
 - `--extraordinario deuda|caja` — si el CTS y la gratificación se aplican a la deuda o quedan
   en caja. Comparar ambos es cómo se decide qué hacer con ellos.
 
-Todos los comandos aceptan `--json` para uso programático.
+`patrimonio` acepta `--tc` (tipo de cambio USD→PEN, default 3.75 — verificar en BCRP),
+`--tcea` y `--colchon` (monto líquido que se reserva como fondo de emergencia antes de
+calcular cuánto es aplicable a la deuda).
+
+Los demás comandos aceptan `--json` para uso programático.
 
 ## Formato de los CSV
 
 `calendario.csv` usa las mismas columnas que los movimientos, pero sus filas son eventos de un
 mes futuro concreto: no se repiten y solo los lee `proyeccion`.
+
+`patrimonio.csv` clasifica cada activo por `liquidez` (`inmediata` · `dias` · `baja`) y por
+`confianza_valuacion` (`alta` · `media` · `baja`). Las dos columnas existen porque un activo
+ilíquido o mal valuado **no es colchón de emergencia**, por más que sume en el total.
 
 ### `movimientos/AAAA-MM.csv`
 
@@ -73,7 +85,10 @@ mes,concepto,categoria,tipo,monto,estado,nota
    hace creer que hay holgura donde no la hay.
 3. **Los supuestos se escriben.** Todo lo que se interpretó (y no se verificó) va al §4
    de `estado.md`. Un supuesto escrito se puede corregir; uno implícito, no.
-4. **El script manda sobre el documento.** Si un número de `estado.md` no sale de correr
+4. **El runway manda sobre el patrimonio neto.** Un patrimonio positivo con dos días de
+   liquidez es más frágil que uno negativo con tres meses de reserva. El número que se mira
+   primero es cuántos días de gasto fijo cubre lo líquido.
+5. **El script manda sobre el documento.** Si un número de `estado.md` no sale de correr
    `finanzas.py`, es un supuesto y va marcado como tal.
-5. **Nada de datos de identificación bancaria** en este directorio: ni números de tarjeta,
+6. **Nada de datos de identificación bancaria** en este directorio: ni números de tarjeta,
    ni cuentas, ni credenciales. Solo montos y saldos.
