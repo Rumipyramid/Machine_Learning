@@ -10,6 +10,73 @@ de este documento no sale de correr el script, es un supuesto y está marcado co
 
 ---
 
+---
+
+## 📅 El martes 25 — cómo repartir el sueldo
+
+*El sueldo de agosto entra el martes 25/08 y tiene que durar hasta el próximo. Este es el
+reparto, en orden. El orden importa: definir primero la cuota de la tarjeta y vivir con lo que
+sobre es exactamente cómo se termina financiando la comida con la tarjeta.*
+
+```
+python finanzas.py reparto --mes 2026-08 --reserva 1200
+```
+
+| | | |
+|---|---:|---|
+| **1. Entra** | **S/ 6,700** | sueldo 6,500 + cochera 200 |
+| **2. Sale sí o sí** | **S/ 3,810** | alquiler 1,250 · préstamo 1,200 · cámara 420 · terapia 360 · mantenimiento 340 · IA 240 |
+| Disponible | S/ 2,890 | |
+| **3. Se aparta para vivir** | **S/ 1,200** | comida, transporte, servicios, celular — hasta el próximo sueldo |
+| **4. A la tarjeta** | **S/ 1,690** | |
+
+### La cuota de agosto no es 3,000, es 1,690
+
+Los 3,000 que tenías previstos son **S/ 1,310 más de lo que aguanta el mes**. Y pagarlos no
+acelera nada:
+
+| Ruta | Saldo al 31/08 |
+|---|---:|
+| Pagar 3,000 y vivir con la tarjeta | S/ 8,709 |
+| Pagar 1,690 y vivir en efectivo | S/ 8,709 |
+
+**Idéntico.** Con una diferencia que juega en contra de la primera: esos 1,310 serían consumo
+nuevo sobre un saldo vigente, así que pierden el periodo de gracia y devengan interés desde el
+día uno. Además queman línea disponible, que es lo único que te queda como amortiguador con
+S/ 700 de colchón.
+
+Pagar 1,690 no es rendirse: es pagar el número correcto.
+
+⚠️ **Verifica el pago mínimo de tu estado de cuenta.** Si fuera mayor a 1,690, ese es el piso
+y hay que recortar por otro lado — pero en un saldo de 10,000 el mínimo suele estar bastante
+por debajo.
+
+### Y desde setiembre se endereza solo
+
+El préstamo muere con este pago. Desde setiembre esos 1,200 dejan de salir y la cuota sube
+sola a 2,890 sin que tengas que apretarte más:
+
+| Cierre de | Cuota | Saldo tarjeta |
+|---|---:|---:|
+| Agosto | S/ 1,690 | S/ 8,709 |
+| Setiembre | S/ 2,890 | S/ 6,167 |
+| Octubre | S/ 2,890 | S/ 3,523 |
+| Noviembre | S/ 2,890 | S/ 774 |
+| Diciembre | S/ 805 | **S/ 0** + S/ 8,585 de caja |
+
+Agosto es el mes apretado del año. No es el mes tipo.
+
+### Lo que hay que hacer el martes, en concreto
+
+1. **Separa los S/ 1,200 de vida el mismo día**, físicamente — otra cuenta, sobre, lo que sea.
+   Si quedan mezclados con el resto, la cuota se los come y terminas en la tarjeta.
+2. **Paga S/ 1,690 a la tarjeta**, no 3,000.
+3. **Anota cada gasto de esos 1,200** desde el martes. Es el mes de medir: la reserva de 1,200
+   es un supuesto mío, no un dato tuyo. Si al llegar setiembre te sobró o te faltó, ahí sale
+   el número real y recalibramos todo.
+4. **No toques los S/ 700 de Caja Arequipa.** Con este reparto no hacen falta, y son los ocho
+   días de colchón que te separan de volver a la tarjeta.
+
 ## 🩺 Diagnóstico vigente y plan a diciembre
 
 *Corrido el 2026-08-22. Actualizado con el adelanto y la cámara confirmados: las dos
@@ -138,13 +205,15 @@ hasta entonces no se toca.
 
 ## 1. Cómo cierra agosto
 
+*Actualizado el 2026-08-22 con la cuota corregida a 1,690 y la reserva de vida registrada.*
+
 | | Monto | Nota |
 |---|---:|---|
 | Ingresos | **S/ 6,700** | Sueldo 6,500 + cochera 200 |
 | Gastos fijos | **S/ 2,610** | Alquiler, mantenimiento, cámara, terapia, IA |
-| Gastos variables | **S/ 0** | ⚠️ No hay ninguno registrado — ver §5 |
-| Servicio de deuda | **S/ 4,200** | Cuota TC 3,000 + adelanto 1,200 |
-| **Balance del mes** | **S/ -110** | |
+| Gastos variables | **S/ 1,200** | ⚠️ Reserva estimada, sin desglosar — ver §6 |
+| Servicio de deuda | **S/ 2,890** | Cuota TC 1,690 + préstamo 1,200 |
+| **Balance del mes** | **S/ 0** | |
 
 ```
 python finanzas.py resumen --mes 2026-08
@@ -152,20 +221,17 @@ python finanzas.py resumen --mes 2026-08
 
 ### Lo que dice esta foto
 
-**El mes cierra en rojo por S/ 110 — y eso es antes de comer.** El presupuesto no
-registra alimentación, transporte, servicios (luz, agua, internet) ni celular. Lo
-que hoy aparece como un déficit chico es en realidad el piso de un déficit mayor.
+**Agosto cuadra exacto, en cero, y solo porque la cuota bajó a lo que aguanta el mes.** Con
+los 3,000 originales el mes cerraba en −1,310 y esa diferencia se pagaba con la misma tarjeta.
+Cero no es holgura: es no tener margen para nada imprevisto.
 
-**63% de los ingresos se va en servicio de deuda** (4,200 de 6,700). La referencia
-habitual de sostenibilidad está por debajo de 30%. Los gastos fijos, en cambio, están
-sanos: 39% de los ingresos, dentro de rango. El problema no es el tren de vida —
-es la deuda.
+**43% de los ingresos se va en servicio de deuda** (2,890 de 6,700). La referencia de
+sostenibilidad está debajo de 30%, pero es un pico de un solo mes: el préstamo de 1,200 muere
+con este pago. Los gastos fijos están sanos en 39%.
 
-**La cuota de 3,000 está calibrada por encima de la capacidad de pago.** Descontando
-fijos y el adelanto, quedan S/ 2,890 para la tarjeta. La cuota es 3,000. Faltan 110,
-más todo lo que cuesten los huecos del §6.
-
----
+**El número frágil de esta foto es la reserva de 1,200**, que es un supuesto mío y no un dato
+tuyo. Si vivir te cuesta 1,600, el mes cierra en −400 y la cuota real era 1,290. Por eso
+setiembre es el mes de medir.
 
 ## 2. Deuda
 
@@ -469,8 +535,12 @@ Se registran para poder corregirlos, no porque estén verificados:
   (2026-08-22):** Fujifilm X-T30 III comprada directo a un amigo por S/ 3,000 sin intereses,
   en cuotas de 420. **No pasa por la tarjeta**, así que no hay doble conteo.
 - **"IA -240"** se interpreta como suscripciones mensuales de herramientas.
-- **El saldo TC de 10,000** se asume anterior al pago de agosto; el saldo de cierre
-  proyectado (7,000) asume cero consumo nuevo en el mes.
+- **El saldo TC de 10,000** se asume anterior al pago de agosto. El saldo de cierre
+  proyectado pasa a **S/ 8,709** con la cuota corregida de 1,690 y cero consumo nuevo.
+- **La reserva de vida de S/ 1,200/mes es un supuesto**, no un dato medido. Es el número que
+  hay que confirmar en setiembre; todo el plan se recalibra con él.
+- **El sueldo entra el martes 25/08** y cubre hasta el siguiente pago (≈25/09), así que la
+  reserva de vida es de un mes completo, no de los días que restan de agosto.
 - **Tipo de cambio S/ 3.75 por USD**, asumido. Los US$ 600 valen S/ 2,250 a esa tasa; el
   tipo de cambio real del día está en el BCRP y se pasa con `--tc`.
 - **Los S/ 790 de Pokémon TCG** son valuación de mercado, no precio de venta. Los
@@ -489,6 +559,19 @@ Se registran para poder corregirlos, no porque estén verificados:
 
 Una entrada por mes, al cerrar. Formato: qué pasó, qué cambió respecto al mes anterior,
 qué decisión se tomó.
+
+### 2026-08 (g) — Plan del día de pago
+
+El sueldo de agosto entra el martes 25 y de ahí salen el préstamo (el adelanto de 1,200, ya
+desembolsado y gastado) más todo lo listado al inicio. Reparto: entran 6,700, sale sí o sí
+3,810, se apartan 1,200 para vivir, y **quedan 1,690 para la tarjeta — no 3,000**.
+
+Verificado que las dos rutas dan el mismo saldo al 31/08 (S/ 8,709): pagar 3,000 y vivir con
+la tarjeta, o pagar 1,690 y vivir en efectivo. La segunda es estrictamente mejor porque el
+consumo nuevo sobre saldo vigente pierde el periodo de gracia.
+
+Nuevo comando `reparto`: dado el mes y la reserva de vida, imprime el orden de asignación del
+sueldo y avisa cuando la cuota registrada excede lo que aguanta el mes.
 
 ### 2026-08 (f) — Se cierran el adelanto y la cámara
 

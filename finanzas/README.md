@@ -26,6 +26,9 @@ python finanzas.py deuda --saldo 10000 --cuota 3000 --tcea 0 40 60 90
 # ...y si el déficit se sigue cargando a la tarjeta
 python finanzas.py deuda --saldo 10000 --cuota 3000 --tcea 60 --consumo-nuevo 1610
 
+# Cómo repartir el sueldo el día de pago
+python finanzas.py reparto --mes 2026-08 --reserva 1200
+
 # Activos, pasivos, patrimonio neto y tasa valla
 python finanzas.py patrimonio --tcea 60 --colchon 700
 
@@ -72,7 +75,10 @@ mes,concepto,categoria,tipo,monto,estado,nota
   "pagar deuda", que es la distinción que manda todo el análisis.
 - **`estado`** ∈ `confirmado` · `estimado`. Los estimados se marcan con `~` en el
   resumen para no confundir un dato con una suposición.
-- **`categoria`** tiene un valor **reservado: `tarjeta_credito`**, que marca cuál de los pagos
+- **`categoria`** tiene dos valores **reservados**. `reserva_vida` marca una bolsa estimada
+  para el gasto de vida mientras las categorías base no estén medidas: cuadra el balance sin
+  fingir que el dato existe, y el resumen sigue avisando que falta el desglose. Y
+  `tarjeta_credito` que marca cuál de los pagos
   de deuda es la cuota de la tarjeta. Sin esa marca, `proyeccion` no puede separar lo que
   amortiza la tarjeta de lo que no (adelantos, cuotas sin intereses) y proyectar con una cuota
   distinta a la registrada da resultados falsos. El script avisa si falta.

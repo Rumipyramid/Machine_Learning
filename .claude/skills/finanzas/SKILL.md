@@ -30,6 +30,7 @@ desde el chat — el mes cerrado manda.
 | Pide | Haz |
 |---|---|
 | "cómo voy", "cómo cierra el mes" | `python finanzas.py resumen --mes AAAA-MM` |
+| "me pagan el martes", "cuánto abono", "cómo reparto el sueldo" | `python finanzas.py reparto --mes AAAA-MM --reserva N` |
 | Datos nuevos del mes (sueldo, gastos, cuotas) | Agrega filas al CSV del mes, corre `resumen`, actualiza `estado.md` |
 | "cuándo salgo de la deuda", "cuánto me cuesta" | `python finanzas.py deuda --saldo N --cuota N --tcea ...` |
 | "y si sigo así" | `python finanzas.py proyeccion --mes AAAA-MM --saldo N --cuota N --variables N` |
@@ -58,37 +59,41 @@ desde el chat — el mes cerrado manda.
 5. **La cuota de la tarjeta se marca con la categoría reservada `tarjeta_credito`** en el CSV
    del mes. Sin esa marca, `proyeccion` no distingue lo que amortiza la tarjeta de lo que no,
    y cualquier `--cuota` distinta de la registrada da números falsos.
-6. **La cuota correcta es la sostenible**, no la más alta posible:
+6. **El día de pago se reparte en orden: no negociable → reserva de vida → tarjeta.** Nunca al
+   revés. Fijar primero la cuota y vivir con lo que sobre es exactamente cómo se termina
+   financiando la comida con la tarjeta. Si el gasto de vida no está medido, se registra como
+   `reserva_vida` con `estado=estimado`: cuadra el mes sin fingir que el dato existe.
+7. **La cuota correcta es la sostenible**, no la más alta posible:
    `cuota = ingresos − fijos − variables − otros pagos de deuda`. Pagar más solo hace que la
    diferencia rebote a la tarjeta el mismo mes (resultado final idéntico, con la ilusión de
    avanzar); pagar menos acumula efectivo al 0% mientras se debe al 60%.
-7. **Una deuda saldada se marca `cancelado` en `deuda.csv`, no se borra.** Deja de sumar al
+8. **Una deuda saldada se marca `cancelado` en `deuda.csv`, no se borra.** Deja de sumar al
    patrimonio neto y al orden de ataque, pero la fila queda como historial.
-8. **Ninguna tasa se inventa.** La TCEA sale del estado de cuenta del usuario. Mientras
+9. **Ninguna tasa se inventa.** La TCEA sale del estado de cuenta del usuario. Mientras
    no esté, se muestran escenarios (`--tcea 0 40 60 90`) etiquetados como rango de
    referencia, nunca como su tasa.
-9. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
+10. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
    suma ese déficit a la deuda — es lo que pasa en la práctica. Proyectar con el
    déficit "cubierto por arte de magia" da un plan que no se cumple.
-10. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
+11. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
    utilidades son eventos de un mes. Mezclarlos con la estructura mensual infla el promedio y
    simula una holgura que no existe.
-11. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
+12. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
    (`--extraordinario deuda` y `--extraordinario caja`) y compara. Si la diferencia es chica,
    dilo: significa que la decisión no es esa, y seguir tratándola como importante distrae del
    número que sí manda.
-12. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
+13. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
    (`--saldo` con y sin el activo aplicado) y resta lo que el usuario deja de tener. La tasa
    valla sola exagera el beneficio: si la deuda muere en pocos meses, el interés evitado
    corre solo esos meses. Y contrasta siempre contra el **runway** — cuántos días de gasto
    fijo cubre lo líquido. Quedarse sin colchón para ahorrar intereses reconstruye la deuda.
-13. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
+14. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
    un diagnóstico. Casi siempre pesa más que los extraordinarios, y sin eso el consejo apunta
    al lugar equivocado.
-14. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
+15. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
    dato lo confirmaría.
-15. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
-16. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
+16. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
+17. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
    montos y saldos.
 
 ## Tono

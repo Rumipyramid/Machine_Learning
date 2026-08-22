@@ -42,6 +42,11 @@ CATEGORIAS_BASE = ("alimentacion", "transporte", "servicios", "comunicaciones")
 # proyectar con una cuota distinta de la registrada.
 CATEGORIA_TC = "tarjeta_credito"
 
+# Categoria reservada: bolsa provisional para el gasto de vida mientras las
+# categorias base no esten medidas. Cubre el hueco en el balance sin fingir que
+# el dato existe — el resumen sigue avisando que falta el desglose.
+CATEGORIA_RESERVA = "reserva_vida"
+
 
 # ---------------------------------------------------------------- utilidades
 
@@ -192,6 +197,7 @@ def calcular_resumen(mes: str) -> dict:
 
     categorias_presentes = {f["categoria"] for f in filas}
     huecos = [c for c in CATEGORIAS_BASE if c not in categorias_presentes]
+    reserva = -sum(f["monto"] for f in filas if f["categoria"] == CATEGORIA_RESERVA)
     estimados = [f for f in filas if (f.get("estado") or "").strip() == "estimado"]
 
     return {
@@ -209,6 +215,7 @@ def calcular_resumen(mes: str) -> dict:
         "ratio_deuda_ingreso": (deuda / ingresos) if ingresos else 0.0,
         "ratio_fijos_ingreso": (fijos / ingresos) if ingresos else 0.0,
         "huecos": huecos,
+        "reserva_vida": reserva,
         "estimados": [f["concepto"] for f in estimados],
     }
 
@@ -248,7 +255,14 @@ def imprimir_resumen(r: dict) -> None:
 
     if r["huecos"] or r["estimados"]:
         print(f"\n{'!' * 62}")
-        if r["huecos"]:
+        if r["huecos"] and r["reserva_vida"]:
+            print(f"GASTO DE VIDA SIN DESGLOSAR — cubierto provisionalmente con una")
+            print(f"reserva estimada de {soles(r['reserva_vida'])}. Sin medir:")
+            for c in r["huecos"]:
+                print(f"  - {c}")
+            print("  El balance cuadra, pero con un supuesto. Mide el gasto real y")
+            print("  reemplaza la reserva por las categorias con su monto.")
+        elif r["huecos"]:
             print("HUECOS DEL PRESUPUESTO — categorias sin ningun movimiento:")
             for c in r["huecos"]:
                 print(f"  - {c}")
@@ -430,6 +444,64 @@ def imprimir_proyeccion(filas: list[dict], r: dict, tcea: float, var: float,
     print()
 
 
+# ------------------------------------------------------------------ reparto
+
+def imprimir_reparto(r: dict, reserva: float) -> None:
+    """
+    Reparto del sueldo el dia de pago: que sale si o si, cuanto se aparta para
+    vivir, y recien con lo que queda se define la cuota de la tarjeta.
+
+    El orden importa. Definir la cuota primero y vivir con lo que sobre es como
+    se termina financiando la comida con la tarjeta.
+    """
+    ingresos = [f for f in r["movimientos"] if f["tipo"] == "ingreso"]
+    fijos = [f for f in r["movimientos"] if f["tipo"] == "fijo"]
+    otros_deuda = [f for f in r["movimientos"]
+                   if f["tipo"] == "deuda" and f["categoria"] != CATEGORIA_TC]
+    cuota_reg = r["cuota_tc"]
+
+    print(f"\n{'=' * 64}")
+    print(f"  REPARTO DEL SUELDO — {r['mes']}")
+    print(f"{'=' * 64}\n")
+
+    print("1. ENTRA")
+    for f in ingresos:
+        print(f"     {f['concepto']:<30} {soles(f['monto'], 10)}")
+    print(f"     {'':<30} {soles(r['ingresos'], 10)}\n")
+
+    print("2. SALE SI O SI (no negociable)")
+    for f in sorted(fijos + otros_deuda, key=lambda x: x["monto"]):
+        print(f"     {f['concepto']:<30} {soles(-f['monto'], 10)}")
+    no_negociable = r["fijos"] + r["otros_deuda"]
+    print(f"     {'':<30} {soles(no_negociable, 10)}\n")
+
+    disponible = r["ingresos"] - no_negociable
+    print(f"   Disponible                       {soles(disponible, 10)}\n")
+
+    print(f"3. SE APARTA PARA VIVIR           {soles(reserva, 10)}")
+    print("   (comida, transporte, servicios, celular — hasta el proximo sueldo)\n")
+
+    cuota = disponible - reserva
+    print(f"{'-' * 64}")
+    print(f"  4. A LA TARJETA                  {soles(cuota, 10)}")
+    print(f"{'-' * 64}\n")
+
+    if cuota < 0:
+        print(f"  ALERTA: no alcanza. Faltan {soles(-cuota)} solo para cubrir lo")
+        print("  no negociable mas la reserva de vida. Revisa la reserva o busca")
+        print("  de donde sale la diferencia — pero no de la tarjeta.\n")
+    else:
+        if cuota_reg and abs(cuota - cuota_reg) > 1:
+            dif = cuota_reg - cuota
+            print(f"  La cuota registrada es {soles(cuota_reg)}: {soles(abs(dif))} "
+                  f"{'mas' if dif > 0 else 'menos'} de lo que")
+            print(f"  aguanta el mes. Pagar de mas no acelera nada — esa diferencia")
+            print(f"  vuelve a la tarjeta como consumo y encima pierde el periodo")
+            print(f"  de gracia. Paga {soles(cuota)}.\n")
+        print("  Verifica el pago minimo de tu estado de cuenta: si es mayor que")
+        print("  este monto, ese es el piso y hay que recortar por otro lado.\n")
+
+
 # --------------------------------------------------------------- patrimonio
 
 ORDEN_LIQUIDEZ = ("inmediata", "dias", "baja")
@@ -545,6 +617,12 @@ def main() -> None:
                        help="Destino de CTS/gratificacion (default: deuda)")
     p_pro.add_argument("--json", action="store_true")
 
+    p_rep = sub.add_parser("reparto",
+                           help="Como repartir el sueldo el dia de pago")
+    p_rep.add_argument("--mes", required=True)
+    p_rep.add_argument("--reserva", type=float, required=True,
+                       help="Cuanto se aparta para vivir hasta el proximo sueldo")
+
     p_pat = sub.add_parser("patrimonio", help="Activos, pasivos y patrimonio neto")
     p_pat.add_argument("--tc", type=float, default=3.75,
                        help="Tipo de cambio USD->PEN (default 3.75; verificar en BCRP)")
@@ -569,6 +647,9 @@ def main() -> None:
             print(json.dumps(esc, ensure_ascii=False, indent=2))
         else:
             imprimir_deuda(a.saldo, a.cuota, esc, a.consumo_nuevo)
+
+    elif a.cmd == "reparto":
+        imprimir_reparto(calcular_resumen(a.mes), a.reserva)
 
     elif a.cmd == "patrimonio":
         imprimir_patrimonio(a.tc, a.tcea, a.colchon)

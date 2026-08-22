@@ -6,5 +6,6 @@ mes,concepto,categoria,tipo,monto,estado,nota
 2026-08,Camara,equipamiento,fijo,-420,confirmado,Cuota mensual — falta confirmar cuantas cuotas quedan
 2026-08,Terapia,salud,fijo,-360,confirmado,
 2026-08,Suscripciones IA,herramientas,fijo,-240,confirmado,
-2026-08,Cuota TC agosto,tarjeta_credito,deuda,-3000,confirmado,Pago a la deuda de tarjeta de credito
+2026-08,Cuota TC agosto,tarjeta_credito,deuda,-1690,confirmado,Cuota corregida: 1690 es lo que aguanta el mes tras apartar 1200 para vivir. Pagar los 3000 previstos habria mandado 1310 de consumo de vuelta a la tarjeta
 2026-08,Adelanto de sueldo,adelanto,deuda,-1200,confirmado,Adelanto UNICO de 1200 ya cobrado y repagado integro en agosto. No se repite: desde setiembre libera 1200/mes
+2026-08,Reserva de vida,reserva_vida,variable,-1200,estimado,PROVISIONAL. Suma estimada para comida/transporte/servicios/celular hasta el proximo sueldo. Se reemplaza por el gasto real medido desde el 25/08
