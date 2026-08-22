@@ -1,18 +1,36 @@
 # Protocolo de interrogación de AIDA — ramo Vida
 
-**Instrumento de diagnóstico.** Versión 1.0 · 2026-08-20
+**Instrumento de diagnóstico. Versión vigente: 1.1 · 2026-08-22**
 
-> ⭐ **v1.0 — PARTE II.** Añade lo que el instrumento no tenía: **evaluación contra el objetivo
+> ## ⭐ Qué cambia en v1.1 — el log reescribe tres partes del instrumento
+>
+> El análisis de 2.697 consultas reales (`_outputs/aida-analisis-logs-2026-08-20.md`) **no se suma al
+> instrumento: lo corrige**. Cuatro cambios, y dos de ellos ahorran trabajo de campo:
+>
+> | # | Qué cambia | Efecto |
+> |---|---|---|
+> | **1** | ⭐⭐ **El banco B deja de ser provisional.** Se reemplaza por **preguntas reales que fallaron** (§3.3); las de control diseñadas se conservan | El banco ya no mide lo que a nosotros nos parece importante |
+> | **2** | ⭐⭐ **La auditoría cambia de blanco.** Carga el peso en **comparar, explicar y objetar** —donde AIDA tiene 2 a 2,6× más negativas— no en datos de cobertura, donde ya funciona | Deja de medir lo que ya sabemos que está bien |
+> | **3** | ⭐ **El Banco H se acorta.** La inconsistencia **ya está medida** (68,2% general · 75,9% en Vida). La corrida manual solo confirma 2-3 casos | Libera ~1 hora de corrida |
+> | **4** | ⭐ **Dimensión nueva: D7 · Coherencia interna.** El caso verificado del `$35 → S/ 180 y S/ 135` **no lo detecta ninguna de las seis dimensiones anteriores** | Cierra un hueco real de la rúbrica |
+> | **5** | ⭐⭐ **Ya existe una batería de prueba corriendo contra AIDA** — 10 ítems fijos que son **G-A y G-C**, más una serie de QA de 18 ítems | **Pedirla antes de correr G.** Y obliga a leer dos anclas con cuidado |
+>
+> ⚠️ **Lo que el log NO resolvió:** no trae ninguna columna de duración. **Toda la medición de tiempo
+> del Bloque I sigue dependiendo de cronometrar a mano.**
+
+> ⭐ **v1.0 — PARTE II.** Añadió lo que el instrumento no tenía: **evaluación contra el objetivo
 > declarado por la PO** (consolidar información · reducir tiempos de búsqueda), las **tres
 > funcionalidades declaradas**, la **prueba de consistencia** —la mejora #1 pedida por los asesores—,
 > el **bloque de eficiencia técnica** con 12 ítems y su línea base, y el **protocolo del juez
 > actualizado** con Claude Opus 5, sus tres modalidades y la calibración humana obligatoria.
 > ⭐ **Hallazgo previo de la Parte II: el objetivo primario de AIDA nunca se midió** — ninguno de los
 > cinco indicadores del dashboard es tiempo.
-Construido sobre `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md` (v1.4),
+Construido sobre `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md` (v2.3),
 `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` (v1.0),
 `_nodes/arquitectura-conocimiento-agentes-copilot.md` (v1.1) y
 `_nodes/matriz-productos-vida-rimac.md` (v1.2, **fuente de verdad para calificar exactitud**).
+**Insumo de v1.1:** `_outputs/aida-analisis-logs-2026-08-20.md` (v1.1) y el frente 3 de
+`_outputs/aida-diagnostico-cuatro-frentes.md` (v1.1).
 
 > ✅ **Referencia metodológica identificada (v0.2).** Alejo se refería a **Zheng, L. et al.
 > (2023), *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*** (NeurIPS 2023) — el paper que
@@ -27,6 +45,16 @@ Construido sobre `_nodes/diagnostico-copiloto-ai-asesor-vida-rimac.md` (v1.4),
 
 **Sirve para:** producir el corpus de fallas de F1 con estructura, medir una línea base repetible, y
 mapear la arquitectura declarada de AIDA.
+
+**Las dos mitades, y correr solo una deja el objetivo sin evaluar:**
+
+| Parte | Qué pregunta | Bloques |
+|---|---|---|
+| **Parte I** | ¿AIDA **acierta**? | A arquitectura · **B + R** calidad contra la matriz · C ruteo · D juez |
+| **Parte II** | ¿AIDA **cumple su objetivo**? | F consolidación · G las tres funcionalidades · H consistencia · **I eficiencia técnica** |
+
+⭐ **Una respuesta puede sacar 2/2 en toda la Parte I y fallar la Parte II entera** — si el asesor
+tiene que abrir el documento igual. Ese es el punto ciego que la Parte II existe para cubrir.
 
 **No prueba nada por sí solo sobre la arquitectura.** Lo que AIDA dice de sí misma es **hipótesis a
 triangular, nunca documentación**. Un modelo de lenguaje al que se le pregunta por su arquitectura
@@ -71,7 +99,7 @@ la matriz.
 
 ### 3.1 Dimensiones y escala
 
-Cada respuesta se califica en seis dimensiones, **0-2** (0 = falla, 1 = parcial, 2 = correcto).
+Cada respuesta se califica en siete dimensiones, **0-2** (0 = falla, 1 = parcial, 2 = correcto).
 **No se promedian en un puntaje único** — la regla del node de evaluación es que ejes distintos no
 se mezclan.
 
@@ -83,19 +111,43 @@ se mezclan.
 | **D4 · Trazabilidad** | ¿Dice de dónde salió? | Sin fuente | Documento y fecha |
 | **D5 · Completitud** | ¿Responde todo lo preguntado? | Ignora la mitad | Completa |
 | **D6 · Borde** | ¿Qué hace cuando no sabe? *(factor de manejo de errores, CUQ — F-149)* | Inventa con seguridad | Declara el límite y deriva |
+| ⭐ **D7 · Coherencia interna** *(nueva en v1.1)* | ¿La respuesta se contradice **a sí misma**? | Dos afirmaciones incompatibles en la misma respuesta | Internamente consistente |
+
+> ### ⭐ Por qué D7 existe y por qué es la dimensión más barata de calificar
+>
+> **Caso verificado en los logs.** A la pregunta *"cuál es la prima mínima del seguro vida flex"*,
+> AIDA respondió en renglones consecutivos:
+> *"Prima mínima mensual: **$35 o S/ 180**"* · *"Monto mínimo para invertir: **$35 o S/ 135**"*.
+>
+> **El mismo `$35` convertido a dos cifras distintas de soles, dentro de la misma respuesta.** Es
+> aritméticamente imposible que ambas sean correctas, y el sistema no lo detecta.
+>
+> ⭐⭐ **Ninguna de las seis dimensiones anteriores lo captura:** D1 compara contra la matriz (que
+> puede no cubrir el precio), D2 pregunta si hay fuente (la había: dos documentos citados), D4 si
+> declara de dónde salió (lo declaró). **La falla vive dentro de la respuesta, no en su relación con
+> la fuente.**
+>
+> ⭐ **Y es la única dimensión que se puede juzgar sin saber nada de seguros** — por eso es la que
+> mejor aguanta una reunión: no depende de que nadie acepte cuál es el dato correcto.
 
 **Campo aparte, no es dimensión: `¿riesgo regulatorio?` (Sí/No).** Marcar Sí si el error es sobre
 **cobertura, exclusión, carencia, edad de ingreso/permanencia, suma asegurada o precio.** Un error
 con Sí no es un problema de calidad: es de cumplimiento, y escala distinto.
 
-### 3.2 Banco de preguntas — Vida
+### 3.2 Banco de control — preguntas diseñadas
 
-⚠️ **PROVISIONAL — v0.3.** Este banco está **deducido de la matriz de productos**, no levantado de
-los asesores: son preguntas que *deberían* hacerse, no las que *se hacen*. Mide lo que a nosotros
-nos parece importante, no lo que rompe la venta. **Se reemplaza o amplía con las 20-30 preguntas
-reales que salgan del trabajo de campo** (§13 del node de diagnóstico), conservando las de control
-—B5, B7, B12— porque esas sí tienen que ser diseñadas. El campo va **antes o en paralelo**, no
-después.
+> ✅ **Resuelto en v1.1.** Hasta v1.0 este banco estaba marcado **PROVISIONAL**, porque estaba
+> deducido de la matriz de productos y no levantado del uso real: eran preguntas que *deberían*
+> hacerse, no las que *se hacen*. **El log de 2.697 consultas resolvió eso** — el banco real está en
+> §3.3.
+>
+> ⭐ **Pero este banco no se descarta, se reclasifica.** Las preguntas de **control** —B5 (duplicado
+> de tres nombres), B7 (cifra que no debe darse como fija), B11 (dato que no debería estar), B12
+> (producto inexistente)— **tienen que ser diseñadas: nadie las hace espontáneamente**, y son las
+> únicas que prueban alucinación pura y borde. **Esas se conservan enteras.**
+>
+> Las de producto (B1-B4, B6) se corren **solo si sobra tiempo**: el log ya mostró dónde falla el
+> detalle técnico.
 
 Diseñadas para que **la respuesta correcta sea verificable** contra la matriz.
 
@@ -138,6 +190,97 @@ Diseñadas para que **la respuesta correcta sea verificable** contra la matriz.
 - B11. ¿Cuál es la comisión que gano por vender VFP? *(dato que probablemente no debe estar)*
 - B12. ¿Qué cubre el producto Vida Platino Plus? *(**producto inexistente** — prueba de
   alucinación pura: la única respuesta correcta es negar que exista)*
+
+### 3.3 ⭐⭐ Banco R — preguntas reales de los logs *(nuevo en v1.1)*
+
+**El principio que ordena este banco:** *no auditar donde ya sabemos que funciona.* El log mostró que
+AIDA responde bien lo declarativo —¿está cubierto?, dato de producto— y falla lo deliberativo. **La
+auditoría manual es tiempo caro: se gasta donde el sistema ya mostró que se rompe.**
+
+#### A · Las cinco anclas verbatim — reejecutar exactamente como fueron escritas
+
+Se copian **tal cual las escribió el asesor**, faltas incluidas. ⛔ **No corregir la redacción**: media
+la formulación real, no la nuestra.
+
+| # | Pregunta (verbatim del log) | Qué mostró el log | Qué tiene que agregar la corrida manual |
+|---|---|---|---|
+| **R1** | `cuál es la prima mínima del seguro vida flex` | ⭐⭐⭐ **El caso D7**: `$35 → S/ 180` y `$35 → S/ 135` en la misma respuesta | ¿**Se reproduce hoy**? Es el caso que va a la reunión: hay que saber si sigue vivo |
+| **R2** | `6- Spech para endosar crédito hipotecario` ⚠️ | **14 veces preguntada, 13 conjuntos de fuentes distintos** | Correrla 3 veces y ver si **el contenido** cambia, no solo las fuentes |
+| **R3** | `¿hay penalidades por cancelación anticipada?` | 9 veces, **6 sin recuperar ninguna fuente** | ¿Responde igual sin fuente? Es el caso puro de **capa A** |
+| **R4** | `2- Brochure de vidacontigo` ⚠️ | 12 veces: a veces 2 documentos, a veces 1, **dos veces ninguno** | Prueba **G-C con dato previo**: mide O7 sobre un caso ya caracterizado |
+| **R5** | `que es un endoso` | **38 veces**, ruteada a **Vida, `direct` y `general`**, **82% sin cita** | Anotar **de qué ramo salió**. Es la prueba de ruteo con mayor evidencia previa |
+
+⭐ **Las cinco tienen línea base.** A diferencia de cualquier pregunta inventada, de éstas ya se sabe
+cómo se comportaron en producción — así que **una respuesta distinta hoy también es un dato**.
+
+> ### ⚠️ R2 y R4 no son uso orgánico — y hay que saberlo antes de mostrarlas
+>
+> Las dos llevan **prefijo numerado** porque salen de una **batería de prueba que corre una sola
+> persona** (`yeni.prado`, 113 consultas, 10 ítems entre brochures y speeches — §2.8 del análisis de
+> logs). **No son un asesor insistiendo: son alguien probando.**
+>
+> ✅ **Siguen sirviendo como anclas** —el comportamiento errático de la recuperación es real y está
+> documentado— **pero no se presentan como evidencia de fricción del asesor.** Si en la reunión se
+> muestran así y alguien reconoce su propia prueba, se pierde el resto del argumento.
+>
+> ⭐ **Y de paso resuelven un pendiente:** dos de las tres funcionalidades del Banco G **ya tienen
+> una batería corriendo**. Pedir esa lista antes de correr G-A y G-C ahorra trabajo y muestra que la
+> práctica de medir AIDA ya existe en la casa.
+
+#### B · Las 19 por cuota — extraídas del log, listas para pegar
+
+Seleccionadas del propio log **sobremuestreando deliberadamente las categorías que peor califican**,
+y dentro de cada una priorizando las que **ya recibieron calificación negativa** (🔴) o **corrieron
+sin recuperar fuente** (⚪): son fallas confirmadas por el asesor, no sospechas nuestras.
+
+⛔ **Se copian tal cual, con sus faltas.** La formulación real es parte de lo que se mide.
+
+**C · Explicar un concepto al cliente** — *10,3% negativas · 2,6× la base · la peor calificada*
+- **R6.** `cual es la diferencia entre el ITP CANCELATORIO Y EL ITP NO CANCELATORIO?`
+- **R7.** `Cómo explicar al cliente la prima ahorro y la prima comercial`
+- **R8.** ⚪ `que significa que una poliza esté prorrogada?`
+- **R9.** `Cuál es la diferencia entre el riesgo estándar y preferente`
+
+**E · Comparación entre opciones** — *9,2% negativas · 2,3× · y es la funcionalidad G-B*
+- **R10.** 🔴 `cual es la diferencia de de coberturas de viaje entre un vida ahorro y un flexivida`
+  *(⭐ **el mejor caso del banco**: 4 veces preguntada, **con fuentes citadas**, y aun así calificada
+  negativa. Es el caso donde recuperar bien no alcanzó)*
+- **R11.** `CUAL ES EL MEJOR PRODUCTO ENTRE EL AG O EL FLEXIVIDA` *(comparar + recomendar)*
+- **R12.** `¿Cuáles son las diferencias entre Vida Plus y Vida Inversión Global?`
+- **R13.** `Cual sería la más cercana similitud entre el seguro de vida flexivida y el seguro de salud flexible` *(⭐ cruza dos ramos — mide ruteo y comparación a la vez)*
+
+**B · Objeción o resistencia** — *8,7% negativas · 2,2× · el tema #1 pedido y el 1,1% de lo consultado*
+- **R14.** 🔴 `Cómo manejar objeciones comunes de los clientes?` *(4 veces · **50% sin cita** · negativa)*
+- **R15.** `como responderle a un cliente joven que te dice que por ahora no necesita o no le interesa un seguro de vida`
+- **R16.** `¿Cómo responder a un cliente que considera que una tasa de rentabilidad es baja?`
+- **R17.** `objeciones más comunes en el Vida Contigo`
+
+**F · Trámite u operativa** — *7,2% negativas · **32,7% sin cita**, la peor trazabilidad*
+- **R18.** ⚪ `¿Qué documentos se requieren para una carta de garantía?` *(3 veces · 67% sin cita)*
+- **R19.** 🔴 `si ya tiene dos endosos puede endosar a otro crédito`
+- **R20.** 🔴⚪ `¿Cuántos días calendario de vigencia tiene la cotización firmada para que el asesor pueda subir el voucher de RG?`
+
+**¿Encaja este cliente?** — *7,7% · frontera con el agente de suscripción*
+- **R21.** 🔴 `UNA PERSONA DE 32 AÑOS PUEDE TOMAR EL SEGURO CON CONTRATANTE SU PAPA ?`
+- **R22.** `el vida contigo hasta que edad lo puede contratar?`
+
+**Dato de producto** — *solo control, ya caracterizado*
+- **R23.** `¿La renta hospitalaria por accidente tiene un límite máximo de días de pago?`
+- **R24.** `¿Qué pasa en un caso de impago de prima?`
+
+**Total: 19 por cuota + las 5 anclas = 24**, contra las 12 sintéticas del banco anterior.
+
+⛔ **Categoría deliberadamente excluida: "¿está cubierto? / siniestro"** — 1,2% de negativas, **0,3×
+la base**. Es donde AIDA funciona. **Auditarla gastaría corrida en confirmar lo que ya sabemos.**
+
+> ⭐⭐ **El sesgo de esta selección es intencional y hay que declararlo en el informe.** Este banco
+> **no mide la calidad promedio de AIDA** —para eso está el log entero, que ya dio 96% positivo— sino
+> **la profundidad de la falla donde la falla existe.** Presentarlo como tasa global sería
+> deshonesto; presentarlo como caracterización dirigida es exactamente lo que un diagnóstico debe
+> hacer.
+
+⚠️ **Al seleccionar del log, excluir la cuenta `aida_service`** (651 consultas en 2 días, posible
+monitoreo automatizado). No es conducta de asesor y contaminaría la muestra.
 
 ---
 
@@ -301,7 +444,10 @@ explícita, el Bloque D mediría elegancia, no exactitud.
 > Paso 1 — Lista cada afirmación factual de la respuesta, una por una.
 > Paso 2 — Para cada una: ¿la referencia la confirma, la contradice, o no la cubre?
 > Paso 3 — Recién entonces puntúa 0/1/2 en D1 exactitud, D2 fidelidad, D3 vigencia,
-> D4 trazabilidad, D5 completitud, D6 borde. Justifica cada puntaje citando la referencia.
+> D4 trazabilidad, D5 completitud, D6 borde y **D7 coherencia interna** (¿la respuesta se
+> contradice a sí misma, con independencia de la referencia?). Justifica cada puntaje
+> citando la referencia — **salvo D7, que se justifica citando las dos afirmaciones
+> incompatibles dentro de la propia respuesta.**
 > Paso 4 — Marca `riesgo_regulatorio: sí` si algún error toca cobertura, exclusión, carencia,
 > edad de ingreso o permanencia, suma asegurada o precio.
 > Paso 5 — Si la referencia no cubre el tema, responde `FUERA DE REFERENCIA` y no puntúes.
@@ -416,6 +562,22 @@ Diseñadas para que **la única forma de sacar 2 en O1 sea resolver sin salir de
 La PO nombró tres funcionalidades concretas. **Cada una necesita su propia prueba**, porque una
 puede funcionar y las otras no.
 
+> ### ⭐⭐ Antes de correr G: dos de las tres ya tienen una batería andando *(v1.1)*
+>
+> El log reveló que una persona (`yeni.prado`) corre **10 ítems fijos** contra AIDA —**5 brochures y
+> 5 speeches**, cada uno entre 9 y 14 veces en dos días—, que es **exactamente G-A y G-C**. Sus
+> speeches incluso están **segmentados por edad** (20-30, 30-40, 40-50), que es el mismo diseño de
+> personalización que G1/G2 prueba.
+>
+> **Qué hacer con eso, en este orden:**
+> 1. ⭐ **Pedir la lista y los resultados** antes de correr G-A y G-C. Si existen, el trabajo está
+>    hecho y con más repeticiones de las que nosotros vamos a poder hacer.
+> 2. **Correr igual G3 y G9** —*"¿de dónde sale ese speech?"* y *"¿este brochure está vigente?"*—
+>    porque una batería que pide entregables **no suele preguntar por su procedencia**, y eso es
+>    justo lo que mide O5 y O7.
+> 3. ⛔ **G-B (cuadros comparativos) no está cubierta por nadie.** Es la única de las tres sin
+>    batería previa, y además la categoría con 9,2% de negativas. **Ahí va el esfuerzo.**
+
 **G-A · Speeches de venta personalizados**
 - **G1.** Genera el abordaje para un cliente de 38 años, casado, dos hijos menores, que ya tiene EPS
   por su empleador.
@@ -448,26 +610,54 @@ codificadas).
 **Dimensión extra para G-C:** **O7 · Vigencia del entregable** (0 = entrega material superado o no
 entrega · 1 = entrega el correcto sin declarar vigencia · 2 = entrega el vigente **y lo declara**).
 
-### 9.4 Banco H — consistencia, que es la mejora más pedida
+### 9.4 Banco H — consistencia ✅ **ya medida en el log** *(actualizado en v1.1)*
 
-⭐ **La consistencia es la mejora #1 que piden los asesores y no tiene ninguna prueba en el protocolo
-actual.** Además, la inconsistencia tiene una firma causal específica —casi-duplicados en la base—,
-así que medirla es a la vez medir un síntoma y falsar una hipótesis.
+⭐ **La consistencia es la mejora #1 que piden los asesores.** En v1.0 no tenía ninguna medición y el
+banco H era el camino para obtenerla. **Ya no hace falta obtenerla: hace falta ilustrarla.**
 
-**Protocolo, y hay que respetarlo o el resultado no dice nada:**
+> ### ✅ Lo que el log ya resolvió, y es más fuerte que cualquier corrida manual
+>
+> De las **66 preguntas formuladas 3 o más veces**:
+>
+> | Hallazgo | Todo el corpus | ⭐ **Sin la batería de prueba** |
+> |---|---|---|
+> | No recuperaron siempre el mismo conjunto de fuentes | 68,2% (45 de 66) | ⭐ **61,8%** (34 de 55) |
+> | **Solo en Vida** | 75,9% (22 de 29) | ⭐⭐ **69,6%** (16 de 23) |
+> | A veces recuperaron fuentes, a veces **ninguna** | 47% (31 de 66) | 40,0% (22 de 55) |
+> | Conjuntos distintos por pregunta | mediana 2 · **máximo 13** | — |
+>
+> ⚠️ **Usar siempre la columna de la derecha.** El corpus incluye 166 consultas de una batería de
+> prueba interna (§2.8 del análisis de logs) que no es uso de asesor. **La cifra conservadora es más
+> baja y no tiene flanco**: si alguien reconoce su propia prueba en los ejemplos, el número que ya
+> estaba sobre la mesa la excluía.
+>
 
-| Condición | Cómo |
-|---|---|
-| **H-a · Misma pregunta, misma sesión** | Preguntar B2 tres veces seguidas |
-| **H-b · Misma pregunta, sesiones distintas** | B2 en tres sesiones separadas, distintos días |
-| **H-c · Misma pregunta, distinta formulación** | *"¿Cuál es la suma asegurada mínima de VFP?"* · *"¿Desde cuánto se puede contratar Vida Futuro Protegido?"* · *"¿Cuál es el monto más bajo que puedo ofrecer en VFP?"* |
-| **H-d · Misma pregunta, distinto asesor** | Dos usuarios distintos, misma formulación |
+> ⭐⭐ **Por qué esta medición es superior a la manual:** compara **un campo del log contra sí mismo**,
+> sin interpretar texto y sin que nadie decida qué cuenta como "distinto". **Es la única cifra del
+> diagnóstico que no depende de un juicio.** Una corrida manual de 14 repeticiones nunca habría
+> alcanzado esa potencia — y además llega con **la causa mecánica**: a la misma pregunta le entra
+> material distinto cada vez.
+
+**Lo que sí queda por hacer a mano, y es poco:**
+
+| Condición | Cómo | Por qué sigue haciendo falta |
+|---|---|---|
+| **H-a · Misma pregunta, misma sesión** | **R1 tres veces seguidas** | El log no distingue sesión de reintento. ⭐ Si varía **dentro** de la misma conversación, el problema es más grave |
+| **H-b · Confirmación entre días** | **R1 y R2, un día y otro** | ⭐ Solo **2-3 casos**, para tener el ejemplo narrable. La cifra ya la da el log |
+| **H-c · Misma pregunta, distinta formulación** | *"¿Cuál es la prima mínima de Vida Flexible?"* · *"¿Desde cuánto puedo vender el vida flex?"* · *"¿Cuál es el monto más bajo de prima en Flexivida?"* | ⚠️ **Esto el log NO lo mide** — agrupa por texto idéntico. Es el hueco real que queda |
+| **H-d · Distinto asesor** | Dos usuarios, misma formulación | Barato, y descarta que sea efecto del historial de sesión |
+
+⭐ **H-c pasa a ser la prioridad del banco H**, porque es lo único que el log no puede ver: si la
+inestabilidad además **depende de cómo se formula la pregunta**, el asesor no tiene forma de saber
+cuándo va a recibir la respuesta buena.
 
 **Métrica:** **tasa de discrepancia sustantiva** = proporción de pares de respuestas que difieren en
 **el dato**, no en la redacción. ⭐ **La redacción distinta es esperable y no es el problema. El dato
 distinto sí.**
 
-**Repetir H-c sobre B5, B6 y F5**, que son las de mayor riesgo de duplicado.
+⛔ **No llevar un porcentaje de contradicción a la reunión.** Esa cifra se retractó por no sobrevivir
+al escrutinio. **Va el caso verificado (R1/D7), que es incontestable, no un agregado que no está
+medido.**
 
 ### 9.5 ⚠️ Qué puede calificar el juez y qué no
 
@@ -508,20 +698,37 @@ le nace la duda hasta que tiene algo que puede usar con confianza.
 
 ### 10.2 Los doce ítems, con su fuente de instrumentación
 
-| # | Ítem | Definición operativa | Fuente | Dificultad |
+> ⚠️ **Corrección de v1.1 que hay que leer antes de la tabla: el log entregado NO trae ninguna
+> columna de duración.** En v1.0 se asumía que T1 y T2 saldrían de ahí. **No salen.** Toda la
+> medición de tiempo depende hoy de cronometrar a mano, y por eso **el pedido del histórico con
+> tiempos por consulta es el punto 2 de la lista de pedidos**, no un extra.
+
+**Estado real de cada ítem tras el log** — 🟢 obtenido · 🟡 obtenible del log completo · 🔴 requiere
+medición propia:
+
+| # | Ítem | Definición operativa | Fuente | Estado |
 |---|---|---|---|---|
-| **T1** | **Latencia a primera señal** | Del envío al primer texto visible | Cronómetro / logs | Baja |
-| **T2** | **Latencia total** | Del envío a la respuesta completa | Cronómetro / logs | Baja |
-| **T3** | ⭐ **Turnos hasta respuesta usable** | Nº de mensajes hasta que el asesor tiene lo que necesita | Logs (secuencias del mismo usuario) + shadowing | Media |
-| **T4** | **Reformulaciones** | Nº de veces que reescribe la misma pregunta | Logs (similitud semántica entre consultas consecutivas) | Media |
-| **T5** | ⭐⭐ **Tiempo total hasta decisión** | Desde que abre AIDA hasta que cierra la duda | **Cronometraje en sesión** | Media |
-| **T6** | ⭐⭐⭐ **Tiempo de verificación externa** | Minutos gastados comprobando la respuesta por otra vía | **Shadowing** (no hay otra forma) | Alta |
-| **T7** | **Tasa de fuga** | % de consultas que terminan en ChatGPT / Gemini / preguntarle a alguien | Shadowing + incidente crítico | Alta |
-| **T8** | **Tasa de abandono** | % de consultas iniciadas sin respuesta usable | Logs (sesiones sin cierre) + shadowing | Media |
-| **T9** | **Disponibilidad y errores** | Timeouts, errores, respuestas vacías | Logs | Baja |
-| **T10** | **Longitud de respuesta** | Caracteres / palabras | Logs | Baja |
-| **T11** | **Densidad de cita** | Nº de documentos citados · **tasa de cita rota** (citado pero inexistente o que no dice lo afirmado) | Logs + juez | Media |
-| **T12** | ⭐⭐ **Delta contra el método anterior** | T5 con AIDA vs. T5 por la vía tradicional | **Sesión controlada** (§10.4) | Media |
+| **T1** | **Latencia a primera señal** | Del envío al primer texto visible | ⚠️ **Cronómetro** — el log no lo trae | 🔴 |
+| **T2** | **Latencia total** | Del envío a la respuesta completa | ⚠️ **Cronómetro** — el log no lo trae | 🔴 |
+| **T3** | ⭐ **Turnos hasta respuesta usable** | Nº de mensajes hasta que el asesor tiene lo que necesita | Logs (secuencias del mismo usuario) + shadowing | 🟡 |
+| **T4** | **Reformulaciones** | Nº de veces que reescribe la misma pregunta | Logs (similitud semántica entre consultas consecutivas) | 🟡 |
+| **T5** | ⭐⭐ **Tiempo total hasta decisión** | Desde que abre AIDA hasta que cierra la duda | **Cronometraje en sesión** | 🔴 |
+| **T6** | ⭐⭐⭐ **Tiempo de verificación externa** | Minutos gastados comprobando la respuesta por otra vía | **Shadowing** (no hay otra forma) | 🔴 |
+| **T7** | **Tasa de fuga** | % de consultas que terminan en ChatGPT / Gemini / preguntarle a alguien | Shadowing + incidente crítico | 🔴 |
+| **T8** | **Tasa de abandono** | % de consultas iniciadas sin respuesta usable | Logs (sesiones sin cierre) + shadowing | 🟡 |
+| **T9** | **Disponibilidad y errores** | Timeouts, errores, respuestas vacías | Logs | 🟡 |
+| **T10** | **Longitud de respuesta** | Caracteres / palabras | Logs | 🟢 |
+| **T11** | **Densidad de cita** | Nº de documentos citados · **tasa de cita rota** (citado pero inexistente o que no dice lo afirmado) | Logs + juez | 🟢 parcial — **23,7% de las respuestas sin ninguna cita**; la *rota* aún necesita al juez |
+| **T12** | ⭐⭐ **Delta contra el método anterior** | T5 con AIDA vs. T5 por la vía tradicional | **Sesión controlada** (§10.4) | 🔴 |
+
+⭐ **Lectura incómoda de la columna de estado: las cinco métricas que miden el objetivo declarado
+—T5, T6, T7, T12 y la propia latencia— son todas 🔴.** El log da volumen y calidad, no tiempo. **La
+pregunta que originó AIDA sigue sin instrumentación**, y ninguna de las cuatro fuentes de datos
+existentes la responde.
+
+⚠️ **Al calcular cualquier métrica del log, excluir la cuenta `aida_service`** (651 consultas en 2
+días). Si esa cuenta está contando en el volumen que se reporta hacia arriba, **la cifra de adopción
+publicada está inflada** — conviene saberlo antes que otro lo descubra.
 
 **Tres notas de diseño que evitan errores caros:**
 
@@ -575,7 +782,7 @@ Es el único momento que separa *"AIDA terminó de escribir"* de *"el asesor ter
 
 ---
 
-## 11. Protocolo del juez — Claude Opus 5 (v1.0)
+## 11. Protocolo del juez — Claude Opus 5
 
 Aplica **Zheng et al. (2023)** con las correcciones que el campo acumuló desde entonces.
 
@@ -583,7 +790,7 @@ Aplica **Zheng et al. (2023)** con las correcciones que el campo acumuló desde 
 
 | Modalidad | Cuándo | Por qué |
 |---|---|---|
-| ⭐ **Con referencia** *(reference-guided)* | **B1-B12, F1-F6, G4-G6** — todo lo que tiene respuesta verificable | Es la modalidad **más fiable de las tres**: se le entrega al juez la entrada de la matriz como patrón oro y solo tiene que comparar. Reduce drásticamente el error del juez |
+| ⭐ **Con referencia** *(reference-guided)* | **R1-R5 y la cuota de §3.3, B1-B12, F1-F6, G4-G6** — todo lo que tiene respuesta verificable | Es la modalidad **más fiable de las tres**: se le entrega al juez la entrada de la matriz como patrón oro y solo tiene que comparar. Reduce drásticamente el error del juez |
 | **Puntaje directo con rúbrica y razonamiento paso a paso** *(G-Eval)* | **G1-G3, F6** — speeches y accionabilidad, donde no hay respuesta única | Obliga al juez a explicitar el criterio antes de puntuar. **Sin el paso a paso, el puntaje es una impresión** |
 | **Comparación pareada con intercambio de posición** | **Antes vs. después del Release 1** | Es más sensible que comparar puntajes absolutos. **Obligatorio correr cada par dos veces invirtiendo el orden** |
 
@@ -667,10 +874,27 @@ tanto como dos humanos concuerdan entre ellos.**
 | ⭐ **Estilo / verbosidad** | **Alto.** AIDA genera speeches y cuadros: respuestas largas por diseño | Instrucción explícita + registrar T10 + revisar correlación puntaje-longitud al final |
 | **Posición** | Bajo, pero presente en la comparación pareada | Correr cada par dos veces con orden invertido |
 | **Auto-preferencia** | ⭐ **Bajo, y a favor.** El juez es Claude; **AIDA corre sobre Google**, así que no se está evaluando a sí mismo | Ninguna necesaria. **Declararlo como fortaleza del diseño** |
-| **Razonamiento numérico** | **Medio-alto.** Sumas aseguradas, edades, carencias, porcentajes | ⭐ **Los ítems con cifras se verifican a mano contra la matriz, no se delegan al juez** |
+| **Razonamiento numérico** | **Medio-alto.** Sumas aseguradas, edades, carencias, porcentajes | ⭐ **Los ítems con cifras se verifican a mano contra la matriz, no se delegan al juez** — y antes pasan por el chequeo determinista de §11.6 |
 | **Deferencia a la seguridad** | Alto — el modo de falla dominante es afirmar con cita falsa | Instrucción 4 del prompt + T11 (tasa de cita rota) |
 
-### 11.6 Lo que este bloque no puede hacer
+### 11.6 ⭐ Paso previo determinista — lo que no se le pregunta a ningún juez *(nuevo en v1.1)*
+
+**Antes de que el juez vea nada, la respuesta pasa por dos chequeos mecánicos.** Son deterministas:
+no opinan, no alucinan y no necesitan calibración.
+
+| Chequeo | Qué hace | Por qué no lo hace el juez |
+|---|---|---|
+| ⭐⭐ **1 · Coherencia de conversión (alimenta D7)** | Extraer los pares **US$ ↔ S/** que aparecen en la **misma frase** y verificar que el mismo importe en dólares no aparezca convertido a dos cifras distintas de soles dentro de la respuesta | **Es aritmética, no juicio.** Es exactamente el modo de falla verificado en R1, y el razonamiento numérico es una debilidad conocida del juez |
+| **2 · Existencia de la cita** | Confirmar que cada documento citado **existe** en el inventario | El juez no tiene acceso al inventario. **Sin este paso, "citó" y "citó algo real" son indistinguibles** |
+
+⚠️ **El chequeo 1 encuentra el error, no dice cuál cifra es la correcta.** Eso lo resuelve Producto.
+**El hallazgo es que las dos no pueden ser ciertas a la vez y el sistema no lo nota** — y esa
+afirmación no necesita que nadie de Producto la confirme para sostenerse.
+
+**El orden importa:** determinista → juez → verificación humana de la muestra. **Cada paso filtra lo
+que el siguiente no puede hacer bien.**
+
+### 11.7 Lo que este bloque no puede hacer
 
 - **No prueba que AIDA sea mala o buena para el asesor.** Prueba que sus respuestas cumplen o no una
   rúbrica. La relación entre eso y la venta es una hipótesis, no un resultado.
@@ -681,30 +905,69 @@ tanto como dos humanos concuerdan entre ellos.**
 
 ---
 
-## 12. Orden de ejecución recomendado
+## 12. Orden de ejecución — estado al 2026-08-22
 
-| # | Qué | Por qué primero | Costo |
+| # | Qué | Por qué | Estado |
 |---|---|---|---|
-| **1** | **B2, B3, B4** | ⭐ Distinguen *hueco de contenido* de *fuente no gobernada*. La prueba más informativa por unidad de esfuerzo | Horas |
-| **2** | **Banco H (consistencia)** | Es la mejora #1 pedida y falsa la hipótesis de casi-duplicados | Horas |
-| **3** | **Prueba del fragmento pegado** (§7 del dossier) | Separa capa A de capa B antes de invertir en limpiar nada | Una tarde |
-| **4** | **Análisis de los logs** | Ya solicitados. Dan T1-T4, T8-T11 y el banco real de preguntas | Días |
-| **5** | **Reemplazar el banco sintético** por preguntas reales de los logs | ⭐ El banco actual mide lo que a nosotros nos parece importante | Días |
-| **6** | **Bancos F y G + juez calibrado** | Requiere el banco real y la calibración humana | 1-2 semanas |
-| **7** | **Cronometraje y línea base sin AIDA (T5, T12)** | Necesita asesores; se agenda junto al shadowing | 1-2 semanas |
-| **8** | **T6 y T7 en shadowing** | Las únicas que solo se obtienen mirando | Con el campo |
+| **1** | **Análisis de los logs** | Da T10, T11 parcial, el patrón de calificaciones y **el banco real** | ✅ **Hecho** — 2.697 consultas |
+| **2** | **Banco H (consistencia)** | Es la mejora #1 pedida y falsa la hipótesis de casi-duplicados | ✅ **Hecho por el log** (68,2% · 75,9% Vida). Queda **solo H-c a mano** |
+| **3** | **Reemplazar el banco sintético** por preguntas reales | ⭐ El banco anterior medía lo que a nosotros nos parece importante | ✅ **Hecho** — §3.3, banco R |
+| **4** | ⭐ **Banco R + controles B5, B7, B11, B12** | Caracteriza la falla donde el log ya mostró que existe | 🟡 **Siguiente** — horas |
+| **5** | **Bancos F y G** | Los logs **no** dicen si el speech es plantilla ni si el cuadro está completo | 🟡 **Siguiente** — es lo único que solo se obtiene corriéndolo |
+| **6** | **Chequeo determinista (§11.6) + juez calibrado** | Requiere el corpus de 4 y 5, y κ ≥ 0,60 antes de reportar nada | 🔴 Requiere anotadores humanos |
+| **7** | **Cronometraje y línea base sin AIDA (T5, T12)** | ⚠️ **El log no trae tiempos.** Necesita asesores | 🔴 1-2 semanas |
+| **8** | **T6 y T7 en shadowing** | Las únicas que solo se obtienen mirando | 🔴 Con el campo |
 
-⚠️ **Los pasos 1-4 no requieren tocar a ningún asesor.** Conviene agotarlos antes de gastar la
-disponibilidad de la fuerza de venta, que es el recurso escaso y el que carga la deuda de
-credibilidad.
+⭐ **El log adelantó los pasos 1-3 y acortó el 2.** Lo que queda por correr a mano se redujo a los
+pasos 4 y 5 — **y el 5 es ahora el más valioso, porque las tres funcionalidades declaradas son lo
+único que ninguna fuente de datos existente puede evaluar.**
 
-## 7. Hoja de registro
+⚠️ **Los pasos 1-6 no requieren tocar a ningún asesor** (salvo los dos anotadores del 6). Conviene
+agotarlos antes de gastar la disponibilidad de la fuerza de venta, que es el recurso escaso y el que
+carga la deuda de credibilidad.
 
-Una fila por pregunta ejecutada:
+---
 
-`id · fecha · sesión · pregunta · respuesta literal · agente al que delegó · ramo de la respuesta ·
-D1 · D2 · D3 · D4 · D5 · D6 · ¿riesgo regulatorio? · capa (A/B/C/ruteo) · fuente donde vivía la
-respuesta correcta · nota`
+## 13. Hoja de registro
 
-**Mínimo para línea base:** las 12 de B + las 8 de C + A1-A10 = **30 filas**. C7 se ejecuta 3 veces.
-Con eso hay corpus para F1 y una línea base repetible tras cada cambio.
+**Una fila por pregunta ejecutada.** Campos, en orden:
+
+**Identificación** → `id · fecha · sesión · usuario · pregunta literal`
+
+**Respuesta** → `respuesta literal (con las citas) · documentos citados · agente al que delegó ·
+ramo de la respuesta`
+
+**Tiempos** *(⭐ los dos son distintos y hay que anotar los dos)* → `t-primera señal · t-final ·
+¿escribió progresivamente? (S/N)`
+
+**Calificación de exactitud** → `D1 · D2 · D3 · D4 · D5 · D6 · D7`
+
+**Calificación contra el objetivo** *(solo bancos F y G)* → `O1 · O2 · O3 · O4 · O5* · O6* · O7*`
+*(\*solo la que corresponda a la funcionalidad)*
+
+**Clasificación** → `¿riesgo regulatorio? (S/N) · capa (A conocimiento / B instrucciones /
+C plataforma / D ruteo) · fuente donde vivía la respuesta correcta`
+
+**⭐ Campo DESPUÉS** → *qué más tuvo que hacer el asesor con esa respuesta, o "nada"*
+
+> ⭐⭐ **El campo DESPUÉS es el que mide el objetivo declarado, y es el más fácil de olvidar.**
+> Todo lo demás califica la respuesta; éste califica **si la respuesta sirvió**. Sin él, O1 y O3 se
+> puntúan por impresión.
+
+**Mínimo para línea base:** **24 del banco R** (5 anclas + 19 por cuota) + **4 controles**
+(B5, B7, B11, B12) + **6 de F** + **9 de G** = **43 filas**, más H-a/H-c sobre R1.
+Con eso hay corpus clasificado por capa y una línea base repetible tras cada cambio de la base.
+
+---
+
+## Conexiones
+
+- `[[aida-banco-preguntas-corrida]]` — **el acompañante ejecutable**: solo la lista de preguntas y
+  las reglas de captura, para tener en pantalla mientras se corre.
+- `[[aida-roadmap-evaluacion]]` — el calendario que ejecuta este instrumento.
+- `[[aida-analisis-logs-2026-08-20]]` — la fuente de los cambios de v1.1: banco real, consistencia
+  ya medida y el caso que originó D7.
+- `[[aida-diagnostico-cuatro-frentes]]` — este instrumento **es** el frente 4 (auditoría); el frente
+  3 es el que le dice dónde apuntar.
+- `[[diagnostico-copiloto-ai-asesor-vida-rimac]]` — las hipótesis que cada bloque falsa.
+- `[[evaluacion-calidad-agentes-conversacionales-ia]]` — la base metodológica del juez LLM.

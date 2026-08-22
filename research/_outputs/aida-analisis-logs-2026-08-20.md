@@ -1,6 +1,11 @@
 # Análisis de los logs de AIDA — primera corrida
 
-**Hallazgos sobre datos reales.** v1.1 · 2026-08-20
+**Hallazgos sobre datos reales.** v1.2 · 2026-08-22
+
+> **v1.2 — ⭐⭐ §2.8: ya existe una batería de prueba corriendo contra AIDA**, con autor y con dos
+> series distintas; una de ellas prueba exactamente dos de las tres funcionalidades del protocolo.
+> Y **prueba de robustez de §2.1**: el hallazgo de inestabilidad **aguanta** que se le quite esa
+> batería — 61,8% general y **69,6% en Vida**, que es la cifra que conviene llevar a la reunión.
 
 > **v1.1 — ⭐⭐⭐ §2.7: verificación manual de contradicción.** Se confirmó, caso por caso, que AIDA
 > entrega cifras incompatibles sobre el mismo producto, con un ejemplo que no requiere conocimiento
@@ -98,6 +103,28 @@ varía sin que nadie haya cambiado nada.
 
 **Y es exactamente la firma de casi-duplicados en la base** que el diagnóstico venía planteando como
 hipótesis principal. **Deja de ser hipótesis.**
+
+> ### ✅ Prueba de robustez — el hallazgo aguanta que le quiten el caso más llamativo *(2026-08-22)*
+>
+> ⚠️ **Los dos ejemplos más vistosos —el speech de endoso repetido 14 veces y el brochure de Vida
+> Contigo— no salen del uso orgánico: salen de una batería de prueba que corre una sola persona**
+> (ver §2.8). Eso obliga a preguntar si el 68,2% es un artefacto de esa batería.
+>
+> **No lo es.** Recalculando con la misma medición, excluyendo por completo las consultas con
+> prefijo numerado:
+>
+> | Corte | Preguntas 3+ veces | Inestables | Solo Vida |
+> |---|---|---|---|
+> | **Todo (como se reportó)** | 66 | **68,2%** | **75,9%** |
+> | ⭐ **Sin la batería numerada** | 55 | **61,8%** | ⭐ **69,6%** |
+> | Sin el usuario de la serie con guion | 56 | 62,5% | 69,6% |
+>
+> ⭐⭐ **Siete de cada diez preguntas de Vida repetidas por asesores reales no recuperan siempre las
+> mismas fuentes.** El hallazgo baja unos puntos y no cambia de naturaleza.
+>
+> ⚠️ **Para la reunión conviene llevar la cifra sin la batería (61,8% · 69,6% en Vida)**, no la
+> completa. Es más baja y **no tiene ningún flanco**: si alguien descubre después que dos de los
+> ejemplos venían de una prueba interna, la cifra conservadora ya estaba puesta sobre la mesa.
 
 ### 2.2 ⭐⭐⭐ La base tiene varios documentos compitiendo por el mismo producto
 
@@ -263,6 +290,43 @@ la que la medición del 81% se retiró y por la que ésta se hizo a mano.
 - ⛔ Cuál de las dos cifras es la correcta. **Eso lo dice Producto, no el diagnóstico.**
 - ⛔ Que sea intencional o negligencia de alguien. **Es un efecto de tener varios documentos por
   producto**, que es un problema de gobierno, no de personas.
+
+---
+
+## 2.8 ⭐⭐ Alguien ya está corriendo una batería de prueba contra AIDA *(hallazgo 2026-08-22)*
+
+**No lo sabíamos, y cambia el plan de trabajo.** El 6,2% del volumen (166 consultas) llega con
+**prefijo numerado** — no es la forma en que un asesor escribe una duda. Son **dos series
+distintas**, y ninguna es uso real:
+
+| Serie | Consultas | Usuarios | Ítems | Qué prueba | Sin cita |
+|---|---|---|---|---|---|
+| ⭐ **`N-` (guion)** | 113 | **1** — `yeni.prado` | **10**: 5 brochures + 5 speeches | ⭐⭐ **Exactamente las funcionalidades G-A y G-C del protocolo** | 3,5% |
+| **`N.` (punto)** | 53 | **4** | **18**, todos los ramos | Batería de QA transversal — vehicular, salud, vida y corporativo | 22,6% |
+
+**Los diez ítems de la serie con guion, cada uno corrido entre 9 y 14 veces en dos días:**
+brochure de Flexivida · brochure de Vida Contigo · brochure de Inversión Global · brochure de
+UltraCash · brochure de [Ahorro] Garantizada · speech para endosar crédito hipotecario · y **tres
+speeches de Flexivida segmentados por edad** (20-30, 30-40, 40-50).
+
+⭐⭐⭐ **Por qué esto importa más que la curiosidad:** el Banco G del protocolo fue diseñado para
+probar las tres funcionalidades declaradas. **Dos de las tres ya tienen una batería corriendo, con
+autor y con historial.** Pedir esas dos listas ahorra trabajo, evita duplicar y —lo más útil—
+**demuestra que la práctica de medir AIDA ya existe dentro de la casa**, que es un argumento mejor
+que llegar proponiéndola.
+
+⚠️ **Y da una lectura de la repetición que no es la obvia:** que un mismo ítem se corra 14 veces en
+dos días no es un asesor insistiendo, **es alguien probando**. Los ejemplos de inestabilidad más
+llamativos de §2.1 salen de ahí — por eso está la prueba de robustez.
+
+✅ **Lo que NO contamina:** la batería registró **138 calificaciones positivas y ninguna negativa**,
+pero su efecto sobre el ratio es despreciable — **96,0% con ella, 95,7% sin ella.** El 96% no se
+explica por esto.
+
+**Qué preguntar, y a quién:** las dos listas completas, quién las diseñó y con qué criterio, si hay
+resultados registrados en algún lado, y si la serie de 18 ítems es de un área de calidad. ⭐ **Es
+además una vía de entrada distinta a la de la jefatura**, y con alguien que ya está haciendo el
+mismo trabajo.
 
 ---
 
