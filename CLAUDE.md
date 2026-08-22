@@ -289,8 +289,9 @@ no es conocimiento de investigación sino un registro operativo con su propia bi
 - **Cálculos:** `finanzas/finanzas.py` (solo stdlib) — `resumen`, `deuda`, `proyeccion`, `patrimonio`.
 - **Reglas que no se negocian:** el sueldo entra íntegro y los descuentos que repagan algo
   ya cobrado (adelantos) salen como `tipo=deuda`, para que el servicio de deuda quede
-  visible; una categoría sin registrar es un **hueco**, no un gasto de cero; **ninguna
-  tasa se inventa** (mientras no esté la TCEA real se muestran escenarios etiquetados como
+  visible; una categoría sin registrar es un **hueco**, no un gasto de cero; las deudas se atacan de la **tasa más cara a la más barata** y una
+  deuda al 0% (cuotas sin intereses, adelanto) nunca se adelanta mientras exista una cara;
+  **ninguna tasa se inventa** (mientras no esté la TCEA real se muestran escenarios etiquetados como
   rango de referencia); al proyectar, el déficit del mes se carga a la tarjeta porque es
   lo que pasa en la práctica; lo irregular (CTS, gratificación) va al calendario y nunca al CSV
   mensual; antes de recomendar liquidar un activo se corren las dos proyecciones y se contrasta

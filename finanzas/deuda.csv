@@ -1,3 +1,4 @@
 mes,acreedor,instrumento,saldo_inicial,pago,saldo_final,tcea,nota
 2026-08,Banco,Tarjeta de credito,10000,3000,7000,,TCEA por confirmar en el estado de cuenta. saldo_final asume que no hubo consumo nuevo en el mes
 2026-08,Empleador,Adelanto de sueldo,,1200,,0,Saldo total del adelanto por confirmar — puede quedar mas de una cuota
+2026-08,Financiera/tienda,Cuotas camara,,420,,0,Compra de 3000 en cuotas SIN INTERESES (~7 cuotas de 420). Cuotas ya pagadas por confirmar. VERIFICAR si este saldo ya esta dentro de los 10000 de la TC — seria doble conteo

@@ -45,9 +45,33 @@ más todo lo que cuesten los huecos del §6.
 |---|---|---:|---:|---:|
 | Banco | Tarjeta de crédito | S/ 10,000 | 3,000 | ❓ por confirmar |
 | Empleador | Adelanto de sueldo | ❓ por confirmar | 1,200 | 0% |
+| Financiera/tienda | Cuotas cámara | ❓ por confirmar | 420 | **0%** |
 
-La deuda total **no es 10,000**: es 10,000 más el saldo pendiente del adelanto, que
-todavía no está registrado.
+La deuda total **no es 10,000**: es 10,000 más el saldo del adelanto más las cuotas que
+falten de la cámara, ninguno de los dos registrado todavía.
+
+### Orden de ataque
+
+Tienes deuda a dos precios muy distintos y eso ordena todo:
+
+1. **Tarjeta de crédito** — tasa sin confirmar, asumir alta. Aquí va cada sol excedente.
+2. **Adelanto de sueldo** — 0%. Solo el descuento, nunca adelantar.
+3. **Cuotas de la cámara** — 0%. Solo la cuota, nunca adelantar.
+
+**Una deuda al 0% no se adelanta jamás mientras exista una cara.** Es el único
+financiamiento gratis que tienes; adelantarlo es regalarlo y quedarte pagando 60% en otro
+lado. Si alguna vez te sobra plata, va íntegra a la tarjeta.
+
+### ⚠️ Verificar: posible doble conteo
+
+Si la cámara se compró **en cuotas sin intereses con la misma tarjeta de crédito** (que es
+como suele venderse en Perú), entonces su saldo pendiente **ya está dentro de los 10,000** y
+el modelo lo está contando dos veces: una en la línea "Cámara -420" y otra dentro de la
+deuda de la tarjeta.
+
+Eso cambiaría dos cosas: el balance de agosto mejoraría en 420, y una parte de esos 10,000
+estaría al 0% y no a la tasa de la tarjeta, con lo que los intereses proyectados están
+sobreestimados. Vale confirmarlo en el estado de cuenta antes de seguir proyectando.
 
 ### Cuánto cuesta la tarjeta según la tasa
 
@@ -252,13 +276,32 @@ las comisiones de salida del bróker — pueden comerse buena parte de los S/ 40
 
 ### La cámara
 
-S/ 4,000 de valor: **52% de todo tu patrimonio en un solo activo ilíquido que además todavía
-estás pagando.** Los 420/mes son el tercer gasto fijo más grande, después del alquiler y del
-mantenimiento, y equivalen al 6% de tu ingreso.
+Costó **S/ 3,000 en cuotas sin intereses**, a 420/mes. Eso son **unas 7 cuotas** (3,000 ÷ 420
+= 7.1), así que la línea **se termina sola** — falta saber cuántas ya pagaste para poner la
+fecha. Cuando termine, son 420/mes que se liberan.
 
-Eso no la hace un problema — la hace la línea que más cambia según un dato que no tengo:
-**¿genera ingresos?** Si es herramienta de trabajo que factura, es un activo productivo y la
-cuota se paga sola. Si no, es la línea más discrecional de un presupuesto que cierra en rojo.
+Dos cosas que corrige este dato:
+
+**No es una deuda cara, es la más barata que tienes.** Al 0%, los 420 no son costo
+financiero: son amortización de algo que ya compraste. En el orden de ataque va al final
+(§2), y adelantarla sería un error.
+
+**Y por lo tanto no es "la línea más discrecional" que llamé antes.** La plata ya está
+comprometida, el financiamiento es gratis y el plazo se acaba pronto. La única pregunta que
+queda viva es hacia adelante: **¿la cámara genera ingresos?** Si factura, es un activo
+productivo. Si no, sigue siendo un costo hundido con fecha de vencimiento — no una fuga que
+convenga cortar hoy.
+
+**Sobre la valuación:** declaraste S/ 4,000 y costó S/ 3,000. Puede ser que valga más de lo
+que pagaste, pero el equipo fotográfico usado normalmente se revende **por debajo** del
+costo. Como reserva de emergencia conviene mirarla al costo o menos:
+
+| Cámara valuada en | Total activos | Patrimonio neto |
+|---:|---:|---:|
+| S/ 4,000 (declarado) | S/ 7,740 | S/ -2,260 |
+| S/ 3,000 (costo) | S/ 6,740 | S/ -3,260 |
+
+Y en los dos casos falta restar el adelanto y las cuotas que queden — el neto real es peor.
 
 ---
 
@@ -277,8 +320,9 @@ Cuatro datos cambian materialmente el diagnóstico. En orden de impacto:
 
 A eso se suman dos del calendario (§3): el **monto real de la gratificación** (posiblemente
 mayor que 6,500) y el **saldo exacto del CTS**. Y dos del patrimonio (§5): **cuántas cuotas
-faltan de la cámara** —que es un pasivo sin registrar contra un activo de 4,000— y si la
-cámara **genera ingresos**.
+faltan de la cámara** (de ~7 totales) y si la cámara **genera ingresos**. Y una verificación
+que puede corregir el modelo hacia arriba: **si las cuotas de la cámara ya están dentro de
+los 10,000 de la tarjeta** (§2).
 
 Mientras esos datos no estén, los números de este documento son un piso, no un retrato.
 
@@ -301,7 +345,11 @@ Se registran para poder corregirlos, no porque estén verificados:
   tipo de cambio real del día está en el BCRP y se pasa con `--tc`.
 - **Los S/ 790 de Pokémon TCG** son valuación de mercado, no precio de venta. Los
   coleccionables se venden con descuento y con demora: como reserva de emergencia, no cuentan.
-- **La cámara vale S/ 4,000** hoy; los equipos se deprecian, así que es un techo, no un piso.
+- **La cámara vale S/ 4,000** según lo declarado, contra un costo de S/ 3,000 en cuotas sin
+  intereses. Los equipos usados se revenden por debajo del costo, así que los 4,000 son un
+  techo optimista para efectos de liquidez.
+- **La cámara son ~7 cuotas de 420** (3,000 ÷ 420 = 7.1), asumiendo que los 420 cubren solo
+  la cámara y no incluyen accesorios u otros cargos.
 - **Los US$ 300 en ETFs y los US$ 300 en S&P** se tratan como dos posiciones separadas
   (US$ 600 en total), según cómo fueron reportados.
 
@@ -311,6 +359,19 @@ Se registran para poder corregirlos, no porque estén verificados:
 
 Una entrada por mes, al cerrar. Formato: qué pasó, qué cambió respecto al mes anterior,
 qué decisión se tomó.
+
+### 2026-08 (d) — La cámara es deuda al 0%
+
+Dato nuevo: la cámara costó S/ 3,000 en cuotas **sin intereses**, no 4,000. Eso la convierte
+en la deuda más barata del balance y define un orden de ataque explícito: tarjeta primero,
+0% al final y nunca adelantado.
+
+Corrige la lectura anterior de la cámara como "la línea más discrecional": al 0% y con ~7
+cuotas totales, es un costo hundido con fecha de vencimiento, no una fuga. Se libera 420/mes
+cuando termine — falta saber cuántas cuotas van.
+
+Se abre una verificación: si la compra se hizo en cuotas con la misma tarjeta, su saldo ya
+está dentro de los 10,000 y el modelo lo cuenta dos veces.
 
 ### 2026-08 (c) — Entra el patrimonio
 

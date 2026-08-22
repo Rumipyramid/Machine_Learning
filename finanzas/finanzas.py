@@ -130,6 +130,7 @@ def leer_patrimonio(tc: float) -> list[dict]:
                 "moneda": moneda,
                 "monto": monto,
                 "pen": monto * tc if moneda == "USD" else monto,
+                "costo": float(f["costo"]) if (f.get("costo") or "").strip() else None,
                 "liquidez": (f.get("liquidez") or "baja").strip(),
                 "confianza": (f.get("confianza_valuacion") or "").strip(),
                 "nota": (f.get("nota") or "").strip(),
@@ -147,9 +148,11 @@ def leer_pasivos() -> list[dict]:
             if not (f.get("instrumento") or "").strip():
                 continue
             crudo = (f.get("saldo_inicial") or "").strip()
+            tcea = (f.get("tcea") or "").strip()
             por_acreedor[f["instrumento"].strip()] = {
                 "instrumento": f["instrumento"].strip(),
                 "saldo": float(crudo) if crudo else None,
+                "tcea": float(tcea) if tcea else None,
                 "nota": (f.get("nota") or "").strip(),
             }
     return list(por_acreedor.values())
@@ -436,6 +439,8 @@ def imprimir_patrimonio(tc: float, tcea: float, colchon: float) -> None:
         print(f"  {niv}")
         for a in grupo:
             og = f"  (US$ {a['monto']:,.0f})" if a["moneda"] == "USD" else ""
+            if a["costo"] is not None and abs(a["costo"] - a["pen"]) > 0.5:
+                og += f"  (costo {soles(a['costo'])})"
             duda = "  ~valuacion incierta" if a["confianza"] == "baja" else ""
             print(f"    {a['activo']:<26} {soles(a['pen'], 10)}{og}{duda}")
         print(f"    {'':<26} {soles(sub, 10)}  <- subtotal\n")
@@ -443,13 +448,26 @@ def imprimir_patrimonio(tc: float, tcea: float, colchon: float) -> None:
 
     print("PASIVOS")
     total_pasivos = 0.0
-    for p in pasivos:
-        if p["saldo"] is None:
-            print(f"    {p['instrumento']:<26} {'por confirmar':>10}")
+    for q in pasivos:
+        tasa = "  tasa ?" if q["tcea"] is None else f"  {q['tcea']:.0f}%"
+        if q["saldo"] is None:
+            print(f"    {q['instrumento']:<26} {'por confirmar':>10}{tasa}")
         else:
-            total_pasivos += p["saldo"]
-            print(f"    {p['instrumento']:<26} {soles(p['saldo'], 10)}")
+            total_pasivos += q["saldo"]
+            print(f"    {q['instrumento']:<26} {soles(q['saldo'], 10)}{tasa}")
     print(f"    {'':<26} {soles(total_pasivos, 10)}  <- registrado\n")
+
+    # Orden de ataque: siempre de la tasa mas cara a la mas barata. Una deuda a
+    # 0% nunca se adelanta mientras exista una cara — adelantarla es regalar el
+    # unico financiamiento gratis que se tiene.
+    caras = sorted(pasivos, key=lambda q: -(1e9 if q["tcea"] is None else q["tcea"]))
+    if len(caras) > 1:
+        print("  Orden de ataque (de la tasa mas cara a la mas barata):")
+        for n, q in enumerate(caras, 1):
+            t = "sin confirmar — asumir alta" if q["tcea"] is None else f"{q['tcea']:.0f}%"
+            extra = "   <- solo el minimo, nunca adelantar" if q["tcea"] == 0 else ""
+            print(f"    {n}. {q['instrumento']:<24} {t}{extra}")
+        print()
 
     neto = total_activos - total_pasivos
     print(f"{'-' * 70}")
