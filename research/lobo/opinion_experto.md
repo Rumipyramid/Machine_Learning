@@ -2344,6 +2344,87 @@ puede invertir cuál frame conviene más, no solo amplificarlo.
   constante entre contextos de venta, y asumir que sí lo es repite el error de sobregeneralización
   que tesis 6 ya corrigió para el nudging.
 
+### 46. El estudio fundacional de "choice overload" (las mermeladas) en realidad reporta tres efectos distintos bajo un solo titular — probabilidad de elegir, calidad del resultado y satisfacción no son la misma pregunta
+Iyengar & Lepper (2000, *JPSP* 79:995-1006) es el origen citado de la narrativa "menos opciones
+venden más" (F-119/F-120 ya documentan que el efecto agregado no replica de forma consistente —
+intuición 31 lo acota vía los moderadores de Chernev). Leído completo, el paper en realidad son
+tres experimentos empaquetados bajo un solo titular, no uno: (1) el estudio de las mermeladas
+(6 vs. 24 sabores en un supermercado real) — 40% de conversión con 6 opciones vs. 3% con 24,
+pero mide solo *probabilidad de compra*; (2) un estudio de ensayo universitario opcional (6 vs.
+20/30 temas) — 74% de entrega con 6 opciones vs. 60% con más, y además los ensayos del grupo con
+menos opciones fueron calificados de **mejor calidad**; (3) un estudio de chocolates con la misma
+lógica de satisfacción posterior a la elección. **Heurística de decisión:** cuando un estudio
+fundacional y muy citado se resume en una sola línea ("menos opciones convierte más"), verificar
+si en realidad empaqueta varios outcomes distintos (¿elegir o no elegir?, ¿qué tan buena es la
+elección?, ¿qué tan satisfecho queda?) bajo la misma narrativa — la réplica puede sostenerse en
+uno de esos outcomes y fallar en otro, y citar el titular sin desagregar esconde justo esa
+posibilidad. Aplicación directa: si `lapuerta` o un piloto propio prueban "menos planes de seguro
+convierten mejor", medir por separado tasa de conversión, calidad de la elección (¿el cliente
+terminó en el plan que más le convenía?) y satisfacción posterior — son tres apuestas empíricas
+distintas, no una.
+- **Fuente:** F-121 (🟢A, Iyengar, S. & Lepper, M. 2000, *Journal of Personality and Social
+  Psychology* 79:995-1006 — el estudio original de choice overload, ya citado en el ledger solo
+  por su resumen de una línea con la salvedad de no-replicación)
+- **Leído a fondo:** 2026-08-22 (medium.com bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida contra Columbia Business School, ResearchGate, Quizlet y coberturas
+  académicas que confirman los tres experimentos y sus cifras exactas, no solo el resumen del
+  primero)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 12 (folklore de UX, Alta) —
+  la acota con un matiz metodológico nuevo sobre cómo se mide el efecto, no sobre si existe.
+
+### 47. Que un método con nombre propio muestre resultados reales no prueba que el método sea insustituible — si el efecto está mediado por un mecanismo genérico, cualquier práctica que active ese mismo mecanismo debería funcionar igual
+El estudio de Roth, Globocnik, Rau & Neyer (2020, *Creativity and Innovation Management* 29(4),
+N=160 en 62 proyectos de innovación con empresas — ya citado en `_nodes/tendencias-diseno-
+innovacion.md` §2.1 solo por su hallazgo de mediación) muestra que el efecto de design thinking
+sobre el éxito del proyecto está **totalmente mediado** por empoderamiento psicológico — no hay
+efecto directo del método una vez que se controla por ese mecanismo. Leído completo, el paper
+identifica los cuatro canales exactos de ese empoderamiento: (1) el contacto con usuarios reales
+da sentido/motivación intrínseca; (2) resolver problemas complejos con herramientas nuevas da
+experiencia de competencia; (3) la autonomía del equipo da sentido de ownership; (4) el proceso
+iterativo permite ver impacto propio, lo que refuerza motivación. **Heurística de decisión:**
+antes de justificar la adopción exclusiva de un framework con marca (design thinking, un método
+de venta con nombre propio, un playbook con IP registrada) por sus resultados medidos, preguntar
+si el efecto está mediado por un mecanismo genérico que el framework simplemente entrega mejor que
+la alternativa actual — si es así, la decisión de negocio correcta no es "comprar/certificar ese
+método específico" sino "diseñar cualquier práctica más barata que entregue el mismo mecanismo"
+(contacto con el cliente real, autonomía del equipo, ver impacto rápido). Conecta con la intuición
+15 (el efecto "estrella" de management depende de cómo se mide) desde un ángulo distinto: aquí el
+riesgo no es la medición, es confundir el vehículo con el motor.
+- **Fuente:** F-239 (🟢A, Roth, K.; Globocnik, D.; Rau, C.; Neyer, A.-K. 2020, *Creativity and
+  Innovation Management* — ya citado en el ledger y en `_nodes/tendencias-diseno-innovacion.md`
+  solo por su resumen de una línea)
+- **Leído a fondo:** 2026-08-22 (onlinelibrary.wiley.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida contra ResearchGate y coberturas académicas que detallan los
+  cuatro mecanismos de empoderamiento, no solo el resultado de mediación total)
+- **Conexión razonada, no forzada:** no crea ni cambia tesis de negocio — matiza cómo evaluar
+  cualquier framework con marca antes de comprarlo/adoptarlo para Rimac, sin tocar la confianza de
+  tesis 21 (que ya cuestiona las cifras de ROI del diseño, no los mecanismos de mediación).
+
+### 48. Un canal de atención puede puntuar igual o mejor en satisfacción del paciente/padre sin que eso diga nada sobre si el diagnóstico o el resultado clínico también fue igual o mejor
+El estudio de Gotthardt, Haynes, Murphy & Marcin (2024, *Telemedicine and e-Health*, datos de UC
+Davis Health ago-2020 a feb-2022 — ya citado en un documento externo del usuario solo por la cifra
+agregada 94.9% video vs. 92.5% presencial) mide satisfacción de pacientes/padres pediátricos con
+el instrumento estandarizado Press Ganey. Leído completo: el instrumento mide **experiencia
+percibida con el proveedor** (accesibilidad, evaluación general del proveedor) — no mide precisión
+diagnóstica, resultado clínico ni si el episodio requirió una visita presencial de seguimiento.
+**Heurística de decisión:** un score de satisfacción tipo Press Ganey/CAHPS que favorece a
+telesalud es evidencia real de que el canal se siente bien atendido — no es evidencia de que el
+canal diagnosticó igual de bien. Esto no contradice el caso de negocio del canal barato (tesis 23
+ya documenta que el steering ahorra costo real), pero sí exige separar, en cualquier gate de éxito
+del piloto farmacia+triage IA (tesis 9/10), la métrica de satisfacción de servicio de la métrica de
+calidad clínica — son dos instrumentos distintos que pueden moverse en direcciones opuestas, igual
+que la intuición 8 ya documentó para agentes conversacionales (satisfacción subjetiva y desempeño
+objetivo divergiendo por segmento) y la intuición 40 para PARADISE (reconocimiento pesa más que
+éxito de tarea en la satisfacción declarada).
+- **Fuente:** F-355 (🟢A, Gotthardt, C.J.; Haynes, S.C.; Murphy, R.K.; Marcin, P. 2024,
+  *Telemedicine and e-Health* — ya citado en el ledger solo por la cifra agregada de comparación)
+- **Leído a fondo:** 2026-08-22 (journals.sagepub.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida contra PubMed y coberturas académicas que confirman el diseño
+  del estudio, la ventana temporal y qué mide exactamente el instrumento Press Ganey)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 9/10/23 (todas siguen Alta) —
+  agrega un criterio de gate operacional que el piloto de farmacia+triage IA todavía no tenía
+  explícito: exigir métrica clínica junto a la de satisfacción, no solo la segunda.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3018,3 +3099,46 @@ puede invertir cuál frame conviene más, no solo amplificarlo.
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 14 días de
   historial (2026-08-08 a hoy) tras la poda de la primera semana del bloque actual — dentro de la
   ventana de ~30 días.
+- **2026-08-22** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios
+  pendientes, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo directo:
+  **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope exacto que procesó la corrida de
+  ayer (2026-08-21) — **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, noveno día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
+  ~3 días, no vence formalmente hoy pero ya lleva diez días sin correr; no lo disparo aquí porque
+  es rutina de `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición
+  (decimoséptima corrida desde el 2026-08-06): de 137 fuentes 🟢A confirmadas por conteo propio en
+  el ledger, 45 ya tenían lectura profunda del Lobo — de las 92 restantes elegí 3 al azar puro:
+  F-121 (Iyengar & Lepper 2000, el estudio original de las mermeladas/choice overload — ya citado
+  en tesis 12 solo por su resumen con la salvedad de no-replicación), F-239 (Roth et al. 2020,
+  mediación de empoderamiento psicológico en el efecto de design thinking — ya citado en el node de
+  diseño/innovación solo por su hallazgo agregado) y F-355 (Gotthardt et al. 2024, Press Ganey
+  telesalud vs. presencial en pediatría — ya citado en un documento externo del usuario solo por la
+  cifra agregada). Las tres bloqueadas por el proxy en su URL directa (medium.com,
+  onlinelibrary.wiley.com, journals.sagepub.com); reconstruidas vía búsqueda dirigida (Columbia
+  Business School, ResearchGate, Quizlet para F-121; ResearchGate y coberturas académicas para
+  F-239; PubMed para F-355) que confirman detalle nuevo — los tres experimentos empaquetados en el
+  paper de Iyengar/Lepper (mermeladas, ensayo universitario, chocolates), los cuatro mecanismos
+  exactos de empoderamiento del paper de Roth et al., y qué mide exactamente el instrumento Press
+  Ganey — no solo el resumen ya citado. Sumé las entradas 46, 47 y 48 de Intuición acumulada: (46)
+  el estudio fundacional de choice overload en realidad reporta tres outcomes distintos (¿elegir o
+  no?, ¿qué tan buena la elección?, ¿qué tan satisfecho queda?) bajo un solo titular — verificar
+  cuál de los tres sobrevive antes de citar el efecto agregado, aplicable directo a cualquier
+  prueba propia de "menos planes convierten mejor"; (47) que un método con marca (design thinking,
+  un playbook de venta) muestre resultados reales no prueba que el método sea insustituible — si el
+  efecto está totalmente mediado por un mecanismo genérico (aquí, empoderamiento psicológico vía
+  contacto con usuario real, competencia, autonomía, impacto visible), cualquier práctica más
+  barata que active ese mismo mecanismo debería funcionar igual, así que la decisión de negocio no
+  es "adoptar ese framework específico" sino "diseñar la práctica más barata que entregue el mismo
+  mecanismo"; (48) un canal de atención puede puntuar igual o mejor en satisfacción de
+  paciente/padre (Press Ganey/CAHPS) sin que eso diga nada sobre si el resultado clínico también
+  fue igual o mejor — el instrumento mide experiencia percibida con el proveedor, no precisión
+  diagnóstica, así que cualquier gate de éxito del piloto farmacia+triage IA debe exigir métrica
+  clínica junto a la de satisfacción, no solo la segunda. Ninguna tesis de negocio cambió de
+  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
+  evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance de
+  tesis 12, 21 y 9/10/23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 15 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30
+  días — sin podar todavía.

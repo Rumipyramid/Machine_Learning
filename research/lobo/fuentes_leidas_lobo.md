@@ -62,3 +62,6 @@
 | F-449 | 🟢 A | 2026-08-21 | Intuición 43 — un combined ratio rentable auditado combina un modelo de riesgo que se sigue reentrenando con un cambio simultáneo hacia mezcla de canal más barata |
 | F-338 | 🟢 A | 2026-08-21 | Intuición 44 — la divulgación pasiva y el consejo digital activo (recomendador) no son el mismo objeto: el segundo cambia los pesos de decisión, no solo la información |
 | F-222 | 🟢 A | 2026-08-21 | Intuición 45 — el efecto de framing no tiene magnitud fija; se encoge o invierte según presión de tiempo y tamaño de lo que está en juego |
+| F-121 | 🟢 A | 2026-08-22 | Intuición 46 — el estudio fundacional de choice overload empaqueta tres outcomes distintos (elegir, calidad, satisfacción) bajo un solo titular |
+| F-239 | 🟢 A | 2026-08-22 | Intuición 47 — si el efecto de un método con marca está mediado por un mecanismo genérico, cualquier práctica que active ese mecanismo debería funcionar igual |
+| F-355 | 🟢 A | 2026-08-22 | Intuición 48 — un canal puede puntuar igual o mejor en satisfacción de servicio sin que eso diga nada de si el resultado clínico también fue igual o mejor |
