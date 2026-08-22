@@ -62,31 +62,33 @@ desde el chat — el mes cerrado manda.
    `cuota = ingresos − fijos − variables − otros pagos de deuda`. Pagar más solo hace que la
    diferencia rebote a la tarjeta el mismo mes (resultado final idéntico, con la ilusión de
    avanzar); pagar menos acumula efectivo al 0% mientras se debe al 60%.
-7. **Ninguna tasa se inventa.** La TCEA sale del estado de cuenta del usuario. Mientras
+7. **Una deuda saldada se marca `cancelado` en `deuda.csv`, no se borra.** Deja de sumar al
+   patrimonio neto y al orden de ataque, pero la fila queda como historial.
+8. **Ninguna tasa se inventa.** La TCEA sale del estado de cuenta del usuario. Mientras
    no esté, se muestran escenarios (`--tcea 0 40 60 90`) etiquetados como rango de
    referencia, nunca como su tasa.
-8. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
+9. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
    suma ese déficit a la deuda — es lo que pasa en la práctica. Proyectar con el
    déficit "cubierto por arte de magia" da un plan que no se cumple.
-9. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
+10. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
    utilidades son eventos de un mes. Mezclarlos con la estructura mensual infla el promedio y
    simula una holgura que no existe.
-10. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
+11. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
    (`--extraordinario deuda` y `--extraordinario caja`) y compara. Si la diferencia es chica,
    dilo: significa que la decisión no es esa, y seguir tratándola como importante distrae del
    número que sí manda.
-11. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
+12. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
    (`--saldo` con y sin el activo aplicado) y resta lo que el usuario deja de tener. La tasa
    valla sola exagera el beneficio: si la deuda muere en pocos meses, el interés evitado
    corre solo esos meses. Y contrasta siempre contra el **runway** — cuántos días de gasto
    fijo cubre lo líquido. Quedarse sin colchón para ahorrar intereses reconstruye la deuda.
-12. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
+13. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
    un diagnóstico. Casi siempre pesa más que los extraordinarios, y sin eso el consejo apunta
    al lugar equivocado.
-13. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
+14. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
    dato lo confirmaría.
-14. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
-15. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
+15. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
+16. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
    montos y saldos.
 
 ## Tono

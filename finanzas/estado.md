@@ -12,116 +12,129 @@ de este documento no sale de correr el script, es un supuesto y está marcado co
 
 ## 🩺 Diagnóstico vigente y plan a diciembre
 
-*Corrido el 2026-08-22 sobre el modelo con el calendario y el patrimonio completos.*
+*Corrido el 2026-08-22. Actualizado con el adelanto y la cámara confirmados: las dos
+incógnitas grandes están cerradas y el escenario es el bueno.*
 
 ### El diagnóstico en tres frases
 
 **No estás en crisis, estás sin instrumentos.** Tus gastos fijos son el 39% de tus ingresos
-—sano— y el 63% que se va en deuda es un pico temporal, no una estructura. La tarjeta se
-cancela sola entre noviembre y diciembre en casi cualquier escenario.
+—sano— y el 63% que se fue en deuda es un pico de un solo mes, no una estructura: el adelanto
+era único y ya está cancelado. La tarjeta se cancela sola en diciembre.
 
 **Tu problema no es la deuda, es la falta de colchón.** S/ 700 líquidos contra S/ 2,610 de
 gastos fijos son ocho días. Eso es lo que convierte cualquier imprevisto en saldo de tarjeta,
-y es la máquina que fabricó los 10,000 actuales.
+y es la máquina que fabricó los 10,000.
 
-**Y estás volando sin instrumentos en la variable que más pesa.** El gasto variable —comida,
-transporte, servicios— no está medido, y entre gastar 1,200 y 2,400 al mes hay más de
-S/ 6,000 de diferencia en cómo cierras diciembre.
+**Y estás volando a ciegas en la única variable que todavía decide el resultado.** El gasto
+variable no está medido, y es lo único que separa terminar diciembre con 3.3 meses de colchón
+o con 0.8.
 
 ### Qué significa "llegar en verde"
-
-Tres condiciones, no una:
 
 1. **Tarjeta en cero** al cerrar diciembre.
 2. **Ningún mes rebotando** — que la cuota salga del sueldo, no de la misma tarjeta.
 3. **Colchón de al menos 3 meses** de gastos fijos: S/ 7,830.
 
-Las tres son alcanzables. La primera es casi automática; la tercera es la que exige decisiones.
+Con el adelanto cancelado, las tres son alcanzables **sin tocar el CTS**.
 
-### Cuánto puedes gastar y seguir llegando
+### Cuánto puedes gastar
 
-Gasto variable máximo que aún deja la tarjeta en cero en diciembre:
-
-| | Sin tocar el CTS | Retirando el CTS |
-|---|---:|---:|
-| Si el adelanto sigue | S/ 1,800/mes | S/ 2,700/mes |
-| Si el adelanto termina en agosto | S/ 2,750/mes | S/ 3,600/mes |
-
-Y el colchón que te queda (adelanto terminado, sin tocar el CTS):
+Desde setiembre tu capacidad mensual es `6,700 − 2,610 − variable = 4,090 − variable`.
+Sin retirar el CTS:
 
 | Gasto variable | Cuota sostenible | Caja a diciembre | Colchón |
 |---:|---:|---:|---:|
 | S/ 800 | S/ 3,290 | S/ 10,714 | 4.1 meses |
-| S/ 1,200 | S/ 2,890 | S/ 8,585 | **3.3 meses** |
+| S/ 1,200 | S/ 2,890 | S/ 8,585 | **3.3 meses** ✅ |
 | S/ 1,600 | S/ 2,490 | S/ 6,418 | 2.5 meses |
 | S/ 2,000 | S/ 2,090 | S/ 4,252 | 1.6 meses |
+| S/ 2,400 | S/ 1,690 | S/ 2,086 | 0.8 meses |
+
+**Hasta S/ 2,750/mes de gasto variable, la tarjeta igual llega a cero en diciembre.** El
+margen es cómodo; lo que se estrecha rápido es el colchón.
+
+### El camino base, mes a mes
+
+Variable 1,200 · cuota 2,890 · sin tocar el CTS:
+
+| Cierre de | Saldo tarjeta | Caja |
+|---|---:|---:|
+| Agosto | S/ 8,709 | 0 |
+| Setiembre | S/ 6,167 | 0 |
+| **Octubre** | **S/ 3,524** | 0 |
+| Noviembre | S/ 774 | 0 |
+| Diciembre | **S/ 0** | **S/ 8,585** |
 
 ---
 
 ### Consejo 1 — Ponle techo de S/ 1,200 al gasto variable, y mídelo desde el 1 de setiembre
 
-Es la palanca más grande y la única totalmente bajo tu control: entre 1,200 y 2,400 al mes
-hay **S/ 6,499** de diferencia en la caja de diciembre. Más que el CTS entero.
+Es la palanca más grande y la única enteramente bajo tu control: entre gastar 1,200 y 2,400 al
+mes hay **S/ 6,499** de diferencia en la caja de diciembre. Más que el CTS entero.
 
-Con 1,200 llegas a diciembre con 3.3 meses de colchón sin tocar el CTS. Es el número que
-funciona en las dos ramas del árbol, así que sirve aunque el adelanto siga.
+Con 1,200 cierras diciembre con 3.3 meses de colchón sin tocar nada más. Y hoy es el único
+número grande del modelo que sigue siendo una adivinanza: el presupuesto tiene un agujero de
+cuatro categorías (comida, transporte, servicios, comunicaciones) y todo lo demás ya está
+confirmado.
 
-No hace falta app ni sistema: anota todo lo que sale que no sea fijo, durante 30 días. Hoy el
-presupuesto tiene un agujero de cuatro categorías y cualquier plan construido encima es
-adivinanza. **Setiembre es el mes de medir**, y con el dato real recalibramos.
+No hace falta app: anota 30 días todo lo que salga y no sea fijo. **Setiembre es el mes de
+medir**, y con el dato real recalibramos el techo.
 
-### Consejo 2 — Mata el adelanto y no tomes otro
+### Consejo 2 — Los S/ 1,200 que se liberan en setiembre van a la tarjeta el día de pago
 
-Es la segunda palanca, y vale **S/ 5,096** de colchón en diciembre. Además mueve tu techo de
-gasto de 1,800 a 2,750 al mes: te compra casi mil soles mensuales de margen.
+El adelanto era único y ya se pagó. Eso significa que en setiembre te "aparecen" 1,200 que en
+agosto no tenías — y ese es exactamente el dinero que suele desaparecer sin que nadie decida
+gastarlo. Absorbido en el estilo de vida, es la diferencia entre 3.3 y 0.8 meses de colchón.
 
-Dos cosas concretas: confirma con planilla **cuántas cuotas quedan**, y si el adelanto es
-recurrente —uno nuevo cada mes— córtalo ahí. Un adelanto es un préstamo al 0% que se ve
-inofensivo, pero baja tu ingreso disponible de forma permanente y es justo lo que te empuja a
-la tarjeta, que sí cobra 60%. Cambiar deuda gratis por deuda cara es el peor trueque del
-balance.
+Lo concreto: la cuota de setiembre sube a **S/ 2,890**, y sale **el día que entra el sueldo**,
+antes de cualquier otro gasto. No al final del mes con lo que sobre — al final del mes nunca
+sobra. Es la mecánica que hace que el consejo 1 se cumpla solo, en vez de depender de aguantar
+treinta días.
+
+La misma regla aplica cuando termine la cámara: son otros 420 que se liberan y que ya tienen
+destino.
 
 ### Consejo 3 — La gratificación de diciembre va íntegra al colchón
 
-Es el consejo que decide si diciembre cierra en verde de verdad. En el escenario bueno llegas
-a diciembre con ~S/ 8,600 de caja, y **prácticamente todo eso es la gratificación**: los meses
-de setiembre a noviembre se van completos en matar la tarjeta.
+En el camino base llegas a diciembre con S/ 8,585, y **prácticamente todo eso es la
+gratificación**: setiembre, octubre y noviembre se van completos en matar la tarjeta.
 
 Diciembre es el peor mes del año para tener 6,500 disponibles y ninguna regla. Si se va en
-consumo, terminas con la tarjeta en cero y cero colchón — que es exactamente el estado en el
-que empezó este año, con otra fecha. Decide **hoy**, no el 15 de diciembre, cuánto es colchón
-y cuánto es gasto de fin de año.
+consumo, terminas con la tarjeta en cero y cero colchón — el mismo estado en que empezó este
+año, con otra fecha. Decide **hoy** cuánto es colchón y cuánto es gasto de fin de año, no el
+15 de diciembre.
 
-Y el CTS sigue sin retirarse: en ninguna rama hace falta para llegar en verde, salvo que en
-octubre veas que el adelanto sigue **y** el gasto variable pasa de 1,800.
+Y confirma el monto real con planilla: la gratificación se calcula sobre el bruto, no descuenta
+AFP/ONP y lleva bonificación extraordinaria (~9%), así que probablemente sea más de 6,500.
 
 ---
 
-### Dos verificaciones de 10 minutos
+### La única verificación que queda
 
-No son hábitos, son datos que ya existen y que pueden mover el plan:
+**¿Cuál es la TCEA real de la tarjeta?** Está en tu estado de cuenta. Entre 40% y 90% hay
+S/ 873 de intereses de aquí a diciembre. Es el último dato del modelo que sigue siendo un
+supuesto.
 
-- **¿Las cuotas de la cámara están dentro de los 10,000 de la tarjeta?** Si sí, vale
-  **+S/ 2,234** de colchón en diciembre y los intereses proyectados están sobreestimados.
-- **¿Cuál es la TCEA real?** Entre 40% y 90% hay S/ 873 de intereses de aquí a diciembre.
+*(La verificación del doble conteo quedó cerrada: la cámara se compró directo a un amigo, no
+pasa por la tarjeta.)*
 
 ### La regla de la cuota
 
-Deja de pagar 3,000 fijo. Paga lo que sale de esta resta, recalculada cada mes:
+Paga lo que sale de esta resta, recalculada cada mes:
 
 ```
-cuota = 6,700 − 2,610 − gasto variable − adelanto
+cuota = 6,700 − 2,610 − gasto variable
 ```
 
-Pagar más de eso no acelera nada: la diferencia vuelve a la tarjeta el mismo mes (lo corrimos,
-el resultado final es idéntico) y solo produce la ilusión de estar avanzando. Pagar menos es
-peor: acumulas efectivo al 0% mientras debes al 60%. El número exacto es el correcto.
+Pagar más no acelera nada: la diferencia vuelve a la tarjeta el mismo mes (lo corrimos, el
+resultado final es idéntico) y solo produce la ilusión de avanzar. Pagar menos es peor:
+acumulas efectivo al 0% mientras debes al 60%.
 
 ### La prueba de octubre
 
-Al cerrar octubre, mira el saldo de la tarjeta. **Debajo de S/ 5,000** vas bien. **Cerca de
-S/ 10,000** estás en el escenario malo y ahí sí se activa el CTS.
-
+Al cerrar octubre, el saldo de la tarjeta debería estar cerca de **S/ 3,500**. Si está por
+encima de **S/ 5,000**, el gasto variable se salió del techo y ahí se reevalúa el CTS —que
+hasta entonces no se toca.
 
 ## 1. Cómo cierra agosto
 
@@ -425,19 +438,19 @@ Y en los dos casos falta restar el adelanto y las cuotas que queden — el neto 
 Cuatro datos cambian materialmente el diagnóstico. En orden de impacto:
 
 1. **Gastos variables del mes** — alimentación, transporte, servicios, celular. Es el
-   hueco más grande: define si el déficit real es de 110 o de 2,000.
+   hueco más grande y, tras cerrar el adelanto y la cámara, **el único que queda abierto de
+   los grandes**: define si diciembre cierra con 3.3 meses de colchón o con 0.8.
 2. **TCEA de la tarjeta** — está en el estado de cuenta. Define cuánto de los 3,000
    mensuales es pago real y cuánto es interés.
-3. **Saldo pendiente del adelanto** — si quedan más cuotas de 1,200, el alivio de
-   agosto no llega cuando se piensa.
+3. ~~**Saldo pendiente del adelanto**~~ — **cerrado:** fue único y quedó cancelado en agosto.
 4. **Cuotas que faltan de la cámara** — 420/mes que en algún momento se liberan. Saber
    cuándo permite planificar.
 
 A eso se suman dos del calendario (§3): el **monto real de la gratificación** (posiblemente
-mayor que 6,500) y el **saldo exacto del CTS**. Y dos del patrimonio (§5): **cuántas cuotas
-faltan de la cámara** (de ~7 totales) y si la cámara **genera ingresos**. Y una verificación
-que puede corregir el modelo hacia arriba: **si las cuotas de la cámara ya están dentro de
-los 10,000 de la tarjeta** (§2).
+mayor que 6,500) y el **saldo exacto del CTS**. Y una del patrimonio (§5): **cuántas cuotas faltan
+de la cámara** (de ~7 totales), que fija cuándo se liberan los 420. La verificación del doble
+conteo quedó **cerrada en negativo**: la cámara se compró directo a un amigo y no pasa por la
+tarjeta.
 
 Mientras esos datos no estén, los números de este documento son un piso, no un retrato.
 
@@ -448,11 +461,13 @@ Mientras esos datos no estén, los números de este documento son un piso, no un
 Se registran para poder corregirlos, no porque estén verificados:
 
 - **Moneda:** soles (S/).
-- **"Adelanto -1,200"** se interpreta como descuento en planilla que repaga un adelanto
-  ya cobrado — o sea, servicio de deuda, no gasto. Por eso el sueldo entra completo
-  (6,500) y el adelanto sale como egreso.
+- ~~**"Adelanto -1,200"** se interpreta como descuento en planilla~~ → **CONFIRMADO
+  (2026-08-22):** adelanto único de 1,200, repagado íntegro en agosto. No se repite. Desde
+  setiembre libera 1,200/mes de ingreso disponible.
 - **"Cochera +200"** se interpreta como ingreso por alquiler de una cochera propia.
-- **"Cámara -420"** se interpreta como cuota mensual de un financiamiento, no compra única.
+- ~~**"Cámara -420"** se interpreta como cuota mensual de un financiamiento~~ → **CONFIRMADO
+  (2026-08-22):** Fujifilm X-T30 III comprada directo a un amigo por S/ 3,000 sin intereses,
+  en cuotas de 420. **No pasa por la tarjeta**, así que no hay doble conteo.
 - **"IA -240"** se interpreta como suscripciones mensuales de herramientas.
 - **El saldo TC de 10,000** se asume anterior al pago de agosto; el saldo de cierre
   proyectado (7,000) asume cero consumo nuevo en el mes.
@@ -474,6 +489,24 @@ Se registran para poder corregirlos, no porque estén verificados:
 
 Una entrada por mes, al cerrar. Formato: qué pasó, qué cambió respecto al mes anterior,
 qué decisión se tomó.
+
+### 2026-08 (f) — Se cierran el adelanto y la cámara
+
+Confirmado: el adelanto fue **uno solo** de 1,200, repagado íntegro en agosto — no se repite.
+Y la cámara es una **Fujifilm X-T30 III comprada directo a un amigo** por 3,000 sin intereses,
+así que **no pasa por la tarjeta y no hay doble conteo** (esa verificación se cierra en
+negativo: no había los +2,234 que podía haber).
+
+Con eso el árbol de escenarios colapsa a la rama buena: desde setiembre se liberan 1,200/mes,
+la capacidad sube a `4,090 − variable`, y llegar en verde a diciembre —tarjeta en cero, sin
+rebotes, 3 meses de colchón— es alcanzable **sin tocar el CTS** con cualquier gasto variable
+hasta 1,200. El umbral para que la tarjeta igual llegue a cero es 2,750/mes.
+
+El consejo 2 se reemplaza: "matar el adelanto" ya está hecho, y pasa a ser **proteger los
+1,200 liberados** — cuota de 2,890 el día de pago, antes de que el dinero se absorba.
+
+`deuda.csv` gana una columna `estado` (vigente/cancelado) para que un pasivo saldado deje de
+sumar en el patrimonio neto.
 
 ### 2026-08 (e) — Diagnóstico y plan a diciembre
 

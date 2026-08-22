@@ -159,6 +159,7 @@ def leer_pasivos() -> list[dict]:
                 "instrumento": f["instrumento"].strip(),
                 "saldo": float(crudo) if crudo else None,
                 "tcea": float(tcea) if tcea else None,
+                "estado": (f.get("estado") or "vigente").strip(),
                 "nota": (f.get("nota") or "").strip(),
             }
     return list(por_acreedor.values())
@@ -466,7 +467,9 @@ def imprimir_patrimonio(tc: float, tcea: float, colchon: float) -> None:
     total_pasivos = 0.0
     for q in pasivos:
         tasa = "  tasa ?" if q["tcea"] is None else f"  {q['tcea']:.0f}%"
-        if q["saldo"] is None:
+        if q["estado"] == "cancelado":
+            print(f"    {q['instrumento']:<26} {'cancelado':>10}{tasa}")
+        elif q["saldo"] is None:
             print(f"    {q['instrumento']:<26} {'por confirmar':>10}{tasa}")
         else:
             total_pasivos += q["saldo"]
@@ -476,7 +479,8 @@ def imprimir_patrimonio(tc: float, tcea: float, colchon: float) -> None:
     # Orden de ataque: siempre de la tasa mas cara a la mas barata. Una deuda a
     # 0% nunca se adelanta mientras exista una cara — adelantarla es regalar el
     # unico financiamiento gratis que se tiene.
-    caras = sorted(pasivos, key=lambda q: -(1e9 if q["tcea"] is None else q["tcea"]))
+    vivos = [q for q in pasivos if q["estado"] != "cancelado"]
+    caras = sorted(vivos, key=lambda q: -(1e9 if q["tcea"] is None else q["tcea"]))
     if len(caras) > 1:
         print("  Orden de ataque (de la tasa mas cara a la mas barata):")
         for n, q in enumerate(caras, 1):
@@ -488,7 +492,7 @@ def imprimir_patrimonio(tc: float, tcea: float, colchon: float) -> None:
     neto = total_activos - total_pasivos
     print(f"{'-' * 70}")
     print(f"  PATRIMONIO NETO             {soles(neto, 10)}")
-    if any(p["saldo"] is None for p in pasivos):
+    if any(p["saldo"] is None for p in pasivos if p["estado"] != "cancelado"):
         print("  (es un techo: hay pasivos sin confirmar — el neto real es menor)")
     print(f"{'-' * 70}\n")
 

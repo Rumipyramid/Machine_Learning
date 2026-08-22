@@ -7,7 +7,7 @@ sin dependencias, e interpretación en un documento vivo.
 |---|---|
 | `estado.md` | **Documento principal.** Foto vigente, deuda, supuestos y bitácora mensual |
 | `movimientos/AAAA-MM.csv` | Movimientos del mes — fuente de verdad de los montos |
-| `deuda.csv` | Saldos por acreedor, mes a mes |
+| `deuda.csv` | Saldos por acreedor, mes a mes, con su tasa y su estado (vigente/cancelado) |
 | `calendario.csv` | Ingresos/egresos irregulares ya conocidos (CTS, gratificación, bonos) |
 | `patrimonio.csv` | Activos, con su liquidez y qué tan confiable es la valuación |
 | `finanzas.py` | Calculadora (solo stdlib) |
