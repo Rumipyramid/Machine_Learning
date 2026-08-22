@@ -10,10 +10,13 @@
 > | ⛔ *"La consistencia obliga a empezar el jueves porque necesita 4 días"* | **Ya no.** El log midió la consistencia entre días (61,8% general · 69,6% en Vida). **Solo queda la prueba de distinta formulación, que es el Bloque 6 y sale en 10 minutos** |
 > | ⛔ *"Correr B2, B3, B4 primero para ver si hay hueco de contenido"* | **Ya está confirmado** por el log: casi la mitad de las calificaciones negativas son detalle técnico de producto. Esas preguntas bajaron a opcionales |
 >
-> **Equivalencia rápida:** Tanda 1+2 → **Bloque 4C** · Tanda 3 → **Bloque 3** · Tanda 4 → **Bloque 5**
-> · Tanda 5 → **Bloque 7** · Tanda 7 → **Bloques 1 y 6** · Tanda 8 → **Bloque 8**.
-> **Y hay un bloque que antes no existía: el Bloque 1** (las cinco preguntas reales de arranque),
-> que es el de mayor valor de toda la corrida.
+> **Equivalencia rápida:** Tanda 1+2 → **Bloque 5C** · Tanda 3 → **Bloque 2** · Tanda 4 → **Bloque 3**
+> · Tanda 5 → **Bloque 6** · Tanda 7 → **Bloques 1 y 4** · Tanda 8 → **Bloque 7**.
+>
+> ⭐⭐ **Y hay dos bloques que antes no existían, los dos por delante de todo lo demás:**
+> **Bloque 0** — la línea base sin AIDA, que **va antes de abrir la herramienta** o el cronómetro
+> queda contaminado — y **Bloque 1**, el momento en vivo con el cliente, que es donde el tiempo se
+> convierte en venta.
 >
 > ✅ **Lo que sigue vigente de este documento:** el reparto de días, la advertencia sobre el acceso
 > fuera de la oficina, la tabla de **qué se puede medir esta semana y qué no**, y el orden de
@@ -151,8 +154,10 @@ Sesión con Emanuel, Will y Miguel Portugal. Comité de la jefatura por la tarde
 | ✅ Latencia por pregunta (T1, T2) | ⛔ Tiempo total hasta decisión (T5) |
 | ✅ Longitud de respuesta (T10) | ⛔ **Tiempo de verificación externa (T6)** — la métrica que decide si el objetivo se cumple |
 | ✅ Densidad de cita y **tasa de cita rota** (T11) | ⛔ Tasa de fuga a ChatGPT / Gemini (T7) |
-| ✅ Exactitud, fidelidad, vigencia, trazabilidad | ⛔ Línea base sin AIDA (T12) |
+| ✅ Exactitud, fidelidad, vigencia, trazabilidad | 🟡 **Línea base sin AIDA (T12)** — el Bloque 0 da una versión **direccional** (n=1, y no sos asesor). No es evidencia, pero deja instalado que el objetivo nunca se midió |
 | ✅ Suficiencia y accionabilidad (el campo DESPUÉS) | ⛔ Abandono real |
+| ⭐ **Tiempo total hasta respuesta usable (T5)** — tarea 5 de la guía v3.0 | |
+| ⭐ **¿La respuesta sirve tal cual con el cliente? (O3)** — tarea 6 | |
 | ✅ **Tasa de discrepancia sustantiva** (consistencia) | |
 
 ⭐ **Lo que sí se puede afirmar el miércoles:** que el objetivo declarado **nunca se midió** —ningún
