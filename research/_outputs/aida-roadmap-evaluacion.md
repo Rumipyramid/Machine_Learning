@@ -1,5 +1,24 @@
 # Roadmap de la evaluación de AIDA — jueves a miércoles
 
+> ## ⚠️ Este calendario quedó parcialmente superado — leer antes de usarlo *(2026-08-22)*
+>
+> **La hoja de corrida se reescribió** (`aida-banco-preguntas-corrida.md` v2.0): ya no hay "tandas"
+> sino **8 bloques**, y dos premisas de este roadmap cambiaron:
+>
+> | Premisa original | Estado |
+> |---|---|
+> | ⛔ *"La consistencia obliga a empezar el jueves porque necesita 4 días"* | **Ya no.** El log midió la consistencia entre días (61,8% general · 69,6% en Vida). **Solo queda la prueba de distinta formulación, que es el Bloque 6 y sale en 10 minutos** |
+> | ⛔ *"Correr B2, B3, B4 primero para ver si hay hueco de contenido"* | **Ya está confirmado** por el log: casi la mitad de las calificaciones negativas son detalle técnico de producto. Esas preguntas bajaron a opcionales |
+>
+> **Equivalencia rápida:** Tanda 1+2 → **Bloque 4C** · Tanda 3 → **Bloque 3** · Tanda 4 → **Bloque 5**
+> · Tanda 5 → **Bloque 7** · Tanda 7 → **Bloques 1 y 6** · Tanda 8 → **Bloque 8**.
+> **Y hay un bloque que antes no existía: el Bloque 1** (las cinco preguntas reales de arranque),
+> que es el de mayor valor de toda la corrida.
+>
+> ✅ **Lo que sigue vigente de este documento:** el reparto de días, la advertencia sobre el acceso
+> fuera de la oficina, la tabla de **qué se puede medir esta semana y qué no**, y el orden de
+> sacrificio. Lo demás, tomarlo de la hoja de corrida.
+
 **Plan de corrida.** v1.0 · 2026-08-20
 Ejecuta `_outputs/aida-banco-preguntas-corrida.md` con la disponibilidad declarada:
 **jueves, viernes, sábado por la mañana, lunes y martes. Domingo no.**
