@@ -18,7 +18,7 @@ de este documento no sale de correr el script, es un supuesto y está marcado co
 la cuota deja de ser la variable de ajuste y pasa a ser un dato fijo.*
 
 ```
-python finanzas.py reparto --mes 2026-08 --reserva 1090
+python finanzas.py reparto --mes 2026-08 --reserva 1200 --minimo 2500
 ```
 
 | | | |

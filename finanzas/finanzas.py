@@ -464,7 +464,7 @@ def imprimir_proyeccion(filas: list[dict], r: dict, tcea: float, var: float,
 
 # ------------------------------------------------------------------ reparto
 
-def imprimir_reparto(r: dict, reserva: float) -> None:
+def imprimir_reparto(r: dict, reserva: float, minimo: float = 0.0) -> None:
     """
     Reparto del sueldo el dia de pago: que sale si o si, cuanto se aparta para
     vivir, y recien con lo que queda se define la cuota de la tarjeta.
@@ -500,15 +500,31 @@ def imprimir_reparto(r: dict, reserva: float) -> None:
     print(f"3. SE APARTA PARA VIVIR           {soles(reserva, 10)}")
     print("   (comida, transporte, servicios, celular — hasta el proximo sueldo)\n")
 
-    cuota = disponible - reserva
+    sostenible = disponible - reserva
+    # El minimo del estado de cuenta es un piso contractual: si la cuota
+    # sostenible cae por debajo, no hay eleccion — manda el minimo y lo que
+    # falta tiene que salir de otro lado.
+    cuota = max(sostenible, minimo)
+    hueco = max(0.0, minimo - sostenible)
+
     print(f"{'-' * 64}")
-    print(f"  4. A LA TARJETA                  {soles(cuota, 10)}")
+    print(f"  4. A LA TARJETA                  {soles(cuota, 10)}"
+          f"{'   <- pago minimo' if hueco else ''}")
     print(f"{'-' * 64}\n")
 
-    if cuota < 0:
-        print(f"  ALERTA: no alcanza. Faltan {soles(-cuota)} solo para cubrir lo")
-        print("  no negociable mas la reserva de vida. Revisa la reserva o busca")
-        print("  de donde sale la diferencia — pero no de la tarjeta.\n")
+    if sostenible < 0:
+        print(f"  ALERTA: no alcanza. Faltan {soles(-sostenible)} solo para cubrir lo")
+        print("  no negociable mas la reserva de vida, antes de la tarjeta.\n")
+    elif hueco:
+        print(f"  El minimo ({soles(minimo)}) es mayor que lo que aguanta el mes")
+        print(f"  ({soles(sostenible)}). No es elegible: hay que pagarlo igual, y")
+        print(f"  quedan {soles(disponible - minimo)} para vivir.\n")
+        print(f"  HUECO DEL MES: {soles(hueco)}")
+        print("  Tiene que salir de algun lado. Compara las fuentes por su efecto")
+        print("  NETO al final del horizonte —contando el activo que consumes, no")
+        print("  solo la caja que queda— y deja la tarjeta para el final: cargar el")
+        print("  hueco al plastico lo mantiene devengando hasta que canceles, no un")
+        print("  mes, y pierde el periodo de gracia por ser consumo sobre saldo.\n")
     else:
         if cuota_reg and abs(cuota - cuota_reg) > 1:
             dif = cuota_reg - cuota
@@ -517,8 +533,9 @@ def imprimir_reparto(r: dict, reserva: float) -> None:
             print(f"  aguanta el mes. Pagar de mas no acelera nada — esa diferencia")
             print(f"  vuelve a la tarjeta como consumo y encima pierde el periodo")
             print(f"  de gracia. Paga {soles(cuota)}.\n")
-        print("  Verifica el pago minimo de tu estado de cuenta: si es mayor que")
-        print("  este monto, ese es el piso y hay que recortar por otro lado.\n")
+        if not minimo:
+            print("  Verifica el pago minimo de tu estado de cuenta: si es mayor que")
+            print("  este monto, ese es el piso y hay que recortar por otro lado.\n")
 
 
 # --------------------------------------------------------------- patrimonio
@@ -641,6 +658,8 @@ def main() -> None:
     p_rep.add_argument("--mes", required=True)
     p_rep.add_argument("--reserva", type=float, required=True,
                        help="Cuanto se aparta para vivir hasta el proximo sueldo")
+    p_rep.add_argument("--minimo", type=float, default=0.0,
+                       help="Pago minimo de la tarjeta segun el estado de cuenta (es un piso)")
 
     p_pat = sub.add_parser("patrimonio", help="Activos, pasivos y patrimonio neto")
     p_pat.add_argument("--tc", type=float, default=3.75,
@@ -668,7 +687,7 @@ def main() -> None:
             imprimir_deuda(a.saldo, a.cuota, esc, a.consumo_nuevo)
 
     elif a.cmd == "reparto":
-        imprimir_reparto(calcular_resumen(a.mes), a.reserva)
+        imprimir_reparto(calcular_resumen(a.mes), a.reserva, a.minimo)
 
     elif a.cmd == "patrimonio":
         imprimir_patrimonio(a.tc, a.tcea, a.colchon)

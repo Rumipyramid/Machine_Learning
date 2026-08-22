@@ -27,7 +27,7 @@ python finanzas.py deuda --saldo 10000 --cuota 3000 --tcea 0 40 60 90
 python finanzas.py deuda --saldo 10000 --cuota 3000 --tcea 60 --consumo-nuevo 1610
 
 # Cómo repartir el sueldo el día de pago
-python finanzas.py reparto --mes 2026-08 --reserva 1200
+python finanzas.py reparto --mes 2026-08 --reserva 1200 --minimo 2500
 
 # Activos, pasivos, patrimonio neto y tasa valla
 python finanzas.py patrimonio --tcea 60 --colchon 700
@@ -36,6 +36,10 @@ python finanzas.py patrimonio --tcea 60 --colchon 700
 python finanzas.py proyeccion --mes 2026-08 --saldo 10000 --cuota 3000 --tcea 60 --meses 8 \
     --variables 1500 --otros-deuda-hasta 2026-08
 ```
+
+`reparto` acepta `--minimo`, el pago mínimo del estado de cuenta. Es un piso contractual: si
+la cuota sostenible cae por debajo, el mínimo manda y el comando calcula el hueco del mes en
+vez de sugerir un pago imposible.
 
 Flags útiles de `proyeccion`:
 

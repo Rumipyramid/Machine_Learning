@@ -30,7 +30,7 @@ desde el chat — el mes cerrado manda.
 | Pide | Haz |
 |---|---|
 | "cómo voy", "cómo cierra el mes" | `python finanzas.py resumen --mes AAAA-MM` |
-| "me pagan el martes", "cuánto abono", "cómo reparto el sueldo" | `python finanzas.py reparto --mes AAAA-MM --reserva N` |
+| "me pagan el martes", "cuánto abono", "cómo reparto el sueldo" | `python finanzas.py reparto --mes AAAA-MM --reserva N --minimo N` |
 | Datos nuevos del mes (sueldo, gastos, cuotas) | Agrega filas al CSV del mes, corre `resumen`, actualiza `estado.md` |
 | "cuándo salgo de la deuda", "cuánto me cuesta" | `python finanzas.py deuda --saldo N --cuota N --tcea ...` |
 | "y si sigo así" | `python finanzas.py proyeccion --mes AAAA-MM --saldo N --cuota N --variables N` |
