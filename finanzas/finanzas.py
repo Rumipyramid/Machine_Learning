@@ -36,6 +36,12 @@ TIPOS = ("ingreso", "fijo", "variable", "deuda")
 # importa: un cero dice "no gasté", un hueco dice "no sé cuánto gasté".
 CATEGORIAS_BASE = ("alimentacion", "transporte", "servicios", "comunicaciones")
 
+# Categoria reservada: identifica la cuota de la tarjeta dentro del servicio de
+# deuda. El resto de las filas `tipo=deuda` (adelantos, cuotas sin intereses) se
+# tratan como pagos fijos que NO amortizan la tarjeta. Sin esta marca no se puede
+# proyectar con una cuota distinta de la registrada.
+CATEGORIA_TC = "tarjeta_credito"
+
 
 # ---------------------------------------------------------------- utilidades
 
@@ -175,6 +181,14 @@ def calcular_resumen(mes: str) -> dict:
     # Lo que queda para pagar deuda una vez cubierta la vida corriente.
     capacidad_pago = ingresos - fijos - variables
 
+    deudas = por_tipo["deuda"]
+    cuota_tc = -sum(f["monto"] for f in deudas if f["categoria"] == CATEGORIA_TC)
+    otros_deuda = -sum(f["monto"] for f in deudas if f["categoria"] != CATEGORIA_TC)
+    if deudas and cuota_tc == 0:
+        print(f"AVISO: ningun movimiento de deuda tiene categoria '{CATEGORIA_TC}'.\n"
+              f"       La proyeccion tratara los {soles(otros_deuda)} de servicio de deuda\n"
+              f"       como pagos que no amortizan la tarjeta.", file=sys.stderr)
+
     categorias_presentes = {f["categoria"] for f in filas}
     huecos = [c for c in CATEGORIAS_BASE if c not in categorias_presentes]
     estimados = [f for f in filas if (f.get("estado") or "").strip() == "estimado"]
@@ -187,6 +201,8 @@ def calcular_resumen(mes: str) -> dict:
         "fijos": fijos,
         "variables": variables,
         "servicio_deuda": deuda,
+        "cuota_tc": cuota_tc,
+        "otros_deuda": otros_deuda,
         "balance": balance,
         "capacidad_pago": capacidad_pago,
         "ratio_deuda_ingreso": (deuda / ingresos) if ingresos else 0.0,
@@ -348,7 +364,7 @@ def proyectar(r: dict, saldo_tc: float, cuota: float, tcea: float, meses: int,
     cal = leer_calendario()
     i = tasa_mensual(tcea)
     var = r["variables"] if variables is None else variables
-    otros_deuda = max(0.0, r["servicio_deuda"] - cuota)   # p.ej. el adelanto
+    otros_deuda = r["otros_deuda"]   # adelanto y cuotas sin intereses: no son la TC
 
     filas = []
     saldo, caja = saldo_tc, 0.0

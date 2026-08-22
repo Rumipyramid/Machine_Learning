@@ -283,7 +283,8 @@ no es conocimiento de investigación sino un registro operativo con su propia bi
   y bitácora mensual. Se lee **antes** de responder cualquier consulta: nunca se
   reconstruye el panorama de memoria ni desde el chat.
 - **Datos:** `finanzas/movimientos/AAAA-MM.csv` (un archivo por mes, `monto` firmado,
-  `tipo` ∈ ingreso/fijo/variable/deuda), `finanzas/deuda.csv` (saldos por acreedor) y
+  `tipo` ∈ ingreso/fijo/variable/deuda; la cuota de la tarjeta se marca con la categoría
+  reservada `tarjeta_credito`), `finanzas/deuda.csv` (saldos por acreedor) y
   `finanzas/calendario.csv` (ingresos irregulares: CTS, gratificación, bonos) y
   `finanzas/patrimonio.csv` (activos, con liquidez y confianza de valuación).
 - **Cálculos:** `finanzas/finanzas.py` (solo stdlib) — `resumen`, `deuda`, `proyeccion`, `patrimonio`.

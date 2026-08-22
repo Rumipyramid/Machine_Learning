@@ -72,7 +72,11 @@ mes,concepto,categoria,tipo,monto,estado,nota
   "pagar deuda", que es la distinción que manda todo el análisis.
 - **`estado`** ∈ `confirmado` · `estimado`. Los estimados se marcan con `~` en el
   resumen para no confundir un dato con una suposición.
-- **`categoria`** es libre, pero el script vigila cuatro categorías base —
+- **`categoria`** tiene un valor **reservado: `tarjeta_credito`**, que marca cuál de los pagos
+  de deuda es la cuota de la tarjeta. Sin esa marca, `proyeccion` no puede separar lo que
+  amortiza la tarjeta de lo que no (adelantos, cuotas sin intereses) y proyectar con una cuota
+  distinta a la registrada da resultados falsos. El script avisa si falta.
+- El resto de `categoria` es libre, pero el script vigila cuatro categorías base —
   `alimentacion`, `transporte`, `servicios`, `comunicaciones`— y avisa si el mes no
   tiene ninguna. Un mes sin comida registrada no está completo, está incompleto.
 

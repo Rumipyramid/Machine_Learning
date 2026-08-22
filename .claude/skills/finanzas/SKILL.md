@@ -55,31 +55,38 @@ desde el chat — el mes cerrado manda.
 4. **Cuidado con el doble conteo.** Una compra en cuotas hecha con la tarjeta ya está dentro
    del saldo de la tarjeta. Si además figura como gasto mensual propio, está contada dos
    veces y los intereses proyectados quedan inflados. Verifícalo antes de proyectar.
-5. **Ninguna tasa se inventa.** La TCEA sale del estado de cuenta del usuario. Mientras
+5. **La cuota de la tarjeta se marca con la categoría reservada `tarjeta_credito`** en el CSV
+   del mes. Sin esa marca, `proyeccion` no distingue lo que amortiza la tarjeta de lo que no,
+   y cualquier `--cuota` distinta de la registrada da números falsos.
+6. **La cuota correcta es la sostenible**, no la más alta posible:
+   `cuota = ingresos − fijos − variables − otros pagos de deuda`. Pagar más solo hace que la
+   diferencia rebote a la tarjeta el mismo mes (resultado final idéntico, con la ilusión de
+   avanzar); pagar menos acumula efectivo al 0% mientras se debe al 60%.
+7. **Ninguna tasa se inventa.** La TCEA sale del estado de cuenta del usuario. Mientras
    no esté, se muestran escenarios (`--tcea 0 40 60 90`) etiquetados como rango de
    referencia, nunca como su tasa.
-6. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
+8. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
    suma ese déficit a la deuda — es lo que pasa en la práctica. Proyectar con el
    déficit "cubierto por arte de magia" da un plan que no se cumple.
-7. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
+9. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
    utilidades son eventos de un mes. Mezclarlos con la estructura mensual infla el promedio y
    simula una holgura que no existe.
-8. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
+10. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
    (`--extraordinario deuda` y `--extraordinario caja`) y compara. Si la diferencia es chica,
    dilo: significa que la decisión no es esa, y seguir tratándola como importante distrae del
    número que sí manda.
-9. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
+11. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
    (`--saldo` con y sin el activo aplicado) y resta lo que el usuario deja de tener. La tasa
    valla sola exagera el beneficio: si la deuda muere en pocos meses, el interés evitado
    corre solo esos meses. Y contrasta siempre contra el **runway** — cuántos días de gasto
    fijo cubre lo líquido. Quedarse sin colchón para ahorrar intereses reconstruye la deuda.
-10. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
+12. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
    un diagnóstico. Casi siempre pesa más que los extraordinarios, y sin eso el consejo apunta
    al lugar equivocado.
-11. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
+13. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
    dato lo confirmaría.
-12. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
-13. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
+14. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
+15. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
    montos y saldos.
 
 ## Tono
