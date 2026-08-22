@@ -1,8 +1,27 @@
 # Protocolo de interrogación de AIDA — ramo Vida
 
-**Instrumento de diagnóstico. Versión vigente: 1.1 · 2026-08-22**
+**Instrumento de diagnóstico. Versión vigente: 1.2 · 2026-08-22**
 
-> ## ⭐ Qué cambia en v1.1 — el log reescribe tres partes del instrumento
+> ## ⭐⭐ Qué cambia en v1.2 — el objetivo pasa a ser el criterio primario
+>
+> v1.1 ordenó la auditoría por **dónde le duele al asesor**. Eso está bien pero es la mitad: **el
+> objetivo declarado de AIDA es reducir el tiempo operativo del asesor durante la venta y, por esa
+> vía, subir la conversión.** La prioridad tiene que salir de ahí.
+>
+> ⭐ **Los dos criterios convergen —las categorías peor calificadas son las que ocurren en vivo—
+> pero el objetivo cambia *qué se mide en cada pregunta*, no solo cuáles se corren.** Tres cambios:
+>
+> | # | Qué | Dónde |
+> |---|---|---|
+> | **1** | ⭐⭐ **O3 y O4 dejan de ser teóricas: hay dato.** El largo mediano por categoría muestra que **AIDA es más larga justo donde el asesor tiene menos tiempo** — 485 palabras en objeción contra 205 del corpus | §9.1 |
+> | **2** | ⭐ **La línea base sin AIDA (T12) se adelanta a primer lugar.** Después de que AIDA responde, el cronómetro de la vía tradicional ya está contaminado | §3.3 · §10.3 |
+> | **3** | ⭐ **El tiempo que cuenta es el total hasta respuesta usable (T5), no la latencia.** Y T3 ya tiene cifra: **solo 1 de cada 4 consultas se resuelve en un turno** | §3.3 · §10.2 |
+>
+> ⭐⭐ **La consecuencia dura para la rúbrica:** una respuesta puede sacar 2/2 en las siete
+> dimensiones de exactitud y **fallar el objetivo por O3 y O4 solos** — correcta, fundamentada,
+> citada e inutilizable en el momento en que se necesita. **Ningún test de exactitud detecta eso.**
+
+> ## ⭐ Qué cambió en v1.1 — el log reescribe tres partes del instrumento
 >
 > El análisis de 2.697 consultas reales (`_outputs/aida-analisis-logs-2026-08-20.md`) **no se suma al
 > instrumento: lo corrige**. Cuatro cambios, y dos de ellos ahorran trabajo de campo:
@@ -229,9 +248,28 @@ cómo se comportaron en producción — así que **una respuesta distinta hoy ta
 
 #### B · Las 19 por cuota — extraídas del log, listas para pegar
 
-Seleccionadas del propio log **sobremuestreando deliberadamente las categorías que peor califican**,
-y dentro de cada una priorizando las que **ya recibieron calificación negativa** (🔴) o **corrieron
-sin recuperar fuente** (⚪): son fallas confirmadas por el asesor, no sospechas nuestras.
+**Dos criterios ordenan esta selección, y hay que tener los dos a la vista:**
+
+| Criterio | Qué prioriza | De dónde sale |
+|---|---|---|
+| ⭐⭐ **El objetivo de la herramienta** | El **momento en vivo** —con el cliente delante— y si la consulta **cierra en AIDA** | Reducir el tiempo operativo durante la venta y, por esa vía, la conversión |
+| **El dolor del asesor** | Explicar, comparar, objetar | Las calificaciones del propio log |
+
+⭐ **Los dos convergen, y esa convergencia es en sí un hallazgo:** las categorías peor calificadas
+son **las mismas** que ocurren en vivo y **las mismas** que devuelven las respuestas más largas
+(485 palabras en objeción, 387 en explicar, contra 205 del corpus).
+
+⚠️ **Pero el objetivo no solo elige preguntas: cambia qué se mide en cada una.** De ahí salen tres
+exigencias que no estaban en v1.0 y que **no se pueden reconstruir después**:
+
+1. ⭐ **La línea base sin AIDA (T12) se corre ANTES que nada.** Una vez que AIDA dio la respuesta,
+   el cronómetro de la vía tradicional ya está contaminado: se sabe dónde buscar.
+2. ⭐ **El tiempo que cuenta es el total hasta respuesta usable (T5), no la latencia (T1/T2).** Si
+   AIDA tarda 9 segundos y el total son 6 minutos, el problema nunca fue la latencia.
+3. ⭐ **O3 se califica contra el momento de uso** — ver §9.1.
+
+Dentro de cada categoría se priorizan las que **ya recibieron calificación negativa** (🔴) o
+**corrieron sin recuperar fuente** (⚪): son fallas confirmadas por el asesor, no sospechas nuestras.
 
 ⛔ **Se copian tal cual, con sus faltas.** La formulación real es parte de lo que se mide.
 
@@ -540,6 +578,27 @@ confianza del usuario incluso cuando son falsas** (Ding et al., 2025).
 **Por eso O2 se califica contra el fragmento, no contra la existencia del enlace.** La pregunta del
 juez no es *"¿citó?"* sino ***"¿lo citado sustenta lo afirmado?"***
 
+> ### ⭐⭐ O3 y O4 dejaron de ser dimensiones teóricas — hay dato *(v1.1)*
+>
+> El objetivo declarado es reducir el tiempo operativo **durante la venta**. Medido sobre el
+> historial real, el largo mediano de la respuesta **por tipo de consulta**:
+>
+> | Objeción 🔴 | Speech 🟡 | Explicar 🔴 | Comparar 🔴 | Dato de producto | Trámite 🟢 | **Corpus** |
+> |---|---|---|---|---|---|---|
+> | **485** | **502** | **387** | **260** | 207 | 207 | **205** |
+>
+> ⭐⭐⭐ **Las tres categorías del momento en vivo son las que devuelven las respuestas más largas.**
+> Una objeción devuelve ~485 palabras: **tres minutos de lectura con el cliente esperando.** Solo el
+> **16,3%** del corpus baja de 80 palabras.
+>
+> **Consecuencia para la rúbrica:** una respuesta puede sacar 2/2 en D1-D7 y en O1-O2, y **fallar el
+> objetivo por O3 y O4 solos.** Correcta, fundamentada, citada — e inutilizable en el momento en que
+> se necesita. ⭐ **Ese es el modo de falla que ninguna medición de exactitud detecta**, y por eso
+> O3/O4 no son un complemento estético de la rúbrica.
+>
+> ⚠️ **O3 se califica contra el momento de uso, no en abstracto.** 400 palabras para preparar una
+> reunión son aceptables; las mismas 400 con el cliente en el teléfono son una falla.
+
 ### 9.2 Banco F — consolidación (¿cierra o deriva?)
 
 Diseñadas para que **la única forma de sacar 2 en O1 sea resolver sin salir de AIDA**.
@@ -710,7 +769,7 @@ medición propia:
 |---|---|---|---|---|
 | **T1** | **Latencia a primera señal** | Del envío al primer texto visible | ⚠️ **Cronómetro** — el log no lo trae | 🔴 |
 | **T2** | **Latencia total** | Del envío a la respuesta completa | ⚠️ **Cronómetro** — el log no lo trae | 🔴 |
-| **T3** | ⭐ **Turnos hasta respuesta usable** | Nº de mensajes hasta que el asesor tiene lo que necesita | Logs (secuencias del mismo usuario) + shadowing | 🟡 |
+| **T3** | ⭐ **Turnos hasta respuesta usable** | Nº de mensajes hasta que el asesor tiene lo que necesita | Logs + shadowing | 🟢 parcial — **mediana 3 turnos · solo 25,9% resuelve en uno · 23,3% pasa de 7**. ⚠️ El log **no distingue conversación de reformulación**: eso lo desambigua la corrida |
 | **T4** | **Reformulaciones** | Nº de veces que reescribe la misma pregunta | Logs (similitud semántica entre consultas consecutivas) | 🟡 |
 | **T5** | ⭐⭐ **Tiempo total hasta decisión** | Desde que abre AIDA hasta que cierra la duda | **Cronometraje en sesión** | 🔴 |
 | **T6** | ⭐⭐⭐ **Tiempo de verificación externa** | Minutos gastados comprobando la respuesta por otra vía | **Shadowing** (no hay otra forma) | 🔴 |

@@ -1,6 +1,11 @@
 # Análisis de los logs de AIDA — primera corrida
 
-**Hallazgos sobre datos reales.** v1.2 · 2026-08-22
+**Hallazgos sobre datos reales.** v1.3 · 2026-08-22
+
+> **v1.3 — ⭐⭐⭐ §2.9: la primera medición contra el objetivo declarado**, no contra la calidad.
+> **AIDA es más larga justo donde el asesor tiene menos tiempo**: 485 palabras de mediana en
+> objeciones y 502 en speeches, contra 205 del corpus. Y **solo una de cada cuatro consultas se
+> resuelve en un turno**.
 
 > **v1.2 — ⭐⭐ §2.8: ya existe una batería de prueba corriendo contra AIDA**, con autor y con dos
 > series distintas; una de ellas prueba exactamente dos de las tres funcionalidades del protocolo.
@@ -327,6 +332,64 @@ explica por esto.
 resultados registrados en algún lado, y si la serie de 18 ítems es de un área de calidad. ⭐ **Es
 además una vía de entrada distinta a la de la jefatura**, y con alguien que ya está haciendo el
 mismo trabajo.
+
+---
+
+## 2.9 ⭐⭐⭐ Contra el objetivo declarado: AIDA es más larga justo donde el asesor tiene menos tiempo
+
+> **Añadido el 2026-08-22.** Las secciones anteriores miden **calidad**. Ésta mide contra el
+> **objetivo**: reducir el tiempo operativo del asesor **durante la venta**. Son dos mediciones sin
+> interpretación de texto — largo de respuesta y turnos por sesión— y ninguna estaba hecha.
+> *(Todas las cifras de esta sección excluyen la batería de prueba de §2.8.)*
+
+### El largo de la respuesta, por tipo de consulta
+
+| Tipo de consulta | n | **Mediana de palabras** | % de más de 200 palabras | Momento de uso |
+|---|---|---|---|---|
+| ⚠️ **Speech** | 187 | ⚠️ **502** | **90%** | 🟡 Preparando |
+| ⚠️⚠️ **Objeción** | 19 | ⚠️⚠️ **485** | **84%** | 🔴 **En vivo** |
+| ⚠️ **Explicar un concepto** | 55 | **387** | 78% | 🔴 **En vivo** |
+| ⚠️ **Comparar opciones** | 115 | **260** | 74% | 🔴 **En vivo** |
+| Dato de producto | 386 | 207 | 59% | 🔴 En vivo |
+| Trámite | 264 | 207 | 63% | 🟢 Después |
+| **Todo el corpus** | **2.531** | **205** | **53%** | |
+
+⭐⭐⭐ **El hallazgo, en una frase: las tres categorías del momento en vivo son las que devuelven las
+respuestas más largas.** Una objeción devuelve **485 palabras** — cerca de tres minutos de lectura,
+**con el cliente esperando en el teléfono**. Un dato de producto devuelve 207.
+
+⭐ **Y contradice el objetivo sin necesidad de juzgar el contenido.** Si el propósito es reducir el
+tiempo operativo durante la venta, **devolver 485 palabras no reduce el trabajo: lo traslada** — el
+asesor todavía tiene que leer, filtrar y traducir a algo decible. **Es la misma lógica que la cita
+que hay que abrir**, aplicada al cuerpo de la respuesta.
+
+**Solo el 16,3% de las respuestas baja de 80 palabras**, que es aproximadamente lo que se puede leer
+en voz alta o escanear de un vistazo delante de alguien.
+
+⚠️ **La fila de objeción se apoya en n=19.** El largo mediano es robusto para lo que se afirma
+—orden de magnitud— pero **no se debe derivar de ahí ninguna tasa de calificación**: la base
+calificada es demasiado chica.
+
+### Los turnos por sesión
+
+| | Sesiones | % |
+|---|---|---|
+| **1 turno — preguntó y listo** | 127 | **25,9%** |
+| 2-3 turnos | 132 | 26,9% |
+| 4-6 turnos | 117 | 23,9% |
+| ⚠️ **7 o más** | 114 | **23,3%** |
+
+**Mediana: 3 turnos. Máximo: 69.**
+
+⚠️ **Este dato es ambiguo a propósito, y hay que decirlo así.** Más turnos pueden ser **una
+conversación legítima** —el asesor profundiza sobre un caso— o **la herramienta obligando a
+reformular**. El log no los distingue: no hay campo que diga si el turno siguiente es una pregunta
+nueva o la misma dicha de otro modo.
+
+⭐ **Es exactamente lo que la corrida manual tiene que desambiguar**, y por eso el campo *"¿tuviste
+que repreguntar?"* pasa a ser obligatorio. **Solo una de cada cuatro consultas se resuelve en un
+turno** — si la mayoría de los turnos extra resultan ser reformulaciones, el objetivo declarado está
+peor de lo que cualquier medición de exactitud sugiere.
 
 ---
 

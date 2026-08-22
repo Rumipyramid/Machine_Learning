@@ -2,7 +2,7 @@
 
 > ## ⚠️ Este calendario quedó parcialmente superado — leer antes de usarlo *(2026-08-22)*
 >
-> **La hoja de corrida se reescribió** (`aida-banco-preguntas-corrida.md` v2.0): ya no hay "tandas"
+> **La hoja de corrida se reescribió** (`aida-banco-preguntas-corrida.md` v3.0): ya no hay "tandas"
 > sino **8 bloques**, y dos premisas de este roadmap cambiaron:
 >
 > | Premisa original | Estado |
