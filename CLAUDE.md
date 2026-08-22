@@ -291,7 +291,9 @@ no es conocimiento de investigación sino un registro operativo con su propia bi
 - **Reglas que no se negocian:** el sueldo entra íntegro y los descuentos que repagan algo
   ya cobrado (adelantos) salen como `tipo=deuda`, para que el servicio de deuda quede
   visible; una categoría sin registrar es un **hueco**, no un gasto de cero; el día de pago se
-  reparte en orden (no negociable → reserva de vida → tarjeta), nunca al revés; las deudas se atacan de la **tasa más cara a la más barata** y una
+  reparte en orden (no negociable → reserva de vida → tarjeta), nunca al revés, salvo que el
+  **pago mínimo** de la tarjeta sea mayor, que es un piso y no una opción; un retiro de ahorros
+  entra como categoría `ahorro` y queda fuera del denominador de los ratios (no es ingreso); las deudas se atacan de la **tasa más cara a la más barata** y una
   deuda al 0% (cuotas sin intereses, adelanto) nunca se adelanta mientras exista una cara;
   **ninguna tasa se inventa** (mientras no esté la TCEA real se muestran escenarios etiquetados como
   rango de referencia); al proyectar, el déficit del mes se carga a la tarjeta porque es

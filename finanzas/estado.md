@@ -14,12 +14,11 @@ de este documento no sale de correr el script, es un supuesto y está marcado co
 
 ## 📅 El martes 25 — cómo repartir el sueldo
 
-*El sueldo de agosto entra el martes 25/08 y tiene que durar hasta el próximo. Este es el
-reparto, en orden. El orden importa: definir primero la cuota de la tarjeta y vivir con lo que
-sobre es exactamente cómo se termina financiando la comida con la tarjeta.*
+*El mínimo de la tarjeta en agosto es **S/ 2,500**. Eso no es negociable y cambia el reparto:
+la cuota deja de ser la variable de ajuste y pasa a ser un dato fijo.*
 
 ```
-python finanzas.py reparto --mes 2026-08 --reserva 1200
+python finanzas.py reparto --mes 2026-08 --reserva 1090
 ```
 
 | | | |
@@ -27,55 +26,77 @@ python finanzas.py reparto --mes 2026-08 --reserva 1200
 | **1. Entra** | **S/ 6,700** | sueldo 6,500 + cochera 200 |
 | **2. Sale sí o sí** | **S/ 3,810** | alquiler 1,250 · préstamo 1,200 · cámara 420 · terapia 360 · mantenimiento 340 · IA 240 |
 | Disponible | S/ 2,890 | |
-| **3. Se aparta para vivir** | **S/ 1,200** | comida, transporte, servicios, celular — hasta el próximo sueldo |
-| **4. A la tarjeta** | **S/ 1,690** | |
+| **3. Mínimo de la tarjeta** | **S/ 2,500** | piso del estado de cuenta |
+| **Queda para vivir** | **S/ 390** | ← el problema |
 
-### La cuota de agosto no es 3,000, es 1,690
+**Agosto tiene un hueco de S/ 810.** Vivir un mes con 390 no es un plan de austeridad, es
+imposible. La plata tiene que salir de algún lado, y la única pregunta buena es de dónde.
 
-Los 3,000 que tenías previstos son **S/ 1,310 más de lo que aguanta el mes**. Y pagarlos no
-acelera nada:
+### De dónde salen los 810
 
-| Ruta | Saldo al 31/08 |
-|---|---:|
-| Pagar 3,000 y vivir con la tarjeta | S/ 8,709 |
-| Pagar 1,690 y vivir en efectivo | S/ 8,709 |
+Comparando por lo que te deja en el bolsillo a diciembre —contando el activo que consumes,
+no solo la caja—:
 
-**Idéntico.** Con una diferencia que juega en contra de la primera: esos 1,310 serían consumo
-nuevo sobre un saldo vigente, así que pierden el periodo de gracia y devengan interés desde el
-día uno. Además queman línea disponible, que es lo único que te queda como amortiguador con
-S/ 700 de colchón.
+| Opción | Caja a diciembre | + queda en Caja Arequipa | Total |
+|---|---:|---:|---:|
+| **A.** Caja Arequipa 700 + recortar 110 de vida | S/ 9,527 | S/ 0 | **S/ 9,527** |
+| **B.** Cargar los 810 a la tarjeta | S/ 8,585 | S/ 700 | **S/ 9,285** |
+| **C.** Pausar suscripciones IA un mes (240) + caja 570 | S/ 9,527 | S/ 130 | **S/ 9,657** |
 
-Pagar 1,690 no es rendirse: es pagar el número correcto.
+**La opción B es la peor**, y por más de lo que parece: los 810 no cuestan un mes de interés
+(S/ 32), cuestan cuatro —se quedan en el saldo hasta diciembre— y encima pierden el periodo de
+gracia por ser consumo sobre saldo vigente. Diferencia contra A: **S/ 242**.
 
-⚠️ **Verifica el pago mínimo de tu estado de cuenta.** Si fuera mayor a 1,690, ese es el piso
-y hay que recortar por otro lado — pero en un saldo de 10,000 el mínimo suele estar bastante
-por debajo.
+**Vender ETFs para esto tampoco:** te deja igual que A pero con comisiones y posible costo
+tributario encima, y desarma la única reserva de días que tienes.
 
-### Y desde setiembre se endereza solo
+### Lo recomendado
 
-El préstamo muere con este pago. Desde setiembre esos 1,200 dejan de salir y la cuota sube
-sola a 2,890 sin que tengas que apretarte más:
+**Opción C si puedes; si no, la A.** La diferencia entre las dos es chica (S/ 130) pero C es
+la única que crea margen en vez de moverlo: los S/ 240 de suscripciones de IA son la **única
+línea fija con juego real** en todo el presupuesto —el alquiler, el mantenimiento, la cámara y
+la terapia no se tocan— y basta pausarlas un mes. Si son herramienta de trabajo que factura,
+descártalo y anda por la A.
 
-| Cierre de | Cuota | Saldo tarjeta |
+### En concreto, el martes
+
+1. **Paga los S/ 2,500** a la tarjeta. Es el piso, no hay decisión que tomar ahí.
+2. **Saca S/ 570 de Caja Arequipa** (o 700 si no pausas la IA) y **sepáralos con el resto de la
+   plata de vida el mismo día**, físicamente.
+3. **Vive con S/ 1,200** (o 1,090 en la opción A) hasta el próximo sueldo.
+4. **Anota cada gasto desde el martes.** Este mes es el que define todo lo demás.
+
+### Setiembre repone lo que agosto gasta
+
+El préstamo muere con este pago y liberas 1,200/mes. Lo primero de setiembre es **devolver los
+700 a Caja Arequipa**, antes de subir la cuota de la tarjeta.
+
+Sí, es plata al 0% mientras debes al 60%. **Cuesta S/ 82 en total.** Por 82 soles, tener
+colchón desde setiembre en vez de diciembre es una compra obvia: quedarte cuatro meses sin
+liquidez es exactamente la condición que fabricó los 10,000 que estás pagando.
+
+| Cierre de | A la tarjeta | Saldo tarjeta |
 |---|---:|---:|
-| Agosto | S/ 1,690 | S/ 8,709 |
-| Setiembre | S/ 2,890 | S/ 6,167 |
-| Octubre | S/ 2,890 | S/ 3,523 |
-| Noviembre | S/ 2,890 | S/ 774 |
-| Diciembre | S/ 805 | **S/ 0** + S/ 8,585 de caja |
+| Agosto | S/ 2,500 (mínimo) | S/ 7,899 |
+| Setiembre | S/ 2,190 + 700 al colchón | S/ 6,025 |
+| Octubre | S/ 2,890 | S/ 3,376 |
+| Noviembre | S/ 2,890 | S/ 620 |
+| Diciembre | S/ 645 | **S/ 0** |
 
-Agosto es el mes apretado del año. No es el mes tipo.
+Cierras diciembre con la tarjeta en cero y **S/ 9,445 de caja** — 3.6 meses de gastos fijos,
+por encima del objetivo de 3. Diciembre sigue en verde, y ahora con el colchón repuesto desde
+setiembre en vez de aparecer recién con la gratificación.
 
-### Lo que hay que hacer el martes, en concreto
+### ⚠️ El mínimo de 2,500 merece una mirada
 
-1. **Separa los S/ 1,200 de vida el mismo día**, físicamente — otra cuenta, sobre, lo que sea.
-   Si quedan mezclados con el resto, la cuota se los come y terminas en la tarjeta.
-2. **Paga S/ 1,690 a la tarjeta**, no 3,000.
-3. **Anota cada gasto de esos 1,200** desde el martes. Es el mes de medir: la reserva de 1,200
-   es un supuesto mío, no un dato tuyo. Si al llegar setiembre te sobró o te faltó, ahí sale
-   el número real y recalibramos todo.
-4. **No toques los S/ 700 de Caja Arequipa.** Con este reparto no hacen falta, y son los ocho
-   días de colchón que te separan de volver a la tarjeta.
+**Es el 25% del saldo.** Para un mínimo revolvente es alto: lo habitual está bastante por
+debajo. Lo más probable es que incluya **cuotas de compras hechas en cuotas**, que son
+contractuales y no se pueden bajar.
+
+Si es así, es buena noticia: significaría que una parte de los 10,000 está en cuotas **sin
+intereses**, y entonces la tasa efectiva de tu deuda es menor que el 60% que venimos asumiendo
+y los intereses proyectados están sobreestimados. Pídele al banco el desglose del saldo entre
+revolvente y cuotas — es la misma llamada en la que preguntas la TCEA.
 
 ## 🩺 Diagnóstico vigente y plan a diciembre
 
@@ -537,6 +558,8 @@ Se registran para poder corregirlos, no porque estén verificados:
 - **"IA -240"** se interpreta como suscripciones mensuales de herramientas.
 - **El saldo TC de 10,000** se asume anterior al pago de agosto. El saldo de cierre
   proyectado pasa a **S/ 8,709** con la cuota corregida de 1,690 y cero consumo nuevo.
+- **El pago mínimo de 2,500 se toma como dato duro** del estado de cuenta. Queda por confirmar
+  si es un mínimo revolvente o incluye cuotas de compras en cuotas (ver §del martes).
 - **La reserva de vida de S/ 1,200/mes es un supuesto**, no un dato medido. Es el número que
   hay que confirmar en setiembre; todo el plan se recalibra con él.
 - **El sueldo entra el martes 25/08** y cubre hasta el siguiente pago (≈25/09), así que la
@@ -559,6 +582,28 @@ Se registran para poder corregirlos, no porque estén verificados:
 
 Una entrada por mes, al cerrar. Formato: qué pasó, qué cambió respecto al mes anterior,
 qué decisión se tomó.
+
+### 2026-08 (h) — El mínimo de la tarjeta es 2,500
+
+Dato nuevo: el pago mínimo de agosto es S/ 2,500, no elegible. Con eso la cuota deja de ser la
+variable de ajuste y agosto queda con **S/ 390 para vivir un mes: un hueco de S/ 810**.
+
+Evaluadas tres salidas por su efecto neto a diciembre (contando el activo consumido, no solo
+la caja): pausar la IA un mes + 570 de Caja Arequipa (9,657) > Caja Arequipa 700 + recortar 110
+(9,527) > cargar los 810 a la tarjeta (9,285). Cargar a la tarjeta es la peor por 242: los 810
+se quedan cuatro meses en el saldo, no uno, y pierden el periodo de gracia.
+
+Decidido: pagar el mínimo, cubrir el hueco con ahorros (y con la pausa de IA si es viable), y
+**reponer los 700 en setiembre antes de subir la cuota** — cuesta S/ 82 en total y devuelve el
+colchón cuatro meses antes.
+
+Se abre una verificación con potencial de buena noticia: un mínimo de 25% del saldo es alto
+para un revolvente, y probablemente incluya cuotas de compras en cuotas. Si parte de los 10,000
+está en cuotas sin intereses, la tasa efectiva es menor que el 60% supuesto.
+
+`finanzas.py` gana la categoría reservada `ahorro`: un retiro de ahorros financia el mes pero
+no es ingreso, y si entra al denominador los ratios mienten — un mes malo se ve sano por haber
+vaciado la cuenta.
 
 ### 2026-08 (g) — Plan del día de pago
 

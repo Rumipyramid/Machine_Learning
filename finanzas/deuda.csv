@@ -1,4 +1,4 @@
 mes,acreedor,instrumento,saldo_inicial,pago,saldo_final,tcea,estado,nota
-2026-08,Banco,Tarjeta de credito,10000,1690,8709,,vigente,TCEA por confirmar. Cuota corregida a 1690 (lo que aguanta el mes tras apartar 1200 de vida); saldo_final incluye intereses a TCEA 60% supuesta y asume cero consumo nuevo
+2026-08,Banco,Tarjeta de credito,10000,2500,7899,,vigente,Pago minimo del estado de cuenta = 2500 (25% del saldo: alto para un minimo revolvente — VERIFICAR si incluye cuotas de compras en cuotas). saldo_final a TCEA 60% supuesta y cero consumo nuevo
 2026-08,Empleador,Adelanto de sueldo,1200,1200,0,0,cancelado,CANCELADO. Fue un adelanto unico de 1200 repagado integro en agosto — no se repite
 2026-08,Amigo (venta privada),Cuotas camara,,420,,0,vigente,Compra directa a un amigo por 3000 sin intereses (~7 cuotas de 420). NO pasa por la tarjeta: no hay doble conteo. Cuotas ya pagadas por confirmar

@@ -47,6 +47,12 @@ CATEGORIA_TC = "tarjeta_credito"
 # el dato existe — el resumen sigue avisando que falta el desglose.
 CATEGORIA_RESERVA = "reserva_vida"
 
+# Categoria reservada: dinero que entra al mes desde un activo propio (retiro de
+# ahorros, venta de algo). Financia el mes pero NO es ingreso: si entra al
+# denominador, los ratios mienten — un mes malo se ve sano por haber vaciado la
+# cuenta de ahorros.
+CATEGORIA_AHORRO = "ahorro"
+
 
 # ---------------------------------------------------------------- utilidades
 
@@ -179,6 +185,9 @@ def calcular_resumen(mes: str) -> dict:
     total = {t: sum(f["monto"] for f in por_tipo[t]) for t in TIPOS}
 
     ingresos = total["ingreso"]
+    desahorro = sum(f["monto"] for f in por_tipo["ingreso"]
+                    if f["categoria"] == CATEGORIA_AHORRO)
+    ingresos_propios = ingresos - desahorro
     fijos = -total["fijo"]          # se guardan negativos, aqui como magnitud
     variables = -total["variable"]
     deuda = -total["deuda"]
@@ -212,8 +221,10 @@ def calcular_resumen(mes: str) -> dict:
         "otros_deuda": otros_deuda,
         "balance": balance,
         "capacidad_pago": capacidad_pago,
-        "ratio_deuda_ingreso": (deuda / ingresos) if ingresos else 0.0,
-        "ratio_fijos_ingreso": (fijos / ingresos) if ingresos else 0.0,
+        "desahorro": desahorro,
+        "ingresos_propios": ingresos_propios,
+        "ratio_deuda_ingreso": (deuda / ingresos_propios) if ingresos_propios else 0.0,
+        "ratio_fijos_ingreso": (fijos / ingresos_propios) if ingresos_propios else 0.0,
         "huecos": huecos,
         "reserva_vida": reserva,
         "estimados": [f["concepto"] for f in estimados],
@@ -245,12 +256,19 @@ def imprimir_resumen(r: dict) -> None:
     print(f"  Balance del mes            {soles(r['balance'], 12)}")
     print(f"{'-' * 62}\n")
 
+    if r["desahorro"]:
+        print(f"  De ese balance, {soles(r['desahorro'])} salieron de tus ahorros, no de")
+        print(f"  tus ingresos. El mes cuadra, pero consumiendo patrimonio.\n")
+
     print("INDICADORES")
     print(f"  Capacidad de pago (segun registrado) {soles(r['capacidad_pago'], 8)}")
     print(f"  Servicio de deuda comprometido       {soles(r['servicio_deuda'], 8)}")
     brecha = r["capacidad_pago"] - r["servicio_deuda"]
     print(f"  Brecha (capacidad - servicio)        {soles(brecha, 8)}")
     print(f"  Servicio de deuda / ingresos         {r['ratio_deuda_ingreso']:>7.0%}   (sano: < 30%)")
+    if r["desahorro"]:
+        print(f"  (ratios sobre ingresos propios de {soles(r['ingresos_propios'])}, sin contar")
+        print(f"   el retiro de ahorros)")
     print(f"  Fijos / ingresos                     {r['ratio_fijos_ingreso']:>7.0%}   (sano: < 50%)")
 
     if r["huecos"] or r["estimados"]:
@@ -454,7 +472,8 @@ def imprimir_reparto(r: dict, reserva: float) -> None:
     El orden importa. Definir la cuota primero y vivir con lo que sobre es como
     se termina financiando la comida con la tarjeta.
     """
-    ingresos = [f for f in r["movimientos"] if f["tipo"] == "ingreso"]
+    ingresos = [f for f in r["movimientos"] if f["tipo"] == "ingreso"
+                and f["categoria"] != CATEGORIA_AHORRO]
     fijos = [f for f in r["movimientos"] if f["tipo"] == "fijo"]
     otros_deuda = [f for f in r["movimientos"]
                    if f["tipo"] == "deuda" and f["categoria"] != CATEGORIA_TC]
@@ -467,7 +486,7 @@ def imprimir_reparto(r: dict, reserva: float) -> None:
     print("1. ENTRA")
     for f in ingresos:
         print(f"     {f['concepto']:<30} {soles(f['monto'], 10)}")
-    print(f"     {'':<30} {soles(r['ingresos'], 10)}\n")
+    print(f"     {'':<30} {soles(r['ingresos_propios'], 10)}\n")
 
     print("2. SALE SI O SI (no negociable)")
     for f in sorted(fijos + otros_deuda, key=lambda x: x["monto"]):
@@ -475,7 +494,7 @@ def imprimir_reparto(r: dict, reserva: float) -> None:
     no_negociable = r["fijos"] + r["otros_deuda"]
     print(f"     {'':<30} {soles(no_negociable, 10)}\n")
 
-    disponible = r["ingresos"] - no_negociable
+    disponible = r["ingresos_propios"] - no_negociable
     print(f"   Disponible                       {soles(disponible, 10)}\n")
 
     print(f"3. SE APARTA PARA VIVIR           {soles(reserva, 10)}")
