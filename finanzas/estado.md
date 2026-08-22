@@ -21,6 +21,9 @@ la cuota deja de ser la variable de ajuste y pasa a ser un dato fijo.*
 python finanzas.py reparto --mes 2026-08 --reserva 1200 --minimo 2500
 ```
 
+*El comando calcula el hueco sobre los ingresos propios; el adelanto que lo tapa se registra
+como `prestamo_recibido` para que no se cuele como si fuera sueldo.*
+
 | | | |
 |---|---:|---|
 | **1. Entra** | **S/ 6,700** | sueldo 6,500 + cochera 200 |
@@ -34,58 +37,80 @@ imposible. La plata tiene que salir de algún lado, y la única pregunta buena e
 
 ### De dónde salen los 810
 
-Comparando por lo que te deja en el bolsillo a diciembre —contando el activo que consumes,
-no solo la caja—:
+Apareció una fuente nueva: **un segundo adelanto de hasta S/ 2,000 con S/ 57 de interés.**
+Eso es **2.85% mensual ≈ 40% anual** — más barato que la tarjeta (60%), muchísimo más caro
+que la cuenta de ahorros (~0-4%).
 
-| Opción | Caja a diciembre | + queda en Caja Arequipa | Total |
-|---|---:|---:|---:|
-| **A.** Caja Arequipa 700 + recortar 110 de vida | S/ 9,527 | S/ 0 | **S/ 9,527** |
-| **B.** Cargar los 810 a la tarjeta | S/ 8,585 | S/ 700 | **S/ 9,285** |
-| **C.** Pausar suscripciones IA un mes (240) + caja 570 | S/ 9,527 | S/ 130 | **S/ 9,657** |
+Comparando las rutas a **igual nivel de vida** (1,200 en agosto), por la liquidez que te queda
+a diciembre:
 
-**La opción B es la peor**, y por más de lo que parece: los 810 no cuestan un mes de interés
-(S/ 32), cuestan cuatro —se quedan en el saldo hasta diciembre— y encima pierden el periodo de
-gracia por ser consumo sobre saldo vigente. Diferencia contra A: **S/ 242**.
+| Ruta | Liquidez a diciembre | Colchón en agosto |
+|---|---:|---|
+| Caja Arequipa 700 + comer S/ 110 menos | S/ 9,445 | **0 por un mes** |
+| **Adelanto de 810** (interés ~23) | S/ 9,295 | S/ 700 intacto |
+| Caja Arequipa 700 + cargar 110 a la tarjeta | S/ 9,192 | **0 por un mes** |
 
-**Vender ETFs para esto tampoco:** te deja igual que A pero con comisiones y posible costo
-tributario encima, y desarma la única reserva de días que tienes.
+**Sí, es posible no tocar Caja Arequipa: el adelanto cuesta S/ 150 y te compra dos cosas** —
+el colchón intacto todo el mes y comer normal en vez de recortar 110. Contra la ruta
+verdaderamente comparable (vaciar la caja *y* cargar los 110 a la tarjeta), el adelanto es
+además **S/ 103 mejor**.
 
-### Lo recomendado
+### Pide 1,000, no 2,000
 
-**Opción C si puedes; si no, la A.** La diferencia entre las dos es chica (S/ 130) pero C es
-la única que crea margen en vez de moverlo: los S/ 240 de suscripciones de IA son la **única
-línea fija con juego real** en todo el presupuesto —el alquiler, el mantenimiento, la cámara y
-la terapia no se tocan— y basta pausarlas un mes. Si son herramienta de trabajo que factura,
-descártalo y anda por la A.
+Cada sol de más cuesta interés y aprieta setiembre, sin comprar nada:
+
+| Adelanto | Interés | Liquidez a diciembre |
+|---:|---:|---:|
+| S/ 810 | 23 | S/ 9,295 |
+| **S/ 1,000** | **28** | **S/ 9,289** |
+| S/ 1,500 | 43 | S/ 9,273 |
+| S/ 2,000 | 57 | S/ 9,257 |
+
+**Pide S/ 1,000.** Cubre el hueco de 810 y deja 190 de margen por seis soles, que es barato
+dado que los 1,200 de vida son un supuesto mío y no un dato tuyo. Pedir los 2,000 completos
+te cuesta 32 soles por plata que no necesitas.
+
+⚠️ **Confirma si los 57 son proporcionales o fijos.** Si cobran 57 sea cual sea el monto, pedir
+1,000 cuesta lo mismo que pedir 810 y el cálculo de arriba cambia un poco — pero la conclusión
+de no pedir de más se mantiene.
+
+### El adelanto no borra el problema, lo mueve a setiembre
+
+Setiembre paga el adelanto y su interés, así que el alivio que esperábamos llega recortado:
+
+| Cierre de | Disponible | A la tarjeta | Saldo tarjeta | Liquidez |
+|---|---:|---:|---:|---:|
+| Agosto | 2,690 | 2,500 (mínimo) | S/ 7,899 | S/ 890 |
+| Setiembre | 1,862 | 2,052 | S/ 6,163 | S/ 700 |
+| Octubre | 2,890 | 2,890 | S/ 3,520 | S/ 700 |
+| Noviembre | 2,890 | 2,890 | S/ 770 | S/ 700 |
+| Diciembre | 9,390 | 801 | **S/ 0** | **S/ 9,289** |
+
+Diciembre cierra en verde igual, con 3.6 meses de colchón, y los S/ 700 de Caja Arequipa
+quedan intactos todo el camino.
+
+### 🚧 La condición: este es el último
+
+Dos adelantos seguidos todavía es un puente. Tres es un mecanismo — y un mecanismo al 40%
+anual, en el que cada mes se tapa con la plata del siguiente y la deuda nunca resuelve.
+
+Agosto justifica el puente porque carga dos cosas que no se repiten: la devolución del
+adelanto viejo (1,200) **y** el mínimo de la tarjeta (2,500), en el mismo mes. Desde octubre
+tienes 4,090 de capacidad y no hace falta nada de esto.
+
+**Si setiembre pide otro adelanto, el problema dejó de ser de calendario y pasó a ser que el
+presupuesto no cierra** — y esa es otra conversación, con otras decisiones. La señal de alarma
+es esa, no el saldo de la tarjeta.
 
 ### En concreto, el martes
 
-1. **Paga los S/ 2,500** a la tarjeta. Es el piso, no hay decisión que tomar ahí.
-2. **Saca S/ 570 de Caja Arequipa** (o 700 si no pausas la IA) y **sepáralos con el resto de la
-   plata de vida el mismo día**, físicamente.
-3. **Vive con S/ 1,200** (o 1,090 en la opción A) hasta el próximo sueldo.
-4. **Anota cada gasto desde el martes.** Este mes es el que define todo lo demás.
-
-### Setiembre repone lo que agosto gasta
-
-El préstamo muere con este pago y liberas 1,200/mes. Lo primero de setiembre es **devolver los
-700 a Caja Arequipa**, antes de subir la cuota de la tarjeta.
-
-Sí, es plata al 0% mientras debes al 60%. **Cuesta S/ 82 en total.** Por 82 soles, tener
-colchón desde setiembre en vez de diciembre es una compra obvia: quedarte cuatro meses sin
-liquidez es exactamente la condición que fabricó los 10,000 que estás pagando.
-
-| Cierre de | A la tarjeta | Saldo tarjeta |
-|---|---:|---:|
-| Agosto | S/ 2,500 (mínimo) | S/ 7,899 |
-| Setiembre | S/ 2,190 + 700 al colchón | S/ 6,025 |
-| Octubre | S/ 2,890 | S/ 3,376 |
-| Noviembre | S/ 2,890 | S/ 620 |
-| Diciembre | S/ 645 | **S/ 0** |
-
-Cierras diciembre con la tarjeta en cero y **S/ 9,445 de caja** — 3.6 meses de gastos fijos,
-por encima del objetivo de 3. Diciembre sigue en verde, y ahora con el colchón repuesto desde
-setiembre en vez de aparecer recién con la gratificación.
+1. **Pide el adelanto de S/ 1,000** antes del martes.
+2. **Paga los S/ 2,500** a la tarjeta. Es el piso, no hay decisión ahí.
+3. **Separa los S/ 1,200 de vida el mismo día**, físicamente. Los 190 que sobran son margen
+   del mes, no plata libre.
+4. **No toques Caja Arequipa.** Ese es justamente el punto de pedir el adelanto.
+5. **Anota cada gasto desde el martes.** Si vivir te cuesta más de 1,200, quiero saberlo antes
+   de setiembre — es el número que gobierna todo lo demás.
 
 ### ⚠️ El mínimo de 2,500 merece una mirada
 
@@ -558,6 +583,10 @@ Se registran para poder corregirlos, no porque estén verificados:
 - **"IA -240"** se interpreta como suscripciones mensuales de herramientas.
 - **El saldo TC de 10,000** se asume anterior al pago de agosto. El saldo de cierre
   proyectado pasa a **S/ 8,709** con la cuota corregida de 1,690 y cero consumo nuevo.
+- **El interés del adelanto se asume proporcional** (57 por 2,000 → ~28 por 1,000). Si es una
+  comisión fija, pedir 1,000 cuesta lo mismo que pedir 810 y conviene revisar el monto.
+- **El adelanto se asume devuelto íntegro en setiembre**, como el anterior. Si el plazo fuera
+  mayor, la tasa efectiva es más barata y setiembre respira.
 - **El pago mínimo de 2,500 se toma como dato duro** del estado de cuenta. Queda por confirmar
   si es un mínimo revolvente o incluye cuotas de compras en cuotas (ver §del martes).
 - **La reserva de vida de S/ 1,200/mes es un supuesto**, no un dato medido. Es el número que
@@ -582,6 +611,30 @@ Se registran para poder corregirlos, no porque estén verificados:
 
 Una entrada por mes, al cerrar. Formato: qué pasó, qué cambió respecto al mes anterior,
 qué decisión se tomó.
+
+### 2026-08 (i) — Se tapa el hueco con un segundo adelanto, no con ahorros
+
+Aparece una fuente nueva: segundo adelanto de hasta 2,000 con 57 de interés, o sea **2.85%
+mensual ≈ 40% anual** — más caro que los ahorros, más barato que la tarjeta.
+
+Comparadas las rutas a igual nivel de vida (1,200 en agosto): vaciar Caja Arequipa y comer 110
+menos deja 9,445 de liquidez a diciembre; el adelanto de 810 deja 9,295; vaciar la caja **y**
+cargar 110 a la tarjeta deja 9,192. **Decidido el adelanto**: cuesta 150 contra la primera,
+pero mantiene el colchón intacto y el nivel de vida, y le gana por 103 a la ruta realmente
+comparable.
+
+**Monto: 1,000, no 2,000.** Cubre el hueco de 810 y deja 190 de margen por 6 soles; pedir el
+máximo cuesta 32 por plata que no se necesita.
+
+El adelanto no borra el problema, lo mueve: setiembre baja de 4,090 a 1,862 de disponible.
+Diciembre sigue cerrando en verde con 9,289 de liquidez y los 700 de Caja Arequipa intactos.
+
+Registrada la **condición**: este es el último. Agosto justifica el puente porque carga la
+devolución del adelanto viejo y el mínimo de la tarjeta en el mismo mes; desde octubre hay
+4,090 de capacidad. Si setiembre pide otro, el problema dejó de ser de calendario.
+
+Nueva categoría reservada `prestamo_recibido`, hermana de `ahorro`: plata que entra al mes sin
+ser ingreso. Ninguna de las dos cuenta en el denominador de los ratios.
 
 ### 2026-08 (h) — El mínimo de la tarjeta es 2,500
 

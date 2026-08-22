@@ -8,5 +8,5 @@ mes,concepto,categoria,tipo,monto,estado,nota
 2026-08,Suscripciones IA,herramientas,fijo,-240,confirmado,
 2026-08,Cuota TC agosto,tarjeta_credito,deuda,-2500,confirmado,PAGO MINIMO del estado de cuenta. No es elegible: 2500 es el piso. Deja solo 390 para vivir, de ahi el retiro de Caja Arequipa
 2026-08,Adelanto de sueldo,adelanto,deuda,-1200,confirmado,Adelanto UNICO de 1200 ya cobrado y repagado integro en agosto. No se repite: desde setiembre libera 1200/mes
-2026-08,Reserva de vida,reserva_vida,variable,-1090,estimado,PROVISIONAL y apretada: 1090 en vez de los 1200 estimados, porque el minimo de la tarjeta se come el margen. Se reemplaza por el gasto real medido desde el 25/08
-2026-08,Retiro Caja Arequipa,ahorro,ingreso,700,estimado,Se saca el colchon para cubrir el hueco que deja el pago minimo de 2500. Deja la liquidez inmediata en cero — se repone en setiembre
+2026-08,Reserva de vida,reserva_vida,variable,-1200,estimado,PROVISIONAL. Se sostiene en 1200 gracias al adelanto nuevo, sin recortar ni tocar Caja Arequipa. Se reemplaza por el gasto real medido desde el 25/08
+2026-08,Adelanto nuevo,prestamo_recibido,ingreso,1000,estimado,Segundo adelanto para tapar el hueco de 810 que deja el pago minimo + 190 de margen (la reserva de vida es estimada). ~2.85%/mes = ~40% anual. Se devuelve integro en setiembre. NO es ingreso: es deuda

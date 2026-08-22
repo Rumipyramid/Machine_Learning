@@ -2,3 +2,4 @@ mes,acreedor,instrumento,saldo_inicial,pago,saldo_final,tcea,estado,nota
 2026-08,Banco,Tarjeta de credito,10000,2500,7899,,vigente,Pago minimo del estado de cuenta = 2500 (25% del saldo: alto para un minimo revolvente — VERIFICAR si incluye cuotas de compras en cuotas). saldo_final a TCEA 60% supuesta y cero consumo nuevo
 2026-08,Empleador,Adelanto de sueldo,1200,1200,0,0,cancelado,CANCELADO. Fue un adelanto unico de 1200 repagado integro en agosto — no se repite
 2026-08,Amigo (venta privada),Cuotas camara,,420,,0,vigente,Compra directa a un amigo por 3000 sin intereses (~7 cuotas de 420). NO pasa por la tarjeta: no hay doble conteo. Cuotas ya pagadas por confirmar
+2026-08,Empleador,Adelanto de sueldo 2,1000,0,1028,40,vigente,Segundo adelanto: 1000 recibidos en agosto que se devuelven en setiembre con ~28 de interes (2.85% mensual = ~40% TEA proporcional a los 57 que cobran por 2000). CONFIRMAR si el interes es proporcional o fijo

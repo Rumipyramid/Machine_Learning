@@ -82,9 +82,10 @@ mes,concepto,categoria,tipo,monto,estado,nota
 - **`categoria`** tiene dos valores **reservados**. `reserva_vida` marca una bolsa estimada
   para el gasto de vida mientras las categorías base no estén medidas: cuadra el balance sin
   fingir que el dato existe, y el resumen sigue avisando que falta el desglose. Y
-  `ahorro` marca dinero que entra desde un activo propio (retiro de ahorros, venta): financia
-  el mes pero **no es ingreso**, y el script lo excluye del denominador de los ratios — si no,
-  un mes malo se ve sano por haber vaciado la cuenta. Y `tarjeta_credito` que marca cuál de los pagos
+  `ahorro` y `prestamo_recibido` marcan dinero que entra al mes sin ser ingreso: el propio
+  (retiro de ahorros, venta de algo) y el ajeno (un adelanto, un préstamo). Financian el mes
+  pero no son capacidad de pago, así que el script los excluye del denominador de los ratios —
+  si no, un mes malo se ve sano por haber vaciado la cuenta o pedido prestado. Y `tarjeta_credito` que marca cuál de los pagos
   de deuda es la cuota de la tarjeta. Sin esa marca, `proyeccion` no puede separar lo que
   amortiza la tarjeta de lo que no (adelantos, cuotas sin intereses) y proyectar con una cuota
   distinta a la registrada da resultados falsos. El script avisa si falta.

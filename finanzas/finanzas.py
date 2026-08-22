@@ -53,6 +53,12 @@ CATEGORIA_RESERVA = "reserva_vida"
 # cuenta de ahorros.
 CATEGORIA_AHORRO = "ahorro"
 
+# Plata que entra al mes pero no es ingreso: la propia (retiro de ahorros) y la
+# ajena (un prestamo recibido). Ambas financian el mes; ninguna es capacidad de
+# pago, asi que las dos quedan fuera del denominador de los ratios.
+CATEGORIA_PRESTAMO = "prestamo_recibido"
+CATEGORIAS_NO_INGRESO = (CATEGORIA_AHORRO, CATEGORIA_PRESTAMO)
+
 
 # ---------------------------------------------------------------- utilidades
 
@@ -186,7 +192,7 @@ def calcular_resumen(mes: str) -> dict:
 
     ingresos = total["ingreso"]
     desahorro = sum(f["monto"] for f in por_tipo["ingreso"]
-                    if f["categoria"] == CATEGORIA_AHORRO)
+                    if f["categoria"] in CATEGORIAS_NO_INGRESO)
     ingresos_propios = ingresos - desahorro
     fijos = -total["fijo"]          # se guardan negativos, aqui como magnitud
     variables = -total["variable"]
@@ -257,8 +263,8 @@ def imprimir_resumen(r: dict) -> None:
     print(f"{'-' * 62}\n")
 
     if r["desahorro"]:
-        print(f"  De ese balance, {soles(r['desahorro'])} salieron de tus ahorros, no de")
-        print(f"  tus ingresos. El mes cuadra, pero consumiendo patrimonio.\n")
+        print(f"  De ese balance, {soles(r['desahorro'])} no son ingresos: son ahorros")
+        print(f"  propios o plata prestada. El mes cuadra, pero no con lo que ganas.\n")
 
     print("INDICADORES")
     print(f"  Capacidad de pago (segun registrado) {soles(r['capacidad_pago'], 8)}")
@@ -268,7 +274,7 @@ def imprimir_resumen(r: dict) -> None:
     print(f"  Servicio de deuda / ingresos         {r['ratio_deuda_ingreso']:>7.0%}   (sano: < 30%)")
     if r["desahorro"]:
         print(f"  (ratios sobre ingresos propios de {soles(r['ingresos_propios'])}, sin contar")
-        print(f"   el retiro de ahorros)")
+        print(f"   ahorros ni prestamos)")
     print(f"  Fijos / ingresos                     {r['ratio_fijos_ingreso']:>7.0%}   (sano: < 50%)")
 
     if r["huecos"] or r["estimados"]:
@@ -473,7 +479,7 @@ def imprimir_reparto(r: dict, reserva: float, minimo: float = 0.0) -> None:
     se termina financiando la comida con la tarjeta.
     """
     ingresos = [f for f in r["movimientos"] if f["tipo"] == "ingreso"
-                and f["categoria"] != CATEGORIA_AHORRO]
+                and f["categoria"] not in CATEGORIAS_NO_INGRESO]
     fijos = [f for f in r["movimientos"] if f["tipo"] == "fijo"]
     otros_deuda = [f for f in r["movimientos"]
                    if f["tipo"] == "deuda" and f["categoria"] != CATEGORIA_TC]
