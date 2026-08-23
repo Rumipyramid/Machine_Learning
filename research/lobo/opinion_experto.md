@@ -2425,6 +2425,96 @@ objetivo divergiendo por segmento) y la intuición 40 para PARADISE (reconocimie
   agrega un criterio de gate operacional que el piloto de farmacia+triage IA todavía no tenía
   explícito: exigir métrica clínica junto a la de satisfacción, no solo la segunda.
 
+### 49. Un trigger paramétrico más preciso reduce el basis risk, pero no garantiza un contrato más eficiente — depende de si el residuo queda correlacionado con el índice
+Louaas & Picard (2026, *The Geneva Risk and Insurance Review*) modelan el seguro paramétrico así:
+el vector de parámetros públicamente observable produce un **índice de pérdida** (el valor esperado
+condicional de la pérdida real), y el **basis risk** es la diferencia aleatoria entre la pérdida
+real y ese índice. El resultado formal del paper, que el resumen de una línea citado en tesis 4 no
+capturaba: una estructura de información más precisa (que reduce el *tamaño* del basis risk) **no
+garantiza por sí sola** una cobertura más eficiente — depende de si el vector de parámetros y el
+basis risk residual quedan **distribuidos independientemente** o no. Cuando el residuo queda
+correlacionado con el índice observado, el diseño óptimo del contrato cambia y afinar el trigger
+por sí solo no cierra la brecha de eficiencia.
+**Heurística de decisión:** antes de vender "trigger más preciso = mejor producto paramétrico",
+verificar si el basis risk residual del diseño propuesto es independiente del índice de pérdida —
+si no lo es, la ganancia puede requerir rediseñar qué variables entran al índice, no solo medirlas
+con más resolución. Transferible más allá de seguros paramétricos: cualquier "métrica proxy"
+(screening, score de riesgo, índice de siniestralidad) enfrenta la misma pregunta — reducir el
+ruido de la proxy no basta si el error residual está sistemáticamente correlacionado con lo que se
+quiere medir, no solo disperso al azar.
+- **Fuente:** F-164 (🟢A, Louaas & Picard 2026, *The Geneva Risk and Insurance Review* — ya citado
+  en tesis 4 solo por el resumen "diseño óptimo de trigger")
+- **Leído a fondo:** 2026-08-23 (arxiv.org y hal.science bloqueados por el proxy del entorno;
+  reconstruido vía búsqueda dirigida — SSRN, ResearchGate, IDEAS/RePEc — que confirman el modelo
+  formal: índice de pérdida = valor esperado condicional, basis risk = diferencia residual, y la
+  condición de independencia como bisagra del resultado)
+- **Conexión razonada, no forzada:** no baja la confianza de tesis 4 (sigue Alta en que el
+  paramétrico es la jugada de producto correcta) — acota su alcance: la lectura de "cualquier
+  trigger más preciso mejora el producto" no está sostenida por F-164 tal como se citaba; el
+  criterio correcto es la independencia del residuo, no la precisión bruta del índice.
+
+### 50. Antes de importar un marco teórico canónico para justificar un mecanismo de diseño, verificar si una teoría rival ya lo desplazó en una prueba empírica de cabeza a cabeza
+Berger & Calabrese (1975) formulan la Teoría de Reducción de Incertidumbre (URT) con 7 axiomas y 21
+teoremas: en interacciones iniciales las personas buscan reducir la incertidumbre sobre la otra
+parte mediante estrategias de búsqueda de información (pasiva, activa, interactiva), porque la
+incertidumbre genera estrés cognitivo aversivo. Es el marco que sostiene, en el node de material
+visual (F-119 a F-127), por qué el material visual importa más en canal virtual que presencial —
+sustituye señales no verbales ausentes en el contacto remoto. Leído a fondo: la propia disciplina de
+comunicación interpersonal ya sometió URT a una prueba de cabeza a cabeza contra una teoría rival —
+Predicted Outcome Value Theory (Sunnafrank, 1986, 1990) — y encontró que los axiomas/teoremas
+originales de URT **no se sostienen** cuando se controla por Predicted Outcome Value: las personas
+en interacciones iniciales no buscan reducir incertidumbre por sí misma, sino calcular el valor o
+recompensa esperada de la relación, y abandonan la interacción cuando ese cálculo sale negativo
+incluso con alta incertidumbre remanente.
+**Heurística de decisión:** cuando un node importa una teoría canónica (por antigüedad y
+peer-review) como marco explicativo de un mecanismo de negocio, buscar explícitamente si existe una
+prueba de cabeza a cabeza posterior que la haya desplazado — no basta con que la teoría original sea
+"seminal" o esté bien citada. Aplicado aquí: "el material visual reduce incertidumbre en canal
+virtual" puede seguir siendo cierto en el resultado (más material visual → más conversión), pero el
+mecanismo correcto a optimizar probablemente no es "dar más información para reducir incertidumbre"
+sino "señalizar valor/recompensa esperada" — la misma distinción mecanismo-vs-resultado que ya
+corrigió tesis 1 (divulgación no es lo mismo que persuasión), ahora aplicable también al material
+visual de venta consultiva.
+- **Fuente:** F-125 (🟢A, Berger & Calabrese 1975, *Human Communication Research* — ya citado en el
+  node de material visual solo como encuadre teórico, sin verificar vigencia)
+- **Leído a fondo:** 2026-08-23 (en.wikipedia.org, pressbooks.montgomerycollege.edu y
+  onlinelibrary.wiley.com bloqueados por el proxy del entorno; reconstruido vía búsqueda dirigida
+  contra iResearchNet, Businesstopia, Communication Theory.org, ERIC y el resumen del propio estudio
+  de Sunnafrank 1990 que reporta el resultado del test de cabeza a cabeza)
+- **Conexión razonada, no forzada:** ninguna de las 25 tesis cita F-125 por número (vive en el node
+  `material-visual-venta-consultiva.md`, no en el corpus de tesis) — el matiz queda registrado como
+  heurística transferible a cualquier lectura futura de ese node o de otros que importen un
+  framework teórico sin chequear su estado de vigencia empírica.
+
+### 51. El efecto ancla de una cifra headline no golpea parejo a toda la audiencia — se concentra en quien decide bajo presión de tiempo, baja confianza o menos conocimiento
+Zong & Guo (2022, *Frontiers in Psychology*, PMC8860899) corren un experimento donde sujetos
+juzgan/estiman precios de un producto tras experimentarlo, bajo condiciones de ancla externa
+(alta/baja) e interna, midiendo el efecto con un índice de anclaje (AI) y un índice de sesgo medio.
+Confirman el efecto ancla base (ya citado en tesis 15 por su resumen), pero el hallazgo que ese
+resumen de una línea no capturaba: el efecto **no es uniforme** — presión de tiempo y nivel de
+autoconfianza del consumidor lo modulan, y bajo condición de ancla externa, género, personalidad,
+conocimiento y habilidad también influyen de forma significativa.
+**Heurística de decisión:** cuando una pieza de venta usa una cifra headline como ancla (el caso
+"170%"/"200%" de tesis 15), el riesgo regulatorio y el efecto persuasivo no se distribuyen parejo en
+la audiencia — se concentran en el segmento que decide con más presión de tiempo, menos confianza en
+su propio juicio y menos conocimiento del producto. Es la misma lógica de concentración que ya
+aplicó la intuición 41 (el daño de una publicidad de precio ambigua se concentra en quien ya
+desconfía): aquí el eje de concentración es tiempo/confianza/conocimiento, no confianza previa en el
+asegurador. Para cualquier pieza con cifra ancla, el segmento más vulnerable al efecto — y más
+expuesto si Indecopi audita el material — es el que decide rápido y sabe menos: exactamente el
+segmento que un canal de venta consultiva bien diseñado debería proteger primero, no el que más
+fácil convierte.
+- **Fuente:** F-175 (🟢A, Zong & Guo 2022, *Frontiers in Psychology*/PMC — ya citado en tesis 15
+  solo por el resumen del efecto base)
+- **Leído a fondo:** 2026-08-23 (ncbi.nlm.nih.gov y frontiersin.org bloqueados por el proxy del
+  entorno; reconstruido vía búsqueda dirigida contra ResearchGate, PhilPapers y el registro del
+  propio estudio en Frontiers que confirman el diseño experimental — ancla externa alta/baja e
+  interna, índice de anclaje AI — y los moderadores exactos: tiempo, autoconfianza, género,
+  personalidad, conocimiento, habilidad)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 15 (sigue con el mismo tope que
+  ya tenía) — añade el criterio de segmentación de riesgo/efecto que la tesis todavía no tenía
+  explícito.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3142,3 +3232,40 @@ objetivo divergiendo por segmento) y la intuición 40 para PARADISE (reconocimie
   tesis 12, 21 y 9/10/23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 15 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30
   días — sin podar todavía.
+- **2026-08-23** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward 6324fc0→8cc091a, el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados**, mismo tope exacto que procesó la corrida de ayer (2026-08-22) — **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  décimo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
+  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por
+  completar el paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12
+  (mecanismo de `cronista`, cada ~3 días, no vence formalmente hoy pero ya lleva once días sin
+  correr; no lo disparo aquí porque es rutina de `cronista`, no de este proceso diario). Sí corrió
+  la rutina diaria de intuición (decimoctava corrida desde el 2026-08-06): de 134 fuentes 🟢A
+  confirmadas por conteo propio en el ledger, 48 ya tenían lectura profunda del Lobo — de las 86
+  restantes elegí 3 al azar puro: F-164 (Louaas & Picard 2026, diseño óptimo de seguro paramétrico —
+  ya citado en tesis 4 solo por el resumen "diseño óptimo de trigger"), F-125 (Berger & Calabrese
+  1975, Uncertainty Reduction Theory — ya citado en el node de material visual solo como encuadre
+  teórico) y F-175 (Zong & Guo 2022, efecto ancla en juicio de precio bajo experiencia de producto —
+  ya citado en tesis 15 solo por el resumen del efecto base). Las tres bloqueadas por el proxy en su
+  URL directa (arxiv.org/hal.science, en.wikipedia.org/pressbooks.montgomerycollege.edu/
+  onlinelibrary.wiley.com, ncbi.nlm.nih.gov/frontiersin.org); reconstruidas vía búsqueda dirigida
+  (SSRN, ResearchGate, IDEAS/RePEc para F-164; iResearchNet, Businesstopia, Communication Theory.org,
+  ERIC para F-125; ResearchGate, PhilPapers para F-175) que confirman detalle nuevo, no solo el
+  resumen ya citado. Sumé las entradas 49, 50 y 51 de Intuición acumulada: (49) un trigger
+  paramétrico más preciso reduce el basis risk pero no garantiza un contrato más eficiente si el
+  residuo queda correlacionado con el índice de pérdida — acota tesis 4 sin bajarle la confianza;
+  (50) antes de importar una teoría canónica como marco explicativo, verificar si una teoría rival
+  ya la desplazó en una prueba de cabeza a cabeza — URT (base teórica del node de material visual)
+  perdió esa prueba contra Predicted Outcome Value Theory (Sunnafrank), lo que sugiere que el
+  mecanismo a optimizar en venta consultiva remota es señalizar valor esperado, no solo reducir
+  incertidumbre; (51) el efecto ancla de una cifra headline no golpea parejo a la audiencia — se
+  concentra en quien decide con presión de tiempo, baja confianza o menos conocimiento, acotando el
+  criterio de riesgo/segmentación de tesis 15 sin bajarle la confianza. Ninguna tesis de negocio
+  cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una
+  revisión de evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el
+  alcance de tesis 4, 15 y (por conexión de node, no de tesis numerada) el marco del material visual
+  de venta consultiva. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas
+  hoy. Bitácora con 16 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin
+  podar todavía.

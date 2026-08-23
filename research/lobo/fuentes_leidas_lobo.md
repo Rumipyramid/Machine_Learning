@@ -65,3 +65,6 @@
 | F-121 | 🟢 A | 2026-08-22 | Intuición 46 — el estudio fundacional de choice overload empaqueta tres outcomes distintos (elegir, calidad, satisfacción) bajo un solo titular |
 | F-239 | 🟢 A | 2026-08-22 | Intuición 47 — si el efecto de un método con marca está mediado por un mecanismo genérico, cualquier práctica que active ese mecanismo debería funcionar igual |
 | F-355 | 🟢 A | 2026-08-22 | Intuición 48 — un canal puede puntuar igual o mejor en satisfacción de servicio sin que eso diga nada de si el resultado clínico también fue igual o mejor |
+| F-164 | 🟢 A | 2026-08-23 | Intuición 49 — un trigger paramétrico más preciso reduce el basis risk pero no garantiza un contrato más eficiente sin independencia entre índice y residuo |
+| F-125 | 🟢 A | 2026-08-23 | Intuición 50 — antes de importar una teoría canónica, verificar si una teoría rival ya la desplazó en una prueba de cabeza a cabeza |
+| F-175 | 🟢 A | 2026-08-23 | Intuición 51 — el efecto ancla de una cifra headline se concentra en quien decide con presión de tiempo, baja confianza o menos conocimiento |
