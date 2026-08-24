@@ -68,3 +68,6 @@
 | F-164 | 🟢 A | 2026-08-23 | Intuición 49 — un trigger paramétrico más preciso reduce el basis risk pero no garantiza un contrato más eficiente sin independencia entre índice y residuo |
 | F-125 | 🟢 A | 2026-08-23 | Intuición 50 — antes de importar una teoría canónica, verificar si una teoría rival ya la desplazó en una prueba de cabeza a cabeza |
 | F-175 | 🟢 A | 2026-08-23 | Intuición 51 — el efecto ancla de una cifra headline se concentra en quien decide con presión de tiempo, baja confianza o menos conocimiento |
+| F-9 | 🟢 A | 2026-08-24 | Intuición 52 — un efecto nulo de divulgación parejo entre segmentos descarta "hace falta segmentar mejor" como arreglo |
+| F-329 | 🟢 A | 2026-08-24 | Intuición 53 — un sistema de triaje puede fallar en dos direcciones simétricas; medir solo el ahorro de costo esconde la sobre-confianza peligrosa |
+| F-335 | 🟢 A | 2026-08-24 | Intuición 54 — existe un instrumento validado y corto (HITS, 11 ítems) para medir confianza en un asegurador por sus cuatro componentes |

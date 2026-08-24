@@ -2515,6 +2515,81 @@ fácil convierte.
   ya tenía) — añade el criterio de segmentación de riesgo/efecto que la tesis todavía no tenía
   explícito.
 
+### 52. Un efecto nulo de divulgación que es parejo entre segmentos (no concentrado en ninguno) es él mismo diagnóstico: descarta "hace falta segmentar mejor" como arreglo
+F-9 (Adams, Hunt, Palmer & Zaliauskas 2021, RCT de campo N≈124,000 en 5 depositarios del Reino
+Unido) ya sostenía tesis 1 solo por el resultado agregado y el mecanismo de creencias pesimistas
+(revisión profunda de `cronista`, 2026-07-21). La lectura a fondo del Lobo agrega un dato que ese
+resumen no traía: el fracaso de la divulgación es prácticamente uniforme por edad y por saldo —solo
+evidencia débil de heterogeneidad individual— incluso en el brazo de tratamiento más fuerte, donde
+un producto alternativo del **mismo** proveedor dominaba estrictamente al producto actual del
+consumidor.
+**Heurística de decisión:** cuando un experimento de divulgación/comunicación falla parejo en todos
+los segmentos observables, la corrección correcta no es "afinar el targeting" (edad, saldo, perfil)
+— es intervenir sobre la creencia previa, no sobre el formato o el destinatario. Aplica directo a
+cualquier propuesta de "glosario para millennials" o "explicador para NSE C/D" en el proyecto: si el
+fracaso de tesis 1 es de naturaleza pareja como en F-9, personalizar el mensaje por segmento hereda
+el mismo techo bajo, no lo levanta.
+- **Fuente:** F-9 (🟢A, Adams, Hunt, Palmer & Zaliauskas 2021, *Journal of Financial Economics* — ya
+  citada en tesis 1, con revisión profunda de `cronista` el 2026-07-21 sobre el mecanismo; esta es
+  la primera lectura a fondo del propio Lobo)
+- **Leído a fondo:** 2026-08-24 (sciencedirect.com, nber.org y web.mit.edu bloqueados por el proxy
+  del entorno; reconstruido vía búsqueda dirigida — NBER WP 25718, resumen de J-PAL, EconPapers —
+  que confirman el diseño de brazos múltiples, incluyendo el brazo con dominancia estricta del
+  producto alternativo, y la uniformidad del efecto nulo por edad/saldo)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 1 (sigue Alta) — añade el
+  criterio operacional de por qué "mejorar el formato/segmentación de la divulgación" no es la
+  palanca correcta, con un detalle de uniformidad que la revisión profunda de `cronista` no había
+  registrado.
+
+### 53. Un sistema de triaje/gatekeeping puede fallar en dos direcciones simétricas (sobre-cautela costosa, sobre-confianza peligrosa) — medir solo el ahorro de costo esconde la segunda
+F-329 (examiner design, línea de asesoría de enfermería de la VA) ya sostenía la brecha empírica del
+vacío §4.2 del documento externo del usuario solo por la cifra agregada de ahorro (-US$404 vs. ED,
+-US$247 vs. atención primaria a 28 días). La lectura a fondo agrega el marco del propio estudio: la
+identificación causal explota la variación cuasi-aleatoria **entre enfermeras** (asignación a la
+siguiente disponible), precisamente porque unas triajean demasiado defensivamente (sobre-refieren a
+emergencias, encareciendo el sistema) y otras demasiado optimistamente (sub-refieren, retrasando
+atención crítica) — el diseño existe para separar ambos tipos de error, no solo para medir el ahorro
+promedio.
+**Heurística de decisión:** cualquier evaluación de un triage con IA (farmacia+IA, tesis 10) que
+reporte solo "cuánto costo evita" sin reportar también la tasa del error simétrico (cuántos casos que
+debían escalar no escalaron) está midiendo la mitad del riesgo real. El criterio de éxito correcto
+necesita las dos colas, no una sola cifra de ahorro — el mismo error que tesis 10 ya identificó en
+Babylon (falta de separación seguridad vs. coincidencia exacta) reaparece aquí en otra variable:
+ahorro de costo vs. tasa de sub-triage peligroso son ejes distintos, y el segundo es el que decide si
+el producto es seguro, no solo si es rentable.
+- **Fuente:** F-329 (🟢A, examiner design, *Journal of Health Economics* — autoría no confirmada por
+  bloqueo del PDF, ya citada en documento externo del usuario solo por la cifra agregada)
+- **Leído a fondo:** 2026-08-24 (sciencedirect.com bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida que confirma el diseño de examiner/asignación cuasi-aleatoria y el marco de
+  error simétrico entre enfermeras defensivas y optimistas)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 10 (sigue Alta) — refuerza con
+  evidencia de otro dominio (triaje humano, no IA) el mismo principio de gate de aprobación que tesis
+  10 ya exige para el piloto farmacia+IA: medir el error de sub-triage por separado, no solo el
+  ahorro.
+
+### 54. Existe un instrumento validado y corto (11 ítems, <10 min) para medir confianza en un asegurador por sus cuatro componentes — no hace falta inventar una pregunta de encuesta ad hoc
+F-335 (HITS, Zheng et al. 2002) ya estaba citada como "pista empírica" en el documento externo del
+usuario solo por sus cuatro dimensiones (fidelidad, competencia, honestidad, confidencialidad). La
+lectura a fondo agrega el dato operacional que el resumen no traía: la escala final tiene 11 ítems
+autoadministrados, toma menos de 10 minutos, y fue validada dos veces —muestra nacional aleatoria
+(n=410) y muestra regional de una HMO (n=1,152)— con confiabilidad alta (alfa 0.91-0.95 según versión
+larga/corta). Confirma también el vínculo conductual: menor confianza se asocia a mayor probabilidad
+de decir que cambiaría de plan, no solo a una actitud declarada.
+**Heurística de decisión:** cuando el proyecto necesite medir "confianza en el asegurador" (tesis 1,
+`glosario-seguro-salud-peru.md`, o cualquier encuesta a usuarios sintéticos/reales de `lapuerta`),
+usar o adaptar HITS en vez de una pregunta única tipo "¿confía en su aseguradora? sí/no" — el
+instrumento ya viene validado en las cuatro dimensiones que separan por qué alguien desconfía (¿no
+cree que cuiden su interés? ¿no cree que sean competentes? ¿cree que mienten? ¿teme el mal uso de sus
+datos?), lo cual es información accionable de producto que un solo ítem agregado no da.
+- **Fuente:** F-335 (🟢A, Zheng, Hall, Dugan, Kidd & Levine 2002, *Health Services Research* — ya
+  citada solo por sus cuatro componentes)
+- **Leído a fondo:** 2026-08-24 (pmc.ncbi.nlm.nih.gov bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que confirma la escala final de 11 ítems, las dos muestras de
+  validación y el vínculo con intención de cambio de plan)
+- **Conexión razonada, no forzada:** ninguna de las 25 tesis cita F-335 por número — el matiz queda
+  registrado como herramienta operacional transferible a cualquier medición futura de "confianza" en
+  el proyecto, sin forzar una tesis de negocio nueva.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3269,3 +3344,42 @@ fácil convierte.
   de venta consultiva. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas
   hoy. Bitácora con 16 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin
   podar todavía.
+- **2026-08-24** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward 6324fc0→396f4cc, el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados**, mismo tope exacto que procesó la corrida de ayer (2026-08-23) — **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  undécimo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
+  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por
+  completar el paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12
+  (mecanismo de `cronista`, cada ~3 días, ya lleva doce días sin correr; no lo disparo aquí porque
+  es rutina de `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición
+  (decimonovena corrida desde el 2026-08-06): de 134 fuentes 🟢A confirmadas por conteo propio en el
+  ledger, 51 ya tenían lectura profunda del Lobo — de las 83 restantes elegí 3 al azar puro: F-9
+  (Adams, Hunt, Palmer & Zaliauskas 2021, RCT de divulgación financiera N≈124,000 — ya sostiene
+  tesis 1, con revisión profunda de `cronista` del 2026-07-21 sobre el mecanismo, pero sin lectura a
+  fondo propia del Lobo hasta hoy), F-329 (examiner design, línea de asesoría de enfermería VA — ya
+  citado en documento externo del usuario solo por la cifra agregada de ahorro) y F-335 (Zheng et
+  al. 2002, escala HITS de confianza en aseguradores — ya citada solo por sus cuatro componentes).
+  Las tres bloqueadas por el proxy en su URL directa (sciencedirect.com ×2, pmc.ncbi.nlm.nih.gov,
+  nber.org, web.mit.edu); reconstruidas vía búsqueda dirigida (NBER WP 25718, J-PAL, EconPapers para
+  F-9; cobertura académica del examiner design y el marco de error simétrico entre enfermeras para
+  F-329; PubMed, ResearchGate y el resumen del propio journal para F-335) que confirman detalle
+  nuevo — la uniformidad del efecto nulo por edad/saldo en F-9, el marco de dos errores simétricos
+  (sobre-refiere vs. sub-refiere) en F-329, y la escala final de 11 ítems con dos muestras de
+  validación en F-335 — no solo el resumen ya citado. Sumé las entradas 52, 53 y 54 de Intuición
+  acumulada: (52) un efecto nulo de divulgación parejo entre segmentos (no concentrado en ninguno)
+  descarta "hace falta segmentar mejor" como arreglo — la corrección correcta es sobre la creencia
+  previa, no el formato; acota tesis 1 con un criterio operacional que la revisión profunda de
+  `cronista` no había registrado, sin bajarle la confianza; (53) un sistema de triaje/gatekeeping
+  puede fallar en dos direcciones simétricas (sobre-cautela costosa, sobre-confianza peligrosa) —
+  medir solo el ahorro de costo esconde la segunda, reforzando con evidencia de otro dominio (triaje
+  humano) el mismo gate de seguridad que tesis 10 ya exige para el piloto farmacia+IA; (54) existe un
+  instrumento validado y corto (HITS, 11 ítems, <10 min, dos muestras de validación) para medir
+  confianza en un asegurador por sus cuatro componentes — operacionalizable en `lapuerta` o en
+  cualquier encuesta futura en vez de una pregunta ad hoc de sí/no. Ninguna tesis de negocio cambió
+  de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
+  evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance de tesis
+  1 y 10, y dan una herramienta operacional nueva sin tesis numerada asociada (F-335/HITS).
+  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 17
+  días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
