@@ -71,3 +71,6 @@
 | F-9 | 🟢 A | 2026-08-24 | Intuición 52 — un efecto nulo de divulgación parejo entre segmentos descarta "hace falta segmentar mejor" como arreglo |
 | F-329 | 🟢 A | 2026-08-24 | Intuición 53 — un sistema de triaje puede fallar en dos direcciones simétricas; medir solo el ahorro de costo esconde la sobre-confianza peligrosa |
 | F-335 | 🟢 A | 2026-08-24 | Intuición 54 — existe un instrumento validado y corto (HITS, 11 ítems) para medir confianza en un asegurador por sus cuatro componentes |
+| F-237 | 🟢 A | 2026-08-25 | Intuición 55 — un estudio correlacional merece menos descuento de confianza cuando la comparación ya viene controlada por el confusor más obvio |
+| F-238 | 🟢 A | 2026-08-25 | Intuición 56 — un efecto directo y uno moderador sobre el mismo resultado no se acumulan igual; el moderador solo rinde si la otra variable ya está presente en cantidad |
+| F-349 | 🟢 A | 2026-08-25 | Intuición 57 — frente a un intermediario algorítmico cuyo contrato premia la métrica que él mismo reporta, auditar qué palanca interna puede mover sin que el principal se entere |

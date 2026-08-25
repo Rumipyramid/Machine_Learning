@@ -2590,6 +2590,90 @@ datos?), lo cual es información accionable de producto que un solo ítem agrega
   registrado como herramienta operacional transferible a cualquier medición futura de "confianza" en
   el proyecto, sin forzar una tesis de negocio nueva.
 
+### 55. Un estudio correlacional de "diseño causa mejor desempeño" merece menos descuento cuando la comparación ya está hecha dentro de la misma industria — no cruzándolas
+F-237 (Hertenstein, Platt & Veryzer 2005) ya estaba citada en el node de diseño solo como "evidencia
+base del vínculo diseño→desempeño de firma", con la advertencia genérica de que es correlacional y
+puede sufrir halo (la variable independiente es percepción experta). La lectura a fondo agrega el
+detalle metodológico que el resumen corto no traía: el panel de 138 expertos en diseño industrial no
+comparó firmas de industrias distintas entre sí — clasificó "alto" vs. "bajo" diseño efectivo DENTRO
+de cada una de las nueve industrias manufactureras estudiadas, y solo entonces comparó desempeño
+financiero (ROA, ROS, crecimiento de ventas) entre los dos grupos de cada industria. Eso neutraliza
+de entrada el confusor más obvio de cualquier comparación cruda entre sectores (viento de cola
+sectorial, ciclo de commodity, intensidad de capital) antes de llegar al dato.
+**Heurística de decisión:** antes de descontar un hallazgo "solo por ser correlacional", verificar si
+el diseño de la comparación ya controló el confusor más evidente (aquí, la industria). Cuando ya lo
+hizo, el descuento de confianza debe ser menor que el que aplicaría el mismo lector a una comparación
+cruda sin ese control — "correlacional" no es una etiqueta binaria de calidad; hay grados según qué ya
+viene controlado por el propio diseño del estudio, y confundir ambos lleva a descartar evidencia que
+en realidad ya hizo parte del trabajo de descarte de confusores por uno.
+- **Fuente:** F-237 (🟢A, Hertenstein, Platt & Veryzer 2005, *Journal of Product Innovation
+  Management* — ya citada en el node de diseño solo como evidencia base del vínculo diseño→desempeño)
+- **Leído a fondo:** 2026-08-25 (onlinelibrary.wiley.com bloqueado por el proxy del entorno;
+  reconstruido vía ResearchGate y cobertura académica que confirma el panel de 138 expertos, las
+  nueve industrias y la comparación intra-industria)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 21 (sigue Alta) — matiza el
+  criterio con el que debe leerse una de las piezas de evidencia base que la sostiene: el estudio
+  fundacional del vínculo diseño→negocio merece menos descuento del que su etiqueta genérica de
+  "correlacional" sugiere a primera lectura.
+
+### 56. Un efecto directo y un efecto moderador sobre el mismo resultado no se leen igual — el segundo solo se cobra si la otra variable ya está presente en cantidad
+F-238 ya estaba citada en el node de diseño como "la mejor evidencia disponible del vínculo
+diseño→negocio" y como sustento de la fila 🟢 de la escala de madurez de evidencia, con el resumen
+genérico de "efecto directo + efecto moderador". La lectura a fondo (vía cobertura académica y
+ResearchGate, dado el bloqueo del DOI) agrega el mecanismo: sobre un panel GLS de 1,659 firmas
+públicas de EE.UU. (1980-2015), usando patentes de diseño+utilidad como proxy objetivo de "capacidad
+de diseño-ingeniería" (no percepción de expertos, a diferencia de F-237), el estudio encuentra que esa
+capacidad (a) mejora el desempeño financiero de forma directa, y (b) por separado, amplifica cuánto
+retorno financiero produce la actividad de innovación de la firma — dos efectos que se acumulan de
+forma distinta, no un solo coeficiente que se pueda citar como "el diseño vale X%".
+**Heurística de decisión:** al leer que una capacidad "X mejora el desempeño Y y además amplifica el
+retorno de la actividad Z", separar las dos preguntas antes de decidir si invertir en X: (1) ¿cuánto
+vale el efecto directo por sí solo? y (2) ¿cuánta actividad Z ya existe en la organización para que el
+efecto moderador tenga algo que amplificar? Invertir en capacidad de diseño rinde poco en una
+organización que casi no innova, y mucho en una que ya invierte fuerte en I+D sin capturar retorno
+completo — el diagnóstico correcto no es "¿vale la pena el diseño?" sino "¿cuánta innovación tenemos
+ya para que el diseño amplifique?".
+- **Fuente:** F-238 (🟢A, autoría no verificada por bloqueo de acceso, revista *Innovation:
+  Organization & Management* 2025 — ya citada en el node de diseño como "la mejor evidencia
+  disponible" y sustento de la escala de madurez §5)
+- **Leído a fondo:** 2026-08-25 (tandfonline.com bloqueado por el proxy del entorno; reconstruido vía
+  cobertura académica y ResearchGate que confirma la muestra de 1,659 firmas, el proxy de patentes
+  1980-2015 y la distinción entre efecto directo y efecto moderador)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 21 (sigue Alta) — agrega el
+  mecanismo preciso (efecto directo vs. moderador condicionado a innovación ya existente) que el
+  resumen corto del node no distinguía, útil si el proyecto necesita argumentar el ROI de diseño ante
+  una organización que ya invierte en I+D frente a una que no.
+
+### 57. Cuando el contrato de un intermediario paga más cuanto más deniega, la pregunta de auditoría correcta no es "¿es imparcial?" sino "¿qué palanca operativa tiene para mover su propio resultado sin que el cliente lo note?"
+F-349 (investigación ProPublica/Capitol Forum sobre EviCore) ya estaba citada en un documento externo
+del usuario solo por la narrativa general de conflicto de interés en el steering algorítmico
+(refuerzo de tesis 23). La lectura a fondo agrega el mecanismo operativo exacto: EviCore (de propiedad
+de Cigna/Evernorth) gestiona autorizaciones previas para más de 100 aseguradoras que cubren ~100
+millones de personas (incluyendo UnitedHealthcare, Aetna y BCBS), con contratos que en algunos casos
+pagan MÁS cuanto mayor es el ahorro logrado por denegación — un incentivo económico directo, no un
+efecto secundario. Ex-empleados declararon a ProPublica que la empresa ajusta el algoritmo interno
+("the dial") específicamente cuando no está generando "suficiente ahorro" para justificar su valor
+ante el cliente asegurador — sin que el asegurador lo sepa. En Arkansas (2021), la tasa de denegación
+de autorizaciones llegó a 20%, casi el triple de la tasa normal en Medicare Advantage.
+**Heurística de decisión:** frente a cualquier intermediario algorítmico (de triaje, de precio, de
+aprobación) cuyo contrato con el principal esté atado a una métrica que el intermediario mismo
+controla y reporta, la auditoría correcta no pregunta "¿el intermediario actúa de buena fe?" sino
+"¿qué parámetro interno tiene autoridad para mover sin que el principal se entere, y qué tan seguido
+lo mueve?" — la garantía de imparcialidad no puede depender de la ética declarada del vendor cuando su
+propio modelo de ingresos premia mover ese parámetro en una sola dirección. Aplica directo al gate de
+gobernanza que tesis 10 ya exige para cualquier sistema de triaje/aprobación con IA: el gate debe
+auditar quién tiene el "dial" y con qué frecuencia se toca, no solo la tasa de precisión clínica
+declarada.
+- **Fuente:** F-349 (🟢A, ProPublica/Capitol Forum 2023-2024 — ya citada en documento externo del
+  usuario solo por la narrativa general de conflicto de interés que refuerza tesis 23)
+- **Leído a fondo:** 2026-08-25 (vía búsqueda dirigida — cobertura directa de ProPublica y
+  reproducciones especializadas en salud, ya que el ledger no registraba una URL directa al reportaje)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 10 ni 23 (siguen su nivel Alta
+  vigente) — agrega a tesis 10 un criterio de auditoría concreto (quién controla el "dial" del
+  algoritmo y con qué frecuencia se ajusta) que su gate de validación clínica no cubría todavía, y a
+  tesis 23 un ejemplo documentado con evidencia dura de que el steering algorítmico en salud sí tiene
+  incentivo financiero directo detrás, no solo riesgo reputacional percibido.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3383,3 +3467,42 @@ datos?), lo cual es información accionable de producto que un solo ítem agrega
   1 y 10, y dan una herramienta operacional nueva sin tesis numerada asociada (F-335/HITS).
   Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 17
   días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-25** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward 6324fc0→4d6b7c5, el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos**, mismo tope
+  exacto que procesó la corrida de ayer (2026-08-24) — **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, duodécimo día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el último
+  bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada ~3 días,
+  ya lleva trece días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de este
+  proceso diario). Sí corrió la rutina diaria de intuición (vigésima corrida desde el 2026-08-06): de
+  134 fuentes 🟢A confirmadas por conteo propio en el ledger, 54 ya tenían lectura profunda del Lobo —
+  de las 80 restantes elegí 3 al azar puro (`shuf` sobre la lista completa): F-237 (Hertenstein, Platt
+  & Veryzer 2005, diseño industrial y desempeño financiero — ya citada en el node de diseño solo como
+  evidencia base del vínculo diseño→desempeño), F-238 (2025, capacidad diseño-ingeniería vía patentes,
+  1.659 firmas — ya citada como "la mejor evidencia disponible" del mismo node) y F-349 (ProPublica/
+  Capitol Forum sobre EviCore — ya citada en documento externo del usuario solo por la narrativa
+  general de conflicto de interés que refuerza tesis 23). Las dos primeras bloqueadas por el proxy en
+  su URL directa (onlinelibrary.wiley.com, tandfonline.com); reconstruidas vía ResearchGate y
+  cobertura académica que confirman detalle nuevo — la comparación intra-industria (no cruzada) del
+  panel de 138 expertos en F-237, y la distinción entre efecto directo y efecto moderador (condicionado
+  a cuánta innovación ya existe) en F-238. F-349 no tenía URL directa registrada en el ledger;
+  reconstruida vía búsqueda dirigida que confirma el mecanismo operativo exacto: contratos que pagan
+  más cuanto mayor la denegación, y un algoritmo interno ("the dial") que ex-empleados dicen se ajusta
+  para cumplir metas de ahorro sin que el asegurador cliente lo sepa. Sumé las entradas 55, 56 y 57 de
+  Intuición acumulada: (55) un estudio correlacional merece menos descuento de confianza cuando la
+  comparación ya viene controlada por el confusor más obvio (aquí, industria) — matiza cómo leer una de
+  las piezas base de tesis 21 sin bajarle la confianza; (56) un efecto "directo" y uno "moderador"
+  sobre el mismo resultado no se acumulan igual — el moderador solo rinde si la otra variable (aquí,
+  innovación) ya está presente en cantidad, útil para argumentar ROI de diseño según cuánto invierte ya
+  la organización en I+D; (57) frente a un intermediario algorítmico cuyo contrato premia la métrica
+  que él mismo reporta, la auditoría correcta pregunta qué palanca interna puede mover sin que el
+  principal se entere y con qué frecuencia — agrega a tesis 10 un criterio de gobernanza concreto (quién
+  controla el "dial") que su gate de validación clínica no cubría, y documenta con evidencia dura el
+  incentivo financiero detrás del steering algorítmico que tesis 23 ya señalaba como riesgo de
+  reactancia. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
+  paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque las tres
+  entradas de hoy sí acotan el alcance de tesis 10, 21 y 23. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 18 días de
+  historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
