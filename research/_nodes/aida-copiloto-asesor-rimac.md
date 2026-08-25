@@ -410,3 +410,9 @@ datos propios.
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — AIDA es la
   apuesta concreta por "potenciar al asesor" en vez de reemplazarlo; §6 trae la evidencia de campo
   sobre si eso funciona y con quiénes.
+
+---
+
+## Outputs derivados
+
+- `_outputs/aida-objetivo-vs-diagnostico-2026-08-12.md` — contrasta el objetivo declarado de AIDA (reducir tiempo de gestión, mejorar conversión) contra este diagnóstico. Aporta el análisis de **por qué ninguno de los dos objetivos es afirmable hoy**: no hay línea base de tiempo, el costo de verificación de las fallas es invisible en el log, y el ciclo de venta de Vida excede el plazo del piloto.
