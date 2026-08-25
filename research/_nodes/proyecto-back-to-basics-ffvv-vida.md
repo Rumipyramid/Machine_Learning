@@ -929,3 +929,4 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
   transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la
   experiencia de venta.
+- [[aida-copiloto-asesor-rimac|AIDA — el copiloto de IA de la fuerza de ventas]] — **AIDA pasó a tener node propio (2026-08-12)**: ahí vive ahora la evidencia del tema (encuesta n=19, análisis auditado de 2.697 consultas, exploratorio pendiente). Este node conserva el encuadre estratégico — por qué se propuso un copiloto, el Plan Piloto de 10 asesores y la corrección sobre práctica vs. producción.

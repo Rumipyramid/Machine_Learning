@@ -251,3 +251,4 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   la explicabilidad genérica **no** calibra la confianza (produce sobre-confianza; lo que la calibra
   es la verificabilidad de la salida), y toda métrica de productividad autorreportada debe
   descontarse frente a la medición objetiva.
+- [[aida-copiloto-asesor-rimac|AIDA — el copiloto de IA de la fuerza de ventas]] — el caso interno donde aplicar este marco. Su detector de falla actual **solo captura fallas totales, no parciales**, y por eso sus tasas son un piso; cerrar ese hueco es la aplicación más directa de este node.

@@ -181,3 +181,4 @@ lámina o deck ya construido que use "170%" como cifra puntual.
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — glosario de
   cliente que deliberadamente no cubre el detalle técnico de coberturas (IAFA, EG, ITP,
   PEI, DPP); ese detalle vive en el §3 de este node.
+- [[aida-copiloto-asesor-rimac|AIDA — el copiloto de IA de la fuerza de ventas]] — ⭐ **Triangulación verificable celda por celda:** el análisis de logs de AIDA documenta como no respondida la pregunta *«¿de cuánto es la cobertura mínima de suma asegurada en el Vida Ahorro Garantizado soles?»*, y la auditoría de esta matriz encontró que **«Suma asegurada mínima» es precisamente uno de los parámetros que le faltan a VAG**. Dos métodos independientes señalan el mismo hueco en el mismo producto.

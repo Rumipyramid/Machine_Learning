@@ -383,3 +383,4 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[aida-copiloto-asesor-rimac|AIDA — el copiloto de IA de la fuerza de ventas]] — la apuesta concreta de RIMAC por *potenciar* al asesor en vez de reemplazarlo, con datos de uso real. Trae además la evidencia de campo sobre si eso funciona y con quiénes: la **U invertida** de Luo et al. (F-540) y el estudio de 5.172 agentes de Brynjolfsson et al. (F-541).

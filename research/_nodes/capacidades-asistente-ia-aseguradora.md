@@ -114,15 +114,24 @@ esa función, no una instrucción de estilo.
 Ninguno de los cuatro bloques cubre qué pasa **cuando el agente falla o cuando el caso no es
 suyo**. Es la ausencia más grande, y es donde está la mejor evidencia disponible.
 
-**F-515 (🟢A — *Journal of Consumer Behaviour*, con análisis de mediación)** aporta tres
-resultados y uno de ellos es una regla de enrutamiento directamente implementable:
+⚠️ **Corrección de atribución (2026-08-12).** La versión anterior de esta sección atribuía el
+hallazgo de origen de falla a Chacon et al. y le sumaba tres cifras (0,28 DE de competencia
+percibida, 45% de mediación, 37% de menor efectividad con emoción negativa) que **no se pudieron
+rastrear a ninguna fuente primaria al verificarlas antes de publicarlas**. Las cifras quedan
+retiradas y el hallazgo se reasigna a quien sí lo reporta, con mejor diseño. Aplicación de C19.
 
-1. La **competencia percibida** sube 0,28 desviaciones estándar tras adoptar IA y **media el 45%**
-   del efecto total sobre recuperación de confianza.
-2. El soporte informativo por IA es **37% menos efectivo cuando el cliente expresa emoción
-   negativa intensa**.
-3. ⭐ **Los clientes prefieren IA cuando la falla fue suya, y prefieren humano cuando la falla fue
-   de la empresa.**
+**Fürst, Trißler, Friedrich y Wirtz (2025)** — *Journal of Service Management* 36(3):390-418
+(F-515, 🟢A): **tres experimentos** con escenarios en video de conversaciones de chat en servicios
+financieros y salud. Dos resultados, y los dos son reglas de enrutamiento implementables:
+
+1. ⭐ **Los clientes prefieren IA cuando la falla fue del cliente, y humano cuando la falla fue de
+   la empresa.**
+2. Prefieren **humano cuando reciben una disculpa**, pero aceptan IA cuando reciben una
+   **explicación** o una **compensación monetaria**.
+
+**Chacon et al. (2026)** — *Journal of Consumer Behaviour*, cuatro estudios preregistrados
+(F-515): aporta la advertencia complementaria — los consumidores prefieren un humano para resolver
+reclamos **incluso después de que un chatbot resolvió su caso con éxito**.
 
 **El criterio de escalamiento, entonces, no es la complejidad del caso — es de quién fue la culpa
 y cuánta carga emocional trae el cliente.** Un rechazo de siniestro, una prima cobrada de más o
@@ -288,7 +297,7 @@ omisión de esos datos **como una falla, no como prudencia**.
 **B · Escalamiento y reparación** — 🟢A (F-515), 🔵B (F-516, F-519)
 Ausente por completo, y es lo que más enfurece a los usuarios. La regla que la evidencia respalda:
 **escalar por culpa y por carga emocional, no por complejidad.** Falla de la empresa → humano.
-Emoción negativa intensa → humano (la IA rinde 37% menos ahí). Y ruta a humano siempre visible,
+Y si lo que corresponde ofrecer es una **disculpa** → humano; si es una **explicación** o una **compensación** → puede resolverlo el agente. Ruta a humano siempre visible,
 nunca escondida detrás de intentos del bot.
 
 **C · Proactividad** — 🟠D (F-522)
@@ -320,7 +329,7 @@ erosiona la confianza que sostiene a los otros dos. **Klarna es el caso document
 uno y perder los otros.**
 
 **Recomendación de secuencia, no de simultaneidad:** autoatención primero (es lo mejor sustentado
-y construye la competencia percibida que F-515 identifica como mediadora del 45% de la confianza);
+y construye la competencia percibida del canal, que es lo que después sostiene todo lo demás);
 proactividad después (es el mecanismo de MAU); cross-sell último y **solo sobre conversaciones ya
 resueltas** — que es además la mitigación que el propio F-517 reporta.
 
@@ -507,3 +516,4 @@ merecidamente o no.
   el ~48% de desconfianza hacia las aseguradoras en Perú, con la falta de información como causa
   #1, es el contexto en el que este agente va a operar: la omisión de datos no es neutral, alimenta
   la causa declarada de la desconfianza.
+- [[aida-copiloto-asesor-rimac|AIDA — el copiloto de IA de la fuerza de ventas]] — **mismo modo de falla en el agente interno**: 77% de sus citas son folletos y solo 3,4% reglas de operación, y falla exactamente en precio y contratación. ⭐ Aporta la prueba interna más limpia de la tesis de este node — rentabilidad es el único tema donde AIDA está claramente mejor que el promedio, y es el único que consulta **una herramienta con datos vivos en vez de un documento**.
