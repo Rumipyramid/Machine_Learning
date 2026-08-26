@@ -67,47 +67,59 @@ desde el chat — el mes cerrado manda.
    categoría `ahorro` o `prestamo_recibido` para que el mes cuadre, pero quedan fuera del
    denominador de los ratios y el resumen lo advierte. Un mes malo no puede verse sano por
    haber vaciado la cuenta o pedido prestado.
-8. **Un adelanto o préstamo puente se compara contra las demás fuentes a igual nivel de vida**,
+8. **Adelantar una deuda solo tiene sentido si el pago anticipado es menor que la suma de las
+   cuotas que faltan, y por más de lo que cuesta financiarlo.** Pide los dos números —monto de
+   cancelación y total pendiente— antes de opinar: sin ellos la respuesta puede salir invertida.
+   Si el neto es de pocas decenas de soles, la respuesta es no: no paga el costo de tomar deuda
+   nueva.
+9. **Un adelanto o préstamo puente se compara contra las demás fuentes a igual nivel de vida**,
    por la liquidez al final del horizonte — no por su tasa suelta. Y se pide **solo lo que se
    necesita**: cada sol de más cuesta interés y aprieta el mes siguiente, que es cuando se
    devuelve. Si se recomienda uno, va con su **condición de salida** explícita: qué lo
    justifica una vez y qué señal indicaría que dejó de ser puente y se volvió mecanismo.
-9. **El pago mínimo de la tarjeta es un piso, no una opción.** Si la cuota sostenible cae por
+10. **El pago mínimo de la tarjeta es un piso, no una opción.** Si la cuota sostenible cae por
    debajo del mínimo, el mínimo manda y el hueco se cubre por otro lado — y ahí se comparan las
    fuentes por su efecto **neto** a fin del horizonte, contando el activo que se consume, no
    solo la caja que queda.
-10. **La cuota correcta es la sostenible**, no la más alta posible:
+11. **La cuota correcta es la sostenible**, no la más alta posible:
    `cuota = ingresos − fijos − variables − otros pagos de deuda`. Pagar más solo hace que la
    diferencia rebote a la tarjeta el mismo mes (resultado final idéntico, con la ilusión de
    avanzar); pagar menos acumula efectivo al 0% mientras se debe al 60%.
-11. **Una deuda saldada se marca `cancelado` en `deuda.csv`, no se borra.** Deja de sumar al
+12. **Una deuda saldada se marca `cancelado` en `deuda.csv`, no se borra.** Deja de sumar al
    patrimonio neto y al orden de ataque, pero la fila queda como historial.
-12. **Ninguna tasa se inventa.** La TCEA sale del estado de cuenta del usuario. Mientras
+13. **Ninguna tasa se inventa.** La TCEA sale del estado de cuenta del usuario. Mientras
    no esté, se muestran escenarios (`--tcea 0 40 60 90`) etiquetados como rango de
    referencia, nunca como su tasa.
-13. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
+14. **El déficit se carga a la tarjeta.** Al proyectar, un mes que cierra en negativo
    suma ese déficit a la deuda — es lo que pasa en la práctica. Proyectar con el
    déficit "cubierto por arte de magia" da un plan que no se cumple.
-14. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
+15. **Lo irregular va a `calendario.csv`, no al CSV mensual.** CTS, gratificaciones, bonos y
    utilidades son eventos de un mes. Mezclarlos con la estructura mensual infla el promedio y
    simula una holgura que no existe.
-15. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
+16. **Antes de recomendar qué hacer con un ingreso extraordinario, corre los dos destinos**
    (`--extraordinario deuda` y `--extraordinario caja`) y compara. Si la diferencia es chica,
    dilo: significa que la decisión no es esa, y seguir tratándola como importante distrae del
    número que sí manda.
-16. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
+17. **Antes de recomendar liquidar un activo para pagar deuda, corre las dos proyecciones**
    (`--saldo` con y sin el activo aplicado) y resta lo que el usuario deja de tener. La tasa
    valla sola exagera el beneficio: si la deuda muere en pocos meses, el interés evitado
    corre solo esos meses. Y contrasta siempre contra el **runway** — cuántos días de gasto
    fijo cubre lo líquido. Quedarse sin colchón para ahorrar intereses reconstruye la deuda.
-17. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
+18. **Corre la sensibilidad al gasto variable** (`--variables` con varios valores) antes de dar
    un diagnóstico. Casi siempre pesa más que los extraordinarios, y sin eso el consejo apunta
    al lugar equivocado.
-18. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
+19. **Los supuestos se escriben** en §7 de `estado.md`, con lo que se interpretó y qué
    dato lo confirmaría.
-19. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
-20. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
+20. **No se editan meses cerrados.** Dato nuevo de un mes pasado = fila nueva con `nota`.
+21. **Sin datos bancarios.** Ni números de tarjeta, ni cuentas, ni credenciales — solo
    montos y saldos.
+
+## Cuando aparece una deuda nueva
+
+Regístrala en `deuda.csv` **antes de opinar sobre ella**, y di explícitamente que no estaba en
+el modelo: significa que los gastos fijos venían incompletos y que las proyecciones anteriores
+eran optimistas. Un pasivo que aparece tarde no es solo un número más — es evidencia de que el
+mapa tenía un hueco.
 
 ## Tono
 

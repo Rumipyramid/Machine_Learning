@@ -295,7 +295,9 @@ no es conocimiento de investigación sino un registro operativo con su propia bi
   **pago mínimo** de la tarjeta sea mayor, que es un piso y no una opción; un retiro de ahorros o un préstamo
   entran como `ahorro`/`prestamo_recibido` y quedan fuera del denominador de los ratios (no son
   ingreso); un adelanto puente se compara a igual nivel de vida, se pide solo lo necesario y va
-  con su condición de salida explícita; las deudas se atacan de la **tasa más cara a la más barata** y una
+  con su condición de salida explícita; adelantar una deuda solo se recomienda si el pago de
+  cancelación es menor que la suma de las cuotas pendientes por más de lo que cuesta
+  financiarlo; las deudas se atacan de la **tasa más cara a la más barata** y una
   deuda al 0% (cuotas sin intereses, adelanto) nunca se adelanta mientras exista una cara;
   **ninguna tasa se inventa** (mientras no esté la TCEA real se muestran escenarios etiquetados como
   rango de referencia); al proyectar, el déficit del mes se carga a la tarjeta porque es

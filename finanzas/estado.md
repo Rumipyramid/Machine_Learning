@@ -12,6 +12,60 @@ de este documento no sale de correr el script, es un supuesto y está marcado co
 
 ---
 
+---
+
+## 🔎 Deuda encontrada: el crédito Yape
+
+*Registrada el 2026-08-26. No estaba en el modelo.*
+
+Un crédito Yape de **S/ 2,000 en 9 cuotas**, con **saldo de cancelación total de S/ 750** hoy.
+Su cuota mensual nunca entró en los gastos fijos, así que **los S/ 2,610 de fijos estaban
+incompletos** todo este tiempo — y eso explica en parte por qué el mes rinde menos de lo que
+proyectábamos.
+
+Pendiente: la cuota mensual y la TCEA. En cuanto estén, entra a `movimientos/2026-09.csv` como
+fijo y se recalibra el camino a diciembre.
+
+### ¿Cancelarlo con un adelanto de 700? No
+
+| | |
+|---|---:|
+| Cuotas que faltan si no cancelas | hasta S/ 800 |
+| Pago para cancelar hoy | S/ 750 |
+| **Ahorro máximo** | **S/ 50** |
+| Costo del adelanto de 700 | S/ 20 (proporcional) a S/ 57 (fijo) |
+| **Neto** | **entre +30 y −7** |
+
+Y encima pondrías S/ 50 de tu bolsillo (750 − 700), quedándote con 400 de los 450.
+
+**Toda la operación vale como máximo S/ 30, y puede salir negativa.** Eso no paga el costo de
+tomar un tercer adelanto.
+
+### Lo que sí conviene
+
+Si quieres matar el Yape, **cancélalo con el sueldo de setiembre, sin adelanto**:
+
+| Ruta | A la tarjeta en setiembre | Costo financiero |
+|---|---:|---:|
+| Cancelar con adelanto de 700 | S/ 1,142 | S/ 20–57 |
+| **Cancelar con el sueldo de setiembre** | **S/ 1,112** | **S/ 0** |
+
+Treinta soles de diferencia, sin deuda nueva y sin tocar tus 450. Y si prefieres dejar que
+corran las cuotas, tampoco pasa nada: son menos de 800 en total.
+
+### 🚨 Este era el tercer adelanto
+
+Lo dejamos escrito la semana pasada: agosto justificaba el puente porque cargaba la devolución
+del adelanto viejo **y** el mínimo de la tarjeta en el mismo mes. La regla era que ese fuera el
+último, y que **si aparecía otro adelanto, el problema había dejado de ser de calendario**.
+
+Apareció. Y la señal no es que quieras cancelar el Yape —eso es ordenado— sino que la primera
+herramienta que aparece para cualquier necesidad de 700 soles sea un adelanto. A ~40% anual,
+usado tres veces en dos meses, deja de ser puente.
+
+Estás a un mes de que setiembre libere 1,200 y a cuatro de tener la tarjeta en cero. No hace
+falta financiar nada más.
+
 ## 📅 El martes 25 — cómo repartir el sueldo
 
 *El mínimo de la tarjeta en agosto es **S/ 2,500**. Eso no es negociable y cambia el reparto:
@@ -550,12 +604,13 @@ Y en los dos casos falta restar el adelanto y las cuotas que queden — el neto 
 Cuatro datos cambian materialmente el diagnóstico. En orden de impacto:
 
 1. **Gastos variables del mes** — alimentación, transporte, servicios, celular. Es el
-   hueco más grande y, tras cerrar el adelanto y la cámara, **el único que queda abierto de
-   los grandes**: define si diciembre cierra con 3.3 meses de colchón o con 0.8.
-2. **TCEA de la tarjeta** — está en el estado de cuenta. Define cuánto de los 3,000
+   hueco más grande: define si diciembre cierra con 3.3 meses de colchón o con 0.8.
+2. **Cuota mensual y TCEA del crédito Yape** — deuda encontrada el 2026-08-26 que nunca entró
+   en los fijos. Mientras no esté, los S/ 2,610 de gastos fijos son un piso, no el número.
+3. **TCEA de la tarjeta** — está en el estado de cuenta. Define cuánto de los 3,000
    mensuales es pago real y cuánto es interés.
-3. ~~**Saldo pendiente del adelanto**~~ — **cerrado:** fue único y quedó cancelado en agosto.
-4. **Cuotas que faltan de la cámara** — 420/mes que en algún momento se liberan. Saber
+4. ~~**Saldo pendiente del adelanto**~~ — **cerrado:** fue único y quedó cancelado en agosto.
+5. **Cuotas que faltan de la cámara** — 420/mes que en algún momento se liberan. Saber
    cuándo permite planificar.
 
 A eso se suman dos del calendario (§3): el **monto real de la gratificación** (posiblemente
@@ -611,6 +666,23 @@ Se registran para poder corregirlos, no porque estén verificados:
 
 Una entrada por mes, al cerrar. Formato: qué pasó, qué cambió respecto al mes anterior,
 qué decisión se tomó.
+
+### 2026-08 (j) — Aparece el crédito Yape
+
+Pagadas las obligaciones del mes quedan 450 soles, y aparece una deuda que **no estaba en el
+modelo**: un crédito Yape de 2,000 en 9 cuotas, con saldo de cancelación de 750. Su cuota
+mensual nunca se registró, así que los 2,610 de fijos estaban incompletos.
+
+Consultado si convenía cancelarlo con un adelanto de 700: **no**. Las cuotas que faltan suman
+menos de 800, así que el ahorro máximo por cancelar es 50, contra un costo de 20 a 57 por el
+adelanto — neto entre +30 y −7, poniendo además 50 del bolsillo. Cancelarlo con el sueldo de
+setiembre da casi lo mismo (1,112 vs 1,142 a la tarjeta) con costo financiero cero.
+
+Se activa la condición registrada en (i): este habría sido el tercer adelanto en dos meses. La
+señal no es querer cancelar el Yape, es que un adelanto al 40% sea la primera herramienta para
+cualquier necesidad de 700 soles.
+
+Pendiente: cuota mensual y TCEA del Yape, para meterlo en los fijos de setiembre y recalibrar.
 
 ### 2026-08 (i) — Se tapa el hueco con un segundo adelanto, no con ahorros
 
