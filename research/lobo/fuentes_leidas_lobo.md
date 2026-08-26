@@ -74,3 +74,6 @@
 | F-237 | 🟢 A | 2026-08-25 | Intuición 55 — un estudio correlacional merece menos descuento de confianza cuando la comparación ya viene controlada por el confusor más obvio |
 | F-238 | 🟢 A | 2026-08-25 | Intuición 56 — un efecto directo y uno moderador sobre el mismo resultado no se acumulan igual; el moderador solo rinde si la otra variable ya está presente en cantidad |
 | F-349 | 🟢 A | 2026-08-25 | Intuición 57 — frente a un intermediario algorítmico cuyo contrato premia la métrica que él mismo reporta, auditar qué palanca interna puede mover sin que el principal se entere |
+| F-63 | 🟢 A | 2026-08-26 | Intuición 58 — validar la seguridad de un triage necesita viñetas construidas a propósito para la cola de casos raros/agudos, no solo muestreo real |
+| F-178 | 🟢 A | 2026-08-26 | Intuición 59 — contenido informativo vs. emocional no compiten por el mismo objetivo; el ganador depende del tier de precio y de si se busca búsqueda o venta |
+| F-340 | 🟢 A | 2026-08-26 | Intuición 60 — una palanca de tiering/precio dirige bien a clientes nuevos sin relación establecida, pero no rompe relaciones ya existentes |

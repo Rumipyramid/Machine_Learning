@@ -2674,6 +2674,99 @@ declarada.
   tesis 23 un ejemplo documentado con evidencia dura de que el steering algorítmico en salud sí tiene
   incentivo financiero directo detrás, no solo riesgo reputacional percibido.
 
+### 58. Para validar la seguridad de un triage automatizado, el muestreo de casos reales no basta — hay que inyectar a propósito los casos raros/agudos que ese muestreo casi nunca va a capturar
+F-42 (los resultados de la validación de Omaolo — 97.6% seguro, 53.7% de coincidencia exacta con
+enfermería sobre 877 evaluaciones reales) ya sostenía buena parte de tesis 10. F-63 es el protocolo
+metodológico *detrás* de esos números, no otro dataset: describe cómo Finlandia diseñó la validación
+clínica de Omaolo (dispositivo médico certificado, marcado CE clase IIa, construido sobre el motor de
+soporte de decisión clínica Duodecim/EBMEDS) como un estudio mixto (cuantitativo + cualitativo). El
+detalle que el resumen de una línea no traía: el protocolo complementa los casos reales de atención
+primaria con **viñetas clínicas construidas a propósito** para los escenarios raros y agudos que un
+muestreo real, por más grande que sea, casi nunca va a capturar en la ventana de la validación —
+cada viñeta prueba un nivel de triage distinto con un caso estandarizado. Es decir: el 97.6% de
+seguridad de F-42 no midió *solo* lo que llegó por la puerta durante el estudio; lo blindó contra el
+sesgo de que "no vimos ningún caso agudo mal triado" solo signifique que la muestra fue chica, no que
+el sistema sea seguro con ellos.
+**Heurística de decisión:** al diseñar (o exigir) la validación de cualquier sistema de triage
+automatizado —salud, seguros, soporte al cliente—, no aceptar como prueba de seguridad solo la tasa
+de acierto sobre el flujo real de casos: la cola de eventos raros y de alto costo es, por definición,
+la que menos aparece en cualquier ventana de muestreo real, y es la que más importa. Exigir que el
+protocolo incluya un set construido a propósito de casos raros/límite, no solo una muestra pasiva más
+grande. Aplica directo al gate de aprobación del piloto farmacia+IA que tesis 9 y 10 ya describen: el
+criterio de "correr en silent trial 60-90 días" (tesis 10) mide bien el flujo real, pero necesita este
+complemento de viñetas para no dejar un punto ciego en los casos agudos poco frecuentes.
+- **Fuente:** F-63 (🟢A, protocolo de validación mixto peer-reviewed, JMIR Research Protocols 2023 —
+  ya citada en `research/_nodes/modelo-salud-ia-farmacias-peru.md` como plantilla de diseño de
+  validación clínica)
+- **Leído a fondo:** 2026-08-26 (ncbi.nlm.nih.gov y researchprotocols.org bloqueados por el proxy del
+  entorno; reconstruido vía cobertura de búsqueda dirigida que confirma el diseño mixto, el estatus de
+  dispositivo médico certificado del symptom-checker y el rol específico de las viñetas clínicas para
+  cubrir casos raros/agudos)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 10 (sigue Alta) — precisa el
+  *cómo* detrás del contraejemplo positivo (F-42) que la sostiene, y agrega a tesis 9/10 un requisito
+  concreto de diseño de validación (viñetas para la cola rara) que el node de salud puede exigir al
+  evaluar cualquier proveedor de triage IA para el piloto farmacia+IA.
+
+### 59. La misma pieza creativa puede estar moviendo la métrica equivocada — informativo y emocional no compiten por el mismo objetivo, y el ganador cambia con el tier de precio del producto
+F-178 ya estaba citada para matizar la elección entre imagen aspiracional (emocional) y bullets de
+beneficios (informativo) en material de venta: "ambos cumplen función distinta, no hay que elegir
+uno". La lectura a fondo (Guitart & Stremersch 2021, +2,000 comerciales de TV de 144 modelos de auto
+a lo largo de 4 años) precisa que la función distinta no es solo "informar vs. emocionar" en
+abstracto — es una interacción con el tier de precio del producto, cruzada con el objetivo de negocio:
+subir el contenido **emocional** aumenta la **búsqueda online**, pero subir el contenido
+**informativo** no mueve la búsqueda. Y en ventas incrementales, el contenido informativo rinde más en
+productos de precio/calidad **bajos**, mientras el emocional rinde más en productos de precio/calidad
+**altos**. Un anunciante de producto caro que optimiza su creatividad para "generar más búsqueda"
+(típicamente contenido emocional) puede estar, sin darse cuenta, dejando sobre la mesa ventas
+incrementales que el contenido informativo sí habría capturado — y viceversa para un producto barato.
+**Heurística de decisión:** antes de elegir la mezcla informativo/emocional de cualquier pieza (flyer,
+video, landing), primero fijar cuál es el objetivo real de esa pieza específica —¿generar
+consideración/búsqueda o cerrar venta directa?— y solo después decidir la mezcla según el tier de
+precio del producto que se está vendiendo. Tratar "informativo vs. emocional" como una sola decisión
+de estilo, sin separar objetivo de búsqueda vs. objetivo de venta, arriesga optimizar la pieza para la
+métrica que no es la que el negocio necesita en esa etapa del funnel.
+- **Fuente:** F-178 (🟢A, peer-reviewed, *Journal of Marketing Research* 2021 — ya citada vía
+  `/trinidad` 2026-07-21 sobre material visual de venta consultiva)
+- **Leído a fondo:** 2026-08-26 (journals.sagepub.com bloqueado por el proxy del entorno;
+  reconstruido vía cobertura académica — JSTOR, Erasmus University Rotterdam, Semantic Scholar — que
+  confirma el diseño (2,000+ comerciales, 144 modelos, 4 años), la asimetría por tier de precio en
+  ventas incrementales y que solo el contenido emocional, no el informativo, mueve la búsqueda online)
+- **Conexión razonada, no forzada:** no cambia la confianza de la conexión ya registrada en el node de
+  material visual de venta consultiva — la precisa: la mezcla informativo/emocional recomendada debe
+  condicionarse al tier de precio del producto de seguro (p. ej. SOAT/microseguro barato vs. vida/salud
+  premium) y al objetivo de la pieza (consideración vs. cierre), no aplicarse igual a todo el catálogo.
+
+### 60. Una palanca de precio/tiering para "reordenar" a dónde va el paciente/cliente solo muerde en el momento de elegir por primera vez — no cuando ya existe una relación establecida
+F-340 ya estaba citada solo por el resultado agregado: inscribirse en un plan con red por niveles
+redujo el gasto médico ajustado en 5% (Massachusetts, 2008-12), con reducciones similares en
+ambulatorio y en radiología ambulatoria. La lectura a fondo agrega el límite del mecanismo que el
+resumen agregado no mostraba: literatura relacionada de los mismos autores/tema (Sinaiko & Rosenthal)
+encuentra que el tiering de proveedores por precio **solo es efectivo para dirigir a pacientes nuevos
+que todavía no tienen una relación establecida con un médico** — no rompe relaciones ya existentes, y
+el efecto de "castigar" a proveedores mal rankeados con menor market share se concentra
+desproporcionadamente en pacientes nuevos, más viejos/enfermos o de ciertos perfiles demográficos, no
+se reparte parejo. El 5% de ahorro agregado de F-340, entonces, probablemente no viene de que todo el
+padrón se reacomodó hacia proveedores baratos — viene de que el flujo de inscripciones/derivaciones
+*nuevas* sí respondió al incentivo de precio, mientras el resto de la base siguió como estaba.
+**Heurística de decisión:** al diseñar cualquier palanca de precio/tiering para dirigir a un cliente
+hacia un proveedor, canal o producto más eficiente (farmacia vs. consulta presencial, asesor digital
+vs. presencial, plan A vs. B), no proyectar el ahorro esperado sobre toda la base de clientes actuales
+— proyectarlo sobre el flujo de decisiones *nuevas* (altas, primera consulta, renovación con cambio de
+plan), que es donde la palanca realmente opera. Si el objetivo de negocio requiere mover también a
+quien ya tiene una relación establecida, el tiering de precio por sí solo no alcanza; hace falta una
+palanca adicional dirigida específicamente a esa relación existente.
+- **Fuente:** F-340 (🟢A, peer-reviewed/cuasi-experimental, *Health Affairs* 2017 — ya citada en
+  documento externo del usuario sobre steering de proveedor/tier)
+- **Leído a fondo:** 2026-08-26 (healthaffairs.org y commonwealthfund.org bloqueados por el proxy del
+  entorno; reconstruido vía cobertura del mismo hallazgo — PubMed, Commonwealth Fund — y vía literatura
+  relacionada de los mismos autores sobre los límites del tiering en pacientes con relación médica ya
+  establecida)
+- **Conexión razonada, no forzada:** no cambia la confianza de la conexión ya registrada (steering de
+  proveedor/tier) — acota su alcance: el ahorro de 5% de F-340 debe leerse como efecto sobre el flujo
+  de decisiones nuevas, no como una reasignación general de la base, matiz útil si el proyecto llega a
+  diseñar una palanca de tiering/derivación (farmacia-frente-primario, tesis 9) esperando que reordene
+  también relaciones de atención ya existentes.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3506,3 +3599,36 @@ declarada.
   entradas de hoy sí acotan el alcance de tesis 10, 21 y 23. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 18 días de
   historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-26** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
+  fast-forward de la corrida de ayer, working tree limpio) y verifiqué `research/fuentes/codice.md`
+  por conteo directo: **468 filas, F-1 a F-468 sin huecos**, mismo tope exacto que procesó la corrida
+  de ayer (2026-08-25) — **cero fuentes nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/
+  `/gossip`/`/marketer` desde entonces, decimotercer día seguido sin cambios sustanciales en el
+  ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con la evidencia
+  vigente y no forcé ningún matiz solo por completar el paso. Sí corrió la rutina diaria de intuición
+  (vigesimoprimera corrida desde el 2026-08-06): de 136 fuentes 🟢A confirmadas por conteo propio en
+  el ledger, 57 ya tenían lectura profunda del Lobo — de las 79 restantes elegí 3 al azar puro
+  (`shuf`): F-63 (protocolo de validación mixto de Omaolo, JMIR Research Protocols — ya citada en el
+  node de salud como plantilla de diseño de validación), F-178 (Guitart & Stremersch 2021, contenido
+  informativo vs. emocional en TV, *JMR* — ya citada para matizar imagen aspiracional vs. bullets en
+  material de venta) y F-340 (Sinaiko, Landrum & Chernew 2017, red por niveles, *Health Affairs* — ya
+  citada en documento externo del usuario sobre steering de proveedor). Las tres bloqueadas por el
+  proxy en su URL directa (ncbi.nlm.nih.gov, researchprotocols.org, journals.sagepub.com,
+  healthaffairs.org, commonwealthfund.org); reconstruidas vía cobertura académica y periodística de
+  búsqueda dirigida que confirma detalle nuevo no capturado en el resumen de una línea de cada una.
+  Sumé las entradas 58, 59 y 60 de Intuición acumulada: (58) F-63 es el protocolo metodológico detrás
+  de los números de Omaolo que ya sostenían tesis 10 (F-42) — agrega que la validación de seguridad de
+  un triage necesita viñetas construidas a propósito para la cola de casos raros/agudos, no solo
+  muestreo real, porque esa cola es justamente la que un muestreo real casi nunca captura; (59) F-178
+  separa "qué mueve búsqueda" de "qué mueve venta" en contenido informativo vs. emocional, y ambos
+  dependen del tier de precio del producto — matiza la recomendación de material visual de venta
+  consultiva, que debe condicionarse al tier del producto y al objetivo de la pieza, no aplicarse
+  parejo; (60) F-340 tiene un límite de mecanismo que el 5% de ahorro agregado no mostraba: el tiering
+  de precio dirige bien a clientes nuevos sin relación establecida, pero no rompe relaciones ya
+  existentes — acota cómo proyectar el ahorro esperado de cualquier palanca de tiering/derivación que
+  el proyecto diseñe. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el
+  mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque las
+  tres entradas de hoy sí acotan el alcance de tesis 9, 10 y de la conexión de material visual de venta
+  consultiva. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
+  Bitácora con 19 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar
+  todavía.
