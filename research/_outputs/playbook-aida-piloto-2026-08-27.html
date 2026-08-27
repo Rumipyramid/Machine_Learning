@@ -127,6 +127,23 @@ img, video, canvas, svg { max-width: 100%; max-height: 100%; }
 .scope-item .t{ font-family:'BRSonoma Bold'; font-size:17px; color:var(--primary); }
 .scope-item .d{ margin-top:6px; font:14px/1.4 'BRSonoma Regular'; color:var(--secondary); }
 
+/* --- Slide 3 · bloques de la capacitación del piloto (fondo oscuro) --- */
+.train-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.train-card{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:16px; padding:22px 22px 24px; display:flex; flex-direction:column; gap:14px; }
+.train-icon{ width:34px; height:34px; border-radius:999px; background:var(--tertiary); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.train-icon svg{ width:16px; height:16px; }
+.train-card h4{ font-family:'BRSonoma Bold'; font-size:18px; color:var(--neutral); line-height:1.3; }
+
+/* --- Slide 5 · columna en blanco para completar en vivo --- */
+.blank-col{ display:flex; flex-direction:column; gap:14px; }
+.blank-head{ display:flex; align-items:center; gap:10px; }
+.blank-icon{ width:26px; height:26px; border-radius:999px; background:var(--secondary); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.blank-icon svg{ width:13px; height:13px; }
+.blank-head h4{ font-family:'BRSonoma Bold'; font-size:16px; letter-spacing:.05em; text-transform:uppercase; color:var(--secondary); }
+.blank-slot{ border:1.5px dashed var(--line); border-radius:10px; padding:16px; min-height:56px; display:flex; align-items:center; }
+.blank-slot .t{ font-family:'BRSonoma Regular'; font-size:16px; color:var(--secondary); outline:none; min-width:2px; }
+.blank-slot .t:empty::before{ content:attr(data-placeholder); color:var(--secondary); opacity:.6; }
+
 .edit-hotzone{ position:fixed; top:0; left:0; width:80px; height:80px; z-index:10000; cursor:pointer; }
 .edit-toggle{ position:fixed; top:16px; left:16px; z-index:10001; width:42px; height:42px; border-radius:999px; border:none; background:var(--primary); color:#fff; font-size:17px; cursor:pointer; opacity:0; pointer-events:none; transition:opacity .3s ease, background .2s ease; display:flex; align-items:center; justify-content:center; }
 .edit-toggle.show, .edit-toggle.active{ opacity:1; pointer-events:auto; }
@@ -176,7 +193,21 @@ body.edit-mode .edit-hint{ opacity:1; }
     <h2 class="h2 reveal">Solo el piloto recibe la capacitación que marca la diferencia</h2>
     <div class="slide-body">
       <div class="eyebrow-pill reveal">Solo el grupo piloto</div>
-      <p class="lead reveal editable">Recibe una capacitación formal sobre el nuevo modelo de venta — <b>consultiva, perfilamiento por motivaciones</b> — y <b>manejo de objeciones</b>.</p>
+      <p class="lead reveal editable">Recibe una capacitación formal sobre el nuevo modelo de venta.</p>
+      <div class="train-row reveal">
+        <div class="train-card">
+          <div class="train-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h4 class="editable">Venta consultiva</h4>
+        </div>
+        <div class="train-card">
+          <div class="train-icon"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="white" stroke-width="2"/><circle cx="8" cy="8" r="1.5" fill="white"/></svg></div>
+          <h4 class="editable">Perfilamiento por motivaciones</h4>
+        </div>
+        <div class="train-card">
+          <div class="train-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h4 class="editable">Manejo de objeciones</h4>
+        </div>
+      </div>
       <div class="fact-list reveal">
         <div class="fact-row"><div class="fact-dot"></div><p class="editable">Esto es lo que lo distingue del resto, que solo tiene acceso pasivo al playbook.</p></div>
       </div>
@@ -187,7 +218,7 @@ body.edit-mode .edit-hint{ opacity:1; }
   <!-- ===== SLIDE 4 · INDICADORES CUALITATIVOS ===== -->
   <section class="slide content">
     <div class="pagenum"></div>
-    <h2 class="h2 reveal">Los indicadores cualitativos ya están definidos</h2>
+    <h2 class="h2 reveal">Vamos a medir...</h2>
     <div class="slide-body">
       <p class="lead reveal editable">Respaldo del equipo — explican el porqué del número comercial.</p>
       <div class="qual-row reveal">
@@ -217,7 +248,7 @@ body.edit-mode .edit-hint{ opacity:1; }
     <h2 class="h2 reveal">Los indicadores comerciales se cierran hoy con negocio</h2>
     <div class="slide-body">
       <p class="lead reveal editable">Comparación antes vs. ahora — <b>no es medición causal</b>.</p>
-      <div class="scope-board reveal">
+      <div class="scope-board reveal" style="grid-template-columns:1fr 1fr;">
         <div class="scope-col in">
           <div class="scope-head">
             <div class="scope-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -226,19 +257,14 @@ body.edit-mode .edit-hint{ opacity:1; }
           <div class="scope-item"><div class="t editable">Tasa de conversión</div></div>
           <div class="scope-item"><div class="t editable">Pólizas emitidas / asesor</div></div>
         </div>
-        <div class="scope-col eval">
-          <div class="scope-head">
-            <div class="scope-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M8 4.5v4.2M8 11.2h.01" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <h4>A evaluar</h4>
+        <div class="blank-col">
+          <div class="blank-head">
+            <div class="blank-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M8 3.5v9M3.5 8h9" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h4>A completar con negocio y producto</h4>
           </div>
-          <div class="scope-item"><div class="t editable">Contactos efectivos</div></div>
-        </div>
-        <div class="scope-col out">
-          <div class="scope-head">
-            <div class="scope-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <h4>Fuera</h4>
-          </div>
-          <div class="scope-item"><div class="t editable">Citas agendadas</div><div class="d editable">Depende más de social selling y consentimiento de datos que del modelo de venta entrenado</div></div>
+          <div class="blank-slot"><div class="t editable" data-placeholder="—"></div></div>
+          <div class="blank-slot"><div class="t editable" data-placeholder="—"></div></div>
+          <div class="blank-slot"><div class="t editable" data-placeholder="—"></div></div>
         </div>
       </div>
       <div class="callout reveal editable"><b>Hoy —</b> se cierran con el equipo de negocio.</div>
