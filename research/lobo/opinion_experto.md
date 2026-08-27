@@ -2767,6 +2767,87 @@ palanca adicional dirigida específicamente a esa relación existente.
   diseñar una palanca de tiering/derivación (farmacia-frente-primario, tesis 9) esperando que reordene
   también relaciones de atención ya existentes.
 
+### 61. La importancia de un atributo no dice dónde invertir — el desempeño actual sí: separar ambas antes de priorizar un rediseño de canal digital
+F-154 ya estaba citado solo como "metodológicamente más sofisticado que un cuestionario simple". La
+lectura a fondo (árbol de decisión + random forest + XGBoost, R² hasta ~95% con los métodos de
+ensamble, sobre un modelo de aceptación de chatbot de aseguradora con cuatro predictores: expectativa
+de desempeño, expectativa de esfuerzo, influencia social y confianza) agrega el hallazgo operacional
+real: el Importance-Performance Map Analysis (IPMA) no pregunta solo "¿qué predictor importa más?" —
+cruza importancia con desempeño actual, y el resultado es que lo urgente de mejorar en este estudio no
+es la utilidad percibida del chatbot (expectativa de desempeño, que ya rinde bien), sino influencia
+social, confianza y expectativa de esfuerzo — los tres atributos más relacionales/blandos, no
+funcionales.
+**Heurística de decisión:** antes de invertir en rediseñar cualquier canal digital (chatbot, app,
+cotizador), medir importancia Y desempeño de cada atributo por separado — no solo cuál correlaciona más
+con la intención de uso. El atributo más importante puede ya estar rindiendo bien (no necesita
+inversión); el que peor rinde puede no ser el más importante (baja prioridad). El cuadrante que sí
+justifica inversión es importancia-alta + desempeño-bajo, y en este estudio de seguros ese cuadrante lo
+ocupan confianza e influencia social, no la utilidad percibida del bot.
+- **Fuente:** F-154 (🟢A, peer-reviewed, MDPI *Electronics* 2025)
+- **Leído a fondo:** 2026-08-27 (mdpi.com bloqueado por el proxy del entorno; reconstruido vía
+  ResearchGate y búsqueda dirigida sobre IPMA aplicado a chatbots de seguros, que confirma la
+  metodología de los tres modelos ML, el R² por método y los tres atributos priorizados por el
+  cuadrante importancia-alta/desempeño-bajo)
+- **Conexión razonada, no forzada:** no hay tesis numerada de chatbot puro todavía — conecta con tesis
+  9/10/23 (canal digital, farmacia+triage IA, steering hacia canal barato) y con el Playbook del Asesor
+  (tesis 18): si el proyecto invierte en un chatbot/asistente de seguros, el criterio de dónde poner el
+  presupuesto de mejora debería ser este cuadrante IPMA, no una encuesta de satisfacción general.
+
+### 62. El ahorro de un modelo de atención primaria alternativo depende de si cambia el incentivo del proveedor, no del canal de acceso
+F-108 ya estaba citado solo por la cifra agregada (ahorro asociado a menos visitas a emergencias/
+hospitalizaciones). La lectura a fondo (Tecco, Rahim, Lalwani & Palakodeti 2024, *JGIM*) precisa el
+mecanismo: Direct Primary Care reemplaza el pago por transacción (fee-for-service) por una membresía
+fija mensual (USD 50-150) — lo que cambia el incentivo del médico de "maximizar el número de consultas
+cortas" a "resolver bien en la consulta para evitar una derivación cara aguas abajo". Las visitas duran
+30-60 minutos (vs. 12-15 en atención primaria tradicional fee-for-service), y el ahorro reportado en
+beneficiarios de Medicare (hasta ~USD 25,000/año) viene de menos admisiones hospitalarias y menos
+visitas a emergencias, no de una consulta más barata.
+**Heurística de decisión:** al evaluar cualquier modelo de atención primaria alternativo (farmacia+
+triage IA, telemedicina, membresía de salud) por su potencial de ahorro, la pregunta correcta no es
+"¿es más barato el punto de contacto?" sino "¿cambia el incentivo estructural de quien atiende?". Un
+canal más barato de acceso (chat, IA) que sigue pagado por volumen de derivación no hereda
+automáticamente el ahorro que reporta un modelo que cambió el incentivo de fondo (membresía fija) — son
+mecanismos distintos aunque ambos se llamen "atención primaria alternativa".
+- **Fuente:** F-108 (🟢A, peer-reviewed, *Journal of General Internal Medicine*/Springer 2024)
+- **Leído a fondo:** 2026-08-27 (link.springer.com y pubmed.ncbi.nlm.nih.gov bloqueados por el proxy
+  del entorno; reconstruido vía cobertura de PubMed/ResearchGate/Concierge Medicine Today que confirma
+  autoría, cifra de ahorro y el mecanismo de cambio de incentivo vía membresía fija)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 10 (sigue Alta) ni 17 (utilidad
+  real en farmacia/PBM) — agrega un criterio de diseño concreto para cualquier propuesta de atención
+  primaria alternativa del proyecto: exigir que el modelo de pago al proveedor cambie de transaccional a
+  capitado/membresía antes de proyectar sobre un canal propio el ahorro que reporta un modelo como DPC.
+
+### 63. La claridad no siempre es la palanca correcta — cuando el objetivo de negocio es que el cliente escrutine antes de decidir, la fricción deliberada hace lo que la simplicidad no puede
+F-225 ya estaba citado como el origen académico de "facilidad cognitiva" que sostiene el Principio 1
+(Claridad y simplicidad) del Playbook del Asesor — información fácil de procesar se percibe como más
+verdadera y confiable. La lectura a fondo (Alter & Oppenheimer 2009, revisión integradora que unifica
+fluidez conceptual, perceptual y lingüística) confirma esa base, pero el trabajo relacionado de los
+mismos autores (Alter, Oppenheimer, Epley & Eyre 2007, "Overcoming Intuition") agrega el reverso
+exacto: cuando se introduce dificultad metacognitiva deliberada —una fuente borrosa, letra difícil de
+leer, una pausa— la persona activa procesamiento analítico (Sistema 2) y se apoya menos en heurísticas
+y atajos de juicio. La réplica posterior (Thompson et al.) matiza que esto produce procesamiento *más
+profundo*, no necesariamente *más acertado* — la disfluencia no garantiza mejor decisión, solo más
+escrutinio.
+**Heurística de decisión:** "más simple siempre convierte mejor" no es universal — depende de si el
+objetivo de la pieza es que el cliente decida rápido (ahí la fluidez ayuda) o que se detenga a
+verificar antes de comprometerse (ahí la fricción deliberada es la herramienta correcta, no la
+claridad). Esto conecta con tesis 1 (la divulgación no cambia la conducta) desde un ángulo nuevo: si
+divulgar más claro no sube la calidad de la decisión, puede ser porque la claridad reduce el escrutinio
+en vez de aumentarlo — el mecanismo que sí activa revisión crítica es la dificultad, no la facilidad.
+Para cualquier momento donde el negocio necesita proteger al consumidor (confirmar que entendió el
+coaseguro, dar tiempo antes de firmar una póliza de vida), la palanca correcta es fricción intencional,
+no un explicador más simple.
+- **Fuente:** F-225 (🟢A, revisión integradora peer-reviewed, *Personality and Social Psychology
+  Review* 2009)
+- **Leído a fondo:** 2026-08-27 (doi.org y journals.sagepub.com bloqueados por el proxy del entorno;
+  reconstruido vía ResearchGate, Semantic Scholar y la literatura relacionada de los mismos autores
+  sobre disfluencia y razonamiento analítico —Alter, Oppenheimer, Epley & Eyre 2007— que confirma el
+  mecanismo de reversión y su límite: más procesamiento, no necesariamente más precisión)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 1 (sigue Alta) ni del Principio 1
+  del Playbook (tesis 18) — les agrega un límite de alcance que ninguna de las dos tenía registrado: la
+  fluidez ayuda a convertir, pero el objetivo opuesto (proteger al cliente de una decisión apresurada)
+  necesita el mecanismo contrario, no una versión "más simple" del mismo principio.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3632,3 +3713,39 @@ palanca adicional dirigida específicamente a esa relación existente.
   consultiva. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
   Bitácora con 19 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar
   todavía.
+- **2026-08-27** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo fast-forward
+  6324fc0→e68ecd4, el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos**, y **136 filas
+  con rigor 🟢A** — mismo tope exacto que procesó la corrida de ayer (2026-08-26) — **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  decimocuarto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
+  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el
+  paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`,
+  cada ~3 días, ya lleva quince días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de
+  este proceso diario). Sí corrió la rutina diaria de intuición (vigesimosegunda corrida desde el
+  2026-08-06): de 136 fuentes 🟢A confirmadas por conteo propio en el ledger, 60 ya tenían lectura
+  profunda del Lobo — de las 76 restantes elegí 3 al azar puro (Python `random.sample`, sin `--seed`):
+  F-154 (chatbot de seguros vía ML explicable + IPMA, MDPI *Electronics* 2025 — ya citado solo como
+  "metodológicamente más sofisticado que un cuestionario simple"), F-108 (Direct Primary Care, *JGIM*
+  2024 — ya citado solo por la cifra agregada de ahorro en Medicare) y F-225 (Alter & Oppenheimer 2009,
+  fluidez de procesamiento — ya citado como sustento del Principio 1 del Playbook del Asesor). Las tres
+  bloqueadas por el proxy en su URL directa (mdpi.com, link.springer.com/pubmed.ncbi.nlm.nih.gov,
+  doi.org/journals.sagepub.com); reconstruidas vía búsqueda dirigida (ResearchGate para F-154 y F-225,
+  PubMed/Concierge Medicine Today para F-108, más la literatura relacionada de los mismos autores —
+  Alter, Oppenheimer, Epley & Eyre 2007, "Overcoming Intuition" — para el reverso de F-225) que
+  confirman detalle nuevo, no solo el resumen ya citado. Sumé las entradas 61, 62 y 63 de Intuición
+  acumulada: (61) el Importance-Performance Map Analysis separa qué atributo importa de cuál rinde mal
+  hoy — en chatbots de seguros el cuadrante que justifica inversión es confianza e influencia social, no
+  la utilidad percibida, que ya rinde bien; sin tesis numerada propia, conecta con tesis 9/10/23 y 18;
+  (62) el ahorro de Direct Primary Care depende de que la membresía fija cambie el incentivo del médico
+  (menos derivación cara), no de que el canal de acceso sea más barato — acota tesis 10 y 17 con un
+  requisito de diseño para cualquier modelo de atención primaria alternativa del proyecto; (63) la
+  fluidez de procesamiento tiene un reverso deliberado y documentado (dificultad metacognitiva activa
+  escrutinio analítico, aunque no garantiza mejor decisión) — matiza tesis 1 y el Principio 1 del
+  Playbook (tesis 18) con un límite de alcance que ninguna tenía: la claridad sirve para convertir, la
+  fricción intencional sirve para proteger al cliente de una decisión apresurada, y son palancas
+  distintas para objetivos distintos. Ninguna tesis de negocio cambió de confianza numérica por esta
+  corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis
+  existentes, aunque las tres entradas de hoy sí acotan el alcance de tesis 1, 9, 10, 17, 18 y 23.
+  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 20 días
+  de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.

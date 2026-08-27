@@ -77,3 +77,6 @@
 | F-63 | 🟢 A | 2026-08-26 | Intuición 58 — validar la seguridad de un triage necesita viñetas construidas a propósito para la cola de casos raros/agudos, no solo muestreo real |
 | F-178 | 🟢 A | 2026-08-26 | Intuición 59 — contenido informativo vs. emocional no compiten por el mismo objetivo; el ganador depende del tier de precio y de si se busca búsqueda o venta |
 | F-340 | 🟢 A | 2026-08-26 | Intuición 60 — una palanca de tiering/precio dirige bien a clientes nuevos sin relación establecida, pero no rompe relaciones ya existentes |
+| F-154 | 🟢 A | 2026-08-27 | Intuición 61 — el Importance-Performance Map Analysis separa qué atributo importa de cuál rinde mal hoy, y solo el segundo cruce justifica inversión |
+| F-108 | 🟢 A | 2026-08-27 | Intuición 62 — el ahorro de un modelo de atención primaria alternativo depende de si cambia el incentivo del proveedor, no del canal de acceso |
+| F-225 | 🟢 A | 2026-08-27 | Intuición 63 — la fluidez de procesamiento tiene un reverso deliberado: la dificultad metacognitiva activa escrutinio analítico, útil cuando el objetivo es proteger, no convertir |
