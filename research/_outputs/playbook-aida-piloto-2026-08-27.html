@@ -107,17 +107,13 @@ img, video, canvas, svg { max-width: 100%; max-height: 100%; }
 .fact-row p b{ font-family:'BRSonoma Bold'; color:var(--primary); }
 .slide.dark .fact-row p b{ color:var(--neutral); }
 
-/* --- Slide 4 · indicadores cualitativos: grupos (todos/piloto) con métricas --- */
-.qual-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; align-items:start; }
-.qual-group{ border-radius:16px; padding:24px 24px 22px; display:flex; flex-direction:column; gap:16px; }
-.qual-group.todos{ background:var(--bg-soft); }
-.qual-group.piloto{ background:var(--bg-warm-soft); }
-.qual-group h4{ font-family:'BRSonoma Bold'; font-size:17px; color:var(--primary); line-height:1.3; }
-.qual-group h4 .tag{ font-family:'BRSonoma Medium'; font-size:12px; color:var(--secondary); text-transform:uppercase; letter-spacing:.04em; margin-left:4px; }
-.qual-metric{ display:flex; flex-direction:column; gap:3px; padding-top:14px; border-top:1px solid var(--line); }
-.qual-metric:first-of-type{ border-top:none; padding-top:0; }
-.qual-metric .m-label{ font-family:'BRSonoma Bold'; font-size:14.5px; color:var(--primary); }
-.qual-metric .m-method{ font-family:'BRSonoma Regular'; font-size:13px; color:var(--secondary); }
+/* --- Slide 4 · indicadores cualitativos: tabla --- */
+.indicator-table{ width:100%; border-collapse:collapse; }
+.indicator-table th{ text-align:left; font-family:'BRSonoma Bold'; font-size:15px; color:var(--primary); padding:0 24px 14px 0; border-bottom:2px solid var(--primary); }
+.indicator-table td{ text-align:left; font-family:'BRSonoma Regular'; font-size:16px; color:var(--text); padding:18px 24px 18px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+.indicator-table th:first-child, .indicator-table td:first-child{ width:32%; }
+.indicator-table th:nth-child(2), .indicator-table td:nth-child(2){ width:28%; }
+.indicator-table tr:last-child td{ border-bottom:none; }
 
 /* --- Slide 3 · bloques de la capacitación del piloto --- */
 .train-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
@@ -181,29 +177,24 @@ body.edit-mode .edit-hint{ opacity:1; }
     <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Experience · Piloto FFVV Vida</span></div>
   </section>
 
-  <!-- ===== SLIDE 3 · PILOTO — CAPACITACIÓN DIFERENCIAL ===== -->
+  <!-- ===== SLIDE 3 · LAS INTERVENCIONES ===== -->
   <section class="slide content">
     <div class="pagenum"></div>
-    <h2 class="h2 reveal">Solo el piloto recibe la capacitación que marca la diferencia</h2>
+    <h2 class="h2 reveal">Las intervenciones son:</h2>
     <div class="slide-body">
-      <div class="eyebrow-pill reveal">Solo el grupo piloto</div>
-      <p class="lead reveal editable">Recibe una capacitación formal sobre el nuevo modelo de venta.</p>
       <div class="train-row reveal">
         <div class="train-card">
           <div class="train-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h4 class="editable">Venta consultiva</h4>
+          <h4 class="editable">Playbook en AIDA</h4>
         </div>
         <div class="train-card">
           <div class="train-icon"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="white" stroke-width="2"/><circle cx="8" cy="8" r="1.5" fill="white"/></svg></div>
-          <h4 class="editable">Perfilamiento por motivaciones</h4>
+          <h4 class="editable">Modelo de venta consultiva</h4>
         </div>
         <div class="train-card">
           <div class="train-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <h4 class="editable">Manejo de objeciones</h4>
         </div>
-      </div>
-      <div class="fact-list reveal">
-        <div class="fact-row"><div class="fact-dot"></div><p class="editable">Esto es lo que lo distingue del resto, que solo tiene acceso pasivo al playbook.</p></div>
       </div>
     </div>
     <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Experience · Piloto FFVV Vida</span></div>
@@ -215,37 +206,38 @@ body.edit-mode .edit-hint{ opacity:1; }
     <h2 class="h2 reveal">Indicadores cualitativos</h2>
     <div class="slide-body">
       <p class="lead reveal editable">Lo que vemos en terreno, no en un número.</p>
-      <div class="qual-row reveal">
-        <div class="qual-group todos">
-          <h4 class="editable">Playbook en AIDA <span class="tag">(todos)</span></h4>
-          <div class="qual-metric">
-            <div class="m-label editable">Uso del playbook</div>
-            <div class="m-method editable">Dashboard AIDA</div>
-          </div>
-        </div>
-        <div class="qual-group piloto">
-          <h4 class="editable">Manejo de objeciones <span class="tag">(piloto)</span></h4>
-          <div class="qual-metric">
-            <div class="m-label editable">Comprensión del contenido</div>
-            <div class="m-method editable">Examen o role-play evaluado, al cierre</div>
-          </div>
-          <div class="qual-metric">
-            <div class="m-label editable">Aplicación en llamadas reales</div>
-            <div class="m-method editable">Mystery shopper + evaluación del jefe</div>
-          </div>
-        </div>
-        <div class="qual-group piloto">
-          <h4 class="editable">Modelo de venta consultiva <span class="tag">(piloto)</span></h4>
-          <div class="qual-metric">
-            <div class="m-label editable">Comprensión del contenido</div>
-            <div class="m-method editable">Examen o role-play evaluado, al cierre</div>
-          </div>
-          <div class="qual-metric">
-            <div class="m-label editable">Aplicación en llamadas reales</div>
-            <div class="m-method editable">Mystery shopper + evaluación del jefe</div>
-          </div>
-        </div>
-      </div>
+      <table class="indicator-table reveal">
+        <thead>
+          <tr><th>Tema</th><th>Indicador</th><th>Cómo se mide</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="editable">Playbook en AIDA (todos)</td>
+            <td class="editable">Uso del playbook</td>
+            <td class="editable">Dashboard AIDA</td>
+          </tr>
+          <tr>
+            <td class="editable">Manejo de objeciones (piloto)</td>
+            <td class="editable">Comprensión del contenido</td>
+            <td class="editable">Examen o role-play evaluado, al cierre</td>
+          </tr>
+          <tr>
+            <td class="editable">Manejo de objeciones (piloto)</td>
+            <td class="editable">Aplicación en llamadas reales</td>
+            <td class="editable">Mystery shopper + evaluación del jefe</td>
+          </tr>
+          <tr>
+            <td class="editable">Modelo de venta consultiva (piloto)</td>
+            <td class="editable">Comprensión del contenido</td>
+            <td class="editable">Examen o role-play evaluado, al cierre</td>
+          </tr>
+          <tr>
+            <td class="editable">Modelo de venta consultiva (piloto)</td>
+            <td class="editable">Aplicación en llamadas reales</td>
+            <td class="editable">Mystery shopper + evaluación del jefe</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="footer reveal"><div class="logo"></div><div class="sep"></div><span class="tag">CoE Experience · Piloto FFVV Vida</span></div>
   </section>
