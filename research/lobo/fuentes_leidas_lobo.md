@@ -80,3 +80,6 @@
 | F-154 | 🟢 A | 2026-08-27 | Intuición 61 — el Importance-Performance Map Analysis separa qué atributo importa de cuál rinde mal hoy, y solo el segundo cruce justifica inversión |
 | F-108 | 🟢 A | 2026-08-27 | Intuición 62 — el ahorro de un modelo de atención primaria alternativo depende de si cambia el incentivo del proveedor, no del canal de acceso |
 | F-225 | 🟢 A | 2026-08-27 | Intuición 63 — la fluidez de procesamiento tiene un reverso deliberado: la dificultad metacognitiva activa escrutinio analítico, útil cuando el objetivo es proteger, no convertir |
+| F-43 | 🟢 A | 2026-08-28 | Intuición 64 — un promedio de precisión estable en el tiempo no es evidencia de solidez si nadie separó los casos fáciles de los difíciles |
+| F-36 | 🟢 A | 2026-08-28 | Intuición 65 — un odds ratio que multiplica por 15-20x al resto de la tabla suele ser una regla de compuerta incumplida, no un sesgo conductual gradual |
+| F-339 | 🟢 A | 2026-08-28 | Intuición 66 — un veredicto agregado de "sin efecto adverso sistemático" puede promediar un outcome negativo saliente con otros neutrales |

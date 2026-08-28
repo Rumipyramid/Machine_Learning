@@ -2848,6 +2848,83 @@ no un explicador más simple.
   fluidez ayuda a convertir, pero el objetivo opuesto (proteger al cliente de una decisión apresurada)
   necesita el mecanismo contrario, no una versión "más simple" del mismo principio.
 
+### 64. Un promedio estable en el tiempo no es evidencia de solidez si nadie separó los casos fáciles de los difíciles — puede estar promediando un extremo que mejora con un extremo que nunca lo hace
+F-43 ya estaba citado en tesis 10 por el patrón de que la precisión colapsa a 24.2% en enfermedades poco
+comunes y 14.5% en presentaciones atípicas. La lectura a fondo confirma el mecanismo formal: los propios
+autores (Harada, Sakamoto, Sugimoto & Shimizu, *JMIR Formative Research* 2024) reportan que la
+"commonality of disease" (qué tan común es la enfermedad) y la "typicality of presentation" (qué tan
+típica es la forma en que se presenta) están asociadas de forma estadísticamente significativa a la
+precisión — no es ruido, es el predictor que explica por qué el promedio global (45.1%) se mantuvo plano
+durante los 3 años del estudio: la mezcla de casos (mayoría común/típica, minoría rara/atípica) no
+cambió, así que el promedio tampoco.
+**Heurística de decisión:** cuando un proveedor presenta "N años en producción sin caída de precisión"
+como prueba de estabilidad, la pregunta correcta no es si el promedio se mantuvo sino si puede mostrar el
+desglose por el eje de dificultad que más le importa al negocio (aquí, rareza/atipicidad clínica). Un
+promedio quieto puede estar promediando un extremo que funciona bien de forma consistente con un extremo
+que falla mal de forma igual de consistente — la estabilidad del agregado no dice nada sobre si el
+segmento de mayor riesgo mejoró, empeoró o nunca estuvo cubierto.
+- **Fuente:** F-43 (🟢A, estudio observacional retrospectivo peer-reviewed, *JMIR Formative Research*
+  2024)
+- **Leído a fondo:** 2026-08-28 (ncbi.nlm.nih.gov bloqueado por el proxy del entorno; reconstruido vía
+  JMIR Formative Research y cobertura que confirma autoría, período del estudio 2019-2022, y la
+  asociación estadística entre "commonality"/"typicality" y precisión)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 10 (sigue Alta) — refuerza con un
+  mecanismo formal (asociación estadística confirmada, no solo el dato observado del 24.2%/14.5%) el
+  mismo punto que la revisión profunda de `cronista` del 2026-08-05 ya había matizado; la heurística aquí
+  es transferible a cualquier métrica de desempeño de IA del proyecto (fraude, suscripción, chatbot), no
+  solo a triage clínico.
+
+### 65. Cuando un factor de riesgo tiene un odds ratio que multiplica por 15-20x al resto de la tabla, probablemente no es un sesgo conductual gradual — es una regla de compuerta que alguien no está cumpliendo
+F-36 ya está citado en tesis 9 por su hallazgo dominante: no pedir receta (OR=29.06) supera por lejos a
+pedir consejo en la farmacia (OR=1.88), comprar en menos de 5 minutos (OR=1.59) o ser hombre (OR=1.32).
+La lectura a fondo confirma que el diseño del estudio (análisis secundario de la Encuesta Nacional de
+Satisfacción de Usuarios en Salud 2016, 3,849 usuarios de farmacia) trata las cinco variables con el
+mismo tipo de regresión logística — pero la distancia entre OR=29 y el resto (todas menores a 2) no es
+una diferencia de grado, es una diferencia de tipo.
+**Heurística de decisión:** en cualquier tabla de regresión con factores de riesgo, un OR que multiplica
+al resto de la tabla por 15-20x casi nunca es una tendencia conductual graduable con un nudge — suele ser
+una regla binaria de cumplimiento (aquí, "¿el dispensador pidió receta sí/no?") que alguien en la cadena
+está incumpliendo. La intervención correcta para ese factor es una corrección de proceso/política
+(auditoría, checklist obligatorio, incentivo al cumplimiento del protocolo), no un rediseño de mensaje o
+incentivo dirigido al consumidor — que sí es la herramienta correcta para los otros cuatro factores de la
+misma tabla (OR 1.3-1.9). Mezclar el tipo de intervención con el factor equivocado desperdicia el diseño.
+- **Fuente:** F-36 (🟢A, artículo peer-reviewed, SciELO Perú 2021)
+- **Leído a fondo:** 2026-08-28 (scielo.org.pe bloqueado por el proxy del entorno; reconstruido vía la
+  versión indexada en Academia.edu y SciELO Preprints que confirma diseño del estudio, N=3,849 y la
+  tabla completa de odds ratios)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 9 (sigue Alta) — la heurística de
+  "OR desproporcionado = compuerta de proceso, no sesgo conductual" es transferible a cualquier variable
+  con OR extremo que aparezca en el proyecto: si `lapuerta` alguna vez calibra un factor con un OR fuera
+  de escala respecto al resto de sus variables, la primera hipótesis debe ser una regla de compuerta mal
+  medida o mal cumplida, no un sesgo conductual real.
+
+### 66. Un veredicto agregado de "sin efecto adverso sistemático" puede estar promediando un outcome muy negativo con otros neutrales — pedir el desglose por outcome antes de repetir el veredicto general
+F-339 (revisión sistemática de Mazurenko, Taylor & Menachemi, *Medical Care Research and Review* 2022,
+PubMed/MEDLINE/Cochrane 2000-2020) ya está citado en tesis 23 como transferencia de "redes estrechas de
+proveedores" a "steering de canal de atención". La lectura a fondo confirma el veredicto agregado (costos
+reducidos en la mayoría de medidas, sin efecto adverso sistemático en acceso/calidad) pero también un
+detalle que el resumen de una línea no capturaba: dentro de "acceso", la mayoría de los análisis que
+midieron específicamente el tiempo de espera para una cita programada encontraron un efecto no deseado —
+esperas más largas en redes estrechas/por niveles — incluso cuando otros indicadores de acceso (distancia
+recorrida, cercanía al proveedor previo) mejoraban.
+**Heurística de decisión:** un veredicto agregado de "sin efecto adverso sistemático" en una revisión
+sistemática no equivale a "ningún outcome individual empeoró" — puede estar promediando varios
+indicadores neutrales o positivos con uno negativo y muy saliente para el cliente (aquí, tiempo de
+espera, justo la fricción que más se siente y más se reclama). Antes de citar el veredicto agregado de
+cualquier revisión como respaldo de una palanca de negocio (steering, tiering, redes estrechas), pedir el
+desglose por outcome individual — el que el cliente experimenta directamente rara vez es el promedio.
+- **Fuente:** F-339 (🟢A, revisión sistemática peer-reviewed, *Medical Care Research and Review* 2022)
+- **Leído a fondo:** 2026-08-28 (journals.sagepub.com y el texto completo bloqueados por el proxy del
+  entorno; reconstruido vía PubMed, el CV de la autora principal y el repositorio institucional de IUPUI
+  que confirma la tabla de resultados por outcome, incluyendo el efecto negativo específico en tiempo de
+  espera)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 23 (sigue Alta, el steering "sí
+  ahorra costo real") — le agrega un matiz operativo: si el proyecto diseña una palanca de steering/
+  tiering propia, monitorear el tiempo de espera para cita programada como métrica separada del ahorro
+  agregado, porque es el punto donde la evidencia de redes de proveedores ya documentó fricción, y es
+  exactamente el tipo de fricción que activa la reactancia que la propia tesis 23 identifica como el
+  riesgo central del mecanismo.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3749,3 +3826,43 @@ no un explicador más simple.
   existentes, aunque las tres entradas de hoy sí acotan el alcance de tesis 1, 9, 10, 17, 18 y 23.
   Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 20 días
   de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-28** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo fast-forward
+  6324fc0→29b2246, el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos** — mismo tope
+  exacto que procesó la corrida de ayer (2026-08-27), **cero fuentes nuevas** registradas por `cronista`/
+  `/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, decimoquinto día seguido sin cambios
+  sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con la
+  evidencia vigente y no forcé ningún matiz solo por completar el paso — el último bloque
+  "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada ~3 días, ya lleva
+  dieciséis días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de este proceso
+  diario). Sí corrió la rutina diaria de intuición (vigesimotercera corrida desde el 2026-08-06): esta
+  vez recalculé el conteo de fuentes 🟢A por conteo propio y directo sobre la columna de rigurosidad
+  (no el resumen textual de filas previas, que mezclaba rigor primario con menciones secundarias de 🟢
+  dentro del mismo texto) y encontré **134 filas con rigor primario 🟢A puro** (más 3 filas mixtas —
+  F-149, F-457, F-466 — cuyo rigor principal no es A y que por eso excluí de la población elegible), de
+  las cuales 63 ya tenían lectura profunda del Lobo — de las 71 restantes elegí 3 al azar puro (Python
+  `random.sample`, sin `--seed`): F-43 (Harada et al. 2024, *JMIR Formative Research*, precisión de
+  symptom-checker japonés — ya citado en tesis 10 solo por la cifra plana de 45.1% y, desde la revisión
+  profunda de `cronista` del 2026-08-05, por el desglose 24.2%/14.5%), F-36 (factor dominante de
+  automedicación no responsable en Perú, SciELO 2021 — ya citado en tesis 9 por el OR=29.06) y F-339
+  (Mazurenko, Taylor & Menachemi 2022, *Medical Care Research and Review*, redes estrechas/por niveles —
+  ya citado en tesis 23 como transferencia de mecanismo de redes de proveedores a steering de canal).
+  Las tres bloqueadas por el proxy en su URL directa (ncbi.nlm.nih.gov, scielo.org.pe,
+  journals.sagepub.com); reconstruidas vía búsqueda dirigida (JMIR Formative Research, Academia.edu/
+  SciELO Preprints, y el repositorio institucional de IUPUI) que confirma detalle nuevo no capturado en
+  el resumen de una línea de cada una, incluso para F-43 y F-36 pese a que ya tenían matiz de tesis
+  propio — el ángulo de hoy es de heurística transferible, no de matiz de negocio puntual, como marca la
+  regla del proceso. Sumé las entradas 64, 65 y 66 de Intuición acumulada: (64) un promedio de precisión
+  estable en el tiempo no es evidencia de solidez si nadie separó los casos fáciles de los difíciles —
+  F-43 confirma que "commonality" y "typicality" están asociadas de forma estadísticamente significativa
+  a la precisión, el mecanismo formal detrás del dato ya conocido; (65) un odds ratio que multiplica por
+  15-20x al resto de una tabla de regresión (aquí, OR=29 vs. 1.3-1.9) casi nunca es sesgo conductual
+  gradual — es una regla de compuerta incumplida, y la intervención correcta es de proceso/política, no
+  de nudge al consumidor; (66) un veredicto agregado de "sin efecto adverso sistemático" puede promediar
+  un outcome negativo y saliente (tiempo de espera, en F-339) con otros neutrales — pedir el desglose por
+  outcome antes de repetir el veredicto general de cualquier revisión sistemática. Ninguna tesis de
+  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una
+  revisión de evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance
+  de tesis 9, 10 y 23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
+  Bitácora con 21 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar
+  todavía.
