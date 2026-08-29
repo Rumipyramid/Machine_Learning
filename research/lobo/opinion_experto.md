@@ -2925,6 +2925,97 @@ desglose por outcome individual — el que el cliente experimenta directamente r
   exactamente el tipo de fricción que activa la reactancia que la propia tesis 23 identifica como el
   riesgo central del mecanismo.
 
+### 67. El backlash de un dark pattern no depende de que exista manipulación — depende del subtipo específico y de a qué lado de la línea leve/agresivo cae
+F-241 (Luguri & Strahilevitz 2021, *Journal of Legal Analysis*) ya estaba citado en el node de
+tendencias-diseno-innovacion como "evidencia causal más fuerte del poder del diseño", pero solo por
+las tres cifras agregadas (11.3% control → 25.8% leve → 41.9% agresivo). La lectura a fondo agrega el
+detalle de mecanismo: no todos los dark patterns rinden igual — *hidden information*, *trick question*
+y *obstrucción* son los subtipos que más manipulan con éxito, y son justamente los que dominan la
+condición "leve" del experimento. Los patrones leves **no generan backlash medible** pese a duplicar
+holgadamente la conversión; los agresivos casi cuadruplican la conversión pero **sí** disparan un
+rechazo del consumidor lo bastante fuerte como para que los propios autores lo documenten como efecto
+aparte. Y el daño de los leves no se reparte parejo: los sujetos con menos educación son
+significativamente más susceptibles a ellos específicamente — no a los agresivos, donde la brecha
+educativa no aparece igual de marcada.
+**Heurística de decisión:** frente a cualquier técnica de persuasión (playbook de venta, diseño de
+formulario, jerarquía visual de opciones), la pregunta de riesgo reputacional útil no es binaria
+("¿esto es manipulador?") sino de clasificación: ¿de qué subtipo específico se trata (ocultar
+información, pregunta trampa, fricción para el objetivo del usuario) y a qué lado de la línea
+leve/agresivo cae? La línea que separa "convierte sin ruido" de "convierte más pero quema confianza"
+no es la intención de la empresa, es el subtipo de la táctica — y el costo de los patrones leves lo
+paga desproporcionadamente el segmento con menos educación financiera, justo la variable que el
+generador de personas sintéticas ya modela.
+- **Fuente:** F-241 (🟢A, experimento aleatorizado con muestra ponderada por censo de EE.UU.,
+  N=1.773, *Journal of Legal Analysis*, Oxford)
+- **Leído a fondo:** 2026-08-29 (academic.oup.com bloqueado por el proxy del entorno; reconstruido vía
+  el working paper idéntico en SSRN/Chicago Unbound y coberturas técnicas del propio hallazgo que
+  confirman la taxonomía de subtipos y el patrón de susceptibilidad por educación, no solo las tres
+  cifras agregadas ya citadas)
+- **Conexión razonada, no forzada:** no crea una tesis de negocio numerada nueva — sirve de criterio
+  de auditoría para tesis 18 (el playbook de ventas de RIMAC mezcla una técnica real con una
+  heurística sin base científica): cualquier técnica del playbook que dependa de omitir, complicar o
+  poner fricción a la salida del cliente debería clasificarse por este mismo criterio de subtipo antes
+  de escalarla, no solo evaluarse por si "funciona".
+
+### 68. Una explicación de IA puede subir la aceptación de la recomendación por igual cuando la IA acierta y cuando falla — eso es inflar percepción de competencia, no calibrar confianza
+F-244 (Bansal et al. 2021, CHI) ya está citado en tesis 22 con el resumen "explicaciones sin
+verificabilidad producen sobre-confianza". La lectura a fondo agrega dos detalles que cambian cómo se
+debería leer cualquier propuesta de "agregar explicabilidad" a un agente conversacional: primero, el
+diseño experimental deliberadamente puso a la IA con precisión **comparable** a la de las personas (no
+muy superior) para que la complementariedad fuera siquiera visible — un resultado nulo de
+explicabilidad en ese régimen no dice nada todavía sobre un régimen donde la IA domina claramente,
+que es un supuesto distinto que hay que verificar caso por caso. Segundo, y más importante: las
+explicaciones subieron la tasa de aceptación de la recomendación de la IA **independientemente de si
+esa recomendación era correcta o incorrecta**, y no rindieron mejor que el baseline barato de mostrar
+solo el score de confianza crudo de la IA, sin narrativa.
+**Heurística de decisión:** antes de invertir en una UI de "explicación" para cualquier sistema
+asistido por IA del proyecto (triage, recomendador de cobertura, asesor conversacional), correr
+primero el experimento barato de comparar contra solo mostrar un score de confianza numérico — si el
+score crudo iguala a la explicación narrada en calibrar cuándo el usuario debería confiar y cuándo no,
+la explicación es gasto de diseño sin retorno de seguridad. Y si el objetivo es medir si "explicar"
+ayuda, verificar primero si el propio sistema tiene una brecha real de desempeño humano-IA para cerrar
+— en paridad de desempeño, cualquier ganancia de "aceptación" que produzca la explicación es sospechosa
+por default, no una señal de éxito.
+- **Fuente:** F-244 (🟢A, full paper peer-reviewed, CHI 2021, autores de Microsoft Research/U. of
+  Washington)
+- **Leído a fondo:** 2026-08-29 (dl.acm.org, researchgate.net e idl.cs.washington.edu bloqueados por
+  el proxy del entorno; reconstruido vía cobertura técnica del hallazgo, el repositorio NSF Public
+  Access y el registro de Microsoft Research que confirman el diseño de paridad humano-IA y el
+  resultado de sobre-aceptación independiente de la corrección, no solo el resumen ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 22 (sigue Alta en el mecanismo) —
+  le agrega un criterio de diseño accionable que la tesis todavía no tenía: probar contra el baseline
+  de "solo mostrar confianza" antes de construir explicación narrada, y verificar el régimen de
+  paridad de desempeño humano-IA antes de extrapolar el resultado nulo a cualquier sistema del
+  proyecto.
+
+### 69. La aversión a redes angostas de proveedores no es una función continua del tamaño de la red — es casi binaria y se activa solo cuando la red excluye al médico habitual del paciente
+F-341 (*Journal of Health Economics* 2018, vol. 60) ya está citado en tesis 23 dentro del rango
+agregado F-338 a F-341 como "transferido de sistemas públicos". La lectura a fondo muestra que es en
+realidad el paper más directamente aplicable a diseño de producto de todo ese cluster: usa datos
+reales de elección de plan en un HIX privado (un plan de red amplia + cuatro de red angosta), con un
+modelo de elección discreta que separa dos cosas que la intuición suele mezclar. La disposición a
+pagar por una red que cubra al médico habitual del paciente es de US$84-275/mes en atención primaria
+(US$0-115/mes en especialistas) — alta. Pero **condicional a que esa red ya cubra al médico habitual**,
+la aversión adicional aparece solo frente a las redes **más angostas de todas**, no frente a la
+angostura en sí. Es decir: la variable que mueve el rechazo no es "qué tan angosta es la red" en un
+continuo, es un umbral binario — ¿está mi médico adentro o afuera?
+**Heurística de decisión:** al diseñar cualquier palanca de red angosta/steering de canal (tesis 23),
+la pregunta de diseño que más rinde no es "¿cuánto podemos angostar la red sin que se note?" sino
+"¿la red angosta preserva al proveedor habitual del paciente, sí o no?" — preservar ese ancla permite
+angostar la red bastante sin backlash proporcional; romperlo activa rechazo aunque el resto de la red
+sea generoso. Es una re-especificación más barata y más accionable de la variable de diseño que la
+proxy continua de "tamaño de red" que se usaría por default.
+- **Fuente:** F-341 (🟢A, peer-reviewed, modelo de elección discreta sobre datos reales de un HIX
+  privado del Medio Oeste de EE.UU., *Journal of Health Economics* 2018)
+- **Leído a fondo:** 2026-08-29 (pubmed.ncbi.nlm.nih.gov y sciencedirect.com bloqueados por el proxy
+  del entorno; reconstruido vía IDEAS/RePEc, el resumen de conferencia APPAM 2017 del mismo estudio y
+  el repositorio de CDC Stacks que confirman el modelo y las cifras exactas de disposición a pagar,
+  más el matiz de umbral que el resumen de una línea ya citado no capturaba)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 23 (sigue Alta) — le agrega la
+  palanca de diseño más concreta que el cluster de evidencia de esa tesis todavía no tenía: cualquier
+  producto de steering/red angosta del proyecto debería tratar "¿el médico habitual del paciente queda
+  adentro?" como la variable de diseño primaria, antes que el tamaño de red como proxy genérica.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3866,3 +3957,40 @@ desglose por outcome individual — el que el cliente experimenta directamente r
   de tesis 9, 10 y 23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
   Bitácora con 21 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar
   todavía.
+- **2026-08-29** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios,
+  working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a
+  F-468 sin huecos** — mismo tope exacto que procesó la corrida de ayer (2026-08-28), **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  decimosexto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
+  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar
+  el paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de
+  `cronista`, cada ~3 días, ya lleva diecisiete días sin correr; no lo disparo aquí porque es rutina de
+  `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición (vigesimocuarta
+  corrida desde el 2026-08-06): recalculé el conteo de filas con rigor primario 🟢A puro sobre la
+  columna de rigurosidad (mismo método de la corrida de ayer, excluyendo las 3 filas mixtas F-149,
+  F-457, F-466) y confirmé **134 filas**, de las cuales 66 ya tenían lectura profunda del Lobo — de las
+  68 restantes elegí 3 al azar puro (Python `random.sample`, sin `--seed`): F-241 (Luguri &
+  Strahilevitz 2021, *Journal of Legal Analysis*, dark patterns — ya citado solo en el node de
+  tendencias-diseno-innovacion por las tres cifras agregadas de conversión), F-244 (Bansal et al. 2021,
+  CHI, explicaciones de IA y desempeño complementario — ya citado en tesis 22 por el resumen de una
+  línea "sin verificabilidad producen sobre-confianza") y F-341 (*Journal of Health Economics* 2018,
+  disposición a pagar por continuidad de proveedor — ya citado en tesis 23 solo dentro de un rango
+  agregado F-338 a F-341). Las tres bloqueadas por el proxy en su URL directa (academic.oup.com,
+  dl.acm.org/researchgate.net/idl.cs.washington.edu, pubmed.ncbi.nlm.nih.gov/sciencedirect.com);
+  reconstruidas vía búsqueda dirigida (SSRN/Chicago Unbound para F-241; NSF Public Access y Microsoft
+  Research para F-244; IDEAS/RePEc, APPAM y CDC Stacks para F-341) que confirman detalle de mecanismo
+  nuevo en las tres, no solo el resumen de una línea ya citado. Sumé las entradas 67, 68 y 69 de
+  Intuición acumulada: (67) el backlash de un dark pattern depende del subtipo específico (leve vs.
+  agresivo) y no de si existe manipulación en abstracto — los leves duplican conversión sin backlash
+  medible pero castigan más a quien tiene menos educación, un criterio de auditoría nuevo para tesis 18
+  (el playbook de ventas de RIMAC); (68) una explicación de IA puede subir la aceptación de la
+  recomendación por igual acierte o falle la IA — inflar percepción de competencia, no calibrar
+  confianza — y no superó al baseline barato de solo mostrar el score de confianza crudo, matiz de
+  diseño nuevo para tesis 22; (69) la aversión a redes angostas de proveedores es casi binaria (¿el
+  médico habitual queda adentro o afuera?), no una función continua del tamaño de la red — la variable
+  de diseño más accionable que el cluster de evidencia de tesis 23 todavía no tenía. Ninguna tesis de
+  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una
+  revisión de evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance
+  de tesis 18, 22 y 23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas
+  hoy. Bitácora con 22 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin
+  podar todavía.

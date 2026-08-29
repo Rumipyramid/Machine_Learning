@@ -83,3 +83,6 @@
 | F-43 | 🟢 A | 2026-08-28 | Intuición 64 — un promedio de precisión estable en el tiempo no es evidencia de solidez si nadie separó los casos fáciles de los difíciles |
 | F-36 | 🟢 A | 2026-08-28 | Intuición 65 — un odds ratio que multiplica por 15-20x al resto de la tabla suele ser una regla de compuerta incumplida, no un sesgo conductual gradual |
 | F-339 | 🟢 A | 2026-08-28 | Intuición 66 — un veredicto agregado de "sin efecto adverso sistemático" puede promediar un outcome negativo saliente con otros neutrales |
+| F-241 | 🟢 A | 2026-08-29 | Intuición 67 — el backlash de un dark pattern depende del subtipo específico (leve vs. agresivo), no de si existe manipulación en abstracto |
+| F-244 | 🟢 A | 2026-08-29 | Intuición 68 — una explicación de IA puede subir la aceptación de la recomendación por igual acierte o falle la IA; inflar percepción de competencia no es calibrar confianza |
+| F-341 | 🟢 A | 2026-08-29 | Intuición 69 — la aversión a redes angostas de proveedores es casi binaria (médico habitual adentro o afuera), no función continua del tamaño de la red |
