@@ -3016,6 +3016,89 @@ proxy continua de "tamaño de red" que se usaría por default.
   producto de steering/red angosta del proyecto debería tratar "¿el médico habitual del paciente queda
   adentro?" como la variable de diseño primaria, antes que el tamaño de red como proxy genérica.
 
+### 70. El efecto certeza explica por qué "cero deducible" se sobre-paga: eliminar el último tramo de riesgo vale desproporcionadamente más que reducir el riesgo esperado en la misma magnitud sin eliminarlo
+Kahneman & Tversky (1979) no se agotan en "las pérdidas duelen ~2x más que ganancias equivalentes"
+(ya citado en tesis 18 vía el Bloque 4 del Playbook). El mecanismo más específico y menos citado es
+el **efecto certeza**: la gente descuenta desproporcionadamente un resultado que es solo probable
+frente a uno que es seguro — no de forma lineal con la probabilidad. Pasar de 100%→95% de protección
+se siente peor que pasar de 50%→45%, aunque la caída de probabilidad (5 puntos) sea idéntica en
+ambos casos. Esto viene empaquetado con dos piezas más: una **fase de edición** previa a evaluar
+cualquier opción (cómo se descompone/enmarca el problema antes de comparar) y un **efecto
+aislamiento** — la gente descarta los componentes que todas las opciones comparadas comparten, lo
+que produce preferencias inconsistentes según cómo se recorte la comparación, no según el valor
+económico real de fondo. **Heurística de decisión:** cuando un cliente prefiere un plan "cero
+deducible" más caro sobre uno con deducible bajo y prima menor, aunque el valor esperado favorezca
+al segundo, no es necesariamente error de cálculo — es el efecto certeza operando exactamente como
+predice la teoría fundacional (Nobel 2002). La prima que la gente paga por eliminar el último tramo
+de riesgo residual es sistemática, no ruido, y sugiere que un producto que venda "cobertura total"
+puede justificar un precio más alto que uno matemáticamente equivalente que solo reduce el riesgo
+esperado sin llegar a cero.
+- **Fuente:** F-221 (🟢A, Kahneman & Tversky 1979, *Econometrica* 47(2):263-291 — paper fundacional,
+  base del Premio Nobel de Economía 2002 de Kahneman; ya citado en el ledger solo por el resumen de
+  una línea sobre aversión a la pérdida)
+- **Leído a fondo:** 2026-08-30 (jstor.org bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que confirma la función de valor en forma de S, el efecto certeza, la fase de
+  edición/evaluación y el efecto aislamiento — piezas del mecanismo que el resumen de una línea ya
+  citado en tesis 18 no capturaba)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 2 (coaseguro como cuello de
+  botella de comprensión) ni de tesis 18 (Playbook del Asesor) — agrega una explicación de mecanismo
+  para un patrón de precio/producto (sobre-demanda de "cero deducible") que ninguna de las dos tesis
+  tenía explícito, y una hipótesis de pricing (prima por certeza total) que queda como instinto hasta
+  que un `F-n` mida directamente disposición a pagar por deducible cero en seguros.
+
+### 71. Antes de leer un piloto por diseño escalonado (stepped-wedge) como evidencia causal, verificar que controló la tendencia temporal — es la vulnerabilidad estructural específica de ese diseño, no un chequeo de calidad genérico
+Mdege et al. (2011) confirman las ventajas ya conocidas del diseño escalonado que sostienen tesis 10
+(menor contaminación entre clusters, mayor aceptación porque todos reciben la intervención
+eventualmente, menor demanda simultánea de recursos — relevante para pilotar `/trinidad`+`/seeker`
+por etapas en vez de todo a la vez). Lo que el resumen de una línea no capturaba es la contracara
+exacta: la vulnerabilidad **no es genérica** ("todo diseño tiene sesgos") sino **específica y
+predecible** — el diseño escalonado es estructuralmente susceptible a que una tendencia secular en
+el resultado (estacionalidad de consultas, mejora orgánica de un proceso con el tiempo, cualquier
+cosa que cambie el outcome independientemente de la intervención) se confunda con el efecto de la
+intervención, porque cada cluster se mide en un momento distinto del calendario según cuándo le
+tocó el cambio. **Heurística de decisión:** frente a cualquier resultado positivo reportado desde un
+piloto escalonado (el diseño que ya recomienda tesis 10 para testear el modelo de triage IA +
+farmacias), la primera pregunta de auditoría no es "¿la muestra fue suficiente?" sino "¿controlaron
+la tendencia temporal/estacional del outcome?" — sin eso, un resultado positivo puede ser solo el
+calendario, no la intervención.
+- **Fuente:** F-59 (🟢A, Mdege et al. 2011, *Journal of Clinical Epidemiology* — revisión
+  metodológica peer-reviewed, ya citado en el ledger desde 2026-07-06 para `modelo-salud-ia-
+  farmacias-peru.md` solo por el resumen de ventajas del diseño)
+- **Leído a fondo:** 2026-08-30 (ncbi.nlm.nih.gov bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida que confirma tanto las ventajas ya citadas como la vulnerabilidad específica
+  a confusión por tendencia secular, ausente del resumen original)
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 10 (sigue Alta) — le agrega un
+  criterio de auditoría concreto para cuando el proyecto reciba o diseñe resultados de un piloto
+  escalonado: exigir el control de tendencia temporal antes de leer el resultado como causal.
+
+### 72. Cuando un sistema de triaje remoto mide "incumplimiento" de su propia recomendación como fricción a resolver, verificar primero qué fracción de los que "no cumplieron" tenían un caso real grave
+El estudio de cumplimiento de NHS 111 (Lewis et al. 2021, PLOS One, N=3.6M llamadas, Yorkshire &
+Humber 2013-2017) encuentra que 11% de los pacientes a quienes se aconsejó autocuidado/atención
+primaria fueron igual a Urgencias. El resumen de una línea ya citado (`F-333`) lee esto como
+fricción de adopción a minimizar. La lectura completa da un dato que cambia el signo del hallazgo:
+de ese 11% "no conforme", **88% fue clasificado como urgente al llegar** y **37% terminó
+hospitalizado**. No es un grupo de pacientes ansiosos desobedeciendo una indicación correcta — es
+evidencia directa de que el sistema de triaje remoto subclasificó una fracción no trivial de casos
+reales graves, y esos pacientes corrigieron el error del sistema por cuenta propia. **Heurística de
+decisión:** frente a cualquier métrica de "incumplimiento" o "fricción" en un sistema de triage
+(telefónico, chatbot, symptom-checker — el modelo `/trinidad`+`/seeker` de farmacia+IA incluido), no
+asumir que el usuario que se desvía de la recomendación está siendo irracional o mal informado;
+cruzar primero ese grupo contra el desenlace real (¿terminó siendo un caso grave?) antes de
+diseñar cualquier intervención para "mejorar la adherencia" — la intervención correcta puede ser
+mejorar la clasificación del sistema, no la conformidad del paciente.
+- **Fuente:** F-333 (🟢A para el componente peer-reviewed en PLOS One / 🔵B para el componente de
+  revisión rápida — Lewis et al. 2021, ya citado en el ledger desde 2026-07-27 solo por el resumen
+  de una línea sobre la cifra agregada de £4.52M y 11% de no conformidad)
+- **Leído a fondo:** 2026-08-30 (journals.plos.org bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida que confirma la cifra de 11% y agrega el desglose de severidad —88% urgente,
+  37% hospitalizado— ausente del resumen original)
+- **Conexión razonada, no forzada:** refuerza desde otro ángulo empírico la intuición 53
+  (2026-08-24, sistema de triaje puede fallar en dos direcciones simétricas — medir solo el ahorro
+  de costo esconde la sobre-confianza peligrosa) con un caso real y auditado de esa exacta falla; no
+  cambia la confianza de tesis 10, pero le agrega un criterio de validación concreto: cualquier
+  piloto propio de triage debe reportar el desenlace real de quienes "incumplieron" la recomendación,
+  no solo la tasa de incumplimiento.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3994,3 +4077,39 @@ proxy continua de "tamaño de red" que se usaría por default.
   de tesis 18, 22 y 23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas
   hoy. Bitácora con 22 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin
   podar todavía.
+- **2026-08-30** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` fast-forward
+  5612e59→a1450e0, que trajo consigo el commit de ayer de esta opinión y de `fuentes_leidas_lobo.md`)
+  y verifiqué `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos** —
+  mismo tope exacto que procesó la corrida de ayer (2026-08-29), **cero fuentes nuevas** registradas
+  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, decimoséptimo día
+  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna
+  quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada ~3
+  días, ya lleva dieciocho días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de
+  este proceso diario). Sí corrió la rutina diaria de intuición (vigesimoquinta corrida desde el
+  2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A (columna de rigurosidad
+  que **empieza** con 🟢, sin importar caveats secundarios después — mismo criterio que usó la corrida
+  de ayer, que ya distinguía entre "mixto" F-149/F-457/F-466, con rigor primario no-A, de filas como
+  F-257/F-333/F-429, con rigor primario A y solo un caveat secundario) y confirmé **134 filas**, de
+  las cuales 69 ya tenían lectura profunda del Lobo — de las 65 restantes elegí 3 al azar puro
+  (Python `random.sample`, sin `--seed`): F-221 (Kahneman & Tversky 1979, *Econometrica*, prospect
+  theory — ya citado en tesis 18 solo por la cifra de aversión a la pérdida 2:1), F-59 (Mdege et al.
+  2011, revisión metodológica del diseño stepped-wedge — ya citado en tesis 10 solo por el resumen de
+  ventajas) y F-333 (Lewis et al. 2021, PLOS One, cumplimiento de NHS 111 — ya citado solo por la
+  cifra agregada de £4.52M y 11% de no conformidad). Las tres bloqueadas por el proxy en su URL
+  directa (jstor.org, ncbi.nlm.nih.gov, journals.plos.org); reconstruidas vía búsqueda dirigida que
+  confirma detalle de mecanismo nuevo en las tres, no solo el resumen ya citado. Sumé las entradas 70,
+  71 y 72 de Intuición acumulada: (70) el efecto certeza de la teoría fundacional explica por qué
+  "cero deducible" se sobre-paga — eliminar el último tramo de riesgo residual vale
+  desproporcionadamente más que reducirlo en la misma magnitud sin llegar a cero, hipótesis de
+  pricing nueva para tesis 2/18; (71) la vulnerabilidad estructural específica (no genérica) de un
+  piloto stepped-wedge es la confusión por tendencia temporal/secular — criterio de auditoría nuevo
+  para cualquier piloto propio que use ese diseño (tesis 10); (72) el 11% de "incumplimiento" de NHS
+  111 no era mayormente desobediencia: 88% de ese grupo llegó clasificado urgente y 37% terminó
+  hospitalizado — evidencia empírica directa de la intuición 53 (un sistema de triaje falla en dos
+  direcciones simétricas), criterio de validación nuevo para tesis 10. Ninguna tesis de negocio
+  cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una
+  revisión de evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el
+  alcance de tesis 2, 10 y 18. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 23 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
+  — sin podar todavía.

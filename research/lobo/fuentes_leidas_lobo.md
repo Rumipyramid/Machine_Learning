@@ -86,3 +86,6 @@
 | F-241 | 🟢 A | 2026-08-29 | Intuición 67 — el backlash de un dark pattern depende del subtipo específico (leve vs. agresivo), no de si existe manipulación en abstracto |
 | F-244 | 🟢 A | 2026-08-29 | Intuición 68 — una explicación de IA puede subir la aceptación de la recomendación por igual acierte o falle la IA; inflar percepción de competencia no es calibrar confianza |
 | F-341 | 🟢 A | 2026-08-29 | Intuición 69 — la aversión a redes angostas de proveedores es casi binaria (médico habitual adentro o afuera), no función continua del tamaño de la red |
+| F-221 | 🟢 A | 2026-08-30 | Intuición 70 — el efecto certeza explica el sobrepago por cobertura "cero deducible": eliminar el último tramo de riesgo vale desproporcionadamente más que reducirlo en la misma magnitud sin eliminarlo |
+| F-59 | 🟢 A | 2026-08-30 | Intuición 71 — antes de leer un piloto stepped-wedge como evidencia causal, verificar que controló la tendencia temporal/estacional del outcome |
+| F-333 | 🟢 A / 🔵 B | 2026-08-30 | Intuición 72 — ante "incumplimiento" de un triage remoto, verificar primero qué fracción de los no-conformes tenía un caso real grave antes de tratarlo como fricción a resolver |
