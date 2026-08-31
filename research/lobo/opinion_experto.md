@@ -3099,6 +3099,90 @@ mejorar la clasificación del sistema, no la conformidad del paciente.
   piloto propio de triage debe reportar el desenlace real de quienes "incumplieron" la recomendación,
   no solo la tasa de incumplimiento.
 
+### 73. El i-frame no solo rinde menos que el s-frame — puede ser el vehículo que un interesado usa para desviar la reforma estructural que no le conviene
+El resumen de una línea ya citado de F-19 (`brújula del giro hacia diseño de producto/sistema`,
+tesis 7) captura el argumento central de Chater & Loewenstein (2022/2023): el campo del behavioral
+public policy se desvió hacia soluciones i-frame (nudges individuales) en vez de s-frame
+(estructurales — impuesto al carbono en vez de nudge de reciclaje, rediseño de producto en vez de
+"educar" al consumidor). La lectura completa agrega un mecanismo que el resumen no capturaba: los
+autores no solo dicen que el i-frame rinde menos — argumentan que promover el i-frame tiene un
+**efecto secundario político**, porque desvía atención y respaldo de la reforma s-frame, y que
+existen actores con interés directo en que la conversación pública se quede en "el problema es la
+conducta individual" precisamente porque eso saca de la mesa la reforma estructural que los
+afectaría. **Heurística de decisión:** cuando alguien (interno o un socio/proveedor) propone
+"educar al cliente" o una campaña de alfabetización financiera como la solución a un problema de
+negocio (subaseguro, desconfianza, coaseguro mal entendido), preguntar explícitamente si existe
+también una palanca s-frame disponible (rediseño de producto, cambio de default, regulación de
+disclosure) y quién se beneficia de que esa palanca se quede fuera de la conversación — la
+propuesta i-frame puede ser genuinamente la mejor opción disponible, pero también puede ser la
+opción que más le conviene a quien la propone, y ambas cosas se ven idénticas desde afuera si no
+se hace la pregunta.
+- **Fuente:** F-19 (Chater, N. & Loewenstein, G. 2022/2023, *Behavioural Public Policy* — ya citado
+  en tesis 7 solo como "brújula del giro hacia diseño de producto/sistema", registrado en el ledger
+  desde 2026-07-12)
+- **Leído a fondo:** 2026-08-31 (papers.ssrn.com bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida que confirma el argumento central y agrega el efecto secundario político —
+  Q&A de George Loewenstein con CHIBE/Penn, comentario de BIT sobre malentendidos de la práctica, y
+  la réplica/extensión de los mismos autores "An s-frame agenda for behavioral public policy
+  research")
+- **Conexión razonada, no forzada:** agrega una dimensión estratégica nueva a tesis 6 (crisis del
+  nudge) y tesis 7 (s-frame > i-frame) que ninguna tenía — no cambia su confianza, pero cambia cómo
+  debe leerse cualquier propuesta interna de Rimac que enmarque un problema de negocio como falla
+  de comprensión del cliente en vez de falla de diseño de producto.
+
+### 74. Antes de leer la fusión de segmentos reportables de una empresa como señal de que oculta una métrica bajo presión de disrupción, cotejar la razón oficial que declara el propio filing
+El resumen de una línea ya citado de F-306 (Adobe Form 10-Q FY2026 Q2) marcaba la fusión de Digital
+Media, Digital Experience y Publishing en un solo segmento reportable como "degradación del
+reporting justo bajo presión de disrupción por IA" — una lectura cínica razonable dado el timing.
+La lectura completa (reconstruida, no el filing directo) encuentra que Adobe declara una razón
+operativa propia en el mismo cambio: el CEO (chief operating decision maker) ahora revisa
+resultados consolidados para evaluar desempeño y asignar recursos, reflejando "unified selling
+motions and integrated product innovation" — es decir, la empresa dice que vende y construye
+producto de forma integrada, no que dejó de medir Digital Media por conveniencia. **Heurística de
+decisión:** una razón operativa legítima declarada en el propio filing y una motivación de ocultar
+una métrica incómoda bajo presión competitiva no son mutuamente excluyentes — pero el solo timing
+(justo cuando arrecia la narrativa de disrupción por IA) no basta como evidencia de la segunda; hace
+falta un rastro adicional (comparación con cómo reportan pares del sector, reacción de analistas
+pidiendo el desglose, o evidencia de que la "razón operativa" es nueva y no viene precedida de un
+cambio real en cómo se vende/construye el producto) antes de tratar la sospecha como hallazgo. El
+resumen de cronista adoptó la lectura cínica sin ese rastro adicional — queda como hipótesis
+razonable, no como dato confirmado.
+- **Fuente:** F-306 (Adobe Inc., SEC Form 10-Q FY2026 Q2 — ya citado en
+  `_nodes/tendencias-diseno-innovacion.md` §4.1, hipótesis H16, registrado en el ledger desde
+  2026-07-26)
+- **Leído a fondo:** 2026-08-31 (sec.gov bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que cita directamente el lenguaje de la nota de segmento del filing —
+  MarketScreener, StockTitan)
+- **Conexión razonada, no forzada:** matiza (no invalida) el uso de F-306 en H16 del node de
+  tendencias-diseno-innovacion — sube el estándar de evidencia que esa hipótesis necesita para
+  pasar de sospecha razonable a hallazgo, sin tocar ninguna tesis numerada de esta opinión.
+
+### 75. Una renuncia de junta "efectiva inmediatamente" seguida de un lanzamiento competidor a los pocos días es evidencia de que el producto ya estaba listo, no de una reacción improvisada — y verificar la fecha exacta contra el filing primario antes de construir cualquier lectura sobre el intervalo
+El resumen de una línea ya citado de F-429 tenía la renuncia del CPO de Anthropic a la junta de
+Figma fechada el 16-abr-2026, con el lanzamiento de Claude Design "al día siguiente" (17-abr-2026)
+— un intervalo de un día. La lectura completa encuentra que la fecha real, según el propio Form 8-K
+que Figma presentó a la SEC, es **14-abr-2026** ("resignation effective immediately"), con el
+lanzamiento el 17-abr-2026 — un intervalo de **tres días**, no uno. Corregí la fecha en `codice.md`
+(mismo criterio que la corrección de F-467). Más allá de la corrección, el intervalo real de tres
+días (no uno) es el dato que sostiene mejor el argumento de fondo: un producto competidor completo
+—con research preview funcional, export a PPTX/PDF/HTML/Canva— no se arma en tres días desde que un
+ejecutivo resuelve un conflicto de interés; la renuncia fue casi con certeza una jugada de
+cumplimiento/optics cronometrada al momento en que la intención competitiva se filtró a la prensa
+(*The Information*), no el disparador que puso en marcha la construcción del producto. **Heurística
+de decisión:** al leer el lanzamiento "sorpresa" de un competidor, medir el intervalo real entre la
+primera señal pública de conflicto de interés y la fecha de lanzamiento — un intervalo corto es
+evidencia de que el producto ya estaba listo antes de que el mercado se enterara, útil para calibrar
+cuánta advertencia real da un disruptor antes de aterrizar (relevante para cualquier apuesta de
+Rimac sobre cuánto tiempo de ventaja tiene frente a un entrante con capacidad de IA ya construida).
+- **Fuente:** F-429 (TechCrunch, VentureBeat + divulgación SEC — ya citado en
+  `_nodes/tendencias-diseno-innovacion.md` §11.8, registrado en el ledger desde 2026-08-02)
+- **Leído a fondo:** 2026-08-31 (techcrunch.com bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida con múltiples fuentes independientes que convergen en la fecha del Form 8-K de
+  Figma —StockTitan, TipRanks, The Globe and Mail— y en la fecha de lanzamiento de Claude Design)
+- **Conexión razonada, no forzada:** corrección de fecha en F-429 (`codice.md`); no reabre ninguna
+  tesis, aplica el mismo mecanismo de higiene de fecha que ya estableció C5/F-467 (verificar la
+  fecha antes de leer un evento como señal de tendencia o de intervalo temporal).
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4113,3 +4197,49 @@ mejorar la clasificación del sistema, no la conformidad del paciente.
   alcance de tesis 2, 10 y 18. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 23 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
   — sin podar todavía.
+- **2026-08-31** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull` trajo fast-forward 5612e59→0386d20, el commit de ayer de esta opinión y de
+  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
+  directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó la
+  corrida de ayer (2026-08-30), **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, decimoctavo día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
+  ~3 días, ya lleva diecinueve días sin correr; no lo disparo aquí porque es rutina de `cronista`,
+  no de este proceso diario). Sí corrió la rutina diaria de intuición (vigesimosexta corrida desde
+  el 2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A (mismo criterio que
+  la corrida de ayer — columna de rigurosidad que **empieza** con 🟢, excluyendo las 3 filas mixtas
+  F-149/F-457/F-466) y confirmé **134 filas**, de las cuales 72 ya tenían lectura profunda del Lobo
+  — de las 62 restantes elegí 3 al azar puro (Python `random.sample`, sin `--seed`): F-306 (Adobe
+  Inc., Form 10-Q SEC FY2026 Q2 — ya citado en el node de tendencias-diseno-innovacion, H16, solo
+  por las cifras de revenue/ARR y una lectura cínica sin verificar de la fusión de segmentos), F-19
+  (Chater & Loewenstein, *Behavioural Public Policy* — ya citado en tesis 7 solo como "brújula del
+  giro hacia diseño de producto/sistema") y F-429 (TechCrunch/VentureBeat + divulgación SEC sobre la
+  renuncia del CPO de Anthropic a la junta de Figma y el lanzamiento de Claude Design — ya citado en
+  el mismo node §11.8). Las tres bloqueadas por el proxy en su URL directa (sec.gov, papers.ssrn.com,
+  techcrunch.com); reconstruidas vía búsqueda dirigida con múltiples fuentes independientes que
+  confirman detalle de mecanismo nuevo en las tres, no solo el resumen ya citado — y en el caso de
+  F-429, que **corrigen un error de fecha real** en el ledger (ver abajo). Sumé las entradas 73, 74 y
+  75 de Intuición acumulada: (73) el argumento de Chater & Loewenstein no es solo que el s-frame
+  rinde más que el i-frame — es que promover el i-frame puede tener un efecto secundario político
+  deliberado, desviando respaldo de la reforma estructural que a algún interesado no le conviene;
+  agrega una lectura estratégica nueva a tesis 6 y 7 (¿quién se beneficia de enmarcar un problema de
+  negocio como falla de comprensión del cliente en vez de falla de diseño de producto?); (74) el
+  filing de Adobe declara una razón operativa propia (unified selling motions) para fusionar
+  segmentos — no descarta la lectura cínica de opacamiento bajo presión de IA que cronista registró
+  en F-306, pero sube el estándar de evidencia que esa hipótesis necesita para pasar de sospecha a
+  hallazgo; matiza H16 del node de tendencias-diseno-innovacion sin tocar ninguna tesis numerada;
+  (75) **corrección de fecha en F-429**: la renuncia del CPO de Anthropic a la junta de Figma fue el
+  14-abr-2026 (Form 8-K de Figma), no el 16-abr-2026 como decía el ledger — el intervalo real hasta
+  el lanzamiento de Claude Design (17-abr-2026) es de tres días, no de uno; corregido directamente en
+  `codice.md`. Un intervalo de tres días entre una renuncia por conflicto de interés y el lanzamiento
+  de un producto competidor completo es evidencia de que el producto ya estaba listo antes de que el
+  conflicto se hiciera público, heurística de lectura de eventos corporativos transferible a
+  cualquier evaluación de cuánta advertencia real da un disruptor con capacidad de IA ya construida.
+  Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo
+  de intuición, no una revisión de evidencia sobre las tesis existentes, aunque las tres entradas de
+  hoy sí acotan el alcance de tesis 6, 7 y de H16 del node de tendencias-diseno-innovacion, y una
+  corrige una fecha real del ledger. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
+  fuentes leídas hoy. Bitácora con 24 días de historial (2026-08-08 a hoy), dentro de la ventana de
+  ~30 días — sin podar todavía.

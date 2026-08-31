@@ -89,3 +89,6 @@
 | F-221 | 🟢 A | 2026-08-30 | Intuición 70 — el efecto certeza explica el sobrepago por cobertura "cero deducible": eliminar el último tramo de riesgo vale desproporcionadamente más que reducirlo en la misma magnitud sin eliminarlo |
 | F-59 | 🟢 A | 2026-08-30 | Intuición 71 — antes de leer un piloto stepped-wedge como evidencia causal, verificar que controló la tendencia temporal/estacional del outcome |
 | F-333 | 🟢 A / 🔵 B | 2026-08-30 | Intuición 72 — ante "incumplimiento" de un triage remoto, verificar primero qué fracción de los no-conformes tenía un caso real grave antes de tratarlo como fricción a resolver |
+| F-306 | 🟢 A | 2026-08-31 | Intuición 74 — una razón operativa legítima declarada en un filing y un motivo de ocultar una métrica incómoda no son mutuamente excluyentes; el timing solo no basta como evidencia de lo segundo |
+| F-19 | 🟢 A | 2026-08-31 | Intuición 73 — promover el i-frame puede ser un vehículo político para desviar la reforma s-frame que no le conviene a algún interesado, no solo una palanca más débil |
+| F-429 | 🟢 A | 2026-08-31 | Intuición 75 — un intervalo corto entre una renuncia por conflicto de interés y un lanzamiento competidor completo señala producto ya listo, no reacción improvisada; corrigió fecha real del ledger (14-abr, no 16-abr) |
