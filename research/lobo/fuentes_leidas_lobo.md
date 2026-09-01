@@ -92,3 +92,6 @@
 | F-306 | 🟢 A | 2026-08-31 | Intuición 74 — una razón operativa legítima declarada en un filing y un motivo de ocultar una métrica incómoda no son mutuamente excluyentes; el timing solo no basta como evidencia de lo segundo |
 | F-19 | 🟢 A | 2026-08-31 | Intuición 73 — promover el i-frame puede ser un vehículo político para desviar la reforma s-frame que no le conviene a algún interesado, no solo una palanca más débil |
 | F-429 | 🟢 A | 2026-08-31 | Intuición 75 — un intervalo corto entre una renuncia por conflicto de interés y un lanzamiento competidor completo señala producto ya listo, no reacción improvisada; corrigió fecha real del ledger (14-abr, no 16-abr) |
+| F-158 | 🟢 A | 2026-09-01 | Intuición 76 — "no supervisado" no significa "correlaciona con el humano"; son afirmaciones distintas, exigir el estudio de validación |
+| F-304 | 🟢 A | 2026-09-01 | Intuición 77 — la compensación en acciones anual (no solo el cargo puntual de IPO) puede superar el 100% del revenue; verificar el ratio del año completo |
+| F-40 | 🟢 A | 2026-09-01 | Intuición 78 — las barreras a la telemedicina son capas de infraestructura independientes, no una barrera compuesta única |

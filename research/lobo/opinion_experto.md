@@ -3183,6 +3183,86 @@ Rimac sobre cuánto tiempo de ventaja tiene frente a un entrante con capacidad d
   tesis, aplica el mismo mecanismo de higiene de fecha que ya estableció C5/F-467 (verificar la
   fecha antes de leer un evento como señal de tendencia o de intervalo temporal).
 
+### 76. "No supervisado" no significa "correlaciona con el humano" — significa "no se entrenó con etiquetas humanas"; son dos afirmaciones distintas y solo la segunda hay que exigir con estudio de validación
+El resumen de una línea ya citado de F-158 solo registraba las 8 dimensiones de FED (Interesting,
+Fluent, Engaging, Specific, Relevant, Correct, Appropriate, Understandable) como esquema de
+anotación turno por turno. La lectura completa aclara el mecanismo: FED no se entrena ni se afina
+con calificaciones humanas — usa directamente la verosimilitud (likelihood) que un DialoGPT
+preentrenado asigna a la respuesta, repurpuesta como señal de calidad. Que el paper reporte
+correlación moderada-a-fuerte con el juicio humano (en el subset turno por turno de 455 muestras,
+y también a nivel de diálogo completo) es un hallazgo empírico separado de la propiedad "no
+supervisado" — no una consecuencia automática de ella. **Heurística de decisión:** cuando alguien
+venda una métrica automática de calidad de chatbot como confiable "porque es no supervisada" (más
+barata, más escalable, sin necesidad de etiquetar), separar la afirmación de diseño (no necesitó
+datos humanos para construirse) de la afirmación de validez (su salida sí se parece a lo que un
+humano diría) — la primera no implica la segunda, y solo un estudio de validación contra
+calificaciones humanas retenidas (como el que FED sí publicó) prueba la segunda. Exigir ese estudio
+antes de adoptar cualquier métrica automática para evaluar el triage/chatbot de `lapuerta` o del
+node `evaluacion-calidad-agentes-conversacionales-ia`, no solo la etiqueta "no supervisado" en el
+paper de origen — conecta con la intuición 20 (F-151, medir fidelidad de una IA con otra IA
+correlaciona modesto y hereda sesgo): ambas heurísticas exigen mirar el número de correlación
+reportado, no el argumento de diseño que lo antecede.
+- **Fuente:** F-158 (🟢A, Mehri & Eskenazi, SIGDIAL 2020 y ACL 2020 — ya citado en el ledger como
+  el esquema de referencia más citado para puntuar respuestas de chatbot turno por turno)
+- **Leído a fondo:** 2026-09-01 (aclanthology.org bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida que confirma el subset turno por turno de 455 muestras/8 dimensiones y el
+  reporte de correlación moderada-a-fuerte con el humano, no capturado en el resumen de una línea)
+- **Conexión razonada, no forzada:** matiza la intuición 20 sin tocar ninguna tesis numerada de
+  esta opinión — ninguna tesis vigente se apoya hoy en F-158 como evidencia de negocio puntual.
+
+### 77. Cuando la compensación en acciones anual de una empresa recién listada supera el 100% del revenue del año, el titular de "crecimiento fuerte" y la dilución severa son ciertos al mismo tiempo — verificar el ratio del año completo, no solo el cargo puntual de IPO
+El resumen de una línea ya citado de F-304 solo registraba el cargo de $975,7M de compensación en
+acciones "no recurrente" atado a la IPO de Figma, dejando la impresión de un evento aislado de un
+solo trimestre. La lectura completa del ciclo FY2025 encuentra un dato más duro que ese cargo
+puntual: la compensación en acciones **total del año completo** llegó a ~US$1,364M — **129% del
+revenue anual** de US$1,056M (+41% interanual) — es decir, Figma pagó en acciones más de lo que
+facturó en todo el año, no solo en el trimestre de vesting de la IPO. **Heurística de decisión:**
+frente al cargo "no recurrente" de compensación por IPO que cualquier empresa recién listada va a
+reportar, pedir el ratio de compensación en acciones total sobre revenue del **año completo**, no
+solo el cargo aislado del trimestre de vesting — si ese ratio sigue elevado en los trimestres
+posteriores al de la salida a bolsa (no solo en el trimestre que contiene el evento), el "cargo no
+recurrente" es la punta visible de una estructura de compensación estructuralmente dilutiva, y el
+titular de crecimiento de revenue convive con una dilución de accionistas que ese mismo titular no
+menciona — aplicable a cualquier filing futuro de una empresa de diseño/SaaS recién listada que
+alimente el node `tendencias-diseno-innovacion` (que ya usa F-303/F-304 de Figma como ancla del
+ciclo IPO 2025-2026).
+- **Fuente:** F-304 (🟢A, Figma Inc., Form 8-K/SEC FY2025 Q4 — ya citado en
+  `_nodes/tendencias-diseno-innovacion.md` §4.1, registrado en el ledger desde 2026-07-26)
+- **Leído a fondo:** 2026-09-01 (sec.gov bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que confirma, con múltiples fuentes independientes —Yahoo Finance, Nasdaq, The
+  Investment Log—, el ratio de SBC anual de 129% del revenue no capturado en el resumen de una
+  línea, que solo registraba el cargo puntual)
+- **Conexión razonada, no forzada:** matiza la lectura de F-303/F-304 en el node de
+  tendencias-diseno-innovacion sin tocar ninguna tesis numerada de esta opinión.
+
+### 78. Las barreras a la telemedicina no son una barrera compuesta única — son capas de infraestructura independientes, y resolver una no resuelve las demás
+El resumen de una línea ya citado de F-40 agrupaba las barreras a la telemedicina en Perú bajo
+cinco etiquetas genéricas (tecnológicas, humano-sociales, psicosocial-antropológicas, de
+gobernanza, económicas). La lectura completa las descompone en capas concretas y secuenciales: (1)
+infraestructura física — conectividad de banda ancha en el establecimiento de salud; (2)
+infoestructura — interoperabilidad de historias clínicas electrónicas entre sistemas; (3)
+gobernanza — monitoreo y evaluación de la agenda digital nacional de salud 2020-2025; (4) fuerza
+laboral — expansión de la capacidad del personal de salud en salud digital; (5) alfabetización
+digital en salud del lado del usuario. **Heurística de decisión:** cada una de estas cinco capas
+puede fallar de forma independiente de las otras cuatro — un piloto de triage remoto que funciona
+en una zona urbana con buena conectividad (capa 1 resuelta) no valida que la interoperabilidad de
+historias clínicas (capa 2) o la alfabetización digital del usuario (capa 5) estén resueltas para
+escalar a nivel nacional. Para cualquier apuesta de `lapuerta`/`modelo-salud-ia-farmacias-peru`
+sobre expandir un canal de triage IA fuera de Lima, auditar las cinco capas por separado antes de
+leer el éxito de un piloto urbano como evidencia de viabilidad nacional — conecta con la intuición
+41 (F-41, la ventana de un canal digital se cierra sin inversión paralela en competencia del
+recurso humano que lo opera, que ya cubría la capa 4): hoy se suma que la capa 2
+(interoperabilidad) y la capa 5 (alfabetización digital) son cuellos de botella igual de
+independientes, no subsumidos por resolver la conectividad.
+- **Fuente:** F-40 (🟢A, artículo académico peer-reviewed, perspectiva de país — ya citado como
+  pista empírica de `/trinidad` 2026-07-06 sobre viabilidad de telemedicina/IA remota en Perú)
+- **Leído a fondo:** 2026-09-01 (ncbi.nlm.nih.gov bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida —PMC espejo, PubMed, ResearchGate, repositorio de Universidad Continental—
+  que confirma el desglose de cinco capas de infraestructura no capturado en el resumen de una
+  línea)
+- **Conexión razonada, no forzada:** matiza la intuición 41 y el node
+  `modelo-salud-ia-farmacias-peru` sin tocar ninguna tesis numerada de esta opinión.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4243,3 +4323,47 @@ Rimac sobre cuánto tiempo de ventaja tiene frente a un entrante con capacidad d
   corrige una fecha real del ledger. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
   fuentes leídas hoy. Bitácora con 24 días de historial (2026-08-08 a hoy), dentro de la ventana de
   ~30 días — sin podar todavía.
+- **2026-09-01** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull` fast-forward 5612e59→426eec7, el commit de ayer de esta opinión y de
+  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
+  directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó la
+  corrida de ayer (2026-08-31), **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, decimonoveno día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
+  ~3 días, ya lleva veinte días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de
+  este proceso diario). Sí corrió la rutina diaria de intuición (vigesimoséptima corrida desde el
+  2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A (columna de
+  rigurosidad que **empieza** con 🟢, mismo criterio de las corridas previas) y confirmé **134
+  filas**, de las cuales 75 ya tenían lectura profunda del Lobo — de las 59 restantes elegí 3 al
+  azar puro (Python `random.sample`, sin `--seed`): F-158 (Mehri & Eskenazi, SIGDIAL 2020/ACL 2020,
+  FED/USR — ya citado en el node `evaluacion-calidad-agentes-conversacionales-ia` solo por las 8
+  dimensiones del esquema de anotación turno por turno), F-304 (Figma Inc., Form 8-K SEC FY2025 Q4 —
+  ya citado en `tendencias-diseno-innovacion.md` §4.1 solo por el cargo puntual de $975,7M de
+  compensación en acciones por IPO) y F-40 (perspectiva académica peer-reviewed sobre telemedicina
+  en Perú — ya citado como pista empírica de `/trinidad` 2026-07-06 solo por cinco etiquetas
+  genéricas de barrera). Las tres bloqueadas por el proxy en su URL directa (aclanthology.org,
+  sec.gov, ncbi.nlm.nih.gov); reconstruidas vía búsqueda dirigida (Semantic Scholar/NSF Public
+  Access para F-158; Yahoo Finance/Nasdaq/The Investment Log para F-304; PMC espejo/PubMed/
+  ResearchGate/Universidad Continental para F-40) que confirman detalle de mecanismo nuevo en las
+  tres, no solo el resumen de una línea ya citado. Sumé las entradas 76, 77 y 78 de Intuición
+  acumulada: (76) "no supervisado" (FED se construye sobre la verosimilitud de un DialoGPT
+  preentrenado, sin afinarse con calificaciones humanas) y "correlaciona con el humano" (que el
+  paper sí reportó, moderado-a-fuerte, en el subset turno por turno de 455 muestras) son dos
+  afirmaciones distintas — exigir el estudio de validación, no aceptar la etiqueta "no supervisado"
+  como garantía de validez, matiz nuevo para la intuición 20 (F-151); (77) la compensación en
+  acciones **total del año** de Figma llegó a 129% del revenue anual (no solo el cargo puntual de
+  $975,7M del trimestre de vesting) — el titular de 41% de crecimiento de revenue convive con una
+  dilución estructural que ese titular no menciona, matiz nuevo para la lectura de F-303/F-304 en
+  `tendencias-diseno-innovacion`; (78) las cinco barreras a la telemedicina en Perú de F-40 no son
+  una barrera compuesta sino cinco capas de infraestructura independientes (conectividad,
+  interoperabilidad de historias clínicas, gobernanza de la agenda digital, capacidad de personal,
+  alfabetización digital del usuario) que pueden fallar cada una por separado — un piloto urbano
+  exitoso no valida las demás, matiz nuevo para la intuición 41 y para `modelo-salud-ia-farmacias-
+  peru`. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
+  paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque las tres
+  entradas de hoy sí acotan el alcance de la intuición 20, de la intuición 41 y de la lectura de dos
+  nodes de investigación. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 25 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
+  — sin podar todavía.
