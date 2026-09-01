@@ -16,8 +16,8 @@ unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+
     --red:#EF3340; --red-dk:#C21F2B;
     --red-08:rgba(239,51,64,.08); --red-14:rgba(239,51,64,.14);
     --paper:#F2F3F7; --ink:#03050F;
-    --ink70:#3B3F4E; --ink45:#6E7484; --ink20:#C6C9D5; --ink12:#DCDFE8; --ink08:#E8EAF0;
-    --dk-mute:#9AA0B4; --dk-soft:#C3C8D6; --dk-panel:#0D1020; --dk-faint:#454A5E;
+    --ink70:#3B3F4E; --ink45:#5C6274; --ink20:#C6C9D5; --ink12:#DCDFE8; --ink08:#E8EAF0;
+    --dk-mute:#9AA0B4; --dk-soft:#C3C8D6; --dk-panel:#0D1020; --dk-faint:#5A6076;
     --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
     --sans:Inter,-apple-system,"Helvetica Neue",Arial,sans-serif;
   }
@@ -39,6 +39,7 @@ unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+
   .rule{width:74px;height:4px;background:var(--red);margin:20px 0;opacity:1}
   .rule.sm{width:54px;height:3px;margin:14px 0}
   .lead{font-size:26px;font-weight:600;line-height:1.28;letter-spacing:-.008em}
+  .slide:has(.big) .lead{max-width:940px}
   .src{font-family:var(--mono);font-size:11px;color:var(--ink45);letter-spacing:.02em;font-variant-numeric:tabular-nums}
   .foot{margin-top:auto}
   .mid{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0}
@@ -55,9 +56,9 @@ unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+
   .g2{grid-template-columns:1fr 1fr}
   .g3{grid-template-columns:1fr 1fr 1fr}
   .num{font-size:34px;font-weight:800;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
-  .accent{background:var(--ink);color:var(--paper);padding:14px 16px}
-  .accent .src{color:var(--dk-mute)}
-  .alert{background:var(--ink);color:var(--paper);padding:12px 16px;border-left:8px solid var(--red)}
+  .accent{background:var(--ink);color:var(--paper);padding:14px 16px;border-top:5px solid var(--red)}
+  .accent .src,.accent .kicker,.alert .src,.alert .kicker{color:var(--dk-mute)}
+  .alert{background:var(--ink);color:var(--paper);padding:12px 16px;border-left:6px solid var(--red)}
   .alert .warn{font-weight:800;color:var(--red)}
   .verbatim{background:var(--ink08);border-left:6px solid var(--red);padding:10px 14px 9px}
   .slide.dark .verbatim{background:var(--dk-panel);border-left-color:var(--red)}
@@ -158,6 +159,20 @@ unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+
   #bar{position:fixed;top:0;left:0;height:3px;background:var(--red);z-index:10;transition:width .2s}
   .hint{position:fixed;bottom:16px;right:18px;font-family:var(--mono);font-size:11px;color:var(--dk-faint);z-index:10}
 
+  /* ── ajustes finos sobre lo que traen las laminas ────────── */
+  /* curva de decaimiento (L19): venia con la paleta calida anterior */
+  .slide svg [stroke="#8a877f"]{stroke:var(--ink45)}
+  .slide svg [stroke="#1a1a18"]{stroke:var(--ink)}
+  .slide svg [fill="#8a877f"]{fill:var(--ink45)}
+  .slide svg [fill="#4a4844"]{fill:var(--ink70)}
+  /* rotulos dentro de los paneles .accent: gris calido puesto inline */
+  .accent [style*="#b8b4aa"]{color:var(--dk-mute)!important}
+  .accent [style*="#cfcbc2"]{color:var(--dk-soft)!important}
+  /* tabla demanda x falla (L20) */
+  .slide #dxf .r{grid-template-columns:214px 146px 1fr 118px}
+  .slide #dxf .r.crit>div:first-child{border-left-color:var(--red)}
+  .slide #dxf .pct{border-radius:0}
+
 /* ===== laminas revisadas: diseno original de la version de Alejandro ===== */
 .rev .row>*{flex:revert}
 
@@ -165,7 +180,7 @@ unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+
 .rev .srclabel{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink45);margin:0 0 6px}
 .rev .card{border:1.5px solid var(--ink);padding:11px 14px;background:var(--paper)}
 .rev .num{font-size:40px;font-weight:800;line-height:1;letter-spacing:-.03em}
-.rev .alert{background:var(--ink);color:var(--paper);padding:11px 16px;border-left:8px solid var(--red)}
+.rev .alert{background:var(--ink);color:var(--paper);padding:11px 16px;border-left:6px solid var(--red)}
 .rev .verbatim .attr{font-family:var(--mono);font-size:11px;color:var(--ink45);margin:1px 0 8px;display:flex;justify-content:space-between;gap:10px}
 .rev .bar{display:grid;grid-template-columns:200px 1fr auto;align-items:center;gap:12px;font-size:13.5px}
 .rev .bar .track{height:17px;background:var(--ink08);border:1px solid var(--ink20);display:block;overflow:hidden;position:revert}
