@@ -95,3 +95,6 @@
 | F-158 | 🟢 A | 2026-09-01 | Intuición 76 — "no supervisado" no significa "correlaciona con el humano"; son afirmaciones distintas, exigir el estudio de validación |
 | F-304 | 🟢 A | 2026-09-01 | Intuición 77 — la compensación en acciones anual (no solo el cargo puntual de IPO) puede superar el 100% del revenue; verificar el ratio del año completo |
 | F-40 | 🟢 A | 2026-09-01 | Intuición 78 — las barreras a la telemedicina son capas de infraestructura independientes, no una barrera compuesta única |
+| F-90 | 🟢 A | 2026-09-02 | Intuición 79 — una atribución de autoría "estilo X" en un resumen no es el autor real; verificar el registro primario antes de citar (F-90: autor y año equivocados en el ledger) |
+| F-219 | 🟢 A | 2026-09-02 | Intuición 80 — el tamaño de efecto de un meta-análisis de entrenamiento viaja con sus moderadores metodológicos (aleatorización, rigor de diseño, publicación, año), no solo con la cifra headline |
+| F-17 | 🟢 A | 2026-09-02 | Intuición 81 — un veredicto de "sin efecto tras corregir sesgo de publicación" no es uniforme por subdominio; verificar si algún subdominio tuvo evidencia débil de sesgo |

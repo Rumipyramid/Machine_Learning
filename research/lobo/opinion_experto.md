@@ -3263,6 +3263,80 @@ independientes, no subsumidos por resolver la conectividad.
 - **Conexión razonada, no forzada:** matiza la intuición 41 y el node
   `modelo-salud-ia-farmacias-peru` sin tocar ninguna tesis numerada de esta opinión.
 
+### 79. Una atribución de autoría "estilo X" en un resumen de una línea no es el autor real — verificar el registro primario de la revista antes de citar, porque una etiqueta parafraseada puede esconder tanto al autor equivocado como al año equivocado
+El resumen de una línea de F-90 en el ledger atribuye el paper a "North American Actuarial
+Journal (Cutler & Zeckhauser-style análisis actuarial)" y lo registra con año 2014. La lectura a
+fondo (vía la versión de acceso abierto en escholarship.org, contrastada con ResearchGate e
+IDEAS/RePEc) encuentra que los autores reales son **H.E. Frech III y Michael P. Smith**, sin
+relación de autoría con Cutler ni Zeckhauser, y que el artículo se publicó en el **North American
+Actuarial Journal, Vol. 19, No. 1, en 2015** — no 2014. El hallazgo sustantivo del paper (la
+espiral de la muerte de un bloque de seguro individual cerrado en 1981, con primas escalando a
+~7x un punto de referencia hacia 2009) no cambia. **Heurística de decisión:** cuando la
+descripción de una fuente usa una etiqueta asociativa o "estilo de" en vez de un nombre de autor
+literal, tratar la autoría como no verificada hasta cotejarla contra el índice primario de la
+revista — la misma etiqueta puede arrastrar tanto un autor equivocado como un año equivocado, y
+el año importa cuando después se usa para juzgar qué tan vigente o novedoso es un hallazgo. Mismo
+patrón que la corrección de autoría de F-3 (2026-07-21) y la corrección de fecha de F-429
+(2026-08-31), ahora con ambos errores juntos en una sola fuente.
+- **Fuente:** F-90 (🟢A, Frech, H.E. & Smith, M.P. 2015, "Anatomy of a Slow-Motion Health
+  Insurance Death Spiral", *North American Actuarial Journal* 19(1):60-72 — ya citado en
+  investigación /seeker 2026-07-10 sobre selección adversa y espirales de la muerte)
+- **Leído a fondo:** 2026-09-02 (tandfonline.com bloqueado por el proxy del entorno; reconstruido
+  vía escholarship.org —PDF de acceso abierto del propio paper—, researchgate.net e
+  ideas.repec.org, que confirman autoría real y año de publicación)
+- **Conexión razonada, no forzada:** no cambia ninguna tesis de negocio de esta opinión — es
+  higiene de cita. Dato para que `cronista` corrija autor y año en `codice.md` si lo considera
+  (no se edita el ledger desde este proceso).
+
+### 80. El tamaño de efecto de un meta-análisis de entrenamiento no viaja solo — viaja con los moderadores metodológicos que el propio meta-análisis usó para explicar por qué unos estudios reportan más que otros
+El resumen de una línea de F-219 ya registraba las cifras agregadas (+20% autoeficacia, +11%
+conocimiento declarativo, +14% procedimental, +9% retención) y la advertencia genérica de sesgo
+de publicación. La lectura a fondo encuentra el mecanismo detrás de esa advertencia: el propio
+meta-análisis probó cuatro moderadores metodológicos para explicar por qué unos de los 65
+estudios reportan efectos mayores que otros — **asignación aleatoria a condiciones**, **rigor del
+diseño** (pretest-posttest vs. solo posttest), **estatus de publicación** (publicado vs. no
+publicado) y **año de publicación/presentación**. Es decir, la misma comparación nominal
+("simulación vs. entrenamiento sin simulación") produce ganancias reportadas sistemáticamente
+distintas según qué tan riguroso fue el diseño de cada estudio individual, no solo según la
+tecnología usada. **Heurística de decisión:** antes de importar el porcentaje de un meta-análisis
+de efectividad de entrenamiento hacia una afirmación de negocio puntual (p. ej. sobre un
+simulador de venta como AIDA Skill Trainer), verificar si la evaluación del caso propio cae del
+lado de mayor rigor de esos mismos moderadores (aleatorizado, pretest-posttest, publicado) — tomar
+la cifra headline sin ese chequeo arriesga importar un número inflado por el extremo de diseño más
+débil de la misma distribución.
+- **Fuente:** F-219 (🟢A, Sitzmann, T. 2011, *Personnel Psychology* 64(2):489-528 — ya citado
+  para reforzar la afirmación sobre AIDA Skill Trainer en el deck Back to Basics, 2026-07-23)
+- **Leído a fondo:** 2026-09-02 (onlinelibrary.wiley.com bloqueado por el proxy del entorno;
+  reconstruido vía psycnet.apa.org, researchgate.net y el PDF espejo alojado por la Universidad de
+  Colorado (prisim.com), que detallan los cuatro moderadores metodológicos probados)
+- **Conexión razonada, no forzada:** matiza cualquier uso futuro de las cifras de F-219 en
+  material de venta consultiva o decks que citen AIDA Skill Trainer — no toca ninguna tesis
+  numerada de esta opinión, solo la cita subyacente.
+
+### 81. Un veredicto de "sin evidencia tras corregir sesgo de publicación" no es uniforme por subdominio — verificar si el propio análisis encontró un subdominio donde la evidencia de sesgo fue débil, porque ahí el "no hay efecto" descansa en un pie más corto
+La tesis 6 ya integró a fondo F-17 (Maier et al., RoBMA sobre el dataset de Mertens) en la
+revisión profunda del 2026-07-22. La relectura de hoy encuentra un detalle no capturado entonces:
+Maier et al. no aplicaron una sola prueba global de sesgo de publicación — la testearon por
+separado en cada subdominio del corpus (salud, finanzas, educación, alimentación, etc.), y
+encontraron evidencia fuerte de sesgo de publicación en todos los subdominios (factor de Bayes
+>10) **excepto en el de alimentación ("food"), donde el factor de Bayes fue mucho más débil
+(~2.49)**. Esto no revierte el veredicto agregado ni cambia la dirección o confianza de la tesis
+6, pero es exactamente la clase de matiz que esta rutina busca: el titular "no hay efecto de
+nudge tras corregir sesgo" descansa en una base más sólida en salud y finanzas —los dominios que
+ya usa la tesis 6 para el asegurador— que en el subdominio de alimentación, donde la corrección
+misma tiene menos sustento. **Heurística de decisión:** al leer un meta-análisis que corrige
+sesgo de publicación y concluye "efecto nulo" agregado, pedir el desglose de la fuerza de esa
+misma corrección por subdominio — un subdominio con evidencia débil de sesgo no hereda
+automáticamente la misma confianza en el veredicto nulo que el resto del corpus.
+- **Fuente:** F-17 (🟢A, Maier, M. et al. 2022, PNAS 119(31) — ya integrado a fondo en tesis 6,
+  revisión profunda 2026-07-22)
+- **Leído a fondo:** 2026-09-02 (pnas.org bloqueado por el proxy del entorno; reconstruido vía UCL
+  Discovery, PMC/NCBI y bayesianspectacles.org —blog de coautores del propio paper—, que detallan
+  el desglose del factor de Bayes de sesgo de publicación por subdominio)
+- **Conexión razonada, no forzada:** matiza tesis 6 (el dominio salud/finanzas que ya usa la tesis
+  es donde la corrección de sesgo es más fuerte que el promedio, no más débil) sin cambiar su
+  confianza (sigue Alta) ni su dirección.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4366,4 +4440,41 @@ independientes, no subsumidos por resolver la conectividad.
   entradas de hoy sí acotan el alcance de la intuición 20, de la intuición 41 y de la lectura de dos
   nodes de investigación. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 25 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
+  — sin podar todavía.
+- **2026-09-02** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull` fast-forward 5612e59→a2807ae, trajo el commit de ayer de esta opinión y de
+  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
+  directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó la
+  corrida de ayer (2026-09-01), **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigésimo día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
+  ~3 días, ya lleva veintiún días sin correr; no lo disparo aquí porque es rutina de `cronista`, no
+  de este proceso diario). Sí corrió la rutina diaria de intuición (vigesimoctava corrida desde el
+  2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A y confirmé **134
+  filas**, de las cuales 78 ya tenían lectura profunda del Lobo — de las 56 restantes elegí 3 al
+  azar puro (Python `random.sample`, sin `--seed`): F-219 (Sitzmann 2011, Personnel Psychology —
+  meta-análisis de efectividad de simuladores de entrenamiento, ya citado en el deck Back to Basics
+  solo por sus cifras agregadas), F-90 (ya citado en /seeker 2026-07-10 sobre selección adversa
+  solo por su hallazgo de espiral de la muerte) y F-17 (Maier et al. 2022, PNAS — ya integrado a
+  fondo en tesis 6 el 2026-07-22). Las tres bloqueadas por el proxy en su URL directa
+  (onlinelibrary.wiley.com, tandfonline.com, pnas.org); reconstruidas vía búsqueda dirigida
+  (psycnet.apa.org/researchgate.net/PDF espejo de la Universidad de Colorado para F-219;
+  escholarship.org/researchgate.net/ideas.repec.org para F-90; UCL Discovery/PMC/
+  bayesianspectacles.org para F-17) que confirman detalle de mecanismo nuevo en las tres, no solo
+  el resumen de una línea ya citado. Sumé las entradas 79, 80 y 81 de Intuición acumulada: (79) el
+  ledger tenía a F-90 con autoría parafraseada ("Cutler & Zeckhauser-style") y año equivocado
+  (2014 en vez de 2015) — los autores reales son Frech & Smith; higiene de cita, mismo patrón que
+  las correcciones de F-3 y F-429, sin tocar ninguna tesis de negocio; (80) los cuatro moderadores
+  metodológicos que Sitzmann (F-219) usó para explicar la varianza entre estudios (aleatorización,
+  rigor de diseño, estatus de publicación, año) — antes de importar su cifra headline a una
+  afirmación de negocio, chequear que el caso propio caiga del lado de mayor rigor de esos
+  moderadores; (81) el hallazgo de Maier et al. (F-17) de que la evidencia de sesgo de publicación
+  fue fuerte en todos los subdominios del corpus **excepto en alimentación**, mientras que salud y
+  finanzas —los dominios que ya usa la tesis 6— tienen la corrección más fuerte, no más débil, que
+  el promedio: matiza tesis 6 sin bajar su confianza. Ninguna tesis de negocio cambió de confianza
+  numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia
+  sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 26 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
   — sin podar todavía.
