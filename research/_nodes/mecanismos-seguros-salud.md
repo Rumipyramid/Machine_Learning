@@ -4,7 +4,7 @@
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
 > `fuentes/codice.md` (F-86 a F-116, F-193 a F-207, F-469 a F-521).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-09-03 · Versión: **v2.1**
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-09-03 · Versión: **v2.2**
 > (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
 > con §2.6: contraste regional Europa/Asia/Perú-Latam)
 
@@ -28,6 +28,9 @@ rentabilidad y mejora de salud. Se conservan §1-§5 sin cambios de numeración 
   atención con cambio de riesgo* (con retorno probado), evalúa la base de evidencia del modelo de
   Porter, y ordena el arsenal del asegurador por efecto verificado sobre siniestralidad. Añade
   las reglas 7, 8 y 9.
+- **§11** *(v2.2, 2026-09-03)* — **Glosario operativo**: definición corta de cada estrategia de
+  §1-§10 con tres columnas — impacto en salud, impacto en negocio y nivel de evidencia — más los
+  cinco conceptos que explican los fracasos. No introduce fuentes nuevas: destila el node.
 
 **Regla de lectura**: donde §8 y §2/§3/§4 hablen del mismo actor (Kaiser, Discovery, Oak Street),
 **§8 manda** — incorpora datos financieros más recientes y, en el caso de Oak Street, el desenlace
@@ -868,6 +871,97 @@ principal foco regulatorio y reputacional del sector.
   riesgo que en el mercado peruano, con ~48% de desconfianza declarada
   (ver [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros]]), es más
   caro que en el mercado donde se documentó.
+
+---
+
+## 11. Glosario operativo: qué es cada estrategia, qué mueve y con qué respaldo
+
+> Añadido el 2026-09-03 (v2.2). Definición corta de cada mecanismo mencionado en §1-§10, con su
+> impacto verificado en **salud**, su impacto en **negocio** (siniestralidad/margen) y el **nivel de
+> evidencia** que respalda ese efecto. No introduce fuentes nuevas: destila §1-§10.
+
+**Escala de evidencia** (evalúa la fuerza del diseño que sostiene el efecto, no la reputación de la
+fuente): 🟢 **Alta** = ECA o cuasi-experimento con control · 🔵 **Sólida** = evaluación oficial o
+independiente con método público, frecuentemente modelada · 🟡 **Media** = observacional, estudio de
+caso o teoría con evidencia delgada · 🟠 **Baja** = autorreportado o emisor con interés comercial ·
+⚪ **Sin evidencia** localizada. En las columnas de impacto, **⛔ marca efecto nulo demostrado**
+(distinto de "sin evidencia": aquí se midió bien y no hubo efecto).
+
+### 11.1 Cómo se paga — contrato y asignación de riesgo
+
+| Estrategia | Definición corta | Impacto en salud | Impacto en negocio | Evidencia |
+|---|---|---|---|---|
+| **Mancomunación de riesgo** | Juntar primas para que los sanos financien a los enfermos en un mismo periodo | Indirecto: habilita acceso | Es el modelo base; colapsa por selección adversa si no hay mandato ni ajuste | 🟢 Teoría fundacional + colapsos documentados (F-90, F-91) |
+| **Ajuste de riesgo** | Redistribuir dinero entre aseguradoras según lo enfermo de su cartera | Indirecto: quita el incentivo a descremar | Comprime diferencias de loss ratio y sostiene el pool | 🟡→🟢 Funciona "como se pretendía", sin neutralizar del todo (F-96, F-103) |
+| **Capitación** | Monto fijo por persona por periodo, esté sana o enferma | Mixto: mejora prevención, arriesga subprovisión | Transfiere el riesgo al prestador y hace predecible el costo | 🟢 Con gatekeeping: primaria +55,3%, hospital −23,9% (F-109) |
+| **Pago por episodio (bundle)** | Un solo precio por todo el tratamiento de una condición | Neutro: sin aumento de complicaciones | **−3,1%** (US$812 por episodio) | 🟢 Aleatorizado por área metropolitana (F-485) |
+| **ACO / ahorro compartido** | Si el gasto de la población queda bajo la meta, el prestador cobra parte del ahorro | Calidad mantenida | **~1-2% neto**; en Kinzigtal, costo comparativo menor | 🔵 CMS (F-486) · 🟢 con grupo de control (F-510) |
+| **Regla 80/20 (MLR)** | Obliga a destinar ≥80-85% de la prima a atención médica | ⚪ Ninguno directo | Techo legal de utilidad; US$11.800M devueltos 2012-2023 | 🔵 Regulación con datos oficiales (F-197) |
+| **Sistema 3M (Singapur)** | Ahorro individual obligatorio + seguro catastrófico + red de subsidio | Cobertura universal sostenida | Contiene riesgo moral sin renunciar a equidad | 🔵 (F-102) ⚠️ su propia reforma de primaria tuvo éxito limitado (F-112) |
+| **Concesión capitada (Alzira)** | Un privado opera toda la atención de un territorio por pago per cápita a 15 años | ⚪ Sin evidencia independiente concluyente | ~25% menos costo per cápita **según la parte interesada**; revertido a lo público en 2018 | 🟡 Disputada; brecha documentada entre retórica y realidad financiera (F-520) |
+| **Subsidio cruzado (Aravind)** | El que paga financia al que no, con la misma calidad clínica para ambos | Alta: 70% gratis/subsidiado sin segmentar el procedimiento | Autosostenible sin donación; utilización de recursos 80% vs. ~25% global | 🟡 Casos académicos, sin estados auditados públicos (F-499) |
+| **Integración vertical** | El asegurador es también dueño de clínicas, farmacia o gestión de beneficios | ⚪ Sin evidencia de mejora (excepción: Kaiser) | ⭐ **Donde está la utilidad real del sector** | 🟢 Filings para el efecto financiero (F-198) ⚠️ no se trasplantó en Brasil (F-501) |
+| **PBM** | Intermediario que administra el beneficio de farmacia y gana en el diferencial | ⚪ Ninguno · ⚠️ **negativo indirecto**: frena biosimilares | Máxima rentabilidad del sector (US$1.500M operativos en un trimestre) | 🟢 Filing SEC (F-198) · 🟡 para el bloqueo del ahorro (F-490) |
+| **Medicare Advantage** | Plan privado que recibe un pago ajustado por riesgo para cubrir a un beneficiario de Medicare | Calidad **equivalente**, no superior: más prevención, sin ventaja en mortalidad ni readmisiones | Motor de crecimiento; **US$84.000M de sobrepago (2025)**: US$40.000M por codificación + US$44.000M por selección favorable | 🟢 Revisión sistemática (F-494) · 🔵 MedPAC (F-493) |
+
+### 11.2 Cómo se compra — palancas de precio, red y acceso
+
+| Estrategia | Definición corta | Impacto en salud | Impacto en negocio | Evidencia |
+|---|---|---|---|---|
+| **Reference pricing** | El plan fija un precio tope; si el afiliado elige más caro, paga la diferencia | Neutro: sin daño clínico detectado | ⭐ **−34% en el precio del proveedor** | 🟢 Programa real con datos del comprador (F-484) |
+| **Red limitada / por niveles** | Cubrir solo a un subconjunto de prestadores, o cobrar menos por los baratos | Neutro clínicamente ⚠️ el costo se paga en acceso y satisfacción | ⭐ **−40% de gasto en quienes migran**; primas **−16%** | 🟢 Cuasi-experimento con incentivo exógeno (F-516) |
+| **Site of care** | Mover el mismo procedimiento del hospital al consultorio, ambulatorio o domicilio | Neutro si la selección de paciente es correcta | US$16.000-37.000 por paciente/año | 🟠 Cifras de emisor con interés comercial directo (F-489) |
+| **Centros de excelencia + segunda opinión** | Concentrar cirugía compleja en pocos centros expertos, con segunda opinión obligatoria | Positivo: evita la cirugía innecesaria | Ahorro por procedimiento evitado (~US$30.000 en el caso testigo) | 🟠 Autorreportado por el empleador (F-521) |
+| **Biosimilares / genéricos** | Sustituir la marca por su equivalente al vencer la patente | Neutro: equivalencia terapéutica | −5% a −87% de precio ⚠️ **ahorro no realizado** si lo captura el PBM | 🟡 Dato de industria (F-490) |
+| **Autorización previa** | Exigir permiso del asegurador antes de un servicio o fármaco caro | ⚠️ **Negativo documentado**: exacerbación, hospitalización prevenible, menor supervivencia libre de enfermedad | Baja utilización, pero un estudio halla **costo administrativo > ahorro**; 80,7% de denegaciones apeladas se revierten | 🟢 Revisión sistemática de daños + auditoría OIG (F-518) |
+| **V-BID** | Bajar el copago de lo que sí sirve, en vez de subirlo a todo por parejo | Positivo: +2,8% de adherencia, sostenido | **Neutro en gasto total** — no prometer ahorro | 🟢 Cuasi-experimental con series largas (F-492) |
+| **Gatekeeping** | Pasar obligatoriamente por primaria antes del especialista | ⚠️ **Mixto**: menos especialista, pero diagnóstico tardío documentado (cáncer) | Reduce gasto en especialista y hospital | 🟢 Revisión sistemática (F-110) + cuasi-experimento (F-109) |
+| **Direct Primary Care** | Cuota mensual fija directo al médico de cabecera, sin seguro de por medio | Teoría fuerte, **evidencia delgada**; sin estudios longitudinales | ⚠️ Excluye a quien no puede pagar la membresía | 🟡 Poca evidencia peer-reviewed (F-107, F-108) |
+
+### 11.3 Cómo se atiende — entrega clínica
+
+| Estrategia | Definición corta | Impacto en salud | Impacto en negocio | Evidencia |
+|---|---|---|---|---|
+| **VBHC / modelo de Porter** | Organizar la atención por condición y medir resultados que importan al paciente por unidad de costo | ⚪ **Sin estimación de efecto** | ⚪ **Sin ROI demostrado** | 🟡 Revisiones con sesgo de publicación positivo declarado + fracaso documentado en Karolinska (F-507, F-508) |
+| **IPU (unidad integrada de práctica)** | Equipo multidisciplinario dedicado a una sola condición, responsable del ciclo completo | Positivo en el caso de alto volumen: supera el promedio nacional en PROMs | No aislado del efecto de volumen | 🟢 PROMs publicados ⚠️ sin control por selección de pacientes (F-509) |
+| **PROMs** | Resultados reportados por el propio paciente (dolor, continencia, función) | Habilitante: no interviene por sí solo | Indirecto: hace comparable la calidad y permite contratar por resultado | 🟡 Es infraestructura de medición, no intervención (F-507, F-509) |
+| **Cuidado integral (integrated care)** | Coordinar primaria, especialidad, hospital y social como un circuito único | Positivo **cuando tiene los componentes**; ⛔ nulo como programa superpuesto | Rinde **solo si el contrato asigna el riesgo y el ahorro** | 🟢 Meta-análisis de componentes (F-519) + Kinzigtal (F-510) vs. ⛔ nulos (F-473, F-474) |
+| **Chronic Care Model** | La versión operativa para crónicos: registro, guía única, equipo, automanejo, seguimiento proactivo | Positivo en control de la enfermedad | Ahorro condicionado a estratificación | 🟢 Revisión de 186 revisiones sistemáticas (F-519) |
+| **Estratificación de riesgo** | Clasificar la población por riesgo real para intervenir solo a quien lo justifica | ⭐ **Es la variable que separa lo que funciona de lo que no** | Convierte un programa nulo en uno con efecto (8-33% menos hospitalizaciones en alto riesgo) | 🟢 Reanálisis de programas aleatorizados (F-474) + NHS DPP (F-481) |
+| **Task-shifting** | Pasar la tarea rutinaria del médico a enfermería o técnico, estandarizada por protocolo | ⭐ **Efecto grande**: control de hipertensión 44%→90% | Ahorro no aislado, pero libera el recurso más caro | 🟢 Cohorte poblacional con comparador nacional (F-480) |
+| **CHW (agente comunitario)** | Persona de la comunidad, con formación corta, que hace seguimiento y adherencia en terreno | Positivo: presión arterial, vinculación al cuidado, adherencia | **Costo-efectivo, no ahorrador**: ICER US$3.299/AVAC | 🟢 Revisiones de ensayos por conglomerados (F-505) |
+| **De-implementación / Choosing Wisely** | Dejar de hacer lo que la evidencia dice que no aporta | Positivo: evita el daño del servicio inútil | Ahorro variable; **solo funciona multicomponente y dirigido al clínico** | 🟢 Revisiones sistemáticas ⚠️ certeza de la evidencia primaria baja a muy baja (F-487) |
+| **Hospital en casa** | Atención de nivel hospitalario agudo entregada en el domicilio | ⭐ **Menor mortalidad intrahospitalaria** y menos urgencias ⚠️ readmisión mixta | **−19% a −30%** de costo | 🔵/🟢 Informe regulatorio + meta-análisis de ECAs (F-488) |
+| **Triage** | Clasificar la urgencia y derivar al nivel correcto antes de que el paciente elija solo | Depende de la **seguridad** del algoritmo, no de su precisión | Potencial de evitar el nivel de atención equivocado | 🟡 Precisión ≠ outcome; ver [[modelo-salud-ia-farmacias-peru]] |
+
+### 11.4 Lo no médico y lo digital
+
+| Estrategia | Definición corta | Impacto en salud | Impacto en negocio | Evidencia |
+|---|---|---|---|---|
+| **Wellness corporativo** | Programa de bienestar del empleador: tamizajes, retos, charlas | Solo **conducta autorreportada**; nada clínico | ⛔ **Nulo en gasto médico**, también a 3 años | 🟢 Dos RCT grandes + seguimiento (F-469, F-470, F-471) |
+| **Shared-value insurance (Vitality)** | Premiar con descuentos la conducta saludable medida y compartir el ahorro | ⚠️ **Atribución sin resolver**: la evidencia independiente es más cauta que la empresa | ⭐ **Probado**: utilidad operativa +70% (FY2025) | 🔵 Resultados oficiales para negocio · 🟡 en tensión para salud (F-497 vs. F-100) |
+| **Hotspotting** | Detectar al puñado de pacientes que concentra el gasto y ponerles un equipo intensivo | ⛔ Sin efecto (readmisión 62,3% vs. 61,7%) | ⛔ Nulo | 🟢 RCT (F-473) |
+| **Gestión de casos / coordinación** | Un gestor que agenda, acompaña y conecta servicios para pacientes complejos | Mejora **solo en el subgrupo de alto riesgo inmediato** | ⛔ **Ningún ahorro neto** con las cuotas de gestión contadas | 🟢 15 programas con asignación aleatoria (F-474) |
+| **Determinantes sociales / comida como medicina** | Pagar con dinero de salud lo que no es salud: alimento, vivienda, transporte | ⚠️ **Mixto**: −16,4% de gasto en observacional, ⛔ nulo en HbA1c en el RCT | ROI 85% (comida) y 50% (vivienda), **con casos negativos en el rango**; ⚠️ desfinanciado pese a demostrar ahorro | 🟢 Revisión de ROI + RCT + evaluación estatal (F-475 a F-478) |
+| **Incentivos financieros conductuales** | Pagar por lograr una conducta. *Recompensa*: 90% de aceptación · *Depósito*: más efectivo, 13,7% de aceptación | ⭐ Positivo: abstinencia 16,0% vs. 6,0% | No medido en gasto médico | 🟢 RCT N=2.538 (F-479) |
+| **Programa estructurado de prevención (DPP)** | Currículo de 12 meses de dieta y actividad para **prediabetes confirmada**, no para toda la población | ⭐ Positivo: menor incidencia de diabetes (IRR 0,938) | **Costo-efectivo, no necesariamente ahorrador** | 🟢 Evaluación independiente comisionada (F-481) |
+| **Automanejo / autoatención** | Que el paciente gestione su condición crónica: medir, ajustar, decidir cuándo consultar | Depende de si **conecta con una decisión clínica** | ⚪ Sin evidencia de impacto de largo plazo en siniestralidad | 🟡 (F-519 como componente; F-515 en su versión conectada) |
+| **Automonitoreo + autotitulación** | El paciente mide en casa y ese dato ajusta su dosis | ⭐ Positivo: presión significativamente menor | Costo-efectivo | 🟢 ECA en 142 consultorios (F-515) |
+| **Digital de "manejo de medicación"** | Herramienta cuyo output **cambia la prescripción** | ✅ Baja la presión de forma significativa | Sube el gasto a corto plazo y **lo recupera con ahorro neto de largo plazo** | 🔵 Evaluador independiente, efecto económico **modelado** a 10 años (F-512) |
+| **Digital de "cambio de conducta"** | App que informa, motiva o da coaching sin tocar la terapia | ⛔ Poco o ningún efecto (presión, HbA1c no sostenida) | ⚠️ **Aumenta el gasto neto** (+US$2.002 a 3 años en diabetes) | 🔵 Tres evaluaciones del mismo evaluador (F-482, F-512) |
+| **Telesalud** | Consulta remota que sustituye a la presencial | Acceso, **no morbilidad** | Ahorra por sustitución de visita y traslado, no por enfermar menos | 🟢/🔵 ⚠️ evidencia dominada por el período COVID (F-517) |
+
+### 11.5 Los cinco conceptos que explican los fracasos
+
+No son estrategias sino **diagnósticos**: por eso no llevan columnas de impacto.
+
+| Concepto | Definición corta | Por qué importa |
+|---|---|---|
+| **Selección adversa** | Se aseguran los más enfermos, sube la prima, se van los sanos, sube más | Destruye pools reales ("espiral de la muerte"), no es teoría (F-90, F-91) |
+| **Selección favorable** | Captas gente más sana de lo que su puntaje de riesgo indica | US$44.000M de sobrepago anual en MA **sin gestionar nada** (F-493) |
+| **Riesgo moral** | Al estar asegurado consumes más, porque el precio marginal que ves no es el real | Es conducta económica racional, no mala fe — propiedad estructural del seguro (F-89) |
+| **Regresión a la media** | El paciente carísimo de este año gasta menos el próximo por sí solo | El programa se lleva el crédito: por eso los estudios antes-después "encuentran" ahorro que el RCT no confirma (F-473) |
+| **Bolsillo equivocado** | Quien paga la intervención no es quien cobra el ahorro (otro presupuesto, otro año, otra aseguradora) | ⭐ Explica más fracasos que la falta de eficacia clínica (F-477, F-490, F-502) |
 
 ## Limitaciones generales
 
