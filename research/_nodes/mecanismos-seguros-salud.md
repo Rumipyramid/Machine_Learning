@@ -2,9 +2,9 @@
 
 > Node. Fuente de verdad de este tema. Rescata 3 investigaciones `/seeker`/`/trinidad` que
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
-> `fuentes/codice.md` (F-86 a F-116, F-193 a F-207, F-469 a F-506).
+> `fuentes/codice.md` (F-86 a F-116, F-193 a F-207, F-469 a F-521).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-09-02 · Versión: **v2.0**
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-09-03 · Versión: **v2.1**
 > (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
 > con §2.6: contraste regional Europa/Asia/Perú-Latam)
 
@@ -23,6 +23,11 @@ rentabilidad y mejora de salud. Se conservan §1-§5 sin cambios de numeración 
 - **§8** — Matriz de modelos de negocio por **rentabilidad verificada × mejora de salud
   demostrada**, y el correctivo del ciclo 2025-2026.
 - **§9** — Síntesis v2.0: seis reglas transversales y su lectura para el caso peruano.
+- **§10** *(v2.1, 2026-09-03)* — **Cuidado integral, modelo de Porter y autoatención digital**:
+  corrige el §6 separando *programa añadido* (sin retorno probado) de *rediseño del modelo de
+  atención con cambio de riesgo* (con retorno probado), evalúa la base de evidencia del modelo de
+  Porter, y ordena el arsenal del asegurador por efecto verificado sobre siniestralidad. Añade
+  las reglas 7, 8 y 9.
 
 **Regla de lectura**: donde §8 y §2/§3/§4 hablen del mismo actor (Kaiser, Discovery, Oak Street),
 **§8 manda** — incorpora datos financieros más recientes y, en el caso de Oak Street, el desenlace
@@ -674,6 +679,196 @@ primer año por póliza de clientes de salud subió 1,5x). Es integración verti
   confirma la ausencia (la primera, en la v1.2, §2.6). Se declara el hallazgo negativo en vez de
   forzar una fuente débil.
 
+---
+
+## 10. Cuidado integral, modelo de Porter y autoatención digital: ¿dónde está el retorno?
+
+> **Preguntas originales (2026-09-03)**: siendo una aseguradora, ¿apostar por un programa de cuidado
+> integral no trae retorno, no hay evidencia? ¿Qué pasa con el modelo de Porter? ¿La atención y
+> autoatención digital muestra evidencia de impacto en salud y negocio a largo plazo? ¿Qué sí
+> muestra impacto en salud, siniestralidad y negocio asegurador?
+
+### 10.0 La corrección al §6: la pregunta estaba mal planteada
+
+El §6 concluyó que el ahorro de las intervenciones no médicas se evapora al aleatorizar. Eso **no
+es lo mismo** que decir que el cuidado integral no rinde. La lectura correcta de toda la evidencia
+reunida es más precisa y más útil:
+
+> **Lo que no tiene retorno probado es el *programa añadido*** —un beneficio de bienestar, un
+> coaching, una app, un equipo de gestión de casos que se cuelga encima de un seguro que sigue
+> operando igual—. **Lo que sí tiene retorno probado es el *rediseño del modelo de atención*
+> acompañado de un cambio en quién asume el riesgo.** No es la misma apuesta, y la evidencia las
+> separa con claridad.
+
+Los cuatro fracasos del §6 (wellness, hotspotting, coordinación de cuidados, comida como medicina)
+comparten una anatomía: **programa superpuesto, población no estratificada, sin cambio en el
+contrato de riesgo**. Los éxitos de este §10 comparten la opuesta.
+
+### 10.1 El modelo de Porter (VBHC): diagnóstico sólido, implementación sin ROI demostrado
+
+**Qué prueba tiene el modelo como tal**: notablemente poca, y hay que decirlo con precisión porque
+es un marco que se cita como si estuviera probado. Las revisiones de alcance de su implementación
+encuentran tres cosas (F-507, 🟢A):
+
+1. **"La agenda de valor articula la meta y el contenido, pero no da ninguna estrategia de
+   implementación"** — es un marco de gestión, no una intervención con tamaño de efecto.
+2. **Sesgo de publicación positivo declarado por los propios revisores**: la literatura tiende a
+   reportar solo casos exitosos, lo que impidió capturar los intentos fallidos reales.
+3. Los estudios miden **indicadores de proceso**, no resultados clínicos finales, mortalidad ni
+   PROMs.
+
+⭐ Conclusión honesta: **el modelo de Porter no ha sido falsado, pero tampoco probado.** No existe
+para "implementar VBHC" una cifra comparable al −34% del reference pricing (F-484) o al −3,1% del
+pago por episodio (F-485). Quien lo proponga como caso de negocio con retorno cuantificado está
+extrapolando.
+
+**El caso de éxito canónico y lo que realmente demuestra.** Martini-Klinik (Hamburgo) mide
+sistemáticamente incontinencia, disfunción eréctil, irritación intestinal y complicaciones, y
+**supera de forma consistente el promedio nacional alemán** (F-509). Pero el mecanismo que la
+evidencia sostiene no es "adoptó VBHC": es **concentración de volumen en una sola patología +
+medición sistemática de resultados + retroalimentación al cirujano + técnica quirúrgica propia**.
+⭐ Es el mismo mecanismo de rediseño de proceso que llevó el control de hipertensión de KPNC de 44%
+a 90% (F-480) — no una transformación de gestión corporativa.
+
+**El fracaso canónico, y el contraste que lo explica.** En **Karolinska**, la implementación fue
+**liderada por consultores (BCG, contrato de 4 años)**, comunicada como algo nuevo con argumentos
+tomados directamente de Porter y Teisberg; la evaluación interna del directorio registró
+facturación de consultores, conflictos de interés y **VBHC estancado**. En **Uppsala**, el mismo
+modelo se lideró internamente y la consultora estuvo involucrada **4 meses** (F-508, 🟢A, tesis
+doctoral del Karolinska Institutet). El hallazgo transferible: las organizaciones que fracasaron
+**nunca definieron conceptualmente qué era VBHC** y terminaron etiquetando como tal prácticas de
+gestión sin relación con la agenda de valor.
+
+> **Veredicto sobre Porter**: su diagnóstico —medir resultados que importan al paciente por unidad
+> de costo a lo largo del ciclo completo de atención, y organizar la atención en unidades
+> integradas por condición— es **conceptualmente sólido y coherente con toda la evidencia dura de
+> este node**. Pero es **infraestructura, no programa**: habilita las palancas que sí tienen
+> efecto medido (concentrar volumen, medir y retroalimentar, integrar el ciclo), no las
+> reemplaza. Presupuestarlo como "transformación VBHC" con ROI proyectado es exactamente lo que
+> falló en Karolinska.
+
+### 10.2 Cuidado integral: sí hay retorno, y la condición es contractual, no clínica
+
+| Caso | Diseño | Resultado | Qué lo hace funcionar |
+|---|---|---|---|
+| **Gesundes Kinzigtal** (Alemania) (F-510, 🟢A) | Poblacional con **grupo de control** (~32.000 miembros vs. 13 regiones comparables y ~300.000 asegurados AOK); único sistema poblacional alemán con evaluación externa rigurosa | Reducción del costo comparativo de la región desde el inicio del programa; modelo Triple Aim | ⭐ **Contrato de ahorro compartido de base poblacional**: el operador cobra una parte del ahorro que genera contra el gasto esperado. **La estructura del contrato resuelve el problema del bolsillo equivocado** |
+| **Nuka System of Care** (Alaska) (F-511, 🟡C) | Autorreportado, sin control | Urgencias −40 a −50%, admisiones −53%, días de hospitalización −36%, especialidad −65%; percentil 75-90 en HEDIS; 2 premios Baldrige | Acceso el mismo día, equipos con relación continua, **propiedad comunitaria del sistema**. ⚠️ Magnitud no verificable: es antes-después, justo el diseño contra el que advierte F-473 |
+| **Modelo Alzira / Ribera Salud** (España) (F-520, 🟢A) | Concesión capitada a 15 años por ~250.000 habitantes, incluida la construcción | Costo per cápita ~25% menor según sus defensores; ⚠️ la literatura documenta **la brecha entre la retórica de éxito y la realidad financiera** | ⭐ **Terminó revertido a provisión pública en abril de 2018**: el riesgo dominante de un contrato integral a 15 años no es actuarial, es de **continuidad institucional** (mismo patrón que F-477) |
+
+**Y la evidencia que dice qué piezas producen el efecto** (F-519, 🟢A, meta-análisis + revisión de
+186 revisiones sistemáticas): el resultado no lo produce "el programa integral" como bloque, sino
+componentes identificables — **liderazgo del médico de atención primaria**, **atención
+especializada liderada por enfermería dentro de la atención primaria** con vínculo formal al nivel
+secundario, **soporte al automanejo**, **estratificación de riesgo** y **coordinación entre
+servicios**.
+
+⭐ Ese conjunto de piezas es exactamente el que explica KPNC (F-480), Kinzigtal (F-510) y Nuka
+(F-511) — y **el que faltaba** en los programas de coordinación de cuidados que fracasaron
+(F-473, F-474). La diferencia entre el éxito y el nulo no fue el entusiasmo ni el presupuesto:
+fue la estratificación de riesgo y quién lideraba.
+
+### 10.3 Atención y autoatención digital: la línea divisoria más útil de todo el node
+
+La mejor evidencia disponible es la serie de evaluaciones del **Peterson Health Technology
+Institute**, porque es el **mismo evaluador independiente con el mismo método** aplicado a
+categorías distintas — lo que descarta que el marco esté sesgado contra lo digital:
+
+| Categoría | Efecto clínico | Efecto económico |
+|---|---|---|
+| Manejo digital de **diabetes** (F-482) | HbA1c −0,23 a −0,60%, **no sostenida**; nada en peso, presión ni colesterol | **Aumenta el gasto neto a 3 años** (+US$2.002 comercial) |
+| Digital de **hipertensión — manejo de medicación** (F-512) | **Baja la presión de forma significativa** | Sube el gasto en el corto plazo y **recupera el costo con ahorro neto de largo plazo** por menor riesgo cardiovascular |
+| Digital de **hipertensión — cambio de conducta** (Teladoc, Omada, DarioHealth, Hello Heart, Lark) (F-512) | **Poco o ningún efecto** sobre presión sistólica vs. cuidado usual | Sube el gasto, sin compensación |
+| Virtual **musculoesquelético** (F-513) | **Mejora dolor y estado funcional** | — |
+
+> **⭐ La línea divisoria no es digital vs. presencial. Es si la herramienta cierra el ciclo con una
+> decisión clínica o solo entrega retroalimentación al paciente.** Lo que ajusta la terapia
+> funciona; lo que informa, motiva y acompaña, no.
+
+La evidencia aleatorizada lo confirma desde el otro lado: en **TASMINH4** (F-515, 🟢A, ECA en 142
+consultorios del Reino Unido), el automonitoreo de presión —con o sin telemonitoreo— **usado por
+el médico para titular la medicación** produce presión significativamente menor que la titulación
+guiada por lecturas de consultorio. El paciente mide, pero **el efecto viene de que el dato entra
+en una decisión de prescripción**.
+
+**Sobre el largo plazo, que es lo que se preguntó**: no existe evidencia de impacto sostenido en
+siniestralidad de la autoatención digital genérica. Lo que sí hay:
+
+- **Telesalud**: ahorra por **sustitución de visita y costo de traslado**, no por menor morbilidad
+  — y solo si sustituye en vez de sumarse (el hallazgo central del taskforce es que **sustituyó y
+  no aumentó el número total de visitas**) (F-517). ⭐ Es una palanca de **eficiencia operativa,
+  no de siniestralidad de largo plazo**. Y casi toda su evidencia es del período COVID, con el
+  efecto de la pandemia confundido con el de la tecnología.
+- **El registro de negocio es peor que el clínico**: Teladoc acumula **US$14.200 millones en
+  deterioros de plusvalía** al cierre de 2024 y una **pérdida neta de US$1.000 millones ese año**
+  (F-514, filing SEC) — la empresa que compró Livongo por ~US$18.500M, la adquisición insignia de
+  la tesis "digital + crónicos = ahorro", la misma que F-482 no halló respaldada.
+
+### 10.4 Entonces, ¿qué sí mueve la siniestralidad? El arsenal ordenado
+
+Esta es la respuesta directa a la tercera pregunta. Ordenado por **efecto verificado**, con la
+columna que la industria suele omitir: **quién captura el ahorro y en cuánto tiempo**.
+
+| Palanca | Efecto medido | Evidencia | Quién captura | Horizonte |
+|---|---|---|---|---|
+| **Diseño de red** (red limitada / niveles) | Quienes migran gastan **~40% menos**; US$761/afiliado; primas **−16%** con red angosta doble | 🟢 A — cuasi-experimento con incentivo exógeno (F-516) | **El asegurador, de inmediato** | Inmediato |
+| **Reference pricing** | Proveedores caros bajan precio **−34%** | 🟢 A (F-484) | El comprador/asegurador | 1-2 años |
+| **Sitio de atención** | US$16-37 mil por paciente/año | 🟠 D — fuente interesada (F-489) | El pagador | Inmediato |
+| **Biosimilares/genéricos** | −5% a −87% de precio | 🟡 C (F-490) | ⚠️ Hoy lo captura el PBM, **que por eso lo frena** | Inmediato |
+| **Centros de excelencia + segunda opinión** | Mecanismo: la cirugía que no se hace | 🟠 D — autorreportado (F-521) | El pagador | 1-2 años |
+| **Manejo de medicación (incl. digital con titulación)** | Baja presión; recupera costo con ahorro neto | 🔵 B / 🟢 A (F-512, F-515, F-480) | El pagador **si retiene al afiliado** | 3-10 años |
+| **Cuidado integral con riesgo compartido y estratificación** | Costo comparativo menor con grupo de control | 🟢 A (F-510); componentes en F-519 | ⭐ **Solo si el contrato lo asigna** | 3-5 años |
+| **Pago por episodio / capitación** | −3,1% por episodio; ACOs ~1-2% | 🟢 A / 🔵 B (F-485, F-486) | El pagador | 1-3 años |
+| **Autorización previa / gestión de utilización** | Reduce utilización | 🟢 A ⚠️ **con daño documentado** (F-518) | El asegurador | Inmediato |
+| Wellness genérico, coaching digital, gestión de casos sin estratificar | **Sin efecto** en gasto | 🟢 A — RCT (F-469 a F-474, F-482) | — | — |
+
+**⚠️ La advertencia sobre la palanca más tentadora.** La autorización previa **sí baja
+utilización**, pero la revisión sistemática de sus efectos adversos documenta **exacerbación de
+enfermedad, hospitalización prevenible, estancia prolongada y menor supervivencia libre de
+enfermedad**; la auditoría oficial del OIG halló que **13% de las denegaciones revisadas de
+Medicare Advantage sí cumplían las reglas de cobertura** y que **80,7% de las denegaciones
+apeladas se revirtieron**; y al menos un estudio encuentra que **el costo administrativo superó
+el ahorro** (F-518). Es la palanca que traslada el costo al paciente y al prestador — y hoy es el
+principal foco regulatorio y reputacional del sector.
+
+### 10.5 Tres reglas nuevas (7, 8 y 9), que se suman a las seis del §9
+
+7. **El retorno no está en el programa: está en el contrato.** El mismo cuidado integral rinde en
+   Kinzigtal (ahorro compartido de base poblacional, F-510) y no rinde como programa superpuesto
+   (F-473, F-474). Antes de diseñar el programa, definir **quién asume el riesgo, quién cobra el
+   ahorro y en qué plazo**. Si el afiliado rota anualmente, el retorno de un programa a 5 años lo
+   cobra otro.
+8. **Digital que decide vs. digital que informa.** La herramienta que **cierra el ciclo con una
+   decisión clínica** (titular medicación) mejora salud y recupera su costo (F-512, F-515); la que
+   entrega retroalimentación, coaching o autogestión al paciente **no muestra efecto y aumenta el
+   gasto** (F-482, F-512). Es la pregunta de diseño número uno de cualquier producto digital de
+   salud.
+9. **Medir resultados es condición necesaria, no suficiente — y es infraestructura, no programa.**
+   El modelo de Porter no tiene ROI demostrado (F-507) y su fracaso mejor documentado fue una
+   transformación liderada por consultores (F-508); su éxito canónico es, en el fondo, volumen
+   concentrado más medición sistemática con retroalimentación (F-509). Medir habilita las palancas
+   que sí funcionan; no las sustituye.
+
+### 10.6 Lectura para una aseguradora peruana
+
+- **Sí apostar** por rediseño de red y de precio (F-516, F-484): es el efecto más grande, el más
+  rápido y el que la propia aseguradora captura — y en un mercado con dispersión de precios sin
+  relación con calidad, es donde más margen hay.
+- **Sí apostar** por cuidado integral **solo si se puede estructurar el riesgo**: capitación,
+  ahorro compartido o integración vertical con estratificación por riesgo y liderazgo de atención
+  primaria (F-510, F-519). Sin eso, es gasto añadido.
+- **Sí apostar** por lo digital **que toca la decisión clínica** — triage que deriva, herramientas
+  que ajustan terapia, automonitoreo que alimenta una prescripción (F-512, F-515). Es exactamente
+  la lógica del modelo de triage IA + farmacias de este proyecto: el valor no está en la app, está
+  en que **cambia qué se hace después**.
+- **No apostar** por wellness genérico, coaching digital de conducta ni gestión de casos sin
+  estratificación de riesgo: cinco RCT independientes dicen que no mueve el gasto (F-469 a F-474,
+  F-482).
+- **⚠️ Y no usar la autorización previa como palanca principal**: baja utilización, tiene daño
+  clínico documentado y es hoy el mayor riesgo regulatorio y reputacional del ramo (F-518) — un
+  riesgo que en el mercado peruano, con ~48% de desconfianza declarada
+  (ver [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros]]), es más
+  caro que en el mercado donde se documentó.
+
 ## Limitaciones generales
 
 - Ninguna evidencia de precisión/efectividad citada aquí fue validada en población peruana
@@ -720,6 +915,22 @@ primer año por póliza de clientes de salud subió 1,5x). Es integración verti
 - **(§9.1, v2.0)** El hueco de dato peruano (margen y siniestralidad del ramo salud/EPS) **sigue
   abierto tras una segunda búsqueda dedicada** (F-506). Se declara la ausencia; no se rellena
   con proxies.
+
+- **(§10, v2.1)** El modelo de Porter **no tiene estimación de efecto** comparable a las palancas
+  del §7. Lo que este node afirma es que su base de evidencia de implementación es débil y con
+  sesgo de publicación positivo declarado (F-507) — **no** que el marco sea incorrecto. Esa
+  distinción debe conservarse al citarlo.
+- **(§10.2, v2.1)** Las cifras de Nuka (F-511) son **autorreportadas y sin grupo de control**;
+  las de Alzira (F-520) provienen de una parte interesada y están en disputa política explícita.
+  Solo **Kinzigtal** (F-510) tiene diseño con grupo de control — y sus propios evaluadores
+  advierten que no está establecido cuánto del ahorro es ganancia real de salud poblacional.
+- **(§10.3, v2.1)** La evidencia de costo de telesalud (F-517) es mayoritariamente del período
+  COVID, con el efecto de la pandemia confundido con el de la tecnología. Las evaluaciones de
+  PHTI (F-482, F-512, F-513) son la mejor serie independiente disponible, pero **modelan** el
+  efecto económico de largo plazo en vez de observarlo.
+- **(§10.4, v2.1)** El efecto de red limitada (F-516) proviene de **empleados públicos de
+  Massachusetts en 2012**. Su magnitud no es trasladable a un mercado con estructura de oferta
+  distinta; el mecanismo (precio + cantidad) sí.
 
 ## Conexiones
 
