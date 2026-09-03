@@ -81,6 +81,8 @@ por afirmación cuando corresponda.
 | `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
 | `_outputs/guia-triaje-200-usuarios-sinteticos-2026-08-05.md` — simulación de la "Guía de preguntas" (estudio de triaje digital + kit) sobre 200 usuarios sintéticos `lapuerta` (18-65, NSE A/B/C). ⚠️ Parcial: 8 de 16 preguntas quedaron sin responder porque el prototipo no fue alcanzable desde el entorno | `modelo-salud-ia-farmacias-peru`, `modelo-personas-sinteticas`, `futuro-asesores-seguros-venta-digital` | 2026-08-05 | al día |
 
+| `_outputs/glosario-estrategias-eficiencia-salud.xlsx` — glosario en Excel de las 45 estrategias + 5 conceptos de eficiencia del gasto en salud, con columnas de impacto en salud, impacto en negocio, nivel de evidencia y fuentes por ID | `mecanismos-seguros-salud` (§11, v2.2) | 2026-09-03 | al día |
+
 > **Estado**: `al día` o `requiere refresh`.
 
 ---
