@@ -98,3 +98,6 @@
 | F-90 | 🟢 A | 2026-09-02 | Intuición 79 — una atribución de autoría "estilo X" en un resumen no es el autor real; verificar el registro primario antes de citar (F-90: autor y año equivocados en el ledger) |
 | F-219 | 🟢 A | 2026-09-02 | Intuición 80 — el tamaño de efecto de un meta-análisis de entrenamiento viaja con sus moderadores metodológicos (aleatorización, rigor de diseño, publicación, año), no solo con la cifra headline |
 | F-17 | 🟢 A | 2026-09-02 | Intuición 81 — un veredicto de "sin efecto tras corregir sesgo de publicación" no es uniforme por subdominio; verificar si algún subdominio tuvo evidencia débil de sesgo |
+| F-223 | 🟢 A | 2026-09-03 | Intuición 82 — el efecto dotación es específico de bienes retenidos para uso, no para intercambio; encuadrar el seguro como transacción anula la palanca de "ya lo tiene" |
+| F-153 | 🟢 A | 2026-09-03 | Intuición 83 — un cuello de botella (NCA) no se compensa con más de otra variable; en chatbots de seguros, la facilidad de uso es el techo duro de la aceptación alta |
+| F-442 | 🟢 A | 2026-09-03 | Intuición 84 — "el efecto se sostiene" puede promediar una asimetría real por brazo; solo la meta asignada sostuvo frenada/aceleración bruscas en el seguimiento post-incentivo |

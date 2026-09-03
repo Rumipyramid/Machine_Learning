@@ -3337,6 +3337,91 @@ automáticamente la misma confianza en el veredicto nulo que el resto del corpus
   es donde la corrección de sesgo es más fuerte que el promedio, no más débil) sin cambiar su
   confianza (sigue Alta) ni su dirección.
 
+### 82. El efecto dotación es específico de bienes retenidos para USO, no para intercambio — encuadrar el seguro como transacción anula la palanca de "ya lo tiene"
+F-223 (Kahneman, Knetsch & Thaler 1990) ya sostiene el framing de Bloque 4 del Playbook del
+Asesor: vender el seguro como algo que el cliente "ya tiene derecho a tener" en vez de un producto
+nuevo a decidir desde cero, apoyado en el efecto dotación. La relectura de hoy encuentra el detalle
+metodológico que el resumen de una línea no capturaba: el experimento tiene un **control con
+tokens de valor inducido** antes de pasar a las tazas — en ese control, el volumen de intercambio
+observado coincidió con el predicho por la teoría (el teorema de Coase se cumplió), lo que descarta
+que el costo de transacción explique el sub-intercambio posterior. El efecto dotación solo aparece
+con la taza (bien de consumo), no con el token (bien de intercambio). La literatura posterior que
+cita este control (Novemsky & Kahneman) formaliza la distinción: el efecto dotación/aversión a la
+pérdida aparece en bienes que el dueño retiene **para uso propio**, no en bienes que retiene **para
+intercambiarlos como se esperaba** (donde entregarlos no se siente como una pérdida, es la función
+prevista del bien). **Heurística de decisión:** el framing "ya lo tiene" solo produce el efecto
+dotación deseado si el cliente percibe la póliza como algo que usa/protege (bien de consumo) — si
+la conversación la deja enmarcada como un producto financiero que se compara y cambia como
+cualquier commodity (bien de intercambio), el efecto dotación no se activa, por más que el
+lenguaje diga "ya es suyo". Antes de apoyarse en esta palanca en un guion de venta o retención,
+verificar que el resto del guion no esté empujando al cliente a pensar el seguro como algo que se
+shopea, porque eso neutraliza la palanca desde la raíz.
+- **Fuente:** F-223 (🟢A, Kahneman, D.; Knetsch, J. L.; Thaler, R. H. 1990, *Journal of Political
+  Economy* 98(6):1325-1348 — ya citado en `research/_nodes/proyecto-back-to-basics-ffvv-vida.md`
+  §5, Bloque 4 del Playbook del Asesor)
+- **Leído a fondo:** 2026-09-03 (jstor.org bloqueado por el proxy del entorno; reconstruido vía el
+  PDF espejo de field experiments papers (s3.amazonaws.com/fieldexperiments-papers2) más búsqueda
+  dirigida sobre el control de tokens de valor inducido y la distinción posterior de Novemsky &
+  Kahneman entre bienes de uso y bienes de intercambio)
+- **Conexión razonada, no forzada:** matiza el Bloque 4 del Playbook del Asesor
+  (`proyecto-back-to-basics-ffvv-vida.md`) — no cambia la tesis de que el framing funciona, acota
+  la condición bajo la cual funciona. No toca ninguna tesis numerada de esta opinión.
+
+### 83. Un "cuello de botella" (Necessary Condition Analysis) no se compensa con más de otra variable — en chatbots de seguros, la facilidad de uso es el techo duro de la aceptación alta
+F-153 está registrado en el ledger con un resumen de una línea centrado en que el paper estudia
+condiciones necesarias (no solo deseables) para la aceptación de un chatbot de seguros. La lectura
+de hoy encuentra el mecanismo: el paper corre un Necessary Condition Analysis (NCA) separado de su
+modelo de regresión — el NCA identifica qué variable actúa como **cuello de botella**, donde un
+valor bajo en ella no se puede compensar con valores muy altos en las demás (a diferencia de un
+modelo de regresión estándar, donde más de una variable sí compensa menos de otra). El hallazgo
+específico: para llegar a niveles **altos** de aceptación (percentil 80 en adelante), el cuello de
+botella es *effort expectancy* (facilidad de uso percibida) — hace falta estar en el percentil 90
+de facilidad de uso para alcanzar el percentil 80 de intención de uso, y percentil 97 para
+aceptación plena. Confianza y utilidad percibida importan, pero no pueden sustituir una facilidad
+de uso mediocre en el tramo alto de aceptación. **Heurística de decisión:** frente a cualquier
+producto de IA conversacional (chatbot de seguros, `/trinidad` o `/seeker` aplicados a un asistente
+de Rimac, el propio `evaluacion-calidad-agentes-conversacionales-ia`), preguntar primero si la
+meta es aceptación masiva/alta o solo adopción moderada — si es alta, invertir en confianza o
+utilidad percibida sin resolver primero la fricción de uso es gastar presupuesto en la variable
+equivocada, porque el techo real está en otro lado y no se compra con más de lo que ya sobra.
+- **Fuente:** F-153 (🟢A, *Journal of Organizational Computing and Electronic Commerce*, dic. 2024
+  — ya citado en /seeker 2026-07-15)
+- **Leído a fondo:** 2026-09-03 (tandfonline.com bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida sobre el diseño UTAUT + NCA del estudio, que detalla los percentiles de
+  cuello de botella de *effort expectancy* separados por policyholders y profesionales)
+- **Conexión razonada, no forzada:** aporta un criterio de decisión transferible a cualquier
+  evaluación de producto de IA conversacional del proyecto — no toca ninguna tesis numerada de
+  esta opinión ni el node de evaluación de agentes conversacionales directamente, es lente de
+  lectura para usarlo ahí.
+
+### 84. "El efecto se sostiene" puede promediar una asimetría real por brazo — solo la meta asignada (no la elegida) sostuvo frenada y aceleración bruscas en el seguimiento post-incentivo
+F-442 es el mismo estudio que F-23, ya integrado a fondo en tesis 7 (2026-07-29 y 2026-08-03): el
+RCT de telemática/UBI simulado (NCT06101251, N=1,449, 4 brazos). Tesis 7 afirma en bloque que "las
+mejoras de conducta se sostuvieron" en el seguimiento posterior a la intervención — la relectura de
+hoy encuentra que ese sostenimiento **no fue parejo entre brazos ni entre conductas**: los tres
+brazos de tratamiento (feedback estándar, meta asignada, meta elegida) sostuvieron la reducción de
+velocidad en el seguimiento de 6 semanas post-intervención, pero para frenada brusca y aceleración
+brusca **solo el brazo de meta asignada algorítmicamente siguió mostrando menos incidencia que el
+control** — feedback estándar y meta elegida por el propio conductor dejaron de diferenciarse del
+control en esas dos conductas específicas una vez retirado el incentivo. Es contraintuitivo:
+dejar que el usuario elija su propio foco (autonomía, mayor buy-in esperado) no produjo el cambio
+más durable — el foco impuesto algorítmicamente en una sola conducta sí. **Heurística de
+decisión:** frente a cualquier programa de cambio de conducta con incentivo temporal (UBI,
+adherencia a un plan de salud, cualquier variante de `lapuerta` con microincentivo), no asumir que
+"dejar elegir la meta al usuario" es la palanca de durabilidad por default — vale la pena testear
+si un foco único asignado, más angosto, sostiene mejor el hábito después de que el incentivo se
+retira, en vez de asumirlo desde la intuición de autonomía.
+- **Fuente:** F-442 (🟢A, RCT de campo nacional preregistrado NCT06101251 — mismo estudio que F-23,
+  ya integrado en tesis 7; re-registrado en `_nodes/tendencias-diseno-innovacion.md` §12.4)
+- **Leído a fondo:** 2026-09-03 (sciencedirect.com bloqueado por el proxy del entorno; reconstruido
+  vía PubMed, TechXplore, Penn Medicine y la nota de prensa de EurekAlert indexada en buscador, que
+  detallan el desglose de sostenimiento por brazo y por conducta en el seguimiento post-
+  intervención que el resumen agregado de tesis 7 no capturaba)
+- **Conexión razonada, no forzada:** matiza tesis 7 (el "el efecto persiste" debe leerse como
+  específico de brazo y de conducta, no como un resultado parejo entre los tres brazos de
+  tratamiento) sin cambiar su confianza (sigue Alta) ni su dirección — el producto sigue
+  funcionando donde se adopta, el matiz es sobre cuál mecanismo de feedback sostiene qué conducta.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4478,3 +4563,53 @@ automáticamente la misma confianza en el veredicto nulo que el resto del corpus
   sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 26 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
   — sin podar todavía.
+- **2026-09-03** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
+  `git pull` fast-forward 5612e59→3156ce7, trajo el commit de ayer de esta opinión y de
+  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por
+  conteo directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó
+  la corrida de ayer (2026-09-02), **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoprimer día seguido
+  sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
+  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
+  ~3 días, ya lleva veintidós días sin correr; no lo disparo aquí porque es rutina de `cronista`,
+  no de este proceso diario). Sí corrió la rutina diaria de intuición (vigesimonovena corrida desde
+  el 2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A **que
+  efectivamente empiezan con 🟢** (tres filas del ledger —F-149, F-457, F-466— mencionan 🟢 dentro
+  del texto de su celda de rigurosidad sin ser su nivel real, un falso positivo que corrigió el
+  conteo de 137 a **134**, el mismo número exacto que reportaron las corridas previas) — de esas
+  134, 81 ya tenían lectura profunda del Lobo; de las 53 restantes elegí 3 al azar puro (Python
+  `random.sample`, sin `--seed`): F-442 (RCT nacional de UBI/telemática simulado, ya citado a fondo
+  como evidencia central de tesis 7, y también re-registrado en `_nodes/tendencias-diseno-
+  innovacion.md` §12.4 solo por su titular agregado), F-223 (Kahneman, Knetsch & Thaler 1990,
+  endowment effect — ya citado en `proyecto-back-to-basics-ffvv-vida.md` §5 solo por su hallazgo
+  general de dotación) y F-153 (chatbot de seguros, *Journal of Organizational Computing and
+  Electronic Commerce* 2024 — ya citado en /seeker 2026-07-15 solo por estudiar condiciones
+  necesarias en abstracto). Las tres bloqueadas por el proxy en su URL directa (sciencedirect.com,
+  jstor.org, tandfonline.com); reconstruidas vía búsqueda dirigida (PubMed/TechXplore/Penn
+  Medicine para F-442; PDF espejo de field experiments papers en s3.amazonaws.com más la
+  distinción posterior de Novemsky & Kahneman para F-223; búsqueda dirigida sobre el diseño
+  UTAUT+NCA del propio estudio para F-153) que confirman detalle de mecanismo nuevo en las tres,
+  no solo el resumen de una línea ya citado. Sumé las entradas 82, 83 y 84 de Intuición acumulada:
+  (82) el control con tokens de valor inducido del propio experimento de Kahneman et al. descarta
+  costo de transacción como explicación y aísla el efecto dotación a bienes retenidos para uso, no
+  para intercambio — el framing "ya lo tiene" del Bloque 4 del Playbook del Asesor solo funciona si
+  el resto del guion no empuja al cliente a pensar el seguro como un commodity que se shopea, matiz
+  nuevo para esa pieza de venta consultiva; (83) el Necessary Condition Analysis de F-153 muestra
+  que la facilidad de uso percibida es un cuello de botella duro (no compensable con más confianza
+  o utilidad) específicamente en el tramo alto de aceptación de un chatbot de seguros — percentil
+  90 de facilidad de uso para llegar a percentil 80 de intención, percentil 97 para aceptación
+  plena — heurística nueva para cualquier evaluación de producto de IA conversacional del
+  proyecto; (84) el "efecto se sostiene" que tesis 7 reporta en bloque para el RCT de UBI (F-442,
+  mismo estudio que F-23) resultó ser una asimetría real por brazo, no un resultado parejo: de los
+  tres brazos de tratamiento, solo la meta asignada algorítmicamente siguió mostrando menos
+  frenada y aceleración brusca que el control en el seguimiento post-incentivo — feedback estándar
+  y meta elegida por el propio conductor perdieron esa diferencia en esas dos conductas
+  específicas (la reducción de velocidad sí se sostuvo en los tres); contraintuitivo porque
+  autonomía/elección propia no fue la palanca de durabilidad, matiza tesis 7 sin cambiar su
+  confianza (sigue Alta) ni su dirección. Ninguna tesis de negocio cambió de confianza numérica por
+  esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las
+  tesis existentes, aunque la entrada 84 sí acota el alcance de "el efecto persiste" en tesis 7 y
+  la entrada 82 acota una pieza puntual del Playbook del Asesor. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 27 días de
+  historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
