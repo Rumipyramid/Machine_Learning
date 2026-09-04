@@ -101,3 +101,6 @@
 | F-223 | 🟢 A | 2026-09-03 | Intuición 82 — el efecto dotación es específico de bienes retenidos para uso, no para intercambio; encuadrar el seguro como transacción anula la palanca de "ya lo tiene" |
 | F-153 | 🟢 A | 2026-09-03 | Intuición 83 — un cuello de botella (NCA) no se compensa con más de otra variable; en chatbots de seguros, la facilidad de uso es el techo duro de la aceptación alta |
 | F-442 | 🟢 A | 2026-09-03 | Intuición 84 — "el efecto se sostiene" puede promediar una asimetría real por brazo; solo la meta asignada sostuvo frenada/aceleración bruscas en el seguimiento post-incentivo |
+| F-248 | 🟢 A | 2026-09-04 | Intuición 85 — un paper CHI peer-reviewed con exactitud técnica alta certifica el algoritmo, no la experiencia de usuario |
+| F-352 | 🟢 A | 2026-09-04 | Intuición 86 — un "ahorro potencial" de un análisis estático de precios es un techo teórico, no una proyección de ahorro realizado |
+| F-420 | 🟢 A | 2026-09-04 | Intuición 87 — una prueba de falsación binaria puede fallar si existe una tercera explicación causal que produce el mismo patrón observable |

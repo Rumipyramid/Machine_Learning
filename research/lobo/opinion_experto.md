@@ -3422,6 +3422,82 @@ retira, en vez de asumirlo desde la intuición de autonomía.
   tratamiento) sin cambiar su confianza (sigue Alta) ni su dirección — el producto sigue
   funcionando donde se adopta, el matiz es sobre cuál mecanismo de feedback sostiene qué conducta.
 
+### 85. Un paper CHI peer-reviewed con exactitud técnica alta certifica el algoritmo, no la experiencia de usuario — son dos preguntas de investigación distintas, con distinto n necesario
+F-248 (Cao, Jiang & Xia, CHI 2025) reporta 91.5%/96.9% de exactitud en etiquetado de dependencias
+de su modelo de datos generativo — evaluación técnica rigurosa, full paper en el venue top de HCI.
+Pero la validación de experiencia de usuario detrás de esa cifra es un estudio cualitativo de 8
+participantes (5 mujeres, 3 hombres) haciendo tareas libres tras un tutorial de 15 minutos — ni
+powered ni comparativo. Los propios autores plantean como pregunta de investigación "¿cómo se
+compara contra interfaces de chat y apps GUI tradicionales?", pero nada en las fuentes disponibles
+indica que la respondieran con una comparación formal de desempeño — la propia nota del ledger ya
+lo señala (⚠️ no compara contra baseline). **Heurística de decisión:** el sello "peer-reviewed en
+venue top" certifica lo que el paper efectivamente midió con rigor (aquí, exactitud algorítmica),
+no cualquier otra afirmación que mencione de pasada o plantee como pregunta abierta — antes de
+citar "la evidencia de generative UI ya es sólida", separar cuál mitad de la afirmación (técnica
+vs. UX) tiene el n y el diseño que realmente la sostienen.
+- **Fuente:** F-248 (🟢A, CHI 2025, full paper peer-reviewed)
+- **Leído a fondo:** 2026-09-04 (dl.acm.org y arxiv.org bloqueados por el proxy del entorno;
+  reconstruido vía dblp, el abstract indexado y búsqueda dirigida sobre la metodología del estudio
+  de usuario —8 participantes, diseño de tareas libres tras tutorial de 15 minutos— que el resumen
+  de una línea del ledger no detallaba)
+- **Conexión razonada, no forzada:** refuerza tesis 24 (generative UI es empate técnico, no la
+  ventaja que promete el marketing) con un caso adicional del mismo patrón —evaluación técnica
+  fuerte, validación de UX débil— sin cambiar su confianza (ya Alta para esa lectura) ni sumar
+  F-248 a su lista formal de evidencia, porque el paper mide una capacidad distinta (modelo de
+  datos maleable) a las cinco fuentes ya integradas ahí.
+
+### 86. Un "ahorro potencial" de un análisis estático de variación de precios es un techo teórico, no una proyección de ahorro realizado
+F-352 (Desai, Hatfield, Hicks, Chernew & Mehrotra, Harvard Medical School) mide, con datos reales
+de 697,381 afiliados comerciales de California (2013-2014), que dirigir a los pacientes que hoy
+pagan sobre-la-mediana hacia el proveedor de precio mediano de su mercado ahorraría 42% en
+laboratorio, 45% en imagenología y 15% en equipo médico duradero. Es un dato real y de rigor A —
+pero el propio título lo declara "static analysis": la cifra es lo que se ahorraría si el steering
+funcionara perfecta e instantáneamente, no lo que efectivamente se ahorraría después de fricción de
+implementación (¿el paciente realmente cambia de proveedor al conocer el precio?, ¿el proveedor de
+precio mediano tiene capacidad ociosa para absorber el volumen desviado sin subir su propio
+precio?, ¿cuánto se mueve esa mediana si todos los pagadores empujan al mismo tiempo?). Ninguna de
+esas fricciones está en la fuente ni en el ledger — esto es instinto razonado, no dato: cualquier
+cifra de "ahorro potencial" de steering (aplicable al mecanismo de triaje remoto de tesis 23, o a
+cualquier producto de red de proveedores de Rimac) debe presentarse como techo teórico, con una
+segunda cifra —aunque sea un estimado a la baja declarado explícitamente como estimado— de cuánto
+de ese techo se realiza históricamente en programas de steering ya implementados, antes de usarla
+en un caso de negocio.
+- **Fuente:** F-352 (🟢A, estudio académico peer-reviewed, Harvard Medical School / AJMC)
+- **Leído a fondo:** 2026-09-04 (ajmc.com bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que confirma metodología —697,381 afiliados, 2013-2014, tres servicios
+  shoppable— y la etiqueta "static analysis" del propio título)
+- **Conexión razonada, no forzada:** matiza la lectura de "ahorro real documentado" de tesis 23
+  (steering ahorra costo real) — la evidencia de que el steering *funciona* cuando se aplica sigue
+  Alta por las fuentes ya citadas ahí; lo que F-352 aporta es la advertencia de no confundir esa
+  evidencia de mecanismo con la magnitud de "ahorro potencial" de un análisis estático, que es un
+  número distinto y mayor.
+
+### 87. Una prueba de falsación binaria bien diseñada puede fallar si existe una tercera explicación causal que produce el mismo patrón observable sin pasar por el mecanismo que se quería aislar
+F-420 fijó una condición de falsación limpia para H13 (`_nodes/tendencias-diseno-innovacion.md`
+§11.8): si el reporte de Figma del 5-ago-2026 superaba claramente el guidance oficial (~40% YoY,
+$348-350M) y la acción aun así no recuperaba sobre US$33, el mercado estaría descontando
+disrupción por IA, no ejecución. El resultado real: Figma reportó $370.1M (+48% YoY, muy por
+encima del guidance) — y la acción cayó ~16.5% en after-hours. A primera vista, la prueba parece
+confirmar H13. Pero la razón que dan los propios reportes de mercado no es descuento de disrupción
+por IA competidora: es compresión de margen (opex GAAP casi se duplicó interanual, de $219.7M a
+$426.9M, produciendo pérdida operativa GAAP de $117.3M) más una guía de Q3 que implica
+desaceleración a 36% YoY — y el propio Morgan Stanley bajó su precio objetivo a exactamente US$33
+citando esas dos razones, no disrupción. **Heurística de decisión:** antes de declarar una
+hipótesis de negocio confirmada por un evento de mercado, verificar si existe una explicación
+causal alternativa —aquí, costo de invertir en IA propia erosionando margen, no perder terreno
+frente a la IA de un competidor— que produce la misma superficie observable (beat + cae) sin pasar
+por el mecanismo que la hipótesis quería aislar. H13 sigue abierta, no resuelta por este evento —
+el node de tendencias es quien debe decidir cómo reencuadrarla, no este proceso diario.
+- **Fuente:** F-420 (🟢A, guidance oficial ya en el ledger) + el resultado real del 5-ago-2026, no
+  registrado aún como fuente propia en el ledger
+- **Leído a fondo:** 2026-09-04 (investor.figma.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida —cobertura de prensa financiera sobre la reacción de la
+  acción y las notas de Morgan Stanley/RBC— que confirma cifras reales y reacción de mercado)
+- **Conexión razonada, no forzada:** no toca ninguna tesis de negocio de este documento (H13 vive
+  en el node de tendencias, no en una tesis vigente aquí) — queda registrada la nuance para que
+  `/trinidad` o `/seeker` la retomen en la próxima corrida de ese node, incluyendo el dato de que
+  el resultado real de Figma aún no está registrado como fuente propia en el ledger de `cronista`.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4613,3 +4689,49 @@ retira, en vez de asumirlo desde la intuición de autonomía.
   la entrada 82 acota una pieza puntual del Playbook del Asesor. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 27 días de
   historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-09-04** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
+  `git pull` fast-forward 5612e59→f6292dc, trajo el commit de ayer de esta opinión y de
+  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por
+  conteo directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó
+  la corrida de ayer (2026-09-03), **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimosegundo día
+  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna
+  quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso —
+  el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`,
+  cada ~3 días, ya lleva veintitrés días sin correr; no lo disparo aquí porque es rutina de
+  `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición (trigésima corrida
+  desde el 2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A
+  **efectivamente marcadas como tal en su columna de rigurosidad** (no solo mencionando 🟢 en el
+  texto) y confirmé de nuevo **134 filas**, mismo número exacto que las últimas corridas — de esas
+  134, 84 ya tenían lectura profunda del Lobo; de las 50 restantes elegí 3 al azar puro (Python
+  `random.sample`, sin `--seed`): F-248 (Cao, Jiang & Xia, CHI 2025 — paper de UI generativa/
+  maleable ya citado en el ledger solo por su cifra de exactitud técnica agregada), F-352 (Desai
+  et al., Harvard Medical School / AJMC — ya citado en un documento externo del usuario solo por
+  su cifra de ahorro potencial de steering) y F-420 (guidance oficial de Figma para Q2 2026, ya
+  citado en `_nodes/tendencias-diseno-innovacion.md` §11.8 como la condición de falsación de H13,
+  planteada pero sin resolver). Las tres bloqueadas por el proxy en su URL directa (dl.acm.org y
+  arxiv.org para F-248; ajmc.com para F-352; investor.figma.com para F-420); reconstruidas vía
+  búsqueda dirigida (dblp + abstract indexado + metodología del estudio de usuario de 8
+  participantes para F-248; confirmación de metodología y cifras de la nota "static analysis"
+  para F-352; cobertura de prensa financiera sobre el reporte real del 5-ago-2026 y la reacción de
+  la acción para F-420) que confirman detalle de mecanismo nuevo en las tres, no solo el resumen de
+  una línea ya citado. Sumé las entradas 85, 86 y 87 de Intuición acumulada: (85) el estudio de
+  usuario detrás de la exactitud técnica de F-248 es cualitativo y de 8 participantes, sin
+  comparación formal contra interfaz de chat o GUI tradicional pese a plantear esa pregunta —
+  refuerza tesis 24 sin sumarse a su evidencia formal, porque mide una capacidad distinta; (86) la
+  cifra de ahorro de F-352 (42%/45%/15%) es un techo teórico de un análisis estático, no una
+  proyección de ahorro realizado — no modela fricción de implementación, y matiza (sin bajar la
+  confianza) la lectura de "ahorro real" de tesis 23; (87) el resultado real de Figma del
+  5-ago-2026 —revenue $370.1M/+48% YoY, muy por encima del guidance de F-420, y aun así la acción
+  cayó ~16.5%— parece confirmar la condición de falsación de H13 a primera vista, pero la prensa
+  financiera y el propio recorte de precio objetivo de Morgan Stanley atribuyen la caída a
+  compresión de margen por gasto en IA propia y desaceleración de guidance, no a descuento de
+  disrupción por IA competidora — una tercera explicación causal que produce el mismo patrón
+  observable (beat + cae) sin pasar por el mecanismo que H13 quería aislar; H13 sigue abierta, no
+  resuelta, y el resultado real de Figma todavía no está registrado como fuente propia en el
+  ledger. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
+  paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque la entrada
+  85 refuerza tesis 24, la 86 matiza tesis 23 y la 87 acota cómo leer H13 en el node de tendencias
+  cuando `/trinidad` o `/seeker` la retomen. Actualicé `research/lobo/fuentes_leidas_lobo.md` con
+  las tres fuentes leídas hoy. Bitácora con 28 días de historial (2026-08-08 a hoy), dentro de la
+  ventana de ~30 días — sin podar todavía.
