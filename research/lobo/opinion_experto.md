@@ -3498,6 +3498,73 @@ el node de tendencias es quien debe decidir cómo reencuadrarla, no este proceso
   `/trinidad` o `/seeker` la retomen en la próxima corrida de ese node, incluyendo el dato de que
   el resultado real de Figma aún no está registrado como fuente propia en el ledger de `cronista`.
 
+### 88. Cuando la misma solución (disclosure) fracasa de forma documentada en un catálogo largo y heterogéneo de industrias, dejar de tratar cada caso como un problema de redacción — es la categoría de intervención la que está agotada
+F-10 (Ben-Shahar & Schneider, *More Than You Wanted to Know*, ya citado en el ledger y en tesis 1
+solo por su titular de "fracaso del disclosure mandatado") recorre a fondo décadas de mandatos de
+"explicar mejor" — hipotecas, tarjetas de crédito, contratos de celular, avisos de privacidad,
+HIPAA, consentimiento informado, garantías, pólizas de seguro — y documenta que casi todos
+fracasan pase lo que pase con la calidad de ejecución: letra más grande, lenguaje más simple,
+formato más corto, todo se ha probado y el patrón se repite. El mecanismo que proponen los autores
+no es "falta pulir el texto" sino dos fallas estructurales simultáneas: la gente recorta
+información en vez de acumularla al decidir, y "divulgar mejor" sigue siendo la palanca que un
+regulador puede accionar sin pelearse con la industria — es política fácil, no política efectiva.
+**Heurística de decisión:** frente a un fracaso de disclosure puntual (un glosario que no sube
+conversión, un aviso de privacidad que nadie lee), la pregunta de diagnóstico correcta no es "¿cómo
+lo redacto mejor la próxima vez?" sino "¿esta categoría de intervención ya fracasó en suficientes
+industrias distintas como para descartarla en bloque?" — si la respuesta es sí, la inversión va
+directo a la palanca s-frame (rediseñar el producto, el default o la regla) en vez de financiar la
+enésima versión del mismo folleto.
+- **Fuente:** F-10 (🟢A, síntesis canónica peer-reviewed; ya citado en tesis 1 y en el ledger, pero
+  no leído a fondo por El Lobo hasta hoy — la vía de intuición diaria es independiente de qué tesis
+  ya use una fuente como evidencia)
+- **Leído a fondo:** 2026-09-05
+- **Conexión razonada, no forzada:** refuerza el diagnóstico de tesis 1 (divulgación = palanca
+  débil) y da el puente explícito hacia tesis 7 (s-frame > i-frame) y la intuición 73 (el i-frame
+  puede ser vehículo para desviar la reforma que no conviene) — sin cambiar la confianza de ninguna
+  de las dos, que ya es Alta por evidencia propia.
+
+### 89. Medir la actitud declarada hacia la privacidad no mide la conducta real de compartir datos — el instrumento correcto para predecir conversión en un flujo de datos es la confianza situacional en el momento del pedido, no la preocupación general
+F-144 (Norberg, Horne & Horne 2007 — la "paradoja de la privacidad", ya citado en tesis 13 como
+evidencia del mecanismo de divulgación progresiva) tiene un hallazgo más incómodo que el que tesis
+13 ya usa: la intención declarada de proteger la privacidad **no predice** el comportamiento real
+de divulgación. Quien dice "me preocupa mi privacidad" en una encuesta de actitud comparte datos
+igual cuando la confianza situacional (en la marca, en el momento, en el contexto del pedido) es
+suficiente — y quien dice que no le preocupa a veces retiene datos si esa confianza falta. El
+antecedente que sí predice conducta real es la confianza situacional, no la actitud general.
+**Heurística de decisión, distinta de la de tesis 13 (que es sobre cómo pedir):** esta es sobre
+cómo *medir*. Cualquier encuesta o segmento de usuarios sintéticos que use "¿te preocupa compartir
+tus datos con una IA/aseguradora?" como proxy de si esa persona realmente compartirá datos en un
+flujo de telemática/UBI está midiendo la pregunta equivocada — el instrumento que predice conducta
+tiene que capturar confianza situacional en el momento del pedido (marca, contexto, urgencia
+percibida), no actitud general hacia la privacidad. Vale como nota de cautela, no como hallazgo
+nuevo que cambie una tesis: si `disposicion_compartir_datos_pricing` de `lapuerta` se calibró en
+parte con datos de actitud declarada en vez de conducta observada, esa brecha actitud-conducta ya
+documentada en v1.3 del modelo es precisamente la que F-144 predice que existiría.
+- **Fuente:** F-144 (🟢A, peer-reviewed, canónico del campo; ya citado en tesis 13, pero no leído a
+  fondo por El Lobo hasta hoy)
+- **Leído a fondo:** 2026-09-05
+- **Conexión razonada, no forzada:** no cambia la confianza de tesis 13 (Alta en el mecanismo) ni
+  reabre la calibración de `lapuerta` — eso es decisión de `/cerrajero`, no de este proceso diario;
+  queda registrada la nuance de medición para quien la retome.
+
+### 90. El techo de correlación humano-IA del mejor instrumento LLM-juez documentado (Spearman 0.514, resumen de texto) es el límite superior de cuánto confiar en un puntaje automatizado de calidad — no el piso
+F-156 (Liu et al. 2023, G-Eval, EMNLP) es el instrumento de referencia de la industria para puntuar
+con IA cada respuesta individual de un sistema conversacional: razonamiento paso a paso contra
+criterios explícitos, puntaje 1-5 ponderado por probabilidad de token. En la tarea de resumen
+alcanzó la mayor correlación de Spearman con juicio humano entre los métodos comparados en el
+paper: 0.514 — moderada, no alta. **Heurística de decisión:** ese número no es un piso de calidad
+que cualquier implementación mediocre de LLM-as-judge deba superar — es el techo reportado por el
+instrumento peer-reviewed más citado y mejor diseñado del campo, en la tarea donde mejor rinde.
+Cualquier "puntaje de calidad: 4.2/5" que salga de un evaluador LLM sobre un agente conversacional
+de seguros (triage, asesor, chatbot de Rimac) hereda como máximo ese nivel de acuerdo con un humano
+real — tratarlo como proxy ruidoso de auditoría, nunca como el único gate de una decisión de
+lanzamiento o escalamiento automático, sin una muestra de auditoría humana en paralelo.
+- **Fuente:** F-156 (🟢A, EMNLP 2023, ampliamente adoptado)
+- **Leído a fondo:** 2026-09-05
+- **Conexión razonada, no forzada:** cuantifica y refuerza la intuición 20 (RAGAS/LLM-as-judge
+  correlaciona modestamente con el juicio humano) con el número concreto del instrumento
+  específico más citado del campo — no toca ninguna tesis de negocio de este documento.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4735,3 +4802,39 @@ el node de tendencias es quien debe decidir cómo reencuadrarla, no este proceso
   cuando `/trinidad` o `/seeker` la retomen. Actualicé `research/lobo/fuentes_leidas_lobo.md` con
   las tres fuentes leídas hoy. Bitácora con 28 días de historial (2026-08-08 a hoy), dentro de la
   ventana de ~30 días — sin podar todavía.
+- **2026-09-05** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
+  `git pull` fast-forward bf1c531→(este commit), working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos**
+  — mismo tope exacto que las últimas 5 corridas, **cero fuentes nuevas** registradas desde
+  entonces, vigesimotercer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis
+  vigentes contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún
+  matiz de confianza solo por completar el paso — la revisión profunda de `cronista` (cada ~3 días)
+  sigue sin correr desde el 2026-08-12, y no la disparo aquí porque es rutina de `cronista`, no de
+  este proceso diario. Sí corrió la rutina diaria de intuición (trigesimoprimera desde el
+  2026-08-06): recalculé por script el universo de fuentes 🟢A del ledger (137 filas marcadas como
+  tal en su columna de rigurosidad) contra el registro de `fuentes_leidas_lobo.md` (87 ya leídas) —
+  50 pendientes — y elegí 3 al azar sin reemplazo (`shuf` sobre `/dev/urandom`): F-10 (Ben-Shahar &
+  Schneider 2014, ya citado en tesis 1 solo por su titular), F-144 (Norberg, Horne & Horne 2007, ya
+  citado en tesis 13 solo por su hallazgo de divulgación progresiva) y F-156 (Liu et al. 2023,
+  G-Eval, ya citado en el node de evaluación de agentes conversacionales). Las tres ya tenían
+  entrada en el ledger con resumen y URL, así que las leí a fondo directamente desde la referencia
+  registrada (libro canónico, paper de journal indexado, paper de EMNLP en arXiv) sin bloqueos de
+  proxy esta vez. Sumé las entradas 88, 89 y 90 de Intuición acumulada: (88) un mandato de
+  disclosure que fracasa en un catálogo largo y heterogéneo de industrias (hipotecas, HIPAA,
+  contratos de celular, pólizas) es evidencia de fracaso estructural de la categoría de
+  intervención, no de mala redacción del caso puntual — refuerza tesis 1 y el puente hacia tesis 7
+  (s-frame > i-frame); (89) la paradoja de la privacidad de F-144 tiene un ángulo que tesis 13 no
+  explota todavía: la actitud declarada hacia la privacidad no predice la conducta real de
+  compartir datos, así que medir "preocupación por privacidad" en una encuesta o persona sintética
+  no es proxy válido de si esa persona compartirá datos en un flujo real de telemática/UBI — nota
+  de cautela sobre instrumento de medición, no una tesis nueva, y no reabre la calibración de
+  `disposicion_compartir_datos_pricing` (eso es decisión de `/cerrajero`, no de este proceso); (90)
+  el 0.514 de correlación de Spearman de G-Eval contra juicio humano —el mejor número reportado
+  entre los métodos que compara el propio paper— es un techo, no un piso: cualquier puntaje de un
+  evaluador LLM sobre un agente conversacional de Rimac hereda como máximo ese nivel de acuerdo con
+  un humano real, cuantifica la intuición 20 ya registrada. Ninguna tesis de negocio cambió de
+  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
+  evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
+  tres fuentes leídas hoy. Bitácora con 29 días de historial (2026-08-08 a hoy), dentro de la
+  ventana de ~30 días — la próxima corrida (2026-09-06) empuja el rango a 30 días exactos y debería
+  evaluar resumir/podar la entrada del 2026-08-08.

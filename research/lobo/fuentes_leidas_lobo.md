@@ -104,3 +104,6 @@
 | F-248 | 🟢 A | 2026-09-04 | Intuición 85 — un paper CHI peer-reviewed con exactitud técnica alta certifica el algoritmo, no la experiencia de usuario |
 | F-352 | 🟢 A | 2026-09-04 | Intuición 86 — un "ahorro potencial" de un análisis estático de precios es un techo teórico, no una proyección de ahorro realizado |
 | F-420 | 🟢 A | 2026-09-04 | Intuición 87 — una prueba de falsación binaria puede fallar si existe una tercera explicación causal que produce el mismo patrón observable |
+| F-10 | 🟢 A | 2026-09-05 | Intuición 88 — un mandato de disclosure que fracasa en un catálogo largo y heterogéneo de industrias es fracaso estructural de la categoría, no mala redacción del caso puntual |
+| F-144 | 🟢 A | 2026-09-05 | Intuición 89 — la actitud declarada hacia la privacidad no predice la conducta real de compartir datos; medir preocupación no es medir conducta |
+| F-156 | 🟢 A | 2026-09-05 | Intuición 90 — el 0.514 de correlación humano-IA de G-Eval es el techo del mejor instrumento LLM-juez documentado, no el piso de cualquier implementación |
