@@ -107,3 +107,6 @@
 | F-10 | 🟢 A | 2026-09-05 | Intuición 88 — un mandato de disclosure que fracasa en un catálogo largo y heterogéneo de industrias es fracaso estructural de la categoría, no mala redacción del caso puntual |
 | F-144 | 🟢 A | 2026-09-05 | Intuición 89 — la actitud declarada hacia la privacidad no predice la conducta real de compartir datos; medir preocupación no es medir conducta |
 | F-156 | 🟢 A | 2026-09-05 | Intuición 90 — el 0.514 de correlación humano-IA de G-Eval es el techo del mejor instrumento LLM-juez documentado, no el piso de cualquier implementación |
+| F-50 | 🟢 A | 2026-09-06 | Intuición 91 — un benchmark "IA vs. médicos" con N humano de un dígito es frágil por diseño; un solo outlier humano voltea el resultado |
+| F-252 | 🟢 A | 2026-09-06 | Intuición 92 — que un método de innovación no mida outcomes duros es consecuencia del incentivo de reporte (lo barato y rápido), no negligencia individual |
+| F-330 | 🟢 A | 2026-09-06 | Intuición 93 — un canal de triage que reduce ED sin subir riesgo depende de controlar también el destino alternativo; esa palanca institucional no se copia gratis a una red fragmentada |

@@ -3565,6 +3565,78 @@ lanzamiento o escalamiento automático, sin una muestra de auditoría humana en 
   correlaciona modestamente con el juicio humano) con el número concreto del instrumento
   específico más citado del campo — no toca ninguna tesis de negocio de este documento.
 
+### 91. Un benchmark de "IA vs. médicos" con N de comparación humano de un dígito es estadísticamente frágil por diseño — un solo outlier humano puede voltear el resultado
+F-50 (revisión de Fraser et al. en *The Lancet* sobre el sistema de diagnóstico/triage de Babylon
+Health) ya sostiene tesis 10 solo por su titular ("no ofreció evidencia convincente de desempeñarse
+mejor que médicos humanos"). Leída a fondo, la crítica metodológica es más específica y más
+transferible que el titular: Babylon comparó su sistema contra **siete médicos**, y el resultado
+favorable a la IA era sensible a que **un solo médico** de esos siete rindiera mal — la ventaja
+reportada dependía de ese outlier, no de una diferencia robusta contra el grupo. Además, los datos
+de prueba fueron ingresados por los propios médicos con lenguaje clínico preciso, no por pacientes
+reales en lenguaje coloquial — el escenario que un producto de triage al consumidor enfrenta en
+producción — y no se corrió ninguna prueba de significancia estadística sobre la comparación.
+**Heurística de decisión:** cuando un vendor (de triage IA, de un agente conversacional, de un
+modelo de screening) presente un benchmark "superamos a los expertos humanos", la primera pregunta
+no es la cifra de precisión — es el N y la composición del grupo de comparación humano, y si los
+datos de entrada replican el uso real (usuario lego, no experto). Un N de comparación humano de un
+dígito es bandera roja aunque el N de casos de prueba sea grande.
+- **Fuente:** F-50 (🟢A — publicación médica peer-reviewed vía cobertura de prensa especializada; ya
+  citado en tesis 10, pero no leído a fondo por El Lobo hasta hoy)
+- **Leído a fondo:** 2026-09-06 (techcrunch.com y digitalhealth.net bloqueados por el proxy del
+  entorno; reconstruido vía búsqueda dirigida que confirma el mecanismo de sensibilidad a outliers y
+  el origen clínico de los datos de prueba, más allá del resumen agregado ya citado en el ledger)
+- **Conexión razonada, no forzada:** refuerza tesis 10 con el mecanismo específico de cómo se infla
+  un benchmark chico (no solo "sobreclamar sin validar") — no cambia su confianza, que ya sostiene
+  la cautela.
+
+### 92. Que un método de innovación/diseño no mida outcomes duros no es negligencia de autores individuales — es consecuencia de que el outcome de proceso (satisfacción, participación) es más barato y rápido de reportar que el resultado de servicio a largo plazo
+F-252 (revisión sistemática de involucramiento público en diseño de servicios de salud, BMC 2021)
+profundiza el hallazgo que el node `tendencias-diseno-innovacion.md` ya usa (H18, "silencio del
+service design"): de **93 estudios** incluidos, menos de la mitad reportó algún outcome de servicio
+de salud (el resto se detuvo en satisfacción o participación del proceso); de los que sí midieron
+algo, la mayoría fueron de un solo sitio, sin grupo de comparación, con seguimiento corto — y los
+propios autores señalan una tendencia sistemática a reportar lo que es más fácil de medir, de corto
+plazo y positivo. **Heurística de decisión:** frente a cualquier metodología de diseño/innovación
+(no solo co-diseño de servicios de salud) que se presente con casos de éxito, la pregunta de negocio
+no es "¿por qué no midieron el outcome duro?" — es "¿el estándar de reporte de esta categoría entera
+premia medir lo barato en vez de lo que importa, y quién se beneficia de que ese sea el estándar?".
+Un catálogo de casos de éxito sin outcomes duros no es evidencia débil por accidente: es lo que ese
+tipo de metodología produce de forma sistemática.
+- **Fuente:** F-252 (🟢A — revisión sistemática peer-reviewed, 93 estudios)
+- **Leído a fondo:** 2026-09-06 (bmchealthservres.biomedcentral.com y ncbi.nlm.nih.gov bloqueados
+  por el proxy del entorno; reconstruido vía búsqueda dirigida que confirma el N exacto de estudios
+  —93— y el sesgo de reporte hacia lo fácil de medir que señalan los propios autores, más allá del
+  resumen agregado ya citado)
+- **Conexión razonada, no forzada:** refuerza `research/_nodes/tendencias-diseno-innovacion.md` §9 y
+  H18 con el mecanismo causal (incentivo de reporte, no negligencia); no toca ninguna tesis de
+  negocio de este documento directamente.
+
+### 93. Un canal de triage que reduce visitas a Emergencias sin subir mortalidad ni hospitalización solo prueba que es seguro dentro de un sistema cerrado — la palanca que lo logra (embebir al proveedor en el mismo call center) no se copia gratis a una red fragmentada
+F-330 (Tran et al. 2023, *Health Affairs Scholar*) profundiza el hallazgo que el ledger ya resume
+como "transferido, VA no aseguradora privada": el diseño es un rollout escalonado sobre >1 millón de
+llamadas (2019-2022) de veteranos a la línea de triage de VA; el mecanismo específico que bajó la
+tasa de visita a Emergencias subsecuente (38%→36%) fue reclasificar el tramo de "referir en 2-8
+horas" en un acceso **on-demand a un proveedor virtual del mismo sistema** (mismo expediente
+clínico, mismo call center, mismo incentivo institucional) en vez de un default automático a
+Emergencias — sin mover mortalidad a 30 días ni admisiones hospitalarias, es decir, seguro. El
+propio programa solo estuvo disponible de forma consistente en horario de oficina (8am-5pm entre
+semana) en todos los sitios, lo que probablemente entierra parte del efecto. **Heurística de
+decisión:** el ahorro de un canal de triage/telemedicina que "reduce ED sin subir riesgo" depende de
+si quien opera el canal controla también el destino alternativo (un proveedor propio, en el mismo
+sistema, con el mismo expediente) — una aseguradora que solo paga reclamos de una red de
+proveedores externos no tiene esa palanca sin contratar o construir su propio telehealth embebido;
+copiar la cifra de reducción de ED sin replicar el mecanismo institucional proyecta un ahorro que la
+estructura del negocio no puede producir.
+- **Fuente:** F-330 (🟢A — peer-reviewed, rollout escalonado, N>1,000,000 llamadas VA)
+- **Leído a fondo:** 2026-09-06 (academic.oup.com y pmc.ncbi.nlm.nih.gov bloqueados por el proxy del
+  entorno; reconstruido vía búsqueda dirigida que confirma el mecanismo de reclasificación del tramo
+  de derivación, la ausencia de efecto en mortalidad/admisiones y la limitación de horario de
+  oficina, más allá de la cifra agregada ya citada en el ledger)
+- **Conexión razonada, no forzada:** matiza cómo leer evidencia de canales de triage/telemedicina
+  que se cite a favor de tesis 9 (farmacia-frente-primario + triage IA) — el ahorro depende del
+  control institucional sobre el destino alternativo, algo que el modelo peruano tendría que
+  replicar explícitamente, no asumir; no cambia la confianza de tesis 9.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3768,32 +3840,11 @@ lanzamiento o escalamiento automático, sin una muestra de auditoría humana en 
   en el tope; segunda corrida de intuición (entradas 4-6: F-6, F-53, F-230). Ningún nivel de
   confianza de tesis bajó en toda la ventana; todo ajuste fue matiz, corrección de cita o suma de
   tesis nueva sobre evidencia que la refuerza.
-- **2026-08-08** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  d739018→22e9aee, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
-  verifiqué la secuencia F-1 a F-468 sin huecos — sigue tope exacto en F-468, idéntico al que ya
-  procesó la corrida de ayer (2026-08-07) — **sin cambios sustanciales** en evidencia, cero fuentes
-  nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h.
-  Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no
-  forcé ninguna conexión de tesis nueva solo por completar el paso. La última revisión profunda
-  (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no vence hoy. Sí corrió la rutina diaria
-  de intuición (tercera corrida desde que se creó el 2026-08-06): de las 137 fuentes 🟢A del ledger,
-  6 ya tenían lectura profunda del Lobo (F-6, F-53, F-82, F-107, F-230, F-236) — seleccioné al azar 3
-  de las 131 restantes: F-220 (Tversky & Kahneman 1974, anclaje), F-148 (Hone & Graham 2000, SASSI)
-  y F-66 (Xu et al. 2020, micro-costing en salud). Sumé las entradas 7, 8 y 9 de Intuición
-  acumulada: (7) un disclaimer de que una cifra es "referencial" no neutraliza su efecto de
-  ancla — el experimento fundacional de la rueda de la fortuna mostró el efecto (~20pp de
-  desplazamiento) sobreviviendo intacto aunque el sujeto viera que el número era aleatorio; conecta
-  con tesis 15/18 sin cambiarles la confianza; (8) satisfacción subjetiva y desempeño objetivo de un
-  sistema conversacional pueden moverse en direcciones opuestas en el mismo segmento (usuarios
-  mayores: peor tiempo de tarea, mejor calificación) — profundiza el riesgo ya anotado sobre medir
-  mal al agente conversacional de Rimac; (9) el silencio metodológico sobre perspectiva de costeo,
-  año de precios y ajuste por inflación es la norma (no la excepción) en la literatura de
-  micro-costing en salud, y debe leerse como bandera roja al evaluar cualquier cifra de
-  costo-efectividad que en el futuro sostenga el caso de negocio de farmacia+triage IA (tesis 9/10).
-  Ninguna tesis de negocio cambió de confianza por esta corrida — es el mecanismo paralelo de
-  intuición, no una revisión de evidencia sobre las tesis existentes. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 27 días de
-  historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+- **2026-08-08** — *(Resumida el 2026-09-06 al cumplir la ventana de ~30 días; el detalle de cada
+  intuición vive en 🧠 Intuición acumulada con su propia fuente/fecha.)* Sin cambios sustanciales en
+  el tope del ledger (F-468); repaso de las 25 tesis sin desalineación. Tercera corrida de intuición
+  (entradas 7-9: F-220 anclaje, F-148 SASSI, F-66 micro-costing en salud) — ninguna tesis cambió de
+  confianza.
 - **2026-08-09** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
   d739018→daad3e9, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
   verifiqué la secuencia F-1 a F-468 sin huecos — sigue tope exacto en F-468, idéntico al que ya
@@ -4838,3 +4889,43 @@ lanzamiento o escalamiento automático, sin una muestra de auditoría humana en 
   tres fuentes leídas hoy. Bitácora con 29 días de historial (2026-08-08 a hoy), dentro de la
   ventana de ~30 días — la próxima corrida (2026-09-06) empuja el rango a 30 días exactos y debería
   evaluar resumir/podar la entrada del 2026-08-08.
+- **2026-09-06** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
+  `git pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md`
+  por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope
+  exacto que las últimas 6 corridas, **cero fuentes nuevas** registradas desde entonces, vigesimocuarto
+  día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo
+  tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por
+  completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la
+  disparo aquí, es rutina de `cronista`, no de este proceso diario). **Corrección de conteo propio:**
+  al recalcular por script el universo de fuentes 🟢A para la rutina de intuición encontré que el
+  denominador que vengo repitiendo desde el 2026-08-20 (137) cuenta 3 filas de más — F-149, F-457 y
+  F-466 tienen rigurosidad primaria 🔵B y solo *mencionan* 🟢A como calificación de un componente
+  secundario dentro del mismo texto (ej. "🔵 B — ... el caso de GM tiene WARN notice, filing estatal
+  oficial, 🟢 A"); un grep ingenuo de "🟢" las cuenta igual que una fila primariamente A. El universo
+  real de fuentes cuyo marcador de rigurosidad *empieza* en 🟢A es **134**, no 137 — ajusto el
+  denominador de aquí en adelante; no cambia ninguna selección pasada (las fuentes ya leídas seguían
+  siendo genuinamente 🟢A) pero corrige cuántas quedan pendientes. Con 90 ya leídas por el Lobo, quedan
+  **44 pendientes** — elegí 3 al azar sin reemplazo (`shuf` sobre `/dev/urandom`): F-50 (Fraser et al.
+  vía *The Lancet*, ya citado en tesis 10 solo por su titular agregado), F-252 (revisión sistemática
+  BMC 2021 de involucramiento público en diseño de servicios, ya citada en el node de
+  diseño/innovación solo por el hallazgo "menos de la mitad evalúa outcomes") y F-330 (Tran et al.
+  2023, *Health Affairs Scholar*, ya citada en el ledger solo por la cifra agregada 38%→36% y la nota
+  "transferido"). Las tres bloqueadas por el proxy en su URL directa (techcrunch.com/digitalhealth.net,
+  bmchealthservres.biomedcentral.com/ncbi.nlm.nih.gov, academic.oup.com/pmc.ncbi.nlm.nih.gov);
+  reconstruidas vía búsqueda dirigida que confirma detalle nuevo más allá del resumen ya citado (el
+  mecanismo de sensibilidad a outliers del benchmark de Babylon con N=7 médicos, el N exacto de 93
+  estudios y la cita de los autores sobre sesgo de reporte hacia lo fácil de medir, y el mecanismo
+  institucional específico de VA — expediente y call center compartido — detrás de la reducción de
+  ED). Sumé las entradas 91, 92 y 93 de Intuición acumulada: (91) un benchmark "IA vs. médicos" con N
+  humano de un dígito es frágil por diseño — un solo outlier humano voltea el resultado, refuerza el
+  mecanismo detrás de tesis 10; (92) que un método de innovación no mida outcomes duros es
+  consecuencia del incentivo de reporte (lo barato y rápido gana sobre lo que importa), no
+  negligencia individual — refuerza H18 del node de diseño/innovación; (93) el ahorro de un canal de
+  triage que reduce ED sin subir riesgo depende de controlar también el destino alternativo (mismo
+  sistema, mismo expediente) — esa palanca institucional no se copia gratis a una red fragmentada,
+  matiza cómo leer evidencia de triage/telemedicina a favor de tesis 9 sin cambiar su confianza.
+  Ninguna tesis de negocio cambió de confianza numérica por esta corrida. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. **Cumplí el umbral de poda
+  señalado ayer:** consolidé la entrada del 2026-08-08 en un solo bloque resumido (el detalle de cada
+  intuición que generó ya vive en su propia sección con fecha, no se pierde información). Bitácora con
+  29 días de historial (2026-08-09 a hoy), dentro de la ventana de ~30 días.
