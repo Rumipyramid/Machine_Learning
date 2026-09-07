@@ -110,3 +110,6 @@
 | F-50 | 🟢 A | 2026-09-06 | Intuición 91 — un benchmark "IA vs. médicos" con N humano de un dígito es frágil por diseño; un solo outlier humano voltea el resultado |
 | F-252 | 🟢 A | 2026-09-06 | Intuición 92 — que un método de innovación no mida outcomes duros es consecuencia del incentivo de reporte (lo barato y rápido), no negligencia individual |
 | F-330 | 🟢 A | 2026-09-06 | Intuición 93 — un canal de triage que reduce ED sin subir riesgo depende de controlar también el destino alternativo; esa palanca institucional no se copia gratis a una red fragmentada |
+| F-23 | 🟢 A | 2026-09-07 | Intuición 94 — un feedback de UBI/telemática que cubre varias conductas a la vez rinde igual que uno enfocado en una sola; la personalización de una sola métrica importa para sostener el efecto, no para lograrlo |
+| F-229 | 🟢 A | 2026-09-07 | Intuición 95 — la debilidad de la demografía como segmento no es un hallazgo fijo, es erosión progresiva con la modernización del consumidor; cualquier segmentación alternativa también tiene fecha de vencimiento |
+| F-331 | 🟢 A | 2026-09-07 | Intuición 96 — la disposición simulada (sin consecuencia real) a desviar/cambiar/adoptar sobreestima la disposición real; techo optimista para cualquier estimación de conducta vía escenario simulado, incluido `lapuerta` |

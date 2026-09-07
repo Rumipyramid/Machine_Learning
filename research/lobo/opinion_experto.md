@@ -3637,6 +3637,86 @@ estructura del negocio no puede producir.
   control institucional sobre el destino alternativo, algo que el modelo peruano tendría que
   replicar explícitamente, no asumir; no cambia la confianza de tesis 9.
 
+### 94. Un feedback de UBI/telemática que cubre varias conductas de riesgo a la vez rinde igual que uno enfocado en una sola conducta asignada — no hace falta sobre-diseñar personalización de una sola métrica para obtener la mejora
+F-23 es el registro primario (NCT06101251, *Accident Analysis & Prevention* 2025) del mismo RCT que
+F-442 ya sostiene a fondo en tesis 7 — pero el ledger solo lo cita por su titular agregado (velocidad
+-11/-13%, frenada -16/-21%, aceleración -16/-25%). Leído a fondo junto a su diseño completo (4 brazos:
+Observación, Feedback Estándar sobre las cuatro conductas de riesgo, Meta Asignada algorítmicamente a
+una sola conducta, Meta Elegida por el propio conductor sobre una sola conducta; n=1,449 reclutados
+nacionalmente, 6 semanas de baseline + 12 semanas de intervención), el hallazgo nuevo que el titular no
+capturaba: los tres brazos de tratamiento **mejoraron por igual** durante la intervención — el Feedback
+Estándar (cubre las cuatro conductas a la vez) no rindió peor que Meta Asignada o Meta Elegida
+(enfocadas en una sola conducta). La asimetría real entre brazos que ya sostiene la intuición 84
+(solo Meta Asignada sostuvo la mejora en frenada/aceleración *después* de retirar el incentivo) es un
+hallazgo distinto — de **durabilidad post-incentivo**, no de **magnitud durante la intervención**.
+**Heurística de decisión:** para el diseño inicial de un piloto de telemática/UBI, no hace falta
+resolver primero "¿en qué conducta específica enfocamos el feedback?" — un mensaje que cubra las
+conductas de riesgo relevantes a la vez ya captura la mejora completa; la pregunta de qué tan enfocado
+debe estar el feedback importa recién para sostener el efecto una vez que se retira el incentivo
+económico, no para lograrlo la primera vez.
+- **Fuente:** F-23 (🟢A — RCT de campo nacional preregistrado, mismo NCT06101251 que F-442)
+- **Leído a fondo:** 2026-09-07 (sciencedirect.com bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida — PubMed/TRID/Penn Medicine — que confirma el diseño de los cuatro brazos y
+  el resultado comparativo entre ellos durante la intervención, más allá del titular agregado ya
+  citado en el ledger)
+- **Conexión razonada, no forzada:** distingue dos preguntas de diseño distintas dentro de tesis 7 —
+  qué produce la mejora inicial (cualquier feedback multi-conducta) vs. qué la sostiene después del
+  incentivo (meta asignada específica, ya cubierto por la intuición 84) — no cambia la confianza de
+  tesis 7.
+
+### 95. Que la segmentación demográfica rinda poco en servicios financieros no es un hallazgo estático — es una erosión progresiva a medida que el consumidor se vuelve más educado y letrado en medios, lo que implica que cualquier segmentación alternativa también tiene fecha de vencimiento
+F-229 (Piercy, Campbell & Heinrich 2011, *Journal of Financial Services Marketing*) ya sostiene la
+tesis 19 (perfilar por motivación, no por demografía) solo por su hallazgo agregado: la demografía
+explica poco de preferencia de marca, compra, adopción de innovación, uso de canal y adopción
+tecnológica en servicios financieros. Leído a fondo, el paper no se detiene en el resultado — da un
+mecanismo causal de por qué la demografía dejó de predecir: los consumidores de la era del estudio son
+más educados, más individualistas, más letrados en marketing y más sensibles a la conveniencia de
+canal que los consumidores de los años 60-70, cuando la segmentación demográfica sí funcionaba mejor.
+**Heurística de decisión:** la superioridad de "perfilar por motivación" sobre demografía en
+`lapuerta`/Rimac no es una propiedad fija de la motivación como variable — es el resultado de que la
+demografía perdió poder predictivo con la modernización del consumidor; si esa misma fuerza
+(alfabetización financiera y digital creciente, más opciones de canal) sigue avanzando en el Perú
+—`educacion_financiera` y `acceso_digital` del generador ya la miden—, la variable de motivación
+elegida hoy también puede perder poder predictivo con el tiempo, no solo la demografía que reemplaza;
+cualquier segmentación (motivacional o de otro tipo) necesita revalidación periódica contra
+conducta real, no adopción permanente por haber ganado una comparación puntual.
+- **Fuente:** F-229 (🟢A — paper peer-reviewed, específico de servicios financieros)
+- **Leído a fondo:** 2026-09-07 (link.springer.com bloqueado por el proxy del entorno; reconstruido
+  vía búsqueda dirigida — ResearchGate, The Financial Brand — que confirma el mecanismo histórico de
+  erosión de la demografía como predictor, más allá del hallazgo agregado ya citado en el ledger)
+- **Conexión razonada, no forzada:** matiza tesis 19 (perfilar por motivación expone punto ciego
+  estructural de `lapuerta`) con una advertencia de vigencia temporal — no cambia su confianza, pero
+  agrega la condición de revalidar periódicamente, no solo adoptar una vez.
+
+### 96. La disposición simulada (sin consecuencia real) a desviar/cambiar/adoptar sistemáticamente sobreestima la disposición real cuando la decisión sí tiene efecto — advertencia directa para cualquier proyecto que valide decisiones con escenarios simulados
+F-331 (TRIAGE trial, cluster RCT neerlandés) ya sostiene una lectura de tesis 9/10 solo por su
+resultado agregado: 9.5% de pacientes de Emergencias desviados de forma segura a atención primaria,
+2.4% de los desviados terminó hospitalizado. Leído a fondo junto al análisis post hoc de la misma
+base de datos (mismo equipo, PMC9252194, "Differences in emergency nurse triage between a simulated
+setting and the real world"), aparece un hallazgo que el resumen de una línea no capturaba: dentro
+del propio diseño del trial, los fines de semana de control fueron un ejercicio **sin consecuencia
+real** (la enfermera triaba, pero el paciente igual se quedaba en Emergencias) mientras que los de
+intervención sí desviaban al paciente de verdad — y la asignación real a atención primaria (13.3%)
+fue *menor*, no mayor, que la asignación teórica del ejercicio sin consecuencia (24.7%). Las mismas
+enfermeras, con la misma herramienta, se volvieron más conservadoras exactamente cuando la decisión
+importaba de verdad. **Heurística de decisión:** cualquier estimación de conducta (humana o de un
+modelo/persona sintética) que provenga de un escenario simulado o sin consecuencia real —incluida
+una simulación de `lapuerta` prediciendo si un usuario sintético desviaría gasto, cambiaría de canal
+o adoptaría un producto— debe leerse como un techo optimista de la conducta real, no como una
+estimación puntual válida; la brecha entre "lo que dirían/harían en un ejercicio" y "lo que hacen
+cuando hay consecuencia real" no es ruido aleatorio, es un sesgo sistemático hacia menos aversión al
+riesgo en el escenario sin consecuencia, documentado aquí con el mismo actor humano y la misma
+herramienta como control.
+- **Fuente:** F-331 (🟢A — cluster RCT peer-reviewed; su análisis post hoc, PMC9252194, mismo dataset)
+- **Leído a fondo:** 2026-09-07 (ncbi.nlm.nih.gov bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida — PubMed, PMC — que confirma el diseño de fin de semana control/intervención y el
+  hallazgo del análisis post hoc, más allá del resultado agregado ya citado en el ledger)
+- **Conexión razonada, no forzada:** advertencia de método transferible a cualquier ejercicio de
+  `lapuerta` que use un escenario simulado (sin consecuencia real para la persona sintética ni el
+  usuario que la construye) para estimar una conducta que en producción sí tendría consecuencia real
+  — no cambia la confianza de tesis 9/10, pero es la entrada de intuición con la aplicación más
+  directa a la validación metodológica del propio generador del proyecto hasta la fecha.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3840,38 +3920,14 @@ estructura del negocio no puede producir.
   en el tope; segunda corrida de intuición (entradas 4-6: F-6, F-53, F-230). Ningún nivel de
   confianza de tesis bajó en toda la ventana; todo ajuste fue matiz, corrección de cita o suma de
   tesis nueva sobre evidencia que la refuerza.
-- **2026-08-08** — *(Resumida el 2026-09-06 al cumplir la ventana de ~30 días; el detalle de cada
-  intuición vive en 🧠 Intuición acumulada con su propia fuente/fecha.)* Sin cambios sustanciales en
-  el tope del ledger (F-468); repaso de las 25 tesis sin desalineación. Tercera corrida de intuición
-  (entradas 7-9: F-220 anclaje, F-148 SASSI, F-66 micro-costing en salud) — ninguna tesis cambió de
-  confianza.
-- **2026-08-09** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  d739018→daad3e9, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
-  verifiqué la secuencia F-1 a F-468 sin huecos — sigue tope exacto en F-468, idéntico al que ya
-  procesó la corrida de ayer (2026-08-08) — **sin cambios sustanciales** en evidencia, cero fuentes
-  nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h.
-  Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no
-  forcé ninguna conexión de tesis nueva solo por completar el paso. La última revisión profunda
-  (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no vence hoy. Sí corrió la rutina diaria
-  de intuición (cuarta corrida desde que se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 9
-  ya tenían lectura profunda del Lobo (F-6, F-53, F-66, F-82, F-107, F-148, F-220, F-230, F-236) —
-  seleccioné al azar 3 de las 132 restantes: F-56 (Nature Health 2025, scoping review de silent
-  trials), F-55 (Cully/Bauer 2012, diseño híbrido tipo 2) y F-122 (IPDAS Collaboration 2021, ayudas de
-  decisión). Sumé las entradas 10, 11 y 12 de Intuición acumulada: (10) el silent trial pasado una vez
-  no es garantía permanente — el propio scoping review no encuentra guías formales sobre cuándo
-  repetirlo, y cita un caso real de colapso de AUC (0.90→0.50) por distribution shift tras un pase
-  inicial exitoso, matiz de vigencia temporal que tesis 10 no tenía explícito; (11) probar
-  efectividad clínica e implementación con fidelidad conviene correr en paralelo desde el día uno del
-  piloto (diseño "híbrido tipo 2" de Curran et al. 2012), no en dos fases separadas — aplicación
-  directa al diseño del piloto de farmacia+triage IA de tesis 9/10; (12) una ayuda de decisión rigurosa
-  según el estándar IPDAS no es solo un material visual bien diseñado (tesis 12) — exige, entre 11
-  dominios, declarar el conflicto de interés de quien la construye, dominio incómodo para cualquier
-  comparador que el propio asegurador diseñe sobre su catálogo. Ninguna tesis de negocio cambió de
-  confianza por esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia
-  sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 28 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30 días
-  — sin podar todavía; la próxima corrida (2026-08-10) cumple el umbral y debe evaluar podar/resumir
-  las entradas de la primera semana (2026-07-12 a 2026-07-19).
+- **2026-08-08 a 2026-08-09** — *(Resumida el 2026-09-07 al cumplir la ventana de ~30 días; el
+  detalle de cada intuición vive en 🧠 Intuición acumulada con su propia fuente/fecha.)* Dos
+  corridas, sin cambios sustanciales en el tope del ledger (F-468) ni desalineación de las 25
+  tesis. Tercera y cuarta corrida de intuición: (entradas 7-9) F-220 anclaje, F-148 SASSI, F-66
+  micro-costing en salud; (entradas 10-12) F-56 silent trial/distribution shift, F-55 diseño
+  híbrido tipo 2 (probar efectividad e implementación en paralelo), F-122 estándar IPDAS de
+  ayudas de decisión (exige declarar conflicto de interés de quien la construye). Ninguna tesis
+  cambió de confianza en la ventana.
 - **2026-08-10** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
   d739018→5b9beab, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
   verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (468 filas exactas) — sigue tope exacto
@@ -4929,3 +4985,46 @@ estructura del negocio no puede producir.
   señalado ayer:** consolidé la entrada del 2026-08-08 en un solo bloque resumido (el detalle de cada
   intuición que generó ya vive en su propia sección con fecha, no se pierde información). Bitácora con
   29 días de historial (2026-08-09 a hoy), dentro de la ventana de ~30 días.
+- **2026-09-07** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, working tree limpio, sin fast-forward pendiente — HEAD en 0cc2b76) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 7 corridas, **cero fuentes nuevas** registradas
+  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoquinto día
+  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
+  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
+  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
+  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva veintiséis días sin correr). Sí
+  corrió la rutina diaria de intuición (trigesimosegunda desde el 2026-08-06): recalculé por script
+  el universo de fuentes 🟢A del ledger (134 filas cuyo marcador de rigurosidad empieza en 🟢, cifra
+  ya corregida ayer) contra `fuentes_leidas_lobo.md` (93 ya leídas) — 41 pendientes — y elegí 3 al
+  azar sin reemplazo (Python `random.sample`, sin semilla fija): F-331 (TRIAGE trial neerlandés, ya
+  citado en el ledger solo por su cifra agregada de desvío seguro), F-23 (RCT nacional de UBI
+  simulado, registro primario del mismo NCT06101251 que F-442 ya sostiene a fondo en tesis 7) y
+  F-229 (Piercy, Campbell & Heinrich 2011, ya sostiene tesis 19 solo por su hallazgo agregado de que
+  la demografía predice poco en servicios financieros). Las tres bloqueadas por el proxy en su URL
+  directa (ncbi.nlm.nih.gov, sciencedirect.com, link.springer.com); reconstruidas vía búsqueda
+  dirigida (PubMed/PMC para F-331, incluido su análisis post hoc en base al mismo dataset,
+  PMC9252194; PubMed/TRID/Penn Medicine para F-23; ResearchGate/The Financial Brand para F-229) que
+  confirman detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya citado. Sumé
+  las entradas 94, 95 y 96 de Intuición acumulada: (94) el propio diseño de cuatro brazos del RCT de
+  UBI muestra que un feedback que cubre varias conductas de riesgo a la vez mejora tanto como uno
+  enfocado en una sola conducta asignada — la personalización de una sola métrica importa para
+  sostener el efecto después del incentivo (ya cubierto por la intuición 84), no para lograrlo la
+  primera vez, precisión nueva sobre tesis 7 sin cambiar su confianza; (95) que la demografía rinda
+  poco en servicios financieros no es un hallazgo fijo — el propio paper de Piercy et al. lo atribuye
+  a la modernización del consumidor (más educado, más letrado en medios) frente a los años 60-70,
+  lo que implica que la motivación como variable de segmentación de `lapuerta` también tiene fecha de
+  vencimiento y necesita revalidación periódica, no solo haber ganado la comparación una vez — matiza
+  tesis 19 sin cambiar su confianza; (96) el análisis post hoc del TRIAGE trial (mismo dataset,
+  mismas enfermeras) encontró que la asignación real a atención primaria (13.3%, consecuencia real)
+  fue *menor* que la asignación en el fin de semana de control sin consecuencia (24.7%) — la
+  disposición simulada a desviar/cambiar/adoptar sobreestima sistemáticamente la disposición real
+  cuando la decisión sí importa, advertencia de método con aplicación directa a cualquier estimación
+  de conducta que `lapuerta` derive de un escenario simulado con una persona sintética. Ninguna tesis
+  de negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición,
+  no una revisión de evidencia sobre las tesis existentes, aunque la entrada 96 es la de aplicación
+  metodológica más directa al propio generador del proyecto hasta la fecha. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
+  historial (2026-08-09 a hoy) — cumple la ventana de ~30 días; consolidé las dos corridas del
+  2026-08-08 y 2026-08-09 en un solo bloque resumido para mantener el archivo legible, y dejo el
+  detalle completo desde 2026-08-10 en adelante.
