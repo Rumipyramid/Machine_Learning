@@ -3717,6 +3717,88 @@ herramienta como control.
   — no cambia la confianza de tesis 9/10, pero es la entrada de intuición con la aplicación más
   directa a la validación metodológica del propio generador del proyecto hasta la fecha.
 
+### 97. Que un paper metodológico proponga un umbral operativo concreto no significa que el campo lo haya adoptado como estándar — verificar la adopción real años después, no solo la existencia de la propuesta
+F-56/F-57 ya sostienen tesis 10 (correr silent trial/shadow mode 60-90 días antes de producción,
+sin necesitar consentimiento) por el protocolo de tres etapas que propone Kwong et al. 2022:
+desarrollo exploratorio → silent trial → evaluación clínica prospectiva. Leído F-57 a fondo, el
+propio paper no incluye un estándar de cuándo repetir el silent trial (ya lo cubre la intuición 10
+sobre F-56) — pero la búsqueda dirigida para reconstruirlo (Frontiers, ResearchGate y PMC bloqueados
+por el proxy del entorno) encontró algo que el resumen de una línea del ledger no tenía: una revisión
+de alcance publicada en *Nature Health* a inicios de 2026, coautorizada por el mismo grupo
+(Kwong/McCradden), que cribó PubMed, Web of Science y Scopus 2015-2025 (891 artículos identificados,
+75 incluidos) y concluye que **no existen guías formales para silent trials** en salud, con "enorme
+variación" en cómo se conducen y qué métricas se reportan. Cuatro años después de proponer el
+protocolo de 60-90 días, el propio autor original confirma que el campo no lo estandarizó.
+**Heurística de decisión:** cuando un paper metodológico bien diseñado propone un umbral operativo
+concreto, tratarlo como la mejor práctica documentada disponible, no como un estándar de industria ya
+adoptado — buscar, años después, si una revisión sistemática/de alcance confirma adopción real o si
+la propuesta sigue aislada; si el campo entero sigue sin estandarizar (como aquí), la implicación de
+negocio es publicar el propio protocolo de validación del piloto de forma explícita y auditable, en
+vez de asumir que "seguir el estándar del sector" ya cubre el riesgo regulatorio/reputacional.
+- **Fuente:** F-57 (🟢A — Kwong et al. 2022, protocolo de silent trial)
+- **Leído a fondo:** 2026-09-08 (frontiersin.org, researchgate.net y pmc.ncbi.nlm.nih.gov bloqueados
+  por el proxy del entorno; reconstruido vía búsqueda dirigida, que además localizó una revisión de
+  alcance de 2026 —no citada aún en el ledger— confirmando el hallazgo del propio autor original)
+- **Conexión razonada, no forzada:** matiza tesis 10 con la advertencia de que el plazo de 60-90 días
+  es la mejor práctica documentada, no un estándar de industria adoptado; no cambia su confianza
+  (sigue Alta), pero refuerza la recomendación de documentar el propio protocolo del piloto
+  farmacia+IA en vez de asumir que existe un consenso externo ya resuelto.
+
+### 98. La paradoja de la privacidad no es una caja negra del comportamiento — dos experimentos de campo reales aíslan una palanca estructural replicable que mueve la divulgación sin tocar la actitud
+F-142 ya sostiene tesis 13 (divulgación progresiva convierte mejor, funciona sin cambiar la actitud
+real de privacidad) desde el 2026-07-20, solo por su resumen de una línea (secuenciar campos de menos
+a más sensible y repartirlos en varias pantallas aumenta la divulgación). Leído a fondo (tandfonline.com
+bloqueado por el proxy del entorno, reconstruido vía búsqueda dirigida), el detalle que el resumen no
+capturaba: el hallazgo no viene de un experimento de laboratorio con voluntarios — viene de **dos
+experimentos de campo reales**: el primero en colaboración con una empresa FinTech real (usuarios
+completando un registro real, no una simulación), el segundo dentro de una comunidad real de alumni
+universitarios en Facebook. Ilany-Tzur & Fink encuadran el resultado explícitamente como una forma de
+reconciliar la teoría normativa de privacidad (lo que la gente dice que quiere proteger) con la
+descriptiva (lo que realmente divulga) como complementarias, no en competencia: la palanca estructural
+(orden + fragmentación del formulario) explica buena parte de la brecha actitud-conducta, no es una
+anomalía a ignorar.
+**Heurística de decisión:** ante una "paradoja actitud-conducta" documentada (la gente dice que le
+importa la privacidad pero divulga igual), buscar primero si existe evidencia de **campo real** —no
+solo de laboratorio— que aísle una palanca estructural del propio flujo (orden de los campos, número
+de pantallas) antes de tratar la brecha como psicología individual no accionable: la palanca
+estructural es más fácil de rediseñar en el producto propio que cualquier intento de cambiar la
+actitud declarada del cliente.
+- **Fuente:** F-142 (🟢A — Ilany-Tzur & Fink 2025, *International Journal of Electronic Commerce*)
+- **Leído a fondo:** 2026-09-08 (tandfonline.com bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que confirma el diseño de dos experimentos de campo reales, más allá del resumen
+  agregado ya citado en el ledger)
+- **Conexión razonada, no forzada:** matiza tesis 13 con la validez ecológica del hallazgo (campo
+  real, no laboratorio) y el marco teórico explícito de los autores; no cambia su confianza (sigue
+  Alta), refuerza diseñar el onboarding de `disposicion_compartir_datos_pricing` con secuenciación
+  estructural del formulario, no solo mensajes de confianza de marca.
+
+### 99. Un I² de ~78% junto a una correlación "moderada" es en sí mismo el hallazgo — dice que el contexto pesa más que cualquier cifra promedio, no que el efecto sea establemente mediano
+F-242 ya sostiene tesis 22 (la explicabilidad no es el factor dominante de la confianza en IA) desde
+el 2026-07-27, por su hallazgo agregado: meta-análisis PRISMA de 90 estudios, correlación
+explicabilidad-confianza significativa pero moderada. Leído a fondo (arxiv.org e ieeexplore.ieee.org
+bloqueados por el proxy del entorno, reconstruido vía búsqueda dirigida), el dato que el resumen de
+una línea no capturaba: la heterogeneidad entre los 90 estudios es alta (**I² ≈ 78%**), lo que en
+términos de meta-análisis significa que la mayor parte de la variación observada entre estudios no se
+explica por azar muestral — se explica por diferencias reales de contexto (tipo de tarea, tipo de
+explicación, dominio de alto vs. bajo riesgo). Una correlación pooled "moderada" con heterogeneidad
+tan alta no describe un efecto estable de magnitud media: describe un promedio de efectos que van de
+casi nulos a fuertes según el contexto, y ese promedio no predice bien ningún caso particular.
+**Heurística de decisión:** al leer cualquier meta-análisis que reporte una correlación o efecto
+"moderado" como veredicto único, buscar primero el estadístico de heterogeneidad (I²/Q) antes de citar
+la cifra pooled como si describiera el fenómeno en general — un I² alto invalida la pregunta "¿cuánto
+ayuda la explicabilidad en promedio?" y la reemplaza por la pregunta correcta: "¿en qué contexto
+específico ayuda y en cuál no?", que es exactamente la pregunta que ya guía tesis 22 (fricción
+deliberada solo donde la tarea es difícil).
+- **Fuente:** F-242 (🟢A — Atf & Lewis 2025, meta-análisis PRISMA, IEEE Transactions on Technology and
+  Society)
+- **Leído a fondo:** 2026-09-08 (arxiv.org e ieeexplore.ieee.org bloqueados por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que localizó el estadístico I²≈78% no citado en el resumen del
+  ledger)
+- **Conexión razonada, no forzada:** matiza tesis 22 con el estadístico de heterogeneidad que explica
+  por qué el promedio pooled es poco informativo; no cambia su confianza (sigue Alta), confirma que
+  "fricción solo en tareas difíciles" (ya vigente en tesis 22) es la lectura correcta de un
+  meta-análisis altamente heterogéneo, no una simplificación de él.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5028,3 +5110,44 @@ herramienta como control.
   historial (2026-08-09 a hoy) — cumple la ventana de ~30 días; consolidé las dos corridas del
   2026-08-08 y 2026-08-09 en un solo bloque resumido para mantener el archivo legible, y dejo el
   detalle completo desde 2026-08-10 en adelante.
+- **2026-09-08** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward e0a7da3→6c7c30a que trajo consigo el propio commit del 2026-09-07 de esta
+  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
+  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 8 corridas, **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  vigesimosexto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra
+  ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo
+  por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no
+  la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva veintisiete días sin
+  correr). Sí corrió la rutina diaria de intuición (trigesimotercera desde el 2026-08-06): recalculé
+  por script el universo 🟢A del ledger (134 filas, filtro estricto por el marcador al inicio de la
+  celda de rigurosidad — corregí un falso positivo de mi propio script de selección, que antes contaba
+  como "verde" cualquier fila con un 🟢 mencionado en cualquier parte del texto, incluida una cita
+  interna a otra fuente, y así había clasificado mal a F-457 como 🟢A cuando en realidad es 🔵B) contra
+  `fuentes_leidas_lobo.md` (96 ya leídas) — 38 pendientes — y elegí 3 al azar sin reemplazo (Python
+  `random.sample`, sin semilla fija): F-57 (protocolo de silent trial de Kwong et al. 2022, ya citado
+  en el ledger solo por su umbral operativo de 60-90 días), F-142 (mecanismo de pie-en-la-puerta para
+  divulgación de datos online, ya citado solo por su hallazgo agregado) y F-242 (meta-análisis
+  explicabilidad-confianza en IA, ya citado solo por su correlación "moderada"). Las tres bloqueadas
+  por el proxy en su URL directa (frontiersin.org/researchgate.net/pmc.ncbi.nlm.nih.gov para F-57;
+  tandfonline.com para F-142; arxiv.org/ieeexplore.ieee.org para F-242); reconstruidas vía búsqueda
+  dirigida que confirmó detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya
+  citado — incluyendo, para F-57, una revisión de alcance de 2026 (*Nature Health*, mismo grupo de
+  autores) todavía no registrada en el ledger, que confirma que el campo de silent trials clínicos
+  sigue sin estandarizar cuatro años después del protocolo original. Sumé las entradas 97, 98 y 99 de
+  Intuición acumulada: (97) un umbral operativo propuesto por un paper (60-90 días) es la mejor
+  práctica documentada, no un estándar de industria adoptado — verificar adopción real años después,
+  matiza tesis 10 sin cambiar su confianza; (98) la paradoja de la privacidad no es caja negra: los
+  dos experimentos de campo reales (FinTech real, comunidad alumni real) detrás de F-142 aíslan una
+  palanca estructural (orden + fragmentación del formulario) que mueve la divulgación sin tocar la
+  actitud, matiza tesis 13 con validez ecológica sin cambiar su confianza; (99) un I² de ~78% junto a
+  una correlación "moderada" es el hallazgo en sí — dice que el contexto pesa más que el promedio, no
+  que el efecto sea establemente mediano, matiza tesis 22 sin cambiar su confianza. Ninguna tesis de
+  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, más
+  la corrección de un sesgo de conteo en mi propio script de selección aleatoria (sin impacto en las
+  96 lecturas previas: ninguna de ellas era F-457 ni ningún otro falso positivo del mismo tipo).
+  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 31
+  días de historial (2026-08-09 a hoy) — un día sobre la ventana de ~30 días; no podo todavía porque
+  el bloque más antiguo de la ventana (2026-08-09, ya consolidado con 2026-08-08) sigue siendo
+  información viva sobre el arranque de la rutina de intuición, la reviso mañana para podar si sigue
+  sobrando.
