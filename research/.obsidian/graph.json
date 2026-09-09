@@ -1,0 +1,78 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#node",
+      "color": {
+        "a": 1,
+        "rgb": 15844367
+      }
+    },
+    {
+      "query": "tag:#output",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "tag:#rigor/A",
+      "color": {
+        "a": 1,
+        "rgb": 4437377
+      }
+    },
+    {
+      "query": "tag:#rigor/B",
+      "color": {
+        "a": 1,
+        "rgb": 3576296
+      }
+    },
+    {
+      "query": "tag:#rigor/C",
+      "color": {
+        "a": 1,
+        "rgb": 15453984
+      }
+    },
+    {
+      "query": "tag:#rigor/D",
+      "color": {
+        "a": 1,
+        "rgb": 14503424
+      }
+    },
+    {
+      "query": "tag:#rigor/E",
+      "color": {
+        "a": 1,
+        "rgb": 13959168
+      }
+    },
+    {
+      "query": "tag:#eco-de-cita",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -0.8,
+  "nodeSizeMultiplier": 0.85,
+  "lineSizeMultiplier": 0.6,
+  "collapse-forces": false,
+  "centerStrength": 0.4,
+  "repelStrength": 12,
+  "linkStrength": 0.6,
+  "linkDistance": 180,
+  "scale": 0.4
+}

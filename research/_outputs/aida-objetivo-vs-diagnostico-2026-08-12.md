@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "AIDA frente a su objetivo"
+fuentes: 2
+tags:
+  - output
+---
+
 # AIDA frente a su objetivo
 
 ### Qué se propuso lograr, qué muestra el diagnóstico, y qué falta para poder responder la pregunta

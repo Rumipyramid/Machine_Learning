@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "Revisión del modelo de trabajo de diseño"
+fuentes: 11
+tags:
+  - output
+---
+
 # Revisión del modelo de trabajo de diseño
 
 ### Contraste de la sesión de construcción metodológica contra la evidencia acumulada de diseño e innovación

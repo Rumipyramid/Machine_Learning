@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Behavioral design: estado de la disciplina y del mercado"
+version: "v1.1"
+actualizado: "2026-07-22"
+fuentes: 12
+tags:
+  - node
+---
+
 # Behavioral design: estado de la disciplina y del mercado
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Venta de seguros de vida en LATAM: modelo digital vs. híbrido vs. tradicional, y cómo performa cada uno"
+version: "v1.0"
+actualizado: "2026-07-27"
+fuentes: 8
+tags:
+  - node
+---
+
 # Venta de seguros de vida en LATAM: modelo digital vs. híbrido vs. tradicional, y cómo performa cada uno
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

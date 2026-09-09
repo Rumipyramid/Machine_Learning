@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Matriz de productos Vida RIMAC — catálogo y coberturas"
+version: "v1.2"
+actualizado: "2026-07-26"
+fuentes: 0
+tags:
+  - node
+---
+
 # Matriz de productos Vida RIMAC — catálogo y coberturas
 
 > Node. Fuente de verdad de este tema: catálogo de productos de Seguro de Vida Individual de

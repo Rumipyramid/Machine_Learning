@@ -1,3 +1,12 @@
+---
+tipo: node
+titulo: "Modelo de cobertura de salud: triage con IA + farmacias + atención humana (Perú)"
+actualizado: "2026-07-06"
+fuentes: 21
+tags:
+  - node
+---
+
 # Modelo de cobertura de salud: triage con IA + farmacias + atención humana (Perú)
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.

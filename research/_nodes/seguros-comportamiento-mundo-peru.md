@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Comportamiento, percepción y valoración de las personas frente a los seguros"
+version: "v1.1"
+actualizado: "2026-07-21"
+fuentes: 6
+tags:
+  - node
+---
+
 # Comportamiento, percepción y valoración de las personas frente a los seguros
 
 **Mundo vs. Perú — Recopilación de datos**

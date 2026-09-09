@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "Arquitectura de Research Ops"
+fuentes: 0
+tags:
+  - output
+---
+
 # Arquitectura de Research Ops
 
 > Descripción estructural del sistema de operaciones de investigación construido para el

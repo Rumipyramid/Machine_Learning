@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "AIDA — la historia completa"
+fuentes: 3
+tags:
+  - output
+---
+
 # AIDA — la historia completa
 
 ### Lo que la presentación dejó abierto, lo que respondió la owner, y lo que el diagnóstico terminado confirma

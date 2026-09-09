@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "Back to Basics — Presentación para Milagros: afirmaciones fortalecidas + estructura de deck"
+fuentes: 15
+tags:
+  - output
+---
+
 # Back to Basics — Presentación para Milagros: afirmaciones fortalecidas + estructura de deck
 
 > Output. Construido sobre: [[transicion-venta-fria-a-opt-in]], [[behavioral-design-estado-disciplina]],

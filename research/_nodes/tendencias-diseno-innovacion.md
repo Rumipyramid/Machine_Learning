@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta"
+version: "v4.0"
+actualizado: "2026-08-02"
+fuentes: 181
+tags:
+  - node
+---
+
 # Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.

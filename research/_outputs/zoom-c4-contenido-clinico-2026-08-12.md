@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "Zoom sobre C4 — «Nada generado sobre el cuerpo»"
+fuentes: 4
+tags:
+  - output
+---
+
 # Zoom sobre C4 — «Nada generado sobre el cuerpo»
 
 > Anexo al *Brief de arquitectura del agente* (12-ago-2026). Responde cuatro preguntas sobre la

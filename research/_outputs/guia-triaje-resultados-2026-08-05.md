@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "Guía de preguntas — Resultados · 200 usuarios sintéticos"
+fuentes: 5
+tags:
+  - output
+---
+
 # Guía de preguntas — Resultados · 200 usuarios sintéticos
 
 > Simulación de la *Guía de preguntas* (estudio de triaje digital) sobre **200 peruanos

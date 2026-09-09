@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido"
+version: "v1.4"
+actualizado: "2026-07-27"
+fuentes: 33
+tags:
+  - node
+---
+
 # Proyecto Back to Basics — FFVV Vida Individual (RIMAC): conocimiento construido
 
 > Node. Fuente de verdad de este tema: consolida el conocimiento interno del proyecto (modelo de

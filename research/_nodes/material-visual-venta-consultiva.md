@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección"
+version: "v1.1"
+actualizado: "2026-07-21"
+fuentes: 17
+tags:
+  - node
+---
+
 # Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "Guía de preguntas — Estudio de triaje digital + kit · 200 usuarios sintéticos (`lapuerta`)"
+fuentes: 5
+tags:
+  - output
+---
+
 # Guía de preguntas — Estudio de triaje digital + kit · 200 usuarios sintéticos (`lapuerta`)
 
 > Simulación de la *Guía de preguntas* (facilitadores) sobre una población sintética de

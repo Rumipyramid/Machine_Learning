@@ -34,6 +34,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/personas/apps/reglas/` · `apps/llm/` | Apps web: explorador por reglas (autocontenido) y preguntas libres con Claude (API) | — |
 | `research/updates/` | Reportes quincenales de fortalecimiento del modelo | Indexados en este códice (bloque gestionado) |
 | `research/fuentes/codice.md` | Ledger de evidencia: resumen, rigurosidad, autor y año | Lo mantiene el skill `cronista`; se consulta con `/codice` |
+| `research/_grafo/` | **Proyección del códice a un vault de Obsidian**: una nota por fuente + tableros de auditoría (rigor, huérfanas, eco de cita) | 100% generado por `_grafo/generar_grafo.py` desde `codice.md` — no editar a mano. `research/` es la raíz del vault; ver `research/_grafo/README.md` |
 | `research/yopersona/perfil.md` | Nodo de conocimiento: perfil profesional del usuario (CV) | Fuente de verdad para cartas de presentación, CVs adaptados y asesoría de carrera |
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis con evidencia F-n del ledger + confianza; refinada diariamente contra `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
@@ -263,6 +264,9 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   se registra en `research/fuentes/codice.md` (resumen, rigurosidad, autor, año) —
   consultable con el skill `/codice`. Aplica también a lo que traigan `/gossip`
   (noticias/redes) y `/marketer` (benchmarks de negocio), no solo a `/seeker`.
+- **Grafo del códice:** tras registrar fuentes nuevas, regenerar la proyección de Obsidian
+  con `python3 research/_grafo/generar_grafo.py`. Es determinista — si el códice no cambió,
+  no produce diff. Nunca editar `research/_grafo/fuentes/` a mano: se borra y se rehace.
 - ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
 
 ---

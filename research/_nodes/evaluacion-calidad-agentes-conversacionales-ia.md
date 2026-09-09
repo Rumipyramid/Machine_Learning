@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Evaluación de calidad de agentes conversacionales de IA (chatbots)"
+version: "v1.0"
+actualizado: "2026-07-15"
+fuentes: 13
+tags:
+  - node
+---
+
 # Evaluación de calidad de agentes conversacionales de IA (chatbots)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

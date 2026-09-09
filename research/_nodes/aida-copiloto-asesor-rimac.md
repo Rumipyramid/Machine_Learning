@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "AIDA — el copiloto de IA de la fuerza de ventas de RIMAC"
+version: "v1.0"
+actualizado: "2026-08-12"
+fuentes: 6
+tags:
+  - node
+---
+
 # AIDA — el copiloto de IA de la fuerza de ventas de RIMAC
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

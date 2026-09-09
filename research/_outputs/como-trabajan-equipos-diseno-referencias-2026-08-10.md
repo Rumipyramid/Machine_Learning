@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "Cómo trabajan equipos de diseño con estos cuatro roles"
+fuentes: 21
+tags:
+  - output
+---
+
 # Cómo trabajan equipos de diseño con estos cuatro roles
 
 ### Referencias externas y peruanas para el modelo de trabajo del equipo

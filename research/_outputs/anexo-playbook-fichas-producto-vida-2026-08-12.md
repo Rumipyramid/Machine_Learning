@@ -1,3 +1,11 @@
+---
+tipo: output
+titulo: "Anexo del Playbook · Fichas de producto Vida"
+fuentes: 0
+tags:
+  - output
+---
+
 # Anexo del Playbook · Fichas de producto Vida
 
 > **Anexo de** `playbook_asesor_final_v3_1.md`. No modifica el playbook: lo complementa.

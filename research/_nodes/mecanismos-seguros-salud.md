@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Mecanismos de seguros de salud: presión actual y modelos que la navegan"
+version: "v1.2"
+actualizado: "2026-07-22"
+fuentes: 43
+tags:
+  - node
+---
+
 # Mecanismos de seguros de salud: presión actual y modelos que la navegan
 
 > Node. Fuente de verdad de este tema. Rescata 3 investigaciones `/seeker`/`/trinidad` que

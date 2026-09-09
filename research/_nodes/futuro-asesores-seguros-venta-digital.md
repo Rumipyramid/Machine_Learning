@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario"
+version: "v1.0"
+actualizado: "2026-07-27"
+fuentes: 25
+tags:
+  - node
+---
+
 # ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

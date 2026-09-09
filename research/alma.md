@@ -47,8 +47,27 @@ por afirmación cuando corresponda.
 | `updates/` | Reportes quincenales de fortalecimiento del modelo — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `lobo/opinion_experto.md` | Opinión de negocio acumulada del skill `lobo`, refinada diariamente contra el ledger de `cronista` — subsistema con su propia lógica de confianza/tope, fuera del alcance de este hub, ver `CLAUDE.md` |
 | `yopersona/perfil.md` | Perfil profesional del usuario (CV) — fuente de verdad para cartas de presentación y asesoría de carrera, fuera del alcance de este hub, ver `CLAUDE.md` |
+| `_grafo/` | **Proyección del códice a un vault de Obsidian** — 100% generado por `_grafo/generar_grafo.py` a partir de `fuentes/codice.md`. Una nota por fuente + tableros de auditoría. No editar a mano: se regenera. Ver `_grafo/README.md` |
+| `.obsidian/` | Configuración del vault (grafo coloreado por rigurosidad). `research/` es la raíz del vault |
 
 `_nodes/` es plano: nada de subcarpetas por tema.
+
+### El vault de Obsidian
+
+`research/` completo es un vault: se abre con *Open folder as vault*. Los nodes y outputs
+reales entran con sus propios wikilinks; `_grafo/fuentes/` agrega las 542 fuentes del ledger
+como notas navegables, enlazadas al node u output que fundamentan.
+
+Las aristas fuente→node se derivan de dos vías que se unen: la columna *«Usado en»* del
+códice y las menciones `F-n` en el cuerpo de cada documento. **Los nodes no se reescriben**
+para convertir sus `F-n` en wikilinks — la arista la aporta la nota de la fuente, así que los
+nodes se siguen leyendo igual fuera de Obsidian.
+
+Regenerar tras cualquier cambio en el códice:
+
+```
+python3 research/_grafo/generar_grafo.py
+```
 
 ---
 
@@ -106,12 +125,27 @@ por afirmación cuando corresponda.
 ## Bibliografía compartida
 
 `fuentes/codice.md` (ledger de `cronista`, mantenido por ese skill; se consulta con el skill
-`/codice`) — 235+ fuentes (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
+`/codice`) — **542 fuentes** (F-1...) citadas por ID desde cualquier node. Reglas de uso desde
 este hub:
 
 - Cada node cita fuentes por ID (`F-n`) en vez de repetir la referencia completa.
 - Al crear/actualizar un node con evidencia nueva, registrar la fuente en el ledger primero
   (skill `cronista`), luego citarla por ID en el node.
+- El códice es la **fuente única**: `_grafo/` es sólo una proyección suya. Para corregir una
+  fuente se edita el códice y se regenera, nunca al revés.
+
+**Estado del corpus** (medido el 2026-09-09 por `_grafo/generar_grafo.py`):
+
+| | |
+|---|---|
+| Fuentes registradas | 542 |
+| Conectadas a un node u output | 450 |
+| **Huérfanas** (registradas, nunca citadas) | **92 — 16%**, de las cuales 22 son 🟢A |
+| Marcadas como eco/huérfano de cita | 32 |
+| Reparto | 🟢A 147 · 🔵B 107 · 🟡C 112 · 🟠D 135 · 🔴E 28 · s/g 13 |
+
+Tableros para trabajar esto: `_grafo/Auditoría de rigor.md`, `_grafo/Fuentes huérfanas.md`,
+`_grafo/Cadenas de eco de cita.md`, `_grafo/Mapa del códice.md`.
 
 **Nota de reconciliación (2026-07-17):** el PR de esta rama divergió de `main` — `main` nunca
 recibió la migración a Many Brains y avanzó en paralelo (skill `lobo`, `yopersona`, skill

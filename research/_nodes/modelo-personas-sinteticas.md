@@ -1,3 +1,12 @@
+---
+tipo: node
+titulo: "Modelo de personas sintéticas (lapuerta)"
+actualizado: "2026-07-20"
+fuentes: 0
+tags:
+  - node
+---
+
 # Modelo de personas sintéticas (lapuerta)
 
 > **Nodo nuevo, fuera del alcance formal declarado en `alma.md`** (que excluye

@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Transición de venta fría a venta opt-in: cómo lo hacen las organizaciones"
+version: "v1.0"
+actualizado: "2026-07-14"
+fuentes: 18
+tags:
+  - node
+---
+
 # Transición de venta fría a venta opt-in: cómo lo hacen las organizaciones
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

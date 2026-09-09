@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Metodologías de diseño para sistemas complejos"
+version: "v1.0"
+actualizado: "2026-08-05"
+fuentes: 14
+tags:
+  - node
+---
+
 # Metodologías de diseño para sistemas complejos
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

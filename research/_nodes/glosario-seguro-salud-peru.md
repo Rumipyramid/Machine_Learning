@@ -1,3 +1,11 @@
+---
+tipo: node
+titulo: "🩺 Glosario de seguro de salud en Perú — en lenguaje claro"
+fuentes: 7
+tags:
+  - node
+---
+
 # 🩺 Glosario de seguro de salud en Perú — en lenguaje claro
 
 > Glosario en lenguaje claro de los términos de un seguro de salud en Perú.

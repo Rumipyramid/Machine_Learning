@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "Capacidades de un asistente de IA in-app para una aseguradora multi-ramo"
+version: "v1.0"
+actualizado: "2026-08-12"
+fuentes: 24
+tags:
+  - node
+---
+
 # Capacidades de un asistente de IA in-app para una aseguradora multi-ramo
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.

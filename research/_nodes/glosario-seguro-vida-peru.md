@@ -1,3 +1,13 @@
+---
+tipo: node
+titulo: "🕊️ Glosario de seguro de vida en lenguaje claro — FAQ de cliente (investigación /trinidad)"
+version: "v1.0"
+actualizado: "2026-07-24"
+fuentes: 8
+tags:
+  - node
+---
+
 # 🕊️ Glosario de seguro de vida en lenguaje claro — FAQ de cliente (investigación /trinidad)
 
 > Investigación de 360° (`/trinidad`, 2026-07-24) para completar la sección "Preguntas
