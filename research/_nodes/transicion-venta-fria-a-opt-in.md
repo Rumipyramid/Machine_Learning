@@ -320,3 +320,7 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   contacto de su §2 y la resolución del Bloque 4 del playbook (§5) siguen el mismo patrón que
   este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
+- [[curva-aprendizaje-herramientas-digitales-venta|Curva de aprendizaje de asesores comerciales
+  con herramientas digitales de venta]] — el asesor que transiciona de venta fría a opt-in es el
+  mismo actor cuya velocidad de adopción y competencia con nuevas herramientas/guiones mide ese
+  node.

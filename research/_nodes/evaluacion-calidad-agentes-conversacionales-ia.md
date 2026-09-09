@@ -250,3 +250,7 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   la explicabilidad genérica **no** calibra la confianza (produce sobre-confianza; lo que la calibra
   es la verificabilidad de la salida), y toda métrica de productividad autorreportada debe
   descontarse frente a la medición objetiva.
+- [[curva-aprendizaje-herramientas-digitales-venta|Curva de aprendizaje de asesores comerciales
+  con herramientas digitales de venta]] — si el agente de IA es el componente conversacional de
+  una herramienta guía para asesores, las escalas de calidad de este node complementan la
+  medición de nivel 3 (conducta) de Kirkpatrick que ese node desarrolla.

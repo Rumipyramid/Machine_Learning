@@ -364,3 +364,7 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
   el respaldo general de lo que este node aplica al caso de seguros: el efecto estética-usabilidad
   se reduce a menos de la mitad al controlar por **fluidez de procesamiento** (claridad > ornamento),
   y su hipótesis H7 propone testear exactamente eso en material de venta de Rimac.
+- [[curva-aprendizaje-herramientas-digitales-venta|Curva de aprendizaje de asesores comerciales
+  con herramientas digitales de venta]] — el material visual que este node cubre es, en una
+  herramienta guía digital, precisamente lo que el asesor debe aprender a usar con velocidad y
+  precisión creciente — ese node aporta el sustento para medir esa curva.

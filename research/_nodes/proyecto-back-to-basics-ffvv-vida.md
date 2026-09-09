@@ -929,3 +929,7 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
   transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la
   experiencia de venta.
+- [[curva-aprendizaje-herramientas-digitales-venta|Curva de aprendizaje de asesores comerciales
+  con herramientas digitales de venta]] — sustento académico para medir el impacto de la
+  Universidad Vida y de cualquier herramienta guía digital derivada de este proyecto sobre la
+  velocidad de aprendizaje de los asesores.
