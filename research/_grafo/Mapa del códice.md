@@ -57,7 +57,19 @@ Cuánta evidencia sostiene cada node/output y de qué calidad.
 
 ## Puertas de entrada
 
+- [[Tablero de hipótesis]] — las 31 hipótesis vivas y su estado
 - [[Auditoría de rigor]] — qué se apoya en evidencia débil
 - [[Fuentes huérfanas]] — registradas y nunca usadas
 - [[Cadenas de eco de cita]] — cifras que no deben usarse como afirmación fuerza
-- [[alma|alma — mapa de nodes]]
+- [[alma]] — mapa de nodes
+
+## Entidades del grafo
+
+| Tipo | Cuántas | Carpeta |
+|---|---|---|
+| Fuentes | 542 | `_grafo/fuentes/` |
+| Hipótesis | 31 | `_grafo/entidades/hipotesis/` |
+| Reglas de criterio | 22 | `_grafo/entidades/reglas/` |
+| Autores con 2+ fuentes | 24 | `_grafo/entidades/autores/` |
+| Nodes | 18 | `_nodes/` |
+| Outputs | 10 | `_outputs/` |

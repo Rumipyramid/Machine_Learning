@@ -22,6 +22,27 @@
       }
     },
     {
+      "query": "tag:#hipotesis",
+      "color": {
+        "a": 1,
+        "rgb": 11621375
+      }
+    },
+    {
+      "query": "tag:#regla",
+      "color": {
+        "a": 1,
+        "rgb": 16764082
+      }
+    },
+    {
+      "query": "tag:#autor",
+      "color": {
+        "a": 1,
+        "rgb": 9868950
+      }
+    },
+    {
       "query": "tag:#rigor/A",
       "color": {
         "a": 1,

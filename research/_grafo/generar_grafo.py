@@ -57,6 +57,22 @@ RE_FILA = re.compile(r"^\|\s*F-\d+\s*\|")
 RE_NODE_REF = re.compile(r"_nodes/([a-z0-9][a-z0-9\-]*)\.md")
 RE_OUTPUT_REF = re.compile(r"_outputs/([a-z0-9][a-z0-9\-]*)\.md")
 RE_FN = re.compile(r"\bF-(\d+)\b")
+RE_HN = re.compile(r"\bH(\d{1,2})\b")
+RE_CN = re.compile(r"\bC(\d{1,2})\b")
+
+# Fila de la tabla de hipótesis:  | **H1** | enunciado | estado | prueba |
+RE_HIP = re.compile(r"^\|\s*\*{0,2}(H\d{1,2})\*{0,2}\s*\|(.+)$")
+# Viñeta de regla de criterio:    - **C1 — Título.** cuerpo…
+RE_REGLA = re.compile(r"^\s*[-*]\s*\*\*(C\d{1,2})\s*[—–-]\s*(.+?)\*\*\s*(.*)$")
+RE_ESTADO = re.compile(r"`(abierta|parcial|respaldada|refutada|degradada|contestada)`", re.I)
+
+# Etiquetas de autoría que no son una entidad real y no merecen nota propia.
+RE_AUTOR_GENERICO = re.compile(
+    r"^(varios|varias|autor[ií]a no|autores no|desconocid|n/?d\b|s/?d\b"
+    r"|no verificad|m[úu]ltiples|sin autor)", re.I)
+# Un autor sólo se vuelve nodo del grafo si conecta al menos esta cantidad de
+# fuentes; si no, sería una hoja suelta que ensucia el grafo sin aportar.
+MIN_FUENTES_POR_AUTOR = 2
 
 
 # --------------------------------------------------------------------------- #
@@ -119,6 +135,9 @@ class Fuente:
     nodes: set[str] = field(default_factory=set)
     outputs: set[str] = field(default_factory=set)
     relacionadas: set[str] = field(default_factory=set)
+    hipotesis: set[str] = field(default_factory=set)
+    reglas: set[str] = field(default_factory=set)
+    autor_slug: str = ""
     eco: bool = False
 
     @property
@@ -163,6 +182,11 @@ def parsear_codice(texto: str) -> list[Fuente]:
         f.relacionadas |= {
             f"F-{n}" for n in RE_FN.findall(usado + " " + resumen)
         } - {f.id}
+        # Hipótesis y reglas que la fila cita explícitamente. Se restringe al
+        # campo «Usado en», que es donde el códice las referencia; buscarlas en
+        # el resumen daría falsos positivos (C1 de una norma, H2 de una fórmula).
+        f.hipotesis |= {f"H{n}" for n in RE_HN.findall(usado)}
+        f.reglas |= {f"C{n}" for n in RE_CN.findall(usado)}
         f.eco = bool(RE_ECO.search(rigor + " " + resumen))
         fuentes.append(f)
     return fuentes
@@ -202,6 +226,150 @@ def meta_de_node(path: Path) -> dict[str, str]:
 
 
 # --------------------------------------------------------------------------- #
+# entidades: hipótesis, reglas de criterio, autores
+# --------------------------------------------------------------------------- #
+@dataclass
+class Entidad:
+    id: str
+    titulo: str
+    cuerpo: str
+    origen: str          # node donde vive
+    estado: str = ""
+
+    @property
+    def slug(self) -> str:
+        m = re.match(r"([A-Z])(\d+)", self.id)
+        return f"{m.group(1)}{int(m.group(2)):02d}" if m else self.id
+
+
+def sin_markdown(texto: str) -> str:
+    """Quita énfasis y enlaces para usar el texto como título de nota."""
+    txt = re.sub(r"\*{1,3}|`", "", texto)
+    txt = re.sub(r"\[\[([^\]|]+)\|?[^\]]*\]\]", r"\1", txt)
+    return re.sub(r"\s+", " ", txt).strip()
+
+
+def parsear_entidades(nodes: list[Path]) -> tuple[dict[str, Entidad], dict[str, Entidad]]:
+    """Extrae hipótesis (tabla) y reglas de criterio (viñetas) de los nodes."""
+    hips: dict[str, Entidad] = {}
+    reglas: dict[str, Entidad] = {}
+    for path in nodes:
+        for linea in path.read_text(encoding="utf8").split("\n"):
+            m = RE_HIP.match(linea)
+            if m:
+                celdas = [c.strip() for c in m.group(2).strip().strip("|").split("|")]
+                enunciado = limpiar(celdas[0]) if celdas else ""
+                estado = ""
+                for c in celdas[1:]:
+                    e = RE_ESTADO.search(c)
+                    if e:
+                        estado = e.group(1).lower()
+                        break
+                hips[m.group(1)] = Entidad(
+                    id=m.group(1), titulo=sin_markdown(enunciado)[:110],
+                    cuerpo=" · ".join(limpiar(c) for c in celdas if c.strip()),
+                    origen=path.stem, estado=estado)
+                continue
+        # Las reglas son viñetas que pueden envolverse en varias líneas (C18, C20
+        # y C22 parten el título), así que se unen antes de intentar el match.
+        for bloque in bloques_de_vineta(path.read_text(encoding="utf8")):
+            m = RE_REGLA.match(bloque)
+            if m:
+                reglas[m.group(1)] = Entidad(
+                    id=m.group(1), titulo=sin_markdown(m.group(2)).rstrip("."),
+                    cuerpo=limpiar(m.group(3)), origen=path.stem)
+    return hips, reglas
+
+
+def bloques_de_vineta(texto: str) -> list[str]:
+    """Une cada viñeta con sus líneas de continuación en un solo string."""
+    bloques: list[str] = []
+    actual: list[str] = []
+    for linea in texto.split("\n"):
+        if re.match(r"^\s*[-*]\s", linea):
+            if actual:
+                bloques.append(" ".join(actual))
+            actual = [linea.rstrip()]
+        elif actual and linea.strip() and not linea.startswith("#"):
+            actual.append(linea.strip())          # continuación de la viñeta
+        elif actual:
+            bloques.append(" ".join(actual))
+            actual = []
+    if actual:
+        bloques.append(" ".join(actual))
+    return bloques
+
+
+def slug_autor(nombre: str) -> str:
+    """Nombre de archivo estable para un autor."""
+    base = re.sub(r"\s*\([^)]*\)", "", nombre)          # quita paréntesis
+    base = re.sub(r"[^\w\s&.\-]", "", base, flags=re.U).strip()
+    base = re.sub(r"\s+", " ", base)
+    return base[:60] or nombre[:60]
+
+
+def nota_entidad(e: Entidad, tipo: str, fuentes: list[Fuente]) -> str:
+    etiqueta = "hipótesis" if tipo == "hipotesis" else "regla"
+    fm = ["---", f"tipo: {tipo}", f"id: {yaml_str(e.id)}",
+          "aliases:", f"  - {yaml_str(e.id)}",
+          f"titulo: {yaml_str(e.titulo)}"]
+    if e.estado:
+        fm.append(f"estado: {yaml_str(e.estado)}")
+    fm += [f'vive_en: "[[{e.origen}]]"', f"fuentes: {len(fuentes)}",
+           "tags:", f"  - {tipo}"]
+    if e.estado:
+        fm.append(f"  - estado/{e.estado}")
+    fm.append("---")
+
+    cuerpo = ["", f"# {e.id} · {e.titulo}", ""]
+    if e.estado:
+        cuerpo += [f"**Estado:** `{e.estado}`", ""]
+    if e.cuerpo:
+        cuerpo += [e.cuerpo, ""]
+    cuerpo += [f"**Vive en:** [[{e.origen}]]", ""]
+
+    if fuentes:
+        cuerpo += [f"## Fuentes que tocan esta {etiqueta} ({len(fuentes)})", ""]
+        cuerpo += [f"- [[{f.slug}]] — {f.marca} {f.grado} · {f.titulo[:78]}"
+                   for f in sorted(fuentes, key=lambda x: (GRADO_ORDEN.get(x.grado, 9), x.num))]
+        cuerpo.append("")
+    else:
+        cuerpo += ["> [!note] Sin fuente enlazada",
+                   "> Ninguna fila del códice la cita en su columna «Usado en».", ""]
+
+    cuerpo += ["---", "", "*Nota generada. Editar el node de origen y regenerar.*", ""]
+    return "\n".join(fm + cuerpo)
+
+
+def nota_autor(nombre: str, fuentes: list[Fuente]) -> str:
+    c = Counter(f.grado for f in fuentes)
+    ecos = [f for f in fuentes if f.eco]
+    destinos = sorted({d for f in fuentes for d in (f.nodes | f.outputs)})
+    fm = ["---", "tipo: autor", f"nombre: {yaml_str(nombre)}",
+          f"fuentes: {len(fuentes)}",
+          f"rigor_dominante: {yaml_str(min(c, key=lambda g: GRADO_ORDEN.get(g, 9)))}",
+          f"con_eco_de_cita: {len(ecos)}", "tags:", "  - autor"]
+    if ecos:
+        fm.append("  - autor/con-eco-de-cita")
+    fm.append("---")
+
+    cuerpo = ["", f"# {nombre}", "",
+              f"**{len(fuentes)} fuentes** en el códice · "
+              + " · ".join(f"{g}: {c[g]}" for g in sorted(c, key=lambda g: GRADO_ORDEN.get(g, 9))),
+              ""]
+    if ecos:
+        cuerpo += [f"> [!warning] {len(ecos)} de sus fuentes están marcadas como eco de cita",
+                   "> " + ", ".join(f"[[{f.slug}]]" for f in ecos), ""]
+    cuerpo += ["## Fuentes", ""]
+    cuerpo += [f"- [[{f.slug}]] ({f.anio_txt}) — {f.marca} {f.grado} · {f.titulo[:76]}"
+               for f in sorted(fuentes, key=lambda x: -(anio_numerico(x.anio_txt) or 0))]
+    if destinos:
+        cuerpo += ["", "## Aparece en", ""] + [f"- [[{d}]]" for d in destinos]
+    cuerpo += ["", "---", "", "*Nota generada desde el códice.*", ""]
+    return "\n".join(fm + cuerpo)
+
+
+# --------------------------------------------------------------------------- #
 # escritura
 # --------------------------------------------------------------------------- #
 def nota_fuente(f: Fuente) -> str:
@@ -233,6 +401,16 @@ def nota_fuente(f: Fuente) -> str:
     if destinos:
         fm.append("fundamenta:")
         fm += [f'  - "[[{d}]]"' for d in destinos]
+    if f.autor_slug:
+        fm.append(f'publicado_por: "[[{f.autor_slug}]]"')
+    hips = sorted(f.hipotesis, key=lambda x: int(x[1:]))
+    if hips:
+        fm.append("hipotesis:")
+        fm += [f'  - "[[{h}]]"' for h in hips]
+    regs = sorted(f.reglas, key=lambda x: int(x[1:]))
+    if regs:
+        fm.append("reglas:")
+        fm += [f'  - "[[{r}]]"' for r in regs]
 
     tags = ["fuente", f"rigor/{f.grado.replace('/', '-')}"]
     if f.eco:
@@ -269,6 +447,15 @@ def nota_fuente(f: Fuente) -> str:
             "> Registrada en el códice pero sin node ni output que la cite.",
             "",
         ]
+
+    if f.autor_slug:
+        cuerpo += ["## Autor", "", f"- [[{f.autor_slug}]]", ""]
+
+    if hips or regs:
+        cuerpo += ["## Hipótesis y reglas que toca", ""]
+        cuerpo += [f"- [[{h}]]" for h in hips]
+        cuerpo += [f"- [[{r}]]" for r in regs]
+        cuerpo.append("")
 
     vivas = sorted(f.relacionadas, key=lambda x: int(x.split("-")[1]))
     if vivas:
@@ -368,6 +555,34 @@ def main() -> int:
         for d in f.nodes | f.outputs:
             respaldo[d].add(f.id)
 
+    # --- entidades: hipótesis, reglas de criterio, autores ------------------ #
+    hips, reglas = parsear_entidades(nodes)
+    validos_h, validos_c = set(hips), set(reglas)
+    for f in fuentes:  # descartar referencias a IDs que no existen
+        f.hipotesis &= validos_h
+        f.reglas &= validos_c
+
+    por_autor: dict[str, list[Fuente]] = defaultdict(list)
+    for f in fuentes:
+        if f.autor and not RE_AUTOR_GENERICO.match(f.autor):
+            por_autor[slug_autor(f.autor)].append(f)
+    autores = {k: v for k, v in por_autor.items() if len(v) >= MIN_FUENTES_POR_AUTOR}
+    for slug, fs in autores.items():
+        for f in fs:
+            f.autor_slug = slug
+
+    fuentes_de_h = defaultdict(list)
+    fuentes_de_c = defaultdict(list)
+    for f in fuentes:
+        for h in f.hipotesis:
+            fuentes_de_h[h].append(f)
+        for c in f.reglas:
+            fuentes_de_c[c].append(f)
+
+    print(f"  entidades: {len(hips)} hipótesis · {len(reglas)} reglas de criterio "
+          f"· {len(autores)} autores con {MIN_FUENTES_POR_AUTOR}+ fuentes "
+          f"(de {len(por_autor)} distintos)")
+
     huerfanas = [f for f in fuentes if f.huerfana]
     ecos = [f for f in fuentes if f.eco]
     rotas = sorted({fid for f in fuentes for fid in f.relacionadas if fid not in por_id})
@@ -387,6 +602,23 @@ def main() -> int:
     for f in fuentes:
         (FUENTES_OUT / f"{f.slug}.md").write_text(nota_fuente(f), encoding="utf8")
     print(f"✓ {len(fuentes)} notas en {FUENTES_OUT.relative_to(RESEARCH.parent)}/")
+
+    ENTIDADES = GRAFO / "entidades"
+    if ENTIDADES.exists():
+        shutil.rmtree(ENTIDADES)
+    for sub in ("hipotesis", "reglas", "autores"):
+        (ENTIDADES / sub).mkdir(parents=True)
+    for hid, e in hips.items():
+        (ENTIDADES / "hipotesis" / f"{e.slug}.md").write_text(
+            nota_entidad(e, "hipotesis", fuentes_de_h.get(hid, [])), encoding="utf8")
+    for cid, e in reglas.items():
+        (ENTIDADES / "reglas" / f"{e.slug}.md").write_text(
+            nota_entidad(e, "regla", fuentes_de_c.get(cid, [])), encoding="utf8")
+    for slug, fs in autores.items():
+        (ENTIDADES / "autores" / f"{slug}.md").write_text(
+            nota_autor(fs[0].autor, fs), encoding="utf8")
+    print(f"✓ {len(hips)} hipótesis + {len(reglas)} reglas + {len(autores)} autores "
+          f"en {ENTIDADES.relative_to(RESEARCH.parent)}/")
 
     # --- frontmatter en nodes y outputs -------------------------------------- #
     tocados = 0
@@ -409,14 +641,14 @@ def main() -> int:
           f"({len(nodes)} nodes + {len(outputs)} outputs revisados)")
 
     # --- tableros ------------------------------------------------------------ #
-    escribir_tableros(fuentes, nodes, outputs)
+    escribir_tableros(fuentes, nodes, outputs, hips, reglas, fuentes_de_h, autores)
     escribir_config()
     print(f"✓ tableros y configuración de vault en {GRAFO.relative_to(RESEARCH.parent)}/")
     print(f"\nAbrir en Obsidian: «Open folder as vault» → {RESEARCH}")
     return 0
 
 
-def escribir_tableros(fuentes, nodes, outputs) -> None:
+def escribir_tableros(fuentes, nodes, outputs, hips, reglas, fuentes_de_h, autores) -> None:
     GRAFO.mkdir(exist_ok=True)
     dist = Counter(f.grado for f in fuentes)
     total = len(fuentes)
@@ -466,10 +698,65 @@ Cuánta evidencia sostiene cada node/output y de qué calidad.
 
 ## Puertas de entrada
 
+- [[Tablero de hipótesis]] — las {len(hips)} hipótesis vivas y su estado
 - [[Auditoría de rigor]] — qué se apoya en evidencia débil
 - [[Fuentes huérfanas]] — registradas y nunca usadas
 - [[Cadenas de eco de cita]] — cifras que no deben usarse como afirmación fuerza
-- [[alma|alma — mapa de nodes]]
+- [[alma]] — mapa de nodes
+
+## Entidades del grafo
+
+| Tipo | Cuántas | Carpeta |
+|---|---|---|
+| Fuentes | {total} | `_grafo/fuentes/` |
+| Hipótesis | {len(hips)} | `_grafo/entidades/hipotesis/` |
+| Reglas de criterio | {len(reglas)} | `_grafo/entidades/reglas/` |
+| Autores con 2+ fuentes | {len(autores)} | `_grafo/entidades/autores/` |
+| Nodes | {len(nodes)} | `_nodes/` |
+| Outputs | {len(outputs)} | `_outputs/` |
+""", encoding="utf8")
+
+    # 1b · Tablero de hipótesis ---------------------------------------------- #
+    orden_estado = {"refutada": 0, "degradada": 1, "contestada": 2,
+                    "parcial": 3, "abierta": 4, "respaldada": 5, "": 6}
+    hs = sorted(hips.values(), key=lambda e: (orden_estado.get(e.estado, 9), int(e.id[1:])))
+    conteo = Counter(e.estado or "sin estado" for e in hips.values())
+    (GRAFO / "Tablero de hipótesis.md").write_text(f"""---
+tipo: tablero
+titulo: "Tablero de hipótesis"
+tags:
+  - tablero
+---
+
+# Tablero de hipótesis
+
+Las **{len(hips)} hipótesis vivas** del proyecto, con la evidencia que cada una tiene
+enganchada. Abre cualquiera para ver sus fuentes ordenadas por rigurosidad, o su grafo local
+para ver con qué más se cruza.
+
+{tabla(["Estado", "Hipótesis"],
+       [[e, str(n)] for e, n in sorted(conteo.items(), key=lambda x: orden_estado.get(x[0], 9))])}
+
+## Con Dataview
+
+```dataview
+TABLE WITHOUT ID file.link AS "Hipótesis", estado AS "Estado",
+  fuentes AS "Fuentes", titulo AS "Enunciado"
+FROM #hipotesis
+SORT estado ASC
+```
+
+## Instantánea estática
+
+{tabla(["Hipótesis", "Estado", "Fuentes", "Enunciado"],
+       [[f"[[{e.slug}]]", e.estado or "—", str(len(fuentes_de_h.get(e.id, []))),
+         e.titulo[:96]] for e in hs])}
+
+## Reglas de criterio
+
+{tabla(["Regla", "Título"],
+       [[f"[[{e.slug}]]", e.titulo[:110]]
+        for e in sorted(reglas.values(), key=lambda x: int(x.id[1:]))])}
 """, encoding="utf8")
 
     # 2 · Auditoría de rigor -------------------------------------------------- #
@@ -642,6 +929,9 @@ def escribir_config() -> None:
         "colorGroups": [
             {"query": "tag:#node", "color": {"a": 1, "rgb": 15844367}},
             {"query": "tag:#output", "color": {"a": 1, "rgb": 5431378}},
+            {"query": "tag:#hipotesis", "color": {"a": 1, "rgb": 11621375}},
+            {"query": "tag:#regla", "color": {"a": 1, "rgb": 16764082}},
+            {"query": "tag:#autor", "color": {"a": 1, "rgb": 9868950}},
             {"query": "tag:#rigor/A", "color": {"a": 1, "rgb": 4437377}},
             {"query": "tag:#rigor/B", "color": {"a": 1, "rgb": 3576296}},
             {"query": "tag:#rigor/C", "color": {"a": 1, "rgb": 15453984}},

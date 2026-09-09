@@ -47,7 +47,7 @@ por afirmación cuando corresponda.
 | `updates/` | Reportes quincenales de fortalecimiento del modelo — fuera del alcance de este hub, ver `CLAUDE.md` |
 | `lobo/opinion_experto.md` | Opinión de negocio acumulada del skill `lobo`, refinada diariamente contra el ledger de `cronista` — subsistema con su propia lógica de confianza/tope, fuera del alcance de este hub, ver `CLAUDE.md` |
 | `yopersona/perfil.md` | Perfil profesional del usuario (CV) — fuente de verdad para cartas de presentación y asesoría de carrera, fuera del alcance de este hub, ver `CLAUDE.md` |
-| `_grafo/` | **Proyección del códice a un vault de Obsidian** — 100% generado por `_grafo/generar_grafo.py` a partir de `fuentes/codice.md`. Una nota por fuente + tableros de auditoría. No editar a mano: se regenera. Ver `_grafo/README.md` |
+| `_grafo/` | **Proyección del conocimiento a un vault de Obsidian** — 100% generado por `_grafo/generar_grafo.py`. Una nota por fuente, por hipótesis, por regla de criterio y por autor recurrente, más tableros de auditoría. No editar a mano: se regenera. Ver `_grafo/README.md` |
 | `.obsidian/` | Configuración del vault (grafo coloreado por rigurosidad). `research/` es la raíz del vault |
 
 `_nodes/` es plano: nada de subcarpetas por tema.
@@ -55,13 +55,32 @@ por afirmación cuando corresponda.
 ### El vault de Obsidian
 
 `research/` completo es un vault: se abre con *Open folder as vault*. Los nodes y outputs
-reales entran con sus propios wikilinks; `_grafo/fuentes/` agrega las 542 fuentes del ledger
-como notas navegables, enlazadas al node u output que fundamentan.
+reales entran con sus propios wikilinks; `_grafo/` agrega las entidades del proyecto como
+notas navegables.
 
-Las aristas fuente→node se derivan de dos vías que se unen: la columna *«Usado en»* del
-códice y las menciones `F-n` en el cuerpo de cada documento. **Los nodes no se reescriben**
-para convertir sus `F-n` en wikilinks — la arista la aporta la nota de la fuente, así que los
-nodes se siguen leyendo igual fuera de Obsidian.
+**Elementos del grafo**
+
+| Tipo | Cuántos | Qué es |
+|---|---|---|
+| `#fuente` | 542 | Una por fila del códice (`F-n`) |
+| `#hipotesis` | 31 | Las hipótesis vivas (`H-n`), con su estado |
+| `#regla` | 22 | Las reglas de criterio destiladas (`C-n`) |
+| `#autor` | 24 | Autores/organismos con 2+ fuentes — los de una sola no se crean, serían hojas sueltas |
+| `#node` | 18 | Los nodes reales de `_nodes/` |
+| `#output` | 10 | Los outputs en markdown de `_outputs/` |
+
+**Relaciones**
+
+| Arista | De dónde sale |
+|---|---|
+| fuente → `fundamenta` → node/output | Columna *«Usado en»* del códice **unida a** las menciones `F-n` en el cuerpo del documento |
+| fuente → `publicado_por` → autor | Campo *Autor* de la fila |
+| fuente → `hipotesis` / `reglas` → H-n / C-n | Menciones `H-n` y `C-n` en la columna *«Usado en»* |
+| fuente → `relacionada con` → fuente | Menciones `F-n` dentro de la propia fila (complementa, choca con, deriva de) |
+| hipótesis/regla → `vive_en` → node | Node donde está definida |
+
+**Los nodes no se reescriben** para convertir sus `F-n` en wikilinks — la arista la aporta la
+nota de la fuente, así que los nodes se siguen leyendo igual fuera de Obsidian.
 
 Regenerar tras cualquier cambio en el códice:
 
