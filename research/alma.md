@@ -80,6 +80,7 @@ por afirmación cuando corresponda.
 |---|---|---|---|
 | `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
 | `_outputs/guia-triaje-200-usuarios-sinteticos-2026-08-05.md` — simulación de la "Guía de preguntas" (estudio de triaje digital + kit) sobre 200 usuarios sintéticos `lapuerta` (18-65, NSE A/B/C). ⚠️ Parcial: 8 de 16 preguntas quedaron sin responder porque el prototipo no fue alcanzable desde el entorno | `modelo-salud-ia-farmacias-peru`, `modelo-personas-sinteticas`, `futuro-asesores-seguros-venta-digital` | 2026-08-05 | al día |
+| `_outputs/aida-copiloto-presentacion-mauricio-2026-09-09.html` — deck HTML 16:9 on-brand (skill `rimac-slides`, 26 slides) del diagnóstico de AIDA en la venta de Vida, para la decisión de Mauricio (VP de Canales): POC externo vs. evolucionar AIDA. Carátula y transiciones con fondo de un solo color, listas para foto a sangre | — (contenido provisto: diagnóstico AIDA ya validado — encuesta 19 asesores, auditoría 46 preguntas, 4 entrevistas, logs 3.606 consultas, dashboard 242.785 consultas) | 2026-09-09 | al día |
 
 > **Estado**: `al día` o `requiere refresh`.
 
