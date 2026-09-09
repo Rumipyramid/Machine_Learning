@@ -116,3 +116,6 @@
 | F-57 | 🟢 A | 2026-09-08 | Intuición 97 — un umbral operativo propuesto por un paper (silent trial 60-90 días) es la mejor práctica documentada, no un estándar de industria adoptado; verificar adopción años después, no solo la propuesta |
 | F-142 | 🟢 A | 2026-09-08 | Intuición 98 — la paradoja de la privacidad no es caja negra: dos experimentos de campo reales (FinTech real, comunidad alumni real) aíslan una palanca estructural (orden + fragmentación) que mueve la divulgación sin tocar la actitud |
 | F-242 | 🟢 A | 2026-09-08 | Intuición 99 — un I² alto (~78%) junto a una correlación "moderada" es el hallazgo: dice que el contexto pesa más que el promedio, no que el efecto sea establemente mediano |
+| F-224 | 🟢 A | 2026-09-09 | Intuición 100 — la prueba social rinde más bajo incertidumbre y compite con la norma injuntiva, no se suma a ella automáticamente |
+| F-228 | 🟢 A | 2026-09-09 | Intuición 101 — la pericia no inmuniza contra la sobrecarga cognitiva intrínseca; la palanca es reducir interactividad de elementos irrelevantes, no exigir más experiencia |
+| F-240 | 🟢 A | 2026-09-09 | Intuición 102 — "sin mecanismo causal establecido" no es lo mismo que "sin mecanismos propuestos"; verificar cuál de los dos déficits aplica antes de descartar o adoptar un método con marca |

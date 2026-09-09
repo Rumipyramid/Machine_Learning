@@ -3799,6 +3799,84 @@ deliberada solo donde la tarea es difícil).
   "fricción solo en tareas difíciles" (ya vigente en tesis 22) es la lectura correcta de un
   meta-análisis altamente heterogéneo, no una simplificación de él.
 
+### 100. La prueba social rinde más bajo incertidumbre, y compite con la norma injuntiva — no se suma a ella automáticamente
+F-224 ya sostiene tesis 18 desde el 2026-07-24 (origen académico de "prueba social" para el Bloque 4
+del Playbook del Asesor), citada solo por su hallazgo agregado. Leído a fondo (doi.org bloqueado por
+el proxy, reconstruido vía búsqueda dirigida), el matiz de mecanismo que el resumen de una línea no
+capturaba: Cialdini & Goldstein distinguen **norma injuntiva** (qué conducta está aprobada/desaprobada)
+de **norma descriptiva** (qué hace típicamente la gente) como dos procesos distintos, no dos nombres
+del mismo fenómeno — y el efecto de la norma descriptiva es específicamente más fuerte **bajo
+incertidumbre**: la gente recurre a observar la conducta de otros para calibrar la precisión de su
+propia percepción/decisión cuando no tiene certeza propia, no de forma pareja en cualquier momento de
+la venta. **Heurística de decisión:** un testimonio o dato de "prueba social" en venta consultiva rinde
+más si se despliega en el momento de mayor duda real del comprador (justo antes de decidir, no como
+adorno permanente de folleto), y hay que auditar qué norma transmite en concreto — un testimonio que
+revela sin querer "mucha gente también dudaba/postergó la decisión" es una norma **descriptiva** de
+indecisión que puede pesar más que la norma **injuntiva** que el asesor quiere transmitir ("esta es la
+elección correcta"); ambas conviven en la misma pieza y pueden trabajar en direcciones opuestas.
+- **Fuente:** F-224 (🟢A — Cialdini, R. B. & Goldstein, N. J. 2004, revisión peer-reviewed, Annual
+  Review of Psychology)
+- **Leído a fondo:** 2026-09-09 (doi.org bloqueado por el proxy del entorno; reconstruido vía búsqueda
+  dirigida que localizó la distinción injuntiva/descriptiva y la condición de incertidumbre, no citadas
+  en el resumen del ledger)
+- **Conexión razonada, no forzada:** matiza tesis 18 (Bloque 4, principio de prueba social) con la
+  condición bajo la que el mecanismo realmente opera y con el riesgo de que la misma pieza active dos
+  normas en conflicto; no cambia su confianza (sigue Alta).
+
+### 101. La pericia no inmuniza contra la sobrecarga cognitiva intrínseca — cambia la estrategia, no el techo; la palanca es reducir interactividad de elementos irrelevantes, no exigir más experiencia
+F-228 ya sostiene tesis 18 desde el 2026-07-24 (base académica del diagnóstico Dx3: el asesor tiene
+alta carga cognitiva/emocional con poca capacidad de gestionar con calidad), citada solo por su
+hallazgo agregado. Leído a fondo (onlinelibrary.wiley.com bloqueado por el proxy, reconstruido vía
+búsqueda dirigida), el mecanismo exacto que el resumen no capturaba: la carga intrínseca depende de la
+**interactividad de elementos** — cuántos elementos de una tarea deben sostenerse y procesarse a la vez
+porque interactúan entre sí; si los elementos se pueden aprender/procesar uno por uno sin que
+interactúen, la carga intrínseca es baja aunque la tarea tenga muchas partes. Novatos y expertos
+resuelven distinto (el novato usa análisis medios-fines, que exige sostener meta y subobjetivos a la
+vez en memoria de trabajo; el experto reconoce patrones ya esquematizados y evita ese costo), pero el
+propio hallazgo de Sweller es que el desempeño se degrada **incluso en expertos** cuando la
+interactividad de elementos es suficientemente alta — la pericia reduce la carga efectiva vía
+automatización de esquemas, no elimina el techo que impone la interacción simultánea genuina. Trabajo
+posterior del mismo autor (2010) separa la carga evitable/de diseño (extraña) de la que es inherente a
+construir la habilidad (germana). **Heurística de decisión:** frente a un diagnóstico de "alta carga
+cognitiva" en un rol (el asesor de venta/reclamo), la palanca correcta no es solo "más experiencia o
+capacitación" — es auditar cuántos elementos deben sostenerse a la vez en el momento crítico (pantallas,
+campos, objeciones simultáneas) y separar cuáles son interactividad evitable de diseño de proceso
+(reducible sin costo) de cuáles son inherentes a evaluar bien la necesidad real del cliente (no
+reducibles sin perder calidad de juicio).
+- **Fuente:** F-228 (🟢A — Sweller, J. 1988, paper fundacional peer-reviewed, Cognitive Science)
+- **Leído a fondo:** 2026-09-09 (onlinelibrary.wiley.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que localizó el mecanismo de interactividad de elementos y la
+  distinción germana/extraña, no citados en el resumen del ledger)
+- **Conexión razonada, no forzada:** matiza tesis 18 (diagnóstico Dx3) con el mecanismo exacto y la
+  palanca de rediseño de tarea en vez de solo capacitación; no cambia su confianza (sigue Alta).
+
+### 102. "Sin mecanismo causal establecido" no es lo mismo que "sin mecanismos propuestos" — verificar cuál de los dos déficits aplica antes de descartar o adoptar un método con marca
+F-240 ya sostiene tesis 21 desde el 2026-07-27 (ROI del design thinking debe argumentarse por
+mecanismo, no por multiplicador), citada por el resumen del ledger: "los mecanismos causales del
+design thinking siguen sin establecerse; predomina evidencia conceptual y anecdótica". Leído a fondo
+(onlinelibrary.wiley.com bloqueado por el proxy, reconstruido vía búsqueda dirigida), el resumen de una
+línea resulta impreciso en un punto que importa: Mayer & Schwemmle (2025) cribaron 1.035 publicaciones
+e incluyeron 69, y de ahí **sí** extrajeron cuatro mecanismos teóricos nombrados —integración,
+reencuadre, habilitación e involucramiento colaborativo— operando en cuatro niveles de impacto
+(organización, equipo, individuo, sociedad). El déficit real que documentan no es "no hay mecanismos
+propuestos": son dos carencias más específicas, (1) baja integración teórica profunda de cada mecanismo
+y (2) escasa evaluación de impacto específica por contexto. **Heurística de decisión:** frente a
+cualquier método con nombre propio (design thinking, agile, lean, etc.) que una revisión describa como
+"sin mecanismo causal establecido", verificar cuál de los dos déficits aplica antes de descartar o
+adoptar el método — "no hay mecanismos propuestos todavía" exige más teoría antes de invertir, mientras
+que "hay mecanismos nombrados pero sin evaluación por contexto" exige pilotar el mecanismo específico
+que la organización necesita (p. ej. reencuadre para redefinir un problema de cliente vs.
+involucramiento colaborativo para alinear equipos internos) en el contexto propio antes de generalizar,
+no descartar el método entero por la etiqueta agregada de "evidencia conceptual/anecdótica".
+- **Fuente:** F-240 (🟢A — Mayer, S. & Schwemmle, M. 2025, revisión sistemática peer-reviewed,
+  Creativity and Innovation Management)
+- **Leído a fondo:** 2026-09-09 (onlinelibrary.wiley.com bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida que localizó los cuatro mecanismos nombrados y las dos carencias
+  específicas de la revisión, más precisas que el resumen de una línea del ledger)
+- **Conexión razonada, no forzada:** matiza tesis 21 con una distinción de diagnóstico (mecanismos
+  nombrados pero poco integrados/testeados por contexto, no ausencia total de mecanismo) que cambia
+  qué remedio pedir antes de invertir en el método; no cambia su confianza (sigue Alta).
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3982,34 +4060,30 @@ deliberada solo donde la tarea es difícil).
   ser el hogar, no el individuo frente al asesor (refuerza desde otro ángulo el matiz ya hecho a
   C.6 de tesis 18). Ninguna tesis de negocio cambió de confianza por esta corrida — es un
   mecanismo nuevo y paralelo, no una revisión de evidencia sobre las tesis existentes.
-- **2026-08-01 a 2026-08-07** — *(Resumida el 2026-08-21 al cumplir la ventana de ~30 días; el
-  detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con
-  su propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Siete corridas. **2026-08-01/02** — sin cambios sustanciales, ledger fijo en
-  F-398. **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del
-  node `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4%
-  vs. ~139%, la rentabilidad depende de disciplina de suscripción, no de la capa tecnológica);
-  corrigió tesis 21 (retiró la cifra del "impuesto de verificación", una cadena de eco de cita sin
-  fuente primaria — el dato real que sobrevive invierte el supuesto: más experiencia produce
-  *menos* escrutinio del código de IA, no más); matizó tesis 7 (F-442 resultó ser el mismo estudio
-  que ya sostenía la tesis vía F-23, no un respaldo independiente adicional). **2026-08-05** — sin
-  cambios sustanciales en el tope (F-468); revisión profunda de `cronista` el mismo día (F-43, F-44,
-  F-50, F-53, F-54) matizó tesis 10 sin cambiar su confianza y corrigió dos autorías mal atribuidas
-  en `codice.md` (F-53, F-54). **2026-08-06** — sin cambios sustanciales en el tope; a pedido del
-  usuario, diseñé el mecanismo de **"🧠 Intuición acumulada"** (lectura diaria de 3 fuentes al azar,
-  orden por rigurosidad agotado A→E, registro en `research/lobo/fuentes_leidas_lobo.md`) y ejecuté
-  su primera corrida (entradas 1-3: F-82, F-107, F-236). **2026-08-07** — sin cambios sustanciales
-  en el tope; segunda corrida de intuición (entradas 4-6: F-6, F-53, F-230). Ningún nivel de
-  confianza de tesis bajó en toda la ventana; todo ajuste fue matiz, corrección de cita o suma de
-  tesis nueva sobre evidencia que la refuerza.
-- **2026-08-08 a 2026-08-09** — *(Resumida el 2026-09-07 al cumplir la ventana de ~30 días; el
-  detalle de cada intuición vive en 🧠 Intuición acumulada con su propia fuente/fecha.)* Dos
-  corridas, sin cambios sustanciales en el tope del ledger (F-468) ni desalineación de las 25
-  tesis. Tercera y cuarta corrida de intuición: (entradas 7-9) F-220 anclaje, F-148 SASSI, F-66
-  micro-costing en salud; (entradas 10-12) F-56 silent trial/distribution shift, F-55 diseño
-  híbrido tipo 2 (probar efectividad e implementación en paralelo), F-122 estándar IPDAS de
-  ayudas de decisión (exige declarar conflicto de interés de quien la construye). Ninguna tesis
-  cambió de confianza en la ventana.
+- **2026-08-01 a 2026-08-09** — *(Resumida el 2026-08-21 y el 2026-09-07, y fusionada el 2026-09-09 al
+  salir por completo de la ventana de ~30 días; el detalle de cada tesis creada o matizada en esta
+  ventana vive en 🎯 Tesis vigentes, cada una con su propia fecha de "Actualizado"; el detalle de cada
+  Intuición vive en esa sección con su propia fuente/fecha.)* Nueve corridas. **2026-08-01/02** — sin
+  cambios sustanciales, ledger fijo en F-398. **2026-08-03** — el ledger creció de F-398 a F-468 (70
+  fuentes nuevas, dos iteraciones del node `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs.
+  Lemonade — combined ratio 91,4% vs. ~139%, la rentabilidad depende de disciplina de suscripción, no
+  de la capa tecnológica); corrigió tesis 21 (retiró la cifra del "impuesto de verificación", una
+  cadena de eco de cita sin fuente primaria — el dato real que sobrevive invierte el supuesto: más
+  experiencia produce *menos* escrutinio del código de IA, no más); matizó tesis 7 (F-442 resultó ser
+  el mismo estudio que ya sostenía la tesis vía F-23, no un respaldo independiente adicional).
+  **2026-08-05** — sin cambios sustanciales en el tope (F-468); revisión profunda de `cronista` el
+  mismo día (F-43, F-44, F-50, F-53, F-54) matizó tesis 10 sin cambiar su confianza y corrigió dos
+  autorías mal atribuidas en `codice.md` (F-53, F-54). **2026-08-06** — sin cambios sustanciales en el
+  tope; a pedido del usuario, diseñé el mecanismo de **"🧠 Intuición acumulada"** (lectura diaria de 3
+  fuentes al azar, orden por rigurosidad agotado A→E, registro en
+  `research/lobo/fuentes_leidas_lobo.md`) y ejecuté su primera corrida (entradas 1-3: F-82, F-107,
+  F-236). **2026-08-07** — sin cambios sustanciales en el tope; segunda corrida de intuición (entradas
+  4-6: F-6, F-53, F-230). **2026-08-08/09** — sin cambios sustanciales en el tope ni desalineación de
+  las 25 tesis; tercera y cuarta corrida de intuición (entradas 7-9: F-220 anclaje, F-148 SASSI, F-66
+  micro-costing en salud; entradas 10-12: F-56 silent trial/distribution shift, F-55 diseño híbrido
+  tipo 2, F-122 estándar IPDAS de ayudas de decisión). Ningún nivel de confianza de tesis bajó en toda
+  la ventana; todo ajuste fue matiz, corrección de cita o suma de tesis nueva sobre evidencia que la
+  refuerza.
 - **2026-08-10** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
   d739018→5b9beab, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
   verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (468 filas exactas) — sigue tope exacto
@@ -5151,3 +5225,40 @@ deliberada solo donde la tarea es difícil).
   el bloque más antiguo de la ventana (2026-08-09, ya consolidado con 2026-08-08) sigue siendo
   información viva sobre el arranque de la rutina de intuición, la reviso mañana para podar si sigue
   sobrando.
+- **2026-09-09** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md` por
+  conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto
+  que las últimas 9 corridas, **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoséptimo día seguido
+  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
+  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso —
+  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es
+  rutina de `cronista`, no de este proceso diario; ya lleva veintiocho días sin correr). **Cumplí la
+  revisión de poda señalada ayer:** el bloque "2026-08-08 a 2026-08-09" salió por completo de la
+  ventana de ~30 días (cutoff ≈2026-08-10) — lo fusioné con el bloque "2026-08-01 a 2026-08-07" en un
+  solo resumen "2026-08-01 a 2026-08-09" (nueve corridas); no se pierde ningún dato porque el detalle
+  de cada tesis e intuición de esos días ya vive en sus propias secciones con fecha. Sí corrió la
+  rutina diaria de intuición (trigesimocuarta desde el 2026-08-06): recalculé por script el universo
+  🟢A del ledger (134 filas cuyo marcador de rigurosidad empieza en 🟢, cifra confirmada tres corridas
+  seguidas) contra `fuentes_leidas_lobo.md` (99 ya leídas) — 35 pendientes — y elegí 3 al azar sin
+  reemplazo (`shuf` sobre `/dev/urandom`): F-224 (Cialdini & Goldstein 2004, prueba social, ya sostiene
+  tesis 18 solo por su hallazgo agregado), F-228 (Sweller 1988, carga cognitiva, ya sostiene tesis 18
+  solo por su hallazgo agregado) y F-240 (Mayer & Schwemmle 2025, mecanismos del design thinking, ya
+  sostiene tesis 21 solo por el resumen "sigue sin mecanismo establecido"). Las tres bloqueadas por el
+  proxy en su URL directa (doi.org y onlinelibrary.wiley.com ×2); reconstruidas vía búsqueda dirigida
+  que confirmó detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya citado. Sumé
+  las entradas 100, 101 y 102 de Intuición acumulada: (100) la prueba social (norma descriptiva) rinde
+  más específicamente bajo incertidumbre y compite con la norma injuntiva en vez de sumarse a ella —
+  matiza tesis 18 con la condición de activación real del mecanismo y el riesgo de que un testimonio
+  active sin querer la norma equivocada; (101) la pericia no inmuniza contra la sobrecarga cognitiva
+  intrínseca (interactividad de elementos) — cambia la estrategia de resolución, no el techo; la
+  palanca de diseño es reducir interactividad de elementos extraña a la tarea, no solo capacitar más al
+  asesor, matiza el diagnóstico Dx3 de tesis 18; (102) el resumen del ledger sobre F-240 ("sin mecanismo
+  causal establecido") resultó impreciso: la revisión sí nombra cuatro mecanismos (integración,
+  reencuadre, habilitación, involucramiento colaborativo) tras cribar 1.035 estudios — el déficit real
+  es falta de integración teórica profunda y de evaluación por contexto, no ausencia de mecanismo, lo
+  que cambia qué remedio pedir antes de invertir en el método, matiza tesis 21. Ninguna tesis de
+  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque
+  las tres entradas de hoy matizan directamente tesis 18 (dos veces) y 21. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
+  historial (2026-08-10 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
