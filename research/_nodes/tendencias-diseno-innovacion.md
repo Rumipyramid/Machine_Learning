@@ -1797,3 +1797,7 @@ reportarse como pico del año en curso.**
   cifras atribuidas venía de emisores interesados y que **tres de ellas se atribuían a una
   institución que nunca las publicó**. Antes de que una cifra externa entre al esquema, verificar
   que **el emisor citado la haya publicado**, no solo que la cifra suene plausible.
+- [[tratamiento-tlp-borderline|Tratamiento del TLP: qué se sabe sobre "curarlo"]] — caso testigo
+  externo de dos patrones de este node: **volumen de literatura confundido con superioridad
+  comparativa** (DBT es el más estudiado, no el demostradamente superior) y **sesgo de afiliación**
+  como defecto estructural de un campo entero (el creador de la intervención es quien la evalúa).

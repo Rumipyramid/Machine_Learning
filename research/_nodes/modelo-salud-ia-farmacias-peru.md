@@ -602,3 +602,6 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   documento.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para la
   comunicación del flujo con usuarios finales.
+- [[tratamiento-tlp-borderline|Tratamiento del TLP: qué se sabe sobre "curarlo"]] — el otro node de
+  salud del hub. Comparte el diagnóstico de fondo: el cuello de botella no es de conocimiento sino
+  de **acceso y traducción** de la evidencia a la práctica clínica.

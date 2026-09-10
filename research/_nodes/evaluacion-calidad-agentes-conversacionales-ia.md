@@ -250,3 +250,6 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   la explicabilidad genérica **no** calibra la confianza (produce sobre-confianza; lo que la calibra
   es la verificabilidad de la salida), y toda métrica de productividad autorreportada debe
   descontarse frente a la medición objetiva.
+- [[tratamiento-tlp-borderline|Tratamiento del TLP: qué se sabe sobre "curarlo"]] — su §3.2
+  documenta un terapéutico digital autoguiado con reembolso público (priovi, d=0.24 estable a 12
+  meses): caso de uso concreto para los instrumentos de evaluación de este node.
