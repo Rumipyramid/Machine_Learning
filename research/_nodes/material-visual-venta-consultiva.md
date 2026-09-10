@@ -356,6 +356,10 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
   node concluye que el asesor humano persiste especialmente en productos complejos; este
   node es la implicación práctica directa — invertir en mejores herramientas visuales
   para esa conversación, no en eliminarla.
+- [[confianza-asesor-compra-seguro-vida|Confianza en el asesor como factor de compra de
+  seguro de vida]] — el material visual que este node estudia funciona, en parte, porque
+  refuerza la dimensión de "competencia" (ability) del asesor que lo usa — ese node detalla
+  el resto de las dimensiones de confianza que el material visual no cubre por sí solo.
 - [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual]] — el
   Bloque 4 del Playbook del Asesor de RIMAC (manejo de objeciones, C.1-C.9) es exactamente el
   punto donde este node señala la brecha de citas más grande del playbook — nombra 9 sesgos

@@ -896,6 +896,10 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   `/trinidad` (2026-07-24) que completó la sección "Preguntas frecuentes de producto" del
   Playbook del Asesor (Bloque 4, Momento 4) con un glosario de cliente; hallazgo clave: la
   barrera real no es vocabulario técnico sino precio percibido y desconfianza de fondo.
+- [[confianza-asesor-compra-seguro-vida|Confianza en el asesor como factor de compra de
+  seguro de vida]] — la Formación del asesor y el manejo de objeciones (Bloque 4) son, en
+  términos de ese node, inversión directa en las dimensiones de competencia y comunicación
+  que alimentan la confianza del cliente en el asesor.
 - [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in]] — evidencia externa
   que sostiene el diseño de las 5 estrategias de §3 y la resolución del Bloque 4 en §6; ese node
   documenta que ninguna transición real evita contracción de volumen, directamente relevante al

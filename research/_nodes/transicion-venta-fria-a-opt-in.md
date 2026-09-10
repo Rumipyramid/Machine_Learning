@@ -320,3 +320,7 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   contacto de su §2 y la resolución del Bloque 4 del playbook (§5) siguen el mismo patrón que
   este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
+- [[confianza-asesor-compra-seguro-vida|Confianza en el asesor como factor de compra de
+  seguro de vida]] — la reducción de desconfianza al pedir datos (§6 de este node) es un caso
+  aplicado de la dimensión "benevolencia" (¿este asesor cuida mis intereses o solo quiere mis
+  datos?) que ese node describe como parte de las dimensiones de confianza en el asesor.

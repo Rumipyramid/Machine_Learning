@@ -383,3 +383,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[confianza-asesor-compra-seguro-vida|Confianza en el asesor como factor de compra de
+  seguro de vida]] — este node usa la confianza (§1.2, Hanaysha et al. F-191) como una de las
+  variables que explican por qué el intermediario humano persiste en productos complejos; ese
+  node abre esa caja negra y detalla de qué dimensiones específicas está hecha esa confianza.
