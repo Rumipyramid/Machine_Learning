@@ -3927,196 +3927,37 @@ no descartar el método entero por la etiqueta agregada de "evidencia conceptual
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  02ad91d→d8aa4a2) y leí `codice.md` completo: sigue tope en F-398, idéntico al que ya procesó la
-  corrida de ayer (2026-07-31) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
-  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h. Repasé
-  las 24 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé
-  ninguna conexión nueva entre tesis solo por completar el paso — la racha de "sin cambios" de
-  2026-07-30/31 ya agotó las conexiones razonables disponibles entre las tesis más recientes
-  (21-24). Próximo salto de tesis/confianza sigue condicionado a que alguna skill de investigación
-  registre fuentes nuevas en el ledger, o a que la próxima revisión profunda (cada ~3 días, la
-  última corrió el 2026-07-29 sobre F-23/F-36/F-40/F-41/F-42) encuentre un matiz de mecanismo al
-  leer a fondo una fuente ya citada solo por su resumen. Bitácora con 21 días de historial
-  (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
-- **2026-08-02** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  02ad91d→c46dbd3) y leí `codice.md` completo: sigue tope en F-398, idéntico al que ya procesó la
-  corrida de ayer (2026-08-01) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
-  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h. Repasé
-  las 24 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé
-  ninguna conexión nueva entre tesis solo por completar el paso — la racha de "sin cambios" desde
-  el 2026-07-30 ya agotó las conexiones razonables disponibles entre las tesis más recientes
-  (21-24). La última revisión profunda (rutina de `cronista`, cada ~3 días) sigue siendo la del
-  2026-07-29 (F-23/F-36/F-40/F-41/F-42) — cuatro días sin corrida nueva, pero esa rutina es de
-  `cronista`, no de este proceso diario, así que no la disparo aquí. Próximo salto de
-  tesis/confianza sigue condicionado a que alguna skill de investigación registre fuentes nuevas en
-  el ledger. Bitácora con 22 días de historial (2026-07-12 a hoy), dentro de la ventana de ~30
-  días — sin podar todavía.
-- **2026-08-03** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  02ad91d→725dbf0) y leí `codice.md` completo: el ledger creció de F-398 a F-468 desde la última
-  corrida (2026-08-02) — **cambio sustancial**, 70 fuentes nuevas en dos iteraciones del mismo node
-  (`_nodes/tendencias-diseno-innovacion.md`): iteración 3 (F-399 a F-429, el node se audita a sí
-  mismo — desmonta su propio hallazgo de julio) e iteración 4 (F-430 a F-468, primera apertura del
-  node al dominio de **innovación**, no solo diseño). Filtré con el mismo criterio de negocio que ya
-  usé el 07-27/07-29/07-30 para este node: integré solo lo transferible a Rimac/seguros. Sumé tesis
-  25 (Root vs. Lemonade — mismo modelo insurtech digital, combined ratio de 91.4% vs. ~139%; la
-  rentabilidad depende de disciplina de suscripción, no de la capa tecnológica, con la causa exacta
-  todavía como hipótesis abierta del propio node, H29). Corregí tesis 21: la cifra del "impuesto de
-  verificación" que sumé el 07-30 (4.3 min/senior vs. 1.2 min/junior) resultó ser, en la propia
-  auditoría del node, una sexta cadena de eco de cita sin fuente primaria — la retiré, y el dato real
-  que sí sobrevive invierte lo que yo había asumido: más experiencia acumulada produce **menos**
-  escrutinio del código generado por IA, no más. Añadí un matiz de proceso a tesis 7: F-442 (el RCT
-  de UBI que el barrido de innovación presentó como "el hallazgo más accionable") es el **mismo**
-  estudio que ya sostiene esa tesis (F-23, mismo NCT06101251) — no lo sumé como respaldo adicional
-  para no inflar el conteo de fuentes independientes, solo tomé el dato nuevo real que aportaba
-  (conflicto de interés del financiador sin verificar). Sumé una oportunidad (exigir combined/loss
-  ratio auditado antes de leer cualquier apuesta de innovación como éxito — incluye que los labs
-  peruanos activos hoy, BCP CIX y Pacífico "La Cápsula", no tienen ningún dato público de retorno) y
-  dos riesgos (cifras de fracaso de producto sin fuente primaria localizable, F-444; y la cifra ya
-  retirada del impuesto de verificación). Ninguna tesis 1-20, 22-24 requirió ajuste de confianza —
-  el ledger nuevo las toca solo por conexión razonada, no por evidencia directa nueva sobre
-  seguros/salud/Perú, salvo tesis 25 (nueva, con evidencia directa de filing) y las correcciones ya
-  descritas en tesis 7 y 21. Bitácora con 23 días de historial (2026-07-12 a hoy), dentro de la
-  ventana de ~30 días — sin podar todavía.
-- **2026-08-05** — Corrida diaria de refinamiento (no corrió el 2026-08-04: sin commit de este
-  proceso ese día). Confirmé `main` actualizado (fast-forward 02ad91d→c00c843, que ya trajo consigo
-  el propio commit del 2026-08-03 de esta opinión) y leí `codice.md` completo: sigue tope en F-468,
-  idéntico al que ya procesó la corrida del 2026-08-03 — **sin cambios sustanciales** en evidencia,
-  cero fuentes nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde
-  entonces. Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger
-  vigente, y no forcé ninguna conexión nueva entre tesis solo por completar el paso — la corrida del
-  08-03 ya agotó las conexiones razonables disponibles (tesis 25, correcciones a tesis 7 y 21). La
-  última revisión profunda (rutina de `cronista`, cada ~3 días) sigue siendo la del 2026-07-29
-  (F-23/F-36/F-40/F-41/F-42) — seis días sin corrida nueva, pero esa rutina no es de este proceso
-  diario, así que no la disparo aquí. Próximo salto de tesis/confianza sigue condicionado a que
-  alguna skill de investigación registre fuentes nuevas en el ledger. Bitácora con 24 días de
-  historial (2026-07-12 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
-- **2026-08-05 (revisión profunda, rutina `cronista` cada ~3 días)** — Leí a fondo las 5 fuentes
-  🟢A más antiguas sin lectura profunda previa: F-43, F-44, F-50, F-53, F-54 (todas del rango de
-  `modelo-salud-ia-farmacias-peru.md`, registradas originalmente el 2026-07-06). No sumé tesis
-  nueva — las cinco ya sostenían tesis 10, y la lectura completa la afina sin cambiar su
-  dirección ni su confianza (sigue Alta). Tres matices de mecanismo: (1) F-50 — el defecto
-  metodológico exacto de Babylon fue que su prueba de precisión usó **médicos simulando
-  pacientes en viñetas**, no usuarios legos reales; cualquier piloto propio debe validar con
-  usuarios reales o repite el mismo error, no solo su titular; (2) F-43 — el 45.1% de precisión
-  del symptom-checker japonés no es plano: cae a 24.2% en enfermedades poco comunes y 14.5% en
-  presentaciones atípicas, sin curva de aprendizaje en 3 años de producción — falla justo donde
-  el riesgo clínico es mayor; (3) F-44 — el argumento de por qué "precisión diagnóstica" es la
-  métrica equivocada no es genérico: la relación médico-paciente aporta percepción/observación
-  que un chatbot resta de la consulta aunque su precisión sea comparable a la humana, lo que
-  refuerza que la capa de atención humana del modelo cumple una función de outcome, no solo de
-  respaldo ante error de clasificación. Encontré además dos **correcciones de cita/autoría** que
-  el resumen de una línea del ledger no dejaba ver: F-53 tenía la URL de un paper (Holtrop et
-  al. 2021, "Clarifications and resources") mal atribuida al fundacional de Glasgow/Vogt/Boles
-  1999 — mismo framework RE-AIM, Glasgow es coautor de ambos, pero es un artículo distinto que
-  documenta 13 malentendidos de aplicación y la evolución del framework hacia PRISM (contexto
-  organizacional que RE-AIM 1999 no cubre); F-54 estaba atribuido a "Kirchner, J.E. et al. 2023"
-  cuando el autor real es Bryan R. Garner (2022) y el aporte propio del paper es la extensión
-  DIeSEL (agrega sostenibilidad económica y nivel de escalamiento al diseño desde el inicio, no
-  como paso posterior a los tipos 1/2/3 de Curran). Corregí ambas en `codice.md` (mismo criterio
-  que la corrección de autoría de F-3 el 2026-07-21) y enriquecí `modelo-salud-ia-farmacias-
-  peru.md` (§2 con los tres matices de mecanismo, §3 con los 13 malentendidos de RE-AIM/PRISM, §4/E2
-  con DIeSEL). Actualicé `alma.md` con la fecha y nota de esta revisión. Bitácora de revisión
-  profunda con 15 fuentes acumuladas (F-3 a F-54, todas 🟢A) desde el 2026-07-21.
-- **2026-08-06** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  02ad91d→4f03b8d, que trajo consigo commits ajenos a esta opinión: la corrección de nombres de
-  variables en `_nodes/modelo-salud-ia-farmacias-peru.md`, la renombrada de
-  `_nodes/tendencias-diseno.md` a `tendencias-diseno-innovacion.md`, y una simulación nueva de la
-  Guía de triaje sobre 200 usuarios sintéticos con `lapuerta`) y leí `codice.md` completo: sigue
-  tope exacto en F-468 (468 entradas, F-1 a F-468 sin huecos), idéntico al que ya procesó la
-  corrida del 2026-08-05 — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
-  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` en las últimas 24h.
-  Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no
-  forcé ninguna conexión nueva entre tesis solo por completar el paso — la revisión profunda de
-  ayer (F-43/F-44/F-50/F-53/F-54) ya agotó los matices disponibles sobre tesis 10, y ningún commit
-  de hoy en `main` toca evidencia externa citable con `F-n` (son artefactos de proyecto — dataset
-  simulado, corrección de nombres, renombrado de node — no investigación nueva de `cronista`). La
-  próxima revisión profunda (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no vence
-  hoy. Próximo salto de tesis/confianza sigue condicionado a que alguna skill de investigación
-  registre fuentes nuevas en el ledger. Bitácora con 25 días de historial (2026-07-12 a hoy),
-  dentro de la ventana de ~30 días — sin podar todavía.
-- **2026-08-06 (ampliación — nueva rutina de intuición, a pedido del usuario)** — El usuario pidió
-  que, cada día, el Lobo lea a profundidad 3 fuentes aleatorias del ledger (empezando por las de
-  mayor rigurosidad) y transforme esa lectura en conocimiento propio que mejore su intuición y
-  capacidad de decisión — no solo en refinamiento de tesis. Diseñé el mecanismo: sección nueva
-  **"🧠 Intuición acumulada"** en esta opinión (heurísticas de juicio, no tesis de negocio
-  puntuales), registro propio `research/lobo/fuentes_leidas_lobo.md` (evita releer, independiente
-  de `revision_profunda.md` de `cronista` — selección aleatoria diaria por nivel de rigor agotado
-  en orden A→B→C→D→E, vs. la de `cronista`: 5 fuentes, ID más antiguo, cada ~3 días), y documenté
-  la regla en `CLAUDE.md` §"Proceso diario: opinión de negocio de 'El Lobo'" para que persista
-  entre corridas (cada corrida es una sesión nueva sin memoria de esta conversación — la regla
-  tiene que vivir en el repo, no en el prompt externo que dispara la tarea, que no puedo editar
-  desde aquí). Ejecuté la primera corrida como semilla del mecanismo: seleccioné al azar 3 fuentes
-  🟢A del ledger que ni el Lobo ni la revisión profunda de `cronista` habían leído a fondo (de 137
-  fuentes A totales, 117 seguían sin lectura profunda) — F-82 (Rothschild & Stiglitz 1976,
-  selección adversa en seguros), F-107 (Direct Primary Care, JABFM 2018) y F-236 (Davis 1976,
-  decisión de compra en el hogar). Las URLs directas dieron 403 (mismo bloqueo de proxy ya
-  documentado para fuentes académicas); reconstruí el contenido sustancial de las tres vía
-  búsqueda dirigida. Sumé las tres primeras entradas de Intuición acumulada: (1) correr el test de
-  selección adversa antes de lanzar cualquier producto nuevo — no solo preguntar si hay demanda;
-  (2) separar "bueno para quien participa" de "bueno para el sistema/población" al evaluar
-  cualquier modelo de atención con mecanismo de acceso restrictivo (conecta con tesis 9, sin
-  cambiarle la confianza); (3) en seguros de alto involucramiento la unidad real de decisión suele
-  ser el hogar, no el individuo frente al asesor (refuerza desde otro ángulo el matiz ya hecho a
-  C.6 de tesis 18). Ninguna tesis de negocio cambió de confianza por esta corrida — es un
-  mecanismo nuevo y paralelo, no una revisión de evidencia sobre las tesis existentes.
-- **2026-08-01 a 2026-08-09** — *(Resumida el 2026-08-21 y el 2026-09-07, y fusionada el 2026-09-09 al
-  salir por completo de la ventana de ~30 días; el detalle de cada tesis creada o matizada en esta
-  ventana vive en 🎯 Tesis vigentes, cada una con su propia fecha de "Actualizado"; el detalle de cada
-  Intuición vive en esa sección con su propia fuente/fecha.)* Nueve corridas. **2026-08-01/02** — sin
-  cambios sustanciales, ledger fijo en F-398. **2026-08-03** — el ledger creció de F-398 a F-468 (70
-  fuentes nuevas, dos iteraciones del node `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs.
-  Lemonade — combined ratio 91,4% vs. ~139%, la rentabilidad depende de disciplina de suscripción, no
-  de la capa tecnológica); corrigió tesis 21 (retiró la cifra del "impuesto de verificación", una
-  cadena de eco de cita sin fuente primaria — el dato real que sobrevive invierte el supuesto: más
-  experiencia produce *menos* escrutinio del código de IA, no más); matizó tesis 7 (F-442 resultó ser
-  el mismo estudio que ya sostenía la tesis vía F-23, no un respaldo independiente adicional).
-  **2026-08-05** — sin cambios sustanciales en el tope (F-468); revisión profunda de `cronista` el
-  mismo día (F-43, F-44, F-50, F-53, F-54) matizó tesis 10 sin cambiar su confianza y corrigió dos
-  autorías mal atribuidas en `codice.md` (F-53, F-54). **2026-08-06** — sin cambios sustanciales en el
-  tope; a pedido del usuario, diseñé el mecanismo de **"🧠 Intuición acumulada"** (lectura diaria de 3
-  fuentes al azar, orden por rigurosidad agotado A→E, registro en
-  `research/lobo/fuentes_leidas_lobo.md`) y ejecuté su primera corrida (entradas 1-3: F-82, F-107,
-  F-236). **2026-08-07** — sin cambios sustanciales en el tope; segunda corrida de intuición (entradas
-  4-6: F-6, F-53, F-230). **2026-08-08/09** — sin cambios sustanciales en el tope ni desalineación de
-  las 25 tesis; tercera y cuarta corrida de intuición (entradas 7-9: F-220 anclaje, F-148 SASSI, F-66
-  micro-costing en salud; entradas 10-12: F-56 silent trial/distribution shift, F-55 diseño híbrido
-  tipo 2, F-122 estándar IPDAS de ayudas de decisión). Ningún nivel de confianza de tesis bajó en toda
-  la ventana; todo ajuste fue matiz, corrección de cita o suma de tesis nueva sobre evidencia que la
-  refuerza.
-- **2026-08-10** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  d739018→5b9beab, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
-  verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (468 filas exactas) — sigue tope exacto
-  en F-468, idéntico al que ya procesó la corrida de ayer (2026-08-09) — **sin cambios sustanciales**
-  en evidencia, cero fuentes nuevas registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/
-  `/marketer` en las últimas 24h. Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada
-  con el ledger vigente, y no forcé ninguna conexión de tesis nueva solo por completar el paso. La
-  última revisión profunda (rutina de `cronista`, cada ~3 días, última el 2026-08-05) no vence hoy —
-  cinco días sin corrida nueva, pero esa rutina no es de este proceso diario. **Cumplí el umbral de
-  poda de bitácora** señalado ayer: consolidé las tres entradas de la primera semana (2026-07-12,
-  2026-07-12 segunda, 2026-07-13 a 2026-07-19) en una sola entrada resumida — el detalle de cada tesis
-  que crearon ya vive en 🎯 Tesis vigentes con su propia fecha, así que no se pierde información, solo
-  se deja de repetir en la bitácora. Sí corrió la rutina diaria de intuición (sexta corrida desde que
-  se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 12 ya tenían lectura profunda del Lobo
-  (F-6, F-53, F-55, F-56, F-66, F-82, F-107, F-122, F-148, F-220, F-230, F-236) — seleccioné al azar 3
-  de las 129 restantes: F-41 (Rees & Peralta 2024, telemedicina en Perú — ya citada en tesis 9), F-303
-  (Figma Inc., 8-K Q1 2026 — filing SEC ya citado en el node de tendencias) y F-434 (Junni et al. 2013,
-  meta-análisis de ambidestreza organizacional — ya citada en el node de tendencias). Sumé las entradas
-  13, 14 y 15 de Intuición acumulada: (13) la ventana regulatoria/de infraestructura para un canal de
-  salud digital se cierra si no se invierte a la par en la competencia del recurso humano que lo opera
-  (matiza tesis 9 con el hallazgo específico de Perú: brecha de competencias del recurso humano en
-  telesalud, no solo de política/infraestructura); (14) un salto en NDR u otra métrica de
-  retención/crecimiento no es evidencia de moat durable hasta abrir qué línea de producto específica lo
-  generó — el caso Figma Q1 2026 muestra un NDR récord (139%) impulsado por monetización de créditos de
-  IA, una fuente más volátil que expansión ancha de asientos (conecta con tesis 21/25 sin cambiarles
-  confianza); (15) un efecto "estrella" de la literatura de management (ambidestreza, design thinking,
-  etc.) suele depender de si el estudio midió desempeño con autoreporte del gerente o con un indicador
-  objetivo — el meta-análisis de ambidestreza (r≈0.26, más alto con medición percibida) da un segundo
-  caso independiente del mismo patrón que ya conectaba tesis 21 vía F-239/design thinking. Ninguna
-  tesis de negocio cambió de confianza por esta corrida — es el mecanismo paralelo de intuición, no una
-  revisión de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md`
-  con las tres fuentes leídas hoy. Bitácora con 26 días de historial (2026-07-20 a hoy) tras la poda de
-  la primera semana — dentro de la ventana de ~30 días.
+- **2026-08-01 a 2026-08-10** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+  de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
+  entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
+  detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
+  *(Resumida el 2026-08-21, el 2026-09-07 y el 2026-09-09; ampliada y
+  fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
+  días; el detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una
+  con su propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
+  fuente/fecha.)* Diez corridas. **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
+  **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
+  `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
+  ~139%, la rentabilidad depende de disciplina de suscripción, no de la capa tecnológica); corrigió
+  tesis 21 (retiró la cifra del "impuesto de verificación", una cadena de eco de cita sin fuente
+  primaria — el dato real que sobrevive invierte el supuesto: más experiencia produce *menos*
+  escrutinio del código de IA, no más); matizó tesis 7 (F-442 resultó ser el mismo estudio que ya
+  sostenía la tesis vía F-23, no un respaldo independiente adicional). **2026-08-05** — sin cambios
+  sustanciales en el tope (F-468); revisión profunda de `cronista` el mismo día (F-43, F-44, F-50,
+  F-53, F-54) matizó tesis 10 sin cambiar su confianza y corrigió dos autorías mal atribuidas en
+  `codice.md` (F-53, F-54). **2026-08-06** — sin cambios sustanciales en el tope; a pedido del
+  usuario, diseñé el mecanismo de **"🧠 Intuición acumulada"** (lectura diaria de 3 fuentes al azar,
+  orden por rigurosidad agotado A→E, registro en `research/lobo/fuentes_leidas_lobo.md`) y ejecuté su
+  primera corrida (entradas 1-3: F-82, F-107, F-236). **2026-08-07** — segunda corrida de intuición
+  (entradas 4-6: F-6, F-53, F-230). **2026-08-08/09** — tercera y cuarta corrida de intuición
+  (entradas 7-9: F-220 anclaje, F-148 SASSI, F-66 micro-costing en salud; entradas 10-12: F-56 silent
+  trial/distribution shift, F-55 diseño híbrido tipo 2, F-122 estándar IPDAS de ayudas de decisión).
+  **2026-08-10** — poda de bitácora (consolidó la primera semana en una entrada resumida); quinta
+  corrida de intuición (entradas 13-15: F-41 brecha de competencias en telesalud peruana, F-303 NDR de
+  Figma impulsado por créditos de IA no por asientos, F-434 ambidestreza organizacional y sesgo de
+  medición autoreportada) — matizó tesis 9 y conectó sin cambiar confianza con tesis 21/25. Ningún
+  nivel de confianza de tesis bajó en toda la ventana; todo ajuste fue matiz, corrección de cita o
+  suma de tesis nueva sobre evidencia que la refuerza.
 - **2026-08-12** — Corrida diaria de refinamiento (no corrió el 2026-08-11: sin commit de este proceso
   ese día, mismo patrón de brecha ya visto el 2026-08-04). Confirmé `main` actualizado (fast-forward a
   `3ead00f`, que trajo consigo el commit de la corrida del 2026-08-10) y leí `codice.md` completo:
@@ -5262,3 +5103,43 @@ no descartar el método entero por la etiqueta agregada de "evidencia conceptual
   las tres entradas de hoy matizan directamente tesis 18 (dos veces) y 21. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
   historial (2026-08-10 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
+- **2026-09-10** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, working tree ya limpio, HEAD en `856aaf0` sin fast-forward pendiente) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 10 corridas, **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoctavo día seguido sin
+  cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna quedó
+  desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso — la
+  revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina
+  de `cronista`, no de este proceso diario; ya lleva veintinueve días sin correr). **Cumplí la poda
+  señalada el 2026-09-09:** el bloque "2026-08-10" salió por completo de la ventana de ~30 días
+  (cutoff ≈2026-08-11) — lo fusioné con el bloque "2026-08-01 a 2026-08-09" en un resumen ampliado
+  "2026-08-01 a 2026-08-10"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
+  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición no pudo
+  completarse hoy por una caída genuina de las herramientas de acceso a web de esta sesión, no por el
+  bloqueo habitual de proxy por dominio:** recalculé por script el universo 🟢A del ledger (134 filas)
+  contra `fuentes_leidas_lobo.md` (102 ya leídas) — 32 pendientes — y elegí 3 al azar sin reemplazo
+  (Python `random.sample`, sin semilla fija): F-54 (Garner 2022, extensión DIeSEL del diseño híbrido
+  de Curran), F-60 (Goddard et al. 2012, sesgo de automatización) y F-247 (Findlater & McGrenere,
+  menús estáticos/adaptativos/adaptables). Intenté leerlas a fondo por las tres vías que otras corridas
+  usaron para sortear el bloqueo de proxy por dominio (URL directa del ledger, mirrors alternativos —
+  Frontiers, Semantic Scholar, Google, incluso Wikipedia como prueba de diagnóstico — y `WebSearch`
+  directo): las tres URLs directas dieron `EGRESS_BLOCKED` (ncbi.nlm.nih.gov, pmc.ncbi.nlm.nih.gov,
+  dl.acm.org), los cuatro mirrors alternativos dieron el mismo `EGRESS_BLOCKED` sin excepción, y
+  `WebSearch` reportó la herramienta como no disponible en cinco intentos con queries distintas —
+  patrón consistente con una caída de acceso a red de la sesión, no con el bloqueo selectivo por
+  dominio que las corridas anteriores rodeaban con éxito. Ante esto, **decidí no inventar hallazgos
+  de lectura profunda desde memoria no verificada** (violaría la regla de "no inventes fuentes ni
+  datos" aplicada por analogía a la intuición): dejo F-54, F-60 y F-247 sin marcar como leídos en
+  `research/lobo/fuentes_leidas_lobo.md`, no sumé ninguna entrada nueva a "🧠 Intuición acumulada" hoy,
+  y la próxima corrida hará un sorteo nuevo (no necesariamente estos mismos tres) una vez el acceso a
+  red esté disponible. Ninguna tesis de negocio cambió de confianza — sin cambios sustanciales en la
+  evidencia ni en el mecanismo de intuición (pospuesto, no fallido silenciosamente). **Higiene de
+  archivo adicional:** al hacer la poda de hoy encontré que las corridas del 2026-08-21/09-07/09-09
+  habían marcado como "resumidas" las entradas diarias del 2026-08-01 al 2026-08-06 sin borrar el
+  texto original — quedaban duplicadas (el detalle completo Y su resumen, ambos en la bitácora).
+  Borré el detalle original de esas seis entradas (2026-08-01, 08-02, 08-03, 08-05×2, 08-06×2), dejo
+  constancia del hallazgo en la cabecera del bloque resumen para que quede trazable, y no se perdió
+  ningún dato porque el resumen ya cubría lo sustantivo y el detalle fino sigue en 🎯 Tesis vigentes /
+  🧠 Intuición acumulada. Bitácora con 29 días de historial (2026-08-12 a hoy) tras esta limpieza —
+  dentro de la ventana de ~30 días.
