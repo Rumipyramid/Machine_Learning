@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-08-12.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-09-11.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -79,6 +79,7 @@ por afirmación cuando corresponda.
 | Output | Construido sobre (nodes) | Última actualización | Estado |
 |---|---|---|---|
 | `_outputs/back-to-basics-presentacion-milagros-2026-07-23.md` — afirmaciones fortalecidas + estructura de deck para presentar Back to Basics (FFVV Vida Individual) | `transicion-venta-fria-a-opt-in`, `behavioral-design-estado-disciplina`, `material-visual-venta-consultiva`, `futuro-asesores-seguros-venta-digital`, `seguros-comportamiento-mundo-peru` | 2026-07-23 | al día |
+| `_outputs/estrategia-canales-digitales-rimac-plan-2026-09-11.md` — plan de 6 semanas para construir la visión y estrategia de canales digitales de Rimac: integra Jobs to be Done (demanda) + modelo por componentes (oferta) + el Cono de Futuros reimaginado de Theunissen (F-469) como eje de tiempo; incluye el diseño de la reunión de canal del 17-sep y el criterio de priorización | `futuro-asesores-seguros-venta-digital`, `venta-vida-digital-hibrida-latam`, `seguros-comportamiento-mundo-peru`, `transicion-venta-fria-a-opt-in`, `material-visual-venta-consultiva`, `modelo-personas-sinteticas`, `behavioral-design-estado-disciplina` | 2026-09-11 | al día |
 | `_outputs/guia-triaje-200-usuarios-sinteticos-2026-08-05.md` — simulación de la "Guía de preguntas" (estudio de triaje digital + kit) sobre 200 usuarios sintéticos `lapuerta` (18-65, NSE A/B/C). ⚠️ Parcial: 8 de 16 preguntas quedaron sin responder porque el prototipo no fue alcanzable desde el entorno | `modelo-salud-ia-farmacias-peru`, `modelo-personas-sinteticas`, `futuro-asesores-seguros-venta-digital` | 2026-08-05 | al día |
 
 > **Estado**: `al día` o `requiere refresh`.

@@ -1,0 +1,685 @@
+<title>Seis Semanas a la Visión</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#F2F5F4; --surface:#FFFFFF; --surface-2:#E9EEED; --sunken:#DFE6E4;
+  --ink:#141B1D; --ink-2:#3C4A4C; --muted:#6A7B7C; --line:#CBD6D4; --line-soft:#DDE5E3;
+  --accent:#0B6E63; --accent-soft:#D3E6E2; --accent-ink:#07514A;
+  --warm:#A8472F; --warm-soft:#F2DED8;
+  --e1:#A8503C; --e2:#9A6A25; --e3:#5C7734; --e4:#2A6F7C; --e5:#3F5590;
+  --shadow:0 1px 2px rgba(20,27,29,.05), 0 8px 24px -12px rgba(20,27,29,.18);
+  --measure:70ch;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1417; --surface:#161E21; --surface-2:#1D272A; --sunken:#111A1C;
+    --ink:#E8EFED; --ink-2:#BCCAC8; --muted:#879899; --line:#2B383B; --line-soft:#222E31;
+    --accent:#5CC4B2; --accent-soft:#17403B; --accent-ink:#8FDCCD;
+    --warm:#E0836A; --warm-soft:#3A211A;
+    --e1:#D98873; --e2:#CFA055; --e3:#95B368; --e4:#5FADBB; --e5:#7F93CE;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1417; --surface:#161E21; --surface-2:#1D272A; --sunken:#111A1C;
+  --ink:#E8EFED; --ink-2:#BCCAC8; --muted:#879899; --line:#2B383B; --line-soft:#222E31;
+  --accent:#5CC4B2; --accent-soft:#17403B; --accent-ink:#8FDCCD;
+  --warm:#E0836A; --warm-soft:#3A211A;
+  --e1:#D98873; --e2:#CFA055; --e3:#95B368; --e4:#5FADBB; --e5:#7F93CE;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.62; margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{ max-width:1100px; margin:0 auto; padding-inline:20px; padding-block:0 96px; }
+h1,h2,h3,h4,.mono,.chip,th,.nav a{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.mono,.dateline,.kicker,.stage-key,.min,td.num{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+h2,h3,h4{text-wrap:balance}
+p,li{max-width:var(--measure)}
+a{color:var(--accent-ink); text-underline-offset:3px}
+
+/* ---------- masthead ---------- */
+header.top{ border-bottom:1px solid var(--line); padding-block:52px 30px; margin-bottom:8px }
+.kicker{font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin:0 0 18px}
+h1{font-size:clamp(34px,6.4vw,58px); line-height:1.02; letter-spacing:-.028em; font-weight:700; margin:0 0 18px; max-width:16ch}
+.standfirst{font-size:clamp(17px,2.4vw,20px); color:var(--ink-2); max-width:56ch; margin:0 0 26px}
+.metastrip{display:flex; flex-wrap:wrap; gap:10px 28px; font-size:12.5px; color:var(--muted); font-family:"IBM Plex Mono",monospace}
+.metastrip b{color:var(--ink); font-weight:500}
+
+/* ---------- nav ---------- */
+.nav{display:flex; flex-wrap:wrap; gap:6px; margin:26px 0 0}
+.nav a{font-size:12px; letter-spacing:.02em; text-decoration:none; color:var(--ink-2);
+  border:1px solid var(--line); border-radius:999px; padding:5px 12px; background:var(--surface)}
+.nav a:hover{border-color:var(--accent); color:var(--accent-ink)}
+
+/* ---------- sections ---------- */
+section{padding-block:44px; border-top:1px solid var(--line-soft)}
+section:first-of-type{border-top:none}
+.secnum{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--accent); letter-spacing:.1em; display:block; margin-bottom:8px}
+h2{font-size:clamp(24px,3.6vw,33px); letter-spacing:-.02em; line-height:1.12; font-weight:700; margin:0 0 16px; max-width:22ch}
+h3{font-size:19px; letter-spacing:-.01em; margin:34px 0 10px; font-weight:600}
+h4{font-size:14px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); margin:26px 0 8px; font-weight:600}
+p{margin:0 0 14px}
+ul,ol{padding-left:1.15em; margin:0 0 14px}
+li{margin-bottom:7px}
+strong{font-weight:600}
+em{font-style:italic}
+
+/* ---------- callouts ---------- */
+.note{border-left:3px solid var(--accent); background:var(--surface); padding:16px 18px; margin:20px 0; box-shadow:var(--shadow); border-radius:0 6px 6px 0}
+.note p:last-child{margin-bottom:0}
+.note.warn{border-left-color:var(--warm)}
+.note .lead{font-family:Archivo,sans-serif; font-size:13px; letter-spacing:.03em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:6px}
+
+/* ---------- tables ---------- */
+.scroll{overflow-x:auto; margin:20px 0; border:1px solid var(--line); border-radius:8px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:560px; font-size:14.5px}
+th{ text-align:left; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+  font-weight:600; padding:12px 14px; border-bottom:1px solid var(--line); white-space:nowrap; background:var(--surface-2)}
+td{padding:12px 14px; border-bottom:1px solid var(--line-soft); vertical-align:top; max-width:38ch}
+tr:last-child td{border-bottom:none}
+td.num{font-variant-numeric:tabular-nums; white-space:nowrap; font-size:13px}
+td strong{font-weight:600}
+
+/* ---------- three-frame grid ---------- */
+.frames{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin:24px 0}
+.frame{background:var(--surface); padding:20px 18px}
+.frame .axis{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:8px}
+.frame h4{margin:0 0 8px; font-size:16px; text-transform:none; letter-spacing:-.01em; color:var(--ink); font-family:Archivo,sans-serif}
+.frame p{font-size:14.5px; margin:0; color:var(--ink-2); max-width:none}
+
+/* ---------- stage rail ---------- */
+.stages{display:grid; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin:24px 0}
+.stage{background:var(--surface); padding:18px 18px 18px 20px; border-left:4px solid var(--sc); display:grid; grid-template-columns:minmax(0,1fr); gap:6px}
+.stage .hd{display:flex; flex-wrap:wrap; align-items:baseline; gap:10px}
+.stage .n{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--sc); letter-spacing:.1em; font-weight:600}
+.stage .nm{font-family:Archivo,sans-serif; font-weight:600; font-size:17px; letter-spacing:-.01em}
+.stage .act{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted)}
+.stage p{margin:0; font-size:14.5px; color:var(--ink-2); max-width:none}
+.stage .when{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink); background:var(--surface-2); border-radius:4px; padding:2px 8px; display:inline-block; justify-self:start; margin-top:2px}
+
+/* ---------- calendar spine ---------- */
+.spine{margin:24px 0; border-left:2px solid var(--line); padding-left:0}
+.wk{display:grid; grid-template-columns:104px 1fr; gap:0 20px; position:relative; padding:0 0 22px 20px; margin-left:-1px; border-left:2px solid transparent}
+.wk::before{content:""; position:absolute; left:-7px; top:7px; width:12px; height:12px; border-radius:50%; background:var(--paper); border:2px solid var(--accent)}
+.wk.key::before{background:var(--accent)}
+.wk .d{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink); font-weight:500; padding-top:3px}
+.wk .d small{display:block; color:var(--muted); font-weight:400; font-size:11px}
+.wk .b h4{margin:0 0 4px; font-family:Archivo,sans-serif; font-size:16px; text-transform:none; letter-spacing:-.01em; color:var(--ink)}
+.wk .b p{margin:0; font-size:14.5px; color:var(--ink-2); max-width:56ch}
+.wk .who{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted); margin-top:5px; display:block}
+
+/* ---------- cone figure ---------- */
+figure{margin:28px 0; padding:0}
+.fig-box{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:18px 12px 8px; overflow-x:auto}
+.fig-box svg{display:block; min-width:640px; width:100%; height:auto; max-width:100%}
+figcaption{font-size:13px; color:var(--muted); margin-top:10px; max-width:var(--measure); font-family:"IBM Plex Mono",monospace; line-height:1.5}
+.sv-ink{fill:var(--ink)} .sv-mut{fill:var(--muted)} .sv-acc{fill:var(--accent)}
+.sv-line{stroke:var(--line); fill:none} .sv-accs{stroke:var(--accent); fill:none}
+.sv-zone{fill:var(--accent-soft); stroke:var(--accent)}
+.sv-lbl{font-family:"IBM Plex Mono",monospace; font-size:11px}
+.sv-ttl{font-family:Archivo,sans-serif; font-size:12px; font-weight:600; letter-spacing:.06em}
+
+/* ---------- agenda ---------- */
+.agenda{display:grid; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden; margin:22px 0}
+.slot{background:var(--surface); display:grid; grid-template-columns:76px 1fr; gap:0 18px; padding:16px 18px}
+.slot .min{font-size:12px; color:var(--accent); font-weight:600; padding-top:2px; font-variant-numeric:tabular-nums}
+.slot h4{margin:0 0 5px; font-family:Archivo,sans-serif; font-size:15.5px; text-transform:none; letter-spacing:-.005em; color:var(--ink)}
+.slot p{margin:0 0 6px; font-size:14.5px; color:var(--ink-2); max-width:58ch}
+.slot .out{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted)}
+.slot .out b{color:var(--accent-ink); font-weight:500}
+
+/* ---------- score bars ---------- */
+.bar{display:inline-block; height:6px; border-radius:3px; background:var(--accent); vertical-align:middle; margin-right:8px}
+
+/* ---------- template card ---------- */
+pre.tpl{background:var(--sunken); border:1px solid var(--line); border-radius:8px; padding:18px; overflow-x:auto;
+  font-family:"IBM Plex Mono",monospace; font-size:12.5px; line-height:1.75; color:var(--ink-2); margin:20px 0}
+
+/* ---------- checklist ---------- */
+.todo{list-style:none; padding:0; margin:18px 0}
+.todo li{padding-left:30px; position:relative; font-size:15.5px; margin-bottom:11px; max-width:var(--measure)}
+.todo li::before{content:""; position:absolute; left:0; top:5px; width:15px; height:15px; border:1.5px solid var(--line); border-radius:3px; background:var(--surface)}
+
+footer{border-top:1px solid var(--line); margin-top:40px; padding-top:24px; font-size:13px; color:var(--muted); font-family:"IBM Plex Mono",monospace; line-height:1.7}
+footer a{color:var(--muted)}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .wk{grid-template-columns:1fr; gap:4px}
+  .slot{grid-template-columns:1fr; gap:4px}
+  .slot .min{font-size:11px}
+}
+@media (prefers-reduced-motion:no-preference){ a,.nav a{transition:color .15s,border-color .15s} }
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="kicker">Plan de trabajo · Canales Digitales · Rimac Seguros</p>
+  <h1>Seis semanas a la visión</h1>
+  <p class="standfirst">El CEO no pidió una estrategia digital. Pidió claridad. Este es el plan para dársela: Jobs to be Done en el eje de demanda, un modelo por componentes en el de oferta, y <em>The Cone Framework</em> como la secuencia que sostiene a los dos.</p>
+  <div class="metastrip">
+    <span>Preparado <b>vie 11-sep-2026</b></span>
+    <span>Diseño del plan <b>lun 14-sep</b></span>
+    <span>Etapa 1 con todo el canal <b>jue 17-sep</b></span>
+    <span>Al CEO <b>~22-oct</b></span>
+  </div>
+  <nav class="nav">
+    <a href="#s0">0 · El encargo</a>
+    <a href="#s1">1 · Arquitectura</a>
+    <a href="#s2">2 · Las seis semanas</a>
+    <a href="#s3">3 · Evidencia</a>
+    <a href="#s4">4 · Cone Framework</a>
+    <a href="#s5">5 · El jueves</a>
+    <a href="#s6">6 · El lunes</a>
+    <a href="#s7">7 · Riesgos</a>
+    <a href="#s8">8 · Para tu jefa</a>
+    <a href="#s9">9 · Pendientes</a>
+  </nav>
+</header>
+
+<section id="s0">
+  <span class="secnum">§ 0</span>
+  <h2>Lectura del encargo</h2>
+  <p>El CEO <strong>no pidió una estrategia digital. Pidió claridad.</strong> Son cosas distintas y confundirlas es la trampa del encargo.</p>
+  <p>El síntoma que describe —<em>«me traen soluciones sin una estrategia»</em>— no se cura con un documento de estrategia. Se cura con <strong>un criterio de decisión compartido y auditable</strong> que permita, frente a cualquier iniciativa que le llegue, decir <em>esto sí, esto no, esto todavía no, y esta es la razón</em>. Hoy ese criterio no existe o no es público; por eso toda solución que llega parece igualmente defendible y ninguna se puede rechazar sin política de por medio.</p>
+
+  <div class="scroll"><table>
+    <thead><tr><th>Lo que se pide</th><th>Lo que realmente resuelve el dolor</th><th>Horizonte</th></tr></thead>
+    <tbody>
+      <tr><td>«Visión de canales digitales»</td><td>Una <strong>declaración de futuro preferido</strong> — 1 frase + 3 principios — que haga que las decisiones de hoy sumen entre sí</td><td class="num">Largo plazo</td></tr>
+      <tr><td>«Estrategia»</td><td>Un <strong>criterio de priorización explícito</strong>, aplicable a cualquier solicitud entrante</td><td class="num">Permanente</td></tr>
+      <tr><td>«Corto plazo»</td><td>Una <strong>cartera secuenciada de activaciones</strong>: qué componente, en qué ramo, primero</td><td class="num">2 trimestres</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note">
+    <span class="lead">Prueba de éxito del plan</span>
+    <p>Al final, el CEO debería poder tomar <strong>tres solicitudes reales que ya estén en su bandeja</strong> y clasificarlas él mismo con el criterio, sin que tú estés en la sala. Si eso no se puede hacer, produjimos un marco bonito y no resolvimos nada.</p>
+  </div>
+  <div class="note warn">
+    <span class="lead">Nota</span>
+    <p>Escribí <em>Rimac</em> donde dictaste «Rimax» — asumo transcripción de voz. Si el nombre es deliberado, reemplázalo en todo el documento.</p>
+  </div>
+</section>
+
+<section id="s1">
+  <span class="secnum">§ 1</span>
+  <h2>Arquitectura: por qué los tres marcos no compiten</h2>
+  <p>Los dos service designers te dieron recomendaciones que <strong>parecen alternativas y no lo son</strong>: cada una cubre un eje distinto del problema. El Cone Framework aporta el tercero — y además aporta <strong>la secuencia</strong>.</p>
+
+  <div class="frames">
+    <div class="frame">
+      <span class="axis">Eje de demanda</span>
+      <h4>Jobs to be Done</h4>
+      <p>Unidad: <em>el job del cliente</em>, no el producto ni el ramo. Responde <strong>dónde atacar primero</strong> sin que la respuesta sea «el ramo cuyo gerente grita más». Un mismo job cruza Salud, Vehicular y Vida — y eso es lo que hace que una inversión rinda en varios ramos a la vez.</p>
+    </div>
+    <div class="frame">
+      <span class="axis">Eje de oferta</span>
+      <h4>Modelo por componentes</h4>
+      <p>Unidad: <em>la capacidad digital reutilizable</em>, con dueño, métrica y estado de madurez. Responde <strong>qué activar primero</strong>, con evidencia de volumetría — no una pantalla, no un proyecto.</p>
+    </div>
+    <div class="frame">
+      <span class="axis">Secuencia y profundidad</span>
+      <h4>The Cone Framework</h4>
+      <p>Responde <strong>en qué orden hacer las preguntas</strong> para que la visión no sea una extrapolación del presente disfrazada de ambición. El presente no se levanta: se construye. Y el proceso cierra en responsabilidad, no en posibilidad.</p>
+    </div>
+  </div>
+
+  <p>La bisagra entre los dos primeros es <strong>la matriz Job × Componente</strong>: cada celda es una apuesta candidata, la volumetría la pondera, y la Etapa 4 del marco la ordena por horizonte y le exige un dueño. Ese es el artefacto que el CEO se lleva.</p>
+
+  <div class="scroll"><table>
+    <thead><tr><th></th><th>JTBD</th><th>Componentes</th><th>Cone Framework</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Evita</strong></td><td>Priorizar por política interna</td><td>Comprar soluciones no reutilizables</td><td>Confundir visión con extrapolación</td></tr>
+      <tr><td><strong>Falla si va solo</strong></td><td>Insights sin capacidad de ejecutar</td><td>Roadmap de TI sin cliente</td><td>Inspiración sin cartera</td></tr>
+      <tr><td><strong>Pregunta que hace</strong></td><td>¿Qué progreso busca la persona?</td><td>¿Qué pieza lo habilita y ya existe?</td><td>¿Desde qué presente y qué memoria imaginamos, y quién responde?</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="s2">
+  <span class="secnum">§ 2</span>
+  <h2>Las seis semanas, sobre la cadencia de los jueves</h2>
+  <p>Cada jueves es una etapa del Cone Framework. Fechas ancladas a hoy, viernes 11-sep-2026.</p>
+
+  <div class="spine">
+    <div class="wk">
+      <div class="d">LUN 14-SEP<small>S0 · 2 h</small></div>
+      <div class="b"><h4>Diseño del plan</h4><p>Cerrar encuadre, unidades de análisis, pesos del criterio y el diseño del jueves.</p><span class="who">Tú + los 2 service designers</span></div>
+    </div>
+    <div class="wk key">
+      <div class="d">JUE 17-SEP<small>S1 · 90 min</small></div>
+      <div class="b"><h4>Etapa 1 — Descubrir el presente</h4><p>Verdad afectiva del canal, mitos en circulación, contrato de proceso y dueños de los datos.</p><span class="who">Todo el canal · la sala más representativa del proceso</span></div>
+    </div>
+    <div class="wk">
+      <div class="d">18-SEP → 1-OCT<small>en paralelo</small></div>
+      <div class="b"><h4>Volumetría · componentes · Jobs Studio</h4><p>Lo único con dependencia externa. Arranca el 18 o el 21, no después.</p><span class="who">Tú + SDs + datos / TI / contact center</span></div>
+    </div>
+    <div class="wk key">
+      <div class="d">JUE 24-SEP<small>S2 · 3 h</small></div>
+      <div class="b"><h4>Etapa 2 — Entender el pasado</h4><p>Línea de tiempo con los cinco pasados de lo digital en Rimac.</p><span class="who">Núcleo representativo</span></div>
+    </div>
+    <div class="wk key">
+      <div class="d">JUE 1-OCT<small>S3 · 3 h</small></div>
+      <div class="b"><h4>Etapa 3 — Entender el presente</h4><p>Triángulo de Futuros con la volumetría y los jobs sobre la mesa. Aquí choca la creencia contra el dato.</p><span class="who">Núcleo representativo</span></div>
+    </div>
+    <div class="wk key">
+      <div class="d">JUE 8-OCT<small>S4 · 4 h</small></div>
+      <div class="b"><h4>Etapa 4 — Imaginar futuros</h4><p>Escenarios CPSM, y recién entonces el Cono para clasificarlos. Aquí entran las soluciones que ya le llevaron al CEO.</p><span class="who">Núcleo representativo</span></div>
+    </div>
+    <div class="wk key">
+      <div class="d">JUE 15-OCT<small>S5 · 4 h</small></div>
+      <div class="b"><h4>Etapa 5 — Volver al presente</h4><p>Backcasting, cartera, dueños, renuncias y señales de falsación.</p><span class="who">Núcleo + decisores</span></div>
+    </div>
+    <div class="wk">
+      <div class="d">~22-OCT<small>cierre</small></div>
+      <div class="b"><h4>Presentación al CEO</h4><p>Visión en una frase + 3 principios, el criterio, y la cartera de corto plazo.</p></div>
+    </div>
+  </div>
+
+  <div class="note warn">
+    <span class="lead">Regla de oro</span>
+    <p>Ninguna de estas seis semanas produce soluciones. Producen el criterio para elegirlas. Si en la semana 2 alguien ya está diseñando pantallas, el plan falló y reprodujimos el problema que el CEO reportó.</p>
+  </div>
+
+  <h3>El trade-off que hay que declarar el lunes</h3>
+  <p>Theunissen reporta que las sesiones más potentes se hacen en <strong>dos días seguidos</strong>, y advierte que estirar la Etapa 5 rompe energía y cohesión. Aquí estiramos a cinco semanas.</p>
+  <ul>
+    <li><strong>A favor:</strong> las Etapas 1 y 2 son emocionalmente densas y él mismo recomienda no apurarlas; y necesitamos la volumetría entre la E1 y la E3.</li>
+    <li><strong>En contra:</strong> se pierde continuidad.</li>
+    <li><strong>Mitigación:</strong> mismo núcleo en las cuatro sesiones (no rotativo), 5 min de recapitulación al abrir cada una, y un muro compartido que sobreviva entre sesiones.</li>
+    <li><strong>Alternativa:</strong> fusionar <strong>E4 + E5 en un offsite de dos días</strong> — 8 y 9 de octubre. Es la versión más fiel al marco y la que yo recomendaría pelear.</li>
+  </ul>
+</section>
+
+<section id="s3">
+  <span class="secnum">§ 3</span>
+  <h2>Los instrumentos de evidencia</h2>
+  <p>Todo esto alimenta la Etapa 3. No se presenta antes: el marco pone lo analítico en tercer lugar a propósito.</p>
+
+  <h3>3.1 · Volumetría — qué pedir y a quién</h3>
+  <p>Arranca el viernes 18 o el lunes 21: es lo único con dependencia externa y lo que más tarda. Por cada ramo × componente, 12 meses, granularidad mensual.</p>
+  <ol>
+    <li><strong>Tráfico y entrada</strong> — sesiones únicas por origen: orgánico, paid, app, WhatsApp, link de asesor, IVR-a-digital.</li>
+    <li><strong>Embudo por paso</strong> — intentos iniciados vs. completados en cada componente. <em>El paso donde se cae la gente es la evidencia de fricción más barata que existe.</em></li>
+    <li><strong>Volumen digitalizable no digital</strong> — lo que hoy pasa por teléfono, agencia o asesor y técnicamente ya podría ser digital: cotización, emisión, pago, endoso, renovación, aviso de siniestro, constancias.</li>
+    <li><strong>Top 10 motivos de contacto al contact center</strong> por ramo, con volumen y AHT. <strong>El mejor proxy barato de «job no resuelto» que vas a conseguir</strong>, y llega en días.</li>
+    <li><strong>Contactabilidad</strong> — % de la base con dato digital válido <em>y consentimiento vigente</em>.</li>
+    <li><strong>Costo por transacción por canal</strong> — aunque sea estimado. Sin esto no hay caso de negocio.</li>
+    <li><strong>Estado de la capacidad</strong> — ¿el componente existe, existe a medias, o no existe?</li>
+  </ol>
+
+  <div class="note">
+    <span class="lead">Regla de decisión — acordarla antes de ver los datos</span>
+    <p>El primer componente que se activa no es el más grande ni el más nuevo: es donde coinciden <strong>volumen alto + fricción alta + capacidad ya instalada</strong>. Lo grande sin capacidad es un proyecto; lo nuevo sin volumen es una apuesta de horizonte largo.</p>
+  </div>
+  <p><strong>Plan B si la volumetría no existe o está federada por ramo</strong> — probable en una aseguradora con ramos autónomos: <em>(a)</em> top motivos de contacto, <em>(b)</em> estimación acordada por cada gerente de ramo en una sola sesión de 90 min, con rangos y nivel de confianza declarado, <em>(c)</em> la incertidumbre se marca en la matriz en vez de esconderse. Un número con intervalo declarado decide mejor que un número falso con dos decimales.</p>
+
+  <h3>3.2 · Jobs Studio — el eje de demanda</h3>
+  <p><em>Asumo que «job studion» = Jobs to be Done, posiblemente</em> job stories<em>, que es su artefacto de escritura. Si tu service designer se refería a otra cosa, corrígelo el lunes: el plan sigue funcionando, solo cambia el contenido de este bloque.</em></p>
+  <pre class="tpl">Cuando  [situación],
+quiero  [progreso buscado],
+para poder  [resultado esperado].</pre>
+  <p>Escritos a propósito de forma transversal a ramos:</p>
+  <ul>
+    <li><em>Cuando me pasa algo y no sé si estoy cubierto, quiero confirmarlo en menos de un minuto, para poder decidir qué hacer sin llamar a nadie.</em></li>
+    <li><em>Cuando me toca renovar, quiero entender qué cambió y por qué subió, para poder aceptar sin sentir que me están viendo la cara.</em></li>
+    <li><em>Cuando estoy comparando, quiero saber qué NO cubre, para poder confiar en lo que sí.</em></li>
+  </ul>
+  <p><strong>Por qué esto resuelve tu problema de ramos.</strong> Si priorizas <em>por ramo</em>, la decisión es política: gana quien tiene más peso. Si priorizas <em>por job</em>, aparecen dos clases de oportunidad y ambas son defendibles ante el CEO:</p>
+  <ul>
+    <li><strong>Jobs transversales</strong> — el mismo job en cuatro o más ramos. Justifican inversión en un componente compartido. Es el argumento más fuerte que vas a tener: <em>una inversión, cinco ramos</em>.</li>
+    <li><strong>Jobs críticos de un solo ramo</strong> — justifican una activación focalizada y rápida.</li>
+  </ul>
+  <p>Levantamiento en orden de costo creciente: <strong>(1)</strong> evidencia que ya existe —motivos de contacto, reclamos, búsquedas del sitio, logs de chat, y los nodes del repo sobre desconfianza y glosarios: <em>el vocabulario donde la gente se pierde</em> <strong>es</strong> <em>el job no resuelto</em>; <strong>(2)</strong> barrido sintético con <code>/lapuerta --seed 42</code> para estresar hipótesis por NSE, generación y acceso digital antes de gastar entrevistas — sirve para priorizar dónde mirar, no como evidencia de cliente; <strong>(3)</strong> entrevistas reales dirigidas, 5-6 por ramo prioritario, con guion de <em>switch interview</em>, solo donde la volumetría ya mostró masa.</p>
+  <p>Priorización dentro del eje: <strong>Oportunidad = Importancia + (Importancia − Satisfacción)</strong>. Alta importancia con baja satisfacción es el frente de ataque. Alta importancia con <em>alta</em> satisfacción es <strong>lo que no hay que tocar</strong> — y decirlo explícitamente también es estrategia.</p>
+
+  <h3>3.3 · Modelo por componentes — el eje de oferta</h3>
+  <p>Un componente es una capacidad digital <strong>reutilizable entre ramos</strong>, con dueño, métrica y estado de madurez. Cinco capas, porque la capa donde vive el componente cambia quién debe ser su dueño.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Capa</th><th>Componentes típicos</th><th>Pregunta que responde</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1 · Captación</td><td>Landings, comparador, paid y orgánico, referidos, link de asesor</td><td>¿Cómo llega?</td></tr>
+      <tr><td class="num">2 · Decisión</td><td>Cotizador, simulador, explicador de coberturas y exclusiones, asistente conversacional</td><td>¿Cómo entiende y elige?</td></tr>
+      <tr><td class="num">3 · Contratación</td><td>Onboarding, validación de identidad, suscripción y declaración de salud, pago, emisión</td><td>¿Cómo compra?</td></tr>
+      <tr><td class="num">4 · Servicio</td><td>Autoservicio de póliza, endosos, cobranza, renovación, constancias, red de prestadores</td><td>¿Cómo convive con el producto?</td></tr>
+      <tr><td class="num">5 · Momento de verdad</td><td>Aviso y seguimiento de siniestro, reembolsos, autorizaciones, asistencia</td><td>¿Qué pasa cuando lo necesita?</td></tr>
+      <tr><td class="num">Transversales</td><td>Identidad y cuenta única, datos y consentimiento, CRM y contactabilidad, notificaciones, medición</td><td>Habilitan todas las anteriores</td></tr>
+    </tbody>
+  </table></div>
+  <p>Estado por componente × ramo: <code>No existe</code> · <code>Existe parcial</code> · <code>Existe pero no se usa</code> · <code>Existe y rinde</code>.</p>
+  <div class="note">
+    <span class="lead">La categoría más rentable del inventario</span>
+    <p><strong>«Existe pero no se usa»</strong> es la que nadie levanta: volumen y capacidad ya pagada, con fricción de adopción. Es la activación más barata que vas a encontrar, y da las victorias tempranas que compran credibilidad para las apuestas largas.</p>
+  </div>
+  <p><strong>Peligro a vigilar:</strong> si «digital» se lee solo como las capas 1-3 —vender—, la estrategia nace coja. En seguros, el valor percibido y la renovación se juegan en las capas 4 y 5. Probablemente tengas que dar esa batalla el jueves.</p>
+
+  <h3>3.4 · La matriz y el criterio de priorización</h3>
+  <p>Filas: jobs priorizados. Columnas: componentes. Cada celda marcada es una apuesta candidata, coloreada por volumetría. Y sobre ella, el scoring que el CEO se lleva y usa solo:</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Factor</th><th>Peso</th><th>Qué mide</th><th>De dónde sale</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Volumen</strong></td><td class="num"><span class="bar" style="width:50px"></span>25 %</td><td>Masa de transacciones o contactos afectados</td><td>Volumetría</td></tr>
+      <tr><td><strong>Fricción</strong></td><td class="num"><span class="bar" style="width:50px"></span>25 %</td><td>Importancia − satisfacción del job</td><td>Jobs Studio</td></tr>
+      <tr><td><strong>Valor económico</strong></td><td class="num"><span class="bar" style="width:40px"></span>20 %</td><td>Prima o margen × frecuencia, o costo evitado</td><td>Finanzas + costo/transacción</td></tr>
+      <tr><td><strong>Capacidad instalada</strong></td><td class="num"><span class="bar" style="width:30px"></span>15 %</td><td>Qué tan cerca está de poder activarse</td><td>Inventario de componentes</td></tr>
+      <tr><td><strong>Coherencia con el futuro preferido</strong></td><td class="num"><span class="bar" style="width:30px"></span>15 %</td><td>¿Construye la visión o solo parcha?</td><td>Etapa 4</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">
+    <span class="lead">El quinto factor es el que convierte un backlog en una estrategia</span>
+    <p>Sin él, el scoring premia siempre lo urgente y barato, y en dos años tienes cincuenta parches coherentes con nada. Es la respuesta técnica exacta al dolor que reportó el CEO. Defiéndelo cuando alguien proponga quitarlo por «subjetivo»: es el único factor que mira más allá del trimestre.</p>
+  </div>
+  <p><strong>Regla de corte de la cartera de corto plazo:</strong> máximo tres apuestas activas. Más de tres y vuelves al problema original con otro nombre.</p>
+</section>
+
+<section id="s4">
+  <span class="secnum">§ 4</span>
+  <h2>The Cone Framework — la columna vertebral</h2>
+  <p>Romano Theunissen, <em>The Futures Cone Reimagined</em>, Journal of Futures Studies, 2026. Su tesis: el Cono de Futuros <strong>nunca fue un método</strong>. Es un andamio relacional y epistémico que solo cobra sentido después del trabajo duro. Usado como punto de partida, «aplana la complejidad en vez de revelarla» y se convierte en un gesto decorativo.</p>
+
+  <h3>Cinco piezas que te sirven directamente</h3>
+  <ol>
+    <li><strong>El Cono es el punto medio, no el de entrada.</strong> Se ubica entre <em>sensemaking</em> y estrategia, entre imaginación y decisión. → Justifica que el foresight ocurra en la semana 4, y que el jueves 17 <em>no</em> sea un taller de futuros.</li>
+    <li><strong>El presente no es un dato, es un resultado.</strong> La base del cono se co-construye mediante reflexión, diálogo y pluralidad. → Le da estatus metodológico a tu contrapropuesta: el jueves no «levanta información», <strong>construye el presente</strong>.</li>
+    <li><strong>El proceso cierra en responsabilidad, no en posibilidad.</strong> El ciclo se cierra no con predicción sino con rendición de cuentas. → Antídoto contra el taller de visión que produce entusiasmo y cero decisiones.</li>
+    <li><strong>Empieza por la emoción, no por las tendencias.</strong> El orden epistémico es deliberado: afecto → memoria → análisis → imaginación → compromiso. Lo analítico llega <em>tercero</em>. → Tu terreno: este marco está construido sobre tu disciplina, no sobre planeamiento estratégico.</li>
+    <li><strong>Pluralidad de pasados y presentes.</strong> El presente es una <em>zona</em>, no un punto; y hay cinco pasados. → En una aseguradora con ramos federados esto no es filosofía: es que Salud, Vehicular y B2B <strong>no viven el mismo presente</strong>, y una estrategia que asume uno solo fracasa en los otros cuatro.</li>
+  </ol>
+
+  <figure>
+    <div class="fig-box">
+      <svg viewBox="0 0 960 430" role="img" aria-label="El Cono actualizado: cono del pasado a la izquierda con cinco pasados, presente plural como zona central, y cono del futuro a la derecha con fronteras porosas y siete tipologías de escenario.">
+        <!-- past cone -->
+        <path class="sv-line" d="M 452 130 L 40 42 L 40 388 L 452 300 Z" stroke-width="1.25" stroke-dasharray="none"/>
+        <text class="sv-ttl sv-mut" x="40" y="26">CONO DEL PASADO</text>
+        <text class="sv-lbl sv-ink" x="60" y="98">Pasado dominante</text>
+        <text class="sv-lbl sv-ink" x="60" y="146">Pasado ignorado</text>
+        <text class="sv-lbl sv-ink" x="60" y="194">Pasado olvidado</text>
+        <text class="sv-lbl sv-ink" x="60" y="242">Pasado cultural</text>
+        <text class="sv-lbl sv-ink" x="60" y="290">Mitos y metáforas</text>
+        <line class="sv-line" x1="60" y1="108" x2="300" y2="108" stroke-width="1" stroke-dasharray="2 4"/>
+        <line class="sv-line" x1="60" y1="156" x2="300" y2="156" stroke-width="1" stroke-dasharray="2 4"/>
+        <line class="sv-line" x1="60" y1="204" x2="300" y2="204" stroke-width="1" stroke-dasharray="2 4"/>
+        <line class="sv-line" x1="60" y1="252" x2="300" y2="252" stroke-width="1" stroke-dasharray="2 4"/>
+        <line class="sv-line" x1="60" y1="300" x2="300" y2="300" stroke-width="1" stroke-dasharray="2 4"/>
+
+        <!-- plural present zone -->
+        <rect class="sv-zone" x="452" y="118" width="36" height="194" rx="18" stroke-width="1.5"/>
+        <text class="sv-ttl sv-acc" x="470" y="100" text-anchor="middle">PRESENTE</text>
+        <text class="sv-ttl sv-acc" x="470" y="334" text-anchor="middle">PLURAL</text>
+        <text class="sv-lbl sv-mut" x="470" y="352" text-anchor="middle">una zona, no un punto</text>
+
+        <!-- future cone, porous -->
+        <path class="sv-accs" d="M 488 130 L 892 30" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <path class="sv-accs" d="M 488 300 L 892 400" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <text class="sv-ttl sv-mut" x="892" y="18" text-anchor="end">CONO DEL FUTURO · frontera porosa</text>
+
+        <!-- nonlinear trajectories -->
+        <path class="sv-accs" d="M 490 215 C 570 180, 610 250, 690 205 S 800 150, 870 170" stroke-width="1.4" opacity=".75"/>
+        <path class="sv-accs" d="M 490 215 C 580 235, 620 300, 700 290 S 810 320, 868 300" stroke-width="1.4" opacity=".75"/>
+        <path class="sv-accs" d="M 490 215 C 600 210, 660 225, 760 218 S 830 230, 872 225" stroke-width="1.4" opacity=".55"/>
+
+        <!-- typology labels -->
+        <text class="sv-lbl sv-ink" x="640" y="66">Disparatado</text>
+        <text class="sv-lbl sv-ink" x="640" y="104">Posible</text>
+        <text class="sv-lbl sv-ink" x="640" y="142">Plausible</text>
+        <text class="sv-lbl sv-ink" x="640" y="180">Probable</text>
+        <text class="sv-lbl sv-ink" x="640" y="256">Proyectado</text>
+        <text class="sv-lbl sv-ink" x="640" y="330">Preferido</text>
+        <text class="sv-lbl sv-ink" x="640" y="368">Indeseable</text>
+        <text class="sv-lbl sv-mut" x="726" y="256">el plan y presupuesto ya aprobados</text>
+        <text class="sv-lbl sv-mut" x="712" y="330">la visión que declaramos</text>
+        <text class="sv-lbl sv-mut" x="718" y="368">lo que nadie dice en voz alta</text>
+      </svg>
+    </div>
+    <figcaption>El Cono actualizado de Theunissen (2026), adaptado. Suma al modelo clásico un cono del pasado con cinco pasados, un presente plural como zona, trayectorias no lineales, fronteras porosas —lo implausible puede volverse posible— y dos tipologías nuevas: <b>proyectado</b> e <b>indeseable</b>. Que ambas existan es lo que permite poner sobre la mesa, sin confrontación, tanto lo que la empresa ya prometió como lo que nadie quiere decir.</figcaption>
+  </figure>
+
+  <h3>Las cinco etapas, aplicadas a Canales Digitales</h3>
+  <div class="stages">
+    <div class="stage" style="--sc:var(--e1)">
+      <div class="hd"><span class="n">ETAPA 1</span><span class="nm">Descubrir el presente</span><span class="act">Recruit or Repel · afectivo/narrativo</span></div>
+      <p>La verdad emocional del canal digital: qué dirías para atraer a alguien y qué para espantarlo. Las respuestas se agrupan y discuten <strong>no por su exactitud sino por su verdad afectiva</strong> (Weick, <em>sensemaking</em>; Milojević, foresight emocional). Esto <em>es</em> tu toma de temperatura — con respaldo teórico y mucho mejor instrumento que una encuesta de madurez.</p>
+      <span class="when">JUE 17-SEP · todo el canal</span>
+    </div>
+    <div class="stage" style="--sc:var(--e2)">
+      <div class="hd"><span class="n">ETAPA 2</span><span class="nm">Entender el pasado</span><span class="act">Líneas de tiempo · histórico-crítico</span></div>
+      <p>Los cinco pasados de lo digital en Rimac. <strong>Dominante:</strong> la narrativa oficial de la transformación. <strong>Ignorado:</strong> las iniciativas que se mataron y todos saben cuáles fueron. <strong>Olvidado:</strong> lo que recuerda la FFVV o el contact center y nunca entró a un PPT. <strong>Cultural:</strong> cómo se hacen las cosas por ramo. <strong>Mítico:</strong> «el peruano no compra seguros online».</p>
+      <span class="when">JUE 24-SEP · núcleo</span>
+    </div>
+    <div class="stage" style="--sc:var(--e3)">
+      <div class="hd"><span class="n">ETAPA 3</span><span class="nm">Entender el presente</span><span class="act">Triángulo de Futuros · analítico</span></div>
+      <p>Empujes del presente (mercado, regulación, IA), pesos del pasado (legado, ramos federados, sistemas) y el jalón del futuro. Es la primera vez que entra lo analítico, <strong>y es a propósito</strong>. Los mitos de la E2 son literalmente los pesos del triángulo, y aquí se confrontan contra la volumetría. Ese choque —creencia contra dato— es el momento en que el proceso se gana la autoridad para proponer una visión.</p>
+      <span class="when">JUE 1-OCT · núcleo</span>
+    </div>
+    <div class="stage" style="--sc:var(--e4)">
+      <div class="hd"><span class="n">ETAPA 4</span><span class="nm">Imaginar futuros</span><span class="act">CPSM + el Cono · imaginativo/ético</span></div>
+      <p>Theunissen reporta que <strong>CPSM funciona mejor</strong> que las matrices 2×2 o los arquetipos de Dator, porque se encadena naturalmente con el Triángulo. Sus cinco progresiones: mejor caso, peor caso, adaptativo, regresión, cambio marginal. Solo <em>después</em> de tener los escenarios se introduce el Cono y se clasifican — <strong>y aquí entran las soluciones que ya le llevaron al CEO</strong>. La clasificación va a generar resistencia, y eso es deseable: se maneja replanteándola <strong>como indagación, no como juicio</strong> — <em>¿preferido por quién? ¿indeseable para quién? ¿bajo qué condiciones?</em> Ahí aparece la conversación más rica de todo el proceso.</p>
+      <span class="when">JUE 8-OCT · núcleo</span>
+    </div>
+    <div class="stage" style="--sc:var(--e5)">
+      <div class="hd"><span class="n">ETAPA 5</span><span class="nm">Volver al presente</span><span class="act">Backcasting · estratégico/normativo</span></div>
+      <p>Desde el futuro preferido hacia atrás: qué condiciones, decisiones y compromisos hacen falta. Aquí nacen la cartera, los dueños, <strong>lo que se deja de hacer</strong> y las señales que falsarían cada apuesta. El ciclo cierra en rendición de cuentas.</p>
+      <span class="when">JUE 15-OCT · núcleo + decisores</span>
+    </div>
+  </div>
+
+  <div class="note warn">
+    <span class="lead">Advertencia del autor · E1 y E2 son emocionalmente intensas</span>
+    <p>Aparecen desilusión, duelo institucional y verdades incómodas. Planifica pausas, escritura individual antes del plenario y espacio de descompresión. Apurarlas contamina las etapas siguientes.</p>
+  </div>
+
+  <h3>Tres advertencias más que aplican directo a tu situación</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Lo que dice el autor</th><th>Qué significa para ti</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Los clientes piden ver el marco completo antes.</strong> La solución no es negarse: compartir una versión visual simplificada, <em>omitiendo las etiquetas tipológicas</em> («plausible», «disparatado», «pasado ignorado»), presentada como agenda gráfica.</td>
+        <td>Tu jefa va a pedirlo. Dáselo así: no daña la experiencia y compra el permiso.</td>
+      </tr>
+      <tr>
+        <td><strong>El marco recorre el Cono sin nombrarlo</strong> ante los participantes.</td>
+        <td>No lo llames «Cono de Futuros» en las sesiones. Preséntalo como <em>«ordenar nuestras apuestas por horizonte»</em>. Nombrarlo invita a que alguien lo trate como plantilla — el error exacto que el paper denuncia.</td>
+      </tr>
+      <tr>
+        <td><strong>La representatividad del grupo fija el techo del resultado.</strong> Un grupo homogéneo produce resultados homogéneamente sesgados, y preguntar «¿quién no está en la sala?» sirve de poco — puede incluso marginar más. Lo que sirve es componer el grupo para que espeje la diversidad real de la institución.</td>
+        <td>El núcleo de las etapas 2-5 <strong>no se arma con voluntarios</strong>: se compone a propósito con los seis ramos + asesor/FFVV + contact center + suscripción + siniestros + TI. Y el jueves 17 es la sala más representativa de todo el proceso — por eso no se puede gastar en levantar requerimientos.</td>
+      </tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="s5">
+  <span class="secnum">§ 5</span>
+  <h2>El jueves 17 — Etapa 1, diseñada</h2>
+  <p>Tu contrapropuesta a tu jefa es correcta, y ahora tiene un argumento más fuerte que «prefiero tomar temperatura»:</p>
+  <div class="note warn">
+    <p><strong>Un levantamiento de necesidades en una reunión de todo el canal produce una lista de deseos. Y una lista de deseos es exactamente «soluciones sin estrategia» —el problema que el CEO reportó— solo que ahora con cincuenta firmantes y expectativa de cumplimiento.</strong></p>
+  </div>
+  <ol>
+    <li><strong>Riesgo de producto:</strong> obtienes soluciones ya formuladas («necesitamos un chatbot»), no jobs. Preguntar por necesidades a un grupo grande garantiza respuestas en formato solución.</li>
+    <li><strong>Riesgo de expectativa:</strong> si alguien pone su pedido en un papel, asume que entró a la cartera. Lo que no salga después se lee como traición, y quemas el capital político de octubre.</li>
+    <li><strong>Riesgo de oportunidad:</strong> es la sala más representativa que vas a tener. Gastarla en datos que el contact center te da en un CSV es un mal negocio.</li>
+  </ol>
+  <p>Y el jueves <em>sí</em> tiene un rol crítico y no negociable: es la Etapa 1 — donde se co-construye el presente y donde el proceso obtiene legitimidad. Sin el jueves, en octubre presentas una estrategia que le cayó del cielo al canal.</p>
+
+  <h3>Tres objetivos y un no-objetivo</h3>
+  <div class="scroll"><table>
+    <tbody>
+      <tr><td class="num">✅ O1</td><td><strong>Verdad afectiva</strong> — cómo se vive hoy el canal digital: orgullo, vergüenza, frustración, lo que nadie dice en un comité</td></tr>
+      <tr><td class="num">✅ O2</td><td><strong>Mitos en circulación</strong> — capturar las creencias compartidas, <em>sin discutirlas</em>. Insumo del pasado mítico de la E2 y de los pesos de la E3</td></tr>
+      <tr><td class="num">✅ O3</td><td><strong>Contrato de proceso</strong> — presentar el plan como agenda gráfica y acordar que desde hoy ninguna iniciativa entra sin pasar por el criterio</td></tr>
+      <tr><td class="num">❌ No</td><td>Levantar requerimientos, recoger iniciativas o comprometer entregables</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">
+    <span class="lead">O3 es el objetivo oculto y el más valioso</span>
+    <p>Convierte a la audiencia de <em>demandante de soluciones</em> en <em>co-constructor del criterio</em>. Es el cambio de rol que resuelve el problema del CEO de forma estructural, no puntual.</p>
+  </div>
+
+  <h3>Agenda — 90 minutos</h3>
+  <div class="agenda">
+    <div class="slot">
+      <span class="min">0 – 10</span>
+      <div>
+        <h4>Encuadre</h4>
+        <p>Nombras el encargo del CEO tal cual y dices la frase: <em>«hoy no venimos a recoger pedidos, venimos a construir el punto de partida»</em>. Muestras la agenda gráfica de las seis semanas.</p>
+        <span class="out">Sale con → <b>expectativa alineada</b></span>
+      </div>
+    </div>
+    <div class="slot">
+      <span class="min">10 – 40</span>
+      <div>
+        <h4>Recruit or Repel</h4>
+        <p>Individual y en silencio, 5 min: <em>«Te encuentras a alguien que está evaluando entrar a canales digitales de Rimac. (a) ¿Qué le dices para convencerlo? (b) ¿Qué le dices para espantarlo?»</em> Luego en mesas de 5-6 se comparte y se eligen las tres frases más ciertas de cada lado. Plenario: se leen. <strong>No se corrige a nadie.</strong></p>
+        <span class="out">Sale con → <b>frases textuales, atraer y espantar</b></span>
+      </div>
+    </div>
+    <div class="slot">
+      <span class="min">40 – 60</span>
+      <div>
+        <h4>Agrupar la verdad afectiva</h4>
+        <p>En plenario agrupas los «repel» en cuatro a seis temas y les pones nombre <strong>con las palabras de ellos</strong>, no con vocabulario de consultoría. Pregunta de cierre por tema: <em>«¿desde cuándo es así?»</em> — no se responde ahora, se anota.</p>
+        <span class="out">Sale con → <b>4-6 temas nombrados + semillas para la Etapa 2</b></span>
+      </div>
+    </div>
+    <div class="slot">
+      <span class="min">60 – 75</span>
+      <div>
+        <h4>«Todos sabemos que…»</h4>
+        <p>Anónimo, en post-its: <em>«Completa: todos sabemos que en seguros, digitalmente, ____»</em>. Se leen en voz alta <strong>sin discutir ninguna</strong>. Anuncias: <em>«estas son las creencias que vamos a poner a prueba contra los datos, y les traemos el resultado el 1 de octubre»</em>.</p>
+        <span class="out">Sale con → <b>8-12 mitos etiquetados</b></span>
+      </div>
+    </div>
+    <div class="slot">
+      <span class="min">75 – 88</span>
+      <div>
+        <h4>Contrato</h4>
+        <p>Presentas el criterio en construcción —los cinco factores, <strong>sin pesos todavía</strong>— y el calendario. Pides dos cosas: quién tiene cada dato de volumetría, y confirmas nominalmente el núcleo de las etapas 2-5, ya elegido por representatividad y no por voluntariado.</p>
+        <span class="out">Sale con → <b>dueños de dato + núcleo confirmado</b></span>
+      </div>
+    </div>
+    <div class="slot">
+      <span class="min">88 – 90</span>
+      <div>
+        <h4>Cierre</h4>
+        <p>Qué reciben y cuándo: síntesis el lunes 21, la confrontación mito-vs-dato el 1 de octubre, la cartera el 15.</p>
+        <span class="out">Sale con → <b>compromiso de devolución</b></span>
+      </div>
+    </div>
+  </div>
+
+  <h3>El artefacto del jueves</h3>
+  <p>Tu jefa pidió un artefacto de levantamiento. <strong>Dáselo — pero que levante lo correcto.</strong> Una plantilla de una página, individual:</p>
+  <pre class="tpl">RAMO / SUB-CANAL: ________________        (sin nombre, opcional)
+─────────────────────────────────────────────────────────────
+1. RECLUTAR — "Éntrale, porque acá…"
+   ________________________________________________________
+
+2. AHUYENTAR — "No te metas, porque acá…"
+   ________________________________________________________
+
+3. ¿DESDE CUÁNDO ES ASÍ?   (un año, un hito, un nombre)
+   ________________________________________________________
+
+4. "TODOS SABEMOS QUE…"    (la creencia del canal)
+   ________________________________________________________
+
+5. ¿QUIÉN TIENE EL DATO?   (volumetría, sistema, persona)
+   ________________________________________________________
+
+6. PARKING — la solución que ibas a proponer
+   ________________________________________________________</pre>
+  <div class="note">
+    <span class="lead">El campo 6 es deliberado</span>
+    <p>La gente <em>necesita</em> soltar su solución; si no le das dónde, la mete en los otros campos y te contamina la Etapa 1. Dándole un lugar explícito y prometiendo que <strong>entrará al ejercicio de horizontes en la Etapa 4</strong> —donde se clasifica, no se descarta— consigues las dos cosas: material limpio y nadie ignorado. Es diseño conductual aplicado a tu propio proceso, y es tu terreno.</p>
+    <p>El campo 3 es el puente a la Etapa 2: cada respuesta es una entrada de la línea de tiempo.</p>
+  </div>
+</section>
+
+<section id="s6">
+  <span class="secnum">§ 6</span>
+  <h2>El lunes 14 con los dos service designers</h2>
+  <p>Dos horas. No es para explorar marcos: es para cerrar decisiones y salir con el plan firmado y el jueves diseñado.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Min</th><th>Tema</th><th>Decisión que debe salir</th></tr></thead>
+    <tbody>
+      <tr><td class="num">0–15</td><td>Encuadre del encargo</td><td>Acuerdo en que el entregable es <em>criterio + visión + cartera</em>, no un documento de estrategia</td></tr>
+      <tr><td class="num">15–35</td><td>Integración de los tres marcos</td><td>JTBD y componentes son <strong>ejes de la misma matriz</strong>; el Cone Framework es <strong>la secuencia</strong>. <em>Momento delicado: cada SD trae su recomendación. El encuadre «ejes complementarios + secuencia» evita que sea una competencia entre ellos.</em></td></tr>
+      <tr><td class="num">35–50</td><td>Unidad de análisis</td><td>Definición cerrada de qué es un job y qué es un componente en Rimac; taxonomía ajustada</td></tr>
+      <tr><td class="num">50–65</td><td>Criterio de priorización</td><td>Los cinco factores y <strong>sus pesos, acordados antes de ver datos</strong></td></tr>
+      <tr><td class="num">65–85</td><td>Diseño del jueves</td><td>Agenda, artefacto, quién facilita qué. Ensayar en voz alta el enunciado de <em>Recruit or Repel</em></td></tr>
+      <tr><td class="num">85–100</td><td>Composición del núcleo</td><td>Lista nominal de 10-14 personas que espejen la institución — <strong>antes</strong> del jueves</td></tr>
+      <tr><td class="num">100–110</td><td>Volumetría</td><td>Lista de pedidos de datos, a quién, quién los persigue</td></tr>
+      <tr><td class="num">110–120</td><td>Calendario</td><td>¿Se pelea el offsite de dos días para E4+E5? Dueño de cada entregable</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Seis preguntas que hay que resolver el lunes y no después</h3>
+  <ol>
+    <li>¿Cuál es la <strong>lista real de ramos</strong> y qué agrupa «PNC»? Tu dictado vino incompleto.</li>
+    <li>¿«Canales digitales» incluye <strong>postventa y siniestros</strong> o solo venta? Determina si la estrategia nace coja.</li>
+    <li>¿Qué iniciativas <strong>ya están comprometidas y presupuestadas</strong> para 2027? Son el escenario <em>proyectado</em> de la Etapa 4, y el criterio tiene que poder convivir con ellas.</li>
+    <li>¿Quién decide finalmente — el CEO, un comité, tu jefa? Determina el formato del entregable.</li>
+    <li>¿Hay <strong>restricción de tecnología o proveedor</strong> ya tomada? Limita qué componentes son activables en el corto plazo.</li>
+    <li>¿Los dos service designers <strong>facilitan</strong> las etapas 2-5 o solo diseñan? Afecta tu carga y el riesgo de cuello de botella.</li>
+  </ol>
+</section>
+
+<section id="s7">
+  <span class="secnum">§ 7</span>
+  <h2>Riesgos y antídotos</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Riesgo</th><th>Señal temprana</th><th>Antídoto</th></tr></thead>
+    <tbody>
+      <tr><td>El jueves se convierte en lista de deseos</td><td>En el minuto 30 la gente propone soluciones</td><td>El «parking» explícito + facilitación firme</td></tr>
+      <tr><td>E1/E2 se desbordan emocionalmente</td><td>Silencio incómodo, o una persona monopoliza el dolor</td><td>Advertencia del autor: pausas, escritura individual antes del plenario, no apurar</td></tr>
+      <tr><td>La clasificación de la E4 se vuelve pelea</td><td>«Ese escenario no es <em>solo</em> plausible»</td><td>Replantear como indagación: <em>¿preferido por quién? ¿bajo qué condiciones?</em></td></tr>
+      <tr><td>«Digital» se lee solo como venta</td><td>Nadie menciona siniestros ni renovación</td><td>Forzar las capas 4-5 en la taxonomía desde el lunes</td></tr>
+      <tr><td>La volumetría no existe o está federada</td><td>A los cinco días nadie responde el pedido de datos</td><td>Plan B: estimaciones con rango declarado</td></tr>
+      <tr><td>Producimos un modelo elegante que nadie usa</td><td>El criterio nunca se aplica a un caso real</td><td><strong>Prueba de fuego:</strong> aplicar el scoring en vivo a tres solicitudes reales pendientes, delante del comité</td></tr>
+      <tr><td>Pérdida de cohesión por estirar a cinco semanas</td><td>Cae la asistencia del núcleo en la tercera sesión</td><td>Mismo núcleo, recap de 5 min, muro persistente; o el offsite E4+E5</td></tr>
+      <tr><td>El núcleo termina siendo homogéneo</td><td>Solo van los «digitales» y los entusiastas</td><td>Composición nominal por representatividad, no por invitación abierta</td></tr>
+      <tr><td>Tú quedas como cuello de botella</td><td>Todo pasa por ti</td><td>Etapa 5: dueño por apuesta, no dueño del plan</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="s8">
+  <span class="secnum">§ 8</span>
+  <h2>Lo que puedes mandarle a tu jefa</h2>
+  <div class="note">
+    <p><em>«Sobre el pedido del CEO: creo que lo que está pidiendo no es un documento de estrategia sino un criterio para decidir — algo que le permita mirar cualquier iniciativa que le llegue y saber por qué sí o por qué no. Propongo un proceso de seis semanas que produce tres cosas: (1) una visión de canal digital en una frase con tres principios, (2) un criterio de priorización explícito que cualquiera pueda aplicar, y (3) una cartera de tres activaciones para los próximos dos trimestres, priorizada con volumetría real.</em></p>
+    <p><em>La reunión del jueves entra como el arranque del proceso: no como levantamiento de requerimientos —que nos daría una lista de deseos y reproduciría justo el problema que el CEO reporta— sino como la construcción del punto de partida común y el acuerdo de que, de aquí en adelante, ninguna iniciativa entra sin pasar por el criterio. Salimos del jueves con la lectura real de cómo se vive hoy el canal, las creencias que estamos dando por ciertas, los dueños de los datos que necesitamos, y el grupo confirmado para las siguientes sesiones. El método está tomado de un marco publicado de foresight participativo; te lo detallo el lunes después de la sesión con los service designers.»</em></p>
+  </div>
+</section>
+
+<section id="s9">
+  <span class="secnum">§ 9</span>
+  <h2>Pendientes que dependen de ti</h2>
+  <ul class="todo">
+    <li>Confirmar el nombre —Rimac vs. Rimax— y la lista completa de ramos, incluido qué agrupa PNC</li>
+    <li>Confirmar si «job studion» = Jobs to be Done</li>
+    <li>Confirmar el alcance: ¿canales digitales incluye postventa y siniestros?</li>
+    <li>Definir la lista nominal del núcleo por representatividad, antes del jueves</li>
+    <li>Decidir si se pelea el offsite de dos días para las etapas 4 y 5</li>
+    <li>Nombres y roles de los dos service designers → reparto de facilitación</li>
+    <li>¿El CEO asiste al jueves? Cambia el encuadre por completo</li>
+  </ul>
+</section>
+
+<footer>
+  <p><b>Fuente del marco de foresight</b> — Theunissen, R. (2026). <em>The Futures Cone Reimagined: A Framework for Critical and Plural Futures Thinking.</em> Journal of Futures Studies. Registrada como F-469 en el códice del proyecto. Referencias internas usadas aquí: Voros (2003, 2017), Gall et al. (2022), Inayatullah (Triángulo de Futuros), Milojević (CPSM; foresight emocional), Weick (sensemaking, 1995), Robinson (backcasting, 1990), Dator (arquetipos), Escobar (2020), Sardar (2010).</p>
+  <p>Documento de trabajo · preparado el 11-sep-2026 · versión markdown en <code>research/_outputs/</code></p>
+</footer>
+
+</div>
