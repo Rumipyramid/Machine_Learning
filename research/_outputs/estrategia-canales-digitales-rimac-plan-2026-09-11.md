@@ -135,7 +135,8 @@ Simeón, que es quien convocó— y declararlo explícitamente en la primera pá
 | **Luciana** | **Gerente del canal de la App** | Que la estrategia exista y sea suya, no impuesta desde el CoE. **Es quien puede ratificar el contrato de proceso en la sala** (§5.5) |
 | **Simeón** | Subgerente del canal digital, bajo Luciana. **Agendó el evento del jueves.** Lleva el seguimiento de capacidades | Que el trabajo se conecte con el inventario de capacidades que él ya lleva, no que lo duplique |
 | **Milly** | Pone el plazo: algo en 2-3 sprints | Un entregable por sprint, no un informe al final |
-| **César** y **Jonathan** | Los dos service designers. Recomendaron JTBD y modelo por componentes — *falta saber quién recomendó cuál* | Que sus marcos sean ejes del mismo sistema, no competidores. Cada uno debería ser dueño del eje que propuso |
+| **César** | Service designer — propuso **JTBD** | Dueño del eje de demanda; facilita la E4 |
+| **Jonathan** | Service designer — propuso el **modelo por componentes** | Dueño del eje de oferta; facilita la E3 |
 | **Tú (CoE de Experiencia)** | Dueño del **método**, no de la ejecución | Que la Etapa 5 asigne dueños por apuesta para no quedar como cuello de botella |
 
 > ⚠️ **Simeón agendó el jueves, y eso cambia la política de la reunión.** No es tu reunión: es de
@@ -699,17 +700,17 @@ para cerrar decisiones.
 
 ### Reparto de facilitación — César y Jonathan
 
-Falta saber **quién recomendó qué**. Ese dato define el reparto natural y vale la pena preguntarlo
-al abrir: **cada uno es dueño del eje que propuso**, y tú del marco que los integra. Es el reparto
-que desactiva la competencia entre marcos — no compiten porque cada uno tiene su eje y ninguno
+Confirmado el 11-sep: **Jonathan propuso el modelo por componentes y César el JTBD.** El reparto
+sale solo de ahí — **cada uno facilita el eje que propuso**, y tú el marco que los integra. Es lo
+que desactiva la competencia entre marcos: no compiten porque cada uno tiene su eje y ninguno
 tiene el todo.
 
 | Sesión | Facilita | Por qué |
 |---|---|---|
 | **E1 · 17-sep** | **Tú** | Es afectiva y narrativa: es tu disciplina |
-| **E2 · 24-sep** | Tú + quien propuso componentes | Las líneas de tiempo cruzan memoria y capacidad |
-| **E3 · 1-oct** | Quien propuso **componentes** | Es la sesión analítica y la que usa la volumetría |
-| **E4 · 8-oct** | Quien propuso **JTBD** | Escenarios, imaginación y clasificación |
+| **E2 · 24-sep** | Tú + **Jonathan** | Las líneas de tiempo cruzan memoria y capacidad |
+| **E3 · 1-oct** | **Jonathan** (propuso componentes) | Es la sesión analítica y la que usa la volumetría |
+| **E4 · 8-oct** | **César** (propuso JTBD) | Escenarios, imaginación y clasificación |
 | **E5 · 15-oct** | Tú + **Simeón** | Compromisos y dueños: necesita al canal, no al CoE |
 
 **Preguntas que hay que resolver el lunes y no después:**
@@ -728,7 +729,7 @@ tiene el todo.
    valor económico no es calculable
 8. ¿Quién es el dueño formal de la **decisión de super app** — Luciana, el CEO, TI? → determina si
    la E4 puede realmente clasificarla o solo comentarla
-9. ¿Quién de los dos recomendó JTBD y quién el modelo por componentes? → define el reparto de arriba
+9. ¿Validan César y Jonathan las siete decisiones del borrador low-fi? → ver output de validación
 
 ---
 
@@ -788,7 +789,6 @@ de la App · **no existe plan estratégico RIMAC 2026-2028**.
 
 - [ ] ⚠️ **Definir el alcance**: ¿la App, todo el canal digital, o todos los canales? (§0.5)
 - [ ] **Lista completa de ramos** y qué agrupa PNC
-- [ ] Quién recomendó JTBD y quién componentes, entre César y Jonathan → reparto de facilitación
 - [ ] **Alinear con Simeón antes del jueves** y pedirle su inventario de capacidades
 - [ ] **Pedirle a Luciana que ratifique el contrato de proceso en la sala** (§5.5)
 - [ ] Gestionar el **checkpoint de 20 min con el CEO** para la semana del 13-oct
@@ -817,3 +817,12 @@ de la App · **no existe plan estratégico RIMAC 2026-2028**.
 - [[material-visual-venta-consultiva]] — reducción de incertidumbre en la capa de decisión
 - [[modelo-personas-sinteticas]] — `/lapuerta` como barrido previo de hipótesis de jobs
 - [[behavioral-design-estado-disciplina]] — por qué el orden afecto→memoria→análisis es tu terreno
+
+---
+
+## Output derivado
+
+- `_outputs/validacion-estrategia-canales-digitales-lowfi-2026-09-11.html` — borrador low-fi en
+  blanco y negro con **siete decisiones a validar**, para César y Jonathan antes de la sesión del
+  lunes. Es una destilación de este plan, no una fuente nueva: si una decisión cambia allí, este
+  documento se actualiza.
