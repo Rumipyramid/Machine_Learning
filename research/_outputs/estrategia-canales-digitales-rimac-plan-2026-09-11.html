@@ -167,14 +167,17 @@ footer a{color:var(--muted)}
   <p class="standfirst">El CEO no pidió una estrategia digital. Pidió claridad. Este es el plan para dársela: Jobs to be Done en el eje de demanda, un modelo por componentes en el de oferta, y <em>The Cone Framework</em> como la secuencia que sostiene a los dos.</p>
   <div class="metastrip">
     <span>Preparado <b>vie 11-sep-2026</b></span>
+    <span>Actualizado <b>11-sep, tarde</b></span>
     <span>Diseño del plan <b>lun 14-sep</b></span>
     <span>Etapa 1 con todo el canal <b>jue 17-sep</b></span>
     <span>Al CEO <b>~22-oct</b></span>
   </div>
   <nav class="nav">
     <a href="#s0">0 · El encargo</a>
+    <a href="#s05">0.5 · Lo que ya existe</a>
     <a href="#s1">1 · Arquitectura</a>
     <a href="#s2">2 · Las seis semanas</a>
+    <a href="#s25">2.5 · Sprints</a>
     <a href="#s3">3 · Evidencia</a>
     <a href="#s4">4 · Cone Framework</a>
     <a href="#s5">5 · El jueves</a>
@@ -207,6 +210,67 @@ footer a{color:var(--muted)}
   <div class="note warn">
     <span class="lead">Nota</span>
     <p>Escribí <em>Rimac</em> donde dictaste «Rimax» — asumo transcripción de voz. Si el nombre es deliberado, reemplázalo en todo el documento.</p>
+  </div>
+</section>
+
+<section id="s05">
+  <span class="secnum">§ 0.5</span>
+  <h2>Lo que ya existe, y qué clase de cosa es cada una</h2>
+  <p><em>Incorporado el 11-sep por la tarde, tras la conversación con Milly. Fuente: reporte verbal, no documento — todo lo de esta sección debe confirmarse el lunes.</em></p>
+  <p>La pregunta era: <em>¿cuál es la estrategia del equipo del App de Luciana, y qué parte de la estrategia de RIMAC le pega al ecosistema digital?</em> La respuesta de Milly: <strong>no hay ninguna de las dos.</strong></p>
+  <div class="note">
+    <span class="lead">Eso no es un vacío de información — es el hallazgo que valida el encargo</span>
+    <p>No estás llegando tarde a una estrategia existente: estás a tiempo para escribir la primera. Dilo así el lunes. Cambia el tono de todo el proyecto, de <em>«ponernos al día»</em> a <em>«redactar el original»</em>.</p>
+  </div>
+
+  <h3>Las cinco definiciones de 2026 no son la misma clase de cosa</h3>
+  <p>Y tratarlas como si lo fueran es lo que produce la confusión.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Definición 2026</th><th>Qué clase de cosa es realmente</th><th>Qué decide</th><th>Qué hacer con ella</th></tr></thead>
+    <tbody>
+      <tr><td>Que la estrategia <strong>involucre a todos los canales</strong></td><td><strong>Alcance</strong></td><td>Nada por sí sola, pero confirma que la matriz es multicanal y no solo app</td><td>Se adopta como restricción de diseño</td></tr>
+      <tr><td><strong>Interconexión de BBDD · interoperabilidad · modularidad</strong></td><td><strong>Capacidades habilitantes</strong> — medios</td><td>Qué <em>se puede</em> construir, no qué <em>conviene</em> construir</td><td>Alimentan el inventario de componentes transversales</td></tr>
+      <tr><td><strong>Personalización / campos dinámicos</strong> — «cuánto pagas hoy y cuánto el próximo mes»</td><td><strong>Un job real, enunciado como feature</strong></td><td>Es demanda, no arquitectura</td><td>Entra al Jobs Studio tal cual: ya es casi una job story</td></tr>
+      <tr><td><strong>Super app</strong> con conexión a clínicas, back y front</td><td><strong>Apuesta de arquitectura de negocio</strong></td><td>Compromete años y presupuesto</td><td>⚠️ La única que es una decisión estratégica grande. <strong>Debe pasar por el cono en la Etapa 4</strong>, no entrar como premisa</td></tr>
+      <tr><td><strong>Valor directo: ventas + reducción de gasto operativo vía autogestión — no MAU</strong></td><td><strong>Norte de valor</strong></td><td>✅ Lo más cercano a una estrategia que tienen, y es bueno</td><td>Se adopta como <strong>ancla del criterio de priorización</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Tres lecturas que cambian el plan</h3>
+  <p><strong>① El hueco exacto está entre la última fila y la penúltima.</strong> Nadie ha demostrado que la super app sea el camino más corto a <em>más ventas y menos gasto operativo</em>. Hay un norte de valor declarado y una apuesta de arquitectura grande, y <strong>ninguna evidencia que los conecte</strong>. Ese hueco es, literalmente, el trabajo de las seis semanas — y es la forma menos confrontativa de plantearlo: no se cuestiona la super app, se pregunta por el puente.</p>
+  <p><strong>② El norte del canal ya ganó por ti la batalla que yo anticipaba.</strong> Advertí que si «digital» se lee solo como venta, la estrategia nace coja. <strong>No hace falta dar esa pelea:</strong> <em>reducción de gasto operativo vía autogestión</em> <strong>es</strong> las capas 4 y 5 del modelo de componentes. Luciana y Simeón ya la ganaron.</p>
+  <div class="note">
+    <span class="lead">Consecuencia operativa inmediata</span>
+    <p>El <strong>top-10 de motivos de contacto del contact center</strong> deja de ser «un proxy barato» y pasa a ser el <strong>dato #1 del proyecto</strong>: es la medición directa del gasto operativo digitalizable, o sea, de la métrica que el propio canal eligió como norte. Pídelo primero y persíguelo tú mismo.</p>
+  </div>
+  <p><strong>③ Las definiciones no son un obstáculo: son el escenario «proyectado».</strong> En el Cono actualizado, <em>proyectado</em> son los pronósticos institucionales formales. <strong>Ya tienes el proyectado escrito y con dueño.</strong> Eso te ahorra trabajo en la Etapa 4 y te permite ubicar la super app sin confrontar a nadie: no la cuestionas, la clasificas junto al resto y dejas que la pregunta <em>¿preferido por quién, bajo qué condiciones?</em> haga el trabajo.</p>
+
+  <h3>Los dos vacíos que quedan abiertos</h3>
+  <p>Preguntas para Milly y Simeón, <strong>no</strong> para el taller:</p>
+  <ol>
+    <li>¿Existe un <strong>plan estratégico RIMAC 2026-2028 documentado</strong>? La pregunta original asumía que sí y que faltaba el puente hacia digital. Si existe, el canal debería derivar de él y es material de los <em>empujes</em> y el <em>jalón</em> de la Etapa 3. <strong>Si no existe, el canal digital está escribiendo estrategia corporativa sin saberlo</strong> — y eso hay que decirlo en voz alta antes de octubre, no después.</li>
+    <li>¿Hay <strong>línea base</strong> de las dos métricas del norte — ventas por canal digital y costo operativo por transacción? Sin línea base, «valor directo» no es medible y el criterio queda cojo en su factor más importante.</li>
+  </ol>
+
+  <h3>Mapa de actores</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Quién</th><th>Rol</th><th>Qué necesita de esto</th></tr></thead>
+    <tbody>
+      <tr><td><strong>CEO</strong></td><td>Pidió claridad</td><td>Un criterio que pueda aplicar solo, y una visión en una frase</td></tr>
+      <tr><td><strong>Luciana</strong></td><td>Gerente —o en camino a serlo— del canal digital / App</td><td>Que la estrategia exista y sea suya, no impuesta desde el CoE</td></tr>
+      <tr><td><strong>Simeón</strong></td><td>Subgerente del canal digital, bajo Luciana. <strong>Agendó el evento del jueves.</strong> Lleva el seguimiento de capacidades</td><td>Que el trabajo se conecte con el inventario de capacidades que él ya lleva, no que lo duplique</td></tr>
+      <tr><td><strong>Milly</strong></td><td>Pone el plazo: algo en 2-3 sprints</td><td>Un entregable por sprint, no un informe al final</td></tr>
+      <tr><td><strong>2 service designers</strong></td><td>Recomendaron JTBD y modelo por componentes</td><td>Que sus marcos sean ejes del mismo sistema, no competidores</td></tr>
+      <tr><td><strong>Tú — CoE de Experiencia</strong></td><td>Dueño del <strong>método</strong>, no de la ejecución</td><td>Que la Etapa 5 asigne dueños por apuesta, para no quedar como cuello de botella</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note warn">
+    <span class="lead">Simeón agendó el jueves — eso cambia la política de la reunión</span>
+    <p>No es tu reunión: es de él. Tres consecuencias.</p>
+    <p><strong>(1) Hay que alinearlo antes del jueves</strong>, idealmente el lunes mismo. Si él espera un levantamiento de capacidades y tú corres <em>Recruit or Repel</em> sin avisarle, quemas la relación con el dueño operativo del canal justo al empezar.</p>
+    <p><strong>(2) Es el dueño natural del eje de componentes.</strong> Ya está a cargo del seguimiento de capacidades. El modelo por componentes <strong>no hay que vendérselo: hay que conectarlo con lo que él ya está haciendo.</strong> Pregúntale por su inventario actual <em>antes</em> de construir uno nuevo — si ya existe, te ahorras una semana del Sprint 1 y le das autoría.</p>
+    <p><strong>(3)</strong> Hay una transición de roles en curso —Simeón asume capacidades en el marco de que Luciana pase a gerente, <em>confirmar esta lectura</em>—. Las transiciones abren ventana para instalar un criterio nuevo, y la cierran rápido. Juega a favor del calendario apretado.</p>
   </div>
 </section>
 
@@ -300,6 +364,37 @@ footer a{color:var(--muted)}
   </ul>
 </section>
 
+<section id="s25">
+  <span class="secnum">§ 2.5</span>
+  <h2>El plan en sprints — la pregunta de Milly</h2>
+  <p>Milly quiere tener algo en <strong>2-3 sprints</strong>. Buena noticia: <strong>encaja casi exacto</strong>, si son sprints de dos semanas arrancando el lunes 14.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Sprint</th><th>Fechas</th><th>Qué contiene</th><th>Entregable al cierre</th></tr></thead>
+    <tbody>
+      <tr><td class="num"><strong>1</strong></td><td class="num">15 → 26 sep</td><td>E1 (17-sep) · E2 (24-sep) · volumetría e inventario</td><td>Presente construido · inventario de componentes con estado · mitos listados para falsar · <strong>línea base de las dos métricas del norte</strong></td></tr>
+      <tr><td class="num"><strong>2</strong></td><td class="num">29 sep → 10 oct</td><td>E3 (1-oct) · E4 (8-oct)</td><td><strong>Criterio con pesos · matriz Job × Componente priorizada · futuro preferido · escenarios clasificados, incluida la super app</strong></td></tr>
+      <tr><td class="num"><strong>3</strong></td><td class="num">13 → 24 oct</td><td>E5 (15-oct) · presentación al CEO (~22-oct)</td><td>Cartera de 3 apuestas con dueños, renuncias y señales de falsación · la visión en una frase</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">
+    <span class="lead">Si Milly solo tiene dos sprints, el corte es el 10 de octubre</span>
+    <p>Al cierre del Sprint 2 ya hay con qué decidir: criterio, matriz priorizada y futuro preferido. Lo que falta después es el backcasting y la asignación de dueños — importante, pero ya no bloquea la toma de decisiones.</p>
+  </div>
+
+  <h3>La ambigüedad que hay que resolver el lunes</h3>
+  <p>Cuando Milly dice «tener algo en 2-3 sprints», ¿<strong>algo</strong> es un documento de estrategia o <strong>algo funcionando</strong>? En un equipo de app que corre sprints, probablemente lo segundo. Y si es lo segundo, un plan que entrega solo documentos se va a leer como <strong>seis semanas de talleres</strong>.</p>
+  <p><strong>Propuesta: dos tracks en paralelo.</strong> <strong>Track A</strong> es el criterio — los jueves, tal cual el plan. <strong>Track B</strong> es una activación temprana que arranca en el Sprint 1 y entrega en el 3, con tres condiciones no negociables:</p>
+  <ol>
+    <li>Sale <strong>solo</strong> de la categoría <code>Existe pero no se usa</code> — capacidad ya pagada, <strong>cero arquitectura nueva</strong>, nada que comprometa la decisión de super app.</li>
+    <li>Se elige con <strong>volumetría pura</strong> y la regla ya escrita: volumen alto + fricción alta + capacidad instalada. No por opinión ni por quién lo pida.</li>
+    <li>Se declara explícitamente como <strong>piloto de aprendizaje que alimenta la Etapa 3</strong>, con métrica atada al norte del canal —ventas o contactos evitados—, <strong>nunca MAU</strong>.</li>
+  </ol>
+  <div class="note warn">
+    <p>Con esas tres condiciones, Track B <strong>no rompe la regla de oro</strong>: la regla protege contra <em>elegir apuestas grandes sin criterio</em>, y esto es una activación reversible de algo ya pagado, medida contra el norte que el propio canal declaró. <strong>Sin las tres condiciones, sí la rompe</strong> — y se convierte en la solución número cincuenta y uno sin estrategia.</p>
+  </div>
+  <p>🎯 Track B es lo que te permite responderle a Milly el lunes: <em>«al cierre del sprint 3 tienes el criterio, la visión y la cartera — y además una activación corriendo y medida contra ventas o gasto operativo.»</em></p>
+</section>
+
 <section id="s3">
   <span class="secnum">§ 3</span>
   <h2>Los instrumentos de evidencia</h2>
@@ -311,7 +406,7 @@ footer a{color:var(--muted)}
     <li><strong>Tráfico y entrada</strong> — sesiones únicas por origen: orgánico, paid, app, WhatsApp, link de asesor, IVR-a-digital.</li>
     <li><strong>Embudo por paso</strong> — intentos iniciados vs. completados en cada componente. <em>El paso donde se cae la gente es la evidencia de fricción más barata que existe.</em></li>
     <li><strong>Volumen digitalizable no digital</strong> — lo que hoy pasa por teléfono, agencia o asesor y técnicamente ya podría ser digital: cotización, emisión, pago, endoso, renovación, aviso de siniestro, constancias.</li>
-    <li><strong>Top 10 motivos de contacto al contact center</strong> por ramo, con volumen y AHT. <strong>El mejor proxy barato de «job no resuelto» que vas a conseguir</strong>, y llega en días.</li>
+    <li>⭐ <strong>Top 10 motivos de contacto al contact center</strong> por ramo, con volumen y AHT. <strong>Este es el dato #1 del proyecto, no el cuarto:</strong> desde que el canal declaró que su norte es reducir el gasto operativo vía autogestión, este dato dejó de ser un proxy barato y pasó a ser la medición directa de la métrica que el canal eligió como norte.</li>
     <li><strong>Contactabilidad</strong> — % de la base con dato digital válido <em>y consentimiento vigente</em>.</li>
     <li><strong>Costo por transacción por canal</strong> — aunque sea estimado. Sin esto no hay caso de negocio.</li>
     <li><strong>Estado de la capacidad</strong> — ¿el componente existe, existe a medias, o no existe?</li>
@@ -369,7 +464,7 @@ para poder  [resultado esperado].</pre>
     <tbody>
       <tr><td><strong>Volumen</strong></td><td class="num"><span class="bar" style="width:50px"></span>25 %</td><td>Masa de transacciones o contactos afectados</td><td>Volumetría</td></tr>
       <tr><td><strong>Fricción</strong></td><td class="num"><span class="bar" style="width:50px"></span>25 %</td><td>Importancia − satisfacción del job</td><td>Jobs Studio</td></tr>
-      <tr><td><strong>Valor económico</strong></td><td class="num"><span class="bar" style="width:40px"></span>20 %</td><td>Prima o margen × frecuencia, o costo evitado</td><td>Finanzas + costo/transacción</td></tr>
+      <tr><td><strong>Valor económico</strong></td><td class="num"><span class="bar" style="width:40px"></span>20 %</td><td><strong>Ventas incrementales + gasto operativo evitado</strong> — el norte declarado del canal. MAU y engagement <strong>no cuentan</strong></td><td>Finanzas + costo/transacción + contact center</td></tr>
       <tr><td><strong>Capacidad instalada</strong></td><td class="num"><span class="bar" style="width:30px"></span>15 %</td><td>Qué tan cerca está de poder activarse</td><td>Inventario de componentes</td></tr>
       <tr><td><strong>Coherencia con el futuro preferido</strong></td><td class="num"><span class="bar" style="width:30px"></span>15 %</td><td>¿Construye la visión o solo parcha?</td><td>Etapa 4</td></tr>
     </tbody>
@@ -379,6 +474,10 @@ para poder  [resultado esperado].</pre>
     <p>Sin él, el scoring premia siempre lo urgente y barato, y en dos años tienes cincuenta parches coherentes con nada. Es la respuesta técnica exacta al dolor que reportó el CEO. Defiéndelo cuando alguien proponga quitarlo por «subjetivo»: es el único factor que mira más allá del trimestre.</p>
   </div>
   <p><strong>Regla de corte de la cartera de corto plazo:</strong> máximo tres apuestas activas. Más de tres y vuelves al problema original con otro nombre.</p>
+  <div class="note warn">
+    <span class="lead">Regla de descarte, derivada del norte del canal</span>
+    <p>Toda iniciativa cuyo único beneficio prometido sea MAU, engagement, descargas o «presencia digital» <strong>no entra al scoring</strong>. No se puntúa bajo: no se puntúa. El canal ya declaró que su valor es ventas y gasto operativo; esta regla solo hace cumplir esa declaración — y es la más fácil de defender ante cualquiera, porque no la inventaste tú.</p>
+  </div>
 </section>
 
 <section id="s4">
@@ -463,7 +562,7 @@ para poder  [resultado esperado].</pre>
     </div>
     <div class="stage" style="--sc:var(--e4)">
       <div class="hd"><span class="n">ETAPA 4</span><span class="nm">Imaginar futuros</span><span class="act">CPSM + el Cono · imaginativo/ético</span></div>
-      <p>Theunissen reporta que <strong>CPSM funciona mejor</strong> que las matrices 2×2 o los arquetipos de Dator, porque se encadena naturalmente con el Triángulo. Sus cinco progresiones: mejor caso, peor caso, adaptativo, regresión, cambio marginal. Solo <em>después</em> de tener los escenarios se introduce el Cono y se clasifican — <strong>y aquí entran las soluciones que ya le llevaron al CEO</strong>. La clasificación va a generar resistencia, y eso es deseable: se maneja replanteándola <strong>como indagación, no como juicio</strong> — <em>¿preferido por quién? ¿indeseable para quién? ¿bajo qué condiciones?</em> Ahí aparece la conversación más rica de todo el proceso.</p>
+      <p>Theunissen reporta que <strong>CPSM funciona mejor</strong> que las matrices 2×2 o los arquetipos de Dator, porque se encadena naturalmente con el Triángulo. Sus cinco progresiones: mejor caso, peor caso, adaptativo, regresión, cambio marginal. Solo <em>después</em> de tener los escenarios se introduce el Cono y se clasifican — <strong>y aquí entran las soluciones que ya le llevaron al CEO</strong>. ⭐ Las cinco definiciones de 2026 entran como el escenario <strong>proyectado</strong> —ya está escrito y tiene dueño— y la super app se clasifica junto al resto en lugar de discutirse como premisa. La clasificación va a generar resistencia, y eso es deseable: se maneja replanteándola <strong>como indagación, no como juicio</strong> — <em>¿preferido por quién? ¿indeseable para quién? ¿bajo qué condiciones?</em> Ahí aparece la conversación más rica de todo el proceso.</p>
       <span class="when">JUE 8-OCT · núcleo</span>
     </div>
     <div class="stage" style="--sc:var(--e5)">
@@ -511,6 +610,10 @@ para poder  [resultado esperado].</pre>
     <li><strong>Riesgo de oportunidad:</strong> es la sala más representativa que vas a tener. Gastarla en datos que el contact center te da en un CSV es un mal negocio.</li>
   </ol>
   <p>Y el jueves <em>sí</em> tiene un rol crítico y no negociable: es la Etapa 1 — donde se co-construye el presente y donde el proceso obtiene legitimidad. Sin el jueves, en octubre presentas una estrategia que le cayó del cielo al canal.</p>
+
+  <h3>Antes del jueves: alinear con Simeón</h3>
+  <p><strong>El evento lo agendó Simeón, no tú.</strong> Todo lo que sigue se cae si él llega esperando otra cosa. Conversación corta, lunes o martes, con tres puntos: <strong>(1)</strong> reconocer que la reunión es suya y pedirle que abra él el encuadre; <strong>(2)</strong> preguntarle por su inventario de capacidades <em>antes</em> de construir uno — si existe, el eje de componentes arranca con su material y con su autoría; <strong>(3)</strong> mostrarle la agenda gráfica y ser explícito en que el jueves <em>no</em> levanta requerimientos ni capacidades.</p>
+  <p>Si Simeón necesita salir del jueves con algo de capacidades para su propio seguimiento, el campo 5 del artefacto —<em>¿quién tiene el dato?</em>— se lo da sin romper la Etapa 1. Ofrécelo así.</p>
 
   <h3>Tres objetivos y un no-objetivo</h3>
   <div class="scroll"><table>
@@ -632,6 +735,10 @@ para poder  [resultado esperado].</pre>
     <li>¿Quién decide finalmente — el CEO, un comité, tu jefa? Determina el formato del entregable.</li>
     <li>¿Hay <strong>restricción de tecnología o proveedor</strong> ya tomada? Limita qué componentes son activables en el corto plazo.</li>
     <li>¿Los dos service designers <strong>facilitan</strong> las etapas 2-5 o solo diseñan? Afecta tu carga y el riesgo de cuello de botella.</li>
+    <li>Para Milly: «algo en 2-3 sprints» — ¿documento o <strong>algo funcionando</strong>? Decide si va el Track B.</li>
+    <li>¿Existe un <strong>plan estratégico RIMAC 2026-2028</strong> documentado del cual derivar?</li>
+    <li>¿Hay <strong>línea base</strong> de ventas digitales y costo operativo por transacción? Sin eso, el factor de valor económico no es calculable.</li>
+    <li>¿Quién es el dueño formal de la <strong>decisión de super app</strong> — Luciana, el CEO, TI? Determina si la Etapa 4 puede realmente clasificarla o solo comentarla.</li>
   </ol>
 </section>
 
@@ -649,6 +756,10 @@ para poder  [resultado esperado].</pre>
       <tr><td>Producimos un modelo elegante que nadie usa</td><td>El criterio nunca se aplica a un caso real</td><td><strong>Prueba de fuego:</strong> aplicar el scoring en vivo a tres solicitudes reales pendientes, delante del comité</td></tr>
       <tr><td>Pérdida de cohesión por estirar a cinco semanas</td><td>Cae la asistencia del núcleo en la tercera sesión</td><td>Mismo núcleo, recap de 5 min, muro persistente; o el offsite E4+E5</td></tr>
       <tr><td>El núcleo termina siendo homogéneo</td><td>Solo van los «digitales» y los entusiastas</td><td>Composición nominal por representatividad, no por invitación abierta</td></tr>
+      <tr><td>Simeón llega al jueves esperando otra reunión</td><td>No respondió o no confirmó el encuadre</td><td>Alineación previa obligatoria — es su evento</td></tr>
+      <tr><td>La super app se blinda como premisa no discutible</td><td>«Eso ya está decidido» antes de la Etapa 4</td><td>Clasificarla, no cuestionarla; y pedir el puente de evidencia hacia ventas y gasto operativo</td></tr>
+      <tr><td>El plan se lee como seis semanas de talleres</td><td>Milly pregunta «¿y qué entregamos?»</td><td>Track B con sus tres condiciones</td></tr>
+      <tr><td>Duplicamos el inventario de capacidades de Simeón</td><td>Dos listas de componentes en circulación</td><td>Preguntar primero, construir después</td></tr>
       <tr><td>Tú quedas como cuello de botella</td><td>Todo pasa por ti</td><td>Etapa 5: dueño por apuesta, no dueño del plan</td></tr>
     </tbody>
   </table></div>
@@ -674,6 +785,11 @@ para poder  [resultado esperado].</pre>
     <li>Decidir si se pelea el offsite de dos días para las etapas 4 y 5</li>
     <li>Nombres y roles de los dos service designers → reparto de facilitación</li>
     <li>¿El CEO asiste al jueves? Cambia el encuadre por completo</li>
+    <li><strong>Alinear con Simeón antes del jueves</strong> y pedirle su inventario de capacidades</li>
+    <li>Resolver con Milly si «algo en 2-3 sprints» es documento o algo funcionando</li>
+    <li>Confirmar la lectura de la transición de roles Luciana / Simeón</li>
+    <li>Conseguir línea base de ventas digitales y costo operativo por transacción</li>
+    <li>Pedir el plan estratégico RIMAC 2026-2028, si existe</li>
   </ul>
 </section>
 

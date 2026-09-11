@@ -4,6 +4,8 @@
 > diseño del **lunes 14-sep** con los dos service designers, y para dar rol y forma a la
 > **reunión de todo el canal del jueves 17-sep**.
 >
+> **Actualizado el 2026-09-11 (tarde)** con lo conversado con Milly — ver §0.5, §2.5 y §5.1-bis.
+>
 > Integra tres marcos: **Jobs to be Done** (eje de demanda), **modelo por componentes** (eje de
 > oferta) y **The Cone Framework** de Romano Theunissen — *The Futures Cone Reimagined*, Journal
 > of Futures Studies, 2026 (F-469) — como **arquitectura del proceso completo**.
@@ -35,6 +37,94 @@ De ahí se derivan **tres** entregables, no uno:
 > 🎯 **Prueba de éxito del plan**: al final, el CEO debería poder tomar **tres solicitudes reales
 > que ya estén en su bandeja** y clasificarlas él mismo con el criterio, sin que tú estés en la
 > sala. Si eso no se puede hacer, produjimos un marco bonito y no resolvimos nada.
+
+---
+
+## 0.5. Lo que ya existe, y qué clase de cosa es cada una
+
+> Incorporado el **2026-09-11 (tarde)** tras la conversación con Milly. Fuente: reporte verbal del
+> usuario, no documento — todo lo de esta sección debe confirmarse el lunes.
+
+La pregunta era: *¿cuál es la estrategia del equipo del App de Luciana, y qué parte de la
+estrategia de RIMAC le pega al ecosistema digital?* La respuesta de Milly: **no hay ninguna de las
+dos.**
+
+Eso no es un vacío de información: **es el hallazgo que valida el encargo del CEO.** No estás
+llegando tarde a una estrategia existente — estás a tiempo para escribir la primera. Dilo así el
+lunes: cambia el tono de todo el proyecto, de *"ponernos al día"* a *"redactar el original"*.
+
+Lo que sí hay son **cinco definiciones** construidas para 2026. No son la misma clase de cosa, y
+tratarlas como si lo fueran es lo que produce la confusión:
+
+| Definición 2026 | Qué clase de cosa es realmente | Qué decide | Qué hacer con ella |
+|---|---|---|---|
+| Que la estrategia **involucre a todos los canales** | **Alcance** | Nada por sí sola, pero confirma que la matriz es multicanal y no solo app | Se adopta como restricción de diseño |
+| **Interconexión de BBDD · interoperabilidad · modularidad** | **Capacidades habilitantes** (medios) | Qué *se puede* construir, no qué *conviene* construir | Alimentan el inventario de componentes transversales (§3.3) |
+| **Personalización / campos dinámicos** — *"cuánto pagas hoy y cuánto el próximo mes"* | **Un job real, enunciado como feature** | Es demanda, no arquitectura | Entra al Jobs Studio tal cual: ya es casi una job story |
+| **Super app** con conexión a clínicas, back y front | **Apuesta de arquitectura de negocio** | Compromete años y presupuesto | ⚠️ La única que es una decisión estratégica grande. **Debe pasar por el cono en la E4**, no entrar como premisa |
+| **Valor directo: ventas + reducción de gasto operativo vía autogestión — no MAU** | **Norte de valor** | ✅ Lo más cercano a una estrategia que tienen, y es bueno | Se adopta como **ancla del criterio de priorización** |
+
+### Tres lecturas que cambian el plan
+
+**① El hueco exacto está entre la fila 5 y la fila 4.** Nadie ha demostrado que la super app sea el
+camino más corto a *más ventas y menos gasto operativo*. Hay un norte de valor declarado y una
+apuesta de arquitectura grande, y **ninguna evidencia que los conecte**. Ese hueco es,
+literalmente, el trabajo de las seis semanas. Y es la forma menos confrontativa de plantearlo: no
+se cuestiona la super app, se pregunta por el puente.
+
+**② El norte del canal ya ganó por ti la batalla que yo anticipaba.** En §3.3 advertí que si
+"digital" se lee solo como venta, la estrategia nace coja. **No hace falta dar esa pelea**:
+*reducción de gasto operativo vía autogestión* **es** las capas 4 y 5 del modelo de componentes
+—servicio, postventa, momento de verdad—. Luciana y Simeón ya la ganaron. Consecuencia operativa
+inmediata: **el top-10 de motivos de contacto del contact center deja de ser "un proxy barato" y
+pasa a ser el dato #1 del proyecto** — es la medida directa del gasto operativo digitalizable, o
+sea, de la métrica que el propio canal declaró como norte.
+
+**③ Las definiciones no son un obstáculo: son el escenario "proyectado".** En el Cono actualizado,
+*proyectado* = los pronósticos institucionales formales. **Ya tienes el proyectado escrito y con
+dueño.** Eso te ahorra trabajo en la Etapa 4 y, sobre todo, te permite ubicar la super app sin
+confrontar a nadie: no la cuestionas, la clasificas junto a los demás escenarios y dejas que la
+pregunta *¿preferido por quién, bajo qué condiciones?* haga el trabajo.
+
+### Los dos vacíos que quedan abiertos
+
+Preguntas para Milly y Simeón, **no** para el taller:
+
+1. ¿Existe un **plan estratégico RIMAC 2026-2028 documentado**? La pregunta original asumía que sí
+   y que faltaba el puente hacia digital. Si existe, el canal debería derivar de él y es material
+   de los *empujes* y el *jalón* de la Etapa 3. **Si no existe, el canal digital está escribiendo
+   estrategia corporativa sin saberlo** — y eso hay que decirlo en voz alta antes de octubre, no
+   después.
+2. ¿Hay **línea base** de las dos métricas del norte? Ventas por canal digital y costo operativo
+   por transacción. Sin línea base, "valor directo" no es medible y el criterio queda cojo en su
+   factor más importante.
+
+### Mapa de actores
+
+| Quién | Rol | Qué necesita de esto |
+|---|---|---|
+| **CEO** | Pidió claridad | Un criterio que pueda aplicar solo, y una visión en una frase |
+| **Luciana** | Gerente (o en camino a serlo) del canal digital / App | Que la estrategia exista y sea suya, no impuesta desde el CoE |
+| **Simeón** | Subgerente del canal digital, bajo Luciana. **Agendó el evento del jueves.** Lleva el seguimiento de capacidades | Que el trabajo se conecte con el inventario de capacidades que él ya lleva, no que lo duplique |
+| **Milly** | Pone el plazo: algo en 2-3 sprints | Un entregable por sprint, no un informe al final |
+| **2 service designers** | Recomendaron JTBD y modelo por componentes | Que sus marcos sean ejes del mismo sistema, no competidores |
+| **Tú (CoE de Experiencia)** | Dueño del **método**, no de la ejecución | Que la Etapa 5 asigne dueños por apuesta para no quedar como cuello de botella |
+
+> ⚠️ **Simeón agendó el jueves, y eso cambia la política de la reunión.** No es tu reunión: es de
+> él. Tres consecuencias:
+>
+> **(1) Hay que alinearlo antes del jueves**, idealmente el lunes mismo. Si él espera un
+> levantamiento de capacidades y tú corres *Recruit or Repel* sin avisarle, quemas la relación con
+> el dueño operativo del canal justo al empezar.
+>
+> **(2) Es el dueño natural del eje de componentes.** Ya está a cargo del seguimiento de
+> capacidades. El modelo por componentes **no hay que vendérselo: hay que conectarlo con lo que él
+> ya está haciendo.** Pregúntale por su inventario actual *antes* de construir uno nuevo — si ya
+> existe, te ahorras una semana del Sprint 1 y le das autoría.
+>
+> **(3)** Hay una transición de roles en curso (Simeón asume capacidades en el marco de que Luciana
+> pase a gerente — *confirmar esta lectura*). Las transiciones abren ventana para instalar un
+> criterio nuevo y la cierran rápido. Juega a favor del calendario apretado.
 
 ---
 
@@ -109,6 +199,53 @@ Fechas ancladas a hoy (viernes **11-sep-2026**). Cada jueves es una etapa del Co
 
 ---
 
+## 2.5. El plan en sprints — la pregunta de Milly
+
+Milly quiere tener algo en **2-3 sprints**. Buena noticia: **encaja casi exacto**, si son sprints
+de dos semanas arrancando el lunes 14.
+
+| Sprint | Fechas | Qué contiene | Entregable al cierre |
+|---|---|---|---|
+| **1** | 15 → 26 sep | E1 (17-sep) · E2 (24-sep) · volumetría e inventario | Presente construido · inventario de componentes con estado · mitos listados para falsar · **línea base de las dos métricas del norte** |
+| **2** | 29 sep → 10 oct | E3 (1-oct) · E4 (8-oct) | **Criterio con pesos · matriz Job × Componente priorizada · futuro preferido · escenarios clasificados (incluida la super app)** |
+| **3** | 13 → 24 oct | E5 (15-oct) · presentación al CEO (~22-oct) | Cartera de 3 apuestas con dueños, renuncias y señales de falsación · la visión en una frase |
+
+> ✂️ **Si Milly solo tiene dos sprints, el corte es el 10 de octubre.** Al cierre del Sprint 2 ya
+> hay con qué decidir: criterio, matriz priorizada y futuro preferido. Lo que falta después es el
+> backcasting y la asignación de dueños — importante, pero ya no bloquea la toma de decisiones.
+
+### La ambigüedad que hay que resolver el lunes
+
+Cuando Milly dice *"tener algo en 2-3 sprints"*, ¿**algo** es un documento de estrategia o **algo
+funcionando**? En un equipo de app que corre sprints, probablemente lo segundo. Y si es lo
+segundo, un plan que entrega solo documentos se va a leer como **seis semanas de talleres**.
+
+**Propuesta: dos tracks en paralelo.**
+
+- **Track A — El criterio.** Los jueves, tal cual el plan.
+- **Track B — Una activación temprana**, que arranca en el Sprint 1 y entrega en el 3.
+
+**Track B tiene tres condiciones no negociables**, porque sin ellas es exactamente el problema que
+el CEO reportó:
+
+1. Sale **solo** de la categoría `Existe pero no se usa` — capacidad ya pagada, **cero
+   arquitectura nueva**, nada que comprometa la decisión de super app.
+2. Se elige con **volumetría pura** y la regla ya escrita en §3.1 (volumen alto + fricción alta +
+   capacidad instalada), **no por opinión ni por quién lo pida**.
+3. Se declara explícitamente como **piloto de aprendizaje que alimenta la Etapa 3**, con métrica
+   atada al norte del canal —ventas o contactos evitados—, **nunca MAU**.
+
+> Con esas tres condiciones, Track B **no rompe la regla de oro de §2**: la regla protege contra
+> *elegir apuestas grandes sin criterio*, y esto es una activación reversible de algo ya pagado,
+> medida contra el norte que el propio canal declaró. **Sin las tres condiciones, sí la rompe** —
+> y se convierte en la solución número cincuenta y uno sin estrategia.
+
+> 🎯 Track B es lo que te permite responderle a Milly el lunes: *"al cierre del sprint 3 tienes el
+> criterio, la visión y la cartera — y además una activación corriendo y medida contra ventas o
+> gasto operativo."*
+
+---
+
 ## 3. Los instrumentos de evidencia (alimentan la Etapa 3)
 
 ### 3.1 Volumetría: qué pedir, a quién, en qué formato
@@ -126,8 +263,11 @@ center) y lo que más tarda.
 3. **Volumen digitalizable no digital** — transacciones que hoy pasan por teléfono, agencia o
    asesor y que técnicamente ya podrían ser digitales: cotización, emisión, pago,
    endoso/modificación, renovación, aviso de siniestro, constancias.
-4. **Top 10 motivos de contacto al contact center** por ramo, con volumen y AHT.
-   👉 *El mejor proxy barato de "job no resuelto" que vas a conseguir, y llega en días.*
+4. ⭐ **Top 10 motivos de contacto al contact center** por ramo, con volumen y AHT. **Este es el
+   dato #1 del proyecto, no el cuarto.** Desde que el canal declaró que su norte es *reducir el
+   gasto operativo vía autogestión* (§0.5), este dato dejó de ser un proxy barato de "job no
+   resuelto" y pasó a ser **la medición directa de la métrica que el canal eligió como norte**.
+   Pídelo primero y persíguelo tú mismo.
 5. **Contactabilidad** — % de la base con dato digital válido **y consentimiento vigente**
    (conecta con `_nodes/transicion-venta-fria-a-opt-in.md`).
 6. **Costo por transacción por canal** — aunque sea estimado. Sin esto no hay caso de negocio.
@@ -256,7 +396,7 @@ candidata, coloreada por volumetría.
 |---|---|---|---|
 | **Volumen** | 25 % | Masa de transacciones o contactos afectados | Volumetría (§3.1) |
 | **Fricción** | 25 % | Importancia − satisfacción del job | Jobs Studio (§3.2) |
-| **Valor económico** | 20 % | Prima/margen × frecuencia, o costo evitado | Finanzas + costo por transacción |
+| **Valor económico** | 20 % | **Ventas incrementales + gasto operativo evitado** — el norte declarado del canal (§0.5). MAU y engagement **no cuentan** | Finanzas + costo por transacción + contact center |
 | **Capacidad instalada** | 15 % | Qué tan cerca está de poder activarse | Inventario de componentes (§3.3) |
 | **Coherencia con el futuro preferido** | 15 % | ¿Construye la visión o solo parcha? | Etapa 4 (§4) |
 
@@ -267,6 +407,12 @@ candidata, coloreada por volumetría.
 
 **Regla de corte de la cartera de corto plazo:** máximo **3 apuestas activas**. Más de tres y
 vuelves al problema original con otro nombre.
+
+> 🚫 **Regla de descarte, derivada del norte del canal.** Toda iniciativa cuyo único beneficio
+> prometido sea MAU, engagement, descargas o "presencia digital" **no entra al scoring**. No se
+> puntúa bajo: no se puntúa. El canal ya declaró que su valor es ventas y gasto operativo; esta
+> regla solo hace cumplir esa declaración — y es la más fácil de defender ante cualquiera, porque
+> no la inventaste tú.
 
 ---
 
@@ -343,7 +489,9 @@ posible); y siete tipologías de escenario:
 - **E4 — CPSM y el Cono.** Theunissen reporta que **CPSM funciona mejor** que las matrices 2×2 o
   los arquetipos de Dator, porque se encadena naturalmente con el Triángulo. Sus cinco
   progresiones: **Mejor caso · Peor caso · Adaptativo · Regresión · Cambio marginal**. Solo
-  *después* de tener los escenarios se introduce el Cono y se clasifican. La clasificación **va a
+  *después* de tener los escenarios se introduce el Cono y se clasifican. ⭐ **Las cinco
+  definiciones de 2026 (§0.5) entran aquí como el escenario "proyectado" —ya está escrito y tiene
+  dueño— y la super app se clasifica junto al resto en lugar de discutirse como premisa.** La clasificación **va a
   generar resistencia** (a nadie le gusta que su escenario favorito quede en "plausible"), y eso
   es deseable: se maneja replanteando la clasificación **como indagación, no como juicio** — *¿preferido
   por quién? ¿indeseable para quién? ¿bajo qué condiciones?* Theunissen reporta que ahí aparece la
@@ -395,6 +543,20 @@ Tres riesgos concretos, por si necesitas defenderlo:
 **Y el jueves sí tiene un rol crítico y no negociable**: es la **Etapa 1** del marco — donde se
 co-construye el presente y donde el proceso obtiene legitimidad. Sin el jueves, en octubre
 presentas una estrategia que le cayó del cielo al canal.
+
+### 5.1-bis Antes del jueves: alinear con Simeón
+
+**El evento lo agendó Simeón, no tú.** Todo lo de §5 se cae si él llega el jueves esperando otra
+cosa. Conversación corta, el lunes o martes, con tres puntos:
+
+1. **Reconocer que la reunión es suya** y pedirle que abra él el encuadre — no tú.
+2. **Preguntarle por su inventario de capacidades antes de construir uno.** Él ya lleva ese
+   seguimiento; si existe, el eje de componentes arranca con su material y con su autoría.
+3. **Mostrarle la agenda gráfica** (§4.3, advertencia 1) y ser explícito en que el jueves **no**
+   levanta requerimientos ni capacidades — eso viene después y con su data, no con post-its.
+
+> Si Simeón necesita salir del jueves con algo de capacidades para su propio seguimiento, el campo
+> 5 del artefacto (*¿quién tiene el dato?*) se lo da sin romper la Etapa 1. Ofrécelo así.
 
 ### 5.2 Los tres objetivos (y un no-objetivo)
 
@@ -482,6 +644,13 @@ para cerrar decisiones.
    activables en el corto plazo
 6. ¿Los dos service designers **facilitan** las etapas 2-5 o solo diseñan? → afecta tu carga y el
    riesgo de cuello de botella
+7. Para Milly: *"algo en 2-3 sprints"* — ¿documento o **algo funcionando**? → decide si va el
+   Track B (§2.5)
+8. ¿Existe un **plan estratégico RIMAC 2026-2028** documentado del cual derivar? (§0.5)
+9. ¿Hay **línea base** de ventas digitales y costo operativo por transacción? Sin eso, el factor de
+   valor económico no es calculable
+10. ¿Quién es el dueño formal de la **decisión de super app** — Luciana, el CEO, TI? → determina si
+    la E4 puede realmente clasificarla o solo comentarla
 
 ---
 
@@ -497,6 +666,10 @@ para cerrar decisiones.
 | Producimos un modelo elegante que nadie usa | El criterio nunca se aplica a un caso real | **Prueba de fuego**: aplicar el scoring en vivo a 3 solicitudes reales pendientes, delante del comité |
 | Pérdida de cohesión por estirar a 5 semanas | Cae la asistencia del núcleo en la 3.ª sesión | Mismo núcleo, recap de 5 min, muro persistente; o el offsite E4+E5 |
 | El núcleo termina siendo homogéneo | Solo van los "digitales" y los entusiastas | Composición nominal por representatividad (§4.3, adv. 3), no por invitación abierta |
+| Simeón llega al jueves esperando otra reunión | No respondió o no confirmó el encuadre | Alineación previa obligatoria (§5.1-bis) — es su evento |
+| La super app se blinda como premisa no discutible | «Eso ya está decidido» antes de la E4 | Clasificarla, no cuestionarla; y pedir el puente de evidencia hacia ventas y gasto operativo (§0.5 ①) |
+| El plan se lee como seis semanas de talleres | Milly pregunta «¿y qué entregamos?» | Track B con sus tres condiciones (§2.5) |
+| Duplicamos el inventario de capacidades de Simeón | Dos listas de componentes en circulación | Preguntar primero, construir después |
 | Tú quedas como cuello de botella | Todo pasa por ti | Etapa 5: dueño por apuesta, no dueño del plan |
 
 ---
@@ -530,6 +703,11 @@ para cerrar decisiones.
 - [ ] Decidir si se pelea el **offsite de 2 días** para E4+E5
 - [ ] Nombres y roles de los dos service designers → reparto de facilitación
 - [ ] ¿El CEO asiste al jueves? (cambia el encuadre por completo)
+- [ ] **Alinear con Simeón antes del jueves** y pedirle su inventario de capacidades
+- [ ] Resolver con Milly si *"algo en 2-3 sprints"* es documento o algo funcionando
+- [ ] Confirmar la lectura de la transición de roles Luciana / Simeón
+- [ ] Conseguir línea base de ventas digitales y costo operativo por transacción
+- [ ] Pedir el plan estratégico RIMAC 2026-2028, si existe
 
 ---
 
