@@ -119,3 +119,6 @@
 | F-224 | 🟢 A | 2026-09-09 | Intuición 100 — la prueba social rinde más bajo incertidumbre y compite con la norma injuntiva, no se suma a ella automáticamente |
 | F-228 | 🟢 A | 2026-09-09 | Intuición 101 — la pericia no inmuniza contra la sobrecarga cognitiva intrínseca; la palanca es reducir interactividad de elementos irrelevantes, no exigir más experiencia |
 | F-240 | 🟢 A | 2026-09-09 | Intuición 102 — "sin mecanismo causal establecido" no es lo mismo que "sin mecanismos propuestos"; verificar cuál de los dos déficits aplica antes de descartar o adoptar un método con marca |
+| F-403 | 🟢 A | 2026-09-11 | Intuición 103 — un hallazgo de UX que rompe la tensión fluidez/estética puede concentrarse en un segmento etario (aquí, 45+); auditar por edad antes de generalizar la palanca |
+| F-65 | 🟢 A | 2026-09-11 | Intuición 104 — cuando una fuente se cita solo por su aporte metodológico, releer su hallazgo sustantivo; puede traer un dato de negocio (adopción, demografía, timing) que el resumen original no capturó |
+| F-337 | 🟢 A | 2026-09-11 | Intuición 105 — antes de fijar un default sobre una conducta con motivación intrínseca ya presente, verificar que no quede por debajo de esa motivación; si no, personalizar el default por perfil |

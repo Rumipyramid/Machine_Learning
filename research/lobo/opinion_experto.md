@@ -3877,6 +3877,83 @@ no descartar el método entero por la etiqueta agregada de "evidencia conceptual
   nombrados pero poco integrados/testeados por contexto, no ausencia total de mecanismo) que cambia
   qué remedio pedir antes de invertir en el método; no cambia su confianza (sigue Alta).
 
+### 103. Un hallazgo de UX que rompe la tensión fluidez/estética puede concentrarse en un segmento demográfico específico — auditar por edad antes de generalizar la palanca
+F-403 ya sostiene el node de tendencias de diseño (§11.4, reformula H7): el resumen del ledger cita
+fijación 33% más rápida, tarea 20% más rápida y mejor calificación estética simultánea (N=48, 10 apps,
+Material 3 Expressive vs. baseline). Leído a fondo (doi.org y chi2026.acm.org bloqueados por el proxy;
+reconstruido vía búsqueda dirigida, `WebSearch` sí disponible hoy), el detalle que el resumen de una
+línea no capturaba: el estudio usó lentes de eye-tracking, orden aleatorizado de condición por app, y
+— el dato de negocio real — **el efecto fue todavía mayor en participantes mayores de 45 años**.
+**Heurística de decisión:** cuando un rediseño reporta una mejora agregada de usabilidad y estética a
+la vez (sin la tensión que predice la literatura clásica), verificar primero si el efecto se concentra
+en un segmento etario específico antes de tratarlo como ganancia pareja — aquí el segmento que más se
+beneficia (45+) coincide con el segmento de mayor prima y mayor necesidad real en seguros de vida/salud,
+lo que convierte un hallazgo genérico de HCI en una palanca de producto específicamente relevante para
+el cliente de mayor valor, no solo un gusto de diseño transversal.
+- **Fuente:** F-403 (🟢A — Bentley, F. et al. 2026, CHI, peer-reviewed en el venue principal de HCI)
+- **Leído a fondo:** 2026-09-11 (doi.org y chi2026.acm.org bloqueados por el proxy del entorno;
+  reconstruido vía búsqueda dirigida el detalle de N=48/eye-tracking/orden aleatorizado y el moderador
+  de edad 45+, no citado en el resumen del ledger)
+- **Conexión razonada, no forzada:** matiza el §11.4 del node de diseño/innovación con un moderador
+  demográfico concreto que no cambia el hallazgo (sigue sin tensión fluidez-estética) pero sí precisa a
+  qué segmento conviene priorizar el rediseño primero.
+
+### 104. Cuando una fuente se cita solo por su aporte metodológico, releer su hallazgo sustantivo — puede traer un dato de negocio que el resumen original no capturó
+F-65 ya sostiene la calibración de `disposicion_compartir_datos_pricing` de `lapuerta`, citada en el
+ledger solo por su contribución de método: los datos de logfile (uso real) son más válidos que el
+autorreporte para medir conducta digital de salud. Leído a fondo (ncbi.nlm.nih.gov bloqueado por el
+proxy, reconstruido vía búsqueda dirigida — JMIR mHealth and uHealth, texto completo indexado), el
+hallazgo sustantivo real del estudio no aparecía en el resumen de una línea: sobre un panel
+representativo de ~2,500 usuarios en Hong Kong, solo el **27.5%** adoptó al menos un género de app de
+salud móvil, los adoptantes tienden a ser **mujeres y de mayor educación**, y el uso se intensifica
+**de noche y los fines de semana** (patrón temporal, no uso disperso parejo). **Heurística de
+decisión:** cuando una fuente entra al ledger citada solo por un punto metodológico (ej. "el logfile es
+más válido que la encuesta"), volver a leer cuál fue el hallazgo *sustantivo* del propio estudio —
+puede contener un dato demográfico o de timing directamente aplicable que el resumen original, enfocado
+en otra cosa, descartó; aquí el perfil de adopción (mujer, educada) y la ventana de uso (noche/fin de
+semana) son información de canal y momento de contacto relevante para cualquier producto de salud
+digital, no solo un dato de método.
+- **Fuente:** F-65 (🟢A — estudio observacional peer-reviewed con datos de comportamiento real, panel de
+  logfiles, Hong Kong, 2019)
+- **Leído a fondo:** 2026-09-11 (ncbi.nlm.nih.gov bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que localizó el hallazgo sustantivo completo — tasa de adopción 27.5%, perfil
+  demográfico y patrón temporal — no citados en el resumen de una línea del ledger)
+- **Conexión razonada, no forzada:** no matiza directamente ninguna tesis numerada (F-65 sostiene
+  parámetros del generador, no una tesis de negocio), pero deja instinto declarado: el perfil de
+  adopción y el patrón temporal de este estudio son candidato natural a revisar si
+  `research/_nodes/modelo-salud-ia-farmacias-peru.md` alguna vez necesita afinar a quién y cuándo
+  dirigir el canal farmacia+triage.
+
+### 105. Antes de fijar un default sobre una conducta que ya tiene motivación intrínseca en parte de la población, verificar que el default no quede por debajo de esa motivación
+F-337 ya sostiene el mecanismo de reactancia por "desvío del asegurador" en el documento externo del
+usuario, citado en el ledger por su hallazgo de framing: encuadrar al emisor de un default/recomendación
+como "experto" reduce la amenaza percibida y el enojo, frente a un framing político. Leído a fondo
+(sciencedirect.com bloqueado por el proxy, reconstruido vía búsqueda dirigida — SSRN/ResearchGate), un
+mecanismo adicional que el resumen no capturaba: en el experimento de campo de Bruns & Perino, un
+**default fijado por debajo de la motivación intrínseca del propio decisor reduce su contribución** —
+un efecto que ni la recomendación ni el mandato replican en la misma magnitud; los autores concluyen que
+lo que genera enojo/amenaza percibida es la **fuerza** de la intervención (default > recomendación,
+mandato > default), no su opacidad, y proponen personalizar el default por las características del
+decisor en vez de fijar uno único para toda la población. **Heurística de decisión:** antes de fijar un
+default de comportamiento (opt-out) sobre una conducta que ya tiene motivación intrínseca en parte del
+segmento (ej. un cliente que ya reporta bien su siniestro, ya paga a tiempo, ya comparte datos de
+telemática por convicción), verificar que el default propuesto esté en o por encima de esa motivación —
+fijarlo más abajo "para simplificar" puede específicamente desincentivar a quien ya lo hacía bien por su
+cuenta, un daño que ni una recomendación ni un mandato producirían; la palanca correcta es personalizar
+el default por perfil de motivación, no un default único para toda la cartera.
+- **Fuente:** F-337 (🟢A — Bruns, H. & Perino, G. 2023, experimento de campo enmarcado, RCT,
+  peer-reviewed, Journal of Behavioral and Experimental Economics)
+- **Leído a fondo:** 2026-09-11 (sciencedirect.com bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida — SSRN working paper y ResearchGate — que confirmó el mecanismo de
+  default-por-debajo-de-motivación-intrínseca y la recomendación de personalización, no citados en el
+  resumen del ledger)
+- **Conexión razonada, no forzada:** profundiza el mecanismo de reactancia detrás de tesis 6 (crisis del
+  nudge) y del "documento externo del usuario" sobre desvío del asegurador (F-329 a F-358) con un caso
+  específico — el riesgo de desincentivar al cliente ya motivado con un default mal calibrado — y
+  conecta con la intuición 6 (F-230, incentivo económico contingente socava motivación ya existente):
+  ambos son variantes del mismo error de diseño (tratar a todo el segmento como si partiera de
+  motivación cero). No cambia la confianza de ninguna tesis numerada.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -3927,15 +4004,17 @@ no descartar el método entero por la etiqueta agregada de "evidencia conceptual
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-10** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-12** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
   *(Resumida el 2026-08-21, el 2026-09-07 y el 2026-09-09; ampliada y
   fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
-  días; el detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una
-  con su propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Diez corridas. **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
+  días, y una vez más el 2026-09-11 al salir el bloque del 08-12 (ambas entradas: corrida diaria +
+  revisión profunda de `cronista`) por completo de la ventana; el detalle de cada tesis creada o
+  matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su propia fecha de "Actualizado"; el
+  detalle de cada Intuición vive en esa sección con su propia fuente/fecha.)* Once corridas.
+  **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
   ~139%, la rentabilidad depende de disciplina de suscripción, no de la capa tecnológica); corrigió
@@ -3955,62 +4034,17 @@ no descartar el método entero por la etiqueta agregada de "evidencia conceptual
   **2026-08-10** — poda de bitácora (consolidó la primera semana en una entrada resumida); quinta
   corrida de intuición (entradas 13-15: F-41 brecha de competencias en telesalud peruana, F-303 NDR de
   Figma impulsado por créditos de IA no por asientos, F-434 ambidestreza organizacional y sesgo de
-  medición autoreportada) — matizó tesis 9 y conectó sin cambiar confianza con tesis 21/25. Ningún
-  nivel de confianza de tesis bajó en toda la ventana; todo ajuste fue matiz, corrección de cita o
-  suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-12** — Corrida diaria de refinamiento (no corrió el 2026-08-11: sin commit de este proceso
-  ese día, mismo patrón de brecha ya visto el 2026-08-04). Confirmé `main` actualizado (fast-forward a
-  `3ead00f`, que trajo consigo el commit de la corrida del 2026-08-10) y leí `codice.md` completo:
-  verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (141 fuentes 🟢A confirmadas) — sigue
-  tope exacto en F-468, idéntico al que ya procesó la corrida del 2026-08-10 (última modificación real
-  del archivo: 2026-08-05) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas registradas
-  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces. Repasé las 25 tesis contra
-  ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé ninguna conexión de tesis
-  nueva solo por completar el paso — la racha de "sin cambios" desde el 2026-08-05/06 ya agotó las
-  conexiones razonables disponibles entre las tesis más recientes. La última revisión profunda (rutina
-  de `cronista`, cada ~3 días, última el 2026-08-05) no vence hoy. Sí corrió la rutina diaria de
-  intuición (séptima corrida desde que se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 15 ya
-  tenían lectura profunda del Lobo — seleccioné al azar 3 de las 126 restantes: F-91 (Cutler & Reber,
-  caso Blue Cross/Blue Shield/Harvard, espiral de selección adversa), F-111 (Carr-Hill, capitación de
-  atención primaria NHS) y F-243 (Fok & Weld 2024, verificabilidad de explicaciones de IA). Sumé las
-  entradas 16, 17 y 18 de Intuición acumulada: (16) dar "elección" entre planes con el mismo subsidio
-  puede detonar una espiral de selección adversa que colapsa el plan generoso en pocos años — heurística
-  general de diseño de producto de seguros, sin tesis específica que matizar; (17) auditar qué variable
-  de necesidad real queda *afuera* de una fórmula de asignación/precio, no solo si las que entran son
-  plausibles — el Carr-Hill omite privación socioeconómica pese a lucir técnicamente riguroso, y esa
-  omisión (no un peso mal calibrado) es la que subfinancia sistemáticamente a las zonas más pobres;
-  transferible a cualquier fórmula de riesgo/pricing que `lapuerta` o Rimac calculen por reglas; (18)
-  antes de invertir en explicar una decisión de IA, preguntar si la tarea es verificable — si el usuario
-  no puede contrastar de forma independiente si la IA tiene razón, ninguna explicación mejora el
-  desempeño complementario humano+IA; profundiza directamente la fuente que ya sostenía la regla C8
-  (verificabilidad > explicabilidad) citada en tesis 22, sin cambiarle la confianza. Ninguna tesis de
-  negocio cambió de confianza por esta corrida — es el mecanismo paralelo de intuición, no una revisión
-  de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
-  fuentes leídas hoy. Bitácora con 24 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30
-  días — sin podar todavía.
-- **2026-08-12 (revisión profunda, rutina `cronista` cada ~3 días)** — Leí a fondo las 5 fuentes 🟢A
-  más antiguas sin revisión completa según `research/fuentes/revision_profunda.md`: F-55, F-56, F-57,
-  F-58 y F-59 (todas de `/seeker` 2026-07-06, sección de estrategias de testeo del piloto
-  farmacia+triage IA). Las cinco URLs (nature.com, ncbi.nlm.nih.gov, pmc.ncbi.nlm.nih.gov) están
-  bloqueadas por el proxy de red de este entorno — el mismo bloqueo que ya había registrado la rutina
-  diaria de intuición el 2026-08-08/09; reconstruí el contenido con búsquedas dirigidas múltiples por
-  fuente (no solo el resumen de una línea), incluyendo el hallazgo de que el artículo de resultados
-  reales de F-55 (Cully et al. 2017, no solo el protocolo de 2012) está indexado y accesible por
-  búsqueda aunque el PDF original no lo esté. Encontré y corregí dos errores de autoría en
-  `codice.md`: F-55 estaba atribuido a "Bauer, M.S. et al." (el autor principal real es Jeffrey A.
-  Cully) y F-57 solo decía "PMC (framework metodológico)" (autor principal real: Jethro C.C. Kwong).
-  Agregué un bloque "[Revisión profunda 2026-08-12]" a tesis 10 (tres años de aprendizaje sobre
-  rigurosidad de testeo: el silent trial no tiene guías formales todavía y puede colapsar por
-  distribution shift; el ejemplo tipo 2 de tesis 9 sí funcionó pero con efecto modesto y desigual por
-  subgrupo; el stepped-wedge tiene una controversia metodológica activa — Kotz et al. 2012 vs.
-  Mdege/Hemming — que la tesis nunca declaraba) — confianza sin cambio (Alta), matiza el proceso de
-  testeo, no la dirección. Enriquecí también `research/_nodes/modelo-salud-ia-farmacias-peru.md` §4
-  (E1, E2, E3) con el mismo detalle y actualicé su fila en `research/alma.md`. F-55 y F-56 ya habían
-  sido leídos a fondo por la rutina diaria de intuición (entradas 10 y 11, 2026-08-08/09) — sin
-  conflicto: esta rutina lee para matizar tesis/nodes, la diaria lee para heurísticas transferibles;
-  el ángulo de esta corrida (resultados cuantitativos de Cully 2017, alcance del caso de Kwong,
-  controversia Kotz-vs-Mdege) es nuevo en ambos casos. Actualicé
-  `research/fuentes/revision_profunda.md` con las 5 fuentes de este ciclo.
+  medición autoreportada) — matizó tesis 9 y conectó sin cambiar confianza con tesis 21/25.
+  **2026-08-12** — sin cambios sustanciales en el ledger (F-468, brecha del 08-11 sin corrida); sexta
+  corrida de intuición (entradas 16-18: F-91 espiral de selección adversa Blue Cross/Blue
+  Shield/Harvard, F-111 omisión de privación socioeconómica en el Carr-Hill NHS, F-243 verificabilidad
+  como condición para que explicar una IA rinda). El mismo día, revisión profunda de `cronista`
+  (F-55 a F-59, estrategias de testeo del piloto farmacia+triage IA) corrigió dos autorías mal
+  atribuidas en `codice.md` (F-55, F-57) y sumó a tesis 10 el matiz de que el silent trial carece de
+  guías formales y el stepped-wedge tiene una controversia metodológica activa (Kotz et al. vs.
+  Mdege/Hemming) — confianza sin cambio (Alta). Ningún nivel de confianza de tesis bajó en toda la
+  ventana; todo ajuste fue matiz, corrección de cita o suma de tesis nueva sobre evidencia que la
+  refuerza.
 - **2026-08-13** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
   d739018→a3f9789, que trajo consigo el commit de la revisión profunda del 2026-08-12) y leí
   `codice.md` completo: verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (141 fuentes 🟢A
@@ -5143,3 +5177,47 @@ no descartar el método entero por la etiqueta agregada de "evidencia conceptual
   ningún dato porque el resumen ya cubría lo sustantivo y el detalle fino sigue en 🎯 Tesis vigentes /
   🧠 Intuición acumulada. Bitácora con 29 días de historial (2026-08-12 a hoy) tras esta limpieza —
   dentro de la ventana de ~30 días.
+- **2026-09-11** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward `2937e16→fb4eefb` que trajo consigo el propio commit del 2026-09-10 de esta
+  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
+  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 11 corridas, **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  vigesimonoveno día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra
+  ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo
+  por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no
+  la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva treinta días sin
+  correr). **Poda de bitácora:** el bloque "2026-08-12" (corrida diaria + revisión profunda de
+  `cronista`, ambas del mismo día) salió por completo de la ventana de ~30 días (cutoff ≈2026-08-12) —
+  lo fusioné con el bloque "2026-08-01 a 2026-08-10" en un resumen ampliado "2026-08-01 a 2026-08-12";
+  no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive en sus propias
+  secciones con fecha. **La rutina diaria de intuición sí pudo correr hoy** (a diferencia de ayer, cuya
+  caída de herramientas de red ya quedó registrada y pospuesta): recalculé por script el universo 🟢A
+  del ledger, esta vez con el filtro estricto ya corregido el 2026-09-08 aplicado también a falsos
+  positivos por *substring* (una fila cuya rigurosidad primaria es 🔵B pero *menciona* "🟢 A" en el
+  texto de su celda, como F-457 y F-466, no cuenta como 🟢A — el filtro correcto exige que el marcador
+  de rigurosidad *empiece* con 🟢A): **134 filas**, cifra que se mantiene estable, contra
+  `fuentes_leidas_lobo.md` (102 ya leídas) — 32 pendientes — y elegí 3 al azar sin reemplazo (Python
+  `random.sample`, sin semilla fija): F-403 (Bentley et al. 2026, CHI, expressive design vs. usability
+  plateau, ya citada en el node de diseño/innovación solo por su cifra agregada de velocidad/estética),
+  F-65 (panel de logfiles de salud móvil en Hong Kong, ya citada en el ledger solo por su aporte
+  metodológico de validez logfile-vs-autorreporte) y F-337 (Bruns & Perino 2023, reactancia a defaults,
+  ya citada solo por el framing "experto" que reduce la amenaza percibida). Las URLs directas de las
+  tres (doi.org/chi2026.acm.org, ncbi.nlm.nih.gov, sciencedirect.com) dieron `EGRESS_BLOCKED` por el
+  proxy del entorno — a diferencia de ayer, sí funcionaron `WebSearch` y la reconstrucción vía búsqueda
+  dirigida, que confirmó detalle de mecanismo/hallazgo nuevo en las tres, no solo el resumen de una
+  línea ya citado. Sumé las entradas 103, 104 y 105 de Intuición acumulada: (103) el efecto de
+  usabilidad+estética del rediseño Material 3 Expressive es más fuerte en participantes de 45+ años —
+  dato de moderador etario ausente del resumen del ledger, que convierte un hallazgo genérico de HCI en
+  palanca de producto para el segmento de mayor prima/necesidad en seguros de vida/salud, matiza el
+  §11.4 del node de diseño/innovación; (104) F-65 se citó siempre solo por su punto metodológico
+  (logfile > autorreporte), pero su hallazgo sustantivo real — adopción de apps de salud del 27.5%,
+  sesgada a mujeres y mayor educación, con uso concentrado de noche y fin de semana — nunca había
+  entrado al ledger; instinto declarado, no tesis, sobre a quién y cuándo dirigir el canal
+  farmacia+triage; (105) el experimento de Bruns & Perino muestra que un default fijado *por debajo* de
+  la motivación intrínseca de un decisor reduce su conducta, un efecto que ni la recomendación ni el
+  mandato replican — heurística de diseño de default (personalizar por perfil de motivación, no fijar
+  uno único) que conecta con la intuición 6 (F-230, incentivo contingente socava motivación ya
+  existente) como la misma familia de error de diseño. Ninguna tesis de negocio cambió de confianza
+  numérica por esta corrida — es el mecanismo paralelo de intuición. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 29 días de
+  historial (2026-08-13 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
