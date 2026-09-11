@@ -4,7 +4,10 @@
 > diseño del **lunes 14-sep** con los dos service designers, y para dar rol y forma a la
 > **reunión de todo el canal del jueves 17-sep**.
 >
-> **Actualizado el 2026-09-11 (tarde)** con lo conversado con Milly — ver §0.5, §2.5 y §5.1-bis.
+> **Actualizado el 2026-09-11 (noche)**: confirmaciones del usuario incorporadas — RIMAC, JTBD,
+> alcance con postventa y siniestros, César y Jonathan, el CEO no asiste al jueves, el entregable
+> es un documento con soluciones ejecutables, Luciana ya es Gerente del canal de la App, y **no
+> existe plan estratégico RIMAC 2026-2028**. Ver §0.5 ④, §2.5 y §5.5.
 >
 > Integra tres marcos: **Jobs to be Done** (eje de demanda), **modelo por componentes** (eje de
 > oferta) y **The Cone Framework** de Romano Theunissen — *The Futures Cone Reimagined*, Journal
@@ -86,28 +89,53 @@ dueño.** Eso te ahorra trabajo en la Etapa 4 y, sobre todo, te permite ubicar l
 confrontar a nadie: no la cuestionas, la clasificas junto a los demás escenarios y dejas que la
 pregunta *¿preferido por quién, bajo qué condiciones?* haga el trabajo.
 
-### Los dos vacíos que quedan abiertos
+**④ No existe un plan estratégico RIMAC 2026-2028.** *(Confirmado el 11-sep. Era una pregunta
+abierta; ahora es un hecho, y es el más pesado de los cuatro.)* Tres consecuencias:
 
-Preguntas para Milly y Simeón, **no** para el taller:
+- **Explica el pedido del CEO mejor de lo que parecía.** No es que no le cuenten lo que hacen: es
+  que **no hay de dónde colgarlo**. Cualquier iniciativa que le llegue es igual de defendible
+  porque no existe un marco corporativo contra el cual contrastarla. Su pedido de claridad está
+  bien fundado.
+- **Le agrega trabajo a la Etapa 3.** El Triángulo de Futuros esperaba poder derivar los *empujes*
+  y el *jalón* de un plan corporativo. Hay que construirlos: los empujes desde mercado, regulación
+  y tecnología; el jalón desde el propio taller. **Prevé 3.5 h para el 1-oct, no 3.**
+- **Sube el listón y el riesgo.** El entregable del 22-oct va a ser, de facto, **el documento
+  estratégico más concreto que tenga la compañía sobre digital**. Es una oportunidad grande y
+  también un peso. Conviene decirlo en voz alta el lunes — y es el argumento para pedir 20 minutos
+  del CEO a mitad de camino (§5.5).
 
-1. ¿Existe un **plan estratégico RIMAC 2026-2028 documentado**? La pregunta original asumía que sí
-   y que faltaba el puente hacia digital. Si existe, el canal debería derivar de él y es material
-   de los *empujes* y el *jalón* de la Etapa 3. **Si no existe, el canal digital está escribiendo
-   estrategia corporativa sin saberlo** — y eso hay que decirlo en voz alta antes de octubre, no
-   después.
-2. ¿Hay **línea base** de las dos métricas del norte? Ventas por canal digital y costo operativo
-   por transacción. Sin línea base, "valor directo" no es medible y el criterio queda cojo en su
-   factor más importante.
+### ⚠️ La pregunta de alcance, que es la más importante que queda abierta
+
+Tres círculos posibles, y no está claro cuál es el encargo:
+
+| Círculo | Quién lo encarna | Tamaño |
+|---|---|---|
+| **La App** | Luciana — Gerente del canal de la App | El más chico |
+| **Todo el canal digital** | Simeón — subgerente de todo el canal digital, y quien agendó el jueves | Intermedio |
+| **Todos los canales** | La definición 2026 dice literalmente "que involucre a todos los canales" | El más grande |
+
+Son tres tamaños de proyecto distintos, y cambian la matriz, la lista de invitados del jueves y el
+destinatario del documento. **Resuélvelo el lunes, antes que cualquier otra cosa.** Si no hay
+respuesta clara, la respuesta por defecto debería ser **todo el canal digital** —el alcance de
+Simeón, que es quien convocó— y declararlo explícitamente en la primera página del documento.
+
+### Lo que sigue abierto
+
+- **La lista completa de ramos y qué agrupa PNC** — sigue sin respuesta; sin eso la matriz no tiene
+  columnas definidas.
+- **Línea base** de las dos métricas del norte: ventas por canal digital y costo operativo por
+  transacción. Sin línea base, "valor directo" no es medible y el criterio queda cojo en su factor
+  más importante.
 
 ### Mapa de actores
 
 | Quién | Rol | Qué necesita de esto |
 |---|---|---|
-| **CEO** | Pidió claridad | Un criterio que pueda aplicar solo, y una visión en una frase |
-| **Luciana** | Gerente (o en camino a serlo) del canal digital / App | Que la estrategia exista y sea suya, no impuesta desde el CoE |
+| **CEO** | Pidió claridad. **No asiste al jueves ni a ninguna de las cinco sesiones** | Un criterio que pueda aplicar solo, y una visión en una frase |
+| **Luciana** | **Gerente del canal de la App** | Que la estrategia exista y sea suya, no impuesta desde el CoE. **Es quien puede ratificar el contrato de proceso en la sala** (§5.5) |
 | **Simeón** | Subgerente del canal digital, bajo Luciana. **Agendó el evento del jueves.** Lleva el seguimiento de capacidades | Que el trabajo se conecte con el inventario de capacidades que él ya lleva, no que lo duplique |
 | **Milly** | Pone el plazo: algo en 2-3 sprints | Un entregable por sprint, no un informe al final |
-| **2 service designers** | Recomendaron JTBD y modelo por componentes | Que sus marcos sean ejes del mismo sistema, no competidores |
+| **César** y **Jonathan** | Los dos service designers. Recomendaron JTBD y modelo por componentes — *falta saber quién recomendó cuál* | Que sus marcos sean ejes del mismo sistema, no competidores. Cada uno debería ser dueño del eje que propuso |
 | **Tú (CoE de Experiencia)** | Dueño del **método**, no de la ejecución | Que la Etapa 5 asigne dueños por apuesta para no quedar como cuello de botella |
 
 > ⚠️ **Simeón agendó el jueves, y eso cambia la política de la reunión.** No es tu reunión: es de
@@ -122,9 +150,9 @@ Preguntas para Milly y Simeón, **no** para el taller:
 > ya está haciendo.** Pregúntale por su inventario actual *antes* de construir uno nuevo — si ya
 > existe, te ahorras una semana del Sprint 1 y le das autoría.
 >
-> **(3)** Hay una transición de roles en curso (Simeón asume capacidades en el marco de que Luciana
-> pase a gerente — *confirmar esta lectura*). Las transiciones abren ventana para instalar un
-> criterio nuevo y la cierran rápido. Juega a favor del calendario apretado.
+> **(3)** *Corrección del 11-sep:* no hay transición de roles pendiente — **Luciana ya es Gerente
+> del canal de la App**. Lo que sí queda es la asimetría de alcances entre ella y Simeón, que es la
+> pregunta de alcance de más arriba.
 
 ---
 
@@ -208,41 +236,46 @@ de dos semanas arrancando el lunes 14.
 |---|---|---|---|
 | **1** | 15 → 26 sep | E1 (17-sep) · E2 (24-sep) · volumetría e inventario | Presente construido · inventario de componentes con estado · mitos listados para falsar · **línea base de las dos métricas del norte** |
 | **2** | 29 sep → 10 oct | E3 (1-oct) · E4 (8-oct) | **Criterio con pesos · matriz Job × Componente priorizada · futuro preferido · escenarios clasificados (incluida la super app)** |
-| **3** | 13 → 24 oct | E5 (15-oct) · presentación al CEO (~22-oct) | Cartera de 3 apuestas con dueños, renuncias y señales de falsación · la visión en una frase |
+| **3** | 13 → 24 oct | E5 (15-oct) · **checkpoint con el CEO** (§5.5) · presentación (~22-oct) | **El documento de dos partes**: Parte A (visión + criterio con pesos) y Parte B (3 soluciones especificadas para ejecutar, con alcance, métrica, dueño y dependencias) |
 
 > ✂️ **Si Milly solo tiene dos sprints, el corte es el 10 de octubre.** Al cierre del Sprint 2 ya
 > hay con qué decidir: criterio, matriz priorizada y futuro preferido. Lo que falta después es el
 > backcasting y la asignación de dueños — importante, pero ya no bloquea la toma de decisiones.
 
-### La ambigüedad que hay que resolver el lunes
+### Resuelto: qué es «algo» — un documento con soluciones para ejecutar
 
-Cuando Milly dice *"tener algo en 2-3 sprints"*, ¿**algo** es un documento de estrategia o **algo
-funcionando**? En un equipo de app que corre sprints, probablemente lo segundo. Y si es lo
-segundo, un plan que entrega solo documentos se va a leer como **seis semanas de talleres**.
+Milly lo aclaró. Eso cierra la ambigüedad y cambia dos cosas.
 
-**Propuesta: dos tracks en paralelo.**
+**① El Track B se cae como estaba planteado.** No hace falta tener algo corriendo al cierre del
+Sprint 3. Pero deja una regla, más abajo.
 
-- **Track A — El criterio.** Los jueves, tal cual el plan.
-- **Track B — Una activación temprana**, que arranca en el Sprint 1 y entrega en el 3.
+**② Sube la resolución del entregable final.** El plan entregaba «cartera de 3 apuestas con
+dueños». Eso no alcanza: *soluciones para ejecutar* significa que un equipo debe poder tomar el
+documento y empezar. Hay que llegar a **alcance, métrica, dueño, dependencias de capacidad y un
+primer corte de qué se construye**, por cada una de las tres.
 
-**Track B tiene tres condiciones no negociables**, porque sin ellas es exactamente el problema que
-el CEO reportó:
+> ⚠️ **Y hay una trampa que hay que nombrar en voz alta el lunes.** «Un documento con soluciones
+> para ejecutar» está a un paso de ser exactamente lo que el CEO reportó como problema:
+> *soluciones*. La única diferencia es que estas vienen **con el criterio que las justifica, y el
+> criterio manda sobre ellas.**
 
-1. Sale **solo** de la categoría `Existe pero no se usa` — capacidad ya pagada, **cero
-   arquitectura nueva**, nada que comprometa la decisión de super app.
-2. Se elige con **volumetría pura** y la regla ya escrita en §3.1 (volumen alto + fricción alta +
-   capacidad instalada), **no por opinión ni por quién lo pida**.
-3. Se declara explícitamente como **piloto de aprendizaje que alimenta la Etapa 3**, con métrica
-   atada al norte del canal —ventas o contactos evitados—, **nunca MAU**.
+Por eso el entregable es **un documento de dos partes**:
 
-> Con esas tres condiciones, Track B **no rompe la regla de oro de §2**: la regla protege contra
-> *elegir apuestas grandes sin criterio*, y esto es una activación reversible de algo ya pagado,
-> medida contra el norte que el propio canal declaró. **Sin las tres condiciones, sí la rompe** —
-> y se convierte en la solución número cincuenta y uno sin estrategia.
+| | **Parte A — Por qué** | **Parte B — Qué** |
+|---|---|---|
+| Contenido | La visión (1 frase + 3 principios) y el criterio de priorización con sus pesos | Las 3 soluciones especificadas para ejecutar |
+| Orden | Se escribe primero | **Se deriva de A — cada solución muestra su score** |
+| Uso posterior | Cualquier iniciativa futura pasa por aquí | Se ejecuta y se mide contra el norte del canal |
 
-> 🎯 Track B es lo que te permite responderle a Milly el lunes: *"al cierre del sprint 3 tienes el
-> criterio, la visión y la cartera — y además una activación corriendo y medida contra ventas o
-> gasto operativo."*
+> 🔒 **La regla que protege todo el trabajo, y va en la primera página del documento:** si alguien
+> extrae la Parte B y la circula sola, reprodujimos el problema que el CEO reportó. La Parte B sin
+> la Parte A es una lista de soluciones más.
+
+**Regla para las tres soluciones:** al menos una debe salir de la categoría `Existe pero no se usa`
+— ejecutable en el sprint siguiente, sin arquitectura nueva y sin comprometer la decisión de super
+app. Es la que le da a Milly algo que se mueve de inmediato y compra credibilidad para las otras
+dos.
+
 
 ---
 
@@ -379,9 +412,12 @@ el componente cambia quién debe ser su dueño:
 > que vas a encontrar, y da las victorias tempranas que compran credibilidad para las apuestas
 > largas.
 
-**Peligro a vigilar**: si "digital" se lee solo como capas 1-3 (vender), la estrategia nace coja.
-En seguros el valor percibido y la renovación se juegan en las capas 4-5. Probablemente tengas que
-dar esa batalla el jueves.
+> ✅ **Confirmado el 11-sep: el alcance incluye postventa y siniestros.** Esa era la batalla que
+> anticipaba dar el jueves, y ya no hay que darla — las capas 4 y 5 están dentro por definición, y
+> además son donde vive el norte del canal (autogestión y gasto operativo). **Consecuencia
+> práctica: la matriz debe tener al menos tanta densidad en las capas 4-5 como en las 1-3.** Si al
+> cerrar el Sprint 1 el inventario está cargado solo hacia venta, el levantamiento falló y hay que
+> volver a pedirlo.
 
 ---
 
@@ -614,9 +650,38 @@ plantilla de una página, individual:
 >
 > 💡 El campo 3 es el puente a la Etapa 2: cada respuesta es una entrada de la línea de tiempo.
 
+### 5.5 El CEO no está en la sala — dos cosas que resolver
+
+Confirmado: al jueves va **gerencia para abajo, sin CEO**. Y tampoco participa de ninguna de las
+cinco sesiones.
+
+**Lo bueno, y no es menor:** sin el CEO en la sala, *Recruit or Repel* funciona mucho mejor. La
+verdad afectiva se dice cuando el jefe máximo no está. Es una ventaja real para la Etapa 1.
+
+**(1) El contrato de proceso (O3) necesita a Luciana.** El acuerdo de que *"desde hoy ninguna
+iniciativa entra sin pasar por el criterio"* **no lo puedes declarar tú**: eres del CoE, no del
+canal. Necesitas que **Luciana lo diga en la sala**, o que lo respalde explícitamente. Pídeselo
+antes del jueves, junto con la alineación con Simeón (§5.1-bis).
+
+**(2) El destinatario final no participa de ninguna sesión.** Riesgo real: llegar el 22-oct con
+algo que no se parece a lo que el CEO tenía en la cabeza, después de seis semanas y sin margen para
+corregir.
+
+> 🎯 **Antídoto: un checkpoint de 20 minutos con el CEO al cierre del Sprint 2** (semana del
+> 13-oct), cuando ya existan el criterio y el futuro preferido pero **antes** de especificar las
+> soluciones. No es para pedir permiso: es para verificar que **el criterio le sirve para decidir**.
+> Si le sirve, la Parte B se escribe sola. Si no, corriges con dos semanas de margen en vez de
+> cero. Y ahora tienes el argumento para pedirlo: **no existe plan estratégico corporativo**
+> (§0.5 ④), así que este documento va a ser la referencia de la compañía sobre digital.
+
+**Táctica para la franqueza con Luciana presente.** La agenda ya la protege: escritura individual
+en silencio antes del plenario (min 10-40) y post-its anónimos (min 60-75). **Mantén esos dos
+formatos exactamente como están** — son lo que permite que se diga lo incómodo con la gerente en la
+sala.
+
 ---
 
-## 6. La sesión del lunes 14-sep con los dos service designers
+## 6. La sesión del lunes 14-sep con César y Jonathan
 
 **2 h. Objetivo: salir con el plan firmado y el jueves diseñado.** No es para explorar marcos, es
 para cerrar decisiones.
@@ -632,11 +697,26 @@ para cerrar decisiones.
 | 100-110 | **Volumetría** (§3.1) | Lista de pedidos de datos, a quién, quién los persigue |
 | 110-120 | **Calendario y el offsite** | ¿Se pelea el offsite de 2 días para E4+E5 (8-9 oct)? Dueño de cada entregable |
 
+### Reparto de facilitación — César y Jonathan
+
+Falta saber **quién recomendó qué**. Ese dato define el reparto natural y vale la pena preguntarlo
+al abrir: **cada uno es dueño del eje que propuso**, y tú del marco que los integra. Es el reparto
+que desactiva la competencia entre marcos — no compiten porque cada uno tiene su eje y ninguno
+tiene el todo.
+
+| Sesión | Facilita | Por qué |
+|---|---|---|
+| **E1 · 17-sep** | **Tú** | Es afectiva y narrativa: es tu disciplina |
+| **E2 · 24-sep** | Tú + quien propuso componentes | Las líneas de tiempo cruzan memoria y capacidad |
+| **E3 · 1-oct** | Quien propuso **componentes** | Es la sesión analítica y la que usa la volumetría |
+| **E4 · 8-oct** | Quien propuso **JTBD** | Escenarios, imaginación y clasificación |
+| **E5 · 15-oct** | Tú + **Simeón** | Compromisos y dueños: necesita al canal, no al CoE |
+
 **Preguntas que hay que resolver el lunes y no después:**
 
-1. ¿Cuál es la **lista real de ramos** y qué agrupa "PNC"? (tu dictado vino incompleto)
-2. ¿"Canales digitales" incluye **postventa y siniestros** o solo venta? → determina si la
-   estrategia nace coja (§3.3)
+1. ⚠️ **¿Cuál es el alcance real — la App, todo el canal digital, o todos los canales?** (§0.5).
+   Es la primera, y cambia el tamaño de todo lo demás.
+2. ¿Cuál es la **lista completa de ramos** y qué agrupa "PNC"? Sin eso la matriz no tiene columnas.
 3. ¿Qué iniciativas **ya están comprometidas y presupuestadas** para 2027? → son el escenario
    **"proyectado"** de la Etapa 4, y el criterio tiene que poder convivir con ellas
 4. ¿Quién decide finalmente — el CEO, un comité, tu jefa? → determina el formato del entregable
@@ -644,13 +724,11 @@ para cerrar decisiones.
    activables en el corto plazo
 6. ¿Los dos service designers **facilitan** las etapas 2-5 o solo diseñan? → afecta tu carga y el
    riesgo de cuello de botella
-7. Para Milly: *"algo en 2-3 sprints"* — ¿documento o **algo funcionando**? → decide si va el
-   Track B (§2.5)
-8. ¿Existe un **plan estratégico RIMAC 2026-2028** documentado del cual derivar? (§0.5)
-9. ¿Hay **línea base** de ventas digitales y costo operativo por transacción? Sin eso, el factor de
+7. ¿Hay **línea base** de ventas digitales y costo operativo por transacción? Sin eso, el factor de
    valor económico no es calculable
-10. ¿Quién es el dueño formal de la **decisión de super app** — Luciana, el CEO, TI? → determina si
-    la E4 puede realmente clasificarla o solo comentarla
+8. ¿Quién es el dueño formal de la **decisión de super app** — Luciana, el CEO, TI? → determina si
+   la E4 puede realmente clasificarla o solo comentarla
+9. ¿Quién de los dos recomendó JTBD y quién el modelo por componentes? → define el reparto de arriba
 
 ---
 
@@ -666,6 +744,9 @@ para cerrar decisiones.
 | Producimos un modelo elegante que nadie usa | El criterio nunca se aplica a un caso real | **Prueba de fuego**: aplicar el scoring en vivo a 3 solicitudes reales pendientes, delante del comité |
 | Pérdida de cohesión por estirar a 5 semanas | Cae la asistencia del núcleo en la 3.ª sesión | Mismo núcleo, recap de 5 min, muro persistente; o el offsite E4+E5 |
 | El núcleo termina siendo homogéneo | Solo van los "digitales" y los entusiastas | Composición nominal por representatividad (§4.3, adv. 3), no por invitación abierta |
+| El CEO no participa de ninguna sesión y el 22-oct no reconoce su pedido | Nadie ha validado el criterio con él | Checkpoint de 20 min al cierre del Sprint 2 (§5.5) |
+| Alguien circula la Parte B sin la Parte A | «Pásame solo las tres soluciones» | La regla en la primera página del documento (§2.5) |
+| El alcance real nunca se define | Se habla de «la app» y de «todos los canales» en la misma frase | Decidirlo el lunes; por defecto, todo el canal digital, declarado por escrito |
 | Simeón llega al jueves esperando otra reunión | No respondió o no confirmó el encuadre | Alineación previa obligatoria (§5.1-bis) — es su evento |
 | La super app se blinda como premisa no discutible | «Eso ya está decidido» antes de la E4 | Clasificarla, no cuestionarla; y pedir el puente de evidencia hacia ventas y gasto operativo (§0.5 ①) |
 | El plan se lee como seis semanas de talleres | Milly pregunta «¿y qué entregamos?» | Track B con sus tres condiciones (§2.5) |
@@ -694,20 +775,26 @@ para cerrar decisiones.
 
 ---
 
-## 9. Pendientes que dependen de ti
+## 9. Pendientes
 
-- [ ] **Confirmar el nombre** (Rimac vs. Rimax) y la lista completa de ramos, incl. qué es PNC
-- [ ] Confirmar si "job studion" = Jobs to be Done (§3.2)
-- [ ] Confirmar el alcance: ¿canales digitales incluye postventa y siniestros?
-- [ ] Definir la **lista nominal del núcleo** por representatividad, antes del jueves
-- [ ] Decidir si se pelea el **offsite de 2 días** para E4+E5
-- [ ] Nombres y roles de los dos service designers → reparto de facilitación
-- [ ] ¿El CEO asiste al jueves? (cambia el encuadre por completo)
+### ✅ Resuelto el 11-sep
+
+RIMAC (no Rimax) · «job studion» = Jobs to be Done · el alcance incluye postventa y siniestros ·
+los service designers son César y Jonathan · el CEO no asiste al jueves (gerencia para abajo) ·
+«algo en 2-3 sprints» = un documento con soluciones para ejecutar · Luciana ya es Gerente del canal
+de la App · **no existe plan estratégico RIMAC 2026-2028**.
+
+### Abierto — para el lunes
+
+- [ ] ⚠️ **Definir el alcance**: ¿la App, todo el canal digital, o todos los canales? (§0.5)
+- [ ] **Lista completa de ramos** y qué agrupa PNC
+- [ ] Quién recomendó JTBD y quién componentes, entre César y Jonathan → reparto de facilitación
 - [ ] **Alinear con Simeón antes del jueves** y pedirle su inventario de capacidades
-- [ ] Resolver con Milly si *"algo en 2-3 sprints"* es documento o algo funcionando
-- [ ] Confirmar la lectura de la transición de roles Luciana / Simeón
+- [ ] **Pedirle a Luciana que ratifique el contrato de proceso en la sala** (§5.5)
+- [ ] Gestionar el **checkpoint de 20 min con el CEO** para la semana del 13-oct
 - [ ] Conseguir línea base de ventas digitales y costo operativo por transacción
-- [ ] Pedir el plan estratégico RIMAC 2026-2028, si existe
+- [ ] Definir quién es el dueño formal de la decisión de super app
+- [ ] Decidir si se pelea el offsite de dos días para las etapas 4 y 5
 
 ---
 
