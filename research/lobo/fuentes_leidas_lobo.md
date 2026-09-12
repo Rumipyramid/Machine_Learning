@@ -122,3 +122,6 @@
 | F-403 | 🟢 A | 2026-09-11 | Intuición 103 — un hallazgo de UX que rompe la tensión fluidez/estética puede concentrarse en un segmento etario (aquí, 45+); auditar por edad antes de generalizar la palanca |
 | F-65 | 🟢 A | 2026-09-11 | Intuición 104 — cuando una fuente se cita solo por su aporte metodológico, releer su hallazgo sustantivo; puede traer un dato de negocio (adopción, demografía, timing) que el resumen original no capturó |
 | F-337 | 🟢 A | 2026-09-11 | Intuición 105 — antes de fijar un default sobre una conducta con motivación intrínseca ya presente, verificar que no quede por debajo de esa motivación; si no, personalizar el default por perfil |
+| F-226 | 🟢 A | 2026-09-12 | Intuición 106 — un fenómeno psicológico clásico importado por nombre a un contexto de negocio distinto exige verificar el mecanismo, no solo que el nombre encaje |
+| F-254 | 🟢 A | 2026-09-12 | Intuición 107 — "puede backfirear por intrusividad" a veces describe solo el canal de riesgo dentro de un efecto neto que sigue siendo positivo |
+| F-305 | 🟢 A | 2026-09-12 | Intuición 108 — un riesgo que la empresa declara contra su propio moat en el S-1 es señal honesta, pero verificar sobre qué línea de producto pesa antes de generalizarlo |

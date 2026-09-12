@@ -3954,6 +3954,85 @@ el default por perfil de motivación, no un default único para toda la cartera.
   ambos son variantes del mismo error de diseño (tratar a todo el segmento como si partiera de
   motivación cero). No cambia la confianza de ninguna tesis numerada.
 
+### 106. Cuando un fenómeno psicológico clásico se importa por nombre a un contexto de negocio distinto al del experimento original, verificar el mecanismo — no basta con que el nombre encaje
+F-226 (Darley & Latané 1968, el estudio fundacional de "difusión de responsabilidad") ya trae en su
+propia fila del ledger la nota de que fue **reemplazada** en 2026-07-25 por F-236 (Davis 1976) como
+fuente de C.6 del Playbook del Asesor RIMAC ("Cuando la decisión se posterga"), por encaje cuestionable.
+Leído a fondo el experimento original (doi.org bloqueado por el proxy; reconstruido vía búsqueda
+dirigida — PubMed, PMC, SciRP), el detalle que la corrección de 2026-07-25 ya intuía pero sin cifras: el
+diseño real fue una "emergencia" simulada por intercomunicador (una convulsión fingida) entre 72
+estudiantes que no se veían ni oían entre sí, y el ritmo de ayuda cayó de **85%** (creyéndose solos) a
+**62%** (grupo de tres) a **31%** (grupo de cinco) — un fenómeno sobre *extraños anónimos ante una
+emergencia física*, no sobre *una pareja o familia decidiendo si comprar un seguro*. **Heurística de
+decisión:** cuando una técnica de venta o diseño cita un estudio de psicología social por su nombre
+("difusión de responsabilidad", "prueba social", "reciprocidad"), pedir primero el diseño experimental
+exacto (¿quiénes son los actores?, ¿qué decisión se mide?, ¿qué produce el efecto?) antes de aceptar la
+transferencia al contexto de negocio — el nombre de un efecto viaja mucho más fácil que su mecanismo, y
+este mismo ledger ya tuvo que revertir esta cita exacta una vez que alguien comparó ambos directamente.
+- **Fuente:** F-226 (🟢A — Darley, J. M. & Latané, B. 1968, *Journal of Personality and Social
+  Psychology*, experimento controlado fundacional, peer-reviewed)
+- **Leído a fondo:** 2026-09-12 (doi.org/10.1037/h0025589 bloqueado por el proxy del entorno;
+  reconstruido vía búsqueda dirigida — PubMed/PMC/SciRP — que confirmó el diseño de intercomunicador y
+  las cifras 85%/62%/31% por tamaño de grupo, no citadas en el resumen de una línea del ledger)
+- **Conexión razonada, no forzada:** no abre una tesis nueva ni matiza una vigente — documenta con
+  cifras exactas una corrección que el propio ledger ya había hecho por criterio cualitativo (F-226→
+  F-236), y generaliza esa corrección puntual a heurística reutilizable para la próxima cita de
+  psicología social "de marca" que aparezca en cualquier playbook de venta.
+
+### 107. Un "puede backfirear por intrusividad" en el resumen a veces describe solo el canal de riesgo dentro de un efecto neto que sigue siendo positivo — verificar el efecto neto observado, no solo el mecanismo adverso aislado
+F-254 sostiene la regla C10 del node de diseño/innovación (§2.2), citada en el ledger con el resumen
+"el consejo personalizado con IA puede **reducir** la compra por intrusividad percibida" — una frase que,
+leída sola, suena a recomendación de "no personalizar". Leído a fondo (sciencedirect.com bloqueado por
+el proxy; reconstruido vía búsqueda dirigida), el hallazgo real del experimento de campo es un modelo de
+**doble vía**: la respuesta personalizada (vs. humorística) de un agente de IA **sí aumentó** la
+probabilidad de compra observada, por una vía positiva (atribución de utilidad/ayuda genuina) que
+**domina** sobre una vía negativa que compite (preocupación por intrusividad) — el backfire es un canal
+parcial que erosiona parte de la ganancia, no un efecto neto negativo. Los propios autores enmarcan el
+resultado como "cuándo la personalización potencia o socava" el efecto, condicional al *framing* del
+mensaje, no como un veredicto binario personalizar/no personalizar. **Heurística de decisión:** frente a
+un resumen tipo "X puede backfirear/fallar por mecanismo Y", pedir el efecto neto reportado en el propio
+estudio antes de usarlo como advertencia — muchos papers de mecanismo dual (positivo + negativo
+compitiendo) terminan con una conclusión práctica más parecida a "hacerlo bien, no dejar de hacerlo", y
+citar solo el canal adverso invierte la recomendación real del autor.
+- **Fuente:** F-254 (🟢A — estudio cualitativo + experimento de campo aleatorizado, peer-reviewed,
+  *Journal of Retailing and Consumer Services*, 2026)
+- **Leído a fondo:** 2026-09-12 (sciencedirect.com bloqueado por el proxy del entorno; reconstruido vía
+  búsqueda dirigida que confirmó el modelo de doble vía —helpfulness vs. intrusividad— y que el efecto
+  neto observado en campo fue positivo, no negativo, detalle ausente del resumen de una línea del
+  ledger)
+- **Conexión razonada, no forzada:** matiza directamente la regla C10 citada en
+  `research/_nodes/tendencias-diseno-innovacion.md` §2.2 (candidata a nota de precisión, no a reversión:
+  "personalización con IA puede reducir conversión" debería leerse "el framing del mensaje decide si la
+  vía de intrusividad supera o no a la vía de utilidad percibida") y es la misma familia de error que la
+  intuición 55 (un correlacional no pierde crédito cuando ya controla el confusor obvio): aquí el riesgo
+  es el inverso, perder crédito neto por citar solo el confusor/canal negativo.
+
+### 108. Un riesgo que la propia empresa declara contra su moat en un S-1 es señal honesta de vulnerabilidad real, pero conviene precisar sobre qué línea de producto pesa antes de generalizarlo a toda la compañía
+F-305 (S-1 de Figma) ya sostiene §4.1 del node de diseño/innovación con las cifras pre-IPO (revenue 2024
+US$749M, +48%; NDR 132%) y la nota de que la propia compañía declara como factor de riesgo que la IA
+baje la barrera de entrada de su categoría. El acceso directo al S-1 (sec.gov) volvió a estar bloqueado
+por el proxy del entorno hoy — a diferencia de F-226 y F-254, no hubo mirror alternativo del propio
+documento primario disponible vía búsqueda dirigida, así que esta entrada se apoya en cobertura
+secundaria convergente (análisis de inversión, prensa especializada) que cita/parafrasea el riesgo, no en
+el texto literal del filing; se declara la limitación en vez de tratarlo como verificado con el mismo
+rigor que F-226/F-254. Con esa salvedad, la cobertura es consistente en un punto que el resumen de una
+línea del ledger no explicitaba: el riesgo de "AI baja la barrera de entrada" se describe apuntando
+específicamente al **lienzo colaborativo clásico** (el producto original de Figma, donde compiten
+herramientas nativas de IA que generan diseño desde cero) — no a las líneas de expansión más recientes
+(Dev Mode, Slides, Sites, Make) con las que la compañía se está diversificando. **Heurística de
+decisión:** cuando una empresa declara en su propio S-1 un riesgo contra su ventaja competitiva central,
+tratarlo como señal honesta y no como boilerplate legal genérico — pero antes de generalizarlo a "toda la
+empresa está en riesgo por IA", verificar sobre qué línea de producto específica pesa la amenaza y cuáles
+otras líneas la compañía ya está usando para diversificarse lejos de ese punto de presión.
+- **Fuente:** F-305 (🟢A — dato primario SEC, Form S-1 de Figma, Inc., 2025)
+- **Leído a fondo:** 2026-09-12 (sec.gov bloqueado por el proxy del entorno, sin mirror del documento
+  primario disponible; reconstruido solo vía cobertura secundaria convergente — se declara como
+  limitación de esta lectura, no como lectura directa del filing)
+- **Conexión razonada, no forzada:** conecta con la intuición 14 (F-303, el salto de NDR de Figma no es
+  moat durable hasta abrir qué línea específica lo generó) — misma disciplina aplicada al lado del
+  riesgo: no generalizar una amenaza de categoría a toda la compañía sin precisar la línea de producto
+  expuesta. No abre tesis de negocio nueva ni matiza una vigente numerada.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4004,16 +4083,17 @@ el default por perfil de motivación, no un default único para toda la cartera.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-12** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-13** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
   *(Resumida el 2026-08-21, el 2026-09-07 y el 2026-09-09; ampliada y
   fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
-  días, y una vez más el 2026-09-11 al salir el bloque del 08-12 (ambas entradas: corrida diaria +
-  revisión profunda de `cronista`) por completo de la ventana; el detalle de cada tesis creada o
-  matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su propia fecha de "Actualizado"; el
-  detalle de cada Intuición vive en esa sección con su propia fuente/fecha.)* Once corridas.
+  días, el 2026-09-11 al salir el bloque del 08-12, y una vez más el 2026-09-12 al salir el bloque del
+  08-13 (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la
+  ventana; el detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada
+  una con su propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su
+  propia fuente/fecha.)* Doce corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4042,41 +4122,12 @@ el default por perfil de motivación, no un default único para toda la cartera.
   (F-55 a F-59, estrategias de testeo del piloto farmacia+triage IA) corrigió dos autorías mal
   atribuidas en `codice.md` (F-55, F-57) y sumó a tesis 10 el matiz de que el silent trial carece de
   guías formales y el stepped-wedge tiene una controversia metodológica activa (Kotz et al. vs.
-  Mdege/Hemming) — confianza sin cambio (Alta). Ningún nivel de confianza de tesis bajó en toda la
-  ventana; todo ajuste fue matiz, corrección de cita o suma de tesis nueva sobre evidencia que la
-  refuerza.
-- **2026-08-13** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  d739018→a3f9789, que trajo consigo el commit de la revisión profunda del 2026-08-12) y leí
-  `codice.md` completo: verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (141 fuentes 🟢A
-  confirmadas) — sigue tope exacto en F-468, idéntico al que ya procesó la corrida del 2026-08-12 —
-  **sin cambios sustanciales** en evidencia, cero fuentes nuevas registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces. Repasé las 25 tesis contra
-  ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé ninguna conexión de
-  tesis nueva solo por completar el paso. La última revisión profunda (rutina de `cronista`, cada ~3
-  días, última el 2026-08-12) no vence hoy. Sí corrió la rutina diaria de intuición (octava corrida
-  desde que se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 18 ya tenían lectura profunda
-  del Lobo — seleccioné al azar 3 de las 123 restantes: F-16 (Mertens et al. 2022, PNAS, el
-  meta-análisis fundacional de nudging que sostiene tesis 6 solo indirectamente vía las fuentes que
-  lo rebaten, nunca leído directo hasta hoy), F-151 (Es et al. 2024, RAGAS — el framework que el
-  ledger ya cita como estándar para detectar alucinación del agente conversacional) y F-250 (Flohr et
-  al. 2021, MobileHCI, chatbot vs. GUI clásica — ya citada en tesis 24 como contraevidencia a
-  generative UI). Sumé las entradas 19, 20 y 21 de Intuición acumulada: (19) el propio F-16 ya
-  corrió y reportó, sin destacarlo, un análisis de sensibilidad a sesgo de publicación que anticipaba
-  el colapso del efecto que después popularizó la crítica de Maier (F-17) — la advertencia sobre el
-  sesgo de un hallazgo a veces ya vive en el paper original, enterrada en un análisis secundario, no
-  en el titular; (20) RAGAS (y cualquier framework LLM-as-judge) correlaciona apenas ~0.55 con juicio
-  humano y hereda sesgos sistemáticos que promediar más jueces del mismo tipo no cancela — matiza
-  directamente el riesgo vigente sobre medir mal al agente conversacional de Rimac: la métrica que el
-  propio ledger propone como solución no es una vara neutral, necesita triangularse con revisión
-  humana real; (21) el mismo estudio puede dar veredictos opuestos por escenario dentro de la misma
-  tarea — GUI gana en el "camino feliz", chatbot gana específicamente en el momento de
-  interrupción/cambio de plan — la pregunta correcta para un canal conversacional no es "¿cuál gana
-  en promedio?" sino "¿en qué momento específico gana cada uno?", con paralelo directo al punto de
-  falla de reclamos 100%-digitales ya documentado en tesis 16. Ninguna tesis de negocio cambió de
-  confianza por esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia
-  sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 25 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días
-  — sin podar todavía.
+  Mdege/Hemming) — confianza sin cambio (Alta). **2026-08-13** — sin cambios sustanciales en el ledger
+  (F-468, 141 fuentes 🟢A confirmadas); octava corrida de intuición (entradas 19-21: F-16 meta-análisis
+  fundacional de nudging con su propio análisis de sensibilidad enterrado que anticipaba la crítica de
+  Maier, F-151 RAGAS correlaciona ~0.55 con juicio humano, F-250 GUI vs. chatbot con veredictos opuestos
+  por momento de la tarea). Ningún nivel de confianza de tesis bajó en toda la ventana; todo ajuste fue
+  matiz, corrección de cita o suma de tesis nueva sobre evidencia que la refuerza.
 - **2026-08-14** — Corrida diaria de refinamiento. Confirmé `main` actualizado (sin cambios
   pendientes) y leí `codice.md` completo: verifiqué la secuencia F-1 a F-468 sin huecos ni
   duplicados (141 fuentes 🟢A confirmadas) — sigue tope exacto en F-468, idéntico al que ya procesó
@@ -5221,3 +5272,45 @@ el default por perfil de motivación, no un default único para toda la cartera.
   numérica por esta corrida — es el mecanismo paralelo de intuición. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 29 días de
   historial (2026-08-13 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
+- **2026-09-12** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward `2937e16→ff84439` que trajo consigo el propio commit del 2026-09-11 de esta
+  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
+  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 12 corridas, **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  trigésimo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese
+  mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por
+  completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la
+  disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva treinta y un días sin
+  correr). **Poda de bitácora:** el bloque "2026-08-13" salió por completo de la ventana de ~30 días
+  (cutoff ≈2026-08-13) — lo fusioné con el bloque "2026-08-01 a 2026-08-12" en un resumen ampliado
+  "2026-08-01 a 2026-08-13"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
+  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
+  hoy:** recalculé por script el universo 🟢A del ledger con el filtro estricto (marcador de
+  rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra estable, contra
+  `fuentes_leidas_lobo.md` (105 ya leídas) — 29 pendientes — y elegí 3 al azar sin reemplazo (Python
+  `random.sample`, sin semilla fija): F-226 (Darley & Latané 1968, bystander/difusión de
+  responsabilidad, ya citada en el ledger solo por su nota de haber sido reemplazada como fuente de
+  C.6 del Playbook), F-254 (When AI advice backfires, *Journal of Retailing and Consumer Services*
+  2026, ya citada solo por su canal de intrusividad) y F-305 (Figma S-1, ya citada por sus cifras
+  pre-IPO y el riesgo declarado de IA bajando barreras de entrada). Las URLs directas de las tres
+  (doi.org, sciencedirect.com, sec.gov) dieron `EGRESS_BLOCKED` por el proxy del entorno; `WebSearch`
+  sí funcionó y permitió reconstruir el detalle completo de F-226 y F-254 vía fuentes secundarias
+  convergentes (PubMed/PMC/SciRP para F-226, cobertura que reproduce el resumen y hallazgo del propio
+  paper para F-254); F-305 no tuvo mirror del documento primario disponible, así que esa entrada se
+  apoya solo en cobertura secundaria y lo declaro como limitación de esa lectura, no como verificación
+  directa del filing. Sumé las entradas 106, 107 y 108 de Intuición acumulada: (106) el propio
+  ledger ya había corregido esta cita exacta (F-226→F-236) por encaje cuestionable entre el mecanismo
+  original (extraños ante una emergencia por intercomunicador, ayuda cayendo de 85% a 62% a 31% según
+  tamaño de grupo) y el uso pretendido (objeción de pareja/familia en venta) — heurística: pedir el
+  diseño experimental exacto antes de aceptar un efecto de psicología social "de marca" en un playbook
+  de venta; (107) el hallazgo real de F-254 es un modelo de doble vía donde la personalización con IA
+  **sí aumentó** la compra en el experimento de campo (la vía de utilidad percibida domina sobre la de
+  intrusividad) — citar solo el canal adverso invierte la recomendación práctica real de los autores,
+  matiza la regla C10 del node de diseño/innovación; (108) el riesgo de "IA baja la barrera de entrada"
+  que Figma declara en su S-1 apunta, según la cobertura secundaria consultada, específicamente al
+  lienzo colaborativo clásico y no a sus líneas de expansión (Dev Mode, Slides, Sites, Make) — conecta
+  con la intuición 14 (no declarar un moat erosionado sin precisar qué línea de producto específica
+  está expuesta). Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el
+  mecanismo paralelo de intuición. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
+  fuentes leídas hoy. Bitácora con 29 días de historial (2026-08-14 a hoy) tras la poda de hoy —
+  dentro de la ventana de ~30 días.
