@@ -135,10 +135,10 @@ Simeón, que es quien convocó— y declararlo explícitamente en la primera pá
 | **Luciana** | **Gerente del canal de la App** | Que la estrategia exista y sea suya, no impuesta desde el CoE. **Es quien puede ratificar el contrato de proceso en la sala** (§5.5) |
 | **Simeón** | Subgerente del canal digital, bajo Luciana. **Agendó el evento del jueves.** Lleva el seguimiento de capacidades | Que el trabajo se conecte con el inventario de capacidades que él ya lleva, no que lo duplique |
 | **Milly** | Pone el plazo: algo en 2-3 sprints | Un entregable por sprint, no un informe al final |
-| **César** | Service designer — propuso **JTBD** | Dueño del eje de demanda; facilita la E4 |
-| **Jonathan** | Service designer — propuso el **modelo por componentes** | Dueño del eje de oferta; facilita la E3 |
+| **César** | **Diseño estratégico — demanda.** Propuso JTBD | Dueño del frame de jobs; facilita la E4 |
+| **Jonathan** | **Diseño estratégico — oferta.** Propuso el modelo por componentes | Dueño del frame de componentes; facilita la E3 |
 | **Product designer** *(por asignar)* | Entra en el Sprint 1 en el track de evidencia. Dueño del **cómo se hace real y qué cuesta** | Una frontera escrita con Jonathan, y la regla de cero pantallas propuestas antes del 8-oct (§6.1) |
-| **Tú (CoE de Experiencia)** | Dueño del **método**, no de la ejecución | Que la Etapa 5 asigne dueños por apuesta para no quedar como cuello de botella |
+| **Tú (CoE de Experiencia)** | **Behavioral design + articulación.** Articulas el plan y decides en última instancia, solo cuando hace falta (§6.1) | Gatillos explícitos de cuándo decides, o «solo cuando sea necesario» se degrada en decidirlo todo o en nada |
 
 > ⚠️ **Simeón agendó el jueves, y eso cambia la política de la reunión.** No es tu reunión: es de
 > él. Tres consecuencias:
@@ -714,15 +714,59 @@ tiene el todo.
 | **E4 · 8-oct** | **César** (propuso JTBD) | Escenarios, imaginación y clasificación |
 | **E5 · 15-oct** | Tú + **Simeón** | Compromisos y dueños: necesita al canal, no al CoE |
 
-### 6.1 El product designer: dónde entra y con qué frontera
+### 6.1 El equipo: cómo nos llamamos y quién decide
+
+| Rol | Quién | Pregunta que responde | Qué produce |
+|---|---|---|---|
+| **Diseño estratégico — demanda** | César | ¿Qué progreso busca la persona? | El frame de jobs que permite priorizar entre ramos |
+| **Diseño estratégico — oferta** | Jonathan | ¿Qué capacidad lo habilita y en qué estado está? | El frame de componentes que permite decidir qué se activa |
+| **Diseño de producto** | *por asignar* | ¿Cómo se hace real y qué cuesta? | El diagnóstico de interfaz y la especificación de la Parte B |
+| **Behavioral design + articulación** | Tú | ¿Por qué esto y no aquello, y cómo decidimos? | El criterio, la secuencia, y la decisión final cuando hace falta |
+
+**Por qué estratégico y no de servicio.** Un diseñador de servicio produce un blueprint: cómo
+funciona el servicio por dentro y por fuera. Aquí **no se está diseñando el servicio — se está
+decidiendo dónde apostar.** JTBD no se usa para diseñar la experiencia sino para elegir el frente;
+el modelo por componentes no se usa para arquitecturar sino para elegir qué se activa primero. Los
+dos son **lentes de decisión**, no artefactos de servicio.
+
+> 📌 **Consecuencia práctica, que es el punto del relabel:** cambia lo que se les pide por sesión.
+> No un journey ni un blueprint, sino **un frame que haga posible una decisión** y que sobreviva a
+> la pregunta *"¿y por qué no la otra opción?"*.
+
+**Articular no es dejar de tener disciplina: es aplicarla a otro sujeto.** Todo el diseño del
+proceso es **intervención conductual sobre el equipo y el canal**, no sobre el cliente — el orden
+afecto → memoria → análisis, el campo "parking" que evita que la solución contamine el
+levantamiento, el post-it anónimo, la escritura en silencio antes del plenario, el borrador feo que
+invita a intervenir en vez de a aprobar. Y el criterio de priorización es, literalmente, **diseñar
+cómo decide una organización**.
+
+**Cuándo decides tú.** Por defecto decide el grupo. Decides tú solo en cuatro casos:
+
+1. Hay desacuerdo real y la siguiente sesión ya está agendada. **El calendario es el árbitro.**
+2. La decisión rompería la coherencia del marco completo — sacar el quinto factor del criterio,
+   convertir el jueves en levantamiento, empezar por lo analítico.
+3. Hace falta **autoridad transversal que solo tiene el CoE**: por ejemplo, decirle al canal que una
+   de sus cinco definiciones es una apuesta sin validar.
+4. Hay que decirle que no a alguien con más rango.
+
+**No decides tú** nada dentro del eje de cada uno —la taxonomía de componentes es de Jonathan, la
+formulación y priorización de jobs es de César, la especificación de producto es del PD— ni nada
+que el dato pueda resolver: **si la volumetría puede decidirlo, decide la volumetría.**
+
+> ⚠️ **El filo de "solo cuando sea necesario".** Entre pares sin autoridad formal, esperar demasiado
+> es exactamente como se estancan los proyectos — y hay una asimetría real: **tú cargas con la fecha
+> y el compromiso con el CEO, ellos no.** Por eso los gatillos de arriba: sin ellos, "solo cuando
+> sea necesario" se degrada en decidirlo todo o en no decidir nada, y las dos versiones son peores.
+
+### 6.2 El product designer: dónde entra y con qué frontera
 
 **Entra en el Sprint 1, desde el 18-sep, en el track de evidencia — no en el de talleres.** Cuatro
 aportes, en orden de valor:
 
 1. **Es el dueño natural de la Parte B del entregable.** Especificar tres soluciones al nivel que un
-   equipo pueda ejecutarlas es diseño de producto, no de servicio. César y Jonathan llevan hasta
-   *qué apostar*; el PD lleva hasta *qué se construye*. Sin él, la Parte B queda vaga y el pedido de
-   Milly falla.
+   equipo pueda ejecutarlas es diseño de producto — no de servicio ni de estrategia. César y
+   Jonathan llevan hasta *qué apostar*; el PD lleva hasta *qué se construye*. Sin él, la Parte B
+   queda vaga y el pedido de Milly falla.
 2. **Cierra el hueco del inventario de componentes.** `Existe pero no se usa` es una categoría, no
    un diagnóstico — y la razón casi siempre es de interfaz: enterrado a tres taps, nombrado con un
    término interno, punto de entrada en otra parte. El PD la convierte en causa, justo donde tiene
@@ -742,17 +786,8 @@ en el proceso, produce specs desconectadas del criterio. Entrando con un entrega
 > **auditoría de interfaz** (diagnóstico, no propuesta), y una regla escrita — **cero pantallas
 > propuestas antes del 8-oct**, y ahí solo como props de escenario.
 
-**El reparto queda sin solapes:**
-
-| Quién | Pregunta que responde | Unidad |
-|---|---|---|
-| **César** | ¿Qué progreso busca la persona? | job |
-| **Jonathan** | ¿Qué capacidad lo habilita? | componente |
-| **Product designer** | ¿Cómo se hace real y qué cuesta? | producto |
-| **Tú** | ¿Por qué esto y no aquello? | criterio |
-
-Esa frontera es el punto: **si el PD entra sin ella, colisiona con Jonathan en componentes**, los
-dos mirando la misma capacidad desde ángulos que se pisan.
+Sin esa frontera, **el PD colisiona con Jonathan en componentes**: los dos mirando la misma
+capacidad desde ángulos que se pisan.
 
 **Preguntas que hay que resolver el lunes y no después:**
 
