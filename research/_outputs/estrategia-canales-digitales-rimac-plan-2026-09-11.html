@@ -278,7 +278,9 @@ footer a{color:var(--muted)}
       <tr><td><strong>Luciana</strong></td><td><strong>Gerente del canal de la App</strong></td><td>Que la estrategia exista y sea suya, no impuesta desde el CoE. <strong>Es quien puede ratificar el contrato de proceso en la sala.</strong></td></tr>
       <tr><td><strong>Simeón</strong></td><td>Subgerente del canal digital, bajo Luciana. <strong>Agendó el evento del jueves.</strong> Lleva el seguimiento de capacidades</td><td>Que el trabajo se conecte con el inventario de capacidades que él ya lleva, no que lo duplique</td></tr>
       <tr><td><strong>Milly</strong></td><td>Pone el plazo: algo en 2-3 sprints</td><td>Un entregable por sprint, no un informe al final</td></tr>
-      <tr><td><strong>César</strong> y <strong>Jonathan</strong></td><td>Los dos service designers. Recomendaron JTBD y modelo por componentes — <em>falta saber quién recomendó cuál</em></td><td>Que sus marcos sean ejes del mismo sistema, no competidores. Cada uno debería ser dueño del eje que propuso</td></tr>
+      <tr><td><strong>César</strong></td><td>Service designer — propuso <strong>JTBD</strong></td><td>Dueño del eje de demanda; facilita la E4</td></tr>
+      <tr><td><strong>Jonathan</strong></td><td>Service designer — propuso el <strong>modelo por componentes</strong></td><td>Dueño del eje de oferta; facilita la E3</td></tr>
+      <tr><td><strong>Product designer</strong> <em>(por asignar)</em></td><td>Entra en el Sprint 1, en el track de evidencia. Dueño del <strong>cómo se hace real y qué cuesta</strong></td><td>Una frontera escrita con Jonathan, y la regla de cero pantallas propuestas antes del 8-oct</td></tr>
       <tr><td><strong>Tú — CoE de Experiencia</strong></td><td>Dueño del <strong>método</strong>, no de la ejecución</td><td>Que la Etapa 5 asigne dueños por apuesta, para no quedar como cuello de botella</td></tr>
     </tbody>
   </table></div>
@@ -389,7 +391,7 @@ footer a{color:var(--muted)}
   <div class="scroll"><table>
     <thead><tr><th>Sprint</th><th>Fechas</th><th>Qué contiene</th><th>Entregable al cierre</th></tr></thead>
     <tbody>
-      <tr><td class="num"><strong>1</strong></td><td class="num">15 → 26 sep</td><td>E1 (17-sep) · E2 (24-sep) · volumetría e inventario</td><td>Presente construido · inventario de componentes con estado · mitos listados para falsar · <strong>línea base de las dos métricas del norte</strong></td></tr>
+      <tr><td class="num"><strong>1</strong></td><td class="num">15 → 26 sep</td><td>E1 (17-sep) · E2 (24-sep) · volumetría e inventario · <strong>auditoría de interfaz</strong></td><td>Presente construido · inventario de componentes con estado · <strong>diagnóstico de por qué lo que existe no se usa</strong> · mitos listados para falsar · <strong>línea base de las dos métricas del norte</strong></td></tr>
       <tr><td class="num"><strong>2</strong></td><td class="num">29 sep → 10 oct</td><td>E3 (1-oct) · E4 (8-oct)</td><td><strong>Criterio con pesos · matriz Job × Componente priorizada · futuro preferido · escenarios clasificados, incluida la super app</strong></td></tr>
       <tr><td class="num"><strong>3</strong></td><td class="num">13 → 24 oct</td><td>E5 (15-oct) · <strong>checkpoint con el CEO</strong> · presentación (~22-oct)</td><td><strong>El documento de dos partes</strong>: Parte A (visión + criterio con pesos) y Parte B (3 soluciones especificadas para ejecutar, con alcance, métrica, dueño y dependencias)</td></tr>
     </tbody>
@@ -782,6 +784,30 @@ para poder  [resultado esperado].</pre>
     </tbody>
   </table></div>
 
+  <h3>El product designer: dónde entra y con qué frontera</h3>
+  <p><strong>Entra en el Sprint 1, desde el 18-sep, en el track de evidencia — no en el de talleres.</strong> Cuatro aportes, en orden de valor:</p>
+  <ol>
+    <li><strong>Es el dueño natural de la Parte B del entregable.</strong> Especificar tres soluciones al nivel que un equipo pueda ejecutarlas es diseño de producto, no de servicio. César y Jonathan llevan hasta <em>qué apostar</em>; el PD lleva hasta <em>qué se construye</em>. Sin él, la Parte B queda vaga y el pedido de Milly falla.</li>
+    <li><strong>Cierra el hueco del inventario de componentes.</strong> <code>Existe pero no se usa</code> es una categoría, no un diagnóstico — y la razón casi siempre es de interfaz: enterrado a tres taps, nombrado con un término interno, punto de entrada en otra parte. El PD la convierte en causa, justo donde tiene que salir al menos una de las tres soluciones.</li>
+    <li><strong>Traduce «campos dinámicos» de feature a producto.</strong> Contrato de datos, estados (¿y si no hay cifra del próximo mes? ¿y si cambió por un siniestro?), errores y viabilidad con la interoperabilidad actual. Es el puente entre las capacidades habilitantes y el job.</li>
+    <li><strong>Hace clasificables los escenarios de la Etapa 4.</strong> Tres pantallas toscas vuelven juzgable un futuro que en abstracto no lo es. <strong>Props de escenario, deliberadamente feos — no propuestas.</strong></li>
+  </ol>
+  <p><strong>Por qué en el Sprint 1 y no en el 3.</strong> Un PD que llega al final a especificar, sin haber estado en el proceso, produce specs desconectadas del criterio. Entrando con un entregable de <strong>diagnóstico</strong>, la Parte B se escribe sola.</p>
+  <div class="note warn">
+    <span class="lead">El riesgo: que empiece a diseñar</span>
+    <p>No es un defecto personal, es el reflejo de la disciplina — y es lo que hundiría la regla de oro del plan. <strong>Antídoto:</strong> su entregable del Sprint 1 es una <strong>auditoría de interfaz</strong> (diagnóstico, no propuesta), y una regla escrita: <strong>cero pantallas propuestas antes del 8-oct</strong>, y ahí solo como props de escenario.</p>
+  </div>
+  <div class="scroll"><table>
+    <thead><tr><th>Quién</th><th>Pregunta que responde</th><th>Unidad</th></tr></thead>
+    <tbody>
+      <tr><td class="num">César</td><td>¿Qué progreso busca la persona?</td><td class="num">job</td></tr>
+      <tr><td class="num">Jonathan</td><td>¿Qué capacidad lo habilita?</td><td class="num">componente</td></tr>
+      <tr><td class="num">Product designer</td><td>¿Cómo se hace real y qué cuesta?</td><td class="num">producto</td></tr>
+      <tr><td class="num">Tú</td><td>¿Por qué esto y no aquello?</td><td class="num">criterio</td></tr>
+    </tbody>
+  </table></div>
+  <p>Esa frontera es el punto: <strong>si el PD entra sin ella, colisiona con Jonathan en componentes</strong>, los dos mirando la misma capacidad desde ángulos que se pisan.</p>
+
   <h3>Preguntas que hay que resolver el lunes y no después</h3>
   <ol>
     <li>⚠️ <strong>¿Cuál es el alcance real — la App, todo el canal digital, o todos los canales?</strong> Es la primera pregunta, y cambia el tamaño de todo lo demás.</li>
@@ -848,6 +874,7 @@ para poder  [resultado esperado].</pre>
     <li>Gestionar el <strong>checkpoint de 20 min con el CEO</strong> para la semana del 13-oct</li>
     <li>Conseguir línea base de ventas digitales y costo operativo por transacción</li>
     <li>Definir quién es el dueño formal de la decisión de super app</li>
+    <li><strong>Nombrar al product designer</strong> y confirmar capacidad desde el 18-sep</li>
     <li>Decidir si se pelea el offsite de dos días para las etapas 4 y 5</li>
   </ul>
 </section>

@@ -137,6 +137,7 @@ Simeón, que es quien convocó— y declararlo explícitamente en la primera pá
 | **Milly** | Pone el plazo: algo en 2-3 sprints | Un entregable por sprint, no un informe al final |
 | **César** | Service designer — propuso **JTBD** | Dueño del eje de demanda; facilita la E4 |
 | **Jonathan** | Service designer — propuso el **modelo por componentes** | Dueño del eje de oferta; facilita la E3 |
+| **Product designer** *(por asignar)* | Entra en el Sprint 1 en el track de evidencia. Dueño del **cómo se hace real y qué cuesta** | Una frontera escrita con Jonathan, y la regla de cero pantallas propuestas antes del 8-oct (§6.1) |
 | **Tú (CoE de Experiencia)** | Dueño del **método**, no de la ejecución | Que la Etapa 5 asigne dueños por apuesta para no quedar como cuello de botella |
 
 > ⚠️ **Simeón agendó el jueves, y eso cambia la política de la reunión.** No es tu reunión: es de
@@ -235,7 +236,7 @@ de dos semanas arrancando el lunes 14.
 
 | Sprint | Fechas | Qué contiene | Entregable al cierre |
 |---|---|---|---|
-| **1** | 15 → 26 sep | E1 (17-sep) · E2 (24-sep) · volumetría e inventario | Presente construido · inventario de componentes con estado · mitos listados para falsar · **línea base de las dos métricas del norte** |
+| **1** | 15 → 26 sep | E1 (17-sep) · E2 (24-sep) · volumetría e inventario · **auditoría de interfaz** | Presente construido · inventario de componentes con estado · **diagnóstico de por qué lo que existe no se usa** · mitos listados para falsar · **línea base de las dos métricas del norte** |
 | **2** | 29 sep → 10 oct | E3 (1-oct) · E4 (8-oct) | **Criterio con pesos · matriz Job × Componente priorizada · futuro preferido · escenarios clasificados (incluida la super app)** |
 | **3** | 13 → 24 oct | E5 (15-oct) · **checkpoint con el CEO** (§5.5) · presentación (~22-oct) | **El documento de dos partes**: Parte A (visión + criterio con pesos) y Parte B (3 soluciones especificadas para ejecutar, con alcance, métrica, dueño y dependencias) |
 
@@ -713,6 +714,46 @@ tiene el todo.
 | **E4 · 8-oct** | **César** (propuso JTBD) | Escenarios, imaginación y clasificación |
 | **E5 · 15-oct** | Tú + **Simeón** | Compromisos y dueños: necesita al canal, no al CoE |
 
+### 6.1 El product designer: dónde entra y con qué frontera
+
+**Entra en el Sprint 1, desde el 18-sep, en el track de evidencia — no en el de talleres.** Cuatro
+aportes, en orden de valor:
+
+1. **Es el dueño natural de la Parte B del entregable.** Especificar tres soluciones al nivel que un
+   equipo pueda ejecutarlas es diseño de producto, no de servicio. César y Jonathan llevan hasta
+   *qué apostar*; el PD lleva hasta *qué se construye*. Sin él, la Parte B queda vaga y el pedido de
+   Milly falla.
+2. **Cierra el hueco del inventario de componentes.** `Existe pero no se usa` es una categoría, no
+   un diagnóstico — y la razón casi siempre es de interfaz: enterrado a tres taps, nombrado con un
+   término interno, punto de entrada en otra parte. El PD la convierte en causa, justo donde tiene
+   que salir al menos una de las tres soluciones (§2.5).
+3. **Traduce "campos dinámicos" de feature a producto.** Contrato de datos, estados (¿y si no hay
+   cifra del próximo mes? ¿y si cambió por un siniestro?), errores, y viabilidad con la
+   interoperabilidad actual. Es el puente entre las capacidades habilitantes y el job (§0.5).
+4. **Hace clasificables los escenarios de la E4.** Tres pantallas toscas vuelven juzgable un futuro
+   que en abstracto no lo es. **Props de escenario, deliberadamente feos — no propuestas.**
+
+**Por qué en el Sprint 1 y no en el 3.** Un PD que llega al final a especificar, sin haber estado
+en el proceso, produce specs desconectadas del criterio. Entrando con un entregable de
+**diagnóstico**, la Parte B se escribe sola.
+
+> ⚠️ **El riesgo: que empiece a diseñar.** No es defecto personal, es el reflejo de la disciplina —
+> y es lo que hundiría la regla de oro de §2. **Antídoto:** su entregable del Sprint 1 es una
+> **auditoría de interfaz** (diagnóstico, no propuesta), y una regla escrita — **cero pantallas
+> propuestas antes del 8-oct**, y ahí solo como props de escenario.
+
+**El reparto queda sin solapes:**
+
+| Quién | Pregunta que responde | Unidad |
+|---|---|---|
+| **César** | ¿Qué progreso busca la persona? | job |
+| **Jonathan** | ¿Qué capacidad lo habilita? | componente |
+| **Product designer** | ¿Cómo se hace real y qué cuesta? | producto |
+| **Tú** | ¿Por qué esto y no aquello? | criterio |
+
+Esa frontera es el punto: **si el PD entra sin ella, colisiona con Jonathan en componentes**, los
+dos mirando la misma capacidad desde ángulos que se pisan.
+
 **Preguntas que hay que resolver el lunes y no después:**
 
 1. ⚠️ **¿Cuál es el alcance real — la App, todo el canal digital, o todos los canales?** (§0.5).
@@ -794,6 +835,8 @@ de la App · **no existe plan estratégico RIMAC 2026-2028**.
 - [ ] Gestionar el **checkpoint de 20 min con el CEO** para la semana del 13-oct
 - [ ] Conseguir línea base de ventas digitales y costo operativo por transacción
 - [ ] Definir quién es el dueño formal de la decisión de super app
+- [ ] **Nombrar al product designer** y confirmar capacidad desde el 18-sep. Si no hay nadie hasta
+      octubre, entraría solo a la E4 y a la Parte B, y se pierde la auditoría de interfaz del Sprint 1
 - [ ] Decidir si se pelea el offsite de dos días para las etapas 4 y 5
 
 ---
