@@ -125,3 +125,6 @@
 | F-226 | 🟢 A | 2026-09-12 | Intuición 106 — un fenómeno psicológico clásico importado por nombre a un contexto de negocio distinto exige verificar el mecanismo, no solo que el nombre encaje |
 | F-254 | 🟢 A | 2026-09-12 | Intuición 107 — "puede backfirear por intrusividad" a veces describe solo el canal de riesgo dentro de un efecto neto que sigue siendo positivo |
 | F-305 | 🟢 A | 2026-09-12 | Intuición 108 — un riesgo que la empresa declara contra su propio moat en el S-1 es señal honesta, pero verificar sobre qué línea de producto pesa antes de generalizarlo |
+| F-257 | 🟢 A | 2026-09-13 | Intuición 109 — el moderador que explica el resultado agregado de un RCT de productividad con IA es la familiaridad con el objeto de trabajo (el repo), no con la herramienta genérica |
+| F-381 | 🟢 A | 2026-09-13 | Intuición 110 — un headline de "preferencia" de una interfaz generada por IA puede promediar seis dimensiones separadas; pedir el desglose antes de citar la cifra única |
+| F-430 | 🟢 A | 2026-09-13 | Intuición 111 — antes de citar el efecto promedio de un meta-análisis, verificar si el propio diseño ya separó sesgo de publicación de heterogeneidad real |

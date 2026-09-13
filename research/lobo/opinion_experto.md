@@ -4033,6 +4033,93 @@ otras líneas la compañía ya está usando para diversificarse lejos de ese pun
   riesgo: no generalizar una amenaza de categoría a toda la compañía sin precisar la línea de producto
   expuesta. No abre tesis de negocio nueva ni matiza una vigente numerada.
 
+### 109. Que un promedio agregado de productividad con IA no se mueva no dice si existe un techo de habilidad donde el efecto sí se invierte — buscar el moderador de familiaridad con el objeto de trabajo, no solo con la herramienta
+F-257 (RCT de METR, N=16 devs, 246 tareas) ya sostiene la regla C11 y la hipótesis H5 del node de
+diseño/innovación con la cifra headline (19% más lentos con IA, mientras estimaban ser 20% más
+rápidos). La lectura a fondo (arxiv.org y metr.org bloqueados por el proxy del entorno; reconstruido
+vía búsqueda dirigida contra cobertura secundaria convergente — Let's Data Science, ActuIA y
+extractos indexados del propio blog de METR) trae un matiz que el resumen de una línea del ledger no
+capturaba: los autores testearon si la familiaridad con la herramienta (horas previas de Cursor)
+explicaba el resultado y encontraron poco — 93% de los devs ya tenía experiencia previa con LLMs en
+general, y no hubo efecto de aprendizaje claro en las primeras 30-50 horas de uso de Cursor
+específicamente. Lo que sí parece moverse es la familiaridad con el repositorio de trabajo concreto,
+y el único desarrollador del estudio con más de 50 horas acumuladas de experiencia en Cursor fue
+quien mostró aceleración neta — evidencia débil (N=1) pero que los propios autores señalan como
+posible techo de habilidad alto, no capturado por un promedio de 16 personas con semanas de uso.
+**Heurística:** antes de leer un promedio de productividad con una herramienta nueva (IA, software,
+proceso) como el efecto "real" y estable, verificar contra qué eje se midió la familiaridad — la del
+operador con la herramienta genérica no es la misma variable que la del operador con el objeto
+específico de la tarea (el repositorio, el cliente, el producto), y solo la segunda puede estar
+mediando el resultado agregado.
+- **Fuente:** F-257 (🟢A por diseño — RCT, pero preprint sin revisión por pares; N=16 devs, 246 tareas)
+- **Leído a fondo:** 2026-09-13 (arxiv.org, metr.org, simonwillison.net, letsdatascience.com y
+  hardforum.com bloqueados por el proxy del entorno; reconstruido vía `WebSearch` contra mirrors y
+  cobertura secundaria convergente que confirman el detalle del moderador, no solo el resumen
+  agregado ya citado)
+- **Conexión razonada, no forzada:** matiza la regla C11/H5 del node de diseño/innovación (misma
+  fuente F-257) sin bajar su confianza — el hallazgo agregado sigue de pie, pero agrega el eje de
+  moderador correcto para cualquier medición interna futura de productividad con IA en Rimac (agente
+  conversacional, generación de código): medir familiaridad con el dominio/caso, no solo horas de uso
+  de la herramienta. Conecta con la intuición 27 (mayor alfabetización en IA correlaciona con peor
+  calibración del propio desempeño asistido) como la misma familia de pregunta — cuánta experiencia
+  hace falta antes de que el efecto cambie de signo.
+
+### 110. Un headline de "preferencia" de 72% para una interfaz generada por IA puede estar promediando seis dimensiones separadas que no se mueven igual — abrir el desglose antes de tratarlo como una sola pregunta de UX resuelta
+F-381 ya sostiene la confrontación de H3 en §10.1 del node de diseño/innovación como "la mejor
+evidencia peer-reviewed a favor de generative UI", con la advertencia ya registrada de que la medida
+central sigue siendo preferencia declarada en sesión única. La lectura a fondo (aclanthology.org y
+arxiv.org bloqueados por el proxy; reconstruido vía `WebSearch` contra los repositorios espejo del
+propio paper — deeplearn.org, Papers with Code, la página de proyecto de los autores) confirma que el
+marco de evaluación no midió una sola "preferencia": midió seis dimensiones por separado —
+Consistencia Consulta-Interfaz, Eficiencia de Tarea, Usabilidad, Aprendibilidad (Learnability),
+Atractivo Estético/Estilístico y Satisfacción de la Experiencia de Interacción — y el 72% citado es el
+techo de mejora en la dimensión donde generative UI más domina (tareas densas en información y
+exploratorias), no un promedio parejo de las seis. **Heurística:** cuando un paper reporta una mejora
+de "preferencia" o "satisfacción" de X%, buscar si detrás hay un marco multidimensional — casi
+siempre lo hay en evaluación de interfaces/agentes — y pedir el desglose por dimensión antes de
+repetir la cifra headline como si describiera una sola pregunta ganada; una interfaz puede dominar en
+eficiencia/consistencia y perder en aprendibilidad longitudinal, justo la dimensión que más
+importaría para un agente que un cliente de seguros usa una vez al año, no a diario.
+- **Fuente:** F-381 (🟢A — peer-reviewed, Findings of ACL 2026)
+- **Leído a fondo:** 2026-09-13 (aclanthology.org y arxiv.org bloqueados por el proxy del entorno;
+  reconstruido vía `WebSearch` contra mirrors del propio paper que listan las seis dimensiones del
+  marco de evaluación, detalle ausente del resumen de una línea ya citado en el ledger)
+- **Conexión razonada, no forzada:** matiza directamente la tesis 24 (generative UI sube preferencia
+  declarada pero falla en soporte/consistencia entre sesiones, confianza Alta) — el marco de seis
+  dimensiones de F-381 es exactamente la herramienta de diagnóstico que tesis 24 necesitaría para
+  separar "sube preferencia" de "sube aprendibilidad", sin que esto cambie su confianza. No abre
+  tesis nueva.
+
+### 111. Antes de citar el "efecto promedio" de un meta-análisis como la cifra final, verificar si el propio diseño ya separó ese promedio en una etapa de sesgo de publicación y otra de heterogeneidad real — no todos los meta-análisis hacen ambas
+F-430 ya funda la §12.1 del node de diseño/innovación como el ancla econométrica del dominio
+(elasticidad I+D→productividad ≈0,05, retorno ≈16% para una intensidad de I+D/output del 5%, sobre
+1.253 estimaciones de 65 estudios primarios). La lectura a fondo (sciencedirect.com, gala.gre.ac.uk,
+mpra.ub.uni-muenchen.de y papers.ssrn.com bloqueados por el proxy del entorno; reconstruido vía
+`WebSearch` contra RePEc/IDEAS y el repositorio institucional de Greenwich) confirma que el método no
+es un promedio simple: corre en tres etapas — (1) estadística descriptiva y funnel plots para
+inspección visual de heterogeneidad/sesgo, (2) meta-regresión bivariada que separa el sesgo de
+selección/publicación del "efecto" que sobrevive más allá de ese sesgo, y (3) meta-regresión
+multivariada que busca las fuentes de esa heterogeneidad. El 0,05/16% citado es el resultado de la
+etapa (2) — ya neto de sesgo de publicación, no el promedio crudo de la literatura. **Heurística:** es
+el mismo diseño de tres etapas que Maier et al. (F-17) aplicó al nudging para desmontar el "efecto
+promedio" de Mertens et al. (F-16) — antes de citar cualquier cifra de "elasticidad" o "retorno
+promedio" de un meta-análisis (diseño, I+D, IA, cualquier dominio), verificar si el propio
+meta-análisis corrió esa separación bivariada de sesgo-vs-efecto o si solo promedió las estimaciones
+publicadas tal cual; la segunda práctica infla sistemáticamente la cifra que termina citándose en
+decks internos.
+- **Fuente:** F-430 (🟢A — meta-regresión jerárquica peer-reviewed, 1.253 estimaciones de 65 estudios
+  primarios, con corrección de sesgo de publicación)
+- **Leído a fondo:** 2026-09-13 (sciencedirect.com, gala.gre.ac.uk, mpra.ub.uni-muenchen.de y
+  papers.ssrn.com bloqueados por el proxy del entorno; reconstruido vía `WebSearch` contra RePEc/IDEAS
+  y la página del repositorio institucional de Greenwich, que describen las tres etapas del método —
+  detalle ausente del resumen de una línea ya citado en el ledger, que solo reportaba el resultado
+  final)
+- **Conexión razonada, no forzada:** conecta con la intuición 81 (un veredicto de "sin efecto tras
+  corregir sesgo de publicación" no es uniforme por subdominio) y con la tesis 21 (ninguna cifra
+  citada globalmente de ROI de diseño resiste escrutinio de fuente primaria) — mismo chequeo
+  metodológico aplicado a un dominio hermano (I+D en vez de diseño). No abre tesis nueva ni cambia
+  confianza de las existentes.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4083,17 +4170,17 @@ otras líneas la compañía ya está usando para diversificarse lejos de ese pun
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-13** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-14** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
   *(Resumida el 2026-08-21, el 2026-09-07 y el 2026-09-09; ampliada y
   fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
-  días, el 2026-09-11 al salir el bloque del 08-12, y una vez más el 2026-09-12 al salir el bloque del
-  08-13 (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la
-  ventana; el detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada
-  una con su propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su
-  propia fuente/fecha.)* Doce corridas.
+  días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, y una
+  vez más el 2026-09-13 al salir el bloque del 08-14 (todas: corrida diaria, algunas con revisión
+  profunda de `cronista`) por completo de la ventana; el detalle de cada tesis creada o matizada en
+  esta ventana vive en 🎯 Tesis vigentes, cada una con su propia fecha de "Actualizado"; el detalle de
+  cada Intuición vive en esa sección con su propia fuente/fecha.)* Trece corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4128,40 +4215,10 @@ otras líneas la compañía ya está usando para diversificarse lejos de ese pun
   Maier, F-151 RAGAS correlaciona ~0.55 con juicio humano, F-250 GUI vs. chatbot con veredictos opuestos
   por momento de la tarea). Ningún nivel de confianza de tesis bajó en toda la ventana; todo ajuste fue
   matiz, corrección de cita o suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-14** — Corrida diaria de refinamiento. Confirmé `main` actualizado (sin cambios
-  pendientes) y leí `codice.md` completo: verifiqué la secuencia F-1 a F-468 sin huecos ni
-  duplicados (141 fuentes 🟢A confirmadas) — sigue tope exacto en F-468, idéntico al que ya procesó
-  la corrida de ayer (2026-08-13) — **sin cambios sustanciales** en evidencia, cero fuentes nuevas
-  registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces. Repasé las
-  25 tesis contra ese mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé
-  ninguna conexión de tesis nueva solo por completar el paso. La última revisión profunda (rutina de
-  `cronista`, cada ~3 días, última el 2026-08-12) no vence hoy. Sí corrió la rutina diaria de
-  intuición (novena corrida desde que se creó el 2026-08-06): de las 141 fuentes 🟢A del ledger, 21
-  ya tenían lectura profunda del Lobo — seleccioné al azar 3 de las 120 restantes: F-89 (Pauly 1968,
-  AER, el "comment" fundacional que abrió el campo del riesgo moral en seguros de salud — citado en
-  el ledger solo como capa teórica de fondo, nunca leído a fondo), F-21 (DellaVigna & Linos 2022,
-  *Econometrica* — ya citada en tesis 6, pero desde un ángulo distinto al que ya trabajó la revisión
-  profunda de `cronista` el 2026-07-22) y F-109 (estudio DiD de gatekeeping de atención primaria en
-  China, citado en el ledger solo por su cifra agregada). A diferencia de corridas anteriores, las
-  URLs académicas (ldi.upenn.edu) sí fueron accesibles esta vez; onlinelibrary.wiley.com,
-  sdellavi.com y pmc.ncbi.nlm.nih.gov siguieron bloqueadas por el proxy del entorno — reconstruidas
-  vía búsqueda dirigida. Sumé las entradas 22, 23 y 24 de Intuición acumulada: (22) frente a
-  sobreutilización de un beneficio asegurado, diagnosticar primero el precio marginal percibido, no
-  la mala fe — la palanca correctora es coaseguro/deducible (cambiar el precio), no control
-  antifraude (cambiar el castigo), son remedios para causas distintas; conecta con tesis 2 (mismo
-  término de producto, dos mecanismos distintos: incentivo racional vs. comprensión); (23) "el efecto
-  promedio del nudge murió" (tesis 6) y "vale la pena seguir corriendo experimentos de bajo costo" no
-  están en tensión — son dos preguntas distintas, y un canal casi gratis (SMS, default, recordatorio)
-  puede justificarse con un efecto de 1-2pp si el costo marginal de probarlo es casi cero; (24) un
-  aumento de volumen en el canal barato puede ser fricción de acceso al canal caro disfrazada de
-  éxito — verificar por qué cayó el canal caro (¿mejoró el barato o se volvió engorroso el caro?), no
-  solo que el volumen se movió; segunda confirmación independiente, en un país y sector distintos, de
-  la intuición 13 (invertir en recurso humano del canal receptor, no solo en su infraestructura),
-  aplicable directamente al gate de éxito del piloto farmacia+triage IA de tesis 9. Ninguna tesis de
-  negocio cambió de confianza por esta corrida — es el mecanismo paralelo de intuición, no una
-  revisión de evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md`
-  con las tres fuentes leídas hoy. Bitácora con 26 días de historial (2026-07-20 a hoy), dentro de
-  la ventana de ~30 días — sin podar todavía.
+  **2026-08-14** — sin cambios sustanciales en el ledger (F-468, 141 fuentes 🟢A por conteo de esa
+  corrida); novena corrida de intuición (entradas 22-24: F-89 Pauly 1968 riesgo moral fundacional,
+  F-21 DellaVigna & Linos desde ángulo distinto al de la revisión profunda de `cronista`, F-109 DiD
+  de gatekeeping de atención primaria en China) — matizó tesis 2 y 9 sin cambiar confianza.
 - **2026-08-15** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
   8a90dc2→e0c9040, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
   verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (134 fuentes 🟢A confirmadas por conteo
@@ -5314,3 +5371,49 @@ otras líneas la compañía ya está usando para diversificarse lejos de ese pun
   mecanismo paralelo de intuición. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
   fuentes leídas hoy. Bitácora con 29 días de historial (2026-08-14 a hoy) tras la poda de hoy —
   dentro de la ventana de ~30 días.
+- **2026-09-13** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward `2937e16→45c1d02` que trajo consigo el propio commit del 2026-09-12 de esta
+  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
+  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 13 corridas, **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  trigesimoprimer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
+  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
+  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el
+  2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
+  treinta y dos días sin correr). **Poda de bitácora:** el bloque "2026-08-14" salió por completo de
+  la ventana de ~30 días (cutoff ≈2026-08-14) — lo fusioné con el bloque "2026-08-01 a 2026-08-13" en
+  un resumen ampliado "2026-08-01 a 2026-08-14"; no se pierde ningún dato porque el detalle de cada
+  tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
+  intuición sí pudo correr hoy** (herramientas de red disponibles, a diferencia de la caída del
+  2026-09-10): recalculé por script el universo 🟢A del ledger con el filtro estricto (marcador de
+  rigurosidad que *empieza* con 🟢A): **134 filas**, cifra estable, contra `fuentes_leidas_lobo.md`
+  (108 ya leídas) — 26 pendientes — y elegí 3 al azar sin reemplazo (Python `random.sample`, sin
+  semilla fija): F-257 (METR, RCT de productividad de desarrolladores con IA, ya citada en el node de
+  diseño/innovación solo por su cifra agregada de 19% más lentos / 20% de sobreestimación), F-381
+  (Chen et al. 2026, *Findings of ACL*, interfaces generativas de IA, ya citada solo por su cifra de
+  preferencia hasta 72%) y F-430 (Ugur, Trushin, Solomon & Guidi 2016, *Research Policy*,
+  meta-regresión jerárquica I+D-productividad, ya citada solo por su elasticidad/retorno agregados).
+  Las URLs directas de las tres (arxiv.org, aclanthology.org, sciencedirect.com) dieron
+  `EGRESS_BLOCKED` por el proxy del entorno, igual que sus mirrors institucionales directos
+  (metr.org, gala.gre.ac.uk, mpra.ub.uni-muenchen.de, papers.ssrn.com); `WebSearch` sí funcionó y
+  permitió reconstruir detalle de mecanismo/metodología nuevo en las tres vía cobertura secundaria
+  convergente (Let's Data Science/ActuIA para F-257; deeplearn.org/Papers with Code/página de
+  proyecto de los autores para F-381; RePEc-IDEAS/repositorio institucional de Greenwich para F-430),
+  no solo el resumen de una línea ya citado. Sumé las entradas 109, 110 y 111 de Intuición acumulada:
+  (109) el moderador que explica el resultado agregado del RCT de METR no es la familiaridad con la
+  herramienta de IA (horas de Cursor) sino con el repositorio de trabajo específico — y el único
+  desarrollador con 50+ horas de experiencia en Cursor mostró aceleración neta, indicio (N=1, débil)
+  de un techo de habilidad que el promedio agregado no captura; matiza la regla C11/H5 del node de
+  diseño/innovación sin bajar su confianza; (110) el 72% de preferencia de F-381 no es un promedio de
+  una sola pregunta — el marco del paper mide seis dimensiones separadas (consistencia, eficiencia de
+  tarea, usabilidad, aprendibilidad, estética, satisfacción de interacción) y el 72% es el techo de la
+  dimensión donde generative UI más domina, no un promedio parejo; matiza tesis 24 sin cambiar su
+  confianza (sigue Alta); (111) el método de F-430 corre en tres etapas — descriptiva/funnel plots,
+  meta-regresión bivariada que separa sesgo de publicación del efecto neto, y multivariada que busca
+  moderadores — el mismo diseño que Maier et al. (F-17) usó para desmontar el promedio de Mertens et
+  al. (F-16) en nudging; heurística transferible a cualquier cifra de "efecto promedio" citada de un
+  meta-análisis, conecta con intuición 81 y tesis 21 sin abrir tesis nueva. Ninguna tesis de negocio
+  cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las
+  entradas 109 y 110 sí matizan directamente la regla C11/H5 y la tesis 24 respectivamente. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
+  historial (2026-08-15 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
