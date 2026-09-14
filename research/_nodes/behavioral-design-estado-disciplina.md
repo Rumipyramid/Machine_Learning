@@ -314,3 +314,7 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   sobrevendido, corregido por sesgo de publicación) aparece allí en el diseño (ROI sobrevendido,
   desarmado por eco de cita). Ambos concluyen lo mismo: la disciplina se defiende mejor por
   **mecanismo** que por **multiplicador**.
+- [[digitalizacion-y-ecosistemas-de-seguros|Digitalización de seguros y ecosistemas de seguros]] —
+  la frontera **pool→perfil** (Cevolini & Esposito) de su §3.1 es la versión aseguradora de la
+  discusión i-frame/s-frame de este node: personalizar el precio al individuo no es una mejora del
+  producto, **es un cambio de producto** y de su base de legitimidad social.

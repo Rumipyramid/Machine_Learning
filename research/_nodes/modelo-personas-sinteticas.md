@@ -68,5 +68,12 @@ tienen simulación de consumidores calibrada con microdato nacional, no solo sup
   masivamente) es estructuralmente el mismo fenómeno que modela la variable
   `disposicion_compartir_datos_pricing` — desconfianza abstracta declarada ≠ conducta real.
 
+- [[digitalizacion-y-ecosistemas-de-seguros|Digitalización de seguros y ecosistemas de seguros]] —
+  su §6.7 aporta marginales candidatas para recalibrar `apertura_datos_ia` y
+  `disposicion_compartir_datos_pricing`: la confianza del consumidor en que las aseguradoras usen
+  IA responsablemente **cayó de 46% a 40% en doce meses**, mientras la confianza en el manejo de
+  datos personales se mantiene en **71%** — la brecha está en *qué decisión se toma con el dato*,
+  no en el resguardo del dato.
+
 [^1]: `research/personas/generador/matriz_usuarios_sinteticos.md` §2-3, notas v1.1-v1.3; medido
     con `validate.py --check`.

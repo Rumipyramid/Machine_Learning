@@ -328,3 +328,8 @@ estadounidense — buena señal para el diseño de
   casos de Babylon Health y el "reset" de Oscar Health (§3 aquí) son la misma advertencia
   a nivel de suscripción/operación que ese node documenta a nivel de distribución: apostar
   por tecnología sin disciplina humana de por medio tiende a salir caro.
+- [[digitalizacion-y-ecosistemas-de-seguros|Digitalización de seguros y ecosistemas de seguros]] —
+  la **autoselección** que este node identificó en Vitality/Discovery reaparece intacta en el caso
+  de ecosistema más citado del mundo: el "5,2x de prima de primer año" de Ping An (§2.5 de aquel
+  node) compara **clientes que eligieron usar el servicio contra los que no**, no el efecto causal
+  del ecosistema.

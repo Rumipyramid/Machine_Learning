@@ -1797,3 +1797,10 @@ reportarse como pico del año en curso.**
   cifras atribuidas venía de emisores interesados y que **tres de ellas se atribuían a una
   institución que nunca las publicó**. Antes de que una cifra externa entre al esquema, verificar
   que **el emisor citado la haya publicado**, no solo que la cifra suene plausible.
+- [[digitalizacion-y-ecosistemas-de-seguros|Digitalización de seguros y ecosistemas de seguros]] —
+  su §5 es un caso de libro de las reglas de este node: el **"70% de las transformaciones digitales
+  fracasa"** resulta ser un **huérfano de cita** (regla C22) que rastrea a una estimación que sus
+  propios autores calificaron de "no científica" en 1993 y que fue retractada en 1995; el **"85% de
+  los ecosistemas fracasa"** es la inversa aritmética de un **<15%** que nunca se publicó como tal; y
+  el **"<5% de aseguradoras son ecosystem masters"** es un **artefacto definicional** que mide
+  intención declarada, no desempeño. Misma anatomía, otro dominio.

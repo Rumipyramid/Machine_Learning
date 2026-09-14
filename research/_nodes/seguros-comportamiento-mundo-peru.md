@@ -316,3 +316,8 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
   hipótesis H8 conecta la evidencia causal sobre *dark patterns* (que casi cuadruplican la
   aceptación de un plan dudoso) con la causa #1 de desconfianza en seguros en Perú que documenta
   este node: la falta de información.
+- [[digitalizacion-y-ecosistemas-de-seguros|Digitalización de seguros y ecosistemas de seguros]] —
+  aporta el lado de **oferta y tecnología** a la penetración y la desconfianza que este node
+  documenta desde la demanda; su §6.7 registra que la confianza del consumidor en el uso de IA por
+  aseguradoras **cayó de 46% a 40% entre 2025 y 2026**, y su §6.8 que en Perú **bancaseguros ya
+  concentra el 64,19% de los asegurados** — un mercado estructuralmente embebido.

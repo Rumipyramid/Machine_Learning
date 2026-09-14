@@ -383,3 +383,9 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[digitalizacion-y-ecosistemas-de-seguros|Digitalización de seguros y ecosistemas de seguros]] —
+  refuerza la tesis de este node con evidencia 2026: solo **15% de los consumidores quiere
+  autoservicio 100% digital** y **87% valora tener un agente humano** (§6.7), y la categoría de
+  insurtech que más crece en LATAM es la que **equipa a agentes y corredores tradicionales (+36%
+  anual)** (§6.8). Además actualiza el caso Ethos de §3.7: **salió a Nasdaq en enero de 2026**,
+  rentable, y aun así **cerró su primer día 11% bajo el precio de colocación**.

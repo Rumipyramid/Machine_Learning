@@ -230,3 +230,7 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 - `proyecto-back-to-basics-ffvv-vida.md` — caso real de RIMAC (Perú) donde la apuesta es
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
+- [[digitalizacion-y-ecosistemas-de-seguros|Digitalización de seguros y ecosistemas de seguros]] —
+  su §6.8 es la actualización 2026 del panorama regional de este node: **576 insurtechs activas en
+  LATAM (+14% i.a.)**, **US$90 M** captados en el 1S-2026 y **18 insurtechs de IA agéntica** en la
+  región, con la categoría de soluciones para corredores creciendo **+36% anual**.
