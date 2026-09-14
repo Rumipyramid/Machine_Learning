@@ -4120,6 +4120,91 @@ decks internos.
   metodológico aplicado a un dominio hermano (I+D en vez de diseño). No abre tesis nueva ni cambia
   confianza de las existentes.
 
+### 112. Un "no superó" de framing conductual puede esconder que el brazo ganador también recibió un incentivo material — separar el framing puro del regalo antes de generalizar el fracaso o el éxito
+F-357 ya sostiene, en la sección de "Documento externo del usuario", que el framing opt-out no
+superó al opt-in en tasa de enrolamiento en un piloto de monitoreo remoto de presión arterial — la
+entrada del ledger cierra ahí, como contraevidencia a un supuesto de diseño del proyecto RIMAC. La
+lectura a fondo (jamanetwork.com y pmc.ncbi.nlm.nih.gov bloqueados por el proxy del entorno;
+reconstruido vía `WebSearch` contra PubMed/PMC) agrega el número exacto y un detalle de diseño que
+el resumen de una línea no capturaba: N=424 pacientes hipertensos, aleatorizados 2:2:1 en opt-in /
+opt-out / control; enrolamiento 33,9% (opt-in) vs. 37,5% (opt-out) — una diferencia de 3,6 puntos
+porcentuales, no significativa (IC 90%: -5,0 a 12,1 pp; p=.49). El detalle que cambia la lectura: el
+brazo opt-out no fue framing puro — incluyó la entrega de un tensiómetro *antes* de la inscripción,
+un incentivo material real, no solo un cambio de default. **Heurística:** cuando un "empate" o "no
+superó" compara un brazo con framing solo contra un brazo con framing + regalo, el resultado es más
+fuerte de lo que parece a favor de "el framing por sí solo no hace nada" — el diseño ya estaba
+sesgado a favor del ganador aparente y aun así no alcanzó significancia. Antes de citar un hallazgo
+de framing como derrota o victoria, verificar si el brazo "framing" viene solo o viene empaquetado
+con un incentivo material adicional.
+- **Fuente:** F-357 (🟢A — RCT peer-reviewed, N=424, Universidad de Pennsylvania, JAMA Network Open
+  2025)
+- **Leído a fondo:** 2026-09-14 (jamanetwork.com y pmc.ncbi.nlm.nih.gov bloqueados por el proxy del
+  entorno; reconstruido vía `WebSearch` contra PubMed/PMC, que reproducen las cifras exactas del
+  ensayo, no solo el resumen ya citado en el ledger)
+- **Conexión razonada, no forzada:** matiza directamente la nota ya registrada en `codice.md`
+  ("corrige una hipótesis de trabajo del proyecto RIMAC") con el número exacto y el detalle de que
+  el brazo ganador tenía ventaja de diseño adicional — no abre tesis nueva ni cambia confianza de
+  ninguna existente, pero endurece la lectura de cualquier propuesta futura de opt-out para el
+  producto RIMAC: el listón que debe superar es aún más alto de lo que el resumen sugería.
+
+### 113. Una revisión bibliométrica mapea qué se ha estudiado y cómo se agrupa el campo — no mide un efecto; citarla como evidencia de que "la telemática reduce el riesgo moral" salta un nivel de inferencia
+F-162 está citado en el ledger como respaldo de que "los datos de telemática mejoran la selección de
+riesgo, mitigan la selección adversa y eliminan el riesgo moral... aumentan rentabilidad y retención
+esperadas" — fraseado como si fuera el hallazgo directo del propio estudio. La lectura a fondo
+(sciencedirect.com bloqueado por el proxy; reconstruido vía `WebSearch` contra ResearchGate/PubMed/
+OUCI) confirma que F-162 es una **revisión bibliométrica**: mapea 21 años de literatura sobre seguro
+vehicular basado en telemática, identificando clústeres temáticos (métodos de ciencia de
+datos/ML, evaluación de riesgo, precificación, factores de conducción — velocidad, frenado/
+aceleración brusca, giros bruscos, distancia recorrida, hora del día, clima) y documentando que el
+sector enfrenta un "círculo vicioso" de asimetría de información donde la subvención cruzada y el
+riesgo moral frenan la adopción de precios basados en conducta real. Es decir: describe *qué ha
+estudiado el campo y por qué el problema importa*, no mide *cuánto* reduce el riesgo moral un
+programa específico — esa cifra vive en los papers primarios que la revisión cataloga (como F-23 y
+F-442, que sí son RCT de campo con outcome conductual medido), no en la revisión misma.
+**Heurística:** antes de citar una revisión bibliométrica/de mapeo como si fuera el hallazgo de
+efecto, verificar si el paper mide un tamaño de efecto propio o solo organiza la literatura que sí
+lo mide — confundir ambos infla la aparente cantidad de evidencia primaria detrás de una tesis sin
+que haya un estudio nuevo real.
+- **Fuente:** F-162 (🟢A — revisión bibliométrica peer-reviewed, ScienceDirect 2023)
+- **Leído a fondo:** 2026-09-14 (sciencedirect.com bloqueado por el proxy del entorno; reconstruido
+  vía `WebSearch` contra ResearchGate, PubMed y OUCI, que describen el alcance y método de mapeo del
+  review, ausente del resumen de una sola línea ya citado)
+- **Conexión razonada, no forzada:** afina la base de evidencia de la tesis 7 (s-frame > i-frame,
+  caso UBI) y de la intuición 94 (F-23) — el peso causal real de "la telemática reduce el riesgo
+  moral" sigue viniendo de los RCT primarios ya citados (F-23, F-442), no de F-162; no cambia la
+  confianza de tesis 7 (sigue sostenida por los RCT), pero corrige cómo debe describirse la función
+  de F-162 en cualquier cita futura: contexto de campo, no evidencia de efecto.
+
+### 114. Un análisis académico que llama "reconfirmación de viabilidad de mercado" a una adquisición está leyendo el precio que un comprador pagó, no el desempeño operativo del modelo que compró — la misma distinción que el proyecto ya aplica a los exits de insurtech
+F-115 está citado en el ledger como "análisis académico de por qué la adquisición valida el modelo
+de pago basado en valor para atención primaria como viable para inversión de capital privado". La
+lectura a fondo (cambridge.org bloqueado por el proxy; reconstruido vía `WebSearch` contra
+ResearchGate y cobertura del cierre del deal) confirma el hecho central: CVS Health pagó
+US$10.600M por Oak Street Health (anunciado feb-2023, cerrado may-2023), y los fondos de capital
+privado Newlight Partners y General Atlantic, junto con miembros de su directorio, poseían ~45% del
+capital común de Oak Street al momento de la venta — es decir, la "validación" documentada es el
+precio de salida que un comprador estratégico estuvo dispuesto a pagar a sus dueños de PE, no una
+métrica operativa del modelo (costo médico por miembro, tasa de reingreso, margen de suscripción)
+medida de forma independiente. El propio artículo se posiciona como análisis de política/derecho
+sobre qué efectos en cadena tendrá esto sobre futuras compras de PE en salud — es interpretación
+normativa de un evento de M&A, no medición de desempeño. **Heurística:** un exit (adquisición, IPO,
+ronda) mide cuánto vale algo *para el comprador en ese momento*, no si el negocio genera margen
+sostenible — es exactamente la distinción que el proyecto ya aplica a la compra de Next Insurance
+por Munich Re/ERGO (F-452: "es un exit, no evidencia de rentabilidad propia") y a las rondas de
+financiamiento de Lovable (F-426/F-427); aquí aparece en salud value-based, no en insurtech,
+confirmando que es un error de lectura transferible entre dominios, no específico de un sector.
+- **Fuente:** F-115 (🟢A — artículo peer-reviewed, American Journal of Law & Medicine, 2023)
+- **Leído a fondo:** 2026-09-14 (cambridge.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` contra ResearchGate y cobertura del cierre de la adquisición — Healthcare Dive, Fierce
+  Healthcare —, que confirman el monto, la fecha y la participación accionaria de los fondos de PE,
+  detalle ausente del resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** conecta con el principio ya aplicado en el node de innovación a
+  F-452 (adquisición de Next Insurance) y F-426/F-427 (rondas de Lovable) — "exit ≠ desempeño
+  operativo" — y con tesis 17 (la utilidad real vive en farmacia/PBM, filing SEC primario) que ya
+  exige evidencia de utilidad operativa auditada, no de valuación de transacción; no abre tesis nueva
+  ni cambia confianza de ninguna existente, pero añade un tercer dominio (salud value-based) al
+  patrón ya documentado en dos.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4170,17 +4255,18 @@ decks internos.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-14** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-15** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
   *(Resumida el 2026-08-21, el 2026-09-07 y el 2026-09-09; ampliada y
   fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
-  días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, y una
-  vez más el 2026-09-13 al salir el bloque del 08-14 (todas: corrida diaria, algunas con revisión
-  profunda de `cronista`) por completo de la ventana; el detalle de cada tesis creada o matizada en
-  esta ventana vive en 🎯 Tesis vigentes, cada una con su propia fecha de "Actualizado"; el detalle de
-  cada Intuición vive en esa sección con su propia fuente/fecha.)* Trece corridas.
+  días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, el
+  2026-09-13 al salir el bloque del 08-14, y una vez más el 2026-09-14 al salir el bloque del 08-15
+  (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
+  detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
+  propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
+  fuente/fecha.)* Catorce corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4219,38 +4305,11 @@ decks internos.
   corrida); novena corrida de intuición (entradas 22-24: F-89 Pauly 1968 riesgo moral fundacional,
   F-21 DellaVigna & Linos desde ángulo distinto al de la revisión profunda de `cronista`, F-109 DiD
   de gatekeeping de atención primaria en China) — matizó tesis 2 y 9 sin cambiar confianza.
-- **2026-08-15** — Corrida diaria de refinamiento. Confirmé `main` actualizado (fast-forward
-  8a90dc2→e0c9040, que trajo consigo el commit de la corrida de ayer) y leí `codice.md` completo:
-  verifiqué la secuencia F-1 a F-468 sin huecos ni duplicados (134 fuentes 🟢A confirmadas por conteo
-  propio, cifra ligeramente distinta al conteo de 141 de corridas previas por variación de método de
-  conteo, no por fuentes nuevas) — sigue tope exacto en F-468, idéntico al que ya procesó la última
-  modificación real del archivo (2026-08-12, revisión profunda de `cronista`) — **sin cambios
-  sustanciales** en evidencia, cero fuentes nuevas registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces. Repasé las 25 tesis contra ese
-  mismo tope: ninguna quedó desalineada con el ledger vigente, y no forcé ninguna conexión de tesis
-  nueva solo por completar el paso. La última revisión profunda (rutina de `cronista`, cada ~3 días,
-  última el 2026-08-12) no vence hoy — tres días sin corrida nueva. Sí corrió la rutina diaria de
-  intuición (décima corrida desde que se creó el 2026-08-06): de las fuentes 🟢A del ledger, 24 ya
-  tenían lectura profunda del Lobo — seleccioné 3 de las restantes: F-92 (Geruso & Layton 2017,
-  selección en mercados de seguros de salud — ya citada en tesis 9/17 solo como "contrapeso" sin
-  lectura completa), F-218 (Cepeda et al. 2006, práctica espaciada — citada en el deck de onboarding
-  de Universidad Vida) y F-401 (Fernandes et al. 2026, brecha desempeño-metacognición con IA — ya
-  citada en `_nodes/tendencias-diseno-innovacion.md` para H5). Sumé las entradas 25, 26 y 27 de
-  Intuición acumulada: (25) el diseño de cobertura (no solo el precio) es un cuarto instrumento de
-  selección de riesgo — un asegurador puede angostar la red/formulario de una condición cara para
-  repeler ese riesgo sin tocar la tarifa regulada, canal indirecto que una auditoría centrada solo en
-  precio/ajuste de riesgo no detecta; (26) el intervalo de repaso óptimo no es fijo — cae de ~20-40%
-  del horizonte de retención para una prueba a 1 semana a solo ~5-10% para una prueba a 1 año, así que
-  un cronograma de refuerzo debe fijarse según cuánto debe durar el conocimiento, no copiar un
-  espaciado estándar; (27) mayor alfabetización en IA correlaciona con **menor** precisión al calibrar
-  el propio desempeño asistido por IA — dato nuevo que el resumen de una línea del ledger no traía,
-  con aplicación directa al gate de triage IA de tesis 10 y al riesgo ya vigente sobre medir mal al
-  agente conversacional de Rimac. Ninguna tesis de negocio cambió de confianza por esta corrida — es
-  el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes.
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 27
-  días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin podar todavía; la
-  próxima corrida (2026-08-20, cuando la ventana llegue a ~30 días desde el 2026-07-20) debe evaluar
-  podar/resumir de nuevo.
+  **2026-08-15** — sin cambios sustanciales en el ledger (F-468, 134 fuentes 🟢A por conteo propio);
+  décima corrida de intuición (entradas 25-27: F-92 diseño de cobertura como cuarto instrumento de
+  selección de riesgo, F-218 intervalo de repaso óptimo que se encoge con el horizonte de retención,
+  F-401 alfabetización en IA correlaciona con menor precisión de autocalibración) — ninguna tesis
+  cambió de confianza.
 - **2026-08-16** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios,
   working tree limpio) y verifiqué `codice.md` por conteo directo de filas: **468 filas, F-1 a
   F-468 sin huecos**, mismo tope exacto que ya procesó la corrida de ayer (2026-08-15) — **cero
@@ -5417,3 +5476,45 @@ decks internos.
   entradas 109 y 110 sí matizan directamente la regla C11/H5 y la tesis 24 respectivamente. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
   historial (2026-08-15 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
+- **2026-09-14** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward `2937e16→19e967d` que trajo consigo el propio commit del 2026-09-13 de esta
+  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
+  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 14 corridas, **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  trigesimosegundo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
+  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
+  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el
+  2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
+  treinta y tres días sin correr). **Poda de bitácora:** el bloque "2026-08-15" salió por completo de
+  la ventana de ~30 días (cutoff ≈2026-08-15) — lo fusioné con el bloque "2026-08-01 a 2026-08-14" en
+  un resumen ampliado "2026-08-01 a 2026-08-15"; no se pierde ningún dato porque el detalle de cada
+  tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
+  intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
+  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra
+  estable, contra `fuentes_leidas_lobo.md` (111 ya leídas) — 23 pendientes — y elegí 3 al azar sin
+  reemplazo (Python `random.sample`, sin semilla fija): F-357 (Mehta et al. 2025, RCT de framing
+  opt-out vs. opt-in en monitoreo remoto de presión arterial, ya citada solo por su veredicto de "no
+  superó"), F-162 (revisión bibliométrica de seguro vehicular basado en telemática, ya citada solo
+  por su conclusión agregada sobre riesgo moral/selección adversa) y F-115 (análisis académico de la
+  adquisición de Oak Street Health por CVS, ya citada solo por su conclusión de "viabilidad de
+  mercado"). Las URLs directas de las tres (jamanetwork.com, sciencedirect.com, cambridge.org) dieron
+  `EGRESS_BLOCKED` por el proxy del entorno, igual que el mirror de PMC de la primera
+  (pmc.ncbi.nlm.nih.gov); `WebSearch` sí funcionó y permitió reconstruir detalle de método/cifras
+  exactas en las tres vía cobertura secundaria convergente (PubMed/PMC para F-357, ResearchGate/
+  PubMed/OUCI para F-162, ResearchGate y prensa del cierre del deal para F-115), no solo el resumen
+  de una línea ya citado. Sumé las entradas 112, 113 y 114 de Intuición acumulada: (112) el brazo
+  "ganador" del RCT de framing (opt-out, 37,5% vs. 33,9% de opt-in, diferencia no significativa)
+  incluía además la entrega de un tensiómetro antes de inscribirse — un "empate" entre framing puro y
+  framing+regalo es en realidad más contundente en contra de que el framing por sí solo haga algo;
+  (113) una revisión bibliométrica mapea qué ha estudiado un campo, no mide un efecto propio — citar
+  F-162 como si fuera el hallazgo de que la telemática reduce el riesgo moral salta un nivel de
+  inferencia que solo los RCT primarios que cataloga (F-23, F-442) pueden sostener; (114) un análisis
+  académico que llama "reconfirmación de viabilidad de mercado" a una adquisición está leyendo el
+  precio que pagó el comprador (US$10.600M por Oak Street Health, con ~45% del capital en manos de PE
+  al momento de la venta), no el desempeño operativo del modelo — mismo error de lectura que el
+  proyecto ya corrigió para los exits de insurtech (F-452, F-426/F-427), ahora confirmado en un tercer
+  dominio (salud value-based). Ninguna tesis de negocio cambió de confianza numérica por esta
+  corrida — es el mecanismo paralelo de intuición, aunque la 112 sí endurece la lectura de cualquier
+  propuesta futura de opt-out para RIMAC. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
+  tres fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-16 a hoy) tras la poda de hoy —
+  dentro de la ventana de ~30 días.

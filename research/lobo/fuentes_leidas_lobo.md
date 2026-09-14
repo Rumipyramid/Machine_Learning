@@ -128,3 +128,6 @@
 | F-257 | 🟢 A | 2026-09-13 | Intuición 109 — el moderador que explica el resultado agregado de un RCT de productividad con IA es la familiaridad con el objeto de trabajo (el repo), no con la herramienta genérica |
 | F-381 | 🟢 A | 2026-09-13 | Intuición 110 — un headline de "preferencia" de una interfaz generada por IA puede promediar seis dimensiones separadas; pedir el desglose antes de citar la cifra única |
 | F-430 | 🟢 A | 2026-09-13 | Intuición 111 — antes de citar el efecto promedio de un meta-análisis, verificar si el propio diseño ya separó sesgo de publicación de heterogeneidad real |
+| F-357 | 🟢 A | 2026-09-14 | Intuición 112 — un "empate" entre framing solo y framing+regalo es más contundente en contra del framing puro de lo que parece |
+| F-162 | 🟢 A | 2026-09-14 | Intuición 113 — una revisión bibliométrica mapea el campo, no mide un efecto propio; no citarla como hallazgo de efecto |
+| F-115 | 🟢 A | 2026-09-14 | Intuición 114 — "reconfirma viabilidad de mercado" de una adquisición lee el precio del comprador, no el desempeño operativo del modelo comprado |
