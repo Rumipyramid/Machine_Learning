@@ -4205,6 +4205,99 @@ confirmando que es un error de lectura transferible entre dominios, no específi
   ni cambia confianza de ninguna existente, pero añade un tercer dominio (salud value-based) al
   patrón ya documentado en dos.
 
+### 115. Arrow 1963 identifica fallas de mercado en salud pero no concluye que eso justifique intervención estatal — el ledger lo cita solo como "teoría canónica", sin la distinción que separa el diagnóstico de la receta
+F-83 está citado en el ledger solo como "teoría canónica detrás del seguro de salud" — cita de
+autoridad sin matiz. La lectura a fondo (pmc.ncbi.nlm.nih.gov bloqueado por el proxy; reconstruido
+vía `WebSearch` contra PubMed, JSTOR/Columbia Scholarship Online y comentario económico secundario
+convergente, incluida una lectura crítica del Cato Institute/Econlib que Cato mismo tiene bloqueado
+en este entorno pero que aparece citada y parafraseada en otras fuentes) confirma la estructura de
+cuatro partes del artículo (alcance del sector, características especiales de la atención médica,
+consideraciones dentro de la industria, comparación con un sistema ideal) y su argumento central:
+incertidumbre, riesgo moral y la asimetría de confianza médico-paciente-asegurador alejan el mercado
+de salud del ideal competitivo. El matiz que el resumen de una línea del ledger no captura: la
+lectura secundaria coincide en que Arrow **no** concluye que una falla de mercado justifique
+automáticamente intervención estatal — señala explícitamente que la intervención no de mercado a
+veces *amplía* la brecha entre producto real y potencial, y buena parte de la literatura de política
+pública que invoca su autoridad para argumentar a favor de regulación está citando una conclusión
+que el texto original no cierra por sí solo. **Heurística:** cuando un paper fundacional se invoca
+como autoridad para una conclusión de política, verificar si esa conclusión es del propio autor o
+una atribución que otros citantes le pegaron después — el diagnóstico (hay falla de mercado) y la
+receta (por tanto el Estado debe intervenir así) son dos afirmaciones separadas, y la segunda no se
+sigue automáticamente de la primera.
+- **Fuente:** F-83 (🟢A — peer-reviewed, American Economic Review, tratamiento teórico fundacional)
+- **Leído a fondo:** 2026-09-15 (pmc.ncbi.nlm.nih.gov bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` contra PubMed, JSTOR/Columbia Scholarship Online y cobertura
+  económica secundaria que describe tanto la lectura estándar como la controversia sobre su uso
+  como autoridad regulatoria — no tuve acceso al texto primario completo, así que esta entrada se
+  apoya en comentario secundario convergente sobre el argumento, declarado como límite de esta
+  lectura, no como verificación directa del artículo)
+- **Conexión razonada, no forzada:** no abre tesis nueva ni cambia la confianza de ninguna
+  existente (F-83 sigue sosteniendo la base teórica de por qué la confianza y la asimetría de
+  información son centrales en seguros de salud), pero es una advertencia directa para cualquier
+  argumento propio del proyecto que use "falla de mercado" como atajo retórico hacia "por tanto
+  regulación/intervención" sin especificar el mecanismo — el mismo tipo de salto de inferencia que
+  la intuición 113 (F-162) ya marcó entre "mapear un campo" y "medir un efecto".
+
+### 116. El megastudy de Milkman (F-20) tiene alta validez interna para rankear 54 diseños en una sola población/outcome — pero por diseño no dice si el ganador migra a un contexto distinto; la "receta" que tesis 7 usa como prior sigue siendo un prior, no un resultado ya transferido
+F-20 ya tiene una lectura detallada en el ledger (bajo tesis 7): el diseño ganador fue un
+microincentivo (~US$0.09) dirigido al momento de recaída, no un recordatorio genérico, y eso se usa
+como "prior accionable para el primer experimento propio". La lectura de hoy agrega la limitación
+metodológica que ese resumen no cubre (reconstruida vía `WebSearch` contra PubMed, una guía
+metodológica de los propios autores de megastudies — Milkman et al., "A Guide to Megastudies",
+PNAS Nexus 2022 — y cobertura secundaria de NIH/Penn Today): un megastudy por definición compara
+muchos diseños **en la misma población, el mismo outcome objetivo y la misma duración** — eso le da
+validez interna fuerte para decir "cuál de estos 54 ganó aquí", pero la propia literatura
+metodológica lo describe como una forma de "expedición de pesca" con poca construcción de teoría, y
+señala que los megastudies existentes todavía no han producido avances claros en entender *para
+quién* funciona mejor cada tratamiento (heterogeneidad). **Heurística:** un megastudy resuelve el
+problema de "cuál diseño gana" dentro de su propia población/outcome con mucha más fuerza que
+cualquier estudio único — pero extrapolar el diseño ganador (aquí, asistencia a gimnasio) a un
+dominio distinto (aquí, conversión/renovación de seguros) es una hipótesis nueva que hereda cero
+validez interna del estudio original; el "prior accionable" ya declarado en el ledger es la lectura
+correcta (probarlo, no asumirlo), y esta entrada documenta *por qué* ese prior necesita su propio
+experimento antes de tratarse como receta.
+- **Fuente:** F-20 (🟢A — megastudy peer-reviewed, Nature 2021)
+- **Leído a fondo:** 2026-09-15 (nature.com bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` contra PubMed, la guía metodológica de los propios autores y cobertura de NIH/Penn
+  Today que describen método, resultados exactos y las limitaciones que la nota propia de los
+  autores reconoce, no solo la cifra agregada ya citada)
+- **Conexión razonada, no forzada:** afina tesis 7 (evidencia F-16 a F-21) sin bajar su confianza
+  (sigue Alta) — el matiz ya existente ("prior accionable para el primer experimento propio") queda
+  reforzado con la razón metodológica explícita de por qué es un prior y no un resultado, y conecta
+  con el patrón que la intuición 111 (F-430) ya aplicó a meta-análisis: verificar qué separa el
+  propio diseño del estudio antes de tratar su cifra líder como transferible.
+
+### 117. El propio survey de Pitthan & De Witte (F-3) junta dos mecanismos distintos bajo "sesgos que causan infraseguro" — mal cálculo de probabilidad (arreglable con información) y ponderación distorsionada de probabilidad (de preferencia, no de información) — y la receta de alfabetización financiera que recomienda solo ataca al primero
+F-3 ya sostiene tesis 14 (miopía + narrow framing) por la revisión profunda de `cronista` del
+2026-07-21. La lectura de hoy (sciencedirect.com y el repositorio de Maastricht bloqueados por el
+proxy; reconstruido vía `WebSearch` contra RePEc/IDEAS y cobertura secundaria que resume el
+articulado completo) agrega un matiz que esa revisión no capturó: el propio resultado del survey
+describe que los sesgos motivan el infraseguro "a través de una ponderación de probabilidad
+subóptima **o** una estimación equivocada del riesgo" — dos vías causales distintas presentadas
+como si fueran intercambiables. La estimación equivocada es un problema de información (el
+consumidor no sabe el riesgo real) y sí es lo que la alfabetización financiera puede corregir — es
+la receta que el propio paper recomienda. Pero la ponderación de probabilidad distorsionada (la raíz
+de prospect theory: sobreponderar sistemáticamente riesgos raros y vívidos, subponderar los
+silenciosos) es un problema de **preferencia**, no de información — nadie corrige cuánto pesa
+subjetivamente una probabilidad solo dándole al consumidor el dato correcto. **Heurística:** cuando
+un survey agrupa varios sesgos bajo una sola causa ("infraseguro por sesgo") y receta una sola
+solución ("más educación financiera"), verificar si todos los sesgos listados comparten el mismo
+tipo de falla (información vs. preferencia) — si no, la receta única resuelve solo una parte del
+problema que dice resolver.
+- **Fuente:** F-3 (🟢A — paper peer-reviewed, *Journal of Behavioral and Experimental Finance*,
+  2021)
+- **Leído a fondo:** 2026-09-15 (sciencedirect.com y cris.maastrichtuniversity.nl bloqueados por el
+  proxy del entorno; reconstruido vía `WebSearch` contra RePEc/IDEAS y cobertura secundaria del
+  survey completo, que describe el listado de sesgos y la conclusión de doble vía causal ausente
+  del resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** es evidencia adicional, no contradictoria, para tesis 1
+  (divulgación es palanca de conversión débil) — sostiene el escepticismo de tesis 1 hacia
+  "glosario/explicador" con un mecanismo más preciso: parte del infraseguro que F-3 documenta es
+  por definición no arreglable con más información, porque la vía causal es de preferencia, no de
+  conocimiento; no cambia la confianza de tesis 1 (sigue Alta) ni la de tesis 14, pero deja escrito
+  el porqué antes de que alguien proponga "más educación financiera" como solución completa citando
+  F-3 como respaldo.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4255,18 +4348,19 @@ confirmando que es un error de lectura transferible entre dominios, no específi
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-15** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-16** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
   *(Resumida el 2026-08-21, el 2026-09-07 y el 2026-09-09; ampliada y
   fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
   días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, el
-  2026-09-13 al salir el bloque del 08-14, y una vez más el 2026-09-14 al salir el bloque del 08-15
+  2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, y una vez más
+  el 2026-09-15 al salir el bloque del 08-16
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Catorce corridas.
+  fuente/fecha.)* Quince corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4310,44 +4404,10 @@ confirmando que es un error de lectura transferible entre dominios, no específi
   selección de riesgo, F-218 intervalo de repaso óptimo que se encoge con el horizonte de retención,
   F-401 alfabetización en IA correlaciona con menor precisión de autocalibración) — ninguna tesis
   cambió de confianza.
-- **2026-08-16** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios,
-  working tree limpio) y verifiqué `codice.md` por conteo directo de filas: **468 filas, F-1 a
-  F-468 sin huecos**, mismo tope exacto que ya procesó la corrida de ayer (2026-08-15) — **cero
-  fuentes nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde
-  entonces, tercer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra
-  ese mismo tope: ninguna quedó desalineada con la evidencia vigente y no encontré matiz genuino
-  que agregar — no forcé ningún bloque "[Revisión...]" solo por completar el paso (el último real
-  sigue siendo el del 2026-08-12, mecanismo de `cronista`, que corre cada ~3 días y no vence hoy).
-  Sí corrió la rutina diaria de intuición (undécima corrida desde el 2026-08-06): de las 154
-  fuentes 🟢A del ledger, 27 ya tenían lectura profunda del Lobo — de las 127 restantes elegí 3 sin
-  patrón temático deliberado: F-97 (Oskam, van Kleef & van Vliet 2023, ajuste de riesgo holandés
-  por diagnóstico — citada en el ledger solo como "campo activo de mejora continua", nunca leída a
-  fondo), F-143 (Fleming et al. 2023, divulgación repetida de datos — ya sostiene tesis 13, pero
-  solo por su resumen de una línea) y F-432 (Victory, Nenycz-Thiel & Dawes 2021, tasa real de
-  fracaso de producto nuevo — citada en el node de diseño/innovación). Las tres bloqueadas por el
-  proxy en su URL directa (pmc.ncbi.nlm.nih.gov, academic.oup.com, link.springer.com);
-  reconstruidas vía búsqueda dirigida contra agregadores académicos (PubMed, EconPapers, CREATe,
-  ProQuest, ResearchGate) que confirman método y hallazgo, no solo el resumen ya citado. Sumé las
-  entradas 28, 29 y 30 de Intuición acumulada: (28) un modelo de clasificación que fuerza "una
-  persona = un bucket" por eje (como el DCG holandés, que solo permite una etiqueta de diagnóstico
-  por capa) subcompensa sistemáticamente a quien combina rasgos — multimorbilidad en ese caso — y
-  el arreglo correcto es de arquitectura del modelo (permitir multi-pertenencia), no de mejor
-  calibración dentro de cada bucket; amplía la intuición 17 desde el ángulo de "falta de variable"
-  hacia "el axioma de una sola etiqueta es en sí mismo el sesgo"; (29) que la tasa de campos
-  completados suba en un formulario de divulgación progresiva no prueba que la confianza real del
-  cliente subió — puede ser puro *foot-in-the-door* operando sobre la conducta mientras la actitud
-  de privacidad medida no se mueve, con forewarning documentado como la contramedida ética; agrega
-  precisión al mecanismo ya citado en tesis 13 sin cambiar su confianza (sigue Alta); (30) la tasa
-  base de fracaso de un producto de consumo nuevo es alta y sistemática (25% al año 1, ~40% a los 2
-  años, medida en panel de ventas real sobre 83.719 SKU, no en encuesta) y predecible antes de
-  lanzar por dos factores — categoría de alta rotación y marca matriz débil — así que un
-  post-mortem debe descartar primero esos dos factores estructurales antes de inventar una
-  explicación a medida; transferible a cualquier lanzamiento propio (producto sísmico de tesis 4,
-  extensiones de `lapuerta` a microseguro). Ninguna tesis de negocio cambió de confianza por esta
-  corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis
-  existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
-  Bitácora con 28 días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin
-  podar todavía; la corrida del 2026-08-20 sigue siendo la programada para evaluar podar/resumir.
+  **2026-08-16** — sin cambios sustanciales en el ledger (F-468, 154 fuentes 🟢A por conteo de esa
+  corrida); undécima corrida de intuición (entradas 28-30: F-97 ajuste de riesgo holandés por
+  diagnóstico, F-143 divulgación repetida de datos, F-432 tasa real de fracaso de producto nuevo) —
+  ninguna tesis cambió de confianza.
 - **2026-08-17** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward 8a90dc2→3acec5d, el commit de la corrida de ayer, 2026-08-16) y verifiqué
   `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
@@ -5518,3 +5578,48 @@ confirmando que es un error de lectura transferible entre dominios, no específi
   propuesta futura de opt-out para RIMAC. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
   tres fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-16 a hoy) tras la poda de hoy —
   dentro de la ventana de ~30 días.
+- **2026-09-15** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward `2937e16→b8c3a63` que trajo consigo el propio commit del 2026-09-14 de esta
+  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
+  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 15 corridas, **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  trigesimotercer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
+  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
+  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el
+  2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
+  treinta y cuatro días sin correr). **Poda de bitácora:** el bloque "2026-08-16" salió por completo
+  de la ventana de ~30 días (cutoff ≈2026-08-16) — lo fusioné con el bloque "2026-08-01 a 2026-08-15"
+  en un resumen ampliado "2026-08-01 a 2026-08-16"; no se pierde ningún dato porque el detalle de
+  cada tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
+  intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
+  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra
+  estable, contra `fuentes_leidas_lobo.md` (114 ya leídas) — 20 pendientes — y elegí 3 al azar sin
+  reemplazo (Python `random.sample`, sin semilla fija): F-83 (Arrow 1963, teoría fundacional de
+  incertidumbre en salud, ya citada solo como "teoría canónica detrás del seguro de salud"), F-20
+  (Milkman et al. 2021, megastudy de Nature, ya citada en detalle bajo tesis 7 pero solo por su
+  receta de diseño ganadora) y F-3 (Pitthan & De Witte 2021, survey de sesgos en demanda de seguros,
+  ya citada en detalle por la revisión profunda de `cronista` del 2026-07-21 pero solo por
+  miopía/narrow framing). Las URLs directas de las tres (pmc.ncbi.nlm.nih.gov, nature.com,
+  sciencedirect.com) dieron `EGRESS_BLOCKED` por el proxy del entorno, igual que sus mirrors
+  institucionales directos (cato.org, cris.maastrichtuniversity.nl); `WebSearch` sí funcionó y
+  permitió reconstruir detalle de mecanismo/metodología nuevo en las tres vía cobertura secundaria
+  convergente (PubMed, JSTOR/Columbia Scholarship Online y comentario económico secundario sobre el
+  uso político de Arrow para F-83; PubMed y la guía metodológica de los propios autores del
+  megastudy para F-20; RePEc/IDEAS y cobertura del survey completo para F-3), no solo el resumen ya
+  citado. Sumé las entradas 115, 116 y 117 de Intuición acumulada: (115) la lectura secundaria
+  coincide en que Arrow no concluye que la falla de mercado en salud justifique automáticamente
+  intervención estatal — separar el diagnóstico de un paper fundacional de la receta que otros
+  citantes le atribuyeron después; (116) un megastudy rankea diseños con fuerza dentro de su propia
+  población/outcome, pero la propia literatura metodológica de megastudies reconoce poca
+  construcción de teoría y poco entendimiento de heterogeneidad — extrapolar el diseño ganador de
+  F-20 (gimnasio) a seguros hereda cero validez interna, refuerza sin cambiar confianza el "prior
+  accionable" ya declarado en tesis 7; (117) el propio resultado de F-3 describe dos vías causales
+  distintas de infraseguro — estimación equivocada del riesgo (arreglable con información) y
+  ponderación de probabilidad distorsionada (de preferencia, no arreglable con el mismo remedio) —
+  y la receta de alfabetización financiera que el paper recomienda solo ataca la primera; añade
+  precisión mecanicista a tesis 1 sin cambiar su confianza (sigue Alta). Ninguna tesis de negocio
+  cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque la
+  117 sí sostiene con mayor precisión el escepticismo ya vigente de tesis 1 hacia soluciones de solo
+  divulgación/alfabetización. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 30 días de historial (2026-08-17 a hoy) tras la poda de hoy — dentro de
+  la ventana de ~30 días.

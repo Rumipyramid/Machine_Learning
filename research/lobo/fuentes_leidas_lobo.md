@@ -131,3 +131,6 @@
 | F-357 | 🟢 A | 2026-09-14 | Intuición 112 — un "empate" entre framing solo y framing+regalo es más contundente en contra del framing puro de lo que parece |
 | F-162 | 🟢 A | 2026-09-14 | Intuición 113 — una revisión bibliométrica mapea el campo, no mide un efecto propio; no citarla como hallazgo de efecto |
 | F-115 | 🟢 A | 2026-09-14 | Intuición 114 — "reconfirma viabilidad de mercado" de una adquisición lee el precio del comprador, no el desempeño operativo del modelo comprado |
+| F-83 | 🟢 A | 2026-09-15 | Intuición 115 — separar el diagnóstico de un paper fundacional ("hay falla de mercado") de la receta que otros le atribuyeron después ("por tanto, intervención estatal") |
+| F-20 | 🟢 A | 2026-09-15 | Intuición 116 — un megastudy rankea diseños con fuerza dentro de su propia población/outcome; extrapolar el ganador a un dominio distinto hereda cero validez interna del estudio |
+| F-3 | 🟢 A | 2026-09-15 | Intuición 117 — un survey que agrupa sesgos bajo una sola receta puede mezclar un problema de información (arreglable) con uno de preferencia (no arreglable con el mismo remedio) |
