@@ -4298,6 +4298,81 @@ problema que dice resolver.
   el porqué antes de que alguien proponga "más educación financiera" como solución completa citando
   F-3 como respaldo.
 
+### 118. Los mitigadores documentados del sesgo de automatización no son "capacitar mejor" — son decisiones de diseño puntuales del sistema y una estructura de rendición de cuentas
+El ledger cita a Goddard et al. (F-60) solo por su tasa agregada (5-7%, con confianza en el
+sistema y dificultad de tarea como mediadores) como benchmark externo para medir la tasa de
+anulación del farmacéutico en el piloto de triage. La lectura a fondo (academic.oup.com y
+pmc.ncbi.nlm.nih.gov bloqueados por el proxy; reconstruido vía `WebSearch` contra Semantic
+Scholar, ResearchGate y cobertura secundaria que resume mediadores y mitigadores) trae el hallazgo
+accionable que el resumen de una línea no capturó: los mitigadores identificados no son genéricos
+("entrenar más") sino palancas concretas de diseño — (a) hacer responsable al usuario
+específicamente de la **exactitud de su decisión final** (no solo de su desempeño general) reduce
+la tasa de sesgo medida; (b) el formato de salida importa: presentar el output del sistema como
+información/dato en vez de como una recomendación directa reduce la sobre-confianza; (c) la
+posición de la sugerencia en pantalla y si se muestra el nivel de confianza actualizado del sistema
+también mueven la tasa. **Heurística:** para el piloto farmacia+triage IA (tesis 9/10), esto es una
+especificación de producto, no una campaña de capacitación — el output de la IA debe presentarse
+como señal informativa (no veredicto), el farmacéutico debe quedar registrado como responsable de
+la decisión final con su propia exactitud medida (no diluida en "así lo dijo el sistema"), y el
+sistema debe exponer su nivel de confianza en cada caso.
+- **Fuente:** F-60 (Goddard, Roudsari & Wyatt 2012, *JAMIA*, revisión sistemática peer-reviewed)
+- **Leído a fondo:** 2026-09-16 (academic.oup.com y pmc.ncbi.nlm.nih.gov bloqueados por el proxy
+  del entorno; reconstruido vía `WebSearch` contra Semantic Scholar, ResearchGate y cobertura
+  secundaria que detalla mediadores/mitigadores ausentes del resumen ya citado)
+- **Conexión razonada, no forzada:** matiza tesis 10 (riesgo de sobreclamar precisión clínica en
+  triage con IA) y conecta con intuición 53 (fallas simétricas del triaje) sin abrir tesis nueva ni
+  cambiar ninguna confianza.
+
+### 119. El propio paper metodológico más citado de CFIR enseña, con su propio ejemplo, a reorganizar el framework alrededor de dónde vive la señal real, no a aplicarlo con la taxonomía de fábrica
+El ledger cita a Damschroder et al. (F-64) solo por su función genérica (5 dominios, "explica el
+por qué detrás del qué" que complementa a RE-AIM). La lectura a fondo (ncbi.nlm.nih.gov bloqueado
+por el proxy; reconstruido vía `WebSearch` contra Semantic Scholar, ResearchGate y ScienceOpen)
+muestra que el aporte real del paper — la versión "simplificada" de CFIR, la más citada para uso
+pragmático — es un ejemplo concreto de tres adaptaciones estructurales que los propios autores
+hicieron sobre el framework al aplicarlo a un sistema de salud real: (a) ascendieron "necesidades y
+recursos del paciente" — sub-constructo enterrado dentro de "contexto externo" en la versión
+original de CFIR — a su propio dominio de primer nivel, porque ahí concentraron la señal real al
+codificar sus datos; (b) partieron "contexto interno" (que CFIR trata como bloque monolítico) en
+tres capas jerárquicas que replican la estructura real del sistema que estudiaban (clínica piloto /
+clínicas pares / sistema de salud completo); (c) redefinieron varios constructos para su contexto
+específico. **Heurística:** al aplicar CFIR (o cualquier framework de implementación) al piloto
+farmacia+triage IA en Perú, no corresponde usar la jerarquía de dominios de fábrica — corresponde
+hacer lo mismo que hizo el propio paper metodológico: subir "necesidades/recursos del paciente
+peruano" (acceso, confianza, alfabetización) a dominio propio si ahí concentra la señal, y partir
+"contexto interno" en capas que repliquen la jerarquía real (farmacia local / cadena de farmacias /
+red de derivación MINSA-SBS) en vez de tratarlo como un bloque uniforme.
+- **Fuente:** F-64 (Damschroder et al., paper metodológico peer-reviewed ampliamente adoptado)
+- **Leído a fondo:** 2026-09-16 (ncbi.nlm.nih.gov bloqueado por el proxy del entorno; reconstruido
+  vía `WebSearch` contra Semantic Scholar, ResearchGate y ScienceOpen, que detallan las tres
+  adaptaciones estructurales ausentes del resumen ya citado)
+- **Conexión razonada, no forzada:** conecta con tesis 9 (tracción real del modelo
+  farmacia+triage) y tesis 10 sin cambiar su confianza — es una nota de método de implementación,
+  no evidencia de negocio nueva.
+
+### 120. Que el gatekeeping no muestre demora medible en la derivación no descarta que sí empeore el desenlace más grave — la vía causal puede no ser el tiempo
+El ledger cita esta revisión sistemática (F-110) solo por su veredicto agregado ("evidencia mixta,
+preocupación de diagnóstico tardío en cáncer"). La lectura a fondo (pmc.ncbi.nlm.nih.gov bloqueado
+por el proxy; reconstruido vía `WebSearch` contra PubMed y *British Journal of General Practice*)
+precisa el hallazgo de forma más incómoda: de 25 estudios elegibles (sobre 4.899 cribados), la
+revisión encontró que la **supervivencia** de pacientes con cáncer bajo esquemas de gatekeeping fue
+significativamente menor que en acceso directo — pero, en la misma revisión, el gatekeeping de
+atención primaria **no** se asoció de forma general con demora en la derivación. Es decir, el
+mecanismo que produce peor supervivencia no pasa, según esta evidencia, por "tardan más en
+derivar" — probablemente pasa por la exactitud diagnóstica del propio gatekeeper en la puerta de
+entrada, un canal de riesgo distinto al de la velocidad. Además, la satisfacción del paciente fue
+sistemáticamente menor bajo gatekeeping aunque el sistema "funcione" en costo/utilización (menos
+hospitalizaciones, menos uso de especialista, más visitas de atención primaria). **Heurística:**
+para el piloto farmacia+triage IA (tesis 9/10), medir "tiempo hasta derivación" como proxy único de
+seguridad no basta — hay que medir directamente la exactitud diagnóstica del triage en la puerta de
+entrada, porque ahí es donde esta evidencia concentra el daño real (cáncer), no en la demora.
+- **Fuente:** F-110 (revisión sistemática peer-reviewed, *British Journal of General Practice* /
+  PMC, 2019)
+- **Leído a fondo:** 2026-09-16 (pmc.ncbi.nlm.nih.gov bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` contra PubMed y BJGP, que separan el hallazgo de supervivencia del de
+  demora en la derivación, ausente del resumen agregado ya citado)
+- **Conexión razonada, no forzada:** conecta con intuición 53 (fallas simétricas del triaje) y con
+  tesis 10; matiza sin cambiar confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4348,19 +4423,19 @@ problema que dice resolver.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-16** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-17** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
   *(Resumida el 2026-08-21, el 2026-09-07 y el 2026-09-09; ampliada y
   fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
   días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, el
-  2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, y una vez más
-  el 2026-09-15 al salir el bloque del 08-16
+  2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, el
+  2026-09-15 al salir el bloque del 08-16, y una vez más el 2026-09-16 al salir el bloque del 08-17
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Quince corridas.
+  fuente/fecha.)* Dieciséis corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4408,44 +4483,11 @@ problema que dice resolver.
   corrida); undécima corrida de intuición (entradas 28-30: F-97 ajuste de riesgo holandés por
   diagnóstico, F-143 divulgación repetida de datos, F-432 tasa real de fracaso de producto nuevo) —
   ninguna tesis cambió de confianza.
-- **2026-08-17** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward 8a90dc2→3acec5d, el commit de la corrida de ayer, 2026-08-16) y verifiqué
-  `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
-  exacto que procesó la corrida de ayer — **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuarto día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`,
-  cada ~3 días, no vence hoy). Sí corrió la rutina diaria de intuición (duodécima corrida desde el
-  2026-08-06): de 136 fuentes 🟢A confirmadas por conteo propio en el ledger, 30 ya tenían lectura
-  profunda del Lobo — de las 106 restantes elegí 3 deliberadamente ancladas a tesis existentes que
-  solo tenían el resumen de una línea nunca leído a fondo, en vez de al azar puro: F-119
-  (Scheibehenne, Greifeneder & Todd 2010, meta-análisis fundacional de choice overload que
-  sostiene tesis 12), F-180 (Cummins & Doherty 2006, marco causal de "market maker" que sostiene
-  tesis 16) y F-198 (filing SEC de UnitedHealth Q2 2026, evidencia primaria de tesis 17). Las tres
-  bloqueadas por el proxy en su URL directa (academic.oup.com, onlinelibrary.wiley.com, sec.gov,
-  businesswire.com); reconstruidas vía búsqueda dirigida contra agregadores (ResearchGate,
-  Academia.edu, JSTOR, IDEAS/RePEc, TradingView, StockTitan, 24/7 Wall St.) que confirman detalle
-  nuevo, no solo el resumen ya citado. Sumé las entradas 31, 32 y 33 de Intuición acumulada: (31)
-  un metaanálisis con efecto promedio cero (F-119, base de tesis 12) tiene una réplica activa y no
-  zanjada (Chernev, Böckenholt & Goodman 2015) que encuentra el efecto sí presente bajo cuatro
-  condiciones — complejidad, dificultad de tarea, incertidumbre de preferencia, meta de
-  exploración vs. elección — que el catálogo de seguros probablemente cumple; no baja la confianza
-  de tesis 12 pero acota su alcance; (32) la comisión de un intermediario (F-180, marco de tesis
-  16) no es solo el precio de la distribución/confianza — la comisión contingente alinea
-  incentivos y rompe el "winner's curse", empujando a los aseguradores a competir más agresivo en
-  precio por ese negocio; quitar al intermediario sin sustituto de ese mecanismo puede subir el
-  precio final aunque desaparezca la comisión visible; (33) la utilidad de Optum Rx (F-198,
-  evidencia central de tesis 17) subió en el mismo trimestre en que su propio volumen de scripts
-  cayó 6,5% por contracción de membresía en su aseguradora hermana — el crecimiento vino de mezcla
-  hacia farmacia especializada, no de más asegurados, una exposición a shock regulatorio de precio
-  de especialidad que la tesis tal como está escrita no cubre. Ninguna tesis de negocio cambió de
-  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
-  evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance de
-  tesis 12, 16 y 17 sin tocar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md`
-  con las tres fuentes leídas hoy. Bitácora con 29 días de historial (2026-07-20 a hoy), dentro de
-  la ventana de ~30 días — sin podar todavía; la corrida del 2026-08-20 sigue siendo la programada
-  para evaluar podar/resumir.
+  **2026-08-17** — sin cambios sustanciales en el ledger (F-468); duodécima corrida de intuición
+  (entradas 31-33: F-119 réplica activa de choice overload — luego identificada el 2026-09-16 como
+  la misma fuente que F-120, ver corrección en la entrada de esa fecha —, F-180 comisión de
+  intermediario como mecanismo de "market maker", F-198 Optum Rx creciendo por mezcla de producto
+  no por más asegurados) — matizó el alcance de tesis 12, 16 y 17 sin tocar su confianza.
 - **2026-08-18** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward cf8c4a7 sobre el commit de ayer, working tree limpio) y verifiqué `codice.md` por
   conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope exacto que
@@ -5623,3 +5665,52 @@ problema que dice resolver.
   divulgación/alfabetización. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 30 días de historial (2026-08-17 a hoy) tras la poda de hoy — dentro de
   la ventana de ~30 días.
+- **2026-09-16** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`; sin fast-forward, la rama ya estaba en `5aeb9c3`, el commit de la corrida de ayer,
+  2026-09-15) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas,
+  F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 16 corridas, **cero
+  fuentes nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde
+  entonces, trigesimocuarto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis
+  vigentes contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz
+  de confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde
+  el 2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
+  treinta y cinco días sin correr). **Poda de bitácora:** el bloque "2026-08-17" salió por completo
+  de la ventana de ~30 días (cutoff ≈2026-08-17) — lo fusioné con el bloque "2026-08-01 a 2026-08-16"
+  en un resumen ampliado "2026-08-01 a 2026-08-17"; no se pierde ningún dato porque el detalle de
+  cada tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
+  intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
+  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra
+  estable, contra `fuentes_leidas_lobo.md` (117 ya leídas) — 17 pendientes — y elegí 3 al azar sin
+  reemplazo (Python `random.sample`, sin semilla fija): F-60 (Goddard, Roudsari & Wyatt 2012, *JAMIA*,
+  revisión sistemática de sesgo de automatización, ya citada solo por su tasa agregada), F-64
+  (Damschroder et al., CFIR simplificado, ya citada solo por su función genérica de 5 dominios) y
+  F-120 (Chernev, Böckenholt & Goodman 2015, *Journal of Consumer Psychology*, meta-análisis de
+  choice overload). **Hallazgo de auditoría antes de leer F-120:** al ir a leerla a fondo detecté que
+  **ya se había leído** — es la misma "réplica activa" que la Intuición 31 (2026-08-17) describe por
+  nombre de autor sin dar su F-n, y su hallazgo (4 moderadores: complejidad, dificultad de tarea,
+  incertidumbre de preferencia, meta de decisión) ya está documentado ahí. Corregí el gap de tracking
+  en `fuentes_leidas_lobo.md` (fila retroactiva para F-120, fecha real 2026-08-17, con nota) en vez de
+  duplicar la lectura, y sorteé un reemplazo de la lista pendiente sin F-120: F-110 (revisión
+  sistemática de gatekeeping de médico general, ya citada solo por su veredicto agregado de
+  "evidencia mixta"). Las URLs directas de las tres finales (academic.oup.com, ncbi.nlm.nih.gov,
+  pmc.ncbi.nlm.nih.gov) dieron `EGRESS_BLOCKED` por el proxy del entorno; `WebSearch` sí funcionó y
+  permitió reconstruir detalle de mecanismo/hallazgo nuevo en las tres vía cobertura secundaria
+  convergente (Semantic Scholar/ResearchGate para F-60, Semantic Scholar/ResearchGate/ScienceOpen
+  para F-64, PubMed/BJGP para F-110), no solo el resumen de una línea ya citado. Sumé las entradas
+  118, 119 y 120 de Intuición acumulada: (118) los mitigadores documentados del sesgo de
+  automatización (F-60) son decisiones de diseño concretas — presentar el output de la IA como
+  información y no como recomendación, y hacer responsable al usuario de la exactitud de su decisión
+  final, no de su desempeño general — no "capacitar mejor", directamente accionable para el diseño
+  del piloto farmacia+triage; (119) el propio paper metodológico de CFIR simplificado (F-64) enseña
+  con su propio ejemplo a reorganizar los dominios del framework alrededor de dónde concentra la
+  señal real (ascender "necesidades del paciente" a dominio propio, partir "contexto interno" en
+  capas jerárquicas) en vez de aplicar la taxonomía de fábrica; (120) la revisión de gatekeeping
+  (F-110) encontró peor supervivencia de cáncer bajo gatekeeping **sin** asociación general con
+  demora en la derivación — la vía causal de daño real probablemente es la exactitud diagnóstica en
+  la puerta de entrada, no la velocidad, lo que exige medir esa exactitud directamente en el piloto,
+  no solo el tiempo hasta derivación. Ninguna tesis de negocio cambió de confianza numérica por esta
+  corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy sí matizan tesis 9
+  y 10 (piloto farmacia+triage) sin tocar su nivel de confianza. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy y con la fila retroactiva de
+  F-120. Bitácora con 29 días de historial (2026-08-18 a hoy) tras la poda de hoy — dentro de la
+  ventana de ~30 días.

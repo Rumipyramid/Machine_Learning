@@ -48,6 +48,7 @@
 | F-143 | 🟢 A | 2026-08-16 | Intuición 29 — que la divulgación suba en pasos sucesivos no prueba que la confianza subió; puede ser foot-in-the-door operando solo sobre la conducta |
 | F-432 | 🟢 A | 2026-08-16 | Intuición 30 — la tasa base de fracaso de producto nuevo es alta y sistemática, predecible por categoría de alta rotación y fuerza de marca matriz |
 | F-119 | 🟢 A | 2026-08-17 | Intuición 31 — un metaanálisis con efecto promedio cero no cierra el debate; verificar si hay una réplica rival que lo reencuadre por moderadores |
+| F-120 | 🟢 A | 2026-08-17 (registrado el 2026-09-16) | *Corrección de tracking, no lectura nueva:* la "réplica rival" que cita la Intuición 31 (Chernev, Böckenholt & Goodman 2015) **es** F-120 — se leyó y se discutió a fondo ese día pero nunca se anotó aquí con su F-n; ver Bitácora 2026-09-16 |
 | F-180 | 🟢 A | 2026-08-17 | Intuición 32 — la comisión de un intermediario puede financiar mejor selección de riesgo y más competencia de precio, no solo distribución/confianza |
 | F-198 | 🟢 A | 2026-08-17 | Intuición 33 — utilidad que sube mientras el volumen propio cae es señal de mezcla de producto, no de demanda sana; verificar el mecanismo antes de citarla |
 | F-141 | 🟢 A | 2026-08-18 | Intuición 34 — el efecto pie-en-la-puerta sobrevive incluso sin continuidad temática entre el pedido chico y el grande (48% vs. 17% base) |
@@ -134,3 +135,6 @@
 | F-83 | 🟢 A | 2026-09-15 | Intuición 115 — separar el diagnóstico de un paper fundacional ("hay falla de mercado") de la receta que otros le atribuyeron después ("por tanto, intervención estatal") |
 | F-20 | 🟢 A | 2026-09-15 | Intuición 116 — un megastudy rankea diseños con fuerza dentro de su propia población/outcome; extrapolar el ganador a un dominio distinto hereda cero validez interna del estudio |
 | F-3 | 🟢 A | 2026-09-15 | Intuición 117 — un survey que agrupa sesgos bajo una sola receta puede mezclar un problema de información (arreglable) con uno de preferencia (no arreglable con el mismo remedio) |
+| F-60 | 🟢 A | 2026-09-16 | Intuición 118 — los mitigadores documentados del sesgo de automatización son decisiones de diseño (formato información vs. recomendación, rendición de cuentas) no "capacitar mejor" |
+| F-64 | 🟢 A | 2026-09-16 | Intuición 119 — el propio paper metodológico de CFIR simplificado enseña a reorganizar sus dominios alrededor de dónde vive la señal real, no a aplicar la taxonomía de fábrica |
+| F-110 | 🟢 A | 2026-09-16 | Intuición 120 — que el gatekeeping no muestre demora medible en la derivación no descarta que empeore el desenlace más grave (supervivencia en cáncer); la vía causal puede no ser el tiempo |
