@@ -138,3 +138,6 @@
 | F-60 | 🟢 A | 2026-09-16 | Intuición 118 — los mitigadores documentados del sesgo de automatización son decisiones de diseño (formato información vs. recomendación, rendición de cuentas) no "capacitar mejor" |
 | F-64 | 🟢 A | 2026-09-16 | Intuición 119 — el propio paper metodológico de CFIR simplificado enseña a reorganizar sus dominios alrededor de dónde vive la señal real, no a aplicar la taxonomía de fábrica |
 | F-110 | 🟢 A | 2026-09-16 | Intuición 120 — que el gatekeeping no muestre demora medible en la derivación no descarta que empeore el desenlace más grave (supervivencia en cáncer); la vía causal puede no ser el tiempo |
+| F-44 | 🟢 A | 2026-09-17 | Intuición 121 — igualar la métrica principal de un canal automatizado no iguala automáticamente el valor total que aportaba el canal humano que reemplaza |
+| F-58 | 🟢 A | 2026-09-17 | Intuición 122 — un diseño de prueba elegido primero por su ventaja ética no exime de justificar por qué el diseño más riguroso no era viable |
+| F-245 | 🟢 A | 2026-09-17 | Intuición 123 — la fricción que reduce la sobre-confianza en una recomendación de IA cuesta satisfacción declarada, y el ahorro no se reparte parejo entre usuarios |

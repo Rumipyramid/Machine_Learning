@@ -4373,6 +4373,75 @@ entrada, porque ahí es donde esta evidencia concentra el daño real (cáncer), 
 - **Conexión razonada, no forzada:** conecta con intuición 53 (fallas simétricas del triaje) y con
   tesis 10; matiza sin cambiar confianza.
 
+### 121. Igualar la métrica principal de un canal automatizado no iguala automáticamente el valor total que aportaba el canal humano que reemplaza
+El ledger ya usa a F-44 (Milford, *Bioethics* 2024) dentro de tesis 10 para un punto específico
+de triage clínico: un chatbot médico puede alcanzar precisión diagnóstica comparable a un médico
+humano y aun así producir peor outcome de salud, porque la relación médico-paciente aporta
+percepción y observación clínica que la consulta automatizada pierde — un insumo que la métrica
+de "precisión" nunca capturó, ni lo hará por más que suba. Esa lectura ya vive en tesis 10; la
+heurística de hoy generaliza el mecanismo fuera de ese caso puntual: cualquier decisión de
+"automatizar el canal X porque el modelo empata al humano en la métrica Y" está asumiendo, sin
+probarlo, que Y agota lo que el humano aportaba. **Heurística:** antes de sustituir un canal
+humano por uno automatizado con métrica equivalente, listar explícitamente qué otros insumos del
+canal humano quedan fuera de esa métrica (relación, observación, contención emocional, señal
+implícita) y decidir si el caso de uso los necesita — "empatar en precisión" no es lo mismo que
+"empatar en valor".
+- **Fuente:** F-44 (Milford, S.R., *Bioethics* 2024, artículo crítico/teórico peer-reviewed)
+- **Leído a fondo:** 2026-09-17 (ncbi.nlm.nih.gov y pmc.ncbi.nlm.nih.gov bloqueados por el proxy
+  del entorno; reconstruido vía `WebSearch` contra Wiley Online Library/PubMed, que precisan el
+  mecanismo — doctor-patient relationship como vía causal a outcome, no solo "evaluar por
+  outcomes" en abstracto — ausente del resumen de una línea ya citado en tesis 10)
+- **Conexión razonada, no forzada:** generaliza el mecanismo que ya sostiene tesis 10
+  (farmacia+triage IA) a cualquier decisión futura de sustitución canal humano→IA del proyecto
+  (asesor, agente conversacional de reclamos), sin cambiar ninguna confianza.
+
+### 122. Un diseño de prueba elegido primero por su ventaja ética no exime de justificar por qué el diseño más riguroso no era viable
+F-58 (Hemming & Taljaard 2020, *International Journal of Epidemiology*) ya matiza tesis 10 con
+su hallazgo central: el stepped-wedge está en mayor riesgo de sesgo que el cluster-RCT paralelo
+clásico. La lectura a fondo de hoy agrega la recomendación normativa que el resumen ya citado no
+traía: los propios autores son explícitos en que, donde un CRT paralelo es logísticamente
+factible, es el diseño preferido — el stepped-wedge existe para cuando no lo es, y ese cambio de
+diseño paga un costo real (confusión temporal, análisis más complejo), no es un upgrade gratis
+por ser "más ético". **Heurística:** cuando un equipo elige un diseño de evaluación por su
+ventaja ética o política antes que por su rigor (nadie se queda sin la intervención), exigir que
+el memo de diseño declare explícitamente por qué el diseño más riguroso no era factible — no
+presentar la opción éticamente más cómoda como la metodológicamente superior por default.
+- **Fuente:** F-58 (Hemming, K. & Taljaard, M., revisión metodológica peer-reviewed)
+- **Leído a fondo:** 2026-09-17 (academic.oup.com y ncbi.nlm.nih.gov bloqueados por el proxy del
+  entorno; reconstruido vía `WebSearch` contra Research Outreach y NIH Office of Disease
+  Prevention, que confirman la recomendación "si el paralelo es viable, es el preferido" ausente
+  del resumen de una línea ya citado en tesis 10)
+- **Conexión razonada, no forzada:** conecta con tesis 9/10 (piloto farmacia+triage) e intuición 71
+  (F-59, verificar tendencia temporal de un stepped-wedge ya corrido); esta es la pregunta previa
+  de diseño (elegir el diseño antes de correrlo), no la de auditoría posterior. Sin cambio de
+  confianza.
+
+### 123. La fricción que reduce la sobre-confianza en una recomendación de IA cuesta satisfacción declarada, y el ahorro no se reparte parejo entre usuarios
+F-245 (Buçinca, Malaya & Gajos 2021, *PACM HCI* / CSCW) prueba que las *cognitive forcing
+functions* (obligar a decidir antes de ver la recomendación de la IA, forzar razonamiento
+explícito) reducen la sobre-confianza mucho más que solo explicar la recomendación (XAI) — pero
+el propio estudio encuentra un trade-off explícito: la gente calificó peor, en confianza y
+preferencia subjetivas, justo los diseños que más redujeron su sobre-confianza real, porque los
+percibió como más demandantes cognitivamente. Además, el beneficio no es parejo: quienes tienen
+mayor "necesidad de cognición" (Need for Cognition) se benefician más de la fricción; para
+quienes tienen menos, el costo de satisfacción puede no venir acompañado de la misma mejora de
+calibración. **Heurística:** evaluar una intervención anti-sobreconfianza en IA (triage,
+suscripción, fraude, `lapuerta`) por dos ejes separados, nunca uno solo — calibración/desempeño
+real Y satisfacción/preferencia declarada — porque el diseño que gana en el primero
+sistemáticamente pierde en el segundo, y ese trade-off puede no ser uniforme por segmento de
+usuario.
+- **Fuente:** F-245 (Buçinca, Z., Malaya, M.B. & Gajos, K.Z., *PACM HCI* / CSCW 2021,
+  peer-reviewed)
+- **Leído a fondo:** 2026-09-17 (dl.acm.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` contra la página del propio grupo de investigación (eecs.harvard.edu/~kgajos) y
+  ResearchGate, que precisan el trade-off satisfacción-vs-desempeño y la moderación por Need for
+  Cognition, ausentes del resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** mismo clúster de investigación (Gajos/Buçinca, HCI de
+  decisión asistida por IA) que ya sostiene intuición 18 (F-243, verificabilidad como condición
+  para que explicar rinda) e intuición 42 (F-246, sobreconfianza como costo-beneficio
+  estratégico) — añade el costado de costo en satisfacción y su heterogeneidad por segmento, que
+  ninguna de las dos anteriores había registrado. Sin cambio de confianza en ninguna tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4423,7 +4492,7 @@ entrada, porque ahí es donde esta evidencia concentra el daño real (cáncer), 
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-17** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-18** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -4431,11 +4500,12 @@ entrada, porque ahí es donde esta evidencia concentra el daño real (cáncer), 
   fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
   días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, el
   2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, el
-  2026-09-15 al salir el bloque del 08-16, y una vez más el 2026-09-16 al salir el bloque del 08-17
+  2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, y una vez más
+  el 2026-09-17 al salir el bloque del 08-18
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Dieciséis corridas.
+  fuente/fecha.)* Diecisiete corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4488,42 +4558,11 @@ entrada, porque ahí es donde esta evidencia concentra el daño real (cáncer), 
   la misma fuente que F-120, ver corrección en la entrada de esa fecha —, F-180 comisión de
   intermediario como mecanismo de "market maker", F-198 Optum Rx creciendo por mezcla de producto
   no por más asegurados) — matizó el alcance de tesis 12, 16 y 17 sin tocar su confianza.
-- **2026-08-18** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward cf8c4a7 sobre el commit de ayer, working tree limpio) y verifiqué `codice.md` por
-  conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope exacto que
-  procesó la corrida de ayer — **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, quinto día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
-  ~3 días, no vence hoy). Sí corrió la rutina diaria de intuición (decimotercera corrida desde el
-  2026-08-06): de 134 fuentes 🟢A confirmadas por conteo propio en el ledger, 33 ya tenían lectura
-  profunda del Lobo — de las 110 restantes elegí 3 ancladas a tesis existentes que solo tenían el
-  resumen de una línea nunca leído a fondo: F-141 (Freedman & Fraser 1966, el estudio fundacional
-  de pie-en-la-puerta que ya sostiene tesis 13, pero solo por su Experimento 1), F-100 (Vlaev et
-  al. 2019, revisión de incentivos financieros en salud, citada solo como "contrapeso" a Discovery
-  Vitality/F-99 sin lectura completa) y F-150 (Borsci & Schmettow 2024, escala BUS-11 de
-  usabilidad de chatbots, citada solo como "la más parecida al caso Rimac" sin detalle de sus
-  subescalas). Las tres bloqueadas por el proxy en su URL directa (bulidomics.com,
-  link.springer.com, dl.acm.org); reconstruidas vía búsqueda dirigida contra agregadores (MIT/
-  curhan.mit.edu, PubMed, ResearchGate, JMIR Human Factors) que confirman detalle nuevo, no solo
-  el resumen ya citado. Sumé las entradas 34, 35 y 36 de Intuición acumulada: (34) el efecto
-  pie-en-la-puerta del Experimento 2 de Freedman & Fraser sobrevive incluso cuando el pedido chico
-  y el grande son de temas no relacionados (48% de aceptación vs. 17% base, contra 76% cuando sí
-  comparten tema) — amplía dónde aplica la advertencia ética ya declarada en tesis 13, sin
-  cambiar su confianza; (35) un incentivo financiero de salud tiende a disipar su efecto dentro de
-  los ~3 meses posteriores a retirarlo salvo que ya se haya vuelto hábito por otra vía — precisa
-  por qué tesis 7 (UBI/telemática) exige feedback+incentivo combinados y no incentivo puro; (36) la
-  usabilidad percibida de un chatbot comercial se descompone en cinco palancas casi independientes
-  de la calidad del modelo (accesibilidad, calidad de interacción, calidad de información,
-  privacidad/seguridad, tiempo de respuesta) — da un marco de diagnóstico concreto para cuando el
-  proyecto evalúe el agente conversacional de Rimac, con dos de las cinco palancas más baratas de
-  arreglar que "mejorar el modelo". Ninguna tesis de negocio cambió de confianza por esta corrida
-  — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes.
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30
-  días de historial (2026-07-20 a hoy) — cumple la ventana de ~30 días; podé/resumí las entradas
-  del 2026-07-20 al 2026-07-31 en un solo bloque resumido para mantener el archivo legible, y dejo
-  el detalle completo desde 2026-08-01 en adelante.
+  **2026-08-18** — sin cambios sustanciales en el ledger (F-468); decimotercera corrida de
+  intuición (entradas 34-36: F-141 pie-en-la-puerta sobrevive sin continuidad temática, F-100
+  incentivo financiero de salud se disipa en ~3 meses sin plan de mantenimiento, F-150 BUS-11
+  descompone la usabilidad de chatbot en cinco palancas casi independientes) — ninguna tesis
+  cambió de confianza.
 - **2026-08-19** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward 8a90dc2→ccba768, el commit de la corrida de ayer, working tree limpio) y verifiqué
   `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
@@ -5713,4 +5752,47 @@ entrada, porque ahí es donde esta evidencia concentra el daño real (cáncer), 
   y 10 (piloto farmacia+triage) sin tocar su nivel de confianza. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy y con la fila retroactiva de
   F-120. Bitácora con 29 días de historial (2026-08-18 a hoy) tras la poda de hoy — dentro de la
+  ventana de ~30 días.
+- **2026-09-17** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward `5aeb9c3→350961c` que trajo consigo el propio commit del 2026-09-16 de esta
+  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
+  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 17 corridas, **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  trigesimosexto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
+  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
+  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el
+  2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
+  treinta y seis días sin correr). **Poda de bitácora:** el bloque "2026-08-18" salió por completo
+  de la ventana de ~30 días (cutoff ≈2026-08-18) — lo fusioné con el bloque "2026-08-01 a 2026-08-17"
+  en un resumen ampliado "2026-08-01 a 2026-08-18"; no se pierde ningún dato porque el detalle de
+  cada tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
+  intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
+  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra
+  estable — 3 filas mixtas (F-149, F-457, F-466) siguen correctamente excluidas por no empezar con
+  🟢A — contra `fuentes_leidas_lobo.md` (121 ya leídas) — 13 pendientes — y elegí 3 al azar sin
+  reemplazo: F-44 (Milford 2024, *Bioethics*, ya citado en tesis 10 solo por su matiz de triage
+  clínico), F-58 (Hemming & Taljaard 2020, *IJE*, ya citado en tesis 10 solo por el riesgo de sesgo
+  del stepped-wedge) y, tras descartar mi primer sorteo (F-149, correctamente excluido del universo
+  por tener rigor mixto 🔴/🟢 con primario no-A, no un error de esta corrida sino confirmación de que
+  el filtro estricto ya vigente desde el 2026-08-20 sigue funcionando), su reemplazo F-245 (Buçinca,
+  Malaya & Gajos 2021, *PACM HCI*/CSCW, citado solo por su hallazgo de reducción de sobreconfianza,
+  sin el trade-off de satisfacción). Las URLs directas de las cuatro (ncbi.nlm.nih.gov,
+  pmc.ncbi.nlm.nih.gov, academic.oup.com, dl.acm.org, arxiv.org) dieron `EGRESS_BLOCKED` por el
+  proxy del entorno; `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las tres vía
+  cobertura secundaria convergente (Wiley/PubMed para F-44, Research Outreach/NIH ODP para F-58,
+  la página del propio grupo Gajos/Buçinca en Harvard y ResearchGate para F-245), no solo el resumen
+  ya citado en tesis 10 (F-44, F-58) o en el ledger (F-245). Sumé las entradas 121, 122 y 123 de
+  Intuición acumulada: (121) igualar la métrica principal de un canal automatizado no iguala
+  automáticamente el valor total que aportaba el canal humano que reemplaza — generaliza fuera del
+  triage clínico el mecanismo que F-44 ya sostiene en tesis 10; (122) un diseño de prueba elegido
+  primero por su ventaja ética no exime de justificar por qué el diseño más riguroso no era viable —
+  precisa con la recomendación normativa de los propios autores (preferir el CRT paralelo si es
+  factible) lo que tesis 10 ya cita de F-58 solo como hallazgo de riesgo de sesgo; (123) la fricción
+  que reduce la sobre-confianza en una IA cuesta satisfacción declarada y ese costo no se reparte
+  parejo por segmento (Need for Cognition) — añade el costado de costo/heterogeneidad que las
+  intuiciones 18 (F-243) y 42 (F-246) del mismo clúster de investigación no habían registrado.
+  Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo
+  de intuición, aunque las tres entradas de hoy sí matizan tesis 9 y 10 (piloto farmacia+triage) sin
+  tocar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 30 días de historial (2026-08-19 a hoy) tras la poda de hoy — cumple la
   ventana de ~30 días.
