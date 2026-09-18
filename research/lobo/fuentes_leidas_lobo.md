@@ -141,3 +141,6 @@
 | F-44 | 🟢 A | 2026-09-17 | Intuición 121 — igualar la métrica principal de un canal automatizado no iguala automáticamente el valor total que aportaba el canal humano que reemplaza |
 | F-58 | 🟢 A | 2026-09-17 | Intuición 122 — un diseño de prueba elegido primero por su ventaja ética no exime de justificar por qué el diseño más riguroso no era viable |
 | F-245 | 🟢 A | 2026-09-17 | Intuición 123 — la fricción que reduce la sobre-confianza en una recomendación de IA cuesta satisfacción declarada, y el ahorro no se reparte parejo entre usuarios |
+| F-433 | 🟢 A | 2026-09-18 | Intuición 126 — los predictores canónicos de éxito de producto nuevo de un meta-análisis de 2001 pueden tener menos poder hoy; verificar si existe una "secuela" antes de citar la magnitud original |
+| F-42 | 🟢 A | 2026-09-18 | Intuición 124 — un solo estudio de triage puede reportar cuatro métricas de desempeño que no se mueven juntas; exigir las cuatro antes de aceptar el resumen de una sola cifra |
+| F-159 | 🟢 A | 2026-09-18 | Intuición 125 — la robustez de un LLM-as-judge ante manipulación adversarial depende del modelo juez elegido, no es una propiedad fija del método |

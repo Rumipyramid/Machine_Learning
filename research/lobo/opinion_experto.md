@@ -4442,6 +4442,84 @@ usuario.
   estratégico) — añade el costado de costo en satisfacción y su heterogeneidad por segmento, que
   ninguna de las dos anteriores había registrado. Sin cambio de confianza en ninguna tesis.
 
+### 124. Un solo estudio de triage puede reportar cuatro métricas de desempeño que no se mueven juntas — exigir las cuatro antes de aceptar el resumen de una sola cifra
+El resumen ya citado en el ledger para F-42 (Omaolo, Finlandia) y ya matizado en tesis 10 solo
+trae dos números: 97.6% de evaluaciones "seguras" y 53.7% de coincidencia exacta con el triage de
+enfermería. La lectura a fondo de hoy agrega dos métricas más que el resumen no capturaba:
+sensibilidad de 62.6% y especificidad de 69.2% (clasificación binaria urgente/no-urgente, un
+corte distinto del nivel exacto de triage), y una cuarta — 66.6% de acierto cuando se permite un
+nivel de conservadurismo extra (sobre-triar un escalón, no subestimar). Las cuatro cifras
+describen el mismo sistema y ninguna es "la" métrica de desempeño: seguridad (97.6%) y precisión
+exacta (53.7%) ya se sabía que divergían; ahora sensibilidad/especificidad (62.6%/69.2%) muestran
+que el sistema es más conservador que discriminante, y la versión tolerante (66.6%) revela cuánto
+del error "real" es sobre-triage defendible, no error puro. **Heurística:** ante cualquier
+sistema de triage o clasificación de riesgo (clínico, de suscripción, de fraude) que reporte una
+sola cifra de "precisión" o "seguridad", pedir las cuatro lecturas — exact-match, tolerante a un
+nivel de conservadurismo, sensibilidad/especificidad al corte que importa, y % sin compromiso de
+seguridad — porque un vendor puede citar legítimamente la más favorable sin mentir en ninguna.
+- **Fuente:** F-42 (estudio de validación de instrumento, Omaolo/Finlandia, peer-reviewed en JMIR
+  Human Factors 2024)
+- **Leído a fondo:** 2026-09-18 (ncbi.nlm.nih.gov bloqueado por el proxy del entorno; reconstruido
+  vía `WebSearch` contra JMIR Human Factors y University of Helsinki Research Portal, que precisan
+  sensibilidad/especificidad y la accuracy tolerante a un nivel, ausentes del resumen de una línea
+  ya citado en tesis 10 y en `research/fuentes/revision_profunda.md`)
+- **Conexión razonada, no forzada:** profundiza tesis 10 (triage IA + farmacias) sin cambiar su
+  confianza — añade el desglose metodológico de la fuente que la propia revisión profunda de
+  `cronista` (2026-07-29) ya usó, pero solo con dos de las cuatro cifras disponibles.
+
+### 125. La robustez de un "LLM-as-judge" ante manipulación adversarial depende del modelo juez elegido, no es una propiedad fija del método
+El ledger cita a F-159 (MT-Bench/Chatbot Arena) solo como la metodología exacta de "banco fijo de
+preguntas + LLM juez", con sus sesgos documentados en general (posición, verbosidad,
+auto-favorecimiento). La lectura a fondo agrega la magnitud que el resumen no traía: en el ataque
+de verbosidad diseñado por los propios autores (reformular una lista de 5 ítems en 10 sin agregar
+contenido), Claude-v1 y GPT-3.5 fallan (prefieren la respuesta inflada) más del 90% de las veces,
+mientras GPT-4 falla solo el 8.7% — una diferencia de más de 10x en robustez ante el mismo ataque.
+En acuerdo con humanos, GPT-4 iguala el nivel de acuerdo humano-humano (>80%); los jueces más
+débiles no. **Heurística:** cuando un proveedor o un proyecto propio dice "usamos LLM-as-judge
+para evaluar calidad", la pregunta que decide si el número es confiable no es "¿usan LLM-as-judge
+o no?" sino "¿qué modelo hace de juez?" — la elección del juez mueve la robustez por un orden de
+magnitud, no un matiz marginal; un pipeline de evaluación (de un agente conversacional de seguros,
+por ejemplo) que cambie de juez sin re-validar puede pasar de confiable a manipulable por el mero
+cambio de modelo.
+- **Fuente:** F-159 (Zheng, L. et al. 2023, NeurIPS, peer-reviewed)
+- **Leído a fondo:** 2026-09-18 (arxiv.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` contra el PDF indexado y cobertura secundaria convergente, que precisan las
+  magnitudes exactas de sesgo de verbosidad por modelo, ausentes del resumen de una línea ya
+  citado en `research/_nodes/evaluacion-calidad-agentes-conversacionales-ia.md`)
+- **Conexión razonada, no forzada:** afila intuición 20 (F-151, RAGAS correlaciona ~0.55 con
+  juicio humano) e intuición 90 (F-156, techo de correlación 0.514 de G-Eval) — ambas ya
+  establecían que ningún juez automatizado es un piso confiable; esta agrega que además el piso
+  varía por diseño según qué modelo se use como juez, un eje que ninguna de las dos anteriores
+  había cuantificado. Sin cambio de confianza en ninguna tesis (no hay tesis de negocio sobre
+  evaluación de agentes conversacionales todavía, solo el node de referencia).
+
+### 126. Los predictores canónicos de éxito de producto nuevo de un meta-análisis de 2001 pueden tener menos poder hoy — verificar si existe una "secuela" antes de citar la magnitud original
+F-433 (Henard & Szymanski 2001) es la fuente canónica, todavía vigente, de los cinco predictores
+con mayor tamaño de efecto sobre el éxito de un producto nuevo: ventaja del producto, potencial de
+mercado, ajuste a la necesidad del cliente, calidad de las tareas de predesarrollo y recursos
+dedicados. La lectura a fondo agrega dos matices que el resumen de una línea no traía: (1) las
+relaciones predictor-desempeño varían según si el desempeño se midió de forma subjetiva u
+objetiva, y según quién reportó (dirección senior vs. gerencia de proyecto) — el mismo predictor
+rinde distinto según el instrumento de medición, no solo según el producto; y (2) un meta-análisis
+posterior que actualiza este mismo campo encontró tamaños de efecto **sistemáticamente más
+débiles** que los de Henard & Szymanski, con evidencia de erosión progresiva de estos factores de
+éxito "comunes" a lo largo del tiempo. **Heurística:** citar un meta-análisis canónico como
+"todavía vigente" (por ejemplo, para justificar dónde invertir en un producto nuevo de seguros)
+sin buscar si existe una actualización o réplica posterior es una laguna verificable en minutos —
+la magnitud original puede seguir siendo la mejor evidencia direccional disponible y aun así estar
+sobreestimando el efecto esperado hoy.
+- **Fuente:** F-433 (Henard, D.H. & Szymanski, D.M. 2001, *Journal of Marketing Research* 38,
+  meta-análisis peer-reviewed)
+- **Leído a fondo:** 2026-09-18 (journals.sagepub.com bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` contra Semantic Scholar y la cobertura del meta-análisis
+  actualizador que compara efectos con los originales, ausente del resumen de una línea ya citado
+  en `_nodes/tendencias-diseno-innovacion.md` §12.1)
+- **Conexión razonada, no forzada:** generaliza fuera de diseño/innovación el mismo patrón de
+  erosión temporal que intuición 95 (F-229, la segmentación demográfica se debilita con la
+  modernización del consumidor) — dos campos distintos, mismo aviso de higiene: ningún factor de
+  éxito "canónico" es estático, verificar la fecha de la última réplica antes de tratarlo como
+  vigente sin descuento.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4492,7 +4570,7 @@ usuario.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-18** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-19** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -4500,12 +4578,12 @@ usuario.
   fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
   días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, el
   2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, el
-  2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, y una vez más
-  el 2026-09-17 al salir el bloque del 08-18
+  2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, el
+  2026-09-17 al salir el bloque del 08-18, y una vez más el 2026-09-18 al salir el bloque del 08-19
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Diecisiete corridas.
+  fuente/fecha.)* Dieciocho corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4563,44 +4641,11 @@ usuario.
   incentivo financiero de salud se disipa en ~3 meses sin plan de mantenimiento, F-150 BUS-11
   descompone la usabilidad de chatbot en cinco palancas casi independientes) — ninguna tesis
   cambió de confianza.
-- **2026-08-19** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward 8a90dc2→ccba768, el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
-  exacto que procesó la corrida de ayer — **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, sexto día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
-  ~3 días, no vence hoy — siete días sin corrida nueva). Sí corrió la rutina diaria de intuición
-  (decimocuarta corrida desde el 2026-08-06): de 137 fuentes 🟢A confirmadas por conteo propio en el
-  ledger, 36 ya tenían lectura profunda del Lobo — de las 101 restantes elegí 3 al azar puro (sin
-  anclar a tesis existentes, a diferencia de las últimas corridas): F-334 (estudio holandés 2025,
-  confianza del consumidor en el asegurador como comprador prudente de atención — citado en el
-  ledger solo por su hallazgo de conflicto de interés, nunca leído a fondo), F-87 (Callaway et al.
-  2025, BMC Public Health, envejecimiento poblacional y longevidad) y F-428 (filing 8-K de Accenture
-  Q3 FY26, citado solo por el hallazgo negativo de que Song no se reporta como segmento separado).
-  Las tres bloqueadas por el proxy en su URL directa (cambridge.org, link.springer.com, sec.gov, el
-  último ya señalado como bloqueo conocido en el propio ledger); reconstruidas vía búsqueda dirigida
-  (el buscador indexó directamente los hallazgos centrales de F-334 y F-87 pese al bloqueo de la
-  URL; F-428 se reconstruyó contra cobertura de prensa financiera — Investing.com, Motley Fool,
-  Yahoo Finance) que confirman detalle nuevo, no solo el resumen ya citado. Sumé las entradas 37, 38
-  y 39 de Intuición acumulada: (37) la desconfianza en un asegurador no siempre es un veredicto
-  negativo ya formado — puede ser un vacío de información que el consumidor no puede llenar, y por
-  default asume el peor marco ("puramente comercial"); distinción de mecanismo que matiza tesis 1
-  sin cambiarle la confianza; (38) las ganancias de esperanza de vida se están desacelerando en
-  países de altos ingresos, sobre todo en los más viejos — chequeo de higiene antes de fijar
-  cualquier supuesto actuarial de longevidad como tendencia lineal indefinida; (39) un beat de
-  ingresos no neutraliza un indicador líder que empeora (bookings, guía) cuando hay una narrativa de
-  disrupción estructural plausible detrás — el caso Accenture (caída de ~18-20% en un día pese a
-  +6% de ingresos, por sustitución de trabajo facturable por IA) es una señal de vigilancia activa
-  para tesis 16, no solo una curiosidad de otro sector. Ninguna tesis de negocio cambió de confianza
-  por esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las
-  tesis existentes, aunque la entrada 39 sí liga una amenaza estructural concreta (sustitución de
-  trabajo facturable por IA) a la vigilancia futura de tesis 16. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 31 días de
-  historial (2026-07-20 a hoy), dentro de la ventana de ~30 días — sin podar todavía; evaluar poda
-  de la primera semana del bloque actual (2026-08-01 a 2026-08-07) en las próximas corridas si la
-  ventana sigue creciendo.
+  **2026-08-19** — sin cambios sustanciales en el ledger (F-468, sexto día seguido); decimocuarta
+  corrida de intuición (entradas 37-39: F-334 desconfianza en asegurador como vacío de información
+  no veredicto formado, F-87 desaceleración de ganancias de esperanza de vida en los más viejos,
+  F-428 indicador líder de Accenture empeorando pese a beat de ingresos) — matizó tesis 1 sin
+  cambiar confianza; entrada 39 marcada como señal de vigilancia activa para tesis 16.
 - **2026-08-20** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward 8a90dc2→bb8062c, el commit de la corrida de ayer, working tree limpio) y verifiqué
   `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
@@ -5795,4 +5840,45 @@ usuario.
   de intuición, aunque las tres entradas de hoy sí matizan tesis 9 y 10 (piloto farmacia+triage) sin
   tocar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 30 días de historial (2026-08-19 a hoy) tras la poda de hoy — cumple la
+  ventana de ~30 días.
+- **2026-09-18** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
+  `git pull`, fast-forward `5aeb9c3→3fa24e4`, el commit de la corrida de ayer, working tree limpio)
+  y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468
+  sin huecos ni duplicados** — mismo tope exacto que las últimas 18 corridas, **cero fuentes
+  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
+  trigesimoséptimo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
+  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
+  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde
+  el 2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
+  treinta y siete días sin correr). **Poda de bitácora:** el bloque "2026-08-19" salió por completo
+  de la ventana de ~30 días (cutoff ≈2026-08-19) — lo fusioné con el bloque "2026-08-01 a 2026-08-18"
+  en un resumen ampliado "2026-08-01 a 2026-08-19"; no se pierde ningún dato porque el detalle de
+  cada tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria
+  de intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
+  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**,
+  misma cifra que las últimas corridas — 3 filas mixtas (F-149, F-457, F-466) siguen correctamente
+  excluidas por no empezar con 🟢A — contra `fuentes_leidas_lobo.md` (124 ya leídas tras la corrida
+  de ayer) — 10 pendientes — y elegí 3 al azar sin reemplazo: F-433 (Henard & Szymanski 2001,
+  *Journal of Marketing Research*, citado en el ledger solo por sus cinco predictores top de éxito
+  de producto nuevo), F-42 (Omaolo/Finlandia, ya citado en tesis 10 y en la revisión profunda de
+  `cronista` del 2026-07-29 solo por seguridad/coincidencia exacta) y F-159 (MT-Bench/Chatbot
+  Arena, ya citado en `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` solo por la
+  metodología general, sin las magnitudes de sesgo por modelo). Las URLs directas de las tres
+  (www.ncbi.nlm.nih.gov, arxiv.org, journals.sagepub.com) dieron `EGRESS_BLOCKED` por el proxy del
+  entorno; `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las tres vía cobertura
+  secundaria convergente (JMIR Human Factors/University of Helsinki para F-42, el PDF indexado de
+  arXiv + cobertura secundaria para F-159, Semantic Scholar + el meta-análisis actualizador para
+  F-433), no solo el resumen de una línea ya citado. Sumé las entradas 124, 125 y 126 de Intuición
+  acumulada: (124) un solo estudio de triage puede reportar cuatro métricas de desempeño que no se
+  mueven juntas (exact-match, tolerante a un nivel, sensibilidad/especificidad, % seguro) — F-42
+  ya se citaba con dos de las cuatro; (125) la robustez de un LLM-as-judge ante manipulación
+  adversarial depende del modelo juez elegido, con más de 10x de diferencia documentada entre
+  GPT-4 (8.7% de fallo) y Claude-v1/GPT-3.5 (>90%) en el mismo ataque de verbosidad — afila las
+  intuiciones 20 y 90 del mismo dominio; (126) los predictores canónicos de éxito de producto nuevo
+  de un meta-análisis de 2001 pueden tener menos poder hoy — un meta-análisis posterior encontró
+  erosión sistemática de esos mismos factores, generalizando fuera de diseño/innovación el patrón
+  que ya sostenía la intuición 95. Ninguna tesis de negocio cambió de confianza numérica por esta
+  corrida — es el mecanismo paralelo de intuición, aunque la entrada 124 sí profundiza tesis 10 sin
+  tocar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 30 días de historial (2026-08-20 a hoy) tras la poda de hoy — cumple la
   ventana de ~30 días.
