@@ -144,3 +144,6 @@
 | F-433 | 🟢 A | 2026-09-18 | Intuición 126 — los predictores canónicos de éxito de producto nuevo de un meta-análisis de 2001 pueden tener menos poder hoy; verificar si existe una "secuela" antes de citar la magnitud original |
 | F-42 | 🟢 A | 2026-09-18 | Intuición 124 — un solo estudio de triage puede reportar cuatro métricas de desempeño que no se mueven juntas; exigir las cuatro antes de aceptar el resumen de una sola cifra |
 | F-159 | 🟢 A | 2026-09-18 | Intuición 125 — la robustez de un LLM-as-judge ante manipulación adversarial depende del modelo juez elegido, no es una propiedad fija del método |
+| F-61 | 🟢 A | 2026-09-19 | Intuición 127 — un rate de sesgo de automatización agregado puede esconder una mejora neta real; medir el switch-a-error junto con la exactitud neta |
+| F-123 | 🟢 A | 2026-09-19 | Intuición 128 — "los icon arrays ayudan" no es una sola afirmación; verificar qué pregunta específica testeó el paper citado antes de heredarle el hallazgo de otro |
+| F-247 | 🟢 A | 2026-09-19 | Intuición 129 — el costo de conciencia de un menú adaptativo de alta precisión crece bajo pantalla chica y se extiende a tareas nuevas, no solo a la conciencia general de funciones |

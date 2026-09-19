@@ -4520,6 +4520,79 @@ sobreestimando el efecto esperado hoy.
   éxito "canónico" es estático, verificar la fecha de la última réplica antes de tratarlo como
   vigente sin descuento.
 
+### 127. Un rate de sesgo de automatización agregado puede esconder una mejora neta real — medir el switch-a-error junto con la exactitud neta, no solo uno de los dos
+El ledger cita F-61 solo como "directamente análogo al backlog de aprobación farmacéutica". La
+lectura a fondo del estudio empírico de la tesis (no solo su revisión sistemática hermana, F-60, ya
+leída) da los números que faltaban: 26 médicos generales del NHS resolvieron 20 escenarios de
+prescripción (6 con consejo del sistema deliberadamente incorrecto). Exactitud pre-consejo: 50,38%;
+post-consejo: 58,27% — una mejora neta real de ~8 puntos. Pero dentro de ese neto positivo, el
+consejo incorrecto volteó una decisión correcta a incorrecta en 5,2% de todos los casos: sesgo de
+automatización real y medible, enmascarado por el agregado positivo. El único mediador de quién cambia
+de decisión fue la **experiencia clínica** (menos experiencia → más cambios) — ni la edad, ni la
+experiencia previa con el sistema, ni la confianza general reportada en el CDSS predijeron el cambio.
+**Heurística:** cualquier piloto que reemplace o asista una decisión humana (farmacia+triage IA) debe
+reportar la tasa de volteo correcto→incorrecto como cifra propia, no solo el delta neto de exactitud —
+un neto positivo puede convivir con un daño específico medible; y el criterio para focalizar
+capacitación/supervisión es la experiencia del operador, no construir "más confianza" en la
+herramienta (que no predijo nada en este estudio).
+- **Fuente:** F-61 (Goddard, K., tesis doctoral, City University London, estudio empírico con 26
+  médicos generales del NHS)
+- **Leído a fondo:** 2026-09-19 (openaccess.city.ac.uk bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` — City Research Online, PubMed y la cobertura del estudio empírico
+  específico de la tesis, con las cifras de exactitud pre/post y el mediador de experiencia clínica,
+  ausentes del resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** le da ancla cuantitativa a la intuición 118 (F-60, mismos
+  autores, revisión sistemática de mitigadores) y matiza tesis 9/10 (piloto farmacia+triage) con un
+  criterio operacional de qué medir y a quién capacitar primero.
+
+### 128. "Los icon arrays ayudan" no es una sola afirmación — verificar qué pregunta específica sobre icon arrays testeó el paper citado antes de heredarle el hallazgo de otro
+El resumen de una línea de F-123 en el ledger afirma que los icon arrays "son efectivos para
+comunicar riesgo/probabilidad... formato de frecuencia... supera al porcentaje puro" — una
+afirmación general que pertenece a la literatura más amplia de icon arrays (Garcia-Retamero, Galesic
+& Gigerenzer y similares). La lectura a fondo muestra que este paper específico (Recchia, Lawrence &
+Freeman 2022) testeó algo más angosto: cómo representar **imprecisión/incertidumbre** (rangos, no
+frecuencia vs. porcentaje) dentro de un icon array, en un RCT de ~1.300 residentes del Reino Unido
+con cuatro brazos (solo texto, pictograma sombreado, gradiente, flechas de extremo de rango) para
+comunicar riesgo genético de BRCA1. El hallazgo real: **no hubo efecto del formato específico** entre
+los cuatro brazos de visualización de rango — aunque pictograma vs. solo texto en general sí mejoró
+la retención/uptake, y quienes no tienen educación secundaria completa fueron quienes más se
+beneficiaron. **Heurística (misma familia que intuición 79/104):** una fuente citada para respaldar
+una afirmación amplia puede haber testeado en realidad una pregunta más angosta y distinta —
+verificar la pregunta exacta del paper antes de usarlo como evidencia de la afirmación amplia.
+- **Fuente:** F-123 (Recchia, G., Lawrence, A.C.E. & Freeman, A.L.J. 2022, *PEC Innovation*,
+  peer-reviewed, RCT N≈1.300)
+- **Leído a fondo:** 2026-09-19 (sciencedirect.com bloqueado por el proxy del entorno; reconstruido
+  vía `WebSearch` — PMC, ResearchGate y PubMed, que dan el diseño de cuatro brazos y el hallazgo real
+  de "sin efecto de formato", ausente del resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** matiza cualquier pieza de `material-visual-venta-consultiva` o
+  de `lapuerta` que planee usar icon arrays para comunicar cobertura a segmentos de baja educación
+  financiera — la evidencia sólida de "usar formato de frecuencia" debe anclarse en la literatura que
+  de verdad la testeó, no en esta fuente específica.
+
+### 129. El costo de conciencia de un menú adaptativo de alta precisión crece justo donde más se usa (pantalla chica) y se extiende a tareas nuevas, no solo a la conciencia general de funciones
+El ledger ya cita F-247 por su hallazgo base (alta precisión de adaptación reduce la conciencia del
+set completo de funciones). La lectura a fondo del estudio de seguimiento de los mismos autores
+("Beyond performance", *IJHCS* 2010) y de su estudio de pantalla chica (CHI 2008) agrega dos matices
+de negocio que el resumen no traía: (1) la alta precisión adaptativa no solo baja la conciencia —
+también **perjudica el desempeño del usuario en tareas nuevas** que la interfaz no anticipó, no solo
+en una métrica estática de "cuántas funciones recuerda"; y (2) el beneficio de eficiencia de la alta
+precisión es **mayor** precisamente cuando el espacio de pantalla está más restringido (mobile) — el
+mismo contexto donde el costo de conciencia/desempeño en tarea nueva también pega más fuerte.
+**Heurística:** para una app personalizada mobile-first (el caso peruano por defecto), afinar la
+personalización para maximizar velocidad es afinarla exactamente para la condición que más daña la
+capacidad del usuario de manejarse fuera del flujo personalizado — conviene topear deliberadamente la
+precisión de personalización o construir una salida explícita a "ver todo", y medir desempeño en
+tarea nueva además de satisfacción/velocidad promedio.
+- **Fuente:** F-247 (Findlater, L. & McGrenere, J. 2004 CHI / 2010 *IJHCS* "Beyond performance",
+  peer-reviewed, canónico)
+- **Leído a fondo:** 2026-09-19 (dl.acm.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — el repositorio del propio grupo de investigación en cs.ubc.ca y cobertura secundaria,
+  que dan el detalle del costo en tareas nuevas y bajo pantalla chica, ausente del resumen ya citado
+  en `_nodes/tendencias-diseno-innovacion.md` §2.2)
+- **Conexión razonada, no forzada:** profundiza tesis 21/24 (ROI de diseño, generative UI) y la regla
+  C9 del node de diseño — el contexto mobile-first, el default peruano, es precisamente donde este
+  trade-off se agudiza más.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4570,7 +4643,7 @@ sobreestimando el efecto esperado hoy.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-19** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-20** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -4579,11 +4652,12 @@ sobreestimando el efecto esperado hoy.
   días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, el
   2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, el
   2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, el
-  2026-09-17 al salir el bloque del 08-18, y una vez más el 2026-09-18 al salir el bloque del 08-19
+  2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, y una vez más
+  el 2026-09-19 al salir el bloque del 08-20
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Dieciocho corridas.
+  fuente/fecha.)* Diecinueve corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4646,45 +4720,12 @@ sobreestimando el efecto esperado hoy.
   no veredicto formado, F-87 desaceleración de ganancias de esperanza de vida en los más viejos,
   F-428 indicador líder de Accenture empeorando pese a beat de ingresos) — matizó tesis 1 sin
   cambiar confianza; entrada 39 marcada como señal de vigilancia activa para tesis 16.
-- **2026-08-20** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward 8a90dc2→bb8062c, el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope
-  exacto que procesó la corrida de ayer (2026-08-19) — **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, séptimo día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
-  ~3 días, no vence hoy — ocho días sin corrida nueva, pero esa rutina no es de este proceso
-  diario). Sí corrió la rutina diaria de intuición (decimoquinta corrida desde el 2026-08-06): de
-  134 fuentes 🟢A confirmadas por conteo propio en el ledger, 39 ya tenían lectura profunda del Lobo
-  — de las 95 restantes elegí 3 al azar puro: F-147 (Walker, Litman, Kamm & Abella 1997, PARADISE —
-  framework de evaluación de diálogo hablado, citado en el ledger solo por su resumen de una
-  línea), F-176 (Romani 2006, publicidad de precio engañosa — ya sostiene tesis 15, pero solo por
-  su resumen) y F-246 (Vasconcelos et al. 2023, explicaciones y sobreconfianza en IA — ya citada en
-  el node de diseño/innovación para la regla C8). Las tres bloqueadas por el proxy en su URL
-  directa (aclanthology.org, researchgate.net, hci.stanford.edu); reconstruidas vía búsqueda
-  dirigida (arXiv, Emerald/DeepDyve/Scribd, el paper de seguimiento de PARADISE en *Computational
-  Linguistics* 2006) que confirman detalle nuevo — los pesos exactos de la regresión de PARADISE, la
-  tipología de ocho prácticas y el moderador de sospecha de Romani, el diseño de los 5 estudios de
-  Vasconcelos — no solo el resumen ya citado. Sumé las entradas 40, 41 y 42 de Intuición acumulada:
-  (40) en un agente conversacional, si el sistema entendió bien lo que dijo el usuario puede pesar
-  más en la satisfacción percibida que si completó la tarea (PARADISE: reconocimiento .45 > éxito
-  de tarea .33 > tiempo -.14 en su regresión original) — profundiza el riesgo ya vigente sobre medir
-  mal al agente de Rimac (intuición 8/20/21/36) con un eje de medición concreto que faltaba; (41) el
-  daño de una publicidad de precio incompleta o ambigua se concentra en quien ya desconfía, no se
-  reparte parejo en la audiencia — conecta tesis 1 (48% desconfía) con tesis 15 (riesgo del flyer
-  "a confirmar"): el segmento más caro de convertir es también el que más castiga la pieza mal
-  hecha; (42) la sobreconfianza en una respuesta de IA es una decisión estratégica de
-  costo-beneficio, no un sesgo automático — las explicaciones solo reducen sobreconfianza en tareas
-  objetivamente difíciles, no en las rutinarias, lo que da un criterio operacional (dificultad de la
-  tarea) para priorizar dónde invertir en explicabilidad primero; profundiza la intuición 18 sin
-  cambiarle la confianza. Ninguna tesis de negocio cambió de confianza numérica por esta corrida —
-  es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes,
-  aunque las tres entradas de hoy sí conectan con riesgos y tesis ya vigentes (8/20/21/36, 1/15, 18).
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 32
-  días de historial (2026-07-20 a hoy), dentro de la ventana de ~30 días pero ya en su borde — la
-  próxima corrida (2026-08-21) debe evaluar podar/resumir la primera semana del bloque actual
-  (2026-08-01 a 2026-08-07) para no seguir creciendo por encima del umbral.
+  **2026-08-20** — sin cambios sustanciales en el ledger (F-468, séptimo día seguido); decimoquinta
+  corrida de intuición (entradas 40-42: F-147 PARADISE — el reconocimiento pesa más que el éxito de
+  tarea en la regresión de satisfacción de un agente conversacional, F-176 el daño de publicidad de
+  precio ambigua se concentra en quien ya desconfía, F-246 la sobreconfianza en una respuesta de IA
+  es decisión estratégica costo-beneficio, no sesgo automático) — profundizó el riesgo de medir mal
+  al agente conversacional y matizó tesis 1/15/18 sin cambiar confianza.
 - **2026-08-21** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward 8a90dc2→e8ba645, el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
@@ -5882,3 +5923,49 @@ sobreestimando el efecto esperado hoy.
   tocar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 30 días de historial (2026-08-20 a hoy) tras la poda de hoy — cumple la
   ventana de ~30 días.
+- **2026-09-19** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 19 corridas, **cero fuentes nuevas** registradas
+  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, trigesimoctavo día
+  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
+  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
+  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
+  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva treinta y ocho días sin correr).
+  **Poda de bitácora:** el bloque "2026-08-20" salió por completo de la ventana de ~30 días (cutoff
+  ≈2026-08-20) — lo fusioné con el bloque "2026-08-01 a 2026-08-19" en un resumen ampliado
+  "2026-08-01 a 2026-08-20"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
+  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
+  hoy:** recalculé por script el universo 🟢A del ledger con el filtro estricto (marcador de
+  rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, misma cifra que las últimas
+  corridas — contra `fuentes_leidas_lobo.md` (127 ya leídas tras la corrida de ayer) — **7
+  pendientes** (F-18, F-54, F-61, F-94, F-123, F-247, F-251) — y elegí 3 al azar sin reemplazo
+  (`random.sample`, sin semilla fija): F-123, F-61 y F-247. Las tres bloqueadas por el proxy en su
+  URL directa (openaccess.city.ac.uk, sciencedirect.com, dl.acm.org); `WebSearch` sí funcionó y
+  permitió reconstruir detalle nuevo en las tres vía cobertura secundaria convergente (City Research
+  Online/PubMed para F-61, PMC/ResearchGate/PubMed para F-123, el repositorio del propio grupo de
+  investigación en cs.ubc.ca para F-247), no solo el resumen de una línea ya citado. Sumé las
+  entradas 127, 128 y 129 de Intuición acumulada: (127) el estudio empírico de F-61 (26 médicos
+  generales, 20 escenarios) da los números que faltaban detrás de un rate agregado de sesgo de
+  automatización: exactitud pre-consejo 50,38% → post-consejo 58,27% (neto +8pp), pero el consejo
+  incorrecto volteó una decisión correcta a incorrecta en 5,2% de los casos — un daño real enmascarado
+  por el neto positivo — y el único mediador de quién cambia de decisión fue la experiencia clínica,
+  no la confianza general en el sistema; da ancla cuantitativa a la intuición 118 (F-60, mismos
+  autores) y un criterio operacional para el piloto farmacia+triage (tesis 9/10): reportar la tasa de
+  volteo, no solo el delta neto, y focalizar capacitación por experiencia del operador, no por
+  "generar confianza"; (128) hallazgo de eco de cita: el resumen de F-123 en el ledger describe la
+  literatura general de icon arrays (formato de frecuencia supera al porcentaje), pero el paper
+  específico (Recchia, Lawrence & Freeman 2022) testeó algo distinto y más angosto — cómo mostrar
+  *imprecisión*/rangos de incertidumbre dentro de un icon array — y su hallazgo real es que **no hubo
+  efecto del formato de visualización de rango** entre sus cuatro brazos; misma familia que las
+  intuiciones 79 y 104, matiza cualquier pieza de `material-visual-venta-consultiva` o `lapuerta` que
+  quiera apoyarse en esta fuente específica para justificar formato de frecuencia; (129) el
+  seguimiento de F-247 (Findlater & McGrenere, *IJHCS* 2010 y CHI 2008) agrega que la alta precisión
+  adaptativa no solo baja la conciencia de funciones — también perjudica el desempeño en tareas
+  nuevas, y su beneficio de eficiencia es mayor justo cuando la pantalla es más chica (mobile) — el
+  mismo contexto donde ese costo pega más fuerte; profundiza tesis 21/24 con una advertencia concreta
+  para cualquier personalización mobile-first en el proyecto. Ninguna tesis de negocio cambió de
+  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las tres
+  entradas de hoy sí matizan tesis 9/10 y 21/24 y el material de venta consultiva. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
+  historial (2026-08-21 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.
