@@ -4593,6 +4593,77 @@ tarea nueva además de satisfacción/velocidad promedio.
   C9 del node de diseño — el contexto mobile-first, el default peruano, es precisamente donde este
   trade-off se agudiza más.
 
+### 130. Verificar el veredicto real de una fuente antes de heredar el resumen del ledger — puede estar invertido
+El resumen del ledger para F-94 la describe como evidencia de que "el mercado ya está respondiendo a
+la presión sobre el pool con más personalización, no solo con colapso." La lectura a fondo de McFall
+(2019, *Economy and Society*) dice lo contrario: analizando el mercado individual de la ACA y el caso
+de Oscar Health, la autora concluye que es **poco probable** que el self-tracking pueda entregar
+pricing personalizado, porque la personalización choca con la infraestructura regulatoria y operativa
+existente — el seguro como institución social define el riesgo por membresía de grupo, no por
+atributo individual, y un mandato tipo community rating es exactamente el tipo de infraestructura que
+bloquea la personalización aunque la tecnología (wearables, self-tracking) ya exista. **Heurística de
+decisión:** un resumen de una línea puede invertir la dirección real del hallazgo de la fuente que
+cita — antes de usar cualquier fuente para argumentar "la tecnología ya está empujando hacia X,"
+verificar si el propio paper concluye lo contrario porque el freno no es tecnológico sino
+regulatorio/infraestructural. Para el contexto peruano: la pregunta relevante para `lapuerta`/Rimac no
+es si se puede *tecnológicamente* personalizar vía datos de plataforma o telemática, sino qué mandato
+regulatorio de la SBS (equivalente al community rating de la ACA) podría bloquear ese pricing aunque
+el dato ya exista — ese es el techo real, distinto de la disposición a compartir datos que ya mide
+`disposicion_compartir_datos_pricing`.
+- **Fuente:** F-94 (McFall, L. 2019, *Economy and Society*, "Personalizing solidarity? The role of
+  self-tracking in health insurance pricing," peer-reviewed)
+- **Leído a fondo:** 2026-09-20 (pmc.ncbi.nlm.nih.gov bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` — Semantic Scholar, Taylor & Francis/*Economy and Society*, University
+  of Edinburgh Research Explorer — que dan el argumento y la conclusión real del paper, no solo el
+  resumen ya citado en el ledger)
+- **Conexión razonada, no forzada:** matiza tesis 7 y 13 (techo de confianza de telemática/UBI,
+  disposición a compartir datos) sin tocar su confianza — añade el freno regulatorio como variable no
+  modelada explícitamente en `lapuerta`.
+
+### 131. Un I² cercano a 100% no es un número, es la confesión de que no hay un efecto común que promediar
+La lectura a fondo de F-18 (Hu et al. 2025) — ya usada en tesis 6 desde la revisión profunda de
+`cronista` del 2026-07-22 — agrega el dato de heterogeneidad exacto que esa revisión no había
+destacado: I²=99,89% entre los 14 meta-análisis agregados, y de esos 14 solo 3 estaban preregistrados
+y solo 4 evaluaron el riesgo de sesgo de sus propios estudios incluidos (AMSTAR-2). **Heurística de
+decisión:** antes de citar el "efecto promedio" de un meta-análisis de meta-análisis (o cualquier
+agregación de estudios muy heterogéneos), pedir el I² del agregado — un I² cercano a 100% significa
+que defaults, recordatorios, ubicación de comida e incentivos no son estimaciones repetidas de un
+mismo tratamiento, son fenómenos distintos forzados bajo un solo número; ahí "el efecto promedio es
+d=X" es una afirmación casi sin contenido, y la pregunta útil deja de ser "¿cuál es el efecto del
+nudge?" y pasa a ser "¿cuál es el efecto de esta técnica específica en este dominio específico?" —
+exactamente el desglose por dominio/técnica que tesis 6 ya usa para decidir qué probar primero.
+- **Fuente:** F-18 (Hu, B. et al. 2025, *Journal of Behavioral Decision Making*, "Assessing Nudge
+  Impact: A Comprehensive Second-Order Meta-Analysis," peer-reviewed)
+- **Leído a fondo:** 2026-09-20 (onlinelibrary.wiley.com bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` — ResearchGate, Replicability-Index, la página del propio autor Bo Hu —
+  que dan el I² exacto y el detalle de AMSTAR-2, ausente del resumen ya citado en tesis 6)
+- **Conexión razonada, no forzada:** profundiza tesis 6 (crisis del nudge) sin tocar su confianza — el
+  I² es el número que faltaba para justificar por qué la tesis ya prioriza el ranking por
+  dominio/técnica en vez del efecto promedio agregado.
+
+### 132. "Probar efectividad e implementación en paralelo" exige una asignación aleatoria doble, no solo medir ambas cosas a la vez
+El ledger ya cita el framework DIeSEL de F-54 (Garner 2022) por su extensión de los diseños híbridos
+de Curran con enganche comunitario, economía y escalamiento desde el diseño inicial. La lectura a
+fondo agrega el ejemplo concreto que faltaba: el proyecto STS4HIV, el hybrid tipo 2 que ilustra el
+framework, no midió efectividad e implementación en paralelo sobre un solo brazo — usó un **diseño
+doblemente aleatorizado**, asignando al azar tanto la intervención clínica (tratamiento de trastorno
+por uso de sustancias en personas con VIH) como la estrategia de implementación (Implementation and
+Sustainment Facilitation) de forma independiente. **Heurística de decisión:** cuando el piloto
+farmacia+triage (tesis 9/10) proponga "testear efectividad e implementación en paralelo desde el día
+uno" (intuición 11, F-55), el estándar real que cita la propia literatura no es correr ambas
+mediciones sobre un solo diseño de un brazo — es diseñar una asignación aleatoria separada para la
+variante clínica/de producto y para la variante de estrategia de implementación, si el tamaño del
+piloto lo permite; si no lo permite, declarar explícitamente que se está haciendo un tipo 1/3 (foco en
+una, exploratorio en la otra), no un tipo 2 disfrazado.
+- **Fuente:** F-54 (Garner, B.R. 2022, *Frontiers in Health Services*, peer-reviewed — corrección de
+  autoría ya registrada en el ledger)
+- **Leído a fondo:** 2026-09-20 (ncbi.nlm.nih.gov bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — Cambridge Core, Frontiers, PMC — que dan el ejemplo concreto de diseño doblemente
+  aleatorizado del proyecto STS4HIV, ausente del resumen ya citado en
+  `modelo-salud-ia-farmacias-peru.md`)
+- **Conexión razonada, no forzada:** afila tesis 9/10 (piloto farmacia+triage) con un estándar de
+  diseño concreto para "efectividad + implementación en paralelo," sin tocar su confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4652,12 +4723,12 @@ tarea nueva además de satisfacción/velocidad promedio.
   días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, el
   2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, el
   2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, el
-  2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, y una vez más
-  el 2026-09-19 al salir el bloque del 08-20
+  2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, una vez más
+  el 2026-09-19 al salir el bloque del 08-20, y de nuevo el 2026-09-20 al salir el bloque del 08-21
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Diecinueve corridas.
+  fuente/fecha.)* Veinte corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4726,51 +4797,12 @@ tarea nueva además de satisfacción/velocidad promedio.
   precio ambigua se concentra en quien ya desconfía, F-246 la sobreconfianza en una respuesta de IA
   es decisión estratégica costo-beneficio, no sesgo automático) — profundizó el riesgo de medir mal
   al agente conversacional y matizó tesis 1/15/18 sin cambiar confianza.
-- **2026-08-21** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward 8a90dc2→e8ba645, el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados**, mismo tope exacto que procesó la corrida de ayer (2026-08-20) — **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  octavo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
-  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por
-  completar el paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12
-  (mecanismo de `cronista`, cada ~3 días, no vence formalmente hoy pero ya lleva nueve días sin
-  correr; no lo disparo aquí porque es rutina de `cronista`, no de este proceso diario). **Cumplí
-  el umbral de poda señalado ayer:** consolidé las siete entradas de la primera semana del bloque
-  actual (2026-08-01 a 2026-08-07) en un solo bloque resumido — el detalle de cada tesis e
-  intuición que generaron ya vive en sus propias secciones con fecha, así que no se pierde
-  información, solo se deja de repetir en la bitácora; queda el detalle completo desde 2026-08-08
-  en adelante. Sí corrió la rutina diaria de intuición (decimosexta corrida desde el 2026-08-06):
-  de 134 fuentes 🟢A confirmadas por conteo propio en el ledger, 42 ya tenían lectura profunda del
-  Lobo — de las 92 restantes elegí 3 al azar puro: F-449 (Root, Inc., filings SEC — combined ratio
-  91,4% Q3 2025, ya citado en tesis 25 solo por la cifra agregada), F-338 (Bundorf, Polyakova &
-  Tai-Seale 2024, *Management Science*, RCT de consejo digital en seguro de salud, citado en un
-  documento externo del usuario solo por su hallazgo de disposición a pagar) y F-222 (Tversky &
-  Kahneman 1981, *Science*, framing — ya citado en tesis 18/C.8 solo por su mecanismo general). Las
-  tres bloqueadas por el proxy en su URL directa (ir.joinroot.com/sec.gov,
-  pubsonline.informs.org, science.org); reconstruidas vía búsqueda dirigida (cobertura financiera
-  especializada para F-449; el working paper del NBER "How do Humans Interact with Algorithms?"
-  para F-338, mismos autores/hallazgo; agregadores de acceso abierto — MPRA, journal.sjdm.org —
-  para F-222, incluyendo una réplica de condiciones límite del framing nunca antes citada en el
-  ledger) que confirman detalle nuevo, no solo el resumen ya citado. Sumé las entradas 43, 44 y 45
-  de Intuición acumulada: (43) un combined ratio rentable auditado combina un modelo de riesgo que
-  se sigue reentrenando (Root: UBI ~10% más predictivo tras 36,000 millones de millas) con un
-  cambio simultáneo hacia mezcla de canal más barata (partnerships embebidos, 44% de pólizas
-  nuevas) — da el criterio de auditoría operacional que tesis 25 todavía no tenía explícito para
-  cuando algún lab peruano publique cifra propia; (44) la divulgación pasiva (tesis 1) y el consejo
-  digital activo/recomendador no son el mismo objeto de estudio — el segundo desplaza el peso que
-  marca/reputación tiene sobre la disposición a pagar, cambia los pesos de decisión, no solo
-  informa; acota el alcance de tesis 1 sin bajarle la confianza, y hereda el riesgo ético ya
-  declarado en tesis 13 si se aplica a un comparador propio; (45) el efecto de framing no tiene
-  magnitud fija citable de memoria — se debilita bajo presión de tiempo y se invierte según el
-  tamaño de lo que está en juego, con paralelo directo al error de sobregeneralización que tesis 6
-  ya corrigió para el nudging; acota el alcance operacional de C.8 en tesis 18 sin cambiar su
-  confianza. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el
-  mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque
-  las tres entradas de hoy sí acotan el alcance de tesis 25, 1 y 18. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 14 días de
-  historial (2026-08-08 a hoy) tras la poda de la primera semana del bloque actual — dentro de la
-  ventana de ~30 días.
+  **2026-08-21** — sin cambios sustanciales en el ledger (F-468, octavo día seguido; poda de la
+  primera semana del bloque actual, 2026-08-01 a 2026-08-07, en un resumen); decimosexta corrida de
+  intuición (entradas 43-45: F-449 combined ratio auditado de Root, Inc. combinado con reentreno de
+  riesgo, F-338 consejo digital activo desplaza pesos de decisión más allá de la divulgación pasiva,
+  F-222 framing sin magnitud fija — se debilita bajo presión de tiempo y se invierte según lo que
+  está en juego) — acotó el alcance de tesis 25, 1 y 18 sin cambiar confianza.
 - **2026-08-22** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios
   pendientes, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo directo:
   **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope exacto que procesó la corrida de
@@ -5969,3 +6001,44 @@ tarea nueva además de satisfacción/velocidad promedio.
   entradas de hoy sí matizan tesis 9/10 y 21/24 y el material de venta consultiva. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
   historial (2026-08-21 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.
+- **2026-09-20** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 20 corridas, **cero fuentes nuevas** registradas
+  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, trigesimonoveno día
+  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
+  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
+  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
+  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva treinta y nueve días sin correr).
+  **Poda de bitácora:** el bloque "2026-08-21" salió por completo de la ventana de ~30 días (cutoff
+  ≈2026-08-21) — lo fusioné con el bloque "2026-08-01 a 2026-08-20" en un resumen ampliado
+  "2026-08-01 a 2026-08-21"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
+  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
+  hoy:** recalculé por script el universo 🟢A del ledger con el filtro estricto (marcador de
+  rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, misma cifra que las últimas
+  corridas — 3 filas mixtas (F-149, F-457, F-466) siguen correctamente excluidas por no empezar con
+  🟢A — contra `fuentes_leidas_lobo.md` (130 ya leídas tras la corrida de ayer) — **4 pendientes**
+  (F-18, F-54, F-94, F-251) — y elegí 3 al azar sin reemplazo (`random.shuffle`, sin semilla fija):
+  F-94, F-18 y F-54 (queda F-251 pendiente para la próxima corrida). Las tres bloqueadas por el proxy
+  en su URL directa (pmc.ncbi.nlm.nih.gov, onlinelibrary.wiley.com, ncbi.nlm.nih.gov); `WebSearch` sí
+  funcionó y permitió reconstruir detalle nuevo en las tres vía cobertura secundaria convergente
+  (Semantic Scholar/Taylor & Francis/University of Edinburgh para F-94, ResearchGate/
+  Replicability-Index/página propia del autor para F-18, Cambridge Core/Frontiers/PMC para F-54), no
+  solo el resumen de una línea ya citado. Sumé las entradas 130, 131 y 132 de Intuición acumulada:
+  (130) el resumen del ledger para F-94 describía el paper como evidencia de que el mercado ya
+  responde a la presión del pool con más personalización — la lectura a fondo de McFall (2019)
+  concluye lo contrario: la personalización es poco probable porque choca con la infraestructura
+  regulatoria de community rating de la ACA, no con una barrera tecnológica; corrección de dirección
+  del hallazgo, no solo de detalle, con una traducción directa al techo regulatorio de la SBS que
+  `lapuerta` todavía no modela explícitamente; (131) el I²=99,89% de F-18 (Hu et al. 2025), ausente de
+  la revisión profunda de `cronista` del 2026-07-22 que ya usa esta fuente en tesis 6, es el número
+  que faltaba para explicar por qué "el efecto promedio del nudge" es casi sin contenido cuando el
+  agregado mezcla fenómenos tan distintos; (132) el ejemplo concreto detrás del framework DIeSEL de
+  F-54 (el proyecto STS4HIV) muestra que "testear efectividad e implementación en paralelo" en la
+  práctica significa una asignación aleatoria doble e independiente para la intervención clínica y
+  para la estrategia de implementación, no solo medir ambas cosas sobre un único brazo — estándar
+  operacional concreto para el piloto farmacia+triage. Ninguna tesis de negocio cambió de confianza
+  numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy
+  sí matizan tesis 6, 7, 9, 10 y 13. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
+  fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-22 a hoy) tras la poda de hoy —
+  cumple la ventana de ~30 días.

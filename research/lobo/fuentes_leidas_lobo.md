@@ -147,3 +147,6 @@
 | F-61 | 🟢 A | 2026-09-19 | Intuición 127 — un rate de sesgo de automatización agregado puede esconder una mejora neta real; medir el switch-a-error junto con la exactitud neta |
 | F-123 | 🟢 A | 2026-09-19 | Intuición 128 — "los icon arrays ayudan" no es una sola afirmación; verificar qué pregunta específica testeó el paper citado antes de heredarle el hallazgo de otro |
 | F-247 | 🟢 A | 2026-09-19 | Intuición 129 — el costo de conciencia de un menú adaptativo de alta precisión crece bajo pantalla chica y se extiende a tareas nuevas, no solo a la conciencia general de funciones |
+| F-94 | 🟢 A | 2026-09-20 | Intuición 130 — un resumen de una línea puede invertir el veredicto real de la fuente que cita (F-94: el paper concluye que la personalización es poco probable, no que el mercado ya la está adoptando) |
+| F-18 | 🟢 A | 2026-09-20 | Intuición 131 — un I² cercano a 100% en un meta-análisis de meta-análisis es la confesión de que no hay un efecto común que promediar |
+| F-54 | 🟢 A | 2026-09-20 | Intuición 132 — "probar efectividad e implementación en paralelo" exige una asignación aleatoria doble, no solo medir ambas cosas a la vez (ejemplo STS4HIV) |
