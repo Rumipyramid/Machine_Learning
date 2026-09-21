@@ -4664,6 +4664,84 @@ una, exploratorio en la otra), no un tipo 2 disfrazado.
 - **Conexión razonada, no forzada:** afila tesis 9/10 (piloto farmacia+triage) con un estándar de
   diseño concreto para "efectividad + implementación en paralelo," sin tocar su confianza.
 
+### 133. La susceptibilidad a dark patterns es transversal, pero el remedio de diseño real es fricción de confirmación, no segmentar por vulnerabilidad
+El resumen del ledger para F-251 ya citaba el hallazgo negativo (ingreso/edad/educación no
+predicen bien quién cae) pero no traía el hallazgo positivo que sí es accionable: en el diseño
+experimental de Zac et al., exigir una **acción de pago explícita de confirmación** después de que
+el dark pattern ya operó (no antes) reduce su efectividad — es decir, la fricción rinde más cuando
+se coloca en el punto de conversión final, no en la entrada del flujo. **Corrección de cita, no solo
+matiz:** el ledger fecha el paper en 2021; la publicación real es *Behavioural Public Policy*
+(Cambridge) **2025** (aceptado octubre 2024) — Amit Zac, Yun-Chun Huang, Amédée von Moltke,
+Christopher Decker, Ariel Ezrachi. **Heurística transferible:** frente a un hallazgo de "no hay
+grupo más vulnerable a X," no cerrar ahí — verificar si el mismo estudio testeó una contramedida de
+fricción, porque esa es usualmente la parte operacionalizable del paper, y aplica directo a
+cualquier revisión de patrones oscuros en el flujo de cotización/contratación de seguros online que
+el proyecto quiera auditar contra el estándar DSA europeo que el propio paper cita como respaldado
+por su evidencia.
+- **Fuente:** F-251 (🟢A, Zac, A. et al. 2025 — no 2021 como registra el ledger —, *Behavioural
+  Public Policy*, peer-reviewed)
+- **Leído a fondo:** 2026-09-21 (cambridge.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — Oxford ORA, ResearchGate, ETH Library, SSRN — que dan la fecha real de publicación,
+  la lista completa de autores y el hallazgo de fricción de confirmación ausentes del resumen ya
+  citado en `tendencias-diseno-innovacion.md`)
+- **Conexión razonada, no forzada:** misma familia que la intuición 67 (el backlash de un dark
+  pattern depende del subtipo) — no cambia ninguna tesis de negocio, corrige una fecha de cita en el
+  ledger y añade una palanca de diseño concreta a cualquier auditoría de patrones oscuros del
+  proyecto.
+
+### 134. Un resumen de ledger puede empalmar dos comunicados oficiales distintos de la misma empresa bajo una sola URL — verificar que cada cifra pertenezca al período que cita
+El resumen de F-32 en el ledger junta "utilidad neta 2025 de USD 4.8B (+47%)" con "ROE de 23.6% en
+Q1 2026 (vs. 22.4% año previo)" bajo una sola URL — la del comunicado de resultados **anuales**
+2025 de Swiss Re (27-feb-2026). La lectura a fondo confirma que la primera cifra sí pertenece a ese
+comunicado (ROE FY2025 real: **19.6%**, subiendo desde 15.0% en 2024; combined ratio no-vida mejoró
+10.5 puntos a 79.4% pese a pérdidas por los incendios de Los Ángeles y el huracán Melissa), pero la
+segunda cifra (ROE 23.6% Q1 2026) es real y verificable — solo que pertenece a un comunicado
+**distinto y posterior** (07-may-2026, resultados del primer trimestre), no enlazado en la fila del
+ledger. Ambos números son ciertos por separado; el problema es que la fila los presenta como si
+vinieran de la misma fuente citada. **Heurística transferible:** cuando un resumen de una línea
+combina dos períodos de reporte distintos (año fiscal cerrado + trimestre posterior) bajo una sola
+URL, tratarlo como probable empalme de comunicados hasta verificar cada cifra contra su propio
+primary source — el período del número principal y el período del número de apoyo no vienen
+garantizados como el mismo comunicado. No cambia tesis 11 (que ya cita el 19.6% correcto, agregado
+con Munich Re/Hannover Re/Scor), pero sí es una corrección de higiene pendiente para la fila F-32
+del `codice.md`.
+- **Fuente:** F-32 (🔵B, Swiss Re, comunicado de resultados FY2025, 27-feb-2026) + comunicado
+  independiente de Q1 2026 (07-may-2026, no citado en el ledger)
+- **Leído a fondo:** 2026-09-21 (vía `WebSearch` — swissre.com, Asia Insurance Review,
+  Reinsurance News, xprimm.com, atlas-mag.net — que permiten reconstruir ambos comunicados por
+  separado y confirmar que ninguna de las dos cifras es inventada, solo mal atribuidas a una fuente
+  única)
+- **Conexión razonada, no forzada:** refuerza (no cambia) la confianza de tesis 11 — el ciclo de
+  rentabilidad reasegurador sigue siendo real y hasta mejor de lo que el resumen del ledger sugería
+  (combined ratio 79.4% es una cifra más fuerte que la que la tesis cita) — y añade higiene de cita
+  pendiente, misma familia que las correcciones de F-90 y F-429.
+
+### 135. Un resultado financiero auditado publicado bajo obligación de disclosure no es el mismo tipo de evidencia que una cifra de bienestar autopublicada por la misma empresa — aunque ambas hablen del mismo programa
+El riesgo ya registrado sobre Vitality (F-25, dato de negocio autopublicado sobre IA/bienestar sin
+auditoría) señala que hay que revisar ese tipo de comunicación con escepticismo. La lectura a fondo
+de F-104 confirma que **no todo lo que Discovery publica sobre Vitality es del mismo tipo**: los
+resultados semestrales (H1 2026, terminados 30-jun-2026) son cifras de utilidad operativa
+normalizada, sujetas a las mismas obligaciones de disclosure de una empresa listada en JSE —
+Discovery Insure (el brazo asegurador, no el de bienestar puro) con utilidad operativa +34% a
+R546M; el compuesto Vitality completo +41%; utilidad normalizada del grupo +24%; utilidad por
+acción +29%; y un desarrollo nuevo no capturado en el resumen original del ledger: el lanzamiento de
+**Vitality AI** como la siguiente iteración del modelo de shared-value, con cobertura de 3.46
+millones de vidas en Sudáfrica (subiendo desde 3.16M). **Heurística transferible:** separar "dato de
+negocio autopublicado en redes/marketing" (descuento fuerte, riesgo reputacional, tesis de riesgo ya
+declarada) de "resultado financiero reportado bajo obligación regulatoria de disclosure" (mismo
+origen corporativo, pero con auditoría y responsabilidad legal detrás) — no son la misma categoría
+de evidencia aunque ambas describan el mismo programa Vitality, y el proyecto debería tratarlas con
+descuentos de confianza distintos.
+- **Fuente:** F-104 (🔵B, Discovery Limited, resultados financieros oficiales H1 2026, reportados
+  por FAnews/Insurance Biz)
+- **Leído a fondo:** 2026-09-21 (vía `WebSearch` — discovery.co.za investor relations, Investing.com
+  transcript, Quartr — que confirman las cifras del resumen ya citado y agregan el detalle del
+  lanzamiento de Vitality AI, ausente del resumen de una línea)
+- **Conexión razonada, no forzada:** no cambia la confianza del riesgo ya declarado sobre Vitality
+  (F-25) — lo afina distinguiendo la categoría de evidencia, y deja una señal de vigilancia nueva
+  (Vitality AI) relevante para cualquier lectura futura de hacia dónde evoluciona el modelo de
+  incentivos conductuales que `lapuerta`/Rimac podrían replicar.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4714,7 +4792,7 @@ una, exploratorio en la otra), no un tipo 2 disfrazado.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-20** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-22** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -4724,11 +4802,12 @@ una, exploratorio en la otra), no un tipo 2 disfrazado.
   2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, el
   2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, el
   2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, una vez más
-  el 2026-09-19 al salir el bloque del 08-20, y de nuevo el 2026-09-20 al salir el bloque del 08-21
+  el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, y de nuevo
+  el 2026-09-21 al salir el bloque del 08-22
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Veinte corridas.
+  fuente/fecha.)* Veintiún corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4803,49 +4882,12 @@ una, exploratorio en la otra), no un tipo 2 disfrazado.
   riesgo, F-338 consejo digital activo desplaza pesos de decisión más allá de la divulgación pasiva,
   F-222 framing sin magnitud fija — se debilita bajo presión de tiempo y se invierte según lo que
   está en juego) — acotó el alcance de tesis 25, 1 y 18 sin cambiar confianza.
-- **2026-08-22** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios
-  pendientes, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo directo:
-  **468 filas, F-1 a F-468 sin huecos ni duplicados**, mismo tope exacto que procesó la corrida de
-  ayer (2026-08-21) — **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, noveno día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
-  ~3 días, no vence formalmente hoy pero ya lleva diez días sin correr; no lo disparo aquí porque
-  es rutina de `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición
-  (decimoséptima corrida desde el 2026-08-06): de 137 fuentes 🟢A confirmadas por conteo propio en
-  el ledger, 45 ya tenían lectura profunda del Lobo — de las 92 restantes elegí 3 al azar puro:
-  F-121 (Iyengar & Lepper 2000, el estudio original de las mermeladas/choice overload — ya citado
-  en tesis 12 solo por su resumen con la salvedad de no-replicación), F-239 (Roth et al. 2020,
-  mediación de empoderamiento psicológico en el efecto de design thinking — ya citado en el node de
-  diseño/innovación solo por su hallazgo agregado) y F-355 (Gotthardt et al. 2024, Press Ganey
-  telesalud vs. presencial en pediatría — ya citado en un documento externo del usuario solo por la
-  cifra agregada). Las tres bloqueadas por el proxy en su URL directa (medium.com,
-  onlinelibrary.wiley.com, journals.sagepub.com); reconstruidas vía búsqueda dirigida (Columbia
-  Business School, ResearchGate, Quizlet para F-121; ResearchGate y coberturas académicas para
-  F-239; PubMed para F-355) que confirman detalle nuevo — los tres experimentos empaquetados en el
-  paper de Iyengar/Lepper (mermeladas, ensayo universitario, chocolates), los cuatro mecanismos
-  exactos de empoderamiento del paper de Roth et al., y qué mide exactamente el instrumento Press
-  Ganey — no solo el resumen ya citado. Sumé las entradas 46, 47 y 48 de Intuición acumulada: (46)
-  el estudio fundacional de choice overload en realidad reporta tres outcomes distintos (¿elegir o
-  no?, ¿qué tan buena la elección?, ¿qué tan satisfecho queda?) bajo un solo titular — verificar
-  cuál de los tres sobrevive antes de citar el efecto agregado, aplicable directo a cualquier
-  prueba propia de "menos planes convierten mejor"; (47) que un método con marca (design thinking,
-  un playbook de venta) muestre resultados reales no prueba que el método sea insustituible — si el
-  efecto está totalmente mediado por un mecanismo genérico (aquí, empoderamiento psicológico vía
-  contacto con usuario real, competencia, autonomía, impacto visible), cualquier práctica más
-  barata que active ese mismo mecanismo debería funcionar igual, así que la decisión de negocio no
-  es "adoptar ese framework específico" sino "diseñar la práctica más barata que entregue el mismo
-  mecanismo"; (48) un canal de atención puede puntuar igual o mejor en satisfacción de
-  paciente/padre (Press Ganey/CAHPS) sin que eso diga nada sobre si el resultado clínico también
-  fue igual o mejor — el instrumento mide experiencia percibida con el proveedor, no precisión
-  diagnóstica, así que cualquier gate de éxito del piloto farmacia+triage IA debe exigir métrica
-  clínica junto a la de satisfacción, no solo la segunda. Ninguna tesis de negocio cambió de
-  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
-  evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance de
-  tesis 12, 21 y 9/10/23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 15 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30
-  días — sin podar todavía.
+  **2026-08-22** — sin cambios sustanciales en el ledger (F-468, noveno día seguido); decimoséptima
+  corrida de intuición (entradas 46-48: F-121 Iyengar & Lepper 2000 — el estudio fundacional de
+  choice overload empaqueta tres outcomes distintos bajo un titular, F-239 Roth et al. 2020 — el
+  efecto de design thinking está mediado por empoderamiento psicológico genérico, no por la marca
+  del método, F-355 Gotthardt et al. 2024 — Press Ganey mide experiencia percibida, no precisión
+  clínica) — acotó el alcance de tesis 12, 21 y 9/10/23 sin cambiar confianza.
 - **2026-08-23** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward 6324fc0→8cc091a, el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
@@ -6041,4 +6083,46 @@ una, exploratorio en la otra), no un tipo 2 disfrazado.
   numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy
   sí matizan tesis 6, 7, 9, 10 y 13. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
   fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-22 a hoy) tras la poda de hoy —
+  cumple la ventana de ~30 días.
+- **2026-09-21** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 21 corridas, **cero fuentes nuevas** registradas
+  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo día seguido
+  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
+  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso
+  — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es
+  rutina de `cronista`, no de este proceso diario; ya lleva cuarenta días sin correr). **Poda de
+  bitácora:** el bloque "2026-08-22" salió por completo de la ventana de ~30 días (cutoff
+  ≈2026-08-22) — lo fusioné con el bloque "2026-08-01 a 2026-08-21" en un resumen ampliado
+  "2026-08-01 a 2026-08-22"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
+  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
+  hoy, con un giro respecto a corridas anteriores:** recalculé por script el universo 🟢A del ledger
+  con el filtro estricto (marcador de rigurosidad que *empieza* con 🟢A): **134 filas**, misma cifra
+  que las últimas corridas — contra `fuentes_leidas_lobo.md` (133 ya leídas tras la corrida de ayer)
+  — **solo 1 pendiente** (F-251). Siguiendo la regla del proceso ("al agotar todos los niveles,
+  reiniciar el ciclo" — aquí, al agotar el nivel actual dentro de la misma corrida, avanzar al
+  siguiente en vez de esperar al día siguiente): tomé F-251 (el último 🟢A pendiente, con lo que ese
+  nivel queda agotado) y, para completar las 3 fuentes del día, calculé el universo 🔵B (76 filas) —
+  ninguna con lectura previa del Lobo — y elegí 2 al azar sin reemplazo (`random.sample`, sin semilla
+  fija): F-104 y F-32. Las tres bloqueadas por el proxy en su URL directa (cambridge.org,
+  discovery.co.za, swissre.com); `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las
+  tres vía cobertura convergente (Oxford ORA/ResearchGate/ETH Library/SSRN para F-251,
+  discovery.co.za investor relations/Investing.com/Quartr para F-104, swissre.com/Asia Insurance
+  Review/Reinsurance News/xprimm.com/atlas-mag.net para F-32), no solo el resumen de una línea ya
+  citado. Sumé las entradas 133, 134 y 135 de Intuición acumulada: (133) F-251 trae fecha de
+  publicación corregida (2025, no 2021 como registra el ledger) y el hallazgo accionable que faltaba
+  — la fricción de confirmación de pago después del dark pattern reduce su efectividad, más útil que
+  el hallazgo negativo de "no hay grupo más vulnerable" que ya citaba el resumen; (134) F-32 empalma
+  dos comunicados oficiales distintos de Swiss Re (resultados FY2025 y resultados Q1 2026) bajo una
+  sola URL — ambas cifras son ciertas por separado (ROE FY2025 real 19.6%, ROE Q1 2026 real 23.6%)
+  pero la fila del ledger las presenta como si vinieran de la misma fuente citada, corrección de
+  higiene de cita pendiente sin tocar tesis 11; (135) F-104 distingue una categoría de evidencia que
+  el riesgo ya declarado sobre Vitality (F-25) no separaba — resultado financiero auditado bajo
+  obligación de disclosure vs. dato de bienestar autopublicado en marketing — y agrega una señal de
+  vigilancia nueva (lanzamiento de "Vitality AI" en H1 2026) para el riesgo reputacional de IA en
+  seguros que ya vigila el proyecto. Ninguna tesis de negocio cambió de confianza numérica por esta
+  corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy sí refuerzan tesis
+  11 y afinan el riesgo sobre Vitality. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
+  fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-23 a hoy) tras la poda de hoy —
   cumple la ventana de ~30 días.

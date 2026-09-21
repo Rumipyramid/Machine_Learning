@@ -150,3 +150,6 @@
 | F-94 | 🟢 A | 2026-09-20 | Intuición 130 — un resumen de una línea puede invertir el veredicto real de la fuente que cita (F-94: el paper concluye que la personalización es poco probable, no que el mercado ya la está adoptando) |
 | F-18 | 🟢 A | 2026-09-20 | Intuición 131 — un I² cercano a 100% en un meta-análisis de meta-análisis es la confesión de que no hay un efecto común que promediar |
 | F-54 | 🟢 A | 2026-09-20 | Intuición 132 — "probar efectividad e implementación en paralelo" exige una asignación aleatoria doble, no solo medir ambas cosas a la vez (ejemplo STS4HIV) |
+| F-251 | 🟢 A | 2026-09-21 | Intuición 133 — fecha de publicación corregida (2025, no 2021) y la fricción de confirmación de pago, no solo la ausencia de segmento más vulnerable, es el hallazgo accionable sobre dark patterns |
+| F-104 | 🔵 B | 2026-09-21 | Intuición 135 — un resultado financiero auditado bajo disclosure regulatorio no es la misma categoría de evidencia que un dato de bienestar autopublicado del mismo programa Vitality |
+| F-32 | 🔵 B | 2026-09-21 | Intuición 134 — el resumen del ledger empalma dos comunicados oficiales distintos de Swiss Re (FY2025 y Q1 2026) bajo una sola URL; ambas cifras son ciertas por separado |
