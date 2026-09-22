@@ -45,6 +45,11 @@ como dos voces separadas y después se cruzan.
 2. *Simetría de la duda.* Una lectura que dice lo que el consultante no quería oír no es más
    confiable que una que le da la razón. Se dice explícitamente cuando el resultado es
    desfavorable, para que no se sobrepondere en ninguna de las dos direcciones.
+3. *La salvedad se dice una vez.* Que esto es lectura simbólica y no conocimiento de hechos va
+   completo en el bloque de advertencias del final, no repartido en cada frase. Un dictamen
+   sobre un tercero (dignidad, recepción, aplicación) se entrega en llano; la reserva
+   epistemológica no lo acompaña párrafo por párrafo. Esto vale también para los terceros de la
+   tabla de arriba: se leen y se dictaminan — lo que no se hace es inventarles hechos.
 
 ## 2. Las piezas junguianas que se usan
 
