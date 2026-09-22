@@ -4742,6 +4742,80 @@ descuentos de confianza distintos.
   (Vitality AI) relevante para cualquier lectura futura de hacia dónde evoluciona el modelo de
   incentivos conductuales que `lapuerta`/Rimac podrían replicar.
 
+### 136. Una preferencia declarada por "el trato humano" vale más como palanca de negocio cuando la fuente primaria la amarra a resultado financiero duro — y aquí, además, se concentra en el reclamo, no en la venta
+El resumen de F-359 en el ledger cita una frase suelta del deck de Milagros ("los aseguradores no
+pueden sacrificar el trato humano — sobre todo con clientes de vida, que rankean al asesor como la
+fuente más confiable"). La lectura a fondo confirma que detrás de esa frase hay una encuesta McKinsey
+de más de 8.500 clientes de las 40 mayores aseguradoras norteamericanas (vida + P&C, 2017-2022) que
+liga la ventaja de CX no a una preferencia blanda sino a métricas duras: los líderes de CX superaron a
+sus pares en TSR por **20 puntos porcentuales en vida y 65 en P&C** en el quinquenio, con +4pp de
+crecimiento de ingresos, +4pp de EBIT y -2pp de ratio de gastos. Más preciso todavía: la ventaja de
+confianza humana no es pareja entre sales y servicio — **49% de los clientes confía más en un asesor
+humano que en un servicio automatizado/chatbot específicamente para gestionar un reclamo**, y 20%
+cambiaría de asegurador si su asesor se fuera. **Heurística transferible:** cuando el ledger resume un
+principio de "no sacrificar lo humano" como cita suelta de un deck, verificar si la fuente primaria lo
+amarra a una métrica financiera auditable (TSR, revenue, EBIT) antes de tratarlo como palanca de
+negocio verificada en vez de opinión de consultora — aquí sí lo hace, y con una especificidad extra que
+el resumen de una línea no capturaba: la ventaja de "lo humano" pesa más en el reclamo que en la venta.
+- **Fuente:** F-359 (🔵B, McKinsey & Company, "Elevating customer experience: A win-win for insurers
+  and customers", sep-2023)
+- **Leído a fondo:** 2026-09-22 (la URL directa del artículo, mckinsey.com, bloqueada por el proxy del
+  entorno; reconstruido vía `WebSearch` con dos consultas dirigidas que confirman el tamaño de muestra,
+  el intervalo 2017-2022, las cifras de TSR/revenue/EBIT/expense ratio, y el desglose 49%/20% sobre
+  confianza en reclamos — detalle ausente del resumen de una línea ya citado en el deck)
+- **Conexión razonada, no forzada:** refuerza con ancla cuantitativa la tesis 16 (el asesor se
+  redistribuye, no desaparece — el reclamo, no la venta, es donde lo 100%-digital falla más), que hasta
+  hoy se sostenía en evidencia LATAM (Azos, bancaseguros Brasil) y no en una métrica financiera
+  comparativa de CX. No cambia su confianza (ya Alta), pero le da a `research/lobo` un dato defendible
+  para argumentar frente a cualquier propuesta interna de automatizar reclamos antes que ventas.
+
+### 137. Una fuente marcada "s.f." en el ledger puede ocultar que el levantamiento de campo real detrás del PDF institucional es de más de una década atrás
+El resumen de F-37 cita al INEI como caracterización de usuarios de farmacias/boticas en Perú, sin
+fecha ("s.f."). La lectura a fondo revela que el capítulo 4 pertenece a la *Encuesta Nacional de
+Satisfacción de Usuarios del Aseguramiento Universal* — **levantada en 2014**, doce años antes de hoy
+— no un estudio reciente. Con esa salvedad de vigencia puesta sobre la mesa, el contenido es de todos
+modos relevante para el proyecto: **52,3% de los usuarios de farmacia/botica compraron medicamento sin
+receta médica** (automedicación), 28,5% compró con receta y la mostró; de quienes se automedicaron,
+30,4% ya había tomado antes ese medicamento y 24,3% consideró que su malestar no ameritaba consulta
+médica; 22,7% reportó que en los últimos doce meses **siempre** acudió a la botica sin receta.
+**Heurística transferible:** una fila de ledger marcada "s.f." (sin fecha) no significa "reciente" —
+puede ser la ausencia de fecha del catálogo de publicación institucional, no del operativo de campo que
+generó el dato; verificar siempre la fecha real de levantamiento antes de tratar una estadística
+oficial como vigente, sobre todo si va a alimentar un modelo (`lapuerta`) o un pitch de producto que
+asume comportamiento actual.
+- **Fuente:** F-37 (🔵B, INEI, "Usuarios de Farmacias y Boticas" cap. 4, encuesta 2014)
+- **Leído a fondo:** 2026-09-22 (URL directa inei.gob.pe bloqueada por el proxy del entorno;
+  reconstruido vía `WebSearch` que confirma el origen del capítulo dentro de la Encuesta Nacional de
+  Satisfacción de Usuarios 2014 y las cifras de automedicación/receta ausentes del resumen original)
+- **Conexión razonada, no forzada:** matiza (no cambia confianza) la tesis 9 (farmacia+triage IA con
+  tracción estatal real) — la cifra de automedicación (>50% sin receta) es exactamente la conducta de
+  base que el modelo farmacia-frente-primario+triage necesita interceptar con seguridad, pero el dato
+  que la sustenta tiene doce años y merece verificación contra una fuente más reciente antes de
+  citarse como línea base cuantitativa en cualquier propuesta de producto — riesgo de vigencia que
+  tesis 9 no tenía declarado hasta hoy.
+
+### 138. Un punto de compresión de márgenes citado una sola vez puede parecer un bache de un año atípico — verificar si la serie siguiente confirma tendencia sostenida antes de tratarlo como reversión pasajera
+El resumen de F-194 cita la caída de márgenes de suscripción de aseguradoras de salud de EE.UU. a un
+mínimo de 7 años (2%) en 2022, por el retorno de procedimientos médicos post-pandemia. La lectura a
+fondo confirma que **la compresión no fue un bache de un año**: los medical loss ratios de 2024 llegan
+a 91% en Medicaid managed care (máximo de la década), 90% en Medicare Advantage, 88% en grupo y 85% en
+individual — subiendo en las cuatro líneas entre 2023 y 2024 — con márgenes brutos por afiliado cayendo
+en el mismo período (MA US$1.655, individual US$987, grupo US$846, Medicaid managed care US$608). El
+dato de 2025 confirma que la tendencia sigue: el loss ratio promedio del mercado individual llegó a
+93%. **Heurística transferible:** cuando el ledger cita un punto de compresión de margen en un solo año
+(aquí, 2022) como evidencia de un ciclo o una presión estructural, verificar la serie de años
+siguientes antes de tratarlo como argumento sólido de tendencia — un solo punto puede ser ruido
+pandémico transitorio; aquí la serie 2022-2025 confirma que no lo es, lo cual vuelve la evidencia más
+fuerte, no más débil, pero solo porque se verificó.
+- **Fuente:** F-194 (🔵B, KFF, "Health Insurer Financial Performance in 2024" + actualización 2025)
+- **Leído a fondo:** 2026-09-22 (URL directa kff.org bloqueada por el proxy del entorno; reconstruido
+  vía `WebSearch` con la serie de MLR y márgenes por línea de negocio 2023-2025, ausente del resumen de
+  una línea ya citado)
+- **Conexión razonada, no forzada:** refuerza con series 2023-2025 (no solo el punto 2022 ya citado) la
+  tesis 17 (la rentabilidad real del seguro de salud viene de integración vertical farmacia/PBM, no de
+  suscribir riesgo puro) — la presión de costo sobre el margen de suscripción sigue intacta y
+  empeorando tres años después, lo que sostiene sin cambio la confianza de esa tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4792,7 +4866,7 @@ descuentos de confianza distintos.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-22** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-23** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -4802,12 +4876,12 @@ descuentos de confianza distintos.
   2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, el
   2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, el
   2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, una vez más
-  el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, y de nuevo
-  el 2026-09-21 al salir el bloque del 08-22
+  el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, el
+  2026-09-21 al salir el bloque del 08-22, y de nuevo el 2026-09-22 al salir el bloque del 08-23
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Veintiún corridas.
+  fuente/fecha.)* Veintidós corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4888,43 +4962,10 @@ descuentos de confianza distintos.
   efecto de design thinking está mediado por empoderamiento psicológico genérico, no por la marca
   del método, F-355 Gotthardt et al. 2024 — Press Ganey mide experiencia percibida, no precisión
   clínica) — acotó el alcance de tesis 12, 21 y 9/10/23 sin cambiar confianza.
-- **2026-08-23** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward 6324fc0→8cc091a, el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados**, mismo tope exacto que procesó la corrida de ayer (2026-08-22) — **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  décimo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
-  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por
-  completar el paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12
-  (mecanismo de `cronista`, cada ~3 días, no vence formalmente hoy pero ya lleva once días sin
-  correr; no lo disparo aquí porque es rutina de `cronista`, no de este proceso diario). Sí corrió
-  la rutina diaria de intuición (decimoctava corrida desde el 2026-08-06): de 134 fuentes 🟢A
-  confirmadas por conteo propio en el ledger, 48 ya tenían lectura profunda del Lobo — de las 86
-  restantes elegí 3 al azar puro: F-164 (Louaas & Picard 2026, diseño óptimo de seguro paramétrico —
-  ya citado en tesis 4 solo por el resumen "diseño óptimo de trigger"), F-125 (Berger & Calabrese
-  1975, Uncertainty Reduction Theory — ya citado en el node de material visual solo como encuadre
-  teórico) y F-175 (Zong & Guo 2022, efecto ancla en juicio de precio bajo experiencia de producto —
-  ya citado en tesis 15 solo por el resumen del efecto base). Las tres bloqueadas por el proxy en su
-  URL directa (arxiv.org/hal.science, en.wikipedia.org/pressbooks.montgomerycollege.edu/
-  onlinelibrary.wiley.com, ncbi.nlm.nih.gov/frontiersin.org); reconstruidas vía búsqueda dirigida
-  (SSRN, ResearchGate, IDEAS/RePEc para F-164; iResearchNet, Businesstopia, Communication Theory.org,
-  ERIC para F-125; ResearchGate, PhilPapers para F-175) que confirman detalle nuevo, no solo el
-  resumen ya citado. Sumé las entradas 49, 50 y 51 de Intuición acumulada: (49) un trigger
-  paramétrico más preciso reduce el basis risk pero no garantiza un contrato más eficiente si el
-  residuo queda correlacionado con el índice de pérdida — acota tesis 4 sin bajarle la confianza;
-  (50) antes de importar una teoría canónica como marco explicativo, verificar si una teoría rival
-  ya la desplazó en una prueba de cabeza a cabeza — URT (base teórica del node de material visual)
-  perdió esa prueba contra Predicted Outcome Value Theory (Sunnafrank), lo que sugiere que el
-  mecanismo a optimizar en venta consultiva remota es señalizar valor esperado, no solo reducir
-  incertidumbre; (51) el efecto ancla de una cifra headline no golpea parejo a la audiencia — se
-  concentra en quien decide con presión de tiempo, baja confianza o menos conocimiento, acotando el
-  criterio de riesgo/segmentación de tesis 15 sin bajarle la confianza. Ninguna tesis de negocio
-  cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una
-  revisión de evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el
-  alcance de tesis 4, 15 y (por conexión de node, no de tesis numerada) el marco del material visual
-  de venta consultiva. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas
-  hoy. Bitácora con 16 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin
-  podar todavía.
+  **2026-08-23** — sin cambios sustanciales en el ledger (F-468, décimo día seguido); intuición
+  entradas 49-51 (F-164 diseño óptimo de seguro paramétrico, F-125 Uncertainty Reduction Theory
+  desplazada por Predicted Outcome Value Theory, F-175 ancla de precio concentrada en quien decide
+  con presión/baja confianza) — acotaron tesis 4 y 15 sin cambiar confianza.
 - **2026-08-24** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward 6324fc0→396f4cc, el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
@@ -6126,3 +6167,42 @@ descuentos de confianza distintos.
   11 y afinan el riesgo sobre Vitality. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
   fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-23 a hoy) tras la poda de hoy —
   cumple la ventana de ~30 días.
+- **2026-09-22** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 22 corridas, **cero fuentes nuevas** registradas
+  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo primer día
+  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
+  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
+  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
+  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva cuarenta y un días sin correr).
+  **Poda de bitácora:** el bloque "2026-08-23" salió por completo de la ventana de ~30 días (cutoff
+  ≈2026-08-23) — lo fusioné con el bloque "2026-08-01 a 2026-08-22" en un resumen ampliado
+  "2026-08-01 a 2026-08-23"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
+  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
+  hoy, agotado ya el nivel 🟢A desde el 2026-09-21:** recalculé por script el universo 🔵B del ledger
+  con el mismo filtro estricto (fila cuya rigurosidad *empieza* con 🔵B, sin contar filas mixtas como
+  F-333): **76 filas** — contra `fuentes_leidas_lobo.md` (2 ya leídas de este nivel tras la corrida de
+  ayer: F-104, F-32) — **74 pendientes** — y elegí 3 al azar sin reemplazo (Python `random.sample`,
+  sin semilla fija): F-359, F-37 y F-194. Las tres bloqueadas por el proxy en su URL directa
+  (mckinsey.com, inei.gob.pe, kff.org); `WebSearch` sí funcionó y permitió reconstruir detalle nuevo
+  en las tres vía cobertura convergente (dos búsquedas dirigidas sobre metodología/cifras del deck
+  McKinsey para F-359, cobertura secundaria sobre la Encuesta Nacional de Satisfacción de Usuarios del
+  Aseguramiento Universal 2014 del INEI para F-37, series de MLR/márgenes 2023-2025 de KFF y prensa
+  especializada para F-194), no solo el resumen de una línea ya citado. Sumé las entradas 136, 137 y
+  138 de Intuición acumulada: (136) el resumen de F-359 sobre "no sacrificar lo humano" resulta amarrado
+  a métricas financieras duras (TSR +20pp vida/+65pp P&C, +4pp revenue, +4pp EBIT) y a un desglose fino
+  que el ledger no capturaba — la ventaja de confianza humana (49% vs. chatbot) se concentra en el
+  reclamo, no en la venta — refuerzo cuantitativo nuevo para tesis 16; (137) una fila "s.f." en el
+  ledger puede ocultar un levantamiento de campo de más de una década (F-37 es la Encuesta Nacional de
+  Satisfacción de Usuarios 2014 del INEI, no un dato reciente) — matiza tesis 9 con un riesgo de
+  vigencia de dato que no tenía declarado, aunque la cifra de automedicación (52,3% sin receta) sigue
+  siendo relevante como conducta base a interceptar; (138) un punto de compresión de margen citado una
+  sola vez (2022) puede parecer ruido pandémico transitorio — la serie 2023-2025 de KFF confirma que no
+  lo fue (MLR subiendo en las cuatro líneas de negocio, márgenes por afiliado cayendo, loss ratio
+  individual llegando a 93% en 2025) — refuerza sin cambiar la confianza de tesis 17. Ninguna tesis de
+  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque
+  las tres entradas de hoy sí refuerzan tesis 16 y 17 y matizan tesis 9 con un riesgo de vigencia de
+  dato nuevo. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
+  Bitácora con 30 días de historial (2026-08-24 a hoy) tras la poda de hoy — cumple la ventana de ~30
+  días.

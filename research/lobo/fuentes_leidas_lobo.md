@@ -153,3 +153,6 @@
 | F-251 | 🟢 A | 2026-09-21 | Intuición 133 — fecha de publicación corregida (2025, no 2021) y la fricción de confirmación de pago, no solo la ausencia de segmento más vulnerable, es el hallazgo accionable sobre dark patterns |
 | F-104 | 🔵 B | 2026-09-21 | Intuición 135 — un resultado financiero auditado bajo disclosure regulatorio no es la misma categoría de evidencia que un dato de bienestar autopublicado del mismo programa Vitality |
 | F-32 | 🔵 B | 2026-09-21 | Intuición 134 — el resumen del ledger empalma dos comunicados oficiales distintos de Swiss Re (FY2025 y Q1 2026) bajo una sola URL; ambas cifras son ciertas por separado |
+| F-359 | 🔵 B | 2026-09-22 | Intuición 136 — una preferencia declarada por "lo humano" vale más como palanca de negocio cuando la fuente la amarra a TSR/revenue/EBIT, y aquí se concentra en el reclamo, no en la venta |
+| F-37 | 🔵 B | 2026-09-22 | Intuición 137 — una fuente marcada "s.f." en el ledger puede ocultar que el levantamiento de campo real es de más de una década atrás (aquí, encuesta INEI de 2014) |
+| F-194 | 🔵 B | 2026-09-22 | Intuición 138 — un punto de compresión de margen citado una sola vez puede parecer un bache de un año; verificar la serie siguiente antes de tratarlo como tendencia sostenida |
