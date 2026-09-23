@@ -156,3 +156,6 @@
 | F-359 | 🔵 B | 2026-09-22 | Intuición 136 — una preferencia declarada por "lo humano" vale más como palanca de negocio cuando la fuente la amarra a TSR/revenue/EBIT, y aquí se concentra en el reclamo, no en la venta |
 | F-37 | 🔵 B | 2026-09-22 | Intuición 137 — una fuente marcada "s.f." en el ledger puede ocultar que el levantamiento de campo real es de más de una década atrás (aquí, encuesta INEI de 2014) |
 | F-194 | 🔵 B | 2026-09-22 | Intuición 138 — un punto de compresión de margen citado una sola vez puede parecer un bache de un año; verificar la serie siguiente antes de tratarlo como tendencia sostenida |
+| F-7 | 🔵 B | 2026-09-23 | Intuición 139 — el gradiente por edad y el piso roto universal coexisten en la misma fuente; confirmó el patrón generacional que tesis 3 exigía y subió su confianza a Alta |
+| F-256 | 🔵 B | 2026-09-23 | Intuición 140 — la brecha de usabilidad de interfaces generadas por IA se concentra en 4 heurísticas de soporte (ayuda, recuperación de errores, eficiencia, prevención de errores), no en lo visual |
+| F-309 | 🔵 B | 2026-09-23 | Intuición 141 — dentro de "Web Developers and Digital Designers", el diseñador de interfaz gana más que el desarrollador ($98,090 vs. $90,930); el salario relativo es la señal, no solo el crecimiento de empleo |

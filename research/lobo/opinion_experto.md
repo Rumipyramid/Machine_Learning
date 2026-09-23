@@ -62,13 +62,20 @@ hereda el tope de la tesis 1 y necesita su propia validación de elección real.
 - **Actualizado:** 2026-07-21
 
 ### 3. El problema de comprensión es estructural, no generacional — no lo resuelve "educar a los jóvenes"
-Solo ~1 de cada 4 adultos Gen Z en EE.UU. puede definir deducible o copago. Ningún
-`F-n` nuevo desde el 2026-07-12 toca este patrón generacional.
-- **Evidencia:** F-8 (🟡C, NAIC 2024 — nota de asociación, método no detallado)
-- **Confianza:** Media. **Tope explícito:** no sube a Alta por consistencia
-  narrativa — solo sube si aparece un F-n con rigurosidad B o mejor que confirme
-  el patrón generacional, idealmente con dato peruano/latinoamericano.
-- **Actualizado:** 2026-07-17
+Solo ~1 de cada 4 adultos Gen Z en EE.UU. puede definir deducible o copago (F-8).
+**[Actualización 2026-09-23]** La lectura a fondo de F-7 (KFF, N=1,292, 🔵B) confirma que sí existe un
+gradiente real por edad — puntaje promedio en un test de comprensión de 10 preguntas: 4.7/10 (18-29)
+vs. 5.7/10 (30-49) vs. 6.4/10 (50+) — pero el punto central de la tesis sobrevive: ni el grupo de mejor
+desempeño entiende bien el producto (6.4/10 sigue siendo un puntaje pobre). El problema no es "los
+jóvenes no entienden" (cierto, pero incompleto) — es que **nadie entiende bien**, en distinto grado. La
+palanca correcta sigue siendo simplificar el producto/comunicación para toda la base, no un programa de
+educación financiera dirigido solo a Gen Z.
+- **Evidencia:** F-8 (🟡C, NAIC 2024 — nota de asociación, método no detallado), F-7 (🔵B, KFF 2014,
+  encuesta representativa N=1,292 — confirma el gradiente por edad Y el piso roto universal)
+- **Confianza:** Alta (subida desde Media el 2026-09-23 — cumple la condición que la propia tesis fijó
+  el 2026-07-17: F-n con rigurosidad B o mejor que confirme el patrón generacional; el dato es de
+  EE.UU., no peruano/latinoamericano, así que sigue abierta a reforzarse o corregirse con dato local).
+- **Actualizado:** 2026-09-23
 
 ### 4. La brecha de aseguramiento sísmico en Perú es una categoría de producto casi vacía — y hoy tiene ruta de producto concreta
 Solo ~3.3% de los hogares peruanos tiene seguro contra sismos/desastres (dato aún
@@ -4816,6 +4823,79 @@ fuerte, no más débil, pero solo porque se verificó.
   suscribir riesgo puro) — la presión de costo sobre el margen de suscripción sigue intacta y
   empeorando tres años después, lo que sostiene sin cambio la confianza de esa tesis.
 
+### 139. Que un problema sea "estructural, no generacional" no exige que no haya gradiente por edad — exige que el piso esté roto para todos
+La lectura a fondo de F-7 (KFF, 2014, ya citada en el ledger desde 2026-06-25 solo por la cifra de que
+el coaseguro es el término menos entendido) trae el desglose por edad que la tesis 3 pedía
+explícitamente como condición para subir de confianza: sobre una encuesta representativa nacional de
+EE.UU. (N=1,292), el puntaje promedio en un test de comprensión de 10 preguntas sube monótonamente con
+la edad — 4.7/10 en adultos de 18-29, 5.7/10 en 30-49, 6.4/10 en 50+ — y la brecha se repite en tareas
+aplicadas: solo 39% de los jóvenes calcula correctamente el costo de bolsillo de una hospitalización
+con copago y deducible dados, contra más de la mitad de los adultos de 30+, y el conocimiento de que la
+prima se paga todos los meses (no solo al usar el servicio) es 15 puntos porcentuales más bajo entre
+los jóvenes. **Heurística de decisión:** las dos lecturas de esta misma fuente no compiten, se
+complementan — el gradiente por edad es real y estadísticamente claro (confirma el "patrón
+generacional" que la tesis 3 exigía con rigor B+), pero el piso sigue roto incluso en el grupo que
+mejor entiende: 6.4/10 en el grupo de 50+ está lejos de "comprensión real" del producto. Antes de usar
+cualquier hallazgo de "X entiende peor que Y" para diseñar una intervención dirigida por edad,
+verificar primero si el grupo "que sí entiende" en realidad tampoco entiende bien — si no, el diseño
+de producto (simplificar el producto) sigue siendo la palanca correcta, y el segmento etario solo dice
+dónde duele primero.
+- **Fuente:** F-7 (KFF/Kaiser Family Foundation, 2014, "Assessing Americans' Familiarity With Health
+  Insurance Terms and Concepts", encuesta nacional representativa, N=1,292, 🔵B)
+- **Leído a fondo:** 2026-09-23 (kff.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — topline/metodología de KFF y cobertura de KFF Health News — que confirman el desglose
+  por edad completo, no solo la cifra de coaseguro ya citada)
+- **Conexión razonada, con cambio de confianza:** cumple la condición explícita que la tesis 3 fijó el
+  2026-07-17 para subir de confianza ("solo sube a Alta si aparece un F-n con rigurosidad B o mejor que
+  confirme el patrón generacional"); subo la confianza de tesis 3 de Media a Alta — ver esa tesis para
+  el detalle actualizado. El dato es de EE.UU., no peruano/latinoamericano (la tesis lo marcaba como
+  "idealmente", no como requisito estricto), así que el techo declarado queda abierto para una futura
+  fuente peruana que refuerce o corrija esta base.
+
+### 140. Cuando "la IA ya genera interfaces usables" se prueba, exigir el desglose por heurística de soporte — ahí es donde se rompe, no en lo visual
+La lectura a fondo de F-256 (CHI 2026 EA, ya citada en `tendencias-diseno-innovacion.md` solo por "brecha
+entre usabilidad visual y funcional") trae el detalle operativo: 138 pantallas móviles generadas por
+tres herramientas de IA (Figma [AI], Banani, Stitch) evaluadas contra las diez heurísticas de
+usabilidad de Nielsen. La brecha no está pareja entre las diez — se concentra en cuatro heurísticas
+específicas, todas del tipo "soporte al usuario cuando algo sale mal o es difícil": Ayuda y
+documentación, Recuperación de errores, Eficiencia de uso, Prevención de errores. Las heurísticas de
+apariencia/consistencia visual puntúan mucho mejor. **Heurística de decisión:** "¿la interfaz generada
+por IA es usable?" es la pregunta equivocada — la pregunta operacional es "¿qué pasa cuando el usuario
+se equivoca o se atasca?", porque es ahí, específicamente, donde falla el generador, no en el layout o
+la estética. Para cualquier evaluación futura de una interfaz generada o asistida por IA en el proyecto
+(agente conversacional, apps web de `lapuerta`), el checklist de auditoría debe pesar más esas cuatro
+heurísticas de soporte que las de apariencia.
+- **Fuente:** F-256 (CHI 2026 Extended Abstracts, "Looks Good, But Is It Usable? Evaluating Usability
+  in AI-Generated Mobile UIs", 🔵B — arbitraje ligero de EA, no full peer review)
+- **Leído a fondo:** 2026-09-23 (dl.acm.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — resumen del propio ACM DL con el detalle de las 138 pantallas, las tres herramientas y
+  las cuatro heurísticas específicas de soporte, no solo el titular ya citado)
+- **Conexión razonada, no forzada:** matiza tesis 24 (generative UI: sube preferencia declarada, baja
+  usabilidad de soporte) con el desglose operativo exacto de qué heurísticas fallan — sin cambiar su
+  confianza.
+
+### 141. Cuando el mercado premia "diseño de interfaz" por encima de "diseño gráfico", el diferencial de salario ya es la señal — no hace falta esperar más años de datos de empleo
+La lectura a fondo de F-309 (BLS Occupational Outlook Handbook, ya citada en
+`tendencias-diseno-innovacion.md` solo por el +7% de crecimiento y ~14.500 vacantes/año) trae el dato
+que el resumen del ledger no capturaba: dentro de la misma categoría ocupacional combinada ("Web
+Developers and Digital Designers"), el salario mediano de quien diseña la interfaz digital
+($98,090/año, mayo 2024) es **más alto** que el de quien la construye técnicamente — desarrollador web
+($90,930/año) —, no solo comparable. **Heurística de decisión:** cuando se argumenta que "el mercado no
+está abandonando el diseño, está abandonando una disciplina específica dentro de él", el salario
+relativo entre sub-roles de la misma categoría oficial es evidencia más fuerte que la tasa de
+crecimiento de empleo sola — la tasa dice que hay demanda, el salario relativo dice *cuál* de las dos
+disciplinas hermanas capta más valor. Argumento a favor de cualquier caso de negocio interno que busque
+reposicionar diseño hacia interfaz de producto vivo, no solo pieza estática/gráfica.
+- **Fuente:** F-309 (U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, 2026, 🔵B —
+  organismo oficial)
+- **Leído a fondo:** 2026-09-23 (bls.gov bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — página oficial del BLS con el desglose salarial por sub-rol, no solo la cifra de
+  crecimiento ya citada)
+- **Conexión razonada, no forzada:** refuerza, con un dato de mercado laboral adicional, el argumento de
+  tesis 21 sobre dónde vive el valor real del diseño (mecanismo, no multiplicador genérico) — sin tesis
+  numerada específica todavía asociada a esta narrativa de mercado laboral, sin cambiar ninguna
+  confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4866,7 +4946,7 @@ fuerte, no más débil, pero solo porque se verificó.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-23** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-24** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -4877,11 +4957,12 @@ fuerte, no más débil, pero solo porque se verificó.
   2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, el
   2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, una vez más
   el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, el
-  2026-09-21 al salir el bloque del 08-22, y de nuevo el 2026-09-22 al salir el bloque del 08-23
+  2026-09-21 al salir el bloque del 08-22, el 2026-09-22 al salir el bloque del 08-23, y de nuevo el
+  2026-09-23 al salir el bloque del 08-24
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Veintidós corridas.
+  fuente/fecha.)* Veintitrés corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -4966,45 +5047,11 @@ fuerte, no más débil, pero solo porque se verificó.
   entradas 49-51 (F-164 diseño óptimo de seguro paramétrico, F-125 Uncertainty Reduction Theory
   desplazada por Predicted Outcome Value Theory, F-175 ancla de precio concentrada en quien decide
   con presión/baja confianza) — acotaron tesis 4 y 15 sin cambiar confianza.
-- **2026-08-24** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward 6324fc0→396f4cc, el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados**, mismo tope exacto que procesó la corrida de ayer (2026-08-23) — **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  undécimo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
-  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por
-  completar el paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12
-  (mecanismo de `cronista`, cada ~3 días, ya lleva doce días sin correr; no lo disparo aquí porque
-  es rutina de `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición
-  (decimonovena corrida desde el 2026-08-06): de 134 fuentes 🟢A confirmadas por conteo propio en el
-  ledger, 51 ya tenían lectura profunda del Lobo — de las 83 restantes elegí 3 al azar puro: F-9
-  (Adams, Hunt, Palmer & Zaliauskas 2021, RCT de divulgación financiera N≈124,000 — ya sostiene
-  tesis 1, con revisión profunda de `cronista` del 2026-07-21 sobre el mecanismo, pero sin lectura a
-  fondo propia del Lobo hasta hoy), F-329 (examiner design, línea de asesoría de enfermería VA — ya
-  citado en documento externo del usuario solo por la cifra agregada de ahorro) y F-335 (Zheng et
-  al. 2002, escala HITS de confianza en aseguradores — ya citada solo por sus cuatro componentes).
-  Las tres bloqueadas por el proxy en su URL directa (sciencedirect.com ×2, pmc.ncbi.nlm.nih.gov,
-  nber.org, web.mit.edu); reconstruidas vía búsqueda dirigida (NBER WP 25718, J-PAL, EconPapers para
-  F-9; cobertura académica del examiner design y el marco de error simétrico entre enfermeras para
-  F-329; PubMed, ResearchGate y el resumen del propio journal para F-335) que confirman detalle
-  nuevo — la uniformidad del efecto nulo por edad/saldo en F-9, el marco de dos errores simétricos
-  (sobre-refiere vs. sub-refiere) en F-329, y la escala final de 11 ítems con dos muestras de
-  validación en F-335 — no solo el resumen ya citado. Sumé las entradas 52, 53 y 54 de Intuición
-  acumulada: (52) un efecto nulo de divulgación parejo entre segmentos (no concentrado en ninguno)
-  descarta "hace falta segmentar mejor" como arreglo — la corrección correcta es sobre la creencia
-  previa, no el formato; acota tesis 1 con un criterio operacional que la revisión profunda de
-  `cronista` no había registrado, sin bajarle la confianza; (53) un sistema de triaje/gatekeeping
-  puede fallar en dos direcciones simétricas (sobre-cautela costosa, sobre-confianza peligrosa) —
-  medir solo el ahorro de costo esconde la segunda, reforzando con evidencia de otro dominio (triaje
-  humano) el mismo gate de seguridad que tesis 10 ya exige para el piloto farmacia+IA; (54) existe un
-  instrumento validado y corto (HITS, 11 ítems, <10 min, dos muestras de validación) para medir
-  confianza en un asegurador por sus cuatro componentes — operacionalizable en `lapuerta` o en
-  cualquier encuesta futura en vez de una pregunta ad hoc de sí/no. Ninguna tesis de negocio cambió
-  de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
-  evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance de tesis
-  1 y 10, y dan una herramienta operacional nueva sin tesis numerada asociada (F-335/HITS).
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 17
-  días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+  **2026-08-24** — sin cambios sustanciales en el ledger (F-468, undécimo día seguido); decimonovena
+  corrida de intuición (entradas 52-54: F-9 efecto nulo de divulgación parejo entre segmentos, F-329
+  triaje que falla en dos direcciones simétricas, F-335 escala HITS de confianza de 11 ítems) — acotó
+  tesis 1 y 10 sin cambiar confianza; dio herramienta operacional nueva (HITS) sin tesis numerada
+  asociada.
 - **2026-08-25** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward 6324fc0→4d6b7c5, el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos**, mismo tope
@@ -6206,3 +6253,39 @@ fuerte, no más débil, pero solo porque se verificó.
   dato nuevo. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
   Bitácora con 30 días de historial (2026-08-24 a hoy) tras la poda de hoy — cumple la ventana de ~30
   días.
+- **2026-09-23** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md` por
+  conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto
+  que las últimas 23 corridas, **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo segundo día
+  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope —
+  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es
+  rutina de `cronista`, no de este proceso diario; ya lleva cuarenta y dos días sin correr). **Poda de
+  bitácora:** el bloque "2026-08-24" salió por completo de la ventana de ~30 días (cutoff ≈2026-08-24)
+  — lo fusioné con el bloque "2026-08-01 a 2026-08-23" en un resumen ampliado "2026-08-01 a
+  2026-08-24"; no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive
+  en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr hoy, agotado ya el
+  nivel 🟢A y con el nivel 🔵B en curso:** recalculé por script el universo 🔵B del ledger con el mismo
+  filtro estricto: **76 filas** — contra `fuentes_leidas_lobo.md` (5 ya leídas de este nivel tras las
+  corridas de los dos días previos: F-104, F-32, F-359, F-37, F-194) — **71 pendientes** — y elegí 3 al
+  azar sin reemplazo (Python `random.shuffle`, sin semilla fija): F-7, F-256 y F-309. Las tres
+  bloqueadas por el proxy en su URL directa (kff.org, dl.acm.org, bls.gov); `WebSearch` sí funcionó y
+  permitió reconstruir detalle nuevo en las tres vía cobertura convergente (topline/metodología propia
+  de KFF y cobertura de KFF Health News para F-7, el resumen del propio ACM Digital Library para F-256,
+  la página oficial del BLS con desglose salarial por sub-rol para F-309), no solo el resumen de una
+  línea ya citado. Sumé las entradas 139, 140 y 141 de Intuición acumulada, y **esta vez sí hubo cambio
+  de confianza numérica en una tesis, no solo matiz:** (139) la lectura a fondo de F-7 (KFF, N=1,292,
+  🔵B) trae el desglose por edad que la tesis 3 exigía explícitamente desde el 2026-07-17 como
+  condición para subir de confianza (F-n con rigurosidad B o mejor que confirme el patrón
+  generacional) — el gradiente es real (4.7/10 en 18-29 vs. 6.4/10 en 50+) pero el piso sigue roto
+  incluso en el grupo que mejor entiende, así que **subí la confianza de tesis 3 de Media a Alta**,
+  manteniendo su conclusión de negocio intacta (simplificar el producto para toda la base, no educar
+  solo a los jóvenes); (140) F-256 (CHI 2026 EA) desglosa la brecha de usabilidad de interfaces
+  generadas por IA en cuatro heurísticas de soporte específicas (ayuda/documentación, recuperación de
+  errores, eficiencia, prevención de errores) — matiza tesis 24 con un checklist operativo sin cambiar
+  su confianza; (141) F-309 (BLS) trae el diferencial salarial exacto entre diseñador de interfaz
+  digital ($98,090) y desarrollador web ($90,930) dentro de la misma categoría ocupacional — refuerza
+  con dato de mercado laboral el argumento de tesis 21 sobre dónde vive el valor real del diseño, sin
+  tesis numerada propia todavía. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
+  leídas hoy. Bitácora con 30 días de historial (2026-08-25 a hoy) tras la poda de hoy — cumple la
+  ventana de ~30 días.
