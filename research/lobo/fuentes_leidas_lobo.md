@@ -159,3 +159,6 @@
 | F-7 | 🔵 B | 2026-09-23 | Intuición 139 — el gradiente por edad y el piso roto universal coexisten en la misma fuente; confirmó el patrón generacional que tesis 3 exigía y subió su confianza a Alta |
 | F-256 | 🔵 B | 2026-09-23 | Intuición 140 — la brecha de usabilidad de interfaces generadas por IA se concentra en 4 heurísticas de soporte (ayuda, recuperación de errores, eficiencia, prevención de errores), no en lo visual |
 | F-309 | 🔵 B | 2026-09-23 | Intuición 141 — dentro de "Web Developers and Digital Designers", el diseñador de interfaz gana más que el desarrollador ($98,090 vs. $90,930); el salario relativo es la señal, no solo el crecimiento de empleo |
+| F-285 | 🔵 B | 2026-09-24 | Intuición 143 — un paper citado solo por su mecanismo técnico (mode collapse) puede tener una tesis normativa completamente distinta (aquí, seguridad/ética de IA y diversidad epistémica, no estética de diseño) |
+| F-308 | 🔵 B | 2026-09-24 | Intuición 144 — BLS + WEF convergen en la misma dirección sobre diseño gráfico, y el salto de posición del WEF (primera aparición en su ranking de caída) es señal de aceleración, no solo confirmación |
+| F-132 | 🔵 B | 2026-09-24 | Intuición 142 — un fallo que "vacates" una regla regulatoria no cierra el riesgo por sí solo; solo la derogación formal posterior (FCC, sept. 2025) lo hace |

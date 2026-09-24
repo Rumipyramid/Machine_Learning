@@ -4896,6 +4896,82 @@ reposicionar diseño hacia interfaz de producto vivo, no solo pieza estática/gr
   numerada específica todavía asociada a esta narrativa de mercado laboral, sin cambiar ninguna
   confianza.
 
+### 142. Un fallo que "vacates" una regla no cierra el riesgo regulatorio — solo la derogación formal posterior lo hace
+La lectura a fondo de F-132 (11th Circuit, *Insurance Marketing Coalition v. FCC*, ya citada en
+`transicion-venta-fria-a-opt-in.md` solo como "la corte determinó que la FCC excedió su autoridad") trae
+dos matices que el resumen del ledger no capturaba. Primero, la corte anuló **dos** restricciones a la
+vez, no solo la de "un consentimiento por entidad" (one-to-one): también cayó la restricción de que las
+llamadas debían ser "lógica y temáticamente relacionadas" con la interacción que originó el
+consentimiento — ambas por el mismo razonamiento (el texto del TCPA exige solo "consentimiento previo
+expreso", sin las capas adicionales que la FCC le sumó en 2023, y el estándar de derecho consuetudinario
+de "consentimiento" tampoco las exige). Segundo, y más relevante para cualquier lectura de "riesgo
+regulatorio en curso": para septiembre de 2025 la FCC ya emitió su regla final derogando formalmente la
+norma de one-to-one consent, cerrando el expediente en vez de dejarlo en pausa a la espera de apelación.
+**Heurística de decisión:** un fallo que anula (*vacates*) una regla regulatoria no es, por sí solo,
+evidencia de que el riesgo está resuelto — la agencia puede apelar, reformular o reintentar la misma
+restricción por otra vía. Solo la derogación formal posterior (como aquí) cierra el ciclo. Al evaluar
+cualquier "riesgo regulatorio activo" citado en el proyecto (incluido el de INDECOPI en tesis 8, de otra
+jurisdicción y en sentido opuesto — ahí la fiscalización se endurece, no se relaja), verificar el estado
+más reciente del expediente, no solo la fecha de la fuente citada originalmente.
+- **Fuente:** F-132 (U.S. Court of Appeals, 11th Circuit, *Insurance Marketing Coalition Ltd. v. FCC*,
+  2025, 🔵B — fallo judicial federal oficial)
+- **Leído a fondo:** 2026-09-24 (media.ca11.uscourts.gov bloqueado por el proxy del entorno; reconstruido
+  vía `WebSearch` — cobertura convergente de Justia, Wiley Law, Womble Bond Dickinson, Venable, Kelley
+  Drye, Reed Smith y Consumer Finance Insights, incluida la nota de septiembre 2025 sobre la derogación
+  formal de la FCC, no solo el resumen del fallo ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis numerada — el riesgo que
+  vigila el proyecto en EE.UU. sobre contacto comercial (tesis 8 es de Perú/INDECOPI) queda documentado
+  como cerrado a favor del llamador desde sept. 2025, en dirección contraria al endurecimiento peruano.
+
+### 143. Un paper citado solo por su mecanismo técnico puede tener una tesis normativa completamente distinta a la que el resumen de negocio le atribuye
+La lectura a fondo de F-285 ("The Homogenization Problem in LLMs", ya citada en
+`tendencias-diseno-innovacion.md` solo como "base técnica del *mode collapse* que el gremio llama
+'sameness' estética") revela que el paper no es, en su núcleo, un estudio sobre estética de diseño ni
+sobre productos generativos comerciales — es un paper de **seguridad y ética de IA** que argumenta que la
+homogeneización de las respuestas de un LLM (el colapso hacia lo normativo/mayoritario) daña
+específicamente a comunidades minorizadas y empobrece la diversidad epistémica de todos, y propone un
+marco donde cada stakeholder debe codificar explícitamente qué ejes de diferencia le importan medir, más
+una estrategia de mitigación tomada de teoría feminista ("xeno-reproducción"). Nada del argumento central
+trata sobre homogeneización *estética* de interfaces o de outputs de diseño comercial — esa es una
+aplicación por analogía que el node hizo, no lo que el paper mismo sostiene. **Heurística de decisión:**
+cuando una fuente entra al ledger "de pista social" citada solo por un mecanismo técnico aislado (aquí,
+*mode collapse*), verificar si el paper de origen tiene una tesis normativa propia antes de heredarle
+solo ese mecanismo a un argumento de negocio — puede que el marco real del paper (aquí, equidad y
+diversidad epistémica en IA) no traslade ninguna implicancia útil al caso de uso comercial que se le
+atribuyó, o incluso lo tergiverse.
+- **Fuente:** F-285 (Rios-Sialer, "The Homogenization Problem in LLMs: Towards Meaningful Diversity in
+  AI Safety", 2026, 🔵B — preprint arXiv con método explícito)
+- **Leído a fondo:** 2026-09-24 (arxiv.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — resumen del propio arXiv/abstract y espejo en unrulyabstractions.com, no solo la
+  etiqueta de "base técnica de sameness" ya citada)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis numerada del node de
+  diseño/innovación — señala que la cita de F-285 en `tendencias-diseno-innovacion.md` §3.3 está
+  aplicada fuera del marco real del paper y merece revisión propia del node, no de esta opinión de
+  negocio.
+
+### 144. Dos fuentes independientes que convergen en la misma dirección, y una de ellas es una entrada nueva en su ranking, es señal de aceleración — no solo de confirmación
+La lectura a fondo de F-308 (BLS Occupational Outlook Handbook — Graphic Designers, ya citada en
+`tendencias-diseno-innovacion.md` solo por el +2% de crecimiento 2024-2034 y ~20,000 vacantes/año)
+confirma la cifra del ledger y trae una segunda señal convergente que el resumen no capturaba: el World
+Economic Forum *Future of Jobs Report 2025* clasifica a "diseñador gráfico" como el 11° rol de más rápida
+caída a nivel global — la primera vez que la ocupación aparece en esa lista, tras figurar como de
+crecimiento moderado en la edición 2023 del mismo reporte. **Heurística de decisión:** cuando dos fuentes
+independientes, de metodología distinta (proyección estadística de empleo nacional del BLS vs. ranking
+global de percepción/tendencia del WEF), apuntan en la misma dirección, y una de ellas es una aparición
+nueva en su propio ranking (no estaba ahí en la edición anterior), es evidencia de que la tendencia se
+está *acelerando*, no solo de que dos fuentes "coinciden" — el salto de posición entre ediciones
+consecutivas del mismo instrumento pesa más que el promedio estático de cualquiera de las dos por
+separado.
+- **Fuente:** F-308 (U.S. Bureau of Labor Statistics, Occupational Outlook Handbook — Graphic Designers,
+  2026, 🔵B — organismo oficial con metodología publicada)
+- **Leído a fondo:** 2026-09-24 (bls.gov bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — página oficial del BLS y cobertura convergente sobre el WEF *Future of Jobs Report
+  2025*, no solo la cifra de crecimiento ya citada)
+- **Conexión razonada, no forzada:** refuerza, sin cambiar su confianza, el mismo argumento de tesis 21
+  que ayer reforzó F-309 (dónde vive el valor real del diseño) — aquí desde el ángulo inverso: la
+  disciplina que más rápido pierde valor de mercado (diseño gráfico estático) frente a la que lo gana
+  (diseño de interfaz, ver intuición 141).
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -4946,7 +5022,7 @@ reposicionar diseño hacia interfaz de producto vivo, no solo pieza estática/gr
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-24** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-25** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -4957,8 +5033,8 @@ reposicionar diseño hacia interfaz de producto vivo, no solo pieza estática/gr
   2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, el
   2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, una vez más
   el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, el
-  2026-09-21 al salir el bloque del 08-22, el 2026-09-22 al salir el bloque del 08-23, y de nuevo el
-  2026-09-23 al salir el bloque del 08-24
+  2026-09-21 al salir el bloque del 08-22, el 2026-09-22 al salir el bloque del 08-23, el
+  2026-09-23 al salir el bloque del 08-24, y de nuevo el 2026-09-24 al salir el bloque del 08-25
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
@@ -5051,46 +5127,11 @@ reposicionar diseño hacia interfaz de producto vivo, no solo pieza estática/gr
   corrida de intuición (entradas 52-54: F-9 efecto nulo de divulgación parejo entre segmentos, F-329
   triaje que falla en dos direcciones simétricas, F-335 escala HITS de confianza de 11 ítems) — acotó
   tesis 1 y 10 sin cambiar confianza; dio herramienta operacional nueva (HITS) sin tesis numerada
-  asociada.
-- **2026-08-25** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward 6324fc0→4d6b7c5, el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos**, mismo tope
-  exacto que procesó la corrida de ayer (2026-08-24) — **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, duodécimo día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el último
-  bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada ~3 días,
-  ya lleva trece días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de este
-  proceso diario). Sí corrió la rutina diaria de intuición (vigésima corrida desde el 2026-08-06): de
-  134 fuentes 🟢A confirmadas por conteo propio en el ledger, 54 ya tenían lectura profunda del Lobo —
-  de las 80 restantes elegí 3 al azar puro (`shuf` sobre la lista completa): F-237 (Hertenstein, Platt
-  & Veryzer 2005, diseño industrial y desempeño financiero — ya citada en el node de diseño solo como
-  evidencia base del vínculo diseño→desempeño), F-238 (2025, capacidad diseño-ingeniería vía patentes,
-  1.659 firmas — ya citada como "la mejor evidencia disponible" del mismo node) y F-349 (ProPublica/
-  Capitol Forum sobre EviCore — ya citada en documento externo del usuario solo por la narrativa
-  general de conflicto de interés que refuerza tesis 23). Las dos primeras bloqueadas por el proxy en
-  su URL directa (onlinelibrary.wiley.com, tandfonline.com); reconstruidas vía ResearchGate y
-  cobertura académica que confirman detalle nuevo — la comparación intra-industria (no cruzada) del
-  panel de 138 expertos en F-237, y la distinción entre efecto directo y efecto moderador (condicionado
-  a cuánta innovación ya existe) en F-238. F-349 no tenía URL directa registrada en el ledger;
-  reconstruida vía búsqueda dirigida que confirma el mecanismo operativo exacto: contratos que pagan
-  más cuanto mayor la denegación, y un algoritmo interno ("the dial") que ex-empleados dicen se ajusta
-  para cumplir metas de ahorro sin que el asegurador cliente lo sepa. Sumé las entradas 55, 56 y 57 de
-  Intuición acumulada: (55) un estudio correlacional merece menos descuento de confianza cuando la
-  comparación ya viene controlada por el confusor más obvio (aquí, industria) — matiza cómo leer una de
-  las piezas base de tesis 21 sin bajarle la confianza; (56) un efecto "directo" y uno "moderador"
-  sobre el mismo resultado no se acumulan igual — el moderador solo rinde si la otra variable (aquí,
-  innovación) ya está presente en cantidad, útil para argumentar ROI de diseño según cuánto invierte ya
-  la organización en I+D; (57) frente a un intermediario algorítmico cuyo contrato premia la métrica
-  que él mismo reporta, la auditoría correcta pregunta qué palanca interna puede mover sin que el
-  principal se entere y con qué frecuencia — agrega a tesis 10 un criterio de gobernanza concreto (quién
-  controla el "dial") que su gate de validación clínica no cubría, y documenta con evidencia dura el
-  incentivo financiero detrás del steering algorítmico que tesis 23 ya señalaba como riesgo de
-  reactancia. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
-  paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque las tres
-  entradas de hoy sí acotan el alcance de tesis 10, 21 y 23. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 18 días de
-  historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+  asociada. **2026-08-25** — sin cambios sustanciales en el ledger (F-468, duodécimo día seguido);
+  vigésima corrida de intuición (entradas 55-57: F-237 comparación intra-industria diseño→desempeño
+  financiero, F-238 efecto directo vs. moderador en capacidad diseño-ingeniería, F-349 mecanismo
+  operativo del "dial" de EviCore para denegar reclamos sin que el asegurador cliente lo sepa) — acotó
+  tesis 10, 21 y 23 sin cambiar confianza.
 - **2026-08-26** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
   fast-forward de la corrida de ayer, working tree limpio) y verifiqué `research/fuentes/codice.md`
   por conteo directo: **468 filas, F-1 a F-468 sin huecos**, mismo tope exacto que procesó la corrida
@@ -6289,3 +6330,41 @@ reposicionar diseño hacia interfaz de producto vivo, no solo pieza estática/gr
   tesis numerada propia todavía. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
   leídas hoy. Bitácora con 30 días de historial (2026-08-25 a hoy) tras la poda de hoy — cumple la
   ventana de ~30 días.
+- **2026-09-24** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, working tree limpio, sin cambios pendientes de la corrida de ayer) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 24 corridas, **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo tercer día seguido
+  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
+  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso —
+  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina
+  de `cronista`, no de este proceso diario; ya lleva cuarenta y tres días sin correr). **Poda de
+  bitácora:** el bloque "2026-08-25" salió por completo de la ventana de ~30 días (cutoff ≈2026-08-25)
+  — lo fusioné con el bloque "2026-08-01 a 2026-08-24" en un resumen ampliado "2026-08-01 a 2026-08-25";
+  no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive en sus propias
+  secciones con fecha. **La rutina diaria de intuición sí pudo correr hoy, con el nivel 🔵B todavía en
+  curso:** recalculé por script el universo 🔵B del ledger con el filtro estricto (fila cuya rigurosidad
+  *empieza* con 🔵B, sin contar filas mixtas como F-333): **79 filas** — contra
+  `fuentes_leidas_lobo.md` (8 ya leídas de este nivel tras las corridas de los tres días previos: F-104,
+  F-32, F-359, F-37, F-194, F-7, F-256, F-309) — **71 pendientes** — y elegí 3 al azar sin reemplazo
+  (Python `random.shuffle`, sin semilla fija): F-285, F-308 y F-132. Las tres bloqueadas por el proxy en
+  su URL directa (arxiv.org, bls.gov, media.ca11.uscourts.gov); `WebSearch` sí funcionó y permitió
+  reconstruir detalle nuevo en las tres vía cobertura convergente (abstract propio de arXiv + espejo en
+  unrulyabstractions.com para F-285, página oficial del BLS + cobertura del WEF *Future of Jobs Report
+  2025* para F-308, Justia/Wiley Law/Womble Bond Dickinson/Venable/Kelley Drye/Reed Smith/Consumer
+  Finance Insights para F-132), no solo el resumen de una línea ya citado. Sumé las entradas 142, 143 y
+  144 de Intuición acumulada: (142) F-132 trae el detalle de que la corte anuló dos restricciones a la
+  vez (one-to-one y "lógica y temáticamente relacionadas") y que la FCC ya derogó formalmente la regla
+  en sept. 2025 — un fallo que "vacates" una norma no cierra el riesgo regulatorio por sí solo, solo la
+  derogación posterior lo hace; sin conexión a tesis 8 (Perú/INDECOPI, jurisdicción y dirección
+  distintas); (143) F-285 resultó ser, leído a fondo, un paper de seguridad/ética de IA sobre diversidad
+  epistémica y daño a comunidades minorizadas — no un estudio sobre estética de diseño, pese a que el
+  node lo cita solo por su mecanismo técnico de *mode collapse*; señala una cita aplicada fuera de marco
+  que el node de diseño debería revisar; (144) F-308 confirma la cifra ya citada del BLS y agrega una
+  segunda señal convergente e independiente (WEF *Future of Jobs Report 2025*, 11° rol de más rápida
+  caída global, primera aparición en esa lista) que sugiere aceleración, no solo confirmación, del
+  mismo patrón que ya reforzaba tesis 21 vía F-309. Ninguna tesis de negocio cambió de confianza
+  numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy
+  matizan la trazabilidad de dos citas del node de diseño/innovación (F-285) y refuerzan tesis 21.
+  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días
+  de historial (2026-08-26 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.
