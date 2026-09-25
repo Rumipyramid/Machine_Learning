@@ -162,3 +162,6 @@
 | F-285 | 🔵 B | 2026-09-24 | Intuición 143 — un paper citado solo por su mecanismo técnico (mode collapse) puede tener una tesis normativa completamente distinta (aquí, seguridad/ética de IA y diversidad epistémica, no estética de diseño) |
 | F-308 | 🔵 B | 2026-09-24 | Intuición 144 — BLS + WEF convergen en la misma dirección sobre diseño gráfico, y el salto de posición del WEF (primera aparición en su ranking de caída) es señal de aceleración, no solo confirmación |
 | F-132 | 🔵 B | 2026-09-24 | Intuición 142 — un fallo que "vacates" una regla regulatoria no cierra el riesgo por sí solo; solo la derogación formal posterior (FCC, sept. 2025) lo hace |
+| F-383 | 🔵 B | 2026-09-25 | Intuición 145 — un escenario concreto de ruptura multi-usuario es prueba de falsación más dura que un principio abstracto de diseño |
+| F-105 | 🔵 B | 2026-09-25 | Intuición 146 — cuando ingreso neto y margen operativo se mueven en direcciones opuestas, sospechar de un ítem de una sola vez |
+| F-360 | 🔵 B | 2026-09-25 | Intuición 147 — una estadística de mix de canal sin su ejemplo concreto no tiene jugada asociada |

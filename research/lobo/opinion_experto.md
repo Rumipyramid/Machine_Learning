@@ -4972,6 +4972,74 @@ separado.
   disciplina que más rápido pierde valor de mercado (diseño gráfico estático) frente a la que lo gana
   (diseño de interfaz, ver intuición 141).
 
+### 145. Un escenario concreto de ruptura entre dos usuarios es una prueba de falsación más dura que un principio abstracto de diseño
+La lectura a fondo de F-383 ("Against Generative UI", proceedings peer-reviewed ACM) confirma el
+argumento ya citado en el ledger (consistencia/predictibilidad como valores centrales de HCI que la
+UI generativa rompe por construcción) pero el aporte real del paper no es el principio — es el
+escenario ilustrativo: dos colaboradores trabajando sobre el mismo sistema de UI generativa ven
+interfaces distintas (a uno le aparece una pestaña "Insert" que al otro no), y las instrucciones de
+uno dejan de corresponder a lo que el otro ve en pantalla, rompiendo la coordinación de forma
+inmediata y concreta. **Heurística de decisión:** cuando se audita un claim de personalización/UI
+generativa, buscar específicamente el modo de falla de *consistencia entre usuarios* (¿qué pasa
+cuando dos personas necesitan coordinar sobre la misma pantalla o el mismo flujo?), no solo medir la
+experiencia de un usuario aislado — es el escenario multi-usuario, no el principio abstracto, el que
+expone el costo real. De paso, la lectura completa permite identificar la autoría real que el ledger
+tenía como "no verificada en esta sesión": Pavel Okopnyi, Oda Elise Nordberg y Frode Guribye (Halfway
+to the Future Symposium 2024, Santa Cruz, CA) — corrección disponible para `cronista` si decide
+actualizar la fila, no aplicada aquí (esta opinión no edita el ledger).
+- **Fuente:** F-383 (Okopnyi, Nordberg & Guribye, "Against Generative UI", HttF '24, 2024, 🔵B —
+  position paper peer-reviewed ACM; argumento conceptual, no evidencia empírica primaria)
+- **Leído a fondo:** 2026-09-25 (dl.acm.org bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — resumen propio de ACM Digital Library con el escenario ilustrativo completo, no solo
+  el argumento de principio ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis numerada; matiza cómo
+  se debería auditar cualquier futura propuesta de UI/contenido generativo personalizado en canales
+  de `lapuerta` o de asesoría (buscar el modo de falla multi-usuario, no solo el individual).
+
+### 146. Cuando el ingreso neto y el margen operativo se mueven en direcciones opuestas en el mismo release, uno de los dos carga un ítem de una sola vez
+La lectura a fondo de F-105 (comunicado oficial de Kaiser Permanente / Risant Health, resultados 2025)
+trae el desglose que el resumen de una línea del ledger no capturaba: el ingreso neto cayó de
+USD 12.9B (2024) a USD 9.3B (2025) — a primera vista, deterioro — pero 2024 incluía una ganancia
+única de USD 6.8B por las adquisiciones de Geisinger y Cone Health vía Risant Health. Mirando la
+línea operativa en cambio, el ingreso operativo *más que se duplicó*: de USD 569M (2024) a USD 1.4B
+(2025), llevando el margen operativo a 1.1% (ingresos combinados USD 127.7B). **Heurística de
+decisión:** cuando el ingreso neto y el ingreso/margen operativo de un mismo release se mueven en
+direcciones opuestas de un año a otro, sospechar primero de un ítem de una sola vez (M&A, ganancia de
+inversión, litigio) antes de leer cualquiera de los dos como la tendencia real del negocio — el
+margen operativo es el que aísla mejor la operación recurrente.
+- **Fuente:** F-105 (Kaiser Permanente, comunicado oficial, "Kaiser Permanente and Risant Health
+  Report 2025 Financial Results", 2025, 🔵B — resultados financieros oficiales de la organización)
+- **Leído a fondo:** 2026-09-25 (about.kaiserpermanente.org bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` — cobertura convergente de Becker's Hospital Review y Fierce
+  Healthcare con las cifras exactas del comunicado, no solo el resumen de un párrafo ya citado)
+- **Conexión razonada, no forzada:** matiza, sin cambiar su nivel, el Riesgo ya registrado sobre
+  tratar los modelos de atención primaria basada en valor como camino rápido a rentabilidad (§
+  Riesgos): el margen de Kaiser en 2025 **mejoró** frente a 2024 (no empeoró), pero sigue siendo
+  delgado (1.1%) bajo la misma presión de costo del sector — el riesgo de esperar rentabilidad
+  rápida sigue vigente, con el matiz de que "presión de costo" no equivale a "margen cayendo".
+
+### 147. Una estadística de mix de canal sin su ejemplo concreto no tiene jugada asociada; el ejemplo es lo que se puede copiar
+La lectura a fondo de F-360 (McKinsey, "Life insurers: How to win in Asia–Pacific") confirma la cifra
+ya citada en el ledger (canal dominado por agencias ~40% y partnerships ~35%, ~80% de las ventas ya
+habilitadas por tecnología digital) y trae el ejemplo operacionalizable que el resumen de una línea no
+capturaba: un asegurador del sudeste asiático se asoció con una startup de ride-hailing para lanzar un
+microseguro de enfermedad crítica dirigido a los conductores de la plataforma. **Heurística de
+decisión:** una estadística de mix de canal agregada (agencia vs. partnership vs. digital) describe el
+paisaje pero no es una jugada — el ejemplo concreto de partnership (aquí, embedding de microseguro
+sobre una plataforma de trabajo gig ya existente) es lo que efectivamente se puede replicar o adaptar;
+pedir siempre el caso ilustrativo detrás de la cifra de mercado antes de tratarla como insight
+accionable.
+- **Fuente:** F-360 (McKinsey & Company, "Life insurers: How to win in Asia–Pacific", s.f., 🔵B —
+  consultora, cifras de mix de canal citadas sin metodología propia auditada)
+- **Leído a fondo:** 2026-09-25 (mckinsey.com bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — resumen del propio artículo con el ejemplo de partnership de ride-hailing +
+  microseguro, no solo la cifra de mix de canal ya citada)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis numerada; conecta como
+  instinto (no dato de `codice.md` sobre el tema puntual) con las variables `trabajo_plataforma_digital`
+  y `propension_microseguro` de `lapuerta` (v1.3, 2026-07-19) — el partnership embebido sobre una
+  plataforma gig es el mecanismo de distribución concreto que esas dos variables anticipan como
+  relevante, con evidencia externa (no peruana) de que ya se está probando en la región.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5022,7 +5090,7 @@ separado.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-25** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-26** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -5034,11 +5102,12 @@ separado.
   2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, una vez más
   el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, el
   2026-09-21 al salir el bloque del 08-22, el 2026-09-22 al salir el bloque del 08-23, el
-  2026-09-23 al salir el bloque del 08-24, y de nuevo el 2026-09-24 al salir el bloque del 08-25
+  2026-09-23 al salir el bloque del 08-24, el 2026-09-24 al salir el bloque del 08-25, y de nuevo el
+  2026-09-25 al salir el bloque del 08-26
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Veintitrés corridas.
+  fuente/fecha.)* Veinticuatro corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -5131,40 +5200,12 @@ separado.
   vigésima corrida de intuición (entradas 55-57: F-237 comparación intra-industria diseño→desempeño
   financiero, F-238 efecto directo vs. moderador en capacidad diseño-ingeniería, F-349 mecanismo
   operativo del "dial" de EviCore para denegar reclamos sin que el asegurador cliente lo sepa) — acotó
-  tesis 10, 21 y 23 sin cambiar confianza.
-- **2026-08-26** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo
-  fast-forward de la corrida de ayer, working tree limpio) y verifiqué `research/fuentes/codice.md`
-  por conteo directo: **468 filas, F-1 a F-468 sin huecos**, mismo tope exacto que procesó la corrida
-  de ayer (2026-08-25) — **cero fuentes nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/
-  `/gossip`/`/marketer` desde entonces, decimotercer día seguido sin cambios sustanciales en el
-  ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con la evidencia
-  vigente y no forcé ningún matiz solo por completar el paso. Sí corrió la rutina diaria de intuición
-  (vigesimoprimera corrida desde el 2026-08-06): de 136 fuentes 🟢A confirmadas por conteo propio en
-  el ledger, 57 ya tenían lectura profunda del Lobo — de las 79 restantes elegí 3 al azar puro
-  (`shuf`): F-63 (protocolo de validación mixto de Omaolo, JMIR Research Protocols — ya citada en el
-  node de salud como plantilla de diseño de validación), F-178 (Guitart & Stremersch 2021, contenido
-  informativo vs. emocional en TV, *JMR* — ya citada para matizar imagen aspiracional vs. bullets en
-  material de venta) y F-340 (Sinaiko, Landrum & Chernew 2017, red por niveles, *Health Affairs* — ya
-  citada en documento externo del usuario sobre steering de proveedor). Las tres bloqueadas por el
-  proxy en su URL directa (ncbi.nlm.nih.gov, researchprotocols.org, journals.sagepub.com,
-  healthaffairs.org, commonwealthfund.org); reconstruidas vía cobertura académica y periodística de
-  búsqueda dirigida que confirma detalle nuevo no capturado en el resumen de una línea de cada una.
-  Sumé las entradas 58, 59 y 60 de Intuición acumulada: (58) F-63 es el protocolo metodológico detrás
-  de los números de Omaolo que ya sostenían tesis 10 (F-42) — agrega que la validación de seguridad de
-  un triage necesita viñetas construidas a propósito para la cola de casos raros/agudos, no solo
-  muestreo real, porque esa cola es justamente la que un muestreo real casi nunca captura; (59) F-178
-  separa "qué mueve búsqueda" de "qué mueve venta" en contenido informativo vs. emocional, y ambos
-  dependen del tier de precio del producto — matiza la recomendación de material visual de venta
-  consultiva, que debe condicionarse al tier del producto y al objetivo de la pieza, no aplicarse
-  parejo; (60) F-340 tiene un límite de mecanismo que el 5% de ahorro agregado no mostraba: el tiering
-  de precio dirige bien a clientes nuevos sin relación establecida, pero no rompe relaciones ya
-  existentes — acota cómo proyectar el ahorro esperado de cualquier palanca de tiering/derivación que
-  el proyecto diseñe. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el
-  mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque las
-  tres entradas de hoy sí acotan el alcance de tesis 9, 10 y de la conexión de material visual de venta
-  consultiva. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
-  Bitácora con 19 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar
-  todavía.
+  tesis 10, 21 y 23 sin cambiar confianza. **2026-08-26** — sin cambios sustanciales en el ledger
+  (F-468, decimotercer día seguido); vigesimoprimera corrida de intuición (entradas 58-60: F-63
+  viñetas de cola rara/aguda para validar seguridad de triage, F-178 contenido informativo vs.
+  emocional condicionado por tier de precio, F-340 tiering de red dirige bien a clientes nuevos pero
+  no rompe relaciones ya existentes) — acotó tesis 9, 10 y la conexión de material visual de venta
+  consultiva sin cambiar confianza.
 - **2026-08-27** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo fast-forward
   6324fc0→e68ecd4, el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos**, y **136 filas
@@ -6368,3 +6409,48 @@ separado.
   matizan la trazabilidad de dos citas del node de diseño/innovación (F-285) y refuerzan tesis 21.
   Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días
   de historial (2026-08-26 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.
+- **2026-09-25** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward limpio de la corrida de ayer) y verifiqué `research/fuentes/codice.md` por conteo
+  directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto que las
+  últimas 25 corridas, **cero fuentes nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/
+  `/gossip`/`/marketer` desde entonces, cuadragésimo cuarto día seguido sin cambios sustanciales en el
+  ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna quedó desalineada con la
+  evidencia y no forcé ningún matiz de confianza solo por completar el paso — la revisión profunda de
+  `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de
+  este proceso diario; ya lleva cuarenta y cuatro días sin correr). **Poda de bitácora:** el bloque
+  "2026-08-26" salió por completo de la ventana de ~30 días (cutoff ≈2026-08-26) — lo fusioné con el
+  bloque "2026-08-01 a 2026-08-25" en un resumen ampliado "2026-08-01 a 2026-08-26"; no se pierde
+  ningún dato porque el detalle de cada tesis e intuición de ese día ya vive en sus propias secciones
+  con fecha. **La rutina diaria de intuición sí pudo correr hoy, con el nivel 🔵B todavía en curso:**
+  recalculé por script el universo 🔵B del ledger con el filtro estricto (fila cuya rigurosidad
+  *empieza* con 🔵B, sin contar filas mixtas como F-333): **76 filas** — la corrida de ayer (09-24)
+  había reportado 79, una cifra que no cuadra con que el ledger siguiera fijo en F-468 desde hace 44
+  días; recontar hoy con script limpio da 76, el mismo número que las corridas del 09-22 y 09-23 —
+  documento la discrepancia como probable error de cálculo de la corrida de ayer, no como fuente nueva
+  (el conteo total del ledger, 468, sí se verificó sin ambigüedad las tres veces). Contra
+  `fuentes_leidas_lobo.md` (11 ya leídas de este nivel tras las corridas de los cuatro días previos:
+  F-104, F-32, F-359, F-37, F-194, F-7, F-256, F-309, F-285, F-308, F-132) — **65 pendientes** — y
+  elegí 3 al azar sin reemplazo (Python `random.shuffle`, sin semilla fija): F-383, F-105 y F-360. Las
+  tres bloqueadas por el proxy en su URL directa (dl.acm.org, about.kaiserpermanente.org,
+  mckinsey.com); `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las tres vía cobertura
+  convergente (resumen propio de ACM Digital Library con el escenario ilustrativo completo para F-383,
+  Becker's Hospital Review + Fierce Healthcare con el desglose financiero exacto para F-105, el propio
+  artículo de McKinsey con el ejemplo de partnership ride-hailing + microseguro para F-360), no solo el
+  resumen de una línea ya citado. Sumé las entradas 145, 146 y 147 de Intuición acumulada: (145) F-383
+  trae el escenario concreto de dos colaboradores viendo interfaces generativas distintas y perdiendo
+  coordinación — más contundente que el principio abstracto de consistencia ya citado — y de paso
+  recuperé la autoría real (Okopnyi, Nordberg & Guribye) que el ledger tenía sin verificar, disponible
+  para que `cronista` la corrija; (146) F-105 muestra que la caída de ingreso neto de Kaiser
+  (USD 12.9B→9.3B) fue por la desaparición de una ganancia de M&A de una sola vez (USD 6.8B en 2024),
+  mientras el ingreso operativo más que se duplicó (USD 569M→1.4B, margen 1.1%) — matiza sin cambiar de
+  nivel el Riesgo ya registrado sobre esperar rentabilidad rápida de modelos de atención primaria
+  basada en valor: el margen de Kaiser mejoró, no empeoró, aunque sigue delgado bajo presión de costo;
+  (147) F-360 confirma la cifra de mix de canal de Asia-Pacífico ya citada y trae el ejemplo concreto
+  que faltaba (partnership de una insurtech de vida con una plataforma de ride-hailing para microseguro
+  de enfermedad crítica dirigido a conductores) — conecta como instinto, sin tesis numerada propia, con
+  las variables `trabajo_plataforma_digital` y `propension_microseguro` de `lapuerta`. Ninguna tesis de
+  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque
+  las tres entradas de hoy matizan un Riesgo existente y aportan una corrección de autoría disponible
+  para `cronista`. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
+  Bitácora con 30 días de historial (2026-08-27 a hoy) tras la poda de hoy — cumple la ventana de ~30
+  días.
