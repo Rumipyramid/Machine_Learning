@@ -5040,6 +5040,86 @@ accionable.
   plataforma gig es el mecanismo de distribución concreto que esas dos variables anticipan como
   relevante, con evidencia externa (no peruana) de que ya se está probando en la región.
 
+### 148. El seguro no compite contra la desprotección — compite contra una jerarquía informal de defensa financiera ya instalada
+La lectura a fondo de F-1 (SBS, 2023, encuesta a 1,223 hogares en cinco regiones —Arequipa, Callao,
+Junín, Lima Metropolitana, Piura, urbano y rural) trae dos hallazgos que el resumen de una línea del
+ledger no capturaba. Primero: frente a un gasto imprevisto o ante un sismo, la gente recurre primero a
+ahorro propio, préstamo de familiares/amigos o recorte de gasto — y solo después, si eso falla, a una
+entidad financiera; el seguro no es la alternativa por defecto, es la última en la fila. Segundo: 77%
+de los encuestados considera importante que la aseguradora tenga el respaldo de otra institución — un
+dato de confianza medible y accionable, no solo la intuición ya conocida de "el broker ayuda".
+**Heurística de decisión:** antes de diseñar cualquier campaña o producto contra la
+desconfianza/desprotección, mapear qué mecanismo informal de defensa financiera ya usa el segmento
+(ahorro, red familiar, recorte de gasto) — el seguro no llena un vacío, desplaza una jerarquía
+existente, y solo entra cuando esas tres capas fallan o resultan insuficientes.
+- **Fuente:** F-1 (SBS — Superintendencia de Banca, Seguros y AFP del Perú, "Estudio sobre Conocimiento
+  y Percepción de la Demanda de Seguros", 2023, 🔵B — regulador oficial, encuesta con metodología
+  publicada, actualiza la encuesta de 2012)
+- **Leído a fondo:** 2026-09-26 (sbs.gob.pe bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — tamaño y cobertura geográfica de la muestra, jerarquía de respuesta ante
+  imprevistos/sismo y la cifra de 77% de respaldo institucional, ninguno capturado en el resumen de una
+  línea ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis numérica; matiza tesis 1
+  (la desconfianza es vacío de información, no veredicto formado) con el mecanismo competidor concreto
+  (jerarquía de defensa informal) y tesis 4 (brecha sísmica) con la misma jerarquía aplicada al riesgo
+  de desastre; el dato de 77%/respaldo institucional refuerza sin tesis numerada propia el argumento de
+  bancaseguros/distribución de tesis 16 (el respaldo de un tercero de confianza — banco, empleador — es
+  palanca medible, no solo intuición).
+
+### 149. Un mercado de seguro de salud puede triplicar sus primas en una década y aun así ver duplicarse su brecha de protección en dólares — crecer y cerrar la brecha son trayectorias independientes
+La lectura a fondo de F-207 (Swiss Re Institute, seguro de salud comercial en China) confirma la
+desaceleración ya citada (8.2% en 2024 vs. CAGR de 20.5% en 2016-19) y agrega el dato que el resumen de
+una línea no traía: las primas comerciales de salud pasaron de un CAGR de 20% desde 2014 hasta alcanzar
+US$133.900M en 2023 — un mercado que casi se triplicó en una década — y sin embargo la brecha de
+protección de salud (en términos de prima) llegó a US$377.000M en 2024, aproximadamente el doble que en
+2014. **Heurística de decisión:** una cifra de "el mercado crece X%" no dice nada por sí sola sobre si
+la brecha de protección se está cerrando o ampliando — el costo/necesidad subyacente puede crecer más
+rápido que la penetración incluso en el mercado que más rápido crece, así que cualquier lectura de
+"este mercado está madurando bien" exige pedir la cifra de brecha en paralelo a la de crecimiento,
+nunca una sola.
+- **Fuente:** F-207 (Swiss Re Institute, "The growing role of commercial health insurance in China",
+  s.f., 🔵B — instituto de investigación de una reaseguradora global, no independiente del sector que
+  analiza)
+- **Leído a fondo:** 2026-09-26 (swissre.com bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — cifra de primas 2023 (US$133.900M, CAGR 20% desde 2014) y brecha de protección 2024
+  (US$377.000M, ~2x la de 2014), ninguna capturada en el resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis numérica; matiza tesis 17
+  (la rentabilidad real no viene de suscribir riesgo) con una advertencia de escala — el riesgo de
+  selección adversa que Swiss Re ya señala como creciente en China es el mismo mecanismo que erosiona
+  el margen de suscripción del que tesis 17 dice hay que cuidarse; refuerza sin tesis numerada propia
+  la lectura de tesis 11 (el ciclo de rentabilidad del seguro global está en su mejor momento) con el
+  matiz de que "mejor momento" y "brecha cerrándose" tampoco son la misma variable, ni siquiera en un
+  mercado que crece rápido.
+
+### 150. La fricción positiva que mejora comprensión de seguros no es cualquier interactividad — es una tarea que obliga a operar con los propios números/decisiones del cliente
+La lectura a fondo de F-231 (SOA Research Institute + RGA, dos RCT de EE.UU., N=2,001 y N=2,005)
+confirma las cifras ya citadas en tesis 20 (21% y 28% de mejora en comprensión) y trae el mecanismo
+explícito que el resumen de una línea no nombraba: el diseño ganador combina deliberadamente principios
+de Sistema 1 (lenguaje simple, información saliente arriba) con "fricción positiva" de Sistema 2 —
+específicamente, pedir al participante que liste a sus beneficiarios y usar una calculadora que evalúa
+su necesidad de cobertura. El grupo expuesto a esa fricción positiva puntuó 59% más alto que el grupo
+control en preguntas de conceptos y terminología — muy por encima del grupo que solo recibió lenguaje
+simplificado sin la tarea. **Heurística de decisión:** cuando el objetivo es comprensión real (no solo
+satisfacción declarada), no toda interactividad rinde igual — la palanca que funciona es una tarea que
+fuerza a la persona a aplicar la información a su propia situación concreta (sus beneficiarios, su
+necesidad de cobertura), no cualquier elemento interactivo genérico; esto es la misma familia de
+mecanismo que la intuición 63 (F-225, fluidez de procesamiento con reverso deliberado) aplicada aquí
+con una técnica concreta y medible para seguros.
+- **Fuente:** F-231 (SOA Research Institute & RGA, equipo de Behavioral Science, "Searching for
+  Simplicity: Improving Customer Comprehension in Life Insurance Through Behavioral Science", 2024,
+  🔵B — dos RCT declarados, instituto de investigación de gremio actuarial + reasegurador, revisión por
+  pares no verificada)
+- **Leído a fondo:** 2026-09-26 (rgare.com bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — soa.org, theactuarymagazine.org y el press release de PR Newswire — el marco explícito
+  Sistema 1/Sistema 2, la tarea de listar beneficiarios + calculadora como "fricción positiva", y el
+  desglose de 59% en preguntas de terminología, ninguno capturado en el resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis numérica; refuerza con
+  mecanismo explícito tesis 20 (saliencia+calculadora, no lenguaje simple solo, revierte el freno de
+  precio percibido en vida individual) y conecta con la intuición 63 (F-225) como la misma familia de
+  mecanismo — fricción deliberada que fuerza Sistema 2 — aplicada aquí con la técnica operacional
+  concreta (listar beneficiarios) que el Playbook del Asesor podría adoptar en su sección de
+  FAQs/glosario.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5090,7 +5170,7 @@ accionable.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-26** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-27** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -5102,12 +5182,12 @@ accionable.
   2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, una vez más
   el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, el
   2026-09-21 al salir el bloque del 08-22, el 2026-09-22 al salir el bloque del 08-23, el
-  2026-09-23 al salir el bloque del 08-24, el 2026-09-24 al salir el bloque del 08-25, y de nuevo el
-  2026-09-25 al salir el bloque del 08-26
+  2026-09-23 al salir el bloque del 08-24, el 2026-09-24 al salir el bloque del 08-25, el
+  2026-09-25 al salir el bloque del 08-26, y de nuevo el 2026-09-26 al salir el bloque del 08-27
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Veinticuatro corridas.
+  fuente/fecha.)* Veinticinco corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -5205,43 +5285,13 @@ accionable.
   viñetas de cola rara/aguda para validar seguridad de triage, F-178 contenido informativo vs.
   emocional condicionado por tier de precio, F-340 tiering de red dirige bien a clientes nuevos pero
   no rompe relaciones ya existentes) — acotó tesis 9, 10 y la conexión de material visual de venta
-  consultiva sin cambiar confianza.
-- **2026-08-27** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo fast-forward
-  6324fc0→e68ecd4, el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos**, y **136 filas
-  con rigor 🟢A** — mismo tope exacto que procesó la corrida de ayer (2026-08-26) — **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  decimocuarto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
-  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el
-  paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`,
-  cada ~3 días, ya lleva quince días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de
-  este proceso diario). Sí corrió la rutina diaria de intuición (vigesimosegunda corrida desde el
-  2026-08-06): de 136 fuentes 🟢A confirmadas por conteo propio en el ledger, 60 ya tenían lectura
-  profunda del Lobo — de las 76 restantes elegí 3 al azar puro (Python `random.sample`, sin `--seed`):
-  F-154 (chatbot de seguros vía ML explicable + IPMA, MDPI *Electronics* 2025 — ya citado solo como
-  "metodológicamente más sofisticado que un cuestionario simple"), F-108 (Direct Primary Care, *JGIM*
-  2024 — ya citado solo por la cifra agregada de ahorro en Medicare) y F-225 (Alter & Oppenheimer 2009,
-  fluidez de procesamiento — ya citado como sustento del Principio 1 del Playbook del Asesor). Las tres
-  bloqueadas por el proxy en su URL directa (mdpi.com, link.springer.com/pubmed.ncbi.nlm.nih.gov,
-  doi.org/journals.sagepub.com); reconstruidas vía búsqueda dirigida (ResearchGate para F-154 y F-225,
-  PubMed/Concierge Medicine Today para F-108, más la literatura relacionada de los mismos autores —
-  Alter, Oppenheimer, Epley & Eyre 2007, "Overcoming Intuition" — para el reverso de F-225) que
-  confirman detalle nuevo, no solo el resumen ya citado. Sumé las entradas 61, 62 y 63 de Intuición
-  acumulada: (61) el Importance-Performance Map Analysis separa qué atributo importa de cuál rinde mal
-  hoy — en chatbots de seguros el cuadrante que justifica inversión es confianza e influencia social, no
-  la utilidad percibida, que ya rinde bien; sin tesis numerada propia, conecta con tesis 9/10/23 y 18;
-  (62) el ahorro de Direct Primary Care depende de que la membresía fija cambie el incentivo del médico
-  (menos derivación cara), no de que el canal de acceso sea más barato — acota tesis 10 y 17 con un
-  requisito de diseño para cualquier modelo de atención primaria alternativa del proyecto; (63) la
-  fluidez de procesamiento tiene un reverso deliberado y documentado (dificultad metacognitiva activa
-  escrutinio analítico, aunque no garantiza mejor decisión) — matiza tesis 1 y el Principio 1 del
-  Playbook (tesis 18) con un límite de alcance que ninguna tenía: la claridad sirve para convertir, la
-  fricción intencional sirve para proteger al cliente de una decisión apresurada, y son palancas
-  distintas para objetivos distintos. Ninguna tesis de negocio cambió de confianza numérica por esta
-  corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las tesis
-  existentes, aunque las tres entradas de hoy sí acotan el alcance de tesis 1, 9, 10, 17, 18 y 23.
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 20 días
-  de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+  consultiva sin cambiar confianza. **2026-08-27** — sin cambios sustanciales en el ledger (F-468,
+  decimocuarto día seguido); vigesimosegunda corrida de intuición (entradas 61-63: F-154
+  Importance-Performance Map Analysis en chatbots de seguros — el cuadrante que justifica inversión
+  es confianza e influencia social, no la utilidad percibida, F-108 el ahorro de Direct Primary Care
+  depende del incentivo al médico, no del canal de acceso, F-225 la fluidez de procesamiento tiene
+  un reverso deliberado — dificultad metacognitiva activa escrutinio analítico) — acotó tesis 1, 9,
+  10, 17, 18 y 23 sin cambiar confianza.
 - **2026-08-28** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo fast-forward
   6324fc0→29b2246, el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos** — mismo tope
@@ -6454,3 +6504,41 @@ accionable.
   para `cronista`. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
   Bitácora con 30 días de historial (2026-08-27 a hoy) tras la poda de hoy — cumple la ventana de ~30
   días.
+- **2026-09-26** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward limpio hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 26 corridas, **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo quinto día seguido
+  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
+  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso —
+  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina
+  de `cronista`, no de este proceso diario; ya lleva cuarenta y cinco días sin correr). **Poda de
+  bitácora:** el bloque "2026-08-27" salió por completo de la ventana de ~30 días (cutoff ≈2026-08-27)
+  — lo fusioné con el bloque "2026-08-01 a 2026-08-26" en un resumen ampliado "2026-08-01 a
+  2026-08-27"; no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive
+  en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr hoy, con el nivel
+  🟢A ya agotado por completo (134/134 leídas) y el nivel 🔵B en curso:** recalculé por script el
+  universo 🔵B del ledger con el filtro estricto (fila cuya rigurosidad *empieza* con 🔵B, sin contar
+  filas mixtas como F-333): **76 filas** — contra `fuentes_leidas_lobo.md` (14 ya leídas de este nivel
+  tras las corridas de los cinco días previos: F-104, F-32, F-359, F-37, F-194, F-7, F-256, F-309,
+  F-285, F-308, F-132, F-383, F-105, F-360) — **62 pendientes** — y elegí 3 al azar sin reemplazo
+  (Python `random.shuffle`, sin semilla fija): F-1, F-231 y F-207. Las tres bloqueadas por el proxy en
+  su URL directa (sbs.gob.pe, rgare.com, swissre.com); `WebSearch` sí funcionó y permitió reconstruir
+  detalle nuevo en las tres vía cobertura convergente (búsqueda directa sobre la ficha técnica de la
+  encuesta SBS 2023 para F-1; soa.org, theactuarymagazine.org y PR Newswire para F-231; cobertura de
+  prensa especializada de reaseguros para F-207), no solo el resumen de una línea ya citado. Sumé las
+  entradas 148, 149 y 150 de Intuición acumulada: (148) F-1 trae la jerarquía informal de defensa
+  financiera (ahorro → familia → recorte de gasto → recién entidad financiera) que la gente ya usa antes
+  de considerar un seguro, y la cifra de que 77% exige respaldo institucional de un tercero — matiza
+  tesis 1 y 4 con el mecanismo competidor concreto y refuerza sin tesis numerada propia el argumento de
+  bancaseguros de tesis 16; (149) F-207 muestra que las primas de salud comercial en China casi se
+  triplicaron en una década (CAGR 20%, 2014-2023) mientras la brecha de protección se duplicaba en el
+  mismo periodo (US$377.000M en 2024) — crecimiento de mercado y cierre de brecha son trayectorias
+  independientes, matiza tesis 17 y 11 sin cambiar su confianza; (150) F-231 nombra el mecanismo
+  explícito detrás de la cifra ya citada en tesis 20: "fricción positiva" de Sistema 2 (listar
+  beneficiarios + calculadora de necesidad) que sube 59% la comprensión de terminología, la misma
+  familia de mecanismo que la intuición 63 (F-225) aplicada con una técnica operacional concreta para
+  seguros. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
+  paralelo de intuición, aunque las tres entradas de hoy matizan tesis 1, 4, 11, 16, 17 y 20. Actualicé
+  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
+  historial (2026-08-28 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.

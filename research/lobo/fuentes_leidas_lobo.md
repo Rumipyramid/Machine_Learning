@@ -165,3 +165,6 @@
 | F-383 | 🔵 B | 2026-09-25 | Intuición 145 — un escenario concreto de ruptura multi-usuario es prueba de falsación más dura que un principio abstracto de diseño |
 | F-105 | 🔵 B | 2026-09-25 | Intuición 146 — cuando ingreso neto y margen operativo se mueven en direcciones opuestas, sospechar de un ítem de una sola vez |
 | F-360 | 🔵 B | 2026-09-25 | Intuición 147 — una estadística de mix de canal sin su ejemplo concreto no tiene jugada asociada |
+| F-1 | 🔵 B | 2026-09-26 | Intuición 148 — el seguro no compite contra la desprotección, compite contra una jerarquía informal de defensa financiera (ahorro → familia → recorte de gasto) ya instalada |
+| F-207 | 🔵 B | 2026-09-26 | Intuición 149 — un mercado de seguro de salud puede triplicar sus primas en una década y aun así ver duplicarse su brecha de protección; crecer y cerrar la brecha son trayectorias independientes |
+| F-231 | 🔵 B | 2026-09-26 | Intuición 150 — la fricción positiva que mejora comprensión de seguros no es cualquier interactividad; es una tarea que obliga a operar con los propios números/decisiones del cliente |
