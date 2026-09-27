@@ -205,6 +205,25 @@ Y cuando la lectura dice que algo va a pasar, el veredicto dice **qué, cuándo 
 condiciones** — no "el asunto no perfecciona", sino "no va a pasar nada por esta vía, y la
 fecha en que eso se confirma es tal".
 
+### "Algo pasa" no es un veredicto — decí QUÉ
+
+Error detectado en uso (2026-09-27): llegar a "hay perfección" y detenerse ahí. La horaria
+**sí** determina la clase de suceso, y dejarlo en "algo va a ocurrir" es abandonar el método a
+mitad de camino. Seis determinadores, y se recorren todos:
+
+| Qué se lee | Qué determina |
+|---|---|
+| **Naturaleza de los planetas que perfeccionan** | La clase de suceso. Mercurio = palabra, mensaje, conversación, algo que se *dice*. Venus = afecto, atracción, placer. Marte = acto, conflicto, cuerpo, ruptura. Luna = lo cotidiano, el cuerpo, lo doméstico. Sol = reconocimiento, hacerse público. Saturno = pérdida, demora, formalización. Júpiter = ampliación, permiso, exceso. |
+| **Cuál se aplica a cuál** | **Quién inicia.** El planeta más rápido se aplica, y el que se aplica es el que se mueve hacia el otro: el que busca, pide o declara. Esto se dice siempre, con nombre propio. |
+| **El signo** | El carácter del suceso: público o privado, rápido o lento, dicho o callado. Fijo = lento y persistente; cardinal = arranca; mutable = se dispersa. |
+| **La casa** | En qué terreno ocurre — y se juzga con las casas de la **carta original**, no de la fecha futura. |
+| **El regente del signo donde perfecciona** | **Quién dispone del resultado.** El señor del signo dispone de los planetas que están en él: esa persona decide qué se hace con lo ocurrido, aunque no lo haya provocado. |
+| **Aspectos posteriores al grado exacto** | Quién llega después y cuándo. Se calcula. |
+
+Y se dice también **qué NO indica**: si los significadores son de palabra, el veredicto aclara
+que no hay testimonio de acto físico. Dejar que el consultante complete el hueco con lo que
+desea es una forma de imprecisión.
+
 ## Las tres voces
 - **I Ching** — Hexagrama N (Nombre) → M (Nombre) · línea(s) mutante(s): qué dice, en 2-3 frases.
 - **El cielo** — lo que manda hoy: Luna, aspecto exacto principal, retrógrados que importan.
