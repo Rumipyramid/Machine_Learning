@@ -168,3 +168,6 @@
 | F-1 | 🔵 B | 2026-09-26 | Intuición 148 — el seguro no compite contra la desprotección, compite contra una jerarquía informal de defensa financiera (ahorro → familia → recorte de gasto) ya instalada |
 | F-207 | 🔵 B | 2026-09-26 | Intuición 149 — un mercado de seguro de salud puede triplicar sus primas en una década y aun así ver duplicarse su brecha de protección; crecer y cerrar la brecha son trayectorias independientes |
 | F-231 | 🔵 B | 2026-09-26 | Intuición 150 — la fricción positiva que mejora comprensión de seguros no es cualquier interactividad; es una tarea que obliga a operar con los propios números/decisiones del cliente |
+| F-70 | 🔵 B | 2026-09-27 | Intuición 151 — un riesgo regulatorio citado por escala agregada puede estar ocultando que el sujeto investigado ya es la propia compañía (Rímac Seguros, expediente propio desde jul-2025), no solo un competidor de referencia |
+| F-387 | 🔵 B | 2026-09-27 | Intuición 152 — una revisión oficial que concluye "funciona, pero depende de las condiciones institucionales" es más útil que una que promete un efecto universal del método |
+| F-431 | 🔵 B | 2026-09-27 | Intuición 153 — un mito de tasa de fracaso puede sobrevivir 40+ años a su propia refutación empírica porque a alguien le conviene la versión alarmista, no porque falte evidencia |

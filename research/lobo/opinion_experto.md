@@ -213,19 +213,33 @@ sido inflar artificialmente el número de fuentes independientes detrás de tesi
   conflicto de interés del financiador del RCT antes de usarlo como prueba neutral en un deck.
 - **Actualizado:** 2026-08-03
 
-### 8. El riesgo regulatorio por contacto comercial no consentido en seguros peruanos ya no es teórico — es expediente activo, y ya tocó al sector
+### 8. El riesgo regulatorio por contacto comercial no consentido en seguros peruanos ya no es teórico — es expediente activo, y ya tocó a Rimac directamente
 INDECOPI fiscaliza con IA más de 7 millones de audios de llamadas comerciales al
 año y ya sancionó 26 empresas en 2025 por S/2.6M. Lo que cambia el cálculo de
 riesgo: **Pacífico Seguros** está bajo investigación directa (50,000 audios de su
 call center Impulsa365 analizados) y BBVA fue sancionado dos veces, la segunda
-tras pedir explícitamente ser excluido de la base de datos — la corrección
-regulatoria ya alcanzó a un competidor directo del ramo seguros, no es un riesgo
-de otro sector que "podría" llegar a seguros.
+tras pedir explícitamente ser excluido de la base de datos.
+**[Actualización 2026-09-27 — lectura a fondo de F-70, matiz sin fuente propia registrada todavía]**
+La corrección regulatoria no se quedó en un competidor: la Comisión de Protección al Consumidor N°3
+de INDECOPI abrió proceso sancionador contra **Rímac Seguros y Reaseguros junto con BBVA Perú desde
+el 1 de julio de 2025**, por más de 600,000 llamadas analizadas con IA sin consentimiento verificable
+— misma multa potencial de hasta 450 UIT (~S/2.4M). Esto no es un riesgo hipotético para "el sector"
+ni siquiera solo para el competidor directo (Pacífico): es un expediente abierto contra la propia
+compañía, con el mismo mecanismo de fiscalización (IA sobre grabaciones) que ya produjo una sanción en
+firme contra Scotiabank en abril de 2026 (202.96 UIT, S/1.1M+) tras un proceso de apertura a resolución
+de ~7 meses. Esto no está aún como su propio F-n en el ledger — lo encontré reconstruyendo el contexto
+de F-70 vía `WebSearch` (Infobae, Forbes Perú, El Comercio, Andina, consumidor.gob.pe — la propia
+plataforma de reclamos de INDECOPI — convergen en la misma fecha y cifra), no vía lectura directa de una
+fuente ya registrada; recomiendo que `cronista` lo registre como fuente propia en la próxima corrida.
 - **Evidencia:** F-70 (🔵B, INDECOPI, escala de fiscalización), F-117 (🔵B,
   Pacífico Seguros bajo investigación), F-118 (🔵B, caso BBVA + texto legal),
-  F-138 (🔵B, segunda sanción BBVA)
-- **Confianza:** Alta
-- **Actualizado:** 2026-07-20
+  F-138 (🔵B, segunda sanción BBVA); expediente propio de Rímac Seguros — verificado por convergencia de
+  múltiples medios (jul-2025) pero **no registrado aún en `codice.md`** como F-n propio.
+- **Confianza:** Alta en el patrón de riesgo y su escala (INDECOPI mueve de apertura a sanción en firme
+  en ~7 meses); Alta también en que el expediente de Rímac es real (convergencia de 5+ medios
+  independientes incluida la plataforma oficial de INDECOPI), con el único tope de que aún no tiene su
+  propio F-n auditable en el ledger del proyecto.
+- **Actualizado:** 2026-09-27
 
 ### 9. El modelo farmacia-frente-primario + triage IA + derivación tiene tracción estatal y de infraestructura real en Perú, no es apuesta especulativa
 Tres señales independientes convergen: (a) el Congreso tiene en debate el PL
@@ -955,12 +969,16 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   consumidor" sin acompañarla de cambios reales de producto (deducible fijo en vez de
   coaseguro, tesis 2; icon arrays, tesis 12) corre el riesgo de leerse —o de funcionar—
   como desvío de responsabilidad hacia el cliente.
-- **Contacto comercial no consentido, con precedente ya dentro del sector
-  seguros.** Tesis 8: Pacífico Seguros bajo investigación directa, BBVA
-  sancionado dos veces, INDECOPI escaneando millones de audios con IA. Cualquier
-  call center o campaña saliente sin consentimiento explícito y verificable hoy
-  arriesga multa de hasta 450 UIT y una orden de cese que borra bases de datos
-  completas, incluidas las de terceros (agencias, referidos).
+- **Contacto comercial no consentido — Rímac Seguros tiene expediente propio
+  abierto, no solo un precedente de sector.** Tesis 8 (actualizada 2026-09-27): Rímac
+  Seguros y Reaseguros está bajo proceso sancionador de INDECOPI desde julio de 2025
+  (junto con BBVA, 600,000+ llamadas analizadas con IA), además de Pacífico Seguros
+  bajo investigación directa y BBVA sancionado dos veces. INDECOPI ya mostró que mueve
+  de apertura a sanción en firme en ~7 meses (caso Scotiabank). Cualquier call center o
+  campaña saliente sin consentimiento explícito y verificable hoy arriesga multa de
+  hasta 450 UIT y una orden de cese que borra bases de datos completas, incluidas las
+  de terceros (agencias, referidos) — y en este caso no es un riesgo por gestionar, es
+  uno ya en curso.
 - **Lanzar un triage con IA sin shadow-mode previo.** Tesis 10: el precedente
   Babylon Health (USD 4.2B → bancarrota) y la precisión real de ~45% de los
   symptom-checkers en producción hacen que cualquier lanzamiento sin 60-90 días
@@ -1104,10 +1122,6 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   con IA) como dato medido.** Corrección propia (tesis 21, nota 2026-08-03): esa cifra específica
   no tiene fuente primaria — la retiré. Lo que sí hay evidencia real: el revisor con más experiencia
   acumulada escrutina **menos**, no más, un hallazgo que invierte lo que yo mismo asumí en julio.
-- **Tratar "agregar explicabilidad" a un asistente o agente de IA como solución genérica de
-  confianza.** Tesis 22: la explicabilidad tiene correlación moderada, no dominante, con la
-  confianza — y sin verificabilidad puede producir sobre-confianza en vez de calibrarla,
-  especialmente si se despliega parejo en decisiones fáciles y difíciles por igual.
 - **Tratar "agregar explicabilidad" a un asistente o agente de IA como solución genérica de
   confianza.** Tesis 22: la explicabilidad tiene correlación moderada, no dominante, con la
   confianza — y sin verificabilidad puede producir sobre-confianza en vez de calibrarla,
@@ -5120,6 +5134,95 @@ con una técnica concreta y medible para seguros.
   concreta (listar beneficiarios) que el Playbook del Asesor podría adoptar en su sección de
   FAQs/glosario.
 
+### 151. Un riesgo regulatorio citado por su escala agregada ("7 millones de audios") puede estar ocultando que el sujeto investigado ya es la propia compañía, no un competidor de referencia
+F-70 se citaba hasta hoy solo por la cifra de fiscalización de INDECOPI (7M de audios,
+26 empresas sancionadas). Leerlo a fondo — reconstruyendo el contexto vía `WebSearch`
+porque gob.pe está bloqueado por el proxy — encontró que el universo fiscalizado
+nombra explícitamente los tres sectores bajo lupa (bancario, seguros, telecom) y que,
+más importante, **Rímac Seguros y Reaseguros** tiene proceso sancionador propio abierto
+desde julio de 2025 (junto con BBVA, 600,000+ llamadas), no solo Pacífico Seguros como
+tesis 8 registraba hasta ahora. También confirmó que INDECOPI construyó su capacidad de
+auditoría con IA **antes** de que la Ley 32323 que endurece la sanción entrara en
+vigencia (investigaciones iniciadas en 2024, ley promulgada después) y que el tiempo
+real de apertura a sanción en firme es de ~7 meses (caso Scotiabank: proceso abierto
+sept-2025, resuelto abr-2026). **Heurística de decisión:** cuando una tesis de riesgo
+regulatorio cita una escala agregada o un "competidor del sector" como evidencia,
+releer la fuente para verificar si el sujeto exacto ya es la propia organización —
+la escala agregada puede estar a un paso de dejar de ser una analogía y pasar a ser
+un hecho propio; y verificar si la capacidad de fiscalización ya existía antes de la
+ley formal, porque eso cambia el reloj de "cuándo llega el riesgo" de "cuando se
+apruebe la norma" a "ya, con la norma como acelerador, no como origen".
+- **Fuente:** F-70 (🔵B, INDECOPI, comunicado oficial, 2025)
+- **Leído a fondo:** 2026-09-27 (gob.pe bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — Infobae, Forbes Perú, El Comercio, Andina y `consumidor.gob.pe`, la propia
+  plataforma de reclamos de INDECOPI, convergen en la fecha jul-2025 y la cifra de 600,000+
+  audios contra Rímac y BBVA — ninguno de estos detalles estaba en el resumen de una línea
+  ya citado en el ledger)
+- **Conexión razonada, no forzada:** matiza directamente tesis 8 (actualizada hoy con este
+  hallazgo) y el Riesgo de "contacto comercial no consentido" — el expediente de Rímac no
+  tiene todavía su propio F-n en `codice.md`, recomendado para la próxima corrida de
+  `cronista`.
+
+### 152. Una revisión oficial de evidencia que concluye "funciona, pero depende de las condiciones institucionales" es más útil que una que promete un efecto universal del método
+F-387 (Public Design Evidence Review, Reino Unido) se citaba solo por su alcance y su
+desfase de publicación (~15 meses, corpus pre-IA generativa). Leído a fondo, el hallazgo
+central no es "el diseño público funciona" sino que el mismo diseño rinde muy distinto
+según las condiciones institucionales que lo rodean: liderazgo que valore la
+experimentación, equipos con tiempo/espacio real para entender el problema antes de
+diseñar, y sistemas de rendición de cuentas que toleren aprender de lo que no funcionó.
+La revisión se construyó de tres papers de literatura + un banco de casos + entrevistas
+con líderes de diseño, entre 2023 y 2025 — no es un solo estudio, es una síntesis
+deliberada de múltiples fuentes con ese mismo mensaje repetido. **Heurística de
+decisión:** antes de adoptar una práctica de diseño/innovación citando su evidencia de
+respaldo, separar si esa evidencia atribuye el resultado al **método en sí** o a las
+**condiciones organizacionales** bajo las que se ejecutó — copiar el método sin las
+condiciones (tiempo, mandato, tolerancia a iterar) es la forma más común de que una
+adopción interna no replique el resultado citado, y el riesgo no aparece en el material
+promocional del método, solo en la revisión de evidencia seria.
+- **Fuente:** F-387 (🔵B, Cabinet Office / Policy Design Community, Reino Unido,
+  revisión de literatura comisionada por gobierno, 2025)
+- **Leído a fondo:** 2026-09-27 (gov.uk bloqueado por el proxy del entorno; reconstruido vía
+  `WebSearch` — Digital Government Hub y los propios PDFs de `assets.publishing.service.gov.uk`
+  listados en resultados de búsqueda — el detalle de que la revisión combina tres literature
+  reviews + banco de casos + entrevistas, y la frase textual sobre qué habilita que el diseño
+  rinda, no estaban en el resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** no cambia la confianza de ninguna tesis numérica de
+  seguros; refuerza el estándar de escrutinio que tesis 21 ya aplica a cifras de ROI de
+  diseño, ahora extendido a cualquier "funciona" sin condiciones declaradas — aplica
+  igual de directo a cualquier apuesta de innovación/design thinking interna de Rimac.
+
+### 153. Un mito de tasa de fracaso puede sobrevivir 40+ años a su propia refutación empírica porque a alguien le conviene la versión alarmista, no porque falte evidencia
+F-431 (Castellion & Markham 2013) se citaba solo por la cifra correctora (30-49% de
+fracaso real vs. 80-95% del mito). Leído a fondo: la síntesis cubre 19 estudios
+empíricos de 1945 a 2004 — seis décadas, más de mil unidades de negocio — con el
+mismo veredicto consistente (~40%, hasta 49% en consumo masivo), y el propio título
+del paper nombra el mecanismo por el que el mito sobrevive pese a esa evidencia:
+*argumentum ad populum* (se acepta porque todos lo repiten, no porque se haya
+verificado) más interés propio de quien se beneficia de la versión más alarmante —
+la cifra de 80% le da más urgencia y justificación de presupuesto a cualquiera que
+venda un método para "evitar el fracaso". La búsqueda no localizó qué actor específico
+originó la cifra de 80%, pero sí confirma que se le ha atribuido falsamente incluso a
+Harvard Business School. **Heurística de decisión:** frente a cualquier estadística de
+fracaso/riesgo que circula sin fuente primaria rastreable y que justifica comprar un
+método, un consultor o un presupuesto de mitigación, presumir que puede estar
+inflada por el propio interés de quien la repite — y buscar activamente si existe una
+síntesis correctora publicada por la misma disciplina (como este paper) antes de
+adoptar la cifra alarmista por default; el mismo patrón ya se documentó en el node de
+diseño/innovación con el ROI del diseño y el "impuesto de verificación" (tesis 21).
+- **Fuente:** F-431 (🔵B, Castellion, G. & Markham, S. K., *Journal of Product
+  Innovation Management* 30(5), 2013 — síntesis peer-reviewed de 19 estudios primarios
+  1945-2004)
+- **Leído a fondo:** 2026-09-27 (onlinelibrary.wiley.com bloqueado por el proxy del
+  entorno; reconstruido vía `WebSearch` — ResearchGate, Semantic Scholar, EconBiz y
+  varios resúmenes de segunda fuente que citan el rango exacto 30-49% y el mecanismo de
+  *argumentum ad populum* + interés propio del título — el rango exacto de seis décadas
+  y "más de mil unidades de negocio" no estaba en el resumen de una línea ya citado)
+- **Conexión razonada, no forzada:** confirma sin cambiar confianza la tesis del node de
+  innovación ya registrada en `codice.md` bajo F-431 (desmonte del mito 80-95%); conecta
+  como la misma familia de intuición 111 (verificar separación de sesgo de publicación
+  vs. heterogeneidad real antes de citar un promedio) — aquí aplicado a un mito de
+  industria en vez de a un meta-análisis académico.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5170,7 +5273,7 @@ con una técnica concreta y medible para seguros.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-27** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-28** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
   entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
   detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
@@ -5183,11 +5286,12 @@ con una técnica concreta y medible para seguros.
   el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, el
   2026-09-21 al salir el bloque del 08-22, el 2026-09-22 al salir el bloque del 08-23, el
   2026-09-23 al salir el bloque del 08-24, el 2026-09-24 al salir el bloque del 08-25, el
-  2026-09-25 al salir el bloque del 08-26, y de nuevo el 2026-09-26 al salir el bloque del 08-27
+  2026-09-25 al salir el bloque del 08-26, el 2026-09-26 al salir el bloque del 08-27, y de nuevo el
+  2026-09-27 al salir el bloque del 08-28
   (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
   detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
   propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Veinticinco corridas.
+  fuente/fecha.)* Veintiséis corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -5291,47 +5395,12 @@ con una técnica concreta y medible para seguros.
   es confianza e influencia social, no la utilidad percibida, F-108 el ahorro de Direct Primary Care
   depende del incentivo al médico, no del canal de acceso, F-225 la fluidez de procesamiento tiene
   un reverso deliberado — dificultad metacognitiva activa escrutinio analítico) — acotó tesis 1, 9,
-  10, 17, 18 y 23 sin cambiar confianza.
-- **2026-08-28** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` trajo fast-forward
-  6324fc0→29b2246, el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos** — mismo tope
-  exacto que procesó la corrida de ayer (2026-08-27), **cero fuentes nuevas** registradas por `cronista`/
-  `/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, decimoquinto día seguido sin cambios
-  sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó desalineada con la
-  evidencia vigente y no forcé ningún matiz solo por completar el paso — el último bloque
-  "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada ~3 días, ya lleva
-  dieciséis días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de este proceso
-  diario). Sí corrió la rutina diaria de intuición (vigesimotercera corrida desde el 2026-08-06): esta
-  vez recalculé el conteo de fuentes 🟢A por conteo propio y directo sobre la columna de rigurosidad
-  (no el resumen textual de filas previas, que mezclaba rigor primario con menciones secundarias de 🟢
-  dentro del mismo texto) y encontré **134 filas con rigor primario 🟢A puro** (más 3 filas mixtas —
-  F-149, F-457, F-466 — cuyo rigor principal no es A y que por eso excluí de la población elegible), de
-  las cuales 63 ya tenían lectura profunda del Lobo — de las 71 restantes elegí 3 al azar puro (Python
-  `random.sample`, sin `--seed`): F-43 (Harada et al. 2024, *JMIR Formative Research*, precisión de
-  symptom-checker japonés — ya citado en tesis 10 solo por la cifra plana de 45.1% y, desde la revisión
-  profunda de `cronista` del 2026-08-05, por el desglose 24.2%/14.5%), F-36 (factor dominante de
-  automedicación no responsable en Perú, SciELO 2021 — ya citado en tesis 9 por el OR=29.06) y F-339
-  (Mazurenko, Taylor & Menachemi 2022, *Medical Care Research and Review*, redes estrechas/por niveles —
-  ya citado en tesis 23 como transferencia de mecanismo de redes de proveedores a steering de canal).
-  Las tres bloqueadas por el proxy en su URL directa (ncbi.nlm.nih.gov, scielo.org.pe,
-  journals.sagepub.com); reconstruidas vía búsqueda dirigida (JMIR Formative Research, Academia.edu/
-  SciELO Preprints, y el repositorio institucional de IUPUI) que confirma detalle nuevo no capturado en
-  el resumen de una línea de cada una, incluso para F-43 y F-36 pese a que ya tenían matiz de tesis
-  propio — el ángulo de hoy es de heurística transferible, no de matiz de negocio puntual, como marca la
-  regla del proceso. Sumé las entradas 64, 65 y 66 de Intuición acumulada: (64) un promedio de precisión
-  estable en el tiempo no es evidencia de solidez si nadie separó los casos fáciles de los difíciles —
-  F-43 confirma que "commonality" y "typicality" están asociadas de forma estadísticamente significativa
-  a la precisión, el mecanismo formal detrás del dato ya conocido; (65) un odds ratio que multiplica por
-  15-20x al resto de una tabla de regresión (aquí, OR=29 vs. 1.3-1.9) casi nunca es sesgo conductual
-  gradual — es una regla de compuerta incumplida, y la intervención correcta es de proceso/política, no
-  de nudge al consumidor; (66) un veredicto agregado de "sin efecto adverso sistemático" puede promediar
-  un outcome negativo y saliente (tiempo de espera, en F-339) con otros neutrales — pedir el desglose por
-  outcome antes de repetir el veredicto general de cualquier revisión sistemática. Ninguna tesis de
-  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una
-  revisión de evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance
-  de tesis 9, 10 y 23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
-  Bitácora con 21 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar
-  todavía.
+  10, 17, 18 y 23 sin cambiar confianza. **2026-08-28** — sin cambios sustanciales en el ledger (F-468,
+  decimoquinto día seguido); vigesimotercera corrida de intuición (entradas 64-66: F-43 commonality/
+  typicality como mecanismo formal de precisión de symptom-checker, F-36 OR=29 como regla de compuerta
+  incumplida no sesgo conductual gradual, F-339 veredicto agregado "sin efecto adverso sistemático" que
+  promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
+  confianza.
 - **2026-08-29** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios,
   working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a
   F-468 sin huecos** — mismo tope exacto que procesó la corrida de ayer (2026-08-28), **cero fuentes
@@ -6542,3 +6611,50 @@ con una técnica concreta y medible para seguros.
   paralelo de intuición, aunque las tres entradas de hoy matizan tesis 1, 4, 11, 16, 17 y 20. Actualicé
   `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
   historial (2026-08-28 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.
+- **2026-09-27** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward limpio hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 27 corridas, **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo sexto día seguido
+  sin cambios sustanciales en el ledger. **Esta corrida sí matizó una tesis, no por evidencia nueva del
+  ledger sino por lo que trajo la lectura a fondo de la rutina diaria de intuición (ver abajo):** tesis 8
+  y el Riesgo asociado se actualizaron para reflejar que **Rímac Seguros y Reaseguros tiene expediente
+  propio de INDECOPI abierto desde julio de 2025** (600,000+ llamadas analizadas con IA, junto con BBVA),
+  no solo un competidor del ramo (Pacífico) bajo investigación — hallazgo de `WebSearch` al reconstruir
+  el contexto de F-70, **todavía sin su propio F-n en el ledger** (recomendado para que `cronista` lo
+  registre). Confianza de tesis 8 se mantiene Alta (el patrón de riesgo y la escala ya eran Alta; lo que
+  cambió es el sujeto concreto del riesgo, no el nivel de certeza). El resto de las 25 tesis se repasó
+  contra el mismo tope de 468 sin más matices forzados — la revisión profunda de `cronista` sigue sin
+  correr desde el 2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya
+  lleva cuarenta y seis días sin correr). **Poda de bitácora:** el bloque "2026-08-28" salió por completo
+  de la ventana de ~30 días (cutoff ≈2026-08-28) — lo fusioné con el bloque "2026-08-01 a 2026-08-27" en
+  un resumen ampliado "2026-08-01 a 2026-08-28"; no se pierde ningún dato porque el detalle de cada tesis
+  e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición
+  corrió con el nivel 🔵B en curso (🟢A ya agotado desde el 2026-08-26):** recalculé por script el
+  universo 🔵B del ledger con el filtro estricto (fila cuya rigurosidad *empieza* con "🔵 B" y no es mixta
+  con otro nivel, tipo F-333 o F-465): **75 filas puras** — contra `fuentes_leidas_lobo.md` (17 ya
+  leídas de este nivel tras las corridas de los seis días previos: F-104, F-32, F-359, F-37, F-194, F-7,
+  F-256, F-309, F-285, F-308, F-132, F-383, F-105, F-360, F-1, F-231, F-207) — **58 pendientes** — y
+  elegí 3 al azar sin reemplazo (Python `random.shuffle`, sin semilla fija): F-70, F-387 y F-431. Las
+  tres bloqueadas por el proxy en su URL directa (gob.pe, gov.uk, onlinelibrary.wiley.com); `WebSearch`
+  sí funcionó y permitió reconstruir detalle nuevo en las tres vía cobertura convergente (Infobae, Forbes
+  Perú, El Comercio, Andina y `consumidor.gob.pe` para F-70; Digital Government Hub y los PDFs oficiales
+  de `assets.publishing.service.gov.uk` para F-387; ResearchGate, Semantic Scholar y EconBiz para F-431),
+  no solo el resumen de una línea ya citado. Sumé las entradas 151, 152 y 153 de Intuición acumulada:
+  (151) F-70 trae el hallazgo más material de hoy — Rímac Seguros tiene expediente propio de INDECOPI, no
+  solo Pacífico como competidor de referencia — y la heurística de verificar si un riesgo regulatorio
+  agregado ya tocó a la propia organización antes de tratarlo como analogía de sector; (152) F-387
+  confirma que la evidencia oficial de diseño público atribuye el resultado a las condiciones
+  institucionales (liderazgo, tiempo, tolerancia a iterar), no al método en abstracto — extiende a
+  cualquier apuesta de innovación interna el mismo escrutinio que tesis 21 ya aplica al ROI de diseño;
+  (153) F-431 confirma el rango 30-49% (vs. el mito de 80-95%) sobre 19 estudios y seis décadas, y nombra
+  el mecanismo de por qué el mito sobrevive (argumentum ad populum + interés propio de quien vende la
+  urgencia) — heurística transferible a cualquier estadística de riesgo sin fuente primaria que
+  justifique comprar un método o presupuesto. Esta corrida sí cambió el contenido de una tesis de negocio
+  (tesis 8, sujeto del riesgo) aunque no su nivel de confianza — es la primera vez desde que corre el
+  mecanismo de intuición que una lectura de rigor 🔵B produce un matiz de negocio directo, no solo una
+  heurística de juicio. También eliminé una entrada de Riesgos duplicada literal (bloque de
+  "explicabilidad", tesis 22) que quedó repetida en una corrida anterior — limpieza de formato, sin
+  pérdida de contenido. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
+  Bitácora con 30 días de historial (2026-08-29 a hoy) tras la poda de hoy — cumple la ventana de ~30
+  días.
