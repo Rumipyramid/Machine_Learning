@@ -116,6 +116,16 @@ fusionan y que hay que entregar por separado:
   y puede soltarse el resultado?). De acá sale la consigna final. Marco completo y advertencia
   de uso en `references/capa-hermetica.md` — **léelo antes de aplicarlo**.
 
+- **Registro operativo (ejecución).** Solo cuando el consultante pide una **operación**, no en cada
+  lectura. Los tres anteriores describen o dan una consigna; éste dice **qué se hace con las manos,
+  con qué materia y a qué hora**. Cinco marcos verificados (Jámblico V.23 · Paracelso *Opus
+  Paramirum* · Picatrix · Ficino · Bruno), seis reglas de diseño y la plantilla de tres actos
+  (*solve* → *coagula* → apertura del vaso) en `references/operacion-triple.md` — **léelo antes de
+  proponer cualquier operación**. Regla que lo gobierna todo: **ningún paso intenta mover la
+  voluntad de un tercero**, porque nada la mueve; la operación fija la conducta del operador, le da
+  cuerpo a una decisión y elige el momento. Y el vaso oculto es un vaso impuro: la revelación es
+  paso constitutivo, no agregado moral.
+
 Son epistemologías distintas y no se promedian. Jung adoptó la sincronicidad precisamente
 para no reclamar poder predictivo; la horaria sí lo reclama; la capa hermética no describe
 nada, solo indica qué operación corresponde. Mantené las voces separadas y después cruzálas
@@ -325,6 +335,8 @@ técnica se mantiene entera — no se simplifica el método, se ordena la entreg
 | `references/tarot_marsella.json` | Marsella: 22 mayores con arquetipo/luz/sombra/individuación, palos, numerología, figuras, y definición de las tiradas |
 | `references/tarot_waite.json` | Rider-Waite-Smith: 78 cartas con escena, lectura derecha e invertida; VIII/XI intercambiados |
 | `references/marco-jungiano.md` | Sincronicidad, sombra, ánima, función inferior y **regla de convergencia** |
+| `references/capa-hermetica.md` | Capa prescriptiva: dosis (Paracelso), canal (Dee), Voluntad (Crowley), la bifurcación de vías |
+| `references/operacion-triple.md` | **Registro operativo**: cinco marcos verificados, qué tiene y qué no tiene el corpus, seis reglas de diseño, las 28 mansiones (estado) y la plantilla de tres actos |
 
 Precisión astronómica verificada contra ingresos planetarios y lunaciones conocidas: Sol
 exacto en equinoccios/solsticios, planetas dentro de ~0.05°, Luna dentro de ~0.25°.

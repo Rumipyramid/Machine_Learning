@@ -222,6 +222,31 @@ def fase_lunar(jd: float) -> dict:
     }
 
 
+def mansion_lunar(jd: float) -> dict:
+    """Mansión lunar (manzil) de las 28 en que el Picatrix organiza la magia electiva.
+
+    Solo aritmética: el zodíaco tropical dividido en 28 partes de 12°51'25.7" desde 0° Aries.
+    ⚠ Devuelve el NÚMERO y los límites, no el significado: las atribuciones de las 28
+    mansiones no están verificadas en este repo y no deben interpretarse sin cotejarlas
+    con una fuente (Attrell & Porreca sobre la edición de Pingree). Ver
+    references/operacion-triple.md §4.
+    """
+    lon = longitud_luna(jd)
+    ancho = 360.0 / 28.0
+    n = int(lon // ancho) + 1
+    inicio = (n - 1) * ancho
+    return {
+        "numero": n,
+        "de_28": 28,
+        "ancho_grados": round(ancho, 4),
+        "inicio": a_signo(inicio)["posicion"],
+        "fin": a_signo(inicio + ancho)["posicion"],
+        "avance_en_mansion_pct": round((lon - inicio) / ancho * 100, 1),
+        "advertencia": ("Solo numeración calculada. Los significados de las 28 mansiones no están "
+                        "verificados en este repo — no interpretar sin cotejar con Attrell & Porreca."),
+    }
+
+
 def aspectos(cuerpos: dict) -> list[dict]:
     out = []
     nombres = list(cuerpos)
@@ -296,6 +321,7 @@ def carta(dt_local: datetime, tz: float, lat: float, lon: float) -> dict:
         "medio_cielo": mc,
         "casas": casas,
         "fase_lunar": fase_lunar(jd),
+        "mansion_lunar": mansion_lunar(jd),
         "aspectos": aspectos(cuerpos),
         "retrogrados": [c for c, v in cuerpos.items() if v["retrogrado"]],
         "balance_elementos": {e: sum(1 for v in cuerpos.values() if v["elemento"] == e)
@@ -322,6 +348,9 @@ def a_markdown(c: dict) -> str:
           f"· **Nodo Norte:** {c['nodo_lunar_norte']['posicion']}",
           f"**Luna:** {c['fase_lunar']['fase']} ({c['fase_lunar']['iluminacion_pct']}% iluminada), "
           f"ciclo {c['fase_lunar']['ciclo']}",
+          f"**Mansión lunar:** {c['mansion_lunar']['numero']}/28 "
+          f"({c['mansion_lunar']['inicio']} – {c['mansion_lunar']['fin']}) — solo numeración, "
+          f"significados sin verificar",
           f"**Retrógrados:** {', '.join(c['retrogrados']) or 'ninguno'}",
           f"**Elementos:** " + " · ".join(f"{k} {v}" for k, v in c["balance_elementos"].items()),
           f"**Modalidades:** " + " · ".join(f"{k} {v}" for k, v in c["balance_modalidades"].items()),
