@@ -613,3 +613,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 - [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics — FFVV Vida Individual]] — C1 y C2
   (argumentar por mecanismo, prometer acumulación) aplican a cómo se sustenta el valor del rediseño
   de la experiencia de venta ante el VP.
+- [[marcos-operativos-vinculo-corpus-magico|Marcos operativos del vínculo en el corpus mágico]] —
+  comparte la disciplina de **eco de cita** de este node (regla C3): dos atribuciones repetidas sin
+  fuente primaria localizable quedaron ahí registradas como no citables, igual que el mítico 671%
+  de ROI (F-327) acá.

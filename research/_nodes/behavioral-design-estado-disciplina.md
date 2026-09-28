@@ -304,3 +304,7 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   sobrevendido, corregido por sesgo de publicación) aparece allí en el diseño (ROI sobrevendido,
   desarmado por eco de cita). Ambos concluyen lo mismo: la disciplina se defiende mejor por
   **mecanismo** que por **multiplicador**.
+- [[marcos-operativos-vinculo-corpus-magico|Marcos operativos del vínculo en el corpus mágico]] —
+  antecedente histórico del mismo problema de fondo: qué se puede afirmar sobre cambiar la conducta
+  de otro. La distinción *agōgē*/*philia* (compeler al otro vs. trabajar el vínculo existente) es el
+  precedente antiguo de la distinción i-frame / s-frame.
