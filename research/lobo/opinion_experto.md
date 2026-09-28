@@ -231,15 +231,28 @@ de ~7 meses. Esto no está aún como su propio F-n en el ledger — lo encontré
 de F-70 vía `WebSearch` (Infobae, Forbes Perú, El Comercio, Andina, consumidor.gob.pe — la propia
 plataforma de reclamos de INDECOPI — convergen en la misma fecha y cifra), no vía lectura directa de una
 fuente ya registrada; recomiendo que `cronista` lo registre como fuente propia en la próxima corrida.
+**[Actualización 2026-09-28 — lectura a fondo de F-117, calibra magnitud sin cambiar el patrón de
+riesgo]** El caso de Pacífico Seguros que F-117 registraba como "abierto" (marzo 2025, 50,000 audios
+analizados, multa potencial >S/2M) ya tiene resolución (sep-2025, todavía sin su propio F-n): de esos
+50,000 audios, solo 1,395 (2.8%) carecían de consentimiento verificable, y la multa final fue
+S/162,051.5 (21.49 UIT a Pacífico + 8.80 UIT a Impulsa365) — **~8% de los S/2M amenazados en la
+apertura**, y el caso sigue en plazo de apelación. Esto no reduce el riesgo del expediente propio de
+Rímac (sigue activo, sigue siendo real), pero sí recalibra la expectativa: el universo fiscalizado
+(600,000+ llamadas de Rímac) es la base de *auditoría*, no de *sanción* — si el patrón Pacífico se
+repite, el desenlace más probable es una fracción pequeña tanto del volumen fiscalizado como del techo
+legal de 450 UIT, no el máximo citado.
 - **Evidencia:** F-70 (🔵B, INDECOPI, escala de fiscalización), F-117 (🔵B,
-  Pacífico Seguros bajo investigación), F-118 (🔵B, caso BBVA + texto legal),
+  Pacífico Seguros — apertura mar-2025; resolución sep-2025 con cifras reales reconstruida vía
+  `WebSearch`, todavía sin F-n propio), F-118 (🔵B, caso BBVA + texto legal),
   F-138 (🔵B, segunda sanción BBVA); expediente propio de Rímac Seguros — verificado por convergencia de
   múltiples medios (jul-2025) pero **no registrado aún en `codice.md`** como F-n propio.
 - **Confianza:** Alta en el patrón de riesgo y su escala (INDECOPI mueve de apertura a sanción en firme
   en ~7 meses); Alta también en que el expediente de Rímac es real (convergencia de 5+ medios
   independientes incluida la plataforma oficial de INDECOPI), con el único tope de que aún no tiene su
-  propio F-n auditable en el ledger del proyecto.
-- **Actualizado:** 2026-09-27
+  propio F-n auditable en el ledger del proyecto. La magnitud esperada de una eventual sanción se
+  calibra a la baja (patrón Pacífico: ~8% del techo amenazado), sin bajar la confianza de que el riesgo
+  regulatorio en sí es real y activo.
+- **Actualizado:** 2026-09-28
 
 ### 9. El modelo farmacia-frente-primario + triage IA + derivación tiene tracción estatal y de infraestructura real en Perú, no es apuesta especulativa
 Tres señales independientes convergen: (a) el Congreso tiene en debate el PL
@@ -970,7 +983,7 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   coaseguro, tesis 2; icon arrays, tesis 12) corre el riesgo de leerse —o de funcionar—
   como desvío de responsabilidad hacia el cliente.
 - **Contacto comercial no consentido — Rímac Seguros tiene expediente propio
-  abierto, no solo un precedente de sector.** Tesis 8 (actualizada 2026-09-27): Rímac
+  abierto, no solo un precedente de sector.** Tesis 8 (actualizada 2026-09-28): Rímac
   Seguros y Reaseguros está bajo proceso sancionador de INDECOPI desde julio de 2025
   (junto con BBVA, 600,000+ llamadas analizadas con IA), además de Pacífico Seguros
   bajo investigación directa y BBVA sancionado dos veces. INDECOPI ya mostró que mueve
@@ -978,7 +991,12 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   campaña saliente sin consentimiento explícito y verificable hoy arriesga multa de
   hasta 450 UIT y una orden de cese que borra bases de datos completas, incluidas las
   de terceros (agencias, referidos) — y en este caso no es un riesgo por gestionar, es
-  uno ya en curso.
+  uno ya en curso. **Calibración de magnitud (2026-09-28):** el caso de Pacífico
+  (F-117), que INDECOPI abrió con la misma escala de amenaza (50,000 audios, >S/2M),
+  ya se resolvió en solo S/162,051.5 (~8% del techo amenazado) sobre apenas 1,395
+  llamadas efectivamente sin consentimiento verificable de las 50,000 auditadas — el
+  riesgo de Rímac sigue siendo real y activo, pero el desenlace más probable, si el
+  patrón se repite, es una fracción pequeña del máximo legal, no el máximo en sí.
 - **Lanzar un triage con IA sin shadow-mode previo.** Tesis 10: el precedente
   Babylon Health (USD 4.2B → bancarrota) y la precisión real de ~45% de los
   symptom-checkers en producción hacen que cualquier lanzamiento sin 60-90 días
@@ -5223,6 +5241,86 @@ diseño/innovación con el ROI del diseño y el "impuesto de verificación" (tes
   vs. heterogeneidad real antes de citar un promedio) — aquí aplicado a un mito de
   industria en vez de a un meta-análisis académico.
 
+### 154. Un expediente regulatorio recién abierto tiene dos cifras — la multa máxima amenazada y la multa real resuelta — y la brecha entre ambas suele ser enorme
+F-117 en el ledger solo registra el artículo de **apertura** del caso (marzo 2025):
+50,000 audios de Impulsa365 analizados, multa potencial citada ">S/2 millones". Leído a
+fondo vía `WebSearch` (la resolución final, sep-2025, no estaba en el resumen de una línea
+ya citado): de esos 50,000 audios solo **1,395 llamadas (2.8%)** carecían de consentimiento
+verificable, y la multa final fue 21.49 UIT a Pacífico Seguros (S/114,971.5) + 8.80 UIT a
+Impulsa365 (S/47,080) — **S/162,051.5 en total, ~8% de los S/2M amenazados en la apertura**.
+El caso sigue dentro del plazo de apelación (no es cosa juzgada todavía). **Heurística de
+decisión:** al evaluar la exposición de un expediente regulatorio **abierto pero no
+resuelto** — como el propio de Rímac (tesis 8, expediente activo desde jul-2025, 600,000+
+llamadas bajo fiscalización), tratar la cifra de apertura (universo auditado, multa máxima
+legal) como techo de exposición, no como expectativa central. El patrón Pacífico sugiere
+que el volumen fiscalizado es la base de *auditoría*, no la base de *sanción*, y que la
+multa real suele aterrizar en una fracción pequeña tanto del universo de llamadas como del
+máximo legal citado al abrir el caso — sin que eso implique que el riesgo no sea real: solo
+recalibra la magnitud esperada del desenlace más probable frente al peor caso.
+- **Fuente:** F-117 (🔵B, INDECOPI/Infobae — el ledger solo tiene el artículo de apertura de
+  marzo 2025; la resolución final de sep-2025 con las cifras reales todavía no tiene su
+  propio F-n)
+- **Leído a fondo:** 2026-09-28 (infobae.com bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` — Forbes Perú, Infobae [artículo de resolución, 17-sep-2025],
+  RPP, Gestión, Panamericana, Diario Correo, Exitosa Noticias, eBiz y Lima Gris convergen en
+  las mismas cifras de resolución)
+- **Conexión razonada, no forzada:** matiza directamente tesis 8 y el Riesgo asociado
+  (expediente propio de Rímac) — no baja la confianza de que el riesgo es real y activo,
+  pero calibra la magnitud esperada de una eventual sanción si el patrón se repite.
+  Recomendado que `cronista` registre la resolución de sep-2025 como F-n propio (distinto de
+  F-117, que solo cubre la apertura).
+
+### 155. Subsidiar el canal preferido sin cambiar el incentivo del proveedor puede empujar el volumen hacia el canal saturado por defecto, no hacia el nuevo
+F-112 ya registraba "éxito limitado" de Healthier SG en Singapur. Leído a fondo vía
+`WebSearch`: el mecanismo específico es que los subsidios a médicos de familia privados no
+fueron suficientes para que abandonen su práctica establecida y absorban el rol de
+gatekeeper — pero los mismos subsidios dirigidos sí abarataron la atención en las
+policlínicas públicas, y el resultado documentado fue **más visitas a policlínicas ya
+sobrecargadas** (que no tienen el rango de servicios para manejo crónico), no la migración
+esperada hacia el médico de familia asignado. **Heurística de decisión:** al diseñar un
+incentivo de precio para dirigir demanda hacia un canal preferido (aquí, médico de familia;
+en el proyecto, cualquier programa de derivación/steering), verificar que el *proveedor* del
+canal preferido tenga también un incentivo para aceptar el rol, no solo que el *paciente*
+tenga un incentivo de precio para elegirlo — si el proveedor no cambia de comportamiento, el
+subsidio puede filtrarse hacia el canal de default ya saturado en vez de crear el canal
+nuevo, generando sobrecarga en vez de alivio.
+- **Fuente:** F-112 (🔵B, Ministerio de Salud de Singapur / Commonwealth Fund, s.f.)
+- **Leído a fondo:** 2026-09-28 (moh.gov.sg bloqueado por el proxy del entorno; reconstruido
+  vía `WebSearch` — White Paper oficial de Healthier SG, Ministry of Health Newsroom,
+  revisión académica 2025 en *Taylor & Francis* sobre fortalecimiento de atención primaria en
+  Singapur)
+- **Conexión razonada, no forzada:** misma familia que intuición 108 (F-108: el ahorro de un
+  modelo de atención primaria alternativo depende de si cambia el incentivo del proveedor,
+  no del canal de acceso) — aquí con evidencia de que el fracaso de ese cambio de incentivo
+  produce un efecto secundario negativo concreto (sobrecarga del canal público por defecto),
+  no solo "no funcionar"; contexto para tesis 23 (riesgo de steering hacia canal más barato).
+
+### 156. Dos cifras de estudios distintos de la misma empresa, citadas bajo un solo resumen y URL, pueden no compartir metodología ni pertenecer al mismo estudio
+El resumen del ledger para F-353 combina bajo una sola URL (a) ahorro de US$462/miembro
+comprometido/año (4% reducción de siniestros) y (b) mejora de mortalidad 42%/76% por status
+Diamond. Leído a fondo vía `WebSearch` (vitalitygroup.com bloqueado por el proxy): la cifra
+(a) sí corresponde al Impact Study 2024 validado por Arbital Health — metodología de
+*propensity score matching* entre miembros de alto y bajo compromiso (edad, género, código
+de relación, zona geográfica, conteo de condiciones crónicas), sobre >40,000 miembros de 5
+clientes (2018-2022), ROI 1.8x sobre siniestros directos (excluye farmacia). La cifra (b) de
+mortalidad por status Diamond **no aparece en ninguna cobertura de este estudio 2024** —
+probablemente pertenece a un estudio actuarial distinto y más antiguo de Vitality/Discovery
+sobre mortalidad por nivel de status. **Heurística de decisión:** cuando el resumen de una
+fuente del ledger mezcla dos tipos de cifra bajo una sola URL corporativa (aquí, resultado
+de siniestros y resultado de mortalidad), verificar que ambas vengan del mismo estudio antes
+de citarlas juntas como una sola pieza de evidencia — la validación actuarial independiente
+certifica específicamente la metodología del estudio que la acompaña, no necesariamente
+cualquier otra cifra que viaje adjunta en el mismo resumen.
+- **Fuente:** F-353 (🔵B, Vitality Group; validación actuarial de Arbital Health, 2024)
+- **Leído a fondo:** 2026-09-28 (vitalitygroup.com bloqueado por el proxy del entorno;
+  reconstruido vía `WebSearch` — comunicado propio de Vitality confirmando metodología,
+  BusinessWire con el desglose ROI 180%/4%/US$462, página propia del Impact Study)
+- **Conexión razonada, no forzada:** misma familia que intuición 134 (F-32, Swiss Re: un
+  resumen de ledger empalma dos comunicados distintos bajo una sola URL) y 79 (F-90,
+  verificar el registro primario antes de heredar una atribución); sin tesis numerada propia
+  de Vitality en el documento — queda como advertencia de higiene de cita para cualquier uso
+  futuro de F-353 en un argumento de negocio.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5273,25 +5371,13 @@ diseño/innovación con el ROI del diseño y el "impuesto de verificación" (tes
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-28** — *(Detalle diario original podado el 2026-09-10 al salir por completo
-  de la ventana de ~30 días — ya estaba resumido desde el 2026-08-21/2026-09-07/2026-09-09 pero las
-  entradas fuente no se habían borrado todavía, quedando duplicadas; sin pérdida de información, el
-  detalle de cada tesis vive en 🎯 Tesis vigentes y el de cada Intuición en su propia sección.)*
-  *(Resumida el 2026-08-21, el 2026-09-07 y el 2026-09-09; ampliada y
-  fusionada de nuevo el 2026-09-10 al salir el bloque del 08-10 por completo de la ventana de ~30
-  días, el 2026-09-11 al salir el bloque del 08-12, el 2026-09-12 al salir el bloque del 08-13, el
-  2026-09-13 al salir el bloque del 08-14, el 2026-09-14 al salir el bloque del 08-15, el
-  2026-09-15 al salir el bloque del 08-16, el 2026-09-16 al salir el bloque del 08-17, el
-  2026-09-17 al salir el bloque del 08-18, el 2026-09-18 al salir el bloque del 08-19, una vez más
-  el 2026-09-19 al salir el bloque del 08-20, el 2026-09-20 al salir el bloque del 08-21, el
-  2026-09-21 al salir el bloque del 08-22, el 2026-09-22 al salir el bloque del 08-23, el
-  2026-09-23 al salir el bloque del 08-24, el 2026-09-24 al salir el bloque del 08-25, el
-  2026-09-25 al salir el bloque del 08-26, el 2026-09-26 al salir el bloque del 08-27, y de nuevo el
-  2026-09-27 al salir el bloque del 08-28
-  (todas: corrida diaria, algunas con revisión profunda de `cronista`) por completo de la ventana; el
-  detalle de cada tesis creada o matizada en esta ventana vive en 🎯 Tesis vigentes, cada una con su
-  propia fecha de "Actualizado"; el detalle de cada Intuición vive en esa sección con su propia
-  fuente/fecha.)* Veintiséis corridas.
+- **2026-08-01 a 2026-08-29** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+  de la ventana de ~30 días. El bloque se volvió a resumir y fusionar 21 veces desde entonces, cada
+  vez que el día más antiguo salía de la ventana de ~30 días (de 08-10 el 2026-09-10 hasta, más
+  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28; lista completa de fusiones
+  intermedias omitida aquí por brevedad — no hay pérdida de información: el detalle de cada tesis
+  creada o matizada en esta ventana vive en 🎯 Tesis vigentes y el de cada Intuición en su propia
+  sección, cada una con su propia fecha de "Actualizado"/lectura.)* Veintisiete corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -5401,43 +5487,6 @@ diseño/innovación con el ROI del diseño y el "impuesto de verificación" (tes
   incumplida no sesgo conductual gradual, F-339 veredicto agregado "sin efecto adverso sistemático" que
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
-- **2026-08-29** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` sin cambios,
-  working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a
-  F-468 sin huecos** — mismo tope exacto que procesó la corrida de ayer (2026-08-28), **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  decimosexto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo
-  tope: ninguna quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar
-  el paso — el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de
-  `cronista`, cada ~3 días, ya lleva diecisiete días sin correr; no lo disparo aquí porque es rutina de
-  `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición (vigesimocuarta
-  corrida desde el 2026-08-06): recalculé el conteo de filas con rigor primario 🟢A puro sobre la
-  columna de rigurosidad (mismo método de la corrida de ayer, excluyendo las 3 filas mixtas F-149,
-  F-457, F-466) y confirmé **134 filas**, de las cuales 66 ya tenían lectura profunda del Lobo — de las
-  68 restantes elegí 3 al azar puro (Python `random.sample`, sin `--seed`): F-241 (Luguri &
-  Strahilevitz 2021, *Journal of Legal Analysis*, dark patterns — ya citado solo en el node de
-  tendencias-diseno-innovacion por las tres cifras agregadas de conversión), F-244 (Bansal et al. 2021,
-  CHI, explicaciones de IA y desempeño complementario — ya citado en tesis 22 por el resumen de una
-  línea "sin verificabilidad producen sobre-confianza") y F-341 (*Journal of Health Economics* 2018,
-  disposición a pagar por continuidad de proveedor — ya citado en tesis 23 solo dentro de un rango
-  agregado F-338 a F-341). Las tres bloqueadas por el proxy en su URL directa (academic.oup.com,
-  dl.acm.org/researchgate.net/idl.cs.washington.edu, pubmed.ncbi.nlm.nih.gov/sciencedirect.com);
-  reconstruidas vía búsqueda dirigida (SSRN/Chicago Unbound para F-241; NSF Public Access y Microsoft
-  Research para F-244; IDEAS/RePEc, APPAM y CDC Stacks para F-341) que confirman detalle de mecanismo
-  nuevo en las tres, no solo el resumen de una línea ya citado. Sumé las entradas 67, 68 y 69 de
-  Intuición acumulada: (67) el backlash de un dark pattern depende del subtipo específico (leve vs.
-  agresivo) y no de si existe manipulación en abstracto — los leves duplican conversión sin backlash
-  medible pero castigan más a quien tiene menos educación, un criterio de auditoría nuevo para tesis 18
-  (el playbook de ventas de RIMAC); (68) una explicación de IA puede subir la aceptación de la
-  recomendación por igual acierte o falle la IA — inflar percepción de competencia, no calibrar
-  confianza — y no superó al baseline barato de solo mostrar el score de confianza crudo, matiz de
-  diseño nuevo para tesis 22; (69) la aversión a redes angostas de proveedores es casi binaria (¿el
-  médico habitual queda adentro o afuera?), no una función continua del tamaño de la red — la variable
-  de diseño más accionable que el cluster de evidencia de tesis 23 todavía no tenía. Ninguna tesis de
-  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una
-  revisión de evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el alcance
-  de tesis 18, 22 y 23. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas
-  hoy. Bitácora con 22 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin
-  podar todavía.
 - **2026-08-30** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` fast-forward
   5612e59→a1450e0, que trajo consigo el commit de ayer de esta opinión y de `fuentes_leidas_lobo.md`)
   y verifiqué `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos** —
@@ -6658,3 +6707,49 @@ diseño/innovación con el ROI del diseño y el "impuesto de verificación" (tes
   pérdida de contenido. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
   Bitácora con 30 días de historial (2026-08-29 a hoy) tras la poda de hoy — cumple la ventana de ~30
   días.
+- **2026-09-28** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
+  pull`, fast-forward limpio hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
+  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
+  duplicados** — mismo tope exacto que las últimas 28 corridas, **cero fuentes nuevas** registradas por
+  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo séptimo día
+  seguido sin cambios sustanciales en el ledger. **Esta corrida sí matizó tesis 8 y su Riesgo asociado,
+  no por evidencia nueva del ledger sino por la lectura a fondo de la rutina diaria de intuición (ver
+  abajo):** el caso de Pacífico Seguros (F-117) que el ledger solo registraba como "abierto" ya tiene
+  resolución (sep-2025, todavía sin F-n propio) — multa final de S/162,051.5, ~8% del techo de >S/2M
+  amenazado al abrir el caso, sobre solo 1,395 de 50,000 llamadas auditadas. No baja la confianza de que
+  el expediente propio de Rímac es un riesgo real y activo, pero calibra a la baja la magnitud esperada
+  de una eventual sanción frente al peor caso. El resto de las 25 tesis se repasó contra el mismo tope de
+  468 sin más matices forzados — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12
+  (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva cuarenta y siete días
+  sin correr). **Poda de bitácora:** el bloque "2026-08-29" salió por completo de la ventana de ~30 días
+  (cutoff ≈2026-08-29) — lo fusioné con el bloque "2026-08-01 a 2026-08-28" en un resumen ampliado
+  "2026-08-01 a 2026-08-29"; aproveché para comprimir la lista de fechas de fusiones intermedias del
+  propio bloque resumen (crecía sin límite cada día) a una sola frase con el conteo y las fusiones más
+  recientes — no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive en
+  sus propias secciones con fecha. **La rutina diaria de intuición corrió con el nivel 🔵B en curso (🟢A
+  agotado desde el 2026-08-26):** recalculé por script el universo 🔵B del ledger con un filtro estricto
+  sobre marcadores de rigor en la fila completa (fila con exactamente un marcador de rigurosidad y que
+  ese marcador sea 🔵B, excluyendo filas mixtas tipo F-333): **73 filas puras** (cifra distinta a la de
+  ayer, 75; el método de conteo se ajustó para capturar filas donde el campo de rigurosidad contiene un
+  `|` interno que desalineaba el split por columnas de versiones anteriores del script — no hay pérdida
+  de fuentes, solo una forma de contar más precisa) — contra `fuentes_leidas_lobo.md` (20 ya leídas de
+  este nivel tras las corridas de los siete días previos: F-104, F-32, F-359, F-37, F-194, F-7, F-256,
+  F-309, F-285, F-308, F-132, F-383, F-105, F-360, F-1, F-231, F-207, F-70, F-387, F-431) — **53
+  pendientes** — y elegí 3 al azar sin reemplazo (Python `random.shuffle`, sin semilla fija): F-117,
+  F-112 y F-353. Las tres bloqueadas por el proxy en su URL directa (infobae.com, moh.gov.sg,
+  vitalitygroup.com); `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las tres vía
+  cobertura convergente (Forbes Perú + Infobae + RPP + Gestión + Panamericana + Diario Correo + Exitosa +
+  eBiz + Lima Gris para la resolución real de F-117, no solo la apertura ya citada; White Paper oficial +
+  MOH Newsroom + revisión académica 2025 de Taylor & Francis para F-112; comunicado propio de Vitality +
+  BusinessWire para F-353), no solo el resumen de una línea ya citado. Sumé las entradas 154, 155 y 156
+  de Intuición acumulada: (154) F-117 trae el hallazgo más material de hoy — el caso Pacífico ya resuelto
+  en ~8% del techo amenazado, calibrador directo de magnitud para el expediente propio de Rímac (tesis 8,
+  actualizada hoy); (155) F-112 confirma con mecanismo que subsidiar el canal preferido sin cambiar el
+  incentivo del proveedor puede empujar volumen hacia el canal saturado por defecto, no hacia el nuevo —
+  contexto para el riesgo de steering (tesis 23); (156) F-353 separa la cifra de siniestros (auditada por
+  Arbital Health) de la cifra de mortalidad por status Diamond que viaja adjunta en el mismo resumen sin
+  compartir necesariamente el mismo estudio de origen — higiene de cita antes de usar F-353 en un
+  argumento de negocio futuro. Esta corrida sí cambió el contenido de tesis 8 y su Riesgo (calibración de
+  magnitud) sin bajar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
+  tres fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-30 a hoy) tras la poda de hoy —
+  cumple la ventana de ~30 días.

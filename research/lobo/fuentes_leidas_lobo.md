@@ -171,3 +171,6 @@
 | F-70 | 🔵 B | 2026-09-27 | Intuición 151 — un riesgo regulatorio citado por escala agregada puede estar ocultando que el sujeto investigado ya es la propia compañía (Rímac Seguros, expediente propio desde jul-2025), no solo un competidor de referencia |
 | F-387 | 🔵 B | 2026-09-27 | Intuición 152 — una revisión oficial que concluye "funciona, pero depende de las condiciones institucionales" es más útil que una que promete un efecto universal del método |
 | F-431 | 🔵 B | 2026-09-27 | Intuición 153 — un mito de tasa de fracaso puede sobrevivir 40+ años a su propia refutación empírica porque a alguien le conviene la versión alarmista, no porque falte evidencia |
+| F-117 | 🔵 B | 2026-09-28 | Intuición 154 — el expediente de apertura y el expediente resuelto son dos cifras distintas; la multa real de Pacífico Seguros (S/162,051.5) fue ~8% del techo amenazado en la apertura (>S/2M) |
+| F-112 | 🔵 B | 2026-09-28 | Intuición 155 — subsidiar el canal preferido sin cambiar el incentivo del proveedor puede empujar el volumen hacia el canal saturado por defecto (Healthier SG, Singapur) |
+| F-353 | 🔵 B | 2026-09-28 | Intuición 156 — dos cifras de estudios distintos de la misma empresa bajo un solo resumen/URL pueden no compartir metodología ni estudio de origen (Vitality: siniestros vs. mortalidad) |
