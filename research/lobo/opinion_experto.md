@@ -525,8 +525,10 @@ independiente (F-366/F-367). El dato nuevo más transferible a Perú —LATAM, n
 repite el patrón con más fuerza: Azos (Brasil, el insurtech de vida de mejor desempeño
 verificable de la región, facturación duplicada dos años seguidos) opera con **más de
 9,000 corredores/agentes socios**, no vende D2C (F-377); bancaseguros controla hasta 80%
-de la distribución de vida en Brasil y el modelo "phygital" (agente + digital) duplica la
-retención a primer año frente a canales puramente digitales o puramente físicos (F-375/F-376);
+de la distribución de vida en Brasil y el modelo "phygital" (agente + digital) se
+respalda con preferencia declarada (>60% de consumidores LatAm quiere recorrido híbrido); la cifra
+"duplica la retención a primer año" que resume el ledger (F-375/F-376) **no se pudo verificar** en el
+informe público de McKinsey (lectura 2026-09-29) — tratarla como hipótesis a testear, no como dato;
 y Betterfly (Chile, unicornio regional de bienestar+seguro dinámico) cerró operaciones en
 5 países en 2025 tras dos rondas de despidos —aunque es categoría de negocio distinta,
 B2B2C, no venta directa de póliza (F-372/F-373). El ecosistema insurtech agregado de toda
@@ -5321,6 +5323,52 @@ cualquier otra cifra que viaje adjunta en el mismo resumen.
   de Vitality en el documento — queda como advertencia de higiene de cita para cualquier uso
   futuro de F-353 en un argumento de negocio.
 
+### 157. Un constructo "moderador" que solo modera una de las rutas testeadas no es confianza general — es confianza atada a la presión social, y el web-skill no mueve la intención
+F-191 (Hanaysha et al., *Jindal Journal of Business Research* 12(2), 233-250, 2023), leído vía
+`WebSearch` (sagepub bloqueado; repositorio de Sunderland + abstract): de cinco determinantes
+(web skills, utilidad percibida, normas subjetivas, seguridad web percibida, facilidad de uso), cuatro
+predicen la intención de compra online de seguro de vida en Malasia; **web skills no** (hipótesis no
+soportada), y la confianza solo modera la ruta *normas subjetivas → intención*, no las demás. El resumen
+del ledger ("la confianza modera la relación…") se lee fácil como moderación general. **Heurística:**
+al usar un "moderador" como palanca, verificar *qué rutas* modera; aquí la confianza amplifica el
+empuje social (recomendación de pares/familia), no reemplaza la seguridad ni la facilidad de uso. Para
+Perú: la jugada es diseñar la prueba social/referido dentro del flujo digital, no solo "generar
+confianza" en abstracto. Muestra malaya, transversal, autorreportada — intención, no compra.
+- **Fuente:** F-191 (🔵B, revista arbitrada; indexación no verificada)
+- **Leído a fondo:** 2026-09-29 (abstract y ficha vía `WebSearch`; texto completo no accesible)
+- **Conexión razonada, no forzada:** apoya tesis 16 (asesor se redistribuye por complejidad) sin
+  cambiar su confianza; misma familia que intuición 29 (actitud vs. conducta).
+
+### 158. Un titular de consultora ("duplica la retención") puede no estar en el informe público que lo respalda — buscar el número en el documento, no en el resumen
+F-376 (McKinsey, bancaseguros, s.f.; el informe es de 2018 según el Global Bancassurance Forum), leído
+vía `WebSearch` sobre el informe (PDF público y páginas de McKinsey): lo verificable es que la
+bancaseguros LatAm creció 12.3% en primas 2011-2017, llega a ~80% de la distribución de vida/pensiones
+en Brasil y ~25% del no-vida en Chile, y que **>60% de consumidores LatAm quieren un recorrido híbrido**
+(autoservicio + asistido). **La cifra "phygital duplica la retención a primer año" no apareció** en el
+material accesible. No la doy por falsa —el informe completo no se pudo abrir— pero deja de ser dato
+citable con confianza; queda como *instinto respaldado por preferencia declarada*. **Heurística:** una
+cifra de retención de una consultora sin muestra ni definición de "retención" se trata como hipótesis a
+testear en piloto propio, y la preferencia declarada por lo híbrido (>60%) es la parte sólida.
+- **Fuente:** F-376 (🔵B, McKinsey)
+- **Leído a fondo:** 2026-09-29 (informe abierto solo parcialmente vía `WebSearch`)
+- **Conexión razonada, no forzada:** matiza tesis 16 (ver nota de hoy); misma familia que intuiciones
+  134 y 156 (resumen del ledger vs. fuente primaria).
+
+### 159. Cuando una fuente es un caso de fraude en un estudio usado por tu industria, la pregunta útil es qué decisiones se apoyaban en él, no si el paper fue retractado
+F-24 (Bazerman, *Inside an Academic Scandal*, MIT Press, 2025; + Science/NPR), leído vía `WebSearch`:
+el artículo PNAS 2012 (Shu, Mazar, Gino, Ariely, Bazerman) sobre firmar la declaración de honestidad
+*antes* de un formulario incluía dos estudios fraudulentos por procesos distintos y con personas
+distintas; los datos de la aseguradora (The Hartford) eran una muestra pequeña mezclada con números
+"sintetizados o fabricados" (fuente distinta en el archivo). La industria de seguros adoptó la firma-al-
+inicio como nudge estrella. **Heurística:** ante una retractación, mapear qué decisiones internas
+descansan en ese efecto y re-testearlas en la propia población; la falla del nudge de "firma primero" no
+prueba que la honestidad no se pueda inducir, solo que esa evidencia no sostiene la decisión. Refuerza
+tesis 6 (testear en la propia población) sin cambiar su confianza.
+- **Fuente:** F-24 (🔵B, libro académico de coautor + investigaciones institucionales)
+- **Leído a fondo:** 2026-09-29 (Science/NPR/Chronicle/Data Colada vía `WebSearch`)
+- **Conexión razonada, no forzada:** tesis 6; intuiciones 7 y 19 (el aviso ya vive en el análisis, no
+  en el titular).
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5371,13 +5419,13 @@ cualquier otra cifra que viaje adjunta en el mismo resumen.
   MercadoLibre de roles de UX desvinculados). **2026-07-31** — sin cambios sustanciales, ninguna
   tesis desalineada. Ningún nivel de confianza bajó en toda la ventana; todo ajuste fue matiz o
   suma de tesis nueva sobre evidencia que la refuerza.
-- **2026-08-01 a 2026-08-29** — *(Detalle diario original podado el 2026-09-10 al salir por completo
+- **2026-08-01 a 2026-08-30** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días. El bloque se volvió a resumir y fusionar 21 veces desde entonces, cada
   vez que el día más antiguo salía de la ventana de ~30 días (de 08-10 el 2026-09-10 hasta, más
-  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28; lista completa de fusiones
+  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29; lista completa de fusiones
   intermedias omitida aquí por brevedad — no hay pérdida de información: el detalle de cada tesis
   creada o matizada en esta ventana vive en 🎯 Tesis vigentes y el de cada Intuición en su propia
-  sección, cada una con su propia fecha de "Actualizado"/lectura.)* Veintisiete corridas.
+  sección, cada una con su propia fecha de "Actualizado"/lectura.)* Veintiocho corridas.
   **2026-08-01/02** — sin cambios sustanciales, ledger fijo en F-398.
   **2026-08-03** — el ledger creció de F-398 a F-468 (70 fuentes nuevas, dos iteraciones del node
   `tendencias-diseno-innovacion.md`): sumó tesis 25 (Root vs. Lemonade — combined ratio 91,4% vs.
@@ -5487,42 +5535,6 @@ cualquier otra cifra que viaje adjunta en el mismo resumen.
   incumplida no sesgo conductual gradual, F-339 veredicto agregado "sin efecto adverso sistemático" que
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
-- **2026-08-30** — Corrida diaria de refinamiento. Confirmé `main` al día (`git pull` fast-forward
-  5612e59→a1450e0, que trajo consigo el commit de ayer de esta opinión y de `fuentes_leidas_lobo.md`)
-  y verifiqué `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos** —
-  mismo tope exacto que procesó la corrida de ayer (2026-08-29), **cero fuentes nuevas** registradas
-  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, decimoséptimo día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna
-  quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada ~3
-  días, ya lleva dieciocho días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de
-  este proceso diario). Sí corrió la rutina diaria de intuición (vigesimoquinta corrida desde el
-  2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A (columna de rigurosidad
-  que **empieza** con 🟢, sin importar caveats secundarios después — mismo criterio que usó la corrida
-  de ayer, que ya distinguía entre "mixto" F-149/F-457/F-466, con rigor primario no-A, de filas como
-  F-257/F-333/F-429, con rigor primario A y solo un caveat secundario) y confirmé **134 filas**, de
-  las cuales 69 ya tenían lectura profunda del Lobo — de las 65 restantes elegí 3 al azar puro
-  (Python `random.sample`, sin `--seed`): F-221 (Kahneman & Tversky 1979, *Econometrica*, prospect
-  theory — ya citado en tesis 18 solo por la cifra de aversión a la pérdida 2:1), F-59 (Mdege et al.
-  2011, revisión metodológica del diseño stepped-wedge — ya citado en tesis 10 solo por el resumen de
-  ventajas) y F-333 (Lewis et al. 2021, PLOS One, cumplimiento de NHS 111 — ya citado solo por la
-  cifra agregada de £4.52M y 11% de no conformidad). Las tres bloqueadas por el proxy en su URL
-  directa (jstor.org, ncbi.nlm.nih.gov, journals.plos.org); reconstruidas vía búsqueda dirigida que
-  confirma detalle de mecanismo nuevo en las tres, no solo el resumen ya citado. Sumé las entradas 70,
-  71 y 72 de Intuición acumulada: (70) el efecto certeza de la teoría fundacional explica por qué
-  "cero deducible" se sobre-paga — eliminar el último tramo de riesgo residual vale
-  desproporcionadamente más que reducirlo en la misma magnitud sin llegar a cero, hipótesis de
-  pricing nueva para tesis 2/18; (71) la vulnerabilidad estructural específica (no genérica) de un
-  piloto stepped-wedge es la confusión por tendencia temporal/secular — criterio de auditoría nuevo
-  para cualquier piloto propio que use ese diseño (tesis 10); (72) el 11% de "incumplimiento" de NHS
-  111 no era mayormente desobediencia: 88% de ese grupo llegó clasificado urgente y 37% terminó
-  hospitalizado — evidencia empírica directa de la intuición 53 (un sistema de triaje falla en dos
-  direcciones simétricas), criterio de validación nuevo para tesis 10. Ninguna tesis de negocio
-  cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una
-  revisión de evidencia sobre las tesis existentes, aunque las tres entradas de hoy sí acotan el
-  alcance de tesis 2, 10 y 18. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 23 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
-  — sin podar todavía.
 - **2026-08-31** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull` trajo fast-forward 5612e59→0386d20, el commit de ayer de esta opinión y de
   `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
@@ -6753,3 +6765,16 @@ cualquier otra cifra que viaje adjunta en el mismo resumen.
   magnitud) sin bajar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
   tres fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-30 a hoy) tras la poda de hoy —
   cumple la ventana de ~30 días.
+- **2026-09-29** — Corrida diaria de refinamiento. `main` al día (fast-forward limpio) y ledger verificado
+  por script: **468 filas, F-1 a F-468 sin huecos** — cero fuentes nuevas, cuadragésimo octavo día seguido
+  sin cambios en el ledger; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12 (rutina
+  de `cronista`, no la disparo aquí). Nota: el prompt externo apunta a `registro_fuentes.md`, que no
+  existe; el ledger vigente es `codice.md`. **Único matiz de negocio:** en tesis 16 (Riesgos/ecosistema
+  LatAm), la cifra "phygital duplica la retención a primer año" (F-376) no se encontró en el informe
+  público de McKinsey; se degradó a hipótesis, conservando la preferencia declarada (>60% quiere recorrido
+  híbrido). Confianzas sin cambio. **Intuición (nivel 🔵B):** universo puro recalculado 71 filas, 22
+  leídas → 49 pendientes; sorteo al azar: F-191, F-376 y F-24 (todas leídas vía `WebSearch`, sitios
+  primarios bloqueados o parciales). Entradas 157 (moderador de confianza solo opera sobre la ruta de
+  normas subjetivas), 158 (cifra de consultora ausente del informe público) y 159 (fraude en estudio de
+  honestidad: mapear decisiones que dependían de él). Poda: bloque 08-30 fusionado al resumen; Bitácora
+  cubre 2026-08-31 a hoy. `fuentes_leidas_lobo.md` actualizado.

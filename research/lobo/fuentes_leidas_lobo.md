@@ -174,3 +174,6 @@
 | F-117 | 🔵 B | 2026-09-28 | Intuición 154 — el expediente de apertura y el expediente resuelto son dos cifras distintas; la multa real de Pacífico Seguros (S/162,051.5) fue ~8% del techo amenazado en la apertura (>S/2M) |
 | F-112 | 🔵 B | 2026-09-28 | Intuición 155 — subsidiar el canal preferido sin cambiar el incentivo del proveedor puede empujar el volumen hacia el canal saturado por defecto (Healthier SG, Singapur) |
 | F-353 | 🔵 B | 2026-09-28 | Intuición 156 — dos cifras de estudios distintos de la misma empresa bajo un solo resumen/URL pueden no compartir metodología ni estudio de origen (Vitality: siniestros vs. mortalidad) |
+| F-191 | 🔵 B | 2026-09-29 | Intuición 157 — la confianza solo modera la ruta normas subjetivas → intención; web skills no predice la intención de compra online de seguro de vida |
+| F-376 | 🔵 B | 2026-09-29 | Intuición 158 — la cifra "phygital duplica retención" no se encontró en el informe público; sí la preferencia híbrida >60% en LatAm |
+| F-24 | 🔵 B | 2026-09-29 | Intuición 159 — ante un estudio fraudulento usado por la industria, mapear qué decisiones se apoyaban en él (caso Hartford/PNAS 2012) |
