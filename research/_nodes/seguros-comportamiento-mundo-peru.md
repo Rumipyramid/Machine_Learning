@@ -316,3 +316,6 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
   hipótesis H8 conecta la evidencia causal sobre *dark patterns* (que casi cuadruplican la
   aceptación de un plan dudoso) con la causa #1 de desconfianza en seguros en Perú que documenta
   este node: la falta de información.
+- [[social-commerce-compra-en-redes-latam-peru|Compra en redes sociales (LATAM/Perú) y zoom en seguros]]
+  — lleva la desconfianza de base de este node (~48%) al canal social: en redes y WhatsApp se
+  vuelve un "impuesto de confianza" agravado por el fraude (SOAT falso, falso seguro de vida).

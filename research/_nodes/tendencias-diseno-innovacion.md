@@ -1797,3 +1797,6 @@ reportarse como pico del año en curso.**
   cifras atribuidas venía de emisores interesados y que **tres de ellas se atribuían a una
   institución que nunca las publicó**. Antes de que una cifra externa entre al esquema, verificar
   que **el emisor citado la haya publicado**, no solo que la cifra suene plausible.
+- [[social-commerce-compra-en-redes-latam-peru|Compra en redes sociales (LATAM/Perú) y zoom en seguros]]
+  — aplica la regla C22 (huérfano de cita) a otro dominio: las tasas de conversión "por plataforma"
+  de social commerce (F-490) y el "72% de J.D. Power" en seguros (F-501) no tienen fuente primaria.

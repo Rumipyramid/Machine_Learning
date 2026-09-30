@@ -364,3 +364,6 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
   el respaldo general de lo que este node aplica al caso de seguros: el efecto estética-usabilidad
   se reduce a menos de la mitad al controlar por **fluidez de procesamiento** (claridad > ornamento),
   y su hipótesis H7 propone testear exactamente eso en material de venta de Rimac.
+- [[social-commerce-compra-en-redes-latam-peru|Compra en redes sociales (LATAM/Perú) y zoom en seguros]]
+  — ver fotos y videos es la actividad #1 en redes en Perú (51,4%); los principios de reducción de
+  incertidumbre de este node aplican al contenido de redes de una aseguradora.

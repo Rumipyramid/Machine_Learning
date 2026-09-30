@@ -320,3 +320,6 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   contacto de su §2 y la resolución del Bloque 4 del playbook (§5) siguen el mismo patrón que
   este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
+- [[social-commerce-compra-en-redes-latam-peru|Compra en redes sociales (LATAM/Perú) y zoom en seguros]]
+  — el anuncio que lleva a WhatsApp (*click-to-WhatsApp*) es la táctica *opt-in* más directa que
+  documenta ese node: el cliente abre la conversación y el consentimiento queda resuelto.

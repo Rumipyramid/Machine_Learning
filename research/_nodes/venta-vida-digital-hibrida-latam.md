@@ -230,3 +230,6 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 - `proyecto-back-to-basics-ffvv-vida.md` — caso real de RIMAC (Perú) donde la apuesta es
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
+- [[social-commerce-compra-en-redes-latam-peru|Compra en redes sociales (LATAM/Perú) y zoom en seguros]]
+  — documenta el primer tramo (descubrimiento en redes, cierre por chat) del recorrido híbrido que
+  este node muestra ganando en la región; incluye Perú, que aquí se excluye.

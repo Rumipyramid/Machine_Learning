@@ -383,3 +383,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[social-commerce-compra-en-redes-latam-peru|Compra en redes sociales (LATAM/Perú) y zoom en seguros]]
+  — confirma la tesis de este node desde el canal social: la red genera la demanda (más de 2/3
+  empieza a buscar su seguro de vida en línea) y el asesor la cierra; el asesor-creador es la
+  versión social de "lo digital potencia al intermediario".
