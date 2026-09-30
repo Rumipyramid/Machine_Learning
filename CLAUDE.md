@@ -288,6 +288,15 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   se registra en `research/fuentes/codice.md` (resumen, rigurosidad, autor, año) —
   consultable con el skill `/codice`. Aplica también a lo que traigan `/gossip`
   (noticias/redes) y `/marketer` (benchmarks de negocio), no solo a `/seeker`.
+- **Citas en informes `.md` (regla del usuario, 2026-09-30):** todo informe/output en Markdown
+  lleva las referencias **dentro del cuerpo** en formato **(Autor, año)** junto a la afirmación
+  que sustentan —no solo el ID `F-n`— y cierra con una **lista de referencias en formato APA**
+  (7.ª ed., orden alfabético). Para mantener la trazabilidad del proyecto, cada entrada de la
+  lista termina con su ID del códice y su nivel de rigurosidad: `— [F-n, 🟡 C]`. Cuando una fuente
+  no tenga autor verificable, se cita por la organización o la publicación y se declara
+  explícitamente (`[autoría no verificada]`); nunca se inventa un autor. Los **nodes** de
+  `research/_nodes/` siguen citando por ID (`F-n`), que es su convención propia: esta regla aplica
+  a los informes derivados.
 - ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
 
 ---
