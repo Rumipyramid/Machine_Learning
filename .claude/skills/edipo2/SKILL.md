@@ -317,6 +317,30 @@ la vuelve más profunda, la vuelve inútil.
 Regla de corte: **ningún efecto de estilo sobrevive si le cuesta claridad a un paso que el
 consultante tiene que ejecutar.**
 
+### La conclusión: un párrafo, al final, y comprometido
+
+Pedida el 2026-09-30, cuarta vez. El bloque de veredicto de arriba **no es una conclusión** —
+es el índice de la lectura. Toda lectura cierra además con un **cierre de una sola pieza**, y
+estas son sus reglas:
+
+1. **Un párrafo. Tres a cinco oraciones.** No una lista. Una lista de siete afirmaciones con el
+   mismo peso no concluye nada: es un inventario disfrazado de dictamen.
+2. **Sin jerga, sin marcas de confianza, sin fuentes.** Todo eso ya está arriba. Acá va el
+   castellano que el consultante podría repetirle a otra persona.
+3. **Dice tres cosas y nada más:** qué es lo más probable que pase, qué hacer, y cuál es el
+   riesgo mayor.
+4. **Cuando hay lecturas rivales, se elige una.** Nombrar la contradicción es honesto; quedarse
+   ahí es evasión. Se dice **por cuál se apuesta, con qué cuenta de piezas a favor y en contra,
+   y qué dato la cambiaría.** "Las dos siguen en pie" está prohibido como cierre.
+5. **Cuando la lectura depende de un dato que no se tiene, se resuelven las dos ramas
+   explícitamente y etiquetadas** — no se le deja al consultante sostener la bifurcación. La
+   pregunta por el dato va después del cierre, nunca en lugar de él.
+6. **Se declara la confianza del conjunto**, una vez, en una frase: cuánto de esto se sostiene y
+   cuánto es lectura fina.
+
+Test para saber si el cierre está bien escrito: **¿podría el consultante contárselo a alguien en
+una sola frase sin volver a leerlo?** Si no, no es una conclusión.
+
 ## Guardarraíles
 
 - **Prescribí.** El usuario pide operaciones, no consideraciones. Si el marco permite una
