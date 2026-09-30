@@ -177,3 +177,6 @@
 | F-191 | 🔵 B | 2026-09-29 | Intuición 157 — la confianza solo modera la ruta normas subjetivas → intención; web skills no predice la intención de compra online de seguro de vida |
 | F-376 | 🔵 B | 2026-09-29 | Intuición 158 — la cifra "phygital duplica retención" no se encontró en el informe público; sí la preferencia híbrida >60% en LatAm |
 | F-24 | 🔵 B | 2026-09-29 | Intuición 159 — ante un estudio fraudulento usado por la industria, mapear qué decisiones se apoyaban en él (caso Hartford/PNAS 2012) |
+| F-345 | 🔵 B | 2026-09-30 | Intuición 160 — un revés de política de seguros se mide en tiempo de reversión y quién lo dispara; pilotear con el prestador |
+| F-263 | 🔵 B | 2026-09-30 | Intuición 161 — tamaño del sector (£136,7bn, 2023) no es efecto del diseño; revisar año/definición antes de citar |
+| F-427 | 🔵 B | 2026-09-30 | Intuición 162 — sin churn publicado, NDR>100% no basta; pedir retención por cohorte |

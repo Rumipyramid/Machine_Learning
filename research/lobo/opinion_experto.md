@@ -5369,6 +5369,46 @@ tesis 6 (testear en la propia población) sin cambiar su confianza.
 - **Conexión razonada, no forzada:** tesis 6; intuiciones 7 y 19 (el aviso ya vive en el análisis, no
   en el titular).
 
+### 160. Un revés de política de seguros se mide en cuánto tarda la reversión y en quién la dispara, no en el titular de "presión pública"
+F-345 (Anthem/Elevance, límite de tiempo de anestesia, dic-2024), leído vía `WebSearch` (Medscape, CNN,
+NPR, Healthcare Brew, ASA): la política (pagar anestesia solo hasta los minutos de los valores CMS
+Physician Work Time; denegar si se reporta más) se publicó el 1-dic para CT, NY y MO con vigencia en
+febrero, y se retiró el 5-dic (~4 días). El detonante fue **cabildeo previo de los anestesiólogos + escalada
+pública**, y el asegurador lo encuadró como "desinformación generalizada", no como error propio. Healthcare
+Brew añade que la controversia siguió (proyectos de ley posteriores). **Heurística:** cuando un asegurador
+introduce un límite unilateral sobre un acto clínico, el costo reputacional llega antes que el ahorro; la
+jugada segura es pilotear con el prestador en la mesa. Y si retrocedes, retroceder sin reconocer el fondo
+deja el riesgo latente en la legislación.
+- **Fuente:** F-345 (🔵B, prensa establecida + comunicados oficiales)
+- **Leído a fondo:** 2026-09-30 (`WebSearch`; NBC directo no consultado)
+- **Conexión razonada, no forzada:** riesgo de steering/empujón sin respaldo (tesis 23); intuición 155.
+
+### 161. "Tamaño del sector" no es "efecto del diseño": las cifras sobre el diseño se actualizan a la alza y aun así no prueban causalidad
+F-263 (Design Council/UAL, *Design Economy*), leído vía `WebSearch`: el ledger cita £97,4bn (4,9% del GVA,
+2019); la edición más reciente que encontré reporta **£136,7bn en 2023 (5,5% del GVA)**, más que el comercio
+minorista (£114bn), con dos tercios (£90,6bn) generados por diseñadores **fuera** de las industrias de
+diseño, y trabajadores con habilidades de diseño ~47% más productivos que el promedio. La fuente sigue
+siendo dimensionamiento: el 47% es correlación (quién es contratado con esas habilidades), no el efecto
+de invertir en diseño. **Heurística:** cuando la cifra sube, revisar si cambió la definición o el año antes
+de usarla como argumento; y no pasar de "el diseño pesa X" a "invertir en diseño rinde Y". Filas del
+ledger con cifra de un año quedan viejas: actualizar F-263 es tarea de `cronista`, no mía.
+- **Fuente:** F-263 (🔵B, organismo oficial UK)
+- **Leído a fondo:** 2026-09-30 (`WebSearch`; PDF completo no abierto)
+- **Conexión razonada, no forzada:** node tendencias-diseno-innovacion §2; misma familia que 134 y 156.
+
+### 162. Cuando una empresa se niega a publicar churn, NDR>100% no es respuesta: pedir la cohorte
+F-427 (Barclays sobre Lovable), leído vía `WebSearch`: tráfico −40% desde el pico (sep-2025), valuación
+implícita del banco US$1,8B, y Barclays anota que Lovable **nunca ha divulgado churn**. En paralelo la
+empresa reporta NDR >100% (nov-2025) y ARR que se multiplica mientras el tráfico cae; la cobertura
+posterior menciona rondas mucho más altas (US$6,6B dic-2025; US$13,3B ago-2026, sin verificar en fuente
+primaria). El estudio de Barclays no se abrió: es la cifra de un analista, no un filing. **Heurística:**
+tráfico y ARR contradictorios se reconcilian con retención por cohorte; si la empresa no la muestra, la
+valuación descansa en fe. Y una ronda posterior alta no refuta al analista: mide el apetito del inversor,
+no la retención. Refuerza H14 del node sin cerrarla (instinto, no dato).
+- **Fuente:** F-427 (🔵B, analista de banco vía resúmenes)
+- **Leído a fondo:** 2026-09-30 (`WebSearch`; documento Barclays no accesible)
+- **Conexión razonada, no forzada:** node tendencias-diseno-innovacion §11.9 / H14.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5422,7 +5462,7 @@ tesis 6 (testear en la propia población) sin cambiar su confianza.
 - **2026-08-01 a 2026-08-30** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días. El bloque se volvió a resumir y fusionar 21 veces desde entonces, cada
   vez que el día más antiguo salía de la ventana de ~30 días (de 08-10 el 2026-09-10 hasta, más
-  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29; lista completa de fusiones
+  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30; lista completa de fusiones
   intermedias omitida aquí por brevedad — no hay pérdida de información: el detalle de cada tesis
   creada o matizada en esta ventana vive en 🎯 Tesis vigentes y el de cada Intuición en su propia
   sección, cada una con su propia fecha de "Actualizado"/lectura.)* Veintiocho corridas.
@@ -5535,52 +5575,6 @@ tesis 6 (testear en la propia población) sin cambiar su confianza.
   incumplida no sesgo conductual gradual, F-339 veredicto agregado "sin efecto adverso sistemático" que
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
-- **2026-08-31** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull` trajo fast-forward 5612e59→0386d20, el commit de ayer de esta opinión y de
-  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
-  directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó la
-  corrida de ayer (2026-08-30), **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, decimoctavo día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
-  ~3 días, ya lleva diecinueve días sin correr; no lo disparo aquí porque es rutina de `cronista`,
-  no de este proceso diario). Sí corrió la rutina diaria de intuición (vigesimosexta corrida desde
-  el 2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A (mismo criterio que
-  la corrida de ayer — columna de rigurosidad que **empieza** con 🟢, excluyendo las 3 filas mixtas
-  F-149/F-457/F-466) y confirmé **134 filas**, de las cuales 72 ya tenían lectura profunda del Lobo
-  — de las 62 restantes elegí 3 al azar puro (Python `random.sample`, sin `--seed`): F-306 (Adobe
-  Inc., Form 10-Q SEC FY2026 Q2 — ya citado en el node de tendencias-diseno-innovacion, H16, solo
-  por las cifras de revenue/ARR y una lectura cínica sin verificar de la fusión de segmentos), F-19
-  (Chater & Loewenstein, *Behavioural Public Policy* — ya citado en tesis 7 solo como "brújula del
-  giro hacia diseño de producto/sistema") y F-429 (TechCrunch/VentureBeat + divulgación SEC sobre la
-  renuncia del CPO de Anthropic a la junta de Figma y el lanzamiento de Claude Design — ya citado en
-  el mismo node §11.8). Las tres bloqueadas por el proxy en su URL directa (sec.gov, papers.ssrn.com,
-  techcrunch.com); reconstruidas vía búsqueda dirigida con múltiples fuentes independientes que
-  confirman detalle de mecanismo nuevo en las tres, no solo el resumen ya citado — y en el caso de
-  F-429, que **corrigen un error de fecha real** en el ledger (ver abajo). Sumé las entradas 73, 74 y
-  75 de Intuición acumulada: (73) el argumento de Chater & Loewenstein no es solo que el s-frame
-  rinde más que el i-frame — es que promover el i-frame puede tener un efecto secundario político
-  deliberado, desviando respaldo de la reforma estructural que a algún interesado no le conviene;
-  agrega una lectura estratégica nueva a tesis 6 y 7 (¿quién se beneficia de enmarcar un problema de
-  negocio como falla de comprensión del cliente en vez de falla de diseño de producto?); (74) el
-  filing de Adobe declara una razón operativa propia (unified selling motions) para fusionar
-  segmentos — no descarta la lectura cínica de opacamiento bajo presión de IA que cronista registró
-  en F-306, pero sube el estándar de evidencia que esa hipótesis necesita para pasar de sospecha a
-  hallazgo; matiza H16 del node de tendencias-diseno-innovacion sin tocar ninguna tesis numerada;
-  (75) **corrección de fecha en F-429**: la renuncia del CPO de Anthropic a la junta de Figma fue el
-  14-abr-2026 (Form 8-K de Figma), no el 16-abr-2026 como decía el ledger — el intervalo real hasta
-  el lanzamiento de Claude Design (17-abr-2026) es de tres días, no de uno; corregido directamente en
-  `codice.md`. Un intervalo de tres días entre una renuncia por conflicto de interés y el lanzamiento
-  de un producto competidor completo es evidencia de que el producto ya estaba listo antes de que el
-  conflicto se hiciera público, heurística de lectura de eventos corporativos transferible a
-  cualquier evaluación de cuánta advertencia real da un disruptor con capacidad de IA ya construida.
-  Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo
-  de intuición, no una revisión de evidencia sobre las tesis existentes, aunque las tres entradas de
-  hoy sí acotan el alcance de tesis 6, 7 y de H16 del node de tendencias-diseno-innovacion, y una
-  corrige una fecha real del ledger. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
-  fuentes leídas hoy. Bitácora con 24 días de historial (2026-08-08 a hoy), dentro de la ventana de
-  ~30 días — sin podar todavía.
 - **2026-09-01** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull` fast-forward 5612e59→426eec7, el commit de ayer de esta opinión y de
   `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
@@ -6778,3 +6772,12 @@ tesis 6 (testear en la propia población) sin cambiar su confianza.
   normas subjetivas), 158 (cifra de consultora ausente del informe público) y 159 (fraude en estudio de
   honestidad: mapear decisiones que dependían de él). Poda: bloque 08-30 fusionado al resumen; Bitácora
   cubre 2026-08-31 a hoy. `fuentes_leidas_lobo.md` actualizado.
+- **2026-09-30** — Corrida diaria de refinamiento. `main` al día. El prompt externo apunta a
+  `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero
+  fuentes nuevas** — cuadragésimo noveno día sin cambios; la revisión profunda de `cronista` sigue sin
+  correr desde 2026-08-12. Sin cambios en tesis ni confianzas. **Dato a vigilar:** F-466 (WIPO GII) marcó
+  la edición 2026 para el 29-sep; no la verifiqué hoy, queda para `cronista`/iteración 5 del node.
+  **Intuición (nivel 🔵B, 50 pendientes, sorteo al azar):** F-345, F-263 y F-427, leídas vía `WebSearch`.
+  Entradas 160 (reversión de Anthem en ~4 días), 161 (el diseño pesa £136,7bn en 2023, pero sigue siendo
+  tamaño, no efecto; el ledger cita la edición 2019) y 162 (Lovable no publica churn; NDR>100% no basta).
+  Poda: 08-31 fusionado al resumen; Bitácora cubre 2026-09-01 a hoy. `fuentes_leidas_lobo.md` actualizado.
