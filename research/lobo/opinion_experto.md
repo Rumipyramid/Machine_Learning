@@ -5409,6 +5409,42 @@ no la retención. Refuerza H14 del node sin cerrarla (instinto, no dato).
 - **Leído a fondo:** 2026-09-30 (`WebSearch`; documento Barclays no accesible)
 - **Conexión razonada, no forzada:** node tendencias-diseno-innovacion §11.9 / H14.
 
+### 163. El sistema de salud ejemplar tiene capas, y la capa que cubre al promedio no es la que protege al más vulnerable
+F-102 (Commonwealth Fund, perfil de Singapur), leído vía `WebSearch` (la URL está bloqueada por el proxy; el
+perfil PDF 2026 aparece en resultados pero no se abrió). Lo que sí se vio: las "3M" (MediSave ahorro
+obligatorio, MediShield Life seguro básico universal, MediFund red focalizada) y un dato que el resumen
+del ledger no trae: **69% de los residentes además tiene un Integrated Shield Plan privado** y solo 31%
+queda en MediShield Life puro. **Heurística:** al importar un "modelo" de cobertura, preguntar qué
+porcentaje vive realmente en cada capa; el modelo no es la capa básica, es la mezcla. Para Perú: la
+jugada no es copiar el ahorro obligatorio sino la capa complementaria que absorbe al segmento medio
+(instinto, no dato). Las cifras ~85% y ~10% del ledger no las verifiqué hoy.
+- **Fuente:** F-102 (🔵B, organismo de política de salud)
+- **Leído a fondo:** 2026-10-01 (`WebSearch`; URL bloqueada)
+- **Conexión razonada, no forzada:** node mecanismos-seguros-salud (Singapur 3M); misma familia que 155.
+
+### 164. Un glosario oficial define el término, no el momento en que el cliente lo necesita
+F-11 (glosario SBS), leído vía `WebSearch` (URL bloqueada). El glosario define, p. ej., deducible como el
+importe o porcentaje del daño que debe pagar el asegurado para que la aseguradora brinde la cobertura. En
+el extracto que obtuve no vi coaseguro; no puedo afirmar que falte, solo que no lo confirmé. Y normativa SBS
+exige a las empresas explicar el alcance de deducibles/copagos/coaseguros cuando los aplican: la obligación
+está en el punto de venta, no en el portal. **Heurística:** una fuente normativa vale por la obligación
+que impone al proveedor, no por la definición que publica; auditar si la aseguradora cumple en el flujo de
+venta. Conecta con tesis 2 (coaseguro como cuello de comprensión).
+- **Fuente:** F-11 (🔵B, regulador; sin año "s.f.")
+- **Leído a fondo:** 2026-10-01 (`WebSearch`; extracto parcial)
+- **Conexión razonada, no forzada:** glosario-seguro-salud-peru; tesis 2.
+
+### 165. Un experimento en una sola empresa puede ser riguroso en su interior y aun así no generalizar; la variabilidad menor es el hallazgo más transferible
+F-259 (Silva, Rocha, Davila, Pinto), leído vía `WebSearch` (arXiv bloqueado; la ficha confirma envío del
+14-jul-2026, SBES 2026, 49 desarrolladores, Angular/iOS/Android, empresa brasileña, dos ciclos). Resultado:
+−46,7% a −69,4% en tiempo de entrega, mayor completitud y **menor variabilidad**. Confirmé fuente y cifras
+con la ficha, no con el texto completo. **Heurística:** cuando un efecto de productividad viene de una
+sola organización con su propio design system, tomar el piso (menos varianza) y descontar el techo
+(la magnitud). Sigue en conflicto con F-257 (METR) sin que yo pueda arbitrar.
+- **Fuente:** F-259 (🔵B, experimento controlado, aceptado en SBES 2026)
+- **Leído a fondo:** 2026-10-01 (`WebSearch`; texto completo no abierto)
+- **Conexión razonada, no forzada:** node tendencias-diseno-innovacion §2.3 / H6.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5575,50 +5611,8 @@ no la retención. Refuerza H14 del node sin cerrarla (instinto, no dato).
   incumplida no sesgo conductual gradual, F-339 veredicto agregado "sin efecto adverso sistemático" que
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
-- **2026-09-01** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull` fast-forward 5612e59→426eec7, el commit de ayer de esta opinión y de
-  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
-  directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó la
-  corrida de ayer (2026-08-31), **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, decimonoveno día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
-  ~3 días, ya lleva veinte días sin correr; no lo disparo aquí porque es rutina de `cronista`, no de
-  este proceso diario). Sí corrió la rutina diaria de intuición (vigesimoséptima corrida desde el
-  2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A (columna de
-  rigurosidad que **empieza** con 🟢, mismo criterio de las corridas previas) y confirmé **134
-  filas**, de las cuales 75 ya tenían lectura profunda del Lobo — de las 59 restantes elegí 3 al
-  azar puro (Python `random.sample`, sin `--seed`): F-158 (Mehri & Eskenazi, SIGDIAL 2020/ACL 2020,
-  FED/USR — ya citado en el node `evaluacion-calidad-agentes-conversacionales-ia` solo por las 8
-  dimensiones del esquema de anotación turno por turno), F-304 (Figma Inc., Form 8-K SEC FY2025 Q4 —
-  ya citado en `tendencias-diseno-innovacion.md` §4.1 solo por el cargo puntual de $975,7M de
-  compensación en acciones por IPO) y F-40 (perspectiva académica peer-reviewed sobre telemedicina
-  en Perú — ya citado como pista empírica de `/trinidad` 2026-07-06 solo por cinco etiquetas
-  genéricas de barrera). Las tres bloqueadas por el proxy en su URL directa (aclanthology.org,
-  sec.gov, ncbi.nlm.nih.gov); reconstruidas vía búsqueda dirigida (Semantic Scholar/NSF Public
-  Access para F-158; Yahoo Finance/Nasdaq/The Investment Log para F-304; PMC espejo/PubMed/
-  ResearchGate/Universidad Continental para F-40) que confirman detalle de mecanismo nuevo en las
-  tres, no solo el resumen de una línea ya citado. Sumé las entradas 76, 77 y 78 de Intuición
-  acumulada: (76) "no supervisado" (FED se construye sobre la verosimilitud de un DialoGPT
-  preentrenado, sin afinarse con calificaciones humanas) y "correlaciona con el humano" (que el
-  paper sí reportó, moderado-a-fuerte, en el subset turno por turno de 455 muestras) son dos
-  afirmaciones distintas — exigir el estudio de validación, no aceptar la etiqueta "no supervisado"
-  como garantía de validez, matiz nuevo para la intuición 20 (F-151); (77) la compensación en
-  acciones **total del año** de Figma llegó a 129% del revenue anual (no solo el cargo puntual de
-  $975,7M del trimestre de vesting) — el titular de 41% de crecimiento de revenue convive con una
-  dilución estructural que ese titular no menciona, matiz nuevo para la lectura de F-303/F-304 en
-  `tendencias-diseno-innovacion`; (78) las cinco barreras a la telemedicina en Perú de F-40 no son
-  una barrera compuesta sino cinco capas de infraestructura independientes (conectividad,
-  interoperabilidad de historias clínicas, gobernanza de la agenda digital, capacidad de personal,
-  alfabetización digital del usuario) que pueden fallar cada una por separado — un piloto urbano
-  exitoso no valida las demás, matiz nuevo para la intuición 41 y para `modelo-salud-ia-farmacias-
-  peru`. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
-  paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque las tres
-  entradas de hoy sí acotan el alcance de la intuición 20, de la intuición 41 y de la lectura de dos
-  nodes de investigación. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 25 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
-  — sin podar todavía.
+  **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
+  (🔵B) sin cambio de confianza en tesis.
 - **2026-09-02** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull` fast-forward 5612e59→a2807ae, trajo el commit de ayer de esta opinión y de
   `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
@@ -6781,3 +6775,11 @@ no la retención. Refuerza H14 del node sin cerrarla (instinto, no dato).
   Entradas 160 (reversión de Anthem en ~4 días), 161 (el diseño pesa £136,7bn en 2023, pero sigue siendo
   tamaño, no efecto; el ledger cita la edición 2019) y 162 (Lovable no publica churn; NDR>100% no basta).
   Poda: 08-31 fusionado al resumen; Bitácora cubre 2026-09-01 a hoy. `fuentes_leidas_lobo.md` actualizado.
+- **2026-10-01** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`,
+  que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero fuentes nuevas** —
+  quincuagésimo día sin cambios; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12. Sin
+  cambios en tesis ni confianzas. **Intuición (nivel 🔵B, 49 pendientes, sorteo al azar):** F-102, F-11 y
+  F-259, leídas vía `WebSearch` (las tres URLs bloqueadas). Entradas 163 (69% de Singapur tiene seguro
+  privado complementario: el modelo es la mezcla), 164 (el glosario SBS vale por la obligación de explicar
+  en la venta) y 165 (−46,7/−69,4% en una sola empresa: tomar el piso de varianza, descontar el techo).
+  Poda: 09-01 fusionado al resumen; Bitácora cubre 2026-09-02 a hoy. `fuentes_leidas_lobo.md` actualizado.

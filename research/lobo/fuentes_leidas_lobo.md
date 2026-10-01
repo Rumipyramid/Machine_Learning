@@ -180,3 +180,6 @@
 | F-345 | 🔵 B | 2026-09-30 | Intuición 160 — un revés de política de seguros se mide en tiempo de reversión y quién lo dispara; pilotear con el prestador |
 | F-263 | 🔵 B | 2026-09-30 | Intuición 161 — tamaño del sector (£136,7bn, 2023) no es efecto del diseño; revisar año/definición antes de citar |
 | F-427 | 🔵 B | 2026-09-30 | Intuición 162 — sin churn publicado, NDR>100% no basta; pedir retención por cohorte |
+| F-102 | 🔵 B | 2026-10-01 | Intuición 163 — el modelo de Singapur es la mezcla de capas: 69% además tiene seguro privado complementario |
+| F-11 | 🔵 B | 2026-10-01 | Intuición 164 — un glosario oficial vale por la obligación de explicar en la venta, no por la definición publicada |
+| F-259 | 🔵 B | 2026-10-01 | Intuición 165 — efecto de una sola empresa: tomar el piso de menor variabilidad, descontar la magnitud |
