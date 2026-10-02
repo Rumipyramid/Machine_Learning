@@ -94,8 +94,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1887,
-   "cites": 198,
+   "lines": 1898,
+   "cites": 203,
    "design": true
   },
   {
@@ -4725,6 +4725,51 @@
    "autor": "The Insurer",
    "anio": "2026",
    "huerfana": false
+  },
+  {
+   "id": "F-511",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "FTC's 'Click-to-Cancel' Rule Gets New Life As FTC's Enforcement Wave Continues to Target Negative-Option Sellers",
+   "autor": "Goodwin Law · Kirkland & Ellis · Holland & Knight (alertas de firmas jurídicas sobre la FTC)",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-512",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "EAA First Year: Enforcement and Penalties, EU 27 / EAA at One Year: A Year of Enforcement",
+   "autor": "Disability World · AuditSU (blogs del sector de accesibilidad)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-513",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Quantifying Visual Complexity in Generative AI-Designed User Interfaces: Information-Theoretic and Structural Associations with Perceived Co",
+   "autor": "Autoría no capturada — Electronics (MDPI)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-514",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Design innovation and firm performance: Evidence from patent subtype analysis",
+   "autor": "Autoría no capturada — ScienceDirect",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-515",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Generative AI and jobs: a refined global index of occupational exposure",
+   "autor": "ILO · Banco Mundial",
+   "anio": "2025",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -7561,6 +7606,31 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-510",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-511",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-512",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-513",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-514",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-515",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -7778,16 +7848,16 @@
    },
    {
     "fecha": "2026-10-02",
-    "nuevas": 42,
-    "acumuladas": 510,
-    "AB": 17,
+    "nuevas": 47,
+    "acumuladas": 515,
+    "AB": 20,
     "rigor": {
-     "B": 13,
-     "C": 20,
-     "D": 3,
+     "B": 15,
+     "C": 21,
+     "D": 4,
      "E": 1,
      "?": 1,
-     "A": 4
+     "A": 5
     }
    }
   ],
@@ -9799,7 +9869,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1887,
+   "lines": 1898,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

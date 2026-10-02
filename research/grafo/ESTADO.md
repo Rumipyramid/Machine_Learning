@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 16 | 6,800 líneas |
+| Nodes (`_nodes/`) | 16 | 6,811 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 510 | 🟢A 138 · 🔵B 89 · 🟡C 120 · 🟠D 120 · 🔴E 29 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 515 | 🟢A 139 · 🔵B 91 · 🟡C 121 · 🟠D 121 · 🔴E 29 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
-| Fuentes citadas por ≥1 node | 399 de 510 | 78% del ledger; **111 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 404 de 515 | 78% del ledger; **111 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 41 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 95 de 510 fuentes (19%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 95 de 515 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -22,9 +22,9 @@
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 5 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02) | cuántas veces se confrontó el node |
-| Tamaño | 1,887 líneas | crecimiento ≠ calidad; ver trazabilidad |
-| Fuentes citadas explícitamente | 198 | F-n individuales dentro del node |
-| …de rigor A/B | 79 (40%) | solidez de la base |
+| Tamaño | 1,898 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Fuentes citadas explícitamente | 203 | F-n individuales dentro del node |
+| …de rigor A/B | 82 (40%) | solidez de la base |
 | Hipótesis vivas | 33: abierta 19 · parcial 8 · respaldada 4 · refutada 1 | tablero §6 |
 | **Falsabilidad ejercida** | 42% (14/33) | hipótesis que ya se movieron de `abierta` |
 | **Tasa de autocorrección** | 7% (1/14) | de las resueltas, cuántas se refutaron: 0% sostenido sería señal de confirmación sesgada |
@@ -38,10 +38,10 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 20 | 0.094 | ✅ |
-| `behavioral-design-estado-disciplina` | 6 | 0.03 | ✅ |
+| `conducta-humano-ia` | 20 | 0.092 | ✅ |
+| `behavioral-design-estado-disciplina` | 6 | 0.029 | ✅ |
 | `mecanismos-seguros-salud` | 6 | 0.024 | ✅ |
-| `material-visual-venta-consultiva` | 5 | 0.024 | ✅ |
+| `material-visual-venta-consultiva` | 5 | 0.023 | ✅ |
 | `proyecto-back-to-basics-ffvv-vida` | 3 | 0.013 | ✅ |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 1 | 0.005 | ✅ |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ❌ sin enlace |
@@ -79,7 +79,7 @@
 | 2026-07-27 | 51 | 379 | 24 | █████████████ |
 | 2026-07-29 | 19 | 398 | 7 | █████ |
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
-| 2026-10-02 | 42 | 510 | 17 | ██████████ |
+| 2026-10-02 | 47 | 515 | 20 | ████████████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -117,7 +117,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 1887 | 198 | 79 | 8/8 | 2026-10-02 | 2026-10-02 v4.1 |
+| `tendencias-diseno-innovacion` | 1898 | 203 | 82 | 8/8 | 2026-10-02 | 2026-10-02 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
 | `conducta-humano-ia` | 139 | 35 | 25 | 5/5 | 2026-10-02 | 2026-10-02 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |

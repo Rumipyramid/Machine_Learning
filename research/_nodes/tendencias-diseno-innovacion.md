@@ -9,7 +9,7 @@
 > Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
 > demostrado y cuáles son propuestas todavía sin respaldo?**
 > Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iter. 2: F-380 a F-398 ·
-> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · iter. 5: F-469 a F-476 · addendum 5b: F-509 a F-510 · 5c: puente con fuentes A/B ya registradas, §2.6).
+> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · iter. 5: F-469 a F-476 · addendum 5b: F-509 a F-510 · 5c: puente con fuentes A/B ya registradas, §2.6 · 5d: F-511 a F-515, §2.7).
 >
 > **Lo último (iteración 4, 2026-08-02) — el alcance se amplió a 💡 innovación y la tesis pasó la
 > prueba.** La pregunta de esta corrida era la más peligrosa que el node podía hacerse: *lo que
@@ -341,6 +341,17 @@ reportes separados.*
 **Tamaño del sector, empleo y evidencia de servicio (no confundir tamaño con efecto)**
 - El diseño aporta £97,4 mil M de GVA directo en el Reino Unido (F-263, 🔵B): mide **tamaño**, no efecto causal. Las proyecciones ocupacionales de F-308/F-309 se apoyan en el marco metodológico de F-310 (🔵B).
 - Menos de la mitad de los estudios de codiseño de servicios de salud evalúa outcomes (F-252, 🟢A): el diseño de servicio es el subcampo con menos evidencia de efecto (cf. H18).
+
+
+### 2.7 🔁 Búsqueda de evidencia A/B nueva (iteración 5d, 2026-10-02)
+
+*Barrido dirigido a H6 y H7 y a las afirmaciones del node apoyadas en material de rigor bajo; lectura vía `WebSearch` de resúmenes. Resultado: **3 fuentes A/B nuevas y 2 de rigor bajo; ninguna hipótesis se movió.***
+
+- **Diseño y desempeño de la firma (corrobora §2.1).** Cada subtipo de patente de diseño tiene un efecto positivo y significativo sobre el ROA en 8.671 observaciones empresa-año de firmas chinas (F-514, 🟢A): otra medida y otro país con la misma conclusión que F-237/F-238 —**asociación, no causalidad**.
+- **Generative UI contra una línea base humana (refuerza H33 y C15).** En un estudio intra-sujetos (N=62), las interfaces crudas generadas por IA tuvieron mayor carga cognitiva y menor facilidad de tarea que las diseñadas por humanos; las optimizadas con prompts mejoraron pero siguieron distinguibles de la referencia humana (F-513, 🔵B). Es la comparación con línea base humana que le faltaba a F-476.
+- **Empleo (contrapeso al "reemplazo").** El índice de exposición de la OIT y el Banco Mundial insiste en que **exposición no es pérdida de empleo** y en el alto potencial de aumento (F-515, 🔵B), en línea con BLS (F-308, F-309) y distinto del tono del discurso gremial (H10/H11).
+- **Dark patterns y accesibilidad: de la evidencia al costo (refuerza C14).** El acuerdo de la FTC con Amazon por US$2.500 M incluyó cambios obligatorios en las interfaces de alta y baja (F-511, 🟡C); el primer año del EAA dejó la primera sentencia (Carrefour, jun-2026) pero **ninguna multa en la UE** (F-512, 🟠D). *Matiza la fila de §5 sobre accesibilidad: la obligación está documentada, la sanción efectiva aún no.* Ambas fuentes son de rigor bajo (firmas jurídicas, blogs de proveedores).
+- **H6 y H7: sin movimiento.** No apareció replicación independiente del efecto de los design systems (F-259 sigue siendo un solo estudio, SBES 2026, N=49) ni un A/B de campo que aísle fluidez de estética. Una revisión sistemática reportada sin título identificable (25 estudios, N=3.025, g≈0,12 de la estética sobre el desempeño) **no se usa**: no se pudo atribuir.
 
 
 ## 3. 📱 Pista social/mediática (gossiper)
