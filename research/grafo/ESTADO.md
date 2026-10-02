@@ -8,12 +8,12 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 15 | 6,535 líneas |
-| Outputs (`_outputs/`) | 4 | derivan de nodes: 3 de 4 citan algún node |
+| Nodes (`_nodes/`) | 15 | 6,540 líneas |
+| Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
 | Fuentes en el ledger | 468 | 🟢A 134 · 🔵B 76 · 🟡C 100 · 🟠D 117 · 🔴E 28 · otras/sin clasificar 13 |
-| Aristas wikilink (node→node) | 69 | recíprocas: 64 de 69 (93%) |
+| Aristas wikilink (node→node) | 74 | recíprocas: 74 de 74 (100%) |
 | Fuentes citadas por ≥1 node | 352 de 468 | 75% del ledger; **116 viven solo en el ledger** |
-| Fuentes citadas por ≥2 nodes (transversales) | 13 | evidencia reutilizada entre temas |
+| Fuentes citadas por ≥2 nodes (transversales) | 15 | evidencia reutilizada entre temas |
 | **Grafo semántico** (relaciones extraídas) | 13 de 468 fuentes (3%) | 49 relaciones · 2 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
@@ -38,6 +38,7 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
+| `mecanismos-seguros-salud` | 2 | 0.01 | ✅ |
 | `behavioral-design-estado-disciplina` | 0 | 0.0 | ✅ |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 0 | 0.0 | ✅ |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ❌ sin enlace |
@@ -45,7 +46,6 @@
 | `glosario-seguro-vida-peru` | 0 | 0.0 | ❌ sin enlace |
 | `material-visual-venta-consultiva` | 0 | 0.0 | ✅ |
 | `matriz-productos-vida-rimac` | 0 | 0.0 | ❌ sin enlace |
-| `mecanismos-seguros-salud` | 0 | 0.0 | ✅ |
 | `modelo-personas-sinteticas` | 0 | 0.0 | ✅ |
 | `modelo-salud-ia-farmacias-peru` | 0 | 0.0 | ❌ sin enlace |
 | `proyecto-back-to-basics-ffvv-vida` | 0 | 0.0 | ✅ |
@@ -95,39 +95,39 @@
 |---|---|---|---|
 | M1 Base sólida (A+B / ledger) | 45% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
 | M2 Cobertura de citación | 75% | cuánto del ledger sostiene algún node | un node puede citar mal |
-| M3 Reciprocidad de enlaces | 93% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
+| M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 39% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 23% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
-| M6 Integración (diseño↔resto) | 7/14 nodes enlazados; 0 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
+| M6 Integración (diseño↔resto) | 7/14 nodes enlazados; 1 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
 | M7 Lectura profunda (Lobo) | 169 fuentes leídas a fondo = 36% del ledger; 168 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
 
 - ✅ F-n citadas en un node pero **ausentes del ledger**: **0**
-- ⚠️ Wikilinks **no recíprocos** (viola regla 5): **5** — behavioral-design-estado-disciplina → material-visual-venta-consultiva, futuro-asesores-seguros-venta-digital → transicion-venta-fria-a-opt-in, mecanismos-seguros-salud → material-visual-venta-consultiva, tendencias-diseno-innovacion → mecanismos-seguros-salud, venta-vida-digital-hibrida-latam → seguros-comportamiento-mundo-peru
+- ✅ Wikilinks **no recíprocos** (viola regla 5): **0**
 - ✅ Wikilinks **rotos** (destino inexistente): **0**
 - ✅ Nodes **aislados** (sin enlaces): **0**
 - ✅ Nodes **ausentes** de la tabla de `alma.md`: **0**
 - ✅ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2026-08-13; antes es indeterminable): **0**
-- ⚠️ Outputs que **no citan ningún node** (viola regla 4): **1** — back-to-basics-presentacion-lowfi-2026-07-27.html
+- ✅ Outputs que **no citan ningún node** (viola regla 4): **0**
 
 ## 6. Tabla por node
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 1800 | 167 | 55 | 6/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-02 v4.0 |
-| `mecanismos-seguros-salud` | 331 | 43 | 26 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-22 v1.2 |
+| `tendencias-diseno-innovacion` | 1800 | 167 | 55 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-02 v4.0 |
+| `mecanismos-seguros-salud` | 332 | 45 | 27 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v1.2 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |
-| `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 5/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
+| `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
 | `modelo-salud-ia-farmacias-peru` | 605 | 21 | 18 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-12 v1.0 |
-| `transicion-venta-fria-a-opt-in` | 323 | 18 | 7 | 4/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-14 v1.0 |
-| `material-visual-venta-consultiva` | 367 | 17 | 12 | 7/5 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-21 v1.1 |
+| `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v1.0 |
+| `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v1.1 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 253 | 13 | 9 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-15 v1.0 |
-| `behavioral-design-estado-disciplina` | 317 | 8 | 7 | 5/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-29 v1.1 |
+| `behavioral-design-estado-disciplina` | 317 | 8 | 7 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-29 v1.1 |
 | `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-24 v1.0 |
-| `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 1/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
+| `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
 | `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-21 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 319 | 3 | 1 | 11/10 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-21 v1.1 |
+| `seguros-comportamiento-mundo-peru` | 320 | 3 | 1 | 11/11 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v1.1 |
 | `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-26 v1.2 |
 | `modelo-personas-sinteticas` | 73 | 0 | 0 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-20 v1.0 |
 

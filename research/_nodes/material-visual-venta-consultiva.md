@@ -364,3 +364,5 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
   el respaldo general de lo que este node aplica al caso de seguros: el efecto estética-usabilidad
   se reduce a menos de la mitad al controlar por **fluidez de procesamiento** (claridad > ornamento),
   y su hipótesis H7 propone testear exactamente eso en material de venta de Rimac.
+- [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — es el node que enlaza a este como aplicación concreta: experimentar en la propia población y diseñar a nivel de producto, no solo de mensaje, es el patrón que aquí se aplica a explicar un producto de seguros.
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — su §3 remite a este node para la pregunta abierta de cómo hacer comprensibles la cobertura y el coaseguro a quien decide.

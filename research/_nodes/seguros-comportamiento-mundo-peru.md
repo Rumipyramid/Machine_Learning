@@ -316,3 +316,4 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
   hipótesis H8 conecta la evidencia causal sobre *dark patterns* (que casi cuadruplican la
   aceptación de un plan dudoso) con la causa #1 de desconfianza en seguros en Perú que documenta
   este node: la falta de información.
+- [[venta-vida-digital-hibrida-latam|Venta de seguros de vida en LATAM (Brasil y región)]] — cubre el panorama regional que aquí se trata solo para Perú; juntos dan el cuadro completo de percepción y canal en la región.

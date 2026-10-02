@@ -38,7 +38,7 @@
   {
    "id": "material-visual-venta-consultiva",
    "type": "node",
-   "lines": 367,
+   "lines": 369,
    "cites": 17,
    "design": false
   },
@@ -52,8 +52,8 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 331,
-   "cites": 43,
+   "lines": 332,
+   "cites": 45,
    "design": false
   },
   {
@@ -80,7 +80,7 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 319,
+   "lines": 320,
    "cites": 3,
    "design": false
   },
@@ -94,7 +94,7 @@
   {
    "id": "transicion-venta-fria-a-opt-in",
    "type": "node",
-   "lines": 323,
+   "lines": 324,
    "cites": 18,
    "design": false
   },
@@ -4347,7 +4347,7 @@
    "s": "behavioral-design-estado-disciplina",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
-   "recip": false
+   "recip": true
   },
   {
    "s": "behavioral-design-estado-disciplina",
@@ -4419,7 +4419,7 @@
    "s": "futuro-asesores-seguros-venta-digital",
    "t": "transicion-venta-fria-a-opt-in",
    "k": "wikilink",
-   "recip": false
+   "recip": true
   },
   {
    "s": "futuro-asesores-seguros-venta-digital",
@@ -4471,7 +4471,19 @@
   },
   {
    "s": "material-visual-venta-consultiva",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "material-visual-venta-consultiva",
    "t": "futuro-asesores-seguros-venta-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "material-visual-venta-consultiva",
+   "t": "mecanismos-seguros-salud",
    "k": "wikilink",
    "recip": true
   },
@@ -4533,7 +4545,7 @@
    "s": "mecanismos-seguros-salud",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
-   "recip": false
+   "recip": true
   },
   {
    "s": "mecanismos-seguros-salud",
@@ -4544,6 +4556,12 @@
   {
    "s": "mecanismos-seguros-salud",
    "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
   },
@@ -4686,6 +4704,12 @@
    "recip": true
   },
   {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "venta-vida-digital-hibrida-latam",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "behavioral-design-estado-disciplina",
    "k": "wikilink",
@@ -4707,7 +4731,7 @@
    "s": "tendencias-diseno-innovacion",
    "t": "mecanismos-seguros-salud",
    "k": "wikilink",
-   "recip": false
+   "recip": true
   },
   {
    "s": "tendencias-diseno-innovacion",
@@ -4724,6 +4748,12 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "futuro-asesores-seguros-venta-digital",
    "k": "wikilink",
    "recip": true
   },
@@ -4755,7 +4785,22 @@
    "s": "venta-vida-digital-hibrida-latam",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
-   "recip": false
+   "recip": true
+  },
+  {
+   "s": "back-to-basics-presentacion-lowfi-2026-07-27.html",
+   "t": "futuro-asesores-seguros-venta-digital",
+   "k": "deriva"
+  },
+  {
+   "s": "back-to-basics-presentacion-lowfi-2026-07-27.html",
+   "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "deriva"
+  },
+  {
+   "s": "back-to-basics-presentacion-lowfi-2026-07-27.html",
+   "t": "transicion-venta-fria-a-opt-in",
+   "k": "deriva"
   },
   {
    "s": "back-to-basics-presentacion-milagros-2026-07-23.md",
@@ -6538,8 +6583,18 @@
    "k": "cita"
   },
   {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-449",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-449",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-450",
    "k": "cita"
   },
   {

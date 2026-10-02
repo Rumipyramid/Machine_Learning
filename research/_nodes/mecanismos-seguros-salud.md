@@ -328,3 +328,4 @@ estadounidense — buena señal para el diseño de
   casos de Babylon Health y el "reset" de Oscar Health (§3 aquí) son la misma advertencia
   a nivel de suscripción/operación que ese node documenta a nivel de distribución: apostar
   por tecnología sin disciplina humana de por medio tiende a salir caro.
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — aporta el contraste Root (combined ratio 91,4%) vs. Lemonade (~139%) con evidencia auditada (F-449, F-450): la innovación en seguros se evalúa por su disciplina de suscripción, no por su capa tecnológica (H29); aplica al análisis de qué modelos navegan bien la presión de costo.
