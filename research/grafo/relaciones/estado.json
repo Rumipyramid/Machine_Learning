@@ -159,6 +159,19 @@
    "triples": 18,
    "sin_aporte": [],
    "notas": "Pase de amplitud a nivel ficha: 14 fuentes 🟢A citadas por los nodes de seguros y salud (sesgos, divulgación, nudges, telemedicina Perú, marcos de implementación)."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f_ids": [
+    "F-504",
+    "F-505",
+    "F-506",
+    "F-507",
+    "F-508"
+   ],
+   "triples": 6,
+   "sin_aporte": [],
+   "notas": "Seguros Perú: resultados 2T, sistema 1S 2026, penetración reconciliada y PL 08488."
   }
  ],
  "discrepancias": [
@@ -219,8 +232,9 @@
   {
    "fecha": "2026-10-02",
    "f": "F-483",
-   "estado": "abierta",
-   "detalle": "La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS."
+   "estado": "cerrada",
+   "detalle": "La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS.",
+   "resolucion": "Reconciliada el 2026-10-02: la penetración de Perú oscila 2,0%-2,1% (SBS: 2,06% a setiembre de 2025, F-507); 2,01% (estimación al 2T 2026) y ~2,08% (node) son compatibles. La cifra de ~2,5% corresponde a otra medida o fuente no atribuida. Reserva: no se abrió el documento de la SBS."
   }
  ],
  "resoluciones": [
@@ -307,6 +321,12 @@
    "estado": "matizada",
    "fecha": "2026-10-02",
    "nota": "El meta-análisis de 2026 (F-498) halla un efecto pequeño pero significativo de las explicaciones sobre la sola predicción, no limitado a tareas difíciles. RP1 se reformula: efecto pequeño y condicional, no nulo."
+  },
+  {
+   "triple": "T-173",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-02",
+   "nota": "Contradicción potencial de alto impacto (+1,1% vs. +8-9% esperado): la nota de prensa no tiene fecha confirmada y no se abrió la estadística de la SBS. Pendiente de verificación con la fuente oficial antes de modificar la tesis del mercado peruano."
   }
  ]
 }

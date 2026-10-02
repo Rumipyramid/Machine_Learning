@@ -124,6 +124,11 @@
   "nombre": "La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe",
   "tipo": "afirmacion"
  },
+ "c_crecimiento_8_9": {
+  "id": "c_crecimiento_8_9",
+  "nombre": "El mercado peruano crece 8%-9% en 2026",
+  "tipo": "afirmacion"
+ },
  "c_crisis_consultoras": {
   "id": "c_crisis_consultoras",
   "nombre": "Crisis estructural del modelo de consultora de diseño",
@@ -267,6 +272,11 @@
  "c_pen_2_08": {
   "id": "c_pen_2_08",
   "nombre": "Penetración ~2,08% (cifra del node)",
+  "tipo": "afirmacion"
+ },
+ "c_pen_estable_2": {
+  "id": "c_pen_estable_2",
+  "nombre": "La penetración peruana oscila 2,0%-2,1% del PBI",
   "tipo": "afirmacion"
  },
  "c_persuasion_concentrada": {
@@ -569,6 +579,11 @@
   "nombre": "Predictores del éxito de un producto nuevo (ventaja, mercado, ajuste, predesarrollo, recursos)",
   "tipo": "constructo"
  },
+ "farmacias_sistema_salud": {
+  "id": "farmacias_sistema_salud",
+  "nombre": "Integración de farmacias y boticas al sistema nacional de salud",
+  "tipo": "concepto"
+ },
  "firmas_publicas_eeuu": {
   "id": "firmas_publicas_eeuu",
   "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
@@ -819,6 +834,11 @@
   "nombre": "Persuasión conversacional por IA",
   "tipo": "intervencion"
  },
+ "pl_08488": {
+  "id": "pl_08488",
+  "nombre": "Proyecto de Ley 08488/2024-CR (farmacias en el sistema nacional de salud)",
+  "tipo": "intervencion"
+ },
  "precio_accion_figma": {
   "id": "precio_accion_figma",
   "nombre": "Precio de la acción de Figma (FIG)",
@@ -844,6 +864,11 @@
   "nombre": "Primas netas de Perú (S/24.034 M a dic-2025, +8,3%)",
   "tipo": "resultado"
  },
+ "primas_sistema_1s_2026": {
+  "id": "primas_sistema_1s_2026",
+  "nombre": "Primas netas del sistema peruano en el 1S 2026 (+1,1%)",
+  "tipo": "resultado"
+ },
  "productividad_devs": {
   "id": "productividad_devs",
   "nombre": "Productividad de desarrolladores",
@@ -864,6 +889,11 @@
   "nombre": "Ranking de 138 expertos en diseño industrial",
   "tipo": "metrica"
  },
+ "ratio_combinado_mapfre_peru": {
+  "id": "ratio_combinado_mapfre_peru",
+  "nombre": "Ratio combinado de Mapfre Perú (102,4% en el 1T 2026)",
+  "tipo": "resultado"
+ },
  "re_aim": {
   "id": "re_aim",
   "nombre": "Marco RE-AIM",
@@ -883,6 +913,11 @@
   "id": "relacion_innovacion_desempeno",
   "nombre": "Relación innovación → desempeño",
   "tipo": "afirmacion"
+ },
+ "rentabilidad_tecnica_peru": {
+  "id": "rentabilidad_tecnica_peru",
+  "nombre": "Rentabilidad técnica del negocio asegurador peruano",
+  "tipo": "resultado"
  },
  "revenue_figma_q1": {
   "id": "revenue_figma_q1",
@@ -1002,6 +1037,11 @@
  "usabilidad_percibida_sus": {
   "id": "usabilidad_percibida_sus",
   "nombre": "Usabilidad percibida (SUS)",
+  "tipo": "resultado"
+ },
+ "utilidad_rimac": {
+  "id": "utilidad_rimac",
+  "nombre": "Utilidad neta de Rímac (2T 2026: S/85,8 M)",
   "tipo": "resultado"
  },
  "valoracion_estetica": {

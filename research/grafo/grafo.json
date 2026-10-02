@@ -87,8 +87,8 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 331,
-   "cites": 9,
+   "lines": 333,
+   "cites": 13,
    "design": false
   },
   {
@@ -4662,6 +4662,51 @@
    "autor": "htek.dev (resumen de un estudio de Stanford)",
    "anio": "2026",
    "huerfana": false
+  },
+  {
+   "id": "F-504",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "RIMAC Seguros y Reaseguros S.A. presenta sus resultados del segundo trimestre y del primer semestre de 2026",
+   "autor": "MarketScreener (sobre resultados de Rímac Seguros y Reaseguros)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-505",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Mapfre gana 311 millones de euros hasta marzo, un 12,7% más (detalle de Perú)",
+   "autor": "Mapfre (nota de prensa de resultados 1T 2026, Perú)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-506",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Ganancias bajan en la mitad de las compañías de seguros: ¿cuánto gana la suya?",
+   "autor": "Gestión (sobre datos de la SBS al 1S 2026)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-507",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Sistema de Seguros — Setiembre 2025 (SS-0003)",
+   "autor": "SBS (estadística oficial del Sistema de Seguros, setiembre 2025)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-508",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Proyecto de Ley N° 08488/2024-CR — Ley que incorpora a las farmacias y boticas al sistema nacional de salud",
+   "autor": "vLex Perú · Congreso de la República",
+   "anio": "2024-2025",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -7265,11 +7310,6 @@
    "k": "cita"
   },
   {
-   "s": "seguros-comportamiento-mundo-peru",
-   "t": "F-487",
-   "k": "cita"
-  },
-  {
    "s": "conducta-humano-ia",
    "t": "F-488",
    "k": "cita"
@@ -7352,6 +7392,31 @@
   {
    "s": "conducta-humano-ia",
    "t": "F-503",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-504",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-505",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-506",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-507",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-508",
    "k": "cita"
   }
  ],
@@ -7570,12 +7635,12 @@
    },
    {
     "fecha": "2026-10-02",
-    "nuevas": 35,
-    "acumuladas": 503,
-    "AB": 14,
+    "nuevas": 40,
+    "acumuladas": 508,
+    "AB": 16,
     "rigor": {
-     "B": 10,
-     "C": 16,
+     "B": 12,
+     "C": 19,
      "D": 3,
      "E": 1,
      "?": 1,

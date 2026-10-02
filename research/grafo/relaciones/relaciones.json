@@ -236,6 +236,15 @@
    ]
   },
   {
+   "id": "c_crecimiento_8_9",
+   "nombre": "El mercado peruano crece 8%-9% en 2026",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-506"
+   ]
+  },
+  {
    "id": "c_crisis_consultoras",
    "nombre": "Crisis estructural del modelo de consultora de diseño",
    "tipo": "afirmacion",
@@ -502,6 +511,15 @@
    "grado": 1,
    "fuentes": [
     "F-483"
+   ]
+  },
+  {
+   "id": "c_pen_estable_2",
+   "nombre": "La penetración peruana oscila 2,0%-2,1% del PBI",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-507"
    ]
   },
   {
@@ -1064,6 +1082,15 @@
    ]
   },
   {
+   "id": "farmacias_sistema_salud",
+   "nombre": "Integración de farmacias y boticas al sistema nacional de salud",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-508"
+   ]
+  },
+  {
    "id": "firmas_publicas_eeuu",
    "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
    "tipo": "poblacion",
@@ -1491,10 +1518,11 @@
    "id": "penetracion_peru",
    "nombre": "Penetración de seguros en Perú",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-482",
-    "F-483"
+    "F-483",
+    "F-507"
    ]
   },
   {
@@ -1533,6 +1561,15 @@
    "fuentes": [
     "F-489",
     "F-490"
+   ]
+  },
+  {
+   "id": "pl_08488",
+   "nombre": "Proyecto de Ley 08488/2024-CR (farmacias en el sistema nacional de salud)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-508"
    ]
   },
   {
@@ -1582,6 +1619,15 @@
    ]
   },
   {
+   "id": "primas_sistema_1s_2026",
+   "nombre": "Primas netas del sistema peruano en el 1S 2026 (+1,1%)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-506"
+   ]
+  },
+  {
    "id": "productividad_devs",
    "nombre": "Productividad de desarrolladores",
    "tipo": "resultado",
@@ -1620,6 +1666,15 @@
    ]
   },
   {
+   "id": "ratio_combinado_mapfre_peru",
+   "nombre": "Ratio combinado de Mapfre Perú (102,4% en el 1T 2026)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-505"
+   ]
+  },
+  {
    "id": "re_aim",
    "nombre": "Marco RE-AIM",
    "tipo": "concepto",
@@ -1654,6 +1709,17 @@
    "grado": 1,
    "fuentes": [
     "F-238"
+   ]
+  },
+  {
+   "id": "rentabilidad_tecnica_peru",
+   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-504",
+    "F-505",
+    "F-506"
    ]
   },
   {
@@ -1878,6 +1944,15 @@
    "grado": 1,
    "fuentes": [
     "F-476"
+   ]
+  },
+  {
+   "id": "utilidad_rimac",
+   "nombre": "Utilidad neta de Rímac (2T 2026: S/85,8 M)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-504"
    ]
   },
   {
@@ -3945,11 +4020,83 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "estructura"
+  },
+  {
+   "id": "T-170",
+   "s": "rentabilidad_tecnica_peru",
+   "p": "asocia_con",
+   "o": "utilidad_rimac",
+   "f": "F-504",
+   "apoyo": "Utilidad neta −40% en el 2T 2026 (S/85,78 M vs. S/143,4 M) y −10,5% en el 1S.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-171",
+   "s": "rentabilidad_tecnica_peru",
+   "p": "asocia_con",
+   "o": "ratio_combinado_mapfre_peru",
+   "f": "F-505",
+   "apoyo": "Mapfre Perú en el 1T 2026: ratio combinado de 102,4% (+7,6 pp) con primas −1,7% en euros: pérdida técnica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-172",
+   "s": "primas_sistema_1s_2026",
+   "p": "asocia_con",
+   "o": "rentabilidad_tecnica_peru",
+   "f": "F-506",
+   "apoyo": "Primas netas S/9.451 M (+1,1%) y utilidad conjunta S/1.391 M, con la mitad de las compañías a la baja (fecha del artículo y cifras sin confirmar).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-173",
+   "s": "primas_sistema_1s_2026",
+   "p": "contradice",
+   "o": "c_crecimiento_8_9",
+   "f": "F-506",
+   "apoyo": "Si se confirma, el +1,1% del 1S contradice la expectativa de +8%-9% de F-482/F-483; sin verificar con la SBS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-174",
+   "s": "c_pen_estable_2",
+   "p": "aplica_a",
+   "o": "penetracion_peru",
+   "f": "F-507",
+   "apoyo": "Relación primas/PBI de 2,06% a setiembre de 2025; oscilación de 2,0%-2,1% en 2020-2024.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-175",
+   "s": "pl_08488",
+   "p": "aplica_a",
+   "o": "farmacias_sistema_salud",
+   "f": "F-508",
+   "apoyo": "Registrado el 27-jul-2024; integra farmacias y boticas vía redes integradas y las clasifica en tres niveles; estado actual no verificado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
   }
  ],
  "generado": "2026-10-02",
  "cobertura": {
-  "procesadas": 90,
-  "total": 503
+  "procesadas": 95,
+  "total": 508
  }
 }

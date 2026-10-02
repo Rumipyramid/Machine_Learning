@@ -8,25 +8,25 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **90 de 503** (17.9%) |
+| Fuentes procesadas | **95 de 508** (18.7%) |
 | …del cerebro de diseño (citadas en el node) | 49 de 175 |
-| …por rigor | A 49/138 · B 20/86 · C 17/116 · D 3/120 · E 1/29 |
-| Barridos | 8 |
-| Entidades | 205 |
-| Relaciones | 169 |
-| Nivel de lectura | ficha 125 · abstract 44 |
-| Fuerza de las afirmaciones | descriptiva 58 · causal 46 · observacional 36 · teorica 29 |
+| …por rigor | A 49/138 · B 22/88 · C 20/119 · D 3/120 · E 1/29 |
+| Barridos | 9 |
+| Entidades | 213 |
+| Relaciones | 175 |
+| Nivel de lectura | ficha 131 · abstract 44 |
+| Fuerza de las afirmaciones | descriptiva 64 · causal 46 · observacional 36 · teorica 29 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `asocia_con` | efecto | 32 |
+| `asocia_con` | efecto | 35 |
 | `aumenta` | efecto | 30 |
-| `aplica_a` | estructura | 25 |
+| `aplica_a` | estructura | 27 |
 | `reduce` | efecto | 24 |
 | `tiene_limite` | metodo | 14 |
-| `contradice` | evidencia | 13 |
+| `contradice` | evidencia | 14 |
 | `modera` | efecto | 8 |
 | `es_tipo_de` | estructura | 6 |
 | `origina_en` | metodo | 6 |
@@ -48,7 +48,9 @@
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-429, F-470 |
 | Productividad de desarrolladores | F-257, F-474, F-503 |
+| Penetración de seguros en Perú | F-482, F-483, F-507 |
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
+| Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
@@ -75,7 +77,6 @@
 | F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025 | F-477, F-478 |
 | Resultado operativo Vida/Salud de Allianz | F-477, F-478 |
 | Medical care ratio de UnitedHealth (86,7% en el 2T 2026) | F-198, F-480 |
-| Penetración de seguros en Perú | F-482, F-483 |
 | Rechazo de cobertura sin fundamento o fuera de plazo | F-484, F-485 |
 | Sanciones de Indecopi a aseguradoras (2026) | F-485, F-486 |
 | Persuasión conversacional por IA | F-489, F-490 |
@@ -135,6 +136,9 @@
 - **Las explicaciones de IA ayudan solo en tareas difíciles (RP1/HC1)** —contradice→ **Explicaciones frente a la sola predicción de la IA** (F-498, teorica) · **estado: matizada**
   - Contraevidencia parcial a RP1: el efecto de las explicaciones existe en general (pequeño), no solo en tareas difíciles.
   - *Resolución (2026-10-02):* El meta-análisis de 2026 (F-498) halla un efecto pequeño pero significativo de las explicaciones sobre la sola predicción, no limitado a tareas difíciles. RP1 se reformula: efecto pequeño y condicional, no nulo.
+- **Primas netas del sistema peruano en el 1S 2026 (+1,1%)** —contradice→ **El mercado peruano crece 8%-9% en 2026** (F-506, descriptiva) · **estado: sin_verificar**
+  - Si se confirma, el +1,1% del 1S contradice la expectativa de +8%-9% de F-482/F-483; sin verificar con la SBS.
+  - *Resolución (2026-10-02):* Contradicción potencial de alto impacto (+1,1% vs. +8-9% esperado): la nota de prensa no tiene fecha confirmada y no se abrió la estadística de la SBS. Pendiente de verificación con la fuente oficial antes de modificar la tesis del mercado peruano.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -167,7 +171,8 @@
   - *Resolución:* Cerrada con reserva: las cifras de la ficha son erróneas o de otro perímetro (no del segmento Vida/Salud); la aritmética de F-477 y F-478 es consistente (1,4 + 1,5 ≈ 2,9). El comunicado primario no se pudo abrir (egress bloqueado). Ficha corregida y marcada en el ledger y en el node mecanismos-seguros-salud.
 - ✅ **F-23** (2026-10-02, cerrada): F-23 y F-442 describen el mismo estudio (RCT de campo nacional de UBI simulado, Accident Analysis & Prevention): posible registro duplicado en el ledger. Decisión de consolidar: cronista.
   - *Resolución:* Duplicado consolidado por cronista el 2026-10-02: F-23 y F-442 son el mismo RCT de UBI simulado (Accident Analysis & Prevention). Canónica: F-442 (con preregistro NCT06101251, N=1.449). F-23 queda marcada como duplicado.
-- ⚠️ **F-483** (2026-10-02, abierta): La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS.
+- ✅ **F-483** (2026-10-02, cerrada): La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS.
+  - *Resolución:* Reconciliada el 2026-10-02: la penetración de Perú oscila 2,0%-2,1% (SBS: 2,06% a setiembre de 2025, F-507); 2,01% (estimación al 2T 2026) y ~2,08% (node) son compatibles. La cifra de ~2,5% corresponde a otra medida o fuente no atribuida. Reserva: no se abrió el documento de la SBS.
 
 ## 7. Registro de barridos
 
@@ -181,6 +186,7 @@
 | 2026-10-02 | F-433, F-434, F-442, F-449, F-256, F-259, F-265, F-307, F-308, F-309, F-382, F-383, F-384, F-386 | 18 | – | Pase de amplitud a nivel ficha (14 fuentes: innovación, generative UI, Figma/consultoras, empleo). |
 | 2026-10-02 | F-198, F-477, F-478, F-480, F-481, F-482, F-483, F-484, F-485, F-486, F-487, F-488, F-489, F-490, F-491, F-492, F-493, F-494, F-495, F-496, F-497, F-498, F-499, F-500, F-501, F-502, F-503 | 36 | – | Procesa las fuentes de la iteración de seguros y de conducta humano-IA (F-477 a F-503, más F-198 por su cifra nueva). Abstract en artículos académicos; ficha en prensa, empresas y blogs. |
 | 2026-10-02 | F-3, F-6, F-9, F-10, F-19, F-21, F-23, F-36, F-40, F-41, F-53, F-54, F-55, F-56 | 18 | – | Pase de amplitud a nivel ficha: 14 fuentes 🟢A citadas por los nodes de seguros y salud (sesgos, divulgación, nudges, telemedicina Perú, marcos de implementación). |
+| 2026-10-02 | F-504, F-505, F-506, F-507, F-508 | 6 | – | Seguros Perú: resultados 2T, sistema 1S 2026, penetración reconciliada y PL 08488. |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*
