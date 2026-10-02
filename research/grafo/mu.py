@@ -147,22 +147,26 @@ def cell(big, label, sub="", warn=False):
     return f'<div class="c{" w" if warn else ""}"><div class="big">{big}</div><div class="lab">{E(label)}</div><div class="sub">{E(sub)}</div></div>'
 
 
-def escalera(w=900, h=170):
+def escalera(w=720, h=230):
     bw = w / len(NIV)
-    o = [f'<svg viewBox="0 0 {w} {h+34}" role="img">']
+    o = [f'<svg viewBox="0 0 {w} {h+52}" role="img">']
     for i, lv in enumerate(NIV):
-        bh = 30 + (h - 30) * (i + 1) / len(NIV)
+        bh = 50 + (h - 50) * (i + 1) / len(NIV)
         x, y = i * bw + 4, h - bh
         o.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw-8:.1f}" height="{bh:.1f}" fill="none" stroke="var(--fg)" stroke-width="3"/>')
-        if lv["ok"] and i < nivel:
+        if i < nivel:
             o.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw-8:.1f}" height="{bh:.1f}" class="fg"/>')
         elif i == nivel:
             fh = bh * lv["prog"]
             o.append(f'<rect x="{x:.1f}" y="{h-fh:.1f}" width="{bw-8:.1f}" height="{fh:.1f}" class="acc"/>')
-        cls = "t b inv" if i < nivel else "t b"
-        o.append(f'<text x="{x+8:.1f}" y="{y+18:.1f}" class="{cls}">N{lv["n"]}</text>')
-        o.append(f'<text x="{x+bw/2-4:.1f}" y="{h+14}" class="t s" text-anchor="middle">{E(lv["nombre"])}</text>')
-        o.append(f'<text x="{x+bw/2-4:.1f}" y="{h+27}" class="t s" text-anchor="middle">{round(lv["prog"]*100)}%</text>')
+        pc = f'{round(lv["prog"]*100)}%'
+        col = "inv" if i < nivel else ""
+        o.append(f'<text x="{x+8:.1f}" y="{y+24:.1f}" class="t b {col}" font-size="20">N{lv["n"]}</text>')
+        if i >= nivel:
+            o.append(f'<text x="{x+bw/2-4:.1f}" y="{y+bh-8:.1f}" class="t b" font-size="15" text-anchor="middle" fill="var(--fg)" style="paint-order:stroke;stroke:var(--bg);stroke-width:4px">{pc}</text>')
+        nm = {"AUTOCORRECCIÓN": "AUTOCORREC."}.get(lv["nombre"], lv["nombre"])
+        o.append(f'<text x="{x+bw/2-4:.1f}" y="{h+20}" class="t b" font-size="12" text-anchor="middle">{E(nm)}</text>')
+        o.append(f'<text x="{x+bw/2-4:.1f}" y="{h+38}" class="t" font-size="12" text-anchor="middle">{"✓ " if i < nivel else ""}{pc}</text>')
     o.append("</svg>")
     return "".join(o)
 
@@ -282,12 +286,13 @@ p.n,footer{font-size:11px;color:var(--g2);padding:8px 16px}footer{border-top:2px
 tr.ko td{background:transparent}tr.ko td:nth-child(5){color:var(--acc);font-weight:900}
 .nv{border:4px solid var(--fg);padding:10px 14px}.big2{font:900 110px/0.9 Impact,'Arial Black',sans-serif}.big2 span{font-size:36px;color:var(--g2)}
 .lab2{font:900 26px Impact,'Arial Black',sans-serif;letter-spacing:.04em;background:var(--acc);color:#000;display:inline-block;padding:0 8px;margin-top:6px}
+.hero{grid-template-columns:300px minmax(0,1fr)!important;align-items:start}@media(max-width:720px){.hero{grid-template-columns:minmax(0,1fr)!important}.big2{font-size:84px}}
 code{background:var(--g3);padding:0 3px}
 """
 HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MU — panel del segundo cerebro</title><style>{CSS}</style></head><body>
 <header><h1>MU</h1><p>segundo cerebro · {today}<br>rama {E(branch)} @ {E(commit)}<br>{len(ledger)} fuentes / {len(nodes)} nodes / {len(tri)} relaciones</p></header>
-<section><h2>00 INTELIGENCIA — ¿qué nivel tiene?</h2><div class="body" style="grid-template-columns:300px 2fr 1fr"><div class="nv"><div class="big2">N{nivel}<span>/{len(NIV)}</span></div><div class="lab2">{nombre_nivel}</div><div class="sub">{E(NIV[nivel-1]["def"] if nivel else "Sin criterios cumplidos")}</div></div><div>{escalera()}</div><div><h3>PARA SUBIR A N{nivel+1 if sig else nivel}{(" — " + sig["nombre"]) if sig else ""}</h3>{falta}<p class="n">Escalera: se sube solo con TODOS los criterios del nivel. Umbrales propuestos (juicio del autor), editables en niveles.json. N7 exige medir uso externo, hoy sin instrumento: no es alcanzable aún.</p></div></div><div class="body" style="grid-template-columns:1fr"><table><tr><th>nivel</th><th>estado</th><th>criterio</th><th>valor / umbral</th><th></th><th></th></tr>{crit_rows}</table></div></section>
+<section><h2>00 INTELIGENCIA — ¿qué nivel tiene?</h2><div class="body hero"><div class="nv"><div class="big2">N{nivel}<span>/{len(NIV)}</span></div><div class="lab2">{nombre_nivel}</div><div class="sub">{E(NIV[nivel-1]["def"] if nivel else "Sin criterios cumplidos")}</div></div><div>{escalera()}<div style="margin-top:10px"><h3>PARA SUBIR A N{nivel+1 if sig else nivel}{(" — " + sig["nombre"]) if sig else ""}</h3>{falta}<p class="n">Escalera: se sube solo con TODOS los criterios del nivel. Umbrales propuestos (juicio del autor), editables en niveles.json. N7 exige medir uso externo, hoy sin instrumento: no es alcanzable aún.</p></div></div></div><div class="body" style="grid-template-columns:1fr"><table><tr><th>nivel</th><th>estado</th><th>criterio</th><th>valor / umbral</th><th></th><th></th></tr>{crit_rows}</table></div></section>
 <section><h2>01 SALUD — ¿está sano?</h2><div class="g">{''.join(sal)}</div><div class="body"><div><h3>CHEQUEOS</h3><ul>{checklist}</ul></div><div><h3>PENDIENTES ACCIONABLES</h3><ul>{todo_html}</ul></div></div></section>
 <section><h2>02 MADUREZ — ¿qué tan probado está?</h2><div class="g">{''.join(mad)}</div><div class="body"><div>{mad_charts}</div></div></section>
 <section><h2>03 RIQUEZA — ¿cuánto hay?</h2><div class="g">{''.join(ri)}</div><div class="body"><div>{rig_chart}</div><div>{rel_chart}</div></div></section>
