@@ -58,6 +58,50 @@
    "triples": 14,
    "sin_aporte": [],
    "notas": "Pase sobre las 8 fuentes de la iteración 5 de /trinidad (diseño e innovación). Nivel: abstract en las académicas/METR; ficha en empresa, prensa y blogs."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f_ids": [
+    "F-254",
+    "F-257",
+    "F-303",
+    "F-304",
+    "F-305",
+    "F-306",
+    "F-381",
+    "F-401",
+    "F-403",
+    "F-420",
+    "F-428",
+    "F-429",
+    "F-430",
+    "F-432"
+   ],
+   "triples": 26,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud a nivel ficha (14 fuentes: IA y conducta, Figma financiero, generative UI, innovación)."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f_ids": [
+    "F-433",
+    "F-434",
+    "F-442",
+    "F-449",
+    "F-256",
+    "F-259",
+    "F-265",
+    "F-307",
+    "F-308",
+    "F-309",
+    "F-382",
+    "F-383",
+    "F-384",
+    "F-386"
+   ],
+   "triples": 18,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud a nivel ficha (14 fuentes: innovación, generative UI, Figma/consultoras, empleo)."
   }
  ],
  "discrepancias": [
@@ -93,6 +137,11 @@
    "detalle": "La ficha dice 'Muestra estudiantil' y 'N=160 en 62 proyectos de innovación con empresas'; las dos descripciones conviven y conviene aclarar cuál es la muestra. No verificado.",
    "estado": "cerrada",
    "resolucion": "Cerrada: la muestra es de 160 estudiantes en 62 proyectos de innovación para empresas; las dos descripciones de la ficha eran compatibles."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f": "F-256",
+   "detalle": "F-256 y F-382 llevan el mismo título ('Looks Good, But Is It Usable? Evaluating Usability in AI-Generated…'): posible registro duplicado en el ledger. Revisar y, si lo es, consolidar (decisión de cronista)."
   }
  ],
  "resoluciones": [
@@ -131,6 +180,18 @@
    "estado": "alcance_distinto",
    "fecha": "2026-10-02",
    "nota": "Miden cosas distintas: fidelidad entre justificación e implementación (F-475, preprint) vs. usabilidad percibida en sesión única (F-476, emisor interesado). Ninguna prueba uso repetido; se mantiene H33 abierta."
+  },
+  {
+   "triple": "T-97",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-02",
+   "nota": "Refutación de una cifra (80-95% de fracaso de productos nuevos) por datos de ventas efectivas; no es tensión entre fuentes. Nivel ficha: falta leer el paper."
+  },
+  {
+   "triple": "T-107",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-02",
+   "nota": "Conflicto de H19 aún abierto, pero no frontal: F-257/F-474 miden devs expertos en sus propias bases de código; F-259 mide un design system con IA alineada en un contexto, autoría no verificada. Se confirma o refuta con replicación independiente (H6)."
   }
  ]
 }

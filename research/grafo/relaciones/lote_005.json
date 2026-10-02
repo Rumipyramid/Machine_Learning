@@ -1,0 +1,433 @@
+{
+ "fecha": "2026-10-02",
+ "f_ids": [
+  "F-254",
+  "F-257",
+  "F-303",
+  "F-304",
+  "F-305",
+  "F-306",
+  "F-381",
+  "F-401",
+  "F-403",
+  "F-420",
+  "F-428",
+  "F-429",
+  "F-430",
+  "F-432"
+ ],
+ "entidades": [
+  {
+   "id": "consejo_ia_personalizado",
+   "nombre": "Consejo personalizado con IA (e-commerce)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "compra_ecommerce",
+   "nombre": "Compra en e-commerce",
+   "tipo": "resultado"
+  },
+  {
+   "id": "intrusividad_percibida",
+   "nombre": "Intrusividad percibida",
+   "tipo": "constructo"
+  },
+  {
+   "id": "c_consejo_ia_reduce_compra",
+   "nombre": "Un consejo personalizado de IA puede reducir la compra",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "brecha_percepcion_realidad",
+   "nombre": "Brecha percepción–realidad (autoestimación vs. desempeño)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_ia_autorreporte_inflado",
+   "nombre": "La evidencia de productividad con IA basada en autorreporte está inflada",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "revenue_figma_q1",
+   "nombre": "Ingresos de Figma Q1 2026 (+46%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ndr_figma",
+   "nombre": "NDR de Figma",
+   "tipo": "metrica"
+  },
+  {
+   "id": "ndr_excluye_churn",
+   "nombre": "Definición no estándar: la NDR excluye clientes que hicieron churn",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "sbc_ipo",
+   "nombre": "Compensación en acciones por la IPO (US$975,7M)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "perdida_neta_figma_fy25",
+   "nombre": "Pérdida neta GAAP de Figma FY2025 (−US$1,25B)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_ia_baja_barrera_entrada",
+   "nombre": "La IA baja la barrera de entrada de la categoría de herramientas de diseño",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "s1_figma",
+   "nombre": "S-1 de Figma (factor de riesgo declarado por la propia empresa)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "adobe_segmento_fusionado",
+   "nombre": "Adobe fusionó Digital Media, Experience y Publishing en un solo segmento",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "accenture_song_no_reportado",
+   "nombre": "Accenture no reporta Song como segmento separado",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_estandar_reporting_se_degrada",
+   "nombre": "El estándar de reporting se degrada donde hay presión de IA (H16)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "preferencia_interfaces_generativas",
+   "nombre": "Preferencia por interfaces generativas (hasta 72%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_generative_ui_gusta_mas",
+   "nombre": "Generative UI gusta más que el texto plano",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "solo_preferencia",
+   "nombre": "Mide preferencia, no desempeño ni aprendibilidad longitudinal",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "asistencia_ia_razonamiento",
+   "nombre": "Asistencia de IA en razonamiento lógico",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "desempeno_objetivo_razonamiento",
+   "nombre": "Desempeño objetivo en razonamiento (~+3 pts)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "autoestimacion_desempeno",
+   "nombre": "Autoestimación del desempeño (~+4 pts)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "rediseno_expresivo",
+   "nombre": "Rediseño expresivo (fluidez y estética a la vez)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "fluidez_tarea",
+   "nombre": "Fluidez/velocidad de tarea (fijación +33%, tarea +20%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "valoracion_estetica",
+   "nombre": "Calificaciones positivas/estéticas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_fluidez_vs_estetica_separables",
+   "nombre": "Fluidez y atractivo estético se pueden aislar (H7)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "fluidez_y_estetica_mejoran_juntas",
+   "nombre": "En sistemas maduros fluidez y estética mejoran a la vez",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "guidance_figma_q2",
+   "nombre": "Guía de Figma Q2: US$348-350M (~40%)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "precio_ipo_figma",
+   "nombre": "Precio de IPO de Figma (US$33)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "salida_cpo_anthropic",
+   "nombre": "Salida del CPO de Anthropic de la junta de Figma (14-abr-2026)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "claude_design",
+   "nombre": "Lanzamiento de Claude Design (Anthropic)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "inversion_id",
+   "nombre": "Inversión en I+D",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "productividad_firmas_ocde",
+   "nombre": "Productividad de firmas OCDE (elasticidad ~0,05; retorno ~16%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "fracaso_producto_nuevo",
+   "nombre": "Fracaso real de productos nuevos (25% año 1, ~40% año 2)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_mito_fracaso_80_95",
+   "nombre": "El 80-95% de los productos nuevos fracasan",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "consejo_ia_personalizado",
+   "p": "reduce",
+   "o": "compra_ecommerce",
+   "f": "F-254",
+   "apoyo": "Experimento de campo: el consejo personalizado con IA puede reducir la compra.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "intrusividad_percibida",
+   "p": "media",
+   "o": "c_consejo_ia_reduce_compra",
+   "f": "F-254",
+   "apoyo": "El mecanismo atribuido es la intrusividad percibida del consejo.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ia_asistida_devs",
+   "p": "reduce",
+   "o": "productividad_devs",
+   "f": "F-257",
+   "apoyo": "Desarrolladores expertos 19% más lentos con herramientas de IA (principios de 2025).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "brecha_percepcion_realidad",
+   "p": "aplica_a",
+   "o": "ia_asistida_devs",
+   "f": "F-257",
+   "apoyo": "Estimaban ser 20% más rápidos: brecha de ~39 puntos entre percepción y realidad.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_ia_autorreporte_inflado",
+   "p": "aplica_a",
+   "o": "productividad_devs",
+   "f": "F-257",
+   "apoyo": "Implicación del node: toda evidencia de productividad por autorreporte está sistemáticamente inflada.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ingresos_figma_q2",
+   "p": "asocia_con",
+   "o": "revenue_figma_q1",
+   "f": "F-303",
+   "apoyo": "Q1'26 US$333,4M (+46%), aceleración desde +40% en Q4'25; Q2 llegó a +48% (F-469): tercera aceleración seguida.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ndr_figma",
+   "p": "tiene_limite",
+   "o": "ndr_excluye_churn",
+   "f": "F-303",
+   "apoyo": "La NDR de Figma (139% en Q1) excluye a quienes hicieron churn: definición no estándar, no comparable con otros SaaS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sbc_ipo",
+   "p": "aumenta",
+   "o": "perdida_neta_figma_fy25",
+   "f": "F-304",
+   "apoyo": "FY2025: ingresos ~US$1,05B (+41%) y pérdida GAAP de −US$1,25B, de la cual US$975,7M son compensación en acciones no recurrente por la IPO.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ia_baja_barrera_entrada",
+   "p": "origina_en",
+   "o": "s1_figma",
+   "f": "F-305",
+   "apoyo": "La propia compañía declara como factor de riesgo en su S-1 que la IA baje la barrera de entrada de su categoría.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ia_baja_barrera_entrada",
+   "p": "asocia_con",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-305",
+   "apoyo": "El riesgo declarado en 2025 es lo que el mercado empezó a descontar en 2026 (lectura del node).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "adobe_segmento_fusionado",
+   "p": "respalda",
+   "o": "c_estandar_reporting_se_degrada",
+   "f": "F-306",
+   "apoyo": "Desde Q1 FY2026 Adobe fusionó tres segmentos: la evolución de Digital Media ya no se responde con datos públicos (ingresos US$6,62B, +13%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "generative_ui",
+   "p": "aumenta",
+   "o": "preferencia_interfaces_generativas",
+   "f": "F-381",
+   "apoyo": "Evaluadores humanos prefieren interfaces generativas sobre conversacionales hasta en 72% en tareas densas en información.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_generative_ui_gusta_mas",
+   "p": "tiene_limite",
+   "o": "solo_preferencia",
+   "f": "F-381",
+   "apoyo": "Es medida de preferencia, no de desempeño ni de aprendibilidad longitudinal.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "asistencia_ia_razonamiento",
+   "p": "aumenta",
+   "o": "desempeno_objetivo_razonamiento",
+   "f": "F-401",
+   "apoyo": "Con asistencia de IA el desempeño objetivo en razonamiento lógico sube ~3 puntos sobre la norma.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "asistencia_ia_razonamiento",
+   "p": "aumenta",
+   "o": "autoestimacion_desempeno",
+   "f": "F-401",
+   "apoyo": "La autoestimación sube ~4 puntos: la brecha percepción-realidad existe, pero es de ~1 punto, no de ~39.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "brecha_percepcion_realidad",
+   "p": "aplica_a",
+   "o": "asistencia_ia_razonamiento",
+   "f": "F-401",
+   "apoyo": "Dirección que H5 predice, magnitud mucho menor que la de F-257.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "rediseno_expresivo",
+   "p": "aumenta",
+   "o": "fluidez_tarea",
+   "f": "F-403",
+   "apoyo": "Fijación visual correcta 33% más rápida y tarea 20% más rápida.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "rediseno_expresivo",
+   "p": "aumenta",
+   "o": "valoracion_estetica",
+   "f": "F-403",
+   "apoyo": "Calificaciones más positivas a la vez: mejoran fluidez y estética juntas.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_fluidez_vs_estetica_separables",
+   "p": "tiene_limite",
+   "o": "fluidez_y_estetica_mejoran_juntas",
+   "f": "F-403",
+   "apoyo": "Complica H7 y matiza C12: en sistemas maduros las dos variables no suelen separarse.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "guidance_figma_q2",
+   "p": "asocia_con",
+   "o": "ingresos_figma_q2",
+   "f": "F-420",
+   "apoyo": "Guía oficial de US$348-350M (~40%); el resultado fue US$370,1M (+48%), por encima.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_ipo_figma",
+   "p": "asocia_con",
+   "o": "precio_accion_figma",
+   "f": "F-420",
+   "apoyo": "Umbral de falsación de H13: recuperar los US$33 de la IPO; la acción cerró a US$24,99.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "accenture_song_no_reportado",
+   "p": "respalda",
+   "o": "c_estandar_reporting_se_degrada",
+   "f": "F-428",
+   "apoyo": "Accenture no reporta Song por separado en sus filings (Q3 FY26: US$18,7B, +6%): la pregunta es estructuralmente no respondible.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "salida_cpo_anthropic",
+   "p": "asocia_con",
+   "o": "claude_design",
+   "f": "F-429",
+   "apoyo": "El CPO de Anthropic dejó la junta de Figma el mismo día en que trascendió el plan de herramientas de diseño; Claude Design se lanzó tres días después.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "claude_design",
+   "p": "asocia_con",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-429",
+   "apoyo": "Evento corporativo detrás del descuento de mercado a Figma (lectura del node).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "inversion_id",
+   "p": "aumenta",
+   "o": "productividad_firmas_ocde",
+   "f": "F-430",
+   "apoyo": "Metarregresión jerárquica: elasticidad I+D→productividad ~0,05 y retorno ~16%; positivo pero menor y más heterogéneo que revisiones previas.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "fracaso_producto_nuevo",
+   "p": "refuta",
+   "o": "c_mito_fracaso_80_95",
+   "f": "F-432",
+   "apoyo": "Medido sobre ventas efectivas: 25% de fracaso al año 1 y ~40% a los 2 años; no 80-95%.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  }
+ ],
+ "notas": "Pase de amplitud a nivel ficha (14 fuentes: IA y conducta, Figma financiero, generative UI, innovación)."
+}

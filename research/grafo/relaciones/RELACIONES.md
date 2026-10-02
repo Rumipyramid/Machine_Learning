@@ -8,39 +8,42 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **21 de 476** (4.4%) |
-| …del cerebro de diseño (citadas en el node) | 21 de 175 |
-| …por rigor | A 12/134 · B 2/78 · C 5/104 · D 1/118 · E 1/29 |
-| Barridos | 4 |
-| Entidades | 83 |
-| Relaciones | 71 |
-| Nivel de lectura | ficha 42 · abstract 29 |
-| Fuerza de las afirmaciones | descriptiva 24 · observacional 20 · causal 20 · teorica 7 |
+| Fuentes procesadas | **49 de 476** (10.3%) |
+| …del cerebro de diseño (citadas en el node) | 49 de 175 |
+| …por rigor | A 30/134 · B 12/78 · C 5/104 · D 1/118 · E 1/29 |
+| Barridos | 6 |
+| Entidades | 144 |
+| Relaciones | 115 |
+| Nivel de lectura | ficha 86 · abstract 29 |
+| Fuerza de las afirmaciones | descriptiva 39 · causal 34 · observacional 28 · teorica 14 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aplica_a` | estructura | 12 |
-| `aumenta` | efecto | 11 |
-| `asocia_con` | efecto | 10 |
-| `tiene_limite` | metodo | 9 |
-| `contradice` | evidencia | 6 |
-| `reduce` | efecto | 6 |
-| `modera` | efecto | 5 |
-| `origina_en` | metodo | 4 |
+| `asocia_con` | efecto | 21 |
+| `aumenta` | efecto | 20 |
+| `aplica_a` | estructura | 17 |
+| `tiene_limite` | metodo | 13 |
+| `reduce` | efecto | 13 |
+| `contradice` | evidencia | 7 |
+| `modera` | efecto | 6 |
+| `origina_en` | metodo | 5 |
+| `respalda` | evidencia | 4 |
 | `mide` | metodo | 3 |
 | `es_tipo_de` | estructura | 3 |
-| `respalda` | evidencia | 1 |
-| `media` | efecto | 1 |
+| `media` | efecto | 2 |
+| `refuta` | evidencia | 1 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
 | Entidad | Fuentes |
 |---|---|
+| Generative UI (interfaces generadas por LLM) | F-247, F-256, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
 | Sobre-confianza en la IA | F-244, F-245, F-246 |
-| Generative UI (interfaces generadas por LLM) | F-247, F-475, F-476 |
+| Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469 |
+| El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-429, F-470 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
@@ -50,10 +53,19 @@
 | El efecto del design thinking está totalmente mediado por empoderamiento | F-239, F-240 |
 | Las explicaciones rara vez producen desempeño complementario | F-243, F-244 |
 | Las explicaciones mejoran la decisión humano-IA | F-244, F-246 |
+| Precio de la acción de Figma (FIG) | F-420, F-470 |
 | ARR de Lovable | F-471, F-472 |
 | El ARR de vibe coding no retiene (H14) | F-472, F-473 |
 | Churn y cohortes no publicados | F-472, F-473 |
+| Uso de IA por desarrolladores experimentados | F-257, F-474 |
+| Productividad de desarrolladores | F-257, F-474 |
 | Generative UI gana en usabilidad percibida | F-475, F-476 |
+| Brecha percepción–realidad (autoestimación vs. desempeño) | F-257, F-401 |
+| El estándar de reporting se degrada donde hay presión de IA (H16) | F-306, F-428 |
+| UBI / seguro basado en telemática | F-442, F-449 |
+| Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-256, F-382 |
+| Empleo de diseñadores gráficos (+2% 2024-2034) | F-308, F-309 |
+| La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe | F-383, F-384 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -75,11 +87,18 @@
 - **La justificación de diseño generada no coincide con lo implementado** —contradice→ **Generative UI gana en usabilidad percibida** (F-475, teorica) · **estado: alcance_distinto**
   - Tensión de alcance, no de resultado: F-475 mide fidelidad de implementación; F-476 mide usabilidad percibida en una sesión.
   - *Resolución (2026-10-02):* Miden cosas distintas: fidelidad entre justificación e implementación (F-475, preprint) vs. usabilidad percibida en sesión única (F-476, emisor interesado). Ninguna prueba uso repetido; se mantiene H33 abierta.
+- **Fracaso real de productos nuevos (25% año 1, ~40% año 2)** —refuta→ **El 80-95% de los productos nuevos fracasan** (F-432, observacional) · **estado: refutacion_directa**
+  - Medido sobre ventas efectivas: 25% de fracaso al año 1 y ~40% a los 2 años; no 80-95%.
+  - *Resolución (2026-10-02):* Refutación de una cifra (80-95% de fracaso de productos nuevos) por datos de ventas efectivas; no es tensión entre fuentes. Nivel ficha: falta leer el paper.
+- **La IA alineada al design system acelera 47-69%** —contradice→ **La IA ralentiza a desarrolladores expertos (−19%)** (F-259, teorica) · **estado: alcance_distinto**
+  - Choque frontal con F-257 según la ficha; contextos distintos (design system propio vs. devs expertos en bases de código propias).
+  - *Resolución (2026-10-02):* Conflicto de H19 aún abierto, pero no frontal: F-257/F-474 miden devs expertos en sus propias bases de código; F-259 mide un design system con IA alineada en un contexto, autoría no verificada. Se confirma o refuta con replicación independiente (H6).
 
 ## 5. Hubs (entidades más conectadas)
 
 | Entidad | Tipo | Grado | Fuentes |
 |---|---|---|---|
+| Generative UI (interfaces generadas por LLM) | intervencion | 9 | 9 |
 | Susceptibilidad a dark patterns | resultado | 5 | 2 |
 | Diseño efectivo → mejor desempeño de la firma | afirmacion | 4 | 2 |
 | Capacidad de diseño-ingeniería | constructo | 4 | 1 |
@@ -89,7 +108,6 @@
 | Las explicaciones mejoran la decisión humano-IA | afirmacion | 4 | 2 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | poblacion | 3 | 2 |
 | Dark patterns leves | intervencion | 3 | 1 |
-| Dark patterns | concepto | 3 | 1 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -101,6 +119,7 @@
 - ⚠️ **F-238** (2026-10-02, abierta): La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados).
 - ✅ **F-239** (2026-10-02, cerrada): La ficha dice 'Muestra estudiantil' y 'N=160 en 62 proyectos de innovación con empresas'; las dos descripciones conviven y conviene aclarar cuál es la muestra. No verificado.
   - *Resolución:* Cerrada: la muestra es de 160 estudiantes en 62 proyectos de innovación para empresas; las dos descripciones de la ficha eran compatibles.
+- ⚠️ **F-256** (2026-10-02, abierta): F-256 y F-382 llevan el mismo título ('Looks Good, But Is It Usable? Evaluating Usability in AI-Generated…'): posible registro duplicado en el ledger. Revisar y, si lo es, consolidar (decisión de cronista).
 
 ## 7. Registro de barridos
 
@@ -110,6 +129,8 @@
 | 2026-10-02 | F-239, F-240, F-242, F-243, F-244, F-245, F-246, F-247 | 20 | – | Pase barato a nivel de FICHA (8 fuentes, sin búsqueda web) para ganar amplitud: grupos design thinking, XAI/sobre-confianza y UI adaptativa. Candidatas a lectura profunda: F-244/F-246 (tensión explica |
 | 2026-10-02 | F-239, F-241, F-244, F-246, F-251, F-262 | 8 | – | Lote de resolución de contradicciones: lectura dirigida de abstracts de las fuentes en tensión. |
 | 2026-10-02 | F-469, F-470, F-471, F-472, F-473, F-474, F-475, F-476 | 14 | – | Pase sobre las 8 fuentes de la iteración 5 de /trinidad (diseño e innovación). Nivel: abstract en las académicas/METR; ficha en empresa, prensa y blogs. |
+| 2026-10-02 | F-254, F-257, F-303, F-304, F-305, F-306, F-381, F-401, F-403, F-420, F-428, F-429, F-430, F-432 | 26 | – | Pase de amplitud a nivel ficha (14 fuentes: IA y conducta, Figma financiero, generative UI, innovación). |
+| 2026-10-02 | F-433, F-434, F-442, F-449, F-256, F-259, F-265, F-307, F-308, F-309, F-382, F-383, F-384, F-386 | 18 | – | Pase de amplitud a nivel ficha (14 fuentes: innovación, generative UI, Figma/consultoras, empleo). |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

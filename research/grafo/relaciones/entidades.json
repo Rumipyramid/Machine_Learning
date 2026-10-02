@@ -1,23 +1,63 @@
 {
+ "accenture_song_no_reportado": {
+  "id": "accenture_song_no_reportado",
+  "nombre": "Accenture no reporta Song como segmento separado",
+  "tipo": "limitacion"
+ },
+ "accesibilidad_obligacion": {
+  "id": "accesibilidad_obligacion",
+  "nombre": "Accesibilidad como obligación con sanción",
+  "tipo": "resultado"
+ },
  "aceptacion_plan_dudoso": {
   "id": "aceptacion_plan_dudoso",
   "nombre": "Permanencia/aceptación de un plan dudoso",
   "tipo": "metrica"
+ },
+ "adobe_segmento_fusionado": {
+  "id": "adobe_segmento_fusionado",
+  "nombre": "Adobe fusionó Digital Media, Experience y Publishing en un solo segmento",
+  "tipo": "limitacion"
  },
  "adultos_eeuu": {
   "id": "adultos_eeuu",
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
  },
+ "ambidestreza": {
+  "id": "ambidestreza",
+  "nombre": "Ambidestreza organizacional",
+  "tipo": "constructo"
+ },
  "aprendibilidad": {
   "id": "aprendibilidad",
   "nombre": "Aprendibilidad / conciencia del set de funciones",
+  "tipo": "resultado"
+ },
+ "asistencia_ia_razonamiento": {
+  "id": "asistencia_ia_razonamiento",
+  "nombre": "Asistencia de IA en razonamiento lógico",
+  "tipo": "intervencion"
+ },
+ "autoestimacion_desempeno": {
+  "id": "autoestimacion_desempeno",
+  "nombre": "Autoestimación del desempeño (~+4 pts)",
   "tipo": "resultado"
  },
  "backlash_consumidor": {
   "id": "backlash_consumidor",
   "nombre": "Backlash del consumidor",
   "tipo": "resultado"
+ },
+ "brecha_percepcion_realidad": {
+  "id": "brecha_percepcion_realidad",
+  "nombre": "Brecha percepción–realidad (autoestimación vs. desempeño)",
+  "tipo": "concepto"
+ },
+ "c_ambidestreza_mejora_desempeno": {
+  "id": "c_ambidestreza_mejora_desempeno",
+  "nombre": "La ambidestreza mejora el desempeño",
+  "tipo": "afirmacion"
  },
  "c_brecha_justificacion_implementacion": {
   "id": "c_brecha_justificacion_implementacion",
@@ -27,6 +67,21 @@
  "c_castigo_por_disrupcion": {
   "id": "c_castigo_por_disrupcion",
   "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
+  "tipo": "afirmacion"
+ },
+ "c_consejo_ia_reduce_compra": {
+  "id": "c_consejo_ia_reduce_compra",
+  "nombre": "Un consejo personalizado de IA puede reducir la compra",
+  "tipo": "afirmacion"
+ },
+ "c_contra_generative_ui": {
+  "id": "c_contra_generative_ui",
+  "nombre": "La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe",
+  "tipo": "afirmacion"
+ },
+ "c_crisis_consultoras": {
+  "id": "c_crisis_consultoras",
+  "nombre": "Crisis estructural del modelo de consultora de diseño",
   "tipo": "afirmacion"
  },
  "c_diseno_firma": {
@@ -54,6 +109,11 @@
   "nombre": "El efecto de la IA sobre la productividad no es estimable con el diseño actual",
   "tipo": "afirmacion"
  },
+ "c_estandar_reporting_se_degrada": {
+  "id": "c_estandar_reporting_se_degrada",
+  "nombre": "El estándar de reporting se degrada donde hay presión de IA (H16)",
+  "tipo": "afirmacion"
+ },
  "c_explicaciones_mejoran_decision": {
   "id": "c_explicaciones_mejoran_decision",
   "nombre": "Las explicaciones mejoran la decisión humano-IA",
@@ -64,14 +124,44 @@
   "nombre": "Las explicaciones rara vez producen desempeño complementario",
   "tipo": "afirmacion"
  },
+ "c_fluidez_vs_estetica_separables": {
+  "id": "c_fluidez_vs_estetica_separables",
+  "nombre": "Fluidez y atractivo estético se pueden aislar (H7)",
+  "tipo": "afirmacion"
+ },
  "c_fracaso_85_90": {
   "id": "c_fracaso_85_90",
   "nombre": "85-90% de fracaso de experimentos en Bing, Google Ads, Netflix, Airbnb",
   "tipo": "afirmacion"
  },
+ "c_generative_ui_gusta_mas": {
+  "id": "c_generative_ui_gusta_mas",
+  "nombre": "Generative UI gusta más que el texto plano",
+  "tipo": "afirmacion"
+ },
  "c_generative_ui_usabilidad": {
   "id": "c_generative_ui_usabilidad",
   "nombre": "Generative UI gana en usabilidad percibida",
+  "tipo": "afirmacion"
+ },
+ "c_ia_acelera_con_design_system": {
+  "id": "c_ia_acelera_con_design_system",
+  "nombre": "La IA alineada al design system acelera 47-69%",
+  "tipo": "afirmacion"
+ },
+ "c_ia_autorreporte_inflado": {
+  "id": "c_ia_autorreporte_inflado",
+  "nombre": "La evidencia de productividad con IA basada en autorreporte está inflada",
+  "tipo": "afirmacion"
+ },
+ "c_ia_baja_barrera_entrada": {
+  "id": "c_ia_baja_barrera_entrada",
+  "nombre": "La IA baja la barrera de entrada de la categoría de herramientas de diseño",
+  "tipo": "afirmacion"
+ },
+ "c_ia_ralentiza_expertos": {
+  "id": "c_ia_ralentiza_expertos",
+  "nombre": "La IA ralentiza a desarrolladores expertos (−19%)",
   "tipo": "afirmacion"
  },
  "c_impuesto_margen_ia": {
@@ -82,6 +172,11 @@
  "c_leves_sin_backlash": {
   "id": "c_leves_sin_backlash",
   "nombre": "Los dark patterns leves no generan backlash",
+  "tipo": "afirmacion"
+ },
+ "c_mito_fracaso_80_95": {
+  "id": "c_mito_fracaso_80_95",
+  "nombre": "El 80-95% de los productos nuevos fracasan",
   "tipo": "afirmacion"
  },
  "c_narrativa_multiplicadores_diseno": {
@@ -97,6 +192,11 @@
  "c_sobreconfianza_estrategica": {
   "id": "c_sobreconfianza_estrategica",
   "nombre": "La sobre-confianza es estratégica (costo-beneficio), no inevitable",
+  "tipo": "afirmacion"
+ },
+ "c_ubi_cambia_conducta": {
+  "id": "c_ubi_cambia_conducta",
+  "nombre": "El UBI cambia la conducta real de manejo",
   "tipo": "afirmacion"
  },
  "c_un_tercio_mejora": {
@@ -129,15 +229,50 @@
   "nombre": "Capacidad de diseño-ingeniería",
   "tipo": "constructo"
  },
+ "claude_design": {
+  "id": "claude_design",
+  "nombre": "Lanzamiento de Claude Design (Anthropic)",
+  "tipo": "intervencion"
+ },
  "cognitive_forcing_functions": {
   "id": "cognitive_forcing_functions",
   "nombre": "Cognitive forcing functions (fricción deliberada)",
   "tipo": "intervencion"
  },
+ "combined_ratio_root": {
+  "id": "combined_ratio_root",
+  "nombre": "Combined ratio de Root (91,4%)",
+  "tipo": "resultado"
+ },
+ "compra_ecommerce": {
+  "id": "compra_ecommerce",
+  "nombre": "Compra en e-commerce",
+  "tipo": "resultado"
+ },
+ "conductas_riesgo_manejo": {
+  "id": "conductas_riesgo_manejo",
+  "nombre": "Conductas de riesgo al manejar (velocidad, frenado, aceleración)",
+  "tipo": "resultado"
+ },
  "confianza_en_ia": {
   "id": "confianza_en_ia",
   "nombre": "Confianza en la IA",
   "tipo": "resultado"
+ },
+ "consejo_ia_personalizado": {
+  "id": "consejo_ia_personalizado",
+  "nombre": "Consejo personalizado con IA (e-commerce)",
+  "tipo": "intervencion"
+ },
+ "consistencia_interfaz": {
+  "id": "consistencia_interfaz",
+  "nombre": "Consistencia de la interfaz entre ejecuciones",
+  "tipo": "resultado"
+ },
+ "contexto_y_metodo": {
+  "id": "contexto_y_metodo",
+  "nombre": "Contexto y elección metodológica",
+  "tipo": "concepto"
  },
  "costo_beneficio_involucramiento": {
   "id": "costo_beneficio_involucramiento",
@@ -179,6 +314,16 @@
   "nombre": "Desempeño financiero de la firma (ROA, ROS, crecimiento)",
   "tipo": "resultado"
  },
+ "desempeno_objetivo_razonamiento": {
+  "id": "desempeno_objetivo_razonamiento",
+  "nombre": "Desempeño objetivo en razonamiento (~+3 pts)",
+  "tipo": "resultado"
+ },
+ "desempeno_organizacional": {
+  "id": "desempeno_organizacional",
+  "nombre": "Desempeño organizacional",
+  "tipo": "resultado"
+ },
  "design_theater": {
   "id": "design_theater",
   "nombre": "Design Theater: justificación de diseño sin implementación",
@@ -199,6 +344,16 @@
   "nombre": "Usuarios mayores",
   "tipo": "poblacion"
  },
+ "empleo_disenadores_graficos": {
+  "id": "empleo_disenadores_graficos",
+  "nombre": "Empleo de diseñadores gráficos (+2% 2024-2034)",
+  "tipo": "resultado"
+ },
+ "empleo_disenadores_web": {
+  "id": "empleo_disenadores_web",
+  "nombre": "Empleo de web developers y diseñadores digitales (+7% 2024-2034)",
+  "tipo": "resultado"
+ },
  "empoderamiento_psicologico": {
   "id": "empoderamiento_psicologico",
   "nombre": "Empoderamiento psicológico",
@@ -208,6 +363,16 @@
   "id": "estudiantes_proyectos_empresa",
   "nombre": "160 estudiantes en 62 proyectos de innovación para empresas",
   "tipo": "poblacion"
+ },
+ "european_accessibility_act": {
+  "id": "european_accessibility_act",
+  "nombre": "European Accessibility Act (exigible 28-jun-2025)",
+  "tipo": "intervencion"
+ },
+ "exito_producto_nuevo": {
+  "id": "exito_producto_nuevo",
+  "nombre": "Éxito de un producto nuevo",
+  "tipo": "resultado"
  },
  "exito_proyecto_innovacion": {
   "id": "exito_proyecto_innovacion",
@@ -219,10 +384,30 @@
   "nombre": "Explicabilidad de la IA (explicaciones)",
   "tipo": "intervencion"
  },
+ "factores_exito_producto_nuevo": {
+  "id": "factores_exito_producto_nuevo",
+  "nombre": "Predictores del éxito de un producto nuevo (ventaja, mercado, ajuste, predesarrollo, recursos)",
+  "tipo": "constructo"
+ },
  "firmas_publicas_eeuu": {
   "id": "firmas_publicas_eeuu",
   "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
   "tipo": "poblacion"
+ },
+ "fluidez_tarea": {
+  "id": "fluidez_tarea",
+  "nombre": "Fluidez/velocidad de tarea (fijación +33%, tarea +20%)",
+  "tipo": "resultado"
+ },
+ "fluidez_y_estetica_mejoran_juntas": {
+  "id": "fluidez_y_estetica_mejoran_juntas",
+  "nombre": "En sistemas maduros fluidez y estética mejoran a la vez",
+  "tipo": "limitacion"
+ },
+ "fracaso_producto_nuevo": {
+  "id": "fracaso_producto_nuevo",
+  "nombre": "Fracaso real de productos nuevos (25% año 1, ~40% año 2)",
+  "tipo": "resultado"
  },
  "friccion_pago_posterior": {
   "id": "friccion_pago_posterior",
@@ -237,6 +422,21 @@
  "generative_ui": {
   "id": "generative_ui",
   "nombre": "Generative UI (interfaces generadas por LLM)",
+  "tipo": "intervencion"
+ },
+ "guidance_figma_q2": {
+  "id": "guidance_figma_q2",
+  "nombre": "Guía de Figma Q2: US$348-350M (~40%)",
+  "tipo": "concepto"
+ },
+ "herramientas_ia_generativas": {
+  "id": "herramientas_ia_generativas",
+  "nombre": "Herramientas de IA generativa",
+  "tipo": "intervencion"
+ },
+ "ia_alineada_design_system": {
+  "id": "ia_alineada_design_system",
+  "nombre": "IA alineada al design system",
   "tipo": "intervencion"
  },
  "ia_asistida_devs": {
@@ -257,6 +457,21 @@
  "interfaces_adaptativas": {
   "id": "interfaces_adaptativas",
   "nombre": "Interfaces adaptativas",
+  "tipo": "concepto"
+ },
+ "intrusividad_percibida": {
+  "id": "intrusividad_percibida",
+  "nombre": "Intrusividad percibida",
+  "tipo": "constructo"
+ },
+ "inversion_id": {
+  "id": "inversion_id",
+  "nombre": "Inversión en I+D",
+  "tipo": "intervencion"
+ },
+ "ipg_venta_rga": {
+  "id": "ipg_venta_rga",
+  "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
   "tipo": "concepto"
  },
  "lovable_arr": {
@@ -314,6 +529,16 @@
   "nombre": "Muestra estudiantil y outcomes percibidos",
   "tipo": "limitacion"
  },
+ "ndr_excluye_churn": {
+  "id": "ndr_excluye_churn",
+  "nombre": "Definición no estándar: la NDR excluye clientes que hicieron churn",
+  "tipo": "limitacion"
+ },
+ "ndr_figma": {
+  "id": "ndr_figma",
+  "nombre": "NDR de Figma",
+  "tipo": "metrica"
+ },
  "no_asignacion_aleatoria": {
   "id": "no_asignacion_aleatoria",
   "nombre": "Capacidad de diseño no asignada al azar (observacional)",
@@ -329,35 +554,85 @@
   "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
   "tipo": "metrica"
  },
+ "perdida_neta_figma_fy25": {
+  "id": "perdida_neta_figma_fy25",
+  "nombre": "Pérdida neta GAAP de Figma FY2025 (−US$1,25B)",
+  "tipo": "resultado"
+ },
  "precio_accion_figma": {
   "id": "precio_accion_figma",
   "nombre": "Precio de la acción de Figma (FIG)",
   "tipo": "resultado"
+ },
+ "precio_ipo_figma": {
+  "id": "precio_ipo_figma",
+  "nombre": "Precio de IPO de Figma (US$33)",
+  "tipo": "concepto"
  },
  "precision_adaptacion_alta": {
   "id": "precision_adaptacion_alta",
   "nombre": "Alta precisión de adaptación",
   "tipo": "concepto"
  },
+ "preferencia_interfaces_generativas": {
+  "id": "preferencia_interfaces_generativas",
+  "nombre": "Preferencia por interfaces generativas (hasta 72%)",
+  "tipo": "resultado"
+ },
  "productividad_devs": {
   "id": "productividad_devs",
   "nombre": "Productividad de desarrolladores",
   "tipo": "resultado"
+ },
+ "productividad_firmas_ocde": {
+  "id": "productividad_firmas_ocde",
+  "nombre": "Productividad de firmas OCDE (elasticidad ~0,05; retorno ~16%)",
+  "tipo": "resultado"
+ },
+ "programa_simulado": {
+  "id": "programa_simulado",
+  "nombre": "Programa simulado (incentivo ≤US$100), no seguro con prima real",
+  "tipo": "limitacion"
  },
  "ranking_expertos_diseno": {
   "id": "ranking_expertos_diseno",
   "nombre": "Ranking de 138 expertos en diseño industrial",
   "tipo": "metrica"
  },
+ "rediseno_expresivo": {
+  "id": "rediseno_expresivo",
+  "nombre": "Rediseño expresivo (fluidez y estética a la vez)",
+  "tipo": "intervencion"
+ },
  "relacion_innovacion_desempeno": {
   "id": "relacion_innovacion_desempeno",
   "nombre": "Relación innovación → desempeño",
   "tipo": "afirmacion"
  },
+ "revenue_figma_q1": {
+  "id": "revenue_figma_q1",
+  "nombre": "Ingresos de Figma Q1 2026 (+46%)",
+  "tipo": "resultado"
+ },
+ "s1_figma": {
+  "id": "s1_figma",
+  "nombre": "S-1 de Figma (factor de riesgo declarado por la propia empresa)",
+  "tipo": "estudio"
+ },
+ "salida_cpo_anthropic": {
+  "id": "salida_cpo_anthropic",
+  "nombre": "Salida del CPO de Anthropic de la junta de Figma (14-abr-2026)",
+  "tipo": "concepto"
+ },
  "satisfaccion_carga_percibida": {
   "id": "satisfaccion_carga_percibida",
   "nombre": "Satisfacción y carga percibida",
   "tipo": "resultado"
+ },
+ "sbc_ipo": {
+  "id": "sbc_ipo",
+  "nombre": "Compensación en acciones por la IPO (US$975,7M)",
+  "tipo": "concepto"
  },
  "sesgo_halo": {
   "id": "sesgo_halo",
@@ -373,6 +648,11 @@
   "id": "sobreconfianza_ia",
   "nombre": "Sobre-confianza en la IA",
   "tipo": "resultado"
+ },
+ "solo_preferencia": {
+  "id": "solo_preferencia",
+  "nombre": "Mide preferencia, no desempeño ni aprendibilidad longitudinal",
+  "tipo": "limitacion"
  },
  "sus_sesion_unica": {
   "id": "sus_sesion_unica",
@@ -399,9 +679,34 @@
   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
   "tipo": "concepto"
  },
+ "tiempo_entrega": {
+  "id": "tiempo_entrega",
+  "nombre": "Time-to-delivery",
+  "tipo": "resultado"
+ },
+ "ubi_telematica": {
+  "id": "ubi_telematica",
+  "nombre": "UBI / seguro basado en telemática",
+  "tipo": "intervencion"
+ },
+ "usabilidad_del_generador": {
+  "id": "usabilidad_del_generador",
+  "nombre": "La usabilidad pasa a ser la interacción con el generador",
+  "tipo": "concepto"
+ },
+ "usabilidad_funcional": {
+  "id": "usabilidad_funcional",
+  "nombre": "Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores)",
+  "tipo": "resultado"
+ },
  "usabilidad_percibida_sus": {
   "id": "usabilidad_percibida_sus",
   "nombre": "Usabilidad percibida (SUS)",
+  "tipo": "resultado"
+ },
+ "valoracion_estetica": {
+  "id": "valoracion_estetica",
+  "nombre": "Calificaciones positivas/estéticas",
   "tipo": "resultado"
  },
  "velocidad_tarea": {
