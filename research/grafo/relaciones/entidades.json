@@ -19,10 +19,30 @@
   "nombre": "Adobe fusionó Digital Media, Experience y Publishing en un solo segmento",
   "tipo": "limitacion"
  },
+ "adopcion_telemedicina_peru": {
+  "id": "adopcion_telemedicina_peru",
+  "nombre": "Adopción de la telemedicina en Perú",
+  "tipo": "resultado"
+ },
+ "adulacion_ia": {
+  "id": "adulacion_ia",
+  "nombre": "Adulación de la IA (sycophancy)",
+  "tipo": "intervencion"
+ },
  "adultos_eeuu": {
   "id": "adultos_eeuu",
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
+ },
+ "alfabetizacion_ia": {
+  "id": "alfabetizacion_ia",
+  "nombre": "Alfabetización en IA (intervención ligera)",
+  "tipo": "intervencion"
+ },
+ "allianz_vida_salud": {
+  "id": "allianz_vida_salud",
+  "nombre": "Resultado operativo Vida/Salud de Allianz",
+  "tipo": "resultado"
  },
  "ambidestreza": {
   "id": "ambidestreza",
@@ -39,14 +59,34 @@
   "nombre": "Asistencia de IA en razonamiento lógico",
   "tipo": "intervencion"
  },
+ "asuncion_responsabilidad": {
+  "id": "asuncion_responsabilidad",
+  "nombre": "Disposición a asumir responsabilidad y reparar",
+  "tipo": "resultado"
+ },
  "autoestimacion_desempeno": {
   "id": "autoestimacion_desempeno",
   "nombre": "Autoestimación del desempeño (~+4 pts)",
   "tipo": "resultado"
  },
+ "automedicacion_no_responsable": {
+  "id": "automedicacion_no_responsable",
+  "nombre": "Automedicación no responsable (Perú)",
+  "tipo": "resultado"
+ },
  "backlash_consumidor": {
   "id": "backlash_consumidor",
   "nombre": "Backlash del consumidor",
+  "tipo": "resultado"
+ },
+ "barreras_telemedicina_peru": {
+  "id": "barreras_telemedicina_peru",
+  "nombre": "Barreras a la telemedicina en Perú",
+  "tipo": "constructo"
+ },
+ "brecha_natcat": {
+  "id": "brecha_natcat",
+  "nombre": "Brecha de protección de catástrofes naturales (US$424 mil M)",
   "tipo": "resultado"
  },
  "brecha_percepcion_realidad": {
@@ -57,6 +97,11 @@
  "c_ambidestreza_mejora_desempeno": {
   "id": "c_ambidestreza_mejora_desempeno",
   "nombre": "La ambidestreza mejora el desempeño",
+  "tipo": "afirmacion"
+ },
+ "c_autorreporte_inflado_prod": {
+  "id": "c_autorreporte_inflado_prod",
+  "nombre": "El autorreporte de productividad con IA está inflado (RP2)",
   "tipo": "afirmacion"
  },
  "c_brecha_justificacion_implementacion": {
@@ -84,9 +129,19 @@
   "nombre": "Crisis estructural del modelo de consultora de diseño",
   "tipo": "afirmacion"
  },
+ "c_desconfianza_falta_info": {
+  "id": "c_desconfianza_falta_info",
+  "nombre": "La causa #1 de desconfianza en seguros es la falta de información",
+  "tipo": "afirmacion"
+ },
  "c_diseno_firma": {
   "id": "c_diseno_firma",
   "nombre": "Diseño efectivo → mejor desempeño de la firma",
+  "tipo": "afirmacion"
+ },
+ "c_divulgacion_obligatoria_falla": {
+  "id": "c_divulgacion_obligatoria_falla",
+  "nombre": "Los mandatos de 'explicar mejor' fracasan sistemáticamente",
   "tipo": "afirmacion"
  },
  "c_dt_efecto_mediado": {
@@ -122,6 +177,16 @@
  "c_explicaciones_no_complementarias": {
   "id": "c_explicaciones_no_complementarias",
   "nombre": "Las explicaciones rara vez producen desempeño complementario",
+  "tipo": "afirmacion"
+ },
+ "c_explicaciones_solo_dificil": {
+  "id": "c_explicaciones_solo_dificil",
+  "nombre": "Las explicaciones de IA ayudan solo en tareas difíciles (RP1/HC1)",
+  "tipo": "afirmacion"
+ },
+ "c_f203_cifra": {
+  "id": "c_f203_cifra",
+  "nombre": "F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025",
   "tipo": "afirmacion"
  },
  "c_fluidez_vs_estetica_separables": {
@@ -169,9 +234,19 @@
   "nombre": "La IA cobra un impuesto de margen a las herramientas de diseño (H32)",
   "tipo": "afirmacion"
  },
+ "c_informe_onu_muertes": {
+  "id": "c_informe_onu_muertes",
+  "nombre": "Un informe de la ONU vincula la adulación de chatbots con muertes",
+  "tipo": "afirmacion"
+ },
  "c_leves_sin_backlash": {
   "id": "c_leves_sin_backlash",
   "nombre": "Los dark patterns leves no generan backlash",
+  "tipo": "afirmacion"
+ },
+ "c_margen_compresion": {
+  "id": "c_margen_compresion",
+  "nombre": "El margen fino de 2025 (1,8%) es una tendencia de compresión",
   "tipo": "afirmacion"
  },
  "c_mito_fracaso_80_95": {
@@ -182,6 +257,26 @@
  "c_narrativa_multiplicadores_diseno": {
   "id": "c_narrativa_multiplicadores_diseno",
   "nombre": "El diseño devuelve multiplicadores de retorno (p. ej. 100:1)",
+  "tipo": "afirmacion"
+ },
+ "c_pen_2_01": {
+  "id": "c_pen_2_01",
+  "nombre": "Penetración ~2,01% (estimación al 2T 2026)",
+  "tipo": "afirmacion"
+ },
+ "c_pen_2_08": {
+  "id": "c_pen_2_08",
+  "nombre": "Penetración ~2,08% (cifra del node)",
+  "tipo": "afirmacion"
+ },
+ "c_persuasion_concentrada": {
+  "id": "c_persuasion_concentrada",
+  "nombre": "La persuasión de la IA se concentra en personas susceptibles",
+  "tipo": "afirmacion"
+ },
+ "c_preferencia_adulacion": {
+  "id": "c_preferencia_adulacion",
+  "nombre": "Los usuarios prefieren la IA aduladora",
   "tipo": "afirmacion"
  },
  "c_proxies_vulnerabilidad_debiles": {
@@ -219,6 +314,21 @@
   "nombre": "Todos los grupos de consumidores son susceptibles",
   "tipo": "afirmacion"
  },
+ "calificacion_calidad_ia": {
+  "id": "calificacion_calidad_ia",
+  "nombre": "Calificación de calidad y confianza de la IA",
+  "tipo": "resultado"
+ },
+ "cambio_actitud": {
+  "id": "cambio_actitud",
+  "nombre": "Cambio de actitud de las personas",
+  "tipo": "resultado"
+ },
+ "cambio_producto": {
+  "id": "cambio_producto",
+  "nombre": "Cambio de producto por el consumidor",
+  "tipo": "resultado"
+ },
  "cambio_titular_anuncios_bing": {
   "id": "cambio_titular_anuncios_bing",
   "nombre": "Cambio en titulares de anuncios de Bing (2012)",
@@ -229,10 +339,20 @@
   "nombre": "Capacidad de diseño-ingeniería",
   "tipo": "constructo"
  },
+ "carga_prueba_aseguradora": {
+  "id": "carga_prueba_aseguradora",
+  "nombre": "La aseguradora debe acreditar que explicó la exclusión",
+  "tipo": "concepto"
+ },
  "claude_design": {
   "id": "claude_design",
   "nombre": "Lanzamiento de Claude Design (Anthropic)",
   "tipo": "intervencion"
+ },
+ "coaseguro": {
+  "id": "coaseguro",
+  "nombre": "Coaseguro y tarifas variables",
+  "tipo": "concepto"
  },
  "cognitive_forcing_functions": {
   "id": "cognitive_forcing_functions",
@@ -247,6 +367,11 @@
  "compra_ecommerce": {
   "id": "compra_ecommerce",
   "nombre": "Compra en e-commerce",
+  "tipo": "resultado"
+ },
+ "comprension_plan_salud": {
+  "id": "comprension_plan_salud",
+  "nombre": "Comprensión del plan de salud",
   "tipo": "resultado"
  },
  "conductas_riesgo_manejo": {
@@ -274,6 +399,11 @@
   "nombre": "Contexto y elección metodológica",
   "tipo": "concepto"
  },
+ "conviccion_tener_razon": {
+  "id": "conviccion_tener_razon",
+  "nombre": "Convicción de tener razón",
+  "tipo": "resultado"
+ },
  "costo_beneficio_involucramiento": {
   "id": "costo_beneficio_involucramiento",
   "nombre": "Costos y beneficios de involucrarse con la explicación",
@@ -283,6 +413,16 @@
   "id": "costo_ia_inferencia",
   "nombre": "Costo de IA / inferencia",
   "tipo": "concepto"
+ },
+ "crecimiento_prima_root": {
+  "id": "crecimiento_prima_root",
+  "nombre": "Crecimiento de prima devengada de Root (−1%)",
+  "tipo": "resultado"
+ },
+ "crecimiento_primas_globales": {
+  "id": "crecimiento_primas_globales",
+  "nombre": "Crecimiento real de primas globales (1,3% en 2026)",
+  "tipo": "resultado"
  },
  "creditos_ia_figma": {
   "id": "creditos_ia_figma",
@@ -303,6 +443,16 @@
   "id": "dark_patterns_leves",
   "nombre": "Dark patterns leves",
   "tipo": "intervencion"
+ },
+ "demanda_seguros": {
+  "id": "demanda_seguros",
+  "nombre": "Demanda de seguros",
+  "tipo": "resultado"
+ },
+ "descarga_cognitiva": {
+  "id": "descarga_cognitiva",
+  "nombre": "Descarga cognitiva",
+  "tipo": "constructo"
  },
  "desempeno_complementario": {
   "id": "desempeno_complementario",
@@ -334,15 +484,45 @@
   "nombre": "Design thinking",
   "tipo": "intervencion"
  },
+ "determinantes_automedicacion": {
+  "id": "determinantes_automedicacion",
+  "nombre": "Determinantes de la automedicación",
+  "tipo": "constructo"
+ },
+ "disciplina_precios_salud": {
+  "id": "disciplina_precios_salud",
+  "nombre": "Disciplina de precios y rediseño de beneficios",
+  "tipo": "intervencion"
+ },
+ "diseno_hibrido_tipo2": {
+  "id": "diseno_hibrido_tipo2",
+  "nombre": "Diseño híbrido efectividad-implementación tipo 2",
+  "tipo": "concepto"
+ },
  "diseno_industrial_efectivo": {
   "id": "diseno_industrial_efectivo",
   "nombre": "Efectividad de diseño industrial",
   "tipo": "constructo"
  },
+ "divulgacion_clara": {
+  "id": "divulgacion_clara",
+  "nombre": "Divulgación clara y saliente de un producto financiero",
+  "tipo": "intervencion"
+ },
  "edad_avanzada": {
   "id": "edad_avanzada",
   "nombre": "Usuarios mayores",
   "tipo": "poblacion"
+ },
+ "efecto_nudge_academico": {
+  "id": "efecto_nudge_academico",
+  "nombre": "Efecto de nudges en papers académicos (~8,7 pp)",
+  "tipo": "resultado"
+ },
+ "efecto_nudge_escala": {
+  "id": "efecto_nudge_escala",
+  "nombre": "Efecto de nudges a escala (~1,4 pp)",
+  "tipo": "resultado"
  },
  "empleo_disenadores_graficos": {
   "id": "empleo_disenadores_graficos",
@@ -409,6 +589,11 @@
   "nombre": "Fracaso real de productos nuevos (25% año 1, ~40% año 2)",
   "tipo": "resultado"
  },
+ "friccion_disliked": {
+  "id": "friccion_disliked",
+  "nombre": "Los usuarios no gustan de la fricción cognitiva",
+  "tipo": "limitacion"
+ },
  "friccion_pago_posterior": {
   "id": "friccion_pago_posterior",
   "nombre": "Fricción: acción de pago requerida tras el dark pattern",
@@ -434,6 +619,11 @@
   "nombre": "Herramientas de IA generativa",
   "tipo": "intervencion"
  },
+ "i_frame": {
+  "id": "i_frame",
+  "nombre": "Enfoque individual (i-frame)",
+  "tipo": "concepto"
+ },
  "ia_alineada_design_system": {
   "id": "ia_alineada_design_system",
   "nombre": "IA alineada al design system",
@@ -442,6 +632,16 @@
  "ia_asistida_devs": {
   "id": "ia_asistida_devs",
   "nombre": "Uso de IA por desarrolladores experimentados",
+  "tipo": "intervencion"
+ },
+ "ia_clinica": {
+  "id": "ia_clinica",
+  "nombre": "IA clínica",
+  "tipo": "concepto"
+ },
+ "indecopi_sanciones_2026": {
+  "id": "indecopi_sanciones_2026",
+  "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
   "tipo": "intervencion"
  },
  "ingresos_bing": {
@@ -474,6 +674,11 @@
   "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
   "tipo": "concepto"
  },
+ "litigios_adulacion": {
+  "id": "litigios_adulacion",
+  "nombre": "Litigios y cartas de fiscales por adulación de chatbots",
+  "tipo": "concepto"
+ },
  "lovable_arr": {
   "id": "lovable_arr",
   "nombre": "ARR de Lovable",
@@ -494,15 +699,30 @@
   "nombre": "Valoración de Lovable (US$13,3B)",
   "tipo": "resultado"
  },
+ "marco_implementacion": {
+  "id": "marco_implementacion",
+  "nombre": "Marcos de evaluación de efectividad e implementación",
+  "tipo": "concepto"
+ },
  "margen_bruto_figma": {
   "id": "margen_bruto_figma",
   "nombre": "Margen bruto de Figma",
+  "tipo": "resultado"
+ },
+ "margen_salud_eeuu": {
+  "id": "margen_salud_eeuu",
+  "nombre": "Margen de suscripción de la industria de salud de EE.UU.",
   "tipo": "resultado"
  },
  "materiales_kohavi": {
   "id": "materiales_kohavi",
   "nombre": "Resúmenes y materiales públicos de Kohavi (no el texto de HBR)",
   "tipo": "estudio"
+ },
+ "mcr_unh": {
+  "id": "mcr_unh",
+  "nombre": "Medical care ratio de UnitedHealth (86,7% en el 2T 2026)",
+  "tipo": "resultado"
  },
  "menos_educados": {
   "id": "menos_educados",
@@ -523,6 +743,16 @@
   "id": "microsoft_exp",
   "nombre": "Plataforma de experimentación de Microsoft (ExP)",
   "tipo": "organizacion"
+ },
+ "microtargeting_llm": {
+  "id": "microtargeting_llm",
+  "nombre": "Microtargeting con LLM (mensajes personalizados)",
+  "tipo": "intervencion"
+ },
+ "modelo_farmacias_triage": {
+  "id": "modelo_farmacias_triage",
+  "nombre": "Modelo de triage con IA y farmacias (Perú)",
+  "tipo": "intervencion"
  },
  "muestra_estudiantil_percibida": {
   "id": "muestra_estudiantil_percibida",
@@ -549,15 +779,45 @@
   "nombre": "Cifra vista en resúmenes secundarios; texto de HBR no abierto",
   "tipo": "limitacion"
  },
+ "nudges_a_escala": {
+  "id": "nudges_a_escala",
+  "nombre": "Nudges a escala (nudge units)",
+  "tipo": "intervencion"
+ },
+ "pandemia_2020": {
+  "id": "pandemia_2020",
+  "nombre": "Pandemia de 2020",
+  "tipo": "concepto"
+ },
  "patentes_diseno_utilidad": {
   "id": "patentes_diseno_utilidad",
   "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
   "tipo": "metrica"
  },
+ "penetracion_peru": {
+  "id": "penetracion_peru",
+  "nombre": "Penetración de seguros en Perú",
+  "tipo": "resultado"
+ },
+ "pensamiento_critico": {
+  "id": "pensamiento_critico",
+  "nombre": "Pensamiento crítico",
+  "tipo": "resultado"
+ },
  "perdida_neta_figma_fy25": {
   "id": "perdida_neta_figma_fy25",
   "nombre": "Pérdida neta GAAP de Figma FY2025 (−US$1,25B)",
   "tipo": "resultado"
+ },
+ "personas_susceptibles": {
+  "id": "personas_susceptibles",
+  "nombre": "Personas psicológicamente susceptibles",
+  "tipo": "poblacion"
+ },
+ "persuasion_ia": {
+  "id": "persuasion_ia",
+  "nombre": "Persuasión conversacional por IA",
+  "tipo": "intervencion"
  },
  "precio_accion_figma": {
   "id": "precio_accion_figma",
@@ -577,6 +837,11 @@
  "preferencia_interfaces_generativas": {
   "id": "preferencia_interfaces_generativas",
   "nombre": "Preferencia por interfaces generativas (hasta 72%)",
+  "tipo": "resultado"
+ },
+ "primas_peru": {
+  "id": "primas_peru",
+  "nombre": "Primas netas de Perú (S/24.034 M a dic-2025, +8,3%)",
   "tipo": "resultado"
  },
  "productividad_devs": {
@@ -599,6 +864,16 @@
   "nombre": "Ranking de 138 expertos en diseño industrial",
   "tipo": "metrica"
  },
+ "re_aim": {
+  "id": "re_aim",
+  "nombre": "Marco RE-AIM",
+  "tipo": "concepto"
+ },
+ "rechazo_cobertura_sin_fundamento": {
+  "id": "rechazo_cobertura_sin_fundamento",
+  "nombre": "Rechazo de cobertura sin fundamento o fuera de plazo",
+  "tipo": "concepto"
+ },
  "rediseno_expresivo": {
   "id": "rediseno_expresivo",
   "nombre": "Rediseño expresivo (fluidez y estética a la vez)",
@@ -614,10 +889,20 @@
   "nombre": "Ingresos de Figma Q1 2026 (+46%)",
   "tipo": "resultado"
  },
+ "rollback_gpt4o": {
+  "id": "rollback_gpt4o",
+  "nombre": "Retiro de la actualización aduladora de GPT-4o (abril 2025)",
+  "tipo": "concepto"
+ },
  "s1_figma": {
   "id": "s1_figma",
   "nombre": "S-1 de Figma (factor de riesgo declarado por la propia empresa)",
   "tipo": "estudio"
+ },
+ "s_frame": {
+  "id": "s_frame",
+  "nombre": "Enfoque estructural (s-frame)",
+  "tipo": "concepto"
  },
  "salida_cpo_anthropic": {
   "id": "salida_cpo_anthropic",
@@ -634,6 +919,11 @@
   "nombre": "Compensación en acciones por la IPO (US$975,7M)",
   "tipo": "concepto"
  },
+ "sbs_ris_2026": {
+  "id": "sbs_ris_2026",
+  "nombre": "Res. SBS 01923-2026 (infracciones y sanciones)",
+  "tipo": "intervencion"
+ },
  "sesgo_halo": {
   "id": "sesgo_halo",
   "nombre": "Sesgo de halo (proxy = percepción experta)",
@@ -643,6 +933,16 @@
   "id": "sesgo_seleccion_metr",
   "nombre": "Sesgo de selección en el estudio de productividad",
   "tipo": "limitacion"
+ },
+ "sesgos_conductuales_seguro": {
+  "id": "sesgos_conductuales_seguro",
+  "nombre": "Sesgos conductuales (miopía, narrow framing, present bias)",
+  "tipo": "constructo"
+ },
+ "silent_trial": {
+  "id": "silent_trial",
+  "nombre": "Silent trial / modo sombra",
+  "tipo": "intervencion"
  },
  "sobreconfianza_ia": {
   "id": "sobreconfianza_ia",
@@ -718,5 +1018,10 @@
   "id": "verificabilidad",
   "nombre": "Verificabilidad de la predicción",
   "tipo": "constructo"
+ },
+ "xai_vs_solo_ia": {
+  "id": "xai_vs_solo_ia",
+  "nombre": "Explicaciones frente a la sola predicción de la IA",
+  "tipo": "intervencion"
  }
 }

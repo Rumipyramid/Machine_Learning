@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 16 | 6,728 líneas |
+| Nodes (`_nodes/`) | 16 | 6,754 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 494 | 🟢A 136 · 🔵B 85 · 🟡C 112 · 🟠D 118 · 🔴E 29 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 503 | 🟢A 138 · 🔵B 86 · 🟡C 116 · 🟠D 120 · 🔴E 29 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
-| Fuentes citadas por ≥1 node | 377 de 494 | 76% del ledger; **117 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 386 de 503 | 77% del ledger; **117 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 32 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 49 de 494 fuentes (10%) | 115 relaciones · 6 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 90 de 503 fuentes (18%) | 169 relaciones · 8 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -38,7 +38,7 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 11 | 0.058 | ✅ |
+| `conducta-humano-ia` | 11 | 0.055 | ✅ |
 | `mecanismos-seguros-salud` | 3 | 0.013 | ✅ |
 | `behavioral-design-estado-disciplina` | 0 | 0.0 | ✅ |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 0 | 0.0 | ✅ |
@@ -79,7 +79,7 @@
 | 2026-07-27 | 51 | 379 | 24 | █████████████ |
 | 2026-07-29 | 19 | 398 | 7 | █████ |
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
-| 2026-10-02 | 26 | 494 | 11 | ██████ |
+| 2026-10-02 | 35 | 503 | 14 | █████████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -96,7 +96,7 @@
 | Métrica | Valor | Qué dice | Qué NO dice |
 |---|---|---|---|
 | M1 Base sólida (A+B / ledger) | 45% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
-| M2 Cobertura de citación | 76% | cuánto del ledger sostiene algún node | un node puede citar mal |
+| M2 Cobertura de citación | 77% | cuánto del ledger sostiene algún node | un node puede citar mal |
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 39% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 23% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
@@ -119,15 +119,15 @@
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 1843 | 175 | 57 | 8/8 | 2026-10-02 | 2026-10-02 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 51 | 32 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
+| `conducta-humano-ia` | 139 | 35 | 25 | 5/5 | 2026-10-02 | 2026-10-02 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |
-| `conducta-humano-ia` | 113 | 26 | 22 | 5/5 | n/d | 2026-10-02 v1.0 |
 | `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
 | `modelo-salud-ia-farmacias-peru` | 605 | 21 | 18 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-12 v1.0 |
 | `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
 | `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
-| `evaluacion-calidad-agentes-conversacionales-ia` | 254 | 14 | 10 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-15 v1.0 |
+| `evaluacion-calidad-agentes-conversacionales-ia` | 254 | 14 | 10 | 3/3 | 2026-10-02 | 2026-10-02 v1.0 |
 | `seguros-comportamiento-mundo-peru` | 331 | 9 | 3 | 12/12 | 2026-10-02 | 2026-10-02 v1.1 |
-| `behavioral-design-estado-disciplina` | 318 | 8 | 7 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-29 v1.1 |
+| `behavioral-design-estado-disciplina` | 318 | 8 | 7 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
 | `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-24 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
 | `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-21 v1.0 |

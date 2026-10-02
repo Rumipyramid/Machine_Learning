@@ -102,6 +102,63 @@
    "triples": 18,
    "sin_aporte": [],
    "notas": "Pase de amplitud a nivel ficha (14 fuentes: innovación, generative UI, Figma/consultoras, empleo)."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f_ids": [
+    "F-198",
+    "F-477",
+    "F-478",
+    "F-480",
+    "F-481",
+    "F-482",
+    "F-483",
+    "F-484",
+    "F-485",
+    "F-486",
+    "F-487",
+    "F-488",
+    "F-489",
+    "F-490",
+    "F-491",
+    "F-492",
+    "F-493",
+    "F-494",
+    "F-495",
+    "F-496",
+    "F-497",
+    "F-498",
+    "F-499",
+    "F-500",
+    "F-501",
+    "F-502",
+    "F-503"
+   ],
+   "triples": 36,
+   "sin_aporte": [],
+   "notas": "Procesa las fuentes de la iteración de seguros y de conducta humano-IA (F-477 a F-503, más F-198 por su cifra nueva). Abstract en artículos académicos; ficha en prensa, empresas y blogs."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f_ids": [
+    "F-3",
+    "F-6",
+    "F-9",
+    "F-10",
+    "F-19",
+    "F-21",
+    "F-23",
+    "F-36",
+    "F-40",
+    "F-41",
+    "F-53",
+    "F-54",
+    "F-55",
+    "F-56"
+   ],
+   "triples": 18,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud a nivel ficha: 14 fuentes 🟢A citadas por los nodes de seguros y salud (sesgos, divulgación, nudges, telemedicina Perú, marcos de implementación)."
   }
  ],
  "discrepancias": [
@@ -115,7 +172,7 @@
   {
    "fecha": "2026-10-02",
    "f": "F-241",
-   "detalle": "Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo. Actualización 2026-10-02: la afirmación de que los menos educados fueron más susceptibles a patterns leves SÍ figura en el abstract; las cifras exactas siguen sin confirmarse.",
+   "detalle": "Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo. Actualización 2026-10-02: la afirmación de que los menos educados fueron más susceptibles a patterns leves SÍ figura en el abstract; las cifras exactas siguen sin confirmarse. Reintento 2026-10-02: el texto completo (chicagounbound.uchicago.edu y content.naic.org) quedó bloqueado por la red; el abstract confirma 'más del doble' y 'casi cuatro veces' y que los menos educados fueron más susceptibles a los patterns leves; las cifras exactas siguen sin confirmar.",
    "estado": "abierta"
   },
   {
@@ -128,7 +185,7 @@
   {
    "fecha": "2026-10-02",
    "f": "F-238",
-   "detalle": "La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados).",
+   "detalle": "La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados). Reintento 2026-10-02: Crossref bloqueado; la búsqueda confirma revista (*Innovation*), año 2025, 1.659 firmas y el diseño, pero no los nombres de los autores.",
    "estado": "abierta"
   },
   {
@@ -141,7 +198,9 @@
   {
    "fecha": "2026-10-02",
    "f": "F-256",
-   "detalle": "F-256 y F-382 llevan el mismo título ('Looks Good, But Is It Usable? Evaluating Usability in AI-Generated…'): posible registro duplicado en el ledger. Revisar y, si lo es, consolidar (decisión de cronista)."
+   "detalle": "F-256 y F-382 llevan el mismo título ('Looks Good, But Is It Usable? Evaluating Usability in AI-Generated…'): posible registro duplicado en el ledger. Revisar y, si lo es, consolidar (decisión de cronista).",
+   "estado": "cerrada",
+   "resolucion": "Duplicado consolidado por cronista el 2026-10-02: F-256 y F-382 describen la misma obra (CHI 2026 Extended Abstracts, 'Looks Good, But Is It Usable?'). Canónica: F-382. F-256 queda marcada como duplicado en el ledger; el ID se conserva."
   },
   {
    "fecha": "2026-10-02",
@@ -153,14 +212,15 @@
   {
    "fecha": "2026-10-02",
    "f": "F-23",
-   "estado": "abierta",
-   "detalle": "F-23 y F-442 describen el mismo estudio (RCT de campo nacional de UBI simulado, Accident Analysis & Prevention): posible registro duplicado en el ledger. Decisión de consolidar: cronista."
+   "estado": "cerrada",
+   "detalle": "F-23 y F-442 describen el mismo estudio (RCT de campo nacional de UBI simulado, Accident Analysis & Prevention): posible registro duplicado en el ledger. Decisión de consolidar: cronista.",
+   "resolucion": "Duplicado consolidado por cronista el 2026-10-02: F-23 y F-442 son el mismo RCT de UBI simulado (Accident Analysis & Prevention). Canónica: F-442 (con preregistro NCT06101251, N=1.449). F-23 queda marcada como duplicado."
   },
   {
    "fecha": "2026-10-02",
    "f": "F-483",
    "estado": "abierta",
-   "detalle": "La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS."
+   "detalle": "La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS."
   }
  ],
  "resoluciones": [
@@ -211,6 +271,42 @@
    "estado": "alcance_distinto",
    "fecha": "2026-10-02",
    "nota": "Conflicto de H19 aún abierto, pero no frontal: F-257/F-474 miden devs expertos en sus propias bases de código; F-259 mide un design system con IA alineada en un contexto, autoría no verificada. Se confirma o refuta con replicación independiente (H6)."
+  },
+  {
+   "triple": "T-116",
+   "estado": "reconciliada",
+   "fecha": "2026-10-02",
+   "nota": "Reconciliación de la discrepancia de F-203: dos lecturas independientes (F-477 y F-478) dan Vida/Salud ≈€1,4 mil M en el 1T y €1,5 mil M en el 2T 2026; la ficha F-203 era errónea o de otro perímetro. Cerrada con reserva (comunicado primario sin abrir)."
+  },
+  {
+   "triple": "T-117",
+   "estado": "reconciliada",
+   "fecha": "2026-10-02",
+   "nota": "Misma reconciliación que F-477: el 1T 2026 fue ≈€1,35-1,4 mil M (−5,1%), no €2.400 M (+11,1%)."
+  },
+  {
+   "triple": "T-120",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-02",
+   "nota": "La compresión de 2025 (semestre, F-193) y el rebote de 2026 (un trimestre, F-480; una gran aseguradora, F-198) no son comparables 1:1. Dirección de 2026: recuperación; magnitud y persistencia, sin confirmar."
+  },
+  {
+   "triple": "T-124",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-02",
+   "nota": "Probable diferencia de fecha y definición entre 2,01% (estimación al 2T 2026), ~2,08% (node) y ~2,5% (fuente no identificada). Sin verificar con la SBS; citar siempre fuente, fecha y definición."
+  },
+  {
+   "triple": "T-137",
+   "estado": "en_disputa",
+   "fecha": "2026-10-02",
+   "nota": "F-491 (preprint, 820 personas) halla un gran aumento con datos demográficos y concentración en susceptibles; F-499 (PNAS, preregistrado) no halla ventaja del microtargeting. Puede ser susceptibilidad ≠ personalización, pero hoy no está resuelto: RP4 no se promueve."
+  },
+  {
+   "triple": "T-148",
+   "estado": "matizada",
+   "fecha": "2026-10-02",
+   "nota": "El meta-análisis de 2026 (F-498) halla un efecto pequeño pero significativo de las explicaciones sobre la sola predicción, no limitado a tareas difíciles. RP1 se reformula: efecto pequeño y condicional, no nulo."
   }
  ]
 }

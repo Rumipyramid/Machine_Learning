@@ -10,8 +10,8 @@
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 113,
-   "cites": 26,
+   "lines": 139,
+   "cites": 35,
    "design": false
   },
   {
@@ -4581,6 +4581,87 @@
    "autor": "Autoría no capturada — arXiv 2609.16432",
    "anio": "2026",
    "huerfana": false
+  },
+  {
+   "id": "F-495",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "OpenAI rolls back ChatGPT's sycophancy and explains what went wrong",
+   "autor": "VentureBeat · TechCrunch · Georgetown Law Tech Institute (cobertura del retiro de GPT-4o)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-496",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "AI Chatbots Face Rising Legal and Legislative Scrutiny / When the Model Agrees With Everything: AI, Sycophancy, and the Emerging Psychosis L",
+   "autor": "Kelley Drye · Castro Law (blogs de firmas jurídicas)",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-497",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "UN AI Report 2026: Chatbot Sycophancy Is Linked to Deaths, No Safety Guarantee",
+   "autor": "TechTimes",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-498",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Effect of Explainable AI-based Decision Support on Human Task Performance: A Meta-Analysis",
+   "autor": "Haag, F. (Journal of Decision Systems)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-499",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Evaluating the persuasive influence of political microtargeting with large language models (PNAS)",
+   "autor": "Hackenburg, K. & Margetts, H.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-500",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Individual-level interventions against sycophantic AI reduce its appeal but not its persuasiveness",
+   "autor": "Autoría no capturada — arXiv 2607.25166",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-501",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Sycophantic AI makes human interaction feel more effortful and less satisfying over time",
+   "autor": "Autoría no capturada — arXiv 2605.07912",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-502",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Cognitive Forcing for Better Decision-Making: Reducing Overreliance on AI Systems Through Partial Explanations",
+   "autor": "de Jong et al. (ACM)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-503",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Stanford Study: AI's Real ROI in Software Engineering",
+   "autor": "htek.dev (resumen de un estudio de Stanford)",
+   "anio": "2026",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -7227,6 +7308,51 @@
    "s": "conducta-humano-ia",
    "t": "F-494",
    "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-495",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-496",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-497",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-498",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-499",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-500",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-501",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-502",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-503",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -7444,16 +7570,16 @@
    },
    {
     "fecha": "2026-10-02",
-    "nuevas": 26,
-    "acumuladas": 494,
-    "AB": 11,
+    "nuevas": 35,
+    "acumuladas": 503,
+    "AB": 14,
     "rigor": {
-     "B": 9,
-     "C": 12,
-     "D": 1,
+     "B": 10,
+     "C": 16,
+     "D": 3,
      "E": 1,
      "?": 1,
-     "A": 2
+     "A": 4
     }
    }
   ],
