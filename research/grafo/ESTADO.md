@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 15 | 6,582 líneas |
+| Nodes (`_nodes/`) | 16 | 6,728 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 476 | 🟢A 134 · 🔵B 78 · 🟡C 104 · 🟠D 118 · 🔴E 29 · otras/sin clasificar 13 |
-| Aristas wikilink (node→node) | 74 | recíprocas: 74 de 74 (100%) |
-| Fuentes citadas por ≥1 node | 360 de 476 | 76% del ledger; **116 viven solo en el ledger** |
-| Fuentes citadas por ≥2 nodes (transversales) | 15 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 49 de 476 fuentes (10%) | 115 relaciones · 6 barridos · detalle en `relaciones/RELACIONES.md` |
+| Fuentes en el ledger | 494 | 🟢A 136 · 🔵B 85 · 🟡C 112 · 🟠D 118 · 🔴E 29 · otras/sin clasificar 14 |
+| Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
+| Fuentes citadas por ≥1 node | 377 de 494 | 76% del ledger; **117 viven solo en el ledger** |
+| Fuentes citadas por ≥2 nodes (transversales) | 32 | evidencia reutilizada entre temas |
+| **Grafo semántico** (relaciones extraídas) | 49 de 494 fuentes (10%) | 115 relaciones · 6 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -22,7 +22,7 @@
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 5 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02) | cuántas veces se confrontó el node |
-| Tamaño | 1,842 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Tamaño | 1,843 líneas | crecimiento ≠ calidad; ver trazabilidad |
 | Fuentes citadas explícitamente | 175 | F-n individuales dentro del node |
 | …de rigor A/B | 57 (33%) | solidez de la base |
 | Hipótesis vivas | 33: abierta 20 · parcial 7 · respaldada 4 · refutada 1 | tablero §6 |
@@ -38,7 +38,8 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `mecanismos-seguros-salud` | 2 | 0.009 | ✅ |
+| `conducta-humano-ia` | 11 | 0.058 | ✅ |
+| `mecanismos-seguros-salud` | 3 | 0.013 | ✅ |
 | `behavioral-design-estado-disciplina` | 0 | 0.0 | ✅ |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 0 | 0.0 | ✅ |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ❌ sin enlace |
@@ -78,7 +79,7 @@
 | 2026-07-27 | 51 | 379 | 24 | █████████████ |
 | 2026-07-29 | 19 | 398 | 7 | █████ |
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
-| 2026-10-02 | 8 | 476 | 2 | ██ |
+| 2026-10-02 | 26 | 494 | 11 | ██████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -99,8 +100,8 @@
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 39% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 23% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
-| M6 Integración (diseño↔resto) | 7/14 nodes enlazados; 1 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
-| M7 Lectura profunda (Lobo) | 169 fuentes leídas a fondo = 36% del ledger; 168 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
+| M6 Integración (diseño↔resto) | 8/15 nodes enlazados; 2 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
+| M7 Lectura profunda (Lobo) | 169 fuentes leídas a fondo = 34% del ledger; 168 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
 
@@ -116,19 +117,20 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 1842 | 175 | 57 | 7/7 | 2026-10-02 | 2026-10-02 v4.1 |
-| `mecanismos-seguros-salud` | 332 | 45 | 27 | 7/7 | 2026-10-02 | 2026-10-02 v1.2 |
+| `tendencias-diseno-innovacion` | 1843 | 175 | 57 | 8/8 | 2026-10-02 | 2026-10-02 v4.1 |
+| `mecanismos-seguros-salud` | 351 | 51 | 32 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |
+| `conducta-humano-ia` | 113 | 26 | 22 | 5/5 | n/d | 2026-10-02 v1.0 |
 | `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
 | `modelo-salud-ia-farmacias-peru` | 605 | 21 | 18 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-12 v1.0 |
 | `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
 | `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
-| `evaluacion-calidad-agentes-conversacionales-ia` | 253 | 13 | 9 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-15 v1.0 |
-| `behavioral-design-estado-disciplina` | 317 | 8 | 7 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-29 v1.1 |
+| `evaluacion-calidad-agentes-conversacionales-ia` | 254 | 14 | 10 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-15 v1.0 |
+| `seguros-comportamiento-mundo-peru` | 331 | 9 | 3 | 12/12 | 2026-10-02 | 2026-10-02 v1.1 |
+| `behavioral-design-estado-disciplina` | 318 | 8 | 7 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-29 v1.1 |
 | `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-24 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
 | `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-21 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 320 | 3 | 1 | 11/11 | 2026-10-02 | 2026-10-02 v1.1 |
 | `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-26 v1.2 |
 | `modelo-personas-sinteticas` | 73 | 0 | 0 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-20 v1.0 |
 

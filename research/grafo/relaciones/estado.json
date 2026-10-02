@@ -142,6 +142,25 @@
    "fecha": "2026-10-02",
    "f": "F-256",
    "detalle": "F-256 y F-382 llevan el mismo título ('Looks Good, But Is It Usable? Evaluating Usability in AI-Generated…'): posible registro duplicado en el ledger. Revisar y, si lo es, consolidar (decisión de cronista)."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f": "F-203",
+   "estado": "cerrada",
+   "detalle": "La ficha dice Allianz Vida/Salud EUR 2.400 M en el 1T 2026 (+11,1%) y EUR 9.000 M en FY2025. Las lecturas del 1T y 2T 2026 dan ≈EUR 1,4 mil M (−5,1%) y EUR 1,5 mil M (+10%), 1S EUR 2,9 mil M.",
+   "resolucion": "Cerrada con reserva: las cifras de la ficha son erróneas o de otro perímetro (no del segmento Vida/Salud); la aritmética de F-477 y F-478 es consistente (1,4 + 1,5 ≈ 2,9). El comunicado primario no se pudo abrir (egress bloqueado). Ficha corregida y marcada en el ledger y en el node mecanismos-seguros-salud."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f": "F-23",
+   "estado": "abierta",
+   "detalle": "F-23 y F-442 describen el mismo estudio (RCT de campo nacional de UBI simulado, Accident Analysis & Prevention): posible registro duplicado en el ledger. Decisión de consolidar: cronista."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f": "F-483",
+   "estado": "abierta",
+   "detalle": "La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS."
   }
  ],
  "resoluciones": [

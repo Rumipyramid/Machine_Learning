@@ -3,15 +3,22 @@
   {
    "id": "behavioral-design-estado-disciplina",
    "type": "node",
-   "lines": 317,
+   "lines": 318,
    "cites": 8,
+   "design": false
+  },
+  {
+   "id": "conducta-humano-ia",
+   "type": "node",
+   "lines": 113,
+   "cites": 26,
    "design": false
   },
   {
    "id": "evaluacion-calidad-agentes-conversacionales-ia",
    "type": "node",
-   "lines": 253,
-   "cites": 13,
+   "lines": 254,
+   "cites": 14,
    "design": false
   },
   {
@@ -52,8 +59,8 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 332,
-   "cites": 45,
+   "lines": 351,
+   "cites": 51,
    "design": false
   },
   {
@@ -80,14 +87,14 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 320,
-   "cites": 3,
+   "lines": 331,
+   "cites": 9,
    "design": false
   },
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1842,
+   "lines": 1843,
    "cites": 175,
    "design": true
   },
@@ -4412,9 +4419,177 @@
    "autor": "Google Research",
    "anio": "2026",
    "huerfana": false
+  },
+  {
+   "id": "F-477",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Allianz Results 2Q 2026",
+   "autor": "Allianz SE (comunicado de resultados; cifras vía resúmenes de prensa financiera)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-478",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Allianz core net income surges 48.4% in Q1 2026 / Allianz posts record Q1 profit on P&C strength",
+   "autor": "Life Insurance International · Investing.com (cobertura del 1T 2026 de Allianz)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-479",
+   "type": "fuente",
+   "rigor": "?",
+   "titulo": "**ID reservado, no usado**",
+   "autor": "—",
+   "anio": "—",
+   "huerfana": true
+  },
+  {
+   "id": "F-480",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Industry snapshots 1Q 2026",
+   "autor": "NAIC (National Association of Insurance Commissioners)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-481",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Root, Inc. Q2 2026 Shareholder Letter",
+   "autor": "Root, Inc. (SEC 8-K, carta a accionistas Q2 2026; cifras vía resúmenes)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-482",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Perú: Sistema Asegurador 2025 (informe del 16-abr-2026) — 'El Sistema Asegurador continuaría creciendo'",
+   "autor": "Moody's Local Perú",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-483",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Perú: Sector Seguros",
+   "autor": "PCR – Pacific Credit Rating",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-484",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "SBS incorpora nuevas infracciones por errores en el cobro de intereses: cambios para bancos, AFP y aseguradoras",
+   "autor": "La República (sobre la Resolución SBS N° 01923-2026)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-485",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Indecopi multa con S/55,000 a Pacífico Seguros y empresa de peritaje por aplicar condiciones no pactadas en seguro de robos en el hogar",
+   "autor": "La República (sobre resolución de Indecopi)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-486",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Indecopi multa a aseguradora: no pudo acreditar que el asegurado (ya fallecido) sabía que su seguro no cubría enfermedades preexistentes",
+   "autor": "LP Derecho (sobre Res. 3683-2026/SPC-Indecopi)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-487",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "sigma 2/2026 — World insurance in 2026: shock absorbers in a fragmenting world",
+   "autor": "Swiss Re Institute",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-488",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Sycophantic AI decreases prosocial intentions and promotes dependence",
+   "autor": "Cheng, M. et al. (Stanford) — arXiv 2510.01395",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-489",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The levers of political persuasion with conversational artificial intelligence (Science)",
+   "autor": "Hackenburg, K. et al.",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-490",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "LLM-generated messages can persuade humans on policy issues (Nature Communications)",
+   "autor": "Hackenburg, K. et al. (y colegas)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-491",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "LLMs can persuade only psychologically susceptible humans on societal issues, via trust in AI and emotional appeals, amid logical fallacies",
+   "autor": "Autoría no capturada — arXiv 2604.16935",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-492",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects (CHI 2025)",
+   "autor": "Lee, H.-P. et al. (Microsoft Research y coautores)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-493",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "When Thinking Is Outsourced: Cognitive Offloading and the Heterogeneity of Critical Thinking Among Chinese University Students Using Generat",
+   "autor": "Autoría no capturada — PMC13413235",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-494",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "A light-touch AI literacy intervention helps protect against AI political persuasion",
+   "autor": "Autoría no capturada — arXiv 2609.16432",
+   "anio": "2026",
+   "huerfana": false
   }
  ],
  "edges": [
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
   {
    "s": "behavioral-design-estado-disciplina",
    "t": "material-visual-venta-consultiva",
@@ -4448,6 +4623,42 @@
   {
    "s": "behavioral-design-estado-disciplina",
    "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "evaluacion-calidad-agentes-conversacionales-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "mecanismos-seguros-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "conducta-humano-ia",
    "k": "wikilink",
    "recip": true
   },
@@ -4603,6 +4814,12 @@
   },
   {
    "s": "mecanismos-seguros-salud",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
    "t": "futuro-asesores-seguros-venta-digital",
    "k": "wikilink",
    "recip": true
@@ -4718,6 +4935,12 @@
   {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "conducta-humano-ia",
    "k": "wikilink",
    "recip": true
   },
@@ -4784,6 +5007,12 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "conducta-humano-ia",
    "k": "wikilink",
    "recip": true
   },
@@ -4995,6 +5224,11 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-16",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-16",
    "k": "cita"
@@ -5005,12 +5239,27 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-17",
+   "k": "cita"
+  },
+  {
    "s": "behavioral-design-estado-disciplina",
    "t": "F-18",
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-18",
+   "k": "cita"
+  },
+  {
    "s": "behavioral-design-estado-disciplina",
+   "t": "F-19",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "F-19",
    "k": "cita"
   },
@@ -5025,7 +5274,17 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-20",
+   "k": "cita"
+  },
+  {
    "s": "behavioral-design-estado-disciplina",
+   "t": "F-21",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "F-21",
    "k": "cita"
   },
@@ -5045,12 +5304,22 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-23",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-23",
    "k": "cita"
   },
   {
    "s": "behavioral-design-estado-disciplina",
+   "t": "F-27",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "F-27",
    "k": "cita"
   },
@@ -5840,8 +6109,18 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-242",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-242",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-243",
    "k": "cita"
   },
   {
@@ -5850,13 +6129,28 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "conducta-humano-ia",
    "t": "F-244",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-244",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "F-245",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-245",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-246",
    "k": "cita"
   },
   {
@@ -5885,6 +6179,11 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-254",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-254",
    "k": "cita"
@@ -5892,6 +6191,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-256",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-257",
    "k": "cita"
   },
   {
@@ -6325,6 +6629,11 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-381",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-381",
    "k": "cita"
@@ -6422,6 +6731,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-400",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-401",
    "k": "cita"
   },
   {
@@ -6620,6 +6934,16 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-442",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-442",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-442",
    "k": "cita"
@@ -6790,6 +7114,11 @@
    "k": "cita"
   },
   {
+   "s": "conducta-humano-ia",
+   "t": "F-474",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-474",
    "k": "cita"
@@ -6802,6 +7131,101 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-476",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-477",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-478",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-480",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-481",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-482",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-483",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-484",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-485",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-486",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-487",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-487",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-488",
+   "k": "cita"
+  },
+  {
+   "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-488",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-489",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-490",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-491",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-492",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-493",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-494",
    "k": "cita"
   }
  ],
@@ -7020,14 +7444,16 @@
    },
    {
     "fecha": "2026-10-02",
-    "nuevas": 8,
-    "acumuladas": 476,
-    "AB": 2,
+    "nuevas": 26,
+    "acumuladas": 494,
+    "AB": 11,
     "rigor": {
-     "B": 2,
-     "C": 4,
+     "B": 9,
+     "C": 12,
      "D": 1,
-     "E": 1
+     "E": 1,
+     "?": 1,
+     "A": 2
     }
    }
   ],
@@ -9039,7 +9465,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1842,
+   "lines": 1843,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

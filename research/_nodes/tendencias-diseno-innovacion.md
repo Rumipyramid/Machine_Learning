@@ -1839,3 +1839,4 @@ La búsqueda devolvió solo notas de 2023 sobre IDEO. **No hay evidencia nueva**
   cifras atribuidas venía de emisores interesados y que **tres de ellas se atribuían a una
   institución que nunca las publicó**. Antes de que una cifra externa entre al esquema, verificar
   que **el emisor citado la haya publicado**, no solo que la cifra suene plausible.
+- [[conducta-humano-ia|Conducta humano-IA]] — consolida y extiende la evidencia de su §2.2 (explicabilidad, sobre-confianza) con adulación, persuasión y descarga cognitiva, y mantiene allí las reglas RP1-RP5 derivadas de C8/C11.

@@ -250,3 +250,4 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   la explicabilidad genérica **no** calibra la confianza (produce sobre-confianza; lo que la calibra
   es la verificabilidad de la salida), y toda métrica de productividad autorreportada debe
   descontarse frente a la medición objetiva.
+- [[conducta-humano-ia|Conducta humano-IA]] — la adulación de la IA (F-488) y la brecha preferencia-juicio son un problema de calidad que las escalas de ese node deberían medir: satisfacción alta con juicio degradado.

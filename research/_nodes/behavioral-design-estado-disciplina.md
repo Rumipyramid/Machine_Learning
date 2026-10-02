@@ -314,3 +314,4 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   sobrevendido, corregido por sesgo de publicación) aparece allí en el diseño (ROI sobrevendido,
   desarmado por eco de cita). Ambos concluyen lo mismo: la disciplina se defiende mejor por
   **mecanismo** que por **multiplicador**.
+- [[conducta-humano-ia|Conducta humano-IA]] — reúne y amplía la evidencia sobre cómo la IA cambia el juicio y la conducta (adulación, persuasión, descarga cognitiva, sobre-confianza) que este node solo esboza en la parte de "integrar IA".

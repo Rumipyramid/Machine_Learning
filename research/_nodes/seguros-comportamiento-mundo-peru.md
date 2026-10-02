@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-07-21 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-10-02 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -284,6 +284,16 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 
 ---
 
+## 3.9 🔁 Actualización de actualidad Perú (iteración de seguros, 2026-10-02)
+
+*Lectura vía `WebSearch` de resúmenes; los informes de Moody's Local y PCR, la norma SBS y las resoluciones de Indecopi no se abrieron íntegros. Pista social no cubierta.*
+
+- **Mercado.** Primas netas de **S/24.034,6 M a dic-2025 (+8,3%)**, con crecimiento esperado de **8%-9%** en 2026 (F-482, F-483). Penetración **estimada de 2,01% al 2T 2026** y densidad de ~US$212 por habitante (F-483): la cifra difiere del ~2,08% que cita este node (otra fecha/estimación; **discrepancia abierta**, no verificada con la SBS). Mezcla de primas: Vida 46,4%, Generales 31,0%, SPP 11,8%, Accidentes y Salud 10,8%; 17 compañías.
+- **Regulación y conducta.** En julio de 2026 la SBS actualizó el Reglamento de Infracciones y Sanciones (Res. 01923-2026): las aseguradoras pueden ser sancionadas, entre otros, por **rechazar solicitudes de cobertura sin fundamento o fuera de plazo** (F-484). Indecopi confirmó una multa de S/55.000 a Pacífico Seguros y a su perito por aplicar condiciones no pactadas (F-485) y, en la Res. 3683-2026, sancionó a una aseguradora que **no acreditó que el asegurado conocía la exclusión de preexistencias** (F-486).
+- **Lectura.** La presión regulatoria se concentra en el **momento del reclamo y en la explicación previa de las exclusiones**, que es exactamente donde este node ubica la causa de desconfianza (falta de información). La carga de probar que se explicó recae en la aseguradora.
+- **Global.** Las primas reales globales crecerían solo 1,3% en 2026 (F-487); Perú, con +8%-9% nominal, sigue por encima, pero con penetración estable (~2%), no convergiendo hacia el promedio de la región.
+- **No encontrado:** resultados del 2T de las aseguradoras peruanas (incluida Rímac), cifras oficiales de la SBS al 2T 2026 y novedades del PL 08488.
+
 ## Conexiones
 
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — el ramo salud (§7.1, el de mayor
@@ -317,3 +327,4 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
   aceptación de un plan dudoso) con la causa #1 de desconfianza en seguros en Perú que documenta
   este node: la falta de información.
 - [[venta-vida-digital-hibrida-latam|Venta de seguros de vida en LATAM (Brasil y región)]] — cubre el panorama regional que aquí se trata solo para Perú; juntos dan el cuadro completo de percepción y canal en la región.
+- [[conducta-humano-ia|Conducta humano-IA]] — las hipótesis HC1/HC6 (explicación de la IA al cliente) son las que habría que probar en el contexto regulatorio y de reclamos de §3.9.
