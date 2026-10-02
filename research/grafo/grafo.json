@@ -87,8 +87,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1800,
-   "cites": 167,
+   "lines": 1842,
+   "cites": 175,
    "design": true
   },
   {
@@ -4340,6 +4340,78 @@
    "autor": "Blind (teamblind.com)",
    "anio": "s/f",
    "huerfana": false
+  },
+  {
+   "id": "F-469",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Figma Announces Second Quarter 2026 Financial Results",
+   "autor": "Figma, Inc. (comunicado y 8-K de resultados; cifras vía resúmenes de la llamada)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-470",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Figma Q2 2026 earnings beat but stock falls on AI costs",
+   "autor": "Quartz",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-471",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Lovable confirms new $13.3B valuation, raises another $400M",
+   "autor": "TechCrunch",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-472",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Lovable ARR ~US$600M (24-sep-2026); tráfico −40% desde el pico; sin churn publicado",
+   "autor": "saascity.io · valueaddvc.com (blogs analíticos)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-473",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Hilo: el churn de Lovable es la cifra que nunca ha divulgado",
+   "autor": "Aakash Gupta (hilo en X)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-474",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "We are Changing our Developer Productivity Experiment Design",
+   "autor": "METR (Model Evaluation & Threat Research)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-475",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Design Theater: Evaluating the Gap Between User-Facing Design Reasoning and Implementation in Generative UI Tools (arXiv 2607.22928)",
+   "autor": "Imteyaz, K., Imteyaz, K., Rajpal, N., Shaikh, K., Muller, M. & Savage, S.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-476",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Self-Evolving Systems: Moving Beyond Deterministic Interfaces to Adaptive Generative Interfaces",
+   "autor": "Google Research",
+   "anio": "2026",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -6691,6 +6763,46 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-468",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-469",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-470",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-471",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-472",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-473",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-474",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-475",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-476",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -6904,6 +7016,18 @@
      "?": 2,
      "B": 13,
      "D": 16
+    }
+   },
+   {
+    "fecha": "2026-10-02",
+    "nuevas": 8,
+    "acumuladas": 476,
+    "AB": 2,
+    "rigor": {
+     "B": 2,
+     "C": 4,
+     "D": 1,
+     "E": 1
     }
    }
   ],
@@ -8900,27 +9024,28 @@
   ],
   "design": {
    "hyp": {
-    "abierta": 19,
+    "abierta": 20,
     "parcial": 7,
-    "respaldada": 3,
+    "respaldada": 4,
     "refutada": 1,
     "otra": 1
    },
    "rules": 22,
    "rules_cited": 5,
    "scale": {
-    "🟢": 15,
-    "🟡": 8,
+    "🟢": 16,
+    "🟡": 10,
     "🔴": 15,
     "⚔️": 4
    },
-   "iterations": 4,
-   "lines": 1800,
+   "iterations": 5,
+   "lines": 1842,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
     "2026-08-02",
-    "2026-08-02"
+    "2026-08-02",
+    "2026-10-02"
    ]
   }
  }
