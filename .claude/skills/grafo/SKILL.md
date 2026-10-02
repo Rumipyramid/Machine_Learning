@@ -11,3 +11,21 @@ description: Grafologiza la base de conocimiento (nodes, outputs, ledger F-n) y 
 3. Definiciones y fórmulas: `research/grafo/METRICAS.md`. Visor: `research/grafo/grafo.html`.
 4. No edites nodes, ledger ni `alma.md` desde esta skill; si hay fallas, proponlas como siguiente paso y pregunta.
 5. Tras cada corrida de `/trinidad` o del proceso diario de Lobo, regenerar deja la serie histórica al día.
+
+## Modo semántico — revisar el códice de a poco y extraer relaciones
+
+Grafo de entidades y relaciones con evidencia, en `research/grafo/relaciones/` (memoria en `estado.json`,
+datos en `triples.jsonl` y `entidades.json`, vocabulario CERRADO en `vocabulario.json`).
+
+1. `python research/grafo/relaciones/relaciones.py next -n 5` → siguiente lote (prioriza fuentes del cerebro de
+   diseño, luego rigor A→E, luego ID). Cinco por lote, igual que `cerrajero`.
+2. **Lee cada fuente más allá de la ficha** (WebSearch/WebFetch del abstract o texto). Si solo leíste la ficha,
+   la relación lleva `lectura: "ficha"`; nunca la presentes como leída a fondo.
+3. Escribe `lote_NNN.json` (entidades + relaciones, cada una con `f`, `apoyo` ≤300 car., `lectura`, `fuerza`).
+   Reutiliza ids de entidad existentes (revisa `entidades.json`) para que las fuentes converjan en el mismo nodo.
+4. `... relaciones.py add lote_NNN.json` (el validador rechaza relaciones fuera del vocabulario, fuentes
+   inexistentes, apoyos vacíos o fuentes sin relaciones ni nota `sin_aporte`) → `check` → `render`.
+5. **Discrepancias contra el ledger** (autor, año, cifras) van en `discrepancias` del lote y se reportan al
+   usuario; **no** se corrigen el ledger ni los nodes sin pedirlo (eso es de `cronista`).
+6. Cierra cada lote diciendo cobertura (X de 468), qué convergió, qué tensiones aparecieron y qué no se pudo
+   verificar. Pide permiso antes de proponer relaciones nuevas al vocabulario.

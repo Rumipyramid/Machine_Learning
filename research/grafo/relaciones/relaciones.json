@@ -1,0 +1,622 @@
+{
+ "entidades": [
+  {
+   "id": "aceptacion_plan_dudoso",
+   "nombre": "Permanencia/aceptación de un plan dudoso",
+   "tipo": "metrica",
+   "grado": 3,
+   "fuentes": [
+    "F-241"
+   ]
+  },
+  {
+   "id": "adultos_eeuu",
+   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-241"
+   ]
+  },
+  {
+   "id": "backlash_consumidor",
+   "nombre": "Backlash del consumidor",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-241"
+   ]
+  },
+  {
+   "id": "c_diseno_firma",
+   "nombre": "Diseño efectivo → mejor desempeño de la firma",
+   "tipo": "afirmacion",
+   "grado": 4,
+   "fuentes": [
+    "F-237",
+    "F-238"
+   ]
+  },
+  {
+   "id": "c_educacion_modera_susceptibilidad",
+   "nombre": "Menor educación → mayor susceptibilidad a patterns leves",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-241",
+    "F-251"
+   ]
+  },
+  {
+   "id": "c_fracaso_85_90",
+   "nombre": "85-90% de fracaso de experimentos en Bing, Google Ads, Netflix, Airbnb",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "c_leves_sin_backlash",
+   "nombre": "Los dark patterns leves no generan backlash",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-241"
+   ]
+  },
+  {
+   "id": "c_narrativa_multiplicadores_diseno",
+   "nombre": "El diseño devuelve multiplicadores de retorno (p. ej. 100:1)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "c_proxies_vulnerabilidad_debiles",
+   "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-251"
+   ]
+  },
+  {
+   "id": "c_un_tercio_mejora",
+   "nombre": "Solo ~1/3 de las ideas mejora su métrica objetivo (1/3 negativo, 1/3 nulo)",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "c_valor_acumula_mejoras_pequenas",
+   "nombre": "El valor se acumula en mejoras de 0,1-0,2%",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "c_vulnerabilidad_transversal",
+   "nombre": "Todos los grupos de consumidores son susceptibles",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-251"
+   ]
+  },
+  {
+   "id": "cambio_titular_anuncios_bing",
+   "nombre": "Cambio en titulares de anuncios de Bing (2012)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "capacidad_diseno_ingenieria",
+   "nombre": "Capacidad de diseño-ingeniería",
+   "tipo": "constructo",
+   "grado": 4,
+   "fuentes": [
+    "F-238"
+   ]
+  },
+  {
+   "id": "dark_patterns",
+   "nombre": "Dark patterns",
+   "tipo": "concepto",
+   "grado": 3,
+   "fuentes": [
+    "F-241"
+   ]
+  },
+  {
+   "id": "dark_patterns_agresivos",
+   "nombre": "Dark patterns agresivos",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-241"
+   ]
+  },
+  {
+   "id": "dark_patterns_leves",
+   "nombre": "Dark patterns leves",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-241"
+   ]
+  },
+  {
+   "id": "desempeno_financiero_firma",
+   "nombre": "Desempeño financiero de la firma (ROA, ROS, crecimiento)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-237",
+    "F-238"
+   ]
+  },
+  {
+   "id": "diseno_industrial_efectivo",
+   "nombre": "Efectividad de diseño industrial",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-237"
+   ]
+  },
+  {
+   "id": "edad_avanzada",
+   "nombre": "Usuarios mayores",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-251"
+   ]
+  },
+  {
+   "id": "firmas_publicas_eeuu",
+   "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
+   "tipo": "poblacion",
+   "grado": 3,
+   "fuentes": [
+    "F-237",
+    "F-238"
+   ]
+  },
+  {
+   "id": "fuente_unica_microsoft",
+   "nombre": "Dato esencialmente de una sola organización",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "ingresos_bing",
+   "nombre": "Ingresos de Bing",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "microsoft_exp",
+   "nombre": "Plataforma de experimentación de Microsoft (ExP)",
+   "tipo": "organizacion",
+   "grado": 3,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "no_asignacion_aleatoria",
+   "nombre": "Capacidad de diseño no asignada al azar (observacional)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-238"
+   ]
+  },
+  {
+   "id": "patentes_diseno_utilidad",
+   "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-238"
+   ]
+  },
+  {
+   "id": "ranking_expertos_diseno",
+   "nombre": "Ranking de 138 expertos en diseño industrial",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-237"
+   ]
+  },
+  {
+   "id": "relacion_innovacion_desempeno",
+   "nombre": "Relación innovación → desempeño",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-238"
+   ]
+  },
+  {
+   "id": "sesgo_halo",
+   "nombre": "Sesgo de halo (proxy = percepción experta)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-237"
+   ]
+  },
+  {
+   "id": "susceptibilidad_dark_patterns",
+   "nombre": "Susceptibilidad a dark patterns",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-241",
+    "F-251"
+   ]
+  }
+ ],
+ "relaciones": [
+  {
+   "id": "T-1",
+   "s": "ranking_expertos_diseno",
+   "p": "mide",
+   "o": "diseno_industrial_efectivo",
+   "f": "F-237",
+   "apoyo": "Panel de 138 expertos ranqueó la efectividad de diseño industrial de firmas cotizadas en 9 industrias manufactureras (93 firmas); se dividieron en alta/baja efectividad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2",
+   "s": "diseno_industrial_efectivo",
+   "p": "asocia_con",
+   "o": "desempeno_financiero_firma",
+   "f": "F-237",
+   "apoyo": "Datos SEC 1995-2001: alta efectividad se hipotetizó con mayor ROS, ROA y crecimiento de ventas/utilidad/caja. El resultado (superan a sus pares en ROA, ROS, ventas) proviene de la ficha del ledger; el abstract consultado solo muestra la hipótesis.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-3",
+   "s": "c_diseno_firma",
+   "p": "tiene_limite",
+   "o": "sesgo_halo",
+   "f": "F-237",
+   "apoyo": "La variable independiente es percepción de expertos, con posible halo (advertencia de la ficha del ledger).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-4",
+   "s": "capacidad_diseno_ingenieria",
+   "p": "aumenta",
+   "o": "desempeno_financiero_firma",
+   "f": "F-238",
+   "apoyo": "Efecto directo sobre desempeño financiero según la ficha; el abstract confirma que el estudio evalúa el efecto pero no muestra el signo.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-5",
+   "s": "capacidad_diseno_ingenieria",
+   "p": "modera",
+   "o": "relacion_innovacion_desempeno",
+   "f": "F-238",
+   "apoyo": "Abstract: la capacidad modera el vínculo entre actividad de innovación y desempeño; la ficha precisa que lo amplifica.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-6",
+   "s": "patentes_diseno_utilidad",
+   "p": "mide",
+   "o": "capacidad_diseno_ingenieria",
+   "f": "F-238",
+   "apoyo": "Datos de patentes de 1.659 firmas de EE.UU. 1980-2015; los ingenieros de diseño se identifican como inventores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-7",
+   "s": "capacidad_diseno_ingenieria",
+   "p": "aplica_a",
+   "o": "firmas_publicas_eeuu",
+   "f": "F-238",
+   "apoyo": "Panel de 1.659 firmas públicas con sede en EE.UU., 1980-2015.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-8",
+   "s": "c_diseno_firma",
+   "p": "tiene_limite",
+   "o": "no_asignacion_aleatoria",
+   "f": "F-238",
+   "apoyo": "Observacional: la capacidad de diseño no se asigna al azar (advertencia de la ficha).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-9",
+   "s": "dark_patterns_leves",
+   "p": "es_tipo_de",
+   "o": "dark_patterns",
+   "f": "F-241",
+   "apoyo": "Diseño con tres brazos aleatorios: control, patterns leves y patterns agresivos, con inscripción automática a un plan de protección contra robo de identidad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-10",
+   "s": "dark_patterns_agresivos",
+   "p": "es_tipo_de",
+   "o": "dark_patterns",
+   "f": "F-241",
+   "apoyo": "Ídem: el brazo agresivo es el tratamiento de mayor intensidad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-11",
+   "s": "dark_patterns_leves",
+   "p": "aumenta",
+   "o": "aceptacion_plan_dudoso",
+   "f": "F-241",
+   "apoyo": "Más del doble de probabilidad de seguir inscrito que el control (ficha: 11,3% → 25,8%).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-12",
+   "s": "dark_patterns_agresivos",
+   "p": "aumenta",
+   "o": "aceptacion_plan_dudoso",
+   "f": "F-241",
+   "apoyo": "Casi cuatro veces la probabilidad del control (ficha: 11,3% → 41,9%).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-13",
+   "s": "dark_patterns_agresivos",
+   "p": "aumenta",
+   "o": "backlash_consumidor",
+   "f": "F-241",
+   "apoyo": "Los patterns agresivos generan un backlash fuerte entre los consumidores.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-14",
+   "s": "aceptacion_plan_dudoso",
+   "p": "mide",
+   "o": "susceptibilidad_dark_patterns",
+   "f": "F-241",
+   "apoyo": "La permanencia en el plan tras la exposición operacionaliza la susceptibilidad (inferencia del diseño experimental descrito).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-15",
+   "s": "dark_patterns",
+   "p": "aplica_a",
+   "o": "adultos_eeuu",
+   "f": "F-241",
+   "apoyo": "Muestra ponderada por censo de adultos de EE.UU., N=1.773 en el estudio principal (ficha).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-16",
+   "s": "c_educacion_modera_susceptibilidad",
+   "p": "modera",
+   "o": "susceptibilidad_dark_patterns",
+   "f": "F-241",
+   "apoyo": "Ficha: menor educación → mayor susceptibilidad a los patterns leves. No confirmado en el abstract consultado.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-17",
+   "s": "c_proxies_vulnerabilidad_debiles",
+   "p": "contradice",
+   "o": "c_educacion_modera_susceptibilidad",
+   "f": "F-251",
+   "apoyo": "Abstract: evidencia débil de que ingreso, educación o edad afecten materialmente la susceptibilidad. Tensión posiblemente parcial: F-241 mira solo patterns leves; F-251 proxies en general.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-18",
+   "s": "c_vulnerabilidad_transversal",
+   "p": "respalda",
+   "o": "c_proxies_vulnerabilidad_debiles",
+   "f": "F-251",
+   "apoyo": "Abstract: evidencia fuerte de que individuos de todos los grupos son susceptibles; el diseño del estudio no se verificó.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-19",
+   "s": "edad_avanzada",
+   "p": "asocia_con",
+   "o": "susceptibilidad_dark_patterns",
+   "f": "F-251",
+   "apoyo": "Abstract: posible mayor vulnerabilidad en usuarios mayores (formulada como posibilidad, no hallazgo firme).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-20",
+   "s": "c_un_tercio_mejora",
+   "p": "origina_en",
+   "o": "microsoft_exp",
+   "f": "F-262",
+   "apoyo": "Aproximadamente 1/3 de los experimentos mejoró la métrica objetivo, 1/3 la empeoró, 1/3 sin efecto, en Microsoft.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-21",
+   "s": "c_un_tercio_mejora",
+   "p": "tiene_limite",
+   "o": "fuente_unica_microsoft",
+   "f": "F-262",
+   "apoyo": "La ficha advierte que la evidencia proviene esencialmente de una organización.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-22",
+   "s": "c_un_tercio_mejora",
+   "p": "contradice",
+   "o": "c_narrativa_multiplicadores_diseno",
+   "f": "F-262",
+   "apoyo": "Inferencia del node de diseño (reglas C2/C7), no del artículo, que trata de experimentación y no de diseño: si ~2/3 de las ideas bien diseñadas no mueven su métrica, un multiplicador universal es difícil de sostener.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-02",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-23",
+   "s": "c_fracaso_85_90",
+   "p": "origina_en",
+   "o": "microsoft_exp",
+   "f": "F-262",
+   "apoyo": "Ficha: 85-90% de fracaso reportado en Bing, Google Ads, Netflix y Airbnb. NO verificado en la lectura de hoy y conviven en la ficha dos bases distintas (1/3 vs 85-90%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-24",
+   "s": "cambio_titular_anuncios_bing",
+   "p": "aumenta",
+   "o": "ingresos_bing",
+   "f": "F-262",
+   "apoyo": "Caso del artículo: un cambio en cómo Bing mostraba titulares de anuncios elevó ingresos 12% (>US$100M/año en EE.UU.) sin dañar métricas de experiencia; la mejor idea de ingresos de Bing, subestimada hasta el test.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-25",
+   "s": "c_leves_sin_backlash",
+   "p": "aplica_a",
+   "o": "dark_patterns_leves",
+   "f": "F-241",
+   "apoyo": "Los patterns leves no generaron backlash (a diferencia de los agresivos).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-26",
+   "s": "c_valor_acumula_mejoras_pequenas",
+   "p": "origina_en",
+   "o": "microsoft_exp",
+   "f": "F-262",
+   "apoyo": "Ficha: el valor se acumula en mejoras de 0,1-0,2%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-27",
+   "s": "c_diseno_firma",
+   "p": "aplica_a",
+   "o": "firmas_publicas_eeuu",
+   "f": "F-238",
+   "apoyo": "El vínculo diseño→desempeño se sostiene en el panel de firmas públicas de EE.UU. (observacional).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-28",
+   "s": "c_diseno_firma",
+   "p": "aplica_a",
+   "o": "firmas_publicas_eeuu",
+   "f": "F-237",
+   "apoyo": "Panel de 93 firmas cotizadas de manufactura (subconjunto de firmas públicas).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  }
+ ],
+ "generado": "2026-10-02",
+ "cobertura": {
+  "procesadas": 5,
+  "total": 468
+ }
+}

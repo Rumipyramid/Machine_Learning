@@ -264,6 +264,11 @@ def report(nodes, outs, ledger, M, hist, tl, lobo, alma):
     w(f"| Aristas wikilink (node→node) | {len(M['links'])} | recíprocas: {len(M['recip'])} de {len(M['links'])} ({pct(len(M['recip']),len(M['links']))}) |")
     w(f"| Fuentes citadas por ≥1 node | {len(M['allc'] & set(ledger))} de {len(ledger)} | {pct(len(M['allc'] & set(ledger)),len(ledger))} del ledger; **{len(ledger)-len(M['allc'] & set(ledger))} viven solo en el ledger** |")
     w(f"| Fuentes citadas por ≥2 nodes (transversales) | {sum(1 for f,c in M['cnt'].items() if c>=2 and f in ledger)} | evidencia reutilizada entre temas |")
+    rel = RES / "grafo/relaciones/estado.json"
+    if rel.exists():
+        rj = json.loads(rel.read_text()); nf = len({f for b in rj["barridos"] for f in b["f_ids"]})
+        nt = sum(1 for _ in (RES / "grafo/relaciones/triples.jsonl").open())
+        w(f"| **Grafo semántico** (relaciones extraídas) | {nf} de {len(ledger)} fuentes ({pct(nf,len(ledger))}) | {nt} relaciones · {len(rj['barridos'])} barridos · detalle en `relaciones/RELACIONES.md` |")
     w(f"| Componentes conexas del grafo de nodes | {len(M['comps'])} | {'grafo conexo' if len(M['comps'])==1 else 'HAY islas: ' + '; '.join(sorted(','.join(sorted(c)) for c in M['comps'] if len(c)<len(nodes)))} |\n")
     # 2 diseño
     w("## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)\n")

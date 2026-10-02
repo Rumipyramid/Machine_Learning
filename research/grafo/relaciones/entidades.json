@@ -1,0 +1,152 @@
+{
+ "aceptacion_plan_dudoso": {
+  "id": "aceptacion_plan_dudoso",
+  "nombre": "Permanencia/aceptación de un plan dudoso",
+  "tipo": "metrica"
+ },
+ "adultos_eeuu": {
+  "id": "adultos_eeuu",
+  "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
+  "tipo": "poblacion"
+ },
+ "backlash_consumidor": {
+  "id": "backlash_consumidor",
+  "nombre": "Backlash del consumidor",
+  "tipo": "resultado"
+ },
+ "c_diseno_firma": {
+  "id": "c_diseno_firma",
+  "nombre": "Diseño efectivo → mejor desempeño de la firma",
+  "tipo": "afirmacion"
+ },
+ "c_educacion_modera_susceptibilidad": {
+  "id": "c_educacion_modera_susceptibilidad",
+  "nombre": "Menor educación → mayor susceptibilidad a patterns leves",
+  "tipo": "afirmacion"
+ },
+ "c_fracaso_85_90": {
+  "id": "c_fracaso_85_90",
+  "nombre": "85-90% de fracaso de experimentos en Bing, Google Ads, Netflix, Airbnb",
+  "tipo": "afirmacion"
+ },
+ "c_leves_sin_backlash": {
+  "id": "c_leves_sin_backlash",
+  "nombre": "Los dark patterns leves no generan backlash",
+  "tipo": "afirmacion"
+ },
+ "c_narrativa_multiplicadores_diseno": {
+  "id": "c_narrativa_multiplicadores_diseno",
+  "nombre": "El diseño devuelve multiplicadores de retorno (p. ej. 100:1)",
+  "tipo": "afirmacion"
+ },
+ "c_proxies_vulnerabilidad_debiles": {
+  "id": "c_proxies_vulnerabilidad_debiles",
+  "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
+  "tipo": "afirmacion"
+ },
+ "c_un_tercio_mejora": {
+  "id": "c_un_tercio_mejora",
+  "nombre": "Solo ~1/3 de las ideas mejora su métrica objetivo (1/3 negativo, 1/3 nulo)",
+  "tipo": "afirmacion"
+ },
+ "c_valor_acumula_mejoras_pequenas": {
+  "id": "c_valor_acumula_mejoras_pequenas",
+  "nombre": "El valor se acumula en mejoras de 0,1-0,2%",
+  "tipo": "afirmacion"
+ },
+ "c_vulnerabilidad_transversal": {
+  "id": "c_vulnerabilidad_transversal",
+  "nombre": "Todos los grupos de consumidores son susceptibles",
+  "tipo": "afirmacion"
+ },
+ "cambio_titular_anuncios_bing": {
+  "id": "cambio_titular_anuncios_bing",
+  "nombre": "Cambio en titulares de anuncios de Bing (2012)",
+  "tipo": "intervencion"
+ },
+ "capacidad_diseno_ingenieria": {
+  "id": "capacidad_diseno_ingenieria",
+  "nombre": "Capacidad de diseño-ingeniería",
+  "tipo": "constructo"
+ },
+ "dark_patterns": {
+  "id": "dark_patterns",
+  "nombre": "Dark patterns",
+  "tipo": "concepto"
+ },
+ "dark_patterns_agresivos": {
+  "id": "dark_patterns_agresivos",
+  "nombre": "Dark patterns agresivos",
+  "tipo": "intervencion"
+ },
+ "dark_patterns_leves": {
+  "id": "dark_patterns_leves",
+  "nombre": "Dark patterns leves",
+  "tipo": "intervencion"
+ },
+ "desempeno_financiero_firma": {
+  "id": "desempeno_financiero_firma",
+  "nombre": "Desempeño financiero de la firma (ROA, ROS, crecimiento)",
+  "tipo": "resultado"
+ },
+ "diseno_industrial_efectivo": {
+  "id": "diseno_industrial_efectivo",
+  "nombre": "Efectividad de diseño industrial",
+  "tipo": "constructo"
+ },
+ "edad_avanzada": {
+  "id": "edad_avanzada",
+  "nombre": "Usuarios mayores",
+  "tipo": "poblacion"
+ },
+ "firmas_publicas_eeuu": {
+  "id": "firmas_publicas_eeuu",
+  "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
+  "tipo": "poblacion"
+ },
+ "fuente_unica_microsoft": {
+  "id": "fuente_unica_microsoft",
+  "nombre": "Dato esencialmente de una sola organización",
+  "tipo": "limitacion"
+ },
+ "ingresos_bing": {
+  "id": "ingresos_bing",
+  "nombre": "Ingresos de Bing",
+  "tipo": "resultado"
+ },
+ "microsoft_exp": {
+  "id": "microsoft_exp",
+  "nombre": "Plataforma de experimentación de Microsoft (ExP)",
+  "tipo": "organizacion"
+ },
+ "no_asignacion_aleatoria": {
+  "id": "no_asignacion_aleatoria",
+  "nombre": "Capacidad de diseño no asignada al azar (observacional)",
+  "tipo": "limitacion"
+ },
+ "patentes_diseno_utilidad": {
+  "id": "patentes_diseno_utilidad",
+  "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
+  "tipo": "metrica"
+ },
+ "ranking_expertos_diseno": {
+  "id": "ranking_expertos_diseno",
+  "nombre": "Ranking de 138 expertos en diseño industrial",
+  "tipo": "metrica"
+ },
+ "relacion_innovacion_desempeno": {
+  "id": "relacion_innovacion_desempeno",
+  "nombre": "Relación innovación → desempeño",
+  "tipo": "afirmacion"
+ },
+ "sesgo_halo": {
+  "id": "sesgo_halo",
+  "nombre": "Sesgo de halo (proxy = percepción experta)",
+  "tipo": "limitacion"
+ },
+ "susceptibilidad_dark_patterns": {
+  "id": "susceptibilidad_dark_patterns",
+  "nombre": "Susceptibilidad a dark patterns",
+  "tipo": "resultado"
+ }
+}
