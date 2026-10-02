@@ -1,0 +1,128 @@
+{
+ "fecha": "2026-10-02",
+ "f_ids": [
+  "F-239",
+  "F-241",
+  "F-244",
+  "F-246",
+  "F-251",
+  "F-262"
+ ],
+ "entidades": [
+  {
+   "id": "tareas_sentimiento_lsat",
+   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "tarea_laberinto",
+   "nombre": "Tarea de laberinto con IA simulada (5 estudios)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "costo_beneficio_involucramiento",
+   "nombre": "Costos y beneficios de involucrarse con la explicación",
+   "tipo": "constructo"
+  },
+  {
+   "id": "menos_educados",
+   "nombre": "Personas con menor educación",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "friccion_pago_posterior",
+   "nombre": "Fricción: acción de pago requerida tras el dark pattern",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "estudiantes_proyectos_empresa",
+   "nombre": "160 estudiantes en 62 proyectos de innovación para empresas",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "materiales_kohavi",
+   "nombre": "Resúmenes y materiales públicos de Kohavi (no el texto de HBR)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "no_verificado_texto_hbr",
+   "nombre": "Cifra vista en resúmenes secundarios; texto de HBR no abierto",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_explicaciones_no_complementarias",
+   "p": "aplica_a",
+   "o": "tareas_sentimiento_lsat",
+   "f": "F-244",
+   "apoyo": "Tareas de sentido común: sentimiento en reseñas de libros y cerveza, y LSAT. Hubo mejora complementaria por la IA, pero no aumentó con explicaciones, ni frente a mostrar solo la confianza de la IA.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_explicaciones_mejoran_decision",
+   "p": "aplica_a",
+   "o": "tarea_laberinto",
+   "f": "F-246",
+   "apoyo": "Cinco estudios (N=731) con un laberinto y una IA simulada; se manipularon costos y beneficios.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "costo_beneficio_involucramiento",
+   "p": "modera",
+   "o": "c_explicaciones_mejoran_decision",
+   "f": "F-246",
+   "apoyo": "Dificultad de la tarea, dificultad de la explicación e incentivo monetario cambian la sobre-confianza; las explicaciones ayudan solo cuando revisar la explicación ahorra esfuerzo sustancial (tarea difícil).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "menos_educados",
+   "p": "asocia_con",
+   "o": "susceptibilidad_dark_patterns",
+   "f": "F-241",
+   "apoyo": "Los menos educados fueron significativamente más susceptibles a los patterns leves que los más educados (abstract).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "friccion_pago_posterior",
+   "p": "reduce",
+   "o": "susceptibilidad_dark_patterns",
+   "f": "F-251",
+   "apoyo": "La acción de pago exigida tras desplegar el pattern reduce su efectividad; el pattern rinde más cuando no hay paso adicional. Diseño del estudio no verificado.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_dt_efecto_mediado",
+   "p": "aplica_a",
+   "o": "estudiantes_proyectos_empresa",
+   "f": "F-239",
+   "apoyo": "Muestra: 160 estudiantes en 62 proyectos de innovación realizados para empresas; mediación total por empoderamiento psicológico.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_fracaso_85_90",
+   "p": "origina_en",
+   "o": "materiales_kohavi",
+   "f": "F-262",
+   "apoyo": "Resúmenes de materiales de Kohavi dan fracaso de experimentos: Microsoft ~66-70%, Bing ~85%, Google Ads y Netflix ~90%, Airbnb ~92%. Confirma la ficha, pero por fuentes secundarias.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_fracaso_85_90",
+   "p": "tiene_limite",
+   "o": "no_verificado_texto_hbr",
+   "f": "F-262",
+   "apoyo": "El texto del artículo de HBR no se abrió; las cifras proceden de resúmenes y materiales asociados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "Lote de resolución de contradicciones: lectura dirigida de abstracts de las fuentes en tensión."
+}

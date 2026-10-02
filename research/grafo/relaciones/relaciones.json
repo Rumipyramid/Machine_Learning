@@ -50,7 +50,7 @@
    "id": "c_dt_efecto_mediado",
    "nombre": "El efecto del design thinking está totalmente mediado por empoderamiento",
    "tipo": "afirmacion",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
     "F-239",
     "F-240"
@@ -79,7 +79,7 @@
    "id": "c_explicaciones_mejoran_decision",
    "nombre": "Las explicaciones mejoran la decisión humano-IA",
    "tipo": "afirmacion",
-   "grado": 2,
+   "grado": 4,
    "fuentes": [
     "F-244",
     "F-246"
@@ -89,7 +89,7 @@
    "id": "c_explicaciones_no_complementarias",
    "nombre": "Las explicaciones rara vez producen desempeño complementario",
    "tipo": "afirmacion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-243",
     "F-244"
@@ -99,7 +99,7 @@
    "id": "c_fracaso_85_90",
    "nombre": "85-90% de fracaso de experimentos en Bing, Google Ads, Netflix, Airbnb",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
     "F-262"
    ]
@@ -204,6 +204,15 @@
    ]
   },
   {
+   "id": "costo_beneficio_involucramiento",
+   "nombre": "Costos y beneficios de involucrarse con la explicación",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-246"
+   ]
+  },
+  {
    "id": "dark_patterns",
    "nombre": "Dark patterns",
    "tipo": "concepto",
@@ -287,6 +296,15 @@
    ]
   },
   {
+   "id": "estudiantes_proyectos_empresa",
+   "nombre": "160 estudiantes en 62 proyectos de innovación para empresas",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-239"
+   ]
+  },
+  {
    "id": "exito_proyecto_innovacion",
    "nombre": "Éxito de proyectos de innovación",
    "tipo": "resultado",
@@ -314,6 +332,15 @@
    "fuentes": [
     "F-237",
     "F-238"
+   ]
+  },
+  {
+   "id": "friccion_pago_posterior",
+   "nombre": "Fricción: acción de pago requerida tras el dark pattern",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-251"
    ]
   },
   {
@@ -350,6 +377,24 @@
    "grado": 2,
    "fuentes": [
     "F-247"
+   ]
+  },
+  {
+   "id": "materiales_kohavi",
+   "nombre": "Resúmenes y materiales públicos de Kohavi (no el texto de HBR)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-262"
+   ]
+  },
+  {
+   "id": "menos_educados",
+   "nombre": "Personas con menor educación",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-241"
    ]
   },
   {
@@ -395,6 +440,15 @@
    "grado": 1,
    "fuentes": [
     "F-238"
+   ]
+  },
+  {
+   "id": "no_verificado_texto_hbr",
+   "nombre": "Cifra vista en resúmenes secundarios; texto de HBR no abierto",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-262"
    ]
   },
   {
@@ -466,7 +520,7 @@
    "id": "susceptibilidad_dark_patterns",
    "nombre": "Susceptibilidad a dark patterns",
    "tipo": "resultado",
-   "grado": 3,
+   "grado": 5,
    "fuentes": [
     "F-241",
     "F-251"
@@ -479,6 +533,24 @@
    "grado": 1,
    "fuentes": [
     "F-246"
+   ]
+  },
+  {
+   "id": "tarea_laberinto",
+   "nombre": "Tarea de laberinto con IA simulada (5 estudios)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-246"
+   ]
+  },
+  {
+   "id": "tareas_sentimiento_lsat",
+   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-244"
    ]
   },
   {
@@ -1088,6 +1160,102 @@
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
+  },
+  {
+   "id": "T-50",
+   "s": "c_explicaciones_no_complementarias",
+   "p": "aplica_a",
+   "o": "tareas_sentimiento_lsat",
+   "f": "F-244",
+   "apoyo": "Tareas de sentido común: sentimiento en reseñas de libros y cerveza, y LSAT. Hubo mejora complementaria por la IA, pero no aumentó con explicaciones, ni frente a mostrar solo la confianza de la IA.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-51",
+   "s": "c_explicaciones_mejoran_decision",
+   "p": "aplica_a",
+   "o": "tarea_laberinto",
+   "f": "F-246",
+   "apoyo": "Cinco estudios (N=731) con un laberinto y una IA simulada; se manipularon costos y beneficios.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-52",
+   "s": "costo_beneficio_involucramiento",
+   "p": "modera",
+   "o": "c_explicaciones_mejoran_decision",
+   "f": "F-246",
+   "apoyo": "Dificultad de la tarea, dificultad de la explicación e incentivo monetario cambian la sobre-confianza; las explicaciones ayudan solo cuando revisar la explicación ahorra esfuerzo sustancial (tarea difícil).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-53",
+   "s": "menos_educados",
+   "p": "asocia_con",
+   "o": "susceptibilidad_dark_patterns",
+   "f": "F-241",
+   "apoyo": "Los menos educados fueron significativamente más susceptibles a los patterns leves que los más educados (abstract).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-54",
+   "s": "friccion_pago_posterior",
+   "p": "reduce",
+   "o": "susceptibilidad_dark_patterns",
+   "f": "F-251",
+   "apoyo": "La acción de pago exigida tras desplegar el pattern reduce su efectividad; el pattern rinde más cuando no hay paso adicional. Diseño del estudio no verificado.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-55",
+   "s": "c_dt_efecto_mediado",
+   "p": "aplica_a",
+   "o": "estudiantes_proyectos_empresa",
+   "f": "F-239",
+   "apoyo": "Muestra: 160 estudiantes en 62 proyectos de innovación realizados para empresas; mediación total por empoderamiento psicológico.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-02",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-56",
+   "s": "c_fracaso_85_90",
+   "p": "origina_en",
+   "o": "materiales_kohavi",
+   "f": "F-262",
+   "apoyo": "Resúmenes de materiales de Kohavi dan fracaso de experimentos: Microsoft ~66-70%, Bing ~85%, Google Ads y Netflix ~90%, Airbnb ~92%. Confirma la ficha, pero por fuentes secundarias.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-57",
+   "s": "c_fracaso_85_90",
+   "p": "tiene_limite",
+   "o": "no_verificado_texto_hbr",
+   "f": "F-262",
+   "apoyo": "El texto del artículo de HBR no se abrió; las cifras proceden de resúmenes y materiales asociados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-02",
+   "clase": "metodo"
   }
  ],
  "generado": "2026-10-02",

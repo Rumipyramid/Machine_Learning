@@ -28,33 +28,81 @@
    "triples": 20,
    "sin_aporte": [],
    "notas": "Pase barato a nivel de FICHA (8 fuentes, sin búsqueda web) para ganar amplitud: grupos design thinking, XAI/sobre-confianza y UI adaptativa. Candidatas a lectura profunda: F-244/F-246 (tensión explicaciones)."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f_ids": [
+    "F-239",
+    "F-241",
+    "F-244",
+    "F-246",
+    "F-251",
+    "F-262"
+   ],
+   "triples": 8,
+   "sin_aporte": [],
+   "notas": "Lote de resolución de contradicciones: lectura dirigida de abstracts de las fuentes en tensión."
   }
  ],
  "discrepancias": [
   {
    "fecha": "2026-10-02",
    "f": "F-251",
-   "detalle": "Ficha dice 'Varios, 2021'. La fuente es Zac, Huang, von Moltke, Decker & Ezrachi, *Behavioural Public Policy*, publicada online 3-feb-2025 (SSRN 2023). Además la ficha dice que 'la educación sí modera en los patterns leves'; el abstract solo dice evidencia débil de que ingreso/educación/edad importen y posible mayor vulnerabilidad en mayores. Posible mezcla con F-241. Revisar autor, año y esa frase."
+   "detalle": "Ficha dice 'Varios, 2021'. La fuente es Zac, Huang, von Moltke, Decker & Ezrachi, *Behavioural Public Policy*, publicada online 3-feb-2025 (SSRN 2023). Además la ficha dice que 'la educación sí modera en los patterns leves'; el abstract solo dice evidencia débil de que ingreso/educación/edad importen y posible mayor vulnerabilidad en mayores. Posible mezcla con F-241. Revisar autor, año y esa frase.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autores y año corregidos en el ledger el 2026-10-02."
   },
   {
    "fecha": "2026-10-02",
    "f": "F-241",
-   "detalle": "Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo."
+   "detalle": "Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo. Actualización 2026-10-02: la afirmación de que los menos educados fueron más susceptibles a patterns leves SÍ figura en el abstract; las cifras exactas siguen sin confirmarse.",
+   "estado": "abierta"
   },
   {
    "fecha": "2026-10-02",
    "f": "F-262",
-   "detalle": "La ficha mezcla '~1/3 de los experimentos mejora la métrica' (Microsoft, verificado) con '85-90% de fracaso en Bing, Google Ads, Netflix y Airbnb' (no verificado hoy). Son bases distintas; no deberían leerse como una sola cifra."
+   "detalle": "La ficha mezcla '~1/3 de los experimentos mejora la métrica' (Microsoft, verificado) con '85-90% de fracaso en Bing, Google Ads, Netflix y Airbnb' (no verificado hoy). Son bases distintas; no deberían leerse como una sola cifra.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada con matiz: el 85-90% se confirma en resúmenes de materiales de Kohavi (Bing ~85%, Google Ads/Netflix ~90%, Airbnb ~92%; Microsoft ~66-70%). Son organizaciones distintas, no una cifra única. El texto de HBR sigue sin abrirse."
   },
   {
    "fecha": "2026-10-02",
    "f": "F-238",
-   "detalle": "La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados)."
+   "detalle": "La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados).",
+   "estado": "abierta"
   },
   {
    "fecha": "2026-10-02",
    "f": "F-239",
-   "detalle": "La ficha dice 'Muestra estudiantil' y 'N=160 en 62 proyectos de innovación con empresas'; las dos descripciones conviven y conviene aclarar cuál es la muestra. No verificado."
+   "detalle": "La ficha dice 'Muestra estudiantil' y 'N=160 en 62 proyectos de innovación con empresas'; las dos descripciones conviven y conviene aclarar cuál es la muestra. No verificado.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: la muestra es de 160 estudiantes en 62 proyectos de innovación para empresas; las dos descripciones de la ficha eran compatibles."
+  }
+ ],
+ "resoluciones": [
+  {
+   "triple": "T-17",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-02",
+   "nota": "No es refutación: F-241 (abstract) halla que los menos educados fueron más susceptibles a patterns leves en un experimento de EE.UU.; F-251 (abstract) halla solo evidencia débil de que ingreso, educación o edad importen en general. Distinto alcance y fuerza. Pendiente: texto completo de F-251 para ver el coeficiente de educación."
+  },
+  {
+   "triple": "T-22",
+   "estado": "inferencia_del_node",
+   "fecha": "2026-10-02",
+   "nota": "No hay tensión entre fuentes: el artículo trata de experimentación, no de diseño. La contradicción con los multiplicadores es una inferencia del node (C2/C7) y debe presentarse así."
+  },
+  {
+   "triple": "T-34",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-02",
+   "nota": "Compatibles: F-239 prueba una mediación en una sola muestra (160 estudiantes, 62 proyectos); F-240 es una revisión que dice que los mecanismos no están establecidos en general. Una mediación en un estudio no establece el mecanismo; F-240 no se leyó más allá de la ficha."
+  },
+  {
+   "triple": "T-38",
+   "estado": "reconciliada",
+   "fecha": "2026-10-02",
+   "nota": "El moderador es el costo-beneficio de involucrarse (dificultad de la tarea). F-244: tareas de sentido común, sin ventaja de las explicaciones frente a mostrar la confianza. F-246: las explicaciones reducen la sobre-confianza solo en la tarea difícil de un laberinto. Resultados distintos (precisión de equipo vs. sobre-confianza) y tareas distintas, no una contradicción."
   }
  ]
 }

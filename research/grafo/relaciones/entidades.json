@@ -109,6 +109,11 @@
   "nombre": "Confianza en la IA",
   "tipo": "resultado"
  },
+ "costo_beneficio_involucramiento": {
+  "id": "costo_beneficio_involucramiento",
+  "nombre": "Costos y beneficios de involucrarse con la explicación",
+  "tipo": "constructo"
+ },
  "dark_patterns": {
   "id": "dark_patterns",
   "nombre": "Dark patterns",
@@ -154,6 +159,11 @@
   "nombre": "Empoderamiento psicológico",
   "tipo": "constructo"
  },
+ "estudiantes_proyectos_empresa": {
+  "id": "estudiantes_proyectos_empresa",
+  "nombre": "160 estudiantes en 62 proyectos de innovación para empresas",
+  "tipo": "poblacion"
+ },
  "exito_proyecto_innovacion": {
   "id": "exito_proyecto_innovacion",
   "nombre": "Éxito de proyectos de innovación",
@@ -168,6 +178,11 @@
   "id": "firmas_publicas_eeuu",
   "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
   "tipo": "poblacion"
+ },
+ "friccion_pago_posterior": {
+  "id": "friccion_pago_posterior",
+  "nombre": "Fricción: acción de pago requerida tras el dark pattern",
+  "tipo": "intervencion"
  },
  "fuente_unica_microsoft": {
   "id": "fuente_unica_microsoft",
@@ -188,6 +203,16 @@
   "id": "interfaces_adaptativas",
   "nombre": "Interfaces adaptativas",
   "tipo": "concepto"
+ },
+ "materiales_kohavi": {
+  "id": "materiales_kohavi",
+  "nombre": "Resúmenes y materiales públicos de Kohavi (no el texto de HBR)",
+  "tipo": "estudio"
+ },
+ "menos_educados": {
+  "id": "menos_educados",
+  "nombre": "Personas con menor educación",
+  "tipo": "poblacion"
  },
  "menus_adaptables": {
   "id": "menus_adaptables",
@@ -212,6 +237,11 @@
  "no_asignacion_aleatoria": {
   "id": "no_asignacion_aleatoria",
   "nombre": "Capacidad de diseño no asignada al azar (observacional)",
+  "tipo": "limitacion"
+ },
+ "no_verificado_texto_hbr": {
+  "id": "no_verificado_texto_hbr",
+  "nombre": "Cifra vista en resúmenes secundarios; texto de HBR no abierto",
   "tipo": "limitacion"
  },
  "patentes_diseno_utilidad": {
@@ -257,6 +287,16 @@
  "tarea_dificil": {
   "id": "tarea_dificil",
   "nombre": "Tareas de decisión difíciles",
+  "tipo": "concepto"
+ },
+ "tarea_laberinto": {
+  "id": "tarea_laberinto",
+  "nombre": "Tarea de laberinto con IA simulada (5 estudios)",
+  "tipo": "concepto"
+ },
+ "tareas_sentimiento_lsat": {
+  "id": "tareas_sentimiento_lsat",
+  "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
   "tipo": "concepto"
  },
  "velocidad_tarea": {

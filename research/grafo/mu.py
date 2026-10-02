@@ -45,6 +45,9 @@ for t in tri:
 conv = sum(1 for s in src_by_ent.values() if len(s) >= 2)
 lec = Counter(t["lectura"] for t in tri)
 tens = sum(1 for t in tri if t["p"] in ("contradice", "refuta"))
+_res = {r["triple"]: r["estado"] for r in est.get("resoluciones", [])}
+tens_open = sum(1 for t in tri if t["p"] in ("contradice", "refuta") and t["id"] not in _res)
+tens_real = sum(1 for t in tri if t["p"] in ("contradice", "refuta") and _res.get(t["id"]) == "alcance_distinto")
 rig = Counter(r["rigor"] for r in ledger.values())
 hy = des["hyp"]; htot = sum(hy.values()); hres = htot - hy.get("abierta", 0)
 cit_all = M["allc"] & set(ledger)
@@ -53,7 +56,7 @@ orphans = sorted(M["in_range"] - M["dcit"])
 fails = [(lbl, it) for lbl, it in audit if it]
 n_checks = len(audit) + 2  # + discrepancias abiertas + entidades sin relaciones
 sem_orph = len(set(ent) - {x for t in tri for x in (t["s"], t["o"])})
-open_disc = len(est["discrepancias"])
+open_disc = sum(1 for d in est["discrepancias"] if d.get("estado") != "cerrada")
 checks_ok = len(audit) - len(fails) + (1 if open_disc == 0 else 0) + (1 if sem_orph == 0 else 0)
 commit = sh("git", "rev-parse", "--short", "HEAD") if not SIN_GIT else "n/d"
 branch = sh("git", "branch", "--show-current") if not SIN_GIT else "n/d"
@@ -144,7 +147,7 @@ ri = [cell(len(ledger), "FUENTES EN EL LEDGER", f"{len(cit_all)} citadas por alg
       cell(f"{len(sem_f)}", "FUENTES CON RELACIONES", f"{pct(len(sem_f),len(ledger))}% del ledger (grafo semántico)", len(sem_f) < len(ledger) / 10),
       cell(len(ent), "ENTIDADES", f"{len(tri)} relaciones", False),
       cell(conv, "CONVERGENCIAS", "entidades sostenidas por ≥2 fuentes", False),
-      cell(tens, "TENSIONES DECLARADAS", "contradice / refuta", False)]
+      cell(tens, "TENSIONES DECLARADAS", f"{tens_open} sin resolver · {tens_real} de alcance distinto · {tens-tens_open-tens_real} reconciliadas/inferencia", tens_open > 0)]
 rig_chart = "<h3>FUENTES POR RIGOR</h3>" + bars([(f"{k} {n}", rig[k], None, f"{rig[k]} ({pct(rig[k],len(ledger))}%)") for k, n in zip("ABCDE", ["verde", "azul", "amarillo", "naranja", "rojo"])], accent={"E rojo"}) if False else \
     "<h3>FUENTES POR RIGOR (A = máximo)</h3>" + bars([(f"{k}", rig[k], None, f"{rig[k]}  {pct(rig[k],len(ledger))}%") for k in "ABCDE"], label_w=30)
 rel_cnt = Counter(t["p"] for t in tri)

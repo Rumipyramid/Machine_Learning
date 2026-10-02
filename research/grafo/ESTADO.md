@@ -14,7 +14,7 @@
 | Aristas wikilink (node→node) | 74 | recíprocas: 74 de 74 (100%) |
 | Fuentes citadas por ≥1 node | 352 de 468 | 75% del ledger; **116 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 15 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 13 de 468 fuentes (3%) | 49 relaciones · 2 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 13 de 468 fuentes (3%) | 57 relaciones · 3 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -116,18 +116,18 @@
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 1800 | 167 | 55 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-02 v4.0 |
-| `mecanismos-seguros-salud` | 332 | 45 | 27 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v1.2 |
+| `mecanismos-seguros-salud` | 332 | 45 | 27 | 7/7 | 2026-10-02 | 2026-10-02 v1.2 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
 | `modelo-salud-ia-farmacias-peru` | 605 | 21 | 18 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-12 v1.0 |
-| `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v1.0 |
-| `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v1.1 |
+| `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
+| `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 253 | 13 | 9 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-15 v1.0 |
 | `behavioral-design-estado-disciplina` | 317 | 8 | 7 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-29 v1.1 |
 | `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-24 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
 | `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-21 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 320 | 3 | 1 | 11/11 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v1.1 |
+| `seguros-comportamiento-mundo-peru` | 320 | 3 | 1 | 11/11 | 2026-10-02 | 2026-10-02 v1.1 |
 | `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-26 v1.2 |
 | `modelo-personas-sinteticas` | 73 | 0 | 0 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-20 v1.0 |
 
