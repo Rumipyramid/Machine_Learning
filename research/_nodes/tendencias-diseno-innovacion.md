@@ -9,7 +9,7 @@
 > Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
 > demostrado y cuáles son propuestas todavía sin respaldo?**
 > Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iter. 2: F-380 a F-398 ·
-> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · iter. 5: F-469 a F-476).
+> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · iter. 5: F-469 a F-476 · addendum 5b: F-509 a F-510).
 >
 > **Lo último (iteración 4, 2026-08-02) — el alcance se amplió a 💡 innovación y la tesis pasó la
 > prueba.** La pregunta de esta corrida era la más peligrosa que el node podía hacerse: *lo que
@@ -663,7 +663,7 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 |---|---|---|---|
 | **H27** | **El huérfano de cita es el modo dominante de las cifras de *fracaso***, así como el eco de cita lo es de las cifras de *éxito*. Predicción: las cifras que justifican **invertir** en una disciplina colapsan en una fuente única mala pero rastreable; las que justifican **desconfiar** de ella no colapsan en ninguna | `abierta` — fundada en F-444: "90% de los labs fracasa", "70-90% del intraemprendimiento fracasa (Harvard)" y "80-95% de los productos fracasa" **no tienen fuente primaria localizable**, mientras las cifras de éxito del mismo dominio (F-438, F-439, F-440, F-445, F-453) **sí** llegan a un documento identificable. ⭐ Si se sostiene, explica por qué el escepticismo sobre una disciplina es tan difícil de auditar como su promoción | Tomar N cifras de fracaso y N de éxito del mismo dominio e intentar rastrear cada una. Se refuta si ambas familias tienen la misma tasa de trazabilidad |
 | **H28** | **La crisis le ocurre al eslabón que no puede fusionarse.** En diseño colapsó el proveedor externo (consultoras) y sobrevivió la función interna; en innovación colapsa la función interna (labs, CVC) y sobrevive el proveedor externo **fusionándose** dentro de una matriz mayor. Predicción: lo que determina la supervivencia no es el valor entregado sino la **capacidad de absorción en una oferta más grande** | `abierta` — respaldo inicial: BCG X, McKinsey Business Building y Doblin by Deloitte siguen operando **fusionadas** (F-456) mientras Walmart, IKEA, General Mills, Munich Re y PayPal cierran función interna (F-447, F-448, F-457). ⚠️ Con dos descuentos: la conducta es mayoritariamente 2023-2025 (C5) y las causas están en disputa (C21) | Buscar un caso de función interna que sobreviva fusionándose, o de proveedor externo puro que crezca sin fusionarse. Se refuta si la supervivencia se explica mejor por desempeño que por absorbibilidad |
-| **H29** | **En insurtech el signo no es la pregunta: la condición lo es.** Con la misma clase de evidencia auditada y el mismo modelo declarado, Root es rentable en suscripción (combined ratio 91,4%) y Lemonade no (~139%). Predicción: la variable que los separa **no es la tecnología ni la IA**, sino la disciplina de suscripción y la selección de riesgo | `abierta` — **la hipótesis más accionable para el contexto Rimac**. F-449 vs. F-450, ambas con dato de filing. ⭐ Es el mismo movimiento intelectual que C16 hizo con la IA: dejar de preguntar *¿funciona?* y empezar a preguntar *¿bajo qué condiciones?* | Comparar la evolución de loss ratio de ambas controlando por mix de producto y antigüedad de cohorte. Se refuta si la diferencia se explica por la capa tecnológica |
+| **H29** | **En insurtech el signo no es la pregunta: la condición lo es.** Con la misma clase de evidencia auditada y el mismo modelo declarado, Root es rentable en suscripción (combined ratio 91,4%) y Lemonade no (~139%). Predicción: la variable que los separa **no es la tecnología ni la IA**, sino la disciplina de suscripción y la selección de riesgo | ⬆️ `parcial` *(iter. 5b, 2026-10-02)* — **la condición se movió a favor de la tesis y la matiza**: Lemonade pasó a un loss ratio bruto de **60%** (7 pp por desarrollo favorable) con prima en vigor **+32,5%**, pero sigue con **pérdida neta de US$43 M** (F-509), y la acción cayó 24% el día del reporte (F-510); Root, rentable con combined ratio de 92,1% pero con prima −1% (F-481). La disciplina de suscripción mejora la siniestralidad (Lemonade), pero **la rentabilidad total depende además de gastos y de crecer sin quemar caja**: no es una sola variable | Comparar la evolución de loss ratio de ambas controlando por mix de producto y antigüedad de cohorte. Se refuta si la diferencia se explica por la capa tecnológica |
 | **H30** | **Las metas de innovación se anuncian y no se reportan.** Predicción: la mayoría de las metas públicas de innovación (tipo "X% de ingresos de productos nuevos hacia el año N") **no tiene reporte público de cumplimiento**, y cuando lo tiene, no se cumplió | `abierta` — dos casos testigo fuertes: **3M inventó el índice de vitalidad con meta de 30% y hoy está en 10-11%** (F-454), y **BCP declaró en 2022 una meta de 10% de nuevos ingresos por innovación disruptiva hacia 2025 sin verificación pública de cumplimiento** (F-460). ⭐ Conecta con H16: es degradación de reporting, pero **auto-infligida y anticipada** | Tomar N metas públicas de innovación con fecha ya vencida y buscar su reporte de cumplimiento. Se refuta si la mayoría reporta |
 | **H31** | **En innovación lo importado es el marco, no la cifra.** A diferencia del corpus hispanohablante de diseño (H20: 100% de cifras de emisores anglosajones interesados), en innovación el vocabulario crítico se naturalizó en español hace **seis años** (desde dic-2020) — lo que cambia la pregunta de *"¿citan sin descuento?"* a *"¿generaron estudio propio o solo adoptaron el término?"* | `abierta` — **no auditada por bloqueo**, no por hallazgo: los cuatro intentos de lectura completa en español devolvieron 403 (F-464). ⚠️ **No debe leerse como confirmación ni refutación de H20 en el dominio de innovación** | Auditar N piezas hispanohablantes sobre innovación corporativa y clasificar si citan evidencia con muestra propia local o solo reproducen el marco |
 | **H32** | **La IA no destruye la demanda de las herramientas de diseño: les cobra un impuesto de margen.** El castigo bursátil a Figma refleja el costo de inferencia sobre el margen bruto, no pérdida de ingresos | `abierta` *(iter. 5)* — hija de H13. Ingresos +48% y NDR 136% (F-469) conviven con caída de ~17% por costos de IA (F-470) | Margen bruto GAAP de Figma en Q3 2026 (nov-2026) y trayectoria de los créditos de IA: si el margen se recupera con escala, H32 pierde; si sigue cayendo con ingresos al alza, se refuerza |
@@ -682,13 +682,16 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   y X horas de retrabajo" resiste a un CFO. "El diseño devuelve 100x" no sobrevive a la primera
   pregunta por la metodología. Cualquier deck que use McKinsey +32%/+56%, el "$1 → $100" o el "671%"
   como afirmación fuerza está construido sobre arena y **es vulnerable en la sala**.
+  *Base de evidencia (iter. 5, trazabilidad):* F-266, F-268, F-327, F-397.
 - **C2 — Prometer acumulación, no transformación.** La distribución real de efectos del diseño es de
   cola larga con moda cero: ~2/3 de los cambios bien diseñados **no** mueven su métrica objetivo. La
   promesa honesta y defendible es *iterar y medir*, no *rediseñar y despegar*.
+  *Base de evidencia (iter. 5, trazabilidad):* F-262.
 - **C3 — Cuando una cifra sea espectacular, rastrear la fuente primaria antes de usarla.** Las
   cuatro cifras más citadas del valor del diseño colapsan cada una en una única fuente no auditable
   —y una de ellas (671%) en ninguna. La regla operativa: *si no puedo leer el estudio primario, no
   entra a un entregable.*
+  *Base de evidencia (iter. 5, trazabilidad):* F-266, F-268, F-327, F-397.
 
 **Sobre cómo leer tendencias**
 
@@ -696,17 +699,21 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   quienes venden las herramientas de la tendencia; las encuestas laborales optimistas las publican
   quienes le venden a ese público; el movimiento anti-slop lo lidera quien vende cursos. No los
   descarta — obliga a preguntar **quién gana si creo esto**.
+  *Base de evidencia (iter. 5, trazabilidad):* F-295, F-279, F-286.
 - **C5 — Distinguir pico de tendencia.** El pánico gremial es **estacional**: repica con cada
   lanzamiento de modelo. Verificar todo pico contra el calendario de releases antes de leerlo como
   cambio estructural.
+  *Base de evidencia (iter. 5, trazabilidad):* F-296, F-300.
 - **C6 — Contar conducta, no volumen.** La mejor evidencia social de esta investigación no fue un
   hilo viral: fue **Apple enviando un slider de transparencia** y **gente pagando por talleres de
   riso**. Conducta observable > cantidad de likes. Y una nota publicada en seis medios con el mismo
   texto es **una** pieza de cobertura, no seis.
+  *Base de evidencia (iter. 5, trazabilidad):* F-291, F-295.
 - **C7 — El hallazgo negativo es un hallazgo.** "No existe ningún caso de rediseño con métricas en
   un documento auditado", "no hay consultora de diseño con crecimiento publicado", "el service design
   no aparece en la conversación": las tres se obtuvieron buscando y no encontrando, y las tres son
   informativas.
+  *Base de evidencia (iter. 5, trazabilidad):* F-262.
 
 **Sobre diseñar con IA**
 
@@ -714,17 +721,21 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   qué veo esto?" en todos lados aumenta la confianza *con independencia de la calidad de la
   explicación* — es decir, produce sobre-confianza. Lo que funciona: hacer la salida **verificable**,
   poner **fricción deliberada donde la tarea es difícil**, y **no ponerla donde es fácil**.
+  *Base de evidencia (iter. 5, trazabilidad):* F-242, F-243, F-245, F-246.
 - **C9 — Sospechar de la interfaz que se reconfigura sola.** Hay 20 años de evidencia de que la
   adaptación rápida controlada por el sistema pierde frente a lo estático, y de que **adaptable**
   (control del usuario) le gana a **adaptativo** (control del sistema). La generative UI es la
   versión extrema de lo que ya falló. Consistencia y aprendibilidad son el costo oculto.
+  *Base de evidencia (iter. 5, trazabilidad):* F-247, F-384.
 - **C10 — Más personalización no es mejor cuando la privacidad está saliente.** La personalización
   con datos personales puede rendir **peor** que el mensaje genérico si el usuario está atento a la
   privacidad. Directamente relevante para seguros, donde el dato es sensible por definición.
+  *Base de evidencia (iter. 5, trazabilidad):* F-254, F-253.
 - **C11 — Desconfiar de toda métrica de productividad autorreportada.** Existe un RCT donde
   desarrolladores expertos fueron **19% más lentos** con IA creyendo ser 20% más rápidos: una brecha
   percepción-realidad de ~39 puntos. **Cualquier "somos X% más rápidos con IA" sin medición objetiva
   debe leerse como sentimiento, no como dato.**
+  *Base de evidencia (iter. 5, trazabilidad):* F-257, F-271.
 
 **Sobre estética**
 
@@ -732,8 +743,10 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   menos de la mitad al controlar por fluidez de procesamiento: buena parte de lo que se atribuye a la
   belleza es en realidad **facilidad de procesamiento**. Liquid Glass es la demostración de que ni la
   organización con más recursos de diseño del mundo es inmune.
+  *Base de evidencia (iter. 5, trazabilidad):* F-249, F-272.
 - **C13 — El anti-diseño sin disciplina destruye la usabilidad.** Brutalismo con grilla clara ≠
   anti-diseño caótico; el segundo llegó a 8-10% de éxito de tarea en páginas densas de información.
+  *Base de evidencia (iter. 5, trazabilidad):* F-297.
 
 **Sobre cómo leer la evidencia de una tecnología nueva** *(ascendidas en la iteración 2)*
 
@@ -744,6 +757,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   **consistencia**. No se contradicen: miden cosas distintas. La pregunta operativa ante cualquier
   claim de una tecnología de diseño es *¿esto es un dato de gusto, de desempeño o de consecuencia?*
   — y el discurso casi siempre presenta el primero como si fuera el tercero.
+  *Base de evidencia (iter. 5, trazabilidad):* F-381, F-382.
 - **C16 — La curva antes que el signo.** Ante "¿la IA acelera el trabajo?", la respuesta correcta no
   es sí ni no: es *¿en qué punto de la curva está este equipo?* Un piloto que mida el promedio de
   mundos distintos medirá cero y concluirá mal. Diseñar el piloto **segmentando por madurez del
@@ -762,6 +776,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   circulación de una cifra**; la única defensa que funciona es local y previa — **exigir el diseño
   del estudio antes de dejarla entrar**: ¿alguien ejecutó el cambio y midió el resultado, o alguien
   estimó el ahorro?
+  *Base de evidencia (iter. 5, trazabilidad):* F-266, F-268, F-327, F-397.
 
 **Sobre geografía y contexto local** *(ascendida en la iteración 2)*
 
@@ -773,6 +788,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   para cualquier entregable regional: **buscar el dato de conducta local** (decisiones corporativas,
   estudios con muestra propia) y **no citar la cifra anglosajona sin su descuento por emisor** (C4).
   ⚠️ *Provisional: ascendida con una sola iteración de respaldo.*
+  *Base de evidencia (iter. 5, trazabilidad):* F-389, F-391, F-392.
 
 **Sobre cómo se cita la evidencia** *(ascendidas en la iteración 3)*
 
@@ -792,6 +808,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   cuando un mecanismo reconcilie una contradicción propia, tratarlo con **más** escrutinio que a la
   cifra que vino a reemplazar, no con menos (H24).
   ⚠️ *Provisional: ascendida con una sola iteración de respaldo.*
+  *Base de evidencia (iter. 5, trazabilidad):* F-406, F-404, F-407.
 - **C21 — La conducta también se disputa: verificar la atribución, no solo el hecho.** C6 dice contar
   conducta, no volumen — y sigue en pie. Pero la iteración 3 muestra su límite: el caso testigo más
   limpio del node (MercadoLibre desvinculando UX "por IA") tiene **desmentido oficial de la propia
@@ -828,6 +845,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
   explican poco. Es el único punto donde la crítica teórica al diseño está empíricamente confirmada.
   **Leído en positivo: el diseño mueve conducta de verdad; lo que está mal probado es que la mueva
   hacia el valor.**
+  *Base de evidencia (iter. 5, trazabilidad):* F-241.
 
 ---
 
@@ -1747,6 +1765,9 @@ La búsqueda devolvió solo notas de 2023 sobre IDEO. **No hay evidencia nueva**
 - Cifras bursátiles y de ARR vienen de resúmenes y de prensa/blogs; el 8-K, el blog de METR y los arXiv no se abrieron íntegros.
 - **La pista social es la más débil**: no se leyeron foros de diseñadores ni X/Reddit con volumen; solo un hilo (F-473) y cobertura de prensa.
 - H15 quedó sin evidencia nueva y H3/H6 sin movimiento; no se buscó contraevidencia adicional sobre H32 más allá de la prensa.
+
+### 13.8 🔁 Addendum 5b (2026-10-02) — H29 confrontada con el 2T de Lemonade
+*Lectura vía `WebSearch` de resúmenes; la carta a accionistas no se abrió íntegra.* El 2T 2026 de Lemonade muestra un **loss ratio bruto de 60%** (con 7 pp de desarrollo favorable; ≈67% subyacente) frente al ~139% de combined ratio con el que el node la comparó en la iteración 4, prima en vigor **+32,5%** y **pérdida neta de US$43 M** (F-509); la acción cayó 24% el día del reporte (F-510). Root, en cambio, es rentable (combined ratio de 92,1%) pero sin crecimiento (F-481). **Lectura:** la hipótesis sale parcialmente respaldada —la siniestralidad es mejorable con disciplina— y parcialmente matizada: ninguna de las dos empresas combina rentabilidad y crecimiento; "disciplina de suscripción" explica la brecha de siniestralidad, no la de rentabilidad total.
 
 ---
 

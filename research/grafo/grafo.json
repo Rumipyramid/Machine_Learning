@@ -60,7 +60,7 @@
    "id": "mecanismos-seguros-salud",
    "type": "node",
    "lines": 351,
-   "cites": 51,
+   "cites": 53,
    "design": false
   },
   {
@@ -94,8 +94,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1843,
-   "cites": 175,
+   "lines": 1864,
+   "cites": 178,
    "design": true
   },
   {
@@ -4707,6 +4707,24 @@
    "autor": "vLex Perú · Congreso de la República",
    "anio": "2024-2025",
    "huerfana": false
+  },
+  {
+   "id": "F-509",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "LMND Shareholder Letter Q2 2026",
+   "autor": "Lemonade, Inc. (SEC 8-K, carta a accionistas Q2 2026; cifras vía resúmenes)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-510",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Lemonade shares close down 24% despite improved Q2 loss ratio, new CFO named",
+   "autor": "The Insurer",
+   "anio": "2026",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -7280,6 +7298,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-481",
+   "k": "cita"
+  },
+  {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "F-482",
    "k": "cita"
@@ -7417,6 +7440,26 @@
   {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "F-508",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-509",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-509",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-510",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-510",
    "k": "cita"
   }
  ],
@@ -7635,12 +7678,12 @@
    },
    {
     "fecha": "2026-10-02",
-    "nuevas": 40,
-    "acumuladas": 508,
-    "AB": 16,
+    "nuevas": 42,
+    "acumuladas": 510,
+    "AB": 17,
     "rigor": {
-     "B": 12,
-     "C": 19,
+     "B": 13,
+     "C": 20,
      "D": 3,
      "E": 1,
      "?": 1,
@@ -9641,14 +9684,14 @@
   ],
   "design": {
    "hyp": {
-    "abierta": 20,
-    "parcial": 7,
+    "abierta": 19,
+    "parcial": 8,
     "respaldada": 4,
     "refutada": 1,
     "otra": 1
    },
    "rules": 22,
-   "rules_cited": 5,
+   "rules_cited": 22,
    "scale": {
     "🟢": 16,
     "🟡": 10,
@@ -9656,7 +9699,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1843,
+   "lines": 1864,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
