@@ -14,7 +14,7 @@
 | Aristas wikilink (node→node) | 74 | recíprocas: 74 de 74 (100%) |
 | Fuentes citadas por ≥1 node | 360 de 476 | 76% del ledger; **116 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 15 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 13 de 476 fuentes (3%) | 57 relaciones · 3 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 21 de 476 fuentes (4%) | 71 relaciones · 4 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -116,7 +116,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 1842 | 175 | 57 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-10-02 v4.1 |
+| `tendencias-diseno-innovacion` | 1842 | 175 | 57 | 7/7 | 2026-10-02 | 2026-10-02 v4.1 |
 | `mecanismos-seguros-salud` | 332 | 45 | 27 | 7/7 | 2026-10-02 | 2026-10-02 v1.2 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |

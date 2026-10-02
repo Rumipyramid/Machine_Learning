@@ -8,26 +8,26 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **13 de 468** (2.8%) |
-| …del cerebro de diseño (citadas en el node) | 13 de 167 |
-| …por rigor | A 12/134 · B 0/76 · C 1/100 · D 0/117 · E 0/28 |
-| Barridos | 3 |
-| Entidades | 62 |
-| Relaciones | 57 |
-| Nivel de lectura | ficha 34 · abstract 23 |
-| Fuerza de las afirmaciones | observacional 19 · causal 19 · descriptiva 15 · teorica 4 |
+| Fuentes procesadas | **21 de 476** (4.4%) |
+| …del cerebro de diseño (citadas en el node) | 21 de 175 |
+| …por rigor | A 12/134 · B 2/78 · C 5/104 · D 1/118 · E 1/29 |
+| Barridos | 4 |
+| Entidades | 83 |
+| Relaciones | 71 |
+| Nivel de lectura | ficha 42 · abstract 29 |
+| Fuerza de las afirmaciones | descriptiva 24 · observacional 20 · causal 20 · teorica 7 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aplica_a` | estructura | 11 |
-| `aumenta` | efecto | 9 |
-| `asocia_con` | efecto | 6 |
-| `tiene_limite` | metodo | 5 |
+| `aplica_a` | estructura | 12 |
+| `aumenta` | efecto | 11 |
+| `asocia_con` | efecto | 10 |
+| `tiene_limite` | metodo | 9 |
+| `contradice` | evidencia | 6 |
+| `reduce` | efecto | 6 |
 | `modera` | efecto | 5 |
-| `reduce` | efecto | 5 |
-| `contradice` | evidencia | 4 |
 | `origina_en` | metodo | 4 |
 | `mide` | metodo | 3 |
 | `es_tipo_de` | estructura | 3 |
@@ -40,6 +40,7 @@
 |---|---|
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
 | Sobre-confianza en la IA | F-244, F-245, F-246 |
+| Generative UI (interfaces generadas por LLM) | F-247, F-475, F-476 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
@@ -49,6 +50,10 @@
 | El efecto del design thinking está totalmente mediado por empoderamiento | F-239, F-240 |
 | Las explicaciones rara vez producen desempeño complementario | F-243, F-244 |
 | Las explicaciones mejoran la decisión humano-IA | F-244, F-246 |
+| ARR de Lovable | F-471, F-472 |
+| El ARR de vibe coding no retiene (H14) | F-472, F-473 |
+| Churn y cohortes no publicados | F-472, F-473 |
+| Generative UI gana en usabilidad percibida | F-475, F-476 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -64,6 +69,12 @@
 - **Las explicaciones rara vez producen desempeño complementario** —contradice→ **Las explicaciones mejoran la decisión humano-IA** (F-244, causal) · **estado: reconciliada**
   - No produjeron desempeño complementario humano-IA en el experimento (CHI 2021).
   - *Resolución (2026-10-02):* El moderador es el costo-beneficio de involucrarse (dificultad de la tarea). F-244: tareas de sentido común, sin ventaja de las explicaciones frente a mostrar la confianza. F-246: las explicaciones reducen la sobre-confianza solo en la tarea difícil de un laberinto. Resultados distintos (precisión de equipo vs. sobre-confianza) y tareas distintas, no una contradicción.
+- **La IA cobra un impuesto de margen a las herramientas de diseño (H32)** —contradice→ **El mercado descuenta disrupción de IA sobre la demanda (H13)** (F-470, teorica) · **estado: mecanismo_en_disputa**
+  - Explicación alternativa del mecanismo (no del resultado): la caída se atribuye al costo de IA sobre el margen, no a una pérdida de demanda. La atribución es lectura de prensa.
+  - *Resolución (2026-10-02):* No contradice el resultado de H13 (se cumplió), sino su mecanismo: costo de IA sobre el margen vs. descuento por disrupción de la demanda. Se resuelve con el margen bruto del Q3 (nov-2026); hoy la atribución es lectura de prensa.
+- **La justificación de diseño generada no coincide con lo implementado** —contradice→ **Generative UI gana en usabilidad percibida** (F-475, teorica) · **estado: alcance_distinto**
+  - Tensión de alcance, no de resultado: F-475 mide fidelidad de implementación; F-476 mide usabilidad percibida en una sesión.
+  - *Resolución (2026-10-02):* Miden cosas distintas: fidelidad entre justificación e implementación (F-475, preprint) vs. usabilidad percibida en sesión única (F-476, emisor interesado). Ninguna prueba uso repetido; se mantiene H33 abierta.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -98,6 +109,7 @@
 | 2026-10-02 | F-237, F-238, F-241, F-251, F-262 | 28 | – | Primer lote (cerebro de diseño, 🟢A primero salvo F-262 🟡C por ser su contrapeso). Lectura vía WebSearch de abstracts; ningún texto completo. |
 | 2026-10-02 | F-239, F-240, F-242, F-243, F-244, F-245, F-246, F-247 | 20 | – | Pase barato a nivel de FICHA (8 fuentes, sin búsqueda web) para ganar amplitud: grupos design thinking, XAI/sobre-confianza y UI adaptativa. Candidatas a lectura profunda: F-244/F-246 (tensión explica |
 | 2026-10-02 | F-239, F-241, F-244, F-246, F-251, F-262 | 8 | – | Lote de resolución de contradicciones: lectura dirigida de abstracts de las fuentes en tensión. |
+| 2026-10-02 | F-469, F-470, F-471, F-472, F-473, F-474, F-475, F-476 | 14 | – | Pase sobre las 8 fuentes de la iteración 5 de /trinidad (diseño e innovación). Nivel: abstract en las académicas/METR; ficha en empresa, prensa y blogs. |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

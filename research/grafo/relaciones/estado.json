@@ -42,6 +42,22 @@
    "triples": 8,
    "sin_aporte": [],
    "notas": "Lote de resolución de contradicciones: lectura dirigida de abstracts de las fuentes en tensión."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f_ids": [
+    "F-469",
+    "F-470",
+    "F-471",
+    "F-472",
+    "F-473",
+    "F-474",
+    "F-475",
+    "F-476"
+   ],
+   "triples": 14,
+   "sin_aporte": [],
+   "notas": "Pase sobre las 8 fuentes de la iteración 5 de /trinidad (diseño e innovación). Nivel: abstract en las académicas/METR; ficha en empresa, prensa y blogs."
   }
  ],
  "discrepancias": [
@@ -103,6 +119,18 @@
    "estado": "reconciliada",
    "fecha": "2026-10-02",
    "nota": "El moderador es el costo-beneficio de involucrarse (dificultad de la tarea). F-244: tareas de sentido común, sin ventaja de las explicaciones frente a mostrar la confianza. F-246: las explicaciones reducen la sobre-confianza solo en la tarea difícil de un laberinto. Resultados distintos (precisión de equipo vs. sobre-confianza) y tareas distintas, no una contradicción."
+  },
+  {
+   "triple": "T-61",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-02",
+   "nota": "No contradice el resultado de H13 (se cumplió), sino su mecanismo: costo de IA sobre el margen vs. descuento por disrupción de la demanda. Se resuelve con el margen bruto del Q3 (nov-2026); hoy la atribución es lectura de prensa."
+  },
+  {
+   "triple": "T-69",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-02",
+   "nota": "Miden cosas distintas: fidelidad entre justificación e implementación (F-475, preprint) vs. usabilidad percibida en sesión única (F-476, emisor interesado). Ninguna prueba uso repetido; se mantiene H33 abierta."
   }
  ]
 }

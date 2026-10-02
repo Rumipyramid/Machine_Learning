@@ -19,6 +19,16 @@
   "nombre": "Backlash del consumidor",
   "tipo": "resultado"
  },
+ "c_brecha_justificacion_implementacion": {
+  "id": "c_brecha_justificacion_implementacion",
+  "nombre": "La justificación de diseño generada no coincide con lo implementado",
+  "tipo": "afirmacion"
+ },
+ "c_castigo_por_disrupcion": {
+  "id": "c_castigo_por_disrupcion",
+  "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
+  "tipo": "afirmacion"
+ },
  "c_diseno_firma": {
   "id": "c_diseno_firma",
   "nombre": "Diseño efectivo → mejor desempeño de la firma",
@@ -39,6 +49,11 @@
   "nombre": "Menor educación → mayor susceptibilidad a patterns leves",
   "tipo": "afirmacion"
  },
+ "c_efecto_ia_productividad_incierto": {
+  "id": "c_efecto_ia_productividad_incierto",
+  "nombre": "El efecto de la IA sobre la productividad no es estimable con el diseño actual",
+  "tipo": "afirmacion"
+ },
  "c_explicaciones_mejoran_decision": {
   "id": "c_explicaciones_mejoran_decision",
   "nombre": "Las explicaciones mejoran la decisión humano-IA",
@@ -52,6 +67,16 @@
  "c_fracaso_85_90": {
   "id": "c_fracaso_85_90",
   "nombre": "85-90% de fracaso de experimentos en Bing, Google Ads, Netflix, Airbnb",
+  "tipo": "afirmacion"
+ },
+ "c_generative_ui_usabilidad": {
+  "id": "c_generative_ui_usabilidad",
+  "nombre": "Generative UI gana en usabilidad percibida",
+  "tipo": "afirmacion"
+ },
+ "c_impuesto_margen_ia": {
+  "id": "c_impuesto_margen_ia",
+  "nombre": "La IA cobra un impuesto de margen a las herramientas de diseño (H32)",
   "tipo": "afirmacion"
  },
  "c_leves_sin_backlash": {
@@ -84,6 +109,11 @@
   "nombre": "El valor se acumula en mejoras de 0,1-0,2%",
   "tipo": "afirmacion"
  },
+ "c_vibe_coding_no_retiene": {
+  "id": "c_vibe_coding_no_retiene",
+  "nombre": "El ARR de vibe coding no retiene (H14)",
+  "tipo": "afirmacion"
+ },
  "c_vulnerabilidad_transversal": {
   "id": "c_vulnerabilidad_transversal",
   "nombre": "Todos los grupos de consumidores son susceptibles",
@@ -114,6 +144,16 @@
   "nombre": "Costos y beneficios de involucrarse con la explicación",
   "tipo": "constructo"
  },
+ "costo_ia_inferencia": {
+  "id": "costo_ia_inferencia",
+  "nombre": "Costo de IA / inferencia",
+  "tipo": "concepto"
+ },
+ "creditos_ia_figma": {
+  "id": "creditos_ia_figma",
+  "nombre": "Monetización de créditos de IA de Figma",
+  "tipo": "intervencion"
+ },
  "dark_patterns": {
   "id": "dark_patterns",
   "nombre": "Dark patterns",
@@ -138,6 +178,11 @@
   "id": "desempeno_financiero_firma",
   "nombre": "Desempeño financiero de la firma (ROA, ROS, crecimiento)",
   "tipo": "resultado"
+ },
+ "design_theater": {
+  "id": "design_theater",
+  "nombre": "Design Theater: justificación de diseño sin implementación",
+  "tipo": "concepto"
  },
  "design_thinking": {
   "id": "design_thinking",
@@ -194,15 +239,50 @@
   "nombre": "Generative UI (interfaces generadas por LLM)",
   "tipo": "intervencion"
  },
+ "ia_asistida_devs": {
+  "id": "ia_asistida_devs",
+  "nombre": "Uso de IA por desarrolladores experimentados",
+  "tipo": "intervencion"
+ },
  "ingresos_bing": {
   "id": "ingresos_bing",
   "nombre": "Ingresos de Bing",
+  "tipo": "resultado"
+ },
+ "ingresos_figma_q2": {
+  "id": "ingresos_figma_q2",
+  "nombre": "Ingresos de Figma Q2 2026 (+48%)",
   "tipo": "resultado"
  },
  "interfaces_adaptativas": {
   "id": "interfaces_adaptativas",
   "nombre": "Interfaces adaptativas",
   "tipo": "concepto"
+ },
+ "lovable_arr": {
+  "id": "lovable_arr",
+  "nombre": "ARR de Lovable",
+  "tipo": "resultado"
+ },
+ "lovable_churn_no_publicado": {
+  "id": "lovable_churn_no_publicado",
+  "nombre": "Churn y cohortes no publicados",
+  "tipo": "limitacion"
+ },
+ "lovable_trafico": {
+  "id": "lovable_trafico",
+  "nombre": "Tráfico de Lovable",
+  "tipo": "resultado"
+ },
+ "lovable_valoracion": {
+  "id": "lovable_valoracion",
+  "nombre": "Valoración de Lovable (US$13,3B)",
+  "tipo": "resultado"
+ },
+ "margen_bruto_figma": {
+  "id": "margen_bruto_figma",
+  "nombre": "Margen bruto de Figma",
+  "tipo": "resultado"
  },
  "materiales_kohavi": {
   "id": "materiales_kohavi",
@@ -249,10 +329,20 @@
   "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
   "tipo": "metrica"
  },
+ "precio_accion_figma": {
+  "id": "precio_accion_figma",
+  "nombre": "Precio de la acción de Figma (FIG)",
+  "tipo": "resultado"
+ },
  "precision_adaptacion_alta": {
   "id": "precision_adaptacion_alta",
   "nombre": "Alta precisión de adaptación",
   "tipo": "concepto"
+ },
+ "productividad_devs": {
+  "id": "productividad_devs",
+  "nombre": "Productividad de desarrolladores",
+  "tipo": "resultado"
  },
  "ranking_expertos_diseno": {
   "id": "ranking_expertos_diseno",
@@ -274,10 +364,20 @@
   "nombre": "Sesgo de halo (proxy = percepción experta)",
   "tipo": "limitacion"
  },
+ "sesgo_seleccion_metr": {
+  "id": "sesgo_seleccion_metr",
+  "nombre": "Sesgo de selección en el estudio de productividad",
+  "tipo": "limitacion"
+ },
  "sobreconfianza_ia": {
   "id": "sobreconfianza_ia",
   "nombre": "Sobre-confianza en la IA",
   "tipo": "resultado"
+ },
+ "sus_sesion_unica": {
+  "id": "sus_sesion_unica",
+  "nombre": "Medición en sesión única con línea base débil",
+  "tipo": "limitacion"
  },
  "susceptibilidad_dark_patterns": {
   "id": "susceptibilidad_dark_patterns",
@@ -298,6 +398,11 @@
   "id": "tareas_sentimiento_lsat",
   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
   "tipo": "concepto"
+ },
+ "usabilidad_percibida_sus": {
+  "id": "usabilidad_percibida_sus",
+  "nombre": "Usabilidad percibida (SUS)",
+  "tipo": "resultado"
  },
  "velocidad_tarea": {
   "id": "velocidad_tarea",

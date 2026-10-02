@@ -1,0 +1,249 @@
+{
+ "fecha": "2026-10-02",
+ "f_ids": [
+  "F-469",
+  "F-470",
+  "F-471",
+  "F-472",
+  "F-473",
+  "F-474",
+  "F-475",
+  "F-476"
+ ],
+ "entidades": [
+  {
+   "id": "creditos_ia_figma",
+   "nombre": "Monetización de créditos de IA de Figma",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ingresos_figma_q2",
+   "nombre": "Ingresos de Figma Q2 2026 (+48%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "costo_ia_inferencia",
+   "nombre": "Costo de IA / inferencia",
+   "tipo": "concepto"
+  },
+  {
+   "id": "margen_bruto_figma",
+   "nombre": "Margen bruto de Figma",
+   "tipo": "resultado"
+  },
+  {
+   "id": "precio_accion_figma",
+   "nombre": "Precio de la acción de Figma (FIG)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_impuesto_margen_ia",
+   "nombre": "La IA cobra un impuesto de margen a las herramientas de diseño (H32)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_castigo_por_disrupcion",
+   "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "lovable_arr",
+   "nombre": "ARR de Lovable",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lovable_trafico",
+   "nombre": "Tráfico de Lovable",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lovable_valoracion",
+   "nombre": "Valoración de Lovable (US$13,3B)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lovable_churn_no_publicado",
+   "nombre": "Churn y cohortes no publicados",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_vibe_coding_no_retiene",
+   "nombre": "El ARR de vibe coding no retiene (H14)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "ia_asistida_devs",
+   "nombre": "Uso de IA por desarrolladores experimentados",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "productividad_devs",
+   "nombre": "Productividad de desarrolladores",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sesgo_seleccion_metr",
+   "nombre": "Sesgo de selección en el estudio de productividad",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_efecto_ia_productividad_incierto",
+   "nombre": "El efecto de la IA sobre la productividad no es estimable con el diseño actual",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "design_theater",
+   "nombre": "Design Theater: justificación de diseño sin implementación",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_brecha_justificacion_implementacion",
+   "nombre": "La justificación de diseño generada no coincide con lo implementado",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "usabilidad_percibida_sus",
+   "nombre": "Usabilidad percibida (SUS)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_generative_ui_usabilidad",
+   "nombre": "Generative UI gana en usabilidad percibida",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sus_sesion_unica",
+   "nombre": "Medición en sesión única con línea base débil",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "creditos_ia_figma",
+   "p": "aumenta",
+   "o": "ingresos_figma_q2",
+   "f": "F-469",
+   "apoyo": "Primer trimestre completo de monetización de créditos de IA; ingresos de US$370,1M, +48% interanual y NDR 136% (cifras vía resúmenes del 8-K).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "costo_ia_inferencia",
+   "p": "reduce",
+   "o": "margen_bruto_figma",
+   "f": "F-470",
+   "apoyo": "Los costos de IA presionan el margen bruto mientras se expanden agentes y Make.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "margen_bruto_figma",
+   "p": "asocia_con",
+   "o": "precio_accion_figma",
+   "f": "F-470",
+   "apoyo": "La acción cayó ~17% tras el reporte pese al beat de ingresos; cerró a US$24,99 el 13-ago (agregador).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_impuesto_margen_ia",
+   "p": "contradice",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-470",
+   "apoyo": "Explicación alternativa del mecanismo (no del resultado): la caída se atribuye al costo de IA sobre el margen, no a una pérdida de demanda. La atribución es lectura de prensa.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "lovable_arr",
+   "p": "asocia_con",
+   "o": "lovable_valoracion",
+   "f": "F-471",
+   "apoyo": "Serie C de US$400M a US$13,3B (12-ago-2026), el doble de la valoración de diciembre.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lovable_arr",
+   "p": "asocia_con",
+   "o": "lovable_trafico",
+   "f": "F-472",
+   "apoyo": "ARR autorreportado sube de ~US$500M a ~US$600M mientras el tráfico cae ~40% desde el pico: las dos señales divergen.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_vibe_coding_no_retiene",
+   "p": "tiene_limite",
+   "o": "lovable_churn_no_publicado",
+   "f": "F-472",
+   "apoyo": "La empresa no publica churn ni split mensual/anual y alega NDR >100% sin desglose; la hipótesis no se puede probar ni refutar con lo público.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_vibe_coding_no_retiene",
+   "p": "tiene_limite",
+   "o": "lovable_churn_no_publicado",
+   "f": "F-473",
+   "apoyo": "Opinión de un analista en X: el churn no divulgado es más informativo que el ARR. Es conversación, no evidencia.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ia_asistida_devs",
+   "p": "asocia_con",
+   "o": "productividad_devs",
+   "f": "F-474",
+   "apoyo": "Speedup estimado de −18% (IC −38% a +9%) en devs que repiten y −4% (IC −15% a +9%) en devs nuevos; ambos intervalos incluyen el cero.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_efecto_ia_productividad_incierto",
+   "p": "tiene_limite",
+   "o": "sesgo_seleccion_metr",
+   "f": "F-474",
+   "apoyo": "METR cambia el diseño porque el sesgo de selección vuelve difíciles de interpretar los datos nuevos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "design_theater",
+   "p": "aplica_a",
+   "o": "generative_ui",
+   "f": "F-475",
+   "apoyo": "24 tareas, 120 interfaces, 5 herramientas: ~25% de las justificaciones de diseño no se implementan (34% en lo funcional); 4 de 5 herramientas implementan ≤6% de los principios funcionales.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_brecha_justificacion_implementacion",
+   "p": "contradice",
+   "o": "c_generative_ui_usabilidad",
+   "f": "F-475",
+   "apoyo": "Tensión de alcance, no de resultado: F-475 mide fidelidad de implementación; F-476 mide usabilidad percibida en una sesión.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "generative_ui",
+   "p": "aumenta",
+   "o": "usabilidad_percibida_sus",
+   "f": "F-476",
+   "apoyo": "72 participantes, intra-sujetos con cuadrado latino: SUS 84,38 vs. 53,96 (d=1,04) a favor de la interfaz adaptativa generativa. Estudio del propio desarrollador.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_generative_ui_usabilidad",
+   "p": "tiene_limite",
+   "o": "sus_sesion_unica",
+   "f": "F-476",
+   "apoyo": "Prototipo bancario, sesión única, línea base determinista con SUS 'Pobre' (¿control débil?) y sin medición de uso repetido (H3).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "Pase sobre las 8 fuentes de la iteración 5 de /trinidad (diseño e innovación). Nivel: abstract en las académicas/METR; ficha en empresa, prensa y blogs."
+}
