@@ -16,6 +16,7 @@ Eficiencia: **no leas archivos grandes**; el script hace todo y el panel es HTML
    siguiente comando (`relaciones.py next --mejorar`, corregir enlace no recíproco, etc.) y pregunta.
 
 Indicadores (definiciones en `research/grafo/METRICAS.md`; titulares = cifras crudas, sin índices compuestos inventados):
+- **00 INTELIGENCIA:** nivel N0-N7 (escalera de criterios en `niveles.json`; umbrales propuestos, editables) y qué falta para el siguiente.
 - **01 SALUD:** chequeos de integridad OK/total, enlaces no recíprocos, discrepancias ledger↔fuente, huérfanos de cita, fuentes sin node.
 - **02 MADUREZ:** falsabilidad ejercida, autocorrección, reglas trazables, base A+B, relaciones leídas más allá de ficha, lectura profunda (Lobo).
 - **03 RIQUEZA:** fuentes, nodes, enlaces, fuentes del node de diseño, cobertura del grafo semántico, entidades, convergencias, tensiones.

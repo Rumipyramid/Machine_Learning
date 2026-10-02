@@ -36,3 +36,10 @@ F-n inexistentes en el ledger · wikilinks no recíprocos / rotos · nodes aisla
 2. Nunca edita nodes, ledger ni `alma.md`; solo escribe en `research/grafo/`.
 3. Lo no medible se declara en `ESTADO.md` §7. Impacto externo (uso por personas) hoy **no se mide**.
 4. Si cambia el formato de tablero de hipótesis/reglas del node de diseño, las M4/M5 caen a 0: es alarma de parser.
+
+## Nivel de inteligencia (panel `/mu`, sección 00)
+Escalera de 7 niveles (`niveles.json`): MEMORIA → ORDEN → RELACIÓN → CRITERIO → AUTOCORRECCIÓN → PROFUNDIDAD → IMPACTO.
+- **Regla:** se sube de nivel solo si se cumplen **todos** los criterios de ese nivel y de los anteriores; no hay puntaje compuesto ni pesos.
+- **Umbrales:** propuestos por el autor (juicio, no norma); se editan en `niveles.json` y el panel los lee.
+- **Qué significa:** madurez estructural y metodológica del repositorio (íntegro, conectado, con criterio, autocorregido, leído a fondo). **No** mide verdad del contenido ni capacidad cognitiva.
+- **N7 (IMPACTO)** exige medir uso/decisiones de personas; hoy no hay instrumento, así que no es alcanzable.

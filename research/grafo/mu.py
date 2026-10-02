@@ -63,6 +63,39 @@ branch = sh("git", "branch", "--show-current") if not SIN_GIT else "n/d"
 today = dt.date.today().isoformat()
 
 
+# ---------- nivel de inteligencia ----------
+NIV = json.loads((H / "niveles.json").read_text())["niveles"]
+VAL = {"fuentes": len(ledger), "nodes": len(nodes), "citadas_pct": pct(len(cit_all), len(ledger)),
+       "fallas_integridad": len(fails), "reciprocidad_pct": pct(len(M["recip"]), len(M["links"])),
+       "cobertura_sem_pct": pct(len(sem_f), len(ledger)), "entidades": len(ent), "convergencias": conv,
+       "reglas_trazables_pct": pct(des["rules_cited"], des["rules"]), "falsabilidad_pct": pct(hres, htot),
+       "base_diseno_ab_pct": pct(M["ab"](dcit), len(dcit)), "autocorreccion_pct": pct(hy.get("refutada", 0), hres),
+       "tensiones_resueltas_pct": pct(sum(1 for t in tri if t["p"] in ("contradice", "refuta") and t["id"] in {r["triple"] for r in est.get("resoluciones", [])}), tens),
+       "discrepancias_abiertas": open_disc,
+       "leidas_pct": pct(lec["abstract"] + lec["completa"], len(tri)), "uso_externo_medido": 0}
+
+
+def crit_ok(c):
+    v = VAL[c["id"]]
+    return v >= c["min"] if "min" in c else v <= c["max"]
+
+
+def crit_prog(c):  # 0..1
+    v = VAL[c["id"]]
+    if "min" in c: return min(1, v / c["min"]) if c["min"] else 1
+    return 1 if v <= c["max"] else 0
+
+
+for lv in NIV:
+    lv["ok"] = all(crit_ok(c) for c in lv["criterios"])
+    lv["prog"] = sum(crit_prog(c) for c in lv["criterios"]) / len(lv["criterios"])
+nivel = 0
+for lv in NIV:
+    if lv["ok"]: nivel += 1
+    else: break
+sig = NIV[nivel] if nivel < len(NIV) else None
+nombre_nivel = NIV[nivel - 1]["nombre"] if nivel else "ARCHIVO"
+
 # ---------- SVG ----------
 def bars(items, w=460, rowh=20, label_w=150, maxv=None, accent=None):
     """items: [(label, value, shade 0-1 | None, texto_derecha)]"""
@@ -113,6 +146,45 @@ def cols(series, w=900, h=130):
 def cell(big, label, sub="", warn=False):
     return f'<div class="c{" w" if warn else ""}"><div class="big">{big}</div><div class="lab">{E(label)}</div><div class="sub">{E(sub)}</div></div>'
 
+
+def escalera(w=900, h=170):
+    bw = w / len(NIV)
+    o = [f'<svg viewBox="0 0 {w} {h+34}" role="img">']
+    for i, lv in enumerate(NIV):
+        bh = 30 + (h - 30) * (i + 1) / len(NIV)
+        x, y = i * bw + 4, h - bh
+        o.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw-8:.1f}" height="{bh:.1f}" fill="none" stroke="var(--fg)" stroke-width="3"/>')
+        if lv["ok"] and i < nivel:
+            o.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw-8:.1f}" height="{bh:.1f}" class="fg"/>')
+        elif i == nivel:
+            fh = bh * lv["prog"]
+            o.append(f'<rect x="{x:.1f}" y="{h-fh:.1f}" width="{bw-8:.1f}" height="{fh:.1f}" class="acc"/>')
+        cls = "t b inv" if i < nivel else "t b"
+        o.append(f'<text x="{x+8:.1f}" y="{y+18:.1f}" class="{cls}">N{lv["n"]}</text>')
+        o.append(f'<text x="{x+bw/2-4:.1f}" y="{h+14}" class="t s" text-anchor="middle">{E(lv["nombre"])}</text>')
+        o.append(f'<text x="{x+bw/2-4:.1f}" y="{h+27}" class="t s" text-anchor="middle">{round(lv["prog"]*100)}%</text>')
+    o.append("</svg>")
+    return "".join(o)
+
+
+def fmtv(c):
+    v = VAL[c["id"]]
+    if c["id"] == "uso_externo_medido": return "NO MEDIDO"
+    return f"{v} / {'≥' + str(c['min']) if 'min' in c else '≤' + str(c['max'])}"
+
+
+crit_rows = ""
+for lv in NIV:
+    state = "LOGRADO" if (lv["ok"] and lv["n"] <= nivel) else ("SIGUIENTE" if lv["n"] == nivel + 1 else "BLOQUEADO")
+    for j, c in enumerate(lv["criterios"]):
+        ok = crit_ok(c)
+        lab = f"N{lv['n']} {lv['nombre']}" if j == 0 else ""
+        crit_rows += (f'<tr class="{"" if ok else "ko"}"><td>{lab}</td>'
+                      f'<td>{state if j == 0 else ""}</td><td>{E(c["label"])}</td><td class="r">{E(fmtv(c))}</td><td>{"✓" if ok else "✗"}</td>'
+                      f'<td><svg viewBox="0 0 100 10"><rect width="{100*crit_prog(c):.0f}" height="10" class="fg"/></svg></td></tr>')
+falta = ""
+if sig:
+    falta = "<ul>" + "".join(f'<li class="ko"><b>✗</b> {E(c["label"])}: {E(fmtv(c))}</li>' for c in sig["criterios"] if not crit_ok(c)) + "</ul>"
 
 # ---------- secciones ----------
 sal = [cell(f"{checks_ok}/{n_checks}", "CHEQUEOS OK", "integridad, ver lista", checks_ok < n_checks),
@@ -207,11 +279,15 @@ th{background:var(--fg);color:var(--bg);text-transform:uppercase;font-size:11px}
 ul{margin:6px 0;padding:0;list-style:none}li{border-left:8px solid var(--g3);padding:2px 8px;margin:3px 0;font-size:12px}
 li.ko{border-color:var(--acc)}li.ok{border-color:var(--fg)}li b{display:inline-block;width:1.2em}
 p.n,footer{font-size:11px;color:var(--g2);padding:8px 16px}footer{border-top:2px solid var(--fg)}
+tr.ko td{background:transparent}tr.ko td:nth-child(5){color:var(--acc);font-weight:900}
+.nv{border:4px solid var(--fg);padding:10px 14px}.big2{font:900 110px/0.9 Impact,'Arial Black',sans-serif}.big2 span{font-size:36px;color:var(--g2)}
+.lab2{font:900 26px Impact,'Arial Black',sans-serif;letter-spacing:.04em;background:var(--acc);color:#000;display:inline-block;padding:0 8px;margin-top:6px}
 code{background:var(--g3);padding:0 3px}
 """
 HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MU — panel del segundo cerebro</title><style>{CSS}</style></head><body>
 <header><h1>MU</h1><p>segundo cerebro · {today}<br>rama {E(branch)} @ {E(commit)}<br>{len(ledger)} fuentes / {len(nodes)} nodes / {len(tri)} relaciones</p></header>
+<section><h2>00 INTELIGENCIA — ¿qué nivel tiene?</h2><div class="body" style="grid-template-columns:300px 2fr 1fr"><div class="nv"><div class="big2">N{nivel}<span>/{len(NIV)}</span></div><div class="lab2">{nombre_nivel}</div><div class="sub">{E(NIV[nivel-1]["def"] if nivel else "Sin criterios cumplidos")}</div></div><div>{escalera()}</div><div><h3>PARA SUBIR A N{nivel+1 if sig else nivel}{(" — " + sig["nombre"]) if sig else ""}</h3>{falta}<p class="n">Escalera: se sube solo con TODOS los criterios del nivel. Umbrales propuestos (juicio del autor), editables en niveles.json. N7 exige medir uso externo, hoy sin instrumento: no es alcanzable aún.</p></div></div><div class="body" style="grid-template-columns:1fr"><table><tr><th>nivel</th><th>estado</th><th>criterio</th><th>valor / umbral</th><th></th><th></th></tr>{crit_rows}</table></div></section>
 <section><h2>01 SALUD — ¿está sano?</h2><div class="g">{''.join(sal)}</div><div class="body"><div><h3>CHEQUEOS</h3><ul>{checklist}</ul></div><div><h3>PENDIENTES ACCIONABLES</h3><ul>{todo_html}</ul></div></div></section>
 <section><h2>02 MADUREZ — ¿qué tan probado está?</h2><div class="g">{''.join(mad)}</div><div class="body"><div>{mad_charts}</div></div></section>
 <section><h2>03 RIQUEZA — ¿cuánto hay?</h2><div class="g">{''.join(ri)}</div><div class="body"><div>{rig_chart}</div><div>{rel_chart}</div></div></section>
@@ -221,6 +297,7 @@ HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name
 </body></html>"""
 (H / "mu.html").write_text(HTML)
 
+print(f"INTELIGENCIA N{nivel}/{len(NIV)} {nombre_nivel}" + (f" → siguiente {sig['nombre']} ({round(sig['prog']*100)}%)" if sig else ""))
 print(f"MU {today} | SALUD {checks_ok}/{n_checks} chequeos · {len(M['nonrecip'])} enlaces no recíprocos · {open_disc} discrepancias · {len(orphans)} huérfanos")
 print(f"MADUREZ falsabilidad {pct(hres,htot)}% · autocorrección {pct(hy.get('refutada',0),hres)}% · reglas trazables {pct(des['rules_cited'],des['rules'])}% · A+B {pct(rig['A']+rig['B'],len(ledger))}% · relaciones leídas más allá de ficha {pct(lec['abstract']+lec['completa'],len(tri))}%")
 print(f"RIQUEZA {len(ledger)} fuentes · {len(nodes)} nodes · {len(ent)} entidades · {len(tri)} relaciones · {conv} convergencias · {tens} tensiones · semántica {len(sem_f)}/{len(ledger)} ({pct(len(sem_f),len(ledger))}%)")
