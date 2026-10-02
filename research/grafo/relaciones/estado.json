@@ -12,6 +12,22 @@
    "triples": 28,
    "sin_aporte": [],
    "notas": "Primer lote (cerebro de diseño, 🟢A primero salvo F-262 🟡C por ser su contrapeso). Lectura vía WebSearch de abstracts; ningún texto completo."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f_ids": [
+    "F-239",
+    "F-240",
+    "F-242",
+    "F-243",
+    "F-244",
+    "F-245",
+    "F-246",
+    "F-247"
+   ],
+   "triples": 20,
+   "sin_aporte": [],
+   "notas": "Pase barato a nivel de FICHA (8 fuentes, sin búsqueda web) para ganar amplitud: grupos design thinking, XAI/sobre-confianza y UI adaptativa. Candidatas a lectura profunda: F-244/F-246 (tensión explicaciones)."
   }
  ],
  "discrepancias": [
@@ -34,6 +50,11 @@
    "fecha": "2026-10-02",
    "f": "F-238",
    "detalle": "La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados)."
+  },
+  {
+   "fecha": "2026-10-02",
+   "f": "F-239",
+   "detalle": "La ficha dice 'Muestra estudiantil' y 'N=160 en 62 proyectos de innovación con empresas'; las dos descripciones conviven y conviene aclarar cuál es la muestra. No verificado."
   }
  ]
 }

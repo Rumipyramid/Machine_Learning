@@ -9,6 +9,11 @@
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
  },
+ "aprendibilidad": {
+  "id": "aprendibilidad",
+  "nombre": "Aprendibilidad / conciencia del set de funciones",
+  "tipo": "resultado"
+ },
  "backlash_consumidor": {
   "id": "backlash_consumidor",
   "nombre": "Backlash del consumidor",
@@ -19,9 +24,29 @@
   "nombre": "Diseño efectivo → mejor desempeño de la firma",
   "tipo": "afirmacion"
  },
+ "c_dt_efecto_mediado": {
+  "id": "c_dt_efecto_mediado",
+  "nombre": "El efecto del design thinking está totalmente mediado por empoderamiento",
+  "tipo": "afirmacion"
+ },
+ "c_dt_mecanismos_no_establecidos": {
+  "id": "c_dt_mecanismos_no_establecidos",
+  "nombre": "Los mecanismos causales del design thinking no están establecidos",
+  "tipo": "afirmacion"
+ },
  "c_educacion_modera_susceptibilidad": {
   "id": "c_educacion_modera_susceptibilidad",
   "nombre": "Menor educación → mayor susceptibilidad a patterns leves",
+  "tipo": "afirmacion"
+ },
+ "c_explicaciones_mejoran_decision": {
+  "id": "c_explicaciones_mejoran_decision",
+  "nombre": "Las explicaciones mejoran la decisión humano-IA",
+  "tipo": "afirmacion"
+ },
+ "c_explicaciones_no_complementarias": {
+  "id": "c_explicaciones_no_complementarias",
+  "nombre": "Las explicaciones rara vez producen desempeño complementario",
   "tipo": "afirmacion"
  },
  "c_fracaso_85_90": {
@@ -42,6 +67,11 @@
  "c_proxies_vulnerabilidad_debiles": {
   "id": "c_proxies_vulnerabilidad_debiles",
   "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
+  "tipo": "afirmacion"
+ },
+ "c_sobreconfianza_estrategica": {
+  "id": "c_sobreconfianza_estrategica",
+  "nombre": "La sobre-confianza es estratégica (costo-beneficio), no inevitable",
   "tipo": "afirmacion"
  },
  "c_un_tercio_mejora": {
@@ -69,6 +99,16 @@
   "nombre": "Capacidad de diseño-ingeniería",
   "tipo": "constructo"
  },
+ "cognitive_forcing_functions": {
+  "id": "cognitive_forcing_functions",
+  "nombre": "Cognitive forcing functions (fricción deliberada)",
+  "tipo": "intervencion"
+ },
+ "confianza_en_ia": {
+  "id": "confianza_en_ia",
+  "nombre": "Confianza en la IA",
+  "tipo": "resultado"
+ },
  "dark_patterns": {
   "id": "dark_patterns",
   "nombre": "Dark patterns",
@@ -84,10 +124,20 @@
   "nombre": "Dark patterns leves",
   "tipo": "intervencion"
  },
+ "desempeno_complementario": {
+  "id": "desempeno_complementario",
+  "nombre": "Desempeño complementario humano-IA",
+  "tipo": "resultado"
+ },
  "desempeno_financiero_firma": {
   "id": "desempeno_financiero_firma",
   "nombre": "Desempeño financiero de la firma (ROA, ROS, crecimiento)",
   "tipo": "resultado"
+ },
+ "design_thinking": {
+  "id": "design_thinking",
+  "nombre": "Design thinking",
+  "tipo": "intervencion"
  },
  "diseno_industrial_efectivo": {
   "id": "diseno_industrial_efectivo",
@@ -99,6 +149,21 @@
   "nombre": "Usuarios mayores",
   "tipo": "poblacion"
  },
+ "empoderamiento_psicologico": {
+  "id": "empoderamiento_psicologico",
+  "nombre": "Empoderamiento psicológico",
+  "tipo": "constructo"
+ },
+ "exito_proyecto_innovacion": {
+  "id": "exito_proyecto_innovacion",
+  "nombre": "Éxito de proyectos de innovación",
+  "tipo": "resultado"
+ },
+ "explicabilidad_ia": {
+  "id": "explicabilidad_ia",
+  "nombre": "Explicabilidad de la IA (explicaciones)",
+  "tipo": "intervencion"
+ },
  "firmas_publicas_eeuu": {
   "id": "firmas_publicas_eeuu",
   "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
@@ -109,15 +174,40 @@
   "nombre": "Dato esencialmente de una sola organización",
   "tipo": "limitacion"
  },
+ "generative_ui": {
+  "id": "generative_ui",
+  "nombre": "Generative UI (interfaces generadas por LLM)",
+  "tipo": "intervencion"
+ },
  "ingresos_bing": {
   "id": "ingresos_bing",
   "nombre": "Ingresos de Bing",
   "tipo": "resultado"
  },
+ "interfaces_adaptativas": {
+  "id": "interfaces_adaptativas",
+  "nombre": "Interfaces adaptativas",
+  "tipo": "concepto"
+ },
+ "menus_adaptables": {
+  "id": "menus_adaptables",
+  "nombre": "Menús adaptables (control del usuario)",
+  "tipo": "intervencion"
+ },
+ "menus_adaptativos": {
+  "id": "menus_adaptativos",
+  "nombre": "Menús adaptativos (control del sistema)",
+  "tipo": "intervencion"
+ },
  "microsoft_exp": {
   "id": "microsoft_exp",
   "nombre": "Plataforma de experimentación de Microsoft (ExP)",
   "tipo": "organizacion"
+ },
+ "muestra_estudiantil_percibida": {
+  "id": "muestra_estudiantil_percibida",
+  "nombre": "Muestra estudiantil y outcomes percibidos",
+  "tipo": "limitacion"
  },
  "no_asignacion_aleatoria": {
   "id": "no_asignacion_aleatoria",
@@ -129,6 +219,11 @@
   "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
   "tipo": "metrica"
  },
+ "precision_adaptacion_alta": {
+  "id": "precision_adaptacion_alta",
+  "nombre": "Alta precisión de adaptación",
+  "tipo": "concepto"
+ },
  "ranking_expertos_diseno": {
   "id": "ranking_expertos_diseno",
   "nombre": "Ranking de 138 expertos en diseño industrial",
@@ -139,14 +234,39 @@
   "nombre": "Relación innovación → desempeño",
   "tipo": "afirmacion"
  },
+ "satisfaccion_carga_percibida": {
+  "id": "satisfaccion_carga_percibida",
+  "nombre": "Satisfacción y carga percibida",
+  "tipo": "resultado"
+ },
  "sesgo_halo": {
   "id": "sesgo_halo",
   "nombre": "Sesgo de halo (proxy = percepción experta)",
   "tipo": "limitacion"
  },
+ "sobreconfianza_ia": {
+  "id": "sobreconfianza_ia",
+  "nombre": "Sobre-confianza en la IA",
+  "tipo": "resultado"
+ },
  "susceptibilidad_dark_patterns": {
   "id": "susceptibilidad_dark_patterns",
   "nombre": "Susceptibilidad a dark patterns",
   "tipo": "resultado"
+ },
+ "tarea_dificil": {
+  "id": "tarea_dificil",
+  "nombre": "Tareas de decisión difíciles",
+  "tipo": "concepto"
+ },
+ "velocidad_tarea": {
+  "id": "velocidad_tarea",
+  "nombre": "Velocidad de tarea",
+  "tipo": "resultado"
+ },
+ "verificabilidad": {
+  "id": "verificabilidad",
+  "nombre": "Verificabilidad de la predicción",
+  "tipo": "constructo"
  }
 }

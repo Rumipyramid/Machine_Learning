@@ -29,3 +29,9 @@ datos en `triples.jsonl` y `entidades.json`, vocabulario CERRADO en `vocabulario
    usuario; **no** se corrigen el ledger ni los nodes sin pedirlo (eso es de `cronista`).
 6. Cierra cada lote diciendo cobertura (X de 468), qué convergió, qué tensiones aparecieron y qué no se pudo
    verificar. Pide permiso antes de proponer relaciones nuevas al vocabulario.
+
+### Dos pasadas (eficiencia de tokens)
+- **Pase de amplitud (barato):** lotes de ~8 fuentes a nivel `ficha`, sin búsqueda web; cada relación queda marcada `lectura: "ficha"`.
+- **Pase de profundidad (selectivo):** `relaciones.py next --mejorar` lista lo procesado solo a nivel ficha; léelo (abstract/texto) y
+  reemplaza con un lote nuevo `abstract`/`completa`. Prioriza fuentes que están en tensión (`contradice`) o con discrepancias abiertas.
+- Las correcciones al ledger solo se aplican si la discrepancia se verificó en la fuente y el usuario lo autorizó; se anota la corrección en la propia ficha.

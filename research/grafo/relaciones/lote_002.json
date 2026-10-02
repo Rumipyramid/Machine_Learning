@@ -1,0 +1,324 @@
+{
+ "fecha": "2026-10-02",
+ "f_ids": [
+  "F-239",
+  "F-240",
+  "F-242",
+  "F-243",
+  "F-244",
+  "F-245",
+  "F-246",
+  "F-247"
+ ],
+ "entidades": [
+  {
+   "id": "design_thinking",
+   "nombre": "Design thinking",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "empoderamiento_psicologico",
+   "nombre": "Empoderamiento psicológico",
+   "tipo": "constructo"
+  },
+  {
+   "id": "exito_proyecto_innovacion",
+   "nombre": "Éxito de proyectos de innovación",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_dt_efecto_mediado",
+   "nombre": "El efecto del design thinking está totalmente mediado por empoderamiento",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_dt_mecanismos_no_establecidos",
+   "nombre": "Los mecanismos causales del design thinking no están establecidos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "muestra_estudiantil_percibida",
+   "nombre": "Muestra estudiantil y outcomes percibidos",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "explicabilidad_ia",
+   "nombre": "Explicabilidad de la IA (explicaciones)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "confianza_en_ia",
+   "nombre": "Confianza en la IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sobreconfianza_ia",
+   "nombre": "Sobre-confianza en la IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "desempeno_complementario",
+   "nombre": "Desempeño complementario humano-IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "verificabilidad",
+   "nombre": "Verificabilidad de la predicción",
+   "tipo": "constructo"
+  },
+  {
+   "id": "c_explicaciones_no_complementarias",
+   "nombre": "Las explicaciones rara vez producen desempeño complementario",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_explicaciones_mejoran_decision",
+   "nombre": "Las explicaciones mejoran la decisión humano-IA",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "tarea_dificil",
+   "nombre": "Tareas de decisión difíciles",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_sobreconfianza_estrategica",
+   "nombre": "La sobre-confianza es estratégica (costo-beneficio), no inevitable",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "cognitive_forcing_functions",
+   "nombre": "Cognitive forcing functions (fricción deliberada)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "satisfaccion_carga_percibida",
+   "nombre": "Satisfacción y carga percibida",
+   "tipo": "resultado"
+  },
+  {
+   "id": "menus_adaptativos",
+   "nombre": "Menús adaptativos (control del sistema)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "menus_adaptables",
+   "nombre": "Menús adaptables (control del usuario)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "velocidad_tarea",
+   "nombre": "Velocidad de tarea",
+   "tipo": "resultado"
+  },
+  {
+   "id": "aprendibilidad",
+   "nombre": "Aprendibilidad / conciencia del set de funciones",
+   "tipo": "resultado"
+  },
+  {
+   "id": "precision_adaptacion_alta",
+   "nombre": "Alta precisión de adaptación",
+   "tipo": "concepto"
+  },
+  {
+   "id": "interfaces_adaptativas",
+   "nombre": "Interfaces adaptativas",
+   "tipo": "concepto"
+  },
+  {
+   "id": "generative_ui",
+   "nombre": "Generative UI (interfaces generadas por LLM)",
+   "tipo": "intervencion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "design_thinking",
+   "p": "aumenta",
+   "o": "empoderamiento_psicologico",
+   "f": "F-239",
+   "apoyo": "N=160 en 62 proyectos de innovación: el design thinking opera vía empoderamiento psicológico (práctica de motivación).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "empoderamiento_psicologico",
+   "p": "media",
+   "o": "c_dt_efecto_mediado",
+   "f": "F-239",
+   "apoyo": "El efecto sobre el desempeño del proyecto está totalmente mediado por empoderamiento psicológico.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "design_thinking",
+   "p": "aumenta",
+   "o": "exito_proyecto_innovacion",
+   "f": "F-239",
+   "apoyo": "Efecto sobre el desempeño del proyecto, pero solo a través del mediador; no como método superior de resolución de problemas.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_dt_efecto_mediado",
+   "p": "tiene_limite",
+   "o": "muestra_estudiantil_percibida",
+   "f": "F-239",
+   "apoyo": "Advertencia de la ficha: muestra estudiantil y outcomes percibidos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_dt_mecanismos_no_establecidos",
+   "p": "aplica_a",
+   "o": "design_thinking",
+   "f": "F-240",
+   "apoyo": "Revisión peer-reviewed: los mecanismos causales siguen sin establecerse; predomina evidencia conceptual y anecdótica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_dt_mecanismos_no_establecidos",
+   "p": "contradice",
+   "o": "c_dt_efecto_mediado",
+   "f": "F-240",
+   "apoyo": "Tensión posiblemente parcial, inferida de las fichas: F-239 propone una mediación en una muestra; F-240 dice que la base de mecanismos es débil en la literatura.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "explicabilidad_ia",
+   "p": "asocia_con",
+   "o": "confianza_en_ia",
+   "f": "F-242",
+   "apoyo": "Meta-análisis PRISMA de 90 estudios (2017-2024): correlación significativa pero moderada; no es el factor único ni predominante.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "verificabilidad",
+   "p": "modera",
+   "o": "c_explicaciones_no_complementarias",
+   "f": "F-243",
+   "apoyo": "Las explicaciones solo sirven en la medida en que permiten verificar la predicción, y en la mayoría de contextos no lo permiten.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "explicabilidad_ia",
+   "p": "aumenta",
+   "o": "sobreconfianza_ia",
+   "f": "F-244",
+   "apoyo": "Las explicaciones subieron la precisión cuando la IA acertaba y la bajaron cuando erraba: patrón de sobre-confianza, no de calibración.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_explicaciones_no_complementarias",
+   "p": "contradice",
+   "o": "c_explicaciones_mejoran_decision",
+   "f": "F-244",
+   "apoyo": "No produjeron desempeño complementario humano-IA en el experimento (CHI 2021).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "cognitive_forcing_functions",
+   "p": "reduce",
+   "o": "sobreconfianza_ia",
+   "f": "F-245",
+   "apoyo": "La fricción cognitiva deliberada reduce la sobre-confianza en la IA.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "cognitive_forcing_functions",
+   "p": "asocia_con",
+   "o": "satisfaccion_carga_percibida",
+   "f": "F-245",
+   "apoyo": "Costo declarado: menor satisfacción y mayor carga percibida.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "explicabilidad_ia",
+   "p": "reduce",
+   "o": "sobreconfianza_ia",
+   "f": "F-246",
+   "apoyo": "5 estudios, N=731: las explicaciones reducen la sobre-confianza y mejoran la precisión.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "tarea_dificil",
+   "p": "modera",
+   "o": "c_explicaciones_mejoran_decision",
+   "f": "F-246",
+   "apoyo": "El efecto aparece solo en tareas difíciles; en fáciles/medias no hay diferencia frente a mostrar solo la predicción.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_sobreconfianza_estrategica",
+   "p": "aplica_a",
+   "o": "sobreconfianza_ia",
+   "f": "F-246",
+   "apoyo": "La sobre-confianza es estratégica (costo-beneficio), no cognitivamente inevitable.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "menus_adaptativos",
+   "p": "reduce",
+   "o": "velocidad_tarea",
+   "f": "F-247",
+   "apoyo": "Menús estáticos significativamente más rápidos que los adaptativos (CHI 2004).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "menus_adaptables",
+   "p": "aumenta",
+   "o": "velocidad_tarea",
+   "f": "F-247",
+   "apoyo": "Los adaptables (control del usuario) superan a los adaptativos (control del sistema).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "precision_adaptacion_alta",
+   "p": "reduce",
+   "o": "aprendibilidad",
+   "f": "F-247",
+   "apoyo": "La alta precisión de adaptación reduce la conciencia del usuario sobre el set completo de funciones (IJHCS 2010).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "menus_adaptativos",
+   "p": "es_tipo_de",
+   "o": "interfaces_adaptativas",
+   "f": "F-247",
+   "apoyo": "Los menús adaptativos son el caso canónico estudiado de interfaz adaptativa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "interfaces_adaptativas",
+   "p": "aplica_a",
+   "o": "generative_ui",
+   "f": "F-247",
+   "apoyo": "Inferencia del node (regla C9/H3), no de los autores: es la literatura previa que el discurso de generative UI estaría ignorando.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-239",
+   "detalle": "La ficha dice 'Muestra estudiantil' y 'N=160 en 62 proyectos de innovación con empresas'; las dos descripciones conviven y conviene aclarar cuál es la muestra. No verificado."
+  }
+ ],
+ "notas": "Pase barato a nivel de FICHA (8 fuentes, sin búsqueda web) para ganar amplitud: grupos design thinking, XAI/sobre-confianza y UI adaptativa. Candidatas a lectura profunda: F-244/F-246 (tensión explicaciones)."
+}

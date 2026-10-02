@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Grafo semántico incremental del códice (solo stdlib).
 
-  next [-n 5]        muestra el siguiente lote de fuentes sin procesar (prioriza las del cerebro de diseño)
+  next [-n 5] [--mejorar]  siguiente lote sin procesar (prioriza cerebro de diseño); --mejorar = ya procesadas solo a nivel ficha
   add lote.json      valida y agrega un lote (entidades + relaciones con evidencia) y registra el barrido
   check              valida todo el almacén
   render             escribe RELACIONES.md, relaciones.json y relaciones.html
@@ -44,10 +44,14 @@ def procesadas(est):
     return {int(f[2:]) for b in est["barridos"] for f in b["f_ids"]}
 
 
-def cmd_next(n):
+def cmd_next(n, mejorar=False):
     rows, full, dcit = ledger()
-    _, _, est = load()
+    tri, _, est = load()
     done = procesadas(est)
+    if mejorar:  # fuentes cuyas relaciones son todas lectura=ficha: candidatas a lectura profunda
+        lec = defaultdict(set)
+        for t in tri: lec[t["f"]].add(t["lectura"])
+        done = {int(f[2:]) for f, l in lec.items() if l != {"ficha"}} | (done - {int(f[2:]) for f in lec})
     order = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4}
     pend = [f for f in rows if f not in done]
     pend.sort(key=lambda f: (f not in dcit, order.get(rows[f]["rigor"], 9), f))
@@ -171,7 +175,7 @@ def cmd_render():
 if __name__ == "__main__":
     a = sys.argv[1:]
     if not a or a[0] not in ("next", "add", "check", "render"): print(__doc__); sys.exit(1)
-    if a[0] == "next": cmd_next(int(a[a.index("-n") + 1]) if "-n" in a else 5)
+    if a[0] == "next": cmd_next(int(a[a.index("-n") + 1]) if "-n" in a else 5, "--mejorar" in a)
     elif a[0] == "add": cmd_add(a[1])
     elif a[0] == "check": cmd_check()
     else: cmd_render()
