@@ -9,7 +9,7 @@
 > Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
 > demostrado y cuáles son propuestas todavía sin respaldo?**
 > Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iter. 2: F-380 a F-398 ·
-> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · iter. 5: F-469 a F-476 · addendum 5b: F-509 a F-510).
+> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · iter. 5: F-469 a F-476 · addendum 5b: F-509 a F-510 · 5c: puente con fuentes A/B ya registradas, §2.6).
 >
 > **Lo último (iteración 4, 2026-08-02) — el alcance se amplió a 💡 innovación y la tesis pasó la
 > prueba.** La pregunta de esta corrida era la más peligrosa que el node podía hacerse: *lo que
@@ -319,6 +319,29 @@ una organización (Microsoft ExP), aunque las cifras análogas de Google/Bing/Ne
 reportes separados.*
 
 ---
+
+### 2.6 🌉 Puente de evidencia con nodes vecinos y fuentes de rigor A/B no citadas (iteración 5c, 2026-10-02)
+
+*Añadido para trazar con fuentes de rigor A/B afirmaciones que el node sostenía con material C/D/E, y para integrar los huérfanos de cita del propio dominio. Cada fuente se cita **por la función que cumple**, no como decoración; se leyeron las fichas del ledger, no los textos completos.*
+
+**Interfaces conversacionales y generativas (refuerza C9 y C15, H3, H33)**
+- La GUI clásica superó al chatbot en atractivo y satisfacción; el chatbot solo se prefirió ante cambios de plan (*Chat or Tap?*, F-250, 🟢A): contraevidencia al supuesto de que la interfaz conversacional es intrínsecamente mejor.
+- Un sistema de UI generativa/maleable se evaluó con estudio cualitativo y exactitud técnica (91,5%/96,9%) **sin línea base de desempeño del usuario** (F-248, 🟢A): ejemplo de manual de lo que C15 manda preguntar (¿qué se midió?).
+- Las explicaciones de IA aportan una ganancia **pequeña** sobre la sola predicción (meta-análisis de 2026, F-498, 🟢A) y la fricción cognitiva reduce la sobre-confianza más que la XAI convencional, con costo de aceptación (F-502, 🔵B): matiza C8 en ambos sentidos. La adulación de los modelos mejora la calificación del usuario mientras degrada su juicio (F-488, 🔵B, preprint): satisfacción no es calidad. *(Detalle en [[conducta-humano-ia|Conducta humano-IA]].)*
+- Base técnica del fenómeno que el gremio llama *sameness* estética: la homogeneización o *mode collapse* de los modelos (F-285, 🔵B).
+
+**¿Cambia el diseño la conducta a escala? (refuerza C1, C2 y C14)**
+- Corregido el sesgo de publicación, el efecto promedio del nudge se debilita (F-16, F-17, F-18, 🟢A); los megastudies son el antídoto metodológico (F-20, 🟢A) y a escala administrativa el efecto cae de ~8,7 pp en la literatura académica a ~1,4 pp (*voltage drop*, F-21, 🟢A): **es la misma lógica de C2** (promesa de acumulación, no de transformación) medida en otro campo.
+- El giro de lo individual a lo estructural (*i-frame* vs. *s-frame*, F-19, 🟢A) respalda argumentar el diseño por mecanismo de producto/sistema (C1).
+
+**Claridad y decisión (refuerza C12 con su límite)**
+- Las ayudas de decisión (IPDAS) mejoran conocimiento y reducen el conflicto decisional (F-122, 🟢A) y los arreglos de íconos con formato de frecuencia superan al porcentaje en comprensión (F-123, 🟢A): la claridad tiene respaldo experimental.
+- **Pero simplificar no es regla general:** el efecto de *choice overload* es prácticamente cero al agregar 50 estudios (F-119, 🟢A), es condicional a moderadores (F-120, 🟢A) y su estudio fundacional no replica de forma consistente (F-121, 🟢A).
+
+**Tamaño del sector, empleo y evidencia de servicio (no confundir tamaño con efecto)**
+- El diseño aporta £97,4 mil M de GVA directo en el Reino Unido (F-263, 🔵B): mide **tamaño**, no efecto causal. Las proyecciones ocupacionales de F-308/F-309 se apoyan en el marco metodológico de F-310 (🔵B).
+- Menos de la mitad de los estudios de codiseño de servicios de salud evalúa outcomes (F-252, 🟢A): el diseño de servicio es el subcampo con menos evidencia de efecto (cf. H18).
+
 
 ## 3. 📱 Pista social/mediática (gossiper)
 

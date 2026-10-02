@@ -94,8 +94,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1864,
-   "cites": 178,
+   "lines": 1887,
+   "cites": 198,
    "design": true
   },
   {
@@ -2366,7 +2366,7 @@
    "titulo": "Generative and Malleable User Interfaces with Generative and Evolving Task-Driven Data Model (CHI 2025)",
    "autor": "Cao, Y., Jiang, Y. & Xia, H.",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-249",
@@ -2384,7 +2384,7 @@
    "titulo": "Chat or Tap? Comparing Chatbots with 'Classic' Graphical User Interfaces (MobileHCI 2021)",
    "autor": "Flohr, L. A., Kalinke, S., Krüger, A. & Wallach, D. P.",
    "anio": "2021",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-251",
@@ -2402,7 +2402,7 @@
    "titulo": "Evaluating health service outcomes of public involvement in health service design: a systematic review (BMC Health Services Research)",
    "autor": "Varios",
    "anio": "2021",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-253",
@@ -2501,7 +2501,7 @@
    "titulo": "Design Economy: People, Places and Economic Value",
    "autor": "Design Council (UK) / UAL Social Design Institute / BOP Consulting",
    "anio": "2022-2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-264",
@@ -2699,7 +2699,7 @@
    "titulo": "Homogenization Problem in LLMs / Model collapse",
    "autor": "Varios (arXiv)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-286",
@@ -2924,7 +2924,7 @@
    "titulo": "Employment Projections 2024-34 Overview (Monthly Labor Review)",
    "autor": "U.S. Bureau of Labor Statistics",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-311",
@@ -5378,12 +5378,22 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-16",
+   "k": "cita"
+  },
+  {
    "s": "behavioral-design-estado-disciplina",
    "t": "F-17",
    "k": "cita"
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-17",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-17",
    "k": "cita"
   },
@@ -5394,6 +5404,11 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-18",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-18",
    "k": "cita"
   },
@@ -5413,12 +5428,22 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-19",
+   "k": "cita"
+  },
+  {
    "s": "behavioral-design-estado-disciplina",
    "t": "F-20",
    "k": "cita"
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-20",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-20",
    "k": "cita"
   },
@@ -5434,6 +5459,11 @@
   },
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-21",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-21",
    "k": "cita"
   },
@@ -5748,7 +5778,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-119",
+   "k": "cita"
+  },
+  {
    "s": "material-visual-venta-consultiva",
+   "t": "F-120",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-120",
    "k": "cita"
   },
@@ -5758,12 +5798,27 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-121",
+   "k": "cita"
+  },
+  {
    "s": "material-visual-venta-consultiva",
    "t": "F-122",
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-122",
+   "k": "cita"
+  },
+  {
    "s": "material-visual-venta-consultiva",
+   "t": "F-123",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-123",
    "k": "cita"
   },
@@ -6309,12 +6364,27 @@
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-248",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-249",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-250",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-251",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-252",
    "k": "cita"
   },
   {
@@ -6370,6 +6440,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-262",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-263",
    "k": "cita"
   },
   {
@@ -6465,6 +6540,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-284",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-285",
    "k": "cita"
   },
   {
@@ -6580,6 +6660,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-309",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-310",
    "k": "cita"
   },
   {
@@ -7343,6 +7428,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-488",
+   "k": "cita"
+  },
+  {
    "s": "conducta-humano-ia",
    "t": "F-489",
    "k": "cita"
@@ -7393,6 +7483,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-498",
+   "k": "cita"
+  },
+  {
    "s": "conducta-humano-ia",
    "t": "F-499",
    "k": "cita"
@@ -7409,6 +7504,11 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-502",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-502",
    "k": "cita"
   },
@@ -9699,7 +9799,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1864,
+   "lines": 1887,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
