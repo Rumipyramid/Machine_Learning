@@ -183,3 +183,6 @@
 | F-102 | 🔵 B | 2026-10-01 | Intuición 163 — el modelo de Singapur es la mezcla de capas: 69% además tiene seguro privado complementario |
 | F-11 | 🔵 B | 2026-10-01 | Intuición 164 — un glosario oficial vale por la obligación de explicar en la venta, no por la definición publicada |
 | F-259 | 🔵 B | 2026-10-01 | Intuición 165 — efecto de una sola empresa: tomar el piso de menor variabilidad, descontar la magnitud |
+| F-193 | 🔵 B | 2026-10-02 | Intuición 166 — un margen de 1,8% por semestre es compresión (costo médico +16,2% vs. prima +15,3%), no el nivel normal; mirar dirección y causa |
+| F-197 | 🔵 B | 2026-10-02 | Intuición 167 — un tope regulatorio de margen se mide también por el gasto evitado, no solo por el reembolso (~USD 11,8 mil M en 2012-2023) |
+| F-203 | 🔵 B | 2026-10-02 | Intuición 168 — la cifra de Vida y Salud de la ficha (EUR 2.400 M, +11,1%) no coincide con las fuentes de hoy (≈EUR 1,35-1,4 mil M, −5,1%); reconciliar antes de usarla como contraste |

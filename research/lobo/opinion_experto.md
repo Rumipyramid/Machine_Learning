@@ -5445,6 +5445,43 @@ sola organización con su propio design system, tomar el piso (menos varianza) y
 - **Leído a fondo:** 2026-10-01 (`WebSearch`; texto completo no abierto)
 - **Conexión razonada, no forzada:** node tendencias-diseno-innovacion §2.3 / H6.
 
+### 166. Un margen "delgado" por semestre puede ser compresión de un año fuerte, no el nivel normal del negocio; mirar la dirección y la causa, no solo el nivel
+F-193 (NAIC, mid-year 2025), confirmada vía `WebSearch` (el PDF aparece en los resultados; no abrí el texto
+completo). Ganancia de suscripción de USD 8,9 mil millones, margen 1,8% (vs. 2,7% un año antes, −26,5% en
+ganancia), con primas netas +15,3%, inscritos +11,6% y beneficios hospitalarios/médicos +16,2%: el loss ratio
+subió 150 pb a 88,6% y el flujo operativo cayó 45%. **Heurística:** el 1,8% no se lee como "así de delgado es
+el negocio", sino como "el costo médico creció más rápido que la prima en una industria que además crecía en
+volumen"; el dato accionable es la brecha entre crecimiento de prima y de siniestralidad. Es un semestre, no
+un ciclo: no extrapolar. Refuerza el cuidado con el que uso F-193 junto a F-203 (ver 168).
+- **Fuente:** F-193 (🔵B, regulador oficial, datos agregados)
+- **Leído a fondo:** 2026-10-02 (`WebSearch`; informe completo no abierto)
+- **Conexión razonada, no forzada:** node mecanismos-seguros-salud (ciclo de rentabilidad).
+
+### 167. Un tope regulatorio de margen se mide por lo que devuelve y por lo que evita gastar de más, no solo por el reembolso
+F-197 (CMS/Commonwealth Fund), vía `WebSearch`. Confirmé el mecanismo (80% individual/grupo pequeño, 85% grupo
+grande) y la cifra de ~USD 11,8 mil millones devueltos en 2012-2023. El análisis de Commonwealth citado en las
+búsquedas sumó, en los primeros tres años, más de USD 5 mil millones de beneficio combinando rebates **y**
+menor gasto administrativo previo: el efecto principal de la regla es de comportamiento anticipado. **Heurística:**
+al evaluar un tope de margen, el reembolso observado subestima el efecto; la mayor parte opera antes, vía diseño
+de precios y gasto. Además la cifra de la ficha es "s.f./2019" y la de 11,8 mil millones es posterior: dos
+fechas bajo un solo registro (cf. intuición 156). No hay análogo peruano verificado: instinto, no dato.
+- **Fuente:** F-197 (🔵B, regulación oficial + fundación de políticas)
+- **Leído a fondo:** 2026-10-02 (`WebSearch`; healthcare.gov/commonwealthfund no abiertos)
+- **Conexión razonada, no forzada:** node mecanismos-seguros-salud (MLR / regla 80-20).
+
+### 168. Antes de usar una cifra récord de una empresa cotizada como contraste, reconciliarla con el comunicado: dos lecturas del mismo trimestre pueden diferir de tamaño y de signo
+F-203 (Allianz, 1T 2026). La ficha del ledger dice "utilidad operativa de Vida y Salud EUR 2.400 M en el 1T 2026
+(+11,1% interanual)". Las búsquedas de hoy (comunicado oficial, financial supplement y prensa financiera) muestran
+otra cosa para el segmento Vida/Salud: resultado operativo ≈ EUR 1,35-1,4 mil M en el trimestre, **−5,1%
+interanual** y por debajo del consenso (EUR 1,42 mil M), mientras el récord corporativo vino de P&C. No pude abrir
+el comunicado para zanjarlo; la cifra de 9.000 M anual 2025 no la verifiqué. **Heurística:** una cifra "récord"
+usada como contraste (aquí contra el 1,8% de F-193) se concilia con el comunicado antes de entrar a una tesis;
+puede ser otro perímetro (p. ej. segmento distinto, no solo salud) o un error de transcripción. **Acción:**
+marqué F-203 como *por verificar* para `cronista`; mantengo en cero el peso de F-203 en tesis hasta que se reconcilie.
+- **Fuente:** F-203 (🔵B; la discrepancia baja su uso, no su nivel, hasta verificar)
+- **Leído a fondo:** 2026-10-02 (`WebSearch`; allianz.com aparece en resultados, texto no abierto)
+- **Conexión razonada, no forzada:** F-193 como contraste; node mecanismos-seguros-salud.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5498,7 +5535,7 @@ sola organización con su propio design system, tomar el piso (menos varianza) y
 - **2026-08-01 a 2026-08-30** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días. El bloque se volvió a resumir y fusionar 21 veces desde entonces, cada
   vez que el día más antiguo salía de la ventana de ~30 días (de 08-10 el 2026-09-10 hasta, más
-  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30; lista completa de fusiones
+  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30 y 09-01→2026-10-01; lista completa de fusiones
   intermedias omitida aquí por brevedad — no hay pérdida de información: el detalle de cada tesis
   creada o matizada en esta ventana vive en 🎯 Tesis vigentes y el de cada Intuición en su propia
   sección, cada una con su propia fecha de "Actualizado"/lectura.)* Veintiocho corridas.
@@ -5613,43 +5650,6 @@ sola organización con su propio design system, tomar el piso (menos varianza) y
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
   (🔵B) sin cambio de confianza en tesis.
-- **2026-09-02** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull` fast-forward 5612e59→a2807ae, trajo el commit de ayer de esta opinión y de
-  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por conteo
-  directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó la
-  corrida de ayer (2026-09-01), **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigésimo día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
-  ~3 días, ya lleva veintiún días sin correr; no lo disparo aquí porque es rutina de `cronista`, no
-  de este proceso diario). Sí corrió la rutina diaria de intuición (vigesimoctava corrida desde el
-  2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A y confirmé **134
-  filas**, de las cuales 78 ya tenían lectura profunda del Lobo — de las 56 restantes elegí 3 al
-  azar puro (Python `random.sample`, sin `--seed`): F-219 (Sitzmann 2011, Personnel Psychology —
-  meta-análisis de efectividad de simuladores de entrenamiento, ya citado en el deck Back to Basics
-  solo por sus cifras agregadas), F-90 (ya citado en /seeker 2026-07-10 sobre selección adversa
-  solo por su hallazgo de espiral de la muerte) y F-17 (Maier et al. 2022, PNAS — ya integrado a
-  fondo en tesis 6 el 2026-07-22). Las tres bloqueadas por el proxy en su URL directa
-  (onlinelibrary.wiley.com, tandfonline.com, pnas.org); reconstruidas vía búsqueda dirigida
-  (psycnet.apa.org/researchgate.net/PDF espejo de la Universidad de Colorado para F-219;
-  escholarship.org/researchgate.net/ideas.repec.org para F-90; UCL Discovery/PMC/
-  bayesianspectacles.org para F-17) que confirman detalle de mecanismo nuevo en las tres, no solo
-  el resumen de una línea ya citado. Sumé las entradas 79, 80 y 81 de Intuición acumulada: (79) el
-  ledger tenía a F-90 con autoría parafraseada ("Cutler & Zeckhauser-style") y año equivocado
-  (2014 en vez de 2015) — los autores reales son Frech & Smith; higiene de cita, mismo patrón que
-  las correcciones de F-3 y F-429, sin tocar ninguna tesis de negocio; (80) los cuatro moderadores
-  metodológicos que Sitzmann (F-219) usó para explicar la varianza entre estudios (aleatorización,
-  rigor de diseño, estatus de publicación, año) — antes de importar su cifra headline a una
-  afirmación de negocio, chequear que el caso propio caiga del lado de mayor rigor de esos
-  moderadores; (81) el hallazgo de Maier et al. (F-17) de que la evidencia de sesgo de publicación
-  fue fuerte en todos los subdominios del corpus **excepto en alimentación**, mientras que salud y
-  finanzas —los dominios que ya usa la tesis 6— tienen la corrección más fuerte, no más débil, que
-  el promedio: matiza tesis 6 sin bajar su confianza. Ninguna tesis de negocio cambió de confianza
-  numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia
-  sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 26 días de historial (2026-08-08 a hoy), dentro de la ventana de ~30 días
-  — sin podar todavía.
 - **2026-09-03** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
   `git pull` fast-forward 5612e59→3156ce7, trajo el commit de ayer de esta opinión y de
   `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por
@@ -6783,3 +6783,12 @@ sola organización con su propio design system, tomar el piso (menos varianza) y
   privado complementario: el modelo es la mezcla), 164 (el glosario SBS vale por la obligación de explicar
   en la venta) y 165 (−46,7/−69,4% en una sola empresa: tomar el piso de varianza, descontar el techo).
   Poda: 09-01 fusionado al resumen; Bitácora cubre 2026-09-02 a hoy. `fuentes_leidas_lobo.md` actualizado.
+- **2026-10-02** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`,
+  que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero fuentes nuevas** —
+  quincuagésimo primer día sin cambios; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12.
+  Sin cambios en tesis ni confianzas. **Intuición (nivel 🔵B, 44 pendientes, sorteo al azar):** F-193, F-197 y
+  F-203, leídas vía `WebSearch`. Entradas 166 (margen 1,8% = costo médico +16,2% sobre prima +15,3%, un semestre,
+  no el nivel normal), 167 (el efecto de un tope de margen opera antes del reembolso) y 168 (**alerta:** la ficha
+  de F-203 dice Vida y Salud EUR 2.400 M, +11,1%; las fuentes de hoy dicen ≈EUR 1,35-1,4 mil M, −5,1% —
+  pendiente de reconciliar por `cronista`; F-203 sin peso en tesis mientras tanto). Poda: 09-02 fusionado al
+  resumen; Bitácora cubre 2026-09-03 a hoy. `fuentes_leidas_lobo.md` actualizado.
