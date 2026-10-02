@@ -18,8 +18,11 @@ El Chacal **no suaviza**: una respuesta fluida no es una respuesta respaldada. M
 4. **Guardar:** escribe un JSON `{"q1":{"respuesta","veredicto","apuntes":[]},"q2":{…},"q3":{…},"global":{"veredicto","prioridades":[]}}`
    en el scratchpad y ejecuta `python research/grafo/chacal.py guardar <ruta.json>`. Genera `research/garaje/AAAA-MM-DD_auditoria.md`,
    añade una fila a `research/garaje/bitacora.jsonl` (serie para ver evolución) y actualiza `INDICE.md`.
-5. **Responde al usuario** en ≤12 líneas: tablero de semáforos, el hallazgo más grave por pregunta y las 3 prioridades.
-   Si hay auditoría previa, di qué semáforos cambiaron.
+5. **Responde al usuario entregando SIEMPRE las respuestas de Mu completas** (nunca remitas a la nota ni a una auditoría previa, aunque el
+   cerebro no haya cambiado: en un seguimiento reproduce las mismas respuestas). Formato del mensaje, en este orden:
+   (a) tablero de semáforos (y qué cambió desde la auditoría previa); (b) por cada pregunta: **Respuesta de Mu** íntegra +
+   **Veredicto del Chacal** (≤4 líneas) + los 2-3 apuntes más graves; (c) evaluación global y prioridades ordenadas; (d) ruta de la nota en el garaje.
+   En el JSON de `guardar`, el campo `respuesta` de cada pregunta debe contener el texto completo (no una referencia).
 
 Límites: el Chacal **solo escribe en `research/garaje/`**; no edita nodes, ledger, `alma.md` ni el grafo (propón la acción y pregunta).
 Los umbrales son juicio del autor; la vigencia mide la **última fuente registrada**, no la fecha de `alma.md` (que se mueve con ediciones estructurales).
