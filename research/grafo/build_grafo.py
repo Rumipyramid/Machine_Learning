@@ -244,6 +244,29 @@ def git_dates(slug_path):
     return (ds[-1], ds[0], len(ds)) if ds else ("n/d", "n/d", 0)
 
 
+def audit(nodes, outs, ledger, M, alma):
+    issues = []
+    dang = sorted((n, f) for n, s in M["cites"].items() for f in s if f not in ledger)
+    issues.append(("F-n citadas en un node pero **ausentes del ledger**", dang))
+    issues.append(("Wikilinks **no recíprocos** (viola regla 5)", [f"{a} → {b}" for a, b in M["nonrecip"]]))
+    broken = sorted({(a, b) for a, t in nodes.items() for b in WIKI.findall(t) if b not in nodes and b != a})
+    issues.append(("Wikilinks **rotos** (destino inexistente)", [f"{a} → {b}" for a, b in broken]))
+    iso = [n for n in nodes if not M["und"][n]]
+    issues.append(("Nodes **aislados** (sin enlaces)", iso))
+    nl = [n for n in nodes if n not in alma]
+    issues.append(("Nodes **ausentes** de la tabla de `alma.md`", nl))
+    stale = []
+    for n in nodes:
+        if n in alma:
+            gd = git_dates(f"research/_nodes/{n}.md")[1]
+            if gd != "n/d" and gd > repo_first_date() and gd > alma[n][0]:
+                stale.append(f"{n} (alma {alma[n][0]} < git {gd})")
+    issues.append((f"Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, {repo_first_date()}; antes es indeterminable)", stale))
+    outs_no = [o for o in outs if o not in {a for a, _ in M["derive"]}]
+    issues.append(("Outputs que **no citan ningún node** (viola regla 4)", outs_no))
+    return issues
+
+
 def report(nodes, outs, ledger, M, hist, tl, lobo, alma):
     today = dt.date.today().isoformat()
     L = []
@@ -331,25 +354,7 @@ def report(nodes, outs, ledger, M, hist, tl, lobo, alma):
     w(f"| M7 Lectura profunda (Lobo) | {lobo['fuentes_leidas']} fuentes leídas a fondo = {pct(lobo['fuentes_leidas'],len(ledger))} del ledger; {lobo['intuiciones']} intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |\n")
     # 5 salud
     w("## 5. Auditoría de integridad (fallas reales, sin maquillar)\n")
-    issues = []
-    dang = sorted((n, f) for n, s in M["cites"].items() for f in s if f not in ledger)
-    issues.append(("F-n citadas en un node pero **ausentes del ledger**", dang))
-    issues.append(("Wikilinks **no recíprocos** (viola regla 5)", [f"{a} → {b}" for a, b in M["nonrecip"]]))
-    broken = sorted({(a, b) for a, t in nodes.items() for b in WIKI.findall(t) if b not in nodes and b != a})
-    issues.append(("Wikilinks **rotos** (destino inexistente)", [f"{a} → {b}" for a, b in broken]))
-    iso = [n for n in nodes if not M["und"][n]]
-    issues.append(("Nodes **aislados** (sin enlaces)", iso))
-    nl = [n for n in nodes if n not in alma]
-    issues.append(("Nodes **ausentes** de la tabla de `alma.md`", nl))
-    stale = []
-    for n in nodes:
-        if n in alma:
-            gd = git_dates(f"research/_nodes/{n}.md")[1]
-            if gd != "n/d" and gd > repo_first_date() and gd > alma[n][0]:
-                stale.append(f"{n} (alma {alma[n][0]} < git {gd})")
-    issues.append((f"Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, {repo_first_date()}; antes es indeterminable)", stale))
-    outs_no = [o for o in outs if o not in {a for a, _ in M["derive"]}]
-    issues.append(("Outputs que **no citan ningún node** (viola regla 4)", outs_no))
+    issues = audit(nodes, outs, ledger, M, alma)
     for t, items in issues:
         w(f"- {'✅' if not items else '⚠️'} {t}: **{len(items)}**" + (" — " + ", ".join(map(str, items[:12])) + (" …" if len(items) > 12 else "") if items else ""))
     w("")
