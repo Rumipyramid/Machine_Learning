@@ -1,0 +1,194 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-220",
+  "F-221",
+  "F-222",
+  "F-223",
+  "F-224",
+  "F-225",
+  "F-228",
+  "F-229"
+ ],
+ "entidades": [
+  {
+   "id": "heuristicas_juicio",
+   "nombre": "Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "errores_sistematicos_juicio",
+   "nombre": "Errores sistemáticos y predecibles de juicio",
+   "tipo": "resultado"
+  },
+  {
+   "id": "teoria_prospectiva",
+   "nombre": "Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "aversion_perdida",
+   "nombre": "Aversión a la pérdida (la función de valor es más empinada para pérdidas)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "sobrepeso_prob_bajas",
+   "nombre": "Sobrevaloración de probabilidades bajas",
+   "tipo": "constructo"
+  },
+  {
+   "id": "encuadre_decision",
+   "nombre": "Encuadre de la decisión (ganancia vs. pérdida)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "inversion_preferencias",
+   "nombre": "Inversión de preferencias ante problemas equivalentes",
+   "tipo": "resultado"
+  },
+  {
+   "id": "efecto_dotacion",
+   "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "influencia_social",
+   "nombre": "Influencia social (cumplimiento y conformidad)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "metas_influencia",
+   "nombre": "Metas que explican la influencia: precisión, afiliación y autoimagen positiva",
+   "tipo": "concepto"
+  },
+  {
+   "id": "fluidez_procesamiento",
+   "nombre": "Fluidez de procesamiento (facilidad para procesar información)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "juicios_metacognitivos",
+   "nombre": "Juicios de verdad, agrado, confianza y frecuencia",
+   "tipo": "resultado"
+  },
+  {
+   "id": "carga_cognitiva",
+   "nombre": "Carga cognitiva sobre la memoria de trabajo",
+   "tipo": "constructo"
+  },
+  {
+   "id": "aprendizaje_esquemas",
+   "nombre": "Aprendizaje (adquisición de esquemas)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "segmentacion_demografica",
+   "nombre": "Segmentación demográfica en servicios financieros",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "conducta_cliente_financiero",
+   "nombre": "Conducta real del cliente de servicios financieros",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "heuristicas_juicio",
+   "p": "aumenta",
+   "o": "errores_sistematicos_juicio",
+   "f": "F-220",
+   "apoyo": "Science 1974: tres heurísticas (representatividad, disponibilidad, ajuste desde un ancla) son económicas y suelen servir, pero producen errores sistemáticos y predecibles.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ancla_numerica",
+   "p": "es_tipo_de",
+   "o": "heuristicas_juicio",
+   "f": "F-220",
+   "apoyo": "El ajuste desde un ancla se usa en predicciones numéricas cuando hay un valor de partida disponible.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "aversion_perdida",
+   "p": "parte_de",
+   "o": "teoria_prospectiva",
+   "f": "F-221",
+   "apoyo": "Econometrica 1979: el valor se asigna a ganancias y pérdidas; la función es cóncava para ganancias, convexa para pérdidas y más empinada para pérdidas. El resumen no da la proporción 2:1.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "sobrepeso_prob_bajas",
+   "p": "aumenta",
+   "o": "demanda_seguros",
+   "f": "F-221",
+   "apoyo": "Los pesos de decisión sobrevaloran las probabilidades bajas, lo que puede contribuir al atractivo del seguro y del juego.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "encuadre_decision",
+   "p": "aumenta",
+   "o": "inversion_preferencias",
+   "f": "F-222",
+   "apoyo": "Science 1981: el mismo problema presentado de distinta forma produce cambios predecibles de preferencia, con dinero hipotético y real y con vidas humanas.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "efecto_dotacion",
+   "p": "aplica_a",
+   "o": "teoria_prospectiva",
+   "f": "F-223",
+   "apoyo": "JPE 1990: la disposición a aceptar supera mucho a la disposición a pagar; con tazas repartidas al azar se comercia mucho menos de lo previsto, y no por costos de transacción.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "metas_influencia",
+   "p": "media",
+   "o": "influencia_social",
+   "f": "F-224",
+   "apoyo": "Annual Review 2004 (1997-2002): la influencia opera vía tres metas, percibir la realidad con precisión, mantener vínculos y cuidar la autoimagen, a menudo de forma sutil e inconsciente.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "fluidez_procesamiento",
+   "p": "aumenta",
+   "o": "juicios_metacognitivos",
+   "f": "F-225",
+   "apoyo": "Revisión integradora (PSPR 2009): la fluidez influye en el agrado, la verdad percibida, las estimaciones de frecuencia, la persuasión y la confianza, sea cual sea su origen.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "carga_cognitiva",
+   "p": "reduce",
+   "o": "aprendizaje_esquemas",
+   "f": "F-228",
+   "apoyo": "Cognitive Science 1988: resolver problemas por análisis medios-fines carga tanto la memoria de trabajo que interfiere con aprender esquemas; los ejemplos resueltos ayudan. Lo de 'incluso en expertos' de la ficha no se verificó.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "segmentacion_demografica",
+   "p": "asocia_con",
+   "o": "conducta_cliente_financiero",
+   "f": "F-229",
+   "apoyo": "JFSM 2011: con una muestra grande, la información demográfica aporta poco para segmentar clientes de servicios financieros; poco respaldo a la práctica habitual.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-221",
+   "detalle": "La ficha atribuye a Prospect Theory (1979) que las pérdidas pesan 'aprox. 2:1' frente a ganancias. El resumen de 1979 solo dice que la función de valor es más empinada para pérdidas; la estimación ~2,25 viene de Tversky y Kahneman (1992), 'Advances in prospect theory'. Es una cifra mal atribuida, no inventada."
+  }
+ ],
+ "notas": "Lote de amplitud con resúmenes oficiales: fundamentos conductuales del Playbook del Asesor (anclaje, aversión a la pérdida, encuadre, dotación, prueba social, fluidez, carga cognitiva) y segmentación en servicios financieros."
+}

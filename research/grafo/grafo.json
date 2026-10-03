@@ -2399,8 +2399,8 @@
    "id": "F-252",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Evaluating health service outcomes of public involvement in health service design: a systematic review (BMC Health Services Research)",
-   "autor": "Varios",
+   "titulo": "Evaluating health service outcomes of public involvement in health service design in high-income countries: a systematic review (BMC Health ",
+   "autor": "Lloyd, N.; Kenny, A. & Hyett, N. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro decía 'Varios'",
    "anio": "2021",
    "huerfana": false
   },
@@ -3138,17 +3138,17 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Do consumers perceive and trust health insurers within a system of managed competition as prudent buyers of care? (Health Economics, Policy ",
-   "autor": "Autores no especificados en el resumen",
-   "anio": "s.f.",
+   "autor": "Stolper, K. C. F.; Yildirim, I.; Boonen, L. H. H. M.; Schut, F. T. & Varkevisser, M. (Erasmus University Rotterdam) — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro decía 'Autores no especificados en el resumen' y año 's.f.'",
+   "anio": "2024",
    "huerfana": false
   },
   {
    "id": "F-335",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "A Measure of Trust in Insurers (Health Services Research)",
-   "autor": "Zheng, B. et al.",
-   "anio": "~2002",
+   "titulo": "Development of a scale to measure patients' trust in health insurers (Health Services Research 37(1):187-202)",
+   "autor": "Zheng, B.; Hall, M. A.; Dugan, E.; Kidd, K. E. & Levine, D. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro decía 'Zheng, B. et al.', '~2002' y el título 'A Measure of Trust in Insurers'",
+   "anio": "2002",
    "huerfana": false
   },
   {
@@ -10390,7 +10390,7 @@
      "cites": 272
     },
     "fecha": "2026-10-03",
-    "commit": "db64753",
+    "commit": "2b58d80",
     "fuente": "git"
    }
   ],

@@ -325,6 +325,36 @@
     }
    ],
    "notas": "Pase de profundidad: evaluación de textos y chatbots con LLM, anclaje de precio y publicidad engañosa. Resúmenes oficiales vía búsqueda. F-154 sin relaciones (solo autoría)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-220",
+    "F-221",
+    "F-222",
+    "F-223",
+    "F-224",
+    "F-225",
+    "F-228",
+    "F-229"
+   ],
+   "triples": 10,
+   "sin_aporte": [],
+   "notas": "Lote de amplitud con resúmenes oficiales: fundamentos conductuales del Playbook del Asesor (anclaje, aversión a la pérdida, encuadre, dotación, prueba social, fluidez, carga cognitiva) y segmentación en servicios financieros."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-230",
+    "F-248",
+    "F-252",
+    "F-334",
+    "F-335",
+    "F-337"
+   ],
+   "triples": 7,
+   "sin_aporte": [],
+   "notas": "Lote de amplitud (fuentes nuevas) con resúmenes oficiales. F-250 se dejó fuera: solo se ubicó la autoría, no los resultados."
   }
  ],
  "discrepancias": [
@@ -488,6 +518,30 @@
    "detalle": "La ficha dice '(autor vía ResearchGate / revista académica)' y año 's.f.'. La autora es Simona Romani; Journal of Product & Brand Management 15(2/3):130-138, 2006.",
    "estado": "cerrada",
    "resolucion": "Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-221",
+   "detalle": "La ficha atribuye a Prospect Theory (1979) que las pérdidas pesan 'aprox. 2:1' frente a ganancias. El resumen de 1979 solo dice que la función de valor es más empinada para pérdidas; la estimación ~2,25 viene de Tversky y Kahneman (1992), 'Advances in prospect theory'. Es una cifra mal atribuida, no inventada."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-252",
+   "detalle": "Autoría 'Varios' → Lloyd, Kenny y Hyett (2021).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida en el ledger el 2026-10-03 (regla permanente de datos bibliográficos)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-335",
+   "detalle": "Autoría 'Zheng, B. et al.', año '~2002' y título 'A Measure of Trust in Insurers' → Zheng, Hall, Dugan, Kidd y Levine (2002), 'Development of a scale to measure patients' trust in health insurers'.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-334",
+   "detalle": "Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales."
   }
  ],
  "resoluciones": [

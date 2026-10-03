@@ -39,6 +39,11 @@
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
  },
+ "ajuste_ui_usuario": {
+  "id": "ajuste_ui_usuario",
+  "nombre": "Capacidad del usuario de ajustar la interfaz generada a sus necesidades",
+  "tipo": "resultado"
+ },
  "alfabetizacion_ia": {
   "id": "alfabetizacion_ia",
   "nombre": "Alfabetización en IA (intervención ligera)",
@@ -54,6 +59,11 @@
   "nombre": "Ambidestreza organizacional",
   "tipo": "constructo"
  },
+ "amenaza_libertad": {
+  "id": "amenaza_libertad",
+  "nombre": "Amenaza percibida a la libertad y enojo (reactancia)",
+  "tipo": "resultado"
+ },
  "ancla_numerica": {
   "id": "ancla_numerica",
   "nombre": "Número ancla visible antes de juzgar un precio",
@@ -62,6 +72,11 @@
  "aprendibilidad": {
   "id": "aprendibilidad",
   "nombre": "Aprendibilidad / conciencia del set de funciones",
+  "tipo": "resultado"
+ },
+ "aprendizaje_esquemas": {
+  "id": "aprendizaje_esquemas",
+  "nombre": "Aprendizaje (adquisición de esquemas)",
   "tipo": "resultado"
  },
  "asistencia_ia_razonamiento": {
@@ -83,6 +98,11 @@
   "id": "automedicacion_no_responsable",
   "nombre": "Automedicación no responsable (Perú)",
   "tipo": "resultado"
+ },
+ "aversion_perdida": {
+  "id": "aversion_perdida",
+  "nombre": "Aversión a la pérdida (la función de valor es más empinada para pérdidas)",
+  "tipo": "constructo"
  },
  "ayudas_decision": {
   "id": "ayudas_decision",
@@ -384,6 +404,11 @@
   "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
   "tipo": "limitacion"
  },
+ "calidad_motivacion": {
+  "id": "calidad_motivacion",
+  "nombre": "Calidad de la motivación, desempeño y bienestar al perseguir metas",
+  "tipo": "resultado"
+ },
  "calidad_texto_generado": {
   "id": "calidad_texto_generado",
   "nombre": "Calidad de textos generados por IA según juicio humano",
@@ -414,6 +439,11 @@
   "nombre": "Capacidad de diseño-ingeniería",
   "tipo": "constructo"
  },
+ "carga_cognitiva": {
+  "id": "carga_cognitiva",
+  "nombre": "Carga cognitiva sobre la memoria de trabajo",
+  "tipo": "constructo"
+ },
  "carga_prueba_aseguradora": {
   "id": "carga_prueba_aseguradora",
   "nombre": "La aseguradora debe acreditar que explicó la exclusión",
@@ -433,6 +463,11 @@
   "id": "coaseguro",
   "nombre": "Coaseguro y tarifas variables",
   "tipo": "concepto"
+ },
+ "codiseno_servicios_salud": {
+  "id": "codiseno_servicios_salud",
+  "nombre": "Participación del público en el diseño de servicios de salud",
+  "tipo": "intervencion"
  },
  "cognitive_forcing_functions": {
   "id": "cognitive_forcing_functions",
@@ -454,6 +489,11 @@
   "nombre": "Comprensión del plan de salud",
   "tipo": "resultado"
  },
+ "conducta_cliente_financiero": {
+  "id": "conducta_cliente_financiero",
+  "nombre": "Conducta real del cliente de servicios financieros",
+  "tipo": "resultado"
+ },
  "conducta_salud": {
   "id": "conducta_salud",
   "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
@@ -463,6 +503,11 @@
   "id": "conductas_riesgo_manejo",
   "nombre": "Conductas de riesgo al manejar (velocidad, frenado, aceleración)",
   "tipo": "resultado"
+ },
+ "confianza_aseguradora": {
+  "id": "confianza_aseguradora",
+  "nombre": "Confianza del consumidor en la aseguradora",
+  "tipo": "constructo"
  },
  "confianza_en_ia": {
   "id": "confianza_en_ia",
@@ -552,6 +597,11 @@
  "dark_patterns_leves": {
   "id": "dark_patterns_leves",
   "nombre": "Dark patterns leves",
+  "tipo": "intervencion"
+ },
+ "default_nudge": {
+  "id": "default_nudge",
+  "nombre": "Opción por defecto (default)",
   "tipo": "intervencion"
  },
  "demanda_seguros": {
@@ -649,6 +699,11 @@
   "nombre": "Cambio de conducta objetivo",
   "tipo": "resultado"
  },
+ "efecto_dotacion": {
+  "id": "efecto_dotacion",
+  "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
+  "tipo": "constructo"
+ },
  "efecto_nudge_academico": {
   "id": "efecto_nudge_academico",
   "nombre": "Efecto de nudges en papers académicos (~8,7 pp)",
@@ -658,6 +713,11 @@
   "id": "efecto_nudge_escala",
   "nombre": "Efecto de nudges a escala (~1,4 pp)",
   "tipo": "resultado"
+ },
+ "emisor_experto": {
+  "id": "emisor_experto",
+  "nombre": "Presentar al emisor como experto",
+  "tipo": "intervencion"
  },
  "empleo_disenadores_graficos": {
   "id": "empleo_disenadores_graficos",
@@ -674,6 +734,21 @@
   "nombre": "Empoderamiento psicológico",
   "tipo": "constructo"
  },
+ "encuadre_decision": {
+  "id": "encuadre_decision",
+  "nombre": "Encuadre de la decisión (ganancia vs. pérdida)",
+  "tipo": "intervencion"
+ },
+ "errores_sistematicos_juicio": {
+  "id": "errores_sistematicos_juicio",
+  "nombre": "Errores sistemáticos y predecibles de juicio",
+  "tipo": "resultado"
+ },
+ "escala_confianza_aseguradora": {
+  "id": "escala_confianza_aseguradora",
+  "nombre": "Escala de confianza en aseguradoras de salud (Zheng et al. 2002)",
+  "tipo": "metrica"
+ },
  "estructura_decision": {
   "id": "estructura_decision",
   "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
@@ -688,6 +763,11 @@
   "id": "european_accessibility_act",
   "nombre": "European Accessibility Act (exigible 28-jun-2025)",
   "tipo": "intervencion"
+ },
+ "evaluacion_resultados_codiseno": {
+  "id": "evaluacion_resultados_codiseno",
+  "nombre": "Evaluación de resultados del codiseño",
+  "tipo": "metrica"
  },
  "exito_producto_nuevo": {
   "id": "exito_producto_nuevo",
@@ -733,6 +813,11 @@
   "id": "firmas_publicas_eeuu",
   "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
   "tipo": "poblacion"
+ },
+ "fluidez_procesamiento": {
+  "id": "fluidez_procesamiento",
+  "nombre": "Fluidez de procesamiento (facilidad para procesar información)",
+  "tipo": "constructo"
  },
  "fluidez_tarea": {
   "id": "fluidez_tarea",
@@ -794,6 +879,11 @@
   "nombre": "Heterogeneidad del efecto de nudges por dominio y técnica",
   "tipo": "concepto"
  },
+ "heuristicas_juicio": {
+  "id": "heuristicas_juicio",
+  "nombre": "Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla)",
+  "tipo": "concepto"
+ },
  "hu_2025": {
   "id": "hu_2025",
   "nombre": "Meta-análisis de segundo orden de Hu et al. (JBDM 2025)",
@@ -829,6 +919,16 @@
   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
   "tipo": "intervencion"
  },
+ "influencia_social": {
+  "id": "influencia_social",
+  "nombre": "Influencia social (cumplimiento y conformidad)",
+  "tipo": "concepto"
+ },
+ "info_insuficiente_aseguradora": {
+  "id": "info_insuficiente_aseguradora",
+  "nombre": "Información insuficiente para juzgar a la aseguradora",
+  "tipo": "concepto"
+ },
  "informacion_decision": {
   "id": "informacion_decision",
   "nombre": "Nudges de información/asistencia a la decisión",
@@ -859,6 +959,11 @@
   "nombre": "Inversión en I+D",
   "tipo": "intervencion"
  },
+ "inversion_preferencias": {
+  "id": "inversion_preferencias",
+  "nombre": "Inversión de preferencias ante problemas equivalentes",
+  "tipo": "resultado"
+ },
  "ipg_venta_rga": {
   "id": "ipg_venta_rga",
   "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
@@ -872,6 +977,11 @@
  "juicio_precio": {
   "id": "juicio_precio",
   "nombre": "Juicio del consumidor sobre precio o valor",
+  "tipo": "resultado"
+ },
+ "juicios_metacognitivos": {
+  "id": "juicios_metacognitivos",
+  "nombre": "Juicios de verdad, agrado, confianza y frecuencia",
   "tipo": "resultado"
  },
  "litigios_adulacion": {
@@ -964,6 +1074,11 @@
   "nombre": "Meta-análisis de Mertens et al. (PNAS 2022)",
   "tipo": "estudio"
  },
+ "metas_influencia": {
+  "id": "metas_influencia",
+  "nombre": "Metas que explican la influencia: precisión, afiliación y autoimagen positiva",
+  "tipo": "concepto"
+ },
  "microsoft_exp": {
   "id": "microsoft_exp",
   "nombre": "Plataforma de experimentación de Microsoft (ExP)",
@@ -972,6 +1087,11 @@
  "microtargeting_llm": {
   "id": "microtargeting_llm",
   "nombre": "Microtargeting con LLM (mensajes personalizados)",
+  "tipo": "intervencion"
+ },
+ "modelo_datos_tarea": {
+  "id": "modelo_datos_tarea",
+  "nombre": "UI generada desde un modelo de datos de la tarea (no desde código)",
   "tipo": "intervencion"
  },
  "modelo_farmacias_triage": {
@@ -998,6 +1118,11 @@
   "id": "ndr_figma",
   "nombre": "NDR de Figma",
   "tipo": "metrica"
+ },
+ "necesidades_psicologicas": {
+  "id": "necesidades_psicologicas",
+  "nombre": "Necesidades psicológicas básicas: competencia, autonomía y vínculo",
+  "tipo": "constructo"
  },
  "no_asignacion_aleatoria": {
   "id": "no_asignacion_aleatoria",
@@ -1264,6 +1389,11 @@
   "nombre": "Meta-análisis de sobrecarga de elección de Scheibehenne et al. (JCR 2010)",
   "tipo": "estudio"
  },
+ "segmentacion_demografica": {
+  "id": "segmentacion_demografica",
+  "nombre": "Segmentación demográfica en servicios financieros",
+  "tipo": "intervencion"
+ },
  "sesgo_automatizacion": {
   "id": "sesgo_automatizacion",
   "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
@@ -1314,6 +1444,11 @@
   "nombre": "Sobre-confianza en la IA",
   "tipo": "resultado"
  },
+ "sobrepeso_prob_bajas": {
+  "id": "sobrepeso_prob_bajas",
+  "nombre": "Sobrevaloración de probabilidades bajas",
+  "tipo": "constructo"
+ },
  "solo_preferencia": {
   "id": "solo_preferencia",
   "nombre": "Mide preferencia, no desempeño ni aprendibilidad longitudinal",
@@ -1347,6 +1482,11 @@
  "tareas_sentimiento_lsat": {
   "id": "tareas_sentimiento_lsat",
   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
+  "tipo": "concepto"
+ },
+ "teoria_prospectiva": {
+  "id": "teoria_prospectiva",
+  "nombre": "Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión)",
   "tipo": "concepto"
  },
  "tiempo_entrega": {
