@@ -137,3 +137,4 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de calidad de agentes conversacionales de IA]] — la adulación (F-488) es un problema de calidad que ese node debería medir: satisfacción alta con juicio degradado.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — el UBI/telemática (F-442) como caso causal de cambio de conducta en seguros, con el matiz del programa simulado.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros (Mundo vs. Perú)]] — la presión regulatoria sobre explicación previa y reclamos (§3.9) es el contexto donde HC1/HC6 tendrían que probarse.
+- [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — el marco más amplio en que se inscribe este node (cinco frentes); aporta lo nuevo de 2025-2026 en persuasión (F-585, F-586, F-589) y compañía (F-587, F-588).

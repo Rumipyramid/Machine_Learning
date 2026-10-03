@@ -107,12 +107,12 @@ def grafo(fuentes):
 
 
 def hipotesis():
-    """Filas de los tableros de hipótesis (H del node de diseño, HC del node de conducta humano-IA)."""
+    """Filas de los tableros de hipótesis (H de diseño, HC de conducta humano-IA, PE de convergencia psico-econ-IA)."""
     out = []
-    for stem in ("tendencias-diseno-innovacion", "conducta-humano-ia"):
+    for stem in ("tendencias-diseno-innovacion", "conducta-humano-ia", "convergencia-psicologia-economia-ia"):
         text = (NODES / f"{stem}.md").read_text(encoding="utf-8")
         for l in text.splitlines():
-            m = re.match(r"\|\s*\*\*(HC?\d+)\*\*\s*\|(.*?)\|(.*?)\|(.*?)\|", l)
+            m = re.match(r"\|\s*\*\*((?:HC?|PE)\d+)\*\*\s*\|(.*?)\|(.*?)\|(.*?)\|", l)
             if not m:
                 continue
             st = m.group(3)
