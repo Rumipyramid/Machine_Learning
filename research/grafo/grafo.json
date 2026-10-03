@@ -5004,6 +5004,15 @@
    "autor": "Marmer, M., Herrmann, B. et al. (Startup Genome Project)",
    "anio": "2011",
    "huerfana": false
+  },
+  {
+   "id": "F-542",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "On the conversational persuasiveness of GPT-4 (Nature Human Behaviour; preprint arXiv 2024)",
+   "autor": "Salvi, F.; Horta Ribeiro, M.; Gallotti, R. & West, R.",
+   "anio": "2025",
+   "huerfana": true
   }
  ],
  "edges": [
@@ -8441,11 +8450,11 @@
    },
    {
     "fecha": "2026-10-03",
-    "nuevas": 26,
-    "acumuladas": 541,
-    "AB": 16,
+    "nuevas": 27,
+    "acumuladas": 542,
+    "AB": 17,
     "rigor": {
-     "A": 6,
+     "A": 7,
      "B": 10,
      "C": 7,
      "D": 2,
@@ -10327,12 +10336,12 @@
     "fuente": "git"
    },
    {
-    "fuentes": 536,
+    "fuentes": 541,
     "rigor": {
-     "B": 100,
-     "A": 144,
-     "C": 126,
-     "D": 122,
+     "B": 101,
+     "A": 145,
+     "C": 128,
+     "D": 123,
      "?": 14,
      "E": 30
     },
@@ -10340,12 +10349,12 @@
     "outputs": 4,
     "wikilinks": 84,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 431,
+    "fuentes_citadas_en_nodes": 436,
     "diseno": {
      "hyp": {
-      "abierta": 16,
+      "abierta": 15,
       "parcial": 14,
-      "refutada": 3,
+      "refutada": 4,
       "respaldada": 2
      },
      "rules": 22,
@@ -10357,11 +10366,11 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1985,
-     "cites": 267
+     "lines": 1999,
+     "cites": 272
     },
     "fecha": "2026-10-03",
-    "commit": "998071b",
+    "commit": "18e1e56",
     "fuente": "git"
    }
   ],

@@ -94,6 +94,11 @@
   "nombre": "Brecha percepción–realidad (autoestimación vs. desempeño)",
   "tipo": "concepto"
  },
+ "c_adulacion_indistinguible": {
+  "id": "c_adulacion_indistinguible",
+  "nombre": "Los usuarios no distinguen una IA aduladora de una que no lo es",
+  "tipo": "afirmacion"
+ },
  "c_ambidestreza_mejora_desempeno": {
   "id": "c_ambidestreza_mejora_desempeno",
   "nombre": "La ambidestreza mejora el desempeño",
@@ -289,6 +294,11 @@
   "nombre": "La penetración peruana oscila 2,0%-2,1% del PBI",
   "tipo": "afirmacion"
  },
+ "c_personalizacion_aumenta_persuasion": {
+  "id": "c_personalizacion_aumenta_persuasion",
+  "nombre": "Personalizar con datos de la persona aumenta la persuasión de la IA",
+  "tipo": "afirmacion"
+ },
  "c_persuasion_concentrada": {
   "id": "c_persuasion_concentrada",
   "nombre": "La persuasión de la IA se concentra en personas susceptibles",
@@ -454,6 +464,11 @@
   "nombre": "Monetización de créditos de IA de Figma",
   "tipo": "intervencion"
  },
+ "creencias_pesimistas": {
+  "id": "creencias_pesimistas",
+  "nombre": "Creencias pesimistas sobre lo que se ganaría al cambiar",
+  "tipo": "constructo"
+ },
  "dark_patterns": {
   "id": "dark_patterns",
   "nombre": "Dark patterns",
@@ -513,6 +528,11 @@
   "id": "determinantes_automedicacion",
   "nombre": "Determinantes de la automedicación",
   "tipo": "constructo"
+ },
+ "dictamen_salud_2025": {
+  "id": "dictamen_salud_2025",
+  "nombre": "Dictamen conjunto de la Comisión de Salud (PL 2522/2021 y 8488/2024), dic-2025",
+  "tipo": "intervencion"
  },
  "disciplina_precios_salud": {
   "id": "disciplina_precios_salud",
@@ -653,6 +673,11 @@
   "id": "guidance_figma_q2",
   "nombre": "Guía de Figma Q2: US$348-350M (~40%)",
   "tipo": "concepto"
+ },
+ "hackenburg_margetts_2024": {
+  "id": "hackenburg_margetts_2024",
+  "nombre": "Experimento de microtargeting de Hackenburg y Margetts (PNAS 2024)",
+  "tipo": "estudio"
  },
  "herramientas_ia_generativas": {
   "id": "herramientas_ia_generativas",
@@ -894,6 +919,11 @@
   "nombre": "Persistencia del efecto tras terminar la intervención",
   "tipo": "resultado"
  },
+ "personalizacion_conversacional": {
+  "id": "personalizacion_conversacional",
+  "nombre": "Personalización en conversación (la IA conoce datos del interlocutor)",
+  "tipo": "intervencion"
+ },
  "personas_susceptibles": {
   "id": "personas_susceptibles",
   "nombre": "Personas psicológicamente susceptibles",
@@ -964,6 +994,11 @@
   "nombre": "Ranking de 138 expertos en diseño industrial",
   "tipo": "metrica"
  },
+ "rasgos_susceptibilidad": {
+  "id": "rasgos_susceptibilidad",
+  "nombre": "Rasgos de susceptibilidad: confianza en LLMs, amabilidad, extraversión, necesidad de cognición",
+  "tipo": "constructo"
+ },
  "ratio_combinado_mapfre_peru": {
   "id": "ratio_combinado_mapfre_peru",
   "nombre": "Ratio combinado de Mapfre Perú (102,4% en el 1T 2026)",
@@ -1028,6 +1063,11 @@
   "id": "salida_cpo_anthropic",
   "nombre": "Salida del CPO de Anthropic de la junta de Figma (14-abr-2026)",
   "tipo": "concepto"
+ },
+ "salvi_2025": {
+  "id": "salvi_2025",
+  "nombre": "Debates con GPT-4 de Salvi et al. (Nature Human Behaviour 2025)",
+  "tipo": "estudio"
  },
  "satisfaccion_carga_percibida": {
   "id": "satisfaccion_carga_percibida",

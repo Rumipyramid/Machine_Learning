@@ -8,14 +8,14 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **100 de 536** (18.7%) |
-| …del cerebro de diseño (citadas en el node) | 69 de 267 |
-| …por rigor | A 54/144 · B 22/100 · C 20/126 · D 3/122 · E 1/30 |
-| Barridos | 11 |
-| Entidades | 231 |
-| Relaciones | 189 |
-| Nivel de lectura | ficha 131 · abstract 58 |
-| Fuerza de las afirmaciones | descriptiva 66 · causal 53 · observacional 38 · teorica 32 |
+| Fuentes procesadas | **101 de 542** (18.6%) |
+| …del cerebro de diseño (citadas en el node) | 69 de 272 |
+| …por rigor | A 55/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
+| Barridos | 13 |
+| Entidades | 239 |
+| Relaciones | 196 |
+| Nivel de lectura | ficha 124 · abstract 72 |
+| Fuerza de las afirmaciones | descriptiva 67 · causal 58 · observacional 39 · teorica 32 |
 
 ## 2. Relaciones por tipo
 
@@ -23,27 +23,28 @@
 |---|---|---|
 | `asocia_con` | efecto | 35 |
 | `aumenta` | efecto | 32 |
-| `aplica_a` | estructura | 27 |
+| `aplica_a` | estructura | 28 |
 | `reduce` | efecto | 24 |
 | `tiene_limite` | metodo | 17 |
 | `contradice` | evidencia | 14 |
-| `modera` | efecto | 9 |
-| `respalda` | evidencia | 7 |
+| `modera` | efecto | 10 |
+| `respalda` | evidencia | 9 |
 | `es_tipo_de` | estructura | 6 |
 | `origina_en` | metodo | 6 |
 | `mide` | metodo | 5 |
-| `refuta` | evidencia | 4 |
-| `media` | efecto | 3 |
+| `refuta` | evidencia | 5 |
+| `media` | efecto | 4 |
+| `parte_de` | estructura | 1 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
 | Entidad | Fuentes |
 |---|---|
 | Generative UI (interfaces generadas por LLM) | F-247, F-256, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
+| Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542 |
 | Sobre-confianza en la IA | F-244, F-245, F-246, F-502 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
 | Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501 |
-| Cambio de actitud de las personas | F-489, F-490, F-494, F-499 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-429, F-470 |
@@ -86,14 +87,15 @@
 | Pensamiento crítico | F-492, F-493 |
 | Alfabetización en IA (intervención ligera) | F-494, F-500 |
 | Litigios y cartas de fiscales por adulación de chatbots | F-496, F-497 |
-| Comprensión del plan de salud | F-6, F-9 |
 | Divulgación clara y saliente de un producto financiero | F-9, F-10 |
+| Los mandatos de 'explicar mejor' fracasan sistemáticamente | F-9, F-10 |
 | Adopción de la telemedicina en Perú | F-40, F-41 |
 | Marcos de evaluación de efectividad e implementación | F-53, F-54 |
 | Modelo de triage con IA y farmacias (Perú) | F-53, F-55 |
 | Diseño híbrido efectividad-implementación tipo 2 | F-54, F-55 |
 | Cambio de conducta objetivo | F-16, F-20 |
 | Sesgo de publicación | F-16, F-17 |
+| Personalizar con datos de la persona aumenta la persuasión de la IA | F-499, F-542 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -133,9 +135,9 @@
 - **Penetración ~2,01% (estimación al 2T 2026)** —contradice→ **Penetración ~2,08% (cifra del node)** (F-483, descriptiva) · **estado: alcance_distinto**
   - Cifras distintas para el mismo indicador; probable diferencia de fecha o definición (tercera cifra de ~2,5% no atribuida). Sin verificar con la SBS.
   - *Resolución (2026-10-02):* Probable diferencia de fecha y definición entre 2,01% (estimación al 2T 2026), ~2,08% (node) y ~2,5% (fuente no identificada). Sin verificar con la SBS; citar siempre fuente, fecha y definición.
-- **La persuasión de la IA se concentra en personas susceptibles** —contradice→ **Microtargeting con LLM (mensajes personalizados)** (F-499, teorica) · **estado: en_disputa**
+- **La persuasión de la IA se concentra en personas susceptibles** —contradice→ **Microtargeting con LLM (mensajes personalizados)** (F-499, teorica) · **estado: alcance_distinto**
   - Tensión con F-491: uno halla un gran aumento con datos demográficos y concentración en susceptibles; el otro, ninguna ventaja del microtargeting. Pueden diferir en diseño (susceptibilidad vs. personalización) y en que F-491 es preprint.
-  - *Resolución (2026-10-02):* F-491 (preprint, 820 personas) halla un gran aumento con datos demográficos y concentración en susceptibles; F-499 (PNAS, preregistrado) no halla ventaja del microtargeting. Puede ser susceptibilidad ≠ personalización, pero hoy no está resuelto: RP4 no se promueve.
+  - *Resolución (2026-10-03):* Re-lectura 2026-10-03: la tensión se armó sobre una cifra mal atribuida. F-491 no personaliza por datos demográficos: halla concentración por rasgos psicológicos. La ventaja de la personalización (+81%) es de Salvi (F-542), en debate interactivo contra humanos; Hackenburg y Margetts (F-499) no la hallan en mensajes únicos frente a un mensaje genérico. Son diseños distintos.
 - **Las explicaciones de IA ayudan solo en tareas difíciles (RP1/HC1)** —contradice→ **Explicaciones frente a la sola predicción de la IA** (F-498, teorica) · **estado: matizada**
   - Contraevidencia parcial a RP1: el efecto de las explicaciones existe en general (pequeño), no solo en tareas difíciles.
   - *Resolución (2026-10-02):* El meta-análisis de 2026 (F-498) halla un efecto pequeño pero significativo de las explicaciones sobre la sola predicción, no limitado a tareas difíciles. RP1 se reformula: efecto pequeño y condicional, no nulo.
@@ -151,21 +153,24 @@
 - **Meta-análisis de segundo orden de Hu et al. (JBDM 2025)** —refuta→ **Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)** (F-18, observacional) · **estado: refutacion_directa**
   - 14 meta-análisis, 1.638 estudios, ~30 M de participantes: d=0,27 (IC95% 0,16-0,38) que cae a d=0,004 tras ajustar por sesgo de publicación.
   - *Resolución (2026-10-03):* Segundo orden (14 meta-análisis): d=0,27 → 0,004 tras ajustar. Converge con T-179 por un método distinto. Ojo: los insumos son de calidad baja o críticamente baja.
+- **Experimento de microtargeting de Hackenburg y Margetts (PNAS 2024)** —refuta→ **Personalizar con datos de la persona aumenta la persuasión de la IA** (F-499, causal) · **estado: alcance_distinto**
+  - 8.587 participantes, 4 temas: el mensaje microtargeteado no superó al genérico (p=0,23); en sanciones a China y OTAN el genérico fue mejor (−4,6 y −2,8 pp). Mejor mensaje genérico: +6,2 pp.
+  - *Resolución (2026-10-03):* Salvi (F-542) mide la personalización en un debate interactivo de varias rondas contra persuasores humanos; Hackenburg y Margetts (F-499) la miden en un único mensaje escrito frente a un mensaje genérico de la misma IA. La personalización puede ayudar en conversación y no en un mensaje suelto. Para decidir haría falta un estudio que cruce ambos factores.
 
 ## 5. Hubs (entidades más conectadas)
 
 | Entidad | Tipo | Grado | Fuentes |
 |---|---|---|---|
 | Generative UI (interfaces generadas por LLM) | intervencion | 9 | 9 |
-| Adulación de la IA (sycophancy) | intervencion | 6 | 4 |
+| Adulación de la IA (sycophancy) | intervencion | 7 | 4 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | afirmacion | 6 | 3 |
 | Susceptibilidad a dark patterns | resultado | 5 | 2 |
 | Sobre-confianza en la IA | resultado | 5 | 4 |
+| Cambio de actitud de las personas | resultado | 5 | 5 |
 | Diseño efectivo → mejor desempeño de la firma | afirmacion | 4 | 2 |
 | Capacidad de diseño-ingeniería | constructo | 4 | 1 |
 | El efecto del design thinking está totalmente mediado por empoderamiento | afirmacion | 4 | 2 |
 | Explicabilidad de la IA (explicaciones) | intervencion | 4 | 3 |
-| Las explicaciones mejoran la decisión humano-IA | afirmacion | 4 | 2 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -193,6 +198,8 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 (verificado contra el abstract).
 - ✅ **F-18** (2026-10-03, cerrada): No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar.
   - *Resolución:* Cerrada: fuente ubicada y verificada a nivel abstract el 2026-10-03; autores y resumen corregidos en el ledger (efecto ajustado d=0,004, no "impacto menor").
+- ⚠️ **F-488** (2026-10-03, abierta): La ficha lo registra como preprint de arXiv con 'revisión por pares no verificada' (🔵 B). Está publicado en Science 391(6792), 26-mar-2026 (Cheng, Lee, Khadpe, Yu, Han y Jurafsky), DOI 10.1126/science.aec8352: pasa a 🟢 A.
+- ⚠️ **F-491** (2026-10-03, abierta): La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542).
 
 ## 7. Registro de barridos
 
@@ -209,6 +216,8 @@
 | 2026-10-02 | F-504, F-505, F-506, F-507, F-508 | 6 | – | Seguros Perú: resultados 2T, sistema 1S 2026, penetración reconciliada y PL 08488. |
 | 2026-10-03 | F-16, F-17, F-18, F-20, F-44 | 12 | – | Crisis del nudge (Mertens vs. Maier vs. segundo orden), megaestudios y crítica a la precisión diagnóstica de chatbots médicos. 4/5 leídas a nivel abstract. |
 | 2026-10-03 | F-18 | 2 | – | Pase de profundidad: F-18 ubicada y leída a nivel abstract; la relación de heterogeneidad del lote 010 se actualizó en su sitio (ficha→abstract). El efecto ajustado (~0) converge con Maier (F-17). |
+| 2026-10-03 | F-488, F-491, F-499, F-542 | 5 | – | Lectura a fondo de persuasión. Texto completo bloqueado por la red (arXiv, Science, PNAS); se leyeron resúmenes oficiales y, para F-499, las salidas del código de análisis publicado en GitHub. Se actu |
+| 2026-10-03 | F-6, F-9, F-484, F-504, F-506, F-508 | 2 | F-6, F-484, F-504, F-506 | Lectura a fondo de seguros. Documentos primarios (SBS, SMV, El Peruano, Congreso) bloqueados por la red: se leyeron resúmenes dirigidos a cada documento. Se actualizan en su sitio, de ficha a abstract |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

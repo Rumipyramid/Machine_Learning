@@ -10,11 +10,11 @@
 |---|---|---|
 | Nodes (`_nodes/`) | 16 | 6,912 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 541 | 🟢A 145 · 🔵B 101 · 🟡C 128 · 🟠D 123 · 🔴E 30 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 542 | 🟢A 146 · 🔵B 101 · 🟡C 128 · 🟠D 123 · 🔴E 30 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
-| Fuentes citadas por ≥1 node | 436 de 541 | 81% del ledger; **105 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 436 de 542 | 80% del ledger; **106 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 72 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 100 de 541 fuentes (18%) | 189 relaciones · 11 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 101 de 542 fuentes (19%) | 196 relaciones · 13 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -80,7 +80,7 @@
 | 2026-07-29 | 19 | 398 | 7 | █████ |
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
 | 2026-10-02 | 47 | 515 | 20 | ████████████ |
-| 2026-10-03 | 26 | 541 | 16 | ██████ |
+| 2026-10-03 | 27 | 542 | 17 | ███████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -90,7 +90,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-16 | `3acec5d` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `998071b` | 536 | 16 | 4 | 84 | 431 | 1985 | 16 | 19 | 22 |
+| 2026-10-03 | `18e1e56` | 541 | 16 | 4 | 84 | 436 | 1999 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -98,8 +98,8 @@
 
 | Métrica | Valor | Qué dice | Qué NO dice |
 |---|---|---|---|
-| M1 Base sólida (A+B / ledger) | 45% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
-| M2 Cobertura de citación | 81% | cuánto del ledger sostiene algún node | un node puede citar mal |
+| M1 Base sólida (A+B / ledger) | 46% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
+| M2 Cobertura de citación | 80% | cuánto del ledger sostiene algún node | un node puede citar mal |
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 57% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |

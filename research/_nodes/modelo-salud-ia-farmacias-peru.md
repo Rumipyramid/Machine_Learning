@@ -584,7 +584,10 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   **peruana** específicamente (toda es de Finlandia/Japón/Portugal).
 - No se accedió al texto completo del Proyecto de Ley 08488 ni a su estado de trámite más
   allá de marzo 2026 — verificar directamente en el portal del Congreso antes de decisiones
-  de producto.
+  de producto. **Actualización 2026-10-03 (vía resumen de vLex, F-508):** la Comisión de Salud
+  aprobó en diciembre de 2025 un dictamen conjunto con el PL 2522/2021-CR, pendiente de la
+  Comisión Permanente; su avance posterior sigue sin verificar (ver
+  [[seguros-comportamiento-mundo-peru]] §3.9).
 - Las estrategias de testeo (§4) están validadas en la literatura de salud digital global;
   ninguna fue aplicada específicamente a un flujo idéntico (triage IA + backlog farmacéutico +
   delivery) en Perú — son la mejor práctica disponible, no una garantía de que funcionen

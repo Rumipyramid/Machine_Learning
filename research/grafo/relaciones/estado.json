@@ -194,6 +194,49 @@
    "triples": 2,
    "sin_aporte": [],
    "notas": "Pase de profundidad: F-18 ubicada y leída a nivel abstract; la relación de heterogeneidad del lote 010 se actualizó en su sitio (ficha→abstract). El efecto ajustado (~0) converge con Maier (F-17)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-488",
+    "F-491",
+    "F-499",
+    "F-542"
+   ],
+   "triples": 5,
+   "sin_aporte": [],
+   "notas": "Lectura a fondo de persuasión. Texto completo bloqueado por la red (arXiv, Science, PNAS); se leyeron resúmenes oficiales y, para F-499, las salidas del código de análisis publicado en GitHub. Se actualizan en su sitio T-135 (apoyo mal atribuido) y T-136 (detalle del repositorio)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-6",
+    "F-9",
+    "F-484",
+    "F-504",
+    "F-506",
+    "F-508"
+   ],
+   "triples": 2,
+   "sin_aporte": [
+    {
+     "f": "F-6",
+     "nota": "Sin relación nueva: T-153 se actualizó en su sitio (ficha→abstract)."
+    },
+    {
+     "f": "F-484",
+     "nota": "Sin relación nueva: T-125 se corrigió y actualizó en su sitio (ficha→abstract)."
+    },
+    {
+     "f": "F-504",
+     "nota": "Sin relación nueva: T-170 se actualizó en su sitio (ficha→abstract)."
+    },
+    {
+     "f": "F-506",
+     "nota": "Sin relación nueva: T-172 se actualizó en su sitio (ficha→abstract); T-173 sigue sin verificar contra la SBS."
+    }
+   ],
+   "notas": "Lectura a fondo de seguros. Documentos primarios (SBS, SMV, El Peruano, Congreso) bloqueados por la red: se leyeron resúmenes dirigidos a cada documento. Se actualizan en su sitio, de ficha a abstract, T-125 (corrige la relación: la norma 'aplica_a', no 'aumenta' el rechazo), T-153, T-154 (corrige el objeto: F-9 mide cambio de producto, no comprensión de planes de salud), T-155, T-170, T-172 y T-175. F-486 no se pudo ubicar (queda en ficha)."
   }
  ],
  "discrepancias": [
@@ -280,6 +323,16 @@
    "detalle": "No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar.",
    "estado": "cerrada",
    "resolucion": "Cerrada: fuente ubicada y verificada a nivel abstract el 2026-10-03; autores y resumen corregidos en el ledger (efecto ajustado d=0,004, no \"impacto menor\")."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-488",
+   "detalle": "La ficha lo registra como preprint de arXiv con 'revisión por pares no verificada' (🔵 B). Está publicado en Science 391(6792), 26-mar-2026 (Cheng, Lee, Khadpe, Yu, Han y Jurafsky), DOI 10.1126/science.aec8352: pasa a 🟢 A."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-491",
+   "detalle": "La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542)."
   }
  ],
  "resoluciones": [
@@ -357,9 +410,9 @@
   },
   {
    "triple": "T-137",
-   "estado": "en_disputa",
-   "fecha": "2026-10-02",
-   "nota": "F-491 (preprint, 820 personas) halla un gran aumento con datos demográficos y concentración en susceptibles; F-499 (PNAS, preregistrado) no halla ventaja del microtargeting. Puede ser susceptibilidad ≠ personalización, pero hoy no está resuelto: RP4 no se promueve."
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-03",
+   "nota": "Re-lectura 2026-10-03: la tensión se armó sobre una cifra mal atribuida. F-491 no personaliza por datos demográficos: halla concentración por rasgos psicológicos. La ventaja de la personalización (+81%) es de Salvi (F-542), en debate interactivo contra humanos; Hackenburg y Margetts (F-499) no la hallan en mensajes únicos frente a un mensaje genérico. Son diseños distintos."
   },
   {
    "triple": "T-148",
@@ -390,6 +443,12 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-03",
    "nota": "Segundo orden (14 meta-análisis): d=0,27 → 0,004 tras ajustar. Converge con T-179 por un método distinto. Ojo: los insumos son de calidad baja o críticamente baja."
+  },
+  {
+   "triple": "T-194",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-03",
+   "nota": "Salvi (F-542) mide la personalización en un debate interactivo de varias rondas contra persuasores humanos; Hackenburg y Margetts (F-499) la miden en un único mensaje escrito frente a un mensaje genérico de la misma IA. La personalización puede ayudar en conversación y no en un mensaje suelto. Para decidir haría falta un estudio que cruce ambos factores."
   }
  ]
 }

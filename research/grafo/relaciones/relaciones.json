@@ -50,7 +50,7 @@
    "id": "adulacion_ia",
    "nombre": "Adulación de la IA (sycophancy)",
    "tipo": "intervencion",
-   "grado": 6,
+   "grado": 7,
    "fuentes": [
     "F-488",
     "F-495",
@@ -179,6 +179,15 @@
    ]
   },
   {
+   "id": "c_adulacion_indistinguible",
+   "nombre": "Los usuarios no distinguen una IA aduladora de una que no lo es",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-488"
+   ]
+  },
+  {
    "id": "c_ambidestreza_mejora_desempeno",
    "nombre": "La ambidestreza mejora el desempeño",
    "tipo": "afirmacion",
@@ -276,9 +285,10 @@
    "id": "c_divulgacion_obligatoria_falla",
    "nombre": "Los mandatos de 'explicar mejor' fracasan sistemáticamente",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-10"
+    "F-10",
+    "F-9"
    ]
   },
   {
@@ -543,10 +553,20 @@
    ]
   },
   {
+   "id": "c_personalizacion_aumenta_persuasion",
+   "nombre": "Personalizar con datos de la persona aumenta la persuasión de la IA",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-499",
+    "F-542"
+   ]
+  },
+  {
    "id": "c_persuasion_concentrada",
    "nombre": "La persuasión de la IA se concentra en personas susceptibles",
    "tipo": "afirmacion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-491",
     "F-499"
@@ -649,19 +669,20 @@
    "id": "cambio_actitud",
    "nombre": "Cambio de actitud de las personas",
    "tipo": "resultado",
-   "grado": 4,
+   "grado": 5,
    "fuentes": [
     "F-489",
     "F-490",
     "F-494",
-    "F-499"
+    "F-499",
+    "F-542"
    ]
   },
   {
    "id": "cambio_producto",
    "nombre": "Cambio de producto por el consumidor",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
     "F-9"
    ]
@@ -744,10 +765,9 @@
    "id": "comprension_plan_salud",
    "nombre": "Comprensión del plan de salud",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 1,
    "fuentes": [
-    "F-6",
-    "F-9"
+    "F-6"
    ]
   },
   {
@@ -848,6 +868,15 @@
    "grado": 1,
    "fuentes": [
     "F-469"
+   ]
+  },
+  {
+   "id": "creencias_pesimistas",
+   "nombre": "Creencias pesimistas sobre lo que se ganaría al cambiar",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-9"
    ]
   },
   {
@@ -959,6 +988,15 @@
    "grado": 1,
    "fuentes": [
     "F-36"
+   ]
+  },
+  {
+   "id": "dictamen_salud_2025",
+   "nombre": "Dictamen conjunto de la Comisión de Salud (PL 2522/2021 y 8488/2024), dic-2025",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-508"
    ]
   },
   {
@@ -1226,6 +1264,15 @@
    "grado": 1,
    "fuentes": [
     "F-420"
+   ]
+  },
+  {
+   "id": "hackenburg_margetts_2024",
+   "nombre": "Experimento de microtargeting de Hackenburg y Margetts (PNAS 2024)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-499"
    ]
   },
   {
@@ -1674,6 +1721,15 @@
    ]
   },
   {
+   "id": "personalizacion_conversacional",
+   "nombre": "Personalización en conversación (la IA conoce datos del interlocutor)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-542"
+   ]
+  },
+  {
    "id": "personas_susceptibles",
    "nombre": "Personas psicológicamente susceptibles",
    "tipo": "poblacion",
@@ -1696,7 +1752,7 @@
    "id": "pl_08488",
    "nombre": "Proyecto de Ley 08488/2024-CR (farmacias en el sistema nacional de salud)",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
     "F-508"
    ]
@@ -1801,6 +1857,15 @@
    "grado": 1,
    "fuentes": [
     "F-237"
+   ]
+  },
+  {
+   "id": "rasgos_susceptibilidad",
+   "nombre": "Rasgos de susceptibilidad: confianza en LLMs, amabilidad, extraversión, necesidad de cognición",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-491"
    ]
   },
   {
@@ -1921,6 +1986,15 @@
    "grado": 1,
    "fuentes": [
     "F-429"
+   ]
+  },
+  {
+   "id": "salvi_2025",
+   "nombre": "Debates con GPT-4 de Salvi et al. (Nature Human Behaviour 2025)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-542"
    ]
   },
   {
@@ -3650,14 +3724,14 @@
   {
    "id": "T-125",
    "s": "sbs_ris_2026",
-   "p": "aumenta",
+   "p": "aplica_a",
    "o": "rechazo_cobertura_sin_fundamento",
    "f": "F-484",
-   "apoyo": "Las aseguradoras pueden ser sancionadas por rechazar coberturas sin fundamento o fuera de plazo (SBS, julio 2026): el reglamento aumenta la sanción, no la conducta.",
-   "lectura": "ficha",
+   "apoyo": "Res. SBS 01923-2026 (El Peruano, 24-jul-2026): es infracción grave rechazar una cobertura sin comunicar el sustento y/o no comunicarlo en plazo. Antes se sancionaba la falta de sustento o la comunicación tardía.",
+   "lectura": "abstract",
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
-   "clase": "efecto"
+   "clase": "estructura"
   },
   {
    "id": "T-126",
@@ -3773,7 +3847,7 @@
    "p": "modera",
    "o": "c_persuasion_concentrada",
    "f": "F-491",
-   "apoyo": "GPT-4 con datos demográficos aumentó 81,7% las probabilidades de cambio de opinión frente a persuasores humanos; el efecto se concentra en personas susceptibles (preprint, 820 participantes).",
+   "apoyo": "Corregido: 770 italianos en 4 sesiones con 4 LLMs; el cambio de opinión se concentra en quienes confían más en la IA y son más amables, extravertidos y con más necesidad de cognición. (El +81,7% era de Salvi, F-542.)",
    "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
@@ -3785,7 +3859,7 @@
    "p": "asocia_con",
    "o": "cambio_actitud",
    "f": "F-499",
-   "apoyo": "El microtargeting con GPT-4 no fue más persuasivo que un mensaje genérico bien hecho (4,83 vs. 6,20 pp, no distinguible): la personalización aporta poco.",
+   "apoyo": "8.587 participantes, 4 temas: microtargeting no superó al genérico (p=0,23; código público en GitHub); en dos temas el genérico fue mejor. Mejor mensaje genérico: +6,2 pp (IC 4,5-7,9).",
    "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
@@ -3989,8 +4063,8 @@
    "p": "reduce",
    "o": "comprension_plan_salud",
    "f": "F-6",
-   "apoyo": "Quienes tienen coaseguro o tarifas variables estiman mucho peor sus costos; es el término peor entendido.",
-   "lectura": "ficha",
+   "apoyo": "Dos encuestas representativas en EE.UU.: solo 14% entendió coaseguro, copago, deducible y gasto de bolsillo, y 11% pudo calcular su parte de una cuenta hospitalaria.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3999,10 +4073,10 @@
    "id": "T-154",
    "s": "divulgacion_clara",
    "p": "aumenta",
-   "o": "comprension_plan_salud",
+   "o": "cambio_producto",
    "f": "F-9",
-   "apoyo": "RCT: la divulgación clara mejora la comprensión.",
-   "lectura": "ficha",
+   "apoyo": "RCT con 124.000 ahorristas: la divulgación subió el cambio de cuenta solo 0,7 pp (8,7%→9,5%) pese a una ganancia media de ~US$190/año.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -4013,8 +4087,8 @@
    "p": "asocia_con",
    "o": "cambio_producto",
    "f": "F-9",
-   "apoyo": "Aun con divulgación clara y saliente, el cambio de producto fue rarísimo: mejora comprensión, rara vez cambia conducta.",
-   "lectura": "ficha",
+   "apoyo": "Cambiar tomaba ~15 minutos y aun así casi nadie cambió con ningún diseño de divulgación: la conducta apenas se mueve.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -4193,8 +4267,8 @@
    "p": "asocia_con",
    "o": "utilidad_rimac",
    "f": "F-504",
-   "apoyo": "Utilidad neta −40% en el 2T 2026 (S/85,78 M vs. S/143,4 M) y −10,5% en el 1S.",
-   "lectura": "ficha",
+   "apoyo": "Hecho de importancia ante la SMV (vía MarketScreener): utilidad neta S/85,78 M en el 2T 2026 vs. S/143,4 M (−40%); S/208,33 M en el 1S vs. S/232,81 M (−10,5%).",
+   "lectura": "abstract",
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -4217,8 +4291,8 @@
    "p": "asocia_con",
    "o": "rentabilidad_tecnica_peru",
    "f": "F-506",
-   "apoyo": "Primas netas S/9.451 M (+1,1%) y utilidad conjunta S/1.391 M, con la mitad de las compañías a la baja (fecha del artículo y cifras sin confirmar).",
-   "lectura": "ficha",
+   "apoyo": "Gestión (fines de set-2026), con datos de la SBS: primas S/9.451 M (+1,1%) y utilidad S/1.391 M (+7,5%); los siniestros no siguieron a los ingresos. Tabla oficial de la SBS no abierta.",
+   "lectura": "abstract",
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -4253,8 +4327,8 @@
    "p": "aplica_a",
    "o": "farmacias_sistema_salud",
    "f": "F-508",
-   "apoyo": "Registrado el 27-jul-2024; integra farmacias y boticas vía redes integradas y las clasifica en tres niveles; estado actual no verificado.",
-   "lectura": "ficha",
+   "apoyo": "Registrado el 27-jul-2024. Dictamen conjunto con el PL 2522/2021-CR aprobado en la Comisión de Salud el 3-dic(2025), pendiente; no se verificó su avance posterior.",
+   "lectura": "abstract",
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "estructura"
@@ -4426,11 +4500,95 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-03",
    "clase": "metodo"
+  },
+  {
+   "id": "T-190",
+   "s": "adulacion_ia",
+   "p": "respalda",
+   "o": "c_adulacion_indistinguible",
+   "f": "F-488",
+   "apoyo": "Publicado en Science (mar-2026): los participantes calificaron igual de 'objetivas' a la IA aduladora y a la no aduladora; no saben con cuál hablaron.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-191",
+   "s": "rasgos_susceptibilidad",
+   "p": "modera",
+   "o": "c_persuasion_concentrada",
+   "f": "F-491",
+   "apoyo": "770 adultos italianos, 4 sesiones semanales con GPT-4o, Claude Sonnet 3.7, DeepSeek V3 o Mistral Large: el cambio de opinión se asocia a más confianza en LLMs, amabilidad, extraversión y necesidad de cognición.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-192",
+   "s": "salvi_2025",
+   "p": "respalda",
+   "o": "c_personalizacion_aumenta_persuasion",
+   "f": "F-542",
+   "apoyo": "Debates de varias rondas (N=900): con datos personales del oponente, GPT-4 superó al humano en 64,4% de los pares: +81,2% de odds de mayor acuerdo (IC95% +26% a +161%).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-193",
+   "s": "personalizacion_conversacional",
+   "p": "aumenta",
+   "o": "cambio_actitud",
+   "f": "F-542",
+   "apoyo": "La ventaja aparece con personalización en debate interactivo frente a persuasores humanos.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-194",
+   "s": "hackenburg_margetts_2024",
+   "p": "refuta",
+   "o": "c_personalizacion_aumenta_persuasion",
+   "f": "F-499",
+   "apoyo": "8.587 participantes, 4 temas: el mensaje microtargeteado no superó al genérico (p=0,23); en sanciones a China y OTAN el genérico fue mejor (−4,6 y −2,8 pp). Mejor mensaje genérico: +6,2 pp.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-195",
+   "s": "creencias_pesimistas",
+   "p": "media",
+   "o": "c_divulgacion_obligatoria_falla",
+   "f": "F-9",
+   "apoyo": "RCT con 124.000 ahorristas en 5 entidades del Reino Unido: las creencias pesimistas sobre la ganancia explican que se ignore la divulgación.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-196",
+   "s": "dictamen_salud_2025",
+   "p": "parte_de",
+   "o": "pl_08488",
+   "f": "F-508",
+   "apoyo": "La Comisión de Salud aprobó el 3-dic(2025) un dictamen conjunto de los PL 2522/2021-CR y 8488/2024-CR, pendiente de pasar a la Comisión Permanente (resumen de vLex; portal del Congreso no abierto).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "estructura"
   }
  ],
  "generado": "2026-10-03",
  "cobertura": {
-  "procesadas": 100,
-  "total": 536
+  "procesadas": 101,
+  "total": 542
  }
 }
