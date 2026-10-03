@@ -90,7 +90,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-13 | `8a90dc2` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `71e1709` | 527 | 16 | 4 | 84 | 422 | 1947 | 17 | 17 | 22 |
+| 2026-10-03 | `482b479` | 528 | 16 | 4 | 84 | 423 | 1948 | 17 | 17 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -104,7 +104,7 @@
 | M4 Falsabilidad ejercida (diseño) | 50% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
 | M6 Integración (diseño↔resto) | 8/15 nodes enlazados; 11 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
-| M7 Lectura profunda (Lobo) | 169 fuentes leídas a fondo = 32% del ledger; 168 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
+| M7 Lectura profunda (Lobo) | 172 fuentes leídas a fondo = 33% del ledger; 171 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
 
