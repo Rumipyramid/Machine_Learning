@@ -77,6 +77,15 @@
    ]
   },
   {
+   "id": "ajuste_ui_usuario",
+   "nombre": "Capacidad del usuario de ajustar la interfaz generada a sus necesidades",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-248"
+   ]
+  },
+  {
    "id": "alfabetizacion_ia",
    "nombre": "Alfabetización en IA (intervención ligera)",
    "tipo": "intervencion",
@@ -106,12 +115,22 @@
    ]
   },
   {
+   "id": "amenaza_libertad",
+   "nombre": "Amenaza percibida a la libertad y enojo (reactancia)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-337"
+   ]
+  },
+  {
    "id": "ancla_numerica",
    "nombre": "Número ancla visible antes de juzgar un precio",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-175"
+    "F-175",
+    "F-220"
    ]
   },
   {
@@ -121,6 +140,15 @@
    "grado": 1,
    "fuentes": [
     "F-247"
+   ]
+  },
+  {
+   "id": "aprendizaje_esquemas",
+   "nombre": "Aprendizaje (adquisición de esquemas)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-228"
    ]
   },
   {
@@ -157,6 +185,15 @@
    "grado": 1,
    "fuentes": [
     "F-36"
+   ]
+  },
+  {
+   "id": "aversion_perdida",
+   "nombre": "Aversión a la pérdida (la función de valor es más empinada para pérdidas)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-221"
    ]
   },
   {
@@ -720,6 +757,15 @@
    ]
   },
   {
+   "id": "calidad_motivacion",
+   "nombre": "Calidad de la motivación, desempeño y bienestar al perseguir metas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-230"
+   ]
+  },
+  {
    "id": "calidad_texto_generado",
    "nombre": "Calidad de textos generados por IA según juicio humano",
    "tipo": "constructo",
@@ -780,6 +826,15 @@
    ]
   },
   {
+   "id": "carga_cognitiva",
+   "nombre": "Carga cognitiva sobre la memoria de trabajo",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-228"
+   ]
+  },
+  {
    "id": "carga_prueba_aseguradora",
    "nombre": "La aseguradora debe acreditar que explicó la exclusión",
    "tipo": "concepto",
@@ -813,6 +868,15 @@
    "grado": 1,
    "fuentes": [
     "F-6"
+   ]
+  },
+  {
+   "id": "codiseno_servicios_salud",
+   "nombre": "Participación del público en el diseño de servicios de salud",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-252"
    ]
   },
   {
@@ -854,6 +918,15 @@
    ]
   },
   {
+   "id": "conducta_cliente_financiero",
+   "nombre": "Conducta real del cliente de servicios financieros",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-229"
+   ]
+  },
+  {
    "id": "conducta_salud",
    "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
    "tipo": "resultado",
@@ -870,6 +943,16 @@
    "fuentes": [
     "F-23",
     "F-442"
+   ]
+  },
+  {
+   "id": "confianza_aseguradora",
+   "nombre": "Confianza del consumidor en la aseguradora",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-334",
+    "F-335"
    ]
   },
   {
@@ -1035,11 +1118,21 @@
    ]
   },
   {
+   "id": "default_nudge",
+   "nombre": "Opción por defecto (default)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-337"
+   ]
+  },
+  {
    "id": "demanda_seguros",
    "nombre": "Demanda de seguros",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-221",
     "F-3"
    ]
   },
@@ -1213,6 +1306,15 @@
    ]
   },
   {
+   "id": "efecto_dotacion",
+   "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-223"
+   ]
+  },
+  {
    "id": "efecto_nudge_academico",
    "nombre": "Efecto de nudges en papers académicos (~8,7 pp)",
    "tipo": "resultado",
@@ -1228,6 +1330,15 @@
    "grado": 2,
    "fuentes": [
     "F-21"
+   ]
+  },
+  {
+   "id": "emisor_experto",
+   "nombre": "Presentar al emisor como experto",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-337"
    ]
   },
   {
@@ -1259,6 +1370,33 @@
    ]
   },
   {
+   "id": "encuadre_decision",
+   "nombre": "Encuadre de la decisión (ganancia vs. pérdida)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-222"
+   ]
+  },
+  {
+   "id": "errores_sistematicos_juicio",
+   "nombre": "Errores sistemáticos y predecibles de juicio",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-220"
+   ]
+  },
+  {
+   "id": "escala_confianza_aseguradora",
+   "nombre": "Escala de confianza en aseguradoras de salud (Zheng et al. 2002)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-335"
+   ]
+  },
+  {
    "id": "estructura_decision",
    "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
    "tipo": "intervencion",
@@ -1283,6 +1421,15 @@
    "grado": 1,
    "fuentes": [
     "F-265"
+   ]
+  },
+  {
+   "id": "evaluacion_resultados_codiseno",
+   "nombre": "Evaluación de resultados del codiseño",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-252"
    ]
   },
   {
@@ -1367,6 +1514,15 @@
    "fuentes": [
     "F-237",
     "F-238"
+   ]
+  },
+  {
+   "id": "fluidez_procesamiento",
+   "nombre": "Fluidez de procesamiento (facilidad para procesar información)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-225"
    ]
   },
   {
@@ -1486,6 +1642,15 @@
    ]
   },
   {
+   "id": "heuristicas_juicio",
+   "nombre": "Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-220"
+   ]
+  },
+  {
    "id": "hu_2025",
    "nombre": "Meta-análisis de segundo orden de Hu et al. (JBDM 2025)",
    "tipo": "estudio",
@@ -1551,6 +1716,24 @@
    ]
   },
   {
+   "id": "influencia_social",
+   "nombre": "Influencia social (cumplimiento y conformidad)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-224"
+   ]
+  },
+  {
+   "id": "info_insuficiente_aseguradora",
+   "nombre": "Información insuficiente para juzgar a la aseguradora",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-334"
+   ]
+  },
+  {
    "id": "informacion_decision",
    "nombre": "Nudges de información/asistencia a la decisión",
    "tipo": "intervencion",
@@ -1607,6 +1790,15 @@
    ]
   },
   {
+   "id": "inversion_preferencias",
+   "nombre": "Inversión de preferencias ante problemas equivalentes",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-222"
+   ]
+  },
+  {
    "id": "ipg_venta_rga",
    "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
    "tipo": "concepto",
@@ -1631,6 +1823,15 @@
    "grado": 1,
    "fuentes": [
     "F-175"
+   ]
+  },
+  {
+   "id": "juicios_metacognitivos",
+   "nombre": "Juicios de verdad, agrado, confianza y frecuencia",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-225"
    ]
   },
   {
@@ -1801,6 +2002,15 @@
    ]
   },
   {
+   "id": "metas_influencia",
+   "nombre": "Metas que explican la influencia: precisión, afiliación y autoimagen positiva",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-224"
+   ]
+  },
+  {
    "id": "microsoft_exp",
    "nombre": "Plataforma de experimentación de Microsoft (ExP)",
    "tipo": "organizacion",
@@ -1816,6 +2026,15 @@
    "grado": 2,
    "fuentes": [
     "F-499"
+   ]
+  },
+  {
+   "id": "modelo_datos_tarea",
+   "nombre": "UI generada desde un modelo de datos de la tarea (no desde código)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-248"
    ]
   },
   {
@@ -1862,6 +2081,15 @@
    "grado": 1,
    "fuentes": [
     "F-303"
+   ]
+  },
+  {
+   "id": "necesidades_psicologicas",
+   "nombre": "Necesidades psicológicas básicas: competencia, autonomía y vínculo",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-230"
    ]
   },
   {
@@ -2355,6 +2583,15 @@
    ]
   },
   {
+   "id": "segmentacion_demografica",
+   "nombre": "Segmentación demográfica en servicios financieros",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-229"
+   ]
+  },
+  {
    "id": "sesgo_automatizacion",
    "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
    "tipo": "constructo",
@@ -2453,6 +2690,15 @@
    ]
   },
   {
+   "id": "sobrepeso_prob_bajas",
+   "nombre": "Sobrevaloración de probabilidades bajas",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-221"
+   ]
+  },
+  {
    "id": "solo_preferencia",
    "nombre": "Mide preferencia, no desempeño ni aprendibilidad longitudinal",
    "tipo": "limitacion",
@@ -2514,6 +2760,16 @@
    "grado": 1,
    "fuentes": [
     "F-244"
+   ]
+  },
+  {
+   "id": "teoria_prospectiva",
+   "nombre": "Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-221",
+    "F-223"
    ]
   },
   {
@@ -2891,8 +3147,8 @@
    "p": "origina_en",
    "o": "microsoft_exp",
    "f": "F-262",
-   "apoyo": "Ficha: 85-90% de fracaso reportado en Bing, Google Ads, Netflix y Airbnb. NO verificado en la lectura de hoy y conviven en la ficha dos bases distintas (1/3 vs 85-90%).",
-   "lectura": "ficha",
+   "apoyo": "HBR 2017: en Google y Bing solo 10-20% de los experimentos da resultados positivos, lo que equivale a 80-90% de fracaso. Las cifras por empresa de la ficha no se verificaron una a una.",
+   "lectura": "abstract",
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "metodo"
@@ -2927,8 +3183,8 @@
    "p": "origina_en",
    "o": "microsoft_exp",
    "f": "F-262",
-   "apoyo": "Ficha: el valor se acumula en mejoras de 0,1-0,2%.",
-   "lectura": "ficha",
+   "apoyo": "HBR 2017: el progreso viene más de implementar muchas mejoras pequeñas que de cambios disruptivos; algunos cambios mínimos tienen efectos grandes, para bien o para mal.",
+   "lectura": "abstract",
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "metodo"
@@ -2963,8 +3219,8 @@
    "p": "aumenta",
    "o": "empoderamiento_psicologico",
    "f": "F-239",
-   "apoyo": "N=160 en 62 proyectos de innovación: el design thinking opera vía empoderamiento psicológico (práctica de motivación).",
-   "lectura": "ficha",
+   "apoyo": "Creativity and Innovation Management 2020: 160 estudiantes en 62 proyectos de innovación para empresas; el empoderamiento psicológico es el mecanismo central del design thinking.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -2975,8 +3231,8 @@
    "p": "media",
    "o": "c_dt_efecto_mediado",
    "f": "F-239",
-   "apoyo": "El efecto sobre el desempeño del proyecto está totalmente mediado por empoderamiento psicológico.",
-   "lectura": "ficha",
+   "apoyo": "El efecto del nivel de aplicación de prácticas de design thinking sobre el desempeño del proyecto está totalmente mediado por el empoderamiento psicológico.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -2987,8 +3243,8 @@
    "p": "aumenta",
    "o": "exito_proyecto_innovacion",
    "f": "F-239",
-   "apoyo": "Efecto sobre el desempeño del proyecto, pero solo a través del mediador; no como método superior de resolución de problemas.",
-   "lectura": "ficha",
+   "apoyo": "Hay efecto sobre el desempeño del proyecto, pero solo a través del empoderamiento psicológico.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -2999,8 +3255,8 @@
    "p": "tiene_limite",
    "o": "muestra_estudiantil_percibida",
    "f": "F-239",
-   "apoyo": "Advertencia de la ficha: muestra estudiantil y outcomes percibidos.",
-   "lectura": "ficha",
+   "apoyo": "La muestra es de estudiantes (160, en proyectos para empresas); que los resultados sean percibidos no se confirmó en el resumen.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-02",
    "clase": "metodo"
@@ -3011,8 +3267,8 @@
    "p": "aplica_a",
    "o": "design_thinking",
    "f": "F-240",
-   "apoyo": "Revisión peer-reviewed: los mecanismos causales siguen sin establecerse; predomina evidencia conceptual y anecdótica.",
-   "lectura": "ficha",
+   "apoyo": "Revisión de la literatura (Creativity and Innovation Management, 2024-2025): no hay una comprensión clara de qué compone el impacto del design thinking ni de cómo se produce; proponen integración, habilitación y participación como mecanismos.",
+   "lectura": "abstract",
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "estructura"
@@ -3059,8 +3315,8 @@
    "p": "aumenta",
    "o": "sobreconfianza_ia",
    "f": "F-244",
-   "apoyo": "Las explicaciones subieron la precisión cuando la IA acertaba y la bajaron cuando erraba: patrón de sobre-confianza, no de calibración.",
-   "lectura": "ficha",
+   "apoyo": "CHI 2021: las explicaciones aumentaron la probabilidad de aceptar la recomendación de la IA sin importar si era correcta.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3071,8 +3327,8 @@
    "p": "contradice",
    "o": "c_explicaciones_mejoran_decision",
    "f": "F-244",
-   "apoyo": "No produjeron desempeño complementario humano-IA en el experimento (CHI 2021).",
-   "lectura": "ficha",
+   "apoyo": "Con una IA de precisión comparable a la humana hubo mejora complementaria por la IA, pero las explicaciones no la aumentaron (tres conjuntos de datos).",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "evidencia"
@@ -3083,8 +3339,8 @@
    "p": "reduce",
    "o": "sobreconfianza_ia",
    "f": "F-245",
-   "apoyo": "La fricción cognitiva deliberada reduce la sobre-confianza en la IA.",
-   "lectura": "ficha",
+   "apoyo": "CHI/CSCW 2021: las intervenciones de fricción cognitiva redujeron la sobre-confianza en las recomendaciones de la IA frente a las explicaciones simples.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3095,8 +3351,8 @@
    "p": "asocia_con",
    "o": "satisfaccion_carga_percibida",
    "f": "F-245",
-   "apoyo": "Costo declarado: menor satisfacción y mayor carga percibida.",
-   "lectura": "ficha",
+   "apoyo": "Costo: menor satisfacción; la gente prefirió y confió más en los sistemas que sentía menos exigentes, aunque con ellos rendía peor. El beneficio varió según la motivación cognitiva.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3107,8 +3363,8 @@
    "p": "reduce",
    "o": "sobreconfianza_ia",
    "f": "F-246",
-   "apoyo": "5 estudios, N=731: las explicaciones reducen la sobre-confianza y mejoran la precisión.",
-   "lectura": "ficha",
+   "apoyo": "CSCW 2023, 5 estudios (N=731): las explicaciones pueden reducir la sobre-confianza cuando reducen el costo de verificar.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3119,8 +3375,8 @@
    "p": "modera",
    "o": "c_explicaciones_mejoran_decision",
    "f": "F-246",
-   "apoyo": "El efecto aparece solo en tareas difíciles; en fáciles/medias no hay diferencia frente a mostrar solo la predicción.",
-   "lectura": "ficha",
+   "apoyo": "La dificultad de la tarea, la dificultad de la explicación y la compensación económica cambian la sobre-confianza (estudios 1 a 4).",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3131,8 +3387,8 @@
    "p": "aplica_a",
    "o": "sobreconfianza_ia",
    "f": "F-246",
-   "apoyo": "La sobre-confianza es estratégica (costo-beneficio), no cognitivamente inevitable.",
-   "lectura": "ficha",
+   "apoyo": "Las personas eligen estratégicamente si revisar la explicación, sopesando costos y beneficios de hacer la tarea frente a confiar en la IA.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "estructura"
@@ -3143,8 +3399,8 @@
    "p": "reduce",
    "o": "velocidad_tarea",
    "f": "F-247",
-   "apoyo": "Menús estáticos significativamente más rápidos que los adaptativos (CHI 2004).",
-   "lectura": "ficha",
+   "apoyo": "CHI 2004, 27 personas, menús divididos: el menú estático fue significativamente más rápido que el adaptativo.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3155,8 +3411,8 @@
    "p": "aumenta",
    "o": "velocidad_tarea",
    "f": "F-247",
-   "apoyo": "Los adaptables (control del usuario) superan a los adaptativos (control del sistema).",
-   "lectura": "ficha",
+   "apoyo": "En ciertas condiciones el menú adaptable (lo ajusta el usuario) fue más rápido que el adaptativo y no distinto del estático; la mayoría lo prefirió.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3179,8 +3435,8 @@
    "p": "es_tipo_de",
    "o": "interfaces_adaptativas",
    "f": "F-247",
-   "apoyo": "Los menús adaptativos son el caso canónico estudiado de interfaz adaptativa.",
-   "lectura": "ficha",
+   "apoyo": "El estudio compara menús estáticos, adaptables y adaptativos como casos de personalización de interfaz; concluye que la personalización guiada por el usuario es más viable que la automática.",
+   "lectura": "abstract",
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "estructura"
@@ -3203,8 +3459,8 @@
    "p": "asocia_con",
    "o": "desempeno_complementario",
    "f": "F-244",
-   "apoyo": "Las explicaciones no produjeron desempeño complementario humano-IA (CHI 2021); ver tensión con F-246 por dificultad de tarea.",
-   "lectura": "ficha",
+   "apoyo": "Las explicaciones no aumentaron el desempeño complementario humano-IA; sí la aceptación de la recomendación.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3503,8 +3759,8 @@
    "p": "reduce",
    "o": "productividad_devs",
    "f": "F-257",
-   "apoyo": "Desarrolladores expertos 19% más lentos con herramientas de IA (principios de 2025).",
-   "lectura": "ficha",
+   "apoyo": "RCT de METR (2025): 16 desarrolladores expertos y 246 tareas reales; con IA tardaron 19% más.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3515,8 +3771,8 @@
    "p": "aplica_a",
    "o": "ia_asistida_devs",
    "f": "F-257",
-   "apoyo": "Estimaban ser 20% más rápidos: brecha de ~39 puntos entre percepción y realidad.",
-   "lectura": "ficha",
+   "apoyo": "Antes esperaban ser 24% más rápidos y después creían haber mejorado ~20%, pese a ir 19% más lentos. Los autores advierten que la familiaridad con repos grandes y maduros contribuye a la lentitud.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "estructura"
@@ -3671,8 +3927,8 @@
    "p": "aumenta",
    "o": "fluidez_tarea",
    "f": "F-403",
-   "apoyo": "Fijación visual correcta 33% más rápida y tarea 20% más rápida.",
-   "lectura": "ficha",
+   "apoyo": "CHI 2026, 48 personas con eye-tracking en 10 apps de Android: con Material 3 Expressive fijaron el elemento correcto 33% más rápido y completaron la tarea 20% más rápido.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -3683,8 +3939,8 @@
    "p": "aumenta",
    "o": "valoracion_estetica",
    "f": "F-403",
-   "apoyo": "Calificaciones más positivas a la vez: mejoran fluidez y estética juntas.",
-   "lectura": "ficha",
+   "apoyo": "En el mismo estudio calificaron la experiencia de forma más positiva que con el Material anterior: mejoraron a la vez desempeño y valoración.",
+   "lectura": "abstract",
    "fuerza": "causal",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -5344,11 +5600,215 @@
    "fuerza": "causal",
    "fecha": "2026-10-03",
    "clase": "efecto"
+  },
+  {
+   "id": "T-228",
+   "s": "heuristicas_juicio",
+   "p": "aumenta",
+   "o": "errores_sistematicos_juicio",
+   "f": "F-220",
+   "apoyo": "Science 1974: tres heurísticas (representatividad, disponibilidad, ajuste desde un ancla) son económicas y suelen servir, pero producen errores sistemáticos y predecibles.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-229",
+   "s": "ancla_numerica",
+   "p": "es_tipo_de",
+   "o": "heuristicas_juicio",
+   "f": "F-220",
+   "apoyo": "El ajuste desde un ancla se usa en predicciones numéricas cuando hay un valor de partida disponible.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-230",
+   "s": "aversion_perdida",
+   "p": "parte_de",
+   "o": "teoria_prospectiva",
+   "f": "F-221",
+   "apoyo": "Econometrica 1979: el valor se asigna a ganancias y pérdidas; la función es cóncava para ganancias, convexa para pérdidas y más empinada para pérdidas. El resumen no da la proporción 2:1.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-231",
+   "s": "sobrepeso_prob_bajas",
+   "p": "aumenta",
+   "o": "demanda_seguros",
+   "f": "F-221",
+   "apoyo": "Los pesos de decisión sobrevaloran las probabilidades bajas, lo que puede contribuir al atractivo del seguro y del juego.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-232",
+   "s": "encuadre_decision",
+   "p": "aumenta",
+   "o": "inversion_preferencias",
+   "f": "F-222",
+   "apoyo": "Science 1981: el mismo problema presentado de distinta forma produce cambios predecibles de preferencia, con dinero hipotético y real y con vidas humanas.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-233",
+   "s": "efecto_dotacion",
+   "p": "aplica_a",
+   "o": "teoria_prospectiva",
+   "f": "F-223",
+   "apoyo": "JPE 1990: la disposición a aceptar supera mucho a la disposición a pagar; con tazas repartidas al azar se comercia mucho menos de lo previsto, y no por costos de transacción.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-234",
+   "s": "metas_influencia",
+   "p": "media",
+   "o": "influencia_social",
+   "f": "F-224",
+   "apoyo": "Annual Review 2004 (1997-2002): la influencia opera vía tres metas, percibir la realidad con precisión, mantener vínculos y cuidar la autoimagen, a menudo de forma sutil e inconsciente.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-235",
+   "s": "fluidez_procesamiento",
+   "p": "aumenta",
+   "o": "juicios_metacognitivos",
+   "f": "F-225",
+   "apoyo": "Revisión integradora (PSPR 2009): la fluidez influye en el agrado, la verdad percibida, las estimaciones de frecuencia, la persuasión y la confianza, sea cual sea su origen.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-236",
+   "s": "carga_cognitiva",
+   "p": "reduce",
+   "o": "aprendizaje_esquemas",
+   "f": "F-228",
+   "apoyo": "Cognitive Science 1988: resolver problemas por análisis medios-fines carga tanto la memoria de trabajo que interfiere con aprender esquemas; los ejemplos resueltos ayudan. Lo de 'incluso en expertos' de la ficha no se verificó.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-237",
+   "s": "segmentacion_demografica",
+   "p": "asocia_con",
+   "o": "conducta_cliente_financiero",
+   "f": "F-229",
+   "apoyo": "JFSM 2011: con una muestra grande, la información demográfica aporta poco para segmentar clientes de servicios financieros; poco respaldo a la práctica habitual.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-238",
+   "s": "necesidades_psicologicas",
+   "p": "media",
+   "o": "calidad_motivacion",
+   "f": "F-230",
+   "apoyo": "Psychological Inquiry 2000: la motivación requiere considerar necesidades innatas de competencia, autonomía y vínculo; el efecto de perseguir metas depende de cuánto permiten satisfacerlas.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-239",
+   "s": "modelo_datos_tarea",
+   "p": "aumenta",
+   "o": "ajuste_ui_usuario",
+   "f": "F-248",
+   "apoyo": "CHI 2025: generar la UI desde un modelo de datos de la tarea (entidades, relaciones, datos) permite al usuario ajustarla iterativamente, algo difícil cuando se genera código. Las cifras de exactitud de la ficha no se verificaron.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-240",
+   "s": "codiseno_servicios_salud",
+   "p": "tiene_limite",
+   "o": "evaluacion_resultados_codiseno",
+   "f": "F-252",
+   "apoyo": "Revisión de 93 artículos (países de ingresos altos): menos de la mitad evalúa resultados; predominan métodos cualitativos y mixtos y el reporte es pobre.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-241",
+   "s": "info_insuficiente_aseguradora",
+   "p": "reduce",
+   "o": "confianza_aseguradora",
+   "f": "F-334",
+   "apoyo": "Países Bajos: la gente sabe que la aseguradora compra atención y lo ve propio de su rol, con una confianza razonable pero frágil; le falta información para juzgarla y cree, sin razón, que son empresas comerciales.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-242",
+   "s": "escala_confianza_aseguradora",
+   "p": "mide",
+   "o": "confianza_aseguradora",
+   "f": "F-335",
+   "apoyo": "Health Services Research 2002: escala para medir confianza en aseguradoras públicas y privadas, con análisis de estructura factorial, consistencia y validez. Las dimensiones de la ficha no se verificaron en el resumen.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-243",
+   "s": "default_nudge",
+   "p": "aumenta",
+   "o": "amenaza_libertad",
+   "f": "F-337",
+   "apoyo": "Experimento (JBEE 2023): el default se percibe como más amenazante para la libertad que una recomendación y menos que un mínimo obligatorio; la motivación intrínseca modera la diferencia.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-244",
+   "s": "emisor_experto",
+   "p": "reduce",
+   "o": "amenaza_libertad",
+   "f": "F-337",
+   "apoyo": "Presentar al emisor como experto, no como político, reduce la amenaza a la libertad y el enojo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
   }
  ],
  "generado": "2026-10-03",
  "cobertura": {
-  "procesadas": 122,
+  "procesadas": 136,
   "total": 542
  }
 }

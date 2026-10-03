@@ -8,33 +8,33 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **122 de 542** (22.5%) |
-| …del cerebro de diseño (citadas en el node) | 90 de 272 |
-| …por rigor | A 76/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
-| Barridos | 18 |
-| Entidades | 281 |
-| Relaciones | 227 |
-| Nivel de lectura | ficha 119 · abstract 108 |
-| Fuerza de las afirmaciones | causal 76 · descriptiva 67 · observacional 48 · teorica 36 |
+| Fuentes procesadas | **136 de 542** (25.1%) |
+| …del cerebro de diseño (citadas en el node) | 104 de 272 |
+| …por rigor | A 90/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
+| Barridos | 20 |
+| Entidades | 309 |
+| Relaciones | 244 |
+| Nivel de lectura | abstract 147 · ficha 97 |
+| Fuerza de las afirmaciones | causal 83 · descriptiva 67 · observacional 53 · teorica 41 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 43 |
-| `asocia_con` | efecto | 36 |
-| `aplica_a` | estructura | 28 |
-| `reduce` | efecto | 28 |
-| `tiene_limite` | metodo | 19 |
+| `aumenta` | efecto | 49 |
+| `asocia_con` | efecto | 37 |
+| `reduce` | efecto | 31 |
+| `aplica_a` | estructura | 29 |
+| `tiene_limite` | metodo | 20 |
 | `contradice` | evidencia | 14 |
 | `modera` | efecto | 13 |
 | `respalda` | evidencia | 11 |
-| `mide` | metodo | 9 |
-| `es_tipo_de` | estructura | 7 |
+| `mide` | metodo | 10 |
+| `es_tipo_de` | estructura | 8 |
+| `media` | efecto | 8 |
 | `origina_en` | metodo | 6 |
-| `media` | efecto | 6 |
 | `refuta` | evidencia | 6 |
-| `parte_de` | estructura | 1 |
+| `parte_de` | estructura | 2 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
@@ -89,6 +89,7 @@
 | Pensamiento crítico | F-492, F-493 |
 | Alfabetización en IA (intervención ligera) | F-494, F-500 |
 | Litigios y cartas de fiscales por adulación de chatbots | F-496, F-497 |
+| Demanda de seguros | F-3, F-221 |
 | Divulgación clara y saliente de un producto financiero | F-9, F-10 |
 | Los mandatos de 'explicar mejor' fracasan sistemáticamente | F-9, F-10 |
 | Adopción de la telemedicina en Perú | F-40, F-41 |
@@ -103,6 +104,9 @@
 | Percepción precisa del riesgo | F-122, F-123 |
 | Divulgación de datos personales | F-142, F-143 |
 | La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad) | F-143, F-144 |
+| Número ancla visible antes de juzgar un precio | F-175, F-220 |
+| Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión) | F-221, F-223 |
+| Confianza del consumidor en la aseguradora | F-334, F-335 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -116,7 +120,7 @@
   - Tensión posiblemente parcial, inferida de las fichas: F-239 propone una mediación en una muestra; F-240 dice que la base de mecanismos es débil en la literatura.
   - *Resolución (2026-10-02):* Compatibles: F-239 prueba una mediación en una sola muestra (160 estudiantes, 62 proyectos); F-240 es una revisión que dice que los mecanismos no están establecidos en general. Una mediación en un estudio no establece el mecanismo; F-240 no se leyó más allá de la ficha.
 - **Las explicaciones rara vez producen desempeño complementario** —contradice→ **Las explicaciones mejoran la decisión humano-IA** (F-244, causal) · **estado: reconciliada**
-  - No produjeron desempeño complementario humano-IA en el experimento (CHI 2021).
+  - Con una IA de precisión comparable a la humana hubo mejora complementaria por la IA, pero las explicaciones no la aumentaron (tres conjuntos de datos).
   - *Resolución (2026-10-02):* El moderador es el costo-beneficio de involucrarse (dificultad de la tarea). F-244: tareas de sentido común, sin ventaja de las explicaciones frente a mostrar la confianza. F-246: las explicaciones reducen la sobre-confianza solo en la tarea difícil de un laberinto. Resultados distintos (precisión de equipo vs. sobre-confianza) y tareas distintas, no una contradicción.
 - **La IA cobra un impuesto de margen a las herramientas de diseño (H32)** —contradice→ **El mercado descuenta disrupción de IA sobre la demanda (H13)** (F-470, teorica) · **estado: mecanismo_en_disputa**
   - Explicación alternativa del mecanismo (no del resultado): la caída se atribuye al costo de IA sobre el margen, no a una pérdida de demanda. La atribución es lectura de prensa.
@@ -230,6 +234,12 @@
   - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
 - ✅ **F-176** (2026-10-03, cerrada): La ficha dice '(autor vía ResearchGate / revista académica)' y año 's.f.'. La autora es Simona Romani; Journal of Product & Brand Management 15(2/3):130-138, 2006.
   - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
+- ⚠️ **F-221** (2026-10-03, abierta): La ficha atribuye a Prospect Theory (1979) que las pérdidas pesan 'aprox. 2:1' frente a ganancias. El resumen de 1979 solo dice que la función de valor es más empinada para pérdidas; la estimación ~2,25 viene de Tversky y Kahneman (1992), 'Advances in prospect theory'. Es una cifra mal atribuida, no inventada.
+- ✅ **F-252** (2026-10-03, cerrada): Autoría 'Varios' → Lloyd, Kenny y Hyett (2021).
+  - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 (regla permanente de datos bibliográficos).
+- ✅ **F-335** (2026-10-03, cerrada): Autoría 'Zheng, B. et al.', año '~2002' y título 'A Measure of Trust in Insurers' → Zheng, Hall, Dugan, Kidd y Levine (2002), 'Development of a scale to measure patients' trust in health insurers'.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente).
+- ⚠️ **F-334** (2026-10-03, abierta): Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales.
 
 ## 7. Registro de barridos
 
@@ -253,6 +263,8 @@
 | 2026-10-03 | F-122, F-123, F-141, F-142, F-143 | 8 | – | Pase de profundidad (relaciones.py next --mejorar): ayudas de decisión, pictogramas de riesgo y pie en la puerta para datos personales. Resúmenes oficiales vía búsqueda. Tres fichas con autoría o hall |
 | 2026-10-03 | F-144, F-147, F-148, F-150, F-153 | 5 | F-153 | Pase de profundidad (relaciones.py next --mejorar): paradoja de la privacidad y escalas para evaluar agentes conversacionales. Resúmenes oficiales vía búsqueda. F-153 queda sin relaciones (solo método |
 | 2026-10-03 | F-154, F-156, F-159, F-175, F-176 | 7 | F-154 | Pase de profundidad: evaluación de textos y chatbots con LLM, anclaje de precio y publicidad engañosa. Resúmenes oficiales vía búsqueda. F-154 sin relaciones (solo autoría). |
+| 2026-10-03 | F-220, F-221, F-222, F-223, F-224, F-225, F-228, F-229 | 10 | – | Lote de amplitud con resúmenes oficiales: fundamentos conductuales del Playbook del Asesor (anclaje, aversión a la pérdida, encuadre, dotación, prueba social, fluidez, carga cognitiva) y segmentación  |
+| 2026-10-03 | F-230, F-248, F-252, F-334, F-335, F-337 | 7 | – | Lote de amplitud (fuentes nuevas) con resúmenes oficiales. F-250 se dejó fuera: solo se ubicó la autoría, no los resultados. |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

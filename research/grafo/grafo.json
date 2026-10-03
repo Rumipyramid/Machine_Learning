@@ -2292,7 +2292,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The impact of design thinking and its underlying theoretical mechanisms: A review (Creativity and Innovation Management)",
-   "autor": "Mayer, S. et al.",
+   "autor": "Mayer, S. & Schwemmle, M. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro decía 'Mayer, S. et al.'",
    "anio": "2025",
    "huerfana": false
   },
@@ -10390,7 +10390,7 @@
      "cites": 272
     },
     "fecha": "2026-10-03",
-    "commit": "2b58d80",
+    "commit": "19a3632",
     "fuente": "git"
    }
   ],
