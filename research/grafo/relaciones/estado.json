@@ -186,7 +186,8 @@
    "fecha": "2026-10-02",
    "f": "F-241",
    "detalle": "Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo. Actualización 2026-10-02: la afirmación de que los menos educados fueron más susceptibles a patterns leves SÍ figura en el abstract; las cifras exactas siguen sin confirmarse. Reintento 2026-10-02: el texto completo (chicagounbound.uchicago.edu y content.naic.org) quedó bloqueado por la red; el abstract confirma 'más del doble' y 'casi cuatro veces' y que los menos educados fueron más susceptibles a los patterns leves; las cifras exactas siguen sin confirmar.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Declarada permanente (2026-10-03): tras 4 rutas (OUP, SSRN, oag.ca.gov, citizen.org) todas bloqueadas, las cifras exactas 11,3/25,8/41,9% no son verificables desde este entorno. Lo verificado (abstract): más del doble y casi cuatro veces; menos educados más susceptibles a los leves; los agresivos generan backlash. La ficha del ledger se reescribió con relativos y la reserva. Reabrir solo si el usuario aporta el PDF."
   },
   {
    "fecha": "2026-10-02",
@@ -199,7 +200,8 @@
    "fecha": "2026-10-02",
    "f": "F-238",
    "detalle": "La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados). Reintento 2026-10-02: Crossref bloqueado; la búsqueda confirma revista (*Innovation*), año 2025, 1.659 firmas y el diseño, pero no los nombres de los autores.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada con reserva (2026-10-03): dos búsquedas independientes dan Hur, Kim, Hwang & Kim (Innovation, 19-ago-2025, DOI 10.1080/14479338.2025.2547575); la página de la revista sigue bloqueada. Ficha corregida."
   },
   {
    "fecha": "2026-10-02",
@@ -265,8 +267,8 @@
   {
    "triple": "T-61",
    "estado": "mecanismo_en_disputa",
-   "fecha": "2026-10-02",
-   "nota": "No contradice el resultado de H13 (se cumplió), sino su mecanismo: costo de IA sobre el margen vs. descuento por disrupción de la demanda. Se resuelve con el margen bruto del Q3 (nov-2026); hoy la atribución es lectura de prensa."
+   "fecha": "2026-10-03",
+   "nota": "No contradice el resultado de H13 (se cumplió), sino su mecanismo: costo de IA sobre el margen vs. descuento por disrupción de la demanda. Se resuelve con el margen bruto del Q3 (nov-2026); hoy la atribución es lectura de prensa. | 2026-10-03: la guía del Q3 apunta a margen bruto ~86% vs. 90% por costos de IA (F-526, guía no resultado). Declarado pendiente con fecha: se resuelve con el margen bruto reportado del Q3 (≈ nov-2026); no es resoluble leyendo más."
   },
   {
    "triple": "T-69",
@@ -325,8 +327,8 @@
   {
    "triple": "T-173",
    "estado": "sin_verificar",
-   "fecha": "2026-10-02",
-   "nota": "Contradicción potencial de alto impacto (+1,1% vs. +8-9% esperado): la nota de prensa no tiene fecha confirmada y no se abrió la estadística de la SBS. Pendiente de verificación con la fuente oficial antes de modificar la tesis del mercado peruano."
+   "fecha": "2026-10-03",
+   "nota": "Verificación 2026-10-03: una segunda búsqueda independiente reproduce +1,1% (S/9.451 M), utilidad S/1.391 M (+7,5%), penetración 2,01% y densidad US$212, lo que apunta a que la cifra viene de un reporte con datos de la SBS; pero gestion.pe, sbs.gob.pe y PCR están bloqueados y la tabla oficial no se abrió. Sigue sin_verificar hasta contrastar con la SBS (el usuario puede aportar el PDF/boletín del 2T 2026). La tesis de mercado peruano ya lleva la reserva."
   }
  ]
 }

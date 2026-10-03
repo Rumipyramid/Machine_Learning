@@ -95,7 +95,7 @@
    "id": "tendencias-diseno-innovacion",
    "type": "node",
    "lines": 1913,
-   "cites": 213,
+   "cites": 214,
    "design": true
   },
   {
@@ -2274,7 +2274,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Unravelling the impact of design-engineering capability on firm performance",
-   "autor": "Autoría no verificada (bloqueo de acceso) — revista *Innovation: Organization & Management*",
+   "autor": "Hur, J., Kim, G., Hwang, J. & Kim, K. (autoría reportada por dos búsquedas independientes el 2026-10-03; página de revista bloqueada) — revista *Innovation: Organization & Management* (DOI 10.1080/14479338.2025.2547575)",
    "anio": "2025",
    "huerfana": false
   },
@@ -4859,6 +4859,15 @@
    "titulo": "Innovation, Firm Performance, and Appropriation: A Meta-Analysis",
    "autor": "Autoría no capturada — International Journal of Innovation Management (World Scientific)",
    "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-526",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Figma Q2 earnings call puts AI monetization broadening in focus",
+   "autor": "Cobertura de la llamada de resultados Q2 2026 de Figma (Nasdaq / Eastern Progress; resumen de búsqueda, el 8-K de la SEC no se abrió por bloqueo)",
+   "anio": "2026",
    "huerfana": false
   }
  ],
@@ -7771,6 +7780,11 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-525",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-526",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -8002,12 +8016,13 @@
    },
    {
     "fecha": "2026-10-03",
-    "nuevas": 10,
-    "acumuladas": 525,
+    "nuevas": 11,
+    "acumuladas": 526,
     "AB": 10,
     "rigor": {
      "A": 5,
-     "B": 5
+     "B": 5,
+     "C": 1
     }
    }
   ],
@@ -9963,42 +9978,81 @@
     "fuente": "git"
    },
    {
-    "fuentes": 468,
+    "fuentes": 515,
     "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
+     "B": 91,
+     "A": 139,
+     "C": 121,
+     "D": 121,
+     "?": 14,
+     "E": 29
     },
-    "nodes": 15,
+    "nodes": 16,
     "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
+    "wikilinks": 84,
+    "derivaciones": 11,
+    "fuentes_citadas_en_nodes": 404,
     "diseno": {
      "hyp": {
       "abierta": 19,
-      "parcial": 7,
-      "respaldada": 3,
+      "parcial": 8,
+      "respaldada": 4,
       "refutada": 1,
       "otra": 1
      },
      "rules": 22,
-     "rules_cited": 5,
+     "rules_cited": 22,
      "scale": {
-      "🟢": 15,
-      "🟡": 8,
+      "🟢": 16,
+      "🟡": 10,
       "🔴": 15,
       "⚔️": 4
      },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
+     "iterations": 5,
+     "lines": 1898,
+     "cites": 203
     },
     "fecha": "2026-10-02",
-    "commit": "54232af",
+    "commit": "e32e8e5",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 525,
+    "rigor": {
+     "B": 96,
+     "A": 144,
+     "C": 121,
+     "D": 121,
+     "?": 14,
+     "E": 29
+    },
+    "nodes": 16,
+    "outputs": 4,
+    "wikilinks": 84,
+    "derivaciones": 11,
+    "fuentes_citadas_en_nodes": 414,
+    "diseno": {
+     "hyp": {
+      "abierta": 20,
+      "parcial": 8,
+      "respaldada": 4,
+      "refutada": 1,
+      "otra": 1
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 1913,
+     "cites": 213
+    },
+    "fecha": "2026-10-03",
+    "commit": "e2fd2d7",
     "fuente": "git"
    }
   ],

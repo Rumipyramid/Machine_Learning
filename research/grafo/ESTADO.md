@@ -10,11 +10,11 @@
 |---|---|---|
 | Nodes (`_nodes/`) | 16 | 6,826 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 525 | 🟢A 144 · 🔵B 96 · 🟡C 121 · 🟠D 121 · 🔴E 29 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 526 | 🟢A 144 · 🔵B 96 · 🟡C 122 · 🟠D 121 · 🔴E 29 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
-| Fuentes citadas por ≥1 node | 414 de 525 | 79% del ledger; **111 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 415 de 526 | 79% del ledger; **111 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 41 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 95 de 525 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 95 de 526 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -23,7 +23,7 @@
 |---|---|---|
 | Iteraciones de bitácora | 5 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02) | cuántas veces se confrontó el node |
 | Tamaño | 1,913 líneas | crecimiento ≠ calidad; ver trazabilidad |
-| Fuentes citadas explícitamente | 213 | F-n individuales dentro del node |
+| Fuentes citadas explícitamente | 214 | F-n individuales dentro del node |
 | …de rigor A/B | 92 (43%) | solidez de la base |
 | Hipótesis vivas | 34: abierta 20 · parcial 8 · respaldada 4 · refutada 1 | tablero §6 |
 | **Falsabilidad ejercida** | 41% (14/34) | hipótesis que ya se movieron de `abierta` |
@@ -38,7 +38,7 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 20 | 0.088 | ✅ |
+| `conducta-humano-ia` | 20 | 0.087 | ✅ |
 | `behavioral-design-estado-disciplina` | 6 | 0.028 | ✅ |
 | `mecanismos-seguros-salud` | 6 | 0.023 | ✅ |
 | `material-visual-venta-consultiva` | 5 | 0.022 | ✅ |
@@ -80,7 +80,7 @@
 | 2026-07-29 | 19 | 398 | 7 | █████ |
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
 | 2026-10-02 | 47 | 515 | 20 | ████████████ |
-| 2026-10-03 | 10 | 525 | 10 | ██ |
+| 2026-10-03 | 11 | 526 | 10 | ███ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -89,6 +89,8 @@
 | Fecha | Commit | Fuentes | Nodes | Outputs | Wikilinks | Fuentes citadas | Diseño: líneas | H abiertas | H resueltas | Reglas |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-13 | `8a90dc2` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
+| 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
+| 2026-10-03 | `e2fd2d7` | 525 | 16 | 4 | 84 | 414 | 1913 | 20 | 14 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -118,7 +120,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 1913 | 213 | 92 | 8/8 | 2026-10-02 | 2026-10-03 v4.1 |
+| `tendencias-diseno-innovacion` | 1913 | 214 | 92 | 8/8 | 2026-10-03 | 2026-10-03 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
 | `conducta-humano-ia` | 139 | 35 | 25 | 5/5 | 2026-10-02 | 2026-10-02 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |

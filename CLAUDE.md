@@ -53,7 +53,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 
 ## 📊 Datos clave — seguros (Perú vs. Mundo)
 
-- **Penetración:** Perú ~**2.0-2.1%** del PBI (SBS: 2,06% a set-2025; est. 2,01% al 2T 2026) · LatAm 3.2% · Chile 4.6%. CAGR ~12% proyectado (2026-2031) ⚠️ **a revisar**: una nota de prensa reporta primas del 1S 2026 con solo +1,1% (F-506, sin verificar); Rímac utilidad −40% en el 2T 2026 (F-504).
+- **Penetración:** Perú ~**2.0-2.1%** del PBI (SBS: 2,06% a set-2025; est. 2,01% al 2T 2026) · LatAm 3.2% · Chile 4.6%. CAGR ~12% proyectado (2026-2031) ⚠️ **a revisar**: una nota de prensa reporta primas del 1S 2026 con solo +1,1% (F-506; corroborada por 2ª búsqueda el 2026-10-03, falta la tabla oficial de la SBS); Rímac utilidad −40% en el 2T 2026 (F-504).
 - **Confianza:** plena ~**23-25%**; ~**48% desconfía** (causa #1: falta de información).
   Global cross-industria ~39%. El **broker eleva la confianza** (intermediación).
 - **Tenencia:** ~**4/10** tiene/tuvo seguro en 2 años. SOAT conocido por **94%**.
