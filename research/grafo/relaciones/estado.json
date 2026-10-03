@@ -577,7 +577,8 @@
    "fecha": "2026-10-03",
    "f": "F-560",
    "detalle": "El resumen del ledger dice 'sin la entropía de las respuestas humanas'. El resumen oficial dice lo contrario: corregido el orden, los modelos tienden a respuestas **uniformemente aleatorias** (más dispersión, no menos). Es un hallazgo mal registrado: su corrección requiere autorización del usuario.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: hallazgo corregido en el ledger el 2026-10-03 con autorización del usuario (respuestas casi uniformes al aleatorizar el orden, con sesgos de orden y etiqueta)."
   }
  ],
  "resoluciones": [

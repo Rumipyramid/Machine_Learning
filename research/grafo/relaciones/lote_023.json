@@ -1,38 +1,197 @@
 {
  "fecha": "2026-10-03",
- "f_ids": ["F-560", "F-572", "F-579", "F-585", "F-580"],
+ "f_ids": [
+  "F-560",
+  "F-572",
+  "F-579",
+  "F-585",
+  "F-580"
+ ],
  "entidades": [
-  {"id": "sesgo_orden_etiqueta", "nombre": "Sesgos de orden y etiqueta en las respuestas de LLMs a encuestas (p. ej., hacia la opción 'A')", "tipo": "limitacion"},
-  {"id": "respuestas_casi_uniformes", "nombre": "Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones", "tipo": "resultado"},
-  {"id": "escala_modelo_llm", "nombre": "Tamaño y competencia lingüística de los modelos de lenguaje", "tipo": "concepto"},
-  {"id": "errores_intuitivos_llm", "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)", "tipo": "resultado"},
-  {"id": "modelos_chatgpt", "nombre": "Modelos ChatGPT-3.5 y 4", "tipo": "intervencion"},
-  {"id": "delegacion_ia_metas", "nombre": "Delegar en una máquina por metas de alto nivel o aprendizaje supervisado (sin instrucciones explícitas)", "tipo": "intervencion"},
-  {"id": "peticiones_trampa", "nombre": "Peticiones de trampa de los principales humanos", "tipo": "resultado"},
-  {"id": "agentes_maquina_delegados", "nombre": "Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas", "tipo": "intervencion"},
-  {"id": "cumplimiento_deshonesto", "nombre": "Cumplimiento de instrucciones totalmente deshonestas", "tipo": "resultado"},
-  {"id": "salvaguardas_especificas", "nombre": "Salvaguardas prohibitivas específicas de la tarea", "tipo": "intervencion"},
-  {"id": "preferencia_candidato", "nombre": "Preferencia por el candidato defendido", "tipo": "resultado"},
-  {"id": "afirmaciones_inexactas_ia", "nombre": "Afirmaciones inexactas en la persuasión de la IA", "tipo": "resultado"},
-  {"id": "asistente_ia_soporte", "nombre": "Asistente conversacional de IA generativa para agentes de soporte", "tipo": "intervencion"},
-  {"id": "casos_resueltos_hora", "nombre": "Casos de clientes resueltos por hora", "tipo": "resultado"},
-  {"id": "experiencia_trabajador", "nombre": "Experiencia y habilidad previa del trabajador", "tipo": "constructo"}
+  {
+   "id": "sesgo_orden_etiqueta",
+   "nombre": "Sesgos de orden y etiqueta en las respuestas de LLMs a encuestas (p. ej., hacia la opción 'A')",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "respuestas_casi_uniformes",
+   "nombre": "Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones",
+   "tipo": "resultado"
+  },
+  {
+   "id": "escala_modelo_llm",
+   "nombre": "Tamaño y competencia lingüística de los modelos de lenguaje",
+   "tipo": "concepto"
+  },
+  {
+   "id": "errores_intuitivos_llm",
+   "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "modelos_chatgpt",
+   "nombre": "Modelos ChatGPT-3.5 y 4",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "delegacion_ia_metas",
+   "nombre": "Delegar en una máquina por metas de alto nivel o aprendizaje supervisado (sin instrucciones explícitas)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "peticiones_trampa",
+   "nombre": "Peticiones de trampa de los principales humanos",
+   "tipo": "resultado"
+  },
+  {
+   "id": "agentes_maquina_delegados",
+   "nombre": "Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cumplimiento_deshonesto",
+   "nombre": "Cumplimiento de instrucciones totalmente deshonestas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "salvaguardas_especificas",
+   "nombre": "Salvaguardas prohibitivas específicas de la tarea",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "preferencia_candidato",
+   "nombre": "Preferencia por el candidato defendido",
+   "tipo": "resultado"
+  },
+  {
+   "id": "afirmaciones_inexactas_ia",
+   "nombre": "Afirmaciones inexactas en la persuasión de la IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "asistente_ia_soporte",
+   "nombre": "Asistente conversacional de IA generativa para agentes de soporte",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "casos_resueltos_hora",
+   "nombre": "Casos de clientes resueltos por hora",
+   "tipo": "resultado"
+  },
+  {
+   "id": "experiencia_trabajador",
+   "nombre": "Experiencia y habilidad previa del trabajador",
+   "tipo": "constructo"
+  }
  ],
  "triples": [
-  {"s": "muestras_sinteticas_llm", "p": "tiene_limite", "o": "sesgo_orden_etiqueta", "f": "F-560", "apoyo": "NeurIPS 2024: en 43 modelos, las respuestas a la ACS del Censo de EE.UU. están gobernadas por sesgos de orden y etiqueta (p. ej., hacia respuestas etiquetadas 'A').", "lectura": "abstract", "fuerza": "observacional"},
-  {"s": "respuestas_casi_uniformes", "p": "contradice", "o": "c_sinteticas_menos_varianza", "f": "F-560", "apoyo": "NeurIPS 2024: al aleatorizar el orden de respuesta, los modelos tienden a respuestas uniformemente aleatorias sin importar tamaño ni datos; parecen representar mejor a los subgrupos cuyas estadísticas están más cerca de la uniforme.", "lectura": "abstract", "fuerza": "observacional"},
-  {"s": "escala_modelo_llm", "p": "aumenta", "o": "errores_intuitivos_llm", "f": "F-572", "apoyo": "Nature Computational Science 2023: a medida que los modelos GPT crecen en tamaño y competencia lingüística, muestran más pensamiento intuitivo tipo sistema 1 y sus errores.", "lectura": "abstract", "fuerza": "descriptiva"},
-  {"s": "modelos_chatgpt", "p": "reduce", "o": "errores_intuitivos_llm", "f": "F-572", "apoyo": "Nature Computational Science 2023: ChatGPT-3.5 y 4 tienden a responder bien y evitan las trampas, incluso cuando se les impide razonar en cadena.", "lectura": "abstract", "fuerza": "descriptiva"},
-  {"s": "delegacion_ia_metas", "p": "aumenta", "o": "peticiones_trampa", "f": "F-579", "apoyo": "Nature 2025: las peticiones de trampa aumentan cuando el principal puede inducir la deshonestidad sin decirle a la máquina qué hacer (aprendizaje supervisado o metas de alto nivel), con delegación voluntaria u obligatoria.", "lectura": "abstract", "fuerza": "causal"},
-  {"s": "agentes_maquina_delegados", "p": "aumenta", "o": "cumplimiento_deshonesto", "f": "F-579", "apoyo": "Nature 2025: las máquinas fueron mucho más propensas que los agentes humanos a ejecutar instrucciones totalmente deshonestas.", "lectura": "abstract", "fuerza": "causal"},
-  {"s": "salvaguardas_especificas", "p": "reduce", "o": "cumplimiento_deshonesto", "f": "F-579", "apoyo": "Nature 2025: el cumplimiento se puede frenar, pero por lo general no eliminar, con salvaguardas prohibitivas específicas de la tarea.", "lectura": "abstract", "fuerza": "causal"},
-  {"s": "persuasion_ia", "p": "aumenta", "o": "preferencia_candidato", "f": "F-585", "apoyo": "Nature 2025: experimentos preregistrados en las elecciones de EE.UU. 2024, Canadá 2025 y Polonia 2025; efectos sobre la preferencia de candidato mayores que los de los anuncios de video tradicionales; la IA usó hechos y evidencia, no técnicas psicológicas sofisticadas.", "lectura": "abstract", "fuerza": "causal"},
-  {"s": "persuasion_ia", "p": "asocia_con", "o": "afirmaciones_inexactas_ia", "f": "F-585", "apoyo": "Nature 2025: los modelos que defendían a candidatos de derecha hicieron más afirmaciones inexactas en los tres países.", "lectura": "abstract", "fuerza": "observacional"},
-  {"s": "asistente_ia_soporte", "p": "aumenta", "o": "casos_resueltos_hora", "f": "F-580", "apoyo": "QJE 2025: con la introducción escalonada del asistente en 5.172 agentes de soporte, los casos resueltos por hora suben ≈14% en promedio.", "lectura": "abstract", "fuerza": "causal"},
-  {"s": "experiencia_trabajador", "p": "modera", "o": "casos_resueltos_hora", "f": "F-580", "apoyo": "QJE 2025: los novatos y menos hábiles mejoran ≈34%; los más experimentados casi no cambian (la IA difunde el saber tácito de los mejores).", "lectura": "abstract", "fuerza": "causal"}
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "sesgo_orden_etiqueta",
+   "f": "F-560",
+   "apoyo": "NeurIPS 2024: en 43 modelos, las respuestas a la ACS del Censo de EE.UU. están gobernadas por sesgos de orden y etiqueta (p. ej., hacia respuestas etiquetadas 'A').",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "respuestas_casi_uniformes",
+   "p": "contradice",
+   "o": "c_sinteticas_menos_varianza",
+   "f": "F-560",
+   "apoyo": "NeurIPS 2024: al aleatorizar el orden de respuesta, los modelos tienden a respuestas uniformemente aleatorias sin importar tamaño ni datos; parecen representar mejor a los subgrupos cuyas estadísticas están más cerca de la uniforme.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "escala_modelo_llm",
+   "p": "aumenta",
+   "o": "errores_intuitivos_llm",
+   "f": "F-572",
+   "apoyo": "Nature Computational Science 2023: a medida que los modelos GPT crecen en tamaño y competencia lingüística, muestran más pensamiento intuitivo tipo sistema 1 y sus errores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "reduce",
+   "o": "errores_intuitivos_llm",
+   "f": "F-572",
+   "apoyo": "Nature Computational Science 2023: ChatGPT-3.5 y 4 tienden a responder bien y evitan las trampas, incluso cuando se les impide razonar en cadena.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "delegacion_ia_metas",
+   "p": "aumenta",
+   "o": "peticiones_trampa",
+   "f": "F-579",
+   "apoyo": "Nature 2025: las peticiones de trampa aumentan cuando el principal puede inducir la deshonestidad sin decirle a la máquina qué hacer (aprendizaje supervisado o metas de alto nivel), con delegación voluntaria u obligatoria.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "agentes_maquina_delegados",
+   "p": "aumenta",
+   "o": "cumplimiento_deshonesto",
+   "f": "F-579",
+   "apoyo": "Nature 2025: las máquinas fueron mucho más propensas que los agentes humanos a ejecutar instrucciones totalmente deshonestas.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "salvaguardas_especificas",
+   "p": "reduce",
+   "o": "cumplimiento_deshonesto",
+   "f": "F-579",
+   "apoyo": "Nature 2025: el cumplimiento se puede frenar, pero por lo general no eliminar, con salvaguardas prohibitivas específicas de la tarea.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "persuasion_ia",
+   "p": "aumenta",
+   "o": "preferencia_candidato",
+   "f": "F-585",
+   "apoyo": "Nature 2025: experimentos preregistrados en las elecciones de EE.UU. 2024, Canadá 2025 y Polonia 2025; efectos sobre la preferencia de candidato mayores que los de los anuncios de video tradicionales; la IA usó hechos y evidencia, no técnicas psicológicas sofisticadas.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "persuasion_ia",
+   "p": "asocia_con",
+   "o": "afirmaciones_inexactas_ia",
+   "f": "F-585",
+   "apoyo": "Nature 2025: los modelos que defendían a candidatos de derecha hicieron más afirmaciones inexactas en los tres países.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "asistente_ia_soporte",
+   "p": "aumenta",
+   "o": "casos_resueltos_hora",
+   "f": "F-580",
+   "apoyo": "QJE 2025: con la introducción escalonada del asistente en 5.172 agentes de soporte, los casos resueltos por hora suben ≈14% en promedio.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "experiencia_trabajador",
+   "p": "modera",
+   "o": "casos_resueltos_hora",
+   "f": "F-580",
+   "apoyo": "QJE 2025: los novatos y menos hábiles mejoran ≈34%; los más experimentados casi no cambian (la IA difunde el saber tácito de los mejores).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
  ],
  "discrepancias": [
-  {"f": "F-560", "detalle": "El resumen del ledger dice 'sin la entropía de las respuestas humanas'. El resumen oficial dice lo contrario: corregido el orden, los modelos tienden a respuestas **uniformemente aleatorias** (más dispersión, no menos). Es un hallazgo mal registrado: su corrección requiere autorización del usuario.", "estado": "abierta"}
+  {
+   "f": "F-560",
+   "detalle": "El resumen del ledger dice 'sin la entropía de las respuestas humanas'. El resumen oficial dice lo contrario: corregido el orden, los modelos tienden a respuestas **uniformemente aleatorias** (más dispersión, no menos). Es un hallazgo mal registrado: su corrección requiere autorización del usuario.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada el 2026-10-03: ficha corregida con autorización del usuario."
+  }
  ],
  "notas": "Lote de la tanda de convergencia psico-econ-IA con resúmenes oficiales verificados el 2026-10-03 (NeurIPS, Nature Computational Science, Nature, QJE). F-560 contradice la afirmación de varianza comprimida de F-552/F-553: los estudios miden cosas distintas (persona simulada con termómetros vs. opción múltiple de la ACS sin persona). El node de convergencia citaba F-560 como apoyo de 'varianza comprimida' (§2.1, §2.6): se corrige en el node. La ficha del ledger queda con discrepancia abierta hasta que el usuario autorice."
 }

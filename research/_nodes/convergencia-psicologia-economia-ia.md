@@ -222,7 +222,7 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 | # | Fecha | Foco | Qué cambió | Pendiente |
 |---|---|---|---|---|
 | 1 | 2026-10-03 | Creación del node con `/trinidad`: tres pistas en paralelo sobre cinco frentes | **Creación.** 103 fuentes (F-543 a F-645); 8 hipótesis (PE1-PE8); implicaciones para `lapuerta` (§6) | Leer textos completos (todo fue por resumen); verificar la publicación de F-550 en *Nature* y la de F-553; hilos reales de Reddit/HN; datos de Perú y LatAm; probar PE1-PE2 con `lapuerta` |
-| 1b | 2026-10-03 | Paso al grafo semántico (lotes 022-023): 10 fuentes con resumen oficial verificado | **Autocorrección:** F-560 decía lo contrario de lo que se le atribuía (§2.1). F-553 confirmado en *Nature Machine Intelligence* 2025. Centaur vs. su crítica queda como tensión abierta (T-248, mecanismo en disputa); la refutación del reemplazo para inferencia queda resuelta (T-252) | Autorizar la corrección de la ficha F-560 en el ledger; leer el resumen oficial de F-564 |
+| 1b | 2026-10-03 | Paso al grafo semántico (lotes 022-023): 10 fuentes con resumen oficial verificado | **Autocorrección:** F-560 decía lo contrario de lo que se le atribuía (§2.1). F-553 confirmado en *Nature Machine Intelligence* 2025. Centaur vs. su crítica queda como tensión abierta (T-248, mecanismo en disputa); la refutación del reemplazo para inferencia queda resuelta (T-252) | Leer el resumen oficial de F-564 (la ficha F-560 se corrigió en el ledger con autorización del usuario) |
 
 ## 10. Limitaciones
 
