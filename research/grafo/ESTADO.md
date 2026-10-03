@@ -1,6 +1,6 @@
 # 🕸️ Grafo del segundo cerebro — ESTADO
 
-*Generado: 2026-10-02 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
+*Generado: 2026-10-03 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
 
 > **Transparencia:** cada cifra de este reporte sale de contar archivos del repo. Lo que no se puede medir está listado en §7. Un número alto aquí significa *más material y mejor enlazado*, **no** que el conocimiento sea *verdadero* ni que haya tenido impacto fuera del repo.
 
@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 16 | 6,811 líneas |
+| Nodes (`_nodes/`) | 16 | 6,826 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 515 | 🟢A 139 · 🔵B 91 · 🟡C 121 · 🟠D 121 · 🔴E 29 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 525 | 🟢A 144 · 🔵B 96 · 🟡C 121 · 🟠D 121 · 🔴E 29 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
-| Fuentes citadas por ≥1 node | 404 de 515 | 78% del ledger; **111 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 414 de 525 | 79% del ledger; **111 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 41 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 95 de 515 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 95 de 525 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -22,11 +22,11 @@
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 5 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02) | cuántas veces se confrontó el node |
-| Tamaño | 1,898 líneas | crecimiento ≠ calidad; ver trazabilidad |
-| Fuentes citadas explícitamente | 203 | F-n individuales dentro del node |
-| …de rigor A/B | 82 (40%) | solidez de la base |
-| Hipótesis vivas | 33: abierta 19 · parcial 8 · respaldada 4 · refutada 1 | tablero §6 |
-| **Falsabilidad ejercida** | 42% (14/33) | hipótesis que ya se movieron de `abierta` |
+| Tamaño | 1,913 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Fuentes citadas explícitamente | 213 | F-n individuales dentro del node |
+| …de rigor A/B | 92 (43%) | solidez de la base |
+| Hipótesis vivas | 34: abierta 20 · parcial 8 · respaldada 4 · refutada 1 | tablero §6 |
+| **Falsabilidad ejercida** | 41% (14/34) | hipótesis que ya se movieron de `abierta` |
 | **Tasa de autocorrección** | 7% (1/14) | de las resueltas, cuántas se refutaron: 0% sostenido sería señal de confirmación sesgada |
 | Reglas de criterio | 22 | §7 |
 | **Trazabilidad de reglas** | 100% (22/22) | reglas con ≥1 F-n en su propio párrafo |
@@ -38,12 +38,12 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 20 | 0.092 | ✅ |
-| `behavioral-design-estado-disciplina` | 6 | 0.029 | ✅ |
-| `mecanismos-seguros-salud` | 6 | 0.024 | ✅ |
-| `material-visual-venta-consultiva` | 5 | 0.023 | ✅ |
-| `proyecto-back-to-basics-ffvv-vida` | 3 | 0.013 | ✅ |
-| `evaluacion-calidad-agentes-conversacionales-ia` | 1 | 0.005 | ✅ |
+| `conducta-humano-ia` | 20 | 0.088 | ✅ |
+| `behavioral-design-estado-disciplina` | 6 | 0.028 | ✅ |
+| `mecanismos-seguros-salud` | 6 | 0.023 | ✅ |
+| `material-visual-venta-consultiva` | 5 | 0.022 | ✅ |
+| `proyecto-back-to-basics-ffvv-vida` | 3 | 0.012 | ✅ |
+| `evaluacion-calidad-agentes-conversacionales-ia` | 1 | 0.004 | ✅ |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ❌ sin enlace |
 | `glosario-seguro-salud-peru` | 0 | 0.0 | ❌ sin enlace |
 | `glosario-seguro-vida-peru` | 0 | 0.0 | ❌ sin enlace |
@@ -80,6 +80,7 @@
 | 2026-07-29 | 19 | 398 | 7 | █████ |
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
 | 2026-10-02 | 47 | 515 | 20 | ████████████ |
+| 2026-10-03 | 10 | 525 | 10 | ██ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -95,13 +96,13 @@
 
 | Métrica | Valor | Qué dice | Qué NO dice |
 |---|---|---|---|
-| M1 Base sólida (A+B / ledger) | 45% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
-| M2 Cobertura de citación | 78% | cuánto del ledger sostiene algún node | un node puede citar mal |
+| M1 Base sólida (A+B / ledger) | 46% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
+| M2 Cobertura de citación | 79% | cuánto del ledger sostiene algún node | un node puede citar mal |
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
-| M4 Falsabilidad ejercida (diseño) | 42% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
+| M4 Falsabilidad ejercida (diseño) | 41% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
 | M6 Integración (diseño↔resto) | 8/15 nodes enlazados; 6 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
-| M7 Lectura profunda (Lobo) | 169 fuentes leídas a fondo = 33% del ledger; 168 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
+| M7 Lectura profunda (Lobo) | 169 fuentes leídas a fondo = 32% del ledger; 168 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
 
@@ -117,7 +118,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 1898 | 203 | 82 | 8/8 | 2026-10-02 | 2026-10-02 v4.1 |
+| `tendencias-diseno-innovacion` | 1913 | 213 | 92 | 8/8 | 2026-10-02 | 2026-10-03 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
 | `conducta-humano-ia` | 139 | 35 | 25 | 5/5 | 2026-10-02 | 2026-10-02 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |

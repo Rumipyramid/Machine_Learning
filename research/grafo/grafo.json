@@ -94,8 +94,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1898,
-   "cites": 203,
+   "lines": 1913,
+   "cites": 213,
    "design": true
   },
   {
@@ -4770,6 +4770,96 @@
    "autor": "ILO · Banco Mundial",
    "anio": "2025",
    "huerfana": false
+  },
+  {
+   "id": "F-516",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "When combinations of humans and AI are useful: A systematic review and meta-analysis",
+   "autor": "Vaccaro, M., Almaatouq, A. & Malone, T. (Nature Human Behaviour)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-517",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Generative AI Makes Creative Output More Homogeneous",
+   "autor": "Autoría no capturada — ACM / Tilburg University",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-518",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Triggering the Personalization Backfire Effect: The Moderating Role of Situational Privacy Concern",
+   "autor": "Autoría no capturada — Behavioral Sciences (MDPI)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-519",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How Persuasive Is Personalized Advertising? A Meta-Analytic Review of Experimental Evidence of the Effects of Personalization on Ad Effectiv",
+   "autor": "Autoría no capturada — Journal of Advertising / Taylor & Francis",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-520",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "More is not better: Visual uncertainty cues and the fragility of trust calibration in LLM-assisted decision making",
+   "autor": "Autoría no capturada — ScienceDirect (revista de IA y conducta)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-521",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Who Is AI Replacing? The Impact of Generative AI on Online Freelancing Platforms",
+   "autor": "Demirci, O., Hannane, J. & Zhu, X. (versión de conferencia; publicado en Management Science)",
+   "anio": "2024-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-522",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Beyond One-Size-Fits-All: Profiling Designers' Adoption of Generative Artificial Intelligence in Professional Design Practice",
+   "autor": "Autoría no capturada — International Journal of Human–Computer Interaction (Taylor & Francis)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-523",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Impact of web accessibility on cognitive engagement in individuals without disabilities: Evidence from a psychophysiological study",
+   "autor": "Autoría no capturada — PLOS ONE",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-524",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Design thinking for innovation: context factors, process, and outcomes",
+   "autor": "Autoría no capturada — European Journal of Innovation Management",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-525",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Innovation, Firm Performance, and Appropriation: A Meta-Analysis",
+   "autor": "Autoría no capturada — International Journal of Innovation Management (World Scientific)",
+   "anio": "2016",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -7631,10 +7721,60 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-515",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-516",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-517",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-518",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-519",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-520",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-521",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-522",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-523",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-524",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-525",
+   "k": "cita"
   }
  ],
  "meta": {
-  "generado": "2026-10-02",
+  "generado": "2026-10-03",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -7858,6 +7998,16 @@
      "E": 1,
      "?": 1,
      "A": 5
+    }
+   },
+   {
+    "fecha": "2026-10-03",
+    "nuevas": 10,
+    "acumuladas": 525,
+    "AB": 10,
+    "rigor": {
+     "A": 5,
+     "B": 5
     }
    }
   ],
@@ -9854,7 +10004,7 @@
   ],
   "design": {
    "hyp": {
-    "abierta": 19,
+    "abierta": 20,
     "parcial": 8,
     "respaldada": 4,
     "refutada": 1,
@@ -9869,7 +10019,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1898,
+   "lines": 1913,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

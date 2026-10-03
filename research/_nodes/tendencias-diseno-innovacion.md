@@ -9,7 +9,7 @@
 > Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
 > demostrado y cuáles son propuestas todavía sin respaldo?**
 > Fuentes registradas en `research/fuentes/codice.md` (F-237 a F-328 · iter. 2: F-380 a F-398 ·
-> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · iter. 5: F-469 a F-476 · addendum 5b: F-509 a F-510 · 5c: puente con fuentes A/B ya registradas, §2.6 · 5d: F-511 a F-515, §2.7).
+> iter. 3: F-399 a F-429 · 💡 iter. 4: F-430 a F-468 · iter. 5: F-469 a F-476 · addendum 5b: F-509 a F-510 · 5c: puente con fuentes A/B ya registradas, §2.6 · 5d: F-511 a F-515, §2.7 · 5e: F-516 a F-525, §2.8).
 >
 > **Lo último (iteración 4, 2026-08-02) — el alcance se amplió a 💡 innovación y la tesis pasó la
 > prueba.** La pregunta de esta corrida era la más peligrosa que el node podía hacerse: *lo que
@@ -106,8 +106,7 @@ recurrente de `/trinidad` sobre tendencias de diseño debe:
   **real, pequeño, acumulativo y mediado**. Las cifras estrella (McKinsey +32%/+56%, "$1 → $100")
   son correlacionales, no auditables y con conflicto de interés estructural.
 - 📱 **Social**: el eje dominante del gremio es **IA × identidad profesional**, con dos subtramas
-  🔥: la ansiedad laboral y el rechazo al "AI slop". Pero el volumen de la ansiedad **no está
-  respaldado por la evidencia de causalidad**, y hay actores con incentivo económico directo en
+  🔥: la ansiedad laboral y el rechazo al "AI slop". Pero el volumen de la ansiedad **no estaba respaldado por la evidencia causal disponible al cierre de la iteración 4** (⚠️ *iter. 5e: apareció evidencia causal de caída de demanda de tareas de imagen en plataformas freelance, ver §2.8 y H34*), y hay actores con incentivo económico directo en
   sostener el pánico — **en los dos bandos**: también quien la desmiente vive de la audiencia
   (iter. 3, H11). ⬆️ *Iter. 3*: el eje **se normaliza** — la conversación pasó de "¿nos va a
   reemplazar?" a "así se trabaja ahora" (Figma Config 2026), y el propio ciclo del "diseño ha
@@ -352,6 +351,21 @@ reportes separados.*
 - **Empleo (contrapeso al "reemplazo").** El índice de exposición de la OIT y el Banco Mundial insiste en que **exposición no es pérdida de empleo** y en el alto potencial de aumento (F-515, 🔵B), en línea con BLS (F-308, F-309) y distinto del tono del discurso gremial (H10/H11).
 - **Dark patterns y accesibilidad: de la evidencia al costo (refuerza C14).** El acuerdo de la FTC con Amazon por US$2.500 M incluyó cambios obligatorios en las interfaces de alta y baja (F-511, 🟡C); el primer año del EAA dejó la primera sentencia (Carrefour, jun-2026) pero **ninguna multa en la UE** (F-512, 🟠D). *Matiza la fila de §5 sobre accesibilidad: la obligación está documentada, la sanción efectiva aún no.* Ambas fuentes son de rigor bajo (firmas jurídicas, blogs de proveedores).
 - **H6 y H7: sin movimiento.** No apareció replicación independiente del efecto de los design systems (F-259 sigue siendo un solo estudio, SBES 2026, N=49) ni un A/B de campo que aísle fluidez de estética. Una revisión sistemática reportada sin título identificable (25 estudios, N=3.025, g≈0,12 de la estética sobre el desempeño) **no se usa**: no se pudo atribuir.
+
+
+### 2.8 🔁 Iteración 5e (2026-10-03) — lectura nueva de literatura A/B y una corrección
+
+*Barrido de 10 búsquedas dirigidas; lectura vía `WebSearch` de resúmenes (ningún texto completo). 10 fuentes de rigor A/B nuevas (F-516 a F-525).*
+
+**⚠️ Corrección a la tesis social de §1: hay evidencia causal de caída de demanda.** Un estudio de diferencias en diferencias sobre una plataforma freelance halla que, tras el lanzamiento de IA generadora de imágenes, las publicaciones de **creación de imágenes cayeron ~17%** (diseño gráfico −18,5%, modelado 3D −15,6%) respecto de trabajos intensivos en lo manual (F-521, 🟢A; se leyó la versión de conferencia). El node afirmaba que la ansiedad del gremio **excedía** la evidencia causal; **esa afirmación debe acotarse**: existe evidencia causal de caída de demanda en tareas de producción de imagen **en una plataforma freelance**, mientras BLS proyecta +2% de empleo de diseñadores gráficos 2024-2034 con mención de que la IA puede reducir la contratación de freelancers (F-308). Las dos cosas son compatibles: *la caída se concentra en tareas de producción freelance, no necesariamente en el empleo del oficio*. → **H34**. La adopción además es heterogénea (233 diseñadores, F-522, 🔵B) y la exposición de la OIT no implica pérdida de empleo (F-515): hay que **segmentar**, no promediar.
+
+**Humano e IA en el trabajo creativo (refuerza C8, C11 y las hipótesis H4/H5).** Las combinaciones humano-IA rinden en promedio **peor que lo mejor de cada parte por separado** (g = −0,23; 106 experimentos), con pérdidas en tareas de **decisión** y ganancias mayores en tareas de **creación** (F-516, 🟢A): para el diseño, la IA ayuda más cuando se crea que cuando se decide. Los indicadores visuales de confianza **empeoran** el acuerdo con salidas incorrectas (F-520, 🔵B): la señal no calibra, la verificabilidad sí (C8). La IA generativa homogeneiza el resultado creativo colectivo de forma pequeña pero significativa (d≈0,33; F-517, 🔵B): base empírica de la *sameness*.
+
+**Personalización y privacidad (acota C10).** Con la privacidad activada, la personalización con datos personales no supera al mensaje genérico y es peor que la contextual moderada (F-518, 🔵B); pero en promedio los anuncios personalizados superan a los genéricos y el canal de la relevancia pesa más que el de la intrusividad (F-519, 🟢A). **C10 se mantiene, condicionada a que la privacidad esté saliente.**
+
+**Accesibilidad.** Sin mejoras de accesibilidad, el compromiso cognitivo de usuarios sin discapacidad decae con el tiempo (F-523, 🔵B): respalda la accesibilidad como mejora general. *Una cifra de "23% más tráfico orgánico por cumplir WCAG" viene de un blog de proveedor y **no se usa**.*
+
+**Design thinking e innovación.** La revisión sistemática de 164 artículos describe contexto, proceso y resultados del design thinking (F-524, 🟢A). Un metaanálisis de 62 estudios halla un **vínculo fuerte** entre innovación y desempeño con contingencias (F-525, 🟢A): **en tensión de magnitud** con la elasticidad ≈0,05 de F-430, aunque miden constructos distintos (innovación en general vs. I+D); la tesis "real, pequeño y mediado" de la mitad de innovación debe leerse **como tesis sobre I+D, no sobre toda la innovación**.
 
 
 ## 3. 📱 Pista social/mediática (gossiper)
@@ -702,6 +716,7 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 | **H31** | **En innovación lo importado es el marco, no la cifra.** A diferencia del corpus hispanohablante de diseño (H20: 100% de cifras de emisores anglosajones interesados), en innovación el vocabulario crítico se naturalizó en español hace **seis años** (desde dic-2020) — lo que cambia la pregunta de *"¿citan sin descuento?"* a *"¿generaron estudio propio o solo adoptaron el término?"* | `abierta` — **no auditada por bloqueo**, no por hallazgo: los cuatro intentos de lectura completa en español devolvieron 403 (F-464). ⚠️ **No debe leerse como confirmación ni refutación de H20 en el dominio de innovación** | Auditar N piezas hispanohablantes sobre innovación corporativa y clasificar si citan evidencia con muestra propia local o solo reproducen el marco |
 | **H32** | **La IA no destruye la demanda de las herramientas de diseño: les cobra un impuesto de margen.** El castigo bursátil a Figma refleja el costo de inferencia sobre el margen bruto, no pérdida de ingresos | `abierta` *(iter. 5)* — hija de H13. Ingresos +48% y NDR 136% (F-469) conviven con caída de ~17% por costos de IA (F-470) | Margen bruto GAAP de Figma en Q3 2026 (nov-2026) y trayectoria de los créditos de IA: si el margen se recupera con escala, H32 pierde; si sigue cayendo con ingresos al alza, se refuerza |
 | **H33** | **Los estudios de generative UI que ganan en usabilidad percibida la miden en sesión única y con una línea base débil; los que miran fidelidad de implementación encuentran brechas grandes** | `abierta` *(iter. 5)* — F-476 (Google; SUS 84 vs. 54, línea base 'Pobre') vs. F-475 (Design Theater: ~25% de justificaciones no implementadas, 34% en lo funcional) | Replicación independiente con ≥5 sesiones, línea base diseñada por humanos y medición de tiempo de tarea (también falsaría H3) |
+| **H34** | **La caída causal de demanda por IA se concentra en tareas de producción de imagen en plataformas freelance, no en el empleo de diseñadores en general** | `abierta` *(nueva, iter. 5e)* — F-521 (DiD, −17% en publicaciones de creación de imágenes) vs. F-308 (BLS: +2% en diseñadores gráficos 2024-2034) | Estudio con datos de empleo asalariado (no solo plataformas) y por seniority; o proyecciones del BLS 2025-2035 que revisen el signo |
 
 ---
 
