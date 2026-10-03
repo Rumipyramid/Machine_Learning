@@ -391,7 +391,7 @@ reportes separados.*
 
 **Persuasión e interacción con IA (sustenta C8, C9 y la regla CH1 de [[conducta-humano-ia]])**
 - El post-entrenamiento y la estrategia retórica elevan la persuasión de modelos hasta 51% y 27% (F-489, 🟢A), y los mensajes de LLM persuaden en temas de política pública (F-490, 🟢A); **pero** el microtargeting con LLM no superó a un mensaje genérico bien hecho (F-499, 🟢A). La mayor confianza en la IA se asocia con menos pensamiento crítico **declarado** (F-492, 🔵B, solo autorreporte).
-- El sesgo de automatización está documentado en sistemas de apoyo a la decisión, con la confianza en el sistema y la dificultad de la tarea como mediadores (F-60, 🟢A; F-61, 🟢A). Los consumidores desconfían del asegurador por conflicto de interés percibido y falta de transparencia (F-334, 🟢A) y existe una escala validada para medirlo (F-335, 🟢A).
+- El sesgo de automatización está documentado en sistemas de apoyo a la decisión, con la confianza en el sistema y la dificultad de la tarea como mediadores (F-60, 🟢A; F-61, 🔵B — tesis doctoral). Los consumidores desconfían del asegurador por conflicto de interés percibido y falta de transparencia (F-334, 🟢A) y existe una escala validada para medirlo (F-335, 🟢A).
 
 **Cómo se evalúa una interfaz conversacional (sustenta C15: preguntar qué se midió)**
 - La satisfacción se separa en éxito de tarea y costo de la interacción (PARADISE, F-147, 🟢A); la experiencia subjetiva se mide con instrumentos validados (SASSI, F-148, 🟢A; BUS-11 para chatbots de atención al cliente, F-150, 🟢A); la aceptación en seguros tiene condiciones necesarias y atributos que pesan distinto (F-153, F-154, 🟢A).

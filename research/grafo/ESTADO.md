@@ -8,9 +8,9 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 16 | 6,917 líneas |
+| Nodes (`_nodes/`) | 16 | 6,921 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 542 | 🟢A 147 · 🔵B 100 · 🟡C 128 · 🟠D 123 · 🔴E 30 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 542 | 🟢A 146 · 🔵B 101 · 🟡C 128 · 🟠D 123 · 🔴E 30 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
 | Fuentes citadas por ≥1 node | 437 de 542 | 81% del ledger; **105 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 73 | evidencia reutilizada entre temas |
@@ -90,7 +90,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-16 | `3acec5d` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `88c47a6` | 542 | 16 | 4 | 84 | 437 | 1999 | 15 | 20 | 22 |
+| 2026-10-03 | `3f29165` | 542 | 16 | 4 | 84 | 437 | 1999 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -125,7 +125,7 @@
 | `conducta-humano-ia` | 140 | 36 | 26 | 5/5 | 2026-10-03 | 2026-10-03 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.0 |
-| `modelo-salud-ia-farmacias-peru` | 608 | 22 | 18 | 3/3 | 2026-10-03 | 2026-10-03 v1.0 |
+| `modelo-salud-ia-farmacias-peru` | 612 | 22 | 18 | 3/3 | 2026-10-03 | 2026-10-03 v1.0 |
 | `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
 | `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
 | `seguros-comportamiento-mundo-peru` | 334 | 15 | 6 | 12/12 | 2026-10-03 | 2026-10-03 v1.1 |

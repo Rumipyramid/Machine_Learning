@@ -380,7 +380,9 @@
   {
    "fecha": "2026-10-03",
    "f": "F-60",
-   "detalle": "La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño."
+   "detalle": "La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: F-60 y F-61 corregidas en el ledger el 2026-10-03 con autorización del usuario; el pasaje E4 del node de farmacias también se corrigió."
   }
  ],
  "resoluciones": [

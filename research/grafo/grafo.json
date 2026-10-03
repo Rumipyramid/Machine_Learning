@@ -73,7 +73,7 @@
   {
    "id": "modelo-salud-ia-farmacias-peru",
    "type": "node",
-   "lines": 608,
+   "lines": 612,
    "cites": 22,
    "design": false
   },
@@ -671,18 +671,18 @@
    "id": "F-60",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Automation bias: a systematic review of frequency, effect mediators, and mitigators",
-   "autor": "Goddard, K. et al.",
+   "titulo": "Automation bias: a systematic review of frequency, effect mediators, and mitigators (JAMIA 19(1):121-127)",
+   "autor": "Goddard, K.; Roudsari, A. & Wyatt, J. C.",
    "anio": "2012",
    "huerfana": false
   },
   {
    "id": "F-61",
    "type": "fuente",
-   "rigor": "A",
+   "rigor": "B",
    "titulo": "Automation bias and prescribing decision support – rates, mediators and mitigators",
-   "autor": "City University London (Automation bias and prescribing decision support)",
-   "anio": "s.f.",
+   "autor": "Goddard, K. (tesis doctoral, City University London) — ⚠️ corregido 2026-10-03: el registro decía 'City University London, s.f.'",
+   "anio": "2012",
    "huerfana": false
   },
   {
@@ -8275,9 +8275,9 @@
     "AB": 32,
     "rigor": {
      "C": 10,
-     "B": 10,
+     "B": 11,
      "D": 20,
-     "A": 22
+     "A": 21
     }
    },
    {
@@ -10390,7 +10390,7 @@
      "cites": 272
     },
     "fecha": "2026-10-03",
-    "commit": "88c47a6",
+    "commit": "3f29165",
     "fuente": "git"
    }
   ],

@@ -2,7 +2,7 @@
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
-> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-03 (estado del PL 08488).
+> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-03 (estado del PL 08488; benchmark de sesgo de automatización corregido).
 > Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada
@@ -475,10 +475,14 @@ forma natural), RQ9, RQ10, RQ11.
 ### E4 — Medición de sesgo de automatización con benchmark externo
 
 Registrar cada vez que el farmacéutico aprueba, modifica o rechaza la sugerencia de la IA, y
-comparar contra la tasa base documentada en sistemas clínicos: **5.2%-7%** de sesgo de
-automatización (aceptar una sugerencia errónea) en radiología/patología (F-60); estudio
-específico de sesgo de automatización en **soporte de decisión de prescripción** — análogo
-directo al backlog farmacéutico (F-61).
+comparar contra la tasa base documentada en **soporte de decisión de prescripción**, análogo
+directo al backlog farmacéutico: en un experimento con 26 médicos generales, **5,2%** de las
+decisiones correctas se cambiaron por incorrectas al seguir el consejo del sistema, con una
+mejora neta de precisión de 8% (F-61; tesis doctoral, casos hipotéticos). La revisión
+sistemática de la misma autora identifica los mediadores (experiencia, confianza en el sistema,
+diseño) pero no da una tasa única (F-60). ⚠️ *Corregido 2026-10-03: este pasaje decía "5.2%-7%
+en radiología/patología (F-60)"; el 5,2% es de F-61 y en prescripción, y el 7% no tiene origen
+verificado.*
 
 **Resuelve**: RQ13, RQ2 (interpretación con denominador de comparación).
 

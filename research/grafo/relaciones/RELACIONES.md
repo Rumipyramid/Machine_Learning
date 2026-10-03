@@ -10,7 +10,7 @@
 |---|---|
 | Fuentes procesadas | **107 de 542** (19.7%) |
 | …del cerebro de diseño (citadas en el node) | 75 de 272 |
-| …por rigor | A 62/147 · B 21/100 · C 20/128 · D 3/123 · E 1/30 |
+| …por rigor | A 61/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
 | Barridos | 15 |
 | Entidades | 253 |
 | Relaciones | 207 |
@@ -208,7 +208,8 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ✅ **F-491** (2026-10-03, cerrada): La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542).
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
-- ⚠️ **F-60** (2026-10-03, abierta): La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño.
+- ✅ **F-60** (2026-10-03, cerrada): La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño.
+  - *Resolución:* Cerrada: F-60 y F-61 corregidas en el ledger el 2026-10-03 con autorización del usuario; el pasaje E4 del node de farmacias también se corrigió.
 
 ## 7. Registro de barridos
 
