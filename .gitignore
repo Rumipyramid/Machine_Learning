@@ -9,3 +9,4 @@ research/personas/**/*.csv
 # excepciones: datasets de ejemplo versionados a propósito
 !research/personas/datasets/*.csv
 !research/personas/generador/usuarios_sinteticos_ejemplo.csv
+research/grafo/preguntar/mu-corpus.json
