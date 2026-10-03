@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-07-21 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-10-02 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -284,6 +284,18 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 
 ---
 
+## 3.9 🔁 Actualización de actualidad Perú (iteración de seguros, 2026-10-02)
+
+*Lectura vía `WebSearch` de resúmenes; los informes de Moody's Local y PCR, las estadísticas de la SBS, la norma SBS y las resoluciones de Indecopi no se abrieron íntegros. Pista social no cubierta.*
+
+- **Mercado: crecimiento 2025 sólido, 2026 en duda.** Primas netas de **S/24.034,6 M a dic-2025 (+8,3%)**, con crecimiento esperado de 8%-9% en 2026 (F-482, F-483). **Pero** una nota de prensa sobre datos de la SBS reporta que el sistema cerró el **1S 2026 con primas netas de S/9.451 M, solo +1,1%**, y utilidad conjunta de S/1.391 M, con la mitad de las compañías con ganancias a la baja (F-506; **2026-10-03**: las cifras fueron corroboradas por una segunda búsqueda independiente —incluida utilidad +7,5% sostenida por ingresos por inversiones (+30%), no por el negocio técnico— pero **la tabla oficial de la SBS no pudo abrirse**: sigue siendo 🟡C, con la reserva de que falta contrastar con la SBS). Si se confirma, la expectativa de 8%-9% (y el "CAGR ~12% 2026-2031" de otros pasajes de este node) estaría muy por encima de lo observado.
+- **Penetración reconciliada.** El indicador oscila **2,0%-2,1%** del PBI: 2,06% a setiembre de 2025 (SBS, F-507), ~2,08% en este node y 2,01% estimado al 2T 2026 (F-483) son compatibles. Una cifra de ~2,5% (región 3,0%) de una fuente no identificada corresponde a otra medida. Densidad ~US$212 por habitante; mezcla de primas: Vida 46,4%, Generales 31,0%, SPP 11,8%, Accidentes y Salud 10,8%; 17 compañías.
+- **Resultados de aseguradoras.** Rímac: utilidad neta de **S/85,8 M en el 2T 2026 vs. S/143,4 M (−40%)** y S/208,3 M en el 1S vs. S/232,8 M (−10,5%) (F-504). Mapfre Perú, 1T 2026: primas −1,7% en euros (+0,9% en soles) y **ratio combinado de 102,4% (+7,6 pp)**, es decir, pérdida técnica (F-505). No se hallaron resultados del 2T de Pacífico ni de Interseguro (los datos disponibles eran de 2023-2024).
+- **Regulación y conducta.** En julio de 2026 la SBS actualizó el Reglamento de Infracciones y Sanciones (Res. 01923-2026): las aseguradoras pueden ser sancionadas, entre otros, por **rechazar solicitudes de cobertura sin fundamento o fuera de plazo** (F-484). Indecopi confirmó una multa de S/55.000 a Pacífico y a su perito por aplicar condiciones no pactadas (F-485) y, en la Res. 3683-2026, sancionó a una aseguradora que **no acreditó que el asegurado conocía la exclusión de preexistencias** (F-486).
+- **PL 08488.** Registrado el 27-jul-2024 ("Ley que incorpora a las farmacias y boticas al sistema nacional de salud", tres niveles de complejidad) (F-508). **Estado actual no verificado**: el período legislativo 2021-2026 terminó y un proyecto no aprobado podría haberse archivado (no confirmado para este expediente).
+- **Lectura.** (1) La presión regulatoria se concentra en el **momento del reclamo y en la explicación previa de las exclusiones**, donde este node ubica la causa de desconfianza. (2) El mercado peruano estaría **desacelerando con rentabilidad técnica presionada** (Rímac −40% en el 2T; Mapfre con ratio combinado >100%): el "mercado por desarrollar que crece rápido" de §3.1 requiere cautela mientras no se confirme el dato del 1S. (3) Con penetración estancada en ~2%, la brecha con la región no se está cerrando.
+- **No encontrado:** resultados del 2T de Pacífico e Interseguro; las estadísticas de la SBS al 2T 2026 en el documento original; el estado actual del PL 08488.
+
 ## Conexiones
 
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — el ramo salud (§7.1, el de mayor
@@ -316,3 +328,5 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
   hipótesis H8 conecta la evidencia causal sobre *dark patterns* (que casi cuadruplican la
   aceptación de un plan dudoso) con la causa #1 de desconfianza en seguros en Perú que documenta
   este node: la falta de información.
+- [[venta-vida-digital-hibrida-latam|Venta de seguros de vida en LATAM (Brasil y región)]] — cubre el panorama regional que aquí se trata solo para Perú; juntos dan el cuadro completo de percepción y canal en la región.
+- [[conducta-humano-ia|Conducta humano-IA]] — las hipótesis HC1/HC6 (explicación de la IA al cliente) son las que habría que probar en el contexto regulatorio y de reclamos de §3.9.

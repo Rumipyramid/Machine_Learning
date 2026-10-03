@@ -320,3 +320,4 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   contacto de su §2 y la resolución del Bloque 4 del playbook (§5) siguen el mismo patrón que
   este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
+- [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — retoma de este node la lógica de reducir la carga de «pedir antes de dar valor» como argumento a favor de potenciar al asesor con tecnología, no de reemplazarlo.

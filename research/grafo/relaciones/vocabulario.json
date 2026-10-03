@@ -1,0 +1,22 @@
+{
+ "_nota": "Vocabulario CERRADO. Una relación nueva exige editar este archivo (decisión humana), no inventarla en un lote.",
+ "relaciones": {
+  "aumenta":     {"clase": "efecto", "def": "S eleva O (dirección declarada por la fuente; la fuerza causal va en el campo `fuerza`)"},
+  "reduce":      {"clase": "efecto", "def": "S disminuye O"},
+  "asocia_con":  {"clase": "efecto", "def": "S y O covarían sin que la fuente sostenga dirección causal"},
+  "modera":      {"clase": "efecto", "def": "S cambia la magnitud/signo de la relación en que participa O (O es una afirmación o relación)"},
+  "media":       {"clase": "efecto", "def": "S es el mecanismo intermedio por el que opera O"},
+  "respalda":    {"clase": "evidencia", "def": "la fuente aporta evidencia a favor de la afirmación O"},
+  "contradice":  {"clase": "evidencia", "def": "S (afirmación) está en tensión con O (afirmación); aclarar en `apoyo` si es total o parcial"},
+  "refuta":      {"clase": "evidencia", "def": "la fuente aporta evidencia en contra de la afirmación O"},
+  "mide":        {"clase": "metodo", "def": "S (métrica/proxy) operacionaliza al constructo O"},
+  "tiene_limite":{"clase": "metodo", "def": "S (estudio/afirmación) tiene la limitación O"},
+  "origina_en":  {"clase": "metodo", "def": "la cifra/afirmación S proviene de O (rastreo de eco de cita)"},
+  "es_tipo_de":  {"clase": "estructura", "def": "S es una subclase/instancia de O"},
+  "parte_de":    {"clase": "estructura", "def": "S es componente de O"},
+  "aplica_a":    {"clase": "estructura", "def": "S vale en el contexto/población O"}
+ },
+ "tipos_entidad": ["concepto", "constructo", "intervencion", "metrica", "resultado", "poblacion", "organizacion", "estudio", "afirmacion", "limitacion"],
+ "lectura": {"ficha": "solo la ficha del ledger y el node que la cita", "abstract": "abstract/resumen real de la fuente (vía WebSearch)", "completa": "texto completo leído"},
+ "fuerza": {"causal": "diseño experimental/cuasi-experimental", "observacional": "asociación en datos observacionales", "descriptiva": "cifra o hecho sin pretensión de efecto", "teorica": "argumento conceptual/crítico"}
+}

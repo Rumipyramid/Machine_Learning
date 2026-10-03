@@ -1,0 +1,29 @@
+{
+ "_nota": "Umbrales PROPUESTOS por el autor del panel (juicio, no norma). Edítalos aquí; el panel los lee. Se sube de nivel solo si TODOS los criterios del nivel y de los anteriores se cumplen.",
+ "niveles": [
+  {"n": 1, "nombre": "MEMORIA", "def": "Guarda y cita evidencia", "criterios": [
+    {"id": "fuentes", "label": "Fuentes en el ledger", "min": 100},
+    {"id": "nodes", "label": "Nodes", "min": 5},
+    {"id": "citadas_pct", "label": "% del ledger citado por algún node", "min": 50}]},
+  {"n": 2, "nombre": "ORDEN", "def": "Se mantiene íntegro", "criterios": [
+    {"id": "fallas_integridad", "label": "Fallas de la auditoría estructural", "max": 0},
+    {"id": "reciprocidad_pct", "label": "% de enlaces recíprocos", "min": 100}]},
+  {"n": 3, "nombre": "RELACIÓN", "def": "Conecta ideas entre fuentes", "criterios": [
+    {"id": "cobertura_sem_pct", "label": "% del ledger con relaciones extraídas", "min": 10},
+    {"id": "entidades", "label": "Entidades en el grafo semántico", "min": 50},
+    {"id": "convergencias", "label": "Entidades sostenidas por ≥2 fuentes", "min": 10}]},
+  {"n": 4, "nombre": "CRITERIO", "def": "Sus reglas tienen base y se pueden falsar", "criterios": [
+    {"id": "reglas_trazables_pct", "label": "% de reglas con fuente explícita", "min": 50},
+    {"id": "falsabilidad_pct", "label": "% de hipótesis ya confrontadas", "min": 50},
+    {"id": "base_diseno_ab_pct", "label": "% A/B en las fuentes del node de diseño", "min": 50}]},
+  {"n": 5, "nombre": "AUTOCORRECCIÓN", "def": "Se refuta y se corrige a sí mismo", "criterios": [
+    {"id": "autocorreccion_pct", "label": "% de hipótesis resueltas que se refutaron", "min": 20},
+    {"id": "tensiones_resueltas_pct", "label": "% de tensiones con estado de resolución", "min": 75},
+    {"id": "discrepancias_abiertas", "label": "Discrepancias abiertas con el ledger", "max": 0}]},
+  {"n": 6, "nombre": "PROFUNDIDAD", "def": "Lee de verdad, no solo fichas", "criterios": [
+    {"id": "leidas_pct", "label": "% de relaciones leídas más allá de la ficha", "min": 60},
+    {"id": "cobertura_sem_pct", "label": "% del ledger con relaciones extraídas", "min": 50}]},
+  {"n": 7, "nombre": "IMPACTO", "def": "Demostrado fuera del repo", "criterios": [
+    {"id": "uso_externo_medido", "label": "Uso/decisiones de personas medidos (no hay instrumento)", "min": 1}]}
+ ]
+}

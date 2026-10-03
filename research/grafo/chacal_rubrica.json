@@ -1,0 +1,90 @@
+{
+ "_nota": "Umbrales PROPUESTOS (juicio del autor, editables). El Chacal mide con estos semáforos; su veredicto cualitativo no puede contradecirlos.",
+ "preguntas": [
+  {
+   "id": "q1",
+   "texto": "¿Qué es lo más relevante en la actualidad en el rubro del diseño?",
+   "nodes": [
+    "tendencias-diseno-innovacion",
+    "material-visual-venta-consultiva"
+   ]
+  },
+  {
+   "id": "q2",
+   "texto": "¿Qué es lo más relevante en la actualidad de la investigación y diseño conductual? (humano e IA)",
+   "nodes": [
+    "conducta-humano-ia",
+    "behavioral-design-estado-disciplina",
+    "evaluacion-calidad-agentes-conversacionales-ia",
+    "transicion-venta-fria-a-opt-in",
+    "modelo-personas-sinteticas"
+   ]
+  },
+  {
+   "id": "q3",
+   "texto": "¿Qué es lo más relevante en seguros en la actualidad?",
+   "nodes": [
+    "seguros-comportamiento-mundo-peru",
+    "mecanismos-seguros-salud",
+    "modelo-salud-ia-farmacias-peru",
+    "futuro-asesores-seguros-venta-digital",
+    "venta-vida-digital-hibrida-latam",
+    "matriz-productos-vida-rimac",
+    "proyecto-back-to-basics-ffvv-vida"
+   ]
+  }
+ ],
+ "dimensiones": {
+  "cobertura": {
+   "def": "Hay nodes y fuentes suficientes para responder",
+   "verde": {
+    "fuentes_min": 40
+   },
+   "amarillo": {
+    "fuentes_min": 10
+   }
+  },
+  "vigencia": {
+   "def": "El node, la última fuente registrada y la evidencia son recientes",
+   "verde": {
+    "edad_node_dias_max": 30,
+    "ultima_fuente_dias_max": 45,
+    "recientes_pct_min": 40
+   },
+   "amarillo": {
+    "edad_node_dias_max": 90,
+    "ultima_fuente_dias_max": 120,
+    "recientes_pct_min": 20
+   }
+  },
+  "solidez": {
+   "def": "Peso de evidencia A/B (rigor) detrás de la respuesta",
+   "verde": {
+    "ab_pct_min": 50
+   },
+   "amarillo": {
+    "ab_pct_min": 30
+   }
+  },
+  "contradicciones": {
+   "def": "Tensiones y discrepancias abiertas que tocan la respuesta (si <10% del corpus tiene relaciones extraídas, no puede salir verde: ausencia de tensiones medidas ≠ ausencia de contradicciones)",
+   "verde": {
+    "abiertas_max": 0
+   },
+   "amarillo": {
+    "abiertas_max": 2
+   }
+  },
+  "profundidad": {
+   "def": "Fuentes con relaciones extraídas y leídas más allá de la ficha",
+   "verde": {
+    "semantica_pct_min": 25,
+    "leidas_pct_min": 40
+   },
+   "amarillo": {
+    "semantica_pct_min": 10,
+    "leidas_pct_min": 20
+   }
+  }
+ }
+}

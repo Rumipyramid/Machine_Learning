@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grafo del segundo cerebro</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#6b6b66;--card:#fff;--ln:#d9d8d2;--node:#2b50aa;--out:#b8651b;--des:#c0392b;
+--A:#1b7f4b;--B:#2b6cb0;--C:#b7950b;--D:#c26a1c;--E:#b03a2e;--Q:#8a8a85}
+@media(prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ecebe4;--mut:#9a9a92;--card:#1e1e1c;--ln:#3a3a36;--node:#7da2ff;--out:#e09a55;--des:#ff7a6b;
+--A:#4cc38a;--B:#6fa8ff;--C:#e0c040;--D:#f0985a;--E:#ff7b6e;--Q:#8a8a85}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,sans-serif}
+header{padding:12px 16px;border-bottom:1px solid var(--ln)}h1{margin:0;font-size:17px}header p{margin:2px 0 0;color:var(--mut);font-size:12px}
+main{display:grid;grid-template-columns:1fr 340px;gap:0;height:calc(100vh - 62px)}
+@media(max-width:820px){main{grid-template-columns:1fr;height:auto}#cv{height:60vh}}
+#cv{width:100%;height:100%;display:block;touch-action:none}
+aside{border-left:1px solid var(--ln);padding:12px 16px;overflow:auto;background:var(--card)}
+aside h2{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:14px 0 6px}
+.k{display:grid;grid-template-columns:1fr auto;gap:2px 8px;font-size:13px}.k b{font-variant-numeric:tabular-nums}
+label{display:block;margin:2px 0;font-size:13px}.lg span{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+#info{font-size:12px;color:var(--mut);min-height:48px}svg{width:100%;height:70px}
+</style></head><body>
+<header><h1>🕸️ Grafo del segundo cerebro</h1><p id="sub"></p></header>
+<main><canvas id="cv"></canvas><aside>
+<h2>Capas</h2>
+<label><input type="checkbox" id="tf"> mostrar fuentes F-n (ledger)</label>
+<label><input type="checkbox" id="to"> solo huérfanas de cita</label>
+<div class="lg"><span style="background:var(--node)"></span>node <span style="background:var(--des);margin-left:8px"></span>diseño <span style="background:var(--out);margin-left:8px"></span>output<br>
+<span style="background:var(--A)"></span>A <span style="background:var(--B)"></span>B <span style="background:var(--C)"></span>C <span style="background:var(--D)"></span>D <span style="background:var(--E)"></span>E</div>
+<h2>Selección</h2><div id="info">Toca un punto.</div>
+<h2>Estado</h2><div class="k" id="k"></div>
+<h2>Fuentes registradas (acumulado)</h2><svg id="sp" viewBox="0 0 300 70" preserveAspectRatio="none"></svg>
+<h2>Transparencia</h2><div style="font-size:12px;color:var(--mut)">Los números salen de contar archivos (ver ESTADO.md §7 para lo que no se mide). Citar ≠ validar.</div>
+</aside></main>
+<script>
+const D=/*__DATA__*/null;
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const cv=document.getElementById('cv'),cx=cv.getContext('2d');let W,H,dpr=devicePixelRatio||1;
+function rs(){const r=cv.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)}addEventListener('resize',rs);rs();
+const byId={};D.nodes.forEach((n,i)=>{n.x=W/2+Math.cos(i*2.4)*(n.type==='fuente'?260:90)*Math.random()+ (Math.random()-.5)*60;n.y=H/2+Math.sin(i*2.4)*(n.type==='fuente'?200:90)*Math.random();n.vx=n.vy=0;byId[n.id]=n});
+D.edges.forEach(e=>{e.a=byId[e.s];e.b=byId[e.t]});
+const cs=document.getElementById('tf'),co=document.getElementById('to');let sel=null,tick=0;
+const vis=n=>n.type!=='fuente'||(cs.checked&&(!co.checked||n.huerfana));
+function step(){const N=D.nodes.filter(vis);const big=N.filter(n=>n.type!=='fuente');
+ for(let i=0;i<big.length;i++)for(let j=i+1;j<big.length;j++){const a=big[i],b=big[j];let dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+.01,f=900/d2;a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f}
+ for(const e of D.edges){if(!vis(e.a)||!vis(e.b))continue;const dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,d=Math.hypot(dx,dy)||1,L=e.k==='cita'?55:90,f=(d-L)*(e.k==='cita'?.004:.02);e.a.vx+=dx/d*f;e.a.vy+=dy/d*f;e.b.vx-=dx/d*f;e.b.vy-=dy/d*f}
+ for(const n of N){n.vx+=(W/2-n.x)*.006;n.vy+=(H/2-n.y)*.006;if(n.type==='fuente'){for(const m of N)if(m!==n&&m.type==='fuente'&&Math.abs(m.x-n.x)<8&&Math.abs(m.y-n.y)<8){n.vx+=Math.random()-.5;n.vy+=Math.random()-.5}}n.x=Math.min(W-12,Math.max(12,n.x+(n.vx*=.82)));n.y=Math.min(H-12,Math.max(12,n.y+(n.vy*=.82)))}}
+function R(n){return n.type==='fuente'?2.6:n.type==='output'?6:6+Math.sqrt(n.cites||1)*.9}
+function col(n){return n.type==='fuente'?css('--'+(n.rigor||'Q')):n.design?css('--des'):n.type==='output'?css('--out'):css('--node')}
+function draw(){cx.clearRect(0,0,W,H);cx.lineWidth=1;
+ for(const e of D.edges){if(!vis(e.a)||!vis(e.b))continue;cx.strokeStyle=css('--ln');cx.globalAlpha=e.k==='cita'?.25:.9;if(e.k==='wikilink'&&!e.recip){cx.setLineDash([4,3])}else cx.setLineDash([]);
+  cx.beginPath();cx.moveTo(e.a.x,e.a.y);cx.lineTo(e.b.x,e.b.y);cx.stroke()}
+ cx.setLineDash([]);cx.globalAlpha=1;
+ for(const n of D.nodes){if(!vis(n))continue;cx.fillStyle=col(n);cx.globalAlpha=n.type==='fuente'?(n.huerfana?.35:.85):1;cx.beginPath();cx.arc(n.x,n.y,R(n),0,7);cx.fill();if(n===sel){cx.strokeStyle=css('--fg');cx.lineWidth=2;cx.stroke();cx.lineWidth=1}}
+ cx.globalAlpha=1;cx.fillStyle=css('--fg');cx.font='11px system-ui';
+ for(const n of D.nodes)if(n.type!=='fuente'&&vis(n))cx.fillText(n.id.replace('.md','').slice(0,26),n.x+R(n)+3,n.y+3)}
+function loop(){if(tick++<600||drag)step();draw();requestAnimationFrame(loop)}
+let drag=null;
+function pick(x,y){let b=null,bd=1e9;for(const n of D.nodes){if(!vis(n))continue;const d=Math.hypot(n.x-x,n.y-y);if(d<Math.max(8,R(n)+3)&&d<bd){b=n;bd=d}}return b}
+function pos(e){const r=cv.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top]}
+cv.addEventListener('pointerdown',e=>{const[x,y]=pos(e),n=pick(x,y);sel=n;drag=n;tick=0;info(n)});
+cv.addEventListener('pointermove',e=>{if(drag){const[x,y]=pos(e);drag.x=x;drag.y=y}});
+addEventListener('pointerup',()=>drag=null);cs.onchange=co.onchange=()=>tick=0;
+function info(n){const i=document.getElementById('info');if(!n){i.textContent='Toca un punto.';return}
+ if(n.type==='fuente')i.innerHTML=`<b>${n.id}</b> · rigor ${n.rigor} · ${n.autor} (${n.anio})<br>${n.titulo}<br>${n.huerfana?'⚠️ sin cita en ningún node':'citada por un node'}`;
+ else{const c=D.edges.filter(e=>e.k==='cita'&&e.s===n.id).length,l=D.edges.filter(e=>e.k==='wikilink'&&(e.s===n.id||e.t===n.id)).length;i.innerHTML=`<b>${n.id}</b> (${n.type})<br>${n.lines} líneas · ${c} fuentes citadas · ${l} enlaces`}}
+const m=D.meta,fu=D.nodes.filter(n=>n.type==='fuente'),rg={};fu.forEach(f=>rg[f.rigor]=(rg[f.rigor]||0)+1);
+const hu=fu.filter(f=>f.huerfana).length,d=m.design||{},hy=d.hyp||{},tot=Object.values(hy).reduce((a,b)=>a+b,0);
+document.getElementById('sub').textContent=`Generado ${m.generado} · ${D.nodes.filter(n=>n.type==='node').length} nodes · ${D.nodes.filter(n=>n.type==='output').length} outputs · ${fu.length} fuentes`;
+const rows=[['Fuentes A+B',((rg.A||0)+(rg.B||0))+' ('+Math.round(100*((rg.A||0)+(rg.B||0))/fu.length)+'%)'],['Fuentes sin cita en nodes',hu+' ('+Math.round(100*hu/fu.length)+'%)'],
+['Diseño · iteraciones',d.iterations],['Diseño · hipótesis resueltas',tot?(tot-(hy.abierta||0))+'/'+tot:'–'],['Diseño · refutadas',hy.refutada||0],['Diseño · reglas citadas',d.rules?d.rules_cited+'/'+d.rules:'–']];
+document.getElementById('k').innerHTML=rows.map(r=>`<span>${r[0]}</span><b>${r[1]}</b>`).join('');
+const tl=m.timeline||[];if(tl.length){const mx=tl[tl.length-1].acumuladas,pts=tl.map((t,i)=>`${(i/(tl.length-1||1))*300},${68-66*t.acumuladas/mx}`).join(' ');
+ document.getElementById('sp').innerHTML=`<polyline fill="none" stroke="${css('--node')}" stroke-width="2" points="${pts}"/><text x="2" y="10" font-size="9" fill="${css('--mut')}">${tl[0].fecha}</text><text x="298" y="10" text-anchor="end" font-size="9" fill="${css('--mut')}">${tl[tl.length-1].fecha} · ${mx}</text>`}
+loop();
+</script></body></html>

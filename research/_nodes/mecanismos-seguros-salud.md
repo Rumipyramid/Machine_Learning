@@ -2,9 +2,9 @@
 
 > Node. Fuente de verdad de este tema. Rescata 3 investigaciones `/seeker`/`/trinidad` que
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
-> `fuentes/codice.md` (F-86 a F-116, F-193 a F-207).
+> `fuentes/codice.md` (F-86 a F-116, F-193 a F-207; actualización 2026-10-02: F-477 a F-478, F-480, F-481 (y F-198), F-487).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-07-22 · Versión: v1.2
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-10-02 · Versión: v1.2
 > (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
 > con §2.6: contraste regional Europa/Asia/Perú-Latam — corrida adicional de `/trinidad`)
 
@@ -138,10 +138,7 @@ encuentra que **el patrón de EE.UU. (margen delgado, regulado por ley) no se re
 en mercados sin un techo regulatorio equivalente a la regla 80/20**.
 
 - **Europa — rentabilidad sólida y creciente.** El segmento Vida y Salud de Allianz (el
-  mayor grupo asegurador europeo) tuvo una utilidad operativa récord de EUR 9,000 millones
-  en el año completo 2025, y EUR 2,400 millones solo en el primer trimestre de 2026
-  (+11.1% interanual) — impulsada por un mejor resultado del propio servicio de seguros, no
-  por inversión financiera (F-203, 🔵B). Bupa Group reportó una utilidad subyacente de GBP
+  mayor grupo asegurador europeo) tuvo un resultado operativo récord a nivel de grupo; **⚠️ las cifras que este párrafo citaba para el segmento Vida y Salud (EUR 9.000 M en FY2025; EUR 2.400 M, +11,1%, en el 1T 2026; F-203) quedaron desmentidas el 2026-10-02: el segmento tuvo ≈EUR 1,4 mil M en el 1T 2026 (−5,1%) y EUR 1,5 mil M en el 2T (+10%), ver §6.1** (F-203 corregida, F-477, F-478). Bupa Group reportó una utilidad subyacente de GBP
   1,009 millones para 2025 (+16% a tipo de cambio constante), impulsada por el crecimiento
   de primas en seguro de salud individual/corporativo e IPMI (F-204, 🟠D). Ninguno de los
   dos mercados europeos de estos casos tiene un equivalente estricto de la regla 80/20
@@ -187,7 +184,7 @@ crece el mercado privado.
 | Bloomberg, Optum Rx (F-200) | Prensa financiera | 🟡 C | Cambio de modelo de utilidad del PBM más grande |
 | MedCity News, GLP-1 (F-201) | Prensa de negocio de salud | 🟠 D | Farmacia +14.8% interanual, el driver más agudo |
 | Mercer, GLP-1 2026 (F-202) | Consultora de beneficios | 🟡 C | 43% de planes priorizan manejo de costo especializado |
-| Allianz SE, comunicado de resultados (F-203) | Filing/comunicado oficial de empresa pública | 🔵 B | Vida y Salud: EUR 9,000M utilidad operativa FY2025 |
+| Allianz SE, comunicado de resultados (F-203) | Filing/comunicado oficial de empresa pública | 🔵 B | ⚠️ Cifra de la ficha original (EUR 9.000 M Vida y Salud FY2025) **no verificada y contradicha**, ver §6.1 |
 | Health & Protection, Bupa Group (F-204) | Prensa especializada | 🟠 D | GBP 1,009M utilidad subyacente 2025, +16% |
 | Insurance Business Asia, Niva Bupa (F-205) | Prensa especializada | 🟠 D | +67% utilidad trimestral (India) |
 | Grand View Research, China (F-206) | Firma de investigación de mercado | 🟡 C | Mercado USD 150,628M (2025) → USD 254,657M (2033) |
@@ -288,6 +285,27 @@ privada) ya está, sin saberlo, más cerca del modelo Singapur/NHS que del model
 estadounidense — buena señal para el diseño de
 [[modelo-salud-ia-farmacias-peru|el modelo de triage IA + farmacias]].
 
+## 6. 🔁 Actualización de actualidad (iteración de seguros, 2026-10-02)
+
+*Lectura vía `WebSearch` de resúmenes y snippets; los comunicados primarios (Allianz, 8-K de UnitedHealth y Root, NAIC) no se abrieron íntegros. Pista social no cubierta.*
+
+### 6.1 Corrección: Allianz Vida y Salud (F-203)
+La ficha original F-203 y este node citaban EUR 9.000 M (FY2025) y EUR 2.400 M en el 1T 2026 (+11,1%) para Vida y Salud. Dos lecturas independientes lo contradicen: el 1T 2026 fue ≈EUR 1,35-1,4 mil M (−5,1%, por debajo del consenso de EUR 1,42 mil M; F-478) y el 2T EUR 1,5 mil M (+10%), con EUR 2,9 mil M en el 1S (+2,4%) (F-477). La aritmética cuadra (1,4 + 1,5 ≈ 2,9). **Estado: discrepancia cerrada con reserva** — las cifras de la ficha eran erróneas o de otro perímetro; no se pudo abrir el comunicado primario. Consecuencia: el contraste "Allianz récord vs. margen de 1,8% en EE.UU." de §2 ya no se sostiene con ese dato; el récord de 2026 viene del grupo y de P&C, no de Vida y Salud.
+
+### 6.2 Salud en EE.UU.: el 1,8% de 2025 fue un valle, no una tendencia
+- UnitedHealth: ratio de costo médico de **86,7% en el 2T 2026 vs. 89,4%** un año antes, guía anual 88,1% ±25 pb, atribuido a diseño de beneficios, disciplina de precios y mezcla de afiliados (F-198).
+- NAIC: la industria cerró el 1T 2026 con una **ganancia de suscripción de US$14,8 mil M, +47,2%** frente al 1T 2025 (F-480).
+- **Lectura:** la "compresión" de §2.2 (margen de 1,8% en el 1S 2025, F-193) se revirtió en 2026 por disciplina de precios. Cautela: el 1T no es comparable 1:1 con un semestre y, por principios de negocio (instinto, no dato verificado), los primeros trimestres suelen ser los más rentables en seguros de salud por el efecto de deducibles. La conclusión estructural de §2 (rentable pero con margen sensible al costo médico) se mantiene; la **dirección** de 2026 es de recuperación.
+
+### 6.3 Insurtech: sigue ganando la disciplina de suscripción, no el crecimiento
+Root: combined ratio neto de **92,1% (vs. 95,2%)**, utilidad neta US$25,4M, pero prima bruta devengada **−1%** y la acción cayó ~10% (F-481). Rentable y sin crecimiento: refuerza la lectura de H29 (la variable que importa es la disciplina de suscripción) y matiza la de F-449 (91,4%). **Lemonade, 2T 2026 (leído después):** loss ratio bruto de 60% (7 pp por desarrollo favorable), prima en vigor +32,5%, pérdida neta de US$43 M y acción −24% (F-509, F-510): la siniestralidad mejoró mucho, la rentabilidad total no.
+
+### 6.4 Global
+Swiss Re (sigma 2/2026): crecimiento real de primas de **1,3% en 2026** (3,9% en 2025), no-vida 0,6% en mercado blando, vida 2,3%; brecha de protección de catástrofes naturales **+7% a US$424 mil M** (F-487). Es una medida distinta de la brecha de ~US$1,8 billones que se cita en otros nodes: **no deben compararse ni sumarse**.
+
+### 6.5 Qué no se encontró
+Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farmacia/triage en Perú, y cualquier dato de seguros de salud en Perú posterior a agosto: sin evidencia en esta pasada.
+
 ## Limitaciones generales
 
 - Ninguna evidencia de precisión/efectividad citada aquí fue validada en población peruana
@@ -328,3 +346,5 @@ estadounidense — buena señal para el diseño de
   casos de Babylon Health y el "reset" de Oscar Health (§3 aquí) son la misma advertencia
   a nivel de suscripción/operación que ese node documenta a nivel de distribución: apostar
   por tecnología sin disciplina humana de por medio tiende a salir caro.
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — aporta el contraste Root (combined ratio 91,4%) vs. Lemonade (~139%) con evidencia auditada (F-449, F-450): la innovación en seguros se evalúa por su disciplina de suscripción, no por su capa tecnológica (H29); aplica al análisis de qué modelos navegan bien la presión de costo.
+- [[conducta-humano-ia|Conducta humano-IA]] — el UBI/telemática (F-442) se consolida allí como caso causal de cambio de conducta, con el matiz de que el programa fue simulado.

@@ -1,0 +1,322 @@
+{
+ "fecha": "2026-10-02",
+ "f_ids": [
+  "F-433",
+  "F-434",
+  "F-442",
+  "F-449",
+  "F-256",
+  "F-259",
+  "F-265",
+  "F-307",
+  "F-308",
+  "F-309",
+  "F-382",
+  "F-383",
+  "F-384",
+  "F-386"
+ ],
+ "entidades": [
+  {
+   "id": "factores_exito_producto_nuevo",
+   "nombre": "Predictores del éxito de un producto nuevo (ventaja, mercado, ajuste, predesarrollo, recursos)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "exito_producto_nuevo",
+   "nombre": "Éxito de un producto nuevo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ambidestreza",
+   "nombre": "Ambidestreza organizacional",
+   "tipo": "constructo"
+  },
+  {
+   "id": "c_ambidestreza_mejora_desempeno",
+   "nombre": "La ambidestreza mejora el desempeño",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "contexto_y_metodo",
+   "nombre": "Contexto y elección metodológica",
+   "tipo": "concepto"
+  },
+  {
+   "id": "desempeno_organizacional",
+   "nombre": "Desempeño organizacional",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ubi_telematica",
+   "nombre": "UBI / seguro basado en telemática",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "conductas_riesgo_manejo",
+   "nombre": "Conductas de riesgo al manejar (velocidad, frenado, aceleración)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_ubi_cambia_conducta",
+   "nombre": "El UBI cambia la conducta real de manejo",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "programa_simulado",
+   "nombre": "Programa simulado (incentivo ≤US$100), no seguro con prima real",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "combined_ratio_root",
+   "nombre": "Combined ratio de Root (91,4%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "usabilidad_funcional",
+   "nombre": "Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ia_alineada_design_system",
+   "nombre": "IA alineada al design system",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tiempo_entrega",
+   "nombre": "Time-to-delivery",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_ia_ralentiza_expertos",
+   "nombre": "La IA ralentiza a desarrolladores expertos (−19%)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_ia_acelera_con_design_system",
+   "nombre": "La IA alineada al design system acelera 47-69%",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "european_accessibility_act",
+   "nombre": "European Accessibility Act (exigible 28-jun-2025)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "accesibilidad_obligacion",
+   "nombre": "Accesibilidad como obligación con sanción",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ipg_venta_rga",
+   "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_crisis_consultoras",
+   "nombre": "Crisis estructural del modelo de consultora de diseño",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "herramientas_ia_generativas",
+   "nombre": "Herramientas de IA generativa",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "empleo_disenadores_graficos",
+   "nombre": "Empleo de diseñadores gráficos (+2% 2024-2034)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "empleo_disenadores_web",
+   "nombre": "Empleo de web developers y diseñadores digitales (+7% 2024-2034)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_contra_generative_ui",
+   "nombre": "La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "consistencia_interfaz",
+   "nombre": "Consistencia de la interfaz entre ejecuciones",
+   "tipo": "resultado"
+  },
+  {
+   "id": "usabilidad_del_generador",
+   "nombre": "La usabilidad pasa a ser la interacción con el generador",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "factores_exito_producto_nuevo",
+   "p": "aumenta",
+   "o": "exito_producto_nuevo",
+   "f": "F-433",
+   "apoyo": "Metaanálisis canónico: los predictores de mayor efecto son ventaja del producto, potencial de mercado, ajuste a la necesidad, calidad del predesarrollo y recursos dedicados.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "contexto_y_metodo",
+   "p": "modera",
+   "o": "c_ambidestreza_mejora_desempeno",
+   "f": "F-434",
+   "apoyo": "Relación positiva pero fuertemente moderada por contexto y por elección metodológica; exploración y explotación por separado predicen más que la ambidestreza.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ambidestreza",
+   "p": "asocia_con",
+   "o": "desempeno_organizacional",
+   "f": "F-434",
+   "apoyo": "Metaanálisis: patrón 'mediado, no directo' que se repite en innovación y en diseño.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ubi_telematica",
+   "p": "reduce",
+   "o": "conductas_riesgo_manejo",
+   "f": "F-442",
+   "apoyo": "RCT de campo preregistrado (N=1.449): −11 a −13% en exceso de velocidad, −16 a −21% en frenado brusco, −16 a −25% en aceleración brusca.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_ubi_cambia_conducta",
+   "p": "tiene_limite",
+   "o": "programa_simulado",
+   "f": "F-442",
+   "apoyo": "Es un UBI simulado (mensajes e incentivo de hasta US$100), no un seguro con prima real; mide conducta, no siniestros ni precio. Límite hallado en la auditoría de la iteración 5.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ubi_telematica",
+   "p": "asocia_con",
+   "o": "combined_ratio_root",
+   "f": "F-449",
+   "apoyo": "Root (telemática) con combined ratio de 91,4%: rentable en suscripción, giro desde −US$101,3M (2023) a +US$78,5M de ingreso operativo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "generative_ui",
+   "p": "reduce",
+   "o": "usabilidad_funcional",
+   "f": "F-382",
+   "apoyo": "138 pantallas de tres herramientas (Figma, Banani, Stitch) contra las 10 heurísticas de Nielsen: baja tasa de soporte heurístico en ayuda y documentación y en recuperación de errores.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "generative_ui",
+   "p": "asocia_con",
+   "o": "usabilidad_funcional",
+   "f": "F-256",
+   "apoyo": "Brecha significativa entre usabilidad visual y funcional en interfaces generadas por IA (misma obra que F-382: posible registro duplicado).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ia_alineada_design_system",
+   "p": "reduce",
+   "o": "tiempo_entrega",
+   "f": "F-259",
+   "apoyo": "−46,7% a −69,4% de time-to-delivery y menor variabilidad (autoría no verificada; un solo contexto).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_ia_acelera_con_design_system",
+   "p": "contradice",
+   "o": "c_ia_ralentiza_expertos",
+   "f": "F-259",
+   "apoyo": "Choque frontal con F-257 según la ficha; contextos distintos (design system propio vs. devs expertos en bases de código propias).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "european_accessibility_act",
+   "p": "aumenta",
+   "o": "accesibilidad_obligacion",
+   "f": "F-265",
+   "apoyo": "Exigible desde el 28-jun-2025 para productos y servicios digitales vendidos en la UE; primeras demandas en Francia en noviembre de 2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ipg_venta_rga",
+   "p": "respalda",
+   "o": "c_crisis_consultoras",
+   "f": "F-307",
+   "apoyo": "IPG vendió R/GA a capital privado (3-mar-2025) con términos no revelados: una de las cuatro señales de la crisis.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "reduce",
+   "o": "empleo_disenadores_graficos",
+   "f": "F-308",
+   "apoyo": "BLS: empleo +2% 2024-2034 (más lento que el promedio) y mención explícita de que las herramientas de IA pueden reducir la contratación de freelancers.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "empleo_disenadores_web",
+   "p": "asocia_con",
+   "o": "empleo_disenadores_graficos",
+   "f": "F-309",
+   "apoyo": "+7% vs. +2%: el problema no es 'el diseño' sino el diseño gráfico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_contra_generative_ui",
+   "p": "aplica_a",
+   "o": "generative_ui",
+   "f": "F-383",
+   "apoyo": "Argumento publicado de la comunidad HCI: la producción variable por modelo rompe por construcción la consistencia y la predictibilidad.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_contra_generative_ui",
+   "p": "asocia_con",
+   "o": "consistencia_interfaz",
+   "f": "F-384",
+   "apoyo": "Prompts idénticos producen interfaces sustancialmente distintas entre herramientas y entre ejecuciones de la misma: mide el defecto que F-383 plantea en teoría.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "generative_ui",
+   "p": "reduce",
+   "o": "consistencia_interfaz",
+   "f": "F-384",
+   "apoyo": "La inconsistencia no es un problema de una sola herramienta.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "usabilidad_del_generador",
+   "p": "aplica_a",
+   "o": "generative_ui",
+   "f": "F-386",
+   "apoyo": "Reencuadre: con generative UI la usabilidad pasa de la pantalla generada a la interacción con el generador.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-256",
+   "detalle": "F-256 y F-382 llevan el mismo título ('Looks Good, But Is It Usable? Evaluating Usability in AI-Generated…'): posible registro duplicado en el ledger. Revisar y, si lo es, consolidar (decisión de cronista)."
+  }
+ ],
+ "notas": "Pase de amplitud a nivel ficha (14 fuentes: innovación, generative UI, Figma/consultoras, empleo)."
+}

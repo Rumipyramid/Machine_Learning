@@ -1,0 +1,11 @@
+# 🚗 Garaje — índice de auditorías del Chacal
+
+| Fecha | Nota | Q1 | Q2 | Q3 |
+|---|---|---|---|---|
+| 2026-10-03 | [2026-10-03_auditoria_2.md](2026-10-03_auditoria_2.md) | 🟢🟢🟢🔴🟡 | 🟢🟡🟢🟡🟡 | 🟢🟡🟢🟡🔴 |
+| 2026-10-03 | [2026-10-03_auditoria.md](2026-10-03_auditoria.md) | 🟢🟢🟡🔴🟡 | 🟢🟡🟢🟡🟡 | 🟢🟡🟢🟡🔴 |
+| 2026-10-02 | [2026-10-02_auditoria_3.md](2026-10-02_auditoria_3.md) | 🟢🟢🟡🔴🟡 | 🟢🟡🟢🟡🟡 | 🟢🟡🟢🟡🔴 |
+| 2026-10-02 | [2026-10-02_auditoria_2.md](2026-10-02_auditoria_2.md) | 🟢🟢🟡🔴🟡 | 🟡🟡🟢🟡🔴 | 🟢🟡🟢🟡🔴 |
+| 2026-10-02 | [2026-10-02_auditoria.md](2026-10-02_auditoria.md) | 🟢🟢🟡🔴🟡 | 🟡🟡🟢🟡🔴 | 🟢🟡🟢🟡🔴 |
+
+*Cada celda: 🟢🟡🔴 en el orden cobertura · vigencia · solidez · contradicciones · profundidad.*

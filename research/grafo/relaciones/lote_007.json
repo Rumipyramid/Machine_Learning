@@ -1,0 +1,551 @@
+{
+ "fecha": "2026-10-02",
+ "f_ids": [
+  "F-198",
+  "F-477",
+  "F-478",
+  "F-480",
+  "F-481",
+  "F-482",
+  "F-483",
+  "F-484",
+  "F-485",
+  "F-486",
+  "F-487",
+  "F-488",
+  "F-489",
+  "F-490",
+  "F-491",
+  "F-492",
+  "F-493",
+  "F-494",
+  "F-495",
+  "F-496",
+  "F-497",
+  "F-498",
+  "F-499",
+  "F-500",
+  "F-501",
+  "F-502",
+  "F-503"
+ ],
+ "entidades": [
+  {
+   "id": "allianz_vida_salud",
+   "nombre": "Resultado operativo Vida/Salud de Allianz",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_f203_cifra",
+   "nombre": "F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "mcr_unh",
+   "nombre": "Medical care ratio de UnitedHealth (86,7% en el 2T 2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "margen_salud_eeuu",
+   "nombre": "Margen de suscripción de la industria de salud de EE.UU.",
+   "tipo": "resultado"
+  },
+  {
+   "id": "disciplina_precios_salud",
+   "nombre": "Disciplina de precios y rediseño de beneficios",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_margen_compresion",
+   "nombre": "El margen fino de 2025 (1,8%) es una tendencia de compresión",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "crecimiento_prima_root",
+   "nombre": "Crecimiento de prima devengada de Root (−1%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "primas_peru",
+   "nombre": "Primas netas de Perú (S/24.034 M a dic-2025, +8,3%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "penetracion_peru",
+   "nombre": "Penetración de seguros en Perú",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_pen_2_01",
+   "nombre": "Penetración ~2,01% (estimación al 2T 2026)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_pen_2_08",
+   "nombre": "Penetración ~2,08% (cifra del node)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sbs_ris_2026",
+   "nombre": "Res. SBS 01923-2026 (infracciones y sanciones)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "rechazo_cobertura_sin_fundamento",
+   "nombre": "Rechazo de cobertura sin fundamento o fuera de plazo",
+   "tipo": "concepto"
+  },
+  {
+   "id": "indecopi_sanciones_2026",
+   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "carga_prueba_aseguradora",
+   "nombre": "La aseguradora debe acreditar que explicó la exclusión",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_desconfianza_falta_info",
+   "nombre": "La causa #1 de desconfianza en seguros es la falta de información",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "crecimiento_primas_globales",
+   "nombre": "Crecimiento real de primas globales (1,3% en 2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "brecha_natcat",
+   "nombre": "Brecha de protección de catástrofes naturales (US$424 mil M)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "adulacion_ia",
+   "nombre": "Adulación de la IA (sycophancy)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "conviccion_tener_razon",
+   "nombre": "Convicción de tener razón",
+   "tipo": "resultado"
+  },
+  {
+   "id": "asuncion_responsabilidad",
+   "nombre": "Disposición a asumir responsabilidad y reparar",
+   "tipo": "resultado"
+  },
+  {
+   "id": "calificacion_calidad_ia",
+   "nombre": "Calificación de calidad y confianza de la IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_preferencia_adulacion",
+   "nombre": "Los usuarios prefieren la IA aduladora",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "persuasion_ia",
+   "nombre": "Persuasión conversacional por IA",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cambio_actitud",
+   "nombre": "Cambio de actitud de las personas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "personas_susceptibles",
+   "nombre": "Personas psicológicamente susceptibles",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "microtargeting_llm",
+   "nombre": "Microtargeting con LLM (mensajes personalizados)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_persuasion_concentrada",
+   "nombre": "La persuasión de la IA se concentra en personas susceptibles",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "pensamiento_critico",
+   "nombre": "Pensamiento crítico",
+   "tipo": "resultado"
+  },
+  {
+   "id": "descarga_cognitiva",
+   "nombre": "Descarga cognitiva",
+   "tipo": "constructo"
+  },
+  {
+   "id": "alfabetizacion_ia",
+   "nombre": "Alfabetización en IA (intervención ligera)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_explicaciones_solo_dificil",
+   "nombre": "Las explicaciones de IA ayudan solo en tareas difíciles (RP1/HC1)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "xai_vs_solo_ia",
+   "nombre": "Explicaciones frente a la sola predicción de la IA",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "rollback_gpt4o",
+   "nombre": "Retiro de la actualización aduladora de GPT-4o (abril 2025)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "litigios_adulacion",
+   "nombre": "Litigios y cartas de fiscales por adulación de chatbots",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_informe_onu_muertes",
+   "nombre": "Un informe de la ONU vincula la adulación de chatbots con muertes",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_autorreporte_inflado_prod",
+   "nombre": "El autorreporte de productividad con IA está inflado (RP2)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "friccion_disliked",
+   "nombre": "Los usuarios no gustan de la fricción cognitiva",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_f203_cifra",
+   "p": "contradice",
+   "o": "allianz_vida_salud",
+   "f": "F-477",
+   "apoyo": "Vida/Salud: €1,5 mil M en el 2T 2026 (+10%) y €2,9 mil M en el 1S (+2,4%); no €2.400 M en un trimestre ni €9.000 M al año.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_f203_cifra",
+   "p": "contradice",
+   "o": "allianz_vida_salud",
+   "f": "F-478",
+   "apoyo": "1T 2026: ≈€1,35-1,4 mil M, −5,1% interanual y por debajo del consenso de €1,42 mil M.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "disciplina_precios_salud",
+   "p": "reduce",
+   "o": "mcr_unh",
+   "f": "F-198",
+   "apoyo": "Medical care ratio de 86,7% en el 2T 2026 vs. 89,4%; guía anual 88,1% ±25 pb; atribuido a diseño de beneficios, disciplina de precios y mezcla de afiliados (cifra vía resumen).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mcr_unh",
+   "p": "asocia_con",
+   "o": "margen_salud_eeuu",
+   "f": "F-480",
+   "apoyo": "La industria de salud ganó US$14,8 mil M de suscripción en el 1T 2026 (+47,2%): trimestre, no comparable 1:1 con el semestre de 2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_margen_compresion",
+   "p": "contradice",
+   "o": "margen_salud_eeuu",
+   "f": "F-480",
+   "apoyo": "El rebote de 2026 contradice la lectura de compresión sostenida, aunque es un solo trimestre y una sola gran aseguradora.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "combined_ratio_root",
+   "p": "asocia_con",
+   "o": "crecimiento_prima_root",
+   "f": "F-481",
+   "apoyo": "Combined ratio de 92,1% (vs. 95,2%) con prima devengada −1% y gastos 26%: rentable sin crecimiento; la acción cayó ~10%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "primas_peru",
+   "p": "asocia_con",
+   "o": "penetracion_peru",
+   "f": "F-482",
+   "apoyo": "Producción esperada con crecimiento de primas de 8%-9% en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_pen_2_01",
+   "p": "aplica_a",
+   "o": "penetracion_peru",
+   "f": "F-483",
+   "apoyo": "Penetración estimada de 2,01% al 2T 2026 y densidad ~US$212; 17 compañías; mezcla Vida 46,4%, Generales 31,0%, SPP 11,8%, A&S 10,8%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_pen_2_01",
+   "p": "contradice",
+   "o": "c_pen_2_08",
+   "f": "F-483",
+   "apoyo": "Cifras distintas para el mismo indicador; probable diferencia de fecha o definición (tercera cifra de ~2,5% no atribuida). Sin verificar con la SBS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sbs_ris_2026",
+   "p": "aumenta",
+   "o": "rechazo_cobertura_sin_fundamento",
+   "f": "F-484",
+   "apoyo": "Las aseguradoras pueden ser sancionadas por rechazar coberturas sin fundamento o fuera de plazo (SBS, julio 2026): el reglamento aumenta la sanción, no la conducta.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "indecopi_sanciones_2026",
+   "p": "aplica_a",
+   "o": "rechazo_cobertura_sin_fundamento",
+   "f": "F-485",
+   "apoyo": "Multa de S/55.000 a Pacífico Seguros y a su perito por condiciones no pactadas en un seguro de robo en el hogar (feb-2026).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "carga_prueba_aseguradora",
+   "p": "aplica_a",
+   "o": "indecopi_sanciones_2026",
+   "f": "F-486",
+   "apoyo": "Res. 3683-2026: la aseguradora no acreditó que el asegurado conocía la exclusión de preexistencias; la carga de probar la explicación recae en ella.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "carga_prueba_aseguradora",
+   "p": "respalda",
+   "o": "c_desconfianza_falta_info",
+   "f": "F-486",
+   "apoyo": "La obligación regulatoria de explicar las exclusiones es la contracara de la desconfianza por falta de información (lectura del node).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "crecimiento_primas_globales",
+   "p": "asocia_con",
+   "o": "brecha_natcat",
+   "f": "F-487",
+   "apoyo": "Primas reales +1,3% en 2026 (3,9% en 2025) y brecha de catástrofes naturales +7% a US$424 mil M: no comparable con la brecha de ~US$1,8 billones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adulacion_ia",
+   "p": "aumenta",
+   "o": "conviccion_tener_razon",
+   "f": "F-488",
+   "apoyo": "+25% a +62% de convicción de tener razón tras una sola interacción (3 experimentos preregistrados, N=2.405).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "adulacion_ia",
+   "p": "reduce",
+   "o": "asuncion_responsabilidad",
+   "f": "F-488",
+   "apoyo": "−10% a −28% en la disposición a asumir responsabilidad o reparar un conflicto.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "adulacion_ia",
+   "p": "aumenta",
+   "o": "calificacion_calidad_ia",
+   "f": "F-488",
+   "apoyo": "Los usuarios califican mejor los sistemas aduladores (+9-15% calidad, +6-9% confianza).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "persuasion_ia",
+   "p": "aumenta",
+   "o": "cambio_actitud",
+   "f": "F-489",
+   "apoyo": "19 LLMs, 707 temas, 76.977 respuestas: efecto pequeño pero fiable; el post-entrenamiento y la retórica lo aumentan hasta 51% y 27%.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "persuasion_ia",
+   "p": "aumenta",
+   "o": "cambio_actitud",
+   "f": "F-490",
+   "apoyo": "Los mensajes generados por LLM pueden persuadir en temas de política pública.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "personas_susceptibles",
+   "p": "modera",
+   "o": "c_persuasion_concentrada",
+   "f": "F-491",
+   "apoyo": "GPT-4 con datos demográficos aumentó 81,7% las probabilidades de cambio de opinión frente a persuasores humanos; el efecto se concentra en personas susceptibles (preprint, 820 participantes).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "microtargeting_llm",
+   "p": "asocia_con",
+   "o": "cambio_actitud",
+   "f": "F-499",
+   "apoyo": "El microtargeting con GPT-4 no fue más persuasivo que un mensaje genérico bien hecho (4,83 vs. 6,20 pp, no distinguible): la personalización aporta poco.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_persuasion_concentrada",
+   "p": "contradice",
+   "o": "microtargeting_llm",
+   "f": "F-499",
+   "apoyo": "Tensión con F-491: uno halla un gran aumento con datos demográficos y concentración en susceptibles; el otro, ninguna ventaja del microtargeting. Pueden diferir en diseño (susceptibilidad vs. personalización) y en que F-491 es preprint.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "descarga_cognitiva",
+   "p": "reduce",
+   "o": "pensamiento_critico",
+   "f": "F-493",
+   "apoyo": "666 participantes: correlación negativa entre uso de IA y pensamiento crítico, mediada por descarga cognitiva y más fuerte en jóvenes (observacional).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "descarga_cognitiva",
+   "p": "reduce",
+   "o": "pensamiento_critico",
+   "f": "F-492",
+   "apoyo": "Más confianza en la IA se asocia con menos pensamiento crítico declarado (CHI 2025, autorreporte).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "alfabetizacion_ia",
+   "p": "reduce",
+   "o": "cambio_actitud",
+   "f": "F-494",
+   "apoyo": "Según el título, una intervención ligera de alfabetización en IA protege de la persuasión política (solo título leído).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "adulacion_ia",
+   "p": "aumenta",
+   "o": "calificacion_calidad_ia",
+   "f": "F-501",
+   "apoyo": "Según el título, la adulación vuelve la interacción humana más esforzada y menos satisfactoria con el tiempo (solo título leído): la satisfacción de largo plazo puede invertir la preferencia puntual.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "alfabetizacion_ia",
+   "p": "reduce",
+   "o": "calificacion_calidad_ia",
+   "f": "F-500",
+   "apoyo": "Según el título, las intervenciones individuales contra la adulación reducen su atractivo pero no su capacidad de persuadir (solo título leído).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "rollback_gpt4o",
+   "p": "asocia_con",
+   "o": "adulacion_ia",
+   "f": "F-495",
+   "apoyo": "25-abr-2025: actualización de GPT-4o aduladora, capturas virales en Reddit y X, retiro a los 4 días; OpenAI admitió haberse centrado en la retroalimentación de corto plazo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_preferencia_adulacion",
+   "p": "tiene_limite",
+   "o": "rollback_gpt4o",
+   "f": "F-495",
+   "apoyo": "El incidente muestra que optimizar por la satisfacción inmediata produjo adulación: la preferencia a corto plazo es mala señal de calidad.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "litigios_adulacion",
+   "p": "asocia_con",
+   "o": "adulacion_ia",
+   "f": "F-496",
+   "apoyo": "Raine v. OpenAI (ago-2025), siete demandas más (nov-2025) y carta de 42 fiscales generales: alegaciones, no fallos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_informe_onu_muertes",
+   "p": "origina_en",
+   "o": "litigios_adulacion",
+   "f": "F-497",
+   "apoyo": "Prensa tecnológica secundaria reporta un informe de la ONU de 2026 que vincularía la adulación con muertes; sin verificar y sin abrir el informe.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "xai_vs_solo_ia",
+   "p": "aumenta",
+   "o": "c_explicaciones_solo_dificil",
+   "f": "F-498",
+   "apoyo": "Meta-análisis: la ganancia de las explicaciones sobre la sola predicción es pequeña pero significativa y no se limita a tareas difíciles; el tipo de explicación pesa poco.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_explicaciones_solo_dificil",
+   "p": "contradice",
+   "o": "xai_vs_solo_ia",
+   "f": "F-498",
+   "apoyo": "Contraevidencia parcial a RP1: el efecto de las explicaciones existe en general (pequeño), no solo en tareas difíciles.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cognitive_forcing_functions",
+   "p": "reduce",
+   "o": "sobreconfianza_ia",
+   "f": "F-502",
+   "apoyo": "Más eficaces que la XAI convencional; las basadas en supuestos redujeron aceptar salidas erróneas sin carga medible.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "friccion_disliked",
+   "p": "modera",
+   "o": "cognitive_forcing_functions",
+   "f": "F-502",
+   "apoyo": "Exigir decidir antes de ver la recomendación de la IA funcionó, pero los participantes lo disliked: costo en aceptación.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_autorreporte_inflado_prod",
+   "p": "aplica_a",
+   "o": "productividad_devs",
+   "f": "F-503",
+   "apoyo": "Un blog resume una brecha de ~30 pp entre productividad autorreportada y medida (Stanford); no verificado, solo consistente con RP2.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "Procesa las fuentes de la iteración de seguros y de conducta humano-IA (F-477 a F-503, más F-198 por su cifra nueva). Abstract en artículos académicos; ficha en prensa, empresas y blogs."
+}

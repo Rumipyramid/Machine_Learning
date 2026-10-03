@@ -1,0 +1,301 @@
+{
+ "fecha": "2026-10-02",
+ "f_ids": [
+  "F-3",
+  "F-6",
+  "F-9",
+  "F-10",
+  "F-19",
+  "F-21",
+  "F-23",
+  "F-36",
+  "F-40",
+  "F-41",
+  "F-53",
+  "F-54",
+  "F-55",
+  "F-56"
+ ],
+ "entidades": [
+  {
+   "id": "sesgos_conductuales_seguro",
+   "nombre": "Sesgos conductuales (miopía, narrow framing, present bias)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "demanda_seguros",
+   "nombre": "Demanda de seguros",
+   "tipo": "resultado"
+  },
+  {
+   "id": "coaseguro",
+   "nombre": "Coaseguro y tarifas variables",
+   "tipo": "concepto"
+  },
+  {
+   "id": "comprension_plan_salud",
+   "nombre": "Comprensión del plan de salud",
+   "tipo": "resultado"
+  },
+  {
+   "id": "divulgacion_clara",
+   "nombre": "Divulgación clara y saliente de un producto financiero",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cambio_producto",
+   "nombre": "Cambio de producto por el consumidor",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_divulgacion_obligatoria_falla",
+   "nombre": "Los mandatos de 'explicar mejor' fracasan sistemáticamente",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "s_frame",
+   "nombre": "Enfoque estructural (s-frame)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "i_frame",
+   "nombre": "Enfoque individual (i-frame)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "nudges_a_escala",
+   "nombre": "Nudges a escala (nudge units)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "efecto_nudge_escala",
+   "nombre": "Efecto de nudges a escala (~1,4 pp)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "efecto_nudge_academico",
+   "nombre": "Efecto de nudges en papers académicos (~8,7 pp)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "automedicacion_no_responsable",
+   "nombre": "Automedicación no responsable (Perú)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "determinantes_automedicacion",
+   "nombre": "Determinantes de la automedicación",
+   "tipo": "constructo"
+  },
+  {
+   "id": "barreras_telemedicina_peru",
+   "nombre": "Barreras a la telemedicina en Perú",
+   "tipo": "constructo"
+  },
+  {
+   "id": "adopcion_telemedicina_peru",
+   "nombre": "Adopción de la telemedicina en Perú",
+   "tipo": "resultado"
+  },
+  {
+   "id": "pandemia_2020",
+   "nombre": "Pandemia de 2020",
+   "tipo": "concepto"
+  },
+  {
+   "id": "re_aim",
+   "nombre": "Marco RE-AIM",
+   "tipo": "concepto"
+  },
+  {
+   "id": "marco_implementacion",
+   "nombre": "Marcos de evaluación de efectividad e implementación",
+   "tipo": "concepto"
+  },
+  {
+   "id": "diseno_hibrido_tipo2",
+   "nombre": "Diseño híbrido efectividad-implementación tipo 2",
+   "tipo": "concepto"
+  },
+  {
+   "id": "modelo_farmacias_triage",
+   "nombre": "Modelo de triage con IA y farmacias (Perú)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "silent_trial",
+   "nombre": "Silent trial / modo sombra",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ia_clinica",
+   "nombre": "IA clínica",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "sesgos_conductuales_seguro",
+   "p": "reduce",
+   "o": "demanda_seguros",
+   "f": "F-3",
+   "apoyo": "Presente sesgado y baja educación financiera deprimen la demanda; dos mecanismos: miopía y narrow framing.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "coaseguro",
+   "p": "reduce",
+   "o": "comprension_plan_salud",
+   "f": "F-6",
+   "apoyo": "Quienes tienen coaseguro o tarifas variables estiman mucho peor sus costos; es el término peor entendido.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "divulgacion_clara",
+   "p": "aumenta",
+   "o": "comprension_plan_salud",
+   "f": "F-9",
+   "apoyo": "RCT: la divulgación clara mejora la comprensión.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "divulgacion_clara",
+   "p": "asocia_con",
+   "o": "cambio_producto",
+   "f": "F-9",
+   "apoyo": "Aun con divulgación clara y saliente, el cambio de producto fue rarísimo: mejora comprensión, rara vez cambia conducta.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_divulgacion_obligatoria_falla",
+   "p": "aplica_a",
+   "o": "divulgacion_clara",
+   "f": "F-10",
+   "apoyo": "Tesis canónica: los mandatos de explicar mejor al consumidor fracasan sistemáticamente; marco crítico para glosarios y divulgación.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "i_frame",
+   "p": "es_tipo_de",
+   "o": "s_frame",
+   "f": "F-19",
+   "apoyo": "El campo priorizó soluciones individuales sobre las estructurales; la brújula del giro hacia diseño de producto y sistema (relación de contraste, no de subclase: usada como par conceptual).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "nudges_a_escala",
+   "p": "asocia_con",
+   "o": "efecto_nudge_escala",
+   "f": "F-21",
+   "apoyo": "123+ RCTs administrativos, >20 M de personas: efecto a escala ~1,4 pp.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "efecto_nudge_academico",
+   "p": "asocia_con",
+   "o": "efecto_nudge_escala",
+   "f": "F-21",
+   "apoyo": "'Voltage drop': ~8,7 pp en papers académicos frente a ~1,4 pp a escala.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ubi_telematica",
+   "p": "reduce",
+   "o": "conductas_riesgo_manejo",
+   "f": "F-23",
+   "apoyo": "Velocidad −11-13%, frenadas bruscas −16-21%, aceleraciones −16-25% (mismo estudio que F-442: duplicado consolidado).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ubi_telematica",
+   "p": "es_tipo_de",
+   "o": "s_frame",
+   "f": "F-19",
+   "apoyo": "Inferencia del node (no de los autores): el UBI es diseño conductual embebido en el producto, el caso típico del s-frame.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "determinantes_automedicacion",
+   "p": "aumenta",
+   "o": "automedicacion_no_responsable",
+   "f": "F-36",
+   "apoyo": "Determinantes de la automedicación no responsable en población peruana.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "barreras_telemedicina_peru",
+   "p": "reduce",
+   "o": "adopcion_telemedicina_peru",
+   "f": "F-40",
+   "apoyo": "Barreras tecnológicas, humano-sociales, psicosocial-antropológicas, de gobernanza y económicas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pandemia_2020",
+   "p": "aumenta",
+   "o": "adopcion_telemedicina_peru",
+   "f": "F-41",
+   "apoyo": "El desarrollo previo permitió escalar rápido en 2020; falta un sistema nacional de telesalud integrado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "re_aim",
+   "p": "es_tipo_de",
+   "o": "marco_implementacion",
+   "f": "F-53",
+   "apoyo": "Paper de clarificaciones de RE-AIM (2021); el ledger tenía mal atribuida la cita al paper fundacional.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "re_aim",
+   "p": "aplica_a",
+   "o": "modelo_farmacias_triage",
+   "f": "F-53",
+   "apoyo": "RE-AIM como marco de evaluación del modelo de farmacias y triage con IA.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_hibrido_tipo2",
+   "p": "es_tipo_de",
+   "o": "marco_implementacion",
+   "f": "F-54",
+   "apoyo": "Revisión de aplicaciones del marco efectividad-implementación (autor corregido: Garner, 2022).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_hibrido_tipo2",
+   "p": "aplica_a",
+   "o": "modelo_farmacias_triage",
+   "f": "F-55",
+   "apoyo": "Ejemplo de diseño híbrido tipo 2 en atención primaria, análogo al contexto de farmacias como frente primario.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "silent_trial",
+   "p": "aplica_a",
+   "o": "ia_clinica",
+   "f": "F-56",
+   "apoyo": "El silent trial es el estándar emergente para validar IA clínica antes de que influya en decisiones reales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "Pase de amplitud a nivel ficha: 14 fuentes 🟢A citadas por los nodes de seguros y salud (sesgos, divulgación, nudges, telemedicina Perú, marcos de implementación)."
+}
