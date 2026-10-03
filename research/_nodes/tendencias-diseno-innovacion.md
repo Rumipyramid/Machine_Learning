@@ -373,7 +373,7 @@ reportes separados.*
 
 **Decisión y encuadre: qué hace el diseño cuando presenta una elección (sustenta C1, C2 y C12)**
 - El ancla arbitraria sesga el juicio numérico incluso cuando se sabe irrelevante (F-220, 🟢A) y sesga el juicio de precio del consumidor (F-175, 🟢A): el orden y la prominencia de un precio en una interfaz son decisiones de diseño con efecto, no neutras.
-- Las pérdidas pesan ~2:1 frente a ganancias equivalentes (F-221, 🟢A) y decisiones lógicamente equivalentes cambian según el encuadre (F-222, 🟢A); lo que se posee se valora más (F-223, 🟢A). Son el mecanismo de por qué el texto de una oferta o un aviso no es decoración.
+- Las pérdidas pesan más que ganancias equivalentes (F-221, 🟢A; ⚠️ *corregido 2026-10-03: decía "~2:1"; el paper de 1979 no da esa cifra*) y decisiones lógicamente equivalentes cambian según el encuadre (F-222, 🟢A); lo que se posee se valora más (F-223, 🟢A). Son el mecanismo de por qué el texto de una oferta o un aviso no es decoración.
 - La prueba social pesa más bajo incertidumbre (F-224, 🟢A) y la información fácil de procesar se percibe como más verdadera y confiable (F-225, 🟢A): **es el mecanismo detrás de la fluidez de H7** (ver su estado actualizado).
 - La capacidad de procesamiento es limitada y la carga alta degrada el desempeño incluso en expertos (F-228, 🟢A); la motivación subyacente predice la conducta sostenida mejor que la categoría demográfica (F-230, 🟢A) y la segmentación demográfica explica poco de la conducta financiera (F-229, 🟢A): **límite a diseñar "por perfil"**.
 - Los consumidores de seguros sufren miopía y *narrow framing* (F-3, 🟢A).
@@ -391,7 +391,7 @@ reportes separados.*
 
 **Persuasión e interacción con IA (sustenta C8, C9 y la regla CH1 de [[conducta-humano-ia]])**
 - El post-entrenamiento y la estrategia retórica elevan la persuasión de modelos hasta 51% y 27% (F-489, 🟢A), y los mensajes de LLM persuaden en temas de política pública (F-490, 🟢A); **pero** el microtargeting con LLM no superó a un mensaje genérico bien hecho (F-499, 🟢A). La mayor confianza en la IA se asocia con menos pensamiento crítico **declarado** (F-492, 🔵B, solo autorreporte).
-- El sesgo de automatización está documentado en sistemas de apoyo a la decisión, con la confianza en el sistema y la dificultad de la tarea como mediadores (F-60, 🟢A; F-61, 🔵B — tesis doctoral). Los consumidores desconfían del asegurador por conflicto de interés percibido y falta de transparencia (F-334, 🟢A) y existe una escala validada para medirlo (F-335, 🟢A).
+- El sesgo de automatización está documentado en sistemas de apoyo a la decisión, con la confianza en el sistema y la dificultad de la tarea como mediadores (F-60, 🟢A; F-61, 🔵B — tesis doctoral). En Países Bajos la confianza en el asegurador como comprador de atención es razonable pero frágil, y el problema es que el consumidor no tiene información para juzgarlo (F-334, 🟢A; ⚠️ *corregido 2026-10-03: decía que desconfían por conflicto de interés percibido*) y existe una escala validada para medirlo (F-335, 🟢A).
 
 **Cómo se evalúa una interfaz conversacional (sustenta C15: preguntar qué se midió)**
 - La satisfacción se separa en éxito de tarea y costo de la interacción (PARADISE, F-147, 🟢A); la experiencia subjetiva se mide con instrumentos validados (SASSI, F-148, 🟢A; BUS-11 para chatbots de atención al cliente, F-150, 🟢A); la aceptación en seguros tiene condiciones necesarias y atributos que pesan distinto (F-153, F-154, 🟢A).

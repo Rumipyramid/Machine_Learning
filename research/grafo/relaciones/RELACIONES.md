@@ -234,12 +234,14 @@
   - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
 - ✅ **F-176** (2026-10-03, cerrada): La ficha dice '(autor vía ResearchGate / revista académica)' y año 's.f.'. La autora es Simona Romani; Journal of Product & Brand Management 15(2/3):130-138, 2006.
   - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
-- ⚠️ **F-221** (2026-10-03, abierta): La ficha atribuye a Prospect Theory (1979) que las pérdidas pesan 'aprox. 2:1' frente a ganancias. El resumen de 1979 solo dice que la función de valor es más empinada para pérdidas; la estimación ~2,25 viene de Tversky y Kahneman (1992), 'Advances in prospect theory'. Es una cifra mal atribuida, no inventada.
+- ✅ **F-221** (2026-10-03, cerrada): La ficha atribuye a Prospect Theory (1979) que las pérdidas pesan 'aprox. 2:1' frente a ganancias. El resumen de 1979 solo dice que la función de valor es más empinada para pérdidas; la estimación ~2,25 viene de Tversky y Kahneman (1992), 'Advances in prospect theory'. Es una cifra mal atribuida, no inventada.
+  - *Resolución:* Cerrada: ficha y node de diseño corregidos el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ✅ **F-252** (2026-10-03, cerrada): Autoría 'Varios' → Lloyd, Kenny y Hyett (2021).
   - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 (regla permanente de datos bibliográficos).
 - ✅ **F-335** (2026-10-03, cerrada): Autoría 'Zheng, B. et al.', año '~2002' y título 'A Measure of Trust in Insurers' → Zheng, Hall, Dugan, Kidd y Levine (2002), 'Development of a scale to measure patients' trust in health insurers'.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente).
-- ⚠️ **F-334** (2026-10-03, abierta): Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales.
+- ✅ **F-334** (2026-10-03, cerrada): Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales.
+  - *Resolución:* Cerrada: ficha y node de diseño corregidos el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 
 ## 7. Registro de barridos
 

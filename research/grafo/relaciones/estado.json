@@ -522,7 +522,9 @@
   {
    "fecha": "2026-10-03",
    "f": "F-221",
-   "detalle": "La ficha atribuye a Prospect Theory (1979) que las pérdidas pesan 'aprox. 2:1' frente a ganancias. El resumen de 1979 solo dice que la función de valor es más empinada para pérdidas; la estimación ~2,25 viene de Tversky y Kahneman (1992), 'Advances in prospect theory'. Es una cifra mal atribuida, no inventada."
+   "detalle": "La ficha atribuye a Prospect Theory (1979) que las pérdidas pesan 'aprox. 2:1' frente a ganancias. El resumen de 1979 solo dice que la función de valor es más empinada para pérdidas; la estimación ~2,25 viene de Tversky y Kahneman (1992), 'Advances in prospect theory'. Es una cifra mal atribuida, no inventada.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha y node de diseño corregidos el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
   },
   {
    "fecha": "2026-10-03",
@@ -541,7 +543,9 @@
   {
    "fecha": "2026-10-03",
    "f": "F-334",
-   "detalle": "Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales."
+   "detalle": "Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha y node de diseño corregidos el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
   }
  ],
  "resoluciones": [
