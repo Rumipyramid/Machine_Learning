@@ -90,7 +90,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-13 | `8a90dc2` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `e2fd2d7` | 525 | 16 | 4 | 84 | 414 | 1913 | 20 | 14 | 22 |
+| 2026-10-03 | `5f178b4` | 526 | 16 | 4 | 84 | 415 | 1913 | 20 | 14 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -129,7 +129,7 @@
 | `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
 | `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 254 | 14 | 10 | 3/3 | 2026-10-02 | 2026-10-02 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 333 | 13 | 4 | 12/12 | 2026-10-02 | 2026-10-02 v1.1 |
+| `seguros-comportamiento-mundo-peru` | 333 | 13 | 4 | 12/12 | 2026-10-03 | 2026-10-03 v1.1 |
 | `behavioral-design-estado-disciplina` | 318 | 8 | 7 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
 | `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-24 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
