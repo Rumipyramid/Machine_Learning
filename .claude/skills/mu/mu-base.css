@@ -29,4 +29,15 @@ tr.ko td{background:transparent}tr.ko td:nth-child(5){color:var(--acc);font-weig
 .lab2{font:900 26px Impact,'Arial Black',sans-serif;letter-spacing:.04em;background:var(--acc);color:#000;display:inline-block;padding:0 8px;margin-top:6px}
 .hero{grid-template-columns:300px minmax(0,1fr)!important;align-items:start}@media(max-width:720px){.hero{grid-template-columns:minmax(0,1fr)!important}.big2{font-size:84px}}
 code{background:var(--g3);padding:0 3px}
+details.dd{margin:14px 0 4px;border:2px solid var(--fg)}
+details.dd summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:6px 10px;font-weight:700;font-size:12px;text-transform:uppercase}
+details.dd summary::-webkit-details-marker{display:none}
+details.dd summary:before{content:"▸";font-size:14px;width:1em}
+details.dd[open] summary:before{content:"▾"}
+details.dd summary span{font-weight:400;color:var(--g2);text-transform:none}
+details.dd summary:hover,details.dd summary:focus-visible{background:var(--fg);color:var(--bg);outline:none}
+details.dd summary:hover span,details.dd summary:focus-visible span{color:var(--bg)}
+details.dd[open] summary{border-bottom:2px solid var(--fg)}
+details.dd .ddb{padding:8px;overflow-x:auto}
+details.dd td:first-child{white-space:nowrap}
 

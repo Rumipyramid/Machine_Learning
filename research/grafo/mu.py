@@ -232,8 +232,10 @@ rel_chart = "<h3>RELACIONES POR TIPO</h3>" + (bars([(p, n, None, str(n)) for p, 
 ev_ledger = "<h3>LEDGER: FUENTES NUEVAS POR FECHA DE REGISTRO</h3>" + cols([(r["fecha"], r["nuevas"]) for r in tl])
 bar_sem = ""
 if est["barridos"]:
-    bar_sem = "<h3>BARRIDOS SEMÁNTICOS</h3><table>" + "".join(
-        f'<tr><td>{b["fecha"]}</td><td>{len(b["f_ids"])} fuentes</td><td>{b["triples"]} relaciones</td><td>{E(", ".join(b["f_ids"]))}</td></tr>' for b in est["barridos"]) + "</table>"
+    _nf = len(sem_f); _nt = sum(b["triples"] for b in est["barridos"])
+    bar_sem = (f'<details class="dd"><summary>BARRIDOS SEMÁNTICOS <span>{len(est["barridos"])} lotes · {_nf} fuentes · {_nt} relaciones</span></summary>'
+        '<div class="ddb"><table><tr><th>fecha</th><th>fuentes</th><th>relaciones</th><th>códigos</th></tr>' + "".join(
+        f'<tr><td>{b["fecha"]}</td><td class="r">{len(b["f_ids"])}</td><td class="r">{b["triples"]}</td><td>{E(", ".join(b["f_ids"]))}</td></tr>' for b in reversed(est["barridos"])) + "</table></div></details>")
 notes = "<p class='n'>Serie git: clon superficial; antes de la primera fecha visible solo vale la columna <code>fecha</code> del ledger (fecha de registro, no de lectura).</p>"
 
 top = sorted(nodes, key=lambda n: -len(M["cites"][n] & set(ledger)))
@@ -288,6 +290,17 @@ tr.ko td{background:transparent}tr.ko td:nth-child(5){color:var(--acc);font-weig
 .lab2{font:900 26px Impact,'Arial Black',sans-serif;letter-spacing:.04em;background:var(--acc);color:#000;display:inline-block;padding:0 8px;margin-top:6px}
 .hero{grid-template-columns:300px minmax(0,1fr)!important;align-items:start}@media(max-width:720px){.hero{grid-template-columns:minmax(0,1fr)!important}.big2{font-size:84px}}
 code{background:var(--g3);padding:0 3px}
+details.dd{margin:14px 0 4px;border:2px solid var(--fg)}
+details.dd summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:6px 10px;font-weight:700;font-size:12px;text-transform:uppercase}
+details.dd summary::-webkit-details-marker{display:none}
+details.dd summary:before{content:"▸";font-size:14px;width:1em}
+details.dd[open] summary:before{content:"▾"}
+details.dd summary span{font-weight:400;color:var(--g2);text-transform:none}
+details.dd summary:hover,details.dd summary:focus-visible{background:var(--fg);color:var(--bg);outline:none}
+details.dd summary:hover span,details.dd summary:focus-visible span{color:var(--bg)}
+details.dd[open] summary{border-bottom:2px solid var(--fg)}
+details.dd .ddb{padding:8px;overflow-x:auto}
+details.dd td:first-child{white-space:nowrap}
 """
 HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MU — panel del segundo cerebro</title><style>{CSS}</style></head><body>

@@ -60,6 +60,7 @@ Sin fuentes web: solo fuentes del sistema (la pieza debe funcionar sin red).
 | Barras SVG | rectángulos planos tinta / gris / naranja, sin ejes decorativos | magnitud, nunca ilustración |
 | `code` | fondo gris `--g3` | comandos y rutas |
 | Botón | bloque de tinta, Impact en mayúsculas, flecha `↗`; al pasar o enfocar se vuelve naranja | abre algo más (p. ej. `VER ARQUITECTURA ↗`) |
+| Desplegable | `<details class="dd">` nativo (sin JS), marco de 2px, rótulo en mayúsculas con `▸`/`▾` y resumen en gris; al pasar se invierte; cerrado por defecto | listas largas de registro (p. ej. barridos semánticos del panel) |
 | Ventana emergente | `popover` nativo (sin JS), marco de 8px, barra de título invertida fija arriba, botón `CERRAR ✗` | detalle que no cabe en la página; ver `research/grafo/mu_guia.html` |
 | Diagrama de capas | bloques apilados con número en columna de tinta, flechas de tinta con rótulo gris entre capas, la capa de auditoría con número en naranja | arquitectura o flujo; HTML, no imagen, para que se lea en el celular |
 
