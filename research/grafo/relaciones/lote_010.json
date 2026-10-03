@@ -149,8 +149,8 @@
    "p": "modera",
    "o": "c_nudge_efectivo_general",
    "f": "F-18",
-   "apoyo": "Meta-análisis de segundo orden: hay impacto, pero menor y muy heterogéneo por dominio y técnica (según ficha; abstract no ubicado).",
-   "lectura": "ficha",
+   "apoyo": "Heterogeneidad extrema entre meta-análisis (I²=99,89%): los efectos estimados difieren enormemente.",
+   "lectura": "abstract",
    "fuerza": "observacional"
   },
   {
@@ -213,5 +213,5 @@
    "detalle": "No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar."
   }
  ],
- "notas": "Crisis del nudge (Mertens vs. Maier vs. segundo orden), megaestudios y crítica a la precisión diagnóstica de chatbots médicos. 4/5 leídas a nivel abstract."
+ "notas": "Crisis del nudge (Mertens vs. Maier vs. segundo orden), megaestudios y crítica a la precisión diagnóstica de chatbots médicos. 4/5 leídas a nivel abstract. (F-18 subida a abstract en el lote 011.)"
 }

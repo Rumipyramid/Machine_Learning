@@ -14,7 +14,7 @@
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
 | Fuentes citadas por ≥1 node | 423 de 528 | 80% del ledger; **105 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 72 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 100 de 528 fuentes (19%) | 187 relaciones · 10 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 100 de 528 fuentes (19%) | 189 relaciones · 11 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -90,7 +90,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-16 | `3acec5d` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `25f8cc2` | 528 | 16 | 4 | 84 | 423 | 1948 | 17 | 17 | 22 |
+| 2026-10-03 | `46c75b1` | 528 | 16 | 4 | 84 | 423 | 1948 | 17 | 17 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 

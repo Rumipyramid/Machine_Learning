@@ -508,7 +508,7 @@
    "id": "c_nudge_efectivo_general",
    "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
    "tipo": "afirmacion",
-   "grado": 4,
+   "grado": 6,
    "fuentes": [
     "F-16",
     "F-17",
@@ -623,6 +623,15 @@
    "grado": 1,
    "fuentes": [
     "F-251"
+   ]
+  },
+  {
+   "id": "calidad_metaanalisis_nudge",
+   "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-18"
    ]
   },
   {
@@ -1232,6 +1241,15 @@
    "id": "heterogeneidad_nudge",
    "nombre": "Heterogeneidad del efecto de nudges por dominio y técnica",
    "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-18"
+   ]
+  },
+  {
+   "id": "hu_2025",
+   "nombre": "Meta-análisis de segundo orden de Hu et al. (JBDM 2025)",
+   "tipo": "estudio",
    "grado": 1,
    "fuentes": [
     "F-18"
@@ -4319,8 +4337,8 @@
    "p": "modera",
    "o": "c_nudge_efectivo_general",
    "f": "F-18",
-   "apoyo": "Meta-análisis de segundo orden: hay impacto, pero menor y muy heterogéneo por dominio y técnica (según ficha; abstract no ubicado).",
-   "lectura": "ficha",
+   "apoyo": "Heterogeneidad extrema entre meta-análisis (I²=99,89%): los efectos estimados difieren enormemente.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-03",
    "clase": "efecto"
@@ -4384,6 +4402,30 @@
    "fuerza": "teorica",
    "fecha": "2026-10-03",
    "clase": "efecto"
+  },
+  {
+   "id": "T-188",
+   "s": "hu_2025",
+   "p": "refuta",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-18",
+   "apoyo": "14 meta-análisis, 1.638 estudios, ~30 M de participantes: d=0,27 (IC95% 0,16-0,38) que cae a d=0,004 tras ajustar por sesgo de publicación.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-189",
+   "s": "c_nudge_efectivo_general",
+   "p": "tiene_limite",
+   "o": "calidad_metaanalisis_nudge",
+   "f": "F-18",
+   "apoyo": "La mayoría de meta-análisis incluidos fue calificada de calidad baja o críticamente baja; piden meta-análisis preregistrados.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
   }
  ],
  "generado": "2026-10-03",

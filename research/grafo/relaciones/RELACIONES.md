@@ -11,11 +11,11 @@
 | Fuentes procesadas | **100 de 528** (18.9%) |
 | …del cerebro de diseño (citadas en el node) | 69 de 259 |
 | …por rigor | A 54/144 · B 22/96 · C 20/123 · D 3/122 · E 1/29 |
-| Barridos | 10 |
-| Entidades | 229 |
-| Relaciones | 187 |
-| Nivel de lectura | ficha 132 · abstract 55 |
-| Fuerza de las afirmaciones | descriptiva 65 · causal 53 · observacional 37 · teorica 32 |
+| Barridos | 11 |
+| Entidades | 231 |
+| Relaciones | 189 |
+| Nivel de lectura | ficha 131 · abstract 58 |
+| Fuerza de las afirmaciones | descriptiva 66 · causal 53 · observacional 38 · teorica 32 |
 
 ## 2. Relaciones por tipo
 
@@ -25,15 +25,15 @@
 | `aumenta` | efecto | 32 |
 | `aplica_a` | estructura | 27 |
 | `reduce` | efecto | 24 |
-| `tiene_limite` | metodo | 16 |
+| `tiene_limite` | metodo | 17 |
 | `contradice` | evidencia | 14 |
 | `modera` | efecto | 9 |
 | `respalda` | evidencia | 7 |
 | `es_tipo_de` | estructura | 6 |
 | `origina_en` | metodo | 6 |
 | `mide` | metodo | 5 |
+| `refuta` | evidencia | 4 |
 | `media` | efecto | 3 |
-| `refuta` | evidencia | 3 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
@@ -146,6 +146,8 @@
   - Re-análisis RoBMA de los datos de Mertens: corregido el sesgo de publicación, no queda evidencia de efecto promedio del nudging.
 - **Re-análisis RoBMA de Maier et al. (PNAS 2022)** —refuta→ **Nudges de información/asistencia a la decisión** (F-17, causal) · **estado: abierta**
   - Encuentra evidencia en contra de la eficacia de las intervenciones de información y asistencia, y en contra en la mayoría de dominios.
+- **Meta-análisis de segundo orden de Hu et al. (JBDM 2025)** —refuta→ **Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)** (F-18, observacional) · **estado: abierta**
+  - 14 meta-análisis, 1.638 estudios, ~30 M de participantes: d=0,27 (IC95% 0,16-0,38) que cae a d=0,004 tras ajustar por sesgo de publicación.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -153,6 +155,7 @@
 |---|---|---|---|
 | Generative UI (interfaces generadas por LLM) | intervencion | 9 | 9 |
 | Adulación de la IA (sycophancy) | intervencion | 6 | 4 |
+| Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | afirmacion | 6 | 3 |
 | Susceptibilidad a dark patterns | resultado | 5 | 2 |
 | Sobre-confianza en la IA | resultado | 5 | 4 |
 | Diseño efectivo → mejor desempeño de la firma | afirmacion | 4 | 2 |
@@ -160,7 +163,6 @@
 | El efecto del design thinking está totalmente mediado por empoderamiento | afirmacion | 4 | 2 |
 | Explicabilidad de la IA (explicaciones) | intervencion | 4 | 3 |
 | Las explicaciones mejoran la decisión humano-IA | afirmacion | 4 | 2 |
-| Cognitive forcing functions (fricción deliberada) | intervencion | 4 | 2 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -186,7 +188,8 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 (verificado contra el abstract).
 - ✅ **F-44** (2026-10-03, cerrada): Ficha atribuye autoría a 'NCBI/PMC' (el repositorio). El autor es Stephen R. Milford (2024).
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 (verificado contra el abstract).
-- ⚠️ **F-18** (2026-10-03, abierta): No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar.
+- ✅ **F-18** (2026-10-03, cerrada): No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar.
+  - *Resolución:* Cerrada: fuente ubicada y verificada a nivel abstract el 2026-10-03; autores y resumen corregidos en el ledger (efecto ajustado d=0,004, no "impacto menor").
 
 ## 7. Registro de barridos
 
@@ -202,6 +205,7 @@
 | 2026-10-02 | F-3, F-6, F-9, F-10, F-19, F-21, F-23, F-36, F-40, F-41, F-53, F-54, F-55, F-56 | 18 | – | Pase de amplitud a nivel ficha: 14 fuentes 🟢A citadas por los nodes de seguros y salud (sesgos, divulgación, nudges, telemedicina Perú, marcos de implementación). |
 | 2026-10-02 | F-504, F-505, F-506, F-507, F-508 | 6 | – | Seguros Perú: resultados 2T, sistema 1S 2026, penetración reconciliada y PL 08488. |
 | 2026-10-03 | F-16, F-17, F-18, F-20, F-44 | 12 | – | Crisis del nudge (Mertens vs. Maier vs. segundo orden), megaestudios y crítica a la precisión diagnóstica de chatbots médicos. 4/5 leídas a nivel abstract. |
+| 2026-10-03 | F-18 | 2 | – | Pase de profundidad: F-18 ubicada y leída a nivel abstract; la relación de heterogeneidad del lote 010 se actualizó en su sitio (ficha→abstract). El efecto ajustado (~0) converge con Maier (F-17). |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

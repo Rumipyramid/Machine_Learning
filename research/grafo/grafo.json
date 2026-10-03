@@ -294,7 +294,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Assessing Nudge Impact: A Comprehensive Second-Order Meta-Analysis (J. Behavioral Decision Making)",
-   "autor": "Hu, et al.",
+   "autor": "Hu, Xia, Guo, Lu, Constantino & Ju",
    "anio": "2025",
    "huerfana": false
   },
@@ -10179,7 +10179,7 @@
      "cites": 259
     },
     "fecha": "2026-10-03",
-    "commit": "25f8cc2",
+    "commit": "46c75b1",
     "fuente": "git"
    }
   ],

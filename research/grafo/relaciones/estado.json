@@ -185,6 +185,15 @@
    "triples": 12,
    "sin_aporte": [],
    "notas": "Crisis del nudge (Mertens vs. Maier vs. segundo orden), megaestudios y crítica a la precisión diagnóstica de chatbots médicos. 4/5 leídas a nivel abstract."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-18"
+   ],
+   "triples": 2,
+   "sin_aporte": [],
+   "notas": "Pase de profundidad: F-18 ubicada y leída a nivel abstract; la relación de heterogeneidad del lote 010 se actualizó en su sitio (ficha→abstract). El efecto ajustado (~0) converge con Maier (F-17)."
   }
  ],
  "discrepancias": [
@@ -268,7 +277,9 @@
   {
    "fecha": "2026-10-03",
    "f": "F-18",
-   "detalle": "No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar."
+   "detalle": "No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: fuente ubicada y verificada a nivel abstract el 2026-10-03; autores y resumen corregidos en el ledger (efecto ajustado d=0,004, no \"impacto menor\")."
   }
  ],
  "resoluciones": [

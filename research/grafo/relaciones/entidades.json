@@ -334,6 +334,11 @@
   "nombre": "Todos los grupos de consumidores son susceptibles",
   "tipo": "afirmacion"
  },
+ "calidad_metaanalisis_nudge": {
+  "id": "calidad_metaanalisis_nudge",
+  "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
+  "tipo": "limitacion"
+ },
  "calificacion_calidad_ia": {
   "id": "calificacion_calidad_ia",
   "nombre": "Calificación de calidad y confianza de la IA",
@@ -658,6 +663,11 @@
   "id": "heterogeneidad_nudge",
   "nombre": "Heterogeneidad del efecto de nudges por dominio y técnica",
   "tipo": "concepto"
+ },
+ "hu_2025": {
+  "id": "hu_2025",
+  "nombre": "Meta-análisis de segundo orden de Hu et al. (JBDM 2025)",
+  "tipo": "estudio"
  },
  "i_frame": {
   "id": "i_frame",
