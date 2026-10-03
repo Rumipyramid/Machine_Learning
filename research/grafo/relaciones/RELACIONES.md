@@ -8,31 +8,31 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **151 de 645** (23.4%) |
-| …del cerebro de diseño (citadas en el node) | 109 de 273 |
-| …por rigor | A 105/179 · B 22/107 · C 20/169 · D 3/143 · E 1/33 |
-| Barridos | 23 |
-| Entidades | 351 |
-| Relaciones | 275 |
-| Nivel de lectura | abstract 177 · ficha 98 |
-| Fuerza de las afirmaciones | causal 96 · descriptiva 74 · observacional 64 · teorica 41 |
+| Fuentes procesadas | **161 de 645** (25.0%) |
+| …del cerebro de diseño (citadas en el node) | 119 de 273 |
+| …por rigor | A 110/179 · B 27/107 · C 20/169 · D 3/143 · E 1/33 |
+| Barridos | 24 |
+| Entidades | 377 |
+| Relaciones | 294 |
+| Nivel de lectura | abstract 196 · ficha 98 |
+| Fuerza de las afirmaciones | causal 104 · descriptiva 79 · observacional 67 · teorica 44 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 57 |
-| `asocia_con` | efecto | 39 |
-| `reduce` | efecto | 37 |
+| `aumenta` | efecto | 64 |
+| `asocia_con` | efecto | 40 |
+| `reduce` | efecto | 39 |
 | `aplica_a` | estructura | 30 |
-| `tiene_limite` | metodo | 23 |
-| `modera` | efecto | 16 |
+| `tiene_limite` | metodo | 25 |
+| `modera` | efecto | 19 |
 | `contradice` | evidencia | 16 |
-| `respalda` | evidencia | 14 |
-| `mide` | metodo | 10 |
-| `media` | efecto | 9 |
+| `respalda` | evidencia | 15 |
+| `mide` | metodo | 11 |
+| `media` | efecto | 10 |
+| `refuta` | evidencia | 9 |
 | `es_tipo_de` | estructura | 8 |
-| `refuta` | evidencia | 8 |
 | `origina_en` | metodo | 6 |
 | `parte_de` | estructura | 2 |
 
@@ -47,6 +47,7 @@
 | Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-514 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-514 |
+| Design thinking | F-239, F-240, F-524 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-429, F-470 |
@@ -60,10 +61,10 @@
 | Pie en la puerta (pedido pequeño antes del grande) | F-141, F-142, F-143 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-552, F-553, F-560 |
 | Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-560 |
+| Relación innovación → desempeño | F-238, F-525 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
-| Design thinking | F-239, F-240 |
 | El efecto del design thinking está totalmente mediado por empoderamiento | F-239, F-240 |
 | Las explicaciones rara vez producen desempeño complementario | F-243, F-244 |
 | Las explicaciones mejoran la decisión humano-IA | F-244, F-246 |
@@ -77,9 +78,11 @@
 | Generative UI gana en usabilidad percibida | F-475, F-476 |
 | Brecha percepción–realidad (autoestimación vs. desempeño) | F-257, F-401 |
 | El estándar de reporting se degrada donde hay presión de IA (H16) | F-306, F-428 |
+| Desempeño organizacional | F-434, F-525 |
 | Conductas de riesgo al manejar (velocidad, frenado, aceleración) | F-23, F-442 |
 | Combined ratio de Root (91,4%) | F-449, F-481 |
 | Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-256, F-382 |
+| Herramientas de IA generativa | F-308, F-521 |
 | Empleo de diseñadores gráficos (+2% 2024-2034) | F-308, F-309 |
 | La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe | F-383, F-384 |
 | F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025 | F-477, F-478 |
@@ -93,6 +96,7 @@
 | Alfabetización en IA (intervención ligera) | F-494, F-500 |
 | Litigios y cartas de fiscales por adulación de chatbots | F-496, F-497 |
 | Demanda de seguros | F-3, F-221 |
+| Comprensión del plan de salud | F-6, F-7 |
 | Divulgación clara y saliente de un producto financiero | F-9, F-10 |
 | Los mandatos de 'explicar mejor' fracasan sistemáticamente | F-9, F-10 |
 | Adopción de la telemedicina en Perú | F-40, F-41 |
@@ -186,6 +190,9 @@
 - **Mehta et al. 2025: RCT opt-out vs. opt-in en monitoreo remoto de presión arterial (N=424)** —refuta→ **El encuadre opt-out (default) aumenta la inscripción en programas de salud que exigen participación activa** (F-357, causal) · **estado: refutacion_directa**
   - JAMA Network Open 2025, RCT con 424 pacientes hipertensos: opt-out y opt-in dieron tasas de inscripción similares en el programa de monitoreo remoto; el encuadre opt-out puede no mejorar la participación.
   - *Resolución (2026-10-03):* Mehta et al. (F-357, RCT preregistrado en JAMA Network Open, N=424) prueban directamente el opt-out contra el opt-in para inscribirse en monitoreo remoto de presión arterial y no encuentran diferencia en la inscripción. Era una hipótesis de trabajo del proyecto RIMAC. Alcance: un solo ensayo, en un programa que exige participación activa después de inscribirse; no contradice que los defaults funcionen en decisiones pasivas (el metaanálisis F-16 los ubica entre los nudges más efectivos en promedio).
+- **Hughes 2011: revisión crítica de cinco apariciones publicadas del '70% de fracaso'** —refuta→ **El 70% de las iniciativas de cambio organizacional fracasa** (F-540, descriptiva) · **estado: refutacion_directa**
+  - Journal of Change Management 11(4) 2011: revisa cinco apariciones publicadas de la cifra y concluye que no hay evidencia empírica válida y confiable que sostenga el 70% de fracaso del cambio organizacional.
+  - *Resolución (2026-10-03):* Hughes (F-540, revisión crítica arbitrada) rastrea cinco apariciones publicadas del '70% de las iniciativas de cambio fracasa' y no encuentra evidencia empírica válida y confiable que la sostenga. Ya era la confrontación de H27 en el node de diseño e innovación; aquí queda en el grafo con su resumen oficial.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -200,7 +207,7 @@
 | Cambio de actitud de las personas | resultado | 5 | 5 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | resultado | 4 | 3 |
 | Capacidad de diseño-ingeniería | constructo | 4 | 1 |
-| El efecto del design thinking está totalmente mediado por empoderamiento | afirmacion | 4 | 2 |
+| Design thinking | intervencion | 4 | 3 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -262,6 +269,18 @@
   - *Resolución:* Cerrada: hallazgo corregido en el ledger el 2026-10-03 con autorización del usuario (respuestas casi uniformes al aleatorizar el orden, con sesgos de orden y etiqueta).
 - ✅ **F-514** (2026-10-03, cerrada): Autoría 'Autoría no capturada — ScienceDirect' → Han, Z.; Tang, S. & Li, Z. (International Review of Economics & Finance, vol. 102, 2025).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente).
+- ⚠️ **F-7** (2026-10-03, abierta): El resumen del ledger atribuye a KFF 2017 que 'en 2014 solo ~4% acertó las 10 preguntas y ~52% acertó 7/10' y que el coaseguro es el término menos entendido. El 4% corresponde a una encuesta de Policygenius (>2.000 asegurados), no a KFF; lo verificable de KFF 2017 es: 72% define el deducible, 67% el límite de gasto de bolsillo y 51% calcula bien un costo con deducible y copago. Hallazgo mal atribuido: su corrección requiere autorización.
+- ⚠️ **F-285** (2026-10-03, abierta): Rigor '🔵 B — sustento técnico, preprints con método explícito': la fuente es un preprint de un solo autor (arXiv 2601.06116); según la rúbrica, un preprint sin revisión corresponde a 🟡 C. Cambio de rigor: requiere autorización.
+- ✅ **F-124** (2026-10-03, cerrada): Año 2019 → 2017 (página oficial de la Comisión Europea).
+  - *Resolución:* Cerrada: año corregido en el ledger el 2026-10-03 (regla permanente).
+- ✅ **F-519** (2026-10-03, cerrada): Autoría no capturada y revista 'Journal of Advertising' → Yeo, Chu y Li, Journal of Advertising Research 65(4).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos el 2026-10-03 (regla permanente).
+- ✅ **F-524** (2026-10-03, cerrada): Autoría no capturada → Rösch, Tiberius y Kraus (EJIM 26(7)).
+  - *Resolución:* Cerrada: autoría corregida el 2026-10-03 (regla permanente).
+- ✅ **F-525** (2026-10-03, cerrada): Autoría no capturada → Rousseau, Mathias, Madden y Crook (IJIM 20(3)).
+  - *Resolución:* Cerrada: autoría corregida el 2026-10-03 (regla permanente).
+- ✅ **F-285** (2026-10-03, cerrada): Autoría 'Varios (arXiv)' → Rios-Sialer, I. (arXiv 2601.06116).
+  - *Resolución:* Cerrada: autoría corregida el 2026-10-03 (regla permanente).
 
 ## 7. Registro de barridos
 
@@ -290,6 +309,7 @@
 | 2026-10-03 | F-563, F-564, F-569, F-552, F-553 | 10 | – | Lote de la tanda de convergencia psico-econ-IA, con resúmenes oficiales verificados el 2026-10-03 (Nature, Political Analysis, NMI, QJE). F-564 queda en 'ficha': solo se leyó su cobertura de prensa (S |
 | 2026-10-03 | F-560, F-572, F-579, F-585, F-580 | 11 | – | Lote de la tanda de convergencia psico-econ-IA con resúmenes oficiales verificados el 2026-10-03 (NeurIPS, Nature Computational Science, Nature, QJE). F-560 contradice la afirmación de varianza compri |
 | 2026-10-03 | F-250, F-338, F-357, F-514, F-516 | 10 | – | Lote de profundidad del cerebro de diseño (orden de `next`), con resúmenes oficiales verificados el 2026-10-03. F-250 entra ahora: en el lote 020 se había dejado fuera por falta de resultados. F-338 e |
+| 2026-10-03 | F-519, F-521, F-524, F-525, F-540, F-7, F-124, F-231, F-263, F-285 | 19 | – | Lote de 10 (pedido del usuario), en el orden de `next`, con resúmenes o páginas oficiales verificados el 2026-10-03 vía búsqueda (kff.org está bloqueado: los datos de F-7 vienen del resumen de hallazg |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

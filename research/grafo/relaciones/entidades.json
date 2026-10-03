@@ -154,6 +154,11 @@
   "nombre": "Barreras a la telemedicina en Perú",
   "tipo": "constructo"
  },
+ "brecha_definir_aplicar": {
+  "id": "brecha_definir_aplicar",
+  "nombre": "Saber definir un término de seguro no implica saber aplicarlo en un cálculo",
+  "tipo": "limitacion"
+ },
  "brecha_natcat": {
   "id": "brecha_natcat",
   "nombre": "Brecha de protección de catástrofes naturales (US$424 mil M)",
@@ -168,6 +173,11 @@
   "id": "bus11",
   "nombre": "Escala de usabilidad de chatbots BUS-11",
   "tipo": "metrica"
+ },
+ "c_70_cambio_fracasa": {
+  "id": "c_70_cambio_fracasa",
+  "nombre": "El 70% de las iniciativas de cambio organizacional fracasa",
+  "tipo": "afirmacion"
  },
  "c_adulacion_indistinguible": {
   "id": "c_adulacion_indistinguible",
@@ -454,6 +464,11 @@
   "nombre": "Todos los grupos de consumidores son susceptibles",
   "tipo": "afirmacion"
  },
+ "calidad_decision_seguro": {
+  "id": "calidad_decision_seguro",
+  "nombre": "Calidad de la decisión de compra de seguro",
+  "tipo": "resultado"
+ },
  "calidad_metaanalisis_nudge": {
   "id": "calidad_metaanalisis_nudge",
   "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
@@ -539,6 +554,11 @@
   "nombre": "Cognitive forcing functions (fricción deliberada)",
   "tipo": "intervencion"
  },
+ "colapso_modos_llm": {
+  "id": "colapso_modos_llm",
+  "nombre": "Colapso de modos en LLMs (mode collapse)",
+  "tipo": "concepto"
+ },
  "combinacion_humano_ia": {
   "id": "combinacion_humano_ia",
   "nombre": "Combinación humano-IA frente al mejor de los dos por separado",
@@ -557,6 +577,11 @@
  "comprension_plan_salud": {
   "id": "comprension_plan_salud",
   "nombre": "Comprensión del plan de salud",
+  "tipo": "resultado"
+ },
+ "comprension_seguro_vida": {
+  "id": "comprension_seguro_vida",
+  "nombre": "Comprensión del seguro de vida temporal",
   "tipo": "resultado"
  },
  "conducta_cliente_financiero": {
@@ -694,6 +719,16 @@
   "nombre": "Delegar en una máquina por metas de alto nivel o aprendizaje supervisado (sin instrucciones explícitas)",
   "tipo": "intervencion"
  },
+ "demanda_freelance_escritura_codigo": {
+  "id": "demanda_freelance_escritura_codigo",
+  "nombre": "Publicaciones de trabajos freelance de escritura y programación",
+  "tipo": "resultado"
+ },
+ "demanda_freelance_imagenes": {
+  "id": "demanda_freelance_imagenes",
+  "nombre": "Publicaciones de trabajos freelance de creación de imágenes",
+  "tipo": "resultado"
+ },
  "demanda_seguros": {
   "id": "demanda_seguros",
   "nombre": "Demanda de seguros",
@@ -778,6 +813,11 @@
   "id": "divulgacion_datos",
   "nombre": "Divulgación de datos personales",
   "tipo": "resultado"
+ },
+ "edad": {
+  "id": "edad",
+  "nombre": "Edad del consumidor",
+  "tipo": "constructo"
  },
  "edad_avanzada": {
   "id": "edad_avanzada",
@@ -904,6 +944,11 @@
   "nombre": "Explicabilidad de la IA (explicaciones)",
   "tipo": "intervencion"
  },
+ "factores_contexto_dt": {
+  "id": "factores_contexto_dt",
+  "nombre": "Factores de contexto individuales y organizacionales del design thinking",
+  "tipo": "constructo"
+ },
  "factores_exito_producto_nuevo": {
   "id": "factores_exito_producto_nuevo",
   "nombre": "Predictores del éxito de un producto nuevo (ventaja, mercado, ajuste, predesarrollo, recursos)",
@@ -949,6 +994,11 @@
   "nombre": "Fracaso real de productos nuevos (25% año 1, ~40% año 2)",
   "tipo": "resultado"
  },
+ "franquicia_demasiado_baja": {
+  "id": "franquicia_demasiado_baja",
+  "nombre": "Elegir una franquicia (deducible) demasiado baja",
+  "tipo": "concepto"
+ },
  "friccion_disliked": {
   "id": "friccion_disliked",
   "nombre": "Los usuarios no gustan de la fricción cognitiva",
@@ -957,6 +1007,11 @@
  "friccion_pago_posterior": {
   "id": "friccion_pago_posterior",
   "nombre": "Fricción: acción de pago requerida tras el dark pattern",
+  "tipo": "intervencion"
+ },
+ "friccion_positiva": {
+  "id": "friccion_positiva",
+  "nombre": "Fricción positiva (pausas deliberadas para pensar)",
   "tipo": "intervencion"
  },
  "fuente_unica_microsoft": {
@@ -1004,9 +1059,19 @@
   "nombre": "Hipótesis nuevas e interpretables sobre decisiones humanas",
   "tipo": "resultado"
  },
+ "homogeneizacion_salidas_llm": {
+  "id": "homogeneizacion_salidas_llm",
+  "nombre": "Homogeneización de las salidas de los LLMs (pérdida de diversidad)",
+  "tipo": "resultado"
+ },
  "hu_2025": {
   "id": "hu_2025",
   "nombre": "Meta-análisis de segundo orden de Hu et al. (JBDM 2025)",
+  "tipo": "estudio"
+ },
+ "hughes_2011": {
+  "id": "hughes_2011",
+  "nombre": "Hughes 2011: revisión crítica de cinco apariciones publicadas del '70% de fracaso'",
   "tipo": "estudio"
  },
  "i_frame": {
@@ -1063,6 +1128,11 @@
   "id": "ingresos_figma_q2",
   "nombre": "Ingresos de Figma Q2 2026 (+48%)",
   "tipo": "resultado"
+ },
+ "integracion_producto_proceso": {
+  "id": "integracion_producto_proceso",
+  "nombre": "Integrar innovación de producto y de proceso (frente a solo producto)",
+  "tipo": "intervencion"
  },
  "intencion_uso_interfaz": {
   "id": "intencion_uso_interfaz",
@@ -1174,6 +1244,11 @@
   "nombre": "Medical care ratio de UnitedHealth (86,7% en el 2T 2026)",
   "tipo": "resultado"
  },
+ "medicion_economia_diseno": {
+  "id": "medicion_economia_diseno",
+  "nombre": "Medición de la economía del diseño del Reino Unido (GVA y empleo)",
+  "tipo": "metrica"
+ },
  "megaestudio": {
   "id": "megaestudio",
   "nombre": "Megaestudio (muchas intervenciones, misma población y outcome)",
@@ -1223,6 +1298,11 @@
   "id": "microtargeting_llm",
   "nombre": "Microtargeting con LLM (mensajes personalizados)",
   "tipo": "intervencion"
+ },
+ "mide_tamano_no_efecto": {
+  "id": "mide_tamano_no_efecto",
+  "nombre": "Mide el tamaño del sector, no el efecto causal del diseño",
+  "tipo": "limitacion"
  },
  "ml_generacion_hipotesis": {
   "id": "ml_generacion_hipotesis",
@@ -1309,6 +1389,11 @@
   "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
   "tipo": "metrica"
  },
+ "pausa_reflexion_compra": {
+  "id": "pausa_reflexion_compra",
+  "nombre": "Permitir pausar, reflexionar y modificar la elección durante la compra",
+  "tipo": "intervencion"
+ },
  "penetracion_peru": {
   "id": "penetracion_peru",
   "nombre": "Penetración de seguros en Perú",
@@ -1339,6 +1424,11 @@
   "nombre": "Personalización en conversación (la IA conoce datos del interlocutor)",
   "tipo": "intervencion"
  },
+ "personalizacion_publicidad": {
+  "id": "personalizacion_publicidad",
+  "nombre": "Publicidad personalizada (frente a genérica)",
+  "tipo": "intervencion"
+ },
  "personas_susceptibles": {
   "id": "personas_susceptibles",
   "nombre": "Personas psicológicamente susceptibles",
@@ -1348,6 +1438,11 @@
   "id": "persuasion_ia",
   "nombre": "Persuasión conversacional por IA",
   "tipo": "intervencion"
+ },
+ "persuasion_publicitaria": {
+  "id": "persuasion_publicitaria",
+  "nombre": "Persuasión publicitaria: actitudes e intención de conducta",
+  "tipo": "resultado"
  },
  "peticiones_trampa": {
   "id": "peticiones_trampa",
@@ -1484,6 +1579,11 @@
   "nombre": "Relación médico-paciente",
   "tipo": "concepto"
  },
+ "relevancia_percibida": {
+  "id": "relevancia_percibida",
+  "nombre": "Relevancia percibida del anuncio",
+  "tipo": "constructo"
+ },
  "rentabilidad_tecnica_peru": {
   "id": "rentabilidad_tecnica_peru",
   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
@@ -1492,6 +1592,11 @@
  "respuestas_casi_uniformes": {
   "id": "respuestas_casi_uniformes",
   "nombre": "Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones",
+  "tipo": "resultado"
+ },
+ "resultados_design_thinking": {
+  "id": "resultados_design_thinking",
+  "nombre": "Resultados individuales y organizacionales de un proyecto de design thinking",
   "tipo": "resultado"
  },
  "revenue_figma_q1": {
@@ -1509,6 +1614,11 @@
   "nombre": "Retiro de la actualización aduladora de GPT-4o (abril 2025)",
   "tipo": "concepto"
  },
+ "rousseau_2016": {
+  "id": "rousseau_2016",
+  "nombre": "Rousseau et al. 2016: metaanálisis de 62 estudios sobre innovación y desempeño",
+  "tipo": "estudio"
+ },
  "s1_figma": {
   "id": "s1_figma",
   "nombre": "S-1 de Figma (factor de riesgo declarado por la propia empresa)",
@@ -1523,6 +1633,11 @@
   "id": "salida_cpo_anthropic",
   "nombre": "Salida del CPO de Anthropic de la junta de Figma (14-abr-2026)",
   "tipo": "concepto"
+ },
+ "saliencia_info_clave": {
+  "id": "saliencia_info_clave",
+  "nombre": "Saliencia de la información clave (resúmenes, FAQ, íconos simples)",
+  "tipo": "intervencion"
  },
  "salvaguardas_especificas": {
   "id": "salvaguardas_especificas",
@@ -1634,6 +1749,11 @@
   "nombre": "Sobre-confianza en la IA",
   "tipo": "resultado"
  },
+ "sobrepago_seguro": {
+  "id": "sobrepago_seguro",
+  "nombre": "Sobrepago en la prima del seguro",
+  "tipo": "resultado"
+ },
  "sobrepeso_prob_bajas": {
   "id": "sobrepeso_prob_bajas",
   "nombre": "Sobrevaloración de probabilidades bajas",
@@ -1658,6 +1778,16 @@
   "id": "susceptibilidad_dark_patterns",
   "nombre": "Susceptibilidad a dark patterns",
   "tipo": "resultado"
+ },
+ "tamano_economia_diseno": {
+  "id": "tamano_economia_diseno",
+  "nombre": "Tamaño de la economía del diseño del Reino Unido",
+  "tipo": "resultado"
+ },
+ "tamano_firma": {
+  "id": "tamano_firma",
+  "nombre": "Tamaño de la firma",
+  "tipo": "constructo"
  },
  "tamano_surtido": {
   "id": "tamano_surtido",

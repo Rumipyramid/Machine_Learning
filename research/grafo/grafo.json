@@ -1255,8 +1255,8 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Study on consumers' decision-making in insurance services — A behavioural economics perspective",
-   "autor": "Comisión Europea",
-   "anio": "2019",
+   "autor": "Comisión Europea (con EIOPA) — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): el año era 2019; la página oficial de la Comisión da publicación el 27-oct-2017",
+   "anio": "2017",
    "huerfana": false
   },
   {
@@ -2704,7 +2704,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Homogenization Problem in LLMs / Model collapse",
-   "autor": "Varios (arXiv)",
+   "autor": "Rios-Sialer, I. (arXiv 2601.06116, 'The Homogenization Problem in LLMs: Towards Meaningful Diversity in AI Safety') — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Varios (arXiv)'",
    "anio": "2026",
    "huerfana": false
   },
@@ -4810,7 +4810,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "How Persuasive Is Personalized Advertising? A Meta-Analytic Review of Experimental Evidence of the Effects of Personalization on Ad Effectiv",
-   "autor": "Autoría no capturada — Journal of Advertising / Taylor & Francis",
+   "autor": "Yeo, T. E. D.; Chu, T. H. & Li, Q. — Journal of Advertising Research 65(4):616-631 — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Autoría no capturada — Journal of Advertising'; metaanálisis de 53 estudios experimentales",
    "anio": "2025",
    "huerfana": false
   },
@@ -4855,7 +4855,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Design thinking for innovation: context factors, process, and outcomes",
-   "autor": "Autoría no capturada — European Journal of Innovation Management",
+   "autor": "Rösch, N.; Tiberius, V. & Kraus, S. — European Journal of Innovation Management 26(7):160-176 — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Autoría no capturada'",
    "anio": "2023",
    "huerfana": false
   },
@@ -4864,7 +4864,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Innovation, Firm Performance, and Appropriation: A Meta-Analysis",
-   "autor": "Autoría no capturada — International Journal of Innovation Management (World Scientific)",
+   "autor": "Rousseau, M. B.; Mathias, B. D.; Madden, L. T. & Crook, T. R. — International Journal of Innovation Management 20(3) — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Autoría no capturada'",
    "anio": "2016",
    "huerfana": false
   },
@@ -12036,7 +12036,7 @@
      "cites": 273
     },
     "fecha": "2026-10-03",
-    "commit": "7dfc90d",
+    "commit": "f710300",
     "fuente": "git"
    }
   ],

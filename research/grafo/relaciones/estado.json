@@ -394,6 +394,24 @@
    "triples": 10,
    "sin_aporte": [],
    "notas": "Lote de profundidad del cerebro de diseño (orden de `next`), con resúmenes oficiales verificados el 2026-10-03. F-250 entra ahora: en el lote 020 se había dejado fuera por falta de resultados. F-338 es seguro de medicamentos (Medicare Part D), no salud en general. F-357 abre una tensión con la idea general de que los defaults funcionan."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-519",
+    "F-521",
+    "F-524",
+    "F-525",
+    "F-540",
+    "F-7",
+    "F-124",
+    "F-231",
+    "F-263",
+    "F-285"
+   ],
+   "triples": 19,
+   "sin_aporte": [],
+   "notas": "Lote de 10 (pedido del usuario), en el orden de `next`, con resúmenes o páginas oficiales verificados el 2026-10-03 vía búsqueda (kff.org está bloqueado: los datos de F-7 vienen del resumen de hallazgos de KFF que devuelve la búsqueda). F-521 ya estaba verificada; se suma su volumen (71(10)). F-525 es la contraparte de la tensión de magnitud con F-430 que el node ya anota."
   }
  ],
  "discrepancias": [
@@ -599,6 +617,53 @@
    "detalle": "Autoría 'Autoría no capturada — ScienceDirect' → Han, Z.; Tang, S. & Li, Z. (International Review of Economics & Finance, vol. 102, 2025).",
    "estado": "cerrada",
    "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-7",
+   "detalle": "El resumen del ledger atribuye a KFF 2017 que 'en 2014 solo ~4% acertó las 10 preguntas y ~52% acertó 7/10' y que el coaseguro es el término menos entendido. El 4% corresponde a una encuesta de Policygenius (>2.000 asegurados), no a KFF; lo verificable de KFF 2017 es: 72% define el deducible, 67% el límite de gasto de bolsillo y 51% calcula bien un costo con deducible y copago. Hallazgo mal atribuido: su corrección requiere autorización.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-285",
+   "detalle": "Rigor '🔵 B — sustento técnico, preprints con método explícito': la fuente es un preprint de un solo autor (arXiv 2601.06116); según la rúbrica, un preprint sin revisión corresponde a 🟡 C. Cambio de rigor: requiere autorización.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-124",
+   "detalle": "Año 2019 → 2017 (página oficial de la Comisión Europea).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: año corregido en el ledger el 2026-10-03 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-519",
+   "detalle": "Autoría no capturada y revista 'Journal of Advertising' → Yeo, Chu y Li, Journal of Advertising Research 65(4).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos el 2026-10-03 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-524",
+   "detalle": "Autoría no capturada → Rösch, Tiberius y Kraus (EJIM 26(7)).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida el 2026-10-03 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-525",
+   "detalle": "Autoría no capturada → Rousseau, Mathias, Madden y Crook (IJIM 20(3)).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida el 2026-10-03 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-285",
+   "detalle": "Autoría 'Varios (arXiv)' → Rios-Sialer, I. (arXiv 2601.06116).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida el 2026-10-03 (regla permanente)."
   }
  ],
  "resoluciones": [
@@ -745,6 +810,12 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-03",
    "nota": "Mehta et al. (F-357, RCT preregistrado en JAMA Network Open, N=424) prueban directamente el opt-out contra el opt-in para inscribirse en monitoreo remoto de presión arterial y no encuentran diferencia en la inscripción. Era una hipótesis de trabajo del proyecto RIMAC. Alcance: un solo ensayo, en un programa que exige participación activa después de inscribirse; no contradice que los defaults funcionen en decisiones pasivas (el metaanálisis F-16 los ubica entre los nudges más efectivos en promedio)."
+  },
+  {
+   "triple": "T-285",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-03",
+   "nota": "Hughes (F-540, revisión crítica arbitrada) rastrea cinco apariciones publicadas del '70% de las iniciativas de cambio fracasa' y no encuentra evidencia empírica válida y confiable que la sostenga. Ya era la confrontación de H27 en el node de diseño e innovación; aquí queda en el grafo con su resumen oficial."
   }
  ]
 }
