@@ -1,6 +1,6 @@
 # 🧬 Grafo semántico del códice — RELACIONES
 
-*Generado 2026-10-02 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
+*Generado 2026-10-03 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
 
 > **Transparencia:** una relación aquí es lo que *una fuente dice*, no un hecho. `lectura=ficha` significa que solo se leyó el resumen del ledger; `abstract` que se leyó el resumen real de la fuente; `completa`, el texto íntegro. Un cruce entre fuentes es una *coincidencia de entidades*, no una prueba de que las fuentes sean compatibles.
 
@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **95 de 508** (18.7%) |
-| …del cerebro de diseño (citadas en el node) | 49 de 175 |
-| …por rigor | A 49/138 · B 22/88 · C 20/119 · D 3/120 · E 1/29 |
-| Barridos | 9 |
-| Entidades | 213 |
-| Relaciones | 175 |
-| Nivel de lectura | ficha 131 · abstract 44 |
-| Fuerza de las afirmaciones | descriptiva 64 · causal 46 · observacional 36 · teorica 29 |
+| Fuentes procesadas | **100 de 528** (18.9%) |
+| …del cerebro de diseño (citadas en el node) | 69 de 259 |
+| …por rigor | A 54/144 · B 22/96 · C 20/123 · D 3/122 · E 1/29 |
+| Barridos | 10 |
+| Entidades | 229 |
+| Relaciones | 187 |
+| Nivel de lectura | ficha 132 · abstract 55 |
+| Fuerza de las afirmaciones | descriptiva 65 · causal 53 · observacional 37 · teorica 32 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
 | `asocia_con` | efecto | 35 |
-| `aumenta` | efecto | 30 |
+| `aumenta` | efecto | 32 |
 | `aplica_a` | estructura | 27 |
 | `reduce` | efecto | 24 |
-| `tiene_limite` | metodo | 14 |
+| `tiene_limite` | metodo | 16 |
 | `contradice` | evidencia | 14 |
-| `modera` | efecto | 8 |
+| `modera` | efecto | 9 |
+| `respalda` | evidencia | 7 |
 | `es_tipo_de` | estructura | 6 |
 | `origina_en` | metodo | 6 |
-| `respalda` | evidencia | 5 |
-| `mide` | metodo | 3 |
-| `media` | efecto | 2 |
-| `refuta` | evidencia | 1 |
+| `mide` | metodo | 5 |
+| `media` | efecto | 3 |
+| `refuta` | evidencia | 3 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
@@ -51,6 +51,7 @@
 | Penetración de seguros en Perú | F-482, F-483, F-507 |
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
+| Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
@@ -91,6 +92,8 @@
 | Marcos de evaluación de efectividad e implementación | F-53, F-54 |
 | Modelo de triage con IA y farmacias (Perú) | F-53, F-55 |
 | Diseño híbrido efectividad-implementación tipo 2 | F-54, F-55 |
+| Cambio de conducta objetivo | F-16, F-20 |
+| Sesgo de publicación | F-16, F-17 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -108,7 +111,7 @@
   - *Resolución (2026-10-02):* El moderador es el costo-beneficio de involucrarse (dificultad de la tarea). F-244: tareas de sentido común, sin ventaja de las explicaciones frente a mostrar la confianza. F-246: las explicaciones reducen la sobre-confianza solo en la tarea difícil de un laberinto. Resultados distintos (precisión de equipo vs. sobre-confianza) y tareas distintas, no una contradicción.
 - **La IA cobra un impuesto de margen a las herramientas de diseño (H32)** —contradice→ **El mercado descuenta disrupción de IA sobre la demanda (H13)** (F-470, teorica) · **estado: mecanismo_en_disputa**
   - Explicación alternativa del mecanismo (no del resultado): la caída se atribuye al costo de IA sobre el margen, no a una pérdida de demanda. La atribución es lectura de prensa.
-  - *Resolución (2026-10-02):* No contradice el resultado de H13 (se cumplió), sino su mecanismo: costo de IA sobre el margen vs. descuento por disrupción de la demanda. Se resuelve con el margen bruto del Q3 (nov-2026); hoy la atribución es lectura de prensa.
+  - *Resolución (2026-10-03):* No contradice el resultado de H13 (se cumplió), sino su mecanismo: costo de IA sobre el margen vs. descuento por disrupción de la demanda. Se resuelve con el margen bruto del Q3 (nov-2026); hoy la atribución es lectura de prensa. | 2026-10-03: la guía del Q3 apunta a margen bruto ~86% vs. 90% por costos de IA (F-526, guía no resultado). Declarado pendiente con fecha: se resuelve con el margen bruto reportado del Q3 (≈ nov-2026); no es resoluble leyendo más.
 - **La justificación de diseño generada no coincide con lo implementado** —contradice→ **Generative UI gana en usabilidad percibida** (F-475, teorica) · **estado: alcance_distinto**
   - Tensión de alcance, no de resultado: F-475 mide fidelidad de implementación; F-476 mide usabilidad percibida en una sesión.
   - *Resolución (2026-10-02):* Miden cosas distintas: fidelidad entre justificación e implementación (F-475, preprint) vs. usabilidad percibida en sesión única (F-476, emisor interesado). Ninguna prueba uso repetido; se mantiene H33 abierta.
@@ -138,7 +141,11 @@
   - *Resolución (2026-10-02):* El meta-análisis de 2026 (F-498) halla un efecto pequeño pero significativo de las explicaciones sobre la sola predicción, no limitado a tareas difíciles. RP1 se reformula: efecto pequeño y condicional, no nulo.
 - **Primas netas del sistema peruano en el 1S 2026 (+1,1%)** —contradice→ **El mercado peruano crece 8%-9% en 2026** (F-506, descriptiva) · **estado: sin_verificar**
   - Si se confirma, el +1,1% del 1S contradice la expectativa de +8%-9% de F-482/F-483; sin verificar con la SBS.
-  - *Resolución (2026-10-02):* Contradicción potencial de alto impacto (+1,1% vs. +8-9% esperado): la nota de prensa no tiene fecha confirmada y no se abrió la estadística de la SBS. Pendiente de verificación con la fuente oficial antes de modificar la tesis del mercado peruano.
+  - *Resolución (2026-10-03):* Verificación 2026-10-03: una segunda búsqueda independiente reproduce +1,1% (S/9.451 M), utilidad S/1.391 M (+7,5%), penetración 2,01% y densidad US$212, lo que apunta a que la cifra viene de un reporte con datos de la SBS; pero gestion.pe, sbs.gob.pe y PCR están bloqueados y la tabla oficial no se abrió. Sigue sin_verificar hasta contrastar con la SBS (el usuario puede aportar el PDF/boletín del 2T 2026). La tesis de mercado peruano ya lleva la reserva.
+- **Re-análisis RoBMA de Maier et al. (PNAS 2022)** —refuta→ **Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)** (F-17, causal) · **estado: abierta**
+  - Re-análisis RoBMA de los datos de Mertens: corregido el sesgo de publicación, no queda evidencia de efecto promedio del nudging.
+- **Re-análisis RoBMA de Maier et al. (PNAS 2022)** —refuta→ **Nudges de información/asistencia a la decisión** (F-17, causal) · **estado: abierta**
+  - Encuentra evidencia en contra de la eficacia de las intervenciones de información y asistencia, y en contra en la mayoría de dominios.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -159,10 +166,12 @@
 
 - ✅ **F-251** (2026-10-02, cerrada): Ficha dice 'Varios, 2021'. La fuente es Zac, Huang, von Moltke, Decker & Ezrachi, *Behavioural Public Policy*, publicada online 3-feb-2025 (SSRN 2023). Además la ficha dice que 'la educación sí modera en los patterns leves'; el abstract solo dice evidencia débil de que ingreso/educación/edad importen y posible mayor vulnerabilidad en mayores. Posible mezcla con F-241. Revisar autor, año y esa frase.
   - *Resolución:* Cerrada: autores y año corregidos en el ledger el 2026-10-02.
-- ⚠️ **F-241** (2026-10-02, abierta): Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo. Actualización 2026-10-02: la afirmación de que los menos educados fueron más susceptibles a patterns leves SÍ figura en el abstract; las cifras exactas siguen sin confirmarse. Reintento 2026-10-02: el texto completo (chicagounbound.uchicago.edu y content.naic.org) quedó bloqueado por la red; el abstract confirma 'más del doble' y 'casi cuatro veces' y que los menos educados fueron más susceptibles a los patterns leves; las cifras exactas siguen sin confirmar.
+- ✅ **F-241** (2026-10-02, cerrada): Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo. Actualización 2026-10-02: la afirmación de que los menos educados fueron más susceptibles a patterns leves SÍ figura en el abstract; las cifras exactas siguen sin confirmarse. Reintento 2026-10-02: el texto completo (chicagounbound.uchicago.edu y content.naic.org) quedó bloqueado por la red; el abstract confirma 'más del doble' y 'casi cuatro veces' y que los menos educados fueron más susceptibles a los patterns leves; las cifras exactas siguen sin confirmar.
+  - *Resolución:* Declarada permanente (2026-10-03): tras 4 rutas (OUP, SSRN, oag.ca.gov, citizen.org) todas bloqueadas, las cifras exactas 11,3/25,8/41,9% no son verificables desde este entorno. Lo verificado (abstract): más del doble y casi cuatro veces; menos educados más susceptibles a los leves; los agresivos generan backlash. La ficha del ledger se reescribió con relativos y la reserva. Reabrir solo si el usuario aporta el PDF.
 - ✅ **F-262** (2026-10-02, cerrada): La ficha mezcla '~1/3 de los experimentos mejora la métrica' (Microsoft, verificado) con '85-90% de fracaso en Bing, Google Ads, Netflix y Airbnb' (no verificado hoy). Son bases distintas; no deberían leerse como una sola cifra.
   - *Resolución:* Cerrada con matiz: el 85-90% se confirma en resúmenes de materiales de Kohavi (Bing ~85%, Google Ads/Netflix ~90%, Airbnb ~92%; Microsoft ~66-70%). Son organizaciones distintas, no una cifra única. El texto de HBR sigue sin abrirse.
-- ⚠️ **F-238** (2026-10-02, abierta): La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados). Reintento 2026-10-02: Crossref bloqueado; la búsqueda confirma revista (*Innovation*), año 2025, 1.659 firmas y el diseño, pero no los nombres de los autores.
+- ✅ **F-238** (2026-10-02, cerrada): La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados). Reintento 2026-10-02: Crossref bloqueado; la búsqueda confirma revista (*Innovation*), año 2025, 1.659 firmas y el diseño, pero no los nombres de los autores.
+  - *Resolución:* Cerrada con reserva (2026-10-03): dos búsquedas independientes dan Hur, Kim, Hwang & Kim (Innovation, 19-ago-2025, DOI 10.1080/14479338.2025.2547575); la página de la revista sigue bloqueada. Ficha corregida.
 - ✅ **F-239** (2026-10-02, cerrada): La ficha dice 'Muestra estudiantil' y 'N=160 en 62 proyectos de innovación con empresas'; las dos descripciones conviven y conviene aclarar cuál es la muestra. No verificado.
   - *Resolución:* Cerrada: la muestra es de 160 estudiantes en 62 proyectos de innovación para empresas; las dos descripciones de la ficha eran compatibles.
 - ✅ **F-256** (2026-10-02, cerrada): F-256 y F-382 llevan el mismo título ('Looks Good, But Is It Usable? Evaluating Usability in AI-Generated…'): posible registro duplicado en el ledger. Revisar y, si lo es, consolidar (decisión de cronista).
@@ -173,6 +182,9 @@
   - *Resolución:* Duplicado consolidado por cronista el 2026-10-02: F-23 y F-442 son el mismo RCT de UBI simulado (Accident Analysis & Prevention). Canónica: F-442 (con preregistro NCT06101251, N=1.449). F-23 queda marcada como duplicado.
 - ✅ **F-483** (2026-10-02, cerrada): La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS.
   - *Resolución:* Reconciliada el 2026-10-02: la penetración de Perú oscila 2,0%-2,1% (SBS: 2,06% a setiembre de 2025, F-507); 2,01% (estimación al 2T 2026) y ~2,08% (node) son compatibles. La cifra de ~2,5% corresponde a otra medida o fuente no atribuida. Reserva: no se abrió el documento de la SBS.
+- ⚠️ **F-16** (2026-10-03, abierta): Ficha dice '447 experimentos'. El abstract reporta >200 estudios y >450 tamaños de efecto (447 es el conteo de efectos, no de experimentos). Además el d es 0,45 (IC 0,39-0,52), no 0,43 como se suele citar.
+- ⚠️ **F-44** (2026-10-03, abierta): Ficha atribuye autoría a 'NCBI/PMC' (el repositorio). El autor es Stephen R. Milford (2024).
+- ⚠️ **F-18** (2026-10-03, abierta): No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar.
 
 ## 7. Registro de barridos
 
@@ -187,6 +199,7 @@
 | 2026-10-02 | F-198, F-477, F-478, F-480, F-481, F-482, F-483, F-484, F-485, F-486, F-487, F-488, F-489, F-490, F-491, F-492, F-493, F-494, F-495, F-496, F-497, F-498, F-499, F-500, F-501, F-502, F-503 | 36 | – | Procesa las fuentes de la iteración de seguros y de conducta humano-IA (F-477 a F-503, más F-198 por su cifra nueva). Abstract en artículos académicos; ficha en prensa, empresas y blogs. |
 | 2026-10-02 | F-3, F-6, F-9, F-10, F-19, F-21, F-23, F-36, F-40, F-41, F-53, F-54, F-55, F-56 | 18 | – | Pase de amplitud a nivel ficha: 14 fuentes 🟢A citadas por los nodes de seguros y salud (sesgos, divulgación, nudges, telemedicina Perú, marcos de implementación). |
 | 2026-10-02 | F-504, F-505, F-506, F-507, F-508 | 6 | – | Seguros Perú: resultados 2T, sistema 1S 2026, penetración reconciliada y PL 08488. |
+| 2026-10-03 | F-16, F-17, F-18, F-20, F-44 | 12 | – | Crisis del nudge (Mertens vs. Maier vs. segundo orden), megaestudios y crítica a la precisión diagnóstica de chatbots médicos. 4/5 leídas a nivel abstract. |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

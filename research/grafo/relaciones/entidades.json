@@ -174,6 +174,11 @@
   "nombre": "El estándar de reporting se degrada donde hay presión de IA (H16)",
   "tipo": "afirmacion"
  },
+ "c_expertos_no_predicen": {
+  "id": "c_expertos_no_predicen",
+  "nombre": "Los expertos no predicen qué intervención funcionará mejor",
+  "tipo": "afirmacion"
+ },
  "c_explicaciones_mejoran_decision": {
   "id": "c_explicaciones_mejoran_decision",
   "nombre": "Las explicaciones mejoran la decisión humano-IA",
@@ -262,6 +267,11 @@
  "c_narrativa_multiplicadores_diseno": {
   "id": "c_narrativa_multiplicadores_diseno",
   "nombre": "El diseño devuelve multiplicadores de retorno (p. ej. 100:1)",
+  "tipo": "afirmacion"
+ },
+ "c_nudge_efectivo_general": {
+  "id": "c_nudge_efectivo_general",
+  "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
   "tipo": "afirmacion"
  },
  "c_pen_2_01": {
@@ -524,6 +534,11 @@
   "nombre": "Usuarios mayores",
   "tipo": "poblacion"
  },
+ "efecto_conductual": {
+  "id": "efecto_conductual",
+  "nombre": "Cambio de conducta objetivo",
+  "tipo": "resultado"
+ },
  "efecto_nudge_academico": {
   "id": "efecto_nudge_academico",
   "nombre": "Efecto de nudges en papers académicos (~8,7 pp)",
@@ -548,6 +563,11 @@
   "id": "empoderamiento_psicologico",
   "nombre": "Empoderamiento psicológico",
   "tipo": "constructo"
+ },
+ "estructura_decision": {
+  "id": "estructura_decision",
+  "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
+  "tipo": "intervencion"
  },
  "estudiantes_proyectos_empresa": {
   "id": "estudiantes_proyectos_empresa",
@@ -634,6 +654,11 @@
   "nombre": "Herramientas de IA generativa",
   "tipo": "intervencion"
  },
+ "heterogeneidad_nudge": {
+  "id": "heterogeneidad_nudge",
+  "nombre": "Heterogeneidad del efecto de nudges por dominio y técnica",
+  "tipo": "concepto"
+ },
  "i_frame": {
   "id": "i_frame",
   "nombre": "Enfoque individual (i-frame)",
@@ -657,6 +682,11 @@
  "indecopi_sanciones_2026": {
   "id": "indecopi_sanciones_2026",
   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
+  "tipo": "intervencion"
+ },
+ "informacion_decision": {
+  "id": "informacion_decision",
+  "nombre": "Nudges de información/asistencia a la decisión",
   "tipo": "intervencion"
  },
  "ingresos_bing": {
@@ -714,6 +744,11 @@
   "nombre": "Valoración de Lovable (US$13,3B)",
   "tipo": "resultado"
  },
+ "maier_2022": {
+  "id": "maier_2022",
+  "nombre": "Re-análisis RoBMA de Maier et al. (PNAS 2022)",
+  "tipo": "estudio"
+ },
  "marco_implementacion": {
   "id": "marco_implementacion",
   "nombre": "Marcos de evaluación de efectividad e implementación",
@@ -739,6 +774,16 @@
   "nombre": "Medical care ratio de UnitedHealth (86,7% en el 2T 2026)",
   "tipo": "resultado"
  },
+ "megaestudio": {
+  "id": "megaestudio",
+  "nombre": "Megaestudio (muchas intervenciones, misma población y outcome)",
+  "tipo": "intervencion"
+ },
+ "megaestudio_gimnasio": {
+  "id": "megaestudio_gimnasio",
+  "nombre": "Megaestudio de gimnasio de Milkman et al. (Nature 2021)",
+  "tipo": "estudio"
+ },
  "menos_educados": {
   "id": "menos_educados",
   "nombre": "Personas con menor educación",
@@ -753,6 +798,11 @@
   "id": "menus_adaptativos",
   "nombre": "Menús adaptativos (control del sistema)",
   "tipo": "intervencion"
+ },
+ "mertens_2022": {
+  "id": "mertens_2022",
+  "nombre": "Meta-análisis de Mertens et al. (PNAS 2022)",
+  "tipo": "estudio"
  },
  "microsoft_exp": {
   "id": "microsoft_exp",
@@ -799,6 +849,11 @@
   "nombre": "Nudges a escala (nudge units)",
   "tipo": "intervencion"
  },
+ "outcomes_salud": {
+  "id": "outcomes_salud",
+  "nombre": "Resultados de salud reales del paciente",
+  "tipo": "constructo"
+ },
  "pandemia_2020": {
   "id": "pandemia_2020",
   "nombre": "Pandemia de 2020",
@@ -822,6 +877,11 @@
  "perdida_neta_figma_fy25": {
   "id": "perdida_neta_figma_fy25",
   "nombre": "Pérdida neta GAAP de Figma FY2025 (−US$1,25B)",
+  "tipo": "resultado"
+ },
+ "persistencia_efecto": {
+  "id": "persistencia_efecto",
+  "nombre": "Persistencia del efecto tras terminar la intervención",
   "tipo": "resultado"
  },
  "personas_susceptibles": {
@@ -853,6 +913,11 @@
   "id": "precision_adaptacion_alta",
   "nombre": "Alta precisión de adaptación",
   "tipo": "concepto"
+ },
+ "precision_diagnostica": {
+  "id": "precision_diagnostica",
+  "nombre": "Precisión diagnóstica de chatbots médicos",
+  "tipo": "metrica"
  },
  "preferencia_interfaces_generativas": {
   "id": "preferencia_interfaces_generativas",
@@ -914,6 +979,11 @@
   "nombre": "Relación innovación → desempeño",
   "tipo": "afirmacion"
  },
+ "relacion_medico_paciente": {
+  "id": "relacion_medico_paciente",
+  "nombre": "Relación médico-paciente",
+  "tipo": "concepto"
+ },
  "rentabilidad_tecnica_peru": {
   "id": "rentabilidad_tecnica_peru",
   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
@@ -923,6 +993,11 @@
   "id": "revenue_figma_q1",
   "nombre": "Ingresos de Figma Q1 2026 (+46%)",
   "tipo": "resultado"
+ },
+ "robma": {
+  "id": "robma",
+  "nombre": "Meta-análisis bayesiano robusto (RoBMA)",
+  "tipo": "metrica"
  },
  "rollback_gpt4o": {
   "id": "rollback_gpt4o",
@@ -962,6 +1037,11 @@
  "sesgo_halo": {
   "id": "sesgo_halo",
   "nombre": "Sesgo de halo (proxy = percepción experta)",
+  "tipo": "limitacion"
+ },
+ "sesgo_publicacion": {
+  "id": "sesgo_publicacion",
+  "nombre": "Sesgo de publicación",
   "tipo": "limitacion"
  },
  "sesgo_seleccion_metr": {

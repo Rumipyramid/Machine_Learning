@@ -14,7 +14,7 @@
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
 | Fuentes citadas por ≥1 node | 423 de 528 | 80% del ledger; **105 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 72 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 95 de 528 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 100 de 528 fuentes (19%) | 187 relaciones · 10 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -84,13 +84,13 @@
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
-*Fuente: `git show` de cada commit. **El clon es superficial (shallow)**: el historial verificable empieza en 2026-08-13; antes de eso solo vale §3.1.*
+*Fuente: `git show` de cada commit. **El clon es superficial (shallow)**: el historial verificable empieza en 2026-08-16; antes de eso solo vale §3.1.*
 
 | Fecha | Commit | Fuentes | Nodes | Outputs | Wikilinks | Fuentes citadas | Diseño: líneas | H abiertas | H resueltas | Reglas |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-13 | `8a90dc2` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
+| 2026-08-16 | `3acec5d` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `482b479` | 528 | 16 | 4 | 84 | 423 | 1948 | 17 | 17 | 22 |
+| 2026-10-03 | `897cd9f` | 528 | 16 | 4 | 84 | 423 | 1948 | 17 | 17 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -113,7 +113,7 @@
 - ✅ Wikilinks **rotos** (destino inexistente): **0**
 - ✅ Nodes **aislados** (sin enlaces): **0**
 - ✅ Nodes **ausentes** de la tabla de `alma.md`: **0**
-- ✅ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2026-08-13; antes es indeterminable): **0**
+- ✅ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2026-08-16; antes es indeterminable): **0**
 - ✅ Outputs que **no citan ningún node** (viola regla 4): **0**
 
 ## 6. Tabla por node
@@ -123,19 +123,19 @@
 | `tendencias-diseno-innovacion` | 1948 | 259 | 134 | 8/8 | 2026-10-03 | 2026-10-03 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
 | `conducta-humano-ia` | 139 | 35 | 25 | 5/5 | 2026-10-02 | 2026-10-02 v1.1 |
-| `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |
-| `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
-| `modelo-salud-ia-farmacias-peru` | 605 | 21 | 18 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-12 v1.0 |
+| `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.4 |
+| `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.0 |
+| `modelo-salud-ia-farmacias-peru` | 605 | 21 | 18 | 3/3 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-08-12 v1.0 |
 | `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
 | `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 254 | 14 | 10 | 3/3 | 2026-10-02 | 2026-10-02 v1.0 |
 | `seguros-comportamiento-mundo-peru` | 333 | 13 | 4 | 12/12 | 2026-10-03 | 2026-10-03 v1.1 |
 | `behavioral-design-estado-disciplina` | 318 | 8 | 7 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
-| `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-24 v1.0 |
-| `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
-| `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-21 v1.0 |
-| `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-26 v1.2 |
-| `modelo-personas-sinteticas` | 73 | 0 | 0 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-20 v1.0 |
+| `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-24 v1.0 |
+| `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.0 |
+| `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-21 v1.0 |
+| `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-26 v1.2 |
+| `modelo-personas-sinteticas` | 73 | 0 | 0 | 3/3 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-20 v1.0 |
 
 ## 7. Límites declarados de esta medición
 

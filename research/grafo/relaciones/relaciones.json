@@ -330,6 +330,15 @@
    ]
   },
   {
+   "id": "c_expertos_no_predicen",
+   "nombre": "Los expertos no predicen qué intervención funcionará mejor",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-20"
+   ]
+  },
+  {
    "id": "c_explicaciones_mejoran_decision",
    "nombre": "Las explicaciones mejoran la decisión humano-IA",
    "tipo": "afirmacion",
@@ -493,6 +502,17 @@
    "grado": 1,
    "fuentes": [
     "F-262"
+   ]
+  },
+  {
+   "id": "c_nudge_efectivo_general",
+   "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
+   "tipo": "afirmacion",
+   "grado": 4,
+   "fuentes": [
+    "F-16",
+    "F-17",
+    "F-18"
    ]
   },
   {
@@ -980,6 +1000,16 @@
    ]
   },
   {
+   "id": "efecto_conductual",
+   "nombre": "Cambio de conducta objetivo",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-16",
+    "F-20"
+   ]
+  },
+  {
    "id": "efecto_nudge_academico",
    "nombre": "Efecto de nudges en papers académicos (~8,7 pp)",
    "tipo": "resultado",
@@ -1023,6 +1053,15 @@
    "grado": 2,
    "fuentes": [
     "F-239"
+   ]
+  },
+  {
+   "id": "estructura_decision",
+   "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-16"
    ]
   },
   {
@@ -1190,6 +1229,15 @@
    ]
   },
   {
+   "id": "heterogeneidad_nudge",
+   "nombre": "Heterogeneidad del efecto de nudges por dominio y técnica",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-18"
+   ]
+  },
+  {
    "id": "i_frame",
    "nombre": "Enfoque individual (i-frame)",
    "tipo": "concepto",
@@ -1234,6 +1282,15 @@
    "fuentes": [
     "F-485",
     "F-486"
+   ]
+  },
+  {
+   "id": "informacion_decision",
+   "nombre": "Nudges de información/asistencia a la decisión",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-17"
    ]
   },
   {
@@ -1341,6 +1398,15 @@
    ]
   },
   {
+   "id": "maier_2022",
+   "nombre": "Re-análisis RoBMA de Maier et al. (PNAS 2022)",
+   "tipo": "estudio",
+   "grado": 2,
+   "fuentes": [
+    "F-17"
+   ]
+  },
+  {
    "id": "marco_implementacion",
    "nombre": "Marcos de evaluación de efectividad e implementación",
    "tipo": "concepto",
@@ -1388,6 +1454,24 @@
    ]
   },
   {
+   "id": "megaestudio",
+   "nombre": "Megaestudio (muchas intervenciones, misma población y outcome)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-20"
+   ]
+  },
+  {
+   "id": "megaestudio_gimnasio",
+   "nombre": "Megaestudio de gimnasio de Milkman et al. (Nature 2021)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-20"
+   ]
+  },
+  {
    "id": "menos_educados",
    "nombre": "Personas con menor educación",
    "tipo": "poblacion",
@@ -1412,6 +1496,15 @@
    "grado": 2,
    "fuentes": [
     "F-247"
+   ]
+  },
+  {
+   "id": "mertens_2022",
+   "nombre": "Meta-análisis de Mertens et al. (PNAS 2022)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-16"
    ]
   },
   {
@@ -1497,6 +1590,15 @@
    ]
   },
   {
+   "id": "outcomes_salud",
+   "nombre": "Resultados de salud reales del paciente",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-44"
+   ]
+  },
+  {
    "id": "pandemia_2020",
    "nombre": "Pandemia de 2020",
    "tipo": "concepto",
@@ -1542,6 +1644,15 @@
    "grado": 1,
    "fuentes": [
     "F-304"
+   ]
+  },
+  {
+   "id": "persistencia_efecto",
+   "nombre": "Persistencia del efecto tras terminar la intervención",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-20"
    ]
   },
   {
@@ -1598,6 +1709,15 @@
    "grado": 1,
    "fuentes": [
     "F-247"
+   ]
+  },
+  {
+   "id": "precision_diagnostica",
+   "nombre": "Precisión diagnóstica de chatbots médicos",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-44"
    ]
   },
   {
@@ -1712,6 +1832,15 @@
    ]
   },
   {
+   "id": "relacion_medico_paciente",
+   "nombre": "Relación médico-paciente",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-44"
+   ]
+  },
+  {
    "id": "rentabilidad_tecnica_peru",
    "nombre": "Rentabilidad técnica del negocio asegurador peruano",
    "tipo": "resultado",
@@ -1729,6 +1858,15 @@
    "grado": 1,
    "fuentes": [
     "F-303"
+   ]
+  },
+  {
+   "id": "robma",
+   "nombre": "Meta-análisis bayesiano robusto (RoBMA)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-17"
    ]
   },
   {
@@ -1801,6 +1939,16 @@
    "grado": 1,
    "fuentes": [
     "F-237"
+   ]
+  },
+  {
+   "id": "sesgo_publicacion",
+   "nombre": "Sesgo de publicación",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-16",
+    "F-17"
    ]
   },
   {
@@ -4092,11 +4240,155 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-02",
    "clase": "estructura"
+  },
+  {
+   "id": "T-176",
+   "s": "mertens_2022",
+   "p": "respalda",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-16",
+   "apoyo": ">200 estudios, >450 tamaños de efecto (n=2.149.683): d=0,45 (IC95% 0,39-0,52) sin ajustar.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-177",
+   "s": "estructura_decision",
+   "p": "aumenta",
+   "o": "efecto_conductual",
+   "f": "F-16",
+   "apoyo": "En todos los dominios, las intervenciones sobre la estructura de la decisión superan a las de información o asistencia.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-178",
+   "s": "c_nudge_efectivo_general",
+   "p": "tiene_limite",
+   "o": "sesgo_publicacion",
+   "f": "F-16",
+   "apoyo": "Los propios autores reportan sesgo de publicación moderado; ajustado, el efecto cae a d=0,08 (severo) o 0,31 (moderado).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-179",
+   "s": "maier_2022",
+   "p": "refuta",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-17",
+   "apoyo": "Re-análisis RoBMA de los datos de Mertens: corregido el sesgo de publicación, no queda evidencia de efecto promedio del nudging.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-180",
+   "s": "maier_2022",
+   "p": "refuta",
+   "o": "informacion_decision",
+   "f": "F-17",
+   "apoyo": "Encuentra evidencia en contra de la eficacia de las intervenciones de información y asistencia, y en contra en la mayoría de dominios.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-181",
+   "s": "robma",
+   "p": "mide",
+   "o": "sesgo_publicacion",
+   "f": "F-17",
+   "apoyo": "RoBMA promedia modelos de selección y PET-PEESE, evitando elegir de antemano la severidad del sesgo.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-182",
+   "s": "heterogeneidad_nudge",
+   "p": "modera",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-18",
+   "apoyo": "Meta-análisis de segundo orden: hay impacto, pero menor y muy heterogéneo por dominio y técnica (según ficha; abstract no ubicado).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-183",
+   "s": "megaestudio",
+   "p": "aumenta",
+   "o": "efecto_conductual",
+   "f": "F-20",
+   "apoyo": "54 programas de 4 semanas en 61.293 socios de gimnasio; el 45% subió las visitas semanales entre 9% y 27%.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-184",
+   "s": "megaestudio",
+   "p": "tiene_limite",
+   "o": "persistencia_efecto",
+   "f": "F-20",
+   "apoyo": "Solo el 8% de las intervenciones dejó un cambio significativo medible después de las 4 semanas.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-185",
+   "s": "megaestudio_gimnasio",
+   "p": "respalda",
+   "o": "c_expertos_no_predicen",
+   "f": "F-20",
+   "apoyo": "Pronósticos de jueces imparciales no anticiparon qué intervenciones serían las más efectivas.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-186",
+   "s": "precision_diagnostica",
+   "p": "mide",
+   "o": "outcomes_salud",
+   "f": "F-44",
+   "apoyo": "Critica usar la precisión diagnóstica como proxy de buena atención: es solo una parte; los outcomes de salud dependen de más.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-187",
+   "s": "relacion_medico_paciente",
+   "p": "media",
+   "o": "outcomes_salud",
+   "f": "F-44",
+   "apoyo": "La relación médico-paciente es crucial para outcomes positivos y los chatbots pueden obstaculizarla de varias formas.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
   }
  ],
- "generado": "2026-10-02",
+ "generado": "2026-10-03",
  "cobertura": {
-  "procesadas": 95,
-  "total": 508
+  "procesadas": 100,
+  "total": 528
  }
 }

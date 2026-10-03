@@ -172,6 +172,19 @@
    "triples": 6,
    "sin_aporte": [],
    "notas": "Seguros Perú: resultados 2T, sistema 1S 2026, penetración reconciliada y PL 08488."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-16",
+    "F-17",
+    "F-18",
+    "F-20",
+    "F-44"
+   ],
+   "triples": 12,
+   "sin_aporte": [],
+   "notas": "Crisis del nudge (Mertens vs. Maier vs. segundo orden), megaestudios y crítica a la precisión diagnóstica de chatbots médicos. 4/5 leídas a nivel abstract."
   }
  ],
  "discrepancias": [
@@ -237,6 +250,21 @@
    "estado": "cerrada",
    "detalle": "La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS.",
    "resolucion": "Reconciliada el 2026-10-02: la penetración de Perú oscila 2,0%-2,1% (SBS: 2,06% a setiembre de 2025, F-507); 2,01% (estimación al 2T 2026) y ~2,08% (node) son compatibles. La cifra de ~2,5% corresponde a otra medida o fuente no atribuida. Reserva: no se abrió el documento de la SBS."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-16",
+   "detalle": "Ficha dice '447 experimentos'. El abstract reporta >200 estudios y >450 tamaños de efecto (447 es el conteo de efectos, no de experimentos). Además el d es 0,45 (IC 0,39-0,52), no 0,43 como se suele citar."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-44",
+   "detalle": "Ficha atribuye autoría a 'NCBI/PMC' (el repositorio). El autor es Stephen R. Milford (2024)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-18",
+   "detalle": "No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar."
   }
  ],
  "resoluciones": [

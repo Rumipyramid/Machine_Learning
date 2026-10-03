@@ -8306,123 +8306,6 @@
      "lines": 1800,
      "cites": 167
     },
-    "fecha": "2026-08-13",
-    "commit": "8a90dc2",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-14",
-    "commit": "e0c9040",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-15",
-    "commit": "938a6a0",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
     "fecha": "2026-08-16",
     "commit": "3acec5d",
     "fuente": "git"
@@ -10296,7 +10179,7 @@
      "cites": 259
     },
     "fecha": "2026-10-03",
-    "commit": "482b479",
+    "commit": "897cd9f",
     "fuente": "git"
    }
   ],
