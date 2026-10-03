@@ -4764,8 +4764,8 @@
    "id": "F-514",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Design innovation and firm performance: Evidence from patent subtype analysis",
-   "autor": "Autoría no capturada — ScienceDirect",
+   "titulo": "Design innovation and firm performance: Evidence from patent subtype analysis (International Review of Economics & Finance, vol. 102)",
+   "autor": "Han, Z.; Tang, S. & Li, Z. — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): el registro decía 'Autoría no capturada — ScienceDirect'; verificado en el resumen oficial",
    "anio": "2025",
    "huerfana": false
   },
@@ -12036,7 +12036,7 @@
      "cites": 273
     },
     "fecha": "2026-10-03",
-    "commit": "a128669",
+    "commit": "7dfc90d",
     "fuente": "git"
    }
   ],

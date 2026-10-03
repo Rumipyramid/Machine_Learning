@@ -8,31 +8,31 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **146 de 645** (22.6%) |
-| …del cerebro de diseño (citadas en el node) | 104 de 273 |
-| …por rigor | A 100/179 · B 22/107 · C 20/169 · D 3/143 · E 1/33 |
-| Barridos | 22 |
-| Entidades | 337 |
-| Relaciones | 265 |
-| Nivel de lectura | abstract 167 · ficha 98 |
-| Fuerza de las afirmaciones | causal 89 · descriptiva 74 · observacional 61 · teorica 41 |
+| Fuentes procesadas | **151 de 645** (23.4%) |
+| …del cerebro de diseño (citadas en el node) | 109 de 273 |
+| …por rigor | A 105/179 · B 22/107 · C 20/169 · D 3/143 · E 1/33 |
+| Barridos | 23 |
+| Entidades | 351 |
+| Relaciones | 275 |
+| Nivel de lectura | abstract 177 · ficha 98 |
+| Fuerza de las afirmaciones | causal 96 · descriptiva 74 · observacional 64 · teorica 41 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
 | `aumenta` | efecto | 57 |
-| `asocia_con` | efecto | 38 |
-| `reduce` | efecto | 34 |
-| `aplica_a` | estructura | 29 |
-| `tiene_limite` | metodo | 22 |
+| `asocia_con` | efecto | 39 |
+| `reduce` | efecto | 37 |
+| `aplica_a` | estructura | 30 |
+| `tiene_limite` | metodo | 23 |
+| `modera` | efecto | 16 |
 | `contradice` | evidencia | 16 |
-| `modera` | efecto | 14 |
 | `respalda` | evidencia | 14 |
 | `mide` | metodo | 10 |
+| `media` | efecto | 9 |
 | `es_tipo_de` | estructura | 8 |
-| `media` | efecto | 8 |
-| `refuta` | evidencia | 7 |
+| `refuta` | evidencia | 8 |
 | `origina_en` | metodo | 6 |
 | `parte_de` | estructura | 2 |
 
@@ -45,6 +45,8 @@
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
 | Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501 |
+| Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-514 |
+| Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-514 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-429, F-470 |
@@ -58,8 +60,6 @@
 | Pie en la puerta (pedido pequeño antes del grande) | F-141, F-142, F-143 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-552, F-553, F-560 |
 | Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-560 |
-| Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
-| Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
@@ -68,6 +68,7 @@
 | Las explicaciones rara vez producen desempeño complementario | F-243, F-244 |
 | Las explicaciones mejoran la decisión humano-IA | F-244, F-246 |
 | Cognitive forcing functions (fricción deliberada) | F-245, F-502 |
+| Desempeño complementario humano-IA | F-244, F-516 |
 | Precio de la acción de Figma (FIG) | F-420, F-470 |
 | ARR de Lovable | F-471, F-472 |
 | El ARR de vibe coding no retiene (H14) | F-472, F-473 |
@@ -182,6 +183,9 @@
 - **Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones** —contradice→ **Las respuestas sintéticas con LLM tienen menos varianza que las humanas** (F-560, observacional) · **estado: alcance_distinto**
   - NeurIPS 2024: al aleatorizar el orden de respuesta, los modelos tienden a respuestas uniformemente aleatorias sin importar tamaño ni datos; parecen representar mejor a los subgrupos cuyas estadísticas están más cerca de la uniforme.
   - *Resolución (2026-10-03):* Bisbee (F-552) y Wang et al. (F-553) condicionan al modelo con una persona y miden termómetros o grupos de identidad: la respuesta sintética sale más homogénea que la humana. Dominguez-Olmedo et al. (F-560) preguntan la ACS en opción múltiple, sin persona y con el orden aleatorizado: la respuesta tiende a la uniforme (más dispersa). Ambos hallazgos dicen lo mismo de fondo (la distribución sintética no es la humana), pero la dirección del error depende del método: no hay que afirmar 'menos varianza' en general.
+- **Mehta et al. 2025: RCT opt-out vs. opt-in en monitoreo remoto de presión arterial (N=424)** —refuta→ **El encuadre opt-out (default) aumenta la inscripción en programas de salud que exigen participación activa** (F-357, causal) · **estado: refutacion_directa**
+  - JAMA Network Open 2025, RCT con 424 pacientes hipertensos: opt-out y opt-in dieron tasas de inscripción similares en el programa de monitoreo remoto; el encuadre opt-out puede no mejorar la participación.
+  - *Resolución (2026-10-03):* Mehta et al. (F-357, RCT preregistrado en JAMA Network Open, N=424) prueban directamente el opt-out contra el opt-in para inscribirse en monitoreo remoto de presión arterial y no encuentran diferencia en la inscripción. Era una hipótesis de trabajo del proyecto RIMAC. Alcance: un solo ensayo, en un programa que exige participación activa después de inscribirse; no contradice que los defaults funcionen en decisiones pasivas (el metaanálisis F-16 los ubica entre los nudges más efectivos en promedio).
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -191,12 +195,12 @@
 | Adulación de la IA (sycophancy) | intervencion | 7 | 4 |
 | Sobre-confianza en la IA | resultado | 6 | 5 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | afirmacion | 6 | 3 |
+| Diseño efectivo → mejor desempeño de la firma | afirmacion | 5 | 3 |
 | Susceptibilidad a dark patterns | resultado | 5 | 2 |
 | Cambio de actitud de las personas | resultado | 5 | 5 |
-| Diseño efectivo → mejor desempeño de la firma | afirmacion | 4 | 2 |
+| Desempeño financiero de la firma (ROA, ROS, crecimiento) | resultado | 4 | 3 |
 | Capacidad de diseño-ingeniería | constructo | 4 | 1 |
 | El efecto del design thinking está totalmente mediado por empoderamiento | afirmacion | 4 | 2 |
-| Explicabilidad de la IA (explicaciones) | intervencion | 4 | 3 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -256,6 +260,8 @@
   - *Resolución:* Cerrada: ficha y node de diseño corregidos el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ✅ **F-560** (2026-10-03, cerrada): El resumen del ledger dice 'sin la entropía de las respuestas humanas'. El resumen oficial dice lo contrario: corregido el orden, los modelos tienden a respuestas **uniformemente aleatorias** (más dispersión, no menos). Es un hallazgo mal registrado: su corrección requiere autorización del usuario.
   - *Resolución:* Cerrada: hallazgo corregido en el ledger el 2026-10-03 con autorización del usuario (respuestas casi uniformes al aleatorizar el orden, con sesgos de orden y etiqueta).
+- ✅ **F-514** (2026-10-03, cerrada): Autoría 'Autoría no capturada — ScienceDirect' → Han, Z.; Tang, S. & Li, Z. (International Review of Economics & Finance, vol. 102, 2025).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente).
 
 ## 7. Registro de barridos
 
@@ -283,6 +289,7 @@
 | 2026-10-03 | F-230, F-248, F-252, F-334, F-335, F-337 | 7 | – | Lote de amplitud (fuentes nuevas) con resúmenes oficiales. F-250 se dejó fuera: solo se ubicó la autoría, no los resultados. |
 | 2026-10-03 | F-563, F-564, F-569, F-552, F-553 | 10 | – | Lote de la tanda de convergencia psico-econ-IA, con resúmenes oficiales verificados el 2026-10-03 (Nature, Political Analysis, NMI, QJE). F-564 queda en 'ficha': solo se leyó su cobertura de prensa (S |
 | 2026-10-03 | F-560, F-572, F-579, F-585, F-580 | 11 | – | Lote de la tanda de convergencia psico-econ-IA con resúmenes oficiales verificados el 2026-10-03 (NeurIPS, Nature Computational Science, Nature, QJE). F-560 contradice la afirmación de varianza compri |
+| 2026-10-03 | F-250, F-338, F-357, F-514, F-516 | 10 | – | Lote de profundidad del cerebro de diseño (orden de `next`), con resúmenes oficiales verificados el 2026-10-03. F-250 entra ahora: en el lote 020 se había dejado fuera por falta de resultados. F-338 e |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

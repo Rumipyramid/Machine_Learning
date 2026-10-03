@@ -381,6 +381,19 @@
    "triples": 11,
    "sin_aporte": [],
    "notas": "Lote de la tanda de convergencia psico-econ-IA con resúmenes oficiales verificados el 2026-10-03 (NeurIPS, Nature Computational Science, Nature, QJE). F-560 contradice la afirmación de varianza comprimida de F-552/F-553: los estudios miden cosas distintas (persona simulada con termómetros vs. opción múltiple de la ACS sin persona). El node de convergencia citaba F-560 como apoyo de 'varianza comprimida' (§2.1, §2.6): se corrige en el node. La ficha del ledger queda con discrepancia abierta hasta que el usuario autorice."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-250",
+    "F-338",
+    "F-357",
+    "F-514",
+    "F-516"
+   ],
+   "triples": 10,
+   "sin_aporte": [],
+   "notas": "Lote de profundidad del cerebro de diseño (orden de `next`), con resúmenes oficiales verificados el 2026-10-03. F-250 entra ahora: en el lote 020 se había dejado fuera por falta de resultados. F-338 es seguro de medicamentos (Medicare Part D), no salud en general. F-357 abre una tensión con la idea general de que los defaults funcionan."
   }
  ],
  "discrepancias": [
@@ -579,6 +592,13 @@
    "detalle": "El resumen del ledger dice 'sin la entropía de las respuestas humanas'. El resumen oficial dice lo contrario: corregido el orden, los modelos tienden a respuestas **uniformemente aleatorias** (más dispersión, no menos). Es un hallazgo mal registrado: su corrección requiere autorización del usuario.",
    "estado": "cerrada",
    "resolucion": "Cerrada: hallazgo corregido en el ledger el 2026-10-03 con autorización del usuario (respuestas casi uniformes al aleatorizar el orden, con sesgos de orden y etiqueta)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-514",
+   "detalle": "Autoría 'Autoría no capturada — ScienceDirect' → Han, Z.; Tang, S. & Li, Z. (International Review of Economics & Finance, vol. 102, 2025).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente)."
   }
  ],
  "resoluciones": [
@@ -719,6 +739,12 @@
    "estado": "alcance_distinto",
    "fecha": "2026-10-03",
    "nota": "Bisbee (F-552) y Wang et al. (F-553) condicionan al modelo con una persona y miden termómetros o grupos de identidad: la respuesta sintética sale más homogénea que la humana. Dominguez-Olmedo et al. (F-560) preguntan la ACS en opción múltiple, sin persona y con el orden aleatorizado: la respuesta tiende a la uniforme (más dispersa). Ambos hallazgos dicen lo mismo de fondo (la distribución sintética no es la humana), pero la dirección del error depende del método: no hay que afirmar 'menos varianza' en general."
+  },
+  {
+   "triple": "T-270",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-03",
+   "nota": "Mehta et al. (F-357, RCT preregistrado en JAMA Network Open, N=424) prueban directamente el opt-out contra el opt-in para inscribirse en monitoreo remoto de presión arterial y no encuentran diferencia en la inscripción. Era una hipótesis de trabajo del proyecto RIMAC. Alcance: un solo ensayo, en un programa que exige participación activa después de inscribirse; no contradice que los defaults funcionen en decisiones pasivas (el metaanálisis F-16 los ubica entre los nudges más efectivos en promedio)."
   }
  ]
 }

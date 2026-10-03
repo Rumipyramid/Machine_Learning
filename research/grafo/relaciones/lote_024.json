@@ -1,0 +1,36 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": ["F-250", "F-338", "F-357", "F-514", "F-516"],
+ "entidades": [
+  {"id": "interfaz_chatbot", "nombre": "Interfaz de chatbot (frente a una GUI clásica)", "tipo": "intervencion"},
+  {"id": "atractivo_satisfaccion_ui", "nombre": "Atractivo y satisfacción con la interfaz", "tipo": "resultado"},
+  {"id": "escenario_cambio_planes", "nombre": "Escenario con cambio de planes (fuera del 'camino feliz')", "tipo": "concepto"},
+  {"id": "intencion_uso_interfaz", "nombre": "Intención de uso de la interfaz", "tipo": "resultado"},
+  {"id": "consejo_experto_digital", "nombre": "Consejo experto digital en la elección del plan de seguro", "tipo": "intervencion"},
+  {"id": "valoracion_atributos_plan", "nombre": "Disposición a pagar por atributos del plan (marca popular, estrellas de calidad)", "tipo": "resultado"},
+  {"id": "autoseleccion_consejo", "nombre": "Autoselección: quienes más se beneficiarían del consejo son los que menos lo piden", "tipo": "limitacion"},
+  {"id": "mehta_2025", "nombre": "Mehta et al. 2025: RCT opt-out vs. opt-in en monitoreo remoto de presión arterial (N=424)", "tipo": "estudio"},
+  {"id": "c_optout_mejora_inscripcion", "nombre": "El encuadre opt-out (default) aumenta la inscripción en programas de salud que exigen participación activa", "tipo": "afirmacion"},
+  {"id": "subtipos_patentes_diseno", "nombre": "Subtipos de patentes de diseño e índice compuesto de diseño", "tipo": "metrica"},
+  {"id": "crecimiento_ventas", "nombre": "Crecimiento de ventas", "tipo": "resultado"},
+  {"id": "firmas_cotizadas_china", "nombre": "Firmas cotizadas de China (8.671 observaciones empresa-año, 2017-2023)", "tipo": "poblacion"},
+  {"id": "combinacion_humano_ia", "nombre": "Combinación humano-IA frente al mejor de los dos por separado", "tipo": "intervencion"},
+  {"id": "tipo_tarea_decision_creacion", "nombre": "Tipo de tarea: decisión vs. creación de contenido", "tipo": "constructo"}
+ ],
+ "triples": [
+  {"s": "interfaz_chatbot", "p": "reduce", "o": "atractivo_satisfaccion_ui", "f": "F-250", "apoyo": "MobileHCI 2021: en un estudio en simulador entre sujetos (n=34) de un viaje en movilidad autónoma bajo demanda, la GUI obtuvo atractivo y satisfacción significativamente mayores que el chatbot; ambos con buena aceptación.", "lectura": "abstract", "fuerza": "causal"},
+  {"s": "escenario_cambio_planes", "p": "modera", "o": "intencion_uso_interfaz", "f": "F-250", "apoyo": "MobileHCI 2021: interacción significativa: más intención de usar el chatbot cuando hay cambio de planes y la GUI en el 'camino feliz'; proponen GUI con elementos conversacionales integrados.", "lectura": "abstract", "fuerza": "causal"},
+  {"s": "consejo_experto_digital", "p": "reduce", "o": "valoracion_atributos_plan", "f": "F-338", "apoyo": "Management Science 2024, RCT en seguro de medicamentos: con el consejo digital, los consumidores pagan 14% menos por la marca más popular y 37% menos por una estrella extra; el consejo actúa por aprendizaje y por interpretación.", "lectura": "abstract", "fuerza": "causal"},
+  {"s": "consejo_experto_digital", "p": "tiene_limite", "o": "autoseleccion_consejo", "f": "F-338", "apoyo": "Management Science 2024: fuerte selección en el uso del consejo: los compradores menos activos y quienes más responderían al consejo son los que menos lo demandan.", "lectura": "abstract", "fuerza": "causal"},
+  {"s": "mehta_2025", "p": "refuta", "o": "c_optout_mejora_inscripcion", "f": "F-357", "apoyo": "JAMA Network Open 2025, RCT con 424 pacientes hipertensos: opt-out y opt-in dieron tasas de inscripción similares en el programa de monitoreo remoto; el encuadre opt-out puede no mejorar la participación.", "lectura": "abstract", "fuerza": "causal"},
+  {"s": "subtipos_patentes_diseno", "p": "asocia_con", "o": "desempeno_financiero_firma", "f": "F-514", "apoyo": "IREF 2025: cada subtipo de patente de diseño y el índice compuesto tienen un efecto positivo y significativo sobre el ROA en 8.671 observaciones empresa-año de firmas cotizadas chinas (observacional).", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "crecimiento_ventas", "p": "media", "o": "desempeno_financiero_firma", "f": "F-514", "apoyo": "IREF 2025: el crecimiento de ventas media la relación: la innovación de diseño mejora la productividad de los activos sobre todo por expansión de ingresos.", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "c_diseno_firma", "p": "aplica_a", "o": "firmas_cotizadas_china", "f": "F-514", "apoyo": "IREF 2025: el vínculo diseño→desempeño se replica en firmas cotizadas de China 2017-2023, con otra medida (patentes de diseño).", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "combinacion_humano_ia", "p": "reduce", "o": "desempeno_complementario", "f": "F-516", "apoyo": "Nature Human Behaviour 2024, metaanálisis preregistrado de 106 experimentos y 370 efectos: en promedio las combinaciones humano-IA rinden peor que el mejor de los dos solo (g = −0,23; IC 95% −0,39 a −0,07).", "lectura": "abstract", "fuerza": "causal"},
+  {"s": "tipo_tarea_decision_creacion", "p": "modera", "o": "desempeno_complementario", "f": "F-516", "apoyo": "Nature Human Behaviour 2024: las pérdidas se concentran en tareas de decisión y las ganancias son significativamente mayores en tareas de creación de contenido.", "lectura": "abstract", "fuerza": "causal"}
+ ],
+ "discrepancias": [
+  {"f": "F-514", "detalle": "Autoría 'Autoría no capturada — ScienceDirect' → Han, Z.; Tang, S. & Li, Z. (International Review of Economics & Finance, vol. 102, 2025).", "estado": "cerrada", "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente)."}
+ ],
+ "notas": "Lote de profundidad del cerebro de diseño (orden de `next`), con resúmenes oficiales verificados el 2026-10-03. F-250 entra ahora: en el lote 020 se había dejado fuera por falta de resultados. F-338 es seguro de medicamentos (Medicare Part D), no salud en general. F-357 abre una tensión con la idea general de que los defaults funcionan."
+}

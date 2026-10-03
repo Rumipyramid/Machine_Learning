@@ -114,6 +114,11 @@
   "nombre": "Disposición a asumir responsabilidad y reparar",
   "tipo": "resultado"
  },
+ "atractivo_satisfaccion_ui": {
+  "id": "atractivo_satisfaccion_ui",
+  "nombre": "Atractivo y satisfacción con la interfaz",
+  "tipo": "resultado"
+ },
  "autoestimacion_desempeno": {
   "id": "autoestimacion_desempeno",
   "nombre": "Autoestimación del desempeño (~+4 pts)",
@@ -123,6 +128,11 @@
   "id": "automedicacion_no_responsable",
   "nombre": "Automedicación no responsable (Perú)",
   "tipo": "resultado"
+ },
+ "autoseleccion_consejo": {
+  "id": "autoseleccion_consejo",
+  "nombre": "Autoselección: quienes más se beneficiarían del consejo son los que menos lo piden",
+  "tipo": "limitacion"
  },
  "aversion_perdida": {
   "id": "aversion_perdida",
@@ -354,6 +364,11 @@
   "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
   "tipo": "afirmacion"
  },
+ "c_optout_mejora_inscripcion": {
+  "id": "c_optout_mejora_inscripcion",
+  "nombre": "El encuadre opt-out (default) aumenta la inscripción en programas de salud que exigen participación activa",
+  "tipo": "afirmacion"
+ },
  "c_paradoja_privacidad": {
   "id": "c_paradoja_privacidad",
   "nombre": "La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad)",
@@ -524,6 +539,11 @@
   "nombre": "Cognitive forcing functions (fricción deliberada)",
   "tipo": "intervencion"
  },
+ "combinacion_humano_ia": {
+  "id": "combinacion_humano_ia",
+  "nombre": "Combinación humano-IA frente al mejor de los dos por separado",
+  "tipo": "intervencion"
+ },
  "combined_ratio_root": {
   "id": "combined_ratio_root",
   "nombre": "Combined ratio de Root (91,4%)",
@@ -579,6 +599,11 @@
   "nombre": "Conocimiento sobre la decisión",
   "tipo": "resultado"
  },
+ "consejo_experto_digital": {
+  "id": "consejo_experto_digital",
+  "nombre": "Consejo experto digital en la elección del plan de seguro",
+  "tipo": "intervencion"
+ },
  "consejo_ia_personalizado": {
   "id": "consejo_ia_personalizado",
   "nombre": "Consejo personalizado con IA (e-commerce)",
@@ -622,6 +647,11 @@
  "crecimiento_primas_globales": {
   "id": "crecimiento_primas_globales",
   "nombre": "Crecimiento real de primas globales (1,3% en 2026)",
+  "tipo": "resultado"
+ },
+ "crecimiento_ventas": {
+  "id": "crecimiento_ventas",
+  "nombre": "Crecimiento de ventas",
   "tipo": "resultado"
  },
  "creditos_ia_figma": {
@@ -819,6 +849,11 @@
   "nombre": "Tamaño y competencia lingüística de los modelos de lenguaje",
   "tipo": "concepto"
  },
+ "escenario_cambio_planes": {
+  "id": "escenario_cambio_planes",
+  "nombre": "Escenario con cambio de planes (fuera del 'camino feliz')",
+  "tipo": "concepto"
+ },
  "estructura_decision": {
   "id": "estructura_decision",
   "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
@@ -883,6 +918,11 @@
   "id": "farmacias_sistema_salud",
   "nombre": "Integración de farmacias y boticas al sistema nacional de salud",
   "tipo": "concepto"
+ },
+ "firmas_cotizadas_china": {
+  "id": "firmas_cotizadas_china",
+  "nombre": "Firmas cotizadas de China (8.671 observaciones empresa-año, 2017-2023)",
+  "tipo": "poblacion"
  },
  "firmas_publicas_eeuu": {
   "id": "firmas_publicas_eeuu",
@@ -1024,10 +1064,20 @@
   "nombre": "Ingresos de Figma Q2 2026 (+48%)",
   "tipo": "resultado"
  },
+ "intencion_uso_interfaz": {
+  "id": "intencion_uso_interfaz",
+  "nombre": "Intención de uso de la interfaz",
+  "tipo": "resultado"
+ },
  "interfaces_adaptativas": {
   "id": "interfaces_adaptativas",
   "nombre": "Interfaces adaptativas",
   "tipo": "concepto"
+ },
+ "interfaz_chatbot": {
+  "id": "interfaz_chatbot",
+  "nombre": "Interfaz de chatbot (frente a una GUI clásica)",
+  "tipo": "intervencion"
  },
  "intrusividad_percibida": {
   "id": "intrusividad_percibida",
@@ -1132,6 +1182,11 @@
  "megaestudio_gimnasio": {
   "id": "megaestudio_gimnasio",
   "nombre": "Megaestudio de gimnasio de Milkman et al. (Nature 2021)",
+  "tipo": "estudio"
+ },
+ "mehta_2025": {
+  "id": "mehta_2025",
+  "nombre": "Mehta et al. 2025: RCT opt-out vs. opt-in en monitoreo remoto de presión arterial (N=424)",
   "tipo": "estudio"
  },
  "menos_educados": {
@@ -1589,6 +1644,11 @@
   "nombre": "Mide preferencia, no desempeño ni aprendibilidad longitudinal",
   "tipo": "limitacion"
  },
+ "subtipos_patentes_diseno": {
+  "id": "subtipos_patentes_diseno",
+  "nombre": "Subtipos de patentes de diseño e índice compuesto de diseño",
+  "tipo": "metrica"
+ },
  "sus_sesion_unica": {
   "id": "sus_sesion_unica",
   "nombre": "Medición en sesión única con línea base débil",
@@ -1629,6 +1689,11 @@
   "nombre": "Time-to-delivery",
   "tipo": "resultado"
  },
+ "tipo_tarea_decision_creacion": {
+  "id": "tipo_tarea_decision_creacion",
+  "nombre": "Tipo de tarea: decisión vs. creación de contenido",
+  "tipo": "constructo"
+ },
  "ubi_telematica": {
   "id": "ubi_telematica",
   "nombre": "UBI / seguro basado en telemática",
@@ -1657,6 +1722,11 @@
  "utilidad_rimac": {
   "id": "utilidad_rimac",
   "nombre": "Utilidad neta de Rímac (2T 2026: S/85,8 M)",
+  "tipo": "resultado"
+ },
+ "valoracion_atributos_plan": {
+  "id": "valoracion_atributos_plan",
+  "nombre": "Disposición a pagar por atributos del plan (marca popular, estrellas de calidad)",
   "tipo": "resultado"
  },
  "valoracion_estetica": {
