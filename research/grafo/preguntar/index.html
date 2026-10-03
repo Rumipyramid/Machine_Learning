@@ -61,6 +61,21 @@ button.ghost{background:transparent;color:var(--fg);border:2px solid var(--fg);f
 #src dt{font-size:11px;text-transform:uppercase;color:var(--g2)}
 #src dd{margin:0;overflow-wrap:anywhere}
 #src a{color:var(--fg)}
+
+.sem{border-top:2px solid var(--fg)}
+.sem .sh{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:6px 14px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--fg)}
+.sem .sh b{font:900 15px var(--display);letter-spacing:.04em;text-transform:none}
+.sem .cells{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr))}
+.sem .cell{border-right:2px solid var(--fg);border-bottom:2px solid var(--fg);margin-bottom:-2px;padding:8px 10px;min-width:0}
+.sem .cell .v{font:900 16px var(--display);letter-spacing:.03em}
+.sem .cell.rojo{background:var(--acc);color:var(--on-acc)}
+.sem .cell.rojo .m,.sem .cell.rojo .d{color:var(--on-acc)}
+.sem .cell .d{font-size:11px;font-weight:700;text-transform:uppercase;margin-top:2px}
+.sem .cell .m{font-size:11px;color:var(--g2);margin-top:2px}
+.sem .tn{padding:8px 14px;font-size:12px;border-top:2px solid var(--fg)}
+.sem .tn ul{margin:4px 0 0;padding:0;list-style:none}
+.sem .tn li{border-left:6px solid var(--acc);padding-left:8px;margin:4px 0}
+.sem .nt{padding:6px 14px 8px;font-size:11px;color:var(--g2);border-top:2px solid var(--fg)}
 footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:11px;color:var(--g2)}
 </style>
 
@@ -109,7 +124,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
 (() => {
   const $ = s => document.querySelector(s);
   const thread = $("#thread"), qbox = $("#qbox"), go = $("#go"), stop = $("#stop"), hint = $("#hint");
-  let CORPUS = null, IDX = null, FUENTES = new Map(), sample = null, sampleChecked = false, toolsOk = false, ctl = null;
+  let CORPUS = null, IDX = null, FUENTES = new Map(), TENS = [], sample = null, sampleChecked = false, toolsOk = false, ctl = null;
   const turns = []; // historial de la conversación (user/assistant)
 
   // ---------- búsqueda ----------
@@ -148,12 +163,19 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     const ids = new Set(fs.map(f => f.id));
     for (const c of nodes) for (const m of c.texto.matchAll(/F-(\d+)/g)) { if (ids.size >= 22) break; if (FUENTES.has("F-" + m[1])) ids.add("F-" + m[1]); }
     for (const m of q.matchAll(/F-?\s?(\d+)/gi)) if (FUENTES.has("F-" + m[1])) ids.add("F-" + m[1]);
-    return { nodes, fuentes: [...ids].map(id => FUENTES.get(id)) };
+    const hyps = search(IDX.hyps, q, 5);
+    for (const m of q.matchAll(/\b(HC?\d{1,2})\b/gi)) { const h = (CORPUS.hipotesis || []).find(x => x.id.toUpperCase() === m[1].toUpperCase()); if (h && !hyps.includes(h)) hyps.push(h); }
+    const tens = search(IDX.tens, q, 4);
+    for (const t of TENS) if (ids.has(t.f) && !tens.includes(t) && tens.length < 9) tens.push(t);
+    return { nodes, fuentes: [...ids].map(id => FUENTES.get(id)), hyps, tens };
   }
   function contextBlock(r) {
     const n = r.nodes.map((c, i) => `[[Documento ${i + 1}: "${c.titulo}" — sección "${c.seccion}" (archivo ${c.node}.md)]]\n${c.texto}`).join("\n\n");
     const f = r.fuentes.map(x => fuenteTxt({ ...x, resumen: x.resumen.slice(0, 700) })).join("\n");
-    return `EXTRACTOS DE LOS DOCUMENTOS DE MU:\n${n || "(ninguno coincide)"}\n\nFICHAS DEL REGISTRO DE FUENTES (código | autor | año | título | rigor | resumen):\n${f || "(ninguna coincide)"}`;
+    const est = t => t.abierta ? "ABIERTA (" + t.estado.replace(/_/g, " ") + ")" : "resuelta como " + t.estado.replace(/_/g, " ");
+    const tn = r.tens.map(t => `- [${t.f}] "${t.s}" ${t.p} "${t.o}" — ${est(t)}. ${t.apoyo}${t.nota ? " Nota: " + t.nota.slice(0, 400) : ""}`).join("\n");
+    const hy = r.hyps.map(h => `- ${h.id} (${h.node === "conducta-humano-ia" ? "conducta humano-IA" : "diseño e innovación"}) — estado: ${h.estado.toUpperCase()}. Hipótesis: ${h.texto.slice(0, 400)} | Evidencia: ${h.detalle.slice(0, 500)}`).join("\n");
+    return `EXTRACTOS DE LOS DOCUMENTOS DE MU:\n${n || "(ninguno coincide)"}\n\nFICHAS DEL REGISTRO DE FUENTES (código | autor | año | título | rigor | resumen):\n${f || "(ninguna coincide)"}\n\nCONTRADICCIONES DEL GRAFO QUE TOCAN LA PREGUNTA (fuente | afirmación | relación | afirmación | estado):\n${tn || "(ninguna)"}\n\nHIPÓTESIS DEL TABLERO RELACIONADAS (código, estado y evidencia):\n${hy || "(ninguna)"}`;
   }
 
   const RULES = (estado) => `Eres Mu, el segundo cerebro de investigación de un equipo de diseño estratégico que trabaja en seguros, diseño, conducta humano-IA y Perú. Respondes preguntas SOLO con lo que está guardado en tus documentos y en tu registro de fuentes, que te llegan como extractos en cada mensaje${toolsOk ? " y que puedes ampliar con las herramientas buscar_en_mu y leer_fuente si los extractos no bastan" : ""}.
@@ -164,7 +186,9 @@ Reglas:
 3. Distingue con esas palabras lo que es "dato verificado" de lo que es "inferencia" o "lectura de resumen", y marca lo que el documento declara no verificado.
 4. Escribe en español claro, frases cortas, para alguien que no conoce el proyecto. Si usas una sigla o un código interno (H13, C17, §2.9), explícalo con palabras primero.
 5. Sé breve: una frase de respuesta directa, luego hasta 6 viñetas que empiecen con "- ", y al final una línea "Lo que Mu no sabe: ...". Usa **negritas** solo para la idea principal. Sin títulos ni tablas.
-6. Si la pregunta no es sobre lo que Mu investiga, dilo en una frase y ofrece qué sí puede responder.
+6. Si una afirmación toca una contradicción ABIERTA del grafo, dila como "en disputa" y explica en una frase por qué sigue abierta. Si está resuelta, puedes usar la resolución.
+7. Cuando cites una hipótesis, usa su estado tal como figura (abierta, parcial, respaldada, refutada) y explica qué significa con palabras.
+8. Si la pregunta no es sobre lo que Mu investiga, dilo en una frase y ofrece qué sí puede responder.
 
 Estado actual del cerebro (panel): ${estado}`;
 
@@ -199,15 +223,68 @@ Estado actual del cerebro (panel): ${estado}`;
 
   function newEntry(q) {
     const art = document.createElement("article");
-    art.innerHTML = `<div class="q"></div><div class="a"><div class="h"><span>RESPUESTA DE MU</span></div><div class="b"><p class="think">Buscando en el cerebro</p></div><div class="ev" hidden></div></div>`;
+    art.innerHTML = `<div class="q"></div><div class="a"><div class="h"><span>RESPUESTA DE MU</span></div><div class="b"><p class="think">Buscando en el cerebro</p></div><div class="sem" hidden></div><div class="ev" hidden></div></div>`;
     art.querySelector(".q").textContent = q;
     thread.prepend(art);
-    return { art, body: art.querySelector(".b"), ev: art.querySelector(".ev"), box: art.querySelector(".a") };
+    return { art, body: art.querySelector(".b"), ev: art.querySelector(".ev"), sem: art.querySelector(".sem"), box: art.querySelector(".a") };
   }
   function evidence(el, r, extra) {
     const docs = [...new Set(r.nodes.map(c => c.titulo))];
     el.hidden = false;
-    el.innerHTML = `<b>Buscó en:</b> ${docs.length ? docs.map(esc).join(" · ") : "ningún documento coincidió"} · ${r.fuentes.length} fichas del registro${extra ? " · " + esc(extra) : ""}`;
+    el.innerHTML = `<b>Buscó en:</b> ${docs.length ? docs.map(esc).join(" · ") : "ningún documento coincidió"} · ${r.fuentes.length} fichas del registro · ${r.tens.length} contradicciones · ${r.hyps.length} hipótesis${extra ? " · " + esc(extra) : ""}`;
+  }
+
+  // ---------- semáforos (reglas fijas, umbrales de research/grafo/chacal_rubrica.json) ----------
+  const WORD = { verde: "🟢 BIEN", amarillo: "🟡 REGULAR", rojo: "🔴 MAL" };
+  function perfil(text) {
+    const cited = [...new Set([...text.matchAll(/\bF-(\d{1,4})\b/g)].map(m => "F-" + m[1]).filter(id => FUENTES.has(id)))];
+    const fs = cited.map(id => FUENTES.get(id));
+    const pc = (a, b) => b ? Math.round(100 * a / b) : 0;
+    const yr = Number(String(CORPUS.generado).slice(0, 4)) || new Date().getFullYear();
+    const known = fs.filter(f => f.y);
+    const sem = fs.filter(f => f.sem), deep = sem.filter(f => f.deep);
+    const set = new Set(cited);
+    const tens = TENS.filter(t => set.has(t.f)), open = tens.filter(t => t.abierta);
+    const disc = (CORPUS.discrepancias || []).filter(d => set.has(d.f));
+    return { cited, fuentes: fs.length, ab_pct: pc(fs.filter(f => f.rig === "A" || f.rig === "B").length, fs.length),
+      recientes_pct: pc(known.filter(f => f.y >= yr - 1).length, known.length), anio_conocido: known.length,
+      semantica_pct: pc(sem.length, fs.length), leidas_pct: pc(deep.length, sem.length), sem: sem.length, deep: deep.length,
+      tensiones: tens.length, abiertas: open.length + disc.length, open, disc };
+  }
+  function semaforos(P) {
+    const R = CORPUS.rubrica || {};
+    // Cobertura por respuesta: el umbral del Chacal (40/10 fuentes) es para un tema entero; aquí se pide ≥5 / ≥2 fuentes citadas.
+    const lim = { cobertura: { verde: { fuentes_min: 5 }, amarillo: { fuentes_min: 2 } },
+      vigencia: { verde: { recientes_pct_min: R.vigencia?.verde?.recientes_pct_min ?? 40 }, amarillo: { recientes_pct_min: R.vigencia?.amarillo?.recientes_pct_min ?? 20 } },
+      solidez: R.solidez || { verde: { ab_pct_min: 50 }, amarillo: { ab_pct_min: 30 } },
+      contradicciones: R.contradicciones || { verde: { abiertas_max: 0 }, amarillo: { abiertas_max: 2 } },
+      profundidad: R.profundidad || { verde: { semantica_pct_min: 25, leidas_pct_min: 40 }, amarillo: { semantica_pct_min: 10, leidas_pct_min: 20 } } };
+    const ok = c => Object.entries(c).every(([k, x]) => k.endsWith("_min") ? P[k.slice(0, -4)] >= x : k.endsWith("_max") ? P[k.slice(0, -4)] <= x : true);
+    const out = {};
+    for (const [d, c] of Object.entries(lim)) out[d] = ok(c.verde) ? "verde" : ok(c.amarillo) ? "amarillo" : "rojo";
+    if (P.fuentes === 0) for (const d in out) out[d] = "rojo";
+    if (P.anio_conocido === 0 && P.fuentes) out.vigencia = "rojo";
+    if (P.semantica_pct < 10 && out.contradicciones === "verde") out.contradicciones = "amarillo"; // regla del Chacal: sin grafo no hay "sin contradicciones"
+    return out;
+  }
+  function renderSem(el, text) {
+    const P = perfil(text), S = semaforos(P);
+    const verdes = Object.values(S).filter(v => v === "verde").length;
+    const cells = [
+      ["cobertura", "Cobertura", `${P.fuentes} fuente${P.fuentes === 1 ? "" : "s"} citada${P.fuentes === 1 ? "" : "s"}`, "cuántas fuentes sostienen la respuesta"],
+      ["vigencia", "Vigencia", `${P.recientes_pct}% de ${(Number(String(CORPUS.generado).slice(0, 4)) || 2026) - 1} o después`, "qué tan reciente es la evidencia"],
+      ["solidez", "Solidez", `${P.ab_pct}% con rigor A o B`, "estudios revisados, datos oficiales o filings"],
+      ["contradicciones", "Contradicciones", `${P.abiertas} disputa${P.abiertas === 1 ? "" : "s"} abierta${P.abiertas === 1 ? "" : "s"} · ${P.tensiones} en total`, "desacuerdos entre fuentes que tocan la respuesta"],
+      ["profundidad", "Profundidad", `${P.semantica_pct}% en el grafo · ${P.leidas_pct}% de esas leídas a fondo`, "cuánto se leyó más allá del resumen"],
+    ];
+    let h = `<div class="sh"><span>Respaldo medido · reglas del Chacal</span><b>${verdes} de 5 en bien</b></div><div class="cells">`;
+    for (const [k, lab, m, d] of cells) h += `<div class="cell ${S[k]}"><div class="v">${WORD[S[k]]}</div><div class="d">${lab}</div><div class="m">${esc(m)}</div><div class="m">${d}</div></div>`;
+    h += "</div>";
+    if (P.open.length || P.disc.length) {
+      h += `<div class="tn"><b>EN DISPUTA</b><ul>` + P.open.map(t => `<li>${inline(t.f)} ${esc(t.s)} <i>${t.p}</i> ${esc(t.o)} — ${esc(t.estado.replace(/_/g, " "))}</li>`).join("") + P.disc.map(d => `<li>${inline(d.f)} ficha con error pendiente de corregir: ${esc(d.detalle.slice(0, 160))}…</li>`).join("") + `</ul></div>`;
+    }
+    h += `<div class="nt">${P.fuentes ? "Calculado en esta página con reglas fijas a partir de las fuentes que Mu citó; no lo decide Claude. Vigencia mira solo el año de las fuentes; cobertura usa un umbral por respuesta (≥5 / ≥2)." : "Mu no citó ninguna fuente del registro: esta respuesta no tiene respaldo medible."}</div>`;
+    el.innerHTML = h; el.hidden = false;
   }
 
   // ---------- preguntar ----------
@@ -245,13 +322,14 @@ Estado actual del cerebro (panel): ${estado}`;
       { name: "buscar_en_mu", description: "Busca más fragmentos en los documentos de Mu. Devuelve hasta 5 fragmentos con su documento y sección. Úsala solo si los extractos no bastan.", inputSchema: { type: "object", properties: { consulta: { type: "string", description: "palabras clave en español" } }, required: ["consulta"] },
         execute: ({ consulta }) => { used++; evidence(entry.ev, r, `búsqueda extra: "${String(consulta).slice(0, 60)}"`); return search(IDX.nodes, String(consulta || ""), 5).map(c => ({ documento: c.titulo, seccion: c.seccion, texto: c.texto.slice(0, 1400) })); } },
       { name: "leer_fuente", description: "Lee la ficha completa de una fuente del registro por su código (por ejemplo F-16): autor, año, título, rigor y resumen.", inputSchema: { type: "object", properties: { id: { type: "string" } }, required: ["id"] },
-        execute: ({ id }) => { const k = "F-" + String(id).replace(/\D/g, ""); const f = FUENTES.get(k); if (!f) throw new Error(`${k} no existe en el registro`); used++; return fuenteTxt(f); } },
+        execute: ({ id }) => { const k = "F-" + String(id).replace(/\D/g, ""); const f = FUENTES.get(k); if (!f) throw new Error(`${k} no existe en el registro`); used++; const ts = TENS.filter(t => t.f === k).map(t => `${t.s} ${t.p} ${t.o} (${t.abierta ? "abierta" : "resuelta: " + t.estado})`); return fuenteTxt(f) + (ts.length ? " | Contradicciones en el grafo: " + ts.join("; ") : ""); } },
     ] : undefined;
     try {
       const opts = { signal: ctl.signal, onText: ({ text }) => { entry.body.innerHTML = md(text); } };
       if (tools) opts.tools = tools; else opts.cache = false;
       const res = await sample(input, opts);
       entry.body.innerHTML = md(res.text);
+      renderSem(entry.sem, res.text);
       if (res.truncated) entry.body.insertAdjacentHTML("beforeend", "<p><i>La respuesta quedó cortada. Pide algo más acotado.</i></p>");
       turns.push({ role: "user", content: `PREGUNTA: ${q}`, q }, { role: "assistant", content: res.text.slice(0, 4000) });
     } catch (e) {
@@ -273,7 +351,9 @@ Estado actual del cerebro (panel): ${estado}`;
   fetch("mu-corpus.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
     CORPUS = d;
     for (const f of d.fuentes) FUENTES.set(f.id, f);
-    IDX = { nodes: buildIndex(d.nodes, c => `${c.titulo} ${c.seccion} ${c.seccion} ${c.texto}`), fuentes: buildIndex(d.fuentes, f => `${f.id} ${f.autor} ${f.titulo} ${f.titulo} ${f.resumen}`) };
+    TENS = d.tensiones || [];
+    IDX = { nodes: buildIndex(d.nodes, c => `${c.titulo} ${c.seccion} ${c.seccion} ${c.texto}`), fuentes: buildIndex(d.fuentes, f => `${f.id} ${f.autor} ${f.titulo} ${f.titulo} ${f.resumen}`),
+      tens: buildIndex(TENS, t => `${t.s} ${t.o} ${t.apoyo} ${t.nota}`), hyps: buildIndex(d.hipotesis || [], h => `${h.id} ${h.texto} ${h.texto} ${h.detalle}`) };
     $("#gen").textContent = d.generado;
     const L = (d.estado.lineas || []).join(" ");
     const m1 = L.match(/N(\d)\/7/); if (m1) $("#st-n").textContent = `N${m1[1]}/7`;
