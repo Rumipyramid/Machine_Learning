@@ -94,8 +94,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1985,
-   "cites": 267,
+   "lines": 1999,
+   "cites": 272,
    "design": true
   },
   {
@@ -4959,6 +4959,51 @@
    "autor": "Forrester Research (página del reporte; texto completo con muro de pago)",
    "anio": "2016",
    "huerfana": false
+  },
+  {
+   "id": "F-537",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Unlocking success in digital transformations",
+   "autor": "McKinsey & Company (encuesta global)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-538",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Gartner Says Nearly Half of CIOs Are Planning to Deploy Artificial Intelligence (predicción: 85% de proyectos de IA con resultados erróneos ",
+   "autor": "Gartner, Inc. (comunicado de prensa, 13-feb-2018)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-539",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The GenAI Divide: State of AI in Business 2025",
+   "autor": "MIT NANDA (Challapally, Pease, Raskar, Chari et al.)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-540",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Do 70 per cent of all organizational change initiatives really fail?",
+   "autor": "Hughes, M. (Journal of Change Management), sobre Beer, M. & Nohria, N. (HBR, 2000)",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-541",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Startup Genome Report (650 startups, mayo de 2011)",
+   "autor": "Marmer, M., Herrmann, B. et al. (Startup Genome Project)",
+   "anio": "2011",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -8140,6 +8185,31 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-536",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-537",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-538",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-539",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-540",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-541",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -8371,14 +8441,14 @@
    },
    {
     "fecha": "2026-10-03",
-    "nuevas": 21,
-    "acumuladas": 536,
-    "AB": 14,
+    "nuevas": 26,
+    "acumuladas": 541,
+    "AB": 16,
     "rigor": {
-     "A": 5,
-     "B": 9,
-     "C": 5,
-     "D": 1,
+     "A": 6,
+     "B": 10,
+     "C": 7,
+     "D": 2,
      "E": 1
     }
    }
@@ -10257,27 +10327,26 @@
     "fuente": "git"
    },
    {
-    "fuentes": 528,
+    "fuentes": 536,
     "rigor": {
-     "B": 96,
+     "B": 100,
      "A": 144,
-     "C": 123,
+     "C": 126,
      "D": 122,
      "?": 14,
-     "E": 29
+     "E": 30
     },
     "nodes": 16,
     "outputs": 4,
     "wikilinks": 84,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 423,
+    "fuentes_citadas_en_nodes": 431,
     "diseno": {
      "hyp": {
-      "abierta": 17,
-      "parcial": 13,
-      "refutada": 1,
-      "respaldada": 2,
-      "otra": 1
+      "abierta": 16,
+      "parcial": 14,
+      "refutada": 3,
+      "respaldada": 2
      },
      "rules": 22,
      "rules_cited": 22,
@@ -10288,19 +10357,19 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1948,
-     "cites": 259
+     "lines": 1985,
+     "cites": 267
     },
     "fecha": "2026-10-03",
-    "commit": "10dc6be",
+    "commit": "998071b",
     "fuente": "git"
    }
   ],
   "design": {
    "hyp": {
-    "abierta": 16,
+    "abierta": 15,
     "parcial": 14,
-    "refutada": 3,
+    "refutada": 4,
     "respaldada": 2
    },
    "rules": 22,
@@ -10312,7 +10381,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1985,
+   "lines": 1999,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
