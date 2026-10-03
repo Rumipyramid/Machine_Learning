@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 16 | 6,859 líneas |
+| Nodes (`_nodes/`) | 16 | 6,860 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 526 | 🟢A 144 · 🔵B 96 · 🟡C 122 · 🟠D 121 · 🔴E 29 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 527 | 🟢A 144 · 🔵B 96 · 🟡C 123 · 🟠D 121 · 🔴E 29 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
-| Fuentes citadas por ≥1 node | 421 de 526 | 80% del ledger; **105 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 422 de 527 | 80% del ledger; **105 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 72 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 95 de 526 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 95 de 527 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -22,10 +22,10 @@
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 5 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02) | cuántas veces se confrontó el node |
-| Tamaño | 1,946 líneas | crecimiento ≠ calidad; ver trazabilidad |
-| Fuentes citadas explícitamente | 257 | F-n individuales dentro del node |
+| Tamaño | 1,947 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Fuentes citadas explícitamente | 258 | F-n individuales dentro del node |
 | …de rigor A/B | 134 (52%) | solidez de la base |
-| Hipótesis vivas | 34: abierta 17 · parcial 10 · respaldada 5 · refutada 1 | tablero §6 |
+| Hipótesis vivas | 34: abierta 17 · parcial 13 · respaldada 2 · refutada 1 | tablero §6 |
 | **Falsabilidad ejercida** | 50% (17/34) | hipótesis que ya se movieron de `abierta` |
 | **Tasa de autocorrección** | 6% (1/17) | de las resueltas, cuántas se refutaron: 0% sostenido sería señal de confirmación sesgada |
 | Reglas de criterio | 22 | §7 |
@@ -38,7 +38,7 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 24 | 0.09 | ✅ |
+| `conducta-humano-ia` | 24 | 0.089 | ✅ |
 | `proyecto-back-to-basics-ffvv-vida` | 19 | 0.07 | ✅ |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.03 | ✅ |
 | `material-visual-venta-consultiva` | 8 | 0.03 | ✅ |
@@ -46,7 +46,7 @@
 | `behavioral-design-estado-disciplina` | 6 | 0.023 | ✅ |
 | `glosario-seguro-vida-peru` | 4 | 0.015 | ❌ sin enlace |
 | `transicion-venta-fria-a-opt-in` | 4 | 0.015 | ❌ sin enlace |
-| `glosario-seguro-salud-peru` | 3 | 0.012 | ❌ sin enlace |
+| `glosario-seguro-salud-peru` | 3 | 0.011 | ❌ sin enlace |
 | `modelo-salud-ia-farmacias-peru` | 2 | 0.007 | ❌ sin enlace |
 | `seguros-comportamiento-mundo-peru` | 2 | 0.007 | ✅ |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ❌ sin enlace |
@@ -80,7 +80,7 @@
 | 2026-07-29 | 19 | 398 | 7 | █████ |
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
 | 2026-10-02 | 47 | 515 | 20 | ████████████ |
-| 2026-10-03 | 11 | 526 | 10 | ███ |
+| 2026-10-03 | 12 | 527 | 10 | ███ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -90,7 +90,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-13 | `8a90dc2` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `33d13f1` | 526 | 16 | 4 | 84 | 415 | 1913 | 20 | 14 | 22 |
+| 2026-10-03 | `701fd61` | 526 | 16 | 4 | 84 | 421 | 1946 | 17 | 17 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -120,7 +120,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 1946 | 257 | 134 | 8/8 | 2026-10-03 | 2026-10-03 v4.1 |
+| `tendencias-diseno-innovacion` | 1947 | 258 | 134 | 8/8 | 2026-10-03 | 2026-10-03 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
 | `conducta-humano-ia` | 139 | 35 | 25 | 5/5 | 2026-10-02 | 2026-10-02 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |

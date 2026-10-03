@@ -61,7 +61,8 @@ def parse_design(text):
         m = re.match(r"\|\s*\*\*H(\d+)\*\*\s*\|(.*?)\|(.*?)\|", l)
         if m:
             s = m.group(3)
-            st = next((k for k in ("refutada", "respaldada", "parcial", "abierta") if k in s[:140]), "otra")
+            _pos = {k: s[:140].find(k) for k in ("refutada", "respaldada", "parcial", "abierta") if k in s[:140]}
+            st = min(_pos, key=_pos.get) if _pos else "otra"  # gana el estado que aparece primero (corregido 2026-10-03: "`parcial` — respaldada por F-n" se leía como respaldada)
             hyp[int(m.group(1))] = st
             h[st] += 1
     rules = re.findall(r"^- \*\*(C\d+) —", text, re.M)
