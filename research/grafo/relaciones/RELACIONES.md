@@ -182,8 +182,10 @@
   - *Resolución:* Duplicado consolidado por cronista el 2026-10-02: F-23 y F-442 son el mismo RCT de UBI simulado (Accident Analysis & Prevention). Canónica: F-442 (con preregistro NCT06101251, N=1.449). F-23 queda marcada como duplicado.
 - ✅ **F-483** (2026-10-02, cerrada): La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS.
   - *Resolución:* Reconciliada el 2026-10-02: la penetración de Perú oscila 2,0%-2,1% (SBS: 2,06% a setiembre de 2025, F-507); 2,01% (estimación al 2T 2026) y ~2,08% (node) son compatibles. La cifra de ~2,5% corresponde a otra medida o fuente no atribuida. Reserva: no se abrió el documento de la SBS.
-- ⚠️ **F-16** (2026-10-03, abierta): Ficha dice '447 experimentos'. El abstract reporta >200 estudios y >450 tamaños de efecto (447 es el conteo de efectos, no de experimentos). Además el d es 0,45 (IC 0,39-0,52), no 0,43 como se suele citar.
-- ⚠️ **F-44** (2026-10-03, abierta): Ficha atribuye autoría a 'NCBI/PMC' (el repositorio). El autor es Stephen R. Milford (2024).
+- ✅ **F-16** (2026-10-03, cerrada): Ficha dice '447 experimentos'. El abstract reporta >200 estudios y >450 tamaños de efecto (447 es el conteo de efectos, no de experimentos). Además el d es 0,45 (IC 0,39-0,52), no 0,43 como se suele citar.
+  - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 (verificado contra el abstract).
+- ✅ **F-44** (2026-10-03, cerrada): Ficha atribuye autoría a 'NCBI/PMC' (el repositorio). El autor es Stephen R. Milford (2024).
+  - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 (verificado contra el abstract).
 - ⚠️ **F-18** (2026-10-03, abierta): No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar.
 
 ## 7. Registro de barridos

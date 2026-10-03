@@ -254,12 +254,16 @@
   {
    "fecha": "2026-10-03",
    "f": "F-16",
-   "detalle": "Ficha dice '447 experimentos'. El abstract reporta >200 estudios y >450 tamaños de efecto (447 es el conteo de efectos, no de experimentos). Además el d es 0,45 (IC 0,39-0,52), no 0,43 como se suele citar."
+   "detalle": "Ficha dice '447 experimentos'. El abstract reporta >200 estudios y >450 tamaños de efecto (447 es el conteo de efectos, no de experimentos). Además el d es 0,45 (IC 0,39-0,52), no 0,43 como se suele citar.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 (verificado contra el abstract)."
   },
   {
    "fecha": "2026-10-03",
    "f": "F-44",
-   "detalle": "Ficha atribuye autoría a 'NCBI/PMC' (el repositorio). El autor es Stephen R. Milford (2024)."
+   "detalle": "Ficha atribuye autoría a 'NCBI/PMC' (el repositorio). El autor es Stephen R. Milford (2024).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 (verificado contra el abstract)."
   },
   {
    "fecha": "2026-10-03",

@@ -528,7 +528,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Accuracy is inaccurate: Why a focus on diagnostic accuracy for medical chatbot AIs will not lead to improved health outcomes",
-   "autor": "NCBI/PMC",
+   "autor": "Milford, S. R. — ⚠️ corregido 2026-10-03: el ledger atribuía la autoría al repositorio \"NCBI/PMC\"",
    "anio": "2024",
    "huerfana": false
   },
@@ -10179,7 +10179,7 @@
      "cites": 259
     },
     "fecha": "2026-10-03",
-    "commit": "897cd9f",
+    "commit": "25f8cc2",
     "fuente": "git"
    }
   ],
