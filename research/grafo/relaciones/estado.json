@@ -307,6 +307,24 @@
     }
    ],
    "notas": "Pase de profundidad (relaciones.py next --mejorar): paradoja de la privacidad y escalas para evaluar agentes conversacionales. Resúmenes oficiales vía búsqueda. F-153 queda sin relaciones (solo método)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-154",
+    "F-156",
+    "F-159",
+    "F-175",
+    "F-176"
+   ],
+   "triples": 7,
+   "sin_aporte": [
+    {
+     "f": "F-154",
+     "nota": "Solo se verificó la autoría y la revista (Electronics 14(16):3266, 2025); los resultados no se leyeron. No se extraen relaciones hasta leerlos."
+    }
+   ],
+   "notas": "Pase de profundidad: evaluación de textos y chatbots con LLM, anclaje de precio y publicidad engañosa. Resúmenes oficiales vía búsqueda. F-154 sin relaciones (solo autoría)."
   }
  ],
  "discrepancias": [
@@ -445,6 +463,21 @@
    "fecha": "2026-10-03",
    "f": "F-153",
    "detalle": "La ficha pone a la editorial como autor ('Taylor & Francis'). Los autores son Jorge de Andrés-Sánchez y Jaume Gené-Albesa; revista Journal of Organizational Computing and Electronic Commerce, 2024, DOI 10.1080/10919392.2024.2435118."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-154",
+   "detalle": "La ficha pone a la editorial como autor ('MDPI Electronics'). Los autores son Jaume Gené-Albesa y Jorge de Andrés-Sánchez (Universitat Rovira i Virgili); Electronics 14(16):3266, 2025."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-175",
+   "detalle": "La ficha dice '(autores vía PMC/NCBI)'. Los autores son Yi Zong y Xiaojie Guo (Tianjin University of Commerce); Frontiers in Psychology, 8-feb-2022, DOI 10.3389/fpsyg.2022.794135."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-176",
+   "detalle": "La ficha dice '(autor vía ResearchGate / revista académica)' y año 's.f.'. La autora es Simona Romani; Journal of Product & Brand Management 15(2/3):130-138, 2006."
   }
  ],
  "resoluciones": [

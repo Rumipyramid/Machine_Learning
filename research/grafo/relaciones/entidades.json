@@ -54,6 +54,11 @@
   "nombre": "Ambidestreza organizacional",
   "tipo": "constructo"
  },
+ "ancla_numerica": {
+  "id": "ancla_numerica",
+  "nombre": "Número ancla visible antes de juzgar un precio",
+  "tipo": "intervencion"
+ },
  "aprendibilidad": {
   "id": "aprendibilidad",
   "nombre": "Aprendibilidad / conciencia del set de funciones",
@@ -379,6 +384,11 @@
   "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
   "tipo": "limitacion"
  },
+ "calidad_texto_generado": {
+  "id": "calidad_texto_generado",
+  "nombre": "Calidad de textos generados por IA según juicio humano",
+  "tipo": "constructo"
+ },
  "calificacion_calidad_ia": {
   "id": "calificacion_calidad_ia",
   "nombre": "Calificación de calidad y confianza de la IA",
@@ -457,6 +467,11 @@
  "confianza_en_ia": {
   "id": "confianza_en_ia",
   "nombre": "Confianza en la IA",
+  "tipo": "resultado"
+ },
+ "confianza_fuente": {
+  "id": "confianza_fuente",
+  "nombre": "Confianza en quien comunica la información",
   "tipo": "resultado"
  },
  "conflicto_decisional": {
@@ -609,6 +624,11 @@
   "nombre": "Efectividad de diseño industrial",
   "tipo": "constructo"
  },
+ "disposicion_compra": {
+  "id": "disposicion_compra",
+  "nombre": "Disposición a comprar",
+  "tipo": "resultado"
+ },
  "divulgacion_clara": {
   "id": "divulgacion_clara",
   "nombre": "Divulgación clara y saliente de un producto financiero",
@@ -744,6 +764,11 @@
   "nombre": "Dato esencialmente de una sola organización",
   "tipo": "limitacion"
  },
+ "g_eval": {
+  "id": "g_eval",
+  "nombre": "G-Eval (un LLM puntúa cada texto con razonamiento paso a paso)",
+  "tipo": "metrica"
+ },
  "generative_ui": {
   "id": "generative_ui",
   "nombre": "Generative UI (interfaces generadas por LLM)",
@@ -844,10 +869,20 @@
   "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
   "tipo": "estudio"
  },
+ "juicio_precio": {
+  "id": "juicio_precio",
+  "nombre": "Juicio del consumidor sobre precio o valor",
+  "tipo": "resultado"
+ },
  "litigios_adulacion": {
   "id": "litigios_adulacion",
   "nombre": "Litigios y cartas de fiscales por adulación de chatbots",
   "tipo": "concepto"
+ },
+ "llm_juez": {
+  "id": "llm_juez",
+  "nombre": "LLM como juez de respuestas de asistentes",
+  "tipo": "metrica"
  },
  "lovable_arr": {
   "id": "lovable_arr",
@@ -1079,6 +1114,11 @@
   "nombre": "Precisión de la decisión de prescripción",
   "tipo": "resultado"
  },
+ "preferencia_humana_respuestas": {
+  "id": "preferencia_humana_respuestas",
+  "nombre": "Preferencias humanas entre respuestas de asistentes",
+  "tipo": "constructo"
+ },
  "preferencia_interfaces_generativas": {
   "id": "preferencia_interfaces_generativas",
   "nombre": "Preferencia por interfaces generativas (hasta 72%)",
@@ -1108,6 +1148,11 @@
   "id": "programa_simulado",
   "nombre": "Programa simulado (incentivo ≤US$100), no seguro con prima real",
   "tipo": "limitacion"
+ },
+ "publicidad_precio_enganosa": {
+  "id": "publicidad_precio_enganosa",
+  "nombre": "Publicidad de precio engañosa",
+  "tipo": "intervencion"
  },
  "ranking_expertos_diseno": {
   "id": "ranking_expertos_diseno",
@@ -1224,6 +1269,11 @@
   "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
   "tipo": "constructo"
  },
+ "sesgo_favor_texto_llm": {
+  "id": "sesgo_favor_texto_llm",
+  "nombre": "Sesgo de los evaluadores LLM a favor de textos generados por LLM",
+  "tipo": "limitacion"
+ },
  "sesgo_halo": {
   "id": "sesgo_halo",
   "nombre": "Sesgo de halo (proxy = percepción experta)",
@@ -1243,6 +1293,11 @@
   "id": "sesgos_conductuales_seguro",
   "nombre": "Sesgos conductuales (miopía, narrow framing, present bias)",
   "tipo": "constructo"
+ },
+ "sesgos_llm_juez": {
+  "id": "sesgos_llm_juez",
+  "nombre": "Sesgos del LLM juez: posición, verbosidad y auto-preferencia",
+  "tipo": "limitacion"
  },
  "silent_trial": {
   "id": "silent_trial",

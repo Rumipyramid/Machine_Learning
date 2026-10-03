@@ -8,28 +8,28 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **117 de 542** (21.6%) |
-| …del cerebro de diseño (citadas en el node) | 85 de 272 |
-| …por rigor | A 71/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
-| Barridos | 17 |
-| Entidades | 270 |
-| Relaciones | 220 |
-| Nivel de lectura | ficha 119 · abstract 101 |
-| Fuerza de las afirmaciones | causal 73 · descriptiva 67 · observacional 44 · teorica 36 |
+| Fuentes procesadas | **122 de 542** (22.5%) |
+| …del cerebro de diseño (citadas en el node) | 90 de 272 |
+| …por rigor | A 76/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
+| Barridos | 18 |
+| Entidades | 281 |
+| Relaciones | 227 |
+| Nivel de lectura | ficha 119 · abstract 108 |
+| Fuerza de las afirmaciones | causal 76 · descriptiva 67 · observacional 48 · teorica 36 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 42 |
+| `aumenta` | efecto | 43 |
 | `asocia_con` | efecto | 36 |
 | `aplica_a` | estructura | 28 |
-| `reduce` | efecto | 26 |
-| `tiene_limite` | metodo | 17 |
+| `reduce` | efecto | 28 |
+| `tiene_limite` | metodo | 19 |
 | `contradice` | evidencia | 14 |
 | `modera` | efecto | 13 |
 | `respalda` | evidencia | 11 |
-| `mide` | metodo | 7 |
+| `mide` | metodo | 9 |
 | `es_tipo_de` | estructura | 7 |
 | `origina_en` | metodo | 6 |
 | `media` | efecto | 6 |
@@ -222,6 +222,9 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ⚠️ **F-150** (2026-10-03, abierta): La ficha pone a la revista como autor ('Personal and Ubiquitous Computing (Springer)'). El artículo es de Borsci y colegas (grupo que creó la BUS-11; autoría exacta del artículo de 2024 no confirmada), DOI 10.1007/s00779-024-01834-4.
 - ⚠️ **F-153** (2026-10-03, abierta): La ficha pone a la editorial como autor ('Taylor & Francis'). Los autores son Jorge de Andrés-Sánchez y Jaume Gené-Albesa; revista Journal of Organizational Computing and Electronic Commerce, 2024, DOI 10.1080/10919392.2024.2435118.
+- ⚠️ **F-154** (2026-10-03, abierta): La ficha pone a la editorial como autor ('MDPI Electronics'). Los autores son Jaume Gené-Albesa y Jorge de Andrés-Sánchez (Universitat Rovira i Virgili); Electronics 14(16):3266, 2025.
+- ⚠️ **F-175** (2026-10-03, abierta): La ficha dice '(autores vía PMC/NCBI)'. Los autores son Yi Zong y Xiaojie Guo (Tianjin University of Commerce); Frontiers in Psychology, 8-feb-2022, DOI 10.3389/fpsyg.2022.794135.
+- ⚠️ **F-176** (2026-10-03, abierta): La ficha dice '(autor vía ResearchGate / revista académica)' y año 's.f.'. La autora es Simona Romani; Journal of Product & Brand Management 15(2/3):130-138, 2006.
 
 ## 7. Registro de barridos
 
@@ -244,6 +247,7 @@
 | 2026-10-03 | F-61, F-100, F-119, F-120, F-121 | 8 | – | Pase de profundidad (relaciones.py next --mejorar): 5 fuentes A del cerebro de diseño sin relaciones en el grafo. Resúmenes oficiales vía búsqueda. F-121: las cifras 3%/30% no se confirmaron. F-60: ci |
 | 2026-10-03 | F-122, F-123, F-141, F-142, F-143 | 8 | – | Pase de profundidad (relaciones.py next --mejorar): ayudas de decisión, pictogramas de riesgo y pie en la puerta para datos personales. Resúmenes oficiales vía búsqueda. Tres fichas con autoría o hall |
 | 2026-10-03 | F-144, F-147, F-148, F-150, F-153 | 5 | F-153 | Pase de profundidad (relaciones.py next --mejorar): paradoja de la privacidad y escalas para evaluar agentes conversacionales. Resúmenes oficiales vía búsqueda. F-153 queda sin relaciones (solo método |
+| 2026-10-03 | F-154, F-156, F-159, F-175, F-176 | 7 | F-154 | Pase de profundidad: evaluación de textos y chatbots con LLM, anclaje de precio y publicidad engañosa. Resúmenes oficiales vía búsqueda. F-154 sin relaciones (solo autoría). |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

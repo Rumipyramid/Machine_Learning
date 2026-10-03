@@ -106,6 +106,15 @@
    ]
   },
   {
+   "id": "ancla_numerica",
+   "nombre": "Número ancla visible antes de juzgar un precio",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-175"
+   ]
+  },
+  {
    "id": "aprendibilidad",
    "nombre": "Aprendibilidad / conciencia del set de funciones",
    "tipo": "resultado",
@@ -711,6 +720,15 @@
    ]
   },
   {
+   "id": "calidad_texto_generado",
+   "nombre": "Calidad de textos generados por IA según juicio humano",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-156"
+   ]
+  },
+  {
    "id": "calificacion_calidad_ia",
    "nombre": "Calificación de calidad y confianza de la IA",
    "tipo": "resultado",
@@ -861,6 +879,15 @@
    "grado": 1,
    "fuentes": [
     "F-242"
+   ]
+  },
+  {
+   "id": "confianza_fuente",
+   "nombre": "Confianza en quien comunica la información",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-176"
    ]
   },
   {
@@ -1138,6 +1165,15 @@
    ]
   },
   {
+   "id": "disposicion_compra",
+   "nombre": "Disposición a comprar",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-176"
+   ]
+  },
+  {
    "id": "divulgacion_clara",
    "nombre": "Divulgación clara y saliente de un producto financiero",
    "tipo": "intervencion",
@@ -1388,6 +1424,15 @@
    ]
   },
   {
+   "id": "g_eval",
+   "nombre": "G-Eval (un LLM puntúa cada texto con razonamiento paso a paso)",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-156"
+   ]
+  },
+  {
    "id": "generative_ui",
    "nombre": "Generative UI (interfaces generadas por LLM)",
    "tipo": "intervencion",
@@ -1580,6 +1625,15 @@
    ]
   },
   {
+   "id": "juicio_precio",
+   "nombre": "Juicio del consumidor sobre precio o valor",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-175"
+   ]
+  },
+  {
    "id": "litigios_adulacion",
    "nombre": "Litigios y cartas de fiscales por adulación de chatbots",
    "tipo": "concepto",
@@ -1587,6 +1641,15 @@
    "fuentes": [
     "F-496",
     "F-497"
+   ]
+  },
+  {
+   "id": "llm_juez",
+   "nombre": "LLM como juez de respuestas de asistentes",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-159"
    ]
   },
   {
@@ -2017,6 +2080,15 @@
    ]
   },
   {
+   "id": "preferencia_humana_respuestas",
+   "nombre": "Preferencias humanas entre respuestas de asistentes",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-159"
+   ]
+  },
+  {
    "id": "preferencia_interfaces_generativas",
    "nombre": "Preferencia por interfaces generativas (hasta 72%)",
    "tipo": "resultado",
@@ -2070,6 +2142,15 @@
    "grado": 1,
    "fuentes": [
     "F-442"
+   ]
+  },
+  {
+   "id": "publicidad_precio_enganosa",
+   "nombre": "Publicidad de precio engañosa",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-176"
    ]
   },
   {
@@ -2284,6 +2365,15 @@
    ]
   },
   {
+   "id": "sesgo_favor_texto_llm",
+   "nombre": "Sesgo de los evaluadores LLM a favor de textos generados por LLM",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-156"
+   ]
+  },
+  {
    "id": "sesgo_halo",
    "nombre": "Sesgo de halo (proxy = percepción experta)",
    "tipo": "limitacion",
@@ -2319,6 +2409,15 @@
    "grado": 1,
    "fuentes": [
     "F-3"
+   ]
+  },
+  {
+   "id": "sesgos_llm_juez",
+   "nombre": "Sesgos del LLM juez: posición, verbosidad y auto-preferencia",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-159"
    ]
   },
   {
@@ -5161,11 +5260,95 @@
    "fuerza": "observacional",
    "fecha": "2026-10-03",
    "clase": "metodo"
+  },
+  {
+   "id": "T-221",
+   "s": "g_eval",
+   "p": "mide",
+   "o": "calidad_texto_generado",
+   "f": "F-156",
+   "apoyo": "EMNLP 2023: con GPT-4, correlación de Spearman de 0,514 con el juicio humano en resúmenes, muy por encima de métricas como BLEU o ROUGE.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-222",
+   "s": "g_eval",
+   "p": "tiene_limite",
+   "o": "sesgo_favor_texto_llm",
+   "f": "F-156",
+   "apoyo": "Los propios autores advierten que los evaluadores basados en LLM pueden favorecer textos generados por LLM.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-223",
+   "s": "llm_juez",
+   "p": "mide",
+   "o": "preferencia_humana_respuestas",
+   "f": "F-159",
+   "apoyo": "NeurIPS 2023: GPT-4 como juez coincide más de 80% con preferencias humanas (controladas y de Chatbot Arena), el mismo nivel de acuerdo que entre humanos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-224",
+   "s": "llm_juez",
+   "p": "tiene_limite",
+   "o": "sesgos_llm_juez",
+   "f": "F-159",
+   "apoyo": "Documentan sesgo de posición, de verbosidad y de auto-preferencia, más razonamiento limitado, y proponen mitigaciones; publican 80 preguntas, 3K votos expertos y 30K conversaciones.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-225",
+   "s": "ancla_numerica",
+   "p": "aumenta",
+   "o": "juicio_precio",
+   "f": "F-175",
+   "apoyo": "Experimento (Frontiers in Psychology 2022): los consumidores se dejaron anclar al juzgar precios en escenas de experiencia del producto; presión de tiempo, autoconfianza, género, personalidad y conocimiento moderaron el efecto.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-226",
+   "s": "publicidad_precio_enganosa",
+   "p": "reduce",
+   "o": "confianza_fuente",
+   "f": "F-176",
+   "apoyo": "Experimento (Journal of Product & Brand Management 2006): con información de precio engañosa baja la confianza en la fuente.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-227",
+   "s": "publicidad_precio_enganosa",
+   "p": "reduce",
+   "o": "disposicion_compra",
+   "f": "F-176",
+   "apoyo": "El mismo experimento halla menor disposición a comprar cuando el precio se comunica de forma engañosa.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
   }
  ],
  "generado": "2026-10-03",
  "cobertura": {
-  "procesadas": 117,
+  "procesadas": 122,
   "total": 542
  }
 }
