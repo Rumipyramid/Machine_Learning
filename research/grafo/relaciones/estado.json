@@ -372,6 +372,24 @@
    "estado": "sin_verificar",
    "fecha": "2026-10-03",
    "nota": "Verificación 2026-10-03: una segunda búsqueda independiente reproduce +1,1% (S/9.451 M), utilidad S/1.391 M (+7,5%), penetración 2,01% y densidad US$212, lo que apunta a que la cifra viene de un reporte con datos de la SBS; pero gestion.pe, sbs.gob.pe y PCR están bloqueados y la tabla oficial no se abrió. Sigue sin_verificar hasta contrastar con la SBS (el usuario puede aportar el PDF/boletín del 2T 2026). La tesis de mercado peruano ya lleva la reserva."
+  },
+  {
+   "triple": "T-179",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-03",
+   "nota": "Maier re-analiza los mismos datos de Mertens y, corregido el sesgo de publicación, no queda efecto promedio. Lo refutado es la estimación sin ajustar (d=0,45). Mertens ya reportaba d=0,08-0,31 ajustado. Hu 2025 (F-18) converge por otro método."
+  },
+  {
+   "triple": "T-180",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-03",
+   "nota": "Evidencia en contra de las intervenciones de información y asistencia (F-17). Compatible con F-16, que ya las ponía por debajo de las de estructura."
+  },
+  {
+   "triple": "T-188",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-03",
+   "nota": "Segundo orden (14 meta-análisis): d=0,27 → 0,004 tras ajustar. Converge con T-179 por un método distinto. Ojo: los insumos son de calidad baja o críticamente baja."
   }
  ]
 }

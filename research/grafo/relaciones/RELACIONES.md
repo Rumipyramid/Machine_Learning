@@ -8,9 +8,9 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **100 de 528** (18.9%) |
-| …del cerebro de diseño (citadas en el node) | 69 de 259 |
-| …por rigor | A 54/144 · B 22/96 · C 20/123 · D 3/122 · E 1/29 |
+| Fuentes procesadas | **100 de 536** (18.7%) |
+| …del cerebro de diseño (citadas en el node) | 69 de 267 |
+| …por rigor | A 54/144 · B 22/100 · C 20/126 · D 3/122 · E 1/30 |
 | Barridos | 11 |
 | Entidades | 231 |
 | Relaciones | 189 |
@@ -142,12 +142,15 @@
 - **Primas netas del sistema peruano en el 1S 2026 (+1,1%)** —contradice→ **El mercado peruano crece 8%-9% en 2026** (F-506, descriptiva) · **estado: sin_verificar**
   - Si se confirma, el +1,1% del 1S contradice la expectativa de +8%-9% de F-482/F-483; sin verificar con la SBS.
   - *Resolución (2026-10-03):* Verificación 2026-10-03: una segunda búsqueda independiente reproduce +1,1% (S/9.451 M), utilidad S/1.391 M (+7,5%), penetración 2,01% y densidad US$212, lo que apunta a que la cifra viene de un reporte con datos de la SBS; pero gestion.pe, sbs.gob.pe y PCR están bloqueados y la tabla oficial no se abrió. Sigue sin_verificar hasta contrastar con la SBS (el usuario puede aportar el PDF/boletín del 2T 2026). La tesis de mercado peruano ya lleva la reserva.
-- **Re-análisis RoBMA de Maier et al. (PNAS 2022)** —refuta→ **Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)** (F-17, causal) · **estado: abierta**
+- **Re-análisis RoBMA de Maier et al. (PNAS 2022)** —refuta→ **Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)** (F-17, causal) · **estado: refutacion_directa**
   - Re-análisis RoBMA de los datos de Mertens: corregido el sesgo de publicación, no queda evidencia de efecto promedio del nudging.
-- **Re-análisis RoBMA de Maier et al. (PNAS 2022)** —refuta→ **Nudges de información/asistencia a la decisión** (F-17, causal) · **estado: abierta**
+  - *Resolución (2026-10-03):* Maier re-analiza los mismos datos de Mertens y, corregido el sesgo de publicación, no queda efecto promedio. Lo refutado es la estimación sin ajustar (d=0,45). Mertens ya reportaba d=0,08-0,31 ajustado. Hu 2025 (F-18) converge por otro método.
+- **Re-análisis RoBMA de Maier et al. (PNAS 2022)** —refuta→ **Nudges de información/asistencia a la decisión** (F-17, causal) · **estado: refutacion_directa**
   - Encuentra evidencia en contra de la eficacia de las intervenciones de información y asistencia, y en contra en la mayoría de dominios.
-- **Meta-análisis de segundo orden de Hu et al. (JBDM 2025)** —refuta→ **Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)** (F-18, observacional) · **estado: abierta**
+  - *Resolución (2026-10-03):* Evidencia en contra de las intervenciones de información y asistencia (F-17). Compatible con F-16, que ya las ponía por debajo de las de estructura.
+- **Meta-análisis de segundo orden de Hu et al. (JBDM 2025)** —refuta→ **Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)** (F-18, observacional) · **estado: refutacion_directa**
   - 14 meta-análisis, 1.638 estudios, ~30 M de participantes: d=0,27 (IC95% 0,16-0,38) que cae a d=0,004 tras ajustar por sesgo de publicación.
+  - *Resolución (2026-10-03):* Segundo orden (14 meta-análisis): d=0,27 → 0,004 tras ajustar. Converge con T-179 por un método distinto. Ojo: los insumos son de calidad baja o críticamente baja.
 
 ## 5. Hubs (entidades más conectadas)
 

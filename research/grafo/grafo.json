@@ -94,8 +94,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1948,
-   "cites": 259,
+   "lines": 1985,
+   "cites": 267,
    "design": true
   },
   {
@@ -4887,6 +4887,78 @@
    "autor": "Metodo Viral (es/pt) y Lyssna (en), vistos solo por resumen de búsqueda; texto completo bloqueado por la red",
    "anio": "2025-2026",
    "huerfana": false
+  },
+  {
+   "id": "F-529",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Credicorp 4Q25 earnings release — cartera de innovación como % de ingresos ajustados por riesgo",
+   "autor": "Credicorp Ltd. (Form 6-K, resultados 4T25, SEC; resumen de búsqueda)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-530",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "DSM Integrated Annual Report — innovation sales",
+   "autor": "Royal DSM (informes anuales 2011, 2017 y 2019)",
+   "anio": "2011-2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-531",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Croda Full year results — New & Protected Products (NPP) como % de ventas",
+   "autor": "Croda International plc (resultados anuales 2014, 2016 y 2024)",
+   "anio": "2014-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-532",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Henkel innovation rate (participación en ventas de productos lanzados en los últimos años)",
+   "autor": "Henkel AG & Co. KGaA (vía resúmenes de prensa e informe 2017)",
+   "anio": "2017-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-533",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025",
+   "autor": "Gartner, Inc. (comunicado de prensa)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-534",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Usability ROI Declining, But Still Strong",
+   "autor": "Nielsen, J. (Nielsen Norman Group)",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-535",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Listas '40+ UX statistics 2026' y 'UX design trends 2026'",
+   "autor": "Agregadores de estadísticas UX/diseño 2026 (DesignRush, UXtweak, Searchlab, Riseup Labs, Agency Partner, Codewave; vistos por resumen de búsqueda)",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-536",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Six Steps For Justifying Better UX",
+   "autor": "Forrester Research (página del reporte; texto completo con muro de pago)",
+   "anio": "2016",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -8028,6 +8100,46 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-528",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-529",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-530",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-531",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-532",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-533",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-534",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-535",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-536",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -8259,14 +8371,15 @@
    },
    {
     "fecha": "2026-10-03",
-    "nuevas": 13,
-    "acumuladas": 528,
-    "AB": 10,
+    "nuevas": 21,
+    "acumuladas": 536,
+    "AB": 14,
     "rigor": {
      "A": 5,
-     "B": 5,
-     "C": 2,
-     "D": 1
+     "B": 9,
+     "C": 5,
+     "D": 1,
+     "E": 1
     }
    }
   ],
@@ -10179,17 +10292,16 @@
      "cites": 259
     },
     "fecha": "2026-10-03",
-    "commit": "46c75b1",
+    "commit": "10dc6be",
     "fuente": "git"
    }
   ],
   "design": {
    "hyp": {
-    "abierta": 17,
-    "parcial": 13,
-    "refutada": 1,
-    "respaldada": 2,
-    "otra": 1
+    "abierta": 16,
+    "parcial": 14,
+    "refutada": 3,
+    "respaldada": 2
    },
    "rules": 22,
    "rules_cited": 22,
@@ -10200,7 +10312,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1948,
+   "lines": 1985,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
