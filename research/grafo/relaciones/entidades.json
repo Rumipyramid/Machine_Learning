@@ -9,6 +9,11 @@
   "nombre": "Accesibilidad como obligación con sanción",
   "tipo": "resultado"
  },
+ "aceptacion_pedido": {
+  "id": "aceptacion_pedido",
+  "nombre": "Aceptación de un pedido mayor",
+  "tipo": "resultado"
+ },
  "aceptacion_plan_dudoso": {
   "id": "aceptacion_plan_dudoso",
   "nombre": "Permanencia/aceptación de un plan dudoso",
@@ -73,6 +78,11 @@
   "id": "automedicacion_no_responsable",
   "nombre": "Automedicación no responsable (Perú)",
   "tipo": "resultado"
+ },
+ "ayudas_decision": {
+  "id": "ayudas_decision",
+  "nombre": "Ayudas de decisión para pacientes (material estructurado de opciones y riesgos)",
+  "tipo": "intervencion"
  },
  "backlash_consumidor": {
   "id": "backlash_consumidor",
@@ -284,6 +294,11 @@
   "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
   "tipo": "afirmacion"
  },
+ "c_paradoja_privacidad": {
+  "id": "c_paradoja_privacidad",
+  "nombre": "La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad)",
+  "tipo": "afirmacion"
+ },
  "c_pen_2_01": {
   "id": "c_pen_2_01",
   "nombre": "Penetración ~2,01% (estimación al 2T 2026)",
@@ -439,6 +454,16 @@
   "nombre": "Confianza en la IA",
   "tipo": "resultado"
  },
+ "conflicto_decisional": {
+  "id": "conflicto_decisional",
+  "nombre": "Conflicto decisional (sentirse desinformado o indeciso sobre los propios valores)",
+  "tipo": "resultado"
+ },
+ "conocimiento_decision": {
+  "id": "conocimiento_decision",
+  "nombre": "Conocimiento sobre la decisión",
+  "tipo": "resultado"
+ },
  "consejo_ia_personalizado": {
   "id": "consejo_ia_personalizado",
   "nombre": "Consejo personalizado con IA (e-commerce)",
@@ -578,6 +603,11 @@
   "id": "divulgacion_clara",
   "nombre": "Divulgación clara y saliente de un producto financiero",
   "tipo": "intervencion"
+ },
+ "divulgacion_datos": {
+  "id": "divulgacion_datos",
+  "nombre": "Divulgación de datos personales",
+  "tipo": "resultado"
  },
  "edad_avanzada": {
   "id": "edad_avanzada",
@@ -954,6 +984,11 @@
   "nombre": "Pensamiento crítico",
   "tipo": "resultado"
  },
+ "percepcion_riesgo_precisa": {
+  "id": "percepcion_riesgo_precisa",
+  "nombre": "Percepción precisa del riesgo",
+  "tipo": "resultado"
+ },
  "perdida_neta_figma_fy25": {
   "id": "perdida_neta_figma_fy25",
   "nombre": "Pérdida neta GAAP de Figma FY2025 (−US$1,25B)",
@@ -977,6 +1012,16 @@
  "persuasion_ia": {
   "id": "persuasion_ia",
   "nombre": "Persuasión conversacional por IA",
+  "tipo": "intervencion"
+ },
+ "pictogramas_riesgo": {
+  "id": "pictogramas_riesgo",
+  "nombre": "Pictogramas o arreglos de íconos para mostrar riesgo",
+  "tipo": "intervencion"
+ },
+ "pie_en_la_puerta": {
+  "id": "pie_en_la_puerta",
+  "nombre": "Pie en la puerta (pedido pequeño antes del grande)",
   "tipo": "intervencion"
  },
  "pl_08488": {

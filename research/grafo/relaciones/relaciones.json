@@ -19,6 +19,15 @@
    ]
   },
   {
+   "id": "aceptacion_pedido",
+   "nombre": "Aceptación de un pedido mayor",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-141"
+   ]
+  },
+  {
    "id": "aceptacion_plan_dudoso",
    "nombre": "Permanencia/aceptación de un plan dudoso",
    "tipo": "metrica",
@@ -139,6 +148,15 @@
    "grado": 1,
    "fuentes": [
     "F-36"
+   ]
+  },
+  {
+   "id": "ayudas_decision",
+   "nombre": "Ayudas de decisión para pacientes (material estructurado de opciones y riesgos)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-122"
    ]
   },
   {
@@ -535,6 +553,15 @@
    ]
   },
   {
+   "id": "c_paradoja_privacidad",
+   "nombre": "La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-143"
+   ]
+  },
+  {
    "id": "c_pen_2_01",
    "nombre": "Penetración ~2,01% (estimación al 2T 2026)",
    "tipo": "afirmacion",
@@ -827,6 +854,24 @@
    ]
   },
   {
+   "id": "conflicto_decisional",
+   "nombre": "Conflicto decisional (sentirse desinformado o indeciso sobre los propios valores)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-122"
+   ]
+  },
+  {
+   "id": "conocimiento_decision",
+   "nombre": "Conocimiento sobre la decisión",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-122"
+   ]
+  },
+  {
    "id": "consejo_ia_personalizado",
    "nombre": "Consejo personalizado con IA (e-commerce)",
    "tipo": "intervencion",
@@ -1081,6 +1126,16 @@
    "fuentes": [
     "F-10",
     "F-9"
+   ]
+  },
+  {
+   "id": "divulgacion_datos",
+   "nombre": "Divulgación de datos personales",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-142",
+    "F-143"
    ]
   },
   {
@@ -1785,6 +1840,16 @@
    ]
   },
   {
+   "id": "percepcion_riesgo_precisa",
+   "nombre": "Percepción precisa del riesgo",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-122",
+    "F-123"
+   ]
+  },
+  {
    "id": "perdida_neta_figma_fy25",
    "nombre": "Pérdida neta GAAP de Figma FY2025 (−US$1,25B)",
    "tipo": "resultado",
@@ -1828,6 +1893,26 @@
    "fuentes": [
     "F-489",
     "F-490"
+   ]
+  },
+  {
+   "id": "pictogramas_riesgo",
+   "nombre": "Pictogramas o arreglos de íconos para mostrar riesgo",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-123"
+   ]
+  },
+  {
+   "id": "pie_en_la_puerta",
+   "nombre": "Pie en la puerta (pedido pequeño antes del grande)",
+   "tipo": "intervencion",
+   "grado": 4,
+   "fuentes": [
+    "F-141",
+    "F-142",
+    "F-143"
    ]
   },
   {
@@ -4847,11 +4932,107 @@
    "fuerza": "causal",
    "fecha": "2026-10-03",
    "clase": "efecto"
+  },
+  {
+   "id": "T-208",
+   "s": "ayudas_decision",
+   "p": "aumenta",
+   "o": "conocimiento_decision",
+   "f": "F-122",
+   "apoyo": "Revisión de 105 ensayos: +13,3/100 puntos de conocimiento frente a la atención usual (52 estudios, N=13.316, evidencia de alta calidad).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-209",
+   "s": "ayudas_decision",
+   "p": "aumenta",
+   "o": "percepcion_riesgo_precisa",
+   "f": "F-122",
+   "apoyo": "Duplican la probabilidad de percibir el riesgo con precisión (RR 2,10; 17 estudios, N=5.096, calidad moderada).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-210",
+   "s": "ayudas_decision",
+   "p": "reduce",
+   "o": "conflicto_decisional",
+   "f": "F-122",
+   "apoyo": "−9,3/100 en sentirse desinformado y −8,8/100 en indecisión sobre los propios valores (evidencia de alta calidad). Lo de la ficha sobre la calidad estética no aparece en el resumen.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-211",
+   "s": "pictogramas_riesgo",
+   "p": "aumenta",
+   "o": "percepcion_riesgo_precisa",
+   "f": "F-123",
+   "apoyo": "Ensayo con 1.300 personas en el Reino Unido (riesgo BRCA1): los pictogramas mejoraron la comprensión y el recuerdo del riesgo frente al texto solo; el formato de la incertidumbre no importó. Evidencia débil.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-212",
+   "s": "pie_en_la_puerta",
+   "p": "aumenta",
+   "o": "aceptacion_pedido",
+   "f": "F-141",
+   "apoyo": "Experimento de campo (JPSP 1966): quienes respondieron antes unas preguntas aceptaron más un pedido grande (52,8% vs. 22,2% según fuentes secundarias; las cifras no se leyeron en el original).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-213",
+   "s": "pie_en_la_puerta",
+   "p": "aumenta",
+   "o": "divulgacion_datos",
+   "f": "F-142",
+   "apoyo": "Dos experimentos de campo (una fintech y una comunidad de exalumnos en Facebook): ordenar los campos de menos a más intrusivos y repartirlos en varias páginas aumentó la divulgación al registrarse.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-214",
+   "s": "pie_en_la_puerta",
+   "p": "aumenta",
+   "o": "divulgacion_datos",
+   "f": "F-143",
+   "apoyo": "Un estudio de laboratorio con datos reales y una réplica en línea: pedir datos de nuevo aumentó la divulgación en el segundo pedido.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-215",
+   "s": "pie_en_la_puerta",
+   "p": "media",
+   "o": "c_paradoja_privacidad",
+   "f": "F-143",
+   "apoyo": "La divulgación subió sin que cambiara la preocupación por la privacidad: los autores proponen el pie en la puerta como una explicación de la paradoja de la privacidad.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
   }
  ],
  "generado": "2026-10-03",
  "cobertura": {
-  "procesadas": 107,
+  "procesadas": 112,
   "total": 542
  }
 }

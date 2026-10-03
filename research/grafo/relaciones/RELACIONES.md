@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **107 de 542** (19.7%) |
-| …del cerebro de diseño (citadas en el node) | 75 de 272 |
-| …por rigor | A 61/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
-| Barridos | 15 |
-| Entidades | 253 |
-| Relaciones | 207 |
-| Nivel de lectura | ficha 119 · abstract 88 |
-| Fuerza de las afirmaciones | descriptiva 67 · causal 64 · observacional 42 · teorica 34 |
+| Fuentes procesadas | **112 de 542** (20.7%) |
+| …del cerebro de diseño (citadas en el node) | 80 de 272 |
+| …por rigor | A 66/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
+| Barridos | 16 |
+| Entidades | 262 |
+| Relaciones | 215 |
+| Nivel de lectura | ficha 119 · abstract 96 |
+| Fuerza de las afirmaciones | causal 72 · descriptiva 67 · observacional 42 · teorica 34 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
+| `aumenta` | efecto | 41 |
 | `asocia_con` | efecto | 36 |
-| `aumenta` | efecto | 35 |
 | `aplica_a` | estructura | 28 |
-| `reduce` | efecto | 24 |
+| `reduce` | efecto | 25 |
 | `tiene_limite` | metodo | 17 |
 | `contradice` | evidencia | 14 |
 | `modera` | efecto | 13 |
 | `respalda` | evidencia | 10 |
 | `es_tipo_de` | estructura | 7 |
 | `origina_en` | metodo | 6 |
+| `media` | efecto | 6 |
 | `refuta` | evidencia | 6 |
 | `mide` | metodo | 5 |
-| `media` | efecto | 5 |
 | `parte_de` | estructura | 1 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -54,6 +54,7 @@
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
 | Sesgo de publicación | F-16, F-17, F-21 |
+| Pie en la puerta (pedido pequeño antes del grande) | F-141, F-142, F-143 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
@@ -99,6 +100,8 @@
 | Sesgo de automatización (sobre-confiar en la recomendación de un sistema) | F-60, F-61 |
 | Más opciones empeoran la decisión de forma general | F-119, F-121 |
 | Sobrecarga de elección (menos compra, satisfacción o confianza al haber más opciones) | F-119, F-120 |
+| Percepción precisa del riesgo | F-122, F-123 |
+| Divulgación de datos personales | F-142, F-143 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -210,6 +213,9 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ✅ **F-60** (2026-10-03, cerrada): La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño.
   - *Resolución:* Cerrada: F-60 y F-61 corregidas en el ledger el 2026-10-03 con autorización del usuario; el pasaje E4 del node de farmacias también se corrigió.
+- ⚠️ **F-123** (2026-10-03, abierta): La ficha dice 'autores no individualizados' y que 'el formato de frecuencia supera al porcentaje puro'. Los autores son Recchia, Lawrence y Freeman (Winton Centre, Cambridge); el estudio compara pictogramas con texto (no frecuencia vs. porcentaje), no halla efecto del formato de la incertidumbre y da evidencia débil a favor de los pictogramas.
+- ⚠️ **F-142** (2026-10-03, abierta): La ficha pone a la revista como autor y el año 2025. Los autores son Wu, Wu, Guo y Yang; publicado en International Journal of Electronic Commerce 30(1):62-81, 2026 (en línea 2025).
+- ⚠️ **F-143** (2026-10-03, abierta): La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023.
 
 ## 7. Registro de barridos
 
@@ -230,6 +236,7 @@
 | 2026-10-03 | F-6, F-9, F-484, F-504, F-506, F-508 | 2 | F-6, F-484, F-504, F-506 | Lectura a fondo de seguros. Documentos primarios (SBS, SMV, El Peruano, Congreso) bloqueados por la red: se leyeron resúmenes dirigidos a cada documento. Se actualizan en su sitio, de ficha a abstract |
 | 2026-10-03 | F-3, F-10, F-19, F-21, F-60 | 3 | F-3, F-10, F-19 | Pase de profundidad sobre las 5 fuentes A que el grafo tenía solo a nivel ficha (relaciones.py next --mejorar). Resúmenes oficiales vía búsqueda; texto completo no abierto. F-21: 126 RCTs y 23 M de pe |
 | 2026-10-03 | F-61, F-100, F-119, F-120, F-121 | 8 | – | Pase de profundidad (relaciones.py next --mejorar): 5 fuentes A del cerebro de diseño sin relaciones en el grafo. Resúmenes oficiales vía búsqueda. F-121: las cifras 3%/30% no se confirmaron. F-60: ci |
+| 2026-10-03 | F-122, F-123, F-141, F-142, F-143 | 8 | – | Pase de profundidad (relaciones.py next --mejorar): ayudas de decisión, pictogramas de riesgo y pie en la puerta para datos personales. Resúmenes oficiales vía búsqueda. Tres fichas con autoría o hall |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

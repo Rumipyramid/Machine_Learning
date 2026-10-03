@@ -276,6 +276,19 @@
    "triples": 8,
    "sin_aporte": [],
    "notas": "Pase de profundidad (relaciones.py next --mejorar): 5 fuentes A del cerebro de diseño sin relaciones en el grafo. Resúmenes oficiales vía búsqueda. F-121: las cifras 3%/30% no se confirmaron. F-60: cifra mal atribuida (discrepancia)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-122",
+    "F-123",
+    "F-141",
+    "F-142",
+    "F-143"
+   ],
+   "triples": 8,
+   "sin_aporte": [],
+   "notas": "Pase de profundidad (relaciones.py next --mejorar): ayudas de decisión, pictogramas de riesgo y pie en la puerta para datos personales. Resúmenes oficiales vía búsqueda. Tres fichas con autoría o hallazgo mal registrados."
   }
  ],
  "discrepancias": [
@@ -383,6 +396,21 @@
    "detalle": "La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño.",
    "estado": "cerrada",
    "resolucion": "Cerrada: F-60 y F-61 corregidas en el ledger el 2026-10-03 con autorización del usuario; el pasaje E4 del node de farmacias también se corrigió."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-123",
+   "detalle": "La ficha dice 'autores no individualizados' y que 'el formato de frecuencia supera al porcentaje puro'. Los autores son Recchia, Lawrence y Freeman (Winton Centre, Cambridge); el estudio compara pictogramas con texto (no frecuencia vs. porcentaje), no halla efecto del formato de la incertidumbre y da evidencia débil a favor de los pictogramas."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-142",
+   "detalle": "La ficha pone a la revista como autor y el año 2025. Los autores son Wu, Wu, Guo y Yang; publicado en International Journal of Electronic Commerce 30(1):62-81, 2026 (en línea 2025)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-143",
+   "detalle": "La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023."
   }
  ],
  "resoluciones": [
