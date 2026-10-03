@@ -94,8 +94,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1913,
-   "cites": 214,
+   "lines": 1946,
+   "cites": 257,
    "design": true
   },
   {
@@ -530,7 +530,7 @@
    "titulo": "Accuracy is inaccurate: Why a focus on diagnostic accuracy for medical chatbot AIs will not lead to improved health outcomes",
    "autor": "NCBI/PMC",
    "anio": "2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-45",
@@ -3140,7 +3140,7 @@
    "titulo": "Do consumers perceive and trust health insurers within a system of managed competition as prudent buyers of care? (Health Economics, Policy ",
    "autor": "Autores no especificados en el resumen",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-335",
@@ -3149,7 +3149,7 @@
    "titulo": "A Measure of Trust in Insurers (Health Services Research)",
    "autor": "Zheng, B. et al.",
    "anio": "~2002",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-336",
@@ -3167,7 +3167,7 @@
    "titulo": "The role of autonomy and reactance for nudging — Experimentally comparing defaults to recommendations and mandates (J. Behavioral and Experi",
    "autor": "Bruns, H. & Perino, G.",
    "anio": "2023",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-338",
@@ -3176,7 +3176,7 @@
    "titulo": "How Do Consumers Interact with Digital Expert Advice? Experimental Evidence from Health Insurance (Management Science 70(11))",
    "autor": "Bundorf, M.K.; Polyakova, M.; Tai-Seale, M.",
    "anio": "2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-339",
@@ -3347,7 +3347,7 @@
    "titulo": "Ensayo aleatorizado de framing opt-out vs. opt-in en monitoreo remoto de presión arterial (JAMA Network Open)",
    "autor": "Mehta, S.J. et al.",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-358",
@@ -5442,6 +5442,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-3",
+   "k": "cita"
+  },
+  {
    "s": "glosario-seguro-salud-peru",
    "t": "F-6",
    "k": "cita"
@@ -5457,7 +5462,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-6",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-7",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-7",
    "k": "cita"
   },
@@ -5477,6 +5492,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-9",
+   "k": "cita"
+  },
+  {
    "s": "glosario-seguro-salud-peru",
    "t": "F-10",
    "k": "cita"
@@ -5488,6 +5508,11 @@
   },
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-10",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-10",
    "k": "cita"
   },
@@ -5677,6 +5702,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-44",
+   "k": "cita"
+  },
+  {
    "s": "modelo-salud-ia-farmacias-peru",
    "t": "F-48",
    "k": "cita"
@@ -5722,7 +5752,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-60",
+   "k": "cita"
+  },
+  {
    "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-61",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-61",
    "k": "cita"
   },
@@ -5823,6 +5863,11 @@
   },
   {
    "s": "mecanismos-seguros-salud",
+   "t": "F-100",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-100",
    "k": "cita"
   },
@@ -5977,6 +6022,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-124",
+   "k": "cita"
+  },
+  {
    "s": "material-visual-venta-consultiva",
    "t": "F-125",
    "k": "cita"
@@ -6057,8 +6107,18 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-141",
+   "k": "cita"
+  },
+  {
    "s": "transicion-venta-fria-a-opt-in",
    "t": "F-141",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-142",
    "k": "cita"
   },
   {
@@ -6067,8 +6127,18 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-143",
+   "k": "cita"
+  },
+  {
    "s": "transicion-venta-fria-a-opt-in",
    "t": "F-143",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-144",
    "k": "cita"
   },
   {
@@ -6087,7 +6157,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-147",
+   "k": "cita"
+  },
+  {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-148",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-148",
    "k": "cita"
   },
@@ -6098,6 +6178,11 @@
   },
   {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-150",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-150",
    "k": "cita"
   },
@@ -6117,7 +6202,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-153",
+   "k": "cita"
+  },
+  {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-154",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-154",
    "k": "cita"
   },
@@ -6128,6 +6223,11 @@
   },
   {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-156",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-156",
    "k": "cita"
   },
@@ -6143,6 +6243,11 @@
   },
   {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-159",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-159",
    "k": "cita"
   },
@@ -6172,7 +6277,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-175",
+   "k": "cita"
+  },
+  {
    "s": "material-visual-venta-consultiva",
+   "t": "F-176",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-176",
    "k": "cita"
   },
@@ -6347,7 +6462,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-220",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-221",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-221",
    "k": "cita"
   },
@@ -6357,7 +6482,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-222",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-223",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-223",
    "k": "cita"
   },
@@ -6367,7 +6502,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-224",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-225",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-225",
    "k": "cita"
   },
@@ -6387,7 +6532,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-228",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-229",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-229",
    "k": "cita"
   },
@@ -6397,7 +6552,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-230",
+   "k": "cita"
+  },
+  {
    "s": "glosario-seguro-vida-peru",
+   "t": "F-231",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-231",
    "k": "cita"
   },
@@ -6889,6 +7054,31 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-328",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-334",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-335",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-337",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-338",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-357",
    "k": "cita"
   },
   {
@@ -7582,7 +7772,17 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-489",
+   "k": "cita"
+  },
+  {
    "s": "conducta-humano-ia",
+   "t": "F-490",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-490",
    "k": "cita"
   },
@@ -7593,6 +7793,11 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-492",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-492",
    "k": "cita"
   },
@@ -7637,6 +7842,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-499",
+   "k": "cita"
+  },
+  {
    "s": "conducta-humano-ia",
    "t": "F-500",
    "k": "cita"
@@ -7673,6 +7883,11 @@
   },
   {
    "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-506",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-506",
    "k": "cita"
   },
@@ -10052,15 +10267,15 @@
      "cites": 214
     },
     "fecha": "2026-10-03",
-    "commit": "5f178b4",
+    "commit": "33d13f1",
     "fuente": "git"
    }
   ],
   "design": {
    "hyp": {
-    "abierta": 20,
-    "parcial": 8,
-    "respaldada": 4,
+    "abierta": 17,
+    "parcial": 10,
+    "respaldada": 5,
     "refutada": 1,
     "otra": 1
    },
@@ -10073,7 +10288,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1913,
+   "lines": 1946,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
