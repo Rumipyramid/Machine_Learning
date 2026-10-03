@@ -2,7 +2,7 @@
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
-> Fecha de elaboración: 2026-07-06.
+> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-03 (estado del PL 08488).
 > Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada

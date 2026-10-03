@@ -10,8 +10,8 @@
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 139,
-   "cites": 35,
+   "lines": 140,
+   "cites": 36,
    "design": false
   },
   {
@@ -73,8 +73,8 @@
   {
    "id": "modelo-salud-ia-farmacias-peru",
    "type": "node",
-   "lines": 605,
-   "cites": 21,
+   "lines": 608,
+   "cites": 22,
    "design": false
   },
   {
@@ -87,8 +87,8 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 333,
-   "cites": 13,
+   "lines": 334,
+   "cites": 15,
    "design": false
   },
   {
@@ -4522,10 +4522,10 @@
   {
    "id": "F-488",
    "type": "fuente",
-   "rigor": "B",
-   "titulo": "Sycophantic AI decreases prosocial intentions and promotes dependence",
-   "autor": "Cheng, M. et al. (Stanford) — arXiv 2510.01395",
-   "anio": "2025-2026",
+   "rigor": "A",
+   "titulo": "Sycophantic AI decreases prosocial intentions and promotes dependence (Science 391(6792), 26-mar-2026; DOI 10.1126/science.aec8352; preprint",
+   "autor": "Cheng, M.; Lee, C.; Khadpe, P.; Yu, S.; Han, D. & Jurafsky, D. (Stanford) — ⚠️ corregido 2026-10-03: el registro lo tenía como preprint de arXiv sin revisión verificada",
+   "anio": "2026",
    "huerfana": false
   },
   {
@@ -4551,7 +4551,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "LLMs can persuade only psychologically susceptible humans on societal issues, via trust in AI and emotional appeals, amid logical fallacies",
-   "autor": "Autoría no capturada — arXiv 2604.16935",
+   "autor": "Carrillo, A.; Citraro, S.; Aghazhadeh Ardebili, A.; Taietta, E.; Rossetti, G.; Ferrara, E.; Veltri, G. A. & Stella, M. — arXiv 2604.16935 · ⚠️ corregido 2026-10-03: el registro decía 'autoría no capturada' y le atribuía cifras de otro estudio",
    "anio": "2026",
    "huerfana": false
   },
@@ -5012,7 +5012,7 @@
    "titulo": "On the conversational persuasiveness of GPT-4 (Nature Human Behaviour; preprint arXiv 2024)",
    "autor": "Salvi, F.; Horta Ribeiro, M.; Gallotti, R. & West, R.",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   }
  ],
  "edges": [
@@ -5606,6 +5606,11 @@
    "k": "cita"
   },
   {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-6",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-6",
    "k": "cita"
@@ -5632,6 +5637,11 @@
   },
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-9",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
    "t": "F-9",
    "k": "cita"
   },
@@ -8041,6 +8051,11 @@
    "k": "cita"
   },
   {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-508",
+   "k": "cita"
+  },
+  {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "F-508",
    "k": "cita"
@@ -8218,6 +8233,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-541",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-542",
    "k": "cita"
   }
  ],
@@ -8440,12 +8460,12 @@
     "acumuladas": 515,
     "AB": 20,
     "rigor": {
-     "B": 15,
+     "B": 14,
      "C": 21,
      "D": 4,
      "E": 1,
      "?": 1,
-     "A": 5
+     "A": 6
     }
    },
    {
@@ -10336,10 +10356,10 @@
     "fuente": "git"
    },
    {
-    "fuentes": 541,
+    "fuentes": 542,
     "rigor": {
      "B": 101,
-     "A": 145,
+     "A": 146,
      "C": 128,
      "D": 123,
      "?": 14,
@@ -10370,7 +10390,7 @@
      "cites": 272
     },
     "fecha": "2026-10-03",
-    "commit": "18e1e56",
+    "commit": "5366727",
     "fuente": "git"
    }
   ],

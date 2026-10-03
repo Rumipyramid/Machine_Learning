@@ -10,7 +10,7 @@
 |---|---|
 | Fuentes procesadas | **101 de 542** (18.6%) |
 | …del cerebro de diseño (citadas en el node) | 69 de 272 |
-| …por rigor | A 55/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
+| …por rigor | A 56/147 · B 21/100 · C 20/128 · D 3/123 · E 1/30 |
 | Barridos | 13 |
 | Entidades | 239 |
 | Relaciones | 196 |
@@ -198,8 +198,10 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 (verificado contra el abstract).
 - ✅ **F-18** (2026-10-03, cerrada): No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar.
   - *Resolución:* Cerrada: fuente ubicada y verificada a nivel abstract el 2026-10-03; autores y resumen corregidos en el ledger (efecto ajustado d=0,004, no "impacto menor").
-- ⚠️ **F-488** (2026-10-03, abierta): La ficha lo registra como preprint de arXiv con 'revisión por pares no verificada' (🔵 B). Está publicado en Science 391(6792), 26-mar-2026 (Cheng, Lee, Khadpe, Yu, Han y Jurafsky), DOI 10.1126/science.aec8352: pasa a 🟢 A.
-- ⚠️ **F-491** (2026-10-03, abierta): La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542).
+- ✅ **F-488** (2026-10-03, cerrada): La ficha lo registra como preprint de arXiv con 'revisión por pares no verificada' (🔵 B). Está publicado en Science 391(6792), 26-mar-2026 (Cheng, Lee, Khadpe, Yu, Han y Jurafsky), DOI 10.1126/science.aec8352: pasa a 🟢 A.
+  - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
+- ✅ **F-491** (2026-10-03, cerrada): La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542).
+  - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 
 ## 7. Registro de barridos
 

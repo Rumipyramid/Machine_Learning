@@ -327,12 +327,16 @@
   {
    "fecha": "2026-10-03",
    "f": "F-488",
-   "detalle": "La ficha lo registra como preprint de arXiv con 'revisión por pares no verificada' (🔵 B). Está publicado en Science 391(6792), 26-mar-2026 (Cheng, Lee, Khadpe, Yu, Han y Jurafsky), DOI 10.1126/science.aec8352: pasa a 🟢 A."
+   "detalle": "La ficha lo registra como preprint de arXiv con 'revisión por pares no verificada' (🔵 B). Está publicado en Science 391(6792), 26-mar-2026 (Cheng, Lee, Khadpe, Yu, Han y Jurafsky), DOI 10.1126/science.aec8352: pasa a 🟢 A.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
   },
   {
    "fecha": "2026-10-03",
    "f": "F-491",
-   "detalle": "La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542)."
+   "detalle": "La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
   }
  ],
  "resoluciones": [

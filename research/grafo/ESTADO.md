@@ -8,12 +8,12 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 16 | 6,912 líneas |
+| Nodes (`_nodes/`) | 16 | 6,917 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 542 | 🟢A 146 · 🔵B 101 · 🟡C 128 · 🟠D 123 · 🔴E 30 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 542 | 🟢A 147 · 🔵B 100 · 🟡C 128 · 🟠D 123 · 🔴E 30 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
-| Fuentes citadas por ≥1 node | 436 de 542 | 80% del ledger; **106 viven solo en el ledger** |
-| Fuentes citadas por ≥2 nodes (transversales) | 72 | evidencia reutilizada entre temas |
+| Fuentes citadas por ≥1 node | 437 de 542 | 81% del ledger; **105 viven solo en el ledger** |
+| Fuentes citadas por ≥2 nodes (transversales) | 73 | evidencia reutilizada entre temas |
 | **Grafo semántico** (relaciones extraídas) | 101 de 542 fuentes (19%) | 196 relaciones · 13 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
@@ -45,10 +45,10 @@
 | `mecanismos-seguros-salud` | 7 | 0.022 | ✅ |
 | `behavioral-design-estado-disciplina` | 6 | 0.022 | ✅ |
 | `glosario-seguro-vida-peru` | 4 | 0.014 | ❌ sin enlace |
+| `seguros-comportamiento-mundo-peru` | 4 | 0.014 | ✅ |
 | `transicion-venta-fria-a-opt-in` | 4 | 0.014 | ❌ sin enlace |
 | `glosario-seguro-salud-peru` | 3 | 0.011 | ❌ sin enlace |
 | `modelo-salud-ia-farmacias-peru` | 2 | 0.007 | ❌ sin enlace |
-| `seguros-comportamiento-mundo-peru` | 2 | 0.007 | ✅ |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ❌ sin enlace |
 | `matriz-productos-vida-rimac` | 0 | 0.0 | ❌ sin enlace |
 | `modelo-personas-sinteticas` | 0 | 0.0 | ✅ |
@@ -90,7 +90,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-16 | `3acec5d` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `18e1e56` | 541 | 16 | 4 | 84 | 436 | 1999 | 15 | 20 | 22 |
+| 2026-10-03 | `5366727` | 542 | 16 | 4 | 84 | 436 | 1999 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -99,7 +99,7 @@
 | Métrica | Valor | Qué dice | Qué NO dice |
 |---|---|---|---|
 | M1 Base sólida (A+B / ledger) | 46% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
-| M2 Cobertura de citación | 80% | cuánto del ledger sostiene algún node | un node puede citar mal |
+| M2 Cobertura de citación | 81% | cuánto del ledger sostiene algún node | un node puede citar mal |
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 57% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
@@ -122,14 +122,14 @@
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 1999 | 272 | 140 | 8/8 | 2026-10-03 | 2026-10-03 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
-| `conducta-humano-ia` | 139 | 35 | 25 | 5/5 | 2026-10-02 | 2026-10-02 v1.1 |
+| `conducta-humano-ia` | 140 | 36 | 26 | 5/5 | 2026-10-02 | 2026-10-03 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.0 |
-| `modelo-salud-ia-farmacias-peru` | 605 | 21 | 18 | 3/3 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-08-12 v1.0 |
+| `modelo-salud-ia-farmacias-peru` | 608 | 22 | 18 | 3/3 | 2026-10-03 | 2026-10-03 v1.0 |
 | `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
 | `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
+| `seguros-comportamiento-mundo-peru` | 334 | 15 | 6 | 12/12 | 2026-10-03 | 2026-10-03 v1.1 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 254 | 14 | 10 | 3/3 | 2026-10-02 | 2026-10-02 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 333 | 13 | 4 | 12/12 | 2026-10-03 | 2026-10-03 v1.1 |
 | `behavioral-design-estado-disciplina` | 318 | 8 | 7 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
 | `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-24 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.0 |

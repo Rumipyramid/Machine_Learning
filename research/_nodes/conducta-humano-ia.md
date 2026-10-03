@@ -1,9 +1,9 @@
 # Conducta humano-IA: cómo la IA cambia lo que la gente decide, cree y deja de pensar
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-02 · Última actualización: 2026-10-02 · Versión: **v1.1 (iteración 2)**
+> Fecha de elaboración: 2026-10-02 · Última actualización: 2026-10-03 · Versión: **v1.1 (iteración 2; lectura a fondo de persuasión 2026-10-03)**
 > Origen: auditoría del Chacal (2026-10-02, apunte: *"la evidencia humano-IA está repartida entre el node conductual y el de diseño"*) + `/trinidad` empírica. **Iteración 2 añade las pistas social y de negocio/legal (§2.8-2.9) y la primera búsqueda adversarial sobre las reglas (§2.10); ambas siguen siendo delgadas (ver §7).**
-> Fuentes en `research/fuentes/codice.md`: ya existentes F-16 a F-27, F-242 a F-246, F-254, F-257, F-401, F-442, F-474 · nuevas: iteración 1 F-488 a F-494 · iteración 2 F-495 a F-503.
+> Fuentes en `research/fuentes/codice.md`: ya existentes F-16 a F-27, F-242 a F-246, F-254, F-257, F-401, F-442, F-474 · nuevas: iteración 1 F-488 a F-494 · iteración 2 F-495 a F-503 · lectura a fondo 2026-10-03: F-542.
 > Pregunta permanente: **¿qué evidencia hay de que la IA cambia la conducta y el juicio de las personas, y cómo debe diseñarse (y auditarse) con eso en mente?**
 
 ---
@@ -41,7 +41,7 @@ Sobre 11 modelos y 11.587 prompts, más 3 experimentos preregistrados (N=2.405):
 
 ### 2.4 Persuasión conversacional
 - Tres experimentos a gran escala (19 LLMs, 707 temas, 76.977 respuestas): el post-entrenamiento y la estrategia retórica aumentan la persuasión hasta 51% y 27%; el efecto por conversación es pequeño pero fiable (F-489, 🟢A). Los mensajes de LLM persuaden en temas de política pública (F-490, 🟢A, leído por título/resumen).
-- Con datos demográficos del usuario las probabilidades de cambio de opinión aumentan 81,7% frente a persuasores humanos, y el efecto se concentra en personas **psicológicamente susceptibles**, vía confianza en la IA y apelaciones emocionales (F-491, 🟡C, preprint de 820 participantes).
+- **Corregido 2026-10-03.** La cifra "+81,7% con datos demográficos, 820 participantes" que este node atribuía a F-491 es de otro estudio. Viene de **Salvi et al.** (F-542, 🟢A, *Nature Human Behaviour* 2025): en debates de varias rondas, GPT-4 con datos personales del oponente le ganó al humano en el 64,4% de los pares, **+81,2% de odds** de mayor acuerdo (N=900; el preprint decía +81,7% con N=820). F-491 es otro trabajo (Carrillo, Stella y colegas, preprint de abr-2026, 🟡C): **770 italianos en 4 sesiones con 4 LLMs**. Ahí el cambio de opinión se concentra en personas **psicológicamente susceptibles** (más confianza en los LLMs, más amables, extravertidas y con más necesidad de cognición), vía confianza en la IA y apelaciones emocionales, con falacias lógicas.
 - Una intervención ligera de alfabetización en IA protegería contra la persuasión (F-494, 🟡C): **solo el título se leyó, no se usa como evidencia**.
 
 ### 2.5 Descarga cognitiva y pensamiento crítico
@@ -65,7 +65,7 @@ La adulación pasó a ser un riesgo de producto y de consumidor: *Raine v. OpenA
 | RP1 (explicaciones solo en tareas difíciles) | meta-análisis y estudios donde las explicaciones sí ayudan | **Matizada.** El meta-análisis de 2026 (F-498, 🟢A) halla un efecto pequeño pero significativo sobre la sola predicción, no limitado a tareas difíciles |
 | RP2 (medir conducta, no autorreporte) | estudios donde el autorreporte coincide con la conducta | **Sobrevive.** No se halló evidencia de que el autorreporte sea fiable; un blog (F-503, 🟠D) y el propio intervalo de F-474 apuntan en el mismo sentido |
 | RP3 (preferencia ≠ buen juicio) | estudios donde los usuarios no prefieren la adulación | **Cambia de sentido.** Existe elección de consejo aduldor por comodidad y una búsqueda reportó que no hay demanda de *más* adulación; la satisfacción de largo plazo podría invertirse (F-501, solo título). La preferencia puntual no es ni prueba de calidad ni de daño |
-| RP4 (persuasión concentrada en susceptibles) | microtargeting sin ventaja | **En disputa.** F-499 (PNAS, preregistrado) no halla ventaja del microtargeting frente a F-491 (preprint, +81,7%) |
+| RP4 (persuasión concentrada en susceptibles) | microtargeting sin ventaja | **Resuelta como alcance distinto (2026-10-03).** La tensión se había armado con una cifra mal atribuida. Personalizar ayuda en **debate interactivo contra humanos** (F-542, +81%), pero no en **un mensaje único frente a uno genérico** (F-499: 8.587 personas, p=0,23; en 2 de 4 temas el genérico ganó, según el código publicado). La **concentración por rasgos psicológicos** (F-491) es otra pregunta, y solo tiene un preprint |
 | RP5 (la fricción es herramienta con costo) | fricción que se vuelve en contra | **Sobrevive con matiz.** F-502 (ACM): reduce la sobre-confianza más que la XAI, pero los usuarios la disliked |
 
 ## 3. ⚖️ Escala de madurez de evidencia
@@ -74,11 +74,11 @@ La adulación pasó a ser un riesgo de producto y de consumidor: *Raine v. OpenA
 |---|---|---|
 | Las explicaciones aportan una ganancia pequeña sobre la sola predicción de la IA | 🟢 Documentado (meta-análisis); su beneficio *solo* en tareas difíciles queda en 🟡 | F-498, F-244, F-246 |
 | Explicabilidad ↔ confianza | 🟡 Moderada, sobrevendida por el discurso | F-242 |
-| La adulación degrada el juicio y aumenta la dependencia | 🟡 Plausible, preregistrado pero preprint | F-488 |
+| La adulación degrada el juicio y aumenta la dependencia | 🟢 Respaldada en laboratorio: preregistrado y publicado en *Science* (mar-2026); falta evidencia de largo plazo y de campo | F-488 |
 | La adulación fue un fallo de producto reconocido y retirado | 🟢 Documentado (hecho público, varias coberturas) | F-495 |
 | La adulación ya es riesgo legal y de consumidor | 🟡 Alegaciones y acuerdos, no fallos | F-496 |
 | La IA persuade, con efecto pequeño por conversación | 🟢 Documentado (Science, Nature Comms) | F-489, F-490 |
-| La persuasión se concentra en personas susceptibles | 🔴 En disputa (preprint vs. PNAS sobre microtargeting) | F-491 vs. F-499 |
+| La persuasión se concentra en personas susceptibles | 🟡 Un solo preprint (F-491); la disputa con F-499 era de alcance (personalización ≠ susceptibilidad) | F-491 · F-542 vs. F-499 |
 | La brecha percepción-realidad con IA es grande | 🟡 Depende de la tarea; la cifra más citada (−19%) está en revisión | F-257, F-401, F-474 |
 | El autorreporte de productividad con IA está inflado | 🟡 Plausible; sin evidencia en contra; apoyos débiles | F-257, F-503 |
 | La IA reduce el pensamiento crítico | 🟡 Asociación observacional/autorreporte, causalidad no probada | F-492, F-493 |
@@ -93,8 +93,8 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 | # | Hipótesis | Estado | Cómo se falsa |
 |---|---|---|---|
 | **HC1** | Las explicaciones de IA mejoran la decisión, con una ganancia pequeña sobre la sola predicción, mayor en tareas difíciles y no verificables por otra vía | ⬆️ `parcial` *(iter. 2)* — F-498 confirma el efecto pequeño general; el efecto *condicionado a dificultad* solo lo muestran F-244/F-246 en laboratorio | Réplica en un dominio aplicado variando dificultad |
-| **HC2** | La adulación de la IA degrada el juicio y aumenta la dependencia del usuario | `abierta` — F-488 (preprint preregistrado) + **caso real de retiro (F-495)**, que prueba el fallo de producto pero no el efecto causal en el juicio | Réplica independiente con arbitraje, en contexto financiero/seguros |
-| **HC3** | La persuasión de la IA es pequeña por conversación y **no** se concentra de forma robusta en un tipo de usuario | ⬇️ `abierta` *(reformulada en iter. 2)* — F-489 y F-499 apuntan a efecto pequeño y personalización irrelevante; F-491 dice lo contrario | Réplica preregistrada de F-491 con medida de susceptibilidad |
+| **HC2** | La adulación de la IA degrada el juicio y aumenta la dependencia del usuario | ⬆️ `parcial` *(2026-10-03)* — F-488 ya está **publicado en *Science*** (3 experimentos preregistrados, N=2.405); además, la gente no distingue una IA aduladora de una que no lo es. El efecto causal sobre el juicio está respaldado **en laboratorio y tras una interacción**. Faltan la réplica independiente, el efecto de largo plazo y el contexto financiero/seguros. El retiro de GPT-4o (F-495) prueba el fallo de producto | Réplica independiente con arbitraje, en contexto financiero/seguros |
+| **HC3** | La persuasión de la IA es pequeña por conversación y **no** se concentra de forma robusta en un tipo de usuario | ⬇️ `abierta` *(reformulada en iter. 2; reencuadrada 2026-10-03)* — 'pequeña por conversación' está respaldada (F-489). La personalización ayuda en debate interactivo (F-542) y no en mensaje único (F-499). La concentración en un tipo de usuario tiene un solo preprint a favor (F-491: rasgos psicológicos, no datos demográficos) | Réplica preregistrada de F-491 con medida de susceptibilidad |
 | **HC4** | La brecha percepción-realidad con IA se reduce a ≲5 puntos en tareas de razonamiento y es ≥20 puntos en producción | `parcial` — F-257 vs. F-401; F-474 en revisión | Estudio con ambas tareas y la misma muestra |
 | **HC5** | La descarga cognitiva *causa* menor pensamiento crítico (no solo se asocia) | `abierta` — F-492, F-493 | Experimento con medida conductual y asignación aleatoria |
 | **HC6** | En seguros, mostrar la explicación de la IA al cliente no mejora su comprensión ni su decisión, salvo en productos complejos | `abierta` — extrapolación; **sin estudio en seguros** | A/B con explicación en un producto simple vs. uno complejo |
@@ -120,12 +120,13 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 |---|---|---|---|---|
 | 1 | 2026-10-02 | Creación del node: consolidar evidencia dispersa + barrido empírico de adulación, persuasión y descarga cognitiva | **Creación.** 7 fuentes (F-488 a F-494) y 8 hipótesis (HC1-HC8) | Pistas social y de negocio; adversarial sobre RP1-RP5 |
 | 2 | 2026-10-02 | Pistas social y de negocio/legal + búsqueda adversarial de RP1-RP5 | 9 fuentes (F-495 a F-503). **HC1 → parcial; HC3 reformulada** (en disputa F-491 vs. F-499); **HC9 y HC10 nuevas**; **RP2 → CH1 y RP5 → CH2** (reglas del node); RP1 y RP3 reformuladas; RP4 en disputa. Las 16 fuentes nuevas entraron al grafo semántico | Leer a texto completo F-488, F-491, F-494, F-500, F-501; pista social real (foros) más allá del caso GPT-4o; fuentes de seguros sobre IA conversacional |
+| 2b | 2026-10-03 | Lectura a fondo de los tres estudios de persuasión (resúmenes oficiales; texto completo bloqueado) | **F-488 publicado en *Science*** → HC2 a `parcial`. **F-491 tenía autoría y cifras de otro estudio:** el +81,7% es de Salvi et al. (F-542, nuevo). La disputa RP4 se resuelve como alcance distinto. Fichas F-488 y F-491 corregidas en el ledger con autorización | Réplica independiente de la adulación en contexto financiero; leer completos F-491 y F-542 cuando la red lo permita |
 
 ## 7. Limitaciones
 - **Pista social:** un caso (GPT-4o) y un portal sin verificar; no hay lectura sistemática de foros ni de la conversación de usuarios sobre adulación o persuasión.
 - **Pista de negocio/legal:** viene de blogs de firmas jurídicas y prensa; son alegaciones. No hay datos de mercado (adopción, ingresos, métricas de producto) ni de seguros.
-- **Lectura:** casi todo se leyó vía `WebSearch` (títulos, resúmenes); F-490, F-492, F-494, F-500 y F-501 solo por título o resumen; F-488, F-491 y F-499 no se abrieron íntegros.
-- **Arbitraje no verificado:** F-488, F-491, F-493, F-494, F-500, F-501.
+- **Lectura:** casi todo se leyó vía `WebSearch` (títulos, resúmenes); F-490, F-492, F-494, F-500 y F-501 solo por título o resumen; F-488, F-491 y F-499 no se abrieron íntegros (2026-10-03: la red bloquea arXiv, Science y PNAS; se leyeron resúmenes oficiales y, de F-499, las salidas del código de análisis publicado).
+- **Arbitraje no verificado:** F-491 (F-488 ya verificado: *Science* 2026), F-493, F-494, F-500, F-501.
 - **Una afirmación sin fuente atribuible:** una búsqueda reportó un estudio de mayo de 2026 en que los usuarios no preferían *más* adulación; no se pudo atribuir con certeza a un paper, por eso no se usa como evidencia (solo como motivo para reformular RP3).
 - **Sin dominio de seguros:** HC6 sigue siendo extrapolación.
 
