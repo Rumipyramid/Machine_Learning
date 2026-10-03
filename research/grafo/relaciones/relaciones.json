@@ -215,6 +215,15 @@
    ]
   },
   {
+   "id": "c_brecha_papers_escala",
+   "nombre": "El efecto de los nudges en papers (~8,7 pp) es ~6 veces el que se ve a escala (~1,4 pp)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-21"
+   ]
+  },
+  {
    "id": "c_castigo_por_disrupcion",
    "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
    "tipo": "afirmacion",
@@ -591,6 +600,16 @@
    ]
   },
   {
+   "id": "c_sobrecarga_general",
+   "nombre": "Más opciones empeoran la decisión de forma general",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-119",
+    "F-121"
+   ]
+  },
+  {
    "id": "c_sobreconfianza_estrategica",
    "nombre": "La sobre-confianza es estratégica (costo-beneficio), no inevitable",
    "tipo": "afirmacion",
@@ -715,6 +734,15 @@
    ]
   },
   {
+   "id": "cdss_prescripcion",
+   "nombre": "Soporte de decisión clínica en prescripción",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-61"
+   ]
+  },
+  {
    "id": "claude_design",
    "nombre": "Lanzamiento de Claude Design (Anthropic)",
    "tipo": "intervencion",
@@ -768,6 +796,15 @@
    "grado": 1,
    "fuentes": [
     "F-6"
+   ]
+  },
+  {
+   "id": "conducta_salud",
+   "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-100"
    ]
   },
   {
@@ -1019,6 +1056,15 @@
    ]
   },
   {
+   "id": "diseno_incentivo_conductual",
+   "nombre": "Diseño del incentivo con principios conductuales (aversión a la pérdida, inmediatez, puntos de referencia)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-100"
+   ]
+  },
+  {
    "id": "diseno_industrial_efectivo",
    "nombre": "Efectividad de diseño industrial",
    "tipo": "constructo",
@@ -1165,6 +1211,15 @@
    "grado": 1,
    "fuentes": [
     "F-433"
+   ]
+  },
+  {
+   "id": "factores_usuario_sistema",
+   "nombre": "Experiencia, estilo cognitivo, actitudes del usuario y diseño del sistema",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-60"
    ]
   },
   {
@@ -1340,6 +1395,15 @@
    ]
   },
   {
+   "id": "incentivos_financieros_salud",
+   "nombre": "Incentivos financieros para conductas de salud",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-100"
+   ]
+  },
+  {
    "id": "indecopi_sanciones_2026",
    "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
    "tipo": "intervencion",
@@ -1412,6 +1476,15 @@
    "grado": 1,
    "fuentes": [
     "F-307"
+   ]
+  },
+  {
+   "id": "iyengar_lepper_2000",
+   "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-121"
    ]
   },
   {
@@ -1598,6 +1671,15 @@
    "fuentes": [
     "F-53",
     "F-55"
+   ]
+  },
+  {
+   "id": "moderadores_sobrecarga",
+   "nombre": "Complejidad del surtido, dificultad de la tarea, incertidumbre de preferencias y meta de ahorrar esfuerzo",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-120"
    ]
   },
   {
@@ -1792,6 +1874,15 @@
    "grado": 1,
    "fuentes": [
     "F-44"
+   ]
+  },
+  {
+   "id": "precision_prescripcion",
+   "nombre": "Precisión de la decisión de prescripción",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-61"
    ]
   },
   {
@@ -2025,6 +2116,25 @@
    ]
   },
   {
+   "id": "scheibehenne_2010",
+   "nombre": "Meta-análisis de sobrecarga de elección de Scheibehenne et al. (JCR 2010)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-119"
+   ]
+  },
+  {
+   "id": "sesgo_automatizacion",
+   "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
+   "tipo": "constructo",
+   "grado": 3,
+   "fuentes": [
+    "F-60",
+    "F-61"
+   ]
+  },
+  {
    "id": "sesgo_halo",
    "nombre": "Sesgo de halo (proxy = percepción experta)",
    "tipo": "limitacion",
@@ -2037,10 +2147,11 @@
    "id": "sesgo_publicacion",
    "nombre": "Sesgo de publicación",
    "tipo": "limitacion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-16",
-    "F-17"
+    "F-17",
+    "F-21"
    ]
   },
   {
@@ -2071,15 +2182,26 @@
    ]
   },
   {
+   "id": "sobrecarga_eleccion",
+   "nombre": "Sobrecarga de elección (menos compra, satisfacción o confianza al haber más opciones)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-119",
+    "F-120"
+   ]
+  },
+  {
    "id": "sobreconfianza_ia",
    "nombre": "Sobre-confianza en la IA",
    "tipo": "resultado",
-   "grado": 5,
+   "grado": 6,
    "fuentes": [
     "F-244",
     "F-245",
     "F-246",
-    "F-502"
+    "F-502",
+    "F-60"
    ]
   },
   {
@@ -2108,6 +2230,15 @@
    "fuentes": [
     "F-241",
     "F-251"
+   ]
+  },
+  {
+   "id": "tamano_surtido",
+   "nombre": "Tamaño del surtido (cuántas opciones se ofrecen)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-119"
    ]
   },
   {
@@ -4051,8 +4182,8 @@
    "p": "reduce",
    "o": "demanda_seguros",
    "f": "F-3",
-   "apoyo": "Presente sesgado y baja educación financiera deprimen la demanda; dos mecanismos: miopía y narrow framing.",
-   "lectura": "ficha",
+   "apoyo": "Survey (JBEF 30, 2021): heurísticas y sesgos (disponibilidad, miopía, narrow framing) explican el subaseguro por ponderar mal o estimar mal la probabilidad de riesgos asegurables; proponen alfabetización financiera como solución.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -4099,8 +4230,8 @@
    "p": "aplica_a",
    "o": "divulgacion_clara",
    "f": "F-10",
-   "apoyo": "Tesis canónica: los mandatos de explicar mejor al consumidor fracasan sistemáticamente; marco crítico para glosarios y divulgación.",
-   "lectura": "ficha",
+   "apoyo": "Libro (Princeton, 2014): la gente encuentra las divulgaciones complejas y aburridas, decide quitando información, puede ignorarlas sin costo y hay tantas que nadie las atiende; mejor redacción no vuelve simple lo complejo.",
+   "lectura": "abstract",
    "fuerza": "teorica",
    "fecha": "2026-10-02",
    "clase": "estructura"
@@ -4111,8 +4242,8 @@
    "p": "asocia_con",
    "o": "s_frame",
    "f": "F-19",
-   "apoyo": "Par conceptual en contraste: el campo priorizó soluciones individuales (i-frame) sobre las estructurales (s-frame); la brújula del giro hacia diseño de producto y sistema.",
-   "lectura": "ficha",
+   "apoyo": "BBS (online sep-2022): el campo se concentró en cambiar a la persona (i-frame) en vez del sistema (s-frame); ej.: las intervenciones individuales sobre emisiones pesan poco frente a un impuesto al carbono.",
+   "lectura": "abstract",
    "fuerza": "teorica",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -4123,8 +4254,8 @@
    "p": "asocia_con",
    "o": "efecto_nudge_escala",
    "f": "F-21",
-   "apoyo": "123+ RCTs administrativos, >20 M de personas: efecto a escala ~1,4 pp.",
-   "lectura": "ficha",
+   "apoyo": "126 RCTs de dos nudge units de EE.UU. con 23 M de personas: efecto medio de 1,4 pp (+8,0% sobre el control), pequeño pero muy significativo.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -4135,8 +4266,8 @@
    "p": "asocia_con",
    "o": "efecto_nudge_escala",
    "f": "F-21",
-   "apoyo": "'Voltage drop': ~8,7 pp en papers académicos frente a ~1,4 pp a escala.",
-   "lectura": "ficha",
+   "apoyo": "En revistas académicas el efecto medio es 8,7 pp (+33,4%) frente a 1,4 pp en las nudge units: la brecha es de ~6 veces.",
+   "lectura": "abstract",
    "fuerza": "observacional",
    "fecha": "2026-10-02",
    "clase": "efecto"
@@ -4584,11 +4715,143 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-03",
    "clase": "estructura"
+  },
+  {
+   "id": "T-197",
+   "s": "sesgo_publicacion",
+   "p": "media",
+   "o": "c_brecha_papers_escala",
+   "f": "F-21",
+   "apoyo": "Un modelo de meta-análisis indica que la publicación selectiva, agravada por baja potencia estadística, explica ~70% de la diferencia entre ambas muestras.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-198",
+   "s": "sesgo_automatizacion",
+   "p": "es_tipo_de",
+   "o": "sobreconfianza_ia",
+   "f": "F-60",
+   "apoyo": "Revisión sistemática de 74 estudios (JAMIA 2012): tendencia a sobre-confiar en la automatización; los sistemas de apoyo a la decisión clínica mejoran el desempeño pero introducen errores nuevos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-199",
+   "s": "factores_usuario_sistema",
+   "p": "modera",
+   "o": "sesgo_automatizacion",
+   "f": "F-60",
+   "apoyo": "El sesgo depende de factores del usuario (experiencia, estilo cognitivo), actitudes (confianza) y del diseño del sistema. La cifra de 5-7% de la ficha no aparece en el resumen.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-200",
+   "s": "iyengar_lepper_2000",
+   "p": "respalda",
+   "o": "c_sobrecarga_general",
+   "f": "F-121",
+   "apoyo": "Puesto de degustación con 24 vs. 6 mermeladas: con 24 se acercó más gente, pero se compró mucho más con 6. Las cifras 3% vs. 30% de la ficha no se confirmaron en los resúmenes.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-201",
+   "s": "tamano_surtido",
+   "p": "asocia_con",
+   "o": "sobrecarga_eleccion",
+   "f": "F-119",
+   "apoyo": "Meta-análisis de 63 condiciones de 50 experimentos (N=5.036): efecto medio prácticamente cero con gran variación; a veces más opciones aumentan la satisfacción.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-202",
+   "s": "scheibehenne_2010",
+   "p": "refuta",
+   "o": "c_sobrecarga_general",
+   "f": "F-119",
+   "apoyo": "No se halló ninguna condición suficiente para la sobrecarga; con preferencias claras, más opciones es mejor. El efecto general no se sostiene.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-203",
+   "s": "moderadores_sobrecarga",
+   "p": "modera",
+   "o": "sobrecarga_eleccion",
+   "f": "F-120",
+   "apoyo": "99 observaciones (N=7.202): mayor complejidad del surtido, tarea más difícil, preferencias inciertas y meta de minimizar esfuerzo facilitan la sobrecarga; cada factor es fiable.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-204",
+   "s": "diseno_incentivo_conductual",
+   "p": "modera",
+   "o": "incentivos_financieros_salud",
+   "f": "F-100",
+   "apoyo": "Revisión (BMC Public Health 2019): el efecto de un incentivo depende de rasgos como aversión a la pérdida, sobrevaloración de probabilidades pequeñas, descuento hiperbólico y puntos de referencia.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-205",
+   "s": "incentivos_financieros_salud",
+   "p": "aumenta",
+   "o": "conducta_salud",
+   "f": "F-100",
+   "apoyo": "Según la ficha, el efecto es modesto y a menudo de corta duración; el resumen leído no da cifras y pide discutir la ética antes de implementarlos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-206",
+   "s": "cdss_prescripcion",
+   "p": "aumenta",
+   "o": "precision_prescripcion",
+   "f": "F-61",
+   "apoyo": "Tesis (City, 2012): 26 médicos generales, 20 casos (6 con consejo erróneo); la precisión subió de 50,4% a 58,3%, mejora neta de 8%.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-207",
+   "s": "cdss_prescripcion",
+   "p": "aumenta",
+   "o": "sesgo_automatizacion",
+   "f": "F-61",
+   "apoyo": "En 5,2% de los casos el médico pasó de una decisión correcta a una incorrecta por seguir el consejo; influyen la confianza en el sistema, la confianza en sí mismo y la dificultad.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
   }
  ],
  "generado": "2026-10-03",
  "cobertura": {
-  "procesadas": 101,
+  "procesadas": 107,
   "total": 542
  }
 }

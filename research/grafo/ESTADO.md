@@ -14,7 +14,7 @@
 | Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
 | Fuentes citadas por ≥1 node | 437 de 542 | 81% del ledger; **105 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 73 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 101 de 542 fuentes (19%) | 196 relaciones · 13 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 107 de 542 fuentes (20%) | 207 relaciones · 15 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -90,7 +90,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-16 | `3acec5d` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `5366727` | 542 | 16 | 4 | 84 | 436 | 1999 | 15 | 20 | 22 |
+| 2026-10-03 | `88c47a6` | 542 | 16 | 4 | 84 | 437 | 1999 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -122,7 +122,7 @@
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 1999 | 272 | 140 | 8/8 | 2026-10-03 | 2026-10-03 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
-| `conducta-humano-ia` | 140 | 36 | 26 | 5/5 | 2026-10-02 | 2026-10-03 v1.1 |
+| `conducta-humano-ia` | 140 | 36 | 26 | 5/5 | 2026-10-03 | 2026-10-03 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.0 |
 | `modelo-salud-ia-farmacias-peru` | 608 | 22 | 18 | 3/3 | 2026-10-03 | 2026-10-03 v1.0 |

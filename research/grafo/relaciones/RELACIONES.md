@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **101 de 542** (18.6%) |
-| …del cerebro de diseño (citadas en el node) | 69 de 272 |
-| …por rigor | A 56/147 · B 21/100 · C 20/128 · D 3/123 · E 1/30 |
-| Barridos | 13 |
-| Entidades | 239 |
-| Relaciones | 196 |
-| Nivel de lectura | ficha 124 · abstract 72 |
-| Fuerza de las afirmaciones | descriptiva 67 · causal 58 · observacional 39 · teorica 32 |
+| Fuentes procesadas | **107 de 542** (19.7%) |
+| …del cerebro de diseño (citadas en el node) | 75 de 272 |
+| …por rigor | A 62/147 · B 21/100 · C 20/128 · D 3/123 · E 1/30 |
+| Barridos | 15 |
+| Entidades | 253 |
+| Relaciones | 207 |
+| Nivel de lectura | ficha 119 · abstract 88 |
+| Fuerza de las afirmaciones | descriptiva 67 · causal 64 · observacional 42 · teorica 34 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `asocia_con` | efecto | 35 |
-| `aumenta` | efecto | 32 |
+| `asocia_con` | efecto | 36 |
+| `aumenta` | efecto | 35 |
 | `aplica_a` | estructura | 28 |
 | `reduce` | efecto | 24 |
 | `tiene_limite` | metodo | 17 |
 | `contradice` | evidencia | 14 |
-| `modera` | efecto | 10 |
-| `respalda` | evidencia | 9 |
-| `es_tipo_de` | estructura | 6 |
+| `modera` | efecto | 13 |
+| `respalda` | evidencia | 10 |
+| `es_tipo_de` | estructura | 7 |
 | `origina_en` | metodo | 6 |
+| `refuta` | evidencia | 6 |
 | `mide` | metodo | 5 |
-| `refuta` | evidencia | 5 |
-| `media` | efecto | 4 |
+| `media` | efecto | 5 |
 | `parte_de` | estructura | 1 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -41,8 +41,8 @@
 | Entidad | Fuentes |
 |---|---|
 | Generative UI (interfaces generadas por LLM) | F-247, F-256, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
+| Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542 |
-| Sobre-confianza en la IA | F-244, F-245, F-246, F-502 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
 | Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
@@ -53,6 +53,7 @@
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
+| Sesgo de publicación | F-16, F-17, F-21 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
@@ -94,8 +95,10 @@
 | Modelo de triage con IA y farmacias (Perú) | F-53, F-55 |
 | Diseño híbrido efectividad-implementación tipo 2 | F-54, F-55 |
 | Cambio de conducta objetivo | F-16, F-20 |
-| Sesgo de publicación | F-16, F-17 |
 | Personalizar con datos de la persona aumenta la persuasión de la IA | F-499, F-542 |
+| Sesgo de automatización (sobre-confiar en la recomendación de un sistema) | F-60, F-61 |
+| Más opciones empeoran la decisión de forma general | F-119, F-121 |
+| Sobrecarga de elección (menos compra, satisfacción o confianza al haber más opciones) | F-119, F-120 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -156,6 +159,9 @@
 - **Experimento de microtargeting de Hackenburg y Margetts (PNAS 2024)** —refuta→ **Personalizar con datos de la persona aumenta la persuasión de la IA** (F-499, causal) · **estado: alcance_distinto**
   - 8.587 participantes, 4 temas: el mensaje microtargeteado no superó al genérico (p=0,23); en sanciones a China y OTAN el genérico fue mejor (−4,6 y −2,8 pp). Mejor mensaje genérico: +6,2 pp.
   - *Resolución (2026-10-03):* Salvi (F-542) mide la personalización en un debate interactivo de varias rondas contra persuasores humanos; Hackenburg y Margetts (F-499) la miden en un único mensaje escrito frente a un mensaje genérico de la misma IA. La personalización puede ayudar en conversación y no en un mensaje suelto. Para decidir haría falta un estudio que cruce ambos factores.
+- **Meta-análisis de sobrecarga de elección de Scheibehenne et al. (JCR 2010)** —refuta→ **Más opciones empeoran la decisión de forma general** (F-119, causal) · **estado: matizada**
+  - No se halló ninguna condición suficiente para la sobrecarga; con preferencias claras, más opciones es mejor. El efecto general no se sostiene.
+  - *Resolución (2026-10-03):* La versión general ('más opciones empeoran la decisión') queda refutada: el meta-análisis de 50 experimentos da un efecto medio cercano a cero (F-119). Sobrevive una versión condicional: la sobrecarga aparece con surtidos complejos, tareas difíciles, preferencias inciertas o meta de ahorrar esfuerzo (F-120). El estudio de las mermeladas (F-121) es un caso de campo dentro de esas condiciones, no una ley general.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -163,9 +169,9 @@
 |---|---|---|---|
 | Generative UI (interfaces generadas por LLM) | intervencion | 9 | 9 |
 | Adulación de la IA (sycophancy) | intervencion | 7 | 4 |
+| Sobre-confianza en la IA | resultado | 6 | 5 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | afirmacion | 6 | 3 |
 | Susceptibilidad a dark patterns | resultado | 5 | 2 |
-| Sobre-confianza en la IA | resultado | 5 | 4 |
 | Cambio de actitud de las personas | resultado | 5 | 5 |
 | Diseño efectivo → mejor desempeño de la firma | afirmacion | 4 | 2 |
 | Capacidad de diseño-ingeniería | constructo | 4 | 1 |
@@ -202,6 +208,7 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ✅ **F-491** (2026-10-03, cerrada): La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542).
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
+- ⚠️ **F-60** (2026-10-03, abierta): La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño.
 
 ## 7. Registro de barridos
 
@@ -220,6 +227,8 @@
 | 2026-10-03 | F-18 | 2 | – | Pase de profundidad: F-18 ubicada y leída a nivel abstract; la relación de heterogeneidad del lote 010 se actualizó en su sitio (ficha→abstract). El efecto ajustado (~0) converge con Maier (F-17). |
 | 2026-10-03 | F-488, F-491, F-499, F-542 | 5 | – | Lectura a fondo de persuasión. Texto completo bloqueado por la red (arXiv, Science, PNAS); se leyeron resúmenes oficiales y, para F-499, las salidas del código de análisis publicado en GitHub. Se actu |
 | 2026-10-03 | F-6, F-9, F-484, F-504, F-506, F-508 | 2 | F-6, F-484, F-504, F-506 | Lectura a fondo de seguros. Documentos primarios (SBS, SMV, El Peruano, Congreso) bloqueados por la red: se leyeron resúmenes dirigidos a cada documento. Se actualizan en su sitio, de ficha a abstract |
+| 2026-10-03 | F-3, F-10, F-19, F-21, F-60 | 3 | F-3, F-10, F-19 | Pase de profundidad sobre las 5 fuentes A que el grafo tenía solo a nivel ficha (relaciones.py next --mejorar). Resúmenes oficiales vía búsqueda; texto completo no abierto. F-21: 126 RCTs y 23 M de pe |
+| 2026-10-03 | F-61, F-100, F-119, F-120, F-121 | 8 | – | Pase de profundidad (relaciones.py next --mejorar): 5 fuentes A del cerebro de diseño sin relaciones en el grafo. Resúmenes oficiales vía búsqueda. F-121: las cifras 3%/30% no se confirmaron. F-60: ci |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

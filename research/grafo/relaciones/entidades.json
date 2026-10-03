@@ -114,6 +114,11 @@
   "nombre": "La justificación de diseño generada no coincide con lo implementado",
   "tipo": "afirmacion"
  },
+ "c_brecha_papers_escala": {
+  "id": "c_brecha_papers_escala",
+  "nombre": "El efecto de los nudges en papers (~8,7 pp) es ~6 veces el que se ve a escala (~1,4 pp)",
+  "tipo": "afirmacion"
+ },
  "c_castigo_por_disrupcion": {
   "id": "c_castigo_por_disrupcion",
   "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
@@ -314,6 +319,11 @@
   "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
   "tipo": "afirmacion"
  },
+ "c_sobrecarga_general": {
+  "id": "c_sobrecarga_general",
+  "nombre": "Más opciones empeoran la decisión de forma general",
+  "tipo": "afirmacion"
+ },
  "c_sobreconfianza_estrategica": {
   "id": "c_sobreconfianza_estrategica",
   "nombre": "La sobre-confianza es estratégica (costo-beneficio), no inevitable",
@@ -379,6 +389,11 @@
   "nombre": "La aseguradora debe acreditar que explicó la exclusión",
   "tipo": "concepto"
  },
+ "cdss_prescripcion": {
+  "id": "cdss_prescripcion",
+  "nombre": "Soporte de decisión clínica en prescripción",
+  "tipo": "intervencion"
+ },
  "claude_design": {
   "id": "claude_design",
   "nombre": "Lanzamiento de Claude Design (Anthropic)",
@@ -407,6 +422,11 @@
  "comprension_plan_salud": {
   "id": "comprension_plan_salud",
   "nombre": "Comprensión del plan de salud",
+  "tipo": "resultado"
+ },
+ "conducta_salud": {
+  "id": "conducta_salud",
+  "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
   "tipo": "resultado"
  },
  "conductas_riesgo_manejo": {
@@ -544,6 +564,11 @@
   "nombre": "Diseño híbrido efectividad-implementación tipo 2",
   "tipo": "concepto"
  },
+ "diseno_incentivo_conductual": {
+  "id": "diseno_incentivo_conductual",
+  "nombre": "Diseño del incentivo con principios conductuales (aversión a la pérdida, inmediatez, puntos de referencia)",
+  "tipo": "concepto"
+ },
  "diseno_industrial_efectivo": {
   "id": "diseno_industrial_efectivo",
   "nombre": "Efectividad de diseño industrial",
@@ -623,6 +648,11 @@
   "id": "factores_exito_producto_nuevo",
   "nombre": "Predictores del éxito de un producto nuevo (ventaja, mercado, ajuste, predesarrollo, recursos)",
   "tipo": "constructo"
+ },
+ "factores_usuario_sistema": {
+  "id": "factores_usuario_sistema",
+  "nombre": "Experiencia, estilo cognitivo, actitudes del usuario y diseño del sistema",
+  "tipo": "concepto"
  },
  "farmacias_sistema_salud": {
   "id": "farmacias_sistema_salud",
@@ -714,6 +744,11 @@
   "nombre": "IA clínica",
   "tipo": "concepto"
  },
+ "incentivos_financieros_salud": {
+  "id": "incentivos_financieros_salud",
+  "nombre": "Incentivos financieros para conductas de salud",
+  "tipo": "intervencion"
+ },
  "indecopi_sanciones_2026": {
   "id": "indecopi_sanciones_2026",
   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
@@ -753,6 +788,11 @@
   "id": "ipg_venta_rga",
   "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
   "tipo": "concepto"
+ },
+ "iyengar_lepper_2000": {
+  "id": "iyengar_lepper_2000",
+  "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
+  "tipo": "estudio"
  },
  "litigios_adulacion": {
   "id": "litigios_adulacion",
@@ -853,6 +893,11 @@
   "id": "modelo_farmacias_triage",
   "nombre": "Modelo de triage con IA y farmacias (Perú)",
   "tipo": "intervencion"
+ },
+ "moderadores_sobrecarga": {
+  "id": "moderadores_sobrecarga",
+  "nombre": "Complejidad del surtido, dificultad de la tarea, incertidumbre de preferencias y meta de ahorrar esfuerzo",
+  "tipo": "concepto"
  },
  "muestra_estudiantil_percibida": {
   "id": "muestra_estudiantil_percibida",
@@ -958,6 +1003,11 @@
   "id": "precision_diagnostica",
   "nombre": "Precisión diagnóstica de chatbots médicos",
   "tipo": "metrica"
+ },
+ "precision_prescripcion": {
+  "id": "precision_prescripcion",
+  "nombre": "Precisión de la decisión de prescripción",
+  "tipo": "resultado"
  },
  "preferencia_interfaces_generativas": {
   "id": "preferencia_interfaces_generativas",
@@ -1084,6 +1134,16 @@
   "nombre": "Res. SBS 01923-2026 (infracciones y sanciones)",
   "tipo": "intervencion"
  },
+ "scheibehenne_2010": {
+  "id": "scheibehenne_2010",
+  "nombre": "Meta-análisis de sobrecarga de elección de Scheibehenne et al. (JCR 2010)",
+  "tipo": "estudio"
+ },
+ "sesgo_automatizacion": {
+  "id": "sesgo_automatizacion",
+  "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
+  "tipo": "constructo"
+ },
  "sesgo_halo": {
   "id": "sesgo_halo",
   "nombre": "Sesgo de halo (proxy = percepción experta)",
@@ -1109,6 +1169,11 @@
   "nombre": "Silent trial / modo sombra",
   "tipo": "intervencion"
  },
+ "sobrecarga_eleccion": {
+  "id": "sobrecarga_eleccion",
+  "nombre": "Sobrecarga de elección (menos compra, satisfacción o confianza al haber más opciones)",
+  "tipo": "resultado"
+ },
  "sobreconfianza_ia": {
   "id": "sobreconfianza_ia",
   "nombre": "Sobre-confianza en la IA",
@@ -1128,6 +1193,11 @@
   "id": "susceptibilidad_dark_patterns",
   "nombre": "Susceptibilidad a dark patterns",
   "tipo": "resultado"
+ },
+ "tamano_surtido": {
+  "id": "tamano_surtido",
+  "nombre": "Tamaño del surtido (cuántas opciones se ofrecen)",
+  "tipo": "intervencion"
  },
  "tarea_dificil": {
   "id": "tarea_dificil",

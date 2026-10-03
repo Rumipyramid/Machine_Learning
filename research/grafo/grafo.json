@@ -10358,8 +10358,8 @@
    {
     "fuentes": 542,
     "rigor": {
-     "B": 101,
-     "A": 146,
+     "B": 100,
+     "A": 147,
      "C": 128,
      "D": 123,
      "?": 14,
@@ -10369,7 +10369,7 @@
     "outputs": 4,
     "wikilinks": 84,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 436,
+    "fuentes_citadas_en_nodes": 437,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -10390,7 +10390,7 @@
      "cites": 272
     },
     "fecha": "2026-10-03",
-    "commit": "5366727",
+    "commit": "88c47a6",
     "fuente": "git"
    }
   ],

@@ -237,6 +237,45 @@
     }
    ],
    "notas": "Lectura a fondo de seguros. Documentos primarios (SBS, SMV, El Peruano, Congreso) bloqueados por la red: se leyeron resúmenes dirigidos a cada documento. Se actualizan en su sitio, de ficha a abstract, T-125 (corrige la relación: la norma 'aplica_a', no 'aumenta' el rechazo), T-153, T-154 (corrige el objeto: F-9 mide cambio de producto, no comprensión de planes de salud), T-155, T-170, T-172 y T-175. F-486 no se pudo ubicar (queda en ficha)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-3",
+    "F-10",
+    "F-19",
+    "F-21",
+    "F-60"
+   ],
+   "triples": 3,
+   "sin_aporte": [
+    {
+     "f": "F-3",
+     "nota": "Sin relación nueva: T-152 se actualizó en su sitio (ficha→abstract)."
+    },
+    {
+     "f": "F-10",
+     "nota": "Sin relación nueva: T-156 se actualizó en su sitio (ficha→abstract). Es un libro: se leyó su resumen editorial y reseñas, no el texto."
+    },
+    {
+     "f": "F-19",
+     "nota": "Sin relación nueva: T-157 se actualizó en su sitio (ficha→abstract). T-161 queda en ficha: es inferencia del node, no de los autores."
+    }
+   ],
+   "notas": "Pase de profundidad sobre las 5 fuentes A que el grafo tenía solo a nivel ficha (relaciones.py next --mejorar). Resúmenes oficiales vía búsqueda; texto completo no abierto. F-21: 126 RCTs y 23 M de personas (la ficha dice '123+' y '>20 M', compatible). F-60: la cifra 5-7% de la ficha no está en el resumen; queda sin verificar a este nivel."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-61",
+    "F-100",
+    "F-119",
+    "F-120",
+    "F-121"
+   ],
+   "triples": 8,
+   "sin_aporte": [],
+   "notas": "Pase de profundidad (relaciones.py next --mejorar): 5 fuentes A del cerebro de diseño sin relaciones en el grafo. Resúmenes oficiales vía búsqueda. F-121: las cifras 3%/30% no se confirmaron. F-60: cifra mal atribuida (discrepancia)."
   }
  ],
  "discrepancias": [
@@ -337,6 +376,11 @@
    "detalle": "La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542).",
    "estado": "cerrada",
    "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-60",
+   "detalle": "La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño."
   }
  ],
  "resoluciones": [
@@ -453,6 +497,12 @@
    "estado": "alcance_distinto",
    "fecha": "2026-10-03",
    "nota": "Salvi (F-542) mide la personalización en un debate interactivo de varias rondas contra persuasores humanos; Hackenburg y Margetts (F-499) la miden en un único mensaje escrito frente a un mensaje genérico de la misma IA. La personalización puede ayudar en conversación y no en un mensaje suelto. Para decidir haría falta un estudio que cruce ambos factores."
+  },
+  {
+   "triple": "T-202",
+   "estado": "matizada",
+   "fecha": "2026-10-03",
+   "nota": "La versión general ('más opciones empeoran la decisión') queda refutada: el meta-análisis de 50 experimentos da un efecto medio cercano a cero (F-119). Sobrevive una versión condicional: la sobrecarga aparece con surtidos complejos, tareas difíciles, preferencias inciertas o meta de ahorrar esfuerzo (F-120). El estudio de las mermeladas (F-121) es un caso de campo dentro de esas condiciones, no una ley general."
   }
  ]
 }
