@@ -1,0 +1,129 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MU — guía de uso</title><style>/* MU — hoja base de identidad (extraída del panel research/grafo/mu.html, 2026-10-03). Ver IDENTIDAD.md. Copiar dentro del <style> de cada pieza de Mu. */
+
+:root{--bg:#fff;--fg:#000;--acc:#ff3b00;--g1:#000;--g2:#666;--g3:#bbb}
+@media(prefers-color-scheme:dark){:root{--bg:#000;--fg:#fff;--acc:#ff5a26;--g1:#fff;--g2:#999;--g3:#444}}
+*{box-sizing:border-box;border-radius:0}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.35 ui-monospace,Menlo,Consolas,monospace}
+header{border-bottom:8px solid var(--fg);padding:12px 16px;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 24px}
+h1{font:900 clamp(56px,14vw,128px)/.85 Impact,'Arial Black',sans-serif;margin:0;letter-spacing:-.04em}
+header p{margin:0;font-size:12px;text-transform:uppercase}
+section{border-bottom:8px solid var(--fg);padding:0}
+h2{margin:0;padding:6px 16px;background:var(--fg);color:var(--bg);font:900 20px Impact,'Arial Black',sans-serif;letter-spacing:.04em}
+h3{margin:14px 0 4px;font-size:12px;text-transform:uppercase;border-bottom:2px solid var(--fg)}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr))}
+.c{border:2px solid var(--fg);margin:-1px 0 0 -1px;padding:10px 12px}
+.c.w{background:var(--acc);color:#000}.c.w .lab,.c.w .sub{color:#000}
+.big{font:900 44px/1 Impact,'Arial Black',sans-serif}
+.lab{font-weight:700;font-size:12px;text-transform:uppercase;margin-top:4px}.sub{font-size:11px;color:var(--g2)}
+.body{padding:8px 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:0 28px}
+svg{width:100%;height:auto;display:block}
+.fg,.g1{fill:var(--g1)}.g2{fill:var(--g2)}.g3{fill:var(--g3)}.acc{fill:var(--acc)}
+.t{font:11px ui-monospace,monospace;fill:var(--fg)}.t.b{font-weight:700}.t.s{font-size:10px}.inv{fill:var(--bg)}
+table{width:100%;border-collapse:collapse;font-size:12px}td,th{border:2px solid var(--fg);padding:3px 6px;text-align:left}td.r{text-align:right}
+th{background:var(--fg);color:var(--bg);text-transform:uppercase;font-size:11px}
+ul{margin:6px 0;padding:0;list-style:none}li{border-left:8px solid var(--g3);padding:2px 8px;margin:3px 0;font-size:12px}
+li.ko{border-color:var(--acc)}li.ok{border-color:var(--fg)}li b{display:inline-block;width:1.2em}
+p.n,footer{font-size:11px;color:var(--g2);padding:8px 16px}footer{border-top:2px solid var(--fg)}
+tr.ko td{background:transparent}tr.ko td:nth-child(5){color:var(--acc);font-weight:900}
+.nv{border:4px solid var(--fg);padding:10px 14px}.big2{font:900 110px/0.9 Impact,'Arial Black',sans-serif}.big2 span{font-size:36px;color:var(--g2)}
+.lab2{font:900 26px Impact,'Arial Black',sans-serif;letter-spacing:.04em;background:var(--acc);color:#000;display:inline-block;padding:0 8px;margin-top:6px}
+.hero{grid-template-columns:300px minmax(0,1fr)!important;align-items:start}@media(max-width:720px){.hero{grid-template-columns:minmax(0,1fr)!important}.big2{font-size:84px}}
+code{background:var(--g3);padding:0 3px}
+
+
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr))}
+.st{border:2px solid var(--fg);margin:-1px 0 0 -1px;padding:10px 12px;position:relative}
+body{overflow-wrap:anywhere}
+.st .k{font:900 34px/1 Impact,'Arial Black',sans-serif}.st .k small{font-size:14px;color:var(--g2)}
+.st .cmd{display:inline-block;background:var(--fg);color:var(--bg);font-weight:700;padding:1px 6px;margin:6px 0 4px}
+.st.now{background:var(--acc);color:#000}.st.now .sub,.st.now .k small{color:#000}.st.now .cmd{background:#000;color:#fff}
+td.cmd{font-weight:700;white-space:nowrap}
+.rx{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+.rx div{border:2px solid var(--fg);margin:-1px 0 0 -1px;padding:8px 12px;font-size:12px}
+.rx b{display:block;text-transform:uppercase;font-size:11px;margin-bottom:2px}
+.rx code{font-weight:700}
+@media print{body{font-size:11px}h1{font-size:72px}section{break-inside:avoid}}
+</style></head><body>
+<header><h1>MU</h1><p>segundo cerebro · guía de uso en una página<br>cómo se usa, qué skill hace qué, cómo sube de nivel<br>versión 2026-10-03</p></header>
+
+<section><h2>00 QUÉ ES — ¿para qué sirve Mu?</h2>
+<div class="g">
+<div class="c"><div class="big">1</div><div class="lab">Guarda lo investigado</div><div class="sub">Cada tema vive en un solo documento (<i>node</i>) en <code>research/_nodes/</code>. El mapa de todos está en <code>research/alma.md</code>.</div></div>
+<div class="c"><div class="big">2</div><div class="lab">Respalda cada cifra</div><div class="sub">Toda fuente queda en el registro de evidencia (<code>research/fuentes/codice.md</code>) con un código <code>F-n</code>, su autor, su año y una nota de rigor de A (máximo) a E.</div></div>
+<div class="c"><div class="big">3</div><div class="lab">Conecta ideas</div><div class="sub">Un grafo une las afirmaciones de distintas fuentes y marca dónde coinciden y dónde se contradicen.</div></div>
+<div class="c w"><div class="big">4</div><div class="lab">Se mide y se audita</div><div class="sub">Mu publica su propio estado y un auditor le pregunta qué sabe. Las fallas se muestran, no se esconden.</div></div>
+</div></section>
+
+<section><h2>01 EL CICLO — ¿en qué orden se usa?</h2>
+<div class="flow">
+<div class="st"><div class="k">01</div><span class="cmd">/trinidad</span><div class="lab">Investigar</div><div class="sub">Busca un tema en papers, redes y datos de negocio a la vez. También se pueden usar por separado <code>/seeker</code>, <code>/gossip</code> y <code>/marketer</code>.</div></div>
+<div class="st"><div class="k">02</div><span class="cmd">/cronista</span><div class="lab">Registrar</div><div class="sub">Anota cada fuente usada en el registro de evidencia. Se dispara solo.</div></div>
+<div class="st"><div class="k">03</div><span class="cmd">/many-brains</span><div class="lab">Integrar</div><div class="sub">Pone lo hallado en el node correcto, actualiza el mapa y enlaza los temas relacionados.</div></div>
+<div class="st"><div class="k">04</div><span class="cmd">/grafo</span><div class="lab">Relacionar</div><div class="sub">Lee las fuentes de a 5 y extrae qué afirma cada una y con qué otras coincide o choca.</div></div>
+<div class="st"><div class="k">05</div><span class="cmd">/mu</span><div class="lab">Medir</div><div class="sub">Panel con salud, madurez, riqueza y nivel. Cifras crudas, sin promedios inventados.</div></div>
+<div class="st now"><div class="k">06</div><span class="cmd">/chacal</span><div class="lab">Auditar</div><div class="sub">Le hace 3 preguntas a Mu, mide qué evidencia hay detrás de cada respuesta y anota lo que falla en <code>research/garaje/</code>.</div></div>
+</div>
+<p class="n">Para que el equipo vea los cambios: <code>/actualizar</code> los publica en la rama principal (<code>main</code>).</p>
+</section>
+
+<section><h2>02 SKILLS — ¿cuál uso para qué?</h2>
+<div class="body" style="grid-template-columns:1fr"><div style="overflow-x:auto">
+<table>
+<tr><th>Comando</th><th>Para qué</th><th>Úsalo cuando…</th><th>Qué deja escrito</th></tr>
+<tr><td class="cmd">/trinidad</td><td>Investigación completa: académica, social y de negocio</td><td>quieres el panorama entero de un tema</td><td>node nuevo o ampliado + fuentes</td></tr>
+<tr><td class="cmd">/seeker</td><td>Evidencia académica y teórica, con revisión de método</td><td>necesitas saber si algo es cierto</td><td>node + fuentes</td></tr>
+<tr><td class="cmd">/gossip</td><td>Qué se dice en redes, foros y prensa</td><td>quieres medir percepción o rumores</td><td>node + fuentes</td></tr>
+<tr><td class="cmd">/marketer</td><td>Resultados de negocio publicados (ROI, crecimiento, rondas)</td><td>comparas empresas o modelos de negocio</td><td>node + fuentes</td></tr>
+<tr><td class="cmd">/codice</td><td>Consultar el registro de evidencia</td><td>preguntas "¿qué fuentes tenemos sobre X?"</td><td>nada (solo lee)</td></tr>
+<tr><td class="cmd">/cronista</td><td>Registrar fuentes</td><td>(automático) se cita algo externo</td><td>filas en el registro</td></tr>
+<tr><td class="cmd">/many-brains</td><td>Ordenar el conocimiento</td><td>hay que crear, mover o enlazar nodes</td><td>nodes + mapa</td></tr>
+<tr><td class="cmd">/grafo</td><td>Estado detallado y lectura por tandas de 5 fuentes</td><td>quieres subir cobertura o profundidad</td><td>relaciones + informe de estado</td></tr>
+<tr><td class="cmd">/mu</td><td>Panel de indicadores</td><td>preguntas "¿cómo está el cerebro hoy?"</td><td><code>research/grafo/mu.html</code></td></tr>
+<tr><td class="cmd">/chacal</td><td>Auditoría con semáforos</td><td>quieres saber si Mu responde bien</td><td>nota en <code>research/garaje/</code></td></tr>
+<tr><td class="cmd">/actualizar</td><td>Publicar en <code>main</code></td><td>el equipo tiene que ver los cambios</td><td>merge a <code>main</code></td></tr>
+</table></div></div></section>
+
+<section><h2>03 NIVELES — ¿cómo sube Mu?</h2>
+<div class="flow">
+<div class="st"><div class="k">N1</div><div class="lab">Memoria</div><div class="sub">guarda y cita evidencia</div></div>
+<div class="st"><div class="k">N2</div><div class="lab">Orden</div><div class="sub">se mantiene íntegro, enlaces de ida y vuelta</div></div>
+<div class="st"><div class="k">N3</div><div class="lab">Relación</div><div class="sub">conecta ideas entre fuentes</div></div>
+<div class="st"><div class="k">N4</div><div class="lab">Criterio</div><div class="sub">sus reglas tienen fuente y sus hipótesis se ponen a prueba</div></div>
+<div class="st now"><div class="k">N5<small>/7 HOY</small></div><div class="lab">Autocorrección</div><div class="sub">descarta al menos 20% de sus hipótesis puestas a prueba y no deja discrepancias abiertas</div></div>
+<div class="st"><div class="k">N6</div><div class="lab">Profundidad</div><div class="sub">60% de lo relacionado leído a fondo y 50% del registro en el grafo</div></div>
+<div class="st"><div class="k">N7</div><div class="lab">Impacto</div><div class="sub">uso real medido fuera del repo (hoy no hay cómo medirlo)</div></div>
+</div>
+<p class="n">Se sube solo si se cumplen TODOS los criterios del nivel. Los umbrales son juicio del autor y se editan en <code>research/grafo/niveles.json</code>.</p>
+</section>
+
+<section><h2>04 RECETAS — ¿qué le digo?</h2>
+<div class="rx">
+<div><b>¿Cómo está el cerebro?</b><code>/mu</code></div>
+<div><b>Investiga un tema</b><code>/trinidad</code> + el tema, en una frase</div>
+<div><b>¿Qué sabemos de X?</b><code>/codice</code> X, o pregúntale a Mu y que cite las fuentes</div>
+<div><b>¿Mu responde bien?</b><code>/chacal</code></div>
+<div><b>Sube un nivel</b><code>/mu</code> muestra qué falta; <code>/grafo</code> lee la siguiente tanda de 5 fuentes</div>
+<div><b>Esta cifra me suena rara</b>pide que la verifique en la fuente original: si estaba mal, se corrige el registro y queda anotado</div>
+<div><b>Pon a prueba una hipótesis</b>pide confrontarla con el criterio de refutación que ya tiene escrito en su node</div>
+<div><b>Que el equipo lo vea</b><code>/actualizar</code></div>
+</div></section>
+
+<section><h2>05 REGLAS — ¿qué no se negocia?</h2>
+<div class="body">
+<ul>
+<li class="ok"><b>✓</b>Cada cifra lleva su fuente (<code>F-n</code>) y su nivel de rigor.</li>
+<li class="ok"><b>✓</b>Un tema, un documento: se amplía el node existente, no se duplica.</li>
+<li class="ok"><b>✓</b>Lo que no se sabe se dice. Lo leído solo en resumen se marca como tal.</li>
+<li class="ok"><b>✓</b>Las correcciones al registro solo se hacen tras verificar la fuente y con tu permiso.</li>
+</ul>
+<ul>
+<li class="ko"><b>✗</b>Citar no es validar: que una fuente esté citada no la hace verdadera.</li>
+<li class="ko"><b>✗</b>No se mueve una hipótesis para mejorar un indicador: se prueba y se registra el resultado, sea cual sea.</li>
+<li class="ko"><b>✗</b>Nunca se borra un node sin preguntar.</li>
+<li class="ko"><b>✗</b>El uso fuera del repo no se mide: el panel no dice si Mu ayuda a decidir mejor.</li>
+</ul>
+</div></section>
+
+<footer>MU · guía de uso · 2026-10-03 · fuentes: <code>CLAUDE.md</code>, <code>.claude/skills/</code>, <code>research/grafo/METRICAS.md</code>, <code>niveles.json</code> · identidad: <code>.claude/skills/mu/IDENTIDAD.md</code></footer>
+</body></html>
