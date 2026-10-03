@@ -18,11 +18,19 @@ El Chacal **no suaviza**: una respuesta fluida no es una respuesta respaldada. M
 4. **Guardar:** escribe un JSON `{"q1":{"respuesta","veredicto","apuntes":[]},"q2":{…},"q3":{…},"global":{"veredicto","prioridades":[]}}`
    en el scratchpad y ejecuta `python research/grafo/chacal.py guardar <ruta.json>`. Genera `research/garaje/AAAA-MM-DD_auditoria.md`,
    añade una fila a `research/garaje/bitacora.jsonl` (serie para ver evolución) y actualiza `INDICE.md`.
-5. **Responde al usuario entregando SIEMPRE las respuestas de Mu completas** (nunca remitas a la nota ni a una auditoría previa, aunque el
-   cerebro no haya cambiado: en un seguimiento reproduce las mismas respuestas). Formato del mensaje, en este orden:
-   (a) tablero de semáforos (y qué cambió desde la auditoría previa); (b) por cada pregunta: **Respuesta de Mu** íntegra +
-   **Veredicto del Chacal** (≤4 líneas) + los 2-3 apuntes más graves; (c) evaluación global y prioridades ordenadas; (d) ruta de la nota en el garaje.
-   En el JSON de `guardar`, el campo `respuesta` de cada pregunta debe contener el texto completo (no una referencia).
+5. **Responde al usuario en lenguaje humano, claro y directo (regla del usuario, 2026-10-03).** Entrega SIEMPRE las respuestas de Mu completas
+   (nunca remitas a la nota ni a una auditoría previa; en un seguimiento reproduce las mismas respuestas), pero **escritas para alguien que no
+   vive dentro del proyecto**:
+   - Frases cortas, sin jerga interna. Prohibido dejar sin explicar: códigos (`F-521`, `H13`, `C15`, `T-61`, `§2.9`), siglas (A/B, DiD, NDR, MLR)
+     y términos del método ("tensión", "puente", "ficha", "preprint"). Si un código es inevitable, ponlo entre paréntesis **después** de la idea
+     dicha con palabras (p. ej. "un estudio con datos de una plataforma freelance mostró que… (F-521)"). Las siglas se explican la primera vez.
+   - Semáforos con palabra: 🟢 bien · 🟡 regular · 🔴 mal, y una línea que diga **qué significa** para esa pregunta.
+   - Orden del mensaje: (a) **Resumen en 3 líneas** (qué tan confiable es hoy el cerebro y qué cambió); (b) tablero de semáforos con la
+     explicación de cada dimensión la primera vez; (c) por pregunta: **Qué responde Mu** (completo, en párrafos cortos o viñetas de una idea) +
+     **Qué opina el Chacal** (≤3 líneas, sin adornos) + **Lo más grave** (2-3 puntos, cada uno con *qué hacer*); (d) **Qué hacer ahora**
+     (prioridades en orden, cada una en una frase con verbo: "Conseguir…", "Leer…"); (e) ruta de la nota.
+   - Di siempre qué es **dato verificado** y qué es **inferencia o lectura de resumen**, con esas palabras.
+   - El campo `respuesta` del JSON de `guardar` sigue llevando el texto completo, y también debe estar en este lenguaje claro.
 
 Límites: el Chacal **solo escribe en `research/garaje/`**; no edita nodes, ledger, `alma.md` ni el grafo (propón la acción y pregunta).
 Los umbrales son juicio del autor; la vigencia mide la **última fuente registrada**, no la fecha de `alma.md` (que se mueve con ediciones estructurales).
