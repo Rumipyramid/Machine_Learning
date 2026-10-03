@@ -39,6 +39,16 @@
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
  },
+ "afirmaciones_inexactas_ia": {
+  "id": "afirmaciones_inexactas_ia",
+  "nombre": "Afirmaciones inexactas en la persuasión de la IA",
+  "tipo": "resultado"
+ },
+ "agentes_maquina_delegados": {
+  "id": "agentes_maquina_delegados",
+  "nombre": "Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas",
+  "tipo": "intervencion"
+ },
  "ajuste_ui_usuario": {
   "id": "ajuste_ui_usuario",
   "nombre": "Capacidad del usuario de ajustar la interfaz generada a sus necesidades",
@@ -48,6 +58,11 @@
   "id": "alfabetizacion_ia",
   "nombre": "Alfabetización en IA (intervención ligera)",
   "tipo": "intervencion"
+ },
+ "alineacion_actividad_neural": {
+  "id": "alineacion_actividad_neural",
+  "nombre": "Alineación de las representaciones internas del modelo con la actividad neural humana",
+  "tipo": "resultado"
  },
  "allianz_vida_salud": {
   "id": "allianz_vida_salud",
@@ -69,6 +84,11 @@
   "nombre": "Número ancla visible antes de juzgar un precio",
   "tipo": "intervencion"
  },
+ "aplanamiento_identidades": {
+  "id": "aplanamiento_identidades",
+  "nombre": "Retrato erróneo y aplanamiento de grupos demográficos por el LLM",
+  "tipo": "limitacion"
+ },
  "aprendibilidad": {
   "id": "aprendibilidad",
   "nombre": "Aprendibilidad / conciencia del set de funciones",
@@ -82,6 +102,11 @@
  "asistencia_ia_razonamiento": {
   "id": "asistencia_ia_razonamiento",
   "nombre": "Asistencia de IA en razonamiento lógico",
+  "tipo": "intervencion"
+ },
+ "asistente_ia_soporte": {
+  "id": "asistente_ia_soporte",
+  "nombre": "Asistente conversacional de IA generativa para agentes de soporte",
   "tipo": "intervencion"
  },
  "asuncion_responsabilidad": {
@@ -162,6 +187,11 @@
  "c_castigo_por_disrupcion": {
   "id": "c_castigo_por_disrupcion",
   "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
+  "tipo": "afirmacion"
+ },
+ "c_centaur_generaliza": {
+  "id": "c_centaur_generaliza",
+  "nombre": "Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea)",
   "tipo": "afirmacion"
  },
  "c_consejo_ia_reduce_compra": {
@@ -364,6 +394,16 @@
   "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
   "tipo": "afirmacion"
  },
+ "c_sinteticas_menos_varianza": {
+  "id": "c_sinteticas_menos_varianza",
+  "nombre": "Las respuestas sintéticas con LLM tienen menos varianza que las humanas",
+  "tipo": "afirmacion"
+ },
+ "c_sinteticas_reemplazan_encuestas": {
+  "id": "c_sinteticas_reemplazan_encuestas",
+  "nombre": "Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística",
+  "tipo": "afirmacion"
+ },
  "c_sobrecarga_general": {
   "id": "c_sobrecarga_general",
   "nombre": "Más opciones empeoran la decisión de forma general",
@@ -449,9 +489,19 @@
   "nombre": "La aseguradora debe acreditar que explicó la exclusión",
   "tipo": "concepto"
  },
+ "casos_resueltos_hora": {
+  "id": "casos_resueltos_hora",
+  "nombre": "Casos de clientes resueltos por hora",
+  "tipo": "resultado"
+ },
  "cdss_prescripcion": {
   "id": "cdss_prescripcion",
   "nombre": "Soporte de decisión clínica en prescripción",
+  "tipo": "intervencion"
+ },
+ "centaur": {
+  "id": "centaur",
+  "nombre": "Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones)",
   "tipo": "intervencion"
  },
  "claude_design": {
@@ -584,6 +634,11 @@
   "nombre": "Creencias pesimistas sobre lo que se ganaría al cambiar",
   "tipo": "constructo"
  },
+ "cumplimiento_deshonesto": {
+  "id": "cumplimiento_deshonesto",
+  "nombre": "Cumplimiento de instrucciones totalmente deshonestas",
+  "tipo": "resultado"
+ },
  "dark_patterns": {
   "id": "dark_patterns",
   "nombre": "Dark patterns",
@@ -602,6 +657,11 @@
  "default_nudge": {
   "id": "default_nudge",
   "nombre": "Opción por defecto (default)",
+  "tipo": "intervencion"
+ },
+ "delegacion_ia_metas": {
+  "id": "delegacion_ia_metas",
+  "nombre": "Delegar en una máquina por metas de alto nivel o aprendizaje supervisado (sin instrucciones explícitas)",
   "tipo": "intervencion"
  },
  "demanda_seguros": {
@@ -739,6 +799,11 @@
   "nombre": "Encuadre de la decisión (ganancia vs. pérdida)",
   "tipo": "intervencion"
  },
+ "errores_intuitivos_llm": {
+  "id": "errores_intuitivos_llm",
+  "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)",
+  "tipo": "resultado"
+ },
  "errores_sistematicos_juicio": {
   "id": "errores_sistematicos_juicio",
   "nombre": "Errores sistemáticos y predecibles de juicio",
@@ -748,6 +813,11 @@
   "id": "escala_confianza_aseguradora",
   "nombre": "Escala de confianza en aseguradoras de salud (Zheng et al. 2002)",
   "tipo": "metrica"
+ },
+ "escala_modelo_llm": {
+  "id": "escala_modelo_llm",
+  "nombre": "Tamaño y competencia lingüística de los modelos de lenguaje",
+  "tipo": "concepto"
  },
  "estructura_decision": {
   "id": "estructura_decision",
@@ -787,6 +857,11 @@
  "experiencia_subjetiva_voz": {
   "id": "experiencia_subjetiva_voz",
   "nombre": "Experiencia subjetiva con sistemas de voz (precisión percibida, agrado, carga, molestia, habitabilidad, velocidad)",
+  "tipo": "constructo"
+ },
+ "experiencia_trabajador": {
+  "id": "experiencia_trabajador",
+  "nombre": "Experiencia y habilidad previa del trabajador",
   "tipo": "constructo"
  },
  "explicabilidad_ia": {
@@ -883,6 +958,11 @@
   "id": "heuristicas_juicio",
   "nombre": "Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla)",
   "tipo": "concepto"
+ },
+ "hipotesis_interpretables": {
+  "id": "hipotesis_interpretables",
+  "nombre": "Hipótesis nuevas e interpretables sobre decisiones humanas",
+  "tipo": "resultado"
  },
  "hu_2025": {
   "id": "hu_2025",
@@ -1089,6 +1169,11 @@
   "nombre": "Microtargeting con LLM (mensajes personalizados)",
   "tipo": "intervencion"
  },
+ "ml_generacion_hipotesis": {
+  "id": "ml_generacion_hipotesis",
+  "nombre": "ML + interpretación humana para generar hipótesis conductuales",
+  "tipo": "intervencion"
+ },
  "modelo_datos_tarea": {
   "id": "modelo_datos_tarea",
   "nombre": "UI generada desde un modelo de datos de la tarea (no desde código)",
@@ -1097,6 +1182,11 @@
  "modelo_farmacias_triage": {
   "id": "modelo_farmacias_triage",
   "nombre": "Modelo de triage con IA y farmacias (Perú)",
+  "tipo": "intervencion"
+ },
+ "modelos_chatgpt": {
+  "id": "modelos_chatgpt",
+  "nombre": "Modelos ChatGPT-3.5 y 4",
   "tipo": "intervencion"
  },
  "moderadores_sobrecarga": {
@@ -1108,6 +1198,11 @@
   "id": "muestra_estudiantil_percibida",
   "nombre": "Muestra estudiantil y outcomes percibidos",
   "tipo": "limitacion"
+ },
+ "muestras_sinteticas_llm": {
+  "id": "muestras_sinteticas_llm",
+  "nombre": "Muestras sintéticas con LLM (personas simuladas que responden encuestas)",
+  "tipo": "intervencion"
  },
  "ndr_excluye_churn": {
   "id": "ndr_excluye_churn",
@@ -1199,6 +1294,11 @@
   "nombre": "Persuasión conversacional por IA",
   "tipo": "intervencion"
  },
+ "peticiones_trampa": {
+  "id": "peticiones_trampa",
+  "nombre": "Peticiones de trampa de los principales humanos",
+  "tipo": "resultado"
+ },
  "pictogramas_riesgo": {
   "id": "pictogramas_riesgo",
   "nombre": "Pictogramas o arreglos de íconos para mostrar riesgo",
@@ -1237,6 +1337,16 @@
  "precision_prescripcion": {
   "id": "precision_prescripcion",
   "nombre": "Precisión de la decisión de prescripción",
+  "tipo": "resultado"
+ },
+ "prediccion_conducta_humana": {
+  "id": "prediccion_conducta_humana",
+  "nombre": "Predicción de la conducta de participantes no vistos en experimentos",
+  "tipo": "resultado"
+ },
+ "preferencia_candidato": {
+  "id": "preferencia_candidato",
+  "nombre": "Preferencia por el candidato defendido",
   "tipo": "resultado"
  },
  "preferencia_humana_respuestas": {
@@ -1324,6 +1434,11 @@
   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
   "tipo": "resultado"
  },
+ "respuestas_casi_uniformes": {
+  "id": "respuestas_casi_uniformes",
+  "nombre": "Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones",
+  "tipo": "resultado"
+ },
  "revenue_figma_q1": {
   "id": "revenue_figma_q1",
   "nombre": "Ingresos de Figma Q1 2026 (+46%)",
@@ -1353,6 +1468,11 @@
   "id": "salida_cpo_anthropic",
   "nombre": "Salida del CPO de Anthropic de la junta de Figma (14-abr-2026)",
   "tipo": "concepto"
+ },
+ "salvaguardas_especificas": {
+  "id": "salvaguardas_especificas",
+  "nombre": "Salvaguardas prohibitivas específicas de la tarea",
+  "tipo": "intervencion"
  },
  "salvi_2025": {
   "id": "salvi_2025",
@@ -1394,6 +1514,11 @@
   "nombre": "Segmentación demográfica en servicios financieros",
   "tipo": "intervencion"
  },
+ "sensibilidad_redaccion_llm": {
+  "id": "sensibilidad_redaccion_llm",
+  "nombre": "Sensibilidad a la redacción del prompt e inestabilidad en el tiempo",
+  "tipo": "limitacion"
+ },
  "sesgo_automatizacion": {
   "id": "sesgo_automatizacion",
   "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
@@ -1407,6 +1532,11 @@
  "sesgo_halo": {
   "id": "sesgo_halo",
   "nombre": "Sesgo de halo (proxy = percepción experta)",
+  "tipo": "limitacion"
+ },
+ "sesgo_orden_etiqueta": {
+  "id": "sesgo_orden_etiqueta",
+  "nombre": "Sesgos de orden y etiqueta en las respuestas de LLMs a encuestas (p. ej., hacia la opción 'A')",
   "tipo": "limitacion"
  },
  "sesgo_publicacion": {
@@ -1433,6 +1563,11 @@
   "id": "silent_trial",
   "nombre": "Silent trial / modo sombra",
   "tipo": "intervencion"
+ },
+ "sobreajuste_memorizacion": {
+  "id": "sobreajuste_memorizacion",
+  "nombre": "Sobreajuste: el modelo responde a la forma de la tarea, no a su significado",
+  "tipo": "limitacion"
  },
  "sobrecarga_eleccion": {
   "id": "sobrecarga_eleccion",
@@ -1527,6 +1662,11 @@
  "valoracion_estetica": {
   "id": "valoracion_estetica",
   "nombre": "Calificaciones positivas/estéticas",
+  "tipo": "resultado"
+ },
+ "variabilidad_respuestas": {
+  "id": "variabilidad_respuestas",
+  "nombre": "Variabilidad de las respuestas frente a la población humana",
   "tipo": "resultado"
  },
  "velocidad_tarea": {

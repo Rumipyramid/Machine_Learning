@@ -1,0 +1,33 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": ["F-563", "F-564", "F-569", "F-552", "F-553"],
+ "entidades": [
+  {"id": "centaur", "nombre": "Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones)", "tipo": "intervencion"},
+  {"id": "prediccion_conducta_humana", "nombre": "Predicción de la conducta de participantes no vistos en experimentos", "tipo": "resultado"},
+  {"id": "alineacion_actividad_neural", "nombre": "Alineación de las representaciones internas del modelo con la actividad neural humana", "tipo": "resultado"},
+  {"id": "c_centaur_generaliza", "nombre": "Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea)", "tipo": "afirmacion"},
+  {"id": "sobreajuste_memorizacion", "nombre": "Sobreajuste: el modelo responde a la forma de la tarea, no a su significado", "tipo": "limitacion"},
+  {"id": "ml_generacion_hipotesis", "nombre": "ML + interpretación humana para generar hipótesis conductuales", "tipo": "intervencion"},
+  {"id": "hipotesis_interpretables", "nombre": "Hipótesis nuevas e interpretables sobre decisiones humanas", "tipo": "resultado"},
+  {"id": "muestras_sinteticas_llm", "nombre": "Muestras sintéticas con LLM (personas simuladas que responden encuestas)", "tipo": "intervencion"},
+  {"id": "variabilidad_respuestas", "nombre": "Variabilidad de las respuestas frente a la población humana", "tipo": "resultado"},
+  {"id": "c_sinteticas_menos_varianza", "nombre": "Las respuestas sintéticas con LLM tienen menos varianza que las humanas", "tipo": "afirmacion"},
+  {"id": "c_sinteticas_reemplazan_encuestas", "nombre": "Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística", "tipo": "afirmacion"},
+  {"id": "sensibilidad_redaccion_llm", "nombre": "Sensibilidad a la redacción del prompt e inestabilidad en el tiempo", "tipo": "limitacion"},
+  {"id": "aplanamiento_identidades", "nombre": "Retrato erróneo y aplanamiento de grupos demográficos por el LLM", "tipo": "limitacion"}
+ ],
+ "triples": [
+  {"s": "centaur", "p": "aumenta", "o": "prediccion_conducta_humana", "f": "F-563", "apoyo": "Nature 2025: Centaur captura la conducta de participantes no vistos mejor que los modelos cognitivos existentes.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "centaur", "p": "aumenta", "o": "alineacion_actividad_neural", "f": "F-563", "apoyo": "Nature 2025: tras el afinamiento, las representaciones internas del modelo se alinean más con la actividad neural humana.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "centaur", "p": "respalda", "o": "c_centaur_generaliza", "f": "F-563", "apoyo": "Nature 2025: generaliza a historias de cobertura no vistas, modificaciones estructurales de la tarea y dominios completamente nuevos.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "sobreajuste_memorizacion", "p": "contradice", "o": "c_centaur_generaliza", "f": "F-564", "apoyo": "NSO 2026 (Zhejiang), vía cobertura de prensa: al reemplazar el enunciado por 'Please choose option A', Centaur siguió eligiendo las respuestas del conjunto original; responde a la forma de la tarea, no al significado.", "lectura": "ficha", "fuerza": "descriptiva"},
+  {"s": "ml_generacion_hipotesis", "p": "aumenta", "o": "hipotesis_interpretables", "f": "F-569", "apoyo": "QJE 2024: procedimiento semiautomático que combina ML e interpretación humana; con solo la foto de ficha, un modelo predice decisiones de detención de jueces y capta hasta la mitad de la variación predecible.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "muestras_sinteticas_llm", "p": "reduce", "o": "variabilidad_respuestas", "f": "F-552", "apoyo": "Political Analysis 2024: con personas simuladas, las medias de ChatGPT se parecen a ANES 2016-2020, pero hay menos variación que en las encuestas reales y los coeficientes de regresión difieren.", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "variabilidad_respuestas", "p": "respalda", "o": "c_sinteticas_menos_varianza", "f": "F-552", "apoyo": "Political Analysis 2024: menos variación en las respuestas sintéticas que en las reales (termómetros de 11 grupos).", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "sensibilidad_redaccion_llm", "p": "refuta", "o": "c_sinteticas_reemplazan_encuestas", "f": "F-552", "apoyo": "Political Analysis 2024: el muestreo con ChatGPT no es fiable para inferencia; la distribución cambia con cambios menores de redacción y el mismo prompt da resultados distintos en 3 meses.", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "muestras_sinteticas_llm", "p": "tiene_limite", "o": "aplanamiento_identidades", "f": "F-553", "apoyo": "Nature Machine Intelligence 2025: argumento analítico y estudios con 3.200 personas de 16 identidades y 4 LLMs muestran que los modelos retratan mal y aplanan a los grupos demográficos.", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "aplanamiento_identidades", "p": "respalda", "o": "c_sinteticas_menos_varianza", "f": "F-553", "apoyo": "Nature Machine Intelligence 2025: el aplanamiento de las representaciones de cada grupo es menos diversidad dentro del grupo que la humana.", "lectura": "abstract", "fuerza": "observacional"}
+ ],
+ "discrepancias": [],
+ "notas": "Lote de la tanda de convergencia psico-econ-IA, con resúmenes oficiales verificados el 2026-10-03 (Nature, Political Analysis, NMI, QJE). F-564 queda en 'ficha': solo se leyó su cobertura de prensa (ScienceDaily, Neuroscience News), no el resumen de NSO. F-553: se verificó la publicación en Nature Machine Intelligence (2025, pp. 1-12)."
+}

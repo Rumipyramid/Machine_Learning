@@ -77,6 +77,24 @@
    ]
   },
   {
+   "id": "afirmaciones_inexactas_ia",
+   "nombre": "Afirmaciones inexactas en la persuasión de la IA",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-585"
+   ]
+  },
+  {
+   "id": "agentes_maquina_delegados",
+   "nombre": "Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-579"
+   ]
+  },
+  {
    "id": "ajuste_ui_usuario",
    "nombre": "Capacidad del usuario de ajustar la interfaz generada a sus necesidades",
    "tipo": "resultado",
@@ -93,6 +111,15 @@
    "fuentes": [
     "F-494",
     "F-500"
+   ]
+  },
+  {
+   "id": "alineacion_actividad_neural",
+   "nombre": "Alineación de las representaciones internas del modelo con la actividad neural humana",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-563"
    ]
   },
   {
@@ -134,6 +161,15 @@
    ]
   },
   {
+   "id": "aplanamiento_identidades",
+   "nombre": "Retrato erróneo y aplanamiento de grupos demográficos por el LLM",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-553"
+   ]
+  },
+  {
    "id": "aprendibilidad",
    "nombre": "Aprendibilidad / conciencia del set de funciones",
    "tipo": "resultado",
@@ -158,6 +194,15 @@
    "grado": 3,
    "fuentes": [
     "F-401"
+   ]
+  },
+  {
+   "id": "asistente_ia_soporte",
+   "nombre": "Asistente conversacional de IA generativa para agentes de soporte",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-580"
    ]
   },
   {
@@ -305,6 +350,16 @@
     "F-305",
     "F-429",
     "F-470"
+   ]
+  },
+  {
+   "id": "c_centaur_generaliza",
+   "nombre": "Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-563",
+    "F-564"
    ]
   },
   {
@@ -683,6 +738,26 @@
    ]
   },
   {
+   "id": "c_sinteticas_menos_varianza",
+   "nombre": "Las respuestas sintéticas con LLM tienen menos varianza que las humanas",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-552",
+    "F-553",
+    "F-560"
+   ]
+  },
+  {
+   "id": "c_sinteticas_reemplazan_encuestas",
+   "nombre": "Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-552"
+   ]
+  },
+  {
    "id": "c_sobrecarga_general",
    "nombre": "Más opciones empeoran la decisión de forma general",
    "tipo": "afirmacion",
@@ -844,12 +919,30 @@
    ]
   },
   {
+   "id": "casos_resueltos_hora",
+   "nombre": "Casos de clientes resueltos por hora",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-580"
+   ]
+  },
+  {
    "id": "cdss_prescripcion",
    "nombre": "Soporte de decisión clínica en prescripción",
    "tipo": "intervencion",
    "grado": 2,
    "fuentes": [
     "F-61"
+   ]
+  },
+  {
+   "id": "centaur",
+   "nombre": "Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-563"
    ]
   },
   {
@@ -1091,6 +1184,15 @@
    ]
   },
   {
+   "id": "cumplimiento_deshonesto",
+   "nombre": "Cumplimiento de instrucciones totalmente deshonestas",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-579"
+   ]
+  },
+  {
    "id": "dark_patterns",
    "nombre": "Dark patterns",
    "tipo": "concepto",
@@ -1124,6 +1226,15 @@
    "grado": 1,
    "fuentes": [
     "F-337"
+   ]
+  },
+  {
+   "id": "delegacion_ia_metas",
+   "nombre": "Delegar en una máquina por metas de alto nivel o aprendizaje supervisado (sin instrucciones explícitas)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-579"
    ]
   },
   {
@@ -1379,6 +1490,15 @@
    ]
   },
   {
+   "id": "errores_intuitivos_llm",
+   "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-572"
+   ]
+  },
+  {
    "id": "errores_sistematicos_juicio",
    "nombre": "Errores sistemáticos y predecibles de juicio",
    "tipo": "resultado",
@@ -1394,6 +1514,15 @@
    "grado": 1,
    "fuentes": [
     "F-335"
+   ]
+  },
+  {
+   "id": "escala_modelo_llm",
+   "nombre": "Tamaño y competencia lingüística de los modelos de lenguaje",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-572"
    ]
   },
   {
@@ -1466,6 +1595,15 @@
    "grado": 1,
    "fuentes": [
     "F-148"
+   ]
+  },
+  {
+   "id": "experiencia_trabajador",
+   "nombre": "Experiencia y habilidad previa del trabajador",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-580"
    ]
   },
   {
@@ -1648,6 +1786,15 @@
    "grado": 2,
    "fuentes": [
     "F-220"
+   ]
+  },
+  {
+   "id": "hipotesis_interpretables",
+   "nombre": "Hipótesis nuevas e interpretables sobre decisiones humanas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-569"
    ]
   },
   {
@@ -2029,6 +2176,15 @@
    ]
   },
   {
+   "id": "ml_generacion_hipotesis",
+   "nombre": "ML + interpretación humana para generar hipótesis conductuales",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-569"
+   ]
+  },
+  {
    "id": "modelo_datos_tarea",
    "nombre": "UI generada desde un modelo de datos de la tarea (no desde código)",
    "tipo": "intervencion",
@@ -2048,6 +2204,15 @@
    ]
   },
   {
+   "id": "modelos_chatgpt",
+   "nombre": "Modelos ChatGPT-3.5 y 4",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-572"
+   ]
+  },
+  {
    "id": "moderadores_sobrecarga",
    "nombre": "Complejidad del surtido, dificultad de la tarea, incertidumbre de preferencias y meta de ahorrar esfuerzo",
    "tipo": "concepto",
@@ -2063,6 +2228,17 @@
    "grado": 1,
    "fuentes": [
     "F-239"
+   ]
+  },
+  {
+   "id": "muestras_sinteticas_llm",
+   "nombre": "Muestras sintéticas con LLM (personas simuladas que responden encuestas)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-552",
+    "F-553",
+    "F-560"
    ]
   },
   {
@@ -2226,10 +2402,20 @@
    "id": "persuasion_ia",
    "nombre": "Persuasión conversacional por IA",
    "tipo": "intervencion",
-   "grado": 2,
+   "grado": 4,
    "fuentes": [
     "F-489",
-    "F-490"
+    "F-490",
+    "F-585"
+   ]
+  },
+  {
+   "id": "peticiones_trampa",
+   "nombre": "Peticiones de trampa de los principales humanos",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-579"
    ]
   },
   {
@@ -2305,6 +2491,24 @@
    "grado": 1,
    "fuentes": [
     "F-61"
+   ]
+  },
+  {
+   "id": "prediccion_conducta_humana",
+   "nombre": "Predicción de la conducta de participantes no vistos en experimentos",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-563"
+   ]
+  },
+  {
+   "id": "preferencia_candidato",
+   "nombre": "Preferencia por el candidato defendido",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-585"
    ]
   },
   {
@@ -2466,6 +2670,15 @@
    ]
   },
   {
+   "id": "respuestas_casi_uniformes",
+   "nombre": "Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-560"
+   ]
+  },
+  {
    "id": "revenue_figma_q1",
    "nombre": "Ingresos de Figma Q1 2026 (+46%)",
    "tipo": "resultado",
@@ -2517,6 +2730,15 @@
    "grado": 1,
    "fuentes": [
     "F-429"
+   ]
+  },
+  {
+   "id": "salvaguardas_especificas",
+   "nombre": "Salvaguardas prohibitivas específicas de la tarea",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-579"
    ]
   },
   {
@@ -2592,6 +2814,15 @@
    ]
   },
   {
+   "id": "sensibilidad_redaccion_llm",
+   "nombre": "Sensibilidad a la redacción del prompt e inestabilidad en el tiempo",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-552"
+   ]
+  },
+  {
    "id": "sesgo_automatizacion",
    "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
    "tipo": "constructo",
@@ -2617,6 +2848,15 @@
    "grado": 1,
    "fuentes": [
     "F-237"
+   ]
+  },
+  {
+   "id": "sesgo_orden_etiqueta",
+   "nombre": "Sesgos de orden y etiqueta en las respuestas de LLMs a encuestas (p. ej., hacia la opción 'A')",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-560"
    ]
   },
   {
@@ -2664,6 +2904,15 @@
    "grado": 1,
    "fuentes": [
     "F-56"
+   ]
+  },
+  {
+   "id": "sobreajuste_memorizacion",
+   "nombre": "Sobreajuste: el modelo responde a la forma de la tarea, no a su significado",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-564"
    ]
   },
   {
@@ -2846,6 +3095,15 @@
    "grado": 1,
    "fuentes": [
     "F-403"
+   ]
+  },
+  {
+   "id": "variabilidad_respuestas",
+   "nombre": "Variabilidad de las respuestas frente a la población humana",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-552"
    ]
   },
   {
@@ -5804,11 +6062,263 @@
    "fuerza": "causal",
    "fecha": "2026-10-03",
    "clase": "efecto"
+  },
+  {
+   "id": "T-245",
+   "s": "centaur",
+   "p": "aumenta",
+   "o": "prediccion_conducta_humana",
+   "f": "F-563",
+   "apoyo": "Nature 2025: Centaur captura la conducta de participantes no vistos mejor que los modelos cognitivos existentes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-246",
+   "s": "centaur",
+   "p": "aumenta",
+   "o": "alineacion_actividad_neural",
+   "f": "F-563",
+   "apoyo": "Nature 2025: tras el afinamiento, las representaciones internas del modelo se alinean más con la actividad neural humana.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-247",
+   "s": "centaur",
+   "p": "respalda",
+   "o": "c_centaur_generaliza",
+   "f": "F-563",
+   "apoyo": "Nature 2025: generaliza a historias de cobertura no vistas, modificaciones estructurales de la tarea y dominios completamente nuevos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-248",
+   "s": "sobreajuste_memorizacion",
+   "p": "contradice",
+   "o": "c_centaur_generaliza",
+   "f": "F-564",
+   "apoyo": "NSO 2026 (Zhejiang), vía cobertura de prensa: al reemplazar el enunciado por 'Please choose option A', Centaur siguió eligiendo las respuestas del conjunto original; responde a la forma de la tarea, no al significado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-249",
+   "s": "ml_generacion_hipotesis",
+   "p": "aumenta",
+   "o": "hipotesis_interpretables",
+   "f": "F-569",
+   "apoyo": "QJE 2024: procedimiento semiautomático que combina ML e interpretación humana; con solo la foto de ficha, un modelo predice decisiones de detención de jueces y capta hasta la mitad de la variación predecible.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-250",
+   "s": "muestras_sinteticas_llm",
+   "p": "reduce",
+   "o": "variabilidad_respuestas",
+   "f": "F-552",
+   "apoyo": "Political Analysis 2024: con personas simuladas, las medias de ChatGPT se parecen a ANES 2016-2020, pero hay menos variación que en las encuestas reales y los coeficientes de regresión difieren.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-251",
+   "s": "variabilidad_respuestas",
+   "p": "respalda",
+   "o": "c_sinteticas_menos_varianza",
+   "f": "F-552",
+   "apoyo": "Political Analysis 2024: menos variación en las respuestas sintéticas que en las reales (termómetros de 11 grupos).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-252",
+   "s": "sensibilidad_redaccion_llm",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-552",
+   "apoyo": "Political Analysis 2024: el muestreo con ChatGPT no es fiable para inferencia; la distribución cambia con cambios menores de redacción y el mismo prompt da resultados distintos en 3 meses.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-253",
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "aplanamiento_identidades",
+   "f": "F-553",
+   "apoyo": "Nature Machine Intelligence 2025: argumento analítico y estudios con 3.200 personas de 16 identidades y 4 LLMs muestran que los modelos retratan mal y aplanan a los grupos demográficos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-254",
+   "s": "aplanamiento_identidades",
+   "p": "respalda",
+   "o": "c_sinteticas_menos_varianza",
+   "f": "F-553",
+   "apoyo": "Nature Machine Intelligence 2025: el aplanamiento de las representaciones de cada grupo es menos diversidad dentro del grupo que la humana.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-255",
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "sesgo_orden_etiqueta",
+   "f": "F-560",
+   "apoyo": "NeurIPS 2024: en 43 modelos, las respuestas a la ACS del Censo de EE.UU. están gobernadas por sesgos de orden y etiqueta (p. ej., hacia respuestas etiquetadas 'A').",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-256",
+   "s": "respuestas_casi_uniformes",
+   "p": "contradice",
+   "o": "c_sinteticas_menos_varianza",
+   "f": "F-560",
+   "apoyo": "NeurIPS 2024: al aleatorizar el orden de respuesta, los modelos tienden a respuestas uniformemente aleatorias sin importar tamaño ni datos; parecen representar mejor a los subgrupos cuyas estadísticas están más cerca de la uniforme.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-257",
+   "s": "escala_modelo_llm",
+   "p": "aumenta",
+   "o": "errores_intuitivos_llm",
+   "f": "F-572",
+   "apoyo": "Nature Computational Science 2023: a medida que los modelos GPT crecen en tamaño y competencia lingüística, muestran más pensamiento intuitivo tipo sistema 1 y sus errores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-258",
+   "s": "modelos_chatgpt",
+   "p": "reduce",
+   "o": "errores_intuitivos_llm",
+   "f": "F-572",
+   "apoyo": "Nature Computational Science 2023: ChatGPT-3.5 y 4 tienden a responder bien y evitan las trampas, incluso cuando se les impide razonar en cadena.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-259",
+   "s": "delegacion_ia_metas",
+   "p": "aumenta",
+   "o": "peticiones_trampa",
+   "f": "F-579",
+   "apoyo": "Nature 2025: las peticiones de trampa aumentan cuando el principal puede inducir la deshonestidad sin decirle a la máquina qué hacer (aprendizaje supervisado o metas de alto nivel), con delegación voluntaria u obligatoria.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-260",
+   "s": "agentes_maquina_delegados",
+   "p": "aumenta",
+   "o": "cumplimiento_deshonesto",
+   "f": "F-579",
+   "apoyo": "Nature 2025: las máquinas fueron mucho más propensas que los agentes humanos a ejecutar instrucciones totalmente deshonestas.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-261",
+   "s": "salvaguardas_especificas",
+   "p": "reduce",
+   "o": "cumplimiento_deshonesto",
+   "f": "F-579",
+   "apoyo": "Nature 2025: el cumplimiento se puede frenar, pero por lo general no eliminar, con salvaguardas prohibitivas específicas de la tarea.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-262",
+   "s": "persuasion_ia",
+   "p": "aumenta",
+   "o": "preferencia_candidato",
+   "f": "F-585",
+   "apoyo": "Nature 2025: experimentos preregistrados en las elecciones de EE.UU. 2024, Canadá 2025 y Polonia 2025; efectos sobre la preferencia de candidato mayores que los de los anuncios de video tradicionales; la IA usó hechos y evidencia, no técnicas psicológicas sofisticadas.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-263",
+   "s": "persuasion_ia",
+   "p": "asocia_con",
+   "o": "afirmaciones_inexactas_ia",
+   "f": "F-585",
+   "apoyo": "Nature 2025: los modelos que defendían a candidatos de derecha hicieron más afirmaciones inexactas en los tres países.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-264",
+   "s": "asistente_ia_soporte",
+   "p": "aumenta",
+   "o": "casos_resueltos_hora",
+   "f": "F-580",
+   "apoyo": "QJE 2025: con la introducción escalonada del asistente en 5.172 agentes de soporte, los casos resueltos por hora suben ≈14% en promedio.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-265",
+   "s": "experiencia_trabajador",
+   "p": "modera",
+   "o": "casos_resueltos_hora",
+   "f": "F-580",
+   "apoyo": "QJE 2025: los novatos y menos hábiles mejoran ≈34%; los más experimentados casi no cambian (la IA difunde el saber tácito de los mejores).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
   }
  ],
  "generado": "2026-10-03",
  "cobertura": {
-  "procesadas": 136,
-  "total": 542
+  "procesadas": 146,
+  "total": 645
  }
 }

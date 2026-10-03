@@ -355,6 +355,32 @@
    "triples": 7,
    "sin_aporte": [],
    "notas": "Lote de amplitud (fuentes nuevas) con resúmenes oficiales. F-250 se dejó fuera: solo se ubicó la autoría, no los resultados."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-563",
+    "F-564",
+    "F-569",
+    "F-552",
+    "F-553"
+   ],
+   "triples": 10,
+   "sin_aporte": [],
+   "notas": "Lote de la tanda de convergencia psico-econ-IA, con resúmenes oficiales verificados el 2026-10-03 (Nature, Political Analysis, NMI, QJE). F-564 queda en 'ficha': solo se leyó su cobertura de prensa (ScienceDaily, Neuroscience News), no el resumen de NSO. F-553: se verificó la publicación en Nature Machine Intelligence (2025, pp. 1-12)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-560",
+    "F-572",
+    "F-579",
+    "F-585",
+    "F-580"
+   ],
+   "triples": 11,
+   "sin_aporte": [],
+   "notas": "Lote de la tanda de convergencia psico-econ-IA con resúmenes oficiales verificados el 2026-10-03 (NeurIPS, Nature Computational Science, Nature, QJE). F-560 contradice la afirmación de varianza comprimida de F-552/F-553: los estudios miden cosas distintas (persona simulada con termómetros vs. opción múltiple de la ACS sin persona). El node de convergencia citaba F-560 como apoyo de 'varianza comprimida' (§2.1, §2.6): se corrige en el node. La ficha del ledger queda con discrepancia abierta hasta que el usuario autorice."
   }
  ],
  "discrepancias": [
@@ -546,6 +572,12 @@
    "detalle": "Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales.",
    "estado": "cerrada",
    "resolucion": "Cerrada: ficha y node de diseño corregidos el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-560",
+   "detalle": "El resumen del ledger dice 'sin la entropía de las respuestas humanas'. El resumen oficial dice lo contrario: corregido el orden, los modelos tienden a respuestas **uniformemente aleatorias** (más dispersión, no menos). Es un hallazgo mal registrado: su corrección requiere autorización del usuario.",
+   "estado": "abierta"
   }
  ],
  "resoluciones": [
@@ -668,6 +700,24 @@
    "estado": "matizada",
    "fecha": "2026-10-03",
    "nota": "La versión general ('más opciones empeoran la decisión') queda refutada: el meta-análisis de 50 experimentos da un efecto medio cercano a cero (F-119). Sobrevive una versión condicional: la sobrecarga aparece con surtidos complejos, tareas difíciles, preferencias inciertas o meta de ahorrar esfuerzo (F-120). El estudio de las mermeladas (F-121) es un caso de campo dentro de esas condiciones, no una ley general."
+  },
+  {
+   "triple": "T-248",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-03",
+   "nota": "Centaur (F-563, Nature) muestra predicción y generalización a historias, estructuras y dominios nuevos; la prueba de Zhejiang (F-564, NSO, leída solo vía prensa) muestra que ante 'elige la opción A' sigue dando las respuestas originales, es decir, que parte del desempeño puede ser memorización de la forma de la tarea. No se resuelve leyendo resúmenes: haría falta una réplica independiente con tareas de significado alterado (PE4 del node de convergencia)."
+  },
+  {
+   "triple": "T-252",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-03",
+   "nota": "Bisbee et al. (F-552, Political Analysis) prueban directamente el uso de ChatGPT como reemplazo de la ANES: medias parecidas, pero menos variación, coeficientes de regresión distintos, sensibilidad a la redacción e inestabilidad en 3 meses. Concluyen que no sirve para inferencia estadística. La afirmación refutada es la versión fuerte (reemplazo para inferencia); el uso exploratorio queda fuera de esta refutación."
+  },
+  {
+   "triple": "T-256",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-03",
+   "nota": "Bisbee (F-552) y Wang et al. (F-553) condicionan al modelo con una persona y miden termómetros o grupos de identidad: la respuesta sintética sale más homogénea que la humana. Dominguez-Olmedo et al. (F-560) preguntan la ACS en opción múltiple, sin persona y con el orden aleatorizado: la respuesta tiende a la uniforme (más dispersa). Ambos hallazgos dicen lo mismo de fondo (la distribución sintética no es la humana), pero la dirección del error depende del método: no hay que afirmar 'menos varianza' en general."
   }
  ]
 }

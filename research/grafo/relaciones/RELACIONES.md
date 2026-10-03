@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **136 de 542** (25.1%) |
-| …del cerebro de diseño (citadas en el node) | 104 de 272 |
-| …por rigor | A 90/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
-| Barridos | 20 |
-| Entidades | 309 |
-| Relaciones | 244 |
-| Nivel de lectura | abstract 147 · ficha 97 |
-| Fuerza de las afirmaciones | causal 83 · descriptiva 67 · observacional 53 · teorica 41 |
+| Fuentes procesadas | **146 de 645** (22.6%) |
+| …del cerebro de diseño (citadas en el node) | 104 de 273 |
+| …por rigor | A 100/179 · B 22/107 · C 20/169 · D 3/143 · E 1/33 |
+| Barridos | 22 |
+| Entidades | 337 |
+| Relaciones | 265 |
+| Nivel de lectura | abstract 167 · ficha 98 |
+| Fuerza de las afirmaciones | causal 89 · descriptiva 74 · observacional 61 · teorica 41 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 49 |
-| `asocia_con` | efecto | 37 |
-| `reduce` | efecto | 31 |
+| `aumenta` | efecto | 57 |
+| `asocia_con` | efecto | 38 |
+| `reduce` | efecto | 34 |
 | `aplica_a` | estructura | 29 |
-| `tiene_limite` | metodo | 20 |
-| `contradice` | evidencia | 14 |
-| `modera` | efecto | 13 |
-| `respalda` | evidencia | 11 |
+| `tiene_limite` | metodo | 22 |
+| `contradice` | evidencia | 16 |
+| `modera` | efecto | 14 |
+| `respalda` | evidencia | 14 |
 | `mide` | metodo | 10 |
 | `es_tipo_de` | estructura | 8 |
 | `media` | efecto | 8 |
+| `refuta` | evidencia | 7 |
 | `origina_en` | metodo | 6 |
-| `refuta` | evidencia | 6 |
 | `parte_de` | estructura | 2 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -51,10 +51,13 @@
 | Productividad de desarrolladores | F-257, F-474, F-503 |
 | Penetración de seguros en Perú | F-482, F-483, F-507 |
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
+| Persuasión conversacional por IA | F-489, F-490, F-585 |
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
 | Sesgo de publicación | F-16, F-17, F-21 |
 | Pie en la puerta (pedido pequeño antes del grande) | F-141, F-142, F-143 |
+| Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-552, F-553, F-560 |
+| Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-560 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
@@ -83,7 +86,6 @@
 | Medical care ratio de UnitedHealth (86,7% en el 2T 2026) | F-198, F-480 |
 | Rechazo de cobertura sin fundamento o fuera de plazo | F-484, F-485 |
 | Sanciones de Indecopi a aseguradoras (2026) | F-485, F-486 |
-| Persuasión conversacional por IA | F-489, F-490 |
 | La persuasión de la IA se concentra en personas susceptibles | F-491, F-499 |
 | Descarga cognitiva | F-492, F-493 |
 | Pensamiento crítico | F-492, F-493 |
@@ -107,6 +109,7 @@
 | Número ancla visible antes de juzgar un precio | F-175, F-220 |
 | Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión) | F-221, F-223 |
 | Confianza del consumidor en la aseguradora | F-334, F-335 |
+| Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea) | F-563, F-564 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -170,6 +173,15 @@
 - **Meta-análisis de sobrecarga de elección de Scheibehenne et al. (JCR 2010)** —refuta→ **Más opciones empeoran la decisión de forma general** (F-119, causal) · **estado: matizada**
   - No se halló ninguna condición suficiente para la sobrecarga; con preferencias claras, más opciones es mejor. El efecto general no se sostiene.
   - *Resolución (2026-10-03):* La versión general ('más opciones empeoran la decisión') queda refutada: el meta-análisis de 50 experimentos da un efecto medio cercano a cero (F-119). Sobrevive una versión condicional: la sobrecarga aparece con surtidos complejos, tareas difíciles, preferencias inciertas o meta de ahorrar esfuerzo (F-120). El estudio de las mermeladas (F-121) es un caso de campo dentro de esas condiciones, no una ley general.
+- **Sobreajuste: el modelo responde a la forma de la tarea, no a su significado** —contradice→ **Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea)** (F-564, descriptiva) · **estado: mecanismo_en_disputa**
+  - NSO 2026 (Zhejiang), vía cobertura de prensa: al reemplazar el enunciado por 'Please choose option A', Centaur siguió eligiendo las respuestas del conjunto original; responde a la forma de la tarea, no al significado.
+  - *Resolución (2026-10-03):* Centaur (F-563, Nature) muestra predicción y generalización a historias, estructuras y dominios nuevos; la prueba de Zhejiang (F-564, NSO, leída solo vía prensa) muestra que ante 'elige la opción A' sigue dando las respuestas originales, es decir, que parte del desempeño puede ser memorización de la forma de la tarea. No se resuelve leyendo resúmenes: haría falta una réplica independiente con tareas de significado alterado (PE4 del node de convergencia).
+- **Sensibilidad a la redacción del prompt e inestabilidad en el tiempo** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-552, observacional) · **estado: refutacion_directa**
+  - Political Analysis 2024: el muestreo con ChatGPT no es fiable para inferencia; la distribución cambia con cambios menores de redacción y el mismo prompt da resultados distintos en 3 meses.
+  - *Resolución (2026-10-03):* Bisbee et al. (F-552, Political Analysis) prueban directamente el uso de ChatGPT como reemplazo de la ANES: medias parecidas, pero menos variación, coeficientes de regresión distintos, sensibilidad a la redacción e inestabilidad en 3 meses. Concluyen que no sirve para inferencia estadística. La afirmación refutada es la versión fuerte (reemplazo para inferencia); el uso exploratorio queda fuera de esta refutación.
+- **Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones** —contradice→ **Las respuestas sintéticas con LLM tienen menos varianza que las humanas** (F-560, observacional) · **estado: alcance_distinto**
+  - NeurIPS 2024: al aleatorizar el orden de respuesta, los modelos tienden a respuestas uniformemente aleatorias sin importar tamaño ni datos; parecen representar mejor a los subgrupos cuyas estadísticas están más cerca de la uniforme.
+  - *Resolución (2026-10-03):* Bisbee (F-552) y Wang et al. (F-553) condicionan al modelo con una persona y miden termómetros o grupos de identidad: la respuesta sintética sale más homogénea que la humana. Dominguez-Olmedo et al. (F-560) preguntan la ACS en opción múltiple, sin persona y con el orden aleatorizado: la respuesta tiende a la uniforme (más dispersa). Ambos hallazgos dicen lo mismo de fondo (la distribución sintética no es la humana), pero la dirección del error depende del método: no hay que afirmar 'menos varianza' en general.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -242,6 +254,7 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente).
 - ✅ **F-334** (2026-10-03, cerrada): Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales.
   - *Resolución:* Cerrada: ficha y node de diseño corregidos el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
+- ⚠️ **F-560** (2026-10-03, abierta): El resumen del ledger dice 'sin la entropía de las respuestas humanas'. El resumen oficial dice lo contrario: corregido el orden, los modelos tienden a respuestas **uniformemente aleatorias** (más dispersión, no menos). Es un hallazgo mal registrado: su corrección requiere autorización del usuario.
 
 ## 7. Registro de barridos
 
@@ -267,6 +280,8 @@
 | 2026-10-03 | F-154, F-156, F-159, F-175, F-176 | 7 | F-154 | Pase de profundidad: evaluación de textos y chatbots con LLM, anclaje de precio y publicidad engañosa. Resúmenes oficiales vía búsqueda. F-154 sin relaciones (solo autoría). |
 | 2026-10-03 | F-220, F-221, F-222, F-223, F-224, F-225, F-228, F-229 | 10 | – | Lote de amplitud con resúmenes oficiales: fundamentos conductuales del Playbook del Asesor (anclaje, aversión a la pérdida, encuadre, dotación, prueba social, fluidez, carga cognitiva) y segmentación  |
 | 2026-10-03 | F-230, F-248, F-252, F-334, F-335, F-337 | 7 | – | Lote de amplitud (fuentes nuevas) con resúmenes oficiales. F-250 se dejó fuera: solo se ubicó la autoría, no los resultados. |
+| 2026-10-03 | F-563, F-564, F-569, F-552, F-553 | 10 | – | Lote de la tanda de convergencia psico-econ-IA, con resúmenes oficiales verificados el 2026-10-03 (Nature, Political Analysis, NMI, QJE). F-564 queda en 'ficha': solo se leyó su cobertura de prensa (S |
+| 2026-10-03 | F-560, F-572, F-579, F-585, F-580 | 11 | – | Lote de la tanda de convergencia psico-econ-IA con resúmenes oficiales verificados el 2026-10-03 (NeurIPS, Nature Computational Science, Nature, QJE). F-560 contradice la afirmación de varianza compri |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

@@ -17,7 +17,7 @@
   {
    "id": "convergencia-psicologia-economia-ia",
    "type": "node",
-   "lines": 242,
+   "lines": 244,
    "cites": 115,
    "design": false
   },
@@ -12002,20 +12002,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 542,
+    "fuentes": 645,
     "rigor": {
-     "B": 101,
-     "A": 146,
-     "C": 128,
-     "D": 123,
+     "B": 107,
+     "A": 179,
+     "C": 169,
+     "D": 143,
      "?": 14,
-     "E": 30
+     "E": 33
     },
-    "nodes": 16,
+    "nodes": 17,
     "outputs": 4,
-    "wikilinks": 84,
+    "wikilinks": 96,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 437,
+    "fuentes_citadas_en_nodes": 540,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -12032,11 +12032,11 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1999,
-     "cites": 272
+     "lines": 2000,
+     "cites": 273
     },
     "fecha": "2026-10-03",
-    "commit": "53270a3",
+    "commit": "2d6b48a",
     "fuente": "git"
    }
   ],

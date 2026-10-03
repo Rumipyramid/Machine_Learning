@@ -24,7 +24,7 @@ La convergencia ocurre en **cinco frentes**, y cada uno tiene una pregunta disti
 
 ## 1. Resumen ejecutivo
 
-- 🔬 **Empírica (la más sólida):** la convergencia es real y ya produce ciencia publicada en *Nature*, *Science*, *PNAS*, *QJE* y *JPE*. Pero el frente más vendido (**LLMs como reemplazo de personas**) es también el **más refutado**: los modelos aciertan la dirección de muchos efectos clásicos (F-544, F-550) pero **comprimen la varianza, inflan los efectos y exageran las diferencias entre segmentos** (F-552, F-553, F-556, F-558, F-559, F-560). El frente más prometedor es otro: **usar la IA para generar hipótesis** que luego se prueban con personas reales (F-569, F-570).
+- 🔬 **Empírica (la más sólida):** la convergencia es real y ya produce ciencia publicada en *Nature*, *Science*, *PNAS*, *QJE* y *JPE*. Pero el frente más vendido (**LLMs como reemplazo de personas**) es también el **más refutado**: los modelos aciertan la dirección de muchos efectos clásicos (F-544, F-550) pero **no reproducen la distribución humana, inflan los efectos y exageran las diferencias entre segmentos** (F-552, F-553, F-556, F-558, F-559, F-560). El frente más prometedor es otro: **usar la IA para generar hipótesis** que luego se prueban con personas reales (F-569, F-570).
 - 📱 **Social:** la conversación pública **no** es sobre la convergencia académica; es sobre (a) la IA que manipula o adula (🔥 instalado: GPT-4o, caso Zúrich, "psicosis por IA") y (b) las encuestas hechas con bots (🌡️ caliente, polarizado: vendedores y VC contra encuestadoras y académicos). La economía conductual llega con la reputación golpeada (segunda retracción de Ariely en sep-2026, F-615).
 - 📈 **Negocio:** mucho **capital** y poca **tracción verificable**. Simile vale US$2.000M sin ARR público (F-620); Aaru tiene ARR menor a US$10M (F-617). El comercio agéntico tiene rieles pero no demanda: OpenAI retiró su botón de compra (F-632). Lo que sí crece es la investigación **asistida** por IA con personas reales (F-623) y la detección de bots en paneles (F-643, F-644). La consultoría conductual clásica se contrae (F-629).
 - ⚖️ **Convergen las tres pistas** en una sola idea: **la IA es buena para dar dirección y mala para dar magnitudes y segmentos.** **Divergen** en el entusiasmo: el dinero apuesta al reemplazo sintético, la ciencia lo desaconseja y el debate social está en otra parte.
@@ -41,7 +41,7 @@ La convergencia ocurre en **cinco frentes**, y cada uno tiene una pregunta disti
 - Un agente construido con **entrevistas de 2 horas** a personas reales reproduce sus respuestas a la GSS al 85% **normalizado** por la propia inconsistencia humana (F-549, preprint). ⚠️ Eco: circula como "85% de precisión".
 
 **Lo documentado en contra (magnitudes, varianza, segmentos), con más fuentes independientes y de más rigor:**
-- **Varianza comprimida:** las respuestas sintéticas son más homogéneas que las humanas (F-552, F-553, F-559, F-560). La causa es la propia forma de entrenar los modelos (F-553).
+- **La distribución no es la humana, y la dirección del error depende del método:** con una persona simulada, las respuestas sintéticas salen **más homogéneas** que las humanas (F-552, F-553, F-559); la causa es la propia forma de entrenar los modelos (F-553). Sin persona y con el orden de las opciones aleatorizado, salen **casi uniformemente aleatorias** (F-560). ⚠️ *Corregido 2026-10-03 (lote 023 del grafo):* la versión anterior citaba F-560 como apoyo de 'varianza comprimida'; su resumen oficial dice lo contrario. Tensión T-256, resuelta como alcance distinto.
 - **Efectos inflados y falsos positivos:** en 154 réplicas, solo 19% de los intervalos contiene el efecto original y hay 71,6% de resultados significativos donde el original era nulo (F-556, preprint). El mejor predictor también sobreestima los tamaños de efecto (F-550).
 - **Segmentos inventados:** los LLMs exageran 2-4 veces las diferencias entre grupos demográficos y elegirían el segmento equivocado en la mitad de los casos; un modelo más grande no lo corrige (F-558, preprint). Los gemelos digitales correlacionan ≈0,2 con su humano y rinden peor en personas con menos educación e ingresos (F-559, preprint).
 - **Representan mal a algunos grupos:** la opinión de los LLMs se desalinea de la pública tanto como demócratas de republicanos; mayores de 65 quedan peor representados (F-548). Aplanan y estereotipan identidades (F-553).
@@ -187,6 +187,7 @@ Datos de 2025-2026, casi todos autodeclarados. Las valoraciones de Simile y Aaru
 |---|---|---|
 | Los LLMs aciertan la dirección de muchos efectos clásicos | 🟢 Documentado | F-544, F-545, F-550, F-590 |
 | Los LLMs pueden reemplazar a personas para estimar magnitudes o varianzas | 🔴 Refutado por fuentes independientes | F-552, F-553, F-556, F-559, F-560 |
+| Las respuestas sintéticas tienen menos varianza que las humanas (en general) | 🟡 Depende del método: menos con persona simulada (F-552, F-553), casi uniforme sin ella (F-560) | T-256 |
 | Las muestras sintéticas exageran las diferencias entre segmentos | 🟡 Un preprint fuerte, coherente con evidencia publicada | F-558, F-553 |
 | El ML predice la conducta mejor que las teorías clásicas | 🟢 Documentado | F-563, F-566, F-568 |
 | El ML sirve para generar hipótesis conductuales nuevas | 🟢 Documentado (*QJE*), un documento de trabajo lo extiende | F-569, F-570 |
@@ -221,6 +222,7 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 | # | Fecha | Foco | Qué cambió | Pendiente |
 |---|---|---|---|---|
 | 1 | 2026-10-03 | Creación del node con `/trinidad`: tres pistas en paralelo sobre cinco frentes | **Creación.** 103 fuentes (F-543 a F-645); 8 hipótesis (PE1-PE8); implicaciones para `lapuerta` (§6) | Leer textos completos (todo fue por resumen); verificar la publicación de F-550 en *Nature* y la de F-553; hilos reales de Reddit/HN; datos de Perú y LatAm; probar PE1-PE2 con `lapuerta` |
+| 1b | 2026-10-03 | Paso al grafo semántico (lotes 022-023): 10 fuentes con resumen oficial verificado | **Autocorrección:** F-560 decía lo contrario de lo que se le atribuía (§2.1). F-553 confirmado en *Nature Machine Intelligence* 2025. Centaur vs. su crítica queda como tensión abierta (T-248, mecanismo en disputa); la refutación del reemplazo para inferencia queda resuelta (T-252) | Autorizar la corrección de la ficha F-560 en el ledger; leer el resumen oficial de F-564 |
 
 ## 10. Limitaciones
 
