@@ -5482,6 +5482,40 @@ marqué F-203 como *por verificar* para `cronista`; mantengo en cero el peso de 
 - **Leído a fondo:** 2026-10-02 (`WebSearch`; allianz.com aparece en resultados, texto no abierto)
 - **Conexión razonada, no forzada:** F-193 como contraste; node mecanismos-seguros-salud.
 
+### 169. Validación técnica no es validación clínica: preguntar qué evidencia de uso real respalda al sistema, no solo su precisión
+F-62 (marco FDA para SaMD con IA/ML, vía revisión académica). La búsqueda de hoy confirma la distinción
+(analítica/técnica: el software procesa bien el input; clínica: el output sirve a la finalidad en la población
+objetivo y el contexto de uso real) y agrega un dato incómodo: alrededor de la mitad de los dispositivos de IA
+autorizados por FDA no reportaba datos de validación clínica, porque la vía 510(k) admite datos no clínicos por
+equivalencia. **Heurística:** "tiene aprobación/sello" no responde si fue validado en uso real; pedir qué tipo
+de validación respalda el sello. Aplicable a cualquier triage con IA que se presente como "validado". No abrí el
+PDF de medRxiv ni encontré datos de Omaolo en la búsqueda; la cifra de "la mitad" es de una nota de prensa
+médica, no verificada contra el estudio original.
+- **Fuente:** F-62 (🔵B)
+- **Leído a fondo:** 2026-10-03 (`WebSearch`; PDF original no abierto)
+- **Conexión razonada, no forzada:** modelo salud-IA-farmacias (silent trial, doble validación).
+
+### 170. Un hallazgo que beneficia a quien lo publica no se descarta, se rebaja: separar el dato del incentivo
+F-455 (BCG). El comunicado oficial confirma revenue 2025 de US$14,4 mil M (+7%, 22.º año de crecimiento; servicios
+de IA/tecnología >40%), pero sigue siendo autorreportado de una empresa privada. La encuesta de innovación
+(>1.000 ejecutivos; 3% "listo" en 2024 vs. 20% en 2022) es el tipo de cifra que expande el mercado de quien
+vende la cura. **Heurística:** ante un hallazgo alarmista de un vendedor, usar la dirección (cayó) con cautela
+y la magnitud (3%) como instinto hasta ver una réplica independiente; el incentivo no invalida, baja la confianza.
+- **Fuente:** F-455 (🟠D revenue / 🔵B encuesta, según ledger)
+- **Leído a fondo:** 2026-10-03 (`WebSearch`; comunicado de BCG en resultados, texto no abierto)
+- **Conexión razonada, no forzada:** node tendencias-diseno-innovacion (§12.6).
+
+### 171. Un ranking de innovación se lee por sus dos sub-índices: Perú puede estar fallando en convertir, no en invertir
+F-466 (WIPO GII). Perfil 2025 del país: puesto 80 de 139, 8.º de 21 en LatAm y Caribe, 23.º de 36 en ingreso
+medio-alto, **72.º en insumos y 91.º en productos**. Es decir, rinde peor en lo que sale que en lo que entra.
+**Heurística:** antes de concluir "falta inversión en innovación", comparar insumos vs. productos; el diagnóstico
+y la jugada cambian. La edición 2026 está anunciada como publicada, pero la búsqueda de hoy no devolvió el
+puesto de Perú; no lo cito y queda como fecha de falsación pendiente para `cronista`.
+- **Fuente:** F-466 (🔵B; fuente primaria WIPO)
+- **Leído a fondo:** 2026-10-03 (`WebSearch`; PDF de perfil 2025 en resultados, no abierto)
+- **Conexión razonada, no forzada:** node tendencias-diseno-innovacion (§12.4).
+
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5649,57 +5683,7 @@ marqué F-203 como *por verificar* para `cronista`; mantengo en cero el peso de 
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
-  (🔵B) sin cambio de confianza en tesis.
-- **2026-09-03** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
-  `git pull` fast-forward 5612e59→3156ce7, trajo el commit de ayer de esta opinión y de
-  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por
-  conteo directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó
-  la corrida de ayer (2026-09-02), **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoprimer día seguido
-  sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso — el
-  último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`, cada
-  ~3 días, ya lleva veintidós días sin correr; no lo disparo aquí porque es rutina de `cronista`,
-  no de este proceso diario). Sí corrió la rutina diaria de intuición (vigesimonovena corrida desde
-  el 2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A **que
-  efectivamente empiezan con 🟢** (tres filas del ledger —F-149, F-457, F-466— mencionan 🟢 dentro
-  del texto de su celda de rigurosidad sin ser su nivel real, un falso positivo que corrigió el
-  conteo de 137 a **134**, el mismo número exacto que reportaron las corridas previas) — de esas
-  134, 81 ya tenían lectura profunda del Lobo; de las 53 restantes elegí 3 al azar puro (Python
-  `random.sample`, sin `--seed`): F-442 (RCT nacional de UBI/telemática simulado, ya citado a fondo
-  como evidencia central de tesis 7, y también re-registrado en `_nodes/tendencias-diseno-
-  innovacion.md` §12.4 solo por su titular agregado), F-223 (Kahneman, Knetsch & Thaler 1990,
-  endowment effect — ya citado en `proyecto-back-to-basics-ffvv-vida.md` §5 solo por su hallazgo
-  general de dotación) y F-153 (chatbot de seguros, *Journal of Organizational Computing and
-  Electronic Commerce* 2024 — ya citado en /seeker 2026-07-15 solo por estudiar condiciones
-  necesarias en abstracto). Las tres bloqueadas por el proxy en su URL directa (sciencedirect.com,
-  jstor.org, tandfonline.com); reconstruidas vía búsqueda dirigida (PubMed/TechXplore/Penn
-  Medicine para F-442; PDF espejo de field experiments papers en s3.amazonaws.com más la
-  distinción posterior de Novemsky & Kahneman para F-223; búsqueda dirigida sobre el diseño
-  UTAUT+NCA del propio estudio para F-153) que confirman detalle de mecanismo nuevo en las tres,
-  no solo el resumen de una línea ya citado. Sumé las entradas 82, 83 y 84 de Intuición acumulada:
-  (82) el control con tokens de valor inducido del propio experimento de Kahneman et al. descarta
-  costo de transacción como explicación y aísla el efecto dotación a bienes retenidos para uso, no
-  para intercambio — el framing "ya lo tiene" del Bloque 4 del Playbook del Asesor solo funciona si
-  el resto del guion no empuja al cliente a pensar el seguro como un commodity que se shopea, matiz
-  nuevo para esa pieza de venta consultiva; (83) el Necessary Condition Analysis de F-153 muestra
-  que la facilidad de uso percibida es un cuello de botella duro (no compensable con más confianza
-  o utilidad) específicamente en el tramo alto de aceptación de un chatbot de seguros — percentil
-  90 de facilidad de uso para llegar a percentil 80 de intención, percentil 97 para aceptación
-  plena — heurística nueva para cualquier evaluación de producto de IA conversacional del
-  proyecto; (84) el "efecto se sostiene" que tesis 7 reporta en bloque para el RCT de UBI (F-442,
-  mismo estudio que F-23) resultó ser una asimetría real por brazo, no un resultado parejo: de los
-  tres brazos de tratamiento, solo la meta asignada algorítmicamente siguió mostrando menos
-  frenada y aceleración brusca que el control en el seguimiento post-incentivo — feedback estándar
-  y meta elegida por el propio conductor perdieron esa diferencia en esas dos conductas
-  específicas (la reducción de velocidad sí se sostuvo en los tres); contraintuitivo porque
-  autonomía/elección propia no fue la palanca de durabilidad, matiza tesis 7 sin cambiar su
-  confianza (sigue Alta) ni su dirección. Ninguna tesis de negocio cambió de confianza numérica por
-  esta corrida — es el mecanismo paralelo de intuición, no una revisión de evidencia sobre las
-  tesis existentes, aunque la entrada 84 sí acota el alcance de "el efecto persiste" en tesis 7 y
-  la entrada 82 acota una pieza puntual del Playbook del Asesor. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 27 días de
-  historial (2026-08-08 a hoy), dentro de la ventana de ~30 días — sin podar todavía.
+  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis.
 - **2026-09-04** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
   `git pull` fast-forward 5612e59→f6292dc, trajo el commit de ayer de esta opinión y de
   `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por
@@ -6792,3 +6776,13 @@ marqué F-203 como *por verificar* para `cronista`; mantengo en cero el peso de 
   de F-203 dice Vida y Salud EUR 2.400 M, +11,1%; las fuentes de hoy dicen ≈EUR 1,35-1,4 mil M, −5,1% —
   pendiente de reconciliar por `cronista`; F-203 sin peso en tesis mientras tanto). Poda: 09-02 fusionado al
   resumen; Bitácora cubre 2026-09-03 a hoy. `fuentes_leidas_lobo.md` actualizado.
+- **2026-10-03** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`,
+  que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero fuentes nuevas** —
+  quincuagésimo segundo día sin cambios; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12.
+  Sin cambios en tesis ni confianzas. **Intuición (nivel 🔵B, 41 pendientes, sorteo al azar):** F-62, F-455 y
+  F-466, leídas vía `WebSearch`. Entradas 169 (validación técnica ≠ clínica: ~la mitad de los dispositivos de IA
+  autorizados por FDA no reportaba datos clínicos), 170 (el 3% "listo para innovar" de BCG: dato B de un
+  vendedor de la solución; el revenue 14,4 mil M sí está confirmado en su comunicado, pero sigue siendo
+  autorreportado) y 171 (Perú 80/139 en el GII 2025 con insumos 72.º y productos 91.º: el rezago está en convertir,
+  no en invertir; la edición 2026 no la pude verificar). Poda: 09-03 fusionado al resumen; Bitácora cubre
+  2026-09-04 a hoy. `fuentes_leidas_lobo.md` actualizado.

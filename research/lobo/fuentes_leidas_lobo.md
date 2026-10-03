@@ -186,3 +186,6 @@
 | F-193 | 🔵 B | 2026-10-02 | Intuición 166 — un margen de 1,8% por semestre es compresión (costo médico +16,2% vs. prima +15,3%), no el nivel normal; mirar dirección y causa |
 | F-197 | 🔵 B | 2026-10-02 | Intuición 167 — un tope regulatorio de margen se mide también por el gasto evitado, no solo por el reembolso (~USD 11,8 mil M en 2012-2023) |
 | F-203 | 🔵 B | 2026-10-02 | Intuición 168 — la cifra de Vida y Salud de la ficha (EUR 2.400 M, +11,1%) no coincide con las fuentes de hoy (≈EUR 1,35-1,4 mil M, −5,1%); reconciliar antes de usarla como contraste |
+| F-62 | 🔵 B | 2026-10-03 | Intuición 169 — validación técnica ≠ clínica: pedir qué evidencia de uso real respalda un sello de aprobación |
+| F-455 | 🔵 B | 2026-10-03 | Intuición 170 — un hallazgo que beneficia a quien lo publica se rebaja (no se descarta): separar dato de incentivo |
+| F-466 | 🔵 B | 2026-10-03 | Intuición 171 — un ranking de innovación se lee por insumos vs. productos; Perú rinde peor en lo que sale (91.º) que en lo que entra (72.º) |
