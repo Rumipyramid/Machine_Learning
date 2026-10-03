@@ -289,6 +289,24 @@
    "triples": 8,
    "sin_aporte": [],
    "notas": "Pase de profundidad (relaciones.py next --mejorar): ayudas de decisión, pictogramas de riesgo y pie en la puerta para datos personales. Resúmenes oficiales vía búsqueda. Tres fichas con autoría o hallazgo mal registrados."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f_ids": [
+    "F-144",
+    "F-147",
+    "F-148",
+    "F-150",
+    "F-153"
+   ],
+   "triples": 5,
+   "sin_aporte": [
+    {
+     "f": "F-153",
+     "nota": "Solo se verificó la autoría y el método (PLS-SEM más análisis de condiciones necesarias, con muestras separadas de asegurados y de profesionales); los resultados no se leyeron. No se extraen relaciones hasta leerlos."
+    }
+   ],
+   "notas": "Pase de profundidad (relaciones.py next --mejorar): paradoja de la privacidad y escalas para evaluar agentes conversacionales. Resúmenes oficiales vía búsqueda. F-153 queda sin relaciones (solo método)."
   }
  ],
  "discrepancias": [
@@ -417,6 +435,16 @@
    "detalle": "La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023.",
    "estado": "cerrada",
    "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-150",
+   "detalle": "La ficha pone a la revista como autor ('Personal and Ubiquitous Computing (Springer)'). El artículo es de Borsci y colegas (grupo que creó la BUS-11; autoría exacta del artículo de 2024 no confirmada), DOI 10.1007/s00779-024-01834-4."
+  },
+  {
+   "fecha": "2026-10-03",
+   "f": "F-153",
+   "detalle": "La ficha pone a la editorial como autor ('Taylor & Francis'). Los autores son Jorge de Andrés-Sánchez y Jaume Gené-Albesa; revista Journal of Organizational Computing and Electronic Commerce, 2024, DOI 10.1080/10919392.2024.2435118."
   }
  ],
  "resoluciones": [

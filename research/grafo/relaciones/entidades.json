@@ -104,6 +104,11 @@
   "nombre": "Brecha percepción–realidad (autoestimación vs. desempeño)",
   "tipo": "concepto"
  },
+ "bus11": {
+  "id": "bus11",
+  "nombre": "Escala de usabilidad de chatbots BUS-11",
+  "tipo": "metrica"
+ },
  "c_adulacion_indistinguible": {
   "id": "c_adulacion_indistinguible",
   "nombre": "Los usuarios no distinguen una IA aduladora de una que no lo es",
@@ -494,6 +499,11 @@
   "nombre": "Costo de IA / inferencia",
   "tipo": "concepto"
  },
+ "costos_dialogo": {
+  "id": "costos_dialogo",
+  "nombre": "Costos del diálogo (duración, turnos, errores)",
+  "tipo": "metrica"
+ },
  "crecimiento_prima_root": {
   "id": "crecimiento_prima_root",
   "nombre": "Crecimiento de prima devengada de Root (−1%)",
@@ -668,6 +678,16 @@
   "id": "exito_proyecto_innovacion",
   "nombre": "Éxito de proyectos de innovación",
   "tipo": "resultado"
+ },
+ "exito_tarea_agente": {
+  "id": "exito_tarea_agente",
+  "nombre": "Éxito de la tarea en un agente conversacional",
+  "tipo": "metrica"
+ },
+ "experiencia_subjetiva_voz": {
+  "id": "experiencia_subjetiva_voz",
+  "nombre": "Experiencia subjetiva con sistemas de voz (precisión percibida, agrado, carga, molestia, habitabilidad, velocidad)",
+  "tipo": "constructo"
  },
  "explicabilidad_ia": {
   "id": "explicabilidad_ia",
@@ -954,6 +974,11 @@
   "nombre": "Cifra vista en resúmenes secundarios; texto de HBR no abierto",
   "tipo": "limitacion"
  },
+ "norberg_2007": {
+  "id": "norberg_2007",
+  "nombre": "Estudio de intención vs. conducta de divulgación de Norberg, Horne y Horne (JCA 2007)",
+  "tipo": "estudio"
+ },
  "nudges_a_escala": {
   "id": "nudges_a_escala",
   "nombre": "Nudges a escala (nudge units)",
@@ -1164,6 +1189,16 @@
   "nombre": "Debates con GPT-4 de Salvi et al. (Nature Human Behaviour 2025)",
   "tipo": "estudio"
  },
+ "sassi": {
+  "id": "sassi",
+  "nombre": "Cuestionario SASSI (34 ítems, 6 factores)",
+  "tipo": "metrica"
+ },
+ "satisfaccion_agente": {
+  "id": "satisfaccion_agente",
+  "nombre": "Satisfacción del usuario con un agente conversacional",
+  "tipo": "resultado"
+ },
  "satisfaccion_carga_percibida": {
   "id": "satisfaccion_carga_percibida",
   "nombre": "Satisfacción y carga percibida",
@@ -1268,6 +1303,11 @@
   "id": "ubi_telematica",
   "nombre": "UBI / seguro basado en telemática",
   "tipo": "intervencion"
+ },
+ "usabilidad_chatbot": {
+  "id": "usabilidad_chatbot",
+  "nombre": "Usabilidad percibida de un chatbot",
+  "tipo": "constructo"
  },
  "usabilidad_del_generador": {
   "id": "usabilidad_del_generador",

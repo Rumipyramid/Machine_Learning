@@ -1,0 +1,116 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-144",
+  "F-147",
+  "F-148",
+  "F-150",
+  "F-153"
+ ],
+ "entidades": [
+  {
+   "id": "norberg_2007",
+   "nombre": "Estudio de intención vs. conducta de divulgación de Norberg, Horne y Horne (JCA 2007)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "exito_tarea_agente",
+   "nombre": "Éxito de la tarea en un agente conversacional",
+   "tipo": "metrica"
+  },
+  {
+   "id": "costos_dialogo",
+   "nombre": "Costos del diálogo (duración, turnos, errores)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "satisfaccion_agente",
+   "nombre": "Satisfacción del usuario con un agente conversacional",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sassi",
+   "nombre": "Cuestionario SASSI (34 ítems, 6 factores)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "experiencia_subjetiva_voz",
+   "nombre": "Experiencia subjetiva con sistemas de voz (precisión percibida, agrado, carga, molestia, habitabilidad, velocidad)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "bus11",
+   "nombre": "Escala de usabilidad de chatbots BUS-11",
+   "tipo": "metrica"
+  },
+  {
+   "id": "usabilidad_chatbot",
+   "nombre": "Usabilidad percibida de un chatbot",
+   "tipo": "constructo"
+  }
+ ],
+ "triples": [
+  {
+   "s": "norberg_2007",
+   "p": "respalda",
+   "o": "c_paradoja_privacidad",
+   "f": "F-144",
+   "apoyo": "Se preguntó cuánto divulgarían y 12 semanas después lo pidieron investigadores de mercado: divulgaron mucho más de lo que dijeron, incluso datos personales y financieros. Lo de la confianza en la marca de la ficha no se verificó.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "exito_tarea_agente",
+   "p": "aumenta",
+   "o": "satisfaccion_agente",
+   "f": "F-147",
+   "apoyo": "PARADISE (ACL 1997) modela la satisfacción como función del éxito de la tarea menos los costos del diálogo, y normaliza por complejidad para comparar agentes con tareas distintas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "costos_dialogo",
+   "p": "reduce",
+   "o": "satisfaccion_agente",
+   "f": "F-147",
+   "apoyo": "Los costos del diálogo (eficiencia y calidad: duración, turnos, errores) restan a la satisfacción en el modelo; separa lograr la tarea del costo de lograrla.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "sassi",
+   "p": "mide",
+   "o": "experiencia_subjetiva_voz",
+   "f": "F-148",
+   "apoyo": "34 ítems en 6 factores (precisión de respuesta, agrado, carga cognitiva, molestia, habitabilidad, velocidad), de 214-226 cuestionarios en 4 estudios con 8 sistemas de voz.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "bus11",
+   "p": "mide",
+   "o": "usabilidad_chatbot",
+   "f": "F-150",
+   "apoyo": "Re-examinada con 3.186 observaciones sobre 44 chatbots de atención al cliente: la estructura de factores es más simple que la original y la confiabilidad va de buena a excelente.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "sin_aporte": [
+  {
+   "f": "F-153",
+   "nota": "Solo se verificó la autoría y el método (PLS-SEM más análisis de condiciones necesarias, con muestras separadas de asegurados y de profesionales); los resultados no se leyeron. No se extraen relaciones hasta leerlos."
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-150",
+   "detalle": "La ficha pone a la revista como autor ('Personal and Ubiquitous Computing (Springer)'). El artículo es de Borsci y colegas (grupo que creó la BUS-11; autoría exacta del artículo de 2024 no confirmada), DOI 10.1007/s00779-024-01834-4."
+  },
+  {
+   "f": "F-153",
+   "detalle": "La ficha pone a la editorial como autor ('Taylor & Francis'). Los autores son Jorge de Andrés-Sánchez y Jaume Gené-Albesa; revista Journal of Organizational Computing and Electronic Commerce, 2024, DOI 10.1080/10919392.2024.2435118."
+  }
+ ],
+ "notas": "Pase de profundidad (relaciones.py next --mejorar): paradoja de la privacidad y escalas para evaluar agentes conversacionales. Resúmenes oficiales vía búsqueda. F-153 queda sin relaciones (solo método)."
+}

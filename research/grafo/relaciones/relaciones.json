@@ -197,6 +197,15 @@
    ]
   },
   {
+   "id": "bus11",
+   "nombre": "Escala de usabilidad de chatbots BUS-11",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-150"
+   ]
+  },
+  {
    "id": "c_adulacion_indistinguible",
    "nombre": "Los usuarios no distinguen una IA aduladora de una que no lo es",
    "tipo": "afirmacion",
@@ -556,9 +565,10 @@
    "id": "c_paradoja_privacidad",
    "nombre": "La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad)",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-143"
+    "F-143",
+    "F-144"
    ]
   },
   {
@@ -926,6 +936,15 @@
    ]
   },
   {
+   "id": "costos_dialogo",
+   "nombre": "Costos del diálogo (duración, turnos, errores)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-147"
+   ]
+  },
+  {
    "id": "crecimiento_prima_root",
    "nombre": "Crecimiento de prima devengada de Root (−1%)",
    "tipo": "resultado",
@@ -1246,6 +1265,24 @@
    "grado": 1,
    "fuentes": [
     "F-239"
+   ]
+  },
+  {
+   "id": "exito_tarea_agente",
+   "nombre": "Éxito de la tarea en un agente conversacional",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-147"
+   ]
+  },
+  {
+   "id": "experiencia_subjetiva_voz",
+   "nombre": "Experiencia subjetiva con sistemas de voz (precisión percibida, agrado, carga, molestia, habitabilidad, velocidad)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-148"
    ]
   },
   {
@@ -1783,6 +1820,15 @@
    ]
   },
   {
+   "id": "norberg_2007",
+   "nombre": "Estudio de intención vs. conducta de divulgación de Norberg, Horne y Horne (JCA 2007)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-144"
+   ]
+  },
+  {
    "id": "nudges_a_escala",
    "nombre": "Nudges a escala (nudge units)",
    "tipo": "intervencion",
@@ -2174,6 +2220,24 @@
    ]
   },
   {
+   "id": "sassi",
+   "nombre": "Cuestionario SASSI (34 ítems, 6 factores)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-148"
+   ]
+  },
+  {
+   "id": "satisfaccion_agente",
+   "nombre": "Satisfacción del usuario con un agente conversacional",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-147"
+   ]
+  },
+  {
    "id": "satisfaccion_carga_percibida",
    "nombre": "Satisfacción y carga percibida",
    "tipo": "resultado",
@@ -2372,6 +2436,15 @@
     "F-23",
     "F-442",
     "F-449"
+   ]
+  },
+  {
+   "id": "usabilidad_chatbot",
+   "nombre": "Usabilidad percibida de un chatbot",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-150"
    ]
   },
   {
@@ -5028,11 +5101,71 @@
    "fuerza": "causal",
    "fecha": "2026-10-03",
    "clase": "efecto"
+  },
+  {
+   "id": "T-216",
+   "s": "norberg_2007",
+   "p": "respalda",
+   "o": "c_paradoja_privacidad",
+   "f": "F-144",
+   "apoyo": "Se preguntó cuánto divulgarían y 12 semanas después lo pidieron investigadores de mercado: divulgaron mucho más de lo que dijeron, incluso datos personales y financieros. Lo de la confianza en la marca de la ficha no se verificó.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-03",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-217",
+   "s": "exito_tarea_agente",
+   "p": "aumenta",
+   "o": "satisfaccion_agente",
+   "f": "F-147",
+   "apoyo": "PARADISE (ACL 1997) modela la satisfacción como función del éxito de la tarea menos los costos del diálogo, y normaliza por complejidad para comparar agentes con tareas distintas.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-218",
+   "s": "costos_dialogo",
+   "p": "reduce",
+   "o": "satisfaccion_agente",
+   "f": "F-147",
+   "apoyo": "Los costos del diálogo (eficiencia y calidad: duración, turnos, errores) restan a la satisfacción en el modelo; separa lograr la tarea del costo de lograrla.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-03",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-219",
+   "s": "sassi",
+   "p": "mide",
+   "o": "experiencia_subjetiva_voz",
+   "f": "F-148",
+   "apoyo": "34 ítems en 6 factores (precisión de respuesta, agrado, carga cognitiva, molestia, habitabilidad, velocidad), de 214-226 cuestionarios en 4 estudios con 8 sistemas de voz.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-220",
+   "s": "bus11",
+   "p": "mide",
+   "o": "usabilidad_chatbot",
+   "f": "F-150",
+   "apoyo": "Re-examinada con 3.186 observaciones sobre 44 chatbots de atención al cliente: la estructura de factores es más simple que la original y la confiabilidad va de buena a excelente.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-03",
+   "clase": "metodo"
   }
  ],
  "generado": "2026-10-03",
  "cobertura": {
-  "procesadas": 112,
+  "procesadas": 117,
   "total": 542
  }
 }

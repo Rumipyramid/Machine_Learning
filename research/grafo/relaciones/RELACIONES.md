@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **112 de 542** (20.7%) |
-| …del cerebro de diseño (citadas en el node) | 80 de 272 |
-| …por rigor | A 66/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
-| Barridos | 16 |
-| Entidades | 262 |
-| Relaciones | 215 |
-| Nivel de lectura | ficha 119 · abstract 96 |
-| Fuerza de las afirmaciones | causal 72 · descriptiva 67 · observacional 42 · teorica 34 |
+| Fuentes procesadas | **117 de 542** (21.6%) |
+| …del cerebro de diseño (citadas en el node) | 85 de 272 |
+| …por rigor | A 71/146 · B 22/101 · C 20/128 · D 3/123 · E 1/30 |
+| Barridos | 17 |
+| Entidades | 270 |
+| Relaciones | 220 |
+| Nivel de lectura | ficha 119 · abstract 101 |
+| Fuerza de las afirmaciones | causal 73 · descriptiva 67 · observacional 44 · teorica 36 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 41 |
+| `aumenta` | efecto | 42 |
 | `asocia_con` | efecto | 36 |
 | `aplica_a` | estructura | 28 |
-| `reduce` | efecto | 25 |
+| `reduce` | efecto | 26 |
 | `tiene_limite` | metodo | 17 |
 | `contradice` | evidencia | 14 |
 | `modera` | efecto | 13 |
-| `respalda` | evidencia | 10 |
+| `respalda` | evidencia | 11 |
+| `mide` | metodo | 7 |
 | `es_tipo_de` | estructura | 7 |
 | `origina_en` | metodo | 6 |
 | `media` | efecto | 6 |
 | `refuta` | evidencia | 6 |
-| `mide` | metodo | 5 |
 | `parte_de` | estructura | 1 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -102,6 +102,7 @@
 | Sobrecarga de elección (menos compra, satisfacción o confianza al haber más opciones) | F-119, F-120 |
 | Percepción precisa del riesgo | F-122, F-123 |
 | Divulgación de datos personales | F-142, F-143 |
+| La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad) | F-143, F-144 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -219,6 +220,8 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ✅ **F-143** (2026-10-03, cerrada): La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023.
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
+- ⚠️ **F-150** (2026-10-03, abierta): La ficha pone a la revista como autor ('Personal and Ubiquitous Computing (Springer)'). El artículo es de Borsci y colegas (grupo que creó la BUS-11; autoría exacta del artículo de 2024 no confirmada), DOI 10.1007/s00779-024-01834-4.
+- ⚠️ **F-153** (2026-10-03, abierta): La ficha pone a la editorial como autor ('Taylor & Francis'). Los autores son Jorge de Andrés-Sánchez y Jaume Gené-Albesa; revista Journal of Organizational Computing and Electronic Commerce, 2024, DOI 10.1080/10919392.2024.2435118.
 
 ## 7. Registro de barridos
 
@@ -240,6 +243,7 @@
 | 2026-10-03 | F-3, F-10, F-19, F-21, F-60 | 3 | F-3, F-10, F-19 | Pase de profundidad sobre las 5 fuentes A que el grafo tenía solo a nivel ficha (relaciones.py next --mejorar). Resúmenes oficiales vía búsqueda; texto completo no abierto. F-21: 126 RCTs y 23 M de pe |
 | 2026-10-03 | F-61, F-100, F-119, F-120, F-121 | 8 | – | Pase de profundidad (relaciones.py next --mejorar): 5 fuentes A del cerebro de diseño sin relaciones en el grafo. Resúmenes oficiales vía búsqueda. F-121: las cifras 3%/30% no se confirmaron. F-60: ci |
 | 2026-10-03 | F-122, F-123, F-141, F-142, F-143 | 8 | – | Pase de profundidad (relaciones.py next --mejorar): ayudas de decisión, pictogramas de riesgo y pie en la puerta para datos personales. Resúmenes oficiales vía búsqueda. Tres fichas con autoría o hall |
+| 2026-10-03 | F-144, F-147, F-148, F-150, F-153 | 5 | F-153 | Pase de profundidad (relaciones.py next --mejorar): paradoja de la privacidad y escalas para evaluar agentes conversacionales. Resúmenes oficiales vía búsqueda. F-153 queda sin relaciones (solo método |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*
