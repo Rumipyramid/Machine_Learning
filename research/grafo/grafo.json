@@ -1481,8 +1481,8 @@
    "id": "F-150",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Re-examining the chatBot Usability Scale (BUS-11) to assess user experience with customer relationship management chatbots",
-   "autor": "Personal and Ubiquitous Computing (Springer)",
+   "titulo": "Re-examining the chatBot Usability Scale (BUS-11) to assess user experience with customer relationship management chatbots (Personal and Ubi",
+   "autor": "Borsci, S. & Schmettow, M. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía a la revista como autor",
    "anio": "2024",
    "huerfana": false
   },
@@ -1509,7 +1509,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Drivers and Necessary Conditions for Chatbot Acceptance in the Insurance Industry — Analysis of policyholders' and professionals' Perspectiv",
-   "autor": "Taylor & Francis (revista académica)",
+   "autor": "de Andrés-Sánchez, J. & Gené-Albesa, J. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía a la editorial como autor",
    "anio": "2024",
    "huerfana": false
   },
@@ -1518,7 +1518,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Assessing Chatbot Acceptance in Policyholder's Assistance Through the Integration of Explainable Machine Learning and Importance–Performance",
-   "autor": "MDPI Electronics",
+   "autor": "Gené-Albesa, J. & de Andrés-Sánchez, J. (Universitat Rovira i Virgili) — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía a la editorial como autor",
    "anio": "2025",
    "huerfana": false
   },
@@ -1706,8 +1706,8 @@
    "id": "F-175",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "An Experimental Study on Anchoring Effect of Consumers' Price Judgment Based on Consumers' Experiencing Scenes",
-   "autor": "(autores vía PMC/NCBI)",
+   "titulo": "An Experimental Study on Anchoring Effect of Consumers' Price Judgment Based on Consumers' Experiencing Scenes (Frontiers in Psychology)",
+   "autor": "Zong, Y. & Guo, X. (Tianjin University of Commerce) — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía 'autores vía PMC/NCBI'",
    "anio": "2022",
    "huerfana": false
   },
@@ -1715,9 +1715,9 @@
    "id": "F-176",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Price misleading advertising: Effects on trustworthiness toward the source of information and willingness to buy",
-   "autor": "(autor vía ResearchGate / revista académica)",
-   "anio": "s.f.",
+   "titulo": "Price misleading advertising: Effects on trustworthiness toward the source of information and willingness to buy (Journal of Product & Brand",
+   "autor": "Romani, S. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía 'autor vía ResearchGate' y sin año",
+   "anio": "2006",
    "huerfana": false
   },
   {
@@ -10390,7 +10390,7 @@
      "cites": 272
     },
     "fecha": "2026-10-03",
-    "commit": "814ab40",
+    "commit": "db64753",
     "fuente": "git"
    }
   ],

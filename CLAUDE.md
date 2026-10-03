@@ -292,6 +292,10 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   se registra en `research/fuentes/codice.md` (resumen, rigurosidad, autor, año) —
   consultable con el skill `/codice`. Aplica también a lo que traigan `/gossip`
   (noticias/redes) y `/marketer` (benchmarks de negocio), no solo a `/seeker`.
+- **Correcciones al ledger:** cifras, hallazgos, rigor o URL de una ficha solo se corrigen con autorización del
+  usuario. **Excepción permanente (2026-10-03):** autor, año, revista, volumen o DOI faltantes o mal registrados se
+  corrigen sin preguntar cuando se verificaron contra el resumen oficial; se anota en la ficha y se informa al cierre
+  (detalle en `.claude/skills/grafo/SKILL.md`).
 - ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
 
 ---

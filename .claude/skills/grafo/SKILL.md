@@ -35,3 +35,12 @@ datos en `triples.jsonl` y `entidades.json`, vocabulario CERRADO en `vocabulario
 - **Pase de profundidad (selectivo):** `relaciones.py next --mejorar` lista lo procesado solo a nivel ficha; léelo (abstract/texto) y
   reemplaza con un lote nuevo `abstract`/`completa`. Prioriza fuentes que están en tensión (`contradice`) o con discrepancias abiertas.
 - Las correcciones al ledger solo se aplican si la discrepancia se verificó en la fuente y el usuario lo autorizó; se anota la corrección en la propia ficha.
+- **Autorización permanente para datos bibliográficos (regla del usuario, 2026-10-03).** Cuando una ficha tiene
+  **autor, año, revista, volumen o DOI** faltantes o mal registrados (p. ej. la revista o el repositorio como autor,
+  "autores no individualizados", "s.f.") y el dato correcto se **verificó contra el resumen oficial o la página
+  del editor**, se corrige **sin preguntar**: se anota "⚠️ corregido AAAA-MM-DD (autoría verificada contra el
+  resumen oficial)" en la ficha, la discrepancia se registra en el lote **ya cerrada** con su `resolucion`, y se
+  informa al usuario al cierre del lote.
+  - **No cubre** (sigue pidiendo permiso): cambios de **cifras, hallazgos, conclusiones, rigor (A-E) o URL**,
+    ni datos bibliográficos que no se pudieron verificar (esos quedan como discrepancia abierta).
+  - Si la corrección de autoría afecta lo que un node atribuye a esa fuente, el node también requiere permiso.

@@ -220,11 +220,16 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ✅ **F-143** (2026-10-03, cerrada): La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023.
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
-- ⚠️ **F-150** (2026-10-03, abierta): La ficha pone a la revista como autor ('Personal and Ubiquitous Computing (Springer)'). El artículo es de Borsci y colegas (grupo que creó la BUS-11; autoría exacta del artículo de 2024 no confirmada), DOI 10.1007/s00779-024-01834-4.
-- ⚠️ **F-153** (2026-10-03, abierta): La ficha pone a la editorial como autor ('Taylor & Francis'). Los autores son Jorge de Andrés-Sánchez y Jaume Gené-Albesa; revista Journal of Organizational Computing and Electronic Commerce, 2024, DOI 10.1080/10919392.2024.2435118.
-- ⚠️ **F-154** (2026-10-03, abierta): La ficha pone a la editorial como autor ('MDPI Electronics'). Los autores son Jaume Gené-Albesa y Jorge de Andrés-Sánchez (Universitat Rovira i Virgili); Electronics 14(16):3266, 2025.
-- ⚠️ **F-175** (2026-10-03, abierta): La ficha dice '(autores vía PMC/NCBI)'. Los autores son Yi Zong y Xiaojie Guo (Tianjin University of Commerce); Frontiers in Psychology, 8-feb-2022, DOI 10.3389/fpsyg.2022.794135.
-- ⚠️ **F-176** (2026-10-03, abierta): La ficha dice '(autor vía ResearchGate / revista académica)' y año 's.f.'. La autora es Simona Romani; Journal of Product & Brand Management 15(2/3):130-138, 2006.
+- ✅ **F-150** (2026-10-03, cerrada): La ficha pone a la revista como autor ('Personal and Ubiquitous Computing (Springer)'). El artículo es de Borsci y colegas (grupo que creó la BUS-11; autoría exacta del artículo de 2024 no confirmada), DOI 10.1007/s00779-024-01834-4.
+  - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
+- ✅ **F-153** (2026-10-03, cerrada): La ficha pone a la editorial como autor ('Taylor & Francis'). Los autores son Jorge de Andrés-Sánchez y Jaume Gené-Albesa; revista Journal of Organizational Computing and Electronic Commerce, 2024, DOI 10.1080/10919392.2024.2435118.
+  - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
+- ✅ **F-154** (2026-10-03, cerrada): La ficha pone a la editorial como autor ('MDPI Electronics'). Los autores son Jaume Gené-Albesa y Jorge de Andrés-Sánchez (Universitat Rovira i Virgili); Electronics 14(16):3266, 2025.
+  - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
+- ✅ **F-175** (2026-10-03, cerrada): La ficha dice '(autores vía PMC/NCBI)'. Los autores son Yi Zong y Xiaojie Guo (Tianjin University of Commerce); Frontiers in Psychology, 8-feb-2022, DOI 10.3389/fpsyg.2022.794135.
+  - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
+- ✅ **F-176** (2026-10-03, cerrada): La ficha dice '(autor vía ResearchGate / revista académica)' y año 's.f.'. La autora es Simona Romani; Journal of Product & Brand Management 15(2/3):130-138, 2006.
+  - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-03 con autorización del usuario (verificada contra el resumen oficial).
 
 ## 7. Registro de barridos
 
