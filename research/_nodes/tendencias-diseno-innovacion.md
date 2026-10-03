@@ -334,7 +334,7 @@ reportes separados.*
 - El giro de lo individual a lo estructural (*i-frame* vs. *s-frame*, F-19, 🟢A) respalda argumentar el diseño por mecanismo de producto/sistema (C1).
 
 **Claridad y decisión (refuerza C12 con su límite)**
-- Las ayudas de decisión (IPDAS) mejoran conocimiento y reducen el conflicto decisional (F-122, 🟢A) y los arreglos de íconos con formato de frecuencia superan al porcentaje en comprensión (F-123, 🟢A): la claridad tiene respaldo experimental.
+- Las ayudas de decisión (IPDAS) mejoran conocimiento y reducen el conflicto decisional (F-122, 🟢A) y los pictogramas mejoran la comprensión del riesgo frente al texto solo, con evidencia débil (F-123, 🟢A; ⚠️ *corregido 2026-10-03: antes decía que la frecuencia supera al porcentaje, lo que F-123 no prueba*): la claridad tiene respaldo experimental.
 - **Pero simplificar no es regla general:** el efecto de *choice overload* es prácticamente cero al agregar 50 estudios (F-119, 🟢A), es condicional a moderadores (F-120, 🟢A) y su estudio fundacional no replica de forma consistente (F-121, 🟢A).
 
 **Tamaño del sector, empleo y evidencia de servicio (no confundir tamaño con efecto)**

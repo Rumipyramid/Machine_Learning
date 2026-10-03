@@ -213,9 +213,12 @@
   - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 - ✅ **F-60** (2026-10-03, cerrada): La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño.
   - *Resolución:* Cerrada: F-60 y F-61 corregidas en el ledger el 2026-10-03 con autorización del usuario; el pasaje E4 del node de farmacias también se corrigió.
-- ⚠️ **F-123** (2026-10-03, abierta): La ficha dice 'autores no individualizados' y que 'el formato de frecuencia supera al porcentaje puro'. Los autores son Recchia, Lawrence y Freeman (Winton Centre, Cambridge); el estudio compara pictogramas con texto (no frecuencia vs. porcentaje), no halla efecto del formato de la incertidumbre y da evidencia débil a favor de los pictogramas.
-- ⚠️ **F-142** (2026-10-03, abierta): La ficha pone a la revista como autor y el año 2025. Los autores son Wu, Wu, Guo y Yang; publicado en International Journal of Electronic Commerce 30(1):62-81, 2026 (en línea 2025).
-- ⚠️ **F-143** (2026-10-03, abierta): La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023.
+- ✅ **F-123** (2026-10-03, cerrada): La ficha dice 'autores no individualizados' y que 'el formato de frecuencia supera al porcentaje puro'. Los autores son Recchia, Lawrence y Freeman (Winton Centre, Cambridge); el estudio compara pictogramas con texto (no frecuencia vs. porcentaje), no halla efecto del formato de la incertidumbre y da evidencia débil a favor de los pictogramas.
+  - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
+- ✅ **F-142** (2026-10-03, cerrada): La ficha pone a la revista como autor y el año 2025. Los autores son Wu, Wu, Guo y Yang; publicado en International Journal of Electronic Commerce 30(1):62-81, 2026 (en línea 2025).
+  - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
+- ✅ **F-143** (2026-10-03, cerrada): La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023.
+  - *Resolución:* Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial).
 
 ## 7. Registro de barridos
 

@@ -1,7 +1,7 @@
 # Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-13 · Última actualización: 2026-07-21 · Versión: v1.1
+> Fecha de elaboración: 2026-07-13 · Última actualización: 2026-10-03 · Versión: v1.1
 > (v1.1 amplía con evidencia sobre cifras prominentes/anclaje, riesgo regulatorio de
 > publicidad, información incompleta visible al cliente, e imagen emocional vs.
 > informativa — motivado por revisión de un artefacto concreto, §5)
@@ -76,11 +76,15 @@ decisional**. Aunque el campo de origen es salud, el estándar es directamente t
 a la explicación de coberturas de seguros: ambos dominios comparten el mismo problema —
 comunicar probabilidad e incertidumbre a alguien con baja familiaridad técnica.
 
-Un ensayo aleatorizado específico sobre icon arrays (arreglos de íconos, F-123) confirma
-que representar probabilidad en formato de frecuencia ("3 de cada 100") en vez de
-porcentaje puro mejora la comprensión, en particular para audiencias con baja numeracidad
-— población que el propio modelo de personas sintéticas del proyecto (`lapuerta`) ya
-identifica como significativa en el mercado peruano de seguros.
+Un ensayo aleatorizado con 1.300 personas (F-123) encontró que los **pictogramas** (arreglos
+de íconos) con rangos mejoran la comprensión y el recuerdo del riesgo frente al **texto solo**,
+quizás más en personas sin secundaria completa, población que el modelo de personas
+sintéticas del proyecto (`lapuerta`) identifica como significativa en el mercado peruano de
+seguros. Los propios autores califican la evidencia como **débil**, y el formato elegido para
+mostrar la incertidumbre no cambió nada. ⚠️ *Corregido 2026-10-03: este pasaje decía que F-123
+"confirma que el formato de frecuencia ('3 de cada 100') supera al porcentaje"; el estudio no
+compara frecuencia con porcentaje. Esa afirmación queda **sin fuente en este node** hasta
+registrar evidencia que la pruebe.*
 
 ### 1.3 Evidencia específica del ramo seguros
 
@@ -128,7 +132,7 @@ de publicidad que estos marcos regulan.
 | Chernev et al. 2015 (F-120) | Meta-análisis | 🟢 A | Identifica moderadores reales |
 | Iyengar & Lepper 2000 (F-121) | Estudio de campo original | 🟢 A | Canónico, pero no replica consistentemente |
 | IPDAS Evidence Update 2.0 (F-122) | Revisión sistemática, 105 ECA | 🟢 A | Evidencia más fuerte del conjunto |
-| Icon array RCT (F-123) | Ensayo aleatorizado | 🟢 A | Formato frecuencia > porcentaje |
+| Icon array RCT (F-123) | Ensayo aleatorizado | 🟢 A | Pictograma > texto solo (evidencia débil); no compara frecuencia con porcentaje |
 | Comisión Europea 2019 (F-124) | Estudio oficial con experimentos de campo | 🔵 B | Específico del ramo seguros |
 | Berger & Calabrese 1975 (F-125) | Teoría canónica | 🟢 A | Marco, no dato empírico puntual |
 | Anchoring effect, price judgment (F-175) | Peer-reviewed | 🟢 A | Números grandes anclan percepción de valor |
@@ -252,8 +256,11 @@ señuelo/anclaje en la opción intermedia), no por "choice overload" en sí.
 1. Usar un comparativo visual de 2-3 opciones (no un catálogo completo), con atributos
    alineados para comparación directa — recomendación con mejor respaldo cuando se
    fundamenta en reducción de conflicto decisional, no en "evitar choice overload".
-2. Representar probabilidades/coberturas con formato de frecuencia o ícono, no solo
-   porcentaje — la recomendación mejor evidenciada de toda la investigación (F-122, F-123).
+2. Representar probabilidades/coberturas con un pictograma o ícono, no solo con texto o
+   porcentaje — respaldado por la revisión de ayudas de decisión (F-122, fuerte) y por un
+   ensayo de pictogramas con evidencia débil (F-123). ⚠️ *Corregido 2026-10-03: antes se
+   presentaba como "la recomendación mejor evidenciada de toda la investigación" e incluía el
+   formato de frecuencia, que F-123 no prueba.*
 3. El peso del material visual es mayor en conversaciones virtuales que presenciales
    (Teoría de Reducción de la Incertidumbre, F-125) — priorizar su uso ahí si hay que
    elegir dónde invertir esfuerzo de diseño primero.
@@ -287,8 +294,8 @@ seguros, evaluadas contra los hallazgos de este node.
 
 **Brechas concretas frente a la evidencia (para mejorar):**
 1. **Las cifras "170%" / "200%" no tienen ninguna representación visual cuantitativa** —
-   solo texto grande. Es la recomendación mejor evidenciada de todo este node (F-122,
-   F-123) y hoy no se usa en ningún punto: un icon array o barra comparativa (ej. "de
+   solo texto grande. Representar visualmente el riesgo tiene respaldo (fuerte en
+   F-122, débil en F-123) y hoy no se usa en ningún punto: un icon array o barra comparativa (ej. "de
    cada S/100 que pagas, recibes S/170") comunicaría lo mismo con menos carga de
    numeracidad y sería más difícil de malinterpretar que el porcentaje solo.
 2. **El plazo/condición del retorno no acompaña la cifra en la misma jerarquía visual.**

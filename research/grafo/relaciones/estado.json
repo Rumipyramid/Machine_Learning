@@ -400,17 +400,23 @@
   {
    "fecha": "2026-10-03",
    "f": "F-123",
-   "detalle": "La ficha dice 'autores no individualizados' y que 'el formato de frecuencia supera al porcentaje puro'. Los autores son Recchia, Lawrence y Freeman (Winton Centre, Cambridge); el estudio compara pictogramas con texto (no frecuencia vs. porcentaje), no halla efecto del formato de la incertidumbre y da evidencia débil a favor de los pictogramas."
+   "detalle": "La ficha dice 'autores no individualizados' y que 'el formato de frecuencia supera al porcentaje puro'. Los autores son Recchia, Lawrence y Freeman (Winton Centre, Cambridge); el estudio compara pictogramas con texto (no frecuencia vs. porcentaje), no halla efecto del formato de la incertidumbre y da evidencia débil a favor de los pictogramas.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
   },
   {
    "fecha": "2026-10-03",
    "f": "F-142",
-   "detalle": "La ficha pone a la revista como autor y el año 2025. Los autores son Wu, Wu, Guo y Yang; publicado en International Journal of Electronic Commerce 30(1):62-81, 2026 (en línea 2025)."
+   "detalle": "La ficha pone a la revista como autor y el año 2025. Los autores son Wu, Wu, Guo y Yang; publicado en International Journal of Electronic Commerce 30(1):62-81, 2026 (en línea 2025).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
   },
   {
    "fecha": "2026-10-03",
    "f": "F-143",
-   "detalle": "La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023."
+   "detalle": "La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: ficha corregida en el ledger el 2026-10-03 con autorización del usuario (verificado contra el resumen oficial)."
   }
  ],
  "resoluciones": [
