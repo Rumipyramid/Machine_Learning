@@ -43,7 +43,35 @@ td.cmd{font-weight:700;white-space:nowrap}
 .rx div{border:2px solid var(--fg);margin:-1px 0 0 -1px;padding:8px 12px;font-size:12px}
 .rx b{display:block;text-transform:uppercase;font-size:11px;margin-bottom:2px}
 .rx code{font-weight:700}
-@media print{body{font-size:11px}h1{font-size:72px}section{break-inside:avoid}}
+
+
+.btn{display:inline-block;margin:10px 16px 14px;padding:8px 14px;background:var(--fg);color:var(--bg);border:0;font:900 18px Impact,'Arial Black',sans-serif;letter-spacing:.04em;cursor:pointer}
+.btn:hover,.btn:focus-visible{background:var(--acc);color:#000;outline:none}
+.btn.x{margin:0;font-size:14px;padding:4px 10px}
+[popover]{border:8px solid var(--fg);padding:0;background:var(--bg);color:var(--fg);width:min(980px,calc(100vw - 16px));max-height:calc(100vh - 16px);overflow:auto}
+[popover]::backdrop{background:rgba(0,0,0,.6)}
+.ph{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--fg);color:var(--bg);padding:6px 10px 6px 16px;position:sticky;top:0;z-index:1}
+.ph b{font:900 20px Impact,'Arial Black',sans-serif;letter-spacing:.04em}
+.ph .btn.x{background:var(--bg);color:var(--fg)}
+.ar{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:0 12px;padding:14px 16px 6px}
+@media(max-width:720px){.ar{grid-template-columns:minmax(0,1fr)}}
+.ly{border:2px solid var(--fg);display:grid;grid-template-columns:44px minmax(0,1fr)}
+.ly .n{background:var(--fg);color:var(--bg);font:900 22px Impact,'Arial Black',sans-serif;display:flex;align-items:center;justify-content:center}
+.ly .b{padding:8px 10px}.ly .t{font-weight:700;text-transform:uppercase;font-size:12px}
+.ly .cm{display:inline-block;background:var(--fg);color:var(--bg);font-weight:700;font-size:11px;padding:0 5px;margin:0 4px 2px 0}
+.ly .f{font-size:11px;color:var(--g2);margin-top:3px}
+.ly.k{border-width:4px}.ly.k .n{background:var(--acc);color:#000}
+.fl{display:flex;align-items:center;gap:8px;padding:2px 0 2px 12px;font-size:11px;color:var(--g2)}
+.fl:before{content:"";display:block;width:8px;height:22px;background:var(--fg);clip-path:polygon(25% 0,75% 0,75% 60%,100% 60%,50% 100%,0 60%,25% 60%)}
+.sd{display:flex;flex-direction:column;gap:10px}
+.sd .bx{border:2px solid var(--fg);padding:8px 10px;font-size:11px}
+.sd .bx b{display:block;text-transform:uppercase;font-size:11px;margin-bottom:3px}
+.sd .lp{background:var(--acc);color:#000;border-color:var(--acc)}
+.lg{display:flex;flex-wrap:wrap;gap:6px 18px;padding:4px 16px 12px;font-size:11px;color:var(--g2)}
+.lg span:before{content:"";display:inline-block;width:10px;height:10px;margin-right:5px;vertical-align:-1px;background:var(--fg)}
+.lg span.o:before{background:var(--acc)}
+
+@media print{[popover]{display:none}body{font-size:11px}h1{font-size:72px}section{break-inside:avoid}}
 </style></head><body>
 <header><h1>MU</h1><p>segundo cerebro · guía de uso en una página<br>cómo se usa, qué skill hace qué, cómo sube de nivel<br>versión 2026-10-03</p></header>
 
@@ -53,7 +81,34 @@ td.cmd{font-weight:700;white-space:nowrap}
 <div class="c"><div class="big">2</div><div class="lab">Respalda cada cifra</div><div class="sub">Toda fuente queda en el registro de evidencia (<code>research/fuentes/codice.md</code>) con un código <code>F-n</code>, su autor, su año y una nota de rigor de A (máximo) a E.</div></div>
 <div class="c"><div class="big">3</div><div class="lab">Conecta ideas</div><div class="sub">Un grafo une las afirmaciones de distintas fuentes y marca dónde coinciden y dónde se contradicen.</div></div>
 <div class="c w"><div class="big">4</div><div class="lab">Se mide y se audita</div><div class="sub">Mu publica su propio estado y un auditor le pregunta qué sabe. Las fallas se muestran, no se esconden.</div></div>
-</div></section>
+</div><button class="btn" popovertarget="arq">VER ARQUITECTURA ↗</button>
+
+<div id="arq" popover>
+<div class="ph"><b>ARQUITECTURA DE MU</b><button class="btn x" popovertarget="arq" popovertargetaction="hide">CERRAR ✗</button></div>
+<div class="ar">
+<div>
+<div class="ly"><div class="n">1</div><div class="b"><div class="t">Entrada — investigar</div><span class="cm">/trinidad</span><span class="cm">/seeker</span><span class="cm">/gossip</span><span class="cm">/marketer</span><div class="f">Papers, redes y datos de negocio sobre un tema. También entran las preguntas y los documentos que aporta el usuario.</div></div></div>
+<div class="fl">cada fuente usada se anota</div>
+<div class="ly"><div class="n">2</div><div class="b"><div class="t">Registro de evidencia</div><span class="cm">/cronista</span><span class="cm">/codice</span><div class="f"><code>research/fuentes/codice.md</code> · una fila por fuente: código F-n, autor, año, rigor de A a E, resumen. /cronista escribe, /codice consulta.</div></div></div>
+<div class="fl">los hallazgos se integran citando F-n</div>
+<div class="ly"><div class="n">3</div><div class="b"><div class="t">Conocimiento — nodes</div><span class="cm">/many-brains</span><div class="f"><code>research/_nodes/</code> (un documento por tema) · <code>research/alma.md</code> (el mapa) · <code>research/_outputs/</code> (decks e informes que citan a los nodes).</div></div></div>
+<div class="fl">registro + nodes se leen de a 5 fuentes</div>
+<div class="ly"><div class="n">4</div><div class="b"><div class="t">Grafo — relaciones</div><span class="cm">/grafo</span><div class="f"><code>research/grafo/relaciones/</code>: entidades, relaciones con evidencia, coincidencias y contradicciones, con vocabulario cerrado · <code>build_grafo.py</code> → <code>ESTADO.md</code>.</div></div></div>
+<div class="fl">todo se cuenta con reglas fijas</div>
+<div class="ly"><div class="n">5</div><div class="b"><div class="t">Medición — panel</div><span class="cm">/mu</span><div class="f"><code>mu.py</code> → <code>mu.html</code> · salud, madurez, riqueza, evolución y nivel N1-N7 según <code>niveles.json</code> y <code>METRICAS.md</code>.</div></div></div>
+<div class="fl">el auditor pregunta y mide la evidencia</div>
+<div class="ly k"><div class="n">6</div><div class="b"><div class="t">Auditoría — garaje</div><span class="cm">/chacal</span><div class="f"><code>chacal.py</code> + <code>chacal_rubrica.json</code> → <code>research/garaje/</code> · solo escribe ahí; propone correcciones y pregunta antes de tocar nada.</div></div></div>
+</div>
+<div class="sd">
+<div class="bx lp"><b>↺ Bucle de corrección</b>Lo que fallan la auditoría (6) o el panel (5) vuelve como tarea: verificar una fuente, corregir el registro (2) con tu permiso o poner a prueba una hipótesis (3).</div>
+<div class="bx"><b>Leen el registro</b>El Lobo (opinión de negocio diaria) · /cerrajero (literatura A para el modelo de personas) · /lapuerta (usuarios sintéticos).</div>
+<div class="bx"><b>Publicar</b><span class="cm" style="background:var(--fg);color:var(--bg);font-weight:700;padding:0 5px">/actualizar</span> lleva todo a <code>main</code> para el equipo.</div>
+<div class="bx"><b>Regla de escritura</b>Cada capa escribe solo en lo suyo: el panel y el auditor nunca editan nodes ni registro.</div>
+</div>
+</div>
+<div class="lg"><span>capa del cerebro</span><span class="o">auditoría y bucle de corrección</span><span>flecha = qué pasa de una capa a la siguiente</span></div>
+</div>
+</section>
 
 <section><h2>01 EL CICLO — ¿en qué orden se usa?</h2>
 <div class="flow">
