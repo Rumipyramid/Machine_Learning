@@ -27,7 +27,8 @@ est = json.loads((REL / "estado.json").read_text())
 sem_f = {int(f[2:]) for b in est["barridos"] for f in b["f_ids"]}
 lec = {}
 for t in tri: lec.setdefault(int(t["f"][2:]), set()).add(t["lectura"])
-resueltas = {r["triple"] for r in est.get("resoluciones", [])}
+ABIERTAS = {"en_disputa", "sin_verificar", "mecanismo_en_disputa"}  # estados que NO cuentan como resueltos (corregido 2026-10-03)
+resueltas = {r["triple"] for r in est.get("resoluciones", []) if r.get("estado") not in ABIERTAS}
 pct = lambda a, b: round(100 * a / b) if b else 0
 
 
