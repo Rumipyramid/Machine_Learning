@@ -94,8 +94,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1947,
-   "cites": 258,
+   "lines": 1948,
+   "cites": 259,
    "design": true
   },
   {
@@ -4878,6 +4878,15 @@
    "autor": "Cobertura financiera de la reacción bursátil de Figma tras el Q2 2026 (Motley Fool 2026-08-06; TIKR; resúmenes de búsqueda)",
    "anio": "2026",
    "huerfana": false
+  },
+  {
+   "id": "F-528",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Diseño UX e IA: personalización en la navegación en 2026 / UX Design Trends (Lyssna, 17-dic-2025)",
+   "autor": "Metodo Viral (es/pt) y Lyssna (en), vistos solo por resumen de búsqueda; texto completo bloqueado por la red",
+   "anio": "2025-2026",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -8014,6 +8023,11 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-527",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-528",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -8245,13 +8259,14 @@
    },
    {
     "fecha": "2026-10-03",
-    "nuevas": 12,
-    "acumuladas": 527,
+    "nuevas": 13,
+    "acumuladas": 528,
     "AB": 10,
     "rigor": {
      "A": 5,
      "B": 5,
-     "C": 2
+     "C": 2,
+     "D": 1
     }
    }
   ],
@@ -10246,11 +10261,11 @@
     "fuente": "git"
    },
    {
-    "fuentes": 526,
+    "fuentes": 527,
     "rigor": {
      "B": 96,
      "A": 144,
-     "C": 122,
+     "C": 123,
      "D": 121,
      "?": 14,
      "E": 29
@@ -10259,13 +10274,13 @@
     "outputs": 4,
     "wikilinks": 84,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 421,
+    "fuentes_citadas_en_nodes": 422,
     "diseno": {
      "hyp": {
       "abierta": 17,
-      "parcial": 12,
-      "respaldada": 3,
+      "parcial": 13,
       "refutada": 1,
+      "respaldada": 2,
       "otra": 1
      },
      "rules": 22,
@@ -10277,11 +10292,11 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1946,
-     "cites": 257
+     "lines": 1947,
+     "cites": 258
     },
     "fecha": "2026-10-03",
-    "commit": "701fd61",
+    "commit": "71e1709",
     "fuente": "git"
    }
   ],
@@ -10302,7 +10317,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1947,
+   "lines": 1948,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
