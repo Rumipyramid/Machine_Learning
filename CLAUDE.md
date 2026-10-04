@@ -44,7 +44,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: barrido incremental (grupos de 5) de literatura 🟢A del códice para el modelo `lapuerta` | Nunca aplica solo — memoria en `research/updates/cerrajero_barrido_estado.json`, siempre pregunta antes de tocar el modelo |
 | `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/chacal/` · `research/grafo/chacal.py` · `research/garaje/` | Skill `/chacal`: **auditor** que le hace 3 preguntas a Mu (diseño · conducta humano-IA · seguros), mide la evidencia detrás de cada respuesta con semáforos deterministas (`chacal_rubrica.json`) y deja apuntes en el **garaje** (`research/garaje/`: auditorías, `bitacora.jsonl`, `INDICE.md`) | Solo escribe en `garaje/`; no edita nodes/ledger; fuera del alcance de `alma.md` |
-| `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger. 🎨 **Identidad de marca de Mu** (2026-10-03): `.claude/skills/mu/IDENTIDAD.md` + `mu-base.css` — **toda pieza que se pida de Mu usa ese estilo** (blanco/negro + naranja de alerta, Impact + mono, esquinas rectas, reglas de 8px). Guía de uso: `research/grafo/mu_guia.html`. 💬 **Pregúntale a Mu** (artefacto privado https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm): `research/grafo/preguntar/index.html` + `build_corpus.py` (regenerar `mu-corpus.json` y republicar cuando cambien nodes o ledger). Capacidades `sample`, `db`, `user`: lleva el **backlog de temas** y el protocolo de temas sin cobertura (ver sección abajo) |
+| `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger. 🎨 **Identidad de marca de Mu** (2026-10-03): `.claude/skills/mu/IDENTIDAD.md` + `mu-base.css` — **toda pieza que se pida de Mu usa ese estilo** (blanco/negro + naranja de alerta, Impact + mono, esquinas rectas, reglas de 8px). Guía de uso: `research/grafo/mu_guia.html`. 💬 **Pregúntale a Mu** (artefacto privado https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm): `research/grafo/preguntar/index.html` + `build_corpus.py` (regenerar `mu-corpus.json` y republicar cuando cambien nodes o ledger). Capacidades `sample`, `db`, `user`: lleva el **backlog de temas**, el protocolo de temas sin cobertura y el **instrumento de impacto** "¿Te sirvió?" (ver secciones abajo) |
 | `.claude/skills/grafo/` | Skill `/grafo`: regenera y explica `research/grafo/ESTADO.md` y conduce el barrido semántico del códice por lotes | Reporta fallas de integridad sin maquillar |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
@@ -185,11 +185,26 @@ Cada pregunta que se le hace a Mu alimenta un **backlog de temas** (regla del us
 - **Clasificación:** tras cada respuesta, una llamada rápida asigna el tema (reutiliza el `tema_id` si ya existe) y la
   cobertura; regla fija: si la respuesta no cita ninguna fuente del ledger, cuenta como **sin cobertura**.
 - **Protocolo:** un tema con **más de 3 consultas sin cobertura** se marca `protocolo: true` (alerta naranja en la página)
-  y la rutina diaria "Protocolo de temas de Mu" (8:54 Lima, trigger `trig_01A1iWxo1HNptWpthvm5hapP`) le avisa al
+  y la rutina diaria "Protocolo de temas e impacto de Mu" (8:54 Lima, trigger `trig_01A1iWxo1HNptWpthvm5hapP`) le avisa al
   usuario que debe explorarse como conocimiento nuevo, marca `avisado` y regenera el backlog del repo.
 - **Preguntas hechas en una sesión de Claude Code** (no en el artefacto): si la pregunta va dirigida a Mu o a lo que
   sabe el cerebro, regístrala igual con `ArtifactData` `set` en `consultas` (doc_id nuevo, mismo esquema), reutilizando
   el `tema_id` existente si lo hay; si con eso un tema supera el umbral, actualiza `temas` y avísale al usuario en el acto.
+
+### 📌 Instrumento de impacto (nivel N7 de Mu)
+Desde 2026-10-04 el impacto de Mu fuera del repo se mide (antes N7 era inalcanzable por falta de instrumento):
+
+- **En el artefacto:** debajo de cada respuesta, "¿Te sirvió?" (sí, decidí o hice algo · útil, sin decisión · no me
+  sirvió); si hubo decisión se anota qué y dónde. Va a la colección `usos` (doc_id = id de la consulta: `consulta_id`,
+  `tema_id`, `node`, `fuentes`, `valor` decision/util/no_util, `decision`, `donde`, `at`, `quien`). Panel "IMPACTO MEDIDO"
+  en la página.
+- **Fuera del artefacto:** si el usuario cuenta en una sesión que usó a Mu para decidir algo (reunión, propuesta,
+  producto), agrégalo como una línea JSON en `research/grafo/impacto_manual.jsonl` (`fecha`, `decision`, `donde`, `node`,
+  `fuentes`, `evidencia`).
+- **Foto en el repo:** `python research/grafo/impacto.py --db <dir exportado con ArtifactData list out_dir>` →
+  `research/grafo/impacto.json` (solo conteos, nunca ids de personas) → lo leen `/mu` (N7) y `ESTADO.md` (M8). La rutina
+  diaria lo regenera. Criterios N7 en `niveles.json`: ≥30 preguntas reales, ≥2 personas, ≥10 valoradas, ≥60% útiles,
+  ≥3 decisiones. Las decisiones son **autodeclaradas**: prueban uso, no que la decisión fuera buena.
 
 ### 📌 Skill: `lapuerta` (usuarios sintéticos de seguros)
 Generador + simulador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).

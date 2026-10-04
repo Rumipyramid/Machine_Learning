@@ -12081,7 +12081,7 @@
     "outputs": 4,
     "wikilinks": 96,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 541,
+    "fuentes_citadas_en_nodes": 542,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -12102,7 +12102,7 @@
      "cites": 273
     },
     "fecha": "2026-10-04",
-    "commit": "4418924",
+    "commit": "2d81635",
     "fuente": "git"
    }
   ],

@@ -94,6 +94,25 @@ details.dd summary:hover small,details.dd summary:focus-visible small{color:var(
 .bl .t{font-weight:700;overflow-wrap:anywhere}.bl .n{font:900 22px var(--display);text-align:right}
 .bl .m{grid-column:1/-1;font-size:11px;color:var(--g2);overflow-wrap:anywhere}.bl li.prot .m{color:var(--on-acc)}
 .bl-nota{font-size:11px;color:var(--g2);padding:8px 12px;margin:0}
+/* impacto: ¿te sirvió? + decisiones */
+.fb{border-top:2px solid var(--fg);padding:8px 14px;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:11px}
+.fb > b{text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
+.fb button{font:700 12px var(--mono);letter-spacing:0;background:transparent;color:var(--fg);border:2px solid var(--fg);padding:4px 8px}
+.fb button:hover,.fb button:focus-visible{background:var(--fg);color:var(--bg)}
+.fb button.on{background:var(--fg);color:var(--bg)}
+.fb form{flex-basis:100%;margin:4px 0 0;border:2px solid var(--fg)}
+.fb form label{display:block;font-size:11px;text-transform:uppercase;padding:6px 8px 0}
+.fb form textarea,.fb form input{display:block;width:100%;border:0;border-bottom:2px solid var(--fg);background:var(--bg);color:var(--fg);font:14px/1.4 var(--mono);padding:6px 8px;min-height:0}
+.fb form textarea{min-height:56px}
+.fb form input:focus-visible{outline:3px solid var(--acc);outline-offset:-3px}
+.fb form .fbar{display:flex;justify-content:flex-end;gap:6px;padding:6px 8px}
+.fb .ok{color:var(--g2)}
+.im{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(120px,100%),1fr));border-top:2px solid var(--fg)}
+.im div{border-right:2px solid var(--fg);border-bottom:2px solid var(--fg);margin-bottom:-2px;padding:8px 10px;min-width:0}
+.im b{display:block;font:900 24px/1 var(--display)}.im span{font-size:11px;text-transform:uppercase;color:var(--g2)}
+.dec{list-style:none;margin:0;padding:0;border-top:2px solid var(--fg)}
+.dec li{border-left:8px solid var(--fg);border-bottom:2px solid var(--fg);padding:8px 12px;overflow-wrap:anywhere}
+.dec li small{display:block;font-size:11px;color:var(--g2)}
 footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:11px;color:var(--g2)}
 </style>
 
@@ -133,6 +152,11 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     <ul class="bl" id="bl-list"></ul>
     <p class="bl-nota">Cada pregunta se clasifica en un tema y se marca si el cerebro lo cubre (✓ cubierto · ~ parcial · ✗ sin cobertura). Si un tema sin cobertura se pregunta más de 3 veces, se activa el protocolo: Mu avisa que debe investigarse como conocimiento nuevo con /trinidad. Sin cobertura = Mu no tiene el tema guardado o su respuesta no cita ninguna fuente.</p>
   </details>
+  <details class="dd" id="impacto"><summary>IMPACTO MEDIDO <small id="im-sum">cargando…</small></summary>
+    <div class="im" id="im-cells"></div>
+    <ul class="dec" id="im-dec"></ul>
+    <p class="bl-nota">Mide si Mu sirve fuera del repositorio. Debajo de cada respuesta puedes marcar si te sirvió y, si decidiste o hiciste algo con ella, anotarlo. Las decisiones son autodeclaradas: dicen que alguien usó a Mu, no que la decisión fuera buena. Este registro alimenta el nivel N7 (Impacto) del panel.</p>
+  </details>
 
   <div id="thread" aria-live="polite"></div>
 
@@ -152,7 +176,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
   const turns = []; // historial de la conversación (user/assistant)
   // ---------- backlog de temas (db compartida del artefacto) ----------
   const UMBRAL = 3; // el protocolo se activa con MÁS de 3 consultas sin cobertura sobre un tema
-  let DB = null, USER = null, dbState = "pendiente", canWrite = true, CONS = [], TEMAS = new Map();
+  let DB = null, USER = null, dbState = "pendiente", canWrite = true, CONS = [], TEMAS = new Map(), USOS = [];
 
   // ---------- búsqueda ----------
   const STOP = new Set("para por con sin una uno unos unas los las del que qué como cómo cual cuál cuales cuando donde dónde este esta estos estas ese esa eso hay muy más mas pero porque sobre entre desde hasta tiene tienen ser son fue fueron está están han hoy todo toda todos todas cada sus nos les lo la el en de y o a se al es su sí no the and for with from that this are was were have has not but you your".split(" "));
@@ -323,6 +347,56 @@ Estado actual del cerebro (panel): ${estado}`;
     dbState = "ok";
     DB.collection("consultas").orderBy("at", "desc").limit(1000).onSnapshot(s => { CONS = s.docs.map(d => ({ id: d.id, ...d.data() })); renderBacklog(); }, () => { dbState = "error"; renderBacklog(); });
     DB.collection("temas").onSnapshot(s => { TEMAS = new Map(s.docs.map(d => [d.id, d.data()])); renderBacklog(); }, () => { });
+    DB.collection("usos").orderBy("at", "desc").limit(1000).onSnapshot(s => { USOS = s.docs.map(d => ({ id: d.id, ...d.data() })); renderImpacto(); }, () => { });
+  }
+  // ---------- impacto ----------
+  function renderImpacto() {
+    const sum = $("#im-sum"), cells = $("#im-cells"), dec = $("#im-dec");
+    if (dbState !== "ok") { sum.textContent = $("#bl-sum").textContent; cells.replaceChildren(); dec.replaceChildren(); return; }
+    const personas = new Set(CONS.map(c => c.quien).filter(Boolean)).size;
+    const util = USOS.filter(u => u.valor === "decision" || u.valor === "util").length;
+    const decs = USOS.filter(u => u.valor === "decision");
+    const pctU = USOS.length ? Math.round(100 * util / USOS.length) : 0;
+    sum.textContent = `${CONS.length} consultas · ${USOS.length} valoradas · ${decs.length} decisión${decs.length === 1 ? "" : "es"}`;
+    const cell = (v, l) => { const d = document.createElement("div"); const b = document.createElement("b"); b.textContent = v; const s = document.createElement("span"); s.textContent = l; d.append(b, s); return d; };
+    cells.replaceChildren(cell(CONS.length, "consultas"), cell(personas, personas === 1 ? "persona" : "personas"), cell(USOS.length, "valoradas"), cell(USOS.length ? pctU + "%" : "—", "útiles"), cell(decs.length, "decisiones"));
+    dec.replaceChildren(...decs.slice(0, 10).map(u => {
+      const li = document.createElement("li"); li.textContent = u.decision || "(sin descripción)";
+      const sm = document.createElement("small"); sm.textContent = `${String(u.at).slice(0, 10)}${u.donde ? " · " + u.donde : ""}${u.node ? " · documento: " + u.node : ""}${u.fuentes?.length ? " · " + u.fuentes.slice(0, 6).join(", ") : ""}`;
+      li.append(sm); return li;
+    }));
+  }
+  function feedback(entry, cid, meta) {
+    const box = document.createElement("div"); box.className = "fb";
+    const pintar = guardado => {
+      box.replaceChildren();
+      const b = document.createElement("b"); b.textContent = "¿Te sirvió?"; box.append(b);
+      const opts = [["decision", "SÍ, DECIDÍ O HICE ALGO"], ["util", "ÚTIL, SIN DECISIÓN"], ["no_util", "NO ME SIRVIÓ"]];
+      for (const [v, l] of opts) {
+        const bt = document.createElement("button"); bt.type = "button"; bt.textContent = l; if (guardado?.valor === v) bt.className = "on";
+        bt.addEventListener("click", () => v === "decision" ? formDecision(guardado) : guardar({ valor: v }));
+        box.append(bt);
+      }
+      if (guardado) { const ok = document.createElement("span"); ok.className = "ok"; ok.textContent = "Registrado. Puedes cambiarlo."; box.append(ok); }
+    };
+    const formDecision = prev => {
+      box.querySelector("form")?.remove();
+      const f = document.createElement("form");
+      f.innerHTML = `<label>¿Qué decidiste o hiciste con esto?</label><textarea maxlength="400" required placeholder="Ej.: descartamos el nudge X en la propuesta de onboarding"></textarea><label>¿Dónde? (opcional)</label><input maxlength="120" placeholder="reunión, propuesta, producto, presentación…"><div class="fbar"><button type="button" class="cancel">CANCELAR</button><button type="submit">GUARDAR</button></div>`;
+      const [ta, inp] = [f.querySelector("textarea"), f.querySelector("input")];
+      if (prev?.valor === "decision") { ta.value = prev.decision || ""; inp.value = prev.donde || ""; }
+      f.querySelector(".cancel").addEventListener("click", () => f.remove());
+      f.addEventListener("submit", e => { e.preventDefault(); if (ta.value.trim()) guardar({ valor: "decision", decision: ta.value.trim().slice(0, 400), donde: inp.value.trim().slice(0, 120) }); });
+      box.append(f); ta.focus();
+    };
+    const guardar = async v => {
+      const data = { consulta_id: cid, tema_id: meta.tema_id, node: meta.node, fuentes: meta.fuentes, valor: v.valor, decision: v.decision || "", donde: v.donde || "", at: new Date().toISOString(), quien: meta.quien };
+      box.querySelectorAll("button").forEach(b => b.disabled = true);
+      try { await DB.collection("usos").doc(cid).set(data); pintar(data); }
+      catch { box.querySelectorAll("button").forEach(b => b.disabled = false); const er = document.createElement("span"); er.className = "ok"; er.textContent = "No se pudo guardar. Intenta de nuevo."; box.append(er); }
+    };
+    pintar(null);
+    entry.box.append(box);
   }
   function agregados() {
     const m = new Map();
@@ -339,8 +413,9 @@ Estado actual del cerebro (panel): ${estado}`;
     const sum = $("#bl-sum"), list = $("#bl-list"), al = $("#alerta");
     if (dbState !== "ok") {
       sum.textContent = dbState === "sin" ? "no disponible: abre la página en claude.ai con tu sesión" : dbState === "error" ? "no se pudo leer el registro" : "cargando…";
-      list.replaceChildren(); al.hidden = true; return;
+      list.replaceChildren(); al.hidden = true; renderImpacto(); return;
     }
+    renderImpacto();
     const A = agregados(), prot = A.filter(a => a.prot);
     sum.textContent = `${A.length} tema${A.length === 1 ? "" : "s"} · ${CONS.length} consulta${CONS.length === 1 ? "" : "s"} · ${prot.length} protocolo${prot.length === 1 ? "" : "s"} activo${prot.length === 1 ? "" : "s"}${canWrite ? "" : " · solo lectura"}`;
     list.replaceChildren(...A.map(a => {
@@ -362,7 +437,8 @@ Estado actual del cerebro (panel): ${estado}`;
   }
   async function registrar(entry, q, text, r) {
     if (!DB || !sample || !canWrite) return;
-    const cited = new Set([...text.matchAll(/\bF-(\d{1,4})\b/g)].map(m => "F-" + m[1]).filter(id => FUENTES.has(id))).size;
+    const citedIds = [...new Set([...text.matchAll(/\bF-(\d{1,4})\b/g)].map(m => "F-" + m[1]).filter(id => FUENTES.has(id)))];
+    const cited = citedIds.length;
     const existentes = agregados().slice(0, 80).map(a => `${a.id}: ${a.tema}`).join("\n") || "(ninguno todavía)";
     const docs = [...new Set(CORPUS.nodes.map(c => `${c.node}: ${c.titulo}`))].join("\n");
     let cls;
@@ -394,7 +470,9 @@ Devuelve SOLO un objeto JSON con estas claves:
     const now = new Date().toISOString();
     try {
       const uid = USER ? await USER.id() : null;
-      await DB.collection("consultas").add({ q: q.slice(0, 300), tema_id, tema, cubierto, node: String(cls?.node || "").slice(0, 80), fuentes_citadas: cited, at: now, quien: uid || null });
+      const node = String(cls?.node || "").slice(0, 80);
+      const cref = await DB.collection("consultas").add({ q: q.slice(0, 300), tema_id, tema, cubierto, node, fuentes_citadas: cited, at: now, quien: uid || null });
+      feedback(entry, cref.id, { tema_id, node, fuentes: citedIds.slice(0, 40), quien: uid || null });
       const ref = DB.collection("temas").doc(tema_id);
       const snap = await ref.get();
       if (!snap.exists) await ref.set({ tema, creado: now, protocolo: false });

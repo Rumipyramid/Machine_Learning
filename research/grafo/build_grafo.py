@@ -352,7 +352,10 @@ def report(nodes, outs, ledger, M, hist, tl, lobo, alma):
         w(f"| M4 Falsabilidad ejercida (diseño) | {pct(sum(des['hyp'].values())-des['hyp'].get('abierta',0), sum(des['hyp'].values()))} | el node confronta, no solo acumula | que las pruebas fueran rigurosas |")
         w(f"| M5 Trazabilidad de reglas (diseño) | {pct(des['rules_cited'],des['rules'])} | las reglas se apoyan en fuentes | que la fuente sea la correcta |")
         w(f"| M6 Integración (diseño↔resto) | {sum(1 for j in M['jacc'] if j['enlazado_dir'])}/{len(M['jacc'])} nodes enlazados; {sum(1 for j in M['jacc'] if j['compartidas']>0)} comparten evidencia | el diseño informa a los demás temas | uso real por personas |")
-    w(f"| M7 Lectura profunda (Lobo) | {lobo['fuentes_leidas']} fuentes leídas a fondo = {pct(lobo['fuentes_leidas'],len(ledger))} del ledger; {lobo['intuiciones']} intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |\n")
+    w(f"| M7 Lectura profunda (Lobo) | {lobo['fuentes_leidas']} fuentes leídas a fondo = {pct(lobo['fuentes_leidas'],len(ledger))} del ledger; {lobo['intuiciones']} intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |")
+    _imp = json.loads((ROOT / "research" / "grafo" / "impacto.json").read_text()) if (ROOT / "research" / "grafo" / "impacto.json").exists() else {"metricas": {}}
+    _im = _imp["metricas"]
+    w(f"| M8 Uso externo (`impacto.json`) | {_im.get('consultas_reales',0)} preguntas · {_im.get('personas',0)} personas · {_im.get('valoradas',0)} valoradas ({_im.get('util_pct',0)}% útiles) · {_im.get('decisiones',0)} decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |\n")
     # 5 salud
     w("## 5. Auditoría de integridad (fallas reales, sin maquillar)\n")
     issues = audit(nodes, outs, ledger, M, alma)
@@ -376,7 +379,7 @@ def report(nodes, outs, ledger, M, hist, tl, lobo, alma):
         "**Rangos 'F-a a F-b' no se expanden:** si un node cita un rango, esas fuentes cuentan como huérfanas aquí. Es deliberado: un rango no es trazabilidad por afirmación.",
         "**Rigor A–E es el del ledger** (juicio de `cronista`), no re-evaluado aquí.",
         "**Hipótesis y reglas se leen por formato** (`| **Hn** |`, `- **Cn —`). Si el node cambia de formato, las métricas de diseño caerán a 0: tomarlo como alarma de parser, no como pérdida de conocimiento.",
-        "**Sin métricas de uso externo:** no hay datos de quién lee, reutiliza ni decide con este cerebro. Impacto real = pendiente; lo único medible hoy es estructura, trazabilidad y autocorrección.",
+        "**Uso externo, medición joven y autodeclarada:** desde 2026-10-04 `impacto.json` cuenta preguntas reales a Mu, valoraciones ¿te sirvió? y decisiones que las personas dicen haber tomado con Mu (artefacto + `impacto_manual.jsonl`). Prueba uso, no que la decisión fuera buena; solo mide a quien usa el artefacto o lo declara.",
         "**Wikilinks se cuentan en todo el texto del node**, no solo en `## Conexiones`.",
     ]:
         w(f"- {x}")

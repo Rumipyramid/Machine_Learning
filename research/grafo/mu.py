@@ -72,7 +72,11 @@ VAL = {"fuentes": len(ledger), "nodes": len(nodes), "citadas_pct": pct(len(cit_a
        "base_diseno_ab_pct": pct(M["ab"](dcit), len(dcit)), "autocorreccion_pct": pct(hy.get("refutada", 0), hres),
        "tensiones_resueltas_pct": pct(sum(1 for t in tri if t["p"] in ("contradice", "refuta") and t["id"] in {r["triple"] for r in est.get("resoluciones", [])}), tens),
        "discrepancias_abiertas": open_disc,
-       "leidas_pct": pct(lec["abstract"] + lec["completa"], len(tri)), "uso_externo_medido": 0}
+       "leidas_pct": pct(lec["abstract"] + lec["completa"], len(tri))}
+# N7: instrumento de impacto (impacto.py → impacto.json; base del artefacto + decisiones manuales)
+IMP = json.loads((H / "impacto.json").read_text()) if (H / "impacto.json").exists() else {"metricas": {}, "base": {}}
+for k in ("consultas_reales", "personas", "valoradas", "util_pct", "decisiones"):
+    VAL[k] = IMP["metricas"].get(k, 0)
 
 
 def crit_ok(c):
@@ -173,7 +177,6 @@ def escalera(w=720, h=230):
 
 def fmtv(c):
     v = VAL[c["id"]]
-    if c["id"] == "uso_externo_medido": return "NO MEDIDO"
     return f"{v} / {'≥' + str(c['min']) if 'min' in c else '≤' + str(c['max'])}"
 
 
@@ -305,7 +308,7 @@ details.dd td:first-child{white-space:nowrap}
 HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MU — panel del segundo cerebro</title><style>{CSS}</style></head><body>
 <header><h1>MU</h1><p>segundo cerebro · {today}<br>rama {E(branch)} @ {E(commit)}<br>{len(ledger)} fuentes / {len(nodes)} nodes / {len(tri)} relaciones</p></header>
-<section><h2>00 INTELIGENCIA — ¿qué nivel tiene?</h2><div class="body hero"><div class="nv"><div class="big2">N{nivel}<span>/{len(NIV)}</span></div><div class="lab2">{nombre_nivel}</div><div class="sub">{E(NIV[nivel-1]["def"] if nivel else "Sin criterios cumplidos")}</div></div><div>{escalera()}<div style="margin-top:10px"><h3>PARA SUBIR A N{nivel+1 if sig else nivel}{(" — " + sig["nombre"]) if sig else ""}</h3>{falta}<p class="n">Escalera: se sube solo con TODOS los criterios del nivel. Umbrales propuestos (juicio del autor), editables en niveles.json. N7 exige medir uso externo, hoy sin instrumento: no es alcanzable aún.</p></div></div></div><div class="body" style="grid-template-columns:1fr"><table><tr><th>nivel</th><th>estado</th><th>criterio</th><th>valor / umbral</th><th></th><th></th></tr>{crit_rows}</table></div></section>
+<section><h2>00 INTELIGENCIA — ¿qué nivel tiene?</h2><div class="body hero"><div class="nv"><div class="big2">N{nivel}<span>/{len(NIV)}</span></div><div class="lab2">{nombre_nivel}</div><div class="sub">{E(NIV[nivel-1]["def"] if nivel else "Sin criterios cumplidos")}</div></div><div>{escalera()}<div style="margin-top:10px"><h3>PARA SUBIR A N{nivel+1 if sig else nivel}{(" — " + sig["nombre"]) if sig else ""}</h3>{falta}<p class="n">Escalera: se sube solo con TODOS los criterios del nivel. Umbrales propuestos (juicio del autor), editables en niveles.json. N7 se mide con impacto.json (preguntas reales, valoraciones ¿te sirvió? y decisiones autodeclaradas en Pregúntale a Mu); foto de la base: {E(IMP['base'].get('foto', 'nunca'))}.</p></div></div></div><div class="body" style="grid-template-columns:1fr"><table><tr><th>nivel</th><th>estado</th><th>criterio</th><th>valor / umbral</th><th></th><th></th></tr>{crit_rows}</table></div></section>
 <section><h2>01 SALUD — ¿está sano?</h2><div class="g">{''.join(sal)}</div><div class="body"><div><h3>CHEQUEOS</h3><ul>{checklist}</ul></div><div><h3>PENDIENTES ACCIONABLES</h3><ul>{todo_html}</ul></div></div></section>
 <section><h2>02 MADUREZ — ¿qué tan probado está?</h2><div class="g">{''.join(mad)}</div><div class="body"><div>{mad_charts}</div></div></section>
 <section><h2>03 RIQUEZA — ¿cuánto hay?</h2><div class="g">{''.join(ri)}</div><div class="body"><div>{rig_chart}</div><div>{rel_chart}</div></div></section>
