@@ -1,0 +1,349 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-83",
+  "F-89",
+  "F-90",
+  "F-91",
+  "F-92",
+  "F-94",
+  "F-97",
+  "F-107",
+  "F-109"
+ ],
+ "entidades": [
+  {
+   "id": "incertidumbre_medica",
+   "nombre": "Incertidumbre sobre la incidencia de enfermedad y la eficacia del tratamiento",
+   "tipo": "concepto"
+  },
+  {
+   "id": "particularidades_economicas_atencion_medica",
+   "nombre": "Problemas económicos especiales de la atención médica",
+   "tipo": "concepto"
+  },
+  {
+   "id": "riesgo_moral",
+   "nombre": "Riesgo moral en seguros de salud",
+   "tipo": "concepto"
+  },
+  {
+   "id": "cobertura_seguro_salud",
+   "nombre": "Cobertura de seguro de salud",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "utilizacion_servicios_salud",
+   "nombre": "Utilización de servicios de salud",
+   "tipo": "resultado"
+  },
+  {
+   "id": "precio_marginal_atencion",
+   "nombre": "Precio marginal de la atención que enfrenta el paciente",
+   "tipo": "concepto"
+  },
+  {
+   "id": "espiral_muerte_seleccion_adversa",
+   "nombre": "Espiral de la muerte por selección adversa",
+   "tipo": "resultado"
+  },
+  {
+   "id": "cierre_bloque_polizas",
+   "nombre": "Cierre de un bloque de pólizas a nuevos afiliados",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "subsidio_parcial_aseguradora",
+   "nombre": "Subsidio parcial de la aseguradora al bloque",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tarificacion_por_experiencia",
+   "nombre": "Tarificación por experiencia (experience rating)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "mercado_seguro_individual",
+   "nombre": "Mercado de seguro de salud individual",
+   "tipo": "concepto"
+  },
+  {
+   "id": "seleccion_adversa",
+   "nombre": "Selección adversa (selección de riesgos)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ajuste_riesgo",
+   "nombre": "Ajuste / igualación de riesgo entre aseguradoras",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "subsidios_penalidades_afiliacion",
+   "nombre": "Subsidios o penalidades para inducir la afiliación",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "pricing_personalizado_autorrastreo",
+   "nombre": "Pricing de seguro de salud personalizado con self-tracking",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "infraestructura_mercado_seguro",
+   "nombre": "Infraestructura y regulación del mercado de seguros incompatible con el precio personalizado",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "rediseno_dcg",
+   "nombre": "Rediseño de los grupos de costo por diagnóstico (DCG) con clustering y multimorbilidad",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ganancias_perdidas_predecibles",
+   "nombre": "Ganancias y pérdidas predecibles por asegurado (incentivo a seleccionar)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "direct_primary_care",
+   "nombre": "Direct Primary Care (atención primaria por membresía)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "continuidad_atencion_primaria",
+   "nombre": "Primer contacto y longitudinalidad de la atención primaria",
+   "tipo": "resultado"
+  },
+  {
+   "id": "exclusion_por_cuota",
+   "nombre": "Exclusión de pacientes vulnerables por la cuota de membresía",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "gatekeeping_atencion_primaria",
+   "nombre": "Gatekeeping de atención primaria (filtro de acceso al hospital)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "visitas_atencion_primaria",
+   "nombre": "Visitas a establecimientos de atención primaria",
+   "tipo": "resultado"
+  },
+  {
+   "id": "visitas_hospitalarias",
+   "nombre": "Visitas hospitalarias",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "particularidades_economicas_atencion_medica",
+   "p": "origina_en",
+   "o": "incertidumbre_medica",
+   "f": "F-83",
+   "apoyo": "AER 1963 (reimpr. Bull WHO 2004): los problemas económicos especiales de la atención médica se explican como adaptaciones a la incertidumbre en la incidencia de enfermedad y en la eficacia del tratamiento.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cobertura_seguro_salud",
+   "p": "aumenta",
+   "o": "utilizacion_servicios_salud",
+   "f": "F-89",
+   "apoyo": "AER 1968 (síntesis LDI): con seguro, la demanda de atención crece porque responde al menor costo marginal para el individuo; es conducta económica racional, no perfidia moral.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "riesgo_moral",
+   "p": "origina_en",
+   "o": "precio_marginal_atencion",
+   "f": "F-89",
+   "apoyo": "AER 1968 (síntesis LDI): como el costo del uso extra se reparte entre todos los asegurados, el individuo no se autolimita; por eso la cobertura completa puede no ser óptima.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cierre_bloque_polizas",
+   "p": "aumenta",
+   "o": "espiral_muerte_seleccion_adversa",
+   "f": "F-90",
+   "apoyo": "N Am Actuar J 2015: el cierre de un bloque de seguro individual en 1981 gatilló una espiral; hacia 2009 quedaban muy pocos asegurados y las primas eran ~7 veces la referencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "subsidio_parcial_aseguradora",
+   "p": "modera",
+   "o": "espiral_muerte_seleccion_adversa",
+   "f": "F-90",
+   "apoyo": "N Am Actuar J 2015: la espiral se desarrolló en cámara lenta porque la aseguradora subsidió parcialmente el bloque cerrado.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "tarificacion_por_experiencia",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-91",
+   "apoyo": "Explor Econ Hist 2004: con datos de 1957, pasar a tarificación por experiencia pudo ayudar a Blue Cross/Blue Shield a contrarrestar la selección adversa en el seguro grupal.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "seleccion_adversa",
+   "p": "aplica_a",
+   "o": "mercado_seguro_individual",
+   "f": "F-91",
+   "apoyo": "Explor Econ Hist 2004: la selección adversa fue un problema mayor para los Blues en el mercado de seguro individual que en el grupal.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ajuste_riesgo",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-92",
+   "apoyo": "J Econ Perspect 2017: el ajuste de riesgo es uno de cuatro instrumentos de política habituales contra la selección, que puede desarmar mercados con primas disparadas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "subsidios_penalidades_afiliacion",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-92",
+   "apoyo": "J Econ Perspect 2017: subsidios o penalidades que influyen en la afiliación figuran entre los remedios comunes a la selección en seguros de salud.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "pricing_personalizado_autorrastreo",
+   "p": "tiene_limite",
+   "o": "infraestructura_mercado_seguro",
+   "f": "F-94",
+   "apoyo": "Econ Soc 2019: el precio de riesgo personalizado choca con las infraestructuras que definen y regulan el seguro de salud; en la ACA (caso Oscar Health) parece improbable.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "rediseno_dcg",
+   "p": "reduce",
+   "o": "ganancias_perdidas_predecibles",
+   "f": "F-97",
+   "apoyo": "Int J Health Econ Manag 2023: con datos de 17 M de asegurados holandeses (2017), rediseñar los DCG redujo sustancialmente ganancias y pérdidas predecibles, también en personas con varias dxgroups.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "rediseno_dcg",
+   "p": "parte_de",
+   "o": "ajuste_riesgo",
+   "f": "F-97",
+   "apoyo": "Int J Health Econ Manag 2023: los DCG son un ajustador clave de morbilidad del modelo de igualación de riesgo holandés, que compensa a aseguradoras con primas comunitarias.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "direct_primary_care",
+   "p": "aumenta",
+   "o": "continuidad_atencion_primaria",
+   "f": "F-107",
+   "apoyo": "J Am Board Fam Med 2018: con el modelo de Starfield, el DPC es teóricamente sólido para mejorar primer contacto y longitudinalidad en pacientes participantes, aunque con poca evidencia peer-reviewed.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "direct_primary_care",
+   "p": "tiene_limite",
+   "o": "exclusion_por_cuota",
+   "f": "F-107",
+   "apoyo": "J Am Board Fam Med 2018: a nivel de sistema el DPC tiene baja validez de constructo porque la cuota excluye a pacientes más vulnerables y complejos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "gatekeeping_atencion_primaria",
+   "p": "aumenta",
+   "o": "visitas_atencion_primaria",
+   "f": "F-109",
+   "apoyo": "BMJ Glob Health 2020: en un piloto rural chino (200.685 afiliados, DiD), el gatekeeping aumentó 55,3% los pacientes en atención primaria sin elevar su gasto ambulatorio (1,6%, p=0,884).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "gatekeeping_atencion_primaria",
+   "p": "reduce",
+   "o": "visitas_hospitalarias",
+   "f": "F-109",
+   "apoyo": "BMJ Glob Health 2020: el piloto de gatekeeping en el NRCMS redujo las visitas hospitalarias en 23,9% (p=0,048), según diferencias en diferencias 2012-2014.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-83",
+   "detalle": "La URL (PMC2585909) es la reimpresión de 2004 en el Bulletin of the WHO 82(2):141-149; conviene anotarlo junto a la cita original (AER 53(5), 1963).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-89",
+   "detalle": "Faltan volumen y páginas (AER 58(3):531-537).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-90",
+   "detalle": "Autor incorrecto ('Cutler & Zeckhauser-style'): los autores son H. E. Frech y Michael P. Smith; el número impreso es 2015, 19(1):60-72 (2014 corresponde a la versión online/DOI).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-90",
+   "detalle": "Matiz: 1981 es el año del cierre del bloque que gatilló la espiral, no el año en que se 'inició' el bloque.",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-91",
+   "detalle": "Revista incorrecta: es Explorations in Economic History 41(4):313-328 (el PII S0014-4983 corresponde a esa revista), no Journal of Health Economics; falta autora (Melissa A. Thomasson).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-92",
+   "detalle": "Año 2024 incorrecto (es la fecha del depósito en PMC): el ensayo es de 2017 (JEP; NBER WP 23876); faltan autores (Geruso y Layton) y revista.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-94",
+   "detalle": "Autor incorrecto ('Van de Ven et al. o similar'): la autora es Liz McFall (Univ. de Edimburgo); falta revista (Economy and Society).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-94",
+   "detalle": "Contradice el sentido de la ficha: el resumen sostiene que el pricing personalizado es incompatible con la infraestructura actual y poco probable en la ACA, no que 'el mercado ya está respondiendo con más personalización'.",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-97",
+   "detalle": "Faltan autores (Oskam, van Kleef, van Vliet), revista (Int J Health Econ Manag 23(2):303-324) y DOI.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-107",
+   "detalle": "Falta autor (Evan S. Cole) y volumen/páginas (31(4):605-611).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-109",
+   "detalle": "Faltan autores (Xu, Powell-Jackson, Mills) y revista (BMJ Global Health 5(8):e002792).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a 85% hacia N6 (grupo 42): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

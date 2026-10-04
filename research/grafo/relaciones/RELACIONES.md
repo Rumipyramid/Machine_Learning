@@ -8,43 +8,49 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **171 de 645** (26.5%) |
+| Fuentes procesadas | **232 de 645** (36.0%) |
 | …del cerebro de diseño (citadas en el node) | 129 de 273 |
-| …por rigor | A 110/179 · B 36/106 · C 21/170 · D 3/143 · E 1/33 |
-| Barridos | 25 |
-| Entidades | 397 |
-| Relaciones | 307 |
-| Nivel de lectura | abstract 209 · ficha 98 |
-| Fuerza de las afirmaciones | causal 104 · descriptiva 87 · observacional 69 · teorica 47 |
+| …por rigor | A 171/179 · B 36/106 · C 21/170 · D 3/143 · E 1/33 |
+| Barridos | 31 |
+| Entidades | 527 |
+| Relaciones | 420 |
+| Nivel de lectura | abstract 321 · ficha 99 |
+| Fuerza de las afirmaciones | descriptiva 127 · causal 123 · observacional 95 · teorica 75 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 66 |
-| `asocia_con` | efecto | 41 |
-| `reduce` | efecto | 40 |
-| `aplica_a` | estructura | 30 |
-| `tiene_limite` | metodo | 28 |
-| `modera` | efecto | 20 |
-| `respalda` | evidencia | 17 |
-| `contradice` | evidencia | 16 |
-| `mide` | metodo | 13 |
+| `aumenta` | efecto | 90 |
+| `reduce` | efecto | 62 |
+| `asocia_con` | efecto | 51 |
+| `tiene_limite` | metodo | 49 |
+| `aplica_a` | estructura | 41 |
+| `modera` | efecto | 24 |
+| `mide` | metodo | 22 |
+| `respalda` | evidencia | 20 |
+| `contradice` | evidencia | 18 |
+| `es_tipo_de` | estructura | 10 |
 | `media` | efecto | 10 |
 | `refuta` | evidencia | 10 |
-| `es_tipo_de` | estructura | 8 |
-| `origina_en` | metodo | 6 |
-| `parte_de` | estructura | 2 |
+| `origina_en` | metodo | 9 |
+| `parte_de` | estructura | 4 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
 | Entidad | Fuentes |
 |---|---|
 | Generative UI (interfaces generadas por LLM) | F-247, F-256, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
+| Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-544, F-545, F-546, F-548, F-552, F-553, F-560, F-574, F-597 |
+| Modelos ChatGPT-3.5 y 4 | F-545, F-571, F-572, F-573, F-575, F-577 |
 | Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502 |
+| Herramientas de IA generativa | F-308, F-521, F-581, F-582, F-591 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
 | Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501 |
+| Persuasión conversacional por IA | F-489, F-490, F-585, F-586 |
+| Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-560, F-571 |
+| Gasto en atención de salud | F-110, F-339, F-340, F-352 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-514 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-514 |
 | Design thinking | F-239, F-240, F-524 |
@@ -54,19 +60,21 @@
 | Productividad de desarrolladores | F-257, F-474, F-503 |
 | Penetración de seguros en Perú | F-482, F-483, F-507 |
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
-| Persuasión conversacional por IA | F-489, F-490, F-585 |
+| Demanda de seguros | F-3, F-164, F-221 |
+| Marcos de evaluación de efectividad e implementación | F-53, F-54, F-64 |
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
 | Sesgo de publicación | F-16, F-17, F-21 |
 | Pie en la puerta (pedido pequeño antes del grande) | F-141, F-142, F-143 |
-| Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-552, F-553, F-560 |
-| Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-560 |
+| ML + interpretación humana para generar hipótesis conductuales | F-566, F-567, F-569 |
+| Experiencia y habilidad previa del trabajador | F-580, F-582, F-584 |
 | Relación innovación → desempeño | F-238, F-525 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
 | El efecto del design thinking está totalmente mediado por empoderamiento | F-239, F-240 |
 | Éxito de proyectos de innovación | F-239, F-441 |
+| Confianza en la IA | F-242, F-583 |
 | Las explicaciones rara vez producen desempeño complementario | F-243, F-244 |
 | Las explicaciones mejoran la decisión humano-IA | F-244, F-246 |
 | Cognitive forcing functions (fricción deliberada) | F-245, F-502 |
@@ -84,7 +92,6 @@
 | Conductas de riesgo al manejar (velocidad, frenado, aceleración) | F-23, F-442 |
 | Combined ratio de Root (91,4%) | F-449, F-481 |
 | Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-256, F-382 |
-| Herramientas de IA generativa | F-308, F-521 |
 | Empleo de diseñadores gráficos (+2% 2024-2034) | F-308, F-309 |
 | La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe | F-383, F-384 |
 | F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025 | F-477, F-478 |
@@ -97,15 +104,16 @@
 | Pensamiento crítico | F-492, F-493 |
 | Alfabetización en IA (intervención ligera) | F-494, F-500 |
 | Litigios y cartas de fiscales por adulación de chatbots | F-496, F-497 |
-| Demanda de seguros | F-3, F-221 |
 | Comprensión del plan de salud | F-6, F-7 |
 | Divulgación clara y saliente de un producto financiero | F-9, F-10 |
 | Los mandatos de 'explicar mejor' fracasan sistemáticamente | F-9, F-10 |
 | Adopción de la telemedicina en Perú | F-40, F-41 |
-| Marcos de evaluación de efectividad e implementación | F-53, F-54 |
 | Modelo de triage con IA y farmacias (Perú) | F-53, F-55 |
 | Diseño híbrido efectividad-implementación tipo 2 | F-54, F-55 |
+| Silent trial / modo sombra | F-56, F-57 |
+| IA clínica | F-56, F-57 |
 | Cambio de conducta objetivo | F-16, F-20 |
+| Precisión diagnóstica de chatbots médicos | F-43, F-44 |
 | Personalizar con datos de la persona aumenta la persuasión de la IA | F-499, F-542 |
 | Sesgo de automatización (sobre-confiar en la recomendación de un sistema) | F-60, F-61 |
 | Más opciones empeoran la decisión de forma general | F-119, F-121 |
@@ -114,10 +122,29 @@
 | Divulgación de datos personales | F-142, F-143 |
 | La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad) | F-143, F-144 |
 | Número ancla visible antes de juzgar un precio | F-175, F-220 |
+| Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla) | F-220, F-573 |
 | Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión) | F-221, F-223 |
+| Efecto dotación (se pide más por vender que lo que se paga por comprar) | F-223, F-573 |
 | Confianza del consumidor en la aseguradora | F-334, F-335 |
+| Predicción de la conducta de participantes no vistos en experimentos | F-563, F-566 |
 | Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea) | F-563, F-564 |
+| Sensibilidad a la redacción del prompt e inestabilidad en el tiempo | F-551, F-552 |
+| Tamaño y competencia lingüística de los modelos de lenguaje | F-572, F-575 |
+| Crecimiento de ventas | F-178, F-514 |
 | Grandes corporaciones se retiran del venture capital corporativo directo | F-447, F-448 |
+| Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo) | F-42, F-63 |
+| Diseño escalonado aleatorizado por clusters (stepped-wedge) | F-58, F-59 |
+| Selección adversa (selección de riesgos) | F-91, F-92 |
+| Ajuste / igualación de riesgo entre aseguradoras | F-92, F-97 |
+| Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos) | F-544, F-597 |
+| Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva | F-551, F-596 |
+| Herramientas de IA en la investigación científica | F-555, F-591 |
+| Conjunto choices13k de elecciones riesgosas (Peterson et al., Science 2021) | F-566, F-567 |
+| Los LLMs reproducen los sesgos y heurísticas de decisión humanos | F-573, F-574 |
+| Desempeño de LLMs en tareas de teoría de la mente | F-575, F-577 |
+| Productividad y calidad del trabajo de conocimiento (consultores) | F-581, F-582 |
+| Retención del aprendizaje | F-218, F-219 |
+| Redes de proveedores estrechas o por niveles (tiered) | F-339, F-340 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -199,21 +226,27 @@
 - **Castellion y Markham 2013: perspectiva sobre las tasas de fracaso de productos nuevos (JPIM)** —refuta→ **El 80-95% de los productos nuevos fracasan** (F-431, descriptiva) · **estado: refutacion_directa**
   - JPIM 30 (2013): el mito de que fracasa 80% o más de los productos nuevos persiste aunque los estudios empíricos desde 1977 muestran una tasa de 40% o menos; lo sostienen el argumentum ad populum y el interés propio.
   - *Resolución (2026-10-04):* Castellion y Markham (F-431, JPIM) muestran que los estudios empíricos desde 1977 dan una tasa de fracaso de productos nuevos de 40% o menos, no 80-95%. Converge con F-432 (T-97: 25% al año 1 y ~40% a los 2 años medido en ventas). Dos fuentes independientes refutan el mismo mito.
+- **Irracionalidad de los LLMs distinta de los sesgos humanos e inconsistente** —contradice→ **Los LLMs reproducen los sesgos y heurísticas de decisión humanos** (F-574, descriptiva) · **estado: matizada**
+  - R Soc Open Sci 2024: al evaluar 7 LLMs con tareas de psicología cognitiva, sus respuestas incorrectas suelen diferir de los sesgos humanos: son irracionales, pero no de forma humana.
+  - *Resolución (2026-10-04):* Suri et al. (F-573) encuentran en GPT-3.5 heurísticas de tipo humano (anclaje, representatividad, disponibilidad, encuadre, dotación). Macmillan-Scott y Musolesi (F-574), con 7 modelos, encuentran que sus errores suelen no ser de forma humana y son inconsistentes. Hagendorff et al. (F-572) muestran que los sesgos aparecen y desaparecen según la versión. Sobrevive una versión acotada: algunos modelos muestran algunos sesgos humanos en algunas tareas; la afirmación general 'los LLMs reproducen los sesgos humanos' no se sostiene.
+- **Apreciación algorítmica (preferir consejo algorítmico al humano)** —contradice→ **La gente es en general reacia a confiar en el juicio de algoritmos** (F-584, causal) · **estado: alcance_distinto**
+  - OBHDP 2019: contra la idea recibida de escepticismo, seis experimentos muestran que legos siguen más un consejo cuando creen que viene de un algoritmo que de una persona.
+  - *Resolución (2026-10-04):* Dietvorst et al. (F-583) miden la elección después de ver al algoritmo equivocarse: aparece la aversión. Logg et al. (F-584) miden la preferencia sin esa experiencia previa: los legos prefieren el consejo algorítmico, y la preferencia se debilita en expertos y frente a la propia estimación. No se contradicen: la aversión depende de haber visto el error.
 
 ## 5. Hubs (entidades más conectadas)
 
 | Entidad | Tipo | Grado | Fuentes |
 |---|---|---|---|
+| Muestras sintéticas con LLM (personas simuladas que responden encuestas) | intervencion | 10 | 9 |
 | Generative UI (interfaces generadas por LLM) | intervencion | 9 | 9 |
+| Herramientas de IA generativa | intervencion | 9 | 5 |
+| Modelos ChatGPT-3.5 y 4 | intervencion | 9 | 6 |
 | Adulación de la IA (sycophancy) | intervencion | 7 | 4 |
 | Sobre-confianza en la IA | resultado | 6 | 5 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | afirmacion | 6 | 3 |
 | Diseño efectivo → mejor desempeño de la firma | afirmacion | 5 | 3 |
 | Susceptibilidad a dark patterns | resultado | 5 | 2 |
-| Cambio de actitud de las personas | resultado | 5 | 5 |
-| Desempeño financiero de la firma (ROA, ROS, crecimiento) | resultado | 4 | 3 |
-| Capacidad de diseño-ingeniería | constructo | 4 | 1 |
-| Design thinking | intervencion | 4 | 3 |
+| Persuasión conversacional por IA | intervencion | 5 | 4 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -293,6 +326,104 @@
   - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-441** (2026-10-04, cerrada): Año 2019 sin aclarar: publicado en línea en 2019 y en número en 2021 (RMS 15(2):189-234).
   - *Resolución:* Cerrada: datos bibliográficos completados el 2026-10-04 (regla permanente).
+- ✅ **F-42** (2026-10-04, cerrada): Autor registrado como 'NCBI/PMC (estudio Finlandia, Omaolo)': los autores son Liu, Kaila y Koskela; falta revista (JMIR Human Factors 11:e55099) y DOI 10.2196/55099.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-43** (2026-10-04, cerrada): Autor registrado como 'NCBI/PMC (estudio Japón)': autores Harada, Sakamoto, Sugimoto y Shimizu; falta revista (JMIR Formative Research 8:e53985) y DOI 10.2196/53985.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-57** (2026-10-04, cerrada): Falta volumen/artículo (4:929508) y DOI 10.3389/fdgth.2022.929508.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-58** (2026-10-04, cerrada): Autores: son dos (Hemming y Taljaard), no 'et al.'; falta revista (Int J Epidemiol 49(3):1043-1052) y DOI 10.1093/ije/dyaa077.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-59** (2026-10-04, cerrada): Autor y año incorrectos: no es Mdege et al. 2011 (ese es otro paper, J Clin Epidemiol 64(9):936-948); los autores son Dreischulte, Grant, Donnan y Guthrie, 2013, Trials 14(Suppl 1):O87.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-59** (2026-10-04, abierta): Rigor: es un resumen de congreso (meeting abstract), no una 'revisión metodológica peer-reviewed'; 🟢A sobrevalora.
+- ⚠️ **F-59** (2026-10-04, abierta): Contradice a la ficha: el resumen dice que el diseño crea problemas potenciales para evitar la contaminación (por el desfase entre reclutamiento e inicio), no que reduzca la contaminación entre clusters. La equidad/aceptación sí aparece como posible mejora del reclutamiento.
+- ✅ **F-63** (2026-10-04, cerrada): Autor registrado como 'Protocolo de validación Omaolo': autores Liu, Koskela y Kaila; falta revista (JMIR Res Protoc 12:e41423) y DOI 10.2196/41423.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-64** (2026-10-04, cerrada): Autor incorrecto: no es Damschroder et al. (creadora de CFIR, 2009); los autores son Safaeinili, Brown-Johnson, Shaw, Mahoney y Winget. Año: publicado online 2019, número 2020 (no 2021). Falta revista (Learning Health Systems 4(1):e10201) y DOI.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-65** (2026-10-04, cerrada): Autor registrado como 'PMC (análisis de logfiles, Hong Kong)': autores Guan, Peng y Zhu; falta revista (JMIR mHealth uHealth 7(5):e13679) y DOI 10.2196/13679.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-66** (2026-10-04, cerrada): Año 2020 → publicado el 6-ene-2021 (Health Econ Rev 11:1); faltan coautores (Lazar, Ruger) y DOI.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-83** (2026-10-04, cerrada): La URL (PMC2585909) es la reimpresión de 2004 en el Bulletin of the WHO 82(2):141-149; conviene anotarlo junto a la cita original (AER 53(5), 1963).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-89** (2026-10-04, cerrada): Faltan volumen y páginas (AER 58(3):531-537).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-90** (2026-10-04, cerrada): Autor incorrecto ('Cutler & Zeckhauser-style'): los autores son H. E. Frech y Michael P. Smith; el número impreso es 2015, 19(1):60-72 (2014 corresponde a la versión online/DOI).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-90** (2026-10-04, abierta): Matiz: 1981 es el año del cierre del bloque que gatilló la espiral, no el año en que se 'inició' el bloque.
+- ✅ **F-91** (2026-10-04, cerrada): Revista incorrecta: es Explorations in Economic History 41(4):313-328 (el PII S0014-4983 corresponde a esa revista), no Journal of Health Economics; falta autora (Melissa A. Thomasson).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-92** (2026-10-04, cerrada): Año 2024 incorrecto (es la fecha del depósito en PMC): el ensayo es de 2017 (JEP; NBER WP 23876); faltan autores (Geruso y Layton) y revista.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-94** (2026-10-04, cerrada): Autor incorrecto ('Van de Ven et al. o similar'): la autora es Liz McFall (Univ. de Edimburgo); falta revista (Economy and Society).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-94** (2026-10-04, abierta): Contradice el sentido de la ficha: el resumen sostiene que el pricing personalizado es incompatible con la infraestructura actual y poco probable en la ACA, no que 'el mercado ya está respondiendo con más personalización'.
+- ✅ **F-97** (2026-10-04, cerrada): Faltan autores (Oskam, van Kleef, van Vliet), revista (Int J Health Econ Manag 23(2):303-324) y DOI.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-107** (2026-10-04, cerrada): Falta autor (Evan S. Cole) y volumen/páginas (31(4):605-611).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-109** (2026-10-04, cerrada): Faltan autores (Xu, Powell-Jackson, Mills) y revista (BMJ Global Health 5(8):e002792).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-545** (2026-10-04, cerrada): Falta el volumen/páginas: PMLR 202:337-371.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-545** (2026-10-04, abierta): No contradice: la ficha dice que la 'hiperprecisión' es dato de memoria no verificado, pero el resumen oficial sí la reporta (sabiduría de multitudes; ChatGPT y GPT-4). Puede retirarse la advertencia.
+- ✅ **F-546** (2026-10-04, cerrada): Faltan volumen, páginas y DOI: Trends in Cognitive Sciences 27:597-600, doi 10.1016/j.tics.2023.04.008.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-567** (2026-10-04, cerrada): Faltan número, páginas y DOI: Nature Human Behaviour 8(4):679-691, doi 10.1038/s41562-023-01784-6.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-573** (2026-10-04, cerrada): Falta el número: JEP: General 153(4), abril 2024.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-574** (2026-10-04, cerrada): Falta volumen/número: Royal Society Open Science 11(6).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-577** (2026-10-04, cerrada): Faltan volumen/número/páginas: Nature Human Behaviour 8(7):1285-1295.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-582** (2026-10-04, cerrada): Resumen verificado en la versión de trabajo (SSRN 4573321); no se vio el resumen de la versión final en Organization Science.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-583** (2026-10-04, cerrada): Faltan volumen y páginas: JEP: General 144(1):114-126.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-584** (2026-10-04, abierta): El resumen dice que la apreciación 'disminuye' (waned) en expertos y frente a la propia estimación; la ficha dice que 'desaparece' (sobredimensiona).
+- ⚠️ **F-584** (2026-10-04, abierta): El metaanálisis HICSS-58 (2025, 32 estudios, g=0,23/0,55) es otra fuente, no verificable en este resumen; convendría registrarlo como ficha propia.
+- ⚠️ **F-597** (2026-10-04, abierta): URL no capturada en la ficha: usar https://proceedings.mlr.press/v267/anthis25a.html (o arXiv 2504.02234).
+- ✅ **F-597** (2026-10-04, cerrada): Falta el volumen: PMLR 267.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-598** (2026-10-04, cerrada): Falta el volumen: PNAS 122(47) (el DOI no se vio escrito; no se registra).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-598** (2026-10-04, abierta): La URL es cobertura de prensa (404 Media), no la revista; reemplazar por la página de PNAS. La rigurosidad declarada se apoyó en prensa, aunque el resumen confirma el hallazgo.
+- ✅ **F-110** (2026-10-04, cerrada): Autor registrado como 'PMC (revisión sistemática)': faltan autores (Sripa, Hayhoe, Garg, Majeed, Greenfield), revista (BJGP 69(682):e294-e303) y DOI 10.3399/bjgp19X702209.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-110** (2026-10-04, abierta): Matiz: el resumen habla de menor supervivencia en cáncer reportada por un estudio, no de 'diagnóstico tardío' como hallazgo; y omite que el gatekeeping se asoció con mejor calidad de atención (preventiva y derivación apropiada) y menor satisfacción del paciente. 'Diagnóstico tardío' no verificable en el resumen.
+- ✅ **F-111** (2026-10-04, cerrada): Autor registrado como la revista: faltan autores (Rhys, Beerstecher, Morgan), volumen 10, artículo 156 y DOI 10.1186/1472-6963-10-156.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-115** (2026-10-04, cerrada): Autor registrado como 'Cambridge Core (American Journal of Law & Medicine)': falta el autor (Andrew Grant) y el DOI 10.1017/amj.2023.20.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-125** (2026-10-04, abierta): La URL apunta a Wikipedia, no a la fuente oficial (DOI 10.1111/j.1468-2958.1975.tb00258.x).
+- ✅ **F-125** (2026-10-04, cerrada): Faltan volumen/páginas (1(2):99-112) y DOI.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-158** (2026-10-04, abierta): La ficha describe FED como esquema de anotación humana por turno con 8 dimensiones; el resumen lo presenta como métrica automática (DialoGPT, sin supervisión) más un dataset anotado con 18 cualidades a nivel de turno y de diálogo completo. Las 8 dimensiones y la escala No/Somewhat/Yes no son verificables en el resumen.
+- ⚠️ **F-164** (2026-10-04, abierta): La URL (arxiv.org/pdf/2604.21372) corresponde a otro paper: Maier y Scherer, 'Optimal basis risk weighting in expectile-based parametric insurance' (TUM), no a Louaas y Picard.
+- ✅ **F-164** (2026-10-04, cerrada): No se confirmó la publicación en Geneva Risk and Insurance Review 2026 (volumen/DOI); la versión verificable es el WP HAL hal-04511811 (2024).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-164** (2026-10-04, abierta): Matiz: el resumen no plantea 'minimizar el riesgo de base' con el trigger, sino caracterizar el contrato óptimo dado el riesgo de base, según la (in)dependencia entre índice y riesgo de base.
+- ✅ **F-180** (2026-10-04, cerrada): Faltan volumen/páginas (73(3):359-396) y DOI explícito.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-331** (2026-10-04, cerrada): Autor 'Autores del TRIAGE trial' y año 's.f.': es Morreel S. et al., PLoS One 2021.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-331** (2026-10-04, abierta): El contexto es Bélgica (Amberes, cooperativa de médicos generales adyacente a urgencias), no 'sistema público neerlandés'. Además, el 2,4% hospitalizado se refiere a los asignados a la cooperativa, no a los 'desviados' en sentido estricto.
+- ✅ **F-333** (2026-10-04, cerrada): Autor 'Revisión rápida... NCBI Bookshelf / PLOS One' y año 's.f.': es Lewis et al., PLoS One 2021;16(5):e0251362. No es una revisión rápida sino un análisis observacional de datos enlazados.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-333** (2026-10-04, abierta): Lo de 'redujo despacho de ambulancias en £4.52M' no es verificable en el resumen. Además, el resumen interpreta que buena parte del 11% que no siguió la indicación fue mal triado (88% urgente, 37% hospitalizado), no solo que 'no cumplió'.
+- ✅ **F-339** (2026-10-04, cerrada): Faltan volumen/páginas (79(5):607-617) y DOI 10.1177/10775587211055923.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-339** (2026-10-04, abierta): Falta la URL: está disponible en PMC (PMC9817087).
+- ✅ **F-340** (2026-10-04, cerrada): Faltan volumen/páginas (36(5):870-875).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-341** (2026-10-04, cerrada): Faltan autores (Higuera, Carlin, Dowd), título y volumen/páginas (J Health Econ 60:90-97).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-341** (2026-10-04, abierta): La DAP de US$84-275/mes es para atención primaria (en especialistas es US$0-115/mes). Que sea 'HIX de una aseguradora regional del Medio Oeste' no es verificable en el resumen, que dice 'exchange privado de seguros de salud'.
+- ✅ **F-352** (2026-10-04, cerrada): El año es 2019 (AJMC vol. 25, n.º 7), no '~2016'; 2013-2014 es el periodo de los datos.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 
 ## 7. Registro de barridos
 
@@ -323,6 +454,12 @@
 | 2026-10-03 | F-250, F-338, F-357, F-514, F-516 | 10 | – | Lote de profundidad del cerebro de diseño (orden de `next`), con resúmenes oficiales verificados el 2026-10-03. F-250 entra ahora: en el lote 020 se había dejado fuera por falta de resultados. F-338 e |
 | 2026-10-03 | F-519, F-521, F-524, F-525, F-540, F-7, F-124, F-231, F-263, F-285 | 19 | – | Lote de 10 (pedido del usuario), en el orden de `next`, con resúmenes o páginas oficiales verificados el 2026-10-03 vía búsqueda (kff.org está bloqueado: los datos de F-7 vienen del resumen de hallazg |
 | 2026-10-04 | F-310, F-387, F-407, F-431, F-437, F-441, F-447, F-448, F-452, F-466 | 13 | – | Segundo lote de 10 (pedido del usuario), con resúmenes y comunicados oficiales verificados el 2026-10-04. Se saltaron tres del orden de `next` por no tener fuente primaria verificable: F-389 (estudio  |
+| 2026-10-04 | F-42, F-43, F-57, F-58, F-59, F-63, F-64, F-65, F-66 | 15 | – | Lote del avance a 85% hacia N6 (grupo 42): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-83, F-89, F-90, F-91, F-92, F-94, F-97, F-107, F-109 | 16 | – | Lote del avance a 85% hacia N6 (grupo 42): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-544, F-545, F-546, F-548, F-551, F-555, F-566, F-567, F-568, F-571, F-573, F-574 | 25 | – | Lote del avance a 85% hacia N6 (grupo 544): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-575, F-577, F-582, F-583, F-584, F-586, F-591, F-596, F-597, F-598, F-581 | 21 | – | Lote del avance a 85% hacia N6 (grupo 544): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-110, F-111, F-115, F-125, F-151, F-158, F-164, F-178, F-180, F-218 | 19 | – | Lote del avance a 85% hacia N6 (grupo 110): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-219, F-226, F-236, F-330, F-331, F-333, F-339, F-340, F-341, F-352 | 17 | – | Lote del avance a 85% hacia N6 (grupo 110): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

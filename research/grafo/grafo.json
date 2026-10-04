@@ -517,7 +517,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Triage Accuracy and the Safety of User-Initiated Symptom Assessment With an Electronic Symptom Checker in a Real-Life Setting",
-   "autor": "NCBI/PMC (estudio Finlandia, Omaolo)",
+   "autor": "Liu V, Kaila M, Koskela T. Triage Accuracy and the Safety of User-Initiated Symptom Assessment With an Electronic Symptom Checker in a Real-Life Setting: Instrument Validation Study. JMIR Human Factors 2024;11:e55099. DOI 10.2196/55099 (PMID 39326038). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'NCBI/PMC (estudio Finlandia, Omaolo)'",
    "anio": "2024",
    "huerfana": true
   },
@@ -526,7 +526,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Longitudinal Changes in Diagnostic Accuracy of a Differential Diagnosis List Developed by an AI-Based Symptom Checker",
-   "autor": "NCBI/PMC (estudio Japón)",
+   "autor": "Harada Y, Sakamoto T, Sugimoto S, Shimizu T. Longitudinal Changes in Diagnostic Accuracy of a Differential Diagnosis List Developed by an AI-Based Symptom Checker: Retrospective Observational Study. JMIR Formative Research 2024;8:e53985. DOI 10.2196/53985. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'NCBI/PMC (estudio Japón)'",
    "anio": "2024",
    "huerfana": true
   },
@@ -652,7 +652,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The silent trial - the bridge between bench-to-bedside clinical AI applications",
-   "autor": "Kwong, J.C.C. et al.",
+   "autor": "Kwong JCC, et al. The silent trial - the bridge between bench-to-bedside clinical AI applications. Frontiers in Digital Health 2022;4:929508. DOI 10.3389/fdgth.2022.929508. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Kwong, J.C.C. et al.'",
    "anio": "2022",
    "huerfana": false
   },
@@ -661,7 +661,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Reflection on modern methods: when is a stepped-wedge cluster randomized trial a good study design choice?",
-   "autor": "Hemming, K. et al. (revisión metodológica)",
+   "autor": "Hemming K, Taljaard M. Reflection on modern methods: when is a stepped-wedge cluster randomized trial a good study design choice? International Journal of Epidemiology 2020;49(3):1043-1052. DOI 10.1093/ije/dyaa077. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Hemming, K. et al. (revisión metodológica)'",
    "anio": "2020",
    "huerfana": false
   },
@@ -670,8 +670,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Pro's and con's of the stepped wedge design in cluster randomised trials of quality improvement interventions",
-   "autor": "Mdege, N.D. et al.",
-   "anio": "2011",
+   "autor": "Dreischulte T, Grant A, Donnan P, Guthrie B. Pro's and con's of the stepped wedge design in cluster randomised trials of quality improvement interventions: two current examples. Trials 2013;14(Suppl 1):O87 (resumen de congreso, 2nd Clinical Trials Methodology Conference, Edimburgo). DOI 10.1186/1745-6215-14-S1-O87. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Mdege, N.D. et al.'",
+   "anio": "2013",
    "huerfana": false
   },
   {
@@ -706,7 +706,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "User-Initiated Symptom Assessment With an Electronic Symptom Checker: Protocol for a Mixed Methods Validation Study",
-   "autor": "Protocolo de validación Omaolo",
+   "autor": "Liu V, Koskela TH, Kaila M. User-Initiated Symptom Assessment With an Electronic Symptom Checker: Protocol for a Mixed Methods Validation Study. JMIR Research Protocols 2023;12:e41423. DOI 10.2196/41423 (PMID 37467041). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Protocolo de validación Omaolo'",
    "anio": "2023",
    "huerfana": false
   },
@@ -715,8 +715,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "CFIR simplified: Pragmatic application of and adaptations to the Consolidated Framework for Implementation Research",
-   "autor": "Damschroder, L.J. et al. (CFIR, vía aplicaciones)",
-   "anio": "2021",
+   "autor": "Safaeinili N, Brown-Johnson C, Shaw JG, Mahoney M, Winget M. CFIR simplified: Pragmatic application of and adaptations to the Consolidated Framework for Implementation Research (CFIR) for evaluation of a patient-centered care transformation within a learning health system. Learning Health Systems 2020;4(1):e10201 (online 26-sep-2019). DOI 10.1002/lrh2.10201. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Damschroder, L.J. et al. (CFIR, vía aplicaciones)'",
+   "anio": "2020 (en línea 2019)",
    "huerfana": false
   },
   {
@@ -724,7 +724,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Who is Tracking Health on Mobile Devices: Behavioral Logfile Analysis in Hong Kong",
-   "autor": "PMC (análisis de logfiles, Hong Kong)",
+   "autor": "Guan L, Peng TQ, Zhu JJH. Who is Tracking Health on Mobile Devices: Behavioral Logfile Analysis in Hong Kong. JMIR mHealth and uHealth 2019;7(5):e13679. DOI 10.2196/13679. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (análisis de logfiles, Hong Kong)'",
    "anio": "2019",
    "huerfana": false
   },
@@ -733,8 +733,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Micro-costing in health and medicine: a critical appraisal",
-   "autor": "Xu, X. et al.",
-   "anio": "2020",
+   "autor": "Xu X, Lazar CM, Ruger JP. Micro-costing in health and medicine: a critical appraisal. Health Economics Review 2021;11:1 (publicado 6-ene-2021). DOI 10.1186/s13561-020-00298-5. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Xu, X. et al.'",
+   "anio": "2021",
    "huerfana": false
   },
   {
@@ -886,7 +886,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Uncertainty and the Welfare Economics of Medical Care (The American Economic Review, 53, 941-973)",
-   "autor": "Arrow, K.J.",
+   "autor": "Arrow KJ. Uncertainty and the Welfare Economics of Medical Care. American Economic Review 1963;53(5):941-973. Reimpreso en Bulletin of the World Health Organization 2004;82(2):141-149 (sección Public Health Classics). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Arrow, K.J.'",
    "anio": "1963",
    "huerfana": true
   },
@@ -940,7 +940,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The Economics of Moral Hazard: Comment (American Economic Review)",
-   "autor": "Pauly, M.V.",
+   "autor": "Pauly MV. The Economics of Moral Hazard: Comment. American Economic Review 1968;58(3):531-537. (Sin abstract; síntesis oficial del Leonard Davis Institute, Penn, serie 50@50.) — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Pauly, M.V.'",
    "anio": "1968",
    "huerfana": false
   },
@@ -949,8 +949,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Anatomy of a Slow-Motion Health Insurance Death Spiral",
-   "autor": "North American Actuarial Journal (Cutler & Zeckhauser-style análisis actuarial)",
-   "anio": "2014",
+   "autor": "Frech HE III, Smith MP. Anatomy of a Slow-Motion Health Insurance Death Spiral. North American Actuarial Journal 2015;19(1):60-72 (online 2014). DOI 10.1080/10920277.2014.982871. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'North American Actuarial Journal (Cutler & Zeckhauser-style análisis actuarial)'",
+   "anio": "2015 (en línea 2014)",
    "huerfana": false
   },
   {
@@ -958,7 +958,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Early evidence of an adverse selection death spiral? The case of Blue Cross and Blue Shield",
-   "autor": "Journal of Health Economics (ScienceDirect)",
+   "autor": "Thomasson MA. Early evidence of an adverse selection death spiral? The case of Blue Cross and Blue Shield. Explorations in Economic History 2004;41(4):313-328. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Journal of Health Economics (ScienceDirect)'",
    "anio": "2004",
    "huerfana": false
   },
@@ -967,8 +967,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Selection in Health Insurance Markets and Its Policy Remedies",
-   "autor": "PMC (revisión académica)",
-   "anio": "2024",
+   "autor": "Geruso M, Layton TJ. Selection in Health Insurance Markets and Its Policy Remedies. Journal of Economic Perspectives 2017 (NBER Working Paper 23876, sep-2017). Volumen/páginas no vistos en los resultados. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (revisión académica)'",
+   "anio": "2017",
    "huerfana": false
   },
   {
@@ -985,7 +985,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Personalizing solidarity? The role of self-tracking in health insurance pricing",
-   "autor": "PMC (Van de Ven et al. o similar, verificar autoría exacta)",
+   "autor": "McFall L. Personalizing solidarity? The role of self-tracking in health insurance pricing. Economy and Society 2019 (volumen/páginas no vistos). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (Van de Ven et al. o similar, verificar autoría exacta)'",
    "anio": "2019",
    "huerfana": false
   },
@@ -1012,7 +1012,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Improving diagnosis-based cost groups in the Dutch risk equalization model",
-   "autor": "PMC (ajuste de riesgo, grupos de costo por diagnóstico, Países Bajos)",
+   "autor": "Oskam M, van Kleef RC, van Vliet RCJA. Improving diagnosis-based cost groups in the Dutch risk equalization model: the effects of a new clustering method and allowing for multimorbidity. International Journal of Health Economics and Management 2023;23(2):303-324. DOI 10.1007/s10754-023-09345-0. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (ajuste de riesgo, grupos de costo por diagnóstico, Países Bajos)'",
    "anio": "2023",
    "huerfana": false
   },
@@ -1102,7 +1102,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Direct Primary Care: Applying Theory to Potential Changes in Delivery and Outcomes",
-   "autor": "JABFM (American Board of Family Medicine)",
+   "autor": "Cole ES. Direct Primary Care: Applying Theory to Potential Changes in Delivery and Outcomes. Journal of the American Board of Family Medicine 2018;31(4):605-611. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'JABFM (American Board of Family Medicine)'",
    "anio": "2018",
    "huerfana": false
   },
@@ -1120,7 +1120,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Effectiveness of primary care gatekeeping: difference-in-differences evaluation of a pilot scheme in China",
-   "autor": "PMC (estudio cuasi-experimental, China)",
+   "autor": "Xu J, Powell-Jackson T, Mills A. Effectiveness of primary care gatekeeping: difference-in-differences evaluation of a pilot scheme in China. BMJ Global Health 2020;5(8):e002792. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (estudio cuasi-experimental, China)'",
    "anio": "2020",
    "huerfana": false
   },
@@ -1129,7 +1129,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Impact of GP gatekeeping on quality of care, and health outcomes, use, and expenditure: a systematic review",
-   "autor": "PMC (revisión sistemática)",
+   "autor": "Sripa P, Hayhoe B, Garg P, Majeed A, Greenfield G. Impact of GP gatekeeping on quality of care, and health outcomes, use, and expenditure: a systematic review. Br J Gen Pract. 2019;69(682):e294-e303. DOI 10.3399/bjgp19X702209 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (revisión sistemática)'",
    "anio": "2019",
    "huerfana": false
   },
@@ -1138,7 +1138,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Primary care capitation payments in the UK. An observational study",
-   "autor": "BMC Health Services Research",
+   "autor": "Rhys G, Beerstecher HJ, Morgan CL. Primary care capitation payments in the UK. An observational study. BMC Health Serv Res. 2010;10:156. DOI 10.1186/1472-6963-10-156 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'BMC Health Services Research'",
    "anio": "2010",
    "huerfana": false
   },
@@ -1174,7 +1174,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "CVS Health's Acquisition of Oak Street Health Reconfirms Market Viability of Private Equity Investment in Value-Based Payment Models for Pri",
-   "autor": "Cambridge Core (American Journal of Law & Medicine)",
+   "autor": "Grant A. CVS Health's Acquisition of Oak Street Health Reconfirms Market Viability of Private Equity Investment in Value-Based Payment Models for Primary Care. American Journal of Law & Medicine, 2023 (publicado en línea 28-jun-2023). DOI 10.1017/amj.2023.20 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Cambridge Core (American Journal of Law & Medicine)'",
    "anio": "2023",
    "huerfana": false
   },
@@ -1264,7 +1264,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Some Explorations in Initial Interaction and Beyond: Toward a Developmental Theory of Interpersonal Communication (Uncertainty Reduction The",
-   "autor": "Berger, C.R. & Calabrese, R.J.",
+   "autor": "Berger CR, Calabrese RJ. Some Explorations in Initial Interaction and Beyond: Toward a Developmental Theory of Interpersonal Communication. Human Communication Research. 1975;1(2):99-112. DOI 10.1111/j.1468-2958.1975.tb00258.x — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Berger, C.R. & Calabrese, R.J.'",
    "anio": "1975",
    "huerfana": false
   },
@@ -1615,7 +1615,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "On the design of optimal parametric insurance (The Geneva Risk and Insurance Review)",
-   "autor": "Louaas, A. & Picard, P.",
+   "autor": "Louaas A, Picard P. On the design of optimal parametric insurance. Documento de trabajo HAL hal-04511811 (2024); según el preprint arXiv 2604.21372 que lo cita, publicado en The Geneva Risk and Insurance Review (2026), lo que no se confirmó en la página del editor. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Louaas, A. & Picard, P.'",
    "anio": "2026",
    "huerfana": true
   },
@@ -1759,7 +1759,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The Economics of Insurance Intermediaries",
-   "autor": "Cummins, J.D. & Doherty, N.A.",
+   "autor": "Cummins JD, Doherty NA. The Economics of Insurance Intermediaries. Journal of Risk and Insurance. 2006;73(3):359-396. DOI 10.1111/j.1539-6975.2006.00180.x — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Cummins, J.D. & Doherty, N.A.'",
    "anio": "2006",
    "huerfana": false
   },
@@ -3118,7 +3118,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Triaging and Referring In Adjacent General and Emergency Departments (TRIAGE trial)",
-   "autor": "Autores del TRIAGE trial",
+   "autor": "Morreel S, et al. Triaging and referring in adjacent general and emergency departments (the TRIAGE trial): A cluster randomised controlled trial. PLoS One. 2021 (nov). Universidad de Amberes, Bélgica. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Autores del TRIAGE trial'",
    "anio": "s.f.",
    "huerfana": true
   },
@@ -3136,7 +3136,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Patient compliance with NHS 111 advice",
-   "autor": "Revisión rápida de evidencia, vía NCBI Bookshelf / PLOS One",
+   "autor": "Lewis J, Stone T, Simpson R, Jacques R, O'Keeffe C, Croft S, Mason S. Patient compliance with NHS 111 advice: Analysis of adult call and ED attendance data 2013-2017. PLoS One. 2021;16(5):e0251362. DOI 10.1371/journal.pone.0251362 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Revisión rápida de evidencia, vía NCBI Bookshelf / PLOS One'",
    "anio": "s.f.",
    "huerfana": true
   },
@@ -3190,7 +3190,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The Impact of Narrow and Tiered Networks on Costs, Access, Quality, and Patient Steering: A Systematic Review (Medical Care Research and Rev",
-   "autor": "Mazurenko, O.; Taylor, E.; Menachemi, N.",
+   "autor": "Mazurenko O, Taylor HL, Menachemi N. The Impact of Narrow and Tiered Networks on Costs, Access, Quality, and Patient Steering: A Systematic Review. Medical Care Research and Review. 2022;79(5):607-617. DOI 10.1177/10775587211055923 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Mazurenko, O.; Taylor, E.; Menachemi, N.'",
    "anio": "2022",
    "huerfana": true
   },
@@ -3199,7 +3199,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Enrollment In A Health Plan With A Tiered Provider Network Decreased Medical Spending By 5 Percent (Health Affairs)",
-   "autor": "Sinaiko, A.D.; Landrum, M.B.; Chernew, M.E.",
+   "autor": "Sinaiko AD, Landrum MB, Chernew ME. Enrollment In A Health Plan With A Tiered Provider Network Decreased Medical Spending By 5 Percent. Health Affairs. 2017;36(5):870-875. DOI 10.1377/hlthaff.2016.1087 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Sinaiko, A.D.; Landrum, M.B.; Chernew, M.E.'",
    "anio": "2017",
    "huerfana": true
   },
@@ -3208,7 +3208,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Estudio en Journal of Health Economics sobre disposición a pagar por continuidad y aversión a redes estrechas (PubMed 29940410)",
-   "autor": "Autores no especificados en el resumen",
+   "autor": "Higuera L, Carlin CS, Dowd B. Narrow provider networks and willingness to pay for continuity of care and network breadth. Journal of Health Economics. 2018;60:90-97. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Autores no especificados en el resumen'",
    "anio": "2018",
    "huerfana": true
   },
@@ -3307,8 +3307,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "What Are The Potential Savings From Steering Patients To Lower-Priced Providers? A Static Analysis (American Journal of Managed Care)",
-   "autor": "Desai, S.; Hatfield, L.A.; Hicks, A.L.; Chernew, M.E.; Mehrotra, A. (Harvard Medical School)",
-   "anio": "~2016",
+   "autor": "Desai S, Hatfield LA, Hicks AL, Chernew ME, Mehrotra A. What Are the Potential Savings From Steering Patients to Lower-Priced Providers? A Static Analysis. American Journal of Managed Care. 2019;25(7). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Desai, S.; Hatfield, L.A.; Hicks, A.L.; Chernew, M.E.; Mehrotra, A. (Harvard Medical School)'",
+   "anio": "2019",
    "huerfana": true
   },
   {
@@ -5044,7 +5044,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies (ICML 2023)",
-   "autor": "Aher, G.; Arriaga, R. I. & Kalai, A. T.",
+   "autor": "Aher, G. V.; Arriaga, R. I.; Kalai, A. T. (2023). Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies. Proceedings of the 40th ICML, PMLR 202:337-371. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Aher, G.; Arriaga, R. I. & Kalai, A. T.'",
    "anio": "2023",
    "huerfana": false
   },
@@ -5053,7 +5053,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Can AI language models replace human participants? (Trends in Cognitive Sciences)",
-   "autor": "Dillion, D.; Tandon, N.; Gu, Y. & Gray, K.",
+   "autor": "Dillion, D.; Tandon, N.; Gu, Y.; Gray, K. (2023). Can AI language models replace human participants? Trends in Cognitive Sciences 27(7):597-600. doi:10.1016/j.tics.2023.04.008 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Dillion, D.; Tandon, N.; Gu, Y. & Gray, K.'",
    "anio": "2023",
    "huerfana": false
   },
@@ -5242,7 +5242,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Modelling dataset bias in machine-learned theories of economic decision-making (Nature Human Behaviour 8)",
-   "autor": "Thomas, T.; Straub, D.; Tatai, F.; … Rothkopf, C. A.",
+   "autor": "Thomas, T.; Straub, D.; Tatai, F.; … Rothkopf, C. A. (2024). Modelling dataset bias in machine-learned theories of economic decision-making. Nature Human Behaviour 8(4):679-691. doi:10.1038/s41562-023-01784-6 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Thomas, T.; Straub, D.; Tatai, F.; … Rothkopf, C. A.'",
    "anio": "2024",
    "huerfana": false
   },
@@ -5296,7 +5296,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Do large language models show decision heuristics similar to humans? A case study using GPT-3.5 (Journal of Experimental Psychology: General",
-   "autor": "Suri, G.; Slater, L. R.; Ziaee, A. & Nguyen, M.",
+   "autor": "Suri, G.; Slater, L. R.; Ziaee, A.; Nguyen, M. (2024). Do large language models show decision heuristics similar to humans? A case study using GPT-3.5. Journal of Experimental Psychology: General 153(4):1066-1075. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Suri, G.; Slater, L. R.; Ziaee, A. & Nguyen, M.'",
    "anio": "2024",
    "huerfana": false
   },
@@ -5305,7 +5305,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "(Ir)rationality and cognitive biases in large language models (Royal Society Open Science, doi 10.1098/rsos.240255)",
-   "autor": "Macmillan-Scott, O. & Musolesi, M.",
+   "autor": "Macmillan-Scott, O.; Musolesi, M. (2024). (Ir)rationality and cognitive biases in large language models. Royal Society Open Science 11(6):240255. doi:10.1098/rsos.240255 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Macmillan-Scott, O. & Musolesi, M.'",
    "anio": "2024",
    "huerfana": false
   },
@@ -5332,7 +5332,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Testing theory of mind in large language models and humans (Nature Human Behaviour)",
-   "autor": "Strachan, J. W. A. et al.",
+   "autor": "Strachan, J. W. A. et al. (2024). Testing theory of mind in large language models and humans. Nature Human Behaviour 8(7):1285-1295. doi:10.1038/s41562-024-01882-z — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Strachan, J. W. A. et al.'",
    "anio": "2024",
    "huerfana": false
   },
@@ -5377,7 +5377,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Prod",
-   "autor": "Dell'Acqua, F.; McFowland, E.; Mollick, E. et al.",
+   "autor": "Dell'Acqua, F.; McFowland, E.; Mollick, E. et al. (2023 working paper SSRN 4573321; 2026 Organization Science, número mar-abr 2026). Navigating the Jagged Technological Frontier. doi:10.1287/orsc.2025.21838. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Dell'Acqua, F.; McFowland, E.; Mollick, E. et al.'",
    "anio": "2023 → 2026",
    "huerfana": false
   },
@@ -5386,7 +5386,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Algorithm aversion: People erroneously avoid algorithms after seeing them err (Journal of Experimental Psychology: General)",
-   "autor": "Dietvorst, B. J.; Simmons, J. P. & Massey, C.",
+   "autor": "Dietvorst, B. J.; Simmons, J. P.; Massey, C. (2015). Algorithm aversion: People erroneously avoid algorithms after seeing them err. Journal of Experimental Psychology: General 144(1):114-126. doi:10.1037/xge0000033 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Dietvorst, B. J.; Simmons, J. P. & Massey, C.'",
    "anio": "2015",
    "huerfana": false
   },
@@ -5512,7 +5512,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Position: LLM Social Simulations Are a Promising Research Method (ICML 2025)",
-   "autor": "Anthis, J. R. et al.",
+   "autor": "Anthis, J. R. et al. (2025). Position: LLM Social Simulations Are a Promising Research Method. Proceedings of the 42nd ICML, PMLR 267. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Anthis, J. R. et al.'",
    "anio": "2025",
    "huerfana": false
   },
@@ -5521,7 +5521,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The potential existential threat of large language models to online survey research (PNAS 122(47))",
-   "autor": "Westwood, S. J.",
+   "autor": "Westwood, S. J. (2025). The potential existential threat of large language models to online survey research. PNAS 122(47):e2518075122 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Westwood, S. J.'",
    "anio": "2025",
    "huerfana": false
   },
@@ -12074,7 +12074,7 @@
      "cites": 273
     },
     "fecha": "2026-10-04",
-    "commit": "8f39145",
+    "commit": "393251c",
     "fuente": "git"
    }
   ],

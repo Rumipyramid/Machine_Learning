@@ -19,6 +19,15 @@
    ]
   },
   {
+   "id": "acceso_proveedor_demanda",
+   "nombre": "Acceso inmediato a un proveedor desde la línea de asesoría médica",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-330"
+   ]
+  },
+  {
    "id": "aceptacion_pedido",
    "nombre": "Aceptación de un pedido mayor",
    "tipo": "resultado",
@@ -46,6 +55,15 @@
    ]
   },
   {
+   "id": "adopcion_apps_mhealth",
+   "nombre": "Adopción de apps de salud móvil (mHealth)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-65"
+   ]
+  },
+  {
    "id": "adopcion_telemedicina_peru",
    "nombre": "Adopción de la telemedicina en Perú",
    "tipo": "resultado",
@@ -62,6 +80,15 @@
    "grado": 1,
    "fuentes": [
     "F-452"
+   ]
+  },
+  {
+   "id": "adquisicion_oak_street_cvs",
+   "nombre": "Adquisición de Oak Street Health por CVS Health (2023)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-115"
    ]
   },
   {
@@ -86,6 +113,15 @@
    ]
   },
   {
+   "id": "afiliados_va",
+   "nombre": "Afiliados de Veterans Affairs (EE.UU.)",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-330"
+   ]
+  },
+  {
    "id": "afirmaciones_inexactas_ia",
    "nombre": "Afirmaciones inexactas en la persuasión de la IA",
    "tipo": "resultado",
@@ -95,12 +131,49 @@
    ]
   },
   {
+   "id": "agente_encuestado_sintetico",
+   "nombre": "Agente autónomo con LLM que responde encuestas online",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-598"
+   ]
+  },
+  {
    "id": "agentes_maquina_delegados",
    "nombre": "Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas",
    "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
     "F-579"
+   ]
+  },
+  {
+   "id": "ajuste_feedback_humano",
+   "nombre": "Ajuste fino con feedback humano (RLHF)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-548"
+   ]
+  },
+  {
+   "id": "ajuste_fino_datos_sociales",
+   "nombre": "Prompts ricos en contexto y ajuste fino con datos de ciencias sociales",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-597"
+   ]
+  },
+  {
+   "id": "ajuste_riesgo",
+   "nombre": "Ajuste / igualación de riesgo entre aseguradoras",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-92",
+    "F-97"
    ]
   },
   {
@@ -179,6 +252,15 @@
    ]
   },
   {
+   "id": "apreciacion_algoritmica",
+   "nombre": "Apreciación algorítmica (preferir consejo algorítmico al humano)",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-584"
+   ]
+  },
+  {
    "id": "aprendibilidad",
    "nombre": "Aprendibilidad / conciencia del set de funciones",
    "tipo": "resultado",
@@ -251,6 +333,15 @@
    ]
   },
   {
+   "id": "autoeficacia_entrenamiento",
+   "nombre": "Autoeficacia post-entrenamiento",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-219"
+   ]
+  },
+  {
    "id": "autoestimacion_desempeno",
    "nombre": "Autoestimación del desempeño (~+4 pts)",
    "tipo": "resultado",
@@ -278,12 +369,30 @@
    ]
   },
   {
+   "id": "aversion_algoritmica",
+   "nombre": "Aversión algorítmica (evitar algoritmos tras verlos errar)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-583"
+   ]
+  },
+  {
    "id": "aversion_perdida",
    "nombre": "Aversión a la pérdida (la función de valor es más empinada para pérdidas)",
    "tipo": "constructo",
    "grado": 1,
    "fuentes": [
     "F-221"
+   ]
+  },
+  {
+   "id": "aversion_redes_estrechas",
+   "nombre": "Aversión a redes de proveedores estrechas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-341"
    ]
   },
   {
@@ -351,6 +460,15 @@
    ]
   },
   {
+   "id": "busqueda_online",
+   "nombre": "Búsqueda online del producto",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-178"
+   ]
+  },
+  {
    "id": "c_70_cambio_fracasa",
    "nombre": "El 70% de las iniciativas de cambio organizacional fracasa",
    "tipo": "afirmacion",
@@ -384,6 +502,15 @@
    "grado": 1,
    "fuentes": [
     "F-503"
+   ]
+  },
+  {
+   "id": "c_aversion_algoritmica_general",
+   "nombre": "La gente es en general reacia a confiar en el juicio de algoritmos",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-584"
    ]
   },
   {
@@ -699,6 +826,16 @@
    ]
   },
   {
+   "id": "c_llm_sesgos_humanos",
+   "nombre": "Los LLMs reproducen los sesgos y heurísticas de decisión humanos",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-573",
+    "F-574"
+   ]
+  },
+  {
    "id": "c_margen_compresion",
    "nombre": "El margen fino de 2025 (1,8%) es una tendencia de compresión",
    "tipo": "afirmacion",
@@ -754,6 +891,15 @@
    "fuentes": [
     "F-143",
     "F-144"
+   ]
+  },
+  {
+   "id": "c_pe_valor_viable",
+   "nombre": "La inversión de private equity en atención primaria con pago basado en valor es comercialmente viable (encuentra compradores corporativos)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-115"
    ]
   },
   {
@@ -825,11 +971,12 @@
    "id": "c_sinteticas_menos_varianza",
    "nombre": "Las respuestas sintéticas con LLM tienen menos varianza que las humanas",
    "tipo": "afirmacion",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
     "F-552",
     "F-553",
-    "F-560"
+    "F-560",
+    "F-571"
    ]
   },
   {
@@ -916,6 +1063,15 @@
    ]
   },
   {
+   "id": "calidad_dialogo_fina",
+   "nombre": "Cualidades finas del diálogo a nivel de turno y de conversación",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-158"
+   ]
+  },
+  {
    "id": "calidad_metaanalisis_nudge",
    "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
    "tipo": "limitacion",
@@ -931,6 +1087,24 @@
    "grado": 1,
    "fuentes": [
     "F-230"
+   ]
+  },
+  {
+   "id": "calidad_recuperacion_rag",
+   "nombre": "Relevancia y foco del contexto recuperado",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-151"
+   ]
+  },
+  {
+   "id": "calidad_reporte_microcosteo",
+   "nombre": "Calidad metodológica y de reporte muy variable en micro-costeo",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-66"
    ]
   },
   {
@@ -994,6 +1168,24 @@
    ]
   },
   {
+   "id": "capitacion_ajustada_necesidad",
+   "nombre": "Capitación ajustada por necesidad (fórmula de asignación / Global Sum del Reino Unido)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-111"
+   ]
+  },
+  {
+   "id": "capital_privado_salud",
+   "nombre": "Inversión de private equity en atención primaria",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-115"
+   ]
+  },
+  {
    "id": "carga_cognitiva",
    "nombre": "Carga cognitiva sobre la memoria de trabajo",
    "tipo": "constructo",
@@ -1048,6 +1240,34 @@
    ]
   },
   {
+   "id": "cfir",
+   "nombre": "Marco Consolidado de Investigación en Implementación (CFIR)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-64"
+   ]
+  },
+  {
+   "id": "choices13k",
+   "nombre": "Conjunto choices13k de elecciones riesgosas (Peterson et al., Science 2021)",
+   "tipo": "estudio",
+   "grado": 2,
+   "fuentes": [
+    "F-566",
+    "F-567"
+   ]
+  },
+  {
+   "id": "cierre_bloque_polizas",
+   "nombre": "Cierre de un bloque de pólizas a nuevos afiliados",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-90"
+   ]
+  },
+  {
    "id": "cierre_munich_re_ventures",
    "nombre": "Fin de nuevas inversiones de Munich Re Ventures (≈US$1.200M en ~100 inversiones, 2015-2025)",
    "tipo": "concepto",
@@ -1081,6 +1301,15 @@
    "grado": 1,
    "fuentes": [
     "F-6"
+   ]
+  },
+  {
+   "id": "cobertura_seguro_salud",
+   "nombre": "Cobertura de seguro de salud",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-89"
    ]
   },
   {
@@ -1131,6 +1360,24 @@
    ]
   },
   {
+   "id": "complejidad_cfir",
+   "nombre": "CFIR exhaustivo pero engorroso de aplicar",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-64"
+   ]
+  },
+  {
+   "id": "completitud_teoria",
+   "nombre": "Completitud de una teoría (fracción de la variación predecible que capta)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-568"
+   ]
+  },
+  {
    "id": "compra_ecommerce",
    "nombre": "Compra en e-commerce",
    "tipo": "resultado",
@@ -1168,6 +1415,15 @@
    ]
   },
   {
+   "id": "conducta_maquinas",
+   "nombre": "Conducta de las máquinas (machine behaviour) como campo científico",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-596"
+   ]
+  },
+  {
    "id": "conducta_salud",
    "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
    "tipo": "resultado",
@@ -1200,9 +1456,10 @@
    "id": "confianza_en_ia",
    "nombre": "Confianza en la IA",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-242"
+    "F-242",
+    "F-583"
    ]
   },
   {
@@ -1233,6 +1490,15 @@
    ]
   },
   {
+   "id": "conocimiento_declarativo_procedimental",
+   "nombre": "Conocimiento declarativo y procedimental",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-219"
+   ]
+  },
+  {
    "id": "consejo_experto_digital",
    "nombre": "Consejo experto digital en la elección del plan de seguro",
    "tipo": "intervencion",
@@ -1260,12 +1526,57 @@
    ]
   },
   {
+   "id": "contenido_emocional_anuncio",
+   "nombre": "Contenido emocional en anuncios",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-178"
+   ]
+  },
+  {
+   "id": "contenido_informativo_anuncio",
+   "nombre": "Contenido informativo en anuncios",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-178"
+   ]
+  },
+  {
    "id": "contexto_y_metodo",
    "nombre": "Contexto y elección metodológica",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-434"
+   ]
+  },
+  {
+   "id": "continuidad_atencion_primaria",
+   "nombre": "Primer contacto y longitudinalidad de la atención primaria",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-107"
+   ]
+  },
+  {
+   "id": "continuidad_proveedor_habitual",
+   "nombre": "Cobertura del proveedor habitual (continuidad de atención)",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-341"
+   ]
+  },
+  {
+   "id": "controles_atencion_encuestas",
+   "nombre": "Controles de atención y de detección de respuestas no humanas en encuestas",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-598"
    ]
   },
   {
@@ -1305,6 +1616,15 @@
    ]
   },
   {
+   "id": "creador_mercado_seguros",
+   "nombre": "Función de creador de mercado (emparejar necesidades del asegurado con aseguradoras capaces)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-180"
+   ]
+  },
+  {
    "id": "crecimiento_prima_root",
    "nombre": "Crecimiento de prima devengada de Root (−1%)",
    "tipo": "resultado",
@@ -1326,8 +1646,9 @@
    "id": "crecimiento_ventas",
    "nombre": "Crecimiento de ventas",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
+    "F-178",
     "F-514"
    ]
   },
@@ -1338,6 +1659,15 @@
    "grado": 1,
    "fuentes": [
     "F-469"
+   ]
+  },
+  {
+   "id": "creencias_conspirativas",
+   "nombre": "Creencia en teorías conspirativas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-586"
    ]
   },
   {
@@ -1356,6 +1686,15 @@
    "grado": 2,
    "fuentes": [
     "F-579"
+   ]
+  },
+  {
+   "id": "dap_red_proveedores",
+   "nombre": "Disposición a pagar por la red de proveedores del plan",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-341"
    ]
   },
   {
@@ -1383,6 +1722,24 @@
    "grado": 3,
    "fuentes": [
     "F-241"
+   ]
+  },
+  {
+   "id": "datos_log_conducta",
+   "nombre": "Trazas digitales / logfiles de uso real",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-65"
+   ]
+  },
+  {
+   "id": "decision_compra_hogar",
+   "nombre": "Decisión de compra en el hogar/pareja",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-236"
    ]
   },
   {
@@ -1425,10 +1782,29 @@
    "id": "demanda_seguros",
    "nombre": "Demanda de seguros",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-164",
     "F-221",
     "F-3"
+   ]
+  },
+  {
+   "id": "derivacion_atencion_primaria",
+   "nombre": "Desvío de pacientes de urgencias a atención primaria",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-331"
+   ]
+  },
+  {
+   "id": "desalineacion_opinion_grupos",
+   "nombre": "Desalineación entre las opiniones de un LLM y las de grupos demográficos",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-548"
    ]
   },
   {
@@ -1502,6 +1878,24 @@
    ]
   },
   {
+   "id": "desigualdad_productividad",
+   "nombre": "Desigualdad de productividad entre trabajadores",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-581"
+   ]
+  },
+  {
+   "id": "deteccion_faux_pas",
+   "nombre": "Falla en detectar faux pas por enfoque hiperconservador al concluir",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-577"
+   ]
+  },
+  {
    "id": "determinantes_automedicacion",
    "nombre": "Determinantes de la automedicación",
    "tipo": "constructo",
@@ -1517,6 +1911,24 @@
    "grado": 1,
    "fuentes": [
     "F-508"
+   ]
+  },
+  {
+   "id": "difusion_responsabilidad",
+   "nombre": "Difusión de la responsabilidad",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-226"
+   ]
+  },
+  {
+   "id": "direct_primary_care",
+   "nombre": "Direct Primary Care (atención primaria por membresía)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-107"
    ]
   },
   {
@@ -1566,12 +1978,31 @@
    ]
   },
   {
+   "id": "diseno_stepped_wedge",
+   "nombre": "Diseño escalonado aleatorizado por clusters (stepped-wedge)",
+   "tipo": "concepto",
+   "grado": 3,
+   "fuentes": [
+    "F-58",
+    "F-59"
+   ]
+  },
+  {
    "id": "disposicion_compra",
    "nombre": "Disposición a comprar",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-176"
+   ]
+  },
+  {
+   "id": "distorsion_hiperprecision",
+   "nombre": "Distorsión de hiperprecisión de LLMs (respuestas demasiado exactas frente a humanos)",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-545"
    ]
   },
   {
@@ -1635,9 +2066,10 @@
    "id": "efecto_dotacion",
    "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
    "tipo": "constructo",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-223"
+    "F-223",
+    "F-573"
    ]
   },
   {
@@ -1714,6 +2146,15 @@
    ]
   },
   {
+   "id": "enfermedad_infrecuente",
+   "nombre": "Enfermedad poco común",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-43"
+   ]
+  },
+  {
    "id": "errores_intuitivos_llm",
    "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)",
    "tipo": "resultado",
@@ -1744,9 +2185,10 @@
    "id": "escala_modelo_llm",
    "nombre": "Tamaño y competencia lingüística de los modelos de lenguaje",
    "tipo": "concepto",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-572"
+    "F-572",
+    "F-575"
    ]
   },
   {
@@ -1768,12 +2210,30 @@
    ]
   },
   {
+   "id": "espiral_muerte_seleccion_adversa",
+   "nombre": "Espiral de la muerte por selección adversa",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-90"
+   ]
+  },
+  {
    "id": "estructura_decision",
    "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
    "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
     "F-16"
+   ]
+  },
+  {
+   "id": "estructura_roles_familiares",
+   "nombre": "Estructura de roles y estrategias de decisión en la familia",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-236"
    ]
   },
   {
@@ -1801,6 +2261,42 @@
    "grado": 1,
    "fuentes": [
     "F-252"
+   ]
+  },
+  {
+   "id": "evasion_controles_calidad",
+   "nombre": "Evasión de controles de calidad por agentes LLM",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-598"
+   ]
+  },
+  {
+   "id": "evidencia_debil_acceso_calidad",
+   "nombre": "Evidencia limitada y de baja validez interna sobre acceso y calidad",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-339"
+   ]
+  },
+  {
+   "id": "exactitud_fuera_frontera",
+   "nombre": "Exactitud en tareas fuera de la frontera de capacidad de la IA",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-582"
+   ]
+  },
+  {
+   "id": "exclusion_por_cuota",
+   "nombre": "Exclusión de pacientes vulnerables por la cuota de membresía",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-107"
    ]
   },
   {
@@ -1853,9 +2349,20 @@
    "id": "experiencia_trabajador",
    "nombre": "Experiencia y habilidad previa del trabajador",
    "tipo": "constructo",
+   "grado": 3,
+   "fuentes": [
+    "F-580",
+    "F-582",
+    "F-584"
+   ]
+  },
+  {
+   "id": "experimento_turing",
+   "nombre": "Experimento de Turing (TE): replicar estudios con sujetos humanos simulados por un LLM",
+   "tipo": "metrica",
    "grado": 1,
    "fuentes": [
-    "F-580"
+    "F-545"
    ]
   },
   {
@@ -1876,6 +2383,15 @@
    "grado": 2,
    "fuentes": [
     "F-407"
+   ]
+  },
+  {
+   "id": "factibilidad_seguridad_modelo_ia",
+   "nombre": "Seguridad, fiabilidad y factibilidad del modelo de IA en entorno real",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-57"
    ]
   },
   {
@@ -1906,12 +2422,49 @@
    ]
   },
   {
+   "id": "fallas_razonamiento_causal",
+   "nombre": "Fallas de razonamiento causal en LLMs",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-551"
+   ]
+  },
+  {
    "id": "farmacias_sistema_salud",
    "nombre": "Integración de farmacias y boticas al sistema nacional de salud",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-508"
+   ]
+  },
+  {
+   "id": "fed_metrica",
+   "nombre": "FED: métrica no supervisada de evaluación de diálogo con DialoGPT",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-158"
+   ]
+  },
+  {
+   "id": "fidelidad_algoritmica",
+   "nombre": "Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-544",
+    "F-597"
+   ]
+  },
+  {
+   "id": "fidelidad_respuesta_rag",
+   "nombre": "Fidelidad de la respuesta al contexto recuperado (control de alucinación)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-151"
    ]
   },
   {
@@ -2024,6 +2577,45 @@
    ]
   },
   {
+   "id": "ganancias_perdidas_predecibles",
+   "nombre": "Ganancias y pérdidas predecibles por asegurado (incentivo a seleccionar)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-97"
+   ]
+  },
+  {
+   "id": "gasto_salud",
+   "nombre": "Gasto en atención de salud",
+   "tipo": "resultado",
+   "grado": 4,
+   "fuentes": [
+    "F-110",
+    "F-339",
+    "F-340",
+    "F-352"
+   ]
+  },
+  {
+   "id": "gatekeeping_atencion_primaria",
+   "nombre": "Gatekeeping de atención primaria (filtro de acceso al hospital)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-109"
+   ]
+  },
+  {
+   "id": "gatekeeping_mg",
+   "nombre": "Gatekeeping del médico general (filtro de acceso a especialistas)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-110"
+   ]
+  },
+  {
    "id": "generative_ui",
    "nombre": "Generative UI (interfaces generadas por LLM)",
    "tipo": "intervencion",
@@ -2047,6 +2639,15 @@
    "grado": 1,
    "fuentes": [
     "F-466"
+   ]
+  },
+  {
+   "id": "gpt3",
+   "nombre": "Modelo de lenguaje GPT-3 (davinci)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-551"
    ]
   },
   {
@@ -2080,10 +2681,13 @@
    "id": "herramientas_ia_generativas",
    "nombre": "Herramientas de IA generativa",
    "tipo": "intervencion",
-   "grado": 3,
+   "grado": 9,
    "fuentes": [
     "F-308",
-    "F-521"
+    "F-521",
+    "F-581",
+    "F-582",
+    "F-591"
    ]
   },
   {
@@ -2099,9 +2703,10 @@
    "id": "heuristicas_juicio",
    "nombre": "Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla)",
    "tipo": "concepto",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
-    "F-220"
+    "F-220",
+    "F-573"
    ]
   },
   {
@@ -2172,9 +2777,29 @@
    "id": "ia_clinica",
    "nombre": "IA clínica",
    "tipo": "concepto",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-56"
+    "F-56",
+    "F-57"
+   ]
+  },
+  {
+   "id": "ia_en_investigacion",
+   "nombre": "Herramientas de IA en la investigación científica",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-555",
+    "F-591"
+   ]
+  },
+  {
+   "id": "ilusion_comprension",
+   "nombre": "Ilusiones de comprensión (creer entender el mundo más de lo que se entiende)",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-555"
    ]
   },
   {
@@ -2187,6 +2812,24 @@
    ]
   },
   {
+   "id": "incertidumbre_medica",
+   "nombre": "Incertidumbre sobre la incidencia de enfermedad y la eficacia del tratamiento",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-83"
+   ]
+  },
+  {
+   "id": "incumplimiento_consejo_triaje",
+   "nombre": "Pacientes que acuden a urgencias pese a indicación de autocuidado o atención primaria",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-333"
+   ]
+  },
+  {
    "id": "indecopi_sanciones_2026",
    "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
    "tipo": "intervencion",
@@ -2194,6 +2837,15 @@
    "fuentes": [
     "F-485",
     "F-486"
+   ]
+  },
+  {
+   "id": "inequidad_pago_practicas",
+   "nombre": "Prácticas idénticas no reciben pago equitativo entre países del Reino Unido (Gales ~9% menos)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-111"
    ]
   },
   {
@@ -2221,6 +2873,15 @@
    "grado": 1,
    "fuentes": [
     "F-17"
+   ]
+  },
+  {
+   "id": "infraestructura_mercado_seguro",
+   "nombre": "Infraestructura y regulación del mercado de seguros incompatible con el precio personalizado",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-94"
    ]
   },
   {
@@ -2271,6 +2932,15 @@
    ]
   },
   {
+   "id": "interaccion_inicial",
+   "nombre": "Etapa inicial de la interacción interpersonal",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-125"
+   ]
+  },
+  {
    "id": "interfaces_adaptativas",
    "nombre": "Interfaces adaptativas",
    "tipo": "concepto",
@@ -2286,6 +2956,33 @@
    "grado": 1,
    "fuentes": [
     "F-250"
+   ]
+  },
+  {
+   "id": "intermediarios_seguros",
+   "nombre": "Intermediarios de seguros independientes (brokers y agentes)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-180"
+   ]
+  },
+  {
+   "id": "intervalo_retencion",
+   "nombre": "Intervalo de retención (tiempo hasta la prueba final)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-218"
+   ]
+  },
+  {
+   "id": "intervencion_emergencia",
+   "nombre": "Ayuda en una emergencia (rapidez de aviso)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-226"
    ]
   },
   {
@@ -2316,6 +3013,24 @@
    ]
   },
   {
+   "id": "investigacion_exploratoria",
+   "nombre": "Estudios piloto y exploratorios",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-597"
+   ]
+  },
+  {
+   "id": "investigacion_psicologica",
+   "nombre": "Investigación en ciencia psicológica con participantes",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-546"
+   ]
+  },
+  {
    "id": "ipg_venta_rga",
    "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
    "tipo": "concepto",
@@ -2325,12 +3040,30 @@
    ]
   },
   {
+   "id": "irracionalidad_no_humana_llm",
+   "nombre": "Irracionalidad de los LLMs distinta de los sesgos humanos e inconsistente",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-574"
+   ]
+  },
+  {
    "id": "iyengar_lepper_2000",
    "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
    "tipo": "estudio",
    "grado": 1,
    "fuentes": [
     "F-121"
+   ]
+  },
+  {
+   "id": "juegos_simulacion_entrenamiento",
+   "nombre": "Juegos de simulación por computador para entrenamiento",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-219"
    ]
   },
   {
@@ -2421,10 +3154,11 @@
    "id": "marco_implementacion",
    "nombre": "Marcos de evaluación de efectividad e implementación",
    "tipo": "concepto",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-53",
-    "F-54"
+    "F-54",
+    "F-64"
    ]
   },
   {
@@ -2528,6 +3262,15 @@
    ]
   },
   {
+   "id": "mercado_seguro_individual",
+   "nombre": "Mercado de seguro de salud individual",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-91"
+   ]
+  },
+  {
    "id": "mertens_2022",
    "nombre": "Meta-análisis de Mertens et al. (PNAS 2022)",
    "tipo": "estudio",
@@ -2543,6 +3286,15 @@
    "grado": 1,
    "fuentes": [
     "F-224"
+   ]
+  },
+  {
+   "id": "micro_costeo",
+   "nombre": "Micro-costeo (enumeración y costeo de cada insumo)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-66"
    ]
   },
   {
@@ -2576,8 +3328,10 @@
    "id": "ml_generacion_hipotesis",
    "nombre": "ML + interpretación humana para generar hipótesis conductuales",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 4,
    "fuentes": [
+    "F-566",
+    "F-567",
     "F-569"
    ]
   },
@@ -2604,9 +3358,23 @@
    "id": "modelos_chatgpt",
    "nombre": "Modelos ChatGPT-3.5 y 4",
    "tipo": "intervencion",
+   "grado": 9,
+   "fuentes": [
+    "F-545",
+    "F-571",
+    "F-572",
+    "F-573",
+    "F-575",
+    "F-577"
+   ]
+  },
+  {
+   "id": "modelos_conductuales_economicos",
+   "nombre": "Modelos económicos de decisión (loterías, juegos, secuencias aleatorias)",
+   "tipo": "concepto",
    "grado": 1,
    "fuentes": [
-    "F-572"
+    "F-568"
    ]
   },
   {
@@ -2616,6 +3384,15 @@
    "grado": 1,
    "fuentes": [
     "F-120"
+   ]
+  },
+  {
+   "id": "monocultivo_cientifico",
+   "nombre": "Monocultivos científicos (dominan ciertos métodos, preguntas y puntos de vista)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-555"
    ]
   },
   {
@@ -2631,11 +3408,17 @@
    "id": "muestras_sinteticas_llm",
    "nombre": "Muestras sintéticas con LLM (personas simuladas que responden encuestas)",
    "tipo": "intervencion",
-   "grado": 3,
+   "grado": 10,
    "fuentes": [
+    "F-544",
+    "F-545",
+    "F-546",
+    "F-548",
     "F-552",
     "F-553",
-    "F-560"
+    "F-560",
+    "F-574",
+    "F-597"
    ]
   },
   {
@@ -2663,6 +3446,24 @@
    "grado": 1,
    "fuentes": [
     "F-230"
+   ]
+  },
+  {
+   "id": "nhs_111",
+   "nombre": "Servicio telefónico de asesoría y triaje NHS 111",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-333"
+   ]
+  },
+  {
+   "id": "nivel_educativo",
+   "nombre": "Nivel educativo",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-65"
    ]
   },
   {
@@ -2702,6 +3503,15 @@
    ]
   },
   {
+   "id": "opinionqa",
+   "nombre": "OpinionQA (benchmark de alineación de opiniones con 60 grupos de EE.UU.)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-548"
+   ]
+  },
+  {
    "id": "outcomes_salud",
    "nombre": "Resultados de salud reales del paciente",
    "tipo": "constructo",
@@ -2711,12 +3521,30 @@
    ]
   },
   {
+   "id": "pago_basado_valor_ap",
+   "nombre": "Pago basado en valor en atención primaria",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-115"
+   ]
+  },
+  {
    "id": "pandemia_2020",
    "nombre": "Pandemia de 2020",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-41"
+   ]
+  },
+  {
+   "id": "particularidades_economicas_atencion_medica",
+   "nombre": "Problemas económicos especiales de la atención médica",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-83"
    ]
   },
   {
@@ -2817,11 +3645,12 @@
    "id": "persuasion_ia",
    "nombre": "Persuasión conversacional por IA",
    "tipo": "intervencion",
-   "grado": 4,
+   "grado": 5,
    "fuentes": [
     "F-489",
     "F-490",
-    "F-585"
+    "F-585",
+    "F-586"
    ]
   },
   {
@@ -2881,6 +3710,15 @@
    ]
   },
   {
+   "id": "practica_espaciada",
+   "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-218"
+   ]
+  },
+  {
    "id": "precio_accion_figma",
    "nombre": "Precio de la acción de Figma (FIG)",
    "tipo": "resultado",
@@ -2900,6 +3738,15 @@
    ]
   },
   {
+   "id": "precio_marginal_atencion",
+   "nombre": "Precio marginal de la atención que enfrenta el paciente",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-89"
+   ]
+  },
+  {
    "id": "precision_adaptacion_alta",
    "nombre": "Alta precisión de adaptación",
    "tipo": "concepto",
@@ -2912,8 +3759,9 @@
    "id": "precision_diagnostica",
    "nombre": "Precisión diagnóstica de chatbots médicos",
    "tipo": "metrica",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
+    "F-43",
     "F-44"
    ]
   },
@@ -2927,12 +3775,22 @@
    ]
   },
   {
+   "id": "precision_triage_moderada",
+   "nombre": "Precisión de triage moderada (coincidencia exacta ~54% con enfermera)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-42"
+   ]
+  },
+  {
    "id": "prediccion_conducta_humana",
    "nombre": "Predicción de la conducta de participantes no vistos en experimentos",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-563"
+    "F-563",
+    "F-566"
    ]
   },
   {
@@ -2960,6 +3818,33 @@
    "grado": 1,
    "fuentes": [
     "F-381"
+   ]
+  },
+  {
+   "id": "presencia_otros_testigos",
+   "nombre": "Presencia percibida de otros testigos",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-226"
+   ]
+  },
+  {
+   "id": "presentacion_atipica",
+   "nombre": "Presentación clínica atípica",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-43"
+   ]
+  },
+  {
+   "id": "pricing_personalizado_autorrastreo",
+   "nombre": "Pricing de seguro de salud personalizado con self-tracking",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-94"
    ]
   },
   {
@@ -3001,6 +3886,25 @@
    ]
   },
   {
+   "id": "productividad_investigacion",
+   "nombre": "Productividad de la investigación (automatización de micro-tareas)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-591"
+   ]
+  },
+  {
+   "id": "productividad_trabajo_conocimiento",
+   "nombre": "Productividad y calidad del trabajo de conocimiento (consultores)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-581",
+    "F-582"
+   ]
+  },
+  {
    "id": "programa_simulado",
    "nombre": "Programa simulado (incentivo ≤US$100), no seguro con prima real",
    "tipo": "limitacion",
@@ -3028,12 +3932,40 @@
    ]
   },
   {
+   "id": "psicologia_de_maquinas",
+   "nombre": "Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-551",
+    "F-596"
+   ]
+  },
+  {
    "id": "publicidad_precio_enganosa",
    "nombre": "Publicidad de precio engañosa",
    "tipo": "intervencion",
    "grado": 2,
    "fuentes": [
     "F-176"
+   ]
+  },
+  {
+   "id": "racionalidad_economica",
+   "nombre": "Racionalidad económica (consistencia con maximización de utilidad por preferencia revelada)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-571"
+   ]
+  },
+  {
+   "id": "ragas",
+   "nombre": "RAGAs: métricas sin referencia para evaluar pipelines RAG",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-151"
    ]
   },
   {
@@ -3080,6 +4012,25 @@
    "fuentes": [
     "F-484",
     "F-485"
+   ]
+  },
+  {
+   "id": "redes_estrechas_niveles",
+   "nombre": "Redes de proveedores estrechas o por niveles (tiered)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-339",
+    "F-340"
+   ]
+  },
+  {
+   "id": "rediseno_dcg",
+   "nombre": "Rediseño de los grupos de costo por diagnóstico (DCG) con clustering y multimorbilidad",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-97"
    ]
   },
   {
@@ -3149,12 +4100,49 @@
    ]
   },
   {
+   "id": "retencion_aprendizaje",
+   "nombre": "Retención del aprendizaje",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-218",
+    "F-219"
+   ]
+  },
+  {
    "id": "revenue_figma_q1",
    "nombre": "Ingresos de Figma Q1 2026 (+46%)",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-303"
+   ]
+  },
+  {
+   "id": "riesgo_contaminacion_retencion",
+   "nombre": "Problemas de retención y contaminación por desfase entre reclutamiento e intervención",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-59"
+   ]
+  },
+  {
+   "id": "riesgo_de_base",
+   "nombre": "Riesgo de base (diferencia entre pérdida real e índice de pérdida)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-164"
+   ]
+  },
+  {
+   "id": "riesgo_moral",
+   "nombre": "Riesgo moral en seguros de salud",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-89"
    ]
   },
   {
@@ -3302,11 +4290,40 @@
    ]
   },
   {
+   "id": "seguridad_triage_paciente",
+   "nombre": "Seguridad del paciente en el triage automatizado",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-42"
+   ]
+  },
+  {
+   "id": "seguro_parametrico",
+   "nombre": "Seguro paramétrico (pago según índice observable)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-164"
+   ]
+  },
+  {
+   "id": "seleccion_adversa",
+   "nombre": "Selección adversa (selección de riesgos)",
+   "tipo": "concepto",
+   "grado": 4,
+   "fuentes": [
+    "F-91",
+    "F-92"
+   ]
+  },
+  {
    "id": "sensibilidad_redaccion_llm",
    "nombre": "Sensibilidad a la redacción del prompt e inestabilidad en el tiempo",
    "tipo": "limitacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-551",
     "F-552"
    ]
   },
@@ -3318,6 +4335,15 @@
    "fuentes": [
     "F-60",
     "F-61"
+   ]
+  },
+  {
+   "id": "sesgo_conjunto_datos",
+   "nombre": "Sesgo del conjunto de datos de entrenamiento (más ruido de decisión, equipreferencia)",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-567"
    ]
   },
   {
@@ -3368,6 +4394,15 @@
    ]
   },
   {
+   "id": "sesgo_tendencias_seculares",
+   "nombre": "Riesgo de sesgo por mala especificación de tendencias seculares",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-58"
+   ]
+  },
+  {
    "id": "sesgos_conductuales_seguro",
    "nombre": "Sesgos conductuales (miopía, narrow framing, present bias)",
    "tipo": "constructo",
@@ -3389,9 +4424,10 @@
    "id": "silent_trial",
    "nombre": "Silent trial / modo sombra",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
-    "F-56"
+    "F-56",
+    "F-57"
    ]
   },
   {
@@ -3454,12 +4490,48 @@
    ]
   },
   {
+   "id": "steering_proveedor_precio",
+   "nombre": "Direccionar pacientes a proveedores de menor precio (steering)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-352"
+   ]
+  },
+  {
+   "id": "subsidio_parcial_aseguradora",
+   "nombre": "Subsidio parcial de la aseguradora al bloque",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-90"
+   ]
+  },
+  {
+   "id": "subsidios_penalidades_afiliacion",
+   "nombre": "Subsidios o penalidades para inducir la afiliación",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-92"
+   ]
+  },
+  {
    "id": "subtipos_patentes_diseno",
    "nombre": "Subtipos de patentes de diseño e índice compuesto de diseño",
    "tipo": "metrica",
    "grado": 1,
    "fuentes": [
     "F-514"
+   ]
+  },
+  {
+   "id": "supervivencia_cancer",
+   "nombre": "Supervivencia de pacientes con cáncer",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-110"
    ]
   },
   {
@@ -3500,6 +4572,15 @@
    ]
   },
   {
+   "id": "tamano_muestral_requerido",
+   "nombre": "Tamaño muestral requerido (número de clusters/prácticas)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-59"
+   ]
+  },
+  {
    "id": "tamano_surtido",
    "nombre": "Tamaño del surtido (cuántas opciones se ofrecen)",
    "tipo": "intervencion",
@@ -3536,12 +4617,31 @@
    ]
   },
   {
+   "id": "tarificacion_por_experiencia",
+   "nombre": "Tarificación por experiencia (experience rating)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-91"
+   ]
+  },
+  {
    "id": "teoria_disrupcion",
    "nombre": "Teoría de la innovación disruptiva",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-437"
+   ]
+  },
+  {
+   "id": "teoria_mente_llm",
+   "nombre": "Desempeño de LLMs en tareas de teoría de la mente",
+   "tipo": "resultado",
+   "grado": 4,
+   "fuentes": [
+    "F-575",
+    "F-577"
    ]
   },
   {
@@ -3552,6 +4652,15 @@
    "fuentes": [
     "F-221",
     "F-223"
+   ]
+  },
+  {
+   "id": "teoria_reduccion_incertidumbre",
+   "nombre": "Teoría de la reducción de la incertidumbre (Berger y Calabrese)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-125"
    ]
   },
   {
@@ -3570,6 +4679,24 @@
    "grado": 1,
    "fuentes": [
     "F-516"
+   ]
+  },
+  {
+   "id": "triaje_enfermeria_mts",
+   "nombre": "Triaje por enfermera con extensión del Manchester Triage System",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-331"
+   ]
+  },
+  {
+   "id": "triaje_erroneo",
+   "nombre": "Casos mal triados por la línea de triaje (subtriaje)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-333"
    ]
   },
   {
@@ -3622,12 +4749,57 @@
    ]
   },
   {
+   "id": "uso_especialistas_hospitalizacion",
+   "nombre": "Uso de especialistas y hospitalizaciones",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-110"
+   ]
+  },
+  {
+   "id": "usr_metrica",
+   "nombre": "USR: métrica no supervisada y sin referencia para diálogo",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-158"
+   ]
+  },
+  {
    "id": "utilidad_rimac",
    "nombre": "Utilidad neta de Rímac (2T 2026: S/85,8 M)",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-504"
+   ]
+  },
+  {
+   "id": "utilizacion_servicios_salud",
+   "nombre": "Utilización de servicios de salud",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-89"
+   ]
+  },
+  {
+   "id": "validacion_metodos_mixtos",
+   "nombre": "Validación clínica con métodos mixtos y viñetas de casos",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-63"
+   ]
+  },
+  {
+   "id": "validez_encuestas_online",
+   "nombre": "Validez de los datos de encuestas online",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-598"
    ]
   },
   {
@@ -3667,12 +4839,58 @@
    ]
   },
   {
+   "id": "ver_error_algoritmo",
+   "nombre": "Ver al algoritmo desempeñarse y equivocarse",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-583"
+   ]
+  },
+  {
    "id": "verificabilidad",
    "nombre": "Verificabilidad de la predicción",
    "tipo": "constructo",
    "grado": 1,
    "fuentes": [
     "F-243"
+   ]
+  },
+  {
+   "id": "verificador_sintomas_electronico",
+   "nombre": "Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-42",
+    "F-63"
+   ]
+  },
+  {
+   "id": "visitas_atencion_primaria",
+   "nombre": "Visitas a establecimientos de atención primaria",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-109"
+   ]
+  },
+  {
+   "id": "visitas_hospitalarias",
+   "nombre": "Visitas hospitalarias",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-109"
+   ]
+  },
+  {
+   "id": "visitas_urgencias",
+   "nombre": "Visitas a urgencias (ED)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-330"
    ]
   },
   {
@@ -7369,11 +8587,1367 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-04",
    "clase": "metodo"
+  },
+  {
+   "id": "T-308",
+   "s": "verificador_sintomas_electronico",
+   "p": "asocia_con",
+   "o": "seguridad_triage_paciente",
+   "f": "F-42",
+   "apoyo": "JMIR Hum Factors 2024: en 877 evaluaciones reales en Finlandia, el 97,6% de los triajes de Omaolo fueron seguros frente a la enfermera y 21 casos críticos no mostraron riesgo para el paciente.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-309",
+   "s": "verificador_sintomas_electronico",
+   "p": "tiene_limite",
+   "o": "precision_triage_moderada",
+   "f": "F-42",
+   "apoyo": "JMIR Hum Factors 2024: la coincidencia exacta de Omaolo con el triage de enfermera fue 53,7% (66,6% sumando sobre-triage leve); sensibilidad 62,6% y especificidad 69,2%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-310",
+   "s": "presentacion_atipica",
+   "p": "reduce",
+   "o": "precision_diagnostica",
+   "f": "F-43",
+   "apoyo": "JMIR Form Res 2024: la precisión del top-10 del symptom checker cayó a 14,5% en presentaciones atípicas; la presentación típica se asoció con más acierto (OR 6,92).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-311",
+   "s": "enfermedad_infrecuente",
+   "p": "reduce",
+   "o": "precision_diagnostica",
+   "f": "F-43",
+   "apoyo": "JMIR Form Res 2024: en enfermedades infrecuentes la precisión fue 24,2%; la enfermedad común se asoció con acierto (OR 4,13). Precisión global 45,1%, sin mejora en 3 años.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-312",
+   "s": "silent_trial",
+   "p": "mide",
+   "o": "factibilidad_seguridad_modelo_ia",
+   "f": "F-57",
+   "apoyo": "Front Digit Health 2022: el silent trial evalúa el modelo en pacientes prospectivos con clínicos cegados, para medir seguridad, fiabilidad y factibilidad con riesgo mínimo antes de un ensayo clínico.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-313",
+   "s": "silent_trial",
+   "p": "aplica_a",
+   "o": "ia_clinica",
+   "f": "F-57",
+   "apoyo": "Front Digit Health 2022: los autores proponen que las aplicaciones de IA clínica incorporen el silent trial antes de un ensayo clínico a escala completa.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-314",
+   "s": "diseno_stepped_wedge",
+   "p": "tiene_limite",
+   "o": "sesgo_tendencias_seculares",
+   "f": "F-58",
+   "apoyo": "Int J Epidemiol 2020: a igualdad de condiciones, el stepped-wedge tiene mayor riesgo de sesgo que el ensayo por clusters paralelo por mala especificación de las tendencias seculares en el análisis.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-315",
+   "s": "diseno_stepped_wedge",
+   "p": "reduce",
+   "o": "tamano_muestral_requerido",
+   "f": "F-59",
+   "apoyo": "Trials 2013 (resumen de congreso): en DQIP y GP-POLY, al recibir todos la intervención y medir repetidamente, el stepped-wedge redujo el número de prácticas requerido frente a un diseño paralelo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-316",
+   "s": "diseno_stepped_wedge",
+   "p": "tiene_limite",
+   "o": "riesgo_contaminacion_retencion",
+   "f": "F-59",
+   "apoyo": "Trials 2013 (resumen de congreso): el diseño alarga los ensayos y, con desfases largos entre reclutamiento e inicio, crea problemas de retención y de contaminación.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-317",
+   "s": "validacion_metodos_mixtos",
+   "p": "aplica_a",
+   "o": "verificador_sintomas_electronico",
+   "f": "F-63",
+   "apoyo": "JMIR Res Protoc 2023: protocolo cuanti-cualitativo para validar Omaolo en atención primaria finlandesa, con viñetas clínicas para casos raros y agudos; 877 de 964 evaluaciones útiles.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-318",
+   "s": "cfir",
+   "p": "es_tipo_de",
+   "o": "marco_implementacion",
+   "f": "F-64",
+   "apoyo": "Learn Health Syst 2020: CFIR es un marco de ciencia de implementación usado para diseñar, evaluar e implementar intervenciones, considerando facilitadores y barreras.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-319",
+   "s": "cfir",
+   "p": "tiene_limite",
+   "o": "complejidad_cfir",
+   "f": "F-64",
+   "apoyo": "Learn Health Syst 2020: su exhaustividad lo vuelve engorroso; los autores lo simplificaron con 3 adaptaciones tras 23 entrevistas y 5 observaciones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-320",
+   "s": "datos_log_conducta",
+   "p": "mide",
+   "o": "adopcion_apps_mhealth",
+   "f": "F-65",
+   "apoyo": "JMIR mHealth uHealth 2019: con logfiles de un panel móvil de Hong Kong, el 27,5% de usuarios adoptó al menos un género de app de salud.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-321",
+   "s": "nivel_educativo",
+   "p": "asocia_con",
+   "o": "adopcion_apps_mhealth",
+   "f": "F-65",
+   "apoyo": "JMIR mHealth uHealth 2019: los adoptantes de apps mHealth en Hong Kong tienden a ser mujeres y de mayor nivel educativo.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-322",
+   "s": "micro_costeo",
+   "p": "tiene_limite",
+   "o": "calidad_reporte_microcosteo",
+   "f": "F-66",
+   "apoyo": "Health Econ Rev 2021: los estudios de micro-costeo varían mucho en calidad; el 86,2% no reportó por separado costos unitarios y cantidades de recursos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-323",
+   "s": "particularidades_economicas_atencion_medica",
+   "p": "origina_en",
+   "o": "incertidumbre_medica",
+   "f": "F-83",
+   "apoyo": "AER 1963 (reimpr. Bull WHO 2004): los problemas económicos especiales de la atención médica se explican como adaptaciones a la incertidumbre en la incidencia de enfermedad y en la eficacia del tratamiento.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-324",
+   "s": "cobertura_seguro_salud",
+   "p": "aumenta",
+   "o": "utilizacion_servicios_salud",
+   "f": "F-89",
+   "apoyo": "AER 1968 (síntesis LDI): con seguro, la demanda de atención crece porque responde al menor costo marginal para el individuo; es conducta económica racional, no perfidia moral.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-325",
+   "s": "riesgo_moral",
+   "p": "origina_en",
+   "o": "precio_marginal_atencion",
+   "f": "F-89",
+   "apoyo": "AER 1968 (síntesis LDI): como el costo del uso extra se reparte entre todos los asegurados, el individuo no se autolimita; por eso la cobertura completa puede no ser óptima.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-326",
+   "s": "cierre_bloque_polizas",
+   "p": "aumenta",
+   "o": "espiral_muerte_seleccion_adversa",
+   "f": "F-90",
+   "apoyo": "N Am Actuar J 2015: el cierre de un bloque de seguro individual en 1981 gatilló una espiral; hacia 2009 quedaban muy pocos asegurados y las primas eran ~7 veces la referencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-327",
+   "s": "subsidio_parcial_aseguradora",
+   "p": "modera",
+   "o": "espiral_muerte_seleccion_adversa",
+   "f": "F-90",
+   "apoyo": "N Am Actuar J 2015: la espiral se desarrolló en cámara lenta porque la aseguradora subsidió parcialmente el bloque cerrado.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-328",
+   "s": "tarificacion_por_experiencia",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-91",
+   "apoyo": "Explor Econ Hist 2004: con datos de 1957, pasar a tarificación por experiencia pudo ayudar a Blue Cross/Blue Shield a contrarrestar la selección adversa en el seguro grupal.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-329",
+   "s": "seleccion_adversa",
+   "p": "aplica_a",
+   "o": "mercado_seguro_individual",
+   "f": "F-91",
+   "apoyo": "Explor Econ Hist 2004: la selección adversa fue un problema mayor para los Blues en el mercado de seguro individual que en el grupal.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-330",
+   "s": "ajuste_riesgo",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-92",
+   "apoyo": "J Econ Perspect 2017: el ajuste de riesgo es uno de cuatro instrumentos de política habituales contra la selección, que puede desarmar mercados con primas disparadas.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-331",
+   "s": "subsidios_penalidades_afiliacion",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-92",
+   "apoyo": "J Econ Perspect 2017: subsidios o penalidades que influyen en la afiliación figuran entre los remedios comunes a la selección en seguros de salud.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-332",
+   "s": "pricing_personalizado_autorrastreo",
+   "p": "tiene_limite",
+   "o": "infraestructura_mercado_seguro",
+   "f": "F-94",
+   "apoyo": "Econ Soc 2019: el precio de riesgo personalizado choca con las infraestructuras que definen y regulan el seguro de salud; en la ACA (caso Oscar Health) parece improbable.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-333",
+   "s": "rediseno_dcg",
+   "p": "reduce",
+   "o": "ganancias_perdidas_predecibles",
+   "f": "F-97",
+   "apoyo": "Int J Health Econ Manag 2023: con datos de 17 M de asegurados holandeses (2017), rediseñar los DCG redujo sustancialmente ganancias y pérdidas predecibles, también en personas con varias dxgroups.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-334",
+   "s": "rediseno_dcg",
+   "p": "parte_de",
+   "o": "ajuste_riesgo",
+   "f": "F-97",
+   "apoyo": "Int J Health Econ Manag 2023: los DCG son un ajustador clave de morbilidad del modelo de igualación de riesgo holandés, que compensa a aseguradoras con primas comunitarias.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-335",
+   "s": "direct_primary_care",
+   "p": "aumenta",
+   "o": "continuidad_atencion_primaria",
+   "f": "F-107",
+   "apoyo": "J Am Board Fam Med 2018: con el modelo de Starfield, el DPC es teóricamente sólido para mejorar primer contacto y longitudinalidad en pacientes participantes, aunque con poca evidencia peer-reviewed.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-336",
+   "s": "direct_primary_care",
+   "p": "tiene_limite",
+   "o": "exclusion_por_cuota",
+   "f": "F-107",
+   "apoyo": "J Am Board Fam Med 2018: a nivel de sistema el DPC tiene baja validez de constructo porque la cuota excluye a pacientes más vulnerables y complejos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-337",
+   "s": "gatekeeping_atencion_primaria",
+   "p": "aumenta",
+   "o": "visitas_atencion_primaria",
+   "f": "F-109",
+   "apoyo": "BMJ Glob Health 2020: en un piloto rural chino (200.685 afiliados, DiD), el gatekeeping aumentó 55,3% los pacientes en atención primaria sin elevar su gasto ambulatorio (1,6%, p=0,884).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-338",
+   "s": "gatekeeping_atencion_primaria",
+   "p": "reduce",
+   "o": "visitas_hospitalarias",
+   "f": "F-109",
+   "apoyo": "BMJ Glob Health 2020: el piloto de gatekeeping en el NRCMS redujo las visitas hospitalarias en 23,9% (p=0,048), según diferencias en diferencias 2012-2014.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-339",
+   "s": "fidelidad_algoritmica",
+   "p": "aplica_a",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-544",
+   "apoyo": "Political Analysis 2023: condicionar GPT-3 con historias sociodemográficas reales genera 'muestras de silicio' cuyo sesgo es fino y demográficamente correlacionado, propiedad que los autores llaman fidelidad algorítmica.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-340",
+   "s": "experimento_turing",
+   "p": "mide",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-545",
+   "apoyo": "ICML 2023: el Experimento de Turing evalúa cuánto reproduce un LLM conductas de distintos humanos replicando estudios clásicos (Ultimátum, garden-path, Milgram, sabiduría de multitudes); los tres primeros replicaron hallazgos previos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-341",
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "distorsion_hiperprecision",
+   "f": "F-545",
+   "apoyo": "ICML 2023: el experimento de sabiduría de multitudes revela una 'distorsión de hiperprecisión' en algunos modelos, incluidos ChatGPT y GPT-4, que podría afectar aplicaciones en educación y artes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-342",
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "distorsion_hiperprecision",
+   "f": "F-545",
+   "apoyo": "ICML 2023: ChatGPT y GPT-4 figuran entre los modelos que muestran la distorsión de hiperprecisión al simular la sabiduría de multitudes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-343",
+   "s": "muestras_sinteticas_llm",
+   "p": "aplica_a",
+   "o": "investigacion_psicologica",
+   "f": "F-546",
+   "apoyo": "Trends Cogn Sci 2023: revisa evidencia incipiente y propone un modelo teórico de cuándo los LLM podrían sustituir a participantes humanos en psicología, con advertencias sobre su uso.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-344",
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "desalineacion_opinion_grupos",
+   "f": "F-548",
+   "apoyo": "ICML 2023: las opiniones de los LLMs difieren de las de 60 grupos de EE.UU. tanto como demócratas y republicanos en cambio climático, y la brecha persiste aun orientando el modelo hacia un grupo concreto.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-345",
+   "s": "ajuste_feedback_humano",
+   "p": "aumenta",
+   "o": "desalineacion_opinion_grupos",
+   "f": "F-548",
+   "apoyo": "ICML 2023: el ajuste fino con feedback humano, pensado para alinear los modelos, parece amplificar la desalineación con la opinión pública y se asocia a sesgo hacia la izquierda.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-346",
+   "s": "opinionqa",
+   "p": "mide",
+   "o": "desalineacion_opinion_grupos",
+   "f": "F-548",
+   "apoyo": "ICML 2023: OpinionQA usa encuestas de opinión de alta calidad para medir la alineación de LLMs con 60 grupos demográficos de EE.UU. en temas del aborto a la automatización.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-347",
+   "s": "psicologia_de_maquinas",
+   "p": "aplica_a",
+   "o": "gpt3",
+   "f": "F-551",
+   "apoyo": "PNAS 2023: evalúa a GPT-3 con una batería de experimentos canónicos de psicología cognitiva sobre decisión, búsqueda de información, deliberación y razonamiento causal.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-348",
+   "s": "gpt3",
+   "p": "tiene_limite",
+   "o": "sensibilidad_redaccion_llm",
+   "f": "F-551",
+   "apoyo": "PNAS 2023: perturbaciones pequeñas en tareas de viñetas desvían mucho a GPT-3, pese a que en su forma original las resuelve igual o mejor que humanos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-349",
+   "s": "gpt3",
+   "p": "tiene_limite",
+   "o": "fallas_razonamiento_causal",
+   "f": "F-551",
+   "apoyo": "PNAS 2023: GPT-3 no muestra exploración dirigida y falla rotundamente en tareas de razonamiento causal.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-350",
+   "s": "ia_en_investigacion",
+   "p": "aumenta",
+   "o": "ilusion_comprension",
+   "f": "F-555",
+   "apoyo": "Nature 2024: las soluciones de IA propuestas para la ciencia pueden explotar nuestras limitaciones cognitivas y volvernos vulnerables a ilusiones de comprensión.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-351",
+   "s": "ilusion_comprension",
+   "p": "asocia_con",
+   "o": "monocultivo_cientifico",
+   "f": "F-555",
+   "apoyo": "Nature 2024: las ilusiones de comprensión impiden ver la formación de monocultivos científicos, que vuelven a la ciencia menos innovadora y más propensa a errores.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-352",
+   "s": "ml_generacion_hipotesis",
+   "p": "aumenta",
+   "o": "prediccion_conducta_humana",
+   "f": "F-566",
+   "apoyo": "Science 2021: teorías de decisión diferenciables, ajustadas con redes neuronales sobre el mayor experimento de elección riesgosa, producen un modelo nuevo y más preciso de la decisión humana que conserva siglos de hallazgos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-353",
+   "s": "ml_generacion_hipotesis",
+   "p": "origina_en",
+   "o": "choices13k",
+   "f": "F-566",
+   "apoyo": "Science 2021: el método se alimenta del mayor experimento de elección riesgosa hecho hasta entonces, usado para entrenar algoritmos restringidos a producir teorías psicológicas interpretables.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-354",
+   "s": "choices13k",
+   "p": "tiene_limite",
+   "o": "sesgo_conjunto_datos",
+   "f": "F-567",
+   "apoyo": "Nature Hum Behav 2024: en choices13k las elecciones entre apuestas estocásticamente dominadas se sesgan sistemáticamente hacia la equipreferencia, lo que los autores atribuyen a mayor ruido de decisión.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-355",
+   "s": "ml_generacion_hipotesis",
+   "p": "tiene_limite",
+   "o": "sesgo_conjunto_datos",
+   "f": "F-567",
+   "apoyo": "Nature Hum Behav 2024: las teorías aprendidas por ML dependen del conjunto de datos; los autores concluyen que sigue haciendo falta combinar teoría y análisis de datos para entender modelos de ML de la elección riesgosa.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-356",
+   "s": "completitud_teoria",
+   "p": "mide",
+   "o": "modelos_conductuales_economicos",
+   "f": "F-568",
+   "apoyo": "J Polit Econ 2022: además de la exactitud predictiva, la completitud mide qué fracción de la variación predecible capta un modelo; aplicada a loterías, juego inicial y secuencias aleatorias revela cuánto margen de mejora queda.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-357",
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "racionalidad_economica",
+   "f": "F-571",
+   "apoyo": "PNAS 2023: en decisiones presupuestarias de riesgo, tiempo, sociales y de comida, GPT obtiene mayores puntajes de racionalidad que humanos de un experimento paralelo y de la literatura.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-358",
+   "s": "modelos_chatgpt",
+   "p": "respalda",
+   "o": "c_sinteticas_menos_varianza",
+   "f": "F-571",
+   "apoyo": "PNAS 2023: los parámetros de preferencia estimados para GPT difieren levemente de los humanos y muestran menor heterogeneidad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-359",
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "heuristicas_juicio",
+   "f": "F-573",
+   "apoyo": "J Exp Psychol Gen 2024: en cuatro estudios ChatGPT se dejó influir por anclas aleatorias, juzgó una conjunción más probable que sus componentes y fue sesgado por anécdotas salientes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-360",
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "efecto_dotacion",
+   "f": "F-573",
+   "apoyo": "J Exp Psychol Gen 2024: además de las heurísticas clásicas, GPT-3.5 mostró efectos de encuadre y efecto dotación, pese a carecer de procesos afectivos como la aversión a la pérdida.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-361",
+   "s": "modelos_chatgpt",
+   "p": "respalda",
+   "o": "c_llm_sesgos_humanos",
+   "f": "F-573",
+   "apoyo": "J Exp Psychol Gen 2024: los mismos prompts aplicados a humanos y a GPT-3.5 muestran heurísticas y efectos de decisión similares, lo que sugiere un rol del lenguaje en su origen.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-362",
+   "s": "irracionalidad_no_humana_llm",
+   "p": "contradice",
+   "o": "c_llm_sesgos_humanos",
+   "f": "F-574",
+   "apoyo": "R Soc Open Sci 2024: al evaluar 7 LLMs con tareas de psicología cognitiva, sus respuestas incorrectas suelen diferir de los sesgos humanos: son irracionales, pero no de forma humana.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-363",
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "irracionalidad_no_humana_llm",
+   "f": "F-574",
+   "apoyo": "R Soc Open Sci 2024: los LLMs muestran una inconsistencia significativa de respuestas y errores que no reflejan los humanos, una capa extra de irracionalidad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-364",
+   "s": "escala_modelo_llm",
+   "p": "aumenta",
+   "o": "teoria_mente_llm",
+   "f": "F-575",
+   "apoyo": "PNAS 2024: de 11 LLMs, los antiguos no resolvieron tareas de falsa creencia, GPT-3.5 resolvió 20% y GPT-4 75%; el autor plantea que la capacidad emergió como subproducto de mejores habilidades lingüísticas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-365",
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "teoria_mente_llm",
+   "f": "F-575",
+   "apoyo": "PNAS 2024: ChatGPT-4 resolvió el 75% de 40 tareas de falsa creencia, al nivel de niños de 6 años en estudios previos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-366",
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "teoria_mente_llm",
+   "f": "F-577",
+   "apoyo": "Nature Hum Behav 2024: frente a 1.907 humanos, GPT-4 rindió a nivel humano o superior al identificar pedidos indirectos, falsas creencias y engaños.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-367",
+   "s": "teoria_mente_llm",
+   "p": "tiene_limite",
+   "o": "deteccion_faux_pas",
+   "f": "F-577",
+   "apoyo": "Nature Hum Behav 2024: GPT-4 falló en detectar faux pas por un enfoque hiperconservador para comprometerse con conclusiones, no por falla de inferencia; la ventaja de LLaMA2 fue ilusoria.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-368",
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "productividad_trabajo_conocimiento",
+   "f": "F-582",
+   "apoyo": "Organization Science 2026 (WP 2023): en 18 tareas dentro de la frontera, consultores con GPT-4 completaron 12,2% más tareas, 25,1% más rápido y con >40% más calidad que el grupo control.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-369",
+   "s": "herramientas_ia_generativas",
+   "p": "reduce",
+   "o": "exactitud_fuera_frontera",
+   "f": "F-582",
+   "apoyo": "Organization Science 2026 (WP 2023): en una tarea fuera de la frontera de la IA, los consultores con IA tuvieron 19 puntos porcentuales menos de probabilidad de dar la solución correcta.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-370",
+   "s": "experiencia_trabajador",
+   "p": "modera",
+   "o": "productividad_trabajo_conocimiento",
+   "f": "F-582",
+   "apoyo": "Organization Science 2026 (WP 2023): la IA niveló habilidades: los consultores bajo el promedio de desempeño base mejoraron 43% y los de arriba 17% respecto de su propio puntaje.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-371",
+   "s": "ver_error_algoritmo",
+   "p": "aumenta",
+   "o": "aversion_algoritmica",
+   "f": "F-583",
+   "apoyo": "J Exp Psychol Gen 2015: en 5 estudios, quienes vieron pronosticar al algoritmo fueron menos propensos a elegirlo frente a un humano inferior, incluso tras verlo superar al humano.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-372",
+   "s": "ver_error_algoritmo",
+   "p": "reduce",
+   "o": "confianza_en_ia",
+   "f": "F-583",
+   "apoyo": "J Exp Psychol Gen 2015: las personas pierden la confianza en pronosticadores algorítmicos más rápido que en humanos tras verlos cometer el mismo error.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-373",
+   "s": "apreciacion_algoritmica",
+   "p": "contradice",
+   "o": "c_aversion_algoritmica_general",
+   "f": "F-584",
+   "apoyo": "OBHDP 2019: contra la idea recibida de escepticismo, seis experimentos muestran que legos siguen más un consejo cuando creen que viene de un algoritmo que de una persona.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-374",
+   "s": "experiencia_trabajador",
+   "p": "reduce",
+   "o": "apreciacion_algoritmica",
+   "f": "F-584",
+   "apoyo": "OBHDP 2019: profesionales que pronostican habitualmente se apoyaron menos en el consejo algorítmico que los legos, lo que perjudicó su precisión.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-375",
+   "s": "persuasion_ia",
+   "p": "reduce",
+   "o": "creencias_conspirativas",
+   "f": "F-586",
+   "apoyo": "Science 2024: diálogos personalizados y basados en evidencia con GPT-4 Turbo redujeron ~20% la creencia conspirativa de 2.190 participantes; el efecto persistió 2 meses y se dio aun con creencias arraigadas.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-376",
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "productividad_investigacion",
+   "f": "F-591",
+   "apoyo": "J Econ Lit 2023: los economistas pueden lograr ganancias significativas de productividad usando IA generativa para automatizar micro-tareas, y crecerán con la mejora de los sistemas.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-377",
+   "s": "herramientas_ia_generativas",
+   "p": "aplica_a",
+   "o": "ia_en_investigacion",
+   "f": "F-591",
+   "apoyo": "J Econ Lit 2023: describe decenas de casos de uso de LLMs en seis áreas de la investigación económica, de ideación y escritura a código y derivaciones matemáticas.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-378",
+   "s": "psicologia_de_maquinas",
+   "p": "parte_de",
+   "o": "conducta_maquinas",
+   "f": "F-596",
+   "apoyo": "Nature 2019: entender la conducta de los sistemas de IA exige una agenda científica que amplíe la informática con aportes de todas las ciencias, incluidas las del comportamiento.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-379",
+   "s": "muestras_sinteticas_llm",
+   "p": "aplica_a",
+   "o": "investigacion_exploratoria",
+   "f": "F-597",
+   "apoyo": "ICML 2025: los autores sostienen que las simulaciones sociales con LLM ya pueden usarse en estudios piloto y exploratorios, y quizá más adelante en usos más amplios.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-380",
+   "s": "ajuste_fino_datos_sociales",
+   "p": "aumenta",
+   "o": "fidelidad_algoritmica",
+   "f": "F-597",
+   "apoyo": "ICML 2025: entre las direcciones prometedoras para lograr simulaciones exactas y verificables de sujetos humanos destacan los prompts ricos en contexto y el ajuste fino con datasets de ciencias sociales.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-381",
+   "s": "controles_atencion_encuestas",
+   "p": "tiene_limite",
+   "o": "evasion_controles_calidad",
+   "f": "F-598",
+   "apoyo": "PNAS 2025: un agente sintético con LLM evadió controles de instrucciones, acertijos lógicos y preguntas para detectar no humanos, con 99,8% de aprobación en 6.000 pruebas estándar de atención.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-382",
+   "s": "agente_encuestado_sintetico",
+   "p": "reduce",
+   "o": "validez_encuestas_online",
+   "f": "F-598",
+   "apoyo": "PNAS 2025: el supuesto base de la encuesta online, que una respuesta coherente es humana, ya no es sostenible ante agentes LLM que producen respuestas coherentes y plausibles.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-383",
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "productividad_trabajo_conocimiento",
+   "f": "F-581",
+   "apoyo": "Science 2023, experimento preregistrado con 453 profesionales en tareas de escritura: con ChatGPT el tiempo cae 40% y la calidad sube 18%.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-384",
+   "s": "herramientas_ia_generativas",
+   "p": "reduce",
+   "o": "desigualdad_productividad",
+   "f": "F-581",
+   "apoyo": "Science 2023: la desigualdad entre trabajadores disminuye: ChatGPT beneficia más a los de menor habilidad y sustituye esfuerzo más que complementar habilidades.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-385",
+   "s": "gatekeeping_mg",
+   "p": "reduce",
+   "o": "uso_especialistas_hospitalizacion",
+   "f": "F-110",
+   "apoyo": "BJGP 2019: revisión sistemática de 25 estudios; el gatekeeping se asoció con menos hospitalizaciones y menor uso de especialistas, a costa de más visitas a atención primaria.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-386",
+   "s": "gatekeeping_mg",
+   "p": "reduce",
+   "o": "gasto_salud",
+   "f": "F-110",
+   "apoyo": "BJGP 2019: la revisión concluye que el gatekeeping puede llevar a menor uso de servicios y menor gasto en salud.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-387",
+   "s": "gatekeeping_mg",
+   "p": "reduce",
+   "o": "supervivencia_cancer",
+   "f": "F-110",
+   "apoyo": "BJGP 2019: un estudio incluido reportó menor supervivencia de pacientes con cáncer bajo esquemas de gatekeeping frente a acceso directo (evidencia de un solo estudio).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-388",
+   "s": "capitacion_ajustada_necesidad",
+   "p": "tiene_limite",
+   "o": "inequidad_pago_practicas",
+   "f": "F-111",
+   "apoyo": "BMC Health Serv Res 2010: con la fórmula y sus modificaciones, una práctica galesa recibía en 2008 ~£6,15 (9%) menos por paciente/año que una inglesa idéntica; 11,2% sin el MPIG.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-389",
+   "s": "adquisicion_oak_street_cvs",
+   "p": "respalda",
+   "o": "c_pe_valor_viable",
+   "f": "F-115",
+   "apoyo": "Am J Law Med 2023: la viabilidad dependía de que los inversores hallaran compradores corporativos; la compra de Oak Street por CVS (cerrada en mayo de 2023) la reconfirma.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-390",
+   "s": "pago_basado_valor_ap",
+   "p": "aumenta",
+   "o": "capital_privado_salud",
+   "f": "F-115",
+   "apoyo": "Am J Law Med 2023: los esquemas federales de incentivos al cuidado basado en valor atrajeron inversores de private equity, sobre todo en atención primaria para beneficiarios de Medicare.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-391",
+   "s": "teoria_reduccion_incertidumbre",
+   "p": "aplica_a",
+   "o": "interaccion_inicial",
+   "f": "F-125",
+   "apoyo": "Human Communication Research 1975: perspectiva teórica para la etapa inicial de la interacción, con 7 axiomas y 21 teoremas sobre el desarrollo de relaciones interpersonales.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-392",
+   "s": "ragas",
+   "p": "mide",
+   "o": "fidelidad_respuesta_rag",
+   "f": "F-151",
+   "apoyo": "EACL 2024 (demo): RAGAs incluye métricas de la capacidad del LLM de usar fielmente los pasajes recuperados, sin depender de anotaciones humanas de referencia.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-393",
+   "s": "ragas",
+   "p": "mide",
+   "o": "calidad_recuperacion_rag",
+   "f": "F-151",
+   "apoyo": "EACL 2024 (demo): RAGAs evalúa la capacidad del sistema de recuperación de identificar pasajes de contexto relevantes y enfocados.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-394",
+   "s": "fed_metrica",
+   "p": "mide",
+   "o": "calidad_dialogo_fina",
+   "f": "F-158",
+   "apoyo": "SIGDIAL 2020: FED mide cualidades finas del diálogo a nivel de turno y de conversación sin respuesta de referencia ni entrenamiento, con correlación moderada a fuerte con el juicio humano.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-395",
+   "s": "usr_metrica",
+   "p": "mide",
+   "o": "calidad_dialogo_fina",
+   "f": "F-158",
+   "apoyo": "ACL 2020: USR entrena modelos no supervisados para medir cualidades deseables del diálogo; correlación con juicio humano de 0,42 (Topical-Chat) y 0,48 (PersonaChat) a nivel de turno.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-396",
+   "s": "seguro_parametrico",
+   "p": "tiene_limite",
+   "o": "riesgo_de_base",
+   "f": "F-164",
+   "apoyo": "Geneva Risk Insur Rev 2026 / HAL WP 2024: en el seguro paramétrico el pago sigue un índice de pérdida observable y el riesgo de base es la diferencia aleatoria entre la pérdida real (privada) y ese índice.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-397",
+   "s": "riesgo_de_base",
+   "p": "asocia_con",
+   "o": "demanda_seguros",
+   "f": "F-164",
+   "apoyo": "Geneva Risk Insur Rev 2026 / HAL WP 2024: el modelo analiza cómo la demanda de seguro paramétrico depende del tamaño del riesgo de base y de la actitud del asegurado ante el riesgo.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-398",
+   "s": "contenido_emocional_anuncio",
+   "p": "aumenta",
+   "o": "busqueda_online",
+   "f": "F-178",
+   "apoyo": "J Marketing Research 2021: en >2.000 anuncios de TV de 144 modelos de autos, más contenido emocional aumentó la búsqueda online; más contenido informativo no.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-399",
+   "s": "contenido_informativo_anuncio",
+   "p": "aumenta",
+   "o": "crecimiento_ventas",
+   "f": "F-178",
+   "apoyo": "J Marketing Research 2021: el contenido informativo y el emocional influyen ambos positivamente en las ventas; el informativo genera más ventas incrementales en autos de bajo precio/calidad.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-400",
+   "s": "contenido_emocional_anuncio",
+   "p": "aumenta",
+   "o": "crecimiento_ventas",
+   "f": "F-178",
+   "apoyo": "J Marketing Research 2021: el contenido emocional aumenta las ventas, con más ventas incrementales en autos de precio alto que en los de precio bajo.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-401",
+   "s": "intermediarios_seguros",
+   "p": "es_tipo_de",
+   "o": "creador_mercado_seguros",
+   "f": "F-180",
+   "apoyo": "J Risk Insur 2006: los intermediarios son en esencia market makers que emparejan las necesidades del asegurado con aseguradoras capaces de cubrirlas (mercado comercial de propiedad y accidentes).",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-402",
+   "s": "practica_espaciada",
+   "p": "aumenta",
+   "o": "retencion_aprendizaje",
+   "f": "F-218",
+   "apoyo": "Psychological Bulletin 2006: metaanálisis de 839 evaluaciones en 317 experimentos sobre el efecto de la práctica distribuida (espaciada vs. masiva) en el recuerdo verbal.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-403",
+   "s": "intervalo_retencion",
+   "p": "modera",
+   "o": "practica_espaciada",
+   "f": "F-218",
+   "apoyo": "Psychological Bulletin 2006: el intervalo entre sesiones y el de retención actúan juntos; el espaciado que maximiza la retención aumenta a medida que crece el intervalo de retención.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-404",
+   "s": "juegos_simulacion_entrenamiento",
+   "p": "aumenta",
+   "o": "autoeficacia_entrenamiento",
+   "f": "F-219",
+   "apoyo": "Personnel Psychology 2011: metaanálisis k=65 (N=6.476); con juegos de simulación la autoeficacia post-entrenamiento fue 20% mayor que en el grupo de comparación.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-405",
+   "s": "juegos_simulacion_entrenamiento",
+   "p": "aumenta",
+   "o": "conocimiento_declarativo_procedimental",
+   "f": "F-219",
+   "apoyo": "Personnel Psychology 2011: conocimiento declarativo +11% y procedimental +14% frente al grupo de comparación.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-406",
+   "s": "juegos_simulacion_entrenamiento",
+   "p": "aumenta",
+   "o": "retencion_aprendizaje",
+   "f": "F-219",
+   "apoyo": "Personnel Psychology 2011: la retención fue 9% mayor con juegos de simulación; el efecto crece con aprendizaje activo y con el juego inserto en un programa de instrucción.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-407",
+   "s": "presencia_otros_testigos",
+   "p": "reduce",
+   "o": "intervencion_emergencia",
+   "f": "F-226",
+   "apoyo": "J Pers Soc Psychol 1968: creer que 1 o 4 personas más oían la emergencia redujo la rapidez con que los participantes avisaban de la crisis epiléptica.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-408",
+   "s": "presencia_otros_testigos",
+   "p": "aumenta",
+   "o": "difusion_responsabilidad",
+   "f": "F-226",
+   "apoyo": "J Pers Soc Psychol 1968: la presencia de otros testigos redujo la sensación de responsabilidad personal de cada participante; personalidad y antecedentes no predijeron la ayuda.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-409",
+   "s": "estructura_roles_familiares",
+   "p": "aplica_a",
+   "o": "decision_compra_hogar",
+   "f": "F-236",
+   "apoyo": "J Consumer Research 1976: la revisión organiza la evidencia sobre quién participa en las decisiones económicas del hogar, cómo es el proceso y si la estructura de roles y las estrategias afectan el resultado.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-410",
+   "s": "acceso_proveedor_demanda",
+   "p": "reduce",
+   "o": "visitas_urgencias",
+   "f": "F-330",
+   "apoyo": "Health Affairs Scholar 2023: rollout escalonado con >1 M de llamadas en la VA; el acceso a un proveedor bajó la proporción que luego fue a urgencias (38% vs 36%), sin cambios en hospitalización ni mortalidad a 30 días.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-411",
+   "s": "acceso_proveedor_demanda",
+   "p": "aplica_a",
+   "o": "afiliados_va",
+   "f": "F-330",
+   "apoyo": "Health Affairs Scholar 2023: el programa se evaluó entre afiliados de Veterans Affairs que llamaron a la línea de asesoría médica entre 2019 y 2022.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-412",
+   "s": "triaje_enfermeria_mts",
+   "p": "aumenta",
+   "o": "derivacion_atencion_primaria",
+   "f": "F-331",
+   "apoyo": "PLoS One 2021: en el ensayo TRIAGE las enfermeras con la nueva herramienta desviaron de forma segura el 9,5% (599/6.294) a una cooperativa de médicos generales; 2,4% de los asignados fue hospitalizado.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-413",
+   "s": "nhs_111",
+   "p": "tiene_limite",
+   "o": "incumplimiento_consejo_triaje",
+   "f": "F-333",
+   "apoyo": "PLoS One 2021: de 3,6 M de llamadas a NHS 111 (2013-2017), el 11% acudió a urgencias pese a recibir indicación de autocuidado o atención primaria.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-414",
+   "s": "nhs_111",
+   "p": "tiene_limite",
+   "o": "triaje_erroneo",
+   "f": "F-333",
+   "apoyo": "PLoS One 2021: de quienes no siguieron la indicación, 88% fue clasificado urgente y 37% hospitalizado; los autores estiman cientos de miles de casos mal triados al año.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-415",
+   "s": "redes_estrechas_niveles",
+   "p": "reduce",
+   "o": "gasto_salud",
+   "f": "F-339",
+   "apoyo": "Med Care Res Rev 2022: revisión sistemática 2000-2020; las redes estrechas y por niveles se asocian con menores costos totales de salud en la mayoría de las medidas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-416",
+   "s": "redes_estrechas_niveles",
+   "p": "tiene_limite",
+   "o": "evidencia_debil_acceso_calidad",
+   "f": "F-339",
+   "apoyo": "Med Care Res Rev 2022: la evidencia sobre acceso y calidad se limita a pocos resultados o tiene baja validez interna, aunque en general no muestra efectos adversos sistemáticos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-417",
+   "s": "redes_estrechas_niveles",
+   "p": "reduce",
+   "o": "gasto_salud",
+   "f": "F-340",
+   "apoyo": "Health Affairs 2017: la inscripción en un plan con red por niveles se asoció con US$43,36 menos de gasto ajustado por miembro por trimestre (~5%), y −4,6% ambulatorio y −6,5% en radiología ambulatoria.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-418",
+   "s": "continuidad_proveedor_habitual",
+   "p": "aumenta",
+   "o": "dap_red_proveedores",
+   "f": "F-341",
+   "apoyo": "J Health Econ 2018: la disposición a pagar por una red que cubra al proveedor habitual fue de US$84-275/mes en atención primaria y US$0-115/mes en especialistas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-419",
+   "s": "continuidad_proveedor_habitual",
+   "p": "modera",
+   "o": "aversion_redes_estrechas",
+   "f": "F-341",
+   "apoyo": "J Health Econ 2018: si la red cubre a su proveedor habitual, los consumidores solo muestran aversión a las redes más estrechas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-420",
+   "s": "steering_proveedor_precio",
+   "p": "reduce",
+   "o": "gasto_salud",
+   "f": "F-352",
+   "apoyo": "AJMC 2019: simulación estática con 697.381 afiliados de California; pasar al proveedor de precio mediano ahorraría 42% en laboratorio, 45% en imagen y 15% en DME (11% del gasto ambulatorio).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
   }
  ],
  "generado": "2026-10-04",
  "cobertura": {
-  "procesadas": 171,
+  "procesadas": 232,
   "total": 645
  }
 }

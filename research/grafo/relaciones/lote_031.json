@@ -1,0 +1,394 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-110",
+  "F-111",
+  "F-115",
+  "F-125",
+  "F-151",
+  "F-158",
+  "F-164",
+  "F-178",
+  "F-180",
+  "F-218"
+ ],
+ "entidades": [
+  {
+   "id": "gatekeeping_mg",
+   "nombre": "Gatekeeping del médico general (filtro de acceso a especialistas)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "uso_especialistas_hospitalizacion",
+   "nombre": "Uso de especialistas y hospitalizaciones",
+   "tipo": "resultado"
+  },
+  {
+   "id": "gasto_salud",
+   "nombre": "Gasto en atención de salud",
+   "tipo": "resultado"
+  },
+  {
+   "id": "supervivencia_cancer",
+   "nombre": "Supervivencia de pacientes con cáncer",
+   "tipo": "resultado"
+  },
+  {
+   "id": "capitacion_ajustada_necesidad",
+   "nombre": "Capitación ajustada por necesidad (fórmula de asignación / Global Sum del Reino Unido)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "inequidad_pago_practicas",
+   "nombre": "Prácticas idénticas no reciben pago equitativo entre países del Reino Unido (Gales ~9% menos)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "pago_basado_valor_ap",
+   "nombre": "Pago basado en valor en atención primaria",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "capital_privado_salud",
+   "nombre": "Inversión de private equity en atención primaria",
+   "tipo": "concepto"
+  },
+  {
+   "id": "adquisicion_oak_street_cvs",
+   "nombre": "Adquisición de Oak Street Health por CVS Health (2023)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_pe_valor_viable",
+   "nombre": "La inversión de private equity en atención primaria con pago basado en valor es comercialmente viable (encuentra compradores corporativos)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "teoria_reduccion_incertidumbre",
+   "nombre": "Teoría de la reducción de la incertidumbre (Berger y Calabrese)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "interaccion_inicial",
+   "nombre": "Etapa inicial de la interacción interpersonal",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ragas",
+   "nombre": "RAGAs: métricas sin referencia para evaluar pipelines RAG",
+   "tipo": "metrica"
+  },
+  {
+   "id": "fidelidad_respuesta_rag",
+   "nombre": "Fidelidad de la respuesta al contexto recuperado (control de alucinación)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "calidad_recuperacion_rag",
+   "nombre": "Relevancia y foco del contexto recuperado",
+   "tipo": "constructo"
+  },
+  {
+   "id": "fed_metrica",
+   "nombre": "FED: métrica no supervisada de evaluación de diálogo con DialoGPT",
+   "tipo": "metrica"
+  },
+  {
+   "id": "usr_metrica",
+   "nombre": "USR: métrica no supervisada y sin referencia para diálogo",
+   "tipo": "metrica"
+  },
+  {
+   "id": "calidad_dialogo_fina",
+   "nombre": "Cualidades finas del diálogo a nivel de turno y de conversación",
+   "tipo": "constructo"
+  },
+  {
+   "id": "seguro_parametrico",
+   "nombre": "Seguro paramétrico (pago según índice observable)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "riesgo_de_base",
+   "nombre": "Riesgo de base (diferencia entre pérdida real e índice de pérdida)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "contenido_emocional_anuncio",
+   "nombre": "Contenido emocional en anuncios",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "contenido_informativo_anuncio",
+   "nombre": "Contenido informativo en anuncios",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "busqueda_online",
+   "nombre": "Búsqueda online del producto",
+   "tipo": "resultado"
+  },
+  {
+   "id": "intermediarios_seguros",
+   "nombre": "Intermediarios de seguros independientes (brokers y agentes)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "creador_mercado_seguros",
+   "nombre": "Función de creador de mercado (emparejar necesidades del asegurado con aseguradoras capaces)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "practica_espaciada",
+   "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "retencion_aprendizaje",
+   "nombre": "Retención del aprendizaje",
+   "tipo": "resultado"
+  },
+  {
+   "id": "intervalo_retencion",
+   "nombre": "Intervalo de retención (tiempo hasta la prueba final)",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "gatekeeping_mg",
+   "p": "reduce",
+   "o": "uso_especialistas_hospitalizacion",
+   "f": "F-110",
+   "apoyo": "BJGP 2019: revisión sistemática de 25 estudios; el gatekeeping se asoció con menos hospitalizaciones y menor uso de especialistas, a costa de más visitas a atención primaria.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "gatekeeping_mg",
+   "p": "reduce",
+   "o": "gasto_salud",
+   "f": "F-110",
+   "apoyo": "BJGP 2019: la revisión concluye que el gatekeeping puede llevar a menor uso de servicios y menor gasto en salud.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "gatekeeping_mg",
+   "p": "reduce",
+   "o": "supervivencia_cancer",
+   "f": "F-110",
+   "apoyo": "BJGP 2019: un estudio incluido reportó menor supervivencia de pacientes con cáncer bajo esquemas de gatekeeping frente a acceso directo (evidencia de un solo estudio).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "capitacion_ajustada_necesidad",
+   "p": "tiene_limite",
+   "o": "inequidad_pago_practicas",
+   "f": "F-111",
+   "apoyo": "BMC Health Serv Res 2010: con la fórmula y sus modificaciones, una práctica galesa recibía en 2008 ~£6,15 (9%) menos por paciente/año que una inglesa idéntica; 11,2% sin el MPIG.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adquisicion_oak_street_cvs",
+   "p": "respalda",
+   "o": "c_pe_valor_viable",
+   "f": "F-115",
+   "apoyo": "Am J Law Med 2023: la viabilidad dependía de que los inversores hallaran compradores corporativos; la compra de Oak Street por CVS (cerrada en mayo de 2023) la reconfirma.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "pago_basado_valor_ap",
+   "p": "aumenta",
+   "o": "capital_privado_salud",
+   "f": "F-115",
+   "apoyo": "Am J Law Med 2023: los esquemas federales de incentivos al cuidado basado en valor atrajeron inversores de private equity, sobre todo en atención primaria para beneficiarios de Medicare.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "teoria_reduccion_incertidumbre",
+   "p": "aplica_a",
+   "o": "interaccion_inicial",
+   "f": "F-125",
+   "apoyo": "Human Communication Research 1975: perspectiva teórica para la etapa inicial de la interacción, con 7 axiomas y 21 teoremas sobre el desarrollo de relaciones interpersonales.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ragas",
+   "p": "mide",
+   "o": "fidelidad_respuesta_rag",
+   "f": "F-151",
+   "apoyo": "EACL 2024 (demo): RAGAs incluye métricas de la capacidad del LLM de usar fielmente los pasajes recuperados, sin depender de anotaciones humanas de referencia.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ragas",
+   "p": "mide",
+   "o": "calidad_recuperacion_rag",
+   "f": "F-151",
+   "apoyo": "EACL 2024 (demo): RAGAs evalúa la capacidad del sistema de recuperación de identificar pasajes de contexto relevantes y enfocados.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fed_metrica",
+   "p": "mide",
+   "o": "calidad_dialogo_fina",
+   "f": "F-158",
+   "apoyo": "SIGDIAL 2020: FED mide cualidades finas del diálogo a nivel de turno y de conversación sin respuesta de referencia ni entrenamiento, con correlación moderada a fuerte con el juicio humano.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "usr_metrica",
+   "p": "mide",
+   "o": "calidad_dialogo_fina",
+   "f": "F-158",
+   "apoyo": "ACL 2020: USR entrena modelos no supervisados para medir cualidades deseables del diálogo; correlación con juicio humano de 0,42 (Topical-Chat) y 0,48 (PersonaChat) a nivel de turno.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_parametrico",
+   "p": "tiene_limite",
+   "o": "riesgo_de_base",
+   "f": "F-164",
+   "apoyo": "Geneva Risk Insur Rev 2026 / HAL WP 2024: en el seguro paramétrico el pago sigue un índice de pérdida observable y el riesgo de base es la diferencia aleatoria entre la pérdida real (privada) y ese índice.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "riesgo_de_base",
+   "p": "asocia_con",
+   "o": "demanda_seguros",
+   "f": "F-164",
+   "apoyo": "Geneva Risk Insur Rev 2026 / HAL WP 2024: el modelo analiza cómo la demanda de seguro paramétrico depende del tamaño del riesgo de base y de la actitud del asegurado ante el riesgo.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "contenido_emocional_anuncio",
+   "p": "aumenta",
+   "o": "busqueda_online",
+   "f": "F-178",
+   "apoyo": "J Marketing Research 2021: en >2.000 anuncios de TV de 144 modelos de autos, más contenido emocional aumentó la búsqueda online; más contenido informativo no.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "contenido_informativo_anuncio",
+   "p": "aumenta",
+   "o": "crecimiento_ventas",
+   "f": "F-178",
+   "apoyo": "J Marketing Research 2021: el contenido informativo y el emocional influyen ambos positivamente en las ventas; el informativo genera más ventas incrementales en autos de bajo precio/calidad.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "contenido_emocional_anuncio",
+   "p": "aumenta",
+   "o": "crecimiento_ventas",
+   "f": "F-178",
+   "apoyo": "J Marketing Research 2021: el contenido emocional aumenta las ventas, con más ventas incrementales en autos de precio alto que en los de precio bajo.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "intermediarios_seguros",
+   "p": "es_tipo_de",
+   "o": "creador_mercado_seguros",
+   "f": "F-180",
+   "apoyo": "J Risk Insur 2006: los intermediarios son en esencia market makers que emparejan las necesidades del asegurado con aseguradoras capaces de cubrirlas (mercado comercial de propiedad y accidentes).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "practica_espaciada",
+   "p": "aumenta",
+   "o": "retencion_aprendizaje",
+   "f": "F-218",
+   "apoyo": "Psychological Bulletin 2006: metaanálisis de 839 evaluaciones en 317 experimentos sobre el efecto de la práctica distribuida (espaciada vs. masiva) en el recuerdo verbal.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "intervalo_retencion",
+   "p": "modera",
+   "o": "practica_espaciada",
+   "f": "F-218",
+   "apoyo": "Psychological Bulletin 2006: el intervalo entre sesiones y el de retención actúan juntos; el espaciado que maximiza la retención aumenta a medida que crece el intervalo de retención.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-110",
+   "detalle": "Autor registrado como 'PMC (revisión sistemática)': faltan autores (Sripa, Hayhoe, Garg, Majeed, Greenfield), revista (BJGP 69(682):e294-e303) y DOI 10.3399/bjgp19X702209.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-110",
+   "detalle": "Matiz: el resumen habla de menor supervivencia en cáncer reportada por un estudio, no de 'diagnóstico tardío' como hallazgo; y omite que el gatekeeping se asoció con mejor calidad de atención (preventiva y derivación apropiada) y menor satisfacción del paciente. 'Diagnóstico tardío' no verificable en el resumen.",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-111",
+   "detalle": "Autor registrado como la revista: faltan autores (Rhys, Beerstecher, Morgan), volumen 10, artículo 156 y DOI 10.1186/1472-6963-10-156.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-115",
+   "detalle": "Autor registrado como 'Cambridge Core (American Journal of Law & Medicine)': falta el autor (Andrew Grant) y el DOI 10.1017/amj.2023.20.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-125",
+   "detalle": "La URL apunta a Wikipedia, no a la fuente oficial (DOI 10.1111/j.1468-2958.1975.tb00258.x).",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-125",
+   "detalle": "Faltan volumen/páginas (1(2):99-112) y DOI.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-158",
+   "detalle": "La ficha describe FED como esquema de anotación humana por turno con 8 dimensiones; el resumen lo presenta como métrica automática (DialoGPT, sin supervisión) más un dataset anotado con 18 cualidades a nivel de turno y de diálogo completo. Las 8 dimensiones y la escala No/Somewhat/Yes no son verificables en el resumen.",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-164",
+   "detalle": "La URL (arxiv.org/pdf/2604.21372) corresponde a otro paper: Maier y Scherer, 'Optimal basis risk weighting in expectile-based parametric insurance' (TUM), no a Louaas y Picard.",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-164",
+   "detalle": "No se confirmó la publicación en Geneva Risk and Insurance Review 2026 (volumen/DOI); la versión verificable es el WP HAL hal-04511811 (2024).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-164",
+   "detalle": "Matiz: el resumen no plantea 'minimizar el riesgo de base' con el trigger, sino caracterizar el contrato óptimo dado el riesgo de base, según la (in)dependencia entre índice y riesgo de base.",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-180",
+   "detalle": "Faltan volumen/páginas (73(3):359-396) y DOI explícito.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a 85% hacia N6 (grupo 110): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

@@ -430,6 +430,115 @@
    "triples": 13,
    "sin_aporte": [],
    "notas": "Segundo lote de 10 (pedido del usuario), con resúmenes y comunicados oficiales verificados el 2026-10-04. Se saltaron tres del orden de `next` por no tener fuente primaria verificable: F-389 (estudio brasileño no ubicado), F-418 (hallazgo negativo de búsqueda propia) y F-427 (análisis de Barclays visto solo en resúmenes de LinkedIn). Se reemplazaron por F-448, F-452 y F-466. F-431: la ficha dice que la tasa real es de 30-49%; el resumen dice '40% o menos'. No se abre discrepancia porque el rango puede venir del cuerpo del artículo, que no se pudo leer; el triple usa la cifra del resumen."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f_ids": [
+    "F-42",
+    "F-43",
+    "F-57",
+    "F-58",
+    "F-59",
+    "F-63",
+    "F-64",
+    "F-65",
+    "F-66"
+   ],
+   "triples": 15,
+   "sin_aporte": [],
+   "notas": "Lote del avance a 85% hacia N6 (grupo 42): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f_ids": [
+    "F-83",
+    "F-89",
+    "F-90",
+    "F-91",
+    "F-92",
+    "F-94",
+    "F-97",
+    "F-107",
+    "F-109"
+   ],
+   "triples": 16,
+   "sin_aporte": [],
+   "notas": "Lote del avance a 85% hacia N6 (grupo 42): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f_ids": [
+    "F-544",
+    "F-545",
+    "F-546",
+    "F-548",
+    "F-551",
+    "F-555",
+    "F-566",
+    "F-567",
+    "F-568",
+    "F-571",
+    "F-573",
+    "F-574"
+   ],
+   "triples": 25,
+   "sin_aporte": [],
+   "notas": "Lote del avance a 85% hacia N6 (grupo 544): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f_ids": [
+    "F-575",
+    "F-577",
+    "F-582",
+    "F-583",
+    "F-584",
+    "F-586",
+    "F-591",
+    "F-596",
+    "F-597",
+    "F-598",
+    "F-581"
+   ],
+   "triples": 21,
+   "sin_aporte": [],
+   "notas": "Lote del avance a 85% hacia N6 (grupo 544): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f_ids": [
+    "F-110",
+    "F-111",
+    "F-115",
+    "F-125",
+    "F-151",
+    "F-158",
+    "F-164",
+    "F-178",
+    "F-180",
+    "F-218"
+   ],
+   "triples": 19,
+   "sin_aporte": [],
+   "notas": "Lote del avance a 85% hacia N6 (grupo 110): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f_ids": [
+    "F-219",
+    "F-226",
+    "F-236",
+    "F-330",
+    "F-331",
+    "F-333",
+    "F-339",
+    "F-340",
+    "F-341",
+    "F-352"
+   ],
+   "triples": 17,
+   "sin_aporte": [],
+   "notas": "Lote del avance a 85% hacia N6 (grupo 110): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
   }
  ],
  "discrepancias": [
@@ -698,6 +807,394 @@
    "detalle": "Año 2019 sin aclarar: publicado en línea en 2019 y en número en 2021 (RMS 15(2):189-234).",
    "estado": "cerrada",
    "resolucion": "Cerrada: datos bibliográficos completados el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-42",
+   "detalle": "Autor registrado como 'NCBI/PMC (estudio Finlandia, Omaolo)': los autores son Liu, Kaila y Koskela; falta revista (JMIR Human Factors 11:e55099) y DOI 10.2196/55099.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-43",
+   "detalle": "Autor registrado como 'NCBI/PMC (estudio Japón)': autores Harada, Sakamoto, Sugimoto y Shimizu; falta revista (JMIR Formative Research 8:e53985) y DOI 10.2196/53985.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-57",
+   "detalle": "Falta volumen/artículo (4:929508) y DOI 10.3389/fdgth.2022.929508.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-58",
+   "detalle": "Autores: son dos (Hemming y Taljaard), no 'et al.'; falta revista (Int J Epidemiol 49(3):1043-1052) y DOI 10.1093/ije/dyaa077.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-59",
+   "detalle": "Autor y año incorrectos: no es Mdege et al. 2011 (ese es otro paper, J Clin Epidemiol 64(9):936-948); los autores son Dreischulte, Grant, Donnan y Guthrie, 2013, Trials 14(Suppl 1):O87.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-59",
+   "detalle": "Rigor: es un resumen de congreso (meeting abstract), no una 'revisión metodológica peer-reviewed'; 🟢A sobrevalora.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-59",
+   "detalle": "Contradice a la ficha: el resumen dice que el diseño crea problemas potenciales para evitar la contaminación (por el desfase entre reclutamiento e inicio), no que reduzca la contaminación entre clusters. La equidad/aceptación sí aparece como posible mejora del reclutamiento.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-63",
+   "detalle": "Autor registrado como 'Protocolo de validación Omaolo': autores Liu, Koskela y Kaila; falta revista (JMIR Res Protoc 12:e41423) y DOI 10.2196/41423.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-64",
+   "detalle": "Autor incorrecto: no es Damschroder et al. (creadora de CFIR, 2009); los autores son Safaeinili, Brown-Johnson, Shaw, Mahoney y Winget. Año: publicado online 2019, número 2020 (no 2021). Falta revista (Learning Health Systems 4(1):e10201) y DOI.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-65",
+   "detalle": "Autor registrado como 'PMC (análisis de logfiles, Hong Kong)': autores Guan, Peng y Zhu; falta revista (JMIR mHealth uHealth 7(5):e13679) y DOI 10.2196/13679.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-66",
+   "detalle": "Año 2020 → publicado el 6-ene-2021 (Health Econ Rev 11:1); faltan coautores (Lazar, Ruger) y DOI.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-83",
+   "detalle": "La URL (PMC2585909) es la reimpresión de 2004 en el Bulletin of the WHO 82(2):141-149; conviene anotarlo junto a la cita original (AER 53(5), 1963).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-89",
+   "detalle": "Faltan volumen y páginas (AER 58(3):531-537).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-90",
+   "detalle": "Autor incorrecto ('Cutler & Zeckhauser-style'): los autores son H. E. Frech y Michael P. Smith; el número impreso es 2015, 19(1):60-72 (2014 corresponde a la versión online/DOI).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-90",
+   "detalle": "Matiz: 1981 es el año del cierre del bloque que gatilló la espiral, no el año en que se 'inició' el bloque.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-91",
+   "detalle": "Revista incorrecta: es Explorations in Economic History 41(4):313-328 (el PII S0014-4983 corresponde a esa revista), no Journal of Health Economics; falta autora (Melissa A. Thomasson).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-92",
+   "detalle": "Año 2024 incorrecto (es la fecha del depósito en PMC): el ensayo es de 2017 (JEP; NBER WP 23876); faltan autores (Geruso y Layton) y revista.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-94",
+   "detalle": "Autor incorrecto ('Van de Ven et al. o similar'): la autora es Liz McFall (Univ. de Edimburgo); falta revista (Economy and Society).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-94",
+   "detalle": "Contradice el sentido de la ficha: el resumen sostiene que el pricing personalizado es incompatible con la infraestructura actual y poco probable en la ACA, no que 'el mercado ya está respondiendo con más personalización'.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-97",
+   "detalle": "Faltan autores (Oskam, van Kleef, van Vliet), revista (Int J Health Econ Manag 23(2):303-324) y DOI.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-107",
+   "detalle": "Falta autor (Evan S. Cole) y volumen/páginas (31(4):605-611).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-109",
+   "detalle": "Faltan autores (Xu, Powell-Jackson, Mills) y revista (BMJ Global Health 5(8):e002792).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-545",
+   "detalle": "Falta el volumen/páginas: PMLR 202:337-371.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-545",
+   "detalle": "No contradice: la ficha dice que la 'hiperprecisión' es dato de memoria no verificado, pero el resumen oficial sí la reporta (sabiduría de multitudes; ChatGPT y GPT-4). Puede retirarse la advertencia.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-546",
+   "detalle": "Faltan volumen, páginas y DOI: Trends in Cognitive Sciences 27:597-600, doi 10.1016/j.tics.2023.04.008.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-567",
+   "detalle": "Faltan número, páginas y DOI: Nature Human Behaviour 8(4):679-691, doi 10.1038/s41562-023-01784-6.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-573",
+   "detalle": "Falta el número: JEP: General 153(4), abril 2024.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-574",
+   "detalle": "Falta volumen/número: Royal Society Open Science 11(6).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-577",
+   "detalle": "Faltan volumen/número/páginas: Nature Human Behaviour 8(7):1285-1295.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-582",
+   "detalle": "Resumen verificado en la versión de trabajo (SSRN 4573321); no se vio el resumen de la versión final en Organization Science.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-583",
+   "detalle": "Faltan volumen y páginas: JEP: General 144(1):114-126.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-584",
+   "detalle": "El resumen dice que la apreciación 'disminuye' (waned) en expertos y frente a la propia estimación; la ficha dice que 'desaparece' (sobredimensiona).",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-584",
+   "detalle": "El metaanálisis HICSS-58 (2025, 32 estudios, g=0,23/0,55) es otra fuente, no verificable en este resumen; convendría registrarlo como ficha propia.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-597",
+   "detalle": "URL no capturada en la ficha: usar https://proceedings.mlr.press/v267/anthis25a.html (o arXiv 2504.02234).",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-597",
+   "detalle": "Falta el volumen: PMLR 267.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-598",
+   "detalle": "Falta el volumen: PNAS 122(47) (el DOI no se vio escrito; no se registra).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-598",
+   "detalle": "La URL es cobertura de prensa (404 Media), no la revista; reemplazar por la página de PNAS. La rigurosidad declarada se apoyó en prensa, aunque el resumen confirma el hallazgo.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-110",
+   "detalle": "Autor registrado como 'PMC (revisión sistemática)': faltan autores (Sripa, Hayhoe, Garg, Majeed, Greenfield), revista (BJGP 69(682):e294-e303) y DOI 10.3399/bjgp19X702209.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-110",
+   "detalle": "Matiz: el resumen habla de menor supervivencia en cáncer reportada por un estudio, no de 'diagnóstico tardío' como hallazgo; y omite que el gatekeeping se asoció con mejor calidad de atención (preventiva y derivación apropiada) y menor satisfacción del paciente. 'Diagnóstico tardío' no verificable en el resumen.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-111",
+   "detalle": "Autor registrado como la revista: faltan autores (Rhys, Beerstecher, Morgan), volumen 10, artículo 156 y DOI 10.1186/1472-6963-10-156.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-115",
+   "detalle": "Autor registrado como 'Cambridge Core (American Journal of Law & Medicine)': falta el autor (Andrew Grant) y el DOI 10.1017/amj.2023.20.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-125",
+   "detalle": "La URL apunta a Wikipedia, no a la fuente oficial (DOI 10.1111/j.1468-2958.1975.tb00258.x).",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-125",
+   "detalle": "Faltan volumen/páginas (1(2):99-112) y DOI.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-158",
+   "detalle": "La ficha describe FED como esquema de anotación humana por turno con 8 dimensiones; el resumen lo presenta como métrica automática (DialoGPT, sin supervisión) más un dataset anotado con 18 cualidades a nivel de turno y de diálogo completo. Las 8 dimensiones y la escala No/Somewhat/Yes no son verificables en el resumen.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-164",
+   "detalle": "La URL (arxiv.org/pdf/2604.21372) corresponde a otro paper: Maier y Scherer, 'Optimal basis risk weighting in expectile-based parametric insurance' (TUM), no a Louaas y Picard.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-164",
+   "detalle": "No se confirmó la publicación en Geneva Risk and Insurance Review 2026 (volumen/DOI); la versión verificable es el WP HAL hal-04511811 (2024).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-164",
+   "detalle": "Matiz: el resumen no plantea 'minimizar el riesgo de base' con el trigger, sino caracterizar el contrato óptimo dado el riesgo de base, según la (in)dependencia entre índice y riesgo de base.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-180",
+   "detalle": "Faltan volumen/páginas (73(3):359-396) y DOI explícito.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-331",
+   "detalle": "Autor 'Autores del TRIAGE trial' y año 's.f.': es Morreel S. et al., PLoS One 2021.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-331",
+   "detalle": "El contexto es Bélgica (Amberes, cooperativa de médicos generales adyacente a urgencias), no 'sistema público neerlandés'. Además, el 2,4% hospitalizado se refiere a los asignados a la cooperativa, no a los 'desviados' en sentido estricto.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-333",
+   "detalle": "Autor 'Revisión rápida... NCBI Bookshelf / PLOS One' y año 's.f.': es Lewis et al., PLoS One 2021;16(5):e0251362. No es una revisión rápida sino un análisis observacional de datos enlazados.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-333",
+   "detalle": "Lo de 'redujo despacho de ambulancias en £4.52M' no es verificable en el resumen. Además, el resumen interpreta que buena parte del 11% que no siguió la indicación fue mal triado (88% urgente, 37% hospitalizado), no solo que 'no cumplió'.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-339",
+   "detalle": "Faltan volumen/páginas (79(5):607-617) y DOI 10.1177/10775587211055923.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-339",
+   "detalle": "Falta la URL: está disponible en PMC (PMC9817087).",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-340",
+   "detalle": "Faltan volumen/páginas (36(5):870-875).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-341",
+   "detalle": "Faltan autores (Higuera, Carlin, Dowd), título y volumen/páginas (J Health Econ 60:90-97).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-341",
+   "detalle": "La DAP de US$84-275/mes es para atención primaria (en especialistas es US$0-115/mes). Que sea 'HIX de una aseguradora regional del Medio Oeste' no es verificable en el resumen, que dice 'exchange privado de seguros de salud'.",
+   "estado": "abierta"
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-352",
+   "detalle": "El año es 2019 (AJMC vol. 25, n.º 7), no '~2016'; 2013-2014 es el periodo de los datos.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
   }
  ],
  "resoluciones": [
@@ -856,6 +1353,18 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-04",
    "nota": "Castellion y Markham (F-431, JPIM) muestran que los estudios empíricos desde 1977 dan una tasa de fracaso de productos nuevos de 40% o menos, no 80-95%. Converge con F-432 (T-97: 25% al año 1 y ~40% a los 2 años medido en ventas). Dos fuentes independientes refutan el mismo mito."
+  },
+  {
+   "triple": "T-362",
+   "estado": "matizada",
+   "fecha": "2026-10-04",
+   "nota": "Suri et al. (F-573) encuentran en GPT-3.5 heurísticas de tipo humano (anclaje, representatividad, disponibilidad, encuadre, dotación). Macmillan-Scott y Musolesi (F-574), con 7 modelos, encuentran que sus errores suelen no ser de forma humana y son inconsistentes. Hagendorff et al. (F-572) muestran que los sesgos aparecen y desaparecen según la versión. Sobrevive una versión acotada: algunos modelos muestran algunos sesgos humanos en algunas tareas; la afirmación general 'los LLMs reproducen los sesgos humanos' no se sostiene."
+  },
+  {
+   "triple": "T-373",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-04",
+   "nota": "Dietvorst et al. (F-583) miden la elección después de ver al algoritmo equivocarse: aparece la aversión. Logg et al. (F-584) miden la preferencia sin esa experiencia previa: los legos prefieren el consejo algorítmico, y la preferencia se debilita en expertos y frente a la propia estimación. No se contradicen: la aversión depende de haber visto el error."
   }
  ]
 }

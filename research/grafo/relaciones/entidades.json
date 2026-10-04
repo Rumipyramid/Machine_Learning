@@ -9,6 +9,11 @@
   "nombre": "Accesibilidad como obligación con sanción",
   "tipo": "resultado"
  },
+ "acceso_proveedor_demanda": {
+  "id": "acceso_proveedor_demanda",
+  "nombre": "Acceso inmediato a un proveedor desde la línea de asesoría médica",
+  "tipo": "intervencion"
+ },
  "aceptacion_pedido": {
   "id": "aceptacion_pedido",
   "nombre": "Aceptación de un pedido mayor",
@@ -24,6 +29,11 @@
   "nombre": "Adobe fusionó Digital Media, Experience y Publishing en un solo segmento",
   "tipo": "limitacion"
  },
+ "adopcion_apps_mhealth": {
+  "id": "adopcion_apps_mhealth",
+  "nombre": "Adopción de apps de salud móvil (mHealth)",
+  "tipo": "resultado"
+ },
  "adopcion_telemedicina_peru": {
   "id": "adopcion_telemedicina_peru",
   "nombre": "Adopción de la telemedicina en Perú",
@@ -32,6 +42,11 @@
  "adquisicion_next_insurance": {
   "id": "adquisicion_next_insurance",
   "nombre": "Adquisición de Next Insurance por ERGO/Munich Re (US$2.600M, jul-2025)",
+  "tipo": "concepto"
+ },
+ "adquisicion_oak_street_cvs": {
+  "id": "adquisicion_oak_street_cvs",
+  "nombre": "Adquisición de Oak Street Health por CVS Health (2023)",
   "tipo": "concepto"
  },
  "adulacion_ia": {
@@ -44,14 +59,39 @@
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
  },
+ "afiliados_va": {
+  "id": "afiliados_va",
+  "nombre": "Afiliados de Veterans Affairs (EE.UU.)",
+  "tipo": "poblacion"
+ },
  "afirmaciones_inexactas_ia": {
   "id": "afirmaciones_inexactas_ia",
   "nombre": "Afirmaciones inexactas en la persuasión de la IA",
   "tipo": "resultado"
  },
+ "agente_encuestado_sintetico": {
+  "id": "agente_encuestado_sintetico",
+  "nombre": "Agente autónomo con LLM que responde encuestas online",
+  "tipo": "intervencion"
+ },
  "agentes_maquina_delegados": {
   "id": "agentes_maquina_delegados",
   "nombre": "Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas",
+  "tipo": "intervencion"
+ },
+ "ajuste_feedback_humano": {
+  "id": "ajuste_feedback_humano",
+  "nombre": "Ajuste fino con feedback humano (RLHF)",
+  "tipo": "intervencion"
+ },
+ "ajuste_fino_datos_sociales": {
+  "id": "ajuste_fino_datos_sociales",
+  "nombre": "Prompts ricos en contexto y ajuste fino con datos de ciencias sociales",
+  "tipo": "intervencion"
+ },
+ "ajuste_riesgo": {
+  "id": "ajuste_riesgo",
+  "nombre": "Ajuste / igualación de riesgo entre aseguradoras",
   "tipo": "intervencion"
  },
  "ajuste_ui_usuario": {
@@ -94,6 +134,11 @@
   "nombre": "Retrato erróneo y aplanamiento de grupos demográficos por el LLM",
   "tipo": "limitacion"
  },
+ "apreciacion_algoritmica": {
+  "id": "apreciacion_algoritmica",
+  "nombre": "Apreciación algorítmica (preferir consejo algorítmico al humano)",
+  "tipo": "constructo"
+ },
  "aprendibilidad": {
   "id": "aprendibilidad",
   "nombre": "Aprendibilidad / conciencia del set de funciones",
@@ -134,6 +179,11 @@
   "nombre": "Atractivo y satisfacción con la interfaz",
   "tipo": "resultado"
  },
+ "autoeficacia_entrenamiento": {
+  "id": "autoeficacia_entrenamiento",
+  "nombre": "Autoeficacia post-entrenamiento",
+  "tipo": "resultado"
+ },
  "autoestimacion_desempeno": {
   "id": "autoestimacion_desempeno",
   "nombre": "Autoestimación del desempeño (~+4 pts)",
@@ -149,10 +199,20 @@
   "nombre": "Autoselección: quienes más se beneficiarían del consejo son los que menos lo piden",
   "tipo": "limitacion"
  },
+ "aversion_algoritmica": {
+  "id": "aversion_algoritmica",
+  "nombre": "Aversión algorítmica (evitar algoritmos tras verlos errar)",
+  "tipo": "constructo"
+ },
  "aversion_perdida": {
   "id": "aversion_perdida",
   "nombre": "Aversión a la pérdida (la función de valor es más empinada para pérdidas)",
   "tipo": "constructo"
+ },
+ "aversion_redes_estrechas": {
+  "id": "aversion_redes_estrechas",
+  "nombre": "Aversión a redes de proveedores estrechas",
+  "tipo": "resultado"
  },
  "ayudas_decision": {
   "id": "ayudas_decision",
@@ -189,6 +249,11 @@
   "nombre": "Escala de usabilidad de chatbots BUS-11",
   "tipo": "metrica"
  },
+ "busqueda_online": {
+  "id": "busqueda_online",
+  "nombre": "Búsqueda online del producto",
+  "tipo": "resultado"
+ },
  "c_70_cambio_fracasa": {
   "id": "c_70_cambio_fracasa",
   "nombre": "El 70% de las iniciativas de cambio organizacional fracasa",
@@ -207,6 +272,11 @@
  "c_autorreporte_inflado_prod": {
   "id": "c_autorreporte_inflado_prod",
   "nombre": "El autorreporte de productividad con IA está inflado (RP2)",
+  "tipo": "afirmacion"
+ },
+ "c_aversion_algoritmica_general": {
+  "id": "c_aversion_algoritmica_general",
+  "nombre": "La gente es en general reacia a confiar en el juicio de algoritmos",
   "tipo": "afirmacion"
  },
  "c_brecha_justificacion_implementacion": {
@@ -374,6 +444,11 @@
   "nombre": "Los dark patterns leves no generan backlash",
   "tipo": "afirmacion"
  },
+ "c_llm_sesgos_humanos": {
+  "id": "c_llm_sesgos_humanos",
+  "nombre": "Los LLMs reproducen los sesgos y heurísticas de decisión humanos",
+  "tipo": "afirmacion"
+ },
  "c_margen_compresion": {
   "id": "c_margen_compresion",
   "nombre": "El margen fino de 2025 (1,8%) es una tendencia de compresión",
@@ -402,6 +477,11 @@
  "c_paradoja_privacidad": {
   "id": "c_paradoja_privacidad",
   "nombre": "La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad)",
+  "tipo": "afirmacion"
+ },
+ "c_pe_valor_viable": {
+  "id": "c_pe_valor_viable",
+  "nombre": "La inversión de private equity en atención primaria con pago basado en valor es comercialmente viable (encuentra compradores corporativos)",
   "tipo": "afirmacion"
  },
  "c_pen_2_01": {
@@ -489,6 +569,11 @@
   "nombre": "Calidad de la decisión de compra de seguro",
   "tipo": "resultado"
  },
+ "calidad_dialogo_fina": {
+  "id": "calidad_dialogo_fina",
+  "nombre": "Cualidades finas del diálogo a nivel de turno y de conversación",
+  "tipo": "constructo"
+ },
  "calidad_metaanalisis_nudge": {
   "id": "calidad_metaanalisis_nudge",
   "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
@@ -498,6 +583,16 @@
   "id": "calidad_motivacion",
   "nombre": "Calidad de la motivación, desempeño y bienestar al perseguir metas",
   "tipo": "resultado"
+ },
+ "calidad_recuperacion_rag": {
+  "id": "calidad_recuperacion_rag",
+  "nombre": "Relevancia y foco del contexto recuperado",
+  "tipo": "constructo"
+ },
+ "calidad_reporte_microcosteo": {
+  "id": "calidad_reporte_microcosteo",
+  "nombre": "Calidad metodológica y de reporte muy variable en micro-costeo",
+  "tipo": "limitacion"
  },
  "calidad_texto_generado": {
   "id": "calidad_texto_generado",
@@ -529,6 +624,16 @@
   "nombre": "Capacidad de diseño-ingeniería",
   "tipo": "constructo"
  },
+ "capitacion_ajustada_necesidad": {
+  "id": "capitacion_ajustada_necesidad",
+  "nombre": "Capitación ajustada por necesidad (fórmula de asignación / Global Sum del Reino Unido)",
+  "tipo": "intervencion"
+ },
+ "capital_privado_salud": {
+  "id": "capital_privado_salud",
+  "nombre": "Inversión de private equity en atención primaria",
+  "tipo": "concepto"
+ },
  "carga_cognitiva": {
   "id": "carga_cognitiva",
   "nombre": "Carga cognitiva sobre la memoria de trabajo",
@@ -559,6 +664,21 @@
   "nombre": "Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones)",
   "tipo": "intervencion"
  },
+ "cfir": {
+  "id": "cfir",
+  "nombre": "Marco Consolidado de Investigación en Implementación (CFIR)",
+  "tipo": "concepto"
+ },
+ "choices13k": {
+  "id": "choices13k",
+  "nombre": "Conjunto choices13k de elecciones riesgosas (Peterson et al., Science 2021)",
+  "tipo": "estudio"
+ },
+ "cierre_bloque_polizas": {
+  "id": "cierre_bloque_polizas",
+  "nombre": "Cierre de un bloque de pólizas a nuevos afiliados",
+  "tipo": "intervencion"
+ },
  "cierre_munich_re_ventures": {
   "id": "cierre_munich_re_ventures",
   "nombre": "Fin de nuevas inversiones de Munich Re Ventures (≈US$1.200M en ~100 inversiones, 2015-2025)",
@@ -578,6 +698,11 @@
   "id": "coaseguro",
   "nombre": "Coaseguro y tarifas variables",
   "tipo": "concepto"
+ },
+ "cobertura_seguro_salud": {
+  "id": "cobertura_seguro_salud",
+  "nombre": "Cobertura de seguro de salud",
+  "tipo": "intervencion"
  },
  "codiseno_servicios_salud": {
   "id": "codiseno_servicios_salud",
@@ -604,6 +729,16 @@
   "nombre": "Combined ratio de Root (91,4%)",
   "tipo": "resultado"
  },
+ "complejidad_cfir": {
+  "id": "complejidad_cfir",
+  "nombre": "CFIR exhaustivo pero engorroso de aplicar",
+  "tipo": "limitacion"
+ },
+ "completitud_teoria": {
+  "id": "completitud_teoria",
+  "nombre": "Completitud de una teoría (fracción de la variación predecible que capta)",
+  "tipo": "metrica"
+ },
  "compra_ecommerce": {
   "id": "compra_ecommerce",
   "nombre": "Compra en e-commerce",
@@ -623,6 +758,11 @@
   "id": "conducta_cliente_financiero",
   "nombre": "Conducta real del cliente de servicios financieros",
   "tipo": "resultado"
+ },
+ "conducta_maquinas": {
+  "id": "conducta_maquinas",
+  "nombre": "Conducta de las máquinas (machine behaviour) como campo científico",
+  "tipo": "concepto"
  },
  "conducta_salud": {
   "id": "conducta_salud",
@@ -659,6 +799,11 @@
   "nombre": "Conocimiento sobre la decisión",
   "tipo": "resultado"
  },
+ "conocimiento_declarativo_procedimental": {
+  "id": "conocimiento_declarativo_procedimental",
+  "nombre": "Conocimiento declarativo y procedimental",
+  "tipo": "resultado"
+ },
  "consejo_experto_digital": {
   "id": "consejo_experto_digital",
   "nombre": "Consejo experto digital en la elección del plan de seguro",
@@ -674,10 +819,35 @@
   "nombre": "Consistencia de la interfaz entre ejecuciones",
   "tipo": "resultado"
  },
+ "contenido_emocional_anuncio": {
+  "id": "contenido_emocional_anuncio",
+  "nombre": "Contenido emocional en anuncios",
+  "tipo": "intervencion"
+ },
+ "contenido_informativo_anuncio": {
+  "id": "contenido_informativo_anuncio",
+  "nombre": "Contenido informativo en anuncios",
+  "tipo": "intervencion"
+ },
  "contexto_y_metodo": {
   "id": "contexto_y_metodo",
   "nombre": "Contexto y elección metodológica",
   "tipo": "concepto"
+ },
+ "continuidad_atencion_primaria": {
+  "id": "continuidad_atencion_primaria",
+  "nombre": "Primer contacto y longitudinalidad de la atención primaria",
+  "tipo": "resultado"
+ },
+ "continuidad_proveedor_habitual": {
+  "id": "continuidad_proveedor_habitual",
+  "nombre": "Cobertura del proveedor habitual (continuidad de atención)",
+  "tipo": "constructo"
+ },
+ "controles_atencion_encuestas": {
+  "id": "controles_atencion_encuestas",
+  "nombre": "Controles de atención y de detección de respuestas no humanas en encuestas",
+  "tipo": "metrica"
  },
  "conviccion_tener_razon": {
   "id": "conviccion_tener_razon",
@@ -699,6 +869,11 @@
   "nombre": "Costos del diálogo (duración, turnos, errores)",
   "tipo": "metrica"
  },
+ "creador_mercado_seguros": {
+  "id": "creador_mercado_seguros",
+  "nombre": "Función de creador de mercado (emparejar necesidades del asegurado con aseguradoras capaces)",
+  "tipo": "concepto"
+ },
  "crecimiento_prima_root": {
   "id": "crecimiento_prima_root",
   "nombre": "Crecimiento de prima devengada de Root (−1%)",
@@ -719,6 +894,11 @@
   "nombre": "Monetización de créditos de IA de Figma",
   "tipo": "intervencion"
  },
+ "creencias_conspirativas": {
+  "id": "creencias_conspirativas",
+  "nombre": "Creencia en teorías conspirativas",
+  "tipo": "resultado"
+ },
  "creencias_pesimistas": {
   "id": "creencias_pesimistas",
   "nombre": "Creencias pesimistas sobre lo que se ganaría al cambiar",
@@ -727,6 +907,11 @@
  "cumplimiento_deshonesto": {
   "id": "cumplimiento_deshonesto",
   "nombre": "Cumplimiento de instrucciones totalmente deshonestas",
+  "tipo": "resultado"
+ },
+ "dap_red_proveedores": {
+  "id": "dap_red_proveedores",
+  "nombre": "Disposición a pagar por la red de proveedores del plan",
   "tipo": "resultado"
  },
  "dark_patterns": {
@@ -743,6 +928,16 @@
   "id": "dark_patterns_leves",
   "nombre": "Dark patterns leves",
   "tipo": "intervencion"
+ },
+ "datos_log_conducta": {
+  "id": "datos_log_conducta",
+  "nombre": "Trazas digitales / logfiles de uso real",
+  "tipo": "metrica"
+ },
+ "decision_compra_hogar": {
+  "id": "decision_compra_hogar",
+  "nombre": "Decisión de compra en el hogar/pareja",
+  "tipo": "concepto"
  },
  "default_nudge": {
   "id": "default_nudge",
@@ -767,6 +962,16 @@
  "demanda_seguros": {
   "id": "demanda_seguros",
   "nombre": "Demanda de seguros",
+  "tipo": "resultado"
+ },
+ "derivacion_atencion_primaria": {
+  "id": "derivacion_atencion_primaria",
+  "nombre": "Desvío de pacientes de urgencias a atención primaria",
+  "tipo": "resultado"
+ },
+ "desalineacion_opinion_grupos": {
+  "id": "desalineacion_opinion_grupos",
+  "nombre": "Desalineación entre las opiniones de un LLM y las de grupos demográficos",
   "tipo": "resultado"
  },
  "descarga_cognitiva": {
@@ -804,6 +1009,16 @@
   "nombre": "Design thinking",
   "tipo": "intervencion"
  },
+ "desigualdad_productividad": {
+  "id": "desigualdad_productividad",
+  "nombre": "Desigualdad de productividad entre trabajadores",
+  "tipo": "resultado"
+ },
+ "deteccion_faux_pas": {
+  "id": "deteccion_faux_pas",
+  "nombre": "Falla en detectar faux pas por enfoque hiperconservador al concluir",
+  "tipo": "limitacion"
+ },
  "determinantes_automedicacion": {
   "id": "determinantes_automedicacion",
   "nombre": "Determinantes de la automedicación",
@@ -812,6 +1027,16 @@
  "dictamen_salud_2025": {
   "id": "dictamen_salud_2025",
   "nombre": "Dictamen conjunto de la Comisión de Salud (PL 2522/2021 y 8488/2024), dic-2025",
+  "tipo": "intervencion"
+ },
+ "difusion_responsabilidad": {
+  "id": "difusion_responsabilidad",
+  "nombre": "Difusión de la responsabilidad",
+  "tipo": "constructo"
+ },
+ "direct_primary_care": {
+  "id": "direct_primary_care",
+  "nombre": "Direct Primary Care (atención primaria por membresía)",
   "tipo": "intervencion"
  },
  "disciplina_precios_salud": {
@@ -839,10 +1064,20 @@
   "nombre": "Diseño público y de servicios en el gobierno",
   "tipo": "intervencion"
  },
+ "diseno_stepped_wedge": {
+  "id": "diseno_stepped_wedge",
+  "nombre": "Diseño escalonado aleatorizado por clusters (stepped-wedge)",
+  "tipo": "concepto"
+ },
  "disposicion_compra": {
   "id": "disposicion_compra",
   "nombre": "Disposición a comprar",
   "tipo": "resultado"
+ },
+ "distorsion_hiperprecision": {
+  "id": "distorsion_hiperprecision",
+  "nombre": "Distorsión de hiperprecisión de LLMs (respuestas demasiado exactas frente a humanos)",
+  "tipo": "limitacion"
  },
  "divulgacion_clara": {
   "id": "divulgacion_clara",
@@ -919,6 +1154,11 @@
   "nombre": "Encuadre de la decisión (ganancia vs. pérdida)",
   "tipo": "intervencion"
  },
+ "enfermedad_infrecuente": {
+  "id": "enfermedad_infrecuente",
+  "nombre": "Enfermedad poco común",
+  "tipo": "concepto"
+ },
  "errores_intuitivos_llm": {
   "id": "errores_intuitivos_llm",
   "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)",
@@ -949,10 +1189,20 @@
   "nombre": "Escrutinio activo en la revisión (comentarios en línea)",
   "tipo": "resultado"
  },
+ "espiral_muerte_seleccion_adversa": {
+  "id": "espiral_muerte_seleccion_adversa",
+  "nombre": "Espiral de la muerte por selección adversa",
+  "tipo": "resultado"
+ },
  "estructura_decision": {
   "id": "estructura_decision",
   "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
   "tipo": "intervencion"
+ },
+ "estructura_roles_familiares": {
+  "id": "estructura_roles_familiares",
+  "nombre": "Estructura de roles y estrategias de decisión en la familia",
+  "tipo": "constructo"
  },
  "estudiantes_proyectos_empresa": {
   "id": "estudiantes_proyectos_empresa",
@@ -968,6 +1218,26 @@
   "id": "evaluacion_resultados_codiseno",
   "nombre": "Evaluación de resultados del codiseño",
   "tipo": "metrica"
+ },
+ "evasion_controles_calidad": {
+  "id": "evasion_controles_calidad",
+  "nombre": "Evasión de controles de calidad por agentes LLM",
+  "tipo": "limitacion"
+ },
+ "evidencia_debil_acceso_calidad": {
+  "id": "evidencia_debil_acceso_calidad",
+  "nombre": "Evidencia limitada y de baja validez interna sobre acceso y calidad",
+  "tipo": "limitacion"
+ },
+ "exactitud_fuera_frontera": {
+  "id": "exactitud_fuera_frontera",
+  "nombre": "Exactitud en tareas fuera de la frontera de capacidad de la IA",
+  "tipo": "resultado"
+ },
+ "exclusion_por_cuota": {
+  "id": "exclusion_por_cuota",
+  "nombre": "Exclusión de pacientes vulnerables por la cuota de membresía",
+  "tipo": "limitacion"
  },
  "exit_no_rentabilidad": {
   "id": "exit_no_rentabilidad",
@@ -999,6 +1269,11 @@
   "nombre": "Experiencia y habilidad previa del trabajador",
   "tipo": "constructo"
  },
+ "experimento_turing": {
+  "id": "experimento_turing",
+  "nombre": "Experimento de Turing (TE): replicar estudios con sujetos humanos simulados por un LLM",
+  "tipo": "metrica"
+ },
  "explicabilidad_ia": {
   "id": "explicabilidad_ia",
   "nombre": "Explicabilidad de la IA (explicaciones)",
@@ -1008,6 +1283,11 @@
   "id": "exposicion_codigo_agente",
   "nombre": "Experiencia acumulada revisando código de agentes de IA",
   "tipo": "constructo"
+ },
+ "factibilidad_seguridad_modelo_ia": {
+  "id": "factibilidad_seguridad_modelo_ia",
+  "nombre": "Seguridad, fiabilidad y factibilidad del modelo de IA en entorno real",
+  "tipo": "resultado"
  },
  "factores_contexto_dt": {
   "id": "factores_contexto_dt",
@@ -1024,10 +1304,30 @@
   "nombre": "Experiencia, estilo cognitivo, actitudes del usuario y diseño del sistema",
   "tipo": "concepto"
  },
+ "fallas_razonamiento_causal": {
+  "id": "fallas_razonamiento_causal",
+  "nombre": "Fallas de razonamiento causal en LLMs",
+  "tipo": "limitacion"
+ },
  "farmacias_sistema_salud": {
   "id": "farmacias_sistema_salud",
   "nombre": "Integración de farmacias y boticas al sistema nacional de salud",
   "tipo": "concepto"
+ },
+ "fed_metrica": {
+  "id": "fed_metrica",
+  "nombre": "FED: métrica no supervisada de evaluación de diálogo con DialoGPT",
+  "tipo": "metrica"
+ },
+ "fidelidad_algoritmica": {
+  "id": "fidelidad_algoritmica",
+  "nombre": "Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos)",
+  "tipo": "concepto"
+ },
+ "fidelidad_respuesta_rag": {
+  "id": "fidelidad_respuesta_rag",
+  "nombre": "Fidelidad de la respuesta al contexto recuperado (control de alucinación)",
+  "tipo": "constructo"
  },
  "firmas_cotizadas_china": {
   "id": "firmas_cotizadas_china",
@@ -1089,6 +1389,26 @@
   "nombre": "G-Eval (un LLM puntúa cada texto con razonamiento paso a paso)",
   "tipo": "metrica"
  },
+ "ganancias_perdidas_predecibles": {
+  "id": "ganancias_perdidas_predecibles",
+  "nombre": "Ganancias y pérdidas predecibles por asegurado (incentivo a seleccionar)",
+  "tipo": "resultado"
+ },
+ "gasto_salud": {
+  "id": "gasto_salud",
+  "nombre": "Gasto en atención de salud",
+  "tipo": "resultado"
+ },
+ "gatekeeping_atencion_primaria": {
+  "id": "gatekeeping_atencion_primaria",
+  "nombre": "Gatekeeping de atención primaria (filtro de acceso al hospital)",
+  "tipo": "intervencion"
+ },
+ "gatekeeping_mg": {
+  "id": "gatekeeping_mg",
+  "nombre": "Gatekeeping del médico general (filtro de acceso a especialistas)",
+  "tipo": "intervencion"
+ },
  "generative_ui": {
   "id": "generative_ui",
   "nombre": "Generative UI (interfaces generadas por LLM)",
@@ -1098,6 +1418,11 @@
   "id": "gii_peru",
   "nombre": "Índice Global de Innovación (OMPI): Perú",
   "tipo": "metrica"
+ },
+ "gpt3": {
+  "id": "gpt3",
+  "nombre": "Modelo de lenguaje GPT-3 (davinci)",
+  "tipo": "intervencion"
  },
  "guidance_figma_q2": {
   "id": "guidance_figma_q2",
@@ -1169,15 +1494,40 @@
   "nombre": "IA clínica",
   "tipo": "concepto"
  },
+ "ia_en_investigacion": {
+  "id": "ia_en_investigacion",
+  "nombre": "Herramientas de IA en la investigación científica",
+  "tipo": "intervencion"
+ },
+ "ilusion_comprension": {
+  "id": "ilusion_comprension",
+  "nombre": "Ilusiones de comprensión (creer entender el mundo más de lo que se entiende)",
+  "tipo": "limitacion"
+ },
  "incentivos_financieros_salud": {
   "id": "incentivos_financieros_salud",
   "nombre": "Incentivos financieros para conductas de salud",
   "tipo": "intervencion"
  },
+ "incertidumbre_medica": {
+  "id": "incertidumbre_medica",
+  "nombre": "Incertidumbre sobre la incidencia de enfermedad y la eficacia del tratamiento",
+  "tipo": "concepto"
+ },
+ "incumplimiento_consejo_triaje": {
+  "id": "incumplimiento_consejo_triaje",
+  "nombre": "Pacientes que acuden a urgencias pese a indicación de autocuidado o atención primaria",
+  "tipo": "limitacion"
+ },
  "indecopi_sanciones_2026": {
   "id": "indecopi_sanciones_2026",
   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
   "tipo": "intervencion"
+ },
+ "inequidad_pago_practicas": {
+  "id": "inequidad_pago_practicas",
+  "nombre": "Prácticas idénticas no reciben pago equitativo entre países del Reino Unido (Gales ~9% menos)",
+  "tipo": "limitacion"
  },
  "influencia_social": {
   "id": "influencia_social",
@@ -1193,6 +1543,11 @@
   "id": "informacion_decision",
   "nombre": "Nudges de información/asistencia a la decisión",
   "tipo": "intervencion"
+ },
+ "infraestructura_mercado_seguro": {
+  "id": "infraestructura_mercado_seguro",
+  "nombre": "Infraestructura y regulación del mercado de seguros incompatible con el precio personalizado",
+  "tipo": "limitacion"
  },
  "ingresos_bing": {
   "id": "ingresos_bing",
@@ -1219,6 +1574,11 @@
   "nombre": "Intención de uso de la interfaz",
   "tipo": "resultado"
  },
+ "interaccion_inicial": {
+  "id": "interaccion_inicial",
+  "nombre": "Etapa inicial de la interacción interpersonal",
+  "tipo": "concepto"
+ },
  "interfaces_adaptativas": {
   "id": "interfaces_adaptativas",
   "nombre": "Interfaces adaptativas",
@@ -1228,6 +1588,21 @@
   "id": "interfaz_chatbot",
   "nombre": "Interfaz de chatbot (frente a una GUI clásica)",
   "tipo": "intervencion"
+ },
+ "intermediarios_seguros": {
+  "id": "intermediarios_seguros",
+  "nombre": "Intermediarios de seguros independientes (brokers y agentes)",
+  "tipo": "concepto"
+ },
+ "intervalo_retencion": {
+  "id": "intervalo_retencion",
+  "nombre": "Intervalo de retención (tiempo hasta la prueba final)",
+  "tipo": "concepto"
+ },
+ "intervencion_emergencia": {
+  "id": "intervencion_emergencia",
+  "nombre": "Ayuda en una emergencia (rapidez de aviso)",
+  "tipo": "resultado"
  },
  "intrusividad_percibida": {
   "id": "intrusividad_percibida",
@@ -1244,15 +1619,35 @@
   "nombre": "Inversión de preferencias ante problemas equivalentes",
   "tipo": "resultado"
  },
+ "investigacion_exploratoria": {
+  "id": "investigacion_exploratoria",
+  "nombre": "Estudios piloto y exploratorios",
+  "tipo": "concepto"
+ },
+ "investigacion_psicologica": {
+  "id": "investigacion_psicologica",
+  "nombre": "Investigación en ciencia psicológica con participantes",
+  "tipo": "concepto"
+ },
  "ipg_venta_rga": {
   "id": "ipg_venta_rga",
   "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
   "tipo": "concepto"
  },
+ "irracionalidad_no_humana_llm": {
+  "id": "irracionalidad_no_humana_llm",
+  "nombre": "Irracionalidad de los LLMs distinta de los sesgos humanos e inconsistente",
+  "tipo": "resultado"
+ },
  "iyengar_lepper_2000": {
   "id": "iyengar_lepper_2000",
   "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
   "tipo": "estudio"
+ },
+ "juegos_simulacion_entrenamiento": {
+  "id": "juegos_simulacion_entrenamiento",
+  "nombre": "Juegos de simulación por computador para entrenamiento",
+  "tipo": "intervencion"
  },
  "juicio_precio": {
   "id": "juicio_precio",
@@ -1359,6 +1754,11 @@
   "nombre": "Menús adaptativos (control del sistema)",
   "tipo": "intervencion"
  },
+ "mercado_seguro_individual": {
+  "id": "mercado_seguro_individual",
+  "nombre": "Mercado de seguro de salud individual",
+  "tipo": "concepto"
+ },
  "mertens_2022": {
   "id": "mertens_2022",
   "nombre": "Meta-análisis de Mertens et al. (PNAS 2022)",
@@ -1368,6 +1768,11 @@
   "id": "metas_influencia",
   "nombre": "Metas que explican la influencia: precisión, afiliación y autoimagen positiva",
   "tipo": "concepto"
+ },
+ "micro_costeo": {
+  "id": "micro_costeo",
+  "nombre": "Micro-costeo (enumeración y costeo de cada insumo)",
+  "tipo": "metrica"
  },
  "microsoft_exp": {
   "id": "microsoft_exp",
@@ -1404,10 +1809,20 @@
   "nombre": "Modelos ChatGPT-3.5 y 4",
   "tipo": "intervencion"
  },
+ "modelos_conductuales_economicos": {
+  "id": "modelos_conductuales_economicos",
+  "nombre": "Modelos económicos de decisión (loterías, juegos, secuencias aleatorias)",
+  "tipo": "concepto"
+ },
  "moderadores_sobrecarga": {
   "id": "moderadores_sobrecarga",
   "nombre": "Complejidad del surtido, dificultad de la tarea, incertidumbre de preferencias y meta de ahorrar esfuerzo",
   "tipo": "concepto"
+ },
+ "monocultivo_cientifico": {
+  "id": "monocultivo_cientifico",
+  "nombre": "Monocultivos científicos (dominan ciertos métodos, preguntas y puntos de vista)",
+  "tipo": "resultado"
  },
  "muestra_estudiantil_percibida": {
   "id": "muestra_estudiantil_percibida",
@@ -1434,6 +1849,16 @@
   "nombre": "Necesidades psicológicas básicas: competencia, autonomía y vínculo",
   "tipo": "constructo"
  },
+ "nhs_111": {
+  "id": "nhs_111",
+  "nombre": "Servicio telefónico de asesoría y triaje NHS 111",
+  "tipo": "intervencion"
+ },
+ "nivel_educativo": {
+  "id": "nivel_educativo",
+  "nombre": "Nivel educativo",
+  "tipo": "constructo"
+ },
  "no_asignacion_aleatoria": {
   "id": "no_asignacion_aleatoria",
   "nombre": "Capacidad de diseño no asignada al azar (observacional)",
@@ -1454,14 +1879,29 @@
   "nombre": "Nudges a escala (nudge units)",
   "tipo": "intervencion"
  },
+ "opinionqa": {
+  "id": "opinionqa",
+  "nombre": "OpinionQA (benchmark de alineación de opiniones con 60 grupos de EE.UU.)",
+  "tipo": "metrica"
+ },
  "outcomes_salud": {
   "id": "outcomes_salud",
   "nombre": "Resultados de salud reales del paciente",
   "tipo": "constructo"
  },
+ "pago_basado_valor_ap": {
+  "id": "pago_basado_valor_ap",
+  "nombre": "Pago basado en valor en atención primaria",
+  "tipo": "intervencion"
+ },
  "pandemia_2020": {
   "id": "pandemia_2020",
   "nombre": "Pandemia de 2020",
+  "tipo": "concepto"
+ },
+ "particularidades_economicas_atencion_medica": {
+  "id": "particularidades_economicas_atencion_medica",
+  "nombre": "Problemas económicos especiales de la atención médica",
   "tipo": "concepto"
  },
  "patentes_diseno_utilidad": {
@@ -1549,6 +1989,11 @@
   "nombre": "La investigación empírica posterior rara vez confrontó los argumentos centrales de la teoría",
   "tipo": "limitacion"
  },
+ "practica_espaciada": {
+  "id": "practica_espaciada",
+  "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
+  "tipo": "intervencion"
+ },
  "precio_accion_figma": {
   "id": "precio_accion_figma",
   "nombre": "Precio de la acción de Figma (FIG)",
@@ -1557,6 +2002,11 @@
  "precio_ipo_figma": {
   "id": "precio_ipo_figma",
   "nombre": "Precio de IPO de Figma (US$33)",
+  "tipo": "concepto"
+ },
+ "precio_marginal_atencion": {
+  "id": "precio_marginal_atencion",
+  "nombre": "Precio marginal de la atención que enfrenta el paciente",
   "tipo": "concepto"
  },
  "precision_adaptacion_alta": {
@@ -1573,6 +2023,11 @@
   "id": "precision_prescripcion",
   "nombre": "Precisión de la decisión de prescripción",
   "tipo": "resultado"
+ },
+ "precision_triage_moderada": {
+  "id": "precision_triage_moderada",
+  "nombre": "Precisión de triage moderada (coincidencia exacta ~54% con enfermera)",
+  "tipo": "limitacion"
  },
  "prediccion_conducta_humana": {
   "id": "prediccion_conducta_humana",
@@ -1594,6 +2049,21 @@
   "nombre": "Preferencia por interfaces generativas (hasta 72%)",
   "tipo": "resultado"
  },
+ "presencia_otros_testigos": {
+  "id": "presencia_otros_testigos",
+  "nombre": "Presencia percibida de otros testigos",
+  "tipo": "intervencion"
+ },
+ "presentacion_atipica": {
+  "id": "presentacion_atipica",
+  "nombre": "Presentación clínica atípica",
+  "tipo": "concepto"
+ },
+ "pricing_personalizado_autorrastreo": {
+  "id": "pricing_personalizado_autorrastreo",
+  "nombre": "Pricing de seguro de salud personalizado con self-tracking",
+  "tipo": "intervencion"
+ },
  "primas_peru": {
   "id": "primas_peru",
   "nombre": "Primas netas de Perú (S/24.034 M a dic-2025, +8,3%)",
@@ -1614,6 +2084,16 @@
   "nombre": "Productividad de firmas OCDE (elasticidad ~0,05; retorno ~16%)",
   "tipo": "resultado"
  },
+ "productividad_investigacion": {
+  "id": "productividad_investigacion",
+  "nombre": "Productividad de la investigación (automatización de micro-tareas)",
+  "tipo": "resultado"
+ },
+ "productividad_trabajo_conocimiento": {
+  "id": "productividad_trabajo_conocimiento",
+  "nombre": "Productividad y calidad del trabajo de conocimiento (consultores)",
+  "tipo": "resultado"
+ },
  "programa_simulado": {
   "id": "programa_simulado",
   "nombre": "Programa simulado (incentivo ≤US$100), no seguro con prima real",
@@ -1629,10 +2109,25 @@
   "nombre": "Proyecciones de empleo del BLS 2024-2034",
   "tipo": "metrica"
  },
+ "psicologia_de_maquinas": {
+  "id": "psicologia_de_maquinas",
+  "nombre": "Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva",
+  "tipo": "concepto"
+ },
  "publicidad_precio_enganosa": {
   "id": "publicidad_precio_enganosa",
   "nombre": "Publicidad de precio engañosa",
   "tipo": "intervencion"
+ },
+ "racionalidad_economica": {
+  "id": "racionalidad_economica",
+  "nombre": "Racionalidad económica (consistencia con maximización de utilidad por preferencia revelada)",
+  "tipo": "resultado"
+ },
+ "ragas": {
+  "id": "ragas",
+  "nombre": "RAGAs: métricas sin referencia para evaluar pipelines RAG",
+  "tipo": "metrica"
  },
  "ranking_expertos_diseno": {
   "id": "ranking_expertos_diseno",
@@ -1658,6 +2153,16 @@
   "id": "rechazo_cobertura_sin_fundamento",
   "nombre": "Rechazo de cobertura sin fundamento o fuera de plazo",
   "tipo": "concepto"
+ },
+ "redes_estrechas_niveles": {
+  "id": "redes_estrechas_niveles",
+  "nombre": "Redes de proveedores estrechas o por niveles (tiered)",
+  "tipo": "intervencion"
+ },
+ "rediseno_dcg": {
+  "id": "rediseno_dcg",
+  "nombre": "Rediseño de los grupos de costo por diagnóstico (DCG) con clustering y multimorbilidad",
+  "tipo": "intervencion"
  },
  "rediseno_expresivo": {
   "id": "rediseno_expresivo",
@@ -1694,10 +2199,30 @@
   "nombre": "Resultados individuales y organizacionales de un proyecto de design thinking",
   "tipo": "resultado"
  },
+ "retencion_aprendizaje": {
+  "id": "retencion_aprendizaje",
+  "nombre": "Retención del aprendizaje",
+  "tipo": "resultado"
+ },
  "revenue_figma_q1": {
   "id": "revenue_figma_q1",
   "nombre": "Ingresos de Figma Q1 2026 (+46%)",
   "tipo": "resultado"
+ },
+ "riesgo_contaminacion_retencion": {
+  "id": "riesgo_contaminacion_retencion",
+  "nombre": "Problemas de retención y contaminación por desfase entre reclutamiento e intervención",
+  "tipo": "limitacion"
+ },
+ "riesgo_de_base": {
+  "id": "riesgo_de_base",
+  "nombre": "Riesgo de base (diferencia entre pérdida real e índice de pérdida)",
+  "tipo": "concepto"
+ },
+ "riesgo_moral": {
+  "id": "riesgo_moral",
+  "nombre": "Riesgo moral en seguros de salud",
+  "tipo": "concepto"
  },
  "robma": {
   "id": "robma",
@@ -1779,6 +2304,21 @@
   "nombre": "Segmentación demográfica en servicios financieros",
   "tipo": "intervencion"
  },
+ "seguridad_triage_paciente": {
+  "id": "seguridad_triage_paciente",
+  "nombre": "Seguridad del paciente en el triage automatizado",
+  "tipo": "resultado"
+ },
+ "seguro_parametrico": {
+  "id": "seguro_parametrico",
+  "nombre": "Seguro paramétrico (pago según índice observable)",
+  "tipo": "intervencion"
+ },
+ "seleccion_adversa": {
+  "id": "seleccion_adversa",
+  "nombre": "Selección adversa (selección de riesgos)",
+  "tipo": "concepto"
+ },
  "sensibilidad_redaccion_llm": {
   "id": "sensibilidad_redaccion_llm",
   "nombre": "Sensibilidad a la redacción del prompt e inestabilidad en el tiempo",
@@ -1788,6 +2328,11 @@
   "id": "sesgo_automatizacion",
   "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
   "tipo": "constructo"
+ },
+ "sesgo_conjunto_datos": {
+  "id": "sesgo_conjunto_datos",
+  "nombre": "Sesgo del conjunto de datos de entrenamiento (más ruido de decisión, equipreferencia)",
+  "tipo": "limitacion"
  },
  "sesgo_favor_texto_llm": {
   "id": "sesgo_favor_texto_llm",
@@ -1812,6 +2357,11 @@
  "sesgo_seleccion_metr": {
   "id": "sesgo_seleccion_metr",
   "nombre": "Sesgo de selección en el estudio de productividad",
+  "tipo": "limitacion"
+ },
+ "sesgo_tendencias_seculares": {
+  "id": "sesgo_tendencias_seculares",
+  "nombre": "Riesgo de sesgo por mala especificación de tendencias seculares",
   "tipo": "limitacion"
  },
  "sesgos_conductuales_seguro": {
@@ -1859,10 +2409,30 @@
   "nombre": "Mide preferencia, no desempeño ni aprendibilidad longitudinal",
   "tipo": "limitacion"
  },
+ "steering_proveedor_precio": {
+  "id": "steering_proveedor_precio",
+  "nombre": "Direccionar pacientes a proveedores de menor precio (steering)",
+  "tipo": "intervencion"
+ },
+ "subsidio_parcial_aseguradora": {
+  "id": "subsidio_parcial_aseguradora",
+  "nombre": "Subsidio parcial de la aseguradora al bloque",
+  "tipo": "intervencion"
+ },
+ "subsidios_penalidades_afiliacion": {
+  "id": "subsidios_penalidades_afiliacion",
+  "nombre": "Subsidios o penalidades para inducir la afiliación",
+  "tipo": "intervencion"
+ },
  "subtipos_patentes_diseno": {
   "id": "subtipos_patentes_diseno",
   "nombre": "Subtipos de patentes de diseño e índice compuesto de diseño",
   "tipo": "metrica"
+ },
+ "supervivencia_cancer": {
+  "id": "supervivencia_cancer",
+  "nombre": "Supervivencia de pacientes con cáncer",
+  "tipo": "resultado"
  },
  "sus_sesion_unica": {
   "id": "sus_sesion_unica",
@@ -1884,6 +2454,11 @@
   "nombre": "Tamaño de la firma",
   "tipo": "constructo"
  },
+ "tamano_muestral_requerido": {
+  "id": "tamano_muestral_requerido",
+  "nombre": "Tamaño muestral requerido (número de clusters/prácticas)",
+  "tipo": "metrica"
+ },
  "tamano_surtido": {
   "id": "tamano_surtido",
   "nombre": "Tamaño del surtido (cuántas opciones se ofrecen)",
@@ -1904,14 +2479,29 @@
   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
   "tipo": "concepto"
  },
+ "tarificacion_por_experiencia": {
+  "id": "tarificacion_por_experiencia",
+  "nombre": "Tarificación por experiencia (experience rating)",
+  "tipo": "intervencion"
+ },
  "teoria_disrupcion": {
   "id": "teoria_disrupcion",
   "nombre": "Teoría de la innovación disruptiva",
   "tipo": "concepto"
  },
+ "teoria_mente_llm": {
+  "id": "teoria_mente_llm",
+  "nombre": "Desempeño de LLMs en tareas de teoría de la mente",
+  "tipo": "resultado"
+ },
  "teoria_prospectiva": {
   "id": "teoria_prospectiva",
   "nombre": "Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión)",
+  "tipo": "concepto"
+ },
+ "teoria_reduccion_incertidumbre": {
+  "id": "teoria_reduccion_incertidumbre",
+  "nombre": "Teoría de la reducción de la incertidumbre (Berger y Calabrese)",
   "tipo": "concepto"
  },
  "tiempo_entrega": {
@@ -1923,6 +2513,16 @@
   "id": "tipo_tarea_decision_creacion",
   "nombre": "Tipo de tarea: decisión vs. creación de contenido",
   "tipo": "constructo"
+ },
+ "triaje_enfermeria_mts": {
+  "id": "triaje_enfermeria_mts",
+  "nombre": "Triaje por enfermera con extensión del Manchester Triage System",
+  "tipo": "intervencion"
+ },
+ "triaje_erroneo": {
+  "id": "triaje_erroneo",
+  "nombre": "Casos mal triados por la línea de triaje (subtriaje)",
+  "tipo": "limitacion"
  },
  "ubi_telematica": {
   "id": "ubi_telematica",
@@ -1949,9 +2549,34 @@
   "nombre": "Usabilidad percibida (SUS)",
   "tipo": "resultado"
  },
+ "uso_especialistas_hospitalizacion": {
+  "id": "uso_especialistas_hospitalizacion",
+  "nombre": "Uso de especialistas y hospitalizaciones",
+  "tipo": "resultado"
+ },
+ "usr_metrica": {
+  "id": "usr_metrica",
+  "nombre": "USR: métrica no supervisada y sin referencia para diálogo",
+  "tipo": "metrica"
+ },
  "utilidad_rimac": {
   "id": "utilidad_rimac",
   "nombre": "Utilidad neta de Rímac (2T 2026: S/85,8 M)",
+  "tipo": "resultado"
+ },
+ "utilizacion_servicios_salud": {
+  "id": "utilizacion_servicios_salud",
+  "nombre": "Utilización de servicios de salud",
+  "tipo": "resultado"
+ },
+ "validacion_metodos_mixtos": {
+  "id": "validacion_metodos_mixtos",
+  "nombre": "Validación clínica con métodos mixtos y viñetas de casos",
+  "tipo": "intervencion"
+ },
+ "validez_encuestas_online": {
+  "id": "validez_encuestas_online",
+  "nombre": "Validez de los datos de encuestas online",
   "tipo": "resultado"
  },
  "valoracion_atributos_plan": {
@@ -1974,10 +2599,35 @@
   "nombre": "Velocidad de tarea",
   "tipo": "resultado"
  },
+ "ver_error_algoritmo": {
+  "id": "ver_error_algoritmo",
+  "nombre": "Ver al algoritmo desempeñarse y equivocarse",
+  "tipo": "intervencion"
+ },
  "verificabilidad": {
   "id": "verificabilidad",
   "nombre": "Verificabilidad de la predicción",
   "tipo": "constructo"
+ },
+ "verificador_sintomas_electronico": {
+  "id": "verificador_sintomas_electronico",
+  "nombre": "Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo)",
+  "tipo": "intervencion"
+ },
+ "visitas_atencion_primaria": {
+  "id": "visitas_atencion_primaria",
+  "nombre": "Visitas a establecimientos de atención primaria",
+  "tipo": "resultado"
+ },
+ "visitas_hospitalarias": {
+  "id": "visitas_hospitalarias",
+  "nombre": "Visitas hospitalarias",
+  "tipo": "resultado"
+ },
+ "visitas_urgencias": {
+  "id": "visitas_urgencias",
+  "nombre": "Visitas a urgencias (ED)",
+  "tipo": "resultado"
  },
  "xai_vs_solo_ia": {
   "id": "xai_vs_solo_ia",
