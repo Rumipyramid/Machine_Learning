@@ -1,7 +1,7 @@
 # Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-13 · Última actualización: 2026-10-03 · Versión: v1.1
+> Fecha de elaboración: 2026-07-13 · Última actualización: 2026-10-04 · Versión: v1.1
 > (v1.1 amplía con evidencia sobre cifras prominentes/anclaje, riesgo regulatorio de
 > publicidad, información incompleta visible al cliente, e imagen emocional vs.
 > informativa — motivado por revisión de un artefacto concreto, §5)
@@ -373,3 +373,4 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
   y su hipótesis H7 propone testear exactamente eso en material de venta de Rimac.
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — es el node que enlaza a este como aplicación concreta: experimentar en la propia población y diseñar a nivel de producto, no solo de mensaje, es el patrón que aquí se aplica a explicar un producto de seguros.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — su §3 remite a este node para la pregunta abierta de cómo hacer comprensibles la cobertura y el coaseguro a quien decide.
+- [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — Gestalt (§3.10), señuelo (§5.5) y anclaje (§5.9): estado de replicación de los mecanismos que explican cómo se leen las tablas de planes.

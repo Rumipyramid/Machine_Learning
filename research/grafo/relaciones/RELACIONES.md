@@ -8,33 +8,33 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **325 de 646** (50.3%) |
-| …del cerebro de diseño (citadas en el node) | 163 de 273 |
-| …por rigor | A 172/179 · B 81/106 · C 58/171 · D 13/143 · E 1/33 |
-| Barridos | 41 |
-| Entidades | 700 |
-| Relaciones | 551 |
-| Nivel de lectura | abstract 452 · ficha 99 |
-| Fuerza de las afirmaciones | descriptiva 220 · causal 131 · observacional 110 · teorica 90 |
+| Fuentes procesadas | **419 de 740** (56.6%) |
+| …del cerebro de diseño (citadas en el node) | 164 de 274 |
+| …por rigor | A 261/268 · B 85/110 · C 58/171 · D 14/144 · E 1/33 |
+| Barridos | 52 |
+| Entidades | 886 |
+| Relaciones | 706 |
+| Nivel de lectura | abstract 592 · ficha 113 · completa 1 |
+| Fuerza de las afirmaciones | descriptiva 232 · causal 206 · observacional 153 · teorica 115 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 107 |
-| `reduce` | efecto | 80 |
-| `asocia_con` | efecto | 76 |
-| `tiene_limite` | metodo | 60 |
+| `aumenta` | efecto | 150 |
+| `reduce` | efecto | 93 |
+| `asocia_con` | efecto | 85 |
+| `tiene_limite` | metodo | 85 |
 | `aplica_a` | estructura | 52 |
-| `mide` | metodo | 38 |
-| `respalda` | evidencia | 29 |
-| `modera` | efecto | 27 |
-| `contradice` | evidencia | 20 |
-| `origina_en` | metodo | 16 |
-| `es_tipo_de` | estructura | 14 |
-| `parte_de` | estructura | 12 |
-| `media` | efecto | 10 |
-| `refuta` | evidencia | 10 |
+| `mide` | metodo | 45 |
+| `respalda` | evidencia | 40 |
+| `modera` | efecto | 39 |
+| `contradice` | evidencia | 34 |
+| `refuta` | evidencia | 21 |
+| `origina_en` | metodo | 20 |
+| `es_tipo_de` | estructura | 15 |
+| `parte_de` | estructura | 14 |
+| `media` | efecto | 13 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
@@ -42,11 +42,14 @@
 |---|---|
 | Generative UI (interfaces generadas por LLM) | F-247, F-256, F-258, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-544, F-545, F-546, F-548, F-552, F-553, F-560, F-574, F-597 |
+| Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542, F-662, F-663 |
+| Sesgo de publicación | F-16, F-17, F-21, F-680, F-701, F-712, F-736 |
+| Obediencia a órdenes dañinas (llegar a la descarga máxima) | F-650, F-651, F-652, F-653, F-654, F-655, F-656 |
 | Herramientas de IA generativa | F-308, F-517, F-521, F-581, F-582, F-591 |
 | Modelos ChatGPT-3.5 y 4 | F-545, F-571, F-572, F-573, F-575, F-577 |
+| Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores | F-689, F-690, F-691, F-692, F-693, F-695 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-514 |
 | Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502 |
-| Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-359, F-514 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-318, F-429, F-470 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
@@ -72,9 +75,12 @@
 | Marcos de evaluación de efectividad e implementación | F-53, F-54, F-64 |
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
-| Sesgo de publicación | F-16, F-17, F-21 |
 | Pie en la puerta (pedido pequeño antes del grande) | F-141, F-142, F-143 |
+| Número ancla visible antes de juzgar un precio | F-175, F-220, F-713 |
 | Disposición a comprar | F-176, F-253, F-518 |
+| Aversión a la pérdida (la función de valor es más empinada para pérdidas) | F-221, F-724, F-727 |
+| Efecto dotación (se pide más por vender que lo que se paga por comprar) | F-223, F-573, F-721 |
+| Carga cognitiva sobre la memoria de trabajo | F-228, F-668, F-682 |
 | Confianza del consumidor en la aseguradora | F-334, F-335, F-336 |
 | ML + interpretación humana para generar hipótesis conductuales | F-566, F-567, F-569 |
 | Experiencia y habilidad previa del trabajador | F-580, F-582, F-584 |
@@ -86,6 +92,17 @@
 | Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva | F-27, F-551, F-596 |
 | Herramientas de IA en la investigación científica | F-27, F-555, F-591 |
 | Intermediarios de seguros independientes (brokers y agentes) | F-180, F-359, F-375 |
+| Presencia percibida de otros testigos | F-226, F-659, F-660 |
+| Conformidad con la respuesta de la mayoría (tasa de errores conformes) | F-647, F-648, F-649 |
+| Órdenes de una figura de autoridad (experimentador) de continuar | F-650, F-651, F-652 |
+| Sensación subjetiva de poder (autorreporte) | F-695, F-696, F-698 |
+| Las poses de poder suben la testosterona, bajan el cortisol y aumentan la tolerancia al riesgo (Carney et al. 2010) | F-695, F-696, F-697 |
+| Experiencia emocional autorreportada (felicidad, humor percibido) | F-699, F-701, F-702 |
+| Ejercer autocontrol agota un recurso común y reduce el autocontrol posterior (Baumeister et al. 1998) | F-707, F-708, F-709 |
+| Tasa de replicación de hallazgos de psicología | F-712, F-713, F-714 |
+| Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto) | F-715, F-716, F-718 |
+| Negligencia de la duración: la duración casi no pesa en el recuerdo | F-715, F-716, F-718 |
+| En balance, las pérdidas no tienen más impacto que las ganancias | F-723, F-724, F-727 |
 | Relación innovación → desempeño | F-238, F-525 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Backlash del consumidor | F-241, F-345 |
@@ -134,6 +151,7 @@
 | Silent trial / modo sombra | F-56, F-57 |
 | IA clínica | F-56, F-57 |
 | Cambio de conducta objetivo | F-16, F-20 |
+| Persistencia del efecto tras terminar la intervención | F-20, F-661 |
 | Precisión diagnóstica de chatbots médicos | F-43, F-44 |
 | Personalizar con datos de la persona aumenta la persuasión de la IA | F-499, F-542 |
 | Sesgo de automatización (sobre-confiar en la recomendación de un sistema) | F-60, F-61 |
@@ -143,11 +161,11 @@
 | Percepción precisa del riesgo | F-122, F-123 |
 | Divulgación de datos personales | F-142, F-143 |
 | La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad) | F-143, F-144 |
-| Número ancla visible antes de juzgar un precio | F-175, F-220 |
 | Confianza en quien comunica la información | F-176, F-359 |
 | Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla) | F-220, F-573 |
 | Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión) | F-221, F-223 |
-| Efecto dotación (se pide más por vender que lo que se paga por comprar) | F-223, F-573 |
+| Encuadre de la decisión (ganancia vs. pérdida) | F-222, F-713 |
+| Inversión de preferencias ante problemas equivalentes | F-222, F-713 |
 | Información insuficiente para juzgar a la aseguradora | F-334, F-336 |
 | Predicción de la conducta de participantes no vistos en experimentos | F-563, F-566 |
 | Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea) | F-563, F-564 |
@@ -166,6 +184,7 @@
 | Productividad y calidad del trabajo de conocimiento (consultores) | F-581, F-582 |
 | Seguro paramétrico (pago según índice observable) | F-163, F-164 |
 | Retención del aprendizaje | F-218, F-219 |
+| Ayuda en una emergencia (rapidez de aviso) | F-226, F-659 |
 | Redes de proveedores estrechas o por niveles (tiered) | F-339, F-340 |
 | Desarrollo favorable de siniestros de periodos previos en Lemonade (7 pp en el 2T 2026) | F-509, F-636 |
 | Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes) | F-509, F-636 |
@@ -176,6 +195,43 @@
 | Mejoras de accesibilidad web/digital | F-264, F-523 |
 | Contacto comercial (llamadas, SMS, correos, mensajes electrónicos) sin consentimiento previo del consumidor | F-69, F-118 |
 | La IA es la principal causa de los despidos | F-282, F-283 |
+| Presión de una mayoría unánime que responde de forma equivocada | F-647, F-649 |
+| Milgram demuestra obediencia ciega/pasiva a la autoridad | F-655, F-656 |
+| Asignar un rol de poder (guardia) basta por sí solo para producir crueldad | F-657, F-658 |
+| Mensaje de norma descriptiva ('la mayoría de personas como tú hace X') | F-664, F-665 |
+| Reutilización de toallas por huéspedes de hotel | F-664, F-665 |
+| Ley de Vierordt / efecto de tendencia central en la estimación de duraciones | F-666, F-667 |
+| Duración juzgada por sorpresa, después (reconstruida desde la memoria) | F-668, F-670 |
+| Duración subjetiva percibida de un evento | F-669, F-671 |
+| Evaluación o satisfacción del cliente con la espera | F-672, F-673 |
+| Tiempo de espera percibido por el cliente (frente al real) | F-673, F-674 |
+| Efecto bouba/kiki (sonidos 'redondos' con formas curvas, 'agudos' con formas puntiagudas) | F-675, F-676 |
+| Correspondencias crossmodales (emparejamientos consistentes entre rasgos de distintos sentidos) | F-676, F-677 |
+| Ver el color rojo antes de una prueba empeora el desempeño | F-679, F-680 |
+| Efecto McGurk (ver una boca decir 'ga' y oír 'ba' produce percibir un tercer sonido, 'da') | F-685, F-686 |
+| Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color) | F-687, F-688 |
+| Sentir calor físico aumenta la calidez interpersonal y la conducta prosocial (Williams y Bargh 2008) | F-693, F-694 |
+| Poses de poder (posturas expansivas breves) | F-695, F-696 |
+| Manipulación de la expresión facial (lápiz en la boca, imitar fotos, mover músculos por instrucción) | F-699, F-702 |
+| El lápiz en la boca no cambia el humor percibido (17 laboratorios, 0,03 puntos) | F-700, F-702 |
+| Priming conductual: activar un concepto sin que la persona lo note cambia su conducta | F-705, F-713 |
+| El agotamiento del ego no aparece en réplicas preregistradas (d ≈ 0,04-0,06) | F-708, F-709 |
+| Replicación multilaboratorio preregistrada (Many Labs, RRR) | F-713, F-714 |
+| La replicabilidad depende más del efecto estudiado que de la muestra o el contexto | F-713, F-714 |
+| Agregar un tramo final menos desagradable a una experiencia | F-715, F-717 |
+| Intensidad en el peor momento (pico) y en el final de una experiencia | F-716, F-718 |
+| Exposición repetida a un estímulo | F-719, F-720 |
+| Agrado por un estímulo (actitud afectiva) | F-719, F-720 |
+| Las pérdidas pesan más que las ganancias equivalentes como principio general | F-723, F-725 |
+| La aversión a la pérdida desaparece o se invierte según el rango de montos vistos | F-725, F-726 |
+| Armar o crear uno mismo el producto | F-730, F-731 |
+| Valoración y disposición a pagar por un producto hecho por uno mismo | F-730, F-731 |
+| Construir uno mismo un producto aumenta cuánto se lo valora (efecto IKEA) | F-730, F-731 |
+| Distorsión del recuerdo de un evento (estimaciones sesgadas o detalles falsos) | F-732, F-733 |
+| Señales de habilidad en tareas de azar (elección, involucramiento, competencia, familiaridad) | F-737, F-738 |
+| Ilusión de control: expectativa de éxito mayor que la probabilidad objetiva | F-737, F-738 |
+| Capacidad infantil de demorar la gratificación (test del malvavisco) | F-739, F-740 |
+| Logro académico y competencias en la adolescencia | F-739, F-740 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -269,6 +325,81 @@
 - **Uso de IA por el trabajador** —contradice→ **La IA es la principal causa de los despidos** (F-282, observacional) · **estado: alcance_distinto**
   - Gallup 2026: solo 1% de los despedidos cita la IA o la automatización como causa principal, y 62% de los despedidos no usaba IA.
   - *Resolución (2026-10-04):* Challenger (F-283) mide la razón que declaran los empleadores al anunciar recortes: la IA es la más citada en 2026. Gallup (F-282) pregunta a los trabajadores despedidos: solo 1% cita la IA como causa principal. Miden cosas distintas (atribución corporativa vs. experiencia del trabajador); ninguna verifica la causa real. No hay base para afirmar que la IA es la principal causa de los despidos.
+- **La conformidad tipo Asch varía por cultura y época (mayor en culturas colectivistas, en baja en EE.UU.)** —contradice→ **La conformidad de Asch es un rasgo universal y estable en el tiempo** (F-648, observacional) · **estado: matizada**
+  - Bond & Smith 1996: la conformidad varía por cultura y en estudios de EE.UU. declinó desde los años 50; no es una constante universal.
+  - *Resolución (2026-10-04):* Asch (F-647) replica en promedio (~1/3 de ensayos conformes; F-649 33% en 2023), pero Bond & Smith (F-648) muestran que no es constante: varía por cultura y declinó en EE.UU. El efecto existe; su magnitud depende del contexto.
+- **La obediencia en Milgram nace de identificarse con la causa de la autoridad (seguidismo comprometido)** —contradice→ **Milgram demuestra obediencia ciega/pasiva a la autoridad** (F-655, teorica) · **estado: mecanismo_en_disputa**
+  - Haslam et al. 2015: las respuestas de archivo muestran participantes comprometidos con una causa, no autómatas; proponen seguidismo comprometido en vez de obediencia pasiva.
+  - *Resolución (2026-10-04):* La conducta obediente se reproduce (F-651, F-652); lo que se disputa es la explicación: 'estado agéntico' (obediencia ciega) vs. seguidismo comprometido con una causa (F-655), con la amenaza de la incredulidad de los participantes (F-656).
+- **En el SPE los guardias recibieron instrucciones y hubo fuertes características de demanda** —contradice→ **Asignar un rol de poder (guardia) basta por sí solo para producir crueldad** (F-657, descriptiva) · **estado: refutacion_directa**
+  - Le Texier 2019: datos sesgados e incompletos, guardias instruidos y participantes poco inmersos; el SPE no respalda que el rol por sí solo genere crueldad.
+  - *Resolución (2026-10-04):* Evidencia de archivo (Le Texier, F-657): guardias instruidos, datos sesgados e incompletos. Cae la interpretación 'el rol por sí solo produce crueldad'; no hay réplica que la sostenga.
+- **La crueldad del SPE surgió del liderazgo de identidad del experimentador, no del rol** —contradice→ **Asignar un rol de poder (guardia) basta por sí solo para producir crueldad** (F-658, descriptiva) · **estado: refutacion_directa**
+  - Haslam, Reicher & Van Bavel 2019: en vez de conformarse al rol por sí mismos, los guardias fueron dirigidos activamente por los experimentadores.
+  - *Resolución (2026-10-04):* Haslam, Reicher & Van Bavel (F-658) confirman con el archivo que los guardias fueron dirigidos por los experimentadores: refuta que la crueldad surgiera solo del rol.
+- **La alta elección no aumenta el cambio de actitud tras argumentar contra la propia opinión** —contradice→ **Actuar contra la propia actitud con alta (vs baja) elección produce más cambio de actitud** (F-663, causal) · **estado: refutacion_directa**
+  - Vaidis et al. 2024 (39 labs, N=4.898): no hubo diferencia de actitud entre escribir un ensayo contrario con alta vs baja elección, la predicción central de la disonancia.
+  - *Resolución (2026-10-04):* Réplica de 39 laboratorios (F-663, N=4.898): la predicción central (alta vs. baja elección) no apareció. Sí se sostiene que argumentar una postura contraria cambia la actitud frente a un texto neutro.
+- **Un mensaje de norma descriptiva no supera a un buen mensaje estándar** —contradice→ **Un mensaje de norma descriptiva supera a un mensaje estándar de beneficio** (F-665, causal) · **estado: matizada**
+  - Bohner & Schlüter 2014 (Alemania, N=724 y 204): la norma descriptiva no fue más eficaz que el mensaje ambiental estándar; efectos de cercanía inconsistentes.
+  - *Resolución (2026-10-04):* En Alemania (F-665) ambos mensajes subieron la reutilización frente a no poner mensaje, pero la norma descriptiva no superó al mensaje estándar como en EE.UU. (F-664). El efecto de dar un mensaje existe; la superioridad de la norma depende del contexto.
+- **Estudio Stetson, Fiesta y Eagleman 2007 (caída libre de 31 m)** —refuta→ **El miedo ralentiza la percepción en vivo ('cámara lenta')** (F-670, causal) · **estado: refutacion_directa**
+  - Stetson et al. 2007: durante 31 m de caída libre no hubo mayor resolución temporal visual; la 'cámara lenta' no ocurre en la percepción en vivo.
+  - *Resolución (2026-10-04):* Stetson et al. (F-670) midieron la resolución temporal durante la caída: no aumentó. La 'cámara lenta' no es perceptiva; sí se alarga el recuerdo de la duración (+36%).
+- **Meta-análisis Gnambs 2020 (efecto del rojo en desempeño)** —refuta→ **Ver el color rojo antes de una prueba empeora el desempeño** (F-680, causal) · **estado: refutacion_directa**
+  - Gnambs 2020 (meta-análisis, 67 efectos): anagramas d = −0,06, conocimiento d = −0,04; corrigiendo sesgo de publicación no queda evidencia del efecto del rojo.
+  - *Resolución (2026-10-04):* Meta-análisis de 67 efectos (F-680): d ≈ −0,06 y −0,04, sin evidencia tras corregir sesgo de publicación. El efecto grande de Elliot et al. (F-679) no se sostiene.
+- **Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores** —contradice→ **La cognición es cómputo sobre símbolos abstractos (amodales), independiente de la percepción y la acción** (F-689, teorica) · **estado: mecanismo_en_disputa**
+  - Barsalou 2008 rechaza la visión tradicional de la cognición como cómputo sobre símbolos amodales en un sistema modular separado de percepción y acción.
+  - *Resolución (2026-10-04):* Debate teórico abierto: Barsalou (F-689) defiende cognición fundamentada en sistemas modales; Mahon & Caramazza (F-691) y Goldinger et al. (F-692) sostienen que la activación sensoriomotora no prueba la encarnación.
+- **Fundamentación por interacción: conceptos abstractos que se enriquecen con información sensoriomotora** —contradice→ **Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores** (F-691, teorica) · **estado: mecanismo_en_disputa**
+  - Mahon y Caramazza 2008 sostienen que la forma fuerte de la hipótesis encarnada choca con la evidencia neuropsicológica y proponen conceptos abstractos 'instanciados' por lo sensoriomotor.
+  - *Resolución (2026-10-04):* Misma disputa teórica que T-621 vista desde el lado crítico: Mahon & Caramazza (F-691) proponen conceptos abstractos 'enriquecidos' por interacción con los sistemas sensoriales. Sin cierre empírico.
+- **El calor físico breve no aumenta la elección prosocial (réplica, N = 861)** —refuta→ **Sentir calor físico aumenta la calidez interpersonal y la conducta prosocial (Williams y Bargh 2008)** (F-694, causal) · **estado: refutacion_directa**
+  - Lynott et al. 2014: tres réplicas de alto poder del estudio 2 de Williams y Bargh; sin efecto en ningún laboratorio ni en conjunto (N = 861).
+  - *Resolución (2026-10-04):* Tres réplicas de alto poder (F-694, N=861) sin efecto en ningún laboratorio: la calidez física no cambia la conducta prosocial como reportó F-693.
+- **Las poses de poder no cambian hormonas ni conducta de riesgo (réplica N = 200)** —refuta→ **Las poses de poder suben la testosterona, bajan el cortisol y aumentan la tolerancia al riesgo (Carney et al. 2010)** (F-696, causal) · **estado: refutacion_directa**
+  - Ranehill et al. 2015 (N = 200, experimentador ciego): sin efecto significativo de las poses en hormonas ni en tres tareas conductuales.
+  - *Resolución (2026-10-04):* Ranehill et al. (F-696, N=200, experimentador ciego): sin efecto en hormonas ni en conducta de riesgo. Solo queda un efecto en la sensación de poder autorreportada (F-698).
+- **El lápiz en la boca no cambia el humor percibido (17 laboratorios, 0,03 puntos)** —refuta→ **Sonreír forzado con un lápiz en los dientes hace ver más graciosas las caricaturas (Strack et al. 1988)** (F-700, causal) · **estado: refutacion_directa**
+  - Wagenmakers et al. 2016: 17 laboratorios, diferencia meta-analítica de 0,03 puntos (IC 95% −0,11 a 0,16) frente a 0,82 del original.
+  - *Resolución (2026-10-04):* RRR de 17 laboratorios (F-700): 0,03 puntos vs. 0,82 del original con el método del lápiz. El paradigma del lápiz no replica (Many Smiles F-702 lo confirma).
+- **Sonreír a propósito (imitar o mover músculos) aumenta la felicidad sentida; el lápiz encubierto no lo prueba** —contradice→ **El lápiz en la boca no cambia el humor percibido (17 laboratorios, 0,03 puntos)** (F-702, causal) · **estado: alcance_distinto**
+  - Many Smiles 2022 matiza el RRR de 2016: el efecto existe con sonrisas voluntarias o imitadas, aunque con el lápiz encubierto la evidencia siguió siendo poco concluyente.
+  - *Resolución (2026-10-04):* No se contradicen: el RRR (F-700) probó el lápiz encubierto; Many Smiles (F-702) encontró efecto con sonrisas voluntarias o imitadas y siguió sin evidencia concluyente para el lápiz. Distinto método, distinto resultado.
+- **El peso físico no cambia el juicio de importancia (Many Labs 3, N = 2.285)** —refuta→ **Sostener algo pesado hace juzgar las cosas como más importantes (Jostmann et al. 2009)** (F-704, causal) · **estado: refutacion_directa**
+  - Many Labs 3 (Ebersole et al. 2016): con N = 2.285 en laboratorio, portapapeles pesado y liviano dieron igual importancia (dato del atlas FORRT, no del resumen).
+  - *Resolución (2026-10-04):* Many Labs 3 (F-704, N=2.285): portapapeles pesado y liviano dieron igual importancia. El N viene del atlas FORRT, no del resumen.
+- **El priming de vejez no ralentiza la marcha con medición automática (Doyen et al. 2012)** —refuta→ **Activar el estereotipo de vejez hace caminar más lento (Bargh et al. 1996)** (F-706, causal) · **estado: refutacion_directa**
+  - Doyen et al. 2012 (exp. 1): con cronometraje automático y más muestra, el priming de vejez no cambió la velocidad al caminar.
+  - *Resolución (2026-10-04):* Doyen et al. (F-706): con cronometraje automático, sin efecto; el efecto solo apareció cuando los experimentadores esperaban la marcha lenta.
+- **El agotamiento del ego no aparece en réplicas preregistradas (d ≈ 0,04-0,06)** —refuta→ **Ejercer autocontrol agota un recurso común y reduce el autocontrol posterior (Baumeister et al. 1998)** (F-708, causal) · **estado: refutacion_directa**
+  - Hagger et al. 2016: 23 laboratorios, N = 2.141; d = 0,04 (IC 95% −0,07 a 0,15), compatible con cero.
+  - *Resolución (2026-10-04):* RRR de 23 laboratorios (F-708): d=0,04, compatible con cero.
+- **El agotamiento del ego no aparece en réplicas preregistradas (d ≈ 0,04-0,06)** —refuta→ **Ejercer autocontrol agota un recurso común y reduce el autocontrol posterior (Baumeister et al. 1998)** (F-709, causal) · **estado: refutacion_directa**
+  - Vohs et al. 2021 (36 sitios, N = 3.531, liderado por defensores): d = 0,06 no significativo; datos 4 veces más probables bajo la nula que con δ = 0,30.
+  - *Resolución (2026-10-04):* Prueba de 36 sitios liderada por los defensores (F-709): d=0,06 no significativo; datos 4 veces más probables bajo la hipótesis nula.
+- **El efecto Macbeth no aparece en réplicas directas de mayor poder (Earp et al. 2014)** —refuta→ **Una amenaza moral aumenta el deseo de limpiarse físicamente (efecto Macbeth)** (F-711, causal) · **estado: refutacion_directa**
+  - Earp et al. 2014: varias réplicas directas del estudio 2 con materiales originales, muestras de distintos países y más poder; ninguna detectó el efecto.
+  - *Resolución (2026-10-04):* Réplicas directas con materiales originales y más poder (F-711): ninguna detectó el efecto Macbeth.
+- **La brecha WTA-WTP persiste aun con controles de malentendidos** —contradice→ **La brecha entre lo que se pide por vender (WTA) y lo que se paga por comprar (WTP) es un artefacto del procedimiento** (F-722, causal) · **estado: mecanismo_en_disputa**
+  - Fehr, Hakimov & Kübler 2015: replicando los controles de Plott & Zeiler (entrenamiento, práctica BDM), la brecha WTA-WTP por una taza persistió. Tensión total con la tesis del artefacto.
+  - *Resolución (2026-10-04):* Plott & Zeiler (F-721) 'apagan' la brecha con controles de procedimiento; Fehr et al. (F-722) repiten esos controles y la brecha persiste. Se discute si es preferencia real o artefacto de medición.
+- **En balance, las pérdidas no tienen más impacto que las ganancias** —contradice→ **Las pérdidas pesan más que las ganancias equivalentes como principio general** (F-723, teorica) · **estado: matizada**
+  - Gal & Rucker 2018 (revisión): la evidencia no respalda que las pérdidas, en balance, tengan más impacto que ganancias equivalentes. Tensión total con el principio general.
+  - *Resolución (2026-10-04):* Gal & Rucker (F-723) niegan la generalidad, pero el meta-análisis de 607 estimaciones (F-727) da λ ≈ 1,96 y Mrkva et al. (F-724) la encuentran con moderadores (edad, conocimiento). Existe en promedio, varía por persona y contexto.
+- **La aversión a la pérdida existe pero tiene moderadores (conocimiento, edad)** —contradice→ **En balance, las pérdidas no tienen más impacto que las ganancias** (F-724, observacional) · **estado: matizada**
+  - Mrkva et al. 2020: la aversión a la pérdida aparece y tiene moderadores; dudan de que sea una falacia. Tensión parcial: acepta que depende del contexto.
+  - *Resolución (2026-10-04):* Mrkva et al. (F-724, N=17.720) aceptan que depende del contexto (como Gal & Rucker, F-723) pero muestran que el efecto aparece: es moderado, no inexistente.
+- **La aversión a la pérdida desaparece o se invierte según el rango de montos vistos** —contradice→ **Las pérdidas pesan más que las ganancias equivalentes como principio general** (F-725, causal) · **estado: reconciliada**
+  - Walasek & Stewart 2015: si el rango de montos invierte la aversión, no es un rasgo fijo. Tensión parcial; resultado luego cuestionado (André & de Langhe 2021).
+  - *Resolución (2026-10-04):* André & de Langhe (F-726) muestran que la inversión de Walasek & Stewart (F-725) era un artefacto: comparaban loterías distintas en cada condición. Corregido, no hay inversión.
+- **El coeficiente de aversión a la pérdida promedio es cercano a 2** —contradice→ **En balance, las pérdidas no tienen más impacto que las ganancias** (F-727, observacional) · **estado: matizada**
+  - Brown et al. 2024: lambda medio 1,955 (IC95% 1,820-2,102). Tensión parcial con Gal & Rucker: el promedio existe aunque varíe por contexto y método.
+  - *Resolución (2026-10-04):* El promedio meta-analítico λ ≈ 1,96 (F-727) existe aunque varíe por método y contexto (F-723, F-724).
+- **La tipografía disfluente no cambia la tasa de acierto en problemas contraintuitivos** —refuta→ **La tipografía difícil de leer mejora la resolución de problemas** (F-741, causal) · **estado: refutacion_directa**
+  - Meyer et al. 2015: juntando el original con 16 réplicas, la tipografía disfluente no cambió la tasa de solución de problemas contraintuitivos, bajo ningún moderador.
+  - *Resolución (2026-10-04):* Original más 16 réplicas (F-741): la tipografía difícil no mejora el razonamiento bajo ningún moderador.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -278,12 +409,12 @@
 | Herramientas de IA generativa | intervencion | 10 | 6 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | intervencion | 10 | 9 |
 | Modelos ChatGPT-3.5 y 4 | intervencion | 9 | 6 |
+| Obediencia a órdenes dañinas (llegar a la descarga máxima) | resultado | 9 | 7 |
+| Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores | concepto | 9 | 6 |
 | Diseño efectivo → mejor desempeño de la firma | afirmacion | 7 | 5 |
 | Adulación de la IA (sycophancy) | intervencion | 7 | 4 |
-| Sobre-confianza en la IA | resultado | 6 | 5 |
-| Margen de suscripción de la industria de salud de EE.UU. | resultado | 6 | 4 |
-| Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | afirmacion | 6 | 3 |
-| Desempeño financiero de la firma (ROA, ROS, crecimiento) | resultado | 5 | 4 |
+| Cambio de actitud de las personas | resultado | 7 | 7 |
+| Sesgo de publicación | limitacion | 7 | 7 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -619,6 +750,17 @@
 | 2026-10-04 | F-518, F-530, F-631, F-4, F-27, F-169, F-183, F-200, F-267 | 14 | – | Lote del avance a N6 (grupo n6_4): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
 | 2026-10-04 | F-517, F-266, F-436, F-461, F-539, F-317, F-283, F-272, F-534, F-537, F-316, F-318 | 15 | – | Lote del cierre de N6, con fuentes verificadas directamente el 2026-10-04 (resúmenes oficiales, comunicados de los emisores o los propios artículos de prensa vía búsqueda). Se priorizaron fuentes cono |
 | 2026-10-04 | F-321, F-324, F-280, F-454, F-312, F-323, F-295, F-199, F-195, F-320, F-311, F-282 | 15 | – | Lote del cierre de N6, con fuentes verificadas directamente el 2026-10-04 (resúmenes oficiales, comunicados de los emisores o los propios artículos de prensa vía búsqueda). Se priorizaron fuentes cono |
+| 2026-10-04 | F-647, F-648, F-649, F-650, F-651, F-652, F-653, F-654, F-655, F-656 | 16 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-657, F-658, F-659, F-660, F-661, F-662, F-663, F-664, F-665, F-666 | 17 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-667, F-668, F-669, F-670, F-671, F-672, F-673, F-674, F-675, F-676 | 17 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-677, F-678, F-679, F-680, F-681, F-682, F-683, F-684, F-685, F-686 | 16 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-687, F-688, F-689, F-690, F-691, F-692, F-693, F-694, F-695, F-696 | 16 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-697, F-698, F-699, F-700, F-701, F-702, F-703, F-704, F-705, F-706 | 15 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-707, F-708, F-709, F-710, F-711, F-712, F-713, F-714, F-715, F-716 | 17 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-717, F-718, F-719, F-720, F-721, F-722, F-723, F-724, F-725, F-726 | 16 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-727, F-728, F-729, F-730, F-731, F-732, F-733, F-735, F-736 | 18 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-737, F-738, F-739, F-740, F-741 | 6 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
+| 2026-10-04 | F-670 | 1 | – | Complemento del lote_045: relación que faltaba para el concepto resolucion_temporal_percibida (quedaba sin relaciones). |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

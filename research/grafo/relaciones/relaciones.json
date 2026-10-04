@@ -66,6 +66,24 @@
    ]
   },
   {
+   "id": "activacion_emocional",
+   "nombre": "Activación emocional (arousal: nivel de alerta fisiológica)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-669"
+   ]
+  },
+  {
+   "id": "activacion_sensoriomotora_no_prueba",
+   "nombre": "La activación sensoriomotora al pensar no prueba que el concepto sea encarnado (también la explica la propagación de activación)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-691"
+   ]
+  },
+  {
    "id": "actividad_cvc_global",
    "nombre": "Actividad global de corporate venture capital (corporaciones que invierten en startups)",
    "tipo": "resultado",
@@ -142,6 +160,15 @@
    ]
   },
   {
+   "id": "advertencia_desinformacion",
+   "nombre": "Advertir a la persona de que pudo recibir información engañosa",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-733"
+   ]
+  },
+  {
    "id": "afiliados_va",
    "nombre": "Afiliados de Veterans Affairs (EE.UU.)",
    "tipo": "poblacion",
@@ -193,6 +220,34 @@
    "grado": 1,
    "fuentes": [
     "F-579"
+   ]
+  },
+  {
+   "id": "agotamiento_del_ego",
+   "nombre": "Agotamiento del ego: el autocontrol gastaría un recurso limitado",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-707"
+   ]
+  },
+  {
+   "id": "agrado_estimulo",
+   "nombre": "Agrado por un estímulo (actitud afectiva)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-719",
+    "F-720"
+   ]
+  },
+  {
+   "id": "agrupamiento_perceptual",
+   "nombre": "Agrupamiento perceptual (ver elementos sueltos como un todo)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-681"
    ]
   },
   {
@@ -318,13 +373,32 @@
    ]
   },
   {
+   "id": "amenaza_moral",
+   "nombre": "Recordar o cometer una falta moral (amenaza a la pureza moral)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-710"
+   ]
+  },
+  {
    "id": "ancla_numerica",
    "nombre": "Número ancla visible antes de juzgar un precio",
    "tipo": "intervencion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-175",
-    "F-220"
+    "F-220",
+    "F-713"
+   ]
+  },
+  {
+   "id": "antecedentes_familiares",
+   "nombre": "Antecedentes familiares, habilidad cognitiva temprana y entorno del hogar",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-740"
    ]
   },
   {
@@ -418,6 +492,15 @@
    ]
   },
   {
+   "id": "asociacion_color_emocion",
+   "nombre": "Asociaciones entre colores y emociones",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-678"
+   ]
+  },
+  {
    "id": "asuncion_responsabilidad",
    "nombre": "Disposición a asumir responsabilidad y reparar",
    "tipo": "resultado",
@@ -445,12 +528,31 @@
    ]
   },
   {
+   "id": "atributos_perceptuales",
+   "nombre": "Atributos presentados de forma perceptual o experiencial, no como números estilizados",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-729"
+   ]
+  },
+  {
    "id": "autoeficacia_entrenamiento",
    "nombre": "Autoeficacia post-entrenamiento",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-219"
+   ]
+  },
+  {
+   "id": "autoensamblaje",
+   "nombre": "Armar o crear uno mismo el producto",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-730",
+    "F-731"
    ]
   },
   {
@@ -493,9 +595,11 @@
    "id": "aversion_perdida",
    "nombre": "Aversión a la pérdida (la función de valor es más empinada para pérdidas)",
    "tipo": "constructo",
-   "grado": 1,
+   "grado": 4,
    "fuentes": [
-    "F-221"
+    "F-221",
+    "F-724",
+    "F-727"
    ]
   },
   {
@@ -554,12 +658,30 @@
    ]
   },
   {
+   "id": "barra_progreso_animada",
+   "nombre": "Barra de progreso con animación visual (estrías o pulsos)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-674"
+   ]
+  },
+  {
    "id": "barreras_telemedicina_peru",
    "nombre": "Barreras a la telemedicina en Perú",
    "tipo": "constructo",
    "grado": 1,
    "fuentes": [
     "F-40"
+   ]
+  },
+  {
+   "id": "block_hancock_zakay_2010_est",
+   "nombre": "Meta-análisis Block, Hancock y Zakay 2010 (carga cognitiva y juicios de duración)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-668"
    ]
   },
   {
@@ -654,12 +776,33 @@
    ]
   },
   {
+   "id": "c_agotamiento_ego_nulo",
+   "nombre": "El agotamiento del ego no aparece en réplicas preregistradas (d ≈ 0,04-0,06)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-708",
+    "F-709"
+   ]
+  },
+  {
    "id": "c_ambidestreza_mejora_desempeno",
    "nombre": "La ambidestreza mejora el desempeño",
    "tipo": "afirmacion",
    "grado": 1,
    "fuentes": [
     "F-434"
+   ]
+  },
+  {
+   "id": "c_autocontrol_recurso_limitado",
+   "nombre": "Ejercer autocontrol agota un recurso común y reduce el autocontrol posterior (Baumeister et al. 1998)",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-707",
+    "F-708",
+    "F-709"
    ]
   },
   {
@@ -681,6 +824,46 @@
    ]
   },
   {
+   "id": "c_aversion_perdida_general",
+   "nombre": "Las pérdidas pesan más que las ganancias equivalentes como principio general",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-723",
+    "F-725"
+   ]
+  },
+  {
+   "id": "c_aversion_perdida_moderada",
+   "nombre": "La aversión a la pérdida existe pero tiene moderadores (conocimiento, edad)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-724"
+   ]
+  },
+  {
+   "id": "c_aversion_perdida_no_general",
+   "nombre": "En balance, las pérdidas no tienen más impacto que las ganancias",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-723",
+    "F-724",
+    "F-727"
+   ]
+  },
+  {
+   "id": "c_aversion_perdida_reversible",
+   "nombre": "La aversión a la pérdida desaparece o se invierte según el rango de montos vistos",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-725",
+    "F-726"
+   ]
+  },
+  {
    "id": "c_brecha_justificacion_implementacion",
    "nombre": "La justificación de diseño generada no coincide con lo implementado",
    "tipo": "afirmacion",
@@ -696,6 +879,34 @@
    "grado": 1,
    "fuentes": [
     "F-21"
+   ]
+  },
+  {
+   "id": "c_brecha_wta_persiste",
+   "nombre": "La brecha WTA-WTP persiste aun con controles de malentendidos",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-722"
+   ]
+  },
+  {
+   "id": "c_calidez_fisica_sin_efecto",
+   "nombre": "El calor físico breve no aumenta la elección prosocial (réplica, N = 861)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-694"
+   ]
+  },
+  {
+   "id": "c_calidez_fisica_social",
+   "nombre": "Sentir calor físico aumenta la calidez interpersonal y la conducta prosocial (Williams y Bargh 2008)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-693",
+    "F-694"
    ]
   },
   {
@@ -718,6 +929,33 @@
    "fuentes": [
     "F-563",
     "F-564"
+   ]
+  },
+  {
+   "id": "c_cognicion_simbolos_amodales",
+   "nombre": "La cognición es cómputo sobre símbolos abstractos (amodales), independiente de la percepción y la acción",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-689"
+   ]
+  },
+  {
+   "id": "c_conformidad_universal_estable",
+   "nombre": "La conformidad de Asch es un rasgo universal y estable en el tiempo",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-648"
+   ]
+  },
+  {
+   "id": "c_conformidad_varia_cultura_tiempo",
+   "nombre": "La conformidad tipo Asch varía por cultura y época (mayor en culturas colectivistas, en baja en EE.UU.)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-648"
    ]
   },
   {
@@ -760,6 +998,15 @@
    ]
   },
   {
+   "id": "c_crueldad_por_liderazgo",
+   "nombre": "La crueldad del SPE surgió del liderazgo de identidad del experimentador, no del rol",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-658"
+   ]
+  },
+  {
    "id": "c_cvc_en_retirada",
    "nombre": "Grandes corporaciones se retiran del venture capital corporativo directo",
    "tipo": "afirmacion",
@@ -767,6 +1014,15 @@
    "fuentes": [
     "F-447",
     "F-448"
+   ]
+  },
+  {
+   "id": "c_demora_predice_logro",
+   "nombre": "La demora de gratificación en preescolar predice fuertemente el logro posterior",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-740"
    ]
   },
   {
@@ -792,6 +1048,15 @@
    ]
   },
   {
+   "id": "c_disfluencia_mejora_razonamiento",
+   "nombre": "La tipografía difícil de leer mejora la resolución de problemas",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-741"
+   ]
+  },
+  {
    "id": "c_divulgacion_obligatoria_falla",
    "nombre": "Los mandatos de 'explicar mejor' fracasan sistemáticamente",
    "tipo": "afirmacion",
@@ -799,6 +1064,15 @@
    "fuentes": [
     "F-10",
     "F-9"
+   ]
+  },
+  {
+   "id": "c_dotacion_artefacto_procedimiento",
+   "nombre": "La brecha entre lo que se pide por vender (WTA) y lo que se paga por comprar (WTP) es un artefacto del procedimiento",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-722"
    ]
   },
   {
@@ -837,6 +1111,52 @@
    "grado": 1,
    "fuentes": [
     "F-474"
+   ]
+  },
+  {
+   "id": "c_efecto_ikea",
+   "nombre": "Construir uno mismo un producto aumenta cuánto se lo valora (efecto IKEA)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-730",
+    "F-731"
+   ]
+  },
+  {
+   "id": "c_efecto_macbeth",
+   "nombre": "Una amenaza moral aumenta el deseo de limpiarse físicamente (efecto Macbeth)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-711"
+   ]
+  },
+  {
+   "id": "c_eleccion_genera_disonancia",
+   "nombre": "Actuar contra la propia actitud con alta (vs baja) elección produce más cambio de actitud",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-663"
+   ]
+  },
+  {
+   "id": "c_eleccion_no_cambia_actitud",
+   "nombre": "La alta elección no aumenta el cambio de actitud tras argumentar contra la propia opinión",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-663"
+   ]
+  },
+  {
+   "id": "c_entorno_parte_sistema_cognitivo",
+   "nombre": "El entorno es parte del sistema cognitivo (mente extendida)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-690"
    ]
   },
   {
@@ -896,6 +1216,15 @@
     "F-203",
     "F-477",
     "F-478"
+   ]
+  },
+  {
+   "id": "c_feedback_facial_pequeno",
+   "nombre": "El feedback facial influye en la emoción con efecto pequeño y variable (d ≈ 0,20)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-701"
    ]
   },
   {
@@ -1002,6 +1331,34 @@
    ]
   },
   {
+   "id": "c_lambda_cercano_2",
+   "nombre": "El coeficiente de aversión a la pérdida promedio es cercano a 2",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-727"
+   ]
+  },
+  {
+   "id": "c_lapiz_sin_efecto_rrr",
+   "nombre": "El lápiz en la boca no cambia el humor percibido (17 laboratorios, 0,03 puntos)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-700",
+    "F-702"
+   ]
+  },
+  {
+   "id": "c_lapiz_sonrisa_humor",
+   "nombre": "Sonreír forzado con un lápiz en los dientes hace ver más graciosas las caricaturas (Strack et al. 1988)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-700"
+   ]
+  },
+  {
    "id": "c_leves_sin_backlash",
    "nombre": "Los dark patterns leves no generan backlash",
    "tipo": "afirmacion",
@@ -1021,6 +1378,15 @@
    ]
   },
   {
+   "id": "c_macbeth_no_replica",
+   "nombre": "El efecto Macbeth no aparece en réplicas directas de mayor poder (Earp et al. 2014)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-711"
+   ]
+  },
+  {
    "id": "c_margen_compresion",
    "nombre": "El margen fino de 2025 (1,8%) es una tendencia de compresión",
    "tipo": "afirmacion",
@@ -1028,6 +1394,24 @@
    "fuentes": [
     "F-193",
     "F-480"
+   ]
+  },
+  {
+   "id": "c_mera_exposicion_u_invertida",
+   "nombre": "La exposición repetida aumenta el agrado siguiendo una U invertida",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-720"
+   ]
+  },
+  {
+   "id": "c_miedo_ralentiza_percepcion",
+   "nombre": "El miedo ralentiza la percepción en vivo ('cámara lenta')",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-670"
    ]
   },
   {
@@ -1050,6 +1434,24 @@
    ]
   },
   {
+   "id": "c_norma_descriptiva_no_supera",
+   "nombre": "Un mensaje de norma descriptiva no supera a un buen mensaje estándar",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-665"
+   ]
+  },
+  {
+   "id": "c_norma_descriptiva_supera_estandar",
+   "nombre": "Un mensaje de norma descriptiva supera a un mensaje estándar de beneficio",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-665"
+   ]
+  },
+  {
    "id": "c_nudge_efectivo_general",
    "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
    "tipo": "afirmacion",
@@ -1058,6 +1460,25 @@
     "F-16",
     "F-17",
     "F-18"
+   ]
+  },
+  {
+   "id": "c_obediencia_ciega",
+   "nombre": "Milgram demuestra obediencia ciega/pasiva a la autoridad",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-655",
+    "F-656"
+   ]
+  },
+  {
+   "id": "c_obediencia_por_identificacion",
+   "nombre": "La obediencia en Milgram nace de identificarse con la causa de la autoridad (seguidismo comprometido)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-655"
    ]
   },
   {
@@ -1136,6 +1557,53 @@
    ]
   },
   {
+   "id": "c_peso_importancia",
+   "nombre": "Sostener algo pesado hace juzgar las cosas como más importantes (Jostmann et al. 2009)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-704"
+   ]
+  },
+  {
+   "id": "c_peso_sin_efecto",
+   "nombre": "El peso físico no cambia el juicio de importancia (Many Labs 3, N = 2.285)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-704"
+   ]
+  },
+  {
+   "id": "c_poses_poder_hormonas_riesgo",
+   "nombre": "Las poses de poder suben la testosterona, bajan el cortisol y aumentan la tolerancia al riesgo (Carney et al. 2010)",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-695",
+    "F-696",
+    "F-697"
+   ]
+  },
+  {
+   "id": "c_poses_poder_sin_efecto_fisiologico",
+   "nombre": "Las poses de poder no cambian hormonas ni conducta de riesgo (réplica N = 200)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-696"
+   ]
+  },
+  {
+   "id": "c_postura_afecta_autorreporte",
+   "nombre": "La postura corporal afecta estados afectivos autorreportados (ánimo, sensación de poder)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-698"
+   ]
+  },
+  {
    "id": "c_preferencia_adulacion",
    "nombre": "Los usuarios prefieren la IA aduladora",
    "tipo": "afirmacion",
@@ -1145,12 +1613,77 @@
    ]
   },
   {
+   "id": "c_priming_vejez_lentitud",
+   "nombre": "Activar el estereotipo de vejez hace caminar más lento (Bargh et al. 1996)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-706"
+   ]
+  },
+  {
+   "id": "c_priming_vejez_no_replica",
+   "nombre": "El priming de vejez no ralentiza la marcha con medición automática (Doyen et al. 2012)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-706"
+   ]
+  },
+  {
    "id": "c_proxies_vulnerabilidad_debiles",
    "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
    "tipo": "afirmacion",
    "grado": 2,
    "fuentes": [
     "F-251"
+   ]
+  },
+  {
+   "id": "c_rojo_baja_desempeno",
+   "nombre": "Ver el color rojo antes de una prueba empeora el desempeño",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-679",
+    "F-680"
+   ]
+  },
+  {
+   "id": "c_rol_basta_crueldad",
+   "nombre": "Asignar un rol de poder (guardia) basta por sí solo para producir crueldad",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-657",
+    "F-658"
+   ]
+  },
+  {
+   "id": "c_senuelo_aumenta_eleccion",
+   "nombre": "Agregar un señuelo dominado aumenta la elección de la opción que lo domina",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-729"
+   ]
+  },
+  {
+   "id": "c_sesgo_presente_promedio",
+   "nombre": "En promedio las personas muestran sesgo del presente",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-736"
+   ]
+  },
+  {
+   "id": "c_sin_efecto_disfluencia",
+   "nombre": "La tipografía disfluente no cambia la tasa de acierto en problemas contraintuitivos",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-741"
    ]
   },
   {
@@ -1194,6 +1727,33 @@
    ]
   },
   {
+   "id": "c_sonrisa_voluntaria_felicidad",
+   "nombre": "Sonreír a propósito (imitar o mover músculos) aumenta la felicidad sentida; el lápiz encubierto no lo prueba",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-702"
+   ]
+  },
+  {
+   "id": "c_spe_guardias_instruidos",
+   "nombre": "En el SPE los guardias recibieron instrucciones y hubo fuertes características de demanda",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-657"
+   ]
+  },
+  {
+   "id": "c_tasa_descuento_mide_preferencia",
+   "nombre": "Las tasas de descuento implícitas miden la preferencia temporal pura",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-735"
+   ]
+  },
+  {
    "id": "c_ubi_cambia_conducta",
    "nombre": "El UBI cambia la conducta real de manejo",
    "tipo": "afirmacion",
@@ -1218,6 +1778,16 @@
    "grado": 1,
    "fuentes": [
     "F-262"
+   ]
+  },
+  {
+   "id": "c_variacion_depende_del_efecto",
+   "nombre": "La replicabilidad depende más del efecto estudiado que de la muestra o el contexto",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-713",
+    "F-714"
    ]
   },
   {
@@ -1303,6 +1873,15 @@
    ]
   },
   {
+   "id": "calidez_fisica",
+   "nombre": "Exposición breve a calor físico (café caliente, compresa térmica)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-693"
+   ]
+  },
+  {
    "id": "calificacion_calidad_ia",
    "nombre": "Calificación de calidad y confianza de la IA",
    "tipo": "resultado",
@@ -1317,13 +1896,15 @@
    "id": "cambio_actitud",
    "nombre": "Cambio de actitud de las personas",
    "tipo": "resultado",
-   "grado": 5,
+   "grado": 7,
    "fuentes": [
     "F-489",
     "F-490",
     "F-494",
     "F-499",
-    "F-542"
+    "F-542",
+    "F-662",
+    "F-663"
    ]
   },
   {
@@ -1408,12 +1989,23 @@
    ]
   },
   {
+   "id": "caracteristicas_demanda",
+   "nombre": "Características de demanda (el participante actúa lo que cree que se espera de él)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-657"
+   ]
+  },
+  {
    "id": "carga_cognitiva",
    "nombre": "Carga cognitiva sobre la memoria de trabajo",
    "tipo": "constructo",
-   "grado": 1,
+   "grado": 4,
    "fuentes": [
-    "F-228"
+    "F-228",
+    "F-668",
+    "F-682"
    ]
   },
   {
@@ -1462,12 +2054,39 @@
    ]
   },
   {
+   "id": "ceguera_al_cambio",
+   "nombre": "Ceguera al cambio (no notar cambios grandes en lo que se está mirando)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-683"
+   ]
+  },
+  {
+   "id": "ceguera_inatencional",
+   "nombre": "Ceguera por falta de atención (no ver un evento inesperado y visible por estar concentrado en otra tarea)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-682"
+   ]
+  },
+  {
    "id": "centaur",
    "nombre": "Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones)",
    "tipo": "intervencion",
    "grado": 3,
    "fuentes": [
     "F-563"
+   ]
+  },
+  {
+   "id": "cercania_victima",
+   "nombre": "Proximidad e intimidad con la persona afectada",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-653"
    ]
   },
   {
@@ -1571,12 +2190,44 @@
    ]
   },
   {
+   "id": "codificacion_memoria_rica",
+   "nombre": "Codificación de memoria más densa de un evento saliente",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-670"
+   ]
+  },
+  {
    "id": "codiseno_servicios_salud",
    "nombre": "Participación del público en el diseño de servicios de salud",
    "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
     "F-252"
+   ]
+  },
+  {
+   "id": "coeficiente_aversion_perdida",
+   "nombre": "Coeficiente de aversión a la pérdida (lambda)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-727"
+   ]
+  },
+  {
+   "id": "cognicion_encarnada",
+   "nombre": "Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores",
+   "tipo": "concepto",
+   "grado": 9,
+   "fuentes": [
+    "F-689",
+    "F-690",
+    "F-691",
+    "F-692",
+    "F-693",
+    "F-695"
    ]
   },
   {
@@ -1596,6 +2247,15 @@
    "grado": 1,
    "fuentes": [
     "F-285"
+   ]
+  },
+  {
+   "id": "colectivismo_cultural",
+   "nombre": "Colectivismo cultural (vs individualismo)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-648"
    ]
   },
   {
@@ -1719,6 +2379,15 @@
    ]
   },
   {
+   "id": "conducta_prosocial",
+   "nombre": "Conducta prosocial (elegir en beneficio de otro)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-693"
+   ]
+  },
+  {
    "id": "conducta_salud",
    "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
    "tipo": "resultado",
@@ -1793,6 +2462,35 @@
    "grado": 1,
    "fuentes": [
     "F-122"
+   ]
+  },
+  {
+   "id": "conformidad_mayoria",
+   "nombre": "Conformidad con la respuesta de la mayoría (tasa de errores conformes)",
+   "tipo": "resultado",
+   "grado": 4,
+   "fuentes": [
+    "F-647",
+    "F-648",
+    "F-649"
+   ]
+  },
+  {
+   "id": "confusores_intertemporales",
+   "nombre": "Consideraciones distintas de la preferencia temporal que influyen en elecciones intertemporales",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-735"
+   ]
+  },
+  {
+   "id": "conocimiento_atributo",
+   "nombre": "Conocimiento del consumidor sobre el atributo o dominio que se decide",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-724"
    ]
   },
   {
@@ -1924,6 +2622,15 @@
    ]
   },
   {
+   "id": "control_malentendidos",
+   "nombre": "Procedimientos que controlan malentendidos sobre cómo se elicita el valor (entrenamiento, rondas de práctica)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-721"
+   ]
+  },
+  {
    "id": "controles_atencion_encuestas",
    "nombre": "Controles de atención y de detección de respuestas no humanas en encuestas",
    "tipo": "metrica",
@@ -1957,6 +2664,16 @@
    "grado": 1,
    "fuentes": [
     "F-488"
+   ]
+  },
+  {
+   "id": "correspondencias_crossmodales",
+   "nombre": "Correspondencias crossmodales (emparejamientos consistentes entre rasgos de distintos sentidos)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-676",
+    "F-677"
    ]
   },
   {
@@ -2107,6 +2824,15 @@
    ]
   },
   {
+   "id": "crueldad_guardias",
+   "nombre": "Conducta cruel de los 'guardias' hacia los 'presos'",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-658"
+   ]
+  },
+  {
    "id": "cumplimiento_deshonesto",
    "nombre": "Cumplimiento de instrucciones totalmente deshonestas",
    "tipo": "resultado",
@@ -2226,6 +2952,16 @@
    ]
   },
   {
+   "id": "demora_gratificacion",
+   "nombre": "Capacidad infantil de demorar la gratificación (test del malvavisco)",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-739",
+    "F-740"
+   ]
+  },
+  {
    "id": "denegacion_autorizacion_previa",
    "nombre": "Tasa de denegación de autorizaciones previas en seguros de salud de EE.UU.",
    "tipo": "resultado",
@@ -2270,6 +3006,24 @@
    "fuentes": [
     "F-492",
     "F-493"
+   ]
+  },
+  {
+   "id": "descarga_cognitiva_entorno",
+   "nombre": "Descarga de trabajo cognitivo en el entorno (offloading)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-690"
+   ]
+  },
+  {
+   "id": "desempeno_cognitivo",
+   "nombre": "Desempeño en pruebas cognitivas o de logro",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-679"
    ]
   },
   {
@@ -2320,6 +3074,15 @@
    "grado": 1,
    "fuentes": [
     "F-169"
+   ]
+  },
+  {
+   "id": "deseo_limpieza_fisica",
+   "nombre": "Deseo de limpieza física (productos, toallitas)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-710"
    ]
   },
   {
@@ -2504,6 +3267,16 @@
    ]
   },
   {
+   "id": "distorsion_recuerdo",
+   "nombre": "Distorsión del recuerdo de un evento (estimaciones sesgadas o detalles falsos)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-732",
+    "F-733"
+   ]
+  },
+  {
    "id": "distribucion_seguros_latam",
    "nombre": "Distribución de seguros en América Latina (canales)",
    "tipo": "concepto",
@@ -2533,6 +3306,16 @@
    ]
   },
   {
+   "id": "duracion_percibida",
+   "nombre": "Duración subjetiva percibida de un evento",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-669",
+    "F-671"
+   ]
+  },
+  {
    "id": "edad",
    "nombre": "Edad del consumidor",
    "tipo": "constructo",
@@ -2551,12 +3334,31 @@
    ]
   },
   {
+   "id": "edad_consumidor",
+   "nombre": "Edad del consumidor",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-724"
+   ]
+  },
+  {
    "id": "efectividad_politica_publica",
    "nombre": "Efectividad, innovación y eficiencia de políticas y servicios públicos",
    "tipo": "resultado",
    "grado": 2,
    "fuentes": [
     "F-387"
+   ]
+  },
+  {
+   "id": "efecto_bouba_kiki",
+   "nombre": "Efecto bouba/kiki (sonidos 'redondos' con formas curvas, 'agudos' con formas puntiagudas)",
+   "tipo": "concepto",
+   "grado": 3,
+   "fuentes": [
+    "F-675",
+    "F-676"
    ]
   },
   {
@@ -2573,10 +3375,21 @@
    "id": "efecto_dotacion",
    "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
    "tipo": "constructo",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-223",
-    "F-573"
+    "F-573",
+    "F-721"
+   ]
+  },
+  {
+   "id": "efecto_mcgurk",
+   "nombre": "Efecto McGurk (ver una boca decir 'ga' y oír 'ba' produce percibir un tercer sonido, 'da')",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-685",
+    "F-686"
    ]
   },
   {
@@ -2595,6 +3408,34 @@
    "grado": 2,
    "fuentes": [
     "F-21"
+   ]
+  },
+  {
+   "id": "efecto_stroop",
+   "nombre": "Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-687",
+    "F-688"
+   ]
+  },
+  {
+   "id": "eleccion_opcion_objetivo",
+   "nombre": "Elección de la opción objetivo (la que domina al señuelo)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-728"
+   ]
+  },
+  {
+   "id": "elliot_2007_est",
+   "nombre": "Estudio Elliot et al. 2007 (efecto del rojo en el logro)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-679"
    ]
   },
   {
@@ -2644,12 +3485,22 @@
    ]
   },
   {
+   "id": "encogimiento_efecto_replica",
+   "nombre": "Los efectos replicados son mucho menores que los originales (~la mitad)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-712"
+   ]
+  },
+  {
    "id": "encuadre_decision",
    "nombre": "Encuadre de la decisión (ganancia vs. pérdida)",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-222"
+    "F-222",
+    "F-713"
    ]
   },
   {
@@ -2677,6 +3528,15 @@
    "grado": 1,
    "fuentes": [
     "F-43"
+   ]
+  },
+  {
+   "id": "ensayo_contraactitudinal",
+   "nombre": "Escribir argumentos contrarios a la propia opinión",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-663"
    ]
   },
   {
@@ -2735,6 +3595,15 @@
    ]
   },
   {
+   "id": "escepticismo_participante",
+   "nombre": "Escepticismo del participante sobre la realidad del daño",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-656"
+   ]
+  },
+  {
    "id": "escrutinio_revision",
    "nombre": "Escrutinio activo en la revisión (comentarios en línea)",
    "tipo": "resultado",
@@ -2750,6 +3619,24 @@
    "grado": 2,
    "fuentes": [
     "F-90"
+   ]
+  },
+  {
+   "id": "estimacion_cuantitativa",
+   "nombre": "Estimación numérica de una cantidad desconocida",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-713"
+   ]
+  },
+  {
+   "id": "estimulo_oddball",
+   "nombre": "Estímulo inesperado o distinto dentro de una serie repetida (oddball)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-671"
    ]
   },
   {
@@ -2789,12 +3676,33 @@
    ]
   },
   {
+   "id": "evaluacion_espera",
+   "nombre": "Evaluación o satisfacción del cliente con la espera",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-672",
+    "F-673"
+   ]
+  },
+  {
    "id": "evaluacion_resultados_codiseno",
    "nombre": "Evaluación de resultados del codiseño",
    "tipo": "metrica",
    "grado": 1,
    "fuentes": [
     "F-252"
+   ]
+  },
+  {
+   "id": "evaluacion_retrospectiva",
+   "nombre": "Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto)",
+   "tipo": "resultado",
+   "grado": 5,
+   "fuentes": [
+    "F-715",
+    "F-716",
+    "F-718"
    ]
   },
   {
@@ -2890,12 +3798,32 @@
    ]
   },
   {
+   "id": "expectativa_experimentador",
+   "nombre": "Expectativas del experimentador (influyen sin querer en la conducta medida)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-706"
+   ]
+  },
+  {
    "id": "experiencia_cliente_seguros",
    "nombre": "Experiencia del cliente (CX) en aseguradoras",
    "tipo": "constructo",
    "grado": 1,
    "fuentes": [
     "F-359"
+   ]
+  },
+  {
+   "id": "experiencia_emocional",
+   "nombre": "Experiencia emocional autorreportada (felicidad, humor percibido)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-699",
+    "F-701",
+    "F-702"
    ]
   },
   {
@@ -2916,6 +3844,15 @@
     "F-580",
     "F-582",
     "F-584"
+   ]
+  },
+  {
+   "id": "experimento_prision_stanford",
+   "nombre": "Experimento de la prisión de Stanford (Zimbardo, 1971)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-657"
    ]
   },
   {
@@ -2948,12 +3885,31 @@
    ]
   },
   {
+   "id": "exposicion_color_rojo",
+   "nombre": "Exposición breve al color rojo antes de una tarea",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-679"
+   ]
+  },
+  {
    "id": "exposicion_ia_generativa_ocupacional",
    "nombre": "Exposición ocupacional a la IA generativa (índice OIT)",
    "tipo": "constructo",
    "grado": 2,
    "fuentes": [
     "F-515"
+   ]
+  },
+  {
+   "id": "exposicion_repetida",
+   "nombre": "Exposición repetida a un estímulo",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-719",
+    "F-720"
    ]
   },
   {
@@ -3029,6 +3985,16 @@
    ]
   },
   {
+   "id": "feedback_facial_manipulado",
+   "nombre": "Manipulación de la expresión facial (lápiz en la boca, imitar fotos, mover músculos por instrucción)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-699",
+    "F-702"
+   ]
+  },
+  {
    "id": "fidelidad_algoritmica",
    "nombre": "Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos)",
    "tipo": "concepto",
@@ -3045,6 +4011,16 @@
    "grado": 1,
    "fuentes": [
     "F-151"
+   ]
+  },
+  {
+   "id": "final_menos_aversivo",
+   "nombre": "Agregar un tramo final menos desagradable a una experiencia",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-715",
+    "F-717"
    ]
   },
   {
@@ -3184,6 +4160,33 @@
    ]
   },
   {
+   "id": "fuerza_evidencia_original",
+   "nombre": "Fuerza de la evidencia del estudio original (p. ej., valor p, tamaño de efecto)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-712"
+   ]
+  },
+  {
+   "id": "funcion_potencia_psicofisica",
+   "nombre": "Función psicofísica de potencia (Stevens) entre magnitud real y percibida",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-673"
+   ]
+  },
+  {
+   "id": "fundamentacion_por_interaccion",
+   "nombre": "Fundamentación por interacción: conceptos abstractos que se enriquecen con información sensoriomotora",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-691"
+   ]
+  },
+  {
    "id": "g_eval",
    "nombre": "G-Eval (un LLM puntúa cada texto con razonamiento paso a paso)",
    "tipo": "metrica",
@@ -3283,6 +4286,15 @@
    "grado": 1,
    "fuentes": [
     "F-11"
+   ]
+  },
+  {
+   "id": "gnambs_2020_est",
+   "nombre": "Meta-análisis Gnambs 2020 (efecto del rojo en desempeño)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-680"
    ]
   },
   {
@@ -3476,6 +4488,16 @@
    ]
   },
   {
+   "id": "ilusion_control",
+   "nombre": "Ilusión de control: expectativa de éxito mayor que la probabilidad objetiva",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-737",
+    "F-738"
+   ]
+  },
+  {
    "id": "impacto_pyg_genai",
    "nombre": "Impacto medible en el estado de resultados de la IA generativa",
    "tipo": "resultado",
@@ -3491,6 +4513,15 @@
    "grado": 1,
    "fuentes": [
     "F-646"
+   ]
+  },
+  {
+   "id": "incentivo_precision",
+   "nombre": "Incentivo monetario por responder correctamente",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-649"
    ]
   },
   {
@@ -3549,6 +4580,15 @@
    ]
   },
   {
+   "id": "inferencia_bayesiana_tiempo",
+   "nombre": "Estimación bayesiana del tiempo (combina la medición sensorial con lo que se espera por experiencia previa)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-666"
+   ]
+  },
+  {
    "id": "influencia_social",
    "nombre": "Influencia social (cumplimiento y conformidad)",
    "tipo": "concepto",
@@ -3574,6 +4614,24 @@
    "grado": 1,
    "fuentes": [
     "F-17"
+   ]
+  },
+  {
+   "id": "informacion_enganosa_posterior",
+   "nombre": "Información engañosa recibida después del evento",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-733"
+   ]
+  },
+  {
+   "id": "informacion_tiempo_espera",
+   "nombre": "Informar al cliente el tiempo esperado de espera",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-673"
    ]
   },
   {
@@ -3642,6 +4700,15 @@
    ]
   },
   {
+   "id": "integracion_multisensorial",
+   "nombre": "Integración multisensorial (unir señales de distintos sentidos en un solo objeto)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-677"
+   ]
+  },
+  {
    "id": "integracion_producto_proceso",
    "nombre": "Integrar innovación de producto y de proceso (frente a solo producto)",
    "tipo": "intervencion",
@@ -3675,6 +4742,16 @@
    "grado": 1,
    "fuentes": [
     "F-250"
+   ]
+  },
+  {
+   "id": "intensidad_pico_final",
+   "nombre": "Intensidad en el peor momento (pico) y en el final de una experiencia",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-716",
+    "F-718"
    ]
   },
   {
@@ -3734,12 +4811,22 @@
    ]
   },
   {
-   "id": "intervencion_emergencia",
-   "nombre": "Ayuda en una emergencia (rapidez de aviso)",
+   "id": "intervencion_algun_testigo",
+   "nombre": "Probabilidad de que al menos un testigo intervenga (nivel grupo)",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
-    "F-226"
+    "F-660"
+   ]
+  },
+  {
+   "id": "intervencion_emergencia",
+   "nombre": "Ayuda en una emergencia (rapidez de aviso)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-226",
+    "F-659"
    ]
   },
   {
@@ -3749,6 +4836,15 @@
    "grado": 1,
    "fuentes": [
     "F-254"
+   ]
+  },
+  {
+   "id": "invarianza_medicion",
+   "nombre": "Violación de la invarianza de medición (se comparan estimaciones hechas sobre loterías distintas)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-726"
    ]
   },
   {
@@ -3773,9 +4869,10 @@
    "id": "inversion_preferencias",
    "nombre": "Inversión de preferencias ante problemas equivalentes",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-222"
+    "F-222",
+    "F-713"
    ]
   },
   {
@@ -3833,12 +4930,58 @@
    ]
   },
   {
+   "id": "jonauskaite_2020_est",
+   "nombre": "Estudio Jonauskaite et al. 2020 (color-emoción en 30 países)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-678"
+   ]
+  },
+  {
    "id": "juegos_simulacion_entrenamiento",
    "nombre": "Juegos de simulación por computador para entrenamiento",
    "tipo": "intervencion",
    "grado": 3,
    "fuentes": [
     "F-219"
+   ]
+  },
+  {
+   "id": "juicio_duracion_prospectivo",
+   "nombre": "Duración juzgada cuando la persona sabe de antemano que deberá estimarla (vivencia del tiempo mientras pasa)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-668"
+   ]
+  },
+  {
+   "id": "juicio_duracion_retrospectivo",
+   "nombre": "Duración juzgada por sorpresa, después (reconstruida desde la memoria)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-668",
+    "F-670"
+   ]
+  },
+  {
+   "id": "juicio_grupal_ambiguo",
+   "nombre": "Emitir juicios en grupo ante un estímulo ambiguo",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-661"
+   ]
+  },
+  {
+   "id": "juicio_importancia",
+   "nombre": "Juicio de importancia o valor",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-703"
    ]
   },
   {
@@ -3857,6 +5000,24 @@
    "grado": 1,
    "fuentes": [
     "F-225"
+   ]
+  },
+  {
+   "id": "justicia_cola",
+   "nombre": "Justicia percibida en la cola (respeto del orden de llegada)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-672"
+   ]
+  },
+  {
+   "id": "justificacion_externa_baja",
+   "nombre": "Baja justificación externa (paga pequeña) por actuar contra la propia opinión",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-662"
    ]
   },
   {
@@ -3906,6 +5067,15 @@
    ]
   },
   {
+   "id": "legitimidad_autoridad",
+   "nombre": "Directividad, legitimidad y consistencia de la autoridad",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-653"
+   ]
+  },
+  {
    "id": "lemonade_inc",
    "nombre": "Lemonade Inc. (insurtech cotizada)",
    "tipo": "organizacion",
@@ -3939,6 +5109,34 @@
    "grado": 1,
    "fuentes": [
     "F-69"
+   ]
+  },
+  {
+   "id": "ley_vierordt",
+   "nombre": "Ley de Vierordt / efecto de tendencia central en la estimación de duraciones",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-666",
+    "F-667"
+   ]
+  },
+  {
+   "id": "ley_weber_fechner",
+   "nombre": "Ley de Weber-Fechner (la diferencia mínima perceptible es proporcional a la magnitud; la sensación crece como el logaritmo)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-684"
+   ]
+  },
+  {
+   "id": "liderazgo_identidad",
+   "nombre": "Liderazgo de identidad (el líder moviliza al grupo en nombre de una causa compartida)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-658"
    ]
   },
   {
@@ -3976,6 +5174,16 @@
    "grado": 2,
    "fuentes": [
     "F-159"
+   ]
+  },
+  {
+   "id": "logro_academico_adolescente",
+   "nombre": "Logro académico y competencias en la adolescencia",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-739",
+    "F-740"
    ]
   },
   {
@@ -4034,6 +5242,15 @@
    "grado": 1,
    "fuentes": [
     "F-471"
+   ]
+  },
+  {
+   "id": "macleod_1991_est",
+   "nombre": "Revisión MacLeod 1991 (50 años de efecto Stroop)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-687"
    ]
   },
   {
@@ -4187,6 +5404,16 @@
    ]
   },
   {
+   "id": "mensaje_norma_descriptiva",
+   "nombre": "Mensaje de norma descriptiva ('la mayoría de personas como tú hace X')",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-664",
+    "F-665"
+   ]
+  },
+  {
    "id": "menus_adaptables",
    "nombre": "Menús adaptables (control del usuario)",
    "tipo": "intervencion",
@@ -4287,6 +5514,15 @@
    ]
   },
   {
+   "id": "miedo_agudo",
+   "nombre": "Miedo agudo ante un evento amenazante",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-670"
+   ]
+  },
+  {
    "id": "mind_gym",
    "nombre": "Mind Gym plc (consultora de cambio conductual organizacional)",
    "tipo": "organizacion",
@@ -4325,12 +5561,39 @@
    ]
   },
   {
+   "id": "modalidad_estimulo",
+   "nombre": "Modalidad y duración de presentación del estímulo (visual vs. auditivo; segundos de exposición)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-720"
+   ]
+  },
+  {
+   "id": "modelo_compuerta_atencional",
+   "nombre": "Modelo de compuerta atencional del tiempo (Zakay y Block): más atención al tiempo = más 'pulsos' contados = duración más larga",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-668"
+   ]
+  },
+  {
    "id": "modelo_datos_tarea",
    "nombre": "UI generada desde un modelo de datos de la tarea (no desde código)",
    "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
     "F-248"
+   ]
+  },
+  {
+   "id": "modelo_desobediente",
+   "nombre": "Ver a un par que se niega a seguir las órdenes",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-651"
    ]
   },
   {
@@ -4484,6 +5747,17 @@
    ]
   },
   {
+   "id": "negligencia_duracion",
+   "nombre": "Negligencia de la duración: la duración casi no pesa en el recuerdo",
+   "tipo": "limitacion",
+   "grado": 3,
+   "fuentes": [
+    "F-715",
+    "F-716",
+    "F-718"
+   ]
+  },
+  {
    "id": "nhs_111",
    "nombre": "Servicio telefónico de asesoría y triaje NHS 111",
    "tipo": "intervencion",
@@ -4526,6 +5800,24 @@
    "grado": 1,
    "fuentes": [
     "F-144"
+   ]
+  },
+  {
+   "id": "norma_grupal_emergente",
+   "nombre": "Convergencia de juicios en una norma de grupo",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-661"
+   ]
+  },
+  {
+   "id": "norma_provincial",
+   "nombre": "Norma provincial (referirse a quienes estuvieron en la misma situación inmediata)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-664"
    ]
   },
   {
@@ -4575,6 +5867,30 @@
    ]
   },
   {
+   "id": "obediencia_destructiva",
+   "nombre": "Obediencia a órdenes dañinas (llegar a la descarga máxima)",
+   "tipo": "resultado",
+   "grado": 9,
+   "fuentes": [
+    "F-650",
+    "F-651",
+    "F-652",
+    "F-653",
+    "F-654",
+    "F-655",
+    "F-656"
+   ]
+  },
+  {
+   "id": "observacion_por_camara",
+   "nombre": "Ser grabado en video durante el experimento (moderador propuesto por Strack)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-700"
+   ]
+  },
+  {
    "id": "ocupaciones_administrativas",
    "nombre": "Ocupaciones administrativas (clerical support workers)",
    "tipo": "poblacion",
@@ -4593,6 +5909,15 @@
    ]
   },
   {
+   "id": "opcion_senuelo",
+   "nombre": "Opción señuelo dominada asimétricamente agregada al menú",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-728"
+   ]
+  },
+  {
    "id": "opinionqa",
    "nombre": "OpinionQA (benchmark de alineación de opiniones con 60 grupos de EE.UU.)",
    "tipo": "metrica",
@@ -4608,6 +5933,17 @@
    "grado": 1,
    "fuentes": [
     "F-200"
+   ]
+  },
+  {
+   "id": "orden_autoridad",
+   "nombre": "Órdenes de una figura de autoridad (experimentador) de continuar",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-650",
+    "F-651",
+    "F-652"
    ]
   },
   {
@@ -4635,6 +5971,15 @@
    "grado": 1,
    "fuentes": [
     "F-41"
+   ]
+  },
+  {
+   "id": "paradoja_fiabilidad",
+   "nombre": "Paradoja de la fiabilidad (efectos robustos a nivel grupo, poco confiables para medir a cada persona)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-688"
    ]
   },
   {
@@ -4671,6 +6016,24 @@
    "grado": 1,
    "fuentes": [
     "F-124"
+   ]
+  },
+  {
+   "id": "pedido_explicito_parar",
+   "nombre": "Primer pedido explícito de la persona afectada de detenerse",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-654"
+   ]
+  },
+  {
+   "id": "peligro_percibido_emergencia",
+   "nombre": "Peligro percibido de la emergencia",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-659"
    ]
   },
   {
@@ -4744,9 +6107,19 @@
    "id": "persistencia_efecto",
    "nombre": "Persistencia del efecto tras terminar la intervención",
    "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-20",
+    "F-661"
+   ]
+  },
+  {
+   "id": "persistencia_tarea",
+   "nombre": "Persistencia en una tarea posterior",
+   "tipo": "resultado",
    "grado": 1,
    "fuentes": [
-    "F-20"
+    "F-707"
    ]
   },
   {
@@ -4797,6 +6170,24 @@
    "grado": 2,
    "fuentes": [
     "F-519"
+   ]
+  },
+  {
+   "id": "pertenencia_grupo_social",
+   "nombre": "Pertenencia al mismo grupo social que el interlocutor",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-683"
+   ]
+  },
+  {
+   "id": "peso_fisico",
+   "nombre": "Sostener un objeto pesado (p. ej., un portapapeles)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-703"
    ]
   },
   {
@@ -4856,6 +6247,15 @@
    ]
   },
   {
+   "id": "poder_explicativo_limitado_encarnada",
+   "nombre": "La cognición encarnada no aporta explicaciones nuevas a los problemas clásicos de la psicología experimental",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-692"
+   ]
+  },
+  {
    "id": "pool_grande_no_baja_prima",
    "nombre": "Un pool grande no implica primas más bajas: depende del costo promedio de los inscritos",
    "tipo": "limitacion",
@@ -4865,12 +6265,31 @@
    ]
   },
   {
+   "id": "poses_de_poder",
+   "nombre": "Poses de poder (posturas expansivas breves)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-695",
+    "F-696"
+   ]
+  },
+  {
    "id": "practica_espaciada",
    "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
    "tipo": "intervencion",
    "grado": 2,
    "fuentes": [
     "F-218"
+   ]
+  },
+  {
+   "id": "practicas_investigacion_cuestionables",
+   "nombre": "Prácticas de investigación cuestionables (mirar datos por tandas hasta ver el patrón, elegir pruebas y medidas a posteriori)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-697"
    ]
   },
   {
@@ -4978,6 +6397,33 @@
    ]
   },
   {
+   "id": "preferencia_repetir_episodio",
+   "nombre": "Preferencia por repetir un episodio frente a otro",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-715"
+   ]
+  },
+  {
+   "id": "preferencia_temporal",
+   "nombre": "Preferencia temporal pura (cuánto se valora lo inmediato frente a lo futuro)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-735"
+   ]
+  },
+  {
+   "id": "pregunta_sugestiva",
+   "nombre": "Pregunta con redacción sugestiva después de un evento",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-732"
+   ]
+  },
+  {
    "id": "preocupacion_privacidad_situacional",
    "nombre": "Preocupación por la privacidad activada por la situación",
    "tipo": "constructo",
@@ -4991,9 +6437,11 @@
    "id": "presencia_otros_testigos",
    "nombre": "Presencia percibida de otros testigos",
    "tipo": "intervencion",
-   "grado": 2,
+   "grado": 4,
    "fuentes": [
-    "F-226"
+    "F-226",
+    "F-659",
+    "F-660"
    ]
   },
   {
@@ -5012,6 +6460,16 @@
    "grado": 1,
    "fuentes": [
     "F-105"
+   ]
+  },
+  {
+   "id": "presion_mayoria_unanime",
+   "nombre": "Presión de una mayoría unánime que responde de forma equivocada",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-647",
+    "F-649"
    ]
   },
   {
@@ -5048,6 +6506,34 @@
    "grado": 1,
    "fuentes": [
     "F-2"
+   ]
+  },
+  {
+   "id": "priming_conductual",
+   "nombre": "Priming conductual: activar un concepto sin que la persona lo note cambia su conducta",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-705",
+    "F-713"
+   ]
+  },
+  {
+   "id": "priming_estereotipo_vejez",
+   "nombre": "Activar palabras del estereotipo de vejez (p. ej., 'Florida', 'bingo')",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-705"
+   ]
+  },
+  {
+   "id": "principios_gestalt",
+   "nombre": "Principios Gestalt de organización perceptual (proximidad, semejanza, continuidad, cierre, figura-fondo)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-681"
    ]
   },
   {
@@ -5114,6 +6600,33 @@
    "grado": 1,
    "fuentes": [
     "F-161"
+   ]
+  },
+  {
+   "id": "propiedad_psicologica",
+   "nombre": "Sentido de propiedad psicológica sobre un objeto",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-731"
+   ]
+  },
+  {
+   "id": "protocolo_orden_aleatorio",
+   "nombre": "Protocolo experimental de orden aleatorio (estímulos sin continuidad, poco natural)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-667"
+   ]
+  },
+  {
+   "id": "proximidad_linguistica_geografica",
+   "nombre": "Proximidad lingüística y geográfica entre países",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-678"
    ]
   },
   {
@@ -5188,6 +6701,15 @@
    "grado": 2,
    "fuentes": [
     "F-151"
+   ]
+  },
+  {
+   "id": "rango_ganancias_perdidas",
+   "nombre": "Rango de ganancias y pérdidas que la persona ve al elicitar sus preferencias",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-725"
    ]
   },
   {
@@ -5288,6 +6810,15 @@
    "grado": 2,
    "fuentes": [
     "F-283"
+   ]
+  },
+  {
+   "id": "recuerdo_desagrado",
+   "nombre": "Desagrado recordado de un procedimiento",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-717"
    ]
   },
   {
@@ -5412,6 +6943,16 @@
    ]
   },
   {
+   "id": "replicacion_multilaboratorio",
+   "nombre": "Replicación multilaboratorio preregistrada (Many Labs, RRR)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-713",
+    "F-714"
+   ]
+  },
+  {
    "id": "reporte_challenger",
    "nombre": "Reporte Challenger de recortes de empleo anunciados",
    "tipo": "metrica",
@@ -5427,6 +6968,24 @@
    "grado": 1,
    "fuentes": [
     "F-646"
+   ]
+  },
+  {
+   "id": "representacion_logaritmica_numero",
+   "nombre": "Representación logarítmica de la cantidad en el cerebro",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-684"
+   ]
+  },
+  {
+   "id": "resolucion_temporal_percibida",
+   "nombre": "Resolución temporal de la percepción (capacidad de distinguir eventos rápidos)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-670"
    ]
   },
   {
@@ -5464,6 +7023,25 @@
    "fuentes": [
     "F-218",
     "F-219"
+   ]
+  },
+  {
+   "id": "retorno_procedimiento",
+   "nombre": "Retorno para repetir el procedimiento (adherencia)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-717"
+   ]
+  },
+  {
+   "id": "reutilizacion_toallas",
+   "nombre": "Reutilización de toallas por huéspedes de hotel",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-664",
+    "F-665"
    ]
   },
   {
@@ -5692,6 +7270,15 @@
    ]
   },
   {
+   "id": "seguidismo_comprometido",
+   "nombre": "Seguidismo comprometido (engaged followership): identificarse con la meta colectiva de la autoridad",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-655"
+   ]
+  },
+  {
    "id": "seguridad_triage_paciente",
    "nombre": "Seguridad del paciente en el triage automatizado",
    "tipo": "resultado",
@@ -5728,6 +7315,27 @@
     "F-103",
     "F-91",
     "F-92"
+   ]
+  },
+  {
+   "id": "senales_habilidad_azar",
+   "nombre": "Señales de habilidad en tareas de azar (elección, involucramiento, competencia, familiaridad)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-737",
+    "F-738"
+   ]
+  },
+  {
+   "id": "sensacion_subjetiva_poder",
+   "nombre": "Sensación subjetiva de poder (autorreporte)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-695",
+    "F-696",
+    "F-698"
    ]
   },
   {
@@ -5790,11 +7398,15 @@
    "id": "sesgo_publicacion",
    "nombre": "Sesgo de publicación",
    "tipo": "limitacion",
-   "grado": 3,
+   "grado": 7,
    "fuentes": [
     "F-16",
     "F-17",
-    "F-21"
+    "F-21",
+    "F-680",
+    "F-701",
+    "F-712",
+    "F-736"
    ]
   },
   {
@@ -5841,6 +7453,51 @@
    "fuentes": [
     "F-56",
     "F-57"
+   ]
+  },
+  {
+   "id": "simbolismo_sonoro",
+   "nombre": "Simbolismo sonoro (la relación sonido-significado no es del todo arbitraria)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-675"
+   ]
+  },
+  {
+   "id": "simons_chabris_1999_est",
+   "nombre": "Estudio Simons y Chabris 1999 (gorila invisible)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-682"
+   ]
+  },
+  {
+   "id": "simons_levin_1998_est",
+   "nombre": "Estudio Simons y Levin 1998 (cambio de persona tras la puerta)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-683"
+   ]
+  },
+  {
+   "id": "simulacion_modal",
+   "nombre": "Simulación modal: re-activar estados perceptivos, motores e introspectivos para pensar",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-689"
+   ]
+  },
+  {
+   "id": "sistema_escritura",
+   "nombre": "Sistema de escritura (forma de las letras)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-676"
    ]
   },
   {
@@ -5921,6 +7578,15 @@
    ]
   },
   {
+   "id": "stetson_2007_est",
+   "nombre": "Estudio Stetson, Fiesta y Eagleman 2007 (caída libre de 31 m)",
+   "tipo": "estudio",
+   "grado": 2,
+   "fuentes": [
+    "F-670"
+   ]
+  },
+  {
    "id": "subsidio_parcial_aseguradora",
    "nombre": "Subsidio parcial de la aseguradora al bloque",
    "tipo": "intervencion",
@@ -5973,6 +7639,15 @@
    "fuentes": [
     "F-241",
     "F-251"
+   ]
+  },
+  {
+   "id": "susceptibilidad_mcgurk",
+   "nombre": "Propensión individual estable a integrar voz y labios (susceptibilidad al McGurk)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-685"
    ]
   },
   {
@@ -6030,12 +7705,30 @@
    ]
   },
   {
+   "id": "tarea_autocontrol_previa",
+   "nombre": "Tarea previa que exige autocontrol (resistir tentaciones, suprimir emociones)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-707"
+   ]
+  },
+  {
    "id": "tarea_dificil",
    "nombre": "Tareas de decisión difíciles",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-246"
+   ]
+  },
+  {
+   "id": "tarea_incompleta",
+   "nombre": "La tarea no se completa o lo construido se destruye",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-730"
    ]
   },
   {
@@ -6063,6 +7756,26 @@
    "grado": 1,
    "fuentes": [
     "F-91"
+   ]
+  },
+  {
+   "id": "tasa_descuento_implicita",
+   "nombre": "Tasa de descuento implícita en elecciones entre hoy y el futuro",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-735"
+   ]
+  },
+  {
+   "id": "tasa_replicacion_psicologia",
+   "nombre": "Tasa de replicación de hallazgos de psicología",
+   "tipo": "metrica",
+   "grado": 5,
+   "fuentes": [
+    "F-712",
+    "F-713",
+    "F-714"
    ]
   },
   {
@@ -6147,6 +7860,25 @@
    "grado": 1,
    "fuentes": [
     "F-259"
+   ]
+  },
+  {
+   "id": "tiempo_espera_percibido",
+   "nombre": "Tiempo de espera percibido por el cliente (frente al real)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-673",
+    "F-674"
+   ]
+  },
+  {
+   "id": "tipo_recompensa",
+   "nombre": "Tipo de recompensa del experimento (dinero vs. bienes no monetarios)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-736"
    ]
   },
   {
@@ -6371,6 +8103,25 @@
    ]
   },
   {
+   "id": "valoracion_producto_propio",
+   "nombre": "Valoración y disposición a pagar por un producto hecho por uno mismo",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-730",
+    "F-731"
+   ]
+  },
+  {
+   "id": "variabilidad_estimulo",
+   "nombre": "Variabilidad entre estímulos experimentales (la elección del estímulo cambia el resultado)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-686"
+   ]
+  },
+  {
    "id": "variabilidad_primas",
    "nombre": "Variabilidad / impredecibilidad de las primas",
    "tipo": "resultado",
@@ -6386,6 +8137,15 @@
    "grado": 2,
    "fuentes": [
     "F-552"
+   ]
+  },
+  {
+   "id": "velocidad_al_caminar",
+   "nombre": "Velocidad al caminar",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-705"
    ]
   },
   {
@@ -13128,11 +14888,1871 @@
    "fuerza": "observacional",
    "fecha": "2026-10-04",
    "clase": "evidencia"
+  },
+  {
+   "id": "T-552",
+   "s": "presion_mayoria_unanime",
+   "p": "aumenta",
+   "o": "conformidad_mayoria",
+   "f": "F-647",
+   "apoyo": "Asch 1956: ante una mayoría unánime de cómplices que elige una línea claramente incorrecta, los participantes se conformaron en ~1/3 de los ensayos críticos.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-553",
+   "s": "colectivismo_cultural",
+   "p": "asocia_con",
+   "o": "conformidad_mayoria",
+   "f": "F-648",
+   "apoyo": "Bond & Smith 1996: en 133 estudios de 17 países, el colectivismo cultural se relaciona significativamente con mayor conformidad en la tarea de Asch.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-554",
+   "s": "c_conformidad_varia_cultura_tiempo",
+   "p": "contradice",
+   "o": "c_conformidad_universal_estable",
+   "f": "F-648",
+   "apoyo": "Bond & Smith 1996: la conformidad varía por cultura y en estudios de EE.UU. declinó desde los años 50; no es una constante universal.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-555",
+   "s": "presion_mayoria_unanime",
+   "p": "aumenta",
+   "o": "conformidad_mayoria",
+   "f": "F-649",
+   "apoyo": "Franzen & Mader 2023 (N=210): 33% de errores conformes en la tarea estándar de Asch, replicando el original; 38% en opiniones políticas.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-556",
+   "s": "incentivo_precision",
+   "p": "reduce",
+   "o": "conformidad_mayoria",
+   "f": "F-649",
+   "apoyo": "Franzen & Mader 2023: en un ensayo aleatorizado, pagar por acertar bajó el error conforme de 33% a 25%, aunque la influencia social siguió presente.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-557",
+   "s": "orden_autoridad",
+   "p": "aumenta",
+   "o": "obediencia_destructiva",
+   "f": "F-650",
+   "apoyo": "Milgram 1963: 26 de 40 participantes (65%) llegaron a 450 V bajo las órdenes del experimentador.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-558",
+   "s": "orden_autoridad",
+   "p": "aumenta",
+   "o": "obediencia_destructiva",
+   "f": "F-651",
+   "apoyo": "Burger 2009 (N=70, hasta 150 V): las tasas de obediencia fueron solo algo menores que las de Milgram 45 años antes.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-559",
+   "s": "modelo_desobediente",
+   "p": "tiene_limite",
+   "o": "obediencia_destructiva",
+   "f": "F-651",
+   "apoyo": "Burger 2009: contra lo esperado, quienes vieron a un cómplice negarse obedecieron tanto como quienes no lo vieron.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-560",
+   "s": "orden_autoridad",
+   "p": "aumenta",
+   "o": "obediencia_destructiva",
+   "f": "F-652",
+   "apoyo": "Doliński et al. 2017 (Polonia): ~90% de participantes dispuesto a llegar al nivel más alto de la versión acotada del generador.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-561",
+   "s": "legitimidad_autoridad",
+   "p": "modera",
+   "o": "obediencia_destructiva",
+   "f": "F-653",
+   "apoyo": "Haslam, Loughnan & Perry 2014 (21 condiciones, N=740; obediencia media 43,6%): directividad, legitimidad y consistencia del experimentador predicen continuar hasta 450 V.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-562",
+   "s": "cercania_victima",
+   "p": "modera",
+   "o": "obediencia_destructiva",
+   "f": "F-653",
+   "apoyo": "Haslam, Loughnan & Perry 2014: la proximidad e intimidad entre maestro y aprendiz figuran entre los 8 factores que cambian la probabilidad de llegar a 450 V.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-563",
+   "s": "pedido_explicito_parar",
+   "p": "reduce",
+   "o": "obediencia_destructiva",
+   "f": "F-654",
+   "apoyo": "Packer 2008 (8 experimentos): la desobediencia se concentra en 150 V, el primer pedido de liberación (36,8% de desobedientes vs 3,5% al azar), no en el dolor creciente.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-564",
+   "s": "seguidismo_comprometido",
+   "p": "asocia_con",
+   "o": "obediencia_destructiva",
+   "f": "F-655",
+   "apoyo": "Haslam et al. 2015 (archivo de Yale): los participantes estaban contentos de haber servido a la ciencia; la disposición a dañar dependía de identificarse con esa meta colectiva.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-565",
+   "s": "c_obediencia_por_identificacion",
+   "p": "contradice",
+   "o": "c_obediencia_ciega",
+   "f": "F-655",
+   "apoyo": "Haslam et al. 2015: las respuestas de archivo muestran participantes comprometidos con una causa, no autómatas; proponen seguidismo comprometido en vez de obediencia pasiva.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-566",
+   "s": "escepticismo_participante",
+   "p": "aumenta",
+   "o": "obediencia_destructiva",
+   "f": "F-656",
+   "apoyo": "Perry et al. 2020: en 18 de 23 variantes de Milgram, quienes creían plenamente causar dolor eligieron descargas menores; el escepticismo infló la obediencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-567",
+   "s": "escepticismo_participante",
+   "p": "tiene_limite",
+   "o": "c_obediencia_ciega",
+   "f": "F-656",
+   "apoyo": "Perry et al. 2020: parte de la obediencia de Milgram se explica por participantes que no creían que el daño fuera real, lo que limita la lectura de obediencia a órdenes dañinas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-568",
+   "s": "experimento_prision_stanford",
+   "p": "tiene_limite",
+   "o": "caracteristicas_demanda",
+   "f": "F-657",
+   "apoyo": "Le Texier 2019 (archivo + 15 entrevistas): los guardias recibieron instrucciones precisas sobre cómo tratar a los presos y no sabían que eran sujetos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-569",
+   "s": "c_spe_guardias_instruidos",
+   "p": "contradice",
+   "o": "c_rol_basta_crueldad",
+   "f": "F-657",
+   "apoyo": "Le Texier 2019: datos sesgados e incompletos, guardias instruidos y participantes poco inmersos; el SPE no respalda que el rol por sí solo genere crueldad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-570",
+   "s": "liderazgo_identidad",
+   "p": "aumenta",
+   "o": "crueldad_guardias",
+   "f": "F-658",
+   "apoyo": "Haslam, Reicher & Van Bavel 2019 (archivo del SPE): el experimentador alentó a los guardias a 'ser duros' por una causa compartida; la crueldad no surgió solo del rol.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-571",
+   "s": "c_crueldad_por_liderazgo",
+   "p": "contradice",
+   "o": "c_rol_basta_crueldad",
+   "f": "F-658",
+   "apoyo": "Haslam, Reicher & Van Bavel 2019: en vez de conformarse al rol por sí mismos, los guardias fueron dirigidos activamente por los experimentadores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-572",
+   "s": "presencia_otros_testigos",
+   "p": "reduce",
+   "o": "intervencion_emergencia",
+   "f": "F-659",
+   "apoyo": "Fischer et al. 2011 (meta-análisis, 105 efectos, >7.700 personas): la presencia de otros testigos reduce la ayuda individual, g=-0,35.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-573",
+   "s": "peligro_percibido_emergencia",
+   "p": "modera",
+   "o": "intervencion_emergencia",
+   "f": "F-659",
+   "apoyo": "Fischer et al. 2011: el efecto espectador se atenúa en emergencias percibidas como peligrosas, con perpetrador presente o costos físicos de intervenir.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-574",
+   "s": "presencia_otros_testigos",
+   "p": "aumenta",
+   "o": "intervencion_algun_testigo",
+   "f": "F-660",
+   "apoyo": "Philpot et al. 2020 (CCTV, 219 conflictos en 3 países): en 9 de cada 10 intervino al menos un testigo y más testigos se asociaron con mayor probabilidad de intervención.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-575",
+   "s": "juicio_grupal_ambiguo",
+   "p": "aumenta",
+   "o": "norma_grupal_emergente",
+   "f": "F-661",
+   "apoyo": "Sherif 1935: en grupos de tres que estimaban el movimiento aparente de una luz, los juicios convergieron a una norma común a lo largo de los ensayos.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-576",
+   "s": "norma_grupal_emergente",
+   "p": "asocia_con",
+   "o": "persistencia_efecto",
+   "f": "F-661",
+   "apoyo": "Sherif 1935: al estimar luego a solas, las respuestas siguieron influidas por la norma formada en grupo (internalización, no solo acatamiento público).",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-577",
+   "s": "justificacion_externa_baja",
+   "p": "aumenta",
+   "o": "cambio_actitud",
+   "f": "F-662",
+   "apoyo": "Festinger & Carlsmith 1959: con US$1 el agrado por la tarea aburrida fue +1,35 vs -0,05 con US$20 y -0,45 en control (escala -5 a +5).",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-578",
+   "s": "c_eleccion_no_cambia_actitud",
+   "p": "contradice",
+   "o": "c_eleccion_genera_disonancia",
+   "f": "F-663",
+   "apoyo": "Vaidis et al. 2024 (39 labs, N=4.898): no hubo diferencia de actitud entre escribir un ensayo contrario con alta vs baja elección, la predicción central de la disonancia.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-579",
+   "s": "ensayo_contraactitudinal",
+   "p": "aumenta",
+   "o": "cambio_actitud",
+   "f": "F-663",
+   "apoyo": "Vaidis et al. 2024: escribir un ensayo contrario a la propia opinión cambió la actitud frente a escribir un ensayo neutro, con o sin alta elección.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-580",
+   "s": "mensaje_norma_descriptiva",
+   "p": "aumenta",
+   "o": "reutilizacion_toallas",
+   "f": "F-664",
+   "apoyo": "Goldstein, Cialdini & Griskevicius 2008: la tarjeta 'la mayoría de huéspedes reutiliza' subió la participación de 35,1% a 44,1% frente al mensaje ambiental estándar.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-581",
+   "s": "norma_provincial",
+   "p": "aumenta",
+   "o": "reutilizacion_toallas",
+   "f": "F-664",
+   "apoyo": "Goldstein et al. 2008: la norma fue más eficaz cuando describía al grupo más parecido a la situación inmediata ('la mayoría de huéspedes de esta habitación').",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-582",
+   "s": "c_norma_descriptiva_no_supera",
+   "p": "contradice",
+   "o": "c_norma_descriptiva_supera_estandar",
+   "f": "F-665",
+   "apoyo": "Bohner & Schlüter 2014 (Alemania, N=724 y 204): la norma descriptiva no fue más eficaz que el mensaje ambiental estándar; efectos de cercanía inconsistentes.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-583",
+   "s": "mensaje_norma_descriptiva",
+   "p": "tiene_limite",
+   "o": "reutilizacion_toallas",
+   "f": "F-665",
+   "apoyo": "Bohner & Schlüter 2014: con reutilización ya alta, cualquier mensaje subió la tasa frente a no poner mensaje, pero sin ventaja específica de la norma descriptiva.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-584",
+   "s": "inferencia_bayesiana_tiempo",
+   "p": "origina_en",
+   "o": "ley_vierordt",
+   "f": "F-666",
+   "apoyo": "Jazayeri y Shadlen 2010: un observador bayesiano (mínimos cuadrados) reproduce la regresión hacia la media de los intervalos estimados, mejor que otros dos modelos probabilísticos.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-585",
+   "s": "ley_vierordt",
+   "p": "tiene_limite",
+   "o": "protocolo_orden_aleatorio",
+   "f": "F-667",
+   "apoyo": "Glasauer y Shi 2021: una secuencia de paseo aleatorio produce menos tendencia central que una aleatoria con las mismas duraciones; la ley depende del protocolo de laboratorio.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-586",
+   "s": "carga_cognitiva",
+   "p": "reduce",
+   "o": "juicio_duracion_prospectivo",
+   "f": "F-668",
+   "apoyo": "Block, Hancock y Zakay 2010 (meta-análisis, 117 experimentos): con más carga cognitiva la razón subjetiva/objetiva prospectiva disminuye.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-587",
+   "s": "carga_cognitiva",
+   "p": "aumenta",
+   "o": "juicio_duracion_retrospectivo",
+   "f": "F-668",
+   "apoyo": "Block et al. 2010: con más carga cognitiva la razón subjetiva/objetiva retrospectiva aumenta (modelos de memoria).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-588",
+   "s": "block_hancock_zakay_2010_est",
+   "p": "respalda",
+   "o": "modelo_compuerta_atencional",
+   "f": "F-668",
+   "apoyo": "Block et al. 2010: los hallazgos prospectivos respaldan modelos de recursos atencionales, en especial control ejecutivo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-589",
+   "s": "activacion_emocional",
+   "p": "aumenta",
+   "o": "duracion_percibida",
+   "f": "F-669",
+   "apoyo": "Droit-Volet y Meck 2007 (revisión): el arousal acelera el reloj interno y produce sobreestimación; rostros de ira > alegres > tristes.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-590",
+   "s": "miedo_agudo",
+   "p": "aumenta",
+   "o": "juicio_duracion_retrospectivo",
+   "f": "F-670",
+   "apoyo": "Stetson et al. 2007: tras 31 m de caída libre, la propia caída se estimó 36% más larga que la de otros.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-591",
+   "s": "stetson_2007_est",
+   "p": "refuta",
+   "o": "c_miedo_ralentiza_percepcion",
+   "f": "F-670",
+   "apoyo": "Stetson et al. 2007: durante 31 m de caída libre no hubo mayor resolución temporal visual; la 'cámara lenta' no ocurre en la percepción en vivo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-592",
+   "s": "codificacion_memoria_rica",
+   "p": "media",
+   "o": "juicio_duracion_retrospectivo",
+   "f": "F-670",
+   "apoyo": "Stetson et al. 2007 proponen que la codificación más rica en memoria hace que el evento parezca más largo en retrospectiva (explicación, no medida directa).",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-593",
+   "s": "estimulo_oddball",
+   "p": "aumenta",
+   "o": "duracion_percibida",
+   "f": "F-671",
+   "apoyo": "Tse et al. 2004: el oddball se percibe más largo que los estímulos estándar (~30-50% según citas posteriores).",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-594",
+   "s": "justicia_cola",
+   "p": "aumenta",
+   "o": "evaluacion_espera",
+   "f": "F-672",
+   "apoyo": "Larson 1987 (ensayo): violar el orden de llegada genera enojo; la justicia de la cola y la información sobre la demora moldean la actitud del cliente.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-595",
+   "s": "informacion_tiempo_espera",
+   "p": "reduce",
+   "o": "tiempo_espera_percibido",
+   "f": "F-673",
+   "apoyo": "Antonides et al. 2002 (campo, call center): informar el tiempo esperado redujo significativamente la sobreestimación de la espera.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-596",
+   "s": "informacion_tiempo_espera",
+   "p": "tiene_limite",
+   "o": "evaluacion_espera",
+   "f": "F-673",
+   "apoyo": "Antonides et al. 2002: la misma información aumentó el efecto negativo de la espera percibida sobre la evaluación.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-597",
+   "s": "funcion_potencia_psicofisica",
+   "p": "mide",
+   "o": "tiempo_espera_percibido",
+   "f": "F-673",
+   "apoyo": "Antonides et al. 2002: la percepción de la espera telefónica se describe mejor con una función psicofísica de potencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-598",
+   "s": "barra_progreso_animada",
+   "p": "reduce",
+   "o": "tiempo_espera_percibido",
+   "f": "F-674",
+   "apoyo": "Harrison et al. 2010 (CHI): barras con estrías hacia atrás o pulsos acelerados se perciben más rápidas que una barra sólida en esperas idénticas de 5 s (~10% según prensa).",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-599",
+   "s": "efecto_bouba_kiki",
+   "p": "respalda",
+   "o": "simbolismo_sonoro",
+   "f": "F-675",
+   "apoyo": "Ramachandran y Hubbard 2001: 95-98% de estudiantes de EE. UU. y hablantes de tamil asignan 'bouba' a la forma curva y 'kiki' a la puntiaguda.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-600",
+   "s": "efecto_bouba_kiki",
+   "p": "origina_en",
+   "o": "correspondencias_crossmodales",
+   "f": "F-676",
+   "apoyo": "Ćwiek et al. 2022: en 25 lenguas el efecto se explica por la correspondencia entre voz y forma visual, no por la ortografía.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-601",
+   "s": "sistema_escritura",
+   "p": "tiene_limite",
+   "o": "efecto_bouba_kiki",
+   "f": "F-676",
+   "apoyo": "Ćwiek et al. 2022: el efecto no es más fuerte en escrituras con letras redondas para 'bouba'; alfabeto romano solo marginalmente más propenso.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-602",
+   "s": "correspondencias_crossmodales",
+   "p": "aumenta",
+   "o": "integracion_multisensorial",
+   "f": "F-677",
+   "apoyo": "Spence 2011 (revisión): las correspondencias (tono agudo = pequeño, brillante, alto) restringen el problema de unión crossmodal junto a la congruencia semántica y espacio-temporal.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-603",
+   "s": "jonauskaite_2020_est",
+   "p": "respalda",
+   "o": "asociacion_color_emocion",
+   "f": "F-678",
+   "apoyo": "Jonauskaite et al. 2020: patrones color-emoción universales en 30 países (similitud promedio r = .88; n = 4.598).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-604",
+   "s": "proximidad_linguistica_geografica",
+   "p": "modera",
+   "o": "asociacion_color_emocion",
+   "f": "F-678",
+   "apoyo": "Jonauskaite et al. 2020: la similitud color-emoción es mayor entre países lingüística o geográficamente cercanos; el país predice más allá de lo universal.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-605",
+   "s": "exposicion_color_rojo",
+   "p": "reduce",
+   "o": "desempeno_cognitivo",
+   "f": "F-679",
+   "apoyo": "Elliot et al. 2007: ver rojo antes de una prueba de CI o anagramas empeoró el desempeño (d de −0,51 a −1,14, según Gnambs 2020).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-606",
+   "s": "elliot_2007_est",
+   "p": "respalda",
+   "o": "c_rojo_baja_desempeno",
+   "f": "F-679",
+   "apoyo": "Elliot et al. 2007: 4 experimentos muestran que percibir rojo brevemente antes de una prueba importante empeora el desempeño.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-607",
+   "s": "gnambs_2020_est",
+   "p": "refuta",
+   "o": "c_rojo_baja_desempeno",
+   "f": "F-680",
+   "apoyo": "Gnambs 2020 (meta-análisis, 67 efectos): anagramas d = −0,06, conocimiento d = −0,04; corrigiendo sesgo de publicación no queda evidencia del efecto del rojo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-608",
+   "s": "sesgo_publicacion",
+   "p": "aumenta",
+   "o": "c_rojo_baja_desempeno",
+   "f": "F-680",
+   "apoyo": "Gnambs 2020: los estudios iniciales muestran efectos mucho mayores que los posteriores (meta-análisis acumulativo); el efecto del rojo está inflado.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-609",
+   "s": "principios_gestalt",
+   "p": "aumenta",
+   "o": "agrupamiento_perceptual",
+   "f": "F-681",
+   "apoyo": "Wagemans et al. 2012 (revisión): los principios de agrupamiento y figura-fondo siguen siendo centrales, reformulados por la investigación contemporánea.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-610",
+   "s": "principios_gestalt",
+   "p": "tiene_limite",
+   "o": "agrupamiento_perceptual",
+   "f": "F-681",
+   "apoyo": "Wagemans et al. 2012: la teoría Gestalt original tenía problemas empíricos y conceptuales (explicaciones vagas) que hoy se abordan con métodos cuantitativos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-611",
+   "s": "carga_cognitiva",
+   "p": "aumenta",
+   "o": "ceguera_inatencional",
+   "f": "F-682",
+   "apoyo": "Simons y Chabris 1999: con la tarea de conteo difícil notó el evento 45% vs 64% con la fácil (cifras de resúmenes secundarios del paper).",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-612",
+   "s": "simons_chabris_1999_est",
+   "p": "respalda",
+   "o": "ceguera_inatencional",
+   "f": "F-682",
+   "apoyo": "Simons y Chabris 1999: cerca de la mitad de los observadores que contaban pases no vio al gorila que cruzaba la escena.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-613",
+   "s": "simons_levin_1998_est",
+   "p": "respalda",
+   "o": "ceguera_al_cambio",
+   "f": "F-683",
+   "apoyo": "Simons y Levin 1998: solo la mitad de los peatones notó que su interlocutor había sido reemplazado por otra persona.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-614",
+   "s": "pertenencia_grupo_social",
+   "p": "modera",
+   "o": "ceguera_al_cambio",
+   "f": "F-683",
+   "apoyo": "Simons y Levin 1998: los peatones del mismo grupo social que los experimentadores detectaron el cambio; los de otro grupo no.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-615",
+   "s": "representacion_logaritmica_numero",
+   "p": "respalda",
+   "o": "ley_weber_fechner",
+   "f": "F-684",
+   "apoyo": "Dehaene 2003: las neuronas de número (Nieder y Miller 2003) muestran un correlato neuronal de Weber y una línea numérica mental logarítmica.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-616",
+   "s": "susceptibilidad_mcgurk",
+   "p": "modera",
+   "o": "efecto_mcgurk",
+   "f": "F-685",
+   "apoyo": "Basu Mallick et al. 2015: la tasa de ilusión va de 0% a 100% entre personas; 77% la ve en >90% o <10% de ensayos; estable a un año.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-617",
+   "s": "efecto_mcgurk",
+   "p": "tiene_limite",
+   "o": "variabilidad_estimulo",
+   "f": "F-686",
+   "apoyo": "Magnotti y Beauchamp 2015: la frecuencia de la ilusión varía enormemente entre estímulos; con un solo estímulo no se separa estímulo de persona (165 personas, ≤14 estímulos).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-618",
+   "s": "macleod_1991_est",
+   "p": "respalda",
+   "o": "efecto_stroop",
+   "f": "F-687",
+   "apoyo": "MacLeod 1991: unos 400 estudios en 50 años dejan 18 hallazgos confiables sobre la interferencia Stroop.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-619",
+   "s": "efecto_stroop",
+   "p": "tiene_limite",
+   "o": "paradoja_fiabilidad",
+   "f": "F-688",
+   "apoyo": "Hedge et al. 2018: el Stroop es muy replicable en promedio pero su ICC test-retest es .60-.67; fiabilidades de 7 tareas entre 0 y .82.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-620",
+   "s": "simulacion_modal",
+   "p": "parte_de",
+   "o": "cognicion_encarnada",
+   "f": "F-689",
+   "apoyo": "Barsalou 2008: simulaciones modales, estados corporales y acción situada subyacen a la cognición; es el núcleo de la cognición fundamentada.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-621",
+   "s": "cognicion_encarnada",
+   "p": "contradice",
+   "o": "c_cognicion_simbolos_amodales",
+   "f": "F-689",
+   "apoyo": "Barsalou 2008 rechaza la visión tradicional de la cognición como cómputo sobre símbolos amodales en un sistema modular separado de percepción y acción.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-622",
+   "s": "descarga_cognitiva_entorno",
+   "p": "parte_de",
+   "o": "cognicion_encarnada",
+   "f": "F-690",
+   "apoyo": "Wilson 2002: 'descargamos trabajo cognitivo en el entorno' es una de las seis tesis de la cognición encarnada, juzgada al menos parcialmente cierta.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-623",
+   "s": "c_entorno_parte_sistema_cognitivo",
+   "p": "tiene_limite",
+   "o": "cognicion_encarnada",
+   "f": "F-690",
+   "apoyo": "Wilson 2002 califica de 'profundamente problemática' la tesis de que el entorno forma parte del sistema cognitivo: no todas las tesis encarnadas valen lo mismo.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-624",
+   "s": "activacion_sensoriomotora_no_prueba",
+   "p": "tiene_limite",
+   "o": "cognicion_encarnada",
+   "f": "F-691",
+   "apoyo": "Mahon y Caramazza 2008: que se activen áreas sensoriales y motoras al procesar conceptos no prueba la encarnación; una visión desencarnada con propagación de activación lo explica igual.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-625",
+   "s": "fundamentacion_por_interaccion",
+   "p": "contradice",
+   "o": "cognicion_encarnada",
+   "f": "F-691",
+   "apoyo": "Mahon y Caramazza 2008 sostienen que la forma fuerte de la hipótesis encarnada choca con la evidencia neuropsicológica y proponen conceptos abstractos 'instanciados' por lo sensoriomotor.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-626",
+   "s": "poder_explicativo_limitado_encarnada",
+   "p": "tiene_limite",
+   "o": "cognicion_encarnada",
+   "f": "F-692",
+   "apoyo": "Goldinger et al. 2016: varios supuestos de la cognición encarnada son inaceptables y no ofrecen comprensión útil de los problemas clásicos de la psicología experimental.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-627",
+   "s": "calidez_fisica",
+   "p": "aumenta",
+   "o": "conducta_prosocial",
+   "f": "F-693",
+   "apoyo": "Williams y Bargh 2008 (estudio 2): con compresa caliente se eligió más el regalo para un amigo (~75% vs. 54% con fría, cifras de divulgación). No replicado después (Lynott et al. 2014).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-628",
+   "s": "c_calidez_fisica_social",
+   "p": "origina_en",
+   "o": "cognicion_encarnada",
+   "f": "F-693",
+   "apoyo": "Williams y Bargh 2008 enmarcan el efecto como metáfora encarnada: la ínsula procesaría tanto la temperatura física como la calidez interpersonal (confianza).",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-629",
+   "s": "c_calidez_fisica_sin_efecto",
+   "p": "refuta",
+   "o": "c_calidez_fisica_social",
+   "f": "F-694",
+   "apoyo": "Lynott et al. 2014: tres réplicas de alto poder del estudio 2 de Williams y Bargh; sin efecto en ningún laboratorio ni en conjunto (N = 861).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-630",
+   "s": "poses_de_poder",
+   "p": "aumenta",
+   "o": "sensacion_subjetiva_poder",
+   "f": "F-695",
+   "apoyo": "Carney et al. 2010 (N = 42): posturas de alto poder aumentaron la sensación de poder; es la única parte que Ranehill et al. 2015 sí replicaron.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-631",
+   "s": "c_poses_poder_hormonas_riesgo",
+   "p": "origina_en",
+   "o": "cognicion_encarnada",
+   "f": "F-695",
+   "apoyo": "Carney et al. 2010 presentan el efecto como retroalimentación corporal: la postura cambia hormonas y conducta en hombres y mujeres.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-632",
+   "s": "c_poses_poder_sin_efecto_fisiologico",
+   "p": "refuta",
+   "o": "c_poses_poder_hormonas_riesgo",
+   "f": "F-696",
+   "apoyo": "Ranehill et al. 2015 (N = 200, experimentador ciego): sin efecto significativo de las poses en hormonas ni en tres tareas conductuales.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-633",
+   "s": "poses_de_poder",
+   "p": "aumenta",
+   "o": "sensacion_subjetiva_poder",
+   "f": "F-696",
+   "apoyo": "Ranehill et al. 2015 (N = 200) sí encontraron un efecto significativo en la sensación de poder autorreportada.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-634",
+   "s": "practicas_investigacion_cuestionables",
+   "p": "tiene_limite",
+   "o": "c_poses_poder_hormonas_riesgo",
+   "f": "F-697",
+   "apoyo": "Carney 2016: muestra pequeña, datos revisados por tandas hasta ver un patrón y pruebas y medidas elegidas a posteriori; 'no creo que los efectos de las poses de poder sean reales'.",
+   "lectura": "completa",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-635",
+   "s": "c_postura_afecta_autorreporte",
+   "p": "respalda",
+   "o": "sensacion_subjetiva_poder",
+   "f": "F-698",
+   "apoyo": "Cuddy et al. 2018: p-curve con 'fuerte valor evidencial' para la retroalimentación postural, sobre todo en estados emocionales y afectivos; no en hormonas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-636",
+   "s": "feedback_facial_manipulado",
+   "p": "aumenta",
+   "o": "experiencia_emocional",
+   "f": "F-699",
+   "apoyo": "Strack et al. 1988: con el lápiz en los dientes las caricaturas se juzgaron más graciosas; diferencia de 0,82 puntos en escala de 10 (cifra reportada por la réplica de 2016).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-637",
+   "s": "c_lapiz_sin_efecto_rrr",
+   "p": "refuta",
+   "o": "c_lapiz_sonrisa_humor",
+   "f": "F-700",
+   "apoyo": "Wagenmakers et al. 2016: 17 laboratorios, diferencia meta-analítica de 0,03 puntos (IC 95% −0,11 a 0,16) frente a 0,82 del original.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-638",
+   "s": "observacion_por_camara",
+   "p": "modera",
+   "o": "c_lapiz_sonrisa_humor",
+   "f": "F-700",
+   "apoyo": "Hipótesis de Strack tras el RRR: sentirse observado por la cámara habría anulado el efecto. Es explicación post hoc, no probada en ese estudio.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-639",
+   "s": "c_feedback_facial_pequeno",
+   "p": "respalda",
+   "o": "experiencia_emocional",
+   "f": "F-701",
+   "apoyo": "Coles et al. 2019: 286 efectos de 138 estudios; el feedback facial influye en la emoción con d = 0,20, pequeño y heterogéneo.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-640",
+   "s": "sesgo_publicacion",
+   "p": "tiene_limite",
+   "o": "c_feedback_facial_pequeno",
+   "f": "F-701",
+   "apoyo": "Inferencia: un meta-análisis de literatura publicada puede inflar el efecto; por eso pesa más la prueba preregistrada Many Smiles (Coles et al. 2022).",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-641",
+   "s": "feedback_facial_manipulado",
+   "p": "aumenta",
+   "o": "experiencia_emocional",
+   "f": "F-702",
+   "apoyo": "Many Smiles (Coles et al. 2022, N = 3.878, 19 países): imitar sonrisas y mover los músculos por instrucción amplificaron e iniciaron felicidad.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-642",
+   "s": "c_sonrisa_voluntaria_felicidad",
+   "p": "contradice",
+   "o": "c_lapiz_sin_efecto_rrr",
+   "f": "F-702",
+   "apoyo": "Many Smiles 2022 matiza el RRR de 2016: el efecto existe con sonrisas voluntarias o imitadas, aunque con el lápiz encubierto la evidencia siguió siendo poco concluyente.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-643",
+   "s": "peso_fisico",
+   "p": "aumenta",
+   "o": "juicio_importancia",
+   "f": "F-703",
+   "apoyo": "Jostmann et al. 2009 (4 estudios): el portapapeles pesado aumentó el valor monetario estimado y la importancia de procedimientos justos. Tamaños de efecto no reportados en el resumen.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-644",
+   "s": "c_peso_sin_efecto",
+   "p": "refuta",
+   "o": "c_peso_importancia",
+   "f": "F-704",
+   "apoyo": "Many Labs 3 (Ebersole et al. 2016): con N = 2.285 en laboratorio, portapapeles pesado y liviano dieron igual importancia (dato del atlas FORRT, no del resumen).",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-645",
+   "s": "priming_estereotipo_vejez",
+   "p": "reduce",
+   "o": "velocidad_al_caminar",
+   "f": "F-705",
+   "apoyo": "Bargh, Chen y Burrows 1996 (exp. 2): quienes vieron palabras de vejez caminaron más lento al salir que los controles. Doyen et al. 2012 no lo replicaron con cronometraje automático.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-646",
+   "s": "priming_estereotipo_vejez",
+   "p": "es_tipo_de",
+   "o": "priming_conductual",
+   "f": "F-705",
+   "apoyo": "Bargh et al. 1996 muestran que estereotipos y rasgos activados automáticamente guían la acción sin intención consciente.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-647",
+   "s": "c_priming_vejez_no_replica",
+   "p": "refuta",
+   "o": "c_priming_vejez_lentitud",
+   "f": "F-706",
+   "apoyo": "Doyen et al. 2012 (exp. 1): con cronometraje automático y más muestra, el priming de vejez no cambió la velocidad al caminar.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-648",
+   "s": "expectativa_experimentador",
+   "p": "modera",
+   "o": "c_priming_vejez_lentitud",
+   "f": "F-706",
+   "apoyo": "Doyen et al. 2012 (exp. 2): la marcha más lenta apareció solo cuando los experimentadores esperaban ese resultado.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-649",
+   "s": "tarea_autocontrol_previa",
+   "p": "reduce",
+   "o": "persistencia_tarea",
+   "f": "F-707",
+   "apoyo": "Baumeister et al. 1998: quienes resistieron chocolates abandonaron antes rompecabezas irresolubles. Tamaños de efecto no vistos en el resumen.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-650",
+   "s": "agotamiento_del_ego",
+   "p": "media",
+   "o": "c_autocontrol_recurso_limitado",
+   "f": "F-707",
+   "apoyo": "Baumeister et al. 1998 proponen que elegir, suprimir emociones y autorregularse comparten un recurso interno común que se agota.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-651",
+   "s": "c_agotamiento_ego_nulo",
+   "p": "refuta",
+   "o": "c_autocontrol_recurso_limitado",
+   "f": "F-708",
+   "apoyo": "Hagger et al. 2016: 23 laboratorios, N = 2.141; d = 0,04 (IC 95% −0,07 a 0,15), compatible con cero.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-652",
+   "s": "c_agotamiento_ego_nulo",
+   "p": "refuta",
+   "o": "c_autocontrol_recurso_limitado",
+   "f": "F-709",
+   "apoyo": "Vohs et al. 2021 (36 sitios, N = 3.531, liderado por defensores): d = 0,06 no significativo; datos 4 veces más probables bajo la nula que con δ = 0,30.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-653",
+   "s": "amenaza_moral",
+   "p": "aumenta",
+   "o": "deseo_limpieza_fisica",
+   "f": "F-710",
+   "apoyo": "Zhong y Liljenquist 2006: tras una amenaza moral subió el deseo de productos de limpieza y la probabilidad de tomar toallitas antisépticas. Earp et al. 2014 no lo replicaron.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-654",
+   "s": "c_macbeth_no_replica",
+   "p": "refuta",
+   "o": "c_efecto_macbeth",
+   "f": "F-711",
+   "apoyo": "Earp et al. 2014: varias réplicas directas del estudio 2 con materiales originales, muestras de distintos países y más poder; ninguna detectó el efecto.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-655",
+   "s": "tasa_replicacion_psicologia",
+   "p": "mide",
+   "o": "encogimiento_efecto_replica",
+   "f": "F-712",
+   "apoyo": "Open Science Collaboration 2015: 97% de originales significativos vs. 36% de réplicas; los efectos replicados midieron la mitad.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-656",
+   "s": "fuerza_evidencia_original",
+   "p": "asocia_con",
+   "o": "tasa_replicacion_psicologia",
+   "f": "F-712",
+   "apoyo": "OSC 2015: el éxito de la réplica se predijo mejor por la fuerza de la evidencia original que por las características de los equipos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-657",
+   "s": "sesgo_publicacion",
+   "p": "aumenta",
+   "o": "encogimiento_efecto_replica",
+   "f": "F-712",
+   "apoyo": "Inferencia apoyada en OSC 2015: si los originales están sesgados (97% significativos), las réplicas imparciales muestran efectos menores (la mitad).",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-658",
+   "s": "replicacion_multilaboratorio",
+   "p": "mide",
+   "o": "tasa_replicacion_psicologia",
+   "f": "F-713",
+   "apoyo": "Many Labs 1 (Klein et al. 2014): 13 efectos en 36 muestras (N = 6.344); 10 replicaron, 1 débil, 2 de priming no.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-659",
+   "s": "c_variacion_depende_del_efecto",
+   "p": "tiene_limite",
+   "o": "priming_conductual",
+   "f": "F-713",
+   "apoyo": "Klein et al. 2014: los dos efectos que fallaron eran de priming (bandera y dinero); la replicabilidad dependió del efecto, no de la muestra.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-660",
+   "s": "replicacion_multilaboratorio",
+   "p": "mide",
+   "o": "tasa_replicacion_psicologia",
+   "f": "F-714",
+   "apoyo": "Many Labs 2 (Klein et al. 2018): 28 hallazgos, N = 15.305 en 36 países; 54% replicó con p < 0,05 y 50% con p < 0,0001.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-661",
+   "s": "c_variacion_depende_del_efecto",
+   "p": "respalda",
+   "o": "tasa_replicacion_psicologia",
+   "f": "F-714",
+   "apoyo": "Klein et al. 2018: poca heterogeneidad entre culturas WEIRD y menos WEIRD o entre laboratorio y online; la variación dependió del efecto estudiado.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-662",
+   "s": "final_menos_aversivo",
+   "p": "aumenta",
+   "o": "preferencia_repetir_episodio",
+   "f": "F-715",
+   "apoyo": "Kahneman et al. 1993: añadir 30 s menos fríos (15 °C) tras 60 s a 14 °C hizo que una mayoría significativa eligiera repetir el ensayo largo, con más dolor total.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-663",
+   "s": "evaluacion_retrospectiva",
+   "p": "tiene_limite",
+   "o": "negligencia_duracion",
+   "f": "F-715",
+   "apoyo": "Kahneman et al. 1993: la duración juega un papel pequeño en la evaluación retrospectiva de experiencias aversivas; dominan el peor momento y el final.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-664",
+   "s": "intensidad_pico_final",
+   "p": "asocia_con",
+   "o": "evaluacion_retrospectiva",
+   "f": "F-716",
+   "apoyo": "Redelmeier & Kahneman 1996: en colonoscopía (n=154) y litotricia (n=133) el dolor total recordado se correlacionó fuerte con el pico y con los últimos 3 minutos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-665",
+   "s": "evaluacion_retrospectiva",
+   "p": "tiene_limite",
+   "o": "negligencia_duracion",
+   "f": "F-716",
+   "apoyo": "Redelmeier & Kahneman 1996: pese a gran variación en la duración, los procedimientos largos no se recordaron como especialmente aversivos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-666",
+   "s": "final_menos_aversivo",
+   "p": "reduce",
+   "o": "recuerdo_desagrado",
+   "f": "F-717",
+   "apoyo": "Redelmeier, Katz & Kahneman 2003 (RCT, n=682): agregar un final breve y menos doloroso a la colonoscopía hizo que se recordara como menos desagradable.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-667",
+   "s": "final_menos_aversivo",
+   "p": "aumenta",
+   "o": "retorno_procedimiento",
+   "f": "F-717",
+   "apoyo": "Redelmeier et al. 2003: quienes tuvieron el final extendido volvieron ligeramente más a repetirse la colonoscopía (el abstract leído no da la cifra).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-668",
+   "s": "intensidad_pico_final",
+   "p": "asocia_con",
+   "o": "evaluacion_retrospectiva",
+   "f": "F-718",
+   "apoyo": "Alaybek et al. 2022 (meta-análisis, 174 efectos): pico-final sobre la evaluación retrospectiva r=0,581 (IC95% 0,487-0,661); comparable al promedio de todos los momentos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-669",
+   "s": "evaluacion_retrospectiva",
+   "p": "tiene_limite",
+   "o": "negligencia_duracion",
+   "f": "F-718",
+   "apoyo": "Alaybek et al. 2022: el efecto de la duración de la experiencia sobre el juicio global fue esencialmente nulo.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-670",
+   "s": "exposicion_repetida",
+   "p": "aumenta",
+   "o": "agrado_estimulo",
+   "f": "F-719",
+   "apoyo": "Zajonc 1968: manipular experimentalmente la frecuencia de exposición a palabras sin sentido y símbolos elevó su connotación afectiva positiva (sin d resumido en el abstract).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-671",
+   "s": "exposicion_repetida",
+   "p": "aumenta",
+   "o": "agrado_estimulo",
+   "f": "F-720",
+   "apoyo": "Montoya et al. 2017 (268 curvas, 81 artículos): pendiente positiva con término cuadrático negativo; el agrado sube con la repetición y luego cae (U invertida).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-672",
+   "s": "modalidad_estimulo",
+   "p": "modera",
+   "o": "c_mera_exposicion_u_invertida",
+   "f": "F-720",
+   "apoyo": "Montoya et al. 2017: la U invertida aparece con estímulos visuales pero no auditivos, y con exposiciones menores a 10 s o mayores a 1 min.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-673",
+   "s": "control_malentendidos",
+   "p": "reduce",
+   "o": "efecto_dotacion",
+   "f": "F-721",
+   "apoyo": "Plott & Zeiler 2005: con entrenamiento y controles de malentendidos sobre la elicitación, la brecha WTA-WTP para tazas se puede 'encender y apagar'.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-674",
+   "s": "c_brecha_wta_persiste",
+   "p": "contradice",
+   "o": "c_dotacion_artefacto_procedimiento",
+   "f": "F-722",
+   "apoyo": "Fehr, Hakimov & Kübler 2015: replicando los controles de Plott & Zeiler (entrenamiento, práctica BDM), la brecha WTA-WTP por una taza persistió. Tensión total con la tesis del artefacto.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-675",
+   "s": "c_aversion_perdida_no_general",
+   "p": "contradice",
+   "o": "c_aversion_perdida_general",
+   "f": "F-723",
+   "apoyo": "Gal & Rucker 2018 (revisión): la evidencia no respalda que las pérdidas, en balance, tengan más impacto que ganancias equivalentes. Tensión total con el principio general.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-676",
+   "s": "conocimiento_atributo",
+   "p": "reduce",
+   "o": "aversion_perdida",
+   "f": "F-724",
+   "apoyo": "Mrkva et al. 2020 (5 muestras, N=17.720): quien sabe más de un atributo del auto es menos averso a perder en ese atributo, no en otros.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-677",
+   "s": "edad_consumidor",
+   "p": "asocia_con",
+   "o": "aversion_perdida",
+   "f": "F-724",
+   "apoyo": "Mrkva et al. 2020: los consumidores mayores fueron más aversos a la pérdida en distintas medidas y estudios.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-678",
+   "s": "c_aversion_perdida_moderada",
+   "p": "contradice",
+   "o": "c_aversion_perdida_no_general",
+   "f": "F-724",
+   "apoyo": "Mrkva et al. 2020: la aversión a la pérdida aparece y tiene moderadores; dudan de que sea una falacia. Tensión parcial: acepta que depende del contexto.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-679",
+   "s": "rango_ganancias_perdidas",
+   "p": "modera",
+   "o": "c_aversion_perdida_general",
+   "f": "F-725",
+   "apoyo": "Walasek & Stewart 2015 (4 experimentos): según el rango de montos mostrados se obtuvo aversión a la pérdida, neutralidad o su inversión.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-680",
+   "s": "c_aversion_perdida_reversible",
+   "p": "contradice",
+   "o": "c_aversion_perdida_general",
+   "f": "F-725",
+   "apoyo": "Walasek & Stewart 2015: si el rango de montos invierte la aversión, no es un rasgo fijo. Tensión parcial; resultado luego cuestionado (André & de Langhe 2021).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-681",
+   "s": "c_aversion_perdida_reversible",
+   "p": "tiene_limite",
+   "o": "invarianza_medicion",
+   "f": "F-726",
+   "apoyo": "André & de Langhe 2021: la 'inversión' sale de comparar estimaciones hechas sobre loterías distintas por condición; con loterías comunes el patrón desaparece.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-682",
+   "s": "coeficiente_aversion_perdida",
+   "p": "mide",
+   "o": "aversion_perdida",
+   "f": "F-727",
+   "apoyo": "Brown et al. 2024: lambda resume cuánto más pesan las pérdidas; 607 estimaciones de 150 artículos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-683",
+   "s": "c_lambda_cercano_2",
+   "p": "contradice",
+   "o": "c_aversion_perdida_no_general",
+   "f": "F-727",
+   "apoyo": "Brown et al. 2024: lambda medio 1,955 (IC95% 1,820-2,102). Tensión parcial con Gal & Rucker: el promedio existe aunque varíe por contexto y método.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-684",
+   "s": "opcion_senuelo",
+   "p": "aumenta",
+   "o": "eleccion_opcion_objetivo",
+   "f": "F-728",
+   "apoyo": "Huber, Payne & Puto 1982: agregar una alternativa dominada asimétricamente aumentó la elección de la opción que la domina, violando la regularidad (cifra no verificada).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-685",
+   "s": "c_senuelo_aumenta_eleccion",
+   "p": "tiene_limite",
+   "o": "atributos_perceptuales",
+   "f": "F-729",
+   "apoyo": "Frederick, Lee & Baskin 2014: el efecto señuelo no suele aparecer si el consumidor experimenta el producto o si basta un atributo presentado de forma perceptual.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-686",
+   "s": "atributos_perceptuales",
+   "p": "modera",
+   "o": "c_senuelo_aumenta_eleccion",
+   "f": "F-729",
+   "apoyo": "Frederick et al. 2014: las representaciones perceptuales no permiten las comparaciones que impulsan el efecto en ejemplos numéricos estilizados.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-687",
+   "s": "autoensamblaje",
+   "p": "aumenta",
+   "o": "valoracion_producto_propio",
+   "f": "F-730",
+   "apoyo": "Norton, Mochon & Ariely 2012 (4 experimentos): armar IKEA, origami o Legos elevó la valoración de lo propio hasta igualarla a la de creaciones expertas.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-688",
+   "s": "c_efecto_ikea",
+   "p": "tiene_limite",
+   "o": "tarea_incompleta",
+   "f": "F-730",
+   "apoyo": "Norton et al. 2012: el efecto IKEA se disipó cuando los participantes no completaron la tarea o destruyeron lo construido.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-689",
+   "s": "autoensamblaje",
+   "p": "aumenta",
+   "o": "valoracion_producto_propio",
+   "f": "F-731",
+   "apoyo": "Sarstedt, Neubert & Barth 2017 (réplica conceptual): mayor disposición a pagar por productos autoensamblados; confirma la robustez del efecto.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-690",
+   "s": "propiedad_psicologica",
+   "p": "media",
+   "o": "c_efecto_ikea",
+   "f": "F-731",
+   "apoyo": "Sarstedt et al. 2017: la propiedad psicológica sobre el objeto actúa como mecanismo del efecto IKEA.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-691",
+   "s": "pregunta_sugestiva",
+   "p": "aumenta",
+   "o": "distorsion_recuerdo",
+   "f": "F-732",
+   "apoyo": "Loftus & Palmer 1974: el verbo 'smashed' elevó las estimaciones de velocidad y, a una semana, los 'sí' a haber visto vidrio roto que no estaba en la película.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-692",
+   "s": "informacion_enganosa_posterior",
+   "p": "aumenta",
+   "o": "distorsion_recuerdo",
+   "f": "F-733",
+   "apoyo": "Loftus 2005 (revisión de 30 años): la información engañosa recibida tras un evento deteriora el recuerdo, observado en varias especies.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-693",
+   "s": "advertencia_desinformacion",
+   "p": "reduce",
+   "o": "distorsion_recuerdo",
+   "f": "F-733",
+   "apoyo": "Loftus 2005: advertir sobre posible desinformación inhibe sus efectos solo en circunstancias limitadas (sin cifra en el abstract).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-694",
+   "s": "ancla_numerica",
+   "p": "aumenta",
+   "o": "estimacion_cuantitativa",
+   "f": "F-713",
+   "apoyo": "Many Labs 1 (Klein et al. 2014; 36 muestras, n=6.344): el anclaje estuvo entre los 10 de 13 efectos que replicaron de forma consistente (d no leído).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-695",
+   "s": "encuadre_decision",
+   "p": "aumenta",
+   "o": "inversion_preferencias",
+   "f": "F-713",
+   "apoyo": "Many Labs 1 (Klein et al. 2014): el encuadre ganancia vs. pérdida estuvo entre los 10 de 13 efectos que replicaron consistentemente en 36 muestras.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-696",
+   "s": "tasa_descuento_implicita",
+   "p": "mide",
+   "o": "preferencia_temporal",
+   "f": "F-735",
+   "apoyo": "Frederick, Loewenstein & O'Donoghue 2002: las tasas de descuento implícitas se usan como medida de preferencia temporal, pero varían de forma espectacular entre estudios.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-697",
+   "s": "c_tasa_descuento_mide_preferencia",
+   "p": "tiene_limite",
+   "o": "confusores_intertemporales",
+   "f": "F-735",
+   "apoyo": "Frederick et al. 2002: muchas otras consideraciones, además de la preferencia temporal pura, influyen en las elecciones entre hoy y el futuro.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-698",
+   "s": "c_sesgo_presente_promedio",
+   "p": "tiene_limite",
+   "o": "sesgo_publicacion",
+   "f": "F-736",
+   "apoyo": "Imai, Rutter & Camerer 2021 (220 estimaciones, 28 artículos): hay reporte selectivo modesto en la dirección de sobrerreportar el sesgo del presente.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-699",
+   "s": "tipo_recompensa",
+   "p": "modera",
+   "o": "c_sesgo_presente_promedio",
+   "f": "F-736",
+   "apoyo": "Imai et al. 2021: la principal fuente de heterogeneidad es si la recompensa es dinero o no monetaria; se debilita al corregir por reporte selectivo.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-700",
+   "s": "senales_habilidad_azar",
+   "p": "aumenta",
+   "o": "ilusion_control",
+   "f": "F-737",
+   "apoyo": "Langer 1975 (6 estudios): elegir el boleto, involucrarse, competir o estar familiarizado con un juego de azar elevó la expectativa de ganar por encima de la probabilidad objetiva.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-701",
+   "s": "senales_habilidad_azar",
+   "p": "aumenta",
+   "o": "ilusion_control",
+   "f": "F-738",
+   "apoyo": "Stefan & David 2013 (meta-análisis): efecto medio ponderado D=0,62 (IC95% 0,49-0,75) de los factores que inducen ilusión de control.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-702",
+   "s": "demora_gratificacion",
+   "p": "asocia_con",
+   "o": "logro_academico_adolescente",
+   "f": "F-739",
+   "apoyo": "Shoda, Mischel & Peake 1990: los segundos de espera en preescolar se correlacionaron significativamente con competencia académica y manejo del estrés en la adolescencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-703",
+   "s": "demora_gratificacion",
+   "p": "asocia_con",
+   "o": "logro_academico_adolescente",
+   "f": "F-740",
+   "apoyo": "Watts, Duncan & Quan 2018: +1 minuto de espera a los 4 años ≈ +0,1 DE de logro a los 15, la mitad de la correlación de los estudios originales.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-704",
+   "s": "c_demora_predice_logro",
+   "p": "tiene_limite",
+   "o": "antecedentes_familiares",
+   "f": "F-740",
+   "apoyo": "Watts et al. 2018: al controlar antecedentes familiares, habilidad cognitiva temprana y hogar, la asociación con el logro cayó cerca de dos tercios.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-705",
+   "s": "c_sin_efecto_disfluencia",
+   "p": "refuta",
+   "o": "c_disfluencia_mejora_razonamiento",
+   "f": "F-741",
+   "apoyo": "Meyer et al. 2015: juntando el original con 16 réplicas, la tipografía disfluente no cambió la tasa de solución de problemas contraintuitivos, bajo ningún moderador.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-706",
+   "s": "stetson_2007_est",
+   "p": "mide",
+   "o": "resolucion_temporal_percibida",
+   "f": "F-670",
+   "apoyo": "Stetson et al. 2007 midieron la resolución temporal visual durante 31 m de caída libre con un dispositivo de muñeca: no aumentó con el miedo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
   }
  ],
  "generado": "2026-10-04",
  "cobertura": {
-  "procesadas": 325,
-  "total": 646
+  "procesadas": 419,
+  "total": 740
  }
 }

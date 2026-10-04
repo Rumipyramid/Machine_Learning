@@ -1,7 +1,7 @@
 # Behavioral design: estado de la disciplina y del mercado
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-10-03 · Versión: v1.1
+> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-10-04 · Versión: v1.1
 > (migrado desde `research/behavioral_design_360.md` a Many Brains, sin cambios de fondo)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta: **¿cómo le va al behavioral design como disciplina y mercado, y qué se
@@ -316,3 +316,4 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
   **mecanismo** que por **multiplicador**.
 - [[conducta-humano-ia|Conducta humano-IA]] — reúne y amplía la evidencia sobre cómo la IA cambia el juicio y la conducta (adulación, persuasión, descarga cognitiva, sobre-confianza) que este node solo esboza en la parte de "integrar IA".
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — desarrolla con evidencia la frontera "AI Behavioral Science" (F-27) que este node identificó: sujetos sintéticos y sus fallas, ML que genera hipótesis, y la contracción de la consultoría conductual (F-629).
+- [[fenomenos-psicologicos|Fenómenos psicológicos clásicos: qué sobrevive a la replicación]] — capa de base: estado de replicación de los efectos de laboratorio (anclaje, encuadre, aversión a la pérdida, priming, agotamiento del ego) que los nudges aplicados de este node presuponen.

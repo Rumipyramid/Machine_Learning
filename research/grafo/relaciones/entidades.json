@@ -34,6 +34,16 @@
   "nombre": "Permanencia/aceptación de un plan dudoso",
   "tipo": "metrica"
  },
+ "activacion_emocional": {
+  "id": "activacion_emocional",
+  "nombre": "Activación emocional (arousal: nivel de alerta fisiológica)",
+  "tipo": "constructo"
+ },
+ "activacion_sensoriomotora_no_prueba": {
+  "id": "activacion_sensoriomotora_no_prueba",
+  "nombre": "La activación sensoriomotora al pensar no prueba que el concepto sea encarnado (también la explica la propagación de activación)",
+  "tipo": "limitacion"
+ },
  "actividad_cvc_global": {
   "id": "actividad_cvc_global",
   "nombre": "Actividad global de corporate venture capital (corporaciones que invierten en startups)",
@@ -74,6 +84,11 @@
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
  },
+ "advertencia_desinformacion": {
+  "id": "advertencia_desinformacion",
+  "nombre": "Advertir a la persona de que pudo recibir información engañosa",
+  "tipo": "intervencion"
+ },
  "afiliados_va": {
   "id": "afiliados_va",
   "nombre": "Afiliados de Veterans Affairs (EE.UU.)",
@@ -103,6 +118,21 @@
   "id": "agentes_maquina_delegados",
   "nombre": "Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas",
   "tipo": "intervencion"
+ },
+ "agotamiento_del_ego": {
+  "id": "agotamiento_del_ego",
+  "nombre": "Agotamiento del ego: el autocontrol gastaría un recurso limitado",
+  "tipo": "constructo"
+ },
+ "agrado_estimulo": {
+  "id": "agrado_estimulo",
+  "nombre": "Agrado por un estímulo (actitud afectiva)",
+  "tipo": "resultado"
+ },
+ "agrupamiento_perceptual": {
+  "id": "agrupamiento_perceptual",
+  "nombre": "Agrupamiento perceptual (ver elementos sueltos como un todo)",
+  "tipo": "resultado"
  },
  "ajuste_feedback_humano": {
   "id": "ajuste_feedback_humano",
@@ -169,10 +199,20 @@
   "nombre": "Amenaza percibida a la libertad y enojo (reactancia)",
   "tipo": "resultado"
  },
+ "amenaza_moral": {
+  "id": "amenaza_moral",
+  "nombre": "Recordar o cometer una falta moral (amenaza a la pureza moral)",
+  "tipo": "intervencion"
+ },
  "ancla_numerica": {
   "id": "ancla_numerica",
   "nombre": "Número ancla visible antes de juzgar un precio",
   "tipo": "intervencion"
+ },
+ "antecedentes_familiares": {
+  "id": "antecedentes_familiares",
+  "nombre": "Antecedentes familiares, habilidad cognitiva temprana y entorno del hogar",
+  "tipo": "limitacion"
  },
  "anthem_limite_anestesia": {
   "id": "anthem_limite_anestesia",
@@ -224,6 +264,11 @@
   "nombre": "Asistente conversacional de IA generativa para agentes de soporte",
   "tipo": "intervencion"
  },
+ "asociacion_color_emocion": {
+  "id": "asociacion_color_emocion",
+  "nombre": "Asociaciones entre colores y emociones",
+  "tipo": "resultado"
+ },
  "asuncion_responsabilidad": {
   "id": "asuncion_responsabilidad",
   "nombre": "Disposición a asumir responsabilidad y reparar",
@@ -239,10 +284,20 @@
   "nombre": "Atractivo y satisfacción con la interfaz",
   "tipo": "resultado"
  },
+ "atributos_perceptuales": {
+  "id": "atributos_perceptuales",
+  "nombre": "Atributos presentados de forma perceptual o experiencial, no como números estilizados",
+  "tipo": "limitacion"
+ },
  "autoeficacia_entrenamiento": {
   "id": "autoeficacia_entrenamiento",
   "nombre": "Autoeficacia post-entrenamiento",
   "tipo": "resultado"
+ },
+ "autoensamblaje": {
+  "id": "autoensamblaje",
+  "nombre": "Armar o crear uno mismo el producto",
+  "tipo": "intervencion"
  },
  "autoestimacion_desempeno": {
   "id": "autoestimacion_desempeno",
@@ -299,10 +354,20 @@
   "nombre": "Bancaseguros (distribución de seguros por bancos) en América Latina",
   "tipo": "concepto"
  },
+ "barra_progreso_animada": {
+  "id": "barra_progreso_animada",
+  "nombre": "Barra de progreso con animación visual (estrías o pulsos)",
+  "tipo": "intervencion"
+ },
  "barreras_telemedicina_peru": {
   "id": "barreras_telemedicina_peru",
   "nombre": "Barreras a la telemedicina en Perú",
   "tipo": "constructo"
+ },
+ "block_hancock_zakay_2010_est": {
+  "id": "block_hancock_zakay_2010_est",
+  "nombre": "Meta-análisis Block, Hancock y Zakay 2010 (carga cognitiva y juicios de duración)",
+  "tipo": "estudio"
  },
  "brecha_definir_aplicar": {
   "id": "brecha_definir_aplicar",
@@ -354,9 +419,19 @@
   "nombre": "Los usuarios no distinguen una IA aduladora de una que no lo es",
   "tipo": "afirmacion"
  },
+ "c_agotamiento_ego_nulo": {
+  "id": "c_agotamiento_ego_nulo",
+  "nombre": "El agotamiento del ego no aparece en réplicas preregistradas (d ≈ 0,04-0,06)",
+  "tipo": "afirmacion"
+ },
  "c_ambidestreza_mejora_desempeno": {
   "id": "c_ambidestreza_mejora_desempeno",
   "nombre": "La ambidestreza mejora el desempeño",
+  "tipo": "afirmacion"
+ },
+ "c_autocontrol_recurso_limitado": {
+  "id": "c_autocontrol_recurso_limitado",
+  "nombre": "Ejercer autocontrol agota un recurso común y reduce el autocontrol posterior (Baumeister et al. 1998)",
   "tipo": "afirmacion"
  },
  "c_autorreporte_inflado_prod": {
@@ -369,6 +444,26 @@
   "nombre": "La gente es en general reacia a confiar en el juicio de algoritmos",
   "tipo": "afirmacion"
  },
+ "c_aversion_perdida_general": {
+  "id": "c_aversion_perdida_general",
+  "nombre": "Las pérdidas pesan más que las ganancias equivalentes como principio general",
+  "tipo": "afirmacion"
+ },
+ "c_aversion_perdida_moderada": {
+  "id": "c_aversion_perdida_moderada",
+  "nombre": "La aversión a la pérdida existe pero tiene moderadores (conocimiento, edad)",
+  "tipo": "afirmacion"
+ },
+ "c_aversion_perdida_no_general": {
+  "id": "c_aversion_perdida_no_general",
+  "nombre": "En balance, las pérdidas no tienen más impacto que las ganancias",
+  "tipo": "afirmacion"
+ },
+ "c_aversion_perdida_reversible": {
+  "id": "c_aversion_perdida_reversible",
+  "nombre": "La aversión a la pérdida desaparece o se invierte según el rango de montos vistos",
+  "tipo": "afirmacion"
+ },
  "c_brecha_justificacion_implementacion": {
   "id": "c_brecha_justificacion_implementacion",
   "nombre": "La justificación de diseño generada no coincide con lo implementado",
@@ -379,6 +474,21 @@
   "nombre": "El efecto de los nudges en papers (~8,7 pp) es ~6 veces el que se ve a escala (~1,4 pp)",
   "tipo": "afirmacion"
  },
+ "c_brecha_wta_persiste": {
+  "id": "c_brecha_wta_persiste",
+  "nombre": "La brecha WTA-WTP persiste aun con controles de malentendidos",
+  "tipo": "afirmacion"
+ },
+ "c_calidez_fisica_sin_efecto": {
+  "id": "c_calidez_fisica_sin_efecto",
+  "nombre": "El calor físico breve no aumenta la elección prosocial (réplica, N = 861)",
+  "tipo": "afirmacion"
+ },
+ "c_calidez_fisica_social": {
+  "id": "c_calidez_fisica_social",
+  "nombre": "Sentir calor físico aumenta la calidez interpersonal y la conducta prosocial (Williams y Bargh 2008)",
+  "tipo": "afirmacion"
+ },
  "c_castigo_por_disrupcion": {
   "id": "c_castigo_por_disrupcion",
   "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
@@ -387,6 +497,21 @@
  "c_centaur_generaliza": {
   "id": "c_centaur_generaliza",
   "nombre": "Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea)",
+  "tipo": "afirmacion"
+ },
+ "c_cognicion_simbolos_amodales": {
+  "id": "c_cognicion_simbolos_amodales",
+  "nombre": "La cognición es cómputo sobre símbolos abstractos (amodales), independiente de la percepción y la acción",
+  "tipo": "afirmacion"
+ },
+ "c_conformidad_universal_estable": {
+  "id": "c_conformidad_universal_estable",
+  "nombre": "La conformidad de Asch es un rasgo universal y estable en el tiempo",
+  "tipo": "afirmacion"
+ },
+ "c_conformidad_varia_cultura_tiempo": {
+  "id": "c_conformidad_varia_cultura_tiempo",
+  "nombre": "La conformidad tipo Asch varía por cultura y época (mayor en culturas colectivistas, en baja en EE.UU.)",
   "tipo": "afirmacion"
  },
  "c_consejo_ia_reduce_compra": {
@@ -409,9 +534,19 @@
   "nombre": "Crisis estructural del modelo de consultora de diseño",
   "tipo": "afirmacion"
  },
+ "c_crueldad_por_liderazgo": {
+  "id": "c_crueldad_por_liderazgo",
+  "nombre": "La crueldad del SPE surgió del liderazgo de identidad del experimentador, no del rol",
+  "tipo": "afirmacion"
+ },
  "c_cvc_en_retirada": {
   "id": "c_cvc_en_retirada",
   "nombre": "Grandes corporaciones se retiran del venture capital corporativo directo",
+  "tipo": "afirmacion"
+ },
+ "c_demora_predice_logro": {
+  "id": "c_demora_predice_logro",
+  "nombre": "La demora de gratificación en preescolar predice fuertemente el logro posterior",
   "tipo": "afirmacion"
  },
  "c_desconfianza_falta_info": {
@@ -424,9 +559,19 @@
   "nombre": "Diseño efectivo → mejor desempeño de la firma",
   "tipo": "afirmacion"
  },
+ "c_disfluencia_mejora_razonamiento": {
+  "id": "c_disfluencia_mejora_razonamiento",
+  "nombre": "La tipografía difícil de leer mejora la resolución de problemas",
+  "tipo": "afirmacion"
+ },
  "c_divulgacion_obligatoria_falla": {
   "id": "c_divulgacion_obligatoria_falla",
   "nombre": "Los mandatos de 'explicar mejor' fracasan sistemáticamente",
+  "tipo": "afirmacion"
+ },
+ "c_dotacion_artefacto_procedimiento": {
+  "id": "c_dotacion_artefacto_procedimiento",
+  "nombre": "La brecha entre lo que se pide por vender (WTA) y lo que se paga por comprar (WTP) es un artefacto del procedimiento",
   "tipo": "afirmacion"
  },
  "c_dt_efecto_mediado": {
@@ -447,6 +592,31 @@
  "c_efecto_ia_productividad_incierto": {
   "id": "c_efecto_ia_productividad_incierto",
   "nombre": "El efecto de la IA sobre la productividad no es estimable con el diseño actual",
+  "tipo": "afirmacion"
+ },
+ "c_efecto_ikea": {
+  "id": "c_efecto_ikea",
+  "nombre": "Construir uno mismo un producto aumenta cuánto se lo valora (efecto IKEA)",
+  "tipo": "afirmacion"
+ },
+ "c_efecto_macbeth": {
+  "id": "c_efecto_macbeth",
+  "nombre": "Una amenaza moral aumenta el deseo de limpiarse físicamente (efecto Macbeth)",
+  "tipo": "afirmacion"
+ },
+ "c_eleccion_genera_disonancia": {
+  "id": "c_eleccion_genera_disonancia",
+  "nombre": "Actuar contra la propia actitud con alta (vs baja) elección produce más cambio de actitud",
+  "tipo": "afirmacion"
+ },
+ "c_eleccion_no_cambia_actitud": {
+  "id": "c_eleccion_no_cambia_actitud",
+  "nombre": "La alta elección no aumenta el cambio de actitud tras argumentar contra la propia opinión",
+  "tipo": "afirmacion"
+ },
+ "c_entorno_parte_sistema_cognitivo": {
+  "id": "c_entorno_parte_sistema_cognitivo",
+  "nombre": "El entorno es parte del sistema cognitivo (mente extendida)",
   "tipo": "afirmacion"
  },
  "c_estandar_reporting_se_degrada": {
@@ -477,6 +647,11 @@
  "c_f203_cifra": {
   "id": "c_f203_cifra",
   "nombre": "F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025",
+  "tipo": "afirmacion"
+ },
+ "c_feedback_facial_pequeno": {
+  "id": "c_feedback_facial_pequeno",
+  "nombre": "El feedback facial influye en la emoción con efecto pequeño y variable (d ≈ 0,20)",
   "tipo": "afirmacion"
  },
  "c_fluidez_vs_estetica_separables": {
@@ -534,6 +709,21 @@
   "nombre": "Un informe de la ONU vincula la adulación de chatbots con muertes",
   "tipo": "afirmacion"
  },
+ "c_lambda_cercano_2": {
+  "id": "c_lambda_cercano_2",
+  "nombre": "El coeficiente de aversión a la pérdida promedio es cercano a 2",
+  "tipo": "afirmacion"
+ },
+ "c_lapiz_sin_efecto_rrr": {
+  "id": "c_lapiz_sin_efecto_rrr",
+  "nombre": "El lápiz en la boca no cambia el humor percibido (17 laboratorios, 0,03 puntos)",
+  "tipo": "afirmacion"
+ },
+ "c_lapiz_sonrisa_humor": {
+  "id": "c_lapiz_sonrisa_humor",
+  "nombre": "Sonreír forzado con un lápiz en los dientes hace ver más graciosas las caricaturas (Strack et al. 1988)",
+  "tipo": "afirmacion"
+ },
  "c_leves_sin_backlash": {
   "id": "c_leves_sin_backlash",
   "nombre": "Los dark patterns leves no generan backlash",
@@ -544,9 +734,24 @@
   "nombre": "Los LLMs reproducen los sesgos y heurísticas de decisión humanos",
   "tipo": "afirmacion"
  },
+ "c_macbeth_no_replica": {
+  "id": "c_macbeth_no_replica",
+  "nombre": "El efecto Macbeth no aparece en réplicas directas de mayor poder (Earp et al. 2014)",
+  "tipo": "afirmacion"
+ },
  "c_margen_compresion": {
   "id": "c_margen_compresion",
   "nombre": "El margen fino de 2025 (1,8%) es una tendencia de compresión",
+  "tipo": "afirmacion"
+ },
+ "c_mera_exposicion_u_invertida": {
+  "id": "c_mera_exposicion_u_invertida",
+  "nombre": "La exposición repetida aumenta el agrado siguiendo una U invertida",
+  "tipo": "afirmacion"
+ },
+ "c_miedo_ralentiza_percepcion": {
+  "id": "c_miedo_ralentiza_percepcion",
+  "nombre": "El miedo ralentiza la percepción en vivo ('cámara lenta')",
   "tipo": "afirmacion"
  },
  "c_mito_fracaso_80_95": {
@@ -559,9 +764,29 @@
   "nombre": "El diseño devuelve multiplicadores de retorno (p. ej. 100:1)",
   "tipo": "afirmacion"
  },
+ "c_norma_descriptiva_no_supera": {
+  "id": "c_norma_descriptiva_no_supera",
+  "nombre": "Un mensaje de norma descriptiva no supera a un buen mensaje estándar",
+  "tipo": "afirmacion"
+ },
+ "c_norma_descriptiva_supera_estandar": {
+  "id": "c_norma_descriptiva_supera_estandar",
+  "nombre": "Un mensaje de norma descriptiva supera a un mensaje estándar de beneficio",
+  "tipo": "afirmacion"
+ },
  "c_nudge_efectivo_general": {
   "id": "c_nudge_efectivo_general",
   "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
+  "tipo": "afirmacion"
+ },
+ "c_obediencia_ciega": {
+  "id": "c_obediencia_ciega",
+  "nombre": "Milgram demuestra obediencia ciega/pasiva a la autoridad",
+  "tipo": "afirmacion"
+ },
+ "c_obediencia_por_identificacion": {
+  "id": "c_obediencia_por_identificacion",
+  "nombre": "La obediencia en Milgram nace de identificarse con la causa de la autoridad (seguidismo comprometido)",
   "tipo": "afirmacion"
  },
  "c_optout_mejora_inscripcion": {
@@ -604,14 +829,74 @@
   "nombre": "La persuasión de la IA se concentra en personas susceptibles",
   "tipo": "afirmacion"
  },
+ "c_peso_importancia": {
+  "id": "c_peso_importancia",
+  "nombre": "Sostener algo pesado hace juzgar las cosas como más importantes (Jostmann et al. 2009)",
+  "tipo": "afirmacion"
+ },
+ "c_peso_sin_efecto": {
+  "id": "c_peso_sin_efecto",
+  "nombre": "El peso físico no cambia el juicio de importancia (Many Labs 3, N = 2.285)",
+  "tipo": "afirmacion"
+ },
+ "c_poses_poder_hormonas_riesgo": {
+  "id": "c_poses_poder_hormonas_riesgo",
+  "nombre": "Las poses de poder suben la testosterona, bajan el cortisol y aumentan la tolerancia al riesgo (Carney et al. 2010)",
+  "tipo": "afirmacion"
+ },
+ "c_poses_poder_sin_efecto_fisiologico": {
+  "id": "c_poses_poder_sin_efecto_fisiologico",
+  "nombre": "Las poses de poder no cambian hormonas ni conducta de riesgo (réplica N = 200)",
+  "tipo": "afirmacion"
+ },
+ "c_postura_afecta_autorreporte": {
+  "id": "c_postura_afecta_autorreporte",
+  "nombre": "La postura corporal afecta estados afectivos autorreportados (ánimo, sensación de poder)",
+  "tipo": "afirmacion"
+ },
  "c_preferencia_adulacion": {
   "id": "c_preferencia_adulacion",
   "nombre": "Los usuarios prefieren la IA aduladora",
   "tipo": "afirmacion"
  },
+ "c_priming_vejez_lentitud": {
+  "id": "c_priming_vejez_lentitud",
+  "nombre": "Activar el estereotipo de vejez hace caminar más lento (Bargh et al. 1996)",
+  "tipo": "afirmacion"
+ },
+ "c_priming_vejez_no_replica": {
+  "id": "c_priming_vejez_no_replica",
+  "nombre": "El priming de vejez no ralentiza la marcha con medición automática (Doyen et al. 2012)",
+  "tipo": "afirmacion"
+ },
  "c_proxies_vulnerabilidad_debiles": {
   "id": "c_proxies_vulnerabilidad_debiles",
   "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
+  "tipo": "afirmacion"
+ },
+ "c_rojo_baja_desempeno": {
+  "id": "c_rojo_baja_desempeno",
+  "nombre": "Ver el color rojo antes de una prueba empeora el desempeño",
+  "tipo": "afirmacion"
+ },
+ "c_rol_basta_crueldad": {
+  "id": "c_rol_basta_crueldad",
+  "nombre": "Asignar un rol de poder (guardia) basta por sí solo para producir crueldad",
+  "tipo": "afirmacion"
+ },
+ "c_senuelo_aumenta_eleccion": {
+  "id": "c_senuelo_aumenta_eleccion",
+  "nombre": "Agregar un señuelo dominado aumenta la elección de la opción que lo domina",
+  "tipo": "afirmacion"
+ },
+ "c_sesgo_presente_promedio": {
+  "id": "c_sesgo_presente_promedio",
+  "nombre": "En promedio las personas muestran sesgo del presente",
+  "tipo": "afirmacion"
+ },
+ "c_sin_efecto_disfluencia": {
+  "id": "c_sin_efecto_disfluencia",
+  "nombre": "La tipografía disfluente no cambia la tasa de acierto en problemas contraintuitivos",
   "tipo": "afirmacion"
  },
  "c_sinteticas_menos_varianza": {
@@ -634,6 +919,21 @@
   "nombre": "La sobre-confianza es estratégica (costo-beneficio), no inevitable",
   "tipo": "afirmacion"
  },
+ "c_sonrisa_voluntaria_felicidad": {
+  "id": "c_sonrisa_voluntaria_felicidad",
+  "nombre": "Sonreír a propósito (imitar o mover músculos) aumenta la felicidad sentida; el lápiz encubierto no lo prueba",
+  "tipo": "afirmacion"
+ },
+ "c_spe_guardias_instruidos": {
+  "id": "c_spe_guardias_instruidos",
+  "nombre": "En el SPE los guardias recibieron instrucciones y hubo fuertes características de demanda",
+  "tipo": "afirmacion"
+ },
+ "c_tasa_descuento_mide_preferencia": {
+  "id": "c_tasa_descuento_mide_preferencia",
+  "nombre": "Las tasas de descuento implícitas miden la preferencia temporal pura",
+  "tipo": "afirmacion"
+ },
  "c_ubi_cambia_conducta": {
   "id": "c_ubi_cambia_conducta",
   "nombre": "El UBI cambia la conducta real de manejo",
@@ -647,6 +947,11 @@
  "c_valor_acumula_mejoras_pequenas": {
   "id": "c_valor_acumula_mejoras_pequenas",
   "nombre": "El valor se acumula en mejoras de 0,1-0,2%",
+  "tipo": "afirmacion"
+ },
+ "c_variacion_depende_del_efecto": {
+  "id": "c_variacion_depende_del_efecto",
+  "nombre": "La replicabilidad depende más del efecto estudiado que de la muestra o el contexto",
   "tipo": "afirmacion"
  },
  "c_vibe_coding_no_retiene": {
@@ -693,6 +998,11 @@
   "id": "calidad_texto_generado",
   "nombre": "Calidad de textos generados por IA según juicio humano",
   "tipo": "constructo"
+ },
+ "calidez_fisica": {
+  "id": "calidez_fisica",
+  "nombre": "Exposición breve a calor físico (café caliente, compresa térmica)",
+  "tipo": "intervencion"
  },
  "calificacion_calidad_ia": {
   "id": "calificacion_calidad_ia",
@@ -749,6 +1059,11 @@
   "nombre": "Inversión de private equity en atención primaria",
   "tipo": "concepto"
  },
+ "caracteristicas_demanda": {
+  "id": "caracteristicas_demanda",
+  "nombre": "Características de demanda (el participante actúa lo que cree que se espera de él)",
+  "tipo": "limitacion"
+ },
  "carga_cognitiva": {
   "id": "carga_cognitiva",
   "nombre": "Carga cognitiva sobre la memoria de trabajo",
@@ -779,10 +1094,25 @@
   "nombre": "Soporte de decisión clínica en prescripción",
   "tipo": "intervencion"
  },
+ "ceguera_al_cambio": {
+  "id": "ceguera_al_cambio",
+  "nombre": "Ceguera al cambio (no notar cambios grandes en lo que se está mirando)",
+  "tipo": "resultado"
+ },
+ "ceguera_inatencional": {
+  "id": "ceguera_inatencional",
+  "nombre": "Ceguera por falta de atención (no ver un evento inesperado y visible por estar concentrado en otra tarea)",
+  "tipo": "resultado"
+ },
  "centaur": {
   "id": "centaur",
   "nombre": "Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones)",
   "tipo": "intervencion"
+ },
+ "cercania_victima": {
+  "id": "cercania_victima",
+  "nombre": "Proximidad e intimidad con la persona afectada",
+  "tipo": "constructo"
  },
  "cfir": {
   "id": "cfir",
@@ -839,10 +1169,25 @@
   "nombre": "Cobertura de seguro de salud",
   "tipo": "intervencion"
  },
+ "codificacion_memoria_rica": {
+  "id": "codificacion_memoria_rica",
+  "nombre": "Codificación de memoria más densa de un evento saliente",
+  "tipo": "concepto"
+ },
  "codiseno_servicios_salud": {
   "id": "codiseno_servicios_salud",
   "nombre": "Participación del público en el diseño de servicios de salud",
   "tipo": "intervencion"
+ },
+ "coeficiente_aversion_perdida": {
+  "id": "coeficiente_aversion_perdida",
+  "nombre": "Coeficiente de aversión a la pérdida (lambda)",
+  "tipo": "metrica"
+ },
+ "cognicion_encarnada": {
+  "id": "cognicion_encarnada",
+  "nombre": "Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores",
+  "tipo": "concepto"
  },
  "cognitive_forcing_functions": {
   "id": "cognitive_forcing_functions",
@@ -853,6 +1198,11 @@
   "id": "colapso_modos_llm",
   "nombre": "Colapso de modos en LLMs (mode collapse)",
   "tipo": "concepto"
+ },
+ "colectivismo_cultural": {
+  "id": "colectivismo_cultural",
+  "nombre": "Colectivismo cultural (vs individualismo)",
+  "tipo": "constructo"
  },
  "combinacion_humano_ia": {
   "id": "combinacion_humano_ia",
@@ -919,6 +1269,11 @@
   "nombre": "Conducta de las máquinas (machine behaviour) como campo científico",
   "tipo": "concepto"
  },
+ "conducta_prosocial": {
+  "id": "conducta_prosocial",
+  "nombre": "Conducta prosocial (elegir en beneficio de otro)",
+  "tipo": "resultado"
+ },
  "conducta_salud": {
   "id": "conducta_salud",
   "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
@@ -958,6 +1313,21 @@
   "id": "conflicto_decisional",
   "nombre": "Conflicto decisional (sentirse desinformado o indeciso sobre los propios valores)",
   "tipo": "resultado"
+ },
+ "conformidad_mayoria": {
+  "id": "conformidad_mayoria",
+  "nombre": "Conformidad con la respuesta de la mayoría (tasa de errores conformes)",
+  "tipo": "resultado"
+ },
+ "confusores_intertemporales": {
+  "id": "confusores_intertemporales",
+  "nombre": "Consideraciones distintas de la preferencia temporal que influyen en elecciones intertemporales",
+  "tipo": "limitacion"
+ },
+ "conocimiento_atributo": {
+  "id": "conocimiento_atributo",
+  "nombre": "Conocimiento del consumidor sobre el atributo o dominio que se decide",
+  "tipo": "constructo"
  },
  "conocimiento_decision": {
   "id": "conocimiento_decision",
@@ -1029,6 +1399,11 @@
   "nombre": "Contratos en que EviCore gana más cuanto más recorta el gasto en salud",
   "tipo": "concepto"
  },
+ "control_malentendidos": {
+  "id": "control_malentendidos",
+  "nombre": "Procedimientos que controlan malentendidos sobre cómo se elicita el valor (entrenamiento, rondas de práctica)",
+  "tipo": "intervencion"
+ },
  "controles_atencion_encuestas": {
   "id": "controles_atencion_encuestas",
   "nombre": "Controles de atención y de detección de respuestas no humanas en encuestas",
@@ -1048,6 +1423,11 @@
   "id": "conviccion_tener_razon",
   "nombre": "Convicción de tener razón",
   "tipo": "resultado"
+ },
+ "correspondencias_crossmodales": {
+  "id": "correspondencias_crossmodales",
+  "nombre": "Correspondencias crossmodales (emparejamientos consistentes entre rasgos de distintos sentidos)",
+  "tipo": "concepto"
  },
  "costo_adquisicion_seguros": {
   "id": "costo_adquisicion_seguros",
@@ -1129,6 +1509,11 @@
   "nombre": "Críticas de larga data al modelo de los PBM (spread pricing y rebates)",
   "tipo": "concepto"
  },
+ "crueldad_guardias": {
+  "id": "crueldad_guardias",
+  "nombre": "Conducta cruel de los 'guardias' hacia los 'presos'",
+  "tipo": "resultado"
+ },
  "cumplimiento_deshonesto": {
   "id": "cumplimiento_deshonesto",
   "nombre": "Cumplimiento de instrucciones totalmente deshonestas",
@@ -1194,6 +1579,11 @@
   "nombre": "Demanda de seguros",
   "tipo": "resultado"
  },
+ "demora_gratificacion": {
+  "id": "demora_gratificacion",
+  "nombre": "Capacidad infantil de demorar la gratificación (test del malvavisco)",
+  "tipo": "constructo"
+ },
  "denegacion_autorizacion_previa": {
   "id": "denegacion_autorizacion_previa",
   "nombre": "Tasa de denegación de autorizaciones previas en seguros de salud de EE.UU.",
@@ -1219,6 +1609,16 @@
   "nombre": "Descarga cognitiva",
   "tipo": "constructo"
  },
+ "descarga_cognitiva_entorno": {
+  "id": "descarga_cognitiva_entorno",
+  "nombre": "Descarga de trabajo cognitivo en el entorno (offloading)",
+  "tipo": "concepto"
+ },
+ "desempeno_cognitivo": {
+  "id": "desempeno_cognitivo",
+  "nombre": "Desempeño en pruebas cognitivas o de logro",
+  "tipo": "resultado"
+ },
  "desempeno_complementario": {
   "id": "desempeno_complementario",
   "nombre": "Desempeño complementario humano-IA",
@@ -1242,6 +1642,11 @@
  "desempeno_pc_eeuu_2025": {
   "id": "desempeno_pc_eeuu_2025",
   "nombre": "Desempeño de la industria de seguros P&C de EE.UU. en 2025",
+  "tipo": "resultado"
+ },
+ "deseo_limpieza_fisica": {
+  "id": "deseo_limpieza_fisica",
+  "nombre": "Deseo de limpieza física (productos, toallitas)",
   "tipo": "resultado"
  },
  "design_theater": {
@@ -1339,6 +1744,11 @@
   "nombre": "Distorsión de hiperprecisión de LLMs (respuestas demasiado exactas frente a humanos)",
   "tipo": "limitacion"
  },
+ "distorsion_recuerdo": {
+  "id": "distorsion_recuerdo",
+  "nombre": "Distorsión del recuerdo de un evento (estimaciones sesgadas o detalles falsos)",
+  "tipo": "resultado"
+ },
  "distribucion_seguros_latam": {
   "id": "distribucion_seguros_latam",
   "nombre": "Distribución de seguros en América Latina (canales)",
@@ -1354,6 +1764,11 @@
   "nombre": "Divulgación de datos personales",
   "tipo": "resultado"
  },
+ "duracion_percibida": {
+  "id": "duracion_percibida",
+  "nombre": "Duración subjetiva percibida de un evento",
+  "tipo": "resultado"
+ },
  "edad": {
   "id": "edad",
   "nombre": "Edad del consumidor",
@@ -1364,10 +1779,20 @@
   "nombre": "Usuarios mayores",
   "tipo": "poblacion"
  },
+ "edad_consumidor": {
+  "id": "edad_consumidor",
+  "nombre": "Edad del consumidor",
+  "tipo": "constructo"
+ },
  "efectividad_politica_publica": {
   "id": "efectividad_politica_publica",
   "nombre": "Efectividad, innovación y eficiencia de políticas y servicios públicos",
   "tipo": "resultado"
+ },
+ "efecto_bouba_kiki": {
+  "id": "efecto_bouba_kiki",
+  "nombre": "Efecto bouba/kiki (sonidos 'redondos' con formas curvas, 'agudos' con formas puntiagudas)",
+  "tipo": "concepto"
  },
  "efecto_conductual": {
   "id": "efecto_conductual",
@@ -1379,6 +1804,11 @@
   "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
   "tipo": "constructo"
  },
+ "efecto_mcgurk": {
+  "id": "efecto_mcgurk",
+  "nombre": "Efecto McGurk (ver una boca decir 'ga' y oír 'ba' produce percibir un tercer sonido, 'da')",
+  "tipo": "resultado"
+ },
  "efecto_nudge_academico": {
   "id": "efecto_nudge_academico",
   "nombre": "Efecto de nudges en papers académicos (~8,7 pp)",
@@ -1388,6 +1818,21 @@
   "id": "efecto_nudge_escala",
   "nombre": "Efecto de nudges a escala (~1,4 pp)",
   "tipo": "resultado"
+ },
+ "efecto_stroop": {
+  "id": "efecto_stroop",
+  "nombre": "Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color)",
+  "tipo": "resultado"
+ },
+ "eleccion_opcion_objetivo": {
+  "id": "eleccion_opcion_objetivo",
+  "nombre": "Elección de la opción objetivo (la que domina al señuelo)",
+  "tipo": "resultado"
+ },
+ "elliot_2007_est": {
+  "id": "elliot_2007_est",
+  "nombre": "Estudio Elliot et al. 2007 (efecto del rojo en el logro)",
+  "tipo": "estudio"
  },
  "emisor_experto": {
   "id": "emisor_experto",
@@ -1414,6 +1859,11 @@
   "nombre": "Empoderamiento psicológico",
   "tipo": "constructo"
  },
+ "encogimiento_efecto_replica": {
+  "id": "encogimiento_efecto_replica",
+  "nombre": "Los efectos replicados son mucho menores que los originales (~la mitad)",
+  "tipo": "resultado"
+ },
  "encuadre_decision": {
   "id": "encuadre_decision",
   "nombre": "Encuadre de la decisión (ganancia vs. pérdida)",
@@ -1433,6 +1883,11 @@
   "id": "enfermedad_infrecuente",
   "nombre": "Enfermedad poco común",
   "tipo": "concepto"
+ },
+ "ensayo_contraactitudinal": {
+  "id": "ensayo_contraactitudinal",
+  "nombre": "Escribir argumentos contrarios a la propia opinión",
+  "tipo": "intervencion"
  },
  "ensusalud_2014_farmacias": {
   "id": "ensusalud_2014_farmacias",
@@ -1464,6 +1919,11 @@
   "nombre": "Escenario con cambio de planes (fuera del 'camino feliz')",
   "tipo": "concepto"
  },
+ "escepticismo_participante": {
+  "id": "escepticismo_participante",
+  "nombre": "Escepticismo del participante sobre la realidad del daño",
+  "tipo": "limitacion"
+ },
  "escrutinio_revision": {
   "id": "escrutinio_revision",
   "nombre": "Escrutinio activo en la revisión (comentarios en línea)",
@@ -1473,6 +1933,16 @@
   "id": "espiral_muerte_seleccion_adversa",
   "nombre": "Espiral de la muerte por selección adversa",
   "tipo": "resultado"
+ },
+ "estimacion_cuantitativa": {
+  "id": "estimacion_cuantitativa",
+  "nombre": "Estimación numérica de una cantidad desconocida",
+  "tipo": "resultado"
+ },
+ "estimulo_oddball": {
+  "id": "estimulo_oddball",
+  "nombre": "Estímulo inesperado o distinto dentro de una serie repetida (oddball)",
+  "tipo": "intervencion"
  },
  "estructura_decision": {
   "id": "estructura_decision",
@@ -1494,10 +1964,20 @@
   "nombre": "European Accessibility Act (exigible 28-jun-2025)",
   "tipo": "intervencion"
  },
+ "evaluacion_espera": {
+  "id": "evaluacion_espera",
+  "nombre": "Evaluación o satisfacción del cliente con la espera",
+  "tipo": "resultado"
+ },
  "evaluacion_resultados_codiseno": {
   "id": "evaluacion_resultados_codiseno",
   "nombre": "Evaluación de resultados del codiseño",
   "tipo": "metrica"
+ },
+ "evaluacion_retrospectiva": {
+  "id": "evaluacion_retrospectiva",
+  "nombre": "Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto)",
+  "tipo": "resultado"
  },
  "evasion_controles_calidad": {
   "id": "evasion_controles_calidad",
@@ -1549,10 +2029,20 @@
   "nombre": "Éxito sostenido de una transformación",
   "tipo": "resultado"
  },
+ "expectativa_experimentador": {
+  "id": "expectativa_experimentador",
+  "nombre": "Expectativas del experimentador (influyen sin querer en la conducta medida)",
+  "tipo": "limitacion"
+ },
  "experiencia_cliente_seguros": {
   "id": "experiencia_cliente_seguros",
   "nombre": "Experiencia del cliente (CX) en aseguradoras",
   "tipo": "constructo"
+ },
+ "experiencia_emocional": {
+  "id": "experiencia_emocional",
+  "nombre": "Experiencia emocional autorreportada (felicidad, humor percibido)",
+  "tipo": "resultado"
  },
  "experiencia_subjetiva_voz": {
   "id": "experiencia_subjetiva_voz",
@@ -1563,6 +2053,11 @@
   "id": "experiencia_trabajador",
   "nombre": "Experiencia y habilidad previa del trabajador",
   "tipo": "constructo"
+ },
+ "experimento_prision_stanford": {
+  "id": "experimento_prision_stanford",
+  "nombre": "Experimento de la prisión de Stanford (Zimbardo, 1971)",
+  "tipo": "estudio"
  },
  "experimento_turing": {
   "id": "experimento_turing",
@@ -1579,10 +2074,20 @@
   "nombre": "Experiencia acumulada revisando código de agentes de IA",
   "tipo": "constructo"
  },
+ "exposicion_color_rojo": {
+  "id": "exposicion_color_rojo",
+  "nombre": "Exposición breve al color rojo antes de una tarea",
+  "tipo": "intervencion"
+ },
  "exposicion_ia_generativa_ocupacional": {
   "id": "exposicion_ia_generativa_ocupacional",
   "nombre": "Exposición ocupacional a la IA generativa (índice OIT)",
   "tipo": "constructo"
+ },
+ "exposicion_repetida": {
+  "id": "exposicion_repetida",
+  "nombre": "Exposición repetida a un estímulo",
+  "tipo": "intervencion"
  },
  "factibilidad_seguridad_modelo_ia": {
   "id": "factibilidad_seguridad_modelo_ia",
@@ -1624,6 +2129,11 @@
   "nombre": "FED: métrica no supervisada de evaluación de diálogo con DialoGPT",
   "tipo": "metrica"
  },
+ "feedback_facial_manipulado": {
+  "id": "feedback_facial_manipulado",
+  "nombre": "Manipulación de la expresión facial (lápiz en la boca, imitar fotos, mover músculos por instrucción)",
+  "tipo": "intervencion"
+ },
  "fidelidad_algoritmica": {
   "id": "fidelidad_algoritmica",
   "nombre": "Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos)",
@@ -1633,6 +2143,11 @@
   "id": "fidelidad_respuesta_rag",
   "nombre": "Fidelidad de la respuesta al contexto recuperado (control de alucinación)",
   "tipo": "constructo"
+ },
+ "final_menos_aversivo": {
+  "id": "final_menos_aversivo",
+  "nombre": "Agregar un tramo final menos desagradable a una experiencia",
+  "tipo": "intervencion"
  },
  "financiamiento_salud_singapur_3m": {
   "id": "financiamiento_salud_singapur_3m",
@@ -1709,6 +2224,21 @@
   "nombre": "Dato esencialmente de una sola organización",
   "tipo": "limitacion"
  },
+ "fuerza_evidencia_original": {
+  "id": "fuerza_evidencia_original",
+  "nombre": "Fuerza de la evidencia del estudio original (p. ej., valor p, tamaño de efecto)",
+  "tipo": "constructo"
+ },
+ "funcion_potencia_psicofisica": {
+  "id": "funcion_potencia_psicofisica",
+  "nombre": "Función psicofísica de potencia (Stevens) entre magnitud real y percibida",
+  "tipo": "concepto"
+ },
+ "fundamentacion_por_interaccion": {
+  "id": "fundamentacion_por_interaccion",
+  "nombre": "Fundamentación por interacción: conceptos abstractos que se enriquecen con información sensoriomotora",
+  "tipo": "concepto"
+ },
  "g_eval": {
   "id": "g_eval",
   "nombre": "G-Eval (un LLM puntúa cada texto con razonamiento paso a paso)",
@@ -1758,6 +2288,11 @@
   "id": "glosario_seguros_sbs",
   "nombre": "Glosario oficial de términos de seguros de la SBS",
   "tipo": "intervencion"
+ },
+ "gnambs_2020_est": {
+  "id": "gnambs_2020_est",
+  "nombre": "Meta-análisis Gnambs 2020 (efecto del rojo en desempeño)",
+  "tipo": "estudio"
  },
  "gpt3": {
   "id": "gpt3",
@@ -1859,6 +2394,11 @@
   "nombre": "Ilusiones de comprensión (creer entender el mundo más de lo que se entiende)",
   "tipo": "limitacion"
  },
+ "ilusion_control": {
+  "id": "ilusion_control",
+  "nombre": "Ilusión de control: expectativa de éxito mayor que la probabilidad objetiva",
+  "tipo": "constructo"
+ },
  "impacto_pyg_genai": {
   "id": "impacto_pyg_genai",
   "nombre": "Impacto medible en el estado de resultados de la IA generativa",
@@ -1868,6 +2408,11 @@
   "id": "implementacion_rutinaria_intervenciones_salud",
   "nombre": "Evaluación de intervenciones durante su implementación rutinaria",
   "tipo": "concepto"
+ },
+ "incentivo_precision": {
+  "id": "incentivo_precision",
+  "nombre": "Incentivo monetario por responder correctamente",
+  "tipo": "intervencion"
  },
  "incentivos_financieros_salud": {
   "id": "incentivos_financieros_salud",
@@ -1899,6 +2444,11 @@
   "nombre": "Prácticas idénticas no reciben pago equitativo entre países del Reino Unido (Gales ~9% menos)",
   "tipo": "limitacion"
  },
+ "inferencia_bayesiana_tiempo": {
+  "id": "inferencia_bayesiana_tiempo",
+  "nombre": "Estimación bayesiana del tiempo (combina la medición sensorial con lo que se espera por experiencia previa)",
+  "tipo": "concepto"
+ },
  "influencia_social": {
   "id": "influencia_social",
   "nombre": "Influencia social (cumplimiento y conformidad)",
@@ -1912,6 +2462,16 @@
  "informacion_decision": {
   "id": "informacion_decision",
   "nombre": "Nudges de información/asistencia a la decisión",
+  "tipo": "intervencion"
+ },
+ "informacion_enganosa_posterior": {
+  "id": "informacion_enganosa_posterior",
+  "nombre": "Información engañosa recibida después del evento",
+  "tipo": "intervencion"
+ },
+ "informacion_tiempo_espera": {
+  "id": "informacion_tiempo_espera",
+  "nombre": "Informar al cliente el tiempo esperado de espera",
   "tipo": "intervencion"
  },
  "infraestructura_mercado_seguro": {
@@ -1949,6 +2509,11 @@
   "nombre": "Números inscritos en el registro 'No Llamar' (>10 M en 4 días; >107 M al AF 2005)",
   "tipo": "resultado"
  },
+ "integracion_multisensorial": {
+  "id": "integracion_multisensorial",
+  "nombre": "Integración multisensorial (unir señales de distintos sentidos en un solo objeto)",
+  "tipo": "resultado"
+ },
  "integracion_producto_proceso": {
   "id": "integracion_producto_proceso",
   "nombre": "Integrar innovación de producto y de proceso (frente a solo producto)",
@@ -1968,6 +2533,11 @@
   "id": "intencion_uso_interfaz",
   "nombre": "Intención de uso de la interfaz",
   "tipo": "resultado"
+ },
+ "intensidad_pico_final": {
+  "id": "intensidad_pico_final",
+  "nombre": "Intensidad en el peor momento (pico) y en el final de una experiencia",
+  "tipo": "constructo"
  },
  "interaccion_inicial": {
   "id": "interaccion_inicial",
@@ -1999,6 +2569,11 @@
   "nombre": "Intervalo de retención (tiempo hasta la prueba final)",
   "tipo": "concepto"
  },
+ "intervencion_algun_testigo": {
+  "id": "intervencion_algun_testigo",
+  "nombre": "Probabilidad de que al menos un testigo intervenga (nivel grupo)",
+  "tipo": "resultado"
+ },
  "intervencion_emergencia": {
   "id": "intervencion_emergencia",
   "nombre": "Ayuda en una emergencia (rapidez de aviso)",
@@ -2008,6 +2583,11 @@
   "id": "intrusividad_percibida",
   "nombre": "Intrusividad percibida",
   "tipo": "constructo"
+ },
+ "invarianza_medicion": {
+  "id": "invarianza_medicion",
+  "nombre": "Violación de la invarianza de medición (se comparan estimaciones hechas sobre loterías distintas)",
+  "tipo": "limitacion"
  },
  "inversion_id": {
   "id": "inversion_id",
@@ -2054,10 +2634,35 @@
   "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
   "tipo": "estudio"
  },
+ "jonauskaite_2020_est": {
+  "id": "jonauskaite_2020_est",
+  "nombre": "Estudio Jonauskaite et al. 2020 (color-emoción en 30 países)",
+  "tipo": "estudio"
+ },
  "juegos_simulacion_entrenamiento": {
   "id": "juegos_simulacion_entrenamiento",
   "nombre": "Juegos de simulación por computador para entrenamiento",
   "tipo": "intervencion"
+ },
+ "juicio_duracion_prospectivo": {
+  "id": "juicio_duracion_prospectivo",
+  "nombre": "Duración juzgada cuando la persona sabe de antemano que deberá estimarla (vivencia del tiempo mientras pasa)",
+  "tipo": "resultado"
+ },
+ "juicio_duracion_retrospectivo": {
+  "id": "juicio_duracion_retrospectivo",
+  "nombre": "Duración juzgada por sorpresa, después (reconstruida desde la memoria)",
+  "tipo": "resultado"
+ },
+ "juicio_grupal_ambiguo": {
+  "id": "juicio_grupal_ambiguo",
+  "nombre": "Emitir juicios en grupo ante un estímulo ambiguo",
+  "tipo": "intervencion"
+ },
+ "juicio_importancia": {
+  "id": "juicio_importancia",
+  "nombre": "Juicio de importancia o valor",
+  "tipo": "resultado"
  },
  "juicio_precio": {
   "id": "juicio_precio",
@@ -2068,6 +2673,16 @@
   "id": "juicios_metacognitivos",
   "nombre": "Juicios de verdad, agrado, confianza y frecuencia",
   "tipo": "resultado"
+ },
+ "justicia_cola": {
+  "id": "justicia_cola",
+  "nombre": "Justicia percibida en la cola (respeto del orden de llegada)",
+  "tipo": "concepto"
+ },
+ "justificacion_externa_baja": {
+  "id": "justificacion_externa_baja",
+  "nombre": "Baja justificación externa (paga pequeña) por actuar contra la propia opinión",
+  "tipo": "intervencion"
  },
  "kaiser_permanente_risant": {
   "id": "kaiser_permanente_risant",
@@ -2094,6 +2709,11 @@
   "nombre": "Estudio Latam Insurtech Journey (Digital Insurance LATAM, patrocinado por MAPFRE)",
   "tipo": "estudio"
  },
+ "legitimidad_autoridad": {
+  "id": "legitimidad_autoridad",
+  "nombre": "Directividad, legitimidad y consistencia de la autoridad",
+  "tipo": "constructo"
+ },
  "lemonade_inc": {
   "id": "lemonade_inc",
   "nombre": "Lemonade Inc. (insurtech cotizada)",
@@ -2112,6 +2732,21 @@
  "ley_32323_antispam": {
   "id": "ley_32323_antispam",
   "nombre": "Ley 32323 (Perú, 2025): amplía la prohibición de comunicaciones comerciales spam sin consentimiento",
+  "tipo": "intervencion"
+ },
+ "ley_vierordt": {
+  "id": "ley_vierordt",
+  "nombre": "Ley de Vierordt / efecto de tendencia central en la estimación de duraciones",
+  "tipo": "concepto"
+ },
+ "ley_weber_fechner": {
+  "id": "ley_weber_fechner",
+  "nombre": "Ley de Weber-Fechner (la diferencia mínima perceptible es proporcional a la magnitud; la sensación crece como el logaritmo)",
+  "tipo": "concepto"
+ },
+ "liderazgo_identidad": {
+  "id": "liderazgo_identidad",
+  "nombre": "Liderazgo de identidad (el líder moviliza al grupo en nombre de una causa compartida)",
   "tipo": "intervencion"
  },
  "liquid_glass_ios26": {
@@ -2133,6 +2768,11 @@
   "id": "llm_juez",
   "nombre": "LLM como juez de respuestas de asistentes",
   "tipo": "metrica"
+ },
+ "logro_academico_adolescente": {
+  "id": "logro_academico_adolescente",
+  "nombre": "Logro académico y competencias en la adolescencia",
+  "tipo": "resultado"
  },
  "loss_ratio_bruto_lemonade": {
   "id": "loss_ratio_bruto_lemonade",
@@ -2163,6 +2803,11 @@
   "id": "lovable_valoracion",
   "nombre": "Valoración de Lovable (US$13,3B)",
   "tipo": "resultado"
+ },
+ "macleod_1991_est": {
+  "id": "macleod_1991_est",
+  "nombre": "Revisión MacLeod 1991 (50 años de efecto Stroop)",
+  "tipo": "estudio"
  },
  "maier_2022": {
   "id": "maier_2022",
@@ -2244,6 +2889,11 @@
   "nombre": "Personas con menor educación",
   "tipo": "poblacion"
  },
+ "mensaje_norma_descriptiva": {
+  "id": "mensaje_norma_descriptiva",
+  "nombre": "Mensaje de norma descriptiva ('la mayoría de personas como tú hace X')",
+  "tipo": "intervencion"
+ },
  "menus_adaptables": {
   "id": "menus_adaptables",
   "nombre": "Menús adaptables (control del usuario)",
@@ -2299,6 +2949,11 @@
   "nombre": "Mide el tamaño del sector, no el efecto causal del diseño",
   "tipo": "limitacion"
  },
+ "miedo_agudo": {
+  "id": "miedo_agudo",
+  "nombre": "Miedo agudo ante un evento amenazante",
+  "tipo": "constructo"
+ },
  "mind_gym": {
   "id": "mind_gym",
   "nombre": "Mind Gym plc (consultora de cambio conductual organizacional)",
@@ -2319,9 +2974,24 @@
   "nombre": "Medical loss ratio de Oscar Health (70,5% en el 1T 2026 vs 75,4% en el 1T 2025)",
   "tipo": "resultado"
  },
+ "modalidad_estimulo": {
+  "id": "modalidad_estimulo",
+  "nombre": "Modalidad y duración de presentación del estímulo (visual vs. auditivo; segundos de exposición)",
+  "tipo": "concepto"
+ },
+ "modelo_compuerta_atencional": {
+  "id": "modelo_compuerta_atencional",
+  "nombre": "Modelo de compuerta atencional del tiempo (Zakay y Block): más atención al tiempo = más 'pulsos' contados = duración más larga",
+  "tipo": "concepto"
+ },
  "modelo_datos_tarea": {
   "id": "modelo_datos_tarea",
   "nombre": "UI generada desde un modelo de datos de la tarea (no desde código)",
+  "tipo": "intervencion"
+ },
+ "modelo_desobediente": {
+  "id": "modelo_desobediente",
+  "nombre": "Ver a un par que se niega a seguir las órdenes",
   "tipo": "intervencion"
  },
  "modelo_farmacias_triage": {
@@ -2399,6 +3069,11 @@
   "nombre": "Necesidades psicológicas básicas: competencia, autonomía y vínculo",
   "tipo": "constructo"
  },
+ "negligencia_duracion": {
+  "id": "negligencia_duracion",
+  "nombre": "Negligencia de la duración: la duración casi no pesa en el recuerdo",
+  "tipo": "limitacion"
+ },
  "nhs_111": {
   "id": "nhs_111",
   "nombre": "Servicio telefónico de asesoría y triaje NHS 111",
@@ -2423,6 +3098,16 @@
   "id": "norberg_2007",
   "nombre": "Estudio de intención vs. conducta de divulgación de Norberg, Horne y Horne (JCA 2007)",
   "tipo": "estudio"
+ },
+ "norma_grupal_emergente": {
+  "id": "norma_grupal_emergente",
+  "nombre": "Convergencia de juicios en una norma de grupo",
+  "tipo": "resultado"
+ },
+ "norma_provincial": {
+  "id": "norma_provincial",
+  "nombre": "Norma provincial (referirse a quienes estuvieron en la misma situación inmediata)",
+  "tipo": "intervencion"
  },
  "normas_subjetivas_compra_seguro": {
   "id": "normas_subjetivas_compra_seguro",
@@ -2449,6 +3134,16 @@
   "nombre": "Nudges a escala (nudge units)",
   "tipo": "intervencion"
  },
+ "obediencia_destructiva": {
+  "id": "obediencia_destructiva",
+  "nombre": "Obediencia a órdenes dañinas (llegar a la descarga máxima)",
+  "tipo": "resultado"
+ },
+ "observacion_por_camara": {
+  "id": "observacion_por_camara",
+  "nombre": "Ser grabado en video durante el experimento (moderador propuesto por Strack)",
+  "tipo": "limitacion"
+ },
  "ocupaciones_administrativas": {
   "id": "ocupaciones_administrativas",
   "nombre": "Ocupaciones administrativas (clerical support workers)",
@@ -2459,6 +3154,11 @@
   "nombre": "OECD Global Insurance Market Trends 2025",
   "tipo": "estudio"
  },
+ "opcion_senuelo": {
+  "id": "opcion_senuelo",
+  "nombre": "Opción señuelo dominada asimétricamente agregada al menú",
+  "tipo": "intervencion"
+ },
  "opinionqa": {
   "id": "opinionqa",
   "nombre": "OpinionQA (benchmark de alineación de opiniones con 60 grupos de EE.UU.)",
@@ -2467,6 +3167,11 @@
  "optum_rx_tarifa_fija": {
   "id": "optum_rx_tarifa_fija",
   "nombre": "Modelo de tarifa fija mensual por miembro de Optum Rx, desligado de precios de lista",
+  "tipo": "intervencion"
+ },
+ "orden_autoridad": {
+  "id": "orden_autoridad",
+  "nombre": "Órdenes de una figura de autoridad (experimentador) de continuar",
   "tipo": "intervencion"
  },
  "outcomes_salud": {
@@ -2483,6 +3188,11 @@
   "id": "pandemia_2020",
   "nombre": "Pandemia de 2020",
   "tipo": "concepto"
+ },
+ "paradoja_fiabilidad": {
+  "id": "paradoja_fiabilidad",
+  "nombre": "Paradoja de la fiabilidad (efectos robustos a nivel grupo, poco confiables para medir a cada persona)",
+  "tipo": "limitacion"
  },
  "participacion_eeuu_primas_mundiales": {
   "id": "participacion_eeuu_primas_mundiales",
@@ -2503,6 +3213,16 @@
   "id": "pausa_reflexion_compra",
   "nombre": "Permitir pausar, reflexionar y modificar la elección durante la compra",
   "tipo": "intervencion"
+ },
+ "pedido_explicito_parar": {
+  "id": "pedido_explicito_parar",
+  "nombre": "Primer pedido explícito de la persona afectada de detenerse",
+  "tipo": "intervencion"
+ },
+ "peligro_percibido_emergencia": {
+  "id": "peligro_percibido_emergencia",
+  "nombre": "Peligro percibido de la emergencia",
+  "tipo": "constructo"
  },
  "penetracion_peru": {
   "id": "penetracion_peru",
@@ -2544,6 +3264,11 @@
   "nombre": "Persistencia del efecto tras terminar la intervención",
   "tipo": "resultado"
  },
+ "persistencia_tarea": {
+  "id": "persistencia_tarea",
+  "nombre": "Persistencia en una tarea posterior",
+  "tipo": "resultado"
+ },
  "personalizacion_conversacional": {
   "id": "personalizacion_conversacional",
   "nombre": "Personalización en conversación (la IA conoce datos del interlocutor)",
@@ -2568,6 +3293,16 @@
   "id": "persuasion_publicitaria",
   "nombre": "Persuasión publicitaria: actitudes e intención de conducta",
   "tipo": "resultado"
+ },
+ "pertenencia_grupo_social": {
+  "id": "pertenencia_grupo_social",
+  "nombre": "Pertenencia al mismo grupo social que el interlocutor",
+  "tipo": "concepto"
+ },
+ "peso_fisico": {
+  "id": "peso_fisico",
+  "nombre": "Sostener un objeto pesado (p. ej., un portapapeles)",
+  "tipo": "intervencion"
  },
  "peticiones_trampa": {
   "id": "peticiones_trampa",
@@ -2599,15 +3334,30 @@
   "nombre": "La investigación empírica posterior rara vez confrontó los argumentos centrales de la teoría",
   "tipo": "limitacion"
  },
+ "poder_explicativo_limitado_encarnada": {
+  "id": "poder_explicativo_limitado_encarnada",
+  "nombre": "La cognición encarnada no aporta explicaciones nuevas a los problemas clásicos de la psicología experimental",
+  "tipo": "limitacion"
+ },
  "pool_grande_no_baja_prima": {
   "id": "pool_grande_no_baja_prima",
   "nombre": "Un pool grande no implica primas más bajas: depende del costo promedio de los inscritos",
   "tipo": "limitacion"
  },
+ "poses_de_poder": {
+  "id": "poses_de_poder",
+  "nombre": "Poses de poder (posturas expansivas breves)",
+  "tipo": "intervencion"
+ },
  "practica_espaciada": {
   "id": "practica_espaciada",
   "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
   "tipo": "intervencion"
+ },
+ "practicas_investigacion_cuestionables": {
+  "id": "practicas_investigacion_cuestionables",
+  "nombre": "Prácticas de investigación cuestionables (mirar datos por tandas hasta ver el patrón, elegir pruebas y medidas a posteriori)",
+  "tipo": "limitacion"
  },
  "precio_accion_figma": {
   "id": "precio_accion_figma",
@@ -2664,6 +3414,21 @@
   "nombre": "Preferencia por interfaces generativas (hasta 72%)",
   "tipo": "resultado"
  },
+ "preferencia_repetir_episodio": {
+  "id": "preferencia_repetir_episodio",
+  "nombre": "Preferencia por repetir un episodio frente a otro",
+  "tipo": "resultado"
+ },
+ "preferencia_temporal": {
+  "id": "preferencia_temporal",
+  "nombre": "Preferencia temporal pura (cuánto se valora lo inmediato frente a lo futuro)",
+  "tipo": "constructo"
+ },
+ "pregunta_sugestiva": {
+  "id": "pregunta_sugestiva",
+  "nombre": "Pregunta con redacción sugestiva después de un evento",
+  "tipo": "intervencion"
+ },
  "preocupacion_privacidad_situacional": {
   "id": "preocupacion_privacidad_situacional",
   "nombre": "Preocupación por la privacidad activada por la situación",
@@ -2684,6 +3449,11 @@
   "nombre": "Costos crecientes de atención en 2025 (alta demanda, mayor complejidad, medicamentos)",
   "tipo": "limitacion"
  },
+ "presion_mayoria_unanime": {
+  "id": "presion_mayoria_unanime",
+  "nombre": "Presión de una mayoría unánime que responde de forma equivocada",
+  "tipo": "intervencion"
+ },
  "pricing_personalizado_autorrastreo": {
   "id": "pricing_personalizado_autorrastreo",
   "nombre": "Pricing de seguro de salud personalizado con self-tracking",
@@ -2703,6 +3473,21 @@
   "id": "primas_vida_ocde_2024",
   "nombre": "Crecimiento de primas brutas de vida en la OCDE (2024)",
   "tipo": "resultado"
+ },
+ "priming_conductual": {
+  "id": "priming_conductual",
+  "nombre": "Priming conductual: activar un concepto sin que la persona lo note cambia su conducta",
+  "tipo": "concepto"
+ },
+ "priming_estereotipo_vejez": {
+  "id": "priming_estereotipo_vejez",
+  "nombre": "Activar palabras del estereotipo de vejez (p. ej., 'Florida', 'bingo')",
+  "tipo": "intervencion"
+ },
+ "principios_gestalt": {
+  "id": "principios_gestalt",
+  "nombre": "Principios Gestalt de organización perceptual (proximidad, semejanza, continuidad, cierre, figura-fondo)",
+  "tipo": "concepto"
  },
  "productividad_devs": {
   "id": "productividad_devs",
@@ -2738,6 +3523,21 @@
   "id": "pronostico_triple_i_milliman_2025",
   "nombre": "Pronóstico Triple-I/Milliman del mercado P/C (ene-2025)",
   "tipo": "estudio"
+ },
+ "propiedad_psicologica": {
+  "id": "propiedad_psicologica",
+  "nombre": "Sentido de propiedad psicológica sobre un objeto",
+  "tipo": "constructo"
+ },
+ "protocolo_orden_aleatorio": {
+  "id": "protocolo_orden_aleatorio",
+  "nombre": "Protocolo experimental de orden aleatorio (estímulos sin continuidad, poco natural)",
+  "tipo": "limitacion"
+ },
+ "proximidad_linguistica_geografica": {
+  "id": "proximidad_linguistica_geografica",
+  "nombre": "Proximidad lingüística y geográfica entre países",
+  "tipo": "concepto"
  },
  "proyeccion_no_medicion": {
   "id": "proyeccion_no_medicion",
@@ -2778,6 +3578,11 @@
   "id": "ragas",
   "nombre": "RAGAs: métricas sin referencia para evaluar pipelines RAG",
   "tipo": "metrica"
+ },
+ "rango_ganancias_perdidas": {
+  "id": "rango_ganancias_perdidas",
+  "nombre": "Rango de ganancias y pérdidas que la persona ve al elicitar sus preferencias",
+  "tipo": "intervencion"
  },
  "ranking_expertos_diseno": {
   "id": "ranking_expertos_diseno",
@@ -2832,6 +3637,11 @@
  "recortes_atribuidos_ia": {
   "id": "recortes_atribuidos_ia",
   "nombre": "Recortes de empleo atribuidos a la IA por los empleadores",
+  "tipo": "resultado"
+ },
+ "recuerdo_desagrado": {
+  "id": "recuerdo_desagrado",
+  "nombre": "Desagrado recordado de un procedimiento",
   "tipo": "resultado"
  },
  "redes_estrechas_niveles": {
@@ -2899,6 +3709,11 @@
   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
   "tipo": "resultado"
  },
+ "replicacion_multilaboratorio": {
+  "id": "replicacion_multilaboratorio",
+  "nombre": "Replicación multilaboratorio preregistrada (Many Labs, RRR)",
+  "tipo": "concepto"
+ },
  "reporte_challenger": {
   "id": "reporte_challenger",
   "nombre": "Reporte Challenger de recortes de empleo anunciados",
@@ -2908,6 +3723,16 @@
   "id": "reporte_insuficiente_stepped_wedge",
   "nombre": "Variación en métodos de análisis y reporte insuficiente en ensayos stepped-wedge",
   "tipo": "limitacion"
+ },
+ "representacion_logaritmica_numero": {
+  "id": "representacion_logaritmica_numero",
+  "nombre": "Representación logarítmica de la cantidad en el cerebro",
+  "tipo": "concepto"
+ },
+ "resolucion_temporal_percibida": {
+  "id": "resolucion_temporal_percibida",
+  "nombre": "Resolución temporal de la percepción (capacidad de distinguir eventos rápidos)",
+  "tipo": "resultado"
  },
  "respuestas_casi_uniformes": {
   "id": "respuestas_casi_uniformes",
@@ -2927,6 +3752,16 @@
  "retencion_aprendizaje": {
   "id": "retencion_aprendizaje",
   "nombre": "Retención del aprendizaje",
+  "tipo": "resultado"
+ },
+ "retorno_procedimiento": {
+  "id": "retorno_procedimiento",
+  "nombre": "Retorno para repetir el procedimiento (adherencia)",
+  "tipo": "resultado"
+ },
+ "reutilizacion_toallas": {
+  "id": "reutilizacion_toallas",
+  "nombre": "Reutilización de toallas por huéspedes de hotel",
   "tipo": "resultado"
  },
  "revenue_figma_q1": {
@@ -3054,6 +3889,11 @@
   "nombre": "Segmentación demográfica en servicios financieros",
   "tipo": "intervencion"
  },
+ "seguidismo_comprometido": {
+  "id": "seguidismo_comprometido",
+  "nombre": "Seguidismo comprometido (engaged followership): identificarse con la meta colectiva de la autoridad",
+  "tipo": "concepto"
+ },
  "seguridad_triage_paciente": {
   "id": "seguridad_triage_paciente",
   "nombre": "Seguridad del paciente en el triage automatizado",
@@ -3073,6 +3913,16 @@
   "id": "seleccion_adversa",
   "nombre": "Selección adversa (selección de riesgos)",
   "tipo": "concepto"
+ },
+ "senales_habilidad_azar": {
+  "id": "senales_habilidad_azar",
+  "nombre": "Señales de habilidad en tareas de azar (elección, involucramiento, competencia, familiaridad)",
+  "tipo": "intervencion"
+ },
+ "sensacion_subjetiva_poder": {
+  "id": "sensacion_subjetiva_poder",
+  "nombre": "Sensación subjetiva de poder (autorreporte)",
+  "tipo": "resultado"
  },
  "sensibilidad_redaccion_llm": {
   "id": "sensibilidad_redaccion_llm",
@@ -3134,6 +3984,31 @@
   "nombre": "Silent trial / modo sombra",
   "tipo": "intervencion"
  },
+ "simbolismo_sonoro": {
+  "id": "simbolismo_sonoro",
+  "nombre": "Simbolismo sonoro (la relación sonido-significado no es del todo arbitraria)",
+  "tipo": "concepto"
+ },
+ "simons_chabris_1999_est": {
+  "id": "simons_chabris_1999_est",
+  "nombre": "Estudio Simons y Chabris 1999 (gorila invisible)",
+  "tipo": "estudio"
+ },
+ "simons_levin_1998_est": {
+  "id": "simons_levin_1998_est",
+  "nombre": "Estudio Simons y Levin 1998 (cambio de persona tras la puerta)",
+  "tipo": "estudio"
+ },
+ "simulacion_modal": {
+  "id": "simulacion_modal",
+  "nombre": "Simulación modal: re-activar estados perceptivos, motores e introspectivos para pensar",
+  "tipo": "constructo"
+ },
+ "sistema_escritura": {
+  "id": "sistema_escritura",
+  "nombre": "Sistema de escritura (forma de las letras)",
+  "tipo": "concepto"
+ },
  "sobreajuste_memorizacion": {
   "id": "sobreajuste_memorizacion",
   "nombre": "Sobreajuste: el modelo responde a la forma de la tarea, no a su significado",
@@ -3174,6 +4049,11 @@
   "nombre": "Direccionar pacientes a proveedores de menor precio (steering)",
   "tipo": "intervencion"
  },
+ "stetson_2007_est": {
+  "id": "stetson_2007_est",
+  "nombre": "Estudio Stetson, Fiesta y Eagleman 2007 (caída libre de 31 m)",
+  "tipo": "estudio"
+ },
  "subsidio_parcial_aseguradora": {
   "id": "subsidio_parcial_aseguradora",
   "nombre": "Subsidio parcial de la aseguradora al bloque",
@@ -3203,6 +4083,11 @@
   "id": "susceptibilidad_dark_patterns",
   "nombre": "Susceptibilidad a dark patterns",
   "tipo": "resultado"
+ },
+ "susceptibilidad_mcgurk": {
+  "id": "susceptibilidad_mcgurk",
+  "nombre": "Propensión individual estable a integrar voz y labios (susceptibilidad al McGurk)",
+  "tipo": "constructo"
  },
  "tamano_economia_diseno": {
   "id": "tamano_economia_diseno",
@@ -3234,10 +4119,20 @@
   "nombre": "Tamaño del surtido (cuántas opciones se ofrecen)",
   "tipo": "intervencion"
  },
+ "tarea_autocontrol_previa": {
+  "id": "tarea_autocontrol_previa",
+  "nombre": "Tarea previa que exige autocontrol (resistir tentaciones, suprimir emociones)",
+  "tipo": "intervencion"
+ },
  "tarea_dificil": {
   "id": "tarea_dificil",
   "nombre": "Tareas de decisión difíciles",
   "tipo": "concepto"
+ },
+ "tarea_incompleta": {
+  "id": "tarea_incompleta",
+  "nombre": "La tarea no se completa o lo construido se destruye",
+  "tipo": "limitacion"
  },
  "tarea_laberinto": {
   "id": "tarea_laberinto",
@@ -3253,6 +4148,16 @@
   "id": "tarificacion_por_experiencia",
   "nombre": "Tarificación por experiencia (experience rating)",
   "tipo": "intervencion"
+ },
+ "tasa_descuento_implicita": {
+  "id": "tasa_descuento_implicita",
+  "nombre": "Tasa de descuento implícita en elecciones entre hoy y el futuro",
+  "tipo": "metrica"
+ },
+ "tasa_replicacion_psicologia": {
+  "id": "tasa_replicacion_psicologia",
+  "nombre": "Tasa de replicación de hallazgos de psicología",
+  "tipo": "metrica"
  },
  "tasas_interes_altas_2024": {
   "id": "tasas_interes_altas_2024",
@@ -3298,6 +4203,16 @@
   "id": "tiempo_entrega",
   "nombre": "Time-to-delivery",
   "tipo": "resultado"
+ },
+ "tiempo_espera_percibido": {
+  "id": "tiempo_espera_percibido",
+  "nombre": "Tiempo de espera percibido por el cliente (frente al real)",
+  "tipo": "resultado"
+ },
+ "tipo_recompensa": {
+  "id": "tipo_recompensa",
+  "nombre": "Tipo de recompensa del experimento (dinero vs. bienes no monetarios)",
+  "tipo": "concepto"
  },
  "tipo_tarea_decision_creacion": {
   "id": "tipo_tarea_decision_creacion",
@@ -3419,6 +4334,16 @@
   "nombre": "Calificaciones positivas/estéticas",
   "tipo": "resultado"
  },
+ "valoracion_producto_propio": {
+  "id": "valoracion_producto_propio",
+  "nombre": "Valoración y disposición a pagar por un producto hecho por uno mismo",
+  "tipo": "resultado"
+ },
+ "variabilidad_estimulo": {
+  "id": "variabilidad_estimulo",
+  "nombre": "Variabilidad entre estímulos experimentales (la elección del estímulo cambia el resultado)",
+  "tipo": "limitacion"
+ },
  "variabilidad_primas": {
   "id": "variabilidad_primas",
   "nombre": "Variabilidad / impredecibilidad de las primas",
@@ -3427,6 +4352,11 @@
  "variabilidad_respuestas": {
   "id": "variabilidad_respuestas",
   "nombre": "Variabilidad de las respuestas frente a la población humana",
+  "tipo": "resultado"
+ },
+ "velocidad_al_caminar": {
+  "id": "velocidad_al_caminar",
+  "nombre": "Velocidad al caminar",
   "tipo": "resultado"
  },
  "velocidad_tarea": {

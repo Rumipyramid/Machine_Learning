@@ -1,0 +1,292 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-727",
+  "F-728",
+  "F-729",
+  "F-730",
+  "F-731",
+  "F-732",
+  "F-733",
+  "F-735",
+  "F-736"
+ ],
+ "entidades": [
+  {
+   "id": "coeficiente_aversion_perdida",
+   "nombre": "Coeficiente de aversión a la pérdida (lambda)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "c_lambda_cercano_2",
+   "nombre": "El coeficiente de aversión a la pérdida promedio es cercano a 2",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "opcion_senuelo",
+   "nombre": "Opción señuelo dominada asimétricamente agregada al menú",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "eleccion_opcion_objetivo",
+   "nombre": "Elección de la opción objetivo (la que domina al señuelo)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_senuelo_aumenta_eleccion",
+   "nombre": "Agregar un señuelo dominado aumenta la elección de la opción que lo domina",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "atributos_perceptuales",
+   "nombre": "Atributos presentados de forma perceptual o experiencial, no como números estilizados",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "autoensamblaje",
+   "nombre": "Armar o crear uno mismo el producto",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "valoracion_producto_propio",
+   "nombre": "Valoración y disposición a pagar por un producto hecho por uno mismo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_efecto_ikea",
+   "nombre": "Construir uno mismo un producto aumenta cuánto se lo valora (efecto IKEA)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "tarea_incompleta",
+   "nombre": "La tarea no se completa o lo construido se destruye",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "propiedad_psicologica",
+   "nombre": "Sentido de propiedad psicológica sobre un objeto",
+   "tipo": "constructo"
+  },
+  {
+   "id": "pregunta_sugestiva",
+   "nombre": "Pregunta con redacción sugestiva después de un evento",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "distorsion_recuerdo",
+   "nombre": "Distorsión del recuerdo de un evento (estimaciones sesgadas o detalles falsos)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "informacion_enganosa_posterior",
+   "nombre": "Información engañosa recibida después del evento",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "advertencia_desinformacion",
+   "nombre": "Advertir a la persona de que pudo recibir información engañosa",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "estimacion_cuantitativa",
+   "nombre": "Estimación numérica de una cantidad desconocida",
+   "tipo": "resultado"
+  },
+  {
+   "id": "tasa_descuento_implicita",
+   "nombre": "Tasa de descuento implícita en elecciones entre hoy y el futuro",
+   "tipo": "metrica"
+  },
+  {
+   "id": "preferencia_temporal",
+   "nombre": "Preferencia temporal pura (cuánto se valora lo inmediato frente a lo futuro)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "c_tasa_descuento_mide_preferencia",
+   "nombre": "Las tasas de descuento implícitas miden la preferencia temporal pura",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "confusores_intertemporales",
+   "nombre": "Consideraciones distintas de la preferencia temporal que influyen en elecciones intertemporales",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_sesgo_presente_promedio",
+   "nombre": "En promedio las personas muestran sesgo del presente",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "tipo_recompensa",
+   "nombre": "Tipo de recompensa del experimento (dinero vs. bienes no monetarios)",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "coeficiente_aversion_perdida",
+   "p": "mide",
+   "o": "aversion_perdida",
+   "f": "F-727",
+   "apoyo": "Brown et al. 2024: lambda resume cuánto más pesan las pérdidas; 607 estimaciones de 150 artículos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_lambda_cercano_2",
+   "p": "contradice",
+   "o": "c_aversion_perdida_no_general",
+   "f": "F-727",
+   "apoyo": "Brown et al. 2024: lambda medio 1,955 (IC95% 1,820-2,102). Tensión parcial con Gal & Rucker: el promedio existe aunque varíe por contexto y método.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "opcion_senuelo",
+   "p": "aumenta",
+   "o": "eleccion_opcion_objetivo",
+   "f": "F-728",
+   "apoyo": "Huber, Payne & Puto 1982: agregar una alternativa dominada asimétricamente aumentó la elección de la opción que la domina, violando la regularidad (cifra no verificada).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_senuelo_aumenta_eleccion",
+   "p": "tiene_limite",
+   "o": "atributos_perceptuales",
+   "f": "F-729",
+   "apoyo": "Frederick, Lee & Baskin 2014: el efecto señuelo no suele aparecer si el consumidor experimenta el producto o si basta un atributo presentado de forma perceptual.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "atributos_perceptuales",
+   "p": "modera",
+   "o": "c_senuelo_aumenta_eleccion",
+   "f": "F-729",
+   "apoyo": "Frederick et al. 2014: las representaciones perceptuales no permiten las comparaciones que impulsan el efecto en ejemplos numéricos estilizados.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "autoensamblaje",
+   "p": "aumenta",
+   "o": "valoracion_producto_propio",
+   "f": "F-730",
+   "apoyo": "Norton, Mochon & Ariely 2012 (4 experimentos): armar IKEA, origami o Legos elevó la valoración de lo propio hasta igualarla a la de creaciones expertas.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_efecto_ikea",
+   "p": "tiene_limite",
+   "o": "tarea_incompleta",
+   "f": "F-730",
+   "apoyo": "Norton et al. 2012: el efecto IKEA se disipó cuando los participantes no completaron la tarea o destruyeron lo construido.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "autoensamblaje",
+   "p": "aumenta",
+   "o": "valoracion_producto_propio",
+   "f": "F-731",
+   "apoyo": "Sarstedt, Neubert & Barth 2017 (réplica conceptual): mayor disposición a pagar por productos autoensamblados; confirma la robustez del efecto.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "propiedad_psicologica",
+   "p": "media",
+   "o": "c_efecto_ikea",
+   "f": "F-731",
+   "apoyo": "Sarstedt et al. 2017: la propiedad psicológica sobre el objeto actúa como mecanismo del efecto IKEA.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "pregunta_sugestiva",
+   "p": "aumenta",
+   "o": "distorsion_recuerdo",
+   "f": "F-732",
+   "apoyo": "Loftus & Palmer 1974: el verbo 'smashed' elevó las estimaciones de velocidad y, a una semana, los 'sí' a haber visto vidrio roto que no estaba en la película.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "informacion_enganosa_posterior",
+   "p": "aumenta",
+   "o": "distorsion_recuerdo",
+   "f": "F-733",
+   "apoyo": "Loftus 2005 (revisión de 30 años): la información engañosa recibida tras un evento deteriora el recuerdo, observado en varias especies.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "advertencia_desinformacion",
+   "p": "reduce",
+   "o": "distorsion_recuerdo",
+   "f": "F-733",
+   "apoyo": "Loftus 2005: advertir sobre posible desinformación inhibe sus efectos solo en circunstancias limitadas (sin cifra en el abstract).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ancla_numerica",
+   "p": "aumenta",
+   "o": "estimacion_cuantitativa",
+   "f": "F-713",
+   "apoyo": "Many Labs 1 (Klein et al. 2014; 36 muestras, n=6.344): el anclaje estuvo entre los 10 de 13 efectos que replicaron de forma consistente (d no leído).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "encuadre_decision",
+   "p": "aumenta",
+   "o": "inversion_preferencias",
+   "f": "F-713",
+   "apoyo": "Many Labs 1 (Klein et al. 2014): el encuadre ganancia vs. pérdida estuvo entre los 10 de 13 efectos que replicaron consistentemente en 36 muestras.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "tasa_descuento_implicita",
+   "p": "mide",
+   "o": "preferencia_temporal",
+   "f": "F-735",
+   "apoyo": "Frederick, Loewenstein & O'Donoghue 2002: las tasas de descuento implícitas se usan como medida de preferencia temporal, pero varían de forma espectacular entre estudios.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_tasa_descuento_mide_preferencia",
+   "p": "tiene_limite",
+   "o": "confusores_intertemporales",
+   "f": "F-735",
+   "apoyo": "Frederick et al. 2002: muchas otras consideraciones, además de la preferencia temporal pura, influyen en las elecciones entre hoy y el futuro.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_sesgo_presente_promedio",
+   "p": "tiene_limite",
+   "o": "sesgo_publicacion",
+   "f": "F-736",
+   "apoyo": "Imai, Rutter & Camerer 2021 (220 estimaciones, 28 artículos): hay reporte selectivo modesto en la dirección de sobrerreportar el sesgo del presente.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "tipo_recompensa",
+   "p": "modera",
+   "o": "c_sesgo_presente_promedio",
+   "f": "F-736",
+   "apoyo": "Imai et al. 2021: la principal fuente de heterogeneidad es si la recompensa es dinero o no monetaria; se debilita al corregir por reporte selectivo.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo. F-734 fusionado en F-713 (duplicado de Many Labs 1)."
+}

@@ -3,21 +3,21 @@
   {
    "id": "behavioral-design-estado-disciplina",
    "type": "node",
-   "lines": 319,
+   "lines": 320,
    "cites": 9,
    "design": false
   },
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 141,
+   "lines": 142,
    "cites": 41,
    "design": false
   },
   {
    "id": "convergencia-psicologia-economia-ia",
    "type": "node",
-   "lines": 244,
+   "lines": 245,
    "cites": 115,
    "design": false
   },
@@ -26,6 +26,13 @@
    "type": "node",
    "lines": 256,
    "cites": 17,
+   "design": false
+  },
+  {
+   "id": "fenomenos-psicologicos",
+   "type": "node",
+   "lines": 547,
+   "cites": 106,
    "design": false
   },
   {
@@ -52,7 +59,7 @@
   {
    "id": "material-visual-venta-consultiva",
    "type": "node",
-   "lines": 376,
+   "lines": 377,
    "cites": 17,
    "design": false
   },
@@ -73,7 +80,7 @@
   {
    "id": "modelo-personas-sinteticas",
    "type": "node",
-   "lines": 76,
+   "lines": 77,
    "cites": 0,
    "design": false
   },
@@ -94,15 +101,15 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 336,
+   "lines": 337,
    "cites": 19,
    "design": false
   },
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2000,
-   "cites": 273,
+   "lines": 2001,
+   "cites": 274,
    "design": true
   },
   {
@@ -5956,6 +5963,852 @@
    "autor": "Mdege, N. D.; Man, M.-S.; Taylor, C. A. & Torgerson, D. J.",
    "anio": "2011",
    "huerfana": false
+  },
+  {
+   "id": "F-647",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Studies of independence and conformity: I. A minority of one against a unanimous majority (Psychological Monographs: General and Applied, 70",
+   "autor": "Asch, S. E.",
+   "anio": "1956",
+   "huerfana": false
+  },
+  {
+   "id": "F-648",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Culture and conformity: A meta-analysis of studies using Asch's (1952b, 1956) line judgment task (Psychological Bulletin, 119(1):111-137)",
+   "autor": "Bond, R.; Smith, P. B.",
+   "anio": "1996",
+   "huerfana": false
+  },
+  {
+   "id": "F-649",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The power of social influence: A replication and extension of the Asch experiment (PLoS ONE, 18(11):e0294325)",
+   "autor": "Franzen, A.; Mader, S.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-650",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Behavioral study of obedience (Journal of Abnormal and Social Psychology, 67(4):371-378)",
+   "autor": "Milgram, S.",
+   "anio": "1963",
+   "huerfana": false
+  },
+  {
+   "id": "F-651",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Replicating Milgram: Would people still obey today? (American Psychologist, 64(1):1-11)",
+   "autor": "Burger, J. M.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-652",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Would you deliver an electric shock in 2015? Obedience in the experimental paradigm developed by Stanley Milgram in the 50 years following t",
+   "autor": "Doliński, D.; Grzyb, T.; Folwarczny, M.; Grzybała, P.; Krzyszycha, K.; Martynowska, K.; Trojanowski, J.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-653",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Meta-Milgram: An empirical synthesis of the obedience experiments (PLoS ONE, 9(4):e93927)",
+   "autor": "Haslam, N.; Loughnan, S.; Perry, G.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-654",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Identifying systematic disobedience in Milgram's obedience experiments: A meta-analytic review (Perspectives on Psychological Science, 3(4):",
+   "autor": "Packer, D. J.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-655",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "'Happy to have been of service': The Yale archive as a window into the engaged followership of participants in Milgram's 'obedience' experim",
+   "autor": "Haslam, S. A.; Reicher, S. D.; Millard, K.; McDonald, R.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-656",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Credibility and incredulity in Milgram's obedience experiments: A reanalysis of an unpublished test (Social Psychology Quarterly, 83(1):88-1",
+   "autor": "Perry, G.; Brannigan, A.; Wanner, R. A.; Stam, H.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-657",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Debunking the Stanford Prison Experiment (American Psychologist, 74(7):823-839)",
+   "autor": "Le Texier, T.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-658",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Rethinking the nature of cruelty: The role of identity leadership in the Stanford Prison Experiment (American Psychologist, 74(7):809-822)",
+   "autor": "Haslam, S. A.; Reicher, S. D.; Van Bavel, J. J.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-659",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The bystander-effect: A meta-analytic review on bystander intervention in dangerous and non-dangerous emergencies (Psychological Bulletin, 1",
+   "autor": "Fischer, P.; Krueger, J. I.; Greitemeyer, T.; Vogrincic, C.; Kastenmüller, A.; Frey, D.; et al.",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-660",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Would I be helped? Cross-national CCTV footage shows that intervention is the norm in public conflicts (American Psychologist, 75(1):66-75)",
+   "autor": "Philpot, R.; Liebst, L. S.; Levine, M.; Bernasco, W.; Lindegaard, M. R.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-661",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "A study of some social factors in perception (Archives of Psychology, 27(187))",
+   "autor": "Sherif, M.",
+   "anio": "1935",
+   "huerfana": false
+  },
+  {
+   "id": "F-662",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Cognitive consequences of forced compliance (Journal of Abnormal and Social Psychology, 58(2):203-210)",
+   "autor": "Festinger, L.; Carlsmith, J. M.",
+   "anio": "1959",
+   "huerfana": false
+  },
+  {
+   "id": "F-663",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A multilab replication of the induced-compliance paradigm of cognitive dissonance (Advances in Methods and Practices in Psychological Scienc",
+   "autor": "Vaidis, D. C.; Sleegers, W. W. A.; van Leeuwen, F.; DeMarree, K. G.; Sætrevik, B.; Ross, R. M.; Schmidt, K.; Protzko, J.; et al.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-664",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A room with a viewpoint: Using social norms to motivate environmental conservation in hotels (Journal of Consumer Research, 35(3):472-482)",
+   "autor": "Goldstein, N. J.; Cialdini, R. B.; Griskevicius, V.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-665",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A room with a viewpoint revisited: Descriptive norms and hotel guests' towel reuse behavior (PLoS ONE (2014), e104086)",
+   "autor": "Bohner, G.; Schlüter, L. E.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-666",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Temporal context calibrates interval timing (Nature Neuroscience, 13(8):1020-1026)",
+   "autor": "Jazayeri, M.; Shadlen, M. N.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-667",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The origin of Vierordt's law: The experimental protocol matters (PsyCh Journal, 10(5):732-741)",
+   "autor": "Glasauer, S.; Shi, Z.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-668",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How cognitive load affects duration judgments: A meta-analytic review (Acta Psychologica, 134:330-343)",
+   "autor": "Block, R. A.; Hancock, P. A.; Zakay, D.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-669",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How emotions colour our perception of time (Trends in Cognitive Sciences, 11(12):504-513)",
+   "autor": "Droit-Volet, S.; Meck, W. H.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-670",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Does time really slow down during a frightening event? (PLoS ONE, 2(12):e1295)",
+   "autor": "Stetson, C.; Fiesta, M. P.; Eagleman, D. M.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-671",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Attention and the subjective expansion of time (Perception & Psychophysics, 66(7):1171-1189)",
+   "autor": "Tse, P. U.; Intriligator, J.; Rivest, J.; Cavanagh, P.",
+   "anio": "2004",
+   "huerfana": false
+  },
+  {
+   "id": "F-672",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "OR Forum—Perspectives on Queues: Social Justice and the Psychology of Queueing (Operations Research, 35(6):895-905)",
+   "autor": "Larson, R. C.",
+   "anio": "1987",
+   "huerfana": false
+  },
+  {
+   "id": "F-673",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Consumer perception and evaluation of waiting time: A field experiment (Journal of Consumer Psychology, 12(3):193-202)",
+   "autor": "Antonides, G.; Verhoef, P. C.; van Aalst, M.",
+   "anio": "2002",
+   "huerfana": false
+  },
+  {
+   "id": "F-674",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Faster progress bars: manipulating perceived duration with visual augmentations (Proceedings of CHI 2010 (ACM SIGCHI Conference on Human Fac",
+   "autor": "Harrison, C.; Yeo, Z.; Hudson, S. E.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-675",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Synaesthesia — A window into perception, thought and language (Journal of Consciousness Studies, 8(12):3-34)",
+   "autor": "Ramachandran, V. S.; Hubbard, E. M.",
+   "anio": "2001",
+   "huerfana": false
+  },
+  {
+   "id": "F-676",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The bouba/kiki effect is robust across cultures and writing systems (Philosophical Transactions of the Royal Society B, 377(1841))",
+   "autor": "Ćwiek, A.; Fuchs, S.; Draxler, C.; Asu, E. L.; Dediu, D.; et al.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-677",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Crossmodal correspondences: A tutorial review (Attention, Perception, & Psychophysics, 73:971-995)",
+   "autor": "Spence, C.",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-678",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Universal patterns in color-emotion associations are further shaped by linguistic and geographic proximity (Psychological Science, 31(10):12",
+   "autor": "Jonauskaite, D.; Abu-Akel, A.; Dael, N.; et al.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-679",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Color and psychological functioning: The effect of red on performance attainment (Journal of Experimental Psychology: General, 136(1):154-16",
+   "autor": "Elliot, A. J.; Maier, M. A.; Moller, A. C.; Friedman, R.; Meinhardt, J.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-680",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Limited evidence for the effect of red color on cognitive performance: A meta-analysis (Psychonomic Bulletin & Review, 27(6):1374-1382)",
+   "autor": "Gnambs, T.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-681",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A century of Gestalt psychology in visual perception: I. Perceptual grouping and figure-ground organization (Psychological Bulletin, 138(6):",
+   "autor": "Wagemans, J.; Elder, J. H.; Kubovy, M.; Palmer, S. E.; Peterson, M. A.; Singh, M.; von der Heydt, R.",
+   "anio": "2012",
+   "huerfana": false
+  },
+  {
+   "id": "F-682",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Gorillas in our midst: Sustained inattentional blindness for dynamic events (Perception, 28:1059-1074)",
+   "autor": "Simons, D. J.; Chabris, C. F.",
+   "anio": "1999",
+   "huerfana": false
+  },
+  {
+   "id": "F-683",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Failure to detect changes to people during a real-world interaction (Psychonomic Bulletin & Review, 5(4):644-649)",
+   "autor": "Simons, D. J.; Levin, D. T.",
+   "anio": "1998",
+   "huerfana": false
+  },
+  {
+   "id": "F-684",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The neural basis of the Weber–Fechner law: a logarithmic mental number line (Trends in Cognitive Sciences, 7(4):145-147)",
+   "autor": "Dehaene, S.",
+   "anio": "2003",
+   "huerfana": false
+  },
+  {
+   "id": "F-685",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Variability and stability in the McGurk effect: contributions of participants, stimuli, time, and response type (Psychonomic Bulletin & Revi",
+   "autor": "Basu Mallick, D.; Magnotti, J. F.; Beauchamp, M. S.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-686",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The noisy encoding of disparity model of the McGurk effect (Psychonomic Bulletin & Review, 22(3):701-709)",
+   "autor": "Magnotti, J. F.; Beauchamp, M. S.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-687",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Half a century of research on the Stroop effect: An integrative review (Psychological Bulletin, 109(2):163-203)",
+   "autor": "MacLeod, C. M.",
+   "anio": "1991",
+   "huerfana": false
+  },
+  {
+   "id": "F-688",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The reliability paradox: Why robust cognitive tasks do not produce reliable individual differences (Behavior Research Methods, 50(3):1166-11",
+   "autor": "Hedge, C.; Powell, G.; Sumner, P.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-689",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Grounded cognition (Annual Review of Psychology, 59:617-645)",
+   "autor": "Barsalou, L. W.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-690",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Six views of embodied cognition (Psychonomic Bulletin & Review, 9(4):625-636)",
+   "autor": "Wilson, M.",
+   "anio": "2002",
+   "huerfana": false
+  },
+  {
+   "id": "F-691",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A critical look at the embodied cognition hypothesis and a new proposal for grounding conceptual content (Journal of Physiology - Paris, 102",
+   "autor": "Mahon, B. Z.; Caramazza, A.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-692",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The poverty of embodied cognition (Psychonomic Bulletin & Review, 23:959-978)",
+   "autor": "Goldinger, S. D.; Papesh, M. H.; Barnhart, A. S.; Hansen, W. A.; Hout, M. C.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-693",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Experiencing physical warmth promotes interpersonal warmth (Science, 322(5901):606-607)",
+   "autor": "Williams, L. E.; Bargh, J. A.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-694",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Replication of \"Experiencing physical warmth promotes interpersonal warmth\" by Williams & Bargh (2008) (Social Psychology, 45(3):216-222)",
+   "autor": "Lynott, D.; Corker, K.; Wortman, J.; Connell, L.; Donnellan, M. B.; Lucas, R.; O'Brien, K. S.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-695",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tolerance (Psychological Science, 21(10):1363-1368)",
+   "autor": "Carney, D. R.; Cuddy, A. J. C.; Yap, A.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-696",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Assessing the robustness of power posing: No effect on hormones and risk tolerance in a large sample of men and women (Psychological Science",
+   "autor": "Ranehill, E.; Dreber, A.; Johannesson, M.; Leiberg, S.; Sul, S.; Weber, R. A.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-697",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "My position on \"Power Poses\" (Declaración en la web de la autora (UC Berkeley Haas), no publicada en revista)",
+   "autor": "Carney, D. R.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-698",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "P-curving a more comprehensive body of research on postural feedback reveals clear evidential value for power-posing effects: Reply to Simmo",
+   "autor": "Cuddy, A. J. C.; et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-699",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Inhibiting and facilitating conditions of the human smile: A nonobtrusive test of the facial feedback hypothesis (Journal of Personality and",
+   "autor": "Strack, F.; Martin, L. L.; Stepper, S.",
+   "anio": "1988",
+   "huerfana": false
+  },
+  {
+   "id": "F-700",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Registered Replication Report: Strack, Martin, & Stepper (1988) (Perspectives on Psychological Science, 11(6):917-928)",
+   "autor": "Wagenmakers, E.-J.; et al. (incl. Lynott, D.; Connell, L.)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-701",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A meta-analysis of the facial feedback literature: Effects of facial feedback on emotional experience are small and variable (Psychological ",
+   "autor": "Coles, N. A.; Larsen, J. T.; Lench, H. C.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-702",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A multi-lab test of the facial feedback hypothesis by the Many Smiles Collaboration (Nature Human Behaviour, 6(12):1731-1742)",
+   "autor": "Coles, N. A.; et al. (Many Smiles Collaboration)",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-703",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Weight as an embodiment of importance (Psychological Science, 20(9):1169-1174)",
+   "autor": "Jostmann, N. B.; Lakens, D.; Schubert, T. W.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-704",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Many Labs 3: Evaluating participant pool quality across the academic semester via replication (Journal of Experimental Social Psychology, 67",
+   "autor": "Ebersole, C. R.; et al.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-705",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Automaticity of social behavior: Direct effects of trait construct and stereotype activation on action (Journal of Personality and Social Ps",
+   "autor": "Bargh, J. A.; Chen, M.; Burrows, L.",
+   "anio": "1996",
+   "huerfana": false
+  },
+  {
+   "id": "F-706",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Behavioral priming: It's all in the mind, but whose mind? (PLoS ONE (ene-2012), e29081)",
+   "autor": "Doyen, S.; Klein, O.; Pichon, C.-L.; Cleeremans, A.",
+   "anio": "2012",
+   "huerfana": false
+  },
+  {
+   "id": "F-707",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Ego depletion: Is the active self a limited resource? (Journal of Personality and Social Psychology, 74(5):1252-1265)",
+   "autor": "Baumeister, R. F.; Bratslavsky, E.; Muraven, M.; Tice, D. M.",
+   "anio": "1998",
+   "huerfana": false
+  },
+  {
+   "id": "F-708",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A multilab preregistered replication of the ego-depletion effect (Perspectives on Psychological Science, 11(4):546-573)",
+   "autor": "Hagger, M. S.; Chatzisarantis, N. L. D.; et al. (64 autores)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-709",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A multisite preregistered paradigmatic test of the ego-depletion effect (Psychological Science, 32(10):1566-1581)",
+   "autor": "Vohs, K. D.; Schmeichel, B. J.; et al.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-710",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Washing away your sins: Threatened morality and physical cleansing (Science, 313(5792):1451-1452)",
+   "autor": "Zhong, C.-B.; Liljenquist, K.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-711",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Out, damned spot: Can the \"Macbeth Effect\" be replicated? (Basic and Applied Social Psychology, 36(1):91-98)",
+   "autor": "Earp, B. D.; Everett, J. A. C.; Madva, E. N.; Hamlin, J. K.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-712",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Estimating the reproducibility of psychological science (Science, 349(6251):aac4716)",
+   "autor": "Open Science Collaboration (270 autores)",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-713",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Investigating variation in replicability: A \"Many Labs\" replication project (Social Psychology, 45(3):142-152)",
+   "autor": "Klein, R. A.; et al.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-714",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Many Labs 2: Investigating variation in replicability across samples and settings (Advances in Methods and Practices in Psychological Scienc",
+   "autor": "Klein, R. A.; et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-715",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "When More Pain Is Preferred to Less: Adding a Better End (Psychological Science, 4(6):401-405)",
+   "autor": "Kahneman, D.; Fredrickson, B. L.; Schreiber, C. A.; Redelmeier, D. A.",
+   "anio": "1993",
+   "huerfana": false
+  },
+  {
+   "id": "F-716",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Patients' memories of painful medical treatments: real-time and retrospective evaluations of two minimally invasive procedures (Pain, 66(1):",
+   "autor": "Redelmeier, D. A.; Kahneman, D.",
+   "anio": "1996",
+   "huerfana": false
+  },
+  {
+   "id": "F-717",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Memories of colonoscopy: a randomized trial (Pain, 104(1-2):187-194)",
+   "autor": "Redelmeier, D. A.; Katz, J.; Kahneman, D.",
+   "anio": "2003",
+   "huerfana": false
+  },
+  {
+   "id": "F-718",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "All's well that ends (and peaks) well? A meta-analysis of the peak-end rule and duration neglect (Organizational Behavior and Human Decision",
+   "autor": "Alaybek, B.; Dalal, R. S.; Fyffe, S.; Aitken, J. A.; Zhou, Y.; Qu, X.; Roman, A.; Baines, J. I.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-719",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Attitudinal effects of mere exposure (Journal of Personality and Social Psychology, 9(2, Pt.2):1-27 (monografía))",
+   "autor": "Zajonc, R. B.",
+   "anio": "1968",
+   "huerfana": false
+  },
+  {
+   "id": "F-720",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A re-examination of the mere exposure effect: The influence of repeated exposure on recognition, familiarity, and liking (Psychological Bull",
+   "autor": "Montoya, R. M.; Horton, R. S.; Vevea, J. L.; Citkowicz, M.; Lauber, E. A.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-721",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Willingness to Pay-Willingness to Accept Gap, the \"Endowment Effect,\" Subject Misconceptions, and Experimental Procedures for Eliciting ",
+   "autor": "Plott, C. R.; Zeiler, K.",
+   "anio": "2005",
+   "huerfana": false
+  },
+  {
+   "id": "F-722",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The willingness to pay-willingness to accept gap: A failed replication of Plott and Zeiler (European Economic Review, 78:120-128)",
+   "autor": "Fehr, D.; Hakimov, R.; Kübler, D.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-723",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Loss of Loss Aversion: Will It Loom Larger Than Its Gain? (Journal of Consumer Psychology, 28(3):497-516)",
+   "autor": "Gal, D.; Rucker, D. D.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-724",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Moderating Loss Aversion: Loss Aversion Has Moderators, But Reports of its Death are Greatly Exaggerated (Journal of Consumer Psychology, 30",
+   "autor": "Mrkva, K.; Johnson, E. J.; Gächter, S.; Herrmann, A.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-725",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How to make loss aversion disappear and reverse: Tests of the decision by sampling origin of loss aversion (Journal of Experimental Psycholo",
+   "autor": "Walasek, L.; Stewart, N.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-726",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "No Evidence for Loss Aversion Disappearance and Reversal in Walasek and Stewart (2015) (Journal of Experimental Psychology: General, 150(12)",
+   "autor": "André, Q.; de Langhe, B.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-727",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Meta-analysis of Empirical Estimates of Loss Aversion (Journal of Economic Literature, 62(2):485-516)",
+   "autor": "Brown, A. L.; Imai, T.; Vieider, F. M.; Camerer, C. F.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-728",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Adding Asymmetrically Dominated Alternatives: Violations of Regularity and the Similarity Hypothesis (Journal of Consumer Research, 9(1):90-",
+   "autor": "Huber, J.; Payne, J. W.; Puto, C.",
+   "anio": "1982",
+   "huerfana": false
+  },
+  {
+   "id": "F-729",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Limits of Attraction (Journal of Marketing Research, 51(4):487-507)",
+   "autor": "Frederick, S.; Lee, L.; Baskin, E.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-730",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The IKEA effect: When labor leads to love (Journal of Consumer Psychology, 22(3):453-460)",
+   "autor": "Norton, M. I.; Mochon, D.; Ariely, D.",
+   "anio": "2012",
+   "huerfana": false
+  },
+  {
+   "id": "F-731",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The IKEA Effect. A Conceptual Replication (Journal of Marketing Behavior, 2(4):307-312)",
+   "autor": "Sarstedt, M.; Neubert, D.; Barth, K.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-732",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Reconstruction of automobile destruction: An example of the interaction between language and memory (Journal of Verbal Learning and Verbal B",
+   "autor": "Loftus, E. F.; Palmer, J. C.",
+   "anio": "1974",
+   "huerfana": false
+  },
+  {
+   "id": "F-733",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Planting misinformation in the human mind: A 30-year investigation of the malleability of memory (Learning & Memory, 12(4):361 (página final",
+   "autor": "Loftus, E. F.",
+   "anio": "2005",
+   "huerfana": false
+  },
+  {
+   "id": "F-735",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Time Discounting and Time Preference: A Critical Review (Journal of Economic Literature, 40(2):351-401)",
+   "autor": "Frederick, S.; Loewenstein, G.; O'Donoghue, T.",
+   "anio": "2002",
+   "huerfana": false
+  },
+  {
+   "id": "F-736",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Meta-Analysis of Present-Bias Estimation using Convex Time Budgets (The Economic Journal, 131:1788-1814 (fascículo no visto))",
+   "autor": "Imai, T.; Rutter, T. A.; Camerer, C. F.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-737",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The illusion of control (Journal of Personality and Social Psychology (1975; volumen y páginas no vistos en fuente oficial))",
+   "autor": "Langer, E. J.",
+   "anio": "1975",
+   "huerfana": false
+  },
+  {
+   "id": "F-738",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Recent developments in the experimental investigation of the illusion of control. A meta-analytic review (Journal of Applied Social Psycholo",
+   "autor": "Stefan, S.; David, D.",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-739",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Predicting Adolescent Cognitive and Self-Regulatory Competencies From Preschool Delay of Gratification: Identifying Diagnostic Conditions (D",
+   "autor": "Shoda, Y.; Mischel, W.; Peake, P. K.",
+   "anio": "1990",
+   "huerfana": false
+  },
+  {
+   "id": "F-740",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Revisiting the Marshmallow Test: A Conceptual Replication Investigating Links Between Early Delay of Gratification and Later Outcomes (Psych",
+   "autor": "Watts, T. W.; Duncan, G. J.; Quan, H.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-741",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Disfluent fonts don't help people solve math problems (Journal of Experimental Psychology: General, 144(2):e16-e30)",
+   "autor": "Meyer, A.; Frederick, S.; Burnham, T. C.; Guevara Pinto, J. D.; Boyer, T. W.; Ball, L. J.; Pennycook, G.; Ackerman, R.; Thompson, V. A.; Schuldt, J. P.",
+   "anio": "2015",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -5973,6 +6826,12 @@
   },
   {
    "s": "behavioral-design-estado-disciplina",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
    "recip": true
@@ -6027,6 +6886,12 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "mecanismos-seguros-salud",
    "k": "wikilink",
    "recip": true
@@ -6058,6 +6923,12 @@
   {
    "s": "convergencia-psicologia-economia-ia",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
   },
@@ -6099,6 +6970,48 @@
   },
   {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "material-visual-venta-consultiva",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "modelo-personas-sinteticas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
    "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
@@ -6184,6 +7097,12 @@
   {
    "s": "material-visual-venta-consultiva",
    "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "material-visual-venta-consultiva",
+   "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
   },
@@ -6297,6 +7216,12 @@
   },
   {
    "s": "modelo-personas-sinteticas",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-personas-sinteticas",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -6393,6 +7318,12 @@
   },
   {
    "s": "seguros-comportamiento-mundo-peru",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
    "t": "futuro-asesores-seguros-venta-digital",
    "k": "wikilink",
    "recip": true
@@ -6466,6 +7397,12 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
   },
@@ -6741,6 +7678,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-17",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-17",
    "k": "cita"
@@ -6816,6 +7758,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-21",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-21",
    "k": "cita"
@@ -6847,6 +7794,11 @@
   },
   {
    "s": "convergencia-psicologia-economia-ia",
+   "t": "F-24",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
    "t": "F-24",
    "k": "cita"
   },
@@ -7671,6 +8623,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-220",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-220",
    "k": "cita"
@@ -7678,6 +8635,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-220",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-221",
    "k": "cita"
   },
   {
@@ -7691,6 +8653,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-222",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-222",
    "k": "cita"
@@ -7698,6 +8665,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-222",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-223",
    "k": "cita"
   },
   {
@@ -7711,6 +8683,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-224",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-224",
    "k": "cita"
@@ -7721,6 +8698,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-225",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-225",
    "k": "cita"
@@ -7728,6 +8710,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-225",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-226",
    "k": "cita"
   },
   {
@@ -9346,6 +10333,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-545",
+   "k": "cita"
+  },
+  {
    "s": "convergencia-psicologia-economia-ia",
    "t": "F-546",
    "k": "cita"
@@ -9726,6 +10718,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-615",
+   "k": "cita"
+  },
+  {
    "s": "convergencia-psicologia-economia-ia",
    "t": "F-616",
    "k": "cita"
@@ -9903,6 +10900,481 @@
   {
    "s": "modelo-salud-ia-farmacias-peru",
    "t": "F-646",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-647",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-648",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-649",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-650",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-651",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-652",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-653",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-654",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-655",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-656",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-657",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-658",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-659",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-660",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-661",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-662",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-663",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-664",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-665",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-666",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-667",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-668",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-669",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-670",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-671",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-672",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-673",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-674",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-675",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-676",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-677",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-678",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-679",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-680",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-680",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-681",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-682",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-683",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-684",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-685",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-686",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-687",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-688",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-689",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-690",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-691",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-692",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-693",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-694",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-695",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-696",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-697",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-698",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-699",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-700",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-701",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-702",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-703",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-704",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-705",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-706",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-707",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-708",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-709",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-710",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-711",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-712",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-713",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-714",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-715",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-716",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-717",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-718",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-719",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-720",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-721",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-722",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-723",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-724",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-725",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-726",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-727",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-728",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-729",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-730",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-731",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-732",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-733",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-735",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-736",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-737",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-738",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-739",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-740",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-741",
    "k": "cita"
   }
  ],
@@ -10148,11 +11620,13 @@
    },
    {
     "fecha": "2026-10-04",
-    "nuevas": 1,
-    "acumuladas": 646,
-    "AB": 1,
+    "nuevas": 95,
+    "acumuladas": 740,
+    "AB": 94,
     "rigor": {
-     "A": 1
+     "A": 90,
+     "B": 4,
+     "D": 1
     }
    }
   ],
@@ -12102,7 +13576,7 @@
      "cites": 273
     },
     "fecha": "2026-10-04",
-    "commit": "2d81635",
+    "commit": "81f8c9e",
     "fuente": "git"
    }
   ],
@@ -12122,7 +13596,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 2000,
+   "lines": 2001,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

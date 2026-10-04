@@ -1997,3 +1997,4 @@ aleatoria de cualquiera de las dos lo devolvería a 16%, y así debe registrarse
   que **el emisor citado la haya publicado**, no solo que la cifra suene plausible.
 - [[conducta-humano-ia|Conducta humano-IA]] — consolida y extiende la evidencia de su §2.2 (explicabilidad, sobre-confianza) con adulación, persuasión y descarga cognitiva, y mantiene allí las reglas RP1-RP5 derivadas de C8/C11.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — confronta la tendencia de usuarios sintéticos en UX con la literatura (refutada para magnitudes y segmentos, útil para dirección) y documenta la IA como canal de descubrimiento de compras (F-634).
+- [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — capa contra la que confrontar la psicología del color (el efecto del rojo no replicó, F-680) y las "leyes" de UX que circulan en el gremio.

@@ -1,0 +1,250 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-717",
+  "F-718",
+  "F-719",
+  "F-720",
+  "F-721",
+  "F-722",
+  "F-723",
+  "F-724",
+  "F-725",
+  "F-726"
+ ],
+ "entidades": [
+  {
+   "id": "recuerdo_desagrado",
+   "nombre": "Desagrado recordado de un procedimiento",
+   "tipo": "resultado"
+  },
+  {
+   "id": "retorno_procedimiento",
+   "nombre": "Retorno para repetir el procedimiento (adherencia)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "exposicion_repetida",
+   "nombre": "Exposición repetida a un estímulo",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "agrado_estimulo",
+   "nombre": "Agrado por un estímulo (actitud afectiva)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "modalidad_estimulo",
+   "nombre": "Modalidad y duración de presentación del estímulo (visual vs. auditivo; segundos de exposición)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_mera_exposicion_u_invertida",
+   "nombre": "La exposición repetida aumenta el agrado siguiendo una U invertida",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "control_malentendidos",
+   "nombre": "Procedimientos que controlan malentendidos sobre cómo se elicita el valor (entrenamiento, rondas de práctica)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_brecha_wta_persiste",
+   "nombre": "La brecha WTA-WTP persiste aun con controles de malentendidos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_dotacion_artefacto_procedimiento",
+   "nombre": "La brecha entre lo que se pide por vender (WTA) y lo que se paga por comprar (WTP) es un artefacto del procedimiento",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_aversion_perdida_no_general",
+   "nombre": "En balance, las pérdidas no tienen más impacto que las ganancias",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_aversion_perdida_general",
+   "nombre": "Las pérdidas pesan más que las ganancias equivalentes como principio general",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "conocimiento_atributo",
+   "nombre": "Conocimiento del consumidor sobre el atributo o dominio que se decide",
+   "tipo": "constructo"
+  },
+  {
+   "id": "edad_consumidor",
+   "nombre": "Edad del consumidor",
+   "tipo": "constructo"
+  },
+  {
+   "id": "c_aversion_perdida_moderada",
+   "nombre": "La aversión a la pérdida existe pero tiene moderadores (conocimiento, edad)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "rango_ganancias_perdidas",
+   "nombre": "Rango de ganancias y pérdidas que la persona ve al elicitar sus preferencias",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_aversion_perdida_reversible",
+   "nombre": "La aversión a la pérdida desaparece o se invierte según el rango de montos vistos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "invarianza_medicion",
+   "nombre": "Violación de la invarianza de medición (se comparan estimaciones hechas sobre loterías distintas)",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "final_menos_aversivo",
+   "p": "reduce",
+   "o": "recuerdo_desagrado",
+   "f": "F-717",
+   "apoyo": "Redelmeier, Katz & Kahneman 2003 (RCT, n=682): agregar un final breve y menos doloroso a la colonoscopía hizo que se recordara como menos desagradable.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "final_menos_aversivo",
+   "p": "aumenta",
+   "o": "retorno_procedimiento",
+   "f": "F-717",
+   "apoyo": "Redelmeier et al. 2003: quienes tuvieron el final extendido volvieron ligeramente más a repetirse la colonoscopía (el abstract leído no da la cifra).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "intensidad_pico_final",
+   "p": "asocia_con",
+   "o": "evaluacion_retrospectiva",
+   "f": "F-718",
+   "apoyo": "Alaybek et al. 2022 (meta-análisis, 174 efectos): pico-final sobre la evaluación retrospectiva r=0,581 (IC95% 0,487-0,661); comparable al promedio de todos los momentos.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "evaluacion_retrospectiva",
+   "p": "tiene_limite",
+   "o": "negligencia_duracion",
+   "f": "F-718",
+   "apoyo": "Alaybek et al. 2022: el efecto de la duración de la experiencia sobre el juicio global fue esencialmente nulo.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "exposicion_repetida",
+   "p": "aumenta",
+   "o": "agrado_estimulo",
+   "f": "F-719",
+   "apoyo": "Zajonc 1968: manipular experimentalmente la frecuencia de exposición a palabras sin sentido y símbolos elevó su connotación afectiva positiva (sin d resumido en el abstract).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "exposicion_repetida",
+   "p": "aumenta",
+   "o": "agrado_estimulo",
+   "f": "F-720",
+   "apoyo": "Montoya et al. 2017 (268 curvas, 81 artículos): pendiente positiva con término cuadrático negativo; el agrado sube con la repetición y luego cae (U invertida).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "modalidad_estimulo",
+   "p": "modera",
+   "o": "c_mera_exposicion_u_invertida",
+   "f": "F-720",
+   "apoyo": "Montoya et al. 2017: la U invertida aparece con estímulos visuales pero no auditivos, y con exposiciones menores a 10 s o mayores a 1 min.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "control_malentendidos",
+   "p": "reduce",
+   "o": "efecto_dotacion",
+   "f": "F-721",
+   "apoyo": "Plott & Zeiler 2005: con entrenamiento y controles de malentendidos sobre la elicitación, la brecha WTA-WTP para tazas se puede 'encender y apagar'.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_brecha_wta_persiste",
+   "p": "contradice",
+   "o": "c_dotacion_artefacto_procedimiento",
+   "f": "F-722",
+   "apoyo": "Fehr, Hakimov & Kübler 2015: replicando los controles de Plott & Zeiler (entrenamiento, práctica BDM), la brecha WTA-WTP por una taza persistió. Tensión total con la tesis del artefacto.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_aversion_perdida_no_general",
+   "p": "contradice",
+   "o": "c_aversion_perdida_general",
+   "f": "F-723",
+   "apoyo": "Gal & Rucker 2018 (revisión): la evidencia no respalda que las pérdidas, en balance, tengan más impacto que ganancias equivalentes. Tensión total con el principio general.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "conocimiento_atributo",
+   "p": "reduce",
+   "o": "aversion_perdida",
+   "f": "F-724",
+   "apoyo": "Mrkva et al. 2020 (5 muestras, N=17.720): quien sabe más de un atributo del auto es menos averso a perder en ese atributo, no en otros.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "edad_consumidor",
+   "p": "asocia_con",
+   "o": "aversion_perdida",
+   "f": "F-724",
+   "apoyo": "Mrkva et al. 2020: los consumidores mayores fueron más aversos a la pérdida en distintas medidas y estudios.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_aversion_perdida_moderada",
+   "p": "contradice",
+   "o": "c_aversion_perdida_no_general",
+   "f": "F-724",
+   "apoyo": "Mrkva et al. 2020: la aversión a la pérdida aparece y tiene moderadores; dudan de que sea una falacia. Tensión parcial: acepta que depende del contexto.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "rango_ganancias_perdidas",
+   "p": "modera",
+   "o": "c_aversion_perdida_general",
+   "f": "F-725",
+   "apoyo": "Walasek & Stewart 2015 (4 experimentos): según el rango de montos mostrados se obtuvo aversión a la pérdida, neutralidad o su inversión.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_aversion_perdida_reversible",
+   "p": "contradice",
+   "o": "c_aversion_perdida_general",
+   "f": "F-725",
+   "apoyo": "Walasek & Stewart 2015: si el rango de montos invierte la aversión, no es un rasgo fijo. Tensión parcial; resultado luego cuestionado (André & de Langhe 2021).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_aversion_perdida_reversible",
+   "p": "tiene_limite",
+   "o": "invarianza_medicion",
+   "f": "F-726",
+   "apoyo": "André & de Langhe 2021: la 'inversión' sale de comparar estimaciones hechas sobre loterías distintas por condición; con loterías comunes el patrón desaparece.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}
