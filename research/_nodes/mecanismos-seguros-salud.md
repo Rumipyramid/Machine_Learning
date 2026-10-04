@@ -89,8 +89,8 @@ legalmente a los aseguradores a destinar al menos 80% (pólizas individuales/gru
 pequeño) u 85% (grupo grande) de cada prima a atención médica o mejora de calidad — el
 resto (administración + utilidad) no puede superar 15-20% de la prima, y si lo supera,
 el excedente se devuelve como reembolso a los asegurados (entre 2012-2023 se devolvieron
-USD 11,800 millones en reembolsos por este motivo — HealthCare.gov/Commonwealth Fund,
-F-197, 🔵B). **Esto es un techo de utilidad puesto por diseño regulatorio**, no solo el
+unos USD 11,800 millones en reembolsos según KFF — cifra sin fuente primaria registrada; F-197, 🔵B,
+documenta la regla y su efecto amortiguador con datos 2015-2017 *(corregido 2026-10-04 con autorización del usuario)*). **Esto es un techo de utilidad puesto por diseño regulatorio**, no solo el
 resultado de competencia de mercado — un dato importante para no asumir que un margen
 delgado significa automáticamente una industria en crisis: en parte es una industria
 regulada explícitamente para que no gane más de cierto umbral sobre la prima pura.

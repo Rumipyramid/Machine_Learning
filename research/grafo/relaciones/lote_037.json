@@ -210,7 +210,8 @@
   {
    "f": "F-181",
    "detalle": "La ficha dice 'hasta USD 15.000 millones'; el artículo dice 'más de US$15.000 millones' (y solo de seis aseguradoras), así que es un piso, no un techo.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   }
  ],
  "notas": "Lote del avance a N6 (grupo n6_2): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."

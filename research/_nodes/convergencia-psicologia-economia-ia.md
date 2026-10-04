@@ -1,7 +1,7 @@
 # Convergencia psicología + economía + IA: qué se está juntando, qué funciona y qué es humo
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-03 · Última actualización: 2026-10-03 · Versión: **v1.0 (iteración 1, `/trinidad`: empírica + social + negocio)**
+> Fecha de elaboración: 2026-10-03 · Última actualización: 2026-10-04 · Versión: **v1.0 (iteración 1, `/trinidad`: empírica + social + negocio)**
 > Origen: pedido del usuario: *"investigación profunda de cómo están acercándose la psicología, la economía y la IA"*.
 > Fuentes en `research/fuentes/codice.md`: **nuevas F-543 a F-645** (empírica F-543 a F-598 · social F-599 a F-616 · negocio F-617 a F-645) · ya existentes que se reusan: F-16, F-17, F-20, F-21, F-24, F-25, F-27, F-29, F-257, F-488, F-489, F-495, F-499, F-542.
 > Pregunta permanente: **¿en qué se están fundiendo la psicología, la economía y la IA, qué de eso tiene evidencia y qué implica para un equipo que diseña conducta en seguros y usa usuarios sintéticos (`lapuerta`)?**
@@ -145,7 +145,7 @@ Validez = resultados publicados y verificables. Casi todo lo de esta pista es **
 
 ### 4.4 Conducta + IA en servicios financieros y seguros
 - **Lemonade:** loss ratio bruto de 60% en el 2T 2026 (67% un año antes), prima en vigor +32% (F-636, filing leído vía extracto). Crece y mejora, pero **el filing no atribuye la mejora a la IA**.
-- **Discovery Vitality:** utilidad de Vitality +21% (F-637) y estudio propio con 465 mil miembros: −57% de mortalidad en quienes se activan (F-638, sin descartar autoselección). Es el único caso de **tesis de negocio conductual sostenida por décadas** con utilidades (ver F-25).
+- **Discovery Vitality:** utilidad de Vitality +41% en el semestre a dic-2025 (F-637; corregido 2026-10-04: decía +21% anual) y estudio propio con 465 mil miembros: −57% de mortalidad en quienes se activan (F-638, sin descartar autoselección). Es el único caso de **tesis de negocio conductual sostenida por décadas** con utilidades (ver F-25).
 - **Fintech "conductual":** Wealthfront gana 76% de su ingreso con intereses, no con coaching (F-642); Cleo crece (F-640) pero pagó US$17M a la FTC por patrones oscuros (F-641). El asistente Erica tiene 20,6 M de usuarios, pero interacción no es resultado (F-639).
 - **Perú:** solo un caso docente sobre Rímac escalando IA (F-645, no se pudo abrir). **No hay evidencia de nudging con IA medido en aseguradoras peruanas.**
 

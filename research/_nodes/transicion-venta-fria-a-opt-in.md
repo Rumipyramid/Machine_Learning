@@ -1,7 +1,7 @@
 # Transición de venta fría a venta opt-in: cómo lo hacen las organizaciones
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-07-14 · Versión: v1.0
+> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-10-04 · Versión: v1.0
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 
 ---
@@ -125,9 +125,10 @@ desconfianza en seguros documentado en `seguros-comportamiento-mundo-peru.md`, �
 
 - **Explicar "por qué pedimos este dato" en cada campo**, no solo tener un aviso de
   privacidad genérico al final. Baymard Institute (F-145, testeo de usabilidad documentado)
-  encuentra que esto reduce fricción percibida directamente; en checkout, cada campo después
-  del 8vo reduce la tasa de finalización 4-6%, y 26% de abandonos ocurren solo porque el
-  formulario se percibió largo o complejo — aplicable directamente al formulario de
+  encuentra que esto reduce fricción percibida directamente; en checkout, la mayoría de sitios necesita
+  solo 8 campos (el promedio usa 11,3) y 26% de usuarios abandonó una compra solo porque el
+  formulario se percibió largo o complejo *(corregido 2026-10-04 con autorización del usuario)*: decía que 'cada campo después del 8vo reduce la finalización
+  4-6%', cifra que no es de Baymard sino que circula atribuida a Formstack — aplicable directamente al formulario de
   autorregistro de la Estrategia 4.
 - **Pedir lo mínimo primero, no todo junto.** Un paper reciente y peer-reviewed (F-142,
   2025) confirma que secuenciar los campos en orden ascendente de intrusión (lo menos

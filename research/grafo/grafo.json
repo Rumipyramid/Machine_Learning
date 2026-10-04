@@ -31,7 +31,7 @@
   {
    "id": "futuro-asesores-seguros-venta-digital",
    "type": "node",
-   "lines": 386,
+   "lines": 389,
    "cites": 23,
    "design": false
   },
@@ -94,8 +94,8 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 335,
-   "cites": 18,
+   "lines": 336,
+   "cites": 19,
    "design": false
   },
   {
@@ -108,7 +108,7 @@
   {
    "id": "transicion-venta-fria-a-opt-in",
    "type": "node",
-   "lines": 324,
+   "lines": 325,
    "cites": 18,
    "design": false
   },
@@ -861,7 +861,7 @@
    "titulo": "Top international insurance markets / Global insurance market share by country",
    "autor": "NAIC (National Association of Insurance Commissioners), Government Affairs. s.f. (datos de 2022). Top International Insurance Markets (premium volume worldwide). Complemento: Statista, Insurance industry in the U.S. (datos OECD 2024). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'NAIC / Statista (agregando datos OECD)'",
    "anio": "2024-2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-81",
@@ -7007,6 +7007,11 @@
   },
   {
    "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-80",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
    "t": "F-85",
    "k": "cita"
   },
@@ -12097,7 +12102,7 @@
      "cites": 273
     },
     "fecha": "2026-10-04",
-    "commit": "6ffa0dd",
+    "commit": "4418924",
     "fuente": "git"
    }
   ],

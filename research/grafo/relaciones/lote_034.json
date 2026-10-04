@@ -202,17 +202,20 @@
   {
    "f": "F-636",
    "detalle": "Menor: la ficha da +32,4% para la prima en vigor; el filing y su cobertura reportan +32,5% (como F-509).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-8",
    "detalle": "La justificación de rigor dice 'método no detallado en la nota', pero la nota sí lo detalla: encuesta online del 24-26 de junio de 2024, N=1.003 adultos de 18-27 años.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-93",
    "detalle": "La ficha afirma que la mancomunación 'reduce el costo esperado por la ley de grandes números'; el brief dice lo contrario: un pool grande hace las primas más predecibles y estables, pero no necesariamente más bajas (depende del costo promedio de los inscritos).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-93",
@@ -223,7 +226,8 @@
   {
    "f": "F-145",
    "detalle": "'Cada campo adicional después del 8.º reduce la finalización 4-6%' no aparece en Baymard; una cifra similar (4-5% por campo) circula atribuida a Formstack, otra fuente. El óptimo de Baymard es 8 campos (no '7-8').",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   }
  ],
  "notas": "Lote del avance a N6 (grupo n6_0): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."

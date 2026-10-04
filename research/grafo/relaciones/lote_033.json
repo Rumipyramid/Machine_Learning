@@ -265,17 +265,20 @@
   {
    "f": "F-106",
    "detalle": "La URL de la ficha es el 8-K del 4T/año 2025 (000156865126000008), que no puede contener el MLR del 1T 2026; la cifra 75,4%→70,5% está en el 8-K del 1T 2026 (000156865126000036).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-131",
    "detalle": "La URL de la ficha (GAO-05-113, publicada en ene-2005) no puede contener la cifra de 107 M a fines de 2005; esa cifra viene del informe anual de la FTC del AF 2005 (jul-2006). Los 10 M en 4 días vienen de la nota de prensa de la FTC de 2003.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-191",
    "detalle": "La ficha dice que 'la complejidad del producto y la autoeficacia son factores críticos'; el abstract no estudia complejidad del producto y su proxy de autoeficacia (habilidades web) resultó NO significativo. Los determinantes respaldados son normas subjetivas, utilidad, facilidad de uso y seguridad web percibidas.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-191",
@@ -286,7 +289,8 @@
   {
    "f": "F-375",
    "detalle": "Las cifras de bancaseguros (80% Brasil, 25% Chile), 60-65% de corredores/agentes y >210.000 intermediarios provienen del 'Informe Global de Seguros 2025: en busca del crecimiento en América Latina' de McKinsey, no del artículo 'Bancassurance: it's time to go digital' enlazado en la ficha.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-375",

@@ -227,7 +227,8 @@
   {
    "f": "F-33",
    "detalle": "La ficha dice 'meta de ROE >18% y utilidad de €6.3B para 2026'. Según Munich Re, el RoE >18% es la meta de Ambition 2030 para el cierre de 2030, no para 2026; para 2026 la meta es la utilidad neta IFRS de €6.300M.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-104",
@@ -238,7 +239,8 @@
   {
    "f": "F-197",
    "detalle": "Los USD 11.800M de reembolsos 2012-2023 vienen de KFF (Data Note sobre reembolsos MLR de 2024), no de HealthCare.gov ni del brief de Commonwealth Fund de 2019, que analiza 2015-2017. Además, KFF los presenta como reembolsos emitidos, no explícitamente 'por incumplir'. Registrar KFF como fuente aparte o atribuir la cifra a KFF.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-197",

@@ -1,7 +1,7 @@
 # ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-07-27 · Versión: v1.0
+> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-10-04 · Versión: v1.0
 > (Actualización 2026-07-27, sin bump de versión, incremental: §3.7 ampliación sobre casos de
 > éxito comercial verificable en venta 100% digital de vida — Ethos, Bowtie, contraevidencia
 > Bestow/Singlife — afina la tesis existente, no la cambia.)
@@ -27,9 +27,9 @@ contraria: el intermediario humano no solo persiste, gana relevancia relativa.
   economía de la intermediación de seguros (Cummins & Doherty, 2006, canónico) explica
   *por qué* el agente persiste — no por falta de tecnología, sino porque cumple una
   función estructural (mitigar asimetría de información y selección adversa) que la
-  tecnología no elimina, solo puede automatizar parcialmente. Estudios más recientes
-  confirman que la complejidad del producto y la confianza moderan directamente la
-  disposición a comprar 100% online.
+  tecnología no elimina, solo puede automatizar parcialmente. Un estudio reciente
+  (F-192, revista no verificada) apunta a que la complejidad del producto pesa en la disposición
+  a comprar 100% online; F-191, que se citaba también aquí, no la mide *(corregido 2026-10-04 con autorización del usuario)*.
 - **Pista social/mediática:** no se encontró discusión directa de asesores debatiendo su
   propio futuro laboral (mismo vacío que ya reportaban otras investigaciones de este
   proyecto sobre contenido genuino de práctica entre pares). Pero sí apareció una señal
@@ -76,8 +76,11 @@ segundo.
 Dos estudios directos sobre compra de seguros online confirman el mismo patrón desde
 ángulos distintos. Un estudio en Malasia (Hanaysha et al., 2023, F-191, 🔵B) encuentra
 que la **confianza modera** la relación entre normas sociales e intención de compra de
-seguro de vida online, y que la complejidad del producto es un factor crítico junto con
-la autoeficacia del comprador. Un estudio independiente con consumidores reales de
+seguro de vida online, y que la utilidad, la facilidad de uso y la seguridad web percibidas
+impulsan la intención; las habilidades web del comprador no resultaron significativas. ⚠️ *Corregido
+2026-10-04 con autorización del usuario:* este párrafo decía que el estudio halla que "la complejidad
+del producto es un factor crítico junto con la autoeficacia"; el estudio no mide complejidad. **La tesis
+de esta sección queda apoyada solo por F-192 (revista no verificada): es más débil de lo que parecía.** Un estudio independiente con consumidores reales de
 seguros online (N=177, F-192, ⚠️ revista no verificada, tratar con cautela) confirma que
 la **complejidad percibida del producto** es un determinante significativo de
 satisfacción e intención de recompra — no un detalle menor del diseño de la web.
@@ -132,7 +135,7 @@ tiene una base social real, más allá de la teoría económica de §1.
 
 ### 3.1 Qué SÍ está en riesgo — y qué explícitamente no
 
-Un banco de inversión global cuantifica el riesgo real: hasta USD 15,000 millones en
+Un banco de inversión global cuantifica el riesgo real: más de USD 15,000 millones (solo seis aseguradoras; es un piso *(corregido 2026-10-04 con autorización del usuario)*) en
 comisiones de agentes independientes clasificadas como **"baja complejidad"** están en
 riesgo de desintermediación por IA (BofA Global Research vía Fortune, F-181, 🟡C) — pero
 el mismo informe señala explícitamente que los **riesgos comerciales grandes no están en

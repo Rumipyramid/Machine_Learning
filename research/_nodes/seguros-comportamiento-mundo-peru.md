@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-10-03 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-10-04 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -194,8 +194,9 @@ Pool total de primas: **~€6.9 billones**, +7.1% (Swiss Re Institute, 2025 — 
 | **P&C** | €2,320bn | +3.8% | Motor, propiedad, responsabilidad civil; alta frecuencia/baja severidad salvo catástrofes |
 | **Salud** | €1,688bn | **+12.3%** (el más rápido) | Envejecimiento + inflación médica + presión sobre sistemas públicos |
 
-**Concentración geográfica**: EE.UU. es el mercado más grande (~USD 3.22 billones, ~59.1% del
-mercado OECD); China #2 (~€754bn); EE.UU.+China+UK ≈ **55% de las primas globales** (NAIC/Statista).
+**Concentración geográfica**: EE.UU. es el mercado más grande (USD 3,06 billones, 44,45% del mundo con
+datos 2022 de la NAIC); China #2 (USD 698 mil M, 10,14%); EE.UU.+China+UK ≈ **60% de las primas globales**
+(F-80). *(corregido 2026-10-04 con autorización del usuario)*: decía ~USD 3,22 billones, 59,1% (cifra de Statista sobre la OECD) y ≈55%, mezclando series.
 
 **El más "comprado" en número de pólizas, probablemente**: el seguro vehicular de
 responsabilidad civil (TPL) — obligatorio por ley en la mayoría de países (UE, UK desde 1930,

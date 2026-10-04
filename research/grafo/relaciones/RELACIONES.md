@@ -481,30 +481,42 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-24** (2026-10-04, cerrada): URL apunta a una nota de Science (2023) sobre Gino, no al libro de Bazerman (MIT Press, 2025) que nombra el título; ficha compuesta. Falta editorial (MIT Press).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-106** (2026-10-04, abierta): La URL de la ficha es el 8-K del 4T/año 2025 (000156865126000008), que no puede contener el MLR del 1T 2026; la cifra 75,4%→70,5% está en el 8-K del 1T 2026 (000156865126000036).
-- ⚠️ **F-131** (2026-10-04, abierta): La URL de la ficha (GAO-05-113, publicada en ene-2005) no puede contener la cifra de 107 M a fines de 2005; esa cifra viene del informe anual de la FTC del AF 2005 (jul-2006). Los 10 M en 4 días vienen de la nota de prensa de la FTC de 2003.
-- ⚠️ **F-191** (2026-10-04, abierta): La ficha dice que 'la complejidad del producto y la autoeficacia son factores críticos'; el abstract no estudia complejidad del producto y su proxy de autoeficacia (habilidades web) resultó NO significativo. Los determinantes respaldados son normas subjetivas, utilidad, facilidad de uso y seguridad web percibidas.
+- ✅ **F-106** (2026-10-04, cerrada): La URL de la ficha es el 8-K del 4T/año 2025 (000156865126000008), que no puede contener el MLR del 1T 2026; la cifra 75,4%→70,5% está en el 8-K del 1T 2026 (000156865126000036).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
+- ✅ **F-131** (2026-10-04, cerrada): La URL de la ficha (GAO-05-113, publicada en ene-2005) no puede contener la cifra de 107 M a fines de 2005; esa cifra viene del informe anual de la FTC del AF 2005 (jul-2006). Los 10 M en 4 días vienen de la nota de prensa de la FTC de 2003.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
+- ✅ **F-191** (2026-10-04, cerrada): La ficha dice que 'la complejidad del producto y la autoeficacia son factores críticos'; el abstract no estudia complejidad del producto y su proxy de autoeficacia (habilidades web) resultó NO significativo. Los determinantes respaldados son normas subjetivas, utilidad, facilidad de uso y seguridad web percibidas.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-191** (2026-10-04, cerrada): Falta revista: Jindal Journal of Business Research, 12(2), 233-250.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-375** (2026-10-04, abierta): Las cifras de bancaseguros (80% Brasil, 25% Chile), 60-65% de corredores/agentes y >210.000 intermediarios provienen del 'Informe Global de Seguros 2025: en busca del crecimiento en América Latina' de McKinsey, no del artículo 'Bancassurance: it's time to go digital' enlazado en la ficha.
+- ✅ **F-375** (2026-10-04, cerrada): Las cifras de bancaseguros (80% Brasil, 25% Chile), 60-65% de corredores/agentes y >210.000 intermediarios provienen del 'Informe Global de Seguros 2025: en busca del crecimiento en América Latina' de McKinsey, no del artículo 'Bancassurance: it's time to go digital' enlazado en la ficha.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-375** (2026-10-04, cerrada): El artículo de McKinsey 'Bancassurance: it's time to go digital' es de 2019 (no 2023-2025); el informe MAPFRE sobre 2023 es de MAPFRE Economics.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-636** (2026-10-04, abierta): Menor: la ficha da +32,4% para la prima en vigor; el filing y su cobertura reportan +32,5% (como F-509).
-- ⚠️ **F-8** (2026-10-04, abierta): La justificación de rigor dice 'método no detallado en la nota', pero la nota sí lo detalla: encuesta online del 24-26 de junio de 2024, N=1.003 adultos de 18-27 años.
-- ⚠️ **F-93** (2026-10-04, abierta): La ficha afirma que la mancomunación 'reduce el costo esperado por la ley de grandes números'; el brief dice lo contrario: un pool grande hace las primas más predecibles y estables, pero no necesariamente más bajas (depende del costo promedio de los inscritos).
+- ✅ **F-636** (2026-10-04, cerrada): Menor: la ficha da +32,4% para la prima en vigor; el filing y su cobertura reportan +32,5% (como F-509).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
+- ✅ **F-8** (2026-10-04, cerrada): La justificación de rigor dice 'método no detallado en la nota', pero la nota sí lo detalla: encuesta online del 24-26 de junio de 2024, N=1.003 adultos de 18-27 años.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
+- ✅ **F-93** (2026-10-04, cerrada): La ficha afirma que la mancomunación 'reduce el costo esperado por la ley de grandes números'; el brief dice lo contrario: un pool grande hace las primas más predecibles y estables, pero no necesariamente más bajas (depende del costo promedio de los inscritos).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-93** (2026-10-04, cerrada): Año: 2017 (14-jul-2017), no 's.f.'.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-145** (2026-10-04, abierta): 'Cada campo adicional después del 8.º reduce la finalización 4-6%' no aparece en Baymard; una cifra similar (4-5% por campo) circula atribuida a Formstack, otra fuente. El óptimo de Baymard es 8 campos (no '7-8').
+- ✅ **F-145** (2026-10-04, cerrada): 'Cada campo adicional después del 8.º reduce la finalización 4-6%' no aparece en Baymard; una cifra similar (4-5% por campo) circula atribuida a Formstack, otra fuente. El óptimo de Baymard es 8 campos (no '7-8').
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-253** (2026-10-04, cerrada): Autor registrado como 'Varios': son Hyeongseok Kim y Seunghee Han (Chung-Ang University). Faltan volumen/número/artículo: Behavioral Sciences 15(10), 1323.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-80** (2026-10-04, abierta): La ficha da a EE.UU. ~US$3,22 billones de primas y 59,1% del mercado OECD. La NAIC dice US$3,06 billones (datos 2022) y 44,45% del mundo. Statista asocia el 59,1% de la OECD 2024 a US$1,76 billones. La ficha mezcla dos series y la cifra de 3,22 no aparece en ninguna fuente vista.
-- ⚠️ **F-80** (2026-10-04, abierta): 'EE.UU.+China+UK ≈ 55% de las primas globales' choca con la tabla de la NAIC, donde suman ~59,9% (44,45+10,14+5,28). La cifra de China '~EUR754bn' no sale de la NAIC (US$697.806M); parece de otra fuente (Allianz, EUR 745,6 mil M).
+- ✅ **F-80** (2026-10-04, cerrada): La ficha da a EE.UU. ~US$3,22 billones de primas y 59,1% del mercado OECD. La NAIC dice US$3,06 billones (datos 2022) y 44,45% del mundo. Statista asocia el 59,1% de la OECD 2024 a US$1,76 billones. La ficha mezcla dos series y la cifra de 3,22 no aparece en ninguna fuente vista.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
+- ✅ **F-80** (2026-10-04, cerrada): 'EE.UU.+China+UK ≈ 55% de las primas globales' choca con la tabla de la NAIC, donde suman ~59,9% (44,45+10,14+5,28). La cifra de China '~EUR754bn' no sale de la NAIC (US$697.806M); parece de otra fuente (Allianz, EUR 745,6 mil M).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-80** (2026-10-04, cerrada): Año '2024-2025': la tabla de la NAIC vista es de datos 2022 y su fecha de publicación no consta.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-376** (2026-10-04, abierta): 'El modelo phygital (agente comunitario + digital) duplica la retención a primer año' no aparece en el resumen del artículo. El 'doble' de McKinsey es la venta digital de seguros no-vida de los bancos campeones europeos frente a sus pares. 'Phygital' viene de Capgemini (World Insurance Report 2021). El dato parece mal atribuido y además se lleva de Europa a mass market LatAm sin respaldo.
+- ✅ **F-376** (2026-10-04, cerrada): 'El modelo phygital (agente comunitario + digital) duplica la retención a primer año' no aparece en el resumen del artículo. El 'doble' de McKinsey es la venta digital de seguros no-vida de los bancos campeones europeos frente a sus pares. 'Phygital' viene de Capgemini (World Insurance Report 2021). El dato parece mal atribuido y además se lleva de Europa a mass market LatAm sin respaldo.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-376** (2026-10-04, cerrada): Año 's.f.': es de marzo de 2019; autores Bueno, Dinis, Kotanko, Maggiora y Neves.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-637** (2026-10-04, abierta): La ficha da para Vitality R3.880M (+21%) y para el grupo R17.750M (+17%) en el 'FY2026'. El artículo en la URL cubre el interino (6 meses a dic-2025): Vitality R2.120M (+41%). Las cifras de la ficha no aparecen en la fuente; quizá son de otro periodo o documento.
+- ✅ **F-637** (2026-10-04, cerrada): La ficha da para Vitality R3.880M (+21%) y para el grupo R17.750M (+17%) en el 'FY2026'. El artículo en la URL cubre el interino (6 meses a dic-2025): Vitality R2.120M (+41%). Las cifras de la ficha no aparecen en la fuente; quizá son de otro periodo o documento.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-637** (2026-10-04, cerrada): Periodo mal rotulado: no son resultados FY2026 completos, sino el interino al 31-dic-2025, publicado el 3-mar-2026.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-32** (2026-10-04, cerrada): La URL solo apunta al comunicado FY2025 (27-feb-2026); las cifras Q1 2026 (ROE 23,6% vs. 22,4%) vienen de un comunicado distinto del 7-may-2026 (pr-20260507-q1-2026).
@@ -519,13 +531,16 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-103** (2026-10-04, cerrada): Emisor 'American Academy of Actuaries (The Actuary Magazine)': The Actuary es la revista de la Society of Actuaries; el análisis 'worked as intended' es de la American Academy of Actuaries (abr-2016). Falta autor y año.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-181** (2026-10-04, abierta): La ficha dice 'hasta USD 15.000 millones'; el artículo dice 'más de US$15.000 millones' (y solo de seis aseguradoras), así que es un piso, no un techo.
+- ✅ **F-181** (2026-10-04, cerrada): La ficha dice 'hasta USD 15.000 millones'; el artículo dice 'más de US$15.000 millones' (y solo de seis aseguradoras), así que es un piso, no un techo.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-258** (2026-10-04, cerrada): Falta la sede: el trabajo aparece listado en ACL Anthology como Findings of ACL 2026 (2026.findings-acl.74); la ficha lo registra solo como preprint sin revisión por pares. Confirmar antes de cambiar la rigurosidad.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-33** (2026-10-04, abierta): La ficha dice 'meta de ROE >18% y utilidad de €6.3B para 2026'. Según Munich Re, el RoE >18% es la meta de Ambition 2030 para el cierre de 2030, no para 2026; para 2026 la meta es la utilidad neta IFRS de €6.300M.
+- ✅ **F-33** (2026-10-04, cerrada): La ficha dice 'meta de ROE >18% y utilidad de €6.3B para 2026'. Según Munich Re, el RoE >18% es la meta de Ambition 2030 para el cierre de 2030, no para 2026; para 2026 la meta es la utilidad neta IFRS de €6.300M.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-104** (2026-10-04, cerrada): El emisor primario es Discovery Limited (comunicado de resultados interinos al 31-dic-2025, publicado ~3-mar-2026); conviene citar ese comunicado además de la nota de InsuranceBiz y precisar el período.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-197** (2026-10-04, abierta): Los USD 11.800M de reembolsos 2012-2023 vienen de KFF (Data Note sobre reembolsos MLR de 2024), no de HealthCare.gov ni del brief de Commonwealth Fund de 2019, que analiza 2015-2017. Además, KFF los presenta como reembolsos emitidos, no explícitamente 'por incumplir'. Registrar KFF como fuente aparte o atribuir la cifra a KFF.
+- ✅ **F-197** (2026-10-04, cerrada): Los USD 11.800M de reembolsos 2012-2023 vienen de KFF (Data Note sobre reembolsos MLR de 2024), no de HealthCare.gov ni del brief de Commonwealth Fund de 2019, que analiza 2015-2017. Además, KFF los presenta como reembolsos emitidos, no explícitamente 'por incumplir'. Registrar KFF como fuente aparte o atribuir la cifra a KFF.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-197** (2026-10-04, cerrada): Faltan los autores del brief de Commonwealth Fund (Mark A. Hall y Michael J. McCue, julio de 2019).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-336** (2026-10-04, cerrada): Falta la revista: Journal of Market Access & Health Policy (MDPI), 2025, 13(2):29.
@@ -538,16 +553,20 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-37** (2026-10-04, cerrada): Año 's.f.': el capítulo corresponde a la ENSUSALUD 2014 (INEI); conviene registrar la encuesta y el año 2014.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-69** (2026-10-04, abierta): La ficha se presenta como 'texto legal oficial primario' (rigor B) pero la URL apunta a un comentario del Estudio Ugaz, no al texto publicado en El Peruano (busquedas.elperuano.pe/api/visor_html/2397811-2).
-- ⚠️ **F-118** (2026-10-04, abierta): URL: apunta al comentario del Estudio Ugaz sobre la Ley 32323 (misma URL que F-69), no a la resolución de Indecopi ni a LP Derecho; el caso BBVA está en lpderecho.pe/indecopi-multa-bbva-realizar-llamadas-spam-resolucion-final-083-2025-cc3/.
+- ✅ **F-69** (2026-10-04, cerrada): La ficha se presenta como 'texto legal oficial primario' (rigor B) pero la URL apunta a un comentario del Estudio Ugaz, no al texto publicado en El Peruano (busquedas.elperuano.pe/api/visor_html/2397811-2).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
+- ✅ **F-118** (2026-10-04, cerrada): URL: apunta al comentario del Estudio Ugaz sobre la Ley 32323 (misma URL que F-69), no a la resolución de Indecopi ni a LP Derecho; el caso BBVA está en lpderecho.pe/indecopi-multa-bbva-realizar-llamadas-spam-resolucion-final-083-2025-cc3/.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-118** (2026-10-04, cerrada): Precisar que la Res. Final 083-2025/CC3 es de primera instancia (apelable) y que su difusión fue en enero de 2026.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-105** (2026-10-04, cerrada): Año: el comunicado de resultados 2025 es del 6-feb-2026 (la ficha dice 2024-2025 y mezcla con el '2024 Annual Report', que no corresponde a la URL).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-203** (2026-10-04, abierta): Las cifras '€9.000 M en FY2025' y '€2.400 M en 1T 2026 (+11,1%), impulsada por mejor resultado del servicio de seguros' corresponden al segmento Property-Casualty (Daños), no a Vida/Salud; Vida/Salud fue €1.354 M (−5,1%) en el 1T 2026. La nota de corrección existente no identifica que las cifras son de Daños.
+- ✅ **F-203** (2026-10-04, cerrada): Las cifras '€9.000 M en FY2025' y '€2.400 M en 1T 2026 (+11,1%), impulsada por mejor resultado del servicio de seguros' corresponden al segmento Property-Casualty (Daños), no a Vida/Salud; Vida/Salud fue €1.354 M (−5,1%) en el 1T 2026. La nota de corrección existente no identifica que las cifras son de Daños.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-374** (2026-10-04, cerrada): Emisor: los datos provienen del estudio 'Latam Insurtech Journey' de Digital Insurance LATAM (MAPFRE patrocina y difunde), no de una medición propia de la unidad de innovación de MAPFRE.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-465** (2026-10-04, abierta): URL genérica (https://www.cbinsights.com/, portada) que no apunta a ningún documento; los datos están en globalventuring.com (WoCV 2026) y cbinsights.com/research/report/venture-trends-2025/.
+- ✅ **F-465** (2026-10-04, cerrada): URL genérica (https://www.cbinsights.com/, portada) que no apunta a ningún documento; los datos están en globalventuring.com (WoCV 2026) y cbinsights.com/research/report/venture-trends-2025/.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-465** (2026-10-04, cerrada): El 68% del valor de deals de IA con CVC proviene de Bain (citado por Crunchbase News), emisor no listado en la ficha.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-518** (2026-10-04, cerrada): Autoría no capturada: Kim, Hyeongseok y Han, Seunghee; volumen 15(10), artículo 1323.

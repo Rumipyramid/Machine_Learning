@@ -248,12 +248,14 @@
   {
    "f": "F-69",
    "detalle": "La ficha se presenta como 'texto legal oficial primario' (rigor B) pero la URL apunta a un comentario del Estudio Ugaz, no al texto publicado en El Peruano (busquedas.elperuano.pe/api/visor_html/2397811-2).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-118",
    "detalle": "URL: apunta al comentario del Estudio Ugaz sobre la Ley 32323 (misma URL que F-69), no a la resolución de Indecopi ni a LP Derecho; el caso BBVA está en lpderecho.pe/indecopi-multa-bbva-realizar-llamadas-spam-resolucion-final-083-2025-cc3/.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-118",
@@ -270,7 +272,8 @@
   {
    "f": "F-203",
    "detalle": "Las cifras '€9.000 M en FY2025' y '€2.400 M en 1T 2026 (+11,1%), impulsada por mejor resultado del servicio de seguros' corresponden al segmento Property-Casualty (Daños), no a Vida/Salud; Vida/Salud fue €1.354 M (−5,1%) en el 1T 2026. La nota de corrección existente no identifica que las cifras son de Daños.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-374",
@@ -281,7 +284,8 @@
   {
    "f": "F-465",
    "detalle": "URL genérica (https://www.cbinsights.com/, portada) que no apunta a ningún documento; los datos están en globalventuring.com (WoCV 2026) y cbinsights.com/research/report/venture-trends-2025/.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-465",

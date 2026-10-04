@@ -188,12 +188,14 @@
   {
    "f": "F-80",
    "detalle": "La ficha da a EE.UU. ~US$3,22 billones de primas y 59,1% del mercado OECD. La NAIC dice US$3,06 billones (datos 2022) y 44,45% del mundo. Statista asocia el 59,1% de la OECD 2024 a US$1,76 billones. La ficha mezcla dos series y la cifra de 3,22 no aparece en ninguna fuente vista.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-80",
    "detalle": "'EE.UU.+China+UK ≈ 55% de las primas globales' choca con la tabla de la NAIC, donde suman ~59,9% (44,45+10,14+5,28). La cifra de China '~EUR754bn' no sale de la NAIC (US$697.806M); parece de otra fuente (Allianz, EUR 745,6 mil M).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-80",
@@ -204,7 +206,8 @@
   {
    "f": "F-376",
    "detalle": "'El modelo phygital (agente comunitario + digital) duplica la retención a primer año' no aparece en el resumen del artículo. El 'doble' de McKinsey es la venta digital de seguros no-vida de los bancos campeones europeos frente a sus pares. 'Phygital' viene de Capgemini (World Insurance Report 2021). El dato parece mal atribuido y además se lleva de Europa a mass market LatAm sin respaldo.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-376",
@@ -215,7 +218,8 @@
   {
    "f": "F-637",
    "detalle": "La ficha da para Vitality R3.880M (+21%) y para el grupo R17.750M (+17%) en el 'FY2026'. El artículo en la URL cubre el interino (6 meses a dic-2025): Vitality R2.120M (+41%). Las cifras de la ficha no aparecen en la fuente; quizá son de otro periodo o documento.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "f": "F-637",

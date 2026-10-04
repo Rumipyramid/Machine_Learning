@@ -1,7 +1,7 @@
 # Venta de seguros de vida en LATAM: modelo digital vs. híbrido vs. tradicional, y cómo performa cada uno
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-27 · Versión: v1.0
+> Fecha de elaboración: 2026-07-27 · Última actualización: 2026-10-04 · Versión: v1.0
 > Origen: `/marketer` — investigación de espectro de negocio
 > Pregunta original: ¿cómo están funcionando las aseguradoras de LATAM en venta de seguros
 > de vida — 100% digital, híbrido, o tradicional — y cómo performa cada modelo?
@@ -136,18 +136,18 @@ exista.
 | Financiamiento insurtech LATAM 2025 | USD 199M (+117% interanual) | Mapfre, F-374 |
 | Financiamiento insurtech LATAM 1S2026 | USD 90M | Mapfre, F-374 |
 | Insurtechs activas en la región | 530+ (Brasil 214, México 139, Chile 100) | Mapfre, F-374 |
-| Bancaseguros — % distribución vida/pensiones en Brasil | hasta 80% | Fundación Mapfre, F-375 |
-| Corredores/agentes — % de primas a nivel regional | 60-65% | Fundación Mapfre, F-375 |
-| Intermediarios registrados en la región | 210.000+ | Fundación Mapfre, F-375 |
+| Bancaseguros — % distribución vida/pensiones en Brasil | hasta 80% | McKinsey 2025, F-375 |
+| Corredores/agentes — % de primas a nivel regional | 60-65% | McKinsey 2025, F-375 |
+| Intermediarios registrados en la región | 210.000+ | McKinsey 2025, F-375 |
 | Primas totales LATAM 2023 | USD 203.354M (+17,1% vs. 2022) | Fundación Mapfre, F-375 |
-| Efecto de modelo "phygital" (agente comunitario + digital) sobre retención a 1er año | 2x vs. canales puros | McKinsey, F-376 |
+| ~~Efecto de modelo "phygital" sobre retención a 1er año~~ | ~~2x~~ — **sin respaldo**: no está en McKinsey (F-376 reporta que los bancos campeones europeos venden por digital el doble de no-vida que sus pares) *(corregido 2026-10-04 con autorización del usuario)* | F-376 |
 
 **Lectura de la tabla:** el financiamiento insurtech regional está creciendo rápido en términos
 relativos (+117%), pero en términos absolutos sigue siendo pequeño frente al tamaño del mercado
 de primas (USD 203.000M+) y frente a una sola ronda de un insurtech grande de un mercado
 desarrollado. El canal dominante en el mercado más grande de la región (Brasil) sigue siendo
-bancaseguros, y el modelo "phygital" —no el digital puro— es el que McKinsey documenta con mejor
-desempeño de retención.
+bancaseguros. ⚠️ Este párrafo decía que el modelo "phygital" es el que McKinsey documenta con mejor
+retención; ese dato no está en la fuente (el término viene de Capgemini) y queda sin respaldo *(corregido 2026-10-04 con autorización del usuario)*.
 
 ### Tabla de rigurosidad
 
@@ -156,8 +156,8 @@ desempeño de retención.
 | AméricaEconomía/BioBioChile/Emol (F-372) | Prensa regional, cobertura convergente | 🟡 C | Betterfly cierra en 5 países — probable eco de cita del mismo comunicado |
 | Endeavor Hub/Wikipedia (F-373) | Blog de aceleradora + enciclopedia | 🟠 D | Modelo de negocio de Betterfly (B2B2C bienestar) |
 | Fundación Mapfre, Insurtech LATAM (F-374) | Informe de innovación de aseguradora | 🔵 B | Financiamiento y tamaño del ecosistema insurtech regional |
-| Fundación Mapfre / McKinsey, Bancaseguros (F-375) | Informe + consultora | 🔵 B | Peso de bancaseguros y corredores en la distribución regional |
-| McKinsey, Bancaseguros digital (F-376) | Consultora | 🔵 B | Modelo "phygital" duplica retención a 1er año |
+| McKinsey 2025, Informe Global de Seguros: América Latina (F-375) | Informe + consultora | 🔵 B | Peso de bancaseguros y corredores en la distribución regional |
+| McKinsey, Bancaseguros digital (F-376) | Consultora | 🔵 B | Bancos europeos campeones venden por digital el doble de no-vida que sus pares (el 'phygital duplica retención' no está en la fuente) |
 | Revista Segurador Brasil/Bloomberg Línea/Forbes (F-377) | Prensa especializada, cobertura convergente | 🟡 C | Crecimiento y rondas de Azos — eco de cita en el monto de la ronda |
 | CNseg vía prensa (F-378) | Asociación gremial oficial | 🔵 B | Crecimiento 13% del seguro de vida individual en Brasil, 1S2025 |
 | La República (F-379) | Prensa financiera colombiana | 🟡 C | Utilidades de Sura/Bolívar — ⚠️ posible inconsistencia de año en el snippet recuperado |
