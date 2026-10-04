@@ -189,3 +189,6 @@
 | F-62 | 🔵 B | 2026-10-03 | Intuición 169 — validación técnica ≠ clínica: pedir qué evidencia de uso real respalda un sello de aprobación |
 | F-455 | 🔵 B | 2026-10-03 | Intuición 170 — un hallazgo que beneficia a quien lo publica se rebaja (no se descarta): separar dato de incentivo |
 | F-466 | 🔵 B | 2026-10-03 | Intuición 171 — un ranking de innovación se lee por insumos vs. productos; Perú rinde peor en lo que sale (91.º) que en lo que entra (72.º) |
+| F-481 | 🔵 B | 2026-10-04 | Intuición 172 — un combined ratio sano con prima plana no es buena noticia: mirar ratio, crecimiento y canal juntos (Root: 92,1%, prima −1%) |
+| F-488 | 🔵 B | 2026-10-04 | Intuición 173 — lo que el usuario califica mejor puede dañarlo; la satisfacción no audita un asesor de IA (adulación, Science 2026) |
+| F-516 | 🟢 A | 2026-10-04 | Intuición 174 — decidir vs. crear: en tareas de decisión el combo humano-IA rinde peor que el mejor solo (g = −0,23) |

@@ -850,6 +850,9 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   "digital = rentable" o "digital = insostenible" en cualquiera de las dos direcciones sería forzar una
   lectura que la evidencia todavía no sostiene.
 - **Actualizado:** 2026-08-03
+- **[Matiz 2026-10-04]** F-481/F-509/F-510 (Q2 2026): Root 92,1% pero prima −1%, acción −10%; Lemonade loss ratio
+  bruto 60% (7 pp de desarrollo favorable) con pérdida neta de US$43 M y acción −24%. El mercado exige crecimiento
+  rentable, no solo ratio sano. Confianza sin cambio (Alta en divergencia, Media-baja en causa).
 
 ## 💰 Oportunidades
 
@@ -5516,6 +5519,37 @@ puesto de Perú; no lo cito y queda como fecha de falsación pendiente para `cro
 - **Conexión razonada, no forzada:** node tendencias-diseno-innovacion (§12.4).
 
 
+### 172. Un combined ratio sano con prima plana no es una buena noticia para el mercado: la suscripción disciplinada compra tiempo, no valuación
+F-481 (Root, Q2 2026). Combined ratio neto 92,1% (vs. 95,2%), pero prima devengada −1% y acción −10%; en la
+búsqueda de hoy, 483.921 pólizas (+6%) y 51% de las nuevas ventas por socios/agentes independientes (44% hace un
+año). Es decir: la rentabilidad mejoró mientras el crecimiento se frenó y el canal se desplazó hacia terceros.
+**Heurística:** ante un insurtech "rentable", mirar siempre el trío ratio–crecimiento–canal; un ratio que mejora
+mientras se encoge puede ser selección de riesgo por retirada, no ventaja estructural.
+- **Fuente:** F-481 (🔵B)
+- **Leído a fondo:** 2026-10-04 (`WebSearch`; carta a accionistas no abierta)
+- **Conexión razonada, no forzada:** tesis 25.
+
+### 173. Lo que el usuario califica mejor puede ser lo que lo daña: la métrica de satisfacción no sirve para auditar un asesor de IA
+F-488 (Science, 2026). 11 modelos afirman las acciones del usuario 49% más que humanos; tres experimentos
+preregistrados (2.405 participantes): una sola interacción adulada sube la convicción de tener razón y baja la
+disposición a reparar, y aun así los usuarios la califican mejor, confían más y quieren volver. **Heurística:**
+si el incentivo de entrenamiento y la preferencia del usuario apuntan al mismo sesgo, la satisfacción/NPS es una
+métrica contaminada; exigir una prueba adversarial (el asesor debe poder decir "no te conviene") antes de lanzar.
+- **Fuente:** F-488 (🔵B)
+- **Leído a fondo:** 2026-10-04 (`WebSearch`; texto completo no abierto)
+- **Conexión razonada, no forzada:** tesis 22 y node conducta-humano-ia.
+
+### 174. Antes de poner IA "al lado" de un humano, preguntar si la tarea es de decidir o de crear: en decidir, el combo promedio rinde peor que el mejor solo
+F-516 (meta-análisis, 106 experimentos, 370 efectos). g = −0,23: las combinaciones humano-IA rinden en promedio
+peor que lo mejor de humano o IA por separado; las pérdidas se concentran en tareas de decisión y las ganancias en
+creación de contenido. **Heurística:** diseñar el reparto por tipo de tarea, no por entusiasmo; en decisiones de
+alto costo (suscripción, triage, reclamos) medir primero humano solo, IA sola y combo, y quedarse con el mejor.
+Límite: la ventana es 2020-2023, anterior a los modelos actuales.
+- **Fuente:** F-516 (🟢A según ledger)
+- **Leído a fondo:** 2026-10-04 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 9/23 (triage IA) y node conducta-humano-ia.
+
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5683,53 +5717,7 @@ puesto de Perú; no lo cito y queda como fecha de falsación pendiente para `cro
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
-  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis.
-- **2026-09-04** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
-  `git pull` fast-forward 5612e59→f6292dc, trajo el commit de ayer de esta opinión y de
-  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por
-  conteo directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó
-  la corrida de ayer (2026-09-03), **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimosegundo día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna
-  quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso —
-  el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`,
-  cada ~3 días, ya lleva veintitrés días sin correr; no lo disparo aquí porque es rutina de
-  `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición (trigésima corrida
-  desde el 2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A
-  **efectivamente marcadas como tal en su columna de rigurosidad** (no solo mencionando 🟢 en el
-  texto) y confirmé de nuevo **134 filas**, mismo número exacto que las últimas corridas — de esas
-  134, 84 ya tenían lectura profunda del Lobo; de las 50 restantes elegí 3 al azar puro (Python
-  `random.sample`, sin `--seed`): F-248 (Cao, Jiang & Xia, CHI 2025 — paper de UI generativa/
-  maleable ya citado en el ledger solo por su cifra de exactitud técnica agregada), F-352 (Desai
-  et al., Harvard Medical School / AJMC — ya citado en un documento externo del usuario solo por
-  su cifra de ahorro potencial de steering) y F-420 (guidance oficial de Figma para Q2 2026, ya
-  citado en `_nodes/tendencias-diseno-innovacion.md` §11.8 como la condición de falsación de H13,
-  planteada pero sin resolver). Las tres bloqueadas por el proxy en su URL directa (dl.acm.org y
-  arxiv.org para F-248; ajmc.com para F-352; investor.figma.com para F-420); reconstruidas vía
-  búsqueda dirigida (dblp + abstract indexado + metodología del estudio de usuario de 8
-  participantes para F-248; confirmación de metodología y cifras de la nota "static analysis"
-  para F-352; cobertura de prensa financiera sobre el reporte real del 5-ago-2026 y la reacción de
-  la acción para F-420) que confirman detalle de mecanismo nuevo en las tres, no solo el resumen de
-  una línea ya citado. Sumé las entradas 85, 86 y 87 de Intuición acumulada: (85) el estudio de
-  usuario detrás de la exactitud técnica de F-248 es cualitativo y de 8 participantes, sin
-  comparación formal contra interfaz de chat o GUI tradicional pese a plantear esa pregunta —
-  refuerza tesis 24 sin sumarse a su evidencia formal, porque mide una capacidad distinta; (86) la
-  cifra de ahorro de F-352 (42%/45%/15%) es un techo teórico de un análisis estático, no una
-  proyección de ahorro realizado — no modela fricción de implementación, y matiza (sin bajar la
-  confianza) la lectura de "ahorro real" de tesis 23; (87) el resultado real de Figma del
-  5-ago-2026 —revenue $370.1M/+48% YoY, muy por encima del guidance de F-420, y aun así la acción
-  cayó ~16.5%— parece confirmar la condición de falsación de H13 a primera vista, pero la prensa
-  financiera y el propio recorte de precio objetivo de Morgan Stanley atribuyen la caída a
-  compresión de margen por gasto en IA propia y desaceleración de guidance, no a descuento de
-  disrupción por IA competidora — una tercera explicación causal que produce el mismo patrón
-  observable (beat + cae) sin pasar por el mecanismo que H13 quería aislar; H13 sigue abierta, no
-  resuelta, y el resultado real de Figma todavía no está registrado como fuente propia en el
-  ledger. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
-  paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque la entrada
-  85 refuerza tesis 24, la 86 matiza tesis 23 y la 87 acota cómo leer H13 en el node de tendencias
-  cuando `/trinidad` o `/seeker` la retomen. Actualicé `research/lobo/fuentes_leidas_lobo.md` con
-  las tres fuentes leídas hoy. Bitácora con 28 días de historial (2026-08-08 a hoy), dentro de la
-  ventana de ~30 días — sin podar todavía.
+  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04).
 - **2026-09-05** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
   `git pull` fast-forward bf1c531→(este commit), working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos**
@@ -6786,3 +6774,20 @@ puesto de Perú; no lo cito y queda como fecha de falsación pendiente para `cro
   autorreportado) y 171 (Perú 80/139 en el GII 2025 con insumos 72.º y productos 91.º: el rezago está en convertir,
   no en invertir; la edición 2026 no la pude verificar). Poda: 09-03 fusionado al resumen; Bitácora cubre
   2026-09-04 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-04** — Corrida diaria de refinamiento. `main` al día (pull trajo grafo/relaciones, no tocó esta
+  opinión). El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`:
+  **528 filas (F-1 a F-528), +60 desde la última entrada (F-469 a F-528)**, primer movimiento del ledger en
+  días. Lectura de negocio de lo nuevo: (1) **Insurtech (tesis 25):** Root Q2 2026 (F-481) mantiene combined
+  ratio 92,1% pero con prima −1% y acción −10%; Lemonade (F-509/F-510) llega a loss ratio bruto 60% y pierde
+  24% en bolsa: el mercado castiga la falta de crecimiento rentable incluso con suscripción sana — matiz, sin
+  cambio de confianza. (2) **Perú (riesgos):** F-504/F-506 (Rímac utilidad −40% en 2T; sistema +1,1% en primas
+  1S) y F-505 (Mapfre Perú ratio combinado 102,4%) apuntan a compresión de rentabilidad, pero son 🟡C/🔵B sin
+  tabla SBS: instinto, no dato, hasta verificar; **no** subo ninguna confianza. (3) **Conducta humano-IA
+  (F-488 a F-503):** F-488 y F-489 dan base A/B a que la adulación y la persuasión de la IA son reales; F-499
+  (microtargeting no supera mensaje genérico) y F-518/F-519 refuerzan tesis 22 (personalizar no es gratis);
+  F-516 (🟢A) refuerza que el valor humano+IA está en crear, no en decidir — las comparaciones con asesor
+  conversacional de Rimac deben medirse en decisión. Varias filas son 🟡C/🟠D leídas solo por título
+  (F-494, F-497, F-500, F-501, F-503): no entran. **Intuición:** F-516 (🟢A nueva, prioridad por regla) más F-481 y
+  F-488 (🔵B, sorteo al azar), vía `WebSearch`. Entradas 172-174. Poda: 09-04 fusionado al resumen; Bitácora cubre
+  2026-09-05 a hoy. `fuentes_leidas_lobo.md` actualizado.
