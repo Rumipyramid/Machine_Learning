@@ -4,7 +4,7 @@
 > 📌 *Este node se llamaba `tendencias-diseno.md` hasta el 2026-08-02, cuando el alcance se amplió
 > de **diseño** a **diseño e innovación** (ver §0). Las iteraciones 1 a 3 (§1 a §11) cubren solo la
 > mitad de diseño; la mitad de innovación arranca en §12.*
-> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-10-03 · Versión: **v4.1 (iteración 5; 5f sin cambio estructural)**
+> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-10-04 · Versión: **v4.1 (iteración 5; 5f sin cambio estructural)**
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
 > demostrado y cuáles son propuestas todavía sin respaldo?**
@@ -327,7 +327,7 @@ reportes separados.*
 - La GUI clásica superó al chatbot en atractivo y satisfacción; el chatbot solo se prefirió ante cambios de plan (*Chat or Tap?*, F-250, 🟢A): contraevidencia al supuesto de que la interfaz conversacional es intrínsecamente mejor.
 - Un sistema de UI generativa/maleable se evaluó con estudio cualitativo y exactitud técnica (91,5%/96,9%) **sin línea base de desempeño del usuario** (F-248, 🟢A): ejemplo de manual de lo que C15 manda preguntar (¿qué se midió?).
 - Las explicaciones de IA aportan una ganancia **pequeña** sobre la sola predicción (meta-análisis de 2026, F-498, 🟢A) y la fricción cognitiva reduce la sobre-confianza más que la XAI convencional, con costo de aceptación (F-502, 🔵B): matiza C8 en ambos sentidos. La adulación de los modelos mejora la calificación del usuario mientras degrada su juicio (F-488, 🔵B, preprint): satisfacción no es calidad. *(Detalle en [[conducta-humano-ia|Conducta humano-IA]].)*
-- Base técnica del fenómeno que el gremio llama *sameness* estética: la homogeneización o *mode collapse* de los modelos (F-285, 🔵B).
+- Base técnica del fenómeno que el gremio llama *sameness* estética: la homogeneización o *mode collapse* de los modelos (F-285, 🟡C: preprint; rigor corregido 2026-10-04).
 
 **¿Cambia el diseño la conducta a escala? (refuerza C1, C2 y C14)**
 - Corregido el sesgo de publicación, el efecto promedio del nudge se debilita (F-16, F-17, F-18, 🟢A); los megastudies son el antídoto metodológico (F-20, 🟢A) y a escala administrativa el efecto cae de ~8,7 pp en la literatura académica a ~1,4 pp (*voltage drop*, F-21, 🟢A): **es la misma lógica de C2** (promesa de acumulación, no de transformación) medida en otro campo.
@@ -379,7 +379,7 @@ reportes separados.*
 - Los consumidores de seguros sufren miopía y *narrow framing* (F-3, 🟢A).
 
 **Claridad y divulgación: más información no es más comprensión (sustenta C12 con su límite)**
-- Los consumidores no entienden los términos de su seguro de salud (F-6, 🟢A; F-7, 🔵B: ~4% acertó las 10 preguntas en 2014).
+- Los consumidores no entienden los términos de su seguro de salud (F-6, 🟢A; F-7, 🔵B: 72% sabe qué es el deducible, pero solo 51% sabe calcular cuánto pagará con él). *Corregido 2026-10-04: decía '~4% acertó las 10 preguntas en 2014', cifra de Policygenius mal atribuida a KFF.*
 - Aun con divulgación clara y saliente el cambio de producto fue rarísimo (F-9, 🟢A) y los mandatos de "explicar mejor" fallan de forma sistemática (F-10, 🟢A): **comprensión ≠ conducta**.
 - Lo que sí movió la comprensión del seguro de vida: hacer saliente lo importante con resúmenes e íconos (+21%) y combinar lenguaje simple con calculadoras (+28%); simplificar solo el lenguaje no bastó (F-231, 🔵B). La información bien estructurada ayuda; la abundante no (F-124, 🔵B).
 - La publicidad de precio engañosa o incompleta reduce confianza en la fuente **y** disposición a comprar (F-176, 🟢A).

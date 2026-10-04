@@ -622,13 +622,15 @@
    "fecha": "2026-10-03",
    "f": "F-7",
    "detalle": "El resumen del ledger atribuye a KFF 2017 que 'en 2014 solo ~4% acertó las 10 preguntas y ~52% acertó 7/10' y que el coaseguro es el término menos entendido. El 4% corresponde a una encuesta de Policygenius (>2.000 asegurados), no a KFF; lo verificable de KFF 2017 es: 72% define el deducible, 67% el límite de gasto de bolsillo y 51% calcula bien un costo con deducible y copago. Hallazgo mal atribuido: su corrección requiere autorización.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "fecha": "2026-10-03",
    "f": "F-285",
    "detalle": "Rigor '🔵 B — sustento técnico, preprints con método explícito': la fuente es un preprint de un solo autor (arXiv 2601.06116); según la rúbrica, un preprint sin revisión corresponde a 🟡 C. Cambio de rigor: requiere autorización.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
   },
   {
    "fecha": "2026-10-03",

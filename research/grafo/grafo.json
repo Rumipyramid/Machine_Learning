@@ -2702,7 +2702,7 @@
   {
    "id": "F-285",
    "type": "fuente",
-   "rigor": "B",
+   "rigor": "C",
    "titulo": "Homogenization Problem in LLMs / Model collapse",
    "autor": "Rios-Sialer, I. (arXiv 2601.06116, 'The Homogenization Problem in LLMs: Towards Meaningful Diversity in AI Safety') — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Varios (arXiv)'",
    "anio": "2026",
@@ -9888,7 +9888,7 @@
   }
  ],
  "meta": {
-  "generado": "2026-10-03",
+  "generado": "2026-10-04",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -10051,11 +10051,11 @@
     "fecha": "2026-07-26",
     "nuevas": 92,
     "acumuladas": 328,
-    "AB": 30,
+    "AB": 29,
     "rigor": {
      "A": 21,
-     "C": 24,
-     "B": 9,
+     "C": 25,
+     "B": 8,
      "D": 25,
      "?": 5,
      "E": 8
@@ -12036,7 +12036,7 @@
      "cites": 273
     },
     "fecha": "2026-10-03",
-    "commit": "f710300",
+    "commit": "d80e14b",
     "fuente": "git"
    }
   ],

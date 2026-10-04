@@ -1,6 +1,6 @@
 # 🕸️ Grafo del segundo cerebro — ESTADO
 
-*Generado: 2026-10-03 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
+*Generado: 2026-10-04 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
 
 > **Transparencia:** cada cifra de este reporte sale de contar archivos del repo. Lo que no se puede medir está listado en §7. Un número alto aquí significa *más material y mejor enlazado*, **no** que el conocimiento sea *verdadero* ni que haya tenido impacto fuera del repo.
 
@@ -10,7 +10,7 @@
 |---|---|---|
 | Nodes (`_nodes/`) | 17 | 7,180 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 645 | 🟢A 179 · 🔵B 107 · 🟡C 169 · 🟠D 143 · 🔴E 33 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 645 | 🟢A 179 · 🔵B 106 · 🟡C 170 · 🟠D 143 · 🔴E 33 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 96 | recíprocas: 96 de 96 (100%) |
 | Fuentes citadas por ≥1 node | 540 de 645 | 84% del ledger; **105 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 89 | evidencia reutilizada entre temas |
@@ -24,7 +24,7 @@
 | Iteraciones de bitácora | 5 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02) | cuántas veces se confrontó el node |
 | Tamaño | 2,000 líneas | crecimiento ≠ calidad; ver trazabilidad |
 | Fuentes citadas explícitamente | 273 | F-n individuales dentro del node |
-| …de rigor A/B | 140 (51%) | solidez de la base |
+| …de rigor A/B | 139 (51%) | solidez de la base |
 | Hipótesis vivas | 35: abierta 15 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
 | **Falsabilidad ejercida** | 57% (20/35) | hipótesis que ya se movieron de `abierta` |
 | **Tasa de autocorrección** | 20% (4/20) | de las resueltas, cuántas se refutaron: 0% sostenido sería señal de confirmación sesgada |
@@ -76,7 +76,7 @@
 | 2026-07-23 | 12 | 219 | 3 | ███ |
 | 2026-07-24 | 16 | 235 | 11 | ████ |
 | 2026-07-25 | 1 | 236 | 1 | █ |
-| 2026-07-26 | 92 | 328 | 30 | ███████████████████████ |
+| 2026-07-26 | 92 | 328 | 29 | ███████████████████████ |
 | 2026-07-27 | 51 | 379 | 24 | █████████████ |
 | 2026-07-29 | 19 | 398 | 7 | █████ |
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
@@ -91,7 +91,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-16 | `3acec5d` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `f710300` | 645 | 17 | 4 | 96 | 540 | 2000 | 15 | 20 | 22 |
+| 2026-10-03 | `d80e14b` | 645 | 17 | 4 | 96 | 540 | 2000 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -121,7 +121,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2000 | 273 | 140 | 9/9 | 2026-10-03 | 2026-10-03 v4.1 |
+| `tendencias-diseno-innovacion` | 2000 | 273 | 139 | 9/9 | 2026-10-03 | 2026-10-04 v4.1 |
 | `convergencia-psicologia-economia-ia` | 244 | 115 | 49 | 6/6 | 2026-10-03 | 2026-10-03 v1.0 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
 | `conducta-humano-ia` | 141 | 41 | 28 | 6/6 | 2026-10-03 | 2026-10-03 v1.1 |

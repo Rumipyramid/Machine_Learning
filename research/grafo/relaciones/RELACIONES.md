@@ -1,6 +1,6 @@
 # 🧬 Grafo semántico del códice — RELACIONES
 
-*Generado 2026-10-03 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
+*Generado 2026-10-04 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
 
 > **Transparencia:** una relación aquí es lo que *una fuente dice*, no un hecho. `lectura=ficha` significa que solo se leyó el resumen del ledger; `abstract` que se leyó el resumen real de la fuente; `completa`, el texto íntegro. Un cruce entre fuentes es una *coincidencia de entidades*, no una prueba de que las fuentes sean compatibles.
 
@@ -10,7 +10,7 @@
 |---|---|
 | Fuentes procesadas | **161 de 645** (25.0%) |
 | …del cerebro de diseño (citadas en el node) | 119 de 273 |
-| …por rigor | A 110/179 · B 27/107 · C 20/169 · D 3/143 · E 1/33 |
+| …por rigor | A 110/179 · B 26/106 · C 21/170 · D 3/143 · E 1/33 |
 | Barridos | 24 |
 | Entidades | 377 |
 | Relaciones | 294 |
@@ -269,8 +269,10 @@
   - *Resolución:* Cerrada: hallazgo corregido en el ledger el 2026-10-03 con autorización del usuario (respuestas casi uniformes al aleatorizar el orden, con sesgos de orden y etiqueta).
 - ✅ **F-514** (2026-10-03, cerrada): Autoría 'Autoría no capturada — ScienceDirect' → Han, Z.; Tang, S. & Li, Z. (International Review of Economics & Finance, vol. 102, 2025).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente).
-- ⚠️ **F-7** (2026-10-03, abierta): El resumen del ledger atribuye a KFF 2017 que 'en 2014 solo ~4% acertó las 10 preguntas y ~52% acertó 7/10' y que el coaseguro es el término menos entendido. El 4% corresponde a una encuesta de Policygenius (>2.000 asegurados), no a KFF; lo verificable de KFF 2017 es: 72% define el deducible, 67% el límite de gasto de bolsillo y 51% calcula bien un costo con deducible y copago. Hallazgo mal atribuido: su corrección requiere autorización.
-- ⚠️ **F-285** (2026-10-03, abierta): Rigor '🔵 B — sustento técnico, preprints con método explícito': la fuente es un preprint de un solo autor (arXiv 2601.06116); según la rúbrica, un preprint sin revisión corresponde a 🟡 C. Cambio de rigor: requiere autorización.
+- ✅ **F-7** (2026-10-03, cerrada): El resumen del ledger atribuye a KFF 2017 que 'en 2014 solo ~4% acertó las 10 preguntas y ~52% acertó 7/10' y que el coaseguro es el término menos entendido. El 4% corresponde a una encuesta de Policygenius (>2.000 asegurados), no a KFF; lo verificable de KFF 2017 es: 72% define el deducible, 67% el límite de gasto de bolsillo y 51% calcula bien un costo con deducible y copago. Hallazgo mal atribuido: su corrección requiere autorización.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
+- ✅ **F-285** (2026-10-03, cerrada): Rigor '🔵 B — sustento técnico, preprints con método explícito': la fuente es un preprint de un solo autor (arXiv 2601.06116); según la rúbrica, un preprint sin revisión corresponde a 🟡 C. Cambio de rigor: requiere autorización.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario.
 - ✅ **F-124** (2026-10-03, cerrada): Año 2019 → 2017 (página oficial de la Comisión Europea).
   - *Resolución:* Cerrada: año corregido en el ledger el 2026-10-03 (regla permanente).
 - ✅ **F-519** (2026-10-03, cerrada): Autoría no capturada y revista 'Journal of Advertising' → Yeo, Chu y Li, Journal of Advertising Research 65(4).
