@@ -1,0 +1,248 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-517",
+  "F-266",
+  "F-436",
+  "F-461",
+  "F-539",
+  "F-317",
+  "F-283",
+  "F-272",
+  "F-534",
+  "F-537",
+  "F-316",
+  "F-318"
+ ],
+ "entidades": [
+  {
+   "id": "homogeneizacion_creativa",
+   "nombre": "Homogeneización del producto creativo entre usuarios",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mckinsey_design_index",
+   "nombre": "Índice de Diseño de McKinsey (MDI)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "casos_disrupcion_no_encajan",
+   "nombre": "Solo 7 de 77 casos ejemplares (9%) cumplen los cuatro elementos de la teoría de la disrupción",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "teatro_innovacion",
+   "nombre": "Teatro de la innovación (rituales de startup sin resultados de negocio)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "pilotos_genai_empresa",
+   "nombre": "Pilotos empresariales de IA generativa",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "impacto_pyg_genai",
+   "nombre": "Impacto medible en el estado de resultados de la IA generativa",
+   "tipo": "resultado"
+  },
+  {
+   "id": "alianzas_externas_ia",
+   "nombre": "Implementar IA con socios externos (frente a desarrollo interno)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "recorte_ideo_2023",
+   "nombre": "Recorte de 32% de la plantilla de IDEO y cierre de oficinas (2023)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "reporte_challenger",
+   "nombre": "Reporte Challenger de recortes de empleo anunciados",
+   "tipo": "metrica"
+  },
+  {
+   "id": "recortes_atribuidos_ia",
+   "nombre": "Recortes de empleo atribuidos a la IA por los empleadores",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_ia_principal_causa_despidos",
+   "nombre": "La IA es la principal causa de los despidos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "liquid_glass_ios26",
+   "nombre": "Rediseño Liquid Glass de iOS 26",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "rediseno_usabilidad",
+   "nombre": "Rediseño de usabilidad",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "mejora_kpi_rediseno",
+   "nombre": "Mejora de KPIs tras un rediseño de usabilidad",
+   "tipo": "resultado"
+  },
+  {
+   "id": "transformacion_digital",
+   "nombre": "Transformación digital de la organización",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "exito_transformacion",
+   "nombre": "Éxito sostenido de una transformación",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ideo_reinvencion",
+   "nombre": "IDEO se reinventa como formador en innovación más que vendedor de diseño",
+   "tipo": "concepto"
+  },
+  {
+   "id": "lanzamiento_claude_design",
+   "nombre": "Lanzamiento de Claude Design (17-abr-2026)",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "homogeneizacion_creativa",
+   "f": "F-517",
+   "apoyo": "Tilburg/Aarhus (de Rooij y Biskjaer), aceptado en ECCE 2026: revisión sistemática y metaanálisis (19 estudios, 61 tamaños de efecto) halla un efecto pequeño pero significativo de homogeneización asociado al uso de IA en la co-creación.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "mckinsey_design_index",
+   "p": "respalda",
+   "o": "c_diseno_firma",
+   "f": "F-266",
+   "apoyo": "McKinsey 2018: en 300 empresas cotizadas seguidas 5 años, las del cuartil superior del MDI crecieron 32% más en ingresos y 56% más en retorno al accionista que sus pares; consultora, sin replicación independiente.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "teoria_disrupcion",
+   "p": "tiene_limite",
+   "o": "casos_disrupcion_no_encajan",
+   "f": "F-436",
+   "apoyo": "MIT Sloan Management Review 2015 (King y Baatartogtokh): expertos evaluaron 77 casos de los libros de Christensen; solo 7 (9%) contenían los cuatro elementos de la teoría y la mayoría mostró fuerzas y resultados no previstos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teatro_innovacion",
+   "p": "reduce",
+   "o": "exito_proyecto_innovacion",
+   "f": "F-461",
+   "apoyo": "HBR 2019 (Blank): copiar rituales de startup en grandes empresas (hackatones, posters) produce 'teatro de la innovación' con muy poco resultado en ingresos o utilidades; propone una doctrina de innovación.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "pilotos_genai_empresa",
+   "p": "asocia_con",
+   "o": "impacto_pyg_genai",
+   "f": "F-539",
+   "apoyo": "MIT NANDA 2025 (153 líderes, 52 entrevistas, >300 implementaciones): el 95% de las organizaciones no obtiene retorno medible de sus pilotos de IA generativa; solo ~5% extrae valor. La barrera es que los sistemas no aprenden ni se adaptan.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "alianzas_externas_ia",
+   "p": "aumenta",
+   "o": "impacto_pyg_genai",
+   "f": "F-539",
+   "apoyo": "MIT NANDA 2025: las implementaciones con socios externos tienen el doble de tasa de éxito que los desarrollos internos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "recorte_ideo_2023",
+   "p": "respalda",
+   "o": "c_crisis_consultoras",
+   "f": "F-317",
+   "apoyo": "Fast Company 2023: IDEO elimina 32% de su plantilla en 2023 y cierra Múnich y Tokio; viene reduciendo personal desde 2020, cuando tenía 725 personas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reporte_challenger",
+   "p": "mide",
+   "o": "recortes_atribuidos_ia",
+   "f": "F-283",
+   "apoyo": "Challenger, Gray & Christmas, may-2026: la IA fue la razón más citada por tercer mes; 38.579 recortes en mayo (40% del total) y 87.714 en lo que va de 2026, más que los 54.836 de todo 2025.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "recortes_atribuidos_ia",
+   "p": "respalda",
+   "o": "c_ia_principal_causa_despidos",
+   "f": "F-283",
+   "apoyo": "Challenger 2026: los empleadores citan la IA más que cualquier otra razón; expertos advierten que puede usarse como chivo expiatorio (atribución declarada, no causa verificada).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "liquid_glass_ios26",
+   "p": "reduce",
+   "o": "usabilidad_funcional",
+   "f": "F-272",
+   "apoyo": "Nielsen Norman Group 2025 (Budiu), evaluación experta: la interfaz de iOS 26 es menos legible y menos predecible, prioriza el espectáculo visual y obliga a reaprender lo básico.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "rediseno_usabilidad",
+   "p": "aumenta",
+   "o": "mejora_kpi_rediseno",
+   "f": "F-534",
+   "apoyo": "Nielsen Norman Group 2008: la mejora promedio de KPIs tras un rediseño de usabilidad fue 83%, frente a 135% seis años antes; el retorno baja porque el costo se mantiene.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "transformacion_digital",
+   "p": "asocia_con",
+   "o": "exito_transformacion",
+   "f": "F-537",
+   "apoyo": "McKinsey 2018 (encuesta global): menos del 30% de las transformaciones tiene éxito y solo 16% de las digitales mejora el desempeño y lo sostiene; identifica 21 prácticas en 5 categorías.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ideo_reinvencion",
+   "p": "respalda",
+   "o": "c_crisis_consultoras",
+   "f": "F-316",
+   "apoyo": "Fortune, 16-may-2026: tras décadas de diseño centrado en las personas, IDEO se reinventa como formador en innovación; declinó comentar su plantilla e ingresos actuales.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lanzamiento_claude_design",
+   "p": "reduce",
+   "o": "precio_accion_figma",
+   "f": "F-318",
+   "apoyo": "VentureBeat, abr-2026: el lanzamiento de Claude Design se leyó como desafío directo a Figma y su acción cayó ~7% ese día; Mike Krieger había dejado el directorio de Figma el 14-abr.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lanzamiento_claude_design",
+   "p": "respalda",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-318",
+   "apoyo": "VentureBeat, abr-2026: la caída de Figma el día del lanzamiento es un caso concreto de que el mercado descuenta la disrupción por IA en herramientas de diseño.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Lote del cierre de N6, con fuentes verificadas directamente el 2026-10-04 (resúmenes oficiales, comunicados de los emisores o los propios artículos de prensa vía búsqueda). Se priorizaron fuentes conocidas y fáciles de verificar porque el cupo de búsquedas de los agentes se agotó."
+}

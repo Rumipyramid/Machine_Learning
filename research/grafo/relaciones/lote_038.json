@@ -1,0 +1,263 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-258",
+  "F-11",
+  "F-33",
+  "F-104",
+  "F-197",
+  "F-336",
+  "F-629",
+  "F-642",
+  "F-26",
+  "F-163"
+ ],
+ "entidades": [
+  {
+   "id": "glosario_seguros_sbs",
+   "nombre": "Glosario oficial de términos de seguros de la SBS",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "consumidores_seguros_peru",
+   "nombre": "Consumidores y usuarios de seguros en Perú",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "resultado_neto_munich_re_2025",
+   "nombre": "Resultado neto de Munich Re 2025 (~€6.100M; RoE 18,3%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "munich_re_ambition_2025",
+   "nombre": "Programa estratégico Ambition 2025 de Munich Re",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "vitality_drive",
+   "nombre": "Programa Vitality Drive de Discovery Insure (recompensas por conducción)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "utilidad_discovery_insure",
+   "nombre": "Utilidad operativa normalizada de Discovery Insure (+34%, R546M, interino a dic-2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "regla_mlr_80_20_aca",
+   "nombre": "Regla de medical loss ratio 80/20 de la ACA (reembolso si gasto médico < 80%/85%)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ciclos_rentabilidad_aseguradoras_salud",
+   "nombre": "Ciclos de ganancias y pérdidas de aseguradoras de salud (mercado individual EE.UU.)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "percepcion_lucro_aseguradora_salud",
+   "nombre": "Percepción de que la aseguradora de salud prioriza lucro y costos sobre necesidades individuales",
+   "tipo": "constructo"
+  },
+  {
+   "id": "ingresos_mind_gym",
+   "nombre": "Ingresos de Mind Gym (FY2025 £38,6M −14%; FY2026 £29,9M −23%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mind_gym",
+   "nombre": "Mind Gym plc (consultora de cambio conductual organizacional)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "ingresos_wealthfront",
+   "nombre": "Ingresos de Wealthfront (US$339M, 12 meses a jul-2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "gestion_efectivo_wealthfront",
+   "nombre": "Cuenta de gestión de efectivo de Wealthfront (ingreso por intereses)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reclamos_seguro_auto",
+   "nombre": "Gestión de reclamos de seguro vehicular (red de talleres asociados)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "mercado_seguro_parametrico_global",
+   "nombre": "Primas globales de seguro paramétrico (USD 16.200M en 2024; proyección USD 51.300M en 2034)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "generative_ui",
+   "p": "aumenta",
+   "o": "preferencia_interfaces_generativas",
+   "f": "F-258",
+   "apoyo": "arXiv/ACL Findings 2025-26 (Chen et al.): frente a interfaces de chat, las interfaces generativas logran hasta 72% de mejora en preferencia humana, en tareas, patrones de interacción y tipos de consulta diversos.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "generative_ui",
+   "p": "respalda",
+   "o": "c_generative_ui_gusta_mas",
+   "f": "F-258",
+   "apoyo": "arXiv 2025 (Chen et al.): las interfaces generativas superan consistentemente a las conversacionales en preferencia humana (hasta +72%), medido con un marco de evaluación diseñado por los propios autores.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "glosario_seguros_sbs",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-11",
+   "apoyo": "SBS (s.f.), Portal del Usuario: glosario oficial que define para el usuario términos como asegurado, aseguradora, AFOCAT, ajustador, solicitud de cobertura y solicitud de seguro.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "munich_re_ambition_2025",
+   "p": "asocia_con",
+   "o": "resultado_neto_munich_re_2025",
+   "f": "F-33",
+   "apoyo": "Munich Re 2026 (comunicado de resultados 2025): resultado neto de €6.100M por encima de la meta y RoE de 18,3%; la empresa dice haber cumplido o superado todas las metas de Ambition 2025.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "vitality_drive",
+   "p": "asocia_con",
+   "o": "utilidad_discovery_insure",
+   "f": "F-104",
+   "apoyo": "Discovery Limited 2026 (resultados interinos): la utilidad operativa normalizada de Discovery Insure subió 34% a R546M; la empresa la atribuye a mejores márgenes de suscripción y al desempeño de Vitality Drive.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "vitality_drive",
+   "p": "es_tipo_de",
+   "o": "diseno_incentivo_conductual",
+   "f": "F-104",
+   "apoyo": "Discovery Limited 2026: Vitality Drive es el programa de incentivos del modelo Shared-Value con el que la empresa explica la mejora de los márgenes de suscripción de Discovery Insure.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "regla_mlr_80_20_aca",
+   "p": "tiene_limite",
+   "o": "margen_salud_eeuu",
+   "f": "F-197",
+   "apoyo": "HealthCare.gov/CMS (s.f.): la regla 80/20 exige gastar ≥80% de la prima (≥85% en grupo grande) en atención y calidad; solo el resto puede ir a gastos administrativos, generales y de marketing, y el exceso se reembolsa.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "regla_mlr_80_20_aca",
+   "p": "reduce",
+   "o": "ciclos_rentabilidad_aseguradoras_salud",
+   "f": "F-197",
+   "apoyo": "Commonwealth Fund 2019 (Hall y McCue), con datos financieros 2015-2017: al calcular el MLR con promedio móvil de 3 años, la regla amortigua la severidad de los ciclos de ganancias y pérdidas del mercado individual.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "percepcion_lucro_aseguradora_salud",
+   "p": "reduce",
+   "o": "confianza_aseguradora",
+   "f": "F-336",
+   "apoyo": "J. Mark. Access Health Policy 2025 (van der Hulst et al.; 17 entrevistas, Países Bajos): algunos asegurados ven a la aseguradora movida por el lucro y priorizando costos, lo que genera insatisfacción; la confianza es baja.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "info_insuficiente_aseguradora",
+   "p": "reduce",
+   "o": "confianza_aseguradora",
+   "f": "F-336",
+   "apoyo": "J. Mark. Access Health Policy 2025 (van der Hulst et al.): la baja confianza en aseguradoras holandesas se vincula a la falta de comprensión de su rol; recomiendan comunicar más su aporte y sus funciones.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "mind_gym",
+   "p": "asocia_con",
+   "o": "ingresos_mind_gym",
+   "f": "F-629",
+   "apoyo": "Mind Gym plc, RNS 2025-2026: ingresos de £38,6M (−14%) en FY2025 y £29,9M (−23%; −7% comparable) en FY2026, con pérdidas antes de impuestos de £6,2M y £5,2M.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ingresos_wealthfront",
+   "p": "origina_en",
+   "o": "gestion_efectivo_wealthfront",
+   "f": "F-642",
+   "apoyo": "Renaissance Capital 2025 / S-1 de Wealthfront: US$339M de ingresos en 12 meses a jul-2025; según cobertura del S-1, la gestión de efectivo explica ~76% de los ingresos del semestre a jul-2025 y la asesoría de inversión el 24%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nudges_a_escala",
+   "p": "aplica_a",
+   "o": "reclamos_seguro_auto",
+   "f": "F-26",
+   "apoyo": "McKinsey Quarterly 2019 (Güntner, Lucks y Sperling-Magro): una aseguradora usó nudges de su unidad conductual para promover su red de talleres asociados en los reclamos de autos; el artículo pide medir el éxito con resultados de negocio.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_parametrico",
+   "p": "asocia_con",
+   "o": "mercado_seguro_parametrico_global",
+   "f": "F-163",
+   "apoyo": "SOA General Insurance Newsletter 2026 (Cappelletti): la prima global de seguro paramétrico se estima en USD 16.200M en 2024 y se proyecta en USD 51.300M en 2034; el pago depende de disparadores objetivos, no de la pérdida real.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-258",
+   "detalle": "Falta la sede: el trabajo aparece listado en ACL Anthology como Findings of ACL 2026 (2026.findings-acl.74); la ficha lo registra solo como preprint sin revisión por pares. Confirmar antes de cambiar la rigurosidad.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-33",
+   "detalle": "La ficha dice 'meta de ROE >18% y utilidad de €6.3B para 2026'. Según Munich Re, el RoE >18% es la meta de Ambition 2030 para el cierre de 2030, no para 2026; para 2026 la meta es la utilidad neta IFRS de €6.300M.",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-104",
+   "detalle": "El emisor primario es Discovery Limited (comunicado de resultados interinos al 31-dic-2025, publicado ~3-mar-2026); conviene citar ese comunicado además de la nota de InsuranceBiz y precisar el período.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-197",
+   "detalle": "Los USD 11.800M de reembolsos 2012-2023 vienen de KFF (Data Note sobre reembolsos MLR de 2024), no de HealthCare.gov ni del brief de Commonwealth Fund de 2019, que analiza 2015-2017. Además, KFF los presenta como reembolsos emitidos, no explícitamente 'por incumplir'. Registrar KFF como fuente aparte o atribuir la cifra a KFF.",
+   "estado": "abierta"
+  },
+  {
+   "f": "F-197",
+   "detalle": "Faltan los autores del brief de Commonwealth Fund (Mark A. Hall y Michael J. McCue, julio de 2019).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-336",
+   "detalle": "Falta la revista: Journal of Market Access & Health Policy (MDPI), 2025, 13(2):29.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-26",
+   "detalle": "Faltan los autores (Güntner, Lucks y Sperling-Magro), la publicación (McKinsey Quarterly) y el año exacto (2019). La ficha junta dos documentos distintos bajo un mismo registro.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a N6 (grupo n6_3): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

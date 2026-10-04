@@ -8,56 +8,64 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **232 de 646** (35.9%) |
-| …del cerebro de diseño (citadas en el node) | 129 de 273 |
-| …por rigor | A 170/179 · B 36/106 · C 22/171 · D 3/143 · E 1/33 |
-| Barridos | 31 |
-| Entidades | 527 |
-| Relaciones | 420 |
-| Nivel de lectura | abstract 321 · ficha 99 |
-| Fuerza de las afirmaciones | descriptiva 127 · causal 123 · observacional 95 · teorica 75 |
+| Fuentes procesadas | **325 de 646** (50.3%) |
+| …del cerebro de diseño (citadas en el node) | 163 de 273 |
+| …por rigor | A 172/179 · B 81/106 · C 58/171 · D 13/143 · E 1/33 |
+| Barridos | 41 |
+| Entidades | 700 |
+| Relaciones | 551 |
+| Nivel de lectura | abstract 452 · ficha 99 |
+| Fuerza de las afirmaciones | descriptiva 220 · causal 131 · observacional 110 · teorica 90 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 90 |
-| `reduce` | efecto | 62 |
-| `asocia_con` | efecto | 51 |
-| `tiene_limite` | metodo | 49 |
-| `aplica_a` | estructura | 41 |
-| `modera` | efecto | 24 |
-| `mide` | metodo | 22 |
-| `respalda` | evidencia | 20 |
-| `contradice` | evidencia | 18 |
-| `es_tipo_de` | estructura | 10 |
+| `aumenta` | efecto | 107 |
+| `reduce` | efecto | 80 |
+| `asocia_con` | efecto | 76 |
+| `tiene_limite` | metodo | 60 |
+| `aplica_a` | estructura | 52 |
+| `mide` | metodo | 38 |
+| `respalda` | evidencia | 29 |
+| `modera` | efecto | 27 |
+| `contradice` | evidencia | 20 |
+| `origina_en` | metodo | 16 |
+| `es_tipo_de` | estructura | 14 |
+| `parte_de` | estructura | 12 |
 | `media` | efecto | 10 |
 | `refuta` | evidencia | 10 |
-| `origina_en` | metodo | 9 |
-| `parte_de` | estructura | 4 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
 | Entidad | Fuentes |
 |---|---|
-| Generative UI (interfaces generadas por LLM) | F-247, F-256, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
+| Generative UI (interfaces generadas por LLM) | F-247, F-256, F-258, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-544, F-545, F-546, F-548, F-552, F-553, F-560, F-574, F-597 |
+| Herramientas de IA generativa | F-308, F-517, F-521, F-581, F-582, F-591 |
 | Modelos ChatGPT-3.5 y 4 | F-545, F-571, F-572, F-573, F-575, F-577 |
+| Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-514 |
 | Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502 |
-| Herramientas de IA generativa | F-308, F-521, F-581, F-582, F-591 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542 |
+| Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-359, F-514 |
+| El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-318, F-429, F-470 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
+| Margen de suscripción de la industria de salud de EE.UU. | F-193, F-195, F-197, F-480 |
 | Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501 |
 | Persuasión conversacional por IA | F-489, F-490, F-585, F-586 |
 | Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-560, F-571 |
 | Gasto en atención de salud | F-110, F-339, F-340, F-352 |
-| Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-514 |
-| Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-514 |
 | Design thinking | F-239, F-240, F-524 |
+| Éxito de proyectos de innovación | F-239, F-441, F-461 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469 |
-| El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-429, F-470 |
+| Precio de la acción de Figma (FIG) | F-318, F-420, F-470 |
+| Churn y cohortes no publicados | F-321, F-472, F-473 |
 | Productividad de desarrolladores | F-257, F-474, F-503 |
+| Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-256, F-272, F-382 |
+| Crisis estructural del modelo de consultora de diseño | F-307, F-316, F-317 |
+| F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025 | F-203, F-477, F-478 |
+| Resultado operativo Vida/Salud de Allianz | F-203, F-477, F-478 |
 | Penetración de seguros en Perú | F-482, F-483, F-507 |
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
 | Demanda de seguros | F-3, F-164, F-221 |
@@ -66,37 +74,48 @@
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
 | Sesgo de publicación | F-16, F-17, F-21 |
 | Pie en la puerta (pedido pequeño antes del grande) | F-141, F-142, F-143 |
+| Disposición a comprar | F-176, F-253, F-518 |
+| Confianza del consumidor en la aseguradora | F-334, F-335, F-336 |
 | ML + interpretación humana para generar hipótesis conductuales | F-566, F-567, F-569 |
 | Experiencia y habilidad previa del trabajador | F-580, F-582, F-584 |
+| Crecimiento de ventas | F-178, F-376, F-514 |
+| Publicidad personalizada (frente a genérica) | F-253, F-518, F-519 |
+| Diseño escalonado aleatorizado por clusters (stepped-wedge) | F-58, F-59, F-646 |
+| Selección adversa (selección de riesgos) | F-91, F-92, F-103 |
+| Ajuste / igualación de riesgo entre aseguradoras | F-92, F-97, F-103 |
+| Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva | F-27, F-551, F-596 |
+| Herramientas de IA en la investigación científica | F-27, F-555, F-591 |
+| Intermediarios de seguros independientes (brokers y agentes) | F-180, F-359, F-375 |
 | Relación innovación → desempeño | F-238, F-525 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
+| Backlash del consumidor | F-241, F-345 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
 | El efecto del design thinking está totalmente mediado por empoderamiento | F-239, F-240 |
-| Éxito de proyectos de innovación | F-239, F-441 |
 | Confianza en la IA | F-242, F-583 |
 | Las explicaciones rara vez producen desempeño complementario | F-243, F-244 |
 | Las explicaciones mejoran la decisión humano-IA | F-244, F-246 |
 | Cognitive forcing functions (fricción deliberada) | F-245, F-502 |
 | Desempeño complementario humano-IA | F-244, F-516 |
-| Precio de la acción de Figma (FIG) | F-420, F-470 |
+| Costo de IA / inferencia | F-323, F-470 |
+| La IA cobra un impuesto de margen a las herramientas de diseño (H32) | F-323, F-470 |
 | ARR de Lovable | F-471, F-472 |
 | El ARR de vibe coding no retiene (H14) | F-472, F-473 |
-| Churn y cohortes no publicados | F-472, F-473 |
 | Uso de IA por desarrolladores experimentados | F-257, F-474 |
 | Generative UI gana en usabilidad percibida | F-475, F-476 |
 | Brecha percepción–realidad (autoestimación vs. desempeño) | F-257, F-401 |
 | El estándar de reporting se degrada donde hay presión de IA (H16) | F-306, F-428 |
+| Preferencia por interfaces generativas (hasta 72%) | F-258, F-381 |
+| Generative UI gusta más que el texto plano | F-258, F-381 |
 | El 80-95% de los productos nuevos fracasan | F-431, F-432 |
 | Desempeño organizacional | F-434, F-525 |
 | Conductas de riesgo al manejar (velocidad, frenado, aceleración) | F-23, F-442 |
 | Combined ratio de Root (91,4%) | F-449, F-481 |
-| Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-256, F-382 |
 | Empleo de diseñadores gráficos (+2% 2024-2034) | F-308, F-309 |
 | La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe | F-383, F-384 |
-| F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025 | F-477, F-478 |
-| Resultado operativo Vida/Salud de Allianz | F-477, F-478 |
+| Disciplina de precios y rediseño de beneficios | F-106, F-198 |
 | Medical care ratio de UnitedHealth (86,7% en el 2T 2026) | F-198, F-480 |
+| El margen fino de 2025 (1,8%) es una tendencia de compresión | F-193, F-480 |
 | Rechazo de cobertura sin fundamento o fuera de plazo | F-484, F-485 |
 | Sanciones de Indecopi a aseguradoras (2026) | F-485, F-486 |
 | La persuasión de la IA se concentra en personas susceptibles | F-491, F-499 |
@@ -107,6 +126,8 @@
 | Comprensión del plan de salud | F-6, F-7 |
 | Divulgación clara y saliente de un producto financiero | F-9, F-10 |
 | Los mandatos de 'explicar mejor' fracasan sistemáticamente | F-9, F-10 |
+| Nudges a escala (nudge units) | F-21, F-26 |
+| Determinantes de la automedicación | F-36, F-37 |
 | Adopción de la telemedicina en Perú | F-40, F-41 |
 | Modelo de triage con IA y farmacias (Perú) | F-53, F-55 |
 | Diseño híbrido efectividad-implementación tipo 2 | F-54, F-55 |
@@ -118,33 +139,43 @@
 | Sesgo de automatización (sobre-confiar en la recomendación de un sistema) | F-60, F-61 |
 | Más opciones empeoran la decisión de forma general | F-119, F-121 |
 | Sobrecarga de elección (menos compra, satisfacción o confianza al haber más opciones) | F-119, F-120 |
+| Diseño del incentivo con principios conductuales (aversión a la pérdida, inmediatez, puntos de referencia) | F-100, F-104 |
 | Percepción precisa del riesgo | F-122, F-123 |
 | Divulgación de datos personales | F-142, F-143 |
 | La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad) | F-143, F-144 |
 | Número ancla visible antes de juzgar un precio | F-175, F-220 |
+| Confianza en quien comunica la información | F-176, F-359 |
 | Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla) | F-220, F-573 |
 | Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión) | F-221, F-223 |
 | Efecto dotación (se pide más por vender que lo que se paga por comprar) | F-223, F-573 |
-| Confianza del consumidor en la aseguradora | F-334, F-335 |
+| Información insuficiente para juzgar a la aseguradora | F-334, F-336 |
 | Predicción de la conducta de participantes no vistos en experimentos | F-563, F-566 |
 | Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea) | F-563, F-564 |
 | Sensibilidad a la redacción del prompt e inestabilidad en el tiempo | F-551, F-552 |
 | Tamaño y competencia lingüística de los modelos de lenguaje | F-572, F-575 |
-| Crecimiento de ventas | F-178, F-514 |
+| Comprensión del seguro de vida temporal | F-22, F-231 |
+| Teoría de la innovación disruptiva | F-436, F-437 |
 | Grandes corporaciones se retiran del venture capital corporativo directo | F-447, F-448 |
 | Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo) | F-42, F-63 |
-| Diseño escalonado aleatorizado por clusters (stepped-wedge) | F-58, F-59 |
-| Selección adversa (selección de riesgos) | F-91, F-92 |
-| Ajuste / igualación de riesgo entre aseguradoras | F-92, F-97 |
+| Mercado de seguro de salud individual | F-91, F-93 |
+| Primer contacto y longitudinalidad de la atención primaria | F-107, F-112 |
 | Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos) | F-544, F-597 |
-| Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva | F-551, F-596 |
-| Herramientas de IA en la investigación científica | F-555, F-591 |
 | Conjunto choices13k de elecciones riesgosas (Peterson et al., Science 2021) | F-566, F-567 |
 | Los LLMs reproducen los sesgos y heurísticas de decisión humanos | F-573, F-574 |
 | Desempeño de LLMs en tareas de teoría de la mente | F-575, F-577 |
 | Productividad y calidad del trabajo de conocimiento (consultores) | F-581, F-582 |
+| Seguro paramétrico (pago según índice observable) | F-163, F-164 |
 | Retención del aprendizaje | F-218, F-219 |
 | Redes de proveedores estrechas o por niveles (tiered) | F-339, F-340 |
+| Desarrollo favorable de siniestros de periodos previos en Lemonade (7 pp en el 2T 2026) | F-509, F-636 |
+| Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes) | F-509, F-636 |
+| KPI de innovación: % de ventas de productos nuevos | F-454, F-531 |
+| Abandono de compra por checkout largo o complejo | F-145, F-311 |
+| Preocupación por la privacidad activada por la situación | F-253, F-518 |
+| NAIC (Asociación Nacional de Comisionados de Seguros de EE.UU.) | F-80, F-193 |
+| Mejoras de accesibilidad web/digital | F-264, F-523 |
+| Contacto comercial (llamadas, SMS, correos, mensajes electrónicos) sin consentimiento previo del consumidor | F-69, F-118 |
+| La IA es la principal causa de los despidos | F-282, F-283 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -232,21 +263,27 @@
 - **Apreciación algorítmica (preferir consejo algorítmico al humano)** —contradice→ **La gente es en general reacia a confiar en el juicio de algoritmos** (F-584, causal) · **estado: alcance_distinto**
   - OBHDP 2019: contra la idea recibida de escepticismo, seis experimentos muestran que legos siguen más un consejo cuando creen que viene de un algoritmo que de una persona.
   - *Resolución (2026-10-04):* Dietvorst et al. (F-583) miden la elección después de ver al algoritmo equivocarse: aparece la aversión. Logg et al. (F-584) miden la preferencia sin esa experiencia previa: los legos prefieren el consejo algorítmico, y la preferencia se debilita en expertos y frente a la propia estimación. No se contradicen: la aversión depende de haber visto el error.
+- **Comunicado de resultados 1T 2026 de Allianz SE** —contradice→ **F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025** (F-203, descriptiva) · **estado: reconciliada**
+  - Allianz SE 2026 (Earnings Release 1Q 2026): Vida/Salud tuvo resultado operativo de €1.354 M (−5,1%); los €2.400 M récord (+11,1%) son de Daños, que en FY2025 hizo €9.000 M (+13,9%).
+  - *Resolución (2026-10-04):* Tercera lectura, ahora del comunicado primario de Allianz (resultados 1T 2026): Vida/Salud tuvo €1.354 M (−5,1%); los €2.400 M (+11,1%) y los €9.000 M de FY2025 son de Daños (Property-Casualty). Confirma la reconciliación de T-116/T-117 y explica el error de F-203: las cifras eran de otro segmento. Se levanta la reserva de 'comunicado primario sin abrir'.
+- **Uso de IA por el trabajador** —contradice→ **La IA es la principal causa de los despidos** (F-282, observacional) · **estado: alcance_distinto**
+  - Gallup 2026: solo 1% de los despedidos cita la IA o la automatización como causa principal, y 62% de los despedidos no usaba IA.
+  - *Resolución (2026-10-04):* Challenger (F-283) mide la razón que declaran los empleadores al anunciar recortes: la IA es la más citada en 2026. Gallup (F-282) pregunta a los trabajadores despedidos: solo 1% cita la IA como causa principal. Miden cosas distintas (atribución corporativa vs. experiencia del trabajador); ninguna verifica la causa real. No hay base para afirmar que la IA es la principal causa de los despidos.
 
 ## 5. Hubs (entidades más conectadas)
 
 | Entidad | Tipo | Grado | Fuentes |
 |---|---|---|---|
+| Generative UI (interfaces generadas por LLM) | intervencion | 11 | 10 |
+| Herramientas de IA generativa | intervencion | 10 | 6 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | intervencion | 10 | 9 |
-| Generative UI (interfaces generadas por LLM) | intervencion | 9 | 9 |
-| Herramientas de IA generativa | intervencion | 9 | 5 |
 | Modelos ChatGPT-3.5 y 4 | intervencion | 9 | 6 |
+| Diseño efectivo → mejor desempeño de la firma | afirmacion | 7 | 5 |
 | Adulación de la IA (sycophancy) | intervencion | 7 | 4 |
 | Sobre-confianza en la IA | resultado | 6 | 5 |
+| Margen de suscripción de la industria de salud de EE.UU. | resultado | 6 | 4 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | afirmacion | 6 | 3 |
-| Diseño efectivo → mejor desempeño de la firma | afirmacion | 5 | 3 |
-| Susceptibilidad a dark patterns | resultado | 5 | 2 |
-| Persuasión conversacional por IA | intervencion | 5 | 4 |
+| Desempeño financiero de la firma (ROA, ROS, crecimiento) | resultado | 5 | 4 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -442,6 +479,81 @@
   - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-352** (2026-10-04, cerrada): El año es 2019 (AJMC vol. 25, n.º 7), no '~2016'; 2013-2014 es el periodo de los datos.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-24** (2026-10-04, cerrada): URL apunta a una nota de Science (2023) sobre Gino, no al libro de Bazerman (MIT Press, 2025) que nombra el título; ficha compuesta. Falta editorial (MIT Press).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-106** (2026-10-04, abierta): La URL de la ficha es el 8-K del 4T/año 2025 (000156865126000008), que no puede contener el MLR del 1T 2026; la cifra 75,4%→70,5% está en el 8-K del 1T 2026 (000156865126000036).
+- ⚠️ **F-131** (2026-10-04, abierta): La URL de la ficha (GAO-05-113, publicada en ene-2005) no puede contener la cifra de 107 M a fines de 2005; esa cifra viene del informe anual de la FTC del AF 2005 (jul-2006). Los 10 M en 4 días vienen de la nota de prensa de la FTC de 2003.
+- ⚠️ **F-191** (2026-10-04, abierta): La ficha dice que 'la complejidad del producto y la autoeficacia son factores críticos'; el abstract no estudia complejidad del producto y su proxy de autoeficacia (habilidades web) resultó NO significativo. Los determinantes respaldados son normas subjetivas, utilidad, facilidad de uso y seguridad web percibidas.
+- ✅ **F-191** (2026-10-04, cerrada): Falta revista: Jindal Journal of Business Research, 12(2), 233-250.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-375** (2026-10-04, abierta): Las cifras de bancaseguros (80% Brasil, 25% Chile), 60-65% de corredores/agentes y >210.000 intermediarios provienen del 'Informe Global de Seguros 2025: en busca del crecimiento en América Latina' de McKinsey, no del artículo 'Bancassurance: it's time to go digital' enlazado en la ficha.
+- ✅ **F-375** (2026-10-04, cerrada): El artículo de McKinsey 'Bancassurance: it's time to go digital' es de 2019 (no 2023-2025); el informe MAPFRE sobre 2023 es de MAPFRE Economics.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-636** (2026-10-04, abierta): Menor: la ficha da +32,4% para la prima en vigor; el filing y su cobertura reportan +32,5% (como F-509).
+- ⚠️ **F-8** (2026-10-04, abierta): La justificación de rigor dice 'método no detallado en la nota', pero la nota sí lo detalla: encuesta online del 24-26 de junio de 2024, N=1.003 adultos de 18-27 años.
+- ⚠️ **F-93** (2026-10-04, abierta): La ficha afirma que la mancomunación 'reduce el costo esperado por la ley de grandes números'; el brief dice lo contrario: un pool grande hace las primas más predecibles y estables, pero no necesariamente más bajas (depende del costo promedio de los inscritos).
+- ✅ **F-93** (2026-10-04, cerrada): Año: 2017 (14-jul-2017), no 's.f.'.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-145** (2026-10-04, abierta): 'Cada campo adicional después del 8.º reduce la finalización 4-6%' no aparece en Baymard; una cifra similar (4-5% por campo) circula atribuida a Formstack, otra fuente. El óptimo de Baymard es 8 campos (no '7-8').
+- ✅ **F-253** (2026-10-04, cerrada): Autor registrado como 'Varios': son Hyeongseok Kim y Seunghee Han (Chung-Ang University). Faltan volumen/número/artículo: Behavioral Sciences 15(10), 1323.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-80** (2026-10-04, abierta): La ficha da a EE.UU. ~US$3,22 billones de primas y 59,1% del mercado OECD. La NAIC dice US$3,06 billones (datos 2022) y 44,45% del mundo. Statista asocia el 59,1% de la OECD 2024 a US$1,76 billones. La ficha mezcla dos series y la cifra de 3,22 no aparece en ninguna fuente vista.
+- ⚠️ **F-80** (2026-10-04, abierta): 'EE.UU.+China+UK ≈ 55% de las primas globales' choca con la tabla de la NAIC, donde suman ~59,9% (44,45+10,14+5,28). La cifra de China '~EUR754bn' no sale de la NAIC (US$697.806M); parece de otra fuente (Allianz, EUR 745,6 mil M).
+- ✅ **F-80** (2026-10-04, cerrada): Año '2024-2025': la tabla de la NAIC vista es de datos 2022 y su fecha de publicación no consta.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-376** (2026-10-04, abierta): 'El modelo phygital (agente comunitario + digital) duplica la retención a primer año' no aparece en el resumen del artículo. El 'doble' de McKinsey es la venta digital de seguros no-vida de los bancos campeones europeos frente a sus pares. 'Phygital' viene de Capgemini (World Insurance Report 2021). El dato parece mal atribuido y además se lleva de Europa a mass market LatAm sin respaldo.
+- ✅ **F-376** (2026-10-04, cerrada): Año 's.f.': es de marzo de 2019; autores Bueno, Dinis, Kotanko, Maggiora y Neves.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-637** (2026-10-04, abierta): La ficha da para Vitality R3.880M (+21%) y para el grupo R17.750M (+17%) en el 'FY2026'. El artículo en la URL cubre el interino (6 meses a dic-2025): Vitality R2.120M (+41%). Las cifras de la ficha no aparecen en la fuente; quizá son de otro periodo o documento.
+- ✅ **F-637** (2026-10-04, cerrada): Periodo mal rotulado: no son resultados FY2026 completos, sino el interino al 31-dic-2025, publicado el 3-mar-2026.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-32** (2026-10-04, cerrada): La URL solo apunta al comunicado FY2025 (27-feb-2026); las cifras Q1 2026 (ROE 23,6% vs. 22,4%) vienen de un comunicado distinto del 7-may-2026 (pr-20260507-q1-2026).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-264** (2026-10-04, cerrada): Año 's/f' → 2018 (publicado 9-nov-2018 por el EOWG de W3C WAI); editora Sharron Rush.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-359** (2026-10-04, cerrada): Faltan autores (Mathew Lee, Tim Natriello, Arushee S, Dominique Sanders, David Schiff) y fecha exacta (21-sep-2023); URL ausente en la ficha, la oficial es mckinsey.com/.../elevating-customer-experience-a-win-win-for-insurers-and-customers.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-515** (2026-10-04, cerrada): Emisor 'ILO · Banco Mundial': el documento es ILO Working Paper 140 (Gmyrek, Berg et al., mayo 2025); no se identifica al Banco Mundial como coautor. Faltan autores y número de serie.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-523** (2026-10-04, cerrada): Autoría no capturada: Ekin, M.; Krejtz, K.; Duarte, C.; Seixas Pereira, L.; Marcus-Quinn, A.; Krejtz, I.; et al. Falta DOI 10.1371/journal.pone.0328552 (publicado 30-jul-2025).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-103** (2026-10-04, cerrada): Emisor 'American Academy of Actuaries (The Actuary Magazine)': The Actuary es la revista de la Society of Actuaries; el análisis 'worked as intended' es de la American Academy of Actuaries (abr-2016). Falta autor y año.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-181** (2026-10-04, abierta): La ficha dice 'hasta USD 15.000 millones'; el artículo dice 'más de US$15.000 millones' (y solo de seis aseguradoras), así que es un piso, no un techo.
+- ✅ **F-258** (2026-10-04, cerrada): Falta la sede: el trabajo aparece listado en ACL Anthology como Findings of ACL 2026 (2026.findings-acl.74); la ficha lo registra solo como preprint sin revisión por pares. Confirmar antes de cambiar la rigurosidad.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-33** (2026-10-04, abierta): La ficha dice 'meta de ROE >18% y utilidad de €6.3B para 2026'. Según Munich Re, el RoE >18% es la meta de Ambition 2030 para el cierre de 2030, no para 2026; para 2026 la meta es la utilidad neta IFRS de €6.300M.
+- ✅ **F-104** (2026-10-04, cerrada): El emisor primario es Discovery Limited (comunicado de resultados interinos al 31-dic-2025, publicado ~3-mar-2026); conviene citar ese comunicado además de la nota de InsuranceBiz y precisar el período.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-197** (2026-10-04, abierta): Los USD 11.800M de reembolsos 2012-2023 vienen de KFF (Data Note sobre reembolsos MLR de 2024), no de HealthCare.gov ni del brief de Commonwealth Fund de 2019, que analiza 2015-2017. Además, KFF los presenta como reembolsos emitidos, no explícitamente 'por incumplir'. Registrar KFF como fuente aparte o atribuir la cifra a KFF.
+- ✅ **F-197** (2026-10-04, cerrada): Faltan los autores del brief de Commonwealth Fund (Mark A. Hall y Michael J. McCue, julio de 2019).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-336** (2026-10-04, cerrada): Falta la revista: Journal of Market Access & Health Policy (MDPI), 2025, 13(2):29.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-26** (2026-10-04, cerrada): Faltan los autores (Güntner, Lucks y Sperling-Magro), la publicación (McKinsey Quarterly) y el año exacto (2019). La ficha junta dos documentos distintos bajo un mismo registro.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-349** (2026-10-04, cerrada): Año: el artículo es del 23-oct-2024 (no 2023-2024); coautoría con The Capitol Forum omitida; título oficial no registrado.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-349** (2026-10-04, cerrada): Campo URL vacío (solo cita textual); URL correcta: propublica.org/article/evicore-health-insurance-denials-cigna-unitedhealthcare-aetna-prior-authorizations.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-37** (2026-10-04, cerrada): Año 's.f.': el capítulo corresponde a la ENSUSALUD 2014 (INEI); conviene registrar la encuesta y el año 2014.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-69** (2026-10-04, abierta): La ficha se presenta como 'texto legal oficial primario' (rigor B) pero la URL apunta a un comentario del Estudio Ugaz, no al texto publicado en El Peruano (busquedas.elperuano.pe/api/visor_html/2397811-2).
+- ⚠️ **F-118** (2026-10-04, abierta): URL: apunta al comentario del Estudio Ugaz sobre la Ley 32323 (misma URL que F-69), no a la resolución de Indecopi ni a LP Derecho; el caso BBVA está en lpderecho.pe/indecopi-multa-bbva-realizar-llamadas-spam-resolucion-final-083-2025-cc3/.
+- ✅ **F-118** (2026-10-04, cerrada): Precisar que la Res. Final 083-2025/CC3 es de primera instancia (apelable) y que su difusión fue en enero de 2026.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-105** (2026-10-04, cerrada): Año: el comunicado de resultados 2025 es del 6-feb-2026 (la ficha dice 2024-2025 y mezcla con el '2024 Annual Report', que no corresponde a la URL).
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-203** (2026-10-04, abierta): Las cifras '€9.000 M en FY2025' y '€2.400 M en 1T 2026 (+11,1%), impulsada por mejor resultado del servicio de seguros' corresponden al segmento Property-Casualty (Daños), no a Vida/Salud; Vida/Salud fue €1.354 M (−5,1%) en el 1T 2026. La nota de corrección existente no identifica que las cifras son de Daños.
+- ✅ **F-374** (2026-10-04, cerrada): Emisor: los datos provienen del estudio 'Latam Insurtech Journey' de Digital Insurance LATAM (MAPFRE patrocina y difunde), no de una medición propia de la unidad de innovación de MAPFRE.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-465** (2026-10-04, abierta): URL genérica (https://www.cbinsights.com/, portada) que no apunta a ningún documento; los datos están en globalventuring.com (WoCV 2026) y cbinsights.com/research/report/venture-trends-2025/.
+- ✅ **F-465** (2026-10-04, cerrada): El 68% del valor de deals de IA con CVC proviene de Bain (citado por Crunchbase News), emisor no listado en la ficha.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-518** (2026-10-04, cerrada): Autoría no capturada: Kim, Hyeongseok y Han, Seunghee; volumen 15(10), artículo 1323.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-183** (2026-10-04, cerrada): Año 's.f.': publicado el 25-oct-2023.
+  - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 
 ## 7. Registro de barridos
 
@@ -478,6 +590,16 @@
 | 2026-10-04 | F-575, F-577, F-582, F-583, F-584, F-586, F-591, F-596, F-597, F-598, F-581 | 21 | – | Lote del avance a 85% hacia N6 (grupo 544): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
 | 2026-10-04 | F-110, F-111, F-115, F-125, F-151, F-158, F-164, F-178, F-180, F-218 | 19 | – | Lote del avance a 85% hacia N6 (grupo 110): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
 | 2026-10-04 | F-219, F-226, F-236, F-330, F-331, F-333, F-339, F-340, F-341, F-352 | 17 | – | Lote del avance a 85% hacia N6 (grupo 110): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-646, F-24, F-106, F-131, F-191, F-353, F-375, F-509, F-531 | 15 | – | Lote del avance a N6 (grupo n6_0): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-636, F-8, F-28, F-93, F-145, F-170, F-184, F-232 | 11 | – | Lote del avance a N6 (grupo n6_0): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-253, F-29, F-80, F-112, F-193, F-376, F-533, F-637 | 11 | – | Lote del avance a N6 (grupo n6_1): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-2, F-32, F-67, F-102, F-138, F-194, F-264, F-359 | 11 | – | Lote del avance a N6 (grupo n6_2): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-515, F-523, F-538, F-641, F-22, F-103, F-161, F-181 | 11 | – | Lote del avance a N6 (grupo n6_2): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-258, F-11, F-33, F-104, F-197, F-336, F-629, F-642, F-26, F-163 | 14 | – | Lote del avance a N6 (grupo n6_3): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-349, F-37, F-69, F-118, F-105, F-203, F-345, F-374, F-465 | 14 | – | Lote del avance a N6 (grupo n6_4): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-518, F-530, F-631, F-4, F-27, F-169, F-183, F-200, F-267 | 14 | – | Lote del avance a N6 (grupo n6_4): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar. |
+| 2026-10-04 | F-517, F-266, F-436, F-461, F-539, F-317, F-283, F-272, F-534, F-537, F-316, F-318 | 15 | – | Lote del cierre de N6, con fuentes verificadas directamente el 2026-10-04 (resúmenes oficiales, comunicados de los emisores o los propios artículos de prensa vía búsqueda). Se priorizaron fuentes cono |
+| 2026-10-04 | F-321, F-324, F-280, F-454, F-312, F-323, F-295, F-199, F-195, F-320, F-311, F-282 | 15 | – | Lote del cierre de N6, con fuentes verificadas directamente el 2026-10-04 (resúmenes oficiales, comunicados de los emisores o los propios artículos de prensa vía búsqueda). Se priorizaron fuentes cono |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

@@ -1,6 +1,16 @@
 {
  "entidades": [
   {
+   "id": "abandono_checkout_complejidad",
+   "nombre": "Abandono de compra por checkout largo o complejo",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-145",
+    "F-311"
+   ]
+  },
+  {
    "id": "accenture_song_no_reportado",
    "nombre": "Accenture no reporta Song como segmento separado",
    "tipo": "limitacion",
@@ -16,6 +26,16 @@
    "grado": 1,
    "fuentes": [
     "F-265"
+   ]
+  },
+  {
+   "id": "accesibilidad_web",
+   "nombre": "Mejoras de accesibilidad web/digital",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-264",
+    "F-523"
    ]
   },
   {
@@ -43,6 +63,15 @@
    "grado": 3,
    "fuentes": [
     "F-241"
+   ]
+  },
+  {
+   "id": "actividad_cvc_global",
+   "nombre": "Actividad global de corporate venture capital (corporaciones que invierten en startups)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-465"
    ]
   },
   {
@@ -131,12 +160,30 @@
    ]
   },
   {
+   "id": "agent_washing",
+   "nombre": "'Agent washing': rebautizar asistentes, RPA o chatbots como agentes sin capacidad agéntica",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-631"
+   ]
+  },
+  {
    "id": "agente_encuestado_sintetico",
    "nombre": "Agente autónomo con LLM que responde encuestas online",
    "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
     "F-598"
+   ]
+  },
+  {
+   "id": "agentes_ia_especificos_tarea",
+   "nombre": "Agentes de IA específicos a una tarea integrados en software",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-533"
    ]
   },
   {
@@ -170,8 +217,9 @@
    "id": "ajuste_riesgo",
    "nombre": "Ajuste / igualación de riesgo entre aseguradoras",
    "tipo": "intervencion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-103",
     "F-92",
     "F-97"
    ]
@@ -186,6 +234,15 @@
    ]
   },
   {
+   "id": "alcance_mercado_digital",
+   "nombre": "Alcance de mercado (más usuarios alcanzados)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-264"
+   ]
+  },
+  {
    "id": "alfabetizacion_ia",
    "nombre": "Alfabetización en IA (intervención ligera)",
    "tipo": "intervencion",
@@ -193,6 +250,15 @@
    "fuentes": [
     "F-494",
     "F-500"
+   ]
+  },
+  {
+   "id": "alianzas_externas_ia",
+   "nombre": "Implementar IA con socios externos (frente a desarrollo interno)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-539"
    ]
   },
   {
@@ -205,13 +271,32 @@
    ]
   },
   {
+   "id": "allianz_resultados_1t2026",
+   "nombre": "Comunicado de resultados 1T 2026 de Allianz SE",
+   "tipo": "estudio",
+   "grado": 2,
+   "fuentes": [
+    "F-203"
+   ]
+  },
+  {
    "id": "allianz_vida_salud",
    "nombre": "Resultado operativo Vida/Salud de Allianz",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-203",
     "F-477",
     "F-478"
+   ]
+  },
+  {
+   "id": "alzas_tarifas_seguros_comerciales",
+   "nombre": "Alzas de tarifas en seguros comerciales",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-170"
    ]
   },
   {
@@ -243,12 +328,30 @@
    ]
   },
   {
+   "id": "anthem_limite_anestesia",
+   "nombre": "Política de Anthem de pagar anestesia según límites de tiempo (NY, CT, MO; 2024)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-345"
+   ]
+  },
+  {
    "id": "aplanamiento_identidades",
    "nombre": "Retrato erróneo y aplanamiento de grupos demográficos por el LLM",
    "tipo": "limitacion",
    "grado": 2,
    "fuentes": [
     "F-553"
+   ]
+  },
+  {
+   "id": "aplicaciones_empresariales",
+   "nombre": "Aplicaciones de software empresarial",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-533"
    ]
   },
   {
@@ -321,6 +424,15 @@
    "grado": 1,
    "fuentes": [
     "F-488"
+   ]
+  },
+  {
+   "id": "atencion_primaria_singapur",
+   "nombre": "Sistema de atención primaria de Singapur (GP privados + policlínicas)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-112"
    ]
   },
   {
@@ -408,9 +520,37 @@
    "id": "backlash_consumidor",
    "nombre": "Backlash del consumidor",
    "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-241",
+    "F-345"
+   ]
+  },
+  {
+   "id": "bain_lealtad_seguros_2023",
+   "nombre": "Encuesta Bain Customer Behavior and Loyalty in Insurance 2023 (28.765 consumidores, 14 países)",
+   "tipo": "estudio",
+   "grado": 2,
+   "fuentes": [
+    "F-4"
+   ]
+  },
+  {
+   "id": "baja_siniestralidad_catastrofica",
+   "nombre": "Baja experiencia de catástrofes naturales en el período",
+   "tipo": "concepto",
    "grado": 1,
    "fuentes": [
-    "F-241"
+    "F-32"
+   ]
+  },
+  {
+   "id": "bancaseguros_latam",
+   "nombre": "Bancaseguros (distribución de seguros por bancos) en América Latina",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-375"
    ]
   },
   {
@@ -438,6 +578,15 @@
    "grado": 1,
    "fuentes": [
     "F-487"
+   ]
+  },
+  {
+   "id": "brecha_necesidad_seguro_vida",
+   "nombre": "Brecha de necesidad de seguro de vida (no compra pese a necesitarlo)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-232"
    ]
   },
   {
@@ -469,12 +618,30 @@
    ]
   },
   {
+   "id": "busquedas_estetica_lofi",
+   "nombre": "Búsquedas de estéticas lo-fi y DIY en Canva",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-295"
+   ]
+  },
+  {
    "id": "c_70_cambio_fracasa",
    "nombre": "El 70% de las iniciativas de cambio organizacional fracasa",
    "tipo": "afirmacion",
    "grado": 1,
    "fuentes": [
     "F-540"
+   ]
+  },
+  {
+   "id": "c_85_proyectos_ia_fracasan",
+   "nombre": "El 85% de los proyectos de IA fracasa",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-538"
    ]
   },
   {
@@ -535,9 +702,10 @@
    "id": "c_castigo_por_disrupcion",
    "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
    "tipo": "afirmacion",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
     "F-305",
+    "F-318",
     "F-429",
     "F-470"
    ]
@@ -584,9 +752,11 @@
    "id": "c_crisis_consultoras",
    "nombre": "Crisis estructural del modelo de consultora de diseño",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
-    "F-307"
+    "F-307",
+    "F-316",
+    "F-317"
    ]
   },
   {
@@ -612,10 +782,12 @@
    "id": "c_diseno_firma",
    "nombre": "Diseño efectivo → mejor desempeño de la firma",
    "tipo": "afirmacion",
-   "grado": 5,
+   "grado": 7,
    "fuentes": [
     "F-237",
     "F-238",
+    "F-266",
+    "F-267",
     "F-514"
    ]
   },
@@ -719,8 +891,9 @@
    "id": "c_f203_cifra",
    "nombre": "F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025",
    "tipo": "afirmacion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-203",
     "F-477",
     "F-478"
    ]
@@ -747,8 +920,9 @@
    "id": "c_generative_ui_gusta_mas",
    "nombre": "Generative UI gusta más que el texto plano",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-258",
     "F-381"
    ]
   },
@@ -790,6 +964,16 @@
    ]
   },
   {
+   "id": "c_ia_principal_causa_despidos",
+   "nombre": "La IA es la principal causa de los despidos",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-282",
+    "F-283"
+   ]
+  },
+  {
    "id": "c_ia_ralentiza_expertos",
    "nombre": "La IA ralentiza a desarrolladores expertos (−19%)",
    "tipo": "afirmacion",
@@ -802,8 +986,9 @@
    "id": "c_impuesto_margen_ia",
    "nombre": "La IA cobra un impuesto de margen a las herramientas de diseño (H32)",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-323",
     "F-470"
    ]
   },
@@ -839,8 +1024,9 @@
    "id": "c_margen_compresion",
    "nombre": "El margen fino de 2025 (1,8%) es una tendencia de compresión",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-193",
     "F-480"
    ]
   },
@@ -1159,6 +1345,42 @@
    ]
   },
   {
+   "id": "canal_directo_seguros",
+   "nombre": "Canal de distribución directo (digital) de la aseguradora",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-184"
+   ]
+  },
+  {
+   "id": "cancelacion_dificil_suscripcion",
+   "nombre": "Cancelación difícil de suscripciones (cobros tras pedir la baja)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-641"
+   ]
+  },
+  {
+   "id": "cancelacion_proyectos_ia_agentica",
+   "nombre": "Cancelación de proyectos de IA agéntica (predicción >40% a 2027)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-631"
+   ]
+  },
+  {
+   "id": "canva_arr",
+   "nombre": "ARR de Canva (US$4.000M a fin de 2025)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-324"
+   ]
+  },
+  {
    "id": "capacidad_diseno_ingenieria",
    "nombre": "Capacidad de diseño-ingeniería",
    "tipo": "constructo",
@@ -1201,6 +1423,15 @@
    "grado": 2,
    "fuentes": [
     "F-486"
+   ]
+  },
+  {
+   "id": "casos_disrupcion_no_encajan",
+   "nombre": "Solo 7 de 77 casos ejemplares (9%) cumplen los cuatro elementos de la teoría de la disrupción",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-436"
    ]
   },
   {
@@ -1249,6 +1480,15 @@
    ]
   },
   {
+   "id": "chas_singapur",
+   "nombre": "Community Health Assist Scheme (CHAS): subsidio para atenderse con GP privados en Singapur",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-112"
+   ]
+  },
+  {
    "id": "choices13k",
    "nombre": "Conjunto choices13k de elecciones riesgosas (Peterson et al., Science 2021)",
    "tipo": "estudio",
@@ -1256,6 +1496,24 @@
    "fuentes": [
     "F-566",
     "F-567"
+   ]
+  },
+  {
+   "id": "ciclos_rentabilidad_aseguradoras_salud",
+   "nombre": "Ciclos de ganancias y pérdidas de aseguradoras de salud (mercado individual EE.UU.)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-197"
+   ]
+  },
+  {
+   "id": "ciencia_conductual_ia",
+   "nombre": "Ciencia conductual de la IA (AI Behavioral Science)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-27"
    ]
   },
   {
@@ -1360,6 +1618,15 @@
    ]
   },
   {
+   "id": "comisiones_agentes_baja_complejidad",
+   "nombre": "Comisiones de agentes independientes en riesgos de baja complejidad",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-181"
+   ]
+  },
+  {
    "id": "complejidad_cfir",
    "nombre": "CFIR exhaustivo pero engorroso de aplicar",
    "tipo": "limitacion",
@@ -1400,9 +1667,37 @@
    "id": "comprension_seguro_vida",
    "nombre": "Comprensión del seguro de vida temporal",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-22",
     "F-231"
+   ]
+  },
+  {
+   "id": "comprension_terminos_seguro_salud",
+   "nombre": "Comprensión de términos de seguro de salud (deducible, copago)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-8"
+   ]
+  },
+  {
+   "id": "compromiso_cognitivo_lectura_web",
+   "nombre": "Compromiso cognitivo al leer sitios web (usuarios sin discapacidad)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-523"
+   ]
+  },
+  {
+   "id": "concentracion_pbm",
+   "nombre": "Concentración del mercado de PBM en EE.UU.",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-199"
    ]
   },
   {
@@ -1446,10 +1741,20 @@
    "id": "confianza_aseguradora",
    "nombre": "Confianza del consumidor en la aseguradora",
    "tipo": "constructo",
-   "grado": 2,
+   "grado": 4,
    "fuentes": [
     "F-334",
-    "F-335"
+    "F-335",
+    "F-336"
+   ]
+  },
+  {
+   "id": "confianza_compra_online_seguro",
+   "nombre": "Confianza en la compra online de seguros",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-191"
    ]
   },
   {
@@ -1466,9 +1771,19 @@
    "id": "confianza_fuente",
    "nombre": "Confianza en quien comunica la información",
    "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-176",
+    "F-359"
+   ]
+  },
+  {
+   "id": "confianza_investigacion_academica",
+   "nombre": "Confianza en la investigación académica y su publicación",
+   "tipo": "resultado",
    "grado": 1,
    "fuentes": [
-    "F-176"
+    "F-24"
    ]
   },
   {
@@ -1517,12 +1832,40 @@
    ]
   },
   {
+   "id": "consentimiento_previo_expreso_datos",
+   "nombre": "Consentimiento previo, informado, expreso e inequívoco para tratar datos personales",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-67"
+   ]
+  },
+  {
    "id": "consistencia_interfaz",
    "nombre": "Consistencia de la interfaz entre ejecuciones",
    "tipo": "resultado",
    "grado": 2,
    "fuentes": [
     "F-384"
+   ]
+  },
+  {
+   "id": "consumidores_seguros_peru",
+   "nombre": "Consumidores y usuarios de seguros en Perú",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-11"
+   ]
+  },
+  {
+   "id": "contacto_comercial_sin_consentimiento",
+   "nombre": "Contacto comercial (llamadas, SMS, correos, mensajes electrónicos) sin consentimiento previo del consumidor",
+   "tipo": "concepto",
+   "grado": 3,
+   "fuentes": [
+    "F-118",
+    "F-69"
    ]
   },
   {
@@ -1556,9 +1899,10 @@
    "id": "continuidad_atencion_primaria",
    "nombre": "Primer contacto y longitudinalidad de la atención primaria",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-107"
+    "F-107",
+    "F-112"
    ]
   },
   {
@@ -1571,6 +1915,15 @@
    ]
   },
   {
+   "id": "contratos_evicore_pago_por_ahorro",
+   "nombre": "Contratos en que EviCore gana más cuanto más recorta el gasto en salud",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-349"
+   ]
+  },
+  {
    "id": "controles_atencion_encuestas",
    "nombre": "Controles de atención y de detección de respuestas no humanas en encuestas",
    "tipo": "metrica",
@@ -1580,12 +1933,39 @@
    ]
   },
   {
+   "id": "conversaciones_ronda_lovable_2026",
+   "nombre": "Conversaciones para levantar US$300M a US$13.200M (jul-2026)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-320"
+   ]
+  },
+  {
+   "id": "conversion_checkout",
+   "nombre": "Conversión del checkout",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-311"
+   ]
+  },
+  {
    "id": "conviccion_tener_razon",
    "nombre": "Convicción de tener razón",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-488"
+   ]
+  },
+  {
+   "id": "costo_adquisicion_seguros",
+   "nombre": "Costo de adquisición de clientes en seguros",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-184"
    ]
   },
   {
@@ -1601,9 +1981,19 @@
    "id": "costo_ia_inferencia",
    "nombre": "Costo de IA / inferencia",
    "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-323",
+    "F-470"
+   ]
+  },
+  {
+   "id": "costo_siniestros_medicos_empleador",
+   "nombre": "Costo anual de siniestros médicos por miembro (empleador)",
+   "tipo": "resultado",
    "grado": 1,
    "fuentes": [
-    "F-470"
+    "F-353"
    ]
   },
   {
@@ -1616,12 +2006,30 @@
    ]
   },
   {
+   "id": "costos_extra_inesperados",
+   "nombre": "Costos extra inesperados en el checkout (envío, impuestos, cargos)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-311"
+   ]
+  },
+  {
    "id": "creador_mercado_seguros",
    "nombre": "Función de creador de mercado (emparejar necesidades del asegurado con aseguradoras capaces)",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-180"
+   ]
+  },
+  {
+   "id": "crecimiento_ingresos_canva",
+   "nombre": "Crecimiento de ingresos previsto de Canva para 2026",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-323"
    ]
   },
   {
@@ -1643,12 +2051,22 @@
    ]
   },
   {
+   "id": "crecimiento_primas_seguros_comerciales",
+   "nombre": "Crecimiento de primas de seguros comerciales (~8% anual, 5 años)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-170"
+   ]
+  },
+  {
    "id": "crecimiento_ventas",
    "nombre": "Crecimiento de ventas",
    "tipo": "resultado",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
     "F-178",
+    "F-376",
     "F-514"
    ]
   },
@@ -1677,6 +2095,15 @@
    "grado": 1,
    "fuentes": [
     "F-9"
+   ]
+  },
+  {
+   "id": "criticas_spread_pricing_pbm",
+   "nombre": "Críticas de larga data al modelo de los PBM (spread pricing y rebates)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-200"
    ]
   },
   {
@@ -1761,6 +2188,15 @@
    ]
   },
   {
+   "id": "demanda_esg_aseguradoras",
+   "nombre": "Demanda de consumidores de que las aseguradoras integren ESG",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-4"
+   ]
+  },
+  {
    "id": "demanda_freelance_escritura_codigo",
    "nombre": "Publicaciones de trabajos freelance de escritura y programación",
    "tipo": "resultado",
@@ -1790,6 +2226,15 @@
    ]
   },
   {
+   "id": "denegacion_autorizacion_previa",
+   "nombre": "Tasa de denegación de autorizaciones previas en seguros de salud de EE.UU.",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-349"
+   ]
+  },
+  {
    "id": "derivacion_atencion_primaria",
    "nombre": "Desvío de pacientes de urgencias a atención primaria",
    "tipo": "resultado",
@@ -1805,6 +2250,16 @@
    "grado": 3,
    "fuentes": [
     "F-548"
+   ]
+  },
+  {
+   "id": "desarrollo_favorable_reservas_lemonade",
+   "nombre": "Desarrollo favorable de siniestros de periodos previos en Lemonade (7 pp en el 2T 2026)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-509",
+    "F-636"
    ]
   },
   {
@@ -1831,10 +2286,11 @@
    "id": "desempeno_financiero_firma",
    "nombre": "Desempeño financiero de la firma (ROA, ROS, crecimiento)",
    "tipo": "resultado",
-   "grado": 4,
+   "grado": 5,
    "fuentes": [
     "F-237",
     "F-238",
+    "F-359",
     "F-514"
    ]
   },
@@ -1858,6 +2314,15 @@
    ]
   },
   {
+   "id": "desempeno_pc_eeuu_2025",
+   "nombre": "Desempeño de la industria de seguros P&C de EE.UU. en 2025",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-169"
+   ]
+  },
+  {
    "id": "design_theater",
    "nombre": "Design Theater: justificación de diseño sin implementación",
    "tipo": "concepto",
@@ -1878,12 +2343,30 @@
    ]
   },
   {
+   "id": "design_value_index_dmi",
+   "nombre": "Design Value Index de DMI (portafolio de 16 empresas design-centric vs. S&P 500)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-267"
+   ]
+  },
+  {
    "id": "desigualdad_productividad",
    "nombre": "Desigualdad de productividad entre trabajadores",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-581"
+   ]
+  },
+  {
+   "id": "desintermediacion_ia_distribucion_seguros",
+   "nombre": "Desintermediación por IA de la distribución de seguros",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-181"
    ]
   },
   {
@@ -1899,9 +2382,10 @@
    "id": "determinantes_automedicacion",
    "nombre": "Determinantes de la automedicación",
    "tipo": "constructo",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-36"
+    "F-36",
+    "F-37"
    ]
   },
   {
@@ -1935,9 +2419,19 @@
    "id": "disciplina_precios_salud",
    "nombre": "Disciplina de precios y rediseño de beneficios",
    "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-106",
+    "F-198"
+   ]
+  },
+  {
+   "id": "disciplina_suscripcion_tarifas_pc",
+   "nombre": "Suscripción disciplinada y alzas de tarifas en P&C",
+   "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
-    "F-198"
+    "F-169"
    ]
   },
   {
@@ -1954,9 +2448,10 @@
    "id": "diseno_incentivo_conductual",
    "nombre": "Diseño del incentivo con principios conductuales (aversión a la pérdida, inmediatez, puntos de referencia)",
    "tipo": "concepto",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-100"
+    "F-100",
+    "F-104"
    ]
   },
   {
@@ -1981,19 +2476,22 @@
    "id": "diseno_stepped_wedge",
    "nombre": "Diseño escalonado aleatorizado por clusters (stepped-wedge)",
    "tipo": "concepto",
-   "grado": 3,
+   "grado": 5,
    "fuentes": [
     "F-58",
-    "F-59"
+    "F-59",
+    "F-646"
    ]
   },
   {
    "id": "disposicion_compra",
    "nombre": "Disposición a comprar",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
-    "F-176"
+    "F-176",
+    "F-253",
+    "F-518"
    ]
   },
   {
@@ -2003,6 +2501,15 @@
    "grado": 2,
    "fuentes": [
     "F-545"
+   ]
+  },
+  {
+   "id": "distribucion_seguros_latam",
+   "nombre": "Distribución de seguros en América Latina (canales)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-375"
    ]
   },
   {
@@ -2146,12 +2653,39 @@
    ]
   },
   {
+   "id": "encuesta_figma_disenadores",
+   "nombre": "State of the Designer 2026 (Figma, 906 diseñadores)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-280"
+   ]
+  },
+  {
+   "id": "encuesta_naic_genz_2024",
+   "nombre": "Encuesta NAIC a adultos Gen Z de EE.UU. (2024, N=1.003)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-8"
+   ]
+  },
+  {
    "id": "enfermedad_infrecuente",
    "nombre": "Enfermedad poco común",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-43"
+   ]
+  },
+  {
+   "id": "ensusalud_2014_farmacias",
+   "nombre": "ENSUSALUD 2014 (INEI): módulo de usuarios de farmacias y boticas (n=3.849)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-37"
    ]
   },
   {
@@ -2273,6 +2807,15 @@
    ]
   },
   {
+   "id": "evicore_dial_algoritmo",
+   "nombre": "Algoritmo ajustable 'the dial' de EviCore para enviar más autorizaciones previas a revisión",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-349"
+   ]
+  },
+  {
    "id": "evidencia_debil_acceso_calidad",
    "nombre": "Evidencia limitada y de baja validez interna sobre acceso y calidad",
    "tipo": "limitacion",
@@ -2321,10 +2864,11 @@
    "id": "exito_proyecto_innovacion",
    "nombre": "Éxito de proyectos de innovación",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-239",
-    "F-441"
+    "F-441",
+    "F-461"
    ]
   },
   {
@@ -2334,6 +2878,24 @@
    "grado": 1,
    "fuentes": [
     "F-147"
+   ]
+  },
+  {
+   "id": "exito_transformacion",
+   "nombre": "Éxito sostenido de una transformación",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-537"
+   ]
+  },
+  {
+   "id": "experiencia_cliente_seguros",
+   "nombre": "Experiencia del cliente (CX) en aseguradoras",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-359"
    ]
   },
   {
@@ -2386,6 +2948,15 @@
    ]
   },
   {
+   "id": "exposicion_ia_generativa_ocupacional",
+   "nombre": "Exposición ocupacional a la IA generativa (índice OIT)",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-515"
+   ]
+  },
+  {
    "id": "factibilidad_seguridad_modelo_ia",
    "nombre": "Seguridad, fiabilidad y factibilidad del modelo de IA en entorno real",
    "tipo": "resultado",
@@ -2431,6 +3002,15 @@
    ]
   },
   {
+   "id": "fallo_digital_reclamo_complejo",
+   "nombre": "Fallo de lo digital en reclamos complejos (el cliente debe pasar a ayuda humana)",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-183"
+   ]
+  },
+  {
    "id": "farmacias_sistema_salud",
    "nombre": "Integración de farmacias y boticas al sistema nacional de salud",
    "tipo": "concepto",
@@ -2468,6 +3048,24 @@
    ]
   },
   {
+   "id": "financiamiento_salud_singapur_3m",
+   "nombre": "Esquema S+3M de Singapur (MediSave, MediShield Life, MediFund)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-102"
+   ]
+  },
+  {
+   "id": "firma_al_inicio_honestidad",
+   "nombre": "Firmar al inicio de un formulario para inducir honestidad ('signing first')",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-24"
+   ]
+  },
+  {
    "id": "firmas_cotizadas_china",
    "nombre": "Firmas cotizadas de China (8.671 observaciones empresa-año, 2017-2023)",
    "tipo": "poblacion",
@@ -2484,6 +3082,15 @@
    "fuentes": [
     "F-237",
     "F-238"
+   ]
+  },
+  {
+   "id": "fiscalizacion_ia_indecopi_audios",
+   "nombre": "Fiscalización de Indecopi con IA (Whisper) sobre ~7 millones de audios de llamadas comerciales",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-118"
    ]
   },
   {
@@ -2529,6 +3136,15 @@
    "grado": 1,
    "fuentes": [
     "F-124"
+   ]
+  },
+  {
+   "id": "fraude_datos_firmar_primero_2012",
+   "nombre": "Experimentos fraudulentos que sustentaban 'firmar primero' (paper de 2012)",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-24"
    ]
   },
   {
@@ -2586,6 +3202,15 @@
    ]
   },
   {
+   "id": "gartner_prediccion_sesgo_ia_2018",
+   "nombre": "Predicción de Gartner (2018): 85% de proyectos de IA con resultados erróneos por sesgo hasta 2022",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-538"
+   ]
+  },
+  {
    "id": "gasto_salud",
    "nombre": "Gasto en atención de salud",
    "tipo": "resultado",
@@ -2619,10 +3244,11 @@
    "id": "generative_ui",
    "nombre": "Generative UI (interfaces generadas por LLM)",
    "tipo": "intervencion",
-   "grado": 9,
+   "grado": 11,
    "fuentes": [
     "F-247",
     "F-256",
+    "F-258",
     "F-381",
     "F-382",
     "F-383",
@@ -2633,12 +3259,30 @@
    ]
   },
   {
+   "id": "gestion_efectivo_wealthfront",
+   "nombre": "Cuenta de gestión de efectivo de Wealthfront (ingreso por intereses)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-642"
+   ]
+  },
+  {
    "id": "gii_peru",
    "nombre": "Índice Global de Innovación (OMPI): Perú",
    "tipo": "metrica",
    "grado": 1,
    "fuentes": [
     "F-466"
+   ]
+  },
+  {
+   "id": "glosario_seguros_sbs",
+   "nombre": "Glosario oficial de términos de seguros de la SBS",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-11"
    ]
   },
   {
@@ -2678,12 +3322,22 @@
    ]
   },
   {
+   "id": "healthier_sg_singapur",
+   "nombre": "Healthier SG: inscripción con un médico de familia y plan de salud personalizado (Singapur)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-112"
+   ]
+  },
+  {
    "id": "herramientas_ia_generativas",
    "nombre": "Herramientas de IA generativa",
    "tipo": "intervencion",
-   "grado": 9,
+   "grado": 10,
    "fuentes": [
     "F-308",
+    "F-517",
     "F-521",
     "F-581",
     "F-582",
@@ -2716,6 +3370,15 @@
    "grado": 1,
    "fuentes": [
     "F-569"
+   ]
+  },
+  {
+   "id": "homogeneizacion_creativa",
+   "nombre": "Homogeneización del producto creativo entre usuarios",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-517"
    ]
   },
   {
@@ -2787,10 +3450,20 @@
    "id": "ia_en_investigacion",
    "nombre": "Herramientas de IA en la investigación científica",
    "tipo": "intervencion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-27",
     "F-555",
     "F-591"
+   ]
+  },
+  {
+   "id": "ideo_reinvencion",
+   "nombre": "IDEO se reinventa como formador en innovación más que vendedor de diseño",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-316"
    ]
   },
   {
@@ -2800,6 +3473,24 @@
    "grado": 2,
    "fuentes": [
     "F-555"
+   ]
+  },
+  {
+   "id": "impacto_pyg_genai",
+   "nombre": "Impacto medible en el estado de resultados de la IA generativa",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-539"
+   ]
+  },
+  {
+   "id": "implementacion_rutinaria_intervenciones_salud",
+   "nombre": "Evaluación de intervenciones durante su implementación rutinaria",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-646"
    ]
   },
   {
@@ -2827,6 +3518,15 @@
    "grado": 1,
    "fuentes": [
     "F-333"
+   ]
+  },
+  {
+   "id": "indecopi_sancion_bbva_llamada_2026",
+   "nombre": "Sanción de Indecopi a BBVA Perú por llamada publicitaria tras revocación del consentimiento (S/63.800, 2026)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-138"
    ]
   },
   {
@@ -2861,9 +3561,10 @@
    "id": "info_insuficiente_aseguradora",
    "nombre": "Información insuficiente para juzgar a la aseguradora",
    "tipo": "concepto",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-334"
+    "F-334",
+    "F-336"
    ]
   },
   {
@@ -2905,6 +3606,24 @@
    ]
   },
   {
+   "id": "ingresos_mind_gym",
+   "nombre": "Ingresos de Mind Gym (FY2025 £38,6M −14%; FY2026 £29,9M −23%)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-629"
+   ]
+  },
+  {
+   "id": "ingresos_wealthfront",
+   "nombre": "Ingresos de Wealthfront (US$339M, 12 meses a jul-2025)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-642"
+   ]
+  },
+  {
    "id": "innovacion_peru",
    "nombre": "Desempeño de innovación de Perú",
    "tipo": "resultado",
@@ -2914,12 +3633,39 @@
    ]
   },
   {
+   "id": "inscripcion_registro_no_llamar",
+   "nombre": "Números inscritos en el registro 'No Llamar' (>10 M en 4 días; >107 M al AF 2005)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-131"
+   ]
+  },
+  {
    "id": "integracion_producto_proceso",
    "nombre": "Integrar innovación de producto y de proceso (frente a solo producto)",
    "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
     "F-525"
+   ]
+  },
+  {
+   "id": "integracion_vertical_pbm",
+   "nombre": "Integración vertical PBM-aseguradora",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-199"
+   ]
+  },
+  {
+   "id": "intencion_compra_online_seguro_vida",
+   "nombre": "Intención de comprar seguro de vida online",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-191"
    ]
   },
   {
@@ -2938,6 +3684,15 @@
    "grado": 1,
    "fuentes": [
     "F-125"
+   ]
+  },
+  {
+   "id": "interes_prevencion_riesgo_seguros",
+   "nombre": "Interés de consumidores en servicios de prevención de riesgo de su aseguradora",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-4"
    ]
   },
   {
@@ -2962,9 +3717,11 @@
    "id": "intermediarios_seguros",
    "nombre": "Intermediarios de seguros independientes (brokers y agentes)",
    "tipo": "concepto",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
-    "F-180"
+    "F-180",
+    "F-359",
+    "F-375"
    ]
   },
   {
@@ -3004,6 +3761,15 @@
    ]
   },
   {
+   "id": "inversion_insurtech_latam",
+   "nombre": "Inversión y número de insurtechs activas en América Latina",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-374"
+   ]
+  },
+  {
    "id": "inversion_preferencias",
    "nombre": "Inversión de preferencias ante problemas equivalentes",
    "tipo": "resultado",
@@ -3037,6 +3803,15 @@
    "grado": 1,
    "fuentes": [
     "F-307"
+   ]
+  },
+  {
+   "id": "ipo_canva_2027",
+   "nombre": "Postergación de la IPO de Canva a 2027 por el cambio a créditos de IA",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-323"
    ]
   },
   {
@@ -3085,6 +3860,97 @@
    ]
   },
   {
+   "id": "kaiser_permanente_risant",
+   "nombre": "Kaiser Permanente y Risant Health (sistema integrado aseguradora-prestador)",
+   "tipo": "organizacion",
+   "grado": 1,
+   "fuentes": [
+    "F-105"
+   ]
+  },
+  {
+   "id": "kff_desempeno_aseguradoras_2024",
+   "nombre": "KFF: Health Insurer Financial Performance in 2024",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-194"
+   ]
+  },
+  {
+   "id": "kpi_innovacion_ventas_productos_nuevos",
+   "nombre": "KPI de innovación: % de ventas de productos nuevos",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-454",
+    "F-531"
+   ]
+  },
+  {
+   "id": "lanzamiento_claude_design",
+   "nombre": "Lanzamiento de Claude Design (17-abr-2026)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-318"
+   ]
+  },
+  {
+   "id": "latam_insurtech_journey",
+   "nombre": "Estudio Latam Insurtech Journey (Digital Insurance LATAM, patrocinado por MAPFRE)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-374"
+   ]
+  },
+  {
+   "id": "lemonade_inc",
+   "nombre": "Lemonade Inc. (insurtech cotizada)",
+   "tipo": "organizacion",
+   "grado": 1,
+   "fuentes": [
+    "F-29"
+   ]
+  },
+  {
+   "id": "lemonade_resultados_q1_2026",
+   "nombre": "Resultados Q1 2026 de Lemonade (ingresos +71%, pérdida neta US$35,8M)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-29"
+   ]
+  },
+  {
+   "id": "ley_29733_datos_personales",
+   "nombre": "Ley 29733 de Protección de Datos Personales (Perú)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-67"
+   ]
+  },
+  {
+   "id": "ley_32323_antispam",
+   "nombre": "Ley 32323 (Perú, 2025): amplía la prohibición de comunicaciones comerciales spam sin consentimiento",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-69"
+   ]
+  },
+  {
+   "id": "liquid_glass_ios26",
+   "nombre": "Rediseño Liquid Glass de iOS 26",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-272"
+   ]
+  },
+  {
    "id": "litigios_adulacion",
    "nombre": "Litigios y cartas de fiscales por adulación de chatbots",
    "tipo": "concepto",
@@ -3095,12 +3961,40 @@
    ]
   },
   {
+   "id": "llamadas_comerciales_sin_consentimiento",
+   "nombre": "Llamadas publicitarias sin consentimiento vigente (spam)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-138"
+   ]
+  },
+  {
    "id": "llm_juez",
    "nombre": "LLM como juez de respuestas de asistentes",
    "tipo": "metrica",
    "grado": 2,
    "fuentes": [
     "F-159"
+   ]
+  },
+  {
+   "id": "loss_ratio_bruto_lemonade",
+   "nombre": "Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-509",
+    "F-636"
+   ]
+  },
+  {
+   "id": "loss_ratio_medico_q1_2025",
+   "nombre": "Loss ratio médico de aseguradoras públicas de EE.UU. en el 1T 2025",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-195"
    ]
   },
   {
@@ -3117,8 +4011,9 @@
    "id": "lovable_churn_no_publicado",
    "nombre": "Churn y cohortes no publicados",
    "tipo": "limitacion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-321",
     "F-472",
     "F-473"
    ]
@@ -3151,6 +4046,15 @@
    ]
   },
   {
+   "id": "mancomunacion_riesgo",
+   "nombre": "Mancomunación de riesgos (risk pooling)",
+   "tipo": "concepto",
+   "grado": 3,
+   "fuentes": [
+    "F-93"
+   ]
+  },
+  {
    "id": "marco_implementacion",
    "nombre": "Marcos de evaluación de efectividad e implementación",
    "tipo": "concepto",
@@ -3174,8 +4078,11 @@
    "id": "margen_salud_eeuu",
    "nombre": "Margen de suscripción de la industria de salud de EE.UU.",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 6,
    "fuentes": [
+    "F-193",
+    "F-195",
+    "F-197",
     "F-480"
    ]
   },
@@ -3186,6 +4093,15 @@
    "grado": 1,
    "fuentes": [
     "F-262"
+   ]
+  },
+  {
+   "id": "mckinsey_design_index",
+   "nombre": "Índice de Diseño de McKinsey (MDI)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-266"
    ]
   },
   {
@@ -3205,6 +4121,24 @@
    "grado": 2,
    "fuentes": [
     "F-263"
+   ]
+  },
+  {
+   "id": "medifund_singapur",
+   "nombre": "MediFund: fondo de asistencia para quienes no pueden pagar (Singapur)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-102"
+   ]
+  },
+  {
+   "id": "medisave_singapur",
+   "nombre": "MediSave: cuenta de ahorro médico obligatoria (Singapur)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-102"
    ]
   },
   {
@@ -3232,6 +4166,15 @@
    "grado": 1,
    "fuentes": [
     "F-357"
+   ]
+  },
+  {
+   "id": "mejora_kpi_rediseno",
+   "nombre": "Mejora de KPIs tras un rediseño de usabilidad",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-534"
    ]
   },
   {
@@ -3265,9 +4208,19 @@
    "id": "mercado_seguro_individual",
    "nombre": "Mercado de seguro de salud individual",
    "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-91",
+    "F-93"
+   ]
+  },
+  {
+   "id": "mercado_seguro_parametrico_global",
+   "nombre": "Primas globales de seguro paramétrico (USD 16.200M en 2024; proyección USD 51.300M en 2034)",
+   "tipo": "resultado",
    "grado": 1,
    "fuentes": [
-    "F-91"
+    "F-163"
    ]
   },
   {
@@ -3277,6 +4230,15 @@
    "grado": 1,
    "fuentes": [
     "F-16"
+   ]
+  },
+  {
+   "id": "meta_ventas_innovacion_dsm",
+   "nombre": "Meta de DSM (2010): llevar las ventas de innovación de ~12% a ~20% hacia 2015",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-530"
    ]
   },
   {
@@ -3325,6 +4287,15 @@
    ]
   },
   {
+   "id": "mind_gym",
+   "nombre": "Mind Gym plc (consultora de cambio conductual organizacional)",
+   "tipo": "organizacion",
+   "grado": 1,
+   "fuentes": [
+    "F-629"
+   ]
+  },
+  {
    "id": "ml_generacion_hipotesis",
    "nombre": "ML + interpretación humana para generar hipótesis conductuales",
    "tipo": "intervencion",
@@ -3333,6 +4304,24 @@
     "F-566",
     "F-567",
     "F-569"
+   ]
+  },
+  {
+   "id": "mlr_mercados_salud_eeuu",
+   "nombre": "Medical loss ratio por mercado de seguro de salud en EE.UU. (MA, Medicaid, individual, grupo)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-194"
+   ]
+  },
+  {
+   "id": "mlr_oscar_health",
+   "nombre": "Medical loss ratio de Oscar Health (70,5% en el 1T 2026 vs 75,4% en el 1T 2025)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-106"
    ]
   },
   {
@@ -3405,6 +4394,15 @@
    ]
   },
   {
+   "id": "muestra_pequena_plos_accesibilidad_2025",
+   "nombre": "Muestra pequeña (N=20) en el estudio psicofisiológico de accesibilidad",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-523"
+   ]
+  },
+  {
    "id": "muestras_sinteticas_llm",
    "nombre": "Muestras sintéticas con LLM (personas simuladas que responden encuestas)",
    "tipo": "intervencion",
@@ -3419,6 +4417,43 @@
     "F-560",
     "F-574",
     "F-597"
+   ]
+  },
+  {
+   "id": "multa_indecopi_bbva_spam",
+   "nombre": "Multa de Indecopi a BBVA Perú por llamadas comerciales sin consentimiento (S/1.537.250, Res. 083-2025/CC3)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-118"
+   ]
+  },
+  {
+   "id": "multicanal_humano_digital_seguros",
+   "nombre": "Distribución multicanal liderada por humanos y habilitada por tecnología",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-184"
+   ]
+  },
+  {
+   "id": "munich_re_ambition_2025",
+   "nombre": "Programa estratégico Ambition 2025 de Munich Re",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-33"
+   ]
+  },
+  {
+   "id": "naic_org",
+   "nombre": "NAIC (Asociación Nacional de Comisionados de Seguros de EE.UU.)",
+   "tipo": "organizacion",
+   "grado": 2,
+   "fuentes": [
+    "F-193",
+    "F-80"
    ]
   },
   {
@@ -3494,12 +4529,67 @@
    ]
   },
   {
+   "id": "normas_subjetivas_compra_seguro",
+   "nombre": "Normas subjetivas sobre la compra de seguros",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-191"
+   ]
+  },
+  {
+   "id": "npp_croda",
+   "nombre": "Ventas de productos nuevos y protegidos (NPP) como % de ventas de Croda",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-531"
+   ]
+  },
+  {
+   "id": "nps_cliente_seguros",
+   "nombre": "Net Promoter Score (NPS) del cliente de seguros",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-183"
+   ]
+  },
+  {
+   "id": "npvi_3m",
+   "nombre": "Meta 3M de 1988: 30% de ventas de productos con menos de 5 años",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-454"
+   ]
+  },
+  {
    "id": "nudges_a_escala",
    "nombre": "Nudges a escala (nudge units)",
    "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-21",
+    "F-26"
+   ]
+  },
+  {
+   "id": "ocupaciones_administrativas",
+   "nombre": "Ocupaciones administrativas (clerical support workers)",
+   "tipo": "poblacion",
    "grado": 1,
    "fuentes": [
-    "F-21"
+    "F-515"
+   ]
+  },
+  {
+   "id": "oecd_global_insurance_trends_2025",
+   "nombre": "OECD Global Insurance Market Trends 2025",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-2"
    ]
   },
   {
@@ -3509,6 +4599,15 @@
    "grado": 1,
    "fuentes": [
     "F-548"
+   ]
+  },
+  {
+   "id": "optum_rx_tarifa_fija",
+   "nombre": "Modelo de tarifa fija mensual por miembro de Optum Rx, desligado de precios de lista",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-200"
    ]
   },
   {
@@ -3536,6 +4635,15 @@
    "grado": 1,
    "fuentes": [
     "F-41"
+   ]
+  },
+  {
+   "id": "participacion_eeuu_primas_mundiales",
+   "nombre": "Participación de EE.UU. en las primas de seguros mundiales",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-80"
    ]
   },
   {
@@ -3577,6 +4685,15 @@
    ]
   },
   {
+   "id": "penetracion_seguros_ocde",
+   "nombre": "Penetración de seguros promedio OCDE (primas/PBI)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-2"
+   ]
+  },
+  {
    "id": "pensamiento_critico",
    "nombre": "Pensamiento crítico",
    "tipo": "resultado",
@@ -3584,6 +4701,24 @@
    "fuentes": [
     "F-492",
     "F-493"
+   ]
+  },
+  {
+   "id": "percepcion_campo_diseno",
+   "nombre": "Percepción del estado del campo del diseño",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-280"
+   ]
+  },
+  {
+   "id": "percepcion_lucro_aseguradora_salud",
+   "nombre": "Percepción de que la aseguradora de salud prioriza lucro y costos sobre necesidades individuales",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-336"
    ]
   },
   {
@@ -3627,8 +4762,10 @@
    "id": "personalizacion_publicidad",
    "nombre": "Publicidad personalizada (frente a genérica)",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 5,
    "fuentes": [
+    "F-253",
+    "F-518",
     "F-519"
    ]
   },
@@ -3692,6 +4829,15 @@
    ]
   },
   {
+   "id": "pilotos_genai_empresa",
+   "nombre": "Pilotos empresariales de IA generativa",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-539"
+   ]
+  },
+  {
    "id": "pl_08488",
    "nombre": "Proyecto de Ley 08488/2024-CR (farmacias en el sistema nacional de salud)",
    "tipo": "intervencion",
@@ -3710,6 +4856,15 @@
    ]
   },
   {
+   "id": "pool_grande_no_baja_prima",
+   "nombre": "Un pool grande no implica primas más bajas: depende del costo promedio de los inscritos",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-93"
+   ]
+  },
+  {
    "id": "practica_espaciada",
    "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
    "tipo": "intervencion",
@@ -3722,8 +4877,9 @@
    "id": "precio_accion_figma",
    "nombre": "Precio de la acción de Figma (FIG)",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-318",
     "F-420",
     "F-470"
    ]
@@ -3815,9 +4971,20 @@
    "id": "preferencia_interfaces_generativas",
    "nombre": "Preferencia por interfaces generativas (hasta 72%)",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-258",
     "F-381"
+   ]
+  },
+  {
+   "id": "preocupacion_privacidad_situacional",
+   "nombre": "Preocupación por la privacidad activada por la situación",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-253",
+    "F-518"
    ]
   },
   {
@@ -3836,6 +5003,15 @@
    "grado": 1,
    "fuentes": [
     "F-43"
+   ]
+  },
+  {
+   "id": "presion_costos_atencion_2025",
+   "nombre": "Costos crecientes de atención en 2025 (alta demanda, mayor complejidad, medicamentos)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-105"
    ]
   },
   {
@@ -3863,6 +5039,15 @@
    "grado": 2,
    "fuentes": [
     "F-506"
+   ]
+  },
+  {
+   "id": "primas_vida_ocde_2024",
+   "nombre": "Crecimiento de primas brutas de vida en la OCDE (2024)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-2"
    ]
   },
   {
@@ -3914,6 +5099,24 @@
    ]
   },
   {
+   "id": "programa_vitality_empleadores",
+   "nombre": "Programa de bienestar Vitality para empleadores (EE.UU.)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-353"
+   ]
+  },
+  {
+   "id": "pronostico_triple_i_milliman_2025",
+   "nombre": "Pronóstico Triple-I/Milliman del mercado P/C (ene-2025)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-161"
+   ]
+  },
+  {
    "id": "proyeccion_no_medicion",
    "nombre": "Es una proyección, no una medición",
    "tipo": "limitacion",
@@ -3932,13 +5135,32 @@
    ]
   },
   {
+   "id": "proyectos_ia_agentica",
+   "nombre": "Proyectos de IA agéntica en empresas",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-631"
+   ]
+  },
+  {
    "id": "psicologia_de_maquinas",
    "nombre": "Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva",
    "tipo": "concepto",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-27",
     "F-551",
     "F-596"
+   ]
+  },
+  {
+   "id": "publicidad_enganosa_adelantos_cleo",
+   "nombre": "Publicidad engañosa sobre monto y rapidez de adelantos de efectivo",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-641"
    ]
   },
   {
@@ -3996,6 +5218,24 @@
    ]
   },
   {
+   "id": "ratio_combinado_pc_eeuu",
+   "nombre": "Ratio combinado neto del mercado P/C de EE.UU.",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-161"
+   ]
+  },
+  {
+   "id": "ratio_equipos_producto",
+   "nombre": "Ratio investigador:diseñador:desarrollador",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-312"
+   ]
+  },
+  {
    "id": "re_aim",
    "nombre": "Marco RE-AIM",
    "tipo": "concepto",
@@ -4015,6 +5255,42 @@
    ]
   },
   {
+   "id": "reclamo_digital_seguros",
+   "nombre": "Presentación digital de reclamos de seguros",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-183"
+   ]
+  },
+  {
+   "id": "reclamos_seguro_auto",
+   "nombre": "Gestión de reclamos de seguro vehicular (red de talleres asociados)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-26"
+   ]
+  },
+  {
+   "id": "recorte_ideo_2023",
+   "nombre": "Recorte de 32% de la plantilla de IDEO y cierre de oficinas (2023)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-317"
+   ]
+  },
+  {
+   "id": "recortes_atribuidos_ia",
+   "nombre": "Recortes de empleo atribuidos a la IA por los empleadores",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-283"
+   ]
+  },
+  {
    "id": "redes_estrechas_niveles",
    "nombre": "Redes de proveedores estrechas o por niveles (tiered)",
    "tipo": "intervencion",
@@ -4022,6 +5298,15 @@
    "fuentes": [
     "F-339",
     "F-340"
+   ]
+  },
+  {
+   "id": "rediseno_checkout",
+   "nombre": "Rediseño del checkout según hallazgos de usabilidad",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-311"
    ]
   },
   {
@@ -4040,6 +5325,51 @@
    "grado": 2,
    "fuentes": [
     "F-403"
+   ]
+  },
+  {
+   "id": "rediseno_usabilidad",
+   "nombre": "Rediseño de usabilidad",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-534"
+   ]
+  },
+  {
+   "id": "reduccion_campos_checkout",
+   "nombre": "Reducir los campos del formulario de checkout (~8 bastan)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-145"
+   ]
+  },
+  {
+   "id": "registro_no_llamar_eeuu",
+   "nombre": "Registro Nacional 'No Llamar' de EE.UU. (FTC, 2003)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-131"
+   ]
+  },
+  {
+   "id": "regla_mlr_80_20_aca",
+   "nombre": "Regla de medical loss ratio 80/20 de la ACA (reembolso si gasto médico < 80%/85%)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-197"
+   ]
+  },
+  {
+   "id": "regulacion_consentimiento_contacto_comercial",
+   "nombre": "Regulación de consentimiento previo para el contacto comercial (no llamar / opt-in)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-131"
    ]
   },
   {
@@ -4082,12 +5412,39 @@
    ]
   },
   {
+   "id": "reporte_challenger",
+   "nombre": "Reporte Challenger de recortes de empleo anunciados",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-283"
+   ]
+  },
+  {
+   "id": "reporte_insuficiente_stepped_wedge",
+   "nombre": "Variación en métodos de análisis y reporte insuficiente en ensayos stepped-wedge",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-646"
+   ]
+  },
+  {
    "id": "respuestas_casi_uniformes",
    "nombre": "Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-560"
+   ]
+  },
+  {
+   "id": "resultado_neto_munich_re_2025",
+   "nombre": "Resultado neto de Munich Re 2025 (~€6.100M; RoE 18,3%)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-33"
    ]
   },
   {
@@ -4119,6 +5476,15 @@
    ]
   },
   {
+   "id": "reversion_politica_anthem",
+   "nombre": "Anthem revierte el límite de tiempo de anestesia (dic-2024)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-345"
+   ]
+  },
+  {
    "id": "riesgo_contaminacion_retencion",
    "nombre": "Problemas de retención y contaminación por desfase entre reclutamiento e intervención",
    "tipo": "limitacion",
@@ -4134,6 +5500,15 @@
    "grado": 2,
    "fuentes": [
     "F-164"
+   ]
+  },
+  {
+   "id": "riesgo_despido",
+   "nombre": "Riesgo de despido",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-282"
    ]
   },
   {
@@ -4161,6 +5536,24 @@
    "grado": 2,
    "fuentes": [
     "F-495"
+   ]
+  },
+  {
+   "id": "ronda_no_cerrada",
+   "nombre": "Ronda reportada en conversaciones, no cerrada",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-320"
+   ]
+  },
+  {
+   "id": "ronda_serie_b_lovable",
+   "nombre": "Serie B de Lovable: US$330M a US$6.600M (dic-2025)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-321"
    ]
   },
   {
@@ -4224,6 +5617,15 @@
    "grado": 1,
    "fuentes": [
     "F-542"
+   ]
+  },
+  {
+   "id": "sancion_ftc_cleo_2025",
+   "nombre": "Acuerdo FTC–Cleo AI por US$17 M (2025)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-641"
    ]
   },
   {
@@ -4299,11 +5701,21 @@
    ]
   },
   {
+   "id": "seguro_embebido",
+   "nombre": "Seguro embebido (embedded insurance)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-28"
+   ]
+  },
+  {
    "id": "seguro_parametrico",
    "nombre": "Seguro paramétrico (pago según índice observable)",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-163",
     "F-164"
    ]
   },
@@ -4311,8 +5723,9 @@
    "id": "seleccion_adversa",
    "nombre": "Selección adversa (selección de riesgos)",
    "tipo": "concepto",
-   "grado": 4,
+   "grado": 5,
    "fuentes": [
+    "F-103",
     "F-91",
     "F-92"
    ]
@@ -4463,6 +5876,15 @@
    ]
   },
   {
+   "id": "sobreestimacion_precio_seguro_vida",
+   "nombre": "Sobreestimación del precio del seguro de vida",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-232"
+   ]
+  },
+  {
    "id": "sobrepago_seguro",
    "nombre": "Sobrepago en la prima del seguro",
    "tipo": "resultado",
@@ -4563,12 +5985,30 @@
    ]
   },
   {
+   "id": "tamano_equipos_ux",
+   "nombre": "Tamaño relativo de los equipos de UX",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-312"
+   ]
+  },
+  {
    "id": "tamano_firma",
    "nombre": "Tamaño de la firma",
    "tipo": "constructo",
    "grado": 1,
    "fuentes": [
     "F-525"
+   ]
+  },
+  {
+   "id": "tamano_mercado_seguro_embebido",
+   "nombre": "Tamaño del mercado de seguro embebido (US$116 mil M en 2025 → 138 mil M en 2026)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-28"
    ]
   },
   {
@@ -4626,11 +6066,48 @@
    ]
   },
   {
-   "id": "teoria_disrupcion",
-   "nombre": "Teoría de la innovación disruptiva",
+   "id": "tasas_interes_altas_2024",
+   "nombre": "Tasas de interés altas (2024)",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
+    "F-2"
+   ]
+  },
+  {
+   "id": "teatro_innovacion",
+   "nombre": "Teatro de la innovación (rituales de startup sin resultados de negocio)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-461"
+   ]
+  },
+  {
+   "id": "tecnicas_conductuales_comprension_vida",
+   "nombre": "Técnicas conductuales de comprensión (lenguaje simplificado, visuales, video humano o con IA)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-22"
+   ]
+  },
+  {
+   "id": "tendencia_imperfect_by_design",
+   "nombre": "Tendencia 'Imperfect by Design' de Canva para 2026",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-295"
+   ]
+  },
+  {
+   "id": "teoria_disrupcion",
+   "nombre": "Teoría de la innovación disruptiva",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-436",
     "F-437"
    ]
   },
@@ -4679,6 +6156,33 @@
    "grado": 1,
    "fuentes": [
     "F-516"
+   ]
+  },
+  {
+   "id": "trafico_referido_llm",
+   "nombre": "Tráfico referido desde asistentes de IA (LLM)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-324"
+   ]
+  },
+  {
+   "id": "transformacion_digital",
+   "nombre": "Transformación digital de la organización",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-537"
+   ]
+  },
+  {
+   "id": "transformacion_empleo_ia",
+   "nombre": "Transformación de puestos (aumento de tareas) más que reemplazo por IA",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-515"
    ]
   },
   {
@@ -4733,9 +6237,10 @@
    "id": "usabilidad_funcional",
    "nombre": "Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores)",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-256",
+    "F-272",
     "F-382"
    ]
   },
@@ -4758,6 +6263,15 @@
    ]
   },
   {
+   "id": "uso_ia_trabajador",
+   "nombre": "Uso de IA por el trabajador",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-282"
+   ]
+  },
+  {
    "id": "usr_metrica",
    "nombre": "USR: métrica no supervisada y sin referencia para diálogo",
    "tipo": "metrica",
@@ -4767,12 +6281,48 @@
    ]
   },
   {
+   "id": "utilidad_discovery_insure",
+   "nombre": "Utilidad operativa normalizada de Discovery Insure (+34%, R546M, interino a dic-2025)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-104"
+   ]
+  },
+  {
+   "id": "utilidad_facilidad_seguridad_web_percibidas",
+   "nombre": "Utilidad, facilidad de uso y seguridad web percibidas del canal online",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-191"
+   ]
+  },
+  {
+   "id": "utilidad_neta_swiss_re",
+   "nombre": "Utilidad neta y ROE de Swiss Re (FY2025 / Q1 2026)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-32"
+   ]
+  },
+  {
    "id": "utilidad_rimac",
    "nombre": "Utilidad neta de Rímac (2T 2026: S/85,8 M)",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-504"
+   ]
+  },
+  {
+   "id": "utilidad_vitality_h1_fy2026",
+   "nombre": "Utilidad operativa normalizada de Vitality global, semestre a dic-2025 (R2.120M, +41%)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-637"
    ]
   },
   {
@@ -4821,6 +6371,15 @@
    ]
   },
   {
+   "id": "variabilidad_primas",
+   "nombre": "Variabilidad / impredecibilidad de las primas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-93"
+   ]
+  },
+  {
    "id": "variabilidad_respuestas",
    "nombre": "Variabilidad de las respuestas frente a la población humana",
    "tipo": "resultado",
@@ -4836,6 +6395,33 @@
    "grado": 2,
    "fuentes": [
     "F-247"
+   ]
+  },
+  {
+   "id": "venta_digital_bancaseguros",
+   "nombre": "Venta de seguros por canales digitales en bancaseguros",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-376"
+   ]
+  },
+  {
+   "id": "ventas_innovacion_dsm",
+   "nombre": "Participación de ventas de innovación en las ventas de DSM",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-530"
+   ]
+  },
+  {
+   "id": "ventas_retencion_seguros",
+   "nombre": "Ventas y retención de clientes de seguros",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-184"
    ]
   },
   {
@@ -4891,6 +6477,33 @@
    "grado": 1,
    "fuentes": [
     "F-330"
+   ]
+  },
+  {
+   "id": "vitality_discovery",
+   "nombre": "Programa Vitality de Discovery (incentivos por conducta saludable)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-637"
+   ]
+  },
+  {
+   "id": "vitality_drive",
+   "nombre": "Programa Vitality Drive de Discovery Insure (recompensas por conducción)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-104"
+   ]
+  },
+  {
+   "id": "wocv_2026",
+   "nombre": "World of Corporate Venturing 2026 (Global Corporate Venturing)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-465"
    ]
   },
   {
@@ -9943,11 +11556,1583 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-04",
    "clase": "efecto"
+  },
+  {
+   "id": "T-421",
+   "s": "diseno_stepped_wedge",
+   "p": "aplica_a",
+   "o": "implementacion_rutinaria_intervenciones_salud",
+   "f": "F-646",
+   "apoyo": "J Clin Epidemiol 2011 (Mdege et al.): en 25 ensayos stepped-wedge, el diseño se usó sobre todo para evaluar intervenciones durante su implementación rutinaria, ya eficaces en entornos controlados o con fuerte creencia de beneficio.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-422",
+   "s": "diseno_stepped_wedge",
+   "p": "tiene_limite",
+   "o": "reporte_insuficiente_stepped_wedge",
+   "f": "F-646",
+   "apoyo": "J Clin Epidemiol 2011 (Mdege et al.): la revisión halló variación en los métodos de análisis y calidad de reporte insuficiente; pide análisis y reporte consistentes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-423",
+   "s": "firma_al_inicio_honestidad",
+   "p": "tiene_limite",
+   "o": "fraude_datos_firmar_primero_2012",
+   "f": "F-24",
+   "apoyo": "MIT Press 2025 (Bazerman): el paper de 2012 que mostró que firmar primero aumenta la honestidad tenía dos experimentos fraudulentos, revelados en 2021; dañó a organizaciones que implementaron la idea.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-424",
+   "s": "fraude_datos_firmar_primero_2012",
+   "p": "reduce",
+   "o": "confianza_investigacion_academica",
+   "f": "F-24",
+   "apoyo": "MIT Press 2025 (Bazerman): el fraude en el paper sobre inducir honestidad truncó carreras académicas y socavó la fe en la investigación y la publicación académica.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-425",
+   "s": "disciplina_precios_salud",
+   "p": "reduce",
+   "o": "mlr_oscar_health",
+   "f": "F-106",
+   "apoyo": "Oscar Health, 8-K 1T 2026: el MLR bajó de 75,4% a 70,5%, principalmente por su estrategia de precios disciplinada, la estacionalidad de siniestros y ajuste de riesgo y el desarrollo favorable de reservas previas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-426",
+   "s": "registro_no_llamar_eeuu",
+   "p": "es_tipo_de",
+   "o": "regulacion_consentimiento_contacto_comercial",
+   "f": "F-131",
+   "apoyo": "FTC 2003: el registro nacional 'No Llamar' permite a los consumidores excluir su número del telemarketing; la FTC empezó a hacerlo cumplir el 1-oct-2003.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-427",
+   "s": "registro_no_llamar_eeuu",
+   "p": "asocia_con",
+   "o": "inscripcion_registro_no_llamar",
+   "f": "F-131",
+   "apoyo": "FTC 2003 y 2006: más de 10 millones de números se inscribieron en los primeros 4 días (85% en línea) y más de 107 millones al cierre del año fiscal 2005.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-428",
+   "s": "confianza_compra_online_seguro",
+   "p": "modera",
+   "o": "intencion_compra_online_seguro_vida",
+   "f": "F-191",
+   "apoyo": "Jindal J. Bus. Res. 2023 (Hanaysha et al.): en clientes de aseguradoras de Malasia, la confianza modera la relación entre normas subjetivas e intención de comprar seguro de vida online.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-429",
+   "s": "normas_subjetivas_compra_seguro",
+   "p": "asocia_con",
+   "o": "intencion_compra_online_seguro_vida",
+   "f": "F-191",
+   "apoyo": "Jindal J. Bus. Res. 2023 (Hanaysha et al.): las normas subjetivas se asocian positivamente con la intención de comprar seguro de vida online (encuesta, SmartPLS).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-430",
+   "s": "utilidad_facilidad_seguridad_web_percibidas",
+   "p": "asocia_con",
+   "o": "intencion_compra_online_seguro_vida",
+   "f": "F-191",
+   "apoyo": "Jindal J. Bus. Res. 2023 (Hanaysha et al.): utilidad, facilidad de uso y seguridad web percibidas se asocian positivamente con la intención de compra online; las habilidades web no.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-431",
+   "s": "programa_vitality_empleadores",
+   "p": "reduce",
+   "o": "costo_siniestros_medicos_empleador",
+   "f": "F-353",
+   "apoyo": "Vitality Group 2024 (Impact Study, nota de prensa): ahorro de US$462 anuales por miembro comprometido, −4% en costo de siniestros (US$39,8 M) en ~40.000 vidas de 5 empleadores en 5 años.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-432",
+   "s": "bancaseguros_latam",
+   "p": "parte_de",
+   "o": "distribucion_seguros_latam",
+   "f": "F-375",
+   "apoyo": "McKinsey 2025 (Informe Global de Seguros, LatAm): la bancaseguros llega a 80% de la distribución de vida y pensiones en Brasil y a 25% de los seguros patrimoniales en Chile.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-433",
+   "s": "intermediarios_seguros",
+   "p": "parte_de",
+   "o": "distribucion_seguros_latam",
+   "f": "F-375",
+   "apoyo": "McKinsey 2025 (Informe Global de Seguros, LatAm): corredores y agentes aún representan 60-65% de las primas, con alta fragmentación (más de 210.000 en la región).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-434",
+   "s": "desarrollo_favorable_reservas_lemonade",
+   "p": "reduce",
+   "o": "loss_ratio_bruto_lemonade",
+   "f": "F-509",
+   "apoyo": "Lemonade, carta a accionistas 2T 2026 (8-K): el loss ratio bruto fue 60% e incluye 7 puntos de desarrollo favorable de periodos previos (sobre todo hogar y auto); un año antes era 67%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-435",
+   "s": "npp_croda",
+   "p": "es_tipo_de",
+   "o": "kpi_innovacion_ventas_productos_nuevos",
+   "f": "F-531",
+   "apoyo": "Croda, resultados anuales 2014-2024: reporta cada año el % de ventas de productos nuevos y protegidos (21,4% en 2013, 23,4% en 2014, 27,4% en 2016, 33% en 2023, 35% en 2024).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-436",
+   "s": "desarrollo_favorable_reservas_lemonade",
+   "p": "reduce",
+   "o": "loss_ratio_bruto_lemonade",
+   "f": "F-636",
+   "apoyo": "Lemonade, carta a accionistas 2T 2026 (8-K): loss ratio bruto de 60% frente a 67% un año antes; incluye 7 puntos de desarrollo favorable de periodos previos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-437",
+   "s": "encuesta_naic_genz_2024",
+   "p": "mide",
+   "o": "comprension_terminos_seguro_salud",
+   "f": "F-8",
+   "apoyo": "NAIC 2024 (N=1.003, 18-27 años): solo 27% de la Gen Z identifica correctamente 'deducible' y 29% 'copago'; 19% 'fuera de red'.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-438",
+   "s": "seguro_embebido",
+   "p": "asocia_con",
+   "o": "tamano_mercado_seguro_embebido",
+   "f": "F-28",
+   "apoyo": "Research and Markets 2026: el mercado de seguro embebido pasaría de US$116,05 mil M (2025) a US$138,08 mil M (2026), CAGR 19,0%, y a US$277,67 mil M en 2030 (proyección).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-439",
+   "s": "mancomunacion_riesgo",
+   "p": "reduce",
+   "o": "variabilidad_primas",
+   "f": "F-93",
+   "apoyo": "American Academy of Actuaries 2017: en general, cuanto más grande el pool de riesgo, más predecibles y estables pueden ser las primas; los costos de los menos sanos se compensan con los de los sanos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-440",
+   "s": "mancomunacion_riesgo",
+   "p": "tiene_limite",
+   "o": "pool_grande_no_baja_prima",
+   "f": "F-93",
+   "apoyo": "American Academy of Actuaries 2017: un pool grande no implica necesariamente primas más bajas; el factor clave es el costo promedio de atención de los inscritos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-441",
+   "s": "mancomunacion_riesgo",
+   "p": "aplica_a",
+   "o": "mercado_seguro_individual",
+   "f": "F-93",
+   "apoyo": "American Academy of Actuaries 2017: explica la mancomunación en el mercado individual de salud de EE.UU., donde la ACA exige un pool único por estado para fijar primas.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-442",
+   "s": "reduccion_campos_checkout",
+   "p": "reduce",
+   "o": "abandono_checkout_complejidad",
+   "f": "F-145",
+   "apoyo": "Baymard Institute 2024: el checkout promedio tiene 11,3 campos aunque bastan 8; 26% abandonó una compra solo por un checkout largo o complejo, y los campos pesan más en la usabilidad que los pasos.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-443",
+   "s": "alzas_tarifas_seguros_comerciales",
+   "p": "aumenta",
+   "o": "crecimiento_primas_seguros_comerciales",
+   "f": "F-170",
+   "apoyo": "McKinsey 2025: las primas comerciales crecieron ~8% anual en 5 años; en Europa y Norteamérica ese crecimiento se debió íntegramente a alzas de tarifas, mientras otros factores lo restaron.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-444",
+   "s": "canal_directo_seguros",
+   "p": "aumenta",
+   "o": "costo_adquisicion_seguros",
+   "f": "F-184",
+   "apoyo": "PwC (Insurance 2030): construir y promover canales directos puede aumentar el costo de adquisición; muchas aseguradoras no lograron focalizar clientes, tarificar el riesgo ni ofrecer una compra atractiva.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-445",
+   "s": "multicanal_humano_digital_seguros",
+   "p": "aumenta",
+   "o": "ventas_retencion_seguros",
+   "f": "F-184",
+   "apoyo": "PwC (Insurance 2030): las aseguradoras que combinan experiencias personales y digitales pueden lograr más ventas a menor costo, mayor retención y mejor evaluación del riesgo.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-446",
+   "s": "sobreestimacion_precio_seguro_vida",
+   "p": "asocia_con",
+   "o": "brecha_necesidad_seguro_vida",
+   "f": "F-232",
+   "apoyo": "LIMRA/Life Happens 2025 (Insurance Barometer): ~3/4 sobreestima el costo del seguro de vida (los ≤35, 7-12 veces) y el costo es la razón más citada (46%) por quienes tienen brecha de necesidad para no comprar.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-447",
+   "s": "preocupacion_privacidad_situacional",
+   "p": "modera",
+   "o": "personalizacion_publicidad",
+   "f": "F-253",
+   "apoyo": "Behavioral Sciences (MDPI) 2025, experimento 3×2 (N=360): la preocupación situacional por la privacidad invierte el efecto; con ella activada, el mensaje con PII no supera al genérico y rinde menos que el contextual.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-448",
+   "s": "personalizacion_publicidad",
+   "p": "aumenta",
+   "o": "disposicion_compra",
+   "f": "F-253",
+   "apoyo": "Behavioral Sciences (MDPI) 2025: con baja preocupación por la privacidad, subir el nivel de personalización aumenta la intención de compra (efecto condicional, no general).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-449",
+   "s": "lemonade_resultados_q1_2026",
+   "p": "origina_en",
+   "o": "lemonade_inc",
+   "f": "F-29",
+   "apoyo": "Lemonade, comunicado Q1 2026 (29-abr-2026): ingresos de US$258M (+71%), pérdida neta de US$35,8M (43% menor), prima en vigor de US$1.330M (+32%) y utilidad bruta de US$100M (+159%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-450",
+   "s": "naic_org",
+   "p": "mide",
+   "o": "participacion_eeuu_primas_mundiales",
+   "f": "F-80",
+   "apoyo": "NAIC, Top International Insurance Markets (datos 2022): EE.UU. suma US$3.058.859M en primas (44,45% del mundo), seguido de China (10,14%), Reino Unido (5,28%) y Japón (4,91%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-451",
+   "s": "chas_singapur",
+   "p": "parte_de",
+   "o": "atencion_primaria_singapur",
+   "f": "F-112",
+   "apoyo": "Ministerio de Salud de Singapur (s.f.): de más de 2.000 clínicas GP privadas, más de 1.300 son CHAS; más de 1.000 GP CHAS se organizan en 10 redes de atención primaria, junto a 26 policlínicas públicas subsidiadas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-452",
+   "s": "healthier_sg_singapur",
+   "p": "aplica_a",
+   "o": "continuidad_atencion_primaria",
+   "f": "F-112",
+   "apoyo": "Ministerio de Salud de Singapur (s.f.): con Healthier SG, ciudadanos y residentes permanentes de 40+ años se inscriben en un GP o policlínica y trabajan con un médico de familia en un plan de salud personalizado.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-453",
+   "s": "naic_org",
+   "p": "mide",
+   "o": "margen_salud_eeuu",
+   "f": "F-193",
+   "apoyo": "NAIC 2025 (informe semestral): la industria de salud de EE.UU. ganó US$8.900M de suscripción en el 1S 2025 (−26,5%), con margen de 1,8% (vs. 2,7%) y combined ratio de 98,7%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-454",
+   "s": "margen_salud_eeuu",
+   "p": "respalda",
+   "o": "c_margen_compresion",
+   "f": "F-193",
+   "apoyo": "NAIC 2025: el margen cayó 0,9 pp interanual (2,7%→1,8%) y la utilidad neta 23,2% en el 1S 2025. Solo compara dos semestres, así que respalda la compresión puntual, no una tendencia larga.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-455",
+   "s": "venta_digital_bancaseguros",
+   "p": "asocia_con",
+   "o": "crecimiento_ventas",
+   "f": "F-376",
+   "apoyo": "McKinsey 2019 (benchmark Finalta, bancos de 27 países): los campeones de crecimiento europeos venden por canal digital el doble de no-vida que sus pares y subieron 17% las ventas a clientes nuevos en 2016-2017.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-456",
+   "s": "agentes_ia_especificos_tarea",
+   "p": "aplica_a",
+   "o": "aplicaciones_empresariales",
+   "f": "F-533",
+   "apoyo": "Gartner (comunicado, 26-ago-2025) pronostica que 40% de las apps empresariales integrarán agentes de IA específicos a tareas a fines de 2026, desde menos de 5% en 2025. Es predicción, no medición.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-457",
+   "s": "utilidad_vitality_h1_fy2026",
+   "p": "origina_en",
+   "o": "vitality_discovery",
+   "f": "F-637",
+   "apoyo": "BusinessDay (3-mar-2026): la utilidad normalizada del compuesto Vitality subió 41% a R2.100M en el semestre a dic-2025; 11,2 M de vidas fuera de China (+15%) y más de 34 M en China.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-458",
+   "s": "tasas_interes_altas_2024",
+   "p": "aumenta",
+   "o": "primas_vida_ocde_2024",
+   "f": "F-2",
+   "apoyo": "OECD 2025: las primas brutas de vida crecieron 11,9% nominal en 2024 (6,5% en 2023), atribuido a tasas altas que hacen atractivos los productos de ahorro.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-459",
+   "s": "oecd_global_insurance_trends_2025",
+   "p": "mide",
+   "o": "penetracion_seguros_ocde",
+   "f": "F-2",
+   "apoyo": "OECD 2025: la penetración total subió a 6,2% promedio OCDE en 2024 (6,0% en 2023) y 5,4% en todas las jurisdicciones, aún por debajo de hace una década.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-460",
+   "s": "baja_siniestralidad_catastrofica",
+   "p": "aumenta",
+   "o": "utilidad_neta_swiss_re",
+   "f": "F-32",
+   "apoyo": "Swiss Re, comunicado Q1 2026: utilidad neta USD 1.500 M (+19%) y ROE 23,6% (22,4% previo), impulsados por baja siniestralidad catastrófica y fuerte aporte de inversiones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-461",
+   "s": "consentimiento_previo_expreso_datos",
+   "p": "parte_de",
+   "o": "ley_29733_datos_personales",
+   "f": "F-67",
+   "apoyo": "Ley 29733 (Congreso del Perú, 2011): el art. 13 exige consentimiento previo, informado, expreso e inequívoco del titular para el tratamiento de sus datos personales.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-462",
+   "s": "medisave_singapur",
+   "p": "parte_de",
+   "o": "financiamiento_salud_singapur_3m",
+   "f": "F-102",
+   "apoyo": "Commonwealth Fund (perfil Singapur): MediSave, ahorro obligatorio que cubre ~85% de los singapurenses, es uno de los 3M junto a MediShield Life y MediFund.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-463",
+   "s": "medifund_singapur",
+   "p": "parte_de",
+   "o": "financiamiento_salud_singapur_3m",
+   "f": "F-102",
+   "apoyo": "Commonwealth Fund (perfil Singapur): MediFund es la red de seguridad para el ~10% que no puede pagar su atención pese al subsidio, dentro del esquema S+3M.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-464",
+   "s": "indecopi_sancion_bbva_llamada_2026",
+   "p": "aplica_a",
+   "o": "llamadas_comerciales_sin_consentimiento",
+   "f": "F-138",
+   "apoyo": "Infobae 2026: la Sala de Indecopi confirmó multa de S/63.800 a BBVA por volver a llamar a un usuario que revocó su consentimiento y ordenó excluirlo de todas las bases, incluidas las de terceros.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-465",
+   "s": "kff_desempeno_aseguradoras_2024",
+   "p": "mide",
+   "o": "mlr_mercados_salud_eeuu",
+   "f": "F-194",
+   "apoyo": "KFF (datos NAIC 2024): MLR de 91% en Medicaid managed care, 90% en Medicare Advantage, 88% en grupo y 85% en individual; subieron en todos los mercados vs. 2023.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-466",
+   "s": "accesibilidad_web",
+   "p": "aumenta",
+   "o": "alcance_mercado_digital",
+   "f": "F-264",
+   "apoyo": "W3C WAI 2018 (Business Case): sostiene que la accesibilidad digital amplía el alcance de mercado, impulsa innovación y marca y reduce riesgo legal; apoyo en casos sin grupo de control.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-467",
+   "s": "intermediarios_seguros",
+   "p": "asocia_con",
+   "o": "confianza_fuente",
+   "f": "F-359",
+   "apoyo": "McKinsey 2023 (encuesta a >8.500 clientes de las 40 mayores aseguradoras de Norteamérica): los clientes de vida ubican a los agentes como la fuente más confiable para aprender sobre seguros.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-468",
+   "s": "experiencia_cliente_seguros",
+   "p": "asocia_con",
+   "o": "desempeno_financiero_firma",
+   "f": "F-359",
+   "apoyo": "McKinsey 2023: las aseguradoras líderes en CX superan a sus pares en TSR, crecimiento de ingresos y satisfacción de empleados y agentes.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-469",
+   "s": "ocupaciones_administrativas",
+   "p": "asocia_con",
+   "o": "exposicion_ia_generativa_ocupacional",
+   "f": "F-515",
+   "apoyo": "OIT WP140 (2025): las ocupaciones administrativas siguen con la mayor exposición a IA generativa; 1 de cada 4 trabajadores tiene alguna exposición y 3,3% la más alta.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-470",
+   "s": "exposicion_ia_generativa_ocupacional",
+   "p": "asocia_con",
+   "o": "transformacion_empleo_ia",
+   "f": "F-515",
+   "apoyo": "OIT WP140 (2025): la transformación de los puestos es el impacto más probable de la IA generativa, porque la mayoría de ocupaciones incluye tareas que requieren intervención humana.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-471",
+   "s": "accesibilidad_web",
+   "p": "aumenta",
+   "o": "compromiso_cognitivo_lectura_web",
+   "f": "F-523",
+   "apoyo": "PLOS ONE 2025 (Ekin et al., N=20, eye-tracking y VFC): sin mejoras el compromiso cognitivo decayó en el tiempo; la accesibilidad cognitiva lo aumentó en usuarios sin discapacidad.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-472",
+   "s": "accesibilidad_web",
+   "p": "tiene_limite",
+   "o": "muestra_pequena_plos_accesibilidad_2025",
+   "f": "F-523",
+   "apoyo": "PLOS ONE 2025 (Ekin et al.): la evidencia psicofisiológica sobre accesibilidad en usuarios sin discapacidad proviene de solo 20 participantes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-473",
+   "s": "c_85_proyectos_ia_fracasan",
+   "p": "origina_en",
+   "o": "gartner_prediccion_sesgo_ia_2018",
+   "f": "F-538",
+   "apoyo": "Gartner, comunicado 13-feb-2018: predijo que hasta 2022 el 85% de los proyectos de IA daría resultados erróneos por sesgo en datos, algoritmos o equipos; no es una medición de fracaso.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-474",
+   "s": "sancion_ftc_cleo_2025",
+   "p": "aplica_a",
+   "o": "cancelacion_dificil_suscripcion",
+   "f": "F-641",
+   "apoyo": "FTC 2025: Cleo AI pagará US$17 M; la FTC alegó que dificultaba cancelar y seguía cobrando, y le exige ofrecer una forma simple de cancelar.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-475",
+   "s": "sancion_ftc_cleo_2025",
+   "p": "aplica_a",
+   "o": "publicidad_enganosa_adelantos_cleo",
+   "f": "F-641",
+   "apoyo": "FTC 2025: Cleo anunciaba adelantos instantáneos de cientos de dólares, pero rutinariamente ofrecía menos de US$100; acuerdo de US$17 M para reembolsos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-476",
+   "s": "tecnicas_conductuales_comprension_vida",
+   "p": "aumenta",
+   "o": "comprension_seguro_vida",
+   "f": "F-22",
+   "apoyo": "SOA Research Institute y RGA 2024: en dos experimentos con ~2.000 adultos de EE.UU. cada uno, las técnicas conductuales elevaron la comprensión del seguro de vida hasta 28%.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-477",
+   "s": "ajuste_riesgo",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-103",
+   "apoyo": "The Actuary (SOA): el programa permanente de ajuste de riesgo de la ACA reduce el potencial de selección adversa y nivela la competencia entre aseguradoras, promoviendo estabilidad y asequibilidad.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-478",
+   "s": "pronostico_triple_i_milliman_2025",
+   "p": "mide",
+   "o": "ratio_combinado_pc_eeuu",
+   "f": "F-161",
+   "apoyo": "Triple-I y Milliman, ene-2025: ratio combinado neto P/C 2024 estimado en 99,5 (−2,2 pts) con primas +9,5%; prevén que la mejora continúe en 2025 y 2026.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-479",
+   "s": "desintermediacion_ia_distribucion_seguros",
+   "p": "reduce",
+   "o": "comisiones_agentes_baja_complejidad",
+   "f": "F-181",
+   "apoyo": "Fortune/BofA Global Research 2026: más de US$15.000 M en comisiones de 2025 de seis aseguradoras, en riesgos de baja complejidad, enfrentan un riesgo no menor de desintermediación por IA.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-480",
+   "s": "generative_ui",
+   "p": "aumenta",
+   "o": "preferencia_interfaces_generativas",
+   "f": "F-258",
+   "apoyo": "arXiv/ACL Findings 2025-26 (Chen et al.): frente a interfaces de chat, las interfaces generativas logran hasta 72% de mejora en preferencia humana, en tareas, patrones de interacción y tipos de consulta diversos.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-481",
+   "s": "generative_ui",
+   "p": "respalda",
+   "o": "c_generative_ui_gusta_mas",
+   "f": "F-258",
+   "apoyo": "arXiv 2025 (Chen et al.): las interfaces generativas superan consistentemente a las conversacionales en preferencia humana (hasta +72%), medido con un marco de evaluación diseñado por los propios autores.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-482",
+   "s": "glosario_seguros_sbs",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-11",
+   "apoyo": "SBS (s.f.), Portal del Usuario: glosario oficial que define para el usuario términos como asegurado, aseguradora, AFOCAT, ajustador, solicitud de cobertura y solicitud de seguro.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-483",
+   "s": "munich_re_ambition_2025",
+   "p": "asocia_con",
+   "o": "resultado_neto_munich_re_2025",
+   "f": "F-33",
+   "apoyo": "Munich Re 2026 (comunicado de resultados 2025): resultado neto de €6.100M por encima de la meta y RoE de 18,3%; la empresa dice haber cumplido o superado todas las metas de Ambition 2025.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-484",
+   "s": "vitality_drive",
+   "p": "asocia_con",
+   "o": "utilidad_discovery_insure",
+   "f": "F-104",
+   "apoyo": "Discovery Limited 2026 (resultados interinos): la utilidad operativa normalizada de Discovery Insure subió 34% a R546M; la empresa la atribuye a mejores márgenes de suscripción y al desempeño de Vitality Drive.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-485",
+   "s": "vitality_drive",
+   "p": "es_tipo_de",
+   "o": "diseno_incentivo_conductual",
+   "f": "F-104",
+   "apoyo": "Discovery Limited 2026: Vitality Drive es el programa de incentivos del modelo Shared-Value con el que la empresa explica la mejora de los márgenes de suscripción de Discovery Insure.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-486",
+   "s": "regla_mlr_80_20_aca",
+   "p": "tiene_limite",
+   "o": "margen_salud_eeuu",
+   "f": "F-197",
+   "apoyo": "HealthCare.gov/CMS (s.f.): la regla 80/20 exige gastar ≥80% de la prima (≥85% en grupo grande) en atención y calidad; solo el resto puede ir a gastos administrativos, generales y de marketing, y el exceso se reembolsa.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-487",
+   "s": "regla_mlr_80_20_aca",
+   "p": "reduce",
+   "o": "ciclos_rentabilidad_aseguradoras_salud",
+   "f": "F-197",
+   "apoyo": "Commonwealth Fund 2019 (Hall y McCue), con datos financieros 2015-2017: al calcular el MLR con promedio móvil de 3 años, la regla amortigua la severidad de los ciclos de ganancias y pérdidas del mercado individual.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-488",
+   "s": "percepcion_lucro_aseguradora_salud",
+   "p": "reduce",
+   "o": "confianza_aseguradora",
+   "f": "F-336",
+   "apoyo": "J. Mark. Access Health Policy 2025 (van der Hulst et al.; 17 entrevistas, Países Bajos): algunos asegurados ven a la aseguradora movida por el lucro y priorizando costos, lo que genera insatisfacción; la confianza es baja.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-489",
+   "s": "info_insuficiente_aseguradora",
+   "p": "reduce",
+   "o": "confianza_aseguradora",
+   "f": "F-336",
+   "apoyo": "J. Mark. Access Health Policy 2025 (van der Hulst et al.): la baja confianza en aseguradoras holandesas se vincula a la falta de comprensión de su rol; recomiendan comunicar más su aporte y sus funciones.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-490",
+   "s": "mind_gym",
+   "p": "asocia_con",
+   "o": "ingresos_mind_gym",
+   "f": "F-629",
+   "apoyo": "Mind Gym plc, RNS 2025-2026: ingresos de £38,6M (−14%) en FY2025 y £29,9M (−23%; −7% comparable) en FY2026, con pérdidas antes de impuestos de £6,2M y £5,2M.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-491",
+   "s": "ingresos_wealthfront",
+   "p": "origina_en",
+   "o": "gestion_efectivo_wealthfront",
+   "f": "F-642",
+   "apoyo": "Renaissance Capital 2025 / S-1 de Wealthfront: US$339M de ingresos en 12 meses a jul-2025; según cobertura del S-1, la gestión de efectivo explica ~76% de los ingresos del semestre a jul-2025 y la asesoría de inversión el 24%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-492",
+   "s": "nudges_a_escala",
+   "p": "aplica_a",
+   "o": "reclamos_seguro_auto",
+   "f": "F-26",
+   "apoyo": "McKinsey Quarterly 2019 (Güntner, Lucks y Sperling-Magro): una aseguradora usó nudges de su unidad conductual para promover su red de talleres asociados en los reclamos de autos; el artículo pide medir el éxito con resultados de negocio.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-493",
+   "s": "seguro_parametrico",
+   "p": "asocia_con",
+   "o": "mercado_seguro_parametrico_global",
+   "f": "F-163",
+   "apoyo": "SOA General Insurance Newsletter 2026 (Cappelletti): la prima global de seguro paramétrico se estima en USD 16.200M en 2024 y se proyecta en USD 51.300M en 2034; el pago depende de disparadores objetivos, no de la pérdida real.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-494",
+   "s": "evicore_dial_algoritmo",
+   "p": "aumenta",
+   "o": "denegacion_autorizacion_previa",
+   "f": "F-349",
+   "apoyo": "ProPublica/The Capitol Forum 2024: con documentos internos, EviCore usa un algoritmo con IA ('the dial') ajustable para elevar denegaciones; sus vendedores presumieron +15% de denegaciones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-495",
+   "s": "contratos_evicore_pago_por_ahorro",
+   "p": "asocia_con",
+   "o": "denegacion_autorizacion_previa",
+   "f": "F-349",
+   "apoyo": "ProPublica/The Capitol Forum 2024: algunos contratos aseguran que EviCore gane más cuanto más recorta gasto; en Arkansas rechazó ~20% de autorizaciones previas vs ~7% en Medicare Advantage (2022).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-496",
+   "s": "ensusalud_2014_farmacias",
+   "p": "mide",
+   "o": "determinantes_automedicacion",
+   "f": "F-37",
+   "apoyo": "INEI (ENSUSALUD 2014): encuesta nacional a 3.849 usuarios de farmacias y boticas sobre razones de comprar fuera del establecimiento que prescribe y de automedicarse; 56,7% son mujeres.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-497",
+   "s": "ley_32323_antispam",
+   "p": "aplica_a",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-69",
+   "apoyo": "Congreso del Perú / El Peruano 2025: la Ley 32323 prohíbe llamadas, SMS o correos masivos para ofrecer productos sin consentimiento previo, expreso e informado; consentimiento revocable; incumplir es infracción muy grave.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-498",
+   "s": "multa_indecopi_bbva_spam",
+   "p": "aplica_a",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-118",
+   "apoyo": "Indecopi (vía LP Derecho/Andina) 2026: la CC3 multó a BBVA Perú con 279,5 UIT (S/1.537.250) por llamadas comerciales sin consentimiento previo, informado, expreso e inequívoco; decisión apelable.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-499",
+   "s": "multa_indecopi_bbva_spam",
+   "p": "origina_en",
+   "o": "fiscalizacion_ia_indecopi_audios",
+   "f": "F-118",
+   "apoyo": "Indecopi (vía LP Derecho/Andina) 2026: con herramientas de IA (Python, Whisper) detectó >330.000 comunicaciones promocionales a >243.000 usuarios de BBVA.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-500",
+   "s": "fiscalizacion_ia_indecopi_audios",
+   "p": "mide",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-118",
+   "apoyo": "Indecopi (vía El Peruano/Andina) 2025: transcribe con IA ~7 millones de audios de banca, seguros y telecom para detectar ofertas comerciales sin consentimiento.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-501",
+   "s": "kaiser_permanente_risant",
+   "p": "tiene_limite",
+   "o": "presion_costos_atencion_2025",
+   "f": "F-105",
+   "apoyo": "Kaiser Permanente 2026 (resultados 2025): costos crecientes por alta demanda, atención más compleja y medicamentos caros; resultado operativo US$1.400 M sobre ingresos de US$127.700 M (~1,1%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-502",
+   "s": "allianz_resultados_1t2026",
+   "p": "contradice",
+   "o": "c_f203_cifra",
+   "f": "F-203",
+   "apoyo": "Allianz SE 2026 (Earnings Release 1Q 2026): Vida/Salud tuvo resultado operativo de €1.354 M (−5,1%); los €2.400 M récord (+11,1%) son de Daños, que en FY2025 hizo €9.000 M (+13,9%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-503",
+   "s": "allianz_resultados_1t2026",
+   "p": "mide",
+   "o": "allianz_vida_salud",
+   "f": "F-203",
+   "apoyo": "Allianz SE 2026 (Earnings Release 1Q 2026): Vida/Salud €1.354 M de resultado operativo (−5,1%), PVNBP €23.700 M (−9,1%), margen de nuevo negocio 5,3%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-504",
+   "s": "anthem_limite_anestesia",
+   "p": "asocia_con",
+   "o": "backlash_consumidor",
+   "f": "F-345",
+   "apoyo": "NBC News 2024: la política de límites de tiempo de anestesia de Anthem desató indignación; la ASA la llamó 'cynical money grab' y la gobernadora de NY exigió su reversión.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-505",
+   "s": "reversion_politica_anthem",
+   "p": "origina_en",
+   "o": "backlash_consumidor",
+   "f": "F-345",
+   "apoyo": "NBC News 2024: tras la ola de indignación y la presión de la gobernadora Hochul, Anthem desistió de la política alegando 'significant widespread misinformation'.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-506",
+   "s": "latam_insurtech_journey",
+   "p": "mide",
+   "o": "inversion_insurtech_latam",
+   "f": "F-374",
+   "apoyo": "MAPFRE 2026 (Insurtech LatAm 2025 review): 536 insurtechs activas al cierre de 2025; inversión de US$199 M (+117% vs 2024), aún muy por debajo de 2021-2022.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-507",
+   "s": "wocv_2026",
+   "p": "mide",
+   "o": "actividad_cvc_global",
+   "f": "F-465",
+   "apoyo": "Global Corporate Venturing 2026 (WoCV): >3.068 corporaciones invirtieron en startups en 2025 (+29%, récord), en 5.221 rondas por US$233.800 M (+75%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-508",
+   "s": "preocupacion_privacidad_situacional",
+   "p": "modera",
+   "o": "personalizacion_publicidad",
+   "f": "F-518",
+   "apoyo": "Behavioral Sciences 2025 (Kim y Han, N=360): con privacidad activada, la personalización con PII no superó al mensaje genérico y fue peor que la contextual moderada (backfire).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-509",
+   "s": "personalizacion_publicidad",
+   "p": "aumenta",
+   "o": "disposicion_compra",
+   "f": "F-518",
+   "apoyo": "Behavioral Sciences 2025 (Kim y Han, 3×2, N=360): con baja preocupación de privacidad, más personalización del mensaje aumentó la intención de compra.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-510",
+   "s": "meta_ventas_innovacion_dsm",
+   "p": "asocia_con",
+   "o": "ventas_innovacion_dsm",
+   "f": "F-530",
+   "apoyo": "Royal DSM, informes anuales 2011 y 2019: meta de 12%→20% de ventas de innovación hacia 2015; reportó 18% en 2011 y 21% en 2019, en línea con la aspiración de ~20%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-511",
+   "s": "proyectos_ia_agentica",
+   "p": "tiene_limite",
+   "o": "agent_washing",
+   "f": "F-631",
+   "apoyo": "Gartner 2025: muchos proveedores hacen 'agent washing' (rebautizan asistentes, RPA y chatbots); de miles de proveedores, solo ~130 serían agénticos reales.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-512",
+   "s": "proyectos_ia_agentica",
+   "p": "asocia_con",
+   "o": "cancelacion_proyectos_ia_agentica",
+   "f": "F-631",
+   "apoyo": "Gartner 2025 (predicción): >40% de proyectos de IA agéntica se cancelarán a fines de 2027 por costos crecientes, valor poco claro o controles de riesgo inadecuados.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-513",
+   "s": "bain_lealtad_seguros_2023",
+   "p": "mide",
+   "o": "demanda_esg_aseguradoras",
+   "f": "F-4",
+   "apoyo": "Bain & Company 2023 (28.765 consumidores, 14 países): ~80% quiere que las aseguradoras integren iniciativas ESG en su propuesta.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-514",
+   "s": "bain_lealtad_seguros_2023",
+   "p": "mide",
+   "o": "interes_prevencion_riesgo_seguros",
+   "f": "F-4",
+   "apoyo": "Bain & Company 2023: los consumidores quieren prevención y mitigación de riesgo (Brasil 97%, Japón 81%); 59% quiere que vida premie hábitos saludables.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-515",
+   "s": "ia_en_investigacion",
+   "p": "parte_de",
+   "o": "ciencia_conductual_ia",
+   "f": "F-27",
+   "apoyo": "arXiv 2025 (Jackson et al.): una de las tres áreas del campo 'AI Behavioral Science' es cómo la IA potencia la investigación en ciencias del comportamiento.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-516",
+   "s": "psicologia_de_maquinas",
+   "p": "parte_de",
+   "o": "ciencia_conductual_ia",
+   "f": "F-27",
+   "apoyo": "arXiv 2025 (Jackson et al.): otra área es usar las ciencias del comportamiento para estudiar y diseñar la IA (sus sesgos y principios de diseño).",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-517",
+   "s": "disciplina_suscripcion_tarifas_pc",
+   "p": "asocia_con",
+   "o": "desempeno_pc_eeuu_2025",
+   "f": "F-169",
+   "apoyo": "Reinsurance News 2026 (AM Best): mejor año del P&C de EE.UU. en una década por suscripción disciplinada, tarifas robustas e inversiones; utilidad técnica ~US$39.000 M; ratio combinado 95,0 vs 97,1.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-518",
+   "s": "reclamo_digital_seguros",
+   "p": "tiene_limite",
+   "o": "fallo_digital_reclamo_complejo",
+   "f": "F-183",
+   "apoyo": "Bain & Company 2023 (NPS Prism): el fallo digital en reclamos promedia 39% en hogar y 33% en auto; incluso entre los líderes >30% de clientes debe pasar a ayuda humana.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-519",
+   "s": "fallo_digital_reclamo_complejo",
+   "p": "reduce",
+   "o": "nps_cliente_seguros",
+   "f": "F-183",
+   "apoyo": "Bain & Company 2023 (NPS Prism): quienes inician el reclamo en digital y terminan necesitando ayuda humana reportan un NPS 11 puntos menor en promedio.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-520",
+   "s": "optum_rx_tarifa_fija",
+   "p": "origina_en",
+   "o": "criticas_spread_pricing_pbm",
+   "f": "F-200",
+   "apoyo": "Bloomberg 2026: UnitedHealth desliga las utilidades de Optum Rx de los precios de lista con tarifas fijas por miembro, eliminando el spread pricing, respondiendo a críticas de larga data.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-521",
+   "s": "design_value_index_dmi",
+   "p": "respalda",
+   "o": "c_diseno_firma",
+   "f": "F-267",
+   "apoyo": "DMI 2015: un portafolio de 16 empresas 'design-centric' rindió 211% sobre el S&P 500 a 10 años, tercer año seguido >200% (selección retrospectiva de empresas).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-522",
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "homogeneizacion_creativa",
+   "f": "F-517",
+   "apoyo": "Tilburg/Aarhus (de Rooij y Biskjaer), aceptado en ECCE 2026: revisión sistemática y metaanálisis (19 estudios, 61 tamaños de efecto) halla un efecto pequeño pero significativo de homogeneización asociado al uso de IA en la co-creación.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-523",
+   "s": "mckinsey_design_index",
+   "p": "respalda",
+   "o": "c_diseno_firma",
+   "f": "F-266",
+   "apoyo": "McKinsey 2018: en 300 empresas cotizadas seguidas 5 años, las del cuartil superior del MDI crecieron 32% más en ingresos y 56% más en retorno al accionista que sus pares; consultora, sin replicación independiente.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-524",
+   "s": "teoria_disrupcion",
+   "p": "tiene_limite",
+   "o": "casos_disrupcion_no_encajan",
+   "f": "F-436",
+   "apoyo": "MIT Sloan Management Review 2015 (King y Baatartogtokh): expertos evaluaron 77 casos de los libros de Christensen; solo 7 (9%) contenían los cuatro elementos de la teoría y la mayoría mostró fuerzas y resultados no previstos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-525",
+   "s": "teatro_innovacion",
+   "p": "reduce",
+   "o": "exito_proyecto_innovacion",
+   "f": "F-461",
+   "apoyo": "HBR 2019 (Blank): copiar rituales de startup en grandes empresas (hackatones, posters) produce 'teatro de la innovación' con muy poco resultado en ingresos o utilidades; propone una doctrina de innovación.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-526",
+   "s": "pilotos_genai_empresa",
+   "p": "asocia_con",
+   "o": "impacto_pyg_genai",
+   "f": "F-539",
+   "apoyo": "MIT NANDA 2025 (153 líderes, 52 entrevistas, >300 implementaciones): el 95% de las organizaciones no obtiene retorno medible de sus pilotos de IA generativa; solo ~5% extrae valor. La barrera es que los sistemas no aprenden ni se adaptan.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-527",
+   "s": "alianzas_externas_ia",
+   "p": "aumenta",
+   "o": "impacto_pyg_genai",
+   "f": "F-539",
+   "apoyo": "MIT NANDA 2025: las implementaciones con socios externos tienen el doble de tasa de éxito que los desarrollos internos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-528",
+   "s": "recorte_ideo_2023",
+   "p": "respalda",
+   "o": "c_crisis_consultoras",
+   "f": "F-317",
+   "apoyo": "Fast Company 2023: IDEO elimina 32% de su plantilla en 2023 y cierra Múnich y Tokio; viene reduciendo personal desde 2020, cuando tenía 725 personas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-529",
+   "s": "reporte_challenger",
+   "p": "mide",
+   "o": "recortes_atribuidos_ia",
+   "f": "F-283",
+   "apoyo": "Challenger, Gray & Christmas, may-2026: la IA fue la razón más citada por tercer mes; 38.579 recortes en mayo (40% del total) y 87.714 en lo que va de 2026, más que los 54.836 de todo 2025.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-530",
+   "s": "recortes_atribuidos_ia",
+   "p": "respalda",
+   "o": "c_ia_principal_causa_despidos",
+   "f": "F-283",
+   "apoyo": "Challenger 2026: los empleadores citan la IA más que cualquier otra razón; expertos advierten que puede usarse como chivo expiatorio (atribución declarada, no causa verificada).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-531",
+   "s": "liquid_glass_ios26",
+   "p": "reduce",
+   "o": "usabilidad_funcional",
+   "f": "F-272",
+   "apoyo": "Nielsen Norman Group 2025 (Budiu), evaluación experta: la interfaz de iOS 26 es menos legible y menos predecible, prioriza el espectáculo visual y obliga a reaprender lo básico.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-532",
+   "s": "rediseno_usabilidad",
+   "p": "aumenta",
+   "o": "mejora_kpi_rediseno",
+   "f": "F-534",
+   "apoyo": "Nielsen Norman Group 2008: la mejora promedio de KPIs tras un rediseño de usabilidad fue 83%, frente a 135% seis años antes; el retorno baja porque el costo se mantiene.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-533",
+   "s": "transformacion_digital",
+   "p": "asocia_con",
+   "o": "exito_transformacion",
+   "f": "F-537",
+   "apoyo": "McKinsey 2018 (encuesta global): menos del 30% de las transformaciones tiene éxito y solo 16% de las digitales mejora el desempeño y lo sostiene; identifica 21 prácticas en 5 categorías.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-534",
+   "s": "ideo_reinvencion",
+   "p": "respalda",
+   "o": "c_crisis_consultoras",
+   "f": "F-316",
+   "apoyo": "Fortune, 16-may-2026: tras décadas de diseño centrado en las personas, IDEO se reinventa como formador en innovación; declinó comentar su plantilla e ingresos actuales.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-535",
+   "s": "lanzamiento_claude_design",
+   "p": "reduce",
+   "o": "precio_accion_figma",
+   "f": "F-318",
+   "apoyo": "VentureBeat, abr-2026: el lanzamiento de Claude Design se leyó como desafío directo a Figma y su acción cayó ~7% ese día; Mike Krieger había dejado el directorio de Figma el 14-abr.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-536",
+   "s": "lanzamiento_claude_design",
+   "p": "respalda",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-318",
+   "apoyo": "VentureBeat, abr-2026: la caída de Figma el día del lanzamiento es un caso concreto de que el mercado descuenta la disrupción por IA en herramientas de diseño.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-537",
+   "s": "ronda_serie_b_lovable",
+   "p": "tiene_limite",
+   "o": "lovable_churn_no_publicado",
+   "f": "F-321",
+   "apoyo": "Lovable/TechCrunch, 18-dic-2025: Serie B de US$330M a US$6.600M liderada por CapitalG y Menlo, con 2,3 M de usuarios; el anuncio no publica churn ni retención neta.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-538",
+   "s": "conversaciones_ronda_lovable_2026",
+   "p": "tiene_limite",
+   "o": "ronda_no_cerrada",
+   "f": "F-320",
+   "apoyo": "TechCrunch, 9-jul-2026: Lovable negocia US$300M a US$13.200M (el doble de dic-2025) con Menlo como líder probable; ARR de US$500M en junio. Son conversaciones, no una ronda cerrada.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-539",
+   "s": "trafico_referido_llm",
+   "p": "asocia_con",
+   "o": "canva_arr",
+   "f": "F-324",
+   "apoyo": "TechCrunch, 18-feb-2026: Canva llegó a US$4.000M de ARR a fin de 2025 con 265 M de usuarios activos y 31 M de pago; el tráfico referido desde LLMs crece y el negocio B2B duplicó a US$500M de ARR (cifras de la empresa).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-540",
+   "s": "costo_ia_inferencia",
+   "p": "reduce",
+   "o": "crecimiento_ingresos_canva",
+   "f": "F-323",
+   "apoyo": "Capital Brief 2026: Canva bajó su previsión de crecimiento 2026 de 30% a 20% porque sus funciones de IA costaban mucho más de operar de lo previsto, y aplaza la IPO a 2027 mientras pasa a un modelo de créditos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-541",
+   "s": "ipo_canva_2027",
+   "p": "respalda",
+   "o": "c_impuesto_margen_ia",
+   "f": "F-323",
+   "apoyo": "Capital Brief 2026: el aplazamiento de la IPO de Canva por la economía de sus funciones de IA es un caso del costo de la IA presionando el margen de las herramientas de diseño.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-542",
+   "s": "encuesta_figma_disenadores",
+   "p": "mide",
+   "o": "percepcion_campo_diseno",
+   "f": "F-280",
+   "apoyo": "Figma, State of the Designer 2026 (906 diseñadores): 36% dice que el campo mejoró, 35% que empeoró y 29% que no cambió.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-543",
+   "s": "npvi_3m",
+   "p": "es_tipo_de",
+   "o": "kpi_innovacion_ventas_productos_nuevos",
+   "f": "F-454",
+   "apoyo": "3M popularizó en 1988 el Índice de Vitalidad de Nuevos Productos con la meta pública de 30% de ventas de productos con menos de 5 años; llegó a 31% en 2010 y 33% en 2012.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-544",
+   "s": "ratio_equipos_producto",
+   "p": "mide",
+   "o": "tamano_equipos_ux",
+   "f": "F-312",
+   "apoyo": "Nielsen Norman Group: en su encuesta de 2020, el ratio más típico investigador:diseñador:desarrollador fue 1:5:50.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-545",
+   "s": "tendencia_imperfect_by_design",
+   "p": "asocia_con",
+   "o": "busquedas_estetica_lofi",
+   "f": "F-295",
+   "apoyo": "Canva, dic-2025 (datos de su plataforma): +527% en búsquedas de estética lo-fi, +220% en 'liminal', +90% en DIY; 80% de creadores dice que 2026 es el año de recuperar el control creativo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-546",
+   "s": "integracion_vertical_pbm",
+   "p": "asocia_con",
+   "o": "concentracion_pbm",
+   "f": "F-199",
+   "apoyo": "Drug Channels Institute, mar-2026: en 2025 tres PBM integrados con aseguradoras (Express Scripts 31%, CVS Caremark 26%, Optum Rx 23%) procesaron el 80% de las recetas equivalentes de EE.UU.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-547",
+   "s": "loss_ratio_medico_q1_2025",
+   "p": "asocia_con",
+   "o": "margen_salud_eeuu",
+   "f": "F-195",
+   "apoyo": "Oliver Wyman, may-2025: en el 1T 2025 el loss ratio promedio de las aseguradoras de salud públicas cayó 5,5% frente al 4T 2024 (en línea con el 1T 2024) y el margen promedio subió 3,8%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-548",
+   "s": "rediseno_checkout",
+   "p": "aumenta",
+   "o": "conversion_checkout",
+   "f": "F-311",
+   "apoyo": "Baymard Institute 2026: un sitio grande promedio podría subir 35,26% su conversión solo rediseñando el checkout (potencial modelado, no medido), con US$260.000 M recuperables en EE.UU. y la UE.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-549",
+   "s": "costos_extra_inesperados",
+   "p": "aumenta",
+   "o": "abandono_checkout_complejidad",
+   "f": "F-311",
+   "apoyo": "Baymard Institute 2026: el abandono de carrito promedia 70,19% (49 estudios); los costos extra inesperados son la primera causa (48% de los abandonos no exploratorios).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-550",
+   "s": "uso_ia_trabajador",
+   "p": "reduce",
+   "o": "riesgo_despido",
+   "f": "F-282",
+   "apoyo": "Gallup, feb-2026 (>23.000 trabajadores de EE.UU.), vía Fox Business: en tecnología, quienes usan IA al menos mensualmente tienen ~6% de riesgo previsto de despido frente a 18% de los que casi no la usan, controlando edad, educación e industria.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-551",
+   "s": "uso_ia_trabajador",
+   "p": "contradice",
+   "o": "c_ia_principal_causa_despidos",
+   "f": "F-282",
+   "apoyo": "Gallup 2026: solo 1% de los despedidos cita la IA o la automatización como causa principal, y 62% de los despedidos no usaba IA.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-04",
+   "clase": "evidencia"
   }
  ],
  "generado": "2026-10-04",
  "cobertura": {
-  "procesadas": 232,
+  "procesadas": 325,
   "total": 646
  }
 }

@@ -1,0 +1,244 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-518",
+  "F-530",
+  "F-631",
+  "F-4",
+  "F-27",
+  "F-169",
+  "F-183",
+  "F-200",
+  "F-267"
+ ],
+ "entidades": [
+  {
+   "id": "meta_ventas_innovacion_dsm",
+   "nombre": "Meta de DSM (2010): llevar las ventas de innovación de ~12% a ~20% hacia 2015",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ventas_innovacion_dsm",
+   "nombre": "Participación de ventas de innovación en las ventas de DSM",
+   "tipo": "resultado"
+  },
+  {
+   "id": "proyectos_ia_agentica",
+   "nombre": "Proyectos de IA agéntica en empresas",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cancelacion_proyectos_ia_agentica",
+   "nombre": "Cancelación de proyectos de IA agéntica (predicción >40% a 2027)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "agent_washing",
+   "nombre": "'Agent washing': rebautizar asistentes, RPA o chatbots como agentes sin capacidad agéntica",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "bain_lealtad_seguros_2023",
+   "nombre": "Encuesta Bain Customer Behavior and Loyalty in Insurance 2023 (28.765 consumidores, 14 países)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "demanda_esg_aseguradoras",
+   "nombre": "Demanda de consumidores de que las aseguradoras integren ESG",
+   "tipo": "resultado"
+  },
+  {
+   "id": "interes_prevencion_riesgo_seguros",
+   "nombre": "Interés de consumidores en servicios de prevención de riesgo de su aseguradora",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ciencia_conductual_ia",
+   "nombre": "Ciencia conductual de la IA (AI Behavioral Science)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "desempeno_pc_eeuu_2025",
+   "nombre": "Desempeño de la industria de seguros P&C de EE.UU. en 2025",
+   "tipo": "resultado"
+  },
+  {
+   "id": "disciplina_suscripcion_tarifas_pc",
+   "nombre": "Suscripción disciplinada y alzas de tarifas en P&C",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reclamo_digital_seguros",
+   "nombre": "Presentación digital de reclamos de seguros",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "fallo_digital_reclamo_complejo",
+   "nombre": "Fallo de lo digital en reclamos complejos (el cliente debe pasar a ayuda humana)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "nps_cliente_seguros",
+   "nombre": "Net Promoter Score (NPS) del cliente de seguros",
+   "tipo": "resultado"
+  },
+  {
+   "id": "optum_rx_tarifa_fija",
+   "nombre": "Modelo de tarifa fija mensual por miembro de Optum Rx, desligado de precios de lista",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "criticas_spread_pricing_pbm",
+   "nombre": "Críticas de larga data al modelo de los PBM (spread pricing y rebates)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "design_value_index_dmi",
+   "nombre": "Design Value Index de DMI (portafolio de 16 empresas design-centric vs. S&P 500)",
+   "tipo": "metrica"
+  }
+ ],
+ "triples": [
+  {
+   "s": "preocupacion_privacidad_situacional",
+   "p": "modera",
+   "o": "personalizacion_publicidad",
+   "f": "F-518",
+   "apoyo": "Behavioral Sciences 2025 (Kim y Han, N=360): con privacidad activada, la personalización con PII no superó al mensaje genérico y fue peor que la contextual moderada (backfire).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "personalizacion_publicidad",
+   "p": "aumenta",
+   "o": "disposicion_compra",
+   "f": "F-518",
+   "apoyo": "Behavioral Sciences 2025 (Kim y Han, 3×2, N=360): con baja preocupación de privacidad, más personalización del mensaje aumentó la intención de compra.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "meta_ventas_innovacion_dsm",
+   "p": "asocia_con",
+   "o": "ventas_innovacion_dsm",
+   "f": "F-530",
+   "apoyo": "Royal DSM, informes anuales 2011 y 2019: meta de 12%→20% de ventas de innovación hacia 2015; reportó 18% en 2011 y 21% en 2019, en línea con la aspiración de ~20%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "proyectos_ia_agentica",
+   "p": "tiene_limite",
+   "o": "agent_washing",
+   "f": "F-631",
+   "apoyo": "Gartner 2025: muchos proveedores hacen 'agent washing' (rebautizan asistentes, RPA y chatbots); de miles de proveedores, solo ~130 serían agénticos reales.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "proyectos_ia_agentica",
+   "p": "asocia_con",
+   "o": "cancelacion_proyectos_ia_agentica",
+   "f": "F-631",
+   "apoyo": "Gartner 2025 (predicción): >40% de proyectos de IA agéntica se cancelarán a fines de 2027 por costos crecientes, valor poco claro o controles de riesgo inadecuados.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "bain_lealtad_seguros_2023",
+   "p": "mide",
+   "o": "demanda_esg_aseguradoras",
+   "f": "F-4",
+   "apoyo": "Bain & Company 2023 (28.765 consumidores, 14 países): ~80% quiere que las aseguradoras integren iniciativas ESG en su propuesta.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "bain_lealtad_seguros_2023",
+   "p": "mide",
+   "o": "interes_prevencion_riesgo_seguros",
+   "f": "F-4",
+   "apoyo": "Bain & Company 2023: los consumidores quieren prevención y mitigación de riesgo (Brasil 97%, Japón 81%); 59% quiere que vida premie hábitos saludables.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_en_investigacion",
+   "p": "parte_de",
+   "o": "ciencia_conductual_ia",
+   "f": "F-27",
+   "apoyo": "arXiv 2025 (Jackson et al.): una de las tres áreas del campo 'AI Behavioral Science' es cómo la IA potencia la investigación en ciencias del comportamiento.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "psicologia_de_maquinas",
+   "p": "parte_de",
+   "o": "ciencia_conductual_ia",
+   "f": "F-27",
+   "apoyo": "arXiv 2025 (Jackson et al.): otra área es usar las ciencias del comportamiento para estudiar y diseñar la IA (sus sesgos y principios de diseño).",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "disciplina_suscripcion_tarifas_pc",
+   "p": "asocia_con",
+   "o": "desempeno_pc_eeuu_2025",
+   "f": "F-169",
+   "apoyo": "Reinsurance News 2026 (AM Best): mejor año del P&C de EE.UU. en una década por suscripción disciplinada, tarifas robustas e inversiones; utilidad técnica ~US$39.000 M; ratio combinado 95,0 vs 97,1.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reclamo_digital_seguros",
+   "p": "tiene_limite",
+   "o": "fallo_digital_reclamo_complejo",
+   "f": "F-183",
+   "apoyo": "Bain & Company 2023 (NPS Prism): el fallo digital en reclamos promedia 39% en hogar y 33% en auto; incluso entre los líderes >30% de clientes debe pasar a ayuda humana.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fallo_digital_reclamo_complejo",
+   "p": "reduce",
+   "o": "nps_cliente_seguros",
+   "f": "F-183",
+   "apoyo": "Bain & Company 2023 (NPS Prism): quienes inician el reclamo en digital y terminan necesitando ayuda humana reportan un NPS 11 puntos menor en promedio.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "optum_rx_tarifa_fija",
+   "p": "origina_en",
+   "o": "criticas_spread_pricing_pbm",
+   "f": "F-200",
+   "apoyo": "Bloomberg 2026: UnitedHealth desliga las utilidades de Optum Rx de los precios de lista con tarifas fijas por miembro, eliminando el spread pricing, respondiendo a críticas de larga data.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "design_value_index_dmi",
+   "p": "respalda",
+   "o": "c_diseno_firma",
+   "f": "F-267",
+   "apoyo": "DMI 2015: un portafolio de 16 empresas 'design-centric' rindió 211% sobre el S&P 500 a 10 años, tercer año seguido >200% (selección retrospectiva de empresas).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-518",
+   "detalle": "Autoría no capturada: Kim, Hyeongseok y Han, Seunghee; volumen 15(10), artículo 1323.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-183",
+   "detalle": "Año 's.f.': publicado el 25-oct-2023.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a N6 (grupo n6_4): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}
