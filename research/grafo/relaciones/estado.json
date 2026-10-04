@@ -847,13 +847,15 @@
    "fecha": "2026-10-04",
    "f": "F-59",
    "detalle": "Rigor: es un resumen de congreso (meeting abstract), no una 'revisión metodológica peer-reviewed'; 🟢A sobrevalora.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
    "f": "F-59",
    "detalle": "Contradice a la ficha: el resumen dice que el diseño crea problemas potenciales para evitar la contaminación (por el desfase entre reclutamiento e inicio), no que reduzca la contaminación entre clusters. La equidad/aceptación sí aparece como posible mejora del reclutamiento.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -908,7 +910,8 @@
    "fecha": "2026-10-04",
    "f": "F-90",
    "detalle": "Matiz: 1981 es el año del cierre del bloque que gatilló la espiral, no el año en que se 'inició' el bloque.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -935,7 +938,8 @@
    "fecha": "2026-10-04",
    "f": "F-94",
    "detalle": "Contradice el sentido de la ficha: el resumen sostiene que el pricing personalizado es incompatible con la infraestructura actual y poco probable en la ACA, no que 'el mercado ya está respondiendo con más personalización'.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -969,7 +973,8 @@
    "fecha": "2026-10-04",
    "f": "F-545",
    "detalle": "No contradice: la ficha dice que la 'hiperprecisión' es dato de memoria no verificado, pero el resumen oficial sí la reporta (sabiduría de multitudes; ChatGPT y GPT-4). Puede retirarse la advertencia.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1024,19 +1029,22 @@
    "fecha": "2026-10-04",
    "f": "F-584",
    "detalle": "El resumen dice que la apreciación 'disminuye' (waned) en expertos y frente a la propia estimación; la ficha dice que 'desaparece' (sobredimensiona).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
    "f": "F-584",
    "detalle": "El metaanálisis HICSS-58 (2025, 32 estudios, g=0,23/0,55) es otra fuente, no verificable en este resumen; convendría registrarlo como ficha propia.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
    "f": "F-597",
    "detalle": "URL no capturada en la ficha: usar https://proceedings.mlr.press/v267/anthis25a.html (o arXiv 2504.02234).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1056,7 +1064,8 @@
    "fecha": "2026-10-04",
    "f": "F-598",
    "detalle": "La URL es cobertura de prensa (404 Media), no la revista; reemplazar por la página de PNAS. La rigurosidad declarada se apoyó en prensa, aunque el resumen confirma el hallazgo.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1069,7 +1078,8 @@
    "fecha": "2026-10-04",
    "f": "F-110",
    "detalle": "Matiz: el resumen habla de menor supervivencia en cáncer reportada por un estudio, no de 'diagnóstico tardío' como hallazgo; y omite que el gatekeeping se asoció con mejor calidad de atención (preventiva y derivación apropiada) y menor satisfacción del paciente. 'Diagnóstico tardío' no verificable en el resumen.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1089,7 +1099,8 @@
    "fecha": "2026-10-04",
    "f": "F-125",
    "detalle": "La URL apunta a Wikipedia, no a la fuente oficial (DOI 10.1111/j.1468-2958.1975.tb00258.x).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1102,13 +1113,15 @@
    "fecha": "2026-10-04",
    "f": "F-158",
    "detalle": "La ficha describe FED como esquema de anotación humana por turno con 8 dimensiones; el resumen lo presenta como métrica automática (DialoGPT, sin supervisión) más un dataset anotado con 18 cualidades a nivel de turno y de diálogo completo. Las 8 dimensiones y la escala No/Somewhat/Yes no son verificables en el resumen.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
    "f": "F-164",
    "detalle": "La URL (arxiv.org/pdf/2604.21372) corresponde a otro paper: Maier y Scherer, 'Optimal basis risk weighting in expectile-based parametric insurance' (TUM), no a Louaas y Picard.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1121,7 +1134,8 @@
    "fecha": "2026-10-04",
    "f": "F-164",
    "detalle": "Matiz: el resumen no plantea 'minimizar el riesgo de base' con el trigger, sino caracterizar el contrato óptimo dado el riesgo de base, según la (in)dependencia entre índice y riesgo de base.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1141,7 +1155,8 @@
    "fecha": "2026-10-04",
    "f": "F-331",
    "detalle": "El contexto es Bélgica (Amberes, cooperativa de médicos generales adyacente a urgencias), no 'sistema público neerlandés'. Además, el 2,4% hospitalizado se refiere a los asignados a la cooperativa, no a los 'desviados' en sentido estricto.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1154,7 +1169,8 @@
    "fecha": "2026-10-04",
    "f": "F-333",
    "detalle": "Lo de 'redujo despacho de ambulancias en £4.52M' no es verificable en el resumen. Además, el resumen interpreta que buena parte del 11% que no siguió la indicación fue mal triado (88% urgente, 37% hospitalizado), no solo que 'no cumplió'.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1167,7 +1183,8 @@
    "fecha": "2026-10-04",
    "f": "F-339",
    "detalle": "Falta la URL: está disponible en PMC (PMC9817087).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",
@@ -1187,7 +1204,8 @@
    "fecha": "2026-10-04",
    "f": "F-341",
    "detalle": "La DAP de US$84-275/mes es para atención primaria (en especialistas es US$0-115/mes). Que sea 'HIX de una aseguradora regional del Medio Oeste' no es verificable en el resumen, que dice 'exchange privado de seguros de salud'.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "fecha": "2026-10-04",

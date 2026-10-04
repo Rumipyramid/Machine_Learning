@@ -318,17 +318,20 @@
   {
    "f": "F-584",
    "detalle": "El resumen dice que la apreciación 'disminuye' (waned) en expertos y frente a la propia estimación; la ficha dice que 'desaparece' (sobredimensiona).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-584",
    "detalle": "El metaanálisis HICSS-58 (2025, 32 estudios, g=0,23/0,55) es otra fuente, no verificable en este resumen; convendría registrarlo como ficha propia.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-597",
    "detalle": "URL no capturada en la ficha: usar https://proceedings.mlr.press/v267/anthis25a.html (o arXiv 2504.02234).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-597",
@@ -345,7 +348,8 @@
   {
    "f": "F-598",
    "detalle": "La URL es cobertura de prensa (404 Media), no la revista; reemplazar por la página de PNAS. La rigurosidad declarada se apoyó en prensa, aunque el resumen confirma el hallazgo.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   }
  ],
  "notas": "Lote del avance a 85% hacia N6 (grupo 544): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."

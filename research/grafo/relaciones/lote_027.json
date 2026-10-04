@@ -274,12 +274,14 @@
   {
    "f": "F-59",
    "detalle": "Rigor: es un resumen de congreso (meeting abstract), no una 'revisión metodológica peer-reviewed'; 🟢A sobrevalora.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-59",
    "detalle": "Contradice a la ficha: el resumen dice que el diseño crea problemas potenciales para evitar la contaminación (por el desfase entre reclutamiento e inicio), no que reduzca la contaminación entre clusters. La equidad/aceptación sí aparece como posible mejora del reclutamiento.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-63",

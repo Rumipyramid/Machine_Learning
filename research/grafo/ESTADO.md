@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 17 | 7,180 líneas |
+| Nodes (`_nodes/`) | 17 | 7,186 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 645 | 🟢A 179 · 🔵B 106 · 🟡C 170 · 🟠D 143 · 🔴E 33 · otras/sin clasificar 14 |
+| Fuentes en el ledger | 646 | 🟢A 179 · 🔵B 106 · 🟡C 171 · 🟠D 143 · 🔴E 33 · otras/sin clasificar 14 |
 | Aristas wikilink (node→node) | 96 | recíprocas: 96 de 96 (100%) |
-| Fuentes citadas por ≥1 node | 540 de 645 | 84% del ledger; **105 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 541 de 646 | 84% del ledger; **105 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 89 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 232 de 645 fuentes (36%) | 420 relaciones · 31 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 232 de 646 fuentes (36%) | 420 relaciones · 31 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -65,7 +65,7 @@
 |---|---|---|---|---|
 | 2026-06-22 | 5 | 5 | 3 | █ |
 | 2026-06-25 | 10 | 15 | 6 | ██ |
-| 2026-07-06 | 62 | 77 | 32 | ████████████████ |
+| 2026-07-06 | 62 | 77 | 31 | ████████████████ |
 | 2026-07-10 | 41 | 118 | 25 | ██████████ |
 | 2026-07-12 | 12 | 130 | 8 | ███ |
 | 2026-07-13 | 9 | 139 | 7 | ██ |
@@ -82,6 +82,7 @@
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
 | 2026-10-02 | 47 | 515 | 20 | ████████████ |
 | 2026-10-03 | 130 | 645 | 56 | ████████████████████████████████ |
+| 2026-10-04 | 1 | 646 | 1 | █ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -123,14 +124,14 @@
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 2000 | 273 | 139 | 9/9 | 2026-10-04 | 2026-10-04 v4.1 |
 | `convergencia-psicologia-economia-ia` | 244 | 115 | 49 | 6/6 | 2026-10-03 | 2026-10-03 v1.0 |
-| `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
+| `mecanismos-seguros-salud` | 354 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-04 v1.2 |
 | `conducta-humano-ia` | 141 | 41 | 28 | 6/6 | 2026-10-03 | 2026-10-03 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.0 |
-| `modelo-salud-ia-farmacias-peru` | 612 | 22 | 18 | 3/3 | 2026-10-03 | 2026-10-03 v1.0 |
+| `modelo-salud-ia-farmacias-peru` | 614 | 23 | 18 | 3/3 | 2026-10-03 | 2026-10-04 v1.0 |
 | `seguros-comportamiento-mundo-peru` | 335 | 18 | 8 | 13/13 | 2026-10-03 | 2026-10-03 v1.1 |
 | `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
-| `evaluacion-calidad-agentes-conversacionales-ia` | 255 | 17 | 11 | 4/4 | 2026-10-03 | 2026-10-03 v1.0 |
+| `evaluacion-calidad-agentes-conversacionales-ia` | 256 | 17 | 11 | 4/4 | 2026-10-03 | 2026-10-04 v1.0 |
 | `material-visual-venta-consultiva` | 376 | 17 | 12 | 7/7 | 2026-10-03 | 2026-10-03 v1.1 |
 | `behavioral-design-estado-disciplina` | 319 | 9 | 8 | 8/8 | 2026-10-03 | 2026-10-03 v1.1 |
 | `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-24 v1.0 |

@@ -289,7 +289,8 @@
   {
    "f": "F-331",
    "detalle": "El contexto es Bélgica (Amberes, cooperativa de médicos generales adyacente a urgencias), no 'sistema público neerlandés'. Además, el 2,4% hospitalizado se refiere a los asignados a la cooperativa, no a los 'desviados' en sentido estricto.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-333",
@@ -300,7 +301,8 @@
   {
    "f": "F-333",
    "detalle": "Lo de 'redujo despacho de ambulancias en £4.52M' no es verificable en el resumen. Además, el resumen interpreta que buena parte del 11% que no siguió la indicación fue mal triado (88% urgente, 37% hospitalizado), no solo que 'no cumplió'.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-339",
@@ -311,7 +313,8 @@
   {
    "f": "F-339",
    "detalle": "Falta la URL: está disponible en PMC (PMC9817087).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-340",
@@ -328,7 +331,8 @@
   {
    "f": "F-341",
    "detalle": "La DAP de US$84-275/mes es para atención primaria (en especialistas es US$0-115/mes). Que sea 'HIX de una aseguradora regional del Medio Oeste' no es verificable en el resumen, que dice 'exchange privado de seguros de salud'.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-352",

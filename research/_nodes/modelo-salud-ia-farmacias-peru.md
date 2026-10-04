@@ -2,7 +2,7 @@
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
-> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-03 (estado del PL 08488; benchmark de sesgo de automatización corregido).
+> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-04 (F-59 corregida: es un resumen de congreso de Dreischulte 2013; la revisión de Mdege 2011 pasa a F-646).
 > Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada
@@ -457,8 +457,10 @@ stepped-wedge como alternativa neutral — afirman explícitamente que el diseñ
 mayor riesgo de sesgo** que el cluster-RCT paralelo clásico, y por eso la extensión CONSORT para
 stepped-wedge **exige** que los investigadores justifiquen explícitamente por qué eligieron este
 diseño en vez del paralelo; no lo trata como opción por defecto. Además, la ventaja
-ética/de aceptabilidad que cita F-59 (Mdege et al. 2011, revisión de 25 estudios, la mayoría
-citando razones éticas) no es consenso académico: Kotz et al. (2012, mismo journal —
+ética/de aceptabilidad que se atribuía a F-59 (Mdege et al. 2011, revisión de 25 estudios, la mayoría
+citando razones éticas — ⚠️ *corrección 2026-10-04: la ficha F-59 del ledger es en realidad un resumen de
+congreso de Dreischulte et al. 2013, que reporta problemas de retención y de contaminación del diseño; la
+revisión de Mdege 2011 quedó registrada aparte como F-646*) no es consenso académico: Kotz et al. (2012, mismo journal —
 *Journal of Clinical Epidemiology*) publicaron una crítica formal titulada "Use of the stepped
 wedge design cannot be recommended", argumentando que esa ventaja ética percibida (nadie se queda
 permanentemente sin la intervención) no es real porque la implementación secuencial también es

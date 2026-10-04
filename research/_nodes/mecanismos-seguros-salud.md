@@ -4,7 +4,7 @@
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
 > `fuentes/codice.md` (F-86 a F-116, F-193 a F-207; actualización 2026-10-02: F-477 a F-478, F-480, F-481 (y F-198), F-487).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-10-02 · Versión: v1.2
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-10-04 · Versión: v1.2
 > (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
 > con §2.6: contraste regional Europa/Asia/Perú-Latam — corrida adicional de `/trinidad`)
 
@@ -31,8 +31,8 @@ más frecuencia?
   del seguro desde su diseño teórico, no un fenómeno reciente causado por la longevidad (F-89, 🟢
   peer-reviewed, AER, paper fundacional del campo).
 - **"El modelo está roto" — documentado, pero condicional, no universal**: existen casos reales
-  de colapso por selección adversa ("espiral de la muerte"): un bloque individual de 1981 con
-  primas escaladas a ~7x hacia 2009 (F-90, 🟢 peer-reviewed); Nueva York, tras *community rating*
+  de colapso por selección adversa ("espiral de la muerte"): un bloque individual cerrado en 1981, cuyas
+  primas escalaron a ~7x hacia 2009 (F-90, 🟢 peer-reviewed; *corregido 2026-10-04: 1981 es el cierre, no el inicio*); Nueva York, tras *community rating*
   sin mandato, redujo su mercado individual a 17,000 asegurados hacia 2013 (casi colapso total);
   Blue Cross/Blue Shield mostró evidencia temprana similar (F-91, 🟢 peer-reviewed); Harvard 1995
   (sanos migraron al plan barato, encareciendo el generoso hasta volverlo insostenible).
@@ -40,10 +40,13 @@ más frecuencia?
   rating sin mandato ni ajuste de riesgo*. Donde existen mandatos + ajuste de riesgo (ACA), el
   pool se ha sostenido (F-92, 🟢 peer-reviewed).
 
-**Tensión activa que sí valida la intuición del "roto"**: hay literatura académica documentando
-cómo el self-tracking/telemetría empuja a la industria hacia pricing personalizado que reduce la
-subsidización cruzada (F-94, 🟢 peer-reviewed) — el mercado está respondiendo a la presión
-alejándose de la solidaridad pura, no porque colapsó de golpe sino porque se está rediseñando.
+**Tensión que existe como amenaza, no como tendencia demostrada**: el self-tracking/telemetría se plantea
+como amenaza a la solidaridad del seguro, pero el pricing personalizado choca con las infraestructuras que
+definen, regulan y entregan el seguro, y en los mercados individuales de la ACA parece improbable (F-94,
+🟢 peer-reviewed, McFall 2019). ⚠️ *Corregido 2026-10-04 con autorización del usuario:* este párrafo decía
+que F-94 documenta que "el mercado ya está respondiendo alejándose de la solidaridad pura"; el resumen
+oficial dice lo contrario. La personalización por datos sigue siendo una presión posible, sin evidencia
+aquí de que ya ocurra.
 Conecta directamente con `disposicion_compartir_datos_pricing` en el modelo `lapuerta`
 (ver [[modelo-salud-ia-farmacias-peru|Modelo de triage IA + farmacias]]).
 
@@ -240,7 +243,7 @@ de seguridad), ¿existen modelos que cubran bien la atención primaria?
 |---|---|---|
 | **Direct Primary Care (DPC)**: cuota mensual fija (USD 50-150) directa al médico | Teóricamente sólido, visitas 30-60min vs. 12-15 tradicional; **poca evidencia peer-reviewed de beneficios, ningún estudio longitudinal** (F-107, F-108, 🟢) | Medio — teoría fuerte, evidencia delgada |
 | **Gatekeeping + capitación (China, piloto)** | Consultas primarias **+55.3%**, visitas hospitalarias **-23.9%**, sin aumento de gasto (F-109, 🟢 cuasi-experimental — diseño fuerte) | Alto |
-| **Gatekeeping — revisión general** | Reduce especialistas/gasto, **pero con diagnóstico tardío documentado, particularmente cáncer** (F-110, 🟢 revisión sistemática) | Medio — beneficio real con riesgo real |
+| **Gatekeeping — revisión general** | Mejor calidad (prevención, derivación apropiada), menos hospitalizaciones y uso de especialistas, posible menor gasto y **menor satisfacción**; un estudio halló menor supervivencia en cáncer (F-110, 🟢 revisión sistemática; *corregido 2026-10-04: decía 'diagnóstico tardío documentado'*) | Medio — beneficio real con riesgo real |
 | **Capitación NHS (UK)** | Modelo híbrido (capitación ajustada por necesidad + bono por desempeño + FFS para extras) en uso real a escala nacional (F-111, 🟢) | Alto |
 | **Singapur — policlínicas + CHAS** | ⚠️ Incluso Singapur (el mejor caso de riesgo catastrófico, §3) lucha aquí: su reforma "Healthier SG" tuvo **éxito limitado** — subsidios insuficientes para cambiar práctica de proveedores establecidos (F-112, 🔵 B) | Medio |
 

@@ -8,9 +8,9 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **232 de 645** (36.0%) |
+| Fuentes procesadas | **232 de 646** (35.9%) |
 | …del cerebro de diseño (citadas en el node) | 129 de 273 |
-| …por rigor | A 171/179 · B 36/106 · C 21/170 · D 3/143 · E 1/33 |
+| …por rigor | A 170/179 · B 36/106 · C 22/171 · D 3/143 · E 1/33 |
 | Barridos | 31 |
 | Entidades | 527 |
 | Relaciones | 420 |
@@ -336,8 +336,10 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-59** (2026-10-04, cerrada): Autor y año incorrectos: no es Mdege et al. 2011 (ese es otro paper, J Clin Epidemiol 64(9):936-948); los autores son Dreischulte, Grant, Donnan y Guthrie, 2013, Trials 14(Suppl 1):O87.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-59** (2026-10-04, abierta): Rigor: es un resumen de congreso (meeting abstract), no una 'revisión metodológica peer-reviewed'; 🟢A sobrevalora.
-- ⚠️ **F-59** (2026-10-04, abierta): Contradice a la ficha: el resumen dice que el diseño crea problemas potenciales para evitar la contaminación (por el desfase entre reclutamiento e inicio), no que reduzca la contaminación entre clusters. La equidad/aceptación sí aparece como posible mejora del reclutamiento.
+- ✅ **F-59** (2026-10-04, cerrada): Rigor: es un resumen de congreso (meeting abstract), no una 'revisión metodológica peer-reviewed'; 🟢A sobrevalora.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
+- ✅ **F-59** (2026-10-04, cerrada): Contradice a la ficha: el resumen dice que el diseño crea problemas potenciales para evitar la contaminación (por el desfase entre reclutamiento e inicio), no que reduzca la contaminación entre clusters. La equidad/aceptación sí aparece como posible mejora del reclutamiento.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-63** (2026-10-04, cerrada): Autor registrado como 'Protocolo de validación Omaolo': autores Liu, Koskela y Kaila; falta revista (JMIR Res Protoc 12:e41423) y DOI 10.2196/41423.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-64** (2026-10-04, cerrada): Autor incorrecto: no es Damschroder et al. (creadora de CFIR, 2009); los autores son Safaeinili, Brown-Johnson, Shaw, Mahoney y Winget. Año: publicado online 2019, número 2020 (no 2021). Falta revista (Learning Health Systems 4(1):e10201) y DOI.
@@ -352,14 +354,16 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-90** (2026-10-04, cerrada): Autor incorrecto ('Cutler & Zeckhauser-style'): los autores son H. E. Frech y Michael P. Smith; el número impreso es 2015, 19(1):60-72 (2014 corresponde a la versión online/DOI).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-90** (2026-10-04, abierta): Matiz: 1981 es el año del cierre del bloque que gatilló la espiral, no el año en que se 'inició' el bloque.
+- ✅ **F-90** (2026-10-04, cerrada): Matiz: 1981 es el año del cierre del bloque que gatilló la espiral, no el año en que se 'inició' el bloque.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-91** (2026-10-04, cerrada): Revista incorrecta: es Explorations in Economic History 41(4):313-328 (el PII S0014-4983 corresponde a esa revista), no Journal of Health Economics; falta autora (Melissa A. Thomasson).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-92** (2026-10-04, cerrada): Año 2024 incorrecto (es la fecha del depósito en PMC): el ensayo es de 2017 (JEP; NBER WP 23876); faltan autores (Geruso y Layton) y revista.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-94** (2026-10-04, cerrada): Autor incorrecto ('Van de Ven et al. o similar'): la autora es Liz McFall (Univ. de Edimburgo); falta revista (Economy and Society).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-94** (2026-10-04, abierta): Contradice el sentido de la ficha: el resumen sostiene que el pricing personalizado es incompatible con la infraestructura actual y poco probable en la ACA, no que 'el mercado ya está respondiendo con más personalización'.
+- ✅ **F-94** (2026-10-04, cerrada): Contradice el sentido de la ficha: el resumen sostiene que el pricing personalizado es incompatible con la infraestructura actual y poco probable en la ACA, no que 'el mercado ya está respondiendo con más personalización'.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-97** (2026-10-04, cerrada): Faltan autores (Oskam, van Kleef, van Vliet), revista (Int J Health Econ Manag 23(2):303-324) y DOI.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-107** (2026-10-04, cerrada): Falta autor (Evan S. Cole) y volumen/páginas (31(4):605-611).
@@ -368,7 +372,8 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-545** (2026-10-04, cerrada): Falta el volumen/páginas: PMLR 202:337-371.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-545** (2026-10-04, abierta): No contradice: la ficha dice que la 'hiperprecisión' es dato de memoria no verificado, pero el resumen oficial sí la reporta (sabiduría de multitudes; ChatGPT y GPT-4). Puede retirarse la advertencia.
+- ✅ **F-545** (2026-10-04, cerrada): No contradice: la ficha dice que la 'hiperprecisión' es dato de memoria no verificado, pero el resumen oficial sí la reporta (sabiduría de multitudes; ChatGPT y GPT-4). Puede retirarse la advertencia.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-546** (2026-10-04, cerrada): Faltan volumen, páginas y DOI: Trends in Cognitive Sciences 27:597-600, doi 10.1016/j.tics.2023.04.008.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-567** (2026-10-04, cerrada): Faltan número, páginas y DOI: Nature Human Behaviour 8(4):679-691, doi 10.1038/s41562-023-01784-6.
@@ -383,45 +388,58 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-583** (2026-10-04, cerrada): Faltan volumen y páginas: JEP: General 144(1):114-126.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-584** (2026-10-04, abierta): El resumen dice que la apreciación 'disminuye' (waned) en expertos y frente a la propia estimación; la ficha dice que 'desaparece' (sobredimensiona).
-- ⚠️ **F-584** (2026-10-04, abierta): El metaanálisis HICSS-58 (2025, 32 estudios, g=0,23/0,55) es otra fuente, no verificable en este resumen; convendría registrarlo como ficha propia.
-- ⚠️ **F-597** (2026-10-04, abierta): URL no capturada en la ficha: usar https://proceedings.mlr.press/v267/anthis25a.html (o arXiv 2504.02234).
+- ✅ **F-584** (2026-10-04, cerrada): El resumen dice que la apreciación 'disminuye' (waned) en expertos y frente a la propia estimación; la ficha dice que 'desaparece' (sobredimensiona).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
+- ✅ **F-584** (2026-10-04, cerrada): El metaanálisis HICSS-58 (2025, 32 estudios, g=0,23/0,55) es otra fuente, no verificable en este resumen; convendría registrarlo como ficha propia.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
+- ✅ **F-597** (2026-10-04, cerrada): URL no capturada en la ficha: usar https://proceedings.mlr.press/v267/anthis25a.html (o arXiv 2504.02234).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-597** (2026-10-04, cerrada): Falta el volumen: PMLR 267.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-598** (2026-10-04, cerrada): Falta el volumen: PNAS 122(47) (el DOI no se vio escrito; no se registra).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-598** (2026-10-04, abierta): La URL es cobertura de prensa (404 Media), no la revista; reemplazar por la página de PNAS. La rigurosidad declarada se apoyó en prensa, aunque el resumen confirma el hallazgo.
+- ✅ **F-598** (2026-10-04, cerrada): La URL es cobertura de prensa (404 Media), no la revista; reemplazar por la página de PNAS. La rigurosidad declarada se apoyó en prensa, aunque el resumen confirma el hallazgo.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-110** (2026-10-04, cerrada): Autor registrado como 'PMC (revisión sistemática)': faltan autores (Sripa, Hayhoe, Garg, Majeed, Greenfield), revista (BJGP 69(682):e294-e303) y DOI 10.3399/bjgp19X702209.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-110** (2026-10-04, abierta): Matiz: el resumen habla de menor supervivencia en cáncer reportada por un estudio, no de 'diagnóstico tardío' como hallazgo; y omite que el gatekeeping se asoció con mejor calidad de atención (preventiva y derivación apropiada) y menor satisfacción del paciente. 'Diagnóstico tardío' no verificable en el resumen.
+- ✅ **F-110** (2026-10-04, cerrada): Matiz: el resumen habla de menor supervivencia en cáncer reportada por un estudio, no de 'diagnóstico tardío' como hallazgo; y omite que el gatekeeping se asoció con mejor calidad de atención (preventiva y derivación apropiada) y menor satisfacción del paciente. 'Diagnóstico tardío' no verificable en el resumen.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-111** (2026-10-04, cerrada): Autor registrado como la revista: faltan autores (Rhys, Beerstecher, Morgan), volumen 10, artículo 156 y DOI 10.1186/1472-6963-10-156.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-115** (2026-10-04, cerrada): Autor registrado como 'Cambridge Core (American Journal of Law & Medicine)': falta el autor (Andrew Grant) y el DOI 10.1017/amj.2023.20.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-125** (2026-10-04, abierta): La URL apunta a Wikipedia, no a la fuente oficial (DOI 10.1111/j.1468-2958.1975.tb00258.x).
+- ✅ **F-125** (2026-10-04, cerrada): La URL apunta a Wikipedia, no a la fuente oficial (DOI 10.1111/j.1468-2958.1975.tb00258.x).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-125** (2026-10-04, cerrada): Faltan volumen/páginas (1(2):99-112) y DOI.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-158** (2026-10-04, abierta): La ficha describe FED como esquema de anotación humana por turno con 8 dimensiones; el resumen lo presenta como métrica automática (DialoGPT, sin supervisión) más un dataset anotado con 18 cualidades a nivel de turno y de diálogo completo. Las 8 dimensiones y la escala No/Somewhat/Yes no son verificables en el resumen.
-- ⚠️ **F-164** (2026-10-04, abierta): La URL (arxiv.org/pdf/2604.21372) corresponde a otro paper: Maier y Scherer, 'Optimal basis risk weighting in expectile-based parametric insurance' (TUM), no a Louaas y Picard.
+- ✅ **F-158** (2026-10-04, cerrada): La ficha describe FED como esquema de anotación humana por turno con 8 dimensiones; el resumen lo presenta como métrica automática (DialoGPT, sin supervisión) más un dataset anotado con 18 cualidades a nivel de turno y de diálogo completo. Las 8 dimensiones y la escala No/Somewhat/Yes no son verificables en el resumen.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
+- ✅ **F-164** (2026-10-04, cerrada): La URL (arxiv.org/pdf/2604.21372) corresponde a otro paper: Maier y Scherer, 'Optimal basis risk weighting in expectile-based parametric insurance' (TUM), no a Louaas y Picard.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-164** (2026-10-04, cerrada): No se confirmó la publicación en Geneva Risk and Insurance Review 2026 (volumen/DOI); la versión verificable es el WP HAL hal-04511811 (2024).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-164** (2026-10-04, abierta): Matiz: el resumen no plantea 'minimizar el riesgo de base' con el trigger, sino caracterizar el contrato óptimo dado el riesgo de base, según la (in)dependencia entre índice y riesgo de base.
+- ✅ **F-164** (2026-10-04, cerrada): Matiz: el resumen no plantea 'minimizar el riesgo de base' con el trigger, sino caracterizar el contrato óptimo dado el riesgo de base, según la (in)dependencia entre índice y riesgo de base.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-180** (2026-10-04, cerrada): Faltan volumen/páginas (73(3):359-396) y DOI explícito.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-331** (2026-10-04, cerrada): Autor 'Autores del TRIAGE trial' y año 's.f.': es Morreel S. et al., PLoS One 2021.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-331** (2026-10-04, abierta): El contexto es Bélgica (Amberes, cooperativa de médicos generales adyacente a urgencias), no 'sistema público neerlandés'. Además, el 2,4% hospitalizado se refiere a los asignados a la cooperativa, no a los 'desviados' en sentido estricto.
+- ✅ **F-331** (2026-10-04, cerrada): El contexto es Bélgica (Amberes, cooperativa de médicos generales adyacente a urgencias), no 'sistema público neerlandés'. Además, el 2,4% hospitalizado se refiere a los asignados a la cooperativa, no a los 'desviados' en sentido estricto.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-333** (2026-10-04, cerrada): Autor 'Revisión rápida... NCBI Bookshelf / PLOS One' y año 's.f.': es Lewis et al., PLoS One 2021;16(5):e0251362. No es una revisión rápida sino un análisis observacional de datos enlazados.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-333** (2026-10-04, abierta): Lo de 'redujo despacho de ambulancias en £4.52M' no es verificable en el resumen. Además, el resumen interpreta que buena parte del 11% que no siguió la indicación fue mal triado (88% urgente, 37% hospitalizado), no solo que 'no cumplió'.
+- ✅ **F-333** (2026-10-04, cerrada): Lo de 'redujo despacho de ambulancias en £4.52M' no es verificable en el resumen. Además, el resumen interpreta que buena parte del 11% que no siguió la indicación fue mal triado (88% urgente, 37% hospitalizado), no solo que 'no cumplió'.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-339** (2026-10-04, cerrada): Faltan volumen/páginas (79(5):607-617) y DOI 10.1177/10775587211055923.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-339** (2026-10-04, abierta): Falta la URL: está disponible en PMC (PMC9817087).
+- ✅ **F-339** (2026-10-04, cerrada): Falta la URL: está disponible en PMC (PMC9817087).
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-340** (2026-10-04, cerrada): Faltan volumen/páginas (36(5):870-875).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-341** (2026-10-04, cerrada): Faltan autores (Higuera, Carlin, Dowd), título y volumen/páginas (J Health Econ 60:90-97).
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-341** (2026-10-04, abierta): La DAP de US$84-275/mes es para atención primaria (en especialistas es US$0-115/mes). Que sea 'HIX de una aseguradora regional del Medio Oeste' no es verificable en el resumen, que dice 'exchange privado de seguros de salud'.
+- ✅ **F-341** (2026-10-04, cerrada): La DAP de US$84-275/mes es para atención primaria (en especialistas es US$0-115/mes). Que sea 'HIX de una aseguradora regional del Medio Oeste' no es verificable en el resumen, que dice 'exchange privado de seguros de salud'.
+  - *Resolución:* Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban).
 - ✅ **F-352** (2026-10-04, cerrada): El año es 2019 (AJMC vol. 25, n.º 7), no '~2016'; 2013-2014 es el periodo de los datos.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 

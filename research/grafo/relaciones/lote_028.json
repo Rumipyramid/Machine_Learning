@@ -301,7 +301,8 @@
   {
    "f": "F-90",
    "detalle": "Matiz: 1981 es el año del cierre del bloque que gatilló la espiral, no el año en que se 'inició' el bloque.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-91",
@@ -324,7 +325,8 @@
   {
    "f": "F-94",
    "detalle": "Contradice el sentido de la ficha: el resumen sostiene que el pricing personalizado es incompatible con la infraestructura actual y poco probable en la ACA, no que 'el mercado ya está respondiendo con más personalización'.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-97",

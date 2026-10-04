@@ -337,7 +337,8 @@
   {
    "f": "F-110",
    "detalle": "Matiz: el resumen habla de menor supervivencia en cáncer reportada por un estudio, no de 'diagnóstico tardío' como hallazgo; y omite que el gatekeeping se asoció con mejor calidad de atención (preventiva y derivación apropiada) y menor satisfacción del paciente. 'Diagnóstico tardío' no verificable en el resumen.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-111",
@@ -354,7 +355,8 @@
   {
    "f": "F-125",
    "detalle": "La URL apunta a Wikipedia, no a la fuente oficial (DOI 10.1111/j.1468-2958.1975.tb00258.x).",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-125",
@@ -365,12 +367,14 @@
   {
    "f": "F-158",
    "detalle": "La ficha describe FED como esquema de anotación humana por turno con 8 dimensiones; el resumen lo presenta como métrica automática (DialoGPT, sin supervisión) más un dataset anotado con 18 cualidades a nivel de turno y de diálogo completo. Las 8 dimensiones y la escala No/Somewhat/Yes no son verificables en el resumen.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-164",
    "detalle": "La URL (arxiv.org/pdf/2604.21372) corresponde a otro paper: Maier y Scherer, 'Optimal basis risk weighting in expectile-based parametric insurance' (TUM), no a Louaas y Picard.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-164",
@@ -381,7 +385,8 @@
   {
    "f": "F-164",
    "detalle": "Matiz: el resumen no plantea 'minimizar el riesgo de base' con el trigger, sino caracterizar el contrato óptimo dado el riesgo de base, según la (in)dependencia entre índice y riesgo de base.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-180",

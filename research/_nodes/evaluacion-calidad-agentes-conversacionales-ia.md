@@ -1,7 +1,7 @@
 # Evaluación de calidad de agentes conversacionales de IA (chatbots)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-15 · Última actualización: 2026-10-03 · Versión: v1.0
+> Fecha de elaboración: 2026-07-15 · Última actualización: 2026-10-04 · Versión: v1.0
 > Origen: `/seeker` — investigación de espectro amplio (empírico + teórico)
 
 ---
@@ -99,10 +99,11 @@ de referencia diseñados exactamente para eso, con más historial de validación
   literalmente. Para RIMAC, esto significa **construir una taxonomía de errores propia**
   (ej. error factual de póliza = crítico, error de tono = menor) con la misma lógica de
   severidad ponderada — no adoptar MQM como si fuera un estándar ya hecho para este caso.
-- **FED / USR** (Mehri & Eskenazi, 2020 — F-158, peer-reviewed ACL): esquemas de anotación
-  turno por turno con dimensiones explícitas, incluida **"Correct"** como una dimensión
-  separada de "Fluent" o "Appropriate" — diseñados originalmente para anotación humana,
-  hoy replicables también con un LLM como evaluador.
+- **FED / USR** (Mehri & Eskenazi, 2020 — F-158, peer-reviewed SIGDIAL/ACL): métricas **automáticas** sin
+  respuesta de referencia; FED usa DialoGPT sin ajuste ni supervisión y mide cualidades finas por turno y por
+  diálogo, con un dataset anotado en 18 cualidades; USR correlaciona 0,42-0,48 por turno con el juicio humano.
+  Su lógica de cualidades separadas (corrección aparte de fluidez o pertinencia) es replicable con un LLM
+  como evaluador. *Corregido 2026-10-04: decía que eran esquemas de anotación humana de 8 dimensiones.*
 
 **Diferencia clave con la Familia 1 (usabilidad):** estos tres puntúan **la respuesta**,
 no la experiencia agregada del usuario con toda la conversación — son el instrumento

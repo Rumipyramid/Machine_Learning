@@ -24,7 +24,7 @@
   {
    "id": "evaluacion-calidad-agentes-conversacionales-ia",
    "type": "node",
-   "lines": 255,
+   "lines": 256,
    "cites": 17,
    "design": false
   },
@@ -66,7 +66,7 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 351,
+   "lines": 354,
    "cites": 53,
    "design": false
   },
@@ -80,8 +80,8 @@
   {
    "id": "modelo-salud-ia-farmacias-peru",
    "type": "node",
-   "lines": 612,
-   "cites": 22,
+   "lines": 614,
+   "cites": 23,
    "design": false
   },
   {
@@ -668,7 +668,7 @@
   {
    "id": "F-59",
    "type": "fuente",
-   "rigor": "A",
+   "rigor": "C",
    "titulo": "Pro's and con's of the stepped wedge design in cluster randomised trials of quality improvement interventions",
    "autor": "Dreischulte T, Grant A, Donnan P, Guthrie B. Pro's and con's of the stepped wedge design in cluster randomised trials of quality improvement interventions: two current examples. Trials 2013;14(Suppl 1):O87 (resumen de congreso, 2nd Clinical Trials Methodology Conference, Edimburgo). DOI 10.1186/1745-6215-14-S1-O87. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Mdege, N.D. et al.'",
    "anio": "2013",
@@ -5947,6 +5947,15 @@
    "autor": "IMD Business School",
    "anio": "s/f",
    "huerfana": false
+  },
+  {
+   "id": "F-646",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Systematic review of stepped wedge cluster randomized trials shows that design is particularly used to evaluate interventions during routine",
+   "autor": "Mdege, N. D.; Man, M.-S.; Taylor, C. A. & Torgerson, D. J.",
+   "anio": "2011",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -9885,6 +9894,11 @@
    "s": "convergencia-psicologia-economia-ia",
    "t": "F-645",
    "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-646",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -9918,12 +9932,12 @@
     "fecha": "2026-07-06",
     "nuevas": 62,
     "acumuladas": 77,
-    "AB": 32,
+    "AB": 31,
     "rigor": {
-     "C": 10,
+     "C": 11,
      "B": 11,
      "D": 20,
-     "A": 21
+     "A": 20
     }
    },
    {
@@ -10125,6 +10139,15 @@
      "C": 48,
      "D": 22,
      "E": 4
+    }
+   },
+   {
+    "fecha": "2026-10-04",
+    "nuevas": 1,
+    "acumuladas": 646,
+    "AB": 1,
+    "rigor": {
+     "A": 1
     }
    }
   ],
@@ -12074,7 +12097,7 @@
      "cites": 273
     },
     "fecha": "2026-10-04",
-    "commit": "393251c",
+    "commit": "bdd3fbd",
     "fuente": "git"
    }
   ],

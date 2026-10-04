@@ -353,7 +353,8 @@
   {
    "f": "F-545",
    "detalle": "No contradice: la ficha dice que la 'hiperprecisión' es dato de memoria no verificado, pero el resumen oficial sí la reporta (sabiduría de multitudes; ChatGPT y GPT-4). Puede retirarse la advertencia.",
-   "estado": "abierta"
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
   },
   {
    "f": "F-546",
