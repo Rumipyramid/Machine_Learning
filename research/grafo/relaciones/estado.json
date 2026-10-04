@@ -412,6 +412,24 @@
    "triples": 19,
    "sin_aporte": [],
    "notas": "Lote de 10 (pedido del usuario), en el orden de `next`, con resúmenes o páginas oficiales verificados el 2026-10-03 vía búsqueda (kff.org está bloqueado: los datos de F-7 vienen del resumen de hallazgos de KFF que devuelve la búsqueda). F-521 ya estaba verificada; se suma su volumen (71(10)). F-525 es la contraparte de la tensión de magnitud con F-430 que el node ya anota."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f_ids": [
+    "F-310",
+    "F-387",
+    "F-407",
+    "F-431",
+    "F-437",
+    "F-441",
+    "F-447",
+    "F-448",
+    "F-452",
+    "F-466"
+   ],
+   "triples": 13,
+   "sin_aporte": [],
+   "notas": "Segundo lote de 10 (pedido del usuario), con resúmenes y comunicados oficiales verificados el 2026-10-04. Se saltaron tres del orden de `next` por no tener fuente primaria verificable: F-389 (estudio brasileño no ubicado), F-418 (hallazgo negativo de búsqueda propia) y F-427 (análisis de Barclays visto solo en resúmenes de LinkedIn). Se reemplazaron por F-448, F-452 y F-466. F-431: la ficha dice que la tasa real es de 30-49%; el resumen dice '40% o menos'. No se abre discrepancia porque el rango puede venir del cuerpo del artículo, que no se pudo leer; el triple usa la cifra del resumen."
   }
  ],
  "discrepancias": [
@@ -666,6 +684,20 @@
    "detalle": "Autoría 'Varios (arXiv)' → Rios-Sialer, I. (arXiv 2601.06116).",
    "estado": "cerrada",
    "resolucion": "Cerrada: autoría corregida el 2026-10-03 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-437",
+   "detalle": "Autoría 'Christensen, Raynor, McDonald y coautores' → Christensen, McDonald, Altman y Palmer (JMS 55(7)).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-04",
+   "f": "F-441",
+   "detalle": "Año 2019 sin aclarar: publicado en línea en 2019 y en número en 2021 (RMS 15(2):189-234).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos completados el 2026-10-04 (regla permanente)."
   }
  ],
  "resoluciones": [
@@ -818,6 +850,12 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-03",
    "nota": "Hughes (F-540, revisión crítica arbitrada) rastrea cinco apariciones publicadas del '70% de las iniciativas de cambio fracasa' y no encuentra evidencia empírica válida y confiable que la sostenga. Ya era la confrontación de H27 en el node de diseño e innovación; aquí queda en el grafo con su resumen oficial."
+  },
+  {
+   "triple": "T-301",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-04",
+   "nota": "Castellion y Markham (F-431, JPIM) muestran que los estudios empíricos desde 1977 dan una tasa de fracaso de productos nuevos de 40% o menos, no 80-95%. Converge con F-432 (T-97: 25% al año 1 y ~40% a los 2 años medido en ventas). Dos fuentes independientes refutan el mismo mito."
   }
  ]
 }

@@ -14,7 +14,7 @@
 | Aristas wikilink (node→node) | 96 | recíprocas: 96 de 96 (100%) |
 | Fuentes citadas por ≥1 node | 540 de 645 | 84% del ledger; **105 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 89 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 161 de 645 fuentes (25%) | 294 relaciones · 24 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 171 de 645 fuentes (27%) | 307 relaciones · 25 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -121,7 +121,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2000 | 273 | 139 | 9/9 | 2026-10-03 | 2026-10-04 v4.1 |
+| `tendencias-diseno-innovacion` | 2000 | 273 | 139 | 9/9 | 2026-10-04 | 2026-10-04 v4.1 |
 | `convergencia-psicologia-economia-ia` | 244 | 115 | 49 | 6/6 | 2026-10-03 | 2026-10-03 v1.0 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
 | `conducta-humano-ia` | 141 | 41 | 28 | 6/6 | 2026-10-03 | 2026-10-03 v1.1 |

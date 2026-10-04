@@ -29,6 +29,11 @@
   "nombre": "Adopción de la telemedicina en Perú",
   "tipo": "resultado"
  },
+ "adquisicion_next_insurance": {
+  "id": "adquisicion_next_insurance",
+  "nombre": "Adquisición de Next Insurance por ERGO/Munich Re (US$2.600M, jul-2025)",
+  "tipo": "concepto"
+ },
  "adulacion_ia": {
   "id": "adulacion_ia",
   "nombre": "Adulación de la IA (sycophancy)",
@@ -97,6 +102,16 @@
  "aprendizaje_esquemas": {
   "id": "aprendizaje_esquemas",
   "nombre": "Aprendizaje (adquisición de esquemas)",
+  "tipo": "resultado"
+ },
+ "aprendizaje_fracaso_innovacion": {
+  "id": "aprendizaje_fracaso_innovacion",
+  "nombre": "Aprender de los fracasos de innovación",
+  "tipo": "concepto"
+ },
+ "aprobacion_codigo_ia": {
+  "id": "aprobacion_codigo_ia",
+  "nombre": "Tasa de aprobación de pull requests de agentes de IA",
   "tipo": "resultado"
  },
  "asistencia_ia_razonamiento": {
@@ -232,6 +247,11 @@
  "c_crisis_consultoras": {
   "id": "c_crisis_consultoras",
   "nombre": "Crisis estructural del modelo de consultora de diseño",
+  "tipo": "afirmacion"
+ },
+ "c_cvc_en_retirada": {
+  "id": "c_cvc_en_retirada",
+  "nombre": "Grandes corporaciones se retiran del venture capital corporativo directo",
   "tipo": "afirmacion"
  },
  "c_desconfianza_falta_info": {
@@ -524,6 +544,11 @@
   "nombre": "Casos de clientes resueltos por hora",
   "tipo": "resultado"
  },
+ "castellion_markham_2013": {
+  "id": "castellion_markham_2013",
+  "nombre": "Castellion y Markham 2013: perspectiva sobre las tasas de fracaso de productos nuevos (JPIM)",
+  "tipo": "estudio"
+ },
  "cdss_prescripcion": {
   "id": "cdss_prescripcion",
   "nombre": "Soporte de decisión clínica en prescripción",
@@ -533,6 +558,16 @@
   "id": "centaur",
   "nombre": "Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones)",
   "tipo": "intervencion"
+ },
+ "cierre_munich_re_ventures": {
+  "id": "cierre_munich_re_ventures",
+  "nombre": "Fin de nuevas inversiones de Munich Re Ventures (≈US$1.200M en ~100 inversiones, 2015-2025)",
+  "tipo": "concepto"
+ },
+ "cierre_paypal_ventures": {
+  "id": "cierre_paypal_ventures",
+  "nombre": "Cierre de PayPal Ventures (US$850M en tres fondos, 2016-2026)",
+  "tipo": "concepto"
  },
  "claude_design": {
   "id": "claude_design",
@@ -799,6 +834,11 @@
   "nombre": "Efectividad de diseño industrial",
   "tipo": "constructo"
  },
+ "diseno_publico": {
+  "id": "diseno_publico",
+  "nombre": "Diseño público y de servicios en el gobierno",
+  "tipo": "intervencion"
+ },
  "disposicion_compra": {
   "id": "disposicion_compra",
   "nombre": "Disposición a comprar",
@@ -823,6 +863,11 @@
   "id": "edad_avanzada",
   "nombre": "Usuarios mayores",
   "tipo": "poblacion"
+ },
+ "efectividad_politica_publica": {
+  "id": "efectividad_politica_publica",
+  "nombre": "Efectividad, innovación y eficiencia de políticas y servicios públicos",
+  "tipo": "resultado"
  },
  "efecto_conductual": {
   "id": "efecto_conductual",
@@ -857,6 +902,11 @@
  "empleo_disenadores_web": {
   "id": "empleo_disenadores_web",
   "nombre": "Empleo de web developers y diseñadores digitales (+7% 2024-2034)",
+  "tipo": "resultado"
+ },
+ "empleo_total_eeuu": {
+  "id": "empleo_total_eeuu",
+  "nombre": "Empleo total de EE.UU. (170,0 M → 175,2 M, +3,1% a 2034)",
   "tipo": "resultado"
  },
  "empoderamiento_psicologico": {
@@ -894,6 +944,11 @@
   "nombre": "Escenario con cambio de planes (fuera del 'camino feliz')",
   "tipo": "concepto"
  },
+ "escrutinio_revision": {
+  "id": "escrutinio_revision",
+  "nombre": "Escrutinio activo en la revisión (comentarios en línea)",
+  "tipo": "resultado"
+ },
  "estructura_decision": {
   "id": "estructura_decision",
   "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
@@ -913,6 +968,11 @@
   "id": "evaluacion_resultados_codiseno",
   "nombre": "Evaluación de resultados del codiseño",
   "tipo": "metrica"
+ },
+ "exit_no_rentabilidad": {
+  "id": "exit_no_rentabilidad",
+  "nombre": "Un exit mide la transacción, no la rentabilidad operativa",
+  "tipo": "limitacion"
  },
  "exito_producto_nuevo": {
   "id": "exito_producto_nuevo",
@@ -943,6 +1003,11 @@
   "id": "explicabilidad_ia",
   "nombre": "Explicabilidad de la IA (explicaciones)",
   "tipo": "intervencion"
+ },
+ "exposicion_codigo_agente": {
+  "id": "exposicion_codigo_agente",
+  "nombre": "Experiencia acumulada revisando código de agentes de IA",
+  "tipo": "constructo"
  },
  "factores_contexto_dt": {
   "id": "factores_contexto_dt",
@@ -1029,10 +1094,20 @@
   "nombre": "Generative UI (interfaces generadas por LLM)",
   "tipo": "intervencion"
  },
+ "gii_peru": {
+  "id": "gii_peru",
+  "nombre": "Índice Global de Innovación (OMPI): Perú",
+  "tipo": "metrica"
+ },
  "guidance_figma_q2": {
   "id": "guidance_figma_q2",
   "nombre": "Guía de Figma Q2: US$348-350M (~40%)",
   "tipo": "concepto"
+ },
+ "habilitadores_institucionales": {
+  "id": "habilitadores_institucionales",
+  "nombre": "Habilitadores institucionales: liderazgo, capacidad, financiamiento, oportunidad de iterar",
+  "tipo": "constructo"
  },
  "hackenburg_margetts_2024": {
   "id": "hackenburg_margetts_2024",
@@ -1127,6 +1202,11 @@
  "ingresos_figma_q2": {
   "id": "ingresos_figma_q2",
   "nombre": "Ingresos de Figma Q2 2026 (+48%)",
+  "tipo": "resultado"
+ },
+ "innovacion_peru": {
+  "id": "innovacion_peru",
+  "nombre": "Desempeño de innovación de Perú",
   "tipo": "resultado"
  },
  "integracion_producto_proceso": {
@@ -1464,6 +1544,11 @@
   "nombre": "Proyecto de Ley 08488/2024-CR (farmacias en el sistema nacional de salud)",
   "tipo": "intervencion"
  },
+ "poca_confrontacion_empirica": {
+  "id": "poca_confrontacion_empirica",
+  "nombre": "La investigación empírica posterior rara vez confrontó los argumentos centrales de la teoría",
+  "tipo": "limitacion"
+ },
  "precio_accion_figma": {
   "id": "precio_accion_figma",
   "nombre": "Precio de la acción de Figma (FIG)",
@@ -1533,6 +1618,16 @@
   "id": "programa_simulado",
   "nombre": "Programa simulado (incentivo ≤US$100), no seguro con prima real",
   "tipo": "limitacion"
+ },
+ "proyeccion_no_medicion": {
+  "id": "proyeccion_no_medicion",
+  "nombre": "Es una proyección, no una medición",
+  "tipo": "limitacion"
+ },
+ "proyecciones_bls": {
+  "id": "proyecciones_bls",
+  "nombre": "Proyecciones de empleo del BLS 2024-2034",
+  "tipo": "metrica"
  },
  "publicidad_precio_enganosa": {
   "id": "publicidad_precio_enganosa",
@@ -1807,6 +1902,11 @@
  "tareas_sentimiento_lsat": {
   "id": "tareas_sentimiento_lsat",
   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
+  "tipo": "concepto"
+ },
+ "teoria_disrupcion": {
+  "id": "teoria_disrupcion",
+  "nombre": "Teoría de la innovación disruptiva",
   "tipo": "concepto"
  },
  "teoria_prospectiva": {

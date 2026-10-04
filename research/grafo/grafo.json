@@ -4072,7 +4072,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Disruptive Innovation: An Intellectual History and Directions for Future Research (*Journal of Management Studies*)",
-   "autor": "Christensen, C. M., Raynor, M., McDonald, R. y coautores",
+   "autor": "Christensen, C. M.; McDonald, R.; Altman, E. J. & Palmer, J. E. — Journal of Management Studies 55(7):1043-1078 — ⚠️ corregido 2026-10-04 (regla permanente de datos bibliográficos): decía 'Christensen, Raynor, McDonald y coautores'; Raynor no es coautor",
    "anio": "2018",
    "huerfana": false
   },
@@ -4108,8 +4108,8 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Learning from innovation failures: a systematic review of the literature and research agenda (*Review of Managerial Science*)",
-   "autor": "Rhaiem, K. & Amara, N.",
-   "anio": "2019",
+   "autor": "Rhaiem, K. & Amara, N. — Review of Managerial Science 15(2):189-234 — ⚠️ corregido 2026-10-04 (regla permanente de datos bibliográficos): publicado en línea en 2019 y en número en 2021; revisa 53 artículos de 1980-2017",
+   "anio": "2019 (número: 2021)",
    "huerfana": false
   },
   {
@@ -12037,6 +12037,44 @@
     },
     "fecha": "2026-10-03",
     "commit": "d80e14b",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 645,
+    "rigor": {
+     "B": 106,
+     "A": 179,
+     "C": 170,
+     "D": 143,
+     "?": 14,
+     "E": 33
+    },
+    "nodes": 17,
+    "outputs": 4,
+    "wikilinks": 96,
+    "derivaciones": 11,
+    "fuentes_citadas_en_nodes": 540,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2000,
+     "cites": 273
+    },
+    "fecha": "2026-10-04",
+    "commit": "8f39145",
     "fuente": "git"
    }
   ],

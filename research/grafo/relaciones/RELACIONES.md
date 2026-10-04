@@ -8,30 +8,30 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **161 de 645** (25.0%) |
-| …del cerebro de diseño (citadas en el node) | 119 de 273 |
-| …por rigor | A 110/179 · B 26/106 · C 21/170 · D 3/143 · E 1/33 |
-| Barridos | 24 |
-| Entidades | 377 |
-| Relaciones | 294 |
-| Nivel de lectura | abstract 196 · ficha 98 |
-| Fuerza de las afirmaciones | causal 104 · descriptiva 79 · observacional 67 · teorica 44 |
+| Fuentes procesadas | **171 de 645** (26.5%) |
+| …del cerebro de diseño (citadas en el node) | 129 de 273 |
+| …por rigor | A 110/179 · B 36/106 · C 21/170 · D 3/143 · E 1/33 |
+| Barridos | 25 |
+| Entidades | 397 |
+| Relaciones | 307 |
+| Nivel de lectura | abstract 209 · ficha 98 |
+| Fuerza de las afirmaciones | causal 104 · descriptiva 87 · observacional 69 · teorica 47 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 64 |
-| `asocia_con` | efecto | 40 |
-| `reduce` | efecto | 39 |
+| `aumenta` | efecto | 66 |
+| `asocia_con` | efecto | 41 |
+| `reduce` | efecto | 40 |
 | `aplica_a` | estructura | 30 |
-| `tiene_limite` | metodo | 25 |
-| `modera` | efecto | 19 |
+| `tiene_limite` | metodo | 28 |
+| `modera` | efecto | 20 |
+| `respalda` | evidencia | 17 |
 | `contradice` | evidencia | 16 |
-| `respalda` | evidencia | 15 |
-| `mide` | metodo | 11 |
+| `mide` | metodo | 13 |
 | `media` | efecto | 10 |
-| `refuta` | evidencia | 9 |
+| `refuta` | evidencia | 10 |
 | `es_tipo_de` | estructura | 8 |
 | `origina_en` | metodo | 6 |
 | `parte_de` | estructura | 2 |
@@ -66,6 +66,7 @@
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
 | El efecto del design thinking está totalmente mediado por empoderamiento | F-239, F-240 |
+| Éxito de proyectos de innovación | F-239, F-441 |
 | Las explicaciones rara vez producen desempeño complementario | F-243, F-244 |
 | Las explicaciones mejoran la decisión humano-IA | F-244, F-246 |
 | Cognitive forcing functions (fricción deliberada) | F-245, F-502 |
@@ -78,6 +79,7 @@
 | Generative UI gana en usabilidad percibida | F-475, F-476 |
 | Brecha percepción–realidad (autoestimación vs. desempeño) | F-257, F-401 |
 | El estándar de reporting se degrada donde hay presión de IA (H16) | F-306, F-428 |
+| El 80-95% de los productos nuevos fracasan | F-431, F-432 |
 | Desempeño organizacional | F-434, F-525 |
 | Conductas de riesgo al manejar (velocidad, frenado, aceleración) | F-23, F-442 |
 | Combined ratio de Root (91,4%) | F-449, F-481 |
@@ -115,6 +117,7 @@
 | Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión) | F-221, F-223 |
 | Confianza del consumidor en la aseguradora | F-334, F-335 |
 | Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea) | F-563, F-564 |
+| Grandes corporaciones se retiran del venture capital corporativo directo | F-447, F-448 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -193,6 +196,9 @@
 - **Hughes 2011: revisión crítica de cinco apariciones publicadas del '70% de fracaso'** —refuta→ **El 70% de las iniciativas de cambio organizacional fracasa** (F-540, descriptiva) · **estado: refutacion_directa**
   - Journal of Change Management 11(4) 2011: revisa cinco apariciones publicadas de la cifra y concluye que no hay evidencia empírica válida y confiable que sostenga el 70% de fracaso del cambio organizacional.
   - *Resolución (2026-10-03):* Hughes (F-540, revisión crítica arbitrada) rastrea cinco apariciones publicadas del '70% de las iniciativas de cambio fracasa' y no encuentra evidencia empírica válida y confiable que la sostenga. Ya era la confrontación de H27 en el node de diseño e innovación; aquí queda en el grafo con su resumen oficial.
+- **Castellion y Markham 2013: perspectiva sobre las tasas de fracaso de productos nuevos (JPIM)** —refuta→ **El 80-95% de los productos nuevos fracasan** (F-431, descriptiva) · **estado: refutacion_directa**
+  - JPIM 30 (2013): el mito de que fracasa 80% o más de los productos nuevos persiste aunque los estudios empíricos desde 1977 muestran una tasa de 40% o menos; lo sostienen el argumentum ad populum y el interés propio.
+  - *Resolución (2026-10-04):* Castellion y Markham (F-431, JPIM) muestran que los estudios empíricos desde 1977 dan una tasa de fracaso de productos nuevos de 40% o menos, no 80-95%. Converge con F-432 (T-97: 25% al año 1 y ~40% a los 2 años medido en ventas). Dos fuentes independientes refutan el mismo mito.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -283,6 +289,10 @@
   - *Resolución:* Cerrada: autoría corregida el 2026-10-03 (regla permanente).
 - ✅ **F-285** (2026-10-03, cerrada): Autoría 'Varios (arXiv)' → Rios-Sialer, I. (arXiv 2601.06116).
   - *Resolución:* Cerrada: autoría corregida el 2026-10-03 (regla permanente).
+- ✅ **F-437** (2026-10-04, cerrada): Autoría 'Christensen, Raynor, McDonald y coautores' → Christensen, McDonald, Altman y Palmer (JMS 55(7)).
+  - *Resolución:* Cerrada: autoría corregida en el ledger el 2026-10-04 (regla permanente).
+- ✅ **F-441** (2026-10-04, cerrada): Año 2019 sin aclarar: publicado en línea en 2019 y en número en 2021 (RMS 15(2):189-234).
+  - *Resolución:* Cerrada: datos bibliográficos completados el 2026-10-04 (regla permanente).
 
 ## 7. Registro de barridos
 
@@ -312,6 +322,7 @@
 | 2026-10-03 | F-560, F-572, F-579, F-585, F-580 | 11 | – | Lote de la tanda de convergencia psico-econ-IA con resúmenes oficiales verificados el 2026-10-03 (NeurIPS, Nature Computational Science, Nature, QJE). F-560 contradice la afirmación de varianza compri |
 | 2026-10-03 | F-250, F-338, F-357, F-514, F-516 | 10 | – | Lote de profundidad del cerebro de diseño (orden de `next`), con resúmenes oficiales verificados el 2026-10-03. F-250 entra ahora: en el lote 020 se había dejado fuera por falta de resultados. F-338 e |
 | 2026-10-03 | F-519, F-521, F-524, F-525, F-540, F-7, F-124, F-231, F-263, F-285 | 19 | – | Lote de 10 (pedido del usuario), en el orden de `next`, con resúmenes o páginas oficiales verificados el 2026-10-03 vía búsqueda (kff.org está bloqueado: los datos de F-7 vienen del resumen de hallazg |
+| 2026-10-04 | F-310, F-387, F-407, F-431, F-437, F-441, F-447, F-448, F-452, F-466 | 13 | – | Segundo lote de 10 (pedido del usuario), con resúmenes y comunicados oficiales verificados el 2026-10-04. Se saltaron tres del orden de `next` por no tener fuente primaria verificable: F-389 (estudio  |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*
