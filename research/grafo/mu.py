@@ -242,12 +242,42 @@ if est["barridos"]:
 notes = "<p class='n'>Serie git: clon superficial; antes de la primera fecha visible solo vale la columna <code>fecha</code> del ledger (fecha de registro, no de lectura).</p>"
 
 top = sorted(nodes, key=lambda n: -len(M["cites"][n] & set(ledger)))
-node_rows = "".join(
-    f'<tr><td>{"■ " if n == bg.DESIGN else ""}{E(n)}</td><td class="r">{nodes[n].count(chr(10))+1}</td><td class="r">{len(M["cites"][n] & set(ledger))}</td>'
-    f'<td class="r">{pct(M["ab"](M["cites"][n] & set(ledger)), len(M["cites"][n] & set(ledger)))}%</td>'
-    f'<td class="r">{sum(1 for a,b in M["links"] if b==n)}/{sum(1 for a,b in M["links"] if a==n)}</td>'
-    f'<td><svg viewBox="0 0 100 10"><rect width="{min(100, 100*len(M["cites"][n] & set(ledger))/max(1,len(M["cites"][top[0]] & set(ledger))))}" height="10" class="fg"/></svg></td></tr>'
-    for n in top)
+# radiografía: subtemas reales de cada node = entidades del grafo semántico sostenidas por las fuentes que el node cita
+_tri_f = defaultdict(list)
+for t in tri:
+    _tri_f[int(t["f"][2:])].append(t)  # el ledger usa ids enteros; el grafo, "F-n"
+_maxc = max(1, len(M["cites"][top[0]] & set(ledger))) if top else 1
+_citados_tot = len(cit_all) or 1
+
+
+def radiografia(n):
+    fs = M["cites"][n] & set(ledger)
+    en_grafo = fs & {int(f[2:]) for f in sem_f}
+    sop = defaultdict(set)
+    for f in en_grafo:
+        for t in _tri_f[f]:
+            sop[t["s"]].add(f); sop[t["o"]].add(f)
+    # subtema = concepto, constructo o intervención; cifras, resultados y afirmaciones puntuales no son temas
+    _tem = {k: v for k, v in sop.items() if ent.get(k, {}).get("tipo") in ("concepto", "constructo", "intervencion")}
+    sub = sorted((_tem or sop).items(), key=lambda kv: (-len(kv[1]), kv[0]))[:10]
+    lines = nodes[n].count(chr(10)) + 1
+    ab = pct(M["ab"](fs), len(fs))
+    ent_in, sal = sum(1 for a, b in M["links"] if b == n), sum(1 for a, b in M["links"] if a == n)
+    head = (f'<summary>{"■ " if n == bg.DESIGN else ""}{E(n)} <span>{len(fs)} fuentes ({pct(len(fs), _citados_tot)}% de lo citado) · {lines} líneas · '
+            f'A/B {ab}% · enlaces {ent_in}/{sal}</span><svg class="rb" viewBox="0 0 100 6" preserveAspectRatio="none"><rect width="{100*len(fs)/_maxc:.0f}" height="6" class="fg"/></svg></summary>')
+    if not fs:
+        body = "<p class='n'>No cita fuentes del registro: su contenido viene de documentos internos o del modelo, no de evidencia F-n.</p>"
+    elif not sub:
+        body = f"<p class='n'>Ninguna de sus {len(fs)} fuentes pasó todavía por el grafo semántico: no se pueden mostrar sus subtemas.</p>"
+    else:
+        chips = "".join(f'<li><b>{len(v)}</b> {E(ent.get(k, {}).get("nombre", k))}</li>' for k, v in sub)
+        body = (f'<ul class="sub">{chips}</ul><p class="n">Subtemas = conceptos, constructos e intervenciones del grafo semántico que más fuentes de este node sostienen (número = fuentes). '
+                f'Visible: {len(en_grafo)} de {len(fs)} fuentes del node ya leídas al grafo ({pct(len(en_grafo), len(fs))}%); el resto no aparece aquí.</p>')
+    return f'<details class="dd rx">{head}<div class="ddb">{body}</div></details>'
+
+
+node_rows = "".join(radiografia(n) for n in top)
+_conc = pct(len(M["cites"][top[0]] & set(ledger)), _citados_tot) if top else 0
 
 # pendientes (accionables, derivados de lo medido)
 todo = []
@@ -304,17 +334,25 @@ details.dd summary:hover span,details.dd summary:focus-visible span{color:var(--
 details.dd[open] summary{border-bottom:2px solid var(--fg)}
 details.dd .ddb{padding:8px;overflow-x:auto}
 details.dd td:first-child{white-space:nowrap}
+details.rx{margin:0 0 -2px}
+details.rx summary{display:grid;grid-template-columns:1.2em minmax(0,1fr);gap:2px 4px;overflow-wrap:anywhere}
+details.rx summary span{grid-column:2;font-size:11px}
+details.rx summary .rb{grid-column:2;width:100%;height:6px;display:block}
+details.rx summary:hover .rb rect,details.rx summary:focus-visible .rb rect{fill:var(--bg)}
+ul.sub{list-style:none;margin:0 0 6px;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+ul.sub li{border:2px solid var(--fg);padding:2px 8px;font-size:12px;max-width:100%;overflow-wrap:anywhere}
+ul.sub li b{font-family:var(--display);font-size:15px;margin-right:4px}
 """
 HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MU — panel del segundo cerebro</title><style>{CSS}</style></head><body>
 <header><h1>MU</h1><p>segundo cerebro · {today}<br>rama {E(branch)} @ {E(commit)}<br>{len(ledger)} fuentes / {len(nodes)} nodes / {len(tri)} relaciones</p></header>
-<section><h2>00 INTELIGENCIA — ¿qué nivel tiene?</h2><div class="body hero"><div class="nv"><div class="big2">N{nivel}<span>/{len(NIV)}</span></div><div class="lab2">{nombre_nivel}</div><div class="sub">{E(NIV[nivel-1]["def"] if nivel else "Sin criterios cumplidos")}</div></div><div>{escalera()}<div style="margin-top:10px"><h3>PARA SUBIR A N{nivel+1 if sig else nivel}{(" — " + sig["nombre"]) if sig else ""}</h3>{falta}<p class="n">Escalera: se sube solo con TODOS los criterios del nivel. Umbrales propuestos (juicio del autor), editables en niveles.json. N7 se mide con impacto.json (preguntas reales, valoraciones ¿te sirvió? y decisiones autodeclaradas en Pregúntale a Mu); foto de la base: {E(IMP['base'].get('foto', 'nunca'))}.</p></div></div></div><div class="body" style="grid-template-columns:1fr"><table><tr><th>nivel</th><th>estado</th><th>criterio</th><th>valor / umbral</th><th></th><th></th></tr>{crit_rows}</table></div></section>
+<section><h2>00 INTELIGENCIA — ¿qué nivel tiene?</h2><div class="body hero"><div class="nv"><div class="big2">N{nivel}<span>/{len(NIV)}</span></div><div class="lab2">{nombre_nivel}</div><div class="sub">{E(NIV[nivel-1]["def"] if nivel else "Sin criterios cumplidos")}</div></div><div>{escalera()}<div style="margin-top:10px"><h3>PARA SUBIR A N{nivel+1 if sig else nivel}{(" — " + sig["nombre"]) if sig else ""}</h3>{falta}<p class="n">Escalera: se sube solo con TODOS los criterios del nivel. Umbrales propuestos (juicio del autor), editables en niveles.json. N7 se mide con impacto.json (preguntas reales, valoraciones ¿te sirvió? y decisiones autodeclaradas en Pregúntale a Mu); foto de la base: {E(IMP['base'].get('foto', 'nunca'))}.</p></div></div></div><div class="body" style="grid-template-columns:1fr;overflow-x:auto"><table><tr><th>nivel</th><th>estado</th><th>criterio</th><th>valor / umbral</th><th></th><th></th></tr>{crit_rows}</table></div></section>
 <section><h2>01 SALUD — ¿está sano?</h2><div class="g">{''.join(sal)}</div><div class="body"><div><h3>CHEQUEOS</h3><ul>{checklist}</ul></div><div><h3>PENDIENTES ACCIONABLES</h3><ul>{todo_html}</ul></div></div></section>
 <section><h2>02 MADUREZ — ¿qué tan probado está?</h2><div class="g">{''.join(mad)}</div><div class="body"><div>{mad_charts}</div></div></section>
 <section><h2>03 RIQUEZA — ¿cuánto hay?</h2><div class="g">{''.join(ri)}</div><div class="body"><div>{rig_chart}</div><div>{rel_chart}</div></div></section>
 <section><h2>04 EVOLUCIÓN — ¿cómo creció?</h2><div class="body" style="grid-template-columns:1fr">{ev_ledger}{bar_sem}{notes}</div></section>
-<section><h2>05 NODES — ¿dónde está el peso?</h2><div class="body" style="grid-template-columns:1fr"><table><tr><th>node</th><th>líneas</th><th>F-n</th><th>A/B</th><th>ent/sal</th><th></th></tr>{node_rows}</table></div></section>
-<footer>Todo número sale de contar archivos (METRICAS.md). Citar ≠ validar. Impacto externo (uso por personas): NO medido. Regenerar: python research/grafo/mu.py</footer>
+<section><h2>05 RADIOGRAFÍA — ¿de qué está hecho cada tema?</h2><div class="body" style="grid-template-columns:1fr"><div><p class="n">Los {len(nodes)} nodes, ordenados por cuántas fuentes citan. Cada uno es un tema amplio; ábrelo para ver sus subtemas reales. El más grande concentra el {_conc}% de lo citado{" — señal para evaluar si conviene partirlo" if _conc >= 30 else ""}.</p>{node_rows}</div></div></section>
+<footer>Todo número sale de contar archivos (METRICAS.md). Citar ≠ validar. Impacto externo: autodeclarado en Pregúntale a Mu (impacto.json). Regenerar: python research/grafo/mu.py</footer>
 </body></html>"""
 (H / "mu.html").write_text(HTML)
 
