@@ -44,7 +44,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: barrido incremental (grupos de 5) de literatura 🟢A del códice para el modelo `lapuerta` | Nunca aplica solo — memoria en `research/updates/cerrajero_barrido_estado.json`, siempre pregunta antes de tocar el modelo |
 | `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/chacal/` · `research/grafo/chacal.py` · `research/garaje/` | Skill `/chacal`: **auditor** que le hace 3 preguntas a Mu (diseño · conducta humano-IA · seguros), mide la evidencia detrás de cada respuesta con semáforos deterministas (`chacal_rubrica.json`) y deja apuntes en el **garaje** (`research/garaje/`: auditorías, `bitacora.jsonl`, `INDICE.md`) | Solo escribe en `garaje/`; no edita nodes/ledger; fuera del alcance de `alma.md` |
-| `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger. 🎨 **Identidad de marca de Mu** (2026-10-03): `.claude/skills/mu/IDENTIDAD.md` + `mu-base.css` — **toda pieza que se pida de Mu usa ese estilo** (blanco/negro + naranja de alerta, Impact + mono, esquinas rectas, reglas de 8px). Guía de uso: `research/grafo/mu_guia.html`. 💬 **Pregúntale a Mu** (artefacto privado https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm): `research/grafo/preguntar/index.html` + `build_corpus.py` (regenerar `mu-corpus.json` y republicar cuando cambien nodes o ledger) |
+| `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger. 🎨 **Identidad de marca de Mu** (2026-10-03): `.claude/skills/mu/IDENTIDAD.md` + `mu-base.css` — **toda pieza que se pida de Mu usa ese estilo** (blanco/negro + naranja de alerta, Impact + mono, esquinas rectas, reglas de 8px). Guía de uso: `research/grafo/mu_guia.html`. 💬 **Pregúntale a Mu** (artefacto privado https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm): `research/grafo/preguntar/index.html` + `build_corpus.py` (regenerar `mu-corpus.json` y republicar cuando cambien nodes o ledger). Capacidades `sample`, `db`, `user`: lleva el **backlog de temas** y el protocolo de temas sin cobertura (ver sección abajo) |
 | `.claude/skills/grafo/` | Skill `/grafo`: regenera y explica `research/grafo/ESTADO.md` y conduce el barrido semántico del códice por lotes | Reporta fallas de integridad sin maquillar |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
@@ -174,6 +174,22 @@ pida:
    cambió.
 5. **Nunca borres nodes existentes.** Si un node queda obsoleto, dilo y pregunta antes de
    tocarlo.
+
+### 📌 Protocolo de backlog de temas (preguntas a Mu)
+Cada pregunta que se le hace a Mu alimenta un **backlog de temas** (regla del usuario, 2026-10-04):
+
+- **Dónde vive:** base de datos del artefacto "Pregúntale a Mu" (https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm):
+  colección `consultas` (una entrada por pregunta: `q`, `tema_id`, `tema`, `cubierto` si/parcial/no, `node`,
+  `fuentes_citadas`, `at`, `quien`) y colección `temas` (`tema`, `creado`, `protocolo`, `protocolo_fecha`,
+  `protocolo_consultas`, `avisado`, `avisado_fecha`). Foto legible en `research/garaje/backlog_temas.md`.
+- **Clasificación:** tras cada respuesta, una llamada rápida asigna el tema (reutiliza el `tema_id` si ya existe) y la
+  cobertura; regla fija: si la respuesta no cita ninguna fuente del ledger, cuenta como **sin cobertura**.
+- **Protocolo:** un tema con **más de 3 consultas sin cobertura** se marca `protocolo: true` (alerta naranja en la página)
+  y la rutina diaria "Protocolo de temas de Mu" (8:54 Lima, trigger `trig_01A1iWxo1HNptWpthvm5hapP`) le avisa al
+  usuario que debe explorarse como conocimiento nuevo, marca `avisado` y regenera el backlog del repo.
+- **Preguntas hechas en una sesión de Claude Code** (no en el artefacto): si la pregunta va dirigida a Mu o a lo que
+  sabe el cerebro, regístrala igual con `ArtifactData` `set` en `consultas` (doc_id nuevo, mismo esquema), reutilizando
+  el `tema_id` existente si lo hay; si con eso un tema supera el umbral, actualiza `temas` y avísale al usuario en el acto.
 
 ### 📌 Skill: `lapuerta` (usuarios sintéticos de seguros)
 Generador + simulador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).
