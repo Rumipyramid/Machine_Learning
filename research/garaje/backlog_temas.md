@@ -11,4 +11,7 @@ nuevo (por ejemplo con `/trinidad`) y crear o ampliar su node.
 
 | Tema | Consultas | ✗ sin cobertura | ~ parcial | ✓ cubiertas | Protocolo |
 |---|---|---|---|---|---|
-| *(sin consultas registradas todavía — creado 2026-10-04)* | | | | | |
+| IA que da la razón al usuario (sycophancy) | 1 | 0 | 1 | 0 | no |
+| Qué es lo más relevante hoy en diseño | 2 | 0 | 0 | 2 | no |
+
+*Última revisión: 2026-10-04 (3 consultas, 2 temas, 0 protocolos activos).*
