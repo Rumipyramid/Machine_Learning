@@ -11,7 +11,9 @@ nuevo (por ejemplo con `/trinidad`) y crear o ampliar su node.
 
 | Tema | Consultas | ✗ sin cobertura | ~ parcial | ✓ cubiertas | Protocolo |
 |---|---|---|---|---|---|
-| IA que da la razón al usuario (sycophancy) | 1 | 0 | 1 | 0 | no |
-| Qué es lo más relevante hoy en diseño | 2 | 0 | 0 | 2 | no |
+| Qué es lo más relevante hoy en diseño | 3 | 0 | 0 | 3 | no |
+| IA que da la razón al usuario (sycophancy) | 2 | 0 | 2 | 0 | no |
+| Fenómenos psicológicos aplicables al diseño | 1 | 0 | 0 | 1 | no |
+| Efectividad y limitaciones de los nudges | 1 | 0 | 0 | 1 | no |
 
-*Última revisión: 2026-10-04 (3 consultas, 2 temas, 0 protocolos activos).*
+*Última revisión: 2026-10-05 (7 consultas, 4 temas, 0 protocolos activos).*
