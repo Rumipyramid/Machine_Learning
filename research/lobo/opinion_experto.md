@@ -5549,6 +5549,40 @@ Límite: la ventana es 2020-2023, anterior a los modelos actuales.
 - **Leído a fondo:** 2026-10-04 (`WebSearch`; paper no abierto)
 - **Conexión razonada, no forzada:** tesis 9/23 (triage IA) y node conducta-humano-ia.
 
+### 175. Cuando una caída de demanda se mide en una plataforma, leerla como señal de dirección y de a quién golpea, no como tamaño del mercado
+F-521 (Hannane, Demirci & Zhu, *Management Science* 71(10), 2025; diferencias en diferencias sobre una plataforma freelance
+global). Tras la IA generadora de imágenes, las ofertas de creación de imágenes cayeron ~17%; tras ChatGPT, −21% en
+escritura y programación a 8 meses, y la caída fue mayor donde la gente conocía más la sustituibilidad. Los trabajos que
+quedan son más complejos y mejor pagados. **Heurística:** el hallazgo causal es sobre *demanda por tarea automatizable en
+una plataforma de contratación por encargo*, no sobre empleo total del oficio; sirve para decidir qué tareas de un
+servicio dejan de ser diferenciador (lo estandarizable) y cuáles suben de valor (lo complejo), no para proyectar
+desempleo de diseñadores. Límite: una sola plataforma; leí el resumen de la revista, no el PDF.
+- **Fuente:** F-521 (🟢A según ledger)
+- **Leído a fondo:** 2026-10-05 (`WebSearch`; PDF no abierto)
+- **Conexión razonada, no forzada:** node tendencias-diseno-innovacion (H34); no toca tesis de seguros.
+
+### 176. Un resultado nulo de personalización no prueba que personalizar sea inútil: prueba que el mensaje base ya hacía el trabajo
+F-499 (Hackenburg & Margetts, PNAS 2024; experimento preregistrado). Los mensajes de GPT-4 con microtargeting no fueron
+estadísticamente más persuasivos que un mensaje genérico bien hecho; la influencia del LLM parece residir en la calidad
+del mensaje base, no en el ajuste individual. **Heurística:** antes de pagar por datos individuales (pricing, mensajes
+de venta de seguros), correr el A/B contra el mejor genérico, no contra un genérico pobre; si el piso ya es bueno, el
+dato personal añade riesgo regulatorio y desconfianza sin retorno. Límite: contexto político con GPT-4; en seguros el
+retorno podría diferir y está en tensión con F-491 (+81,7% con datos demográficos), que no pude verificar hoy.
+- **Fuente:** F-499 (🟢A según ledger)
+- **Leído a fondo:** 2026-10-05 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 22 (personalizar no es gratis) y tesis 13 (divulgación progresiva de datos).
+
+### 177. Si una palanca sube la persuasión y baja la exactitud, la métrica de conversión sola premia al sistema equivocado
+F-489 (Hackenburg et al., *Science*; 3 experimentos, 19 LLMs, 707 temas, 76.977 participantes, 466.769 afirmaciones
+verificadas). El post-entrenamiento sube la persuasión hasta 51% y el prompting estratégico hasta 27%, pero donde la
+persuasión sube, la exactitud factual baja de forma sistemática; modelos pequeños afinados igualan a los grandes.
+**Heurística:** en un asesor conversacional de seguros, medir conversión *junto con* exactitud de lo afirmado (auditoría
+de afirmaciones), y exigir ambas; el optimizador de conversión empujará hacia más densidad de información dudosa.
+Nota: no hay barrera de escala, así que el riesgo no es exclusivo de actores grandes. Límite: contexto político.
+- **Fuente:** F-489 (🟢A según ledger)
+- **Leído a fondo:** 2026-10-05 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 9/23 y node conducta-humano-ia (HC adulación/persuasión).
+
 
 ## 📔 Bitácora
 
@@ -5717,43 +5751,7 @@ Límite: la ventana es 2020-2023, anterior a los modelos actuales.
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
-  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04).
-- **2026-09-05** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
-  `git pull` fast-forward bf1c531→(este commit), working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos**
-  — mismo tope exacto que las últimas 5 corridas, **cero fuentes nuevas** registradas desde
-  entonces, vigesimotercer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis
-  vigentes contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún
-  matiz de confianza solo por completar el paso — la revisión profunda de `cronista` (cada ~3 días)
-  sigue sin correr desde el 2026-08-12, y no la disparo aquí porque es rutina de `cronista`, no de
-  este proceso diario. Sí corrió la rutina diaria de intuición (trigesimoprimera desde el
-  2026-08-06): recalculé por script el universo de fuentes 🟢A del ledger (137 filas marcadas como
-  tal en su columna de rigurosidad) contra el registro de `fuentes_leidas_lobo.md` (87 ya leídas) —
-  50 pendientes — y elegí 3 al azar sin reemplazo (`shuf` sobre `/dev/urandom`): F-10 (Ben-Shahar &
-  Schneider 2014, ya citado en tesis 1 solo por su titular), F-144 (Norberg, Horne & Horne 2007, ya
-  citado en tesis 13 solo por su hallazgo de divulgación progresiva) y F-156 (Liu et al. 2023,
-  G-Eval, ya citado en el node de evaluación de agentes conversacionales). Las tres ya tenían
-  entrada en el ledger con resumen y URL, así que las leí a fondo directamente desde la referencia
-  registrada (libro canónico, paper de journal indexado, paper de EMNLP en arXiv) sin bloqueos de
-  proxy esta vez. Sumé las entradas 88, 89 y 90 de Intuición acumulada: (88) un mandato de
-  disclosure que fracasa en un catálogo largo y heterogéneo de industrias (hipotecas, HIPAA,
-  contratos de celular, pólizas) es evidencia de fracaso estructural de la categoría de
-  intervención, no de mala redacción del caso puntual — refuerza tesis 1 y el puente hacia tesis 7
-  (s-frame > i-frame); (89) la paradoja de la privacidad de F-144 tiene un ángulo que tesis 13 no
-  explota todavía: la actitud declarada hacia la privacidad no predice la conducta real de
-  compartir datos, así que medir "preocupación por privacidad" en una encuesta o persona sintética
-  no es proxy válido de si esa persona compartirá datos en un flujo real de telemática/UBI — nota
-  de cautela sobre instrumento de medición, no una tesis nueva, y no reabre la calibración de
-  `disposicion_compartir_datos_pricing` (eso es decisión de `/cerrajero`, no de este proceso); (90)
-  el 0.514 de correlación de Spearman de G-Eval contra juicio humano —el mejor número reportado
-  entre los métodos que compara el propio paper— es un techo, no un piso: cualquier puntaje de un
-  evaluador LLM sobre un agente conversacional de Rimac hereda como máximo ese nivel de acuerdo con
-  un humano real, cuantifica la intuición 20 ya registrada. Ninguna tesis de negocio cambió de
-  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
-  evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
-  tres fuentes leídas hoy. Bitácora con 29 días de historial (2026-08-08 a hoy), dentro de la
-  ventana de ~30 días — la próxima corrida (2026-09-06) empuja el rango a 30 días exactos y debería
-  evaluar resumir/podar la entrada del 2026-08-08.
+  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis.
 - **2026-09-06** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
   `git pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md`
   por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope
@@ -6791,3 +6789,13 @@ Límite: la ventana es 2020-2023, anterior a los modelos actuales.
   (F-494, F-497, F-500, F-501, F-503): no entran. **Intuición:** F-516 (🟢A nueva, prioridad por regla) más F-481 y
   F-488 (🔵B, sorteo al azar), vía `WebSearch`. Entradas 172-174. Poda: 09-04 fusionado al resumen; Bitácora cubre
   2026-09-05 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-05** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no
+  existe; el ledger vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** desde la entrada de ayer
+  (último cambio del ledger: 2026-10-03). Sin cambios en tesis ni confianzas; matiz de lectura: F-521 (🟢A) es
+  evidencia causal de caída de demanda por tarea en una plataforma, no de empleo total. **Intuición (nivel 🟢A, 15
+  pendientes → 12 tras hoy):** sorteo F-521, F-499 y F-489 (F-457 salió en el sorteo pero es 🔵B: coincidencia de
+  emoji en el texto de la fila; sustituida), leídas vía `WebSearch`. Entradas 175 (caída de demanda en plataforma:
+  dirección, no tamaño), 176 (un nulo de personalización = el mensaje base ya rendía) y 177 (persuasión sube,
+  exactitud baja: medir conversión con exactitud). Poda: 09-05 fusionado al resumen; Bitácora cubre 2026-09-06 a
+  hoy. `fuentes_leidas_lobo.md` actualizado.

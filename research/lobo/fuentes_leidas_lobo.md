@@ -192,3 +192,6 @@
 | F-481 | 🔵 B | 2026-10-04 | Intuición 172 — un combined ratio sano con prima plana no es buena noticia: mirar ratio, crecimiento y canal juntos (Root: 92,1%, prima −1%) |
 | F-488 | 🔵 B | 2026-10-04 | Intuición 173 — lo que el usuario califica mejor puede dañarlo; la satisfacción no audita un asesor de IA (adulación, Science 2026) |
 | F-516 | 🟢 A | 2026-10-04 | Intuición 174 — decidir vs. crear: en tareas de decisión el combo humano-IA rinde peor que el mejor solo (g = −0,23) |
+| F-521 | 🟢 A | 2026-10-05 | Intuición 175 — caída de demanda medida en una plataforma: leer dirección y a quién golpea, no tamaño del mercado (−17% imágenes, −21% escritura/código) |
+| F-499 | 🟢 A | 2026-10-05 | Intuición 176 — un nulo de microtargeting indica que el mensaje base ya rendía; A/B contra el mejor genérico antes de pagar por datos |
+| F-489 | 🟢 A | 2026-10-05 | Intuición 177 — donde sube la persuasión baja la exactitud; medir conversión junto con exactitud de lo afirmado |
