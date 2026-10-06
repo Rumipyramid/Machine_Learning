@@ -195,3 +195,6 @@
 | F-521 | 🟢 A | 2026-10-05 | Intuición 175 — caída de demanda medida en una plataforma: leer dirección y a quién golpea, no tamaño del mercado (−17% imágenes, −21% escritura/código) |
 | F-499 | 🟢 A | 2026-10-05 | Intuición 176 — un nulo de microtargeting indica que el mensaje base ya rendía; A/B contra el mejor genérico antes de pagar por datos |
 | F-489 | 🟢 A | 2026-10-05 | Intuición 177 — donde sube la persuasión baja la exactitud; medir conversión junto con exactitud de lo afirmado |
+| F-519 | 🟢 A | 2026-10-06 | Intuición 178 — personalización: efecto modesto, mediado por relevancia percibida, no por intrusividad; pagar datos solo si el mensaje se percibirá relevante |
+| F-490 | 🟢 A | 2026-10-06 | Intuición 179 — autoría cruzada en el ledger (Bai et al., no Hackenburg); verificar atribución; el LLM persuade por aparentar hechos y lógica |
+| F-514 | 🟢 A | 2026-10-06 | Intuición 180 — diseño→ROA observacional (8.671 firma-año): valor en el mecanismo de ventas, no en el coeficiente |

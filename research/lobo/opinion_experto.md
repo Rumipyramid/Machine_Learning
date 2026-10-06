@@ -5584,6 +5584,40 @@ Nota: no hay barrera de escala, así que el riesgo no es exclusivo de actores gr
 - **Conexión razonada, no forzada:** tesis 9/23 y node conducta-humano-ia (HC adulación/persuasión).
 
 
+### 178. Un metaanálisis de efecto "modesto pero significativo" se lee por su mediador: la personalización persuade por relevancia percibida, no se frena por intrusividad
+F-519 (Yeo, Chu & Li, *Journal of Advertising Research* 65(4), 2025 — no *Journal of Advertising* como dice el ledger; 53 estudios
+experimentales, ~12.000 participantes). La personalización supera al anuncio genérico en persuasión, actitud e intención, pero el
+efecto global es **modesto**; el modelo estructural meta-analítico indica que la **relevancia percibida** media por completo el
+efecto, mientras la intrusividad percibida no lo explica. **Heurística:** antes de pagar por datos para personalizar, preguntar si
+el mensaje será *percibido* como relevante para esa persona; si no, el costo del dato no compra nada. Y no leer "no hay
+intrusividad en el modelo" como licencia: es promedio de laboratorio, no mide contextos de dato sensible (ver tesis 22, F-518).
+- **Fuente:** F-519 (🟢A según ledger; ficha con revista y autoría imprecisas — corregir vía `cronista`)
+- **Leído a fondo:** 2026-10-06 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 22 (backfire de personalización) y entrada 176; aquí el contrapeso: el efecto medio es positivo pero chico.
+
+### 179. Cuando el ledger atribuye un paper a un autor de otro paper, verificar la autoría antes de heredar la cifra o el contraste
+F-490 está registrado como "Hackenburg et al., *Nature Communications* 2025", pero la búsqueda indica que el artículo "LLM-generated
+messages can persuade humans on policy issues" es de Bai, Voelkel, Muldowney, Eichstaedt & Willer (3 experimentos preregistrados,
+4.829 participantes): los mensajes de LLM persuaden tanto como los de personas legas; la persuasión del LLM se asocia a percibir
+más hechos, evidencia y razonamiento con voz desapasionada, la humana a percibir originalidad. Lo de Hackenburg (*AI & Society*,
+y *Science* en F-489) es otro trabajo. **Heurística:** una atribución cruzada entre papers vecinos es señal de que el resumen se
+armó de memoria o de snippet; antes de citar a un "equipo" como respaldo doble, comprobar que son dos estudios y no uno. El
+hallazgo útil para negocio: un asesor de IA persuade por *aparentar* rigor (hechos, lógica), no por calidez — encaja con entrada 177.
+- **Fuente:** F-490 (🟢A según ledger; autoría a corregir, nivel de rigor se mantiene)
+- **Leído a fondo:** 2026-10-06 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 9/23 y entrada 177; no cambia confianza de ninguna tesis.
+
+### 180. Una correlación positiva diseño→ROA en panel observacional es un argumento de mecanismo (ventas), no una prueba de que invertir en diseño paga
+F-514 (Han, Tang & Li, *International Review of Economics & Finance* 102, 2025; 8.671 observaciones empresa-año de firmas chinas
+cotizadas, 2017-2023; efectos fijos y aleatorios; índice compuesto por PCA). Los cuatro subtipos de patentes de diseño y el índice
+tienen efecto positivo y significativo sobre ROA; la **mediación por crecimiento de ventas** sugiere que el diseño sube la
+productividad de activos vía ingresos, no vía costos. **Heurística:** el valor del hallazgo es el mecanismo testeable (¿sube la
+venta?), no el coeficiente; las firmas rentables también patentan más diseño (causalidad inversa) y las patentes de diseño miden
+diseño *industrial/de producto*, no diseño de experiencia. Para el CoE: medir el ROI de diseño por la métrica de venta intermedia.
+- **Fuente:** F-514 (🟢A según ledger; observacional)
+- **Leído a fondo:** 2026-10-06 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 21 (ROI de diseño por mecanismo); refuerza sin cambiar confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5751,47 +5785,7 @@ Nota: no hay barrera de escala, así que el riesgo no es exclusivo de actores gr
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
-  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis.
-- **2026-09-06** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
-  `git pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md`
-  por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope
-  exacto que las últimas 6 corridas, **cero fuentes nuevas** registradas desde entonces, vigesimocuarto
-  día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo
-  tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por
-  completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la
-  disparo aquí, es rutina de `cronista`, no de este proceso diario). **Corrección de conteo propio:**
-  al recalcular por script el universo de fuentes 🟢A para la rutina de intuición encontré que el
-  denominador que vengo repitiendo desde el 2026-08-20 (137) cuenta 3 filas de más — F-149, F-457 y
-  F-466 tienen rigurosidad primaria 🔵B y solo *mencionan* 🟢A como calificación de un componente
-  secundario dentro del mismo texto (ej. "🔵 B — ... el caso de GM tiene WARN notice, filing estatal
-  oficial, 🟢 A"); un grep ingenuo de "🟢" las cuenta igual que una fila primariamente A. El universo
-  real de fuentes cuyo marcador de rigurosidad *empieza* en 🟢A es **134**, no 137 — ajusto el
-  denominador de aquí en adelante; no cambia ninguna selección pasada (las fuentes ya leídas seguían
-  siendo genuinamente 🟢A) pero corrige cuántas quedan pendientes. Con 90 ya leídas por el Lobo, quedan
-  **44 pendientes** — elegí 3 al azar sin reemplazo (`shuf` sobre `/dev/urandom`): F-50 (Fraser et al.
-  vía *The Lancet*, ya citado en tesis 10 solo por su titular agregado), F-252 (revisión sistemática
-  BMC 2021 de involucramiento público en diseño de servicios, ya citada en el node de
-  diseño/innovación solo por el hallazgo "menos de la mitad evalúa outcomes") y F-330 (Tran et al.
-  2023, *Health Affairs Scholar*, ya citada en el ledger solo por la cifra agregada 38%→36% y la nota
-  "transferido"). Las tres bloqueadas por el proxy en su URL directa (techcrunch.com/digitalhealth.net,
-  bmchealthservres.biomedcentral.com/ncbi.nlm.nih.gov, academic.oup.com/pmc.ncbi.nlm.nih.gov);
-  reconstruidas vía búsqueda dirigida que confirma detalle nuevo más allá del resumen ya citado (el
-  mecanismo de sensibilidad a outliers del benchmark de Babylon con N=7 médicos, el N exacto de 93
-  estudios y la cita de los autores sobre sesgo de reporte hacia lo fácil de medir, y el mecanismo
-  institucional específico de VA — expediente y call center compartido — detrás de la reducción de
-  ED). Sumé las entradas 91, 92 y 93 de Intuición acumulada: (91) un benchmark "IA vs. médicos" con N
-  humano de un dígito es frágil por diseño — un solo outlier humano voltea el resultado, refuerza el
-  mecanismo detrás de tesis 10; (92) que un método de innovación no mida outcomes duros es
-  consecuencia del incentivo de reporte (lo barato y rápido gana sobre lo que importa), no
-  negligencia individual — refuerza H18 del node de diseño/innovación; (93) el ahorro de un canal de
-  triage que reduce ED sin subir riesgo depende de controlar también el destino alternativo (mismo
-  sistema, mismo expediente) — esa palanca institucional no se copia gratis a una red fragmentada,
-  matiza cómo leer evidencia de triage/telemedicina a favor de tesis 9 sin cambiar su confianza.
-  Ninguna tesis de negocio cambió de confianza numérica por esta corrida. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. **Cumplí el umbral de poda
-  señalado ayer:** consolidé la entrada del 2026-08-08 en un solo bloque resumido (el detalle de cada
-  intuición que generó ya vive en su propia sección con fecha, no se pierde información). Bitácora con
-  29 días de historial (2026-08-09 a hoy), dentro de la ventana de ~30 días.
+  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-06** — corrida de intuición, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-06).
 - **2026-09-07** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, working tree limpio, sin fast-forward pendiente — HEAD en 0cc2b76) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
@@ -6799,3 +6793,12 @@ Nota: no hay barrera de escala, así que el riesgo no es exclusivo de actores gr
   dirección, no tamaño), 176 (un nulo de personalización = el mensaje base ya rendía) y 177 (persuasión sube,
   exactitud baja: medir conversión con exactitud). Poda: 09-05 fusionado al resumen; Bitácora cubre 2026-09-06 a
   hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-06** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no
+  existe; el ledger vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** (último cambio del ledger:
+  2026-10-03). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A, 6 pendientes → 3 tras hoy):** sorteo F-519,
+  F-490 y F-514, leídas vía `WebSearch`. Entradas 178 (personalización: efecto modesto mediado por relevancia), 179 (F-490
+  atribuida a Hackenburg en el ledger, pero el artículo es de Bai et al. — autoría a corregir) y 180 (diseño→ROA observacional,
+  mecanismo vía ventas). Además F-519 figura como *Journal of Advertising/T&F* y es *Journal of Advertising Research*; F-514
+  no nombra autores (Han, Tang & Li). Correcciones pendientes para `cronista`, no tocadas aquí. Poda: 09-06 fusionado al
+  resumen; Bitácora cubre 2026-09-07 a hoy. `fuentes_leidas_lobo.md` actualizado.
