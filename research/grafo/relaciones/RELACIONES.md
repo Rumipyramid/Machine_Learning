@@ -1,6 +1,6 @@
 # 🧬 Grafo semántico del códice — RELACIONES
 
-*Generado 2026-10-02 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
+*Generado 2026-10-07 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
 
 > **Transparencia:** una relación aquí es lo que *una fuente dice*, no un hecho. `lectura=ficha` significa que solo se leyó el resumen del ledger; `abstract` que se leyó el resumen real de la fuente; `completa`, el texto íntegro. Un cruce entre fuentes es una *coincidencia de entidades*, no una prueba de que las fuentes sean compatibles.
 
@@ -8,49 +8,65 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **95 de 508** (18.7%) |
-| …del cerebro de diseño (citadas en el node) | 49 de 175 |
-| …por rigor | A 49/138 · B 22/88 · C 20/119 · D 3/120 · E 1/29 |
-| Barridos | 9 |
-| Entidades | 213 |
-| Relaciones | 175 |
-| Nivel de lectura | ficha 131 · abstract 44 |
-| Fuerza de las afirmaciones | descriptiva 64 · causal 46 · observacional 36 · teorica 29 |
+| Fuentes procesadas | **155 de 588** (26.4%) |
+| …del cerebro de diseño (citadas en el node) | 64 de 259 |
+| …por rigor | A 68/163 · B 36/110 · C 23/126 · D 26/145 · E 1/29 |
+| Barridos | 17 |
+| Entidades | 275 |
+| Relaciones | 256 |
+| Nivel de lectura | ficha 132 · abstract 124 |
+| Fuerza de las afirmaciones | descriptiva 107 · causal 63 · observacional 55 · teorica 31 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `asocia_con` | efecto | 35 |
-| `aumenta` | efecto | 30 |
-| `aplica_a` | estructura | 27 |
-| `reduce` | efecto | 24 |
-| `tiene_limite` | metodo | 14 |
-| `contradice` | evidencia | 14 |
-| `modera` | efecto | 8 |
-| `es_tipo_de` | estructura | 6 |
-| `origina_en` | metodo | 6 |
-| `respalda` | evidencia | 5 |
+| `aumenta` | efecto | 52 |
+| `asocia_con` | efecto | 46 |
+| `aplica_a` | estructura | 42 |
+| `reduce` | efecto | 39 |
+| `tiene_limite` | metodo | 17 |
+| `contradice` | evidencia | 16 |
+| `modera` | efecto | 11 |
+| `es_tipo_de` | estructura | 10 |
+| `origina_en` | metodo | 8 |
+| `respalda` | evidencia | 6 |
+| `media` | efecto | 4 |
 | `mide` | metodo | 3 |
-| `media` | efecto | 2 |
 | `refuta` | evidencia | 1 |
+| `parte_de` | estructura | 1 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
 | Entidad | Fuentes |
 |---|---|
+| El Niño / ENSO (fase cálida) | F-529, F-530, F-531, F-532, F-533, F-534, F-535, F-536, F-537, F-543, F-546, F-548, F-549, F-551, F-558, F-563, F-564, F-569 |
+| Niño Costero peruano (1997-98, 2017, 2023) | F-538, F-539, F-540, F-547, F-550, F-552, F-553, F-554, F-555, F-557, F-560, F-567, F-570 |
 | Generative UI (interfaces generadas por LLM) | F-247, F-256, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
+| Seguro paramétrico / de índice | F-562, F-573, F-574, F-576, F-577, F-579, F-587 |
+| Daños humanos y económicos del Niño Costero 2017 | F-542, F-550, F-556, F-570, F-571, F-588 |
 | Sobre-confianza en la IA | F-244, F-245, F-246, F-502 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
 | Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499 |
+| Ingreso y consumo del hogar | F-533, F-539, F-540, F-565 |
+| Inseguridad alimentaria del hogar | F-538, F-539, F-579, F-580 |
+| Hogares del norte costero (Tumbes, Piura, Lambayeque) | F-542, F-559, F-566, F-581 |
+| Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre) | F-572, F-575, F-576, F-588 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-429, F-470 |
 | Productividad de desarrolladores | F-257, F-474, F-503 |
 | Penetración de seguros en Perú | F-482, F-483, F-507 |
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
+| Demanda de seguros | F-3, F-578, F-586 |
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
+| Hogares pobres / de menores ingresos | F-537, F-541, F-575 |
+| Casos y muertes por dengue (Perú) | F-553, F-582, F-583 |
+| Crecimiento económico (PBI) | F-529, F-530, F-569 |
+| El Niño 2026-27 alcanza magnitud extraordinaria/histórica | F-567, F-568, F-584 |
+| Cajas municipales y microfinancieras del norte | F-565, F-574, F-577 |
+| Acción anticipatoria / financiamiento basado en pronósticos | F-580, F-581, F-585 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
@@ -79,6 +95,7 @@
 | Medical care ratio de UnitedHealth (86,7% en el 2T 2026) | F-198, F-480 |
 | Rechazo de cobertura sin fundamento o fuera de plazo | F-484, F-485 |
 | Sanciones de Indecopi a aseguradoras (2026) | F-485, F-486 |
+| La causa #1 de desconfianza en seguros es la falta de información | F-486, F-586 |
 | Persuasión conversacional por IA | F-489, F-490 |
 | La persuasión de la IA se concentra en personas susceptibles | F-491, F-499 |
 | Descarga cognitiva | F-492, F-493 |
@@ -91,6 +108,20 @@
 | Marcos de evaluación de efectividad e implementación | F-53, F-54 |
 | Modelo de triage con IA y farmacias (Perú) | F-53, F-55 |
 | Diseño híbrido efectividad-implementación tipo 2 | F-54, F-55 |
+| Desarrollo cognitivo infantil | F-532, F-533 |
+| Brotes de enfermedades sensibles al clima (cólera, malaria, dengue, peste) | F-535, F-536 |
+| Pobreza del hogar | F-539, F-541 |
+| El Niño deprime el crecimiento económico por años | F-529, F-530 |
+| El Niño aumenta la probabilidad de conflicto civil | F-543, F-544 |
+| El daño lo determina la vulnerabilidad previa, no solo el clima ('no hay desastres naturales') | F-544, F-546 |
+| Producción agrícola del norte (mango, limón) | F-547, F-564 |
+| Pesca de anchoveta y harina de pescado | F-563, F-569 |
+| Percepción de abandono estatal (Reconstrucción, prevención no ejecutada) | F-556, F-557 |
+| Acciones de preparación del hogar ante El Niño | F-558, F-572 |
+| Pagos de seguros por el Niño Costero 2017 (US$428 M) | F-560, F-561 |
+| Brecha de protección ante El Niño en Perú (~7% del daño asegurado en 2017) | F-560, F-566 |
+| Plan de Prevención de Riesgos Naturales 2025-26 de Rímac (empresas) | F-561, F-571 |
+| Seguro de índice de pronóstico ENSO (Perú, 2010) | F-562, F-585 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -108,7 +139,7 @@
   - *Resolución (2026-10-02):* El moderador es el costo-beneficio de involucrarse (dificultad de la tarea). F-244: tareas de sentido común, sin ventaja de las explicaciones frente a mostrar la confianza. F-246: las explicaciones reducen la sobre-confianza solo en la tarea difícil de un laberinto. Resultados distintos (precisión de equipo vs. sobre-confianza) y tareas distintas, no una contradicción.
 - **La IA cobra un impuesto de margen a las herramientas de diseño (H32)** —contradice→ **El mercado descuenta disrupción de IA sobre la demanda (H13)** (F-470, teorica) · **estado: mecanismo_en_disputa**
   - Explicación alternativa del mecanismo (no del resultado): la caída se atribuye al costo de IA sobre el margen, no a una pérdida de demanda. La atribución es lectura de prensa.
-  - *Resolución (2026-10-02):* No contradice el resultado de H13 (se cumplió), sino su mecanismo: costo de IA sobre el margen vs. descuento por disrupción de la demanda. Se resuelve con el margen bruto del Q3 (nov-2026); hoy la atribución es lectura de prensa.
+  - *Resolución (2026-10-03):* No contradice el resultado de H13 (se cumplió), sino su mecanismo: costo de IA sobre el margen vs. descuento por disrupción de la demanda. Se resuelve con el margen bruto del Q3 (nov-2026); hoy la atribución es lectura de prensa. | 2026-10-03: la guía del Q3 apunta a margen bruto ~86% vs. 90% por costos de IA (F-526, guía no resultado). Declarado pendiente con fecha: se resuelve con el margen bruto reportado del Q3 (≈ nov-2026); no es resoluble leyendo más.
 - **La justificación de diseño generada no coincide con lo implementado** —contradice→ **Generative UI gana en usabilidad percibida** (F-475, teorica) · **estado: alcance_distinto**
   - Tensión de alcance, no de resultado: F-475 mide fidelidad de implementación; F-476 mide usabilidad percibida en una sesión.
   - *Resolución (2026-10-02):* Miden cosas distintas: fidelidad entre justificación e implementación (F-475, preprint) vs. usabilidad percibida en sesión única (F-476, emisor interesado). Ninguna prueba uso repetido; se mantiene H33 abierta.
@@ -138,31 +169,37 @@
   - *Resolución (2026-10-02):* El meta-análisis de 2026 (F-498) halla un efecto pequeño pero significativo de las explicaciones sobre la sola predicción, no limitado a tareas difíciles. RP1 se reformula: efecto pequeño y condicional, no nulo.
 - **Primas netas del sistema peruano en el 1S 2026 (+1,1%)** —contradice→ **El mercado peruano crece 8%-9% en 2026** (F-506, descriptiva) · **estado: sin_verificar**
   - Si se confirma, el +1,1% del 1S contradice la expectativa de +8%-9% de F-482/F-483; sin verificar con la SBS.
-  - *Resolución (2026-10-02):* Contradicción potencial de alto impacto (+1,1% vs. +8-9% esperado): la nota de prensa no tiene fecha confirmada y no se abrió la estadística de la SBS. Pendiente de verificación con la fuente oficial antes de modificar la tesis del mercado peruano.
+  - *Resolución (2026-10-03):* Verificación 2026-10-03: una segunda búsqueda independiente reproduce +1,1% (S/9.451 M), utilidad S/1.391 M (+7,5%), penetración 2,01% y densidad US$212, lo que apunta a que la cifra viene de un reporte con datos de la SBS; pero gestion.pe, sbs.gob.pe y PCR están bloqueados y la tabla oficial no se abrió. Sigue sin_verificar hasta contrastar con la SBS (el usuario puede aportar el PDF/boletín del 2T 2026). La tesis de mercado peruano ya lleva la reserva.
+- **El efecto macro de El Niño es heterogéneo: algunos países crecen** —contradice→ **El Niño deprime el crecimiento económico por años** (F-530, observacional) · **estado: abierta**
+  - Tensión parcial: el efecto macro es heterogéneo y en algunos países positivo, frente a la pérdida global persistente de F-529.
+- **El Niño aumenta la probabilidad de conflicto civil** —contradice→ **El daño lo determina la vulnerabilidad previa, no solo el clima ('no hay desastres naturales')** (F-544, observacional) · **estado: abierta**
+  - Buhaug: el vínculo clima-conflicto no es robusto; la política pesa más. Tensión con la lectura causal climática (en disputa).
 
 ## 5. Hubs (entidades más conectadas)
 
 | Entidad | Tipo | Grado | Fuentes |
 |---|---|---|---|
+| El Niño / ENSO (fase cálida) | concepto | 21 | 18 |
+| Niño Costero peruano (1997-98, 2017, 2023) | concepto | 15 | 13 |
 | Generative UI (interfaces generadas por LLM) | intervencion | 9 | 9 |
+| Seguro paramétrico / de índice | intervencion | 7 | 7 |
 | Adulación de la IA (sycophancy) | intervencion | 6 | 4 |
+| Daños humanos y económicos del Niño Costero 2017 | resultado | 6 | 6 |
 | Susceptibilidad a dark patterns | resultado | 5 | 2 |
 | Sobre-confianza en la IA | resultado | 5 | 4 |
 | Diseño efectivo → mejor desempeño de la firma | afirmacion | 4 | 2 |
 | Capacidad de diseño-ingeniería | constructo | 4 | 1 |
-| El efecto del design thinking está totalmente mediado por empoderamiento | afirmacion | 4 | 2 |
-| Explicabilidad de la IA (explicaciones) | intervencion | 4 | 3 |
-| Las explicaciones mejoran la decisión humano-IA | afirmacion | 4 | 2 |
-| Cognitive forcing functions (fricción deliberada) | intervencion | 4 | 2 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
 - ✅ **F-251** (2026-10-02, cerrada): Ficha dice 'Varios, 2021'. La fuente es Zac, Huang, von Moltke, Decker & Ezrachi, *Behavioural Public Policy*, publicada online 3-feb-2025 (SSRN 2023). Además la ficha dice que 'la educación sí modera en los patterns leves'; el abstract solo dice evidencia débil de que ingreso/educación/edad importen y posible mayor vulnerabilidad en mayores. Posible mezcla con F-241. Revisar autor, año y esa frase.
   - *Resolución:* Cerrada: autores y año corregidos en el ledger el 2026-10-02.
-- ⚠️ **F-241** (2026-10-02, abierta): Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo. Actualización 2026-10-02: la afirmación de que los menos educados fueron más susceptibles a patterns leves SÍ figura en el abstract; las cifras exactas siguen sin confirmarse. Reintento 2026-10-02: el texto completo (chicagounbound.uchicago.edu y content.naic.org) quedó bloqueado por la red; el abstract confirma 'más del doble' y 'casi cuatro veces' y que los menos educados fueron más susceptibles a los patterns leves; las cifras exactas siguen sin confirmar.
+- ✅ **F-241** (2026-10-02, cerrada): Las cifras 11,3% / 25,8% / 41,9% no aparecen en el abstract consultado; sí 'más del doble' y 'casi cuatro veces' (consistentes: 2,3x y 3,7x). Falta confirmar con el texto completo. Actualización 2026-10-02: la afirmación de que los menos educados fueron más susceptibles a patterns leves SÍ figura en el abstract; las cifras exactas siguen sin confirmarse. Reintento 2026-10-02: el texto completo (chicagounbound.uchicago.edu y content.naic.org) quedó bloqueado por la red; el abstract confirma 'más del doble' y 'casi cuatro veces' y que los menos educados fueron más susceptibles a los patterns leves; las cifras exactas siguen sin confirmar.
+  - *Resolución:* Declarada permanente (2026-10-03): tras 4 rutas (OUP, SSRN, oag.ca.gov, citizen.org) todas bloqueadas, las cifras exactas 11,3/25,8/41,9% no son verificables desde este entorno. Lo verificado (abstract): más del doble y casi cuatro veces; menos educados más susceptibles a los leves; los agresivos generan backlash. La ficha del ledger se reescribió con relativos y la reserva. Reabrir solo si el usuario aporta el PDF.
 - ✅ **F-262** (2026-10-02, cerrada): La ficha mezcla '~1/3 de los experimentos mejora la métrica' (Microsoft, verificado) con '85-90% de fracaso en Bing, Google Ads, Netflix y Airbnb' (no verificado hoy). Son bases distintas; no deberían leerse como una sola cifra.
   - *Resolución:* Cerrada con matiz: el 85-90% se confirma en resúmenes de materiales de Kohavi (Bing ~85%, Google Ads/Netflix ~90%, Airbnb ~92%; Microsoft ~66-70%). Son organizaciones distintas, no una cifra única. El texto de HBR sigue sin abrirse.
-- ⚠️ **F-238** (2026-10-02, abierta): La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados). Reintento 2026-10-02: Crossref bloqueado; la búsqueda confirma revista (*Innovation*), año 2025, 1.659 firmas y el diseño, pero no los nombres de los autores.
+- ✅ **F-238** (2026-10-02, cerrada): La autoría sigue sin verificarse tras buscar (revista, título y fecha de publicación online 19-ago-2025 confirmados). Reintento 2026-10-02: Crossref bloqueado; la búsqueda confirma revista (*Innovation*), año 2025, 1.659 firmas y el diseño, pero no los nombres de los autores.
+  - *Resolución:* Cerrada con reserva (2026-10-03): dos búsquedas independientes dan Hur, Kim, Hwang & Kim (Innovation, 19-ago-2025, DOI 10.1080/14479338.2025.2547575); la página de la revista sigue bloqueada. Ficha corregida.
 - ✅ **F-239** (2026-10-02, cerrada): La ficha dice 'Muestra estudiantil' y 'N=160 en 62 proyectos de innovación con empresas'; las dos descripciones conviven y conviene aclarar cuál es la muestra. No verificado.
   - *Resolución:* Cerrada: la muestra es de 160 estudiantes en 62 proyectos de innovación para empresas; las dos descripciones de la ficha eran compatibles.
 - ✅ **F-256** (2026-10-02, cerrada): F-256 y F-382 llevan el mismo título ('Looks Good, But Is It Usable? Evaluating Usability in AI-Generated…'): posible registro duplicado en el ledger. Revisar y, si lo es, consolidar (decisión de cronista).
@@ -173,6 +210,11 @@
   - *Resolución:* Duplicado consolidado por cronista el 2026-10-02: F-23 y F-442 son el mismo RCT de UBI simulado (Accident Analysis & Prevention). Canónica: F-442 (con preregistro NCT06101251, N=1.449). F-23 queda marcada como duplicado.
 - ✅ **F-483** (2026-10-02, cerrada): La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS.
   - *Resolución:* Reconciliada el 2026-10-02: la penetración de Perú oscila 2,0%-2,1% (SBS: 2,06% a setiembre de 2025, F-507); 2,01% (estimación al 2T 2026) y ~2,08% (node) son compatibles. La cifra de ~2,5% corresponde a otra medida o fuente no atribuida. Reserva: no se abrió el documento de la SBS.
+- ⚠️ **F-551** (2026-10-07, abierta): El costo de 1997-98 (US$3.500 M) se reporta como 4,5% del PBI (CAF) o 6,2% del PBI de 1998 según la fuente secundaria; no se abrió el documento primario de la CAF.
+- ⚠️ **F-569** (2026-10-07, abierta): El impacto del Niño en el PBI 2026 aparece como 0,7 pp (F-574, estimación previa) y 0,9 pp (F-569, Reporte de Inflación posterior): probablemente son vintages distintos del BCRP, sin verificar en el documento original.
+- ⚠️ **F-560** (2026-10-07, abierta): Base de daño del Niño Costero 2017 en conflicto: US$9.200 M (APESEG, F-560) frente a >US$3.000 M (~1,6% PBI, INDECI/OPS, F-550). Con la base menor, lo pagado+reservado sería ~35% y no 7%. La de APESEG probablemente incluye necesidades de reconstrucción.
+- ⚠️ **F-576** (2026-10-07, abierta): La nota presenta 'Café Seguro Perú' como el primer paramétrico del país, pero La Positiva ya lanzó un paramétrico ENSO en 2010 (F-562, F-585). Reclamo de marketing a revisar.
+- ⚠️ **F-584** (2026-10-07, abierta): La nota cita −16% en reaseguro cat en jul-2026, mientras un resultado de búsqueda paralelo atribuía a Gallagher Re alzas de 10-30% en LatAm en una renovación 1.7 (probablemente de otro año). Sin verificar.
 
 ## 7. Registro de barridos
 
@@ -187,6 +229,14 @@
 | 2026-10-02 | F-198, F-477, F-478, F-480, F-481, F-482, F-483, F-484, F-485, F-486, F-487, F-488, F-489, F-490, F-491, F-492, F-493, F-494, F-495, F-496, F-497, F-498, F-499, F-500, F-501, F-502, F-503 | 36 | – | Procesa las fuentes de la iteración de seguros y de conducta humano-IA (F-477 a F-503, más F-198 por su cifra nueva). Abstract en artículos académicos; ficha en prensa, empresas y blogs. |
 | 2026-10-02 | F-3, F-6, F-9, F-10, F-19, F-21, F-23, F-36, F-40, F-41, F-53, F-54, F-55, F-56 | 18 | – | Pase de amplitud a nivel ficha: 14 fuentes 🟢A citadas por los nodes de seguros y salud (sesgos, divulgación, nudges, telemedicina Perú, marcos de implementación). |
 | 2026-10-02 | F-504, F-505, F-506, F-507, F-508 | 6 | – | Seguros Perú: resultados 2T, sistema 1S 2026, penetración reconciliada y PL 08488. |
+| 2026-10-07 | F-531, F-532, F-533, F-534, F-537, F-535, F-536 | 12 | – | El Niño · Niñez: cicatriz de los 1.000 días y salud infantil (El Niño) |
+| 2026-10-07 | F-538, F-539, F-540, F-541, F-542, F-548, F-553 | 13 | – | El Niño · Salud en el Perú, salud mental y hogares (El Niño) |
+| 2026-10-07 | F-529, F-530, F-543, F-544, F-545, F-546, F-547, F-549 | 12 | – | El Niño · Macro, conflicto, violencia, alimentos y teoría (El Niño) |
+| 2026-10-07 | F-550, F-551, F-552, F-559, F-567, F-568, F-569, F-570 | 9 | – | El Niño · Datos oficiales y coyuntura 2026-27 (El Niño, Perú) |
+| 2026-10-07 | F-554, F-555, F-556, F-557, F-558, F-560, F-561 | 9 | – | El Niño · Pista social y negocio histórico (El Niño, Perú) |
+| 2026-10-07 | F-562, F-563, F-564, F-565, F-571, F-572, F-573, F-574 | 8 | – | El Niño · Negocio y oportunidades para RIMAC: paramétricos, sectores y competencia |
+| 2026-10-07 | F-578, F-579, F-580, F-581, F-585, F-586, F-587 | 9 | – | El Niño · Evidencia de demanda y diseño de protección (seguro índice, acción anticipatoria) |
+| 2026-10-07 | F-566, F-575, F-576, F-577, F-582, F-583, F-584, F-588 | 9 | – | El Niño · Benchmarks, competencia, reaseguro y salud estacional |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

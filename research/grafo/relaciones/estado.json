@@ -172,6 +172,130 @@
    "triples": 6,
    "sin_aporte": [],
    "notas": "Seguros Perú: resultados 2T, sistema 1S 2026, penetración reconciliada y PL 08488."
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-531",
+    "F-532",
+    "F-533",
+    "F-534",
+    "F-537",
+    "F-535",
+    "F-536"
+   ],
+   "triples": 12,
+   "sin_aporte": [],
+   "notas": "El Niño · Niñez: cicatriz de los 1.000 días y salud infantil (El Niño)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-538",
+    "F-539",
+    "F-540",
+    "F-541",
+    "F-542",
+    "F-548",
+    "F-553"
+   ],
+   "triples": 13,
+   "sin_aporte": [],
+   "notas": "El Niño · Salud en el Perú, salud mental y hogares (El Niño)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-529",
+    "F-530",
+    "F-543",
+    "F-544",
+    "F-545",
+    "F-546",
+    "F-547",
+    "F-549"
+   ],
+   "triples": 12,
+   "sin_aporte": [],
+   "notas": "El Niño · Macro, conflicto, violencia, alimentos y teoría (El Niño)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-550",
+    "F-551",
+    "F-552",
+    "F-559",
+    "F-567",
+    "F-568",
+    "F-569",
+    "F-570"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "El Niño · Datos oficiales y coyuntura 2026-27 (El Niño, Perú)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-554",
+    "F-555",
+    "F-556",
+    "F-557",
+    "F-558",
+    "F-560",
+    "F-561"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "El Niño · Pista social y negocio histórico (El Niño, Perú)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-562",
+    "F-563",
+    "F-564",
+    "F-565",
+    "F-571",
+    "F-572",
+    "F-573",
+    "F-574"
+   ],
+   "triples": 8,
+   "sin_aporte": [],
+   "notas": "El Niño · Negocio y oportunidades para RIMAC: paramétricos, sectores y competencia"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-578",
+    "F-579",
+    "F-580",
+    "F-581",
+    "F-585",
+    "F-586",
+    "F-587"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "El Niño · Evidencia de demanda y diseño de protección (seguro índice, acción anticipatoria)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-566",
+    "F-575",
+    "F-576",
+    "F-577",
+    "F-582",
+    "F-583",
+    "F-584",
+    "F-588"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "El Niño · Benchmarks, competencia, reaseguro y salud estacional"
   }
  ],
  "discrepancias": [
@@ -237,6 +361,31 @@
    "estado": "cerrada",
    "detalle": "La penetración de seguros en Perú aparece como ~2,08% en el node y como 2,01% (estimación al 2T 2026) en F-483: probable diferencia de fecha/metodología; no verificado con SBS. 2026-10-02: una búsqueda añade una tercera cifra (índice de primas ~2,5% del PBI en 2025, región 3,0%; fuente no identificada). Conviven 2,01% (est. 2T 2026), ~2,08% (node) y ~2,5%: probablemente distinta definición/fecha; no se pudo abrir la estadística de la SBS.",
    "resolucion": "Reconciliada el 2026-10-02: la penetración de Perú oscila 2,0%-2,1% (SBS: 2,06% a setiembre de 2025, F-507); 2,01% (estimación al 2T 2026) y ~2,08% (node) son compatibles. La cifra de ~2,5% corresponde a otra medida o fuente no atribuida. Reserva: no se abrió el documento de la SBS."
+  },
+  {
+   "fecha": "2026-10-07",
+   "f": "F-551",
+   "detalle": "El costo de 1997-98 (US$3.500 M) se reporta como 4,5% del PBI (CAF) o 6,2% del PBI de 1998 según la fuente secundaria; no se abrió el documento primario de la CAF."
+  },
+  {
+   "fecha": "2026-10-07",
+   "f": "F-569",
+   "detalle": "El impacto del Niño en el PBI 2026 aparece como 0,7 pp (F-574, estimación previa) y 0,9 pp (F-569, Reporte de Inflación posterior): probablemente son vintages distintos del BCRP, sin verificar en el documento original."
+  },
+  {
+   "fecha": "2026-10-07",
+   "f": "F-560",
+   "detalle": "Base de daño del Niño Costero 2017 en conflicto: US$9.200 M (APESEG, F-560) frente a >US$3.000 M (~1,6% PBI, INDECI/OPS, F-550). Con la base menor, lo pagado+reservado sería ~35% y no 7%. La de APESEG probablemente incluye necesidades de reconstrucción."
+  },
+  {
+   "fecha": "2026-10-07",
+   "f": "F-576",
+   "detalle": "La nota presenta 'Café Seguro Perú' como el primer paramétrico del país, pero La Positiva ya lanzó un paramétrico ENSO en 2010 (F-562, F-585). Reclamo de marketing a revisar."
+  },
+  {
+   "fecha": "2026-10-07",
+   "f": "F-584",
+   "detalle": "La nota cita −16% en reaseguro cat en jul-2026, mientras un resultado de búsqueda paralelo atribuía a Gallagher Re alzas de 10-30% en LatAm en una renovación 1.7 (probablemente de otro año). Sin verificar."
   }
  ],
  "resoluciones": [

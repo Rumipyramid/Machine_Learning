@@ -1,0 +1,115 @@
+{
+ "fecha": "2026-10-07",
+ "f_ids": [
+  "F-562",
+  "F-563",
+  "F-564",
+  "F-565",
+  "F-571",
+  "F-572",
+  "F-573",
+  "F-574"
+ ],
+ "entidades": [
+  {
+   "id": "seguro_indice_pronostico",
+   "nombre": "Seguro de índice de pronóstico ENSO (Perú, 2010)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "seguro_parametrico",
+   "nombre": "Seguro paramétrico / de índice",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "microfinanzas_norte",
+   "nombre": "Cajas municipales y microfinancieras del norte",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "oferta_competidores_nino",
+   "nombre": "Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reglamento_parametricos_sbs",
+   "nombre": "Reglamento de Seguros Paramétricos (Res. SBS 02260-2026)",
+   "tipo": "intervencion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "seguro_indice_pronostico",
+   "p": "es_tipo_de",
+   "o": "seguro_parametrico",
+   "f": "F-562",
+   "apoyo": "La Positiva (2010): paga si la TSM en Niño 1+2 supera 24,5 °C (índice NOAA); dirigido a agroexportadores y financieras del norte.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "pesca_anchoveta",
+   "f": "F-563",
+   "apoyo": "2023: primera temporada cancelada; >US$1.000 M de pérdida; harina −22% a octubre; Austevoll con pérdida en 2T.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "agro_norte",
+   "f": "F-564",
+   "apoyo": "2023: 90% de floración de mango y limón perdida en Piura; 2017: S/10.000 M, la mitad de la producción anual.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "microfinanzas_norte",
+   "p": "reduce",
+   "o": "ingreso_consumo_hogar",
+   "f": "F-565",
+   "apoyo": "Tras 2017 las cajas prestaron >S/1.000 M a mypes y postergaron S/600 M: amortiguan el golpe vía crédito (el efecto es reducir la caída).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "plan_prevencion_rimac",
+   "p": "aplica_a",
+   "o": "danos_nino_2017",
+   "f": "F-571",
+   "apoyo": "Plan 2025-26: 4 pilares y Centro de Monitoreo para empresas aseguradas expuestas a lluvias, huaicos e inundaciones; no cubre hogares.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "oferta_competidores_nino",
+   "p": "aplica_a",
+   "o": "conducta_preparacion_hogar",
+   "f": "F-572",
+   "apoyo": "Pacífico + RPP: campaña 'Fenómeno El Niño: más informados, más seguros' ocupa la conversación sobre preparación.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reglamento_parametricos_sbs",
+   "p": "aplica_a",
+   "o": "seguro_parametrico",
+   "f": "F-573",
+   "apoyo": "Res. SBS 02260-2026 (12-set-2026): umbral de parámetro objetivo; contratan personas jurídicas o entidades públicas para sí o en beneficio de una colectividad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "microfinanzas_norte",
+   "p": "asocia_con",
+   "o": "seguro_parametrico",
+   "f": "F-574",
+   "apoyo": "Cajas y cooperativas del norte buscan paramétricos que inyecten liquidez si la morosidad sube por lluvias.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "El Niño · Negocio y oportunidades para RIMAC: paramétricos, sectores y competencia"
+}

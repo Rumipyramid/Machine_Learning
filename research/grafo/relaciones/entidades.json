@@ -9,6 +9,11 @@
   "nombre": "Accesibilidad como obligación con sanción",
   "tipo": "resultado"
  },
+ "accion_anticipatoria": {
+  "id": "accion_anticipatoria",
+  "nombre": "Acción anticipatoria / financiamiento basado en pronósticos",
+  "tipo": "concepto"
+ },
  "aceptacion_plan_dudoso": {
   "id": "aceptacion_plan_dudoso",
   "nombre": "Permanencia/aceptación de un plan dudoso",
@@ -33,6 +38,11 @@
   "id": "adultos_eeuu",
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
+ },
+ "agro_norte": {
+  "id": "agro_norte",
+  "nombre": "Producción agrícola del norte (mango, limón)",
+  "tipo": "resultado"
  },
  "alfabetizacion_ia": {
   "id": "alfabetizacion_ia",
@@ -79,6 +89,11 @@
   "nombre": "Backlash del consumidor",
   "tipo": "resultado"
  },
+ "bajo_peso_nacer": {
+  "id": "bajo_peso_nacer",
+  "nombre": "Bajo peso al nacer",
+  "tipo": "resultado"
+ },
  "barreras_telemedicina_peru": {
   "id": "barreras_telemedicina_peru",
   "nombre": "Barreras a la telemedicina en Perú",
@@ -93,6 +108,16 @@
   "id": "brecha_percepcion_realidad",
   "nombre": "Brecha percepción–realidad (autoestimación vs. desempeño)",
   "tipo": "concepto"
+ },
+ "brecha_proteccion_nino_peru": {
+  "id": "brecha_proteccion_nino_peru",
+  "nombre": "Brecha de protección ante El Niño en Perú (~7% del daño asegurado en 2017)",
+  "tipo": "resultado"
+ },
+ "brotes_enfermedades_clima": {
+  "id": "brotes_enfermedades_clima",
+  "nombre": "Brotes de enfermedades sensibles al clima (cólera, malaria, dengue, peste)",
+  "tipo": "resultado"
  },
  "c_ambidestreza_mejora_desempeno": {
   "id": "c_ambidestreza_mejora_desempeno",
@@ -134,6 +159,11 @@
   "nombre": "Crisis estructural del modelo de consultora de diseño",
   "tipo": "afirmacion"
  },
+ "c_demanda_post_evento": {
+  "id": "c_demanda_post_evento",
+  "nombre": "La demanda de seguro sube tras el desastre y se diluye con el tiempo",
+  "tipo": "afirmacion"
+ },
  "c_desconfianza_falta_info": {
   "id": "c_desconfianza_falta_info",
   "nombre": "La causa #1 de desconfianza en seguros es la falta de información",
@@ -167,6 +197,16 @@
  "c_efecto_ia_productividad_incierto": {
   "id": "c_efecto_ia_productividad_incierto",
   "nombre": "El efecto de la IA sobre la productividad no es estimable con el diseño actual",
+  "tipo": "afirmacion"
+ },
+ "c_efecto_macro_heterogeneo": {
+  "id": "c_efecto_macro_heterogeneo",
+  "nombre": "El efecto macro de El Niño es heterogéneo: algunos países crecen",
+  "tipo": "afirmacion"
+ },
+ "c_enso_conflicto": {
+  "id": "c_enso_conflicto",
+  "nombre": "El Niño aumenta la probabilidad de conflicto civil",
   "tipo": "afirmacion"
  },
  "c_estandar_reporting_se_degrada": {
@@ -264,6 +304,21 @@
   "nombre": "El diseño devuelve multiplicadores de retorno (p. ej. 100:1)",
   "tipo": "afirmacion"
  },
+ "c_nino_2026_extraordinario": {
+  "id": "c_nino_2026_extraordinario",
+  "nombre": "El Niño 2026-27 alcanza magnitud extraordinaria/histórica",
+  "tipo": "afirmacion"
+ },
+ "c_nino_frena_crecimiento": {
+  "id": "c_nino_frena_crecimiento",
+  "nombre": "El Niño deprime el crecimiento económico por años",
+  "tipo": "afirmacion"
+ },
+ "c_noaa_evento_historico": {
+  "id": "c_noaa_evento_historico",
+  "nombre": "NOAA: >90% de un Niño muy fuerte y ~75% de uno histórico en 2026-27",
+  "tipo": "afirmacion"
+ },
  "c_pen_2_01": {
   "id": "c_pen_2_01",
   "nombre": "Penetración ~2,01% (estimación al 2T 2026)",
@@ -319,6 +374,11 @@
   "nombre": "El ARR de vibe coding no retiene (H14)",
   "tipo": "afirmacion"
  },
+ "c_vulnerabilidad_decide": {
+  "id": "c_vulnerabilidad_decide",
+  "nombre": "El daño lo determina la vulnerabilidad previa, no solo el clima ('no hay desastres naturales')",
+  "tipo": "afirmacion"
+ },
  "c_vulnerabilidad_transversal": {
   "id": "c_vulnerabilidad_transversal",
   "nombre": "Todos los grupos de consumidores son susceptibles",
@@ -349,6 +409,11 @@
   "nombre": "Capacidad de diseño-ingeniería",
   "tipo": "constructo"
  },
+ "capital_social": {
+  "id": "capital_social",
+  "nombre": "Capital social y redes",
+  "tipo": "constructo"
+ },
  "carga_prueba_aseguradora": {
   "id": "carga_prueba_aseguradora",
   "nombre": "La aseguradora debe acreditar que explicó la exclusión",
@@ -363,6 +428,11 @@
   "id": "coaseguro",
   "nombre": "Coaseguro y tarifas variables",
   "tipo": "concepto"
+ },
+ "cognicion_infantil": {
+  "id": "cognicion_infantil",
+  "nombre": "Desarrollo cognitivo infantil",
+  "tipo": "resultado"
  },
  "cognitive_forcing_functions": {
   "id": "cognitive_forcing_functions",
@@ -384,6 +454,11 @@
   "nombre": "Comprensión del plan de salud",
   "tipo": "resultado"
  },
+ "conducta_preparacion_hogar": {
+  "id": "conducta_preparacion_hogar",
+  "nombre": "Acciones de preparación del hogar ante El Niño",
+  "tipo": "resultado"
+ },
  "conductas_riesgo_manejo": {
   "id": "conductas_riesgo_manejo",
   "nombre": "Conductas de riesgo al manejar (velocidad, frenado, aceleración)",
@@ -392,6 +467,11 @@
  "confianza_en_ia": {
   "id": "confianza_en_ia",
   "nombre": "Confianza en la IA",
+  "tipo": "resultado"
+ },
+ "conflicto_civil": {
+  "id": "conflicto_civil",
+  "nombre": "Conflicto civil",
   "tipo": "resultado"
  },
  "consejo_ia_personalizado": {
@@ -419,10 +499,20 @@
   "nombre": "Costos y beneficios de involucrarse con la explicación",
   "tipo": "constructo"
  },
+ "costo_bolsillo_dengue": {
+  "id": "costo_bolsillo_dengue",
+  "nombre": "Gasto de bolsillo por dengue fuera del SIS",
+  "tipo": "resultado"
+ },
  "costo_ia_inferencia": {
   "id": "costo_ia_inferencia",
   "nombre": "Costo de IA / inferencia",
   "tipo": "concepto"
+ },
+ "crecimiento_pbi": {
+  "id": "crecimiento_pbi",
+  "nombre": "Crecimiento económico (PBI)",
+  "tipo": "resultado"
  },
  "crecimiento_prima_root": {
   "id": "crecimiento_prima_root",
@@ -438,6 +528,16 @@
   "id": "creditos_ia_figma",
   "nombre": "Monetización de créditos de IA de Figma",
   "tipo": "intervencion"
+ },
+ "danos_nino_1998": {
+  "id": "danos_nino_1998",
+  "nombre": "Daños humanos y económicos del Niño 1997-98 (Perú)",
+  "tipo": "resultado"
+ },
+ "danos_nino_2017": {
+  "id": "danos_nino_2017",
+  "nombre": "Daños humanos y económicos del Niño Costero 2017",
+  "tipo": "resultado"
  },
  "dark_patterns": {
   "id": "dark_patterns",
@@ -457,6 +557,11 @@
  "demanda_seguros": {
   "id": "demanda_seguros",
   "nombre": "Demanda de seguros",
+  "tipo": "resultado"
+ },
+ "dengue_peru": {
+  "id": "dengue_peru",
+  "nombre": "Casos y muertes por dengue (Perú)",
   "tipo": "resultado"
  },
  "descarga_cognitiva": {
@@ -494,10 +599,25 @@
   "nombre": "Design thinking",
   "tipo": "intervencion"
  },
+ "desinformacion_clima": {
+  "id": "desinformacion_clima",
+  "nombre": "Desinformación y pánico en redes ante lluvias",
+  "tipo": "concepto"
+ },
+ "desnutricion_cronica": {
+  "id": "desnutricion_cronica",
+  "nombre": "Desnutrición crónica infantil",
+  "tipo": "resultado"
+ },
  "determinantes_automedicacion": {
   "id": "determinantes_automedicacion",
   "nombre": "Determinantes de la automedicación",
   "tipo": "constructo"
+ },
+ "diarrea_infantil": {
+  "id": "diarrea_infantil",
+  "nombre": "Hospitalizaciones infantiles por diarrea",
+  "tipo": "resultado"
  },
  "disciplina_precios_salud": {
   "id": "disciplina_precios_salud",
@@ -519,6 +639,11 @@
   "nombre": "Divulgación clara y saliente de un producto financiero",
   "tipo": "intervencion"
  },
+ "donaciones_informales": {
+  "id": "donaciones_informales",
+  "nombre": "Donaciones y ayuda informal (comida, ropa)",
+  "tipo": "intervencion"
+ },
  "edad_avanzada": {
   "id": "edad_avanzada",
   "nombre": "Usuarios mayores",
@@ -533,6 +658,11 @@
   "id": "efecto_nudge_escala",
   "nombre": "Efecto de nudges a escala (~1,4 pp)",
   "tipo": "resultado"
+ },
+ "el_nino_enso": {
+  "id": "el_nino_enso",
+  "nombre": "El Niño / ENSO (fase cálida)",
+  "tipo": "concepto"
  },
  "empleo_disenadores_graficos": {
   "id": "empleo_disenadores_graficos",
@@ -574,6 +704,11 @@
   "nombre": "Explicabilidad de la IA (explicaciones)",
   "tipo": "intervencion"
  },
+ "exposicion_1000_dias": {
+  "id": "exposicion_1000_dias",
+  "nombre": "Niños expuestos en gestación y primeros 2 años",
+  "tipo": "poblacion"
+ },
  "factores_exito_producto_nuevo": {
   "id": "factores_exito_producto_nuevo",
   "nombre": "Predictores del éxito de un producto nuevo (ventaja, mercado, ajuste, predesarrollo, recursos)",
@@ -609,6 +744,11 @@
   "nombre": "Los usuarios no gustan de la fricción cognitiva",
   "tipo": "limitacion"
  },
+ "friccion_no_precio": {
+  "id": "friccion_no_precio",
+  "nombre": "Fricciones no-precio: desconfianza, falta de liquidez, baja saliencia",
+  "tipo": "constructo"
+ },
  "friccion_pago_posterior": {
   "id": "friccion_pago_posterior",
   "nombre": "Fricción: acción de pago requerida tras el dark pattern",
@@ -618,6 +758,11 @@
   "id": "fuente_unica_microsoft",
   "nombre": "Dato esencialmente de una sola organización",
   "tipo": "limitacion"
+ },
+ "gasto_salud_educacion": {
+  "id": "gasto_salud_educacion",
+  "nombre": "Gasto del hogar en salud y educación",
+  "tipo": "resultado"
  },
  "generative_ui": {
   "id": "generative_ui",
@@ -633,6 +778,11 @@
   "id": "herramientas_ia_generativas",
   "nombre": "Herramientas de IA generativa",
   "tipo": "intervencion"
+ },
+ "hogares_pobres": {
+  "id": "hogares_pobres",
+  "nombre": "Hogares pobres / de menores ingresos",
+  "tipo": "poblacion"
  },
  "i_frame": {
   "id": "i_frame",
@@ -659,6 +809,11 @@
   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
   "tipo": "intervencion"
  },
+ "ingreso_consumo_hogar": {
+  "id": "ingreso_consumo_hogar",
+  "nombre": "Ingreso y consumo del hogar",
+  "tipo": "resultado"
+ },
  "ingresos_bing": {
   "id": "ingresos_bing",
   "nombre": "Ingresos de Bing",
@@ -667,6 +822,16 @@
  "ingresos_figma_q2": {
   "id": "ingresos_figma_q2",
   "nombre": "Ingresos de Figma Q2 2026 (+48%)",
+  "tipo": "resultado"
+ },
+ "inseguridad_alimentaria": {
+  "id": "inseguridad_alimentaria",
+  "nombre": "Inseguridad alimentaria del hogar",
+  "tipo": "resultado"
+ },
+ "inseguridad_alimentaria_global": {
+  "id": "inseguridad_alimentaria_global",
+  "nombre": "Inseguridad alimentaria global por El Niño 2015-16",
   "tipo": "resultado"
  },
  "interfaces_adaptativas": {
@@ -688,6 +853,16 @@
   "id": "ipg_venta_rga",
   "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
   "tipo": "concepto"
+ },
+ "lim_sequia_no_enso": {
+  "id": "lim_sequia_no_enso",
+  "nombre": "Mide sequía, no ENSO directamente",
+  "tipo": "limitacion"
+ },
+ "lim_sin_grupo_control": {
+  "id": "lim_sin_grupo_control",
+  "nombre": "Cohorte pequeña sin grupo control",
+  "tipo": "limitacion"
  },
  "litigios_adulacion": {
   "id": "litigios_adulacion",
@@ -712,6 +887,11 @@
  "lovable_valoracion": {
   "id": "lovable_valoracion",
   "nombre": "Valoración de Lovable (US$13,3B)",
+  "tipo": "resultado"
+ },
+ "malaria_peru": {
+  "id": "malaria_peru",
+  "nombre": "Malaria en el norte del Perú",
   "tipo": "resultado"
  },
  "marco_implementacion": {
@@ -754,6 +934,16 @@
   "nombre": "Menús adaptativos (control del sistema)",
   "tipo": "intervencion"
  },
+ "micro_parametrico_microfinanzas": {
+  "id": "micro_parametrico_microfinanzas",
+  "nombre": "Microseguro paramétrico vía microfinancieras (MiCRO)",
+  "tipo": "intervencion"
+ },
+ "microfinanzas_norte": {
+  "id": "microfinanzas_norte",
+  "nombre": "Cajas municipales y microfinancieras del norte",
+  "tipo": "organizacion"
+ },
  "microsoft_exp": {
   "id": "microsoft_exp",
   "nombre": "Plataforma de experimentación de Microsoft (ExP)",
@@ -768,6 +958,11 @@
   "id": "modelo_farmacias_triage",
   "nombre": "Modelo de triage con IA y farmacias (Perú)",
   "tipo": "intervencion"
+ },
+ "mortalidad_temprana": {
+  "id": "mortalidad_temprana",
+  "nombre": "Mortalidad fetal, infantil y de la niñez",
+  "tipo": "resultado"
  },
  "muestra_estudiantil_percibida": {
   "id": "muestra_estudiantil_percibida",
@@ -784,6 +979,11 @@
   "nombre": "NDR de Figma",
   "tipo": "metrica"
  },
+ "nino_costero_peru": {
+  "id": "nino_costero_peru",
+  "nombre": "Niño Costero peruano (1997-98, 2017, 2023)",
+  "tipo": "concepto"
+ },
  "no_asignacion_aleatoria": {
   "id": "no_asignacion_aleatoria",
   "nombre": "Capacidad de diseño no asignada al azar (observacional)",
@@ -794,10 +994,25 @@
   "nombre": "Cifra vista en resúmenes secundarios; texto de HBR no abierto",
   "tipo": "limitacion"
  },
+ "norte_costero_peru": {
+  "id": "norte_costero_peru",
+  "nombre": "Hogares del norte costero (Tumbes, Piura, Lambayeque)",
+  "tipo": "poblacion"
+ },
  "nudges_a_escala": {
   "id": "nudges_a_escala",
   "nombre": "Nudges a escala (nudge units)",
   "tipo": "intervencion"
+ },
+ "oferta_competidores_nino": {
+  "id": "oferta_competidores_nino",
+  "nombre": "Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre)",
+  "tipo": "intervencion"
+ },
+ "pagos_seguros_2017": {
+  "id": "pagos_seguros_2017",
+  "nombre": "Pagos de seguros por el Niño Costero 2017 (US$428 M)",
+  "tipo": "resultado"
  },
  "pandemia_2020": {
   "id": "pandemia_2020",
@@ -819,6 +1034,11 @@
   "nombre": "Pensamiento crítico",
   "tipo": "resultado"
  },
+ "percepcion_abandono_estatal": {
+  "id": "percepcion_abandono_estatal",
+  "nombre": "Percepción de abandono estatal (Reconstrucción, prevención no ejecutada)",
+  "tipo": "constructo"
+ },
  "perdida_neta_figma_fy25": {
   "id": "perdida_neta_figma_fy25",
   "nombre": "Pérdida neta GAAP de Figma FY2025 (−US$1,25B)",
@@ -834,20 +1054,50 @@
   "nombre": "Persuasión conversacional por IA",
   "tipo": "intervencion"
  },
+ "pesca_anchoveta": {
+  "id": "pesca_anchoveta",
+  "nombre": "Pesca de anchoveta y harina de pescado",
+  "tipo": "resultado"
+ },
  "pl_08488": {
   "id": "pl_08488",
   "nombre": "Proyecto de Ley 08488/2024-CR (farmacias en el sistema nacional de salud)",
   "tipo": "intervencion"
+ },
+ "plan_prevencion_rimac": {
+  "id": "plan_prevencion_rimac",
+  "nombre": "Plan de Prevención de Riesgos Naturales 2025-26 de Rímac (empresas)",
+  "tipo": "intervencion"
+ },
+ "poblacion_expuesta_inundacion": {
+  "id": "poblacion_expuesta_inundacion",
+  "nombre": "Población en riesgo alto de inundación (57,5%, jun-2026)",
+  "tipo": "resultado"
+ },
+ "pobreza_hogar": {
+  "id": "pobreza_hogar",
+  "nombre": "Pobreza del hogar",
+  "tipo": "resultado"
  },
  "precio_accion_figma": {
   "id": "precio_accion_figma",
   "nombre": "Precio de la acción de Figma (FIG)",
   "tipo": "resultado"
  },
+ "precio_alimentos": {
+  "id": "precio_alimentos",
+  "nombre": "Precio de los alimentos (limón 2023)",
+  "tipo": "resultado"
+ },
  "precio_ipo_figma": {
   "id": "precio_ipo_figma",
   "nombre": "Precio de IPO de Figma (US$33)",
   "tipo": "concepto"
+ },
+ "precio_reaseguro_cat": {
+  "id": "precio_reaseguro_cat",
+  "nombre": "Precio del reaseguro catastrófico (−16% en jul-2026)",
+  "tipo": "resultado"
  },
  "precision_adaptacion_alta": {
   "id": "precision_adaptacion_alta",
@@ -899,6 +1149,16 @@
   "nombre": "Marco RE-AIM",
   "tipo": "concepto"
  },
+ "reaseguro_internacional": {
+  "id": "reaseguro_internacional",
+  "nombre": "Reaseguro internacional",
+  "tipo": "concepto"
+ },
+ "recesion_2023_peru": {
+  "id": "recesion_2023_peru",
+  "nombre": "Recesión y alza de pobreza en Perú 2023",
+  "tipo": "resultado"
+ },
  "rechazo_cobertura_sin_fundamento": {
   "id": "rechazo_cobertura_sin_fundamento",
   "nombre": "Rechazo de cobertura sin fundamento o fuera de plazo",
@@ -907,6 +1167,11 @@
  "rediseno_expresivo": {
   "id": "rediseno_expresivo",
   "nombre": "Rediseño expresivo (fluidez y estética a la vez)",
+  "tipo": "intervencion"
+ },
+ "reglamento_parametricos_sbs": {
+  "id": "reglamento_parametricos_sbs",
+  "nombre": "Reglamento de Seguros Paramétricos (Res. SBS 02260-2026)",
   "tipo": "intervencion"
  },
  "relacion_innovacion_desempeno": {
@@ -923,6 +1188,11 @@
   "id": "revenue_figma_q1",
   "nombre": "Ingresos de Figma Q1 2026 (+46%)",
   "tipo": "resultado"
+ },
+ "riesgo_base": {
+  "id": "riesgo_base",
+  "nombre": "Riesgo de base (el índice no refleja la pérdida real)",
+  "tipo": "limitacion"
  },
  "rollback_gpt4o": {
   "id": "rollback_gpt4o",
@@ -958,6 +1228,26 @@
   "id": "sbs_ris_2026",
   "nombre": "Res. SBS 01923-2026 (infracciones y sanciones)",
   "tipo": "intervencion"
+ },
+ "seguro_enf_tropicales": {
+  "id": "seguro_enf_tropicales",
+  "nombre": "Seguro de enfermedades tropicales (dengue, zika, chikungunya)",
+  "tipo": "intervencion"
+ },
+ "seguro_indice_pronostico": {
+  "id": "seguro_indice_pronostico",
+  "nombre": "Seguro de índice de pronóstico ENSO (Perú, 2010)",
+  "tipo": "intervencion"
+ },
+ "seguro_parametrico": {
+  "id": "seguro_parametrico",
+  "nombre": "Seguro paramétrico / de índice",
+  "tipo": "intervencion"
+ },
+ "sequia": {
+  "id": "sequia",
+  "nombre": "Sequía severa",
+  "tipo": "concepto"
  },
  "sesgo_halo": {
   "id": "sesgo_halo",
@@ -999,6 +1289,11 @@
   "nombre": "Susceptibilidad a dark patterns",
   "tipo": "resultado"
  },
+ "talla_infantil": {
+  "id": "talla_infantil",
+  "nombre": "Talla y masa magra infantil",
+  "tipo": "resultado"
+ },
  "tarea_dificil": {
   "id": "tarea_dificil",
   "nombre": "Tareas de decisión difíciles",
@@ -1014,10 +1309,20 @@
   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
   "tipo": "concepto"
  },
+ "tept": {
+  "id": "tept",
+  "nombre": "Estrés postraumático (TEPT)",
+  "tipo": "resultado"
+ },
  "tiempo_entrega": {
   "id": "tiempo_entrega",
   "nombre": "Time-to-delivery",
   "tipo": "resultado"
+ },
+ "transferencia_anticipada": {
+  "id": "transferencia_anticipada",
+  "nombre": "Transferencia de efectivo anticipada (antes del pico del desastre)",
+  "tipo": "intervencion"
  },
  "ubi_telematica": {
   "id": "ubi_telematica",
@@ -1058,6 +1363,11 @@
   "id": "verificabilidad",
   "nombre": "Verificabilidad de la predicción",
   "tipo": "constructo"
+ },
+ "violencia_pareja": {
+  "id": "violencia_pareja",
+  "nombre": "Violencia de pareja contra mujeres",
+  "tipo": "resultado"
  },
  "xai_vs_solo_ia": {
   "id": "xai_vs_solo_ia",
