@@ -7,7 +7,7 @@
 > `matriz_usuarios_sinteticos.md`. El código, el esquema y los datos **no se mueven** de
 > `research/personas/` — decenas de referencias por ruta fija (skills, GitHub Action, scripts)
 > dependen de que sigan ahí. Este node cuenta la historia y cita dónde vive cada pieza activa.
-> Última actualización: 2026-07-20.
+> Última actualización: 2026-10-07.
 
 ## Qué es
 

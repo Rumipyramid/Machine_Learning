@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-10-02 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-10-07 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
