@@ -24,8 +24,8 @@
   {
    "id": "fenomeno-el-nino-impacto-personas",
    "type": "node",
-   "lines": 348,
-   "cites": 42,
+   "lines": 404,
+   "cites": 58,
    "design": false
   },
   {
@@ -139,6 +139,12 @@
   },
   {
    "id": "guia-triaje-resultados-2026-08-05.md",
+   "type": "output",
+   "lines": 0,
+   "cites": 0
+  },
+  {
+   "id": "informe-el-nino-oportunidades-rimac-2026-10-07.md",
    "type": "output",
    "lines": 0,
    "cites": 0
@@ -5272,6 +5278,168 @@
    "autor": "Andina, Bloomberg Línea, Última Hora (EFE), El Peruano (sobre SENAMHI)",
    "anio": "2026",
    "huerfana": false
+  },
+  {
+   "id": "F-571",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Natural Risk Prevention Plan 2025-2026",
+   "autor": "Rímac Seguros y Reaseguros",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-572",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Grupo RPP y Pacífico lanzan la campaña \"Fenómeno El Niño: más informados, más seguros\" / Preparados estamos más seguros: las iniciativas de ",
+   "autor": "RPP / Gestión (publirreportaje sobre Pacífico Seguros)",
+   "anio": "2023-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-573",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Reglamento de Seguros Paramétricos",
+   "autor": "SBS — Resolución SBS N.° 02260-2026 (vía El Peruano, LP Derecho, Infomercado)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-574",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Fenómeno El Niño: personas podrán protegerse de terremotos y lluvias con seguros más fáciles. ¿Cómo funcionan?",
+   "autor": "Gestión",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-575",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "MAPFRE launches new microinsurance line for small entrepreneurs in Latin America (Perú en 2026)",
+   "autor": "Coverager; MAPFRE (comunicación corporativa)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-576",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "La Positiva lanza \"Café Seguro Perú\"",
+   "autor": "Gestión (sobre La Positiva Seguros)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-577",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "MiCRO: bringing insurance solutions to Central America's vulnerable populations / parametric microinsurance",
+   "autor": "MiCRO (Microinsurance Catastrophe Risk Organisation) vía Howden, Insurance Insider y Actuaries Digital",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-578",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Learning about an Infrequent Event: Evidence from Flood Insurance Take-Up in the United States (American Economic Journal: Applied Economics",
+   "autor": "Gallagher, J.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-579",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "After the Drought: The Impact of Microinsurance on Consumption Smoothing and Asset Protection (American Journal of Agricultural Economics, 1",
+   "autor": "Janzen, S. A. & Carter, M. R.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-580",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Anticipatory Cash Transfers in Climate Disaster Response",
+   "autor": "Pople, A.; Hill, R.; Dercon, S.; Brunckhorst, B. (CSAE, Oxford; evaluación del PMA)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-581",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "\"El Niño\" 2026: ¿cómo nos preparamos para sus efectos en América Latina y el Caribe? / Naciones Unidas refuerza su apoyo a la preparación de",
+   "autor": "IFRC (Federación Internacional de la Cruz Roja) / ONU Perú vía El Peruano",
+   "anio": "2026",
+   "huerfana": true
+  },
+  {
+   "id": "F-582",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Prudential do Brasil lança produto exclusivo para doenças tropicais / Seguros Unimed registra aumento de 163% de autorizações relacionadas à",
+   "autor": "Revista Apólice (Brasil); Medicina S/A",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-583",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "¿Cuánto cuesta la atención y el tratamiento por dengue en una clínica privada sin seguro? / Dengue: SIS garantiza protección financiera",
+   "autor": "Infomercado; Andina (sobre el SIS)",
+   "anio": "2023",
+   "huerfana": true
+  },
+  {
+   "id": "F-584",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Record El Niño arrives as reinsurance pricing hits cycle lows",
+   "autor": "Insurance Business Magazine (con declaraciones del UK Met Office)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-585",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "New approaches for index insurance: ENSO insurance in Peru / ENSO-based index insurance for floods: statistical risk analyses and applicatio",
+   "autor": "Skees, J. R. & Collier, B. (GlobalAgRisk; IFPRI 2020 Vision Focus 18) · Khalil, A. F. et al.",
+   "anio": "2009-2010 (y 2007)",
+   "huerfana": false
+  },
+  {
+   "id": "F-586",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Barriers to Household Risk Management: Evidence from India (American Economic Journal: Applied Economics, 5(1):104-135)",
+   "autor": "Cole, S.; Giné, X.; Tobacman, J.; Topalova, P.; Townsend, R.; Vickery, J.",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-587",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Index Insurance for Developing Country Agriculture: A Reassessment (Annual Review of Resource Economics, 9:421-438)",
+   "autor": "Carter, M.; de Janvry, A.; Sadoulet, E.; Sarris, A.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-588",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Cláusula adicional de terremoto, temblor y riesgos de la naturaleza — Seguro Hogar Flex Digital",
+   "autor": "Pacífico Seguros",
+   "anio": "s.f. (vigente 2026)",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -5868,6 +6036,11 @@
   {
    "s": "guia-triaje-resultados-2026-08-05.md",
    "t": "modelo-salud-ia-farmacias-peru",
+   "k": "deriva"
+  },
+  {
+   "s": "informe-el-nino-oportunidades-rimac-2026-10-07.md",
+   "t": "fenomeno-el-nino-impacto-personas",
    "k": "deriva"
   },
   {
@@ -8669,6 +8842,86 @@
    "s": "fenomeno-el-nino-impacto-personas",
    "t": "F-570",
    "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-571",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-572",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-573",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-574",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-575",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-576",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-577",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-578",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-579",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-580",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-582",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-584",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-585",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-586",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-587",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-588",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -8912,15 +9165,15 @@
    },
    {
     "fecha": "2026-10-07",
-    "nuevas": 42,
-    "acumuladas": 570,
-    "AB": 23,
+    "nuevas": 60,
+    "acumuladas": 588,
+    "AB": 33,
     "rigor": {
-     "A": 15,
-     "B": 8,
+     "A": 19,
+     "B": 14,
      "?": 1,
-     "C": 2,
-     "D": 16
+     "C": 3,
+     "D": 23
     }
    }
   ],
@@ -10798,20 +11051,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 528,
+    "fuentes": 570,
     "rigor": {
-     "B": 96,
-     "A": 144,
-     "C": 123,
-     "D": 122,
-     "?": 14,
+     "B": 104,
+     "A": 159,
+     "C": 125,
+     "D": 138,
+     "?": 15,
      "E": 29
     },
-    "nodes": 16,
+    "nodes": 17,
     "outputs": 4,
-    "wikilinks": 84,
+    "wikilinks": 90,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 423,
+    "fuentes_citadas_en_nodes": 465,
     "diseno": {
      "hyp": {
       "abierta": 17,
@@ -10833,7 +11086,7 @@
      "cites": 259
     },
     "fecha": "2026-10-07",
-    "commit": "fa903e3",
+    "commit": "eedd7d0",
     "fuente": "git"
    }
   ],

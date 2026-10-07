@@ -1,12 +1,14 @@
 # Fenómeno El Niño: qué le hace a la vida de las personas (evidencia cuanti y cualitativa)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-10-07 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-10-07 · Versión: **v1.1** (iter. 2: el alcance
+> se amplía a la aplicación de negocio para RIMAC, §8)
 > Origen: `/trinidad` (pista empírica/teórica + social/mediática + negocio), a pedido del usuario:
 > *"la documentación y evidencia más sólida, cuanti y cualitativa, que retrate el impacto del fenómeno
 > del Niño en la vida de las personas"*.
-> Fuentes en `research/fuentes/codice.md`: **F-529 a F-570** (todas nuevas; el ledger no tenía nada
-> sobre ENSO antes de esta investigación).
+> Fuentes en `research/fuentes/codice.md`: **F-529 a F-570** (iter. 1; todas nuevas, el ledger no tenía
+> nada sobre ENSO) · **F-571 a F-588** (iter. 2, foco de negocio y oportunidades para RIMAC).
+> Output derivado: `research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`.
 > Pregunta permanente: **¿qué le pasa concretamente a una persona (su cuerpo, su casa, su ingreso,
 > sus hijos, su ánimo) cuando llega un Niño fuerte, cuánto dura, y a quién le pega más?**
 
@@ -332,6 +334,60 @@ que sale de la pobreza más tarde o no sale.
   de 2017.
 - **No se encontró réplica independiente de F-529** (las pérdidas macro de largo plazo) ni un estudio
   peruano propio sobre violencia doméstica e inundaciones del Niño.
+
+
+## 8. 💼 Iteración 2 (2026-10-07): oportunidades para RIMAC
+
+> Segunda corrida de `/trinidad` con lente de diseño y transformación de negocio. El informe completo
+> (portafolio O1-O9, priorización, hoja de ruta de 90 días, riesgos) vive en el output
+> `_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`. Aquí queda solo lo que cambia el
+> conocimiento del node.
+
+### 8.1 Hallazgos nuevos por pista
+
+- 🔬 **Empírica (demanda y diseño de protección):**
+  - La demanda de seguro de inundación **sube ~10% el año siguiente** al evento y se diluye en ~15 años
+    (F-578).
+  - El seguro índice vendido al hogar no se masifica por **desconfianza, falta de liquidez y baja
+    saliencia**, ni siquiera con buen precio (F-586); la contratación mejora con un diseño combinado con
+    crédito y con apoyo de política (F-587).
+  - El seguro índice ayuda a proteger consumo y activos tras el shock (F-579).
+  - Una **transferencia 5 días antes** del pico de una inundación redujo 36% los días sin comer y la deuda
+    cara (F-580).
+- 💼 **Negocio y regulación:**
+  - **SBS, Res. 02260-2026 (12-set-2026): primer Reglamento de Seguros Paramétricos.** Contratan personas
+    jurídicas o entidades públicas para sí o **en beneficio de una colectividad**; con beneficiarios
+    personas naturales aplica la conducta de mercado en pleno (F-573).
+  - Las cajas del norte buscan paramétricos contra la morosidad (F-574).
+  - El reaseguro catastrófico está en mínimos de ciclo (−16% en jul-2026) justo cuando llega un Niño
+    récord (F-584).
+  - Perú creó en 2010 el primer seguro de índice de pronóstico regulado del mundo (F-585).
+  - Benchmarks: MiCRO (171 mil pólizas paramétricas vía microfinancieras, US$26 M pagados, F-577) y
+    Prudential Brasil (seguro de enfermedades tropicales, F-582).
+- 💼 **Diagnóstico de RIMAC:**
+  - El Plan de Prevención de Riesgos Naturales 2025-26 y el Centro de Monitoreo apuntan a **empresas
+    aseguradas** (F-571).
+  - En 2017, RIMAC pagó ~34% de lo indemnizado por el mercado (F-561/F-560).
+  - Competencia: Pacífico ocupa el espacio mediático con RPP y cubre huaicos en su hogar digital
+    (F-572, F-588); La Positiva tiene el paramétrico de café (F-576); Mapfre entra a microseguros en
+    Perú (F-575).
+- 📱 **Social:** no se encontró conversación específica sobre RIMAC frente a El Niño ni datos de
+  reclamos por siniestros de 2017. **La pista sigue débil.**
+
+### 8.2 Tesis de negocio (derivada, no evidencia)
+
+El hueco no está en los activos corporativos (ya asegurados y reasegurados), sino en la **liquidez del
+hogar** en las semanas del golpe. Ese es el canal por el que El Niño termina en hambre y en niños más
+bajos (§3.4-3.5). La regulación de setiembre de 2026 permite cubrirlo por la vía **B2B2C** (cajas,
+empleadores, municipios), que además es la única que la evidencia de demanda respalda (F-586, F-587).
+**Apuestas recomendadas:**
+
+- **A.** Protección de cartera para microfinancieras.
+- **B.** Paramétrico colectivo de liquidez para hogares, por los mismos socios.
+- **C.** Garantía de experiencia para los clientes actuales.
+
+Además, "Primeros 1.000 días" como alianza de marca. **Riesgos clave:** riesgo de base, antiselección
+por pronóstico público y endurecimiento del reaseguro en 2027.
 
 ---
 
