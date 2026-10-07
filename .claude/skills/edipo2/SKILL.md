@@ -106,6 +106,38 @@ fusionan y que hay que entregar por separado:
   esenciales, aspectos entre significadores, **perfección o no perfección** del asunto,
   hexagrama de llegada y carta en la posición de orientación. Criterio de verdad:
   correspondencia — dice algo sobre el mundo y puede errar.
+
+#### Pasión y sexualidad: usar el vocabulario que los marcos sí tienen
+
+Error detectado en uso (2026-10-06, a pedido del usuario): traducir sistemáticamente material
+del registro erótico a registros más cómodos — leer *sensualidad* como "cuidado", una cuadratura
+Venus-Marte como "fricción", el hexagrama del cortejo como una lección social. **Eso no era rigor
+metodológico, era evasión.** Los tres sistemas tienen léxico sexual explícito y se usa:
+
+- **Horaria.** **Venus y Marte son los significadores sexuales**: sus aspectos dicen si hay sexo,
+  de qué calidad y si llega a perfeccionar. La **casa 5 es el placer y el sexo**, no solo "juego";
+  la **casa 8 son los cuerpos compartidos** y es la casa que se lee para la intimidad sexual entre
+  significadores. La **Luna es el cuerpo**. Y las dignidades se leen eróticamente: Venus en
+  detrimento no es solo "mal puesta" — es apetito que no aterriza, placer que sale caro.
+- **Tarot.** El mazo tiene cartas sexuales y se nombran por lo que son: **Los Enamorados**
+  (elección y unión), **El Diablo** (compulsión, atadura, lo que se repite contra el propio juicio),
+  **La Emperatriz** (*sensualidad*, fertilidad, abundancia del cuerpo), **2 de Copas** (atracción
+  mutua), **Caballero de Bastos** (el que se lanza, el impulso), **4 de Copas** y **10 de Copas**
+  (consumación y asentamiento). No se neutralizan las listas de claves: si la carta dice
+  *sensualidad*, se dice sensualidad.
+- **I Ching.** **31 咸** es el hexagrama del cortejo y de la atracción de los cuerpos —
+  *lo firme se pone debajo de lo suave* es una imagen sexual, no una metáfora de humildad.
+  **44 姤** es el encuentro con el elemento seductor. **54 归妹** es la doncella que se casa.
+- **Capa hermética.** Ficino sobre el vínculo erótico, el *agōgē* de los papiros (magia sexual
+  explícita) y el *amor hereos* de Avicena como desorden del apetito. Ya está en el repo.
+
+**Los dos límites, que no son pudor:**
+1. **No se afirma el deseo sexual de una persona real como hecho.** Se lee su significador y se
+   dice en llano, con la etiqueta de lectura simbólica una vez, al final. Es la misma regla de
+   terceros de siempre.
+2. **No se inventa contenido erótico donde la carta no lo puso.** Si el 9 de Copas invertido dice
+   *desear lo que no se necesita*, eso no es una frase sobre sexo y volverla sexual es fabricar.
+
 - **Registro junguiano (proyectivo).** La misma tirada describe al *consultante*: proyección,
   sombra, función inferior, arquetipo activo, momento de individuación. Criterio de verdad:
   que el símbolo movilice material real en quien pregunta.
