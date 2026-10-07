@@ -43,3 +43,12 @@ Escalera de 7 niveles (`niveles.json`): MEMORIA → ORDEN → RELACIÓN → CRIT
 - **Umbrales:** propuestos por el autor (juicio, no norma); se editan en `niveles.json` y el panel los lee.
 - **Qué significa:** madurez estructural y metodológica del repositorio (íntegro, conectado, con criterio, autocorregido, leído a fondo). **No** mide verdad del contenido ni capacidad cognitiva.
 - **N7 (IMPACTO)** exige medir uso/decisiones de personas; hoy no hay instrumento, así que no es alcanzable.
+
+## Temas (panel `/mu`, sección 06)
+
+Para cada node: **F-n** = fuentes que cita el node o un output derivado de él (`derive` en el grafo); **con relaciones** =
+cuántas de esas ya pasaron por el barrido semántico (`relaciones/estado.json`); **relaciones/entidades** = el subgrafo
+de `triples.jsonl` cuyas fuentes están en ese conjunto; **convergencias** = entidades del subgrafo sostenidas por ≥2
+fuentes; **tensiones** = relaciones `contradice`/`refuta` del subgrafo. El mapa (solo nodes con ≥10 relaciones) dibuja las
+13 entidades de mayor grado: el centro es la más conectada, el tamaño es el n.º de fuentes y la línea naranja punteada
+es una tensión. Es un conteo, no un juicio de verdad: una relación es lo que una fuente dice.

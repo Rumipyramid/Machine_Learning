@@ -244,6 +244,96 @@ node_rows = "".join(
     f'<td><svg viewBox="0 0 100 10"><rect width="{min(100, 100*len(M["cites"][n] & set(ledger))/max(1,len(M["cites"][top[0]] & set(ledger))))}" height="10" class="fg"/></svg></td></tr>'
     for n in top)
 
+# ---------- 06 temas: qué sabe cada node (subgrafo semántico) ----------
+import math
+ENT_N = lambda e: ent.get(e, {}).get("nombre", e)
+
+
+def node_fs(n):  # F-n citadas por el node + por los outputs que derivan de él
+    fs = {f"F-{i}" for i in M["cites"][n] & set(ledger)}
+    for o, src in M["derive"]:
+        if src == n and isinstance(outs.get(o), str):
+            fs |= set(re.findall(r"F-\d+", outs[o]))
+    return fs
+
+
+def mapa(ts, w=900, h=420, k=13):
+    """Mapa radial sin JS: centro = entidad de mayor grado; aristas entre las k entidades más conectadas."""
+    deg = Counter()
+    for t in ts:
+        deg[t["s"]] += 1; deg[t["o"]] += 1
+    top = [e for e, _ in deg.most_common(k)]
+    if len(top) < 3:
+        return "<p class='n'>Subgrafo demasiado pequeño para dibujar.</p>"
+    cx, cy = w / 2, h / 2
+    rx, ry = w / 2 - 225, h / 2 - 40  # deja ~210 px por lado para las etiquetas
+    pos = {top[0]: (cx, cy)}
+    for i, e in enumerate(top[1:]):
+        a = 2 * math.pi * i / (len(top) - 1) - math.pi / 2
+        pos[e] = (cx + rx * math.cos(a), cy + ry * math.sin(a))
+    srcs = defaultdict(set)
+    for t in ts:
+        srcs[t["s"]].add(t["f"]); srcs[t["o"]].add(t["f"])
+    pairs = defaultdict(lambda: [0, False])
+    for t in ts:
+        if t["s"] in pos and t["o"] in pos and t["s"] != t["o"]:
+            p = pairs[tuple(sorted((t["s"], t["o"])))]
+            p[0] += 1; p[1] = p[1] or t["p"] in ("contradice", "refuta")
+    o = [f'<svg viewBox="0 0 {w} {h}" role="img" aria-label="mapa del subgrafo">']
+    for (a, b), (n, tension) in pairs.items():
+        (x1, y1), (x2, y2) = pos[a], pos[b]
+        dash = ";stroke-dasharray:6 4" if tension else ""
+        col = "--acc" if tension else "--fg"
+        o.append(f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" '
+                 f'style="stroke:var({col});stroke-width:{min(5, 1 + n)}{dash}"/>')
+    for e, (x, y) in pos.items():
+        rad = 5 + 2.2 * min(8, len(srcs[e]))
+        o.append(f'<rect x="{x-rad:.0f}" y="{y-rad:.0f}" width="{2*rad:.0f}" height="{2*rad:.0f}" class="{"acc" if e == top[0] else "fg"}"/>')
+        anchor = "middle" if abs(x - cx) < 20 else ("start" if x > cx else "end")
+        dx = 0 if anchor == "middle" else (rad + 4 if anchor == "start" else -rad - 4)
+        dy = rad + 12 if anchor == "middle" and y >= cy else (-rad - 4 if anchor == "middle" else 4)
+        lab = ENT_N(e)
+        lab = lab if len(lab) <= 30 else lab[:29] + "…"
+        o.append(f'<text x="{x+dx:.0f}" y="{y+dy:.0f}" text-anchor="{anchor}" class="t{" b" if e == top[0] else ""}">{E(lab)}</text>')
+    o.append("</svg>")
+    return "".join(o)
+
+
+tema_rows, tema_cards = "", ""
+_last = max((d for d, _ in alma.values() if d), default="")
+recent = {n for n, (d, _) in alma.items() if d and d == _last}
+temas = []
+for n in nodes:
+    fs = node_fs(n)
+    ts = [t for t in tri if t["f"] in fs]
+    es = {x for t in ts for x in (t["s"], t["o"])}
+    sb = defaultdict(set)
+    for t in ts:
+        sb[t["s"]].add(t["f"]); sb[t["o"]].add(t["f"])
+    temas.append((n, fs, ts, es, sb))
+temas.sort(key=lambda x: (x[0] not in recent, -len(x[2])))
+for n, fs, ts, es, sb in temas:
+    cov = len(fs & sem_f)
+    tn = [t for t in ts if t["p"] in ("contradice", "refuta")]
+    tema_rows += (f'<tr><td>{"● " if n in recent else ""}{E(n)}</td><td class="r">{len(fs)}</td><td class="r">{cov} ({pct(cov, len(fs))}%)</td>'
+                  f'<td class="r">{len(ts)}</td><td class="r">{len(es)}</td><td class="r">{sum(1 for s in sb.values() if len(s) >= 2)}</td>'
+                  f'<td class="r">{len(tn)}</td><td><svg viewBox="0 0 100 10"><rect width="{pct(cov, len(fs))}" height="10" class="fg"/></svg></td></tr>')
+    if len(ts) >= 10:
+        convs = sorted(((e, s) for e, s in sb.items() if len(s) >= 2), key=lambda x: -len(x[1]))[:6]
+        conv_html = "".join(f"<li><b>{len(s)}</b> {E(ENT_N(e))} <span class='sub'>({E(', '.join(sorted(s, key=lambda f: int(f[2:]))[:6]))}{'…' if len(s) > 6 else ''})</span></li>" for e, s in convs) or "<li>—</li>"
+        tens_html = "".join(f"<li class='ko'>{E(ENT_N(t['s']))} ⟷ {E(ENT_N(t['o']))} <span class='sub'>({t['f']})</span></li>" for t in tn[:4]) or "<li class='ok'>sin tensiones declaradas</li>"
+        lec_n = Counter(t["lectura"] for t in ts)
+        tema_cards += (f'<div class="tema"><h3>{"● ÚLTIMO INGRESO · " if n in recent else ""}{E(n)} — {len(ts)} relaciones · {len(es)} entidades · '
+                       f'lectura: {lec_n["ficha"]} ficha / {lec_n["abstract"] + lec_n["completa"]} abstract+</h3>{mapa(ts)}'
+                       f'<div class="body" style="padding:0"><div><h3>CONVERGENCIAS (≥2 FUENTES)</h3><ul>{conv_html}</ul></div>'
+                       f'<div><h3>TENSIONES</h3><ul>{tens_html}</ul></div></div></div>')
+temas_html = (f'<div class="body" style="grid-template-columns:1fr"><table><tr><th>node (● = última actualización en alma.md)</th><th>F-n</th><th>con relaciones</th>'
+              f'<th>relaciones</th><th>entidades</th><th>converg.</th><th>tensiones</th><th></th></tr>{tema_rows}</table>'
+              f'<p class="n">Subgrafo de un node = relaciones del grafo semántico cuya fuente cita el node o un output derivado de él. '
+              f'Mapa: centro naranja = entidad más conectada; tamaño = n.º de fuentes; línea gruesa = varias relaciones; naranja punteada = tensión. '
+              f'Se dibujan solo nodes con ≥10 relaciones. Una relación es lo que una fuente dice, no un hecho.</p></div>'
+              f'<div class="body" style="grid-template-columns:1fr">{tema_cards}</div>')
+
 # pendientes (accionables, derivados de lo medido)
 todo = []
 for a, b in M["nonrecip"][:6]:
@@ -288,6 +378,7 @@ tr.ko td{background:transparent}tr.ko td:nth-child(5){color:var(--acc);font-weig
 .lab2{font:900 26px Impact,'Arial Black',sans-serif;letter-spacing:.04em;background:var(--acc);color:#000;display:inline-block;padding:0 8px;margin-top:6px}
 .hero{grid-template-columns:300px minmax(0,1fr)!important;align-items:start}@media(max-width:720px){.hero{grid-template-columns:minmax(0,1fr)!important}.big2{font-size:84px}}
 code{background:var(--g3);padding:0 3px}
+.tema{border:4px solid var(--fg);margin:8px 0;padding:0 10px 10px}.tema svg{max-width:900px;margin:0 auto}
 """
 HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MU — panel del segundo cerebro</title><style>{CSS}</style></head><body>
@@ -298,6 +389,7 @@ HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name
 <section><h2>03 RIQUEZA — ¿cuánto hay?</h2><div class="g">{''.join(ri)}</div><div class="body"><div>{rig_chart}</div><div>{rel_chart}</div></div></section>
 <section><h2>04 EVOLUCIÓN — ¿cómo creció?</h2><div class="body" style="grid-template-columns:1fr">{ev_ledger}{bar_sem}{notes}</div></section>
 <section><h2>05 NODES — ¿dónde está el peso?</h2><div class="body" style="grid-template-columns:1fr"><table><tr><th>node</th><th>líneas</th><th>F-n</th><th>A/B</th><th>ent/sal</th><th></th></tr>{node_rows}</table></div></section>
+<section><h2>06 TEMAS — ¿qué sabe de cada tema?</h2>{temas_html}</section>
 <footer>Todo número sale de contar archivos (METRICAS.md). Citar ≠ validar. Impacto externo (uso por personas): NO medido. Regenerar: python research/grafo/mu.py</footer>
 </body></html>"""
 (H / "mu.html").write_text(HTML)
