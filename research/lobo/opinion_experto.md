@@ -5618,6 +5618,36 @@ diseño *industrial/de producto*, no diseño de experiencia. Para el CoE: medir 
 - **Leído a fondo:** 2026-10-06 (`WebSearch`; paper no abierto)
 - **Conexión razonada, no forzada:** tesis 21 (ROI de diseño por mecanismo); refuerza sin cambiar confianza.
 
+### 181. Un meta-análisis de XAI dice "explicar ayuda poco sobre la sola predicción"; lo que sube el efecto es el sesgo del estudio, no la explicación
+F-498 (Haag, *Journal of Decision Systems*, 2026; meta-análisis, 4.589 participantes XAI vs. sin apoyo y 7.706 XAI vs. solo IA). El apoyo
+con IA explicable mejora el desempeño frente a no tener apoyo, pero la ganancia **adicional de la explicación** sobre la predicción sola es
+pequeña; el tipo de explicación no modera de forma significativa, y los estudios con mayor riesgo de sesgo reportan efectos mayores.
+**Heurística:** al evaluar "añadir explicaciones" a un asesor de IA, separar dos contrastes (vs. nada, vs. IA sola) y desconfiar del efecto
+grande reportado por estudios débiles; el gasto en explicabilidad se justifica por confianza/regulación, no por desempeño de decisión.
+- **Fuente:** F-498 (🟢A; meta-análisis arbitrado, leído por resumen)
+- **Leído a fondo:** 2026-10-07 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** entrada 174 (humano+IA en decisión); no cambia confianza de ninguna tesis.
+
+### 182. Una revisión sistemática de design thinking que entrega un "marco" describe el proceso; no prueba que el proceso cause resultados
+F-524 (Rösch, Tiberius & Kraus, *European Journal of Innovation Management* 26(7), 2023; 164 artículos). Corrige el ledger, que dice "autoría no
+capturada": son esos tres autores. La revisión organiza factores de contexto individuales y organizacionales, etapas y resultados del design
+thinking; su aporte es de mapa, no de efecto. **Heurística:** una revisión que ordena la literatura mide cuánto se ha escrito y cómo se
+define el método, no cuánto rinde; si la base de 164 artículos es mayormente casos y conceptual, el marco hereda esa debilidad. Para el CoE:
+usarlo como lista de factores a medir en un piloto propio, no como argumento de ROI.
+- **Fuente:** F-524 (🟢A según ledger; revisión sistemática, leída por resumen; autoría a corregir en `cronista`)
+- **Leído a fondo:** 2026-10-07 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 21 (ROI de diseño por mecanismo); refuerza sin cambiar confianza.
+
+### 183. "Innovar rinde" es cierto en promedio y depende de la apropiación y de la escala: integrar producto+proceso y ser grande cambia el resultado
+F-525 (Rousseau, Mathias, Madden & Crook, *International Journal of Innovation Management* 20(3), 2016; meta-análisis de 62 estudios, 20 años;
+corrige "autoría no capturada" del ledger). Vínculo fuerte innovación→desempeño, con contingencias: la inconsistencia entre indicadores de
+desempeño se explica en parte por **quién se apropia** del valor, integrar innovación de producto y de proceso rinde más que producto solo, y
+las firmas grandes capturan más. **Heurística:** antes de aceptar "la innovación paga", preguntar quién captura el retorno y si la empresa
+tiene el tamaño y los procesos para internalizarlo; el promedio meta-analítico no se transfiere a un caso chico sin esa verificación.
+- **Fuente:** F-525 (🟢A; meta-análisis arbitrado, leído por resumen)
+- **Leído a fondo:** 2026-10-07 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tensión de magnitud con F-430 ya anotada en el ledger; no cambia confianza de tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5785,50 +5815,7 @@ diseño *industrial/de producto*, no diseño de experiencia. Para el CoE: medir 
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
-  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-06** — corrida de intuición, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-06).
-- **2026-09-07** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, working tree limpio, sin fast-forward pendiente — HEAD en 0cc2b76) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 7 corridas, **cero fuentes nuevas** registradas
-  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoquinto día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
-  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
-  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
-  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva veintiséis días sin correr). Sí
-  corrió la rutina diaria de intuición (trigesimosegunda desde el 2026-08-06): recalculé por script
-  el universo de fuentes 🟢A del ledger (134 filas cuyo marcador de rigurosidad empieza en 🟢, cifra
-  ya corregida ayer) contra `fuentes_leidas_lobo.md` (93 ya leídas) — 41 pendientes — y elegí 3 al
-  azar sin reemplazo (Python `random.sample`, sin semilla fija): F-331 (TRIAGE trial neerlandés, ya
-  citado en el ledger solo por su cifra agregada de desvío seguro), F-23 (RCT nacional de UBI
-  simulado, registro primario del mismo NCT06101251 que F-442 ya sostiene a fondo en tesis 7) y
-  F-229 (Piercy, Campbell & Heinrich 2011, ya sostiene tesis 19 solo por su hallazgo agregado de que
-  la demografía predice poco en servicios financieros). Las tres bloqueadas por el proxy en su URL
-  directa (ncbi.nlm.nih.gov, sciencedirect.com, link.springer.com); reconstruidas vía búsqueda
-  dirigida (PubMed/PMC para F-331, incluido su análisis post hoc en base al mismo dataset,
-  PMC9252194; PubMed/TRID/Penn Medicine para F-23; ResearchGate/The Financial Brand para F-229) que
-  confirman detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya citado. Sumé
-  las entradas 94, 95 y 96 de Intuición acumulada: (94) el propio diseño de cuatro brazos del RCT de
-  UBI muestra que un feedback que cubre varias conductas de riesgo a la vez mejora tanto como uno
-  enfocado en una sola conducta asignada — la personalización de una sola métrica importa para
-  sostener el efecto después del incentivo (ya cubierto por la intuición 84), no para lograrlo la
-  primera vez, precisión nueva sobre tesis 7 sin cambiar su confianza; (95) que la demografía rinda
-  poco en servicios financieros no es un hallazgo fijo — el propio paper de Piercy et al. lo atribuye
-  a la modernización del consumidor (más educado, más letrado en medios) frente a los años 60-70,
-  lo que implica que la motivación como variable de segmentación de `lapuerta` también tiene fecha de
-  vencimiento y necesita revalidación periódica, no solo haber ganado la comparación una vez — matiza
-  tesis 19 sin cambiar su confianza; (96) el análisis post hoc del TRIAGE trial (mismo dataset,
-  mismas enfermeras) encontró que la asignación real a atención primaria (13.3%, consecuencia real)
-  fue *menor* que la asignación en el fin de semana de control sin consecuencia (24.7%) — la
-  disposición simulada a desviar/cambiar/adoptar sobreestima sistemáticamente la disposición real
-  cuando la decisión sí importa, advertencia de método con aplicación directa a cualquier estimación
-  de conducta que `lapuerta` derive de un escenario simulado con una persona sintética. Ninguna tesis
-  de negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición,
-  no una revisión de evidencia sobre las tesis existentes, aunque la entrada 96 es la de aplicación
-  metodológica más directa al propio generador del proyecto hasta la fecha. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
-  historial (2026-08-09 a hoy) — cumple la ventana de ~30 días; consolidé las dos corridas del
-  2026-08-08 y 2026-08-09 en un solo bloque resumido para mantener el archivo legible, y dejo el
-  detalle completo desde 2026-08-10 en adelante.
+  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-06** — corrida de intuición, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-06). **2026-09-07** — corrida diaria de refinamiento, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-07).
 - **2026-09-08** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward e0a7da3→6c7c30a que trajo consigo el propio commit del 2026-09-07 de esta
   opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
@@ -6802,3 +6789,12 @@ diseño *industrial/de producto*, no diseño de experiencia. Para el CoE: medir 
   mecanismo vía ventas). Además F-519 figura como *Journal of Advertising/T&F* y es *Journal of Advertising Research*; F-514
   no nombra autores (Han, Tang & Li). Correcciones pendientes para `cronista`, no tocadas aquí. Poda: 09-06 fusionado al
   resumen; Bitácora cubre 2026-09-07 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-07** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger
+  vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** (último cambio del ledger: 2026-10-03). Sin cambios en tesis ni
+  confianzas. **Intuición (nivel 🟢A, quedaban 3 reales → 0 pendientes tras hoy; nueve candidatos en la comparación bruta eran falsos
+  positivos por emoji en el texto de otras filas — F-149, F-249, F-262, F-265, F-436, F-457 no son 🟢A):** F-498, F-524 y F-525, leídas vía
+  `WebSearch`. Entradas 181 (XAI: la explicación aporta poco sobre la IA sola), 182 (revisión de design thinking = mapa, no efecto; autoría
+  de F-524: Rösch, Tiberius & Kraus) y 183 (innovación→desempeño depende de apropiación y escala; autoría de F-525: Rousseau et al.).
+  Correcciones de autoría pendientes para `cronista`, no tocadas aquí. Con el nivel 🟢A agotado, desde mañana sigue 🔵B. Poda: 09-07
+  fusionado al resumen; Bitácora cubre 2026-09-08 a hoy. `fuentes_leidas_lobo.md` actualizado.

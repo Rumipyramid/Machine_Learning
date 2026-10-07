@@ -198,3 +198,6 @@
 | F-519 | 🟢 A | 2026-10-06 | Intuición 178 — personalización: efecto modesto, mediado por relevancia percibida, no por intrusividad; pagar datos solo si el mensaje se percibirá relevante |
 | F-490 | 🟢 A | 2026-10-06 | Intuición 179 — autoría cruzada en el ledger (Bai et al., no Hackenburg); verificar atribución; el LLM persuade por aparentar hechos y lógica |
 | F-514 | 🟢 A | 2026-10-06 | Intuición 180 — diseño→ROA observacional (8.671 firma-año): valor en el mecanismo de ventas, no en el coeficiente |
+| F-498 | 🟢 A | 2026-10-07 | Intuición 181 — XAI: la explicación aporta poco sobre la IA sola; el efecto grande viene de estudios con más sesgo |
+| F-524 | 🟢 A | 2026-10-07 | Intuición 182 — revisión sistemática de design thinking = mapa de factores, no prueba de efecto (autoría: Rösch, Tiberius & Kraus) |
+| F-525 | 🟢 A | 2026-10-07 | Intuición 183 — innovación→desempeño depende de apropiación y escala (autoría: Rousseau et al.) |
