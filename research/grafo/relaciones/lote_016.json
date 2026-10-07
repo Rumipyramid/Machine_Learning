@@ -1,123 +1,146 @@
 {
- "fecha": "2026-10-07",
+ "fecha": "2026-10-03",
  "f_ids": [
-  "F-578",
-  "F-579",
-  "F-580",
-  "F-581",
-  "F-585",
-  "F-586",
-  "F-587"
+  "F-122",
+  "F-123",
+  "F-141",
+  "F-142",
+  "F-143"
  ],
  "entidades": [
   {
-   "id": "c_demanda_post_evento",
-   "nombre": "La demanda de seguro sube tras el desastre y se diluye con el tiempo",
-   "tipo": "afirmacion"
-  },
-  {
-   "id": "transferencia_anticipada",
-   "nombre": "Transferencia de efectivo anticipada (antes del pico del desastre)",
+   "id": "ayudas_decision",
+   "nombre": "Ayudas de decisión para pacientes (material estructurado de opciones y riesgos)",
    "tipo": "intervencion"
   },
   {
-   "id": "accion_anticipatoria",
-   "nombre": "Acción anticipatoria / financiamiento basado en pronósticos",
-   "tipo": "concepto"
+   "id": "conocimiento_decision",
+   "nombre": "Conocimiento sobre la decisión",
+   "tipo": "resultado"
   },
   {
-   "id": "friccion_no_precio",
-   "nombre": "Fricciones no-precio: desconfianza, falta de liquidez, baja saliencia",
-   "tipo": "constructo"
+   "id": "conflicto_decisional",
+   "nombre": "Conflicto decisional (sentirse desinformado o indeciso sobre los propios valores)",
+   "tipo": "resultado"
   },
   {
-   "id": "riesgo_base",
-   "nombre": "Riesgo de base (el índice no refleja la pérdida real)",
-   "tipo": "limitacion"
+   "id": "percepcion_riesgo_precisa",
+   "nombre": "Percepción precisa del riesgo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "pictogramas_riesgo",
+   "nombre": "Pictogramas o arreglos de íconos para mostrar riesgo",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "pie_en_la_puerta",
+   "nombre": "Pie en la puerta (pedido pequeño antes del grande)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "aceptacion_pedido",
+   "nombre": "Aceptación de un pedido mayor",
+   "tipo": "resultado"
+  },
+  {
+   "id": "divulgacion_datos",
+   "nombre": "Divulgación de datos personales",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_paradoja_privacidad",
+   "nombre": "La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad)",
+   "tipo": "afirmacion"
   }
  ],
  "triples": [
   {
-   "s": "c_demanda_post_evento",
-   "p": "aplica_a",
-   "o": "demanda_seguros",
-   "f": "F-578",
-   "apoyo": "EE.UU.: la contratación de seguro de inundación sube ~9-10% el año siguiente y vuelve a la base en ~15 años (aprendizaje con olvido).",
+   "s": "ayudas_decision",
+   "p": "aumenta",
+   "o": "conocimiento_decision",
+   "f": "F-122",
+   "apoyo": "Revisión de 105 ensayos: +13,3/100 puntos de conocimiento frente a la atención usual (52 estudios, N=13.316, evidencia de alta calidad).",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "seguro_parametrico",
+   "s": "ayudas_decision",
+   "p": "aumenta",
+   "o": "percepcion_riesgo_precisa",
+   "f": "F-122",
+   "apoyo": "Duplican la probabilidad de percibir el riesgo con precisión (RR 2,10; 17 estudios, N=5.096, calidad moderada).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ayudas_decision",
    "p": "reduce",
-   "o": "inseguridad_alimentaria",
-   "f": "F-579",
-   "apoyo": "Kenia (IBLI): los asegurados protegen consumo (más pobres) o activos (menos pobres) tras la sequía. Solo título y ficha leídos.",
-   "lectura": "ficha",
-   "fuerza": "causal"
-  },
-  {
-   "s": "transferencia_anticipada",
-   "p": "reduce",
-   "o": "inseguridad_alimentaria",
-   "f": "F-580",
-   "apoyo": "Bangladesh 2020: efectivo 5 días antes del pico, 36% menos probabilidad de pasar un día sin comer; más consumo a 3 meses; menos deuda cara.",
+   "o": "conflicto_decisional",
+   "f": "F-122",
+   "apoyo": "−9,3/100 en sentirse desinformado y −8,8/100 en indecisión sobre los propios valores (evidencia de alta calidad). Lo de la ficha sobre la calidad estética no aparece en el resumen.",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "transferencia_anticipada",
-   "p": "es_tipo_de",
-   "o": "accion_anticipatoria",
-   "f": "F-580",
-   "apoyo": "Cuanto más temprano llega la transferencia, más efectiva.",
+   "s": "pictogramas_riesgo",
+   "p": "aumenta",
+   "o": "percepcion_riesgo_precisa",
+   "f": "F-123",
+   "apoyo": "Ensayo con 1.300 personas en el Reino Unido (riesgo BRCA1): los pictogramas mejoraron la comprensión y el recuerdo del riesgo frente al texto solo; el formato de la incertidumbre no importó. Evidencia débil.",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "accion_anticipatoria",
-   "p": "aplica_a",
-   "o": "norte_costero_peru",
-   "f": "F-581",
-   "apoyo": "IFRC: estrategia central ante El Niño 2026 con protocolos de liberación de fondos por umbral; 9 agencias ONU en Tumbes-La Libertad.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "seguro_indice_pronostico",
-   "p": "es_tipo_de",
-   "o": "accion_anticipatoria",
-   "f": "F-585",
-   "apoyo": "Primer 'seguro de índice de pronóstico' regulado del mundo: paga al iniciarse la inundación, antes de pérdidas consecuenciales.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "friccion_no_precio",
-   "p": "reduce",
-   "o": "demanda_seguros",
-   "f": "F-586",
-   "apoyo": "India (RCTs): demanda sensible al precio pero no se masifica; desconfianza, liquidez y saliencia frenan la adopción.",
+   "s": "pie_en_la_puerta",
+   "p": "aumenta",
+   "o": "aceptacion_pedido",
+   "f": "F-141",
+   "apoyo": "Experimento de campo (JPSP 1966): quienes respondieron antes unas preguntas aceptaron más un pedido grande (52,8% vs. 22,2% según fuentes secundarias; las cifras no se leyeron en el original).",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "friccion_no_precio",
-   "p": "asocia_con",
-   "o": "c_desconfianza_falta_info",
-   "f": "F-586",
-   "apoyo": "La desconfianza como fricción no-precio converge con la causa #1 de desconfianza en seguros del node de seguros.",
+   "s": "pie_en_la_puerta",
+   "p": "aumenta",
+   "o": "divulgacion_datos",
+   "f": "F-142",
+   "apoyo": "Dos experimentos de campo (una fintech y una comunidad de exalumnos en Facebook): ordenar los campos de menos a más intrusivos y repartirlos en varias páginas aumentó la divulgación al registrarse.",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "seguro_parametrico",
-   "p": "tiene_limite",
-   "o": "riesgo_base",
-   "f": "F-587",
-   "apoyo": "Contratación decepcionante sin subsidio; mejora con mejor medición (menos riesgo de base), diseño y combinación con crédito.",
+   "s": "pie_en_la_puerta",
+   "p": "aumenta",
+   "o": "divulgacion_datos",
+   "f": "F-143",
+   "apoyo": "Un estudio de laboratorio con datos reales y una réplica en línea: pedir datos de nuevo aumentó la divulgación en el segundo pedido.",
    "lectura": "abstract",
-   "fuerza": "observacional"
+   "fuerza": "causal"
+  },
+  {
+   "s": "pie_en_la_puerta",
+   "p": "media",
+   "o": "c_paradoja_privacidad",
+   "f": "F-143",
+   "apoyo": "La divulgación subió sin que cambiara la preocupación por la privacidad: los autores proponen el pie en la puerta como una explicación de la paradoja de la privacidad.",
+   "lectura": "abstract",
+   "fuerza": "causal"
   }
  ],
- "notas": "El Niño · Evidencia de demanda y diseño de protección (seguro índice, acción anticipatoria)"
+ "discrepancias": [
+  {
+   "f": "F-123",
+   "detalle": "La ficha dice 'autores no individualizados' y que 'el formato de frecuencia supera al porcentaje puro'. Los autores son Recchia, Lawrence y Freeman (Winton Centre, Cambridge); el estudio compara pictogramas con texto (no frecuencia vs. porcentaje), no halla efecto del formato de la incertidumbre y da evidencia débil a favor de los pictogramas."
+  },
+  {
+   "f": "F-142",
+   "detalle": "La ficha pone a la revista como autor y el año 2025. Los autores son Wu, Wu, Guo y Yang; publicado en International Journal of Electronic Commerce 30(1):62-81, 2026 (en línea 2025)."
+  },
+  {
+   "f": "F-143",
+   "detalle": "La ficha pone a la revista como autor. Los autores son Fleming, Edwards, Bayliss y Seger (University of East Anglia), Journal of Cybersecurity 9(1), 2023."
+  }
+ ],
+ "notas": "Pase de profundidad (relaciones.py next --mejorar): ayudas de decisión, pictogramas de riesgo y pie en la puerta para datos personales. Resúmenes oficiales vía búsqueda. Tres fichas con autoría o hallazgo mal registrados."
 }

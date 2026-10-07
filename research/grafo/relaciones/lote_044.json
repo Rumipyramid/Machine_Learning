@@ -1,0 +1,284 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-657",
+  "F-658",
+  "F-659",
+  "F-660",
+  "F-661",
+  "F-662",
+  "F-663",
+  "F-664",
+  "F-665",
+  "F-666"
+ ],
+ "entidades": [
+  {
+   "id": "experimento_prision_stanford",
+   "nombre": "Experimento de la prisión de Stanford (Zimbardo, 1971)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "caracteristicas_demanda",
+   "nombre": "Características de demanda (el participante actúa lo que cree que se espera de él)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_rol_basta_crueldad",
+   "nombre": "Asignar un rol de poder (guardia) basta por sí solo para producir crueldad",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_spe_guardias_instruidos",
+   "nombre": "En el SPE los guardias recibieron instrucciones y hubo fuertes características de demanda",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "liderazgo_identidad",
+   "nombre": "Liderazgo de identidad (el líder moviliza al grupo en nombre de una causa compartida)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "crueldad_guardias",
+   "nombre": "Conducta cruel de los 'guardias' hacia los 'presos'",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_crueldad_por_liderazgo",
+   "nombre": "La crueldad del SPE surgió del liderazgo de identidad del experimentador, no del rol",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "peligro_percibido_emergencia",
+   "nombre": "Peligro percibido de la emergencia",
+   "tipo": "constructo"
+  },
+  {
+   "id": "intervencion_algun_testigo",
+   "nombre": "Probabilidad de que al menos un testigo intervenga (nivel grupo)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "juicio_grupal_ambiguo",
+   "nombre": "Emitir juicios en grupo ante un estímulo ambiguo",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "norma_grupal_emergente",
+   "nombre": "Convergencia de juicios en una norma de grupo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "justificacion_externa_baja",
+   "nombre": "Baja justificación externa (paga pequeña) por actuar contra la propia opinión",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ensayo_contraactitudinal",
+   "nombre": "Escribir argumentos contrarios a la propia opinión",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_eleccion_genera_disonancia",
+   "nombre": "Actuar contra la propia actitud con alta (vs baja) elección produce más cambio de actitud",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_eleccion_no_cambia_actitud",
+   "nombre": "La alta elección no aumenta el cambio de actitud tras argumentar contra la propia opinión",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "mensaje_norma_descriptiva",
+   "nombre": "Mensaje de norma descriptiva ('la mayoría de personas como tú hace X')",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reutilizacion_toallas",
+   "nombre": "Reutilización de toallas por huéspedes de hotel",
+   "tipo": "resultado"
+  },
+  {
+   "id": "norma_provincial",
+   "nombre": "Norma provincial (referirse a quienes estuvieron en la misma situación inmediata)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_norma_descriptiva_supera_estandar",
+   "nombre": "Un mensaje de norma descriptiva supera a un mensaje estándar de beneficio",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_norma_descriptiva_no_supera",
+   "nombre": "Un mensaje de norma descriptiva no supera a un buen mensaje estándar",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "ley_vierordt",
+   "nombre": "Ley de Vierordt / efecto de tendencia central en la estimación de duraciones",
+   "tipo": "concepto"
+  },
+  {
+   "id": "inferencia_bayesiana_tiempo",
+   "nombre": "Estimación bayesiana del tiempo (combina la medición sensorial con lo que se espera por experiencia previa)",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "experimento_prision_stanford",
+   "p": "tiene_limite",
+   "o": "caracteristicas_demanda",
+   "f": "F-657",
+   "apoyo": "Le Texier 2019 (archivo + 15 entrevistas): los guardias recibieron instrucciones precisas sobre cómo tratar a los presos y no sabían que eran sujetos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_spe_guardias_instruidos",
+   "p": "contradice",
+   "o": "c_rol_basta_crueldad",
+   "f": "F-657",
+   "apoyo": "Le Texier 2019: datos sesgados e incompletos, guardias instruidos y participantes poco inmersos; el SPE no respalda que el rol por sí solo genere crueldad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "liderazgo_identidad",
+   "p": "aumenta",
+   "o": "crueldad_guardias",
+   "f": "F-658",
+   "apoyo": "Haslam, Reicher & Van Bavel 2019 (archivo del SPE): el experimentador alentó a los guardias a 'ser duros' por una causa compartida; la crueldad no surgió solo del rol.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_crueldad_por_liderazgo",
+   "p": "contradice",
+   "o": "c_rol_basta_crueldad",
+   "f": "F-658",
+   "apoyo": "Haslam, Reicher & Van Bavel 2019: en vez de conformarse al rol por sí mismos, los guardias fueron dirigidos activamente por los experimentadores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "presencia_otros_testigos",
+   "p": "reduce",
+   "o": "intervencion_emergencia",
+   "f": "F-659",
+   "apoyo": "Fischer et al. 2011 (meta-análisis, 105 efectos, >7.700 personas): la presencia de otros testigos reduce la ayuda individual, g=-0,35.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "peligro_percibido_emergencia",
+   "p": "modera",
+   "o": "intervencion_emergencia",
+   "f": "F-659",
+   "apoyo": "Fischer et al. 2011: el efecto espectador se atenúa en emergencias percibidas como peligrosas, con perpetrador presente o costos físicos de intervenir.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "presencia_otros_testigos",
+   "p": "aumenta",
+   "o": "intervencion_algun_testigo",
+   "f": "F-660",
+   "apoyo": "Philpot et al. 2020 (CCTV, 219 conflictos en 3 países): en 9 de cada 10 intervino al menos un testigo y más testigos se asociaron con mayor probabilidad de intervención.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "juicio_grupal_ambiguo",
+   "p": "aumenta",
+   "o": "norma_grupal_emergente",
+   "f": "F-661",
+   "apoyo": "Sherif 1935: en grupos de tres que estimaban el movimiento aparente de una luz, los juicios convergieron a una norma común a lo largo de los ensayos.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "norma_grupal_emergente",
+   "p": "asocia_con",
+   "o": "persistencia_efecto",
+   "f": "F-661",
+   "apoyo": "Sherif 1935: al estimar luego a solas, las respuestas siguieron influidas por la norma formada en grupo (internalización, no solo acatamiento público).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "justificacion_externa_baja",
+   "p": "aumenta",
+   "o": "cambio_actitud",
+   "f": "F-662",
+   "apoyo": "Festinger & Carlsmith 1959: con US$1 el agrado por la tarea aburrida fue +1,35 vs -0,05 con US$20 y -0,45 en control (escala -5 a +5).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_eleccion_no_cambia_actitud",
+   "p": "contradice",
+   "o": "c_eleccion_genera_disonancia",
+   "f": "F-663",
+   "apoyo": "Vaidis et al. 2024 (39 labs, N=4.898): no hubo diferencia de actitud entre escribir un ensayo contrario con alta vs baja elección, la predicción central de la disonancia.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ensayo_contraactitudinal",
+   "p": "aumenta",
+   "o": "cambio_actitud",
+   "f": "F-663",
+   "apoyo": "Vaidis et al. 2024: escribir un ensayo contrario a la propia opinión cambió la actitud frente a escribir un ensayo neutro, con o sin alta elección.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "mensaje_norma_descriptiva",
+   "p": "aumenta",
+   "o": "reutilizacion_toallas",
+   "f": "F-664",
+   "apoyo": "Goldstein, Cialdini & Griskevicius 2008: la tarjeta 'la mayoría de huéspedes reutiliza' subió la participación de 35,1% a 44,1% frente al mensaje ambiental estándar.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "norma_provincial",
+   "p": "aumenta",
+   "o": "reutilizacion_toallas",
+   "f": "F-664",
+   "apoyo": "Goldstein et al. 2008: la norma fue más eficaz cuando describía al grupo más parecido a la situación inmediata ('la mayoría de huéspedes de esta habitación').",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_norma_descriptiva_no_supera",
+   "p": "contradice",
+   "o": "c_norma_descriptiva_supera_estandar",
+   "f": "F-665",
+   "apoyo": "Bohner & Schlüter 2014 (Alemania, N=724 y 204): la norma descriptiva no fue más eficaz que el mensaje ambiental estándar; efectos de cercanía inconsistentes.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "mensaje_norma_descriptiva",
+   "p": "tiene_limite",
+   "o": "reutilizacion_toallas",
+   "f": "F-665",
+   "apoyo": "Bohner & Schlüter 2014: con reutilización ya alta, cualquier mensaje subió la tasa frente a no poner mensaje, pero sin ventaja específica de la norma descriptiva.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "inferencia_bayesiana_tiempo",
+   "p": "origina_en",
+   "o": "ley_vierordt",
+   "f": "F-666",
+   "apoyo": "Jazayeri y Shadlen 2010: un observador bayesiano (mínimos cuadrados) reproduce la regresión hacia la media de los intervalos estimados, mejor que otros dos modelos probabilísticos.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}

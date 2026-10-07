@@ -34,7 +34,7 @@ F-n inexistentes en el ledger · wikilinks no recíprocos / rotos · nodes aisla
 ## Reglas del sistema
 1. Determinista: misma entrada → mismo reporte (salvo fecha).
 2. Nunca edita nodes, ledger ni `alma.md`; solo escribe en `research/grafo/`.
-3. Lo no medible se declara en `ESTADO.md` §7. Impacto externo (uso por personas) hoy **no se mide**.
+3. Lo no medible se declara en `ESTADO.md` §7. Impacto externo (uso por personas) se mide desde 2026-10-04 con `impacto.json` (M8), de forma autodeclarada.
 4. Si cambia el formato de tablero de hipótesis/reglas del node de diseño, las M4/M5 caen a 0: es alarma de parser.
 
 ## Nivel de inteligencia (panel `/mu`, sección 00)
@@ -42,7 +42,8 @@ Escalera de 7 niveles (`niveles.json`): MEMORIA → ORDEN → RELACIÓN → CRIT
 - **Regla:** se sube de nivel solo si se cumplen **todos** los criterios de ese nivel y de los anteriores; no hay puntaje compuesto ni pesos.
 - **Umbrales:** propuestos por el autor (juicio, no norma); se editan en `niveles.json` y el panel los lee.
 - **Qué significa:** madurez estructural y metodológica del repositorio (íntegro, conectado, con criterio, autocorregido, leído a fondo). **No** mide verdad del contenido ni capacidad cognitiva.
-- **N7 (IMPACTO)** exige medir uso/decisiones de personas; hoy no hay instrumento, así que no es alcanzable.
+- **N7 (IMPACTO)** se mide con `impacto.json`, que genera `impacto.py` a partir de (1) la base del artefacto "Pregúntale a Mu" (colecciones `consultas` y `usos`, exportadas con `ArtifactData list --out_dir`) y (2) `impacto_manual.jsonl` (decisiones tomadas con Mu fuera del artefacto: una línea JSON con `fecha`, `decision`, `donde`, `node`, `fuentes`, `evidencia`). Criterios (umbrales del autor, editables): ≥30 preguntas reales, ≥2 personas distintas, ≥10 respuestas valoradas, ≥60% útiles, ≥3 decisiones.
+- **Qué NO dice N7:** las decisiones son **autodeclaradas** (prueban que alguien usó a Mu, no que decidiera bien); solo cuenta a quien usa el artefacto con permiso de escritura o declara la decisión. El repo guarda conteos, nunca ids de personas.
 
 ## Temas (panel `/mu`, sección 06)
 

@@ -24,6 +24,10 @@
     {"id": "leidas_pct", "label": "% de relaciones leídas más allá de la ficha", "min": 60},
     {"id": "cobertura_sem_pct", "label": "% del ledger con relaciones extraídas", "min": 50}]},
   {"n": 7, "nombre": "IMPACTO", "def": "Demostrado fuera del repo", "criterios": [
-    {"id": "uso_externo_medido", "label": "Uso/decisiones de personas medidos (no hay instrumento)", "min": 1}]}
+    {"id": "consultas_reales", "label": "Preguntas reales a Mu registradas", "min": 30},
+    {"id": "personas", "label": "Personas distintas que consultaron", "min": 2},
+    {"id": "valoradas", "label": "Respuestas valoradas con ¿te sirvió?", "min": 10},
+    {"id": "util_pct", "label": "% de respuestas valoradas como útiles", "min": 60},
+    {"id": "decisiones", "label": "Decisiones reales que usaron a Mu (autodeclaradas)", "min": 3}]}
  ]
 }

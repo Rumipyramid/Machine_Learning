@@ -1,0 +1,110 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-737",
+  "F-738",
+  "F-739",
+  "F-740",
+  "F-741"
+ ],
+ "entidades": [
+  {
+   "id": "senales_habilidad_azar",
+   "nombre": "Señales de habilidad en tareas de azar (elección, involucramiento, competencia, familiaridad)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ilusion_control",
+   "nombre": "Ilusión de control: expectativa de éxito mayor que la probabilidad objetiva",
+   "tipo": "constructo"
+  },
+  {
+   "id": "demora_gratificacion",
+   "nombre": "Capacidad infantil de demorar la gratificación (test del malvavisco)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "logro_academico_adolescente",
+   "nombre": "Logro académico y competencias en la adolescencia",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_demora_predice_logro",
+   "nombre": "La demora de gratificación en preescolar predice fuertemente el logro posterior",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "antecedentes_familiares",
+   "nombre": "Antecedentes familiares, habilidad cognitiva temprana y entorno del hogar",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_sin_efecto_disfluencia",
+   "nombre": "La tipografía disfluente no cambia la tasa de acierto en problemas contraintuitivos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_disfluencia_mejora_razonamiento",
+   "nombre": "La tipografía difícil de leer mejora la resolución de problemas",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "senales_habilidad_azar",
+   "p": "aumenta",
+   "o": "ilusion_control",
+   "f": "F-737",
+   "apoyo": "Langer 1975 (6 estudios): elegir el boleto, involucrarse, competir o estar familiarizado con un juego de azar elevó la expectativa de ganar por encima de la probabilidad objetiva.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "senales_habilidad_azar",
+   "p": "aumenta",
+   "o": "ilusion_control",
+   "f": "F-738",
+   "apoyo": "Stefan & David 2013 (meta-análisis): efecto medio ponderado D=0,62 (IC95% 0,49-0,75) de los factores que inducen ilusión de control.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "demora_gratificacion",
+   "p": "asocia_con",
+   "o": "logro_academico_adolescente",
+   "f": "F-739",
+   "apoyo": "Shoda, Mischel & Peake 1990: los segundos de espera en preescolar se correlacionaron significativamente con competencia académica y manejo del estrés en la adolescencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "demora_gratificacion",
+   "p": "asocia_con",
+   "o": "logro_academico_adolescente",
+   "f": "F-740",
+   "apoyo": "Watts, Duncan & Quan 2018: +1 minuto de espera a los 4 años ≈ +0,1 DE de logro a los 15, la mitad de la correlación de los estudios originales.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_demora_predice_logro",
+   "p": "tiene_limite",
+   "o": "antecedentes_familiares",
+   "f": "F-740",
+   "apoyo": "Watts et al. 2018: al controlar antecedentes familiares, habilidad cognitiva temprana y hogar, la asociación con el logro cayó cerca de dos tercios.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_sin_efecto_disfluencia",
+   "p": "refuta",
+   "o": "c_disfluencia_mejora_razonamiento",
+   "f": "F-741",
+   "apoyo": "Meyer et al. 2015: juntando el original con 16 réplicas, la tipografía disfluente no cambió la tasa de solución de problemas contraintuitivos, bajo ningún moderador.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}

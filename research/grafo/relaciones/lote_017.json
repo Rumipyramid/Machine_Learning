@@ -1,129 +1,116 @@
 {
- "fecha": "2026-10-07",
+ "fecha": "2026-10-03",
  "f_ids": [
-  "F-566",
-  "F-575",
-  "F-576",
-  "F-577",
-  "F-582",
-  "F-583",
-  "F-584",
-  "F-588"
+  "F-144",
+  "F-147",
+  "F-148",
+  "F-150",
+  "F-153"
  ],
  "entidades": [
   {
-   "id": "micro_parametrico_microfinanzas",
-   "nombre": "Microseguro paramétrico vía microfinancieras (MiCRO)",
-   "tipo": "intervencion"
+   "id": "norberg_2007",
+   "nombre": "Estudio de intención vs. conducta de divulgación de Norberg, Horne y Horne (JCA 2007)",
+   "tipo": "estudio"
   },
   {
-   "id": "seguro_enf_tropicales",
-   "nombre": "Seguro de enfermedades tropicales (dengue, zika, chikungunya)",
-   "tipo": "intervencion"
+   "id": "exito_tarea_agente",
+   "nombre": "Éxito de la tarea en un agente conversacional",
+   "tipo": "metrica"
   },
   {
-   "id": "costo_bolsillo_dengue",
-   "nombre": "Gasto de bolsillo por dengue fuera del SIS",
+   "id": "costos_dialogo",
+   "nombre": "Costos del diálogo (duración, turnos, errores)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "satisfaccion_agente",
+   "nombre": "Satisfacción del usuario con un agente conversacional",
    "tipo": "resultado"
   },
   {
-   "id": "precio_reaseguro_cat",
-   "nombre": "Precio del reaseguro catastrófico (−16% en jul-2026)",
-   "tipo": "resultado"
+   "id": "sassi",
+   "nombre": "Cuestionario SASSI (34 ítems, 6 factores)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "experiencia_subjetiva_voz",
+   "nombre": "Experiencia subjetiva con sistemas de voz (precisión percibida, agrado, carga, molestia, habitabilidad, velocidad)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "bus11",
+   "nombre": "Escala de usabilidad de chatbots BUS-11",
+   "tipo": "metrica"
+  },
+  {
+   "id": "usabilidad_chatbot",
+   "nombre": "Usabilidad percibida de un chatbot",
+   "tipo": "constructo"
   }
  ],
  "triples": [
   {
-   "s": "brecha_proteccion_nino_peru",
-   "p": "aplica_a",
-   "o": "norte_costero_peru",
-   "f": "F-566",
-   "apoyo": "APESEG 2026: millones de personas y pymes sin respaldo; solo 187 de ~50 mil colegios con seguro contra desastres.",
+   "s": "norberg_2007",
+   "p": "respalda",
+   "o": "c_paradoja_privacidad",
+   "f": "F-144",
+   "apoyo": "Se preguntó cuánto divulgarían y 12 semanas después lo pidieron investigadores de mercado: divulgaron mucho más de lo que dijeron, incluso datos personales y financieros. Lo de la confianza en la marca de la ficha no se verificó.",
    "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "causal"
   },
   {
-   "s": "oferta_competidores_nino",
-   "p": "aplica_a",
-   "o": "hogares_pobres",
-   "f": "F-575",
-   "apoyo": "Mapfre lleva microseguros de bajo costo para emprendedores (vivienda y negocio) a Perú en 2026.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "oferta_competidores_nino",
-   "p": "asocia_con",
-   "o": "seguro_parametrico",
-   "f": "F-576",
-   "apoyo": "La Positiva lanza 'Café Seguro Perú', paramétrico de lluvia para caficultores.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "micro_parametrico_microfinanzas",
-   "p": "es_tipo_de",
-   "o": "seguro_parametrico",
-   "f": "F-577",
-   "apoyo": "MiCRO: paramétrico satelital vía microfinancieras; 171 mil pólizas (52% mujeres), US$26 M pagados a ene-2026, sin reclamo del beneficiario.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "micro_parametrico_microfinanzas",
-   "p": "asocia_con",
-   "o": "microfinanzas_norte",
-   "f": "F-577",
-   "apoyo": "Modelo de distribución análogo al de las cajas del norte peruano.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "seguro_enf_tropicales",
-   "p": "asocia_con",
-   "o": "dengue_peru",
-   "f": "F-582",
-   "apoyo": "Prudential Brasil indemniza por diagnóstico de dengue y otras; demanda de la categoría +10% en 1T 2024; Unimed +163% autorizaciones.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "dengue_peru",
+   "s": "exito_tarea_agente",
    "p": "aumenta",
-   "o": "costo_bolsillo_dengue",
-   "f": "F-583",
-   "apoyo": "Piura 2023: ~S/3.000 de adelanto en clínica privada sin seguro; el SIS financió >280 mil tratamientos.",
+   "o": "satisfaccion_agente",
+   "f": "F-147",
+   "apoyo": "PARADISE (ACL 1997) modela la satisfacción como función del éxito de la tarea menos los costos del diálogo, y normaliza por complejidad para comparar agentes con tareas distintas.",
    "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "teorica"
   },
   {
-   "s": "precio_reaseguro_cat",
-   "p": "asocia_con",
-   "o": "c_nino_2026_extraordinario",
-   "f": "F-584",
-   "apoyo": "Reaseguro cat property −16% en jul-2026 (−12% en ene) justo cuando el Met Office proyecta anomalías >3 °C sin precedentes.",
+   "s": "costos_dialogo",
+   "p": "reduce",
+   "o": "satisfaccion_agente",
+   "f": "F-147",
+   "apoyo": "Los costos del diálogo (eficiencia y calidad: duración, turnos, errores) restan a la satisfacción en el modelo; separa lograr la tarea del costo de lograrla.",
    "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "teorica"
   },
   {
-   "s": "oferta_competidores_nino",
-   "p": "aplica_a",
-   "o": "danos_nino_2017",
-   "f": "F-588",
-   "apoyo": "Pacífico Hogar Flex Digital cubre por cláusula adicional inundación por desborde y huaicos por lluvia.",
+   "s": "sassi",
+   "p": "mide",
+   "o": "experiencia_subjetiva_voz",
+   "f": "F-148",
+   "apoyo": "34 ítems en 6 factores (precisión de respuesta, agrado, carga cognitiva, molestia, habitabilidad, velocidad), de 214-226 cuestionarios en 4 estudios con 8 sistemas de voz.",
    "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "observacional"
+  },
+  {
+   "s": "bus11",
+   "p": "mide",
+   "o": "usabilidad_chatbot",
+   "f": "F-150",
+   "apoyo": "Re-examinada con 3.186 observaciones sobre 44 chatbots de atención al cliente: la estructura de factores es más simple que la original y la confiabilidad va de buena a excelente.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
   }
  ],
- "notas": "El Niño · Benchmarks, competencia, reaseguro y salud estacional",
+ "sin_aporte": [
+  {
+   "f": "F-153",
+   "nota": "Solo se verificó la autoría y el método (PLS-SEM más análisis de condiciones necesarias, con muestras separadas de asegurados y de profesionales); los resultados no se leyeron. No se extraen relaciones hasta leerlos."
+  }
+ ],
  "discrepancias": [
   {
-   "f": "F-576",
-   "detalle": "La nota presenta 'Café Seguro Perú' como el primer paramétrico del país, pero La Positiva ya lanzó un paramétrico ENSO en 2010 (F-562, F-585). Reclamo de marketing a revisar."
+   "f": "F-150",
+   "detalle": "La ficha pone a la revista como autor ('Personal and Ubiquitous Computing (Springer)'). El artículo es de Borsci y colegas (grupo que creó la BUS-11; autoría exacta del artículo de 2024 no confirmada), DOI 10.1007/s00779-024-01834-4."
   },
   {
-   "f": "F-584",
-   "detalle": "La nota cita −16% en reaseguro cat en jul-2026, mientras un resultado de búsqueda paralelo atribuía a Gallagher Re alzas de 10-30% en LatAm en una renovación 1.7 (probablemente de otro año). Sin verificar."
+   "f": "F-153",
+   "detalle": "La ficha pone a la editorial como autor ('Taylor & Francis'). Los autores son Jorge de Andrés-Sánchez y Jaume Gené-Albesa; revista Journal of Organizational Computing and Electronic Commerce, 2024, DOI 10.1080/10919392.2024.2435118."
   }
- ]
+ ],
+ "notas": "Pase de profundidad (relaciones.py next --mejorar): paradoja de la privacidad y escalas para evaluar agentes conversacionales. Resúmenes oficiales vía búsqueda. F-153 queda sin relaciones (solo método)."
 }

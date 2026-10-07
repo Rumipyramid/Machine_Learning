@@ -1,0 +1,365 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-519",
+  "F-521",
+  "F-524",
+  "F-525",
+  "F-540",
+  "F-7",
+  "F-124",
+  "F-231",
+  "F-263",
+  "F-285"
+ ],
+ "entidades": [
+  {
+   "id": "personalizacion_publicidad",
+   "nombre": "Publicidad personalizada (frente a genérica)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "persuasion_publicitaria",
+   "nombre": "Persuasión publicitaria: actitudes e intención de conducta",
+   "tipo": "resultado"
+  },
+  {
+   "id": "relevancia_percibida",
+   "nombre": "Relevancia percibida del anuncio",
+   "tipo": "constructo"
+  },
+  {
+   "id": "demanda_freelance_imagenes",
+   "nombre": "Publicaciones de trabajos freelance de creación de imágenes",
+   "tipo": "resultado"
+  },
+  {
+   "id": "demanda_freelance_escritura_codigo",
+   "nombre": "Publicaciones de trabajos freelance de escritura y programación",
+   "tipo": "resultado"
+  },
+  {
+   "id": "resultados_design_thinking",
+   "nombre": "Resultados individuales y organizacionales de un proyecto de design thinking",
+   "tipo": "resultado"
+  },
+  {
+   "id": "factores_contexto_dt",
+   "nombre": "Factores de contexto individuales y organizacionales del design thinking",
+   "tipo": "constructo"
+  },
+  {
+   "id": "rousseau_2016",
+   "nombre": "Rousseau et al. 2016: metaanálisis de 62 estudios sobre innovación y desempeño",
+   "tipo": "estudio"
+  },
+  {
+   "id": "integracion_producto_proceso",
+   "nombre": "Integrar innovación de producto y de proceso (frente a solo producto)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tamano_firma",
+   "nombre": "Tamaño de la firma",
+   "tipo": "constructo"
+  },
+  {
+   "id": "hughes_2011",
+   "nombre": "Hughes 2011: revisión crítica de cinco apariciones publicadas del '70% de fracaso'",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_70_cambio_fracasa",
+   "nombre": "El 70% de las iniciativas de cambio organizacional fracasa",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "brecha_definir_aplicar",
+   "nombre": "Saber definir un término de seguro no implica saber aplicarlo en un cálculo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "edad",
+   "nombre": "Edad del consumidor",
+   "tipo": "constructo"
+  },
+  {
+   "id": "franquicia_demasiado_baja",
+   "nombre": "Elegir una franquicia (deducible) demasiado baja",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sobrepago_seguro",
+   "nombre": "Sobrepago en la prima del seguro",
+   "tipo": "resultado"
+  },
+  {
+   "id": "pausa_reflexion_compra",
+   "nombre": "Permitir pausar, reflexionar y modificar la elección durante la compra",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "calidad_decision_seguro",
+   "nombre": "Calidad de la decisión de compra de seguro",
+   "tipo": "resultado"
+  },
+  {
+   "id": "saliencia_info_clave",
+   "nombre": "Saliencia de la información clave (resúmenes, FAQ, íconos simples)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "friccion_positiva",
+   "nombre": "Fricción positiva (pausas deliberadas para pensar)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "comprension_seguro_vida",
+   "nombre": "Comprensión del seguro de vida temporal",
+   "tipo": "resultado"
+  },
+  {
+   "id": "medicion_economia_diseno",
+   "nombre": "Medición de la economía del diseño del Reino Unido (GVA y empleo)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "tamano_economia_diseno",
+   "nombre": "Tamaño de la economía del diseño del Reino Unido",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mide_tamano_no_efecto",
+   "nombre": "Mide el tamaño del sector, no el efecto causal del diseño",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "colapso_modos_llm",
+   "nombre": "Colapso de modos en LLMs (mode collapse)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "homogeneizacion_salidas_llm",
+   "nombre": "Homogeneización de las salidas de los LLMs (pérdida de diversidad)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "personalizacion_publicidad",
+   "p": "aumenta",
+   "o": "persuasion_publicitaria",
+   "f": "F-519",
+   "apoyo": "JAR 2025, metaanálisis de 53 estudios experimentales: la publicidad personalizada es en general más efectiva que la genérica en persuasión global, actitudes e intención de conducta.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "relevancia_percibida",
+   "p": "media",
+   "o": "persuasion_publicitaria",
+   "f": "F-519",
+   "apoyo": "JAR 2025: el modelado de ecuaciones estructurales metaanalítico muestra que la relevancia percibida, y no la intrusividad percibida, explica la persuasión de la publicidad personalizada.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "reduce",
+   "o": "demanda_freelance_imagenes",
+   "f": "F-521",
+   "apoyo": "Management Science 71(10) 2025: la llegada de IA generadora de imágenes redujo 17% las publicaciones de trabajos de creación de imágenes en una plataforma freelance global.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "reduce",
+   "o": "demanda_freelance_escritura_codigo",
+   "f": "F-521",
+   "apoyo": "Management Science 2025: −21% de publicaciones en trabajos de escritura y programación frente a trabajos manuales, a 8 meses de ChatGPT; los restantes son más complejos y mejor pagados.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "design_thinking",
+   "p": "asocia_con",
+   "o": "resultados_design_thinking",
+   "f": "F-524",
+   "apoyo": "EJIM 2023, revisión sistemática de 164 artículos: marco que conecta las etapas del proceso de design thinking (principios y herramientas) con resultados individuales y organizacionales del proyecto.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "factores_contexto_dt",
+   "p": "modera",
+   "o": "resultados_design_thinking",
+   "f": "F-524",
+   "apoyo": "EJIM 2023: el marco identifica factores de contexto individuales y organizacionales que condicionan el proceso y sus resultados.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "rousseau_2016",
+   "p": "respalda",
+   "o": "relacion_innovacion_desempeno",
+   "f": "F-525",
+   "apoyo": "IJIM 2016, metaanálisis de 62 estudios en 20 años: confirma un vínculo fuerte entre innovación y desempeño, con contingencias (apropiación por stakeholders, hipercompetencia).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "integracion_producto_proceso",
+   "p": "aumenta",
+   "o": "desempeno_organizacional",
+   "f": "F-525",
+   "apoyo": "IJIM 2016: integrar innovación de producto y de proceso da mayores ganancias de desempeño que solo innovación de producto.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "tamano_firma",
+   "p": "modera",
+   "o": "desempeno_organizacional",
+   "f": "F-525",
+   "apoyo": "IJIM 2016: las firmas grandes obtienen más beneficio de desempeño de la innovación que las pequeñas.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "hughes_2011",
+   "p": "refuta",
+   "o": "c_70_cambio_fracasa",
+   "f": "F-540",
+   "apoyo": "Journal of Change Management 11(4) 2011: revisa cinco apariciones publicadas de la cifra y concluye que no hay evidencia empírica válida y confiable que sostenga el 70% de fracaso del cambio organizacional.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "comprension_plan_salud",
+   "p": "tiene_limite",
+   "o": "brecha_definir_aplicar",
+   "f": "F-7",
+   "apoyo": "KFF 2017 (encuesta nacional de EE.UU.): 72% identifica bien qué es el deducible y 67% el límite de gasto de bolsillo, pero solo 51% calcula bien el costo de una hospitalización con deducible y copago.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "edad",
+   "p": "modera",
+   "o": "comprension_plan_salud",
+   "f": "F-7",
+   "apoyo": "KFF 2017: solo 39% de las personas de 18 a 29 años calculó bien el costo de bolsillo, frente a más de la mitad de los mayores de 30.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "franquicia_demasiado_baja",
+   "p": "aumenta",
+   "o": "sobrepago_seguro",
+   "f": "F-124",
+   "apoyo": "Comisión Europea 2017, experimentos conductuales: el mayor sobrepago vino de elegir una franquicia demasiado baja: €44 en hogar (19% de la prima media) y €48 en auto todo riesgo (11%).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "pausa_reflexion_compra",
+   "p": "aumenta",
+   "o": "calidad_decision_seguro",
+   "f": "F-124",
+   "apoyo": "Comisión Europea 2017: las decisiones subóptimas son frecuentes, pero mejoran cuando se permite pausar, reflexionar y modificar la elección durante la compra; el asesoramiento y los comparadores ayudan si son objetivos e independientes.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "saliencia_info_clave",
+   "p": "aumenta",
+   "o": "comprension_seguro_vida",
+   "f": "F-231",
+   "apoyo": "SOA y RGA 2024, dos RCT (N=2.001 y N=2.005) en compra simulada de seguro de vida temporal: resaltar la información clave con resúmenes, FAQ e íconos simples mejoró la comprensión 21%.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "friccion_positiva",
+   "p": "aumenta",
+   "o": "comprension_seguro_vida",
+   "f": "F-231",
+   "apoyo": "SOA y RGA 2024: simplificar el lenguaje y quitar fricción no basta; la saliencia y la fricción positiva tienen un impacto significativamente mayor sobre la comprensión.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "medicion_economia_diseno",
+   "p": "mide",
+   "o": "tamano_economia_diseno",
+   "f": "F-263",
+   "apoyo": "Design Council 2022: la economía del diseño aporta £97,4bn de GVA (4,9% del Reino Unido), emplea a 1,97 M de personas y crece al doble del promedio; 77% de los diseñadores trabaja fuera de sectores de diseño.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "medicion_economia_diseno",
+   "p": "tiene_limite",
+   "o": "mide_tamano_no_efecto",
+   "f": "F-263",
+   "apoyo": "Design Council 2022: es una cuenta de tamaño (GVA, empleo), no una estimación del efecto causal del diseño sobre el desempeño (advertencia de la ficha, coherente con el método publicado).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "colapso_modos_llm",
+   "p": "aumenta",
+   "o": "homogeneizacion_salidas_llm",
+   "f": "F-285",
+   "apoyo": "arXiv 2601.06116 (Rios-Sialer, preprint): los modelos generativos reproducen sesgos y los amplifican por mecanismos como el colapso de modos, con pérdida de diversidad; lo ilustra con sesgo de género en historias abiertas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-7",
+   "detalle": "El resumen del ledger atribuye a KFF 2017 que 'en 2014 solo ~4% acertó las 10 preguntas y ~52% acertó 7/10' y que el coaseguro es el término menos entendido. El 4% corresponde a una encuesta de Policygenius (>2.000 asegurados), no a KFF; lo verificable de KFF 2017 es: 72% define el deducible, 67% el límite de gasto de bolsillo y 51% calcula bien un costo con deducible y copago. Hallazgo mal atribuido: su corrección requiere autorización.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada el 2026-10-04: corregido con autorización del usuario."
+  },
+  {
+   "f": "F-285",
+   "detalle": "Rigor '🔵 B — sustento técnico, preprints con método explícito': la fuente es un preprint de un solo autor (arXiv 2601.06116); según la rúbrica, un preprint sin revisión corresponde a 🟡 C. Cambio de rigor: requiere autorización.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada el 2026-10-04: corregido con autorización del usuario."
+  },
+  {
+   "f": "F-124",
+   "detalle": "Año 2019 → 2017 (página oficial de la Comisión Europea).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: año corregido en el ledger el 2026-10-03 (regla permanente)."
+  },
+  {
+   "f": "F-519",
+   "detalle": "Autoría no capturada y revista 'Journal of Advertising' → Yeo, Chu y Li, Journal of Advertising Research 65(4).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos el 2026-10-03 (regla permanente)."
+  },
+  {
+   "f": "F-524",
+   "detalle": "Autoría no capturada → Rösch, Tiberius y Kraus (EJIM 26(7)).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida el 2026-10-03 (regla permanente)."
+  },
+  {
+   "f": "F-525",
+   "detalle": "Autoría no capturada → Rousseau, Mathias, Madden y Crook (IJIM 20(3)).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida el 2026-10-03 (regla permanente)."
+  },
+  {
+   "f": "F-285",
+   "detalle": "Autoría 'Varios (arXiv)' → Rios-Sialer, I. (arXiv 2601.06116).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida el 2026-10-03 (regla permanente)."
+  }
+ ],
+ "notas": "Lote de 10 (pedido del usuario), en el orden de `next`, con resúmenes o páginas oficiales verificados el 2026-10-03 vía búsqueda (kff.org está bloqueado: los datos de F-7 vienen del resumen de hallazgos de KFF que devuelve la búsqueda). F-521 ya estaba verificada; se suma su volumen (71(10)). F-525 es la contraparte de la tensión de magnitud con F-430 que el node ya anota."
+}

@@ -1,139 +1,88 @@
 {
- "fecha": "2026-10-07",
+ "fecha": "2026-10-03",
  "f_ids": [
-  "F-550",
-  "F-551",
-  "F-552",
-  "F-559",
-  "F-567",
-  "F-568",
-  "F-569",
-  "F-570"
+  "F-6",
+  "F-9",
+  "F-484",
+  "F-504",
+  "F-506",
+  "F-508"
  ],
  "entidades": [
   {
-   "id": "danos_nino_1998",
-   "nombre": "Daños humanos y económicos del Niño 1997-98 (Perú)",
-   "tipo": "resultado"
+   "id": "creencias_pesimistas",
+   "nombre": "Creencias pesimistas sobre lo que se ganaría al cambiar",
+   "tipo": "constructo"
   },
   {
-   "id": "recesion_2023_peru",
-   "nombre": "Recesión y alza de pobreza en Perú 2023",
-   "tipo": "resultado"
-  },
-  {
-   "id": "poblacion_expuesta_inundacion",
-   "nombre": "Población en riesgo alto de inundación (57,5%, jun-2026)",
-   "tipo": "resultado"
-  },
-  {
-   "id": "c_nino_2026_extraordinario",
-   "nombre": "El Niño 2026-27 alcanza magnitud extraordinaria/histórica",
-   "tipo": "afirmacion"
-  },
-  {
-   "id": "pesca_anchoveta",
-   "nombre": "Pesca de anchoveta y harina de pescado",
-   "tipo": "resultado"
-  },
-  {
-   "id": "c_noaa_evento_historico",
-   "nombre": "NOAA: >90% de un Niño muy fuerte y ~75% de uno histórico en 2026-27",
-   "tipo": "afirmacion"
+   "id": "dictamen_salud_2025",
+   "nombre": "Dictamen conjunto de la Comisión de Salud (PL 2522/2021 y 8488/2024), dic-2025",
+   "tipo": "intervencion"
   }
  ],
  "triples": [
   {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "danos_nino_2017",
-   "f": "F-550",
-   "apoyo": "INDECI: 162 muertos, 283 mil damnificados y 1,43 M afectados, 3.222 colegios y 937 EESS dañados; >US$3.000 M (~1,6% PBI).",
+   "s": "creencias_pesimistas",
+   "p": "media",
+   "o": "c_divulgacion_obligatoria_falla",
+   "f": "F-9",
+   "apoyo": "RCT con 124.000 ahorristas en 5 entidades del Reino Unido: las creencias pesimistas sobre la ganancia explican que se ignore la divulgación.",
    "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "causal"
   },
   {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "danos_nino_1998",
-   "f": "F-551",
-   "apoyo": "CAF: US$3.500 M (46% directo, 54% indirecto); 531.104 damnificados; >42 mil viviendas destruidas.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "recesion_2023_peru",
-   "f": "F-552",
-   "apoyo": "2023: PBI −0,55%; emergencia climática ~1,5% del PBI; pesca −19,75%; pobreza 27,5% → ~29%.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "poblacion_expuesta_inundacion",
-   "p": "aplica_a",
-   "o": "norte_costero_peru",
-   "f": "F-559",
-   "apoyo": "IPE: 19,9 M de peruanos (57,5%) en riesgo alto o muy alto de inundación (jun-2026); 94% de economistas ve preparación insuficiente.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "c_nino_2026_extraordinario",
-   "p": "origina_en",
-   "o": "nino_costero_peru",
-   "f": "F-567",
-   "apoyo": "ENFEN N.° 16-2026: Niño Costero de magnitud extraordinaria más probable set-2026 a ene-2027, hasta otoño 2027.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "c_noaa_evento_historico",
-   "p": "respalda",
-   "o": "c_nino_2026_extraordinario",
-   "f": "F-568",
-   "apoyo": "NOAA: >90% evento muy fuerte; ~75% histórico (≥+2,5 °C) en OND 2026 (leído vía secundarios).",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "el_nino_enso",
-   "p": "reduce",
-   "o": "crecimiento_pbi",
-   "f": "F-569",
-   "apoyo": "BCRP: PBI 2026 3,4→3,2%, 2027 3,2→3,0%; impacto ~0,9 pp (2026) y ~1,1 pp (2027); pesca −30,7%.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "el_nino_enso",
-   "p": "reduce",
-   "o": "pesca_anchoveta",
-   "f": "F-569",
-   "apoyo": "Proyección de pesca −30,7% en 2026 por la segunda temporada de anchoveta.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "danos_nino_2017",
-   "f": "F-570",
-   "apoyo": "2026: emergencia en 23 regiones; en Tumbes 82 viviendas destruidas y 2.934 afectadas (jul-2026); lluvias adelantadas.",
+   "s": "dictamen_salud_2025",
+   "p": "parte_de",
+   "o": "pl_08488",
+   "f": "F-508",
+   "apoyo": "La Comisión de Salud aprobó el 3-dic(2025) un dictamen conjunto de los PL 2522/2021-CR y 8488/2024-CR, pendiente de pasar a la Comisión Permanente (resumen de vLex; portal del Congreso no abierto).",
    "lectura": "abstract",
    "fuerza": "descriptiva"
   }
  ],
- "notas": "El Niño · Datos oficiales y coyuntura 2026-27 (El Niño, Perú)",
- "discrepancias": [
+ "notas": "Lectura a fondo de seguros. Documentos primarios (SBS, SMV, El Peruano, Congreso) bloqueados por la red: se leyeron resúmenes dirigidos a cada documento. Se actualizan en su sitio, de ficha a abstract, T-125 (corrige la relación: la norma 'aplica_a', no 'aumenta' el rechazo), T-153, T-154 (corrige el objeto: F-9 mide cambio de producto, no comprensión de planes de salud), T-155, T-170, T-172 y T-175. F-486 no se pudo ubicar (queda en ficha).",
+ "sin_aporte": [
   {
-   "f": "F-551",
-   "detalle": "El costo de 1997-98 (US$3.500 M) se reporta como 4,5% del PBI (CAF) o 6,2% del PBI de 1998 según la fuente secundaria; no se abrió el documento primario de la CAF."
+   "f": "F-6",
+   "nota": "Sin relación nueva: T-153 se actualizó en su sitio (ficha→abstract)."
   },
   {
-   "f": "F-569",
-   "detalle": "El impacto del Niño en el PBI 2026 aparece como 0,7 pp (F-574, estimación previa) y 0,9 pp (F-569, Reporte de Inflación posterior): probablemente son vintages distintos del BCRP, sin verificar en el documento original."
+   "f": "F-484",
+   "nota": "Sin relación nueva: T-125 se corrigió y actualizó en su sitio (ficha→abstract)."
+  },
+  {
+   "f": "F-504",
+   "nota": "Sin relación nueva: T-170 se actualizó en su sitio (ficha→abstract)."
+  },
+  {
+   "f": "F-506",
+   "nota": "Sin relación nueva: T-172 se actualizó en su sitio (ficha→abstract); T-173 sigue sin verificar contra la SBS."
   }
- ]
+ ],
+ "actualizaciones_en_su_sitio": {
+  "T-125": {
+   "p": "aplica_a",
+   "apoyo": "Res. SBS 01923-2026 (El Peruano, 24-jul-2026): es infracción grave rechazar una cobertura sin comunicar el sustento y/o no comunicarlo en plazo. Antes se sancionaba la falta de sustento o la comunicación tardía."
+  },
+  "T-153": {
+   "apoyo": "Dos encuestas representativas en EE.UU.: solo 14% entendió coaseguro, copago, deducible y gasto de bolsillo, y 11% pudo calcular su parte de una cuenta hospitalaria."
+  },
+  "T-154": {
+   "o": "cambio_producto",
+   "apoyo": "RCT con 124.000 ahorristas: la divulgación subió el cambio de cuenta solo 0,7 pp (8,7%→9,5%) pese a una ganancia media de ~US$190/año.",
+   "fuerza": "causal"
+  },
+  "T-155": {
+   "apoyo": "Cambiar tomaba ~15 minutos y aun así casi nadie cambió con ningún diseño de divulgación: la conducta apenas se mueve."
+  },
+  "T-170": {
+   "apoyo": "Hecho de importancia ante la SMV (vía MarketScreener): utilidad neta S/85,78 M en el 2T 2026 vs. S/143,4 M (−40%); S/208,33 M en el 1S vs. S/232,81 M (−10,5%)."
+  },
+  "T-172": {
+   "apoyo": "Gestión (fines de set-2026), con datos de la SBS: primas S/9.451 M (+1,1%) y utilidad S/1.391 M (+7,5%); los siniestros no siguieron a los ingresos. Tabla oficial de la SBS no abierta."
+  },
+  "T-175": {
+   "apoyo": "Registrado el 27-jul-2024. Dictamen conjunto con el PL 2522/2021-CR aprobado en la Comisión de Salud el 3-dic(2025), pendiente; no se verificó su avance posterior."
+  }
+ }
 }

@@ -1,0 +1,356 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-575",
+  "F-577",
+  "F-582",
+  "F-583",
+  "F-584",
+  "F-586",
+  "F-591",
+  "F-596",
+  "F-597",
+  "F-598",
+  "F-581"
+ ],
+ "entidades": [
+  {
+   "id": "teoria_mente_llm",
+   "nombre": "Desempeño de LLMs en tareas de teoría de la mente",
+   "tipo": "resultado"
+  },
+  {
+   "id": "deteccion_faux_pas",
+   "nombre": "Falla en detectar faux pas por enfoque hiperconservador al concluir",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "productividad_trabajo_conocimiento",
+   "nombre": "Productividad y calidad del trabajo de conocimiento (consultores)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "exactitud_fuera_frontera",
+   "nombre": "Exactitud en tareas fuera de la frontera de capacidad de la IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "aversion_algoritmica",
+   "nombre": "Aversión algorítmica (evitar algoritmos tras verlos errar)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "ver_error_algoritmo",
+   "nombre": "Ver al algoritmo desempeñarse y equivocarse",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "apreciacion_algoritmica",
+   "nombre": "Apreciación algorítmica (preferir consejo algorítmico al humano)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "c_aversion_algoritmica_general",
+   "nombre": "La gente es en general reacia a confiar en el juicio de algoritmos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "creencias_conspirativas",
+   "nombre": "Creencia en teorías conspirativas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "productividad_investigacion",
+   "nombre": "Productividad de la investigación (automatización de micro-tareas)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "conducta_maquinas",
+   "nombre": "Conducta de las máquinas (machine behaviour) como campo científico",
+   "tipo": "concepto"
+  },
+  {
+   "id": "investigacion_exploratoria",
+   "nombre": "Estudios piloto y exploratorios",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ajuste_fino_datos_sociales",
+   "nombre": "Prompts ricos en contexto y ajuste fino con datos de ciencias sociales",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "agente_encuestado_sintetico",
+   "nombre": "Agente autónomo con LLM que responde encuestas online",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "controles_atencion_encuestas",
+   "nombre": "Controles de atención y de detección de respuestas no humanas en encuestas",
+   "tipo": "metrica"
+  },
+  {
+   "id": "evasion_controles_calidad",
+   "nombre": "Evasión de controles de calidad por agentes LLM",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "validez_encuestas_online",
+   "nombre": "Validez de los datos de encuestas online",
+   "tipo": "resultado"
+  },
+  {
+   "id": "desigualdad_productividad",
+   "nombre": "Desigualdad de productividad entre trabajadores",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "escala_modelo_llm",
+   "p": "aumenta",
+   "o": "teoria_mente_llm",
+   "f": "F-575",
+   "apoyo": "PNAS 2024: de 11 LLMs, los antiguos no resolvieron tareas de falsa creencia, GPT-3.5 resolvió 20% y GPT-4 75%; el autor plantea que la capacidad emergió como subproducto de mejores habilidades lingüísticas.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "teoria_mente_llm",
+   "f": "F-575",
+   "apoyo": "PNAS 2024: ChatGPT-4 resolvió el 75% de 40 tareas de falsa creencia, al nivel de niños de 6 años en estudios previos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "teoria_mente_llm",
+   "f": "F-577",
+   "apoyo": "Nature Hum Behav 2024: frente a 1.907 humanos, GPT-4 rindió a nivel humano o superior al identificar pedidos indirectos, falsas creencias y engaños.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teoria_mente_llm",
+   "p": "tiene_limite",
+   "o": "deteccion_faux_pas",
+   "f": "F-577",
+   "apoyo": "Nature Hum Behav 2024: GPT-4 falló en detectar faux pas por un enfoque hiperconservador para comprometerse con conclusiones, no por falla de inferencia; la ventaja de LLaMA2 fue ilusoria.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "productividad_trabajo_conocimiento",
+   "f": "F-582",
+   "apoyo": "Organization Science 2026 (WP 2023): en 18 tareas dentro de la frontera, consultores con GPT-4 completaron 12,2% más tareas, 25,1% más rápido y con >40% más calidad que el grupo control.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "reduce",
+   "o": "exactitud_fuera_frontera",
+   "f": "F-582",
+   "apoyo": "Organization Science 2026 (WP 2023): en una tarea fuera de la frontera de la IA, los consultores con IA tuvieron 19 puntos porcentuales menos de probabilidad de dar la solución correcta.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "experiencia_trabajador",
+   "p": "modera",
+   "o": "productividad_trabajo_conocimiento",
+   "f": "F-582",
+   "apoyo": "Organization Science 2026 (WP 2023): la IA niveló habilidades: los consultores bajo el promedio de desempeño base mejoraron 43% y los de arriba 17% respecto de su propio puntaje.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ver_error_algoritmo",
+   "p": "aumenta",
+   "o": "aversion_algoritmica",
+   "f": "F-583",
+   "apoyo": "J Exp Psychol Gen 2015: en 5 estudios, quienes vieron pronosticar al algoritmo fueron menos propensos a elegirlo frente a un humano inferior, incluso tras verlo superar al humano.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ver_error_algoritmo",
+   "p": "reduce",
+   "o": "confianza_en_ia",
+   "f": "F-583",
+   "apoyo": "J Exp Psychol Gen 2015: las personas pierden la confianza en pronosticadores algorítmicos más rápido que en humanos tras verlos cometer el mismo error.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "apreciacion_algoritmica",
+   "p": "contradice",
+   "o": "c_aversion_algoritmica_general",
+   "f": "F-584",
+   "apoyo": "OBHDP 2019: contra la idea recibida de escepticismo, seis experimentos muestran que legos siguen más un consejo cuando creen que viene de un algoritmo que de una persona.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "experiencia_trabajador",
+   "p": "reduce",
+   "o": "apreciacion_algoritmica",
+   "f": "F-584",
+   "apoyo": "OBHDP 2019: profesionales que pronostican habitualmente se apoyaron menos en el consejo algorítmico que los legos, lo que perjudicó su precisión.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "persuasion_ia",
+   "p": "reduce",
+   "o": "creencias_conspirativas",
+   "f": "F-586",
+   "apoyo": "Science 2024: diálogos personalizados y basados en evidencia con GPT-4 Turbo redujeron ~20% la creencia conspirativa de 2.190 participantes; el efecto persistió 2 meses y se dio aun con creencias arraigadas.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "productividad_investigacion",
+   "f": "F-591",
+   "apoyo": "J Econ Lit 2023: los economistas pueden lograr ganancias significativas de productividad usando IA generativa para automatizar micro-tareas, y crecerán con la mejora de los sistemas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "aplica_a",
+   "o": "ia_en_investigacion",
+   "f": "F-591",
+   "apoyo": "J Econ Lit 2023: describe decenas de casos de uso de LLMs en seis áreas de la investigación económica, de ideación y escritura a código y derivaciones matemáticas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "psicologia_de_maquinas",
+   "p": "parte_de",
+   "o": "conducta_maquinas",
+   "f": "F-596",
+   "apoyo": "Nature 2019: entender la conducta de los sistemas de IA exige una agenda científica que amplíe la informática con aportes de todas las ciencias, incluidas las del comportamiento.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "aplica_a",
+   "o": "investigacion_exploratoria",
+   "f": "F-597",
+   "apoyo": "ICML 2025: los autores sostienen que las simulaciones sociales con LLM ya pueden usarse en estudios piloto y exploratorios, y quizá más adelante en usos más amplios.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ajuste_fino_datos_sociales",
+   "p": "aumenta",
+   "o": "fidelidad_algoritmica",
+   "f": "F-597",
+   "apoyo": "ICML 2025: entre las direcciones prometedoras para lograr simulaciones exactas y verificables de sujetos humanos destacan los prompts ricos en contexto y el ajuste fino con datasets de ciencias sociales.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "controles_atencion_encuestas",
+   "p": "tiene_limite",
+   "o": "evasion_controles_calidad",
+   "f": "F-598",
+   "apoyo": "PNAS 2025: un agente sintético con LLM evadió controles de instrucciones, acertijos lógicos y preguntas para detectar no humanos, con 99,8% de aprobación en 6.000 pruebas estándar de atención.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "agente_encuestado_sintetico",
+   "p": "reduce",
+   "o": "validez_encuestas_online",
+   "f": "F-598",
+   "apoyo": "PNAS 2025: el supuesto base de la encuesta online, que una respuesta coherente es humana, ya no es sostenible ante agentes LLM que producen respuestas coherentes y plausibles.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "productividad_trabajo_conocimiento",
+   "f": "F-581",
+   "apoyo": "Science 2023, experimento preregistrado con 453 profesionales en tareas de escritura: con ChatGPT el tiempo cae 40% y la calidad sube 18%.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "reduce",
+   "o": "desigualdad_productividad",
+   "f": "F-581",
+   "apoyo": "Science 2023: la desigualdad entre trabajadores disminuye: ChatGPT beneficia más a los de menor habilidad y sustituye esfuerzo más que complementar habilidades.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-577",
+   "detalle": "Faltan volumen/número/páginas: Nature Human Behaviour 8(7):1285-1295.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-582",
+   "detalle": "Resumen verificado en la versión de trabajo (SSRN 4573321); no se vio el resumen de la versión final en Organization Science.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-583",
+   "detalle": "Faltan volumen y páginas: JEP: General 144(1):114-126.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-584",
+   "detalle": "El resumen dice que la apreciación 'disminuye' (waned) en expertos y frente a la propia estimación; la ficha dice que 'desaparece' (sobredimensiona).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
+  },
+  {
+   "f": "F-584",
+   "detalle": "El metaanálisis HICSS-58 (2025, 32 estudios, g=0,23/0,55) es otra fuente, no verificable en este resumen; convendría registrarlo como ficha propia.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
+  },
+  {
+   "f": "F-597",
+   "detalle": "URL no capturada en la ficha: usar https://proceedings.mlr.press/v267/anthis25a.html (o arXiv 2504.02234).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
+  },
+  {
+   "f": "F-597",
+   "detalle": "Falta el volumen: PMLR 267.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-598",
+   "detalle": "Falta el volumen: PNAS 122(47) (el DOI no se vio escrito; no se registra).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-598",
+   "detalle": "La URL es cobertura de prensa (404 Media), no la revista; reemplazar por la página de PNAS. La rigurosidad declarada se apoyó en prensa, aunque el resumen confirma el hallazgo.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
+  }
+ ],
+ "notas": "Lote del avance a 85% hacia N6 (grupo 544): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

@@ -70,6 +70,10 @@ tienen simulación de consumidores calibrada con microdato nacional, no solo sup
   real y qué es propuesta]]: su hipótesis H9 (los diseñadores declaran rechazo a la IA mientras la adoptan
   masivamente) es estructuralmente el mismo fenómeno que modela la variable
   `disposicion_compartir_datos_pricing` — desconfianza abstracta declarada ≠ conducta real.
+- Evaluado por → [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] §6: qué fallas
+  documentadas de las muestras sintéticas con LLM (varianza comprimida, segmentos exagerados 2-4x, peor ajuste en
+  NSE bajo) afectan al generador y a la app de preguntas libres, con las pruebas PE1-PE3.
+- Parametrizado con cautela por → [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] (RF6/PF6: sesgo del presente y aversión a la pérdida como rangos, no constantes)
 
 [^1]: `research/personas/generador/matriz_usuarios_sinteticos.md` §2-3, notas v1.1-v1.3; medido
     con `validate.py --check`.

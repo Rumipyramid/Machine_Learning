@@ -1,181 +1,108 @@
 {
- "fecha": "2026-10-07",
+ "fecha": "2026-10-03",
  "f_ids": [
-  "F-529",
-  "F-530",
-  "F-543",
-  "F-544",
-  "F-545",
-  "F-546",
-  "F-547",
-  "F-549"
+  "F-488",
+  "F-491",
+  "F-499",
+  "F-542"
  ],
  "entidades": [
   {
-   "id": "c_nino_frena_crecimiento",
-   "nombre": "El Niño deprime el crecimiento económico por años",
+   "id": "c_adulacion_indistinguible",
+   "nombre": "Los usuarios no distinguen una IA aduladora de una que no lo es",
    "tipo": "afirmacion"
   },
   {
-   "id": "crecimiento_pbi",
-   "nombre": "Crecimiento económico (PBI)",
-   "tipo": "resultado"
+   "id": "personalizacion_conversacional",
+   "nombre": "Personalización en conversación (la IA conoce datos del interlocutor)",
+   "tipo": "intervencion"
   },
   {
-   "id": "conflicto_civil",
-   "nombre": "Conflicto civil",
-   "tipo": "resultado"
-  },
-  {
-   "id": "c_enso_conflicto",
-   "nombre": "El Niño aumenta la probabilidad de conflicto civil",
+   "id": "c_personalizacion_aumenta_persuasion",
+   "nombre": "Personalizar con datos de la persona aumenta la persuasión de la IA",
    "tipo": "afirmacion"
   },
   {
-   "id": "c_vulnerabilidad_decide",
-   "nombre": "El daño lo determina la vulnerabilidad previa, no solo el clima ('no hay desastres naturales')",
-   "tipo": "afirmacion"
+   "id": "salvi_2025",
+   "nombre": "Debates con GPT-4 de Salvi et al. (Nature Human Behaviour 2025)",
+   "tipo": "estudio"
   },
   {
-   "id": "sequia",
-   "nombre": "Sequía severa",
-   "tipo": "concepto"
+   "id": "hackenburg_margetts_2024",
+   "nombre": "Experimento de microtargeting de Hackenburg y Margetts (PNAS 2024)",
+   "tipo": "estudio"
   },
   {
-   "id": "violencia_pareja",
-   "nombre": "Violencia de pareja contra mujeres",
-   "tipo": "resultado"
-  },
-  {
-   "id": "lim_sequia_no_enso",
-   "nombre": "Mide sequía, no ENSO directamente",
-   "tipo": "limitacion"
-  },
-  {
-   "id": "agro_norte",
-   "nombre": "Producción agrícola del norte (mango, limón)",
-   "tipo": "resultado"
-  },
-  {
-   "id": "inseguridad_alimentaria_global",
-   "nombre": "Inseguridad alimentaria global por El Niño 2015-16",
-   "tipo": "resultado"
-  },
-  {
-   "id": "c_efecto_macro_heterogeneo",
-   "nombre": "El efecto macro de El Niño es heterogéneo: algunos países crecen",
-   "tipo": "afirmacion"
+   "id": "rasgos_susceptibilidad",
+   "nombre": "Rasgos de susceptibilidad: confianza en LLMs, amabilidad, extraversión, necesidad de cognición",
+   "tipo": "constructo"
   }
  ],
  "triples": [
   {
-   "s": "c_nino_frena_crecimiento",
-   "p": "aplica_a",
-   "o": "crecimiento_pbi",
-   "f": "F-529",
-   "apoyo": "El crecimiento se deprime >5 años; 1982-83 y 1997-98 costaron US$4,1 y 5,7 billones; US$84 billones proyectados al 2100.",
+   "s": "adulacion_ia",
+   "p": "respalda",
+   "o": "c_adulacion_indistinguible",
+   "f": "F-488",
+   "apoyo": "Publicado en Science (mar-2026): los participantes calificaron igual de 'objetivas' a la IA aduladora y a la no aduladora; no saben con cuál hablaron.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "rasgos_susceptibilidad",
+   "p": "modera",
+   "o": "c_persuasion_concentrada",
+   "f": "F-491",
+   "apoyo": "770 adultos italianos, 4 sesiones semanales con GPT-4o, Claude Sonnet 3.7, DeepSeek V3 o Mistral Large: el cambio de opinión se asocia a más confianza en LLMs, amabilidad, extraversión y necesidad de cognición.",
    "lectura": "abstract",
    "fuerza": "observacional"
   },
   {
-   "s": "el_nino_enso",
-   "p": "reduce",
-   "o": "crecimiento_pbi",
-   "f": "F-529",
-   "apoyo": "Panel global 1960-2019: firma persistente de menor crecimiento en el trópico.",
+   "s": "salvi_2025",
+   "p": "respalda",
+   "o": "c_personalizacion_aumenta_persuasion",
+   "f": "F-542",
+   "apoyo": "Debates de varias rondas (N=900): con datos personales del oponente, GPT-4 superó al humano en 64,4% de los pares: +81,2% de odds de mayor acuerdo (IC95% +26% a +161%).",
    "lectura": "abstract",
-   "fuerza": "observacional"
+   "fuerza": "causal"
   },
   {
-   "s": "el_nino_enso",
-   "p": "asocia_con",
-   "o": "crecimiento_pbi",
-   "f": "F-530",
-   "apoyo": "GVAR: caída breve en Australia, Chile, India, Indonesia, Japón, NZ y Sudáfrica; EE.UU. y Europa pueden crecer; sube la inflación.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "c_efecto_macro_heterogeneo",
-   "p": "contradice",
-   "o": "c_nino_frena_crecimiento",
-   "f": "F-530",
-   "apoyo": "Tensión parcial: el efecto macro es heterogéneo y en algunos países positivo, frente a la pérdida global persistente de F-529.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "el_nino_enso",
+   "s": "personalizacion_conversacional",
    "p": "aumenta",
-   "o": "conflicto_civil",
-   "f": "F-543",
-   "apoyo": "1950-2004: la probabilidad de nuevos conflictos civiles en el trópico se duplica en años de El Niño vs. La Niña (21% de conflictos).",
+   "o": "cambio_actitud",
+   "f": "F-542",
+   "apoyo": "La ventaja aparece con personalización en debate interactivo frente a persuasores humanos.",
    "lectura": "abstract",
-   "fuerza": "observacional"
+   "fuerza": "causal"
   },
   {
-   "s": "c_enso_conflicto",
-   "p": "aplica_a",
-   "o": "conflicto_civil",
-   "f": "F-543",
-   "apoyo": "Afirmación central del paper.",
+   "s": "hackenburg_margetts_2024",
+   "p": "refuta",
+   "o": "c_personalizacion_aumenta_persuasion",
+   "f": "F-499",
+   "apoyo": "8.587 participantes, 4 temas: el mensaje microtargeteado no superó al genérico (p=0,23); en sanciones a China y OTAN el genérico fue mejor (−4,6 y −2,8 pp). Mejor mensaje genérico: +6,2 pp.",
    "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "c_enso_conflicto",
-   "p": "contradice",
-   "o": "c_vulnerabilidad_decide",
-   "f": "F-544",
-   "apoyo": "Buhaug: el vínculo clima-conflicto no es robusto; la política pesa más. Tensión con la lectura causal climática (en disputa).",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "sequia",
-   "p": "aumenta",
-   "o": "violencia_pareja",
-   "f": "F-545",
-   "apoyo": "19 DHS (83.990 mujeres): sequía severa +3,0 pp pareja controladora y +0,8 pp violencia física.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "violencia_pareja",
-   "p": "tiene_limite",
-   "o": "lim_sequia_no_enso",
-   "f": "F-545",
-   "apoyo": "Exposición medida como sequía, no ENSO; plausible solo donde El Niño produce sequía.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "c_vulnerabilidad_decide",
-   "p": "aplica_a",
-   "o": "el_nino_enso",
-   "f": "F-546",
-   "apoyo": "Davis: las sequías ENSO 1876-1902 mataron 30-50 M con excedentes disponibles; la política convirtió sequía en hambruna.",
-   "lectura": "abstract",
-   "fuerza": "teorica"
-  },
-  {
-   "s": "nino_costero_peru",
-   "p": "asocia_con",
-   "o": "agro_norte",
-   "f": "F-547",
-   "apoyo": "Etnografía del desierto norteño: El Niño también es 'año de abundancia' (agua, pasto), no solo desastre.",
-   "lectura": "abstract",
-   "fuerza": "teorica"
-  },
-  {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "inseguridad_alimentaria_global",
-   "f": "F-549",
-   "apoyo": "2015-16: ~60 M afectados; 31,6 M en inseguridad alimentaria en África austral; 10,2 M en Etiopía.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "causal"
   }
  ],
- "notas": "El Niño · Macro, conflicto, violencia, alimentos y teoría (El Niño)"
+ "discrepancias": [
+  {
+   "f": "F-488",
+   "detalle": "La ficha lo registra como preprint de arXiv con 'revisión por pares no verificada' (🔵 B). Está publicado en Science 391(6792), 26-mar-2026 (Cheng, Lee, Khadpe, Yu, Han y Jurafsky), DOI 10.1126/science.aec8352: pasa a 🟢 A."
+  },
+  {
+   "f": "F-491",
+   "detalle": "La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542)."
+  }
+ ],
+ "notas": "Lectura a fondo de persuasión. Texto completo bloqueado por la red (arXiv, Science, PNAS); se leyeron resúmenes oficiales y, para F-499, las salidas del código de análisis publicado en GitHub. Se actualizan en su sitio T-135 (apoyo mal atribuido) y T-136 (detalle del repositorio).",
+ "actualizaciones_en_su_sitio": {
+  "T-135": {
+   "o": "c_persuasion_concentrada",
+   "apoyo": "Corregido: 770 italianos en 4 sesiones con 4 LLMs; el cambio de opinión se concentra en quienes confían más en la IA y son más amables, extravertidos y con más necesidad de cognición. (El +81,7% era de Salvi, F-542.)"
+  },
+  "T-136": {
+   "apoyo": "8.587 participantes, 4 temas: microtargeting no superó al genérico (p=0,23; código público en GitHub); en dos temas el genérico fue mejor. Mejor mensaje genérico: +6,2 pp (IC 4,5-7,9)."
+  }
+ }
 }

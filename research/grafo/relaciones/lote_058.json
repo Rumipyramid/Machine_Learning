@@ -1,0 +1,138 @@
+{
+ "fecha": "2026-10-07",
+ "f_ids": [
+  "F-767",
+  "F-768",
+  "F-769",
+  "F-770",
+  "F-771",
+  "F-773",
+  "F-774"
+ ],
+ "entidades": [
+  {
+   "id": "precio_alimentos",
+   "nombre": "Precio de los alimentos (limón 2023)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "desinformacion_clima",
+   "nombre": "Desinformación y pánico en redes ante lluvias",
+   "tipo": "concepto"
+  },
+  {
+   "id": "percepcion_abandono_estatal",
+   "nombre": "Percepción de abandono estatal (Reconstrucción, prevención no ejecutada)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "conducta_preparacion_hogar",
+   "nombre": "Acciones de preparación del hogar ante El Niño",
+   "tipo": "resultado"
+  },
+  {
+   "id": "pagos_seguros_2017",
+   "nombre": "Pagos de seguros por el Niño Costero 2017 (US$428 M)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "brecha_proteccion_nino_peru",
+   "nombre": "Brecha de protección ante El Niño en Perú (~7% del daño asegurado en 2017)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "reaseguro_internacional",
+   "nombre": "Reaseguro internacional",
+   "tipo": "concepto"
+  },
+  {
+   "id": "plan_prevencion_rimac",
+   "nombre": "Plan de Prevención de Riesgos Naturales 2025-26 de Rímac (empresas)",
+   "tipo": "intervencion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "precio_alimentos",
+   "f": "F-767",
+   "apoyo": "2023: limón +69,8% en agosto, hasta S/22/kg; memes 'aceptamos limones como pago'; ministro sugirió pollo en vez de ceviche.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desinformacion_clima",
+   "p": "aplica_a",
+   "o": "nino_costero_peru",
+   "f": "F-768",
+   "apoyo": "Audios 'apocalípticos' y videos viejos presentados como actuales; desmentidos por SENAMHI y verificadores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "percepcion_abandono_estatal",
+   "p": "asocia_con",
+   "o": "danos_nino_2017",
+   "f": "F-769",
+   "apoyo": "Reconstrucción con Cambios percibida como engaño: obras de 2017 sin ejecutar en Piura años después.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "percepcion_abandono_estatal",
+   "p": "asocia_con",
+   "o": "nino_costero_peru",
+   "f": "F-770",
+   "apoyo": "2023: solo 30% del presupuesto preventivo gastado a 45 días del cierre (Contraloría).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "conducta_preparacion_hogar",
+   "f": "F-771",
+   "apoyo": "Kantar n=884: 90% tomaría acción; 61,8% comida, 44% agua, 43% reforzar vivienda; en el norte la vivienda es prioridad (78,1%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "pagos_seguros_2017",
+   "f": "F-773",
+   "apoyo": "16.587 siniestros; US$428 M pagados y US$660 M de reserva a jun-2018; Lima 38%, Piura 31%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "brecha_proteccion_nino_peru",
+   "p": "origina_en",
+   "o": "pagos_seguros_2017",
+   "f": "F-773",
+   "apoyo": "APESEG: el seguro cubrió ~7% de US$9.200 M de daño físico (base en conflicto con F-763).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reaseguro_internacional",
+   "p": "parte_de",
+   "o": "pagos_seguros_2017",
+   "f": "F-773",
+   "apoyo": "Retención local 10,92%; reaseguro internacional 89,08%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pagos_seguros_2017",
+   "p": "asocia_con",
+   "o": "plan_prevencion_rimac",
+   "f": "F-774",
+   "apoyo": "Rímac atendió 2.368 siniestros y pagó US$145 M (~34% del mercado); origen del Centro de Monitoreo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "El Niño · Pista social y negocio histórico (El Niño, Perú) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+}

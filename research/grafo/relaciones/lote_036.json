@@ -1,0 +1,227 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-2",
+  "F-32",
+  "F-67",
+  "F-102",
+  "F-138",
+  "F-194",
+  "F-264",
+  "F-359"
+ ],
+ "entidades": [
+  {
+   "id": "penetracion_seguros_ocde",
+   "nombre": "Penetración de seguros promedio OCDE (primas/PBI)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "primas_vida_ocde_2024",
+   "nombre": "Crecimiento de primas brutas de vida en la OCDE (2024)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "tasas_interes_altas_2024",
+   "nombre": "Tasas de interés altas (2024)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "oecd_global_insurance_trends_2025",
+   "nombre": "OECD Global Insurance Market Trends 2025",
+   "tipo": "estudio"
+  },
+  {
+   "id": "utilidad_neta_swiss_re",
+   "nombre": "Utilidad neta y ROE de Swiss Re (FY2025 / Q1 2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "baja_siniestralidad_catastrofica",
+   "nombre": "Baja experiencia de catástrofes naturales en el período",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ley_29733_datos_personales",
+   "nombre": "Ley 29733 de Protección de Datos Personales (Perú)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "consentimiento_previo_expreso_datos",
+   "nombre": "Consentimiento previo, informado, expreso e inequívoco para tratar datos personales",
+   "tipo": "concepto"
+  },
+  {
+   "id": "financiamiento_salud_singapur_3m",
+   "nombre": "Esquema S+3M de Singapur (MediSave, MediShield Life, MediFund)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "medisave_singapur",
+   "nombre": "MediSave: cuenta de ahorro médico obligatoria (Singapur)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "medifund_singapur",
+   "nombre": "MediFund: fondo de asistencia para quienes no pueden pagar (Singapur)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "indecopi_sancion_bbva_llamada_2026",
+   "nombre": "Sanción de Indecopi a BBVA Perú por llamada publicitaria tras revocación del consentimiento (S/63.800, 2026)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "llamadas_comerciales_sin_consentimiento",
+   "nombre": "Llamadas publicitarias sin consentimiento vigente (spam)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "mlr_mercados_salud_eeuu",
+   "nombre": "Medical loss ratio por mercado de seguro de salud en EE.UU. (MA, Medicaid, individual, grupo)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "kff_desempeno_aseguradoras_2024",
+   "nombre": "KFF: Health Insurer Financial Performance in 2024",
+   "tipo": "estudio"
+  },
+  {
+   "id": "accesibilidad_web",
+   "nombre": "Mejoras de accesibilidad web/digital",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "alcance_mercado_digital",
+   "nombre": "Alcance de mercado (más usuarios alcanzados)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "experiencia_cliente_seguros",
+   "nombre": "Experiencia del cliente (CX) en aseguradoras",
+   "tipo": "constructo"
+  }
+ ],
+ "triples": [
+  {
+   "s": "tasas_interes_altas_2024",
+   "p": "aumenta",
+   "o": "primas_vida_ocde_2024",
+   "f": "F-2",
+   "apoyo": "OECD 2025: las primas brutas de vida crecieron 11,9% nominal en 2024 (6,5% en 2023), atribuido a tasas altas que hacen atractivos los productos de ahorro.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "oecd_global_insurance_trends_2025",
+   "p": "mide",
+   "o": "penetracion_seguros_ocde",
+   "f": "F-2",
+   "apoyo": "OECD 2025: la penetración total subió a 6,2% promedio OCDE en 2024 (6,0% en 2023) y 5,4% en todas las jurisdicciones, aún por debajo de hace una década.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "baja_siniestralidad_catastrofica",
+   "p": "aumenta",
+   "o": "utilidad_neta_swiss_re",
+   "f": "F-32",
+   "apoyo": "Swiss Re, comunicado Q1 2026: utilidad neta USD 1.500 M (+19%) y ROE 23,6% (22,4% previo), impulsados por baja siniestralidad catastrófica y fuerte aporte de inversiones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "consentimiento_previo_expreso_datos",
+   "p": "parte_de",
+   "o": "ley_29733_datos_personales",
+   "f": "F-67",
+   "apoyo": "Ley 29733 (Congreso del Perú, 2011): el art. 13 exige consentimiento previo, informado, expreso e inequívoco del titular para el tratamiento de sus datos personales.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "medisave_singapur",
+   "p": "parte_de",
+   "o": "financiamiento_salud_singapur_3m",
+   "f": "F-102",
+   "apoyo": "Commonwealth Fund (perfil Singapur): MediSave, ahorro obligatorio que cubre ~85% de los singapurenses, es uno de los 3M junto a MediShield Life y MediFund.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "medifund_singapur",
+   "p": "parte_de",
+   "o": "financiamiento_salud_singapur_3m",
+   "f": "F-102",
+   "apoyo": "Commonwealth Fund (perfil Singapur): MediFund es la red de seguridad para el ~10% que no puede pagar su atención pese al subsidio, dentro del esquema S+3M.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "indecopi_sancion_bbva_llamada_2026",
+   "p": "aplica_a",
+   "o": "llamadas_comerciales_sin_consentimiento",
+   "f": "F-138",
+   "apoyo": "Infobae 2026: la Sala de Indecopi confirmó multa de S/63.800 a BBVA por volver a llamar a un usuario que revocó su consentimiento y ordenó excluirlo de todas las bases, incluidas las de terceros.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "kff_desempeno_aseguradoras_2024",
+   "p": "mide",
+   "o": "mlr_mercados_salud_eeuu",
+   "f": "F-194",
+   "apoyo": "KFF (datos NAIC 2024): MLR de 91% en Medicaid managed care, 90% en Medicare Advantage, 88% en grupo y 85% en individual; subieron en todos los mercados vs. 2023.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "accesibilidad_web",
+   "p": "aumenta",
+   "o": "alcance_mercado_digital",
+   "f": "F-264",
+   "apoyo": "W3C WAI 2018 (Business Case): sostiene que la accesibilidad digital amplía el alcance de mercado, impulsa innovación y marca y reduce riesgo legal; apoyo en casos sin grupo de control.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "intermediarios_seguros",
+   "p": "asocia_con",
+   "o": "confianza_fuente",
+   "f": "F-359",
+   "apoyo": "McKinsey 2023 (encuesta a >8.500 clientes de las 40 mayores aseguradoras de Norteamérica): los clientes de vida ubican a los agentes como la fuente más confiable para aprender sobre seguros.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "experiencia_cliente_seguros",
+   "p": "asocia_con",
+   "o": "desempeno_financiero_firma",
+   "f": "F-359",
+   "apoyo": "McKinsey 2023: las aseguradoras líderes en CX superan a sus pares en TSR, crecimiento de ingresos y satisfacción de empleados y agentes.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-32",
+   "detalle": "La URL solo apunta al comunicado FY2025 (27-feb-2026); las cifras Q1 2026 (ROE 23,6% vs. 22,4%) vienen de un comunicado distinto del 7-may-2026 (pr-20260507-q1-2026).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-264",
+   "detalle": "Año 's/f' → 2018 (publicado 9-nov-2018 por el EOWG de W3C WAI); editora Sharron Rush.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-359",
+   "detalle": "Faltan autores (Mathew Lee, Tim Natriello, Arushee S, Dominique Sanders, David Schiff) y fecha exacta (21-sep-2023); URL ausente en la ficha, la oficial es mckinsey.com/.../elevating-customer-experience-a-win-win-for-insurers-and-customers.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a N6 (grupo n6_2): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

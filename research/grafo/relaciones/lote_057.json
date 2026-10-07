@@ -1,0 +1,129 @@
+{
+ "fecha": "2026-10-07",
+ "f_ids": [
+  "F-763",
+  "F-764",
+  "F-765",
+  "F-772",
+  "F-780",
+  "F-781",
+  "F-782",
+  "F-783"
+ ],
+ "entidades": [
+  {
+   "id": "danos_nino_1998",
+   "nombre": "Daños humanos y económicos del Niño 1997-98 (Perú)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "recesion_2023_peru",
+   "nombre": "Recesión y alza de pobreza en Perú 2023",
+   "tipo": "resultado"
+  },
+  {
+   "id": "poblacion_expuesta_inundacion",
+   "nombre": "Población en riesgo alto de inundación (57,5%, jun-2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_nino_2026_extraordinario",
+   "nombre": "El Niño 2026-27 alcanza magnitud extraordinaria/histórica",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "pesca_anchoveta",
+   "nombre": "Pesca de anchoveta y harina de pescado",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_noaa_evento_historico",
+   "nombre": "NOAA: >90% de un Niño muy fuerte y ~75% de uno histórico en 2026-27",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "danos_nino_2017",
+   "f": "F-763",
+   "apoyo": "INDECI: 162 muertos, 283 mil damnificados y 1,43 M afectados, 3.222 colegios y 937 EESS dañados; >US$3.000 M (~1,6% PBI).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "danos_nino_1998",
+   "f": "F-764",
+   "apoyo": "CAF: US$3.500 M (46% directo, 54% indirecto); 531.104 damnificados; >42 mil viviendas destruidas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "recesion_2023_peru",
+   "f": "F-765",
+   "apoyo": "2023: PBI −0,55%; emergencia climática ~1,5% del PBI; pesca −19,75%; pobreza 27,5% → ~29%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "poblacion_expuesta_inundacion",
+   "p": "aplica_a",
+   "o": "norte_costero_peru",
+   "f": "F-772",
+   "apoyo": "IPE: 19,9 M de peruanos (57,5%) en riesgo alto o muy alto de inundación (jun-2026); 94% de economistas ve preparación insuficiente.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_nino_2026_extraordinario",
+   "p": "origina_en",
+   "o": "nino_costero_peru",
+   "f": "F-780",
+   "apoyo": "ENFEN N.° 16-2026: Niño Costero de magnitud extraordinaria más probable set-2026 a ene-2027, hasta otoño 2027.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_noaa_evento_historico",
+   "p": "respalda",
+   "o": "c_nino_2026_extraordinario",
+   "f": "F-781",
+   "apoyo": "NOAA: >90% evento muy fuerte; ~75% histórico (≥+2,5 °C) en OND 2026 (leído vía secundarios).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "crecimiento_pbi",
+   "f": "F-782",
+   "apoyo": "BCRP: PBI 2026 3,4→3,2%, 2027 3,2→3,0%; impacto ~0,9 pp (2026) y ~1,1 pp (2027); pesca −30,7%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "pesca_anchoveta",
+   "f": "F-782",
+   "apoyo": "Proyección de pesca −30,7% en 2026 por la segunda temporada de anchoveta.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "danos_nino_2017",
+   "f": "F-783",
+   "apoyo": "2026: emergencia en 23 regiones; en Tumbes 82 viviendas destruidas y 2.934 afectadas (jul-2026); lluvias adelantadas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "El Niño · Datos oficiales y coyuntura 2026-27 (El Niño, Perú) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+}

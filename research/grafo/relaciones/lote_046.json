@@ -1,0 +1,270 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-677",
+  "F-678",
+  "F-679",
+  "F-680",
+  "F-681",
+  "F-682",
+  "F-683",
+  "F-684",
+  "F-685",
+  "F-686"
+ ],
+ "entidades": [
+  {
+   "id": "integracion_multisensorial",
+   "nombre": "Integración multisensorial (unir señales de distintos sentidos en un solo objeto)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "asociacion_color_emocion",
+   "nombre": "Asociaciones entre colores y emociones",
+   "tipo": "resultado"
+  },
+  {
+   "id": "proximidad_linguistica_geografica",
+   "nombre": "Proximidad lingüística y geográfica entre países",
+   "tipo": "concepto"
+  },
+  {
+   "id": "jonauskaite_2020_est",
+   "nombre": "Estudio Jonauskaite et al. 2020 (color-emoción en 30 países)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "exposicion_color_rojo",
+   "nombre": "Exposición breve al color rojo antes de una tarea",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "desempeno_cognitivo",
+   "nombre": "Desempeño en pruebas cognitivas o de logro",
+   "tipo": "resultado"
+  },
+  {
+   "id": "elliot_2007_est",
+   "nombre": "Estudio Elliot et al. 2007 (efecto del rojo en el logro)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_rojo_baja_desempeno",
+   "nombre": "Ver el color rojo antes de una prueba empeora el desempeño",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "gnambs_2020_est",
+   "nombre": "Meta-análisis Gnambs 2020 (efecto del rojo en desempeño)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "principios_gestalt",
+   "nombre": "Principios Gestalt de organización perceptual (proximidad, semejanza, continuidad, cierre, figura-fondo)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "agrupamiento_perceptual",
+   "nombre": "Agrupamiento perceptual (ver elementos sueltos como un todo)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ceguera_inatencional",
+   "nombre": "Ceguera por falta de atención (no ver un evento inesperado y visible por estar concentrado en otra tarea)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "simons_chabris_1999_est",
+   "nombre": "Estudio Simons y Chabris 1999 (gorila invisible)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "ceguera_al_cambio",
+   "nombre": "Ceguera al cambio (no notar cambios grandes en lo que se está mirando)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "pertenencia_grupo_social",
+   "nombre": "Pertenencia al mismo grupo social que el interlocutor",
+   "tipo": "concepto"
+  },
+  {
+   "id": "simons_levin_1998_est",
+   "nombre": "Estudio Simons y Levin 1998 (cambio de persona tras la puerta)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "ley_weber_fechner",
+   "nombre": "Ley de Weber-Fechner (la diferencia mínima perceptible es proporcional a la magnitud; la sensación crece como el logaritmo)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "representacion_logaritmica_numero",
+   "nombre": "Representación logarítmica de la cantidad en el cerebro",
+   "tipo": "concepto"
+  },
+  {
+   "id": "efecto_mcgurk",
+   "nombre": "Efecto McGurk (ver una boca decir 'ga' y oír 'ba' produce percibir un tercer sonido, 'da')",
+   "tipo": "resultado"
+  },
+  {
+   "id": "susceptibilidad_mcgurk",
+   "nombre": "Propensión individual estable a integrar voz y labios (susceptibilidad al McGurk)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "variabilidad_estimulo",
+   "nombre": "Variabilidad entre estímulos experimentales (la elección del estímulo cambia el resultado)",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "correspondencias_crossmodales",
+   "p": "aumenta",
+   "o": "integracion_multisensorial",
+   "f": "F-677",
+   "apoyo": "Spence 2011 (revisión): las correspondencias (tono agudo = pequeño, brillante, alto) restringen el problema de unión crossmodal junto a la congruencia semántica y espacio-temporal.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "jonauskaite_2020_est",
+   "p": "respalda",
+   "o": "asociacion_color_emocion",
+   "f": "F-678",
+   "apoyo": "Jonauskaite et al. 2020: patrones color-emoción universales en 30 países (similitud promedio r = .88; n = 4.598).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "proximidad_linguistica_geografica",
+   "p": "modera",
+   "o": "asociacion_color_emocion",
+   "f": "F-678",
+   "apoyo": "Jonauskaite et al. 2020: la similitud color-emoción es mayor entre países lingüística o geográficamente cercanos; el país predice más allá de lo universal.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "exposicion_color_rojo",
+   "p": "reduce",
+   "o": "desempeno_cognitivo",
+   "f": "F-679",
+   "apoyo": "Elliot et al. 2007: ver rojo antes de una prueba de CI o anagramas empeoró el desempeño (d de −0,51 a −1,14, según Gnambs 2020).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "elliot_2007_est",
+   "p": "respalda",
+   "o": "c_rojo_baja_desempeno",
+   "f": "F-679",
+   "apoyo": "Elliot et al. 2007: 4 experimentos muestran que percibir rojo brevemente antes de una prueba importante empeora el desempeño.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "gnambs_2020_est",
+   "p": "refuta",
+   "o": "c_rojo_baja_desempeno",
+   "f": "F-680",
+   "apoyo": "Gnambs 2020 (meta-análisis, 67 efectos): anagramas d = −0,06, conocimiento d = −0,04; corrigiendo sesgo de publicación no queda evidencia del efecto del rojo.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "sesgo_publicacion",
+   "p": "aumenta",
+   "o": "c_rojo_baja_desempeno",
+   "f": "F-680",
+   "apoyo": "Gnambs 2020: los estudios iniciales muestran efectos mucho mayores que los posteriores (meta-análisis acumulativo); el efecto del rojo está inflado.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "principios_gestalt",
+   "p": "aumenta",
+   "o": "agrupamiento_perceptual",
+   "f": "F-681",
+   "apoyo": "Wagemans et al. 2012 (revisión): los principios de agrupamiento y figura-fondo siguen siendo centrales, reformulados por la investigación contemporánea.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "principios_gestalt",
+   "p": "tiene_limite",
+   "o": "agrupamiento_perceptual",
+   "f": "F-681",
+   "apoyo": "Wagemans et al. 2012: la teoría Gestalt original tenía problemas empíricos y conceptuales (explicaciones vagas) que hoy se abordan con métodos cuantitativos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "carga_cognitiva",
+   "p": "aumenta",
+   "o": "ceguera_inatencional",
+   "f": "F-682",
+   "apoyo": "Simons y Chabris 1999: con la tarea de conteo difícil notó el evento 45% vs 64% con la fácil (cifras de resúmenes secundarios del paper).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "simons_chabris_1999_est",
+   "p": "respalda",
+   "o": "ceguera_inatencional",
+   "f": "F-682",
+   "apoyo": "Simons y Chabris 1999: cerca de la mitad de los observadores que contaban pases no vio al gorila que cruzaba la escena.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "simons_levin_1998_est",
+   "p": "respalda",
+   "o": "ceguera_al_cambio",
+   "f": "F-683",
+   "apoyo": "Simons y Levin 1998: solo la mitad de los peatones notó que su interlocutor había sido reemplazado por otra persona.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "pertenencia_grupo_social",
+   "p": "modera",
+   "o": "ceguera_al_cambio",
+   "f": "F-683",
+   "apoyo": "Simons y Levin 1998: los peatones del mismo grupo social que los experimentadores detectaron el cambio; los de otro grupo no.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "representacion_logaritmica_numero",
+   "p": "respalda",
+   "o": "ley_weber_fechner",
+   "f": "F-684",
+   "apoyo": "Dehaene 2003: las neuronas de número (Nieder y Miller 2003) muestran un correlato neuronal de Weber y una línea numérica mental logarítmica.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "susceptibilidad_mcgurk",
+   "p": "modera",
+   "o": "efecto_mcgurk",
+   "f": "F-685",
+   "apoyo": "Basu Mallick et al. 2015: la tasa de ilusión va de 0% a 100% entre personas; 77% la ve en >90% o <10% de ensayos; estable a un año.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "efecto_mcgurk",
+   "p": "tiene_limite",
+   "o": "variabilidad_estimulo",
+   "f": "F-686",
+   "apoyo": "Magnotti y Beauchamp 2015: la frecuencia de la ilusión varía enormemente entre estímulos; con un solo estímulo no se separa estímulo de persona (165 personas, ≤14 estímulos).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}

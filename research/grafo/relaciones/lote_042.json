@@ -1,0 +1,268 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-321",
+  "F-324",
+  "F-280",
+  "F-454",
+  "F-312",
+  "F-323",
+  "F-295",
+  "F-199",
+  "F-195",
+  "F-320",
+  "F-311",
+  "F-282"
+ ],
+ "entidades": [
+  {
+   "id": "ronda_serie_b_lovable",
+   "nombre": "Serie B de Lovable: US$330M a US$6.600M (dic-2025)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "conversaciones_ronda_lovable_2026",
+   "nombre": "Conversaciones para levantar US$300M a US$13.200M (jul-2026)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ronda_no_cerrada",
+   "nombre": "Ronda reportada en conversaciones, no cerrada",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "trafico_referido_llm",
+   "nombre": "Tráfico referido desde asistentes de IA (LLM)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "canva_arr",
+   "nombre": "ARR de Canva (US$4.000M a fin de 2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "crecimiento_ingresos_canva",
+   "nombre": "Crecimiento de ingresos previsto de Canva para 2026",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ipo_canva_2027",
+   "nombre": "Postergación de la IPO de Canva a 2027 por el cambio a créditos de IA",
+   "tipo": "concepto"
+  },
+  {
+   "id": "encuesta_figma_disenadores",
+   "nombre": "State of the Designer 2026 (Figma, 906 diseñadores)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "percepcion_campo_diseno",
+   "nombre": "Percepción del estado del campo del diseño",
+   "tipo": "resultado"
+  },
+  {
+   "id": "npvi_3m",
+   "nombre": "Meta 3M de 1988: 30% de ventas de productos con menos de 5 años",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ratio_equipos_producto",
+   "nombre": "Ratio investigador:diseñador:desarrollador",
+   "tipo": "metrica"
+  },
+  {
+   "id": "tamano_equipos_ux",
+   "nombre": "Tamaño relativo de los equipos de UX",
+   "tipo": "resultado"
+  },
+  {
+   "id": "tendencia_imperfect_by_design",
+   "nombre": "Tendencia 'Imperfect by Design' de Canva para 2026",
+   "tipo": "concepto"
+  },
+  {
+   "id": "busquedas_estetica_lofi",
+   "nombre": "Búsquedas de estéticas lo-fi y DIY en Canva",
+   "tipo": "resultado"
+  },
+  {
+   "id": "integracion_vertical_pbm",
+   "nombre": "Integración vertical PBM-aseguradora",
+   "tipo": "concepto"
+  },
+  {
+   "id": "concentracion_pbm",
+   "nombre": "Concentración del mercado de PBM en EE.UU.",
+   "tipo": "resultado"
+  },
+  {
+   "id": "loss_ratio_medico_q1_2025",
+   "nombre": "Loss ratio médico de aseguradoras públicas de EE.UU. en el 1T 2025",
+   "tipo": "resultado"
+  },
+  {
+   "id": "rediseno_checkout",
+   "nombre": "Rediseño del checkout según hallazgos de usabilidad",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "conversion_checkout",
+   "nombre": "Conversión del checkout",
+   "tipo": "resultado"
+  },
+  {
+   "id": "costos_extra_inesperados",
+   "nombre": "Costos extra inesperados en el checkout (envío, impuestos, cargos)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "uso_ia_trabajador",
+   "nombre": "Uso de IA por el trabajador",
+   "tipo": "constructo"
+  },
+  {
+   "id": "riesgo_despido",
+   "nombre": "Riesgo de despido",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ronda_serie_b_lovable",
+   "p": "tiene_limite",
+   "o": "lovable_churn_no_publicado",
+   "f": "F-321",
+   "apoyo": "Lovable/TechCrunch, 18-dic-2025: Serie B de US$330M a US$6.600M liderada por CapitalG y Menlo, con 2,3 M de usuarios; el anuncio no publica churn ni retención neta.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "conversaciones_ronda_lovable_2026",
+   "p": "tiene_limite",
+   "o": "ronda_no_cerrada",
+   "f": "F-320",
+   "apoyo": "TechCrunch, 9-jul-2026: Lovable negocia US$300M a US$13.200M (el doble de dic-2025) con Menlo como líder probable; ARR de US$500M en junio. Son conversaciones, no una ronda cerrada.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "trafico_referido_llm",
+   "p": "asocia_con",
+   "o": "canva_arr",
+   "f": "F-324",
+   "apoyo": "TechCrunch, 18-feb-2026: Canva llegó a US$4.000M de ARR a fin de 2025 con 265 M de usuarios activos y 31 M de pago; el tráfico referido desde LLMs crece y el negocio B2B duplicó a US$500M de ARR (cifras de la empresa).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "costo_ia_inferencia",
+   "p": "reduce",
+   "o": "crecimiento_ingresos_canva",
+   "f": "F-323",
+   "apoyo": "Capital Brief 2026: Canva bajó su previsión de crecimiento 2026 de 30% a 20% porque sus funciones de IA costaban mucho más de operar de lo previsto, y aplaza la IPO a 2027 mientras pasa a un modelo de créditos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ipo_canva_2027",
+   "p": "respalda",
+   "o": "c_impuesto_margen_ia",
+   "f": "F-323",
+   "apoyo": "Capital Brief 2026: el aplazamiento de la IPO de Canva por la economía de sus funciones de IA es un caso del costo de la IA presionando el margen de las herramientas de diseño.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "encuesta_figma_disenadores",
+   "p": "mide",
+   "o": "percepcion_campo_diseno",
+   "f": "F-280",
+   "apoyo": "Figma, State of the Designer 2026 (906 diseñadores): 36% dice que el campo mejoró, 35% que empeoró y 29% que no cambió.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "npvi_3m",
+   "p": "es_tipo_de",
+   "o": "kpi_innovacion_ventas_productos_nuevos",
+   "f": "F-454",
+   "apoyo": "3M popularizó en 1988 el Índice de Vitalidad de Nuevos Productos con la meta pública de 30% de ventas de productos con menos de 5 años; llegó a 31% en 2010 y 33% en 2012.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ratio_equipos_producto",
+   "p": "mide",
+   "o": "tamano_equipos_ux",
+   "f": "F-312",
+   "apoyo": "Nielsen Norman Group: en su encuesta de 2020, el ratio más típico investigador:diseñador:desarrollador fue 1:5:50.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tendencia_imperfect_by_design",
+   "p": "asocia_con",
+   "o": "busquedas_estetica_lofi",
+   "f": "F-295",
+   "apoyo": "Canva, dic-2025 (datos de su plataforma): +527% en búsquedas de estética lo-fi, +220% en 'liminal', +90% en DIY; 80% de creadores dice que 2026 es el año de recuperar el control creativo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "integracion_vertical_pbm",
+   "p": "asocia_con",
+   "o": "concentracion_pbm",
+   "f": "F-199",
+   "apoyo": "Drug Channels Institute, mar-2026: en 2025 tres PBM integrados con aseguradoras (Express Scripts 31%, CVS Caremark 26%, Optum Rx 23%) procesaron el 80% de las recetas equivalentes de EE.UU.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "loss_ratio_medico_q1_2025",
+   "p": "asocia_con",
+   "o": "margen_salud_eeuu",
+   "f": "F-195",
+   "apoyo": "Oliver Wyman, may-2025: en el 1T 2025 el loss ratio promedio de las aseguradoras de salud públicas cayó 5,5% frente al 4T 2024 (en línea con el 1T 2024) y el margen promedio subió 3,8%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "rediseno_checkout",
+   "p": "aumenta",
+   "o": "conversion_checkout",
+   "f": "F-311",
+   "apoyo": "Baymard Institute 2026: un sitio grande promedio podría subir 35,26% su conversión solo rediseñando el checkout (potencial modelado, no medido), con US$260.000 M recuperables en EE.UU. y la UE.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "costos_extra_inesperados",
+   "p": "aumenta",
+   "o": "abandono_checkout_complejidad",
+   "f": "F-311",
+   "apoyo": "Baymard Institute 2026: el abandono de carrito promedia 70,19% (49 estudios); los costos extra inesperados son la primera causa (48% de los abandonos no exploratorios).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "uso_ia_trabajador",
+   "p": "reduce",
+   "o": "riesgo_despido",
+   "f": "F-282",
+   "apoyo": "Gallup, feb-2026 (>23.000 trabajadores de EE.UU.), vía Fox Business: en tecnología, quienes usan IA al menos mensualmente tienen ~6% de riesgo previsto de despido frente a 18% de los que casi no la usan, controlando edad, educación e industria.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "uso_ia_trabajador",
+   "p": "contradice",
+   "o": "c_ia_principal_causa_despidos",
+   "f": "F-282",
+   "apoyo": "Gallup 2026: solo 1% de los despedidos cita la IA o la automatización como causa principal, y 62% de los despedidos no usaba IA.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Lote del cierre de N6, con fuentes verificadas directamente el 2026-10-04 (resúmenes oficiales, comunicados de los emisores o los propios artículos de prensa vía búsqueda). Se priorizaron fuentes conocidas y fáciles de verificar porque el cupo de búsquedas de los agentes se agotó."
+}

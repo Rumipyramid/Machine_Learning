@@ -19,9 +19,11 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/_nodes/material-visual-venta-consultiva.md` | Material visual en venta consultiva: qué reduce incertidumbre y facilita la elección | Fuentes F-119 a F-127 |
 | `research/_nodes/transicion-venta-fria-a-opt-in.md` | Cómo transicionan organizaciones de venta fría a opt-in; reducir desconfianza al pedir datos | Fuentes F-128 a F-146 |
 | `research/_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` | Escalas y metodologías para medir calidad de agentes de IA conversacionales | Fuentes F-147 a F-159 |
-| `research/_nodes/tendencias-diseno-innovacion.md` | **Node acumulativo** de tendencias en **diseño e innovación**: impacto tangible demostrado vs. propuesta sin respaldo | ⚠️ **Alcance ampliado el 2026-08-02** de "diseño" a "diseño e innovación" (§0 del node manda sobre el prompt de la rutina, que todavía dice solo "diseño"); el node se renombró de `tendencias-diseno.md`. Se enriquece en cada corrida recurrente de `/trinidad`: escala de madurez de evidencia, tablero de hipótesis vivas (confrontar antes que buscar novedad), reglas de criterio destiladas y bitácora de iteraciones. **v4.1 (iter. 5, 2026-10-02; 5f-5g 2026-10-03: §2.9 puente A/B, H7/H9 parcial, H25 respaldada, H13 degradada a parcial)**: 34 hipótesis, 22 reglas (iter. 4: 2026-08-02). Iter. 5 = F-469 a F-476. **Ledger: F-1 a F-588** (iteración de seguros 2026-10-02: F-477 a F-487). 🎨 Diseño: F-237 a F-328, F-380 a F-398, F-399 a F-429 · 💡 Innovación: F-430 a F-468 |
+| `research/_nodes/tendencias-diseno-innovacion.md` | **Node acumulativo** de tendencias en **diseño e innovación**: impacto tangible demostrado vs. propuesta sin respaldo | ⚠️ **Alcance ampliado el 2026-08-02** de "diseño" a "diseño e innovación" (§0 del node manda sobre el prompt de la rutina, que todavía dice solo "diseño"); el node se renombró de `tendencias-diseno.md`. Se enriquece en cada corrida recurrente de `/trinidad`: escala de madurez de evidencia, tablero de hipótesis vivas (confrontar antes que buscar novedad), reglas de criterio destiladas y bitácora de iteraciones. **v4.1 (iter. 5, 2026-10-02; 5f-5g 2026-10-03: §2.9 puente A/B, H7/H9 parcial, H25 respaldada, H13 degradada a parcial; 5i: H22, H30 y H27 refutadas, H23 parcial, H35 nueva, F-529 a F-541)**: 35 hipótesis, 22 reglas (iter. 4: 2026-08-02). Iter. 5 = F-469 a F-476. **Ledger: F-1 a F-801** (iteración de seguros 2026-10-02: F-477 a F-487). 🎨 Diseño: F-237 a F-328, F-380 a F-398, F-399 a F-429 · 💡 Innovación: F-430 a F-468 |
 | `research/_nodes/conducta-humano-ia.md` | **Node** de conducta humano-IA: confianza/explicabilidad, sobre-confianza, adulación, persuasión conversacional y descarga cognitiva; tablero de hipótesis HC1-HC8 y reglas provisionales | v1.1 (iteración 2, 2026-10-02: empírica + social + negocio/legal + adversarial); fuentes F-488 a F-503 + consolida F-16 a F-27, F-242 a F-246, F-254, F-257, F-401, F-442, F-474 |
-| `research/_nodes/fenomeno-el-nino-impacto-personas.md` | Impacto del Fenómeno El Niño en la vida de las personas (cuanti + cualitativo; empírica, social y negocio) | `/trinidad` 2026-10-07, v1.1; incluye coyuntura del Niño Costero extraordinario 2026-27 (ENFEN/NOAA/BCRP) y §8 oportunidades para RIMAC (output: `research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`); fuentes F-529 a F-588 |
+| `research/_nodes/convergencia-psicologia-economia-ia.md` | **Node** de convergencia psicología + economía + IA: LLMs como sujetos simulados (homo silicus) y sus fallas, modelos fundacionales de cognición (Centaur), sesgos en la IA, agentes como actores económicos, negocio de encuestados sintéticos | v1.0 (`/trinidad`, 2026-10-03); fuentes F-543 a F-645 (empírica F-543 a F-598 · social F-599 a F-616 · negocio F-617 a F-645). §6 evalúa qué fallas de las muestras sintéticas afectan a `lapuerta`; tablero PE1-PE8 |
+| `research/_nodes/fenomenos-psicologicos.md` | **Capa transversal** de fenómenos psicológicos clásicos (44) con su estado de replicación: influencia social (Asch, Milgram, Stanford, espectador, disonancia), percepción (tiempo, forma, color, Gestalt, cegueras de atención), cognición encarnada y priming, juicio y memoria | v1.0 (2026-10-04); fuentes F-647 a F-741 (sin F-734, duplicado retirado); estados 🟢/🔵/🟡/🟠/🔴; reglas RF1-RF6 y preguntas PF1-PF6. **Antes de apoyar una decisión en un efecto psicológico, consultar su estado aquí** |
+| `research/_nodes/fenomeno-el-nino-impacto-personas.md` | Impacto del Fenómeno El Niño en la vida de las personas (cuanti + cualitativo; empírica, social y negocio) | `/trinidad` 2026-10-07, v1.1; incluye coyuntura del Niño Costero extraordinario 2026-27 (ENFEN/NOAA/BCRP) y §8 oportunidades para RIMAC (output: `research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`); fuentes F-742 a F-801 (renumeradas desde F-529 a F-588 al integrar la rama de N6) |
 | `research/_nodes/modelo-personas-sinteticas.md` | Historia conceptual del modelo `lapuerta` (excepción de alcance de `alma.md`: no cubre `research/personas/`, pero este node sí existe) | No mueve el código/schema — solo los cita |
 | `research/personas/generador/` | Fuente de verdad del modelo de personas sintéticas | generador + esquema + matriz + tooling de calibración |
 | `research/personas/generador/synthetic_user_schema.json` | Esquema machine-readable (v1.2, 17 variables) | Lo consume el generador |
@@ -44,7 +46,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: barrido incremental (grupos de 5) de literatura 🟢A del códice para el modelo `lapuerta` | Nunca aplica solo — memoria en `research/updates/cerrajero_barrido_estado.json`, siempre pregunta antes de tocar el modelo |
 | `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/chacal/` · `research/grafo/chacal.py` · `research/garaje/` | Skill `/chacal`: **auditor** que le hace 3 preguntas a Mu (diseño · conducta humano-IA · seguros), mide la evidencia detrás de cada respuesta con semáforos deterministas (`chacal_rubrica.json`) y deja apuntes en el **garaje** (`research/garaje/`: auditorías, `bitacora.jsonl`, `INDICE.md`) | Solo escribe en `garaje/`; no edita nodes/ledger; fuera del alcance de `alma.md` |
-| `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger |
+| `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger. 🎨 **Identidad de marca de Mu** (2026-10-03): `.claude/skills/mu/IDENTIDAD.md` + `mu-base.css` — **toda pieza que se pida de Mu usa ese estilo** (blanco/negro + naranja de alerta, Impact + mono, esquinas rectas, reglas de 8px). Guía de uso: `research/grafo/mu_guia.html`. 💬 **Pregúntale a Mu** (artefacto privado https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm): `research/grafo/preguntar/index.html` + `build_corpus.py` (regenerar `mu-corpus.json` y republicar cuando cambien nodes o ledger). Capacidades `sample`, `db`, `user`: lleva el **backlog de temas**, el protocolo de temas sin cobertura y el **instrumento de impacto** "¿Te sirvió?" (ver secciones abajo) |
 | `.claude/skills/grafo/` | Skill `/grafo`: regenera y explica `research/grafo/ESTADO.md` y conduce el barrido semántico del códice por lotes | Reporta fallas de integridad sin maquillar |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
@@ -175,6 +177,37 @@ pida:
 5. **Nunca borres nodes existentes.** Si un node queda obsoleto, dilo y pregunta antes de
    tocarlo.
 
+### 📌 Protocolo de backlog de temas (preguntas a Mu)
+Cada pregunta que se le hace a Mu alimenta un **backlog de temas** (regla del usuario, 2026-10-04):
+
+- **Dónde vive:** base de datos del artefacto "Pregúntale a Mu" (https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm):
+  colección `consultas` (una entrada por pregunta: `q`, `tema_id`, `tema`, `cubierto` si/parcial/no, `node`,
+  `fuentes_citadas`, `at`, `quien`) y colección `temas` (`tema`, `creado`, `protocolo`, `protocolo_fecha`,
+  `protocolo_consultas`, `avisado`, `avisado_fecha`). Foto legible en `research/garaje/backlog_temas.md`.
+- **Clasificación:** tras cada respuesta, una llamada rápida asigna el tema (reutiliza el `tema_id` si ya existe) y la
+  cobertura; regla fija: si la respuesta no cita ninguna fuente del ledger, cuenta como **sin cobertura**.
+- **Protocolo:** un tema con **más de 3 consultas sin cobertura** se marca `protocolo: true` (alerta naranja en la página)
+  y la rutina diaria "Protocolo de temas e impacto de Mu" (8:54 Lima, trigger `trig_01A1iWxo1HNptWpthvm5hapP`) le avisa al
+  usuario que debe explorarse como conocimiento nuevo, marca `avisado` y regenera el backlog del repo.
+- **Preguntas hechas en una sesión de Claude Code** (no en el artefacto): si la pregunta va dirigida a Mu o a lo que
+  sabe el cerebro, regístrala igual con `ArtifactData` `set` en `consultas` (doc_id nuevo, mismo esquema), reutilizando
+  el `tema_id` existente si lo hay; si con eso un tema supera el umbral, actualiza `temas` y avísale al usuario en el acto.
+
+### 📌 Instrumento de impacto (nivel N7 de Mu)
+Desde 2026-10-04 el impacto de Mu fuera del repo se mide (antes N7 era inalcanzable por falta de instrumento):
+
+- **En el artefacto:** debajo de cada respuesta, "¿Te sirvió?" (sí, decidí o hice algo · útil, sin decisión · no me
+  sirvió); si hubo decisión se anota qué y dónde. Va a la colección `usos` (doc_id = id de la consulta: `consulta_id`,
+  `tema_id`, `node`, `fuentes`, `valor` decision/util/no_util, `decision`, `donde`, `at`, `quien`). Panel "IMPACTO MEDIDO"
+  en la página.
+- **Fuera del artefacto:** si el usuario cuenta en una sesión que usó a Mu para decidir algo (reunión, propuesta,
+  producto), agrégalo como una línea JSON en `research/grafo/impacto_manual.jsonl` (`fecha`, `decision`, `donde`, `node`,
+  `fuentes`, `evidencia`).
+- **Foto en el repo:** `python research/grafo/impacto.py --db <dir exportado con ArtifactData list out_dir>` →
+  `research/grafo/impacto.json` (solo conteos, nunca ids de personas) → lo leen `/mu` (N7) y `ESTADO.md` (M8). La rutina
+  diaria lo regenera. Criterios N7 en `niveles.json`: ≥30 preguntas reales, ≥2 personas, ≥10 valoradas, ≥60% útiles,
+  ≥3 decisiones. Las decisiones son **autodeclaradas**: prueban uso, no que la decisión fuera buena.
+
 ### 📌 Skill: `lapuerta` (usuarios sintéticos de seguros)
 Generador + simulador de usuarios sintéticos empaquetado como **skill compartible** (autocontenido).
 
@@ -293,6 +326,10 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   se registra en `research/fuentes/codice.md` (resumen, rigurosidad, autor, año) —
   consultable con el skill `/codice`. Aplica también a lo que traigan `/gossip`
   (noticias/redes) y `/marketer` (benchmarks de negocio), no solo a `/seeker`.
+- **Correcciones al ledger:** cifras, hallazgos, rigor o URL de una ficha solo se corrigen con autorización del
+  usuario. **Excepción permanente (2026-10-03):** autor, año, revista, volumen o DOI faltantes o mal registrados se
+  corrigen sin preguntar cuando se verificaron contra el resumen oficial; se anota en la ficha y se informa al cierre
+  (detalle en `.claude/skills/grafo/SKILL.md`).
 - ⚠️ Datos sintéticos: prototipado/balanceo/simulación, **no** inferencia causal ni personas reales.
 
 ---

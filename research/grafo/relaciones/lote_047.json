@@ -1,0 +1,260 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-687",
+  "F-688",
+  "F-689",
+  "F-690",
+  "F-691",
+  "F-692",
+  "F-693",
+  "F-694",
+  "F-695",
+  "F-696"
+ ],
+ "entidades": [
+  {
+   "id": "efecto_stroop",
+   "nombre": "Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "macleod_1991_est",
+   "nombre": "Revisión MacLeod 1991 (50 años de efecto Stroop)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "paradoja_fiabilidad",
+   "nombre": "Paradoja de la fiabilidad (efectos robustos a nivel grupo, poco confiables para medir a cada persona)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "cognicion_encarnada",
+   "nombre": "Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores",
+   "tipo": "concepto"
+  },
+  {
+   "id": "simulacion_modal",
+   "nombre": "Simulación modal: re-activar estados perceptivos, motores e introspectivos para pensar",
+   "tipo": "constructo"
+  },
+  {
+   "id": "c_cognicion_simbolos_amodales",
+   "nombre": "La cognición es cómputo sobre símbolos abstractos (amodales), independiente de la percepción y la acción",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "descarga_cognitiva_entorno",
+   "nombre": "Descarga de trabajo cognitivo en el entorno (offloading)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_entorno_parte_sistema_cognitivo",
+   "nombre": "El entorno es parte del sistema cognitivo (mente extendida)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "fundamentacion_por_interaccion",
+   "nombre": "Fundamentación por interacción: conceptos abstractos que se enriquecen con información sensoriomotora",
+   "tipo": "concepto"
+  },
+  {
+   "id": "activacion_sensoriomotora_no_prueba",
+   "nombre": "La activación sensoriomotora al pensar no prueba que el concepto sea encarnado (también la explica la propagación de activación)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "poder_explicativo_limitado_encarnada",
+   "nombre": "La cognición encarnada no aporta explicaciones nuevas a los problemas clásicos de la psicología experimental",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "calidez_fisica",
+   "nombre": "Exposición breve a calor físico (café caliente, compresa térmica)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_calidez_fisica_social",
+   "nombre": "Sentir calor físico aumenta la calidez interpersonal y la conducta prosocial (Williams y Bargh 2008)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "conducta_prosocial",
+   "nombre": "Conducta prosocial (elegir en beneficio de otro)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_calidez_fisica_sin_efecto",
+   "nombre": "El calor físico breve no aumenta la elección prosocial (réplica, N = 861)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "poses_de_poder",
+   "nombre": "Poses de poder (posturas expansivas breves)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_poses_poder_hormonas_riesgo",
+   "nombre": "Las poses de poder suben la testosterona, bajan el cortisol y aumentan la tolerancia al riesgo (Carney et al. 2010)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sensacion_subjetiva_poder",
+   "nombre": "Sensación subjetiva de poder (autorreporte)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_poses_poder_sin_efecto_fisiologico",
+   "nombre": "Las poses de poder no cambian hormonas ni conducta de riesgo (réplica N = 200)",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "macleod_1991_est",
+   "p": "respalda",
+   "o": "efecto_stroop",
+   "f": "F-687",
+   "apoyo": "MacLeod 1991: unos 400 estudios en 50 años dejan 18 hallazgos confiables sobre la interferencia Stroop.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "efecto_stroop",
+   "p": "tiene_limite",
+   "o": "paradoja_fiabilidad",
+   "f": "F-688",
+   "apoyo": "Hedge et al. 2018: el Stroop es muy replicable en promedio pero su ICC test-retest es .60-.67; fiabilidades de 7 tareas entre 0 y .82.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "simulacion_modal",
+   "p": "parte_de",
+   "o": "cognicion_encarnada",
+   "f": "F-689",
+   "apoyo": "Barsalou 2008: simulaciones modales, estados corporales y acción situada subyacen a la cognición; es el núcleo de la cognición fundamentada.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cognicion_encarnada",
+   "p": "contradice",
+   "o": "c_cognicion_simbolos_amodales",
+   "f": "F-689",
+   "apoyo": "Barsalou 2008 rechaza la visión tradicional de la cognición como cómputo sobre símbolos amodales en un sistema modular separado de percepción y acción.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "descarga_cognitiva_entorno",
+   "p": "parte_de",
+   "o": "cognicion_encarnada",
+   "f": "F-690",
+   "apoyo": "Wilson 2002: 'descargamos trabajo cognitivo en el entorno' es una de las seis tesis de la cognición encarnada, juzgada al menos parcialmente cierta.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_entorno_parte_sistema_cognitivo",
+   "p": "tiene_limite",
+   "o": "cognicion_encarnada",
+   "f": "F-690",
+   "apoyo": "Wilson 2002 califica de 'profundamente problemática' la tesis de que el entorno forma parte del sistema cognitivo: no todas las tesis encarnadas valen lo mismo.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "activacion_sensoriomotora_no_prueba",
+   "p": "tiene_limite",
+   "o": "cognicion_encarnada",
+   "f": "F-691",
+   "apoyo": "Mahon y Caramazza 2008: que se activen áreas sensoriales y motoras al procesar conceptos no prueba la encarnación; una visión desencarnada con propagación de activación lo explica igual.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "fundamentacion_por_interaccion",
+   "p": "contradice",
+   "o": "cognicion_encarnada",
+   "f": "F-691",
+   "apoyo": "Mahon y Caramazza 2008 sostienen que la forma fuerte de la hipótesis encarnada choca con la evidencia neuropsicológica y proponen conceptos abstractos 'instanciados' por lo sensoriomotor.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "poder_explicativo_limitado_encarnada",
+   "p": "tiene_limite",
+   "o": "cognicion_encarnada",
+   "f": "F-692",
+   "apoyo": "Goldinger et al. 2016: varios supuestos de la cognición encarnada son inaceptables y no ofrecen comprensión útil de los problemas clásicos de la psicología experimental.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "calidez_fisica",
+   "p": "aumenta",
+   "o": "conducta_prosocial",
+   "f": "F-693",
+   "apoyo": "Williams y Bargh 2008 (estudio 2): con compresa caliente se eligió más el regalo para un amigo (~75% vs. 54% con fría, cifras de divulgación). No replicado después (Lynott et al. 2014).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_calidez_fisica_social",
+   "p": "origina_en",
+   "o": "cognicion_encarnada",
+   "f": "F-693",
+   "apoyo": "Williams y Bargh 2008 enmarcan el efecto como metáfora encarnada: la ínsula procesaría tanto la temperatura física como la calidez interpersonal (confianza).",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_calidez_fisica_sin_efecto",
+   "p": "refuta",
+   "o": "c_calidez_fisica_social",
+   "f": "F-694",
+   "apoyo": "Lynott et al. 2014: tres réplicas de alto poder del estudio 2 de Williams y Bargh; sin efecto en ningún laboratorio ni en conjunto (N = 861).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "poses_de_poder",
+   "p": "aumenta",
+   "o": "sensacion_subjetiva_poder",
+   "f": "F-695",
+   "apoyo": "Carney et al. 2010 (N = 42): posturas de alto poder aumentaron la sensación de poder; es la única parte que Ranehill et al. 2015 sí replicaron.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_poses_poder_hormonas_riesgo",
+   "p": "origina_en",
+   "o": "cognicion_encarnada",
+   "f": "F-695",
+   "apoyo": "Carney et al. 2010 presentan el efecto como retroalimentación corporal: la postura cambia hormonas y conducta en hombres y mujeres.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_poses_poder_sin_efecto_fisiologico",
+   "p": "refuta",
+   "o": "c_poses_poder_hormonas_riesgo",
+   "f": "F-696",
+   "apoyo": "Ranehill et al. 2015 (N = 200, experimentador ciego): sin efecto significativo de las poses en hormonas ni en tres tareas conductuales.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "poses_de_poder",
+   "p": "aumenta",
+   "o": "sensacion_subjetiva_poder",
+   "f": "F-696",
+   "apoyo": "Ranehill et al. 2015 (N = 200) sí encontraron un efecto significativo en la sensación de poder autorreportada.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}

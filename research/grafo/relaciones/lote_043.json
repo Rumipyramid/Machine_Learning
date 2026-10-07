@@ -1,0 +1,245 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-647",
+  "F-648",
+  "F-649",
+  "F-650",
+  "F-651",
+  "F-652",
+  "F-653",
+  "F-654",
+  "F-655",
+  "F-656"
+ ],
+ "entidades": [
+  {
+   "id": "presion_mayoria_unanime",
+   "nombre": "Presión de una mayoría unánime que responde de forma equivocada",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "conformidad_mayoria",
+   "nombre": "Conformidad con la respuesta de la mayoría (tasa de errores conformes)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "colectivismo_cultural",
+   "nombre": "Colectivismo cultural (vs individualismo)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "c_conformidad_universal_estable",
+   "nombre": "La conformidad de Asch es un rasgo universal y estable en el tiempo",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_conformidad_varia_cultura_tiempo",
+   "nombre": "La conformidad tipo Asch varía por cultura y época (mayor en culturas colectivistas, en baja en EE.UU.)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "incentivo_precision",
+   "nombre": "Incentivo monetario por responder correctamente",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "orden_autoridad",
+   "nombre": "Órdenes de una figura de autoridad (experimentador) de continuar",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "obediencia_destructiva",
+   "nombre": "Obediencia a órdenes dañinas (llegar a la descarga máxima)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "modelo_desobediente",
+   "nombre": "Ver a un par que se niega a seguir las órdenes",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "legitimidad_autoridad",
+   "nombre": "Directividad, legitimidad y consistencia de la autoridad",
+   "tipo": "constructo"
+  },
+  {
+   "id": "cercania_victima",
+   "nombre": "Proximidad e intimidad con la persona afectada",
+   "tipo": "constructo"
+  },
+  {
+   "id": "pedido_explicito_parar",
+   "nombre": "Primer pedido explícito de la persona afectada de detenerse",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "seguidismo_comprometido",
+   "nombre": "Seguidismo comprometido (engaged followership): identificarse con la meta colectiva de la autoridad",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_obediencia_ciega",
+   "nombre": "Milgram demuestra obediencia ciega/pasiva a la autoridad",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_obediencia_por_identificacion",
+   "nombre": "La obediencia en Milgram nace de identificarse con la causa de la autoridad (seguidismo comprometido)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "escepticismo_participante",
+   "nombre": "Escepticismo del participante sobre la realidad del daño",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "presion_mayoria_unanime",
+   "p": "aumenta",
+   "o": "conformidad_mayoria",
+   "f": "F-647",
+   "apoyo": "Asch 1956: ante una mayoría unánime de cómplices que elige una línea claramente incorrecta, los participantes se conformaron en ~1/3 de los ensayos críticos.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "colectivismo_cultural",
+   "p": "asocia_con",
+   "o": "conformidad_mayoria",
+   "f": "F-648",
+   "apoyo": "Bond & Smith 1996: en 133 estudios de 17 países, el colectivismo cultural se relaciona significativamente con mayor conformidad en la tarea de Asch.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_conformidad_varia_cultura_tiempo",
+   "p": "contradice",
+   "o": "c_conformidad_universal_estable",
+   "f": "F-648",
+   "apoyo": "Bond & Smith 1996: la conformidad varía por cultura y en estudios de EE.UU. declinó desde los años 50; no es una constante universal.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "presion_mayoria_unanime",
+   "p": "aumenta",
+   "o": "conformidad_mayoria",
+   "f": "F-649",
+   "apoyo": "Franzen & Mader 2023 (N=210): 33% de errores conformes en la tarea estándar de Asch, replicando el original; 38% en opiniones políticas.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "incentivo_precision",
+   "p": "reduce",
+   "o": "conformidad_mayoria",
+   "f": "F-649",
+   "apoyo": "Franzen & Mader 2023: en un ensayo aleatorizado, pagar por acertar bajó el error conforme de 33% a 25%, aunque la influencia social siguió presente.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "orden_autoridad",
+   "p": "aumenta",
+   "o": "obediencia_destructiva",
+   "f": "F-650",
+   "apoyo": "Milgram 1963: 26 de 40 participantes (65%) llegaron a 450 V bajo las órdenes del experimentador.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "orden_autoridad",
+   "p": "aumenta",
+   "o": "obediencia_destructiva",
+   "f": "F-651",
+   "apoyo": "Burger 2009 (N=70, hasta 150 V): las tasas de obediencia fueron solo algo menores que las de Milgram 45 años antes.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "modelo_desobediente",
+   "p": "tiene_limite",
+   "o": "obediencia_destructiva",
+   "f": "F-651",
+   "apoyo": "Burger 2009: contra lo esperado, quienes vieron a un cómplice negarse obedecieron tanto como quienes no lo vieron.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "orden_autoridad",
+   "p": "aumenta",
+   "o": "obediencia_destructiva",
+   "f": "F-652",
+   "apoyo": "Doliński et al. 2017 (Polonia): ~90% de participantes dispuesto a llegar al nivel más alto de la versión acotada del generador.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "legitimidad_autoridad",
+   "p": "modera",
+   "o": "obediencia_destructiva",
+   "f": "F-653",
+   "apoyo": "Haslam, Loughnan & Perry 2014 (21 condiciones, N=740; obediencia media 43,6%): directividad, legitimidad y consistencia del experimentador predicen continuar hasta 450 V.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "cercania_victima",
+   "p": "modera",
+   "o": "obediencia_destructiva",
+   "f": "F-653",
+   "apoyo": "Haslam, Loughnan & Perry 2014: la proximidad e intimidad entre maestro y aprendiz figuran entre los 8 factores que cambian la probabilidad de llegar a 450 V.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "pedido_explicito_parar",
+   "p": "reduce",
+   "o": "obediencia_destructiva",
+   "f": "F-654",
+   "apoyo": "Packer 2008 (8 experimentos): la desobediencia se concentra en 150 V, el primer pedido de liberación (36,8% de desobedientes vs 3,5% al azar), no en el dolor creciente.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "seguidismo_comprometido",
+   "p": "asocia_con",
+   "o": "obediencia_destructiva",
+   "f": "F-655",
+   "apoyo": "Haslam et al. 2015 (archivo de Yale): los participantes estaban contentos de haber servido a la ciencia; la disposición a dañar dependía de identificarse con esa meta colectiva.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_obediencia_por_identificacion",
+   "p": "contradice",
+   "o": "c_obediencia_ciega",
+   "f": "F-655",
+   "apoyo": "Haslam et al. 2015: las respuestas de archivo muestran participantes comprometidos con una causa, no autómatas; proponen seguidismo comprometido en vez de obediencia pasiva.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "escepticismo_participante",
+   "p": "aumenta",
+   "o": "obediencia_destructiva",
+   "f": "F-656",
+   "apoyo": "Perry et al. 2020: en 18 de 23 variantes de Milgram, quienes creían plenamente causar dolor eligieron descargas menores; el escepticismo infló la obediencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "escepticismo_participante",
+   "p": "tiene_limite",
+   "o": "c_obediencia_ciega",
+   "f": "F-656",
+   "apoyo": "Perry et al. 2020: parte de la obediencia de Milgram se explica por participantes que no creían que el daño fuera real, lo que limita la lectura de obediencia a órdenes dañinas.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}

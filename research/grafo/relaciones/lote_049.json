@@ -1,0 +1,269 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-707",
+  "F-708",
+  "F-709",
+  "F-710",
+  "F-711",
+  "F-712",
+  "F-713",
+  "F-714",
+  "F-715",
+  "F-716"
+ ],
+ "entidades": [
+  {
+   "id": "agotamiento_del_ego",
+   "nombre": "Agotamiento del ego: el autocontrol gastaría un recurso limitado",
+   "tipo": "constructo"
+  },
+  {
+   "id": "tarea_autocontrol_previa",
+   "nombre": "Tarea previa que exige autocontrol (resistir tentaciones, suprimir emociones)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_autocontrol_recurso_limitado",
+   "nombre": "Ejercer autocontrol agota un recurso común y reduce el autocontrol posterior (Baumeister et al. 1998)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "persistencia_tarea",
+   "nombre": "Persistencia en una tarea posterior",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_agotamiento_ego_nulo",
+   "nombre": "El agotamiento del ego no aparece en réplicas preregistradas (d ≈ 0,04-0,06)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "amenaza_moral",
+   "nombre": "Recordar o cometer una falta moral (amenaza a la pureza moral)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_efecto_macbeth",
+   "nombre": "Una amenaza moral aumenta el deseo de limpiarse físicamente (efecto Macbeth)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "deseo_limpieza_fisica",
+   "nombre": "Deseo de limpieza física (productos, toallitas)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_macbeth_no_replica",
+   "nombre": "El efecto Macbeth no aparece en réplicas directas de mayor poder (Earp et al. 2014)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "tasa_replicacion_psicologia",
+   "nombre": "Tasa de replicación de hallazgos de psicología",
+   "tipo": "metrica"
+  },
+  {
+   "id": "encogimiento_efecto_replica",
+   "nombre": "Los efectos replicados son mucho menores que los originales (~la mitad)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "fuerza_evidencia_original",
+   "nombre": "Fuerza de la evidencia del estudio original (p. ej., valor p, tamaño de efecto)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "replicacion_multilaboratorio",
+   "nombre": "Replicación multilaboratorio preregistrada (Many Labs, RRR)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_variacion_depende_del_efecto",
+   "nombre": "La replicabilidad depende más del efecto estudiado que de la muestra o el contexto",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "final_menos_aversivo",
+   "nombre": "Agregar un tramo final menos desagradable a una experiencia",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "preferencia_repetir_episodio",
+   "nombre": "Preferencia por repetir un episodio frente a otro",
+   "tipo": "resultado"
+  },
+  {
+   "id": "evaluacion_retrospectiva",
+   "nombre": "Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "negligencia_duracion",
+   "nombre": "Negligencia de la duración: la duración casi no pesa en el recuerdo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "intensidad_pico_final",
+   "nombre": "Intensidad en el peor momento (pico) y en el final de una experiencia",
+   "tipo": "constructo"
+  }
+ ],
+ "triples": [
+  {
+   "s": "tarea_autocontrol_previa",
+   "p": "reduce",
+   "o": "persistencia_tarea",
+   "f": "F-707",
+   "apoyo": "Baumeister et al. 1998: quienes resistieron chocolates abandonaron antes rompecabezas irresolubles. Tamaños de efecto no vistos en el resumen.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "agotamiento_del_ego",
+   "p": "media",
+   "o": "c_autocontrol_recurso_limitado",
+   "f": "F-707",
+   "apoyo": "Baumeister et al. 1998 proponen que elegir, suprimir emociones y autorregularse comparten un recurso interno común que se agota.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_agotamiento_ego_nulo",
+   "p": "refuta",
+   "o": "c_autocontrol_recurso_limitado",
+   "f": "F-708",
+   "apoyo": "Hagger et al. 2016: 23 laboratorios, N = 2.141; d = 0,04 (IC 95% −0,07 a 0,15), compatible con cero.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_agotamiento_ego_nulo",
+   "p": "refuta",
+   "o": "c_autocontrol_recurso_limitado",
+   "f": "F-709",
+   "apoyo": "Vohs et al. 2021 (36 sitios, N = 3.531, liderado por defensores): d = 0,06 no significativo; datos 4 veces más probables bajo la nula que con δ = 0,30.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "amenaza_moral",
+   "p": "aumenta",
+   "o": "deseo_limpieza_fisica",
+   "f": "F-710",
+   "apoyo": "Zhong y Liljenquist 2006: tras una amenaza moral subió el deseo de productos de limpieza y la probabilidad de tomar toallitas antisépticas. Earp et al. 2014 no lo replicaron.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_macbeth_no_replica",
+   "p": "refuta",
+   "o": "c_efecto_macbeth",
+   "f": "F-711",
+   "apoyo": "Earp et al. 2014: varias réplicas directas del estudio 2 con materiales originales, muestras de distintos países y más poder; ninguna detectó el efecto.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "tasa_replicacion_psicologia",
+   "p": "mide",
+   "o": "encogimiento_efecto_replica",
+   "f": "F-712",
+   "apoyo": "Open Science Collaboration 2015: 97% de originales significativos vs. 36% de réplicas; los efectos replicados midieron la mitad.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "fuerza_evidencia_original",
+   "p": "asocia_con",
+   "o": "tasa_replicacion_psicologia",
+   "f": "F-712",
+   "apoyo": "OSC 2015: el éxito de la réplica se predijo mejor por la fuerza de la evidencia original que por las características de los equipos.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "sesgo_publicacion",
+   "p": "aumenta",
+   "o": "encogimiento_efecto_replica",
+   "f": "F-712",
+   "apoyo": "Inferencia apoyada en OSC 2015: si los originales están sesgados (97% significativos), las réplicas imparciales muestran efectos menores (la mitad).",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "replicacion_multilaboratorio",
+   "p": "mide",
+   "o": "tasa_replicacion_psicologia",
+   "f": "F-713",
+   "apoyo": "Many Labs 1 (Klein et al. 2014): 13 efectos en 36 muestras (N = 6.344); 10 replicaron, 1 débil, 2 de priming no.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_variacion_depende_del_efecto",
+   "p": "tiene_limite",
+   "o": "priming_conductual",
+   "f": "F-713",
+   "apoyo": "Klein et al. 2014: los dos efectos que fallaron eran de priming (bandera y dinero); la replicabilidad dependió del efecto, no de la muestra.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "replicacion_multilaboratorio",
+   "p": "mide",
+   "o": "tasa_replicacion_psicologia",
+   "f": "F-714",
+   "apoyo": "Many Labs 2 (Klein et al. 2018): 28 hallazgos, N = 15.305 en 36 países; 54% replicó con p < 0,05 y 50% con p < 0,0001.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_variacion_depende_del_efecto",
+   "p": "respalda",
+   "o": "tasa_replicacion_psicologia",
+   "f": "F-714",
+   "apoyo": "Klein et al. 2018: poca heterogeneidad entre culturas WEIRD y menos WEIRD o entre laboratorio y online; la variación dependió del efecto estudiado.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "final_menos_aversivo",
+   "p": "aumenta",
+   "o": "preferencia_repetir_episodio",
+   "f": "F-715",
+   "apoyo": "Kahneman et al. 1993: añadir 30 s menos fríos (15 °C) tras 60 s a 14 °C hizo que una mayoría significativa eligiera repetir el ensayo largo, con más dolor total.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "evaluacion_retrospectiva",
+   "p": "tiene_limite",
+   "o": "negligencia_duracion",
+   "f": "F-715",
+   "apoyo": "Kahneman et al. 1993: la duración juega un papel pequeño en la evaluación retrospectiva de experiencias aversivas; dominan el peor momento y el final.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "intensidad_pico_final",
+   "p": "asocia_con",
+   "o": "evaluacion_retrospectiva",
+   "f": "F-716",
+   "apoyo": "Redelmeier & Kahneman 1996: en colonoscopía (n=154) y litotricia (n=133) el dolor total recordado se correlacionó fuerte con el pico y con los últimos 3 minutos.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "evaluacion_retrospectiva",
+   "p": "tiene_limite",
+   "o": "negligencia_duracion",
+   "f": "F-716",
+   "apoyo": "Redelmeier & Kahneman 1996: pese a gran variación en la duración, los procedimientos largos no se recordaron como especialmente aversivos.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}

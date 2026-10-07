@@ -1,0 +1,298 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-349",
+  "F-37",
+  "F-69",
+  "F-118",
+  "F-105",
+  "F-203",
+  "F-345",
+  "F-374",
+  "F-465"
+ ],
+ "entidades": [
+  {
+   "id": "evicore_dial_algoritmo",
+   "nombre": "Algoritmo ajustable 'the dial' de EviCore para enviar más autorizaciones previas a revisión",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "denegacion_autorizacion_previa",
+   "nombre": "Tasa de denegación de autorizaciones previas en seguros de salud de EE.UU.",
+   "tipo": "resultado"
+  },
+  {
+   "id": "contratos_evicore_pago_por_ahorro",
+   "nombre": "Contratos en que EviCore gana más cuanto más recorta el gasto en salud",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ensusalud_2014_farmacias",
+   "nombre": "ENSUSALUD 2014 (INEI): módulo de usuarios de farmacias y boticas (n=3.849)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "ley_32323_antispam",
+   "nombre": "Ley 32323 (Perú, 2025): amplía la prohibición de comunicaciones comerciales spam sin consentimiento",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "contacto_comercial_sin_consentimiento",
+   "nombre": "Contacto comercial (llamadas, SMS, correos, mensajes electrónicos) sin consentimiento previo del consumidor",
+   "tipo": "concepto"
+  },
+  {
+   "id": "multa_indecopi_bbva_spam",
+   "nombre": "Multa de Indecopi a BBVA Perú por llamadas comerciales sin consentimiento (S/1.537.250, Res. 083-2025/CC3)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "fiscalizacion_ia_indecopi_audios",
+   "nombre": "Fiscalización de Indecopi con IA (Whisper) sobre ~7 millones de audios de llamadas comerciales",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "kaiser_permanente_risant",
+   "nombre": "Kaiser Permanente y Risant Health (sistema integrado aseguradora-prestador)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "presion_costos_atencion_2025",
+   "nombre": "Costos crecientes de atención en 2025 (alta demanda, mayor complejidad, medicamentos)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "allianz_resultados_1t2026",
+   "nombre": "Comunicado de resultados 1T 2026 de Allianz SE",
+   "tipo": "estudio"
+  },
+  {
+   "id": "anthem_limite_anestesia",
+   "nombre": "Política de Anthem de pagar anestesia según límites de tiempo (NY, CT, MO; 2024)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reversion_politica_anthem",
+   "nombre": "Anthem revierte el límite de tiempo de anestesia (dic-2024)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "latam_insurtech_journey",
+   "nombre": "Estudio Latam Insurtech Journey (Digital Insurance LATAM, patrocinado por MAPFRE)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "inversion_insurtech_latam",
+   "nombre": "Inversión y número de insurtechs activas en América Latina",
+   "tipo": "resultado"
+  },
+  {
+   "id": "wocv_2026",
+   "nombre": "World of Corporate Venturing 2026 (Global Corporate Venturing)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "actividad_cvc_global",
+   "nombre": "Actividad global de corporate venture capital (corporaciones que invierten en startups)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "evicore_dial_algoritmo",
+   "p": "aumenta",
+   "o": "denegacion_autorizacion_previa",
+   "f": "F-349",
+   "apoyo": "ProPublica/The Capitol Forum 2024: con documentos internos, EviCore usa un algoritmo con IA ('the dial') ajustable para elevar denegaciones; sus vendedores presumieron +15% de denegaciones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "contratos_evicore_pago_por_ahorro",
+   "p": "asocia_con",
+   "o": "denegacion_autorizacion_previa",
+   "f": "F-349",
+   "apoyo": "ProPublica/The Capitol Forum 2024: algunos contratos aseguran que EviCore gane más cuanto más recorta gasto; en Arkansas rechazó ~20% de autorizaciones previas vs ~7% en Medicare Advantage (2022).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ensusalud_2014_farmacias",
+   "p": "mide",
+   "o": "determinantes_automedicacion",
+   "f": "F-37",
+   "apoyo": "INEI (ENSUSALUD 2014): encuesta nacional a 3.849 usuarios de farmacias y boticas sobre razones de comprar fuera del establecimiento que prescribe y de automedicarse; 56,7% son mujeres.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ley_32323_antispam",
+   "p": "aplica_a",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-69",
+   "apoyo": "Congreso del Perú / El Peruano 2025: la Ley 32323 prohíbe llamadas, SMS o correos masivos para ofrecer productos sin consentimiento previo, expreso e informado; consentimiento revocable; incumplir es infracción muy grave.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "multa_indecopi_bbva_spam",
+   "p": "aplica_a",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-118",
+   "apoyo": "Indecopi (vía LP Derecho/Andina) 2026: la CC3 multó a BBVA Perú con 279,5 UIT (S/1.537.250) por llamadas comerciales sin consentimiento previo, informado, expreso e inequívoco; decisión apelable.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "multa_indecopi_bbva_spam",
+   "p": "origina_en",
+   "o": "fiscalizacion_ia_indecopi_audios",
+   "f": "F-118",
+   "apoyo": "Indecopi (vía LP Derecho/Andina) 2026: con herramientas de IA (Python, Whisper) detectó >330.000 comunicaciones promocionales a >243.000 usuarios de BBVA.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fiscalizacion_ia_indecopi_audios",
+   "p": "mide",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-118",
+   "apoyo": "Indecopi (vía El Peruano/Andina) 2025: transcribe con IA ~7 millones de audios de banca, seguros y telecom para detectar ofertas comerciales sin consentimiento.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "kaiser_permanente_risant",
+   "p": "tiene_limite",
+   "o": "presion_costos_atencion_2025",
+   "f": "F-105",
+   "apoyo": "Kaiser Permanente 2026 (resultados 2025): costos crecientes por alta demanda, atención más compleja y medicamentos caros; resultado operativo US$1.400 M sobre ingresos de US$127.700 M (~1,1%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "allianz_resultados_1t2026",
+   "p": "contradice",
+   "o": "c_f203_cifra",
+   "f": "F-203",
+   "apoyo": "Allianz SE 2026 (Earnings Release 1Q 2026): Vida/Salud tuvo resultado operativo de €1.354 M (−5,1%); los €2.400 M récord (+11,1%) son de Daños, que en FY2025 hizo €9.000 M (+13,9%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "allianz_resultados_1t2026",
+   "p": "mide",
+   "o": "allianz_vida_salud",
+   "f": "F-203",
+   "apoyo": "Allianz SE 2026 (Earnings Release 1Q 2026): Vida/Salud €1.354 M de resultado operativo (−5,1%), PVNBP €23.700 M (−9,1%), margen de nuevo negocio 5,3%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "anthem_limite_anestesia",
+   "p": "asocia_con",
+   "o": "backlash_consumidor",
+   "f": "F-345",
+   "apoyo": "NBC News 2024: la política de límites de tiempo de anestesia de Anthem desató indignación; la ASA la llamó 'cynical money grab' y la gobernadora de NY exigió su reversión.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reversion_politica_anthem",
+   "p": "origina_en",
+   "o": "backlash_consumidor",
+   "f": "F-345",
+   "apoyo": "NBC News 2024: tras la ola de indignación y la presión de la gobernadora Hochul, Anthem desistió de la política alegando 'significant widespread misinformation'.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "latam_insurtech_journey",
+   "p": "mide",
+   "o": "inversion_insurtech_latam",
+   "f": "F-374",
+   "apoyo": "MAPFRE 2026 (Insurtech LatAm 2025 review): 536 insurtechs activas al cierre de 2025; inversión de US$199 M (+117% vs 2024), aún muy por debajo de 2021-2022.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "wocv_2026",
+   "p": "mide",
+   "o": "actividad_cvc_global",
+   "f": "F-465",
+   "apoyo": "Global Corporate Venturing 2026 (WoCV): >3.068 corporaciones invirtieron en startups en 2025 (+29%, récord), en 5.221 rondas por US$233.800 M (+75%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-349",
+   "detalle": "Año: el artículo es del 23-oct-2024 (no 2023-2024); coautoría con The Capitol Forum omitida; título oficial no registrado.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-349",
+   "detalle": "Campo URL vacío (solo cita textual); URL correcta: propublica.org/article/evicore-health-insurance-denials-cigna-unitedhealthcare-aetna-prior-authorizations.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-37",
+   "detalle": "Año 's.f.': el capítulo corresponde a la ENSUSALUD 2014 (INEI); conviene registrar la encuesta y el año 2014.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-69",
+   "detalle": "La ficha se presenta como 'texto legal oficial primario' (rigor B) pero la URL apunta a un comentario del Estudio Ugaz, no al texto publicado en El Peruano (busquedas.elperuano.pe/api/visor_html/2397811-2).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-118",
+   "detalle": "URL: apunta al comentario del Estudio Ugaz sobre la Ley 32323 (misma URL que F-69), no a la resolución de Indecopi ni a LP Derecho; el caso BBVA está en lpderecho.pe/indecopi-multa-bbva-realizar-llamadas-spam-resolucion-final-083-2025-cc3/.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-118",
+   "detalle": "Precisar que la Res. Final 083-2025/CC3 es de primera instancia (apelable) y que su difusión fue en enero de 2026.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-105",
+   "detalle": "Año: el comunicado de resultados 2025 es del 6-feb-2026 (la ficha dice 2024-2025 y mezcla con el '2024 Annual Report', que no corresponde a la URL).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-203",
+   "detalle": "Las cifras '€9.000 M en FY2025' y '€2.400 M en 1T 2026 (+11,1%), impulsada por mejor resultado del servicio de seguros' corresponden al segmento Property-Casualty (Daños), no a Vida/Salud; Vida/Salud fue €1.354 M (−5,1%) en el 1T 2026. La nota de corrección existente no identifica que las cifras son de Daños.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-374",
+   "detalle": "Emisor: los datos provienen del estudio 'Latam Insurtech Journey' de Digital Insurance LATAM (MAPFRE patrocina y difunde), no de una medición propia de la unidad de innovación de MAPFRE.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-465",
+   "detalle": "URL genérica (https://www.cbinsights.com/, portada) que no apunta a ningún documento; los datos están en globalventuring.com (WoCV 2026) y cbinsights.com/research/report/venture-trends-2025/.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-465",
+   "detalle": "El 68% del valor de deals de IA con CVC proviene de Bain (citado por Crunchbase News), emisor no listado en la ficha.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a N6 (grupo n6_4): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

@@ -1,4 +1,9 @@
 {
+ "abandono_checkout_complejidad": {
+  "id": "abandono_checkout_complejidad",
+  "nombre": "Abandono de compra por checkout largo o complejo",
+  "tipo": "resultado"
+ },
  "accenture_song_no_reportado": {
   "id": "accenture_song_no_reportado",
   "nombre": "Accenture no reporta Song como segmento separado",
@@ -9,25 +14,70 @@
   "nombre": "Accesibilidad como obligación con sanción",
   "tipo": "resultado"
  },
+ "accesibilidad_web": {
+  "id": "accesibilidad_web",
+  "nombre": "Mejoras de accesibilidad web/digital",
+  "tipo": "intervencion"
+ },
+ "acceso_proveedor_demanda": {
+  "id": "acceso_proveedor_demanda",
+  "nombre": "Acceso inmediato a un proveedor desde la línea de asesoría médica",
+  "tipo": "intervencion"
+ },
  "accion_anticipatoria": {
   "id": "accion_anticipatoria",
   "nombre": "Acción anticipatoria / financiamiento basado en pronósticos",
   "tipo": "concepto"
+ },
+ "aceptacion_pedido": {
+  "id": "aceptacion_pedido",
+  "nombre": "Aceptación de un pedido mayor",
+  "tipo": "resultado"
  },
  "aceptacion_plan_dudoso": {
   "id": "aceptacion_plan_dudoso",
   "nombre": "Permanencia/aceptación de un plan dudoso",
   "tipo": "metrica"
  },
+ "activacion_emocional": {
+  "id": "activacion_emocional",
+  "nombre": "Activación emocional (arousal: nivel de alerta fisiológica)",
+  "tipo": "constructo"
+ },
+ "activacion_sensoriomotora_no_prueba": {
+  "id": "activacion_sensoriomotora_no_prueba",
+  "nombre": "La activación sensoriomotora al pensar no prueba que el concepto sea encarnado (también la explica la propagación de activación)",
+  "tipo": "limitacion"
+ },
+ "actividad_cvc_global": {
+  "id": "actividad_cvc_global",
+  "nombre": "Actividad global de corporate venture capital (corporaciones que invierten en startups)",
+  "tipo": "resultado"
+ },
  "adobe_segmento_fusionado": {
   "id": "adobe_segmento_fusionado",
   "nombre": "Adobe fusionó Digital Media, Experience y Publishing en un solo segmento",
   "tipo": "limitacion"
  },
+ "adopcion_apps_mhealth": {
+  "id": "adopcion_apps_mhealth",
+  "nombre": "Adopción de apps de salud móvil (mHealth)",
+  "tipo": "resultado"
+ },
  "adopcion_telemedicina_peru": {
   "id": "adopcion_telemedicina_peru",
   "nombre": "Adopción de la telemedicina en Perú",
   "tipo": "resultado"
+ },
+ "adquisicion_next_insurance": {
+  "id": "adquisicion_next_insurance",
+  "nombre": "Adquisición de Next Insurance por ERGO/Munich Re (US$2.600M, jul-2025)",
+  "tipo": "concepto"
+ },
+ "adquisicion_oak_street_cvs": {
+  "id": "adquisicion_oak_street_cvs",
+  "nombre": "Adquisición de Oak Street Health por CVS Health (2023)",
+  "tipo": "concepto"
  },
  "adulacion_ia": {
   "id": "adulacion_ia",
@@ -39,9 +89,84 @@
   "nombre": "Adultos de EE.UU. (muestra ponderada por censo, N=1.773)",
   "tipo": "poblacion"
  },
+ "advertencia_desinformacion": {
+  "id": "advertencia_desinformacion",
+  "nombre": "Advertir a la persona de que pudo recibir información engañosa",
+  "tipo": "intervencion"
+ },
+ "afiliados_va": {
+  "id": "afiliados_va",
+  "nombre": "Afiliados de Veterans Affairs (EE.UU.)",
+  "tipo": "poblacion"
+ },
+ "afirmaciones_inexactas_ia": {
+  "id": "afirmaciones_inexactas_ia",
+  "nombre": "Afirmaciones inexactas en la persuasión de la IA",
+  "tipo": "resultado"
+ },
+ "agent_washing": {
+  "id": "agent_washing",
+  "nombre": "'Agent washing': rebautizar asistentes, RPA o chatbots como agentes sin capacidad agéntica",
+  "tipo": "limitacion"
+ },
+ "agente_encuestado_sintetico": {
+  "id": "agente_encuestado_sintetico",
+  "nombre": "Agente autónomo con LLM que responde encuestas online",
+  "tipo": "intervencion"
+ },
+ "agentes_ia_especificos_tarea": {
+  "id": "agentes_ia_especificos_tarea",
+  "nombre": "Agentes de IA específicos a una tarea integrados en software",
+  "tipo": "intervencion"
+ },
+ "agentes_maquina_delegados": {
+  "id": "agentes_maquina_delegados",
+  "nombre": "Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas",
+  "tipo": "intervencion"
+ },
+ "agotamiento_del_ego": {
+  "id": "agotamiento_del_ego",
+  "nombre": "Agotamiento del ego: el autocontrol gastaría un recurso limitado",
+  "tipo": "constructo"
+ },
+ "agrado_estimulo": {
+  "id": "agrado_estimulo",
+  "nombre": "Agrado por un estímulo (actitud afectiva)",
+  "tipo": "resultado"
+ },
  "agro_norte": {
   "id": "agro_norte",
   "nombre": "Producción agrícola del norte (mango, limón)",
+  "tipo": "resultado"
+ },
+ "agrupamiento_perceptual": {
+  "id": "agrupamiento_perceptual",
+  "nombre": "Agrupamiento perceptual (ver elementos sueltos como un todo)",
+  "tipo": "resultado"
+ },
+ "ajuste_feedback_humano": {
+  "id": "ajuste_feedback_humano",
+  "nombre": "Ajuste fino con feedback humano (RLHF)",
+  "tipo": "intervencion"
+ },
+ "ajuste_fino_datos_sociales": {
+  "id": "ajuste_fino_datos_sociales",
+  "nombre": "Prompts ricos en contexto y ajuste fino con datos de ciencias sociales",
+  "tipo": "intervencion"
+ },
+ "ajuste_riesgo": {
+  "id": "ajuste_riesgo",
+  "nombre": "Ajuste / igualación de riesgo entre aseguradoras",
+  "tipo": "intervencion"
+ },
+ "ajuste_ui_usuario": {
+  "id": "ajuste_ui_usuario",
+  "nombre": "Capacidad del usuario de ajustar la interfaz generada a sus necesidades",
+  "tipo": "resultado"
+ },
+ "alcance_mercado_digital": {
+  "id": "alcance_mercado_digital",
+  "nombre": "Alcance de mercado (más usuarios alcanzados)",
   "tipo": "resultado"
  },
  "alfabetizacion_ia": {
@@ -49,14 +174,74 @@
   "nombre": "Alfabetización en IA (intervención ligera)",
   "tipo": "intervencion"
  },
+ "alianzas_externas_ia": {
+  "id": "alianzas_externas_ia",
+  "nombre": "Implementar IA con socios externos (frente a desarrollo interno)",
+  "tipo": "intervencion"
+ },
+ "alineacion_actividad_neural": {
+  "id": "alineacion_actividad_neural",
+  "nombre": "Alineación de las representaciones internas del modelo con la actividad neural humana",
+  "tipo": "resultado"
+ },
+ "allianz_resultados_1t2026": {
+  "id": "allianz_resultados_1t2026",
+  "nombre": "Comunicado de resultados 1T 2026 de Allianz SE",
+  "tipo": "estudio"
+ },
  "allianz_vida_salud": {
   "id": "allianz_vida_salud",
   "nombre": "Resultado operativo Vida/Salud de Allianz",
   "tipo": "resultado"
  },
+ "alzas_tarifas_seguros_comerciales": {
+  "id": "alzas_tarifas_seguros_comerciales",
+  "nombre": "Alzas de tarifas en seguros comerciales",
+  "tipo": "concepto"
+ },
  "ambidestreza": {
   "id": "ambidestreza",
   "nombre": "Ambidestreza organizacional",
+  "tipo": "constructo"
+ },
+ "amenaza_libertad": {
+  "id": "amenaza_libertad",
+  "nombre": "Amenaza percibida a la libertad y enojo (reactancia)",
+  "tipo": "resultado"
+ },
+ "amenaza_moral": {
+  "id": "amenaza_moral",
+  "nombre": "Recordar o cometer una falta moral (amenaza a la pureza moral)",
+  "tipo": "intervencion"
+ },
+ "ancla_numerica": {
+  "id": "ancla_numerica",
+  "nombre": "Número ancla visible antes de juzgar un precio",
+  "tipo": "intervencion"
+ },
+ "antecedentes_familiares": {
+  "id": "antecedentes_familiares",
+  "nombre": "Antecedentes familiares, habilidad cognitiva temprana y entorno del hogar",
+  "tipo": "limitacion"
+ },
+ "anthem_limite_anestesia": {
+  "id": "anthem_limite_anestesia",
+  "nombre": "Política de Anthem de pagar anestesia según límites de tiempo (NY, CT, MO; 2024)",
+  "tipo": "intervencion"
+ },
+ "aplanamiento_identidades": {
+  "id": "aplanamiento_identidades",
+  "nombre": "Retrato erróneo y aplanamiento de grupos demográficos por el LLM",
+  "tipo": "limitacion"
+ },
+ "aplicaciones_empresariales": {
+  "id": "aplicaciones_empresariales",
+  "nombre": "Aplicaciones de software empresarial",
+  "tipo": "concepto"
+ },
+ "apreciacion_algoritmica": {
+  "id": "apreciacion_algoritmica",
+  "nombre": "Apreciación algorítmica (preferir consejo algorítmico al humano)",
   "tipo": "constructo"
  },
  "aprendibilidad": {
@@ -64,15 +249,65 @@
   "nombre": "Aprendibilidad / conciencia del set de funciones",
   "tipo": "resultado"
  },
+ "aprendizaje_esquemas": {
+  "id": "aprendizaje_esquemas",
+  "nombre": "Aprendizaje (adquisición de esquemas)",
+  "tipo": "resultado"
+ },
+ "aprendizaje_fracaso_innovacion": {
+  "id": "aprendizaje_fracaso_innovacion",
+  "nombre": "Aprender de los fracasos de innovación",
+  "tipo": "concepto"
+ },
+ "aprobacion_codigo_ia": {
+  "id": "aprobacion_codigo_ia",
+  "nombre": "Tasa de aprobación de pull requests de agentes de IA",
+  "tipo": "resultado"
+ },
  "asistencia_ia_razonamiento": {
   "id": "asistencia_ia_razonamiento",
   "nombre": "Asistencia de IA en razonamiento lógico",
   "tipo": "intervencion"
  },
+ "asistente_ia_soporte": {
+  "id": "asistente_ia_soporte",
+  "nombre": "Asistente conversacional de IA generativa para agentes de soporte",
+  "tipo": "intervencion"
+ },
+ "asociacion_color_emocion": {
+  "id": "asociacion_color_emocion",
+  "nombre": "Asociaciones entre colores y emociones",
+  "tipo": "resultado"
+ },
  "asuncion_responsabilidad": {
   "id": "asuncion_responsabilidad",
   "nombre": "Disposición a asumir responsabilidad y reparar",
   "tipo": "resultado"
+ },
+ "atencion_primaria_singapur": {
+  "id": "atencion_primaria_singapur",
+  "nombre": "Sistema de atención primaria de Singapur (GP privados + policlínicas)",
+  "tipo": "concepto"
+ },
+ "atractivo_satisfaccion_ui": {
+  "id": "atractivo_satisfaccion_ui",
+  "nombre": "Atractivo y satisfacción con la interfaz",
+  "tipo": "resultado"
+ },
+ "atributos_perceptuales": {
+  "id": "atributos_perceptuales",
+  "nombre": "Atributos presentados de forma perceptual o experiencial, no como números estilizados",
+  "tipo": "limitacion"
+ },
+ "autoeficacia_entrenamiento": {
+  "id": "autoeficacia_entrenamiento",
+  "nombre": "Autoeficacia post-entrenamiento",
+  "tipo": "resultado"
+ },
+ "autoensamblaje": {
+  "id": "autoensamblaje",
+  "nombre": "Armar o crear uno mismo el producto",
+  "tipo": "intervencion"
  },
  "autoestimacion_desempeno": {
   "id": "autoestimacion_desempeno",
@@ -84,24 +319,84 @@
   "nombre": "Automedicación no responsable (Perú)",
   "tipo": "resultado"
  },
+ "autoseleccion_consejo": {
+  "id": "autoseleccion_consejo",
+  "nombre": "Autoselección: quienes más se beneficiarían del consejo son los que menos lo piden",
+  "tipo": "limitacion"
+ },
+ "aversion_algoritmica": {
+  "id": "aversion_algoritmica",
+  "nombre": "Aversión algorítmica (evitar algoritmos tras verlos errar)",
+  "tipo": "constructo"
+ },
+ "aversion_perdida": {
+  "id": "aversion_perdida",
+  "nombre": "Aversión a la pérdida (la función de valor es más empinada para pérdidas)",
+  "tipo": "constructo"
+ },
+ "aversion_redes_estrechas": {
+  "id": "aversion_redes_estrechas",
+  "nombre": "Aversión a redes de proveedores estrechas",
+  "tipo": "resultado"
+ },
+ "ayudas_decision": {
+  "id": "ayudas_decision",
+  "nombre": "Ayudas de decisión para pacientes (material estructurado de opciones y riesgos)",
+  "tipo": "intervencion"
+ },
  "backlash_consumidor": {
   "id": "backlash_consumidor",
   "nombre": "Backlash del consumidor",
   "tipo": "resultado"
+ },
+ "bain_lealtad_seguros_2023": {
+  "id": "bain_lealtad_seguros_2023",
+  "nombre": "Encuesta Bain Customer Behavior and Loyalty in Insurance 2023 (28.765 consumidores, 14 países)",
+  "tipo": "estudio"
+ },
+ "baja_siniestralidad_catastrofica": {
+  "id": "baja_siniestralidad_catastrofica",
+  "nombre": "Baja experiencia de catástrofes naturales en el período",
+  "tipo": "concepto"
  },
  "bajo_peso_nacer": {
   "id": "bajo_peso_nacer",
   "nombre": "Bajo peso al nacer",
   "tipo": "resultado"
  },
+ "bancaseguros_latam": {
+  "id": "bancaseguros_latam",
+  "nombre": "Bancaseguros (distribución de seguros por bancos) en América Latina",
+  "tipo": "concepto"
+ },
+ "barra_progreso_animada": {
+  "id": "barra_progreso_animada",
+  "nombre": "Barra de progreso con animación visual (estrías o pulsos)",
+  "tipo": "intervencion"
+ },
  "barreras_telemedicina_peru": {
   "id": "barreras_telemedicina_peru",
   "nombre": "Barreras a la telemedicina en Perú",
   "tipo": "constructo"
  },
+ "block_hancock_zakay_2010_est": {
+  "id": "block_hancock_zakay_2010_est",
+  "nombre": "Meta-análisis Block, Hancock y Zakay 2010 (carga cognitiva y juicios de duración)",
+  "tipo": "estudio"
+ },
+ "brecha_definir_aplicar": {
+  "id": "brecha_definir_aplicar",
+  "nombre": "Saber definir un término de seguro no implica saber aplicarlo en un cálculo",
+  "tipo": "limitacion"
+ },
  "brecha_natcat": {
   "id": "brecha_natcat",
   "nombre": "Brecha de protección de catástrofes naturales (US$424 mil M)",
+  "tipo": "resultado"
+ },
+ "brecha_necesidad_seguro_vida": {
+  "id": "brecha_necesidad_seguro_vida",
+  "nombre": "Brecha de necesidad de seguro de vida (no compra pese a necesitarlo)",
   "tipo": "resultado"
  },
  "brecha_percepcion_realidad": {
@@ -119,9 +414,49 @@
   "nombre": "Brotes de enfermedades sensibles al clima (cólera, malaria, dengue, peste)",
   "tipo": "resultado"
  },
+ "bus11": {
+  "id": "bus11",
+  "nombre": "Escala de usabilidad de chatbots BUS-11",
+  "tipo": "metrica"
+ },
+ "busqueda_online": {
+  "id": "busqueda_online",
+  "nombre": "Búsqueda online del producto",
+  "tipo": "resultado"
+ },
+ "busquedas_estetica_lofi": {
+  "id": "busquedas_estetica_lofi",
+  "nombre": "Búsquedas de estéticas lo-fi y DIY en Canva",
+  "tipo": "resultado"
+ },
+ "c_70_cambio_fracasa": {
+  "id": "c_70_cambio_fracasa",
+  "nombre": "El 70% de las iniciativas de cambio organizacional fracasa",
+  "tipo": "afirmacion"
+ },
+ "c_85_proyectos_ia_fracasan": {
+  "id": "c_85_proyectos_ia_fracasan",
+  "nombre": "El 85% de los proyectos de IA fracasa",
+  "tipo": "afirmacion"
+ },
+ "c_adulacion_indistinguible": {
+  "id": "c_adulacion_indistinguible",
+  "nombre": "Los usuarios no distinguen una IA aduladora de una que no lo es",
+  "tipo": "afirmacion"
+ },
+ "c_agotamiento_ego_nulo": {
+  "id": "c_agotamiento_ego_nulo",
+  "nombre": "El agotamiento del ego no aparece en réplicas preregistradas (d ≈ 0,04-0,06)",
+  "tipo": "afirmacion"
+ },
  "c_ambidestreza_mejora_desempeno": {
   "id": "c_ambidestreza_mejora_desempeno",
   "nombre": "La ambidestreza mejora el desempeño",
+  "tipo": "afirmacion"
+ },
+ "c_autocontrol_recurso_limitado": {
+  "id": "c_autocontrol_recurso_limitado",
+  "nombre": "Ejercer autocontrol agota un recurso común y reduce el autocontrol posterior (Baumeister et al. 1998)",
   "tipo": "afirmacion"
  },
  "c_autorreporte_inflado_prod": {
@@ -129,14 +464,94 @@
   "nombre": "El autorreporte de productividad con IA está inflado (RP2)",
   "tipo": "afirmacion"
  },
+ "c_aversion_algoritmica_general": {
+  "id": "c_aversion_algoritmica_general",
+  "nombre": "La gente es en general reacia a confiar en el juicio de algoritmos",
+  "tipo": "afirmacion"
+ },
+ "c_aversion_perdida_general": {
+  "id": "c_aversion_perdida_general",
+  "nombre": "Las pérdidas pesan más que las ganancias equivalentes como principio general",
+  "tipo": "afirmacion"
+ },
+ "c_aversion_perdida_moderada": {
+  "id": "c_aversion_perdida_moderada",
+  "nombre": "La aversión a la pérdida existe pero tiene moderadores (conocimiento, edad)",
+  "tipo": "afirmacion"
+ },
+ "c_aversion_perdida_no_general": {
+  "id": "c_aversion_perdida_no_general",
+  "nombre": "En balance, las pérdidas no tienen más impacto que las ganancias",
+  "tipo": "afirmacion"
+ },
+ "c_aversion_perdida_reversible": {
+  "id": "c_aversion_perdida_reversible",
+  "nombre": "La aversión a la pérdida desaparece o se invierte según el rango de montos vistos",
+  "tipo": "afirmacion"
+ },
+ "c_bcrp_impacto_07": {
+  "id": "c_bcrp_impacto_07",
+  "nombre": "BCRP: El Niño resta 0,7 pp al PBI 2026 (estimación previa)",
+  "tipo": "afirmacion"
+ },
+ "c_bcrp_impacto_09": {
+  "id": "c_bcrp_impacto_09",
+  "nombre": "BCRP: El Niño resta 0,9 pp al PBI 2026 (Reporte de Inflación de setiembre)",
+  "tipo": "afirmacion"
+ },
  "c_brecha_justificacion_implementacion": {
   "id": "c_brecha_justificacion_implementacion",
   "nombre": "La justificación de diseño generada no coincide con lo implementado",
   "tipo": "afirmacion"
  },
+ "c_brecha_papers_escala": {
+  "id": "c_brecha_papers_escala",
+  "nombre": "El efecto de los nudges en papers (~8,7 pp) es ~6 veces el que se ve a escala (~1,4 pp)",
+  "tipo": "afirmacion"
+ },
+ "c_brecha_wta_persiste": {
+  "id": "c_brecha_wta_persiste",
+  "nombre": "La brecha WTA-WTP persiste aun con controles de malentendidos",
+  "tipo": "afirmacion"
+ },
+ "c_cafe_primer_parametrico": {
+  "id": "c_cafe_primer_parametrico",
+  "nombre": "'Café Seguro Perú' es el primer seguro paramétrico del país",
+  "tipo": "afirmacion"
+ },
+ "c_calidez_fisica_sin_efecto": {
+  "id": "c_calidez_fisica_sin_efecto",
+  "nombre": "El calor físico breve no aumenta la elección prosocial (réplica, N = 861)",
+  "tipo": "afirmacion"
+ },
+ "c_calidez_fisica_social": {
+  "id": "c_calidez_fisica_social",
+  "nombre": "Sentir calor físico aumenta la calidez interpersonal y la conducta prosocial (Williams y Bargh 2008)",
+  "tipo": "afirmacion"
+ },
  "c_castigo_por_disrupcion": {
   "id": "c_castigo_por_disrupcion",
   "nombre": "El mercado descuenta disrupción de IA sobre la demanda (H13)",
+  "tipo": "afirmacion"
+ },
+ "c_centaur_generaliza": {
+  "id": "c_centaur_generaliza",
+  "nombre": "Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea)",
+  "tipo": "afirmacion"
+ },
+ "c_cognicion_simbolos_amodales": {
+  "id": "c_cognicion_simbolos_amodales",
+  "nombre": "La cognición es cómputo sobre símbolos abstractos (amodales), independiente de la percepción y la acción",
+  "tipo": "afirmacion"
+ },
+ "c_conformidad_universal_estable": {
+  "id": "c_conformidad_universal_estable",
+  "nombre": "La conformidad de Asch es un rasgo universal y estable en el tiempo",
+  "tipo": "afirmacion"
+ },
+ "c_conformidad_varia_cultura_tiempo": {
+  "id": "c_conformidad_varia_cultura_tiempo",
+  "nombre": "La conformidad tipo Asch varía por cultura y época (mayor en culturas colectivistas, en baja en EE.UU.)",
   "tipo": "afirmacion"
  },
  "c_consejo_ia_reduce_compra": {
@@ -159,9 +574,34 @@
   "nombre": "Crisis estructural del modelo de consultora de diseño",
   "tipo": "afirmacion"
  },
+ "c_crueldad_por_liderazgo": {
+  "id": "c_crueldad_por_liderazgo",
+  "nombre": "La crueldad del SPE surgió del liderazgo de identidad del experimentador, no del rol",
+  "tipo": "afirmacion"
+ },
+ "c_cvc_en_retirada": {
+  "id": "c_cvc_en_retirada",
+  "nombre": "Grandes corporaciones se retiran del venture capital corporativo directo",
+  "tipo": "afirmacion"
+ },
+ "c_dano2017_3100": {
+  "id": "c_dano2017_3100",
+  "nombre": "El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS)",
+  "tipo": "afirmacion"
+ },
+ "c_dano2017_9200": {
+  "id": "c_dano2017_9200",
+  "nombre": "El daño físico del Niño Costero 2017 fue de US$9.200 M (APESEG)",
+  "tipo": "afirmacion"
+ },
  "c_demanda_post_evento": {
   "id": "c_demanda_post_evento",
   "nombre": "La demanda de seguro sube tras el desastre y se diluye con el tiempo",
+  "tipo": "afirmacion"
+ },
+ "c_demora_predice_logro": {
+  "id": "c_demora_predice_logro",
+  "nombre": "La demora de gratificación en preescolar predice fuertemente el logro posterior",
   "tipo": "afirmacion"
  },
  "c_desconfianza_falta_info": {
@@ -174,9 +614,19 @@
   "nombre": "Diseño efectivo → mejor desempeño de la firma",
   "tipo": "afirmacion"
  },
+ "c_disfluencia_mejora_razonamiento": {
+  "id": "c_disfluencia_mejora_razonamiento",
+  "nombre": "La tipografía difícil de leer mejora la resolución de problemas",
+  "tipo": "afirmacion"
+ },
  "c_divulgacion_obligatoria_falla": {
   "id": "c_divulgacion_obligatoria_falla",
   "nombre": "Los mandatos de 'explicar mejor' fracasan sistemáticamente",
+  "tipo": "afirmacion"
+ },
+ "c_dotacion_artefacto_procedimiento": {
+  "id": "c_dotacion_artefacto_procedimiento",
+  "nombre": "La brecha entre lo que se pide por vender (WTA) y lo que se paga por comprar (WTP) es un artefacto del procedimiento",
   "tipo": "afirmacion"
  },
  "c_dt_efecto_mediado": {
@@ -199,9 +649,29 @@
   "nombre": "El efecto de la IA sobre la productividad no es estimable con el diseño actual",
   "tipo": "afirmacion"
  },
+ "c_efecto_ikea": {
+  "id": "c_efecto_ikea",
+  "nombre": "Construir uno mismo un producto aumenta cuánto se lo valora (efecto IKEA)",
+  "tipo": "afirmacion"
+ },
+ "c_efecto_macbeth": {
+  "id": "c_efecto_macbeth",
+  "nombre": "Una amenaza moral aumenta el deseo de limpiarse físicamente (efecto Macbeth)",
+  "tipo": "afirmacion"
+ },
  "c_efecto_macro_heterogeneo": {
   "id": "c_efecto_macro_heterogeneo",
   "nombre": "El efecto macro de El Niño es heterogéneo: algunos países crecen",
+  "tipo": "afirmacion"
+ },
+ "c_eleccion_genera_disonancia": {
+  "id": "c_eleccion_genera_disonancia",
+  "nombre": "Actuar contra la propia actitud con alta (vs baja) elección produce más cambio de actitud",
+  "tipo": "afirmacion"
+ },
+ "c_eleccion_no_cambia_actitud": {
+  "id": "c_eleccion_no_cambia_actitud",
+  "nombre": "La alta elección no aumenta el cambio de actitud tras argumentar contra la propia opinión",
   "tipo": "afirmacion"
  },
  "c_enso_conflicto": {
@@ -209,9 +679,19 @@
   "nombre": "El Niño aumenta la probabilidad de conflicto civil",
   "tipo": "afirmacion"
  },
+ "c_entorno_parte_sistema_cognitivo": {
+  "id": "c_entorno_parte_sistema_cognitivo",
+  "nombre": "El entorno es parte del sistema cognitivo (mente extendida)",
+  "tipo": "afirmacion"
+ },
  "c_estandar_reporting_se_degrada": {
   "id": "c_estandar_reporting_se_degrada",
   "nombre": "El estándar de reporting se degrada donde hay presión de IA (H16)",
+  "tipo": "afirmacion"
+ },
+ "c_expertos_no_predicen": {
+  "id": "c_expertos_no_predicen",
+  "nombre": "Los expertos no predicen qué intervención funcionará mejor",
   "tipo": "afirmacion"
  },
  "c_explicaciones_mejoran_decision": {
@@ -232,6 +712,11 @@
  "c_f203_cifra": {
   "id": "c_f203_cifra",
   "nombre": "F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025",
+  "tipo": "afirmacion"
+ },
+ "c_feedback_facial_pequeno": {
+  "id": "c_feedback_facial_pequeno",
+  "nombre": "El feedback facial influye en la emoción con efecto pequeño y variable (d ≈ 0,20)",
   "tipo": "afirmacion"
  },
  "c_fluidez_vs_estetica_separables": {
@@ -269,6 +754,11 @@
   "nombre": "La IA baja la barrera de entrada de la categoría de herramientas de diseño",
   "tipo": "afirmacion"
  },
+ "c_ia_principal_causa_despidos": {
+  "id": "c_ia_principal_causa_despidos",
+  "nombre": "La IA es la principal causa de los despidos",
+  "tipo": "afirmacion"
+ },
  "c_ia_ralentiza_expertos": {
   "id": "c_ia_ralentiza_expertos",
   "nombre": "La IA ralentiza a desarrolladores expertos (−19%)",
@@ -284,14 +774,49 @@
   "nombre": "Un informe de la ONU vincula la adulación de chatbots con muertes",
   "tipo": "afirmacion"
  },
+ "c_lambda_cercano_2": {
+  "id": "c_lambda_cercano_2",
+  "nombre": "El coeficiente de aversión a la pérdida promedio es cercano a 2",
+  "tipo": "afirmacion"
+ },
+ "c_lapiz_sin_efecto_rrr": {
+  "id": "c_lapiz_sin_efecto_rrr",
+  "nombre": "El lápiz en la boca no cambia el humor percibido (17 laboratorios, 0,03 puntos)",
+  "tipo": "afirmacion"
+ },
+ "c_lapiz_sonrisa_humor": {
+  "id": "c_lapiz_sonrisa_humor",
+  "nombre": "Sonreír forzado con un lápiz en los dientes hace ver más graciosas las caricaturas (Strack et al. 1988)",
+  "tipo": "afirmacion"
+ },
  "c_leves_sin_backlash": {
   "id": "c_leves_sin_backlash",
   "nombre": "Los dark patterns leves no generan backlash",
   "tipo": "afirmacion"
  },
+ "c_llm_sesgos_humanos": {
+  "id": "c_llm_sesgos_humanos",
+  "nombre": "Los LLMs reproducen los sesgos y heurísticas de decisión humanos",
+  "tipo": "afirmacion"
+ },
+ "c_macbeth_no_replica": {
+  "id": "c_macbeth_no_replica",
+  "nombre": "El efecto Macbeth no aparece en réplicas directas de mayor poder (Earp et al. 2014)",
+  "tipo": "afirmacion"
+ },
  "c_margen_compresion": {
   "id": "c_margen_compresion",
   "nombre": "El margen fino de 2025 (1,8%) es una tendencia de compresión",
+  "tipo": "afirmacion"
+ },
+ "c_mera_exposicion_u_invertida": {
+  "id": "c_mera_exposicion_u_invertida",
+  "nombre": "La exposición repetida aumenta el agrado siguiendo una U invertida",
+  "tipo": "afirmacion"
+ },
+ "c_miedo_ralentiza_percepcion": {
+  "id": "c_miedo_ralentiza_percepcion",
+  "nombre": "El miedo ralentiza la percepción en vivo ('cámara lenta')",
   "tipo": "afirmacion"
  },
  "c_mito_fracaso_80_95": {
@@ -319,6 +844,46 @@
   "nombre": "NOAA: >90% de un Niño muy fuerte y ~75% de uno histórico en 2026-27",
   "tipo": "afirmacion"
  },
+ "c_norma_descriptiva_no_supera": {
+  "id": "c_norma_descriptiva_no_supera",
+  "nombre": "Un mensaje de norma descriptiva no supera a un buen mensaje estándar",
+  "tipo": "afirmacion"
+ },
+ "c_norma_descriptiva_supera_estandar": {
+  "id": "c_norma_descriptiva_supera_estandar",
+  "nombre": "Un mensaje de norma descriptiva supera a un mensaje estándar de beneficio",
+  "tipo": "afirmacion"
+ },
+ "c_nudge_efectivo_general": {
+  "id": "c_nudge_efectivo_general",
+  "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
+  "tipo": "afirmacion"
+ },
+ "c_obediencia_ciega": {
+  "id": "c_obediencia_ciega",
+  "nombre": "Milgram demuestra obediencia ciega/pasiva a la autoridad",
+  "tipo": "afirmacion"
+ },
+ "c_obediencia_por_identificacion": {
+  "id": "c_obediencia_por_identificacion",
+  "nombre": "La obediencia en Milgram nace de identificarse con la causa de la autoridad (seguidismo comprometido)",
+  "tipo": "afirmacion"
+ },
+ "c_optout_mejora_inscripcion": {
+  "id": "c_optout_mejora_inscripcion",
+  "nombre": "El encuadre opt-out (default) aumenta la inscripción en programas de salud que exigen participación activa",
+  "tipo": "afirmacion"
+ },
+ "c_paradoja_privacidad": {
+  "id": "c_paradoja_privacidad",
+  "nombre": "La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad)",
+  "tipo": "afirmacion"
+ },
+ "c_pe_valor_viable": {
+  "id": "c_pe_valor_viable",
+  "nombre": "La inversión de private equity en atención primaria con pago basado en valor es comercialmente viable (encuentra compradores corporativos)",
+  "tipo": "afirmacion"
+ },
  "c_pen_2_01": {
   "id": "c_pen_2_01",
   "nombre": "Penetración ~2,01% (estimación al 2T 2026)",
@@ -334,9 +899,39 @@
   "nombre": "La penetración peruana oscila 2,0%-2,1% del PBI",
   "tipo": "afirmacion"
  },
+ "c_personalizacion_aumenta_persuasion": {
+  "id": "c_personalizacion_aumenta_persuasion",
+  "nombre": "Personalizar con datos de la persona aumenta la persuasión de la IA",
+  "tipo": "afirmacion"
+ },
  "c_persuasion_concentrada": {
   "id": "c_persuasion_concentrada",
   "nombre": "La persuasión de la IA se concentra en personas susceptibles",
+  "tipo": "afirmacion"
+ },
+ "c_peso_importancia": {
+  "id": "c_peso_importancia",
+  "nombre": "Sostener algo pesado hace juzgar las cosas como más importantes (Jostmann et al. 2009)",
+  "tipo": "afirmacion"
+ },
+ "c_peso_sin_efecto": {
+  "id": "c_peso_sin_efecto",
+  "nombre": "El peso físico no cambia el juicio de importancia (Many Labs 3, N = 2.285)",
+  "tipo": "afirmacion"
+ },
+ "c_poses_poder_hormonas_riesgo": {
+  "id": "c_poses_poder_hormonas_riesgo",
+  "nombre": "Las poses de poder suben la testosterona, bajan el cortisol y aumentan la tolerancia al riesgo (Carney et al. 2010)",
+  "tipo": "afirmacion"
+ },
+ "c_poses_poder_sin_efecto_fisiologico": {
+  "id": "c_poses_poder_sin_efecto_fisiologico",
+  "nombre": "Las poses de poder no cambian hormonas ni conducta de riesgo (réplica N = 200)",
+  "tipo": "afirmacion"
+ },
+ "c_postura_afecta_autorreporte": {
+  "id": "c_postura_afecta_autorreporte",
+  "nombre": "La postura corporal afecta estados afectivos autorreportados (ánimo, sensación de poder)",
   "tipo": "afirmacion"
  },
  "c_preferencia_adulacion": {
@@ -344,14 +939,79 @@
   "nombre": "Los usuarios prefieren la IA aduladora",
   "tipo": "afirmacion"
  },
+ "c_priming_vejez_lentitud": {
+  "id": "c_priming_vejez_lentitud",
+  "nombre": "Activar el estereotipo de vejez hace caminar más lento (Bargh et al. 1996)",
+  "tipo": "afirmacion"
+ },
+ "c_priming_vejez_no_replica": {
+  "id": "c_priming_vejez_no_replica",
+  "nombre": "El priming de vejez no ralentiza la marcha con medición automática (Doyen et al. 2012)",
+  "tipo": "afirmacion"
+ },
  "c_proxies_vulnerabilidad_debiles": {
   "id": "c_proxies_vulnerabilidad_debiles",
   "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
   "tipo": "afirmacion"
  },
+ "c_rojo_baja_desempeno": {
+  "id": "c_rojo_baja_desempeno",
+  "nombre": "Ver el color rojo antes de una prueba empeora el desempeño",
+  "tipo": "afirmacion"
+ },
+ "c_rol_basta_crueldad": {
+  "id": "c_rol_basta_crueldad",
+  "nombre": "Asignar un rol de poder (guardia) basta por sí solo para producir crueldad",
+  "tipo": "afirmacion"
+ },
+ "c_senuelo_aumenta_eleccion": {
+  "id": "c_senuelo_aumenta_eleccion",
+  "nombre": "Agregar un señuelo dominado aumenta la elección de la opción que lo domina",
+  "tipo": "afirmacion"
+ },
+ "c_sesgo_presente_promedio": {
+  "id": "c_sesgo_presente_promedio",
+  "nombre": "En promedio las personas muestran sesgo del presente",
+  "tipo": "afirmacion"
+ },
+ "c_sin_efecto_disfluencia": {
+  "id": "c_sin_efecto_disfluencia",
+  "nombre": "La tipografía disfluente no cambia la tasa de acierto en problemas contraintuitivos",
+  "tipo": "afirmacion"
+ },
+ "c_sinteticas_menos_varianza": {
+  "id": "c_sinteticas_menos_varianza",
+  "nombre": "Las respuestas sintéticas con LLM tienen menos varianza que las humanas",
+  "tipo": "afirmacion"
+ },
+ "c_sinteticas_reemplazan_encuestas": {
+  "id": "c_sinteticas_reemplazan_encuestas",
+  "nombre": "Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística",
+  "tipo": "afirmacion"
+ },
+ "c_sobrecarga_general": {
+  "id": "c_sobrecarga_general",
+  "nombre": "Más opciones empeoran la decisión de forma general",
+  "tipo": "afirmacion"
+ },
  "c_sobreconfianza_estrategica": {
   "id": "c_sobreconfianza_estrategica",
   "nombre": "La sobre-confianza es estratégica (costo-beneficio), no inevitable",
+  "tipo": "afirmacion"
+ },
+ "c_sonrisa_voluntaria_felicidad": {
+  "id": "c_sonrisa_voluntaria_felicidad",
+  "nombre": "Sonreír a propósito (imitar o mover músculos) aumenta la felicidad sentida; el lápiz encubierto no lo prueba",
+  "tipo": "afirmacion"
+ },
+ "c_spe_guardias_instruidos": {
+  "id": "c_spe_guardias_instruidos",
+  "nombre": "En el SPE los guardias recibieron instrucciones y hubo fuertes características de demanda",
+  "tipo": "afirmacion"
+ },
+ "c_tasa_descuento_mide_preferencia": {
+  "id": "c_tasa_descuento_mide_preferencia",
+  "nombre": "Las tasas de descuento implícitas miden la preferencia temporal pura",
   "tipo": "afirmacion"
  },
  "c_ubi_cambia_conducta": {
@@ -369,6 +1029,11 @@
   "nombre": "El valor se acumula en mejoras de 0,1-0,2%",
   "tipo": "afirmacion"
  },
+ "c_variacion_depende_del_efecto": {
+  "id": "c_variacion_depende_del_efecto",
+  "nombre": "La replicabilidad depende más del efecto estudiado que de la muestra o el contexto",
+  "tipo": "afirmacion"
+ },
  "c_vibe_coding_no_retiene": {
   "id": "c_vibe_coding_no_retiene",
   "nombre": "El ARR de vibe coding no retiene (H14)",
@@ -383,6 +1048,46 @@
   "id": "c_vulnerabilidad_transversal",
   "nombre": "Todos los grupos de consumidores son susceptibles",
   "tipo": "afirmacion"
+ },
+ "calidad_decision_seguro": {
+  "id": "calidad_decision_seguro",
+  "nombre": "Calidad de la decisión de compra de seguro",
+  "tipo": "resultado"
+ },
+ "calidad_dialogo_fina": {
+  "id": "calidad_dialogo_fina",
+  "nombre": "Cualidades finas del diálogo a nivel de turno y de conversación",
+  "tipo": "constructo"
+ },
+ "calidad_metaanalisis_nudge": {
+  "id": "calidad_metaanalisis_nudge",
+  "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
+  "tipo": "limitacion"
+ },
+ "calidad_motivacion": {
+  "id": "calidad_motivacion",
+  "nombre": "Calidad de la motivación, desempeño y bienestar al perseguir metas",
+  "tipo": "resultado"
+ },
+ "calidad_recuperacion_rag": {
+  "id": "calidad_recuperacion_rag",
+  "nombre": "Relevancia y foco del contexto recuperado",
+  "tipo": "constructo"
+ },
+ "calidad_reporte_microcosteo": {
+  "id": "calidad_reporte_microcosteo",
+  "nombre": "Calidad metodológica y de reporte muy variable en micro-costeo",
+  "tipo": "limitacion"
+ },
+ "calidad_texto_generado": {
+  "id": "calidad_texto_generado",
+  "nombre": "Calidad de textos generados por IA según juicio humano",
+  "tipo": "constructo"
+ },
+ "calidez_fisica": {
+  "id": "calidez_fisica",
+  "nombre": "Exposición breve a calor físico (café caliente, compresa térmica)",
+  "tipo": "intervencion"
  },
  "calificacion_calidad_ia": {
   "id": "calificacion_calidad_ia",
@@ -404,19 +1109,139 @@
   "nombre": "Cambio en titulares de anuncios de Bing (2012)",
   "tipo": "intervencion"
  },
+ "canal_directo_seguros": {
+  "id": "canal_directo_seguros",
+  "nombre": "Canal de distribución directo (digital) de la aseguradora",
+  "tipo": "intervencion"
+ },
+ "cancelacion_dificil_suscripcion": {
+  "id": "cancelacion_dificil_suscripcion",
+  "nombre": "Cancelación difícil de suscripciones (cobros tras pedir la baja)",
+  "tipo": "intervencion"
+ },
+ "cancelacion_proyectos_ia_agentica": {
+  "id": "cancelacion_proyectos_ia_agentica",
+  "nombre": "Cancelación de proyectos de IA agéntica (predicción >40% a 2027)",
+  "tipo": "resultado"
+ },
+ "canva_arr": {
+  "id": "canva_arr",
+  "nombre": "ARR de Canva (US$4.000M a fin de 2025)",
+  "tipo": "resultado"
+ },
  "capacidad_diseno_ingenieria": {
   "id": "capacidad_diseno_ingenieria",
   "nombre": "Capacidad de diseño-ingeniería",
   "tipo": "constructo"
+ },
+ "capitacion_ajustada_necesidad": {
+  "id": "capitacion_ajustada_necesidad",
+  "nombre": "Capitación ajustada por necesidad (fórmula de asignación / Global Sum del Reino Unido)",
+  "tipo": "intervencion"
+ },
+ "capital_privado_salud": {
+  "id": "capital_privado_salud",
+  "nombre": "Inversión de private equity en atención primaria",
+  "tipo": "concepto"
  },
  "capital_social": {
   "id": "capital_social",
   "nombre": "Capital social y redes",
   "tipo": "constructo"
  },
+ "caracteristicas_demanda": {
+  "id": "caracteristicas_demanda",
+  "nombre": "Características de demanda (el participante actúa lo que cree que se espera de él)",
+  "tipo": "limitacion"
+ },
+ "carga_cognitiva": {
+  "id": "carga_cognitiva",
+  "nombre": "Carga cognitiva sobre la memoria de trabajo",
+  "tipo": "constructo"
+ },
  "carga_prueba_aseguradora": {
   "id": "carga_prueba_aseguradora",
   "nombre": "La aseguradora debe acreditar que explicó la exclusión",
+  "tipo": "concepto"
+ },
+ "casos_disrupcion_no_encajan": {
+  "id": "casos_disrupcion_no_encajan",
+  "nombre": "Solo 7 de 77 casos ejemplares (9%) cumplen los cuatro elementos de la teoría de la disrupción",
+  "tipo": "limitacion"
+ },
+ "casos_resueltos_hora": {
+  "id": "casos_resueltos_hora",
+  "nombre": "Casos de clientes resueltos por hora",
+  "tipo": "resultado"
+ },
+ "castellion_markham_2013": {
+  "id": "castellion_markham_2013",
+  "nombre": "Castellion y Markham 2013: perspectiva sobre las tasas de fracaso de productos nuevos (JPIM)",
+  "tipo": "estudio"
+ },
+ "cdss_prescripcion": {
+  "id": "cdss_prescripcion",
+  "nombre": "Soporte de decisión clínica en prescripción",
+  "tipo": "intervencion"
+ },
+ "ceguera_al_cambio": {
+  "id": "ceguera_al_cambio",
+  "nombre": "Ceguera al cambio (no notar cambios grandes en lo que se está mirando)",
+  "tipo": "resultado"
+ },
+ "ceguera_inatencional": {
+  "id": "ceguera_inatencional",
+  "nombre": "Ceguera por falta de atención (no ver un evento inesperado y visible por estar concentrado en otra tarea)",
+  "tipo": "resultado"
+ },
+ "centaur": {
+  "id": "centaur",
+  "nombre": "Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones)",
+  "tipo": "intervencion"
+ },
+ "cercania_victima": {
+  "id": "cercania_victima",
+  "nombre": "Proximidad e intimidad con la persona afectada",
+  "tipo": "constructo"
+ },
+ "cfir": {
+  "id": "cfir",
+  "nombre": "Marco Consolidado de Investigación en Implementación (CFIR)",
+  "tipo": "concepto"
+ },
+ "chas_singapur": {
+  "id": "chas_singapur",
+  "nombre": "Community Health Assist Scheme (CHAS): subsidio para atenderse con GP privados en Singapur",
+  "tipo": "intervencion"
+ },
+ "choices13k": {
+  "id": "choices13k",
+  "nombre": "Conjunto choices13k de elecciones riesgosas (Peterson et al., Science 2021)",
+  "tipo": "estudio"
+ },
+ "ciclos_rentabilidad_aseguradoras_salud": {
+  "id": "ciclos_rentabilidad_aseguradoras_salud",
+  "nombre": "Ciclos de ganancias y pérdidas de aseguradoras de salud (mercado individual EE.UU.)",
+  "tipo": "resultado"
+ },
+ "ciencia_conductual_ia": {
+  "id": "ciencia_conductual_ia",
+  "nombre": "Ciencia conductual de la IA (AI Behavioral Science)",
+  "tipo": "concepto"
+ },
+ "cierre_bloque_polizas": {
+  "id": "cierre_bloque_polizas",
+  "nombre": "Cierre de un bloque de pólizas a nuevos afiliados",
+  "tipo": "intervencion"
+ },
+ "cierre_munich_re_ventures": {
+  "id": "cierre_munich_re_ventures",
+  "nombre": "Fin de nuevas inversiones de Munich Re Ventures (≈US$1.200M en ~100 inversiones, 2015-2025)",
+  "tipo": "concepto"
+ },
+ "cierre_paypal_ventures": {
+  "id": "cierre_paypal_ventures",
+  "nombre": "Cierre de PayPal Ventures (US$850M en tres fondos, 2016-2026)",
   "tipo": "concepto"
  },
  "claude_design": {
@@ -429,6 +1254,31 @@
   "nombre": "Coaseguro y tarifas variables",
   "tipo": "concepto"
  },
+ "cobertura_seguro_salud": {
+  "id": "cobertura_seguro_salud",
+  "nombre": "Cobertura de seguro de salud",
+  "tipo": "intervencion"
+ },
+ "codificacion_memoria_rica": {
+  "id": "codificacion_memoria_rica",
+  "nombre": "Codificación de memoria más densa de un evento saliente",
+  "tipo": "concepto"
+ },
+ "codiseno_servicios_salud": {
+  "id": "codiseno_servicios_salud",
+  "nombre": "Participación del público en el diseño de servicios de salud",
+  "tipo": "intervencion"
+ },
+ "coeficiente_aversion_perdida": {
+  "id": "coeficiente_aversion_perdida",
+  "nombre": "Coeficiente de aversión a la pérdida (lambda)",
+  "tipo": "metrica"
+ },
+ "cognicion_encarnada": {
+  "id": "cognicion_encarnada",
+  "nombre": "Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores",
+  "tipo": "concepto"
+ },
  "cognicion_infantil": {
   "id": "cognicion_infantil",
   "nombre": "Desarrollo cognitivo infantil",
@@ -439,10 +1289,40 @@
   "nombre": "Cognitive forcing functions (fricción deliberada)",
   "tipo": "intervencion"
  },
+ "colapso_modos_llm": {
+  "id": "colapso_modos_llm",
+  "nombre": "Colapso de modos en LLMs (mode collapse)",
+  "tipo": "concepto"
+ },
+ "colectivismo_cultural": {
+  "id": "colectivismo_cultural",
+  "nombre": "Colectivismo cultural (vs individualismo)",
+  "tipo": "constructo"
+ },
+ "combinacion_humano_ia": {
+  "id": "combinacion_humano_ia",
+  "nombre": "Combinación humano-IA frente al mejor de los dos por separado",
+  "tipo": "intervencion"
+ },
  "combined_ratio_root": {
   "id": "combined_ratio_root",
   "nombre": "Combined ratio de Root (91,4%)",
   "tipo": "resultado"
+ },
+ "comisiones_agentes_baja_complejidad": {
+  "id": "comisiones_agentes_baja_complejidad",
+  "nombre": "Comisiones de agentes independientes en riesgos de baja complejidad",
+  "tipo": "resultado"
+ },
+ "complejidad_cfir": {
+  "id": "complejidad_cfir",
+  "nombre": "CFIR exhaustivo pero engorroso de aplicar",
+  "tipo": "limitacion"
+ },
+ "completitud_teoria": {
+  "id": "completitud_teoria",
+  "nombre": "Completitud de una teoría (fracción de la variación predecible que capta)",
+  "tipo": "metrica"
  },
  "compra_ecommerce": {
   "id": "compra_ecommerce",
@@ -454,9 +1334,49 @@
   "nombre": "Comprensión del plan de salud",
   "tipo": "resultado"
  },
+ "comprension_seguro_vida": {
+  "id": "comprension_seguro_vida",
+  "nombre": "Comprensión del seguro de vida temporal",
+  "tipo": "resultado"
+ },
+ "comprension_terminos_seguro_salud": {
+  "id": "comprension_terminos_seguro_salud",
+  "nombre": "Comprensión de términos de seguro de salud (deducible, copago)",
+  "tipo": "resultado"
+ },
+ "compromiso_cognitivo_lectura_web": {
+  "id": "compromiso_cognitivo_lectura_web",
+  "nombre": "Compromiso cognitivo al leer sitios web (usuarios sin discapacidad)",
+  "tipo": "resultado"
+ },
+ "concentracion_pbm": {
+  "id": "concentracion_pbm",
+  "nombre": "Concentración del mercado de PBM en EE.UU.",
+  "tipo": "resultado"
+ },
+ "conducta_cliente_financiero": {
+  "id": "conducta_cliente_financiero",
+  "nombre": "Conducta real del cliente de servicios financieros",
+  "tipo": "resultado"
+ },
+ "conducta_maquinas": {
+  "id": "conducta_maquinas",
+  "nombre": "Conducta de las máquinas (machine behaviour) como campo científico",
+  "tipo": "concepto"
+ },
  "conducta_preparacion_hogar": {
   "id": "conducta_preparacion_hogar",
   "nombre": "Acciones de preparación del hogar ante El Niño",
+  "tipo": "resultado"
+ },
+ "conducta_prosocial": {
+  "id": "conducta_prosocial",
+  "nombre": "Conducta prosocial (elegir en beneficio de otro)",
+  "tipo": "resultado"
+ },
+ "conducta_salud": {
+  "id": "conducta_salud",
+  "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
   "tipo": "resultado"
  },
  "conductas_riesgo_manejo": {
@@ -464,9 +1384,29 @@
   "nombre": "Conductas de riesgo al manejar (velocidad, frenado, aceleración)",
   "tipo": "resultado"
  },
+ "confianza_aseguradora": {
+  "id": "confianza_aseguradora",
+  "nombre": "Confianza del consumidor en la aseguradora",
+  "tipo": "constructo"
+ },
+ "confianza_compra_online_seguro": {
+  "id": "confianza_compra_online_seguro",
+  "nombre": "Confianza en la compra online de seguros",
+  "tipo": "constructo"
+ },
  "confianza_en_ia": {
   "id": "confianza_en_ia",
   "nombre": "Confianza en la IA",
+  "tipo": "resultado"
+ },
+ "confianza_fuente": {
+  "id": "confianza_fuente",
+  "nombre": "Confianza en quien comunica la información",
+  "tipo": "resultado"
+ },
+ "confianza_investigacion_academica": {
+  "id": "confianza_investigacion_academica",
+  "nombre": "Confianza en la investigación académica y su publicación",
   "tipo": "resultado"
  },
  "conflicto_civil": {
@@ -474,24 +1414,129 @@
   "nombre": "Conflicto civil",
   "tipo": "resultado"
  },
+ "conflicto_decisional": {
+  "id": "conflicto_decisional",
+  "nombre": "Conflicto decisional (sentirse desinformado o indeciso sobre los propios valores)",
+  "tipo": "resultado"
+ },
+ "conformidad_mayoria": {
+  "id": "conformidad_mayoria",
+  "nombre": "Conformidad con la respuesta de la mayoría (tasa de errores conformes)",
+  "tipo": "resultado"
+ },
+ "confusores_intertemporales": {
+  "id": "confusores_intertemporales",
+  "nombre": "Consideraciones distintas de la preferencia temporal que influyen en elecciones intertemporales",
+  "tipo": "limitacion"
+ },
+ "conocimiento_atributo": {
+  "id": "conocimiento_atributo",
+  "nombre": "Conocimiento del consumidor sobre el atributo o dominio que se decide",
+  "tipo": "constructo"
+ },
+ "conocimiento_decision": {
+  "id": "conocimiento_decision",
+  "nombre": "Conocimiento sobre la decisión",
+  "tipo": "resultado"
+ },
+ "conocimiento_declarativo_procedimental": {
+  "id": "conocimiento_declarativo_procedimental",
+  "nombre": "Conocimiento declarativo y procedimental",
+  "tipo": "resultado"
+ },
+ "consejo_experto_digital": {
+  "id": "consejo_experto_digital",
+  "nombre": "Consejo experto digital en la elección del plan de seguro",
+  "tipo": "intervencion"
+ },
  "consejo_ia_personalizado": {
   "id": "consejo_ia_personalizado",
   "nombre": "Consejo personalizado con IA (e-commerce)",
   "tipo": "intervencion"
+ },
+ "consentimiento_previo_expreso_datos": {
+  "id": "consentimiento_previo_expreso_datos",
+  "nombre": "Consentimiento previo, informado, expreso e inequívoco para tratar datos personales",
+  "tipo": "concepto"
  },
  "consistencia_interfaz": {
   "id": "consistencia_interfaz",
   "nombre": "Consistencia de la interfaz entre ejecuciones",
   "tipo": "resultado"
  },
+ "consumidores_seguros_peru": {
+  "id": "consumidores_seguros_peru",
+  "nombre": "Consumidores y usuarios de seguros en Perú",
+  "tipo": "poblacion"
+ },
+ "contacto_comercial_sin_consentimiento": {
+  "id": "contacto_comercial_sin_consentimiento",
+  "nombre": "Contacto comercial (llamadas, SMS, correos, mensajes electrónicos) sin consentimiento previo del consumidor",
+  "tipo": "concepto"
+ },
+ "contenido_emocional_anuncio": {
+  "id": "contenido_emocional_anuncio",
+  "nombre": "Contenido emocional en anuncios",
+  "tipo": "intervencion"
+ },
+ "contenido_informativo_anuncio": {
+  "id": "contenido_informativo_anuncio",
+  "nombre": "Contenido informativo en anuncios",
+  "tipo": "intervencion"
+ },
  "contexto_y_metodo": {
   "id": "contexto_y_metodo",
   "nombre": "Contexto y elección metodológica",
   "tipo": "concepto"
  },
+ "continuidad_atencion_primaria": {
+  "id": "continuidad_atencion_primaria",
+  "nombre": "Primer contacto y longitudinalidad de la atención primaria",
+  "tipo": "resultado"
+ },
+ "continuidad_proveedor_habitual": {
+  "id": "continuidad_proveedor_habitual",
+  "nombre": "Cobertura del proveedor habitual (continuidad de atención)",
+  "tipo": "constructo"
+ },
+ "contratos_evicore_pago_por_ahorro": {
+  "id": "contratos_evicore_pago_por_ahorro",
+  "nombre": "Contratos en que EviCore gana más cuanto más recorta el gasto en salud",
+  "tipo": "concepto"
+ },
+ "control_malentendidos": {
+  "id": "control_malentendidos",
+  "nombre": "Procedimientos que controlan malentendidos sobre cómo se elicita el valor (entrenamiento, rondas de práctica)",
+  "tipo": "intervencion"
+ },
+ "controles_atencion_encuestas": {
+  "id": "controles_atencion_encuestas",
+  "nombre": "Controles de atención y de detección de respuestas no humanas en encuestas",
+  "tipo": "metrica"
+ },
+ "conversaciones_ronda_lovable_2026": {
+  "id": "conversaciones_ronda_lovable_2026",
+  "nombre": "Conversaciones para levantar US$300M a US$13.200M (jul-2026)",
+  "tipo": "concepto"
+ },
+ "conversion_checkout": {
+  "id": "conversion_checkout",
+  "nombre": "Conversión del checkout",
+  "tipo": "resultado"
+ },
  "conviccion_tener_razon": {
   "id": "conviccion_tener_razon",
   "nombre": "Convicción de tener razón",
+  "tipo": "resultado"
+ },
+ "correspondencias_crossmodales": {
+  "id": "correspondencias_crossmodales",
+  "nombre": "Correspondencias crossmodales (emparejamientos consistentes entre rasgos de distintos sentidos)",
+  "tipo": "concepto"
+ },
+ "costo_adquisicion_seguros": {
+  "id": "costo_adquisicion_seguros",
+  "nombre": "Costo de adquisición de clientes en seguros",
   "tipo": "resultado"
  },
  "costo_beneficio_involucramiento": {
@@ -509,6 +1554,31 @@
   "nombre": "Costo de IA / inferencia",
   "tipo": "concepto"
  },
+ "costo_siniestros_medicos_empleador": {
+  "id": "costo_siniestros_medicos_empleador",
+  "nombre": "Costo anual de siniestros médicos por miembro (empleador)",
+  "tipo": "resultado"
+ },
+ "costos_dialogo": {
+  "id": "costos_dialogo",
+  "nombre": "Costos del diálogo (duración, turnos, errores)",
+  "tipo": "metrica"
+ },
+ "costos_extra_inesperados": {
+  "id": "costos_extra_inesperados",
+  "nombre": "Costos extra inesperados en el checkout (envío, impuestos, cargos)",
+  "tipo": "concepto"
+ },
+ "creador_mercado_seguros": {
+  "id": "creador_mercado_seguros",
+  "nombre": "Función de creador de mercado (emparejar necesidades del asegurado con aseguradoras capaces)",
+  "tipo": "concepto"
+ },
+ "crecimiento_ingresos_canva": {
+  "id": "crecimiento_ingresos_canva",
+  "nombre": "Crecimiento de ingresos previsto de Canva para 2026",
+  "tipo": "resultado"
+ },
  "crecimiento_pbi": {
   "id": "crecimiento_pbi",
   "nombre": "Crecimiento económico (PBI)",
@@ -524,10 +1594,45 @@
   "nombre": "Crecimiento real de primas globales (1,3% en 2026)",
   "tipo": "resultado"
  },
+ "crecimiento_primas_seguros_comerciales": {
+  "id": "crecimiento_primas_seguros_comerciales",
+  "nombre": "Crecimiento de primas de seguros comerciales (~8% anual, 5 años)",
+  "tipo": "resultado"
+ },
+ "crecimiento_ventas": {
+  "id": "crecimiento_ventas",
+  "nombre": "Crecimiento de ventas",
+  "tipo": "resultado"
+ },
  "creditos_ia_figma": {
   "id": "creditos_ia_figma",
   "nombre": "Monetización de créditos de IA de Figma",
   "tipo": "intervencion"
+ },
+ "creencias_conspirativas": {
+  "id": "creencias_conspirativas",
+  "nombre": "Creencia en teorías conspirativas",
+  "tipo": "resultado"
+ },
+ "creencias_pesimistas": {
+  "id": "creencias_pesimistas",
+  "nombre": "Creencias pesimistas sobre lo que se ganaría al cambiar",
+  "tipo": "constructo"
+ },
+ "criticas_spread_pricing_pbm": {
+  "id": "criticas_spread_pricing_pbm",
+  "nombre": "Críticas de larga data al modelo de los PBM (spread pricing y rebates)",
+  "tipo": "concepto"
+ },
+ "crueldad_guardias": {
+  "id": "crueldad_guardias",
+  "nombre": "Conducta cruel de los 'guardias' hacia los 'presos'",
+  "tipo": "resultado"
+ },
+ "cumplimiento_deshonesto": {
+  "id": "cumplimiento_deshonesto",
+  "nombre": "Cumplimiento de instrucciones totalmente deshonestas",
+  "tipo": "resultado"
  },
  "danos_nino_1998": {
   "id": "danos_nino_1998",
@@ -537,6 +1642,11 @@
  "danos_nino_2017": {
   "id": "danos_nino_2017",
   "nombre": "Daños humanos y económicos del Niño Costero 2017",
+  "tipo": "resultado"
+ },
+ "dap_red_proveedores": {
+  "id": "dap_red_proveedores",
+  "nombre": "Disposición a pagar por la red de proveedores del plan",
   "tipo": "resultado"
  },
  "dark_patterns": {
@@ -554,9 +1664,54 @@
   "nombre": "Dark patterns leves",
   "tipo": "intervencion"
  },
+ "datos_log_conducta": {
+  "id": "datos_log_conducta",
+  "nombre": "Trazas digitales / logfiles de uso real",
+  "tipo": "metrica"
+ },
+ "decision_compra_hogar": {
+  "id": "decision_compra_hogar",
+  "nombre": "Decisión de compra en el hogar/pareja",
+  "tipo": "concepto"
+ },
+ "default_nudge": {
+  "id": "default_nudge",
+  "nombre": "Opción por defecto (default)",
+  "tipo": "intervencion"
+ },
+ "delegacion_ia_metas": {
+  "id": "delegacion_ia_metas",
+  "nombre": "Delegar en una máquina por metas de alto nivel o aprendizaje supervisado (sin instrucciones explícitas)",
+  "tipo": "intervencion"
+ },
+ "demanda_esg_aseguradoras": {
+  "id": "demanda_esg_aseguradoras",
+  "nombre": "Demanda de consumidores de que las aseguradoras integren ESG",
+  "tipo": "resultado"
+ },
+ "demanda_freelance_escritura_codigo": {
+  "id": "demanda_freelance_escritura_codigo",
+  "nombre": "Publicaciones de trabajos freelance de escritura y programación",
+  "tipo": "resultado"
+ },
+ "demanda_freelance_imagenes": {
+  "id": "demanda_freelance_imagenes",
+  "nombre": "Publicaciones de trabajos freelance de creación de imágenes",
+  "tipo": "resultado"
+ },
  "demanda_seguros": {
   "id": "demanda_seguros",
   "nombre": "Demanda de seguros",
+  "tipo": "resultado"
+ },
+ "demora_gratificacion": {
+  "id": "demora_gratificacion",
+  "nombre": "Capacidad infantil de demorar la gratificación (test del malvavisco)",
+  "tipo": "constructo"
+ },
+ "denegacion_autorizacion_previa": {
+  "id": "denegacion_autorizacion_previa",
+  "nombre": "Tasa de denegación de autorizaciones previas en seguros de salud de EE.UU.",
   "tipo": "resultado"
  },
  "dengue_peru": {
@@ -564,10 +1719,35 @@
   "nombre": "Casos y muertes por dengue (Perú)",
   "tipo": "resultado"
  },
+ "derivacion_atencion_primaria": {
+  "id": "derivacion_atencion_primaria",
+  "nombre": "Desvío de pacientes de urgencias a atención primaria",
+  "tipo": "resultado"
+ },
+ "desalineacion_opinion_grupos": {
+  "id": "desalineacion_opinion_grupos",
+  "nombre": "Desalineación entre las opiniones de un LLM y las de grupos demográficos",
+  "tipo": "resultado"
+ },
+ "desarrollo_favorable_reservas_lemonade": {
+  "id": "desarrollo_favorable_reservas_lemonade",
+  "nombre": "Desarrollo favorable de siniestros de periodos previos en Lemonade (7 pp en el 2T 2026)",
+  "tipo": "concepto"
+ },
  "descarga_cognitiva": {
   "id": "descarga_cognitiva",
   "nombre": "Descarga cognitiva",
   "tipo": "constructo"
+ },
+ "descarga_cognitiva_entorno": {
+  "id": "descarga_cognitiva_entorno",
+  "nombre": "Descarga de trabajo cognitivo en el entorno (offloading)",
+  "tipo": "concepto"
+ },
+ "desempeno_cognitivo": {
+  "id": "desempeno_cognitivo",
+  "nombre": "Desempeño en pruebas cognitivas o de logro",
+  "tipo": "resultado"
  },
  "desempeno_complementario": {
   "id": "desempeno_complementario",
@@ -589,6 +1769,16 @@
   "nombre": "Desempeño organizacional",
   "tipo": "resultado"
  },
+ "desempeno_pc_eeuu_2025": {
+  "id": "desempeno_pc_eeuu_2025",
+  "nombre": "Desempeño de la industria de seguros P&C de EE.UU. en 2025",
+  "tipo": "resultado"
+ },
+ "deseo_limpieza_fisica": {
+  "id": "deseo_limpieza_fisica",
+  "nombre": "Deseo de limpieza física (productos, toallitas)",
+  "tipo": "resultado"
+ },
  "design_theater": {
   "id": "design_theater",
   "nombre": "Design Theater: justificación de diseño sin implementación",
@@ -599,15 +1789,35 @@
   "nombre": "Design thinking",
   "tipo": "intervencion"
  },
+ "design_value_index_dmi": {
+  "id": "design_value_index_dmi",
+  "nombre": "Design Value Index de DMI (portafolio de 16 empresas design-centric vs. S&P 500)",
+  "tipo": "metrica"
+ },
+ "desigualdad_productividad": {
+  "id": "desigualdad_productividad",
+  "nombre": "Desigualdad de productividad entre trabajadores",
+  "tipo": "resultado"
+ },
  "desinformacion_clima": {
   "id": "desinformacion_clima",
   "nombre": "Desinformación y pánico en redes ante lluvias",
   "tipo": "concepto"
  },
+ "desintermediacion_ia_distribucion_seguros": {
+  "id": "desintermediacion_ia_distribucion_seguros",
+  "nombre": "Desintermediación por IA de la distribución de seguros",
+  "tipo": "intervencion"
+ },
  "desnutricion_cronica": {
   "id": "desnutricion_cronica",
   "nombre": "Desnutrición crónica infantil",
   "tipo": "resultado"
+ },
+ "deteccion_faux_pas": {
+  "id": "deteccion_faux_pas",
+  "nombre": "Falla en detectar faux pas por enfoque hiperconservador al concluir",
+  "tipo": "limitacion"
  },
  "determinantes_automedicacion": {
   "id": "determinantes_automedicacion",
@@ -619,9 +1829,29 @@
   "nombre": "Hospitalizaciones infantiles por diarrea",
   "tipo": "resultado"
  },
+ "dictamen_salud_2025": {
+  "id": "dictamen_salud_2025",
+  "nombre": "Dictamen conjunto de la Comisión de Salud (PL 2522/2021 y 8488/2024), dic-2025",
+  "tipo": "intervencion"
+ },
+ "difusion_responsabilidad": {
+  "id": "difusion_responsabilidad",
+  "nombre": "Difusión de la responsabilidad",
+  "tipo": "constructo"
+ },
+ "direct_primary_care": {
+  "id": "direct_primary_care",
+  "nombre": "Direct Primary Care (atención primaria por membresía)",
+  "tipo": "intervencion"
+ },
  "disciplina_precios_salud": {
   "id": "disciplina_precios_salud",
   "nombre": "Disciplina de precios y rediseño de beneficios",
+  "tipo": "intervencion"
+ },
+ "disciplina_suscripcion_tarifas_pc": {
+  "id": "disciplina_suscripcion_tarifas_pc",
+  "nombre": "Suscripción disciplinada y alzas de tarifas en P&C",
   "tipo": "intervencion"
  },
  "diseno_hibrido_tipo2": {
@@ -629,25 +1859,105 @@
   "nombre": "Diseño híbrido efectividad-implementación tipo 2",
   "tipo": "concepto"
  },
+ "diseno_incentivo_conductual": {
+  "id": "diseno_incentivo_conductual",
+  "nombre": "Diseño del incentivo con principios conductuales (aversión a la pérdida, inmediatez, puntos de referencia)",
+  "tipo": "concepto"
+ },
  "diseno_industrial_efectivo": {
   "id": "diseno_industrial_efectivo",
   "nombre": "Efectividad de diseño industrial",
   "tipo": "constructo"
+ },
+ "diseno_publico": {
+  "id": "diseno_publico",
+  "nombre": "Diseño público y de servicios en el gobierno",
+  "tipo": "intervencion"
+ },
+ "diseno_stepped_wedge": {
+  "id": "diseno_stepped_wedge",
+  "nombre": "Diseño escalonado aleatorizado por clusters (stepped-wedge)",
+  "tipo": "concepto"
+ },
+ "disposicion_compra": {
+  "id": "disposicion_compra",
+  "nombre": "Disposición a comprar",
+  "tipo": "resultado"
+ },
+ "distorsion_hiperprecision": {
+  "id": "distorsion_hiperprecision",
+  "nombre": "Distorsión de hiperprecisión de LLMs (respuestas demasiado exactas frente a humanos)",
+  "tipo": "limitacion"
+ },
+ "distorsion_recuerdo": {
+  "id": "distorsion_recuerdo",
+  "nombre": "Distorsión del recuerdo de un evento (estimaciones sesgadas o detalles falsos)",
+  "tipo": "resultado"
+ },
+ "distribucion_seguros_latam": {
+  "id": "distribucion_seguros_latam",
+  "nombre": "Distribución de seguros en América Latina (canales)",
+  "tipo": "concepto"
  },
  "divulgacion_clara": {
   "id": "divulgacion_clara",
   "nombre": "Divulgación clara y saliente de un producto financiero",
   "tipo": "intervencion"
  },
+ "divulgacion_datos": {
+  "id": "divulgacion_datos",
+  "nombre": "Divulgación de datos personales",
+  "tipo": "resultado"
+ },
  "donaciones_informales": {
   "id": "donaciones_informales",
   "nombre": "Donaciones y ayuda informal (comida, ropa)",
   "tipo": "intervencion"
  },
+ "duracion_percibida": {
+  "id": "duracion_percibida",
+  "nombre": "Duración subjetiva percibida de un evento",
+  "tipo": "resultado"
+ },
+ "edad": {
+  "id": "edad",
+  "nombre": "Edad del consumidor",
+  "tipo": "constructo"
+ },
  "edad_avanzada": {
   "id": "edad_avanzada",
   "nombre": "Usuarios mayores",
   "tipo": "poblacion"
+ },
+ "edad_consumidor": {
+  "id": "edad_consumidor",
+  "nombre": "Edad del consumidor",
+  "tipo": "constructo"
+ },
+ "efectividad_politica_publica": {
+  "id": "efectividad_politica_publica",
+  "nombre": "Efectividad, innovación y eficiencia de políticas y servicios públicos",
+  "tipo": "resultado"
+ },
+ "efecto_bouba_kiki": {
+  "id": "efecto_bouba_kiki",
+  "nombre": "Efecto bouba/kiki (sonidos 'redondos' con formas curvas, 'agudos' con formas puntiagudas)",
+  "tipo": "concepto"
+ },
+ "efecto_conductual": {
+  "id": "efecto_conductual",
+  "nombre": "Cambio de conducta objetivo",
+  "tipo": "resultado"
+ },
+ "efecto_dotacion": {
+  "id": "efecto_dotacion",
+  "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
+  "tipo": "constructo"
+ },
+ "efecto_mcgurk": {
+  "id": "efecto_mcgurk",
+  "nombre": "Efecto McGurk (ver una boca decir 'ga' y oír 'ba' produce percibir un tercer sonido, 'da')",
+  "tipo": "resultado"
  },
  "efecto_nudge_academico": {
   "id": "efecto_nudge_academico",
@@ -659,10 +1969,30 @@
   "nombre": "Efecto de nudges a escala (~1,4 pp)",
   "tipo": "resultado"
  },
+ "efecto_stroop": {
+  "id": "efecto_stroop",
+  "nombre": "Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color)",
+  "tipo": "resultado"
+ },
  "el_nino_enso": {
   "id": "el_nino_enso",
   "nombre": "El Niño / ENSO (fase cálida)",
   "tipo": "concepto"
+ },
+ "eleccion_opcion_objetivo": {
+  "id": "eleccion_opcion_objetivo",
+  "nombre": "Elección de la opción objetivo (la que domina al señuelo)",
+  "tipo": "resultado"
+ },
+ "elliot_2007_est": {
+  "id": "elliot_2007_est",
+  "nombre": "Estudio Elliot et al. 2007 (efecto del rojo en el logro)",
+  "tipo": "estudio"
+ },
+ "emisor_experto": {
+  "id": "emisor_experto",
+  "nombre": "Presentar al emisor como experto",
+  "tipo": "intervencion"
  },
  "empleo_disenadores_graficos": {
   "id": "empleo_disenadores_graficos",
@@ -674,9 +2004,109 @@
   "nombre": "Empleo de web developers y diseñadores digitales (+7% 2024-2034)",
   "tipo": "resultado"
  },
+ "empleo_total_eeuu": {
+  "id": "empleo_total_eeuu",
+  "nombre": "Empleo total de EE.UU. (170,0 M → 175,2 M, +3,1% a 2034)",
+  "tipo": "resultado"
+ },
  "empoderamiento_psicologico": {
   "id": "empoderamiento_psicologico",
   "nombre": "Empoderamiento psicológico",
+  "tipo": "constructo"
+ },
+ "encogimiento_efecto_replica": {
+  "id": "encogimiento_efecto_replica",
+  "nombre": "Los efectos replicados son mucho menores que los originales (~la mitad)",
+  "tipo": "resultado"
+ },
+ "encuadre_decision": {
+  "id": "encuadre_decision",
+  "nombre": "Encuadre de la decisión (ganancia vs. pérdida)",
+  "tipo": "intervencion"
+ },
+ "encuesta_figma_disenadores": {
+  "id": "encuesta_figma_disenadores",
+  "nombre": "State of the Designer 2026 (Figma, 906 diseñadores)",
+  "tipo": "metrica"
+ },
+ "encuesta_naic_genz_2024": {
+  "id": "encuesta_naic_genz_2024",
+  "nombre": "Encuesta NAIC a adultos Gen Z de EE.UU. (2024, N=1.003)",
+  "tipo": "estudio"
+ },
+ "enfermedad_infrecuente": {
+  "id": "enfermedad_infrecuente",
+  "nombre": "Enfermedad poco común",
+  "tipo": "concepto"
+ },
+ "ensayo_contraactitudinal": {
+  "id": "ensayo_contraactitudinal",
+  "nombre": "Escribir argumentos contrarios a la propia opinión",
+  "tipo": "intervencion"
+ },
+ "ensusalud_2014_farmacias": {
+  "id": "ensusalud_2014_farmacias",
+  "nombre": "ENSUSALUD 2014 (INEI): módulo de usuarios de farmacias y boticas (n=3.849)",
+  "tipo": "estudio"
+ },
+ "errores_intuitivos_llm": {
+  "id": "errores_intuitivos_llm",
+  "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)",
+  "tipo": "resultado"
+ },
+ "errores_sistematicos_juicio": {
+  "id": "errores_sistematicos_juicio",
+  "nombre": "Errores sistemáticos y predecibles de juicio",
+  "tipo": "resultado"
+ },
+ "escala_confianza_aseguradora": {
+  "id": "escala_confianza_aseguradora",
+  "nombre": "Escala de confianza en aseguradoras de salud (Zheng et al. 2002)",
+  "tipo": "metrica"
+ },
+ "escala_modelo_llm": {
+  "id": "escala_modelo_llm",
+  "nombre": "Tamaño y competencia lingüística de los modelos de lenguaje",
+  "tipo": "concepto"
+ },
+ "escenario_cambio_planes": {
+  "id": "escenario_cambio_planes",
+  "nombre": "Escenario con cambio de planes (fuera del 'camino feliz')",
+  "tipo": "concepto"
+ },
+ "escepticismo_participante": {
+  "id": "escepticismo_participante",
+  "nombre": "Escepticismo del participante sobre la realidad del daño",
+  "tipo": "limitacion"
+ },
+ "escrutinio_revision": {
+  "id": "escrutinio_revision",
+  "nombre": "Escrutinio activo en la revisión (comentarios en línea)",
+  "tipo": "resultado"
+ },
+ "espiral_muerte_seleccion_adversa": {
+  "id": "espiral_muerte_seleccion_adversa",
+  "nombre": "Espiral de la muerte por selección adversa",
+  "tipo": "resultado"
+ },
+ "estimacion_cuantitativa": {
+  "id": "estimacion_cuantitativa",
+  "nombre": "Estimación numérica de una cantidad desconocida",
+  "tipo": "resultado"
+ },
+ "estimulo_oddball": {
+  "id": "estimulo_oddball",
+  "nombre": "Estímulo inesperado o distinto dentro de una serie repetida (oddball)",
+  "tipo": "intervencion"
+ },
+ "estructura_decision": {
+  "id": "estructura_decision",
+  "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
+  "tipo": "intervencion"
+ },
+ "estructura_roles_familiares": {
+  "id": "estructura_roles_familiares",
+  "nombre": "Estructura de roles y estrategias de decisión en la familia",
   "tipo": "constructo"
  },
  "estudiantes_proyectos_empresa": {
@@ -689,6 +2119,51 @@
   "nombre": "European Accessibility Act (exigible 28-jun-2025)",
   "tipo": "intervencion"
  },
+ "evaluacion_espera": {
+  "id": "evaluacion_espera",
+  "nombre": "Evaluación o satisfacción del cliente con la espera",
+  "tipo": "resultado"
+ },
+ "evaluacion_resultados_codiseno": {
+  "id": "evaluacion_resultados_codiseno",
+  "nombre": "Evaluación de resultados del codiseño",
+  "tipo": "metrica"
+ },
+ "evaluacion_retrospectiva": {
+  "id": "evaluacion_retrospectiva",
+  "nombre": "Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto)",
+  "tipo": "resultado"
+ },
+ "evasion_controles_calidad": {
+  "id": "evasion_controles_calidad",
+  "nombre": "Evasión de controles de calidad por agentes LLM",
+  "tipo": "limitacion"
+ },
+ "evicore_dial_algoritmo": {
+  "id": "evicore_dial_algoritmo",
+  "nombre": "Algoritmo ajustable 'the dial' de EviCore para enviar más autorizaciones previas a revisión",
+  "tipo": "intervencion"
+ },
+ "evidencia_debil_acceso_calidad": {
+  "id": "evidencia_debil_acceso_calidad",
+  "nombre": "Evidencia limitada y de baja validez interna sobre acceso y calidad",
+  "tipo": "limitacion"
+ },
+ "exactitud_fuera_frontera": {
+  "id": "exactitud_fuera_frontera",
+  "nombre": "Exactitud en tareas fuera de la frontera de capacidad de la IA",
+  "tipo": "resultado"
+ },
+ "exclusion_por_cuota": {
+  "id": "exclusion_por_cuota",
+  "nombre": "Exclusión de pacientes vulnerables por la cuota de membresía",
+  "tipo": "limitacion"
+ },
+ "exit_no_rentabilidad": {
+  "id": "exit_no_rentabilidad",
+  "nombre": "Un exit mide la transacción, no la rentabilidad operativa",
+  "tipo": "limitacion"
+ },
  "exito_producto_nuevo": {
   "id": "exito_producto_nuevo",
   "nombre": "Éxito de un producto nuevo",
@@ -698,6 +2173,51 @@
   "id": "exito_proyecto_innovacion",
   "nombre": "Éxito de proyectos de innovación",
   "tipo": "resultado"
+ },
+ "exito_tarea_agente": {
+  "id": "exito_tarea_agente",
+  "nombre": "Éxito de la tarea en un agente conversacional",
+  "tipo": "metrica"
+ },
+ "exito_transformacion": {
+  "id": "exito_transformacion",
+  "nombre": "Éxito sostenido de una transformación",
+  "tipo": "resultado"
+ },
+ "expectativa_experimentador": {
+  "id": "expectativa_experimentador",
+  "nombre": "Expectativas del experimentador (influyen sin querer en la conducta medida)",
+  "tipo": "limitacion"
+ },
+ "experiencia_cliente_seguros": {
+  "id": "experiencia_cliente_seguros",
+  "nombre": "Experiencia del cliente (CX) en aseguradoras",
+  "tipo": "constructo"
+ },
+ "experiencia_emocional": {
+  "id": "experiencia_emocional",
+  "nombre": "Experiencia emocional autorreportada (felicidad, humor percibido)",
+  "tipo": "resultado"
+ },
+ "experiencia_subjetiva_voz": {
+  "id": "experiencia_subjetiva_voz",
+  "nombre": "Experiencia subjetiva con sistemas de voz (precisión percibida, agrado, carga, molestia, habitabilidad, velocidad)",
+  "tipo": "constructo"
+ },
+ "experiencia_trabajador": {
+  "id": "experiencia_trabajador",
+  "nombre": "Experiencia y habilidad previa del trabajador",
+  "tipo": "constructo"
+ },
+ "experimento_prision_stanford": {
+  "id": "experimento_prision_stanford",
+  "nombre": "Experimento de la prisión de Stanford (Zimbardo, 1971)",
+  "tipo": "estudio"
+ },
+ "experimento_turing": {
+  "id": "experimento_turing",
+  "nombre": "Experimento de Turing (TE): replicar estudios con sujetos humanos simulados por un LLM",
+  "tipo": "metrica"
  },
  "explicabilidad_ia": {
   "id": "explicabilidad_ia",
@@ -709,20 +2229,115 @@
   "nombre": "Niños expuestos en gestación y primeros 2 años",
   "tipo": "poblacion"
  },
+ "exposicion_codigo_agente": {
+  "id": "exposicion_codigo_agente",
+  "nombre": "Experiencia acumulada revisando código de agentes de IA",
+  "tipo": "constructo"
+ },
+ "exposicion_color_rojo": {
+  "id": "exposicion_color_rojo",
+  "nombre": "Exposición breve al color rojo antes de una tarea",
+  "tipo": "intervencion"
+ },
+ "exposicion_ia_generativa_ocupacional": {
+  "id": "exposicion_ia_generativa_ocupacional",
+  "nombre": "Exposición ocupacional a la IA generativa (índice OIT)",
+  "tipo": "constructo"
+ },
+ "exposicion_repetida": {
+  "id": "exposicion_repetida",
+  "nombre": "Exposición repetida a un estímulo",
+  "tipo": "intervencion"
+ },
+ "factibilidad_seguridad_modelo_ia": {
+  "id": "factibilidad_seguridad_modelo_ia",
+  "nombre": "Seguridad, fiabilidad y factibilidad del modelo de IA en entorno real",
+  "tipo": "resultado"
+ },
+ "factores_contexto_dt": {
+  "id": "factores_contexto_dt",
+  "nombre": "Factores de contexto individuales y organizacionales del design thinking",
+  "tipo": "constructo"
+ },
  "factores_exito_producto_nuevo": {
   "id": "factores_exito_producto_nuevo",
   "nombre": "Predictores del éxito de un producto nuevo (ventaja, mercado, ajuste, predesarrollo, recursos)",
   "tipo": "constructo"
+ },
+ "factores_usuario_sistema": {
+  "id": "factores_usuario_sistema",
+  "nombre": "Experiencia, estilo cognitivo, actitudes del usuario y diseño del sistema",
+  "tipo": "concepto"
+ },
+ "fallas_razonamiento_causal": {
+  "id": "fallas_razonamiento_causal",
+  "nombre": "Fallas de razonamiento causal en LLMs",
+  "tipo": "limitacion"
+ },
+ "fallo_digital_reclamo_complejo": {
+  "id": "fallo_digital_reclamo_complejo",
+  "nombre": "Fallo de lo digital en reclamos complejos (el cliente debe pasar a ayuda humana)",
+  "tipo": "limitacion"
  },
  "farmacias_sistema_salud": {
   "id": "farmacias_sistema_salud",
   "nombre": "Integración de farmacias y boticas al sistema nacional de salud",
   "tipo": "concepto"
  },
+ "fed_metrica": {
+  "id": "fed_metrica",
+  "nombre": "FED: métrica no supervisada de evaluación de diálogo con DialoGPT",
+  "tipo": "metrica"
+ },
+ "feedback_facial_manipulado": {
+  "id": "feedback_facial_manipulado",
+  "nombre": "Manipulación de la expresión facial (lápiz en la boca, imitar fotos, mover músculos por instrucción)",
+  "tipo": "intervencion"
+ },
+ "fidelidad_algoritmica": {
+  "id": "fidelidad_algoritmica",
+  "nombre": "Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos)",
+  "tipo": "concepto"
+ },
+ "fidelidad_respuesta_rag": {
+  "id": "fidelidad_respuesta_rag",
+  "nombre": "Fidelidad de la respuesta al contexto recuperado (control de alucinación)",
+  "tipo": "constructo"
+ },
+ "final_menos_aversivo": {
+  "id": "final_menos_aversivo",
+  "nombre": "Agregar un tramo final menos desagradable a una experiencia",
+  "tipo": "intervencion"
+ },
+ "financiamiento_salud_singapur_3m": {
+  "id": "financiamiento_salud_singapur_3m",
+  "nombre": "Esquema S+3M de Singapur (MediSave, MediShield Life, MediFund)",
+  "tipo": "intervencion"
+ },
+ "firma_al_inicio_honestidad": {
+  "id": "firma_al_inicio_honestidad",
+  "nombre": "Firmar al inicio de un formulario para inducir honestidad ('signing first')",
+  "tipo": "intervencion"
+ },
+ "firmas_cotizadas_china": {
+  "id": "firmas_cotizadas_china",
+  "nombre": "Firmas cotizadas de China (8.671 observaciones empresa-año, 2017-2023)",
+  "tipo": "poblacion"
+ },
  "firmas_publicas_eeuu": {
   "id": "firmas_publicas_eeuu",
   "nombre": "Firmas públicas de EE.UU. (n=1.659, 1980-2015)",
   "tipo": "poblacion"
+ },
+ "fiscalizacion_ia_indecopi_audios": {
+  "id": "fiscalizacion_ia_indecopi_audios",
+  "nombre": "Fiscalización de Indecopi con IA (Whisper) sobre ~7 millones de audios de llamadas comerciales",
+  "tipo": "intervencion"
+ },
+ "fluidez_procesamiento": {
+  "id": "fluidez_procesamiento",
+  "nombre": "Fluidez de procesamiento (facilidad para procesar información)",
+  "tipo": "constructo"
  },
  "fluidez_tarea": {
   "id": "fluidez_tarea",
@@ -739,6 +2354,16 @@
   "nombre": "Fracaso real de productos nuevos (25% año 1, ~40% año 2)",
   "tipo": "resultado"
  },
+ "franquicia_demasiado_baja": {
+  "id": "franquicia_demasiado_baja",
+  "nombre": "Elegir una franquicia (deducible) demasiado baja",
+  "tipo": "concepto"
+ },
+ "fraude_datos_firmar_primero_2012": {
+  "id": "fraude_datos_firmar_primero_2012",
+  "nombre": "Experimentos fraudulentos que sustentaban 'firmar primero' (paper de 2012)",
+  "tipo": "limitacion"
+ },
  "friccion_disliked": {
   "id": "friccion_disliked",
   "nombre": "Los usuarios no gustan de la fricción cognitiva",
@@ -754,19 +2379,94 @@
   "nombre": "Fricción: acción de pago requerida tras el dark pattern",
   "tipo": "intervencion"
  },
+ "friccion_positiva": {
+  "id": "friccion_positiva",
+  "nombre": "Fricción positiva (pausas deliberadas para pensar)",
+  "tipo": "intervencion"
+ },
  "fuente_unica_microsoft": {
   "id": "fuente_unica_microsoft",
   "nombre": "Dato esencialmente de una sola organización",
   "tipo": "limitacion"
+ },
+ "fuerza_evidencia_original": {
+  "id": "fuerza_evidencia_original",
+  "nombre": "Fuerza de la evidencia del estudio original (p. ej., valor p, tamaño de efecto)",
+  "tipo": "constructo"
+ },
+ "funcion_potencia_psicofisica": {
+  "id": "funcion_potencia_psicofisica",
+  "nombre": "Función psicofísica de potencia (Stevens) entre magnitud real y percibida",
+  "tipo": "concepto"
+ },
+ "fundamentacion_por_interaccion": {
+  "id": "fundamentacion_por_interaccion",
+  "nombre": "Fundamentación por interacción: conceptos abstractos que se enriquecen con información sensoriomotora",
+  "tipo": "concepto"
+ },
+ "g_eval": {
+  "id": "g_eval",
+  "nombre": "G-Eval (un LLM puntúa cada texto con razonamiento paso a paso)",
+  "tipo": "metrica"
+ },
+ "ganancias_perdidas_predecibles": {
+  "id": "ganancias_perdidas_predecibles",
+  "nombre": "Ganancias y pérdidas predecibles por asegurado (incentivo a seleccionar)",
+  "tipo": "resultado"
+ },
+ "gartner_prediccion_sesgo_ia_2018": {
+  "id": "gartner_prediccion_sesgo_ia_2018",
+  "nombre": "Predicción de Gartner (2018): 85% de proyectos de IA con resultados erróneos por sesgo hasta 2022",
+  "tipo": "estudio"
+ },
+ "gasto_salud": {
+  "id": "gasto_salud",
+  "nombre": "Gasto en atención de salud",
+  "tipo": "resultado"
  },
  "gasto_salud_educacion": {
   "id": "gasto_salud_educacion",
   "nombre": "Gasto del hogar en salud y educación",
   "tipo": "resultado"
  },
+ "gatekeeping_atencion_primaria": {
+  "id": "gatekeeping_atencion_primaria",
+  "nombre": "Gatekeeping de atención primaria (filtro de acceso al hospital)",
+  "tipo": "intervencion"
+ },
+ "gatekeeping_mg": {
+  "id": "gatekeeping_mg",
+  "nombre": "Gatekeeping del médico general (filtro de acceso a especialistas)",
+  "tipo": "intervencion"
+ },
  "generative_ui": {
   "id": "generative_ui",
   "nombre": "Generative UI (interfaces generadas por LLM)",
+  "tipo": "intervencion"
+ },
+ "gestion_efectivo_wealthfront": {
+  "id": "gestion_efectivo_wealthfront",
+  "nombre": "Cuenta de gestión de efectivo de Wealthfront (ingreso por intereses)",
+  "tipo": "intervencion"
+ },
+ "gii_peru": {
+  "id": "gii_peru",
+  "nombre": "Índice Global de Innovación (OMPI): Perú",
+  "tipo": "metrica"
+ },
+ "glosario_seguros_sbs": {
+  "id": "glosario_seguros_sbs",
+  "nombre": "Glosario oficial de términos de seguros de la SBS",
+  "tipo": "intervencion"
+ },
+ "gnambs_2020_est": {
+  "id": "gnambs_2020_est",
+  "nombre": "Meta-análisis Gnambs 2020 (efecto del rojo en desempeño)",
+  "tipo": "estudio"
+ },
+ "gpt3": {
+  "id": "gpt3",
+  "nombre": "Modelo de lenguaje GPT-3 (davinci)",
   "tipo": "intervencion"
  },
  "guidance_figma_q2": {
@@ -774,15 +2474,65 @@
   "nombre": "Guía de Figma Q2: US$348-350M (~40%)",
   "tipo": "concepto"
  },
+ "habilitadores_institucionales": {
+  "id": "habilitadores_institucionales",
+  "nombre": "Habilitadores institucionales: liderazgo, capacidad, financiamiento, oportunidad de iterar",
+  "tipo": "constructo"
+ },
+ "hackenburg_margetts_2024": {
+  "id": "hackenburg_margetts_2024",
+  "nombre": "Experimento de microtargeting de Hackenburg y Margetts (PNAS 2024)",
+  "tipo": "estudio"
+ },
+ "healthier_sg_singapur": {
+  "id": "healthier_sg_singapur",
+  "nombre": "Healthier SG: inscripción con un médico de familia y plan de salud personalizado (Singapur)",
+  "tipo": "intervencion"
+ },
  "herramientas_ia_generativas": {
   "id": "herramientas_ia_generativas",
   "nombre": "Herramientas de IA generativa",
   "tipo": "intervencion"
  },
+ "heterogeneidad_nudge": {
+  "id": "heterogeneidad_nudge",
+  "nombre": "Heterogeneidad del efecto de nudges por dominio y técnica",
+  "tipo": "concepto"
+ },
+ "heuristicas_juicio": {
+  "id": "heuristicas_juicio",
+  "nombre": "Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla)",
+  "tipo": "concepto"
+ },
+ "hipotesis_interpretables": {
+  "id": "hipotesis_interpretables",
+  "nombre": "Hipótesis nuevas e interpretables sobre decisiones humanas",
+  "tipo": "resultado"
+ },
  "hogares_pobres": {
   "id": "hogares_pobres",
   "nombre": "Hogares pobres / de menores ingresos",
   "tipo": "poblacion"
+ },
+ "homogeneizacion_creativa": {
+  "id": "homogeneizacion_creativa",
+  "nombre": "Homogeneización del producto creativo entre usuarios",
+  "tipo": "resultado"
+ },
+ "homogeneizacion_salidas_llm": {
+  "id": "homogeneizacion_salidas_llm",
+  "nombre": "Homogeneización de las salidas de los LLMs (pérdida de diversidad)",
+  "tipo": "resultado"
+ },
+ "hu_2025": {
+  "id": "hu_2025",
+  "nombre": "Meta-análisis de segundo orden de Hu et al. (JBDM 2025)",
+  "tipo": "estudio"
+ },
+ "hughes_2011": {
+  "id": "hughes_2011",
+  "nombre": "Hughes 2011: revisión crítica de cinco apariciones publicadas del '70% de fracaso'",
+  "tipo": "estudio"
  },
  "i_frame": {
   "id": "i_frame",
@@ -804,10 +2554,105 @@
   "nombre": "IA clínica",
   "tipo": "concepto"
  },
+ "ia_en_investigacion": {
+  "id": "ia_en_investigacion",
+  "nombre": "Herramientas de IA en la investigación científica",
+  "tipo": "intervencion"
+ },
+ "ideo_reinvencion": {
+  "id": "ideo_reinvencion",
+  "nombre": "IDEO se reinventa como formador en innovación más que vendedor de diseño",
+  "tipo": "concepto"
+ },
+ "ilusion_comprension": {
+  "id": "ilusion_comprension",
+  "nombre": "Ilusiones de comprensión (creer entender el mundo más de lo que se entiende)",
+  "tipo": "limitacion"
+ },
+ "ilusion_control": {
+  "id": "ilusion_control",
+  "nombre": "Ilusión de control: expectativa de éxito mayor que la probabilidad objetiva",
+  "tipo": "constructo"
+ },
+ "impacto_pyg_genai": {
+  "id": "impacto_pyg_genai",
+  "nombre": "Impacto medible en el estado de resultados de la IA generativa",
+  "tipo": "resultado"
+ },
+ "implementacion_rutinaria_intervenciones_salud": {
+  "id": "implementacion_rutinaria_intervenciones_salud",
+  "nombre": "Evaluación de intervenciones durante su implementación rutinaria",
+  "tipo": "concepto"
+ },
+ "incentivo_precision": {
+  "id": "incentivo_precision",
+  "nombre": "Incentivo monetario por responder correctamente",
+  "tipo": "intervencion"
+ },
+ "incentivos_financieros_salud": {
+  "id": "incentivos_financieros_salud",
+  "nombre": "Incentivos financieros para conductas de salud",
+  "tipo": "intervencion"
+ },
+ "incertidumbre_medica": {
+  "id": "incertidumbre_medica",
+  "nombre": "Incertidumbre sobre la incidencia de enfermedad y la eficacia del tratamiento",
+  "tipo": "concepto"
+ },
+ "incumplimiento_consejo_triaje": {
+  "id": "incumplimiento_consejo_triaje",
+  "nombre": "Pacientes que acuden a urgencias pese a indicación de autocuidado o atención primaria",
+  "tipo": "limitacion"
+ },
+ "indecopi_sancion_bbva_llamada_2026": {
+  "id": "indecopi_sancion_bbva_llamada_2026",
+  "nombre": "Sanción de Indecopi a BBVA Perú por llamada publicitaria tras revocación del consentimiento (S/63.800, 2026)",
+  "tipo": "intervencion"
+ },
  "indecopi_sanciones_2026": {
   "id": "indecopi_sanciones_2026",
   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
   "tipo": "intervencion"
+ },
+ "inequidad_pago_practicas": {
+  "id": "inequidad_pago_practicas",
+  "nombre": "Prácticas idénticas no reciben pago equitativo entre países del Reino Unido (Gales ~9% menos)",
+  "tipo": "limitacion"
+ },
+ "inferencia_bayesiana_tiempo": {
+  "id": "inferencia_bayesiana_tiempo",
+  "nombre": "Estimación bayesiana del tiempo (combina la medición sensorial con lo que se espera por experiencia previa)",
+  "tipo": "concepto"
+ },
+ "influencia_social": {
+  "id": "influencia_social",
+  "nombre": "Influencia social (cumplimiento y conformidad)",
+  "tipo": "concepto"
+ },
+ "info_insuficiente_aseguradora": {
+  "id": "info_insuficiente_aseguradora",
+  "nombre": "Información insuficiente para juzgar a la aseguradora",
+  "tipo": "concepto"
+ },
+ "informacion_decision": {
+  "id": "informacion_decision",
+  "nombre": "Nudges de información/asistencia a la decisión",
+  "tipo": "intervencion"
+ },
+ "informacion_enganosa_posterior": {
+  "id": "informacion_enganosa_posterior",
+  "nombre": "Información engañosa recibida después del evento",
+  "tipo": "intervencion"
+ },
+ "informacion_tiempo_espera": {
+  "id": "informacion_tiempo_espera",
+  "nombre": "Informar al cliente el tiempo esperado de espera",
+  "tipo": "intervencion"
+ },
+ "infraestructura_mercado_seguro": {
+  "id": "infraestructura_mercado_seguro",
+  "nombre": "Infraestructura y regulación del mercado de seguros incompatible con el precio personalizado",
+  "tipo": "limitacion"
  },
  "ingreso_consumo_hogar": {
   "id": "ingreso_consumo_hogar",
@@ -824,6 +2669,26 @@
   "nombre": "Ingresos de Figma Q2 2026 (+48%)",
   "tipo": "resultado"
  },
+ "ingresos_mind_gym": {
+  "id": "ingresos_mind_gym",
+  "nombre": "Ingresos de Mind Gym (FY2025 £38,6M −14%; FY2026 £29,9M −23%)",
+  "tipo": "resultado"
+ },
+ "ingresos_wealthfront": {
+  "id": "ingresos_wealthfront",
+  "nombre": "Ingresos de Wealthfront (US$339M, 12 meses a jul-2025)",
+  "tipo": "resultado"
+ },
+ "innovacion_peru": {
+  "id": "innovacion_peru",
+  "nombre": "Desempeño de innovación de Perú",
+  "tipo": "resultado"
+ },
+ "inscripcion_registro_no_llamar": {
+  "id": "inscripcion_registro_no_llamar",
+  "nombre": "Números inscritos en el registro 'No Llamar' (>10 M en 4 días; >107 M al AF 2005)",
+  "tipo": "resultado"
+ },
  "inseguridad_alimentaria": {
   "id": "inseguridad_alimentaria",
   "nombre": "Inseguridad alimentaria del hogar",
@@ -834,25 +2699,255 @@
   "nombre": "Inseguridad alimentaria global por El Niño 2015-16",
   "tipo": "resultado"
  },
+ "integracion_multisensorial": {
+  "id": "integracion_multisensorial",
+  "nombre": "Integración multisensorial (unir señales de distintos sentidos en un solo objeto)",
+  "tipo": "resultado"
+ },
+ "integracion_producto_proceso": {
+  "id": "integracion_producto_proceso",
+  "nombre": "Integrar innovación de producto y de proceso (frente a solo producto)",
+  "tipo": "intervencion"
+ },
+ "integracion_vertical_pbm": {
+  "id": "integracion_vertical_pbm",
+  "nombre": "Integración vertical PBM-aseguradora",
+  "tipo": "concepto"
+ },
+ "intencion_compra_online_seguro_vida": {
+  "id": "intencion_compra_online_seguro_vida",
+  "nombre": "Intención de comprar seguro de vida online",
+  "tipo": "resultado"
+ },
+ "intencion_uso_interfaz": {
+  "id": "intencion_uso_interfaz",
+  "nombre": "Intención de uso de la interfaz",
+  "tipo": "resultado"
+ },
+ "intensidad_pico_final": {
+  "id": "intensidad_pico_final",
+  "nombre": "Intensidad en el peor momento (pico) y en el final de una experiencia",
+  "tipo": "constructo"
+ },
+ "interaccion_inicial": {
+  "id": "interaccion_inicial",
+  "nombre": "Etapa inicial de la interacción interpersonal",
+  "tipo": "concepto"
+ },
+ "interes_prevencion_riesgo_seguros": {
+  "id": "interes_prevencion_riesgo_seguros",
+  "nombre": "Interés de consumidores en servicios de prevención de riesgo de su aseguradora",
+  "tipo": "resultado"
+ },
  "interfaces_adaptativas": {
   "id": "interfaces_adaptativas",
   "nombre": "Interfaces adaptativas",
   "tipo": "concepto"
+ },
+ "interfaz_chatbot": {
+  "id": "interfaz_chatbot",
+  "nombre": "Interfaz de chatbot (frente a una GUI clásica)",
+  "tipo": "intervencion"
+ },
+ "intermediarios_seguros": {
+  "id": "intermediarios_seguros",
+  "nombre": "Intermediarios de seguros independientes (brokers y agentes)",
+  "tipo": "concepto"
+ },
+ "intervalo_retencion": {
+  "id": "intervalo_retencion",
+  "nombre": "Intervalo de retención (tiempo hasta la prueba final)",
+  "tipo": "concepto"
+ },
+ "intervencion_algun_testigo": {
+  "id": "intervencion_algun_testigo",
+  "nombre": "Probabilidad de que al menos un testigo intervenga (nivel grupo)",
+  "tipo": "resultado"
+ },
+ "intervencion_emergencia": {
+  "id": "intervencion_emergencia",
+  "nombre": "Ayuda en una emergencia (rapidez de aviso)",
+  "tipo": "resultado"
  },
  "intrusividad_percibida": {
   "id": "intrusividad_percibida",
   "nombre": "Intrusividad percibida",
   "tipo": "constructo"
  },
+ "invarianza_medicion": {
+  "id": "invarianza_medicion",
+  "nombre": "Violación de la invarianza de medición (se comparan estimaciones hechas sobre loterías distintas)",
+  "tipo": "limitacion"
+ },
  "inversion_id": {
   "id": "inversion_id",
   "nombre": "Inversión en I+D",
   "tipo": "intervencion"
  },
+ "inversion_insurtech_latam": {
+  "id": "inversion_insurtech_latam",
+  "nombre": "Inversión y número de insurtechs activas en América Latina",
+  "tipo": "resultado"
+ },
+ "inversion_preferencias": {
+  "id": "inversion_preferencias",
+  "nombre": "Inversión de preferencias ante problemas equivalentes",
+  "tipo": "resultado"
+ },
+ "investigacion_exploratoria": {
+  "id": "investigacion_exploratoria",
+  "nombre": "Estudios piloto y exploratorios",
+  "tipo": "concepto"
+ },
+ "investigacion_psicologica": {
+  "id": "investigacion_psicologica",
+  "nombre": "Investigación en ciencia psicológica con participantes",
+  "tipo": "concepto"
+ },
  "ipg_venta_rga": {
   "id": "ipg_venta_rga",
   "nombre": "Venta de R/GA a Truelink por IPG (mar-2025, términos no revelados)",
   "tipo": "concepto"
+ },
+ "ipo_canva_2027": {
+  "id": "ipo_canva_2027",
+  "nombre": "Postergación de la IPO de Canva a 2027 por el cambio a créditos de IA",
+  "tipo": "concepto"
+ },
+ "irracionalidad_no_humana_llm": {
+  "id": "irracionalidad_no_humana_llm",
+  "nombre": "Irracionalidad de los LLMs distinta de los sesgos humanos e inconsistente",
+  "tipo": "resultado"
+ },
+ "iyengar_lepper_2000": {
+  "id": "iyengar_lepper_2000",
+  "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
+  "tipo": "estudio"
+ },
+ "jonauskaite_2020_est": {
+  "id": "jonauskaite_2020_est",
+  "nombre": "Estudio Jonauskaite et al. 2020 (color-emoción en 30 países)",
+  "tipo": "estudio"
+ },
+ "juegos_simulacion_entrenamiento": {
+  "id": "juegos_simulacion_entrenamiento",
+  "nombre": "Juegos de simulación por computador para entrenamiento",
+  "tipo": "intervencion"
+ },
+ "juicio_duracion_prospectivo": {
+  "id": "juicio_duracion_prospectivo",
+  "nombre": "Duración juzgada cuando la persona sabe de antemano que deberá estimarla (vivencia del tiempo mientras pasa)",
+  "tipo": "resultado"
+ },
+ "juicio_duracion_retrospectivo": {
+  "id": "juicio_duracion_retrospectivo",
+  "nombre": "Duración juzgada por sorpresa, después (reconstruida desde la memoria)",
+  "tipo": "resultado"
+ },
+ "juicio_grupal_ambiguo": {
+  "id": "juicio_grupal_ambiguo",
+  "nombre": "Emitir juicios en grupo ante un estímulo ambiguo",
+  "tipo": "intervencion"
+ },
+ "juicio_importancia": {
+  "id": "juicio_importancia",
+  "nombre": "Juicio de importancia o valor",
+  "tipo": "resultado"
+ },
+ "juicio_precio": {
+  "id": "juicio_precio",
+  "nombre": "Juicio del consumidor sobre precio o valor",
+  "tipo": "resultado"
+ },
+ "juicios_metacognitivos": {
+  "id": "juicios_metacognitivos",
+  "nombre": "Juicios de verdad, agrado, confianza y frecuencia",
+  "tipo": "resultado"
+ },
+ "justicia_cola": {
+  "id": "justicia_cola",
+  "nombre": "Justicia percibida en la cola (respeto del orden de llegada)",
+  "tipo": "concepto"
+ },
+ "justificacion_externa_baja": {
+  "id": "justificacion_externa_baja",
+  "nombre": "Baja justificación externa (paga pequeña) por actuar contra la propia opinión",
+  "tipo": "intervencion"
+ },
+ "kaiser_permanente_risant": {
+  "id": "kaiser_permanente_risant",
+  "nombre": "Kaiser Permanente y Risant Health (sistema integrado aseguradora-prestador)",
+  "tipo": "organizacion"
+ },
+ "kff_desempeno_aseguradoras_2024": {
+  "id": "kff_desempeno_aseguradoras_2024",
+  "nombre": "KFF: Health Insurer Financial Performance in 2024",
+  "tipo": "estudio"
+ },
+ "kpi_innovacion_ventas_productos_nuevos": {
+  "id": "kpi_innovacion_ventas_productos_nuevos",
+  "nombre": "KPI de innovación: % de ventas de productos nuevos",
+  "tipo": "metrica"
+ },
+ "lanzamiento_claude_design": {
+  "id": "lanzamiento_claude_design",
+  "nombre": "Lanzamiento de Claude Design (17-abr-2026)",
+  "tipo": "concepto"
+ },
+ "latam_insurtech_journey": {
+  "id": "latam_insurtech_journey",
+  "nombre": "Estudio Latam Insurtech Journey (Digital Insurance LATAM, patrocinado por MAPFRE)",
+  "tipo": "estudio"
+ },
+ "legitimidad_autoridad": {
+  "id": "legitimidad_autoridad",
+  "nombre": "Directividad, legitimidad y consistencia de la autoridad",
+  "tipo": "constructo"
+ },
+ "lemonade_inc": {
+  "id": "lemonade_inc",
+  "nombre": "Lemonade Inc. (insurtech cotizada)",
+  "tipo": "organizacion"
+ },
+ "lemonade_resultados_q1_2026": {
+  "id": "lemonade_resultados_q1_2026",
+  "nombre": "Resultados Q1 2026 de Lemonade (ingresos +71%, pérdida neta US$35,8M)",
+  "tipo": "resultado"
+ },
+ "ley_29733_datos_personales": {
+  "id": "ley_29733_datos_personales",
+  "nombre": "Ley 29733 de Protección de Datos Personales (Perú)",
+  "tipo": "intervencion"
+ },
+ "ley_32323_antispam": {
+  "id": "ley_32323_antispam",
+  "nombre": "Ley 32323 (Perú, 2025): amplía la prohibición de comunicaciones comerciales spam sin consentimiento",
+  "tipo": "intervencion"
+ },
+ "ley_vierordt": {
+  "id": "ley_vierordt",
+  "nombre": "Ley de Vierordt / efecto de tendencia central en la estimación de duraciones",
+  "tipo": "concepto"
+ },
+ "ley_weber_fechner": {
+  "id": "ley_weber_fechner",
+  "nombre": "Ley de Weber-Fechner (la diferencia mínima perceptible es proporcional a la magnitud; la sensación crece como el logaritmo)",
+  "tipo": "concepto"
+ },
+ "liderazgo_identidad": {
+  "id": "liderazgo_identidad",
+  "nombre": "Liderazgo de identidad (el líder moviliza al grupo en nombre de una causa compartida)",
+  "tipo": "intervencion"
+ },
+ "lim_ciclo_reaseguro": {
+  "id": "lim_ciclo_reaseguro",
+  "nombre": "Cifras de precio del reaseguro de renovaciones de años distintos (−16% vs. +10-30%)",
+  "tipo": "limitacion"
+ },
+ "lim_pbi_1998_inconsistente": {
+  "id": "lim_pbi_1998_inconsistente",
+  "nombre": "Costo de 1997-98 reportado como 4,5% o 6,2% del PBI según la fuente secundaria",
+  "tipo": "limitacion"
  },
  "lim_sequia_no_enso": {
   "id": "lim_sequia_no_enso",
@@ -864,10 +2959,40 @@
   "nombre": "Cohorte pequeña sin grupo control",
   "tipo": "limitacion"
  },
+ "liquid_glass_ios26": {
+  "id": "liquid_glass_ios26",
+  "nombre": "Rediseño Liquid Glass de iOS 26",
+  "tipo": "intervencion"
+ },
  "litigios_adulacion": {
   "id": "litigios_adulacion",
   "nombre": "Litigios y cartas de fiscales por adulación de chatbots",
   "tipo": "concepto"
+ },
+ "llamadas_comerciales_sin_consentimiento": {
+  "id": "llamadas_comerciales_sin_consentimiento",
+  "nombre": "Llamadas publicitarias sin consentimiento vigente (spam)",
+  "tipo": "concepto"
+ },
+ "llm_juez": {
+  "id": "llm_juez",
+  "nombre": "LLM como juez de respuestas de asistentes",
+  "tipo": "metrica"
+ },
+ "logro_academico_adolescente": {
+  "id": "logro_academico_adolescente",
+  "nombre": "Logro académico y competencias en la adolescencia",
+  "tipo": "resultado"
+ },
+ "loss_ratio_bruto_lemonade": {
+  "id": "loss_ratio_bruto_lemonade",
+  "nombre": "Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes)",
+  "tipo": "resultado"
+ },
+ "loss_ratio_medico_q1_2025": {
+  "id": "loss_ratio_medico_q1_2025",
+  "nombre": "Loss ratio médico de aseguradoras públicas de EE.UU. en el 1T 2025",
+  "tipo": "resultado"
  },
  "lovable_arr": {
   "id": "lovable_arr",
@@ -889,10 +3014,25 @@
   "nombre": "Valoración de Lovable (US$13,3B)",
   "tipo": "resultado"
  },
+ "macleod_1991_est": {
+  "id": "macleod_1991_est",
+  "nombre": "Revisión MacLeod 1991 (50 años de efecto Stroop)",
+  "tipo": "estudio"
+ },
+ "maier_2022": {
+  "id": "maier_2022",
+  "nombre": "Re-análisis RoBMA de Maier et al. (PNAS 2022)",
+  "tipo": "estudio"
+ },
  "malaria_peru": {
   "id": "malaria_peru",
   "nombre": "Malaria en el norte del Perú",
   "tipo": "resultado"
+ },
+ "mancomunacion_riesgo": {
+  "id": "mancomunacion_riesgo",
+  "nombre": "Mancomunación de riesgos (risk pooling)",
+  "tipo": "concepto"
  },
  "marco_implementacion": {
   "id": "marco_implementacion",
@@ -914,15 +3054,60 @@
   "nombre": "Resúmenes y materiales públicos de Kohavi (no el texto de HBR)",
   "tipo": "estudio"
  },
+ "mckinsey_design_index": {
+  "id": "mckinsey_design_index",
+  "nombre": "Índice de Diseño de McKinsey (MDI)",
+  "tipo": "metrica"
+ },
  "mcr_unh": {
   "id": "mcr_unh",
   "nombre": "Medical care ratio de UnitedHealth (86,7% en el 2T 2026)",
+  "tipo": "resultado"
+ },
+ "medicion_economia_diseno": {
+  "id": "medicion_economia_diseno",
+  "nombre": "Medición de la economía del diseño del Reino Unido (GVA y empleo)",
+  "tipo": "metrica"
+ },
+ "medifund_singapur": {
+  "id": "medifund_singapur",
+  "nombre": "MediFund: fondo de asistencia para quienes no pueden pagar (Singapur)",
+  "tipo": "intervencion"
+ },
+ "medisave_singapur": {
+  "id": "medisave_singapur",
+  "nombre": "MediSave: cuenta de ahorro médico obligatoria (Singapur)",
+  "tipo": "intervencion"
+ },
+ "megaestudio": {
+  "id": "megaestudio",
+  "nombre": "Megaestudio (muchas intervenciones, misma población y outcome)",
+  "tipo": "intervencion"
+ },
+ "megaestudio_gimnasio": {
+  "id": "megaestudio_gimnasio",
+  "nombre": "Megaestudio de gimnasio de Milkman et al. (Nature 2021)",
+  "tipo": "estudio"
+ },
+ "mehta_2025": {
+  "id": "mehta_2025",
+  "nombre": "Mehta et al. 2025: RCT opt-out vs. opt-in en monitoreo remoto de presión arterial (N=424)",
+  "tipo": "estudio"
+ },
+ "mejora_kpi_rediseno": {
+  "id": "mejora_kpi_rediseno",
+  "nombre": "Mejora de KPIs tras un rediseño de usabilidad",
   "tipo": "resultado"
  },
  "menos_educados": {
   "id": "menos_educados",
   "nombre": "Personas con menor educación",
   "tipo": "poblacion"
+ },
+ "mensaje_norma_descriptiva": {
+  "id": "mensaje_norma_descriptiva",
+  "nombre": "Mensaje de norma descriptiva ('la mayoría de personas como tú hace X')",
+  "tipo": "intervencion"
  },
  "menus_adaptables": {
   "id": "menus_adaptables",
@@ -933,6 +3118,36 @@
   "id": "menus_adaptativos",
   "nombre": "Menús adaptativos (control del sistema)",
   "tipo": "intervencion"
+ },
+ "mercado_seguro_individual": {
+  "id": "mercado_seguro_individual",
+  "nombre": "Mercado de seguro de salud individual",
+  "tipo": "concepto"
+ },
+ "mercado_seguro_parametrico_global": {
+  "id": "mercado_seguro_parametrico_global",
+  "nombre": "Primas globales de seguro paramétrico (USD 16.200M en 2024; proyección USD 51.300M en 2034)",
+  "tipo": "resultado"
+ },
+ "mertens_2022": {
+  "id": "mertens_2022",
+  "nombre": "Meta-análisis de Mertens et al. (PNAS 2022)",
+  "tipo": "estudio"
+ },
+ "meta_ventas_innovacion_dsm": {
+  "id": "meta_ventas_innovacion_dsm",
+  "nombre": "Meta de DSM (2010): llevar las ventas de innovación de ~12% a ~20% hacia 2015",
+  "tipo": "intervencion"
+ },
+ "metas_influencia": {
+  "id": "metas_influencia",
+  "nombre": "Metas que explican la influencia: precisión, afiliación y autoimagen positiva",
+  "tipo": "concepto"
+ },
+ "micro_costeo": {
+  "id": "micro_costeo",
+  "nombre": "Micro-costeo (enumeración y costeo de cada insumo)",
+  "tipo": "metrica"
  },
  "micro_parametrico_microfinanzas": {
   "id": "micro_parametrico_microfinanzas",
@@ -954,10 +3169,80 @@
   "nombre": "Microtargeting con LLM (mensajes personalizados)",
   "tipo": "intervencion"
  },
+ "mide_tamano_no_efecto": {
+  "id": "mide_tamano_no_efecto",
+  "nombre": "Mide el tamaño del sector, no el efecto causal del diseño",
+  "tipo": "limitacion"
+ },
+ "miedo_agudo": {
+  "id": "miedo_agudo",
+  "nombre": "Miedo agudo ante un evento amenazante",
+  "tipo": "constructo"
+ },
+ "mind_gym": {
+  "id": "mind_gym",
+  "nombre": "Mind Gym plc (consultora de cambio conductual organizacional)",
+  "tipo": "organizacion"
+ },
+ "ml_generacion_hipotesis": {
+  "id": "ml_generacion_hipotesis",
+  "nombre": "ML + interpretación humana para generar hipótesis conductuales",
+  "tipo": "intervencion"
+ },
+ "mlr_mercados_salud_eeuu": {
+  "id": "mlr_mercados_salud_eeuu",
+  "nombre": "Medical loss ratio por mercado de seguro de salud en EE.UU. (MA, Medicaid, individual, grupo)",
+  "tipo": "resultado"
+ },
+ "mlr_oscar_health": {
+  "id": "mlr_oscar_health",
+  "nombre": "Medical loss ratio de Oscar Health (70,5% en el 1T 2026 vs 75,4% en el 1T 2025)",
+  "tipo": "resultado"
+ },
+ "modalidad_estimulo": {
+  "id": "modalidad_estimulo",
+  "nombre": "Modalidad y duración de presentación del estímulo (visual vs. auditivo; segundos de exposición)",
+  "tipo": "concepto"
+ },
+ "modelo_compuerta_atencional": {
+  "id": "modelo_compuerta_atencional",
+  "nombre": "Modelo de compuerta atencional del tiempo (Zakay y Block): más atención al tiempo = más 'pulsos' contados = duración más larga",
+  "tipo": "concepto"
+ },
+ "modelo_datos_tarea": {
+  "id": "modelo_datos_tarea",
+  "nombre": "UI generada desde un modelo de datos de la tarea (no desde código)",
+  "tipo": "intervencion"
+ },
+ "modelo_desobediente": {
+  "id": "modelo_desobediente",
+  "nombre": "Ver a un par que se niega a seguir las órdenes",
+  "tipo": "intervencion"
+ },
  "modelo_farmacias_triage": {
   "id": "modelo_farmacias_triage",
   "nombre": "Modelo de triage con IA y farmacias (Perú)",
   "tipo": "intervencion"
+ },
+ "modelos_chatgpt": {
+  "id": "modelos_chatgpt",
+  "nombre": "Modelos ChatGPT-3.5 y 4",
+  "tipo": "intervencion"
+ },
+ "modelos_conductuales_economicos": {
+  "id": "modelos_conductuales_economicos",
+  "nombre": "Modelos económicos de decisión (loterías, juegos, secuencias aleatorias)",
+  "tipo": "concepto"
+ },
+ "moderadores_sobrecarga": {
+  "id": "moderadores_sobrecarga",
+  "nombre": "Complejidad del surtido, dificultad de la tarea, incertidumbre de preferencias y meta de ahorrar esfuerzo",
+  "tipo": "concepto"
+ },
+ "monocultivo_cientifico": {
+  "id": "monocultivo_cientifico",
+  "nombre": "Monocultivos científicos (dominan ciertos métodos, preguntas y puntos de vista)",
+  "tipo": "resultado"
  },
  "mortalidad_temprana": {
   "id": "mortalidad_temprana",
@@ -969,6 +3254,36 @@
   "nombre": "Muestra estudiantil y outcomes percibidos",
   "tipo": "limitacion"
  },
+ "muestra_pequena_plos_accesibilidad_2025": {
+  "id": "muestra_pequena_plos_accesibilidad_2025",
+  "nombre": "Muestra pequeña (N=20) en el estudio psicofisiológico de accesibilidad",
+  "tipo": "limitacion"
+ },
+ "muestras_sinteticas_llm": {
+  "id": "muestras_sinteticas_llm",
+  "nombre": "Muestras sintéticas con LLM (personas simuladas que responden encuestas)",
+  "tipo": "intervencion"
+ },
+ "multa_indecopi_bbva_spam": {
+  "id": "multa_indecopi_bbva_spam",
+  "nombre": "Multa de Indecopi a BBVA Perú por llamadas comerciales sin consentimiento (S/1.537.250, Res. 083-2025/CC3)",
+  "tipo": "intervencion"
+ },
+ "multicanal_humano_digital_seguros": {
+  "id": "multicanal_humano_digital_seguros",
+  "nombre": "Distribución multicanal liderada por humanos y habilitada por tecnología",
+  "tipo": "intervencion"
+ },
+ "munich_re_ambition_2025": {
+  "id": "munich_re_ambition_2025",
+  "nombre": "Programa estratégico Ambition 2025 de Munich Re",
+  "tipo": "intervencion"
+ },
+ "naic_org": {
+  "id": "naic_org",
+  "nombre": "NAIC (Asociación Nacional de Comisionados de Seguros de EE.UU.)",
+  "tipo": "organizacion"
+ },
  "ndr_excluye_churn": {
   "id": "ndr_excluye_churn",
   "nombre": "Definición no estándar: la NDR excluye clientes que hicieron churn",
@@ -979,10 +3294,30 @@
   "nombre": "NDR de Figma",
   "tipo": "metrica"
  },
+ "necesidades_psicologicas": {
+  "id": "necesidades_psicologicas",
+  "nombre": "Necesidades psicológicas básicas: competencia, autonomía y vínculo",
+  "tipo": "constructo"
+ },
+ "negligencia_duracion": {
+  "id": "negligencia_duracion",
+  "nombre": "Negligencia de la duración: la duración casi no pesa en el recuerdo",
+  "tipo": "limitacion"
+ },
+ "nhs_111": {
+  "id": "nhs_111",
+  "nombre": "Servicio telefónico de asesoría y triaje NHS 111",
+  "tipo": "intervencion"
+ },
  "nino_costero_peru": {
   "id": "nino_costero_peru",
   "nombre": "Niño Costero peruano (1997-98, 2017, 2023)",
   "tipo": "concepto"
+ },
+ "nivel_educativo": {
+  "id": "nivel_educativo",
+  "nombre": "Nivel educativo",
+  "tipo": "constructo"
  },
  "no_asignacion_aleatoria": {
   "id": "no_asignacion_aleatoria",
@@ -994,19 +3329,104 @@
   "nombre": "Cifra vista en resúmenes secundarios; texto de HBR no abierto",
   "tipo": "limitacion"
  },
+ "norberg_2007": {
+  "id": "norberg_2007",
+  "nombre": "Estudio de intención vs. conducta de divulgación de Norberg, Horne y Horne (JCA 2007)",
+  "tipo": "estudio"
+ },
+ "norma_grupal_emergente": {
+  "id": "norma_grupal_emergente",
+  "nombre": "Convergencia de juicios en una norma de grupo",
+  "tipo": "resultado"
+ },
+ "norma_provincial": {
+  "id": "norma_provincial",
+  "nombre": "Norma provincial (referirse a quienes estuvieron en la misma situación inmediata)",
+  "tipo": "intervencion"
+ },
+ "normas_subjetivas_compra_seguro": {
+  "id": "normas_subjetivas_compra_seguro",
+  "nombre": "Normas subjetivas sobre la compra de seguros",
+  "tipo": "constructo"
+ },
  "norte_costero_peru": {
   "id": "norte_costero_peru",
   "nombre": "Hogares del norte costero (Tumbes, Piura, Lambayeque)",
   "tipo": "poblacion"
+ },
+ "npp_croda": {
+  "id": "npp_croda",
+  "nombre": "Ventas de productos nuevos y protegidos (NPP) como % de ventas de Croda",
+  "tipo": "metrica"
+ },
+ "nps_cliente_seguros": {
+  "id": "nps_cliente_seguros",
+  "nombre": "Net Promoter Score (NPS) del cliente de seguros",
+  "tipo": "resultado"
+ },
+ "npvi_3m": {
+  "id": "npvi_3m",
+  "nombre": "Meta 3M de 1988: 30% de ventas de productos con menos de 5 años",
+  "tipo": "concepto"
  },
  "nudges_a_escala": {
   "id": "nudges_a_escala",
   "nombre": "Nudges a escala (nudge units)",
   "tipo": "intervencion"
  },
+ "obediencia_destructiva": {
+  "id": "obediencia_destructiva",
+  "nombre": "Obediencia a órdenes dañinas (llegar a la descarga máxima)",
+  "tipo": "resultado"
+ },
+ "observacion_por_camara": {
+  "id": "observacion_por_camara",
+  "nombre": "Ser grabado en video durante el experimento (moderador propuesto por Strack)",
+  "tipo": "limitacion"
+ },
+ "ocupaciones_administrativas": {
+  "id": "ocupaciones_administrativas",
+  "nombre": "Ocupaciones administrativas (clerical support workers)",
+  "tipo": "poblacion"
+ },
+ "oecd_global_insurance_trends_2025": {
+  "id": "oecd_global_insurance_trends_2025",
+  "nombre": "OECD Global Insurance Market Trends 2025",
+  "tipo": "estudio"
+ },
  "oferta_competidores_nino": {
   "id": "oferta_competidores_nino",
   "nombre": "Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre)",
+  "tipo": "intervencion"
+ },
+ "opcion_senuelo": {
+  "id": "opcion_senuelo",
+  "nombre": "Opción señuelo dominada asimétricamente agregada al menú",
+  "tipo": "intervencion"
+ },
+ "opinionqa": {
+  "id": "opinionqa",
+  "nombre": "OpinionQA (benchmark de alineación de opiniones con 60 grupos de EE.UU.)",
+  "tipo": "metrica"
+ },
+ "optum_rx_tarifa_fija": {
+  "id": "optum_rx_tarifa_fija",
+  "nombre": "Modelo de tarifa fija mensual por miembro de Optum Rx, desligado de precios de lista",
+  "tipo": "intervencion"
+ },
+ "orden_autoridad": {
+  "id": "orden_autoridad",
+  "nombre": "Órdenes de una figura de autoridad (experimentador) de continuar",
+  "tipo": "intervencion"
+ },
+ "outcomes_salud": {
+  "id": "outcomes_salud",
+  "nombre": "Resultados de salud reales del paciente",
+  "tipo": "constructo"
+ },
+ "pago_basado_valor_ap": {
+  "id": "pago_basado_valor_ap",
+  "nombre": "Pago basado en valor en atención primaria",
   "tipo": "intervencion"
  },
  "pagos_seguros_2017": {
@@ -1019,14 +3439,49 @@
   "nombre": "Pandemia de 2020",
   "tipo": "concepto"
  },
+ "paradoja_fiabilidad": {
+  "id": "paradoja_fiabilidad",
+  "nombre": "Paradoja de la fiabilidad (efectos robustos a nivel grupo, poco confiables para medir a cada persona)",
+  "tipo": "limitacion"
+ },
+ "participacion_eeuu_primas_mundiales": {
+  "id": "participacion_eeuu_primas_mundiales",
+  "nombre": "Participación de EE.UU. en las primas de seguros mundiales",
+  "tipo": "resultado"
+ },
+ "particularidades_economicas_atencion_medica": {
+  "id": "particularidades_economicas_atencion_medica",
+  "nombre": "Problemas económicos especiales de la atención médica",
+  "tipo": "concepto"
+ },
  "patentes_diseno_utilidad": {
   "id": "patentes_diseno_utilidad",
   "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
   "tipo": "metrica"
  },
+ "pausa_reflexion_compra": {
+  "id": "pausa_reflexion_compra",
+  "nombre": "Permitir pausar, reflexionar y modificar la elección durante la compra",
+  "tipo": "intervencion"
+ },
+ "pedido_explicito_parar": {
+  "id": "pedido_explicito_parar",
+  "nombre": "Primer pedido explícito de la persona afectada de detenerse",
+  "tipo": "intervencion"
+ },
+ "peligro_percibido_emergencia": {
+  "id": "peligro_percibido_emergencia",
+  "nombre": "Peligro percibido de la emergencia",
+  "tipo": "constructo"
+ },
  "penetracion_peru": {
   "id": "penetracion_peru",
   "nombre": "Penetración de seguros en Perú",
+  "tipo": "resultado"
+ },
+ "penetracion_seguros_ocde": {
+  "id": "penetracion_seguros_ocde",
+  "nombre": "Penetración de seguros promedio OCDE (primas/PBI)",
   "tipo": "resultado"
  },
  "pensamiento_critico": {
@@ -1039,10 +3494,45 @@
   "nombre": "Percepción de abandono estatal (Reconstrucción, prevención no ejecutada)",
   "tipo": "constructo"
  },
+ "percepcion_campo_diseno": {
+  "id": "percepcion_campo_diseno",
+  "nombre": "Percepción del estado del campo del diseño",
+  "tipo": "resultado"
+ },
+ "percepcion_lucro_aseguradora_salud": {
+  "id": "percepcion_lucro_aseguradora_salud",
+  "nombre": "Percepción de que la aseguradora de salud prioriza lucro y costos sobre necesidades individuales",
+  "tipo": "constructo"
+ },
+ "percepcion_riesgo_precisa": {
+  "id": "percepcion_riesgo_precisa",
+  "nombre": "Percepción precisa del riesgo",
+  "tipo": "resultado"
+ },
  "perdida_neta_figma_fy25": {
   "id": "perdida_neta_figma_fy25",
   "nombre": "Pérdida neta GAAP de Figma FY2025 (−US$1,25B)",
   "tipo": "resultado"
+ },
+ "persistencia_efecto": {
+  "id": "persistencia_efecto",
+  "nombre": "Persistencia del efecto tras terminar la intervención",
+  "tipo": "resultado"
+ },
+ "persistencia_tarea": {
+  "id": "persistencia_tarea",
+  "nombre": "Persistencia en una tarea posterior",
+  "tipo": "resultado"
+ },
+ "personalizacion_conversacional": {
+  "id": "personalizacion_conversacional",
+  "nombre": "Personalización en conversación (la IA conoce datos del interlocutor)",
+  "tipo": "intervencion"
+ },
+ "personalizacion_publicidad": {
+  "id": "personalizacion_publicidad",
+  "nombre": "Publicidad personalizada (frente a genérica)",
+  "tipo": "intervencion"
  },
  "personas_susceptibles": {
   "id": "personas_susceptibles",
@@ -1054,10 +3544,45 @@
   "nombre": "Persuasión conversacional por IA",
   "tipo": "intervencion"
  },
+ "persuasion_publicitaria": {
+  "id": "persuasion_publicitaria",
+  "nombre": "Persuasión publicitaria: actitudes e intención de conducta",
+  "tipo": "resultado"
+ },
+ "pertenencia_grupo_social": {
+  "id": "pertenencia_grupo_social",
+  "nombre": "Pertenencia al mismo grupo social que el interlocutor",
+  "tipo": "concepto"
+ },
  "pesca_anchoveta": {
   "id": "pesca_anchoveta",
   "nombre": "Pesca de anchoveta y harina de pescado",
   "tipo": "resultado"
+ },
+ "peso_fisico": {
+  "id": "peso_fisico",
+  "nombre": "Sostener un objeto pesado (p. ej., un portapapeles)",
+  "tipo": "intervencion"
+ },
+ "peticiones_trampa": {
+  "id": "peticiones_trampa",
+  "nombre": "Peticiones de trampa de los principales humanos",
+  "tipo": "resultado"
+ },
+ "pictogramas_riesgo": {
+  "id": "pictogramas_riesgo",
+  "nombre": "Pictogramas o arreglos de íconos para mostrar riesgo",
+  "tipo": "intervencion"
+ },
+ "pie_en_la_puerta": {
+  "id": "pie_en_la_puerta",
+  "nombre": "Pie en la puerta (pedido pequeño antes del grande)",
+  "tipo": "intervencion"
+ },
+ "pilotos_genai_empresa": {
+  "id": "pilotos_genai_empresa",
+  "nombre": "Pilotos empresariales de IA generativa",
+  "tipo": "intervencion"
  },
  "pl_08488": {
   "id": "pl_08488",
@@ -1079,6 +3604,36 @@
   "nombre": "Pobreza del hogar",
   "tipo": "resultado"
  },
+ "poca_confrontacion_empirica": {
+  "id": "poca_confrontacion_empirica",
+  "nombre": "La investigación empírica posterior rara vez confrontó los argumentos centrales de la teoría",
+  "tipo": "limitacion"
+ },
+ "poder_explicativo_limitado_encarnada": {
+  "id": "poder_explicativo_limitado_encarnada",
+  "nombre": "La cognición encarnada no aporta explicaciones nuevas a los problemas clásicos de la psicología experimental",
+  "tipo": "limitacion"
+ },
+ "pool_grande_no_baja_prima": {
+  "id": "pool_grande_no_baja_prima",
+  "nombre": "Un pool grande no implica primas más bajas: depende del costo promedio de los inscritos",
+  "tipo": "limitacion"
+ },
+ "poses_de_poder": {
+  "id": "poses_de_poder",
+  "nombre": "Poses de poder (posturas expansivas breves)",
+  "tipo": "intervencion"
+ },
+ "practica_espaciada": {
+  "id": "practica_espaciada",
+  "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
+  "tipo": "intervencion"
+ },
+ "practicas_investigacion_cuestionables": {
+  "id": "practicas_investigacion_cuestionables",
+  "nombre": "Prácticas de investigación cuestionables (mirar datos por tandas hasta ver el patrón, elegir pruebas y medidas a posteriori)",
+  "tipo": "limitacion"
+ },
  "precio_accion_figma": {
   "id": "precio_accion_figma",
   "nombre": "Precio de la acción de Figma (FIG)",
@@ -1094,6 +3649,11 @@
   "nombre": "Precio de IPO de Figma (US$33)",
   "tipo": "concepto"
  },
+ "precio_marginal_atencion": {
+  "id": "precio_marginal_atencion",
+  "nombre": "Precio marginal de la atención que enfrenta el paciente",
+  "tipo": "concepto"
+ },
  "precio_reaseguro_cat": {
   "id": "precio_reaseguro_cat",
   "nombre": "Precio del reaseguro catastrófico (−16% en jul-2026)",
@@ -1104,10 +3664,85 @@
   "nombre": "Alta precisión de adaptación",
   "tipo": "concepto"
  },
+ "precision_diagnostica": {
+  "id": "precision_diagnostica",
+  "nombre": "Precisión diagnóstica de chatbots médicos",
+  "tipo": "metrica"
+ },
+ "precision_prescripcion": {
+  "id": "precision_prescripcion",
+  "nombre": "Precisión de la decisión de prescripción",
+  "tipo": "resultado"
+ },
+ "precision_triage_moderada": {
+  "id": "precision_triage_moderada",
+  "nombre": "Precisión de triage moderada (coincidencia exacta ~54% con enfermera)",
+  "tipo": "limitacion"
+ },
+ "prediccion_conducta_humana": {
+  "id": "prediccion_conducta_humana",
+  "nombre": "Predicción de la conducta de participantes no vistos en experimentos",
+  "tipo": "resultado"
+ },
+ "preferencia_candidato": {
+  "id": "preferencia_candidato",
+  "nombre": "Preferencia por el candidato defendido",
+  "tipo": "resultado"
+ },
+ "preferencia_humana_respuestas": {
+  "id": "preferencia_humana_respuestas",
+  "nombre": "Preferencias humanas entre respuestas de asistentes",
+  "tipo": "constructo"
+ },
  "preferencia_interfaces_generativas": {
   "id": "preferencia_interfaces_generativas",
   "nombre": "Preferencia por interfaces generativas (hasta 72%)",
   "tipo": "resultado"
+ },
+ "preferencia_repetir_episodio": {
+  "id": "preferencia_repetir_episodio",
+  "nombre": "Preferencia por repetir un episodio frente a otro",
+  "tipo": "resultado"
+ },
+ "preferencia_temporal": {
+  "id": "preferencia_temporal",
+  "nombre": "Preferencia temporal pura (cuánto se valora lo inmediato frente a lo futuro)",
+  "tipo": "constructo"
+ },
+ "pregunta_sugestiva": {
+  "id": "pregunta_sugestiva",
+  "nombre": "Pregunta con redacción sugestiva después de un evento",
+  "tipo": "intervencion"
+ },
+ "preocupacion_privacidad_situacional": {
+  "id": "preocupacion_privacidad_situacional",
+  "nombre": "Preocupación por la privacidad activada por la situación",
+  "tipo": "constructo"
+ },
+ "presencia_otros_testigos": {
+  "id": "presencia_otros_testigos",
+  "nombre": "Presencia percibida de otros testigos",
+  "tipo": "intervencion"
+ },
+ "presentacion_atipica": {
+  "id": "presentacion_atipica",
+  "nombre": "Presentación clínica atípica",
+  "tipo": "concepto"
+ },
+ "presion_costos_atencion_2025": {
+  "id": "presion_costos_atencion_2025",
+  "nombre": "Costos crecientes de atención en 2025 (alta demanda, mayor complejidad, medicamentos)",
+  "tipo": "limitacion"
+ },
+ "presion_mayoria_unanime": {
+  "id": "presion_mayoria_unanime",
+  "nombre": "Presión de una mayoría unánime que responde de forma equivocada",
+  "tipo": "intervencion"
+ },
+ "pricing_personalizado_autorrastreo": {
+  "id": "pricing_personalizado_autorrastreo",
+  "nombre": "Pricing de seguro de salud personalizado con self-tracking",
+  "tipo": "intervencion"
  },
  "primas_peru": {
   "id": "primas_peru",
@@ -1119,6 +3754,26 @@
   "nombre": "Primas netas del sistema peruano en el 1S 2026 (+1,1%)",
   "tipo": "resultado"
  },
+ "primas_vida_ocde_2024": {
+  "id": "primas_vida_ocde_2024",
+  "nombre": "Crecimiento de primas brutas de vida en la OCDE (2024)",
+  "tipo": "resultado"
+ },
+ "priming_conductual": {
+  "id": "priming_conductual",
+  "nombre": "Priming conductual: activar un concepto sin que la persona lo note cambia su conducta",
+  "tipo": "concepto"
+ },
+ "priming_estereotipo_vejez": {
+  "id": "priming_estereotipo_vejez",
+  "nombre": "Activar palabras del estereotipo de vejez (p. ej., 'Florida', 'bingo')",
+  "tipo": "intervencion"
+ },
+ "principios_gestalt": {
+  "id": "principios_gestalt",
+  "nombre": "Principios Gestalt de organización perceptual (proximidad, semejanza, continuidad, cierre, figura-fondo)",
+  "tipo": "concepto"
+ },
  "productividad_devs": {
   "id": "productividad_devs",
   "nombre": "Productividad de desarrolladores",
@@ -1129,20 +3784,115 @@
   "nombre": "Productividad de firmas OCDE (elasticidad ~0,05; retorno ~16%)",
   "tipo": "resultado"
  },
+ "productividad_investigacion": {
+  "id": "productividad_investigacion",
+  "nombre": "Productividad de la investigación (automatización de micro-tareas)",
+  "tipo": "resultado"
+ },
+ "productividad_trabajo_conocimiento": {
+  "id": "productividad_trabajo_conocimiento",
+  "nombre": "Productividad y calidad del trabajo de conocimiento (consultores)",
+  "tipo": "resultado"
+ },
  "programa_simulado": {
   "id": "programa_simulado",
   "nombre": "Programa simulado (incentivo ≤US$100), no seguro con prima real",
   "tipo": "limitacion"
+ },
+ "programa_vitality_empleadores": {
+  "id": "programa_vitality_empleadores",
+  "nombre": "Programa de bienestar Vitality para empleadores (EE.UU.)",
+  "tipo": "intervencion"
+ },
+ "pronostico_triple_i_milliman_2025": {
+  "id": "pronostico_triple_i_milliman_2025",
+  "nombre": "Pronóstico Triple-I/Milliman del mercado P/C (ene-2025)",
+  "tipo": "estudio"
+ },
+ "propiedad_psicologica": {
+  "id": "propiedad_psicologica",
+  "nombre": "Sentido de propiedad psicológica sobre un objeto",
+  "tipo": "constructo"
+ },
+ "protocolo_orden_aleatorio": {
+  "id": "protocolo_orden_aleatorio",
+  "nombre": "Protocolo experimental de orden aleatorio (estímulos sin continuidad, poco natural)",
+  "tipo": "limitacion"
+ },
+ "proximidad_linguistica_geografica": {
+  "id": "proximidad_linguistica_geografica",
+  "nombre": "Proximidad lingüística y geográfica entre países",
+  "tipo": "concepto"
+ },
+ "proyeccion_no_medicion": {
+  "id": "proyeccion_no_medicion",
+  "nombre": "Es una proyección, no una medición",
+  "tipo": "limitacion"
+ },
+ "proyecciones_bls": {
+  "id": "proyecciones_bls",
+  "nombre": "Proyecciones de empleo del BLS 2024-2034",
+  "tipo": "metrica"
+ },
+ "proyectos_ia_agentica": {
+  "id": "proyectos_ia_agentica",
+  "nombre": "Proyectos de IA agéntica en empresas",
+  "tipo": "intervencion"
+ },
+ "psicologia_de_maquinas": {
+  "id": "psicologia_de_maquinas",
+  "nombre": "Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva",
+  "tipo": "concepto"
+ },
+ "publicidad_enganosa_adelantos_cleo": {
+  "id": "publicidad_enganosa_adelantos_cleo",
+  "nombre": "Publicidad engañosa sobre monto y rapidez de adelantos de efectivo",
+  "tipo": "intervencion"
+ },
+ "publicidad_precio_enganosa": {
+  "id": "publicidad_precio_enganosa",
+  "nombre": "Publicidad de precio engañosa",
+  "tipo": "intervencion"
+ },
+ "racionalidad_economica": {
+  "id": "racionalidad_economica",
+  "nombre": "Racionalidad económica (consistencia con maximización de utilidad por preferencia revelada)",
+  "tipo": "resultado"
+ },
+ "ragas": {
+  "id": "ragas",
+  "nombre": "RAGAs: métricas sin referencia para evaluar pipelines RAG",
+  "tipo": "metrica"
+ },
+ "rango_ganancias_perdidas": {
+  "id": "rango_ganancias_perdidas",
+  "nombre": "Rango de ganancias y pérdidas que la persona ve al elicitar sus preferencias",
+  "tipo": "intervencion"
  },
  "ranking_expertos_diseno": {
   "id": "ranking_expertos_diseno",
   "nombre": "Ranking de 138 expertos en diseño industrial",
   "tipo": "metrica"
  },
+ "rasgos_susceptibilidad": {
+  "id": "rasgos_susceptibilidad",
+  "nombre": "Rasgos de susceptibilidad: confianza en LLMs, amabilidad, extraversión, necesidad de cognición",
+  "tipo": "constructo"
+ },
  "ratio_combinado_mapfre_peru": {
   "id": "ratio_combinado_mapfre_peru",
   "nombre": "Ratio combinado de Mapfre Perú (102,4% en el 1T 2026)",
   "tipo": "resultado"
+ },
+ "ratio_combinado_pc_eeuu": {
+  "id": "ratio_combinado_pc_eeuu",
+  "nombre": "Ratio combinado neto del mercado P/C de EE.UU.",
+  "tipo": "resultado"
+ },
+ "ratio_equipos_producto": {
+  "id": "ratio_equipos_producto",
+  "nombre": "Ratio investigador:diseñador:desarrollador",
+  "tipo": "metrica"
  },
  "re_aim": {
   "id": "re_aim",
@@ -1164,9 +3914,69 @@
   "nombre": "Rechazo de cobertura sin fundamento o fuera de plazo",
   "tipo": "concepto"
  },
+ "reclamo_digital_seguros": {
+  "id": "reclamo_digital_seguros",
+  "nombre": "Presentación digital de reclamos de seguros",
+  "tipo": "intervencion"
+ },
+ "reclamos_seguro_auto": {
+  "id": "reclamos_seguro_auto",
+  "nombre": "Gestión de reclamos de seguro vehicular (red de talleres asociados)",
+  "tipo": "concepto"
+ },
+ "recorte_ideo_2023": {
+  "id": "recorte_ideo_2023",
+  "nombre": "Recorte de 32% de la plantilla de IDEO y cierre de oficinas (2023)",
+  "tipo": "concepto"
+ },
+ "recortes_atribuidos_ia": {
+  "id": "recortes_atribuidos_ia",
+  "nombre": "Recortes de empleo atribuidos a la IA por los empleadores",
+  "tipo": "resultado"
+ },
+ "recuerdo_desagrado": {
+  "id": "recuerdo_desagrado",
+  "nombre": "Desagrado recordado de un procedimiento",
+  "tipo": "resultado"
+ },
+ "redes_estrechas_niveles": {
+  "id": "redes_estrechas_niveles",
+  "nombre": "Redes de proveedores estrechas o por niveles (tiered)",
+  "tipo": "intervencion"
+ },
+ "rediseno_checkout": {
+  "id": "rediseno_checkout",
+  "nombre": "Rediseño del checkout según hallazgos de usabilidad",
+  "tipo": "intervencion"
+ },
+ "rediseno_dcg": {
+  "id": "rediseno_dcg",
+  "nombre": "Rediseño de los grupos de costo por diagnóstico (DCG) con clustering y multimorbilidad",
+  "tipo": "intervencion"
+ },
  "rediseno_expresivo": {
   "id": "rediseno_expresivo",
   "nombre": "Rediseño expresivo (fluidez y estética a la vez)",
+  "tipo": "intervencion"
+ },
+ "rediseno_usabilidad": {
+  "id": "rediseno_usabilidad",
+  "nombre": "Rediseño de usabilidad",
+  "tipo": "intervencion"
+ },
+ "reduccion_campos_checkout": {
+  "id": "reduccion_campos_checkout",
+  "nombre": "Reducir los campos del formulario de checkout (~8 bastan)",
+  "tipo": "intervencion"
+ },
+ "registro_no_llamar_eeuu": {
+  "id": "registro_no_llamar_eeuu",
+  "nombre": "Registro Nacional 'No Llamar' de EE.UU. (FTC, 2003)",
+  "tipo": "intervencion"
+ },
+ "regla_mlr_80_20_aca": {
+  "id": "regla_mlr_80_20_aca",
+  "nombre": "Regla de medical loss ratio 80/20 de la ACA (reembolso si gasto médico < 80%/85%)",
   "tipo": "intervencion"
  },
  "reglamento_parametricos_sbs": {
@@ -1174,14 +3984,84 @@
   "nombre": "Reglamento de Seguros Paramétricos (Res. SBS 02260-2026)",
   "tipo": "intervencion"
  },
+ "regulacion_consentimiento_contacto_comercial": {
+  "id": "regulacion_consentimiento_contacto_comercial",
+  "nombre": "Regulación de consentimiento previo para el contacto comercial (no llamar / opt-in)",
+  "tipo": "concepto"
+ },
  "relacion_innovacion_desempeno": {
   "id": "relacion_innovacion_desempeno",
   "nombre": "Relación innovación → desempeño",
   "tipo": "afirmacion"
  },
+ "relacion_medico_paciente": {
+  "id": "relacion_medico_paciente",
+  "nombre": "Relación médico-paciente",
+  "tipo": "concepto"
+ },
+ "relevancia_percibida": {
+  "id": "relevancia_percibida",
+  "nombre": "Relevancia percibida del anuncio",
+  "tipo": "constructo"
+ },
  "rentabilidad_tecnica_peru": {
   "id": "rentabilidad_tecnica_peru",
   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
+  "tipo": "resultado"
+ },
+ "replicacion_multilaboratorio": {
+  "id": "replicacion_multilaboratorio",
+  "nombre": "Replicación multilaboratorio preregistrada (Many Labs, RRR)",
+  "tipo": "concepto"
+ },
+ "reporte_challenger": {
+  "id": "reporte_challenger",
+  "nombre": "Reporte Challenger de recortes de empleo anunciados",
+  "tipo": "metrica"
+ },
+ "reporte_insuficiente_stepped_wedge": {
+  "id": "reporte_insuficiente_stepped_wedge",
+  "nombre": "Variación en métodos de análisis y reporte insuficiente en ensayos stepped-wedge",
+  "tipo": "limitacion"
+ },
+ "representacion_logaritmica_numero": {
+  "id": "representacion_logaritmica_numero",
+  "nombre": "Representación logarítmica de la cantidad en el cerebro",
+  "tipo": "concepto"
+ },
+ "resolucion_temporal_percibida": {
+  "id": "resolucion_temporal_percibida",
+  "nombre": "Resolución temporal de la percepción (capacidad de distinguir eventos rápidos)",
+  "tipo": "resultado"
+ },
+ "respuestas_casi_uniformes": {
+  "id": "respuestas_casi_uniformes",
+  "nombre": "Respuestas casi uniformemente aleatorias de los LLMs al corregir el orden de las opciones",
+  "tipo": "resultado"
+ },
+ "resultado_neto_munich_re_2025": {
+  "id": "resultado_neto_munich_re_2025",
+  "nombre": "Resultado neto de Munich Re 2025 (~€6.100M; RoE 18,3%)",
+  "tipo": "resultado"
+ },
+ "resultados_design_thinking": {
+  "id": "resultados_design_thinking",
+  "nombre": "Resultados individuales y organizacionales de un proyecto de design thinking",
+  "tipo": "resultado"
+ },
+ "retencion_aprendizaje": {
+  "id": "retencion_aprendizaje",
+  "nombre": "Retención del aprendizaje",
+  "tipo": "resultado"
+ },
+ "retorno_procedimiento": {
+  "id": "retorno_procedimiento",
+  "nombre": "Retorno para repetir el procedimiento (adherencia)",
+  "tipo": "resultado"
+ },
+ "reutilizacion_toallas": {
+  "id": "reutilizacion_toallas",
+  "nombre": "Reutilización de toallas por huéspedes de hotel",
   "tipo": "resultado"
  },
  "revenue_figma_q1": {
@@ -1189,15 +4069,60 @@
   "nombre": "Ingresos de Figma Q1 2026 (+46%)",
   "tipo": "resultado"
  },
+ "reversion_politica_anthem": {
+  "id": "reversion_politica_anthem",
+  "nombre": "Anthem revierte el límite de tiempo de anestesia (dic-2024)",
+  "tipo": "resultado"
+ },
  "riesgo_base": {
   "id": "riesgo_base",
   "nombre": "Riesgo de base (el índice no refleja la pérdida real)",
   "tipo": "limitacion"
  },
+ "riesgo_contaminacion_retencion": {
+  "id": "riesgo_contaminacion_retencion",
+  "nombre": "Problemas de retención y contaminación por desfase entre reclutamiento e intervención",
+  "tipo": "limitacion"
+ },
+ "riesgo_de_base": {
+  "id": "riesgo_de_base",
+  "nombre": "Riesgo de base (diferencia entre pérdida real e índice de pérdida)",
+  "tipo": "concepto"
+ },
+ "riesgo_despido": {
+  "id": "riesgo_despido",
+  "nombre": "Riesgo de despido",
+  "tipo": "resultado"
+ },
+ "riesgo_moral": {
+  "id": "riesgo_moral",
+  "nombre": "Riesgo moral en seguros de salud",
+  "tipo": "concepto"
+ },
+ "robma": {
+  "id": "robma",
+  "nombre": "Meta-análisis bayesiano robusto (RoBMA)",
+  "tipo": "metrica"
+ },
  "rollback_gpt4o": {
   "id": "rollback_gpt4o",
   "nombre": "Retiro de la actualización aduladora de GPT-4o (abril 2025)",
   "tipo": "concepto"
+ },
+ "ronda_no_cerrada": {
+  "id": "ronda_no_cerrada",
+  "nombre": "Ronda reportada en conversaciones, no cerrada",
+  "tipo": "limitacion"
+ },
+ "ronda_serie_b_lovable": {
+  "id": "ronda_serie_b_lovable",
+  "nombre": "Serie B de Lovable: US$330M a US$6.600M (dic-2025)",
+  "tipo": "concepto"
+ },
+ "rousseau_2016": {
+  "id": "rousseau_2016",
+  "nombre": "Rousseau et al. 2016: metaanálisis de 62 estudios sobre innovación y desempeño",
+  "tipo": "estudio"
  },
  "s1_figma": {
   "id": "s1_figma",
@@ -1214,6 +4139,36 @@
   "nombre": "Salida del CPO de Anthropic de la junta de Figma (14-abr-2026)",
   "tipo": "concepto"
  },
+ "saliencia_info_clave": {
+  "id": "saliencia_info_clave",
+  "nombre": "Saliencia de la información clave (resúmenes, FAQ, íconos simples)",
+  "tipo": "intervencion"
+ },
+ "salvaguardas_especificas": {
+  "id": "salvaguardas_especificas",
+  "nombre": "Salvaguardas prohibitivas específicas de la tarea",
+  "tipo": "intervencion"
+ },
+ "salvi_2025": {
+  "id": "salvi_2025",
+  "nombre": "Debates con GPT-4 de Salvi et al. (Nature Human Behaviour 2025)",
+  "tipo": "estudio"
+ },
+ "sancion_ftc_cleo_2025": {
+  "id": "sancion_ftc_cleo_2025",
+  "nombre": "Acuerdo FTC–Cleo AI por US$17 M (2025)",
+  "tipo": "intervencion"
+ },
+ "sassi": {
+  "id": "sassi",
+  "nombre": "Cuestionario SASSI (34 ítems, 6 factores)",
+  "tipo": "metrica"
+ },
+ "satisfaccion_agente": {
+  "id": "satisfaccion_agente",
+  "nombre": "Satisfacción del usuario con un agente conversacional",
+  "tipo": "resultado"
+ },
  "satisfaccion_carga_percibida": {
   "id": "satisfaccion_carga_percibida",
   "nombre": "Satisfacción y carga percibida",
@@ -1229,6 +4184,31 @@
   "nombre": "Res. SBS 01923-2026 (infracciones y sanciones)",
   "tipo": "intervencion"
  },
+ "scheibehenne_2010": {
+  "id": "scheibehenne_2010",
+  "nombre": "Meta-análisis de sobrecarga de elección de Scheibehenne et al. (JCR 2010)",
+  "tipo": "estudio"
+ },
+ "segmentacion_demografica": {
+  "id": "segmentacion_demografica",
+  "nombre": "Segmentación demográfica en servicios financieros",
+  "tipo": "intervencion"
+ },
+ "seguidismo_comprometido": {
+  "id": "seguidismo_comprometido",
+  "nombre": "Seguidismo comprometido (engaged followership): identificarse con la meta colectiva de la autoridad",
+  "tipo": "concepto"
+ },
+ "seguridad_triage_paciente": {
+  "id": "seguridad_triage_paciente",
+  "nombre": "Seguridad del paciente en el triage automatizado",
+  "tipo": "resultado"
+ },
+ "seguro_embebido": {
+  "id": "seguro_embebido",
+  "nombre": "Seguro embebido (embedded insurance)",
+  "tipo": "concepto"
+ },
  "seguro_enf_tropicales": {
   "id": "seguro_enf_tropicales",
   "nombre": "Seguro de enfermedades tropicales (dengue, zika, chikungunya)",
@@ -1241,17 +4221,62 @@
  },
  "seguro_parametrico": {
   "id": "seguro_parametrico",
-  "nombre": "Seguro paramétrico / de índice",
+  "nombre": "Seguro paramétrico (pago según índice observable)",
   "tipo": "intervencion"
+ },
+ "seleccion_adversa": {
+  "id": "seleccion_adversa",
+  "nombre": "Selección adversa (selección de riesgos)",
+  "tipo": "concepto"
+ },
+ "senales_habilidad_azar": {
+  "id": "senales_habilidad_azar",
+  "nombre": "Señales de habilidad en tareas de azar (elección, involucramiento, competencia, familiaridad)",
+  "tipo": "intervencion"
+ },
+ "sensacion_subjetiva_poder": {
+  "id": "sensacion_subjetiva_poder",
+  "nombre": "Sensación subjetiva de poder (autorreporte)",
+  "tipo": "resultado"
+ },
+ "sensibilidad_redaccion_llm": {
+  "id": "sensibilidad_redaccion_llm",
+  "nombre": "Sensibilidad a la redacción del prompt e inestabilidad en el tiempo",
+  "tipo": "limitacion"
  },
  "sequia": {
   "id": "sequia",
   "nombre": "Sequía severa",
   "tipo": "concepto"
  },
+ "sesgo_automatizacion": {
+  "id": "sesgo_automatizacion",
+  "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
+  "tipo": "constructo"
+ },
+ "sesgo_conjunto_datos": {
+  "id": "sesgo_conjunto_datos",
+  "nombre": "Sesgo del conjunto de datos de entrenamiento (más ruido de decisión, equipreferencia)",
+  "tipo": "limitacion"
+ },
+ "sesgo_favor_texto_llm": {
+  "id": "sesgo_favor_texto_llm",
+  "nombre": "Sesgo de los evaluadores LLM a favor de textos generados por LLM",
+  "tipo": "limitacion"
+ },
  "sesgo_halo": {
   "id": "sesgo_halo",
   "nombre": "Sesgo de halo (proxy = percepción experta)",
+  "tipo": "limitacion"
+ },
+ "sesgo_orden_etiqueta": {
+  "id": "sesgo_orden_etiqueta",
+  "nombre": "Sesgos de orden y etiqueta en las respuestas de LLMs a encuestas (p. ej., hacia la opción 'A')",
+  "tipo": "limitacion"
+ },
+ "sesgo_publicacion": {
+  "id": "sesgo_publicacion",
+  "nombre": "Sesgo de publicación",
   "tipo": "limitacion"
  },
  "sesgo_seleccion_metr": {
@@ -1259,25 +4284,115 @@
   "nombre": "Sesgo de selección en el estudio de productividad",
   "tipo": "limitacion"
  },
+ "sesgo_tendencias_seculares": {
+  "id": "sesgo_tendencias_seculares",
+  "nombre": "Riesgo de sesgo por mala especificación de tendencias seculares",
+  "tipo": "limitacion"
+ },
  "sesgos_conductuales_seguro": {
   "id": "sesgos_conductuales_seguro",
   "nombre": "Sesgos conductuales (miopía, narrow framing, present bias)",
   "tipo": "constructo"
+ },
+ "sesgos_llm_juez": {
+  "id": "sesgos_llm_juez",
+  "nombre": "Sesgos del LLM juez: posición, verbosidad y auto-preferencia",
+  "tipo": "limitacion"
  },
  "silent_trial": {
   "id": "silent_trial",
   "nombre": "Silent trial / modo sombra",
   "tipo": "intervencion"
  },
+ "simbolismo_sonoro": {
+  "id": "simbolismo_sonoro",
+  "nombre": "Simbolismo sonoro (la relación sonido-significado no es del todo arbitraria)",
+  "tipo": "concepto"
+ },
+ "simons_chabris_1999_est": {
+  "id": "simons_chabris_1999_est",
+  "nombre": "Estudio Simons y Chabris 1999 (gorila invisible)",
+  "tipo": "estudio"
+ },
+ "simons_levin_1998_est": {
+  "id": "simons_levin_1998_est",
+  "nombre": "Estudio Simons y Levin 1998 (cambio de persona tras la puerta)",
+  "tipo": "estudio"
+ },
+ "simulacion_modal": {
+  "id": "simulacion_modal",
+  "nombre": "Simulación modal: re-activar estados perceptivos, motores e introspectivos para pensar",
+  "tipo": "constructo"
+ },
+ "sistema_escritura": {
+  "id": "sistema_escritura",
+  "nombre": "Sistema de escritura (forma de las letras)",
+  "tipo": "concepto"
+ },
+ "sobreajuste_memorizacion": {
+  "id": "sobreajuste_memorizacion",
+  "nombre": "Sobreajuste: el modelo responde a la forma de la tarea, no a su significado",
+  "tipo": "limitacion"
+ },
+ "sobrecarga_eleccion": {
+  "id": "sobrecarga_eleccion",
+  "nombre": "Sobrecarga de elección (menos compra, satisfacción o confianza al haber más opciones)",
+  "tipo": "resultado"
+ },
  "sobreconfianza_ia": {
   "id": "sobreconfianza_ia",
   "nombre": "Sobre-confianza en la IA",
   "tipo": "resultado"
  },
+ "sobreestimacion_precio_seguro_vida": {
+  "id": "sobreestimacion_precio_seguro_vida",
+  "nombre": "Sobreestimación del precio del seguro de vida",
+  "tipo": "resultado"
+ },
+ "sobrepago_seguro": {
+  "id": "sobrepago_seguro",
+  "nombre": "Sobrepago en la prima del seguro",
+  "tipo": "resultado"
+ },
+ "sobrepeso_prob_bajas": {
+  "id": "sobrepeso_prob_bajas",
+  "nombre": "Sobrevaloración de probabilidades bajas",
+  "tipo": "constructo"
+ },
  "solo_preferencia": {
   "id": "solo_preferencia",
   "nombre": "Mide preferencia, no desempeño ni aprendibilidad longitudinal",
   "tipo": "limitacion"
+ },
+ "steering_proveedor_precio": {
+  "id": "steering_proveedor_precio",
+  "nombre": "Direccionar pacientes a proveedores de menor precio (steering)",
+  "tipo": "intervencion"
+ },
+ "stetson_2007_est": {
+  "id": "stetson_2007_est",
+  "nombre": "Estudio Stetson, Fiesta y Eagleman 2007 (caída libre de 31 m)",
+  "tipo": "estudio"
+ },
+ "subsidio_parcial_aseguradora": {
+  "id": "subsidio_parcial_aseguradora",
+  "nombre": "Subsidio parcial de la aseguradora al bloque",
+  "tipo": "intervencion"
+ },
+ "subsidios_penalidades_afiliacion": {
+  "id": "subsidios_penalidades_afiliacion",
+  "nombre": "Subsidios o penalidades para inducir la afiliación",
+  "tipo": "intervencion"
+ },
+ "subtipos_patentes_diseno": {
+  "id": "subtipos_patentes_diseno",
+  "nombre": "Subtipos de patentes de diseño e índice compuesto de diseño",
+  "tipo": "metrica"
+ },
+ "supervivencia_cancer": {
+  "id": "supervivencia_cancer",
+  "nombre": "Supervivencia de pacientes con cáncer",
+  "tipo": "resultado"
  },
  "sus_sesion_unica": {
   "id": "sus_sesion_unica",
@@ -1289,15 +4404,60 @@
   "nombre": "Susceptibilidad a dark patterns",
   "tipo": "resultado"
  },
+ "susceptibilidad_mcgurk": {
+  "id": "susceptibilidad_mcgurk",
+  "nombre": "Propensión individual estable a integrar voz y labios (susceptibilidad al McGurk)",
+  "tipo": "constructo"
+ },
  "talla_infantil": {
   "id": "talla_infantil",
   "nombre": "Talla y masa magra infantil",
   "tipo": "resultado"
  },
+ "tamano_economia_diseno": {
+  "id": "tamano_economia_diseno",
+  "nombre": "Tamaño de la economía del diseño del Reino Unido",
+  "tipo": "resultado"
+ },
+ "tamano_equipos_ux": {
+  "id": "tamano_equipos_ux",
+  "nombre": "Tamaño relativo de los equipos de UX",
+  "tipo": "resultado"
+ },
+ "tamano_firma": {
+  "id": "tamano_firma",
+  "nombre": "Tamaño de la firma",
+  "tipo": "constructo"
+ },
+ "tamano_mercado_seguro_embebido": {
+  "id": "tamano_mercado_seguro_embebido",
+  "nombre": "Tamaño del mercado de seguro embebido (US$116 mil M en 2025 → 138 mil M en 2026)",
+  "tipo": "resultado"
+ },
+ "tamano_muestral_requerido": {
+  "id": "tamano_muestral_requerido",
+  "nombre": "Tamaño muestral requerido (número de clusters/prácticas)",
+  "tipo": "metrica"
+ },
+ "tamano_surtido": {
+  "id": "tamano_surtido",
+  "nombre": "Tamaño del surtido (cuántas opciones se ofrecen)",
+  "tipo": "intervencion"
+ },
+ "tarea_autocontrol_previa": {
+  "id": "tarea_autocontrol_previa",
+  "nombre": "Tarea previa que exige autocontrol (resistir tentaciones, suprimir emociones)",
+  "tipo": "intervencion"
+ },
  "tarea_dificil": {
   "id": "tarea_dificil",
   "nombre": "Tareas de decisión difíciles",
   "tipo": "concepto"
+ },
+ "tarea_incompleta": {
+  "id": "tarea_incompleta",
+  "nombre": "La tarea no se completa o lo construido se destruye",
+  "tipo": "limitacion"
  },
  "tarea_laberinto": {
   "id": "tarea_laberinto",
@@ -1307,6 +4467,61 @@
  "tareas_sentimiento_lsat": {
   "id": "tareas_sentimiento_lsat",
   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
+  "tipo": "concepto"
+ },
+ "tarificacion_por_experiencia": {
+  "id": "tarificacion_por_experiencia",
+  "nombre": "Tarificación por experiencia (experience rating)",
+  "tipo": "intervencion"
+ },
+ "tasa_descuento_implicita": {
+  "id": "tasa_descuento_implicita",
+  "nombre": "Tasa de descuento implícita en elecciones entre hoy y el futuro",
+  "tipo": "metrica"
+ },
+ "tasa_replicacion_psicologia": {
+  "id": "tasa_replicacion_psicologia",
+  "nombre": "Tasa de replicación de hallazgos de psicología",
+  "tipo": "metrica"
+ },
+ "tasas_interes_altas_2024": {
+  "id": "tasas_interes_altas_2024",
+  "nombre": "Tasas de interés altas (2024)",
+  "tipo": "concepto"
+ },
+ "teatro_innovacion": {
+  "id": "teatro_innovacion",
+  "nombre": "Teatro de la innovación (rituales de startup sin resultados de negocio)",
+  "tipo": "concepto"
+ },
+ "tecnicas_conductuales_comprension_vida": {
+  "id": "tecnicas_conductuales_comprension_vida",
+  "nombre": "Técnicas conductuales de comprensión (lenguaje simplificado, visuales, video humano o con IA)",
+  "tipo": "intervencion"
+ },
+ "tendencia_imperfect_by_design": {
+  "id": "tendencia_imperfect_by_design",
+  "nombre": "Tendencia 'Imperfect by Design' de Canva para 2026",
+  "tipo": "concepto"
+ },
+ "teoria_disrupcion": {
+  "id": "teoria_disrupcion",
+  "nombre": "Teoría de la innovación disruptiva",
+  "tipo": "concepto"
+ },
+ "teoria_mente_llm": {
+  "id": "teoria_mente_llm",
+  "nombre": "Desempeño de LLMs en tareas de teoría de la mente",
+  "tipo": "resultado"
+ },
+ "teoria_prospectiva": {
+  "id": "teoria_prospectiva",
+  "nombre": "Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión)",
+  "tipo": "concepto"
+ },
+ "teoria_reduccion_incertidumbre": {
+  "id": "teoria_reduccion_incertidumbre",
+  "nombre": "Teoría de la reducción de la incertidumbre (Berger y Calabrese)",
   "tipo": "concepto"
  },
  "tept": {
@@ -1319,15 +4534,60 @@
   "nombre": "Time-to-delivery",
   "tipo": "resultado"
  },
+ "tiempo_espera_percibido": {
+  "id": "tiempo_espera_percibido",
+  "nombre": "Tiempo de espera percibido por el cliente (frente al real)",
+  "tipo": "resultado"
+ },
+ "tipo_recompensa": {
+  "id": "tipo_recompensa",
+  "nombre": "Tipo de recompensa del experimento (dinero vs. bienes no monetarios)",
+  "tipo": "concepto"
+ },
+ "tipo_tarea_decision_creacion": {
+  "id": "tipo_tarea_decision_creacion",
+  "nombre": "Tipo de tarea: decisión vs. creación de contenido",
+  "tipo": "constructo"
+ },
+ "trafico_referido_llm": {
+  "id": "trafico_referido_llm",
+  "nombre": "Tráfico referido desde asistentes de IA (LLM)",
+  "tipo": "concepto"
+ },
  "transferencia_anticipada": {
   "id": "transferencia_anticipada",
   "nombre": "Transferencia de efectivo anticipada (antes del pico del desastre)",
   "tipo": "intervencion"
  },
+ "transformacion_digital": {
+  "id": "transformacion_digital",
+  "nombre": "Transformación digital de la organización",
+  "tipo": "intervencion"
+ },
+ "transformacion_empleo_ia": {
+  "id": "transformacion_empleo_ia",
+  "nombre": "Transformación de puestos (aumento de tareas) más que reemplazo por IA",
+  "tipo": "resultado"
+ },
+ "triaje_enfermeria_mts": {
+  "id": "triaje_enfermeria_mts",
+  "nombre": "Triaje por enfermera con extensión del Manchester Triage System",
+  "tipo": "intervencion"
+ },
+ "triaje_erroneo": {
+  "id": "triaje_erroneo",
+  "nombre": "Casos mal triados por la línea de triaje (subtriaje)",
+  "tipo": "limitacion"
+ },
  "ubi_telematica": {
   "id": "ubi_telematica",
   "nombre": "UBI / seguro basado en telemática",
   "tipo": "intervencion"
+ },
+ "usabilidad_chatbot": {
+  "id": "usabilidad_chatbot",
+  "nombre": "Usabilidad percibida de un chatbot",
+  "tipo": "constructo"
  },
  "usabilidad_del_generador": {
   "id": "usabilidad_del_generador",
@@ -1344,9 +4604,64 @@
   "nombre": "Usabilidad percibida (SUS)",
   "tipo": "resultado"
  },
+ "uso_especialistas_hospitalizacion": {
+  "id": "uso_especialistas_hospitalizacion",
+  "nombre": "Uso de especialistas y hospitalizaciones",
+  "tipo": "resultado"
+ },
+ "uso_ia_trabajador": {
+  "id": "uso_ia_trabajador",
+  "nombre": "Uso de IA por el trabajador",
+  "tipo": "constructo"
+ },
+ "usr_metrica": {
+  "id": "usr_metrica",
+  "nombre": "USR: métrica no supervisada y sin referencia para diálogo",
+  "tipo": "metrica"
+ },
+ "utilidad_discovery_insure": {
+  "id": "utilidad_discovery_insure",
+  "nombre": "Utilidad operativa normalizada de Discovery Insure (+34%, R546M, interino a dic-2025)",
+  "tipo": "resultado"
+ },
+ "utilidad_facilidad_seguridad_web_percibidas": {
+  "id": "utilidad_facilidad_seguridad_web_percibidas",
+  "nombre": "Utilidad, facilidad de uso y seguridad web percibidas del canal online",
+  "tipo": "constructo"
+ },
+ "utilidad_neta_swiss_re": {
+  "id": "utilidad_neta_swiss_re",
+  "nombre": "Utilidad neta y ROE de Swiss Re (FY2025 / Q1 2026)",
+  "tipo": "resultado"
+ },
  "utilidad_rimac": {
   "id": "utilidad_rimac",
   "nombre": "Utilidad neta de Rímac (2T 2026: S/85,8 M)",
+  "tipo": "resultado"
+ },
+ "utilidad_vitality_h1_fy2026": {
+  "id": "utilidad_vitality_h1_fy2026",
+  "nombre": "Utilidad operativa normalizada de Vitality global, semestre a dic-2025 (R2.120M, +41%)",
+  "tipo": "resultado"
+ },
+ "utilizacion_servicios_salud": {
+  "id": "utilizacion_servicios_salud",
+  "nombre": "Utilización de servicios de salud",
+  "tipo": "resultado"
+ },
+ "validacion_metodos_mixtos": {
+  "id": "validacion_metodos_mixtos",
+  "nombre": "Validación clínica con métodos mixtos y viñetas de casos",
+  "tipo": "intervencion"
+ },
+ "validez_encuestas_online": {
+  "id": "validez_encuestas_online",
+  "nombre": "Validez de los datos de encuestas online",
+  "tipo": "resultado"
+ },
+ "valoracion_atributos_plan": {
+  "id": "valoracion_atributos_plan",
+  "nombre": "Disposición a pagar por atributos del plan (marca popular, estrellas de calidad)",
   "tipo": "resultado"
  },
  "valoracion_estetica": {
@@ -1354,20 +4669,100 @@
   "nombre": "Calificaciones positivas/estéticas",
   "tipo": "resultado"
  },
+ "valoracion_producto_propio": {
+  "id": "valoracion_producto_propio",
+  "nombre": "Valoración y disposición a pagar por un producto hecho por uno mismo",
+  "tipo": "resultado"
+ },
+ "variabilidad_estimulo": {
+  "id": "variabilidad_estimulo",
+  "nombre": "Variabilidad entre estímulos experimentales (la elección del estímulo cambia el resultado)",
+  "tipo": "limitacion"
+ },
+ "variabilidad_primas": {
+  "id": "variabilidad_primas",
+  "nombre": "Variabilidad / impredecibilidad de las primas",
+  "tipo": "resultado"
+ },
+ "variabilidad_respuestas": {
+  "id": "variabilidad_respuestas",
+  "nombre": "Variabilidad de las respuestas frente a la población humana",
+  "tipo": "resultado"
+ },
+ "velocidad_al_caminar": {
+  "id": "velocidad_al_caminar",
+  "nombre": "Velocidad al caminar",
+  "tipo": "resultado"
+ },
  "velocidad_tarea": {
   "id": "velocidad_tarea",
   "nombre": "Velocidad de tarea",
   "tipo": "resultado"
+ },
+ "venta_digital_bancaseguros": {
+  "id": "venta_digital_bancaseguros",
+  "nombre": "Venta de seguros por canales digitales en bancaseguros",
+  "tipo": "intervencion"
+ },
+ "ventas_innovacion_dsm": {
+  "id": "ventas_innovacion_dsm",
+  "nombre": "Participación de ventas de innovación en las ventas de DSM",
+  "tipo": "resultado"
+ },
+ "ventas_retencion_seguros": {
+  "id": "ventas_retencion_seguros",
+  "nombre": "Ventas y retención de clientes de seguros",
+  "tipo": "resultado"
+ },
+ "ver_error_algoritmo": {
+  "id": "ver_error_algoritmo",
+  "nombre": "Ver al algoritmo desempeñarse y equivocarse",
+  "tipo": "intervencion"
  },
  "verificabilidad": {
   "id": "verificabilidad",
   "nombre": "Verificabilidad de la predicción",
   "tipo": "constructo"
  },
+ "verificador_sintomas_electronico": {
+  "id": "verificador_sintomas_electronico",
+  "nombre": "Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo)",
+  "tipo": "intervencion"
+ },
  "violencia_pareja": {
   "id": "violencia_pareja",
   "nombre": "Violencia de pareja contra mujeres",
   "tipo": "resultado"
+ },
+ "visitas_atencion_primaria": {
+  "id": "visitas_atencion_primaria",
+  "nombre": "Visitas a establecimientos de atención primaria",
+  "tipo": "resultado"
+ },
+ "visitas_hospitalarias": {
+  "id": "visitas_hospitalarias",
+  "nombre": "Visitas hospitalarias",
+  "tipo": "resultado"
+ },
+ "visitas_urgencias": {
+  "id": "visitas_urgencias",
+  "nombre": "Visitas a urgencias (ED)",
+  "tipo": "resultado"
+ },
+ "vitality_discovery": {
+  "id": "vitality_discovery",
+  "nombre": "Programa Vitality de Discovery (incentivos por conducta saludable)",
+  "tipo": "intervencion"
+ },
+ "vitality_drive": {
+  "id": "vitality_drive",
+  "nombre": "Programa Vitality Drive de Discovery Insure (recompensas por conducción)",
+  "tipo": "intervencion"
+ },
+ "wocv_2026": {
+  "id": "wocv_2026",
+  "nombre": "World of Corporate Venturing 2026 (Global Corporate Venturing)",
+  "tipo": "estudio"
  },
  "xai_vs_solo_ia": {
   "id": "xai_vs_solo_ia",

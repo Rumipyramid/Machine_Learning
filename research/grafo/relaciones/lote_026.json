@@ -1,0 +1,46 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": ["F-310", "F-387", "F-407", "F-431", "F-437", "F-441", "F-447", "F-448", "F-452", "F-466"],
+ "entidades": [
+  {"id": "proyecciones_bls", "nombre": "Proyecciones de empleo del BLS 2024-2034", "tipo": "metrica"},
+  {"id": "empleo_total_eeuu", "nombre": "Empleo total de EE.UU. (170,0 M → 175,2 M, +3,1% a 2034)", "tipo": "resultado"},
+  {"id": "proyeccion_no_medicion", "nombre": "Es una proyección, no una medición", "tipo": "limitacion"},
+  {"id": "diseno_publico", "nombre": "Diseño público y de servicios en el gobierno", "tipo": "intervencion"},
+  {"id": "efectividad_politica_publica", "nombre": "Efectividad, innovación y eficiencia de políticas y servicios públicos", "tipo": "resultado"},
+  {"id": "habilitadores_institucionales", "nombre": "Habilitadores institucionales: liderazgo, capacidad, financiamiento, oportunidad de iterar", "tipo": "constructo"},
+  {"id": "exposicion_codigo_agente", "nombre": "Experiencia acumulada revisando código de agentes de IA", "tipo": "constructo"},
+  {"id": "aprobacion_codigo_ia", "nombre": "Tasa de aprobación de pull requests de agentes de IA", "tipo": "resultado"},
+  {"id": "escrutinio_revision", "nombre": "Escrutinio activo en la revisión (comentarios en línea)", "tipo": "resultado"},
+  {"id": "castellion_markham_2013", "nombre": "Castellion y Markham 2013: perspectiva sobre las tasas de fracaso de productos nuevos (JPIM)", "tipo": "estudio"},
+  {"id": "teoria_disrupcion", "nombre": "Teoría de la innovación disruptiva", "tipo": "concepto"},
+  {"id": "poca_confrontacion_empirica", "nombre": "La investigación empírica posterior rara vez confrontó los argumentos centrales de la teoría", "tipo": "limitacion"},
+  {"id": "aprendizaje_fracaso_innovacion", "nombre": "Aprender de los fracasos de innovación", "tipo": "concepto"},
+  {"id": "c_cvc_en_retirada", "nombre": "Grandes corporaciones se retiran del venture capital corporativo directo", "tipo": "afirmacion"},
+  {"id": "cierre_munich_re_ventures", "nombre": "Fin de nuevas inversiones de Munich Re Ventures (≈US$1.200M en ~100 inversiones, 2015-2025)", "tipo": "concepto"},
+  {"id": "cierre_paypal_ventures", "nombre": "Cierre de PayPal Ventures (US$850M en tres fondos, 2016-2026)", "tipo": "concepto"},
+  {"id": "adquisicion_next_insurance", "nombre": "Adquisición de Next Insurance por ERGO/Munich Re (US$2.600M, jul-2025)", "tipo": "concepto"},
+  {"id": "exit_no_rentabilidad", "nombre": "Un exit mide la transacción, no la rentabilidad operativa", "tipo": "limitacion"},
+  {"id": "gii_peru", "nombre": "Índice Global de Innovación (OMPI): Perú", "tipo": "metrica"},
+  {"id": "innovacion_peru", "nombre": "Desempeño de innovación de Perú", "tipo": "resultado"}
+ ],
+ "triples": [
+  {"s": "proyecciones_bls", "p": "mide", "o": "empleo_total_eeuu", "f": "F-310", "apoyo": "Monthly Labor Review 2026: el empleo total crecería 3,1% entre 2024 y 2034 (de 170,0 a 175,2 millones), mucho menos que el 13,0% de 2014-2024; las ganancias se concentran en salud y servicios profesionales y las pérdidas en comercio minorista.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "proyecciones_bls", "p": "tiene_limite", "o": "proyeccion_no_medicion", "f": "F-310", "apoyo": "Monthly Labor Review 2026: las cifras son proyecciones a 2034 sobre supuestos del modelo del BLS, no empleo observado; marco de las proyecciones ocupacionales de diseño (F-308, F-309).", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "diseno_publico", "p": "aumenta", "o": "efectividad_politica_publica", "f": "F-387", "apoyo": "Public Design Evidence Review (Cabinet Office, 2025): revisiones de literatura, entrevistas y casos presentan evidencia de que el diseño público produce soluciones más innovadoras y mayor efectividad y eficiencia.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "habilitadores_institucionales", "p": "modera", "o": "efectividad_politica_publica", "f": "F-387", "apoyo": "PDER 2025: identifica habilitadores y barreras institucionales del diseño público: liderazgo, capacidad, financiamiento y oportunidades de iterar y colaborar.", "lectura": "abstract", "fuerza": "teorica"},
+  {"s": "exposicion_codigo_agente", "p": "aumenta", "o": "aprobacion_codigo_ia", "f": "F-407", "apoyo": "arXiv 2606.22721 (workshop KDD 2026): 400 revisores recurrentes y 11.429 revisiones en 7 meses; la aprobación sube de 30,1% a 36,8% y la brecha acumulada llega a +14,5 pp del primer al décimo decil de experiencia, controlando por tiempo calendario y dificultad.", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "exposicion_codigo_agente", "p": "reduce", "o": "escrutinio_revision", "f": "F-407", "apoyo": "arXiv 2606.22721: los comentarios en línea caen 22% mientras la latencia sube 3,5x; los autores lo leen como habituación bajo carga creciente, no solo como confianza calibrada. La aprobación de PRs humanos cae en el mismo período.", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "castellion_markham_2013", "p": "refuta", "o": "c_mito_fracaso_80_95", "f": "F-431", "apoyo": "JPIM 30 (2013): el mito de que fracasa 80% o más de los productos nuevos persiste aunque los estudios empíricos desde 1977 muestran una tasa de 40% o menos; lo sostienen el argumentum ad populum y el interés propio.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "teoria_disrupcion", "p": "tiene_limite", "o": "poca_confrontacion_empirica", "f": "F-437", "apoyo": "Journal of Management Studies 55(7) 2018: la investigación empírica posterior rara vez se ocupó de los argumentos teóricos clave de la disrupción, pese a su gran difusión entre practicantes y su amplia cita académica.", "lectura": "abstract", "fuerza": "teorica"},
+  {"s": "aprendizaje_fracaso_innovacion", "p": "asocia_con", "o": "exito_proyecto_innovacion", "f": "F-441", "apoyo": "Review of Managerial Science 15(2): revisión sistemática de 53 artículos (1980-2017); la literatura plantea el fracaso como oportunidad o precursor de éxitos futuros; propone un marco integrador y una agenda de investigación.", "lectura": "abstract", "fuerza": "teorica"},
+  {"s": "cierre_munich_re_ventures", "p": "respalda", "o": "c_cvc_en_retirada", "f": "F-447", "apoyo": "Oct-2025: Munich Re deja de invertir en startups vía Munich Re Ventures (fundada en 2015, ≈US$1.200M en ~100 inversiones) y centraliza el venture capital en MEAG con fondos y coinversiones; dice que buscará innovación en su negocio central.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "cierre_paypal_ventures", "p": "respalda", "o": "c_cvc_en_retirada", "f": "F-448", "apoyo": "TechCrunch, jun-2026: PayPal Ventures (desde 2016, US$850M en tres fondos, >80 inversiones) pausa nuevas inversiones; el equipo pasa de >10 a 2 personas dentro de la reestructuración del nuevo CEO. La empresa lo enmarca como decisión de foco, no de desempeño.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "adquisicion_next_insurance", "p": "tiene_limite", "o": "exit_no_rentabilidad", "f": "F-452", "apoyo": "ERGO, 1-jul-2025: cierre de la compra del 100% de Next Insurance a una valoración de US$2.600M; Next tuvo ingresos de US$548M en 2024 y >600 mil clientes. El comunicado no informa rentabilidad: el precio mide la transacción, no el resultado operativo.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "gii_peru", "p": "mide", "o": "innovacion_peru", "f": "F-466", "apoyo": "OMPI, GII 2025: Perú en el puesto 80 de 139 (75 el año anterior); 72 en insumos y 91 en resultados de innovación; intervalo de confianza del ranking 78-85.", "lectura": "abstract", "fuerza": "descriptiva"}
+ ],
+ "discrepancias": [
+  {"f": "F-437", "detalle": "Autoría 'Christensen, Raynor, McDonald y coautores' → Christensen, McDonald, Altman y Palmer (JMS 55(7)).", "estado": "cerrada", "resolucion": "Cerrada: autoría corregida en el ledger el 2026-10-04 (regla permanente)."},
+  {"f": "F-441", "detalle": "Año 2019 sin aclarar: publicado en línea en 2019 y en número en 2021 (RMS 15(2):189-234).", "estado": "cerrada", "resolucion": "Cerrada: datos bibliográficos completados el 2026-10-04 (regla permanente)."}
+ ],
+ "notas": "Segundo lote de 10 (pedido del usuario), con resúmenes y comunicados oficiales verificados el 2026-10-04. Se saltaron tres del orden de `next` por no tener fuente primaria verificable: F-389 (estudio brasileño no ubicado), F-418 (hallazgo negativo de búsqueda propia) y F-427 (análisis de Barclays visto solo en resúmenes de LinkedIn). Se reemplazaron por F-448, F-452 y F-466. F-431: la ficha dice que la tasa real es de 30-49%; el resumen dice '40% o menos'. No se abre discrepancia porque el rango puede venir del cuerpo del artículo, que no se pudo leer; el triple usa la cifra del resumen."
+}

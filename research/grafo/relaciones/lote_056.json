@@ -1,0 +1,181 @@
+{
+ "fecha": "2026-10-07",
+ "f_ids": [
+  "F-742",
+  "F-743",
+  "F-756",
+  "F-757",
+  "F-758",
+  "F-759",
+  "F-760",
+  "F-762"
+ ],
+ "entidades": [
+  {
+   "id": "c_nino_frena_crecimiento",
+   "nombre": "El Niño deprime el crecimiento económico por años",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "crecimiento_pbi",
+   "nombre": "Crecimiento económico (PBI)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "conflicto_civil",
+   "nombre": "Conflicto civil",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_enso_conflicto",
+   "nombre": "El Niño aumenta la probabilidad de conflicto civil",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_vulnerabilidad_decide",
+   "nombre": "El daño lo determina la vulnerabilidad previa, no solo el clima ('no hay desastres naturales')",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sequia",
+   "nombre": "Sequía severa",
+   "tipo": "concepto"
+  },
+  {
+   "id": "violencia_pareja",
+   "nombre": "Violencia de pareja contra mujeres",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lim_sequia_no_enso",
+   "nombre": "Mide sequía, no ENSO directamente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "agro_norte",
+   "nombre": "Producción agrícola del norte (mango, limón)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "inseguridad_alimentaria_global",
+   "nombre": "Inseguridad alimentaria global por El Niño 2015-16",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_efecto_macro_heterogeneo",
+   "nombre": "El efecto macro de El Niño es heterogéneo: algunos países crecen",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_nino_frena_crecimiento",
+   "p": "aplica_a",
+   "o": "crecimiento_pbi",
+   "f": "F-742",
+   "apoyo": "El crecimiento se deprime >5 años; 1982-83 y 1997-98 costaron US$4,1 y 5,7 billones; US$84 billones proyectados al 2100.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "crecimiento_pbi",
+   "f": "F-742",
+   "apoyo": "Panel global 1960-2019: firma persistente de menor crecimiento en el trópico.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "asocia_con",
+   "o": "crecimiento_pbi",
+   "f": "F-743",
+   "apoyo": "GVAR: caída breve en Australia, Chile, India, Indonesia, Japón, NZ y Sudáfrica; EE.UU. y Europa pueden crecer; sube la inflación.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_efecto_macro_heterogeneo",
+   "p": "contradice",
+   "o": "c_nino_frena_crecimiento",
+   "f": "F-743",
+   "apoyo": "Tensión parcial: el efecto macro es heterogéneo y en algunos países positivo, frente a la pérdida global persistente de F-742.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "conflicto_civil",
+   "f": "F-756",
+   "apoyo": "1950-2004: la probabilidad de nuevos conflictos civiles en el trópico se duplica en años de El Niño vs. La Niña (21% de conflictos).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_enso_conflicto",
+   "p": "aplica_a",
+   "o": "conflicto_civil",
+   "f": "F-756",
+   "apoyo": "Afirmación central del paper.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_enso_conflicto",
+   "p": "contradice",
+   "o": "c_vulnerabilidad_decide",
+   "f": "F-757",
+   "apoyo": "Buhaug: el vínculo clima-conflicto no es robusto; la política pesa más. Tensión con la lectura causal climática (en disputa).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "sequia",
+   "p": "aumenta",
+   "o": "violencia_pareja",
+   "f": "F-758",
+   "apoyo": "19 DHS (83.990 mujeres): sequía severa +3,0 pp pareja controladora y +0,8 pp violencia física.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "violencia_pareja",
+   "p": "tiene_limite",
+   "o": "lim_sequia_no_enso",
+   "f": "F-758",
+   "apoyo": "Exposición medida como sequía, no ENSO; plausible solo donde El Niño produce sequía.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_vulnerabilidad_decide",
+   "p": "aplica_a",
+   "o": "el_nino_enso",
+   "f": "F-759",
+   "apoyo": "Davis: las sequías ENSO 1876-1902 mataron 30-50 M con excedentes disponibles; la política convirtió sequía en hambruna.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "nino_costero_peru",
+   "p": "asocia_con",
+   "o": "agro_norte",
+   "f": "F-760",
+   "apoyo": "Etnografía del desierto norteño: El Niño también es 'año de abundancia' (agua, pasto), no solo desastre.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "inseguridad_alimentaria_global",
+   "f": "F-762",
+   "apoyo": "2015-16: ~60 M afectados; 31,6 M en inseguridad alimentaria en África austral; 10,2 M en Etiopía.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "El Niño · Macro, conflicto, violencia, alimentos y teoría (El Niño) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+}

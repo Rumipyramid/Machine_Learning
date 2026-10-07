@@ -1,180 +1,217 @@
 {
- "fecha": "2026-10-07",
+ "fecha": "2026-10-03",
  "f_ids": [
-  "F-531",
-  "F-532",
-  "F-533",
-  "F-534",
-  "F-537",
-  "F-535",
-  "F-536"
+  "F-16",
+  "F-17",
+  "F-18",
+  "F-20",
+  "F-44"
  ],
  "entidades": [
   {
-   "id": "el_nino_enso",
-   "nombre": "El Niño / ENSO (fase cálida)",
+   "id": "c_nudge_efectivo_general",
+   "nombre": "Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "estructura_decision",
+   "nombre": "Nudges de estructura de la decisión (defaults, orden, esfuerzo)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "informacion_decision",
+   "nombre": "Nudges de información/asistencia a la decisión",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "efecto_conductual",
+   "nombre": "Cambio de conducta objetivo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sesgo_publicacion",
+   "nombre": "Sesgo de publicación",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "heterogeneidad_nudge",
+   "nombre": "Heterogeneidad del efecto de nudges por dominio y técnica",
    "tipo": "concepto"
   },
   {
-   "id": "talla_infantil",
-   "nombre": "Talla y masa magra infantil",
+   "id": "robma",
+   "nombre": "Meta-análisis bayesiano robusto (RoBMA)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "megaestudio",
+   "nombre": "Megaestudio (muchas intervenciones, misma población y outcome)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_expertos_no_predicen",
+   "nombre": "Los expertos no predicen qué intervención funcionará mejor",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "persistencia_efecto",
+   "nombre": "Persistencia del efecto tras terminar la intervención",
    "tipo": "resultado"
   },
   {
-   "id": "exposicion_1000_dias",
-   "nombre": "Niños expuestos en gestación y primeros 2 años",
-   "tipo": "poblacion"
+   "id": "precision_diagnostica",
+   "nombre": "Precisión diagnóstica de chatbots médicos",
+   "tipo": "metrica"
   },
   {
-   "id": "bajo_peso_nacer",
-   "nombre": "Bajo peso al nacer",
-   "tipo": "resultado"
+   "id": "outcomes_salud",
+   "nombre": "Resultados de salud reales del paciente",
+   "tipo": "constructo"
   },
   {
-   "id": "cognicion_infantil",
-   "nombre": "Desarrollo cognitivo infantil",
-   "tipo": "resultado"
+   "id": "relacion_medico_paciente",
+   "nombre": "Relación médico-paciente",
+   "tipo": "concepto"
   },
   {
-   "id": "desnutricion_cronica",
-   "nombre": "Desnutrición crónica infantil",
-   "tipo": "resultado"
+   "id": "mertens_2022",
+   "nombre": "Meta-análisis de Mertens et al. (PNAS 2022)",
+   "tipo": "estudio"
   },
   {
-   "id": "ingreso_consumo_hogar",
-   "nombre": "Ingreso y consumo del hogar",
-   "tipo": "resultado"
+   "id": "maier_2022",
+   "nombre": "Re-análisis RoBMA de Maier et al. (PNAS 2022)",
+   "tipo": "estudio"
   },
   {
-   "id": "diarrea_infantil",
-   "nombre": "Hospitalizaciones infantiles por diarrea",
-   "tipo": "resultado"
-  },
-  {
-   "id": "mortalidad_temprana",
-   "nombre": "Mortalidad fetal, infantil y de la niñez",
-   "tipo": "resultado"
-  },
-  {
-   "id": "hogares_pobres",
-   "nombre": "Hogares pobres / de menores ingresos",
-   "tipo": "poblacion"
-  },
-  {
-   "id": "brotes_enfermedades_clima",
-   "nombre": "Brotes de enfermedades sensibles al clima (cólera, malaria, dengue, peste)",
-   "tipo": "resultado"
+   "id": "megaestudio_gimnasio",
+   "nombre": "Megaestudio de gimnasio de Milkman et al. (Nature 2021)",
+   "tipo": "estudio"
   }
  ],
  "triples": [
   {
-   "s": "el_nino_enso",
-   "p": "reduce",
-   "o": "talla_infantil",
-   "f": "F-531",
-   "apoyo": "Tumbes, n=2.095: la mejora de talla/edad cayó de 0,09 a 0,04 DE/año tras 1997-98 y se volvió negativa con ≥7% de prob. de inundación; menos masa magra.",
+   "s": "mertens_2022",
+   "p": "respalda",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-16",
+   "apoyo": ">200 estudios, >450 tamaños de efecto (n=2.149.683): d=0,45 (IC95% 0,39-0,52) sin ajustar.",
    "lectura": "abstract",
-   "fuerza": "observacional"
+   "fuerza": "causal"
   },
   {
-   "s": "talla_infantil",
-   "p": "aplica_a",
-   "o": "exposicion_1000_dias",
-   "f": "F-531",
-   "apoyo": "El déficit se concentra en cohortes nacidas durante y poco después de El Niño.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "el_nino_enso",
+   "s": "estructura_decision",
    "p": "aumenta",
-   "o": "bajo_peso_nacer",
-   "f": "F-532",
-   "apoyo": "Ecuador: exposición in utero a inundaciones de 1997-98 (3er trimestre) eleva el bajo peso al nacer.",
+   "o": "efecto_conductual",
+   "f": "F-16",
+   "apoyo": "En todos los dominios, las intervenciones sobre la estructura de la decisión superan a las de información o asistencia.",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "el_nino_enso",
-   "p": "reduce",
-   "o": "cognicion_infantil",
-   "f": "F-532",
-   "apoyo": "Exposición en el 1er trimestre asociada a menores puntajes cognitivos a los 5-7 años.",
+   "s": "c_nudge_efectivo_general",
+   "p": "tiene_limite",
+   "o": "sesgo_publicacion",
+   "f": "F-16",
+   "apoyo": "Los propios autores reportan sesgo de publicación moderado; ajustado, el efecto cae a d=0,08 (severo) o 0,31 (moderado).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "maier_2022",
+   "p": "refuta",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-17",
+   "apoyo": "Re-análisis RoBMA de los datos de Mertens: corregido el sesgo de publicación, no queda evidencia de efecto promedio del nudging.",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "desnutricion_cronica",
-   "f": "F-533",
-   "apoyo": "México rural 1998-99: exposición del útero a los 2 años eleva la desnutrición crónica en 8,3 pp.",
+   "s": "maier_2022",
+   "p": "refuta",
+   "o": "informacion_decision",
+   "f": "F-17",
+   "apoyo": "Encuentra evidencia en contra de la eficacia de las intervenciones de información y asistencia, y en contra en la mayoría de dominios.",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "el_nino_enso",
-   "p": "reduce",
-   "o": "cognicion_infantil",
-   "f": "F-533",
-   "apoyo": "4-5 años después: lenguaje, memoria de trabajo y visoespacial 11-21% menores.",
+   "s": "robma",
+   "p": "mide",
+   "o": "sesgo_publicacion",
+   "f": "F-17",
+   "apoyo": "RoBMA promedia modelos de selección y PET-PEESE, evitando elegir de antemano la severidad del sesgo.",
    "lectura": "abstract",
-   "fuerza": "causal"
+   "fuerza": "teorica"
   },
   {
-   "s": "ingreso_consumo_hogar",
-   "p": "media",
-   "o": "desnutricion_cronica",
-   "f": "F-533",
-   "apoyo": "Mecanismo: caída de ingreso, consumo de alimentos y composición de la dieta en la primera infancia.",
-   "lectura": "abstract",
-   "fuerza": "causal"
-  },
-  {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "diarrea_infantil",
-   "f": "F-534",
-   "apoyo": "Lima 1997-98 (+5 °C): ingresos diarios por diarrea al 200% de la tasa previa; 6.225 en exceso; +8% por cada +1 °C.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "mortalidad_temprana",
-   "f": "F-537",
-   "apoyo": "Incendios de Indonesia 1997 (sequía de El Niño): ~15.600 muertes fetales, infantiles y de la niñez (1,2% de las cohortes).",
-   "lectura": "abstract",
-   "fuerza": "causal"
-  },
-  {
-   "s": "hogares_pobres",
+   "s": "heterogeneidad_nudge",
    "p": "modera",
-   "o": "mortalidad_temprana",
-   "f": "F-537",
-   "apoyo": "El efecto de la contaminación fue mucho mayor en zonas pobres.",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-18",
+   "apoyo": "Heterogeneidad extrema entre meta-análisis (I²=99,89%): los efectos estimados difieren enormemente.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "megaestudio",
+   "p": "aumenta",
+   "o": "efecto_conductual",
+   "f": "F-20",
+   "apoyo": "54 programas de 4 semanas en 61.293 socios de gimnasio; el 45% subió las visitas semanales entre 9% y 27%.",
    "lectura": "abstract",
    "fuerza": "causal"
   },
   {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "brotes_enfermedades_clima",
-   "f": "F-535",
-   "apoyo": "Revisión Lancet: efecto bien establecido sobre cólera (Bangladesh) y malaria; más débil para otras vectoriales.",
+   "s": "megaestudio",
+   "p": "tiene_limite",
+   "o": "persistencia_efecto",
+   "f": "F-20",
+   "apoyo": "Solo el 8% de las intervenciones dejó un cambio significativo medible después de las 4 semanas.",
    "lectura": "abstract",
-   "fuerza": "observacional"
+   "fuerza": "causal"
   },
   {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "brotes_enfermedades_clima",
-   "f": "F-536",
-   "apoyo": "2015-16: brotes de dengue, cólera, peste, hantavirus, chikungunya y zika asociados a anomalías de lluvia y temperatura.",
+   "s": "megaestudio_gimnasio",
+   "p": "respalda",
+   "o": "c_expertos_no_predicen",
+   "f": "F-20",
+   "apoyo": "Pronósticos de jueces imparciales no anticiparon qué intervenciones serían las más efectivas.",
    "lectura": "abstract",
-   "fuerza": "observacional"
+   "fuerza": "causal"
+  },
+  {
+   "s": "precision_diagnostica",
+   "p": "mide",
+   "o": "outcomes_salud",
+   "f": "F-44",
+   "apoyo": "Critica usar la precisión diagnóstica como proxy de buena atención: es solo una parte; los outcomes de salud dependen de más.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "relacion_medico_paciente",
+   "p": "media",
+   "o": "outcomes_salud",
+   "f": "F-44",
+   "apoyo": "La relación médico-paciente es crucial para outcomes positivos y los chatbots pueden obstaculizarla de varias formas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
   }
  ],
- "notas": "El Niño · Niñez: cicatriz de los 1.000 días y salud infantil (El Niño)"
+ "discrepancias": [
+  {
+   "f": "F-16",
+   "detalle": "Ficha dice '447 experimentos'. El abstract reporta >200 estudios y >450 tamaños de efecto (447 es el conteo de efectos, no de experimentos). Además el d es 0,45 (IC 0,39-0,52), no 0,43 como se suele citar."
+  },
+  {
+   "f": "F-44",
+   "detalle": "Ficha atribuye autoría a 'NCBI/PMC' (el repositorio). El autor es Stephen R. Milford (2024)."
+  },
+  {
+   "f": "F-18",
+   "detalle": "No se pudo ubicar el abstract de 'Hu et al. 2025, JBDM, bdm.70053' en dos búsquedas; autor, título y revista quedan sin verificar."
+  }
+ ],
+ "notas": "Crisis del nudge (Mertens vs. Maier vs. segundo orden), megaestudios y crítica a la precisión diagnóstica de chatbots médicos. 4/5 leídas a nivel abstract. (F-18 subida a abstract en el lote 011.)"
 }

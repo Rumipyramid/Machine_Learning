@@ -1,194 +1,39 @@
 {
- "fecha": "2026-10-07",
+ "fecha": "2026-10-03",
  "f_ids": [
-  "F-538",
-  "F-539",
-  "F-540",
-  "F-541",
-  "F-542",
-  "F-548",
-  "F-553"
+  "F-18"
  ],
  "entidades": [
   {
-   "id": "nino_costero_peru",
-   "nombre": "Niño Costero peruano (1997-98, 2017, 2023)",
-   "tipo": "concepto"
+   "id": "hu_2025",
+   "nombre": "Meta-análisis de segundo orden de Hu et al. (JBDM 2025)",
+   "tipo": "estudio"
   },
   {
-   "id": "tept",
-   "nombre": "Estrés postraumático (TEPT)",
-   "tipo": "resultado"
-  },
-  {
-   "id": "inseguridad_alimentaria",
-   "nombre": "Inseguridad alimentaria del hogar",
-   "tipo": "resultado"
-  },
-  {
-   "id": "capital_social",
-   "nombre": "Capital social y redes",
-   "tipo": "constructo"
-  },
-  {
-   "id": "lim_sin_grupo_control",
-   "nombre": "Cohorte pequeña sin grupo control",
+   "id": "calidad_metaanalisis_nudge",
+   "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
    "tipo": "limitacion"
-  },
-  {
-   "id": "pobreza_hogar",
-   "nombre": "Pobreza del hogar",
-   "tipo": "resultado"
-  },
-  {
-   "id": "donaciones_informales",
-   "nombre": "Donaciones y ayuda informal (comida, ropa)",
-   "tipo": "intervencion"
-  },
-  {
-   "id": "gasto_salud_educacion",
-   "nombre": "Gasto del hogar en salud y educación",
-   "tipo": "resultado"
-  },
-  {
-   "id": "danos_nino_2017",
-   "nombre": "Daños humanos y económicos del Niño Costero 2017",
-   "tipo": "resultado"
-  },
-  {
-   "id": "norte_costero_peru",
-   "nombre": "Hogares del norte costero (Tumbes, Piura, Lambayeque)",
-   "tipo": "poblacion"
-  },
-  {
-   "id": "malaria_peru",
-   "nombre": "Malaria en el norte del Perú",
-   "tipo": "resultado"
-  },
-  {
-   "id": "dengue_peru",
-   "nombre": "Casos y muertes por dengue (Perú)",
-   "tipo": "resultado"
   }
  ],
  "triples": [
   {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "tept",
-   "f": "F-538",
-   "apoyo": "Piura 2017: TEPT en 38,1% de 179 madres a los 3 meses; 1,9% a los 8 meses; ~0% al año.",
+   "s": "hu_2025",
+   "p": "refuta",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-18",
+   "apoyo": "14 meta-análisis, 1.638 estudios, ~30 M de participantes: d=0,27 (IC95% 0,16-0,38) que cae a d=0,004 tras ajustar por sesgo de publicación.",
    "lectura": "abstract",
    "fuerza": "observacional"
   },
   {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "inseguridad_alimentaria",
-   "f": "F-538",
-   "apoyo": "Inseguridad alimentaria severa 90,0% a 3 meses → 31,8% → 13,1% al año.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "capital_social",
-   "p": "modera",
-   "o": "tept",
-   "f": "F-538",
-   "apoyo": "El estudio mide capital social (SASCAT) junto a la recuperación; la recuperación ocurre en ~12 meses.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "tept",
+   "s": "c_nudge_efectivo_general",
    "p": "tiene_limite",
-   "o": "lim_sin_grupo_control",
-   "f": "F-538",
-   "apoyo": "Cohorte de 179 madres sin grupo de comparación no afectado.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "nino_costero_peru",
-   "p": "reduce",
-   "o": "ingreso_consumo_hogar",
-   "f": "F-539",
-   "apoyo": "Panel ENAHO 2015-19 + índice satelital de daño: hogares afectados pierden ingreso y gasto frente a no afectados.",
-   "lectura": "abstract",
-   "fuerza": "causal"
-  },
-  {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "pobreza_hogar",
-   "f": "F-539",
-   "apoyo": "La pobreza sube, sobre todo en hogares urbanos.",
-   "lectura": "abstract",
-   "fuerza": "causal"
-  },
-  {
-   "s": "donaciones_informales",
-   "p": "reduce",
-   "o": "inseguridad_alimentaria",
-   "f": "F-539",
-   "apoyo": "Los hogares amortiguan el consumo con donaciones de comida y ropa; los autores piden seguro formal.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "nino_costero_peru",
-   "p": "reduce",
-   "o": "gasto_salud_educacion",
-   "f": "F-540",
-   "apoyo": "DiD 2015-19: El Niño 2017 redujo el gasto per cápita en salud y educación de hogares rurales del norte.",
-   "lectura": "abstract",
-   "fuerza": "causal"
-  },
-  {
-   "s": "ingreso_consumo_hogar",
-   "p": "media",
-   "o": "gasto_salud_educacion",
-   "f": "F-540",
-   "apoyo": "Probable canal: golpe al ingreso agrícola.",
-   "lectura": "abstract",
-   "fuerza": "causal"
-  },
-  {
-   "s": "hogares_pobres",
-   "p": "modera",
-   "o": "pobreza_hogar",
-   "f": "F-541",
-   "apoyo": "Hogar con desastre: 21 veces más probable 'siempre pobre' que 'nunca pobre'; golpe al consumo mayor en la parte baja.",
-   "lectura": "abstract",
-   "fuerza": "observacional"
-  },
-  {
-   "s": "danos_nino_2017",
-   "p": "aplica_a",
-   "o": "norte_costero_peru",
-   "f": "F-542",
-   "apoyo": "Caso integral 2017: ~1,9 M de peruanos (~6%) afectados; las políticas de prevención no se basan en riesgo local.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "malaria_peru",
-   "f": "F-548",
-   "apoyo": "1998: 247.229 casos de malaria, focos en Piura, Sullana y Tumbes; P. falciparum ~34%.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "dengue_peru",
-   "f": "F-553",
-   "apoyo": "2023: 445 muertes y ~271 mil casos (ene-nov), 65% de muertes en Piura y Lambayeque tras Yaku y el Niño Costero.",
+   "o": "calidad_metaanalisis_nudge",
+   "f": "F-18",
+   "apoyo": "La mayoría de meta-análisis incluidos fue calificada de calidad baja o críticamente baja; piden meta-análisis preregistrados.",
    "lectura": "abstract",
    "fuerza": "descriptiva"
   }
  ],
- "notas": "El Niño · Salud en el Perú, salud mental y hogares (El Niño)"
+ "notas": "Pase de profundidad: F-18 ubicada y leída a nivel abstract; la relación de heterogeneidad del lote 010 se actualizó en su sitio (ficha→abstract). El efecto ajustado (~0) converge con Maier (F-17)."
 }

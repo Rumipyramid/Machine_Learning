@@ -1,144 +1,88 @@
 {
- "fecha": "2026-10-07",
+ "fecha": "2026-10-03",
  "f_ids": [
-  "F-554",
-  "F-555",
-  "F-556",
-  "F-557",
-  "F-558",
-  "F-560",
-  "F-561"
+  "F-3",
+  "F-10",
+  "F-19",
+  "F-21",
+  "F-60"
  ],
  "entidades": [
   {
-   "id": "precio_alimentos",
-   "nombre": "Precio de los alimentos (limón 2023)",
-   "tipo": "resultado"
+   "id": "c_brecha_papers_escala",
+   "nombre": "El efecto de los nudges en papers (~8,7 pp) es ~6 veces el que se ve a escala (~1,4 pp)",
+   "tipo": "afirmacion"
   },
   {
-   "id": "desinformacion_clima",
-   "nombre": "Desinformación y pánico en redes ante lluvias",
-   "tipo": "concepto"
-  },
-  {
-   "id": "percepcion_abandono_estatal",
-   "nombre": "Percepción de abandono estatal (Reconstrucción, prevención no ejecutada)",
+   "id": "sesgo_automatizacion",
+   "nombre": "Sesgo de automatización (sobre-confiar en la recomendación de un sistema)",
    "tipo": "constructo"
   },
   {
-   "id": "conducta_preparacion_hogar",
-   "nombre": "Acciones de preparación del hogar ante El Niño",
-   "tipo": "resultado"
-  },
-  {
-   "id": "pagos_seguros_2017",
-   "nombre": "Pagos de seguros por el Niño Costero 2017 (US$428 M)",
-   "tipo": "resultado"
-  },
-  {
-   "id": "brecha_proteccion_nino_peru",
-   "nombre": "Brecha de protección ante El Niño en Perú (~7% del daño asegurado en 2017)",
-   "tipo": "resultado"
-  },
-  {
-   "id": "reaseguro_internacional",
-   "nombre": "Reaseguro internacional",
+   "id": "factores_usuario_sistema",
+   "nombre": "Experiencia, estilo cognitivo, actitudes del usuario y diseño del sistema",
    "tipo": "concepto"
-  },
-  {
-   "id": "plan_prevencion_rimac",
-   "nombre": "Plan de Prevención de Riesgos Naturales 2025-26 de Rímac (empresas)",
-   "tipo": "intervencion"
   }
  ],
  "triples": [
   {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "precio_alimentos",
-   "f": "F-554",
-   "apoyo": "2023: limón +69,8% en agosto, hasta S/22/kg; memes 'aceptamos limones como pago'; ministro sugirió pollo en vez de ceviche.",
+   "s": "sesgo_publicacion",
+   "p": "media",
+   "o": "c_brecha_papers_escala",
+   "f": "F-21",
+   "apoyo": "Un modelo de meta-análisis indica que la publicación selectiva, agravada por baja potencia estadística, explica ~70% de la diferencia entre ambas muestras.",
    "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "observacional"
   },
   {
-   "s": "desinformacion_clima",
-   "p": "aplica_a",
-   "o": "nino_costero_peru",
-   "f": "F-555",
-   "apoyo": "Audios 'apocalípticos' y videos viejos presentados como actuales; desmentidos por SENAMHI y verificadores.",
+   "s": "sesgo_automatizacion",
+   "p": "es_tipo_de",
+   "o": "sobreconfianza_ia",
+   "f": "F-60",
+   "apoyo": "Revisión sistemática de 74 estudios (JAMIA 2012): tendencia a sobre-confiar en la automatización; los sistemas de apoyo a la decisión clínica mejoran el desempeño pero introducen errores nuevos.",
    "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "observacional"
   },
   {
-   "s": "percepcion_abandono_estatal",
-   "p": "asocia_con",
-   "o": "danos_nino_2017",
-   "f": "F-556",
-   "apoyo": "Reconstrucción con Cambios percibida como engaño: obras de 2017 sin ejecutar en Piura años después.",
+   "s": "factores_usuario_sistema",
+   "p": "modera",
+   "o": "sesgo_automatizacion",
+   "f": "F-60",
+   "apoyo": "El sesgo depende de factores del usuario (experiencia, estilo cognitivo), actitudes (confianza) y del diseño del sistema. La cifra de 5-7% de la ficha no aparece en el resumen.",
    "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "percepcion_abandono_estatal",
-   "p": "asocia_con",
-   "o": "nino_costero_peru",
-   "f": "F-557",
-   "apoyo": "2023: solo 30% del presupuesto preventivo gastado a 45 días del cierre (Contraloría).",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "el_nino_enso",
-   "p": "aumenta",
-   "o": "conducta_preparacion_hogar",
-   "f": "F-558",
-   "apoyo": "Kantar n=884: 90% tomaría acción; 61,8% comida, 44% agua, 43% reforzar vivienda; en el norte la vivienda es prioridad (78,1%).",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "nino_costero_peru",
-   "p": "aumenta",
-   "o": "pagos_seguros_2017",
-   "f": "F-560",
-   "apoyo": "16.587 siniestros; US$428 M pagados y US$660 M de reserva a jun-2018; Lima 38%, Piura 31%.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "brecha_proteccion_nino_peru",
-   "p": "origina_en",
-   "o": "pagos_seguros_2017",
-   "f": "F-560",
-   "apoyo": "APESEG: el seguro cubrió ~7% de US$9.200 M de daño físico (base en conflicto con F-550).",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "reaseguro_internacional",
-   "p": "parte_de",
-   "o": "pagos_seguros_2017",
-   "f": "F-560",
-   "apoyo": "Retención local 10,92%; reaseguro internacional 89,08%.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
-  },
-  {
-   "s": "pagos_seguros_2017",
-   "p": "asocia_con",
-   "o": "plan_prevencion_rimac",
-   "f": "F-561",
-   "apoyo": "Rímac atendió 2.368 siniestros y pagó US$145 M (~34% del mercado); origen del Centro de Monitoreo.",
-   "lectura": "abstract",
-   "fuerza": "descriptiva"
+   "fuerza": "observacional"
   }
  ],
- "notas": "El Niño · Pista social y negocio histórico (El Niño, Perú)",
- "discrepancias": [
+ "sin_aporte": [
   {
-   "f": "F-560",
-   "detalle": "Base de daño del Niño Costero 2017 en conflicto: US$9.200 M (APESEG, F-560) frente a >US$3.000 M (~1,6% PBI, INDECI/OPS, F-550). Con la base menor, lo pagado+reservado sería ~35% y no 7%. La de APESEG probablemente incluye necesidades de reconstrucción."
+   "f": "F-3",
+   "nota": "Sin relación nueva: T-152 se actualizó en su sitio (ficha→abstract)."
+  },
+  {
+   "f": "F-10",
+   "nota": "Sin relación nueva: T-156 se actualizó en su sitio (ficha→abstract). Es un libro: se leyó su resumen editorial y reseñas, no el texto."
+  },
+  {
+   "f": "F-19",
+   "nota": "Sin relación nueva: T-157 se actualizó en su sitio (ficha→abstract). T-161 queda en ficha: es inferencia del node, no de los autores."
   }
- ]
+ ],
+ "actualizaciones_en_su_sitio": {
+  "T-152": {
+   "apoyo": "Survey (JBEF 30, 2021): heurísticas y sesgos (disponibilidad, miopía, narrow framing) explican el subaseguro por ponderar mal o estimar mal la probabilidad de riesgos asegurables; proponen alfabetización financiera como solución."
+  },
+  "T-156": {
+   "apoyo": "Libro (Princeton, 2014): la gente encuentra las divulgaciones complejas y aburridas, decide quitando información, puede ignorarlas sin costo y hay tantas que nadie las atiende; mejor redacción no vuelve simple lo complejo."
+  },
+  "T-157": {
+   "apoyo": "BBS (online sep-2022): el campo se concentró en cambiar a la persona (i-frame) en vez del sistema (s-frame); ej.: las intervenciones individuales sobre emisiones pesan poco frente a un impuesto al carbono."
+  },
+  "T-158": {
+   "apoyo": "126 RCTs de dos nudge units de EE.UU. con 23 M de personas: efecto medio de 1,4 pp (+8,0% sobre el control), pequeño pero muy significativo."
+  },
+  "T-159": {
+   "apoyo": "En revistas académicas el efecto medio es 8,7 pp (+33,4%) frente a 1,4 pp en las nudge units: la brecha es de ~6 veces."
+  }
+ },
+ "notas": "Pase de profundidad sobre las 5 fuentes A que el grafo tenía solo a nivel ficha (relaciones.py next --mejorar). Resúmenes oficiales vía búsqueda; texto completo no abierto. F-21: 126 RCTs y 23 M de personas (la ficha dice '123+' y '>20 M', compatible). F-60: la cifra 5-7% de la ficha no está en el resumen; queda sin verificar a este nivel."
 }

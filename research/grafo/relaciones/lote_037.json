@@ -1,0 +1,218 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-515",
+  "F-523",
+  "F-538",
+  "F-641",
+  "F-22",
+  "F-103",
+  "F-161",
+  "F-181"
+ ],
+ "entidades": [
+  {
+   "id": "exposicion_ia_generativa_ocupacional",
+   "nombre": "Exposición ocupacional a la IA generativa (índice OIT)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "ocupaciones_administrativas",
+   "nombre": "Ocupaciones administrativas (clerical support workers)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "transformacion_empleo_ia",
+   "nombre": "Transformación de puestos (aumento de tareas) más que reemplazo por IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "compromiso_cognitivo_lectura_web",
+   "nombre": "Compromiso cognitivo al leer sitios web (usuarios sin discapacidad)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "muestra_pequena_plos_accesibilidad_2025",
+   "nombre": "Muestra pequeña (N=20) en el estudio psicofisiológico de accesibilidad",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_85_proyectos_ia_fracasan",
+   "nombre": "El 85% de los proyectos de IA fracasa",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "gartner_prediccion_sesgo_ia_2018",
+   "nombre": "Predicción de Gartner (2018): 85% de proyectos de IA con resultados erróneos por sesgo hasta 2022",
+   "tipo": "estudio"
+  },
+  {
+   "id": "sancion_ftc_cleo_2025",
+   "nombre": "Acuerdo FTC–Cleo AI por US$17 M (2025)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cancelacion_dificil_suscripcion",
+   "nombre": "Cancelación difícil de suscripciones (cobros tras pedir la baja)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "publicidad_enganosa_adelantos_cleo",
+   "nombre": "Publicidad engañosa sobre monto y rapidez de adelantos de efectivo",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tecnicas_conductuales_comprension_vida",
+   "nombre": "Técnicas conductuales de comprensión (lenguaje simplificado, visuales, video humano o con IA)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ratio_combinado_pc_eeuu",
+   "nombre": "Ratio combinado neto del mercado P/C de EE.UU.",
+   "tipo": "resultado"
+  },
+  {
+   "id": "pronostico_triple_i_milliman_2025",
+   "nombre": "Pronóstico Triple-I/Milliman del mercado P/C (ene-2025)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "desintermediacion_ia_distribucion_seguros",
+   "nombre": "Desintermediación por IA de la distribución de seguros",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "comisiones_agentes_baja_complejidad",
+   "nombre": "Comisiones de agentes independientes en riesgos de baja complejidad",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ocupaciones_administrativas",
+   "p": "asocia_con",
+   "o": "exposicion_ia_generativa_ocupacional",
+   "f": "F-515",
+   "apoyo": "OIT WP140 (2025): las ocupaciones administrativas siguen con la mayor exposición a IA generativa; 1 de cada 4 trabajadores tiene alguna exposición y 3,3% la más alta.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "exposicion_ia_generativa_ocupacional",
+   "p": "asocia_con",
+   "o": "transformacion_empleo_ia",
+   "f": "F-515",
+   "apoyo": "OIT WP140 (2025): la transformación de los puestos es el impacto más probable de la IA generativa, porque la mayoría de ocupaciones incluye tareas que requieren intervención humana.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "accesibilidad_web",
+   "p": "aumenta",
+   "o": "compromiso_cognitivo_lectura_web",
+   "f": "F-523",
+   "apoyo": "PLOS ONE 2025 (Ekin et al., N=20, eye-tracking y VFC): sin mejoras el compromiso cognitivo decayó en el tiempo; la accesibilidad cognitiva lo aumentó en usuarios sin discapacidad.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "accesibilidad_web",
+   "p": "tiene_limite",
+   "o": "muestra_pequena_plos_accesibilidad_2025",
+   "f": "F-523",
+   "apoyo": "PLOS ONE 2025 (Ekin et al.): la evidencia psicofisiológica sobre accesibilidad en usuarios sin discapacidad proviene de solo 20 participantes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_85_proyectos_ia_fracasan",
+   "p": "origina_en",
+   "o": "gartner_prediccion_sesgo_ia_2018",
+   "f": "F-538",
+   "apoyo": "Gartner, comunicado 13-feb-2018: predijo que hasta 2022 el 85% de los proyectos de IA daría resultados erróneos por sesgo en datos, algoritmos o equipos; no es una medición de fracaso.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "sancion_ftc_cleo_2025",
+   "p": "aplica_a",
+   "o": "cancelacion_dificil_suscripcion",
+   "f": "F-641",
+   "apoyo": "FTC 2025: Cleo AI pagará US$17 M; la FTC alegó que dificultaba cancelar y seguía cobrando, y le exige ofrecer una forma simple de cancelar.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sancion_ftc_cleo_2025",
+   "p": "aplica_a",
+   "o": "publicidad_enganosa_adelantos_cleo",
+   "f": "F-641",
+   "apoyo": "FTC 2025: Cleo anunciaba adelantos instantáneos de cientos de dólares, pero rutinariamente ofrecía menos de US$100; acuerdo de US$17 M para reembolsos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tecnicas_conductuales_comprension_vida",
+   "p": "aumenta",
+   "o": "comprension_seguro_vida",
+   "f": "F-22",
+   "apoyo": "SOA Research Institute y RGA 2024: en dos experimentos con ~2.000 adultos de EE.UU. cada uno, las técnicas conductuales elevaron la comprensión del seguro de vida hasta 28%.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ajuste_riesgo",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-103",
+   "apoyo": "The Actuary (SOA): el programa permanente de ajuste de riesgo de la ACA reduce el potencial de selección adversa y nivela la competencia entre aseguradoras, promoviendo estabilidad y asequibilidad.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "pronostico_triple_i_milliman_2025",
+   "p": "mide",
+   "o": "ratio_combinado_pc_eeuu",
+   "f": "F-161",
+   "apoyo": "Triple-I y Milliman, ene-2025: ratio combinado neto P/C 2024 estimado en 99,5 (−2,2 pts) con primas +9,5%; prevén que la mejora continúe en 2025 y 2026.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desintermediacion_ia_distribucion_seguros",
+   "p": "reduce",
+   "o": "comisiones_agentes_baja_complejidad",
+   "f": "F-181",
+   "apoyo": "Fortune/BofA Global Research 2026: más de US$15.000 M en comisiones de 2025 de seis aseguradoras, en riesgos de baja complejidad, enfrentan un riesgo no menor de desintermediación por IA.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-515",
+   "detalle": "Emisor 'ILO · Banco Mundial': el documento es ILO Working Paper 140 (Gmyrek, Berg et al., mayo 2025); no se identifica al Banco Mundial como coautor. Faltan autores y número de serie.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-523",
+   "detalle": "Autoría no capturada: Ekin, M.; Krejtz, K.; Duarte, C.; Seixas Pereira, L.; Marcus-Quinn, A.; Krejtz, I.; et al. Falta DOI 10.1371/journal.pone.0328552 (publicado 30-jul-2025).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-103",
+   "detalle": "Emisor 'American Academy of Actuaries (The Actuary Magazine)': The Actuary es la revista de la Society of Actuaries; el análisis 'worked as intended' es de la American Academy of Actuaries (abr-2016). Falta autor y año.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-181",
+   "detalle": "La ficha dice 'hasta USD 15.000 millones'; el artículo dice 'más de US$15.000 millones' (y solo de seis aseguradoras), así que es un piso, no un techo.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  }
+ ],
+ "notas": "Lote del avance a N6 (grupo n6_2): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

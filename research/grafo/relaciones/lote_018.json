@@ -1,0 +1,153 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-154",
+  "F-156",
+  "F-159",
+  "F-175",
+  "F-176"
+ ],
+ "entidades": [
+  {
+   "id": "g_eval",
+   "nombre": "G-Eval (un LLM puntúa cada texto con razonamiento paso a paso)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "calidad_texto_generado",
+   "nombre": "Calidad de textos generados por IA según juicio humano",
+   "tipo": "constructo"
+  },
+  {
+   "id": "sesgo_favor_texto_llm",
+   "nombre": "Sesgo de los evaluadores LLM a favor de textos generados por LLM",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "llm_juez",
+   "nombre": "LLM como juez de respuestas de asistentes",
+   "tipo": "metrica"
+  },
+  {
+   "id": "preferencia_humana_respuestas",
+   "nombre": "Preferencias humanas entre respuestas de asistentes",
+   "tipo": "constructo"
+  },
+  {
+   "id": "sesgos_llm_juez",
+   "nombre": "Sesgos del LLM juez: posición, verbosidad y auto-preferencia",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "ancla_numerica",
+   "nombre": "Número ancla visible antes de juzgar un precio",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "juicio_precio",
+   "nombre": "Juicio del consumidor sobre precio o valor",
+   "tipo": "resultado"
+  },
+  {
+   "id": "publicidad_precio_enganosa",
+   "nombre": "Publicidad de precio engañosa",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "confianza_fuente",
+   "nombre": "Confianza en quien comunica la información",
+   "tipo": "resultado"
+  },
+  {
+   "id": "disposicion_compra",
+   "nombre": "Disposición a comprar",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "g_eval",
+   "p": "mide",
+   "o": "calidad_texto_generado",
+   "f": "F-156",
+   "apoyo": "EMNLP 2023: con GPT-4, correlación de Spearman de 0,514 con el juicio humano en resúmenes, muy por encima de métricas como BLEU o ROUGE.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "g_eval",
+   "p": "tiene_limite",
+   "o": "sesgo_favor_texto_llm",
+   "f": "F-156",
+   "apoyo": "Los propios autores advierten que los evaluadores basados en LLM pueden favorecer textos generados por LLM.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "llm_juez",
+   "p": "mide",
+   "o": "preferencia_humana_respuestas",
+   "f": "F-159",
+   "apoyo": "NeurIPS 2023: GPT-4 como juez coincide más de 80% con preferencias humanas (controladas y de Chatbot Arena), el mismo nivel de acuerdo que entre humanos.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "llm_juez",
+   "p": "tiene_limite",
+   "o": "sesgos_llm_juez",
+   "f": "F-159",
+   "apoyo": "Documentan sesgo de posición, de verbosidad y de auto-preferencia, más razonamiento limitado, y proponen mitigaciones; publican 80 preguntas, 3K votos expertos y 30K conversaciones.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ancla_numerica",
+   "p": "aumenta",
+   "o": "juicio_precio",
+   "f": "F-175",
+   "apoyo": "Experimento (Frontiers in Psychology 2022): los consumidores se dejaron anclar al juzgar precios en escenas de experiencia del producto; presión de tiempo, autoconfianza, género, personalidad y conocimiento moderaron el efecto.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "publicidad_precio_enganosa",
+   "p": "reduce",
+   "o": "confianza_fuente",
+   "f": "F-176",
+   "apoyo": "Experimento (Journal of Product & Brand Management 2006): con información de precio engañosa baja la confianza en la fuente.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "publicidad_precio_enganosa",
+   "p": "reduce",
+   "o": "disposicion_compra",
+   "f": "F-176",
+   "apoyo": "El mismo experimento halla menor disposición a comprar cuando el precio se comunica de forma engañosa.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "sin_aporte": [
+  {
+   "f": "F-154",
+   "nota": "Solo se verificó la autoría y la revista (Electronics 14(16):3266, 2025); los resultados no se leyeron. No se extraen relaciones hasta leerlos."
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-154",
+   "detalle": "La ficha pone a la editorial como autor ('MDPI Electronics'). Los autores son Jaume Gené-Albesa y Jorge de Andrés-Sánchez (Universitat Rovira i Virgili); Electronics 14(16):3266, 2025."
+  },
+  {
+   "f": "F-175",
+   "detalle": "La ficha dice '(autores vía PMC/NCBI)'. Los autores son Yi Zong y Xiaojie Guo (Tianjin University of Commerce); Frontiers in Psychology, 8-feb-2022, DOI 10.3389/fpsyg.2022.794135."
+  },
+  {
+   "f": "F-176",
+   "detalle": "La ficha dice '(autor vía ResearchGate / revista académica)' y año 's.f.'. La autora es Simona Romani; Journal of Product & Brand Management 15(2/3):130-138, 2006."
+  }
+ ],
+ "notas": "Pase de profundidad: evaluación de textos y chatbots con LLM, anclaje de precio y publicidad engañosa. Resúmenes oficiales vía búsqueda. F-154 sin relaciones (solo autoría)."
+}
