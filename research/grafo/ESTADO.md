@@ -1,6 +1,6 @@
 # 🕸️ Grafo del segundo cerebro — ESTADO
 
-*Generado: 2026-10-03 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
+*Generado: 2026-10-07 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
 
 > **Transparencia:** cada cifra de este reporte sale de contar archivos del repo. Lo que no se puede medir está listado en §7. Un número alto aquí significa *más material y mejor enlazado*, **no** que el conocimiento sea *verdadero* ni que haya tenido impacto fuera del repo.
 
@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 16 | 6,861 líneas |
+| Nodes (`_nodes/`) | 17 | 7,218 líneas |
 | Outputs (`_outputs/`) | 4 | derivan de nodes: 4 de 4 citan algún node |
-| Fuentes en el ledger | 528 | 🟢A 144 · 🔵B 96 · 🟡C 123 · 🟠D 122 · 🔴E 29 · otras/sin clasificar 14 |
-| Aristas wikilink (node→node) | 84 | recíprocas: 84 de 84 (100%) |
-| Fuentes citadas por ≥1 node | 423 de 528 | 80% del ledger; **105 viven solo en el ledger** |
-| Fuentes citadas por ≥2 nodes (transversales) | 72 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 95 de 528 fuentes (18%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
+| Fuentes en el ledger | 570 | 🟢A 159 · 🔵B 104 · 🟡C 125 · 🟠D 138 · 🔴E 29 · otras/sin clasificar 15 |
+| Aristas wikilink (node→node) | 90 | recíprocas: 90 de 90 (100%) |
+| Fuentes citadas por ≥1 node | 465 de 570 | 82% del ledger; **105 viven solo en el ledger** |
+| Fuentes citadas por ≥2 nodes (transversales) | 74 | evidencia reutilizada entre temas |
+| **Grafo semántico** (relaciones extraídas) | 95 de 570 fuentes (17%) | 175 relaciones · 9 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -49,6 +49,7 @@
 | `glosario-seguro-salud-peru` | 3 | 0.011 | ❌ sin enlace |
 | `modelo-salud-ia-farmacias-peru` | 2 | 0.007 | ❌ sin enlace |
 | `seguros-comportamiento-mundo-peru` | 2 | 0.007 | ✅ |
+| `fenomeno-el-nino-impacto-personas` | 0 | 0.0 | ❌ sin enlace |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ❌ sin enlace |
 | `matriz-productos-vida-rimac` | 0 | 0.0 | ❌ sin enlace |
 | `modelo-personas-sinteticas` | 0 | 0.0 | ✅ |
@@ -81,16 +82,17 @@
 | 2026-08-02 | 70 | 468 | 24 | ██████████████████ |
 | 2026-10-02 | 47 | 515 | 20 | ████████████ |
 | 2026-10-03 | 13 | 528 | 10 | ███ |
+| 2026-10-07 | 42 | 570 | 23 | ██████████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
-*Fuente: `git show` de cada commit. **El clon es superficial (shallow)**: el historial verificable empieza en 2026-08-13; antes de eso solo vale §3.1.*
+*Fuente: `git show` de cada commit. **El clon es superficial (shallow)**: el historial verificable empieza en 2026-08-20; antes de eso solo vale §3.1.*
 
 | Fecha | Commit | Fuentes | Nodes | Outputs | Wikilinks | Fuentes citadas | Diseño: líneas | H abiertas | H resueltas | Reglas |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-13 | `8a90dc2` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
+| 2026-08-20 | `e8ba645` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
-| 2026-10-03 | `482b479` | 528 | 16 | 4 | 84 | 423 | 1948 | 17 | 17 | 22 |
+| 2026-10-03 | `0781a57` | 528 | 16 | 4 | 84 | 423 | 1948 | 17 | 17 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -98,13 +100,13 @@
 
 | Métrica | Valor | Qué dice | Qué NO dice |
 |---|---|---|---|
-| M1 Base sólida (A+B / ledger) | 45% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
-| M2 Cobertura de citación | 80% | cuánto del ledger sostiene algún node | un node puede citar mal |
+| M1 Base sólida (A+B / ledger) | 46% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
+| M2 Cobertura de citación | 82% | cuánto del ledger sostiene algún node | un node puede citar mal |
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 50% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
-| M6 Integración (diseño↔resto) | 8/15 nodes enlazados; 11 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
-| M7 Lectura profunda (Lobo) | 172 fuentes leídas a fondo = 33% del ledger; 171 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
+| M6 Integración (diseño↔resto) | 8/16 nodes enlazados; 11 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
+| M7 Lectura profunda (Lobo) | 184 fuentes leídas a fondo = 32% del ledger; 183 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
 
@@ -113,7 +115,7 @@
 - ✅ Wikilinks **rotos** (destino inexistente): **0**
 - ✅ Nodes **aislados** (sin enlaces): **0**
 - ✅ Nodes **ausentes** de la tabla de `alma.md`: **0**
-- ✅ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2026-08-13; antes es indeterminable): **0**
+- ✅ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2026-08-20; antes es indeterminable): **0**
 - ✅ Outputs que **no citan ningún node** (viola regla 4): **0**
 
 ## 6. Tabla por node
@@ -122,20 +124,21 @@
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 1948 | 259 | 134 | 8/8 | 2026-10-03 | 2026-10-03 v4.1 |
 | `mecanismos-seguros-salud` | 351 | 53 | 33 | 8/8 | 2026-10-02 | 2026-10-02 v1.2 |
+| `fenomeno-el-nino-impacto-personas` | 348 | 42 | 23 | 3/3 | n/d | 2026-10-07 v1.0 |
 | `conducta-humano-ia` | 139 | 35 | 25 | 5/5 | 2026-10-02 | 2026-10-02 v1.1 |
-| `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.4 |
-| `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
-| `modelo-salud-ia-farmacias-peru` | 605 | 21 | 18 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-08-12 v1.0 |
+| `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-20, historial truncado) | 2026-07-27 v1.4 |
+| `futuro-asesores-seguros-venta-digital` | 386 | 23 | 2 | 6/6 | indeterminada (≤ 2026-08-20, historial truncado) | 2026-07-27 v1.0 |
+| `modelo-salud-ia-farmacias-peru` | 608 | 21 | 18 | 4/4 | indeterminada (≤ 2026-08-20, historial truncado) | 2026-08-12 v1.0 |
 | `transicion-venta-fria-a-opt-in` | 324 | 18 | 7 | 4/4 | 2026-10-02 | 2026-10-02 v1.0 |
 | `material-visual-venta-consultiva` | 369 | 17 | 12 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
+| `seguros-comportamiento-mundo-peru` | 336 | 15 | 5 | 13/13 | 2026-10-03 | 2026-10-03 v1.1 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 254 | 14 | 10 | 3/3 | 2026-10-02 | 2026-10-02 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 333 | 13 | 4 | 12/12 | 2026-10-03 | 2026-10-03 v1.1 |
 | `behavioral-design-estado-disciplina` | 318 | 8 | 7 | 7/7 | 2026-10-02 | 2026-10-02 v1.1 |
-| `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-24 v1.0 |
-| `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-27 v1.0 |
-| `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-21 v1.0 |
-| `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-26 v1.2 |
-| `modelo-personas-sinteticas` | 73 | 0 | 0 | 3/3 | indeterminada (≤ 2026-08-13, historial truncado) | 2026-07-20 v1.0 |
+| `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-20, historial truncado) | 2026-07-24 v1.0 |
+| `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | indeterminada (≤ 2026-08-20, historial truncado) | 2026-07-27 v1.0 |
+| `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-20, historial truncado) | 2026-07-21 v1.0 |
+| `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-20, historial truncado) | 2026-07-26 v1.2 |
+| `modelo-personas-sinteticas` | 76 | 0 | 0 | 4/4 | indeterminada (≤ 2026-08-20, historial truncado) | 2026-07-20 v1.0 |
 
 ## 7. Límites declarados de esta medición
 

@@ -59,6 +59,9 @@ la disciplina]] identifica en la frontera de "AI Behavioral Science": pocos equi
 tienen simulación de consumidores calibrada con microdato nacional, no solo supuestos.
 
 ## Conexiones
+- Propuesta pendiente desde → [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la
+  vida de las personas]] §6.1: variable de exposición a inundación/Niño análoga a `exposicion_sismica`
+  (no aplicada; decide `cerrajero`/usuario).
 - Calibrado con → [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración
   frente a seguros (Mundo vs. Perú)]] (SBS, APESEG, marginales)
 - Posicionado por → [[behavioral-design-estado-disciplina|Behavioral design: estado de la

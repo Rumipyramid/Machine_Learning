@@ -594,6 +594,9 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
 
 ## Conexiones
 
+- [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — las
+  olas de diarrea, dengue y malaria asociadas a El Niño (su §3.2) son picos de demanda de atención
+  primaria y farmacia en el norte: caso de estrés para este modelo.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — este node es el diseño concreto
   para Perú; ese node aporta el marco global de mecanismos (capitación, atención primaria,
   Singapur/NHS) que valida y matiza este diseño (ver su §3 y su síntesis §4).
