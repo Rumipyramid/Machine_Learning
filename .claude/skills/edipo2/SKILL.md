@@ -373,6 +373,36 @@ estas son sus reglas:
 Test para saber si el cierre está bien escrito: **¿podría el consultante contárselo a alguien en
 una sola frase sin volver a leerlo?** Si no, no es una conclusión.
 
+### Los tres tiempos: nunca pararse en el segundo
+
+Error detectado en uso (2026-10-07, quinto pedido de claridad). Todo hallazgo tiene tres tiempos
+y la lectura se venía entregando con dos:
+
+| Tiempo | Qué es | Ejemplo |
+|---|---|---|
+| **1 · Qué salió** | El dato crudo | "Venus en Escorpio, en detrimento, retrógrada" |
+| **2 · Qué significa en el sistema** | La traducción al vocabulario del método | "detrimento es deseo fuerte y mal servido" |
+| **3 · Qué significa PARA ÉL** | La afirmación sobre su vida, con nombres y fechas | "tu apetito esta semana va hacia atrás, hacia alguien que ya tuviste, y el 10 de octubre eso pasa en tu propia casa" |
+
+**Pararse en el tiempo 2 no es interpretar: es glosar.** Toda afirmación técnica cierra en una
+frase sobre el consultante, concreta, con las personas y las fechas que están en juego. Si un
+hallazgo no se puede bajar al tiempo 3, no se incluye.
+
+### Organizar por pregunta, no por tirada
+
+El sello y la carta son el sistema de archivo del oráculo, no la unidad de interés del
+consultante. Cuando se revisan varias consultas, **se ordena por lo que preguntó**, y cada una
+cierra con la forma:
+
+> **Lo que preguntaste** → **la respuesta, literal** → **qué significa para vos.**
+
+Y la respuesta empieza contestando la pregunta tal como se hizo. Si preguntó "¿podré tener un
+trío?", se empieza por sí / no / no este — no por "el regente de la casa 8 estaba debilitado".
+El aparato va después, a sostener lo que ya se dijo.
+
+**Prohibido el catálogo:** una lista de correcciones técnicas ordenada por tirada es un inventario
+del método, no una lectura de una vida.
+
 ## Guardarraíles
 
 - **Prescribí.** El usuario pide operaciones, no consideraciones. Si el marco permite una
