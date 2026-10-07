@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-27 · Versión: v1.4
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-10-07 · Versión: v1.4
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -929,3 +929,6 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
   transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la
   experiencia de venta.
+- [[mentoria-asesores-venta-seguros-vida|Mentoría de asesores de venta de seguros de vida]] — evidencia
+  para diseñar la Formación del asesor: mentoría obligatoria (no voluntaria), corta y estructurada,
+  mentores elegidos también por calidad de venta, y medida como experimento.

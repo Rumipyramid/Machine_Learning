@@ -1,7 +1,7 @@
 # ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-10-04 · Versión: v1.0
+> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-10-07 · Versión: v1.0
 > (Actualización 2026-07-27, sin bump de versión, incremental: §3.7 ampliación sobre casos de
 > éxito comercial verificable en venta 100% digital de vida — Ethos, Bowtie, contraevidencia
 > Bestow/Singlife — afina la tesis existente, no la cambia.)
@@ -386,3 +386,6 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[mentoria-asesores-venta-seguros-vida|Mentoría de asesores de venta de seguros de vida]] — si el
+  intermediario persiste, cómo hacerlo mejor: evidencia causal (sector vecino) de que la mentoría
+  estructurada y obligatoria sube ventas ~17-18% en nuevos vendedores; en vida no hay RCT.
