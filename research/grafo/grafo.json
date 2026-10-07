@@ -3,28 +3,49 @@
   {
    "id": "behavioral-design-estado-disciplina",
    "type": "node",
-   "lines": 318,
-   "cites": 8,
+   "lines": 320,
+   "cites": 9,
    "design": false
   },
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 139,
-   "cites": 35,
+   "lines": 142,
+   "cites": 41,
+   "design": false
+  },
+  {
+   "id": "convergencia-psicologia-economia-ia",
+   "type": "node",
+   "lines": 245,
+   "cites": 115,
    "design": false
   },
   {
    "id": "evaluacion-calidad-agentes-conversacionales-ia",
    "type": "node",
-   "lines": 254,
-   "cites": 14,
+   "lines": 256,
+   "cites": 17,
+   "design": false
+  },
+  {
+   "id": "fenomeno-el-nino-impacto-personas",
+   "type": "node",
+   "lines": 404,
+   "cites": 58,
+   "design": false
+  },
+  {
+   "id": "fenomenos-psicologicos",
+   "type": "node",
+   "lines": 547,
+   "cites": 106,
    "design": false
   },
   {
    "id": "futuro-asesores-seguros-venta-digital",
    "type": "node",
-   "lines": 386,
+   "lines": 389,
    "cites": 23,
    "design": false
   },
@@ -45,7 +66,7 @@
   {
    "id": "material-visual-venta-consultiva",
    "type": "node",
-   "lines": 369,
+   "lines": 377,
    "cites": 17,
    "design": false
   },
@@ -59,22 +80,22 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 351,
+   "lines": 354,
    "cites": 53,
    "design": false
   },
   {
    "id": "modelo-personas-sinteticas",
    "type": "node",
-   "lines": 73,
+   "lines": 80,
    "cites": 0,
    "design": false
   },
   {
    "id": "modelo-salud-ia-farmacias-peru",
    "type": "node",
-   "lines": 605,
-   "cites": 21,
+   "lines": 617,
+   "cites": 23,
    "design": false
   },
   {
@@ -87,21 +108,21 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 333,
-   "cites": 13,
+   "lines": 340,
+   "cites": 21,
    "design": false
   },
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 1948,
-   "cites": 259,
+   "lines": 2001,
+   "cites": 274,
    "design": true
   },
   {
    "id": "transicion-venta-fria-a-opt-in",
    "type": "node",
-   "lines": 324,
+   "lines": 325,
    "cites": 18,
    "design": false
   },
@@ -132,6 +153,12 @@
   },
   {
    "id": "guia-triaje-resultados-2026-08-05.md",
+   "type": "output",
+   "lines": 0,
+   "cites": 0
+  },
+  {
+   "id": "informe-el-nino-oportunidades-rimac-2026-10-07.md",
    "type": "output",
    "lines": 0,
    "cites": 0
@@ -294,7 +321,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Assessing Nudge Impact: A Comprehensive Second-Order Meta-Analysis (J. Behavioral Decision Making)",
-   "autor": "Hu, et al.",
+   "autor": "Hu, Xia, Guo, Lu, Constantino & Ju",
    "anio": "2025",
    "huerfana": false
   },
@@ -348,9 +375,9 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Inside an Academic Scandal: A Story of Fraud and Betrayal",
-   "autor": "Bazerman, M. (y cobertura de Science/NPR)",
+   "autor": "Bazerman, M. H. (2025). Inside an Academic Scandal: A Story of Fraud and Betrayal. Cambridge, MA: MIT Press, 200 pp. (ISBN 9780262049887). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Bazerman, M. (y cobertura de Science/NPR)'",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-25",
@@ -359,14 +386,14 @@
    "titulo": "Shared-value insurance: resultados del modelo Vitality",
    "autor": "Vitality Group / Discovery",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-26",
    "type": "fuente",
    "rigor": "C",
    "titulo": "Lessons from corporate behavioral-science units / Behavioral science in insurance",
-   "autor": "McKinsey & Company",
+   "autor": "Güntner, A.; Lucks, K.; Sperling-Magro, J. (ene-2019). Lessons from the front line of corporate nudging. McKinsey Quarterly. La ficha también menciona 'Behavioral science in insurance', un post distinto del blog de seguros de McKinsey. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'McKinsey & Company'",
    "anio": "2019-24",
    "huerfana": true
   },
@@ -420,7 +447,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Swiss Re delivers record Group net income of USD 4.8 billion in 2025 / Q1 2026 press release",
-   "autor": "Swiss Re",
+   "autor": "Swiss Re (27-feb-2026). Swiss Re delivers record Group net income of USD 4.8 billion in 2025 [comunicado FY2025]; y Swiss Re (7-may-2026). Swiss Re delivers a net income of USD 1.5 billion for the first quarter [comunicado Q1 2026]. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Swiss Re'",
    "anio": "2026",
    "huerfana": true
   },
@@ -465,7 +492,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Usuarios de farmacias y boticas (cap. 4, publicación INEI)",
-   "autor": "INEI (Instituto Nacional de Estadística e Informática)",
+   "autor": "INEI (Instituto Nacional de Estadística e Informática). Cap. 4 'Usuarios de farmacias y boticas', en publicación de la Encuesta Nacional de Satisfacción de Usuarios del Aseguramiento Universal en Salud (ENSUSALUD) 2014 (Lib1192). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'INEI (Instituto Nacional de Estadística e Informática)'",
    "anio": "s.f.",
    "huerfana": true
   },
@@ -510,7 +537,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Triage Accuracy and the Safety of User-Initiated Symptom Assessment With an Electronic Symptom Checker in a Real-Life Setting",
-   "autor": "NCBI/PMC (estudio Finlandia, Omaolo)",
+   "autor": "Liu V, Kaila M, Koskela T. Triage Accuracy and the Safety of User-Initiated Symptom Assessment With an Electronic Symptom Checker in a Real-Life Setting: Instrument Validation Study. JMIR Human Factors 2024;11:e55099. DOI 10.2196/55099 (PMID 39326038). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'NCBI/PMC (estudio Finlandia, Omaolo)'",
    "anio": "2024",
    "huerfana": true
   },
@@ -519,7 +546,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Longitudinal Changes in Diagnostic Accuracy of a Differential Diagnosis List Developed by an AI-Based Symptom Checker",
-   "autor": "NCBI/PMC (estudio Japón)",
+   "autor": "Harada Y, Sakamoto T, Sugimoto S, Shimizu T. Longitudinal Changes in Diagnostic Accuracy of a Differential Diagnosis List Developed by an AI-Based Symptom Checker: Retrospective Observational Study. JMIR Formative Research 2024;8:e53985. DOI 10.2196/53985. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'NCBI/PMC (estudio Japón)'",
    "anio": "2024",
    "huerfana": true
   },
@@ -528,7 +555,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Accuracy is inaccurate: Why a focus on diagnostic accuracy for medical chatbot AIs will not lead to improved health outcomes",
-   "autor": "NCBI/PMC",
+   "autor": "Milford, S. R. — ⚠️ corregido 2026-10-03: el ledger atribuía la autoría al repositorio \"NCBI/PMC\"",
    "anio": "2024",
    "huerfana": false
   },
@@ -645,7 +672,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The silent trial - the bridge between bench-to-bedside clinical AI applications",
-   "autor": "Kwong, J.C.C. et al.",
+   "autor": "Kwong JCC, et al. The silent trial - the bridge between bench-to-bedside clinical AI applications. Frontiers in Digital Health 2022;4:929508. DOI 10.3389/fdgth.2022.929508. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Kwong, J.C.C. et al.'",
    "anio": "2022",
    "huerfana": false
   },
@@ -654,35 +681,35 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Reflection on modern methods: when is a stepped-wedge cluster randomized trial a good study design choice?",
-   "autor": "Hemming, K. et al. (revisión metodológica)",
+   "autor": "Hemming K, Taljaard M. Reflection on modern methods: when is a stepped-wedge cluster randomized trial a good study design choice? International Journal of Epidemiology 2020;49(3):1043-1052. DOI 10.1093/ije/dyaa077. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Hemming, K. et al. (revisión metodológica)'",
    "anio": "2020",
    "huerfana": false
   },
   {
    "id": "F-59",
    "type": "fuente",
-   "rigor": "A",
+   "rigor": "C",
    "titulo": "Pro's and con's of the stepped wedge design in cluster randomised trials of quality improvement interventions",
-   "autor": "Mdege, N.D. et al.",
-   "anio": "2011",
+   "autor": "Dreischulte T, Grant A, Donnan P, Guthrie B. Pro's and con's of the stepped wedge design in cluster randomised trials of quality improvement interventions: two current examples. Trials 2013;14(Suppl 1):O87 (resumen de congreso, 2nd Clinical Trials Methodology Conference, Edimburgo). DOI 10.1186/1745-6215-14-S1-O87. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Mdege, N.D. et al.'",
+   "anio": "2013",
    "huerfana": false
   },
   {
    "id": "F-60",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Automation bias: a systematic review of frequency, effect mediators, and mitigators",
-   "autor": "Goddard, K. et al.",
+   "titulo": "Automation bias: a systematic review of frequency, effect mediators, and mitigators (JAMIA 19(1):121-127)",
+   "autor": "Goddard, K.; Roudsari, A. & Wyatt, J. C.",
    "anio": "2012",
    "huerfana": false
   },
   {
    "id": "F-61",
    "type": "fuente",
-   "rigor": "A",
+   "rigor": "B",
    "titulo": "Automation bias and prescribing decision support – rates, mediators and mitigators",
-   "autor": "City University London (Automation bias and prescribing decision support)",
-   "anio": "s.f.",
+   "autor": "Goddard, K. (tesis doctoral, City University London) — ⚠️ corregido 2026-10-03: el registro decía 'City University London, s.f.'",
+   "anio": "2012",
    "huerfana": false
   },
   {
@@ -699,7 +726,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "User-Initiated Symptom Assessment With an Electronic Symptom Checker: Protocol for a Mixed Methods Validation Study",
-   "autor": "Protocolo de validación Omaolo",
+   "autor": "Liu V, Koskela TH, Kaila M. User-Initiated Symptom Assessment With an Electronic Symptom Checker: Protocol for a Mixed Methods Validation Study. JMIR Research Protocols 2023;12:e41423. DOI 10.2196/41423 (PMID 37467041). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Protocolo de validación Omaolo'",
    "anio": "2023",
    "huerfana": false
   },
@@ -708,8 +735,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "CFIR simplified: Pragmatic application of and adaptations to the Consolidated Framework for Implementation Research",
-   "autor": "Damschroder, L.J. et al. (CFIR, vía aplicaciones)",
-   "anio": "2021",
+   "autor": "Safaeinili N, Brown-Johnson C, Shaw JG, Mahoney M, Winget M. CFIR simplified: Pragmatic application of and adaptations to the Consolidated Framework for Implementation Research (CFIR) for evaluation of a patient-centered care transformation within a learning health system. Learning Health Systems 2020;4(1):e10201 (online 26-sep-2019). DOI 10.1002/lrh2.10201. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Damschroder, L.J. et al. (CFIR, vía aplicaciones)'",
+   "anio": "2020 (en línea 2019)",
    "huerfana": false
   },
   {
@@ -717,7 +744,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Who is Tracking Health on Mobile Devices: Behavioral Logfile Analysis in Hong Kong",
-   "autor": "PMC (análisis de logfiles, Hong Kong)",
+   "autor": "Guan L, Peng TQ, Zhu JJH. Who is Tracking Health on Mobile Devices: Behavioral Logfile Analysis in Hong Kong. JMIR mHealth and uHealth 2019;7(5):e13679. DOI 10.2196/13679. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (análisis de logfiles, Hong Kong)'",
    "anio": "2019",
    "huerfana": false
   },
@@ -726,8 +753,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Micro-costing in health and medicine: a critical appraisal",
-   "autor": "Xu, X. et al.",
-   "anio": "2020",
+   "autor": "Xu X, Lazar CM, Ruger JP. Micro-costing in health and medicine: a critical appraisal. Health Economics Review 2021;11:1 (publicado 6-ene-2021). DOI 10.1186/s13561-020-00298-5. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Xu, X. et al.'",
+   "anio": "2021",
    "huerfana": false
   },
   {
@@ -852,9 +879,9 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Top international insurance markets / Global insurance market share by country",
-   "autor": "NAIC / Statista (agregando datos OECD)",
+   "autor": "NAIC (National Association of Insurance Commissioners), Government Affairs. s.f. (datos de 2022). Top International Insurance Markets (premium volume worldwide). Complemento: Statista, Insurance industry in the U.S. (datos OECD 2024). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'NAIC / Statista (agregando datos OECD)'",
    "anio": "2024-2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-81",
@@ -879,7 +906,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Uncertainty and the Welfare Economics of Medical Care (The American Economic Review, 53, 941-973)",
-   "autor": "Arrow, K.J.",
+   "autor": "Arrow KJ. Uncertainty and the Welfare Economics of Medical Care. American Economic Review 1963;53(5):941-973. Reimpreso en Bulletin of the World Health Organization 2004;82(2):141-149 (sección Public Health Classics). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Arrow, K.J.'",
    "anio": "1963",
    "huerfana": true
   },
@@ -933,7 +960,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The Economics of Moral Hazard: Comment (American Economic Review)",
-   "autor": "Pauly, M.V.",
+   "autor": "Pauly MV. The Economics of Moral Hazard: Comment. American Economic Review 1968;58(3):531-537. (Sin abstract; síntesis oficial del Leonard Davis Institute, Penn, serie 50@50.) — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Pauly, M.V.'",
    "anio": "1968",
    "huerfana": false
   },
@@ -942,8 +969,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Anatomy of a Slow-Motion Health Insurance Death Spiral",
-   "autor": "North American Actuarial Journal (Cutler & Zeckhauser-style análisis actuarial)",
-   "anio": "2014",
+   "autor": "Frech HE III, Smith MP. Anatomy of a Slow-Motion Health Insurance Death Spiral. North American Actuarial Journal 2015;19(1):60-72 (online 2014). DOI 10.1080/10920277.2014.982871. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'North American Actuarial Journal (Cutler & Zeckhauser-style análisis actuarial)'",
+   "anio": "2015 (en línea 2014)",
    "huerfana": false
   },
   {
@@ -951,7 +978,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Early evidence of an adverse selection death spiral? The case of Blue Cross and Blue Shield",
-   "autor": "Journal of Health Economics (ScienceDirect)",
+   "autor": "Thomasson MA. Early evidence of an adverse selection death spiral? The case of Blue Cross and Blue Shield. Explorations in Economic History 2004;41(4):313-328. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Journal of Health Economics (ScienceDirect)'",
    "anio": "2004",
    "huerfana": false
   },
@@ -960,8 +987,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Selection in Health Insurance Markets and Its Policy Remedies",
-   "autor": "PMC (revisión académica)",
-   "anio": "2024",
+   "autor": "Geruso M, Layton TJ. Selection in Health Insurance Markets and Its Policy Remedies. Journal of Economic Perspectives 2017 (NBER Working Paper 23876, sep-2017). Volumen/páginas no vistos en los resultados. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (revisión académica)'",
+   "anio": "2017",
    "huerfana": false
   },
   {
@@ -969,8 +996,8 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "Risk Pooling: How Health Insurance in the Individual Market Works",
-   "autor": "American Academy of Actuaries (Actuary.org)",
-   "anio": "s.f.",
+   "autor": "American Academy of Actuaries, Health Practice Council (2017, 14-jul). Risk Pooling: How Health Insurance in the Individual Market Works (Issue Brief/FAQ). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'American Academy of Actuaries (Actuary.org)'",
+   "anio": "2017",
    "huerfana": true
   },
   {
@@ -978,7 +1005,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Personalizing solidarity? The role of self-tracking in health insurance pricing",
-   "autor": "PMC (Van de Ven et al. o similar, verificar autoría exacta)",
+   "autor": "McFall L. Personalizing solidarity? The role of self-tracking in health insurance pricing. Economy and Society 2019 (volumen/páginas no vistos). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (Van de Ven et al. o similar, verificar autoría exacta)'",
    "anio": "2019",
    "huerfana": false
   },
@@ -1005,7 +1032,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Improving diagnosis-based cost groups in the Dutch risk equalization model",
-   "autor": "PMC (ajuste de riesgo, grupos de costo por diagnóstico, Países Bajos)",
+   "autor": "Oskam M, van Kleef RC, van Vliet RCJA. Improving diagnosis-based cost groups in the Dutch risk equalization model: the effects of a new clustering method and allowing for multimorbidity. International Journal of Health Economics and Management 2023;23(2):303-324. DOI 10.1007/s10754-023-09345-0. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (ajuste de riesgo, grupos de costo por diagnóstico, Países Bajos)'",
    "anio": "2023",
    "huerfana": false
   },
@@ -1059,7 +1086,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "The ACA Risk Adjustment Program — A Critical Element in Assuring Market Stability and Affordability",
-   "autor": "American Academy of Actuaries (The Actuary Magazine)",
+   "autor": "The Actuary (revista de la Society of Actuaries). The ACA Risk Adjustment Program—A Critical Element in Assuring Market Stability and Affordability. Autor y fecha no vistos. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'American Academy of Actuaries (The Actuary Magazine)'",
    "anio": "s.f.",
    "huerfana": false
   },
@@ -1068,7 +1095,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Discovery Group delivers strong H1 results — Vitality shared-value model",
-   "autor": "Discovery Limited (vía FAnews/Insurance Biz, cobertura de resultados oficiales)",
+   "autor": "Discovery Limited (2026). Resultados interinos (seis meses al 31-dic-2025), comunicado del ~3-mar-2026: 'Discovery delivers strong interim performance as the Shared-Value model accelerates growth…'. Cobertura de InsuranceBiz/FAnews. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Discovery Limited (vía FAnews/Insurance Biz, cobertura de resultados oficiales)'",
    "anio": "2026",
    "huerfana": false
   },
@@ -1077,7 +1104,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "2024 Annual Report / Kaiser Permanente and Risant Health Report 2025 Financial Results",
-   "autor": "Kaiser Permanente (informe oficial)",
+   "autor": "Kaiser Permanente (2026, 6-feb). Kaiser Permanente and Risant Health report 2025 financial results (comunicado de prensa). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Kaiser Permanente (informe oficial)'",
    "anio": "2024-2025",
    "huerfana": false
   },
@@ -1095,7 +1122,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Direct Primary Care: Applying Theory to Potential Changes in Delivery and Outcomes",
-   "autor": "JABFM (American Board of Family Medicine)",
+   "autor": "Cole ES. Direct Primary Care: Applying Theory to Potential Changes in Delivery and Outcomes. Journal of the American Board of Family Medicine 2018;31(4):605-611. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'JABFM (American Board of Family Medicine)'",
    "anio": "2018",
    "huerfana": false
   },
@@ -1113,7 +1140,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Effectiveness of primary care gatekeeping: difference-in-differences evaluation of a pilot scheme in China",
-   "autor": "PMC (estudio cuasi-experimental, China)",
+   "autor": "Xu J, Powell-Jackson T, Mills A. Effectiveness of primary care gatekeeping: difference-in-differences evaluation of a pilot scheme in China. BMJ Global Health 2020;5(8):e002792. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (estudio cuasi-experimental, China)'",
    "anio": "2020",
    "huerfana": false
   },
@@ -1122,7 +1149,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Impact of GP gatekeeping on quality of care, and health outcomes, use, and expenditure: a systematic review",
-   "autor": "PMC (revisión sistemática)",
+   "autor": "Sripa P, Hayhoe B, Garg P, Majeed A, Greenfield G. Impact of GP gatekeeping on quality of care, and health outcomes, use, and expenditure: a systematic review. Br J Gen Pract. 2019;69(682):e294-e303. DOI 10.3399/bjgp19X702209 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'PMC (revisión sistemática)'",
    "anio": "2019",
    "huerfana": false
   },
@@ -1131,7 +1158,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Primary care capitation payments in the UK. An observational study",
-   "autor": "BMC Health Services Research",
+   "autor": "Rhys G, Beerstecher HJ, Morgan CL. Primary care capitation payments in the UK. An observational study. BMC Health Serv Res. 2010;10:156. DOI 10.1186/1472-6963-10-156 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'BMC Health Services Research'",
    "anio": "2010",
    "huerfana": false
   },
@@ -1167,7 +1194,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "CVS Health's Acquisition of Oak Street Health Reconfirms Market Viability of Private Equity Investment in Value-Based Payment Models for Pri",
-   "autor": "Cambridge Core (American Journal of Law & Medicine)",
+   "autor": "Grant A. CVS Health's Acquisition of Oak Street Health Reconfirms Market Viability of Private Equity Investment in Value-Based Payment Models for Primary Care. American Journal of Law & Medicine, 2023 (publicado en línea 28-jun-2023). DOI 10.1017/amj.2023.20 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Cambridge Core (American Journal of Law & Medicine)'",
    "anio": "2023",
    "huerfana": false
   },
@@ -1194,7 +1221,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Ley N° 32323 — texto del artículo 58.1, literal e) del Código de Protección y Defensa del Consumidor; caso BBVA (Res. Final N° 083-2025/CC3,",
-   "autor": "INDECOPI / LP Derecho",
+   "autor": "Indecopi, Comisión de Protección al Consumidor N° 3 — Resolución Final N° 083-2025/CC3 (BBVA Perú), reportada por LP Derecho y Andina; texto del art. 58.1 lit. e) del Código de Protección y Defensa del Consumidor (mod. por Ley 32323). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'INDECOPI / LP Derecho'",
    "anio": "2025",
    "huerfana": false
   },
@@ -1239,7 +1266,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Investigating the presentation of uncertainty in an icon array: A randomized trial",
-   "autor": "Investigating the presentation of uncertainty in an icon array (autores no individualizados en el resumen)",
+   "autor": "Recchia, G.; Lawrence, A. C. E. & Freeman, A. L. J. (Winton Centre, Cambridge) — ⚠️ corregido 2026-10-03: el registro decía 'autores no individualizados'",
    "anio": "2021",
    "huerfana": false
   },
@@ -1248,8 +1275,8 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Study on consumers' decision-making in insurance services — A behavioural economics perspective",
-   "autor": "Comisión Europea",
-   "anio": "2019",
+   "autor": "Comisión Europea (con EIOPA) — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): el año era 2019; la página oficial de la Comisión da publicación el 27-oct-2017",
+   "anio": "2017",
    "huerfana": false
   },
   {
@@ -1257,7 +1284,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Some Explorations in Initial Interaction and Beyond: Toward a Developmental Theory of Interpersonal Communication (Uncertainty Reduction The",
-   "autor": "Berger, C.R. & Calabrese, R.J.",
+   "autor": "Berger CR, Calabrese RJ. Some Explorations in Initial Interaction and Beyond: Toward a Developmental Theory of Interpersonal Communication. Human Communication Research. 1975;1(2):99-112. DOI 10.1111/j.1468-2958.1975.tb00258.x — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Berger, C.R. & Calabrese, R.J.'",
    "anio": "1975",
    "huerfana": false
   },
@@ -1409,17 +1436,17 @@
    "id": "F-142",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Foot-in-the-door Mechanisms for Increasing Information Disclosure Online",
-   "autor": "International Journal of Electronic Commerce",
-   "anio": "2025",
+   "titulo": "Foot-in-the-door Mechanisms for Increasing Information Disclosure Online (International Journal of Electronic Commerce 30(1):62-81; en línea",
+   "autor": "Wu, X.; Wu, T.; Guo, X. & Yang, H. — ⚠️ corregido 2026-10-03: el registro ponía a la revista como autor y el año 2025",
+   "anio": "2026",
    "huerfana": false
   },
   {
    "id": "F-143",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Tell me more, tell me more: repeated personal data requests increase disclosure",
-   "autor": "Journal of Cybersecurity (Oxford Academic)",
+   "titulo": "Tell me more, tell me more: repeated personal data requests increase disclosure (Journal of Cybersecurity 9(1))",
+   "autor": "Fleming, P.; Edwards, S. G.; Bayliss, A. P. & Seger, C. R. (University of East Anglia) — ⚠️ corregido 2026-10-03: el registro ponía a la revista como autor",
    "anio": "2023",
    "huerfana": false
   },
@@ -1481,8 +1508,8 @@
    "id": "F-150",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Re-examining the chatBot Usability Scale (BUS-11) to assess user experience with customer relationship management chatbots",
-   "autor": "Personal and Ubiquitous Computing (Springer)",
+   "titulo": "Re-examining the chatBot Usability Scale (BUS-11) to assess user experience with customer relationship management chatbots (Personal and Ubi",
+   "autor": "Borsci, S. & Schmettow, M. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía a la revista como autor",
    "anio": "2024",
    "huerfana": false
   },
@@ -1509,7 +1536,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Drivers and Necessary Conditions for Chatbot Acceptance in the Insurance Industry — Analysis of policyholders' and professionals' Perspectiv",
-   "autor": "Taylor & Francis (revista académica)",
+   "autor": "de Andrés-Sánchez, J. & Gené-Albesa, J. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía a la editorial como autor",
    "anio": "2024",
    "huerfana": false
   },
@@ -1518,7 +1545,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Assessing Chatbot Acceptance in Policyholder's Assistance Through the Integration of Explainable Machine Learning and Importance–Performance",
-   "autor": "MDPI Electronics",
+   "autor": "Gené-Albesa, J. & de Andrés-Sánchez, J. (Universitat Rovira i Virgili) — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía a la editorial como autor",
    "anio": "2025",
    "huerfana": false
   },
@@ -1608,7 +1635,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "On the design of optimal parametric insurance (The Geneva Risk and Insurance Review)",
-   "autor": "Louaas, A. & Picard, P.",
+   "autor": "Louaas A, Picard P. On the design of optimal parametric insurance. Documento de trabajo HAL hal-04511811 (2024); según el preprint arXiv 2604.21372 que lo cita, publicado en The Geneva Risk and Insurance Review (2026), lo que no se confirmó en la página del editor. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Louaas, A. & Picard, P.'",
    "anio": "2026",
    "huerfana": true
   },
@@ -1706,8 +1733,8 @@
    "id": "F-175",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "An Experimental Study on Anchoring Effect of Consumers' Price Judgment Based on Consumers' Experiencing Scenes",
-   "autor": "(autores vía PMC/NCBI)",
+   "titulo": "An Experimental Study on Anchoring Effect of Consumers' Price Judgment Based on Consumers' Experiencing Scenes (Frontiers in Psychology)",
+   "autor": "Zong, Y. & Guo, X. (Tianjin University of Commerce) — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía 'autores vía PMC/NCBI'",
    "anio": "2022",
    "huerfana": false
   },
@@ -1715,9 +1742,9 @@
    "id": "F-176",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Price misleading advertising: Effects on trustworthiness toward the source of information and willingness to buy",
-   "autor": "(autor vía ResearchGate / revista académica)",
-   "anio": "s.f.",
+   "titulo": "Price misleading advertising: Effects on trustworthiness toward the source of information and willingness to buy (Journal of Product & Brand",
+   "autor": "Romani, S. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro ponía 'autor vía ResearchGate' y sin año",
+   "anio": "2006",
    "huerfana": false
   },
   {
@@ -1752,7 +1779,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The Economics of Insurance Intermediaries",
-   "autor": "Cummins, J.D. & Doherty, N.A.",
+   "autor": "Cummins JD, Doherty NA. The Economics of Insurance Intermediaries. Journal of Risk and Insurance. 2006;73(3):359-396. DOI 10.1111/j.1539-6975.2006.00180.x — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Cummins, J.D. & Doherty, N.A.'",
    "anio": "2006",
    "huerfana": false
   },
@@ -1779,7 +1806,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "Insurers Have a Digital Dilemma: Complex Claims",
-   "autor": "Bain & Company",
+   "autor": "Bain & Company (2023, 25-oct). Insurers Have a Digital Dilemma: Complex Claims (Snap Chart), con datos de NPS Prism. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Bain & Company'",
    "anio": "s.f.",
    "huerfana": false
   },
@@ -1851,7 +1878,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Determinants of Online Purchase Intention Toward Life Insurance in Malaysia: Moderating Role of Trust",
-   "autor": "Hanaysha, J.R., Chen, C.L., Abdul Rahim, N.F., Salamzadeh, Y. & Hasouneh, L.O.",
+   "autor": "Hanaysha, J. R., Chen, C. L., Abdul Rahim, N. F., Salamzadeh, Y. & Hasouneh, L. O. (2023). Determinants of Online Purchase Intention Toward Life Insurance in Malaysia: Moderating Role of Trust. Jindal Journal of Business Research, 12(2), 233-250. DOI 10.1177/22786821231189377. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Hanaysha, J.R., Chen, C.L., Abdul Rahim, N.F., Salamzadeh, Y. & Hasouneh, L.O.'",
    "anio": "2023",
    "huerfana": false
   },
@@ -1887,7 +1914,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "Analyzing Financial Trends Of Health Insurance In Q1 2025",
-   "autor": "Oliver Wyman",
+   "autor": "Oliver Wyman (Lambright, M.; Kaczmarek, P. & Rienstra, J.), may-2025 — ⚠️ datos bibliográficos verificados 2026-10-04 (regla permanente); antes: 'Oliver Wyman'",
    "anio": "2025",
    "huerfana": false
   },
@@ -1905,7 +1932,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Rate Review & the 80/20 Rule (Medical Loss Ratio)",
-   "autor": "HealthCare.gov (CMS) + Commonwealth Fund",
+   "autor": "(1) CMS / HealthCare.gov, 'Rate Review & the 80/20 Rule' (s.f.). (2) Hall, M.A. (Wake Forest) & McCue, M.J. (VCU) (jul-2019). How the ACA's Medical Loss Ratio Rule Protects Consumers and Insurers against Ongoing Uncertainty. Commonwealth Fund, Issue Brief. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'HealthCare.gov (CMS) + Commonwealth Fund'",
    "anio": "s.f. / 2019",
    "huerfana": false
   },
@@ -2292,7 +2319,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The impact of design thinking and its underlying theoretical mechanisms: A review (Creativity and Innovation Management)",
-   "autor": "Mayer, S. et al.",
+   "autor": "Mayer, S. & Schwemmle, M. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro decía 'Mayer, S. et al.'",
    "anio": "2025",
    "huerfana": false
   },
@@ -2399,8 +2426,8 @@
    "id": "F-252",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Evaluating health service outcomes of public involvement in health service design: a systematic review (BMC Health Services Research)",
-   "autor": "Varios",
+   "titulo": "Evaluating health service outcomes of public involvement in health service design in high-income countries: a systematic review (BMC Health ",
+   "autor": "Lloyd, N.; Kenny, A. & Hyett, N. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro decía 'Varios'",
    "anio": "2021",
    "huerfana": false
   },
@@ -2409,7 +2436,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "Triggering the Personalization Backfire Effect: The Moderating Role of Situational Privacy Concern (Behavioral Sciences, MDPI)",
-   "autor": "Varios",
+   "autor": "Kim, Hyeongseok; Han, Seunghee (Chung-Ang University). 2025. Triggering the Personalization Backfire Effect: The Moderating Role of Situational Privacy Concern. Behavioral Sciences (MDPI), 15(10), 1323. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Varios'",
    "anio": "2025",
    "huerfana": false
   },
@@ -2454,7 +2481,7 @@
    "type": "fuente",
    "rigor": "D",
    "titulo": "Generative Interfaces for Language Models",
-   "autor": "Chen, Zhang, Zhang, Shao & Yang",
+   "autor": "Chen, J.; Zhang, Y.; Zhang, Y.; Shao, Y.; Yang, D. (Stanford / Georgia Tech) (2025). Generative Interfaces for Language Models. arXiv:2508.19227 (v1-v2); figura además en ACL Anthology como Findings of ACL 2026 (2026.findings-acl.74, vista preliminar). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Chen, Zhang, Zhang, Shao & Yang'",
    "anio": "2025",
    "huerfana": false
   },
@@ -2508,8 +2535,8 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "The Business Case for Digital Accessibility",
-   "autor": "W3C Web Accessibility Initiative",
-   "anio": "s/f",
+   "autor": "W3C Web Accessibility Initiative (WAI), Education and Outreach Working Group (2018; publicado 9-nov-2018). The Business Case for Digital Accessibility. Editora: Sharron Rush. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'W3C Web Accessibility Initiative'",
+   "anio": "2018",
    "huerfana": true
   },
   {
@@ -2695,9 +2722,9 @@
   {
    "id": "F-285",
    "type": "fuente",
-   "rigor": "B",
+   "rigor": "C",
    "titulo": "Homogenization Problem in LLMs / Model collapse",
-   "autor": "Varios (arXiv)",
+   "autor": "Rios-Sialer, I. (arXiv 2601.06116, 'The Homogenization Problem in LLMs: Towards Meaningful Diversity in AI Safety') — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Varios (arXiv)'",
    "anio": "2026",
    "huerfana": false
   },
@@ -2976,7 +3003,7 @@
    "type": "fuente",
    "rigor": "D",
    "titulo": "IDEO invented 'human-centered design.' Can it survive an AI world?",
-   "autor": "Fortune",
+   "autor": "Fortune (Gordon, N.), 16-may-2026 — ⚠️ datos bibliográficos verificados 2026-10-04 (regla permanente); antes: 'Fortune'",
    "anio": "2026",
    "huerfana": false
   },
@@ -3111,7 +3138,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Triaging and Referring In Adjacent General and Emergency Departments (TRIAGE trial)",
-   "autor": "Autores del TRIAGE trial",
+   "autor": "Morreel S, et al. Triaging and referring in adjacent general and emergency departments (the TRIAGE trial): A cluster randomised controlled trial. PLoS One. 2021 (nov). Universidad de Amberes, Bélgica. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Autores del TRIAGE trial'",
    "anio": "s.f.",
    "huerfana": true
   },
@@ -3129,7 +3156,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Patient compliance with NHS 111 advice",
-   "autor": "Revisión rápida de evidencia, vía NCBI Bookshelf / PLOS One",
+   "autor": "Lewis J, Stone T, Simpson R, Jacques R, O'Keeffe C, Croft S, Mason S. Patient compliance with NHS 111 advice: Analysis of adult call and ED attendance data 2013-2017. PLoS One. 2021;16(5):e0251362. DOI 10.1371/journal.pone.0251362 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Revisión rápida de evidencia, vía NCBI Bookshelf / PLOS One'",
    "anio": "s.f.",
    "huerfana": true
   },
@@ -3138,17 +3165,17 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Do consumers perceive and trust health insurers within a system of managed competition as prudent buyers of care? (Health Economics, Policy ",
-   "autor": "Autores no especificados en el resumen",
-   "anio": "s.f.",
+   "autor": "Stolper, K. C. F.; Yildirim, I.; Boonen, L. H. H. M.; Schut, F. T. & Varkevisser, M. (Erasmus University Rotterdam) — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro decía 'Autores no especificados en el resumen' y año 's.f.'",
+   "anio": "2024",
    "huerfana": false
   },
   {
    "id": "F-335",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "A Measure of Trust in Insurers (Health Services Research)",
-   "autor": "Zheng, B. et al.",
-   "anio": "~2002",
+   "titulo": "Development of a scale to measure patients' trust in health insurers (Health Services Research 37(1):187-202)",
+   "autor": "Zheng, B.; Hall, M. A.; Dugan, E.; Kidd, K. E. & Levine, D. — ⚠️ corregido 2026-10-03 (autoría verificada contra el resumen oficial): el registro decía 'Zheng, B. et al.', '~2002' y el título 'A Measure of Trust in Insurers'",
+   "anio": "2002",
    "huerfana": false
   },
   {
@@ -3156,7 +3183,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "Exploring Trust in Health Insurers: Insights from Enrollees' Perceptions and Experiences (MDPI)",
-   "autor": "van der Hulst, F.J.P.; Huijgen, S.; Brabers, A.E.M.; de Jong, J.D.",
+   "autor": "van der Hulst, F.J.P.; Huijgen, S.; Brabers, A.E.M.; de Jong, J.D. (2025). Exploring Trust in Health Insurers: Insights from Enrollees' Perceptions and Experiences. Journal of Market Access & Health Policy (MDPI), 13(2), 29. Nivel. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'van der Hulst, F.J.P.; Huijgen, S.; Brabers, A.E.M.; de Jong, J.D.'",
    "anio": "2025",
    "huerfana": true
   },
@@ -3183,7 +3210,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "The Impact of Narrow and Tiered Networks on Costs, Access, Quality, and Patient Steering: A Systematic Review (Medical Care Research and Rev",
-   "autor": "Mazurenko, O.; Taylor, E.; Menachemi, N.",
+   "autor": "Mazurenko O, Taylor HL, Menachemi N. The Impact of Narrow and Tiered Networks on Costs, Access, Quality, and Patient Steering: A Systematic Review. Medical Care Research and Review. 2022;79(5):607-617. DOI 10.1177/10775587211055923 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Mazurenko, O.; Taylor, E.; Menachemi, N.'",
    "anio": "2022",
    "huerfana": true
   },
@@ -3192,7 +3219,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Enrollment In A Health Plan With A Tiered Provider Network Decreased Medical Spending By 5 Percent (Health Affairs)",
-   "autor": "Sinaiko, A.D.; Landrum, M.B.; Chernew, M.E.",
+   "autor": "Sinaiko AD, Landrum MB, Chernew ME. Enrollment In A Health Plan With A Tiered Provider Network Decreased Medical Spending By 5 Percent. Health Affairs. 2017;36(5):870-875. DOI 10.1377/hlthaff.2016.1087 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Sinaiko, A.D.; Landrum, M.B.; Chernew, M.E.'",
    "anio": "2017",
    "huerfana": true
   },
@@ -3201,7 +3228,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Estudio en Journal of Health Economics sobre disposición a pagar por continuidad y aversión a redes estrechas (PubMed 29940410)",
-   "autor": "Autores no especificados en el resumen",
+   "autor": "Higuera L, Carlin CS, Dowd B. Narrow provider networks and willingness to pay for continuity of care and network breadth. Journal of Health Economics. 2018;60:90-97. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Autores no especificados en el resumen'",
    "anio": "2018",
    "huerfana": true
   },
@@ -3273,7 +3300,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Investigación sobre EviCore (\"the dial\") — algoritmo ajustable de aseguradoras (Cigna, UnitedHealthcare, Aetna) para subir tasa de denegació",
-   "autor": "ProPublica",
+   "autor": "ProPublica y The Capitol Forum (2024, 23-oct). \"Not Medically Necessary\": Inside the Company Helping America's Biggest Health Insurers Deny Coverage for Care. ProPublica. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'ProPublica'",
    "anio": "2023-2024",
    "huerfana": true
   },
@@ -3300,8 +3327,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "What Are The Potential Savings From Steering Patients To Lower-Priced Providers? A Static Analysis (American Journal of Managed Care)",
-   "autor": "Desai, S.; Hatfield, L.A.; Hicks, A.L.; Chernew, M.E.; Mehrotra, A. (Harvard Medical School)",
-   "anio": "~2016",
+   "autor": "Desai S, Hatfield LA, Hicks AL, Chernew ME, Mehrotra A. What Are the Potential Savings From Steering Patients to Lower-Priced Providers? A Static Analysis. American Journal of Managed Care. 2019;25(7). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Desai, S.; Hatfield, L.A.; Hicks, A.L.; Chernew, M.E.; Mehrotra, A. (Harvard Medical School)'",
+   "anio": "2019",
    "huerfana": true
   },
   {
@@ -3363,7 +3390,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Elevating customer experience: A win-win for insurers and customers",
-   "autor": "McKinsey & Company",
+   "autor": "Lee, M., Natriello, T., S, A., Sanders, D. y Schiff, D. (21-sep-2023). Elevating customer experience: A win–win for insurers and customers. McKinsey & Company (Insurance Practice). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'McKinsey & Company'",
    "anio": "2023",
    "huerfana": false
   },
@@ -3498,7 +3525,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "The Insurtech Ecosystem in Latin America: 2025 Review and 2026 Outlook / LatAm Insurtech sector attracts US$90M in 1H26",
-   "autor": "Fundación Mapfre (Innovation/Insurtech LATAM)",
+   "autor": "MAPFRE (Innovación, 2026). The Insurtech Ecosystem in Latin America: 2025 Review and 2026 Outlook; datos del estudio 'Latam Insurtech Journey' de Digital Insurance LATAM (patrocinado por MAPFRE). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Fundación Mapfre (Innovation/Insurtech LATAM)'",
    "anio": "2025-2026",
    "huerfana": false
   },
@@ -3507,7 +3534,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Bancaseguros en la distribución (Mapfre) / Bancassurance: it's time to go digital (McKinsey)",
-   "autor": "Fundación Mapfre / McKinsey (Bancassurance)",
+   "autor": "MAPFRE Economics / Fundación MAPFRE (2024). El mercado asegurador latinoamericano en 2023; McKinsey & Company (2025). Informe Global de Seguros 2025: en busca del crecimiento en América Latina. (Además citado: McKinsey (2019) 'Bancassurance: it's time to go digital'). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Fundación Mapfre / McKinsey (Bancassurance)'",
    "anio": "2023-2025",
    "huerfana": false
   },
@@ -3516,8 +3543,8 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Bancaseguros: llegó la hora de ser digital",
-   "autor": "McKinsey & Company",
-   "anio": "s.f.",
+   "autor": "Bueno, João; Dinis, Bruno; Kotanko, Bernhard; Maggiora, Dario; Neves, Rui. Marzo 2019. Bancassurance: It's time to go digital / Bancaseguros: llegó la hora de ser digital. McKinsey & Company (benchmark de Finalta, bancos de 27 países, presentado en el Global Bancassurance Forum de Roma, 2T 2018). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'McKinsey & Company'",
+   "anio": "2019",
    "huerfana": false
   },
   {
@@ -4065,7 +4092,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Disruptive Innovation: An Intellectual History and Directions for Future Research (*Journal of Management Studies*)",
-   "autor": "Christensen, C. M., Raynor, M., McDonald, R. y coautores",
+   "autor": "Christensen, C. M.; McDonald, R.; Altman, E. J. & Palmer, J. E. — Journal of Management Studies 55(7):1043-1078 — ⚠️ corregido 2026-10-04 (regla permanente de datos bibliográficos): decía 'Christensen, Raynor, McDonald y coautores'; Raynor no es coautor",
    "anio": "2018",
    "huerfana": false
   },
@@ -4101,8 +4128,8 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Learning from innovation failures: a systematic review of the literature and research agenda (*Review of Managerial Science*)",
-   "autor": "Rhaiem, K. & Amara, N.",
-   "anio": "2019",
+   "autor": "Rhaiem, K. & Amara, N. — Review of Managerial Science 15(2):189-234 — ⚠️ corregido 2026-10-04 (regla permanente de datos bibliográficos): publicado en línea en 2019 y en número en 2021; revisa 53 artículos de 1980-2017",
+   "anio": "2019 (número: 2021)",
    "huerfana": false
   },
   {
@@ -4317,7 +4344,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Actividad agregada de corporate venture capital: **3.068 inversionistas corporativos activos**, 68% del valor global de deals de IA (2025); ",
-   "autor": "World of Corporate Venturing · Crunchbase News · CB Insights",
+   "autor": "Global Corporate Venturing (2026). World of Corporate Venturing 2026; CB Insights (2026). State of Venture 2025; Crunchbase News (2026) citando a Bain sobre participación de CVC en IA. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'World of Corporate Venturing · Crunchbase News · CB Insights'",
    "anio": "2025-2026",
    "huerfana": false
   },
@@ -4522,10 +4549,10 @@
   {
    "id": "F-488",
    "type": "fuente",
-   "rigor": "B",
-   "titulo": "Sycophantic AI decreases prosocial intentions and promotes dependence",
-   "autor": "Cheng, M. et al. (Stanford) — arXiv 2510.01395",
-   "anio": "2025-2026",
+   "rigor": "A",
+   "titulo": "Sycophantic AI decreases prosocial intentions and promotes dependence (Science 391(6792), 26-mar-2026; DOI 10.1126/science.aec8352; preprint",
+   "autor": "Cheng, M.; Lee, C.; Khadpe, P.; Yu, S.; Han, D. & Jurafsky, D. (Stanford) — ⚠️ corregido 2026-10-03: el registro lo tenía como preprint de arXiv sin revisión verificada",
+   "anio": "2026",
    "huerfana": false
   },
   {
@@ -4551,7 +4578,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "LLMs can persuade only psychologically susceptible humans on societal issues, via trust in AI and emotional appeals, amid logical fallacies",
-   "autor": "Autoría no capturada — arXiv 2604.16935",
+   "autor": "Carrillo, A.; Citraro, S.; Aghazhadeh Ardebili, A.; Taietta, E.; Rossetti, G.; Ferrara, E.; Veltri, G. A. & Stella, M. — arXiv 2604.16935 · ⚠️ corregido 2026-10-03: el registro decía 'autoría no capturada' y le atribuía cifras de otro estudio",
    "anio": "2026",
    "huerfana": false
   },
@@ -4757,8 +4784,8 @@
    "id": "F-514",
    "type": "fuente",
    "rigor": "A",
-   "titulo": "Design innovation and firm performance: Evidence from patent subtype analysis",
-   "autor": "Autoría no capturada — ScienceDirect",
+   "titulo": "Design innovation and firm performance: Evidence from patent subtype analysis (International Review of Economics & Finance, vol. 102)",
+   "autor": "Han, Z.; Tang, S. & Li, Z. — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): el registro decía 'Autoría no capturada — ScienceDirect'; verificado en el resumen oficial",
    "anio": "2025",
    "huerfana": false
   },
@@ -4767,7 +4794,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Generative AI and jobs: a refined global index of occupational exposure",
-   "autor": "ILO · Banco Mundial",
+   "autor": "Gmyrek, P., Berg, J., Kamiński, K., Konopczyński, F., Ładna, A., Nafradi, B., Rosłaniec, K. y Troszyński, M. (2025, mayo). Generative AI and jobs: A refined global index of occupational exposure. ILO Working Paper 140. OIT, Ginebra. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'ILO · Banco Mundial'",
    "anio": "2025",
    "huerfana": false
   },
@@ -4785,7 +4812,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Generative AI Makes Creative Output More Homogeneous",
-   "autor": "Autoría no capturada — ACM / Tilburg University",
+   "autor": "de Rooij, A. (Tilburg) & Biskjaer, M. M. (Aarhus) — aceptado en la European Conference on Cognitive Ergonomics (ECCE) 2026 — ⚠️ datos bibliográficos verificados 2026-10-04 (regla permanente); antes: 'Autoría no capturada — ACM / Tilburg University'",
    "anio": "2026",
    "huerfana": false
   },
@@ -4794,7 +4821,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Triggering the Personalization Backfire Effect: The Moderating Role of Situational Privacy Concern",
-   "autor": "Autoría no capturada — Behavioral Sciences (MDPI)",
+   "autor": "Kim, H., & Han, S. (2025). Triggering the Personalization Backfire Effect: The Moderating Role of Situational Privacy Concern. Behavioral Sciences, 15(10), 1323. https://doi.org/10.3390/bs15101323 — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Autoría no capturada — Behavioral Sciences (MDPI)'",
    "anio": "2025",
    "huerfana": false
   },
@@ -4803,7 +4830,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "How Persuasive Is Personalized Advertising? A Meta-Analytic Review of Experimental Evidence of the Effects of Personalization on Ad Effectiv",
-   "autor": "Autoría no capturada — Journal of Advertising / Taylor & Francis",
+   "autor": "Yeo, T. E. D.; Chu, T. H. & Li, Q. — Journal of Advertising Research 65(4):616-631 — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Autoría no capturada — Journal of Advertising'; metaanálisis de 53 estudios experimentales",
    "anio": "2025",
    "huerfana": false
   },
@@ -4839,7 +4866,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "Impact of web accessibility on cognitive engagement in individuals without disabilities: Evidence from a psychophysiological study",
-   "autor": "Autoría no capturada — PLOS ONE",
+   "autor": "Ekin, M., Krejtz, K., Duarte, C., Seixas Pereira, L., Marcus-Quinn, A., Krejtz, I., et al. (2025, 30-jul). Impact of web accessibility on cognitive engagement in individuals without disabilities: Evidence from a psychophysiological study. PLOS ONE. DOI 10.1371/journal.pone.0328552. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Autoría no capturada — PLOS ONE'",
    "anio": "2025",
    "huerfana": false
   },
@@ -4848,7 +4875,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Design thinking for innovation: context factors, process, and outcomes",
-   "autor": "Autoría no capturada — European Journal of Innovation Management",
+   "autor": "Rösch, N.; Tiberius, V. & Kraus, S. — European Journal of Innovation Management 26(7):160-176 — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Autoría no capturada'",
    "anio": "2023",
    "huerfana": false
   },
@@ -4857,7 +4884,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Innovation, Firm Performance, and Appropriation: A Meta-Analysis",
-   "autor": "Autoría no capturada — International Journal of Innovation Management (World Scientific)",
+   "autor": "Rousseau, M. B.; Mathias, B. D.; Madden, L. T. & Crook, T. R. — International Journal of Innovation Management 20(3) — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Autoría no capturada'",
    "anio": "2016",
    "huerfana": false
   },
@@ -4887,6 +4914,2454 @@
    "autor": "Metodo Viral (es/pt) y Lyssna (en), vistos solo por resumen de búsqueda; texto completo bloqueado por la red",
    "anio": "2025-2026",
    "huerfana": false
+  },
+  {
+   "id": "F-529",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Credicorp 4Q25 earnings release — cartera de innovación como % de ingresos ajustados por riesgo",
+   "autor": "Credicorp Ltd. (Form 6-K, resultados 4T25, SEC; resumen de búsqueda)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-530",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "DSM Integrated Annual Report — innovation sales",
+   "autor": "Royal DSM (informes anuales 2011, 2017 y 2019)",
+   "anio": "2011-2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-531",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Croda Full year results — New & Protected Products (NPP) como % de ventas",
+   "autor": "Croda International plc (resultados anuales 2014, 2016 y 2024)",
+   "anio": "2014-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-532",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Henkel innovation rate (participación en ventas de productos lanzados en los últimos años)",
+   "autor": "Henkel AG & Co. KGaA (vía resúmenes de prensa e informe 2017)",
+   "anio": "2017-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-533",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025",
+   "autor": "Gartner, Inc. (comunicado de prensa)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-534",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Usability ROI Declining, But Still Strong",
+   "autor": "Nielsen, J. (Nielsen Norman Group)",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-535",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Listas '40+ UX statistics 2026' y 'UX design trends 2026'",
+   "autor": "Agregadores de estadísticas UX/diseño 2026 (DesignRush, UXtweak, Searchlab, Riseup Labs, Agency Partner, Codewave; vistos por resumen de búsqueda)",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-536",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Six Steps For Justifying Better UX",
+   "autor": "Forrester Research (página del reporte; texto completo con muro de pago)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-537",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Unlocking success in digital transformations",
+   "autor": "McKinsey & Company (encuesta global)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-538",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Gartner Says Nearly Half of CIOs Are Planning to Deploy Artificial Intelligence (predicción: 85% de proyectos de IA con resultados erróneos ",
+   "autor": "Gartner, Inc. (comunicado de prensa, 13-feb-2018)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-539",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The GenAI Divide: State of AI in Business 2025",
+   "autor": "MIT NANDA (Challapally, Pease, Raskar, Chari et al.)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-540",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Do 70 per cent of all organizational change initiatives really fail?",
+   "autor": "Hughes, M. (Journal of Change Management), sobre Beer, M. & Nohria, N. (HBR, 2000)",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-541",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Startup Genome Report (650 startups, mayo de 2011)",
+   "autor": "Marmer, M., Herrmann, B. et al. (Startup Genome Project)",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-542",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "On the conversational persuasiveness of GPT-4 (Nature Human Behaviour; preprint arXiv 2024)",
+   "autor": "Salvi, F.; Horta Ribeiro, M.; Gallotti, R. & West, R.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-543",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus? (NBER WP w31122)",
+   "autor": "Horton, J. J.; Filippas, A. & Manning, B. S.",
+   "anio": "2023 (rev. 2026)",
+   "huerfana": false
+  },
+  {
+   "id": "F-544",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Out of One, Many: Using Language Models to Simulate Human Samples (Political Analysis 31(3):337-351)",
+   "autor": "Argyle, L. P.; Busby, E. C.; Fulda, N.; Gubler, J. R.; Rytting, C. & Wingate, D.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-545",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies (ICML 2023)",
+   "autor": "Aher, G. V.; Arriaga, R. I.; Kalai, A. T. (2023). Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies. Proceedings of the 40th ICML, PMLR 202:337-371. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Aher, G.; Arriaga, R. I. & Kalai, A. T.'",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-546",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Can AI language models replace human participants? (Trends in Cognitive Sciences)",
+   "autor": "Dillion, D.; Tandon, N.; Gu, Y.; Gray, K. (2023). Can AI language models replace human participants? Trends in Cognitive Sciences 27(7):597-600. doi:10.1016/j.tics.2023.04.008 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Dillion, D.; Tandon, N.; Gu, Y. & Gray, K.'",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-547",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Using LLMs for Market Research (HBS WP / SSRN 4395751)",
+   "autor": "Brand, J.; Israeli, A. & Ngwe, D.",
+   "anio": "2023 (rev. 2026)",
+   "huerfana": false
+  },
+  {
+   "id": "F-548",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Whose Opinions Do Language Models Reflect? (ICML 2023, PMLR 202)",
+   "autor": "Santurkar, S.; Durmus, E.; Ladhak, F.; Lee, C.; Liang, P. & Hashimoto, T.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-549",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Generative Agent Simulations of 1,000 People (arXiv 2411.10109)",
+   "autor": "Park, J. S.; Zou, C. Q.; Shaw, A.; Hill, B. M.; Cai, C.; Morris, M. R.; Willer, R.; Liang, P. & Bernstein, M. S.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-550",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Predicting Results of Social Science Experiments Using Large Language Models (preprint, Stanford)",
+   "autor": "Hewitt, L.; Ashokkumar, A.; Ghezae, I. & Willer, R.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-551",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Using cognitive psychology to understand GPT-3 (PNAS 120(6))",
+   "autor": "Binz, M. & Schulz, E.",
+   "anio": "2023",
+   "huerfana": true
+  },
+  {
+   "id": "F-552",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Synthetic Replacements for Human Survey Data? The Perils of Large Language Models (Political Analysis)",
+   "autor": "Bisbee, J.; Clinton, J. D.; Dorff, C.; Kenkel, B. & Larson, J. M.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-553",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Large language models that replace human participants can harmfully misportray and flatten identity groups (Nature Machine Intelligence; arX",
+   "autor": "Wang, A.; Morgenstern, J. & Dickerson, J. P.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-554",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Take Caution in Using LLMs as Human Surrogates: Scylla Ex Machina (arXiv 2410.19599)",
+   "autor": "Gao, Y.; Lee, D.; Burtch, G. & Fazelpour, S.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-555",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Artificial intelligence and illusions of understanding in scientific research (Nature 627:49-58)",
+   "autor": "Messeri, L. & Crockett, M. J.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-556",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Can AI Replace Human Subjects? A Large-Scale Replication of Psychological Experiments with LLMs (arXiv 2409.00128)",
+   "autor": "Cui, Z.; Li, N. & Zhou, H.",
+   "anio": "2024-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-557",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Large Language Models Do Not Simulate Human Psychology (arXiv 2508.06950)",
+   "autor": "Schröder, S.; Morgenroth, T.; Kuhl, U.; Vaquet, V. & Paaßen, B.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-558",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "When Synthetic Users Fail: A Cross-Domain Benchmark of LLM-Simulated Human Survey Responses (arXiv 2607.26348)",
+   "autor": "Chen, Zhu & Zheng (autoría completa no capturada)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-559",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "A Mega-Study of Digital Twins Reveals Strengths, Weaknesses and Opportunities for Further Improvement (arXiv 2509.19088; base Twin-2K-500, M",
+   "autor": "Peng, T.; Toubia, O. et al.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-560",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Questioning the Survey Responses of Large Language Models (NeurIPS 2024)",
+   "autor": "Dominguez-Olmedo, R.; Hardt, M. & Mendler-Dünner, C.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-561",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The threat of analytic flexibility in using large language models to simulate human data (arXiv 2509.13397)",
+   "autor": "Cummins, J.",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-562",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Validating LLMs in social science: Epistemic threats and emerging norms (arXiv 2607.07915)",
+   "autor": "Desai, Card & Jacobs (autoría completa no capturada)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-563",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A foundation model to predict and capture human cognition (Nature 644)",
+   "autor": "Binz, M.; Akata, E.; … Schulz, E.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-564",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Crítica de Centaur por sobreajuste (National Science Open, DOI 10.1360/nso/20250053)",
+   "autor": "Liu, W.; Ding, N. et al. (Zhejiang; título exacto no capturado)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-565",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Crítica de Centaur: 'Professor Jeffery Bowers calls new AI model of human mind absurd' (nota institucional; venue del análisis no verificado",
+   "autor": "Bowers, J. S. et al. (Universidad de Bristol)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-566",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Using large-scale experiments and machine learning to discover theories of human decision-making (Science 372:1209-1214)",
+   "autor": "Peterson, J. C.; Bourgin, D. D.; Agrawal, M.; Reichman, D. & Griffiths, T. L.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-567",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Modelling dataset bias in machine-learned theories of economic decision-making (Nature Human Behaviour 8)",
+   "autor": "Thomas, T.; Straub, D.; Tatai, F.; … Rothkopf, C. A. (2024). Modelling dataset bias in machine-learned theories of economic decision-making. Nature Human Behaviour 8(4):679-691. doi:10.1038/s41562-023-01784-6 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Thomas, T.; Straub, D.; Tatai, F.; … Rothkopf, C. A.'",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-568",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Measuring the Completeness of Economic Models (Journal of Political Economy 130(4):956-990)",
+   "autor": "Fudenberg, D.; Kleinberg, J.; Liang, A. & Mullainathan, S.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-569",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Machine Learning as a Tool for Hypothesis Generation (Quarterly Journal of Economics 139(2):751-827)",
+   "autor": "Ludwig, J. & Mullainathan, S.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-570",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "From Predictive Algorithms to Automatic Generation of Anomalies (NBER WP w32422)",
+   "autor": "Mullainathan, S. & Rambachan, A.",
+   "anio": "2024 (rev. 2025)",
+   "huerfana": false
+  },
+  {
+   "id": "F-571",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The emergence of economic rationality of GPT (PNAS 120(51) e2316205120)",
+   "autor": "Chen, Y.; Liu, T. X.; Shan, Y. & Zhong, S.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-572",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Human-like intuitive behavior and reasoning biases emerged in large language models but disappeared in ChatGPT (Nature Computational Science",
+   "autor": "Hagendorff, T.; Fabi, S. & Kosinski, M.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-573",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Do large language models show decision heuristics similar to humans? A case study using GPT-3.5 (Journal of Experimental Psychology: General",
+   "autor": "Suri, G.; Slater, L. R.; Ziaee, A.; Nguyen, M. (2024). Do large language models show decision heuristics similar to humans? A case study using GPT-3.5. Journal of Experimental Psychology: General 153(4):1066-1075. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Suri, G.; Slater, L. R.; Ziaee, A. & Nguyen, M.'",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-574",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "(Ir)rationality and cognitive biases in large language models (Royal Society Open Science, doi 10.1098/rsos.240255)",
+   "autor": "Macmillan-Scott, O.; Musolesi, M. (2024). (Ir)rationality and cognitive biases in large language models. Royal Society Open Science 11(6):240255. doi:10.1098/rsos.240255 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Macmillan-Scott, O. & Musolesi, M.'",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-575",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Evaluating large language models in theory of mind tasks (PNAS 121(45) e2405460121)",
+   "autor": "Kosinski, M.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-576",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Large Language Models Fail on Trivial Alterations to Theory-of-Mind Tasks (arXiv 2302.08399)",
+   "autor": "Ullman, T.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-577",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Testing theory of mind in large language models and humans (Nature Human Behaviour)",
+   "autor": "Strachan, J. W. A. et al. (2024). Testing theory of mind in large language models and humans. Nature Human Behaviour 8(7):1285-1295. doi:10.1038/s41562-024-01882-z — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Strachan, J. W. A. et al.'",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-578",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Sesgo de aversión a la pérdida en LLMs y literatura científica (arXiv 2608.12339)",
+   "autor": "Yechiam, E. & Tarabeih (autoría completa no capturada)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-579",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Delegation to artificial intelligence can increase dishonest behaviour (Nature)",
+   "autor": "Köbis, N.; Rahwan, Z.; … Bonnefon, J.-F. & Rahwan, I.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-580",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Generative AI at Work (Quarterly Journal of Economics)",
+   "autor": "Brynjolfsson, E.; Li, D. & Raymond, L.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-581",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Experimental evidence on the productivity effects of generative artificial intelligence (Science 381(6654))",
+   "autor": "Noy, S. & Zhang, W.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-582",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of Artificial Intelligence on Knowledge Worker Prod",
+   "autor": "Dell'Acqua, F.; McFowland, E.; Mollick, E. et al. (2023 working paper SSRN 4573321; 2026 Organization Science, número mar-abr 2026). Navigating the Jagged Technological Frontier. doi:10.1287/orsc.2025.21838. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Dell'Acqua, F.; McFowland, E.; Mollick, E. et al.'",
+   "anio": "2023 → 2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-583",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Algorithm aversion: People erroneously avoid algorithms after seeing them err (Journal of Experimental Psychology: General)",
+   "autor": "Dietvorst, B. J.; Simmons, J. P.; Massey, C. (2015). Algorithm aversion: People erroneously avoid algorithms after seeing them err. Journal of Experimental Psychology: General 144(1):114-126. doi:10.1037/xge0000033 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Dietvorst, B. J.; Simmons, J. P. & Massey, C.'",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-584",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Algorithm appreciation: People prefer algorithmic to human judgment (OBHDP 151:90-103)",
+   "autor": "Logg, J. M.; Minson, J. A. & Moore, D. A.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-585",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Persuading voters using human–artificial intelligence dialogues (Nature, dic-2025)",
+   "autor": "Lin, H.; Czarnek, G.; Lewis, B.; White, J. P.; Berinsky, A. J.; Costello, T.; Pennycook, G. & Rand, D. G.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-586",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Durably reducing conspiracy beliefs through dialogues with AI (Science)",
+   "autor": "Costello, T. H.; Pennycook, G. & Rand, D. G.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-587",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "How AI and Human Behaviors Shape Psychosocial Effects of Chatbot Use: A Longitudinal Randomized Controlled Study (arXiv 2503.17473)",
+   "autor": "Fang, C. M.; Liu, A. R.; … Maes, P.; Phang, J. et al. (OpenAI y MIT Media Lab)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-588",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Emotional Manipulation by AI Companions (HBS Working Paper)",
+   "autor": "De Freitas, J. et al.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-589",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Advertir sobre la adulación de la IA y su persuasión (arXiv 2607.25166)",
+   "autor": "Ye, Kraut & Rathje (autoría completa no capturada)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-590",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Automated Social Science: Language Models as Scientist and Subjects (NBER WP w32381)",
+   "autor": "Manning, B. S.; Zhu, K. & Horton, J. J.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-591",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Generative AI for Economic Research: Use Cases and Implications for Economists (Journal of Economic Literature 61(4):1281-1317)",
+   "autor": "Korinek, A.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-592",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Magentic Marketplace: An Open-Source Environment for Studying Agentic Markets (arXiv 2510.25779)",
+   "autor": "Microsoft Research (autoría completa no capturada)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-593",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "What Is Your AI Agent Buying? Evaluation, Implications and Emerging Questions for Agentic E-Commerce (arXiv 2508.02630)",
+   "autor": "Allouah, A.; Besbes, O. et al.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-594",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Algorithmic Collusion by Large Language Models (arXiv 2404.00806)",
+   "autor": "Fish, S.; Gonczarowski, Y. A. & Shorrer, R. I.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-595",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Large Language Models, Small Labor Market Effects (BFI Working Paper)",
+   "autor": "Humlum, A. & Vestergaard, E.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-596",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Machine behaviour (Nature 568:477-486)",
+   "autor": "Rahwan, I. et al.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-597",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Position: LLM Social Simulations Are a Promising Research Method (ICML 2025)",
+   "autor": "Anthis, J. R. et al. (2025). Position: LLM Social Simulations Are a Promising Research Method. Proceedings of the 42nd ICML, PMLR 267. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Anthis, J. R. et al.'",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-598",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The potential existential threat of large language models to online survey research (PNAS 122(47))",
+   "autor": "Westwood, S. J. (2025). The potential existential threat of large language models to online survey research. PNAS 122(47):e2518075122 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Westwood, S. J.'",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-599",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Scientists Use A.I. to Mimic the Mind, Warts and All",
+   "autor": "Zimmer, C. (The New York Times)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-600",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Researchers claim their AI model simulates the human mind. Others are skeptical",
+   "autor": "Science (sección de noticias), vía EBSCO",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-601",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "AI polls are fake polls",
+   "autor": "Silver, N. (Silver Bulletin)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-602",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "'It's kind of like magic': Why pollsters are replacing people with bots",
+   "autor": "New Statesman",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-603",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Synthetic respondents are the homoeopathy of market research",
+   "autor": "Conjointly (blog)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-604",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Nielsen Norman: synthetic users were too shallow to be useful against three real studies",
+   "autor": "Zurb Radar (resume a Nielsen Norman Group)",
+   "anio": "2024-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-605",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Synthetic respondents can't replace human measurement, finds Prolific study",
+   "autor": "Research Live (MRS)",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-606",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "LLMs could simulate human survey responses, finds study",
+   "autor": "Research Live (MRS)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-607",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Researchers secretly ran a massive unauthorized AI persuasion experiment on Reddit users",
+   "autor": "404 Media",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-608",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "A controversial experiment on Reddit reveals the persuasive powers of AI",
+   "autor": "NPR",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-609",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "ChatGPT-4o is coming back after massive GPT-5 backlash",
+   "autor": "Tom's Guide",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-610",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "In Search Of AI Psychosis",
+   "autor": "Alexander, S. (Astral Codex Ten)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-611",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Microsoft AI CEO Suleyman is worried about 'AI psychosis' and seemingly conscious AI",
+   "autor": "Fortune",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-612",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "72% of U.S. teens have used AI companions, study finds",
+   "autor": "TechCrunch (sobre encuesta de Common Sense Media)",
+   "anio": "2025",
+   "huerfana": true
+  },
+  {
+   "id": "F-613",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "El agentic commerce comienza a operar en LATAM",
+   "autor": "Forbes Argentina",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-614",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "A survey shows a need to bolster trust in agentic commerce",
+   "autor": "Digital Transactions (encuesta de Riskified)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-615",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Procrastination study by Duke's Dan Ariely retracted after sleuths find signs of data tampering",
+   "autor": "Retraction Watch",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-616",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "AI Thinks Like Us – Flaws and All: New Study Finds ChatGPT Mirrors Human Decision Biases in Half the Tests",
+   "autor": "INFORMS (comunicado de prensa)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-617",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "AI synthetic research startup Aaru raised a Series A at a $1B 'headline' valuation",
+   "autor": "TechCrunch",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-618",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "EY wealth research (case study)",
+   "autor": "Aaru (caso publicado por la empresa)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-619",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Latham advises Simile AI, Inc. on US$100 million Series A",
+   "autor": "Latham & Watkins",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-620",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Simile raises $200M Series B at $2B valuation to survey AI twins of consumers",
+   "autor": "Dealroom",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-621",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Electric Twin raises $10m in funding round",
+   "autor": "Research Live (MRS)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-622",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Artificial Societies raises $5.35M to make AI-powered social simulations universally accessible",
+   "autor": "Unite.AI",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-623",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Listen Labs raises $69M Series B",
+   "autor": "Pear VC",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-624",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Synthetic Research Breakthrough (Edge Audiences)",
+   "autor": "Qualtrics",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-625",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Meet Toluna's Next-Gen Synthetic Respondents (HarmonAIze Personas)",
+   "autor": "Toluna (Business Wire)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-626",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Synthetic Customers Earn Their Stripes",
+   "autor": "Bain & Company",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-627",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Synthetic data survey responses 'significantly different' to humans",
+   "autor": "Strat7 (vía Research Live)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-628",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "AI startup Aaru defends using artificial intelligence for polling",
+   "autor": "Semafor",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-629",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Final results for the years ended 31 March 2025 and 31 March 2026",
+   "autor": "Mind Gym plc (RNS, Bolsa de Londres)",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-630",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "McKinsey forecast: agentic commerce sales by 2030",
+   "autor": "McKinsey & Company (vía Digital Commerce 360)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-631",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027",
+   "autor": "Gartner, Inc. (comunicado de prensa)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-632",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "OpenAI's reversal on Instant Checkout",
+   "autor": "Webinterpret (resume The Information y TechCrunch)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-633",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "89% of merchants prepare for agentic commerce, only 3% see agent transactions",
+   "autor": "Forkast",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-634",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "AI-driven traffic surges across industries",
+   "autor": "Adobe (Adobe Analytics)",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-635",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Judge blocks Perplexity's AI bot from shopping on Amazon in early test of agentic commerce",
+   "autor": "GeekWire (y Bloomberg Law)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-636",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Shareholder letter Q2 2026",
+   "autor": "Lemonade, Inc. (Form 8-K)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-637",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Discovery's Vitality business reports explosive growth (resultados FY2026)",
+   "autor": "BusinessDay (Sudáfrica). 03-mar-2026. Discovery's Vitality business reports explosive growth (resultados interinos de Discovery Ltd, 6 meses a dic-2025). — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Discovery Ltd (vía BusinessDay)'",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-638",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Vitality extends members' life expectancy by up to five years",
+   "autor": "Vitality UK (con la London School of Economics)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-639",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "BofA AI and digital innovations fuel 30 billion client interactions",
+   "autor": "Bank of America (newsroom)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-640",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Cleo at $150M ARR (y actualización de arr.club)",
+   "autor": "Sacra",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-641",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Cash advance company Cleo AI agrees to pay $17 million as a result of FTC lawsuit charging it deceives consumers",
+   "autor": "Federal Trade Commission (FTC)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-642",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Investing robo-advisor Wealthfront sets terms for $450 million IPO",
+   "autor": "Renaissance Capital (sobre el S-1 de Wealthfront)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-643",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Authenticity checks: how we tested the most accurate method for identifying agentic AI",
+   "autor": "Prolific",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-644",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "AI bot threat to survey research",
+   "autor": "CloudResearch",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-645",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "RIMAC: How a Peruvian insurance company is scaling AI (caso docente)",
+   "autor": "IMD Business School",
+   "anio": "s/f",
+   "huerfana": false
+  },
+  {
+   "id": "F-646",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Systematic review of stepped wedge cluster randomized trials shows that design is particularly used to evaluate interventions during routine",
+   "autor": "Mdege, N. D.; Man, M.-S.; Taylor, C. A. & Torgerson, D. J.",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-647",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Studies of independence and conformity: I. A minority of one against a unanimous majority (Psychological Monographs: General and Applied, 70",
+   "autor": "Asch, S. E.",
+   "anio": "1956",
+   "huerfana": false
+  },
+  {
+   "id": "F-648",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Culture and conformity: A meta-analysis of studies using Asch's (1952b, 1956) line judgment task (Psychological Bulletin, 119(1):111-137)",
+   "autor": "Bond, R.; Smith, P. B.",
+   "anio": "1996",
+   "huerfana": false
+  },
+  {
+   "id": "F-649",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The power of social influence: A replication and extension of the Asch experiment (PLoS ONE, 18(11):e0294325)",
+   "autor": "Franzen, A.; Mader, S.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-650",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Behavioral study of obedience (Journal of Abnormal and Social Psychology, 67(4):371-378)",
+   "autor": "Milgram, S.",
+   "anio": "1963",
+   "huerfana": false
+  },
+  {
+   "id": "F-651",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Replicating Milgram: Would people still obey today? (American Psychologist, 64(1):1-11)",
+   "autor": "Burger, J. M.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-652",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Would you deliver an electric shock in 2015? Obedience in the experimental paradigm developed by Stanley Milgram in the 50 years following t",
+   "autor": "Doliński, D.; Grzyb, T.; Folwarczny, M.; Grzybała, P.; Krzyszycha, K.; Martynowska, K.; Trojanowski, J.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-653",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Meta-Milgram: An empirical synthesis of the obedience experiments (PLoS ONE, 9(4):e93927)",
+   "autor": "Haslam, N.; Loughnan, S.; Perry, G.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-654",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Identifying systematic disobedience in Milgram's obedience experiments: A meta-analytic review (Perspectives on Psychological Science, 3(4):",
+   "autor": "Packer, D. J.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-655",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "'Happy to have been of service': The Yale archive as a window into the engaged followership of participants in Milgram's 'obedience' experim",
+   "autor": "Haslam, S. A.; Reicher, S. D.; Millard, K.; McDonald, R.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-656",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Credibility and incredulity in Milgram's obedience experiments: A reanalysis of an unpublished test (Social Psychology Quarterly, 83(1):88-1",
+   "autor": "Perry, G.; Brannigan, A.; Wanner, R. A.; Stam, H.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-657",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Debunking the Stanford Prison Experiment (American Psychologist, 74(7):823-839)",
+   "autor": "Le Texier, T.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-658",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Rethinking the nature of cruelty: The role of identity leadership in the Stanford Prison Experiment (American Psychologist, 74(7):809-822)",
+   "autor": "Haslam, S. A.; Reicher, S. D.; Van Bavel, J. J.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-659",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The bystander-effect: A meta-analytic review on bystander intervention in dangerous and non-dangerous emergencies (Psychological Bulletin, 1",
+   "autor": "Fischer, P.; Krueger, J. I.; Greitemeyer, T.; Vogrincic, C.; Kastenmüller, A.; Frey, D.; et al.",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-660",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Would I be helped? Cross-national CCTV footage shows that intervention is the norm in public conflicts (American Psychologist, 75(1):66-75)",
+   "autor": "Philpot, R.; Liebst, L. S.; Levine, M.; Bernasco, W.; Lindegaard, M. R.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-661",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "A study of some social factors in perception (Archives of Psychology, 27(187))",
+   "autor": "Sherif, M.",
+   "anio": "1935",
+   "huerfana": false
+  },
+  {
+   "id": "F-662",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Cognitive consequences of forced compliance (Journal of Abnormal and Social Psychology, 58(2):203-210)",
+   "autor": "Festinger, L.; Carlsmith, J. M.",
+   "anio": "1959",
+   "huerfana": false
+  },
+  {
+   "id": "F-663",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A multilab replication of the induced-compliance paradigm of cognitive dissonance (Advances in Methods and Practices in Psychological Scienc",
+   "autor": "Vaidis, D. C.; Sleegers, W. W. A.; van Leeuwen, F.; DeMarree, K. G.; Sætrevik, B.; Ross, R. M.; Schmidt, K.; Protzko, J.; et al.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-664",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A room with a viewpoint: Using social norms to motivate environmental conservation in hotels (Journal of Consumer Research, 35(3):472-482)",
+   "autor": "Goldstein, N. J.; Cialdini, R. B.; Griskevicius, V.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-665",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A room with a viewpoint revisited: Descriptive norms and hotel guests' towel reuse behavior (PLoS ONE (2014), e104086)",
+   "autor": "Bohner, G.; Schlüter, L. E.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-666",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Temporal context calibrates interval timing (Nature Neuroscience, 13(8):1020-1026)",
+   "autor": "Jazayeri, M.; Shadlen, M. N.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-667",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The origin of Vierordt's law: The experimental protocol matters (PsyCh Journal, 10(5):732-741)",
+   "autor": "Glasauer, S.; Shi, Z.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-668",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How cognitive load affects duration judgments: A meta-analytic review (Acta Psychologica, 134:330-343)",
+   "autor": "Block, R. A.; Hancock, P. A.; Zakay, D.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-669",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How emotions colour our perception of time (Trends in Cognitive Sciences, 11(12):504-513)",
+   "autor": "Droit-Volet, S.; Meck, W. H.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-670",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Does time really slow down during a frightening event? (PLoS ONE, 2(12):e1295)",
+   "autor": "Stetson, C.; Fiesta, M. P.; Eagleman, D. M.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-671",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Attention and the subjective expansion of time (Perception & Psychophysics, 66(7):1171-1189)",
+   "autor": "Tse, P. U.; Intriligator, J.; Rivest, J.; Cavanagh, P.",
+   "anio": "2004",
+   "huerfana": false
+  },
+  {
+   "id": "F-672",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "OR Forum—Perspectives on Queues: Social Justice and the Psychology of Queueing (Operations Research, 35(6):895-905)",
+   "autor": "Larson, R. C.",
+   "anio": "1987",
+   "huerfana": false
+  },
+  {
+   "id": "F-673",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Consumer perception and evaluation of waiting time: A field experiment (Journal of Consumer Psychology, 12(3):193-202)",
+   "autor": "Antonides, G.; Verhoef, P. C.; van Aalst, M.",
+   "anio": "2002",
+   "huerfana": false
+  },
+  {
+   "id": "F-674",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Faster progress bars: manipulating perceived duration with visual augmentations (Proceedings of CHI 2010 (ACM SIGCHI Conference on Human Fac",
+   "autor": "Harrison, C.; Yeo, Z.; Hudson, S. E.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-675",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Synaesthesia — A window into perception, thought and language (Journal of Consciousness Studies, 8(12):3-34)",
+   "autor": "Ramachandran, V. S.; Hubbard, E. M.",
+   "anio": "2001",
+   "huerfana": false
+  },
+  {
+   "id": "F-676",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The bouba/kiki effect is robust across cultures and writing systems (Philosophical Transactions of the Royal Society B, 377(1841))",
+   "autor": "Ćwiek, A.; Fuchs, S.; Draxler, C.; Asu, E. L.; Dediu, D.; et al.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-677",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Crossmodal correspondences: A tutorial review (Attention, Perception, & Psychophysics, 73:971-995)",
+   "autor": "Spence, C.",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-678",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Universal patterns in color-emotion associations are further shaped by linguistic and geographic proximity (Psychological Science, 31(10):12",
+   "autor": "Jonauskaite, D.; Abu-Akel, A.; Dael, N.; et al.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-679",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Color and psychological functioning: The effect of red on performance attainment (Journal of Experimental Psychology: General, 136(1):154-16",
+   "autor": "Elliot, A. J.; Maier, M. A.; Moller, A. C.; Friedman, R.; Meinhardt, J.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-680",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Limited evidence for the effect of red color on cognitive performance: A meta-analysis (Psychonomic Bulletin & Review, 27(6):1374-1382)",
+   "autor": "Gnambs, T.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-681",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A century of Gestalt psychology in visual perception: I. Perceptual grouping and figure-ground organization (Psychological Bulletin, 138(6):",
+   "autor": "Wagemans, J.; Elder, J. H.; Kubovy, M.; Palmer, S. E.; Peterson, M. A.; Singh, M.; von der Heydt, R.",
+   "anio": "2012",
+   "huerfana": false
+  },
+  {
+   "id": "F-682",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Gorillas in our midst: Sustained inattentional blindness for dynamic events (Perception, 28:1059-1074)",
+   "autor": "Simons, D. J.; Chabris, C. F.",
+   "anio": "1999",
+   "huerfana": false
+  },
+  {
+   "id": "F-683",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Failure to detect changes to people during a real-world interaction (Psychonomic Bulletin & Review, 5(4):644-649)",
+   "autor": "Simons, D. J.; Levin, D. T.",
+   "anio": "1998",
+   "huerfana": false
+  },
+  {
+   "id": "F-684",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The neural basis of the Weber–Fechner law: a logarithmic mental number line (Trends in Cognitive Sciences, 7(4):145-147)",
+   "autor": "Dehaene, S.",
+   "anio": "2003",
+   "huerfana": false
+  },
+  {
+   "id": "F-685",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Variability and stability in the McGurk effect: contributions of participants, stimuli, time, and response type (Psychonomic Bulletin & Revi",
+   "autor": "Basu Mallick, D.; Magnotti, J. F.; Beauchamp, M. S.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-686",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The noisy encoding of disparity model of the McGurk effect (Psychonomic Bulletin & Review, 22(3):701-709)",
+   "autor": "Magnotti, J. F.; Beauchamp, M. S.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-687",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Half a century of research on the Stroop effect: An integrative review (Psychological Bulletin, 109(2):163-203)",
+   "autor": "MacLeod, C. M.",
+   "anio": "1991",
+   "huerfana": false
+  },
+  {
+   "id": "F-688",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The reliability paradox: Why robust cognitive tasks do not produce reliable individual differences (Behavior Research Methods, 50(3):1166-11",
+   "autor": "Hedge, C.; Powell, G.; Sumner, P.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-689",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Grounded cognition (Annual Review of Psychology, 59:617-645)",
+   "autor": "Barsalou, L. W.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-690",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Six views of embodied cognition (Psychonomic Bulletin & Review, 9(4):625-636)",
+   "autor": "Wilson, M.",
+   "anio": "2002",
+   "huerfana": false
+  },
+  {
+   "id": "F-691",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A critical look at the embodied cognition hypothesis and a new proposal for grounding conceptual content (Journal of Physiology - Paris, 102",
+   "autor": "Mahon, B. Z.; Caramazza, A.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-692",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The poverty of embodied cognition (Psychonomic Bulletin & Review, 23:959-978)",
+   "autor": "Goldinger, S. D.; Papesh, M. H.; Barnhart, A. S.; Hansen, W. A.; Hout, M. C.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-693",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Experiencing physical warmth promotes interpersonal warmth (Science, 322(5901):606-607)",
+   "autor": "Williams, L. E.; Bargh, J. A.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-694",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Replication of \"Experiencing physical warmth promotes interpersonal warmth\" by Williams & Bargh (2008) (Social Psychology, 45(3):216-222)",
+   "autor": "Lynott, D.; Corker, K.; Wortman, J.; Connell, L.; Donnellan, M. B.; Lucas, R.; O'Brien, K. S.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-695",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tolerance (Psychological Science, 21(10):1363-1368)",
+   "autor": "Carney, D. R.; Cuddy, A. J. C.; Yap, A.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-696",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Assessing the robustness of power posing: No effect on hormones and risk tolerance in a large sample of men and women (Psychological Science",
+   "autor": "Ranehill, E.; Dreber, A.; Johannesson, M.; Leiberg, S.; Sul, S.; Weber, R. A.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-697",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "My position on \"Power Poses\" (Declaración en la web de la autora (UC Berkeley Haas), no publicada en revista)",
+   "autor": "Carney, D. R.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-698",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "P-curving a more comprehensive body of research on postural feedback reveals clear evidential value for power-posing effects: Reply to Simmo",
+   "autor": "Cuddy, A. J. C.; et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-699",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Inhibiting and facilitating conditions of the human smile: A nonobtrusive test of the facial feedback hypothesis (Journal of Personality and",
+   "autor": "Strack, F.; Martin, L. L.; Stepper, S.",
+   "anio": "1988",
+   "huerfana": false
+  },
+  {
+   "id": "F-700",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Registered Replication Report: Strack, Martin, & Stepper (1988) (Perspectives on Psychological Science, 11(6):917-928)",
+   "autor": "Wagenmakers, E.-J.; et al. (incl. Lynott, D.; Connell, L.)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-701",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A meta-analysis of the facial feedback literature: Effects of facial feedback on emotional experience are small and variable (Psychological ",
+   "autor": "Coles, N. A.; Larsen, J. T.; Lench, H. C.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-702",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A multi-lab test of the facial feedback hypothesis by the Many Smiles Collaboration (Nature Human Behaviour, 6(12):1731-1742)",
+   "autor": "Coles, N. A.; et al. (Many Smiles Collaboration)",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-703",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Weight as an embodiment of importance (Psychological Science, 20(9):1169-1174)",
+   "autor": "Jostmann, N. B.; Lakens, D.; Schubert, T. W.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-704",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Many Labs 3: Evaluating participant pool quality across the academic semester via replication (Journal of Experimental Social Psychology, 67",
+   "autor": "Ebersole, C. R.; et al.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-705",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Automaticity of social behavior: Direct effects of trait construct and stereotype activation on action (Journal of Personality and Social Ps",
+   "autor": "Bargh, J. A.; Chen, M.; Burrows, L.",
+   "anio": "1996",
+   "huerfana": false
+  },
+  {
+   "id": "F-706",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Behavioral priming: It's all in the mind, but whose mind? (PLoS ONE (ene-2012), e29081)",
+   "autor": "Doyen, S.; Klein, O.; Pichon, C.-L.; Cleeremans, A.",
+   "anio": "2012",
+   "huerfana": false
+  },
+  {
+   "id": "F-707",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Ego depletion: Is the active self a limited resource? (Journal of Personality and Social Psychology, 74(5):1252-1265)",
+   "autor": "Baumeister, R. F.; Bratslavsky, E.; Muraven, M.; Tice, D. M.",
+   "anio": "1998",
+   "huerfana": false
+  },
+  {
+   "id": "F-708",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A multilab preregistered replication of the ego-depletion effect (Perspectives on Psychological Science, 11(4):546-573)",
+   "autor": "Hagger, M. S.; Chatzisarantis, N. L. D.; et al. (64 autores)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-709",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A multisite preregistered paradigmatic test of the ego-depletion effect (Psychological Science, 32(10):1566-1581)",
+   "autor": "Vohs, K. D.; Schmeichel, B. J.; et al.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-710",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Washing away your sins: Threatened morality and physical cleansing (Science, 313(5792):1451-1452)",
+   "autor": "Zhong, C.-B.; Liljenquist, K.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-711",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Out, damned spot: Can the \"Macbeth Effect\" be replicated? (Basic and Applied Social Psychology, 36(1):91-98)",
+   "autor": "Earp, B. D.; Everett, J. A. C.; Madva, E. N.; Hamlin, J. K.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-712",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Estimating the reproducibility of psychological science (Science, 349(6251):aac4716)",
+   "autor": "Open Science Collaboration (270 autores)",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-713",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Investigating variation in replicability: A \"Many Labs\" replication project (Social Psychology, 45(3):142-152)",
+   "autor": "Klein, R. A.; et al.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-714",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Many Labs 2: Investigating variation in replicability across samples and settings (Advances in Methods and Practices in Psychological Scienc",
+   "autor": "Klein, R. A.; et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-715",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "When More Pain Is Preferred to Less: Adding a Better End (Psychological Science, 4(6):401-405)",
+   "autor": "Kahneman, D.; Fredrickson, B. L.; Schreiber, C. A.; Redelmeier, D. A.",
+   "anio": "1993",
+   "huerfana": false
+  },
+  {
+   "id": "F-716",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Patients' memories of painful medical treatments: real-time and retrospective evaluations of two minimally invasive procedures (Pain, 66(1):",
+   "autor": "Redelmeier, D. A.; Kahneman, D.",
+   "anio": "1996",
+   "huerfana": false
+  },
+  {
+   "id": "F-717",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Memories of colonoscopy: a randomized trial (Pain, 104(1-2):187-194)",
+   "autor": "Redelmeier, D. A.; Katz, J.; Kahneman, D.",
+   "anio": "2003",
+   "huerfana": false
+  },
+  {
+   "id": "F-718",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "All's well that ends (and peaks) well? A meta-analysis of the peak-end rule and duration neglect (Organizational Behavior and Human Decision",
+   "autor": "Alaybek, B.; Dalal, R. S.; Fyffe, S.; Aitken, J. A.; Zhou, Y.; Qu, X.; Roman, A.; Baines, J. I.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-719",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Attitudinal effects of mere exposure (Journal of Personality and Social Psychology, 9(2, Pt.2):1-27 (monografía))",
+   "autor": "Zajonc, R. B.",
+   "anio": "1968",
+   "huerfana": false
+  },
+  {
+   "id": "F-720",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A re-examination of the mere exposure effect: The influence of repeated exposure on recognition, familiarity, and liking (Psychological Bull",
+   "autor": "Montoya, R. M.; Horton, R. S.; Vevea, J. L.; Citkowicz, M.; Lauber, E. A.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-721",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Willingness to Pay-Willingness to Accept Gap, the \"Endowment Effect,\" Subject Misconceptions, and Experimental Procedures for Eliciting ",
+   "autor": "Plott, C. R.; Zeiler, K.",
+   "anio": "2005",
+   "huerfana": false
+  },
+  {
+   "id": "F-722",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The willingness to pay-willingness to accept gap: A failed replication of Plott and Zeiler (European Economic Review, 78:120-128)",
+   "autor": "Fehr, D.; Hakimov, R.; Kübler, D.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-723",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Loss of Loss Aversion: Will It Loom Larger Than Its Gain? (Journal of Consumer Psychology, 28(3):497-516)",
+   "autor": "Gal, D.; Rucker, D. D.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-724",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Moderating Loss Aversion: Loss Aversion Has Moderators, But Reports of its Death are Greatly Exaggerated (Journal of Consumer Psychology, 30",
+   "autor": "Mrkva, K.; Johnson, E. J.; Gächter, S.; Herrmann, A.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-725",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How to make loss aversion disappear and reverse: Tests of the decision by sampling origin of loss aversion (Journal of Experimental Psycholo",
+   "autor": "Walasek, L.; Stewart, N.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-726",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "No Evidence for Loss Aversion Disappearance and Reversal in Walasek and Stewart (2015) (Journal of Experimental Psychology: General, 150(12)",
+   "autor": "André, Q.; de Langhe, B.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-727",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Meta-analysis of Empirical Estimates of Loss Aversion (Journal of Economic Literature, 62(2):485-516)",
+   "autor": "Brown, A. L.; Imai, T.; Vieider, F. M.; Camerer, C. F.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-728",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Adding Asymmetrically Dominated Alternatives: Violations of Regularity and the Similarity Hypothesis (Journal of Consumer Research, 9(1):90-",
+   "autor": "Huber, J.; Payne, J. W.; Puto, C.",
+   "anio": "1982",
+   "huerfana": false
+  },
+  {
+   "id": "F-729",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Limits of Attraction (Journal of Marketing Research, 51(4):487-507)",
+   "autor": "Frederick, S.; Lee, L.; Baskin, E.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-730",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The IKEA effect: When labor leads to love (Journal of Consumer Psychology, 22(3):453-460)",
+   "autor": "Norton, M. I.; Mochon, D.; Ariely, D.",
+   "anio": "2012",
+   "huerfana": false
+  },
+  {
+   "id": "F-731",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The IKEA Effect. A Conceptual Replication (Journal of Marketing Behavior, 2(4):307-312)",
+   "autor": "Sarstedt, M.; Neubert, D.; Barth, K.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-732",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Reconstruction of automobile destruction: An example of the interaction between language and memory (Journal of Verbal Learning and Verbal B",
+   "autor": "Loftus, E. F.; Palmer, J. C.",
+   "anio": "1974",
+   "huerfana": false
+  },
+  {
+   "id": "F-733",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Planting misinformation in the human mind: A 30-year investigation of the malleability of memory (Learning & Memory, 12(4):361 (página final",
+   "autor": "Loftus, E. F.",
+   "anio": "2005",
+   "huerfana": false
+  },
+  {
+   "id": "F-735",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Time Discounting and Time Preference: A Critical Review (Journal of Economic Literature, 40(2):351-401)",
+   "autor": "Frederick, S.; Loewenstein, G.; O'Donoghue, T.",
+   "anio": "2002",
+   "huerfana": false
+  },
+  {
+   "id": "F-736",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Meta-Analysis of Present-Bias Estimation using Convex Time Budgets (The Economic Journal, 131:1788-1814 (fascículo no visto))",
+   "autor": "Imai, T.; Rutter, T. A.; Camerer, C. F.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-737",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The illusion of control (Journal of Personality and Social Psychology (1975; volumen y páginas no vistos en fuente oficial))",
+   "autor": "Langer, E. J.",
+   "anio": "1975",
+   "huerfana": false
+  },
+  {
+   "id": "F-738",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Recent developments in the experimental investigation of the illusion of control. A meta-analytic review (Journal of Applied Social Psycholo",
+   "autor": "Stefan, S.; David, D.",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-739",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Predicting Adolescent Cognitive and Self-Regulatory Competencies From Preschool Delay of Gratification: Identifying Diagnostic Conditions (D",
+   "autor": "Shoda, Y.; Mischel, W.; Peake, P. K.",
+   "anio": "1990",
+   "huerfana": false
+  },
+  {
+   "id": "F-740",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Revisiting the Marshmallow Test: A Conceptual Replication Investigating Links Between Early Delay of Gratification and Later Outcomes (Psych",
+   "autor": "Watts, T. W.; Duncan, G. J.; Quan, H.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-741",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Disfluent fonts don't help people solve math problems (Journal of Experimental Psychology: General, 144(2):e16-e30)",
+   "autor": "Meyer, A.; Frederick, S.; Burnham, T. C.; Guevara Pinto, J. D.; Boyer, T. W.; Ball, L. J.; Pennycook, G.; Ackerman, R.; Thompson, V. A.; Schuldt, J. P.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-742",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Persistent effect of El Niño on global economic growth (Science)",
+   "autor": "Callahan, C. W. & Mankin, J. S. (Dartmouth)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-743",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Fair weather or foul? The macroeconomic effects of El Niño (Journal of International Economics)",
+   "autor": "Mohaddes, K.; Cashin, P.; Raissi, M.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-744",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "El Niño adversely affected childhood stature and lean mass in northern Peru (Climate Change Responses, BMC)",
+   "autor": "Danysh, H. E.; Gilman, R. H.; Wells, J. C. K.; Pan, W. K.; Zaitchik, B.; Gonzálvez, G. et al.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-745",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The impact of early life shocks on human capital formation: evidence from El Niño floods in Ecuador (Journal of Health Economics, 62:13-44)",
+   "autor": "Rosales-Rueda, M. F.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-746",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "El Niño and children: Medium-term effects of early-life weather shocks on cognitive and health outcomes (World Development, 150)",
+   "autor": "Aguilar, A. & Vicarelli, M.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-747",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Effects of El Niño and ambient temperature on hospital admissions for diarrhoeal diseases in Peruvian children (The Lancet)",
+   "autor": "Checkley, W. et al.",
+   "anio": "2000",
+   "huerfana": false
+  },
+  {
+   "id": "F-748",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "El Niño and health (The Lancet, 362:1481-1489)",
+   "autor": "Kovats, R. S.; Bouma, M. J.; Hajat, S.; Worrall, E.; Haines, A.",
+   "anio": "2003",
+   "huerfana": false
+  },
+  {
+   "id": "F-749",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Global disease outbreaks associated with the 2015-2016 El Niño event (Scientific Reports)",
+   "autor": "Anyamba, A. et al.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-750",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Air quality and early-life mortality: Evidence from Indonesia's wildfires (Journal of Human Resources, 44(4))",
+   "autor": "Jayachandran, S.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-751",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Post-traumatic stress disorder, food insecurity, and social capital after the 2017 coastal El Niño flooding among mothers from Piura, Peru: ",
+   "autor": "Culquichicón, C.; Astudillo-Rueda, D.; Niño-García, R.; Martínez-Rivera, R. N.; Merino Tsui, N.; Gilman, R. H.; Levy, K.; Lescano, A. G.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-752",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Under the water: flood impacts and economic dynamics in northern Peru (Working Paper in Trade and Development 2025/07)",
+   "autor": "Cobian-Alvarez, J. & Resosudarmo, B. P. (ANU, Arndt-Corden Dept. of Economics)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-753",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Impact of natural disasters on household health and education expenditure: Evidence from El Niño phenomenon in Peru (Economía, PUCP)",
+   "autor": "Malpartida, R. & Guembes, M. (Universidad de Piura)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-754",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Effect of natural disasters on poverty transitions and consumption growth. Evidence for rural Perú",
+   "autor": "Fort, R.; Glave, M.; Rosemberg, C. (GRADE)",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-755",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Reflections on the impact and response to the Peruvian 2017 Coastal El Niño event: Looking to the past to prepare for the future (PLOS ONE 1",
+   "autor": "Yglesias-González, M.; Valdés-Velásquez, A.; Hartinger, S. M.; Takahashi, K.; … Lescano, A. G.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-756",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Civil conflicts are associated with the global climate (Nature, vol. 476)",
+   "autor": "Hsiang, S. M.; Meng, K. C.; Cane, M. A.",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-757",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Climate not to blame for African civil wars (PNAS)",
+   "autor": "Buhaug, H.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-758",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Drought and intimate partner violence towards women in 19 countries in sub-Saharan Africa during 2011-2018 (PLOS Medicine 17(3))",
+   "autor": "Epstein, A.; Bendavid, E.; Nash, D.; Charlebois, E. D.; Weiser, S. D.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-759",
+   "type": "fuente",
+   "rigor": "?",
+   "titulo": "Late Victorian Holocausts: El Niño Famines and the Making of the Third World (Verso)",
+   "autor": "Davis, M.",
+   "anio": "2001",
+   "huerfana": false
+  },
+  {
+   "id": "F-760",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Etnografía histórico-geográfica y estudio cualitativo de percepción de riesgo",
+   "autor": "Autoría no capturada — \"Water Gives, Water Takes Away. Memory, Agency and Resilience in ENSO-Vulnerable Historic Landscapes in Peru\" (repositorio PUCP) + tesis cualitativa sobre representación del riesgo de inundación en Piura 2017 (13 entrevistas, Univ. de Lieja)",
+   "anio": "s.f. (≈2017-2024)",
+   "huerfana": false
+  },
+  {
+   "id": "F-761",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Impacto del fenómeno El Niño de 1997-1998 en la salud de la población peruana / Informe de malaria, Perú",
+   "autor": "IGP (Ciencia Climática) / OPS (Malaria Report 2008, Perú)",
+   "anio": "2008-2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-762",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "FAO El Niño Situation Report",
+   "autor": "FAO (Situation Reports El Niño, mar-jul 2016)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-763",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Emergencia por impacto del Fenómeno \"El Niño Costero\" – Perú, 2017",
+   "autor": "INDECI / OPS-OMS Perú",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-764",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "¿Cómo impactó El Niño en Perú en los eventos de 1982-1983, 1997-1998 y 2017? / Las lecciones de El Niño (CAF)",
+   "autor": "CAF (vía Andina e IGP)",
+   "anio": "2000 (cit. 2023)",
+   "huerfana": false
+  },
+  {
+   "id": "F-765",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Economía peruana cayó 0,55% en 2023 / pobreza 2023",
+   "autor": "INEI / BCRP (vía Andina, La República, Forbes Perú, Infobae)",
+   "anio": "2023-2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-766",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Más de 440 muertos por dengue desde enero en Perú",
+   "autor": "AFP vía La Nación (Paraguay), Mongabay, Save the Children (sobre datos del CDC-MINSA)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-767",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Precio del limón se dispara en Perú; el ministro sugiere cambiar el ceviche por pollo; memes del \"limón como moneda\"",
+   "autor": "Expreso (Ecuador), 24horas (Chile), Ara (España), Infomercado (Perú)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-768",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Audios de WhatsApp anuncian lluvias y huaicos / Falso video de personas en pánico ante caída de huaico en Trujillo no es actual",
+   "autor": "El Comercio; El Búho (verificación)",
+   "anio": "2017-2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-769",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Críticas a la Reconstrucción con Cambios: obras sin ejecutar, vivienda \"Una Sola Fuerza\" abandonada, pedidos de balance de S/25 mil millones",
+   "autor": "El Búho, Expreso, El Comercio, Comunicaciones del Congreso, Mesa de Concertación (Piura)",
+   "anio": "2018-2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-770",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Contraloría sobre obras de El Niño: se ha gastado solo el 30%",
+   "autor": "Gestión (entrevista al contralor Nelson Shack)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-771",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Fenómenos Climatológicos 2024 — De qué manera el fenómeno del Niño afecta a los hogares peruanos",
+   "autor": "Kantar División Worldpanel Perú",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-772",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "6 de cada 10 peruanos están en riesgo de inundación por El Niño / \"Los economistas opinan\"",
+   "autor": "IPE (Instituto Peruano de Economía), vía Infomercado y Perú21",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-773",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Pagos de seguros por Fenómeno El Niño suman US$428 millones",
+   "autor": "APESEG / SBS vía Andina",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-774",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Reporte de Sostenibilidad 2017",
+   "autor": "Rímac Seguros y Reaseguros",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-775",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "La Positiva desarrolla seguros para la adaptación al cambio climático",
+   "autor": "Agraria.pe / Proactivo (sobre La Positiva Seguros)",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-776",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Peru starts second anchovy season after cancellation of first cost seafood industry over USD 1 billion / Austevoll's Peruvian arm suffers Q2",
+   "autor": "SeafoodSource; Undercurrent News",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-777",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Mango and lemon crops in Peru lost almost 90% of their blossom",
+   "autor": "FreshPlaza; El Búho (sobre la Cámara de Comercio y Producción de Piura, Camco)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-778",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Cajas otorgaron 1.000 millones en préstamos [a afectados por el Niño Costero]",
+   "autor": "Infomercado (sobre la FEPCMAC)",
+   "anio": "2017-2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-779",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Apeseg: solo 187 colegios de 50.000 tienen seguro ante desastres / declaraciones del presidente de APESEG",
+   "autor": "La Cámara (CCL), Caretas (sobre APESEG y Eduardo Morón)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-780",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Comunicado Oficial ENFEN N.° 16-2026 (14-set-2026): Alerta de El Niño Costero",
+   "autor": "ENFEN (Comisión Multisectorial; IMARPE, SENAMHI, IGP, DHN, ANA, INDECI) vía Infobae, Latina, Diario de Chimbote, Radio RSD",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-781",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "ENSO Diagnostic Discussion / El Niño Advisory (ago-set 2026)",
+   "autor": "NOAA Climate Prediction Center (vía cobertura secundaria)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-782",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "BCRP reduce a 3,2% su proyección de crecimiento por el impacto de El Niño extraordinario",
+   "autor": "BCRP (vía Caretas, Panamericana, Gestión)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-783",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Gobierno declara emergencia en varias regiones por el peligro de lluvias de El Niño / daños en Tumbes / Senamhi: lluvias excepcionales en Tu",
+   "autor": "Andina, Bloomberg Línea, Última Hora (EFE), El Peruano (sobre SENAMHI)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-784",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Natural Risk Prevention Plan 2025-2026",
+   "autor": "Rímac Seguros y Reaseguros",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-785",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Grupo RPP y Pacífico lanzan la campaña \"Fenómeno El Niño: más informados, más seguros\" / Preparados estamos más seguros: las iniciativas de ",
+   "autor": "RPP / Gestión (publirreportaje sobre Pacífico Seguros)",
+   "anio": "2023-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-786",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Reglamento de Seguros Paramétricos",
+   "autor": "SBS — Resolución SBS N.° 02260-2026 (vía El Peruano, LP Derecho, Infomercado)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-787",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Fenómeno El Niño: personas podrán protegerse de terremotos y lluvias con seguros más fáciles. ¿Cómo funcionan?",
+   "autor": "Gestión",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-788",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "MAPFRE launches new microinsurance line for small entrepreneurs in Latin America (Perú en 2026)",
+   "autor": "Coverager; MAPFRE (comunicación corporativa)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-789",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "La Positiva lanza \"Café Seguro Perú\"",
+   "autor": "Gestión (sobre La Positiva Seguros)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-790",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "MiCRO: bringing insurance solutions to Central America's vulnerable populations / parametric microinsurance",
+   "autor": "MiCRO (Microinsurance Catastrophe Risk Organisation) vía Howden, Insurance Insider y Actuaries Digital",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-791",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Learning about an Infrequent Event: Evidence from Flood Insurance Take-Up in the United States (American Economic Journal: Applied Economics",
+   "autor": "Gallagher, J.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-792",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "After the Drought: The Impact of Microinsurance on Consumption Smoothing and Asset Protection (American Journal of Agricultural Economics, 1",
+   "autor": "Janzen, S. A. & Carter, M. R.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-793",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Anticipatory Cash Transfers in Climate Disaster Response",
+   "autor": "Pople, A.; Hill, R.; Dercon, S.; Brunckhorst, B. (CSAE, Oxford; evaluación del PMA)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-794",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "\"El Niño\" 2026: ¿cómo nos preparamos para sus efectos en América Latina y el Caribe? / Naciones Unidas refuerza su apoyo a la preparación de",
+   "autor": "IFRC (Federación Internacional de la Cruz Roja) / ONU Perú vía El Peruano",
+   "anio": "2026",
+   "huerfana": true
+  },
+  {
+   "id": "F-795",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Prudential do Brasil lança produto exclusivo para doenças tropicais / Seguros Unimed registra aumento de 163% de autorizações relacionadas à",
+   "autor": "Revista Apólice (Brasil); Medicina S/A",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-796",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "¿Cuánto cuesta la atención y el tratamiento por dengue en una clínica privada sin seguro? / Dengue: SIS garantiza protección financiera",
+   "autor": "Infomercado; Andina (sobre el SIS)",
+   "anio": "2023",
+   "huerfana": true
+  },
+  {
+   "id": "F-797",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Record El Niño arrives as reinsurance pricing hits cycle lows",
+   "autor": "Insurance Business Magazine (con declaraciones del UK Met Office)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-798",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "New approaches for index insurance: ENSO insurance in Peru / ENSO-based index insurance for floods: statistical risk analyses and applicatio",
+   "autor": "Skees, J. R. & Collier, B. (GlobalAgRisk; IFPRI 2020 Vision Focus 18) · Khalil, A. F. et al.",
+   "anio": "2009-2010 (y 2007)",
+   "huerfana": false
+  },
+  {
+   "id": "F-799",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Barriers to Household Risk Management: Evidence from India (American Economic Journal: Applied Economics, 5(1):104-135)",
+   "autor": "Cole, S.; Giné, X.; Tobacman, J.; Topalova, P.; Townsend, R.; Vickery, J.",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-800",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Index Insurance for Developing Country Agriculture: A Reassessment (Annual Review of Resource Economics, 9:421-438)",
+   "autor": "Carter, M.; de Janvry, A.; Sadoulet, E.; Sarris, A.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-801",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Cláusula adicional de terremoto, temblor y riesgos de la naturaleza — Seguro Hogar Flex Digital",
+   "autor": "Pacífico Seguros",
+   "anio": "s.f. (vigente 2026)",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -4898,6 +7373,18 @@
   },
   {
    "s": "behavioral-design-estado-disciplina",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
    "recip": true
@@ -4940,7 +7427,19 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
   },
@@ -4963,8 +7462,56 @@
    "recip": true
   },
   {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "evaluacion-calidad-agentes-conversacionales-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "modelo-personas-sinteticas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
    "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "convergencia-psicologia-economia-ia",
    "k": "wikilink",
    "recip": true
   },
@@ -4976,6 +7523,66 @@
   },
   {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "modelo-personas-sinteticas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "modelo-salud-ia-farmacias-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "material-visual-venta-consultiva",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "modelo-personas-sinteticas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
    "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
@@ -5061,6 +7668,12 @@
   {
    "s": "material-visual-venta-consultiva",
    "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "material-visual-venta-consultiva",
+   "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
   },
@@ -5168,6 +7781,24 @@
   },
   {
    "s": "modelo-personas-sinteticas",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-personas-sinteticas",
+   "t": "fenomeno-el-nino-impacto-personas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-personas-sinteticas",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-personas-sinteticas",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -5175,6 +7806,12 @@
   {
    "s": "modelo-personas-sinteticas",
    "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "fenomeno-el-nino-impacto-personas",
    "k": "wikilink",
    "recip": true
   },
@@ -5252,7 +7889,25 @@
   },
   {
    "s": "seguros-comportamiento-mundo-peru",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "fenomeno-el-nino-impacto-personas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
   },
@@ -5324,7 +7979,19 @@
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
   },
@@ -5450,6 +8117,11 @@
    "k": "deriva"
   },
   {
+   "s": "informe-el-nino-oportunidades-rimac-2026-10-07.md",
+   "t": "fenomeno-el-nino-impacto-personas",
+   "k": "deriva"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-3",
    "k": "cita"
@@ -5480,6 +8152,11 @@
    "k": "cita"
   },
   {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-6",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-6",
    "k": "cita"
@@ -5506,6 +8183,11 @@
   },
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-9",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
    "t": "F-9",
    "k": "cita"
   },
@@ -5560,6 +8242,11 @@
    "k": "cita"
   },
   {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-16",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-16",
    "k": "cita"
@@ -5576,6 +8263,16 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-17",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-17",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
    "t": "F-17",
    "k": "cita"
   },
@@ -5626,6 +8323,11 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-20",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
    "t": "F-20",
    "k": "cita"
   },
@@ -5641,6 +8343,16 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-21",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-21",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
    "t": "F-21",
    "k": "cita"
   },
@@ -5675,6 +8387,21 @@
    "k": "cita"
   },
   {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-24",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-24",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-25",
+   "k": "cita"
+  },
+  {
    "s": "behavioral-design-estado-disciplina",
    "t": "F-27",
    "k": "cita"
@@ -5682,6 +8409,16 @@
   {
    "s": "conducta-humano-ia",
    "t": "F-27",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-27",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-29",
    "k": "cita"
   },
   {
@@ -5812,6 +8549,11 @@
   {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "F-78",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-80",
    "k": "cita"
   },
   {
@@ -6475,6 +9217,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-220",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-220",
    "k": "cita"
@@ -6482,6 +9229,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-220",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-221",
    "k": "cita"
   },
   {
@@ -6495,6 +9247,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-222",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-222",
    "k": "cita"
@@ -6502,6 +9259,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-222",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-223",
    "k": "cita"
   },
   {
@@ -6515,6 +9277,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-224",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-224",
    "k": "cita"
@@ -6525,6 +9292,11 @@
    "k": "cita"
   },
   {
+   "s": "fenomenos-psicologicos",
+   "t": "F-225",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-225",
    "k": "cita"
@@ -6532,6 +9304,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-225",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-226",
    "k": "cita"
   },
   {
@@ -6736,6 +9513,11 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-257",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
    "t": "F-257",
    "k": "cita"
   },
@@ -7775,6 +10557,11 @@
    "k": "cita"
   },
   {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-488",
+   "k": "cita"
+  },
+  {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
    "t": "F-488",
    "k": "cita"
@@ -7786,6 +10573,11 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-489",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
    "t": "F-489",
    "k": "cita"
   },
@@ -7835,6 +10627,11 @@
    "k": "cita"
   },
   {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-495",
+   "k": "cita"
+  },
+  {
    "s": "conducta-humano-ia",
    "t": "F-496",
    "k": "cita"
@@ -7856,6 +10653,11 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-499",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
    "t": "F-499",
    "k": "cita"
   },
@@ -7912,6 +10714,11 @@
   {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "F-507",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-508",
    "k": "cita"
   },
   {
@@ -8028,10 +10835,1445 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-528",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-529",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-530",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-531",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-532",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-533",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-534",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-535",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-536",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-537",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-538",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-539",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-540",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-541",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-542",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-542",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-543",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-544",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-545",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-545",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-546",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-547",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-548",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-549",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-550",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-552",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-553",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-554",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-555",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-556",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-557",
+   "k": "cita"
+  },
+  {
+   "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-557",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-558",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-559",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-560",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-561",
+   "k": "cita"
+  },
+  {
+   "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-561",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-562",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-563",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-564",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-565",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-566",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-567",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-568",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-569",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-570",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-571",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-572",
+   "k": "cita"
+  },
+  {
+   "s": "evaluacion-calidad-agentes-conversacionales-ia",
+   "t": "F-572",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-573",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-574",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-575",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-576",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-577",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-578",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-579",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-580",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-581",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-582",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-583",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-584",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-585",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-585",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-586",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-586",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-587",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-587",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-588",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-588",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-589",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-589",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-590",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-591",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-592",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-593",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-594",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-595",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-596",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-597",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-598",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-599",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-600",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-601",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-602",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-603",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-604",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-605",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-606",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-607",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-608",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-609",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-610",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-611",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-613",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-614",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-615",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-615",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-616",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-617",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-618",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-619",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-620",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-621",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-622",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-623",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-624",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-625",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-626",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-627",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-628",
+   "k": "cita"
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "F-629",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-629",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-630",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-631",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-632",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-633",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-634",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-634",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-635",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-636",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-636",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-637",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-637",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-638",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-638",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-639",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-640",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-641",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-642",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-643",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-644",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-645",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-646",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-647",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-648",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-649",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-650",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-651",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-652",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-653",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-654",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-655",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-656",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-657",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-658",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-659",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-660",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-661",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-662",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-663",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-664",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-665",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-666",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-667",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-668",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-669",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-670",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-671",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-672",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-673",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-674",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-675",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-676",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-677",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-678",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-679",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-680",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-680",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-681",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-682",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-683",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-684",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-685",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-686",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-687",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-688",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-689",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-690",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-691",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-692",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-693",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-694",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-695",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-696",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-697",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-698",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-699",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-700",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-701",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-702",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-703",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-704",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-705",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-706",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-707",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-708",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-709",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-710",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-711",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-712",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-713",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-714",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-715",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-716",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-717",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-718",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-719",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-720",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-721",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-722",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-723",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-724",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-725",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-726",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-727",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-728",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-729",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-730",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-731",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-732",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-733",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-735",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-736",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-737",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-738",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-739",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-740",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-741",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-742",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-743",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-744",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-745",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-746",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-747",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-748",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-749",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-750",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-751",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-752",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-752",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-753",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-754",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-755",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-756",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-757",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-758",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-759",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-760",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-761",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-762",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-763",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-764",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-765",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-766",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-767",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-768",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-769",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-770",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-771",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-772",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-773",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-773",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-774",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-775",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-776",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-777",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-778",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-779",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-780",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-781",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-782",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-783",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-784",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-785",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-786",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-787",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-788",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-789",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-790",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-791",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-792",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-793",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-795",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-797",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-798",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-799",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-800",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-801",
+   "k": "cita"
   }
  ],
  "meta": {
-  "generado": "2026-10-03",
+  "generado": "2026-10-07",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -8061,12 +12303,12 @@
     "fecha": "2026-07-06",
     "nuevas": 62,
     "acumuladas": 77,
-    "AB": 32,
+    "AB": 31,
     "rigor": {
-     "C": 10,
-     "B": 10,
+     "C": 11,
+     "B": 11,
      "D": 20,
-     "A": 22
+     "A": 20
     }
    },
    {
@@ -8194,11 +12436,11 @@
     "fecha": "2026-07-26",
     "nuevas": 92,
     "acumuladas": 328,
-    "AB": 30,
+    "AB": 29,
     "rigor": {
      "A": 21,
-     "C": 24,
-     "B": 9,
+     "C": 25,
+     "B": 8,
      "D": 25,
      "?": 5,
      "E": 8
@@ -8249,301 +12491,53 @@
     "acumuladas": 515,
     "AB": 20,
     "rigor": {
-     "B": 15,
+     "B": 14,
      "C": 21,
      "D": 4,
      "E": 1,
      "?": 1,
-     "A": 5
+     "A": 6
     }
    },
    {
     "fecha": "2026-10-03",
-    "nuevas": 13,
-    "acumuladas": 528,
-    "AB": 10,
+    "nuevas": 130,
+    "acumuladas": 645,
+    "AB": 56,
     "rigor": {
-     "A": 5,
-     "B": 5,
-     "C": 2,
+     "A": 40,
+     "B": 16,
+     "C": 48,
+     "D": 22,
+     "E": 4
+    }
+   },
+   {
+    "fecha": "2026-10-04",
+    "nuevas": 95,
+    "acumuladas": 740,
+    "AB": 94,
+    "rigor": {
+     "A": 90,
+     "B": 4,
      "D": 1
+    }
+   },
+   {
+    "fecha": "2026-10-07",
+    "nuevas": 60,
+    "acumuladas": 800,
+    "AB": 33,
+    "rigor": {
+     "A": 19,
+     "B": 14,
+     "?": 1,
+     "C": 3,
+     "D": 23
     }
    }
   ],
   "hist": [
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-13",
-    "commit": "8a90dc2",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-14",
-    "commit": "e0c9040",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-15",
-    "commit": "938a6a0",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-16",
-    "commit": "3acec5d",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-17",
-    "commit": "cf8c4a7",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-18",
-    "commit": "ccba768",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-19",
-    "commit": "bb8062c",
-    "fuente": "git"
-   },
    {
     "fuentes": 468,
     "rigor": {
@@ -10296,17 +14290,172 @@
      "cites": 259
     },
     "fecha": "2026-10-03",
-    "commit": "482b479",
+    "commit": "0781a57",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 528,
+    "rigor": {
+     "B": 96,
+     "A": 144,
+     "C": 123,
+     "D": 122,
+     "?": 14,
+     "E": 29
+    },
+    "nodes": 16,
+    "outputs": 4,
+    "wikilinks": 84,
+    "derivaciones": 11,
+    "fuentes_citadas_en_nodes": 423,
+    "diseno": {
+     "hyp": {
+      "abierta": 17,
+      "parcial": 13,
+      "refutada": 1,
+      "respaldada": 2,
+      "otra": 1
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 1948,
+     "cites": 259
+    },
+    "fecha": "2026-10-04",
+    "commit": "ab6bf54",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 528,
+    "rigor": {
+     "B": 96,
+     "A": 144,
+     "C": 123,
+     "D": 122,
+     "?": 14,
+     "E": 29
+    },
+    "nodes": 16,
+    "outputs": 4,
+    "wikilinks": 84,
+    "derivaciones": 11,
+    "fuentes_citadas_en_nodes": 423,
+    "diseno": {
+     "hyp": {
+      "abierta": 17,
+      "parcial": 13,
+      "refutada": 1,
+      "respaldada": 2,
+      "otra": 1
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 1948,
+     "cites": 259
+    },
+    "fecha": "2026-10-05",
+    "commit": "5416451",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 528,
+    "rigor": {
+     "B": 96,
+     "A": 144,
+     "C": 123,
+     "D": 122,
+     "?": 14,
+     "E": 29
+    },
+    "nodes": 16,
+    "outputs": 4,
+    "wikilinks": 84,
+    "derivaciones": 11,
+    "fuentes_citadas_en_nodes": 423,
+    "diseno": {
+     "hyp": {
+      "abierta": 17,
+      "parcial": 13,
+      "refutada": 1,
+      "respaldada": 2,
+      "otra": 1
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 1948,
+     "cites": 259
+    },
+    "fecha": "2026-10-06",
+    "commit": "944e196",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 588,
+    "rigor": {
+     "B": 110,
+     "A": 163,
+     "C": 126,
+     "D": 145,
+     "?": 15,
+     "E": 29
+    },
+    "nodes": 17,
+    "outputs": 5,
+    "wikilinks": 90,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 481,
+    "diseno": {
+     "hyp": {
+      "abierta": 17,
+      "parcial": 13,
+      "refutada": 1,
+      "respaldada": 2,
+      "otra": 1
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 1948,
+     "cites": 259
+    },
+    "fecha": "2026-10-07",
+    "commit": "9520c9d",
     "fuente": "git"
    }
   ],
   "design": {
    "hyp": {
-    "abierta": 17,
-    "parcial": 13,
-    "refutada": 1,
-    "respaldada": 2,
-    "otra": 1
+    "abierta": 15,
+    "parcial": 14,
+    "refutada": 4,
+    "respaldada": 2
    },
    "rules": 22,
    "rules_cited": 22,
@@ -10317,7 +14466,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 1948,
+   "lines": 2001,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

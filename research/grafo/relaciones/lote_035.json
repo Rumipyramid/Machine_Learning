@@ -1,0 +1,232 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-253",
+  "F-29",
+  "F-80",
+  "F-112",
+  "F-193",
+  "F-376",
+  "F-533",
+  "F-637"
+ ],
+ "entidades": [
+  {
+   "id": "preocupacion_privacidad_situacional",
+   "nombre": "Preocupación por la privacidad activada por la situación",
+   "tipo": "constructo"
+  },
+  {
+   "id": "lemonade_inc",
+   "nombre": "Lemonade Inc. (insurtech cotizada)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "lemonade_resultados_q1_2026",
+   "nombre": "Resultados Q1 2026 de Lemonade (ingresos +71%, pérdida neta US$35,8M)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "naic_org",
+   "nombre": "NAIC (Asociación Nacional de Comisionados de Seguros de EE.UU.)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "participacion_eeuu_primas_mundiales",
+   "nombre": "Participación de EE.UU. en las primas de seguros mundiales",
+   "tipo": "resultado"
+  },
+  {
+   "id": "atencion_primaria_singapur",
+   "nombre": "Sistema de atención primaria de Singapur (GP privados + policlínicas)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "chas_singapur",
+   "nombre": "Community Health Assist Scheme (CHAS): subsidio para atenderse con GP privados en Singapur",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "healthier_sg_singapur",
+   "nombre": "Healthier SG: inscripción con un médico de familia y plan de salud personalizado (Singapur)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "venta_digital_bancaseguros",
+   "nombre": "Venta de seguros por canales digitales en bancaseguros",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "agentes_ia_especificos_tarea",
+   "nombre": "Agentes de IA específicos a una tarea integrados en software",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "aplicaciones_empresariales",
+   "nombre": "Aplicaciones de software empresarial",
+   "tipo": "concepto"
+  },
+  {
+   "id": "vitality_discovery",
+   "nombre": "Programa Vitality de Discovery (incentivos por conducta saludable)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "utilidad_vitality_h1_fy2026",
+   "nombre": "Utilidad operativa normalizada de Vitality global, semestre a dic-2025 (R2.120M, +41%)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "preocupacion_privacidad_situacional",
+   "p": "modera",
+   "o": "personalizacion_publicidad",
+   "f": "F-253",
+   "apoyo": "Behavioral Sciences (MDPI) 2025, experimento 3×2 (N=360): la preocupación situacional por la privacidad invierte el efecto; con ella activada, el mensaje con PII no supera al genérico y rinde menos que el contextual.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "personalizacion_publicidad",
+   "p": "aumenta",
+   "o": "disposicion_compra",
+   "f": "F-253",
+   "apoyo": "Behavioral Sciences (MDPI) 2025: con baja preocupación por la privacidad, subir el nivel de personalización aumenta la intención de compra (efecto condicional, no general).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "lemonade_resultados_q1_2026",
+   "p": "origina_en",
+   "o": "lemonade_inc",
+   "f": "F-29",
+   "apoyo": "Lemonade, comunicado Q1 2026 (29-abr-2026): ingresos de US$258M (+71%), pérdida neta de US$35,8M (43% menor), prima en vigor de US$1.330M (+32%) y utilidad bruta de US$100M (+159%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "naic_org",
+   "p": "mide",
+   "o": "participacion_eeuu_primas_mundiales",
+   "f": "F-80",
+   "apoyo": "NAIC, Top International Insurance Markets (datos 2022): EE.UU. suma US$3.058.859M en primas (44,45% del mundo), seguido de China (10,14%), Reino Unido (5,28%) y Japón (4,91%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "chas_singapur",
+   "p": "parte_de",
+   "o": "atencion_primaria_singapur",
+   "f": "F-112",
+   "apoyo": "Ministerio de Salud de Singapur (s.f.): de más de 2.000 clínicas GP privadas, más de 1.300 son CHAS; más de 1.000 GP CHAS se organizan en 10 redes de atención primaria, junto a 26 policlínicas públicas subsidiadas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "healthier_sg_singapur",
+   "p": "aplica_a",
+   "o": "continuidad_atencion_primaria",
+   "f": "F-112",
+   "apoyo": "Ministerio de Salud de Singapur (s.f.): con Healthier SG, ciudadanos y residentes permanentes de 40+ años se inscriben en un GP o policlínica y trabajan con un médico de familia en un plan de salud personalizado.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "naic_org",
+   "p": "mide",
+   "o": "margen_salud_eeuu",
+   "f": "F-193",
+   "apoyo": "NAIC 2025 (informe semestral): la industria de salud de EE.UU. ganó US$8.900M de suscripción en el 1S 2025 (−26,5%), con margen de 1,8% (vs. 2,7%) y combined ratio de 98,7%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "margen_salud_eeuu",
+   "p": "respalda",
+   "o": "c_margen_compresion",
+   "f": "F-193",
+   "apoyo": "NAIC 2025: el margen cayó 0,9 pp interanual (2,7%→1,8%) y la utilidad neta 23,2% en el 1S 2025. Solo compara dos semestres, así que respalda la compresión puntual, no una tendencia larga.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "venta_digital_bancaseguros",
+   "p": "asocia_con",
+   "o": "crecimiento_ventas",
+   "f": "F-376",
+   "apoyo": "McKinsey 2019 (benchmark Finalta, bancos de 27 países): los campeones de crecimiento europeos venden por canal digital el doble de no-vida que sus pares y subieron 17% las ventas a clientes nuevos en 2016-2017.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "agentes_ia_especificos_tarea",
+   "p": "aplica_a",
+   "o": "aplicaciones_empresariales",
+   "f": "F-533",
+   "apoyo": "Gartner (comunicado, 26-ago-2025) pronostica que 40% de las apps empresariales integrarán agentes de IA específicos a tareas a fines de 2026, desde menos de 5% en 2025. Es predicción, no medición.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidad_vitality_h1_fy2026",
+   "p": "origina_en",
+   "o": "vitality_discovery",
+   "f": "F-637",
+   "apoyo": "BusinessDay (3-mar-2026): la utilidad normalizada del compuesto Vitality subió 41% a R2.100M en el semestre a dic-2025; 11,2 M de vidas fuera de China (+15%) y más de 34 M en China.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-253",
+   "detalle": "Autor registrado como 'Varios': son Hyeongseok Kim y Seunghee Han (Chung-Ang University). Faltan volumen/número/artículo: Behavioral Sciences 15(10), 1323.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-80",
+   "detalle": "La ficha da a EE.UU. ~US$3,22 billones de primas y 59,1% del mercado OECD. La NAIC dice US$3,06 billones (datos 2022) y 44,45% del mundo. Statista asocia el 59,1% de la OECD 2024 a US$1,76 billones. La ficha mezcla dos series y la cifra de 3,22 no aparece en ninguna fuente vista.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-80",
+   "detalle": "'EE.UU.+China+UK ≈ 55% de las primas globales' choca con la tabla de la NAIC, donde suman ~59,9% (44,45+10,14+5,28). La cifra de China '~EUR754bn' no sale de la NAIC (US$697.806M); parece de otra fuente (Allianz, EUR 745,6 mil M).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-80",
+   "detalle": "Año '2024-2025': la tabla de la NAIC vista es de datos 2022 y su fecha de publicación no consta.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-376",
+   "detalle": "'El modelo phygital (agente comunitario + digital) duplica la retención a primer año' no aparece en el resumen del artículo. El 'doble' de McKinsey es la venta digital de seguros no-vida de los bancos campeones europeos frente a sus pares. 'Phygital' viene de Capgemini (World Insurance Report 2021). El dato parece mal atribuido y además se lleva de Europa a mass market LatAm sin respaldo.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-376",
+   "detalle": "Año 's.f.': es de marzo de 2019; autores Bueno, Dinis, Kotanko, Maggiora y Neves.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-637",
+   "detalle": "La ficha da para Vitality R3.880M (+21%) y para el grupo R17.750M (+17%) en el 'FY2026'. El artículo en la URL cubre el interino (6 meses a dic-2025): Vitality R2.120M (+41%). Las cifras de la ficha no aparecen en la fuente; quizá son de otro periodo o documento.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-637",
+   "detalle": "Periodo mal rotulado: no son resultados FY2026 completos, sino el interino al 31-dic-2025, publicado el 3-mar-2026.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a N6 (grupo n6_1): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

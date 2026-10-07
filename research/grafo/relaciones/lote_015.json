@@ -1,0 +1,148 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-61",
+  "F-100",
+  "F-119",
+  "F-120",
+  "F-121"
+ ],
+ "entidades": [
+  {
+   "id": "tamano_surtido",
+   "nombre": "Tamaño del surtido (cuántas opciones se ofrecen)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "sobrecarga_eleccion",
+   "nombre": "Sobrecarga de elección (menos compra, satisfacción o confianza al haber más opciones)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_sobrecarga_general",
+   "nombre": "Más opciones empeoran la decisión de forma general",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "moderadores_sobrecarga",
+   "nombre": "Complejidad del surtido, dificultad de la tarea, incertidumbre de preferencias y meta de ahorrar esfuerzo",
+   "tipo": "concepto"
+  },
+  {
+   "id": "iyengar_lepper_2000",
+   "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "incentivos_financieros_salud",
+   "nombre": "Incentivos financieros para conductas de salud",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "conducta_salud",
+   "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "diseno_incentivo_conductual",
+   "nombre": "Diseño del incentivo con principios conductuales (aversión a la pérdida, inmediatez, puntos de referencia)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "cdss_prescripcion",
+   "nombre": "Soporte de decisión clínica en prescripción",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "precision_prescripcion",
+   "nombre": "Precisión de la decisión de prescripción",
+   "tipo": "resultado"
+  },
+  {
+   "id": "scheibehenne_2010",
+   "nombre": "Meta-análisis de sobrecarga de elección de Scheibehenne et al. (JCR 2010)",
+   "tipo": "estudio"
+  }
+ ],
+ "triples": [
+  {
+   "s": "iyengar_lepper_2000",
+   "p": "respalda",
+   "o": "c_sobrecarga_general",
+   "f": "F-121",
+   "apoyo": "Puesto de degustación con 24 vs. 6 mermeladas: con 24 se acercó más gente, pero se compró mucho más con 6. Las cifras 3% vs. 30% de la ficha no se confirmaron en los resúmenes.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "tamano_surtido",
+   "p": "asocia_con",
+   "o": "sobrecarga_eleccion",
+   "f": "F-119",
+   "apoyo": "Meta-análisis de 63 condiciones de 50 experimentos (N=5.036): efecto medio prácticamente cero con gran variación; a veces más opciones aumentan la satisfacción.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "scheibehenne_2010",
+   "p": "refuta",
+   "o": "c_sobrecarga_general",
+   "f": "F-119",
+   "apoyo": "No se halló ninguna condición suficiente para la sobrecarga; con preferencias claras, más opciones es mejor. El efecto general no se sostiene.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "moderadores_sobrecarga",
+   "p": "modera",
+   "o": "sobrecarga_eleccion",
+   "f": "F-120",
+   "apoyo": "99 observaciones (N=7.202): mayor complejidad del surtido, tarea más difícil, preferencias inciertas y meta de minimizar esfuerzo facilitan la sobrecarga; cada factor es fiable.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "diseno_incentivo_conductual",
+   "p": "modera",
+   "o": "incentivos_financieros_salud",
+   "f": "F-100",
+   "apoyo": "Revisión (BMC Public Health 2019): el efecto de un incentivo depende de rasgos como aversión a la pérdida, sobrevaloración de probabilidades pequeñas, descuento hiperbólico y puntos de referencia.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "incentivos_financieros_salud",
+   "p": "aumenta",
+   "o": "conducta_salud",
+   "f": "F-100",
+   "apoyo": "Según la ficha, el efecto es modesto y a menudo de corta duración; el resumen leído no da cifras y pide discutir la ética antes de implementarlos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cdss_prescripcion",
+   "p": "aumenta",
+   "o": "precision_prescripcion",
+   "f": "F-61",
+   "apoyo": "Tesis (City, 2012): 26 médicos generales, 20 casos (6 con consejo erróneo); la precisión subió de 50,4% a 58,3%, mejora neta de 8%.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "cdss_prescripcion",
+   "p": "aumenta",
+   "o": "sesgo_automatizacion",
+   "f": "F-61",
+   "apoyo": "En 5,2% de los casos el médico pasó de una decisión correcta a una incorrecta por seguir el consejo; influyen la confianza en el sistema, la confianza en sí mismo y la dificultad.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-60",
+   "detalle": "La ficha atribuye a la revisión sistemática (JAMIA 2012) 'tasas de sesgo de automatización de 5-7% en sistemas clínicos'. El resumen no da esa cifra; el 5,2% proviene de la tesis de la misma autora (F-61: 26 médicos generales, 20 casos de prescripción). La revisión cubre 74 estudios y halla mediadores de usuario, actitud y diseño."
+  }
+ ],
+ "notas": "Pase de profundidad (relaciones.py next --mejorar): 5 fuentes A del cerebro de diseño sin relaciones en el grafo. Resúmenes oficiales vía búsqueda. F-121: las cifras 3%/30% no se confirmaron. F-60: cifra mal atribuida (discrepancia)."
+}

@@ -1,0 +1,3 @@
+{"fecha": "2026-10-04", "f_ids": ["F-670"], "entidades": [], "triples": [
+ {"s": "stetson_2007_est", "p": "mide", "o": "resolucion_temporal_percibida", "f": "F-670", "apoyo": "Stetson et al. 2007 midieron la resolución temporal visual durante 31 m de caída libre con un dispositivo de muñeca: no aumentó con el miedo.", "lectura": "abstract", "fuerza": "causal"}],
+ "discrepancias": [], "notas": "Complemento del lote_045: relación que faltaba para el concepto resolucion_temporal_percibida (quedaba sin relaciones)."}

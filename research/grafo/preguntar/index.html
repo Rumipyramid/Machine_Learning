@@ -1,0 +1,567 @@
+<title>Pregúntale a Mu</title>
+<style>
+/* Layout: una columna, cabecera MU gigante, una caja de pregunta, respuestas debajo. Identidad: .claude/skills/mu/IDENTIDAD.md */
+:root{
+  --bg:#fff;--fg:#000;--acc:#ff3b00;--g2:#666;--g3:#bbb;--on-acc:#000;
+  --display:Impact,'Arial Black','Helvetica Neue',sans-serif;
+  --mono:ui-monospace,Menlo,Consolas,'Liberation Mono',monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--fg:#fff;--acc:#ff5a26;--g2:#999;--g3:#444;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#000;--fg:#fff;--acc:#ff5a26;--g2:#999;--g3:#444;color-scheme:dark}
+*{box-sizing:border-box;border-radius:0}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--mono);margin:0}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:0 48px}
+header{border-bottom:8px solid var(--fg);padding-block:14px 12px;display:flex;flex-wrap:wrap;align-items:flex-end;gap:6px 20px}
+h1{font:900 clamp(72px,18vw,150px)/.82 var(--display);letter-spacing:-.04em;margin:0}
+header p{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;max-width:34ch}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));border-bottom:2px solid var(--fg)}
+.st div{border-right:2px solid var(--fg);padding:8px 10px;min-width:0}
+.st div:last-child{border-right:0}
+.st b{display:block;font:900 26px/1 var(--display);letter-spacing:.01em}
+.st span{font-size:11px;text-transform:uppercase;color:var(--g2)}
+.st .lv b{color:var(--acc)}
+form{margin-top:22px;border:4px solid var(--fg)}
+label.lab{display:block;background:var(--fg);color:var(--bg);font:900 18px var(--display);letter-spacing:.05em;padding:6px 12px}
+textarea{display:block;width:100%;min-height:96px;resize:vertical;border:0;background:var(--bg);color:var(--fg);font:16px/1.45 var(--mono);padding:12px}
+textarea:focus-visible{outline:3px solid var(--acc);outline-offset:-3px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;border-top:2px solid var(--fg);padding:8px}
+.bar small{color:var(--g2);font-size:11px;min-width:0}
+button{font:900 18px var(--display);letter-spacing:.05em;border:0;cursor:pointer;padding:8px 16px;background:var(--fg);color:var(--bg)}
+button:hover,button:focus-visible{background:var(--acc);color:var(--on-acc);outline:none}
+button[disabled]{opacity:.45;cursor:not-allowed;background:var(--fg);color:var(--bg)}
+button.ghost{background:transparent;color:var(--fg);border:2px solid var(--fg);font-size:14px;padding:5px 10px}
+.sug{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.sug button{font:700 12px var(--mono);letter-spacing:0;text-transform:none;background:transparent;color:var(--fg);border:2px solid var(--fg);padding:5px 9px;text-align:left}
+.sug button:hover,.sug button:focus-visible{background:var(--fg);color:var(--bg)}
+.how{font-size:11px;color:var(--g2);margin-top:10px;max-width:72ch}
+#thread{margin-top:28px;display:grid;gap:22px}
+.q{font:900 22px/1.15 var(--display);letter-spacing:.01em;border-left:8px solid var(--fg);padding-left:10px;text-wrap:balance}
+.a{border:2px solid var(--fg);margin-top:8px}
+.a .h{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--fg);color:var(--bg);padding:4px 10px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.a .h button{font-size:12px;padding:2px 8px;background:var(--bg);color:var(--fg)}
+.a .b{padding:12px 14px;min-width:0;overflow-wrap:anywhere}
+.a .b p{margin:0 0 10px;max-width:72ch}.a .b p:last-child{margin-bottom:0}
+.a .b ul{margin:0 0 10px;padding:0;list-style:none}
+.a .b li{border-left:6px solid var(--g3);padding:1px 0 1px 10px;margin:4px 0;max-width:72ch}
+.a.err .b{border-left:8px solid var(--acc)}
+.think{color:var(--g2)}
+.think:after{content:"▮";animation:blink 1s steps(1) infinite;margin-left:4px;color:var(--acc)}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.think:after{animation:none}}
+.f{display:inline-block;font:700 11px var(--mono);background:var(--fg);color:var(--bg);border:0;padding:0 5px;margin:0 1px;letter-spacing:0;vertical-align:1px;cursor:pointer}
+.f:hover,.f:focus-visible{background:var(--acc);color:var(--on-acc)}
+.ev{border-top:2px solid var(--fg);padding:8px 14px;font-size:11px;color:var(--g2)}
+.ev b{color:var(--fg);text-transform:uppercase}
+#src{border:6px solid var(--fg);background:var(--bg);color:var(--fg);padding:0;width:min(560px,calc(100vw - 24px));max-height:80vh;overflow:auto;font:13px/1.45 var(--mono)}
+#src::backdrop{background:rgba(0,0,0,.5)}
+#src .h{display:flex;justify-content:space-between;align-items:center;background:var(--fg);color:var(--bg);padding:6px 10px}
+#src .h b{font:900 22px var(--display)}
+#src .h button{background:var(--bg);color:var(--fg);font-size:13px;padding:3px 9px}
+#src dl{margin:0;padding:10px 12px;display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:6px 10px}
+#src dt{font-size:11px;text-transform:uppercase;color:var(--g2)}
+#src dd{margin:0;overflow-wrap:anywhere}
+#src a{color:var(--fg)}
+
+.sem{border-top:2px solid var(--fg)}
+.sem .sh{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:6px 14px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--fg)}
+.sem .sh b{font:900 15px var(--display);letter-spacing:.04em;text-transform:none}
+.sem .cells{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr))}
+.sem .cell{border-right:2px solid var(--fg);border-bottom:2px solid var(--fg);margin-bottom:-2px;padding:8px 10px;min-width:0}
+.sem .cell .v{font:900 16px var(--display);letter-spacing:.03em}
+.sem .cell.rojo{background:var(--acc);color:var(--on-acc)}
+.sem .cell.rojo .m,.sem .cell.rojo .d{color:var(--on-acc)}
+.sem .cell .d{font-size:11px;font-weight:700;text-transform:uppercase;margin-top:2px}
+.sem .cell .m{font-size:11px;color:var(--g2);margin-top:2px}
+.sem .tn{padding:8px 14px;font-size:12px;border-top:2px solid var(--fg)}
+.sem .tn ul{margin:4px 0 0;padding:0;list-style:none}
+.sem .tn li{border-left:6px solid var(--acc);padding-left:8px;margin:4px 0}
+.sem .nt{padding:6px 14px 8px;font-size:11px;color:var(--g2);border-top:2px solid var(--fg)}
+/* backlog de temas y protocolo (alerta = único uso del naranja) */
+.alerta{margin-top:22px;background:var(--acc);color:var(--on-acc);border:4px solid var(--fg);padding:10px 12px}
+.alerta b{font:900 20px var(--display);letter-spacing:.03em;display:block}
+.alerta ul{margin:6px 0 0;padding:0;list-style:none}.alerta li{border-left:6px solid var(--on-acc);padding-left:8px;margin:4px 0;max-width:72ch}
+details.dd{margin-top:22px;border:2px solid var(--fg)}
+details.dd summary{cursor:pointer;list-style:none;display:block;padding:8px 12px;font:900 18px var(--display);letter-spacing:.04em}
+details.dd summary::-webkit-details-marker{display:none}
+details.dd summary:before{content:"▸ "}details.dd[open] summary:before{content:"▾ "}
+details.dd summary small{display:block;margin-top:2px;font:11px var(--mono);color:var(--g2);letter-spacing:0;text-transform:uppercase}
+details.dd summary:hover,details.dd summary:focus-visible{background:var(--fg);color:var(--bg);outline:none}
+details.dd summary:hover small,details.dd summary:focus-visible small{color:var(--bg)}
+.bl{list-style:none;margin:0;padding:0;border-top:2px solid var(--fg)}
+.bl li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;border-left:8px solid var(--g3);border-bottom:2px solid var(--fg);padding:8px 12px;min-width:0}
+.bl li.si{border-left-color:var(--fg)}.bl li.no{border-left-color:var(--acc)}
+.bl li.prot{background:var(--acc);color:var(--on-acc);border-left-color:var(--fg)}
+.bl .t{font-weight:700;overflow-wrap:anywhere}.bl .n{font:900 22px var(--display);text-align:right}
+.bl .m{grid-column:1/-1;font-size:11px;color:var(--g2);overflow-wrap:anywhere}.bl li.prot .m{color:var(--on-acc)}
+.bl-nota{font-size:11px;color:var(--g2);padding:8px 12px;margin:0}
+/* impacto: ¿te sirvió? + decisiones */
+.fb{border-top:2px solid var(--fg);padding:8px 14px;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:11px}
+.fb > b{text-transform:uppercase;letter-spacing:.05em;margin-right:4px}
+.fb button{font:700 12px var(--mono);letter-spacing:0;background:transparent;color:var(--fg);border:2px solid var(--fg);padding:4px 8px}
+.fb button:hover,.fb button:focus-visible{background:var(--fg);color:var(--bg)}
+.fb button.on{background:var(--fg);color:var(--bg)}
+.fb form{flex-basis:100%;margin:4px 0 0;border:2px solid var(--fg)}
+.fb form label{display:block;font-size:11px;text-transform:uppercase;padding:6px 8px 0}
+.fb form textarea,.fb form input{display:block;width:100%;border:0;border-bottom:2px solid var(--fg);background:var(--bg);color:var(--fg);font:14px/1.4 var(--mono);padding:6px 8px;min-height:0}
+.fb form textarea{min-height:56px}
+.fb form input:focus-visible{outline:3px solid var(--acc);outline-offset:-3px}
+.fb form .fbar{display:flex;justify-content:flex-end;gap:6px;padding:6px 8px}
+.fb .ok{color:var(--g2)}
+.im{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(120px,100%),1fr));border-top:2px solid var(--fg)}
+.im div{border-right:2px solid var(--fg);border-bottom:2px solid var(--fg);margin-bottom:-2px;padding:8px 10px;min-width:0}
+.im b{display:block;font:900 24px/1 var(--display)}.im span{font-size:11px;text-transform:uppercase;color:var(--g2)}
+.dec{list-style:none;margin:0;padding:0;border-top:2px solid var(--fg)}
+.dec li{border-left:8px solid var(--fg);border-bottom:2px solid var(--fg);padding:8px 12px;overflow-wrap:anywhere}
+.dec li small{display:block;font-size:11px;color:var(--g2)}
+footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:11px;color:var(--g2)}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>MU</h1>
+    <p>Pregúntale al segundo cerebro. Responde solo con lo que tiene guardado y cita cada fuente.</p>
+  </header>
+
+  <div class="st" id="st" aria-label="Estado de Mu">
+    <div class="lv"><b id="st-n">N5/7</b><span>nivel</span></div>
+    <div><b id="st-f">542</b><span>fuentes</span></div>
+    <div><b id="st-no">16</b><span>documentos</span></div>
+    <div><b id="st-s">9/9</b><span>salud</span></div>
+  </div>
+
+  <form id="ask" autocomplete="off">
+    <label class="lab" for="qbox">TU PREGUNTA</label>
+    <textarea id="qbox" placeholder="Ej.: ¿Funcionan los nudges en seguros?" maxlength="1200"></textarea>
+    <div class="bar">
+      <small id="hint">Mu busca en sus documentos y en su registro de fuentes antes de responder.</small>
+      <span style="display:flex;gap:8px"><button type="button" class="ghost" id="stop" hidden>DETENER</button><button type="submit" id="go">PREGUNTAR ↗</button></span>
+    </div>
+  </form>
+
+  <div class="sug" id="sug" aria-label="Preguntas de ejemplo">
+    <button type="button">¿Qué es lo más relevante hoy en diseño?</button>
+    <button type="button">¿Qué sabe Mu sobre la IA que da la razón a todo?</button>
+    <button type="button">¿Cómo está el mercado de seguros en Perú?</button>
+    <button type="button">¿Funcionan los nudges?</button>
+    <button type="button">¿Qué no sabe Mu todavía?</button>
+  </div>
+  <p class="how">Cada pregunta usa tu cuenta de Claude: la primera vez te pedirá permiso. Las etiquetas negras (<span class="f" style="cursor:default">F-16</span>) son fuentes del registro: tócalas para ver autor, año y rigor.</p>
+
+  <div class="alerta" id="alerta" hidden role="status"></div>
+  <details class="dd" id="backlog"><summary>BACKLOG DE TEMAS <small id="bl-sum">cargando…</small></summary>
+    <ul class="bl" id="bl-list"></ul>
+    <p class="bl-nota">Cada pregunta se clasifica en un tema y se marca si el cerebro lo cubre (✓ cubierto · ~ parcial · ✗ sin cobertura). Si un tema sin cobertura se pregunta más de 3 veces, se activa el protocolo: Mu avisa que debe investigarse como conocimiento nuevo con /trinidad. Sin cobertura = Mu no tiene el tema guardado o su respuesta no cita ninguna fuente.</p>
+  </details>
+  <details class="dd" id="impacto"><summary>IMPACTO MEDIDO <small id="im-sum">cargando…</small></summary>
+    <div class="im" id="im-cells"></div>
+    <ul class="dec" id="im-dec"></ul>
+    <p class="bl-nota">Mide si Mu sirve fuera del repositorio. Debajo de cada respuesta puedes marcar si te sirvió y, si decidiste o hiciste algo con ella, anotarlo. Las decisiones son autodeclaradas: dicen que alguien usó a Mu, no que la decisión fuera buena. Este registro alimenta el nivel N7 (Impacto) del panel.</p>
+  </details>
+
+  <div id="thread" aria-live="polite"></div>
+
+  <footer id="foot">Mu · segundo cerebro de investigación · índice generado el <span id="gen">—</span> · citar no es validar: Mu dice qué está verificado y qué es lectura de resumen.</footer>
+</div>
+
+<div id="src" popover>
+  <div class="h"><b id="src-id">F-</b><button type="button" popovertarget="src" popovertargetaction="hide">CERRAR ✗</button></div>
+  <dl id="src-dl"></dl>
+</div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const thread = $("#thread"), qbox = $("#qbox"), go = $("#go"), stop = $("#stop"), hint = $("#hint");
+  let CORPUS = null, IDX = null, FUENTES = new Map(), TENS = [], sample = null, sampleChecked = false, toolsOk = false, ctl = null;
+  const turns = []; // historial de la conversación (user/assistant)
+  // ---------- backlog de temas (db compartida del artefacto) ----------
+  const UMBRAL = 3; // el protocolo se activa con MÁS de 3 consultas sin cobertura sobre un tema
+  let DB = null, USER = null, dbState = "pendiente", canWrite = true, CONS = [], TEMAS = new Map(), USOS = [];
+
+  // ---------- búsqueda ----------
+  const STOP = new Set("para por con sin una uno unos unas los las del que qué como cómo cual cuál cuales cuando donde dónde este esta estos estas ese esa eso hay muy más mas pero porque sobre entre desde hasta tiene tienen ser son fue fueron está están han hoy todo toda todos todas cada sus nos les lo la el en de y o a se al es su sí no the and for with from that this are was were have has not but you your".split(" "));
+  const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  const toks = s => norm(s).split(/[^a-z0-9ñ\-]+/).filter(t => t.length > 2 && !STOP.has(t)).map(t => /^f-\d+$/.test(t) ? t : t.slice(0, 6));
+  function buildIndex(docs, textOf) {
+    const df = new Map(), lens = [], tfs = [];
+    for (const d of docs) {
+      const tf = new Map(); const ts = toks(textOf(d));
+      for (const t of ts) tf.set(t, (tf.get(t) || 0) + 1);
+      for (const t of tf.keys()) df.set(t, (df.get(t) || 0) + 1);
+      tfs.push(tf); lens.push(ts.length || 1);
+    }
+    const avg = lens.reduce((a, b) => a + b, 0) / Math.max(1, lens.length);
+    return { docs, df, tfs, lens, avg, N: docs.length };
+  }
+  function search(ix, q, k) {
+    const qt = [...new Set(toks(q))]; if (!qt.length) return [];
+    const out = [];
+    for (let i = 0; i < ix.N; i++) {
+      let s = 0; const tf = ix.tfs[i];
+      for (const t of qt) {
+        const f = tf.get(t); if (!f) continue;
+        const idf = Math.log(1 + (ix.N - ix.df.get(t) + .5) / (ix.df.get(t) + .5));
+        s += idf * (f * 2.2) / (f + 1.2 * (.25 + .75 * ix.lens[i] / ix.avg));
+      }
+      if (s > 0) out.push([s, i]);
+    }
+    return out.sort((a, b) => b[0] - a[0]).slice(0, k).map(([s, i]) => ix.docs[i]);
+  }
+  const fuenteTxt = f => `${f.id} | ${f.autor} | ${f.anio} | ${f.titulo} | Rigor: ${f.rigor} | ${f.resumen}`;
+  function retrieve(q) {
+    const nodes = search(IDX.nodes, q, 9);
+    const fs = search(IDX.fuentes, q, 7);
+    const ids = new Set(fs.map(f => f.id));
+    for (const c of nodes) for (const m of c.texto.matchAll(/F-(\d+)/g)) { if (ids.size >= 22) break; if (FUENTES.has("F-" + m[1])) ids.add("F-" + m[1]); }
+    for (const m of q.matchAll(/F-?\s?(\d+)/gi)) if (FUENTES.has("F-" + m[1])) ids.add("F-" + m[1]);
+    const hyps = search(IDX.hyps, q, 5);
+    for (const m of q.matchAll(/\b(HC?\d{1,2})\b/gi)) { const h = (CORPUS.hipotesis || []).find(x => x.id.toUpperCase() === m[1].toUpperCase()); if (h && !hyps.includes(h)) hyps.push(h); }
+    const tens = search(IDX.tens, q, 4);
+    for (const t of TENS) if (ids.has(t.f) && !tens.includes(t) && tens.length < 9) tens.push(t);
+    return { nodes, fuentes: [...ids].map(id => FUENTES.get(id)), hyps, tens };
+  }
+  function contextBlock(r) {
+    const n = r.nodes.map((c, i) => `[[Documento ${i + 1}: "${c.titulo}" — sección "${c.seccion}" (archivo ${c.node}.md)]]\n${c.texto}`).join("\n\n");
+    const f = r.fuentes.map(x => fuenteTxt({ ...x, resumen: x.resumen.slice(0, 700) })).join("\n");
+    const est = t => t.abierta ? "ABIERTA (" + t.estado.replace(/_/g, " ") + ")" : "resuelta como " + t.estado.replace(/_/g, " ");
+    const tn = r.tens.map(t => `- [${t.f}] "${t.s}" ${t.p} "${t.o}" — ${est(t)}. ${t.apoyo}${t.nota ? " Nota: " + t.nota.slice(0, 400) : ""}`).join("\n");
+    const hy = r.hyps.map(h => `- ${h.id} (${h.node === "conducta-humano-ia" ? "conducta humano-IA" : "diseño e innovación"}) — estado: ${h.estado.toUpperCase()}. Hipótesis: ${h.texto.slice(0, 400)} | Evidencia: ${h.detalle.slice(0, 500)}`).join("\n");
+    return `EXTRACTOS DE LOS DOCUMENTOS DE MU:\n${n || "(ninguno coincide)"}\n\nFICHAS DEL REGISTRO DE FUENTES (código | autor | año | título | rigor | resumen):\n${f || "(ninguna coincide)"}\n\nCONTRADICCIONES DEL GRAFO QUE TOCAN LA PREGUNTA (fuente | afirmación | relación | afirmación | estado):\n${tn || "(ninguna)"}\n\nHIPÓTESIS DEL TABLERO RELACIONADAS (código, estado y evidencia):\n${hy || "(ninguna)"}`;
+  }
+
+  const RULES = (estado) => `Eres Mu, el segundo cerebro de investigación de un equipo de diseño estratégico que trabaja en seguros, diseño, conducta humano-IA y Perú. Respondes preguntas SOLO con lo que está guardado en tus documentos y en tu registro de fuentes, que te llegan como extractos en cada mensaje${toolsOk ? " y que puedes ampliar con las herramientas buscar_en_mu y leer_fuente si los extractos no bastan" : ""}.
+
+Reglas:
+1. No uses conocimiento externo para rellenar huecos. Si algo no está en los extractos, di claramente "Mu no tiene esto guardado" y sugiere investigarlo con /trinidad.
+2. Cita la fuente de cada afirmación con su código entre corchetes justo después, por ejemplo [F-16]. Nunca inventes un código.
+3. Distingue con esas palabras lo que es "dato verificado" de lo que es "inferencia" o "lectura de resumen", y marca lo que el documento declara no verificado.
+4. Escribe en español claro, frases cortas, para alguien que no conoce el proyecto. Si usas una sigla o un código interno (H13, C17, §2.9), explícalo con palabras primero.
+5. Sé breve: una frase de respuesta directa, luego hasta 6 viñetas que empiecen con "- ", y al final una línea "Lo que Mu no sabe: ...". Usa **negritas** solo para la idea principal. Sin títulos ni tablas.
+6. Si una afirmación toca una contradicción ABIERTA del grafo, dila como "en disputa" y explica en una frase por qué sigue abierta. Si está resuelta, puedes usar la resolución.
+7. Cuando cites una hipótesis, usa su estado tal como figura (abierta, parcial, respaldada, refutada) y explica qué significa con palabras.
+8. Si la pregunta no es sobre lo que Mu investiga, dilo en una frase y ofrece qué sí puede responder.
+
+Estado actual del cerebro (panel): ${estado}`;
+
+  // ---------- render ----------
+  const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  function inline(s) {
+    s = esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    return s.replace(/\[?\b(F-\d{1,4})\b\]?/g, (m, id) => FUENTES.has(id) ? `<button type="button" class="f" data-f="${id}">${id}</button>` : esc(id));
+  }
+  function md(text) {
+    const out = []; let list = null;
+    for (const raw of text.split(/\n/)) {
+      const line = raw.trim();
+      if (/^[-•*]\s+/.test(line)) { if (!list) { list = []; } list.push(`<li>${inline(line.replace(/^[-•*]\s+/, ""))}</li>`); continue; }
+      if (list) { out.push(`<ul>${list.join("")}</ul>`); list = null; }
+      if (line) out.push(`<p>${inline(line.replace(/^#+\s*/, ""))}</p>`);
+    }
+    if (list) out.push(`<ul>${list.join("")}</ul>`);
+    return out.join("");
+  }
+  function showSource(id) {
+    const f = FUENTES.get(id); if (!f) return;
+    $("#src-id").textContent = f.id;
+    const dl = $("#src-dl"); dl.replaceChildren();
+    const rows = [["Autor", f.autor], ["Año", f.anio], ["Título", f.titulo], ["Rigor", f.rigor], ["Resumen", f.resumen.replace(/\*\*/g, "")], ["Registrada", f.registrado]];
+    for (const [k, v] of rows) { const dt = document.createElement("dt"); dt.textContent = k; const dd = document.createElement("dd"); dd.textContent = v; dl.append(dt, dd); }
+    const url = (f.url.match(/https?:\/\/[^\s|)]+/) || [])[0];
+    if (url) { const dt = document.createElement("dt"); dt.textContent = "Enlace"; const dd = document.createElement("dd"); const a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener"; a.textContent = url; dd.append(a); dl.append(dt, dd); }
+    const p = $("#src"); try { p.showPopover(); } catch { }
+  }
+  document.addEventListener("click", e => { const b = e.target.closest(".f[data-f]"); if (b) showSource(b.dataset.f); });
+
+  function newEntry(q) {
+    const art = document.createElement("article");
+    art.innerHTML = `<div class="q"></div><div class="a"><div class="h"><span>RESPUESTA DE MU</span></div><div class="b"><p class="think">Buscando en el cerebro</p></div><div class="sem" hidden></div><div class="ev" hidden></div></div>`;
+    art.querySelector(".q").textContent = q;
+    thread.prepend(art);
+    return { art, body: art.querySelector(".b"), ev: art.querySelector(".ev"), sem: art.querySelector(".sem"), box: art.querySelector(".a") };
+  }
+  function evidence(el, r, extra) {
+    const docs = [...new Set(r.nodes.map(c => c.titulo))];
+    el.hidden = false;
+    el.innerHTML = `<b>Buscó en:</b> ${docs.length ? docs.map(esc).join(" · ") : "ningún documento coincidió"} · ${r.fuentes.length} fichas del registro · ${r.tens.length} contradicciones · ${r.hyps.length} hipótesis${extra ? " · " + esc(extra) : ""}`;
+  }
+
+  // ---------- semáforos (reglas fijas, umbrales de research/grafo/chacal_rubrica.json) ----------
+  const WORD = { verde: "🟢 BIEN", amarillo: "🟡 REGULAR", rojo: "🔴 MAL" };
+  function perfil(text) {
+    const cited = [...new Set([...text.matchAll(/\bF-(\d{1,4})\b/g)].map(m => "F-" + m[1]).filter(id => FUENTES.has(id)))];
+    const fs = cited.map(id => FUENTES.get(id));
+    const pc = (a, b) => b ? Math.round(100 * a / b) : 0;
+    const yr = Number(String(CORPUS.generado).slice(0, 4)) || new Date().getFullYear();
+    const known = fs.filter(f => f.y);
+    const sem = fs.filter(f => f.sem), deep = sem.filter(f => f.deep);
+    const set = new Set(cited);
+    const tens = TENS.filter(t => set.has(t.f)), open = tens.filter(t => t.abierta);
+    const disc = (CORPUS.discrepancias || []).filter(d => set.has(d.f));
+    return { cited, fuentes: fs.length, ab_pct: pc(fs.filter(f => f.rig === "A" || f.rig === "B").length, fs.length),
+      recientes_pct: pc(known.filter(f => f.y >= yr - 1).length, known.length), anio_conocido: known.length,
+      semantica_pct: pc(sem.length, fs.length), leidas_pct: pc(deep.length, sem.length), sem: sem.length, deep: deep.length,
+      tensiones: tens.length, abiertas: open.length + disc.length, open, disc };
+  }
+  function semaforos(P) {
+    const R = CORPUS.rubrica || {};
+    // Cobertura por respuesta: el umbral del Chacal (40/10 fuentes) es para un tema entero; aquí se pide ≥5 / ≥2 fuentes citadas.
+    const lim = { cobertura: { verde: { fuentes_min: 5 }, amarillo: { fuentes_min: 2 } },
+      vigencia: { verde: { recientes_pct_min: R.vigencia?.verde?.recientes_pct_min ?? 40 }, amarillo: { recientes_pct_min: R.vigencia?.amarillo?.recientes_pct_min ?? 20 } },
+      solidez: R.solidez || { verde: { ab_pct_min: 50 }, amarillo: { ab_pct_min: 30 } },
+      contradicciones: R.contradicciones || { verde: { abiertas_max: 0 }, amarillo: { abiertas_max: 2 } },
+      profundidad: R.profundidad || { verde: { semantica_pct_min: 25, leidas_pct_min: 40 }, amarillo: { semantica_pct_min: 10, leidas_pct_min: 20 } } };
+    const ok = c => Object.entries(c).every(([k, x]) => k.endsWith("_min") ? P[k.slice(0, -4)] >= x : k.endsWith("_max") ? P[k.slice(0, -4)] <= x : true);
+    const out = {};
+    for (const [d, c] of Object.entries(lim)) out[d] = ok(c.verde) ? "verde" : ok(c.amarillo) ? "amarillo" : "rojo";
+    if (P.fuentes === 0) for (const d in out) out[d] = "rojo";
+    if (P.anio_conocido === 0 && P.fuentes) out.vigencia = "rojo";
+    if (P.semantica_pct < 10 && out.contradicciones === "verde") out.contradicciones = "amarillo"; // regla del Chacal: sin grafo no hay "sin contradicciones"
+    return out;
+  }
+  function renderSem(el, text) {
+    const P = perfil(text), S = semaforos(P);
+    const verdes = Object.values(S).filter(v => v === "verde").length;
+    const cells = [
+      ["cobertura", "Cobertura", `${P.fuentes} fuente${P.fuentes === 1 ? "" : "s"} citada${P.fuentes === 1 ? "" : "s"}`, "cuántas fuentes sostienen la respuesta"],
+      ["vigencia", "Vigencia", `${P.recientes_pct}% de ${(Number(String(CORPUS.generado).slice(0, 4)) || 2026) - 1} o después`, "qué tan reciente es la evidencia"],
+      ["solidez", "Solidez", `${P.ab_pct}% con rigor A o B`, "estudios revisados, datos oficiales o filings"],
+      ["contradicciones", "Contradicciones", `${P.abiertas} disputa${P.abiertas === 1 ? "" : "s"} abierta${P.abiertas === 1 ? "" : "s"} · ${P.tensiones} en total`, "desacuerdos entre fuentes que tocan la respuesta"],
+      ["profundidad", "Profundidad", `${P.semantica_pct}% en el grafo · ${P.leidas_pct}% de esas leídas a fondo`, "cuánto se leyó más allá del resumen"],
+    ];
+    let h = `<div class="sh"><span>Respaldo medido · reglas del Chacal</span><b>${verdes} de 5 en bien</b></div><div class="cells">`;
+    for (const [k, lab, m, d] of cells) h += `<div class="cell ${S[k]}"><div class="v">${WORD[S[k]]}</div><div class="d">${lab}</div><div class="m">${esc(m)}</div><div class="m">${d}</div></div>`;
+    h += "</div>";
+    if (P.open.length || P.disc.length) {
+      h += `<div class="tn"><b>EN DISPUTA</b><ul>` + P.open.map(t => `<li>${inline(t.f)} ${esc(t.s)} <i>${t.p}</i> ${esc(t.o)} — ${esc(t.estado.replace(/_/g, " "))}</li>`).join("") + P.disc.map(d => `<li>${inline(d.f)} ficha con error pendiente de corregir: ${esc(d.detalle.slice(0, 160))}…</li>`).join("") + `</ul></div>`;
+    }
+    h += `<div class="nt">${P.fuentes ? "Calculado en esta página con reglas fijas a partir de las fuentes que Mu citó; no lo decide Claude. Vigencia mira solo el año de las fuentes; cobertura usa un umbral por respuesta (≥5 / ≥2)." : "Mu no citó ninguna fuente del registro: esta respuesta no tiene respaldo medible."}</div>`;
+    el.innerHTML = h; el.hidden = false;
+  }
+
+  // ---------- backlog ----------
+  async function initDb() {
+    try { DB = await window.claude?.use?.("db"); } catch { DB = null; }
+    try { USER = await window.claude?.use?.("user"); } catch { USER = null; }
+    if (!DB) { dbState = "sin"; renderBacklog(); return; }
+    try { const c = await USER?.can?.("data.write"); if (c === false) canWrite = false; } catch { }
+    dbState = "ok";
+    DB.collection("consultas").orderBy("at", "desc").limit(1000).onSnapshot(s => { CONS = s.docs.map(d => ({ id: d.id, ...d.data() })); renderBacklog(); }, () => { dbState = "error"; renderBacklog(); });
+    DB.collection("temas").onSnapshot(s => { TEMAS = new Map(s.docs.map(d => [d.id, d.data()])); renderBacklog(); }, () => { });
+    DB.collection("usos").orderBy("at", "desc").limit(1000).onSnapshot(s => { USOS = s.docs.map(d => ({ id: d.id, ...d.data() })); renderImpacto(); }, () => { });
+  }
+  // ---------- impacto ----------
+  function renderImpacto() {
+    const sum = $("#im-sum"), cells = $("#im-cells"), dec = $("#im-dec");
+    if (dbState !== "ok") { sum.textContent = $("#bl-sum").textContent; cells.replaceChildren(); dec.replaceChildren(); return; }
+    const personas = new Set(CONS.map(c => c.quien).filter(Boolean)).size;
+    const util = USOS.filter(u => u.valor === "decision" || u.valor === "util").length;
+    const decs = USOS.filter(u => u.valor === "decision");
+    const pctU = USOS.length ? Math.round(100 * util / USOS.length) : 0;
+    sum.textContent = `${CONS.length} consultas · ${USOS.length} valoradas · ${decs.length} decisión${decs.length === 1 ? "" : "es"}`;
+    const cell = (v, l) => { const d = document.createElement("div"); const b = document.createElement("b"); b.textContent = v; const s = document.createElement("span"); s.textContent = l; d.append(b, s); return d; };
+    cells.replaceChildren(cell(CONS.length, "consultas"), cell(personas, personas === 1 ? "persona" : "personas"), cell(USOS.length, "valoradas"), cell(USOS.length ? pctU + "%" : "—", "útiles"), cell(decs.length, "decisiones"));
+    dec.replaceChildren(...decs.slice(0, 10).map(u => {
+      const li = document.createElement("li"); li.textContent = u.decision || "(sin descripción)";
+      const sm = document.createElement("small"); sm.textContent = `${String(u.at).slice(0, 10)}${u.donde ? " · " + u.donde : ""}${u.node ? " · documento: " + u.node : ""}${u.fuentes?.length ? " · " + u.fuentes.slice(0, 6).join(", ") : ""}`;
+      li.append(sm); return li;
+    }));
+  }
+  function feedback(entry, cid, meta) {
+    const box = document.createElement("div"); box.className = "fb";
+    const pintar = guardado => {
+      box.replaceChildren();
+      const b = document.createElement("b"); b.textContent = "¿Te sirvió?"; box.append(b);
+      const opts = [["decision", "SÍ, DECIDÍ O HICE ALGO"], ["util", "ÚTIL, SIN DECISIÓN"], ["no_util", "NO ME SIRVIÓ"]];
+      for (const [v, l] of opts) {
+        const bt = document.createElement("button"); bt.type = "button"; bt.textContent = l; if (guardado?.valor === v) bt.className = "on";
+        bt.addEventListener("click", () => v === "decision" ? formDecision(guardado) : guardar({ valor: v }));
+        box.append(bt);
+      }
+      if (guardado) { const ok = document.createElement("span"); ok.className = "ok"; ok.textContent = "Registrado. Puedes cambiarlo."; box.append(ok); }
+    };
+    const formDecision = prev => {
+      box.querySelector("form")?.remove();
+      const f = document.createElement("form");
+      f.innerHTML = `<label>¿Qué decidiste o hiciste con esto?</label><textarea maxlength="400" required placeholder="Ej.: descartamos el nudge X en la propuesta de onboarding"></textarea><label>¿Dónde? (opcional)</label><input maxlength="120" placeholder="reunión, propuesta, producto, presentación…"><div class="fbar"><button type="button" class="cancel">CANCELAR</button><button type="submit">GUARDAR</button></div>`;
+      const [ta, inp] = [f.querySelector("textarea"), f.querySelector("input")];
+      if (prev?.valor === "decision") { ta.value = prev.decision || ""; inp.value = prev.donde || ""; }
+      f.querySelector(".cancel").addEventListener("click", () => f.remove());
+      f.addEventListener("submit", e => { e.preventDefault(); if (ta.value.trim()) guardar({ valor: "decision", decision: ta.value.trim().slice(0, 400), donde: inp.value.trim().slice(0, 120) }); });
+      box.append(f); ta.focus();
+    };
+    const guardar = async v => {
+      const data = { consulta_id: cid, tema_id: meta.tema_id, node: meta.node, fuentes: meta.fuentes, valor: v.valor, decision: v.decision || "", donde: v.donde || "", at: new Date().toISOString(), quien: meta.quien };
+      box.querySelectorAll("button").forEach(b => b.disabled = true);
+      try { await DB.collection("usos").doc(cid).set(data); pintar(data); }
+      catch { box.querySelectorAll("button").forEach(b => b.disabled = false); const er = document.createElement("span"); er.className = "ok"; er.textContent = "No se pudo guardar. Intenta de nuevo."; box.append(er); }
+    };
+    pintar(null);
+    entry.box.append(box);
+  }
+  function agregados() {
+    const m = new Map();
+    for (const c of CONS) {
+      if (!c.tema_id) continue;
+      const a = m.get(c.tema_id) || { id: c.tema_id, tema: c.tema, total: 0, si: 0, parcial: 0, no: 0, ultima: c.at, ej: [] };
+      a.total++; if (a[c.cubierto] !== undefined) a[c.cubierto]++; if (a.ej.length < 3 && c.q) a.ej.push(c.q);
+      m.set(c.tema_id, a);
+    }
+    for (const [k, t] of TEMAS) { const a = m.get(k); if (a) { a.tema = t.tema || a.tema; a.prot = !!t.protocolo; a.protFecha = t.protocolo_fecha || ""; } }
+    return [...m.values()].sort((x, y) => (!!y.prot - !!x.prot) || (y.no - x.no) || (y.total - x.total));
+  }
+  function renderBacklog() {
+    const sum = $("#bl-sum"), list = $("#bl-list"), al = $("#alerta");
+    if (dbState !== "ok") {
+      sum.textContent = dbState === "sin" ? "no disponible: abre la página en claude.ai con tu sesión" : dbState === "error" ? "no se pudo leer el registro" : "cargando…";
+      list.replaceChildren(); al.hidden = true; renderImpacto(); return;
+    }
+    renderImpacto();
+    const A = agregados(), prot = A.filter(a => a.prot);
+    sum.textContent = `${A.length} tema${A.length === 1 ? "" : "s"} · ${CONS.length} consulta${CONS.length === 1 ? "" : "s"} · ${prot.length} protocolo${prot.length === 1 ? "" : "s"} activo${prot.length === 1 ? "" : "s"}${canWrite ? "" : " · solo lectura"}`;
+    list.replaceChildren(...A.map(a => {
+      const li = document.createElement("li");
+      li.className = a.prot ? "prot" : a.no > a.si + a.parcial ? "no" : a.si > 0 ? "si" : "";
+      const t = document.createElement("span"); t.className = "t"; t.textContent = (a.prot ? "PROTOCOLO · " : "") + a.tema;
+      const n = document.createElement("span"); n.className = "n"; n.textContent = a.total;
+      const mm = document.createElement("span"); mm.className = "m";
+      mm.textContent = `✗ ${a.no} sin cobertura · ~ ${a.parcial} parcial · ✓ ${a.si} cubierta${a.prot ? " · protocolo activado el " + String(a.protFecha).slice(0, 10) : a.no ? ` · faltan ${Math.max(0, UMBRAL + 1 - a.no)} para el protocolo` : ""} · ej.: "${a.ej[0] || ""}"`;
+      li.append(t, n, mm); return li;
+    }));
+    if (prot.length) {
+      al.replaceChildren();
+      const b = document.createElement("b"); b.textContent = "PROTOCOLO ACTIVADO — EXPLORAR COMO CONOCIMIENTO NUEVO";
+      const ul = document.createElement("ul");
+      for (const a of prot) { const li = document.createElement("li"); li.textContent = `${a.tema}: ${a.no} consultas sin cobertura. Investigarlo con /trinidad y crear su documento en el cerebro.`; ul.append(li); }
+      al.append(b, ul); al.hidden = false;
+    } else al.hidden = true;
+  }
+  async function registrar(entry, q, text, r) {
+    if (!DB || !sample || !canWrite) return;
+    const citedIds = [...new Set([...text.matchAll(/\bF-(\d{1,4})\b/g)].map(m => "F-" + m[1]).filter(id => FUENTES.has(id)))];
+    const cited = citedIds.length;
+    const existentes = agregados().slice(0, 80).map(a => `${a.id}: ${a.tema}`).join("\n") || "(ninguno todavía)";
+    const docs = [...new Set(CORPUS.nodes.map(c => `${c.node}: ${c.titulo}`))].join("\n");
+    let cls;
+    try {
+      cls = await sample.json(`Clasifica una pregunta hecha a Mu, el segundo cerebro de investigación de un equipo de diseño estratégico (seguros, diseño, conducta humano-IA, Perú).
+
+PREGUNTA: ${q}
+
+RESPUESTA QUE DIO MU (puede estar cortada): ${text.slice(0, 1500)}
+
+FUENTES DEL REGISTRO QUE CITÓ: ${cited}
+DOCUMENTOS DE MU: 
+${docs}
+
+TEMAS YA REGISTRADOS (id: nombre):
+${existentes}
+
+Devuelve SOLO un objeto JSON con estas claves:
+- "tema_id": si la pregunta trata un tema ya registrado, su id exacto; si no, un id nuevo en minúsculas, sin tildes, con guiones bajos (3 a 6 palabras), que nombre el tema de conocimiento, no la pregunta.
+- "tema": nombre corto del tema en español (3 a 8 palabras).
+- "cubierto": "si" si Mu respondió con evidencia de sus documentos y fuentes; "parcial" si respondió una parte y dijo que le falta otra; "no" si dijo que no lo tiene guardado o no pudo responder con sus fuentes.
+- "node": el archivo del documento de Mu que mejor cubre el tema (sin .md), o "" si ninguno.`, { modelTier: "quick" });
+    } catch { return; }
+    const tema_id = String(cls?.tema_id || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9_]+/g, "_").replace(/^_+|_+$/g, "").slice(0, 60);
+    if (tema_id.length < 3) return;
+    const tema = String(cls?.tema || tema_id.replace(/_/g, " ")).slice(0, 80);
+    let cubierto = ["si", "parcial", "no"].includes(cls?.cubierto) ? cls.cubierto : "parcial";
+    if (cited === 0) cubierto = "no"; // regla fija: sin fuentes citadas no hay cobertura
+    const now = new Date().toISOString();
+    try {
+      const uid = USER ? await USER.id() : null;
+      const node = String(cls?.node || "").slice(0, 80);
+      const cref = await DB.collection("consultas").add({ q: q.slice(0, 300), tema_id, tema, cubierto, node, fuentes_citadas: cited, at: now, quien: uid || null });
+      feedback(entry, cref.id, { tema_id, node, fuentes: citedIds.slice(0, 40), quien: uid || null });
+      const ref = DB.collection("temas").doc(tema_id);
+      const snap = await ref.get();
+      if (!snap.exists) await ref.set({ tema, creado: now, protocolo: false });
+      const etq = { si: "cubierto", parcial: "cobertura parcial", no: "sin cobertura" }[cubierto];
+      entry.ev.insertAdjacentText("beforeend", ` · tema: ${tema} (${etq})`);
+      if (cubierto === "no") {
+        const qs = await DB.collection("consultas").where("tema_id", "==", tema_id).where("cubierto", "==", "no").get();
+        const t = (await ref.get()).data() || {};
+        if (qs.size > UMBRAL && !t.protocolo) await ref.update({ protocolo: true, protocolo_fecha: now, protocolo_consultas: qs.size, tema });
+      }
+    } catch (e) { if (e && e.code === "invalid_argument") { canWrite = false; renderBacklog(); } }
+  }
+
+  // ---------- preguntar ----------
+  const COPY = {
+    not_granted: "No diste permiso para usar Claude en esta página. Mu solo puede mostrarte los fragmentos que encontró.",
+    sampling_disabled: "Claude no está disponible para esta cuenta. Mu solo puede mostrarte los fragmentos que encontró.",
+    rate_limited: "Se alcanzó el límite de uso por ahora. Intenta de nuevo en unos minutos.",
+    session_expired: "Tu sesión de claude.ai expiró. Vuelve a iniciar sesión y pregunta otra vez.",
+    prompt_too_large: "La conversación quedó muy larga. Recarga la página para empezar de nuevo.",
+    refused: "Claude no respondió a esta pregunta. Prueba formularla de otra manera.",
+    empty_completion: "La respuesta llegó vacía. Prueba con una pregunta más concreta.",
+  };
+  function offline(entry, r, msg) {
+    entry.box.classList.add("err");
+    const parts = [`<p>${esc(msg)}</p>`];
+    if (r.nodes.length) parts.push("<p><b>Fragmentos más cercanos en el cerebro:</b></p><ul>" + r.nodes.slice(0, 5).map(c => `<li><b>${esc(c.titulo)}</b> — ${esc(c.seccion)}: ${inline(c.texto.replace(/\s+/g, " ").slice(0, 260))}…</li>`).join("") + "</ul>");
+    entry.body.innerHTML = parts.join("");
+  }
+  async function ask(q) {
+    q = q.trim(); if (!q || !CORPUS) return;
+    const entry = newEntry(q);
+    const r = retrieve(q + " " + turns.filter(t => t.role === "user").slice(-1).map(t => t.q).join(" "));
+    evidence(entry.ev, r);
+    if (!sampleChecked) { try { sample = await window.claude?.use?.("sample"); } catch { sample = null; } sampleChecked = true; try { toolsOk = !!(sample && (await sample.limits()).tools); } catch { toolsOk = false; } }
+    if (!sample) { offline(entry, r, "Para que Mu redacte una respuesta, abre esta página en claude.ai con tu sesión iniciada."); return; }
+    const estado = (CORPUS.estado.lineas || []).join(" / ");
+    const msg = `${contextBlock(r)}\n\nPREGUNTA: ${q}`;
+    const input = [{ role: "user", content: RULES(estado) }];
+    for (const t of turns.slice(-6)) input.push({ role: t.role, content: t.content });
+    input.push({ role: "user", content: msg });
+    ctl = new AbortController(); go.disabled = true; stop.hidden = false; hint.textContent = "Mu está pensando. Puede tardar entre 10 y 60 segundos.";
+    entry.body.innerHTML = '<p class="think">Pensando</p>';
+    let used = 0;
+    const tools = toolsOk ? [
+      { name: "buscar_en_mu", description: "Busca más fragmentos en los documentos de Mu. Devuelve hasta 5 fragmentos con su documento y sección. Úsala solo si los extractos no bastan.", inputSchema: { type: "object", properties: { consulta: { type: "string", description: "palabras clave en español" } }, required: ["consulta"] },
+        execute: ({ consulta }) => { used++; evidence(entry.ev, r, `búsqueda extra: "${String(consulta).slice(0, 60)}"`); return search(IDX.nodes, String(consulta || ""), 5).map(c => ({ documento: c.titulo, seccion: c.seccion, texto: c.texto.slice(0, 1400) })); } },
+      { name: "leer_fuente", description: "Lee la ficha completa de una fuente del registro por su código (por ejemplo F-16): autor, año, título, rigor y resumen.", inputSchema: { type: "object", properties: { id: { type: "string" } }, required: ["id"] },
+        execute: ({ id }) => { const k = "F-" + String(id).replace(/\D/g, ""); const f = FUENTES.get(k); if (!f) throw new Error(`${k} no existe en el registro`); used++; const ts = TENS.filter(t => t.f === k).map(t => `${t.s} ${t.p} ${t.o} (${t.abierta ? "abierta" : "resuelta: " + t.estado})`); return fuenteTxt(f) + (ts.length ? " | Contradicciones en el grafo: " + ts.join("; ") : ""); } },
+    ] : undefined;
+    try {
+      const opts = { signal: ctl.signal, onText: ({ text }) => { entry.body.innerHTML = md(text); } };
+      if (tools) opts.tools = tools; else opts.cache = false;
+      const res = await sample(input, opts);
+      entry.body.innerHTML = md(res.text);
+      renderSem(entry.sem, res.text);
+      if (res.truncated) entry.body.insertAdjacentHTML("beforeend", "<p><i>La respuesta quedó cortada. Pide algo más acotado.</i></p>");
+      turns.push({ role: "user", content: `PREGUNTA: ${q}`, q }, { role: "assistant", content: res.text.slice(0, 4000) });
+      registrar(entry, q, res.text, r);
+    } catch (e) {
+      const code = e && e.code;
+      if (code === "cancelled") { entry.body.innerHTML = e.text ? md(e.text) + "<p><i>Detenida.</i></p>" : "<p><i>Detenida.</i></p>"; }
+      else if (code === "not_granted" || code === "sampling_disabled" || code === "not_declared" || code === "capability_disabled") { sample = null; offline(entry, r, COPY[code] || COPY.not_granted); }
+      else { entry.box.classList.add("err"); entry.body.innerHTML = (e && e.text ? md(e.text) : "") + `<p>${esc(COPY[code] || "Algo falló al conectar con Claude. Puedes volver a preguntar.")}</p>`; }
+    } finally {
+      go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus documentos y en su registro de fuentes antes de responder.";
+    }
+  }
+  stop.addEventListener("click", () => ctl?.abort());
+  $("#ask").addEventListener("submit", e => { e.preventDefault(); const q = qbox.value; if (!q.trim() || go.disabled) return; qbox.value = ""; ask(q); });
+  qbox.addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("#ask").requestSubmit(); } });
+  $("#sug").addEventListener("click", e => { const b = e.target.closest("button"); if (b && !go.disabled) ask(b.textContent); });
+
+  // ---------- carga ----------
+  go.disabled = true; hint.textContent = "Cargando el índice del cerebro…";
+  fetch("mu-corpus.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    CORPUS = d;
+    for (const f of d.fuentes) FUENTES.set(f.id, f);
+    TENS = d.tensiones || [];
+    IDX = { nodes: buildIndex(d.nodes, c => `${c.titulo} ${c.seccion} ${c.seccion} ${c.texto}`), fuentes: buildIndex(d.fuentes, f => `${f.id} ${f.autor} ${f.titulo} ${f.titulo} ${f.resumen}`),
+      tens: buildIndex(TENS, t => `${t.s} ${t.o} ${t.apoyo} ${t.nota}`), hyps: buildIndex(d.hipotesis || [], h => `${h.id} ${h.texto} ${h.texto} ${h.detalle}`) };
+    $("#gen").textContent = d.generado;
+    const L = (d.estado.lineas || []).join(" ");
+    const m1 = L.match(/N(\d)\/7/); if (m1) $("#st-n").textContent = `N${m1[1]}/7`;
+    const m2 = L.match(/(\d+) fuentes/); if (m2) $("#st-f").textContent = m2[1];
+    const m3 = L.match(/(\d+) nodes/); if (m3) $("#st-no").textContent = m3[1];
+    const m4 = L.match(/SALUD (\d+\/\d+)/); if (m4) $("#st-s").textContent = m4[1];
+    go.disabled = false; hint.textContent = "Mu busca en sus documentos y en su registro de fuentes antes de responder.";
+    initDb();
+  }).catch(() => { hint.textContent = "No se pudo cargar el índice del cerebro. Recarga la página."; });
+})();
+</script>

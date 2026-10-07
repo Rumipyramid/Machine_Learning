@@ -1,0 +1,88 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-6",
+  "F-9",
+  "F-484",
+  "F-504",
+  "F-506",
+  "F-508"
+ ],
+ "entidades": [
+  {
+   "id": "creencias_pesimistas",
+   "nombre": "Creencias pesimistas sobre lo que se ganaría al cambiar",
+   "tipo": "constructo"
+  },
+  {
+   "id": "dictamen_salud_2025",
+   "nombre": "Dictamen conjunto de la Comisión de Salud (PL 2522/2021 y 8488/2024), dic-2025",
+   "tipo": "intervencion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "creencias_pesimistas",
+   "p": "media",
+   "o": "c_divulgacion_obligatoria_falla",
+   "f": "F-9",
+   "apoyo": "RCT con 124.000 ahorristas en 5 entidades del Reino Unido: las creencias pesimistas sobre la ganancia explican que se ignore la divulgación.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "dictamen_salud_2025",
+   "p": "parte_de",
+   "o": "pl_08488",
+   "f": "F-508",
+   "apoyo": "La Comisión de Salud aprobó el 3-dic(2025) un dictamen conjunto de los PL 2522/2021-CR y 8488/2024-CR, pendiente de pasar a la Comisión Permanente (resumen de vLex; portal del Congreso no abierto).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "Lectura a fondo de seguros. Documentos primarios (SBS, SMV, El Peruano, Congreso) bloqueados por la red: se leyeron resúmenes dirigidos a cada documento. Se actualizan en su sitio, de ficha a abstract, T-125 (corrige la relación: la norma 'aplica_a', no 'aumenta' el rechazo), T-153, T-154 (corrige el objeto: F-9 mide cambio de producto, no comprensión de planes de salud), T-155, T-170, T-172 y T-175. F-486 no se pudo ubicar (queda en ficha).",
+ "sin_aporte": [
+  {
+   "f": "F-6",
+   "nota": "Sin relación nueva: T-153 se actualizó en su sitio (ficha→abstract)."
+  },
+  {
+   "f": "F-484",
+   "nota": "Sin relación nueva: T-125 se corrigió y actualizó en su sitio (ficha→abstract)."
+  },
+  {
+   "f": "F-504",
+   "nota": "Sin relación nueva: T-170 se actualizó en su sitio (ficha→abstract)."
+  },
+  {
+   "f": "F-506",
+   "nota": "Sin relación nueva: T-172 se actualizó en su sitio (ficha→abstract); T-173 sigue sin verificar contra la SBS."
+  }
+ ],
+ "actualizaciones_en_su_sitio": {
+  "T-125": {
+   "p": "aplica_a",
+   "apoyo": "Res. SBS 01923-2026 (El Peruano, 24-jul-2026): es infracción grave rechazar una cobertura sin comunicar el sustento y/o no comunicarlo en plazo. Antes se sancionaba la falta de sustento o la comunicación tardía."
+  },
+  "T-153": {
+   "apoyo": "Dos encuestas representativas en EE.UU.: solo 14% entendió coaseguro, copago, deducible y gasto de bolsillo, y 11% pudo calcular su parte de una cuenta hospitalaria."
+  },
+  "T-154": {
+   "o": "cambio_producto",
+   "apoyo": "RCT con 124.000 ahorristas: la divulgación subió el cambio de cuenta solo 0,7 pp (8,7%→9,5%) pese a una ganancia media de ~US$190/año.",
+   "fuerza": "causal"
+  },
+  "T-155": {
+   "apoyo": "Cambiar tomaba ~15 minutos y aun así casi nadie cambió con ningún diseño de divulgación: la conducta apenas se mueve."
+  },
+  "T-170": {
+   "apoyo": "Hecho de importancia ante la SMV (vía MarketScreener): utilidad neta S/85,78 M en el 2T 2026 vs. S/143,4 M (−40%); S/208,33 M en el 1S vs. S/232,81 M (−10,5%)."
+  },
+  "T-172": {
+   "apoyo": "Gestión (fines de set-2026), con datos de la SBS: primas S/9.451 M (+1,1%) y utilidad S/1.391 M (+7,5%); los siniestros no siguieron a los ingresos. Tabla oficial de la SBS no abierta."
+  },
+  "T-175": {
+   "apoyo": "Registrado el 27-jul-2024. Dictamen conjunto con el PL 2522/2021-CR aprobado en la Comisión de Salud el 3-dic(2025), pendiente; no se verificó su avance posterior."
+  }
+ }
+}

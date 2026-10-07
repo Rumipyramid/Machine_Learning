@@ -1,0 +1,251 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-697",
+  "F-698",
+  "F-699",
+  "F-700",
+  "F-701",
+  "F-702",
+  "F-703",
+  "F-704",
+  "F-705",
+  "F-706"
+ ],
+ "entidades": [
+  {
+   "id": "practicas_investigacion_cuestionables",
+   "nombre": "Prácticas de investigación cuestionables (mirar datos por tandas hasta ver el patrón, elegir pruebas y medidas a posteriori)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_postura_afecta_autorreporte",
+   "nombre": "La postura corporal afecta estados afectivos autorreportados (ánimo, sensación de poder)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "feedback_facial_manipulado",
+   "nombre": "Manipulación de la expresión facial (lápiz en la boca, imitar fotos, mover músculos por instrucción)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_lapiz_sonrisa_humor",
+   "nombre": "Sonreír forzado con un lápiz en los dientes hace ver más graciosas las caricaturas (Strack et al. 1988)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "experiencia_emocional",
+   "nombre": "Experiencia emocional autorreportada (felicidad, humor percibido)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_lapiz_sin_efecto_rrr",
+   "nombre": "El lápiz en la boca no cambia el humor percibido (17 laboratorios, 0,03 puntos)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "observacion_por_camara",
+   "nombre": "Ser grabado en video durante el experimento (moderador propuesto por Strack)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_feedback_facial_pequeno",
+   "nombre": "El feedback facial influye en la emoción con efecto pequeño y variable (d ≈ 0,20)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_sonrisa_voluntaria_felicidad",
+   "nombre": "Sonreír a propósito (imitar o mover músculos) aumenta la felicidad sentida; el lápiz encubierto no lo prueba",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "peso_fisico",
+   "nombre": "Sostener un objeto pesado (p. ej., un portapapeles)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_peso_importancia",
+   "nombre": "Sostener algo pesado hace juzgar las cosas como más importantes (Jostmann et al. 2009)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "juicio_importancia",
+   "nombre": "Juicio de importancia o valor",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_peso_sin_efecto",
+   "nombre": "El peso físico no cambia el juicio de importancia (Many Labs 3, N = 2.285)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "priming_conductual",
+   "nombre": "Priming conductual: activar un concepto sin que la persona lo note cambia su conducta",
+   "tipo": "concepto"
+  },
+  {
+   "id": "priming_estereotipo_vejez",
+   "nombre": "Activar palabras del estereotipo de vejez (p. ej., 'Florida', 'bingo')",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_priming_vejez_lentitud",
+   "nombre": "Activar el estereotipo de vejez hace caminar más lento (Bargh et al. 1996)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "velocidad_al_caminar",
+   "nombre": "Velocidad al caminar",
+   "tipo": "resultado"
+  },
+  {
+   "id": "expectativa_experimentador",
+   "nombre": "Expectativas del experimentador (influyen sin querer en la conducta medida)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_priming_vejez_no_replica",
+   "nombre": "El priming de vejez no ralentiza la marcha con medición automática (Doyen et al. 2012)",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "practicas_investigacion_cuestionables",
+   "p": "tiene_limite",
+   "o": "c_poses_poder_hormonas_riesgo",
+   "f": "F-697",
+   "apoyo": "Carney 2016: muestra pequeña, datos revisados por tandas hasta ver un patrón y pruebas y medidas elegidas a posteriori; 'no creo que los efectos de las poses de poder sean reales'.",
+   "lectura": "completa",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_postura_afecta_autorreporte",
+   "p": "respalda",
+   "o": "sensacion_subjetiva_poder",
+   "f": "F-698",
+   "apoyo": "Cuddy et al. 2018: p-curve con 'fuerte valor evidencial' para la retroalimentación postural, sobre todo en estados emocionales y afectivos; no en hormonas.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "feedback_facial_manipulado",
+   "p": "aumenta",
+   "o": "experiencia_emocional",
+   "f": "F-699",
+   "apoyo": "Strack et al. 1988: con el lápiz en los dientes las caricaturas se juzgaron más graciosas; diferencia de 0,82 puntos en escala de 10 (cifra reportada por la réplica de 2016).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_lapiz_sin_efecto_rrr",
+   "p": "refuta",
+   "o": "c_lapiz_sonrisa_humor",
+   "f": "F-700",
+   "apoyo": "Wagenmakers et al. 2016: 17 laboratorios, diferencia meta-analítica de 0,03 puntos (IC 95% −0,11 a 0,16) frente a 0,82 del original.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "observacion_por_camara",
+   "p": "modera",
+   "o": "c_lapiz_sonrisa_humor",
+   "f": "F-700",
+   "apoyo": "Hipótesis de Strack tras el RRR: sentirse observado por la cámara habría anulado el efecto. Es explicación post hoc, no probada en ese estudio.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_feedback_facial_pequeno",
+   "p": "respalda",
+   "o": "experiencia_emocional",
+   "f": "F-701",
+   "apoyo": "Coles et al. 2019: 286 efectos de 138 estudios; el feedback facial influye en la emoción con d = 0,20, pequeño y heterogéneo.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "sesgo_publicacion",
+   "p": "tiene_limite",
+   "o": "c_feedback_facial_pequeno",
+   "f": "F-701",
+   "apoyo": "Inferencia: un meta-análisis de literatura publicada puede inflar el efecto; por eso pesa más la prueba preregistrada Many Smiles (Coles et al. 2022).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "feedback_facial_manipulado",
+   "p": "aumenta",
+   "o": "experiencia_emocional",
+   "f": "F-702",
+   "apoyo": "Many Smiles (Coles et al. 2022, N = 3.878, 19 países): imitar sonrisas y mover los músculos por instrucción amplificaron e iniciaron felicidad.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_sonrisa_voluntaria_felicidad",
+   "p": "contradice",
+   "o": "c_lapiz_sin_efecto_rrr",
+   "f": "F-702",
+   "apoyo": "Many Smiles 2022 matiza el RRR de 2016: el efecto existe con sonrisas voluntarias o imitadas, aunque con el lápiz encubierto la evidencia siguió siendo poco concluyente.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "peso_fisico",
+   "p": "aumenta",
+   "o": "juicio_importancia",
+   "f": "F-703",
+   "apoyo": "Jostmann et al. 2009 (4 estudios): el portapapeles pesado aumentó el valor monetario estimado y la importancia de procedimientos justos. Tamaños de efecto no reportados en el resumen.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_peso_sin_efecto",
+   "p": "refuta",
+   "o": "c_peso_importancia",
+   "f": "F-704",
+   "apoyo": "Many Labs 3 (Ebersole et al. 2016): con N = 2.285 en laboratorio, portapapeles pesado y liviano dieron igual importancia (dato del atlas FORRT, no del resumen).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "priming_estereotipo_vejez",
+   "p": "reduce",
+   "o": "velocidad_al_caminar",
+   "f": "F-705",
+   "apoyo": "Bargh, Chen y Burrows 1996 (exp. 2): quienes vieron palabras de vejez caminaron más lento al salir que los controles. Doyen et al. 2012 no lo replicaron con cronometraje automático.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "priming_estereotipo_vejez",
+   "p": "es_tipo_de",
+   "o": "priming_conductual",
+   "f": "F-705",
+   "apoyo": "Bargh et al. 1996 muestran que estereotipos y rasgos activados automáticamente guían la acción sin intención consciente.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_priming_vejez_no_replica",
+   "p": "refuta",
+   "o": "c_priming_vejez_lentitud",
+   "f": "F-706",
+   "apoyo": "Doyen et al. 2012 (exp. 1): con cronometraje automático y más muestra, el priming de vejez no cambió la velocidad al caminar.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "expectativa_experimentador",
+   "p": "modera",
+   "o": "c_priming_vejez_lentitud",
+   "f": "F-706",
+   "apoyo": "Doyen et al. 2012 (exp. 2): la marcha más lenta apareció solo cuando los experimentadores esperaban ese resultado.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}

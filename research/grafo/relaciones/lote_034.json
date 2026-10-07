@@ -1,0 +1,234 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-636",
+  "F-8",
+  "F-28",
+  "F-93",
+  "F-145",
+  "F-170",
+  "F-184",
+  "F-232"
+ ],
+ "entidades": [
+  {
+   "id": "encuesta_naic_genz_2024",
+   "nombre": "Encuesta NAIC a adultos Gen Z de EE.UU. (2024, N=1.003)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "comprension_terminos_seguro_salud",
+   "nombre": "Comprensión de términos de seguro de salud (deducible, copago)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "seguro_embebido",
+   "nombre": "Seguro embebido (embedded insurance)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "tamano_mercado_seguro_embebido",
+   "nombre": "Tamaño del mercado de seguro embebido (US$116 mil M en 2025 → 138 mil M en 2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mancomunacion_riesgo",
+   "nombre": "Mancomunación de riesgos (risk pooling)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "variabilidad_primas",
+   "nombre": "Variabilidad / impredecibilidad de las primas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "pool_grande_no_baja_prima",
+   "nombre": "Un pool grande no implica primas más bajas: depende del costo promedio de los inscritos",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "reduccion_campos_checkout",
+   "nombre": "Reducir los campos del formulario de checkout (~8 bastan)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "abandono_checkout_complejidad",
+   "nombre": "Abandono de compra por checkout largo o complejo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "alzas_tarifas_seguros_comerciales",
+   "nombre": "Alzas de tarifas en seguros comerciales",
+   "tipo": "concepto"
+  },
+  {
+   "id": "crecimiento_primas_seguros_comerciales",
+   "nombre": "Crecimiento de primas de seguros comerciales (~8% anual, 5 años)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "canal_directo_seguros",
+   "nombre": "Canal de distribución directo (digital) de la aseguradora",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "costo_adquisicion_seguros",
+   "nombre": "Costo de adquisición de clientes en seguros",
+   "tipo": "resultado"
+  },
+  {
+   "id": "multicanal_humano_digital_seguros",
+   "nombre": "Distribución multicanal liderada por humanos y habilitada por tecnología",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ventas_retencion_seguros",
+   "nombre": "Ventas y retención de clientes de seguros",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sobreestimacion_precio_seguro_vida",
+   "nombre": "Sobreestimación del precio del seguro de vida",
+   "tipo": "resultado"
+  },
+  {
+   "id": "brecha_necesidad_seguro_vida",
+   "nombre": "Brecha de necesidad de seguro de vida (no compra pese a necesitarlo)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "desarrollo_favorable_reservas_lemonade",
+   "p": "reduce",
+   "o": "loss_ratio_bruto_lemonade",
+   "f": "F-636",
+   "apoyo": "Lemonade, carta a accionistas 2T 2026 (8-K): loss ratio bruto de 60% frente a 67% un año antes; incluye 7 puntos de desarrollo favorable de periodos previos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "encuesta_naic_genz_2024",
+   "p": "mide",
+   "o": "comprension_terminos_seguro_salud",
+   "f": "F-8",
+   "apoyo": "NAIC 2024 (N=1.003, 18-27 años): solo 27% de la Gen Z identifica correctamente 'deducible' y 29% 'copago'; 19% 'fuera de red'.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_embebido",
+   "p": "asocia_con",
+   "o": "tamano_mercado_seguro_embebido",
+   "f": "F-28",
+   "apoyo": "Research and Markets 2026: el mercado de seguro embebido pasaría de US$116,05 mil M (2025) a US$138,08 mil M (2026), CAGR 19,0%, y a US$277,67 mil M en 2030 (proyección).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mancomunacion_riesgo",
+   "p": "reduce",
+   "o": "variabilidad_primas",
+   "f": "F-93",
+   "apoyo": "American Academy of Actuaries 2017: en general, cuanto más grande el pool de riesgo, más predecibles y estables pueden ser las primas; los costos de los menos sanos se compensan con los de los sanos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "mancomunacion_riesgo",
+   "p": "tiene_limite",
+   "o": "pool_grande_no_baja_prima",
+   "f": "F-93",
+   "apoyo": "American Academy of Actuaries 2017: un pool grande no implica necesariamente primas más bajas; el factor clave es el costo promedio de atención de los inscritos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "mancomunacion_riesgo",
+   "p": "aplica_a",
+   "o": "mercado_seguro_individual",
+   "f": "F-93",
+   "apoyo": "American Academy of Actuaries 2017: explica la mancomunación en el mercado individual de salud de EE.UU., donde la ACA exige un pool único por estado para fijar primas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "reduccion_campos_checkout",
+   "p": "reduce",
+   "o": "abandono_checkout_complejidad",
+   "f": "F-145",
+   "apoyo": "Baymard Institute 2024: el checkout promedio tiene 11,3 campos aunque bastan 8; 26% abandonó una compra solo por un checkout largo o complejo, y los campos pesan más en la usabilidad que los pasos.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "alzas_tarifas_seguros_comerciales",
+   "p": "aumenta",
+   "o": "crecimiento_primas_seguros_comerciales",
+   "f": "F-170",
+   "apoyo": "McKinsey 2025: las primas comerciales crecieron ~8% anual en 5 años; en Europa y Norteamérica ese crecimiento se debió íntegramente a alzas de tarifas, mientras otros factores lo restaron.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "canal_directo_seguros",
+   "p": "aumenta",
+   "o": "costo_adquisicion_seguros",
+   "f": "F-184",
+   "apoyo": "PwC (Insurance 2030): construir y promover canales directos puede aumentar el costo de adquisición; muchas aseguradoras no lograron focalizar clientes, tarificar el riesgo ni ofrecer una compra atractiva.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "multicanal_humano_digital_seguros",
+   "p": "aumenta",
+   "o": "ventas_retencion_seguros",
+   "f": "F-184",
+   "apoyo": "PwC (Insurance 2030): las aseguradoras que combinan experiencias personales y digitales pueden lograr más ventas a menor costo, mayor retención y mejor evaluación del riesgo.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "sobreestimacion_precio_seguro_vida",
+   "p": "asocia_con",
+   "o": "brecha_necesidad_seguro_vida",
+   "f": "F-232",
+   "apoyo": "LIMRA/Life Happens 2025 (Insurance Barometer): ~3/4 sobreestima el costo del seguro de vida (los ≤35, 7-12 veces) y el costo es la razón más citada (46%) por quienes tienen brecha de necesidad para no comprar.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-636",
+   "detalle": "Menor: la ficha da +32,4% para la prima en vigor; el filing y su cobertura reportan +32,5% (como F-509).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-8",
+   "detalle": "La justificación de rigor dice 'método no detallado en la nota', pero la nota sí lo detalla: encuesta online del 24-26 de junio de 2024, N=1.003 adultos de 18-27 años.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-93",
+   "detalle": "La ficha afirma que la mancomunación 'reduce el costo esperado por la ley de grandes números'; el brief dice lo contrario: un pool grande hace las primas más predecibles y estables, pero no necesariamente más bajas (depende del costo promedio de los inscritos).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-93",
+   "detalle": "Año: 2017 (14-jul-2017), no 's.f.'.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-145",
+   "detalle": "'Cada campo adicional después del 8.º reduce la finalización 4-6%' no aparece en Baymard; una cifra similar (4-5% por campo) circula atribuida a Formstack, otra fuente. El óptimo de Baymard es 8 campos (no '7-8').",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  }
+ ],
+ "notas": "Lote del avance a N6 (grupo n6_0): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

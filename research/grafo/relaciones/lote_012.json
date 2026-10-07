@@ -1,0 +1,108 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-488",
+  "F-491",
+  "F-499",
+  "F-542"
+ ],
+ "entidades": [
+  {
+   "id": "c_adulacion_indistinguible",
+   "nombre": "Los usuarios no distinguen una IA aduladora de una que no lo es",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "personalizacion_conversacional",
+   "nombre": "Personalización en conversación (la IA conoce datos del interlocutor)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_personalizacion_aumenta_persuasion",
+   "nombre": "Personalizar con datos de la persona aumenta la persuasión de la IA",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "salvi_2025",
+   "nombre": "Debates con GPT-4 de Salvi et al. (Nature Human Behaviour 2025)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "hackenburg_margetts_2024",
+   "nombre": "Experimento de microtargeting de Hackenburg y Margetts (PNAS 2024)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "rasgos_susceptibilidad",
+   "nombre": "Rasgos de susceptibilidad: confianza en LLMs, amabilidad, extraversión, necesidad de cognición",
+   "tipo": "constructo"
+  }
+ ],
+ "triples": [
+  {
+   "s": "adulacion_ia",
+   "p": "respalda",
+   "o": "c_adulacion_indistinguible",
+   "f": "F-488",
+   "apoyo": "Publicado en Science (mar-2026): los participantes calificaron igual de 'objetivas' a la IA aduladora y a la no aduladora; no saben con cuál hablaron.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "rasgos_susceptibilidad",
+   "p": "modera",
+   "o": "c_persuasion_concentrada",
+   "f": "F-491",
+   "apoyo": "770 adultos italianos, 4 sesiones semanales con GPT-4o, Claude Sonnet 3.7, DeepSeek V3 o Mistral Large: el cambio de opinión se asocia a más confianza en LLMs, amabilidad, extraversión y necesidad de cognición.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "salvi_2025",
+   "p": "respalda",
+   "o": "c_personalizacion_aumenta_persuasion",
+   "f": "F-542",
+   "apoyo": "Debates de varias rondas (N=900): con datos personales del oponente, GPT-4 superó al humano en 64,4% de los pares: +81,2% de odds de mayor acuerdo (IC95% +26% a +161%).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "personalizacion_conversacional",
+   "p": "aumenta",
+   "o": "cambio_actitud",
+   "f": "F-542",
+   "apoyo": "La ventaja aparece con personalización en debate interactivo frente a persuasores humanos.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "hackenburg_margetts_2024",
+   "p": "refuta",
+   "o": "c_personalizacion_aumenta_persuasion",
+   "f": "F-499",
+   "apoyo": "8.587 participantes, 4 temas: el mensaje microtargeteado no superó al genérico (p=0,23); en sanciones a China y OTAN el genérico fue mejor (−4,6 y −2,8 pp). Mejor mensaje genérico: +6,2 pp.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-488",
+   "detalle": "La ficha lo registra como preprint de arXiv con 'revisión por pares no verificada' (🔵 B). Está publicado en Science 391(6792), 26-mar-2026 (Cheng, Lee, Khadpe, Yu, Han y Jurafsky), DOI 10.1126/science.aec8352: pasa a 🟢 A."
+  },
+  {
+   "f": "F-491",
+   "detalle": "La ficha dice 'autoría no capturada' y le atribuye '+81,7% con datos demográficos, 820 participantes'. El paper es de Carrillo, Citraro, Aghazhadeh Ardebili, Taietta, Rossetti, Ferrara, Veltri y Stella (abr-2026): 770 italianos, 4 sesiones, 4 LLMs, susceptibilidad por rasgos. La cifra de 81,7% y N=820 es del preprint de Salvi et al. (registrado ahora como F-542)."
+  }
+ ],
+ "notas": "Lectura a fondo de persuasión. Texto completo bloqueado por la red (arXiv, Science, PNAS); se leyeron resúmenes oficiales y, para F-499, las salidas del código de análisis publicado en GitHub. Se actualizan en su sitio T-135 (apoyo mal atribuido) y T-136 (detalle del repositorio).",
+ "actualizaciones_en_su_sitio": {
+  "T-135": {
+   "o": "c_persuasion_concentrada",
+   "apoyo": "Corregido: 770 italianos en 4 sesiones con 4 LLMs; el cambio de opinión se concentra en quienes confían más en la IA y son más amables, extravertidos y con más necesidad de cognición. (El +81,7% era de Salvi, F-542.)"
+  },
+  "T-136": {
+   "apoyo": "8.587 participantes, 4 temas: microtargeting no superó al genérico (p=0,23; código público en GitHub); en dos temas el genérico fue mejor. Mejor mensaje genérico: +6,2 pp (IC 4,5-7,9)."
+  }
+ }
+}

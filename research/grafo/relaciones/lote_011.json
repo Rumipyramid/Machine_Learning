@@ -1,0 +1,39 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-18"
+ ],
+ "entidades": [
+  {
+   "id": "hu_2025",
+   "nombre": "Meta-análisis de segundo orden de Hu et al. (JBDM 2025)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "calidad_metaanalisis_nudge",
+   "nombre": "Baja calidad metodológica de los meta-análisis de nudges",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "hu_2025",
+   "p": "refuta",
+   "o": "c_nudge_efectivo_general",
+   "f": "F-18",
+   "apoyo": "14 meta-análisis, 1.638 estudios, ~30 M de participantes: d=0,27 (IC95% 0,16-0,38) que cae a d=0,004 tras ajustar por sesgo de publicación.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_nudge_efectivo_general",
+   "p": "tiene_limite",
+   "o": "calidad_metaanalisis_nudge",
+   "f": "F-18",
+   "apoyo": "La mayoría de meta-análisis incluidos fue calificada de calidad baja o críticamente baja; piden meta-análisis preregistrados.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "Pase de profundidad: F-18 ubicada y leída a nivel abstract; la relación de heterogeneidad del lote 010 se actualizó en su sitio (ficha→abstract). El efecto ajustado (~0) converge con Maier (F-17)."
+}

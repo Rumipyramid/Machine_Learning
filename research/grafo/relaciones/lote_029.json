@@ -1,0 +1,385 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-544",
+  "F-545",
+  "F-546",
+  "F-548",
+  "F-551",
+  "F-555",
+  "F-566",
+  "F-567",
+  "F-568",
+  "F-571",
+  "F-573",
+  "F-574"
+ ],
+ "entidades": [
+  {
+   "id": "fidelidad_algoritmica",
+   "nombre": "Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "experimento_turing",
+   "nombre": "Experimento de Turing (TE): replicar estudios con sujetos humanos simulados por un LLM",
+   "tipo": "metrica"
+  },
+  {
+   "id": "distorsion_hiperprecision",
+   "nombre": "Distorsión de hiperprecisión de LLMs (respuestas demasiado exactas frente a humanos)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "investigacion_psicologica",
+   "nombre": "Investigación en ciencia psicológica con participantes",
+   "tipo": "concepto"
+  },
+  {
+   "id": "desalineacion_opinion_grupos",
+   "nombre": "Desalineación entre las opiniones de un LLM y las de grupos demográficos",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ajuste_feedback_humano",
+   "nombre": "Ajuste fino con feedback humano (RLHF)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "opinionqa",
+   "nombre": "OpinionQA (benchmark de alineación de opiniones con 60 grupos de EE.UU.)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "gpt3",
+   "nombre": "Modelo de lenguaje GPT-3 (davinci)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "psicologia_de_maquinas",
+   "nombre": "Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva",
+   "tipo": "concepto"
+  },
+  {
+   "id": "fallas_razonamiento_causal",
+   "nombre": "Fallas de razonamiento causal en LLMs",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "ia_en_investigacion",
+   "nombre": "Herramientas de IA en la investigación científica",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ilusion_comprension",
+   "nombre": "Ilusiones de comprensión (creer entender el mundo más de lo que se entiende)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "monocultivo_cientifico",
+   "nombre": "Monocultivos científicos (dominan ciertos métodos, preguntas y puntos de vista)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "choices13k",
+   "nombre": "Conjunto choices13k de elecciones riesgosas (Peterson et al., Science 2021)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "sesgo_conjunto_datos",
+   "nombre": "Sesgo del conjunto de datos de entrenamiento (más ruido de decisión, equipreferencia)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "completitud_teoria",
+   "nombre": "Completitud de una teoría (fracción de la variación predecible que capta)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "modelos_conductuales_economicos",
+   "nombre": "Modelos económicos de decisión (loterías, juegos, secuencias aleatorias)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "racionalidad_economica",
+   "nombre": "Racionalidad económica (consistencia con maximización de utilidad por preferencia revelada)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_llm_sesgos_humanos",
+   "nombre": "Los LLMs reproducen los sesgos y heurísticas de decisión humanos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "irracionalidad_no_humana_llm",
+   "nombre": "Irracionalidad de los LLMs distinta de los sesgos humanos e inconsistente",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "fidelidad_algoritmica",
+   "p": "aplica_a",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-544",
+   "apoyo": "Political Analysis 2023: condicionar GPT-3 con historias sociodemográficas reales genera 'muestras de silicio' cuyo sesgo es fino y demográficamente correlacionado, propiedad que los autores llaman fidelidad algorítmica.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "experimento_turing",
+   "p": "mide",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-545",
+   "apoyo": "ICML 2023: el Experimento de Turing evalúa cuánto reproduce un LLM conductas de distintos humanos replicando estudios clásicos (Ultimátum, garden-path, Milgram, sabiduría de multitudes); los tres primeros replicaron hallazgos previos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "distorsion_hiperprecision",
+   "f": "F-545",
+   "apoyo": "ICML 2023: el experimento de sabiduría de multitudes revela una 'distorsión de hiperprecisión' en algunos modelos, incluidos ChatGPT y GPT-4, que podría afectar aplicaciones en educación y artes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "distorsion_hiperprecision",
+   "f": "F-545",
+   "apoyo": "ICML 2023: ChatGPT y GPT-4 figuran entre los modelos que muestran la distorsión de hiperprecisión al simular la sabiduría de multitudes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "aplica_a",
+   "o": "investigacion_psicologica",
+   "f": "F-546",
+   "apoyo": "Trends Cogn Sci 2023: revisa evidencia incipiente y propone un modelo teórico de cuándo los LLM podrían sustituir a participantes humanos en psicología, con advertencias sobre su uso.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "desalineacion_opinion_grupos",
+   "f": "F-548",
+   "apoyo": "ICML 2023: las opiniones de los LLMs difieren de las de 60 grupos de EE.UU. tanto como demócratas y republicanos en cambio climático, y la brecha persiste aun orientando el modelo hacia un grupo concreto.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ajuste_feedback_humano",
+   "p": "aumenta",
+   "o": "desalineacion_opinion_grupos",
+   "f": "F-548",
+   "apoyo": "ICML 2023: el ajuste fino con feedback humano, pensado para alinear los modelos, parece amplificar la desalineación con la opinión pública y se asocia a sesgo hacia la izquierda.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "opinionqa",
+   "p": "mide",
+   "o": "desalineacion_opinion_grupos",
+   "f": "F-548",
+   "apoyo": "ICML 2023: OpinionQA usa encuestas de opinión de alta calidad para medir la alineación de LLMs con 60 grupos demográficos de EE.UU. en temas del aborto a la automatización.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "psicologia_de_maquinas",
+   "p": "aplica_a",
+   "o": "gpt3",
+   "f": "F-551",
+   "apoyo": "PNAS 2023: evalúa a GPT-3 con una batería de experimentos canónicos de psicología cognitiva sobre decisión, búsqueda de información, deliberación y razonamiento causal.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "gpt3",
+   "p": "tiene_limite",
+   "o": "sensibilidad_redaccion_llm",
+   "f": "F-551",
+   "apoyo": "PNAS 2023: perturbaciones pequeñas en tareas de viñetas desvían mucho a GPT-3, pese a que en su forma original las resuelve igual o mejor que humanos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "gpt3",
+   "p": "tiene_limite",
+   "o": "fallas_razonamiento_causal",
+   "f": "F-551",
+   "apoyo": "PNAS 2023: GPT-3 no muestra exploración dirigida y falla rotundamente en tareas de razonamiento causal.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_en_investigacion",
+   "p": "aumenta",
+   "o": "ilusion_comprension",
+   "f": "F-555",
+   "apoyo": "Nature 2024: las soluciones de IA propuestas para la ciencia pueden explotar nuestras limitaciones cognitivas y volvernos vulnerables a ilusiones de comprensión.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ilusion_comprension",
+   "p": "asocia_con",
+   "o": "monocultivo_cientifico",
+   "f": "F-555",
+   "apoyo": "Nature 2024: las ilusiones de comprensión impiden ver la formación de monocultivos científicos, que vuelven a la ciencia menos innovadora y más propensa a errores.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ml_generacion_hipotesis",
+   "p": "aumenta",
+   "o": "prediccion_conducta_humana",
+   "f": "F-566",
+   "apoyo": "Science 2021: teorías de decisión diferenciables, ajustadas con redes neuronales sobre el mayor experimento de elección riesgosa, producen un modelo nuevo y más preciso de la decisión humana que conserva siglos de hallazgos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ml_generacion_hipotesis",
+   "p": "origina_en",
+   "o": "choices13k",
+   "f": "F-566",
+   "apoyo": "Science 2021: el método se alimenta del mayor experimento de elección riesgosa hecho hasta entonces, usado para entrenar algoritmos restringidos a producir teorías psicológicas interpretables.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "choices13k",
+   "p": "tiene_limite",
+   "o": "sesgo_conjunto_datos",
+   "f": "F-567",
+   "apoyo": "Nature Hum Behav 2024: en choices13k las elecciones entre apuestas estocásticamente dominadas se sesgan sistemáticamente hacia la equipreferencia, lo que los autores atribuyen a mayor ruido de decisión.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ml_generacion_hipotesis",
+   "p": "tiene_limite",
+   "o": "sesgo_conjunto_datos",
+   "f": "F-567",
+   "apoyo": "Nature Hum Behav 2024: las teorías aprendidas por ML dependen del conjunto de datos; los autores concluyen que sigue haciendo falta combinar teoría y análisis de datos para entender modelos de ML de la elección riesgosa.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "completitud_teoria",
+   "p": "mide",
+   "o": "modelos_conductuales_economicos",
+   "f": "F-568",
+   "apoyo": "J Polit Econ 2022: además de la exactitud predictiva, la completitud mide qué fracción de la variación predecible capta un modelo; aplicada a loterías, juego inicial y secuencias aleatorias revela cuánto margen de mejora queda.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "racionalidad_economica",
+   "f": "F-571",
+   "apoyo": "PNAS 2023: en decisiones presupuestarias de riesgo, tiempo, sociales y de comida, GPT obtiene mayores puntajes de racionalidad que humanos de un experimento paralelo y de la literatura.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "respalda",
+   "o": "c_sinteticas_menos_varianza",
+   "f": "F-571",
+   "apoyo": "PNAS 2023: los parámetros de preferencia estimados para GPT difieren levemente de los humanos y muestran menor heterogeneidad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "heuristicas_juicio",
+   "f": "F-573",
+   "apoyo": "J Exp Psychol Gen 2024: en cuatro estudios ChatGPT se dejó influir por anclas aleatorias, juzgó una conjunción más probable que sus componentes y fue sesgado por anécdotas salientes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "asocia_con",
+   "o": "efecto_dotacion",
+   "f": "F-573",
+   "apoyo": "J Exp Psychol Gen 2024: además de las heurísticas clásicas, GPT-3.5 mostró efectos de encuadre y efecto dotación, pese a carecer de procesos afectivos como la aversión a la pérdida.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "respalda",
+   "o": "c_llm_sesgos_humanos",
+   "f": "F-573",
+   "apoyo": "J Exp Psychol Gen 2024: los mismos prompts aplicados a humanos y a GPT-3.5 muestran heurísticas y efectos de decisión similares, lo que sugiere un rol del lenguaje en su origen.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "irracionalidad_no_humana_llm",
+   "p": "contradice",
+   "o": "c_llm_sesgos_humanos",
+   "f": "F-574",
+   "apoyo": "R Soc Open Sci 2024: al evaluar 7 LLMs con tareas de psicología cognitiva, sus respuestas incorrectas suelen diferir de los sesgos humanos: son irracionales, pero no de forma humana.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "irracionalidad_no_humana_llm",
+   "f": "F-574",
+   "apoyo": "R Soc Open Sci 2024: los LLMs muestran una inconsistencia significativa de respuestas y errores que no reflejan los humanos, una capa extra de irracionalidad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-545",
+   "detalle": "Falta el volumen/páginas: PMLR 202:337-371.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-545",
+   "detalle": "No contradice: la ficha dice que la 'hiperprecisión' es dato de memoria no verificado, pero el resumen oficial sí la reporta (sabiduría de multitudes; ChatGPT y GPT-4). Puede retirarse la advertencia.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
+  },
+  {
+   "f": "F-546",
+   "detalle": "Faltan volumen, páginas y DOI: Trends in Cognitive Sciences 27:597-600, doi 10.1016/j.tics.2023.04.008.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-567",
+   "detalle": "Faltan número, páginas y DOI: Nature Human Behaviour 8(4):679-691, doi 10.1038/s41562-023-01784-6.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-573",
+   "detalle": "Falta el número: JEP: General 153(4), abril 2024.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-574",
+   "detalle": "Falta volumen/número: Royal Society Open Science 11(6).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a 85% hacia N6 (grupo 544): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

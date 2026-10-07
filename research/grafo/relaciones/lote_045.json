@@ -1,0 +1,289 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-667",
+  "F-668",
+  "F-669",
+  "F-670",
+  "F-671",
+  "F-672",
+  "F-673",
+  "F-674",
+  "F-675",
+  "F-676"
+ ],
+ "entidades": [
+  {
+   "id": "protocolo_orden_aleatorio",
+   "nombre": "Protocolo experimental de orden aleatorio (estímulos sin continuidad, poco natural)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "modelo_compuerta_atencional",
+   "nombre": "Modelo de compuerta atencional del tiempo (Zakay y Block): más atención al tiempo = más 'pulsos' contados = duración más larga",
+   "tipo": "concepto"
+  },
+  {
+   "id": "juicio_duracion_prospectivo",
+   "nombre": "Duración juzgada cuando la persona sabe de antemano que deberá estimarla (vivencia del tiempo mientras pasa)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "juicio_duracion_retrospectivo",
+   "nombre": "Duración juzgada por sorpresa, después (reconstruida desde la memoria)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "block_hancock_zakay_2010_est",
+   "nombre": "Meta-análisis Block, Hancock y Zakay 2010 (carga cognitiva y juicios de duración)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "activacion_emocional",
+   "nombre": "Activación emocional (arousal: nivel de alerta fisiológica)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "duracion_percibida",
+   "nombre": "Duración subjetiva percibida de un evento",
+   "tipo": "resultado"
+  },
+  {
+   "id": "miedo_agudo",
+   "nombre": "Miedo agudo ante un evento amenazante",
+   "tipo": "constructo"
+  },
+  {
+   "id": "resolucion_temporal_percibida",
+   "nombre": "Resolución temporal de la percepción (capacidad de distinguir eventos rápidos)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "codificacion_memoria_rica",
+   "nombre": "Codificación de memoria más densa de un evento saliente",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_miedo_ralentiza_percepcion",
+   "nombre": "El miedo ralentiza la percepción en vivo ('cámara lenta')",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "stetson_2007_est",
+   "nombre": "Estudio Stetson, Fiesta y Eagleman 2007 (caída libre de 31 m)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "estimulo_oddball",
+   "nombre": "Estímulo inesperado o distinto dentro de una serie repetida (oddball)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "justicia_cola",
+   "nombre": "Justicia percibida en la cola (respeto del orden de llegada)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "evaluacion_espera",
+   "nombre": "Evaluación o satisfacción del cliente con la espera",
+   "tipo": "resultado"
+  },
+  {
+   "id": "informacion_tiempo_espera",
+   "nombre": "Informar al cliente el tiempo esperado de espera",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tiempo_espera_percibido",
+   "nombre": "Tiempo de espera percibido por el cliente (frente al real)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "funcion_potencia_psicofisica",
+   "nombre": "Función psicofísica de potencia (Stevens) entre magnitud real y percibida",
+   "tipo": "concepto"
+  },
+  {
+   "id": "barra_progreso_animada",
+   "nombre": "Barra de progreso con animación visual (estrías o pulsos)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "efecto_bouba_kiki",
+   "nombre": "Efecto bouba/kiki (sonidos 'redondos' con formas curvas, 'agudos' con formas puntiagudas)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "simbolismo_sonoro",
+   "nombre": "Simbolismo sonoro (la relación sonido-significado no es del todo arbitraria)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sistema_escritura",
+   "nombre": "Sistema de escritura (forma de las letras)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "correspondencias_crossmodales",
+   "nombre": "Correspondencias crossmodales (emparejamientos consistentes entre rasgos de distintos sentidos)",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ley_vierordt",
+   "p": "tiene_limite",
+   "o": "protocolo_orden_aleatorio",
+   "f": "F-667",
+   "apoyo": "Glasauer y Shi 2021: una secuencia de paseo aleatorio produce menos tendencia central que una aleatoria con las mismas duraciones; la ley depende del protocolo de laboratorio.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "carga_cognitiva",
+   "p": "reduce",
+   "o": "juicio_duracion_prospectivo",
+   "f": "F-668",
+   "apoyo": "Block, Hancock y Zakay 2010 (meta-análisis, 117 experimentos): con más carga cognitiva la razón subjetiva/objetiva prospectiva disminuye.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "carga_cognitiva",
+   "p": "aumenta",
+   "o": "juicio_duracion_retrospectivo",
+   "f": "F-668",
+   "apoyo": "Block et al. 2010: con más carga cognitiva la razón subjetiva/objetiva retrospectiva aumenta (modelos de memoria).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "block_hancock_zakay_2010_est",
+   "p": "respalda",
+   "o": "modelo_compuerta_atencional",
+   "f": "F-668",
+   "apoyo": "Block et al. 2010: los hallazgos prospectivos respaldan modelos de recursos atencionales, en especial control ejecutivo.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "activacion_emocional",
+   "p": "aumenta",
+   "o": "duracion_percibida",
+   "f": "F-669",
+   "apoyo": "Droit-Volet y Meck 2007 (revisión): el arousal acelera el reloj interno y produce sobreestimación; rostros de ira > alegres > tristes.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "miedo_agudo",
+   "p": "aumenta",
+   "o": "juicio_duracion_retrospectivo",
+   "f": "F-670",
+   "apoyo": "Stetson et al. 2007: tras 31 m de caída libre, la propia caída se estimó 36% más larga que la de otros.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "stetson_2007_est",
+   "p": "refuta",
+   "o": "c_miedo_ralentiza_percepcion",
+   "f": "F-670",
+   "apoyo": "Stetson et al. 2007: durante 31 m de caída libre no hubo mayor resolución temporal visual; la 'cámara lenta' no ocurre en la percepción en vivo.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "codificacion_memoria_rica",
+   "p": "media",
+   "o": "juicio_duracion_retrospectivo",
+   "f": "F-670",
+   "apoyo": "Stetson et al. 2007 proponen que la codificación más rica en memoria hace que el evento parezca más largo en retrospectiva (explicación, no medida directa).",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "estimulo_oddball",
+   "p": "aumenta",
+   "o": "duracion_percibida",
+   "f": "F-671",
+   "apoyo": "Tse et al. 2004: el oddball se percibe más largo que los estímulos estándar (~30-50% según citas posteriores).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "justicia_cola",
+   "p": "aumenta",
+   "o": "evaluacion_espera",
+   "f": "F-672",
+   "apoyo": "Larson 1987 (ensayo): violar el orden de llegada genera enojo; la justicia de la cola y la información sobre la demora moldean la actitud del cliente.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "informacion_tiempo_espera",
+   "p": "reduce",
+   "o": "tiempo_espera_percibido",
+   "f": "F-673",
+   "apoyo": "Antonides et al. 2002 (campo, call center): informar el tiempo esperado redujo significativamente la sobreestimación de la espera.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "informacion_tiempo_espera",
+   "p": "tiene_limite",
+   "o": "evaluacion_espera",
+   "f": "F-673",
+   "apoyo": "Antonides et al. 2002: la misma información aumentó el efecto negativo de la espera percibida sobre la evaluación.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "funcion_potencia_psicofisica",
+   "p": "mide",
+   "o": "tiempo_espera_percibido",
+   "f": "F-673",
+   "apoyo": "Antonides et al. 2002: la percepción de la espera telefónica se describe mejor con una función psicofísica de potencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "barra_progreso_animada",
+   "p": "reduce",
+   "o": "tiempo_espera_percibido",
+   "f": "F-674",
+   "apoyo": "Harrison et al. 2010 (CHI): barras con estrías hacia atrás o pulsos acelerados se perciben más rápidas que una barra sólida en esperas idénticas de 5 s (~10% según prensa).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "efecto_bouba_kiki",
+   "p": "respalda",
+   "o": "simbolismo_sonoro",
+   "f": "F-675",
+   "apoyo": "Ramachandran y Hubbard 2001: 95-98% de estudiantes de EE. UU. y hablantes de tamil asignan 'bouba' a la forma curva y 'kiki' a la puntiaguda.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "efecto_bouba_kiki",
+   "p": "origina_en",
+   "o": "correspondencias_crossmodales",
+   "f": "F-676",
+   "apoyo": "Ćwiek et al. 2022: en 25 lenguas el efecto se explica por la correspondencia entre voz y forma visual, no por la ortografía.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "sistema_escritura",
+   "p": "tiene_limite",
+   "o": "efecto_bouba_kiki",
+   "f": "F-676",
+   "apoyo": "Ćwiek et al. 2022: el efecto no es más fuerte en escrituras con letras redondas para 'bouba'; alfabeto romano solo marginalmente más propenso.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI); cifras de fuentes secundarias marcadas en el apoyo."
+}

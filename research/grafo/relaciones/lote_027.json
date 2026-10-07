@@ -1,0 +1,312 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-42",
+  "F-43",
+  "F-57",
+  "F-58",
+  "F-59",
+  "F-63",
+  "F-64",
+  "F-65",
+  "F-66"
+ ],
+ "entidades": [
+  {
+   "id": "verificador_sintomas_electronico",
+   "nombre": "Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "seguridad_triage_paciente",
+   "nombre": "Seguridad del paciente en el triage automatizado",
+   "tipo": "resultado"
+  },
+  {
+   "id": "precision_triage_moderada",
+   "nombre": "Precisión de triage moderada (coincidencia exacta ~54% con enfermera)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "enfermedad_infrecuente",
+   "nombre": "Enfermedad poco común",
+   "tipo": "concepto"
+  },
+  {
+   "id": "presentacion_atipica",
+   "nombre": "Presentación clínica atípica",
+   "tipo": "concepto"
+  },
+  {
+   "id": "factibilidad_seguridad_modelo_ia",
+   "nombre": "Seguridad, fiabilidad y factibilidad del modelo de IA en entorno real",
+   "tipo": "resultado"
+  },
+  {
+   "id": "diseno_stepped_wedge",
+   "nombre": "Diseño escalonado aleatorizado por clusters (stepped-wedge)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sesgo_tendencias_seculares",
+   "nombre": "Riesgo de sesgo por mala especificación de tendencias seculares",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "riesgo_contaminacion_retencion",
+   "nombre": "Problemas de retención y contaminación por desfase entre reclutamiento e intervención",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "tamano_muestral_requerido",
+   "nombre": "Tamaño muestral requerido (número de clusters/prácticas)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "validacion_metodos_mixtos",
+   "nombre": "Validación clínica con métodos mixtos y viñetas de casos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cfir",
+   "nombre": "Marco Consolidado de Investigación en Implementación (CFIR)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "complejidad_cfir",
+   "nombre": "CFIR exhaustivo pero engorroso de aplicar",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "datos_log_conducta",
+   "nombre": "Trazas digitales / logfiles de uso real",
+   "tipo": "metrica"
+  },
+  {
+   "id": "adopcion_apps_mhealth",
+   "nombre": "Adopción de apps de salud móvil (mHealth)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "nivel_educativo",
+   "nombre": "Nivel educativo",
+   "tipo": "constructo"
+  },
+  {
+   "id": "micro_costeo",
+   "nombre": "Micro-costeo (enumeración y costeo de cada insumo)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "calidad_reporte_microcosteo",
+   "nombre": "Calidad metodológica y de reporte muy variable en micro-costeo",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "verificador_sintomas_electronico",
+   "p": "asocia_con",
+   "o": "seguridad_triage_paciente",
+   "f": "F-42",
+   "apoyo": "JMIR Hum Factors 2024: en 877 evaluaciones reales en Finlandia, el 97,6% de los triajes de Omaolo fueron seguros frente a la enfermera y 21 casos críticos no mostraron riesgo para el paciente.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "verificador_sintomas_electronico",
+   "p": "tiene_limite",
+   "o": "precision_triage_moderada",
+   "f": "F-42",
+   "apoyo": "JMIR Hum Factors 2024: la coincidencia exacta de Omaolo con el triage de enfermera fue 53,7% (66,6% sumando sobre-triage leve); sensibilidad 62,6% y especificidad 69,2%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "presentacion_atipica",
+   "p": "reduce",
+   "o": "precision_diagnostica",
+   "f": "F-43",
+   "apoyo": "JMIR Form Res 2024: la precisión del top-10 del symptom checker cayó a 14,5% en presentaciones atípicas; la presentación típica se asoció con más acierto (OR 6,92).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "enfermedad_infrecuente",
+   "p": "reduce",
+   "o": "precision_diagnostica",
+   "f": "F-43",
+   "apoyo": "JMIR Form Res 2024: en enfermedades infrecuentes la precisión fue 24,2%; la enfermedad común se asoció con acierto (OR 4,13). Precisión global 45,1%, sin mejora en 3 años.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "silent_trial",
+   "p": "mide",
+   "o": "factibilidad_seguridad_modelo_ia",
+   "f": "F-57",
+   "apoyo": "Front Digit Health 2022: el silent trial evalúa el modelo en pacientes prospectivos con clínicos cegados, para medir seguridad, fiabilidad y factibilidad con riesgo mínimo antes de un ensayo clínico.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "silent_trial",
+   "p": "aplica_a",
+   "o": "ia_clinica",
+   "f": "F-57",
+   "apoyo": "Front Digit Health 2022: los autores proponen que las aplicaciones de IA clínica incorporen el silent trial antes de un ensayo clínico a escala completa.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_stepped_wedge",
+   "p": "tiene_limite",
+   "o": "sesgo_tendencias_seculares",
+   "f": "F-58",
+   "apoyo": "Int J Epidemiol 2020: a igualdad de condiciones, el stepped-wedge tiene mayor riesgo de sesgo que el ensayo por clusters paralelo por mala especificación de las tendencias seculares en el análisis.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_stepped_wedge",
+   "p": "reduce",
+   "o": "tamano_muestral_requerido",
+   "f": "F-59",
+   "apoyo": "Trials 2013 (resumen de congreso): en DQIP y GP-POLY, al recibir todos la intervención y medir repetidamente, el stepped-wedge redujo el número de prácticas requerido frente a un diseño paralelo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "diseno_stepped_wedge",
+   "p": "tiene_limite",
+   "o": "riesgo_contaminacion_retencion",
+   "f": "F-59",
+   "apoyo": "Trials 2013 (resumen de congreso): el diseño alarga los ensayos y, con desfases largos entre reclutamiento e inicio, crea problemas de retención y de contaminación.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "validacion_metodos_mixtos",
+   "p": "aplica_a",
+   "o": "verificador_sintomas_electronico",
+   "f": "F-63",
+   "apoyo": "JMIR Res Protoc 2023: protocolo cuanti-cualitativo para validar Omaolo en atención primaria finlandesa, con viñetas clínicas para casos raros y agudos; 877 de 964 evaluaciones útiles.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cfir",
+   "p": "es_tipo_de",
+   "o": "marco_implementacion",
+   "f": "F-64",
+   "apoyo": "Learn Health Syst 2020: CFIR es un marco de ciencia de implementación usado para diseñar, evaluar e implementar intervenciones, considerando facilitadores y barreras.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cfir",
+   "p": "tiene_limite",
+   "o": "complejidad_cfir",
+   "f": "F-64",
+   "apoyo": "Learn Health Syst 2020: su exhaustividad lo vuelve engorroso; los autores lo simplificaron con 3 adaptaciones tras 23 entrevistas y 5 observaciones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "datos_log_conducta",
+   "p": "mide",
+   "o": "adopcion_apps_mhealth",
+   "f": "F-65",
+   "apoyo": "JMIR mHealth uHealth 2019: con logfiles de un panel móvil de Hong Kong, el 27,5% de usuarios adoptó al menos un género de app de salud.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nivel_educativo",
+   "p": "asocia_con",
+   "o": "adopcion_apps_mhealth",
+   "f": "F-65",
+   "apoyo": "JMIR mHealth uHealth 2019: los adoptantes de apps mHealth en Hong Kong tienden a ser mujeres y de mayor nivel educativo.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "micro_costeo",
+   "p": "tiene_limite",
+   "o": "calidad_reporte_microcosteo",
+   "f": "F-66",
+   "apoyo": "Health Econ Rev 2021: los estudios de micro-costeo varían mucho en calidad; el 86,2% no reportó por separado costos unitarios y cantidades de recursos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-42",
+   "detalle": "Autor registrado como 'NCBI/PMC (estudio Finlandia, Omaolo)': los autores son Liu, Kaila y Koskela; falta revista (JMIR Human Factors 11:e55099) y DOI 10.2196/55099.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-43",
+   "detalle": "Autor registrado como 'NCBI/PMC (estudio Japón)': autores Harada, Sakamoto, Sugimoto y Shimizu; falta revista (JMIR Formative Research 8:e53985) y DOI 10.2196/53985.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-57",
+   "detalle": "Falta volumen/artículo (4:929508) y DOI 10.3389/fdgth.2022.929508.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-58",
+   "detalle": "Autores: son dos (Hemming y Taljaard), no 'et al.'; falta revista (Int J Epidemiol 49(3):1043-1052) y DOI 10.1093/ije/dyaa077.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-59",
+   "detalle": "Autor y año incorrectos: no es Mdege et al. 2011 (ese es otro paper, J Clin Epidemiol 64(9):936-948); los autores son Dreischulte, Grant, Donnan y Guthrie, 2013, Trials 14(Suppl 1):O87.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-59",
+   "detalle": "Rigor: es un resumen de congreso (meeting abstract), no una 'revisión metodológica peer-reviewed'; 🟢A sobrevalora.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
+  },
+  {
+   "f": "F-59",
+   "detalle": "Contradice a la ficha: el resumen dice que el diseño crea problemas potenciales para evitar la contaminación (por el desfase entre reclutamiento e inicio), no que reduzca la contaminación entre clusters. La equidad/aceptación sí aparece como posible mejora del reclutamiento.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario (y en los nodes que lo citaban)."
+  },
+  {
+   "f": "F-63",
+   "detalle": "Autor registrado como 'Protocolo de validación Omaolo': autores Liu, Koskela y Kaila; falta revista (JMIR Res Protoc 12:e41423) y DOI 10.2196/41423.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-64",
+   "detalle": "Autor incorrecto: no es Damschroder et al. (creadora de CFIR, 2009); los autores son Safaeinili, Brown-Johnson, Shaw, Mahoney y Winget. Año: publicado online 2019, número 2020 (no 2021). Falta revista (Learning Health Systems 4(1):e10201) y DOI.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-65",
+   "detalle": "Autor registrado como 'PMC (análisis de logfiles, Hong Kong)': autores Guan, Peng y Zhu; falta revista (JMIR mHealth uHealth 7(5):e13679) y DOI 10.2196/13679.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-66",
+   "detalle": "Año 2020 → publicado el 6-ene-2021 (Health Econ Rev 11:1); faltan coautores (Lazar, Ruger) y DOI.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a 85% hacia N6 (grupo 42): fuentes de rigor A no procesadas, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}

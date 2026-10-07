@@ -1,0 +1,143 @@
+{
+ "fecha": "2026-10-07",
+ "f_ids": [
+  "F-773",
+  "F-763",
+  "F-782",
+  "F-787",
+  "F-789",
+  "F-798",
+  "F-764",
+  "F-797"
+ ],
+ "entidades": [
+  {
+   "id": "c_dano2017_9200",
+   "nombre": "El daño físico del Niño Costero 2017 fue de US$9.200 M (APESEG)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_dano2017_3100",
+   "nombre": "El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_bcrp_impacto_07",
+   "nombre": "BCRP: El Niño resta 0,7 pp al PBI 2026 (estimación previa)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_bcrp_impacto_09",
+   "nombre": "BCRP: El Niño resta 0,9 pp al PBI 2026 (Reporte de Inflación de setiembre)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_cafe_primer_parametrico",
+   "nombre": "'Café Seguro Perú' es el primer seguro paramétrico del país",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "lim_pbi_1998_inconsistente",
+   "nombre": "Costo de 1997-98 reportado como 4,5% o 6,2% del PBI según la fuente secundaria",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "lim_ciclo_reaseguro",
+   "nombre": "Cifras de precio del reaseguro de renovaciones de años distintos (−16% vs. +10-30%)",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_dano2017_9200",
+   "p": "origina_en",
+   "o": "pagos_seguros_2017",
+   "f": "F-773",
+   "apoyo": "APESEG calcula que el seguro cubrió ~7% sobre una base de US$9.200 M de daño físico.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_dano2017_3100",
+   "p": "origina_en",
+   "o": "danos_nino_2017",
+   "f": "F-763",
+   "apoyo": "INDECI/OPS: pérdidas por >US$3.000 M, ~1,6% del PBI.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_dano2017_9200",
+   "p": "contradice",
+   "o": "c_dano2017_3100",
+   "f": "F-773",
+   "apoyo": "Bases de daño incompatibles: con US$3.100 M lo pagado+reservado sería ~35% del daño, no 7%. La de APESEG probablemente incluye necesidades de reconstrucción (sin verificar).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_bcrp_impacto_09",
+   "p": "aplica_a",
+   "o": "crecimiento_pbi",
+   "f": "F-782",
+   "apoyo": "Reporte de Inflación (set-2026) vía prensa: ~0,9 pp en 2026 y ~1,1 pp en 2027.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_bcrp_impacto_07",
+   "p": "aplica_a",
+   "o": "crecimiento_pbi",
+   "f": "F-787",
+   "apoyo": "Nota de Gestión anterior al reglamento paramétrico: impacto de 0,7 pp del PBI 2026.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_bcrp_impacto_07",
+   "p": "contradice",
+   "o": "c_bcrp_impacto_09",
+   "f": "F-787",
+   "apoyo": "0,7 vs. 0,9 pp: por las fechas, son vintages distintos del BCRP que se revisó al alza cuando el evento pasó a extraordinario.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cafe_primer_parametrico",
+   "p": "aplica_a",
+   "o": "oferta_competidores_nino",
+   "f": "F-789",
+   "apoyo": "La nota de Gestión presenta 'Café Seguro Perú' (La Positiva) como el primer paramétrico del país.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_indice_pronostico",
+   "p": "refuta",
+   "o": "c_cafe_primer_parametrico",
+   "f": "F-798",
+   "apoyo": "El producto ENSO de 2010 de la misma compañía fue el primer seguro de índice de pronóstico regulado del mundo: el café no es el primero.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "danos_nino_1998",
+   "p": "tiene_limite",
+   "o": "lim_pbi_1998_inconsistente",
+   "f": "F-764",
+   "apoyo": "US$3.500 M = 4,5% del PBI (CAF) o 6,2% del PBI de 1998, según la nota secundaria; no se abrió el documento CAF.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_reaseguro_cat",
+   "p": "tiene_limite",
+   "o": "lim_ciclo_reaseguro",
+   "f": "F-797",
+   "apoyo": "−16% en jul-2026 frente a alzas de 10-30% atribuidas a Gallagher Re en una renovación 1.7 de otro año: no son comparables.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "El Niño · tensiones entre fuentes que en la integración previa se registraron por error como discrepancias ledger↔fuente (el ledger reporta fielmente cada fuente y ya las advierte)."
+}

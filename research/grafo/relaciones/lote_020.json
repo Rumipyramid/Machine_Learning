@@ -1,0 +1,157 @@
+{
+ "fecha": "2026-10-03",
+ "f_ids": [
+  "F-230",
+  "F-248",
+  "F-252",
+  "F-334",
+  "F-335",
+  "F-337"
+ ],
+ "entidades": [
+  {
+   "id": "necesidades_psicologicas",
+   "nombre": "Necesidades psicológicas básicas: competencia, autonomía y vínculo",
+   "tipo": "constructo"
+  },
+  {
+   "id": "calidad_motivacion",
+   "nombre": "Calidad de la motivación, desempeño y bienestar al perseguir metas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "modelo_datos_tarea",
+   "nombre": "UI generada desde un modelo de datos de la tarea (no desde código)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ajuste_ui_usuario",
+   "nombre": "Capacidad del usuario de ajustar la interfaz generada a sus necesidades",
+   "tipo": "resultado"
+  },
+  {
+   "id": "codiseno_servicios_salud",
+   "nombre": "Participación del público en el diseño de servicios de salud",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "evaluacion_resultados_codiseno",
+   "nombre": "Evaluación de resultados del codiseño",
+   "tipo": "metrica"
+  },
+  {
+   "id": "confianza_aseguradora",
+   "nombre": "Confianza del consumidor en la aseguradora",
+   "tipo": "constructo"
+  },
+  {
+   "id": "info_insuficiente_aseguradora",
+   "nombre": "Información insuficiente para juzgar a la aseguradora",
+   "tipo": "concepto"
+  },
+  {
+   "id": "escala_confianza_aseguradora",
+   "nombre": "Escala de confianza en aseguradoras de salud (Zheng et al. 2002)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "default_nudge",
+   "nombre": "Opción por defecto (default)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "amenaza_libertad",
+   "nombre": "Amenaza percibida a la libertad y enojo (reactancia)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "emisor_experto",
+   "nombre": "Presentar al emisor como experto",
+   "tipo": "intervencion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "necesidades_psicologicas",
+   "p": "media",
+   "o": "calidad_motivacion",
+   "f": "F-230",
+   "apoyo": "Psychological Inquiry 2000: la motivación requiere considerar necesidades innatas de competencia, autonomía y vínculo; el efecto de perseguir metas depende de cuánto permiten satisfacerlas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "modelo_datos_tarea",
+   "p": "aumenta",
+   "o": "ajuste_ui_usuario",
+   "f": "F-248",
+   "apoyo": "CHI 2025: generar la UI desde un modelo de datos de la tarea (entidades, relaciones, datos) permite al usuario ajustarla iterativamente, algo difícil cuando se genera código. Las cifras de exactitud de la ficha no se verificaron.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "codiseno_servicios_salud",
+   "p": "tiene_limite",
+   "o": "evaluacion_resultados_codiseno",
+   "f": "F-252",
+   "apoyo": "Revisión de 93 artículos (países de ingresos altos): menos de la mitad evalúa resultados; predominan métodos cualitativos y mixtos y el reporte es pobre.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "info_insuficiente_aseguradora",
+   "p": "reduce",
+   "o": "confianza_aseguradora",
+   "f": "F-334",
+   "apoyo": "Países Bajos: la gente sabe que la aseguradora compra atención y lo ve propio de su rol, con una confianza razonable pero frágil; le falta información para juzgarla y cree, sin razón, que son empresas comerciales.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "escala_confianza_aseguradora",
+   "p": "mide",
+   "o": "confianza_aseguradora",
+   "f": "F-335",
+   "apoyo": "Health Services Research 2002: escala para medir confianza en aseguradoras públicas y privadas, con análisis de estructura factorial, consistencia y validez. Las dimensiones de la ficha no se verificaron en el resumen.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "default_nudge",
+   "p": "aumenta",
+   "o": "amenaza_libertad",
+   "f": "F-337",
+   "apoyo": "Experimento (JBEE 2023): el default se percibe como más amenazante para la libertad que una recomendación y menos que un mínimo obligatorio; la motivación intrínseca modera la diferencia.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "emisor_experto",
+   "p": "reduce",
+   "o": "amenaza_libertad",
+   "f": "F-337",
+   "apoyo": "Presentar al emisor como experto, no como político, reduce la amenaza a la libertad y el enojo.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-252",
+   "detalle": "Autoría 'Varios' → Lloyd, Kenny y Hyett (2021).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: autoría corregida en el ledger el 2026-10-03 (regla permanente de datos bibliográficos)."
+  },
+  {
+   "f": "F-335",
+   "detalle": "Autoría 'Zheng, B. et al.', año '~2002' y título 'A Measure of Trust in Insurers' → Zheng, Hall, Dugan, Kidd y Levine (2002), 'Development of a scale to measure patients' trust in health insurers'.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-03 (regla permanente)."
+  },
+  {
+   "f": "F-334",
+   "detalle": "Autoría corregida (Stolper et al., 2024; regla permanente). Queda abierto el hallazgo: la ficha dice que 'los consumidores desconfían del asegurador porque perciben conflicto financiero de interés'. El resumen dice otra cosa: la confianza en su rol de comprador de atención es 'razonable aunque frágil', les falta información para juzgarlo y creen erróneamente que son empresas comerciales."
+  }
+ ],
+ "notas": "Lote de amplitud (fuentes nuevas) con resúmenes oficiales. F-250 se dejó fuera: solo se ubicó la autoría, no los resultados."
+}

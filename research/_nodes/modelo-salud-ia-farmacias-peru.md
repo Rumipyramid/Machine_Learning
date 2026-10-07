@@ -2,7 +2,7 @@
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
-> Fecha de elaboración: 2026-07-06.
+> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-07 (F-59 corregida: es un resumen de congreso de Dreischulte 2013; la revisión de Mdege 2011 pasa a F-646).
 > Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada
@@ -457,8 +457,10 @@ stepped-wedge como alternativa neutral — afirman explícitamente que el diseñ
 mayor riesgo de sesgo** que el cluster-RCT paralelo clásico, y por eso la extensión CONSORT para
 stepped-wedge **exige** que los investigadores justifiquen explícitamente por qué eligieron este
 diseño en vez del paralelo; no lo trata como opción por defecto. Además, la ventaja
-ética/de aceptabilidad que cita F-59 (Mdege et al. 2011, revisión de 25 estudios, la mayoría
-citando razones éticas) no es consenso académico: Kotz et al. (2012, mismo journal —
+ética/de aceptabilidad que se atribuía a F-59 (Mdege et al. 2011, revisión de 25 estudios, la mayoría
+citando razones éticas — ⚠️ *corrección 2026-10-04: la ficha F-59 del ledger es en realidad un resumen de
+congreso de Dreischulte et al. 2013, que reporta problemas de retención y de contaminación del diseño; la
+revisión de Mdege 2011 quedó registrada aparte como F-646*) no es consenso académico: Kotz et al. (2012, mismo journal —
 *Journal of Clinical Epidemiology*) publicaron una crítica formal titulada "Use of the stepped
 wedge design cannot be recommended", argumentando que esa ventaja ética percibida (nadie se queda
 permanentemente sin la intervención) no es real porque la implementación secuencial también es
@@ -475,10 +477,14 @@ forma natural), RQ9, RQ10, RQ11.
 ### E4 — Medición de sesgo de automatización con benchmark externo
 
 Registrar cada vez que el farmacéutico aprueba, modifica o rechaza la sugerencia de la IA, y
-comparar contra la tasa base documentada en sistemas clínicos: **5.2%-7%** de sesgo de
-automatización (aceptar una sugerencia errónea) en radiología/patología (F-60); estudio
-específico de sesgo de automatización en **soporte de decisión de prescripción** — análogo
-directo al backlog farmacéutico (F-61).
+comparar contra la tasa base documentada en **soporte de decisión de prescripción**, análogo
+directo al backlog farmacéutico: en un experimento con 26 médicos generales, **5,2%** de las
+decisiones correctas se cambiaron por incorrectas al seguir el consejo del sistema, con una
+mejora neta de precisión de 8% (F-61; tesis doctoral, casos hipotéticos). La revisión
+sistemática de la misma autora identifica los mediadores (experiencia, confianza en el sistema,
+diseño) pero no da una tasa única (F-60). ⚠️ *Corregido 2026-10-03: este pasaje decía "5.2%-7%
+en radiología/patología (F-60)"; el 5,2% es de F-61 y en prescripción, y el 7% no tiene origen
+verificado.*
 
 **Resuelve**: RQ13, RQ2 (interpretación con denominador de comparación).
 
@@ -584,7 +590,10 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   **peruana** específicamente (toda es de Finlandia/Japón/Portugal).
 - No se accedió al texto completo del Proyecto de Ley 08488 ni a su estado de trámite más
   allá de marzo 2026 — verificar directamente en el portal del Congreso antes de decisiones
-  de producto.
+  de producto. **Actualización 2026-10-03 (vía resumen de vLex, F-508):** la Comisión de Salud
+  aprobó en diciembre de 2025 un dictamen conjunto con el PL 2522/2021-CR, pendiente de la
+  Comisión Permanente; su avance posterior sigue sin verificar (ver
+  [[seguros-comportamiento-mundo-peru]] §3.9).
 - Las estrategias de testeo (§4) están validadas en la literatura de salud digital global;
   ninguna fue aplicada específicamente a un flujo idéntico (triage IA + backlog farmacéutico +
   delivery) en Perú — son la mejor práctica disponible, no una garantía de que funcionen
@@ -594,6 +603,9 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
 
 ## Conexiones
 
+- [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — las
+  olas de diarrea, dengue y malaria asociadas a El Niño (su §3.2) son picos de demanda de atención
+  primaria y farmacia en el norte: caso de estrés para este modelo.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — este node es el diseño concreto
   para Perú; ese node aporta el marco global de mecanismos (capitación, atención primaria,
   Singapur/NHS) que valida y matiza este diseño (ver su §3 y su síntesis §4).

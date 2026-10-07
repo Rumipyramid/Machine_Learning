@@ -1,0 +1,119 @@
+{
+ "fecha": "2026-10-07",
+ "f_ids": [
+  "F-779",
+  "F-788",
+  "F-789",
+  "F-790",
+  "F-795",
+  "F-796",
+  "F-797",
+  "F-801"
+ ],
+ "entidades": [
+  {
+   "id": "micro_parametrico_microfinanzas",
+   "nombre": "Microseguro paramétrico vía microfinancieras (MiCRO)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "seguro_enf_tropicales",
+   "nombre": "Seguro de enfermedades tropicales (dengue, zika, chikungunya)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "costo_bolsillo_dengue",
+   "nombre": "Gasto de bolsillo por dengue fuera del SIS",
+   "tipo": "resultado"
+  },
+  {
+   "id": "precio_reaseguro_cat",
+   "nombre": "Precio del reaseguro catastrófico (−16% en jul-2026)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "brecha_proteccion_nino_peru",
+   "p": "aplica_a",
+   "o": "norte_costero_peru",
+   "f": "F-779",
+   "apoyo": "APESEG 2026: millones de personas y pymes sin respaldo; solo 187 de ~50 mil colegios con seguro contra desastres.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "oferta_competidores_nino",
+   "p": "aplica_a",
+   "o": "hogares_pobres",
+   "f": "F-788",
+   "apoyo": "Mapfre lleva microseguros de bajo costo para emprendedores (vivienda y negocio) a Perú en 2026.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "oferta_competidores_nino",
+   "p": "asocia_con",
+   "o": "seguro_parametrico",
+   "f": "F-789",
+   "apoyo": "La Positiva lanza 'Café Seguro Perú', paramétrico de lluvia para caficultores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "micro_parametrico_microfinanzas",
+   "p": "es_tipo_de",
+   "o": "seguro_parametrico",
+   "f": "F-790",
+   "apoyo": "MiCRO: paramétrico satelital vía microfinancieras; 171 mil pólizas (52% mujeres), US$26 M pagados a ene-2026, sin reclamo del beneficiario.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "micro_parametrico_microfinanzas",
+   "p": "asocia_con",
+   "o": "microfinanzas_norte",
+   "f": "F-790",
+   "apoyo": "Modelo de distribución análogo al de las cajas del norte peruano.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_enf_tropicales",
+   "p": "asocia_con",
+   "o": "dengue_peru",
+   "f": "F-795",
+   "apoyo": "Prudential Brasil indemniza por diagnóstico de dengue y otras; demanda de la categoría +10% en 1T 2024; Unimed +163% autorizaciones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "dengue_peru",
+   "p": "aumenta",
+   "o": "costo_bolsillo_dengue",
+   "f": "F-796",
+   "apoyo": "Piura 2023: ~S/3.000 de adelanto en clínica privada sin seguro; el SIS financió >280 mil tratamientos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_reaseguro_cat",
+   "p": "asocia_con",
+   "o": "c_nino_2026_extraordinario",
+   "f": "F-797",
+   "apoyo": "Reaseguro cat property −16% en jul-2026 (−12% en ene) justo cuando el Met Office proyecta anomalías >3 °C sin precedentes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "oferta_competidores_nino",
+   "p": "aplica_a",
+   "o": "danos_nino_2017",
+   "f": "F-801",
+   "apoyo": "Pacífico Hogar Flex Digital cubre por cláusula adicional inundación por desborde y huaicos por lluvia.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "notas": "El Niño · Benchmarks, competencia, reaseguro y salud estacional (renumerado desde F-529..F-588 al integrar la rama de N6)"
+}

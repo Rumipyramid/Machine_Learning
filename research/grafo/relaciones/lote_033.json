@@ -1,0 +1,303 @@
+{
+ "fecha": "2026-10-04",
+ "f_ids": [
+  "F-646",
+  "F-24",
+  "F-106",
+  "F-131",
+  "F-191",
+  "F-353",
+  "F-375",
+  "F-509",
+  "F-531"
+ ],
+ "entidades": [
+  {
+   "id": "implementacion_rutinaria_intervenciones_salud",
+   "nombre": "Evaluación de intervenciones durante su implementación rutinaria",
+   "tipo": "concepto"
+  },
+  {
+   "id": "reporte_insuficiente_stepped_wedge",
+   "nombre": "Variación en métodos de análisis y reporte insuficiente en ensayos stepped-wedge",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "firma_al_inicio_honestidad",
+   "nombre": "Firmar al inicio de un formulario para inducir honestidad ('signing first')",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "fraude_datos_firmar_primero_2012",
+   "nombre": "Experimentos fraudulentos que sustentaban 'firmar primero' (paper de 2012)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "confianza_investigacion_academica",
+   "nombre": "Confianza en la investigación académica y su publicación",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mlr_oscar_health",
+   "nombre": "Medical loss ratio de Oscar Health (70,5% en el 1T 2026 vs 75,4% en el 1T 2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "registro_no_llamar_eeuu",
+   "nombre": "Registro Nacional 'No Llamar' de EE.UU. (FTC, 2003)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "regulacion_consentimiento_contacto_comercial",
+   "nombre": "Regulación de consentimiento previo para el contacto comercial (no llamar / opt-in)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "inscripcion_registro_no_llamar",
+   "nombre": "Números inscritos en el registro 'No Llamar' (>10 M en 4 días; >107 M al AF 2005)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "intencion_compra_online_seguro_vida",
+   "nombre": "Intención de comprar seguro de vida online",
+   "tipo": "resultado"
+  },
+  {
+   "id": "confianza_compra_online_seguro",
+   "nombre": "Confianza en la compra online de seguros",
+   "tipo": "constructo"
+  },
+  {
+   "id": "normas_subjetivas_compra_seguro",
+   "nombre": "Normas subjetivas sobre la compra de seguros",
+   "tipo": "constructo"
+  },
+  {
+   "id": "utilidad_facilidad_seguridad_web_percibidas",
+   "nombre": "Utilidad, facilidad de uso y seguridad web percibidas del canal online",
+   "tipo": "constructo"
+  },
+  {
+   "id": "programa_vitality_empleadores",
+   "nombre": "Programa de bienestar Vitality para empleadores (EE.UU.)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "costo_siniestros_medicos_empleador",
+   "nombre": "Costo anual de siniestros médicos por miembro (empleador)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "distribucion_seguros_latam",
+   "nombre": "Distribución de seguros en América Latina (canales)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "bancaseguros_latam",
+   "nombre": "Bancaseguros (distribución de seguros por bancos) en América Latina",
+   "tipo": "concepto"
+  },
+  {
+   "id": "loss_ratio_bruto_lemonade",
+   "nombre": "Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "desarrollo_favorable_reservas_lemonade",
+   "nombre": "Desarrollo favorable de siniestros de periodos previos en Lemonade (7 pp en el 2T 2026)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "npp_croda",
+   "nombre": "Ventas de productos nuevos y protegidos (NPP) como % de ventas de Croda",
+   "tipo": "metrica"
+  },
+  {
+   "id": "kpi_innovacion_ventas_productos_nuevos",
+   "nombre": "KPI de innovación: % de ventas de productos nuevos",
+   "tipo": "metrica"
+  }
+ ],
+ "triples": [
+  {
+   "s": "diseno_stepped_wedge",
+   "p": "aplica_a",
+   "o": "implementacion_rutinaria_intervenciones_salud",
+   "f": "F-646",
+   "apoyo": "J Clin Epidemiol 2011 (Mdege et al.): en 25 ensayos stepped-wedge, el diseño se usó sobre todo para evaluar intervenciones durante su implementación rutinaria, ya eficaces en entornos controlados o con fuerte creencia de beneficio.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "diseno_stepped_wedge",
+   "p": "tiene_limite",
+   "o": "reporte_insuficiente_stepped_wedge",
+   "f": "F-646",
+   "apoyo": "J Clin Epidemiol 2011 (Mdege et al.): la revisión halló variación en los métodos de análisis y calidad de reporte insuficiente; pide análisis y reporte consistentes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "firma_al_inicio_honestidad",
+   "p": "tiene_limite",
+   "o": "fraude_datos_firmar_primero_2012",
+   "f": "F-24",
+   "apoyo": "MIT Press 2025 (Bazerman): el paper de 2012 que mostró que firmar primero aumenta la honestidad tenía dos experimentos fraudulentos, revelados en 2021; dañó a organizaciones que implementaron la idea.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "fraude_datos_firmar_primero_2012",
+   "p": "reduce",
+   "o": "confianza_investigacion_academica",
+   "f": "F-24",
+   "apoyo": "MIT Press 2025 (Bazerman): el fraude en el paper sobre inducir honestidad truncó carreras académicas y socavó la fe en la investigación y la publicación académica.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "disciplina_precios_salud",
+   "p": "reduce",
+   "o": "mlr_oscar_health",
+   "f": "F-106",
+   "apoyo": "Oscar Health, 8-K 1T 2026: el MLR bajó de 75,4% a 70,5%, principalmente por su estrategia de precios disciplinada, la estacionalidad de siniestros y ajuste de riesgo y el desarrollo favorable de reservas previas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "registro_no_llamar_eeuu",
+   "p": "es_tipo_de",
+   "o": "regulacion_consentimiento_contacto_comercial",
+   "f": "F-131",
+   "apoyo": "FTC 2003: el registro nacional 'No Llamar' permite a los consumidores excluir su número del telemarketing; la FTC empezó a hacerlo cumplir el 1-oct-2003.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "registro_no_llamar_eeuu",
+   "p": "asocia_con",
+   "o": "inscripcion_registro_no_llamar",
+   "f": "F-131",
+   "apoyo": "FTC 2003 y 2006: más de 10 millones de números se inscribieron en los primeros 4 días (85% en línea) y más de 107 millones al cierre del año fiscal 2005.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "confianza_compra_online_seguro",
+   "p": "modera",
+   "o": "intencion_compra_online_seguro_vida",
+   "f": "F-191",
+   "apoyo": "Jindal J. Bus. Res. 2023 (Hanaysha et al.): en clientes de aseguradoras de Malasia, la confianza modera la relación entre normas subjetivas e intención de comprar seguro de vida online.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "normas_subjetivas_compra_seguro",
+   "p": "asocia_con",
+   "o": "intencion_compra_online_seguro_vida",
+   "f": "F-191",
+   "apoyo": "Jindal J. Bus. Res. 2023 (Hanaysha et al.): las normas subjetivas se asocian positivamente con la intención de comprar seguro de vida online (encuesta, SmartPLS).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "utilidad_facilidad_seguridad_web_percibidas",
+   "p": "asocia_con",
+   "o": "intencion_compra_online_seguro_vida",
+   "f": "F-191",
+   "apoyo": "Jindal J. Bus. Res. 2023 (Hanaysha et al.): utilidad, facilidad de uso y seguridad web percibidas se asocian positivamente con la intención de compra online; las habilidades web no.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "programa_vitality_empleadores",
+   "p": "reduce",
+   "o": "costo_siniestros_medicos_empleador",
+   "f": "F-353",
+   "apoyo": "Vitality Group 2024 (Impact Study, nota de prensa): ahorro de US$462 anuales por miembro comprometido, −4% en costo de siniestros (US$39,8 M) en ~40.000 vidas de 5 empleadores en 5 años.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "bancaseguros_latam",
+   "p": "parte_de",
+   "o": "distribucion_seguros_latam",
+   "f": "F-375",
+   "apoyo": "McKinsey 2025 (Informe Global de Seguros, LatAm): la bancaseguros llega a 80% de la distribución de vida y pensiones en Brasil y a 25% de los seguros patrimoniales en Chile.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "intermediarios_seguros",
+   "p": "parte_de",
+   "o": "distribucion_seguros_latam",
+   "f": "F-375",
+   "apoyo": "McKinsey 2025 (Informe Global de Seguros, LatAm): corredores y agentes aún representan 60-65% de las primas, con alta fragmentación (más de 210.000 en la región).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desarrollo_favorable_reservas_lemonade",
+   "p": "reduce",
+   "o": "loss_ratio_bruto_lemonade",
+   "f": "F-509",
+   "apoyo": "Lemonade, carta a accionistas 2T 2026 (8-K): el loss ratio bruto fue 60% e incluye 7 puntos de desarrollo favorable de periodos previos (sobre todo hogar y auto); un año antes era 67%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "npp_croda",
+   "p": "es_tipo_de",
+   "o": "kpi_innovacion_ventas_productos_nuevos",
+   "f": "F-531",
+   "apoyo": "Croda, resultados anuales 2014-2024: reporta cada año el % de ventas de productos nuevos y protegidos (21,4% en 2013, 23,4% en 2014, 27,4% en 2016, 33% en 2023, 35% en 2024).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [
+  {
+   "f": "F-24",
+   "detalle": "URL apunta a una nota de Science (2023) sobre Gino, no al libro de Bazerman (MIT Press, 2025) que nombra el título; ficha compuesta. Falta editorial (MIT Press).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-106",
+   "detalle": "La URL de la ficha es el 8-K del 4T/año 2025 (000156865126000008), que no puede contener el MLR del 1T 2026; la cifra 75,4%→70,5% está en el 8-K del 1T 2026 (000156865126000036).",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-131",
+   "detalle": "La URL de la ficha (GAO-05-113, publicada en ene-2005) no puede contener la cifra de 107 M a fines de 2005; esa cifra viene del informe anual de la FTC del AF 2005 (jul-2006). Los 10 M en 4 días vienen de la nota de prensa de la FTC de 2003.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-191",
+   "detalle": "La ficha dice que 'la complejidad del producto y la autoeficacia son factores críticos'; el abstract no estudia complejidad del producto y su proxy de autoeficacia (habilidades web) resultó NO significativo. Los determinantes respaldados son normas subjetivas, utilidad, facilidad de uso y seguridad web percibidas.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-191",
+   "detalle": "Falta revista: Jindal Journal of Business Research, 12(2), 233-250.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "f": "F-375",
+   "detalle": "Las cifras de bancaseguros (80% Brasil, 25% Chile), 60-65% de corredores/agentes y >210.000 intermediarios provienen del 'Informe Global de Seguros 2025: en busca del crecimiento en América Latina' de McKinsey, no del artículo 'Bancassurance: it's time to go digital' enlazado en la ficha.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: corregido en el ledger el 2026-10-04 con autorización del usuario."
+  },
+  {
+   "f": "F-375",
+   "detalle": "El artículo de McKinsey 'Bancassurance: it's time to go digital' es de 2019 (no 2023-2025); el informe MAPFRE sobre 2023 es de MAPFRE Economics.",
+   "estado": "cerrada",
+   "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  }
+ ],
+ "notas": "Lote del avance a N6 (grupo n6_0): fuentes pendientes priorizadas por rigor, con resumen oficial verificado el 2026-10-04 por un agente verificador y revisado antes de cargar."
+}
