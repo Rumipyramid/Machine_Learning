@@ -854,6 +854,33 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   bruto 60% (7 pp de desarrollo favorable) con pérdida neta de US$43 M y acción −24%. El mercado exige crecimiento
   rentable, no solo ratio sano. Confianza sin cambio (Alta en divergencia, Media-baja en causa).
 
+### 26. Ante El Niño 2026-27 el hueco de RIMAC no está en los activos corporativos sino en la liquidez del hogar — y solo se cubre por B2B2C, no vendiendo índice al hogar directo
+El node `fenomeno-el-nino-impacto-personas.md` (F-742 a F-801) deja una lectura de negocio con dos patas de calidad distinta. **Pata sólida (🟢A):**
+el seguro índice vendido directo al hogar no se masifica por desconfianza, falta de liquidez y baja saliencia aun con buen precio (F-799, experimentos
+de campo aleatorizados en India: transferibilidad a Perú no probada); la contratación mejora cuando el diseño se combina con crédito y apoyo de
+política (F-800); la demanda de seguro de inundación sube ~10% el año siguiente al evento y se diluye en ~15 años (F-791, datos de EE. UU.). **Pata
+de contexto (🔵B/🟠D):** la SBS emitió en setiembre de 2026 el primer reglamento de seguros paramétricos que permite contratar en beneficio de una
+colectividad (F-786, norma oficial leída por resumen de prensa); el reaseguro catastrófico está en mínimos de ciclo justo cuando llega un Niño récord
+(F-797, prensa sectorial); RIMAC pagó ~34% de lo indemnizado en 2017 (F-774, cifra de la propia compañía) y Pacífico ya ocupa el espacio mediático
+(F-785/F-801). **Jugada:** protección de cartera para microfinancieras y paramétrico colectivo de liquidez vía cajas, empleadores o municipios;
+la evidencia de demanda respalda ese canal y no el B2C directo. **Instinto (no dato):** el tamaño de la oportunidad y la ventana de 2027 antes de que el
+reaseguro endurezca no están medidos en el ledger; el riesgo de base y la antiselección por pronóstico público son reales y sin cuantificar.
+- **Evidencia:** F-791, F-799, F-800 (🟢A); F-786, F-774, F-784 (🔵B); F-797, F-785, F-801 (🟠D/🔵B de competencia)
+- **Confianza:** Media-alta en que el índice B2C directo no escala (A, aunque de otro país); Media en que B2B2C sea la vía correcta (inferida de la evidencia de demanda, no
+  probada en Perú); Baja en el dimensionamiento.
+- **Actualizado:** 2026-10-08
+
+### 27. Las muestras sintéticas generadas por LLM sirven para ordenar hipótesis, no para estimar efectos ni elegir segmentos — y calibrar con dato humano de la categoría es lo que funciona
+El node `convergencia-psicologia-economia-ia.md` (F-543 a F-645) reúne un patrón consistente: varianza comprimida frente a encuestas reales (F-552, 🟢A, comparación con ANES),
+efectos inflados y falsos positivos (F-556, F-550), segmentos exagerados 2-4x (F-558) y peor desempeño en personas con menos educación e ingresos (F-559); los tres
+últimos son preprints (🟡C) y pesan menos. Lo que sí funciona es anclar con datos humanos de la categoría (F-547, F-597). Hasta el modelo fundacional de cognición mejor
+publicado, Centaur (F-563, Nature), recibe críticas de memorización y de memoria/tiempos de reacción distintos a los humanos (ver entrada 184). Para `lapuerta` (generador por reglas
+calibrado con ENAHO/IPF) el riesgo es menor que en un LLM puro, pero no en la app de preguntas libres con Claude ni en NSE C/D/E, la mayoría peruana. **Jugada:** usar simulación para
+priorizar qué probar y reportar dispersión, no solo media; nunca citar un tamaño de efecto simulado como estimación; validar primero en NSE bajos con personas reales.
+- **Evidencia:** F-552, F-597, F-563 (🟢A); F-547, F-556, F-558, F-559 (🟡C, preprints/documentos de trabajo)
+- **Confianza:** Media (la dirección la sostienen fuentes A y varios C coincidentes; los tamaños dependen de preprints aún sin revisión por pares).
+- **Actualizado:** 2026-10-08
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -5648,6 +5675,36 @@ tiene el tamaño y los procesos para internalizarlo; el promedio meta-analítico
 - **Leído a fondo:** 2026-10-07 (`WebSearch`; paper no abierto)
 - **Conexión razonada, no forzada:** tensión de magnitud con F-430 ya anotada en el ledger; no cambia confianza de tesis.
 
+### 184. Un predictor que acierta no entiende la tarea hasta que sigue acertando con la consigna vaciada de sentido
+F-563 (Binz, Akata, …, Schulz, *Nature* 644, 2025). Centaur (Llama 3.1 70B afinado con Psych-101: 160 experimentos, >60 mil participantes, >10 M de elecciones) predice mejor que los
+modelos cognitivos clásicos la conducta de participantes no vistos y generaliza a dominios nuevos. La réplica crítica más concreta (equipo de Zhejiang, *National Science Open*) reemplazó las consignas por
+una neutra del tipo "elige la opción A" y el modelo siguió produciendo las respuestas "correctas": señal de que aprendió la distribución de respuestas y no la tarea. Bowers y colegas reportan además memoria
+y tiempos de reacción muy distintos a los humanos; Adolfi cuestiona que 160 experimentos cubran la cognición. **Heurística:** a cualquier modelo que predice conducta (personas sintéticas, scoring,
+propensión a comprar) pedirle la prueba de la consigna vaciada: si la salida no cambia al quitarle el contenido que debería gobernarla, predice el hábito, no el mecanismo, y no sirve para escenarios nuevos.
+- **Fuente:** F-563 (🟢A; el ledger lo marca "leído vía resumen")
+- **Leído a fondo:** 2026-10-08 (`WebSearch`; críticas conocidas por resúmenes de prensa, ni Nature ni el artículo de Zhejiang abiertos)
+- **Conexión razonada, no forzada:** tesis 27 (muestras sintéticas) y entrada 20 (LLM-as-judge no es vara neutral); no cambia confianza de tesis.
+
+### 185. Un efecto de laboratorio con estímulos estilizados no llega a la góndola sin una prueba de campo: el señuelo asimétrico replica, pero con condiciones angostas
+F-728 (Huber, Payne & Puto, *Journal of Consumer Research* 9(1), 1982). Agregar una opción dominada por una alternativa pero no por la otra aumentó la probabilidad de elegir la dominante, violando la
+regularidad de la elección racional. La literatura posterior (Frederick, Lee & Baskin y Yang & Lynn, *Journal of Marketing Research* 51(4), 2014) muestra que el efecto aparece sobre todo con atributos
+presentados en forma numérica y con estímulos estilizados; la réplica de los propios autores originales ("Let's Be Honest About the Attraction Effect") concede que replica con moderadores en ambos sentidos
+y que en el mercado real casi no existen opciones completamente dominadas. **Heurística:** antes de poner un "plan señuelo" en una cotización, preguntar si en ese producto existe de verdad una opción estrictamente
+dominada y qué tamaño de efecto sobrevive con estímulos reales; el valor es la pregunta de campo, no el titular de 1982. **Instinto (no dato):** en seguros, los planes se diferencian por deducibles y coberturas
+que rara vez producen dominancia estricta, así que el efecto probablemente rinde menos que en el laboratorio.
+- **Fuente:** F-728 (🟢A; experimento fundacional; el ledger aclara que no se obtuvo el abstract textual)
+- **Leído a fondo:** 2026-10-08 (`WebSearch`; 1982 y comentarios de 2014 conocidos por fichas y resúmenes, ninguno abierto)
+- **Conexión razonada, no forzada:** tesis 12 (estructurar la comparación, no podar el catálogo) y reglas RF de `fenomenos-psicologicos` (consultar el estado de replicación antes de apoyar una decisión); no cambia confianza.
+
+### 186. Una revisión canónica enmarca una teoría; no es un efecto que se pueda convertir en palanca de diseño
+F-689 (Barsalou, *Annual Review of Psychology* 59, 2008, pp. 617-645). Propone que la cognición se apoya en simulaciones modales (reactivar estados perceptivos, motores e introspectivos), estados corporales y
+acción situada, frente a la cognición como cómputo sobre símbolos amodales. Es una revisión narrativa sin tamaño de efecto agregado, y ella misma dedica una sección a "malentendidos comunes" del enfoque.
+**Heurística:** de un marco teórico no se deriva una palanca ("las señales corporales venden más"); lo que se convierte en decisión es un efecto concreto con su estado de replicación, y el priming
+encarnado cargado a ese marco tiene historial de replicación mixto (ver reglas RF del node de fenómenos). Citar a Barsalou para legitimar un recurso de diseño sin pasar por el efecto específico es usar un mapa como medición.
+- **Fuente:** F-689 (🟢A; revisión teórica arbitrada, leída por abstract)
+- **Leído a fondo:** 2026-10-08 (`WebSearch`; solo abstract e índice; las críticas al enfoque —p. ej. Mahon y Caramazza, 2008— no se verificaron en esta lectura)
+- **Conexión razonada, no forzada:** entrada 5 (buscar la literatura de malentendidos de un framework antes de aplicarlo) y entrada 182 (revisión = mapa, no efecto); no cambia confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5816,47 +5873,8 @@ tiene el tamaño y los procesos para internalizarlo; el promedio meta-analítico
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
   (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-06** — corrida de intuición, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-06). **2026-09-07** — corrida diaria de refinamiento, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-07).
-- **2026-09-08** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward e0a7da3→6c7c30a que trajo consigo el propio commit del 2026-09-07 de esta
-  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
-  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 8 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  vigesimosexto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra
-  ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo
-  por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no
-  la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva veintisiete días sin
-  correr). Sí corrió la rutina diaria de intuición (trigesimotercera desde el 2026-08-06): recalculé
-  por script el universo 🟢A del ledger (134 filas, filtro estricto por el marcador al inicio de la
-  celda de rigurosidad — corregí un falso positivo de mi propio script de selección, que antes contaba
-  como "verde" cualquier fila con un 🟢 mencionado en cualquier parte del texto, incluida una cita
-  interna a otra fuente, y así había clasificado mal a F-457 como 🟢A cuando en realidad es 🔵B) contra
-  `fuentes_leidas_lobo.md` (96 ya leídas) — 38 pendientes — y elegí 3 al azar sin reemplazo (Python
-  `random.sample`, sin semilla fija): F-57 (protocolo de silent trial de Kwong et al. 2022, ya citado
-  en el ledger solo por su umbral operativo de 60-90 días), F-142 (mecanismo de pie-en-la-puerta para
-  divulgación de datos online, ya citado solo por su hallazgo agregado) y F-242 (meta-análisis
-  explicabilidad-confianza en IA, ya citado solo por su correlación "moderada"). Las tres bloqueadas
-  por el proxy en su URL directa (frontiersin.org/researchgate.net/pmc.ncbi.nlm.nih.gov para F-57;
-  tandfonline.com para F-142; arxiv.org/ieeexplore.ieee.org para F-242); reconstruidas vía búsqueda
-  dirigida que confirmó detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya
-  citado — incluyendo, para F-57, una revisión de alcance de 2026 (*Nature Health*, mismo grupo de
-  autores) todavía no registrada en el ledger, que confirma que el campo de silent trials clínicos
-  sigue sin estandarizar cuatro años después del protocolo original. Sumé las entradas 97, 98 y 99 de
-  Intuición acumulada: (97) un umbral operativo propuesto por un paper (60-90 días) es la mejor
-  práctica documentada, no un estándar de industria adoptado — verificar adopción real años después,
-  matiza tesis 10 sin cambiar su confianza; (98) la paradoja de la privacidad no es caja negra: los
-  dos experimentos de campo reales (FinTech real, comunidad alumni real) detrás de F-142 aíslan una
-  palanca estructural (orden + fragmentación del formulario) que mueve la divulgación sin tocar la
-  actitud, matiza tesis 13 con validez ecológica sin cambiar su confianza; (99) un I² de ~78% junto a
-  una correlación "moderada" es el hallazgo en sí — dice que el contexto pesa más que el promedio, no
-  que el efecto sea establemente mediano, matiza tesis 22 sin cambiar su confianza. Ninguna tesis de
-  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, más
-  la corrección de un sesgo de conteo en mi propio script de selección aleatoria (sin impacto en las
-  96 lecturas previas: ninguna de ellas era F-457 ni ningún otro falso positivo del mismo tipo).
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 31
-  días de historial (2026-08-09 a hoy) — un día sobre la ventana de ~30 días; no podo todavía porque
-  el bloque más antiguo de la ventana (2026-08-09, ya consolidado con 2026-08-08) sigue siendo
-  información viva sobre el arranque de la rutina de intuición, la reviso mañana para podar si sigue
-  sobrando.
+- **2026-09-08** — *(Detalle podado y fusionado al resumen el 2026-10-08)*: ledger fijo en F-468, corrida de intuición sin cambio de confianza en tesis.
+
 - **2026-09-09** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md` por
   conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto
@@ -6798,3 +6816,13 @@ tiene el tamaño y los procesos para internalizarlo; el promedio meta-analítico
   de F-524: Rösch, Tiberius & Kraus) y 183 (innovación→desempeño depende de apropiación y escala; autoría de F-525: Rousseau et al.).
   Correcciones de autoría pendientes para `cronista`, no tocadas aquí. Con el nivel 🟢A agotado, desde mañana sigue 🔵B. Poda: 09-07
   fusionado al resumen; Bitácora cubre 2026-09-08 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-08** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es
+  `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), +272 desde mi última lectura (F-528)**. Cuatro bloques nuevos: F-529 a F-541 (cierre de la iteración 5 de
+  `tendencias-diseno-innovacion`), `convergencia-psicologia-economia-ia` (F-543 a F-645), `fenomenos-psicologicos` (F-647 a F-741) y `fenomeno-el-nino-impacto-personas`
+  (F-742 a F-801, renumerado). **Integrado:** tesis 26 (El Niño 2026-27: el hueco de RIMAC es la liquidez del hogar y se cubre por B2B2C; confianza Media-alta en que el índice B2C
+  directo no escala, Media en la vía B2B2C, Baja en el tamaño) y tesis 27 (muestras sintéticas por LLM: ordenan hipótesis, no estiman efectos; confianza Media porque tres de los cuatro
+  hallazgos de inflación son preprints 🟡C). Ninguna confianza previa cambió. **Intuición (nivel 🟢A; 144 pendientes tras la ampliación del ledger, 141 tras hoy):** sorteo F-689, F-563 y F-728,
+  leídas vía `WebSearch`. Entradas 184 (predictor que acierta ≠ entiende: prueba de la consigna vaciada, Centaur), 185 (señuelo asimétrico: replica con condiciones angostas; falta prueba de campo) y 186
+  (revisión canónica = marco, no efecto). Dato verificado en la lectura: la réplica de 2014 al señuelo es de *Journal of Marketing Research*, no del JCR. Poda: 09-08 fusionado al resumen; Bitácora cubre 2026-09-09 a hoy.
+  `fuentes_leidas_lobo.md` actualizado.

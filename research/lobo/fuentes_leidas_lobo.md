@@ -201,3 +201,6 @@
 | F-498 | 🟢 A | 2026-10-07 | Intuición 181 — XAI: la explicación aporta poco sobre la IA sola; el efecto grande viene de estudios con más sesgo |
 | F-524 | 🟢 A | 2026-10-07 | Intuición 182 — revisión sistemática de design thinking = mapa de factores, no prueba de efecto (autoría: Rösch, Tiberius & Kraus) |
 | F-525 | 🟢 A | 2026-10-07 | Intuición 183 — innovación→desempeño depende de apropiación y escala (autoría: Rousseau et al.) |
+| F-689 | 🟢 A | 2026-10-08 | Intuición 186 — una revisión canónica enmarca una teoría, no entrega un efecto; de un marco no se deriva una palanca de diseño sin el estado de replicación del efecto concreto |
+| F-563 | 🟢 A | 2026-10-08 | Intuición 184 — un predictor que acierta no entiende la tarea hasta que sigue acertando con la consigna vaciada (Centaur: crítica de memorización) |
+| F-728 | 🟢 A | 2026-10-08 | Intuición 185 — señuelo asimétrico: replica con condiciones angostas; un efecto de estímulos estilizados exige prueba de campo antes de entrar a una cotización |
