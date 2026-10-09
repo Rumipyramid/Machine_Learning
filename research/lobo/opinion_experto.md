@@ -5705,6 +5705,28 @@ encarnado cargado a ese marco tiene historial de replicación mixto (ver reglas 
 - **Leído a fondo:** 2026-10-08 (`WebSearch`; solo abstract e índice; las críticas al enfoque —p. ej. Mahon y Caramazza, 2008— no se verificaron en esta lectura)
 - **Conexión razonada, no forzada:** entrada 5 (buscar la literatura de malentendidos de un framework antes de aplicarlo) y entrada 182 (revisión = mapa, no efecto); no cambia confianza.
 
+### 187. Una norma descriptiva cercana le gana al argumento de fondo — pero "cercana" significa la situación inmediata del cliente, no el promedio de la categoría
+F-664 (Goldstein, Cialdini & Griskevicius, *Journal of Consumer Research* 35(3), 2008). Dos experimentos de campo en un hotel: la tarjeta "la mayoría de huéspedes reutiliza sus toallas" superó al llamado ambiental estándar, y la norma más local ("huéspedes de esta habitación") rindió más que la genérica del hotel. Es la "norma provincial": cuanto más se parece el grupo de referencia a la situación inmediata de quien decide, más pesa.
+**Heurística:** al diseñar un mensaje social para seguros, la pregunta no es "¿uso una norma?" sino "¿qué tan parecido es el grupo citado a este cliente en este momento?" ("clientes de tu distrito con tu tipo de vehículo", no "peruanos"). Límites que esta lectura no resolvió: es conducta de bajo costo y alto anonimato (toallas); renovar una póliza o compartir datos tiene costo y otra carga emocional, y la réplica alemana (Bohner & Schlüter, 2014) existe pero no verifiqué sus cifras. Un dato de ejecución: hay que poder decir la cifra verdadera; una norma inventada es riesgo regulatorio (ver tesis 8 y 15).
+- **Fuente:** F-664 (🟢A; experimentos de campo arbitrados, leída vía resúmenes de buscador)
+- **Leído a fondo:** 2026-10-09 (`WebSearch`; resumen y literatura secundaria, no el PDF)
+- **Conexión razonada, no forzada:** tesis 6 (testear en la propia población) y entrada 23 (efecto pequeño + canal barato); no cambia confianza.
+
+### 188. Un meta-análisis con efecto "moderado a grande" sobre un constructo heterogéneo no dice cuánto pesa en una decisión concreta
+F-738 (Stefan & David, *Journal of Applied Social Psychology* 43(2), 2013). Meta-análisis de experimentos sobre ilusión de control: D medio ponderado = 0,62 (IC95% 0,49-0,75). Los propios autores señalan alta heterogeneidad en las medidas dependientes, es decir, el "mismo" fenómeno agrupa cosas de naturaleza distinta. Además, la búsqueda arrojó un re-análisis posterior (Collabra) con evidencia fuerte de sesgo de publicación y efecto menor en manipulaciones de amenaza al control; no verifiqué que sea una crítica a este meta-análisis en particular, y el buscador no confirmó la autoría de la ficha (el ledger dice Stefan y David; otra tesis la cita así, indirecto).
+**Heurística:** antes de usar una D grande para justificar un diseño ("darle sensación de control al cliente sube la contratación"), preguntar qué mide la variable dependiente y si hay corrección por sesgo de publicación. Un IC angosto sobre un promedio heterogéneo es precisión sobre algo que no es una sola cosa.
+- **Fuente:** F-738 (🟢A; meta-análisis arbitrado, cifras leídas en resumen)
+- **Leído a fondo:** 2026-10-09 (`WebSearch`; autoría no confirmada por el buscador, queda para `cronista`)
+- **Conexión razonada, no forzada:** entrada 15 (el método de medición condiciona el "efecto estrella") y 186; no cambia confianza.
+
+### 189. Un efecto canónico de laboratorio se lee por sus condiciones de borde: el aliado único reduce la conformidad más de lo que la presión grupal la crea
+F-647 (Asch, *Psychological Monographs* 70(9), 1956). Con mayoría unánime de cómplices, ~un tercio de los ensayos críticos terminaron en conformidad (la fuente secundaria da 36,8% sobre 123 sujetos; Asch subrayaba que ~25% nunca se conformó). Cuando un cómplice rompía la unanimidad, la conformidad bajaba a ~5-9% según fuentes de segunda mano, sin verificar contra el original. Réplicas posteriores (Bond & Smith, 1996, 133 estudios) muestran variación por cultura y época, y réplicas exactas con tasas muy bajas (Perrin & Spencer).
+**Heurística:** la palanca de negocio del hallazgo no es "la gente se conforma" sino "la unanimidad es frágil": un solo referente discrepante deshace gran parte del efecto. Para prueba social en seguros (reseñas, "otros eligieron"), una sola voz creíble en contra pesa más que un volumen de coincidencias; y las cifras de 1956 son de laboratorio, con tasas que cambian con cultura y época, no un parámetro para `lapuerta`.
+- **Fuente:** F-647 (🟢A; monografía experimental, cifras de dissent tomadas de materiales didácticos, no del original)
+- **Leído a fondo:** 2026-10-09 (`WebSearch`; lectura débil: fuentes secundarias)
+- **Conexión razonada, no forzada:** entrada 186 (marco vs. efecto) y tesis 6; no cambia confianza.
+
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5875,43 +5897,8 @@ encarnado cargado a ese marco tiene historial de replicación mixto (ver reglas 
   (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-06** — corrida de intuición, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-06). **2026-09-07** — corrida diaria de refinamiento, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-07).
 - **2026-09-08** — *(Detalle podado y fusionado al resumen el 2026-10-08)*: ledger fijo en F-468, corrida de intuición sin cambio de confianza en tesis.
 
-- **2026-09-09** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md` por
-  conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto
-  que las últimas 9 corridas, **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoséptimo día seguido
-  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
-  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso —
-  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es
-  rutina de `cronista`, no de este proceso diario; ya lleva veintiocho días sin correr). **Cumplí la
-  revisión de poda señalada ayer:** el bloque "2026-08-08 a 2026-08-09" salió por completo de la
-  ventana de ~30 días (cutoff ≈2026-08-10) — lo fusioné con el bloque "2026-08-01 a 2026-08-07" en un
-  solo resumen "2026-08-01 a 2026-08-09" (nueve corridas); no se pierde ningún dato porque el detalle
-  de cada tesis e intuición de esos días ya vive en sus propias secciones con fecha. Sí corrió la
-  rutina diaria de intuición (trigesimocuarta desde el 2026-08-06): recalculé por script el universo
-  🟢A del ledger (134 filas cuyo marcador de rigurosidad empieza en 🟢, cifra confirmada tres corridas
-  seguidas) contra `fuentes_leidas_lobo.md` (99 ya leídas) — 35 pendientes — y elegí 3 al azar sin
-  reemplazo (`shuf` sobre `/dev/urandom`): F-224 (Cialdini & Goldstein 2004, prueba social, ya sostiene
-  tesis 18 solo por su hallazgo agregado), F-228 (Sweller 1988, carga cognitiva, ya sostiene tesis 18
-  solo por su hallazgo agregado) y F-240 (Mayer & Schwemmle 2025, mecanismos del design thinking, ya
-  sostiene tesis 21 solo por el resumen "sigue sin mecanismo establecido"). Las tres bloqueadas por el
-  proxy en su URL directa (doi.org y onlinelibrary.wiley.com ×2); reconstruidas vía búsqueda dirigida
-  que confirmó detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya citado. Sumé
-  las entradas 100, 101 y 102 de Intuición acumulada: (100) la prueba social (norma descriptiva) rinde
-  más específicamente bajo incertidumbre y compite con la norma injuntiva en vez de sumarse a ella —
-  matiza tesis 18 con la condición de activación real del mecanismo y el riesgo de que un testimonio
-  active sin querer la norma equivocada; (101) la pericia no inmuniza contra la sobrecarga cognitiva
-  intrínseca (interactividad de elementos) — cambia la estrategia de resolución, no el techo; la
-  palanca de diseño es reducir interactividad de elementos extraña a la tarea, no solo capacitar más al
-  asesor, matiza el diagnóstico Dx3 de tesis 18; (102) el resumen del ledger sobre F-240 ("sin mecanismo
-  causal establecido") resultó impreciso: la revisión sí nombra cuatro mecanismos (integración,
-  reencuadre, habilitación, involucramiento colaborativo) tras cribar 1.035 estudios — el déficit real
-  es falta de integración teórica profunda y de evaluación por contexto, no ausencia de mecanismo, lo
-  que cambia qué remedio pedir antes de invertir en el método, matiza tesis 21. Ninguna tesis de
-  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque
-  las tres entradas de hoy matizan directamente tesis 18 (dos veces) y 21. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
-  historial (2026-08-10 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
+- **2026-09-09** — *(Detalle podado y fusionado al resumen el 2026-10-09)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-10** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, working tree ya limpio, HEAD en `856aaf0` sin fast-forward pendiente) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
@@ -6826,3 +6813,5 @@ encarnado cargado a ese marco tiene historial de replicación mixto (ver reglas 
   leídas vía `WebSearch`. Entradas 184 (predictor que acierta ≠ entiende: prueba de la consigna vaciada, Centaur), 185 (señuelo asimétrico: replica con condiciones angostas; falta prueba de campo) y 186
   (revisión canónica = marco, no efecto). Dato verificado en la lectura: la réplica de 2014 al señuelo es de *Journal of Marketing Research*, no del JCR. Poda: 09-08 fusionado al resumen; Bitácora cubre 2026-09-09 a hoy.
   `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-09** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** desde ayer (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 141 pendientes → 138 tras hoy):** sorteo F-664, F-738 y F-647, leídas vía `WebSearch` (resúmenes y literatura secundaria; lectura débil, declarada). Entradas 187 (norma descriptiva: cuenta la cercanía a la situación inmediata), 188 (D grande sobre constructo heterogéneo ≠ peso en una decisión; sesgo de publicación) y 189 (Asch: la unanimidad es frágil). Pendiente para `cronista`: el buscador no confirmó la autoría de F-738 (Stefan & David). Poda: 09-09 fusionado al resumen; Bitácora cubre 2026-09-10 a hoy. `fuentes_leidas_lobo.md` actualizado.

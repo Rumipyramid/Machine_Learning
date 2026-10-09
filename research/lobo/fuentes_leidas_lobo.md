@@ -204,3 +204,6 @@
 | F-689 | 🟢 A | 2026-10-08 | Intuición 186 — una revisión canónica enmarca una teoría, no entrega un efecto; de un marco no se deriva una palanca de diseño sin el estado de replicación del efecto concreto |
 | F-563 | 🟢 A | 2026-10-08 | Intuición 184 — un predictor que acierta no entiende la tarea hasta que sigue acertando con la consigna vaciada (Centaur: crítica de memorización) |
 | F-728 | 🟢 A | 2026-10-08 | Intuición 185 — señuelo asimétrico: replica con condiciones angostas; un efecto de estímulos estilizados exige prueba de campo antes de entrar a una cotización |
+| F-664 | 🟢 A | 2026-10-09 | Intuición 187 — norma descriptiva cercana (provincial) gana al argumento de fondo; cercanía a la situación inmediata |
+| F-738 | 🟢 A | 2026-10-09 | Intuición 188 — meta-análisis D=0,62 sobre constructo heterogéneo: no equivale a peso en una decisión; sesgo de publicación |
+| F-647 | 🟢 A | 2026-10-09 | Intuición 189 — Asch: la unanimidad es frágil; un aliado único reduce la conformidad; cifras de laboratorio no son parámetro |
