@@ -5726,6 +5726,27 @@ F-647 (Asch, *Psychological Monographs* 70(9), 1956). Con mayoría unánime de c
 - **Leído a fondo:** 2026-10-09 (`WebSearch`; lectura débil: fuentes secundarias)
 - **Conexión razonada, no forzada:** entrada 186 (marco vs. efecto) y tesis 6; no cambia confianza.
 
+### 190. Un efecto fundacional puede ser real en su muestra y casi nulo al replicarse a gran escala: el tamaño de efecto de 1998 no es parámetro, y el desacuerdo entre meta-análisis es la señal
+F-707 (Baumeister, Bratslavsky, Muraven & Tice, *JPSP* 74(5), 1998). Cuatro experimentos pequeños: resistir chocolates o suprimir emociones llevó a abandonar antes tareas imposibles; de ahí el «agotamiento del ego». La búsqueda de hoy no trajo el texto original sino la secuela: un meta-análisis posterior halló d≈0,62, otro corrigió el sesgo de estudios pequeños y quedó cerca de cero, y el Registered Replication Report multilab de 2016 (23 laboratorios, ~2.141 participantes) dio d≈0,04, IC95% [−0,07; 0,15], que incluye el cero. Los autores originales respondieron que el protocolo no era el suyo. Lectura débil, vía resúmenes de repositorios.
+**Heurística:** cuando dos meta-análisis del mismo efecto discrepan en un orden de magnitud, el efecto no está medido; lo que existe es un debate sobre el método. Para decisiones de negocio («el cliente decide peor cuando está cansado o saturado»), no usar el d original ni suponer que «la fatiga de decisión» es una palanca de diseño; exigir una prueba en el propio flujo de cotización.
+- **Fuente:** F-707 (🟢A como paper original; la fuerza real hoy depende de réplicas que el ledger no recoge: brecha a registrar por `cronista`)
+- **Leído a fondo:** 2026-10-10 (`WebSearch`; lectura débil, solo la secuela de réplicas)
+- **Conexión razonada, no forzada:** entradas 188 (D grande sobre constructo heterogéneo) y 189 (cifras de laboratorio); no cambia confianza.
+
+### 191. Informar la espera calma la percepción pero puede empeorar la evaluación: reducir el error de estimación no es subir la satisfacción
+F-673 (Antonides, Verhoef & van Aalst, *Journal of Consumer Psychology* 12(3), 2002). Dos experimentos de campo con esperas telefónicas reales de un servicio comercial. La percepción del tiempo sigue una función potencia; la evaluación depende sobre todo de la distancia entre la espera aceptable y la percibida, y el costo monetario por minuto agrava el efecto negativo de esperar. Informar la espera esperada redujo la sobreestimación pero reforzó el efecto negativo de la espera percibida sobre la evaluación. Lectura vía resumen y fichas de repositorio; tamaños de muestra y modelos no confirmados.
+**Heurística:** al rediseñar una espera (call center, aprobación de siniestros, cola del chatbot), separar dos métricas: cuánto cree el cliente que esperó y cuánto le satisfizo. Una barra de progreso o un «te atendemos en 12 min» puede ganar en la primera y perder en la segunda si la cifra es larga. Probar con el tiempo real prometido, no con el mejor caso, y no prometer más de lo que la operación cumple.
+- **Fuente:** F-673 (🟢A; experimento de campo, 2002, sector telecom, extrapolación a seguros es instinto)
+- **Leído a fondo:** 2026-10-10 (`WebSearch`; lectura débil, resumen)
+- **Conexión razonada, no forzada:** tesis 16 (reclamo digital como punto de falla) como hipótesis de prueba; no cambia confianza.
+
+### 192. Un muestreo sintético que imita bien el promedio puede fallar al retratar al grupo: mirar la dispersión y la distancia al endogrupo, no solo la media
+F-553 (Wang, Morgenstern & Dickerson, *Nature Machine Intelligence*, 2025; arXiv 2402.01908). Estudio con ~3.200 humanos de 16 identidades contra cuatro LLM con consigna de identidad. Los modelos «malrepresentan» (sus respuestas se acercan más a cómo el exogrupo describe al grupo que a cómo se describe el grupo) y «aplanan» (pierden la diversidad interna). Los autores lo atribuyen a la función de entrenamiento y a que el modelo no sabe qué respondería realmente un miembro del grupo; el prompting en inferencia atenúa, no elimina. El título cambió entre la versión arXiv de 2024 («no pueden reemplazar») y la publicada («pueden retratar mal»). Venue no verificado por mí, solo secundarios.
+**Heurística:** al validar personas o encuestados sintéticos, comparar la varianza interna del grupo y la cercanía al autorretrato, no solo si la media coincide con la encuesta. Un segmento «NSE C, provincia» simulado con poca dispersión es una caricatura que parece dato. Úsalo para ordenar hipótesis y calibra con humanos del segmento, como ya dice la tesis 27.
+- **Fuente:** F-553 (🟢A; estudio grande, leído por resumen y citas)
+- **Leído a fondo:** 2026-10-10 (`WebSearch`; lectura débil)
+- **Conexión razonada, no forzada:** tesis 27 y `lapuerta` (validar dispersión intra-segmento); refuerza la confianza Media de tesis 27, no la sube.
+
 
 ## 📔 Bitácora
 
@@ -5899,46 +5920,7 @@ F-647 (Asch, *Psychological Monographs* 70(9), 1956). Con mayoría unánime de c
 
 - **2026-09-09** — *(Detalle podado y fusionado al resumen el 2026-10-09)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-10** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, working tree ya limpio, HEAD en `856aaf0` sin fast-forward pendiente) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 10 corridas, **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoctavo día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso — la
-  revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina
-  de `cronista`, no de este proceso diario; ya lleva veintinueve días sin correr). **Cumplí la poda
-  señalada el 2026-09-09:** el bloque "2026-08-10" salió por completo de la ventana de ~30 días
-  (cutoff ≈2026-08-11) — lo fusioné con el bloque "2026-08-01 a 2026-08-09" en un resumen ampliado
-  "2026-08-01 a 2026-08-10"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
-  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición no pudo
-  completarse hoy por una caída genuina de las herramientas de acceso a web de esta sesión, no por el
-  bloqueo habitual de proxy por dominio:** recalculé por script el universo 🟢A del ledger (134 filas)
-  contra `fuentes_leidas_lobo.md` (102 ya leídas) — 32 pendientes — y elegí 3 al azar sin reemplazo
-  (Python `random.sample`, sin semilla fija): F-54 (Garner 2022, extensión DIeSEL del diseño híbrido
-  de Curran), F-60 (Goddard et al. 2012, sesgo de automatización) y F-247 (Findlater & McGrenere,
-  menús estáticos/adaptativos/adaptables). Intenté leerlas a fondo por las tres vías que otras corridas
-  usaron para sortear el bloqueo de proxy por dominio (URL directa del ledger, mirrors alternativos —
-  Frontiers, Semantic Scholar, Google, incluso Wikipedia como prueba de diagnóstico — y `WebSearch`
-  directo): las tres URLs directas dieron `EGRESS_BLOCKED` (ncbi.nlm.nih.gov, pmc.ncbi.nlm.nih.gov,
-  dl.acm.org), los cuatro mirrors alternativos dieron el mismo `EGRESS_BLOCKED` sin excepción, y
-  `WebSearch` reportó la herramienta como no disponible en cinco intentos con queries distintas —
-  patrón consistente con una caída de acceso a red de la sesión, no con el bloqueo selectivo por
-  dominio que las corridas anteriores rodeaban con éxito. Ante esto, **decidí no inventar hallazgos
-  de lectura profunda desde memoria no verificada** (violaría la regla de "no inventes fuentes ni
-  datos" aplicada por analogía a la intuición): dejo F-54, F-60 y F-247 sin marcar como leídos en
-  `research/lobo/fuentes_leidas_lobo.md`, no sumé ninguna entrada nueva a "🧠 Intuición acumulada" hoy,
-  y la próxima corrida hará un sorteo nuevo (no necesariamente estos mismos tres) una vez el acceso a
-  red esté disponible. Ninguna tesis de negocio cambió de confianza — sin cambios sustanciales en la
-  evidencia ni en el mecanismo de intuición (pospuesto, no fallido silenciosamente). **Higiene de
-  archivo adicional:** al hacer la poda de hoy encontré que las corridas del 2026-08-21/09-07/09-09
-  habían marcado como "resumidas" las entradas diarias del 2026-08-01 al 2026-08-06 sin borrar el
-  texto original — quedaban duplicadas (el detalle completo Y su resumen, ambos en la bitácora).
-  Borré el detalle original de esas seis entradas (2026-08-01, 08-02, 08-03, 08-05×2, 08-06×2), dejo
-  constancia del hallazgo en la cabecera del bloque resumen para que quede trazable, y no se perdió
-  ningún dato porque el resumen ya cubría lo sustantivo y el detalle fino sigue en 🎯 Tesis vigentes /
-  🧠 Intuición acumulada. Bitácora con 29 días de historial (2026-08-12 a hoy) tras esta limpieza —
-  dentro de la ventana de ~30 días.
+- **2026-09-10** — *(Detalle podado y fusionado al resumen el 2026-10-10)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 - **2026-09-11** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward `2937e16→fb4eefb` que trajo consigo el propio commit del 2026-09-10 de esta
   opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
@@ -6815,3 +6797,5 @@ F-647 (Asch, *Psychological Monographs* 70(9), 1956). Con mayoría unánime de c
   `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-09** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** desde ayer (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 141 pendientes → 138 tras hoy):** sorteo F-664, F-738 y F-647, leídas vía `WebSearch` (resúmenes y literatura secundaria; lectura débil, declarada). Entradas 187 (norma descriptiva: cuenta la cercanía a la situación inmediata), 188 (D grande sobre constructo heterogéneo ≠ peso en una decisión; sesgo de publicación) y 189 (Asch: la unanimidad es frágil). Pendiente para `cronista`: el buscador no confirmó la autoría de F-738 (Stefan & David). Poda: 09-09 fusionado al resumen; Bitácora cubre 2026-09-10 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-10** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 140 pendientes → 137 tras hoy):** sorteo F-707, F-673 y F-553, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 190 (ego depletion: d≈0,62 en 1998-meta vs. d≈0,04 en réplica multilab de 2016; el desacuerdo es la señal), 191 (informar la espera reduce la sobreestimación pero puede empeorar la evaluación) y 192 (sujetos sintéticos: malrepresentan y aplanan al grupo; mirar dispersión). Pendiente para `cronista`: F-707 no recoge las réplicas de 2016 que cambian su lectura. Poda: 09-10 fusionado al resumen; Bitácora cubre 2026-09-11 a hoy. `fuentes_leidas_lobo.md` actualizado.

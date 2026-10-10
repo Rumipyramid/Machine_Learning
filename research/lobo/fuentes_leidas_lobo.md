@@ -207,3 +207,6 @@
 | F-664 | 🟢 A | 2026-10-09 | Intuición 187 — norma descriptiva cercana (provincial) gana al argumento de fondo; cercanía a la situación inmediata |
 | F-738 | 🟢 A | 2026-10-09 | Intuición 188 — meta-análisis D=0,62 sobre constructo heterogéneo: no equivale a peso en una decisión; sesgo de publicación |
 | F-647 | 🟢 A | 2026-10-09 | Intuición 189 — Asch: la unanimidad es frágil; un aliado único reduce la conformidad; cifras de laboratorio no son parámetro |
+| F-707 | 🟢 A | 2026-10-10 | Intuición 190 — efecto fundacional (ego depletion): d≈0,62 en un meta-análisis vs. d≈0,04 en réplica multilab 2016; el desacuerdo entre meta-análisis es la señal |
+| F-673 | 🟢 A | 2026-10-10 | Intuición 191 — informar la espera reduce la sobreestimación pero puede empeorar la evaluación; separar percepción y satisfacción |
+| F-553 | 🟢 A | 2026-10-10 | Intuición 192 — sujetos sintéticos LLM malrepresentan y aplanan al grupo; validar dispersión y cercanía al autorretrato, no solo la media |
