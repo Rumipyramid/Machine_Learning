@@ -2,11 +2,12 @@
   "name": "rumipyramid-skills",
   "displayName": "Rumipyramid Skills",
   "version": "1.0.0",
-  "description": "Skills personales de investigación (seeker/gossiper/marketer/trinidad/contexto-peruano), gestión de proyecto (beholder/actualizar/cronista/codice/many-brains), personas sintéticas de seguros (lapuerta) y presentaciones (rimac-slides/presentaciones-rimac/cerrajero).",
+  "description": "Skills personales de investigación (seeker/gossiper/marketer/trinidad/contexto-peruano), gestión de proyecto (beholder/actualizar/cronista/codice/many-brains), personas sintéticas de seguros (lapuerta) y presentaciones (rimac-slides/presentaciones-rimac/cerrajero), además de mentes arquetípicas para releer respuestas (mentes: El Mago).",
   "author": {
     "name": "Rumipyramid"
   },
   "repository": "https://github.com/Rumipyramid/Machine_Learning",
   "license": "MIT",
-  "skills": "./.claude/skills/"
+  "skills": "./.claude/skills/",
+  "agents": "./.claude/agents/"
 }

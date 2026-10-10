@@ -47,6 +47,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/chacal/` · `research/grafo/chacal.py` · `research/garaje/` | Skill `/chacal`: **auditor** que le hace 3 preguntas a Mu (diseño · conducta humano-IA · seguros), mide la evidencia detrás de cada respuesta con semáforos deterministas (`chacal_rubrica.json`) y deja apuntes en el **garaje** (`research/garaje/`: auditorías, `bitacora.jsonl`, `INDICE.md`) | Solo escribe en `garaje/`; no edita nodes/ledger; fuera del alcance de `alma.md` |
 | `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger. 🎨 **Identidad de marca de Mu** (2026-10-03): `.claude/skills/mu/IDENTIDAD.md` + `mu-base.css` — **toda pieza que se pida de Mu usa ese estilo** (blanco/negro + naranja de alerta, Impact + mono, esquinas rectas, reglas de 8px). Guía de uso: `research/grafo/mu_guia.html`. 💬 **Pregúntale a Mu** (artefacto privado https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm): `research/grafo/preguntar/index.html` + `build_corpus.py` (regenerar `mu-corpus.json` y republicar cuando cambien nodes o ledger). Capacidades `sample`, `db`, `user`: lleva el **backlog de temas**, el protocolo de temas sin cobertura y el **instrumento de impacto** "¿Te sirvió?" (ver secciones abajo) |
+| `.claude/skills/mentes/` · `.claude/agents/mago.md` · `research/grafo/mago.py` | Skill `/mentes`: **mentes arquetípicas** (subagentes con el estilo de un arcano mayor del tarot) que releen una respuesta ya dada. Activa: **El Mago** (conexiones ocultas → hecho del ledger o intuición declarada; caza el truco; cierra con un primer gesto) | **Opcional y posterior:** solo tras una primera respuesta y a pedido del usuario; nunca por defecto ni ofrecida proactivamente. `mago.py` (solo stdlib) pone la mesa: puentes, entidades puente, tensiones y cadenas inferidas. Solo lee; no edita nodes/ledger |
 | `.claude/skills/grafo/` | Skill `/grafo`: regenera y explica `research/grafo/ESTADO.md` y conduce el barrido semántico del códice por lotes | Reporta fallas de integridad sin maquillar |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
@@ -267,6 +268,21 @@ sí persiste entre corridas — cada corrida es una sesión nueva sin memoria de
   con una tesis ya vigente. Actualiza `fuentes_leidas_lobo.md` con lo leído ese día. Si en un día
   dado no hay 3 fuentes nuevas disponibles en el nivel de rigor actual (poco probable dado el tamaño
   del ledger), completar con el nivel siguiente en la misma corrida, nunca saltarse el paso.
+
+### 📌 Sistema de mentes (`/mentes`, lecturas arquetípicas)
+Capa de interpretación del segundo cerebro (2026-10-10): cada **mente** es un subagente con la personalidad de un
+arcano mayor del tarot que relee una respuesta ya dada desde su ángulo. No es oráculo (sin tirada ni azar; eso es
+`/edipo2`) ni reemplaza la respuesta: agrega una segunda lectura rotulada.
+
+- **Regla de activación:** opcional y **posterior a la primera respuesta**. Solo cuando el usuario la pide ("¿qué ve
+  el Mago?", "léelo con el Mago", `/mentes mago`). Nunca se aplica por defecto, nunca se mezcla en la primera
+  respuesta y no se ofrece de forma proactiva.
+- **Activa: El Mago** (`.claude/skills/mentes/mago.md`, subagente `mago`): ve conexiones ocultas entre nodes y
+  fuentes con `python research/grafo/mago.py --tema "…"`, baja cada una a tierra (⚡ firme · 🔗 plausible ·
+  🌙 intuición, apoyada en las heurísticas de El Lobo o declarada · 🎭 truco descartado) y cierra con un primer gesto.
+- **Propuestas** (sin diseñar): Papisa, Emperador, Justicia, Torre, Luna — registro en `.claude/skills/mentes/SKILL.md` §4.
+- Las mentes **solo leen**; lo que valga guardar lo proponen. Una lectura de mente no cuenta como consulta nueva en el
+  backlog de Mu.
 
 ### 📌 Skill: `edipo2` (oráculo personal)
 Lectura del presente y del futuro que cruza cuatro fuentes: (1) lo que el repo y la sesión
