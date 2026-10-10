@@ -61,16 +61,12 @@ def etiqueta(fuentes, fs):
     return ", ".join(f"{f}({rigor(fuentes, f)})" for f in sorted(fs, key=lambda x: int(x[2:])))
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--tema", default="", help="palabras clave para filtrar la mesa (sin tildes da igual)")
-    ap.add_argument("--top", type=int, default=8)
-    ap.add_argument("--json", action="store_true")
-    a = ap.parse_args()
-
+def mesa(tema="", top=8):
+    """Las cuatro bandejas filtradas por `tema` (vacío = todo); `top=None` devuelve las listas completas.
+    La usa también research/grafo/preguntar/build_corpus.py para el botón del Mago en "Pregúntale a Mu"."""
     nodes, fuentes, cita, enlace, triples, ent = cargar()
     nombre = lambda i: ent.get(i, {}).get("nombre", i)
-    claves = [t for t in norm(a.tema).split() if len(t) >= 4]
+    claves = [t for t in norm(tema).split() if len(t) >= 4]
 
     def toca(*textos):
         if not claves:
@@ -155,27 +151,37 @@ def main():
                             "peso": peso + (1 if cruza else 0) - 1.5 * debiles})
     cadenas.sort(key=lambda d: -d["peso"])
 
-    mesa = {"tema": a.tema, "puentes": puentes[:a.top], "entidades": entidades[:a.top],
-            "tensiones": tensiones[:a.top], "cadenas": cadenas[:a.top],
+    return {"tema": tema, "puentes": puentes[:top], "entidades": entidades[:top],
+            "tensiones": tensiones[:top], "cadenas": cadenas[:top],
             "totales": {"puentes": len(puentes), "entidades": len(entidades), "tensiones": len(tensiones), "cadenas": len(cadenas)}}
-    if a.json:
-        print(json.dumps(mesa, ensure_ascii=False, indent=1)); return
 
-    T = mesa["totales"]
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--tema", default="", help="palabras clave para filtrar la mesa (sin tildes da igual)")
+    ap.add_argument("--top", type=int, default=8)
+    ap.add_argument("--json", action="store_true")
+    a = ap.parse_args()
+    mesa_ = mesa(a.tema, a.top)
+    fuentes = cargar()[1]
+    if a.json:
+        print(json.dumps(mesa_, ensure_ascii=False, indent=1)); return
+
+    T = mesa_["totales"]
     print(f"# La mesa del Mago{' — tema: ' + a.tema if a.tema else ''}\n")
     print("> Candidatos, no hallazgos. Cada uno debe pasar la prueba de realidad (ledger F-n) o declararse intuición.\n")
     print(f"## 1. Puentes no declarados ({T['puentes']}) — nodes que se apoyan en las mismas fuentes y no se enlazan")
-    for p in mesa["puentes"]:
+    for p in mesa_["puentes"]:
         print(f"- [[{p['a']}]] ⟷ [[{p['b']}]] · peso {p['peso']:.1f} · {etiqueta(fuentes, p['fuentes'])}")
     print(f"\n## 2. Entidades puente ({T['entidades']}) — un concepto que vive en nodes que no se hablan")
-    for d in mesa["entidades"]:
+    for d in mesa_["entidades"]:
         print(f"- **{d['entidad']}** · {', '.join(d['nodes'])} · {etiqueta(fuentes, d['fuentes'][:8])}")
     print(f"\n## 3. Tensiones ({T['tensiones']}) — donde las fuentes chocan")
-    for d in mesa["tensiones"]:
+    for d in mesa_["tensiones"]:
         lect = f" · lectura={d['lectura']}" if d["lectura"] else ""
         print(f"- `{d['tipo']}` **{d['s']}** → **{d['o']}** · {etiqueta(fuentes, d['fuentes'])}{lect}\n  {d['apoyo']}")
     print(f"\n## 4. Cadenas inferidas ({T['cadenas']}) — eslabón que ninguna fuente afirma")
-    for d in mesa["cadenas"]:
+    for d in mesa_["cadenas"]:
         x = " · cruza nodes" if d["cruza_nodes"] else ""
         print(f"- {d['a']} —{d['p1']}→ {d['b']} —{d['p2']}→ {d['c']} · {etiqueta(fuentes, d['fuentes'])}{x}")
     if not any(T.values()):

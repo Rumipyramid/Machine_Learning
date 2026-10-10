@@ -1,6 +1,6 @@
 ---
 name: mentes
-description: Sistema de "mentes" del segundo cerebro — subagentes que releen una respuesta ya dada con el estilo de un arcano mayor del tarot (por ahora, El Mago, que ve conexiones ocultas y las contrasta con hechos o intuiciones). Es OPCIONAL y va DESPUÉS de una primera respuesta: nunca se aplica por defecto. Úsalo cuando el usuario invoque /mentes, o pida después de una respuesta "¿qué ve el Mago?", "léelo con el Mago", "pásalo por el Mago", "y el Mago qué diría", "dame la lectura del Mago" o nombre otra mente del registro.
+description: Sistema de "mentes" del segundo cerebro — subagentes que releen una respuesta ya dada con el estilo de un arcano mayor del tarot. Activas: El Mago (ve conexiones ocultas y las contrasta con hechos o intuiciones) y La Papisa (lo que la respuesta calló: lo que el cerebro sabe y no se dijo, lo que sabe a medias y lo que no sabe). Es OPCIONAL y va DESPUÉS de una primera respuesta: nunca se aplica por defecto. Úsalo cuando el usuario invoque /mentes, o pida después de una respuesta "¿qué ve el Mago?", "léelo con el Mago", "¿qué diría la Papisa?", "¿qué calló esta respuesta?", "pásalo por las mentes" o nombre otra mente del registro.
 ---
 
 # /mentes — lecturas arquetípicas sobre una respuesta ya dada
@@ -26,7 +26,9 @@ pensamiento con oficio, reglas y una sombra que vigilar.
 
 ## 2. Cómo se invoca una mente
 
-1. **Identifica la mente** pedida en el registro (§4). Si pide una que aún no existe, dilo y ofrece diseñarla.
+1. **Identifica la mente** pedida en el registro (§4). Si pide una que aún no existe, dilo y ofrece diseñarla. Si
+   pide varias ("pásalo por las mentes", "el Mago y la Papisa"), lánzalas **en paralelo** con el mismo expediente y
+   entrega cada lectura por separado, en el orden de los arcanos; no las mezcles ni las promedies.
 2. **Arma el expediente** que recibirá la mente: la pregunta original del usuario, la primera respuesta **completa**
    (no un resumen), los nodes y fuentes `F-n` que esa respuesta usó, y el foco si el usuario dio uno
    ("léelo con el Mago pensando en Rimac").
@@ -61,12 +63,14 @@ pensamiento con oficio, reglas y una sombra que vigilar.
 | Arcano | Mente | Estado | Lente |
 |---|---|---|---|
 | I · El Mago (Le Bateleur) | `mago` | ✅ activa — ficha `mago.md`, subagente `.claude/agents/mago.md`, mesa `research/grafo/mago.py` | Ve las conexiones ocultas y las baja a tierra: hecho del ledger o intuición declarada. Cierra con un primer gesto |
-| II · La Papisa | `papisa` | 💭 propuesta | Lo que el cerebro sabe y calla: huecos, preguntas no hechas, lo que la respuesta no dijo |
+| II · La Papisa (La Papesse) | `papisa` | ✅ activa — ficha `papisa.md`, subagente `.claude/agents/papisa.md`, libro `research/grafo/papisa.py` | Lo que la respuesta calló: lo que el cerebro sabe y no se dijo, lo que sabe a medias y lo que no sabe. Cierra con la pregunta que no se hizo |
 | IV · El Emperador | `emperador` | 💭 propuesta | Estructura y decisión: qué se prioriza, quién decide, qué regla se fija |
 | VIII · La Justicia | `justicia` | 💭 propuesta | El balance: evidencia a favor y en contra pesada por rigor, sin promediar |
 | XVI · La Torre | `torre` | 💭 propuesta | Qué derrumbaría la tesis: el peor caso y la prueba que la tumbaría |
 | XVIII · La Luna | `luna` | 💭 propuesta | Ilusiones y sesgos: lo que parece y no es, ecos de cita, deseos disfrazados de dato |
 
 Las propuestas son solo ideas: se diseñan cuando el usuario lo pida, una a la vez, con el mismo molde que el Mago
-(ficha `<mente>.md` + subagente `.claude/agents/<mente>.md` + herramienta determinista si hace falta). La
+(ficha `<mente>.md` + subagente `.claude/agents/<mente>.md` + herramienta determinista si hace falta).
+En "Pregúntale a Mu" (artefacto) por ahora solo está el botón de El Mago: la página arma su mesa con los datos
+que `build_corpus.py` toma de `mago.py` y aplica la ficha en línea. La
 simbología de cada carta está en `.claude/skills/edipo2/references/tarot_marsella.json` (no se duplica aquí).
