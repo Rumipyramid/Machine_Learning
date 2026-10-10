@@ -2,7 +2,7 @@
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
-> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-04 (F-59 corregida: es un resumen de congreso de Dreischulte 2013; la revisión de Mdege 2011 pasa a F-646).
+> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-07 (F-59 corregida: es un resumen de congreso de Dreischulte 2013; la revisión de Mdege 2011 pasa a F-646).
 > Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada
@@ -603,6 +603,9 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
 
 ## Conexiones
 
+- [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — las
+  olas de diarrea, dengue y malaria asociadas a El Niño (su §3.2) son picos de demanda de atención
+  primaria y farmacia en el norte: caso de estrés para este modelo.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — este node es el diseño concreto
   para Perú; ese node aporta el marco global de mecanismos (capitación, atención primaria,
   Singapur/NHS) que valida y matiza este diseño (ver su §3 y su síntesis §4).

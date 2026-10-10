@@ -7,7 +7,7 @@
 > `matriz_usuarios_sinteticos.md`. El código, el esquema y los datos **no se mueven** de
 > `research/personas/` — decenas de referencias por ruta fija (skills, GitHub Action, scripts)
 > dependen de que sigan ahí. Este node cuenta la historia y cita dónde vive cada pieza activa.
-> Última actualización: 2026-10-04.
+> Última actualización: 2026-10-07.
 
 ## Qué es
 
@@ -59,6 +59,9 @@ la disciplina]] identifica en la frontera de "AI Behavioral Science": pocos equi
 tienen simulación de consumidores calibrada con microdato nacional, no solo supuestos.
 
 ## Conexiones
+- Propuesta pendiente desde → [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la
+  vida de las personas]] §6.1: variable de exposición a inundación/Niño análoga a `exposicion_sismica`
+  (no aplicada; decide `cerrajero`/usuario).
 - Calibrado con → [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración
   frente a seguros (Mundo vs. Perú)]] (SBS, APESEG, marginales)
 - Posicionado por → [[behavioral-design-estado-disciplina|Behavioral design: estado de la

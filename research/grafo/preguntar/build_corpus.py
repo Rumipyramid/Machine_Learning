@@ -4,6 +4,8 @@ Solo stdlib. Parte los nodes de research/_nodes/ por secciones (## / ###) en fra
 caracteres, toma cada fila del ledger (research/fuentes/codice.md) como una ficha F-n anotada con rigor, año y
 lectura en el grafo, y agrega contradicciones del grafo con su estado, los tableros de hipótesis, los umbrales del
 Chacal (chacal_rubrica.json) y el estado del panel (salida de research/grafo/mu.py). La página busca en estos fragmentos y se los pasa a Claude.
+También agrega la mesa completa del Mago (research/grafo/mago.py) y las heurísticas de "🧠 Intuición acumulada" de
+El Lobo, que usa el botón opcional "Lectura del Mago" (mentes, .claude/skills/mentes/).
 
 Uso: python research/grafo/preguntar/build_corpus.py
 """
@@ -13,6 +15,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 REL = ROOT / "research" / "grafo" / "relaciones"
 RUBRICA = ROOT / "research" / "grafo" / "chacal_rubrica.json"
+LOBO = ROOT / "research" / "lobo" / "opinion_experto.md"
+sys.path.insert(0, str(ROOT / "research" / "grafo"))
+import mago  # noqa: E402  (misma carpeta que chacal.py y mu.py)
 # Mismo criterio que research/grafo/chacal.py: estos estados de resolución NO cuentan como resueltos
 ABIERTAS = {"en_disputa", "sin_verificar", "mecanismo_en_disputa"}
 NODES = ROOT / "research" / "_nodes"
@@ -124,6 +129,26 @@ def hipotesis():
     return out
 
 
+def mago_mesa():
+    """Mesa completa del Mago (sin filtrar: la página filtra por la pregunta) + intuiciones de El Lobo."""
+    m = mago.mesa("", None)
+    intu, sec, cur = [], False, None
+    for line in LOBO.read_text(encoding="utf-8").splitlines():
+        if line.startswith("## "):
+            sec = "Intuición acumulada" in line
+            continue
+        if not sec:
+            continue
+        h = re.match(r"^### (\d+)\. (.+)$", line)
+        if h:
+            cur = {"n": int(h.group(1)), "titulo": re.sub(r"\*\*", "", h.group(2)).strip(), "texto": ""}
+            intu.append(cur)
+        elif cur is not None and len(cur["texto"]) < 700:
+            cur["texto"] = (cur["texto"] + " " + re.sub(r"\*\*", "", line.strip())).strip()[:700]
+    return {"puentes": m["puentes"], "entidades": m["entidades"][:200], "tensiones": m["tensiones"],
+            "cadenas": m["cadenas"][:200], "intuiciones": intu}
+
+
 def estado():
     try:
         out = subprocess.run([sys.executable, str(ROOT / "research" / "grafo" / "mu.py")], capture_output=True,
@@ -142,11 +167,13 @@ def main():
     tens, disc = grafo(fuentes)
     rub = json.loads(RUBRICA.read_text(encoding="utf-8"))["dimensiones"]
     data = {"generado": dt.date.today().isoformat(), "estado": estado(), "nodes": chunks, "fuentes": fuentes,
-            "tensiones": tens, "discrepancias": disc, "hipotesis": hipotesis(),
+            "tensiones": tens, "discrepancias": disc, "hipotesis": hipotesis(), "mago": mago_mesa(),
             "rubrica": {k: {"def": v["def"], "verde": v["verde"], "amarillo": v["amarillo"]} for k, v in rub.items()}}
     OUT.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"ok: {len(chunks)} fragmentos de {len(list(NODES.glob('*.md')))} nodes, {len(fuentes)} fuentes, "
           f"{len(tens)} contradicciones ({sum(t['abierta'] for t in tens)} abiertas), {len(data['hipotesis'])} hipótesis, "
+          f"mesa del Mago {sum(len(v) for k, v in data['mago'].items() if k != 'intuiciones')} candidatos + "
+          f"{len(data['mago']['intuiciones'])} intuiciones, "
           f"{OUT.stat().st_size // 1024} KB → {OUT.relative_to(ROOT)}")
 
 

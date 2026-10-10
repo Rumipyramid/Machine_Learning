@@ -189,3 +189,24 @@
 | F-62 | 🔵 B | 2026-10-03 | Intuición 169 — validación técnica ≠ clínica: pedir qué evidencia de uso real respalda un sello de aprobación |
 | F-455 | 🔵 B | 2026-10-03 | Intuición 170 — un hallazgo que beneficia a quien lo publica se rebaja (no se descarta): separar dato de incentivo |
 | F-466 | 🔵 B | 2026-10-03 | Intuición 171 — un ranking de innovación se lee por insumos vs. productos; Perú rinde peor en lo que sale (91.º) que en lo que entra (72.º) |
+| F-481 | 🔵 B | 2026-10-04 | Intuición 172 — un combined ratio sano con prima plana no es buena noticia: mirar ratio, crecimiento y canal juntos (Root: 92,1%, prima −1%) |
+| F-488 | 🔵 B | 2026-10-04 | Intuición 173 — lo que el usuario califica mejor puede dañarlo; la satisfacción no audita un asesor de IA (adulación, Science 2026) |
+| F-516 | 🟢 A | 2026-10-04 | Intuición 174 — decidir vs. crear: en tareas de decisión el combo humano-IA rinde peor que el mejor solo (g = −0,23) |
+| F-521 | 🟢 A | 2026-10-05 | Intuición 175 — caída de demanda medida en una plataforma: leer dirección y a quién golpea, no tamaño del mercado (−17% imágenes, −21% escritura/código) |
+| F-499 | 🟢 A | 2026-10-05 | Intuición 176 — un nulo de microtargeting indica que el mensaje base ya rendía; A/B contra el mejor genérico antes de pagar por datos |
+| F-489 | 🟢 A | 2026-10-05 | Intuición 177 — donde sube la persuasión baja la exactitud; medir conversión junto con exactitud de lo afirmado |
+| F-519 | 🟢 A | 2026-10-06 | Intuición 178 — personalización: efecto modesto, mediado por relevancia percibida, no por intrusividad; pagar datos solo si el mensaje se percibirá relevante |
+| F-490 | 🟢 A | 2026-10-06 | Intuición 179 — autoría cruzada en el ledger (Bai et al., no Hackenburg); verificar atribución; el LLM persuade por aparentar hechos y lógica |
+| F-514 | 🟢 A | 2026-10-06 | Intuición 180 — diseño→ROA observacional (8.671 firma-año): valor en el mecanismo de ventas, no en el coeficiente |
+| F-498 | 🟢 A | 2026-10-07 | Intuición 181 — XAI: la explicación aporta poco sobre la IA sola; el efecto grande viene de estudios con más sesgo |
+| F-524 | 🟢 A | 2026-10-07 | Intuición 182 — revisión sistemática de design thinking = mapa de factores, no prueba de efecto (autoría: Rösch, Tiberius & Kraus) |
+| F-525 | 🟢 A | 2026-10-07 | Intuición 183 — innovación→desempeño depende de apropiación y escala (autoría: Rousseau et al.) |
+| F-689 | 🟢 A | 2026-10-08 | Intuición 186 — una revisión canónica enmarca una teoría, no entrega un efecto; de un marco no se deriva una palanca de diseño sin el estado de replicación del efecto concreto |
+| F-563 | 🟢 A | 2026-10-08 | Intuición 184 — un predictor que acierta no entiende la tarea hasta que sigue acertando con la consigna vaciada (Centaur: crítica de memorización) |
+| F-728 | 🟢 A | 2026-10-08 | Intuición 185 — señuelo asimétrico: replica con condiciones angostas; un efecto de estímulos estilizados exige prueba de campo antes de entrar a una cotización |
+| F-664 | 🟢 A | 2026-10-09 | Intuición 187 — norma descriptiva cercana (provincial) gana al argumento de fondo; cercanía a la situación inmediata |
+| F-738 | 🟢 A | 2026-10-09 | Intuición 188 — meta-análisis D=0,62 sobre constructo heterogéneo: no equivale a peso en una decisión; sesgo de publicación |
+| F-647 | 🟢 A | 2026-10-09 | Intuición 189 — Asch: la unanimidad es frágil; un aliado único reduce la conformidad; cifras de laboratorio no son parámetro |
+| F-707 | 🟢 A | 2026-10-10 | Intuición 190 — efecto fundacional (ego depletion): d≈0,62 en un meta-análisis vs. d≈0,04 en réplica multilab 2016; el desacuerdo entre meta-análisis es la señal |
+| F-673 | 🟢 A | 2026-10-10 | Intuición 191 — informar la espera reduce la sobreestimación pero puede empeorar la evaluación; separar percepción y satisfacción |
+| F-553 | 🟢 A | 2026-10-10 | Intuición 192 — sujetos sintéticos LLM malrepresentan y aplanan al grupo; validar dispersión y cercanía al autorretrato, no solo la media |

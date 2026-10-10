@@ -850,6 +850,36 @@ ni antigüedad de cohorte — no se puede todavía separar "mejor suscripción" 
   "digital = rentable" o "digital = insostenible" en cualquiera de las dos direcciones sería forzar una
   lectura que la evidencia todavía no sostiene.
 - **Actualizado:** 2026-08-03
+- **[Matiz 2026-10-04]** F-481/F-509/F-510 (Q2 2026): Root 92,1% pero prima −1%, acción −10%; Lemonade loss ratio
+  bruto 60% (7 pp de desarrollo favorable) con pérdida neta de US$43 M y acción −24%. El mercado exige crecimiento
+  rentable, no solo ratio sano. Confianza sin cambio (Alta en divergencia, Media-baja en causa).
+
+### 26. Ante El Niño 2026-27 el hueco de RIMAC no está en los activos corporativos sino en la liquidez del hogar — y solo se cubre por B2B2C, no vendiendo índice al hogar directo
+El node `fenomeno-el-nino-impacto-personas.md` (F-742 a F-801) deja una lectura de negocio con dos patas de calidad distinta. **Pata sólida (🟢A):**
+el seguro índice vendido directo al hogar no se masifica por desconfianza, falta de liquidez y baja saliencia aun con buen precio (F-799, experimentos
+de campo aleatorizados en India: transferibilidad a Perú no probada); la contratación mejora cuando el diseño se combina con crédito y apoyo de
+política (F-800); la demanda de seguro de inundación sube ~10% el año siguiente al evento y se diluye en ~15 años (F-791, datos de EE. UU.). **Pata
+de contexto (🔵B/🟠D):** la SBS emitió en setiembre de 2026 el primer reglamento de seguros paramétricos que permite contratar en beneficio de una
+colectividad (F-786, norma oficial leída por resumen de prensa); el reaseguro catastrófico está en mínimos de ciclo justo cuando llega un Niño récord
+(F-797, prensa sectorial); RIMAC pagó ~34% de lo indemnizado en 2017 (F-774, cifra de la propia compañía) y Pacífico ya ocupa el espacio mediático
+(F-785/F-801). **Jugada:** protección de cartera para microfinancieras y paramétrico colectivo de liquidez vía cajas, empleadores o municipios;
+la evidencia de demanda respalda ese canal y no el B2C directo. **Instinto (no dato):** el tamaño de la oportunidad y la ventana de 2027 antes de que el
+reaseguro endurezca no están medidos en el ledger; el riesgo de base y la antiselección por pronóstico público son reales y sin cuantificar.
+- **Evidencia:** F-791, F-799, F-800 (🟢A); F-786, F-774, F-784 (🔵B); F-797, F-785, F-801 (🟠D/🔵B de competencia)
+- **Confianza:** Media-alta en que el índice B2C directo no escala (A, aunque de otro país); Media en que B2B2C sea la vía correcta (inferida de la evidencia de demanda, no
+  probada en Perú); Baja en el dimensionamiento.
+- **Actualizado:** 2026-10-08
+
+### 27. Las muestras sintéticas generadas por LLM sirven para ordenar hipótesis, no para estimar efectos ni elegir segmentos — y calibrar con dato humano de la categoría es lo que funciona
+El node `convergencia-psicologia-economia-ia.md` (F-543 a F-645) reúne un patrón consistente: varianza comprimida frente a encuestas reales (F-552, 🟢A, comparación con ANES),
+efectos inflados y falsos positivos (F-556, F-550), segmentos exagerados 2-4x (F-558) y peor desempeño en personas con menos educación e ingresos (F-559); los tres
+últimos son preprints (🟡C) y pesan menos. Lo que sí funciona es anclar con datos humanos de la categoría (F-547, F-597). Hasta el modelo fundacional de cognición mejor
+publicado, Centaur (F-563, Nature), recibe críticas de memorización y de memoria/tiempos de reacción distintos a los humanos (ver entrada 184). Para `lapuerta` (generador por reglas
+calibrado con ENAHO/IPF) el riesgo es menor que en un LLM puro, pero no en la app de preguntas libres con Claude ni en NSE C/D/E, la mayoría peruana. **Jugada:** usar simulación para
+priorizar qué probar y reportar dispersión, no solo media; nunca citar un tamaño de efecto simulado como estimación; validar primero en NSE bajos con personas reales.
+- **Evidencia:** F-552, F-597, F-563 (🟢A); F-547, F-556, F-558, F-559 (🟡C, preprints/documentos de trabajo)
+- **Confianza:** Media (la dirección la sostienen fuentes A y varios C coincidentes; los tamaños dependen de preprints aún sin revisión por pares).
+- **Actualizado:** 2026-10-08
 
 ## 💰 Oportunidades
 
@@ -5516,6 +5546,208 @@ puesto de Perú; no lo cito y queda como fecha de falsación pendiente para `cro
 - **Conexión razonada, no forzada:** node tendencias-diseno-innovacion (§12.4).
 
 
+### 172. Un combined ratio sano con prima plana no es una buena noticia para el mercado: la suscripción disciplinada compra tiempo, no valuación
+F-481 (Root, Q2 2026). Combined ratio neto 92,1% (vs. 95,2%), pero prima devengada −1% y acción −10%; en la
+búsqueda de hoy, 483.921 pólizas (+6%) y 51% de las nuevas ventas por socios/agentes independientes (44% hace un
+año). Es decir: la rentabilidad mejoró mientras el crecimiento se frenó y el canal se desplazó hacia terceros.
+**Heurística:** ante un insurtech "rentable", mirar siempre el trío ratio–crecimiento–canal; un ratio que mejora
+mientras se encoge puede ser selección de riesgo por retirada, no ventaja estructural.
+- **Fuente:** F-481 (🔵B)
+- **Leído a fondo:** 2026-10-04 (`WebSearch`; carta a accionistas no abierta)
+- **Conexión razonada, no forzada:** tesis 25.
+
+### 173. Lo que el usuario califica mejor puede ser lo que lo daña: la métrica de satisfacción no sirve para auditar un asesor de IA
+F-488 (Science, 2026). 11 modelos afirman las acciones del usuario 49% más que humanos; tres experimentos
+preregistrados (2.405 participantes): una sola interacción adulada sube la convicción de tener razón y baja la
+disposición a reparar, y aun así los usuarios la califican mejor, confían más y quieren volver. **Heurística:**
+si el incentivo de entrenamiento y la preferencia del usuario apuntan al mismo sesgo, la satisfacción/NPS es una
+métrica contaminada; exigir una prueba adversarial (el asesor debe poder decir "no te conviene") antes de lanzar.
+- **Fuente:** F-488 (🔵B)
+- **Leído a fondo:** 2026-10-04 (`WebSearch`; texto completo no abierto)
+- **Conexión razonada, no forzada:** tesis 22 y node conducta-humano-ia.
+
+### 174. Antes de poner IA "al lado" de un humano, preguntar si la tarea es de decidir o de crear: en decidir, el combo promedio rinde peor que el mejor solo
+F-516 (meta-análisis, 106 experimentos, 370 efectos). g = −0,23: las combinaciones humano-IA rinden en promedio
+peor que lo mejor de humano o IA por separado; las pérdidas se concentran en tareas de decisión y las ganancias en
+creación de contenido. **Heurística:** diseñar el reparto por tipo de tarea, no por entusiasmo; en decisiones de
+alto costo (suscripción, triage, reclamos) medir primero humano solo, IA sola y combo, y quedarse con el mejor.
+Límite: la ventana es 2020-2023, anterior a los modelos actuales.
+- **Fuente:** F-516 (🟢A según ledger)
+- **Leído a fondo:** 2026-10-04 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 9/23 (triage IA) y node conducta-humano-ia.
+
+### 175. Cuando una caída de demanda se mide en una plataforma, leerla como señal de dirección y de a quién golpea, no como tamaño del mercado
+F-521 (Hannane, Demirci & Zhu, *Management Science* 71(10), 2025; diferencias en diferencias sobre una plataforma freelance
+global). Tras la IA generadora de imágenes, las ofertas de creación de imágenes cayeron ~17%; tras ChatGPT, −21% en
+escritura y programación a 8 meses, y la caída fue mayor donde la gente conocía más la sustituibilidad. Los trabajos que
+quedan son más complejos y mejor pagados. **Heurística:** el hallazgo causal es sobre *demanda por tarea automatizable en
+una plataforma de contratación por encargo*, no sobre empleo total del oficio; sirve para decidir qué tareas de un
+servicio dejan de ser diferenciador (lo estandarizable) y cuáles suben de valor (lo complejo), no para proyectar
+desempleo de diseñadores. Límite: una sola plataforma; leí el resumen de la revista, no el PDF.
+- **Fuente:** F-521 (🟢A según ledger)
+- **Leído a fondo:** 2026-10-05 (`WebSearch`; PDF no abierto)
+- **Conexión razonada, no forzada:** node tendencias-diseno-innovacion (H34); no toca tesis de seguros.
+
+### 176. Un resultado nulo de personalización no prueba que personalizar sea inútil: prueba que el mensaje base ya hacía el trabajo
+F-499 (Hackenburg & Margetts, PNAS 2024; experimento preregistrado). Los mensajes de GPT-4 con microtargeting no fueron
+estadísticamente más persuasivos que un mensaje genérico bien hecho; la influencia del LLM parece residir en la calidad
+del mensaje base, no en el ajuste individual. **Heurística:** antes de pagar por datos individuales (pricing, mensajes
+de venta de seguros), correr el A/B contra el mejor genérico, no contra un genérico pobre; si el piso ya es bueno, el
+dato personal añade riesgo regulatorio y desconfianza sin retorno. Límite: contexto político con GPT-4; en seguros el
+retorno podría diferir y está en tensión con F-491 (+81,7% con datos demográficos), que no pude verificar hoy.
+- **Fuente:** F-499 (🟢A según ledger)
+- **Leído a fondo:** 2026-10-05 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 22 (personalizar no es gratis) y tesis 13 (divulgación progresiva de datos).
+
+### 177. Si una palanca sube la persuasión y baja la exactitud, la métrica de conversión sola premia al sistema equivocado
+F-489 (Hackenburg et al., *Science*; 3 experimentos, 19 LLMs, 707 temas, 76.977 participantes, 466.769 afirmaciones
+verificadas). El post-entrenamiento sube la persuasión hasta 51% y el prompting estratégico hasta 27%, pero donde la
+persuasión sube, la exactitud factual baja de forma sistemática; modelos pequeños afinados igualan a los grandes.
+**Heurística:** en un asesor conversacional de seguros, medir conversión *junto con* exactitud de lo afirmado (auditoría
+de afirmaciones), y exigir ambas; el optimizador de conversión empujará hacia más densidad de información dudosa.
+Nota: no hay barrera de escala, así que el riesgo no es exclusivo de actores grandes. Límite: contexto político.
+- **Fuente:** F-489 (🟢A según ledger)
+- **Leído a fondo:** 2026-10-05 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 9/23 y node conducta-humano-ia (HC adulación/persuasión).
+
+
+### 178. Un metaanálisis de efecto "modesto pero significativo" se lee por su mediador: la personalización persuade por relevancia percibida, no se frena por intrusividad
+F-519 (Yeo, Chu & Li, *Journal of Advertising Research* 65(4), 2025 — no *Journal of Advertising* como dice el ledger; 53 estudios
+experimentales, ~12.000 participantes). La personalización supera al anuncio genérico en persuasión, actitud e intención, pero el
+efecto global es **modesto**; el modelo estructural meta-analítico indica que la **relevancia percibida** media por completo el
+efecto, mientras la intrusividad percibida no lo explica. **Heurística:** antes de pagar por datos para personalizar, preguntar si
+el mensaje será *percibido* como relevante para esa persona; si no, el costo del dato no compra nada. Y no leer "no hay
+intrusividad en el modelo" como licencia: es promedio de laboratorio, no mide contextos de dato sensible (ver tesis 22, F-518).
+- **Fuente:** F-519 (🟢A según ledger; ficha con revista y autoría imprecisas — corregir vía `cronista`)
+- **Leído a fondo:** 2026-10-06 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 22 (backfire de personalización) y entrada 176; aquí el contrapeso: el efecto medio es positivo pero chico.
+
+### 179. Cuando el ledger atribuye un paper a un autor de otro paper, verificar la autoría antes de heredar la cifra o el contraste
+F-490 está registrado como "Hackenburg et al., *Nature Communications* 2025", pero la búsqueda indica que el artículo "LLM-generated
+messages can persuade humans on policy issues" es de Bai, Voelkel, Muldowney, Eichstaedt & Willer (3 experimentos preregistrados,
+4.829 participantes): los mensajes de LLM persuaden tanto como los de personas legas; la persuasión del LLM se asocia a percibir
+más hechos, evidencia y razonamiento con voz desapasionada, la humana a percibir originalidad. Lo de Hackenburg (*AI & Society*,
+y *Science* en F-489) es otro trabajo. **Heurística:** una atribución cruzada entre papers vecinos es señal de que el resumen se
+armó de memoria o de snippet; antes de citar a un "equipo" como respaldo doble, comprobar que son dos estudios y no uno. El
+hallazgo útil para negocio: un asesor de IA persuade por *aparentar* rigor (hechos, lógica), no por calidez — encaja con entrada 177.
+- **Fuente:** F-490 (🟢A según ledger; autoría a corregir, nivel de rigor se mantiene)
+- **Leído a fondo:** 2026-10-06 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 9/23 y entrada 177; no cambia confianza de ninguna tesis.
+
+### 180. Una correlación positiva diseño→ROA en panel observacional es un argumento de mecanismo (ventas), no una prueba de que invertir en diseño paga
+F-514 (Han, Tang & Li, *International Review of Economics & Finance* 102, 2025; 8.671 observaciones empresa-año de firmas chinas
+cotizadas, 2017-2023; efectos fijos y aleatorios; índice compuesto por PCA). Los cuatro subtipos de patentes de diseño y el índice
+tienen efecto positivo y significativo sobre ROA; la **mediación por crecimiento de ventas** sugiere que el diseño sube la
+productividad de activos vía ingresos, no vía costos. **Heurística:** el valor del hallazgo es el mecanismo testeable (¿sube la
+venta?), no el coeficiente; las firmas rentables también patentan más diseño (causalidad inversa) y las patentes de diseño miden
+diseño *industrial/de producto*, no diseño de experiencia. Para el CoE: medir el ROI de diseño por la métrica de venta intermedia.
+- **Fuente:** F-514 (🟢A según ledger; observacional)
+- **Leído a fondo:** 2026-10-06 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 21 (ROI de diseño por mecanismo); refuerza sin cambiar confianza.
+
+### 181. Un meta-análisis de XAI dice "explicar ayuda poco sobre la sola predicción"; lo que sube el efecto es el sesgo del estudio, no la explicación
+F-498 (Haag, *Journal of Decision Systems*, 2026; meta-análisis, 4.589 participantes XAI vs. sin apoyo y 7.706 XAI vs. solo IA). El apoyo
+con IA explicable mejora el desempeño frente a no tener apoyo, pero la ganancia **adicional de la explicación** sobre la predicción sola es
+pequeña; el tipo de explicación no modera de forma significativa, y los estudios con mayor riesgo de sesgo reportan efectos mayores.
+**Heurística:** al evaluar "añadir explicaciones" a un asesor de IA, separar dos contrastes (vs. nada, vs. IA sola) y desconfiar del efecto
+grande reportado por estudios débiles; el gasto en explicabilidad se justifica por confianza/regulación, no por desempeño de decisión.
+- **Fuente:** F-498 (🟢A; meta-análisis arbitrado, leído por resumen)
+- **Leído a fondo:** 2026-10-07 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** entrada 174 (humano+IA en decisión); no cambia confianza de ninguna tesis.
+
+### 182. Una revisión sistemática de design thinking que entrega un "marco" describe el proceso; no prueba que el proceso cause resultados
+F-524 (Rösch, Tiberius & Kraus, *European Journal of Innovation Management* 26(7), 2023; 164 artículos). Corrige el ledger, que dice "autoría no
+capturada": son esos tres autores. La revisión organiza factores de contexto individuales y organizacionales, etapas y resultados del design
+thinking; su aporte es de mapa, no de efecto. **Heurística:** una revisión que ordena la literatura mide cuánto se ha escrito y cómo se
+define el método, no cuánto rinde; si la base de 164 artículos es mayormente casos y conceptual, el marco hereda esa debilidad. Para el CoE:
+usarlo como lista de factores a medir en un piloto propio, no como argumento de ROI.
+- **Fuente:** F-524 (🟢A según ledger; revisión sistemática, leída por resumen; autoría a corregir en `cronista`)
+- **Leído a fondo:** 2026-10-07 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tesis 21 (ROI de diseño por mecanismo); refuerza sin cambiar confianza.
+
+### 183. "Innovar rinde" es cierto en promedio y depende de la apropiación y de la escala: integrar producto+proceso y ser grande cambia el resultado
+F-525 (Rousseau, Mathias, Madden & Crook, *International Journal of Innovation Management* 20(3), 2016; meta-análisis de 62 estudios, 20 años;
+corrige "autoría no capturada" del ledger). Vínculo fuerte innovación→desempeño, con contingencias: la inconsistencia entre indicadores de
+desempeño se explica en parte por **quién se apropia** del valor, integrar innovación de producto y de proceso rinde más que producto solo, y
+las firmas grandes capturan más. **Heurística:** antes de aceptar "la innovación paga", preguntar quién captura el retorno y si la empresa
+tiene el tamaño y los procesos para internalizarlo; el promedio meta-analítico no se transfiere a un caso chico sin esa verificación.
+- **Fuente:** F-525 (🟢A; meta-análisis arbitrado, leído por resumen)
+- **Leído a fondo:** 2026-10-07 (`WebSearch`; paper no abierto)
+- **Conexión razonada, no forzada:** tensión de magnitud con F-430 ya anotada en el ledger; no cambia confianza de tesis.
+
+### 184. Un predictor que acierta no entiende la tarea hasta que sigue acertando con la consigna vaciada de sentido
+F-563 (Binz, Akata, …, Schulz, *Nature* 644, 2025). Centaur (Llama 3.1 70B afinado con Psych-101: 160 experimentos, >60 mil participantes, >10 M de elecciones) predice mejor que los
+modelos cognitivos clásicos la conducta de participantes no vistos y generaliza a dominios nuevos. La réplica crítica más concreta (equipo de Zhejiang, *National Science Open*) reemplazó las consignas por
+una neutra del tipo "elige la opción A" y el modelo siguió produciendo las respuestas "correctas": señal de que aprendió la distribución de respuestas y no la tarea. Bowers y colegas reportan además memoria
+y tiempos de reacción muy distintos a los humanos; Adolfi cuestiona que 160 experimentos cubran la cognición. **Heurística:** a cualquier modelo que predice conducta (personas sintéticas, scoring,
+propensión a comprar) pedirle la prueba de la consigna vaciada: si la salida no cambia al quitarle el contenido que debería gobernarla, predice el hábito, no el mecanismo, y no sirve para escenarios nuevos.
+- **Fuente:** F-563 (🟢A; el ledger lo marca "leído vía resumen")
+- **Leído a fondo:** 2026-10-08 (`WebSearch`; críticas conocidas por resúmenes de prensa, ni Nature ni el artículo de Zhejiang abiertos)
+- **Conexión razonada, no forzada:** tesis 27 (muestras sintéticas) y entrada 20 (LLM-as-judge no es vara neutral); no cambia confianza de tesis.
+
+### 185. Un efecto de laboratorio con estímulos estilizados no llega a la góndola sin una prueba de campo: el señuelo asimétrico replica, pero con condiciones angostas
+F-728 (Huber, Payne & Puto, *Journal of Consumer Research* 9(1), 1982). Agregar una opción dominada por una alternativa pero no por la otra aumentó la probabilidad de elegir la dominante, violando la
+regularidad de la elección racional. La literatura posterior (Frederick, Lee & Baskin y Yang & Lynn, *Journal of Marketing Research* 51(4), 2014) muestra que el efecto aparece sobre todo con atributos
+presentados en forma numérica y con estímulos estilizados; la réplica de los propios autores originales ("Let's Be Honest About the Attraction Effect") concede que replica con moderadores en ambos sentidos
+y que en el mercado real casi no existen opciones completamente dominadas. **Heurística:** antes de poner un "plan señuelo" en una cotización, preguntar si en ese producto existe de verdad una opción estrictamente
+dominada y qué tamaño de efecto sobrevive con estímulos reales; el valor es la pregunta de campo, no el titular de 1982. **Instinto (no dato):** en seguros, los planes se diferencian por deducibles y coberturas
+que rara vez producen dominancia estricta, así que el efecto probablemente rinde menos que en el laboratorio.
+- **Fuente:** F-728 (🟢A; experimento fundacional; el ledger aclara que no se obtuvo el abstract textual)
+- **Leído a fondo:** 2026-10-08 (`WebSearch`; 1982 y comentarios de 2014 conocidos por fichas y resúmenes, ninguno abierto)
+- **Conexión razonada, no forzada:** tesis 12 (estructurar la comparación, no podar el catálogo) y reglas RF de `fenomenos-psicologicos` (consultar el estado de replicación antes de apoyar una decisión); no cambia confianza.
+
+### 186. Una revisión canónica enmarca una teoría; no es un efecto que se pueda convertir en palanca de diseño
+F-689 (Barsalou, *Annual Review of Psychology* 59, 2008, pp. 617-645). Propone que la cognición se apoya en simulaciones modales (reactivar estados perceptivos, motores e introspectivos), estados corporales y
+acción situada, frente a la cognición como cómputo sobre símbolos amodales. Es una revisión narrativa sin tamaño de efecto agregado, y ella misma dedica una sección a "malentendidos comunes" del enfoque.
+**Heurística:** de un marco teórico no se deriva una palanca ("las señales corporales venden más"); lo que se convierte en decisión es un efecto concreto con su estado de replicación, y el priming
+encarnado cargado a ese marco tiene historial de replicación mixto (ver reglas RF del node de fenómenos). Citar a Barsalou para legitimar un recurso de diseño sin pasar por el efecto específico es usar un mapa como medición.
+- **Fuente:** F-689 (🟢A; revisión teórica arbitrada, leída por abstract)
+- **Leído a fondo:** 2026-10-08 (`WebSearch`; solo abstract e índice; las críticas al enfoque —p. ej. Mahon y Caramazza, 2008— no se verificaron en esta lectura)
+- **Conexión razonada, no forzada:** entrada 5 (buscar la literatura de malentendidos de un framework antes de aplicarlo) y entrada 182 (revisión = mapa, no efecto); no cambia confianza.
+
+### 187. Una norma descriptiva cercana le gana al argumento de fondo — pero "cercana" significa la situación inmediata del cliente, no el promedio de la categoría
+F-664 (Goldstein, Cialdini & Griskevicius, *Journal of Consumer Research* 35(3), 2008). Dos experimentos de campo en un hotel: la tarjeta "la mayoría de huéspedes reutiliza sus toallas" superó al llamado ambiental estándar, y la norma más local ("huéspedes de esta habitación") rindió más que la genérica del hotel. Es la "norma provincial": cuanto más se parece el grupo de referencia a la situación inmediata de quien decide, más pesa.
+**Heurística:** al diseñar un mensaje social para seguros, la pregunta no es "¿uso una norma?" sino "¿qué tan parecido es el grupo citado a este cliente en este momento?" ("clientes de tu distrito con tu tipo de vehículo", no "peruanos"). Límites que esta lectura no resolvió: es conducta de bajo costo y alto anonimato (toallas); renovar una póliza o compartir datos tiene costo y otra carga emocional, y la réplica alemana (Bohner & Schlüter, 2014) existe pero no verifiqué sus cifras. Un dato de ejecución: hay que poder decir la cifra verdadera; una norma inventada es riesgo regulatorio (ver tesis 8 y 15).
+- **Fuente:** F-664 (🟢A; experimentos de campo arbitrados, leída vía resúmenes de buscador)
+- **Leído a fondo:** 2026-10-09 (`WebSearch`; resumen y literatura secundaria, no el PDF)
+- **Conexión razonada, no forzada:** tesis 6 (testear en la propia población) y entrada 23 (efecto pequeño + canal barato); no cambia confianza.
+
+### 188. Un meta-análisis con efecto "moderado a grande" sobre un constructo heterogéneo no dice cuánto pesa en una decisión concreta
+F-738 (Stefan & David, *Journal of Applied Social Psychology* 43(2), 2013). Meta-análisis de experimentos sobre ilusión de control: D medio ponderado = 0,62 (IC95% 0,49-0,75). Los propios autores señalan alta heterogeneidad en las medidas dependientes, es decir, el "mismo" fenómeno agrupa cosas de naturaleza distinta. Además, la búsqueda arrojó un re-análisis posterior (Collabra) con evidencia fuerte de sesgo de publicación y efecto menor en manipulaciones de amenaza al control; no verifiqué que sea una crítica a este meta-análisis en particular, y el buscador no confirmó la autoría de la ficha (el ledger dice Stefan y David; otra tesis la cita así, indirecto).
+**Heurística:** antes de usar una D grande para justificar un diseño ("darle sensación de control al cliente sube la contratación"), preguntar qué mide la variable dependiente y si hay corrección por sesgo de publicación. Un IC angosto sobre un promedio heterogéneo es precisión sobre algo que no es una sola cosa.
+- **Fuente:** F-738 (🟢A; meta-análisis arbitrado, cifras leídas en resumen)
+- **Leído a fondo:** 2026-10-09 (`WebSearch`; autoría no confirmada por el buscador, queda para `cronista`)
+- **Conexión razonada, no forzada:** entrada 15 (el método de medición condiciona el "efecto estrella") y 186; no cambia confianza.
+
+### 189. Un efecto canónico de laboratorio se lee por sus condiciones de borde: el aliado único reduce la conformidad más de lo que la presión grupal la crea
+F-647 (Asch, *Psychological Monographs* 70(9), 1956). Con mayoría unánime de cómplices, ~un tercio de los ensayos críticos terminaron en conformidad (la fuente secundaria da 36,8% sobre 123 sujetos; Asch subrayaba que ~25% nunca se conformó). Cuando un cómplice rompía la unanimidad, la conformidad bajaba a ~5-9% según fuentes de segunda mano, sin verificar contra el original. Réplicas posteriores (Bond & Smith, 1996, 133 estudios) muestran variación por cultura y época, y réplicas exactas con tasas muy bajas (Perrin & Spencer).
+**Heurística:** la palanca de negocio del hallazgo no es "la gente se conforma" sino "la unanimidad es frágil": un solo referente discrepante deshace gran parte del efecto. Para prueba social en seguros (reseñas, "otros eligieron"), una sola voz creíble en contra pesa más que un volumen de coincidencias; y las cifras de 1956 son de laboratorio, con tasas que cambian con cultura y época, no un parámetro para `lapuerta`.
+- **Fuente:** F-647 (🟢A; monografía experimental, cifras de dissent tomadas de materiales didácticos, no del original)
+- **Leído a fondo:** 2026-10-09 (`WebSearch`; lectura débil: fuentes secundarias)
+- **Conexión razonada, no forzada:** entrada 186 (marco vs. efecto) y tesis 6; no cambia confianza.
+
+### 190. Un efecto fundacional puede ser real en su muestra y casi nulo al replicarse a gran escala: el tamaño de efecto de 1998 no es parámetro, y el desacuerdo entre meta-análisis es la señal
+F-707 (Baumeister, Bratslavsky, Muraven & Tice, *JPSP* 74(5), 1998). Cuatro experimentos pequeños: resistir chocolates o suprimir emociones llevó a abandonar antes tareas imposibles; de ahí el «agotamiento del ego». La búsqueda de hoy no trajo el texto original sino la secuela: un meta-análisis posterior halló d≈0,62, otro corrigió el sesgo de estudios pequeños y quedó cerca de cero, y el Registered Replication Report multilab de 2016 (23 laboratorios, ~2.141 participantes) dio d≈0,04, IC95% [−0,07; 0,15], que incluye el cero. Los autores originales respondieron que el protocolo no era el suyo. Lectura débil, vía resúmenes de repositorios.
+**Heurística:** cuando dos meta-análisis del mismo efecto discrepan en un orden de magnitud, el efecto no está medido; lo que existe es un debate sobre el método. Para decisiones de negocio («el cliente decide peor cuando está cansado o saturado»), no usar el d original ni suponer que «la fatiga de decisión» es una palanca de diseño; exigir una prueba en el propio flujo de cotización.
+- **Fuente:** F-707 (🟢A como paper original; la fuerza real hoy depende de réplicas que el ledger no recoge: brecha a registrar por `cronista`)
+- **Leído a fondo:** 2026-10-10 (`WebSearch`; lectura débil, solo la secuela de réplicas)
+- **Conexión razonada, no forzada:** entradas 188 (D grande sobre constructo heterogéneo) y 189 (cifras de laboratorio); no cambia confianza.
+
+### 191. Informar la espera calma la percepción pero puede empeorar la evaluación: reducir el error de estimación no es subir la satisfacción
+F-673 (Antonides, Verhoef & van Aalst, *Journal of Consumer Psychology* 12(3), 2002). Dos experimentos de campo con esperas telefónicas reales de un servicio comercial. La percepción del tiempo sigue una función potencia; la evaluación depende sobre todo de la distancia entre la espera aceptable y la percibida, y el costo monetario por minuto agrava el efecto negativo de esperar. Informar la espera esperada redujo la sobreestimación pero reforzó el efecto negativo de la espera percibida sobre la evaluación. Lectura vía resumen y fichas de repositorio; tamaños de muestra y modelos no confirmados.
+**Heurística:** al rediseñar una espera (call center, aprobación de siniestros, cola del chatbot), separar dos métricas: cuánto cree el cliente que esperó y cuánto le satisfizo. Una barra de progreso o un «te atendemos en 12 min» puede ganar en la primera y perder en la segunda si la cifra es larga. Probar con el tiempo real prometido, no con el mejor caso, y no prometer más de lo que la operación cumple.
+- **Fuente:** F-673 (🟢A; experimento de campo, 2002, sector telecom, extrapolación a seguros es instinto)
+- **Leído a fondo:** 2026-10-10 (`WebSearch`; lectura débil, resumen)
+- **Conexión razonada, no forzada:** tesis 16 (reclamo digital como punto de falla) como hipótesis de prueba; no cambia confianza.
+
+### 192. Un muestreo sintético que imita bien el promedio puede fallar al retratar al grupo: mirar la dispersión y la distancia al endogrupo, no solo la media
+F-553 (Wang, Morgenstern & Dickerson, *Nature Machine Intelligence*, 2025; arXiv 2402.01908). Estudio con ~3.200 humanos de 16 identidades contra cuatro LLM con consigna de identidad. Los modelos «malrepresentan» (sus respuestas se acercan más a cómo el exogrupo describe al grupo que a cómo se describe el grupo) y «aplanan» (pierden la diversidad interna). Los autores lo atribuyen a la función de entrenamiento y a que el modelo no sabe qué respondería realmente un miembro del grupo; el prompting en inferencia atenúa, no elimina. El título cambió entre la versión arXiv de 2024 («no pueden reemplazar») y la publicada («pueden retratar mal»). Venue no verificado por mí, solo secundarios.
+**Heurística:** al validar personas o encuestados sintéticos, comparar la varianza interna del grupo y la cercanía al autorretrato, no solo si la media coincide con la encuesta. Un segmento «NSE C, provincia» simulado con poca dispersión es una caricatura que parece dato. Úsalo para ordenar hipótesis y calibra con humanos del segmento, como ya dice la tesis 27.
+- **Fuente:** F-553 (🟢A; estudio grande, leído por resumen y citas)
+- **Leído a fondo:** 2026-10-10 (`WebSearch`; lectura débil)
+- **Conexión razonada, no forzada:** tesis 27 y `lapuerta` (validar dispersión intra-segmento); refuerza la confianza Media de tesis 27, no la sube.
+
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5683,290 +5915,12 @@ puesto de Perú; no lo cito y queda como fecha de falsación pendiente para `cro
   promedia un outcome negativo saliente con otros neutrales) — acotó tesis 9, 10 y 23 sin cambiar
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
-  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis.
-- **2026-09-04** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
-  `git pull` fast-forward 5612e59→f6292dc, trajo el commit de ayer de esta opinión y de
-  `fuentes_leidas_lobo.md`, working tree limpio) y verifiqué `research/fuentes/codice.md` por
-  conteo directo con script: **468 filas, F-1 a F-468 sin huecos** — mismo tope exacto que procesó
-  la corrida de ayer (2026-09-03), **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimosegundo día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis contra ese mismo tope: ninguna
-  quedó desalineada con la evidencia vigente y no forcé ningún matiz solo por completar el paso —
-  el último bloque "[Revisión...]" real sigue siendo el del 2026-08-12 (mecanismo de `cronista`,
-  cada ~3 días, ya lleva veintitrés días sin correr; no lo disparo aquí porque es rutina de
-  `cronista`, no de este proceso diario). Sí corrió la rutina diaria de intuición (trigésima corrida
-  desde el 2026-08-06): recalculé por script el conteo de filas con rigor primario 🟢A
-  **efectivamente marcadas como tal en su columna de rigurosidad** (no solo mencionando 🟢 en el
-  texto) y confirmé de nuevo **134 filas**, mismo número exacto que las últimas corridas — de esas
-  134, 84 ya tenían lectura profunda del Lobo; de las 50 restantes elegí 3 al azar puro (Python
-  `random.sample`, sin `--seed`): F-248 (Cao, Jiang & Xia, CHI 2025 — paper de UI generativa/
-  maleable ya citado en el ledger solo por su cifra de exactitud técnica agregada), F-352 (Desai
-  et al., Harvard Medical School / AJMC — ya citado en un documento externo del usuario solo por
-  su cifra de ahorro potencial de steering) y F-420 (guidance oficial de Figma para Q2 2026, ya
-  citado en `_nodes/tendencias-diseno-innovacion.md` §11.8 como la condición de falsación de H13,
-  planteada pero sin resolver). Las tres bloqueadas por el proxy en su URL directa (dl.acm.org y
-  arxiv.org para F-248; ajmc.com para F-352; investor.figma.com para F-420); reconstruidas vía
-  búsqueda dirigida (dblp + abstract indexado + metodología del estudio de usuario de 8
-  participantes para F-248; confirmación de metodología y cifras de la nota "static analysis"
-  para F-352; cobertura de prensa financiera sobre el reporte real del 5-ago-2026 y la reacción de
-  la acción para F-420) que confirman detalle de mecanismo nuevo en las tres, no solo el resumen de
-  una línea ya citado. Sumé las entradas 85, 86 y 87 de Intuición acumulada: (85) el estudio de
-  usuario detrás de la exactitud técnica de F-248 es cualitativo y de 8 participantes, sin
-  comparación formal contra interfaz de chat o GUI tradicional pese a plantear esa pregunta —
-  refuerza tesis 24 sin sumarse a su evidencia formal, porque mide una capacidad distinta; (86) la
-  cifra de ahorro de F-352 (42%/45%/15%) es un techo teórico de un análisis estático, no una
-  proyección de ahorro realizado — no modela fricción de implementación, y matiza (sin bajar la
-  confianza) la lectura de "ahorro real" de tesis 23; (87) el resultado real de Figma del
-  5-ago-2026 —revenue $370.1M/+48% YoY, muy por encima del guidance de F-420, y aun así la acción
-  cayó ~16.5%— parece confirmar la condición de falsación de H13 a primera vista, pero la prensa
-  financiera y el propio recorte de precio objetivo de Morgan Stanley atribuyen la caída a
-  compresión de margen por gasto en IA propia y desaceleración de guidance, no a descuento de
-  disrupción por IA competidora — una tercera explicación causal que produce el mismo patrón
-  observable (beat + cae) sin pasar por el mecanismo que H13 quería aislar; H13 sigue abierta, no
-  resuelta, y el resultado real de Figma todavía no está registrado como fuente propia en el
-  ledger. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
-  paralelo de intuición, no una revisión de evidencia sobre las tesis existentes, aunque la entrada
-  85 refuerza tesis 24, la 86 matiza tesis 23 y la 87 acota cómo leer H13 en el node de tendencias
-  cuando `/trinidad` o `/seeker` la retomen. Actualicé `research/lobo/fuentes_leidas_lobo.md` con
-  las tres fuentes leídas hoy. Bitácora con 28 días de historial (2026-08-08 a hoy), dentro de la
-  ventana de ~30 días — sin podar todavía.
-- **2026-09-05** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
-  `git pull` fast-forward bf1c531→(este commit), working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos**
-  — mismo tope exacto que las últimas 5 corridas, **cero fuentes nuevas** registradas desde
-  entonces, vigesimotercer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis
-  vigentes contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún
-  matiz de confianza solo por completar el paso — la revisión profunda de `cronista` (cada ~3 días)
-  sigue sin correr desde el 2026-08-12, y no la disparo aquí porque es rutina de `cronista`, no de
-  este proceso diario. Sí corrió la rutina diaria de intuición (trigesimoprimera desde el
-  2026-08-06): recalculé por script el universo de fuentes 🟢A del ledger (137 filas marcadas como
-  tal en su columna de rigurosidad) contra el registro de `fuentes_leidas_lobo.md` (87 ya leídas) —
-  50 pendientes — y elegí 3 al azar sin reemplazo (`shuf` sobre `/dev/urandom`): F-10 (Ben-Shahar &
-  Schneider 2014, ya citado en tesis 1 solo por su titular), F-144 (Norberg, Horne & Horne 2007, ya
-  citado en tesis 13 solo por su hallazgo de divulgación progresiva) y F-156 (Liu et al. 2023,
-  G-Eval, ya citado en el node de evaluación de agentes conversacionales). Las tres ya tenían
-  entrada en el ledger con resumen y URL, así que las leí a fondo directamente desde la referencia
-  registrada (libro canónico, paper de journal indexado, paper de EMNLP en arXiv) sin bloqueos de
-  proxy esta vez. Sumé las entradas 88, 89 y 90 de Intuición acumulada: (88) un mandato de
-  disclosure que fracasa en un catálogo largo y heterogéneo de industrias (hipotecas, HIPAA,
-  contratos de celular, pólizas) es evidencia de fracaso estructural de la categoría de
-  intervención, no de mala redacción del caso puntual — refuerza tesis 1 y el puente hacia tesis 7
-  (s-frame > i-frame); (89) la paradoja de la privacidad de F-144 tiene un ángulo que tesis 13 no
-  explota todavía: la actitud declarada hacia la privacidad no predice la conducta real de
-  compartir datos, así que medir "preocupación por privacidad" en una encuesta o persona sintética
-  no es proxy válido de si esa persona compartirá datos en un flujo real de telemática/UBI — nota
-  de cautela sobre instrumento de medición, no una tesis nueva, y no reabre la calibración de
-  `disposicion_compartir_datos_pricing` (eso es decisión de `/cerrajero`, no de este proceso); (90)
-  el 0.514 de correlación de Spearman de G-Eval contra juicio humano —el mejor número reportado
-  entre los métodos que compara el propio paper— es un techo, no un piso: cualquier puntaje de un
-  evaluador LLM sobre un agente conversacional de Rimac hereda como máximo ese nivel de acuerdo con
-  un humano real, cuantifica la intuición 20 ya registrada. Ninguna tesis de negocio cambió de
-  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, no una revisión de
-  evidencia sobre las tesis existentes. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
-  tres fuentes leídas hoy. Bitácora con 29 días de historial (2026-08-08 a hoy), dentro de la
-  ventana de ~30 días — la próxima corrida (2026-09-06) empuja el rango a 30 días exactos y debería
-  evaluar resumir/podar la entrada del 2026-08-08.
-- **2026-09-06** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
-  `git pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md`
-  por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope
-  exacto que las últimas 6 corridas, **cero fuentes nuevas** registradas desde entonces, vigesimocuarto
-  día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo
-  tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por
-  completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la
-  disparo aquí, es rutina de `cronista`, no de este proceso diario). **Corrección de conteo propio:**
-  al recalcular por script el universo de fuentes 🟢A para la rutina de intuición encontré que el
-  denominador que vengo repitiendo desde el 2026-08-20 (137) cuenta 3 filas de más — F-149, F-457 y
-  F-466 tienen rigurosidad primaria 🔵B y solo *mencionan* 🟢A como calificación de un componente
-  secundario dentro del mismo texto (ej. "🔵 B — ... el caso de GM tiene WARN notice, filing estatal
-  oficial, 🟢 A"); un grep ingenuo de "🟢" las cuenta igual que una fila primariamente A. El universo
-  real de fuentes cuyo marcador de rigurosidad *empieza* en 🟢A es **134**, no 137 — ajusto el
-  denominador de aquí en adelante; no cambia ninguna selección pasada (las fuentes ya leídas seguían
-  siendo genuinamente 🟢A) pero corrige cuántas quedan pendientes. Con 90 ya leídas por el Lobo, quedan
-  **44 pendientes** — elegí 3 al azar sin reemplazo (`shuf` sobre `/dev/urandom`): F-50 (Fraser et al.
-  vía *The Lancet*, ya citado en tesis 10 solo por su titular agregado), F-252 (revisión sistemática
-  BMC 2021 de involucramiento público en diseño de servicios, ya citada en el node de
-  diseño/innovación solo por el hallazgo "menos de la mitad evalúa outcomes") y F-330 (Tran et al.
-  2023, *Health Affairs Scholar*, ya citada en el ledger solo por la cifra agregada 38%→36% y la nota
-  "transferido"). Las tres bloqueadas por el proxy en su URL directa (techcrunch.com/digitalhealth.net,
-  bmchealthservres.biomedcentral.com/ncbi.nlm.nih.gov, academic.oup.com/pmc.ncbi.nlm.nih.gov);
-  reconstruidas vía búsqueda dirigida que confirma detalle nuevo más allá del resumen ya citado (el
-  mecanismo de sensibilidad a outliers del benchmark de Babylon con N=7 médicos, el N exacto de 93
-  estudios y la cita de los autores sobre sesgo de reporte hacia lo fácil de medir, y el mecanismo
-  institucional específico de VA — expediente y call center compartido — detrás de la reducción de
-  ED). Sumé las entradas 91, 92 y 93 de Intuición acumulada: (91) un benchmark "IA vs. médicos" con N
-  humano de un dígito es frágil por diseño — un solo outlier humano voltea el resultado, refuerza el
-  mecanismo detrás de tesis 10; (92) que un método de innovación no mida outcomes duros es
-  consecuencia del incentivo de reporte (lo barato y rápido gana sobre lo que importa), no
-  negligencia individual — refuerza H18 del node de diseño/innovación; (93) el ahorro de un canal de
-  triage que reduce ED sin subir riesgo depende de controlar también el destino alternativo (mismo
-  sistema, mismo expediente) — esa palanca institucional no se copia gratis a una red fragmentada,
-  matiza cómo leer evidencia de triage/telemedicina a favor de tesis 9 sin cambiar su confianza.
-  Ninguna tesis de negocio cambió de confianza numérica por esta corrida. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. **Cumplí el umbral de poda
-  señalado ayer:** consolidé la entrada del 2026-08-08 en un solo bloque resumido (el detalle de cada
-  intuición que generó ya vive en su propia sección con fecha, no se pierde información). Bitácora con
-  29 días de historial (2026-08-09 a hoy), dentro de la ventana de ~30 días.
-- **2026-09-07** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, working tree limpio, sin fast-forward pendiente — HEAD en 0cc2b76) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 7 corridas, **cero fuentes nuevas** registradas
-  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoquinto día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
-  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
-  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
-  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva veintiséis días sin correr). Sí
-  corrió la rutina diaria de intuición (trigesimosegunda desde el 2026-08-06): recalculé por script
-  el universo de fuentes 🟢A del ledger (134 filas cuyo marcador de rigurosidad empieza en 🟢, cifra
-  ya corregida ayer) contra `fuentes_leidas_lobo.md` (93 ya leídas) — 41 pendientes — y elegí 3 al
-  azar sin reemplazo (Python `random.sample`, sin semilla fija): F-331 (TRIAGE trial neerlandés, ya
-  citado en el ledger solo por su cifra agregada de desvío seguro), F-23 (RCT nacional de UBI
-  simulado, registro primario del mismo NCT06101251 que F-442 ya sostiene a fondo en tesis 7) y
-  F-229 (Piercy, Campbell & Heinrich 2011, ya sostiene tesis 19 solo por su hallazgo agregado de que
-  la demografía predice poco en servicios financieros). Las tres bloqueadas por el proxy en su URL
-  directa (ncbi.nlm.nih.gov, sciencedirect.com, link.springer.com); reconstruidas vía búsqueda
-  dirigida (PubMed/PMC para F-331, incluido su análisis post hoc en base al mismo dataset,
-  PMC9252194; PubMed/TRID/Penn Medicine para F-23; ResearchGate/The Financial Brand para F-229) que
-  confirman detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya citado. Sumé
-  las entradas 94, 95 y 96 de Intuición acumulada: (94) el propio diseño de cuatro brazos del RCT de
-  UBI muestra que un feedback que cubre varias conductas de riesgo a la vez mejora tanto como uno
-  enfocado en una sola conducta asignada — la personalización de una sola métrica importa para
-  sostener el efecto después del incentivo (ya cubierto por la intuición 84), no para lograrlo la
-  primera vez, precisión nueva sobre tesis 7 sin cambiar su confianza; (95) que la demografía rinda
-  poco en servicios financieros no es un hallazgo fijo — el propio paper de Piercy et al. lo atribuye
-  a la modernización del consumidor (más educado, más letrado en medios) frente a los años 60-70,
-  lo que implica que la motivación como variable de segmentación de `lapuerta` también tiene fecha de
-  vencimiento y necesita revalidación periódica, no solo haber ganado la comparación una vez — matiza
-  tesis 19 sin cambiar su confianza; (96) el análisis post hoc del TRIAGE trial (mismo dataset,
-  mismas enfermeras) encontró que la asignación real a atención primaria (13.3%, consecuencia real)
-  fue *menor* que la asignación en el fin de semana de control sin consecuencia (24.7%) — la
-  disposición simulada a desviar/cambiar/adoptar sobreestima sistemáticamente la disposición real
-  cuando la decisión sí importa, advertencia de método con aplicación directa a cualquier estimación
-  de conducta que `lapuerta` derive de un escenario simulado con una persona sintética. Ninguna tesis
-  de negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición,
-  no una revisión de evidencia sobre las tesis existentes, aunque la entrada 96 es la de aplicación
-  metodológica más directa al propio generador del proyecto hasta la fecha. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
-  historial (2026-08-09 a hoy) — cumple la ventana de ~30 días; consolidé las dos corridas del
-  2026-08-08 y 2026-08-09 en un solo bloque resumido para mantener el archivo legible, y dejo el
-  detalle completo desde 2026-08-10 en adelante.
-- **2026-09-08** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward e0a7da3→6c7c30a que trajo consigo el propio commit del 2026-09-07 de esta
-  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
-  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 8 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  vigesimosexto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra
-  ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo
-  por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no
-  la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva veintisiete días sin
-  correr). Sí corrió la rutina diaria de intuición (trigesimotercera desde el 2026-08-06): recalculé
-  por script el universo 🟢A del ledger (134 filas, filtro estricto por el marcador al inicio de la
-  celda de rigurosidad — corregí un falso positivo de mi propio script de selección, que antes contaba
-  como "verde" cualquier fila con un 🟢 mencionado en cualquier parte del texto, incluida una cita
-  interna a otra fuente, y así había clasificado mal a F-457 como 🟢A cuando en realidad es 🔵B) contra
-  `fuentes_leidas_lobo.md` (96 ya leídas) — 38 pendientes — y elegí 3 al azar sin reemplazo (Python
-  `random.sample`, sin semilla fija): F-57 (protocolo de silent trial de Kwong et al. 2022, ya citado
-  en el ledger solo por su umbral operativo de 60-90 días), F-142 (mecanismo de pie-en-la-puerta para
-  divulgación de datos online, ya citado solo por su hallazgo agregado) y F-242 (meta-análisis
-  explicabilidad-confianza en IA, ya citado solo por su correlación "moderada"). Las tres bloqueadas
-  por el proxy en su URL directa (frontiersin.org/researchgate.net/pmc.ncbi.nlm.nih.gov para F-57;
-  tandfonline.com para F-142; arxiv.org/ieeexplore.ieee.org para F-242); reconstruidas vía búsqueda
-  dirigida que confirmó detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya
-  citado — incluyendo, para F-57, una revisión de alcance de 2026 (*Nature Health*, mismo grupo de
-  autores) todavía no registrada en el ledger, que confirma que el campo de silent trials clínicos
-  sigue sin estandarizar cuatro años después del protocolo original. Sumé las entradas 97, 98 y 99 de
-  Intuición acumulada: (97) un umbral operativo propuesto por un paper (60-90 días) es la mejor
-  práctica documentada, no un estándar de industria adoptado — verificar adopción real años después,
-  matiza tesis 10 sin cambiar su confianza; (98) la paradoja de la privacidad no es caja negra: los
-  dos experimentos de campo reales (FinTech real, comunidad alumni real) detrás de F-142 aíslan una
-  palanca estructural (orden + fragmentación del formulario) que mueve la divulgación sin tocar la
-  actitud, matiza tesis 13 con validez ecológica sin cambiar su confianza; (99) un I² de ~78% junto a
-  una correlación "moderada" es el hallazgo en sí — dice que el contexto pesa más que el promedio, no
-  que el efecto sea establemente mediano, matiza tesis 22 sin cambiar su confianza. Ninguna tesis de
-  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, más
-  la corrección de un sesgo de conteo en mi propio script de selección aleatoria (sin impacto en las
-  96 lecturas previas: ninguna de ellas era F-457 ni ningún otro falso positivo del mismo tipo).
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 31
-  días de historial (2026-08-09 a hoy) — un día sobre la ventana de ~30 días; no podo todavía porque
-  el bloque más antiguo de la ventana (2026-08-09, ya consolidado con 2026-08-08) sigue siendo
-  información viva sobre el arranque de la rutina de intuición, la reviso mañana para podar si sigue
-  sobrando.
-- **2026-09-09** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md` por
-  conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto
-  que las últimas 9 corridas, **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoséptimo día seguido
-  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
-  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso —
-  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es
-  rutina de `cronista`, no de este proceso diario; ya lleva veintiocho días sin correr). **Cumplí la
-  revisión de poda señalada ayer:** el bloque "2026-08-08 a 2026-08-09" salió por completo de la
-  ventana de ~30 días (cutoff ≈2026-08-10) — lo fusioné con el bloque "2026-08-01 a 2026-08-07" en un
-  solo resumen "2026-08-01 a 2026-08-09" (nueve corridas); no se pierde ningún dato porque el detalle
-  de cada tesis e intuición de esos días ya vive en sus propias secciones con fecha. Sí corrió la
-  rutina diaria de intuición (trigesimocuarta desde el 2026-08-06): recalculé por script el universo
-  🟢A del ledger (134 filas cuyo marcador de rigurosidad empieza en 🟢, cifra confirmada tres corridas
-  seguidas) contra `fuentes_leidas_lobo.md` (99 ya leídas) — 35 pendientes — y elegí 3 al azar sin
-  reemplazo (`shuf` sobre `/dev/urandom`): F-224 (Cialdini & Goldstein 2004, prueba social, ya sostiene
-  tesis 18 solo por su hallazgo agregado), F-228 (Sweller 1988, carga cognitiva, ya sostiene tesis 18
-  solo por su hallazgo agregado) y F-240 (Mayer & Schwemmle 2025, mecanismos del design thinking, ya
-  sostiene tesis 21 solo por el resumen "sigue sin mecanismo establecido"). Las tres bloqueadas por el
-  proxy en su URL directa (doi.org y onlinelibrary.wiley.com ×2); reconstruidas vía búsqueda dirigida
-  que confirmó detalle de mecanismo nuevo en las tres, no solo el resumen de una línea ya citado. Sumé
-  las entradas 100, 101 y 102 de Intuición acumulada: (100) la prueba social (norma descriptiva) rinde
-  más específicamente bajo incertidumbre y compite con la norma injuntiva en vez de sumarse a ella —
-  matiza tesis 18 con la condición de activación real del mecanismo y el riesgo de que un testimonio
-  active sin querer la norma equivocada; (101) la pericia no inmuniza contra la sobrecarga cognitiva
-  intrínseca (interactividad de elementos) — cambia la estrategia de resolución, no el techo; la
-  palanca de diseño es reducir interactividad de elementos extraña a la tarea, no solo capacitar más al
-  asesor, matiza el diagnóstico Dx3 de tesis 18; (102) el resumen del ledger sobre F-240 ("sin mecanismo
-  causal establecido") resultó impreciso: la revisión sí nombra cuatro mecanismos (integración,
-  reencuadre, habilitación, involucramiento colaborativo) tras cribar 1.035 estudios — el déficit real
-  es falta de integración teórica profunda y de evaluación por contexto, no ausencia de mecanismo, lo
-  que cambia qué remedio pedir antes de invertir en el método, matiza tesis 21. Ninguna tesis de
-  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque
-  las tres entradas de hoy matizan directamente tesis 18 (dos veces) y 21. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
-  historial (2026-08-10 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
-- **2026-09-10** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, working tree ya limpio, HEAD en `856aaf0` sin fast-forward pendiente) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 10 corridas, **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, vigesimoctavo día seguido sin
-  cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna quedó
-  desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso — la
-  revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina
-  de `cronista`, no de este proceso diario; ya lleva veintinueve días sin correr). **Cumplí la poda
-  señalada el 2026-09-09:** el bloque "2026-08-10" salió por completo de la ventana de ~30 días
-  (cutoff ≈2026-08-11) — lo fusioné con el bloque "2026-08-01 a 2026-08-09" en un resumen ampliado
-  "2026-08-01 a 2026-08-10"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
-  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición no pudo
-  completarse hoy por una caída genuina de las herramientas de acceso a web de esta sesión, no por el
-  bloqueo habitual de proxy por dominio:** recalculé por script el universo 🟢A del ledger (134 filas)
-  contra `fuentes_leidas_lobo.md` (102 ya leídas) — 32 pendientes — y elegí 3 al azar sin reemplazo
-  (Python `random.sample`, sin semilla fija): F-54 (Garner 2022, extensión DIeSEL del diseño híbrido
-  de Curran), F-60 (Goddard et al. 2012, sesgo de automatización) y F-247 (Findlater & McGrenere,
-  menús estáticos/adaptativos/adaptables). Intenté leerlas a fondo por las tres vías que otras corridas
-  usaron para sortear el bloqueo de proxy por dominio (URL directa del ledger, mirrors alternativos —
-  Frontiers, Semantic Scholar, Google, incluso Wikipedia como prueba de diagnóstico — y `WebSearch`
-  directo): las tres URLs directas dieron `EGRESS_BLOCKED` (ncbi.nlm.nih.gov, pmc.ncbi.nlm.nih.gov,
-  dl.acm.org), los cuatro mirrors alternativos dieron el mismo `EGRESS_BLOCKED` sin excepción, y
-  `WebSearch` reportó la herramienta como no disponible en cinco intentos con queries distintas —
-  patrón consistente con una caída de acceso a red de la sesión, no con el bloqueo selectivo por
-  dominio que las corridas anteriores rodeaban con éxito. Ante esto, **decidí no inventar hallazgos
-  de lectura profunda desde memoria no verificada** (violaría la regla de "no inventes fuentes ni
-  datos" aplicada por analogía a la intuición): dejo F-54, F-60 y F-247 sin marcar como leídos en
-  `research/lobo/fuentes_leidas_lobo.md`, no sumé ninguna entrada nueva a "🧠 Intuición acumulada" hoy,
-  y la próxima corrida hará un sorteo nuevo (no necesariamente estos mismos tres) una vez el acceso a
-  red esté disponible. Ninguna tesis de negocio cambió de confianza — sin cambios sustanciales en la
-  evidencia ni en el mecanismo de intuición (pospuesto, no fallido silenciosamente). **Higiene de
-  archivo adicional:** al hacer la poda de hoy encontré que las corridas del 2026-08-21/09-07/09-09
-  habían marcado como "resumidas" las entradas diarias del 2026-08-01 al 2026-08-06 sin borrar el
-  texto original — quedaban duplicadas (el detalle completo Y su resumen, ambos en la bitácora).
-  Borré el detalle original de esas seis entradas (2026-08-01, 08-02, 08-03, 08-05×2, 08-06×2), dejo
-  constancia del hallazgo en la cabecera del bloque resumen para que quede trazable, y no se perdió
-  ningún dato porque el resumen ya cubría lo sustantivo y el detalle fino sigue en 🎯 Tesis vigentes /
-  🧠 Intuición acumulada. Bitácora con 29 días de historial (2026-08-12 a hoy) tras esta limpieza —
-  dentro de la ventana de ~30 días.
+  (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-06** — corrida de intuición, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-06). **2026-09-07** — corrida diaria de refinamiento, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-07).
+- **2026-09-08** — *(Detalle podado y fusionado al resumen el 2026-10-08)*: ledger fijo en F-468, corrida de intuición sin cambio de confianza en tesis.
+
+- **2026-09-09** — *(Detalle podado y fusionado al resumen el 2026-10-09)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
+- **2026-09-10** — *(Detalle podado y fusionado al resumen el 2026-10-10)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 - **2026-09-11** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward `2937e16→fb4eefb` que trajo consigo el propio commit del 2026-09-10 de esta
   opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
@@ -6786,3 +6740,62 @@ puesto de Perú; no lo cito y queda como fecha de falsación pendiente para `cro
   autorreportado) y 171 (Perú 80/139 en el GII 2025 con insumos 72.º y productos 91.º: el rezago está en convertir,
   no en invertir; la edición 2026 no la pude verificar). Poda: 09-03 fusionado al resumen; Bitácora cubre
   2026-09-04 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-04** — Corrida diaria de refinamiento. `main` al día (pull trajo grafo/relaciones, no tocó esta
+  opinión). El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`:
+  **528 filas (F-1 a F-528), +60 desde la última entrada (F-469 a F-528)**, primer movimiento del ledger en
+  días. Lectura de negocio de lo nuevo: (1) **Insurtech (tesis 25):** Root Q2 2026 (F-481) mantiene combined
+  ratio 92,1% pero con prima −1% y acción −10%; Lemonade (F-509/F-510) llega a loss ratio bruto 60% y pierde
+  24% en bolsa: el mercado castiga la falta de crecimiento rentable incluso con suscripción sana — matiz, sin
+  cambio de confianza. (2) **Perú (riesgos):** F-504/F-506 (Rímac utilidad −40% en 2T; sistema +1,1% en primas
+  1S) y F-505 (Mapfre Perú ratio combinado 102,4%) apuntan a compresión de rentabilidad, pero son 🟡C/🔵B sin
+  tabla SBS: instinto, no dato, hasta verificar; **no** subo ninguna confianza. (3) **Conducta humano-IA
+  (F-488 a F-503):** F-488 y F-489 dan base A/B a que la adulación y la persuasión de la IA son reales; F-499
+  (microtargeting no supera mensaje genérico) y F-518/F-519 refuerzan tesis 22 (personalizar no es gratis);
+  F-516 (🟢A) refuerza que el valor humano+IA está en crear, no en decidir — las comparaciones con asesor
+  conversacional de Rimac deben medirse en decisión. Varias filas son 🟡C/🟠D leídas solo por título
+  (F-494, F-497, F-500, F-501, F-503): no entran. **Intuición:** F-516 (🟢A nueva, prioridad por regla) más F-481 y
+  F-488 (🔵B, sorteo al azar), vía `WebSearch`. Entradas 172-174. Poda: 09-04 fusionado al resumen; Bitácora cubre
+  2026-09-05 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-05** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no
+  existe; el ledger vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** desde la entrada de ayer
+  (último cambio del ledger: 2026-10-03). Sin cambios en tesis ni confianzas; matiz de lectura: F-521 (🟢A) es
+  evidencia causal de caída de demanda por tarea en una plataforma, no de empleo total. **Intuición (nivel 🟢A, 15
+  pendientes → 12 tras hoy):** sorteo F-521, F-499 y F-489 (F-457 salió en el sorteo pero es 🔵B: coincidencia de
+  emoji en el texto de la fila; sustituida), leídas vía `WebSearch`. Entradas 175 (caída de demanda en plataforma:
+  dirección, no tamaño), 176 (un nulo de personalización = el mensaje base ya rendía) y 177 (persuasión sube,
+  exactitud baja: medir conversión con exactitud). Poda: 09-05 fusionado al resumen; Bitácora cubre 2026-09-06 a
+  hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-06** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no
+  existe; el ledger vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** (último cambio del ledger:
+  2026-10-03). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A, 6 pendientes → 3 tras hoy):** sorteo F-519,
+  F-490 y F-514, leídas vía `WebSearch`. Entradas 178 (personalización: efecto modesto mediado por relevancia), 179 (F-490
+  atribuida a Hackenburg en el ledger, pero el artículo es de Bai et al. — autoría a corregir) y 180 (diseño→ROA observacional,
+  mecanismo vía ventas). Además F-519 figura como *Journal of Advertising/T&F* y es *Journal of Advertising Research*; F-514
+  no nombra autores (Han, Tang & Li). Correcciones pendientes para `cronista`, no tocadas aquí. Poda: 09-06 fusionado al
+  resumen; Bitácora cubre 2026-09-07 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-07** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger
+  vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** (último cambio del ledger: 2026-10-03). Sin cambios en tesis ni
+  confianzas. **Intuición (nivel 🟢A, quedaban 3 reales → 0 pendientes tras hoy; nueve candidatos en la comparación bruta eran falsos
+  positivos por emoji en el texto de otras filas — F-149, F-249, F-262, F-265, F-436, F-457 no son 🟢A):** F-498, F-524 y F-525, leídas vía
+  `WebSearch`. Entradas 181 (XAI: la explicación aporta poco sobre la IA sola), 182 (revisión de design thinking = mapa, no efecto; autoría
+  de F-524: Rösch, Tiberius & Kraus) y 183 (innovación→desempeño depende de apropiación y escala; autoría de F-525: Rousseau et al.).
+  Correcciones de autoría pendientes para `cronista`, no tocadas aquí. Con el nivel 🟢A agotado, desde mañana sigue 🔵B. Poda: 09-07
+  fusionado al resumen; Bitácora cubre 2026-09-08 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-08** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es
+  `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), +272 desde mi última lectura (F-528)**. Cuatro bloques nuevos: F-529 a F-541 (cierre de la iteración 5 de
+  `tendencias-diseno-innovacion`), `convergencia-psicologia-economia-ia` (F-543 a F-645), `fenomenos-psicologicos` (F-647 a F-741) y `fenomeno-el-nino-impacto-personas`
+  (F-742 a F-801, renumerado). **Integrado:** tesis 26 (El Niño 2026-27: el hueco de RIMAC es la liquidez del hogar y se cubre por B2B2C; confianza Media-alta en que el índice B2C
+  directo no escala, Media en la vía B2B2C, Baja en el tamaño) y tesis 27 (muestras sintéticas por LLM: ordenan hipótesis, no estiman efectos; confianza Media porque tres de los cuatro
+  hallazgos de inflación son preprints 🟡C). Ninguna confianza previa cambió. **Intuición (nivel 🟢A; 144 pendientes tras la ampliación del ledger, 141 tras hoy):** sorteo F-689, F-563 y F-728,
+  leídas vía `WebSearch`. Entradas 184 (predictor que acierta ≠ entiende: prueba de la consigna vaciada, Centaur), 185 (señuelo asimétrico: replica con condiciones angostas; falta prueba de campo) y 186
+  (revisión canónica = marco, no efecto). Dato verificado en la lectura: la réplica de 2014 al señuelo es de *Journal of Marketing Research*, no del JCR. Poda: 09-08 fusionado al resumen; Bitácora cubre 2026-09-09 a hoy.
+  `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-09** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** desde ayer (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 141 pendientes → 138 tras hoy):** sorteo F-664, F-738 y F-647, leídas vía `WebSearch` (resúmenes y literatura secundaria; lectura débil, declarada). Entradas 187 (norma descriptiva: cuenta la cercanía a la situación inmediata), 188 (D grande sobre constructo heterogéneo ≠ peso en una decisión; sesgo de publicación) y 189 (Asch: la unanimidad es frágil). Pendiente para `cronista`: el buscador no confirmó la autoría de F-738 (Stefan & David). Poda: 09-09 fusionado al resumen; Bitácora cubre 2026-09-10 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-10** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 140 pendientes → 137 tras hoy):** sorteo F-707, F-673 y F-553, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 190 (ego depletion: d≈0,62 en 1998-meta vs. d≈0,04 en réplica multilab de 2016; el desacuerdo es la señal), 191 (informar la espera reduce la sobreestimación pero puede empeorar la evaluación) y 192 (sujetos sintéticos: malrepresentan y aplanan al grupo; mirar dispersión). Pendiente para `cronista`: F-707 no recoge las réplicas de 2016 que cambian su lectura. Poda: 09-10 fusionado al resumen; Bitácora cubre 2026-09-11 a hoy. `fuentes_leidas_lobo.md` actualizado.

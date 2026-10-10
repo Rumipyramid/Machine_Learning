@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-10-04 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-10-07 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -300,6 +300,9 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 
 ## Conexiones
 
+- [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — caso
+  real de la brecha de protección (~3,3% de hogares con seguro de desastres): en el Niño Costero 2017 el seguro cubrió ~7% del daño
+  (F-773) y los hogares se recuperaron con donaciones, no con indemnizaciones (F-752); coyuntura 2026-27.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — el ramo salud (§7.1, el de mayor
   crecimiento) se desarrolla en profundidad ahí: mecanismos que funcionan bajo la presión de costo
   y demografía descrita en §7.

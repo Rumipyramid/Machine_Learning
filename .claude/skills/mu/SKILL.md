@@ -27,3 +27,7 @@ Indicadores (definiciones en `research/grafo/METRICAS.md`; titulares = cifras cr
 - **02 MADUREZ:** falsabilidad ejercida, autocorrección, reglas trazables, base A+B, relaciones leídas más allá de ficha, lectura profunda (Lobo).
 - **03 RIQUEZA:** fuentes, nodes, enlaces, fuentes del node de diseño, cobertura del grafo semántico, entidades, convergencias, tensiones.
 - **04 EVOLUCIÓN:** ledger por fecha de registro (el historial git está truncado) y barridos semánticos. **05 NODES:** peso por node.
+- **06 TEMAS:** qué sabe el cerebro de cada node: subgrafo semántico (relaciones cuya fuente cita el node o un
+  output derivado), cobertura, convergencias y tensiones; mapa radial SVG (sin JS) para nodes con ≥10 relaciones,
+  primero los de la última fecha de `alma.md`. Si un tema nuevo no aparece aquí, falta su barrido semántico
+  (`/grafo`, modo semántico), no un cambio en Mu.

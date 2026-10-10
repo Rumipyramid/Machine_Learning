@@ -29,6 +29,13 @@
    "design": false
   },
   {
+   "id": "fenomeno-el-nino-impacto-personas",
+   "type": "node",
+   "lines": 404,
+   "cites": 58,
+   "design": false
+  },
+  {
    "id": "fenomenos-psicologicos",
    "type": "node",
    "lines": 547,
@@ -80,14 +87,14 @@
   {
    "id": "modelo-personas-sinteticas",
    "type": "node",
-   "lines": 77,
+   "lines": 80,
    "cites": 0,
    "design": false
   },
   {
    "id": "modelo-salud-ia-farmacias-peru",
    "type": "node",
-   "lines": 614,
+   "lines": 617,
    "cites": 23,
    "design": false
   },
@@ -101,8 +108,8 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 337,
-   "cites": 19,
+   "lines": 340,
+   "cites": 21,
    "design": false
   },
   {
@@ -146,6 +153,12 @@
   },
   {
    "id": "guia-triaje-resultados-2026-08-05.md",
+   "type": "output",
+   "lines": 0,
+   "cites": 0
+  },
+  {
+   "id": "informe-el-nino-oportunidades-rimac-2026-10-07.md",
    "type": "output",
    "lines": 0,
    "cites": 0
@@ -6809,6 +6822,546 @@
    "autor": "Meyer, A.; Frederick, S.; Burnham, T. C.; Guevara Pinto, J. D.; Boyer, T. W.; Ball, L. J.; Pennycook, G.; Ackerman, R.; Thompson, V. A.; Schuldt, J. P.",
    "anio": "2015",
    "huerfana": false
+  },
+  {
+   "id": "F-742",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Persistent effect of El Niño on global economic growth (Science)",
+   "autor": "Callahan, C. W. & Mankin, J. S. (Dartmouth)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-743",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Fair weather or foul? The macroeconomic effects of El Niño (Journal of International Economics)",
+   "autor": "Mohaddes, K.; Cashin, P.; Raissi, M.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-744",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "El Niño adversely affected childhood stature and lean mass in northern Peru (Climate Change Responses, BMC)",
+   "autor": "Danysh, H. E.; Gilman, R. H.; Wells, J. C. K.; Pan, W. K.; Zaitchik, B.; Gonzálvez, G. et al.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-745",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The impact of early life shocks on human capital formation: evidence from El Niño floods in Ecuador (Journal of Health Economics, 62:13-44)",
+   "autor": "Rosales-Rueda, M. F.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-746",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "El Niño and children: Medium-term effects of early-life weather shocks on cognitive and health outcomes (World Development, 150)",
+   "autor": "Aguilar, A. & Vicarelli, M.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-747",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Effects of El Niño and ambient temperature on hospital admissions for diarrhoeal diseases in Peruvian children (The Lancet)",
+   "autor": "Checkley, W. et al.",
+   "anio": "2000",
+   "huerfana": false
+  },
+  {
+   "id": "F-748",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "El Niño and health (The Lancet, 362:1481-1489)",
+   "autor": "Kovats, R. S.; Bouma, M. J.; Hajat, S.; Worrall, E.; Haines, A.",
+   "anio": "2003",
+   "huerfana": false
+  },
+  {
+   "id": "F-749",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Global disease outbreaks associated with the 2015-2016 El Niño event (Scientific Reports)",
+   "autor": "Anyamba, A. et al.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-750",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Air quality and early-life mortality: Evidence from Indonesia's wildfires (Journal of Human Resources, 44(4))",
+   "autor": "Jayachandran, S.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-751",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Post-traumatic stress disorder, food insecurity, and social capital after the 2017 coastal El Niño flooding among mothers from Piura, Peru: ",
+   "autor": "Culquichicón, C.; Astudillo-Rueda, D.; Niño-García, R.; Martínez-Rivera, R. N.; Merino Tsui, N.; Gilman, R. H.; Levy, K.; Lescano, A. G.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-752",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Under the water: flood impacts and economic dynamics in northern Peru (Working Paper in Trade and Development 2025/07)",
+   "autor": "Cobian-Alvarez, J. & Resosudarmo, B. P. (ANU, Arndt-Corden Dept. of Economics)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-753",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Impact of natural disasters on household health and education expenditure: Evidence from El Niño phenomenon in Peru (Economía, PUCP)",
+   "autor": "Malpartida, R. & Guembes, M. (Universidad de Piura)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-754",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Effect of natural disasters on poverty transitions and consumption growth. Evidence for rural Perú",
+   "autor": "Fort, R.; Glave, M.; Rosemberg, C. (GRADE)",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-755",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Reflections on the impact and response to the Peruvian 2017 Coastal El Niño event: Looking to the past to prepare for the future (PLOS ONE 1",
+   "autor": "Yglesias-González, M.; Valdés-Velásquez, A.; Hartinger, S. M.; Takahashi, K.; … Lescano, A. G.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-756",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Civil conflicts are associated with the global climate (Nature, vol. 476)",
+   "autor": "Hsiang, S. M.; Meng, K. C.; Cane, M. A.",
+   "anio": "2011",
+   "huerfana": false
+  },
+  {
+   "id": "F-757",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Climate not to blame for African civil wars (PNAS)",
+   "autor": "Buhaug, H.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-758",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Drought and intimate partner violence towards women in 19 countries in sub-Saharan Africa during 2011-2018 (PLOS Medicine 17(3))",
+   "autor": "Epstein, A.; Bendavid, E.; Nash, D.; Charlebois, E. D.; Weiser, S. D.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-759",
+   "type": "fuente",
+   "rigor": "?",
+   "titulo": "Late Victorian Holocausts: El Niño Famines and the Making of the Third World (Verso)",
+   "autor": "Davis, M.",
+   "anio": "2001",
+   "huerfana": false
+  },
+  {
+   "id": "F-760",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Etnografía histórico-geográfica y estudio cualitativo de percepción de riesgo",
+   "autor": "Autoría no capturada — \"Water Gives, Water Takes Away. Memory, Agency and Resilience in ENSO-Vulnerable Historic Landscapes in Peru\" (repositorio PUCP) + tesis cualitativa sobre representación del riesgo de inundación en Piura 2017 (13 entrevistas, Univ. de Lieja)",
+   "anio": "s.f. (≈2017-2024)",
+   "huerfana": false
+  },
+  {
+   "id": "F-761",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Impacto del fenómeno El Niño de 1997-1998 en la salud de la población peruana / Informe de malaria, Perú",
+   "autor": "IGP (Ciencia Climática) / OPS (Malaria Report 2008, Perú)",
+   "anio": "2008-2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-762",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "FAO El Niño Situation Report",
+   "autor": "FAO (Situation Reports El Niño, mar-jul 2016)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-763",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Emergencia por impacto del Fenómeno \"El Niño Costero\" – Perú, 2017",
+   "autor": "INDECI / OPS-OMS Perú",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-764",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "¿Cómo impactó El Niño en Perú en los eventos de 1982-1983, 1997-1998 y 2017? / Las lecciones de El Niño (CAF)",
+   "autor": "CAF (vía Andina e IGP)",
+   "anio": "2000 (cit. 2023)",
+   "huerfana": false
+  },
+  {
+   "id": "F-765",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Economía peruana cayó 0,55% en 2023 / pobreza 2023",
+   "autor": "INEI / BCRP (vía Andina, La República, Forbes Perú, Infobae)",
+   "anio": "2023-2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-766",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Más de 440 muertos por dengue desde enero en Perú",
+   "autor": "AFP vía La Nación (Paraguay), Mongabay, Save the Children (sobre datos del CDC-MINSA)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-767",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Precio del limón se dispara en Perú; el ministro sugiere cambiar el ceviche por pollo; memes del \"limón como moneda\"",
+   "autor": "Expreso (Ecuador), 24horas (Chile), Ara (España), Infomercado (Perú)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-768",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Audios de WhatsApp anuncian lluvias y huaicos / Falso video de personas en pánico ante caída de huaico en Trujillo no es actual",
+   "autor": "El Comercio; El Búho (verificación)",
+   "anio": "2017-2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-769",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Críticas a la Reconstrucción con Cambios: obras sin ejecutar, vivienda \"Una Sola Fuerza\" abandonada, pedidos de balance de S/25 mil millones",
+   "autor": "El Búho, Expreso, El Comercio, Comunicaciones del Congreso, Mesa de Concertación (Piura)",
+   "anio": "2018-2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-770",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Contraloría sobre obras de El Niño: se ha gastado solo el 30%",
+   "autor": "Gestión (entrevista al contralor Nelson Shack)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-771",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Fenómenos Climatológicos 2024 — De qué manera el fenómeno del Niño afecta a los hogares peruanos",
+   "autor": "Kantar División Worldpanel Perú",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-772",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "6 de cada 10 peruanos están en riesgo de inundación por El Niño / \"Los economistas opinan\"",
+   "autor": "IPE (Instituto Peruano de Economía), vía Infomercado y Perú21",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-773",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Pagos de seguros por Fenómeno El Niño suman US$428 millones",
+   "autor": "APESEG / SBS vía Andina",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-774",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Reporte de Sostenibilidad 2017",
+   "autor": "Rímac Seguros y Reaseguros",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-775",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "La Positiva desarrolla seguros para la adaptación al cambio climático",
+   "autor": "Agraria.pe / Proactivo (sobre La Positiva Seguros)",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-776",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Peru starts second anchovy season after cancellation of first cost seafood industry over USD 1 billion / Austevoll's Peruvian arm suffers Q2",
+   "autor": "SeafoodSource; Undercurrent News",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-777",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Mango and lemon crops in Peru lost almost 90% of their blossom",
+   "autor": "FreshPlaza; El Búho (sobre la Cámara de Comercio y Producción de Piura, Camco)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-778",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Cajas otorgaron 1.000 millones en préstamos [a afectados por el Niño Costero]",
+   "autor": "Infomercado (sobre la FEPCMAC)",
+   "anio": "2017-2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-779",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Apeseg: solo 187 colegios de 50.000 tienen seguro ante desastres / declaraciones del presidente de APESEG",
+   "autor": "La Cámara (CCL), Caretas (sobre APESEG y Eduardo Morón)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-780",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Comunicado Oficial ENFEN N.° 16-2026 (14-set-2026): Alerta de El Niño Costero",
+   "autor": "ENFEN (Comisión Multisectorial; IMARPE, SENAMHI, IGP, DHN, ANA, INDECI) vía Infobae, Latina, Diario de Chimbote, Radio RSD",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-781",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "ENSO Diagnostic Discussion / El Niño Advisory (ago-set 2026)",
+   "autor": "NOAA Climate Prediction Center (vía cobertura secundaria)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-782",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "BCRP reduce a 3,2% su proyección de crecimiento por el impacto de El Niño extraordinario",
+   "autor": "BCRP (vía Caretas, Panamericana, Gestión)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-783",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Gobierno declara emergencia en varias regiones por el peligro de lluvias de El Niño / daños en Tumbes / Senamhi: lluvias excepcionales en Tu",
+   "autor": "Andina, Bloomberg Línea, Última Hora (EFE), El Peruano (sobre SENAMHI)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-784",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Natural Risk Prevention Plan 2025-2026",
+   "autor": "Rímac Seguros y Reaseguros",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-785",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Grupo RPP y Pacífico lanzan la campaña \"Fenómeno El Niño: más informados, más seguros\" / Preparados estamos más seguros: las iniciativas de ",
+   "autor": "RPP / Gestión (publirreportaje sobre Pacífico Seguros)",
+   "anio": "2023-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-786",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Reglamento de Seguros Paramétricos",
+   "autor": "SBS — Resolución SBS N.° 02260-2026 (vía El Peruano, LP Derecho, Infomercado)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-787",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Fenómeno El Niño: personas podrán protegerse de terremotos y lluvias con seguros más fáciles. ¿Cómo funcionan?",
+   "autor": "Gestión",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-788",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "MAPFRE launches new microinsurance line for small entrepreneurs in Latin America (Perú en 2026)",
+   "autor": "Coverager; MAPFRE (comunicación corporativa)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-789",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "La Positiva lanza \"Café Seguro Perú\"",
+   "autor": "Gestión (sobre La Positiva Seguros)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-790",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "MiCRO: bringing insurance solutions to Central America's vulnerable populations / parametric microinsurance",
+   "autor": "MiCRO (Microinsurance Catastrophe Risk Organisation) vía Howden, Insurance Insider y Actuaries Digital",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-791",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Learning about an Infrequent Event: Evidence from Flood Insurance Take-Up in the United States (American Economic Journal: Applied Economics",
+   "autor": "Gallagher, J.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-792",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "After the Drought: The Impact of Microinsurance on Consumption Smoothing and Asset Protection (American Journal of Agricultural Economics, 1",
+   "autor": "Janzen, S. A. & Carter, M. R.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-793",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Anticipatory Cash Transfers in Climate Disaster Response",
+   "autor": "Pople, A.; Hill, R.; Dercon, S.; Brunckhorst, B. (CSAE, Oxford; evaluación del PMA)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-794",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "\"El Niño\" 2026: ¿cómo nos preparamos para sus efectos en América Latina y el Caribe? / Naciones Unidas refuerza su apoyo a la preparación de",
+   "autor": "IFRC (Federación Internacional de la Cruz Roja) / ONU Perú vía El Peruano",
+   "anio": "2026",
+   "huerfana": true
+  },
+  {
+   "id": "F-795",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Prudential do Brasil lança produto exclusivo para doenças tropicais / Seguros Unimed registra aumento de 163% de autorizações relacionadas à",
+   "autor": "Revista Apólice (Brasil); Medicina S/A",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-796",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "¿Cuánto cuesta la atención y el tratamiento por dengue en una clínica privada sin seguro? / Dengue: SIS garantiza protección financiera",
+   "autor": "Infomercado; Andina (sobre el SIS)",
+   "anio": "2023",
+   "huerfana": true
+  },
+  {
+   "id": "F-797",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Record El Niño arrives as reinsurance pricing hits cycle lows",
+   "autor": "Insurance Business Magazine (con declaraciones del UK Met Office)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-798",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "New approaches for index insurance: ENSO insurance in Peru / ENSO-based index insurance for floods: statistical risk analyses and applicatio",
+   "autor": "Skees, J. R. & Collier, B. (GlobalAgRisk; IFPRI 2020 Vision Focus 18) · Khalil, A. F. et al.",
+   "anio": "2009-2010 (y 2007)",
+   "huerfana": false
+  },
+  {
+   "id": "F-799",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Barriers to Household Risk Management: Evidence from India (American Economic Journal: Applied Economics, 5(1):104-135)",
+   "autor": "Cole, S.; Giné, X.; Tobacman, J.; Topalova, P.; Townsend, R.; Vickery, J.",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-800",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Index Insurance for Developing Country Agriculture: A Reassessment (Annual Review of Resource Economics, 9:421-438)",
+   "autor": "Carter, M.; de Janvry, A.; Sadoulet, E.; Sarris, A.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-801",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Cláusula adicional de terremoto, temblor y riesgos de la naturaleza — Seguro Hogar Flex Digital",
+   "autor": "Pacífico Seguros",
+   "anio": "s.f. (vigente 2026)",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -6971,6 +7524,24 @@
   {
    "s": "evaluacion-calidad-agentes-conversacionales-ia",
    "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "modelo-personas-sinteticas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "modelo-salud-ia-farmacias-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
   },
@@ -7216,6 +7787,12 @@
   },
   {
    "s": "modelo-personas-sinteticas",
+   "t": "fenomeno-el-nino-impacto-personas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-personas-sinteticas",
    "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
@@ -7229,6 +7806,12 @@
   {
    "s": "modelo-personas-sinteticas",
    "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "fenomeno-el-nino-impacto-personas",
    "k": "wikilink",
    "recip": true
   },
@@ -7313,6 +7896,12 @@
   {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "fenomeno-el-nino-impacto-personas",
    "k": "wikilink",
    "recip": true
   },
@@ -7525,6 +8114,11 @@
   {
    "s": "guia-triaje-resultados-2026-08-05.md",
    "t": "modelo-salud-ia-farmacias-peru",
+   "k": "deriva"
+  },
+  {
+   "s": "informe-el-nino-oportunidades-rimac-2026-10-07.md",
+   "t": "fenomeno-el-nino-impacto-personas",
    "k": "deriva"
   },
   {
@@ -11376,10 +11970,310 @@
    "s": "fenomenos-psicologicos",
    "t": "F-741",
    "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-742",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-743",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-744",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-745",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-746",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-747",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-748",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-749",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-750",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-751",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-752",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-752",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-753",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-754",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-755",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-756",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-757",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-758",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-759",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-760",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-761",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-762",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-763",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-764",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-765",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-766",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-767",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-768",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-769",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-770",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-771",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-772",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-773",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-773",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-774",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-775",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-776",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-777",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-778",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-779",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-780",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-781",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-782",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-783",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-784",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-785",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-786",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-787",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-788",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-789",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-790",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-791",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-792",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-793",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-795",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-797",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-798",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-799",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-800",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-801",
+   "k": "cita"
   }
  ],
  "meta": {
-  "generado": "2026-10-08",
+  "generado": "2026-10-10",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -11627,6 +12521,19 @@
      "A": 90,
      "B": 4,
      "D": 1
+    }
+   },
+   {
+    "fecha": "2026-10-07",
+    "nuevas": 60,
+    "acumuladas": 800,
+    "AB": 33,
+    "rigor": {
+     "A": 19,
+     "B": 14,
+     "?": 1,
+     "C": 3,
+     "D": 23
     }
    }
   ],
@@ -13615,6 +14522,44 @@
     },
     "fecha": "2026-10-05",
     "commit": "643ba4f",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 740,
+    "rigor": {
+     "B": 110,
+     "A": 268,
+     "C": 171,
+     "D": 144,
+     "?": 14,
+     "E": 33
+    },
+    "nodes": 18,
+    "outputs": 4,
+    "wikilinks": 110,
+    "derivaciones": 11,
+    "fuentes_citadas_en_nodes": 636,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-08",
+    "commit": "686a858",
     "fuente": "git"
    }
   ],

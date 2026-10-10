@@ -48,6 +48,17 @@
    ]
   },
   {
+   "id": "accion_anticipatoria",
+   "nombre": "Acción anticipatoria / financiamiento basado en pronósticos",
+   "tipo": "concepto",
+   "grado": 3,
+   "fuentes": [
+    "F-793",
+    "F-794",
+    "F-798"
+   ]
+  },
+  {
    "id": "aceptacion_pedido",
    "nombre": "Aceptación de un pedido mayor",
    "tipo": "resultado",
@@ -239,6 +250,16 @@
    "fuentes": [
     "F-719",
     "F-720"
+   ]
+  },
+  {
+   "id": "agro_norte",
+   "nombre": "Producción agrícola del norte (mango, limón)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-760",
+    "F-777"
    ]
   },
   {
@@ -649,6 +670,15 @@
    ]
   },
   {
+   "id": "bajo_peso_nacer",
+   "nombre": "Bajo peso al nacer",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-745"
+   ]
+  },
+  {
    "id": "bancaseguros_latam",
    "nombre": "Bancaseguros (distribución de seguros por bancos) en América Latina",
    "tipo": "concepto",
@@ -719,6 +749,26 @@
    "fuentes": [
     "F-257",
     "F-401"
+   ]
+  },
+  {
+   "id": "brecha_proteccion_nino_peru",
+   "nombre": "Brecha de protección ante El Niño en Perú (~7% del daño asegurado en 2017)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-773",
+    "F-779"
+   ]
+  },
+  {
+   "id": "brotes_enfermedades_clima",
+   "nombre": "Brotes de enfermedades sensibles al clima (cólera, malaria, dengue, peste)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-748",
+    "F-749"
    ]
   },
   {
@@ -864,6 +914,25 @@
    ]
   },
   {
+   "id": "c_bcrp_impacto_07",
+   "nombre": "BCRP: El Niño resta 0,7 pp al PBI 2026 (estimación previa)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-787"
+   ]
+  },
+  {
+   "id": "c_bcrp_impacto_09",
+   "nombre": "BCRP: El Niño resta 0,9 pp al PBI 2026 (Reporte de Inflación de setiembre)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-782",
+    "F-787"
+   ]
+  },
+  {
    "id": "c_brecha_justificacion_implementacion",
    "nombre": "La justificación de diseño generada no coincide con lo implementado",
    "tipo": "afirmacion",
@@ -888,6 +957,16 @@
    "grado": 1,
    "fuentes": [
     "F-722"
+   ]
+  },
+  {
+   "id": "c_cafe_primer_parametrico",
+   "nombre": "'Café Seguro Perú' es el primer seguro paramétrico del país",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-789",
+    "F-798"
    ]
   },
   {
@@ -1017,6 +1096,34 @@
    ]
   },
   {
+   "id": "c_dano2017_3100",
+   "nombre": "El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-763",
+    "F-773"
+   ]
+  },
+  {
+   "id": "c_dano2017_9200",
+   "nombre": "El daño físico del Niño Costero 2017 fue de US$9.200 M (APESEG)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-773"
+   ]
+  },
+  {
+   "id": "c_demanda_post_evento",
+   "nombre": "La demanda de seguro sube tras el desastre y se diluye con el tiempo",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-791"
+   ]
+  },
+  {
    "id": "c_demora_predice_logro",
    "nombre": "La demora de gratificación en preescolar predice fuertemente el logro posterior",
    "tipo": "afirmacion",
@@ -1029,9 +1136,10 @@
    "id": "c_desconfianza_falta_info",
    "nombre": "La causa #1 de desconfianza en seguros es la falta de información",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-486"
+    "F-486",
+    "F-799"
    ]
   },
   {
@@ -1133,6 +1241,15 @@
    ]
   },
   {
+   "id": "c_efecto_macro_heterogeneo",
+   "nombre": "El efecto macro de El Niño es heterogéneo: algunos países crecen",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-743"
+   ]
+  },
+  {
    "id": "c_eleccion_genera_disonancia",
    "nombre": "Actuar contra la propia actitud con alta (vs baja) elección produce más cambio de actitud",
    "tipo": "afirmacion",
@@ -1148,6 +1265,16 @@
    "grado": 1,
    "fuentes": [
     "F-663"
+   ]
+  },
+  {
+   "id": "c_enso_conflicto",
+   "nombre": "El Niño aumenta la probabilidad de conflicto civil",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-756",
+    "F-757"
    ]
   },
   {
@@ -1431,6 +1558,36 @@
    "grado": 1,
    "fuentes": [
     "F-262"
+   ]
+  },
+  {
+   "id": "c_nino_2026_extraordinario",
+   "nombre": "El Niño 2026-27 alcanza magnitud extraordinaria/histórica",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-780",
+    "F-781",
+    "F-797"
+   ]
+  },
+  {
+   "id": "c_nino_frena_crecimiento",
+   "nombre": "El Niño deprime el crecimiento económico por años",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-742",
+    "F-743"
+   ]
+  },
+  {
+   "id": "c_noaa_evento_historico",
+   "nombre": "NOAA: >90% de un Niño muy fuerte y ~75% de uno histórico en 2026-27",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-781"
    ]
   },
   {
@@ -1801,6 +1958,16 @@
    ]
   },
   {
+   "id": "c_vulnerabilidad_decide",
+   "nombre": "El daño lo determina la vulnerabilidad previa, no solo el clima ('no hay desastres naturales')",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-757",
+    "F-759"
+   ]
+  },
+  {
    "id": "c_vulnerabilidad_transversal",
    "nombre": "Todos los grupos de consumidores son susceptibles",
    "tipo": "afirmacion",
@@ -1986,6 +2153,15 @@
    "grado": 1,
    "fuentes": [
     "F-115"
+   ]
+  },
+  {
+   "id": "capital_social",
+   "nombre": "Capital social y redes",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-751"
    ]
   },
   {
@@ -2231,6 +2407,16 @@
    ]
   },
   {
+   "id": "cognicion_infantil",
+   "nombre": "Desarrollo cognitivo infantil",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-745",
+    "F-746"
+   ]
+  },
+  {
    "id": "cognitive_forcing_functions",
    "nombre": "Cognitive forcing functions (fricción deliberada)",
    "tipo": "intervencion",
@@ -2379,6 +2565,16 @@
    ]
   },
   {
+   "id": "conducta_preparacion_hogar",
+   "nombre": "Acciones de preparación del hogar ante El Niño",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-771",
+    "F-785"
+   ]
+  },
+  {
    "id": "conducta_prosocial",
    "nombre": "Conducta prosocial (elegir en beneficio de otro)",
    "tipo": "resultado",
@@ -2453,6 +2649,15 @@
    "grado": 1,
    "fuentes": [
     "F-24"
+   ]
+  },
+  {
+   "id": "conflicto_civil",
+   "nombre": "Conflicto civil",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-756"
    ]
   },
   {
@@ -2695,6 +2900,15 @@
    ]
   },
   {
+   "id": "costo_bolsillo_dengue",
+   "nombre": "Gasto de bolsillo por dengue fuera del SIS",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-796"
+   ]
+  },
+  {
    "id": "costo_ia_inferencia",
    "nombre": "Costo de IA / inferencia",
    "tipo": "concepto",
@@ -2747,6 +2961,18 @@
    "grado": 1,
    "fuentes": [
     "F-323"
+   ]
+  },
+  {
+   "id": "crecimiento_pbi",
+   "nombre": "Crecimiento económico (PBI)",
+   "tipo": "resultado",
+   "grado": 6,
+   "fuentes": [
+    "F-742",
+    "F-743",
+    "F-782",
+    "F-787"
    ]
   },
   {
@@ -2839,6 +3065,29 @@
    "grado": 2,
    "fuentes": [
     "F-579"
+   ]
+  },
+  {
+   "id": "danos_nino_1998",
+   "nombre": "Daños humanos y económicos del Niño 1997-98 (Perú)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-764"
+   ]
+  },
+  {
+   "id": "danos_nino_2017",
+   "nombre": "Daños humanos y económicos del Niño Costero 2017",
+   "tipo": "resultado",
+   "grado": 7,
+   "fuentes": [
+    "F-755",
+    "F-763",
+    "F-769",
+    "F-783",
+    "F-784",
+    "F-801"
    ]
   },
   {
@@ -2944,11 +3193,13 @@
    "id": "demanda_seguros",
    "nombre": "Demanda de seguros",
    "tipo": "resultado",
-   "grado": 3,
+   "grado": 5,
    "fuentes": [
     "F-164",
     "F-221",
-    "F-3"
+    "F-3",
+    "F-791",
+    "F-799"
    ]
   },
   {
@@ -2968,6 +3219,17 @@
    "grado": 2,
    "fuentes": [
     "F-349"
+   ]
+  },
+  {
+   "id": "dengue_peru",
+   "nombre": "Casos y muertes por dengue (Perú)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-766",
+    "F-795",
+    "F-796"
    ]
   },
   {
@@ -3124,12 +3386,30 @@
    ]
   },
   {
+   "id": "desinformacion_clima",
+   "nombre": "Desinformación y pánico en redes ante lluvias",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-768"
+   ]
+  },
+  {
    "id": "desintermediacion_ia_distribucion_seguros",
    "nombre": "Desintermediación por IA de la distribución de seguros",
    "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
     "F-181"
+   ]
+  },
+  {
+   "id": "desnutricion_cronica",
+   "nombre": "Desnutrición crónica infantil",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-746"
    ]
   },
   {
@@ -3149,6 +3429,15 @@
    "fuentes": [
     "F-36",
     "F-37"
+   ]
+  },
+  {
+   "id": "diarrea_infantil",
+   "nombre": "Hospitalizaciones infantiles por diarrea",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-747"
    ]
   },
   {
@@ -3306,6 +3595,15 @@
    ]
   },
   {
+   "id": "donaciones_informales",
+   "nombre": "Donaciones y ayuda informal (comida, ropa)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-752"
+   ]
+  },
+  {
    "id": "duracion_percibida",
    "nombre": "Duración subjetiva percibida de un evento",
    "tipo": "resultado",
@@ -3418,6 +3716,32 @@
    "fuentes": [
     "F-687",
     "F-688"
+   ]
+  },
+  {
+   "id": "el_nino_enso",
+   "nombre": "El Niño / ENSO (fase cálida)",
+   "tipo": "concepto",
+   "grado": 21,
+   "fuentes": [
+    "F-742",
+    "F-743",
+    "F-744",
+    "F-745",
+    "F-746",
+    "F-747",
+    "F-748",
+    "F-749",
+    "F-750",
+    "F-756",
+    "F-759",
+    "F-761",
+    "F-762",
+    "F-764",
+    "F-771",
+    "F-776",
+    "F-777",
+    "F-782"
    ]
   },
   {
@@ -3876,6 +4200,15 @@
    ]
   },
   {
+   "id": "exposicion_1000_dias",
+   "nombre": "Niños expuestos en gestación y primeros 2 años",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-744"
+   ]
+  },
+  {
    "id": "exposicion_codigo_agente",
    "nombre": "Experiencia acumulada revisando código de agentes de IA",
    "tipo": "constructo",
@@ -4133,6 +4466,15 @@
    ]
   },
   {
+   "id": "friccion_no_precio",
+   "nombre": "Fricciones no-precio: desconfianza, falta de liquidez, baja saliencia",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-799"
+   ]
+  },
+  {
    "id": "friccion_pago_posterior",
    "nombre": "Fricción: acción de pago requerida tras el dark pattern",
    "tipo": "intervencion",
@@ -4223,6 +4565,15 @@
     "F-339",
     "F-340",
     "F-352"
+   ]
+  },
+  {
+   "id": "gasto_salud_educacion",
+   "nombre": "Gasto del hogar en salud y educación",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-753"
    ]
   },
   {
@@ -4382,6 +4733,17 @@
    "grado": 1,
    "fuentes": [
     "F-569"
+   ]
+  },
+  {
+   "id": "hogares_pobres",
+   "nombre": "Hogares pobres / de menores ingresos",
+   "tipo": "poblacion",
+   "grado": 3,
+   "fuentes": [
+    "F-750",
+    "F-754",
+    "F-788"
    ]
   },
   {
@@ -4644,6 +5006,18 @@
    ]
   },
   {
+   "id": "ingreso_consumo_hogar",
+   "nombre": "Ingreso y consumo del hogar",
+   "tipo": "resultado",
+   "grado": 4,
+   "fuentes": [
+    "F-746",
+    "F-752",
+    "F-753",
+    "F-778"
+   ]
+  },
+  {
    "id": "ingresos_bing",
    "nombre": "Ingresos de Bing",
    "tipo": "resultado",
@@ -4697,6 +5071,27 @@
    "grado": 1,
    "fuentes": [
     "F-131"
+   ]
+  },
+  {
+   "id": "inseguridad_alimentaria",
+   "nombre": "Inseguridad alimentaria del hogar",
+   "tipo": "resultado",
+   "grado": 4,
+   "fuentes": [
+    "F-751",
+    "F-752",
+    "F-792",
+    "F-793"
+   ]
+  },
+  {
+   "id": "inseguridad_alimentaria_global",
+   "nombre": "Inseguridad alimentaria global por El Niño 2015-16",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-762"
    ]
   },
   {
@@ -5140,6 +5535,42 @@
    ]
   },
   {
+   "id": "lim_ciclo_reaseguro",
+   "nombre": "Cifras de precio del reaseguro de renovaciones de años distintos (−16% vs. +10-30%)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-797"
+   ]
+  },
+  {
+   "id": "lim_pbi_1998_inconsistente",
+   "nombre": "Costo de 1997-98 reportado como 4,5% o 6,2% del PBI según la fuente secundaria",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-764"
+   ]
+  },
+  {
+   "id": "lim_sequia_no_enso",
+   "nombre": "Mide sequía, no ENSO directamente",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-758"
+   ]
+  },
+  {
+   "id": "lim_sin_grupo_control",
+   "nombre": "Cohorte pequeña sin grupo control",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-751"
+   ]
+  },
+  {
    "id": "liquid_glass_ios26",
    "nombre": "Rediseño Liquid Glass de iOS 26",
    "tipo": "intervencion",
@@ -5260,6 +5691,15 @@
    "grado": 2,
    "fuentes": [
     "F-17"
+   ]
+  },
+  {
+   "id": "malaria_peru",
+   "nombre": "Malaria en el norte del Perú",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-761"
    ]
   },
   {
@@ -5487,6 +5927,26 @@
    ]
   },
   {
+   "id": "micro_parametrico_microfinanzas",
+   "nombre": "Microseguro paramétrico vía microfinancieras (MiCRO)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-790"
+   ]
+  },
+  {
+   "id": "microfinanzas_norte",
+   "nombre": "Cajas municipales y microfinancieras del norte",
+   "tipo": "organizacion",
+   "grado": 3,
+   "fuentes": [
+    "F-778",
+    "F-787",
+    "F-790"
+   ]
+  },
+  {
    "id": "microsoft_exp",
    "nombre": "Plataforma de experimentación de Microsoft (ExP)",
    "tipo": "organizacion",
@@ -5648,6 +6108,15 @@
    ]
   },
   {
+   "id": "mortalidad_temprana",
+   "nombre": "Mortalidad fetal, infantil y de la niñez",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-750"
+   ]
+  },
+  {
    "id": "muestra_estudiantil_percibida",
    "nombre": "Muestra estudiantil y outcomes percibidos",
    "tipo": "limitacion",
@@ -5767,6 +6236,27 @@
    ]
   },
   {
+   "id": "nino_costero_peru",
+   "nombre": "Niño Costero peruano (1997-98, 2017, 2023)",
+   "tipo": "concepto",
+   "grado": 15,
+   "fuentes": [
+    "F-751",
+    "F-752",
+    "F-753",
+    "F-760",
+    "F-763",
+    "F-765",
+    "F-766",
+    "F-767",
+    "F-768",
+    "F-770",
+    "F-773",
+    "F-780",
+    "F-783"
+   ]
+  },
+  {
    "id": "nivel_educativo",
    "nombre": "Nivel educativo",
    "tipo": "constructo",
@@ -5827,6 +6317,18 @@
    "grado": 1,
    "fuentes": [
     "F-191"
+   ]
+  },
+  {
+   "id": "norte_costero_peru",
+   "nombre": "Hogares del norte costero (Tumbes, Piura, Lambayeque)",
+   "tipo": "poblacion",
+   "grado": 4,
+   "fuentes": [
+    "F-755",
+    "F-772",
+    "F-779",
+    "F-794"
    ]
   },
   {
@@ -5909,6 +6411,18 @@
    ]
   },
   {
+   "id": "oferta_competidores_nino",
+   "nombre": "Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre)",
+   "tipo": "intervencion",
+   "grado": 5,
+   "fuentes": [
+    "F-785",
+    "F-788",
+    "F-789",
+    "F-801"
+   ]
+  },
+  {
    "id": "opcion_senuelo",
    "nombre": "Opción señuelo dominada asimétricamente agregada al menú",
    "tipo": "intervencion",
@@ -5962,6 +6476,16 @@
    "grado": 1,
    "fuentes": [
     "F-115"
+   ]
+  },
+  {
+   "id": "pagos_seguros_2017",
+   "nombre": "Pagos de seguros por el Niño Costero 2017 (US$428 M)",
+   "tipo": "resultado",
+   "grado": 5,
+   "fuentes": [
+    "F-773",
+    "F-774"
    ]
   },
   {
@@ -6064,6 +6588,16 @@
    "fuentes": [
     "F-492",
     "F-493"
+   ]
+  },
+  {
+   "id": "percepcion_abandono_estatal",
+   "nombre": "Percepción de abandono estatal (Reconstrucción, prevención no ejecutada)",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-769",
+    "F-770"
    ]
   },
   {
@@ -6182,6 +6716,16 @@
    ]
   },
   {
+   "id": "pesca_anchoveta",
+   "nombre": "Pesca de anchoveta y harina de pescado",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-776",
+    "F-782"
+   ]
+  },
+  {
    "id": "peso_fisico",
    "nombre": "Sostener un objeto pesado (p. ej., un portapapeles)",
    "tipo": "intervencion",
@@ -6235,6 +6779,35 @@
    "grado": 2,
    "fuentes": [
     "F-508"
+   ]
+  },
+  {
+   "id": "plan_prevencion_rimac",
+   "nombre": "Plan de Prevención de Riesgos Naturales 2025-26 de Rímac (empresas)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-774",
+    "F-784"
+   ]
+  },
+  {
+   "id": "poblacion_expuesta_inundacion",
+   "nombre": "Población en riesgo alto de inundación (57,5%, jun-2026)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-772"
+   ]
+  },
+  {
+   "id": "pobreza_hogar",
+   "nombre": "Pobreza del hogar",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-752",
+    "F-754"
    ]
   },
   {
@@ -6304,6 +6877,15 @@
    ]
   },
   {
+   "id": "precio_alimentos",
+   "nombre": "Precio de los alimentos (limón 2023)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-767"
+   ]
+  },
+  {
    "id": "precio_ipo_figma",
    "nombre": "Precio de IPO de Figma (US$33)",
    "tipo": "concepto",
@@ -6319,6 +6901,15 @@
    "grado": 1,
    "fuentes": [
     "F-89"
+   ]
+  },
+  {
+   "id": "precio_reaseguro_cat",
+   "nombre": "Precio del reaseguro catastrófico (−16% en jul-2026)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-797"
    ]
   },
   {
@@ -6767,6 +7358,24 @@
    ]
   },
   {
+   "id": "reaseguro_internacional",
+   "nombre": "Reaseguro internacional",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-773"
+   ]
+  },
+  {
+   "id": "recesion_2023_peru",
+   "nombre": "Recesión y alza de pobreza en Perú 2023",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-765"
+   ]
+  },
+  {
    "id": "rechazo_cobertura_sin_fundamento",
    "nombre": "Rechazo de cobertura sin fundamento o fuera de plazo",
    "tipo": "concepto",
@@ -6892,6 +7501,15 @@
    "grado": 2,
    "fuentes": [
     "F-197"
+   ]
+  },
+  {
+   "id": "reglamento_parametricos_sbs",
+   "nombre": "Reglamento de Seguros Paramétricos (Res. SBS 02260-2026)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-786"
    ]
   },
   {
@@ -7060,6 +7678,15 @@
    "grado": 1,
    "fuentes": [
     "F-345"
+   ]
+  },
+  {
+   "id": "riesgo_base",
+   "nombre": "Riesgo de base (el índice no refleja la pérdida real)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-800"
    ]
   },
   {
@@ -7297,13 +7924,39 @@
    ]
   },
   {
+   "id": "seguro_enf_tropicales",
+   "nombre": "Seguro de enfermedades tropicales (dengue, zika, chikungunya)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-795"
+   ]
+  },
+  {
+   "id": "seguro_indice_pronostico",
+   "nombre": "Seguro de índice de pronóstico ENSO (Perú, 2010)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-775",
+    "F-798"
+   ]
+  },
+  {
    "id": "seguro_parametrico",
    "nombre": "Seguro paramétrico (pago según índice observable)",
    "tipo": "intervencion",
-   "grado": 2,
+   "grado": 9,
    "fuentes": [
     "F-163",
-    "F-164"
+    "F-164",
+    "F-775",
+    "F-786",
+    "F-787",
+    "F-789",
+    "F-790",
+    "F-792",
+    "F-800"
    ]
   },
   {
@@ -7346,6 +7999,15 @@
    "fuentes": [
     "F-551",
     "F-552"
+   ]
+  },
+  {
+   "id": "sequia",
+   "nombre": "Sequía severa",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-758"
    ]
   },
   {
@@ -7651,6 +8313,15 @@
    ]
   },
   {
+   "id": "talla_infantil",
+   "nombre": "Talla y masa magra infantil",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-744"
+   ]
+  },
+  {
    "id": "tamano_economia_diseno",
    "nombre": "Tamaño de la economía del diseño del Reino Unido",
    "tipo": "resultado",
@@ -7854,6 +8525,15 @@
    ]
   },
   {
+   "id": "tept",
+   "nombre": "Estrés postraumático (TEPT)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-751"
+   ]
+  },
+  {
    "id": "tiempo_entrega",
    "nombre": "Time-to-delivery",
    "tipo": "resultado",
@@ -7897,6 +8577,15 @@
    "grado": 1,
    "fuentes": [
     "F-324"
+   ]
+  },
+  {
+   "id": "transferencia_anticipada",
+   "nombre": "Transferencia de efectivo anticipada (antes del pico del desastre)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-793"
    ]
   },
   {
@@ -8210,6 +8899,15 @@
    "fuentes": [
     "F-42",
     "F-63"
+   ]
+  },
+  {
+   "id": "violencia_pareja",
+   "nombre": "Violencia de pareja contra mujeres",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-758"
    ]
   },
   {
@@ -16748,11 +17446,1103 @@
    "fuerza": "causal",
    "fecha": "2026-10-04",
    "clase": "metodo"
+  },
+  {
+   "id": "T-707",
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "talla_infantil",
+   "f": "F-744",
+   "apoyo": "Tumbes, n=2.095: la mejora de talla/edad cayó de 0,09 a 0,04 DE/año tras 1997-98 y se volvió negativa con ≥7% de prob. de inundación; menos masa magra.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-708",
+   "s": "talla_infantil",
+   "p": "aplica_a",
+   "o": "exposicion_1000_dias",
+   "f": "F-744",
+   "apoyo": "El déficit se concentra en cohortes nacidas durante y poco después de El Niño.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-709",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "bajo_peso_nacer",
+   "f": "F-745",
+   "apoyo": "Ecuador: exposición in utero a inundaciones de 1997-98 (3er trimestre) eleva el bajo peso al nacer.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-710",
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "cognicion_infantil",
+   "f": "F-745",
+   "apoyo": "Exposición en el 1er trimestre asociada a menores puntajes cognitivos a los 5-7 años.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-711",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "desnutricion_cronica",
+   "f": "F-746",
+   "apoyo": "México rural 1998-99: exposición del útero a los 2 años eleva la desnutrición crónica en 8,3 pp.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-712",
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "cognicion_infantil",
+   "f": "F-746",
+   "apoyo": "4-5 años después: lenguaje, memoria de trabajo y visoespacial 11-21% menores.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-713",
+   "s": "ingreso_consumo_hogar",
+   "p": "media",
+   "o": "desnutricion_cronica",
+   "f": "F-746",
+   "apoyo": "Mecanismo: caída de ingreso, consumo de alimentos y composición de la dieta en la primera infancia.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-714",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "diarrea_infantil",
+   "f": "F-747",
+   "apoyo": "Lima 1997-98 (+5 °C): ingresos diarios por diarrea al 200% de la tasa previa; 6.225 en exceso; +8% por cada +1 °C.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-715",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "mortalidad_temprana",
+   "f": "F-750",
+   "apoyo": "Incendios de Indonesia 1997 (sequía de El Niño): ~15.600 muertes fetales, infantiles y de la niñez (1,2% de las cohortes).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-716",
+   "s": "hogares_pobres",
+   "p": "modera",
+   "o": "mortalidad_temprana",
+   "f": "F-750",
+   "apoyo": "El efecto de la contaminación fue mucho mayor en zonas pobres.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-717",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "brotes_enfermedades_clima",
+   "f": "F-748",
+   "apoyo": "Revisión Lancet: efecto bien establecido sobre cólera (Bangladesh) y malaria; más débil para otras vectoriales.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-718",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "brotes_enfermedades_clima",
+   "f": "F-749",
+   "apoyo": "2015-16: brotes de dengue, cólera, peste, hantavirus, chikungunya y zika asociados a anomalías de lluvia y temperatura.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-719",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "tept",
+   "f": "F-751",
+   "apoyo": "Piura 2017: TEPT en 38,1% de 179 madres a los 3 meses; 1,9% a los 8 meses; ~0% al año.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-720",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "inseguridad_alimentaria",
+   "f": "F-751",
+   "apoyo": "Inseguridad alimentaria severa 90,0% a 3 meses → 31,8% → 13,1% al año.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-721",
+   "s": "capital_social",
+   "p": "modera",
+   "o": "tept",
+   "f": "F-751",
+   "apoyo": "El estudio mide capital social (SASCAT) junto a la recuperación; la recuperación ocurre en ~12 meses.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-722",
+   "s": "tept",
+   "p": "tiene_limite",
+   "o": "lim_sin_grupo_control",
+   "f": "F-751",
+   "apoyo": "Cohorte de 179 madres sin grupo de comparación no afectado.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-723",
+   "s": "nino_costero_peru",
+   "p": "reduce",
+   "o": "ingreso_consumo_hogar",
+   "f": "F-752",
+   "apoyo": "Panel ENAHO 2015-19 + índice satelital de daño: hogares afectados pierden ingreso y gasto frente a no afectados.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-724",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "pobreza_hogar",
+   "f": "F-752",
+   "apoyo": "La pobreza sube, sobre todo en hogares urbanos.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-725",
+   "s": "donaciones_informales",
+   "p": "reduce",
+   "o": "inseguridad_alimentaria",
+   "f": "F-752",
+   "apoyo": "Los hogares amortiguan el consumo con donaciones de comida y ropa; los autores piden seguro formal.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-726",
+   "s": "nino_costero_peru",
+   "p": "reduce",
+   "o": "gasto_salud_educacion",
+   "f": "F-753",
+   "apoyo": "DiD 2015-19: El Niño 2017 redujo el gasto per cápita en salud y educación de hogares rurales del norte.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-727",
+   "s": "ingreso_consumo_hogar",
+   "p": "media",
+   "o": "gasto_salud_educacion",
+   "f": "F-753",
+   "apoyo": "Probable canal: golpe al ingreso agrícola.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-728",
+   "s": "hogares_pobres",
+   "p": "modera",
+   "o": "pobreza_hogar",
+   "f": "F-754",
+   "apoyo": "Hogar con desastre: 21 veces más probable 'siempre pobre' que 'nunca pobre'; golpe al consumo mayor en la parte baja.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-729",
+   "s": "danos_nino_2017",
+   "p": "aplica_a",
+   "o": "norte_costero_peru",
+   "f": "F-755",
+   "apoyo": "Caso integral 2017: ~1,9 M de peruanos (~6%) afectados; las políticas de prevención no se basan en riesgo local.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-730",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "malaria_peru",
+   "f": "F-761",
+   "apoyo": "1998: 247.229 casos de malaria, focos en Piura, Sullana y Tumbes; P. falciparum ~34%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-731",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "dengue_peru",
+   "f": "F-766",
+   "apoyo": "2023: 445 muertes y ~271 mil casos (ene-nov), 65% de muertes en Piura y Lambayeque tras Yaku y el Niño Costero.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-732",
+   "s": "c_nino_frena_crecimiento",
+   "p": "aplica_a",
+   "o": "crecimiento_pbi",
+   "f": "F-742",
+   "apoyo": "El crecimiento se deprime >5 años; 1982-83 y 1997-98 costaron US$4,1 y 5,7 billones; US$84 billones proyectados al 2100.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-733",
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "crecimiento_pbi",
+   "f": "F-742",
+   "apoyo": "Panel global 1960-2019: firma persistente de menor crecimiento en el trópico.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-734",
+   "s": "el_nino_enso",
+   "p": "asocia_con",
+   "o": "crecimiento_pbi",
+   "f": "F-743",
+   "apoyo": "GVAR: caída breve en Australia, Chile, India, Indonesia, Japón, NZ y Sudáfrica; EE.UU. y Europa pueden crecer; sube la inflación.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-735",
+   "s": "c_efecto_macro_heterogeneo",
+   "p": "contradice",
+   "o": "c_nino_frena_crecimiento",
+   "f": "F-743",
+   "apoyo": "Tensión parcial: el efecto macro es heterogéneo y en algunos países positivo, frente a la pérdida global persistente de F-742.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-736",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "conflicto_civil",
+   "f": "F-756",
+   "apoyo": "1950-2004: la probabilidad de nuevos conflictos civiles en el trópico se duplica en años de El Niño vs. La Niña (21% de conflictos).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-737",
+   "s": "c_enso_conflicto",
+   "p": "aplica_a",
+   "o": "conflicto_civil",
+   "f": "F-756",
+   "apoyo": "Afirmación central del paper.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-738",
+   "s": "c_enso_conflicto",
+   "p": "contradice",
+   "o": "c_vulnerabilidad_decide",
+   "f": "F-757",
+   "apoyo": "Buhaug: el vínculo clima-conflicto no es robusto; la política pesa más. Tensión con la lectura causal climática (en disputa).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-739",
+   "s": "sequia",
+   "p": "aumenta",
+   "o": "violencia_pareja",
+   "f": "F-758",
+   "apoyo": "19 DHS (83.990 mujeres): sequía severa +3,0 pp pareja controladora y +0,8 pp violencia física.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-740",
+   "s": "violencia_pareja",
+   "p": "tiene_limite",
+   "o": "lim_sequia_no_enso",
+   "f": "F-758",
+   "apoyo": "Exposición medida como sequía, no ENSO; plausible solo donde El Niño produce sequía.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-741",
+   "s": "c_vulnerabilidad_decide",
+   "p": "aplica_a",
+   "o": "el_nino_enso",
+   "f": "F-759",
+   "apoyo": "Davis: las sequías ENSO 1876-1902 mataron 30-50 M con excedentes disponibles; la política convirtió sequía en hambruna.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-742",
+   "s": "nino_costero_peru",
+   "p": "asocia_con",
+   "o": "agro_norte",
+   "f": "F-760",
+   "apoyo": "Etnografía del desierto norteño: El Niño también es 'año de abundancia' (agua, pasto), no solo desastre.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-743",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "inseguridad_alimentaria_global",
+   "f": "F-762",
+   "apoyo": "2015-16: ~60 M afectados; 31,6 M en inseguridad alimentaria en África austral; 10,2 M en Etiopía.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-744",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "danos_nino_2017",
+   "f": "F-763",
+   "apoyo": "INDECI: 162 muertos, 283 mil damnificados y 1,43 M afectados, 3.222 colegios y 937 EESS dañados; >US$3.000 M (~1,6% PBI).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-745",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "danos_nino_1998",
+   "f": "F-764",
+   "apoyo": "CAF: US$3.500 M (46% directo, 54% indirecto); 531.104 damnificados; >42 mil viviendas destruidas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-746",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "recesion_2023_peru",
+   "f": "F-765",
+   "apoyo": "2023: PBI −0,55%; emergencia climática ~1,5% del PBI; pesca −19,75%; pobreza 27,5% → ~29%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-747",
+   "s": "poblacion_expuesta_inundacion",
+   "p": "aplica_a",
+   "o": "norte_costero_peru",
+   "f": "F-772",
+   "apoyo": "IPE: 19,9 M de peruanos (57,5%) en riesgo alto o muy alto de inundación (jun-2026); 94% de economistas ve preparación insuficiente.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-748",
+   "s": "c_nino_2026_extraordinario",
+   "p": "origina_en",
+   "o": "nino_costero_peru",
+   "f": "F-780",
+   "apoyo": "ENFEN N.° 16-2026: Niño Costero de magnitud extraordinaria más probable set-2026 a ene-2027, hasta otoño 2027.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-749",
+   "s": "c_noaa_evento_historico",
+   "p": "respalda",
+   "o": "c_nino_2026_extraordinario",
+   "f": "F-781",
+   "apoyo": "NOAA: >90% evento muy fuerte; ~75% histórico (≥+2,5 °C) en OND 2026 (leído vía secundarios).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-750",
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "crecimiento_pbi",
+   "f": "F-782",
+   "apoyo": "BCRP: PBI 2026 3,4→3,2%, 2027 3,2→3,0%; impacto ~0,9 pp (2026) y ~1,1 pp (2027); pesca −30,7%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-751",
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "pesca_anchoveta",
+   "f": "F-782",
+   "apoyo": "Proyección de pesca −30,7% en 2026 por la segunda temporada de anchoveta.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-752",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "danos_nino_2017",
+   "f": "F-783",
+   "apoyo": "2026: emergencia en 23 regiones; en Tumbes 82 viviendas destruidas y 2.934 afectadas (jul-2026); lluvias adelantadas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-753",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "precio_alimentos",
+   "f": "F-767",
+   "apoyo": "2023: limón +69,8% en agosto, hasta S/22/kg; memes 'aceptamos limones como pago'; ministro sugirió pollo en vez de ceviche.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-754",
+   "s": "desinformacion_clima",
+   "p": "aplica_a",
+   "o": "nino_costero_peru",
+   "f": "F-768",
+   "apoyo": "Audios 'apocalípticos' y videos viejos presentados como actuales; desmentidos por SENAMHI y verificadores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-755",
+   "s": "percepcion_abandono_estatal",
+   "p": "asocia_con",
+   "o": "danos_nino_2017",
+   "f": "F-769",
+   "apoyo": "Reconstrucción con Cambios percibida como engaño: obras de 2017 sin ejecutar en Piura años después.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-756",
+   "s": "percepcion_abandono_estatal",
+   "p": "asocia_con",
+   "o": "nino_costero_peru",
+   "f": "F-770",
+   "apoyo": "2023: solo 30% del presupuesto preventivo gastado a 45 días del cierre (Contraloría).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-757",
+   "s": "el_nino_enso",
+   "p": "aumenta",
+   "o": "conducta_preparacion_hogar",
+   "f": "F-771",
+   "apoyo": "Kantar n=884: 90% tomaría acción; 61,8% comida, 44% agua, 43% reforzar vivienda; en el norte la vivienda es prioridad (78,1%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-758",
+   "s": "nino_costero_peru",
+   "p": "aumenta",
+   "o": "pagos_seguros_2017",
+   "f": "F-773",
+   "apoyo": "16.587 siniestros; US$428 M pagados y US$660 M de reserva a jun-2018; Lima 38%, Piura 31%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-759",
+   "s": "brecha_proteccion_nino_peru",
+   "p": "origina_en",
+   "o": "pagos_seguros_2017",
+   "f": "F-773",
+   "apoyo": "APESEG: el seguro cubrió ~7% de US$9.200 M de daño físico (base en conflicto con F-763).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-760",
+   "s": "reaseguro_internacional",
+   "p": "parte_de",
+   "o": "pagos_seguros_2017",
+   "f": "F-773",
+   "apoyo": "Retención local 10,92%; reaseguro internacional 89,08%.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-761",
+   "s": "pagos_seguros_2017",
+   "p": "asocia_con",
+   "o": "plan_prevencion_rimac",
+   "f": "F-774",
+   "apoyo": "Rímac atendió 2.368 siniestros y pagó US$145 M (~34% del mercado); origen del Centro de Monitoreo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-762",
+   "s": "seguro_indice_pronostico",
+   "p": "es_tipo_de",
+   "o": "seguro_parametrico",
+   "f": "F-775",
+   "apoyo": "La Positiva (2010): paga si la TSM en Niño 1+2 supera 24,5 °C (índice NOAA); dirigido a agroexportadores y financieras del norte.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-763",
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "pesca_anchoveta",
+   "f": "F-776",
+   "apoyo": "2023: primera temporada cancelada; >US$1.000 M de pérdida; harina −22% a octubre; Austevoll con pérdida en 2T.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-764",
+   "s": "el_nino_enso",
+   "p": "reduce",
+   "o": "agro_norte",
+   "f": "F-777",
+   "apoyo": "2023: 90% de floración de mango y limón perdida en Piura; 2017: S/10.000 M, la mitad de la producción anual.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-765",
+   "s": "microfinanzas_norte",
+   "p": "reduce",
+   "o": "ingreso_consumo_hogar",
+   "f": "F-778",
+   "apoyo": "Tras 2017 las cajas prestaron >S/1.000 M a mypes y postergaron S/600 M: amortiguan el golpe vía crédito (el efecto es reducir la caída).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-766",
+   "s": "plan_prevencion_rimac",
+   "p": "aplica_a",
+   "o": "danos_nino_2017",
+   "f": "F-784",
+   "apoyo": "Plan 2025-26: 4 pilares y Centro de Monitoreo para empresas aseguradas expuestas a lluvias, huaicos e inundaciones; no cubre hogares.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-767",
+   "s": "oferta_competidores_nino",
+   "p": "aplica_a",
+   "o": "conducta_preparacion_hogar",
+   "f": "F-785",
+   "apoyo": "Pacífico + RPP: campaña 'Fenómeno El Niño: más informados, más seguros' ocupa la conversación sobre preparación.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-768",
+   "s": "reglamento_parametricos_sbs",
+   "p": "aplica_a",
+   "o": "seguro_parametrico",
+   "f": "F-786",
+   "apoyo": "Res. SBS 02260-2026 (12-set-2026): umbral de parámetro objetivo; contratan personas jurídicas o entidades públicas para sí o en beneficio de una colectividad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-769",
+   "s": "microfinanzas_norte",
+   "p": "asocia_con",
+   "o": "seguro_parametrico",
+   "f": "F-787",
+   "apoyo": "Cajas y cooperativas del norte buscan paramétricos que inyecten liquidez si la morosidad sube por lluvias.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-770",
+   "s": "c_demanda_post_evento",
+   "p": "aplica_a",
+   "o": "demanda_seguros",
+   "f": "F-791",
+   "apoyo": "EE.UU.: la contratación de seguro de inundación sube ~9-10% el año siguiente y vuelve a la base en ~15 años (aprendizaje con olvido).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-771",
+   "s": "seguro_parametrico",
+   "p": "reduce",
+   "o": "inseguridad_alimentaria",
+   "f": "F-792",
+   "apoyo": "Kenia (IBLI): los asegurados protegen consumo (más pobres) o activos (menos pobres) tras la sequía. Solo título y ficha leídos.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-772",
+   "s": "transferencia_anticipada",
+   "p": "reduce",
+   "o": "inseguridad_alimentaria",
+   "f": "F-793",
+   "apoyo": "Bangladesh 2020: efectivo 5 días antes del pico, 36% menos probabilidad de pasar un día sin comer; más consumo a 3 meses; menos deuda cara.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-773",
+   "s": "transferencia_anticipada",
+   "p": "es_tipo_de",
+   "o": "accion_anticipatoria",
+   "f": "F-793",
+   "apoyo": "Cuanto más temprano llega la transferencia, más efectiva.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-774",
+   "s": "accion_anticipatoria",
+   "p": "aplica_a",
+   "o": "norte_costero_peru",
+   "f": "F-794",
+   "apoyo": "IFRC: estrategia central ante El Niño 2026 con protocolos de liberación de fondos por umbral; 9 agencias ONU en Tumbes-La Libertad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-775",
+   "s": "seguro_indice_pronostico",
+   "p": "es_tipo_de",
+   "o": "accion_anticipatoria",
+   "f": "F-798",
+   "apoyo": "Primer 'seguro de índice de pronóstico' regulado del mundo: paga al iniciarse la inundación, antes de pérdidas consecuenciales.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-776",
+   "s": "friccion_no_precio",
+   "p": "reduce",
+   "o": "demanda_seguros",
+   "f": "F-799",
+   "apoyo": "India (RCTs): demanda sensible al precio pero no se masifica; desconfianza, liquidez y saliencia frenan la adopción.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-777",
+   "s": "friccion_no_precio",
+   "p": "asocia_con",
+   "o": "c_desconfianza_falta_info",
+   "f": "F-799",
+   "apoyo": "La desconfianza como fricción no-precio converge con la causa #1 de desconfianza en seguros del node de seguros.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-778",
+   "s": "seguro_parametrico",
+   "p": "tiene_limite",
+   "o": "riesgo_base",
+   "f": "F-800",
+   "apoyo": "Contratación decepcionante sin subsidio; mejora con mejor medición (menos riesgo de base), diseño y combinación con crédito.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-779",
+   "s": "brecha_proteccion_nino_peru",
+   "p": "aplica_a",
+   "o": "norte_costero_peru",
+   "f": "F-779",
+   "apoyo": "APESEG 2026: millones de personas y pymes sin respaldo; solo 187 de ~50 mil colegios con seguro contra desastres.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-780",
+   "s": "oferta_competidores_nino",
+   "p": "aplica_a",
+   "o": "hogares_pobres",
+   "f": "F-788",
+   "apoyo": "Mapfre lleva microseguros de bajo costo para emprendedores (vivienda y negocio) a Perú en 2026.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-781",
+   "s": "oferta_competidores_nino",
+   "p": "asocia_con",
+   "o": "seguro_parametrico",
+   "f": "F-789",
+   "apoyo": "La Positiva lanza 'Café Seguro Perú', paramétrico de lluvia para caficultores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-782",
+   "s": "micro_parametrico_microfinanzas",
+   "p": "es_tipo_de",
+   "o": "seguro_parametrico",
+   "f": "F-790",
+   "apoyo": "MiCRO: paramétrico satelital vía microfinancieras; 171 mil pólizas (52% mujeres), US$26 M pagados a ene-2026, sin reclamo del beneficiario.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-783",
+   "s": "micro_parametrico_microfinanzas",
+   "p": "asocia_con",
+   "o": "microfinanzas_norte",
+   "f": "F-790",
+   "apoyo": "Modelo de distribución análogo al de las cajas del norte peruano.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-784",
+   "s": "seguro_enf_tropicales",
+   "p": "asocia_con",
+   "o": "dengue_peru",
+   "f": "F-795",
+   "apoyo": "Prudential Brasil indemniza por diagnóstico de dengue y otras; demanda de la categoría +10% en 1T 2024; Unimed +163% autorizaciones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-785",
+   "s": "dengue_peru",
+   "p": "aumenta",
+   "o": "costo_bolsillo_dengue",
+   "f": "F-796",
+   "apoyo": "Piura 2023: ~S/3.000 de adelanto en clínica privada sin seguro; el SIS financió >280 mil tratamientos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-786",
+   "s": "precio_reaseguro_cat",
+   "p": "asocia_con",
+   "o": "c_nino_2026_extraordinario",
+   "f": "F-797",
+   "apoyo": "Reaseguro cat property −16% en jul-2026 (−12% en ene) justo cuando el Met Office proyecta anomalías >3 °C sin precedentes.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-787",
+   "s": "oferta_competidores_nino",
+   "p": "aplica_a",
+   "o": "danos_nino_2017",
+   "f": "F-801",
+   "apoyo": "Pacífico Hogar Flex Digital cubre por cláusula adicional inundación por desborde y huaicos por lluvia.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-788",
+   "s": "c_dano2017_9200",
+   "p": "origina_en",
+   "o": "pagos_seguros_2017",
+   "f": "F-773",
+   "apoyo": "APESEG calcula que el seguro cubrió ~7% sobre una base de US$9.200 M de daño físico.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-789",
+   "s": "c_dano2017_3100",
+   "p": "origina_en",
+   "o": "danos_nino_2017",
+   "f": "F-763",
+   "apoyo": "INDECI/OPS: pérdidas por >US$3.000 M, ~1,6% del PBI.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-790",
+   "s": "c_dano2017_9200",
+   "p": "contradice",
+   "o": "c_dano2017_3100",
+   "f": "F-773",
+   "apoyo": "Bases de daño incompatibles: con US$3.100 M lo pagado+reservado sería ~35% del daño, no 7%. La de APESEG probablemente incluye necesidades de reconstrucción (sin verificar).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-791",
+   "s": "c_bcrp_impacto_09",
+   "p": "aplica_a",
+   "o": "crecimiento_pbi",
+   "f": "F-782",
+   "apoyo": "Reporte de Inflación (set-2026) vía prensa: ~0,9 pp en 2026 y ~1,1 pp en 2027.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-792",
+   "s": "c_bcrp_impacto_07",
+   "p": "aplica_a",
+   "o": "crecimiento_pbi",
+   "f": "F-787",
+   "apoyo": "Nota de Gestión anterior al reglamento paramétrico: impacto de 0,7 pp del PBI 2026.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-793",
+   "s": "c_bcrp_impacto_07",
+   "p": "contradice",
+   "o": "c_bcrp_impacto_09",
+   "f": "F-787",
+   "apoyo": "0,7 vs. 0,9 pp: por las fechas, son vintages distintos del BCRP que se revisó al alza cuando el evento pasó a extraordinario.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-794",
+   "s": "c_cafe_primer_parametrico",
+   "p": "aplica_a",
+   "o": "oferta_competidores_nino",
+   "f": "F-789",
+   "apoyo": "La nota de Gestión presenta 'Café Seguro Perú' (La Positiva) como el primer paramétrico del país.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-795",
+   "s": "seguro_indice_pronostico",
+   "p": "refuta",
+   "o": "c_cafe_primer_parametrico",
+   "f": "F-798",
+   "apoyo": "El producto ENSO de 2010 de la misma compañía fue el primer seguro de índice de pronóstico regulado del mundo: el café no es el primero.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-796",
+   "s": "danos_nino_1998",
+   "p": "tiene_limite",
+   "o": "lim_pbi_1998_inconsistente",
+   "f": "F-764",
+   "apoyo": "US$3.500 M = 4,5% del PBI (CAF) o 6,2% del PBI de 1998, según la nota secundaria; no se abrió el documento CAF.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-797",
+   "s": "precio_reaseguro_cat",
+   "p": "tiene_limite",
+   "o": "lim_ciclo_reaseguro",
+   "f": "F-797",
+   "apoyo": "−16% en jul-2026 frente a alzas de 10-30% atribuidas a Gallagher Re en una renovación 1.7 de otro año: no son comparables.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-07",
+   "clase": "metodo"
   }
  ],
- "generado": "2026-10-04",
+ "generado": "2026-10-07",
  "cobertura": {
-  "procesadas": 419,
-  "total": 740
+  "procesadas": 479,
+  "total": 800
  }
 }

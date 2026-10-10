@@ -1,6 +1,6 @@
 # 🧬 Grafo semántico del códice — RELACIONES
 
-*Generado 2026-10-04 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
+*Generado 2026-10-07 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
 
 > **Transparencia:** una relación aquí es lo que *una fuente dice*, no un hecho. `lectura=ficha` significa que solo se leyó el resumen del ledger; `abstract` que se leyó el resumen real de la fuente; `completa`, el texto íntegro. Un cruce entre fuentes es una *coincidencia de entidades*, no una prueba de que las fuentes sean compatibles.
 
@@ -8,48 +8,53 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **419 de 740** (56.6%) |
+| Fuentes procesadas | **479 de 800** (59.9%) |
 | …del cerebro de diseño (citadas en el node) | 164 de 274 |
-| …por rigor | A 261/268 · B 85/110 · C 58/171 · D 14/144 · E 1/33 |
-| Barridos | 52 |
-| Entidades | 886 |
-| Relaciones | 706 |
-| Nivel de lectura | abstract 592 · ficha 113 · completa 1 |
-| Fuerza de las afirmaciones | descriptiva 232 · causal 206 · observacional 153 · teorica 115 |
+| …por rigor | A 280/287 · B 99/124 · C 61/174 · D 37/167 · E 1/33 |
+| Barridos | 61 |
+| Entidades | 954 |
+| Relaciones | 797 |
+| Nivel de lectura | abstract 682 · ficha 114 · completa 1 |
+| Fuerza de las afirmaciones | descriptiva 285 · causal 223 · observacional 172 · teorica 117 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 150 |
-| `reduce` | efecto | 93 |
-| `asocia_con` | efecto | 85 |
-| `tiene_limite` | metodo | 85 |
-| `aplica_a` | estructura | 52 |
+| `aumenta` | efecto | 172 |
+| `reduce` | efecto | 108 |
+| `asocia_con` | efecto | 96 |
+| `tiene_limite` | metodo | 90 |
+| `aplica_a` | estructura | 70 |
 | `mide` | metodo | 45 |
-| `respalda` | evidencia | 40 |
-| `modera` | efecto | 39 |
-| `contradice` | evidencia | 34 |
-| `refuta` | evidencia | 21 |
-| `origina_en` | metodo | 20 |
-| `es_tipo_de` | estructura | 15 |
-| `parte_de` | estructura | 14 |
-| `media` | efecto | 13 |
+| `modera` | efecto | 42 |
+| `respalda` | evidencia | 41 |
+| `contradice` | evidencia | 38 |
+| `origina_en` | metodo | 24 |
+| `refuta` | evidencia | 22 |
+| `es_tipo_de` | estructura | 19 |
+| `media` | efecto | 15 |
+| `parte_de` | estructura | 15 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
 | Entidad | Fuentes |
 |---|---|
+| El Niño / ENSO (fase cálida) | F-742, F-743, F-744, F-745, F-746, F-747, F-748, F-749, F-750, F-756, F-759, F-761, F-762, F-764, F-771, F-776, F-777, F-782 |
+| Niño Costero peruano (1997-98, 2017, 2023) | F-751, F-752, F-753, F-760, F-763, F-765, F-766, F-767, F-768, F-770, F-773, F-780, F-783 |
 | Generative UI (interfaces generadas por LLM) | F-247, F-256, F-258, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-544, F-545, F-546, F-548, F-552, F-553, F-560, F-574, F-597 |
+| Seguro paramétrico (pago según índice observable) | F-163, F-164, F-775, F-786, F-787, F-789, F-790, F-792, F-800 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542, F-662, F-663 |
 | Sesgo de publicación | F-16, F-17, F-21, F-680, F-701, F-712, F-736 |
 | Obediencia a órdenes dañinas (llegar a la descarga máxima) | F-650, F-651, F-652, F-653, F-654, F-655, F-656 |
 | Herramientas de IA generativa | F-308, F-517, F-521, F-581, F-582, F-591 |
 | Modelos ChatGPT-3.5 y 4 | F-545, F-571, F-572, F-573, F-575, F-577 |
 | Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores | F-689, F-690, F-691, F-692, F-693, F-695 |
+| Daños humanos y económicos del Niño Costero 2017 | F-755, F-763, F-769, F-783, F-784, F-801 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-514 |
 | Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502 |
+| Demanda de seguros | F-3, F-164, F-221, F-791, F-799 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-359, F-514 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-318, F-429, F-470 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
@@ -58,6 +63,11 @@
 | Persuasión conversacional por IA | F-489, F-490, F-585, F-586 |
 | Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-560, F-571 |
 | Gasto en atención de salud | F-110, F-339, F-340, F-352 |
+| Ingreso y consumo del hogar | F-746, F-752, F-753, F-778 |
+| Inseguridad alimentaria del hogar | F-751, F-752, F-792, F-793 |
+| Hogares del norte costero (Tumbes, Piura, Lambayeque) | F-755, F-772, F-779, F-794 |
+| Crecimiento económico (PBI) | F-742, F-743, F-782, F-787 |
+| Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre) | F-785, F-788, F-789, F-801 |
 | Design thinking | F-239, F-240, F-524 |
 | Éxito de proyectos de innovación | F-239, F-441, F-461 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
@@ -71,7 +81,6 @@
 | Resultado operativo Vida/Salud de Allianz | F-203, F-477, F-478 |
 | Penetración de seguros en Perú | F-482, F-483, F-507 |
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
-| Demanda de seguros | F-3, F-164, F-221 |
 | Marcos de evaluación de efectividad e implementación | F-53, F-54, F-64 |
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
@@ -103,6 +112,11 @@
 | Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto) | F-715, F-716, F-718 |
 | Negligencia de la duración: la duración casi no pesa en el recuerdo | F-715, F-716, F-718 |
 | En balance, las pérdidas no tienen más impacto que las ganancias | F-723, F-724, F-727 |
+| Hogares pobres / de menores ingresos | F-750, F-754, F-788 |
+| Casos y muertes por dengue (Perú) | F-766, F-795, F-796 |
+| El Niño 2026-27 alcanza magnitud extraordinaria/histórica | F-780, F-781, F-797 |
+| Cajas municipales y microfinancieras del norte | F-778, F-787, F-790 |
+| Acción anticipatoria / financiamiento basado en pronósticos | F-793, F-794, F-798 |
 | Relación innovación → desempeño | F-238, F-525 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Backlash del consumidor | F-241, F-345 |
@@ -135,6 +149,7 @@
 | El margen fino de 2025 (1,8%) es una tendencia de compresión | F-193, F-480 |
 | Rechazo de cobertura sin fundamento o fuera de plazo | F-484, F-485 |
 | Sanciones de Indecopi a aseguradoras (2026) | F-485, F-486 |
+| La causa #1 de desconfianza en seguros es la falta de información | F-486, F-799 |
 | La persuasión de la IA se concentra en personas susceptibles | F-491, F-499 |
 | Descarga cognitiva | F-492, F-493 |
 | Pensamiento crítico | F-492, F-493 |
@@ -182,7 +197,6 @@
 | Los LLMs reproducen los sesgos y heurísticas de decisión humanos | F-573, F-574 |
 | Desempeño de LLMs en tareas de teoría de la mente | F-575, F-577 |
 | Productividad y calidad del trabajo de conocimiento (consultores) | F-581, F-582 |
-| Seguro paramétrico (pago según índice observable) | F-163, F-164 |
 | Retención del aprendizaje | F-218, F-219 |
 | Ayuda en una emergencia (rapidez de aviso) | F-226, F-659 |
 | Redes de proveedores estrechas o por niveles (tiered) | F-339, F-340 |
@@ -232,6 +246,23 @@
 | Ilusión de control: expectativa de éxito mayor que la probabilidad objetiva | F-737, F-738 |
 | Capacidad infantil de demorar la gratificación (test del malvavisco) | F-739, F-740 |
 | Logro académico y competencias en la adolescencia | F-739, F-740 |
+| Desarrollo cognitivo infantil | F-745, F-746 |
+| Brotes de enfermedades sensibles al clima (cólera, malaria, dengue, peste) | F-748, F-749 |
+| Pobreza del hogar | F-752, F-754 |
+| El Niño deprime el crecimiento económico por años | F-742, F-743 |
+| El Niño aumenta la probabilidad de conflicto civil | F-756, F-757 |
+| El daño lo determina la vulnerabilidad previa, no solo el clima ('no hay desastres naturales') | F-757, F-759 |
+| Producción agrícola del norte (mango, limón) | F-760, F-777 |
+| Pesca de anchoveta y harina de pescado | F-776, F-782 |
+| Percepción de abandono estatal (Reconstrucción, prevención no ejecutada) | F-769, F-770 |
+| Acciones de preparación del hogar ante El Niño | F-771, F-785 |
+| Pagos de seguros por el Niño Costero 2017 (US$428 M) | F-773, F-774 |
+| Brecha de protección ante El Niño en Perú (~7% del daño asegurado en 2017) | F-773, F-779 |
+| Plan de Prevención de Riesgos Naturales 2025-26 de Rímac (empresas) | F-774, F-784 |
+| Seguro de índice de pronóstico ENSO (Perú, 2010) | F-775, F-798 |
+| El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS) | F-763, F-773 |
+| BCRP: El Niño resta 0,9 pp al PBI 2026 (Reporte de Inflación de setiembre) | F-782, F-787 |
+| 'Café Seguro Perú' es el primer seguro paramétrico del país | F-789, F-798 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -400,21 +431,36 @@
 - **La tipografía disfluente no cambia la tasa de acierto en problemas contraintuitivos** —refuta→ **La tipografía difícil de leer mejora la resolución de problemas** (F-741, causal) · **estado: refutacion_directa**
   - Meyer et al. 2015: juntando el original con 16 réplicas, la tipografía disfluente no cambió la tasa de solución de problemas contraintuitivos, bajo ningún moderador.
   - *Resolución (2026-10-04):* Original más 16 réplicas (F-741): la tipografía difícil no mejora el razonamiento bajo ningún moderador.
+- **El efecto macro de El Niño es heterogéneo: algunos países crecen** —contradice→ **El Niño deprime el crecimiento económico por años** (F-743, observacional) · **estado: alcance_distinto**
+  - Tensión parcial: el efecto macro es heterogéneo y en algunos países positivo, frente a la pérdida global persistente de F-742.
+  - *Resolución (2026-10-07):* F-742 mide la pérdida global agregada y persistente; F-743 la respuesta de corto plazo país por país (hay ganadores). No se contradicen en el resultado: miden cosas distintas.
+- **El Niño aumenta la probabilidad de conflicto civil** —contradice→ **El daño lo determina la vulnerabilidad previa, no solo el clima ('no hay desastres naturales')** (F-757, observacional) · **estado: mecanismo_en_disputa**
+  - Buhaug: el vínculo clima-conflicto no es robusto; la política pesa más. Tensión con la lectura causal climática (en disputa).
+  - *Resolución (2026-10-07):* Hsiang et al. (F-756) hallan la asociación ENSO-conflicto; Buhaug (F-757) y el IPCC AR5 sostienen que no es robusta y que pesa más la política. El debate sigue abierto.
+- **El daño físico del Niño Costero 2017 fue de US$9.200 M (APESEG)** —contradice→ **El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS)** (F-773, descriptiva) · **estado: sin_verificar**
+  - Bases de daño incompatibles: con US$3.100 M lo pagado+reservado sería ~35% del daño, no 7%. La de APESEG probablemente incluye necesidades de reconstrucción (sin verificar).
+  - *Resolución (2026-10-07):* Probable diferencia de base (APESEG con necesidades de reconstrucción; INDECI/OPS con pérdidas). No se abrió ninguna fuente primaria: no citar el 7% sin la advertencia.
+- **BCRP: El Niño resta 0,7 pp al PBI 2026 (estimación previa)** —contradice→ **BCRP: El Niño resta 0,9 pp al PBI 2026 (Reporte de Inflación de setiembre)** (F-787, descriptiva) · **estado: reconciliada**
+  - 0,7 vs. 0,9 pp: por las fechas, son vintages distintos del BCRP que se revisó al alza cuando el evento pasó a extraordinario.
+  - *Resolución (2026-10-07):* Vintages distintos del BCRP (0,7 pp antes; 0,9 pp en el Reporte de Inflación de setiembre, con el evento ya extraordinario). Reconciliación inferida por fechas.
+- **Seguro de índice de pronóstico ENSO (Perú, 2010)** —refuta→ **'Café Seguro Perú' es el primer seguro paramétrico del país** (F-798, descriptiva) · **estado: refutacion_directa**
+  - El producto ENSO de 2010 de la misma compañía fue el primer seguro de índice de pronóstico regulado del mundo: el café no es el primero.
+  - *Resolución (2026-10-07):* El paramétrico ENSO de La Positiva de 2010 (F-775, F-798) refuta que el seguro de café de 2026 sea el primero del país.
 
 ## 5. Hubs (entidades más conectadas)
 
 | Entidad | Tipo | Grado | Fuentes |
 |---|---|---|---|
+| El Niño / ENSO (fase cálida) | concepto | 21 | 18 |
+| Niño Costero peruano (1997-98, 2017, 2023) | concepto | 15 | 13 |
 | Generative UI (interfaces generadas por LLM) | intervencion | 11 | 10 |
 | Herramientas de IA generativa | intervencion | 10 | 6 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | intervencion | 10 | 9 |
 | Modelos ChatGPT-3.5 y 4 | intervencion | 9 | 6 |
+| Seguro paramétrico (pago según índice observable) | intervencion | 9 | 9 |
 | Obediencia a órdenes dañinas (llegar a la descarga máxima) | resultado | 9 | 7 |
 | Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores | concepto | 9 | 6 |
 | Diseño efectivo → mejor desempeño de la firma | afirmacion | 7 | 5 |
-| Adulación de la IA (sycophancy) | intervencion | 7 | 4 |
-| Cambio de actitud de las personas | resultado | 7 | 7 |
-| Sesgo de publicación | limitacion | 7 | 7 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -761,6 +807,15 @@
 | 2026-10-04 | F-727, F-728, F-729, F-730, F-731, F-732, F-733, F-735, F-736 | 18 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
 | 2026-10-04 | F-737, F-738, F-739, F-740, F-741 | 6 | – | Capa de fenómenos psicológicos (2026-10-04): fuentes nuevas F-647 a F-741 verificadas contra resumen o ficha oficial por agentes investigadores (sin texto completo: la red bloqueó PubMed/Crossref/DOI) |
 | 2026-10-04 | F-670 | 1 | – | Complemento del lote_045: relación que faltaba para el concepto resolucion_temporal_percibida (quedaba sin relaciones). |
+| 2026-10-07 | F-744, F-745, F-746, F-747, F-750, F-748, F-749 | 12 | – | El Niño · Niñez: cicatriz de los 1.000 días y salud infantil (El Niño) (renumerado desde F-529..F-588 al integrar la rama de N6) |
+| 2026-10-07 | F-751, F-752, F-753, F-754, F-755, F-761, F-766 | 13 | – | El Niño · Salud en el Perú, salud mental y hogares (El Niño) (renumerado desde F-529..F-588 al integrar la rama de N6) |
+| 2026-10-07 | F-742, F-743, F-756, F-757, F-758, F-759, F-760, F-762 | 12 | – | El Niño · Macro, conflicto, violencia, alimentos y teoría (El Niño) (renumerado desde F-529..F-588 al integrar la rama de N6) |
+| 2026-10-07 | F-763, F-764, F-765, F-772, F-780, F-781, F-782, F-783 | 9 | – | El Niño · Datos oficiales y coyuntura 2026-27 (El Niño, Perú) (renumerado desde F-529..F-588 al integrar la rama de N6) |
+| 2026-10-07 | F-767, F-768, F-769, F-770, F-771, F-773, F-774 | 9 | – | El Niño · Pista social y negocio histórico (El Niño, Perú) (renumerado desde F-529..F-588 al integrar la rama de N6) |
+| 2026-10-07 | F-775, F-776, F-777, F-778, F-784, F-785, F-786, F-787 | 8 | – | El Niño · Negocio y oportunidades para RIMAC: paramétricos, sectores y competencia (renumerado desde F-529..F-588 al integrar la rama de N6) |
+| 2026-10-07 | F-791, F-792, F-793, F-794, F-798, F-799, F-800 | 9 | – | El Niño · Evidencia de demanda y diseño de protección (seguro índice, acción anticipatoria) (renumerado desde F-529..F-588 al integrar la rama de N6) |
+| 2026-10-07 | F-779, F-788, F-789, F-790, F-795, F-796, F-797, F-801 | 9 | – | El Niño · Benchmarks, competencia, reaseguro y salud estacional (renumerado desde F-529..F-588 al integrar la rama de N6) |
+| 2026-10-07 | F-773, F-763, F-782, F-787, F-789, F-798, F-764, F-797 | 10 | – | El Niño · tensiones entre fuentes que en la integración previa se registraron por error como discrepancias ledger↔fuente (el ledger reporta fielmente cada fuente y ya las advierte). |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

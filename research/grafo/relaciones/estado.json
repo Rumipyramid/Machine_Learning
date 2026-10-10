@@ -895,6 +895,146 @@
    "triples": 1,
    "sin_aporte": [],
    "notas": "Complemento del lote_045: relación que faltaba para el concepto resolucion_temporal_percibida (quedaba sin relaciones)."
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-744",
+    "F-745",
+    "F-746",
+    "F-747",
+    "F-750",
+    "F-748",
+    "F-749"
+   ],
+   "triples": 12,
+   "sin_aporte": [],
+   "notas": "El Niño · Niñez: cicatriz de los 1.000 días y salud infantil (El Niño) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-751",
+    "F-752",
+    "F-753",
+    "F-754",
+    "F-755",
+    "F-761",
+    "F-766"
+   ],
+   "triples": 13,
+   "sin_aporte": [],
+   "notas": "El Niño · Salud en el Perú, salud mental y hogares (El Niño) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-742",
+    "F-743",
+    "F-756",
+    "F-757",
+    "F-758",
+    "F-759",
+    "F-760",
+    "F-762"
+   ],
+   "triples": 12,
+   "sin_aporte": [],
+   "notas": "El Niño · Macro, conflicto, violencia, alimentos y teoría (El Niño) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-763",
+    "F-764",
+    "F-765",
+    "F-772",
+    "F-780",
+    "F-781",
+    "F-782",
+    "F-783"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "El Niño · Datos oficiales y coyuntura 2026-27 (El Niño, Perú) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-767",
+    "F-768",
+    "F-769",
+    "F-770",
+    "F-771",
+    "F-773",
+    "F-774"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "El Niño · Pista social y negocio histórico (El Niño, Perú) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-775",
+    "F-776",
+    "F-777",
+    "F-778",
+    "F-784",
+    "F-785",
+    "F-786",
+    "F-787"
+   ],
+   "triples": 8,
+   "sin_aporte": [],
+   "notas": "El Niño · Negocio y oportunidades para RIMAC: paramétricos, sectores y competencia (renumerado desde F-529..F-588 al integrar la rama de N6)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-791",
+    "F-792",
+    "F-793",
+    "F-794",
+    "F-798",
+    "F-799",
+    "F-800"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "El Niño · Evidencia de demanda y diseño de protección (seguro índice, acción anticipatoria) (renumerado desde F-529..F-588 al integrar la rama de N6)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-779",
+    "F-788",
+    "F-789",
+    "F-790",
+    "F-795",
+    "F-796",
+    "F-797",
+    "F-801"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "El Niño · Benchmarks, competencia, reaseguro y salud estacional (renumerado desde F-529..F-588 al integrar la rama de N6)"
+  },
+  {
+   "fecha": "2026-10-07",
+   "f_ids": [
+    "F-773",
+    "F-763",
+    "F-782",
+    "F-787",
+    "F-789",
+    "F-798",
+    "F-764",
+    "F-797"
+   ],
+   "triples": 10,
+   "sin_aporte": [],
+   "notas": "El Niño · tensiones entre fuentes que en la integración previa se registraron por error como discrepancias ledger↔fuente (el ledger reporta fielmente cada fuente y ya las advierte)."
   }
  ],
  "discrepancias": [
@@ -2230,6 +2370,36 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-04",
    "nota": "Original más 16 réplicas (F-741): la tipografía difícil no mejora el razonamiento bajo ningún moderador."
+  },
+  {
+   "triple": "T-735",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-07",
+   "nota": "F-742 mide la pérdida global agregada y persistente; F-743 la respuesta de corto plazo país por país (hay ganadores). No se contradicen en el resultado: miden cosas distintas."
+  },
+  {
+   "triple": "T-738",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-07",
+   "nota": "Hsiang et al. (F-756) hallan la asociación ENSO-conflicto; Buhaug (F-757) y el IPCC AR5 sostienen que no es robusta y que pesa más la política. El debate sigue abierto."
+  },
+  {
+   "triple": "T-790",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-07",
+   "nota": "Probable diferencia de base (APESEG con necesidades de reconstrucción; INDECI/OPS con pérdidas). No se abrió ninguna fuente primaria: no citar el 7% sin la advertencia."
+  },
+  {
+   "triple": "T-793",
+   "estado": "reconciliada",
+   "fecha": "2026-10-07",
+   "nota": "Vintages distintos del BCRP (0,7 pp antes; 0,9 pp en el Reporte de Inflación de setiembre, con el evento ya extraordinario). Reconciliación inferida por fechas."
+  },
+  {
+   "triple": "T-795",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-07",
+   "nota": "El paramétrico ENSO de La Positiva de 2010 (F-775, F-798) refuta que el seguro de café de 2026 sea el primero del país."
   }
  ]
 }
