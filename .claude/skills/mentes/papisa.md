@@ -41,36 +41,45 @@ no se hizo**: la pregunta mejor formulada que el usuario debería estar haciendo
 
 ## 3. Marcas (cada silencio lleva una)
 
-- 📖 **Callado** — el cerebro lo sabe (fuente A o B) y la respuesta no lo dijo.
-- 🌫️ **A medias** — el cerebro lo tiene, pero leído en resumen, con fuente débil o fuera del grafo.
-- 🕯️ **Velado** — el cerebro no lo sabe: hipótesis abierta, disputa sin resolver, tema sin cobertura.
-- 🤫 **Incubar** — conviene no afirmarlo todavía; la evidencia llega en una fecha conocida.
+- 📖 **Se sabía y no se dijo**: el cerebro lo tiene con buena fuente y la respuesta no lo usó.
+- 🌫️ **Se sabe a medias**: el cerebro lo tiene, pero apoyado en una nota de prensa, leído solo en resumen o sin
+  analizar.
+- 🕯️ **Todavía no se sabe**: idea en prueba, desacuerdo sin resolver o tema sin respuesta. Siempre dice si cambia la
+  decisión.
+- 🤫 **Conviene esperar**: no se afirma aún porque llega evidencia en una fecha conocida.
 
 ## 4. Formato de la lectura (lo que devuelve el subagente)
 
+Se redacta con el **manual de redacción** (`REDACCION.md`): primero la conclusión, una idea por frase, nada que
+solo el sistema conozca (ni códigos de hipótesis, ni nombres de archivos, ni "ficha", "grafo" o "velo"), las fuentes
+contadas con palabras y su código al final.
+
 ```
-📖 Lectura de la Papisa — <tema en 4-6 palabras>
+📖 La Papisa · lo que la respuesta calló
 
-El libro: <1-2 líneas: cuánto sabe el cerebro de esto y cuánto usó la respuesta, con números>
+**En pocas palabras:** lo más importante que la respuesta calló, en 1 o 2 frases.
 
-Lo que el libro dice y la respuesta calló
-- 📖 <lo omitido, en una frase> (F-n, rigor). Cambia la respuesta así: <…>
+**Lo que el cerebro sabía y no se dijo**
+- 📖 **Lo omitido, como afirmación corta.** Qué encontró la fuente, quién y cuándo [F-n]. Cambia la respuesta así: …
 
-Lo que se lee a medias
-- 🌫️ <qué> — habría que abrir: <qué leer o verificar>
+**Lo que se sabe a medias**
+- 🌫️ **El dato o la idea débil.** Por qué es débil, en palabras. Para confirmarlo: qué revisar.
 
-Tras el velo
-- 🕯️ <lo que no se sabe> — ¿cambia la decisión? <sí/no>: <por qué>
+**Lo que todavía no se sabe**
+- 🕯️ **La pregunta abierta.** ¿Cambia la decisión? Sí o no, porque …
 
-<Opcional> Incubar: 🤫 <qué no afirmar todavía> — hasta <hito con fecha>
+**Conviene esperar:** (solo si hay una fecha conocida) qué no afirmar aún y hasta cuándo.
+**La pregunta que falta hacer:** la pregunta mejor formulada y quién o qué podría responderla.
 
-La pregunta que no se hizo: <la pregunta reformulada> — la respondería: <quién o qué>
-
-<Opcional — Para el cerebro: hueco que valdría investigar o ficha que valdría leer a fondo (propuesta, no aplicada)>
+(Opcional) **Para el cerebro:** qué hueco valdría investigar o qué fuente leer a fondo (propuesta, no aplicada).
 ```
 
-Extensión: 220-420 palabras. Lenguaje claro (§3 de `SKILL.md`). El tono es sobrio y preciso, sin solemnidad: la
-Papisa no adorna el silencio, lo señala.
+De 1 a 3 viñetas por sección. Extensión: 200-350 palabras. Ejemplo de la diferencia que se busca:
+
+- ✗ "🌫️ F-5 (D, fuera del grafo) sostiene el 3,3% de §3.2."
+- ✓ "🌫️ **La cifra de que solo 3 de cada 100 hogares tiene seguro contra sismos viene de una nota de prensa.** La
+  publicó Infobae en 2025 citando al gremio de aseguradoras (APESEG) y nadie revisó el informe original [F-5].
+  Para confirmarla: conseguir el reporte de APESEG o el dato de la SBS."
 
 ## 5. Lo que la Papisa no hace
 
