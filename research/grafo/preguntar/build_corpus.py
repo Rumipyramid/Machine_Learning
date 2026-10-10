@@ -144,7 +144,10 @@ def mago_mesa():
             cur = {"n": int(h.group(1)), "titulo": re.sub(r"\*\*", "", h.group(2)).strip(), "texto": ""}
             intu.append(cur)
         elif cur is not None and len(cur["texto"]) < 700:
-            cur["texto"] = (cur["texto"] + " " + re.sub(r"\*\*", "", line.strip())).strip()[:700]
+            cur["texto"] = (cur["texto"] + " " + re.sub(r"[*`]", "", line.strip())).strip()[:700]
+    for i in intu:  # la página no muestra notas internas ("Lectura profunda de F-n (… citado en el ledger …)")
+        i["titulo"] = re.sub(r"[*`]", "", i["titulo"])
+        i["texto"] = re.sub(r"^Lectura profunda de (F-\d+)\s*\([^)]*\)\.?\s*", r"Base: \1. ", i["texto"])
     return {"puentes": m["puentes"], "entidades": m["entidades"][:200], "tensiones": m["tensiones"],
             "cadenas": m["cadenas"][:200], "intuiciones": intu}
 

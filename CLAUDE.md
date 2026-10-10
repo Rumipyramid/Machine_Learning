@@ -47,7 +47,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/chacal/` · `research/grafo/chacal.py` · `research/garaje/` | Skill `/chacal`: **auditor** que le hace 3 preguntas a Mu (diseño · conducta humano-IA · seguros), mide la evidencia detrás de cada respuesta con semáforos deterministas (`chacal_rubrica.json`) y deja apuntes en el **garaje** (`research/garaje/`: auditorías, `bitacora.jsonl`, `INDICE.md`) | Solo escribe en `garaje/`; no edita nodes/ledger; fuera del alcance de `alma.md` |
 | `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger. 🎨 **Identidad de marca de Mu** (2026-10-03): `.claude/skills/mu/IDENTIDAD.md` + `mu-base.css` — **toda pieza que se pida de Mu usa ese estilo** (blanco/negro + naranja de alerta, Impact + mono, esquinas rectas, reglas de 8px). Guía de uso: `research/grafo/mu_guia.html`. 💬 **Pregúntale a Mu** (artefacto privado https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm): `research/grafo/preguntar/index.html` + `build_corpus.py` (regenerar `mu-corpus.json` y republicar cuando cambien nodes o ledger). Capacidades `sample`, `db`, `user`: lleva el **backlog de temas**, el protocolo de temas sin cobertura y el **instrumento de impacto** "¿Te sirvió?" (ver secciones abajo) |
-| `.claude/skills/mentes/` · `.claude/agents/{mago,papisa}.md` · `research/grafo/{mago,papisa}.py` | Skill `/mentes`: **mentes arquetípicas** (subagentes con el estilo de un arcano mayor del tarot) que releen una respuesta ya dada. Activas: **El Mago** (conexiones ocultas → hecho del ledger o intuición declarada; caza el truco; cierra con un primer gesto) y **La Papisa** (lo que la respuesta calló: sabido y no dicho, sabido a medias, no sabido; cierra con la pregunta que no se hizo) | **Opcional y posterior:** solo tras una primera respuesta y a pedido del usuario; nunca por defecto ni ofrecida proactivamente. `mago.py` pone la mesa (puentes, entidades puente, tensiones, cadenas inferidas); `papisa.py` abre el libro y el velo (fuentes no citadas, hipótesis vivas, disputas, lecturas a medias, backlog). Solo stdlib; solo leen. En "Pregúntale a Mu", botón opcional **Lectura del Mago** bajo cada respuesta |
+| `.claude/skills/mentes/` · `.claude/agents/{mago,papisa}.md` · `research/grafo/{mago,papisa}.py` | Skill `/mentes`: **mentes arquetípicas** (subagentes con el estilo de un arcano mayor del tarot) que releen una respuesta ya dada. Activas: **El Mago** (conexiones ocultas → hecho del ledger o intuición declarada; caza el truco; cierra con un primer gesto) y **La Papisa** (lo que la respuesta calló: sabido y no dicho, sabido a medias, no sabido; cierra con la pregunta que no se hizo) | **Opcional y posterior:** solo tras una primera respuesta y a pedido del usuario; nunca por defecto ni ofrecida proactivamente. `mago.py` pone la mesa (puentes, entidades puente, tensiones, cadenas inferidas); `papisa.py` abre el libro y el velo (fuentes no citadas, hipótesis vivas, disputas, lecturas a medias, backlog). Solo stdlib; solo leen. En "Pregúntale a Mu", fila opcional **Otras miradas** (Mago y Papisa) bajo cada respuesta. Redacción: `REDACCION.md` |
 | `.claude/skills/grafo/` | Skill `/grafo`: regenera y explica `research/grafo/ESTADO.md` y conduce el barrido semántico del códice por lotes | Reporta fallas de integridad sin maquillar |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
@@ -275,7 +275,7 @@ arcano mayor del tarot que relee una respuesta ya dada desde su ángulo. No es o
 `/edipo2`) ni reemplaza la respuesta: agrega una segunda lectura rotulada.
 
 - **Regla de activación:** opcional y **posterior a la primera respuesta**. Solo cuando el usuario la pide ("¿qué ve
-  el Mago?", "léelo con el Mago", "¿qué calló la respuesta?", `/mentes papisa`, botón del Mago en el artefacto). Nunca se aplica por defecto, nunca se mezcla en la primera
+  el Mago?", "léelo con el Mago", "¿qué calló la respuesta?", `/mentes papisa`, botones de "Otras miradas" en el artefacto). Nunca se aplica por defecto, nunca se mezcla en la primera
   respuesta y no se ofrece de forma proactiva.
 - **Activa: El Mago** (`.claude/skills/mentes/mago.md`, subagente `mago`): ve conexiones ocultas entre nodes y
   fuentes con `python research/grafo/mago.py --tema "…"`, baja cada una a tierra (⚡ firme · 🔗 plausible ·
@@ -283,8 +283,11 @@ arcano mayor del tarot que relee una respuesta ya dada desde su ángulo. No es o
 - **Activa: La Papisa** (`.claude/skills/mentes/papisa.md`, subagente `papisa`): lo que la respuesta calló, con
   `python research/grafo/papisa.py --tema "…" --cito F-a,F-b` — 📖 callado · 🌫️ a medias · 🕯️ velado (dice si cambia
   la decisión) · 🤫 incubar (solo con fecha) — y cierra con la pregunta que no se hizo.
-- **En "Pregúntale a Mu":** botón opcional "🎩 Lectura del Mago" bajo cada respuesta (la mesa viaja en
-  `mu-corpus.json` vía `build_corpus.py`, junto con las heurísticas de El Lobo). No se registra como consulta.
+- **En "Pregúntale a Mu":** fila opcional **Otras miradas** bajo cada respuesta, con un botón por mente (🎩 El Mago,
+  📖 La Papisa). La página traduce a lenguaje llano lo que cada mente revisa antes de enviarlo a Claude (las conexiones
+  del Mago y las lecciones de El Lobo viajan en `mu-corpus.json` vía `build_corpus.py`). No se registra como consulta.
+- **Redacción:** toda lectura sigue `.claude/skills/mentes/REDACCION.md` (ver la regla general de redacción en
+  Convenciones).
 - **Propuestas** (sin diseñar): Emperador, Justicia, Torre, Luna — registro en `.claude/skills/mentes/SKILL.md` §4.
 - Las mentes **solo leen**; lo que valga guardar lo proponen. Una lectura de mente no cuenta como consulta nueva en el
   backlog de Mu.
@@ -332,6 +335,13 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   `contexto-peruano`, que existía como archivo suelto y por eso Claude Code no la reconocía).
 
 ## Convenciones
+- **Redacción de experto en todo output escrito (regla del usuario, 2026-10-10).** Respuestas en el chat, nodes,
+  outputs, lecturas de las mentes, notas del garaje, mensajes de commit y textos de las páginas se escriben como lo
+  haría un experto en redacción: primero la conclusión, una idea por frase, frases cortas y **autoexplicativas**. Nunca
+  se nombra algo que solo el sistema conoce sin decir qué es: ✗ "la intuición 23 del Lobo", "H13 parcial", "el node
+  back-to-basics" → ✓ la lección, la idea o el tema dichos con palabras (el código, si hace falta, va entre paréntesis
+  después). Las fuentes se cuentan (qué encontró, quién, cuándo, qué tan sólida es). Guía completa:
+  `.claude/skills/mentes/REDACCION.md`.
 - Documentación de investigación → `research/` (con índice en `research/README.md`).
 - Modelo de personas sintéticas → `research/personas/generador/` (fuente de verdad de desarrollo);
   el skill `lapuerta` lleva su propia copia autocontenida para compartir.

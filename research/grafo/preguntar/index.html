@@ -116,7 +116,11 @@ details.dd summary:hover small,details.dd summary:focus-visible small{color:var(
 /* mentes: lectura opcional del Mago (.claude/skills/mentes/) */
 .mg{border-top:2px solid var(--fg)}
 .mg .ask{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding:8px 14px;font-size:11px;color:var(--g2)}
+.mg .ask > b{color:var(--fg);text-transform:uppercase;letter-spacing:.05em}
 .mg .ask button{font-size:14px;padding:5px 10px}
+.mg .ask button[disabled]{background:transparent;color:var(--g2);border-color:var(--g3);opacity:1}
+.mg .ask .ex{flex-basis:100%;max-width:72ch}
+.mg .rd{border-top:2px solid var(--fg)}
 .mg .h{display:flex;justify-content:space-between;gap:8px;background:var(--fg);color:var(--bg);padding:4px 10px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
 .mg .b{padding:12px 14px;min-width:0;overflow-wrap:anywhere}
 .mg .b p{margin:0 0 10px;max-width:72ch}.mg .b p:last-child{margin-bottom:0}
@@ -155,7 +159,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     <button type="button">¿Funcionan los nudges?</button>
     <button type="button">¿Qué no sabe Mu todavía?</button>
   </div>
-  <p class="how">Cada pregunta usa tu cuenta de Claude: la primera vez te pedirá permiso. Las etiquetas negras (<span class="f" style="cursor:default">F-16</span>) son fuentes del registro: tócalas para ver autor, año y rigor. Después de cada respuesta puedes pedir, si quieres, la <b>Lectura del Mago</b>: una segunda mirada que busca conexiones ocultas en el cerebro y dice cuáles son hecho y cuáles intuición.</p>
+  <p class="how">Cada pregunta usa tu cuenta de Claude: la primera vez te pedirá permiso. Las etiquetas negras (<span class="f" style="cursor:default">F-16</span>) son fuentes del registro: tócalas para ver autor, año y rigor. Después de cada respuesta puedes pedir, si quieres, <b>otras miradas</b>: El Mago busca conexiones que la respuesta no hizo y La Papisa muestra lo que calló.</p>
 
   <div class="alerta" id="alerta" hidden role="status"></div>
   <details class="dd" id="backlog"><summary>BACKLOG DE TEMAS <small id="bl-sum">cargando…</small></summary>
@@ -182,6 +186,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
 (() => {
   const $ = s => document.querySelector(s);
   const thread = $("#thread"), qbox = $("#qbox"), go = $("#go"), stop = $("#stop"), hint = $("#hint");
+  const TITULOS = new Map(); // nombre legible de cada tema del cerebro (para no mostrar nombres de archivo)
   let CORPUS = null, IDX = null, FUENTES = new Map(), TENS = [], sample = null, sampleChecked = false, toolsOk = false, ctl = null;
   const turns = []; // historial de la conversación (user/assistant)
   // ---------- backlog de temas (db compartida del artefacto) ----------
@@ -245,7 +250,7 @@ Reglas:
 1. No uses conocimiento externo para rellenar huecos. Si algo no está en los extractos, di claramente "Mu no tiene esto guardado" y sugiere investigarlo con /trinidad.
 2. Cita la fuente de cada afirmación con su código entre corchetes justo después, por ejemplo [F-16]. Nunca inventes un código.
 3. Distingue con esas palabras lo que es "dato verificado" de lo que es "inferencia" o "lectura de resumen", y marca lo que el documento declara no verificado.
-4. Escribe en español claro, frases cortas, para alguien que no conoce el proyecto. Si usas una sigla o un código interno (H13, C17, §2.9), explícalo con palabras primero.
+4. Escribe como un experto en redacción, para alguien que no conoce el proyecto: primero la conclusión, una idea por frase, frases cortas. Nunca nombres un código interno (H13, C17, §2.9), un número de lección o el nombre de un archivo sin decir con palabras qué es; las fuentes se cuentan (qué encontró, quién, cuándo) y su código va al final.
 5. Sé breve: una frase de respuesta directa, luego hasta 6 viñetas que empiecen con "- ", y al final una línea "Lo que Mu no sabe: ...". Usa **negritas** solo para la idea principal. Sin títulos ni tablas.
 6. Si una afirmación toca una contradicción ABIERTA del grafo, dila como "en disputa" y explica en una frase por qué sigue abierta. Si está resuelta, puedes usar la resolución.
 7. Cuando cites una hipótesis, usa su estado tal como figura (abierta, parcial, respaldada, refutada) y explica qué significa con palabras.
@@ -522,65 +527,129 @@ Devuelve SOLO un objeto JSON con estas claves:
     ];
   }
 
-  // ---------- mentes: Lectura del Mago (opcional, solo después de una respuesta) ----------
-  const MAGO = `Eres EL MAGO (Le Bateleur, arcano I del tarot de Marsella), una "mente" del segundo cerebro Mu. No respondes la pregunta otra vez: relees la respuesta que Mu ya dio y buscas CONEXIONES OCULTAS que ella no hizo, y bajas cada una a tierra. Tu postura es la de la carta: una mano sube la varita (la idea), la otra señala la tierra (el hecho). Tu sombra es el charlatán de feria: la conexión que deslumbra y no se sostiene; la cazas y la muestras.
+  // ---------- mentes: relecturas opcionales después de una respuesta (fichas en .claude/skills/mentes/) ----------
+  const REDACCION = `Reglas de redacción (manual de las mentes). Escribe como un experto en redacción, para una persona inteligente que no conoce este proyecto y no leyó con atención la respuesta de Mu:
+- La primera línea dice lo más importante en una o dos frases. Una idea por frase. Frases de 25 palabras o menos. Verbos activos y sujetos concretos.
+- Nada que solo tú conozcas: no escribas números de lecciones, códigos de hipótesis (como H13, HC1 o PE4), nombres de archivos, títulos internos ni palabras del método (candidata, mesa, puente, entidad, eslabón, grafo, ficha, nodo, material). Di qué es cada cosa con palabras.
+- Las fuentes se cuentan: qué encontró, quién y cuándo, y de qué tipo es (estudio académico revisado, dato oficial, encuesta de consultora, nota de prensa, opinión). El código va al final entre corchetes, por ejemplo [F-242]. Nunca escribas una frase que solo diga que una fuente "respalda" algo.
+- Explica en la misma frase cualquier término técnico.
+- Di con palabras qué es hecho comprobado, qué es deducción y qué es intuición.
+- Cero relleno, cero misticismo. Español neutro. Usa solo los códigos de fuente que aparecen en lo que recibes; no inventes datos, fuentes ni lecciones.
+- Prueba final: alguien que lea solo tu texto, sin nada más, debe entender qué se afirma, en qué se apoya y qué hacer.`;
+  const SOLIDEZ = { A: "solidez alta", B: "solidez buena", C: "solidez media", D: "solidez baja", E: "solidez muy baja" };
+  const limpio = t => String(t || "").replace(/[*`]/g, "").replace(/^(\s*\[[^\]]*\]\s*)+/, "").trim();
+  const tipoFuente = f => { const j = limpio(String(f.rigor).split(/\s+[—-]\s+/).slice(1).join(" — ")); return `${SOLIDEZ[f.rig] || "solidez sin calificar"}${j ? " (" + j.slice(0, 140) + ")" : ""}`; };
+  const VERBO = { aumenta: "aumenta", reduce: "reduce", asocia_con: "se asocia con", media: "es el mecanismo por el que actúa", modera: "cambia la fuerza de", contradice: "contradice", refuta: "refuta" };
+  const ESTADO_H = { abierta: "todavía sin probar", parcial: "con apoyo a medias", otra: "en revisión" };
+  const tituloTema = slug => { const t = TITULOS.get(slug) || slug.replace(/-/g, " "); return t.replace(/^[^\p{L}\p{N}]+/u, "").replace(/\s*[—(].*$/, "").trim(); };
+  const fichaClara = (f, n = 360) => `[${f.id}] ${f.autor} (${f.anio}). "${f.titulo}". Tipo de fuente: ${tipoFuente(f)}. ${f.deep ? "Se leyó a fondo." : f.sem ? "Solo se leyó su resumen." : "No se ha analizado más allá de su registro."} Qué dice: ${limpio(f.resumen).slice(0, n)}`;
+  const citadasEn = t => new Set([...t.matchAll(/\bF-(\d{1,4})\b/g)].map(m => "F-" + m[1]).filter(id => FUENTES.has(id)));
+  const fichasDe = (textos, max) => { const ids = new Set(); for (const t of textos) for (const m of t.matchAll(/F-\d+/g)) if (FUENTES.has(m[0]) && ids.size < max) ids.add(m[0]); return [...ids].map(id => fichaClara(FUENTES.get(id))); };
 
-Material que recibes: la pregunta, la respuesta de Mu, la MESA (candidatos calculados por reglas fijas sobre el grafo del cerebro: puentes entre documentos que comparten fuentes y no se enlazan, conceptos presentes en documentos que no se hablan, tensiones entre fuentes y cadenas A→B→C cuyo eslabón ninguna fuente afirma), fichas del registro de fuentes e INTUICIONES DE EL LOBO (heurísticas de juicio acumuladas por el equipo).
+  const MENTES = {
+    mago: {
+      boton: "🎩 EL MAGO", rotulo: "🎩 EL MAGO · conexiones que la respuesta no hizo", espera: "El Mago está buscando conexiones",
+      prompt: `Eres EL MAGO, el arcano I del tarot de Marsella convertido en una forma de pensar: ves conexiones que nadie hizo y no te las crees hasta comprobarlas. Una mano levanta la idea; la otra la apoya en un hecho. Tu sombra es el charlatán de feria, la conexión vistosa que no se sostiene: la detectas y la muestras.
 
-Método:
-1. Elige 3 a 4 conexiones que cambien cómo se entiende la respuesta de Mu: que unan algo que ella dejó separado, revelen una tensión que ignoró o prolonguen su idea hacia un lugar inesperado. Si una conexión ya estaba dicha en la respuesta, no cuenta.
-2. Ponle a cada una un veredicto: ⚡ FIRME (las puntas y el eslabón los afirma alguna fuente de rigor A o B), 🔗 PLAUSIBLE (las puntas tienen fuente; el eslabón lo deduces tú: es una hipótesis), 🌙 INTUICIÓN (no hay hecho; se apoya en una intuición de El Lobo, que citas por su número, o es tuya y lo dices).
-3. Caza un truco: una conexión tentadora de la mesa que NO se sostiene (asociación tomada como causa, eslabón de pura asociación, cifra contada dos veces, poblaciones distintas tratadas como una, fuente de rigor D o E bajo una cifra clave).
-4. Nombra la pata que falta: el tipo de evidencia o el hecho ausente que más cambiaría la lectura (empírica, de negocio, social o intuición).
-5. Cierra con un primer gesto: una sola acción concreta y pequeña para esta semana, que empiece con verbo.
+Tu tarea: releer la respuesta que Mu ya dio y mostrar 3 conexiones que ella no hizo y que cambian cómo se entiende. No repitas lo que la respuesta ya dijo.
 
-Reglas: no inventes fuentes ni intuiciones; cita fuentes como [F-16] solo si están en el material; di "hecho", "inferencia" o "intuición" con esas palabras; no predigas; español claro, frases cortas, siglas explicadas; entre 220 y 400 palabras; sin títulos ni tablas.
+Recibes: la pregunta, la respuesta de Mu, conexiones posibles calculadas por reglas fijas sobre el cerebro (muchas son ruido: elige solo las que importan para esta pregunta), los estudios que las sostienen y lecciones que el equipo ya aprendió en casos anteriores.
 
-Formato exacto (cada viñeta en UNA sola línea):
-**Sobre la mesa:** qué tiene el cerebro sobre esto y qué falta, en 1-2 frases.
-**Lo que el Mago ve**
-- ⚡ FIRME — la conexión en una frase. Arriba: por qué importa. Abajo: el hecho [F-n]. Se rompe si: qué la tumbaría.
-- 🔗 PLAUSIBLE — … (mismo patrón)
-- 🌙 INTUICIÓN — … (mismo patrón; en Abajo di de qué intuición de El Lobo viene o que es del Mago)
-**🎭 El truco:** la conexión que parecía y no es, y por qué.
-**La pata que falta:** …
-**Primer gesto:** …`;
+Califica cada conexión:
+- ⚡ Comprobada: un estudio académico o un dato oficial de lo que recibes la afirma.
+- 🔗 Probable: cada parte tiene respaldo, pero la unión la deduces tú. Es una hipótesis para probar.
+- 🌙 Intuición: ningún estudio la sostiene. Sale de una lección del equipo (cuéntala con palabras) o es tuya, y lo dices.
 
-  function mesaPara(texto) {
-    const items = search(IDX.mago, texto, 14).map(x => x.txt);
-    const intu = search(IDX.intu, texto, 5).map(i => `- Intuición ${i.n}: ${i.titulo}. ${i.texto.slice(0, 380)}`);
-    const ids = new Set();
-    for (const t of items) for (const m of t.matchAll(/F-\d+/g)) if (FUENTES.has(m[0]) && ids.size < 22) ids.add(m[0]);
-    const fichas = [...ids].map(id => fuenteTxt({ ...FUENTES.get(id), resumen: FUENTES.get(id).resumen.slice(0, 420) }));
-    return { n: items.length, fuentes: [...ids], txt: `MESA DEL MAGO (candidatos, no hallazgos):\n${items.join("\n") || "(vacía para este tema)"}\n\nFICHAS DE LAS FUENTES DE LA MESA (código | autor | año | título | rigor | resumen):\n${fichas.join("\n") || "(ninguna)"}\n\nINTUICIONES DE EL LOBO RELACIONADAS:\n${intu.join("\n") || "(ninguna)"}` };
-  }
-  function ofrecerMago(entry, q, respuesta) {
+${REDACCION}
+
+Formato exacto, entre 200 y 350 palabras:
+**En pocas palabras:** la conexión más valiosa y por qué importa, en 1 o 2 frases.
+**Conexiones que la respuesta no hizo**
+- ⚡ **La conexión, como afirmación corta.** Qué une y por qué le importa al lector. En qué se apoya: qué encontró la fuente, quién y cuándo [F-n]. Se caería si: qué dato la desmentiría.
+- 🔗 **…** Mismo patrón. En "En qué se apoya", di qué parte está probada y qué parte es deducción.
+- 🌙 **…** Mismo patrón. Di de dónde sale la intuición.
+**🎭 Parece una conexión, pero no lo es:** una conexión tentadora que no se sostiene, y por qué, en 1 o 2 frases.
+**Lo que falta saber:** el dato que, si existiera, más cambiaría esta lectura.
+**Primer paso:** una acción concreta para esta semana, que empiece con un verbo.`,
+      material(q, respuesta) {
+        const items = search(IDX.mago, q + " " + respuesta, 14).map(x => x.txt);
+        const lecc = search(IDX.intu, q + " " + respuesta, 4).map(i => `- Lección del equipo: ${i.titulo}. ${i.texto.slice(0, 360)}`);
+        const fichas = fichasDe(items, 20);
+        return { n: items.length, txt: `CONEXIONES POSIBLES (calculadas por reglas fijas; muchas no sirven):\n${items.join("\n") || "(ninguna para este tema)"}\n\nESTUDIOS QUE LAS SOSTIENEN:\n${fichas.join("\n") || "(ninguno)"}\n\nLECCIONES QUE EL EQUIPO YA APRENDIÓ:\n${lecc.join("\n") || "(ninguna relacionada)"}` };
+      },
+      nota: "Relectura opcional: no es lo que Mu afirma. Las conexiones posibles salen de reglas fijas sobre el cerebro; el juicio es de Claude con el estilo del Mago. ⚡ comprobada: la afirma un estudio o un dato oficial · 🔗 probable: la unión es una deducción · 🌙 intuición: ningún estudio la sostiene.",
+    },
+    papisa: {
+      boton: "📖 LA PAPISA", rotulo: "📖 LA PAPISA · lo que la respuesta calló", espera: "La Papisa está leyendo lo que no se dijo",
+      prompt: `Eres LA PAPISA, el arcano II del tarot de Marsella convertida en una forma de pensar: sentada ante un velo con un libro abierto, sabes lo que ya está escrito y dónde termina lo escrito. No buscas cosas nuevas: escuchas lo que una respuesta calló. Tu sombra es el silencio que paraliza ("no sabemos lo suficiente" como excusa para no decidir); por eso cada hueco que nombras dice si cambia la decisión o no.
+
+Tu tarea: releer la respuesta que Mu ya dio y mostrar lo que no dijo: lo que el cerebro sabe y no se usó, lo que sabe a medias y lo que todavía no sabe. No repitas la respuesta ni la corrijas punto por punto. Si algo omitido no cambia nada, no lo menciones.
+
+Recibes: la pregunta, la respuesta de Mu, estudios del cerebro sobre el tema que la respuesta no citó, las fuentes que sí citó con su solidez, ideas que el equipo todavía está probando, desacuerdos entre fuentes sin resolver y temas que la gente ya preguntó sin obtener buena respuesta. Puede haber ruido: usa solo lo que importa para esta pregunta.
+
+${REDACCION}
+
+Formato exacto, entre 200 y 350 palabras. Usa de 1 a 3 viñetas por sección y omite una sección solo si de verdad no hay nada:
+**En pocas palabras:** lo más importante que la respuesta calló, en 1 o 2 frases.
+**Lo que el cerebro sabía y no se dijo**
+- 📖 **Lo omitido, como afirmación corta.** Qué encontró la fuente, quién y cuándo [F-n]. Cambia la respuesta así: …
+**Lo que se sabe a medias**
+- 🌫️ **El dato o la idea débil.** Por qué es débil, en palabras (por ejemplo: viene de una nota de prensa, o solo se leyó el resumen). Para confirmarlo: qué revisar.
+**Lo que todavía no se sabe**
+- 🕯️ **La pregunta abierta.** ¿Cambia la decisión? Sí o no, porque …
+**Conviene esperar:** solo si algo no conviene afirmarlo aún porque llega evidencia en una fecha conocida; si no hay fecha, omite esta línea.
+**La pregunta que falta hacer:** la pregunta mejor formulada que el lector debería hacerse, y quién o qué podría responderla.`,
+      material(q, respuesta) {
+        const ya = citadasEn(respuesta), base = `${q} ${q} ${respuesta.slice(0, 500)}`;
+        const rel = search(IDX.fuentes, base, 30).filter(f => !ya.has(f.id));
+        const calladas = [...rel.filter(f => f.rig === "A" || f.rig === "B"), ...rel.filter(f => f.rig !== "A" && f.rig !== "B")].slice(0, 8);
+        const usadas = [...ya].map(id => FUENTES.get(id)).sort((a, b) => ("ABCDE".indexOf(b.rig) - "ABCDE".indexOf(a.rig)) || (a.deep - b.deep)).slice(0, 10);
+        const vivas = search(IDX.hyps, q + " " + respuesta.slice(0, 500), 8).filter(h => ESTADO_H[h.estado]).slice(0, 5);
+        const qt = new Set(toks(q)), toca = (t, n) => new Set(toks(t)).size && toks(t).filter(x => qt.has(x)).length >= n;
+        const disp = [...new Set([...search(IDX.tens, q, 8).filter(t => toca(`${t.s} ${t.o} ${t.apoyo}`, 2)), ...TENS.filter(t => ya.has(t.f))])].filter(t => t.abierta).slice(0, 5);
+        const huecos = dbState === "ok" ? agregados().filter(a => a.no + a.parcial > 0).map(a => [toks(a.tema).filter(t => qt.has(t)).length, a]).sort((x, y) => y[0] - x[0]).slice(0, 4).map(([, a]) => a) : [];
+        const txt = `ESTUDIOS DEL CEREBRO SOBRE EL TEMA QUE LA RESPUESTA NO CITÓ:\n${calladas.map(f => "- " + fichaClara(f)).join("\n") || "(ninguno)"}\n\nFUENTES QUE LA RESPUESTA SÍ CITÓ, DE LA MÁS DÉBIL A LA MÁS SÓLIDA:\n${usadas.map(f => "- " + fichaClara(f, 220)).join("\n") || "(la respuesta no citó fuentes)"}\n\nIDEAS QUE EL EQUIPO TODAVÍA ESTÁ PROBANDO:\n${vivas.map(h => `- Idea: ${h.texto.replace(/\(F-[^)]*\)/g, "").slice(0, 260)}. Estado: ${ESTADO_H[h.estado]}. Evidencia hasta ahora: ${limpio(h.detalle).replace(/^[^\p{L}]*(parcial|abierta|respaldada|refutada)\s*(\([^)]*\))?\s*[—-]?\s*/u, "").slice(0, 280)}. Qué falta para probarla: ${limpio(h.prueba) || "no definido"}`).join("\n") || "(ninguna relacionada)"}\n\nDESACUERDOS ENTRE FUENTES SIN RESOLVER:\n${disp.map(t => `- Según [${t.f}], "${t.s}" ${VERBO[t.p] || t.p} "${t.o}". ${t.apoyo}${t.nota ? " " + t.nota.slice(0, 260) : ""}`).join("\n") || "(ninguno)"}\n\nTEMAS QUE LA GENTE YA PREGUNTÓ A MU SIN OBTENER BUENA RESPUESTA:\n${huecos.map(a => `- ${a.tema}: ${a.total} preguntas; ${a.no} sin respuesta con fuentes y ${a.parcial} con respuesta parcial`).join("\n") || "(ninguno registrado)"}`;
+        return { n: calladas.length + usadas.length + vivas.length + disp.length + huecos.length, txt };
+      },
+      nota: "Relectura opcional: no es lo que Mu afirma. Lo que se revisa sale de reglas fijas sobre el cerebro; el juicio es de Claude con el estilo de la Papisa. 📖 se sabía y no se dijo · 🌫️ se sabe a medias · 🕯️ todavía no se sabe.",
+    },
+  };
+
+  function ofrecerMentes(entry, q, respuesta) {
     if (!CORPUS.mago || !sample) return;
     const mg = entry.mg; mg.hidden = false;
-    mg.innerHTML = `<div class="ask"><button type="button" class="ghost">🎩 LECTURA DEL MAGO</button><span>Opcional. Una segunda mirada que busca conexiones ocultas y dice cuáles son hecho y cuáles intuición.</span></div>`;
-    mg.querySelector("button").addEventListener("click", () => leerMago(entry, q, respuesta));
+    mg.innerHTML = `<div class="ask"><b>Otras miradas</b>${Object.entries(MENTES).map(([k, m]) => `<button type="button" class="ghost" data-m="${k}">${m.boton}</button>`).join("")}<span class="ex">Opcional. El Mago busca conexiones que esta respuesta no hizo; La Papisa muestra lo que calló.</span></div><div class="rds"></div>`;
+    mg.querySelectorAll("button[data-m]").forEach(b => b.addEventListener("click", () => leerMente(entry, q, respuesta, b.dataset.m)));
   }
-  async function leerMago(entry, q, respuesta) {
+  async function leerMente(entry, q, respuesta, k) {
     if (go.disabled) return;
-    const mg = entry.mg, r = retrieve(q);
-    const mesa = mesaPara(q + " " + respuesta);
-    mg.innerHTML = `<div class="h"><span>🎩 LECTURA DEL MAGO · ARCANO I</span><span>${mesa.n} candidatos en la mesa</span></div><div class="b"><p class="think">El Mago pone la mesa</p></div>`;
-    const body = mg.querySelector(".b");
-    const input = [{ role: "user", content: `${MAGO}\n\nPREGUNTA ORIGINAL: ${q}\n\nRESPUESTA QUE DIO MU:\n${respuesta.slice(0, 4000)}\n\n${mesa.txt}` }];
-    ctl = new AbortController(); go.disabled = true; stop.hidden = false; hint.textContent = "El Mago está leyendo. Puede tardar entre 10 y 60 segundos.";
+    const M = MENTES[k], mg = entry.mg, r = retrieve(q), btn = mg.querySelector(`button[data-m="${k}"]`);
+    const mat = M.material(q, respuesta);
+    mg.querySelector(`.rd[data-m="${k}"]`)?.remove();
+    const rd = document.createElement("section"); rd.className = "rd"; rd.dataset.m = k;
+    rd.innerHTML = `<div class="h"><span></span><span></span></div><div class="b"><p class="think"></p></div>`;
+    rd.querySelector(".h span").textContent = M.rotulo; rd.querySelector(".h span + span").textContent = `revisó ${mat.n} piezas del cerebro`;
+    rd.querySelector(".think").textContent = M.espera;
+    mg.querySelector(".rds").append(rd);
+    const body = rd.querySelector(".b");
+    const input = [{ role: "user", content: `${M.prompt}\n\nPREGUNTA ORIGINAL: ${q}\n\nRESPUESTA QUE DIO MU:\n${respuesta.slice(0, 4000)}\n\n${mat.txt}` }];
+    ctl = new AbortController(); go.disabled = true; stop.hidden = false; hint.textContent = "La relectura puede tardar entre 10 y 60 segundos.";
+    mg.querySelectorAll("button[data-m]").forEach(b => b.disabled = true);
+    let ok = false;
     try {
       const opts = { signal: ctl.signal, onText: ({ text }) => { body.innerHTML = md(text); } };
       const tools = herramientas(entry, r); if (tools) opts.tools = tools; else opts.cache = false;
       const res = await sample(input, opts);
-      body.innerHTML = md(res.text);
+      body.innerHTML = md(res.text); ok = true;
       if (res.truncated) body.insertAdjacentHTML("beforeend", "<p><i>La lectura quedó cortada.</i></p>");
-      mg.insertAdjacentHTML("beforeend", `<div class="nt">Segunda lectura, no es lo que Mu afirma. La mesa sale de reglas fijas sobre el grafo; el juicio es de Claude con la personalidad del Mago. ⚡ firme = lo dice una fuente · 🔗 plausible = eslabón deducido · 🌙 intuición = sin hecho que la sostenga.</div>`);
+      const nt = document.createElement("div"); nt.className = "nt"; nt.textContent = M.nota; rd.append(nt);
     } catch (e) {
       const code = e && e.code;
-      if (code === "cancelled") body.innerHTML = (e.text ? md(e.text) : "") + "<p><i>Detenida.</i></p>";
-      else { body.innerHTML = (e && e.text ? md(e.text) : "") + `<p>${esc(COPY[code] || "El Mago no pudo leer ahora. Puedes volver a intentarlo.")}</p>`; mg.insertAdjacentHTML("beforeend", '<div class="ask"><button type="button" class="ghost">🎩 REINTENTAR</button></div>'); mg.querySelector(".ask button").addEventListener("click", () => leerMago(entry, q, respuesta)); }
+      body.innerHTML = (e && e.text ? md(e.text) : "") + `<p>${esc(code === "cancelled" ? "Detenida." : COPY[code] || "No se pudo completar la lectura. Puedes volver a intentarlo.")}</p>`;
     } finally {
       go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus documentos y en su registro de fuentes antes de responder.";
+      if (ok) { btn.dataset.done = "1"; btn.textContent = M.boton + " ✓"; }
+      mg.querySelectorAll("button[data-m]").forEach(b => b.disabled = !!b.dataset.done);
     }
   }
 
@@ -605,7 +674,7 @@ Formato exacto (cada viñeta en UNA sola línea):
       const res = await sample(input, opts);
       entry.body.innerHTML = md(res.text);
       renderSem(entry.sem, res.text);
-      ofrecerMago(entry, q, res.text);
+      ofrecerMentes(entry, q, res.text);
       if (res.truncated) entry.body.insertAdjacentHTML("beforeend", "<p><i>La respuesta quedó cortada. Pide algo más acotado.</i></p>");
       turns.push({ role: "user", content: `PREGUNTA: ${q}`, q }, { role: "assistant", content: res.text.slice(0, 4000) });
       registrar(entry, q, res.text, r);
@@ -631,12 +700,13 @@ Formato exacto (cada viñeta en UNA sola línea):
     TENS = d.tensiones || [];
     IDX = { nodes: buildIndex(d.nodes, c => `${c.titulo} ${c.seccion} ${c.seccion} ${c.texto}`), fuentes: buildIndex(d.fuentes, f => `${f.id} ${f.autor} ${f.titulo} ${f.titulo} ${f.resumen}`),
       tens: buildIndex(TENS, t => `${t.s} ${t.o} ${t.apoyo} ${t.nota}`), hyps: buildIndex(d.hipotesis || [], h => `${h.id} ${h.texto} ${h.texto} ${h.detalle}`) };
-    const M = d.mago || {}, fl = a => (a || []).join(", ");
+    for (const c of d.nodes) if (!TITULOS.has(c.node)) TITULOS.set(c.node, c.titulo);
+    const M = d.mago || {}, fl = a => (a || []).join(", "), T = s => `"${tituloTema(s)}"`, V = p => VERBO[p] || p;
     const MI = [
-      ...(M.puentes || []).map(p => ({ txt: `- PUENTE: los documentos "${p.a}" y "${p.b}" se apoyan en las mismas fuentes (${fl(p.fuentes)}) y no se enlazan entre sí.`, k: `${p.a} ${p.b} ${p.fuentes.map(f => FUENTES.get(f)?.titulo || "").join(" ")}` })),
-      ...(M.entidades || []).map(e => ({ txt: `- CONCEPTO COMPARTIDO: "${e.entidad}" aparece en fuentes de ${e.nodes.length} documentos que no se enlazan todos entre sí (${e.nodes.join(", ")}) · ${fl(e.fuentes.slice(0, 8))}.`, k: `${e.entidad} ${e.entidad} ${e.nodes.join(" ")}` })),
-      ...(M.tensiones || []).map(t => ({ txt: `- TENSIÓN (${t.tipo === "efecto_opuesto" ? "efecto opuesto" : t.tipo}): "${t.s}" → "${t.o}" · ${fl(t.fuentes)} · ${t.apoyo}`, k: `${t.s} ${t.o} ${t.apoyo}` })),
-      ...(M.cadenas || []).map(c => ({ txt: `- CADENA INFERIDA: "${c.a}" ${c.p1} "${c.b}" [${c.fuentes[0]}] y "${c.b}" ${c.p2} "${c.c}" [${c.fuentes[1]}]; ninguna fuente afirma el eslabón "${c.a}" → "${c.c}".`, k: `${c.a} ${c.b} ${c.c}` })),
+      ...(M.puentes || []).map(p => ({ txt: `- Dos temas del cerebro, ${T(p.a)} y ${T(p.b)}, se apoyan en los mismos estudios (${fl(p.fuentes)}) pero nunca se relacionaron entre sí.`, k: `${p.a} ${p.b} ${p.fuentes.map(f => FUENTES.get(f)?.titulo || "").join(" ")}` })),
+      ...(M.entidades || []).map(e => ({ txt: `- La idea "${e.entidad}" aparece en estudios que usan varios temas del cerebro que no se conectan entre sí: ${e.nodes.map(T).join(", ")}. Estudios: ${fl(e.fuentes.slice(0, 8))}.`, k: `${e.entidad} ${e.entidad} ${e.nodes.join(" ")}` })),
+      ...(M.tensiones || []).map(t => ({ txt: t.tipo === "efecto_opuesto" ? `- Las fuentes chocan: unas dicen que "${t.s}" aumenta "${t.o}" y otras que lo reduce (${fl(t.fuentes)}).` : `- Las fuentes chocan: según [${t.fuentes[0]}], "${t.s}" ${V(t.tipo)} la idea de que "${t.o}". ${t.apoyo}`, k: `${t.s} ${t.o} ${t.apoyo}` })),
+      ...(M.cadenas || []).map(c => ({ txt: `- Posible cadena sin probar: según [${c.fuentes[0]}], "${c.a}" ${V(c.p1)} "${c.b}"; según [${c.fuentes[1]}], "${c.b}" ${V(c.p2)} "${c.c}". Ninguna fuente afirma que "${c.a}" lleve a "${c.c}".`, k: `${c.a} ${c.b} ${c.c}` })),
     ];
     IDX.mago = buildIndex(MI, x => x.k);
     IDX.intu = buildIndex(M.intuiciones || [], i => `${i.titulo} ${i.titulo} ${i.texto}`);
