@@ -113,6 +113,16 @@ details.dd summary:hover small,details.dd summary:focus-visible small{color:var(
 .dec{list-style:none;margin:0;padding:0;border-top:2px solid var(--fg)}
 .dec li{border-left:8px solid var(--fg);border-bottom:2px solid var(--fg);padding:8px 12px;overflow-wrap:anywhere}
 .dec li small{display:block;font-size:11px;color:var(--g2)}
+/* mentes: lectura opcional del Mago (.claude/skills/mentes/) */
+.mg{border-top:2px solid var(--fg)}
+.mg .ask{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding:8px 14px;font-size:11px;color:var(--g2)}
+.mg .ask button{font-size:14px;padding:5px 10px}
+.mg .h{display:flex;justify-content:space-between;gap:8px;background:var(--fg);color:var(--bg);padding:4px 10px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.mg .b{padding:12px 14px;min-width:0;overflow-wrap:anywhere}
+.mg .b p{margin:0 0 10px;max-width:72ch}.mg .b p:last-child{margin-bottom:0}
+.mg .b ul{margin:0 0 10px;padding:0;list-style:none}
+.mg .b li{border-left:6px solid var(--fg);padding:1px 0 1px 10px;margin:6px 0;max-width:72ch}
+.mg .nt{padding:6px 14px 8px;font-size:11px;color:var(--g2);border-top:2px solid var(--fg)}
 footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:11px;color:var(--g2)}
 </style>
 
@@ -145,7 +155,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     <button type="button">¿Funcionan los nudges?</button>
     <button type="button">¿Qué no sabe Mu todavía?</button>
   </div>
-  <p class="how">Cada pregunta usa tu cuenta de Claude: la primera vez te pedirá permiso. Las etiquetas negras (<span class="f" style="cursor:default">F-16</span>) son fuentes del registro: tócalas para ver autor, año y rigor.</p>
+  <p class="how">Cada pregunta usa tu cuenta de Claude: la primera vez te pedirá permiso. Las etiquetas negras (<span class="f" style="cursor:default">F-16</span>) son fuentes del registro: tócalas para ver autor, año y rigor. Después de cada respuesta puedes pedir, si quieres, la <b>Lectura del Mago</b>: una segunda mirada que busca conexiones ocultas en el cerebro y dice cuáles son hecho y cuáles intuición.</p>
 
   <div class="alerta" id="alerta" hidden role="status"></div>
   <details class="dd" id="backlog"><summary>BACKLOG DE TEMAS <small id="bl-sum">cargando…</small></summary>
@@ -274,10 +284,10 @@ Estado actual del cerebro (panel): ${estado}`;
 
   function newEntry(q) {
     const art = document.createElement("article");
-    art.innerHTML = `<div class="q"></div><div class="a"><div class="h"><span>RESPUESTA DE MU</span></div><div class="b"><p class="think">Buscando en el cerebro</p></div><div class="sem" hidden></div><div class="ev" hidden></div></div>`;
+    art.innerHTML = `<div class="q"></div><div class="a"><div class="h"><span>RESPUESTA DE MU</span></div><div class="b"><p class="think">Buscando en el cerebro</p></div><div class="sem" hidden></div><div class="ev" hidden></div><div class="mg" hidden></div></div>`;
     art.querySelector(".q").textContent = q;
     thread.prepend(art);
-    return { art, body: art.querySelector(".b"), ev: art.querySelector(".ev"), sem: art.querySelector(".sem"), box: art.querySelector(".a") };
+    return { art, body: art.querySelector(".b"), ev: art.querySelector(".ev"), sem: art.querySelector(".sem"), mg: art.querySelector(".mg"), box: art.querySelector(".a") };
   }
   function evidence(el, r, extra) {
     const docs = [...new Set(r.nodes.map(c => c.titulo))];
@@ -502,6 +512,78 @@ Devuelve SOLO un objeto JSON con estas claves:
     if (r.nodes.length) parts.push("<p><b>Fragmentos más cercanos en el cerebro:</b></p><ul>" + r.nodes.slice(0, 5).map(c => `<li><b>${esc(c.titulo)}</b> — ${esc(c.seccion)}: ${inline(c.texto.replace(/\s+/g, " ").slice(0, 260))}…</li>`).join("") + "</ul>");
     entry.body.innerHTML = parts.join("");
   }
+  function herramientas(entry, r) {
+    if (!toolsOk) return undefined;
+    return [
+      { name: "buscar_en_mu", description: "Busca más fragmentos en los documentos de Mu. Devuelve hasta 5 fragmentos con su documento y sección. Úsala solo si los extractos no bastan.", inputSchema: { type: "object", properties: { consulta: { type: "string", description: "palabras clave en español" } }, required: ["consulta"] },
+        execute: ({ consulta }) => { evidence(entry.ev, r, `búsqueda extra: "${String(consulta).slice(0, 60)}"`); return search(IDX.nodes, String(consulta || ""), 5).map(c => ({ documento: c.titulo, seccion: c.seccion, texto: c.texto.slice(0, 1400) })); } },
+      { name: "leer_fuente", description: "Lee la ficha completa de una fuente del registro por su código (por ejemplo F-16): autor, año, título, rigor y resumen.", inputSchema: { type: "object", properties: { id: { type: "string" } }, required: ["id"] },
+        execute: ({ id }) => { const k = "F-" + String(id).replace(/\D/g, ""); const f = FUENTES.get(k); if (!f) throw new Error(`${k} no existe en el registro`); const ts = TENS.filter(t => t.f === k).map(t => `${t.s} ${t.p} ${t.o} (${t.abierta ? "abierta" : "resuelta: " + t.estado})`); return fuenteTxt(f) + (ts.length ? " | Contradicciones en el grafo: " + ts.join("; ") : ""); } },
+    ];
+  }
+
+  // ---------- mentes: Lectura del Mago (opcional, solo después de una respuesta) ----------
+  const MAGO = `Eres EL MAGO (Le Bateleur, arcano I del tarot de Marsella), una "mente" del segundo cerebro Mu. No respondes la pregunta otra vez: relees la respuesta que Mu ya dio y buscas CONEXIONES OCULTAS que ella no hizo, y bajas cada una a tierra. Tu postura es la de la carta: una mano sube la varita (la idea), la otra señala la tierra (el hecho). Tu sombra es el charlatán de feria: la conexión que deslumbra y no se sostiene; la cazas y la muestras.
+
+Material que recibes: la pregunta, la respuesta de Mu, la MESA (candidatos calculados por reglas fijas sobre el grafo del cerebro: puentes entre documentos que comparten fuentes y no se enlazan, conceptos presentes en documentos que no se hablan, tensiones entre fuentes y cadenas A→B→C cuyo eslabón ninguna fuente afirma), fichas del registro de fuentes e INTUICIONES DE EL LOBO (heurísticas de juicio acumuladas por el equipo).
+
+Método:
+1. Elige 3 a 4 conexiones que cambien cómo se entiende la respuesta de Mu: que unan algo que ella dejó separado, revelen una tensión que ignoró o prolonguen su idea hacia un lugar inesperado. Si una conexión ya estaba dicha en la respuesta, no cuenta.
+2. Ponle a cada una un veredicto: ⚡ FIRME (las puntas y el eslabón los afirma alguna fuente de rigor A o B), 🔗 PLAUSIBLE (las puntas tienen fuente; el eslabón lo deduces tú: es una hipótesis), 🌙 INTUICIÓN (no hay hecho; se apoya en una intuición de El Lobo, que citas por su número, o es tuya y lo dices).
+3. Caza un truco: una conexión tentadora de la mesa que NO se sostiene (asociación tomada como causa, eslabón de pura asociación, cifra contada dos veces, poblaciones distintas tratadas como una, fuente de rigor D o E bajo una cifra clave).
+4. Nombra la pata que falta: el tipo de evidencia o el hecho ausente que más cambiaría la lectura (empírica, de negocio, social o intuición).
+5. Cierra con un primer gesto: una sola acción concreta y pequeña para esta semana, que empiece con verbo.
+
+Reglas: no inventes fuentes ni intuiciones; cita fuentes como [F-16] solo si están en el material; di "hecho", "inferencia" o "intuición" con esas palabras; no predigas; español claro, frases cortas, siglas explicadas; entre 220 y 400 palabras; sin títulos ni tablas.
+
+Formato exacto (cada viñeta en UNA sola línea):
+**Sobre la mesa:** qué tiene el cerebro sobre esto y qué falta, en 1-2 frases.
+**Lo que el Mago ve**
+- ⚡ FIRME — la conexión en una frase. Arriba: por qué importa. Abajo: el hecho [F-n]. Se rompe si: qué la tumbaría.
+- 🔗 PLAUSIBLE — … (mismo patrón)
+- 🌙 INTUICIÓN — … (mismo patrón; en Abajo di de qué intuición de El Lobo viene o que es del Mago)
+**🎭 El truco:** la conexión que parecía y no es, y por qué.
+**La pata que falta:** …
+**Primer gesto:** …`;
+
+  function mesaPara(texto) {
+    const items = search(IDX.mago, texto, 14).map(x => x.txt);
+    const intu = search(IDX.intu, texto, 5).map(i => `- Intuición ${i.n}: ${i.titulo}. ${i.texto.slice(0, 380)}`);
+    const ids = new Set();
+    for (const t of items) for (const m of t.matchAll(/F-\d+/g)) if (FUENTES.has(m[0]) && ids.size < 22) ids.add(m[0]);
+    const fichas = [...ids].map(id => fuenteTxt({ ...FUENTES.get(id), resumen: FUENTES.get(id).resumen.slice(0, 420) }));
+    return { n: items.length, fuentes: [...ids], txt: `MESA DEL MAGO (candidatos, no hallazgos):\n${items.join("\n") || "(vacía para este tema)"}\n\nFICHAS DE LAS FUENTES DE LA MESA (código | autor | año | título | rigor | resumen):\n${fichas.join("\n") || "(ninguna)"}\n\nINTUICIONES DE EL LOBO RELACIONADAS:\n${intu.join("\n") || "(ninguna)"}` };
+  }
+  function ofrecerMago(entry, q, respuesta) {
+    if (!CORPUS.mago || !sample) return;
+    const mg = entry.mg; mg.hidden = false;
+    mg.innerHTML = `<div class="ask"><button type="button" class="ghost">🎩 LECTURA DEL MAGO</button><span>Opcional. Una segunda mirada que busca conexiones ocultas y dice cuáles son hecho y cuáles intuición.</span></div>`;
+    mg.querySelector("button").addEventListener("click", () => leerMago(entry, q, respuesta));
+  }
+  async function leerMago(entry, q, respuesta) {
+    if (go.disabled) return;
+    const mg = entry.mg, r = retrieve(q);
+    const mesa = mesaPara(q + " " + respuesta);
+    mg.innerHTML = `<div class="h"><span>🎩 LECTURA DEL MAGO · ARCANO I</span><span>${mesa.n} candidatos en la mesa</span></div><div class="b"><p class="think">El Mago pone la mesa</p></div>`;
+    const body = mg.querySelector(".b");
+    const input = [{ role: "user", content: `${MAGO}\n\nPREGUNTA ORIGINAL: ${q}\n\nRESPUESTA QUE DIO MU:\n${respuesta.slice(0, 4000)}\n\n${mesa.txt}` }];
+    ctl = new AbortController(); go.disabled = true; stop.hidden = false; hint.textContent = "El Mago está leyendo. Puede tardar entre 10 y 60 segundos.";
+    try {
+      const opts = { signal: ctl.signal, onText: ({ text }) => { body.innerHTML = md(text); } };
+      const tools = herramientas(entry, r); if (tools) opts.tools = tools; else opts.cache = false;
+      const res = await sample(input, opts);
+      body.innerHTML = md(res.text);
+      if (res.truncated) body.insertAdjacentHTML("beforeend", "<p><i>La lectura quedó cortada.</i></p>");
+      mg.insertAdjacentHTML("beforeend", `<div class="nt">Segunda lectura, no es lo que Mu afirma. La mesa sale de reglas fijas sobre el grafo; el juicio es de Claude con la personalidad del Mago. ⚡ firme = lo dice una fuente · 🔗 plausible = eslabón deducido · 🌙 intuición = sin hecho que la sostenga.</div>`);
+    } catch (e) {
+      const code = e && e.code;
+      if (code === "cancelled") body.innerHTML = (e.text ? md(e.text) : "") + "<p><i>Detenida.</i></p>";
+      else { body.innerHTML = (e && e.text ? md(e.text) : "") + `<p>${esc(COPY[code] || "El Mago no pudo leer ahora. Puedes volver a intentarlo.")}</p>`; mg.insertAdjacentHTML("beforeend", '<div class="ask"><button type="button" class="ghost">🎩 REINTENTAR</button></div>'); mg.querySelector(".ask button").addEventListener("click", () => leerMago(entry, q, respuesta)); }
+    } finally {
+      go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus documentos y en su registro de fuentes antes de responder.";
+    }
+  }
+
   async function ask(q) {
     q = q.trim(); if (!q || !CORPUS) return;
     const entry = newEntry(q);
@@ -516,19 +598,14 @@ Devuelve SOLO un objeto JSON con estas claves:
     input.push({ role: "user", content: msg });
     ctl = new AbortController(); go.disabled = true; stop.hidden = false; hint.textContent = "Mu está pensando. Puede tardar entre 10 y 60 segundos.";
     entry.body.innerHTML = '<p class="think">Pensando</p>';
-    let used = 0;
-    const tools = toolsOk ? [
-      { name: "buscar_en_mu", description: "Busca más fragmentos en los documentos de Mu. Devuelve hasta 5 fragmentos con su documento y sección. Úsala solo si los extractos no bastan.", inputSchema: { type: "object", properties: { consulta: { type: "string", description: "palabras clave en español" } }, required: ["consulta"] },
-        execute: ({ consulta }) => { used++; evidence(entry.ev, r, `búsqueda extra: "${String(consulta).slice(0, 60)}"`); return search(IDX.nodes, String(consulta || ""), 5).map(c => ({ documento: c.titulo, seccion: c.seccion, texto: c.texto.slice(0, 1400) })); } },
-      { name: "leer_fuente", description: "Lee la ficha completa de una fuente del registro por su código (por ejemplo F-16): autor, año, título, rigor y resumen.", inputSchema: { type: "object", properties: { id: { type: "string" } }, required: ["id"] },
-        execute: ({ id }) => { const k = "F-" + String(id).replace(/\D/g, ""); const f = FUENTES.get(k); if (!f) throw new Error(`${k} no existe en el registro`); used++; const ts = TENS.filter(t => t.f === k).map(t => `${t.s} ${t.p} ${t.o} (${t.abierta ? "abierta" : "resuelta: " + t.estado})`); return fuenteTxt(f) + (ts.length ? " | Contradicciones en el grafo: " + ts.join("; ") : ""); } },
-    ] : undefined;
+    const tools = herramientas(entry, r);
     try {
       const opts = { signal: ctl.signal, onText: ({ text }) => { entry.body.innerHTML = md(text); } };
       if (tools) opts.tools = tools; else opts.cache = false;
       const res = await sample(input, opts);
       entry.body.innerHTML = md(res.text);
       renderSem(entry.sem, res.text);
+      ofrecerMago(entry, q, res.text);
       if (res.truncated) entry.body.insertAdjacentHTML("beforeend", "<p><i>La respuesta quedó cortada. Pide algo más acotado.</i></p>");
       turns.push({ role: "user", content: `PREGUNTA: ${q}`, q }, { role: "assistant", content: res.text.slice(0, 4000) });
       registrar(entry, q, res.text, r);
@@ -554,6 +631,15 @@ Devuelve SOLO un objeto JSON con estas claves:
     TENS = d.tensiones || [];
     IDX = { nodes: buildIndex(d.nodes, c => `${c.titulo} ${c.seccion} ${c.seccion} ${c.texto}`), fuentes: buildIndex(d.fuentes, f => `${f.id} ${f.autor} ${f.titulo} ${f.titulo} ${f.resumen}`),
       tens: buildIndex(TENS, t => `${t.s} ${t.o} ${t.apoyo} ${t.nota}`), hyps: buildIndex(d.hipotesis || [], h => `${h.id} ${h.texto} ${h.texto} ${h.detalle}`) };
+    const M = d.mago || {}, fl = a => (a || []).join(", ");
+    const MI = [
+      ...(M.puentes || []).map(p => ({ txt: `- PUENTE: los documentos "${p.a}" y "${p.b}" se apoyan en las mismas fuentes (${fl(p.fuentes)}) y no se enlazan entre sí.`, k: `${p.a} ${p.b} ${p.fuentes.map(f => FUENTES.get(f)?.titulo || "").join(" ")}` })),
+      ...(M.entidades || []).map(e => ({ txt: `- CONCEPTO COMPARTIDO: "${e.entidad}" aparece en fuentes de ${e.nodes.length} documentos que no se enlazan todos entre sí (${e.nodes.join(", ")}) · ${fl(e.fuentes.slice(0, 8))}.`, k: `${e.entidad} ${e.entidad} ${e.nodes.join(" ")}` })),
+      ...(M.tensiones || []).map(t => ({ txt: `- TENSIÓN (${t.tipo === "efecto_opuesto" ? "efecto opuesto" : t.tipo}): "${t.s}" → "${t.o}" · ${fl(t.fuentes)} · ${t.apoyo}`, k: `${t.s} ${t.o} ${t.apoyo}` })),
+      ...(M.cadenas || []).map(c => ({ txt: `- CADENA INFERIDA: "${c.a}" ${c.p1} "${c.b}" [${c.fuentes[0]}] y "${c.b}" ${c.p2} "${c.c}" [${c.fuentes[1]}]; ninguna fuente afirma el eslabón "${c.a}" → "${c.c}".`, k: `${c.a} ${c.b} ${c.c}` })),
+    ];
+    IDX.mago = buildIndex(MI, x => x.k);
+    IDX.intu = buildIndex(M.intuiciones || [], i => `${i.titulo} ${i.titulo} ${i.texto}`);
     $("#gen").textContent = d.generado;
     const L = (d.estado.lineas || []).join(" ");
     const m1 = L.match(/N(\d)\/7/); if (m1) $("#st-n").textContent = `N${m1[1]}/7`;
