@@ -1,0 +1,191 @@
+{
+ "fecha": "2026-10-10",
+ "f_ids": [
+  "F-802",
+  "F-803",
+  "F-804",
+  "F-805",
+  "F-806",
+  "F-807",
+  "F-808",
+  "F-809",
+  "F-810"
+ ],
+ "entidades": [
+  {
+   "id": "argumento_godeliano_penrose",
+   "nombre": "Argumento gödeliano de Lucas-Penrose (la comprensión humana no es algorítmica)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "conciencia",
+   "nombre": "Conciencia (experiencia subjetiva)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "reduccion_objetiva_penrose",
+   "nombre": "Reducción objetiva: colapso de la función de onda inducido por la gravedad (Diósi-Penrose)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "orch_or",
+   "nombre": "Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "microtubulos_neuronales",
+   "nombre": "Microtúbulos neuronales (citoesqueleto de tubulina)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "vibraciones_microtubulos",
+   "nombre": "Vibraciones/resonancias de microtúbulos como origen de ritmos EEG",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "decoherencia_cuantica_cerebro",
+   "nombre": "Decoherencia cuántica en el cerebro caliente y húmedo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "tiempo_decoherencia",
+   "nombre": "Tiempo de decoherencia de un estado cuántico neuronal",
+   "tipo": "metrica"
+  },
+  {
+   "id": "computacion_cuantica_cerebral",
+   "nombre": "Hipótesis del cerebro como computadora cuántica",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "argumento_godeliano_penrose",
+   "p": "origina_en",
+   "o": "conciencia",
+   "f": "F-802",
+   "apoyo": "Penrose (1989) sostiene, siguiendo a Lucas (1961), que la comprensión matemática humana no es algorítmica y que explicar la conciencia exige nueva física no computable.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "reduccion_objetiva_penrose",
+   "p": "aplica_a",
+   "o": "conciencia",
+   "f": "F-802",
+   "apoyo": "Penrose (1989) propone que un colapso físico, no algorítmico, de la función de onda sería el proceso que la mente aprovecha; es una tesis, no un resultado medido.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "argumento_godeliano_penrose",
+   "p": "respalda",
+   "o": "orch_or",
+   "f": "F-803",
+   "apoyo": "Penrose (1994) reformula el argumento gödeliano y lo usa como motivación de Orch-OR: si la mente no es computable, debe haber física no computable en el cerebro.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "orch_or",
+   "p": "parte_de",
+   "o": "microtubulos_neuronales",
+   "f": "F-803",
+   "apoyo": "En Shadows of the Mind (Penrose, 1994) los microtúbulos dentro de las neuronas se proponen como el lugar del procesamiento cuántico que acaba en colapso objetivo.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "argumento_godeliano_penrose",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-804",
+   "apoyo": "Chalmers (1995, Psyche 2(9)) separa dos argumentos gödelianos en Penrose (1994) y los critica; la objeción clásica es que suponen una mente humana consistente/sólida no demostrable.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "orch_or",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-805",
+   "apoyo": "Grush y Churchland (1995, JCS 2(1):10-29) atacan tanto la lógica gödeliana de Penrose como el modelo de microtúbulos; Penrose y Hameroff replicaron en 'What gaps?'.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "orch_or",
+   "p": "asocia_con",
+   "o": "conciencia",
+   "f": "F-806",
+   "apoyo": "Hameroff y Penrose (2014, PLR 11:39-78) proponen que cada evento de reducción objetiva orquestada en microtúbulos es un momento de experiencia consciente; es una hipótesis, no un hallazgo.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "vibraciones_microtubulos",
+   "p": "media",
+   "o": "orch_or",
+   "f": "F-806",
+   "apoyo": "Hameroff y Penrose (2014) sugieren que 'frecuencias de batido' de vibraciones de microtúbulos producirían correlatos de EEG de la conciencia; predicción sin prueba directa.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "orch_or",
+   "p": "tiene_limite",
+   "o": "microtubulos_neuronales",
+   "f": "F-807",
+   "apoyo": "Reimers et al. (2014, PLR 11:101-103) sostienen que la versión revisada de Orch-OR no está científicamente justificada; Hameroff y Penrose replicaron en pp. 104-112.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "decoherencia_cuantica_cerebro",
+   "p": "refuta",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-808",
+   "apoyo": "Tegmark (2000) estima decoherencia en 10^-13 a 10^-20 s frente a 10^-3 a 10^-1 s de la dinámica neural: la coherencia se pierde mucho antes de que pueda influir en la cognición.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "tiempo_decoherencia",
+   "p": "mide",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-808",
+   "apoyo": "Tegmark (2000, PRE 61:4194) usa el tiempo de decoherencia como métrica: 10^-13 s en microtúbulos y hasta 10^-20 s en neuronas, órdenes de magnitud por debajo de lo necesario.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "tiempo_decoherencia",
+   "p": "tiene_limite",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-809",
+   "apoyo": "Hagan, Hameroff y Tuszynski (2002) corrigen supuestos de Tegmark y obtienen 10^-5 a 10^-4 s: 7-8 órdenes más que Tegmark, pero aún por debajo de la escala neural de milisegundos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "orch_or",
+   "p": "contradice",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-809",
+   "apoyo": "Hagan et al. (2002) argumentan que el agua ordenada y una capa de Debye de contraiones protegerían la coherencia en microtúbulos; mecanismo propuesto, no medido.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "microtubulos_neuronales",
+   "p": "tiene_limite",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-810",
+   "apoyo": "Reimers et al. (2009, PRE 80:021912): la tubulina carece de las propiedades esenciales que Orch-OR requiere; ninguna reformulación con física conocida daría computación cuántica en microtúbulos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
+}

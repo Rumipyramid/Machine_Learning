@@ -414,6 +414,17 @@
    ]
   },
   {
+   "id": "anestesia_general",
+   "nombre": "Anestesia general (inhalatoria)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-814",
+    "F-815",
+    "F-818"
+   ]
+  },
+  {
    "id": "antecedentes_familiares",
    "nombre": "Antecedentes familiares, habilidad cognitiva temprana y entorno del hogar",
    "tipo": "limitacion",
@@ -447,6 +458,15 @@
    "grado": 1,
    "fuentes": [
     "F-533"
+   ]
+  },
+  {
+   "id": "apoyo_investigadores_teorias",
+   "nombre": "Proporción de investigadores que considera prometedora una teoría de la conciencia",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-832"
    ]
   },
   {
@@ -492,6 +512,26 @@
    "grado": 1,
    "fuentes": [
     "F-407"
+   ]
+  },
+  {
+   "id": "argumento_godeliano_penrose",
+   "nombre": "Argumento gödeliano de Lucas-Penrose (la comprensión humana no es algorítmica)",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-802",
+    "F-803",
+    "F-804"
+   ]
+  },
+  {
+   "id": "argumento_minimizacion_misterio",
+   "nombre": "Crítica de la 'minimización del misterio': unir dos misterios no explica ninguno",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-836"
    ]
   },
   {
@@ -2393,6 +2433,17 @@
    ]
   },
   {
+   "id": "cognicion_cuantica_probabilistica",
+   "nombre": "Quantum cognition: modelos de probabilidad cuántica para juicios humanos (sin física cerebral)",
+   "tipo": "concepto",
+   "grado": 3,
+   "fuentes": [
+    "F-827",
+    "F-828",
+    "F-829"
+   ]
+  },
+  {
    "id": "cognicion_encarnada",
    "nombre": "Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores",
    "tipo": "concepto",
@@ -2427,12 +2478,30 @@
    ]
   },
   {
+   "id": "colaboracion_adversarial",
+   "nombre": "Colaboración adversarial preregistrada entre teorías rivales",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-830"
+   ]
+  },
+  {
    "id": "colapso_modos_llm",
    "nombre": "Colapso de modos en LLMs (mode collapse)",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-285"
+   ]
+  },
+  {
+   "id": "colapso_por_conciencia",
+   "nombre": "Hipótesis de que la conciencia (medida como información integrada) causa el colapso de la función de onda",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-837"
    ]
   },
   {
@@ -2538,12 +2607,44 @@
    ]
   },
   {
+   "id": "computacion_cuantica_cerebral",
+   "nombre": "Hipótesis del cerebro como computadora cuántica",
+   "tipo": "afirmacion",
+   "grado": 6,
+   "fuentes": [
+    "F-808",
+    "F-810",
+    "F-821",
+    "F-827",
+    "F-834",
+    "F-835"
+   ]
+  },
+  {
    "id": "concentracion_pbm",
    "nombre": "Concentración del mercado de PBM en EE.UU.",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-199"
+   ]
+  },
+  {
+   "id": "conciencia",
+   "nombre": "Conciencia (experiencia subjetiva)",
+   "tipo": "constructo",
+   "grado": 11,
+   "fuentes": [
+    "F-802",
+    "F-804",
+    "F-805",
+    "F-806",
+    "F-819",
+    "F-820",
+    "F-825",
+    "F-828",
+    "F-833",
+    "F-835"
    ]
   },
   {
@@ -3041,6 +3142,15 @@
    ]
   },
   {
+   "id": "criterio_cientificidad",
+   "nombre": "Criterio de cientificidad / comprobabilidad de una teoría de la conciencia",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-831"
+   ]
+  },
+  {
    "id": "criticas_spread_pricing_pbm",
    "nombre": "Críticas de larga data al modelo de los PBM (spread pricing y rebates)",
    "tipo": "concepto",
@@ -3142,6 +3252,19 @@
    "grado": 1,
    "fuentes": [
     "F-236"
+   ]
+  },
+  {
+   "id": "decoherencia_cuantica_cerebro",
+   "nombre": "Decoherencia cuántica en el cerebro caliente y húmedo",
+   "tipo": "limitacion",
+   "grado": 7,
+   "fuentes": [
+    "F-808",
+    "F-809",
+    "F-816",
+    "F-826",
+    "F-834"
    ]
   },
   {
@@ -3670,6 +3793,15 @@
    ]
   },
   {
+   "id": "efecto_cuantico_biologico",
+   "nombre": "Efecto cuántico colectivo en estructuras biológicas a temperatura ambiente",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-816"
+   ]
+  },
+  {
    "id": "efecto_dotacion",
    "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
    "tipo": "constructo",
@@ -3709,6 +3841,15 @@
    ]
   },
   {
+   "id": "efecto_orden_preguntas",
+   "nombre": "Efecto del orden de las preguntas en encuestas",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-829"
+   ]
+  },
+  {
    "id": "efecto_stroop",
    "nombre": "Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color)",
    "tipo": "resultado",
@@ -3716,6 +3857,15 @@
    "fuentes": [
     "F-687",
     "F-688"
+   ]
+  },
+  {
+   "id": "efecto_zenon_cuantico_mente",
+   "nombre": "Efecto Zenón cuántico como vía de acción de la mente sobre el cerebro (Stapp)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-826"
    ]
   },
   {
@@ -3873,6 +4023,25 @@
    ]
   },
   {
+   "id": "entrelazamiento_cerebral_rm",
+   "nombre": "Entrelazamiento de espines de protones en el cerebro medido con RM",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-819",
+    "F-820"
+   ]
+  },
+  {
+   "id": "epotilona_b",
+   "nombre": "Epotilona B (fármaco estabilizador de microtúbulos)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-814"
+   ]
+  },
+  {
    "id": "errores_intuitivos_llm",
    "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)",
    "tipo": "resultado",
@@ -3934,6 +4103,15 @@
    "grado": 1,
    "fuentes": [
     "F-407"
+   ]
+  },
+  {
+   "id": "espin_nuclear",
+   "nombre": "Espín nuclear como variable biológica",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-818"
    ]
   },
   {
@@ -4841,6 +5019,15 @@
    ]
   },
   {
+   "id": "igualdad_qq",
+   "nombre": "Igualdad QQ (predicción sin parámetros de la probabilidad cuántica)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-829"
+   ]
+  },
+  {
    "id": "ilusion_comprension",
    "nombre": "Ilusiones de comprensión (creer entender el mundo más de lo que se entiende)",
    "tipo": "limitacion",
@@ -5316,6 +5503,25 @@
    ]
   },
   {
+   "id": "isotopos_litio",
+   "nombre": "Isótopos de litio (6Li espín 1; 7Li espín 3/2)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-823",
+    "F-824"
+   ]
+  },
+  {
+   "id": "isotopos_xenon",
+   "nombre": "Isótopos de xenón con y sin espín nuclear",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-818"
+   ]
+  },
+  {
    "id": "iyengar_lepper_2000",
    "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
    "tipo": "estudio",
@@ -5459,6 +5665,15 @@
    "grado": 1,
    "fuentes": [
     "F-374"
+   ]
+  },
+  {
+   "id": "latencia_perdida_conciencia",
+   "nombre": "Latencia hasta la pérdida del reflejo de enderezamiento (proxy de inconsciencia en roedores)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-814"
    ]
   },
   {
@@ -5965,6 +6180,18 @@
    ]
   },
   {
+   "id": "microtubulos_neuronales",
+   "nombre": "Microtúbulos neuronales (citoesqueleto de tubulina)",
+   "tipo": "concepto",
+   "grado": 4,
+   "fuentes": [
+    "F-803",
+    "F-807",
+    "F-810",
+    "F-814"
+   ]
+  },
+  {
    "id": "mide_tamano_no_efecto",
    "nombre": "Mide el tamaño del sector, no el efecto causal del diseño",
    "tipo": "limitacion",
@@ -6450,6 +6677,22 @@
    ]
   },
   {
+   "id": "orch_or",
+   "nombre": "Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff)",
+   "tipo": "concepto",
+   "grado": 10,
+   "fuentes": [
+    "F-803",
+    "F-805",
+    "F-806",
+    "F-807",
+    "F-809",
+    "F-812",
+    "F-813",
+    "F-817"
+   ]
+  },
+  {
    "id": "orden_autoridad",
    "nombre": "Órdenes de una figura de autoridad (experimentador) de continuar",
    "tipo": "intervencion",
@@ -6848,6 +7091,15 @@
    ]
   },
   {
+   "id": "potencia_anestesica",
+   "nombre": "Potencia anestésica (DE50)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-818"
+   ]
+  },
+  {
    "id": "practica_espaciada",
    "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
    "tipo": "intervencion",
@@ -7128,6 +7380,24 @@
    ]
   },
   {
+   "id": "problema_dificil_conciencia",
+   "nombre": "Problema difícil de la conciencia (por qué hay experiencia subjetiva)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-836"
+   ]
+  },
+  {
+   "id": "procesamiento_predictivo",
+   "nombre": "Teorías de procesamiento predictivo de la conciencia",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-832"
+   ]
+  },
+  {
    "id": "productividad_devs",
    "nombre": "Productividad de desarrolladores",
    "tipo": "resultado",
@@ -7277,12 +7547,35 @@
    ]
   },
   {
+   "id": "qubits_espin_nuclear_posner",
+   "nombre": "Qubits de espín nuclear de fósforo en moléculas de Posner (hipótesis de Fisher)",
+   "tipo": "concepto",
+   "grado": 4,
+   "fuentes": [
+    "F-821",
+    "F-822",
+    "F-823",
+    "F-824"
+   ]
+  },
+  {
    "id": "racionalidad_economica",
    "nombre": "Racionalidad económica (consistencia con maximización de utilidad por preferencia revelada)",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-571"
+   ]
+  },
+  {
+   "id": "radiacion_espontanea_colapso",
+   "nombre": "Radiación espontánea predicha por modelos de colapso",
+   "tipo": "metrica",
+   "grado": 3,
+   "fuentes": [
+    "F-811",
+    "F-812",
+    "F-813"
    ]
   },
   {
@@ -7483,6 +7776,16 @@
    "grado": 1,
    "fuentes": [
     "F-145"
+   ]
+  },
+  {
+   "id": "reduccion_objetiva_penrose",
+   "nombre": "Reducción objetiva: colapso de la función de onda inducido por la gravedad (Diósi-Penrose)",
+   "tipo": "concepto",
+   "grado": 2,
+   "fuentes": [
+    "F-802",
+    "F-811"
    ]
   },
   {
@@ -8276,6 +8579,15 @@
    ]
   },
   {
+   "id": "superradiancia_triptofano",
+   "nombre": "Superradiancia UV en redes de triptófano de microtúbulos",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-816"
+   ]
+  },
+  {
    "id": "supervivencia_cancer",
    "nombre": "Supervivencia de pacientes con cáncer",
    "tipo": "resultado",
@@ -8496,6 +8808,27 @@
    ]
   },
   {
+   "id": "teoria_espacio_trabajo_global",
+   "nombre": "Teoría del espacio de trabajo neuronal global (GNWT)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-830"
+   ]
+  },
+  {
+   "id": "teoria_informacion_integrada",
+   "nombre": "Teoría de la información integrada (IIT)",
+   "tipo": "concepto",
+   "grado": 4,
+   "fuentes": [
+    "F-830",
+    "F-831",
+    "F-832",
+    "F-837"
+   ]
+  },
+  {
    "id": "teoria_mente_llm",
    "nombre": "Desempeño de LLMs en tareas de teoría de la mente",
    "tipo": "resultado",
@@ -8525,12 +8858,32 @@
    ]
   },
   {
+   "id": "teorias_cuanticas_conciencia",
+   "nombre": "Teorías cuánticas de la conciencia (Orch-OR, Stapp, Beck-Eccles, Fisher)",
+   "tipo": "concepto",
+   "grado": 3,
+   "fuentes": [
+    "F-833",
+    "F-836"
+   ]
+  },
+  {
    "id": "tept",
    "nombre": "Estrés postraumático (TEPT)",
    "tipo": "resultado",
    "grado": 3,
    "fuentes": [
     "F-751"
+   ]
+  },
+  {
+   "id": "tiempo_decoherencia",
+   "nombre": "Tiempo de decoherencia de un estado cuántico neuronal",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-808",
+    "F-809"
    ]
   },
   {
@@ -8550,6 +8903,15 @@
    "fuentes": [
     "F-673",
     "F-674"
+   ]
+  },
+  {
+   "id": "tiempo_vida_entrelazamiento",
+   "nombre": "Tiempo de vida del entrelazamiento de espines nucleares",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-822"
    ]
   },
   {
@@ -8607,6 +8969,16 @@
    ]
   },
   {
+   "id": "transporte_energia_microtubulos",
+   "nombre": "Migración de energía electrónica (excitones) en microtúbulos",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-815",
+    "F-817"
+   ]
+  },
+  {
    "id": "triaje_enfermeria_mts",
    "nombre": "Triaje por enfermera con extensión del Manchester Triage System",
    "tipo": "intervencion",
@@ -8622,6 +8994,15 @@
    "grado": 1,
    "fuentes": [
     "F-333"
+   ]
+  },
+  {
+   "id": "tunel_cuantico_exocitosis",
+   "nombre": "Disparo de la exocitosis sináptica por efecto túnel cuántico (Beck-Eccles)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-825"
    ]
   },
   {
@@ -8899,6 +9280,15 @@
    "fuentes": [
     "F-42",
     "F-63"
+   ]
+  },
+  {
+   "id": "vibraciones_microtubulos",
+   "nombre": "Vibraciones/resonancias de microtúbulos como origen de ritmos EEG",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-806"
    ]
   },
   {
@@ -18538,11 +18928,587 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-07",
    "clase": "metodo"
+  },
+  {
+   "id": "T-798",
+   "s": "argumento_godeliano_penrose",
+   "p": "origina_en",
+   "o": "conciencia",
+   "f": "F-802",
+   "apoyo": "Penrose (1989) sostiene, siguiendo a Lucas (1961), que la comprensión matemática humana no es algorítmica y que explicar la conciencia exige nueva física no computable.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-799",
+   "s": "reduccion_objetiva_penrose",
+   "p": "aplica_a",
+   "o": "conciencia",
+   "f": "F-802",
+   "apoyo": "Penrose (1989) propone que un colapso físico, no algorítmico, de la función de onda sería el proceso que la mente aprovecha; es una tesis, no un resultado medido.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-800",
+   "s": "argumento_godeliano_penrose",
+   "p": "respalda",
+   "o": "orch_or",
+   "f": "F-803",
+   "apoyo": "Penrose (1994) reformula el argumento gödeliano y lo usa como motivación de Orch-OR: si la mente no es computable, debe haber física no computable en el cerebro.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-801",
+   "s": "orch_or",
+   "p": "parte_de",
+   "o": "microtubulos_neuronales",
+   "f": "F-803",
+   "apoyo": "En Shadows of the Mind (Penrose, 1994) los microtúbulos dentro de las neuronas se proponen como el lugar del procesamiento cuántico que acaba en colapso objetivo.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-802",
+   "s": "argumento_godeliano_penrose",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-804",
+   "apoyo": "Chalmers (1995, Psyche 2(9)) separa dos argumentos gödelianos en Penrose (1994) y los critica; la objeción clásica es que suponen una mente humana consistente/sólida no demostrable.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-803",
+   "s": "orch_or",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-805",
+   "apoyo": "Grush y Churchland (1995, JCS 2(1):10-29) atacan tanto la lógica gödeliana de Penrose como el modelo de microtúbulos; Penrose y Hameroff replicaron en 'What gaps?'.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-804",
+   "s": "orch_or",
+   "p": "asocia_con",
+   "o": "conciencia",
+   "f": "F-806",
+   "apoyo": "Hameroff y Penrose (2014, PLR 11:39-78) proponen que cada evento de reducción objetiva orquestada en microtúbulos es un momento de experiencia consciente; es una hipótesis, no un hallazgo.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-805",
+   "s": "vibraciones_microtubulos",
+   "p": "media",
+   "o": "orch_or",
+   "f": "F-806",
+   "apoyo": "Hameroff y Penrose (2014) sugieren que 'frecuencias de batido' de vibraciones de microtúbulos producirían correlatos de EEG de la conciencia; predicción sin prueba directa.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-806",
+   "s": "orch_or",
+   "p": "tiene_limite",
+   "o": "microtubulos_neuronales",
+   "f": "F-807",
+   "apoyo": "Reimers et al. (2014, PLR 11:101-103) sostienen que la versión revisada de Orch-OR no está científicamente justificada; Hameroff y Penrose replicaron en pp. 104-112.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-807",
+   "s": "decoherencia_cuantica_cerebro",
+   "p": "refuta",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-808",
+   "apoyo": "Tegmark (2000) estima decoherencia en 10^-13 a 10^-20 s frente a 10^-3 a 10^-1 s de la dinámica neural: la coherencia se pierde mucho antes de que pueda influir en la cognición.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-808",
+   "s": "tiempo_decoherencia",
+   "p": "mide",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-808",
+   "apoyo": "Tegmark (2000, PRE 61:4194) usa el tiempo de decoherencia como métrica: 10^-13 s en microtúbulos y hasta 10^-20 s en neuronas, órdenes de magnitud por debajo de lo necesario.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-809",
+   "s": "tiempo_decoherencia",
+   "p": "tiene_limite",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-809",
+   "apoyo": "Hagan, Hameroff y Tuszynski (2002) corrigen supuestos de Tegmark y obtienen 10^-5 a 10^-4 s: 7-8 órdenes más que Tegmark, pero aún por debajo de la escala neural de milisegundos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-810",
+   "s": "orch_or",
+   "p": "contradice",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-809",
+   "apoyo": "Hagan et al. (2002) argumentan que el agua ordenada y una capa de Debye de contraiones protegerían la coherencia en microtúbulos; mecanismo propuesto, no medido.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-811",
+   "s": "microtubulos_neuronales",
+   "p": "tiene_limite",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-810",
+   "apoyo": "Reimers et al. (2009, PRE 80:021912): la tubulina carece de las propiedades esenciales que Orch-OR requiere; ninguna reformulación con física conocida daría computación cuántica en microtúbulos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-812",
+   "s": "radiacion_espontanea_colapso",
+   "p": "refuta",
+   "o": "reduccion_objetiva_penrose",
+   "f": "F-811",
+   "apoyo": "Donadi et al. (2020, Nature Physics) no detectan la radiación predicha bajo el Gran Sasso: descartan la versión sin parámetros del colapso Diósi-Penrose; cota ~3 órdenes mayor que las previas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-813",
+   "s": "radiacion_espontanea_colapso",
+   "p": "contradice",
+   "o": "orch_or",
+   "f": "F-812",
+   "apoyo": "Derakhshani et al. (2022, PLR 42:8-14): con el límite del Gran Sasso, Orch-OR basada en el colapso gravitacional más simple es 'altamente improbable' en todos los escenarios revisados.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-814",
+   "s": "radiacion_espontanea_colapso",
+   "p": "tiene_limite",
+   "o": "orch_or",
+   "f": "F-813",
+   "apoyo": "McQueen (2023): el Gran Sasso refuta el modelo de Diósi sin parámetros, pero no la fórmula de Penrose del tiempo de vida de la superposición; Orch-OR es un marco inacabado con muchas versiones.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-815",
+   "s": "epotilona_b",
+   "p": "aumenta",
+   "o": "latencia_perdida_conciencia",
+   "f": "F-814",
+   "apoyo": "Khan et al. (2024, eNeuro): epotilona B retrasa 69 s en promedio la pérdida del reflejo de enderezamiento bajo isoflurano 4% (d=1,9) frente a vehículo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-816",
+   "s": "microtubulos_neuronales",
+   "p": "media",
+   "o": "anestesia_general",
+   "f": "F-814",
+   "apoyo": "Khan et al. (2024) interpretan que la unión del isoflurano a microtúbulos contribuye a la inconsciencia; es evidencia de un blanco molecular, no de un mecanismo cuántico.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-817",
+   "s": "anestesia_general",
+   "p": "reduce",
+   "o": "transporte_energia_microtubulos",
+   "f": "F-815",
+   "apoyo": "Kalra et al. (2023, ACS Cent Sci 9:352): etomidato e isoflurano reducen la difusión de excitones en microtúbulos, que alcanza ~6,6 nm, más que lo previsto por Förster.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-818",
+   "s": "superradiancia_triptofano",
+   "p": "es_tipo_de",
+   "o": "efecto_cuantico_biologico",
+   "f": "F-816",
+   "apoyo": "Babcock et al. (2024, JPCB 128:4035) predicen y confirman superradiancia por >10^5 dipolos de triptófano en microtúbulos, con mayor rendimiento cuántico de fluorescencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-819",
+   "s": "superradiancia_triptofano",
+   "p": "contradice",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-816",
+   "apoyo": "Babcock et al. (2024) hallan efectos cuánticos colectivos persistentes en equilibrio térmico, lo que matiza el 'demasiado caliente y húmedo'; pero no muestran que sirvan para procesar información.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-820",
+   "s": "transporte_energia_microtubulos",
+   "p": "respalda",
+   "o": "orch_or",
+   "f": "F-817",
+   "apoyo": "Wiest (2025, Neurosci Conscious niaf011) sostiene que la convergencia de anestesia-microtúbulos y efectos cuánticos a temperatura ambiente 'apoya experimentalmente' un sustrato cuántico; es una síntesis interpretativa del propio grupo.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-821",
+   "s": "espin_nuclear",
+   "p": "reduce",
+   "o": "potencia_anestesica",
+   "f": "F-818",
+   "apoyo": "Li et al. (2018, Anesthesiology 129:271): xenón con espín nuclear necesita DE50 de 99-105% vs 70-72% sin espín para la pérdida del reflejo de enderezamiento en ratones.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-822",
+   "s": "isotopos_xenon",
+   "p": "asocia_con",
+   "o": "anestesia_general",
+   "f": "F-818",
+   "apoyo": "Li et al. (2018): la polarizabilidad (3,60 Å, igual en los 4 isótopos) no explica la diferencia; la explicación cuántica de la conciencia sigue siendo especulativa y el hallazgo, único.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-823",
+   "s": "entrelazamiento_cerebral_rm",
+   "p": "asocia_con",
+   "o": "conciencia",
+   "f": "F-819",
+   "apoyo": "Kerskens y López Pérez (2022, J Phys Commun 6:105001) reportan una señal de coherencia de cuanto cero evocada por el latido en 40 voluntarios, solo despiertos, y la interpretan como entrelazamiento.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-824",
+   "s": "entrelazamiento_cerebral_rm",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-820",
+   "apoyo": "Warren (2023, J Phys Commun 7(3)) responde que Kerskens y López Pérez no dan evidencia de no-clasicidad: la señal refleja que el tejido es complejo y mal caracterizado por la RM.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-825",
+   "s": "qubits_espin_nuclear_posner",
+   "p": "aplica_a",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-821",
+   "apoyo": "Fisher (2015, Annals of Physics 362:593) propone espines nucleares de fósforo protegidos en moléculas de Posner Ca9(PO4)6 como qubits cerebrales; es una hipótesis teórica comprobable.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-826",
+   "s": "tiempo_vida_entrelazamiento",
+   "p": "tiene_limite",
+   "o": "qubits_espin_nuclear_posner",
+   "f": "F-822",
+   "apoyo": "Player y Hore (2018, J R Soc Interface 15:20180494) acotan el entrelazamiento entre moléculas de Posner a un máximo de ~37 min en condiciones idealizadas, probablemente mucho menos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-827",
+   "s": "isotopos_litio",
+   "p": "modera",
+   "o": "qubits_espin_nuclear_posner",
+   "f": "F-823",
+   "apoyo": "Ettenberg et al. (2020, PBB): al 4.º ensayo, el 6Li redujo más y por más tiempo la hiperactividad por ketamina en ratas que el 7Li y el litio natural; compatible con, pero no prueba de, efectos de espín.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-828",
+   "s": "isotopos_litio",
+   "p": "modera",
+   "o": "qubits_espin_nuclear_posner",
+   "f": "F-824",
+   "apoyo": "Deline et al. (2023, Front Physiol 14): 7Li elevó más la capacidad de calcio mitocondrial, pero 6Li retrasó más la transición de permeabilidad; efecto isotópico real, causa (masa o espín) abierta.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-10",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-829",
+   "s": "tunel_cuantico_exocitosis",
+   "p": "aplica_a",
+   "o": "conciencia",
+   "f": "F-825",
+   "apoyo": "Beck y Eccles (1992, PNAS 89:11357) proponen que la intención consciente actúa sesgando un disparo cuántico por efecto túnel en la exocitosis; modelo teórico, sin medición.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-830",
+   "s": "efecto_zenon_cuantico_mente",
+   "p": "contradice",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-826",
+   "apoyo": "Schwartz, Stapp y Beauregard (2005, Phil Trans R Soc B 360:1309) afirman que el efecto Zenón cuántico no es suprimido por la decoherencia; críticos lo disputan.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-831",
+   "s": "cognicion_cuantica_probabilistica",
+   "p": "tiene_limite",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-827",
+   "apoyo": "Busemeyer y Bruza (2012) aplican la probabilidad cuántica a juicios sin suponer un cerebro cuántico; su vínculo con la neurociencia queda abierto.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-832",
+   "s": "cognicion_cuantica_probabilistica",
+   "p": "aplica_a",
+   "o": "conciencia",
+   "f": "F-828",
+   "apoyo": "Pothos y Busemeyer (2013, BBS 36:255) proponen la probabilidad cuántica como herramienta de modelado cognitivo; es matemática del juicio, no una teoría de la conciencia ni del cerebro.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-833",
+   "s": "igualdad_qq",
+   "p": "mide",
+   "o": "efecto_orden_preguntas",
+   "f": "F-829",
+   "apoyo": "Wang et al. (2014, PNAS) verifican la igualdad QQ en decenas de pares de preguntas de Pew y Gallup (73 según revisión posterior): el efecto de orden sigue la estructura de la probabilidad cuántica.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-834",
+   "s": "cognicion_cuantica_probabilistica",
+   "p": "respalda",
+   "o": "efecto_orden_preguntas",
+   "f": "F-829",
+   "apoyo": "Wang et al. (2014) usan la probabilidad cuántica para predecir un patrón de encuestas; no afirman que las neuronas sean cuánticas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-835",
+   "s": "colaboracion_adversarial",
+   "p": "contradice",
+   "o": "teoria_informacion_integrada",
+   "f": "F-830",
+   "apoyo": "Cogitate (2025, Nature 642:133; n=256): no se halló la sincronización sostenida en corteza posterior que IIT predecía.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-836",
+   "s": "colaboracion_adversarial",
+   "p": "contradice",
+   "o": "teoria_espacio_trabajo_global",
+   "f": "F-830",
+   "apoyo": "Cogitate (2025): hubo contenido consciente en corteza prefrontal, pero no la 'ignición' al final del estímulo que predecía GNWT.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-837",
+   "s": "criterio_cientificidad",
+   "p": "contradice",
+   "o": "teoria_informacion_integrada",
+   "f": "F-831",
+   "apoyo": "IIT-Concerned (2025, Nat Neurosci 28:689), heredero de la carta de 124 firmantes de 2023, sostiene que las tesis centrales de IIT son incomprobables incluso en principio.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-838",
+   "s": "apoyo_investigadores_teorias",
+   "p": "mide",
+   "o": "procesamiento_predictivo",
+   "f": "F-832",
+   "apoyo": "Francken et al. (2022, Neurosci Conscious niac011; N=166): procesamiento predictivo, 61,3% 'prometedora'; GNWT 55%, orden superior 51%, IIT 43% (estas tres vía cita posterior).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-839",
+   "s": "apoyo_investigadores_teorias",
+   "p": "mide",
+   "o": "teoria_informacion_integrada",
+   "f": "F-832",
+   "apoyo": "Francken et al. (2022): IIT considerada prometedora por ~43% de 166 investigadores (cifra vía cita posterior); las teorías cuánticas no aparecen entre las destacadas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-840",
+   "s": "teorias_cuanticas_conciencia",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-833",
+   "apoyo": "Seth y Bayne (2022, Nat Rev Neurosci 23:439) revisan 4 familias de teorías (orden superior, GWT, predictivo, IIT); las cuánticas quedan fuera del núcleo del campo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-841",
+   "s": "decoherencia_cuantica_cerebro",
+   "p": "refuta",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-834",
+   "apoyo": "Koch y Hepp (2006, Nature 440:611) consideran la decoherencia cerebral demasiado fuerte para computación cuántica; solo la detección de pocos fotones en el ojo usa cuántica de forma clara.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-842",
+   "s": "computacion_cuantica_cerebral",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-835",
+   "apoyo": "Litt et al. (2006, Cogn Sci 30:593) dan tres razones: escalas temporales incompatibles, obstáculos físicos en tejido orgánico y falta de evidencia psicológica de que el pensamiento requiera cuántica.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-843",
+   "s": "argumento_minimizacion_misterio",
+   "p": "contradice",
+   "o": "teorias_cuanticas_conciencia",
+   "f": "F-836",
+   "apoyo": "Chalmers (1996) llama 'Ley de Minimización del Misterio' a unir conciencia y cuántica porque ambas son misteriosas; para él, un mecanismo cuántico no cierra el problema difícil.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-844",
+   "s": "problema_dificil_conciencia",
+   "p": "tiene_limite",
+   "o": "teorias_cuanticas_conciencia",
+   "f": "F-836",
+   "apoyo": "Chalmers (1996): cualquier mecanismo físico, clásico o cuántico, deja abierta la pregunta de por qué hay experiencia; la cuántica no da ventaja explicativa por sí sola.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-845",
+   "s": "colapso_por_conciencia",
+   "p": "parte_de",
+   "o": "teoria_informacion_integrada",
+   "f": "F-837",
+   "apoyo": "Chalmers y McQueen (2022, OUP pp. 11-63) unen IIT con colapso continuo; versiones simples descartadas por efecto Zenón, complejas aún compatibles y comprobables con computadoras cuánticas.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-10",
+   "clase": "estructura"
   }
  ],
- "generado": "2026-10-07",
+ "generado": "2026-10-10",
  "cobertura": {
-  "procesadas": 479,
-  "total": 800
+  "procesadas": 515,
+  "total": 874
  }
 }

@@ -1,7 +1,7 @@
 # Convergencia psicología + economía + IA: qué se está juntando, qué funciona y qué es humo
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-03 · Última actualización: 2026-10-04 · Versión: **v1.0 (iteración 1, `/trinidad`: empírica + social + negocio)**
+> Fecha de elaboración: 2026-10-03 · Última actualización: 2026-10-10 · Versión: **v1.0 (iteración 1, `/trinidad`: empírica + social + negocio)**
 > Origen: pedido del usuario: *"investigación profunda de cómo están acercándose la psicología, la economía y la IA"*.
 > Fuentes en `research/fuentes/codice.md`: **nuevas F-543 a F-645** (empírica F-543 a F-598 · social F-599 a F-616 · negocio F-617 a F-645) · ya existentes que se reusan: F-16, F-17, F-20, F-21, F-24, F-25, F-27, F-29, F-257, F-488, F-489, F-495, F-499, F-542.
 > Pregunta permanente: **¿en qué se están fundiendo la psicología, la economía y la IA, qué de eso tiene evidencia y qué implica para un equipo que diseña conducta en seguros y usa usuarios sintéticos (`lapuerta`)?**
@@ -242,3 +242,4 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — los usuarios sintéticos en UX (F-604) y la IA como canal de descubrimiento (F-634) son tendencias que allí se confrontan; la regla de "medir conducta, no autoinforme" aplica igual.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros (Mundo vs. Perú)]] — Lemonade (F-636) y Vitality (F-637, F-638) son los únicos casos de conducta + IA en seguros con métricas; falta el caso peruano.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — el estado de replicación en humanos de los efectos que los LLM "replican" (F-545 reprodujo Milgram); su PF4 prueba si un LLM también reproduce los efectos que en humanos no replicaron.
+- [[conciencia-cuantica|Conciencia cuántica]] — distingue la *quantum cognition* (probabilidad cuántica para modelar juicios, F-827 a F-829), que pertenece a esta convergencia, de las teorías físicas del cerebro cuántico.

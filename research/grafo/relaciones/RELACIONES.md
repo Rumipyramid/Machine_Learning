@@ -1,6 +1,6 @@
 # 🧬 Grafo semántico del códice — RELACIONES
 
-*Generado 2026-10-07 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
+*Generado 2026-10-10 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
 
 > **Transparencia:** una relación aquí es lo que *una fuente dice*, no un hecho. `lectura=ficha` significa que solo se leyó el resumen del ledger; `abstract` que se leyó el resumen real de la fuente; `completa`, el texto íntegro. Un cruce entre fuentes es una *coincidencia de entidades*, no una prueba de que las fuentes sean compatibles.
 
@@ -8,33 +8,33 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **479 de 800** (59.9%) |
+| Fuentes procesadas | **515 de 874** (58.9%) |
 | …del cerebro de diseño (citadas en el node) | 164 de 274 |
-| …por rigor | A 280/287 · B 99/124 · C 61/174 · D 37/167 · E 1/33 |
-| Barridos | 61 |
-| Entidades | 954 |
-| Relaciones | 797 |
-| Nivel de lectura | abstract 682 · ficha 114 · completa 1 |
-| Fuerza de las afirmaciones | descriptiva 285 · causal 223 · observacional 172 · teorica 117 |
+| …por rigor | A 291/299 · B 118/148 · C 67/185 · D 37/192 · E 1/35 |
+| Barridos | 65 |
+| Entidades | 992 |
+| Relaciones | 845 |
+| Nivel de lectura | abstract 718 · ficha 126 · completa 1 |
+| Fuerza de las afirmaciones | descriptiva 288 · causal 230 · observacional 181 · teorica 146 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 172 |
-| `reduce` | efecto | 108 |
-| `asocia_con` | efecto | 96 |
-| `tiene_limite` | metodo | 90 |
-| `aplica_a` | estructura | 70 |
-| `mide` | metodo | 45 |
-| `modera` | efecto | 42 |
-| `respalda` | evidencia | 41 |
-| `contradice` | evidencia | 38 |
-| `origina_en` | metodo | 24 |
-| `refuta` | evidencia | 22 |
-| `es_tipo_de` | estructura | 19 |
-| `media` | efecto | 15 |
-| `parte_de` | estructura | 15 |
+| `aumenta` | efecto | 173 |
+| `reduce` | efecto | 110 |
+| `tiene_limite` | metodo | 102 |
+| `asocia_con` | efecto | 99 |
+| `aplica_a` | estructura | 74 |
+| `mide` | metodo | 49 |
+| `contradice` | evidencia | 46 |
+| `modera` | efecto | 44 |
+| `respalda` | evidencia | 44 |
+| `origina_en` | metodo | 25 |
+| `refuta` | evidencia | 25 |
+| `es_tipo_de` | estructura | 20 |
+| `media` | efecto | 17 |
+| `parte_de` | estructura | 17 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
@@ -43,8 +43,10 @@
 | El Niño / ENSO (fase cálida) | F-742, F-743, F-744, F-745, F-746, F-747, F-748, F-749, F-750, F-756, F-759, F-761, F-762, F-764, F-771, F-776, F-777, F-782 |
 | Niño Costero peruano (1997-98, 2017, 2023) | F-751, F-752, F-753, F-760, F-763, F-765, F-766, F-767, F-768, F-770, F-773, F-780, F-783 |
 | Generative UI (interfaces generadas por LLM) | F-247, F-256, F-258, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
+| Conciencia (experiencia subjetiva) | F-802, F-804, F-805, F-806, F-819, F-820, F-825, F-828, F-833, F-835 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-544, F-545, F-546, F-548, F-552, F-553, F-560, F-574, F-597 |
 | Seguro paramétrico (pago según índice observable) | F-163, F-164, F-775, F-786, F-787, F-789, F-790, F-792, F-800 |
+| Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff) | F-803, F-805, F-806, F-807, F-809, F-812, F-813, F-817 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542, F-662, F-663 |
 | Sesgo de publicación | F-16, F-17, F-21, F-680, F-701, F-712, F-736 |
 | Obediencia a órdenes dañinas (llegar a la descarga máxima) | F-650, F-651, F-652, F-653, F-654, F-655, F-656 |
@@ -52,9 +54,11 @@
 | Modelos ChatGPT-3.5 y 4 | F-545, F-571, F-572, F-573, F-575, F-577 |
 | Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores | F-689, F-690, F-691, F-692, F-693, F-695 |
 | Daños humanos y económicos del Niño Costero 2017 | F-755, F-763, F-769, F-783, F-784, F-801 |
+| Hipótesis del cerebro como computadora cuántica | F-808, F-810, F-821, F-827, F-834, F-835 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-514 |
 | Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502 |
 | Demanda de seguros | F-3, F-164, F-221, F-791, F-799 |
+| Decoherencia cuántica en el cerebro caliente y húmedo | F-808, F-809, F-816, F-826, F-834 |
 | Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-359, F-514 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-318, F-429, F-470 |
 | UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
@@ -68,6 +72,9 @@
 | Hogares del norte costero (Tumbes, Piura, Lambayeque) | F-755, F-772, F-779, F-794 |
 | Crecimiento económico (PBI) | F-742, F-743, F-782, F-787 |
 | Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre) | F-785, F-788, F-789, F-801 |
+| Microtúbulos neuronales (citoesqueleto de tubulina) | F-803, F-807, F-810, F-814 |
+| Qubits de espín nuclear de fósforo en moléculas de Posner (hipótesis de Fisher) | F-821, F-822, F-823, F-824 |
+| Teoría de la información integrada (IIT) | F-830, F-831, F-832, F-837 |
 | Design thinking | F-239, F-240, F-524 |
 | Éxito de proyectos de innovación | F-239, F-441, F-461 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
@@ -117,6 +124,10 @@
 | El Niño 2026-27 alcanza magnitud extraordinaria/histórica | F-780, F-781, F-797 |
 | Cajas municipales y microfinancieras del norte | F-778, F-787, F-790 |
 | Acción anticipatoria / financiamiento basado en pronósticos | F-793, F-794, F-798 |
+| Argumento gödeliano de Lucas-Penrose (la comprensión humana no es algorítmica) | F-802, F-803, F-804 |
+| Radiación espontánea predicha por modelos de colapso | F-811, F-812, F-813 |
+| Anestesia general (inhalatoria) | F-814, F-815, F-818 |
+| Quantum cognition: modelos de probabilidad cuántica para juicios humanos (sin física cerebral) | F-827, F-828, F-829 |
 | Relación innovación → desempeño | F-238, F-525 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Backlash del consumidor | F-241, F-345 |
@@ -263,6 +274,12 @@
 | El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS) | F-763, F-773 |
 | BCRP: El Niño resta 0,9 pp al PBI 2026 (Reporte de Inflación de setiembre) | F-782, F-787 |
 | 'Café Seguro Perú' es el primer seguro paramétrico del país | F-789, F-798 |
+| Reducción objetiva: colapso de la función de onda inducido por la gravedad (Diósi-Penrose) | F-802, F-811 |
+| Tiempo de decoherencia de un estado cuántico neuronal | F-808, F-809 |
+| Migración de energía electrónica (excitones) en microtúbulos | F-815, F-817 |
+| Entrelazamiento de espines de protones en el cerebro medido con RM | F-819, F-820 |
+| Isótopos de litio (6Li espín 1; 7Li espín 3/2) | F-823, F-824 |
+| Teorías cuánticas de la conciencia (Orch-OR, Stapp, Beck-Eccles, Fisher) | F-833, F-836 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -446,6 +463,39 @@
 - **Seguro de índice de pronóstico ENSO (Perú, 2010)** —refuta→ **'Café Seguro Perú' es el primer seguro paramétrico del país** (F-798, descriptiva) · **estado: refutacion_directa**
   - El producto ENSO de 2010 de la misma compañía fue el primer seguro de índice de pronóstico regulado del mundo: el café no es el primero.
   - *Resolución (2026-10-07):* El paramétrico ENSO de La Positiva de 2010 (F-775, F-798) refuta que el seguro de café de 2026 sea el primero del país.
+- **Decoherencia cuántica en el cerebro caliente y húmedo** —refuta→ **Hipótesis del cerebro como computadora cuántica** (F-808, teorica) · **estado: refutacion_directa**
+  - Tegmark (2000) estima decoherencia en 10^-13 a 10^-20 s frente a 10^-3 a 10^-1 s de la dinámica neural: la coherencia se pierde mucho antes de que pueda influir en la cognición.
+  - *Resolución (2026-10-10):* Cálculo, no medición: Tegmark (F-808) da 10^-13 a 10^-20 s frente a 10^-3 s de la dinámica neural. La réplica (F-809) lo sube a 10^-5–10^-4 s, aún insuficiente. Refuta la computación cuántica cerebral sostenida en el modelo de Tegmark; no excluye efectos cuánticos breves.
+- **Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff)** —contradice→ **Decoherencia cuántica en el cerebro caliente y húmedo** (F-809, teorica) · **estado: mecanismo_en_disputa**
+  - Hagan et al. (2002) argumentan que el agua ordenada y una capa de Debye de contraiones protegerían la coherencia en microtúbulos; mecanismo propuesto, no medido.
+  - *Resolución (2026-10-10):* Hagan et al. (F-809), escrita por defensores de Orch-OR, propone blindaje por agua ordenada y capa de Debye; es un mecanismo propuesto, no medido. Sigue la disputa sobre qué sistema físico modelar.
+- **Radiación espontánea predicha por modelos de colapso** —refuta→ **Reducción objetiva: colapso de la función de onda inducido por la gravedad (Diósi-Penrose)** (F-811, observacional) · **estado: refutacion_directa**
+  - Donadi et al. (2020, Nature Physics) no detectan la radiación predicha bajo el Gran Sasso: descartan la versión sin parámetros del colapso Diósi-Penrose; cota ~3 órdenes mayor que las previas.
+  - *Resolución (2026-10-10):* Experimento con datos (F-811, Gran Sasso): sin radiación espontánea, se descarta la versión sin parámetros del colapso Diósi-Penrose. Según McQueen (F-813), deja en pie otras variantes.
+- **Radiación espontánea predicha por modelos de colapso** —contradice→ **Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff)** (F-812, observacional) · **estado: matizada**
+  - Derakhshani et al. (2022, PLR 42:8-14): con el límite del Gran Sasso, Orch-OR basada en el colapso gravitacional más simple es 'altamente improbable' en todos los escenarios revisados.
+  - *Resolución (2026-10-10):* Derakhshani et al. (F-812) aplican el límite a Orch-OR con el colapso más simple: 'altamente improbable'. McQueen (F-813) responde que esa variante no era la que defendía Penrose. Se podó una rama, no el árbol.
+- **Superradiancia UV en redes de triptófano de microtúbulos** —contradice→ **Decoherencia cuántica en el cerebro caliente y húmedo** (F-816, observacional) · **estado: alcance_distinto**
+  - Babcock et al. (2024) hallan efectos cuánticos colectivos persistentes en equilibrio térmico, lo que matiza el 'demasiado caliente y húmedo'; pero no muestran que sirvan para procesar información.
+  - *Resolución (2026-10-10):* Babcock et al. (F-816) miden efectos cuánticos colectivos a temperatura ambiente, pero no coherencia funcional que procese información ni duración relevante para la cognición. Matiza el 'demasiado caliente', no rebate el cálculo de tiempos de Tegmark.
+- **Efecto Zenón cuántico como vía de acción de la mente sobre el cerebro (Stapp)** —contradice→ **Decoherencia cuántica en el cerebro caliente y húmedo** (F-826, teorica) · **estado: mecanismo_en_disputa**
+  - Schwartz, Stapp y Beauregard (2005, Phil Trans R Soc B 360:1309) afirman que el efecto Zenón cuántico no es suprimido por la decoherencia; críticos lo disputan.
+  - *Resolución (2026-10-10):* Schwartz, Stapp y Beauregard (F-826) sostienen que el efecto Zenón no es suprimido por la decoherencia; los críticos lo disputan. Es una propuesta teórica sin prueba experimental.
+- **Colaboración adversarial preregistrada entre teorías rivales** —contradice→ **Teoría de la información integrada (IIT)** (F-830, observacional) · **estado: refutacion_directa**
+  - Cogitate (2025, Nature 642:133; n=256): no se halló la sincronización sostenida en corteza posterior que IIT predecía.
+  - *Resolución (2026-10-10):* Prueba adversarial preregistrada (F-830, n=256): no apareció la sincronización posterior sostenida que IIT predecía. Desafía una predicción central, no toda la teoría.
+- **Colaboración adversarial preregistrada entre teorías rivales** —contradice→ **Teoría del espacio de trabajo neuronal global (GNWT)** (F-830, observacional) · **estado: refutacion_directa**
+  - Cogitate (2025): hubo contenido consciente en corteza prefrontal, pero no la 'ignición' al final del estímulo que predecía GNWT.
+  - *Resolución (2026-10-10):* Misma prueba (F-830): no apareció la 'ignición' prefrontal al final del estímulo que predecía GNWT. Ninguna de las dos teorías salió indemne.
+- **Criterio de cientificidad / comprobabilidad de una teoría de la conciencia** —contradice→ **Teoría de la información integrada (IIT)** (F-831, teorica) · **estado: mecanismo_en_disputa**
+  - IIT-Concerned (2025, Nat Neurosci 28:689), heredero de la carta de 124 firmantes de 2023, sostiene que las tesis centrales de IIT son incomprobables incluso en principio.
+  - *Resolución (2026-10-10):* Disputa sobre criterios de cientificidad: los 124 firmantes (F-831) dicen que IIT es incomprobable; sus defensores responden que hay predicciones testeables (Cogitate, F-830). No es una refutación empírica.
+- **Decoherencia cuántica en el cerebro caliente y húmedo** —refuta→ **Hipótesis del cerebro como computadora cuántica** (F-834, teorica) · **estado: refutacion_directa**
+  - Koch y Hepp (2006, Nature 440:611) consideran la decoherencia cerebral demasiado fuerte para computación cuántica; solo la detección de pocos fotones en el ojo usa cuántica de forma clara.
+  - *Resolución (2026-10-10):* Ensayo de Koch y Hepp (F-834), sin datos propios, convergente con Tegmark (F-808) y Litt et al. (F-835): la decoherencia impide computación cuántica en funciones superiores. Peso de argumento, no de experimento.
+- **Crítica de la 'minimización del misterio': unir dos misterios no explica ninguno** —contradice→ **Teorías cuánticas de la conciencia (Orch-OR, Stapp, Beck-Eccles, Fisher)** (F-836, teorica) · **estado: alcance_distinto**
+  - Chalmers (1996) llama 'Ley de Minimización del Misterio' a unir conciencia y cuántica porque ambas son misteriosas; para él, un mecanismo cuántico no cierra el problema difícil.
+  - *Resolución (2026-10-10):* Chalmers (F-836) critica que lo cuántico no explica la experiencia (problema difícil); no niega que pueda haber física cuántica en el cerebro. Él mismo explora después un colapso causado por la conciencia (F-837).
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -454,13 +504,13 @@
 | El Niño / ENSO (fase cálida) | concepto | 21 | 18 |
 | Niño Costero peruano (1997-98, 2017, 2023) | concepto | 15 | 13 |
 | Generative UI (interfaces generadas por LLM) | intervencion | 11 | 10 |
+| Conciencia (experiencia subjetiva) | constructo | 11 | 10 |
 | Herramientas de IA generativa | intervencion | 10 | 6 |
 | Muestras sintéticas con LLM (personas simuladas que responden encuestas) | intervencion | 10 | 9 |
+| Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff) | concepto | 10 | 8 |
 | Modelos ChatGPT-3.5 y 4 | intervencion | 9 | 6 |
 | Seguro paramétrico (pago según índice observable) | intervencion | 9 | 9 |
 | Obediencia a órdenes dañinas (llegar a la descarga máxima) | resultado | 9 | 7 |
-| Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores | concepto | 9 | 6 |
-| Diseño efectivo → mejor desempeño de la firma | afirmacion | 7 | 5 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -816,6 +866,10 @@
 | 2026-10-07 | F-791, F-792, F-793, F-794, F-798, F-799, F-800 | 9 | – | El Niño · Evidencia de demanda y diseño de protección (seguro índice, acción anticipatoria) (renumerado desde F-529..F-588 al integrar la rama de N6) |
 | 2026-10-07 | F-779, F-788, F-789, F-790, F-795, F-796, F-797, F-801 | 9 | – | El Niño · Benchmarks, competencia, reaseguro y salud estacional (renumerado desde F-529..F-588 al integrar la rama de N6) |
 | 2026-10-07 | F-773, F-763, F-782, F-787, F-789, F-798, F-764, F-797 | 10 | – | El Niño · tensiones entre fuentes que en la integración previa se registraron por error como discrepancias ledger↔fuente (el ledger reporta fielmente cada fuente y ya las advierte). |
+| 2026-10-10 | F-802, F-803, F-804, F-805, F-806, F-807, F-808, F-809, F-810 | 14 | – | Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo). |
+| 2026-10-10 | F-811, F-812, F-813, F-814, F-815, F-816, F-817, F-818, F-819 | 12 | – | Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo). |
+| 2026-10-10 | F-820, F-821, F-822, F-823, F-824, F-825, F-826, F-827, F-828 | 9 | – | Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo). |
+| 2026-10-10 | F-829, F-830, F-831, F-832, F-833, F-834, F-835, F-836, F-837 | 13 | – | Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo). |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

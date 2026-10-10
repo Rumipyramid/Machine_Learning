@@ -1,0 +1,183 @@
+{
+ "fecha": "2026-10-10",
+ "f_ids": [
+  "F-811",
+  "F-812",
+  "F-813",
+  "F-814",
+  "F-815",
+  "F-816",
+  "F-817",
+  "F-818",
+  "F-819"
+ ],
+ "entidades": [
+  {
+   "id": "radiacion_espontanea_colapso",
+   "nombre": "Radiación espontánea predicha por modelos de colapso",
+   "tipo": "metrica"
+  },
+  {
+   "id": "anestesia_general",
+   "nombre": "Anestesia general (inhalatoria)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "epotilona_b",
+   "nombre": "Epotilona B (fármaco estabilizador de microtúbulos)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "latencia_perdida_conciencia",
+   "nombre": "Latencia hasta la pérdida del reflejo de enderezamiento (proxy de inconsciencia en roedores)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "transporte_energia_microtubulos",
+   "nombre": "Migración de energía electrónica (excitones) en microtúbulos",
+   "tipo": "resultado"
+  },
+  {
+   "id": "superradiancia_triptofano",
+   "nombre": "Superradiancia UV en redes de triptófano de microtúbulos",
+   "tipo": "resultado"
+  },
+  {
+   "id": "efecto_cuantico_biologico",
+   "nombre": "Efecto cuántico colectivo en estructuras biológicas a temperatura ambiente",
+   "tipo": "concepto"
+  },
+  {
+   "id": "isotopos_xenon",
+   "nombre": "Isótopos de xenón con y sin espín nuclear",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "espin_nuclear",
+   "nombre": "Espín nuclear como variable biológica",
+   "tipo": "concepto"
+  },
+  {
+   "id": "potencia_anestesica",
+   "nombre": "Potencia anestésica (DE50)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "entrelazamiento_cerebral_rm",
+   "nombre": "Entrelazamiento de espines de protones en el cerebro medido con RM",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "radiacion_espontanea_colapso",
+   "p": "refuta",
+   "o": "reduccion_objetiva_penrose",
+   "f": "F-811",
+   "apoyo": "Donadi et al. (2020, Nature Physics) no detectan la radiación predicha bajo el Gran Sasso: descartan la versión sin parámetros del colapso Diósi-Penrose; cota ~3 órdenes mayor que las previas.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "radiacion_espontanea_colapso",
+   "p": "contradice",
+   "o": "orch_or",
+   "f": "F-812",
+   "apoyo": "Derakhshani et al. (2022, PLR 42:8-14): con el límite del Gran Sasso, Orch-OR basada en el colapso gravitacional más simple es 'altamente improbable' en todos los escenarios revisados.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "radiacion_espontanea_colapso",
+   "p": "tiene_limite",
+   "o": "orch_or",
+   "f": "F-813",
+   "apoyo": "McQueen (2023): el Gran Sasso refuta el modelo de Diósi sin parámetros, pero no la fórmula de Penrose del tiempo de vida de la superposición; Orch-OR es un marco inacabado con muchas versiones.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "epotilona_b",
+   "p": "aumenta",
+   "o": "latencia_perdida_conciencia",
+   "f": "F-814",
+   "apoyo": "Khan et al. (2024, eNeuro): epotilona B retrasa 69 s en promedio la pérdida del reflejo de enderezamiento bajo isoflurano 4% (d=1,9) frente a vehículo.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "microtubulos_neuronales",
+   "p": "media",
+   "o": "anestesia_general",
+   "f": "F-814",
+   "apoyo": "Khan et al. (2024) interpretan que la unión del isoflurano a microtúbulos contribuye a la inconsciencia; es evidencia de un blanco molecular, no de un mecanismo cuántico.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "anestesia_general",
+   "p": "reduce",
+   "o": "transporte_energia_microtubulos",
+   "f": "F-815",
+   "apoyo": "Kalra et al. (2023, ACS Cent Sci 9:352): etomidato e isoflurano reducen la difusión de excitones en microtúbulos, que alcanza ~6,6 nm, más que lo previsto por Förster.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "superradiancia_triptofano",
+   "p": "es_tipo_de",
+   "o": "efecto_cuantico_biologico",
+   "f": "F-816",
+   "apoyo": "Babcock et al. (2024, JPCB 128:4035) predicen y confirman superradiancia por >10^5 dipolos de triptófano en microtúbulos, con mayor rendimiento cuántico de fluorescencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "superradiancia_triptofano",
+   "p": "contradice",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-816",
+   "apoyo": "Babcock et al. (2024) hallan efectos cuánticos colectivos persistentes en equilibrio térmico, lo que matiza el 'demasiado caliente y húmedo'; pero no muestran que sirvan para procesar información.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "transporte_energia_microtubulos",
+   "p": "respalda",
+   "o": "orch_or",
+   "f": "F-817",
+   "apoyo": "Wiest (2025, Neurosci Conscious niaf011) sostiene que la convergencia de anestesia-microtúbulos y efectos cuánticos a temperatura ambiente 'apoya experimentalmente' un sustrato cuántico; es una síntesis interpretativa del propio grupo.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "espin_nuclear",
+   "p": "reduce",
+   "o": "potencia_anestesica",
+   "f": "F-818",
+   "apoyo": "Li et al. (2018, Anesthesiology 129:271): xenón con espín nuclear necesita DE50 de 99-105% vs 70-72% sin espín para la pérdida del reflejo de enderezamiento en ratones.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "isotopos_xenon",
+   "p": "asocia_con",
+   "o": "anestesia_general",
+   "f": "F-818",
+   "apoyo": "Li et al. (2018): la polarizabilidad (3,60 Å, igual en los 4 isótopos) no explica la diferencia; la explicación cuántica de la conciencia sigue siendo especulativa y el hallazgo, único.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "entrelazamiento_cerebral_rm",
+   "p": "asocia_con",
+   "o": "conciencia",
+   "f": "F-819",
+   "apoyo": "Kerskens y López Pérez (2022, J Phys Commun 6:105001) reportan una señal de coherencia de cuanto cero evocada por el latido en 40 voluntarios, solo despiertos, y la interpretan como entrelazamiento.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
+}

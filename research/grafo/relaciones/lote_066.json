@@ -1,0 +1,197 @@
+{
+ "fecha": "2026-10-10",
+ "f_ids": [
+  "F-829",
+  "F-830",
+  "F-831",
+  "F-832",
+  "F-833",
+  "F-834",
+  "F-835",
+  "F-836",
+  "F-837"
+ ],
+ "entidades": [
+  {
+   "id": "efecto_orden_preguntas",
+   "nombre": "Efecto del orden de las preguntas en encuestas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "igualdad_qq",
+   "nombre": "Igualdad QQ (predicción sin parámetros de la probabilidad cuántica)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "teoria_informacion_integrada",
+   "nombre": "Teoría de la información integrada (IIT)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "teoria_espacio_trabajo_global",
+   "nombre": "Teoría del espacio de trabajo neuronal global (GNWT)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "colaboracion_adversarial",
+   "nombre": "Colaboración adversarial preregistrada entre teorías rivales",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "criterio_cientificidad",
+   "nombre": "Criterio de cientificidad / comprobabilidad de una teoría de la conciencia",
+   "tipo": "concepto"
+  },
+  {
+   "id": "apoyo_investigadores_teorias",
+   "nombre": "Proporción de investigadores que considera prometedora una teoría de la conciencia",
+   "tipo": "metrica"
+  },
+  {
+   "id": "procesamiento_predictivo",
+   "nombre": "Teorías de procesamiento predictivo de la conciencia",
+   "tipo": "concepto"
+  },
+  {
+   "id": "teorias_cuanticas_conciencia",
+   "nombre": "Teorías cuánticas de la conciencia (Orch-OR, Stapp, Beck-Eccles, Fisher)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "argumento_minimizacion_misterio",
+   "nombre": "Crítica de la 'minimización del misterio': unir dos misterios no explica ninguno",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "problema_dificil_conciencia",
+   "nombre": "Problema difícil de la conciencia (por qué hay experiencia subjetiva)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "colapso_por_conciencia",
+   "nombre": "Hipótesis de que la conciencia (medida como información integrada) causa el colapso de la función de onda",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "igualdad_qq",
+   "p": "mide",
+   "o": "efecto_orden_preguntas",
+   "f": "F-829",
+   "apoyo": "Wang et al. (2014, PNAS) verifican la igualdad QQ en decenas de pares de preguntas de Pew y Gallup (73 según revisión posterior): el efecto de orden sigue la estructura de la probabilidad cuántica.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "cognicion_cuantica_probabilistica",
+   "p": "respalda",
+   "o": "efecto_orden_preguntas",
+   "f": "F-829",
+   "apoyo": "Wang et al. (2014) usan la probabilidad cuántica para predecir un patrón de encuestas; no afirman que las neuronas sean cuánticas.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "colaboracion_adversarial",
+   "p": "contradice",
+   "o": "teoria_informacion_integrada",
+   "f": "F-830",
+   "apoyo": "Cogitate (2025, Nature 642:133; n=256): no se halló la sincronización sostenida en corteza posterior que IIT predecía.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "colaboracion_adversarial",
+   "p": "contradice",
+   "o": "teoria_espacio_trabajo_global",
+   "f": "F-830",
+   "apoyo": "Cogitate (2025): hubo contenido consciente en corteza prefrontal, pero no la 'ignición' al final del estímulo que predecía GNWT.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "criterio_cientificidad",
+   "p": "contradice",
+   "o": "teoria_informacion_integrada",
+   "f": "F-831",
+   "apoyo": "IIT-Concerned (2025, Nat Neurosci 28:689), heredero de la carta de 124 firmantes de 2023, sostiene que las tesis centrales de IIT son incomprobables incluso en principio.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "apoyo_investigadores_teorias",
+   "p": "mide",
+   "o": "procesamiento_predictivo",
+   "f": "F-832",
+   "apoyo": "Francken et al. (2022, Neurosci Conscious niac011; N=166): procesamiento predictivo, 61,3% 'prometedora'; GNWT 55%, orden superior 51%, IIT 43% (estas tres vía cita posterior).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "apoyo_investigadores_teorias",
+   "p": "mide",
+   "o": "teoria_informacion_integrada",
+   "f": "F-832",
+   "apoyo": "Francken et al. (2022): IIT considerada prometedora por ~43% de 166 investigadores (cifra vía cita posterior); las teorías cuánticas no aparecen entre las destacadas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teorias_cuanticas_conciencia",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-833",
+   "apoyo": "Seth y Bayne (2022, Nat Rev Neurosci 23:439) revisan 4 familias de teorías (orden superior, GWT, predictivo, IIT); las cuánticas quedan fuera del núcleo del campo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "decoherencia_cuantica_cerebro",
+   "p": "refuta",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-834",
+   "apoyo": "Koch y Hepp (2006, Nature 440:611) consideran la decoherencia cerebral demasiado fuerte para computación cuántica; solo la detección de pocos fotones en el ojo usa cuántica de forma clara.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "computacion_cuantica_cerebral",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-835",
+   "apoyo": "Litt et al. (2006, Cogn Sci 30:593) dan tres razones: escalas temporales incompatibles, obstáculos físicos en tejido orgánico y falta de evidencia psicológica de que el pensamiento requiera cuántica.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "argumento_minimizacion_misterio",
+   "p": "contradice",
+   "o": "teorias_cuanticas_conciencia",
+   "f": "F-836",
+   "apoyo": "Chalmers (1996) llama 'Ley de Minimización del Misterio' a unir conciencia y cuántica porque ambas son misteriosas; para él, un mecanismo cuántico no cierra el problema difícil.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "problema_dificil_conciencia",
+   "p": "tiene_limite",
+   "o": "teorias_cuanticas_conciencia",
+   "f": "F-836",
+   "apoyo": "Chalmers (1996): cualquier mecanismo físico, clásico o cuántico, deja abierta la pregunta de por qué hay experiencia; la cuántica no da ventaja explicativa por sí sola.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "colapso_por_conciencia",
+   "p": "parte_de",
+   "o": "teoria_informacion_integrada",
+   "f": "F-837",
+   "apoyo": "Chalmers y McQueen (2022, OUP pp. 11-63) unen IIT con colapso continuo; versiones simples descartadas por efecto Zenón, complejas aún compatibles y comprobables con computadoras cuánticas.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
+}

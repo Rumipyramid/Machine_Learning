@@ -1035,6 +1035,74 @@
    "triples": 10,
    "sin_aporte": [],
    "notas": "El Niño · tensiones entre fuentes que en la integración previa se registraron por error como discrepancias ledger↔fuente (el ledger reporta fielmente cada fuente y ya las advierte)."
+  },
+  {
+   "fecha": "2026-10-10",
+   "f_ids": [
+    "F-802",
+    "F-803",
+    "F-804",
+    "F-805",
+    "F-806",
+    "F-807",
+    "F-808",
+    "F-809",
+    "F-810"
+   ],
+   "triples": 14,
+   "sin_aporte": [],
+   "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
+  },
+  {
+   "fecha": "2026-10-10",
+   "f_ids": [
+    "F-811",
+    "F-812",
+    "F-813",
+    "F-814",
+    "F-815",
+    "F-816",
+    "F-817",
+    "F-818",
+    "F-819"
+   ],
+   "triples": 12,
+   "sin_aporte": [],
+   "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
+  },
+  {
+   "fecha": "2026-10-10",
+   "f_ids": [
+    "F-820",
+    "F-821",
+    "F-822",
+    "F-823",
+    "F-824",
+    "F-825",
+    "F-826",
+    "F-827",
+    "F-828"
+   ],
+   "triples": 9,
+   "sin_aporte": [],
+   "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
+  },
+  {
+   "fecha": "2026-10-10",
+   "f_ids": [
+    "F-829",
+    "F-830",
+    "F-831",
+    "F-832",
+    "F-833",
+    "F-834",
+    "F-835",
+    "F-836",
+    "F-837"
+   ],
+   "triples": 13,
+   "sin_aporte": [],
+   "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
   }
  ],
  "discrepancias": [
@@ -2400,6 +2468,72 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-07",
    "nota": "El paramétrico ENSO de La Positiva de 2010 (F-775, F-798) refuta que el seguro de café de 2026 sea el primero del país."
+  },
+  {
+   "triple": "T-807",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-10",
+   "nota": "Cálculo, no medición: Tegmark (F-808) da 10^-13 a 10^-20 s frente a 10^-3 s de la dinámica neural. La réplica (F-809) lo sube a 10^-5–10^-4 s, aún insuficiente. Refuta la computación cuántica cerebral sostenida en el modelo de Tegmark; no excluye efectos cuánticos breves."
+  },
+  {
+   "triple": "T-810",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-10",
+   "nota": "Hagan et al. (F-809), escrita por defensores de Orch-OR, propone blindaje por agua ordenada y capa de Debye; es un mecanismo propuesto, no medido. Sigue la disputa sobre qué sistema físico modelar."
+  },
+  {
+   "triple": "T-812",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-10",
+   "nota": "Experimento con datos (F-811, Gran Sasso): sin radiación espontánea, se descarta la versión sin parámetros del colapso Diósi-Penrose. Según McQueen (F-813), deja en pie otras variantes."
+  },
+  {
+   "triple": "T-813",
+   "estado": "matizada",
+   "fecha": "2026-10-10",
+   "nota": "Derakhshani et al. (F-812) aplican el límite a Orch-OR con el colapso más simple: 'altamente improbable'. McQueen (F-813) responde que esa variante no era la que defendía Penrose. Se podó una rama, no el árbol."
+  },
+  {
+   "triple": "T-819",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-10",
+   "nota": "Babcock et al. (F-816) miden efectos cuánticos colectivos a temperatura ambiente, pero no coherencia funcional que procese información ni duración relevante para la cognición. Matiza el 'demasiado caliente', no rebate el cálculo de tiempos de Tegmark."
+  },
+  {
+   "triple": "T-830",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-10",
+   "nota": "Schwartz, Stapp y Beauregard (F-826) sostienen que el efecto Zenón no es suprimido por la decoherencia; los críticos lo disputan. Es una propuesta teórica sin prueba experimental."
+  },
+  {
+   "triple": "T-835",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-10",
+   "nota": "Prueba adversarial preregistrada (F-830, n=256): no apareció la sincronización posterior sostenida que IIT predecía. Desafía una predicción central, no toda la teoría."
+  },
+  {
+   "triple": "T-836",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-10",
+   "nota": "Misma prueba (F-830): no apareció la 'ignición' prefrontal al final del estímulo que predecía GNWT. Ninguna de las dos teorías salió indemne."
+  },
+  {
+   "triple": "T-837",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-10",
+   "nota": "Disputa sobre criterios de cientificidad: los 124 firmantes (F-831) dicen que IIT es incomprobable; sus defensores responden que hay predicciones testeables (Cogitate, F-830). No es una refutación empírica."
+  },
+  {
+   "triple": "T-841",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-10",
+   "nota": "Ensayo de Koch y Hepp (F-834), sin datos propios, convergente con Tegmark (F-808) y Litt et al. (F-835): la decoherencia impide computación cuántica en funciones superiores. Peso de argumento, no de experimento."
+  },
+  {
+   "triple": "T-843",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-10",
+   "nota": "Chalmers (F-836) critica que lo cuántico no explica la experiencia (problema difícil); no niega que pueda haber física cuántica en el cerebro. Él mismo explora después un colapso causado por la conciencia (F-837)."
   }
  ]
 }

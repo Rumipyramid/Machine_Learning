@@ -1,0 +1,131 @@
+{
+ "fecha": "2026-10-10",
+ "f_ids": [
+  "F-820",
+  "F-821",
+  "F-822",
+  "F-823",
+  "F-824",
+  "F-825",
+  "F-826",
+  "F-827",
+  "F-828"
+ ],
+ "entidades": [
+  {
+   "id": "qubits_espin_nuclear_posner",
+   "nombre": "Qubits de espín nuclear de fósforo en moléculas de Posner (hipótesis de Fisher)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "tiempo_vida_entrelazamiento",
+   "nombre": "Tiempo de vida del entrelazamiento de espines nucleares",
+   "tipo": "metrica"
+  },
+  {
+   "id": "isotopos_litio",
+   "nombre": "Isótopos de litio (6Li espín 1; 7Li espín 3/2)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tunel_cuantico_exocitosis",
+   "nombre": "Disparo de la exocitosis sináptica por efecto túnel cuántico (Beck-Eccles)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "efecto_zenon_cuantico_mente",
+   "nombre": "Efecto Zenón cuántico como vía de acción de la mente sobre el cerebro (Stapp)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "cognicion_cuantica_probabilistica",
+   "nombre": "Quantum cognition: modelos de probabilidad cuántica para juicios humanos (sin física cerebral)",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "entrelazamiento_cerebral_rm",
+   "p": "tiene_limite",
+   "o": "conciencia",
+   "f": "F-820",
+   "apoyo": "Warren (2023, J Phys Commun 7(3)) responde que Kerskens y López Pérez no dan evidencia de no-clasicidad: la señal refleja que el tejido es complejo y mal caracterizado por la RM.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "qubits_espin_nuclear_posner",
+   "p": "aplica_a",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-821",
+   "apoyo": "Fisher (2015, Annals of Physics 362:593) propone espines nucleares de fósforo protegidos en moléculas de Posner Ca9(PO4)6 como qubits cerebrales; es una hipótesis teórica comprobable.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "tiempo_vida_entrelazamiento",
+   "p": "tiene_limite",
+   "o": "qubits_espin_nuclear_posner",
+   "f": "F-822",
+   "apoyo": "Player y Hore (2018, J R Soc Interface 15:20180494) acotan el entrelazamiento entre moléculas de Posner a un máximo de ~37 min en condiciones idealizadas, probablemente mucho menos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "isotopos_litio",
+   "p": "modera",
+   "o": "qubits_espin_nuclear_posner",
+   "f": "F-823",
+   "apoyo": "Ettenberg et al. (2020, PBB): al 4.º ensayo, el 6Li redujo más y por más tiempo la hiperactividad por ketamina en ratas que el 7Li y el litio natural; compatible con, pero no prueba de, efectos de espín.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "isotopos_litio",
+   "p": "modera",
+   "o": "qubits_espin_nuclear_posner",
+   "f": "F-824",
+   "apoyo": "Deline et al. (2023, Front Physiol 14): 7Li elevó más la capacidad de calcio mitocondrial, pero 6Li retrasó más la transición de permeabilidad; efecto isotópico real, causa (masa o espín) abierta.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "tunel_cuantico_exocitosis",
+   "p": "aplica_a",
+   "o": "conciencia",
+   "f": "F-825",
+   "apoyo": "Beck y Eccles (1992, PNAS 89:11357) proponen que la intención consciente actúa sesgando un disparo cuántico por efecto túnel en la exocitosis; modelo teórico, sin medición.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "efecto_zenon_cuantico_mente",
+   "p": "contradice",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-826",
+   "apoyo": "Schwartz, Stapp y Beauregard (2005, Phil Trans R Soc B 360:1309) afirman que el efecto Zenón cuántico no es suprimido por la decoherencia; críticos lo disputan.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cognicion_cuantica_probabilistica",
+   "p": "tiene_limite",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-827",
+   "apoyo": "Busemeyer y Bruza (2012) aplican la probabilidad cuántica a juicios sin suponer un cerebro cuántico; su vínculo con la neurociencia queda abierto.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cognicion_cuantica_probabilistica",
+   "p": "aplica_a",
+   "o": "conciencia",
+   "f": "F-828",
+   "apoyo": "Pothos y Busemeyer (2013, BBS 36:255) proponen la probabilidad cuántica como herramienta de modelado cognitivo; es matemática del juicio, no una teoría de la conciencia ni del cerebro.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
+}

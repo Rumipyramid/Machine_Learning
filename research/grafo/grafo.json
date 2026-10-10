@@ -8,6 +8,13 @@
    "design": false
   },
   {
+   "id": "conciencia-cuantica",
+   "type": "node",
+   "lines": 352,
+   "cites": 72,
+   "design": false
+  },
+  {
    "id": "conducta-humano-ia",
    "type": "node",
    "lines": 142,
@@ -17,8 +24,8 @@
   {
    "id": "convergencia-psicologia-economia-ia",
    "type": "node",
-   "lines": 245,
-   "cites": 115,
+   "lines": 246,
+   "cites": 117,
    "design": false
   },
   {
@@ -38,8 +45,8 @@
   {
    "id": "fenomenos-psicologicos",
    "type": "node",
-   "lines": 547,
-   "cites": 106,
+   "lines": 548,
+   "cites": 107,
    "design": false
   },
   {
@@ -80,8 +87,8 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 354,
-   "cites": 53,
+   "lines": 355,
+   "cites": 57,
    "design": false
   },
   {
@@ -7362,6 +7369,672 @@
    "autor": "Pacífico Seguros",
    "anio": "s.f. (vigente 2026)",
    "huerfana": false
+  },
+  {
+   "id": "F-802",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Emperor's New Mind: Concerning Computers, Minds, and the Laws of Physics (Oxford University Press (libro))",
+   "autor": "Penrose, R.",
+   "anio": "1989",
+   "huerfana": false
+  },
+  {
+   "id": "F-803",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Shadows of the Mind: A Search for the Missing Science of Consciousness (libro (editorial no verificada en esta búsqueda))",
+   "autor": "Penrose, R.",
+   "anio": "1994",
+   "huerfana": false
+  },
+  {
+   "id": "F-804",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Minds, Machines, and Mathematics: A Review of Shadows of the Mind by Roger Penrose (Psyche, 2(9))",
+   "autor": "Chalmers, D. J.",
+   "anio": "1995",
+   "huerfana": false
+  },
+  {
+   "id": "F-805",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Gaps in Penrose's toilings (Journal of Consciousness Studies, 2(1):10-29)",
+   "autor": "Grush, R. & Churchland, P. S.",
+   "anio": "1995",
+   "huerfana": false
+  },
+  {
+   "id": "F-806",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Consciousness in the universe: A review of the 'Orch OR' theory (Physics of Life Reviews, 11(1):39-78)",
+   "autor": "Hameroff, S. & Penrose, R.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-807",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The revised Penrose-Hameroff orchestrated objective-reduction proposal for human consciousness is not scientifically justified (comentario) ",
+   "autor": "Reimers, J. R.; McKemmish, L. K.; McKenzie, R. H.; Mark, A. E. & Hush, N. S.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-808",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Importance of quantum decoherence in brain processes (Physical Review E, 61(4):4194-4206)",
+   "autor": "Tegmark, M.",
+   "anio": "2000",
+   "huerfana": false
+  },
+  {
+   "id": "F-809",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Quantum computation in brain microtubules: Decoherence and biological feasibility (Physical Review E, 65:061901)",
+   "autor": "Hagan, S.; Hameroff, S. R. & Tuszynski, J. A.",
+   "anio": "2002",
+   "huerfana": false
+  },
+  {
+   "id": "F-810",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Penrose-Hameroff orchestrated objective-reduction proposal for human consciousness is not biologically feasible (Physical Review E, 80:02191",
+   "autor": "Reimers, J. R.; McKemmish, L. K.; McKenzie, R. H.; Mark, A. E. & Hush, N. S.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-811",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Underground test of gravity-related wave function collapse (Nature Physics (en línea 7-sep-2020; volumen y páginas impresas no verificados))",
+   "autor": "Donadi, S.; Piscicchia, K.; Curceanu, C.; Diósi, L.; Laubenstein, M. & Bassi, A.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-812",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "At the crossroad of the search for spontaneous radiation and the Orch OR consciousness theory (Physics of Life Reviews, 42:8-14)",
+   "autor": "Derakhshani, M.; Diósi, L.; Laubenstein, M.; Piscicchia, K. & Curceanu, C.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-813",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Have underground radiation measurements refuted the Orch OR theory? (comentario invitado) (Physics of Life Reviews (en prensa según PhilArch",
+   "autor": "McQueen, K. J.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-814",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Microtubule-stabilizer epothilone B delays anesthetic-induced unconsciousness in rats (eNeuro, 11(8))",
+   "autor": "Khan, S.; Huang, Y.; Timuçin, D. et al. (autor senior: Wiest, M. C.)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-815",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Electronic energy migration in microtubules (ACS Central Science, 9(3):352-361)",
+   "autor": "Kalra, A. P.; Benny, A.; Travis, S. M.; Zizzi, E. A.; Morales-Sanchez, A.; Oblinsky, D. G.; Craddock, T. J. A.; Hameroff, S. R.; MacIver, M. B.; Tuszyński, J. A.; Petry, S.; Penrose, R.; Scholes, G. D.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-816",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Ultraviolet superradiance from mega-networks of tryptophan in biological architectures (Journal of Physical Chemistry B, 128:4035-4046)",
+   "autor": "Babcock, N. S.; Montes-Cabrera, G.; Oberhofer, K. E.; Chergui, M.; Celardo, G. L. & Kurian, P.",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-817",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "A quantum microtubule substrate of consciousness is experimentally supported and solves the binding and epiphenomenalism problems (Neuroscie",
+   "autor": "Wiest, M. C.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-818",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Nuclear spin attenuates the anesthetic potency of xenon isotopes in mice (Anesthesiology, 129(2):271-277)",
+   "autor": "Li, N. et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-819",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Experimental indications of non-classical brain functions (Journal of Physics Communications, 6:105001)",
+   "autor": "Kerskens, C. M. & López Pérez, D.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-820",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Comment on: 'Experimental indications of non-classical brain function' 2022 Journal of Physics Communications 6 105001 (Journal of Physics C",
+   "autor": "Warren, W. S.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-821",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Quantum cognition: The possibility of processing with nuclear spins in the brain (Annals of Physics, 362:593-602)",
+   "autor": "Fisher, M. P. A.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-822",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Posner qubits: spin dynamics of entangled Ca9(PO4)6 molecules and their role in neural processing (Journal of the Royal Society Interface, 1",
+   "autor": "Player, T. C. & Hore, P. J.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-823",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Differential effects of lithium isotopes in a ketamine-induced hyperactivity model of mania (Pharmacology, Biochemistry and Behavior (volume",
+   "autor": "Ettenberg, A. et al.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-824",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Lithium isotopes differentially modify mitochondrial amorphous calcium phosphate cluster size distribution and calcium capacity (Frontiers i",
+   "autor": "Deline, M. L. et al. (incluye a Fisher, M. P. A.; correspondencia: Fromme, T.)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-825",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Quantum aspects of brain activity and the role of consciousness (PNAS, 89(23):11357-11361)",
+   "autor": "Beck, F. & Eccles, J. C.",
+   "anio": "1992",
+   "huerfana": false
+  },
+  {
+   "id": "F-826",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Quantum physics in neuroscience and psychology: a neurophysical model of mind-brain interaction (Philosophical Transactions of the Royal Soc",
+   "autor": "Schwartz, J. M.; Stapp, H. P. & Beauregard, M.",
+   "anio": "2005",
+   "huerfana": false
+  },
+  {
+   "id": "F-827",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Quantum Models of Cognition and Decision (Cambridge University Press (libro))",
+   "autor": "Busemeyer, J. R. & Bruza, P. D.",
+   "anio": "2012",
+   "huerfana": false
+  },
+  {
+   "id": "F-828",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Can quantum probability provide a new direction for cognitive modeling? (Behavioral and Brain Sciences, 36(3):255-274)",
+   "autor": "Pothos, E. M. & Busemeyer, J. R.",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-829",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Context effects produced by question orders reveal quantum nature of human judgments (PNAS (volumen no verificado))",
+   "autor": "Wang, Z.; Solloway, T.; Shiffrin, R. M. & Busemeyer, J. R.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-830",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Adversarial testing of global neuronal workspace and integrated information theories of consciousness (Nature, 642:133-142)",
+   "autor": "Cogitate Consortium (Ferrante, O. et al.)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-831",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "What makes a theory of consciousness unscientific? (Nature Neuroscience, 28(4):689-693)",
+   "autor": "IIT-Concerned group (Klincewicz, M.; Cheng, T.; Schmitz, M.; Sebastián, M. Á.; Snyder, J. S. et al.)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-832",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "An academic survey on theoretical foundations, common assumptions and the current state of consciousness science (Neuroscience of Consciousn",
+   "autor": "Francken, J. C.; Beerendonk, L.; Molenaar, D.; Fahrenfort, J. J.; Kiverstein, J. D.; Seth, A. K. & van Gaal, S.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-833",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Theories of consciousness (Nature Reviews Neuroscience, 23(7):439-452)",
+   "autor": "Seth, A. K. & Bayne, T.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-834",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Quantum mechanics in the brain (Nature, 440(7084):611-612)",
+   "autor": "Koch, C. & Hepp, K.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-835",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Is the brain a quantum computer? (Cognitive Science, 30(3):593-603)",
+   "autor": "Litt, A.; Eliasmith, C.; Kroon, F. W.; Weinstein, S. & Thagard, P.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-836",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Conscious Mind: In Search of a Fundamental Theory (Oxford University Press (libro))",
+   "autor": "Chalmers, D. J.",
+   "anio": "1996",
+   "huerfana": false
+  },
+  {
+   "id": "F-837",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Consciousness and the collapse of the wave function (En Gao, S. (ed.), Consciousness and Quantum Mechanics, Oxford University Press, pp. 11-",
+   "autor": "Chalmers, D. J. & McQueen, K. J.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-838",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Wellesley team's new research on anesthesia unlocks important clues about the nature of consciousness (wellesley.edu (nota de prensa))",
+   "autor": "Wellesley College (oficina de prensa)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-839",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "(Reproducción de la nota de Wellesley sobre microtúbulos y anestesia, 05-09-2024) (sciencedaily.com)",
+   "autor": "ScienceDaily",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-840",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Study Supports Quantum Basis of Consciousness in the Brain (neurosciencenews.com)",
+   "autor": "Neuroscience News",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-841",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Your Consciousness Can Connect With the Whole Universe, Groundbreaking New Research Suggests (AOL / Popular Mechanics)",
+   "autor": "Popular Mechanics (sindicado en AOL)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-842",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "La Consciencia Podría ser un Efecto Cuántico de Nuestro Cerebro, según Estudio (nmas.com.mx)",
+   "autor": "N+ (Nmas, México)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-843",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Prof Mike Wiest's proposed link between quantum and consciousness (physicsforums.com)",
+   "autor": "Physics Forums (hilo de usuarios)",
+   "anio": "2024",
+   "huerfana": true
+  },
+  {
+   "id": "F-844",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Was Penrose Right? New Evidence For Quantum Effects In The Brain (PBS / YouTube)",
+   "autor": "PBS Space Time (PBS Digital Studios)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-845",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Quantum Consciousness and the Origin of Life (PBS / YouTube)",
+   "autor": "NOVA PBS / AZPM (anunciado por el Center for Consciousness Studies, U. Arizona)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-846",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "\"Can computers become conscious?\": My reply to Roger Penrose (Shtetl-Optimized (blog personal))",
+   "autor": "Scott Aaronson",
+   "anio": "2016",
+   "huerfana": true
+  },
+  {
+   "id": "F-847",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Consciousness theory slammed as 'pseudoscience' — sparking uproar (Nature (news))",
+   "autor": "Mariana Lenharo (Nature, sección de noticias)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-848",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Consciousness: why a leading theory has been branded 'pseudoscience' (The Conversation)",
+   "autor": "The Conversation (U. de Durham)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-849",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Rethinking Consciousness: When Science Puts Itself to the Test (aesthetics.mpg.de / idw-online)",
+   "autor": "Max Planck Institute for Empirical Aesthetics (nota de prensa)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-850",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Landmark study puts leading theories of consciousness to the test— neither comes out unscathed (birmingham.ac.uk)",
+   "autor": "University of Birmingham (nota de prensa)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-851",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "How does consciousness work? Duelling scientists tested two big theories but found no winner (Monash Lens / Singularity Hub)",
+   "autor": "The Conversation (Monash Lens) / Singularity Hub",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-852",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "How quantum physicists 'review' the 'Bleep' movie (csmonitor.com)",
+   "autor": "Christian Science Monitor",
+   "anio": "2004",
+   "huerfana": false
+  },
+  {
+   "id": "F-853",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "The 1998 Ig Nobel Prize Ceremony — Physics: Deepak Chopra (improbable.com)",
+   "autor": "Improbable Research (Ig Nobel)",
+   "anio": "1998",
+   "huerfana": false
+  },
+  {
+   "id": "F-854",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Dra. en física dice que terapia de 'sanación cuántica' del Minsal puede ser un fraude muy peligroso (biobiochile.cl)",
+   "autor": "BioBioChile",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-855",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Polémica por 'sanación cuántica': Minsal explica error en información (cnnchile.com)",
+   "autor": "CNN Chile",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-856",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "¿Qué es un salto cuántico y cómo hacerlo? La experiencia metafísica que te lleva a otras realidades (elimparcial.com)",
+   "autor": "El Imparcial (México)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-857",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "(Artículo sobre la tendencia #quantumjumping en TikTok) (ladn.eu)",
+   "autor": "L'ADN",
+   "anio": "s/f",
+   "huerfana": false
+  },
+  {
+   "id": "F-858",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Accelerating Research on Consciousness — Our Structured Adversarial Collaboration Projects (TWCF (página institucional))",
+   "autor": "Templeton World Charity Foundation (TWCF)",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-859",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Effects of Anesthetic Molecules on Quantum Vibrations in Microtubules – Experimental Testing of the Orch OR Theory of Consciousness (proyect",
+   "autor": "Templeton World Charity Foundation; dir. Jack Tuszynski (Univ. of Alberta)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-860",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Nota sobre la donación del Fetzer Institute para el programa de estudios de la conciencia de la UA (título exacto no visto) (Arizona Daily W",
+   "autor": "Arizona Daily Wildcat (prensa universitaria)",
+   "anio": "1998",
+   "huerfana": false
+  },
+  {
+   "id": "F-861",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Vancouver-based Quantum-AI Startup Nirvanic Consciousness Technologies Emerges From Stealth (The Quantum Insider)",
+   "autor": "The Quantum Insider",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-862",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Frequently Asked Questions (nirvanic.ai (web de la empresa))",
+   "autor": "Nirvanic Consciousness Technologies",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-863",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Cerca Magnetics: £3.8 Million Series A Raised To Advance OPM-MEG Brain Imaging Technology Toward Clinical Deployment (Pulse 2.0)",
+   "autor": "Pulse 2.0",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-864",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Cerca Magnetics — company profile (Caplight (base de datos de mercado privado))",
+   "autor": "Caplight",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-865",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "QuSpin — NIH success story (NIH SEED (organismo oficial))",
+   "autor": "National Institutes of Health (NIH SEED)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-866",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Wellcome Leap Announces $40 Million Quantum for Bio Program (The Quantum Insider)",
+   "autor": "The Quantum Insider",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-867",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "What the #$*! Do We Know!? (2004) — Box Office (The Numbers (base de datos de taquilla))",
+   "autor": "The Numbers (Nash Information Services)",
+   "anio": "2004",
+   "huerfana": false
+  },
+  {
+   "id": "F-868",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Reportaje sobre 'What the Bleep Do We Know!?' y sus directores (título exacto no visto) (Salon)",
+   "autor": "Salon",
+   "anio": "2004",
+   "huerfana": false
+  },
+  {
+   "id": "F-869",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Form 10-K FY2023 y Form 10-Q (trimestre a marzo 2023) (SEC EDGAR (CIK 1441082))",
+   "autor": "Healing Co Inc. (HLCO)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-870",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "The Healing Company Acquires Well-being Businesses of Deepak Chopra, Including Meditation App, Health Retreat (Athletech News)",
+   "autor": "Athletech News",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-871",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Quantum Wellness Botanical Institute, LLC (caso 172-3131) (FTC — Legal Library)",
+   "autor": "Federal Trade Commission (FTC)",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-872",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Warning Letter — Mandelay Kft (CMS 603799), 3 de febrero de 2020 (FDA — Warning Letters)",
+   "autor": "U.S. Food and Drug Administration (FDA), CDRH",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-873",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "ASA Ruling on GAC Group Ltd t/a Light Therapy Revolution (A19-565197) (ASA — Rulings)",
+   "autor": "Advertising Standards Authority (ASA, Reino Unido)",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-874",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Alerta sanitaria No. 006-2025 — Analizador de resonancia magnética cuántica (INVIMA — Alertas sanitarias de dispositivos médicos)",
+   "autor": "INVIMA (Colombia)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-875",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Body, Mind and Energy Healing — Global Strategic Business Report (GII (reventa de informes de mercado))",
+   "autor": "Global Industry Analysts / Market Glass, Inc. (vía reseller GII)",
+   "anio": "2025",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -7420,6 +8093,24 @@
    "recip": true
   },
   {
+   "s": "conciencia-cuantica",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "mecanismos-seguros-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
    "s": "conducta-humano-ia",
    "t": "behavioral-design-estado-disciplina",
    "k": "wikilink",
@@ -7464,6 +8155,12 @@
   {
    "s": "convergencia-psicologia-economia-ia",
    "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "conciencia-cuantica",
    "k": "wikilink",
    "recip": true
   },
@@ -7548,6 +8245,12 @@
   {
    "s": "fenomenos-psicologicos",
    "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "conciencia-cuantica",
    "k": "wikilink",
    "recip": true
   },
@@ -7728,6 +8431,12 @@
   {
    "s": "mecanismos-seguros-salud",
    "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "conciencia-cuantica",
    "k": "wikilink",
    "recip": true
   },
@@ -12270,6 +12979,401 @@
    "s": "fenomeno-el-nino-impacto-personas",
    "t": "F-801",
    "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-802",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-803",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-804",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-805",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-806",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-807",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-808",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-809",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-810",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-811",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-812",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-813",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-814",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-814",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-815",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-816",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-817",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-818",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-819",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-820",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-821",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-822",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-823",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-824",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-825",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-826",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-827",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-827",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-828",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-829",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-829",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-830",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-831",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-832",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-833",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-834",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-835",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-836",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-837",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-838",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-839",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-840",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-841",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-842",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-844",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-845",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-847",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-848",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-849",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-850",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-851",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-852",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-853",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-854",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-854",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-855",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-855",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-856",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-857",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-858",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-859",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-860",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-861",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-862",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-863",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-864",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-865",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-866",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-867",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-868",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-869",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-870",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-871",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-871",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-872",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-873",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-874",
+   "k": "cita"
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "F-874",
+   "k": "cita"
+  },
+  {
+   "s": "conciencia-cuantica",
+   "t": "F-875",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -12534,6 +13638,19 @@
      "?": 1,
      "C": 3,
      "D": 23
+    }
+   },
+   {
+    "fecha": "2026-10-10",
+    "nuevas": 74,
+    "acumuladas": 874,
+    "AB": 36,
+    "rigor": {
+     "C": 11,
+     "B": 24,
+     "A": 12,
+     "D": 25,
+     "E": 2
     }
    }
   ],
@@ -14525,6 +15642,83 @@
     "fuente": "git"
    },
    {
+    "fuentes": 528,
+    "rigor": {
+     "B": 96,
+     "A": 144,
+     "C": 123,
+     "D": 122,
+     "?": 14,
+     "E": 29
+    },
+    "nodes": 16,
+    "outputs": 4,
+    "wikilinks": 84,
+    "derivaciones": 11,
+    "fuentes_citadas_en_nodes": 423,
+    "diseno": {
+     "hyp": {
+      "abierta": 17,
+      "parcial": 13,
+      "refutada": 1,
+      "respaldada": 2,
+      "otra": 1
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 1948,
+     "cites": 259
+    },
+    "fecha": "2026-10-06",
+    "commit": "944e196",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-07",
+    "commit": "7d6f508",
+    "fuente": "git"
+   },
+   {
     "fuentes": 740,
     "rigor": {
      "B": 110,
@@ -14560,6 +15754,82 @@
     },
     "fecha": "2026-10-08",
     "commit": "686a858",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-09",
+    "commit": "de3c9ed",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-10",
+    "commit": "030de29",
     "fuente": "git"
    }
   ],

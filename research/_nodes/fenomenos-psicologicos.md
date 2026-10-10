@@ -1,7 +1,7 @@
 # Fenómenos psicológicos clásicos: qué sobrevive a la replicación
 
 > Documento de investigación **acumulativo** — capa transversal del segundo cerebro. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-04 · Última actualización: 2026-10-04 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-04 · Última actualización: 2026-10-10 · Versión: **v1.0**
 > Origen: pedido del usuario: *"busca fenómenos psicológicos como el registrado por Asch, el de Milgram o los estudios en percepción del tiempo, forma, color, cognición encarnada, etc. como una capa más de conocimiento"*.
 > Método: cuatro investigaciones en paralelo (registro empírico + teórico/crítico); cada fuente verificada contra su resumen o ficha oficial. Fuentes **F-647 a F-741** (nuevas) + F-220 a F-226 y F-545 (ya en el ledger).
 
@@ -544,3 +544,4 @@ Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita 
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — psicología del color y "leyes" de UX a confrontar con esta capa.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros]] — estado real de las barreras conductuales (aversión a la pérdida, sesgo del presente).
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — RF6 y PF6: sesgos como rangos.
+- [[conciencia-cuantica|Conciencia cuántica]] — caso aplicado de la regla RF1/RF2: un hallazgo de un solo laboratorio (F-814) amplificado por prensa como si estuviera establecido; mismo patrón que los efectos 🔴 de esta capa.

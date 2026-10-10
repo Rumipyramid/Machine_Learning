@@ -219,6 +219,11 @@
   "nombre": "Número ancla visible antes de juzgar un precio",
   "tipo": "intervencion"
  },
+ "anestesia_general": {
+  "id": "anestesia_general",
+  "nombre": "Anestesia general (inhalatoria)",
+  "tipo": "intervencion"
+ },
  "antecedentes_familiares": {
   "id": "antecedentes_familiares",
   "nombre": "Antecedentes familiares, habilidad cognitiva temprana y entorno del hogar",
@@ -238,6 +243,11 @@
   "id": "aplicaciones_empresariales",
   "nombre": "Aplicaciones de software empresarial",
   "tipo": "concepto"
+ },
+ "apoyo_investigadores_teorias": {
+  "id": "apoyo_investigadores_teorias",
+  "nombre": "Proporción de investigadores que considera prometedora una teoría de la conciencia",
+  "tipo": "metrica"
  },
  "apreciacion_algoritmica": {
   "id": "apreciacion_algoritmica",
@@ -263,6 +273,16 @@
   "id": "aprobacion_codigo_ia",
   "nombre": "Tasa de aprobación de pull requests de agentes de IA",
   "tipo": "resultado"
+ },
+ "argumento_godeliano_penrose": {
+  "id": "argumento_godeliano_penrose",
+  "nombre": "Argumento gödeliano de Lucas-Penrose (la comprensión humana no es algorítmica)",
+  "tipo": "afirmacion"
+ },
+ "argumento_minimizacion_misterio": {
+  "id": "argumento_minimizacion_misterio",
+  "nombre": "Crítica de la 'minimización del misterio': unir dos misterios no explica ninguno",
+  "tipo": "afirmacion"
  },
  "asistencia_ia_razonamiento": {
   "id": "asistencia_ia_razonamiento",
@@ -1274,6 +1294,11 @@
   "nombre": "Coeficiente de aversión a la pérdida (lambda)",
   "tipo": "metrica"
  },
+ "cognicion_cuantica_probabilistica": {
+  "id": "cognicion_cuantica_probabilistica",
+  "nombre": "Quantum cognition: modelos de probabilidad cuántica para juicios humanos (sin física cerebral)",
+  "tipo": "concepto"
+ },
  "cognicion_encarnada": {
   "id": "cognicion_encarnada",
   "nombre": "Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores",
@@ -1289,9 +1314,19 @@
   "nombre": "Cognitive forcing functions (fricción deliberada)",
   "tipo": "intervencion"
  },
+ "colaboracion_adversarial": {
+  "id": "colaboracion_adversarial",
+  "nombre": "Colaboración adversarial preregistrada entre teorías rivales",
+  "tipo": "intervencion"
+ },
  "colapso_modos_llm": {
   "id": "colapso_modos_llm",
   "nombre": "Colapso de modos en LLMs (mode collapse)",
+  "tipo": "concepto"
+ },
+ "colapso_por_conciencia": {
+  "id": "colapso_por_conciencia",
+  "nombre": "Hipótesis de que la conciencia (medida como información integrada) causa el colapso de la función de onda",
   "tipo": "concepto"
  },
  "colectivismo_cultural": {
@@ -1349,10 +1384,20 @@
   "nombre": "Compromiso cognitivo al leer sitios web (usuarios sin discapacidad)",
   "tipo": "resultado"
  },
+ "computacion_cuantica_cerebral": {
+  "id": "computacion_cuantica_cerebral",
+  "nombre": "Hipótesis del cerebro como computadora cuántica",
+  "tipo": "afirmacion"
+ },
  "concentracion_pbm": {
   "id": "concentracion_pbm",
   "nombre": "Concentración del mercado de PBM en EE.UU.",
   "tipo": "resultado"
+ },
+ "conciencia": {
+  "id": "conciencia",
+  "nombre": "Conciencia (experiencia subjetiva)",
+  "tipo": "constructo"
  },
  "conducta_cliente_financiero": {
   "id": "conducta_cliente_financiero",
@@ -1619,6 +1664,11 @@
   "nombre": "Creencias pesimistas sobre lo que se ganaría al cambiar",
   "tipo": "constructo"
  },
+ "criterio_cientificidad": {
+  "id": "criterio_cientificidad",
+  "nombre": "Criterio de cientificidad / comprobabilidad de una teoría de la conciencia",
+  "tipo": "concepto"
+ },
  "criticas_spread_pricing_pbm": {
   "id": "criticas_spread_pricing_pbm",
   "nombre": "Críticas de larga data al modelo de los PBM (spread pricing y rebates)",
@@ -1673,6 +1723,11 @@
   "id": "decision_compra_hogar",
   "nombre": "Decisión de compra en el hogar/pareja",
   "tipo": "concepto"
+ },
+ "decoherencia_cuantica_cerebro": {
+  "id": "decoherencia_cuantica_cerebro",
+  "nombre": "Decoherencia cuántica en el cerebro caliente y húmedo",
+  "tipo": "limitacion"
  },
  "default_nudge": {
   "id": "default_nudge",
@@ -1949,6 +2004,11 @@
   "nombre": "Cambio de conducta objetivo",
   "tipo": "resultado"
  },
+ "efecto_cuantico_biologico": {
+  "id": "efecto_cuantico_biologico",
+  "nombre": "Efecto cuántico colectivo en estructuras biológicas a temperatura ambiente",
+  "tipo": "concepto"
+ },
  "efecto_dotacion": {
   "id": "efecto_dotacion",
   "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
@@ -1969,10 +2029,20 @@
   "nombre": "Efecto de nudges a escala (~1,4 pp)",
   "tipo": "resultado"
  },
+ "efecto_orden_preguntas": {
+  "id": "efecto_orden_preguntas",
+  "nombre": "Efecto del orden de las preguntas en encuestas",
+  "tipo": "resultado"
+ },
  "efecto_stroop": {
   "id": "efecto_stroop",
   "nombre": "Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color)",
   "tipo": "resultado"
+ },
+ "efecto_zenon_cuantico_mente": {
+  "id": "efecto_zenon_cuantico_mente",
+  "nombre": "Efecto Zenón cuántico como vía de acción de la mente sobre el cerebro (Stapp)",
+  "tipo": "concepto"
  },
  "el_nino_enso": {
   "id": "el_nino_enso",
@@ -2049,6 +2119,16 @@
   "nombre": "ENSUSALUD 2014 (INEI): módulo de usuarios de farmacias y boticas (n=3.849)",
   "tipo": "estudio"
  },
+ "entrelazamiento_cerebral_rm": {
+  "id": "entrelazamiento_cerebral_rm",
+  "nombre": "Entrelazamiento de espines de protones en el cerebro medido con RM",
+  "tipo": "afirmacion"
+ },
+ "epotilona_b": {
+  "id": "epotilona_b",
+  "nombre": "Epotilona B (fármaco estabilizador de microtúbulos)",
+  "tipo": "intervencion"
+ },
  "errores_intuitivos_llm": {
   "id": "errores_intuitivos_llm",
   "nombre": "Errores intuitivos tipo 'sistema 1' en LLMs (CRT, ilusiones semánticas)",
@@ -2083,6 +2163,11 @@
   "id": "escrutinio_revision",
   "nombre": "Escrutinio activo en la revisión (comentarios en línea)",
   "tipo": "resultado"
+ },
+ "espin_nuclear": {
+  "id": "espin_nuclear",
+  "nombre": "Espín nuclear como variable biológica",
+  "tipo": "concepto"
  },
  "espiral_muerte_seleccion_adversa": {
   "id": "espiral_muerte_seleccion_adversa",
@@ -2564,6 +2649,11 @@
   "nombre": "IDEO se reinventa como formador en innovación más que vendedor de diseño",
   "tipo": "concepto"
  },
+ "igualdad_qq": {
+  "id": "igualdad_qq",
+  "nombre": "Igualdad QQ (predicción sin parámetros de la probabilidad cuántica)",
+  "tipo": "metrica"
+ },
  "ilusion_comprension": {
   "id": "ilusion_comprension",
   "nombre": "Ilusiones de comprensión (creer entender el mundo más de lo que se entiende)",
@@ -2819,6 +2909,16 @@
   "nombre": "Irracionalidad de los LLMs distinta de los sesgos humanos e inconsistente",
   "tipo": "resultado"
  },
+ "isotopos_litio": {
+  "id": "isotopos_litio",
+  "nombre": "Isótopos de litio (6Li espín 1; 7Li espín 3/2)",
+  "tipo": "intervencion"
+ },
+ "isotopos_xenon": {
+  "id": "isotopos_xenon",
+  "nombre": "Isótopos de xenón con y sin espín nuclear",
+  "tipo": "intervencion"
+ },
  "iyengar_lepper_2000": {
   "id": "iyengar_lepper_2000",
   "nombre": "Estudio de las mermeladas de Iyengar y Lepper (JPSP 2000)",
@@ -2898,6 +2998,11 @@
   "id": "latam_insurtech_journey",
   "nombre": "Estudio Latam Insurtech Journey (Digital Insurance LATAM, patrocinado por MAPFRE)",
   "tipo": "estudio"
+ },
+ "latencia_perdida_conciencia": {
+  "id": "latencia_perdida_conciencia",
+  "nombre": "Latencia hasta la pérdida del reflejo de enderezamiento (proxy de inconsciencia en roedores)",
+  "tipo": "metrica"
  },
  "legitimidad_autoridad": {
   "id": "legitimidad_autoridad",
@@ -3169,6 +3274,11 @@
   "nombre": "Microtargeting con LLM (mensajes personalizados)",
   "tipo": "intervencion"
  },
+ "microtubulos_neuronales": {
+  "id": "microtubulos_neuronales",
+  "nombre": "Microtúbulos neuronales (citoesqueleto de tubulina)",
+  "tipo": "concepto"
+ },
  "mide_tamano_no_efecto": {
   "id": "mide_tamano_no_efecto",
   "nombre": "Mide el tamaño del sector, no el efecto causal del diseño",
@@ -3414,6 +3524,11 @@
   "nombre": "Modelo de tarifa fija mensual por miembro de Optum Rx, desligado de precios de lista",
   "tipo": "intervencion"
  },
+ "orch_or": {
+  "id": "orch_or",
+  "nombre": "Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff)",
+  "tipo": "concepto"
+ },
  "orden_autoridad": {
   "id": "orden_autoridad",
   "nombre": "Órdenes de una figura de autoridad (experimentador) de continuar",
@@ -3624,6 +3739,11 @@
   "nombre": "Poses de poder (posturas expansivas breves)",
   "tipo": "intervencion"
  },
+ "potencia_anestesica": {
+  "id": "potencia_anestesica",
+  "nombre": "Potencia anestésica (DE50)",
+  "tipo": "metrica"
+ },
  "practica_espaciada": {
   "id": "practica_espaciada",
   "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
@@ -3774,6 +3894,16 @@
   "nombre": "Principios Gestalt de organización perceptual (proximidad, semejanza, continuidad, cierre, figura-fondo)",
   "tipo": "concepto"
  },
+ "problema_dificil_conciencia": {
+  "id": "problema_dificil_conciencia",
+  "nombre": "Problema difícil de la conciencia (por qué hay experiencia subjetiva)",
+  "tipo": "constructo"
+ },
+ "procesamiento_predictivo": {
+  "id": "procesamiento_predictivo",
+  "nombre": "Teorías de procesamiento predictivo de la conciencia",
+  "tipo": "concepto"
+ },
  "productividad_devs": {
   "id": "productividad_devs",
   "nombre": "Productividad de desarrolladores",
@@ -3854,10 +3984,20 @@
   "nombre": "Publicidad de precio engañosa",
   "tipo": "intervencion"
  },
+ "qubits_espin_nuclear_posner": {
+  "id": "qubits_espin_nuclear_posner",
+  "nombre": "Qubits de espín nuclear de fósforo en moléculas de Posner (hipótesis de Fisher)",
+  "tipo": "concepto"
+ },
  "racionalidad_economica": {
   "id": "racionalidad_economica",
   "nombre": "Racionalidad económica (consistencia con maximización de utilidad por preferencia revelada)",
   "tipo": "resultado"
+ },
+ "radiacion_espontanea_colapso": {
+  "id": "radiacion_espontanea_colapso",
+  "nombre": "Radiación espontánea predicha por modelos de colapso",
+  "tipo": "metrica"
  },
  "ragas": {
   "id": "ragas",
@@ -3968,6 +4108,11 @@
   "id": "reduccion_campos_checkout",
   "nombre": "Reducir los campos del formulario de checkout (~8 bastan)",
   "tipo": "intervencion"
+ },
+ "reduccion_objetiva_penrose": {
+  "id": "reduccion_objetiva_penrose",
+  "nombre": "Reducción objetiva: colapso de la función de onda inducido por la gravedad (Diósi-Penrose)",
+  "tipo": "concepto"
  },
  "registro_no_llamar_eeuu": {
   "id": "registro_no_llamar_eeuu",
@@ -4389,6 +4534,11 @@
   "nombre": "Subtipos de patentes de diseño e índice compuesto de diseño",
   "tipo": "metrica"
  },
+ "superradiancia_triptofano": {
+  "id": "superradiancia_triptofano",
+  "nombre": "Superradiancia UV en redes de triptófano de microtúbulos",
+  "tipo": "resultado"
+ },
  "supervivencia_cancer": {
   "id": "supervivencia_cancer",
   "nombre": "Supervivencia de pacientes con cáncer",
@@ -4509,6 +4659,16 @@
   "nombre": "Teoría de la innovación disruptiva",
   "tipo": "concepto"
  },
+ "teoria_espacio_trabajo_global": {
+  "id": "teoria_espacio_trabajo_global",
+  "nombre": "Teoría del espacio de trabajo neuronal global (GNWT)",
+  "tipo": "concepto"
+ },
+ "teoria_informacion_integrada": {
+  "id": "teoria_informacion_integrada",
+  "nombre": "Teoría de la información integrada (IIT)",
+  "tipo": "concepto"
+ },
  "teoria_mente_llm": {
   "id": "teoria_mente_llm",
   "nombre": "Desempeño de LLMs en tareas de teoría de la mente",
@@ -4524,10 +4684,20 @@
   "nombre": "Teoría de la reducción de la incertidumbre (Berger y Calabrese)",
   "tipo": "concepto"
  },
+ "teorias_cuanticas_conciencia": {
+  "id": "teorias_cuanticas_conciencia",
+  "nombre": "Teorías cuánticas de la conciencia (Orch-OR, Stapp, Beck-Eccles, Fisher)",
+  "tipo": "concepto"
+ },
  "tept": {
   "id": "tept",
   "nombre": "Estrés postraumático (TEPT)",
   "tipo": "resultado"
+ },
+ "tiempo_decoherencia": {
+  "id": "tiempo_decoherencia",
+  "nombre": "Tiempo de decoherencia de un estado cuántico neuronal",
+  "tipo": "metrica"
  },
  "tiempo_entrega": {
   "id": "tiempo_entrega",
@@ -4538,6 +4708,11 @@
   "id": "tiempo_espera_percibido",
   "nombre": "Tiempo de espera percibido por el cliente (frente al real)",
   "tipo": "resultado"
+ },
+ "tiempo_vida_entrelazamiento": {
+  "id": "tiempo_vida_entrelazamiento",
+  "nombre": "Tiempo de vida del entrelazamiento de espines nucleares",
+  "tipo": "metrica"
  },
  "tipo_recompensa": {
   "id": "tipo_recompensa",
@@ -4569,6 +4744,11 @@
   "nombre": "Transformación de puestos (aumento de tareas) más que reemplazo por IA",
   "tipo": "resultado"
  },
+ "transporte_energia_microtubulos": {
+  "id": "transporte_energia_microtubulos",
+  "nombre": "Migración de energía electrónica (excitones) en microtúbulos",
+  "tipo": "resultado"
+ },
  "triaje_enfermeria_mts": {
   "id": "triaje_enfermeria_mts",
   "nombre": "Triaje por enfermera con extensión del Manchester Triage System",
@@ -4578,6 +4758,11 @@
   "id": "triaje_erroneo",
   "nombre": "Casos mal triados por la línea de triaje (subtriaje)",
   "tipo": "limitacion"
+ },
+ "tunel_cuantico_exocitosis": {
+  "id": "tunel_cuantico_exocitosis",
+  "nombre": "Disparo de la exocitosis sináptica por efecto túnel cuántico (Beck-Eccles)",
+  "tipo": "concepto"
  },
  "ubi_telematica": {
   "id": "ubi_telematica",
@@ -4728,6 +4913,11 @@
   "id": "verificador_sintomas_electronico",
   "nombre": "Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo)",
   "tipo": "intervencion"
+ },
+ "vibraciones_microtubulos": {
+  "id": "vibraciones_microtubulos",
+  "nombre": "Vibraciones/resonancias de microtúbulos como origen de ritmos EEG",
+  "tipo": "afirmacion"
  },
  "violencia_pareja": {
   "id": "violencia_pareja",
