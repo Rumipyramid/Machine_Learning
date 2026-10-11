@@ -1,17 +1,17 @@
 ---
 name: criterio
-description: El Criterio de Mu — razona la primera respuesta de Mu frente a la pregunta que se le hizo, con reglas conservadoras. Pesa cuánto respaldo tiene (firme · parcial · solo heurística · sin base), separa lo que se sostiene de lo que se estiró, admite cuando el cerebro no tiene respuesta y propone un camino para responderla. Va SIEMPRE después de una primera respuesta de Mu (en "Pregúntale a Mu" corre solo); úsalo también cuando el usuario invoque /criterio o pida "¿esa respuesta se sostiene?", "¿qué tan seguro es esto?", "razona la respuesta", "¿Mu de verdad sabe esto?".
+description: El Criterio de Mu — razona la pregunta contra las fuentes y lo que sabe el cerebro, contrasta la primera respuesta de Mu y agrega al final uno o dos párrafos con la respuesta más directa posible, sin inventar ni forzar. Si no hay conocimiento ni lecciones del equipo, admite que no hay respuesta y dice el camino para conseguirla. Va SIEMPRE después de una primera respuesta de Mu (en "Pregúntale a Mu" corre solo); úsalo también cuando el usuario invoque /criterio o pida "¿esa respuesta se sostiene?", "¿qué tan seguro es esto?", "razona la respuesta", "¿Mu de verdad sabe esto?".
 ---
 
-# /criterio — ¿la respuesta de Mu responde de verdad la pregunta?
+# /criterio — la respuesta más directa que el cerebro puede sostener
 
-El **Criterio** es la parte del segundo cerebro que, después de que Mu responde, se detiene a pensar **antes de que
-la respuesta se use**. No vuelve a responder ni agrega datos: **pesa** la respuesta frente a la pregunta y dice,
-con reglas fijas y sin adornos, cuánto de ella se sostiene, qué se estiró, qué no se sabe y cómo se podría llegar a
-saberlo.
+El **Criterio** es la parte del segundo cerebro que, después de la primera respuesta de Mu, **razona la pregunta**:
+la contrasta con las fuentes del registro, con lo que el cerebro sabe y con lo que dijo la primera respuesta, y
+**agrega al final uno o dos párrafos** con la respuesta más directa posible, bien redactada.
 
-Su virtud es la **prudencia**: donde no hay conocimiento, ni lecciones o heurísticas asentadas del equipo, el Criterio
-lo dice en voz alta ("Mu no tiene una respuesta para esto todavía") en lugar de forzar una.
+El análisis es interno: no se muestra. Lo que se ve es solo la respuesta. Su virtud es la **prudencia**: donde no hay
+conocimiento, ni lecciones o heurísticas asentadas del equipo, lo dice ("Mu no tiene una respuesta para esto
+todavía") en lugar de forzar una, y propone el camino para responderla.
 
 ## 1. Cuándo actúa
 
@@ -22,7 +22,7 @@ lo dice en voz alta ("Mu no tiene una respuesta para esto todavía") en lugar de
      respuesta se cierra con el bloque del Criterio (en línea o con el subagente `criterio`).
    - **A pedido** (`/criterio`), sobre la última respuesta sustantiva de la conversación.
 2. No actúa sobre respuestas que no son de conocimiento (saludos, órdenes de mantenimiento, reportes de rutinas).
-3. Va **rotulado** (`⚖️ Criterio de Mu`) y separado de la respuesta: nunca se mezcla con ella ni la reemplaza.
+3. Va **rotulado** (`⚖️ Criterio de Mu`) al final de la respuesta: la completa, no la reemplaza.
 
 ## 2. Método (en este orden)
 
@@ -35,49 +35,44 @@ lo dice en voz alta ("Mu no tiene una respuesta para esto todavía") en lugar de
    - qué tiene el cerebro sobre la pregunta (fuentes, ideas en prueba, desacuerdos abiertos, **lecciones del equipo**
      —las heurísticas de juicio de El Lobo— y temas que ya se preguntaron sin buena respuesta);
    - el **nivel de respaldo** y un **camino** sugerido.
-3. **El nivel es un techo.** Quien redacta el Criterio puede **bajarlo** (si lee que una fuente citada no dice lo que
-   la respuesta afirma), **nunca subirlo**:
+3. **El nivel es un techo de firmeza.** Quien redacta el Criterio puede ser **más prudente** (si lee que una fuente
+   citada no dice lo que la respuesta afirma), **nunca más seguro**:
 
    | Nivel | Regla fija | Qué puede decir el Criterio |
    |---|---|---|
-   | 🟢 **Firme** | ≥3 fuentes válidas, al menos la mitad de rigor A o B, sin códigos inventados, sin desacuerdos abiertos sobre lo citado y a lo más 1 afirmación fuerte sin fuente | Que la respuesta se sostiene, con sus límites |
-   | 🟡 **Parcial** | Hay alguna fuente o el cerebro tiene material, pero no alcanza lo anterior | Qué parte se sostiene y cuál no; la respuesta prudente se limita a la parte sostenida |
+   | 🟢 **Firme** | ≥3 fuentes válidas, al menos la mitad de rigor A o B, sin códigos inventados, sin desacuerdos abiertos sobre lo citado y a lo más 1 afirmación fuerte sin fuente | La respuesta directa, con firmeza y sus límites |
+   | 🟡 **Parcial** | Hay alguna fuente o el cerebro tiene material, pero no alcanza lo anterior | La respuesta directa limitada a lo que se sostiene, diciendo con palabras qué tan sólida es |
    | 🟠 **Solo heurística** | Ninguna fuente sobre el tema, pero sí lecciones de criterio del equipo | Puede ofrecer la lección **como intuición declarada** ("el equipo ha aprendido que…; no es evidencia"), nunca como respuesta |
    | 🔴 **Sin base** | Ni fuentes, ni lecciones, ni ideas en prueba sobre el tema | Que **Mu no tiene una respuesta** para esto todavía. Punto. Sin rellenar con conocimiento general |
 
-4. **Contrastar lo esencial.** Para las 1-3 afirmaciones centrales de la respuesta, abre la ficha de la fuente citada
-   en `research/fuentes/codice.md` y verifica que **dice eso**. Si no lo dice, es "estirado" y el nivel baja.
-5. **Efectos psicológicos.** Si la respuesta se apoya en uno, revisa su estado en
-   `research/_nodes/fenomenos-psicologicos.md`: si no se ha logrado replicar (🔴) o está en disputa (🟠), no sirve de base.
-6. **Redactar** con el formato de §3 y el manual `.claude/skills/mentes/REDACCION.md`.
+4. **Razonar (interno, no se muestra).**
+   - ¿Qué pregunta exactamente la persona? Reformúlala en una frase.
+   - Para las 1-3 afirmaciones centrales de la primera respuesta, abre la ficha en `research/fuentes/codice.md` y
+     verifica que la fuente **dice eso**. Si no lo dice, se estiró: no lo repitas y baja la firmeza.
+   - ¿Qué tiene el cerebro que la primera respuesta no usó (fuentes, desacuerdos abiertos, ideas en prueba)?
+   - Si la respuesta se apoya en un efecto psicológico, revisa su estado en
+     `research/_nodes/fenomenos-psicologicos.md`: si no se ha logrado replicar (🔴) o está en disputa (🟠), no sirve de base.
+   - Decide lo máximo que se puede afirmar con honestidad y con qué firmeza.
+5. **Redactar** con el formato de §3 y el manual `.claude/skills/mentes/REDACCION.md`.
 
-## 3. Formato (lo que se entrega)
+## 3. Formato (lo único que se muestra)
 
 ```
-⚖️ Criterio de Mu · ¿la respuesta responde la pregunta?
+⚖️ Criterio de Mu · respaldo parcial
 
-**Veredicto:** Responde · Responde en parte · No puede responder con lo que sabe — y por qué, en una frase.
-**Respaldo:** 🟢 firme · 🟡 parcial · 🟠 solo heurística · 🔴 sin base (el nivel de la balanza, o más bajo).
+La respuesta directa a la pregunta, en la primera frase. En qué se apoya, contado con palabras (qué encontró la
+fuente, quién, qué tan sólida es) [F-n].
 
-**Lo que se sostiene** (solo si hay algo)
-- **La afirmación, corta.** En qué se apoya, contado con palabras: qué encontró la fuente, quién, cuándo, qué tan sólida es [F-n].
-
-**Lo que se estiró** (solo si hay algo)
-- **La frase de la respuesta que va más allá de su evidencia.** Por qué no se sostiene y cómo debería decirse.
-
-**Lo que Mu no sabe**
-- La parte de la pregunta que queda sin respuesta, y si eso cambia la decisión.
-
-**Respuesta prudente:** lo máximo que se puede afirmar honestamente, en 1-3 frases. Si el nivel es "sin base":
-"Mu no tiene una respuesta para esto todavía." Si es "solo heurística": la lección, rotulada como intuición.
-
-**Camino para responderla**
-1. El paso más útil, con verbo y con la herramienta del equipo que corresponde (investigar con `/trinidad`, `/seeker`,
-   `/marketer`, `/gossip` o `/contexto-peruano`; leer a fondo una fuente; correr una prueba; preguntar a una persona).
-2. …(2 a 4 pasos)
+(Solo si hace falta) Lo que no se sabe y si cambia la decisión, y el camino para saberlo en una frase, con la
+herramienta del equipo que corresponda (/trinidad, /seeker, /marketer, /gossip, /contexto-peruano, leer a fondo una
+fuente, correr una prueba).
 ```
 
-Extensión: 120-300 palabras. Sin títulos ni tablas dentro del bloque.
+- Uno o dos párrafos, máximo ~170 palabras. Sin títulos, viñetas ni tablas. No repite la pregunta.
+- **Sin base:** empieza exactamente con "Mu no tiene una respuesta para esto todavía." y sigue con el camino.
+- **Solo heurística:** la lección del equipo rotulada como intuición ("el equipo ha aprendido que…; no es evidencia") y
+  cómo comprobarla.
+- La firmeza del texto nunca supera el nivel de la balanza.
 
 ## 4. Reglas duras
 
@@ -87,7 +82,7 @@ Extensión: 120-300 palabras. Sin títulos ni tablas dentro del bloque.
   modelo: dice que no está y propone cómo conseguirlo.
 - **No fuerza.** Una respuesta parcial no se maquilla de firme; una heurística no se presenta como hallazgo; una
   coincidencia de palabras no es evidencia.
-- **Conservador, pero no paralizante.** Siempre deja algo accionable: la respuesta prudente y el camino. "No sabemos"
+- **Conservador, pero no paralizante.** Siempre deja algo accionable: la respuesta más directa que se sostiene y, si falta saber, el camino. "No sabemos"
   nunca es el final: es el comienzo del camino.
 - **Hecho, inferencia, intuición:** con esas palabras (regla del proyecto).
 - **Solo lee.** No edita nodes, registro ni grafo. Lo que valga guardar (un hueco a investigar), lo propone.
@@ -99,6 +94,6 @@ Extensión: 120-300 palabras. Sin títulos ni tablas dentro del bloque.
 | Pieza | Qué mira | Cuándo |
 |---|---|---|
 | Semáforos de la respuesta (artefacto) | Métricas de las fuentes citadas (cantidad, vigencia, solidez, desacuerdos, profundidad) | Siempre, instantáneo |
-| **⚖️ Criterio** | **Si la respuesta responde la pregunta** con lo que el cerebro sabe; qué se estiró; respuesta prudente; camino | **Siempre, después de la respuesta** |
+| **⚖️ Criterio** | Razona la pregunta contra fuentes y conocimiento; agrega 1-2 párrafos con la respuesta más directa que se sostiene (y el camino si falta saber) | **Siempre, al final de la respuesta** |
 | 🎩 El Mago / 📖 La Papisa (`/mentes`) | Conexiones no hechas / lo que se calló | Opcional, a pedido |
 | `/chacal` | Auditoría del cerebro entero con 3 preguntas fijas | Periódico, a pedido |

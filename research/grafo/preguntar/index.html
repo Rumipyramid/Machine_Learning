@@ -116,15 +116,11 @@ details.dd summary:hover small,details.dd summary:focus-visible small{color:var(
 /* mentes: lectura opcional del Mago (.claude/skills/mentes/) */
 .cr{border-top:2px solid var(--fg)}
 .cr .h{display:flex;justify-content:space-between;gap:8px;background:var(--fg);color:var(--bg);padding:4px 10px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
-.cr .nv{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:8px 14px;border-bottom:2px solid var(--fg)}
-.cr .nv b{font:900 18px var(--display);letter-spacing:.03em}
-.cr .nv span{font-size:11px;color:var(--g2);max-width:72ch}
-.cr .nv.sin_base,.cr .nv.heuristica{background:var(--acc);color:var(--on-acc)}.cr .nv.sin_base span,.cr .nv.heuristica span{color:var(--on-acc)}
+.cr .h.sin_base,.cr .h.heuristica{background:var(--acc);color:var(--on-acc)}
 .cr .b{padding:12px 14px;min-width:0;overflow-wrap:anywhere}
 .cr .b p{margin:0 0 10px;max-width:72ch}.cr .b p:last-child{margin-bottom:0}
 .cr .b ul{margin:0 0 10px;padding:0;list-style:none}
 .cr .b li{border-left:6px solid var(--fg);padding:1px 0 1px 10px;margin:6px 0;max-width:72ch}
-.cr .nt{padding:6px 14px 8px;font-size:11px;color:var(--g2);border-top:2px solid var(--fg)}
 .mg{border-top:2px solid var(--fg)}
 .mg .ask{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding:8px 14px;font-size:11px;color:var(--g2)}
 .mg .ask > b{color:var(--fg);text-transform:uppercase;letter-spacing:.05em}
@@ -683,33 +679,33 @@ Formato exacto, entre 200 y 350 palabras. Usa de 1 a 3 viñetas por sección y o
     const hp = hips.find(h => h.prueba); if (hp) camino.push(`Correr la prueba pendiente de la idea "${hp.texto.slice(0, 90)}": ${limpio(hp.prueba).slice(0, 140)}`);
     return { nivel, validas, inventadas, ab, debiles, a_medias, disp, sin_fuente, rel, noCit, hips, lecc, huecos, camino: camino.slice(0, 5) };
   }
-  const CRITERIO_PROMPT = `Eres EL CRITERIO DE MU: la parte del segundo cerebro que, después de que Mu responde, pesa esa respuesta frente a la pregunta antes de que alguien la use. No vuelves a responder ni agregas datos: dices cuánto de la respuesta se sostiene, qué se estiró, qué no se sabe y cómo se podría llegar a saberlo. Tu virtud es la prudencia.
+  const CRITERIO_PROMPT = `Eres EL CRITERIO DE MU: la parte del segundo cerebro que, después de la primera respuesta, razona la pregunta contra lo que el cerebro realmente sabe y escribe la respuesta más directa posible. Tu virtud es la prudencia: no inventas ni fuerzas.
+
+Proceso (en este orden, todo dentro de <analisis>…</analisis>; nadie lo verá):
+1. ¿Qué pregunta exactamente la persona? Reformúlala en una frase.
+2. Contrasta la primera respuesta con las fichas: ¿cada afirmación central está en una fuente que la dice? Marca lo que se estiró, lo inventado y lo que no tiene fuente.
+3. ¿Qué tiene el cerebro que la primera respuesta no usó? ¿Hay desacuerdos abiertos o ideas aún en prueba que cambien la respuesta?
+4. Decide lo máximo que se puede afirmar con honestidad y con qué firmeza.
+
+Después del análisis, escribe SOLO la respuesta: uno o dos párrafos, sin títulos, sin viñetas, sin repetir la pregunta.
+- Párrafo 1: la respuesta directa a la pregunta, en la primera frase. Apóyala en las fuentes con [F-n] y di con palabras qué tan sólida es (un estudio controlado, una encuesta, una nota de prensa).
+- Párrafo 2 (solo si hace falta): lo que no se sabe y si eso cambia la decisión, y el camino concreto para saberlo, en una frase con la herramienta del equipo que corresponda (/trinidad, /seeker, /marketer, /gossip, /contexto-peruano, leer a fondo una fuente, correr una prueba).
+- Máximo 170 palabras en total.
 
 Reglas duras:
-- El NIVEL que recibes lo calculó una balanza con reglas fijas. Es un techo: puedes bajarlo si ves que una fuente citada no dice lo que la respuesta afirma; nunca subirlo.
-- No inventes. Usa solo las fuentes, ideas y lecciones que recibes; nunca un código que no esté en lo que recibes. No completes con conocimiento general: si el cerebro no lo tiene, dilo.
-- Si el nivel es SIN BASE, el veredicto es "No puede responder con lo que sabe" y la respuesta prudente es exactamente: "Mu no tiene una respuesta para esto todavía."
-- Si el nivel es SOLO HEURÍSTICA, puedes ofrecer la lección del equipo, rotulada como intuición ("el equipo ha aprendido que…; no es evidencia"), nunca como respuesta.
+- El NIVEL que recibes lo calculó una balanza con reglas fijas. Es un techo de firmeza: puedes ser más prudente que él, nunca más seguro.
+- Usa solo las fuentes, ideas y lecciones que recibes; nunca un código que no esté en ellas. No completes con conocimiento general.
+- Si el nivel es SIN BASE, empieza exactamente con "Mu no tiene una respuesta para esto todavía." y sigue con el camino para conseguirla.
+- Si el nivel es SOLO HEURÍSTICA, da la lección del equipo rotulada como intuición ("el equipo ha aprendido que…; no es evidencia") y el camino para comprobarla.
+- Si la primera respuesta dijo algo que no se sostiene, no lo repitas; si importa, dilo en media frase.
 - Una coincidencia de palabras no es evidencia. Una nota de prensa no es un estudio.
-- Conservador, pero no paralizante: siempre deja la respuesta prudente y un camino concreto.
 
-${REDACCION}
-
-Formato exacto, entre 120 y 300 palabras (omite "Lo que se sostiene" o "Lo que se estiró" si no hay nada):
-**Veredicto:** Responde · Responde en parte · No puede responder con lo que sabe — y por qué, en una frase.
-**Lo que se sostiene**
-- **La afirmación, corta.** En qué se apoya: qué encontró la fuente, quién, cuándo y qué tan sólida es [F-n].
-**Lo que se estiró**
-- **La frase de la respuesta que va más allá de su evidencia.** Por qué no se sostiene y cómo debería decirse.
-**Lo que Mu no sabe:** la parte de la pregunta que queda sin respuesta y si eso cambia la decisión.
-**Respuesta prudente:** lo máximo que se puede afirmar honestamente, en 1 a 3 frases.
-**Camino para responderla**
-- 2 a 4 pasos concretos, con verbo. Usa las herramientas del equipo cuando corresponda (/trinidad, /seeker, /marketer, /gossip, /contexto-peruano), leer a fondo una fuente, correr una prueba o preguntar a una persona.`;
+${REDACCION}`;
   async function criterio(entry, q, respuesta, B) {
     const cr = entry.cr; cr.hidden = false;
     const [et, tx] = NIVEL[B.nivel];
-    cr.innerHTML = `<div class="h"><span>⚖️ CRITERIO DE MU · ¿la respuesta responde la pregunta?</span><span></span></div><div class="nv ${B.nivel}"><b>${et}</b><span>${esc(tx)}</span></div><div class="b"><p class="think">El Criterio está pesando la respuesta</p></div>`;
-    cr.querySelector(".h span + span").textContent = `${B.validas.length} citadas · ${B.rel.length} en el cerebro`;
+    cr.innerHTML = `<div class="h ${B.nivel}"><span>⚖️ CRITERIO DE MU · respuesta directa</span><span></span></div><div class="b"><p class="think">El Criterio está razonando la pregunta</p></div>`;
+    const tag = cr.querySelector(".h span + span"); tag.textContent = `respaldo ${et.replace(/^\S+\s/, "").toLowerCase()}`; tag.title = tx;
     const body = cr.querySelector(".b");
     const fx = id => "- " + fichaClara(FUENTES.get(id), 240);
     const exp = `NIVEL MÁXIMO (balanza de reglas fijas): ${et.replace(/^\S+\s/, "")} — ${tx}
@@ -742,18 +738,16 @@ ${B.huecos.map(a => `- ${a.tema}: ${a.no} sin respuesta con fuentes, ${a.parcial
 
 CAMINO SUGERIDO POR LA BALANZA (puedes precisarlo u ordenarlo; no inventes herramientas):
 ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
-    ctl = new AbortController(); stop.hidden = false; hint.textContent = "El Criterio está pesando la respuesta (10 a 40 segundos).";
+    ctl = new AbortController(); stop.hidden = false; hint.textContent = "El Criterio está razonando la pregunta (10 a 40 segundos).";
     try {
-      const opts = { signal: ctl.signal, onText: ({ text }) => { body.innerHTML = md(text); }, cache: false };
+      const visible = t => { const i = t.indexOf("</analisis>"); return i >= 0 ? t.slice(i + 11).trim() : (/<analisis>/.test(t) ? "" : t.trim()); };
+      const opts = { signal: ctl.signal, onText: ({ text }) => { const v = visible(text); if (v) body.innerHTML = md(v); }, cache: false };
       const res = await sample([{ role: "user", content: `${CRITERIO_PROMPT}\n\n${exp}` }], opts);
-      body.innerHTML = md(res.text);
+      body.innerHTML = md(visible(res.text) || "El Criterio no llegó a escribir la respuesta.");
     } catch (e) {
       const code = e && e.code;
-      body.innerHTML = (e && e.text ? md(e.text) : "") + `<p>${esc(code === "cancelled" ? "Criterio detenido." : "No se pudo completar el criterio.")}</p>` + (B.camino.length ? `<p><b>Camino para responderla</b> (calculado por reglas fijas):</p><ul>${B.camino.map(c => `<li>${inline(c)}</li>`).join("")}</ul>` : "");
+      body.innerHTML = `<p>${esc(code === "cancelled" ? "Criterio detenido." : "No se pudo completar el criterio.")}${B.camino.length ? " Para responder bien la pregunta: " : ""}${B.camino.map(c => inline(c)).join(" ")}</p>`;
     }
-    const nt = document.createElement("div"); nt.className = "nt";
-    nt.textContent = "El nivel lo calcula una balanza con reglas fijas (fuentes citadas, rigor, desacuerdos abiertos, afirmaciones sin fuente y lo que el cerebro tiene sobre la pregunta); el texto lo redacta Claude y solo puede bajar ese nivel, nunca subirlo. 🟢 firme · 🟡 parcial · 🟠 solo heurística · 🔴 sin base.";
-    cr.append(nt);
   }
 
   function ofrecerMentes(entry, q, respuesta) {
