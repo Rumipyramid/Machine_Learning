@@ -12,6 +12,10 @@ toma una respuesta que ya existe (de Mu, de una investigación, de una consulta 
 No es un oráculo: no hay tirada ni azar (eso es `/edipo2`). El arcano no se saca, se **elige**: es un estilo de
 pensamiento con oficio, reglas y una sombra que vigilar.
 
+Tampoco es el **Criterio** (`/criterio`, `.claude/skills/criterio/`): el Criterio no es una mente ni un arcano, va
+**siempre** después de cada respuesta de Mu y pesa con reglas fijas si la respuesta responde la pregunta. Las mentes
+son opcionales y releen desde un estilo; si el usuario pide una mente, el Criterio ya habrá corrido antes.
+
 ## 1. Regla de activación (la más importante)
 
 1. **Opcional y posterior.** Una mente solo actúa cuando ya hay una **primera respuesta** en la conversación y el

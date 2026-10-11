@@ -114,6 +114,17 @@ details.dd summary:hover small,details.dd summary:focus-visible small{color:var(
 .dec li{border-left:8px solid var(--fg);border-bottom:2px solid var(--fg);padding:8px 12px;overflow-wrap:anywhere}
 .dec li small{display:block;font-size:11px;color:var(--g2)}
 /* mentes: lectura opcional del Mago (.claude/skills/mentes/) */
+.cr{border-top:2px solid var(--fg)}
+.cr .h{display:flex;justify-content:space-between;gap:8px;background:var(--fg);color:var(--bg);padding:4px 10px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.cr .nv{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:8px 14px;border-bottom:2px solid var(--fg)}
+.cr .nv b{font:900 18px var(--display);letter-spacing:.03em}
+.cr .nv span{font-size:11px;color:var(--g2);max-width:72ch}
+.cr .nv.sin_base,.cr .nv.heuristica{background:var(--acc);color:var(--on-acc)}.cr .nv.sin_base span,.cr .nv.heuristica span{color:var(--on-acc)}
+.cr .b{padding:12px 14px;min-width:0;overflow-wrap:anywhere}
+.cr .b p{margin:0 0 10px;max-width:72ch}.cr .b p:last-child{margin-bottom:0}
+.cr .b ul{margin:0 0 10px;padding:0;list-style:none}
+.cr .b li{border-left:6px solid var(--fg);padding:1px 0 1px 10px;margin:6px 0;max-width:72ch}
+.cr .nt{padding:6px 14px 8px;font-size:11px;color:var(--g2);border-top:2px solid var(--fg)}
 .mg{border-top:2px solid var(--fg)}
 .mg .ask{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding:8px 14px;font-size:11px;color:var(--g2)}
 .mg .ask > b{color:var(--fg);text-transform:uppercase;letter-spacing:.05em}
@@ -289,10 +300,10 @@ Estado actual del cerebro (panel): ${estado}`;
 
   function newEntry(q) {
     const art = document.createElement("article");
-    art.innerHTML = `<div class="q"></div><div class="a"><div class="h"><span>RESPUESTA DE MU</span></div><div class="b"><p class="think">Buscando en el cerebro</p></div><div class="sem" hidden></div><div class="ev" hidden></div><div class="mg" hidden></div></div>`;
+    art.innerHTML = `<div class="q"></div><div class="a"><div class="h"><span>RESPUESTA DE MU</span></div><div class="b"><p class="think">Buscando en el cerebro</p></div><div class="sem" hidden></div><div class="cr" hidden></div><div class="ev" hidden></div><div class="mg" hidden></div></div>`;
     art.querySelector(".q").textContent = q;
     thread.prepend(art);
-    return { art, body: art.querySelector(".b"), ev: art.querySelector(".ev"), sem: art.querySelector(".sem"), mg: art.querySelector(".mg"), box: art.querySelector(".a") };
+    return { art, body: art.querySelector(".b"), ev: art.querySelector(".ev"), sem: art.querySelector(".sem"), cr: art.querySelector(".cr"), mg: art.querySelector(".mg"), box: art.querySelector(".a") };
   }
   function evidence(el, r, extra) {
     const docs = [...new Set(r.nodes.map(c => c.titulo))];
@@ -450,7 +461,7 @@ Estado actual del cerebro (panel): ${estado}`;
       al.append(b, ul); al.hidden = false;
     } else al.hidden = true;
   }
-  async function registrar(entry, q, text, r) {
+  async function registrar(entry, q, text, r, nivel) {
     if (!DB || !sample || !canWrite) return;
     const citedIds = [...new Set([...text.matchAll(/\bF-(\d{1,4})\b/g)].map(m => "F-" + m[1]).filter(id => FUENTES.has(id)))];
     const cited = citedIds.length;
@@ -482,11 +493,12 @@ Devuelve SOLO un objeto JSON con estas claves:
     const tema = String(cls?.tema || tema_id.replace(/_/g, " ")).slice(0, 80);
     let cubierto = ["si", "parcial", "no"].includes(cls?.cubierto) ? cls.cubierto : "parcial";
     if (cited === 0) cubierto = "no"; // regla fija: sin fuentes citadas no hay cobertura
+    if (nivel === "sin_base" || nivel === "heuristica") cubierto = "no"; // el Criterio no encontró base en el cerebro
     const now = new Date().toISOString();
     try {
       const uid = USER ? await USER.id() : null;
       const node = String(cls?.node || "").slice(0, 80);
-      const cref = await DB.collection("consultas").add({ q: q.slice(0, 300), tema_id, tema, cubierto, node, fuentes_citadas: cited, at: now, quien: uid || null });
+      const cref = await DB.collection("consultas").add({ q: q.slice(0, 300), tema_id, tema, cubierto, node, fuentes_citadas: cited, criterio: nivel || null, at: now, quien: uid || null });
       feedback(entry, cref.id, { tema_id, node, fuentes: citedIds.slice(0, 40), quien: uid || null });
       const ref = DB.collection("temas").doc(tema_id);
       const snap = await ref.get();
@@ -615,6 +627,135 @@ Formato exacto, entre 200 y 350 palabras. Usa de 1 a 3 viñetas por sección y o
     },
   };
 
+  // ---------- criterio: razona la primera respuesta frente a la pregunta (ficha: .claude/skills/criterio/SKILL.md) ----------
+  // Misma balanza que research/grafo/criterio.py: el nivel es un techo que el texto puede bajar, nunca subir.
+  const VACIAS = new Set("para por con sin una uno unos unas los las del que como cual cuando donde este esta estos estas ese esa eso hay muy mas pero porque sobre entre desde hasta tiene tienen son fue han hoy todo toda todos todas cada sus nos les the and for with from that this".split(" "));
+  const CORTAS = new Set(["ia", "ai", "ux", "ubi", "sbs", "pbi", "llm", "nse"]);
+  const raices = t => new Set(norm(String(t)).split(/[^a-z0-9ñ]+/).filter(w => (w.length > 3 && !VACIAS.has(w)) || CORTAS.has(w)).map(w => w.slice(0, 6)));
+  function puntaje(claves, ...textos) {
+    if (!claves.size) return 0;
+    const r = raices(textos.join(" ")), hall = [...claves].filter(k => r.has(k)).length;
+    if (hall < Math.min(2, claves.size) || hall < claves.size / 2) return 0;
+    const r0 = raices(textos[0]); return hall + 0.5 * [...claves].filter(k => r0.has(k)).length;
+  }
+  const GENERICAS = new Set("mejor mejores peor peores bueno buena buenos buenas malo mala mayor menor forma formas manera maneras hacer hago puede pueden podemos debe deben debo deberia quiero saber cosa cosas algo cual cuales".split(" ").map(w => w.slice(0, 6)));
+  const NIVEL = {
+    firme: ["🟢 FIRME", "Se apoya en 3 o más fuentes del registro, al menos la mitad estudios revisados o datos oficiales, sin desacuerdos abiertos ni códigos inventados."],
+    parcial: ["🟡 PARCIAL", "Hay respaldo, pero incompleto: pocas fuentes, fuentes débiles, desacuerdos abiertos o la respuesta no usó lo que el cerebro tiene."],
+    heuristica: ["🟠 SOLO HEURÍSTICA", "El cerebro no tiene fuentes sobre esto; solo lecciones de criterio del equipo. Sirven como intuición, no como respuesta."],
+    sin_base: ["🔴 SIN BASE", "El cerebro no tiene fuentes, lecciones ni ideas en prueba sobre esto. Lo honesto es decir que no hay respuesta."],
+  };
+  const ABS = /\b(siempre|nunca|todos|todas|ninguno|ninguna|demuestra|demostrado|probado|comprobado|garantiza|sin duda|causa|provoca|elimina|definitivamente)\b/i;
+  const PISTAS = [[/mercado|empresa|startup|ingreso|venta|precio|inversi|rentab|ronda|competidor|negocio/i, "/marketer", "resultados de negocio publicados"],
+    [/redes|opina|percep|viral|tiktok|reputaci|qué se dice|rumor/i, "/gossip", "qué se dice en redes y prensa"],
+    [/per[uú]|peruan|inei|sbs|bcrp|apeseg|lima|lime[ñn]|cu[aá]nt[oa]s|porcentaje|cifra/i, "/contexto-peruano", "el dato oficial peruano"]];
+  function balanza(q, respuesta) {
+    const citadas = [...new Set([...respuesta.matchAll(/\bF-\d{1,4}\b/g)].map(m => m[0]))];
+    const validas = citadas.filter(id => FUENTES.has(id)), inventadas = citadas.filter(id => !FUENTES.has(id));
+    const F = id => FUENTES.get(id), ab = validas.filter(id => "AB".includes(F(id).rig)), debiles = validas.filter(id => "DE".includes(F(id).rig));
+    const a_medias = validas.filter(id => !F(id).deep), vs = new Set(validas);
+    const disp = TENS.filter(t => t.abierta && vs.has(t.f));
+    const sin_fuente = respuesta.split(/(?<=[.!?])\s+|\n+/).map(o => o.trim().replace(/^[-•*]\s*/, "")).filter(o => o.length > 25 && !/^lo que mu no sabe/i.test(o) && !/F-\d/.test(o) && (/\d/.test(o) || ABS.test(o))).slice(0, 6);
+    const claves = raices(q);
+    const rel = [...FUENTES.values()].map(f => [puntaje(claves, f.titulo, f.resumen), f]).filter(([p]) => p > 0).sort((a, b) => b[0] - a[0] || "ABCDE".indexOf(a[1].rig) - "ABCDE".indexOf(b[1].rig)).map(([, f]) => f);
+    const noCit = rel.filter(f => !vs.has(f.id)), noCitAB = noCit.filter(f => "AB".includes(f.rig));
+    const hips = (CORPUS.hipotesis || []).filter(h => ESTADO_H[h.estado] && puntaje(claves, h.texto, h.detalle) > 0).slice(0, 4);
+    const clavesTema = new Set([...claves].filter(k => !GENERICAS.has(k)));  // "mejor", "forma"… no bastan para tocar una lección
+    const lecc = ((CORPUS.mago || {}).intuiciones || []).filter(i => puntaje(clavesTema, i.titulo, i.texto) > 0).slice(0, 4);
+    const huecos = dbState === "ok" ? agregados().filter(a => a.no + a.parcial > 0 && [...raices(a.tema)].some(k => claves.has(k))).slice(0, 3) : [];
+    let nivel;
+    if (!validas.length && !rel.length && !lecc.length) nivel = "sin_base";
+    else if (!validas.length && !rel.length) nivel = "heuristica";
+    else if (validas.length >= 3 && ab.length >= Math.ceil(validas.length / 2) && !disp.length && !inventadas.length && sin_fuente.length <= 1) nivel = "firme";
+    else nivel = "parcial";
+    const camino = [];
+    if (inventadas.length) camino.push(`Corregir la respuesta: cita ${inventadas.join(", ")}, ${inventadas.length === 1 ? "que no existe" : "que no existen"} en el registro de fuentes.`);
+    if (nivel === "sin_base" || nivel === "heuristica") {
+      const extra = PISTAS.filter(([re]) => re.test(q)).map(([, h, para]) => `${h} (${para})`);
+      camino.push(`Investigar el tema como conocimiento nuevo con /trinidad (evidencia académica, social y de negocio a la vez)${extra.length ? "; o, si basta una arista, " + extra.join(" o ") : "; si solo hace falta la evidencia académica, /seeker"}.`);
+      camino.push("Si la pregunta se repite sin respuesta, el protocolo de Mu la marcará sola para investigarla.");
+    }
+    if (noCit.length && nivel !== "sin_base") camino.push(`Usar lo que el cerebro ya tiene y la respuesta no citó: ${(noCitAB.length ? noCitAB : noCit).slice(0, 3).map(f => f.id).join(", ")}.`);
+    if (sin_fuente.length) camino.push(`Respaldar o retirar ${sin_fuente.length} afirmación(es) con cifras o palabras absolutas que no citan fuente.`);
+    if (validas.length && debiles.length > validas.length / 2) camino.push(`Buscar la fuente primaria detrás de ${debiles.slice(0, 3).join(", ")}: hoy son notas de prensa u opiniones.`);
+    if (a_medias.length) camino.push(`Leer a fondo ${a_medias.slice(0, 3).join(", ")}: solo se leyó su resumen.`);
+    if (disp[0]) camino.push(`Resolver el desacuerdo abierto de ${disp[0].f} antes de afirmar en esa dirección.`);
+    const hp = hips.find(h => h.prueba); if (hp) camino.push(`Correr la prueba pendiente de la idea "${hp.texto.slice(0, 90)}": ${limpio(hp.prueba).slice(0, 140)}`);
+    return { nivel, validas, inventadas, ab, debiles, a_medias, disp, sin_fuente, rel, noCit, hips, lecc, huecos, camino: camino.slice(0, 5) };
+  }
+  const CRITERIO_PROMPT = `Eres EL CRITERIO DE MU: la parte del segundo cerebro que, después de que Mu responde, pesa esa respuesta frente a la pregunta antes de que alguien la use. No vuelves a responder ni agregas datos: dices cuánto de la respuesta se sostiene, qué se estiró, qué no se sabe y cómo se podría llegar a saberlo. Tu virtud es la prudencia.
+
+Reglas duras:
+- El NIVEL que recibes lo calculó una balanza con reglas fijas. Es un techo: puedes bajarlo si ves que una fuente citada no dice lo que la respuesta afirma; nunca subirlo.
+- No inventes. Usa solo las fuentes, ideas y lecciones que recibes; nunca un código que no esté en lo que recibes. No completes con conocimiento general: si el cerebro no lo tiene, dilo.
+- Si el nivel es SIN BASE, el veredicto es "No puede responder con lo que sabe" y la respuesta prudente es exactamente: "Mu no tiene una respuesta para esto todavía."
+- Si el nivel es SOLO HEURÍSTICA, puedes ofrecer la lección del equipo, rotulada como intuición ("el equipo ha aprendido que…; no es evidencia"), nunca como respuesta.
+- Una coincidencia de palabras no es evidencia. Una nota de prensa no es un estudio.
+- Conservador, pero no paralizante: siempre deja la respuesta prudente y un camino concreto.
+
+${REDACCION}
+
+Formato exacto, entre 120 y 300 palabras (omite "Lo que se sostiene" o "Lo que se estiró" si no hay nada):
+**Veredicto:** Responde · Responde en parte · No puede responder con lo que sabe — y por qué, en una frase.
+**Lo que se sostiene**
+- **La afirmación, corta.** En qué se apoya: qué encontró la fuente, quién, cuándo y qué tan sólida es [F-n].
+**Lo que se estiró**
+- **La frase de la respuesta que va más allá de su evidencia.** Por qué no se sostiene y cómo debería decirse.
+**Lo que Mu no sabe:** la parte de la pregunta que queda sin respuesta y si eso cambia la decisión.
+**Respuesta prudente:** lo máximo que se puede afirmar honestamente, en 1 a 3 frases.
+**Camino para responderla**
+- 2 a 4 pasos concretos, con verbo. Usa las herramientas del equipo cuando corresponda (/trinidad, /seeker, /marketer, /gossip, /contexto-peruano), leer a fondo una fuente, correr una prueba o preguntar a una persona.`;
+  async function criterio(entry, q, respuesta, B) {
+    const cr = entry.cr; cr.hidden = false;
+    const [et, tx] = NIVEL[B.nivel];
+    cr.innerHTML = `<div class="h"><span>⚖️ CRITERIO DE MU · ¿la respuesta responde la pregunta?</span><span></span></div><div class="nv ${B.nivel}"><b>${et}</b><span>${esc(tx)}</span></div><div class="b"><p class="think">El Criterio está pesando la respuesta</p></div>`;
+    cr.querySelector(".h span + span").textContent = `${B.validas.length} citadas · ${B.rel.length} en el cerebro`;
+    const body = cr.querySelector(".b");
+    const fx = id => "- " + fichaClara(FUENTES.get(id), 240);
+    const exp = `NIVEL MÁXIMO (balanza de reglas fijas): ${et.replace(/^\S+\s/, "")} — ${tx}
+
+PREGUNTA: ${q}
+
+RESPUESTA QUE DIO MU:
+${respuesta.slice(0, 4000)}
+
+FUENTES QUE CITÓ LA RESPUESTA:
+${B.validas.map(fx).join("\n") || "(ninguna)"}${B.inventadas.length ? `\nCÓDIGOS CITADOS QUE NO EXISTEN EN EL REGISTRO: ${B.inventadas.join(", ")}` : ""}
+
+FRASES CON CIFRAS O PALABRAS ABSOLUTAS SIN FUENTE AL LADO:
+${B.sin_fuente.map(o => "- " + o).join("\n") || "(ninguna)"}
+
+DESACUERDOS ABIERTOS SOBRE LO CITADO:
+${B.disp.map(t => `- Según [${t.f}], "${t.s}" ${VERBO[t.p] || t.p} "${t.o}". ${t.apoyo}`).join("\n") || "(ninguno)"}
+
+LO QUE EL CEREBRO TIENE SOBRE LA PREGUNTA Y LA RESPUESTA NO CITÓ:
+${B.noCit.slice(0, 5).map(f => fx(f.id)).join("\n") || "(nada)"}
+
+IDEAS QUE EL EQUIPO TODAVÍA ESTÁ PROBANDO:
+${B.hips.map(h => `- ${h.texto.replace(/\(F-[^)]*\)/g, "").slice(0, 220)} (estado: ${ESTADO_H[h.estado]})`).join("\n") || "(ninguna)"}
+
+LECCIONES DE CRITERIO DEL EQUIPO (heurísticas aprendidas de casos anteriores; no son evidencia):
+${B.lecc.map(i => `- ${i.titulo}. ${i.texto.slice(0, 260)}`).join("\n") || "(ninguna)"}
+
+TEMAS QUE YA SE PREGUNTARON A MU SIN BUENA RESPUESTA:
+${B.huecos.map(a => `- ${a.tema}: ${a.no} sin respuesta con fuentes, ${a.parcial} parciales`).join("\n") || "(ninguno)"}
+
+CAMINO SUGERIDO POR LA BALANZA (puedes precisarlo u ordenarlo; no inventes herramientas):
+${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
+    ctl = new AbortController(); stop.hidden = false; hint.textContent = "El Criterio está pesando la respuesta (10 a 40 segundos).";
+    try {
+      const opts = { signal: ctl.signal, onText: ({ text }) => { body.innerHTML = md(text); }, cache: false };
+      const res = await sample([{ role: "user", content: `${CRITERIO_PROMPT}\n\n${exp}` }], opts);
+      body.innerHTML = md(res.text);
+    } catch (e) {
+      const code = e && e.code;
+      body.innerHTML = (e && e.text ? md(e.text) : "") + `<p>${esc(code === "cancelled" ? "Criterio detenido." : "No se pudo completar el criterio.")}</p>` + (B.camino.length ? `<p><b>Camino para responderla</b> (calculado por reglas fijas):</p><ul>${B.camino.map(c => `<li>${inline(c)}</li>`).join("")}</ul>` : "");
+    }
+    const nt = document.createElement("div"); nt.className = "nt";
+    nt.textContent = "El nivel lo calcula una balanza con reglas fijas (fuentes citadas, rigor, desacuerdos abiertos, afirmaciones sin fuente y lo que el cerebro tiene sobre la pregunta); el texto lo redacta Claude y solo puede bajar ese nivel, nunca subirlo. 🟢 firme · 🟡 parcial · 🟠 solo heurística · 🔴 sin base.";
+    cr.append(nt);
+  }
+
   function ofrecerMentes(entry, q, respuesta) {
     if (!CORPUS.mago || !sample) return;
     const mg = entry.mg; mg.hidden = false;
@@ -674,10 +815,12 @@ Formato exacto, entre 200 y 350 palabras. Usa de 1 a 3 viñetas por sección y o
       const res = await sample(input, opts);
       entry.body.innerHTML = md(res.text);
       renderSem(entry.sem, res.text);
-      ofrecerMentes(entry, q, res.text);
       if (res.truncated) entry.body.insertAdjacentHTML("beforeend", "<p><i>La respuesta quedó cortada. Pide algo más acotado.</i></p>");
       turns.push({ role: "user", content: `PREGUNTA: ${q}`, q }, { role: "assistant", content: res.text.slice(0, 4000) });
-      registrar(entry, q, res.text, r);
+      const B = balanza(q, res.text);
+      registrar(entry, q, res.text, r, B.nivel);
+      await criterio(entry, q, res.text, B);
+      ofrecerMentes(entry, q, res.text);
     } catch (e) {
       const code = e && e.code;
       if (code === "cancelled") { entry.body.innerHTML = e.text ? md(e.text) + "<p><i>Detenida.</i></p>" : "<p><i>Detenida.</i></p>"; }

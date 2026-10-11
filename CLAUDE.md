@@ -48,6 +48,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/chacal/` · `research/grafo/chacal.py` · `research/garaje/` | Skill `/chacal`: **auditor** que le hace 3 preguntas a Mu (diseño · conducta humano-IA · seguros), mide la evidencia detrás de cada respuesta con semáforos deterministas (`chacal_rubrica.json`) y deja apuntes en el **garaje** (`research/garaje/`: auditorías, `bitacora.jsonl`, `INDICE.md`) | Solo escribe en `garaje/`; no edita nodes/ledger; fuera del alcance de `alma.md` |
 | `.claude/skills/mu/` · `research/grafo/mu.py` → `mu.html` | Skill `/mu`: panel **brutalista** (HTML autocontenido, SVG sin JS) con indicadores y gráficos de salud, madurez, riqueza, evolución y peso por node | `python research/grafo/mu.py`; titulares = cifras crudas de `METRICAS.md`; no edita nodes/ledger. 🎨 **Identidad de marca de Mu** (2026-10-03): `.claude/skills/mu/IDENTIDAD.md` + `mu-base.css` — **toda pieza que se pida de Mu usa ese estilo** (blanco/negro + naranja de alerta, Impact + mono, esquinas rectas, reglas de 8px). Guía de uso: `research/grafo/mu_guia.html`. 💬 **Pregúntale a Mu** (artefacto privado https://claude.ai/artifact/3564MJATLFeuP7soFwpPSm): `research/grafo/preguntar/index.html` + `build_corpus.py` (regenerar `mu-corpus.json` y republicar cuando cambien nodes o ledger). Capacidades `sample`, `db`, `user`: lleva el **backlog de temas**, el protocolo de temas sin cobertura y el **instrumento de impacto** "¿Te sirvió?" (ver secciones abajo) |
+| `.claude/skills/criterio/` · `.claude/agents/criterio.md` · `research/grafo/criterio.py` | Skill `/criterio`: el **Criterio de Mu** — razona la primera respuesta de Mu frente a la pregunta. Una balanza con reglas fijas (`criterio.py`) da el nivel de respaldo (🟢 firme · 🟡 parcial · 🟠 solo heurística · 🔴 sin base), detecta códigos F-n inventados y afirmaciones con cifras o palabras absolutas sin fuente, y propone un **camino para responder** (qué herramienta del equipo usar) | **Siempre**, después de cada respuesta de Mu (a diferencia de las mentes). El nivel es un **techo**: el texto puede bajarlo, nunca subirlo. Sin base → "Mu no tiene una respuesta para esto todavía". En "Pregúntale a Mu" corre solo (bloque ⚖️ CRITERIO) y guarda `criterio` en la consulta |
 | `.claude/skills/mentes/` · `.claude/agents/{mago,papisa}.md` · `research/grafo/{mago,papisa}.py` | Skill `/mentes`: **mentes arquetípicas** (subagentes con el estilo de un arcano mayor del tarot) que releen una respuesta ya dada. Activas: **El Mago** (conexiones ocultas → hecho del ledger o intuición declarada; caza el truco; cierra con un primer gesto) y **La Papisa** (lo que la respuesta calló: sabido y no dicho, sabido a medias, no sabido; cierra con la pregunta que no se hizo) | **Opcional y posterior:** solo tras una primera respuesta y a pedido del usuario; nunca por defecto ni ofrecida proactivamente. `mago.py` pone la mesa (puentes, entidades puente, tensiones, cadenas inferidas); `papisa.py` abre el libro y el velo (fuentes no citadas, hipótesis vivas, disputas, lecturas a medias, backlog). Solo stdlib; solo leen. En "Pregúntale a Mu", fila opcional **Otras miradas** (Mago y Papisa) bajo cada respuesta. Redacción: `REDACCION.md` |
 | `.claude/skills/grafo/` | Skill `/grafo`: regenera y explica `research/grafo/ESTADO.md` y conduce el barrido semántico del códice por lotes | Reporta fallas de integridad sin maquillar |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
@@ -269,6 +270,25 @@ sí persiste entre corridas — cada corrida es una sesión nueva sin memoria de
   con una tesis ya vigente. Actualiza `fuentes_leidas_lobo.md` con lo leído ese día. Si en un día
   dado no hay 3 fuentes nuevas disponibles en el nivel de rigor actual (poco probable dado el tamaño
   del ledger), completar con el nivel siguiente en la misma corrida, nunca saltarse el paso.
+
+### 📌 Criterio de Mu (`/criterio`, razonar la primera respuesta)
+Regla del usuario (2026-10-11): toda respuesta de Mu pasa por el **Criterio** antes de usarse. No inventa ni fuerza:
+donde no hay conocimiento ni lecciones o heurísticas asentadas del equipo, es conservador o admite que no hay respuesta,
+y siempre sugiere un camino para responder la pregunta.
+
+- **Balanza:** `python research/grafo/criterio.py --pregunta "…" --respuesta <archivo|-> [--json]` (solo stdlib; reusa
+  `build_corpus.py` y el filtro de `papisa.py`). Niveles: 🟢 firme (≥3 fuentes válidas, mitad A-B, sin códigos inventados,
+  sin desacuerdos abiertos, ≤1 afirmación fuerte sin fuente) · 🟡 parcial · 🟠 solo heurística (sin fuentes, pero con
+  lecciones de El Lobo: solo como intuición declarada) · 🔴 sin base.
+- **El nivel es un techo:** quien redacta (Claude en el artefacto, el subagente `criterio` o la sesión) puede bajarlo tras
+  verificar las fichas en el ledger; nunca subirlo. No rellena con conocimiento general.
+- **En "Pregúntale a Mu":** corre solo bajo cada respuesta (segunda llamada a `sample`); si falla, muestra el camino
+  calculado por reglas. La consulta guarda `criterio`; un nivel sin base o solo heurística cuenta como **sin cobertura**
+  para el protocolo de temas.
+- **En una sesión de Claude Code:** al responder una pregunta dirigida a Mu o a lo que sabe el cerebro, cerrar con el
+  bloque `⚖️ Criterio de Mu` (en línea o con el subagente `criterio`). No cuenta como consulta nueva.
+- **Límites:** la relevancia se mide por palabras clave (raíces de 6 letras), así que puede errar; el texto corrige hacia
+  abajo, no hacia arriba.
 
 ### 📌 Sistema de mentes (`/mentes`, lecturas arquetípicas)
 Capa de interpretación del segundo cerebro (2026-10-10): cada **mente** es un subagente con la personalidad de un
