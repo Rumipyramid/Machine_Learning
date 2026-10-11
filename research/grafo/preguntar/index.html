@@ -146,7 +146,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
   <div class="st" id="st" aria-label="Estado de Mu">
     <div class="lv"><b id="st-n">N5/7</b><span>nivel</span></div>
     <div><b id="st-f">542</b><span>fuentes</span></div>
-    <div><b id="st-no">16</b><span>documentos</span></div>
+    <div><b id="st-no">16</b><span>nodos</span></div>
     <div><b id="st-s">9/9</b><span>salud</span></div>
   </div>
 
@@ -154,7 +154,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     <label class="lab" for="qbox">TU PREGUNTA</label>
     <textarea id="qbox" placeholder="Ej.: ¿Funcionan los nudges en seguros?" maxlength="1200"></textarea>
     <div class="bar">
-      <small id="hint">Mu busca en sus documentos y en su registro de fuentes antes de responder.</small>
+      <small id="hint">Mu busca en sus nodos y en su registro de fuentes antes de responder.</small>
       <span style="display:flex;gap:8px"><button type="button" class="ghost" id="stop" hidden>DETENER</button><button type="submit" id="go">PREGUNTAR ↗</button></span>
     </div>
   </form>
@@ -243,20 +243,20 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     return { nodes, fuentes: [...ids].map(id => FUENTES.get(id)), hyps, tens };
   }
   function contextBlock(r) {
-    const n = r.nodes.map((c, i) => `[[Documento ${i + 1}: "${c.titulo}" — sección "${c.seccion}" (archivo ${c.node}.md)]]\n${c.texto}`).join("\n\n");
+    const n = r.nodes.map((c, i) => `[[Nodo ${i + 1}: "${c.titulo}" — sección "${c.seccion}" (archivo ${c.node}.md)]]\n${c.texto}`).join("\n\n");
     const f = r.fuentes.map(x => fuenteTxt({ ...x, resumen: x.resumen.slice(0, 700) })).join("\n");
     const est = t => t.abierta ? "ABIERTA (" + t.estado.replace(/_/g, " ") + ")" : "resuelta como " + t.estado.replace(/_/g, " ");
     const tn = r.tens.map(t => `- [${t.f}] "${t.s}" ${t.p} "${t.o}" — ${est(t)}. ${t.apoyo}${t.nota ? " Nota: " + t.nota.slice(0, 400) : ""}`).join("\n");
     const hy = r.hyps.map(h => `- ${h.id} (${h.node === "conducta-humano-ia" ? "conducta humano-IA" : "diseño e innovación"}) — estado: ${h.estado.toUpperCase()}. Hipótesis: ${h.texto.slice(0, 400)} | Evidencia: ${h.detalle.slice(0, 500)}`).join("\n");
-    return `EXTRACTOS DE LOS DOCUMENTOS DE MU:\n${n || "(ninguno coincide)"}\n\nFICHAS DEL REGISTRO DE FUENTES (código | autor | año | título | rigor | resumen):\n${f || "(ninguna coincide)"}\n\nCONTRADICCIONES DEL GRAFO QUE TOCAN LA PREGUNTA (fuente | afirmación | relación | afirmación | estado):\n${tn || "(ninguna)"}\n\nHIPÓTESIS DEL TABLERO RELACIONADAS (código, estado y evidencia):\n${hy || "(ninguna)"}`;
+    return `EXTRACTOS DE LOS NODOS DE MU:\n${n || "(ninguno coincide)"}\n\nFICHAS DEL REGISTRO DE FUENTES (código | autor | año | título | rigor | resumen):\n${f || "(ninguna coincide)"}\n\nCONTRADICCIONES DEL GRAFO QUE TOCAN LA PREGUNTA (fuente | afirmación | relación | afirmación | estado):\n${tn || "(ninguna)"}\n\nHIPÓTESIS DEL TABLERO RELACIONADAS (código, estado y evidencia):\n${hy || "(ninguna)"}`;
   }
 
-  const RULES = (estado) => `Eres Mu, el segundo cerebro de investigación de un equipo de diseño estratégico que trabaja en seguros, diseño, conducta humano-IA y Perú. Respondes preguntas SOLO con lo que está guardado en tus documentos y en tu registro de fuentes, que te llegan como extractos en cada mensaje${toolsOk ? " y que puedes ampliar con las herramientas buscar_en_mu y leer_fuente si los extractos no bastan" : ""}.
+  const RULES = (estado) => `Eres Mu, el segundo cerebro de investigación de un equipo de diseño estratégico que trabaja en seguros, diseño, conducta humano-IA y Perú. Respondes preguntas SOLO con lo que está guardado en tus nodos y en tu registro de fuentes, que te llegan como extractos en cada mensaje${toolsOk ? " y que puedes ampliar con las herramientas buscar_en_mu y leer_fuente si los extractos no bastan" : ""}.
 
 Reglas:
 1. No uses conocimiento externo para rellenar huecos. Si algo no está en los extractos, di claramente "Mu no tiene esto guardado" y sugiere investigarlo con /trinidad.
 2. Cita la fuente de cada afirmación con su código entre corchetes justo después, por ejemplo [F-16]. Nunca inventes un código.
-3. Distingue con esas palabras lo que es "dato verificado" de lo que es "inferencia" o "lectura de resumen", y marca lo que el documento declara no verificado.
+3. Distingue con esas palabras lo que es "dato verificado" de lo que es "inferencia" o "lectura de resumen", y marca lo que el nodo declara no verificado.
 4. Escribe como un experto en redacción, para alguien que no conoce el proyecto: primero la conclusión, una idea por frase, frases cortas. Nunca nombres un código interno (H13, C17, §2.9), un número de lección o el nombre de un archivo sin decir con palabras qué es; las fuentes se cuentan (qué encontró, quién, cuándo) y su código va al final.
 5. Sé breve: una frase de respuesta directa, luego hasta 6 viñetas que empiecen con "- ", y al final una línea "Lo que Mu no sabe: ...". Usa **negritas** solo para la idea principal. Sin títulos ni tablas.
 6. Si una afirmación toca una contradicción ABIERTA del grafo, dila como "en disputa" y explica en una frase por qué sigue abierta. Si está resuelta, puedes usar la resolución.
@@ -304,7 +304,7 @@ Estado actual del cerebro (panel): ${estado}`;
   function evidence(el, r, extra) {
     const docs = [...new Set(r.nodes.map(c => c.titulo))];
     el.hidden = false;
-    el.innerHTML = `<b>Buscó en:</b> ${docs.length ? docs.map(esc).join(" · ") : "ningún documento coincidió"} · ${r.fuentes.length} fichas del registro · ${r.tens.length} contradicciones · ${r.hyps.length} hipótesis${extra ? " · " + esc(extra) : ""}`;
+    el.innerHTML = `<b>Buscó en:</b> ${docs.length ? docs.map(esc).join(" · ") : "ningún nodo coincidió"} · ${r.fuentes.length} fichas del registro · ${r.tens.length} contradicciones · ${r.hyps.length} hipótesis${extra ? " · " + esc(extra) : ""}`;
   }
 
   // ---------- semáforos (reglas fijas, umbrales de research/grafo/chacal_rubrica.json) ----------
@@ -384,7 +384,7 @@ Estado actual del cerebro (panel): ${estado}`;
     cells.replaceChildren(cell(CONS.length, "consultas"), cell(personas, personas === 1 ? "persona" : "personas"), cell(USOS.length, "valoradas"), cell(USOS.length ? pctU + "%" : "—", "útiles"), cell(decs.length, "decisiones"));
     dec.replaceChildren(...decs.slice(0, 10).map(u => {
       const li = document.createElement("li"); li.textContent = u.decision || "(sin descripción)";
-      const sm = document.createElement("small"); sm.textContent = `${String(u.at).slice(0, 10)}${u.donde ? " · " + u.donde : ""}${u.node ? " · documento: " + u.node : ""}${u.fuentes?.length ? " · " + u.fuentes.slice(0, 6).join(", ") : ""}`;
+      const sm = document.createElement("small"); sm.textContent = `${String(u.at).slice(0, 10)}${u.donde ? " · " + u.donde : ""}${u.node ? " · nodo: " + u.node : ""}${u.fuentes?.length ? " · " + u.fuentes.slice(0, 6).join(", ") : ""}`;
       li.append(sm); return li;
     }));
   }
@@ -453,7 +453,7 @@ Estado actual del cerebro (panel): ${estado}`;
       al.replaceChildren();
       const b = document.createElement("b"); b.textContent = "PROTOCOLO ACTIVADO — EXPLORAR COMO CONOCIMIENTO NUEVO";
       const ul = document.createElement("ul");
-      for (const a of prot) { const li = document.createElement("li"); li.textContent = `${a.tema}: ${a.no} consultas sin cobertura. Investigarlo con /trinidad y crear su documento en el cerebro.`; ul.append(li); }
+      for (const a of prot) { const li = document.createElement("li"); li.textContent = `${a.tema}: ${a.no} consultas sin cobertura. Investigarlo con /trinidad y crear su nodo en el cerebro.`; ul.append(li); }
       al.append(b, ul); al.hidden = false;
     } else al.hidden = true;
   }
@@ -472,7 +472,7 @@ PREGUNTA: ${q}
 RESPUESTA QUE DIO MU (puede estar cortada): ${text.slice(0, 1500)}
 
 FUENTES DEL REGISTRO QUE CITÓ: ${cited}
-DOCUMENTOS DE MU: 
+NODOS DE MU: 
 ${docs}
 
 TEMAS YA REGISTRADOS (id: nombre):
@@ -481,8 +481,8 @@ ${existentes}
 Devuelve SOLO un objeto JSON con estas claves:
 - "tema_id": si la pregunta trata un tema ya registrado, su id exacto; si no, un id nuevo en minúsculas, sin tildes, con guiones bajos (3 a 6 palabras), que nombre el tema de conocimiento, no la pregunta.
 - "tema": nombre corto del tema en español (3 a 8 palabras).
-- "cubierto": "si" si Mu respondió con evidencia de sus documentos y fuentes; "parcial" si respondió una parte y dijo que le falta otra; "no" si dijo que no lo tiene guardado o no pudo responder con sus fuentes.
-- "node": el archivo del documento de Mu que mejor cubre el tema (sin .md), o "" si ninguno.`, { modelTier: "quick" });
+- "cubierto": "si" si Mu respondió con evidencia de sus nodos y fuentes; "parcial" si respondió una parte y dijo que le falta otra; "no" si dijo que no lo tiene guardado o no pudo responder con sus fuentes.
+- "node": el archivo del nodo de Mu que mejor cubre el tema (sin .md), o "" si ninguno.`, { modelTier: "quick" });
     } catch { return; }
     const tema_id = String(cls?.tema_id || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9_]+/g, "_").replace(/^_+|_+$/g, "").slice(0, 60);
     if (tema_id.length < 3) return;
@@ -528,8 +528,8 @@ Devuelve SOLO un objeto JSON con estas claves:
   function herramientas(entry, r) {
     if (!toolsOk) return undefined;
     return [
-      { name: "buscar_en_mu", description: "Busca más fragmentos en los documentos de Mu. Devuelve hasta 5 fragmentos con su documento y sección. Úsala solo si los extractos no bastan.", inputSchema: { type: "object", properties: { consulta: { type: "string", description: "palabras clave en español" } }, required: ["consulta"] },
-        execute: ({ consulta }) => { evidence(entry.ev, r, `búsqueda extra: "${String(consulta).slice(0, 60)}"`); return search(IDX.nodes, String(consulta || ""), 5).map(c => ({ documento: c.titulo, seccion: c.seccion, texto: c.texto.slice(0, 1400) })); } },
+      { name: "buscar_en_mu", description: "Busca más fragmentos en los nodos de Mu. Devuelve hasta 5 fragmentos con su nodo y sección. Úsala solo si los extractos no bastan.", inputSchema: { type: "object", properties: { consulta: { type: "string", description: "palabras clave en español" } }, required: ["consulta"] },
+        execute: ({ consulta }) => { evidence(entry.ev, r, `búsqueda extra: "${String(consulta).slice(0, 60)}"`); return search(IDX.nodes, String(consulta || ""), 5).map(c => ({ nodo: c.titulo, seccion: c.seccion, texto: c.texto.slice(0, 1400) })); } },
       { name: "leer_fuente", description: "Lee la ficha completa de una fuente del registro por su código (por ejemplo F-16): autor, año, título, rigor y resumen.", inputSchema: { type: "object", properties: { id: { type: "string" } }, required: ["id"] },
         execute: ({ id }) => { const k = "F-" + String(id).replace(/\D/g, ""); const f = FUENTES.get(k); if (!f) throw new Error(`${k} no existe en el registro`); const ts = TENS.filter(t => t.f === k).map(t => `${t.s} ${t.p} ${t.o} (${t.abierta ? "abierta" : "resuelta: " + t.estado})`); return fuenteTxt(f) + (ts.length ? " | Contradicciones en el grafo: " + ts.join("; ") : ""); } },
     ];
@@ -542,7 +542,7 @@ Devuelve SOLO un objeto JSON con estas claves:
 - Ancla todo a la pregunta: cada punto dice qué cambia para quien preguntó. Si algo no cambia nada, no lo incluyas.
 - Pocas ideas, bien dichas: mejor dos puntos claros que cuatro apretados. Ordénalos por importancia.
 - Una idea por frase. Frases de 25 palabras o menos. Verbos activos y sujetos concretos ("el estudio encontró", no "se ha observado").
-- Nada que solo tú conozcas: no escribas números de lecciones, códigos de hipótesis (como H13, HC1 o PE4), nombres de archivos, títulos internos ni palabras del método (candidata, mesa, puente, entidad, eslabón, grafo, ficha, nodo, material). Di qué es cada cosa con palabras.
+- Nada que solo tú conozcas: no escribas números de lecciones, códigos de hipótesis (como H13, HC1 o PE4), nombres de archivos, títulos internos ni palabras del método (candidata, mesa, puente, entidad, eslabón, grafo, ficha, material). Di qué es cada cosa con palabras. A los temas del cerebro llámalos "nodos" y di de qué tratan ("el nodo sobre seguros en Perú"); nunca "documentos".
 - Las fuentes se cuentan: qué encontró, quién y cuándo, y de qué tipo es (estudio académico revisado, dato oficial, encuesta de consultora, nota de prensa, opinión). El código va al final entre corchetes, por ejemplo [F-242]. Nunca escribas una frase que solo diga que una fuente "respalda" algo.
 - Explica en la misma frase cualquier término técnico ("el sesgo de publicación, que los estudios sin resultados no se publican").
 - Traduce los números técnicos a lo que significan: ✗ "d=0,27 cae a 0,004 con heterogeneidad de 99,89%" → ✓ "un efecto pequeño que desaparece al corregir ese sesgo, y que cambia mucho de un estudio a otro". Deja solo las cifras que el lector necesita para decidir.
@@ -829,7 +829,7 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
       const code = e && e.code;
       body.innerHTML = (e && e.text && sinAnalisis(e.text) ? md(sinAnalisis(e.text)) : "") + `<p>${esc(code === "cancelled" ? "Detenida." : COPY[code] || "No se pudo completar la lectura. Puedes volver a intentarlo.")}</p>`;
     } finally {
-      go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus documentos y en su registro de fuentes antes de responder.";
+      go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus nodos y en su registro de fuentes antes de responder.";
       if (ok) { btn.dataset.done = "1"; btn.textContent = M.boton + " ✓"; }
       mg.querySelectorAll("button[data-m]").forEach(b => b.disabled = !!b.dataset.done);
     }
@@ -868,7 +868,7 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
       else if (code === "not_granted" || code === "sampling_disabled" || code === "not_declared" || code === "capability_disabled") { sample = null; offline(entry, r, COPY[code] || COPY.not_granted); }
       else { entry.box.classList.add("err"); entry.body.innerHTML = (e && e.text ? md(e.text) : "") + `<p>${esc(COPY[code] || "Algo falló al conectar con Claude. Puedes volver a preguntar.")}</p>`; }
     } finally {
-      go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus documentos y en su registro de fuentes antes de responder.";
+      go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus nodos y en su registro de fuentes antes de responder.";
     }
   }
   stop.addEventListener("click", () => ctl?.abort());
@@ -900,7 +900,7 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
     const m2 = L.match(/(\d+) fuentes/); if (m2) $("#st-f").textContent = m2[1];
     const m3 = L.match(/(\d+) nodes/); if (m3) $("#st-no").textContent = m3[1];
     const m4 = L.match(/SALUD (\d+\/\d+)/); if (m4) $("#st-s").textContent = m4[1];
-    go.disabled = false; hint.textContent = "Mu busca en sus documentos y en su registro de fuentes antes de responder.";
+    go.disabled = false; hint.textContent = "Mu busca en sus nodos y en su registro de fuentes antes de responder.";
     initDb();
   }).catch(() => { hint.textContent = "No se pudo cargar el índice del cerebro. Recarga la página."; });
 })();

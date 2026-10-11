@@ -7,7 +7,7 @@
 > [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — mismo método,
 > registro distinto (vida individual, no salud).
 >
-> Fecha de elaboración: 2026-07-24 · Versión: v1.0
+> Fecha de elaboración: 2026-07-24 · Última actualización: 2026-10-11 · Versión: v1.0
 
 ---
 
@@ -213,3 +213,5 @@ responder con honestidad.
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC]] — el vocabulario de
   coberturas (IAFA, EG, ITP, PEI, DPP) de ese node es el nivel de detalle técnico que este
   glosario deliberadamente no cubre en su primera capa — evitar duplicar, referenciar.
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — comparten la evidencia de que más información obligatoria no mejora la comprensión (F-6, F-9, F-10) y el único experimento de simplificación en seguro de vida (F-231); ese nodo la usa para juzgar qué prácticas de diseño tienen respaldo.
+- [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración de las personas frente a los seguros]] — comparten la evidencia sobre la mala comprensión de los seguros (F-6, F-9); ese nodo explica por qué en Perú la falta de información es la primera causa de desconfianza.

@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-10-07 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-10-11 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -337,3 +337,5 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[conducta-humano-ia|Conducta humano-IA]] — las hipótesis HC1/HC6 (explicación de la IA al cliente) son las que habría que probar en el contexto regulatorio y de reclamos de §3.9.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — Lemonade (F-636) y Vitality (F-637, F-638) como únicos casos de conducta + IA en seguros con métricas publicadas; ninguno peruano.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado real de replicación de las barreras conductuales que este node lista (aversión a la pérdida §5.4, sesgo del presente §5.11).
+- [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics]] — comparten la evidencia sobre sesgos y comprensión de pólizas (F-3, F-6, F-9); ese nodo la baja a la fuerza de ventas de vida individual de RIMAC.
+- [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — comparten la evidencia sobre la mala comprensión de los seguros (F-6, F-9); ese nodo la convierte en un glosario de vida para el cliente.

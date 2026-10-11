@@ -193,3 +193,5 @@ Por eso este glosario funciona mejor como parte de un sistema:
   plantilla y advertencia de fondo (F-6, F-9, F-10), aplicada al registro de seguro de
   vida en vez de salud.
 Definiciones alineadas al Glosario de términos de seguros de la SBS.*
+- [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics]] — comparten la advertencia de que un glosario mejora la comprensión pero no la decisión (F-6, F-9, F-10); el proyecto la necesita para el material del asesor.
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — comparten la evidencia sobre los límites de la divulgación (F-6, F-9, F-10); ese nodo la usa como criterio para separar diseño con respaldo de diseño sin respaldo.

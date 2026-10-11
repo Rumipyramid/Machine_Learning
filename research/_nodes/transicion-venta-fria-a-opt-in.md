@@ -1,7 +1,7 @@
 # Transición de venta fría a venta opt-in: cómo lo hacen las organizaciones
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-10-04 · Versión: v1.0
+> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-10-11 · Versión: v1.0
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 
 ---
@@ -322,3 +322,4 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — retoma de este node la lógica de reducir la carga de «pedir antes de dar valor» como argumento a favor de potenciar al asesor con tecnología, no de reemplazarlo.
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — comparten la evidencia sobre pedir datos de a poco y la paradoja de la privacidad (F-141 a F-144); ese nodo la confronta con lo que de verdad funciona en diseño e innovación.

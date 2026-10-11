@@ -368,6 +368,9 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   back-to-basics" → ✓ la lección, la idea o el tema dichos con palabras (el código, si hace falta, va entre paréntesis
   después). Las fuentes se cuentan (qué encontró, quién, cuándo, qué tan sólida es). Guía completa:
   `.claude/skills/mentes/REDACCION.md`.
+- **Terminología (regla del usuario, 2026-10-11):** los temas del segundo cerebro (`research/_nodes/*.md`) se llaman
+  **nodos** en todo texto para personas (páginas, respuestas de Mu, mentes, Criterio), nunca "documentos"; se dice de
+  qué trata cada uno ("el nodo sobre seguros en Perú").
 - Documentación de investigación → `research/` (con índice en `research/README.md`).
 - Modelo de personas sintéticas → `research/personas/generador/` (fuente de verdad de desarrollo);
   el skill `lapuerta` lleva su propia copia autocontenida para compartir.

@@ -4,7 +4,7 @@
 > 📌 *Este node se llamaba `tendencias-diseno.md` hasta el 2026-08-02, cuando el alcance se amplió
 > de **diseño** a **diseño e innovación** (ver §0). Las iteraciones 1 a 3 (§1 a §11) cubren solo la
 > mitad de diseño; la mitad de innovación arranca en §12.*
-> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-10-04 · Versión: **v4.1 (iteración 5; 5f sin cambio estructural)**
+> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-10-11 · Versión: **v4.1 (iteración 5; 5f sin cambio estructural)**
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
 > demostrado y cuáles son propuestas todavía sin respaldo?**
@@ -1998,3 +1998,7 @@ aleatoria de cualquiera de las dos lo devolvería a 16%, y así debe registrarse
 - [[conducta-humano-ia|Conducta humano-IA]] — consolida y extiende la evidencia de su §2.2 (explicabilidad, sobre-confianza) con adulación, persuasión y descarga cognitiva, y mantiene allí las reglas RP1-RP5 derivadas de C8/C11.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — confronta la tendencia de usuarios sintéticos en UX con la literatura (refutada para magnitudes y segmentos, útil para dirección) y documenta la IA como canal de descubrimiento de compras (F-634).
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — capa contra la que confrontar la psicología del color (el efecto del rojo no replicó, F-680) y las "leyes" de UX que circulan en el gremio.
+- [[transicion-venta-fria-a-opt-in|Transición de venta fría a venta opt-in: cómo lo hacen las organizaciones]] — comparten la evidencia sobre pedir datos de a poco (pie en la puerta, F-141 a F-143) y la paradoja de la privacidad (F-144); ese nodo la aplica a pasar de la venta en frío al permiso del cliente.
+- [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — comparten la evidencia sobre los límites de la divulgación y la simplificación en seguros (F-6, F-9, F-10, F-231); ese nodo la aplica a un glosario de cliente de seguro de vida.
+- [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — comparten la evidencia sobre los límites de la divulgación (F-6, F-9, F-10); ese nodo la aplica a un glosario de seguro de salud.
+- [[modelo-salud-ia-farmacias-peru|Modelo de cobertura de salud: triage con IA + farmacias + atención humana (Perú)]] — comparten la evidencia sobre el sesgo de automatización (F-60, F-61); ese nodo la aplica al triage con IA en farmacias, donde un error del sistema aceptado sin revisar tiene costo clínico.

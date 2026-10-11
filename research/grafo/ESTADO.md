@@ -8,10 +8,10 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,513 líneas |
+| Nodes (`_nodes/`) | 20 | 8,533 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
 | Fuentes en el ledger | 874 | 🟢A 299 · 🔵B 148 · 🟡C 185 · 🟠D 192 · 🔴E 35 · otras/sin clasificar 15 |
-| Aristas wikilink (node→node) | 122 | recíprocas: 122 de 122 (100%) |
+| Aristas wikilink (node→node) | 142 | recíprocas: 142 de 142 (100%) |
 | Fuentes citadas por ≥1 node | 766 de 874 | 88% del ledger; **108 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 103 | evidencia reutilizada entre temas |
 | **Grafo semántico** (relaciones extraídas) | 515 de 874 fuentes (59%) | 845 relaciones · 65 barridos · detalle en `relaciones/RELACIONES.md` |
@@ -22,7 +22,7 @@
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 5 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02) | cuántas veces se confrontó el node |
-| Tamaño | 2,001 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Tamaño | 2,005 líneas | crecimiento ≠ calidad; ver trazabilidad |
 | Fuentes citadas explícitamente | 274 | F-n individuales dentro del node |
 | …de rigor A/B | 140 (51%) | solidez de la base |
 | Hipótesis vivas | 35: abierta 15 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
@@ -46,11 +46,11 @@
 | `material-visual-venta-consultiva` | 8 | 0.028 | ✅ |
 | `mecanismos-seguros-salud` | 7 | 0.022 | ✅ |
 | `behavioral-design-estado-disciplina` | 6 | 0.022 | ✅ |
-| `glosario-seguro-vida-peru` | 4 | 0.014 | ❌ sin enlace |
+| `glosario-seguro-vida-peru` | 4 | 0.014 | ✅ |
 | `seguros-comportamiento-mundo-peru` | 4 | 0.014 | ✅ |
-| `transicion-venta-fria-a-opt-in` | 4 | 0.014 | ❌ sin enlace |
-| `glosario-seguro-salud-peru` | 3 | 0.011 | ❌ sin enlace |
-| `modelo-salud-ia-farmacias-peru` | 2 | 0.007 | ❌ sin enlace |
+| `transicion-venta-fria-a-opt-in` | 4 | 0.014 | ✅ |
+| `glosario-seguro-salud-peru` | 3 | 0.011 | ✅ |
+| `modelo-salud-ia-farmacias-peru` | 2 | 0.007 | ✅ |
 | `conciencia-cuantica` | 0 | 0.0 | ❌ sin enlace |
 | `fenomeno-el-nino-impacto-personas` | 0 | 0.0 | ❌ sin enlace |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ❌ sin enlace |
@@ -103,7 +103,7 @@
 | 2026-10-07 | `7d6f508` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
-| 2026-10-10 | `e7090dc` | 874 | 20 | 5 | 122 | 766 | 2001 | 15 | 20 | 22 |
+| 2026-10-11 | `51bb9c6` | 874 | 20 | 5 | 122 | 766 | 2001 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -116,8 +116,8 @@
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 57% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
-| M6 Integración (diseño↔resto) | 10/19 nodes enlazados; 13 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
-| M7 Lectura profunda (Lobo) | 193 fuentes leídas a fondo = 22% del ledger; 192 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
+| M6 Integración (diseño↔resto) | 14/19 nodes enlazados; 13 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
+| M7 Lectura profunda (Lobo) | 196 fuentes leídas a fondo = 22% del ledger; 195 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
 | M8 Uso externo (`impacto.json`) | 17 preguntas · 1 personas · 0 valoradas (0% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
@@ -134,24 +134,24 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2001 | 274 | 140 | 10/10 | 2026-10-04 | 2026-10-04 v4.1 |
-| `convergencia-psicologia-economia-ia` | 246 | 117 | 51 | 8/8 | 2026-10-10 | 2026-10-10 v1.0 |
-| `fenomenos-psicologicos` | 548 | 107 | 105 | 8/8 | 2026-10-10 | 2026-10-10 v1.0 |
+| `tendencias-diseno-innovacion` | 2005 | 274 | 140 | 14/14 | 2026-10-04 | 2026-10-11 v4.1 |
+| `convergencia-psicologia-economia-ia` | 247 | 117 | 51 | 9/9 | 2026-10-10 | 2026-10-11 v1.0 |
+| `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-10 | 2026-10-11 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
 | `fenomeno-el-nino-impacto-personas` | 404 | 58 | 32 | 3/3 | 2026-10-07 | 2026-10-07 v1.1 |
 | `mecanismos-seguros-salud` | 355 | 57 | 35 | 9/9 | 2026-10-10 | 2026-10-10 v1.2 |
-| `conducta-humano-ia` | 142 | 41 | 28 | 7/7 | 2026-10-04 | 2026-10-04 v1.1 |
-| `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.4 |
+| `conducta-humano-ia` | 143 | 41 | 28 | 8/8 | 2026-10-04 | 2026-10-11 v1.1 |
+| `proyecto-back-to-basics-ffvv-vida` | 937 | 33 | 29 | 12/12 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-10-11 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 389 | 23 | 2 | 6/6 | 2026-10-04 | 2026-10-04 v1.0 |
-| `modelo-salud-ia-farmacias-peru` | 617 | 23 | 18 | 4/4 | 2026-10-07 | 2026-10-07 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 340 | 21 | 10 | 15/15 | 2026-10-07 | 2026-10-07 v1.1 |
-| `transicion-venta-fria-a-opt-in` | 325 | 18 | 7 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |
+| `modelo-salud-ia-farmacias-peru` | 618 | 23 | 18 | 5/5 | 2026-10-07 | 2026-10-11 v1.0 |
+| `seguros-comportamiento-mundo-peru` | 342 | 21 | 10 | 17/17 | 2026-10-07 | 2026-10-11 v1.1 |
+| `transicion-venta-fria-a-opt-in` | 326 | 18 | 7 | 5/5 | 2026-10-04 | 2026-10-11 v1.0 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 256 | 17 | 11 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |
 | `material-visual-venta-consultiva` | 377 | 17 | 12 | 8/8 | 2026-10-04 | 2026-10-04 v1.1 |
 | `behavioral-design-estado-disciplina` | 320 | 9 | 8 | 9/9 | 2026-10-04 | 2026-10-04 v1.1 |
-| `glosario-seguro-vida-peru` | 216 | 8 | 4 | 3/3 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-24 v1.0 |
+| `glosario-seguro-vida-peru` | 218 | 8 | 4 | 5/5 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-10-11 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | 2026-10-04 | 2026-10-04 v1.0 |
-| `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-21 v1.0 |
+| `glosario-seguro-salud-peru` | 198 | 6 | 5 | 6/6 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-10-11 v1.0 |
 | `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-26 v1.2 |
 | `modelo-personas-sinteticas` | 80 | 0 | 0 | 6/6 | 2026-10-07 | 2026-10-07 v1.0 |
 

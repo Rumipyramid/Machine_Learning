@@ -17,14 +17,14 @@
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 142,
+   "lines": 143,
    "cites": 41,
    "design": false
   },
   {
    "id": "convergencia-psicologia-economia-ia",
    "type": "node",
-   "lines": 246,
+   "lines": 247,
    "cites": 117,
    "design": false
   },
@@ -45,7 +45,7 @@
   {
    "id": "fenomenos-psicologicos",
    "type": "node",
-   "lines": 548,
+   "lines": 549,
    "cites": 107,
    "design": false
   },
@@ -59,14 +59,14 @@
   {
    "id": "glosario-seguro-salud-peru",
    "type": "node",
-   "lines": 196,
+   "lines": 198,
    "cites": 6,
    "design": false
   },
   {
    "id": "glosario-seguro-vida-peru",
    "type": "node",
-   "lines": 216,
+   "lines": 218,
    "cites": 8,
    "design": false
   },
@@ -101,35 +101,35 @@
   {
    "id": "modelo-salud-ia-farmacias-peru",
    "type": "node",
-   "lines": 617,
+   "lines": 618,
    "cites": 23,
    "design": false
   },
   {
    "id": "proyecto-back-to-basics-ffvv-vida",
    "type": "node",
-   "lines": 932,
+   "lines": 937,
    "cites": 33,
    "design": false
   },
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 340,
+   "lines": 342,
    "cites": 21,
    "design": false
   },
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2001,
+   "lines": 2005,
    "cites": 274,
    "design": true
   },
   {
    "id": "transicion-venta-fria-a-opt-in",
    "type": "node",
-   "lines": 325,
+   "lines": 326,
    "cites": 18,
    "design": false
   },
@@ -8142,6 +8142,12 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -8190,6 +8196,12 @@
   },
   {
    "s": "convergencia-psicologia-economia-ia",
+   "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -8280,6 +8292,12 @@
   },
   {
    "s": "fenomenos-psicologicos",
+   "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -8346,7 +8364,19 @@
   },
   {
    "s": "glosario-seguro-salud-peru",
+   "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "glosario-seguro-salud-peru",
    "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "glosario-seguro-salud-peru",
+   "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
   },
@@ -8365,6 +8395,18 @@
   {
    "s": "glosario-seguro-vida-peru",
    "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "glosario-seguro-vida-peru",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "glosario-seguro-vida-peru",
+   "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
   },
@@ -8543,6 +8585,12 @@
    "recip": true
   },
   {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "behavioral-design-estado-disciplina",
    "k": "wikilink",
@@ -8550,7 +8598,31 @@
   },
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "futuro-asesores-seguros-venta-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "glosario-seguro-salud-peru",
    "k": "wikilink",
    "recip": true
   },
@@ -8569,6 +8641,12 @@
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "matriz-productos-vida-rimac",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
   },
@@ -8634,6 +8712,12 @@
   },
   {
    "s": "seguros-comportamiento-mundo-peru",
+   "t": "glosario-seguro-vida-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
    "recip": true
@@ -8653,6 +8737,12 @@
   {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "modelo-salud-ia-farmacias-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "proyecto-back-to-basics-ffvv-vida",
    "k": "wikilink",
    "recip": true
   },
@@ -8706,6 +8796,18 @@
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "glosario-seguro-salud-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "glosario-seguro-vida-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
    "recip": true
@@ -8724,6 +8826,12 @@
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "modelo-salud-ia-farmacias-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "proyecto-back-to-basics-ffvv-vida",
    "k": "wikilink",
    "recip": true
@@ -8731,6 +8839,12 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "transicion-venta-fria-a-opt-in",
    "k": "wikilink",
    "recip": true
   },
@@ -8755,6 +8869,12 @@
   {
    "s": "transicion-venta-fria-a-opt-in",
    "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
   },
@@ -15795,6 +15915,44 @@
     "fuente": "git"
    },
    {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-10",
+    "commit": "da11708",
+    "fuente": "git"
+   },
+   {
     "fuentes": 874,
     "rigor": {
      "B": 148,
@@ -15828,8 +15986,8 @@
      "lines": 2001,
      "cites": 274
     },
-    "fecha": "2026-10-10",
-    "commit": "e7090dc",
+    "fecha": "2026-10-11",
+    "commit": "51bb9c6",
     "fuente": "git"
    }
   ],
@@ -15849,7 +16007,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 2001,
+   "lines": 2005,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

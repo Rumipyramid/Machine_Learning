@@ -2,7 +2,7 @@
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
-> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-07 (F-59 corregida: es un resumen de congreso de Dreischulte 2013; la revisión de Mdege 2011 pasa a F-646).
+> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-11 (F-59 corregida: es un resumen de congreso de Dreischulte 2013; la revisión de Mdege 2011 pasa a F-646).
 > Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada
@@ -614,3 +614,4 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   documento.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para la
   comunicación del flujo con usuarios finales.
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — comparten la evidencia sobre el sesgo de automatización, la tendencia a aceptar lo que sugiere el sistema (F-60, F-61); ese nodo la usa para juzgar el diseño de interfaces con IA.

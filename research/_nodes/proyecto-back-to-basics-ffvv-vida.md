@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-27 · Versión: v1.4
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-10-11 · Versión: v1.4
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -929,3 +929,8 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
   reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
   transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la
   experiencia de venta.
+- [[fenomenos-psicologicos|Fenómenos psicológicos clásicos: qué sobrevive a la replicación]] — los efectos psicológicos en que se apoya el playbook del asesor (encuadre, aversión a la pérdida, prueba social; F-220 a F-226) tienen en ese nodo su estado de replicación: revisar cuáles se sostienen antes de entrenar con ellos.
+- [[conducta-humano-ia|Conducta humano-IA: cómo la IA cambia lo que la gente decide, cree y deja de pensar]] — comparten la evidencia sobre el tamaño real de los nudges (F-16, F-21); ese nodo agrega cómo la gente confía (o confía de más) en recomendaciones automáticas, clave si el asesor trabaja con IA.
+- [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — comparten la advertencia sobre los límites de explicar mejor un seguro (F-6, F-9, F-10); ese nodo la aplica a un glosario de salud en lenguaje claro.
+- [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración de las personas frente a los seguros]] — comparten la evidencia sobre los sesgos que frenan la compra de seguros y la mala comprensión de las pólizas (F-3, F-6, F-9); ese nodo da el contexto de confianza y tenencia en Perú.
+- [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA: qué se está juntando, qué funciona y qué es humo]] — comparten la evidencia sobre nudges a escala (F-16, F-21) y el caso Lemonade (F-29); ese nodo es la referencia si el proyecto quiere probar mensajes con usuarios sintéticos antes de un piloto.

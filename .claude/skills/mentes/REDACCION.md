@@ -25,9 +25,11 @@ la respuesta de Mu, ¿entiende qué se afirma, en qué se apoya y qué hacer?* S
      gente imagina pesa más que la letra chica".
    - ✗ "H13 está parcial" → ✓ "la idea de que el mercado castiga a las empresas de diseño por la IA tiene apoyo a
      medias".
-   - ✗ "el node back-to-basics" → ✓ "el trabajo sobre el método de venta de los asesores de vida".
-   - ✗ "puente", "mesa", "entidad", "eslabón", "grafo", "ficha", "ledger", "triple", "node" → di qué es con palabras
-     ("dos temas del cerebro que usan los mismos estudios y nunca se relacionaron").
+   - ✗ "el node back-to-basics" → ✓ "el nodo sobre el método de venta de los asesores de vida".
+   - ✗ "puente", "mesa", "entidad", "eslabón", "grafo", "ficha", "ledger", "triple" → di qué es con palabras
+     ("dos nodos del cerebro que usan los mismos estudios y nunca se relacionaron").
+   - A los temas del cerebro se les llama **nodos** (regla del usuario, 2026-10-11), nunca "documentos", y siempre
+     se dice de qué tratan: ✓ "el nodo sobre la venta de seguros de vida", ✗ "el node back-to-basics".
 7. **Las fuentes se cuentan, no se codifican.** Di qué encontró la fuente, quién la hizo y cuándo, y de qué tipo es;
    el código va al final como etiqueta: "un metaanálisis de 2025 sobre 70 estudios encontró que explicar las
    recomendaciones de la IA casi no cambia la confianza [F-242]". Nunca una frase que solo diga "[F-242] respalda X".
