@@ -648,9 +648,9 @@ Si algo conviene no afirmarlo todavía porque llega evidencia en una fecha conoc
     if (hall < Math.min(2, claves.size) || hall < claves.size / 2) return 0;
     const r0 = raices(textos[0]); return hall + 0.5 * [...claves].filter(k => r0.has(k)).length;
   }
-  const GENERICAS = new Set("mejor mejores peor peores bueno buena buenos buenas malo mala mayor menor forma formas manera maneras hacer hago puede pueden podemos debe deben debo deberia quiero saber cosa cosas algo cual cuales".split(" ").map(w => w.slice(0, 6)));
+  const GENERICAS = new Set("mejor mejores peor peores bueno buena buenos buenas malo mala mayor menor forma formas manera maneras hacer hago puede pueden podemos debe deben debo deberia quiero saber cosa cosas algo cual cuales funciona funcionan sirve sirven conviene vale".split(" ").map(w => w.slice(0, 6)));
   const NIVEL = {
-    firme: ["🟢 FIRME", "Se apoya en 3 o más fuentes del registro, al menos la mitad estudios revisados o datos oficiales, sin desacuerdos abiertos ni códigos inventados."],
+    firme: ["🟢 FIRME", "Se apoya en 3 o más fuentes del registro, al menos la mitad estudios revisados o datos oficiales y al menos 2 que estudian directamente lo que se pregunta, sin desacuerdos abiertos ni códigos inventados."],
     parcial: ["🟡 PARCIAL", "Hay respaldo, pero incompleto: pocas fuentes, fuentes débiles, desacuerdos abiertos o la respuesta no usó lo que el cerebro tiene."],
     heuristica: ["🟠 SOLO HEURÍSTICA", "El cerebro no tiene fuentes sobre esto; solo lecciones de criterio del equipo. Sirven como intuición, no como respuesta."],
     sin_base: ["🔴 SIN BASE", "El cerebro no tiene fuentes, lecciones ni ideas en prueba sobre esto. Lo honesto es decir que no hay respuesta."],
@@ -659,12 +659,39 @@ Si algo conviene no afirmarlo todavía porque llega evidencia en una fecha conoc
   const PISTAS = [[/mercado|empresa|startup|ingreso|venta|precio|inversi|rentab|ronda|competidor|negocio/i, "/marketer", "resultados de negocio publicados"],
     [/redes|opina|percep|viral|tiktok|reputaci|qué se dice|rumor/i, "/gossip", "qué se dice en redes y prensa"],
     [/per[uú]|peruan|inei|sbs|bcrp|apeseg|lima|lime[ñn]|cu[aá]nt[oa]s|porcentaje|cifra/i, "/contexto-peruano", "el dato oficial peruano"]];
+  // relevancia: si la pregunta nombra un contexto, la fuente también debe tratarlo (mismas reglas que criterio.py)
+  const CONTEXTOS = [
+    ["Perú", /per[uú]|peruan|\blima\b|lime[ñn]|latinoam|latam/i, /per[uú]|peruan|\blima\b|latinoam|latam|am[eé]rica latina|\bsbs\b|apeseg|\binei\b|bcrp|enaho/i, "/contexto-peruano"],
+    ["seguros", /segur[oa]s?\b|asegur|p[oó]liza|siniestr|insur/i, /segur[oa]s?\b|asegur|p[oó]liza|insur|siniestr|actuar/i, "/seeker o /marketer"],
+    ["salud", /salud|m[eé]dic|cl[ií]nic|farmac|hospital|paciente/i, /salud|m[eé]dic|cl[ií]nic|farmac|hospital|paciente|health/i, "/seeker"],
+    ["inteligencia artificial", /\bia\b|inteligencia artificial|\bllms?\b|chatbot|\bai\b|modelos? de lenguaje/i, /\bia\b|inteligencia artificial|\bllms?\b|chatbot|\bai\b|language model|algoritm|machine learning|agente/i, "/seeker"],
+    ["diseño", /dise[ñn]o|\bux\b|interfaz|experiencia de usuario/i, /dise[ñn]|design|\bux\b|interfa|usabil/i, "/seeker"],
+  ];
+  const PRESENTE = /\bhoy\b|actual|reciente|[uú]ltim[oa]s?\b|tendencia|20[2-9]\d/i;
+  const raices5 = t => new Set([...raices(t)].map(w => w.slice(0, 5)));
+  function relevancia(f, q, claves5, anio) {
+    const texto = `${f.titulo} ${f.resumen}`, r = raices5(texto);
+    const hall = [...claves5].filter(k => r.has(k)).length;
+    const tema = claves5.size > 0 && hall >= Math.min(2, claves5.size) && hall >= claves5.size / 2;
+    const falta = CONTEXTOS.filter(([, pq, pf]) => pq.test(q) && !pf.test(texto)).map(([c]) => c);
+    const antigua = PRESENTE.test(q) && f.y && f.y < anio - 5;
+    const motivo = [...(falta.length ? ["no trata " + falta.join(" ni ")] : []), ...(antigua ? [`sus datos son de ${f.y}`] : [])];
+    if (tema && !motivo.length) return ["directa", ""];
+    if (tema || hall) return ["cercana", motivo.join("; ") || "trata solo parte del tema"];
+    return ["lejana", "no estudia lo que se pregunta"];
+  }
   function balanza(q, respuesta) {
     const citadas = [...new Set([...respuesta.matchAll(/\bF-\d{1,4}\b/g)].map(m => m[0]))];
     const validas = citadas.filter(id => FUENTES.has(id)), inventadas = citadas.filter(id => !FUENTES.has(id));
     const F = id => FUENTES.get(id), ab = validas.filter(id => "AB".includes(F(id).rig)), debiles = validas.filter(id => "DE".includes(F(id).rig));
     const a_medias = validas.filter(id => !F(id).deep), vs = new Set(validas);
     const disp = TENS.filter(t => t.abierta && vs.has(t.f));
+    const G5 = new Set([...GENERICAS].map(g => g.slice(0, 5))), claves5 = new Set([...raices5(q)].filter(k => !G5.has(k)));
+    const anio = Number(String(CORPUS.generado || "").slice(0, 4)) || new Date().getFullYear();
+    const relev = Object.fromEntries(validas.map(id => [id, relevancia(F(id), q, claves5, anio)]));
+    const directas = validas.filter(id => relev[id][0] === "directa"), cercanas = validas.filter(id => relev[id][0] === "cercana"), lejanas = validas.filter(id => relev[id][0] === "lejana");
+    const pertinentes = [...directas, ...cercanas];
+    const relGlobal = !validas.length ? "sin fuentes citadas" : (directas.length >= 2 || (directas.length && directas.length >= validas.length / 2)) ? "alta" : pertinentes.length ? "media" : "baja";
     const sin_fuente = respuesta.split(/(?<=[.!?])\s+|\n+/).map(o => o.trim().replace(/^[-•*]\s*/, "")).filter(o => o.length > 25 && !/^lo que mu no sabe/i.test(o) && !/F-\d/.test(o) && (/\d/.test(o) || ABS.test(o))).slice(0, 6);
     const claves = raices(q);
     const rel = [...FUENTES.values()].map(f => [puntaje(claves, f.titulo, f.resumen), f]).filter(([p]) => p > 0).sort((a, b) => b[0] - a[0] || "ABCDE".indexOf(a[1].rig) - "ABCDE".indexOf(b[1].rig)).map(([, f]) => f);
@@ -674,12 +701,16 @@ Si algo conviene no afirmarlo todavía porque llega evidencia en una fecha conoc
     const lecc = ((CORPUS.mago || {}).intuiciones || []).filter(i => puntaje(clavesTema, i.titulo, i.texto) > 0).slice(0, 4);
     const huecos = dbState === "ok" ? agregados().filter(a => a.no + a.parcial > 0 && [...raices(a.tema)].some(k => claves.has(k))).slice(0, 3) : [];
     let nivel;
-    if (!validas.length && !rel.length && !lecc.length) nivel = "sin_base";
-    else if (!validas.length && !rel.length) nivel = "heuristica";
-    else if (validas.length >= 3 && ab.length >= Math.ceil(validas.length / 2) && !disp.length && !inventadas.length && sin_fuente.length <= 1) nivel = "firme";
+    if (!pertinentes.length && !rel.length && !lecc.length) nivel = "sin_base";  // una fuente lejana no cuenta como base
+    else if (!pertinentes.length && !rel.length) nivel = "heuristica";
+    else if (validas.length >= 3 && ab.length >= Math.ceil(validas.length / 2) && directas.length >= 2 && !disp.length && !inventadas.length && sin_fuente.length <= 1) nivel = "firme";
     else nivel = "parcial";
     const camino = [];
     if (inventadas.length) camino.push(`Corregir la respuesta: cita ${inventadas.join(", ")}, ${inventadas.length === 1 ? "que no existe" : "que no existen"} en el registro de fuentes.`);
+    if (lejanas.length) camino.push(`Retirar o reemplazar ${lejanas.slice(0, 3).join(", ")}: no estudia${lejanas.length > 1 ? "n" : ""} lo que se pregunta.`);
+    if (validas.length && !directas.length) { const c = CONTEXTOS.find(([n]) => pertinentes.some(id => relev[id][1].includes(n))); if (c) camino.push(`Buscar evidencia sobre ${c[0]} con ${c[3]}: las fuentes citadas estudian otro contexto.`); }
+    const viejas = pertinentes.filter(id => relev[id][1].includes("sus datos son de"));
+    if (viejas.length) camino.push(`Actualizar ${viejas.slice(0, 3).join(", ")}: sus datos tienen más de 5 años y la pregunta es sobre el presente.`);
     if (nivel === "sin_base" || nivel === "heuristica") {
       const extra = PISTAS.filter(([re]) => re.test(q)).map(([, h, para]) => `${h} (${para})`);
       camino.push(`Investigar el tema como conocimiento nuevo con /trinidad (evidencia académica, social y de negocio a la vez)${extra.length ? "; o, si basta una arista, " + extra.join(" o ") : "; si solo hace falta la evidencia académica, /seeker"}.`);
@@ -691,15 +722,16 @@ Si algo conviene no afirmarlo todavía porque llega evidencia en una fecha conoc
     if (a_medias.length) camino.push(`Leer a fondo ${a_medias.slice(0, 3).join(", ")}: solo se leyó su resumen.`);
     if (disp[0]) camino.push(`Resolver el desacuerdo abierto de ${disp[0].f} antes de afirmar en esa dirección.`);
     const hp = hips.find(h => h.prueba); if (hp) camino.push(`Correr la prueba pendiente de la idea "${hp.texto.slice(0, 90)}": ${limpio(hp.prueba).slice(0, 140)}`);
-    return { nivel, validas, inventadas, ab, debiles, a_medias, disp, sin_fuente, rel, noCit, hips, lecc, huecos, camino: camino.slice(0, 5) };
+    return { nivel, relGlobal, relev, directas, cercanas, lejanas, validas, inventadas, ab, debiles, a_medias, disp, sin_fuente, rel, noCit, hips, lecc, huecos, camino: camino.slice(0, 5) };
   }
   const CRITERIO_PROMPT = `Eres EL CRITERIO DE MU: la parte del segundo cerebro que, después de la primera respuesta, razona la pregunta contra lo que el cerebro realmente sabe y escribe la respuesta más directa posible. Tu virtud es la prudencia: no inventas ni fuerzas.
 
 Proceso (empieza tu respuesta con <analisis>…</analisis> y haz ahí estos pasos en orden; nadie lo verá):
 1. ¿Qué pregunta exactamente la persona? Reformúlala en una frase.
 2. Contrasta la primera respuesta con las fichas: ¿cada afirmación central está en una fuente que la dice? Marca lo que se estiró, lo inventado y lo que no tiene fuente.
-3. ¿Qué tiene el cerebro que la primera respuesta no usó? ¿Hay desacuerdos abiertos o ideas aún en prueba que cambien la respuesta?
-4. Decide lo máximo que se puede afirmar con honestidad y con qué firmeza.
+3. Juzga la relevancia de cada fuente: ¿estudia lo mismo que se pregunta (mismo tema, mismo contexto de país, sector y población, un resultado comparable y datos vigentes)? Directa: sí. Cercana: el mismo mecanismo en otro contexto, o datos viejos. Lejana: solo comparte palabras.
+4. ¿Qué tiene el cerebro que la primera respuesta no usó? ¿Hay desacuerdos abiertos o ideas aún en prueba que cambien la respuesta?
+5. Decide lo máximo que se puede afirmar con honestidad y con qué firmeza.
 
 Después del análisis, escribe SOLO la respuesta: uno o dos párrafos, sin títulos, sin viñetas, sin repetir la pregunta.
 - Párrafo 1: la respuesta directa a la pregunta, en la primera frase. Apóyala en las fuentes con [F-n] y di con palabras qué tan sólida es (un estudio controlado, una encuesta, una nota de prensa).
@@ -708,6 +740,7 @@ Después del análisis, escribe SOLO la respuesta: uno o dos párrafos, sin tít
 
 Reglas duras:
 - El NIVEL que recibes lo calculó una balanza con reglas fijas. Es un techo de firmeza: puedes ser más prudente que él, nunca más seguro.
+- Relevancia: la que recibes la calculó una regla por palabras y es un techo; puedes bajarla al leer la ficha, nunca subirla. Una fuente cercana se usa diciendo de dónde viene ("el estudio es sobre clima, no sobre seguros") y con menos firmeza. Una fuente lejana no sostiene nada: no te apoyes en ella. Si ninguna fuente es directa, dilo en la respuesta.
 - Usa solo las fuentes, ideas y lecciones que recibes; nunca un código que no esté en ellas. No completes con conocimiento general.
 - Si el nivel es SIN BASE, empieza exactamente con "Mu no tiene una respuesta para esto todavía." y sigue con el camino para conseguirla.
 - Si el nivel es SOLO HEURÍSTICA, da la lección del equipo rotulada como intuición ("el equipo ha aprendido que…; no es evidencia") y el camino para comprobarla.
@@ -719,10 +752,11 @@ ${REDACCION}`;
     const cr = entry.cr; cr.hidden = false;
     const [et, tx] = NIVEL[B.nivel];
     cr.innerHTML = `<div class="h ${B.nivel}"><span>⚖️ CRITERIO DE MU · respuesta directa</span><span></span></div><div class="b"><p class="think">El Criterio está razonando la pregunta</p></div>`;
-    const tag = cr.querySelector(".h span + span"); tag.textContent = `respaldo ${et.replace(/^\S+\s/, "").toLowerCase()}`; tag.title = tx;
+    const tag = cr.querySelector(".h span + span"); tag.textContent = `respaldo ${et.replace(/^\S+\s/, "").toLowerCase()}${B.validas.length ? " · relevancia " + B.relGlobal : ""}`; tag.title = tx;
     const body = cr.querySelector(".b");
     const fx = id => "- " + fichaClara(FUENTES.get(id), 240);
     const exp = `NIVEL MÁXIMO (balanza de reglas fijas): ${et.replace(/^\S+\s/, "")} — ${tx}
+RELEVANCIA DE LO CITADO: ${B.relGlobal}${B.validas.length ? ` (${B.directas.length} directas, ${B.cercanas.length} cercanas, ${B.lejanas.length} lejanas)` : ""}
 
 PREGUNTA: ${q}
 
@@ -730,7 +764,7 @@ RESPUESTA QUE DIO MU:
 ${respuesta.slice(0, 4000)}
 
 FUENTES QUE CITÓ LA RESPUESTA:
-${B.validas.map(fx).join("\n") || "(ninguna)"}${B.inventadas.length ? `\nCÓDIGOS CITADOS QUE NO EXISTEN EN EL REGISTRO: ${B.inventadas.join(", ")}` : ""}
+${B.validas.map(id => `${fx(id)}\n  Relevancia para la pregunta (calculada por palabras; techo): ${B.relev[id][0]}${B.relev[id][1] ? " — " + B.relev[id][1] : ""}`).join("\n") || "(ninguna)"}${B.inventadas.length ? `\nCÓDIGOS CITADOS QUE NO EXISTEN EN EL REGISTRO: ${B.inventadas.join(", ")}` : ""}
 
 FRASES CON CIFRAS O PALABRAS ABSOLUTAS SIN FUENTE AL LADO:
 ${B.sin_fuente.map(o => "- " + o).join("\n") || "(ninguna)"}

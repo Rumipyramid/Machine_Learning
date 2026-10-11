@@ -31,6 +31,7 @@ todavía") en lugar de forzar una, y propone el camino para responderla.
    `python research/grafo/criterio.py --pregunta "<pregunta>" --respuesta <archivo con la respuesta>`
    (o `--respuesta -` por la entrada estándar; `--json` para la salida estructurada). Devuelve:
    - qué citó la respuesta (fuentes válidas, **códigos inventados**, rigor, profundidad de lectura);
+   - la **relevancia** de cada fuente citada para la pregunta (ver §2 bis);
    - qué estiró (frases con cifras o palabras absolutas —"siempre", "demuestra", "el 80%"— sin fuente al lado);
    - qué tiene el cerebro sobre la pregunta (fuentes, ideas en prueba, desacuerdos abiertos, **lecciones del equipo**
      —las heurísticas de juicio de El Lobo— y temas que ya se preguntaron sin buena respuesta);
@@ -40,12 +41,13 @@ todavía") en lugar de forzar una, y propone el camino para responderla.
 
    | Nivel | Regla fija | Qué puede decir el Criterio |
    |---|---|---|
-   | 🟢 **Firme** | ≥3 fuentes válidas, al menos la mitad de rigor A o B, sin códigos inventados, sin desacuerdos abiertos sobre lo citado y a lo más 1 afirmación fuerte sin fuente | La respuesta directa, con firmeza y sus límites |
+   | 🟢 **Firme** | ≥3 fuentes válidas, al menos la mitad de rigor A o B, **al menos 2 de relevancia directa**, sin códigos inventados, sin desacuerdos abiertos sobre lo citado y a lo más 1 afirmación fuerte sin fuente | La respuesta directa, con firmeza y sus límites |
    | 🟡 **Parcial** | Hay alguna fuente o el cerebro tiene material, pero no alcanza lo anterior | La respuesta directa limitada a lo que se sostiene, diciendo con palabras qué tan sólida es |
-   | 🟠 **Solo heurística** | Ninguna fuente sobre el tema, pero sí lecciones de criterio del equipo | Puede ofrecer la lección **como intuición declarada** ("el equipo ha aprendido que…; no es evidencia"), nunca como respuesta |
+   | 🟠 **Solo heurística** | Ninguna fuente pertinente sobre el tema (las lejanas no cuentan), pero sí lecciones de criterio del equipo | Puede ofrecer la lección **como intuición declarada** ("el equipo ha aprendido que…; no es evidencia"), nunca como respuesta |
    | 🔴 **Sin base** | Ni fuentes, ni lecciones, ni ideas en prueba sobre el tema | Que **Mu no tiene una respuesta** para esto todavía. Punto. Sin rellenar con conocimiento general |
 
 4. **Razonar (interno, no se muestra).**
+   - Juzga la relevancia de cada fuente que vayas a usar (§2 bis). Puedes bajar la que dio la balanza, nunca subirla.
    - ¿Qué pregunta exactamente la persona? Reformúlala en una frase.
    - Para las 1-3 afirmaciones centrales de la primera respuesta, abre la ficha en `research/fuentes/codice.md` y
      verifica que la fuente **dice eso**. Si no lo dice, se estiró: no lo repitas y baja la firmeza.
@@ -55,10 +57,31 @@ todavía") en lugar de forzar una, y propone el camino para responderla.
    - Decide lo máximo que se puede afirmar con honestidad y con qué firmeza.
 5. **Redactar** con el formato de §3 y el manual `.claude/skills/mentes/REDACCION.md`.
 
+## 2 bis. Criterio de relevancia
+
+Una fuente sólida no sirve si estudia otra cosa. Antes de apoyarse en ella, el Criterio pregunta: **¿esta fuente
+estudia lo mismo que se pregunta?** Mira cuatro cosas: el **tema**, el **contexto** (país, sector, población), un
+**resultado comparable** y la **vigencia** de los datos.
+
+| Grado | Regla de la balanza (por palabras; es un techo) | Cómo se usa |
+|---|---|---|
+| **Directa** | Comparte el tema (al menos la mitad de las palabras clave de la pregunta, mínimo 2), trata todos los contextos que nombra la pregunta (Perú, seguros, salud, inteligencia artificial, diseño) y, si la pregunta es sobre el presente, sus datos tienen 5 años o menos | Sostiene la respuesta |
+| **Cercana** | Comparte parte del tema, pero le falta un contexto o sus datos son viejos | Se usa diciendo de dónde viene ("el estudio es sobre clima, no sobre seguros") y con menos firmeza |
+| **Lejana** | No comparte el tema: solo coincide en palabras sueltas | No sostiene nada; si la respuesta se apoyó en ella, se retira |
+
+- **Relevancia global**, que aparece junto al respaldo en el encabezado: **alta** (al menos 2 directas, o la mitad de
+  lo citado), **media** (alguna directa o cercana) o **baja** (todo lo citado es lejano).
+- **Efecto en el nivel:** *firme* exige al menos 2 fuentes directas; si todo lo citado es lejano, cuenta como si no se
+  hubiera citado nada (puede caer a *solo heurística* o *sin base*).
+- **Efecto en el camino:** retirar las fuentes lejanas, buscar evidencia en el contexto que falta (con
+  `/contexto-peruano` para Perú, `/seeker` o `/marketer` para seguros) y actualizar datos viejos.
+- La regla es por palabras y puede errar (no sabe que una simplificación en seguros es un *nudge*). Por eso es un techo:
+  quien redacta lee la ficha y puede bajar el grado, nunca subirlo.
+
 ## 3. Formato (lo único que se muestra)
 
 ```
-⚖️ Criterio de Mu · respaldo parcial
+⚖️ Criterio de Mu · respaldo parcial · relevancia media
 
 La respuesta directa a la pregunta, en la primera frase. En qué se apoya, contado con palabras (qué encontró la
 fuente, quién, qué tan sólida es) [F-n].
@@ -73,6 +96,7 @@ fuente, correr una prueba).
 - **Solo heurística:** la lección del equipo rotulada como intuición ("el equipo ha aprendido que…; no es evidencia") y
   cómo comprobarla.
 - La firmeza del texto nunca supera el nivel de la balanza.
+- Si ninguna fuente es directa, la respuesta lo dice ("ningún estudio del cerebro es sobre seguros en Perú").
 
 ## 4. Reglas duras
 
