@@ -1822,6 +1822,18 @@
    "triples": 22,
    "sin_aporte": [],
    "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-876",
+    "F-877",
+    "F-878",
+    "F-879"
+   ],
+   "triples": 14,
+   "sin_aporte": [],
+   "notas": "Integración a pedido del usuario: informe de McKinsey y Skift sobre el viajero (sep-2026) y su cobertura. Leído vía resumen, tabla de contenidos y prensa (el PDF y las páginas no se pudieron abrir desde el entorno): lectura 'abstract'. Las cifras de delegación en la IA varían entre medios."
   }
  ],
  "discrepancias": [

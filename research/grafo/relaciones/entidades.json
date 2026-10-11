@@ -2504,6 +2504,11 @@
   "nombre": "Cifra sin muestra ni método publicado (no verificable de forma independiente)",
   "tipo": "limitacion"
  },
+ "cifras_ia_varian_entre_medios": {
+  "id": "cifras_ia_varian_entre_medios",
+  "nombre": "Las cifras sobre delegar en la IA varían entre medios (la mitad declarada vs. 16% de uso real)",
+  "tipo": "limitacion"
+ },
  "cifras_inconsistentes_fuentes": {
   "id": "cifras_inconsistentes_fuentes",
   "nombre": "Cifras que no coinciden entre fuentes",
@@ -3339,6 +3344,11 @@
   "nombre": "Delegar en una máquina por metas de alto nivel o aprendizaje supervisado (sin instrucciones explícitas)",
   "tipo": "intervencion"
  },
+ "delegacion_reserva_ia": {
+  "id": "delegacion_reserva_ia",
+  "nombre": "Disposición a dejar que una IA reserve por uno (vuelo u hotel)",
+  "tipo": "resultado"
+ },
  "delivery_farmacia_express": {
   "id": "delivery_farmacia_express",
   "nombre": "Delivery express de medicamentos (30-45 min)",
@@ -3772,6 +3782,11 @@
  "duracion_consulta": {
   "id": "duracion_consulta",
   "nombre": "Duración de la consulta médica",
+  "tipo": "resultado"
+ },
+ "duracion_decision_compra": {
+  "id": "duracion_decision_compra",
+  "nombre": "Duración de la decisión de compra",
   "tipo": "resultado"
  },
  "duracion_percibida": {
@@ -4994,6 +5009,11 @@
   "nombre": "Evaluación de intervenciones durante su implementación rutinaria",
   "tipo": "concepto"
  },
+ "impuesto_reinicio": {
+  "id": "impuesto_reinicio",
+  "nombre": "'Impuesto de reinicio': empezar de nuevo al comprar porque el sistema no recuerda al cliente entre canales",
+  "tipo": "resultado"
+ },
  "inbound_marketing": {
   "id": "inbound_marketing",
   "nombre": "Inbound marketing (atraer leads en vez de prospectar en frío)",
@@ -5323,6 +5343,11 @@
   "id": "investigacion_exploratoria",
   "nombre": "Estudios piloto y exploratorios",
   "tipo": "concepto"
+ },
+ "investigacion_post_reserva": {
+  "id": "investigacion_post_reserva",
+  "nombre": "Seguir investigando después de reservar (78% de viajeros)",
+  "tipo": "resultado"
  },
  "investigacion_psicologica": {
   "id": "investigacion_psicologica",
@@ -5879,6 +5904,11 @@
   "nombre": "McKinsey (~2023): The Innovation Commitment, 8 esenciales de la innovación",
   "tipo": "estudio"
  },
+ "mckinsey_skift_viajes_2026": {
+  "id": "mckinsey_skift_viajes_2026",
+  "nombre": "Informe McKinsey-Skift sobre el viajero (sep-2026; encuesta >1.000 + diario de 211 sesiones)",
+  "tipo": "estudio"
+ },
  "mcr_unh": {
   "id": "mcr_unh",
   "nombre": "Medical care ratio de UnitedHealth (86,7% en el 2T 2026)",
@@ -5938,6 +5968,11 @@
   "id": "mejora_kpi_rediseno",
   "nombre": "Mejora de KPIs tras un rediseño de usabilidad",
   "tipo": "resultado"
+ },
+ "memoria_cliente_entre_canales": {
+  "id": "memoria_cliente_entre_canales",
+  "nombre": "Memoria del cliente entre canales y plataformas",
+  "tipo": "intervencion"
  },
  "menciones_redes_acciones": {
   "id": "menciones_redes_acciones",
@@ -6522,6 +6557,11 @@
  "opcion_senuelo": {
   "id": "opcion_senuelo",
   "nombre": "Opción señuelo dominada asimétricamente agregada al menú",
+  "tipo": "intervencion"
+ },
+ "opciones_extra_ia": {
+  "id": "opciones_extra_ia",
+  "nombre": "Opciones adicionales que propone la IA durante la búsqueda",
   "tipo": "intervencion"
  },
  "open_innovation": {
@@ -7344,6 +7384,11 @@
   "nombre": "Publicidad que expresa el retorno garantizado como % o promete éxito financiero",
   "tipo": "concepto"
  },
+ "puntos_contacto_reserva_viaje": {
+  "id": "puntos_contacto_reserva_viaje",
+  "nombre": "Puntos de contacto antes de reservar un viaje (~65 en 2026 vs. ~45 en 2018)",
+  "tipo": "metrica"
+ },
  "qubits_espin_nuclear_posner": {
   "id": "qubits_espin_nuclear_posner",
   "nombre": "Qubits de espín nuclear de fósforo en moléculas de Posner (hipótesis de Fisher)",
@@ -7442,6 +7487,11 @@
  "reclamos_seguro_auto": {
   "id": "reclamos_seguro_auto",
   "nombre": "Gestión de reclamos de seguro vehicular (red de talleres asociados)",
+  "tipo": "concepto"
+ },
+ "recorrido_compra_orbital": {
+  "id": "recorrido_compra_orbital",
+  "nombre": "Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo)",
   "tipo": "concepto"
  },
  "recorte_ideo_2023": {
@@ -8832,6 +8882,11 @@
  "uso_especialistas_hospitalizacion": {
   "id": "uso_especialistas_hospitalizacion",
   "nombre": "Uso de especialistas y hospitalizaciones",
+  "tipo": "resultado"
+ },
+ "uso_ia_ideas_viaje": {
+  "id": "uso_ia_ideas_viaje",
+  "nombre": "Uso de la IA para buscar ideas y comparar opciones de viaje",
   "tipo": "resultado"
  },
  "uso_ia_trabajador": {

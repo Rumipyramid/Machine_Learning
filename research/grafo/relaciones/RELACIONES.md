@@ -8,30 +8,30 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **874 de 874** (100.0%) |
+| Fuentes procesadas | **878 de 878** (100.0%) |
 | …del cerebro de diseño (citadas en el node) | 274 de 274 |
-| …por rigor | A 299/299 · B 148/148 · C 185/185 · D 192/192 · E 35/35 |
-| Barridos | 110 |
-| Entidades | 1836 |
-| Relaciones | 1924 |
-| Nivel de lectura | ficha 1205 · abstract 718 · completa 1 |
-| Fuerza de las afirmaciones | descriptiva 1137 · teorica 281 · observacional 259 · causal 247 |
+| …por rigor | A 299/299 · B 148/148 · C 186/186 · D 195/195 · E 35/35 |
+| Barridos | 111 |
+| Entidades | 1847 |
+| Relaciones | 1938 |
+| Nivel de lectura | ficha 1205 · abstract 732 · completa 1 |
+| Fuerza de las afirmaciones | descriptiva 1147 · teorica 283 · observacional 261 · causal 247 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `tiene_limite` | metodo | 412 |
-| `aumenta` | efecto | 235 |
-| `aplica_a` | estructura | 231 |
-| `asocia_con` | efecto | 161 |
-| `reduce` | efecto | 152 |
-| `respalda` | evidencia | 139 |
-| `es_tipo_de` | estructura | 119 |
+| `tiene_limite` | metodo | 413 |
+| `aumenta` | efecto | 236 |
+| `aplica_a` | estructura | 232 |
+| `asocia_con` | efecto | 163 |
+| `reduce` | efecto | 154 |
+| `respalda` | evidencia | 142 |
+| `es_tipo_de` | estructura | 120 |
 | `refuta` | evidencia | 96 |
 | `origina_en` | metodo | 92 |
-| `parte_de` | estructura | 85 |
-| `mide` | metodo | 68 |
+| `parte_de` | estructura | 86 |
+| `mide` | metodo | 70 |
 | `contradice` | evidencia | 64 |
 | `modera` | efecto | 49 |
 | `media` | efecto | 21 |
@@ -55,12 +55,12 @@
 | Conciencia (experiencia subjetiva) | F-802, F-804, F-805, F-806, F-819, F-820, F-825, F-828, F-833, F-835 |
 | El diseño devuelve multiplicadores de retorno (p. ej. 100:1) | F-262, F-268, F-277, F-327, F-328, F-397, F-409, F-424, F-536 |
 | Modelos ChatGPT-3.5 y 4 | F-545, F-550, F-556, F-571, F-572, F-573, F-575, F-577, F-616 |
+| Comercio agéntico (compras ejecutadas por agentes de IA) | F-592, F-593, F-613, F-614, F-630, F-632, F-633, F-635, F-876 |
 | El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-318, F-326, F-398, F-421, F-429, F-470, F-527 |
 | Modelo de triage con IA y farmacias (Perú) | F-47, F-48, F-49, F-53, F-55, F-62, F-75, F-358 |
 | Sesgo de publicación | F-16, F-17, F-21, F-435, F-680, F-701, F-712, F-736 |
 | Gasto en atención de salud | F-88, F-98, F-110, F-202, F-329, F-339, F-340, F-352 |
 | Regulación de consentimiento previo para el contacto comercial (no llamar / opt-in) | F-68, F-70, F-72, F-73, F-117, F-131, F-132, F-140 |
-| Comercio agéntico (compras ejecutadas por agentes de IA) | F-592, F-593, F-613, F-614, F-630, F-632, F-633, F-635 |
 | Precio de la acción de Figma (FIG) | F-318, F-326, F-398, F-420, F-421, F-470, F-527 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542, F-662, F-663 |
 | Selección adversa (selección de riesgos) | F-82, F-91, F-92, F-96, F-103, F-162, F-207 |
@@ -73,6 +73,7 @@
 | Teoría de la información integrada (IIT) | F-830, F-831, F-832, F-837, F-847, F-849, F-851 |
 | Cifra autodeclarada por la empresa, sin método auditable | F-618, F-620, F-621, F-623, F-624, F-625, F-634 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-273, F-514 |
+| Confianza en la IA | F-187, F-242, F-583, F-614, F-876, F-878 |
 | Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502, F-520 |
 | UBI / seguro basado en telemática | F-19, F-23, F-162, F-167, F-442, F-449 |
 | Persuasión conversacional por IA | F-489, F-490, F-585, F-586, F-589, F-607 |
@@ -110,7 +111,6 @@
 | Sin revisión por pares (preprint, blog, libro o venue no arbitrado) | F-399, F-402, F-435, F-440, F-443 |
 | Capital de riesgo invertido en investigación sintética | F-617, F-619, F-620, F-621, F-622 |
 | Design thinking | F-239, F-240, F-393, F-524 |
-| Confianza en la IA | F-187, F-242, F-583, F-614 |
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469, F-527 |
 | Costo de IA / inferencia | F-323, F-470, F-526, F-527 |
 | La IA cobra un impuesto de margen a las herramientas de diseño (H32) | F-323, F-421, F-470, F-526 |
@@ -147,6 +147,7 @@
 | Cifra o contenido no verificado contra el informe o documento primario | F-396, F-413, F-417, F-427 |
 | Eco de cita: varias vitrinas repiten una misma fuente | F-458, F-528, F-535, F-541 |
 | Startups de investigación sintética (encuestados y gemelos con IA) | F-617, F-619, F-621, F-622 |
+| Lo que crece es la IA como canal de descubrimiento, no las compras hechas por agentes | F-634, F-876, F-878, F-879 |
 | Estimación de analista o base de datos privada, no auditada | F-640, F-864, F-867, F-875 |
 | El estudio de anestesia en ratas (2024) apoya la base cuántica de la conciencia (Orch-OR) | F-838, F-840, F-842, F-843 |
 | Cobertura mediática de 2024 del estudio de microtúbulos y anestesia | F-839, F-840, F-841, F-842 |
@@ -280,6 +281,7 @@
 | Sin respaldo científico ni regulación sanitaria | F-855, F-871, F-873 |
 | Financiamiento filantrópico de la investigación sobre conciencia | F-858, F-859, F-860 |
 | Dispositivos de salud con etiqueta 'cuántica' (SCIO, Quest 9, Quantum Laser, analizadores de resonancia) | F-872, F-873, F-874 |
+| Disposición a dejar que una IA reserve por uno (vuelo u hotel) | F-876, F-878, F-879 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
@@ -569,6 +571,7 @@
 | Experimento no autorizado de la Universidad de Zúrich en r/changemyview | F-607, F-608 |
 | Psicosis asociada al uso de IA ('psicosis por IA') | F-610, F-611 |
 | Churnalism: medios que replican casi literal un comunicado de prensa | F-613, F-616 |
+| Comodidad y confianza del consumidor en que un agente compre por él | F-614, F-879 |
 | El negocio de encuestados sintéticos está validado por ingresos reales | F-617, F-623 |
 | Los agentes orquestarán hasta US$1 billón del retail de EE.UU. y US$3-5 billones global al 2030 | F-630, F-632 |
 | Asistente financiero conversacional con IA | F-639, F-640 |
@@ -590,6 +593,10 @@
 | Cerca Magnetics (spin-out de la U. de Nottingham) | F-863, F-864 |
 | La compra de Chopra Global fue por hasta US$5 M en efectivo + acciones y hasta US$3 M de earnout (filing SEC) | F-869, F-870 |
 | The Healing Company (Healing Co Inc., HLCO) | F-869, F-870 |
+| Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo) | F-876, F-877 |
+| Memoria del cliente entre canales y plataformas | F-876, F-877 |
+| 'Impuesto de reinicio': empezar de nuevo al comprar porque el sistema no recuerda al cliente entre canales | F-876, F-877 |
+| Uso de la IA para buscar ideas y comparar opciones de viaje | F-876, F-877 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -1492,6 +1499,7 @@
 | 2026-10-11 | F-853, F-854, F-855, F-856, F-857, F-858, F-859, F-860 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
 | 2026-10-11 | F-861, F-862, F-863, F-864, F-865, F-866, F-867, F-868 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
 | 2026-10-11 | F-869, F-870, F-871, F-872, F-873, F-874, F-875 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-876, F-877, F-878, F-879 | 14 | – | Integración a pedido del usuario: informe de McKinsey y Skift sobre el viajero (sep-2026) y su cobertura. Leído vía resumen, tabla de contenidos y prensa (el PDF y las páginas no se pudieron abrir des |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

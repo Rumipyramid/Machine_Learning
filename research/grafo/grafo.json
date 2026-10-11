@@ -17,15 +17,15 @@
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 143,
-   "cites": 41,
+   "lines": 155,
+   "cites": 45,
    "design": false
   },
   {
    "id": "convergencia-psicologia-economia-ia",
    "type": "node",
-   "lines": 247,
-   "cites": 117,
+   "lines": 248,
+   "cites": 119,
    "design": false
   },
   {
@@ -8035,6 +8035,42 @@
    "autor": "Global Industry Analysts / Market Glass, Inc. (vía reseller GII)",
    "anio": "2025",
    "huerfana": false
+  },
+  {
+   "id": "F-876",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Winning Hearts in an Age of Infinite Travel Choices (informe conjunto, 22-sep-2026)",
+   "autor": "McKinsey & Company y Skift Research",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-877",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Skift Global Forum 2026: Search, Discovery, and Booking Rewritten (25-sep-2026)",
+   "autor": "Skift (resumen de la sesión del Skift Global Forum)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-878",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "More than 70% of travellers rely on AI for planning but only half trust it for final booking: Report (27-sep-2026)",
+   "autor": "ANI / The Tribune (India)",
+   "anio": "2026",
+   "huerfana": true
+  },
+  {
+   "id": "F-879",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Expedia: Only 8% Trust AI to Book Travel (14-abr-2026)",
+   "autor": "Expedia Group (vía Skift)",
+   "anio": "2026",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -9548,6 +9584,11 @@
   {
    "s": "transicion-venta-fria-a-opt-in",
    "t": "F-118",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-119",
    "k": "cita"
   },
   {
@@ -13494,6 +13535,31 @@
    "s": "conciencia-cuantica",
    "t": "F-875",
    "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-876",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-876",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-877",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-879",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-879",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -13771,6 +13837,16 @@
      "A": 12,
      "D": 25,
      "E": 2
+    }
+   },
+   {
+    "fecha": "2026-10-11",
+    "nuevas": 4,
+    "acumuladas": 878,
+    "AB": 0,
+    "rigor": {
+     "C": 1,
+     "D": 3
     }
    }
   ],
@@ -15987,7 +16063,7 @@
      "cites": 274
     },
     "fecha": "2026-10-11",
-    "commit": "3058704",
+    "commit": "1cc5b65",
     "fuente": "git"
    }
   ],

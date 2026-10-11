@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,533 líneas |
+| Nodes (`_nodes/`) | 20 | 8,546 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
-| Fuentes en el ledger | 874 | 🟢A 299 · 🔵B 148 · 🟡C 185 · 🟠D 192 · 🔴E 35 · otras/sin clasificar 15 |
+| Fuentes en el ledger | 878 | 🟢A 299 · 🔵B 148 · 🟡C 186 · 🟠D 195 · 🔴E 35 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 142 | recíprocas: 142 de 142 (100%) |
-| Fuentes citadas por ≥1 node | 766 de 874 | 88% del ledger; **108 viven solo en el ledger** |
-| Fuentes citadas por ≥2 nodes (transversales) | 103 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 874 de 874 fuentes (100%) | 1924 relaciones · 110 barridos · detalle en `relaciones/RELACIONES.md` |
+| Fuentes citadas por ≥1 node | 769 de 878 | 88% del ledger; **109 viven solo en el ledger** |
+| Fuentes citadas por ≥2 nodes (transversales) | 105 | evidencia reutilizada entre temas |
+| **Grafo semántico** (relaciones extraídas) | 878 de 878 fuentes (100%) | 1938 relaciones · 111 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -38,9 +38,9 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 24 | 0.082 | ✅ |
+| `conducta-humano-ia` | 25 | 0.085 | ✅ |
 | `proyecto-back-to-basics-ffvv-vida` | 19 | 0.066 | ✅ |
-| `convergencia-psicologia-economia-ia` | 9 | 0.024 | ✅ |
+| `convergencia-psicologia-economia-ia` | 9 | 0.023 | ✅ |
 | `fenomenos-psicologicos` | 9 | 0.024 | ✅ |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.028 | ✅ |
 | `material-visual-venta-consultiva` | 8 | 0.028 | ✅ |
@@ -88,6 +88,7 @@
 | 2026-10-04 | 95 | 740 | 94 | ████████████████████████ |
 | 2026-10-07 | 60 | 800 | 33 | ███████████████ |
 | 2026-10-10 | 74 | 874 | 36 | ██████████████████ |
+| 2026-10-11 | 4 | 878 | 0 | █ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -103,7 +104,7 @@
 | 2026-10-07 | `7d6f508` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
-| 2026-10-11 | `3058704` | 874 | 20 | 5 | 142 | 766 | 2005 | 15 | 20 | 22 |
+| 2026-10-11 | `1cc5b65` | 874 | 20 | 5 | 142 | 766 | 2005 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -135,12 +136,12 @@
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 2005 | 274 | 140 | 14/14 | 2026-10-11 | 2026-10-11 v4.1 |
-| `convergencia-psicologia-economia-ia` | 247 | 117 | 51 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
+| `convergencia-psicologia-economia-ia` | 248 | 119 | 51 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
 | `fenomeno-el-nino-impacto-personas` | 404 | 58 | 32 | 3/3 | 2026-10-07 | 2026-10-07 v1.1 |
 | `mecanismos-seguros-salud` | 355 | 57 | 35 | 9/9 | 2026-10-10 | 2026-10-10 v1.2 |
-| `conducta-humano-ia` | 143 | 41 | 28 | 8/8 | 2026-10-11 | 2026-10-11 v1.1 |
+| `conducta-humano-ia` | 155 | 45 | 29 | 8/8 | 2026-10-11 | 2026-10-11 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 937 | 33 | 29 | 12/12 | 2026-10-11 | 2026-10-11 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 389 | 23 | 2 | 6/6 | 2026-10-04 | 2026-10-04 v1.0 |
 | `modelo-salud-ia-farmacias-peru` | 618 | 23 | 18 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |

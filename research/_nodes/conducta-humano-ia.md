@@ -3,7 +3,7 @@
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-02 · Última actualización: 2026-10-11 · Versión: **v1.1 (iteración 2; lectura a fondo de persuasión 2026-10-03)**
 > Origen: auditoría del Chacal (2026-10-02, apunte: *"la evidencia humano-IA está repartida entre el node conductual y el de diseño"*) + `/trinidad` empírica. **Iteración 2 añade las pistas social y de negocio/legal (§2.8-2.9) y la primera búsqueda adversarial sobre las reglas (§2.10); ambas siguen siendo delgadas (ver §7).**
-> Fuentes en `research/fuentes/codice.md`: ya existentes F-16 a F-27, F-242 a F-246, F-254, F-257, F-401, F-442, F-474 · nuevas: iteración 1 F-488 a F-494 · iteración 2 F-495 a F-503 · lectura a fondo 2026-10-03: F-542.
+> Fuentes en `research/fuentes/codice.md`: ya existentes F-16 a F-27, F-242 a F-246, F-254, F-257, F-401, F-442, F-474 · nuevas: iteración 1 F-488 a F-494 · iteración 2 F-495 a F-503 · lectura a fondo 2026-10-03: F-542 · integración 2026-10-11 (informe de viajes de McKinsey y Skift): F-876 a F-879.
 > Pregunta permanente: **¿qué evidencia hay de que la IA cambia la conducta y el juicio de las personas, y cómo debe diseñarse (y auditarse) con eso en mente?**
 
 ---
@@ -68,6 +68,15 @@ La adulación pasó a ser un riesgo de producto y de consumidor: *Raine v. OpenA
 | RP4 (persuasión concentrada en susceptibles) | microtargeting sin ventaja | **Resuelta como alcance distinto (2026-10-03).** La tensión se había armado con una cifra mal atribuida. Personalizar ayuda en **debate interactivo contra humanos** (F-542, +81%), pero no en **un mensaje único frente a uno genérico** (F-499: 8.587 personas, p=0,23; en 2 de 4 temas el genérico ganó, según el código publicado). La **concentración por rasgos psicológicos** (F-491) es otra pregunta, y solo tiene un preprint |
 | RP5 (la fricción es herramienta con costo) | fricción que se vuelve en contra | **Sobrevive con matiz.** F-502 (ACM): reduce la sobre-confianza más que la XAI, pero los usuarios la disliked |
 
+### 2.11 Delegar en la IA: investigar sí, comprar no (viajes, 2026)
+La gente usa la IA para informarse, pero todavía no la deja cerrar la compra. El dato más reciente viene de viajes. Un informe de McKinsey y Skift Research (sep-2026) combinó una encuesta a más de 1.000 viajeros de EE.UU. con un diario de 211 sesiones reales de búsqueda y reserva. Encontró que el 71% está cómodo con que la IA le proponga ideas, pero solo la mitad la dejaría reservar un vuelo u hotel, y solo el 16% la ha usado para reservar algo (F-876, encuesta de consultora; cifras vistas en su resumen y en prensa, no en el texto completo). Una encuesta de Expedia da un 8% de comodidad con reservas hechas por IA (F-879, solo prensa). Las dos fuentes apuntan en la misma dirección que el nodo de convergencia en comercio agéntico: crece el descubrimiento, no la compra delegada ([[convergencia-psicologia-economia-ia]] §4.3).
+
+El mismo informe deja dos lecciones de diseño:
+- **Más opciones no aceleran la decisión.** El 60% dice que la IA le muestra opciones más rápido, pero esas opciones extra alargan la elección (F-876). No conviene leerlo como "sobrecarga de opciones": ese efecto casi desaparece en promedio (F-119).
+- **El "impuesto de reinicio".** Cuando un sistema no recuerda al cliente entre canales, o dentro del mismo canal, lo obliga a empezar de nuevo justo al comprar (F-876; presentado en el Skift Global Forum, F-877). El recorrido ya no es un embudo sino una "órbita": unos 65 puntos de contacto antes de reservar, y el 78% sigue investigando después.
+
+**Para seguros (inferencia, no evidencia).** En viajes, una compra frecuente y fácil de deshacer, solo la mitad dejaría que la IA cierre. En seguros, una compra rara, compleja y de largo plazo, la delegación debería ser igual o menor. La IA serviría para informar y comparar, y el cierre seguiría pidiendo una persona o una confirmación explícita. Queda como idea en prueba (HC11).
+
 ## 3. ⚖️ Escala de madurez de evidencia
 
 | Afirmación | Estado | Base |
@@ -102,6 +111,7 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 | **HC8** | La personalización con IA reduce la conversión cuando se percibe intrusiva | `abierta` — F-254 (ficha) | Réplica con medida de intrusividad por nivel |
 | **HC9** | La adulación de los chatbots ya es tratada como riesgo de consumidor por reguladores y tribunales | `parcial` *(nueva, iter. 2)* — F-496: demandas, carta de 42 fiscales y acuerdos; **sin fallos** | Primera sentencia o regulación específica sobre adulación |
 | **HC10** | Las intervenciones individuales contra la adulación reducen su atractivo pero no su capacidad de persuadir | `abierta` *(nueva)* — solo el título de F-500 | Lectura del paper y réplica |
+| **HC11** | En seguros, los clientes usarán la IA para informarse y comparar, pero dejarán que contrate por ellos igual o menos que en viajes (como máximo la mitad declarada y 16% de uso real) | `abierta` *(nueva, 2026-10-11)* — solo evidencia de viajes (F-876, F-879) | Encuesta a clientes peruanos que separe "usarla para comparar" de "dejar que contrate", más el uso real medido en el canal digital |
 
 ## 5. 🧭 Reglas de criterio
 
@@ -121,6 +131,8 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 | 1 | 2026-10-02 | Creación del node: consolidar evidencia dispersa + barrido empírico de adulación, persuasión y descarga cognitiva | **Creación.** 7 fuentes (F-488 a F-494) y 8 hipótesis (HC1-HC8) | Pistas social y de negocio; adversarial sobre RP1-RP5 |
 | 2 | 2026-10-02 | Pistas social y de negocio/legal + búsqueda adversarial de RP1-RP5 | 9 fuentes (F-495 a F-503). **HC1 → parcial; HC3 reformulada** (en disputa F-491 vs. F-499); **HC9 y HC10 nuevas**; **RP2 → CH1 y RP5 → CH2** (reglas del node); RP1 y RP3 reformuladas; RP4 en disputa. Las 16 fuentes nuevas entraron al grafo semántico | Leer a texto completo F-488, F-491, F-494, F-500, F-501; pista social real (foros) más allá del caso GPT-4o; fuentes de seguros sobre IA conversacional |
 | 2b | 2026-10-03 | Lectura a fondo de los tres estudios de persuasión (resúmenes oficiales; texto completo bloqueado) | **F-488 publicado en *Science*** → HC2 a `parcial`. **F-491 tenía autoría y cifras de otro estudio:** el +81,7% es de Salvi et al. (F-542, nuevo). La disputa RP4 se resuelve como alcance distinto. Fichas F-488 y F-491 corregidas en el ledger con autorización | Réplica independiente de la adulación en contexto financiero; leer completos F-491 y F-542 cuando la red lo permita |
+| 3 | 2026-10-11 | Integración de un informe de McKinsey y Skift sobre viajes (pedido del usuario) | §2.11 nueva (delegar en la IA: investigar sí, comprar no) e idea en prueba HC11; fuentes F-876 a F-879 | Leer el PDF completo (bloqueado desde el entorno) y verificar las cifras de IA; buscar un dato equivalente en seguros |
+
 
 ## 7. Limitaciones
 - **Pista social:** un caso (GPT-4o) y un portal sin verificar; no hay lectura sistemática de foros ni de la conversación de usuarios sobre adulación o persuasión.

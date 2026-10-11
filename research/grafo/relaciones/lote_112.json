@@ -1,0 +1,196 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-876",
+  "F-877",
+  "F-878",
+  "F-879"
+ ],
+ "entidades": [
+  {
+   "id": "recorrido_compra_orbital",
+   "nombre": "Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "puntos_contacto_reserva_viaje",
+   "nombre": "Puntos de contacto antes de reservar un viaje (~65 en 2026 vs. ~45 en 2018)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "investigacion_post_reserva",
+   "nombre": "Seguir investigando después de reservar (78% de viajeros)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "delegacion_reserva_ia",
+   "nombre": "Disposición a dejar que una IA reserve por uno (vuelo u hotel)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "uso_ia_ideas_viaje",
+   "nombre": "Uso de la IA para buscar ideas y comparar opciones de viaje",
+   "tipo": "resultado"
+  },
+  {
+   "id": "impuesto_reinicio",
+   "nombre": "'Impuesto de reinicio': empezar de nuevo al comprar porque el sistema no recuerda al cliente entre canales",
+   "tipo": "resultado"
+  },
+  {
+   "id": "memoria_cliente_entre_canales",
+   "nombre": "Memoria del cliente entre canales y plataformas",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "opciones_extra_ia",
+   "nombre": "Opciones adicionales que propone la IA durante la búsqueda",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "duracion_decision_compra",
+   "nombre": "Duración de la decisión de compra",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mckinsey_skift_viajes_2026",
+   "nombre": "Informe McKinsey-Skift sobre el viajero (sep-2026; encuesta >1.000 + diario de 211 sesiones)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "cifras_ia_varian_entre_medios",
+   "nombre": "Las cifras sobre delegar en la IA varían entre medios (la mitad declarada vs. 16% de uso real)",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "puntos_contacto_reserva_viaje",
+   "p": "mide",
+   "o": "recorrido_compra_orbital",
+   "f": "F-876",
+   "apoyo": "Unos 65 puntos de contacto antes de reservar frente a unos 45 en 2018; McKinsey misma llama a la cifra 'algo arbitraria' porque el inicio y el fin del recorrido son difusos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "investigacion_post_reserva",
+   "p": "parte_de",
+   "o": "recorrido_compra_orbital",
+   "f": "F-876",
+   "apoyo": "El 78% sigue investigando después de reservar y solo 18% se detiene; cerca de la mitad cambió un alojamiento confirmado al ver una opción mejor.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "confianza_en_ia",
+   "p": "asocia_con",
+   "o": "delegacion_reserva_ia",
+   "f": "F-876",
+   "apoyo": "La mayoría duda en dejar que la IA cierre la reserva por falta de confianza y miedo a equivocarse; la confianza decide qué ideas avanzan.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "delegacion_reserva_ia",
+   "p": "es_tipo_de",
+   "o": "comercio_agentico",
+   "f": "F-876",
+   "apoyo": "Dejar que una IA reserve un vuelo u hotel es comercio agéntico: solo la mitad lo aceptaría y 16% lo ha hecho alguna vez.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "opciones_extra_ia",
+   "p": "aumenta",
+   "o": "duracion_decision_compra",
+   "f": "F-876",
+   "apoyo": "El 60% dice que la IA le muestra opciones más rápido, pero esas opciones extra alargan la decisión (autodeclarado en encuesta).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "memoria_cliente_entre_canales",
+   "p": "reduce",
+   "o": "impuesto_reinicio",
+   "f": "F-876",
+   "apoyo": "Según McKinsey, el obstáculo principal es la memoria: sistemas que no recuerdan al viajero entre plataformas, o en la misma, lo obligan a empezar de nuevo al comprar.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "mckinsey_skift_viajes_2026",
+   "p": "tiene_limite",
+   "o": "cifras_ia_varian_entre_medios",
+   "f": "F-876",
+   "apoyo": "Las cifras de delegación en la IA se reportan distinto según el medio (la mitad, 16%); no se pudieron verificar contra el PDF completo.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "memoria_cliente_entre_canales",
+   "p": "reduce",
+   "o": "impuesto_reinicio",
+   "f": "F-877",
+   "apoyo": "Constantin (McKinsey) en el Skift Global Forum: el problema mayor es la memoria; sin ella el comprador reinicia al transaccionar. Eco del informe F-876.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "uso_ia_ideas_viaje",
+   "p": "aplica_a",
+   "o": "recorrido_compra_orbital",
+   "f": "F-877",
+   "apoyo": "Cerca de 70% usa la IA para investigar, pero menos de 16% se siente cómodo reservando con ella.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "confianza_en_ia",
+   "p": "asocia_con",
+   "o": "delegacion_reserva_ia",
+   "f": "F-878",
+   "apoyo": "71% está cómodo con que la IA genere ideas, pero solo la mitad la dejaría reservar o resolver un imprevisto; 74% prefiere cerrar la reserva en persona.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "confianza_comercio_agentico",
+   "p": "mide",
+   "o": "delegacion_reserva_ia",
+   "f": "F-879",
+   "apoyo": "Encuesta de Expedia (abr-2026): solo 8% se siente cómodo dejando que una IA haga sus reservas de viaje.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "uso_ia_ideas_viaje",
+   "p": "respalda",
+   "o": "c_ia_canal_descubrimiento",
+   "f": "F-876",
+   "apoyo": "Viajes 2026: 71% usa la IA para ideas, pero solo 16% la usó para reservar algo; crece el descubrimiento, no la compra delegada.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "delegacion_reserva_ia",
+   "p": "respalda",
+   "o": "c_ia_canal_descubrimiento",
+   "f": "F-878",
+   "apoyo": "Solo la mitad dejaría que la IA cierre la reserva y 74% prefiere hacerlo en persona.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "delegacion_reserva_ia",
+   "p": "respalda",
+   "o": "c_ia_canal_descubrimiento",
+   "f": "F-879",
+   "apoyo": "Solo 8% se siente cómodo dejando que una IA haga sus reservas de viaje (encuesta de Expedia, abr-2026).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Integración a pedido del usuario: informe de McKinsey y Skift sobre el viajero (sep-2026) y su cobertura. Leído vía resumen, tabla de contenidos y prensa (el PDF y las páginas no se pudieron abrir desde el entorno): lectura 'abstract'. Las cifras de delegación en la IA varían entre medios."
+}

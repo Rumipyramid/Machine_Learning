@@ -142,6 +142,7 @@ Validez = resultados publicados y verificables. Casi todo lo de esta pista es **
 ### 4.3 Comercio agéntico
 - **Pronósticos:** US$1 billón "orquestado" en EE.UU. al 2030 (F-630); el mismo tipo de analista predice que >40% de los proyectos agénticos se cancelará en 2027 (F-631).
 - **Realidad:** OpenAI retiró su botón de compra a los ~6 meses, con conversión reportada <1% (F-632, solo prensa); 89% de comercios se prepara pero solo 3% de transacciones es agéntica (F-633, fuente única). Lo que sí crece es la IA como **canal de descubrimiento**: +693% de tráfico referido con 31% más conversión (F-634). Las reglas de acceso de los agentes siguen en litigio (F-635).
+- **Viajes, 2026:** solo el 16% de los viajeros de EE.UU. ha usado una IA para reservar algo y la mitad la dejaría reservar, aunque el 71% sí la usa para buscar ideas (F-876, encuesta de McKinsey y Skift). Otra encuesta, de Expedia, da un 8% de comodidad con reservas hechas por IA (F-879, solo prensa). Es el mismo patrón en otro sector: descubrimiento sí, compra delegada todavía no ([[conducta-humano-ia]] §2.11).
 
 ### 4.4 Conducta + IA en servicios financieros y seguros
 - **Lemonade:** loss ratio bruto de 60% en el 2T 2026 (67% un año antes), prima en vigor +32% (F-636, filing leído vía extracto). Crece y mejora, pero **el filing no atribuye la mejora a la IA**.
