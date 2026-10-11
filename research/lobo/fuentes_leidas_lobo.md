@@ -210,3 +210,6 @@
 | F-707 | 🟢 A | 2026-10-10 | Intuición 190 — efecto fundacional (ego depletion): d≈0,62 en un meta-análisis vs. d≈0,04 en réplica multilab 2016; el desacuerdo entre meta-análisis es la señal |
 | F-673 | 🟢 A | 2026-10-10 | Intuición 191 — informar la espera reduce la sobreestimación pero puede empeorar la evaluación; separar percepción y satisfacción |
 | F-553 | 🟢 A | 2026-10-10 | Intuición 192 — sujetos sintéticos LLM malrepresentan y aplanan al grupo; validar dispersión y cercanía al autorretrato, no solo la media |
+| F-711 | 🟢 A | 2026-10-11 | Intuición 193 — réplicas directas con más poder no hallan el efecto Macbeth; el nulo bien hecho pesa más que el original |
+| F-751 | 🟢 A | 2026-10-11 | Intuición 194 — tras el Niño de 2017 la crisis aguda se disipa en ~12 meses; importa el momento del contacto (observacional) |
+| F-753 | 🟢 A | 2026-10-11 | Intuición 195 — el Niño de 2017 redujo el gasto en salud y educación de hogares rurales; el seguro vale por el recorte que evita |
