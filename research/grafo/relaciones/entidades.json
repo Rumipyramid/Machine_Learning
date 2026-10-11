@@ -899,10 +899,20 @@
   "nombre": "Escala de usabilidad de chatbots BUS-11",
   "tipo": "metrica"
  },
+ "buscador_web": {
+  "id": "buscador_web",
+  "nombre": "Buscador web",
+  "tipo": "intervencion"
+ },
  "busqueda_gartner_newsroom": {
   "id": "busqueda_gartner_newsroom",
   "nombre": "Búsqueda propia en gartner.com/newsroom (hallazgo negativo)",
   "tipo": "estudio"
+ },
+ "busqueda_ia": {
+  "id": "busqueda_ia",
+  "nombre": "Búsqueda con IA (asistentes y portales de IA)",
+  "tipo": "intervencion"
  },
  "busqueda_online": {
   "id": "busqueda_online",
@@ -1907,6 +1917,11 @@
  "c_reapropiacion_anticonsumista": {
   "id": "c_reapropiacion_anticonsumista",
   "nombre": "Las estrategias anticonsumistas del diseño son reapropiadas para servir al crecimiento económico",
+  "tipo": "afirmacion"
+ },
+ "c_recorrido_no_lineal": {
+  "id": "c_recorrido_no_lineal",
+  "nombre": "El recorrido de compra ya no es lineal: son órbitas que siguen incluso después de confirmar la compra",
   "tipo": "afirmacion"
  },
  "c_regla_10x_sesgo_cognitivo": {
@@ -3569,6 +3584,11 @@
   "nombre": "Deuda técnica oculta de las interfaces generativas y maleables",
   "tipo": "concepto"
  },
+ "diario_reservas_skift_2026": {
+  "id": "diario_reservas_skift_2026",
+  "nombre": "Estudio de diario de reservas de Skift Research (jul-2026; 211 sesiones en 4 etapas)",
+  "tipo": "estudio"
+ },
  "diarrea_infantil": {
   "id": "diarrea_infantil",
   "nombre": "Hospitalizaciones infantiles por diarrea",
@@ -4448,6 +4468,11 @@
   "id": "fed_metrica",
   "nombre": "FED: métrica no supervisada de evaluación de diálogo con DialoGPT",
   "tipo": "metrica"
+ },
+ "feed_redes_sociales": {
+  "id": "feed_redes_sociales",
+  "nombre": "Feed de redes sociales",
+  "tipo": "intervencion"
  },
  "feedback_facial_manipulado": {
   "id": "feedback_facial_manipulado",
@@ -7494,6 +7519,11 @@
   "nombre": "Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo)",
   "tipo": "concepto"
  },
+ "recorrido_representativo_ilustrativo": {
+  "id": "recorrido_representativo_ilustrativo",
+  "nombre": "Recorrido 'representativo': ilustración cualitativa, no una medición",
+  "tipo": "limitacion"
+ },
  "recorte_ideo_2023": {
   "id": "recorte_ideo_2023",
   "nombre": "Recorte de 32% de la plantilla de IDEO y cierre de oficinas (2023)",
@@ -8343,6 +8373,11 @@
   "id": "sistema_escritura",
   "nombre": "Sistema de escritura (forma de las letras)",
   "tipo": "concepto"
+ },
+ "sitio_proveedor_directo": {
+  "id": "sitio_proveedor_directo",
+  "nombre": "Sitio directo del proveedor",
+  "tipo": "intervencion"
  },
  "slider_transparencia_ios27": {
   "id": "slider_transparencia_ios27",

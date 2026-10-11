@@ -1834,6 +1834,15 @@
    "triples": 14,
    "sin_aporte": [],
    "notas": "Integración a pedido del usuario: informe de McKinsey y Skift sobre el viajero (sep-2026) y su cobertura. Leído vía resumen, tabla de contenidos y prensa (el PDF y las páginas no se pudieron abrir desde el entorno): lectura 'abstract'. Las cifras de delegación en la IA varían entre medios."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-880"
+   ],
+   "triples": 8,
+   "sin_aporte": [],
+   "notas": "Aporte del usuario: gráfico 'Representative orbital booking journey' (McKinsey y Skift, sep-2026), leído completo desde la imagen. Fuente cualitativa de un solo sector."
   }
  ],
  "discrepancias": [

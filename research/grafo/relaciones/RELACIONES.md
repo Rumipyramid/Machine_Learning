@@ -8,29 +8,29 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **878 de 878** (100.0%) |
-| …del cerebro de diseño (citadas en el node) | 274 de 274 |
-| …por rigor | A 299/299 · B 148/148 · C 186/186 · D 195/195 · E 35/35 |
-| Barridos | 111 |
-| Entidades | 1847 |
-| Relaciones | 1938 |
-| Nivel de lectura | ficha 1205 · abstract 732 · completa 1 |
-| Fuerza de las afirmaciones | descriptiva 1147 · teorica 283 · observacional 261 · causal 247 |
+| Fuentes procesadas | **879 de 879** (100.0%) |
+| …del cerebro de diseño (citadas en el node) | 276 de 276 |
+| …por rigor | A 299/299 · B 148/148 · C 187/187 · D 195/195 · E 35/35 |
+| Barridos | 112 |
+| Entidades | 1854 |
+| Relaciones | 1946 |
+| Nivel de lectura | ficha 1205 · abstract 732 · completa 9 |
+| Fuerza de las afirmaciones | descriptiva 1154 · teorica 283 · observacional 262 · causal 247 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `tiene_limite` | metodo | 413 |
+| `tiene_limite` | metodo | 414 |
 | `aumenta` | efecto | 236 |
 | `aplica_a` | estructura | 232 |
 | `asocia_con` | efecto | 163 |
 | `reduce` | efecto | 154 |
-| `respalda` | evidencia | 142 |
+| `respalda` | evidencia | 143 |
 | `es_tipo_de` | estructura | 120 |
 | `refuta` | evidencia | 96 |
 | `origina_en` | metodo | 92 |
-| `parte_de` | estructura | 86 |
+| `parte_de` | estructura | 92 |
 | `mide` | metodo | 70 |
 | `contradice` | evidencia | 64 |
 | `modera` | efecto | 49 |
@@ -281,6 +281,7 @@
 | Sin respaldo científico ni regulación sanitaria | F-855, F-871, F-873 |
 | Financiamiento filantrópico de la investigación sobre conciencia | F-858, F-859, F-860 |
 | Dispositivos de salud con etiqueta 'cuántica' (SCIO, Quest 9, Quantum Laser, analizadores de resonancia) | F-872, F-873, F-874 |
+| Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo) | F-876, F-877, F-880 |
 | Disposición a dejar que una IA reserve por uno (vuelo u hotel) | F-876, F-878, F-879 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
@@ -593,7 +594,7 @@
 | Cerca Magnetics (spin-out de la U. de Nottingham) | F-863, F-864 |
 | La compra de Chopra Global fue por hasta US$5 M en efectivo + acciones y hasta US$3 M de earnout (filing SEC) | F-869, F-870 |
 | The Healing Company (Healing Co Inc., HLCO) | F-869, F-870 |
-| Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo) | F-876, F-877 |
+| Seguir investigando después de reservar (78% de viajeros) | F-876, F-880 |
 | Memoria del cliente entre canales y plataformas | F-876, F-877 |
 | 'Impuesto de reinicio': empezar de nuevo al comprar porque el sistema no recuerda al cliente entre canales | F-876, F-877 |
 | Uso de la IA para buscar ideas y comparar opciones de viaje | F-876, F-877 |
@@ -1500,6 +1501,7 @@
 | 2026-10-11 | F-861, F-862, F-863, F-864, F-865, F-866, F-867, F-868 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
 | 2026-10-11 | F-869, F-870, F-871, F-872, F-873, F-874, F-875 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
 | 2026-10-11 | F-876, F-877, F-878, F-879 | 14 | – | Integración a pedido del usuario: informe de McKinsey y Skift sobre el viajero (sep-2026) y su cobertura. Leído vía resumen, tabla de contenidos y prensa (el PDF y las páginas no se pudieron abrir des |
+| 2026-10-11 | F-880 | 8 | – | Aporte del usuario: gráfico 'Representative orbital booking journey' (McKinsey y Skift, sep-2026), leído completo desde la imagen. Fuente cualitativa de un solo sector. |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

@@ -750,6 +750,7 @@ Estados: `abierta` · `respaldada` · `refutada` · `parcial`.
 | **H33** | **Los estudios de generative UI que ganan en usabilidad percibida la miden en sesión única y con una línea base débil; los que miran fidelidad de implementación encuentran brechas grandes** | `abierta` *(iter. 5)* — F-476 (Google; SUS 84 vs. 54, línea base 'Pobre') vs. F-475 (Design Theater: ~25% de justificaciones no implementadas, 34% en lo funcional) | Replicación independiente con ≥5 sesiones, línea base diseñada por humanos y medición de tiempo de tarea (también falsaría H3) |
 | **H34** | **La caída causal de demanda por IA se concentra en tareas de producción de imagen en plataformas freelance, no en el empleo de diseñadores en general** | `abierta` *(nueva, iter. 5e)* — F-521 (DiD, −17% en publicaciones de creación de imágenes) vs. F-308 (BLS: +2% en diseñadores gráficos 2024-2034) | Estudio con datos de empleo asalariado (no solo plataformas) y por seniority; o proyecciones del BLS 2025-2035 que revisen el signo |
 | **H35** | **El campo no corrige: acumula** *(reformulación de H22, abierta en la iter. 5i)*. Una cifra de ROI de diseño desmontada públicamente **no pierde circulación medible** de un semestre al siguiente: sigue apareciendo en piezas nuevas con la misma atribución | `abierta` *(iter. 5i)* — respaldo de origen en la iter. 3 (las cinco cifras desmontadas siguen vivas, F-423, F-425); C17 ya la usa como regla. Falta la medición semestral que la vuelva falsable | Contar apariciones nuevas de "$1→$100", "DVI 211%/228%" y "135%" en piezas publicadas en 2026-S1 vs. 2026-S2 con la misma consulta. **Se refuta si alguna cifra desmontada cae >50% en circulación** |
+| **H36** | **Diseñar el recorrido como órbitas mejora la conversión frente a un embudo lineal.** Predicción: un recorrido con memoria entre canales y una etapa post-compra diseñada convierte más y pierde menos clientes en el reingreso que uno pensado como embudo | `abierta` *(nueva, addendum 5j, 2026-10-11)* — solo evidencia cualitativa de viajes (F-880, diario de 211 sesiones) y la cifra de 78% de búsqueda post-reserva (F-876) | Prueba A/B en un flujo digital de seguros: con memoria entre canales y seguimiento post-compra frente al flujo actual; medir abandono en el reingreso y conversión |
 
 ---
 
@@ -948,6 +949,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 | 5g | 2026-10-03 | ⚔️ **Búsqueda adversarial contra las hipótesis respaldadas** (objetivo declarado: subir la autocorrección, hoy 6%) | **Resultado honesto: 0 refutaciones nuevas, 1 degradación.** H13 pasa de `respaldada` a `parcial` (F-527: el mercado castiga costos y rentabilidad, no disrupción). H20 resiste (no se halló estudio hispanohablante con muestra propia). H16 no se activa (Q2 reportó NDR). H15 y H10 sin datos nuevos. Además se corrigió el lector del tablero: 'parcial — respaldada por F-n' (H4, H12) se contaba como respaldada. | Replicar H20/H25 con muestreo sistemático; el margen bruto del Q3 de Figma (nov-2026) |
 | 5h | 2026-10-03 | 🔁 **Intento de réplica sistemática de H20 y H25** (las dos hipótesis que más pueden caer) | **No se pudo ejecutar; ningún estado cambia.** Protocolo: reunir ≥30 piezas en español/portugués sobre 'tendencias de diseño 2026' con 5 búsquedas distintas, abrir cada una y contar (a) cifras con fuente nombrada, (b) cifras sin fuente, (c) origen del emisor. Resultado: se recolectaron ~15 piezas candidatas pero **8 de 8 aperturas fallaron** (todos los dominios editoriales hispanos/lusos estaban bloqueados por la red del entorno), así que no hay conteo. Lo único observable por resumen: las cifras 73% / 93% / 54% aparecen idénticas en piezas en español, portugués e inglés sin estudio nombrado (F-528, 🟠D) — coherente con H20, **no una prueba**. No se intentó sortear el bloqueo. | Pasar las piezas como texto o PDF (≥30), o una lista de URLs legibles; con eso la réplica se corre en una sesión y puede refutar H20/H25 |
 | 5i | 2026-10-03 | ⚔️ **Confrontar hipótesis abiertas con su propio criterio de refutación** (objetivo declarado: autocorrección ≥20%; regla: registrar el resultado sea cual sea) | **H22 → `refutada`** (corrección contable: 'Reformulada' estaba fuera del vocabulario; la reformulación se abre como **H35**). **H30 → `refutada`**: 5/5 metas públicas de innovación reportan (Credicorp 8,1% hacia meta 10% en 2026, DSM 21% vs. 20%, Croda, Henkel, 3M); el caso testigo de F-460 estaba mal. **H23 → `parcial`**: 4 de 6 cifras rastreables atribuidas a autoridades no existen como se citan; domina la mala atribución. **H27 → `refutada`**: 5/5 cifras de fracaso rastreables a un documento identificable (malo), igual que las de éxito; el eco de cita no distingue el signo. Autocorrección **1/17 → 4/20 (20%)**, con una refutación contable y dos de muestra no aleatoria. F-529 a F-541 | (a) **réplica con muestra aleatoria de H30 y H27**: si cualquiera vuelve, la autocorrección cae a 16% y debe registrarse; (b) **H30 con muestra aleatoria** (metas anunciadas en prensa, no empresas que ya reportan) para ver si la refutación aguanta; (c) **H35 se mide en 2026-S2** contra 2026-S1; (d) corregir F-460 en el ledger si el usuario lo autoriza |
+| 5j | 2026-10-11 | 🧭 **Aporte del usuario:** gráfico del recorrido en órbitas (McKinsey y Skift, viajes, sep-2026) | §13.10 nueva; F-880 (gráfico leído completo) y F-876 (informe, por resumen); hipótesis H36 nueva | Buscar un estudio equivalente en seguros; leer el PDF completo del informe |
 
 ---
 
@@ -1903,6 +1905,32 @@ autocorrección del tablero pasa de 1/17 a **4/20 (20%)**, justo en el umbral de
 contra leer esto como logro:** una de las refutaciones es contable (H22) y dos dependen de muestras
 no aleatorias (H30, H27). El umbral se cruzó con evidencia real pero delgada. Una réplica con muestra
 aleatoria de cualquiera de las dos lo devolvería a 16%, y así debe registrarse si ocurre.
+
+---
+
+### 13.10 🧭 Addendum 5j (2026-10-11) — El recorrido del cliente se dibuja en órbitas, no en embudo
+*Aporte del usuario: el gráfico "Representative orbital booking journey" del informe de McKinsey y Skift sobre viajes (sep-2026), leído completo (F-880); el resto del informe solo por resumen y prensa (F-876).*
+
+**Qué muestra.** El recorrido de compra ya no baja en línea recta de la inspiración a la compra. Avanza en órbitas: en cada etapa la persona da vueltas, vuelve atrás y sigue buscando, incluso después de confirmar la reserva. El gráfico distingue cuatro etapas (inspiración, investigación, reserva y post-reserva) y la plataforma que predomina en cada una:
+
+| Etapa | Plataforma predominante |
+|---|---|
+| Inspiración | Redes sociales, búsqueda con IA y buscador web, sin una dominante |
+| Investigación | Buscador web |
+| Reserva | Sitio directo del proveedor |
+| Post-reserva | Búsqueda con IA |
+
+Dos datos del mismo informe le dan escala: unos 65 puntos de contacto antes de reservar (frente a unos 45 en 2018) y un 78% que sigue investigando después de reservar (F-876).
+
+**Qué tan sólido es.** 🟡 *Plausible, mal probado* en la escala de §5. El gráfico sale de un estudio de diario de Skift Research: 211 sesiones de planificación, registradas por 26 viajeros de EE.UU. según el resumen del informe (F-876). El propio informe lo llama "representativo", así que es una ilustración bien fundada, no una medición. Es evidencia cualitativa de un solo sector.
+
+**Qué cambia para el diseño (deducción, no hallazgo).**
+- **El mapa de recorrido debería dibujar bucles, no una línea.** Un mapa lineal esconde los momentos de reingreso, que es donde se pierde al cliente.
+- **La post-compra es una etapa a diseñar, no un cierre.** Si el 78% sigue buscando después de comprar, la confirmación no termina la relación.
+- **Cada etapa tiene su canal.** El canal de la compra (el sitio del proveedor) no es el de la inspiración (redes sociales e IA). Diseñar un solo canal para todo el recorrido deja huecos.
+- **La memoria entre canales es la palanca principal.** McKinsey llama "impuesto de reinicio" a obligar al cliente a empezar de nuevo cuando un sistema no lo recuerda (F-876; ver [[conducta-humano-ia]] §2.11).
+
+**Para seguros (inferencia).** La compra de un seguro es más rara y más larga que la de un viaje. Si el patrón se sostiene, las órbitas serían menos frecuentes pero más largas, y el asesor sería quien guarda la memoria entre canales. Queda como idea en prueba (H36). Toca de cerca el frente de service design (H18, §10.2) y la venta de seguros de vida ([[proyecto-back-to-basics-ffvv-vida]]).
 
 ---
 

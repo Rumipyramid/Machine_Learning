@@ -18,7 +18,7 @@
    "id": "conducta-humano-ia",
    "type": "node",
    "lines": 155,
-   "cites": 45,
+   "cites": 46,
    "design": false
   },
   {
@@ -122,8 +122,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2005,
-   "cites": 274,
+   "lines": 2033,
+   "cites": 276,
    "design": true
   },
   {
@@ -8071,6 +8071,15 @@
    "autor": "Expedia Group (vía Skift)",
    "anio": "2026",
    "huerfana": false
+  },
+  {
+   "id": "F-880",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Gráfico 'Representative orbital booking journey' (Skift Research booking journey diary study, jul-2026), en *Winning Hearts in an Age of Inf",
+   "autor": "Skift Research (estudio de diario de reservas), publicado por McKinsey & Company",
+   "anio": "2026",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -13547,6 +13556,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-876",
+   "k": "cita"
+  },
+  {
    "s": "conducta-humano-ia",
    "t": "F-877",
    "k": "cita"
@@ -13559,6 +13573,16 @@
   {
    "s": "convergencia-psicologia-economia-ia",
    "t": "F-879",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-880",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-880",
    "k": "cita"
   }
  ],
@@ -13841,11 +13865,11 @@
    },
    {
     "fecha": "2026-10-11",
-    "nuevas": 4,
-    "acumuladas": 878,
+    "nuevas": 5,
+    "acumuladas": 879,
     "AB": 0,
     "rigor": {
-     "C": 1,
+     "C": 2,
      "D": 3
     }
    }
@@ -16029,12 +16053,12 @@
     "fuente": "git"
    },
    {
-    "fuentes": 874,
+    "fuentes": 878,
     "rigor": {
      "B": 148,
      "A": 299,
-     "C": 185,
-     "D": 192,
+     "C": 186,
+     "D": 195,
      "?": 15,
      "E": 35
     },
@@ -16042,7 +16066,7 @@
     "outputs": 5,
     "wikilinks": 142,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 766,
+    "fuentes_citadas_en_nodes": 769,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -16063,13 +16087,13 @@
      "cites": 274
     },
     "fecha": "2026-10-11",
-    "commit": "1cc5b65",
+    "commit": "33b62f4",
     "fuente": "git"
    }
   ],
   "design": {
    "hyp": {
-    "abierta": 15,
+    "abierta": 16,
     "parcial": 14,
     "refutada": 4,
     "respaldada": 2
@@ -16083,7 +16107,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 2005,
+   "lines": 2033,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

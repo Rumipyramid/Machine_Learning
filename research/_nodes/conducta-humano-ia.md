@@ -73,7 +73,7 @@ La gente usa la IA para informarse, pero todavía no la deja cerrar la compra. E
 
 El mismo informe deja dos lecciones de diseño:
 - **Más opciones no aceleran la decisión.** El 60% dice que la IA le muestra opciones más rápido, pero esas opciones extra alargan la elección (F-876). No conviene leerlo como "sobrecarga de opciones": ese efecto casi desaparece en promedio (F-119).
-- **El "impuesto de reinicio".** Cuando un sistema no recuerda al cliente entre canales, o dentro del mismo canal, lo obliga a empezar de nuevo justo al comprar (F-876; presentado en el Skift Global Forum, F-877). El recorrido ya no es un embudo sino una "órbita": unos 65 puntos de contacto antes de reservar, y el 78% sigue investigando después.
+- **El "impuesto de reinicio".** Cuando un sistema no recuerda al cliente entre canales, o dentro del mismo canal, lo obliga a empezar de nuevo justo al comprar (F-876; presentado en el Skift Global Forum, F-877). El recorrido ya no es un embudo sino una "órbita": unos 65 puntos de contacto antes de reservar, y el 78% sigue investigando después. El gráfico del recorrido en órbitas y lo que cambia para el diseño están en [[tendencias-diseno-innovacion]] §13.10 (F-880).
 
 **Para seguros (inferencia, no evidencia).** En viajes, una compra frecuente y fácil de deshacer, solo la mitad dejaría que la IA cierre. En seguros, una compra rara, compleja y de largo plazo, la delegación debería ser igual o menor. La IA serviría para informar y comparar, y el cierre seguiría pidiendo una persona o una confirmación explícita. Queda como idea en prueba (HC11).
 

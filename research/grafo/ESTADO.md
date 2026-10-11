@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,546 líneas |
+| Nodes (`_nodes/`) | 20 | 8,574 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
-| Fuentes en el ledger | 878 | 🟢A 299 · 🔵B 148 · 🟡C 186 · 🟠D 195 · 🔴E 35 · otras/sin clasificar 15 |
+| Fuentes en el ledger | 879 | 🟢A 299 · 🔵B 148 · 🟡C 187 · 🟠D 195 · 🔴E 35 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 142 | recíprocas: 142 de 142 (100%) |
-| Fuentes citadas por ≥1 node | 769 de 878 | 88% del ledger; **109 viven solo en el ledger** |
-| Fuentes citadas por ≥2 nodes (transversales) | 105 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 878 de 878 fuentes (100%) | 1938 relaciones · 111 barridos · detalle en `relaciones/RELACIONES.md` |
+| Fuentes citadas por ≥1 node | 770 de 879 | 88% del ledger; **109 viven solo en el ledger** |
+| Fuentes citadas por ≥2 nodes (transversales) | 106 | evidencia reutilizada entre temas |
+| **Grafo semántico** (relaciones extraídas) | 879 de 879 fuentes (100%) | 1946 relaciones · 112 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -22,11 +22,11 @@
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 5 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02) | cuántas veces se confrontó el node |
-| Tamaño | 2,005 líneas | crecimiento ≠ calidad; ver trazabilidad |
-| Fuentes citadas explícitamente | 274 | F-n individuales dentro del node |
+| Tamaño | 2,033 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Fuentes citadas explícitamente | 276 | F-n individuales dentro del node |
 | …de rigor A/B | 140 (51%) | solidez de la base |
-| Hipótesis vivas | 35: abierta 15 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
-| **Falsabilidad ejercida** | 57% (20/35) | hipótesis que ya se movieron de `abierta` |
+| Hipótesis vivas | 36: abierta 16 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
+| **Falsabilidad ejercida** | 56% (20/36) | hipótesis que ya se movieron de `abierta` |
 | **Tasa de autocorrección** | 20% (4/20) | de las resueltas, cuántas se refutaron: 0% sostenido sería señal de confirmación sesgada |
 | Reglas de criterio | 22 | §7 |
 | **Trazabilidad de reglas** | 100% (22/22) | reglas con ≥1 F-n en su propio párrafo |
@@ -38,13 +38,13 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 25 | 0.085 | ✅ |
+| `conducta-humano-ia` | 27 | 0.092 | ✅ |
 | `proyecto-back-to-basics-ffvv-vida` | 19 | 0.066 | ✅ |
-| `convergencia-psicologia-economia-ia` | 9 | 0.023 | ✅ |
+| `convergencia-psicologia-economia-ia` | 10 | 0.026 | ✅ |
 | `fenomenos-psicologicos` | 9 | 0.024 | ✅ |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.028 | ✅ |
 | `material-visual-venta-consultiva` | 8 | 0.028 | ✅ |
-| `mecanismos-seguros-salud` | 7 | 0.022 | ✅ |
+| `mecanismos-seguros-salud` | 7 | 0.021 | ✅ |
 | `behavioral-design-estado-disciplina` | 6 | 0.022 | ✅ |
 | `glosario-seguro-vida-peru` | 4 | 0.014 | ✅ |
 | `seguros-comportamiento-mundo-peru` | 4 | 0.014 | ✅ |
@@ -88,7 +88,7 @@
 | 2026-10-04 | 95 | 740 | 94 | ████████████████████████ |
 | 2026-10-07 | 60 | 800 | 33 | ███████████████ |
 | 2026-10-10 | 74 | 874 | 36 | ██████████████████ |
-| 2026-10-11 | 4 | 878 | 0 | █ |
+| 2026-10-11 | 5 | 879 | 0 | █ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -104,7 +104,7 @@
 | 2026-10-07 | `7d6f508` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
-| 2026-10-11 | `1cc5b65` | 874 | 20 | 5 | 142 | 766 | 2005 | 15 | 20 | 22 |
+| 2026-10-11 | `33b62f4` | 878 | 20 | 5 | 142 | 769 | 2005 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -115,7 +115,7 @@
 | M1 Base sólida (A+B / ledger) | 51% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
 | M2 Cobertura de citación | 88% | cuánto del ledger sostiene algún node | un node puede citar mal |
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
-| M4 Falsabilidad ejercida (diseño) | 57% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
+| M4 Falsabilidad ejercida (diseño) | 56% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
 | M6 Integración (diseño↔resto) | 14/19 nodes enlazados; 13 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
 | M7 Lectura profunda (Lobo) | 196 fuentes leídas a fondo = 22% del ledger; 195 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
@@ -135,13 +135,13 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2005 | 274 | 140 | 14/14 | 2026-10-11 | 2026-10-11 v4.1 |
+| `tendencias-diseno-innovacion` | 2033 | 276 | 140 | 14/14 | 2026-10-11 | 2026-10-11 v4.1 |
 | `convergencia-psicologia-economia-ia` | 248 | 119 | 51 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
 | `fenomeno-el-nino-impacto-personas` | 404 | 58 | 32 | 3/3 | 2026-10-07 | 2026-10-07 v1.1 |
 | `mecanismos-seguros-salud` | 355 | 57 | 35 | 9/9 | 2026-10-10 | 2026-10-10 v1.2 |
-| `conducta-humano-ia` | 155 | 45 | 29 | 8/8 | 2026-10-11 | 2026-10-11 v1.1 |
+| `conducta-humano-ia` | 155 | 46 | 29 | 8/8 | 2026-10-11 | 2026-10-11 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 937 | 33 | 29 | 12/12 | 2026-10-11 | 2026-10-11 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 389 | 23 | 2 | 6/6 | 2026-10-04 | 2026-10-04 v1.0 |
 | `modelo-salud-ia-farmacias-peru` | 618 | 23 | 18 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |

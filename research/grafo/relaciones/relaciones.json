@@ -1706,12 +1706,30 @@
    ]
   },
   {
+   "id": "buscador_web",
+   "nombre": "Buscador web",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-880"
+   ]
+  },
+  {
    "id": "busqueda_gartner_newsroom",
    "nombre": "Búsqueda propia en gartner.com/newsroom (hallazgo negativo)",
    "tipo": "estudio",
    "grado": 2,
    "fuentes": [
     "F-418"
+   ]
+  },
+  {
+   "id": "busqueda_ia",
+   "nombre": "Búsqueda con IA (asistentes y portales de IA)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-880"
    ]
   },
   {
@@ -3665,6 +3683,15 @@
    "fuentes": [
     "F-277",
     "F-288"
+   ]
+  },
+  {
+   "id": "c_recorrido_no_lineal",
+   "nombre": "El recorrido de compra ya no es lineal: son órbitas que siguen incluso después de confirmar la compra",
+   "tipo": "afirmacion",
+   "grado": 3,
+   "fuentes": [
+    "F-880"
    ]
   },
   {
@@ -6909,6 +6936,15 @@
    ]
   },
   {
+   "id": "diario_reservas_skift_2026",
+   "nombre": "Estudio de diario de reservas de Skift Research (jul-2026; 211 sesiones en 4 etapas)",
+   "tipo": "estudio",
+   "grado": 2,
+   "fuentes": [
+    "F-880"
+   ]
+  },
+  {
    "id": "diarrea_infantil",
    "nombre": "Hospitalizaciones infantiles por diarrea",
    "tipo": "resultado",
@@ -8591,6 +8627,15 @@
    "grado": 1,
    "fuentes": [
     "F-158"
+   ]
+  },
+  {
+   "id": "feed_redes_sociales",
+   "nombre": "Feed de redes sociales",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-880"
    ]
   },
   {
@@ -10319,9 +10364,10 @@
    "id": "investigacion_post_reserva",
    "nombre": "Seguir investigando después de reservar (78% de viajeros)",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-876"
+    "F-876",
+    "F-880"
    ]
   },
   {
@@ -14478,10 +14524,20 @@
    "id": "recorrido_compra_orbital",
    "nombre": "Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo)",
    "tipo": "concepto",
-   "grado": 3,
+   "grado": 8,
    "fuentes": [
     "F-876",
-    "F-877"
+    "F-877",
+    "F-880"
+   ]
+  },
+  {
+   "id": "recorrido_representativo_ilustrativo",
+   "nombre": "Recorrido 'representativo': ilustración cualitativa, no una medición",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-880"
    ]
   },
   {
@@ -16089,6 +16145,15 @@
    "grado": 1,
    "fuentes": [
     "F-676"
+   ]
+  },
+  {
+   "id": "sitio_proveedor_directo",
+   "nombre": "Sitio directo del proveedor",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-880"
    ]
   },
   {
@@ -41038,11 +41103,107 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-11",
    "clase": "evidencia"
+  },
+  {
+   "id": "T-1939",
+   "s": "diario_reservas_skift_2026",
+   "p": "respalda",
+   "o": "c_recorrido_no_lineal",
+   "f": "F-880",
+   "apoyo": "Gráfico de McKinsey con datos del diario de Skift: el recorrido no es lineal; es una serie de órbitas que pueden extenderse incluso más allá de la confirmación de la reserva.",
+   "lectura": "completa",
+   "fuerza": "observacional",
+   "fecha": "2026-10-11",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-1940",
+   "s": "diario_reservas_skift_2026",
+   "p": "tiene_limite",
+   "o": "recorrido_representativo_ilustrativo",
+   "f": "F-880",
+   "apoyo": "El gráfico muestra un recorrido 'representativo' armado a partir de 211 sesiones de diario agrupadas en 4 etapas: es una ilustración cualitativa.",
+   "lectura": "completa",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-11",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1941",
+   "s": "recorrido_compra_orbital",
+   "p": "parte_de",
+   "o": "c_recorrido_no_lineal",
+   "f": "F-880",
+   "apoyo": "El gráfico dibuja cuatro órbitas (inspiración, investigación, reserva y post-reserva) que se achican hasta el viaje.",
+   "lectura": "completa",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-11",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-1942",
+   "s": "feed_redes_sociales",
+   "p": "parte_de",
+   "o": "recorrido_compra_orbital",
+   "f": "F-880",
+   "apoyo": "En la inspiración aparecen el feed de redes sociales, la búsqueda con IA y el buscador web, sin que ninguno domine.",
+   "lectura": "completa",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-11",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-1943",
+   "s": "busqueda_ia",
+   "p": "parte_de",
+   "o": "recorrido_compra_orbital",
+   "f": "F-880",
+   "apoyo": "La búsqueda con IA aparece en la inspiración y es la plataforma predominante en la post-reserva.",
+   "lectura": "completa",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-11",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-1944",
+   "s": "buscador_web",
+   "p": "parte_de",
+   "o": "recorrido_compra_orbital",
+   "f": "F-880",
+   "apoyo": "El buscador web es la plataforma predominante en la etapa de investigación.",
+   "lectura": "completa",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-11",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-1945",
+   "s": "sitio_proveedor_directo",
+   "p": "parte_de",
+   "o": "recorrido_compra_orbital",
+   "f": "F-880",
+   "apoyo": "La reserva ocurre sobre todo en el sitio directo del proveedor.",
+   "lectura": "completa",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-11",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-1946",
+   "s": "investigacion_post_reserva",
+   "p": "parte_de",
+   "o": "c_recorrido_no_lineal",
+   "f": "F-880",
+   "apoyo": "La órbita de post-reserva muestra que la búsqueda sigue después de confirmar la reserva, ahora con la IA como canal principal.",
+   "lectura": "completa",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-11",
+   "clase": "estructura"
   }
  ],
  "generado": "2026-10-11",
  "cobertura": {
-  "procesadas": 878,
-  "total": 878
+  "procesadas": 879,
+  "total": 879
  }
 }
