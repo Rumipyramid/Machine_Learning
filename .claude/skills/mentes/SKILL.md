@@ -48,8 +48,11 @@ pensamiento con oficio, reglas y una sombra que vigilar.
   tal y se dice qué la confirmaría o la rompería.
 - **Efectos psicológicos:** antes de apoyarse en uno, consultar su estado en
   `research/_nodes/fenomenos-psicologicos.md` (regla RF1). Si está 🔴 o 🟠, no sirve de base.
-- **Lenguaje claro.** Frases cortas; los códigos (`F-521`, `H13`) van entre paréntesis después de la idea dicha
-  con palabras; las siglas se explican la primera vez.
+- **Redacción de experto (regla del usuario, 2026-10-10).** Toda lectura sigue `REDACCION.md`: empieza por la
+  conclusión, una idea por frase, y **nada que solo el sistema conozca**: ni "la intuición 23 del Lobo", ni "H13", ni
+  nombres de archivos, ni palabras del método (mesa, puente, ficha, grafo). Las fuentes se cuentan con palabras (qué
+  encontró, quién, cuándo, qué tan sólida es) y el código `F-n` va al final. Prueba final: alguien que lea solo la
+  lectura entiende qué se afirma, en qué se apoya y qué hacer.
 - **Sin evidencia nueva por defecto.** Las mentes contrastan contra lo que el cerebro ya tiene. Si falta el hecho,
   lo dicen y sugieren `/seeker` o `/trinidad`. Si el usuario pide verificar afuera y se usa una fuente externa,
   se registra con `cronista`.
@@ -71,6 +74,9 @@ pensamiento con oficio, reglas y una sombra que vigilar.
 
 Las propuestas son solo ideas: se diseñan cuando el usuario lo pida, una a la vez, con el mismo molde que el Mago
 (ficha `<mente>.md` + subagente `.claude/agents/<mente>.md` + herramienta determinista si hace falta).
-En "Pregúntale a Mu" (artefacto) por ahora solo está el botón de El Mago: la página arma su mesa con los datos
-que `build_corpus.py` toma de `mago.py` y aplica la ficha en línea. La
+En "Pregúntale a Mu" (artefacto), bajo cada respuesta, está la fila **Otras miradas** con un botón por mente activa
+(El Mago y La Papisa). La página arma en el navegador lo que cada mente revisa (las conexiones del Mago vienen de
+`mago.py` vía `build_corpus.py`; lo que calló la respuesta, del índice de fuentes, hipótesis, desacuerdos y backlog),
+lo traduce a lenguaje llano antes de enviarlo a Claude y aplica la ficha y `REDACCION.md` en línea. Al sumar una
+mente nueva, se agrega a `MENTES` en `research/grafo/preguntar/index.html`. La
 simbología de cada carta está en `.claude/skills/edipo2/references/tarot_marsella.json` (no se duplica aquí).

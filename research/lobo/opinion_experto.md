@@ -5748,6 +5748,27 @@ F-553 (Wang, Morgenstern & Dickerson, *Nature Machine Intelligence*, 2025; arXiv
 - **Conexión razonada, no forzada:** tesis 27 y `lapuerta` (validar dispersión intra-segmento); refuerza la confianza Media de tesis 27, no la sube.
 
 
+### 193. Un efecto de priming que no replica en réplicas directas y con más poder no entra a un diseño; el nulo bien hecho pesa más que el original pequeño
+F-711 (Earp, Everett, Madva & Hamlin, *Basic and Applied Social Psychology*, 2014). Réplicas directas del estudio 2 de Zhong y Liljenquist (limpieza física y pureza moral), con los materiales originales, 153 participantes (más de cinco veces el original) y muestras de varios países: no hallaron el efecto Macbeth en ningún experimento. Los autores no dicen que el efecto no exista; piden reevaluar la evidencia. Un meta-análisis posterior de 15 estudios (*Replication*) da g≈0,17 en total y g≈0,07 en laboratorios independientes: casi nada.
+**Heurística:** antes de usar un efecto de «limpieza», «sensación física» o priming en un mensaje o en un flujo de venta, pedir las réplicas directas y mirar el resultado de los laboratorios independientes, no el estudio fundacional. Si el efecto solo vive donde lo midió quien lo propuso, se trata como hipótesis.
+- **Fuente:** F-711 (🟢A; réplica directa; leída por resumen y reseñas, lectura débil)
+- **Leído a fondo:** 2026-10-11 (`WebSearch`)
+- **Conexión razonada, no forzada:** refuerza la lectura de 190 (el desacuerdo entre estudios es la señal); no toca ninguna tesis.
+
+### 194. Después de un desastre, la crisis aguda es casi universal y se disipa en un año: el momento del contacto importa más que el perfil
+F-751 (Culquichicón et al., *PLOS Global Public Health*, 2024). Cohorte de 179 madres de Piura tras el Niño costero de 2017, medidas a los 3, 8 y 12 meses. Estrés postraumático: 38,1% → 1,9% → casi 0%. Inseguridad alimentaria severa: 90,0% → 31,8% → 13,1%. El capital social cognitivo alto subió (42,1% → 86,7% → 77,7%) y los autores sugieren que ayudó a recuperarse. Es observacional y sin grupo control: asociación, no causa. Muestra de tres distritos, no de todo el país.
+**Heurística:** en un producto o mensaje para hogares afectados, la ventana útil es de meses y la necesidad inicial es de liquidez y comida, no de cobertura a largo plazo. Un contacto a los 3 meses y uno a los 12 hablan con personas distintas. Pide la curva en el tiempo, no una foto.
+- **Fuente:** F-751 (🟢A; cohorte con tres cortes; leída por resumen, texto completo no abierto)
+- **Leído a fondo:** 2026-10-11 (`WebSearch`)
+- **Conexión razonada, no forzada:** apoya la tesis 26 (el hueco de RIMAC es la liquidez del hogar); no cambia su confianza porque el tamaño y el contexto son de un solo evento.
+
+### 195. Tras un desastre el hogar recorta salud y educación; el seguro mide su valor en lo que evita recortar
+F-753 (Malpartida & Guembes, Universidad de Piura, *Economía* PUCP, 95:69-93, 2025; DOI 10.18800/economia.202501.003). Diferencias en diferencias con panel de hogares 2015-2019: el Niño de 2017 redujo el gasto per cápita en salud y educación de los hogares rurales afectados de la costa norte. Los autores lo atribuyen al golpe al ingreso agrícola. Es una estimación sobre hogares rurales, no urbanos, y depende del supuesto de tendencias paralelas.
+**Heurística:** al vender protección a un hogar expuesto, el argumento fuerte no es la pérdida del bien sino el recorte de gasto que se impone después (salud, educación). Antes de usar la cifra, verificar el tamaño del efecto en el texto completo y si aplica a hogares urbanos.
+- **Fuente:** F-753 (🟢A; diferencias en diferencias; leída por resumen y ficha)
+- **Leído a fondo:** 2026-10-11 (`WebSearch`; lectura débil, sin tamaño del efecto)
+- **Conexión razonada, no forzada:** apoya la tesis 26 en el mecanismo (liquidez del hogar); no sube su confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5921,50 +5942,8 @@ F-553 (Wang, Morgenstern & Dickerson, *Nature Machine Intelligence*, 2025; arXiv
 - **2026-09-09** — *(Detalle podado y fusionado al resumen el 2026-10-09)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
 - **2026-09-10** — *(Detalle podado y fusionado al resumen el 2026-10-10)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-- **2026-09-11** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward `2937e16→fb4eefb` que trajo consigo el propio commit del 2026-09-10 de esta
-  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
-  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 11 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  vigesimonoveno día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra
-  ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo
-  por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no
-  la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva treinta días sin
-  correr). **Poda de bitácora:** el bloque "2026-08-12" (corrida diaria + revisión profunda de
-  `cronista`, ambas del mismo día) salió por completo de la ventana de ~30 días (cutoff ≈2026-08-12) —
-  lo fusioné con el bloque "2026-08-01 a 2026-08-10" en un resumen ampliado "2026-08-01 a 2026-08-12";
-  no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive en sus propias
-  secciones con fecha. **La rutina diaria de intuición sí pudo correr hoy** (a diferencia de ayer, cuya
-  caída de herramientas de red ya quedó registrada y pospuesta): recalculé por script el universo 🟢A
-  del ledger, esta vez con el filtro estricto ya corregido el 2026-09-08 aplicado también a falsos
-  positivos por *substring* (una fila cuya rigurosidad primaria es 🔵B pero *menciona* "🟢 A" en el
-  texto de su celda, como F-457 y F-466, no cuenta como 🟢A — el filtro correcto exige que el marcador
-  de rigurosidad *empiece* con 🟢A): **134 filas**, cifra que se mantiene estable, contra
-  `fuentes_leidas_lobo.md` (102 ya leídas) — 32 pendientes — y elegí 3 al azar sin reemplazo (Python
-  `random.sample`, sin semilla fija): F-403 (Bentley et al. 2026, CHI, expressive design vs. usability
-  plateau, ya citada en el node de diseño/innovación solo por su cifra agregada de velocidad/estética),
-  F-65 (panel de logfiles de salud móvil en Hong Kong, ya citada en el ledger solo por su aporte
-  metodológico de validez logfile-vs-autorreporte) y F-337 (Bruns & Perino 2023, reactancia a defaults,
-  ya citada solo por el framing "experto" que reduce la amenaza percibida). Las URLs directas de las
-  tres (doi.org/chi2026.acm.org, ncbi.nlm.nih.gov, sciencedirect.com) dieron `EGRESS_BLOCKED` por el
-  proxy del entorno — a diferencia de ayer, sí funcionaron `WebSearch` y la reconstrucción vía búsqueda
-  dirigida, que confirmó detalle de mecanismo/hallazgo nuevo en las tres, no solo el resumen de una
-  línea ya citado. Sumé las entradas 103, 104 y 105 de Intuición acumulada: (103) el efecto de
-  usabilidad+estética del rediseño Material 3 Expressive es más fuerte en participantes de 45+ años —
-  dato de moderador etario ausente del resumen del ledger, que convierte un hallazgo genérico de HCI en
-  palanca de producto para el segmento de mayor prima/necesidad en seguros de vida/salud, matiza el
-  §11.4 del node de diseño/innovación; (104) F-65 se citó siempre solo por su punto metodológico
-  (logfile > autorreporte), pero su hallazgo sustantivo real — adopción de apps de salud del 27.5%,
-  sesgada a mujeres y mayor educación, con uso concentrado de noche y fin de semana — nunca había
-  entrado al ledger; instinto declarado, no tesis, sobre a quién y cuándo dirigir el canal
-  farmacia+triage; (105) el experimento de Bruns & Perino muestra que un default fijado *por debajo* de
-  la motivación intrínseca de un decisor reduce su conducta, un efecto que ni la recomendación ni el
-  mandato replican — heurística de diseño de default (personalizar por perfil de motivación, no fijar
-  uno único) que conecta con la intuición 6 (F-230, incentivo contingente socava motivación ya
-  existente) como la misma familia de error de diseño. Ninguna tesis de negocio cambió de confianza
-  numérica por esta corrida — es el mecanismo paralelo de intuición. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 29 días de
-  historial (2026-08-13 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
+- **2026-09-11** — *(Detalle podado y fusionado al resumen el 2026-10-11)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-12** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward `2937e16→ff84439` que trajo consigo el propio commit del 2026-09-11 de esta
   opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
@@ -6799,3 +6778,5 @@ F-553 (Wang, Morgenstern & Dickerson, *Nature Machine Intelligence*, 2025; arXiv
 - **2026-10-09** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** desde ayer (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 141 pendientes → 138 tras hoy):** sorteo F-664, F-738 y F-647, leídas vía `WebSearch` (resúmenes y literatura secundaria; lectura débil, declarada). Entradas 187 (norma descriptiva: cuenta la cercanía a la situación inmediata), 188 (D grande sobre constructo heterogéneo ≠ peso en una decisión; sesgo de publicación) y 189 (Asch: la unanimidad es frágil). Pendiente para `cronista`: el buscador no confirmó la autoría de F-738 (Stefan & David). Poda: 09-09 fusionado al resumen; Bitácora cubre 2026-09-10 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-10** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 140 pendientes → 137 tras hoy):** sorteo F-707, F-673 y F-553, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 190 (ego depletion: d≈0,62 en 1998-meta vs. d≈0,04 en réplica multilab de 2016; el desacuerdo es la señal), 191 (informar la espera reduce la sobreestimación pero puede empeorar la evaluación) y 192 (sujetos sintéticos: malrepresentan y aplanan al grupo; mirar dispersión). Pendiente para `cronista`: F-707 no recoge las réplicas de 2016 que cambian su lectura. Poda: 09-10 fusionado al resumen; Bitácora cubre 2026-09-11 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-11** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 135 pendientes → 132 tras hoy):** sorteo F-711, F-751 y F-753, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 193 (el nulo de réplicas directas pesa más que el estudio original), 194 (tras un desastre la crisis aguda se disipa en ~12 meses: importa el momento del contacto) y 195 (el hogar recorta salud y educación; el seguro vale por lo que evita recortar). F-751 y F-753 apoyan la tesis 26 sin subir su confianza (un evento, un contexto). Poda: 09-11 fusionado al resumen; Bitácora cubre 2026-09-12 a hoy. `fuentes_leidas_lobo.md` actualizado.
