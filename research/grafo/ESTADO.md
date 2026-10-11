@@ -1,6 +1,6 @@
 # 🕸️ Grafo del segundo cerebro — ESTADO
 
-*Generado: 2026-10-10 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
+*Generado: 2026-10-11 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
 
 > **Transparencia:** cada cifra de este reporte sale de contar archivos del repo. Lo que no se puede medir está listado en §7. Un número alto aquí significa *más material y mejor enlazado*, **no** que el conocimiento sea *verdadero* ni que haya tenido impacto fuera del repo.
 
@@ -103,6 +103,7 @@
 | 2026-10-07 | `7d6f508` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
+| 2026-10-10 | `e7090dc` | 874 | 20 | 5 | 122 | 766 | 2001 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -117,7 +118,7 @@
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
 | M6 Integración (diseño↔resto) | 10/19 nodes enlazados; 13 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
 | M7 Lectura profunda (Lobo) | 193 fuentes leídas a fondo = 22% del ledger; 192 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
-| M8 Uso externo (`impacto.json`) | 15 preguntas · 1 personas · 0 valoradas (0% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
+| M8 Uso externo (`impacto.json`) | 17 preguntas · 1 personas · 0 valoradas (0% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
 
@@ -134,11 +135,11 @@
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 2001 | 274 | 140 | 10/10 | 2026-10-04 | 2026-10-04 v4.1 |
-| `convergencia-psicologia-economia-ia` | 246 | 117 | 51 | 8/8 | 2026-10-04 | 2026-10-10 v1.0 |
-| `fenomenos-psicologicos` | 548 | 107 | 105 | 8/8 | 2026-10-04 | 2026-10-10 v1.0 |
-| `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | n/d | 2026-10-10 v1.0 |
+| `convergencia-psicologia-economia-ia` | 246 | 117 | 51 | 8/8 | 2026-10-10 | 2026-10-10 v1.0 |
+| `fenomenos-psicologicos` | 548 | 107 | 105 | 8/8 | 2026-10-10 | 2026-10-10 v1.0 |
+| `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
 | `fenomeno-el-nino-impacto-personas` | 404 | 58 | 32 | 3/3 | 2026-10-07 | 2026-10-07 v1.1 |
-| `mecanismos-seguros-salud` | 355 | 57 | 35 | 9/9 | 2026-10-04 | 2026-10-10 v1.2 |
+| `mecanismos-seguros-salud` | 355 | 57 | 35 | 9/9 | 2026-10-10 | 2026-10-10 v1.2 |
 | `conducta-humano-ia` | 142 | 41 | 28 | 7/7 | 2026-10-04 | 2026-10-04 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 932 | 33 | 29 | 7/7 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-27 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 389 | 23 | 2 | 6/6 | 2026-10-04 | 2026-10-04 v1.0 |
