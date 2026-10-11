@@ -792,10 +792,34 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
       const res = await sample([{ role: "user", content: `${CRITERIO_PROMPT}\n\n${exp}` }], opts);
       body.innerHTML = md(sinAnalisis(res.text) || "El Criterio no llegó a escribir la respuesta.");
     } catch (e) {
-      const code = e && e.code;
-      body.innerHTML = `<p>${esc(code === "cancelled" ? "Criterio detenido." : "No se pudo completar el criterio.")}${B.camino.length ? " Para responder bien la pregunta: " : ""}${B.camino.map(c => inline(c)).join(" ")}</p>`;
+      const code = (e && e.code) || "upstream_error";
+      console.warn("criterio:", code, e && e.message);
+      const parcial = e && e.text ? sinAnalisis(e.text) : "";
+      const motivo = code === "cancelled" ? "Lo detuviste." : (MOTIVO_CRITERIO[code] || COPY[code] || MOTIVO_CRITERIO.upstream_error);
+      body.innerHTML = (parcial ? md(parcial) + "<p><i>(quedó cortado)</i></p>" : "")
+        + `<p><b>El Criterio no pudo terminar su respuesta.</b> ${esc(motivo)} <small>(código: ${esc(code)})</small></p>`
+        + (B.camino.length ? `<p>Mientras tanto, esto es lo que calculan las reglas fijas para responder bien la pregunta:</p><ul>${B.camino.map(c => `<li>${inline(c)}</li>`).join("")}</ul>` : "");
+      if (!["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "invalid_request", "transform_error", "refused"].includes(code)) {
+        const bt = document.createElement("button"); bt.type = "button"; bt.className = "ghost"; bt.textContent = "VOLVER A INTENTAR EL CRITERIO";
+        bt.addEventListener("click", async () => {
+          if (go.disabled) return;
+          go.disabled = true;
+          try { await criterio(entry, q, respuesta, B); }
+          finally { go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus nodos y en su registro de fuentes antes de responder."; }
+        });
+        const pb = document.createElement("p"); pb.append(bt); body.append(pb);
+      }
     }
   }
+  const MOTIVO_CRITERIO = {
+    rate_limited: "Se alcanzó el límite de uso de Claude de tu cuenta, o hubo demasiadas llamadas seguidas. Espera unos minutos y vuelve a intentarlo.",
+    upstream_error: "Falló la conexión con Claude mientras redactaba (un error pasajero del servicio).",
+    prompt_too_large: "El expediente que revisa el Criterio quedó demasiado largo.",
+    empty_completion: "Claude devolvió una respuesta vacía.",
+    session_expired: "Tu sesión de claude.ai expiró. Vuelve a iniciar sesión.",
+    refused: "Claude no quiso responder esta revisión.",
+    invalid_request: "La página armó mal la llamada a Claude; es un error de la página, no tuyo.",
+  };
 
   function ofrecerMentes(entry, q, respuesta) {
     if (!CORPUS.mago || !sample) return;
@@ -859,8 +883,8 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
       if (res.truncated) entry.body.insertAdjacentHTML("beforeend", "<p><i>La respuesta quedó cortada. Pide algo más acotado.</i></p>");
       turns.push({ role: "user", content: `PREGUNTA: ${q}`, q }, { role: "assistant", content: res.text.slice(0, 4000) });
       const B = balanza(q, res.text);
-      registrar(entry, q, res.text, r, B.nivel);
       await criterio(entry, q, res.text, B);
+      registrar(entry, q, res.text, r, B.nivel);  // después del Criterio: así nunca compiten por las llamadas a Claude
       ofrecerMentes(entry, q, res.text);
     } catch (e) {
       const code = e && e.code;
