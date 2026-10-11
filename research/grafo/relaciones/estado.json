@@ -3253,6 +3253,540 @@
    "estado": "alcance_distinto",
    "fecha": "2026-10-10",
    "nota": "Chalmers (F-836) critica que lo cuántico no explica la experiencia (problema difícil); no niega que pueda haber física cuántica en el cerebro. Él mismo explora después un colapso causado por la conciencia (F-837)."
+  },
+  {
+   "triple": "T-879",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-11",
+   "nota": "F-35 (68% se automedica con antiinflamatorios) y F-38 (~20% se automedica) son prensa D sin método. La 'diferencia de definición' no cierra: si 68% usa antiinflamatorios, la automedicación total no puede ser 20%. Falta el denominador y el periodo de recuerdo de cada estudio. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-909",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-50 (Lancet) muestra que Babylon no probó superar a médicos en situaciones realistas y pudo rendir peor. Eso refuta a Babylon, no a todo triage con IA: es ausencia de evidencia en un sistema. Revisar el texto completo (la crítica original es de 2018, la ficha dice 2020)."
+  },
+  {
+   "triple": "T-962",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "Ambas afirmaciones vienen de F-84 (Kunreuther) y forman el mismo rompecabezas: se subasegura lo raro y catastrófico y se sobreasegura lo frecuente y pequeño. Hablan de tipos de riesgo distintos; no chocan. F-5 (3,3% de hogares con seguro de desastres) respalda la primera. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-974",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-87 (revisado por pares) liga envejecimiento, crónicas y costo; F-88 (encuesta WTW a aseguradoras) pone la tecnología como motor n.º 1 de la inflación médica anual. 'Vivir más cuesta más' sobrevive, pero no es lo que más empuja la tendencia de costo según las aseguradoras. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1056",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-157: MQM es un estándar de calidad de traducción (sus 7 dimensiones son de traducción). No se extendió como escala a LLMs o chatbots; lo que se adoptó es su lógica de anotar errores por severidad. Corrección hecha tras pregunta del usuario. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1089",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-182 (Bain, C): 92% investiga vida online pero 75% quiere guía humana al decidir. Lo digital desplaza la búsqueda, no la decisión. El desplazamiento sí se ve en productos simples (F-136, auto en EE.UU.); en vida no se sostiene. Encuesta propia no auditable. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1090",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-185 (prensa D): en Corea las primas de vida 100% online cayeron 33,6% en diez años. Contradice el desplazamiento en vida, en un mercado muy digital. F-136 lo respalda solo en auto de EE.UU.: la tesis vale para productos simples, no para vida. Falta la fuente primaria coreana. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1091",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-185 (prensa D): los agentes retienen 48,25% de las primas de vida en Corea en 2025. El desplazamiento no ocurre en vida; F-136 solo lo muestra en auto de EE.UU. La tesis sobrevive acotada a productos simples. Falta el dato del regulador coreano. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1092",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-186 (prensa D sobre informe KPMG/ZhongAn): en China el insurtech creció 20 veces, pero agentes y bancaseguros suman más de 90% de primas de vida. Lo digital crece sin desplazar en vida; F-136 sí muestra desplazamiento en auto de EE.UU. No se leyó el informe original. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1101",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-189 (prensa D): Lemonade no espera rentabilidad GAAP hasta 2027. Refuta la tesis para el caso emblema, pero Root (F-449, filing SEC) ya es rentable en suscripción. 'Lo digital ya es rentable' depende de la empresa; no es regla. Filing de Lemonade no leído. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1103",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "F-190 (Grand View, C) proyecta que el corretaje global crece 9,6% anual hasta 2033. Eso mide tamaño absoluto proyectado (incluye seguros comerciales), no participación frente al canal digital: ambos pueden crecer. No choca con la tesis de desplazamiento. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1138",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-210 (AltIndex, C) advierte de forma explícita que 'trending no es señal de compra': varios tickers muy mencionados tienen fundamentales débiles. Es un descargo del propio emisor, no una prueba con retornos; para medir el efecto haría falta comparar retornos de los más mencionados. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1143",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-11",
+   "nota": "F-212 (prensa D) recoge que Goldman y J.P. Morgan ven el alza justificada por crecimiento y otros ven burbuja (S&P 23x, NVIDIA >30x ventas). Coinciden en que los precios subieron; discrepan en el porqué. Lo resolvería comparar las utilidades reales 2026-27 con las implícitas en los múltiplos. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1144",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-212 (sobrevaluación por múltiplos altos) no niega la demanda de infraestructura de IA que sustenta los picks de F-208 (Forbes/Zacks); cuestiona el precio de entrada. La 'oportunidad 2026' sobrevive solo condicionada a la valuación. Ambas fuentes son prensa D. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1156",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-216 (UBS vía prensa, C): producción de cobre peruana estancada cuatro años. Pero el mismo informe proyecta precio alto y F-213/F-215 muestran retornos y utilidades récord de mineras. La perspectiva minera sobrevive por precio, no por volumen. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1160",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-227: la 'regla del 10x' viene del libro motivacional de Cardone (2011) y trata de poner metas y esfuerzo 10 veces mayores. No es un sesgo cognitivo ni tiene que ver con poner el precio en contexto. La estrategia C.7 del Playbook está mal categorizada. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1208",
+   "estado": "inferencia_del_node",
+   "fecha": "2026-10-11",
+   "nota": "F-275 (Escobar 2018) propone otra ontología del diseño: el diseño fabrica el mundo. Es una crítica teórica al solucionismo, no evidencia de que el diseño no resuelva problemas. Llamarlo 'refuta' es construcción del nodo; es un desacuerdo de marco, no de hechos. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1215",
+   "estado": "inferencia_del_node",
+   "fecha": "2026-10-11",
+   "nota": "F-277 (Pater 2021) dice que el diseño anticonsumista se reapropia para el crecimiento; no habla de ROI. El choque con el '100:1' lo armó el nodo. El 100:1 ya cae por otra vía: F-268 muestra que su cadena de cita está rota. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1216",
+   "estado": "inferencia_del_node",
+   "fecha": "2026-10-11",
+   "nota": "F-278 (Fry 2020, defuturing) es una tesis filosófica: el diseño consume futuro. Critica el solucionismo pero no aporta datos que lo desmientan. El 'refuta' lo construyó el nodo; es un desacuerdo de marco, como con Escobar (F-275). (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1221",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-279 (reportes de vendedores, E) presenta el diseño espacial como tendencia 2026 y a la vez admite que solo ~5% de diseñadores construye para plataformas espaciales. Es tendencia de discurso, no de práctica. La fuente se registró como objeto de estudio, no como evidencia. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1226",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-11",
+   "nota": "F-284 llega vía unite.ai (C/D) sobre un análisis de 25 millones de comentarios. No se sabe cómo se determinó si el contenido acusado era o no de IA. Falta el reporte primario y su método de verificación para juzgar si las acusaciones fallan. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1261",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-11",
+   "nota": "F-299 son réplicas de opinión (E) contra una predicción de Nielsen, también opinión. Ninguna de las dos posiciones tiene datos. Haría falta medir en el tiempo cuánto del proceso UX manual se reemplaza con IA en equipos reales. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1265",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-300 (ensayo E) y F-296 muestran que 'el UX ha muerto' es un ciclo recurrente. Los datos del BLS (F-308 +2% gráfico; F-309 +7% digital) apoyan 'evoluciona, no muere', pero con presión en diseño gráfico. Que el ciclo se repita no prueba que esta vez sea igual. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1276",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "F-314 (Adobe, C, emisor interesado) mide percepción de creativos de tres países (46% ve más oportunidades). F-308 (BLS) proyecta empleo de diseñadores gráficos en EE.UU. (+2%). Distinta población, país y variable; además +2% sigue siendo crecimiento. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1336",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-358 (prensa C): Babylon cayó porque el pagador (Centene) no renovó, no por rechazo del paciente. Muestra que la precisión no basta, pero Babylon tampoco probó precisión (F-50), así que no aísla el caso de una IA validada. La tesis cae como regla suficiente. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1341",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-361 (deck interno, D, sin fuente primaria): loss ratio de Lemonade 166%→~90% en 2017-22. Muestra que IA sin agentes no lo resolvió entonces; pero F-450 reporta 74% en 2025 y F-189 62% en Q1 2026. Hubo mejora lenta; la tesis no se cumplió, tampoco está cerrada. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1359",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-366 (C): Bestow vendió su aseguradora directa y pasó a software B2B. Pero Ethos (F-362) muestra ingresos +52% y margen EBITDA 23% en venta digital de vida. El modelo es viable para algunos, no garantizado; el pivote de Bestow puede ser estratégico. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1362",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-367 (C): Sumitomo Life compró la mayoría de Singlife con valuación de ~US$3.440M. Es un caso, y una compra a alta valuación puede ser salida exitosa, no prueba de inviabilidad. Muestra que no siempre siguen independientes; verificar eco de cita del monto. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1407",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "F-389 (B) mide adopción de IA en 823 diseñadores brasileños (94%). H17 trata del ciclo identitario del gremio (discurso, crisis de rol) en Perú/LatAm. Uso de herramientas no es ciclo identitario, y Brasil no es Perú. No la refuta de frente. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1414",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-391 (C): MercadoLibre desvinculó 119 personas de UX integrando diseño y contenido. Pero la empresa niega la causa IA y dice que fue <0,09% de su plantilla (F-419); ex-empleados dicen lo contrario. La conducta existe; su lectura como compresión por IA está en disputa. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1419",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-11",
+   "nota": "Ambos lados ven poco ruido del service design. F-393 (Aricò, D) lo lee como crisis de la práctica; F-394/F-395 (comunidad en Lima, SDN activa) como madurez. Lo resolverían datos de empleo, avisos de trabajo y presupuestos de service design en el tiempo. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1483",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "F-416 (C): ~1.000 despidos en Livspace (India), con diseño incluido. H17 habla de Perú/LatAm; India es otro mercado, el dato no aísla cuánto fue diseño ni si la causa fue IA. Sirve como patrón en emergentes, no como refutación de H17. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1489",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-418 (B, búsqueda en gartner.com/newsroom): no existe reporte de Gartner con 60%, 80% o 68% de tareas de diseño con IA. Sus '60%' reales tratan otros temas. La cifra que circula (F-408, escuela que vende un máster) es autoridad prestada. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1493",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "F-419 es la negativa de MercadoLibre para un caso puntual, y es parte interesada. La tesis 'la IA es la principal causa de despidos' es agregada: F-283 (empleadores la citan más) frente a F-282 (Gallup: 1% de despedidos la cita). Un caso no zanja el agregado. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1498",
+   "estado": "reconciliada",
+   "fecha": "2026-10-11",
+   "nota": "F-422 (D, autorreportado): R/GA crece 25-30%, pero la nota lo atribuye a un pivote a IA y consolidación, y R/GA nunca fue consultora de diseño pura. La cláusula de escape de H15 lo une: crece quien se vuelve implementador de IA; la crisis del modelo puro (F-307, F-317, F-325) sigue. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1502",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-423 (Maze, D) llama al '$1→$100' el benchmark estándar de 2026: la cifra desmontada (F-268) no fue reemplazada, sigue dominante. Junto con F-425, contradice la idea de rotación de cifras. Son pocos ejemplos de vendedores, no un conteo sistemático. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1508",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-425 (vendedor, D) usa en 2026 el 135% de la calculadora de Smashing (2022), que era un modelo y no una medición. No hubo reemplazo ni corrección: contradice la rotación de cifras de H22. Junto con F-423, son ejemplos, no un conteo sistemático. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1542",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-446 (estudios econométricos, C): el insurtech daña la competitividad de aseguradoras pequeñas y es neutro o positivo en las grandes. La tesis sobrevive solo para las pequeñas; el tamaño modera. Los autores llaman la evidencia delgada; autoría y N no verificados. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1546",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "F-450: Lemonade sigue en pérdida técnica (combined ratio ~139%), mientras Root (F-449, filing SEC) opera rentable con 91,4%. Mismo modelo, resultados opuestos: la rentabilidad depende de condiciones aún no identificadas. Cifra de Lemonade tomada de agregador, 8-K no leído. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1547",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "F-451 (C): Wefox perdió €72M de EBITDA sobre €739M y casi quebró. Pero Wefox combinaba distribución con agentes y aseguradora propia; no es claramente 'insurtech de consumo con IA en suscripción' como Root o Lemonade. Verificar su modelo antes de usarlo como contraejemplo. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1549",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-453: los propios autores del Innovation Premium (Forbes/HOLT) declaran que el ranking no correlaciona con el retorno al inversionista y que expectativas altas pueden rendir menos. El emisor desmiente el uso del ranking como predictor. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1577",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-467 (B, verificado en TechTimes, Fortune y CNBC): Meta disolvió su equipo de Responsible Innovation en septiembre de 2022, no en 2026. El error venía de un resumen automático de buscador. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1594",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "F-513 (B, N=62) compara interfaces estáticas generadas por IA contra diseño humano: más carga y menos facilidad. F-476 compara generative UI contra una línea base determinista débil en una sola sesión. Distinto comparador y distinto artefacto; no chocan de frente. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1597",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "F-520 (B, experimento preregistrado N=495): los indicadores visuales de confianza mejoraron la sensibilidad subjetiva, pero aumentaron el acuerdo con salidas incorrectas. Más señales no calibran mejor. Leído por resumen; la generalidad depende de las tareas del estudio. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1604",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-11",
+   "nota": "Coinciden en que la acción de Figma cayó. F-318/F-326 lo atribuyen a disrupción de IA sobre la demanda; F-527/F-470 a costos de IA sobre el margen (NDR 136%, ingresos +48%). Lo resolvería ver en los próximos trimestres si cae la demanda (NDR, clientes nuevos) o solo el margen. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1607",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "La idea de que el reporting se degrada bajo presión de IA se sostiene en Adobe, Accenture y Webflow (F-306, F-428, F-322), pero no es general: Figma sigue publicando NDR y clientes (F-527). Ojo: su NDR excluye el churn (F-303), así que es poco comparable. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1611",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "Credicorp reporta cada trimestre ante la SEC su cartera de innovación (5,4% → 7,4% → 8,1% en el 4T25, meta 10% al 2026; F-529). Desmiente que la meta no se reporte (F-460, ya corregida). Pendiente: la fecha de la meta pasó de 2025 a 2026. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1615",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-11",
+   "nota": "Henkel publica su tasa de innovación (~30% en 2017; F-532), pero solo se vio por fuentes secundarias y no hay meta ni cumplimiento verificados. No prueba ni refuta que las metas se anuncien sin reportarse. Faltan los informes anuales con la meta declarada. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1617",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "La idea de que las cifras atribuidas a Gartner o Forrester no existen como se citan vale para 4 de 6 rastreadas (F-535), pero no para todas: el 'hasta 400% de conversión' sí viene de Forrester (dic-2016; F-536). Muestra pequeña de agregadores. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1628",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "La disposición a pagar estimada con GPT a veces se parece a la humana, pero a menudo falla y hasta invierte el signo (F-547). Solo mejora si se afina con datos humanos previos de la misma categoría: no reemplaza, depende de humanos. Documento de trabajo leído por resumen. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1638",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "Los LLMs reproducen algunos sesgos humanos (anclaje, encuadre, dotación; F-573, F-543), cerca de la mitad de las pruebas (F-616), pero no otros: fallan la profundidad estratégica del juego 11-20 (F-554) y sus errores no son humanos (F-574). Depende de la tarea. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1640",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "Casi todos los modelos fallan al replicar la distribución humana en el juego 11-20, y las fallas cambian con idioma y rol (F-554). Coincide con F-556 y F-558. Límite: es un juego experimental, no una encuesta, y es un preprint leído por resumen. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1643",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "En 154 experimentos replicados con GPT-4, solo 19,4% de los intervalos contiene el efecto original, con 71,6% de falsos significativos y efectos 2-3 veces mayores (F-556). Desmiente su uso para inferencia, aunque acierta la dirección en 76%. Preprint leído por resumen. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1646",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-11",
+   "nota": "Todos aceptan que Centaur predice bien la conducta (Nature 2025, F-563). Discrepan en si capta cognición o la forma de la tarea: no reacciona a cambios de significado (F-557, F-564). Lo resolvería una prueba preregistrada con enunciados alterados y humanos en paralelo. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1647",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "Los cambios de redacción que alteran el significado mueven la respuesta humana, pero no la del LLM (F-557). Una muestra que no reacciona al contenido no sirve para inferir; coincide con F-552 (Political Analysis). Preprint leído por resumen. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1649",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "Comparado con GSS y WVS en 4 modelos, ningún LLM supera la línea base individual: inflan 2-4 veces las diferencias entre segmentos y eligen mal el segmento la mitad de las veces; un modelo más grande no lo corrige (F-558). Es preprint y la autoría está incompleta. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1652",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "Los gemelos digitales captan diferencias relativas, pero no las medias ni la persona individual: correlación ≈0,2, menos varianza, sesgo progresista y peor rendimiento con baja educación (F-559). Sirven para comparar, no para estimar niveles. Preprint con 19 estudios preregistrados. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1656",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "El parecido entre datos humanos y sintéticos va de r=.23 a r=.84 según las decisiones del analista en 252 configuraciones, y ninguna gana siempre (F-561). Solo sirve si se valida contra humanos caso por caso y se fija de antemano. Preprint leído por resumen. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1660",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-11",
+   "nota": "No se discute que las salidas de Centaur parezcan humanas (F-563). Bowers objeta el proceso: recuerda 256 dígitos y responde en 1 ms (F-565). Lo resolvería ver si Centaur reproduce límites humanos de memoria y tiempos de reacción. Es nota institucional sin publicación verificada. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1665",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-11",
+   "nota": "GPT-4 resuelve tareas de falsa creencia a nivel humano (F-575, F-577; ambas A), pero alteraciones triviales invierten el resultado (F-576, preprint de 2023). La duda es si atribuye estados mentales o encuentra patrones. Lo resolvería perturbar las tareas en modelos actuales, con humanos. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1678",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "Avisar que la IA es aduladora cambia cómo se la percibe, pero no reduce su influencia persuasiva (F-589, n=940 y 650). Lo mismo dice F-500, aparentemente el mismo arXiv 2607.25166 registrado dos veces. Preprint leído por resumen: falta ver el método completo. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1682",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "Los agentes simulados predicen bien la dirección de los efectos, pero no su tamaño (F-590). La idea sobrevive solo como generador de hipótesis, no para inferencia cuantitativa. Coincide con la dirección correcta en 76% que reporta F-556. Documento de trabajo NBER leído por resumen. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1693",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "Registros administrativos de 25 mil trabajadores daneses descartan efectos de los chatbots mayores a 1% en salarios u horas (F-595). Que la productividad suba por tarea (F-580: +14%) no la contradice. Alcance: Dinamarca y adopción temprana. Documento de trabajo. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1695",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "Los autores sostienen que Centaur predice la conducta humana (F-600, F-563). Guest objeta que eso no explica la mente, como una calculadora no explica la suma (F-599). Hablan de predecir y de explicar: ambas cosas pueden ser ciertas, como ya anota el límite de F-600. Fuente D. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1699",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "Silver no mide precisión: define que una encuesta exige personas reales y llama 'modelos' a las sintéticas (F-601, opinión E). Es una objeción normativa. La refutación estadística de reemplazarlas viene de otras fuentes (F-556, F-558), no de esta. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1703",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-11",
+   "nota": "Llamar 'homeopatía' a los encuestados sintéticos es retórica de un proveedor competidor, sin datos (F-603, E). La tensión con el reemplazo la sostienen F-556 y F-558, no esta fuente. Faltaría la evidencia en que se apoya Conjointly. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1708",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "NN/g comparó usuarios sintéticos con tres estudios reales de UX y los encontró superficiales y aduladores (F-604, vía blog). Evalúa profundidad cualitativa, no inferencia estadística. Va en la misma dirección que F-556, pero mide otra cosa. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1709",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-11",
+   "nota": "Solo hay prensa del sector sobre un estudio de Prolific, que vende paneles humanos y tiene conflicto de interés (F-605, D). La conclusión coincide con F-556 y F-558, pero faltan el método, la muestra y las cifras del estudio. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1720",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "Los usuarios rechazaron la adulación extrema: OpenAI retiró la actualización de abril de 2025 en 4 días (F-495). Pero pidieron volver a un modelo 'cálido' (#keep4o, F-609, prensa D). Calidez no es adulación, y el grupo que protesta no es el promedio de usuarios. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1742",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "Aaru tiene ingresos reales, pero un ARR menor a US$10M frente a una valoración titular de US$1.000M (F-617). El negocio existe, pero los ingresos no validan la valoración. La fuente es prensa con informantes anónimos (D). (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1757",
+   "estado": "inferencia_del_node",
+   "fecha": "2026-10-11",
+   "nota": "Listen Labs muestra tracción en entrevistas con personas reales moderadas por IA (F-623), pero no mide los ingresos de los encuestados sintéticos. La comparación ('lo más probado es lo asistido') la armó el texto, no una fuente. El choque con el reemplazo sintético es indirecto. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1767",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "Frente a 3.000 personas reales, dos proveedores sintéticos dieron precios 16% más altos y rompieron el orden lógico de precios en 68% de los casos (32,8% mezclando datos reales; F-627). Límite: consultora competidora con método no auditado. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1771",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-11",
+   "nota": "Aaru falló dos pronósticos de 2024: Haley y Harris (F-628, prensa). Pero las encuestas humanas también fallaron ese año, y dos casos no miden el error. Faltaría comparar el error de Aaru con el de los sondeos tradicionales en las mismas elecciones. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1781",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "Una conversión menor a 1% de Instant Checkout en sus primeros meses (F-632, cifra solo de prensa) no puede refutar una proyección al 2030 (F-630). Esa proyección además cuenta el ingreso 'orquestado' por agentes, no las compras que hacen. Es una señal, no un choque. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1782",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "Que 3% de las transacciones involucre agentes confirma que ya hay compras reales, pero marginales frente al 89% de comercios que se prepara (F-633). El relato de Visa y Mastercard (F-613) exagera la escala. Fuente única con método desconocido. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1788",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "Adobe mide tráfico referido desde asistentes de IA (+693% en Navidad 2025; F-634), no compras ejecutadas por agentes. No dice nada de si estas existen. El dato que sí las mide es el 3% de F-633. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1826",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "El estudio de 2024 muestra que un fármaco que estabiliza microtúbulos retrasa la anestesia, pero no mide nada cuántico: ese encuadre es del autor y de la nota de prensa (F-838, F-840). El foro (F-843, E) solo lo repite. Sobrevive 'consistente con un rol de los microtúbulos'. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1835",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "Aaronson (F-846, blog E) rechaza el argumento gödeliano de Penrose, igual que Chalmers en 1995 (F-804): supone una mente consistente que no se puede demostrar. Es un debate de argumentos, no de datos. Penrose no lo concede, pero la objeción es la estándar. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1836",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "La decoherencia descarta el cómputo cuántico en microtúbulos a escala neural: 10^-13 s según Tegmark (F-808) y 10^-4 s aun corregido (F-809), frente a milisegundos. Siguen abiertos los espines protegidos de Fisher (F-821) y los efectos colectivos (F-816), sin prueba de que procesen información. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1841",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "La etiqueta 'pseudociencia' no se sostiene tal cual: la IIT hizo predicciones que Cogitate puso a prueba (F-830), y Seth, Koch y Chalmers la rechazan (F-847). Sobrevive una crítica menor: sus tesis centrales serían incomprobables (F-831). La disputa por la etiqueta sigue. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1846",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "El paper de Cogitate (Nature 2025, F-830) no halló la sincronía sostenida en corteza posterior que la IIT predecía. Eso pone en duda predicciones concretas, no toda la teoría ('sin ganador', F-851). La nota del MPI (F-849, D) solo transmite el resultado. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1847",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "Cogitate halló contenido consciente en corteza prefrontal, pero no la 'ignición' al final del estímulo que predecía la teoría del espacio de trabajo global (F-830). Desafía una predicción, no toda la teoría. La nota del MPI (F-849, D) repite el paper. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1851",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "Es el mismo resultado de Cogitate (F-830): falla la predicción de 'ignición' al final del estímulo, pero sí hay contenido en corteza prefrontal. La nota de Birmingham (F-850) es una de varias copias del comunicado del consorcio: no suma evidencia independiente. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1852",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "El explicador (F-851, D) resume bien a Cogitate (F-830): ninguna teoría ganó. A la IIT le falló la predicción de sincronía posterior, pero no quedó falsada entera. Es la misma fuente primaria contada otra vez. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1865",
+   "estado": "matizada",
+   "fecha": "2026-10-11",
+   "nota": "La tendencia de que los desmentidos circulan menos (F-846) admite excepciones: el Minsal desmintió la 'sanación cuántica' con cobertura comparable al anuncio (F-855). Es un solo caso y no hay métrica de circulación. Faltaría medir el alcance de ambos. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1881",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-11",
+   "nota": "Nirvanic dice ser 'self-funded' en unas FAQ sin fecha. Dealroom lista una ronda Early VC de nov-2024 sin monto ni inversionistas, y Crunchbase no muestra nada (F-862). Ninguna fuente es firme. Faltaría un registro societario o una declaración fechada. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1907",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-11",
+   "nota": "El filing ante la SEC fija el pago al cierre: hasta US$5M en efectivo y acciones más US$3M de earnout (F-869). Los US$20M del comprador son un 'valor anticipado' a cinco años con regalías (F-870, D). Miden cosas distintas; el comunicado infla el titular. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1910",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "La FTC cerró un acuerdo de US$660.000 y prohibió decir que la píldora ReJuvenation cura casi todas las dolencias de la edad (F-871, regulador B). Matiz: la FTC sanciona la falta de evidencia, no prueba que el efecto sea imposible. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1919",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-11",
+   "nota": "El INVIMA alertó en ene-2025, y repitió en julio, que el analizador cuántico no tiene registro sanitario y lo considera fraudulento (F-874, regulador B). Desmiente que diagnostique 52 enfermedades por falta de respaldo, no por un ensayo propio. (juicio sobre lectura de ficha)"
   }
  ]
 }
