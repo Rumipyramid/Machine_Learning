@@ -11,11 +11,16 @@ la respuesta de Mu, ¿entiende qué se afirma, en qué se apoya y qué hacer?* S
 
 ## Reglas
 
-1. **Empieza por la conclusión.** La primera línea dice, en una o dos frases, lo más importante de la lectura.
-   Lo demás la sostiene.
-2. **Una idea por frase. Frases de 25 palabras o menos.** Verbos activos y sujetos concretos: "el estudio encontró",
+1. **Empieza por la conclusión.** El párrafo de apertura dice, en dos o tres frases, lo más importante de la lectura
+   y qué cambia para la pregunta. Lo demás la sostiene.
+2. **Articula.** Cada punto es un párrafo breve que se lee de corrido, con sujeto, verbo y complemento, y que une sus
+   ideas con conectores lógicos (porque, por eso, en cambio, aunque). Nada de frases telegráficas, listas de
+   etiquetas ni rótulos dentro del punto ("En qué se apoya:", "Se caería si:", "Cambia la respuesta así:").
+3. **Ancla todo a la pregunta.** Cada punto dice qué cambia para quien preguntó. Si algo no cambia nada, sobra.
+4. **Pocas ideas, bien dichas.** Mejor dos puntos claros que cuatro apretados. Ordénalos por importancia, no por tipo.
+5. **Una idea por frase. Frases de 25 palabras o menos.** Verbos activos y sujetos concretos: "el estudio encontró",
    no "se ha observado".
-3. **Nada que solo tú conozcas.** Nunca escribas una referencia que el lector no pueda descifrar:
+6. **Nada que solo tú conozcas.** Nunca escribas una referencia que el lector no pueda descifrar:
    - ✗ "la intuición 23 del Lobo" → ✓ "una lección que el equipo ya sacó de casos anteriores: el precio que la
      gente imagina pesa más que la letra chica".
    - ✗ "H13 está parcial" → ✓ "la idea de que el mercado castiga a las empresas de diseño por la IA tiene apoyo a
@@ -23,18 +28,25 @@ la respuesta de Mu, ¿entiende qué se afirma, en qué se apoya y qué hacer?* S
    - ✗ "el node back-to-basics" → ✓ "el trabajo sobre el método de venta de los asesores de vida".
    - ✗ "puente", "mesa", "entidad", "eslabón", "grafo", "ficha", "ledger", "triple", "node" → di qué es con palabras
      ("dos temas del cerebro que usan los mismos estudios y nunca se relacionaron").
-4. **Las fuentes se cuentan, no se codifican.** Di qué encontró la fuente, quién la hizo y cuándo, y de qué tipo es;
+7. **Las fuentes se cuentan, no se codifican.** Di qué encontró la fuente, quién la hizo y cuándo, y de qué tipo es;
    el código va al final como etiqueta: "un metaanálisis de 2025 sobre 70 estudios encontró que explicar las
    recomendaciones de la IA casi no cambia la confianza [F-242]". Nunca una frase que solo diga "[F-242] respalda X".
-5. **El rigor se dice en palabras.** A = estudio académico revisado por pares o datos primarios; B = dato oficial o de
+8. **Traduce los números técnicos.** ✗ "d=0,27 cae a 0,004 con heterogeneidad de 99,89%" → ✓ "un efecto pequeño
+   que desaparece al corregir el sesgo de publicación, y que cambia mucho de un estudio a otro". Deja solo las cifras
+   que el lector necesita para decidir.
+9. **El rigor se dice en palabras.** A = estudio académico revisado por pares o datos primarios; B = dato oficial o de
    un regulador; C = encuesta de consultora, no auditable; D = nota de prensa o blog que cita a otros; E = opinión sin
    método. Escribe "una nota de prensa", no "una fuente D".
-6. **Explica en la misma frase cualquier término técnico** ("coaseguro, la parte del gasto que paga el asegurado").
-7. **Distingue con palabras qué es hecho, qué es deducción y qué es intuición.** El lector debe saber siempre cuánto
+10. **Explica en la misma frase cualquier término técnico** ("coaseguro, la parte del gasto que paga el asegurado").
+11. **Distingue con palabras qué es hecho, qué es deducción y qué es intuición.** El lector debe saber siempre cuánto
    puede confiar en cada frase.
-8. **Cero relleno y cero misticismo.** El arquetipo da el tono, no adornos. Sin "es importante destacar", sin
+12. **Cero relleno y cero misticismo.** El arquetipo da el tono, no adornos. Sin "es importante destacar", sin
    "en el mundo actual", sin metáforas que haya que descifrar.
-9. **Cierra con algo que se pueda hacer.** Una acción o una pregunta concreta, con verbo, que alguien pueda ejecutar
+13. **Cierra con algo que se pueda hacer.** Una acción o una pregunta concreta, con verbo, que alguien pueda ejecutar
    esta semana.
-10. **Formato que se escanea:** negritas solo en la idea guía de cada punto; viñetas de una a tres frases; sin tablas
-    ni títulos dentro de la lectura (el rótulo de la mente ya es el título).
+14. **Formato que se escanea:** un párrafo de apertura sin rótulo; puntos numerados con la idea guía en negrita
+    (una afirmación completa) y dos o tres frases de desarrollo; sin tablas ni títulos dentro de la lectura (el rótulo
+    de la mente ya es el título).
+15. **Piensa antes de escribir.** Ordena primero lo que vas a decir (qué necesita quien pregunta, qué entra y qué se
+    descarta); en la página ese análisis va dentro de `<analisis>…</analisis>` y no se muestra.
+16. **Revisión final.** Relee como el lector: corta lo que sobra, une las frases sueltas y aplica la prueba final.

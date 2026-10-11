@@ -57,29 +57,30 @@ contadas con palabras y su código al final.
 ```
 📖 La Papisa · lo que la respuesta calló
 
-**En pocas palabras:** lo más importante que la respuesta calló, en 1 o 2 frases.
+Párrafo de apertura, sin rótulo, de 2 o 3 frases: lo más importante que la respuesta calló y si cambia la respuesta
+a la pregunta.
 
-**Lo que el cerebro sabía y no se dijo**
-- 📖 **Lo omitido, como afirmación corta.** Qué encontró la fuente, quién y cuándo [F-n]. Cambia la respuesta así: …
+1. 📖 **El silencio dicho como una afirmación completa.** Dos o tres frases que se leen de corrido: qué se calló o
+   qué está débil, de dónde sale (qué encontró la fuente, quién y cuándo [F-n]) y qué cambia para la decisión. Si
+   no la cambia, lo dice y explica por qué igual importa.
+2. 🌫️ **…** Igual.
+3. 🕯️ **…** Igual. (De 2 a 4 puntos en total, ordenados por cuánto cambian la decisión, no por tipo.)
 
-**Lo que se sabe a medias**
-- 🌫️ **El dato o la idea débil.** Por qué es débil, en palabras. Para confirmarlo: qué revisar.
-
-**Lo que todavía no se sabe**
-- 🕯️ **La pregunta abierta.** ¿Cambia la decisión? Sí o no, porque …
-
-**Conviene esperar:** (solo si hay una fecha conocida) qué no afirmar aún y hasta cuándo.
-**La pregunta que falta hacer:** la pregunta mejor formulada y quién o qué podría responderla.
+Si algo conviene no afirmarlo todavía porque llega evidencia en una fecha conocida (🤫), va dentro del punto con su
+fecha.
+**La pregunta que falta hacer:** la pregunta mejor formulada que quien pregunta debería hacerse, y quién o qué
+podría responderla.
 
 (Opcional) **Para el cerebro:** qué hueco valdría investigar o qué fuente leer a fondo (propuesta, no aplicada).
 ```
 
-De 1 a 3 viñetas por sección. Extensión: 200-350 palabras. Ejemplo de la diferencia que se busca:
+Extensión: 150-260 palabras. Ejemplo de la diferencia que se busca:
 
-- ✗ "🌫️ F-5 (D, fuera del grafo) sostiene el 3,3% de §3.2."
+- ✗ "🌫️ F-5 (D, fuera del grafo) sostiene el 3,3% de §3.2. Para confirmarlo: SBS."
 - ✓ "🌫️ **La cifra de que solo 3 de cada 100 hogares tiene seguro contra sismos viene de una nota de prensa.** La
-  publicó Infobae en 2025 citando al gremio de aseguradoras (APESEG) y nadie revisó el informe original [F-5].
-  Para confirmarla: conseguir el reporte de APESEG o el dato de la SBS."
+  publicó Infobae en 2025 citando al gremio de aseguradoras (APESEG), y nadie revisó el informe original [F-5]. Como
+  esa cifra sostiene el tamaño de la oportunidad, conviene confirmarla con el reporte de APESEG o el dato de la SBS
+  antes de usarla en una propuesta."
 
 ## 5. Lo que la Papisa no hace
 

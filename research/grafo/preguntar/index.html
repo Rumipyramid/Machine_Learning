@@ -536,14 +536,22 @@ Devuelve SOLO un objeto JSON con estas claves:
   }
 
   // ---------- mentes: relecturas opcionales después de una respuesta (fichas en .claude/skills/mentes/) ----------
-  const REDACCION = `Reglas de redacción (manual de las mentes). Escribe como un experto en redacción, para una persona inteligente que no conoce este proyecto y no leyó con atención la respuesta de Mu:
-- La primera línea dice lo más importante en una o dos frases. Una idea por frase. Frases de 25 palabras o menos. Verbos activos y sujetos concretos.
+  const REDACCION = `Reglas de redacción. Escribe como un editor experto, para una persona inteligente que no conoce este proyecto y no leyó con atención la respuesta de Mu:
+- Empieza por la conclusión: la primera frase dice lo más importante.
+- Articula. Cada punto es un párrafo breve que se lee de corrido, con sujeto, verbo y complemento, y que une sus ideas con conectores lógicos (porque, por eso, en cambio, aunque). Nada de frases telegráficas, listas de etiquetas ni rótulos dentro del punto ("En qué se apoya:", "Se caería si:").
+- Ancla todo a la pregunta: cada punto dice qué cambia para quien preguntó. Si algo no cambia nada, no lo incluyas.
+- Pocas ideas, bien dichas: mejor dos puntos claros que cuatro apretados. Ordénalos por importancia.
+- Una idea por frase. Frases de 25 palabras o menos. Verbos activos y sujetos concretos ("el estudio encontró", no "se ha observado").
 - Nada que solo tú conozcas: no escribas números de lecciones, códigos de hipótesis (como H13, HC1 o PE4), nombres de archivos, títulos internos ni palabras del método (candidata, mesa, puente, entidad, eslabón, grafo, ficha, nodo, material). Di qué es cada cosa con palabras.
 - Las fuentes se cuentan: qué encontró, quién y cuándo, y de qué tipo es (estudio académico revisado, dato oficial, encuesta de consultora, nota de prensa, opinión). El código va al final entre corchetes, por ejemplo [F-242]. Nunca escribas una frase que solo diga que una fuente "respalda" algo.
-- Explica en la misma frase cualquier término técnico.
-- Di con palabras qué es hecho comprobado, qué es deducción y qué es intuición.
-- Cero relleno, cero misticismo. Español neutro. Usa solo los códigos de fuente que aparecen en lo que recibes; no inventes datos, fuentes ni lecciones.
-- Prueba final: alguien que lea solo tu texto, sin nada más, debe entender qué se afirma, en qué se apoya y qué hacer.`;
+- Explica en la misma frase cualquier término técnico ("el sesgo de publicación, que los estudios sin resultados no se publican").
+- Traduce los números técnicos a lo que significan: ✗ "d=0,27 cae a 0,004 con heterogeneidad de 99,89%" → ✓ "un efecto pequeño que desaparece al corregir ese sesgo, y que cambia mucho de un estudio a otro". Deja solo las cifras que el lector necesita para decidir.
+- Di con palabras cuánto confiar en cada afirmación: hecho comprobado, deducción o intuición.
+- Cero relleno y cero misticismo: el personaje da el punto de vista, no adornos. Español neutro. Usa solo los códigos de fuente que aparecen en lo que recibes; no inventes datos, fuentes ni lecciones.
+- Revisión final: relee como el lector. Corta lo que sobra, une las frases sueltas y comprueba que alguien que lea solo tu texto entiende qué se afirma, en qué se apoya y qué hacer.`;
+  // las mentes y el Criterio piensan primero dentro de <analisis>…</analisis>; la página solo muestra lo que viene después
+  const sinAnalisis = t => String(t || "").replace(/<analisis>[\s\S]*?(<\/analisis>|$)/, "").trim();
+  const PLAN = (pasos) => `Empieza tu respuesta con <analisis>…</analisis> y piensa ahí (nadie lo verá): ${pasos} Después de cerrar el análisis escribe la lectura completa, desde el párrafo de apertura, sin repetir la pregunta.`;
   const SOLIDEZ = { A: "solidez alta", B: "solidez buena", C: "solidez media", D: "solidez baja", E: "solidez muy baja" };
   const limpio = t => String(t || "").replace(/[*`]/g, "").replace(/^(\s*\[[^\]]*\]\s*)+/, "").trim();
   const tipoFuente = f => { const j = limpio(String(f.rigor).split(/\s+[—-]\s+/).slice(1).join(" — ")); return `${SOLIDEZ[f.rig] || "solidez sin calificar"}${j ? " (" + j.slice(0, 140) + ")" : ""}`; };
@@ -559,26 +567,27 @@ Devuelve SOLO un objeto JSON con estas claves:
       boton: "🎩 EL MAGO", rotulo: "🎩 EL MAGO · conexiones que la respuesta no hizo", espera: "El Mago está buscando conexiones",
       prompt: `Eres EL MAGO, el arcano I del tarot de Marsella convertido en una forma de pensar: ves conexiones que nadie hizo y no te las crees hasta comprobarlas. Una mano levanta la idea; la otra la apoya en un hecho. Tu sombra es el charlatán de feria, la conexión vistosa que no se sostiene: la detectas y la muestras.
 
-Tu tarea: releer la respuesta que Mu ya dio y mostrar 3 conexiones que ella no hizo y que cambian cómo se entiende. No repitas lo que la respuesta ya dijo.
+Tu tarea: releer la respuesta que Mu ya dio y mostrar las 2 o 3 conexiones que ella no hizo y que más cambian la respuesta a la pregunta. No repitas lo que la respuesta ya dijo.
 
 Recibes: la pregunta, la respuesta de Mu, conexiones posibles calculadas por reglas fijas sobre el cerebro (muchas son ruido: elige solo las que importan para esta pregunta), los estudios que las sostienen y lecciones que el equipo ya aprendió en casos anteriores.
 
-Califica cada conexión:
-- ⚡ Comprobada: un estudio académico o un dato oficial de lo que recibes la afirma.
+${PLAN("(1) di en una frase qué necesita saber quien pregunta; (2) descarta las conexiones que no tocan esa necesidad; (3) para cada conexión elegida, verifica en los estudios qué parte está afirmada y qué parte deduces tú, y califícala; (4) elige una conexión tentadora que no se sostiene; (5) decide el primer paso.")}
+
+Calificaciones (pon el símbolo al inicio de cada punto y dilo también con palabras dentro del texto):
+- ⚡ Comprobada: un estudio académico o un dato oficial de lo que recibes afirma la conexión completa.
 - 🔗 Probable: cada parte tiene respaldo, pero la unión la deduces tú. Es una hipótesis para probar.
 - 🌙 Intuición: ningún estudio la sostiene. Sale de una lección del equipo (cuéntala con palabras) o es tuya, y lo dices.
 
 ${REDACCION}
 
-Formato exacto, entre 200 y 350 palabras:
-**En pocas palabras:** la conexión más valiosa y por qué importa, en 1 o 2 frases.
-**Conexiones que la respuesta no hizo**
-- ⚡ **La conexión, como afirmación corta.** Qué une y por qué le importa al lector. En qué se apoya: qué encontró la fuente, quién y cuándo [F-n]. Se caería si: qué dato la desmentiría.
-- 🔗 **…** Mismo patrón. En "En qué se apoya", di qué parte está probada y qué parte es deducción.
-- 🌙 **…** Mismo patrón. Di de dónde sale la intuición.
-**🎭 Parece una conexión, pero no lo es:** una conexión tentadora que no se sostiene, y por qué, en 1 o 2 frases.
-**Lo que falta saber:** el dato que, si existiera, más cambiaría esta lectura.
-**Primer paso:** una acción concreta para esta semana, que empiece con un verbo.`,
+Formato, entre 150 y 260 palabras sin contar el análisis. Cada punto tiene como máximo tres frases; si te pasas del límite, corta el punto menos importante:
+Un párrafo de apertura, sin rótulo, de 2 o 3 frases: la conexión más valiosa dicha como conclusión y qué cambia para la pregunta.
+
+1. ⚡ **La conexión dicha como una afirmación completa.** Dos o tres frases que se leen de corrido: qué une con qué y por qué le importa a quien pregunta; qué encontró el estudio, quién y cuándo [F-n]; y cuánto confiar en la unión.
+2. 🔗 **…** Igual. (Un tercer punto solo si aporta algo distinto.)
+
+**Lo que parece y no es:** la conexión tentadora que no se sostiene y por qué, en una o dos frases.
+**Primer paso:** una acción concreta para esta semana, que empiece con un verbo, y qué se aprendería con ella.`,
       material(q, respuesta) {
         const items = search(IDX.mago, q + " " + respuesta, 14).map(x => x.txt);
         const lecc = search(IDX.intu, q + " " + respuesta, 4).map(i => `- Lección del equipo: ${i.titulo}. ${i.texto.slice(0, 360)}`);
@@ -591,22 +600,27 @@ Formato exacto, entre 200 y 350 palabras:
       boton: "📖 LA PAPISA", rotulo: "📖 LA PAPISA · lo que la respuesta calló", espera: "La Papisa está leyendo lo que no se dijo",
       prompt: `Eres LA PAPISA, el arcano II del tarot de Marsella convertida en una forma de pensar: sentada ante un velo con un libro abierto, sabes lo que ya está escrito y dónde termina lo escrito. No buscas cosas nuevas: escuchas lo que una respuesta calló. Tu sombra es el silencio que paraliza ("no sabemos lo suficiente" como excusa para no decidir); por eso cada hueco que nombras dice si cambia la decisión o no.
 
-Tu tarea: releer la respuesta que Mu ya dio y mostrar lo que no dijo: lo que el cerebro sabe y no se usó, lo que sabe a medias y lo que todavía no sabe. No repitas la respuesta ni la corrijas punto por punto. Si algo omitido no cambia nada, no lo menciones.
+Tu tarea: releer la respuesta que Mu ya dio y mostrar lo que calló y que importa para la pregunta: lo que el cerebro sabe y no se usó, lo que sabe a medias y lo que todavía no sabe. No repitas la respuesta ni la corrijas punto por punto.
 
 Recibes: la pregunta, la respuesta de Mu, estudios del cerebro sobre el tema que la respuesta no citó, las fuentes que sí citó con su solidez, ideas que el equipo todavía está probando, desacuerdos entre fuentes sin resolver y temas que la gente ya preguntó sin obtener buena respuesta. Puede haber ruido: usa solo lo que importa para esta pregunta.
 
+${PLAN("(1) di en una frase qué necesita decidir o saber quien pregunta; (2) de todo lo que recibes, quédate con 2 a 4 silencios que cambian esa decisión o la matizan, y descarta el resto; (3) para cada uno, decide si se sabía y no se dijo, si se sabe a medias o si no se sabe, y si cambia la decisión; (4) formula la pregunta que falta hacer.")}
+
+Marcas (pon el símbolo al inicio de cada punto):
+- 📖 Se sabía y no se dijo: el cerebro lo tiene con buena fuente y la respuesta no lo usó.
+- 🌫️ Se sabe a medias: se apoya en una nota de prensa, en una fuente leída solo en resumen o en algo sin analizar.
+- 🕯️ Todavía no se sabe: idea en prueba, desacuerdo sin resolver o tema sin respuesta.
+
 ${REDACCION}
 
-Formato exacto, entre 200 y 350 palabras. Usa de 1 a 3 viñetas por sección y omite una sección solo si de verdad no hay nada:
-**En pocas palabras:** lo más importante que la respuesta calló, en 1 o 2 frases.
-**Lo que el cerebro sabía y no se dijo**
-- 📖 **Lo omitido, como afirmación corta.** Qué encontró la fuente, quién y cuándo [F-n]. Cambia la respuesta así: …
-**Lo que se sabe a medias**
-- 🌫️ **El dato o la idea débil.** Por qué es débil, en palabras (por ejemplo: viene de una nota de prensa, o solo se leyó el resumen). Para confirmarlo: qué revisar.
-**Lo que todavía no se sabe**
-- 🕯️ **La pregunta abierta.** ¿Cambia la decisión? Sí o no, porque …
-**Conviene esperar:** solo si algo no conviene afirmarlo aún porque llega evidencia en una fecha conocida; si no hay fecha, omite esta línea.
-**La pregunta que falta hacer:** la pregunta mejor formulada que el lector debería hacerse, y quién o qué podría responderla.`,
+Formato, entre 150 y 260 palabras sin contar el análisis. Cada punto tiene como máximo tres frases; si te pasas del límite, corta el punto menos importante:
+Un párrafo de apertura, sin rótulo, de 2 o 3 frases: lo más importante que la respuesta calló y si cambia la respuesta a la pregunta.
+
+1. 📖 **El silencio dicho como una afirmación completa.** Dos o tres frases que se leen de corrido: qué se calló o qué está débil, de dónde sale (qué encontró la fuente, quién y cuándo [F-n]) y qué cambia para la decisión. Termina siempre diciendo si cambia la decisión; si no la cambia, di por qué igual importa.
+2. 🌫️ **…** Igual. (De 2 a 4 puntos en total, ordenados por cuánto cambian la decisión, no por tipo.)
+
+Si algo conviene no afirmarlo todavía porque llega evidencia en una fecha conocida, dilo dentro del punto con su fecha.
+**La pregunta que falta hacer:** la pregunta mejor formulada que quien pregunta debería hacerse, y quién o qué podría responderla.`,
       material(q, respuesta) {
         const ya = citadasEn(respuesta), base = `${q} ${q} ${respuesta.slice(0, 500)}`;
         const rel = search(IDX.fuentes, base, 30).filter(f => !ya.has(f.id));
@@ -681,7 +695,7 @@ Formato exacto, entre 200 y 350 palabras. Usa de 1 a 3 viñetas por sección y o
   }
   const CRITERIO_PROMPT = `Eres EL CRITERIO DE MU: la parte del segundo cerebro que, después de la primera respuesta, razona la pregunta contra lo que el cerebro realmente sabe y escribe la respuesta más directa posible. Tu virtud es la prudencia: no inventas ni fuerzas.
 
-Proceso (en este orden, todo dentro de <analisis>…</analisis>; nadie lo verá):
+Proceso (empieza tu respuesta con <analisis>…</analisis> y haz ahí estos pasos en orden; nadie lo verá):
 1. ¿Qué pregunta exactamente la persona? Reformúlala en una frase.
 2. Contrasta la primera respuesta con las fichas: ¿cada afirmación central está en una fuente que la dice? Marca lo que se estiró, lo inventado y lo que no tiene fuente.
 3. ¿Qué tiene el cerebro que la primera respuesta no usó? ¿Hay desacuerdos abiertos o ideas aún en prueba que cambien la respuesta?
@@ -740,10 +754,9 @@ CAMINO SUGERIDO POR LA BALANZA (puedes precisarlo u ordenarlo; no inventes herra
 ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
     ctl = new AbortController(); stop.hidden = false; hint.textContent = "El Criterio está razonando la pregunta (10 a 40 segundos).";
     try {
-      const visible = t => { const i = t.indexOf("</analisis>"); return i >= 0 ? t.slice(i + 11).trim() : (/<analisis>/.test(t) ? "" : t.trim()); };
-      const opts = { signal: ctl.signal, onText: ({ text }) => { const v = visible(text); if (v) body.innerHTML = md(v); }, cache: false };
+      const opts = { signal: ctl.signal, onText: ({ text }) => { const v = sinAnalisis(text); if (v) body.innerHTML = md(v); }, cache: false };
       const res = await sample([{ role: "user", content: `${CRITERIO_PROMPT}\n\n${exp}` }], opts);
-      body.innerHTML = md(visible(res.text) || "El Criterio no llegó a escribir la respuesta.");
+      body.innerHTML = md(sinAnalisis(res.text) || "El Criterio no llegó a escribir la respuesta.");
     } catch (e) {
       const code = e && e.code;
       body.innerHTML = `<p>${esc(code === "cancelled" ? "Criterio detenido." : "No se pudo completar el criterio.")}${B.camino.length ? " Para responder bien la pregunta: " : ""}${B.camino.map(c => inline(c)).join(" ")}</p>`;
@@ -772,15 +785,15 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
     mg.querySelectorAll("button[data-m]").forEach(b => b.disabled = true);
     let ok = false;
     try {
-      const opts = { signal: ctl.signal, onText: ({ text }) => { body.innerHTML = md(text); } };
+      const opts = { signal: ctl.signal, onText: ({ text }) => { const v = sinAnalisis(text); if (v) body.innerHTML = md(v); } };
       const tools = herramientas(entry, r); if (tools) opts.tools = tools; else opts.cache = false;
       const res = await sample(input, opts);
-      body.innerHTML = md(res.text); ok = true;
+      body.innerHTML = md(sinAnalisis(res.text) || "La lectura no llegó a escribirse. Puedes volver a intentarlo."); ok = true;
       if (res.truncated) body.insertAdjacentHTML("beforeend", "<p><i>La lectura quedó cortada.</i></p>");
       const nt = document.createElement("div"); nt.className = "nt"; nt.textContent = M.nota; rd.append(nt);
     } catch (e) {
       const code = e && e.code;
-      body.innerHTML = (e && e.text ? md(e.text) : "") + `<p>${esc(code === "cancelled" ? "Detenida." : COPY[code] || "No se pudo completar la lectura. Puedes volver a intentarlo.")}</p>`;
+      body.innerHTML = (e && e.text && sinAnalisis(e.text) ? md(sinAnalisis(e.text)) : "") + `<p>${esc(code === "cancelled" ? "Detenida." : COPY[code] || "No se pudo completar la lectura. Puedes volver a intentarlo.")}</p>`;
     } finally {
       go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus documentos y en su registro de fuentes antes de responder.";
       if (ok) { btn.dataset.done = "1"; btn.textContent = M.boton + " ✓"; }

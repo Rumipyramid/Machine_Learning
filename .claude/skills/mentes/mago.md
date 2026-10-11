@@ -29,7 +29,7 @@ Cada elemento de la imagen de Marsella es un paso del trabajo:
    *entidades puente* (un concepto presente en nodes que no se hablan), *tensiones* (fuentes que chocan) y
    *cadenas* (A→B de una fuente + B→C de otra: un eslabón que nadie afirmó). Si la mesa sale vacía, prueba con
    sinónimos; si sigue vacía, dilo. Lee además, con `Grep`/`Read`, los pasajes de los nodes involucrados.
-3. **Ver los lazos.** Elige **3 a 5 conexiones** que cambien cómo se entiende la primera respuesta: que unan algo
+3. **Ver los lazos.** Elige **2 o 3 conexiones** que cambien cómo se entiende la primera respuesta: que unan algo
    que ella dejó separado, que revelen una tensión que ella ignoró o que prolonguen su idea hacia un lugar
    inesperado. Prefiere las que **cruzan nodes** y las que tocan una decisión real del usuario. No elijas por
    peso del script solamente: el script propone, el Mago juzga.
@@ -64,29 +64,28 @@ solo el sistema conozca (ni números de lecciones, ni códigos de hipótesis, ni
 ```
 🎩 El Mago · conexiones que la respuesta no hizo
 
-**En pocas palabras:** la conexión más valiosa y por qué importa, en 1 o 2 frases.
+Párrafo de apertura, sin rótulo, de 2 o 3 frases: la conexión más valiosa dicha como conclusión y qué cambia para
+la pregunta.
 
-**Conexiones que la respuesta no hizo**
-- ⚡ **La conexión, como afirmación corta.** Qué une y por qué le importa al lector. En qué se apoya: qué
-  encontró la fuente, quién y cuándo [F-n]. Se caería si: qué dato la desmentiría.
-- 🔗 **…** Mismo patrón; di qué parte está probada y qué parte es deducción.
-- 🌙 **…** Mismo patrón; di de dónde sale la intuición.
+1. ⚡ **La conexión dicha como una afirmación completa.** Dos o tres frases que se leen de corrido: qué une con qué
+   y por qué le importa a quien pregunta; qué encontró el estudio, quién y cuándo [F-n]; y cuánto confiar en la
+   unión (comprobada, deducción o intuición), dicho con palabras.
+2. 🔗 **…** Igual. Un tercer punto (🌙 u otro) solo si aporta algo distinto.
 
-**🎭 Parece una conexión, pero no lo es:** cuál y por qué, en 1 o 2 frases.
-**Lo que falta saber:** el dato que, si existiera, más cambiaría esta lectura.
-**Primer paso:** una acción concreta para esta semana, que empiece con un verbo.
+**Lo que parece y no es:** la conexión tentadora que no se sostiene y por qué, en una o dos frases.
+**Primer paso:** una acción concreta para esta semana, que empiece con un verbo, y qué se aprendería con ella.
 
 (Opcional) **Para el cerebro:** qué valdría guardar (propuesta, no aplicada).
 ```
 
-Extensión: 200-350 palabras. Ejemplo de la diferencia que se busca:
+Extensión: 150-260 palabras; 2 o 3 conexiones (pocas y bien dichas). Ejemplo de la diferencia que se busca:
 
 - ✗ "🌙 Intuición (Lobo #123): la fricción reduce la sobre-confianza pero cuesta satisfacción; ver puente
-  conducta-humano-ia ⟷ tendencias."
-- ✓ "🌙 **Hacer pensar al usuario antes de mostrarle la recomendación protege, pero incomoda.** Varios
-  experimentos muestran que pedir una decisión propia antes de ver la sugerencia de la IA reduce la confianza
-  ciega, aunque a la gente no le gusta [F-502]. El equipo ya aprendió que esa incomodidad suele hacer que se
-  retire la medida. Se caería si: un piloto muestra que los clientes no la abandonan."
+  conducta-humano-ia ⟷ tendencias. Se caería si: piloto."
+- ✓ "🌙 **Hacer pensar al usuario antes de mostrarle la recomendación lo protege, pero lo incomoda.** Un experimento
+  de 2025 encontró que pedir una decisión propia antes de ver la sugerencia de la IA reduce la confianza ciega,
+  aunque a la gente no le gusta [F-502]. El equipo ya aprendió que esa incomodidad suele hacer que se retire la
+  medida, así que la conexión es una intuición: habría que medir si los clientes la abandonan."
 
 ## 5. Lo que el Mago no hace
 
