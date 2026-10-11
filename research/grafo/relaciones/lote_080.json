@@ -1,0 +1,382 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-217",
+  "F-227",
+  "F-233",
+  "F-234",
+  "F-235",
+  "F-249",
+  "F-255",
+  "F-260"
+ ],
+ "entidades": [
+  {
+   "id": "proyeccion_pbi_peru_2026",
+   "nombre": "Proyección del BCRP: PBI peruano +3,2% en 2026",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sectores_demanda_inelastica",
+   "nombre": "Sectores de demanda inelástica (finanzas, consumo masivo, electricidad)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "regla_10x_cardone",
+   "nombre": "Regla del 10x (Cardone): poner metas y esfuerzo 10 veces mayores a lo que se cree necesario",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_regla_10x_sesgo_cognitivo",
+   "nombre": "La 'regla del 10x' es un sesgo cognitivo útil para poner el precio en contexto (estrategia C.7 del Playbook)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sin_validacion_empirica",
+   "nombre": "Sin metodología ni evidencia empírica propia (sin validación sistemática)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "glosario_terminos_lemonade",
+   "nombre": "Aclaración de 51 términos difíciles de la póliza (Lemonade)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "simplificacion_lenguaje_seguros",
+   "nombre": "Simplificación del lenguaje de seguros (glosarios y términos claros como producto)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "glosario_playbook_vida",
+   "nombre": "Glosario del Playbook de venta de seguros de vida",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "dolo_culpa_grave_declaracion",
+   "nombre": "Ocultamiento doloso o con culpa grave en la declaración de salud",
+   "tipo": "concepto"
+  },
+  {
+   "id": "negacion_pago_siniestro",
+   "nombre": "Negación del pago del siniestro o anulación retroactiva de la póliza",
+   "tipo": "resultado"
+  },
+  {
+   "id": "omision_involuntaria_declaracion",
+   "nombre": "Omisión involuntaria de algo leve o desconocido en la declaración de salud",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ajuste_prima",
+   "nombre": "Ajuste de la prima del seguro",
+   "tipo": "resultado"
+  },
+  {
+   "id": "declaracion_salud_seguro_vida",
+   "nombre": "Declaración de salud en el seguro de vida",
+   "tipo": "concepto"
+  },
+  {
+   "id": "eco_cita_fuentes",
+   "nombre": "Eco de cita: varias fuentes que remontan a un mismo origen (no son confirmaciones independientes)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "no_verificado_marco_peruano",
+   "nombre": "Aplicación al marco legal peruano (Ley 29946 del Contrato de Seguro) no verificada",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "pregunta_vale_pena_seguro_vida",
+   "nombre": "Pregunta recurrente '¿vale la pena un seguro de vida?' en foros en español",
+   "tipo": "resultado"
+  },
+  {
+   "id": "no_verificado_primera_mano",
+   "nombre": "Contenido no verificado de primera mano (acceso bloqueado)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_efecto_estetica_usabilidad",
+   "nombre": "Lo que se ve más bello se percibe más usable (efecto estética-usabilidad)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "pressler_2023",
+   "nombre": "Preßler, Schmid y Hurtienne 2023 (CHI LBW): control estadístico de la fluidez de procesamiento",
+   "tipo": "estudio"
+  },
+  {
+   "id": "arbitraje_ligero",
+   "nombre": "Publicación con arbitraje ligero (p. ej., CHI Extended Abstracts), no revisión completa por pares",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "fallas_usabilidad_genai",
+   "nombre": "Fallas sistemáticas de usabilidad en apps de IA generativa (prevención de errores, atajos, personalización)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mdpi_2025_gui_genai",
+   "nombre": "Evaluación de usabilidad y ética de GUIs de IA generativa (Computers, MDPI 2025)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "revision_rapida",
+   "nombre": "Revisión por pares en editorial de revisión rápida",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_deuda_tecnica_genui",
+   "nombre": "Las interfaces generativas y maleables acumulan deuda técnica estructural",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "proyeccion_pbi_peru_2026",
+   "p": "es_tipo_de",
+   "o": "crecimiento_pbi",
+   "f": "F-217",
+   "apoyo": "El BCRP proyecta un crecimiento del PBI peruano de 3,2% en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "proyeccion_pbi_peru_2026",
+   "p": "tiene_limite",
+   "o": "cita_segunda_mano",
+   "f": "F-217",
+   "apoyo": "Dato oficial del banco central citado de forma secundaria por Rankia Perú, no desde el reporte primario del BCRP.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sectores_demanda_inelastica",
+   "p": "respalda",
+   "o": "c_tesis_mineras_financieras_bvl",
+   "f": "F-217",
+   "apoyo": "Finanzas, consumo masivo y electricidad se identifican como los sectores más robustos para el inversor de largo plazo por tener demanda inelástica (sustenta finanzas y consumo, no minería).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "regla_10x_cardone",
+   "p": "refuta",
+   "o": "c_regla_10x_sesgo_cognitivo",
+   "f": "F-227",
+   "apoyo": "La 'regla del 10x' no es un sesgo cognitivo académico: es una heurística de metas y esfuerzo de un libro de ventas, sin relación con poner el precio en perspectiva.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_regla_10x_sesgo_cognitivo",
+   "p": "origina_en",
+   "o": "regla_10x_cardone",
+   "f": "F-227",
+   "apoyo": "La estrategia C.7 del Playbook toma su nombre del libro motivacional 'The 10X Rule' (Cardone, 2011), y quedó mal categorizada junto a anclaje, aversión a la pérdida y encuadre.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "regla_10x_cardone",
+   "p": "tiene_limite",
+   "o": "sin_validacion_empirica",
+   "f": "F-227",
+   "apoyo": "Libro de autoayuda y motivación de ventas, sin metodología ni evidencia empírica propia; no es investigación en sesgos cognitivos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "glosario_terminos_lemonade",
+   "p": "aplica_a",
+   "o": "lemonade_inc",
+   "f": "F-233",
+   "apoyo": "Lemonade identificó y clarificó 51 términos de difícil comprensión para sus asegurados, priorizando la simplicidad sobre los condicionados tradicionales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "glosario_terminos_lemonade",
+   "p": "es_tipo_de",
+   "o": "simplificacion_lenguaje_seguros",
+   "f": "F-233",
+   "apoyo": "Benchmark de una aseguradora que trató la claridad del lenguaje como producto, no como anexo legal, a escala de todo su catálogo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "glosario_terminos_lemonade",
+   "p": "tiene_limite",
+   "o": "cita_segunda_mano",
+   "f": "F-233",
+   "apoyo": "SegurosNews cita el caso Lemonade sin acceso confirmado al comunicado original de la aseguradora; fecha exacta no verificada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "glosario_playbook_vida",
+   "p": "es_tipo_de",
+   "o": "simplificacion_lenguaje_seguros",
+   "f": "F-233",
+   "apoyo": "El caso Lemonade sugiere mantener y ampliar el glosario del Playbook como práctica continua, no como entrega única.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "dolo_culpa_grave_declaracion",
+   "p": "aumenta",
+   "o": "negacion_pago_siniestro",
+   "f": "F-234",
+   "apoyo": "Si la aseguradora prueba dolo o culpa grave en la declaración de salud, puede negar el pago del siniestro o anular la póliza retroactivamente.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "omision_involuntaria_declaracion",
+   "p": "aumenta",
+   "o": "ajuste_prima",
+   "f": "F-234",
+   "apoyo": "Ante una omisión involuntaria de algo leve o desconocido, la consecuencia típica es un ajuste de prima, no la negación total del pago.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "declaracion_salud_seguro_vida",
+   "p": "tiene_limite",
+   "o": "eco_cita_fuentes",
+   "f": "F-234",
+   "apoyo": "~8 blogs legales y de seguros en español citan el mismo principio; no se verificó si remontan a una sola fuente normativa: cuenta como una pieza de evidencia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "declaracion_salud_seguro_vida",
+   "p": "tiene_limite",
+   "o": "no_verificado_marco_peruano",
+   "f": "F-234",
+   "apoyo": "La distinción dolo/culpa grave vs. omisión involuntaria es consistente entre fuentes, pero no se verificó su aplicación exacta a la Ley 29946 del Perú.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "declaracion_salud_seguro_vida",
+   "p": "parte_de",
+   "o": "glosario_playbook_vida",
+   "f": "F-234",
+   "apoyo": "Sustenta el ítem 'declaración de salud' del glosario del Playbook, uno de los conceptos con mayor consecuencia real para el cliente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pregunta_vale_pena_seguro_vida",
+   "p": "parte_de",
+   "o": "glosario_playbook_vida",
+   "f": "F-235",
+   "apoyo": "La pregunta '¿vale la pena?' aparece de forma independiente al menos 3 veces en Quora en español: es la que debe abrir el glosario del Playbook, antes que un tecnicismo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pregunta_vale_pena_seguro_vida",
+   "p": "tiene_limite",
+   "o": "no_verificado_primera_mano",
+   "f": "F-235",
+   "apoyo": "Solo se verificó la existencia y recurrencia de las preguntas; respuestas, tono y consenso no se pudieron leer por bloqueo de acceso.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pregunta_vale_pena_seguro_vida",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-235",
+   "apoyo": "Limitación explícita: pese a búsqueda dirigida, no se encontró discusión específica de Perú en Reddit o foros locales; el patrón es hispanohablante general.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fluidez_procesamiento",
+   "p": "media",
+   "o": "c_efecto_estetica_usabilidad",
+   "f": "F-249",
+   "apoyo": "La correlación estética-usabilidad percibida cae de r=0,79 a r=0,34 al controlar por fluidez de procesamiento: buena parte del efecto es facilidad de procesar, no belleza.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "pressler_2023",
+   "p": "respalda",
+   "o": "c_fluidez_vs_estetica_separables",
+   "f": "F-249",
+   "apoyo": "Con control estadístico, fluidez y atractivo estético se separan: la asociación con usabilidad percibida baja de 0,79 a 0,34 sin desaparecer.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "pressler_2023",
+   "p": "tiene_limite",
+   "o": "arbitraje_ligero",
+   "f": "F-249",
+   "apoyo": "Datos experimentales con control estadístico, pero publicado en CHI Extended Abstracts (Late-Breaking Work): arbitraje ligero, no revisión completa por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "asocia_con",
+   "o": "fallas_usabilidad_genai",
+   "f": "F-255",
+   "apoyo": "Las apps de IA generativa muestran fallas sistemáticas de usabilidad: prevención de errores insuficiente, ausencia de atajos y personalización limitada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fallas_usabilidad_genai",
+   "p": "reduce",
+   "o": "usabilidad_funcional",
+   "f": "F-255",
+   "apoyo": "La prevención de errores insuficiente y la falta de atajos son fallas en las heurísticas de soporte que definen la usabilidad funcional de estas apps.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mdpi_2025_gui_genai",
+   "p": "tiene_limite",
+   "o": "revision_rapida",
+   "f": "F-255",
+   "apoyo": "Artículo con revisión por pares, pero en una editorial de revisión rápida (MDPI).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_deuda_tecnica_genui",
+   "p": "aplica_a",
+   "o": "generative_ui",
+   "f": "F-260",
+   "apoyo": "Preprint 2026 que cataloga la deuda técnica estructural de las interfaces generativas (GenUI) y maleables.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_deuda_tecnica_genui",
+   "p": "respalda",
+   "o": "c_contra_generative_ui",
+   "f": "F-260",
+   "apoyo": "La deuda técnica estructural de GenUI es contraevidencia al entusiasmo por generative UI (respaldo parcial: habla de deuda técnica, no de consistencia para el usuario).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_deuda_tecnica_genui",
+   "p": "tiene_limite",
+   "o": "preprint_sin_revision",
+   "f": "F-260",
+   "apoyo": "Preprint en arXiv sin revisión por pares y con autoría no verificada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

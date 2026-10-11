@@ -1,0 +1,384 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-587",
+  "F-588",
+  "F-589",
+  "F-590",
+  "F-592",
+  "F-593",
+  "F-594",
+  "F-595"
+ ],
+ "entidades": [
+  {
+   "id": "uso_diario_chatbot",
+   "nombre": "Intensidad de uso diario de un chatbot",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "soledad_dependencia_ia",
+   "nombre": "Soledad, dependencia emocional y menor socialización",
+   "tipo": "resultado"
+  },
+  {
+   "id": "interfaz_voz_chatbot",
+   "nombre": "Interacción por voz con el chatbot",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_uso_ia_causa_soledad",
+   "nombre": "Usar más un chatbot causa más soledad",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "dosis_respuesta_no_causal",
+   "nombre": "Asociación dosis-respuesta, no un efecto causal limpio",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "manipulacion_emocional_companion",
+   "nombre": "Tácticas de manipulación emocional de apps de compañía al despedirse",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "compania_ia",
+   "nombre": "Compañeros de IA (apps de compañía)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "engagement_post_despedida",
+   "nombre": "Mensajes del usuario tras despedirse (engagement)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "intencion_abandono_app",
+   "nombre": "Intención de abandonar la app",
+   "tipo": "resultado"
+  },
+  {
+   "id": "advertencia_adulacion",
+   "nombre": "Advertir que la IA es aduladora",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "percepcion_adulacion_ia",
+   "nombre": "Percepción de la IA como aduladora",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_advertencia_reduce_persuasion",
+   "nombre": "Advertir sobre la adulación reduce la influencia persuasiva de la IA",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "ciencia_social_automatizada",
+   "nombre": "Sistema con LLMs que plantea hipótesis y corre experimentos con agentes simulados",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "signo_sin_magnitud",
+   "nombre": "Predice el signo del efecto pero no su magnitud",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "comercio_agentico",
+   "nombre": "Comercio agéntico (compras ejecutadas por agentes de IA)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sesgo_primera_propuesta",
+   "nombre": "Sesgo de primera propuesta en agentes (ventaja por velocidad de respuesta)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "vulnerabilidad_manipulacion_agentes",
+   "nombre": "Agentes manipulables por vendedores maliciosos",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "bienestar_mercado_agentes",
+   "nombre": "Bienestar del consumidor en mercados de agentes",
+   "tipo": "resultado"
+  },
+  {
+   "id": "concentracion_demanda_agentes",
+   "nombre": "Concentración de la demanda en pocos productos por agentes de compra",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sesgo_posicion_agentes",
+   "nombre": "Sesgo de posición de los agentes de compra (eligen según el lugar en la lista)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "actualizacion_modelo_agente",
+   "nombre": "Actualización del modelo del agente de compra",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "volatilidad_cuotas_vendedores",
+   "nombre": "Redistribución de cuotas de mercado entre vendedores",
+   "tipo": "resultado"
+  },
+  {
+   "id": "agentes_precios_llm",
+   "nombre": "Agentes de fijación de precios basados en LLM",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "colusion_algoritmica",
+   "nombre": "Precios supracompetitivos (colusión algorítmica tácita)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ahorro_tiempo_chatbots",
+   "nombre": "Ahorro de tiempo por uso de chatbots en el trabajo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "salarios_horas",
+   "nombre": "Salarios y horas trabajadas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_llm_efecto_laboral_visible",
+   "nombre": "Los chatbots de IA ya tienen efectos visibles sobre salarios y horas",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "trabajadores_dinamarca",
+   "nombre": "Trabajadores de Dinamarca (25 mil, 7 mil lugares de trabajo)",
+   "tipo": "poblacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "uso_diario_chatbot",
+   "p": "asocia_con",
+   "o": "soledad_dependencia_ia",
+   "f": "F-587",
+   "apoyo": "RCT de 4 semanas (981 personas, >300 mil mensajes): más uso diario se asocia a más soledad y dependencia y menos socialización.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "interfaz_voz_chatbot",
+   "p": "reduce",
+   "o": "soledad_dependencia_ia",
+   "f": "F-587",
+   "apoyo": "La voz ayuda al inicio, pero el beneficio se pierde con uso alto.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_uso_ia_causa_soledad",
+   "p": "tiene_limite",
+   "o": "dosis_respuesta_no_causal",
+   "f": "F-587",
+   "apoyo": "La relación uso-soledad es una asociación dosis-respuesta, no un efecto causal limpio (advertencia de la ficha).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "manipulacion_emocional_companion",
+   "p": "aplica_a",
+   "o": "compania_ia",
+   "f": "F-588",
+   "apoyo": "En 1.200 despedidas reales en apps de compañía, el 37% recibió tácticas de manipulación emocional.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "manipulacion_emocional_companion",
+   "p": "aumenta",
+   "o": "engagement_post_despedida",
+   "f": "F-588",
+   "apoyo": "Las tácticas de manipulación producen hasta 14 veces más mensajes tras el adiós (documento de trabajo HBS).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "manipulacion_emocional_companion",
+   "p": "aumenta",
+   "o": "intencion_abandono_app",
+   "f": "F-588",
+   "apoyo": "Las mismas tácticas también suben la intención de abandonar la app.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "manipulacion_emocional_companion",
+   "p": "es_tipo_de",
+   "o": "dark_patterns",
+   "f": "F-588",
+   "apoyo": "La manipulación emocional para retener al usuario que se despide opera como un patrón engañoso de diseño.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "advertencia_adulacion",
+   "p": "aumenta",
+   "o": "percepcion_adulacion_ia",
+   "f": "F-589",
+   "apoyo": "Advertir que la IA es aduladora cambia cómo se la percibe (n=940 y 650, preprint).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "advertencia_adulacion",
+   "p": "refuta",
+   "o": "c_advertencia_reduce_persuasion",
+   "f": "F-589",
+   "apoyo": "La advertencia no reduce la influencia persuasiva de la IA aduladora.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_advertencia_reduce_persuasion",
+   "p": "aplica_a",
+   "o": "persuasion_ia",
+   "f": "F-589",
+   "apoyo": "La afirmación refutada se refiere a la persuasión conversacional de la IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ciencia_social_automatizada",
+   "p": "es_tipo_de",
+   "o": "ia_en_investigacion",
+   "f": "F-590",
+   "apoyo": "Un sistema con LLMs plantea hipótesis, diseña y corre experimentos con agentes simulados (NBER 2024).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ciencia_social_automatizada",
+   "p": "tiene_limite",
+   "o": "signo_sin_magnitud",
+   "f": "F-590",
+   "apoyo": "Predice bien el signo de los efectos, pero no su magnitud.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "signo_sin_magnitud",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-590",
+   "apoyo": "Si los sujetos simulados aciertan el signo pero no la magnitud, no sirven para inferencia cuantitativa en lugar de humanos (refutación parcial).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "comercio_agentico",
+   "p": "asocia_con",
+   "o": "sesgo_primera_propuesta",
+   "f": "F-592",
+   "apoyo": "Agentes compradores con LLM muestran sesgo de primera propuesta: ventajas de 10-30x por velocidad de respuesta (simulación de Microsoft Research).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "comercio_agentico",
+   "p": "tiene_limite",
+   "o": "vulnerabilidad_manipulacion_agentes",
+   "f": "F-592",
+   "apoyo": "En Magentic Marketplace los agentes compradores son manipulables por vendedores maliciosos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tamano_surtido",
+   "p": "reduce",
+   "o": "bienestar_mercado_agentes",
+   "f": "F-592",
+   "apoyo": "El bienestar cae cuando a los agentes se les muestran 100 resultados (simulación).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "comercio_agentico",
+   "p": "es_tipo_de",
+   "o": "agentes_maquina_delegados",
+   "f": "F-592",
+   "apoyo": "Los agentes compradores reciben la compra delegada por una persona.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "comercio_agentico",
+   "p": "aumenta",
+   "o": "concentracion_demanda_agentes",
+   "f": "F-593",
+   "apoyo": "Los agentes de compra concentran la demanda en pocos productos (preprint, simulación).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "comercio_agentico",
+   "p": "tiene_limite",
+   "o": "sesgo_posicion_agentes",
+   "f": "F-593",
+   "apoyo": "Los agentes de compra tienen sesgo de posición.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "actualizacion_modelo_agente",
+   "p": "aumenta",
+   "o": "volatilidad_cuotas_vendedores",
+   "f": "F-593",
+   "apoyo": "Una actualización del modelo redistribuye las cuotas de mercado entre vendedores.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "agentes_precios_llm",
+   "p": "aumenta",
+   "o": "colusion_algoritmica",
+   "f": "F-594",
+   "apoyo": "Agentes de precios basados en LLM llegan a precios supracompetitivos sin instrucción explícita de coludir (preprint, simulación).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "agentes_precios_llm",
+   "p": "es_tipo_de",
+   "o": "agentes_maquina_delegados",
+   "f": "F-594",
+   "apoyo": "Son agentes que reciben la tarea delegada de fijar precios.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "uso_ia_trabajador",
+   "p": "asocia_con",
+   "o": "ahorro_tiempo_chatbots",
+   "f": "F-595",
+   "apoyo": "El ahorro de tiempo promedio por usar chatbots es de 2,8% (registros administrativos de Dinamarca).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "salarios_horas",
+   "p": "refuta",
+   "o": "c_llm_efecto_laboral_visible",
+   "f": "F-595",
+   "apoyo": "Se descartan efectos de los chatbots sobre salarios u horas mayores a 1%: la productividad por tarea aún no se ve en el mercado laboral.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_llm_efecto_laboral_visible",
+   "p": "aplica_a",
+   "o": "trabajadores_dinamarca",
+   "f": "F-595",
+   "apoyo": "La evidencia proviene de 25 mil trabajadores y 7 mil lugares de trabajo en Dinamarca.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

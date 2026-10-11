@@ -1,0 +1,408 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-31",
+  "F-34",
+  "F-35",
+  "F-38",
+  "F-39",
+  "F-45",
+  "F-46",
+  "F-47"
+ ],
+ "entidades": [
+  {
+   "id": "root_inc",
+   "nombre": "Root Inc. (insurtech de seguro vehicular, EE.UU.)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "resultado_root_q1_2026",
+   "nombre": "Resultado de Root Q1 2026 (pérdida US$5,4M; primas brutas emitidas US$387M)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "roe_reaseguradoras_europeas_2025",
+   "nombre": "ROE conjunto de las cuatro grandes reaseguradoras europeas (19,6% en 2025, récord)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ciclo_duro_reaseguro",
+   "nombre": "Mercado duro del ciclo de reaseguro (precios altos)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_automedicacion_68",
+   "nombre": "El 68,21% de los peruanos se automedica con antiinflamatorios",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_automedicacion_20",
+   "nombre": "Uno de cada cinco peruanos (~20%) recurre a la automedicación",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "definicion_automedicacion_heterogenea",
+   "nombre": "Definiciones distintas de automedicación entre estudios (clase de fármaco vs. automedicación general)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "metodo_no_accesible",
+   "nombre": "Prensa reporta la cifra sin acceso al método completo del estudio",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "automedicacion_peru",
+   "nombre": "Automedicación en Perú (prevalencia)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "preferencia_marca_medicamento",
+   "nombre": "Preferencia por medicamento de marca sobre genérico",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ineficiencia_servicios_salud",
+   "nombre": "Ineficiencia percibida de los servicios de salud",
+   "tipo": "constructo"
+  },
+  {
+   "id": "desconfianza_medicos",
+   "nombre": "Desconfianza en los médicos",
+   "tipo": "constructo"
+  },
+  {
+   "id": "info_familia_vecinos_automedicacion",
+   "nombre": "Familia, vecinos y recetas previas como fuente de información para automedicarse",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_automedicacion_30_hogares",
+   "nombre": "3 de cada 10 hogares peruanos compran medicamentos sin receta",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "kantar",
+   "nombre": "Kantar (consultora de investigación de mercados)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "residencia_provincias",
+   "nombre": "Residir en provincias (fuera de Lima)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "espera_citas_essalud",
+   "nombre": "Tiempos de espera para citas en EsSalud",
+   "tipo": "resultado"
+  },
+  {
+   "id": "essalud",
+   "nombre": "EsSalud (seguro social de salud del Perú)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "frustracion_sistema_publico_salud",
+   "nombre": "Frustración con el sistema público de salud",
+   "tipo": "constructo"
+  },
+  {
+   "id": "especialidades_alta_demanda_essalud",
+   "nombre": "Especialidades de alta demanda en EsSalud (medicina general, odontología, otorrinolaringología)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "boticas_privadas_peru",
+   "nombre": "Farmacias y boticas privadas del Perú (30.000+)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "farmacia_sin_diagnostico",
+   "nombre": "La farmacia monitorea y deriva, pero no hace diagnóstico clínico",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "root_inc",
+   "p": "es_tipo_de",
+   "o": "insurtech",
+   "f": "F-31",
+   "apoyo": "Root aparece junto a Lemonade como insurtech cotizada que reporta resultados en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lemonade_inc",
+   "p": "es_tipo_de",
+   "o": "insurtech",
+   "f": "F-31",
+   "apoyo": "Insurance Journal/eMarketer agrupa a Lemonade y Root como insurtechs que muestran capacidad de escalar.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "resultado_root_q1_2026",
+   "p": "aplica_a",
+   "o": "root_inc",
+   "f": "F-31",
+   "apoyo": "Root reportó pérdida estrecha de US$5,4M en Q1 2026 (tras un trimestre rentable el año previo); primas brutas emitidas de US$387M vs. US$332M en 2024.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "resultado_root_q1_2026",
+   "p": "respalda",
+   "o": "c_insurtechs_pueden_escalar",
+   "f": "F-31",
+   "apoyo": "Respaldo parcial: las primas de Root crecen (US$387M vs. 332M), aunque volvió a una pérdida pequeña (US$5,4M).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "roe_reaseguradoras_europeas_2025",
+   "p": "aplica_a",
+   "o": "reaseguro_internacional",
+   "f": "F-34",
+   "apoyo": "Munich Re, Swiss Re, Hannover Re y Scor alcanzaron un ROE conjunto de 19,6% en 2025, récord que supera el 17,1% de 2023.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "resultado_neto_munich_re_2025",
+   "p": "parte_de",
+   "o": "roe_reaseguradoras_europeas_2025",
+   "f": "F-34",
+   "apoyo": "Munich Re es una de las cuatro reaseguradoras cuyo ROE conjunto fue récord (19,6%) en 2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidad_neta_swiss_re",
+   "p": "parte_de",
+   "o": "roe_reaseguradoras_europeas_2025",
+   "f": "F-34",
+   "apoyo": "Swiss Re es una de las cuatro reaseguradoras cuyo ROE conjunto fue récord (19,6%) en 2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ciclo_duro_reaseguro",
+   "p": "aumenta",
+   "o": "roe_reaseguradoras_europeas_2025",
+   "f": "F-34",
+   "apoyo": "La pista de negocio lee el ciclo duro de reaseguro como motor de la rentabilidad récord; la perspectiva para 2026 se debilita.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_automedicacion_68",
+   "p": "contradice",
+   "o": "c_automedicacion_20",
+   "f": "F-35",
+   "apoyo": "Tensión parcial: 68,21% (USIL, antiinflamatorios) frente a ~20% (Infobae 2026); posible diferencia de definición (clase de fármaco vs. automedicación general).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_automedicacion_68",
+   "p": "tiene_limite",
+   "o": "definicion_automedicacion_heterogenea",
+   "f": "F-35",
+   "apoyo": "La cifra mide automedicación con una clase de fármaco (antiinflamatorios), no la automedicación general.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_automedicacion_68",
+   "p": "tiene_limite",
+   "o": "metodo_no_accesible",
+   "f": "F-35",
+   "apoyo": "Blog universitario y prensa reportan la cifra del estudio sin acceso al método completo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "automedicacion_peru",
+   "p": "asocia_con",
+   "o": "edad",
+   "f": "F-35",
+   "apoyo": "La automedicación con antiinflamatorios es más común entre los 18 y 39 años (60,36%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "preferencia_marca_medicamento",
+   "p": "asocia_con",
+   "o": "automedicacion_peru",
+   "f": "F-35",
+   "apoyo": "Quienes se automedican prefieren la marca (66,2%) sobre el genérico (16,23%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ineficiencia_servicios_salud",
+   "p": "aumenta",
+   "o": "automedicacion_peru",
+   "f": "F-38",
+   "apoyo": "Principal razón para automedicarse: ineficiencia de los servicios de salud (59,34%), seguida de falta de tiempo (51,48%) y de dinero (15,74%).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "desconfianza_medicos",
+   "p": "asocia_con",
+   "o": "automedicacion_peru",
+   "f": "F-38",
+   "apoyo": "La desconfianza en los médicos es la razón menos citada (7,21%): no es la causa principal de la automedicación.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ineficiencia_servicios_salud",
+   "p": "parte_de",
+   "o": "determinantes_automedicacion",
+   "f": "F-38",
+   "apoyo": "La ineficiencia del sistema de salud encabeza las razones declaradas para automedicarse (59,34%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "info_familia_vecinos_automedicacion",
+   "p": "parte_de",
+   "o": "determinantes_automedicacion",
+   "f": "F-38",
+   "apoyo": "Fuentes de información para automedicarse: familia/vecinos (70,49%), recetas previas (64,26%), técnicos de farmacia (22,95%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_automedicacion_20",
+   "p": "tiene_limite",
+   "o": "metodo_no_accesible",
+   "f": "F-38",
+   "apoyo": "Infobae reporta la cifra (~20%) de un estudio o encuesta sin detallar el método completo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_automedicacion_30_hogares",
+   "p": "origina_en",
+   "o": "kantar",
+   "f": "F-39",
+   "apoyo": "Infobae (2024) reporta el dato de Kantar: 3 de 10 hogares peruanos compra medicamentos sin receta.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "automedicacion_peru",
+   "p": "asocia_con",
+   "o": "residencia_provincias",
+   "f": "F-39",
+   "apoyo": "La automedicación es algo más frecuente en provincias (36%) que en Lima (32%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_automedicacion_30_hogares",
+   "p": "tiene_limite",
+   "o": "metodo_no_accesible",
+   "f": "F-39",
+   "apoyo": "Prensa que reporta el dato de la consultora sin acceso al método completo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "espera_citas_essalud",
+   "p": "aplica_a",
+   "o": "essalud",
+   "f": "F-45",
+   "apoyo": "Un asegurado encontró una cita de EsSalud asignada para 2026; el clip se viralizó.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "espera_citas_essalud",
+   "p": "asocia_con",
+   "o": "frustracion_sistema_publico_salud",
+   "f": "F-45",
+   "apoyo": "El caso viral generó indignación y comentarios con casos similares o peores: instalación social de la frustración con el sistema público.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "espera_citas_essalud",
+   "p": "es_tipo_de",
+   "o": "ineficiencia_servicios_salud",
+   "f": "F-45",
+   "apoyo": "Citas asignadas con más de un año de espera son una manifestación de la ineficiencia del sistema público de salud.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "espera_citas_essalud",
+   "p": "aplica_a",
+   "o": "especialidades_alta_demanda_essalud",
+   "f": "F-46",
+   "apoyo": "Esperas de más de 90 días en especialidades de alta demanda en Lima, Arequipa, La Libertad, Piura, Lambayeque, Huánuco, Apurímac y Cusco.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "espera_citas_essalud",
+   "p": "reduce",
+   "o": "utilizacion_servicios_salud",
+   "f": "F-46",
+   "apoyo": "Pista del proyecto: las esperas largas explican por qué la gente evita el sistema formal de salud.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "espera_citas_essalud",
+   "p": "tiene_limite",
+   "o": "metodo_no_accesible",
+   "f": "F-46",
+   "apoyo": "RPP reporta un informe técnico sin acceso directo al documento.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pl_08488",
+   "p": "es_tipo_de",
+   "o": "farmacias_sistema_salud",
+   "f": "F-47",
+   "apoyo": "El PL 08488/2024-CR propone incorporar farmacias privadas como puntos de atención primaria, con farmacéutico licenciado obligatorio y stock SIS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pl_08488",
+   "p": "aplica_a",
+   "o": "boticas_privadas_peru",
+   "f": "F-47",
+   "apoyo": "Adhesión voluntaria; inicialmente ~1.000 de más de 30.000 boticas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pl_08488",
+   "p": "tiene_limite",
+   "o": "farmacia_sin_diagnostico",
+   "f": "F-47",
+   "apoyo": "El proyecto habilita monitoreo de parámetros básicos y derivación, NO diagnóstico clínico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pl_08488",
+   "p": "aplica_a",
+   "o": "modelo_farmacias_triage",
+   "f": "F-47",
+   "apoyo": "Valida el componente farmacia-como-frente-primario + delivery + derivación del modelo propuesto por el usuario.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-31: El catálogo tiene crecimiento_prima_root (prima devengada −1%); esta ficha reporta primas brutas emitidas US$387M vs. 332M en 2024. Métrica y período distintos: no se fusionan. | F-35: Tensión declarada con F-38 (68,21% vs. ~20%). | F-38: Tensión declarada con F-35 (ver c_automedicacion_68 contradice c_automedicacion_20)."
+}

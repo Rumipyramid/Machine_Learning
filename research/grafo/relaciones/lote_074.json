@@ -1,0 +1,302 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-133",
+  "F-134",
+  "F-135",
+  "F-136",
+  "F-137",
+  "F-139",
+  "F-140",
+  "F-146"
+ ],
+ "entidades": [
+  {
+   "id": "acuerdo_tcpa_assurance_iq",
+   "nombre": "Acuerdo TCPA de Assurance IQ (hasta USD 21,9 M)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cierre_assurance_iq",
+   "nombre": "Cese de operaciones de Assurance IQ (insurtech de EE.UU.)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "acuerdos_tcpa_historicos",
+   "nombre": "Acuerdos judiciales TCPA históricos por contacto no consentido",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lista_sin_criterio_seleccion",
+   "nombre": "Lista agregada sin metodología de selección",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "acuerdo_nar_2024",
+   "nombre": "Acuerdo NAR 2024 (contrato escrito y comisión explícita con el agente comprador)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "transicion_opt_in",
+   "nombre": "Transición de un modelo implícito o en frío a uno de consentimiento explícito (opt-in)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "pool_comisiones_inmobiliarias",
+   "nombre": "Pool de comisiones de agentes inmobiliarios de EE.UU. (USD 100.000 M/año)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "participacion_mercado_progressive",
+   "nombre": "Progressive supera a State Farm en seguro de auto personal de EE.UU.",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_digital_desplaza_agentes",
+   "nombre": "El canal digital/directo desplaza al canal de agentes en la venta de seguros",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "venta_fria",
+   "nombre": "Venta en frío / prospección telefónica outbound",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "agotamiento_asesores",
+   "nombre": "Agotamiento y abandono de asesores comerciales",
+   "tipo": "resultado"
+  },
+  {
+   "id": "prospeccion_por_referidos",
+   "nombre": "Prospección por introducciones y referidos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "foro_anonimo_no_representativo",
+   "nombre": "Publicaciones anónimas de foro sin muestra verificable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "tasa_respuesta_contacto",
+   "nombre": "Tasa de respuesta al contacto comercial",
+   "tipo": "resultado"
+  },
+  {
+   "id": "marketing_basado_consentimiento",
+   "nombre": "Marketing basado en consentimiento (impulsado por regulación de privacidad)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "transparencia_uso_datos",
+   "nombre": "Explicar con claridad y transparencia el uso de los datos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "valoracion_transparencia_datos",
+   "nombre": "Valoración de los usuarios a la transparencia en el manejo de sus datos",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "acuerdo_tcpa_assurance_iq",
+   "p": "aplica_a",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-133",
+   "apoyo": "Assurance IQ pagó hasta USD 21,875 M por llamadas sin consentimiento válido entre 2018 y 2024.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "acuerdo_tcpa_assurance_iq",
+   "p": "asocia_con",
+   "o": "cierre_assurance_iq",
+   "f": "F-133",
+   "apoyo": "La insurtech cesó operaciones dentro de los 60 días posteriores a la aprobación preliminar del acuerdo: el costo de no transicionar a tiempo.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "acuerdo_tcpa_assurance_iq",
+   "p": "tiene_limite",
+   "o": "fuente_secundaria_no_primaria",
+   "f": "F-133",
+   "apoyo": "Se reporta vía blogs de firmas legales y de cumplimiento, no desde el documento primario del acuerdo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "llamadas_comerciales_sin_consentimiento",
+   "p": "asocia_con",
+   "o": "acuerdos_tcpa_historicos",
+   "f": "F-134",
+   "apoyo": "Acuerdos TCPA históricos: Sallie Mae USD 24,15 M (2012) y Keller Williams USD 40 M por dialer no autorizado; el patrón no es exclusivo de seguros ni de Perú.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "acuerdos_tcpa_historicos",
+   "p": "tiene_limite",
+   "o": "lista_sin_criterio_seleccion",
+   "f": "F-134",
+   "apoyo": "Blog agregador: las cifras de acuerdos son públicas, pero la lista no tiene método propio de selección.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "acuerdo_nar_2024",
+   "p": "es_tipo_de",
+   "o": "transicion_opt_in",
+   "f": "F-135",
+   "apoyo": "El acuerdo NAR obliga al comprador a firmar un acuerdo escrito con la comisión explícita antes de visitar una vivienda: transición forzada de lo implícito al consentimiento explícito.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "acuerdo_nar_2024",
+   "p": "reduce",
+   "o": "pool_comisiones_inmobiliarias",
+   "f": "F-135",
+   "apoyo": "Estudio KBW: el pool de comisiones (USD 100.000 M/año) podría caer hasta 30%, con hasta 1,6 M de agentes en riesgo de perder ingresos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "acuerdo_nar_2024",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-135",
+   "apoyo": "La caída de hasta 30% es una proyección de banca de inversión, citada por firmas legales y no accedida directamente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "canal_directo_seguros",
+   "p": "aumenta",
+   "o": "participacion_mercado_progressive",
+   "f": "F-136",
+   "apoyo": "Progressive, que vende más de la mitad de sus pólizas en directo, superó a State Farm como mayor aseguradora de auto personal de EE.UU. por primera vez desde la Segunda Guerra Mundial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "participacion_mercado_progressive",
+   "p": "respalda",
+   "o": "c_digital_desplaza_agentes",
+   "f": "F-136",
+   "apoyo": "Respaldo parcial y acotado a auto en EE.UU.: un modelo sin prospección en frío ni agentes cautivos ganó participación a escala.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "venta_fria",
+   "p": "aumenta",
+   "o": "agotamiento_asesores",
+   "f": "F-137",
+   "apoyo": "Asesores de seguros en foros describen la prospección en frío (60 llamadas diarias exigidas) como fuente de agotamiento y abandono.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "prospeccion_por_referidos",
+   "p": "aplica_a",
+   "o": "intermediarios_seguros",
+   "f": "F-137",
+   "apoyo": "Varios asesores recomiendan priorizar introducciones y referidos ('consigue 5 introducciones') sobre la venta en frío.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "agotamiento_asesores",
+   "p": "tiene_limite",
+   "o": "foro_anonimo_no_representativo",
+   "f": "F-137",
+   "apoyo": "Señal social genuina pero de bajo rigor: posts anónimos sin forma de verificar representatividad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "prospeccion_por_referidos",
+   "p": "aumenta",
+   "o": "tasa_respuesta_contacto",
+   "f": "F-139",
+   "apoyo": "Blog de práctica comercial: menos del 2% de las llamadas en frío se contestan, frente a ~40% de respuesta a un referido personal.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "prospeccion_por_referidos",
+   "p": "reduce",
+   "o": "agotamiento_asesores",
+   "f": "F-139",
+   "apoyo": "Describe la transición de 'volumen de llamadas' a 'calidad de introducciones' y suma mejor calidad de vida del vendedor como argumento.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "venta_fria",
+   "p": "tiene_limite",
+   "o": "cifra_sin_metodo_publicado",
+   "f": "F-139",
+   "apoyo": "La cifra de referidos (~40%) se cita sin fuente primaria ni estudio propio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "regulacion_consentimiento_contacto_comercial",
+   "p": "aumenta",
+   "o": "marketing_basado_consentimiento",
+   "f": "F-140",
+   "apoyo": "Encuadre histórico: interrupción → permiso (Godin) → marketing basado en consentimiento, impulsado por la regulación de privacidad.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "marketing_basado_consentimiento",
+   "p": "es_tipo_de",
+   "o": "marketing_permiso",
+   "f": "F-140",
+   "apoyo": "El marketing basado en consentimiento se presenta como la etapa que sigue al marketing de permiso de Godin.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "transparencia_uso_datos",
+   "p": "parte_de",
+   "o": "marketing_basado_consentimiento",
+   "f": "F-140",
+   "apoyo": "Pasos propuestos: capturar el consentimiento de forma transparente, dar acceso fácil a preferencias, auditar registros e integrarlo al pipeline, no como checkbox legal aparte.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "marketing_basado_consentimiento",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_proveedor",
+   "f": "F-140",
+   "apoyo": "Blog de un proveedor que vende el software de gestión de consentimiento que describe.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "transparencia_uso_datos",
+   "p": "asocia_con",
+   "o": "valoracion_transparencia_datos",
+   "f": "F-146",
+   "apoyo": "Blogs de diseño UX: 80% de usuarios valora explicaciones claras del uso de sus datos y 73% prefiere transparencia sobre otras consideraciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "valoracion_transparencia_datos",
+   "p": "tiene_limite",
+   "o": "cifra_sin_metodo_publicado",
+   "f": "F-146",
+   "apoyo": "Estadísticas citadas sin fuente primaria verificable: dirección general, no dato duro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

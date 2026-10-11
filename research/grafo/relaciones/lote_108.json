@@ -1,0 +1,314 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-845",
+  "F-846",
+  "F-847",
+  "F-848",
+  "F-849",
+  "F-850",
+  "F-851",
+  "F-852"
+ ],
+ "entidades": [
+  {
+   "id": "center_consciousness_studies_arizona",
+   "nombre": "Center for Consciousness Studies (Universidad de Arizona)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "critica_aaronson_penrose",
+   "nombre": "Crítica de Scott Aaronson a Penrose (2016)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_desmentido_circula_menos",
+   "nombre": "Los desmentidos circulan mucho menos que los titulares que corrigen",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_iit_es_pseudociencia",
+   "nombre": "La teoría de la información integrada (IIT) es pseudociencia",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "carta_pseudociencia_iit_2023",
+   "nombre": "Carta de 124 investigadores que llamó 'pseudociencia' a la IIT (PsyArXiv, 2023)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "critica_carta_iit",
+   "nombre": "Críticas de Seth, Koch y Chalmers a la carta contra la IIT",
+   "tipo": "concepto"
+  },
+  {
+   "id": "polemica_teorias_conciencia_prensa",
+   "nombre": "Salida de la disputa entre teorías de la conciencia a la prensa generalista",
+   "tipo": "concepto"
+  },
+  {
+   "id": "cogitate_nature_2025",
+   "nombre": "Colaboración adversarial Cogitate (Nature, 30-04-2025)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "cobertura_cogitate_2025",
+   "nombre": "Cobertura en prensa del estudio Cogitate (2025)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "nota_prensa_cogitate_2025",
+   "nombre": "Comunicado del consorcio Cogitate (MPI, Birmingham, McGill, Oxford; 2025)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "pelicula_what_the_bleep",
+   "nombre": "Película 'What the Bleep Do We Know!?' (2004)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "misticismo_cuantico",
+   "nombre": "Misticismo cuántico (física cuántica usada para afirmaciones espirituales o de salud)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_pensamiento_afecta_materia",
+   "nombre": "El pensamiento puede afectar a la materia por vía cuántica",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sin_mecanismo_fisico_plausible",
+   "nombre": "Sin mecanismo físico plausible propuesto",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "divulgacion_audiovisual_orch_or",
+   "p": "aplica_a",
+   "o": "orch_or",
+   "f": "F-845",
+   "apoyo": "Documental de NOVA PBS (estreno 25-04-2025) centrado en Hameroff: señal de institucionalización mediática de Orch-OR.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "divulgacion_audiovisual_orch_or",
+   "p": "origina_en",
+   "o": "center_consciousness_studies_arizona",
+   "f": "F-845",
+   "apoyo": "El documental lo anuncia y difunde el propio centro del proponente (U. de Arizona).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "divulgacion_audiovisual_orch_or",
+   "p": "tiene_limite",
+   "o": "fuente_parte_interesada",
+   "f": "F-845",
+   "apoyo": "Quien difunde el documental es el centro donde trabaja Hameroff, proponente de la teoría.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "critica_aaronson_penrose",
+   "p": "refuta",
+   "o": "argumento_godeliano_penrose",
+   "f": "F-846",
+   "apoyo": "Aaronson, experto en computación cuántica, critica el argumento gödeliano de Penrose sobre la conciencia.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "decoherencia_cuantica_cerebro",
+   "p": "refuta",
+   "o": "computacion_cuantica_cerebral",
+   "f": "F-846",
+   "apoyo": "Aaronson invoca la decoherencia como objeción a un cerebro que compute de forma cuántica.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "orch_or",
+   "p": "tiene_limite",
+   "o": "sin_evidencia_cuantica_microtubulos",
+   "f": "F-846",
+   "apoyo": "Aaronson señala la ausencia de evidencia de efectos cuánticos relevantes en microtúbulos.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "critica_aaronson_penrose",
+   "p": "respalda",
+   "o": "c_desmentido_circula_menos",
+   "f": "F-846",
+   "apoyo": "Es la refutación de referencia en comunidades técnicas (LessWrong), pero circula muy por debajo de los titulares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_iit_es_pseudociencia",
+   "p": "origina_en",
+   "o": "carta_pseudociencia_iit_2023",
+   "f": "F-847",
+   "apoyo": "La etiqueta de 'pseudociencia' viene de una carta de 124 investigadores (PsyArXiv, 15-09-2023).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "carta_pseudociencia_iit_2023",
+   "p": "aplica_a",
+   "o": "teoria_informacion_integrada",
+   "f": "F-847",
+   "apoyo": "La carta apunta contra la teoría de la información integrada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "critica_carta_iit",
+   "p": "refuta",
+   "o": "c_iit_es_pseudociencia",
+   "f": "F-847",
+   "apoyo": "Seth, Koch y Chalmers rechazan la etiqueta; Chalmers la compara con 'lanzar una bomba nuclear sobre una disputa regional'.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "polemica_teorias_conciencia_prensa",
+   "p": "origina_en",
+   "o": "carta_pseudociencia_iit_2023",
+   "f": "F-847",
+   "apoyo": "La nota de Nature hizo viral la carta; la republicaron Scientific American y bioethics.com.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "polemica_teorias_conciencia_prensa",
+   "p": "origina_en",
+   "o": "carta_pseudociencia_iit_2023",
+   "f": "F-848",
+   "apoyo": "The Conversation (U. de Durham) explica la polémica por la carta contra la IIT; lo republican medios como Down To Earth.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_iit_es_pseudociencia",
+   "p": "parte_de",
+   "o": "polemica_teorias_conciencia_prensa",
+   "f": "F-848",
+   "apoyo": "La acusación de pseudociencia a la IIT sacó la pelea entre teorías del nicho académico a la prensa generalista.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cogitate_nature_2025",
+   "p": "es_tipo_de",
+   "o": "colaboracion_adversarial",
+   "f": "F-849",
+   "apoyo": "Cogitate (Nature, 30-04-2025) es la colaboración que puso a prueba a la IIT y a la teoría del espacio de trabajo global.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cogitate_nature_2025",
+   "p": "contradice",
+   "o": "teoria_informacion_integrada",
+   "f": "F-849",
+   "apoyo": "Según el MPI de Estética Empírica, los resultados desafían a la IIT.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cogitate_nature_2025",
+   "p": "contradice",
+   "o": "teoria_espacio_trabajo_global",
+   "f": "F-849",
+   "apoyo": "Según el MPI, los resultados también desafían a la teoría del espacio de trabajo global.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cobertura_cogitate_2025",
+   "p": "origina_en",
+   "o": "nota_prensa_cogitate_2025",
+   "f": "F-849",
+   "apoyo": "La nota del MPI es el origen de la cadena; la replicaron idw, la Bernstein Network y otras universidades socias.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cobertura_cogitate_2025",
+   "p": "origina_en",
+   "o": "nota_prensa_cogitate_2025",
+   "f": "F-850",
+   "apoyo": "Birmingham publica una variante del mismo comunicado ('ninguna sale indemne'); McGill y Oxford, otras parecidas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cobertura_cogitate_2025",
+   "p": "tiene_limite",
+   "o": "eco_nota_prensa",
+   "f": "F-850",
+   "apoyo": "Son muchas vitrinas de una sola fuente, no coberturas independientes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cogitate_nature_2025",
+   "p": "contradice",
+   "o": "teoria_espacio_trabajo_global",
+   "f": "F-850",
+   "apoyo": "Comunicado de Birmingham: ni la IIT ni la teoría del espacio de trabajo global salen indemnes del estudio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cogitate_nature_2025",
+   "p": "contradice",
+   "o": "teoria_informacion_integrada",
+   "f": "F-851",
+   "apoyo": "Explicador de Monash Lens / Singularity Hub: los científicos probaron dos grandes teorías y no hallaron un ganador.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cobertura_cogitate_2025",
+   "p": "parte_de",
+   "o": "polemica_teorias_conciencia_prensa",
+   "f": "F-851",
+   "apoyo": "Explicador republicado en varios portales con encuadre sobrio ('sin ganador'); no hubo titular inflado comparable al de los microtúbulos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pelicula_what_the_bleep",
+   "p": "es_tipo_de",
+   "o": "misticismo_cuantico",
+   "f": "F-852",
+   "apoyo": "Christian Science Monitor (2004) recoge cómo los físicos 'reseñan' la película.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_pensamiento_afecta_materia",
+   "p": "origina_en",
+   "o": "pelicula_what_the_bleep",
+   "f": "F-852",
+   "apoyo": "La película sostiene que el pensamiento afecta a la materia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_pensamiento_afecta_materia",
+   "p": "tiene_limite",
+   "o": "sin_mecanismo_fisico_plausible",
+   "f": "F-852",
+   "apoyo": "El físico Bruce Schumm (UC Santa Cruz): la película no propone un mecanismo plausible para que el pensamiento afecte a la materia.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

@@ -1,0 +1,311 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-71",
+  "F-72",
+  "F-73",
+  "F-74",
+  "F-75",
+  "F-76",
+  "F-77",
+  "F-78"
+ ],
+ "entidades": [
+  {
+   "id": "c_llamada_unica_legaliza_spam",
+   "nombre": "La llamada única para pedir consentimiento podría legalizar parte del spam que busca prohibir",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "opinion_experto_sin_analisis",
+   "nombre": "Opinión de un experto reportada por prensa, sin acceso al análisis completo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "prohibicion_primer_contacto_b2c",
+   "nombre": "Prohibición del primer contacto comercial a consumidores finales salvo que el consumidor lo inicie",
+   "tipo": "concepto"
+  },
+  {
+   "id": "codigo_proteccion_consumidor",
+   "nombre": "Código de Protección y Defensa del Consumidor (Perú)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "contactos_b2b",
+   "nombre": "Destinatarios que no califican como consumidores (contacto B2B, p. ej. correo corporativo)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "registro_gracias_no_insista",
+   "nombre": "Registro 'Gracias... no insista' de Indecopi (opt-out por lista)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "registro_obsoleto_2018",
+   "nombre": "Registro opt-out obsoleto desde 2018: la protección pasó a ser universal por defecto",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "doble_opt_in",
+   "nombre": "Doble opt-in en la captación de datos (formulario claro, sin casillas premarcadas)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "permission_marketing",
+   "nombre": "Marketing de permiso (permission marketing)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "canales_pull_captacion",
+   "nombre": "Canales de captación pull: el cliente inicia el contacto (punto de venta, fidelización, redes sociales)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "responsabilidad_tratamiento_tercerizado",
+   "nombre": "La empresa sigue siendo responsable del tratamiento de datos aunque subcontrate el contacto",
+   "tipo": "concepto"
+  },
+  {
+   "id": "programa_referidos",
+   "nombre": "Programa de referidos (contacto a personas referidas por la empresa o una agencia)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "consentimiento_sin_reintento",
+   "nombre": "El consentimiento solo puede pedirse en el primer contacto, sin reintentos ni tras un rechazo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "crecimiento_primas_globales_2025",
+   "nombre": "Crecimiento de primas globales 2025 (7,1%; pool ~€6,9 billones)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "swiss_re_institute",
+   "nombre": "Swiss Re Institute (sigma)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "crecimiento_primas_salud_global",
+   "nombre": "Crecimiento de primas de seguros de salud a nivel global",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_salud_ramo_mas_rapido",
+   "nombre": "Salud es el ramo de seguros que más rápido crece en el mundo",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_llamada_unica_legaliza_spam",
+   "p": "aplica_a",
+   "o": "llamada_unica_consentimiento",
+   "f": "F-71",
+   "apoyo": "Un experto legal advirtió que el mecanismo de 'llamada única para solicitar consentimiento' del art. 26 podría terminar legalizando parte del spam.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_llamada_unica_legaliza_spam",
+   "p": "tiene_limite",
+   "o": "opinion_experto_sin_analisis",
+   "f": "F-71",
+   "apoyo": "Infobae cubre la opinión de un experto, sin acceso al análisis jurídico completo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "prohibicion_primer_contacto_b2c",
+   "p": "parte_de",
+   "o": "codigo_proteccion_consumidor",
+   "f": "F-72",
+   "apoyo": "El Código de Protección al Consumidor prohíbe el primer contacto a consumidores finales salvo que el propio consumidor lo inicie.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "prohibicion_primer_contacto_b2c",
+   "p": "es_tipo_de",
+   "o": "regulacion_consentimiento_contacto_comercial",
+   "f": "F-72",
+   "apoyo": "Regla de consentimiento previo para el contacto comercial con consumidores finales (B2C prohibido).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "llamada_unica_consentimiento",
+   "p": "aplica_a",
+   "o": "contactos_b2b",
+   "f": "F-72",
+   "apoyo": "Según el Estudio Ugaz Zegarra, el 'primer contacto' de la LPDP solo aplicaría a quienes NO son consumidores (p. ej. contacto B2B a correo corporativo).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "registro_gracias_no_insista",
+   "p": "es_tipo_de",
+   "o": "regulacion_consentimiento_contacto_comercial",
+   "f": "F-73",
+   "apoyo": "El registro 'Gracias, no insista' era un mecanismo opt-out por lista contra el contacto comercial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "registro_gracias_no_insista",
+   "p": "tiene_limite",
+   "o": "registro_obsoleto_2018",
+   "f": "F-73",
+   "apoyo": "Desde 2018 el registro es innecesario: la modificación del Código hace la protección universal por defecto, no opt-in por lista.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "codigo_proteccion_consumidor",
+   "p": "aplica_a",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-73",
+   "apoyo": "Tras la modificación de 2018, el Código protege a todos los consumidores por defecto frente al contacto comercial no consentido.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doble_opt_in",
+   "p": "es_tipo_de",
+   "o": "permission_marketing",
+   "f": "F-74",
+   "apoyo": "Recomiendan doble opt-in, formulario claro sin casillas premarcadas e identificar al responsable del tratamiento: buenas prácticas de permission marketing.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doble_opt_in",
+   "p": "aplica_a",
+   "o": "ley_29733_datos_personales",
+   "f": "F-74",
+   "apoyo": "Guías de email marketing legal en Perú bajo la Ley 29733.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doble_opt_in",
+   "p": "tiene_limite",
+   "o": "sin_metodologia_publicada",
+   "f": "F-74",
+   "apoyo": "Contenido de agencias de marketing (Mailpro, Yumayus) sin metodología propia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "canales_pull_captacion",
+   "p": "es_tipo_de",
+   "o": "permission_marketing",
+   "f": "F-75",
+   "apoyo": "Los canales efectivos para farmacias son pull (señalización en punto de venta, fidelización, redes como canal de entrada), no contacto individual proactivo.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "canales_pull_captacion",
+   "p": "aplica_a",
+   "o": "modelo_farmacias_triage",
+   "f": "F-75",
+   "apoyo": "Benchmark de canales legales y efectivos para llegar a personas sin consentimiento previo.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "canales_pull_captacion",
+   "p": "tiene_limite",
+   "o": "sin_metodologia_publicada",
+   "f": "F-75",
+   "apoyo": "Contenido de agencias de marketing farmacéutico (Increnta, Asefarma) sin metodología propia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "responsabilidad_tratamiento_tercerizado",
+   "p": "aplica_a",
+   "o": "programa_referidos",
+   "f": "F-76",
+   "apoyo": "La empresa sigue siendo responsable del tratamiento efectuado en su beneficio aunque subcontrate el contacto (p. ej. agencia de referidos).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "consentimiento_previo_expreso_datos",
+   "p": "aplica_a",
+   "o": "programa_referidos",
+   "f": "F-76",
+   "apoyo": "El responsable del tratamiento debe solicitar consentimiento al titular de los datos para prospección o publicidad.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "responsabilidad_tratamiento_tercerizado",
+   "p": "parte_de",
+   "o": "ley_29733_datos_personales",
+   "f": "F-76",
+   "apoyo": "Análisis jurídico (Manrique y Proaño, IUS360) de la responsabilidad del contratante bajo la normativa de datos personales.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "llamada_unica_consentimiento",
+   "p": "tiene_limite",
+   "o": "consentimiento_sin_reintento",
+   "f": "F-77",
+   "apoyo": "El consentimiento para publicidad se obtiene en el primer contacto; no puede volver a pedirse luego ni tras un rechazo: es una sola oportunidad.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "llamada_unica_consentimiento",
+   "p": "aplica_a",
+   "o": "programa_referidos",
+   "f": "F-77",
+   "apoyo": "Clave para evaluar el riesgo operativo del modelo 'la empresa contacta al referido'.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "consentimiento_previo_expreso_datos",
+   "p": "parte_de",
+   "o": "ley_29733_datos_personales",
+   "f": "F-77",
+   "apoyo": "Guía legal (Multilaw/Niubox) que resume la LPDP: el consentimiento para publicidad o prospección debe obtenerse en el primer contacto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_primas_globales_2025",
+   "p": "origina_en",
+   "o": "swiss_re_institute",
+   "f": "F-78",
+   "apoyo": "Según sigma 2/2025 y 5/2025, las primas globales crecieron 7,1% en 2025 (pool ~€6,9 billones).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_primas_salud_global",
+   "p": "parte_de",
+   "o": "crecimiento_primas_globales_2025",
+   "f": "F-78",
+   "apoyo": "Por ramo en 2025: vida +6,9%, P&C +3,8%, salud +12,3%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_primas_salud_global",
+   "p": "respalda",
+   "o": "c_salud_ramo_mas_rapido",
+   "f": "F-78",
+   "apoyo": "Salud creció 12,3% en 2025, el ramo más rápido (vida 6,9%, P&C 3,8%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

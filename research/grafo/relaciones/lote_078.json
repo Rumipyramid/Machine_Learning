@@ -1,0 +1,340 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-196",
+  "F-201",
+  "F-202",
+  "F-204",
+  "F-205",
+  "F-206",
+  "F-207",
+  "F-208"
+ ],
+ "entidades": [
+  {
+   "id": "expiracion_subsidios_aca",
+   "nombre": "Expiración de subsidios de la ACA y reglas más estrictas de Medicaid (EE.UU.)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "crecimiento_primas_salud_privada_global",
+   "nombre": "Crecimiento de primas de salud privada global (0,5% en 2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "medicamentos_glp1",
+   "nombre": "Medicamentos GLP-1 (pérdida de peso y diabetes)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "gasto_farmacia_salud",
+   "nombre": "Gasto en farmacia del costo médico",
+   "tipo": "resultado"
+  },
+  {
+   "id": "glp1_medicamentos",
+   "nombre": "Medicamentos GLP-1 (agonistas del receptor GLP-1)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "gasto_farmaceutico_empleador",
+   "nombre": "Gasto farmacéutico de los planes de salud de empleadores",
+   "tipo": "resultado"
+  },
+  {
+   "id": "manejo_costo_medicamentos_especializados",
+   "nombre": "Manejo del costo de medicamentos especializados en planes de salud",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "planes_salud_empleadores_eeuu",
+   "nombre": "Planes de salud de empleadores de EE.UU.",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "primas_salud_individual_ipmi",
+   "nombre": "Crecimiento de primas de salud individual, corporativo e IPMI (seguro médico internacional)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "utilidad_bupa_2025",
+   "nombre": "Utilidad subyacente de Bupa 2025 (GBP 1.009 M, +16% a tipo de cambio constante)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "bupa_group",
+   "nombre": "Bupa Group (aseguradora de salud global, con operación en Perú)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "c_salud_privada_rentable_fuera_eeuu",
+   "nombre": "El seguro de salud privado es rentable y creciente fuera de EE.UU. (Europa, Asia)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "niva_bupa",
+   "nombre": "Niva Bupa (aseguradora de salud de India, joint venture con Bupa)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "utilidad_niva_bupa_mar2026",
+   "nombre": "Utilidad de Niva Bupa en el trimestre a marzo de 2026 (+67%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "segmento_publico_salud_china",
+   "nombre": "Segmento público del seguro de salud en China (78,31% del mercado en 2025)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "mercado_seguro_salud_china",
+   "nombre": "Mercado de seguros de salud de China (US$150.628 M en 2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "primas_salud_comercial_china",
+   "nombre": "Crecimiento de primas de seguro de salud comercial en China (8,2% en 2024 vs. 20,5% CAGR 2016-2019)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "picks_editoriales_acciones",
+   "nombre": "Recomendaciones editoriales de acciones en prensa financiera de consumo",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_infra_ia_oportunidad_inversion",
+   "nombre": "Las acciones de infraestructura de IA son la oportunidad de inversión de 2026",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "cuellos_botella_infraestructura_ia",
+   "nombre": "Cuellos de botella de infraestructura de IA (energía, memoria, enfriamiento)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sin_dato_auditado",
+   "nombre": "Recomendación sin filing ni dato de desempeño auditado",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "expiracion_subsidios_aca",
+   "p": "reduce",
+   "o": "crecimiento_primas_salud_privada_global",
+   "f": "F-196",
+   "apoyo": "Las primas de salud privada global se desaceleran a 0,5% en 2026 por la expiración de subsidios de la ACA y Medicaid más estricto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_primas_salud_privada_global",
+   "p": "parte_de",
+   "o": "crecimiento_primas_globales",
+   "f": "F-196",
+   "apoyo": "Se reporta dentro de un crecimiento global de primas que se frena a 1,3% en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "participacion_eeuu_primas_mundiales",
+   "p": "asocia_con",
+   "o": "crecimiento_primas_salud_privada_global",
+   "f": "F-196",
+   "apoyo": "EE.UU. concentra el 80% de las primas de salud globales: su regulación doméstica mueve casi sola la cifra mundial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_primas_salud_privada_global",
+   "p": "tiene_limite",
+   "o": "fuente_secundaria_no_primaria",
+   "f": "F-196",
+   "apoyo": "Prensa especializada que reporta un informe de industria sin acceso directo al original.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "medicamentos_glp1",
+   "p": "aumenta",
+   "o": "gasto_farmacia_salud",
+   "f": "F-201",
+   "apoyo": "2026: el gasto en farmacia es el componente de costo médico que más crece (+14,8% interanual), impulsado sobre todo por los GLP-1.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "gasto_farmacia_salud",
+   "p": "parte_de",
+   "o": "costo_siniestros_medicos_empleador",
+   "f": "F-201",
+   "apoyo": "El alza de farmacia empuja un aumento de ~9% del costo médico para empleadores.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "medicamentos_glp1",
+   "p": "aumenta",
+   "o": "costo_siniestros_medicos_empleador",
+   "f": "F-201",
+   "apoyo": "Los GLP-1 son el reto de costo más agudo del sector en 2026, más específico que 'envejecimiento' o 'tecnología médica'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "glp1_medicamentos",
+   "p": "aumenta",
+   "o": "gasto_farmaceutico_empleador",
+   "f": "F-202",
+   "apoyo": "Mercer 2026: algunos empleadores vieron los GLP-1 saltar del puesto #32 al #1 de su gasto farmacéutico en un solo año.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "gasto_farmaceutico_empleador",
+   "p": "parte_de",
+   "o": "gasto_salud",
+   "f": "F-202",
+   "apoyo": "El gasto en medicamentos de los planes de empleadores es un componente de la estructura de costos de salud del pagador; un solo tipo de fármaco puede reordenarla en un año.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "manejo_costo_medicamentos_especializados",
+   "p": "aplica_a",
+   "o": "planes_salud_empleadores_eeuu",
+   "f": "F-202",
+   "apoyo": "Encuesta de Mercer a empleadores: 43% de los planes de salud rankea el manejo de costos de medicamentos especializados como su objetivo número uno para 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "primas_salud_individual_ipmi",
+   "p": "aumenta",
+   "o": "utilidad_bupa_2025",
+   "f": "F-204",
+   "apoyo": "Bupa reportó utilidad subyacente de GBP 1.009 M en 2025 (+16% a tipo de cambio constante), impulsada por el crecimiento de primas de salud individual/corporativo e IPMI.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidad_bupa_2025",
+   "p": "aplica_a",
+   "o": "bupa_group",
+   "f": "F-204",
+   "apoyo": "Resultado corporativo de Bupa Group, aseguradora de salud global con operación en Perú, reportado por prensa especializada del sector.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidad_bupa_2025",
+   "p": "respalda",
+   "o": "c_salud_privada_rentable_fuera_eeuu",
+   "f": "F-204",
+   "apoyo": "Segundo caso de negocio europeo con rentabilidad sólida y creciente en salud: utilidad +16% en 2025 por crecimiento de primas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "niva_bupa",
+   "p": "parte_de",
+   "o": "bupa_group",
+   "f": "F-205",
+   "apoyo": "Niva Bupa es una aseguradora de salud de India que opera como joint venture con Bupa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidad_niva_bupa_mar2026",
+   "p": "aplica_a",
+   "o": "niva_bupa",
+   "f": "F-205",
+   "apoyo": "Niva Bupa, que cotiza en bolsa en India, reportó un salto de utilidad de 67% en el trimestre cerrado en marzo de 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidad_niva_bupa_mar2026",
+   "p": "respalda",
+   "o": "c_salud_privada_rentable_fuera_eeuu",
+   "f": "F-205",
+   "apoyo": "Señal de rentabilidad fuerte y creciente en un mercado de salud asiático de alto crecimiento: utilidad +67% en un trimestre (dato de prensa, no filing).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "segmento_publico_salud_china",
+   "p": "parte_de",
+   "o": "mercado_seguro_salud_china",
+   "f": "F-206",
+   "apoyo": "El segmento público sigue siendo el mayor y de más rápido crecimiento del mercado chino de seguros de salud: 78,31% de participación en 2025; el privado es minoritario.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_seguro_salud_china",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-206",
+   "apoyo": "US$150.628 M en 2025 proyectados a US$254.657 M en 2033 (CAGR 6,6%): la cifra a 2033 es proyección de una firma de mercado con metodología parcialmente documentada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seleccion_adversa",
+   "p": "reduce",
+   "o": "primas_salud_comercial_china",
+   "f": "F-207",
+   "apoyo": "Swiss Re: el crecimiento de primas de salud comercial en China cayó a 8,2% en 2024 (vs. 20,5% anual 2016-2019); cita el riesgo creciente de selección adversa entre las causas.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "crecimiento_pbi",
+   "p": "aumenta",
+   "o": "primas_salud_comercial_china",
+   "f": "F-207",
+   "apoyo": "La desaceleración de primas de salud comercial en China se atribuye a menor crecimiento económico, junto con competencia y limitaciones de datos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "primas_salud_comercial_china",
+   "p": "parte_de",
+   "o": "mercado_seguro_salud_china",
+   "f": "F-207",
+   "apoyo": "El seguro de salud comercial (privado) es un componente del mercado chino de seguros de salud, cuyo crecimiento se desaceleró fuertemente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "picks_editoriales_acciones",
+   "p": "respalda",
+   "o": "c_infra_ia_oportunidad_inversion",
+   "f": "F-208",
+   "apoyo": "Forbes/Zacks: picks de julio 2026 centrados en cuellos de botella de IA: energía (NextEra, Williams, Cameco), memoria (Micron, TSMC, Credo) y enfriamiento (Vertiv).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "picks_editoriales_acciones",
+   "p": "aplica_a",
+   "o": "cuellos_botella_infraestructura_ia",
+   "f": "F-208",
+   "apoyo": "Las recomendaciones de julio 2026 se concentran en empresas de energía, memoria y enfriamiento que abastecen la infraestructura de IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "picks_editoriales_acciones",
+   "p": "tiene_limite",
+   "o": "sin_dato_auditado",
+   "f": "F-208",
+   "apoyo": "Es recomendación editorial, no filing ni dato de desempeño auditado: se cita como lo que dicen analistas de consumo, no como hecho verificado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

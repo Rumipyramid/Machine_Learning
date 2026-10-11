@@ -1,0 +1,277 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-558",
+  "F-559",
+  "F-561",
+  "F-562",
+  "F-565",
+  "F-570",
+  "F-576",
+  "F-578"
+ ],
+ "entidades": [
+  {
+   "id": "inflado_diferencias_segmentos",
+   "nombre": "Las respuestas sintéticas inflan 2-4 veces las diferencias entre segmentos",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "gemelos_digitales_llm",
+   "nombre": "Gemelos digitales con LLM de personas reales (Twin-2K-500)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "sesgo_progresista_llm",
+   "nombre": "Sesgo progresista de los gemelos con LLM ('blue shift')",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "flexibilidad_analitica_llm",
+   "nombre": "Flexibilidad analítica: el parecido humano-sintético depende de decisiones del analista",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "validacion_llm_inconsistente",
+   "nombre": "La validación de mediciones con LLM en ciencias sociales es inconsistente y limitada",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "procesos_no_humanos_centaur",
+   "nombre": "Centaur produce salidas humanas con procesos no humanos (memoria de 256 dígitos, 1 ms)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "anomalias_utilidad_esperada",
+   "nombre": "Anomalías nuevas a la utilidad esperada generadas por algoritmos",
+   "tipo": "resultado"
+  },
+  {
+   "id": "variaciones_triviales_tarea",
+   "nombre": "Alteraciones triviales de una tarea (p. ej., un contenedor transparente)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_llm_teoria_mente",
+   "nombre": "Los LLMs tienen teoría de la mente (atribuyen estados mentales)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "aversion_perdida_literatura",
+   "nombre": "Grado de aversión a la pérdida reportado en artículos científicos",
+   "tipo": "metrica"
+  },
+  {
+   "id": "sesgo_aversion_perdida_llm",
+   "nombre": "Sesgo de aversión a la pérdida en LLMs",
+   "tipo": "resultado"
+  },
+  {
+   "id": "imitacion_literatura_cientifica",
+   "nombre": "Imitación por la IA de lo que la literatura científica escribió sobre sesgos",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "inflado_diferencias_segmentos",
+   "f": "F-558",
+   "apoyo": "Con GSS y WVS y 4 modelos, los LLMs inflan 2-4 veces las diferencias entre segmentos y elegirían el segmento equivocado en la mitad de los casos de EE.UU.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "inflado_diferencias_segmentos",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-558",
+   "apoyo": "Ningún LLM supera la línea base a nivel individual.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "escala_modelo_llm",
+   "p": "tiene_limite",
+   "o": "inflado_diferencias_segmentos",
+   "f": "F-558",
+   "apoyo": "Un modelo más grande no corrige el inflado de diferencias entre segmentos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "gemelos_digitales_llm",
+   "p": "respalda",
+   "o": "c_sinteticas_menos_varianza",
+   "f": "F-559",
+   "apoyo": "Megaestudio de 19 estudios preregistrados y 164 resultados: los gemelos tienen menos varianza que los humanos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "gemelos_digitales_llm",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-559",
+   "apoyo": "Correlación gemelo-humano ≈0,2: capturan diferencias relativas, pero no la predicción individual ni las medias.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "gemelos_digitales_llm",
+   "p": "tiene_limite",
+   "o": "sesgo_progresista_llm",
+   "f": "F-559",
+   "apoyo": "Los gemelos muestran un sesgo progresista ('blue shift').",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "nivel_educativo",
+   "p": "modera",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-559",
+   "apoyo": "Los gemelos rinden peor en personas con menos educación e ingresos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "flexibilidad_analitica_llm",
+   "f": "F-561",
+   "apoyo": "En 252 configuraciones, la correlación entre estructura humana y sintética va de r=.23 a r=.84 según decisiones del analista.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "flexibilidad_analitica_llm",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-561",
+   "apoyo": "Ninguna configuración es óptima en general.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ia_en_investigacion",
+   "p": "tiene_limite",
+   "o": "validacion_llm_inconsistente",
+   "f": "F-562",
+   "apoyo": "Revisión sistemática de 8 revistas insignia: las mediciones con LLM ya son centrales en análisis publicados, pero su validación es inconsistente y limitada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "validacion_llm_inconsistente",
+   "f": "F-562",
+   "apoyo": "Las amenazas epistémicas incluyen el uso de LLMs como sujetos simulados sin validación sistemática.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "centaur",
+   "p": "tiene_limite",
+   "o": "procesos_no_humanos_centaur",
+   "f": "F-565",
+   "apoyo": "Centaur recuerda hasta 256 dígitos (humanos ≈7) y responde en 1 ms.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "procesos_no_humanos_centaur",
+   "p": "refuta",
+   "o": "c_centaur_generaliza",
+   "f": "F-565",
+   "apoyo": "Bowers lo califica de absurdo como modelo de la mente: imita salidas humanas sin procesos humanos.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ml_generacion_hipotesis",
+   "p": "aumenta",
+   "o": "anomalias_utilidad_esperada",
+   "f": "F-570",
+   "apoyo": "Algoritmos predictivos generan automáticamente 'anomalías' nuevas a la utilidad esperada: la IA como fábrica de hallazgos conductuales.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "anomalias_utilidad_esperada",
+   "p": "es_tipo_de",
+   "o": "errores_sistematicos_juicio",
+   "f": "F-570",
+   "apoyo": "Las personas violan esas anomalías a tasas similares a las de Allais y la razón común.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ml_generacion_hipotesis",
+   "p": "aumenta",
+   "o": "hipotesis_interpretables",
+   "f": "F-570",
+   "apoyo": "El método produce hipótesis conductuales nuevas que luego se prueban con personas.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "variaciones_triviales_tarea",
+   "p": "reduce",
+   "o": "teoria_mente_llm",
+   "f": "F-576",
+   "apoyo": "Variaciones triviales de las tareas de teoría de la mente (p. ej., un contenedor transparente) invierten el desempeño de los LLMs.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "variaciones_triviales_tarea",
+   "p": "refuta",
+   "o": "c_llm_teoria_mente",
+   "f": "F-576",
+   "apoyo": "Que alteraciones triviales inviertan el desempeño lleva a Ullman a proponer el escepticismo como hipótesis nula ante la teoría de la mente en LLMs (preprint).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "teoria_mente_llm",
+   "p": "tiene_limite",
+   "o": "sobreajuste_memorizacion",
+   "f": "F-576",
+   "apoyo": "El éxito en tareas estándar no resiste cambios triviales: el modelo respondería a la forma de la tarea más que a su significado.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "aversion_perdida_literatura",
+   "p": "asocia_con",
+   "o": "sesgo_aversion_perdida_llm",
+   "f": "F-578",
+   "apoyo": "El grado de aversión a la pérdida reportado en artículos científicos predice el sesgo posterior de los LLMs (preprint, solo fragmento).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "imitacion_literatura_cientifica",
+   "p": "media",
+   "o": "c_llm_sesgos_humanos",
+   "f": "F-578",
+   "apoyo": "Los sesgos de la IA podrían ser imitación de lo que la ciencia escribió sobre sesgos, no cognición humana reproducida.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "sesgo_aversion_perdida_llm",
+   "p": "es_tipo_de",
+   "o": "aversion_perdida",
+   "f": "F-578",
+   "apoyo": "El estudio mide en LLMs el sesgo de aversión a la pérdida, el mismo constructo de la economía conductual.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-561: El tercer triple es una lectura teórica (el riesgo de elegir a posteriori); la ficha solo habla de 'amenaza de la flexibilidad analítica'. | F-565: Nota institucional; el venue del análisis no está verificado."
+}

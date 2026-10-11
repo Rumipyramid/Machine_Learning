@@ -1,0 +1,322 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-456",
+  "F-457",
+  "F-458",
+  "F-459",
+  "F-460",
+  "F-462",
+  "F-463",
+  "F-464"
+ ],
+ "entidades": [
+  {
+   "id": "absorcion_unidades_innovacion",
+   "nombre": "Absorción de unidades de innovación de consultoras en sus matrices (BCG X, McKinsey Business Building, Doblin by Deloitte)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "revenue_innovacion_no_segmentado",
+   "nombre": "Las consultoras no publican revenue segmentado de su unidad de innovación",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "labs_innovacion_corporativos",
+   "nombre": "Labs de innovación corporativos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cierre_labs_innovacion",
+   "nombre": "Cierre de labs de innovación corporativos (Walmart Store No. 8, IKEA SPACE10, General Mills G-Works, GM Arizona)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "atribucion_cierre_disputada",
+   "nombre": "La atribución del cierre está en disputa (fracaso vs. misión cumplida)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "eco_de_cita",
+   "nombre": "Eco de cita: varias vitrinas repiten una misma fuente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "financiamiento_no_desempeno",
+   "nombre": "El financiamiento o el conteo de startups no mide desempeño",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_venture_studios_mas_rapidos",
+   "nombre": "Los venture studios llegan a Serie A en 25,2 meses (vs. 56) con IRR de 65%",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "venture_studios",
+   "nombre": "Venture studios (más de 800 activos)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "mercado_software_innovacion",
+   "nombre": "Mercado de software de gestión de la innovación (US$1,25B en 2024 → US$3,5B proyectado en 2033)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "labs_innovacion_peru",
+   "nombre": "Labs de innovación corporativos peruanos (BCP CIX, Pacífico La Cápsula, Credicorp Capital Lab, Intercorp)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "meta_innovacion_bcp",
+   "nombre": "Meta de BCP: 10% de nuevos ingresos de innovación disruptiva",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "error_fecha_evento",
+   "nombre": "Fecha mal atribuida a un evento o meta (falsa señal de tendencia)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_metas_innovacion_no_reportadas",
+   "nombre": "Las metas de innovación se anuncian y no se reportan (H30)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "defensa_teatro_innovacion",
+   "nombre": "Defensa del teatro de la innovación ('In Defense of Innovation Theater', 2025)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_quien_corrige_panico_vive_audiencia",
+   "nombre": "Quien corrige el pánico también vive de la audiencia (H11 ampliada)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "innolead",
+   "nombre": "InnoLead (medio y eventos sobre innovación corporativa)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "incentivo_estructural_emisor",
+   "nombre": "Incentivo estructural del emisor: vive de que el tema siga en debate",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "prensa_negocios_hispana",
+   "nombre": "Prensa y escuelas de negocio hispanohablantes",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "c_cifras_importadas_sin_fuente",
+   "nombre": "Las cifras anglosajonas se importan al español sin su fuente ni descuento (H20)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "texto_no_verificado_bloqueo",
+   "nombre": "Contenido no verificado de primera mano (lectura completa bloqueada)",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "absorcion_unidades_innovacion",
+   "p": "respalda",
+   "o": "c_estandar_reporting_se_degrada",
+   "f": "F-456",
+   "apoyo": "Ninguna unidad cerró: las tres se fusionaron en la oferta general y la pregunta '¿crece la práctica de innovación?' dejó de ser respondible con datos públicos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "absorcion_unidades_innovacion",
+   "p": "asocia_con",
+   "o": "revenue_innovacion_no_segmentado",
+   "f": "F-456",
+   "apoyo": "Tras la absorción, ninguna de las tres publica revenue segmentado de su unidad de innovación; headcount solo por estimador de terceros (~316 en BCG X).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "accenture_song_no_reportado",
+   "p": "es_tipo_de",
+   "o": "revenue_innovacion_no_segmentado",
+   "f": "F-456",
+   "apoyo": "Es lo mismo que le pasó a Accenture Song: la unidad se integra y deja de reportarse por separado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "labs_innovacion_corporativos",
+   "p": "asocia_con",
+   "o": "cierre_labs_innovacion",
+   "f": "F-457",
+   "apoyo": "Cuatro cierres documentados 2023-2025: Walmart Store No. 8 (~300 reubicados), SPACE10, G-Works (~40) y GM Arizona (~940 empleos, con WARN notice).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cierre_labs_innovacion",
+   "p": "tiene_limite",
+   "o": "atribucion_cierre_disputada",
+   "f": "F-457",
+   "apoyo": "IKEA enmarcó el cierre de SPACE10 como misión cumplida; General Mills dijo que G-Works no alcanzó su meta de US$100M en 5 años.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "inversion_insurtech_latam",
+   "p": "tiene_limite",
+   "o": "eco_de_cita",
+   "f": "F-458",
+   "apoyo": "536 insurtechs LatAm (2025) → 576 (1S 2026, +14%); financiamiento US$199M → US$90M: cuatro vitrinas de una misma fuente agregada no identificada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "inversion_insurtech_latam",
+   "p": "tiene_limite",
+   "o": "financiamiento_no_desempeno",
+   "f": "F-458",
+   "apoyo": "Es financiamiento y conteo, no desempeño: no es señal de que el insurtech regional funcione.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "inversion_insurtech_latam",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-458",
+   "apoyo": "MAPFRE, aseguradora, cubre su propio mercado de disrupción (conflicto de interés).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_venture_studios_mas_rapidos",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-459",
+   "apoyo": "Cifras autorreportadas por los propios operadores (Atomic, Waveup): el que vende el método publica la medición, sin contraparte independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_venture_studios_mas_rapidos",
+   "p": "aplica_a",
+   "o": "venture_studios",
+   "f": "F-459",
+   "apoyo": "Venture studios: >800 activos, 'Serie A en 25,2 meses vs. 56 tradicional', IRR 65% (Atomic).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_software_innovacion",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-459",
+   "apoyo": "US$1,25B (2024) → US$3,5B (2033) de estimadores sin metodología pública; Planview ~US$180M y Brightidea ~US$50M de revenue estimado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "labs_innovacion_peru",
+   "p": "es_tipo_de",
+   "o": "labs_innovacion_corporativos",
+   "f": "F-460",
+   "apoyo": "Los labs peruanos siguen activos en 2025 sin señal pública de cierre, a diferencia de la ola de cierres en EE.UU. y Europa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "labs_innovacion_peru",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-460",
+   "apoyo": "Datos autorreportados; el case study de NTT Data lo publica el proveedor de los servicios que describe; no hay retorno auditado de estos labs.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "meta_innovacion_bcp",
+   "p": "tiene_limite",
+   "o": "error_fecha_evento",
+   "f": "F-460",
+   "apoyo": "Corregido: la meta de 10% aparece en los reportes de Credicorp fechada hacia 2026, no 2025 como decía la entrevista de 2022.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "meta_innovacion_bcp",
+   "p": "respalda",
+   "o": "c_metas_innovacion_no_reportadas",
+   "f": "F-460",
+   "apoyo": "Versión original: no se halló verificación pública de si BCP cumplió su meta; la propia ficha luego corrige que sí hay reporte (H30 refutada).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "defensa_teatro_innovacion",
+   "p": "respalda",
+   "o": "c_quien_corrige_panico_vive_audiencia",
+   "f": "F-462",
+   "apoyo": "La misma industria que vende hackathons y talleres publica su defensa cuando el discurso se mueve a condenarlos.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "defensa_teatro_innovacion",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-462",
+   "apoyo": "Mile Zero vende consultoría de innovación y Kelley vende una metodología propietaria y charlas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "defensa_teatro_innovacion",
+   "p": "aplica_a",
+   "o": "teatro_innovacion",
+   "f": "F-462",
+   "apoyo": "Posts de opinión (nov-dic 2025) que defienden los rituales de innovación criticados como teatro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "innolead",
+   "p": "tiene_limite",
+   "o": "incentivo_estructural_emisor",
+   "f": "F-463",
+   "apoyo": "Con membresías desde US$695/año, su negocio depende de que la pregunta '¿los labs funcionan?' siga abierta.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cierre_labs_innovacion",
+   "p": "origina_en",
+   "o": "innolead",
+   "f": "F-463",
+   "apoyo": "InnoLead es la principal fuente de cobertura de cierres y aperturas de labs; su reporteo es específico y fechado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teatro_innovacion",
+   "p": "aplica_a",
+   "o": "prensa_negocios_hispana",
+   "f": "F-464",
+   "apoyo": "El marco conceptual del 'teatro de la innovación' lleva seis años de tránsito en medios en español (desde dic-2020).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cifras_importadas_sin_fuente",
+   "p": "tiene_limite",
+   "o": "texto_no_verificado_bloqueo",
+   "f": "F-464",
+   "apoyo": "No se pudo saber si los medios en español generaron estudio propio o solo adoptaron el vocabulario: 403 en los cuatro intentos; no se infiere ni confirmación ni refutación.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-457: El tercer triple usa 'proyeccion_no_medicion' de forma imprecisa (la limitación real es de recencia); se puede eliminar si se prefiere. | F-460: La ficha mantiene la frase original ('las metas se anuncian y no se reportan') junto a la corrección del 2026-10-03 que la refuta; el último triple refleja la versión original y debería leerse junto al de F-529."
+}

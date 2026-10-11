@@ -1,0 +1,357 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-351",
+  "F-354",
+  "F-355",
+  "F-356",
+  "F-358",
+  "F-360",
+  "F-361",
+  "F-362"
+ ],
+ "entidades": [
+  {
+   "id": "nps_oscar_health",
+   "nombre": "NPS de Oscar Health (66 en Q4 2024)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "oscar_health",
+   "nombre": "Oscar Health (aseguradora de salud cotizada, EE.UU.)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "telesalud_video",
+   "nombre": "Video-visitas de telesalud (frente a consulta presencial)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "press_ganey",
+   "nombre": "Encuesta Press Ganey de experiencia del paciente",
+   "tipo": "metrica"
+  },
+  {
+   "id": "pacientes_pediatricos",
+   "nombre": "Pacientes pediátricos y sus padres",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "nps_aseguradoras_salud",
+   "nombre": "NPS típico de aseguradoras de salud (10-30)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "nps_telesalud",
+   "nombre": "NPS de telesalud ('bueno' >50; líderes 60-70)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "no_renovacion_pagador",
+   "nombre": "El pagador (Centene, ~50% del revenue) no renueva el contrato de triaje digital",
+   "tipo": "concepto"
+  },
+  {
+   "id": "colapso_babylon",
+   "nombre": "Colapso financiero de Babylon Health (pérdidas de US$212-274M en 2022, quiebra, venta del Reino Unido por £500.000)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_triaje_ia_viable_por_precision",
+   "nombre": "Aseguradora + triaje con IA es viable con solo validar la precisión clínica",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "mix_canales_vida_apac",
+   "nombre": "Mix de canales de seguro de vida en Asia-Pacífico (agencias ~40%, partnerships ~35%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_digital_potencia_agente",
+   "nombre": "Lo digital potencia al agente o intermediario de seguros, no lo reemplaza",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "fuente_no_verificada",
+   "nombre": "Cifra o URL primaria no verificada (citada desde una fuente secundaria)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "loss_ratio_lemonade_historico",
+   "nombre": "Loss ratio de Lemonade 2017-2022 (166% → 86% → ~90%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_ia_sin_agentes_resuelve_seguro",
+   "nombre": "IA + cero agentes resuelve la fricción y la selección adversa del seguro",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "venta_digital_seguro_vida",
+   "nombre": "Venta de seguro de vida con flujo mayormente digital",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "ingresos_ethos",
+   "nombre": "Ingresos de Ethos FY2025 (US$388M, +52%; 198.338 pólizas, +55%; margen EBITDA ajustado 23%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_venta_digital_directa_vida_viable",
+   "nombre": "La venta digital directa de seguro de vida es un modelo de negocio viable",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "concentracion_socios_ethos",
+   "nombre": "3 aseguradoras socias concentran 88% del revenue de Ethos",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "nps_oscar_health",
+   "p": "es_tipo_de",
+   "o": "nps_cliente_seguros",
+   "f": "F-351",
+   "apoyo": "Oscar reporta en su 10-K un NPS de 66 en Q4 2024, 'significativamente sobre el promedio de la industria'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nps_oscar_health",
+   "p": "tiene_limite",
+   "o": "cifra_autorreportada_no_auditada",
+   "f": "F-351",
+   "apoyo": "El NPS es métrica operativa no auditada ni estandarizada, aunque aparezca en un filing regulatorio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "oscar_health",
+   "p": "asocia_con",
+   "o": "ventas_retencion_seguros",
+   "f": "F-351",
+   "apoyo": "Oscar: 1,68 M de miembros efectivos (+61% interanual); cita la retención como driver de revenue.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "reduce",
+   "o": "visitas_urgencias",
+   "f": "F-354",
+   "apoyo": "Sistema de salud anónimo del Medio Oeste (35.000 vidas): urgencias bajó de 242 a 192 visitas por 1.000 asociados con triaje remoto con enfermera primero.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "reduce",
+   "o": "costo_siniestros_medicos_empleador",
+   "f": "F-354",
+   "apoyo": "Una visita de triaje cuesta ~US$30 frente a US$1.200-1.400 de una visita a urgencias: magnitud del ahorro para el empleador.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "tiene_limite",
+   "o": "cifra_autorreportada_no_auditada",
+   "f": "F-354",
+   "apoyo": "Caso sin nombre de empresa, en artículo patrocinado por un vendor de nurse-triage; no auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "telesalud_video",
+   "p": "aumenta",
+   "o": "satisfaccion_telesalud",
+   "f": "F-355",
+   "apoyo": "Video-visitas con puntaje Press Ganey de 94,9% frente a 92,5% presencial, con más satisfacción en acceso y evaluación del proveedor (peer-reviewed).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "press_ganey",
+   "p": "mide",
+   "o": "satisfaccion_telesalud",
+   "f": "F-355",
+   "apoyo": "Instrumento estandarizado Press Ganey usado para comparar telesalud y presencial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "telesalud_video",
+   "p": "aplica_a",
+   "o": "pacientes_pediatricos",
+   "f": "F-355",
+   "apoyo": "Comparación en atención pediátrica durante la pandemia de COVID-19.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "telesalud_video",
+   "p": "respalda",
+   "o": "c_resentimiento_por_desvio",
+   "f": "F-355",
+   "apoyo": "Medida bien, la telesalud puntúa igual o mejor que la consulta presencial: el problema no es el canal.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "nps_aseguradoras_salud",
+   "p": "es_tipo_de",
+   "o": "nps_cliente_seguros",
+   "f": "F-356",
+   "apoyo": "CustomerGauge: el NPS de aseguradoras de salud suele estar entre 10 y 30, golpeado por el dolor en reclamos y facturación.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nps_telesalud",
+   "p": "mide",
+   "o": "satisfaccion_telesalud",
+   "f": "F-356",
+   "apoyo": "En telesalud un NPS 'bueno' supera 50 y los líderes llegan a 60-70.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nps_aseguradoras_salud",
+   "p": "asocia_con",
+   "o": "confianza_aseguradora",
+   "f": "F-356",
+   "apoyo": "La distancia entre el NPS del pagador (10-30) y el del canal remoto (>50) refleja una brecha estructural de confianza en la aseguradora.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "no_renovacion_pagador",
+   "p": "aumenta",
+   "o": "colapso_babylon",
+   "f": "F-358",
+   "apoyo": "El detonante final del colapso de Babylon (valuada en US$4.200M en su IPO de 2021) no fue el rechazo del consumidor: Centene, el pagador, no renovó el contrato.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "colapso_babylon",
+   "p": "refuta",
+   "o": "c_triaje_ia_viable_por_precision",
+   "f": "F-358",
+   "apoyo": "La viabilidad la decide el pagador, no solo la precisión clínica: matiz para RIMAC si asume que aseguradora + triaje IA es viable por validar precisión.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_triaje_ia_viable_por_precision",
+   "p": "aplica_a",
+   "o": "modelo_farmacias_triage",
+   "f": "F-358",
+   "apoyo": "El supuesto que el caso Babylon cuestiona es el del modelo de triaje con IA que evalúa RIMAC en Perú.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "mix_canales_vida_apac",
+   "p": "respalda",
+   "o": "c_digital_potencia_agente",
+   "f": "F-360",
+   "apoyo": "McKinsey: en Asia-Pacífico el contacto cara a cara sigue dominando (agencias ~40%, partnerships ~35%) aunque ~80% de las ventas ya está habilitado por tecnología digital.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "multicanal_humano_digital_seguros",
+   "p": "aplica_a",
+   "o": "mix_canales_vida_apac",
+   "f": "F-360",
+   "apoyo": "El modelo dominante en vida en Asia-Pacífico es humano habilitado por tecnología, no digital puro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mix_canales_vida_apac",
+   "p": "tiene_limite",
+   "o": "fuente_no_verificada",
+   "f": "F-360",
+   "apoyo": "Cifras de consultora citadas tal cual desde un deck; URL y metodología no verificadas en la sesión.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "loss_ratio_lemonade_historico",
+   "p": "refuta",
+   "o": "c_ia_sin_agentes_resuelve_seguro",
+   "f": "F-361",
+   "apoyo": "El loss ratio de Lemonade pasó de 166% (2017) a 86% (2019) y ~90% (2021-22): años después del IPO seguía sobre 85-90%; digitalizar sin agentes no resolvió la economía del seguro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "loss_ratio_lemonade_historico",
+   "p": "aplica_a",
+   "o": "lemonade_inc",
+   "f": "F-361",
+   "apoyo": "Trayectoria histórica del loss ratio de Lemonade Inc.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "loss_ratio_lemonade_historico",
+   "p": "respalda",
+   "o": "c_digital_potencia_agente",
+   "f": "F-361",
+   "apoyo": "Contraejemplo del proyecto: digitalizar sin potenciar el juicio humano no resolvió la economía del seguro.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "loss_ratio_lemonade_historico",
+   "p": "tiene_limite",
+   "o": "fuente_no_verificada",
+   "f": "F-361",
+   "apoyo": "Cifra citada en un deck interno de RIMAC sin fuente primaria; no citar como exacta sin rastrear el origen.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "venta_digital_seguro_vida",
+   "p": "asocia_con",
+   "o": "ingresos_ethos",
+   "f": "F-362",
+   "apoyo": "Ethos FY2025: revenue de US$388M (+52%), 198.338 pólizas activadas (+55%) y margen EBITDA ajustado de 23%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ingresos_ethos",
+   "p": "respalda",
+   "o": "c_venta_digital_directa_vida_viable",
+   "f": "F-362",
+   "apoyo": "Es el caso más sólido encontrado de éxito comercial verificable en venta de seguro de vida con flujo mayormente digital.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ingresos_ethos",
+   "p": "tiene_limite",
+   "o": "concentracion_socios_ethos",
+   "f": "F-362",
+   "apoyo": "Tres aseguradoras socias concentran 88% del revenue de Ethos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ingresos_ethos",
+   "p": "tiene_limite",
+   "o": "fuente_no_verificada",
+   "f": "F-362",
+   "apoyo": "Cifras del comunicado de resultados; no se releyeron del filing de la SEC.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

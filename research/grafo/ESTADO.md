@@ -14,7 +14,7 @@
 | Aristas wikilink (node→node) | 142 | recíprocas: 142 de 142 (100%) |
 | Fuentes citadas por ≥1 node | 766 de 874 | 88% del ledger; **108 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 103 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 515 de 874 fuentes (59%) | 845 relaciones · 65 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 874 de 874 fuentes (100%) | 1924 relaciones · 110 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -103,7 +103,7 @@
 | 2026-10-07 | `7d6f508` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
-| 2026-10-11 | `51bb9c6` | 874 | 20 | 5 | 122 | 766 | 2001 | 15 | 20 | 22 |
+| 2026-10-11 | `33c8f95` | 874 | 20 | 5 | 142 | 766 | 2005 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -134,24 +134,24 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2005 | 274 | 140 | 14/14 | 2026-10-04 | 2026-10-11 v4.1 |
-| `convergencia-psicologia-economia-ia` | 247 | 117 | 51 | 9/9 | 2026-10-10 | 2026-10-11 v1.0 |
-| `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-10 | 2026-10-11 v1.0 |
+| `tendencias-diseno-innovacion` | 2005 | 274 | 140 | 14/14 | 2026-10-11 | 2026-10-11 v4.1 |
+| `convergencia-psicologia-economia-ia` | 247 | 117 | 51 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
+| `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
 | `fenomeno-el-nino-impacto-personas` | 404 | 58 | 32 | 3/3 | 2026-10-07 | 2026-10-07 v1.1 |
 | `mecanismos-seguros-salud` | 355 | 57 | 35 | 9/9 | 2026-10-10 | 2026-10-10 v1.2 |
-| `conducta-humano-ia` | 143 | 41 | 28 | 8/8 | 2026-10-04 | 2026-10-11 v1.1 |
-| `proyecto-back-to-basics-ffvv-vida` | 937 | 33 | 29 | 12/12 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-10-11 v1.4 |
+| `conducta-humano-ia` | 143 | 41 | 28 | 8/8 | 2026-10-11 | 2026-10-11 v1.1 |
+| `proyecto-back-to-basics-ffvv-vida` | 937 | 33 | 29 | 12/12 | 2026-10-11 | 2026-10-11 v1.4 |
 | `futuro-asesores-seguros-venta-digital` | 389 | 23 | 2 | 6/6 | 2026-10-04 | 2026-10-04 v1.0 |
-| `modelo-salud-ia-farmacias-peru` | 618 | 23 | 18 | 5/5 | 2026-10-07 | 2026-10-11 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 342 | 21 | 10 | 17/17 | 2026-10-07 | 2026-10-11 v1.1 |
-| `transicion-venta-fria-a-opt-in` | 326 | 18 | 7 | 5/5 | 2026-10-04 | 2026-10-11 v1.0 |
+| `modelo-salud-ia-farmacias-peru` | 618 | 23 | 18 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
+| `seguros-comportamiento-mundo-peru` | 342 | 21 | 10 | 17/17 | 2026-10-11 | 2026-10-11 v1.1 |
+| `transicion-venta-fria-a-opt-in` | 326 | 18 | 7 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 256 | 17 | 11 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |
 | `material-visual-venta-consultiva` | 377 | 17 | 12 | 8/8 | 2026-10-04 | 2026-10-04 v1.1 |
 | `behavioral-design-estado-disciplina` | 320 | 9 | 8 | 9/9 | 2026-10-04 | 2026-10-04 v1.1 |
-| `glosario-seguro-vida-peru` | 218 | 8 | 4 | 5/5 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-10-11 v1.0 |
+| `glosario-seguro-vida-peru` | 218 | 8 | 4 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | 2026-10-04 | 2026-10-04 v1.0 |
-| `glosario-seguro-salud-peru` | 198 | 6 | 5 | 6/6 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-10-11 v1.0 |
+| `glosario-seguro-salud-peru` | 198 | 6 | 5 | 6/6 | 2026-10-11 | 2026-10-11 v1.0 |
 | `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-26 v1.2 |
 | `modelo-personas-sinteticas` | 80 | 0 | 0 | 6/6 | 2026-10-07 | 2026-10-07 v1.0 |
 

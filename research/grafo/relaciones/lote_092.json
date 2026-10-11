@@ -1,0 +1,334 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-406",
+  "F-408",
+  "F-409",
+  "F-410",
+  "F-411",
+  "F-412",
+  "F-413",
+  "F-414"
+ ],
+ "entidades": [
+  {
+   "id": "faros_telemetria",
+   "nombre": "Faros AI 2025: telemetría de +10.000 desarrolladores en 1.255 equipos",
+   "tipo": "estudio"
+  },
+  {
+   "id": "tiempo_revision_codigo",
+   "nombre": "Tiempo de revisión de código",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_gartner_60_tareas_diseno",
+   "nombre": "Según Gartner, +60% de las tareas de diseño se resolverán con IA para 2026",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "iem_contenido_ux_2026",
+   "nombre": "IEM Business School 2026: Descubre cómo evoluciona el UX/UI",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_autoridad_prestada",
+   "nombre": "Autoridad prestada: cifras atribuidas a una autoridad nombrada que no existen en sus reportes (H23)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "doonamis_tendencias_2026",
+   "nombre": "Doonamis 2026: Tendencias UX/UI 2026",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_forrester_1_100",
+   "nombre": "Cada US$1 invertido en UX devuelve US$100 (atribuido a Forrester)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "designer_fund_ai_design_2026",
+   "nombre": "Designer Fund: AI in Design 2026",
+   "tipo": "estudio"
+  },
+  {
+   "id": "evidencia_creativa_blog",
+   "nombre": "Evidencia Creativa 2026: reproducción en español de 'AI in Design 2026'",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_vendor_decreta_fatiga",
+   "nombre": "Los vendors decretan la fatiga de su propio producto: tendencia de la industria disfrazada de rebelión comunitaria",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "lim_dato_propietario_no_auditable",
+   "nombre": "Dato sobre base o estudio propietario no auditable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "figma_config_2026",
+   "nombre": "Figma Config 2026 (23-25 jun, San Francisco, +8.000 asistentes)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_ia_normalizada_gremio_diseno",
+   "nombre": "La IA se normalizó en el gremio de diseño: se pasó de '¿nos va a reemplazar?' a 'así se trabaja ahora'",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "podcast_ux_friends_93",
+   "nombre": "Podcast UX Friends ep. 93: despidos, IA y ¿volverse generalista?",
+   "tipo": "estudio"
+  },
+  {
+   "id": "blind_hilo_juniors",
+   "nombre": "Hilo de Blind sobre escasez de empleos junior en diseño (2026)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_ansiedad_seniority",
+   "nombre": "La ansiedad gremial es un fenómeno de seniority: el daño se concentra en juniors (H10)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "escasez_empleo_junior",
+   "nombre": "Escasez de empleos junior en diseño",
+   "tipo": "resultado"
+  },
+  {
+   "id": "disenadores_junior",
+   "nombre": "Diseñadores junior y recién graduados",
+   "tipo": "poblacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "faros_telemetria",
+   "p": "respalda",
+   "o": "c_ia_desplaza_esfuerzo_verificacion",
+   "f": "F-406",
+   "apoyo": "Con asistencia de IA: 98% más pull requests y 91% más tiempo de revisión; sostiene el mecanismo cualitativo, no la cifra 4,3/1,2 min.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "aumenta",
+   "o": "tiempo_revision_codigo",
+   "f": "F-406",
+   "apoyo": "Telemetría de +10.000 devs: +91% de tiempo de revisión con asistencia de IA.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "faros_telemetria",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-406",
+   "apoyo": "N grande y declarado, pero del proveedor que vende la herramienta de medición; método no auditable externamente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_gartner_60_tareas_diseno",
+   "p": "origina_en",
+   "o": "iem_contenido_ux_2026",
+   "f": "F-408",
+   "apoyo": "Contenido de una escuela que vende un Máster en UX/UI cita +60% de tareas con IA, +80% de productos y 68% de design systems, todo atribuido a Gartner.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "iem_contenido_ux_2026",
+   "p": "respalda",
+   "o": "c_autoridad_prestada",
+   "f": "F-408",
+   "apoyo": "Caso testigo: citar a un emisor que no dijo eso, peor que citar a un emisor interesado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_gartner_60_tareas_diseno",
+   "p": "tiene_limite",
+   "o": "lim_cifra_sin_origen_primario",
+   "f": "F-408",
+   "apoyo": "La búsqueda del reporte primario de Gartner no encontró ninguno (ver F-418).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "iem_contenido_ux_2026",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-408",
+   "apoyo": "La escuela vende un Máster en UX/UI.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doonamis_tendencias_2026",
+   "p": "respalda",
+   "o": "c_conducta_local_discurso_importado",
+   "f": "F-409",
+   "apoyo": "Recircula el $1→$100 de Forrester, el ~70% de abandono de carrito de Baymard y Core Web Vitals: tres cifras de emisores anglosajones, cero advertencia metodológica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_forrester_1_100",
+   "p": "es_tipo_de",
+   "o": "c_narrativa_multiplicadores_diseno",
+   "f": "F-409",
+   "apoyo": "El '$1 en UX devuelve $100' ya fue desmontado en la iteración 1 (F-268) y vuelve a circular en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doonamis_tendencias_2026",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-409",
+   "apoyo": "Contenido de agencia que vende servicios de UX.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_ia_disenadores",
+   "p": "origina_en",
+   "o": "designer_fund_ai_design_2026",
+   "f": "F-410",
+   "apoyo": "Adopción de IA entre diseñadores 54% (2025) → 91% (2026); Claude 78% vs. ChatGPT 65%; 65% asume tareas de PM o ingeniería.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "designer_fund_ai_design_2026",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-410",
+   "apoyo": "Reporte de un fondo de capital de riesgo con interés directo en la tesis de que la IA transformó el diseño rápido.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "evidencia_creativa_blog",
+   "p": "respalda",
+   "o": "c_conducta_local_discurso_importado",
+   "f": "F-410",
+   "apoyo": "El bloque de cifras más rico hallado en español es 100% de origen anglosajón y se amplifica sin el descuento por interés del emisor.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tendencia_imperfect_by_design",
+   "p": "respalda",
+   "o": "c_vendor_decreta_fatiga",
+   "f": "F-411",
+   "apoyo": "Pinterest, Canva y Adobe empujan el 'cansancio de la perfección IA' como tendencia 2026; segunda ola del patrón detectado con F-295.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "busquedas_estetica_lofi",
+   "p": "tiene_limite",
+   "o": "lim_dato_propietario_no_auditable",
+   "f": "F-411",
+   "apoyo": "Canva reporta +30% de búsquedas de texturas realistas sobre su propia base de búsquedas, no auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tendencia_imperfect_by_design",
+   "p": "es_tipo_de",
+   "o": "ai_slop_neobrutalismo",
+   "f": "F-411",
+   "apoyo": "La tendencia de Canva es una variante del rechazo estético a la perfección generada por IA, reproducida literalmente por escuelas y medios.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "figma_make",
+   "p": "parte_de",
+   "o": "figma_config_2026",
+   "f": "F-412",
+   "apoyo": "En Config 2026 se lanzaron Figma Make (con Claude de Anthropic), Figma Motion y 20+ herramientas de imagen con IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "figma_config_2026",
+   "p": "respalda",
+   "o": "c_ia_normalizada_gremio_diseno",
+   "f": "F-412",
+   "apoyo": "El registro dominante ya no es defensivo: normalización institucional de la IA en la herramienta central del gremio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "figma_config_2026",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-412",
+   "apoyo": "Cobertura de agencias y consultoras que sirven al mismo proveedor, sin distancia crítica; el evento sí es conducta verificable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "podcast_ux_friends_93",
+   "p": "aplica_a",
+   "o": "medios_hispanohablantes",
+   "f": "F-413",
+   "apoyo": "Es la pieza más cercana a conversación social genuina en español sobre IA e identidad del diseñador en tres iteraciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "podcast_ux_friends_93",
+   "p": "tiene_limite",
+   "o": "lim_no_verificado_primario",
+   "f": "F-413",
+   "apoyo": "No se pudo escuchar en la sesión: se registra por su existencia y encuadre, no por sus afirmaciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "podcast_ux_friends_93",
+   "p": "tiene_limite",
+   "o": "lim_testimonio_sin_muestra",
+   "f": "F-413",
+   "apoyo": "Podcast de comunidad sin método ni datos propios.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "blind_hilo_juniors",
+   "p": "respalda",
+   "o": "c_ansiedad_seniority",
+   "f": "F-414",
+   "apoyo": "Seniors con correo corporativo verificado: 'pésimo si eres junior o recién graduado; si eres senior, no es ideal pero cerca de lo normal'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "escasez_empleo_junior",
+   "p": "aplica_a",
+   "o": "disenadores_junior",
+   "f": "F-414",
+   "apoyo": "Primera evidencia segmentada por seniority: el deterioro del mercado se concentra en juniors.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "blind_hilo_juniors",
+   "p": "tiene_limite",
+   "o": "lim_testimonio_sin_muestra",
+   "f": "F-414",
+   "apoyo": "Plataforma con identidad verificada, pero comentarios individuales sin método ni muestra.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

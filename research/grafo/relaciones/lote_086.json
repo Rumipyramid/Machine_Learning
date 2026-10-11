@@ -1,0 +1,330 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-332",
+  "F-342",
+  "F-343",
+  "F-344",
+  "F-346",
+  "F-347",
+  "F-348",
+  "F-350"
+ ],
+ "entidades": [
+  {
+   "id": "miembros_aseguradora_comercial",
+   "nombre": "Miembros de aseguradora de salud comercial privada (EE.UU.)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "cifra_autorreportada_no_auditada",
+   "nombre": "Cifra autorreportada por la empresa o su proveedor, no auditada independientemente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "autorizacion_previa",
+   "nombre": "Autorización previa / utilization management en seguros de salud",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "abandono_tratamiento",
+   "nombre": "Abandono de tratamiento por fricción administrativa",
+   "tipo": "resultado"
+  },
+  {
+   "id": "encuesta_ama_autorizacion_previa",
+   "nombre": "Encuesta AMA sobre autorización previa (2024-2025)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "sesgo_interes_medicos",
+   "nombre": "Sesgo de interés declarado: los médicos se oponen a la utilization management",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "denegacion_algoritmica_cigna",
+   "nombre": "Denegación algorítmica de reclamos de Cigna (300.000 en 2 meses, 1,2 s por revisión)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reversion_en_apelacion",
+   "nombre": "Reversión de denegaciones en apelación",
+   "tipo": "resultado"
+  },
+  {
+   "id": "regulacion_estatal_denegaciones_ia",
+   "nombre": "Regulación estatal de denegaciones con algoritmos (California, Texas)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "reaccion_social_ceo_uhc",
+   "nombre": "Reacción social al asesinato del CEO de UnitedHealthcare (57.000 risas vs. 62.000 reacciones en el post de condolencias)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "anthem_er_evitable",
+   "nombre": "Política de 'urgencia evitable' de Anthem (2018): no pagar visitas a urgencias juzgadas evitables",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reversion_anthem_2019",
+   "nombre": "Anthem modifica su política de urgencia evitable (ene-2019)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "eco_cita_comunicado",
+   "nombre": "Varios medios repiten un mismo comunicado o despacho (eco de cita, no triangulación independiente)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "telesalud_desvio_sin_resolver",
+   "nombre": "Telesalud que deriva sin tratar y cobra igual (telesalud como desvío)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "quejas_telesalud",
+   "nombre": "Quejas recurrentes de usuarios de telesalud",
+   "tipo": "resultado"
+  },
+  {
+   "id": "reviews_snippets",
+   "nombre": "Reviews reconstruidas desde snippets de búsqueda, sin acceso al hilo original",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "plan_virtual_first",
+   "nombre": "Plan de salud 'virtual-first' (Priority Health)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "satisfaccion_telesalud",
+   "nombre": "Satisfacción del paciente con la telesalud",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_resentimiento_por_desvio",
+   "nombre": "El resentimiento con la telesalud se concentra en los casos que derivan sin resolver, no en el canal",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "teletriaje_enfermera",
+   "p": "reduce",
+   "o": "visitas_urgencias",
+   "f": "F-332",
+   "apoyo": "Medical Mutual (Ohio): el triaje con enfermera primero desvió a 50% de quienes iban a urgencias en el año 1 y llegó a ~90% de evitación con el tiempo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "aplica_a",
+   "o": "miembros_aseguradora_comercial",
+   "f": "F-332",
+   "apoyo": "Única fuente que mide la decisión en una aseguradora privada real: la aseguradora empuja el canal barato y el miembro acepta.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "es_tipo_de",
+   "o": "steering_proveedor_precio",
+   "f": "F-332",
+   "apoyo": "Es la aseguradora empujando al miembro hacia un canal más barato que urgencias.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "tiene_limite",
+   "o": "cifra_autorreportada_no_auditada",
+   "f": "F-332",
+   "apoyo": "Case study del proveedor (Conduit Health Partners), con interés comercial en mostrar éxito; no auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "autorizacion_previa",
+   "p": "aumenta",
+   "o": "abandono_tratamiento",
+   "f": "F-342",
+   "apoyo": "Encuesta AMA: 82% reporta abandono de tratamiento por la fricción de la autorización previa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "autorizacion_previa",
+   "p": "aumenta",
+   "o": "visitas_urgencias",
+   "f": "F-342",
+   "apoyo": "42% reporta que la utilization management desvía hacia atención urgente o de emergencia: contener costo produce el efecto contrario al buscado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "encuesta_ama_autorizacion_previa",
+   "p": "tiene_limite",
+   "o": "sesgo_interes_medicos",
+   "f": "F-342",
+   "apoyo": "Asociación profesional con sesgo de interés declarado; N≈1.005 pacientes, 1.010 empleados de proveedores y 115 de pagadores.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "denegacion_algoritmica_cigna",
+   "p": "asocia_con",
+   "o": "reversion_en_apelacion",
+   "f": "F-343",
+   "apoyo": "Cigna negó 300.000 reclamos en 2 meses con 1,2 segundos por revisión; 90% de las denegaciones se revirtió en apelación.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "denegacion_algoritmica_cigna",
+   "p": "aumenta",
+   "o": "backlash_consumidor",
+   "f": "F-343",
+   "apoyo": "El steering algorítmico percibido como interesado genera denuncia y litigio: no es hipotético.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "denegacion_algoritmica_cigna",
+   "p": "aumenta",
+   "o": "regulacion_estatal_denegaciones_ia",
+   "f": "F-343",
+   "apoyo": "El caso derivó en regulación estatal activa en California y Texas; paralelo al riesgo regulatorio en Perú (Indecopi).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reaccion_social_ceo_uhc",
+   "p": "mide",
+   "o": "percepcion_lucro_aseguradora_salud",
+   "f": "F-344",
+   "apoyo": "57.000 reacciones de risa frente a 62.000 en el post de condolencias: validación social masiva de la narrativa 'la aseguradora niega para ahorrar plata'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reaccion_social_ceo_uhc",
+   "p": "es_tipo_de",
+   "o": "backlash_consumidor",
+   "f": "F-344",
+   "apoyo": "Salto de la queja dispersa a un evento político-mediático nacional contra las aseguradoras de salud (dic-2024).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "anthem_er_evitable",
+   "p": "aumenta",
+   "o": "backlash_consumidor",
+   "f": "F-346",
+   "apoyo": "ACEP declaró que la política produciría muertes por miedo a la factura; hubo demandas de ACEP y de la Medical Association of Georgia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "backlash_consumidor",
+   "p": "asocia_con",
+   "o": "reversion_anthem_2019",
+   "f": "F-346",
+   "apoyo": "Tras el backlash y las demandas, Anthem modificó la política en enero de 2019.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "anthem_er_evitable",
+   "p": "asocia_con",
+   "o": "anthem_limite_anestesia",
+   "f": "F-346",
+   "apoyo": "La política de 2018 es un precedente del mismo patrón que el caso Anthem de 2024 (límite de anestesia).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reversion_anthem_2019",
+   "p": "tiene_limite",
+   "o": "eco_cita_comunicado",
+   "f": "F-346",
+   "apoyo": "La cobertura especializada tiene cierto eco de cita sobre el mismo despacho de NPR.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "telesalud_desvio_sin_resolver",
+   "p": "aumenta",
+   "o": "quejas_telesalud",
+   "f": "F-347",
+   "apoyo": "Reviews de 98point6: 'no dan tratamiento y te derivan a otro lado'; 'pagas para que alguien te diga que vayas a pagarle a otro'. Queja recurrente, no viral.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "quejas_telesalud",
+   "p": "tiene_limite",
+   "o": "reviews_snippets",
+   "f": "F-347",
+   "apoyo": "Reviews de Trustpilot y App Store reconstruidas desde snippets; el hilo original no se pudo leer.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "telesalud_desvio_sin_resolver",
+   "p": "aumenta",
+   "o": "quejas_telesalud",
+   "f": "F-348",
+   "apoyo": "Included Health/Doctor On Demand: paciente con sinusitis sin receta de antibióticos que al día siguiente los obtuvo en clínica presencial: 'huge waste of money'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "publicidad_precio_enganosa",
+   "p": "aumenta",
+   "o": "quejas_telesalud",
+   "f": "F-348",
+   "apoyo": "Quejas por publicidad de 'visita a US$0' seguida de cobros posteriores.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "quejas_telesalud",
+   "p": "tiene_limite",
+   "o": "reviews_snippets",
+   "f": "F-348",
+   "apoyo": "Reviews de BBB y Trustpilot con el mismo problema de acceso directo que F-347.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "plan_virtual_first",
+   "p": "aumenta",
+   "o": "satisfaccion_telesalud",
+   "f": "F-350",
+   "apoyo": "Priority Health: ~5.000 inscritos en su plan virtual-first; 60% de los encuestados calificó su satisfacción en 4,8/5.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "plan_virtual_first",
+   "p": "respalda",
+   "o": "c_resentimiento_por_desvio",
+   "f": "F-350",
+   "apoyo": "Cuando la telesalud sí resuelve, la satisfacción es alta: el resentimiento se concentra donde deriva sin resolver.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "plan_virtual_first",
+   "p": "tiene_limite",
+   "o": "cifra_autorreportada_no_auditada",
+   "f": "F-350",
+   "apoyo": "Prensa y comunicado citan una cifra de la propia aseguradora, no auditada independientemente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

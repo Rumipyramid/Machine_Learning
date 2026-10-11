@@ -1,0 +1,278 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-167",
+  "F-168",
+  "F-171",
+  "F-172",
+  "F-173",
+  "F-174",
+  "F-177",
+  "F-179"
+ ],
+ "entidades": [
+  {
+   "id": "baja_adopcion_ubi",
+   "nombre": "Baja adopción del UBI pese al ahorro potencial",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "ia_deteccion_fraude_claims",
+   "nombre": "IA que analiza cientos de datos (incl. señales faciales) para detectar fraude en reclamos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "combined_ratio_ramos_comerciales_2025",
+   "nombre": "Combined ratio por ramo comercial en EE.UU. (2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "naic_modelo_570",
+   "nombre": "Ley modelo NAIC 570 sobre publicidad de seguros de vida y anualidades",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "publicidad_retorno_garantizado",
+   "nombre": "Publicidad que expresa el retorno garantizado como % o promete éxito financiero",
+   "tipo": "concepto"
+  },
+  {
+   "id": "publicidad_enganosa_financiera",
+   "nombre": "Publicidad financiera o de seguros engañosa",
+   "tipo": "concepto"
+  },
+  {
+   "id": "norma_extranjera_referencial",
+   "nombre": "Norma extranjera: referencia de categoría de riesgo, no ley aplicable en Perú",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "lineamientos_indecopi_publicidad",
+   "nombre": "Lineamientos de Indecopi sobre publicidad engañosa",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "campana_preaprobado_bbva",
+   "nombre": "Campaña 'Preaprobado para ti' de BBVA (Perú)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "multa_indecopi_bbva_preaprobado",
+   "nombre": "Multa de Indecopi a BBVA por la campaña 'Preaprobado para ti' (2025)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "informacion_producto_incompleta",
+   "nombre": "Información de producto ausente, inconsistente o incorrecta",
+   "tipo": "concepto"
+  },
+  {
+   "id": "abandono_compra_info_incompleta",
+   "nombre": "Abandono de una compra importante por información incompleta",
+   "tipo": "resultado"
+  },
+  {
+   "id": "imagenes_estilo_vida",
+   "nombre": "Imágenes de estilo de vida (producto en contexto de uso real)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "sin_evidencia_sector_seguros",
+   "nombre": "Hallazgo no verificado para el sector seguros",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ubi_telematica",
+   "p": "tiene_limite",
+   "o": "baja_adopcion_ubi",
+   "f": "F-167",
+   "apoyo": "Solo ~12% de encuestados usa telemática y 73% no la usa, pese al ahorro potencial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_telematica",
+   "p": "mide",
+   "o": "disposicion_compartir_datos_pricing",
+   "f": "F-167",
+   "apoyo": "El ~12% de uso real fundamenta la marginal implícita ≈0,15 de disposición alta a compartir datos en lapuerta v1.3.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_deteccion_fraude_claims",
+   "p": "aumenta",
+   "o": "backlash_consumidor",
+   "f": "F-168",
+   "apoyo": "2021: Lemonade presumió que su IA analiza hasta 1.600 datos, incluidas señales faciales; la reacción viral la acusó de 'fisonomía' y discriminación.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_deteccion_fraude_claims",
+   "p": "aplica_a",
+   "o": "lemonade_inc",
+   "f": "F-168",
+   "apoyo": "Lemonade borró el hilo y aclaró que ningún reclamo se rechaza solo por IA; sigue citado como caso de cautela en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "combined_ratio_ramos_comerciales_2025",
+   "p": "parte_de",
+   "o": "desempeno_pc_eeuu_2025",
+   "f": "F-171",
+   "apoyo": "2025: ganan Workers' Comp (88,8%), E&S (88,0%) y Property Fire (77,2%); pierden Multi-Peril Liability (114,9%) y Commercial Auto Liability (113,0%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "combined_ratio_ramos_comerciales_2025",
+   "p": "origina_en",
+   "o": "am_best",
+   "f": "F-171",
+   "apoyo": "Datos de AM Best/Verisk agregados por Hotaling, sin auditoría externa propia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "naic_modelo_570",
+   "p": "aplica_a",
+   "o": "publicidad_retorno_garantizado",
+   "f": "F-172",
+   "apoyo": "El retorno garantizado debe expresarse en dólares, no como % de la prima; se prohíbe insinuar retorno de inversión garantizado o 'éxito financiero seguro'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "publicidad_retorno_garantizado",
+   "p": "es_tipo_de",
+   "o": "publicidad_enganosa_financiera",
+   "f": "F-172",
+   "apoyo": "El modelo NAIC trata el retorno garantizado en % (p. ej., '170%' o '200%') como publicidad prohibida por engañosa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "naic_modelo_570",
+   "p": "parte_de",
+   "o": "naic_org",
+   "f": "F-172",
+   "apoyo": "Ley modelo del organismo de reguladores estatales de EE.UU. (NAIC).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "naic_modelo_570",
+   "p": "tiene_limite",
+   "o": "norma_extranjera_referencial",
+   "f": "F-172",
+   "apoyo": "No es norma peruana: sirve como referencia de categoría de riesgo, no como ley aplicable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lineamientos_indecopi_publicidad",
+   "p": "aplica_a",
+   "o": "publicidad_enganosa_financiera",
+   "f": "F-173",
+   "apoyo": "Marco de Indecopi para determinar cuándo una pieza publicitaria es engañosa y cómo se fiscaliza y denuncia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lineamientos_indecopi_publicidad",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-173",
+   "apoyo": "A diferencia del modelo NAIC, es marco regulatorio peruano aplicable directamente a piezas de seguros como los flyers Vida Ahorro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "campana_preaprobado_bbva",
+   "p": "es_tipo_de",
+   "o": "publicidad_enganosa_financiera",
+   "f": "F-174",
+   "apoyo": "La campaña sugería un crédito 'preaprobado' que en la práctica requería evaluación crediticia previa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "multa_indecopi_bbva_preaprobado",
+   "p": "aplica_a",
+   "o": "campana_preaprobado_bbva",
+   "f": "F-174",
+   "apoyo": "Indecopi multó a BBVA en 2025: el riesgo de fiscalización por publicidad financiera engañosa en Perú no es hipotético.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "multa_indecopi_bbva_preaprobado",
+   "p": "parte_de",
+   "o": "lineamientos_indecopi_publicidad",
+   "f": "F-174",
+   "apoyo": "Caso real de aplicación del marco de Indecopi sobre publicidad engañosa a una entidad financiera.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "informacion_producto_incompleta",
+   "p": "aumenta",
+   "o": "abandono_compra_info_incompleta",
+   "f": "F-177",
+   "apoyo": "63% de compradores en UK abandonó una compra importante en el último año porque la información del producto faltaba, era inconsistente o incorrecta.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "abandono_compra_info_incompleta",
+   "p": "respalda",
+   "o": "c_desconfianza_falta_info",
+   "f": "F-177",
+   "apoyo": "Respaldo parcial y fuera de seguros (retail UK): la falta de información rompe la confianza y la compra.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "abandono_compra_info_incompleta",
+   "p": "tiene_limite",
+   "o": "cifra_sin_metodo_publicado",
+   "f": "F-177",
+   "apoyo": "Prensa de industria que cita una encuesta sin detallar su metodología; cifra direccional.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "imagenes_estilo_vida",
+   "p": "aumenta",
+   "o": "compra_ecommerce",
+   "f": "F-179",
+   "apoyo": "Blog de agencia: las imágenes de estilo de vida aumentan CTR y conversión frente a imágenes de producto aislado en e-commerce.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "imagenes_estilo_vida",
+   "p": "tiene_limite",
+   "o": "sin_evidencia_sector_seguros",
+   "f": "F-179",
+   "apoyo": "Hallazgo de e-commerce general; no hay dato específico de seguros que respalde la fotografía familiar en flyers.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "imagenes_estilo_vida",
+   "p": "tiene_limite",
+   "o": "cifra_sin_metodo_publicado",
+   "f": "F-179",
+   "apoyo": "Blog de agencia sin metodología propia publicada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

@@ -1,0 +1,313 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-615",
+  "F-616",
+  "F-617",
+  "F-618",
+  "F-619",
+  "F-620",
+  "F-621",
+  "F-622"
+ ],
+ "entidades": [
+  {
+   "id": "retraccion_ariely_procrastinacion",
+   "nombre": "Retracción del estudio de procrastinación de Ariely (2002) por signos de manipulación de datos",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "crisis_reputacional_economia_conductual",
+   "nombre": "Crisis reputacional de la economía conductual",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sesgos_chatgpt_mitad_pruebas",
+   "nombre": "ChatGPT reproduce sesgos de decisión humanos en ~la mitad de las pruebas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "aaru",
+   "nombre": "Aaru (startup de investigación sintética)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "startups_investigacion_sintetica",
+   "nombre": "Startups de investigación sintética (encuestados y gemelos con IA)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "valoracion_aaru",
+   "nombre": "Valoración 'titular' de Aaru de US$1.000M (Serie A, dic-2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "inversion_investigacion_sintetica",
+   "nombre": "Capital de riesgo invertido en investigación sintética",
+   "tipo": "resultado"
+  },
+  {
+   "id": "valoracion_titular_tramos",
+   "nombre": "Valoración 'titular' en tramos: la valoración combinada real es menor",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "arr_aaru",
+   "nombre": "ARR de Aaru (menor a US$10M)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_sinteticos_negocio_validado",
+   "nombre": "El negocio de encuestados sintéticos está validado por ingresos reales",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "replica_sintetica_ey",
+   "nombre": "Réplica sintética del Global Wealth Study 2025 de EY por Aaru",
+   "tipo": "resultado"
+  },
+  {
+   "id": "autodeclarado_vendedor",
+   "nombre": "Cifra autodeclarada por la empresa, sin método auditable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "simile",
+   "nombre": "Simile AI (startup de gemelos sintéticos de consumidores)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "ronda_simile_a",
+   "nombre": "Serie A de Simile: US$100M liderada por Index (feb-2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ronda_simile_b",
+   "nombre": "Serie B de Simile: US$200M+ a US$2.000M post-money (jul-2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "crecimiento_ingresos_simile",
+   "nombre": "Crecimiento de ingresos de Simile (5x en 5 meses)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "electric_twin",
+   "nombre": "Electric Twin (startup de simulación sintética)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "ronda_electric_twin",
+   "nombre": "Ronda de Electric Twin: US$10M liderados por Atomico (feb-2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "evaluaciones_electric_twin",
+   "nombre": "40.000 evaluaciones en 155 países declaradas por Electric Twin",
+   "tipo": "resultado"
+  },
+  {
+   "id": "artificial_societies",
+   "nombre": "Artificial Societies (startup de simulación social con IA)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "ronda_artificial_societies",
+   "nombre": "Financiamiento de Artificial Societies: US$5,35M (ago-2025)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "retraccion_ariely_procrastinacion",
+   "p": "parte_de",
+   "o": "crisis_reputacional_economia_conductual",
+   "f": "F-615",
+   "apoyo": "Retraction Watch (sep-2026): segunda retracción de Ariely (Psychological Science 2002) tras hallazgos de Data Colada; la crisis sigue viva en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fraude_datos_firmar_primero_2012",
+   "p": "parte_de",
+   "o": "crisis_reputacional_economia_conductual",
+   "f": "F-615",
+   "apoyo": "La ficha presenta esta retracción como la segunda de Ariely, complemento del caso anterior de datos manipulados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sesgos_chatgpt_mitad_pruebas",
+   "p": "respalda",
+   "o": "c_llm_sesgos_humanos",
+   "f": "F-616",
+   "apoyo": "Comunicado de INFORMS: ChatGPT replica sesgos de decisión humanos en la mitad de las pruebas (respaldo parcial).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_llm_sesgos_humanos",
+   "p": "tiene_limite",
+   "o": "churnalism",
+   "f": "F-616",
+   "apoyo": "≈6 medios (Neuroscience News, SciTechDaily, Live Science…) copiaron el comunicado casi literal: churnalism del relato 'la IA tiene nuestros sesgos'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sesgos_chatgpt_mitad_pruebas",
+   "p": "aplica_a",
+   "o": "modelos_chatgpt",
+   "f": "F-616",
+   "apoyo": "El estudio difundido evalúa los modelos de ChatGPT.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "aaru",
+   "p": "es_tipo_de",
+   "o": "startups_investigacion_sintetica",
+   "f": "F-617",
+   "apoyo": "Aaru es una startup de investigación sintética con IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "valoracion_aaru",
+   "p": "parte_de",
+   "o": "inversion_investigacion_sintetica",
+   "f": "F-617",
+   "apoyo": "Serie A liderada por Redpoint (>US$50M) con valoración 'titular' de US$1.000M (dic-2025).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "valoracion_aaru",
+   "p": "tiene_limite",
+   "o": "valoracion_titular_tramos",
+   "f": "F-617",
+   "apoyo": "La valoración se estructura en tramos y la combinada queda por debajo de US$1.000M (fuentes anónimas).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "arr_aaru",
+   "p": "refuta",
+   "o": "c_sinteticos_negocio_validado",
+   "f": "F-617",
+   "apoyo": "Pese a la valoración de US$1.000M, el ARR de Aaru es menor a US$10M (refutación parcial).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "replica_sintetica_ey",
+   "p": "respalda",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-618",
+   "apoyo": "Réplica sintética del estudio de EY (3.600 inversionistas, 30+ mercados): Spearman mediana 0,90 y error medio de 7,1 pp en 53 preguntas, en 1 día frente a 6 meses de campo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "replica_sintetica_ey",
+   "p": "tiene_limite",
+   "o": "autodeclarado_vendedor",
+   "f": "F-618",
+   "apoyo": "Caso publicado por el propio vendedor; método propio no auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "replica_sintetica_ey",
+   "p": "origina_en",
+   "o": "aaru",
+   "f": "F-618",
+   "apoyo": "Las cifras provienen del caso de estudio que publicó Aaru.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "simile",
+   "p": "es_tipo_de",
+   "o": "startups_investigacion_sintetica",
+   "f": "F-619",
+   "apoyo": "Simile es la startup de los autores de los 'generative agents'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ronda_simile_a",
+   "p": "parte_de",
+   "o": "inversion_investigacion_sintetica",
+   "f": "F-619",
+   "apoyo": "Latham & Watkins asesoró la Serie A de US$100M liderada por Index (feb-2026).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ronda_simile_b",
+   "p": "parte_de",
+   "o": "inversion_investigacion_sintetica",
+   "f": "F-620",
+   "apoyo": "Serie B de US$200M+ con valoración post-money de US$2.000M, liderada por Greenoaks con CVS Health Ventures (jul-2026).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_ingresos_simile",
+   "p": "tiene_limite",
+   "o": "autodeclarado_vendedor",
+   "f": "F-620",
+   "apoyo": "Simile dice que su ingreso creció 5x en 5 meses; autodeclarado, sin ARR público.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "electric_twin",
+   "p": "es_tipo_de",
+   "o": "startups_investigacion_sintetica",
+   "f": "F-621",
+   "apoyo": "Electric Twin opera en investigación sintética con IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ronda_electric_twin",
+   "p": "parte_de",
+   "o": "inversion_investigacion_sintetica",
+   "f": "F-621",
+   "apoyo": "US$10M liderados por Atomico (feb-2026); US$14M en total con el pre-seed.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "evaluaciones_electric_twin",
+   "p": "tiene_limite",
+   "o": "autodeclarado_vendedor",
+   "f": "F-621",
+   "apoyo": "Dice haber corrido 40.000 evaluaciones en 155 países (autodeclarado).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "artificial_societies",
+   "p": "es_tipo_de",
+   "o": "startups_investigacion_sintetica",
+   "f": "F-622",
+   "apoyo": "Startup de simulaciones sociales con IA fundada por científicos conductuales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ronda_artificial_societies",
+   "p": "parte_de",
+   "o": "inversion_investigacion_sintetica",
+   "f": "F-622",
+   "apoyo": "US$5,35M en total, con un seed de US$3,35M liderado por Point72 Ventures (ago-2025).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

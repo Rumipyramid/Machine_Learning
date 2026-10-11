@@ -1,0 +1,268 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-182",
+  "F-185",
+  "F-186",
+  "F-187",
+  "F-188",
+  "F-189",
+  "F-190",
+  "F-192"
+ ],
+ "entidades": [
+  {
+   "id": "preferencia_guia_humana_seguros",
+   "nombre": "Preferencia por guía profesional humana en decisiones clave de seguros",
+   "tipo": "resultado"
+  },
+  {
+   "id": "primas_cyber_marketing_corea",
+   "nombre": "Primas de vida del canal 100% online en Corea del Sur",
+   "tipo": "resultado"
+  },
+  {
+   "id": "participacion_canal_agentes_vida",
+   "nombre": "Participación del canal de agentes en primas de vida",
+   "tipo": "resultado"
+  },
+  {
+   "id": "negacion_automatizada_reclamos",
+   "nombre": "Negación algorítmica o automatizada de reclamos de salud",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reversion_negaciones_apelacion",
+   "nombre": "Negaciones de reclamos revertidas en apelación",
+   "tipo": "resultado"
+  },
+  {
+   "id": "apelacion_asistida_ia",
+   "nombre": "Apelación de reclamos negados asistida por IA (p. ej., Fight Health Insurance)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "rentabilidad_gaap_lemonade",
+   "nombre": "Rentabilidad GAAP de Lemonade (no esperada hasta 2027)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_seguro_100_digital_rentable",
+   "nombre": "El seguro 100% digital ya es rentable de forma sostenida",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "mercado_corretaje_seguros",
+   "nombre": "Mercado global de corretaje de seguros",
+   "tipo": "resultado"
+  },
+  {
+   "id": "complejidad_percibida_producto",
+   "nombre": "Complejidad percibida del producto",
+   "tipo": "constructo"
+  },
+  {
+   "id": "satisfaccion_recompra_seguro_online",
+   "nombre": "Satisfacción e intención de recompra de seguros online",
+   "tipo": "resultado"
+  },
+  {
+   "id": "estudio_sitios_seguros_online",
+   "nombre": "Estudio de determinantes del éxito de sitios de seguros online (N=177)",
+   "tipo": "estudio"
+  }
+ ],
+ "triples": [
+  {
+   "s": "busqueda_online",
+   "p": "asocia_con",
+   "o": "preferencia_guia_humana_seguros",
+   "f": "F-182",
+   "apoyo": "Bain: 92% investiga seguros de vida online, pero solo 25% está listo para comprar 100% digital; el 75% quiere guía profesional en puntos clave.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "preferencia_guia_humana_seguros",
+   "p": "refuta",
+   "o": "c_digital_desplaza_agentes",
+   "f": "F-182",
+   "apoyo": "Tres de cada cuatro consumidores de seguros de vida quieren un humano en las decisiones clave aunque investiguen online.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "primas_cyber_marketing_corea",
+   "p": "refuta",
+   "o": "c_digital_desplaza_agentes",
+   "f": "F-185",
+   "apoyo": "Corea del Sur: las primas del canal 100% online cayeron 33,6% en una década (de 138.700 a 92.100 millones de wones).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "participacion_canal_agentes_vida",
+   "p": "refuta",
+   "o": "c_digital_desplaza_agentes",
+   "f": "F-185",
+   "apoyo": "En Corea, mercado muy digitalizado, el canal de agentes retiene 48,25% de las primas de vida en 2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "participacion_canal_agentes_vida",
+   "p": "refuta",
+   "o": "c_digital_desplaza_agentes",
+   "f": "F-186",
+   "apoyo": "China: pese a que el insurtech creció 20 veces, agentes y bancaseguros acumulan más del 90% de las primas de vida.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "participacion_canal_agentes_vida",
+   "p": "tiene_limite",
+   "o": "fuente_secundaria_no_primaria",
+   "f": "F-186",
+   "apoyo": "La cifra de China llega vía prensa especializada que resume un informe de KPMG/ZhongAn, sin acceso al informe original.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "negacion_automatizada_reclamos",
+   "p": "aumenta",
+   "o": "backlash_consumidor",
+   "f": "F-187",
+   "apoyo": "Tras el asesinato del CEO de UnitedHealthcare, un post de la empresa recibió 62.000 reacciones, 57.000 de ellas emoji de risa: rabia acumulada contra la negación automatizada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "negacion_automatizada_reclamos",
+   "p": "reduce",
+   "o": "confianza_en_ia",
+   "f": "F-187",
+   "apoyo": "La reacción viral muestra desconfianza pública hacia la automatización de decisiones de alto impacto en seguros, no hacia los agentes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "negacion_automatizada_reclamos",
+   "p": "asocia_con",
+   "o": "percepcion_lucro_aseguradora_salud",
+   "f": "F-187",
+   "apoyo": "Las historias en redes sobre reclamos negados expresan que la aseguradora prioriza costos sobre las necesidades del paciente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "negacion_automatizada_reclamos",
+   "p": "asocia_con",
+   "o": "reversion_negaciones_apelacion",
+   "f": "F-188",
+   "apoyo": "Una demanda colectiva alega que UnitedHealthcare usa IA en vez de personal médico para negar reclamos y que más del 90% de esas negaciones se revierte en apelación.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "apelacion_asistida_ia",
+   "p": "aplica_a",
+   "o": "negacion_automatizada_reclamos",
+   "f": "F-188",
+   "apoyo": "La herramienta de IA 'Fight Health Insurance' para apelar negaciones se viralizó en Reddit, TikTok, YouTube e Instagram.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "backlash_consumidor",
+   "p": "respalda",
+   "o": "c_aversion_algoritmica_general",
+   "f": "F-188",
+   "apoyo": "Respaldo parcial y social: la reacción viral es contra la IA que reemplaza el juicio humano en seguros, aunque se usa IA para defenderse.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "loss_ratio_bruto_lemonade",
+   "p": "parte_de",
+   "o": "lemonade_resultados_q1_2026",
+   "f": "F-189",
+   "apoyo": "Lemonade: loss ratio bruto de 62% en el 1T 2026 (58% sin catástrofes).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "rentabilidad_gaap_lemonade",
+   "p": "refuta",
+   "o": "c_seguro_100_digital_rentable",
+   "f": "F-189",
+   "apoyo": "Lemonade (fundada en 2015) guía a EBITDA ajustado positivo recién en el 4T 2026 y a rentabilidad GAAP en 2027, 12 años después.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "rentabilidad_gaap_lemonade",
+   "p": "tiene_limite",
+   "o": "fuente_secundaria_no_primaria",
+   "f": "F-189",
+   "apoyo": "Prensa financiera que reporta las cifras de la empresa, no el filing primario.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_corretaje_seguros",
+   "p": "refuta",
+   "o": "c_digital_desplaza_agentes",
+   "f": "F-190",
+   "apoyo": "Grand View: corretaje global de USD 335.870 M (2025) a USD 695.030 M (2033), CAGR 9,6%, sin señal de declive en ninguna región grande.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_corretaje_seguros",
+   "p": "mide",
+   "o": "intermediarios_seguros",
+   "f": "F-190",
+   "apoyo": "Las 15 mayores firmas controlan 47% del mercado de corretaje; el resto está muy fragmentado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_corretaje_seguros",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-190",
+   "apoyo": "El valor de 2033 es una proyección de una firma de investigación de mercado con metodología parcialmente documentada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "complejidad_percibida_producto",
+   "p": "asocia_con",
+   "o": "satisfaccion_recompra_seguro_online",
+   "f": "F-192",
+   "apoyo": "N=177 consumidores de seguros online: la complejidad percibida del producto es determinante significativo de la satisfacción y la intención de recompra.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "utilidad_facilidad_seguridad_web_percibidas",
+   "p": "asocia_con",
+   "o": "satisfaccion_recompra_seguro_online",
+   "f": "F-192",
+   "apoyo": "Junto a la complejidad, la calidad del sistema y de la información del sitio también determinan satisfacción e intención de recompra.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "estudio_sitios_seguros_online",
+   "p": "tiene_limite",
+   "o": "revista_no_verificada",
+   "f": "F-192",
+   "apoyo": "Copia en Academia.edu: no se pudo verificar la revista original ni el arbitraje; muestra modesta.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

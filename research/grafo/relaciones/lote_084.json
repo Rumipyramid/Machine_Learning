@@ -1,0 +1,326 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-297",
+  "F-298",
+  "F-299",
+  "F-300",
+  "F-301",
+  "F-302",
+  "F-313",
+  "F-314"
+ ],
+ "entidades": [
+  {
+   "id": "anti_diseno_caotico",
+   "nombre": "Estética anti-diseño caótica (sin grilla clara)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "exito_tarea_ui",
+   "nombre": "Tasa de éxito de tarea del usuario en la interfaz",
+   "tipo": "resultado"
+  },
+  {
+   "id": "paginas_densas_informacion",
+   "nombre": "Páginas densas de información",
+   "tipo": "concepto"
+  },
+  {
+   "id": "brutalismo_disciplinado",
+   "nombre": "Brutalismo disciplinado (estética brutalista con grilla clara)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cumplimiento_design_system",
+   "nombre": "Cumplimiento del design system en UI generada por IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "revision_humana_ui_ia",
+   "nombre": "Necesidad de revisión humana de la UI generada por IA (incumplimiento residual)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "backlash_gremial_nielsen",
+   "nombre": "Réplicas gremiales independientes contra Jakob Nielsen",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_ia_invalida_proceso_ux",
+   "nombre": "La IA invalidará el proceso manual de diseño UX (Nielsen)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "supuesto_actor_racional",
+   "nombre": "Supone que los humanos se comportarán como actores económicos racionales",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_diseno_ha_muerto",
+   "nombre": "El diseño/UX ha muerto por la IA",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "evidencia_solo_opinion",
+   "nombre": "Sustento solo en ensayo u opinión, sin metodología",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "colapso_definicion_rol_disenador",
+   "nombre": "Colapso de la definición del rol de diseñador (un aviso pide estrategia, front-end, research y 'mentalidad builder')",
+   "tipo": "resultado"
+  },
+  {
+   "id": "demanda_service_design_uk",
+   "nombre": "Contratos que citan 'Service Design' en Inglaterra (459 en 6 meses, 1,45%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_service_design_estancado",
+   "nombre": "El service design está estancado en la conversación social del gremio (H18)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "proxy_ofertas_laborales",
+   "nombre": "Proxy de un agregador de ofertas laborales de un solo país",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "uxpa_salary_survey_2024",
+   "nombre": "UXPA Salary Survey 2024 (N=444, 37 países)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "dato_laboral_desactualizado",
+   "nombre": "Sin edición 2025-2026: el mejor dato laboral del gremio tiene ~2 años",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "adobe_estado_profesiones_creativas",
+   "nombre": "Adobe: The Economic State of Creative Professions (2026, N≈2.000)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "oportunidades_percibidas_creativos_ia",
+   "nombre": "Creativos que perciben que la IA aumentó sus oportunidades (46% vs. 30% que disminuyeron)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "conflicto_interes_vendor",
+   "nombre": "Conflicto de interés: el emisor vende al público estudiado o pagó el estudio",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "anti_diseno_caotico",
+   "p": "reduce",
+   "o": "exito_tarea_ui",
+   "f": "F-297",
+   "apoyo": "Un estudio de usabilidad de tercero, reportado por una guía de industria: la versión anti-diseño caótica llegó a solo 8-10% de éxito de tarea en páginas densas de información.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "anti_diseno_caotico",
+   "p": "aplica_a",
+   "o": "paginas_densas_informacion",
+   "f": "F-297",
+   "apoyo": "La caída del éxito de tarea a 8-10% se midió en páginas densas de información.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "brutalismo_disciplinado",
+   "p": "es_tipo_de",
+   "o": "tendencia_imperfect_by_design",
+   "f": "F-297",
+   "apoyo": "La guía separa el brutalismo disciplinado (con grilla clara) del anti-diseño caótico dentro de las estéticas retro y lo-fi de 2026; solo la versión caótica hunde el éxito de tarea.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ia_alineada_design_system",
+   "p": "asocia_con",
+   "o": "cumplimiento_design_system",
+   "f": "F-298",
+   "apoyo": "Investigación de CHI 2026: aun en el mejor escenario, con agentes que leen un registro de componentes en vivo, el cumplimiento del design system en UI generada por IA llega a ~95%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_alineada_design_system",
+   "p": "tiene_limite",
+   "o": "revision_humana_ui_ia",
+   "f": "F-298",
+   "apoyo": "Con ~95% de cumplimiento, alguien debe revisar 40 pantallas hechas en una tarde y detectar cuáles tres mienten.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "generative_ui",
+   "p": "tiene_limite",
+   "o": "revision_humana_ui_ia",
+   "f": "F-298",
+   "apoyo": "La UI generada por IA no cumple del todo el design system (~95% en el mejor caso): el trabajo del design system pasa a ser atrapar lo que la IA genera mal.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_design_tokens",
+   "p": "asocia_con",
+   "o": "ia_alineada_design_system",
+   "f": "F-298",
+   "apoyo": "La adopción de design tokens subió a 84% (desde 56%) y el formato W3C v2025.10 suma 24+ organizaciones, en el contexto de un design system que debe guiar a la IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "backlash_gremial_nielsen",
+   "p": "refuta",
+   "o": "c_ia_invalida_proceso_ux",
+   "f": "F-299",
+   "apoyo": "Réplicas en Agory, UX Collective y Bootcamp califican de 'espectacularmente equivocada' la tesis de Nielsen de que la IA invalidará el diseño UX manual. Es opinión gremial, no evidencia empírica.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_ia_invalida_proceso_ux",
+   "p": "tiene_limite",
+   "o": "supuesto_actor_racional",
+   "f": "F-299",
+   "apoyo": "Crítica central: Nielsen 'parece creer que los humanos empezarán a comportarse como actores económicos racionales apenas la IA sea suficientemente buena'.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_ia_invalida_proceso_ux",
+   "p": "es_tipo_de",
+   "o": "c_diseno_ha_muerto",
+   "f": "F-299",
+   "apoyo": "La tesis de Nielsen es una variante de la declaración 'el diseño UX ha muerto'.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "backlash_gremial_nielsen",
+   "p": "tiene_limite",
+   "o": "evidencia_solo_opinion",
+   "f": "F-299",
+   "apoyo": "Es opinión gremial sin método, aunque con múltiples réplicas independientes en publicaciones distintas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ciclo_muerte_diseno_recurrente",
+   "p": "contradice",
+   "o": "c_diseno_ha_muerto",
+   "f": "F-300",
+   "apoyo": "Berumen Castro: cada pocos años la industria declara muerto al UX y luego descubre que estaba evolucionando. El ciclo es estructural (contradicción total).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_ciclo_muerte_diseno_recurrente",
+   "p": "tiene_limite",
+   "o": "evidencia_solo_opinion",
+   "f": "F-300",
+   "apoyo": "La clave interpretativa viene de un ensayo de opinión en UX Collective, sin metodología.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "colapso_definicion_rol_disenador",
+   "p": "parte_de",
+   "o": "percepcion_campo_diseno",
+   "f": "F-301",
+   "apoyo": "La queja del gremio mejor validada por experiencia propia: un aviso de 'Product Designer' pide estrategia, front-end, research y 'mentalidad de builder', y el título significa algo distinto en cada empresa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "colapso_definicion_rol_disenador",
+   "p": "tiene_limite",
+   "o": "evidencia_solo_opinion",
+   "f": "F-301",
+   "apoyo": "Proviene de un ensayo de opinión en Substack (Tocker, 2026).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "demanda_service_design_uk",
+   "p": "respalda",
+   "o": "c_service_design_estancado",
+   "f": "F-302",
+   "apoyo": "459 contratos citaron 'Service Design' en Inglaterra en los 6 meses a enero de 2026 (1,45% del total): sustenta el hallazgo negativo de que el service design está congelado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "demanda_service_design_uk",
+   "p": "tiene_limite",
+   "o": "proxy_ofertas_laborales",
+   "f": "F-302",
+   "apoyo": "La cifra sale de ITJobsWatch, agregador de ofertas laborales, y cubre solo Inglaterra.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "uxpa_salary_survey_2024",
+   "p": "mide",
+   "o": "tamano_equipos_ux",
+   "f": "F-313",
+   "apoyo": "UXPA 2024: 35% de las organizaciones redujo staff de UX, el mismo porcentaje que lo aumentó; descrito como el peor año registrado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "uxpa_salary_survey_2024",
+   "p": "tiene_limite",
+   "o": "dato_laboral_desactualizado",
+   "f": "F-313",
+   "apoyo": "No existe edición 2025 ni 2026 de la encuesta: el mejor dato laboral del gremio tiene ~2 años.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "uxpa_salary_survey_2024",
+   "p": "aplica_a",
+   "o": "profesionales_ux",
+   "f": "F-313",
+   "apoyo": "Encuesta gremial a 444 profesionales de UX de 37 países.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adobe_estado_profesiones_creativas",
+   "p": "mide",
+   "o": "oportunidades_percibidas_creativos_ia",
+   "f": "F-314",
+   "apoyo": "Encuesta de Adobe (N≈2.000; EE.UU., Reino Unido, Japón): 46% de los creativos percibe que sus oportunidades aumentaron con la IA y 30% que disminuyeron.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adobe_estado_profesiones_creativas",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendor",
+   "f": "F-314",
+   "apoyo": "Adobe le vende a este mismo público: conflicto de interés declarado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "oportunidades_percibidas_creativos_ia",
+   "p": "contradice",
+   "o": "empleo_disenadores_graficos",
+   "f": "F-314",
+   "apoyo": "Tensión parcial: la percepción optimista de la encuesta de Adobe contrasta con la proyección oficial del BLS para la ocupación (divergencia emisor interesado vs. dato oficial).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

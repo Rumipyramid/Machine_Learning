@@ -1,0 +1,380 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-371",
+  "F-372",
+  "F-373",
+  "F-377",
+  "F-378",
+  "F-379",
+  "F-380",
+  "F-385"
+ ],
+ "entidades": [
+  {
+   "id": "aprobacion_reclamos_bowtie",
+   "nombre": "Aprobación de reclamos de Bowtie (99,53% de ~70.000; >90% de satisfacción en consultas)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "participacion_canal_directo_hk",
+   "nombre": "Participación del canal de venta directa en Hong Kong (2,9% en 2018 → 8,5% en 2023)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "retiro_betterfly_latam",
+   "nombre": "Betterfly despide y cierra operaciones en Perú, Colombia, Ecuador, Argentina y Brasil (mar-2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "betterfly",
+   "nombre": "Betterfly (insurtech chilena de seguro de vida dinámico y bienestar)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "seguro_vida_dinamico_bienestar",
+   "nombre": "Seguro de vida dinámico B2B2C: la cobertura crece sin costo si el empleado mejora hábitos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "suscripcion_digital_via_corredores",
+   "nombre": "Tecnología de suscripción digital distribuida vía corredores (>9.000 socios)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "crecimiento_azos",
+   "nombre": "Crecimiento de Azos (facturación duplicada por 2.º año; >R$100.000M de capital asegurado)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "azos",
+   "nombre": "Azos (insurtech brasileña de seguro de vida)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "primas_vida_individual_brasil",
+   "nombre": "Crecimiento del seguro de vida individual en Brasil (+13% en el 1S 2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "cnseg",
+   "nombre": "CNseg (Confederação Nacional das Seguradoras, Brasil)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "mercado_seguros_brasil",
+   "nombre": "Mercado asegurador de Brasil",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "utilidades_vida_colombia",
+   "nombre": "Utilidades del sector de seguros de vida en Colombia (Sura, Bolívar, Alfa)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_digital_capa_tradicional",
+   "nombre": "En América Latina lo digital en seguros es una capa añadida al modelo tradicional, no su reemplazo",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sura_co",
+   "nombre": "Canal digital Sura.co (meta ~75.000 clientes nuevos)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "lim_ano_nota_no_verificado",
+   "nombre": "Año real de la nota no verificado (comparación interanual inconsistente)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "leviathan_2026_genui",
+   "nombre": "Leviathan, Valevski et al. (Google) 2026: Generative UI, LLMs are Effective UI Generators",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_genui_peor_que_expertos",
+   "nombre": "Las interfaces generadas por LLM son peores que las diseñadas por expertos humanos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "lim_baseline_debil",
+   "nombre": "Comparación contra una línea base débil (salida markdown estándar del LLM)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "lim_interes_emisor",
+   "nombre": "Interés comercial del emisor en el resultado (vende la herramienta, el servicio o el framework)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "deuda_tecnica_genui",
+   "nombre": "Deuda técnica oculta de las interfaces generativas y maleables",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "aprobacion_reclamos_bowtie",
+   "p": "aplica_a",
+   "o": "bowtie",
+   "f": "F-371",
+   "apoyo": "Bowtie reporta ~70.000 reclamos desde 2019 con 99,53% de aprobación, >250.000 consultas con >90% de satisfacción y ~1.000 clientes nuevos al mes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "aprobacion_reclamos_bowtie",
+   "p": "tiene_limite",
+   "o": "cifra_autorreportada_no_auditada",
+   "f": "F-371",
+   "apoyo": "Cifras de reclamos y satisfacción de blog propio, no auditadas por tercero: dirección, no dato certificado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "bowtie",
+   "p": "asocia_con",
+   "o": "participacion_canal_directo_hk",
+   "f": "F-371",
+   "apoyo": "El canal directo en Hong Kong triplicó su participación (2,9% en 2018 a 8,5% en 2023); Bowtie controla ~30% de ese segmento y ~5% de las nuevas pólizas VHIS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "retiro_betterfly_latam",
+   "p": "aplica_a",
+   "o": "betterfly",
+   "f": "F-372",
+   "apoyo": "Betterfly despidió ~30 personas y cerró cinco países, incluido Perú, para concentrarse en Chile, España y México (94% de su revenue); dice tener caja para 5+ años.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "retiro_betterfly_latam",
+   "p": "es_tipo_de",
+   "o": "layoffs_insurtech",
+   "f": "F-372",
+   "apoyo": "Es la segunda ola de despidos: ya había recortado 30% de su plantilla en enero de 2023 y más en agosto de 2023.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "retiro_betterfly_latam",
+   "p": "tiene_limite",
+   "o": "eco_cita_comunicado",
+   "f": "F-372",
+   "apoyo": "4+ medios chilenos reportan el hecho, probablemente desde un mismo comunicado o filtración: un evento confirmado, no 4 fuentes primarias.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_vida_dinamico_bienestar",
+   "p": "aplica_a",
+   "o": "betterfly",
+   "f": "F-373",
+   "apoyo": "Betterfly es B2B2C: el empleador paga una suscripción a una plataforma de bienestar (hábitos, telemedicina, nutrición) con un seguro de vida dinámico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_vida_dinamico_bienestar",
+   "p": "es_tipo_de",
+   "o": "incentivos_financieros_salud",
+   "f": "F-373",
+   "apoyo": "La cobertura del seguro crece sin costo si el empleado mejora sus hábitos: un incentivo por conducta saludable.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "seguro_vida_dinamico_bienestar",
+   "p": "tiene_limite",
+   "o": "cifra_autorreportada_no_auditada",
+   "f": "F-373",
+   "apoyo": "El modelo lo describen un blog de aceleradora y Wikipedia a partir de lo que reporta la empresa, sin auditoría.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "suscripcion_digital_via_corredores",
+   "p": "asocia_con",
+   "o": "crecimiento_azos",
+   "f": "F-377",
+   "apoyo": "Azos duplicó su facturación por segundo año y superó R$100.000M en capital asegurado operando con más de 9.000 corredores socios, sin vender directo al consumidor.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_azos",
+   "p": "respalda",
+   "o": "c_digital_potencia_agente",
+   "f": "F-377",
+   "apoyo": "Mismo patrón que Ethos: digital-first que potencia al intermediario, no lo reemplaza.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "suscripcion_digital_via_corredores",
+   "p": "es_tipo_de",
+   "o": "multicanal_humano_digital_seguros",
+   "f": "F-377",
+   "apoyo": "Azos vende tecnología de suscripción digital a través del canal tradicional de corredores.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_azos",
+   "p": "tiene_limite",
+   "o": "eco_cita_comunicado",
+   "f": "F-377",
+   "apoyo": "Las rondas (Serie B de R$170M, Serie C de R$125M) son un solo evento con varios altavoces y las cifras operativas son autorreportadas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_azos",
+   "p": "aplica_a",
+   "o": "azos",
+   "f": "F-377",
+   "apoyo": "Cifras de Azos, con inversionistas como Lightrock, Kaszek, Prosus y Munich Re Ventures.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "primas_vida_individual_brasil",
+   "p": "origina_en",
+   "o": "cnseg",
+   "f": "F-378",
+   "apoyo": "El dato de +13% del seguro de vida individual en el primer semestre de 2025 es de la CNseg, gremio oficial del sector, citado por prensa especializada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "primas_vida_individual_brasil",
+   "p": "asocia_con",
+   "o": "inversion_insurtech_latam",
+   "f": "F-378",
+   "apoyo": "El crecimiento de 13% del vida individual en Brasil es el contexto de mercado que explica por qué Azos y otras insurtechs de vida brasileñas atraen inversión global.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "primas_vida_individual_brasil",
+   "p": "aplica_a",
+   "o": "mercado_seguros_brasil",
+   "f": "F-378",
+   "apoyo": "La cifra describe el mercado brasileño de seguro de vida individual, 1S 2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidades_vida_colombia",
+   "p": "respalda",
+   "o": "c_digital_capa_tradicional",
+   "f": "F-379",
+   "apoyo": "Lideran utilidades de vida aseguradoras tradicionales con canal digital complementario: Sura (~$209.756M COP) y Bolívar (~$122.661M COP), no aseguradoras digital-first.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sura_co",
+   "p": "parte_de",
+   "o": "multicanal_humano_digital_seguros",
+   "f": "F-379",
+   "apoyo": "Sura.co es un canal digital lanzado para captar ~75.000 clientes nuevos, montado sobre el modelo tradicional de Sura.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_digital_capa_tradicional",
+   "p": "aplica_a",
+   "o": "distribucion_seguros_latam",
+   "f": "F-379",
+   "apoyo": "La ficha lo presenta como patrón regional: en Colombia lo digital es capa añadida sobre el modelo tradicional.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidades_vida_colombia",
+   "p": "tiene_limite",
+   "o": "lim_ano_nota_no_verificado",
+   "f": "F-379",
+   "apoyo": "El texto recuperado compara contra 2016 en una nota que parece posterior: no usar la variación exacta sin verificar el año real.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "leviathan_2026_genui",
+   "p": "respalda",
+   "o": "c_generative_ui_gusta_mas",
+   "f": "F-380",
+   "apoyo": "Raters humanos prefieren la generative UI frente a la salida markdown estándar de un LLM; publica el dataset PAGEN.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "leviathan_2026_genui",
+   "p": "respalda",
+   "o": "c_genui_peor_que_expertos",
+   "f": "F-380",
+   "apoyo": "Los propios autores reconocen que las interfaces generadas son peores que las de expertos humanos y solo comparables en al menos el 50% de los casos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "leviathan_2026_genui",
+   "p": "tiene_limite",
+   "o": "solo_preferencia",
+   "f": "F-380",
+   "apoyo": "Mide preferencia declarada de raters; no mide tiempo de tarea, tasa de éxito ni aprendibilidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "leviathan_2026_genui",
+   "p": "tiene_limite",
+   "o": "lim_baseline_debil",
+   "f": "F-380",
+   "apoyo": "El comparador es la salida markdown estándar de un LLM, una línea base débil.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "leviathan_2026_genui",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-380",
+   "apoyo": "Preprint de arXiv sin revisión por pares, producido por Google, el mismo actor que desarrolla la tecnología.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "deuda_tecnica_genui",
+   "p": "aplica_a",
+   "o": "generative_ui",
+   "f": "F-385",
+   "apoyo": "Traslada el marco de 'hidden technical debt' del ML a las interfaces generativas (workshop CHI 2026).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "deuda_tecnica_genui",
+   "p": "respalda",
+   "o": "c_contra_generative_ui",
+   "f": "F-385",
+   "apoyo": "Argumento conceptual: el costo no está en generar la interfaz sino en mantener, testear y hacer accesible algo que cambia en cada ejecución.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "generative_ui",
+   "p": "reduce",
+   "o": "consistencia_interfaz",
+   "f": "F-385",
+   "apoyo": "La interfaz generativa cambia en cada ejecución, lo que traslada el costo a mantenimiento, testeo y accesibilidad (argumento, sin datos primarios).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-379: La ficha advierte que la comparación interanual no cuadra con el año de corte; la nota no tiene fecha (s.f.)."
+}

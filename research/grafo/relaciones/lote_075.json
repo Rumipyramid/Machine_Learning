@@ -1,0 +1,297 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-149",
+  "F-152",
+  "F-155",
+  "F-157",
+  "F-160",
+  "F-162",
+  "F-165",
+  "F-166"
+ ],
+ "entidades": [
+  {
+   "id": "cuq",
+   "nombre": "Chatbot Usability Questionnaire (CUQ, 16 ítems, 0-100)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "manejo_errores_chatbot",
+   "nombre": "Manejo de errores del chatbot",
+   "tipo": "constructo"
+  },
+  {
+   "id": "validacion_muestra_pequena",
+   "nombre": "Validación con muestra pequeña",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "framework_chatbot_banca_seguros",
+   "nombre": "Marco unificado de eficiencia de chatbots en banca y seguros (Howard et al. 2025)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "revista_no_verificada",
+   "nombre": "Revisión por pares o revista de publicación no verificable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "tasa_resolucion_chatbot",
+   "nombre": "Tasa de resolución de chatbots de atención al cliente",
+   "tipo": "metrica"
+  },
+  {
+   "id": "techo_resolucion_sectores_complejos",
+   "nombre": "Techo de resolución más bajo en sectores complejos (salud, seguros, finanzas)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "mqm",
+   "nombre": "MQM: Multidimensional Quality Metrics (calidad de traducción)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "calidad_traduccion",
+   "nombre": "Calidad de traducción",
+   "tipo": "constructo"
+  },
+  {
+   "id": "anotacion_errores_severidad",
+   "nombre": "Anotar cada error por severidad (neutral, menor, mayor, crítico) en vez de un puntaje holístico",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_mqm_aplica_llm",
+   "nombre": "MQM ya se extendió como escala a la evaluación de LLMs y chatbots",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "ganancia_suscripcion_pc_q1_2026",
+   "nombre": "Ganancia de suscripción P/C de EE.UU. en el 1T 2026 (~USD 22.100 M)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "am_best",
+   "nombre": "AM Best (agencia calificadora de seguros)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "costo_procesamiento_siniestros",
+   "nombre": "Costo de procesar siniestros",
+   "tipo": "resultado"
+  },
+  {
+   "id": "adopcion_telematica",
+   "nombre": "Adopción del seguro telemático por los consumidores",
+   "tipo": "resultado"
+  },
+  {
+   "id": "disposicion_compartir_datos_pricing",
+   "nombre": "Disposición conductual a compartir datos para pricing (UBI / IA)",
+   "tipo": "constructo"
+  }
+ ],
+ "triples": [
+  {
+   "s": "cuq",
+   "p": "mide",
+   "o": "usabilidad_chatbot",
+   "f": "F-149",
+   "apoyo": "CUQ: 16 ítems (8 positivos y 8 negativos), puntaje 0-100 comparable al SUS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "manejo_errores_chatbot",
+   "p": "parte_de",
+   "o": "usabilidad_chatbot",
+   "f": "F-149",
+   "apoyo": "El análisis factorial del CUQ halla 4 factores: personalidad, experiencia de usuario, manejo de errores y onboarding.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cuq",
+   "p": "tiene_limite",
+   "o": "validacion_muestra_pequena",
+   "f": "F-149",
+   "apoyo": "Validado con 26 participantes y 3 chatbots de calidad conocida; la tesis de 2019 no es arbitrada, la validación de 2023 sí (Springer, HCII).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "exito_tarea_agente",
+   "p": "parte_de",
+   "o": "framework_chatbot_banca_seguros",
+   "f": "F-152",
+   "apoyo": "El marco incluye métricas sectoriales como tasa de éxito de transacción, cumplimiento regulatorio, precisión de recomendación de pólizas y eficiencia en reclamos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "satisfaccion_agente",
+   "p": "parte_de",
+   "o": "framework_chatbot_banca_seguros",
+   "f": "F-152",
+   "apoyo": "Combina indicadores generales: precisión y tiempo de respuesta, calidad de PLN y satisfacción del usuario.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "framework_chatbot_banca_seguros",
+   "p": "tiene_limite",
+   "o": "revista_no_verificada",
+   "f": "F-152",
+   "apoyo": "La revista (EdinBurg Peer Reviewed Journals) no se pudo confirmar indexada en Scopus, WoS ni DOAJ: el más aplicable en contenido, el más débil en rigor.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tasa_resolucion_chatbot",
+   "p": "mide",
+   "o": "exito_tarea_agente",
+   "f": "F-155",
+   "apoyo": "Benchmarks de proveedores: ~70-75% de resolución es 'despliegue fuerte' y 80% o más es 'best-in-class'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tasa_resolucion_chatbot",
+   "p": "tiene_limite",
+   "o": "techo_resolucion_sectores_complejos",
+   "f": "F-155",
+   "apoyo": "Los mismos benchmarks señalan que salud, seguros y finanzas, por complejidad y baja transparencia de datos, tienen techos de resolución menores al promedio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tasa_resolucion_chatbot",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_proveedor",
+   "f": "F-155",
+   "apoyo": "Blogs de proveedores de IA de atención al cliente, sin metodología pública auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mqm",
+   "p": "mide",
+   "o": "calidad_traduccion",
+   "f": "F-157",
+   "apoyo": "Sus 7 dimensiones (terminología, exactitud, convenciones lingüísticas, estilo, locale, adecuación a la audiencia, diseño/markup) son categorías de traducción.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "anotacion_errores_severidad",
+   "p": "parte_de",
+   "o": "mqm",
+   "f": "F-157",
+   "apoyo": "El método de MQM anota cada error por severidad ponderada en lugar de dar un puntaje holístico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mqm",
+   "p": "refuta",
+   "o": "c_mqm_aplica_llm",
+   "f": "F-157",
+   "apoyo": "Corrección tras pregunta del usuario: MQM es específico de traducción; lo que se extendió es su lógica de severidad, que inspiró marcos nuevos y distintos (código, salud, LLMs).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ganancia_suscripcion_pc_q1_2026",
+   "p": "asocia_con",
+   "o": "ratio_combinado_pc_eeuu",
+   "f": "F-160",
+   "apoyo": "1T 2026: combined ratio de 91,9% y ganancia de suscripción de ~USD 22.100 M, la mejor en 25 años.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ganancia_suscripcion_pc_q1_2026",
+   "p": "origina_en",
+   "o": "am_best",
+   "f": "F-160",
+   "apoyo": "Carrier Management reporta la cifra de AM Best sin método propio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ubi_telematica",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-162",
+   "apoyo": "Revisión bibliométrica 2023: los datos de telemática mejoran la selección de riesgo y mitigan la selección adversa en seguro vehicular.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ubi_telematica",
+   "p": "respalda",
+   "o": "c_ubi_cambia_conducta",
+   "f": "F-162",
+   "apoyo": "La misma revisión afirma que la telemática elimina el riesgo moral, es decir, que alinea la conducta de manejo; respaldo indirecto, sin medir conducta.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ubi_telematica",
+   "p": "aumenta",
+   "o": "ventas_retencion_seguros",
+   "f": "F-162",
+   "apoyo": "La revisión reporta mayor rentabilidad y retención esperadas con seguros basados en telemática.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_parametrico",
+   "p": "reduce",
+   "o": "costo_procesamiento_siniestros",
+   "f": "F-165",
+   "apoyo": "Triggers paramétricos con datos climáticos o de vuelo en tiempo real redujeron 40% el costo de procesar siniestros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_parametrico",
+   "p": "aplica_a",
+   "o": "seguro_embebido",
+   "f": "F-165",
+   "apoyo": "La reducción del 40% se reporta en pólizas de viaje embebidas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "costo_procesamiento_siniestros",
+   "p": "origina_en",
+   "o": "swiss_re_institute",
+   "f": "F-165",
+   "apoyo": "Dato atribuido a Swiss Re, citado por un blog de industria sin enlace directo al sigma original.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "preocupacion_privacidad_situacional",
+   "p": "reduce",
+   "o": "adopcion_telematica",
+   "f": "F-166",
+   "apoyo": "UK 2026: 62% de encuestados preocupados por compartir datos de manejo; la preocupación por privacidad frena la adopción del pricing telemático.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_telematica",
+   "p": "mide",
+   "o": "disposicion_compartir_datos_pricing",
+   "f": "F-166",
+   "apoyo": "Solo 32% está cómodo con que el asegurador recolecte telemática; fija el techo de 'alta' disposición en el modelo lapuerta v1.3.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

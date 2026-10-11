@@ -1103,6 +1103,725 @@
    "triples": 13,
    "sin_aporte": [],
    "notas": "Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo)."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-1",
+    "F-5",
+    "F-12",
+    "F-13",
+    "F-14",
+    "F-15",
+    "F-25",
+    "F-30"
+   ],
+   "triples": 25,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-31",
+    "F-34",
+    "F-35",
+    "F-38",
+    "F-39",
+    "F-45",
+    "F-46",
+    "F-47"
+   ],
+   "triples": 31,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-31: El catálogo tiene crecimiento_prima_root (prima devengada −1%); esta ficha reporta primas brutas emitidas US$387M vs. 332M en 2024. Métrica y período distintos: no se fusionan. | F-35: Tensión declarada con F-38 (68,21% vs. ~20%). | F-38: Tensión declarada con F-35 (ver c_automedicacion_68 contradice c_automedicacion_20)."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-48",
+    "F-49",
+    "F-50",
+    "F-51",
+    "F-52",
+    "F-62",
+    "F-68",
+    "F-70"
+   ],
+   "triples": 26,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-71",
+    "F-72",
+    "F-73",
+    "F-74",
+    "F-75",
+    "F-76",
+    "F-77",
+    "F-78"
+   ],
+   "triples": 23,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-79",
+    "F-81",
+    "F-82",
+    "F-84",
+    "F-85",
+    "F-86",
+    "F-87",
+    "F-88"
+   ],
+   "triples": 24,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-95",
+    "F-96",
+    "F-98",
+    "F-99",
+    "F-101",
+    "F-108",
+    "F-113",
+    "F-114"
+   ],
+   "triples": 26,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-116",
+    "F-117",
+    "F-126",
+    "F-127",
+    "F-128",
+    "F-129",
+    "F-130",
+    "F-132"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-133",
+    "F-134",
+    "F-135",
+    "F-136",
+    "F-137",
+    "F-139",
+    "F-140",
+    "F-146"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-149",
+    "F-152",
+    "F-155",
+    "F-157",
+    "F-160",
+    "F-162",
+    "F-165",
+    "F-166"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-167",
+    "F-168",
+    "F-171",
+    "F-172",
+    "F-173",
+    "F-174",
+    "F-177",
+    "F-179"
+   ],
+   "triples": 21,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-182",
+    "F-185",
+    "F-186",
+    "F-187",
+    "F-188",
+    "F-189",
+    "F-190",
+    "F-192"
+   ],
+   "triples": 21,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-196",
+    "F-201",
+    "F-202",
+    "F-204",
+    "F-205",
+    "F-206",
+    "F-207",
+    "F-208"
+   ],
+   "triples": 24,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-209",
+    "F-210",
+    "F-211",
+    "F-212",
+    "F-213",
+    "F-214",
+    "F-215",
+    "F-216"
+   ],
+   "triples": 24,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-217",
+    "F-227",
+    "F-233",
+    "F-234",
+    "F-235",
+    "F-249",
+    "F-255",
+    "F-260"
+   ],
+   "triples": 27,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-261",
+    "F-268",
+    "F-269",
+    "F-270",
+    "F-271",
+    "F-273",
+    "F-274",
+    "F-275"
+   ],
+   "triples": 26,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-276",
+    "F-277",
+    "F-278",
+    "F-279",
+    "F-281",
+    "F-284",
+    "F-286",
+    "F-287"
+   ],
+   "triples": 24,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-288",
+    "F-289",
+    "F-290",
+    "F-291",
+    "F-292",
+    "F-293",
+    "F-294",
+    "F-296"
+   ],
+   "triples": 20,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-297",
+    "F-298",
+    "F-299",
+    "F-300",
+    "F-301",
+    "F-302",
+    "F-313",
+    "F-314"
+   ],
+   "triples": 23,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-315",
+    "F-319",
+    "F-322",
+    "F-325",
+    "F-326",
+    "F-327",
+    "F-328",
+    "F-329"
+   ],
+   "triples": 21,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-329: Autoría y año no verificables: ScienceDirect bloqueó el acceso."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-332",
+    "F-342",
+    "F-343",
+    "F-344",
+    "F-346",
+    "F-347",
+    "F-348",
+    "F-350"
+   ],
+   "triples": 24,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-351",
+    "F-354",
+    "F-355",
+    "F-356",
+    "F-358",
+    "F-360",
+    "F-361",
+    "F-362"
+   ],
+   "triples": 27,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-363",
+    "F-364",
+    "F-365",
+    "F-366",
+    "F-367",
+    "F-368",
+    "F-369",
+    "F-370"
+   ],
+   "triples": 26,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-371",
+    "F-372",
+    "F-373",
+    "F-377",
+    "F-378",
+    "F-379",
+    "F-380",
+    "F-385"
+   ],
+   "triples": 29,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-379: La ficha advierte que la comparación interanual no cuadra con el año de corte; la nota no tiene fecha (s.f.)."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-388",
+    "F-389",
+    "F-390",
+    "F-391",
+    "F-392",
+    "F-393",
+    "F-394",
+    "F-395"
+   ],
+   "triples": 24,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-388: La ficha mantiene la cifra 4,3/1,2 min en el resumen pese a la corrección que la invalida como dato duro; solo el fenómeno cualitativo queda en pie. | F-391: F-419 (desmentido oficial) convierte este caso en contestado; la ficha F-391 no lo menciona."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-396",
+    "F-397",
+    "F-398",
+    "F-399",
+    "F-400",
+    "F-402",
+    "F-404",
+    "F-405"
+   ],
+   "triples": 26,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-406",
+    "F-408",
+    "F-409",
+    "F-410",
+    "F-411",
+    "F-412",
+    "F-413",
+    "F-414"
+   ],
+   "triples": 25,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-415",
+    "F-416",
+    "F-417",
+    "F-418",
+    "F-419",
+    "F-421",
+    "F-422",
+    "F-423"
+   ],
+   "triples": 25,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-424",
+    "F-425",
+    "F-426",
+    "F-427",
+    "F-435",
+    "F-438",
+    "F-439",
+    "F-440"
+   ],
+   "triples": 28,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-443",
+    "F-444",
+    "F-445",
+    "F-446",
+    "F-450",
+    "F-451",
+    "F-453",
+    "F-455"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-450: 'contradice' se usa entre dos resultados (combined ratios) y no entre afirmaciones; si el validador lo exige estricto, reemplazar por la relación refuta ya incluida. | F-453: Fuente no leída directamente (403); sostenida en snippets. | F-455: La limitación 'fuente_unica_microsoft' (dato de una sola organización) se reutiliza por analogía; su nombre alude a Microsoft. Si se prefiere, crear una limitación genérica de autorreporte."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-456",
+    "F-457",
+    "F-458",
+    "F-459",
+    "F-460",
+    "F-462",
+    "F-463",
+    "F-464"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-457: El tercer triple usa 'proyeccion_no_medicion' de forma imprecisa (la limitación real es de recencia); se puede eliminar si se prefiere. | F-460: La ficha mantiene la frase original ('las metas se anuncian y no se reportan') junto a la corrección del 2026-10-03 que la refuta; el último triple refleja la versión original y debería leerse junto al de F-529."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-467",
+    "F-468",
+    "F-479",
+    "F-510",
+    "F-511",
+    "F-512",
+    "F-513",
+    "F-520"
+   ],
+   "triples": 23,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-479: ID reservado sin fuente propia; los triples documentan solo el redireccionamiento a F-198. | F-512: Fuente D (blogs de proveedores de auditoría); las resoluciones no se abrieron."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-522",
+    "F-526",
+    "F-527",
+    "F-528",
+    "F-529",
+    "F-532",
+    "F-535",
+    "F-536"
+   ],
+   "triples": 23,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-529: Matiza F-460: la meta que F-460 fechaba en 2025 aparece como 2026 en los reportes."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-541",
+    "F-543",
+    "F-547",
+    "F-549",
+    "F-550",
+    "F-554",
+    "F-556",
+    "F-557"
+   ],
+   "triples": 26,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-541: 'fracaso_producto_nuevo' se usa como el resultado más cercano a 'fracaso de startup'; no hay entidad específica de fracaso de startups en el catálogo. | F-550: Publicación en Nature reportada por cobertura secundaria; no verificada."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-558",
+    "F-559",
+    "F-561",
+    "F-562",
+    "F-565",
+    "F-570",
+    "F-576",
+    "F-578"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-561: El tercer triple es una lectura teórica (el riesgo de elegir a posteriori); la ficha solo habla de 'amenaza de la flexibilidad analítica'. | F-565: Nota institucional; el venue del análisis no está verificado."
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-587",
+    "F-588",
+    "F-589",
+    "F-590",
+    "F-592",
+    "F-593",
+    "F-594",
+    "F-595"
+   ],
+   "triples": 25,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-599",
+    "F-600",
+    "F-601",
+    "F-602",
+    "F-603",
+    "F-604",
+    "F-605",
+    "F-606"
+   ],
+   "triples": 19,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-607",
+    "F-608",
+    "F-609",
+    "F-610",
+    "F-611",
+    "F-612",
+    "F-613",
+    "F-614"
+   ],
+   "triples": 20,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-615",
+    "F-616",
+    "F-617",
+    "F-618",
+    "F-619",
+    "F-620",
+    "F-621",
+    "F-622"
+   ],
+   "triples": 21,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-623",
+    "F-624",
+    "F-625",
+    "F-626",
+    "F-627",
+    "F-628",
+    "F-630",
+    "F-632"
+   ],
+   "triples": 27,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-633",
+    "F-634",
+    "F-635",
+    "F-638",
+    "F-639",
+    "F-640",
+    "F-643",
+    "F-644"
+   ],
+   "triples": 28,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-645",
+    "F-838",
+    "F-839",
+    "F-840",
+    "F-841",
+    "F-842",
+    "F-843",
+    "F-844"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-845",
+    "F-846",
+    "F-847",
+    "F-848",
+    "F-849",
+    "F-850",
+    "F-851",
+    "F-852"
+   ],
+   "triples": 25,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-853",
+    "F-854",
+    "F-855",
+    "F-856",
+    "F-857",
+    "F-858",
+    "F-859",
+    "F-860"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-861",
+    "F-862",
+    "F-863",
+    "F-864",
+    "F-865",
+    "F-866",
+    "F-867",
+    "F-868"
+   ],
+   "triples": 24,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+  },
+  {
+   "fecha": "2026-10-11",
+   "f_ids": [
+    "F-869",
+    "F-870",
+    "F-871",
+    "F-872",
+    "F-873",
+    "F-874",
+    "F-875"
+   ],
+   "triples": 22,
+   "sin_aporte": [],
+   "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
   }
  ],
  "discrepancias": [

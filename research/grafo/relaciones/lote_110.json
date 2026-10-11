@@ -1,0 +1,315 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-861",
+  "F-862",
+  "F-863",
+  "F-864",
+  "F-865",
+  "F-866",
+  "F-867",
+  "F-868"
+ ],
+ "entidades": [
+  {
+   "id": "ia_consciente_cuantica",
+   "nombre": "IA consciente mediante computación cuántica",
+   "tipo": "concepto"
+  },
+  {
+   "id": "nirvanic",
+   "nombre": "Nirvanic Consciousness Technologies (Vancouver)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "autofinanciamiento_nirvanic",
+   "nombre": "Declaración de autofinanciamiento de Nirvanic ('self-funded')",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_nirvanic_ronda_early_vc",
+   "nombre": "Nirvanic levantó una ronda Early VC en nov-2024 (Dealroom)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "opm_meg",
+   "nombre": "Magnetoencefalografía con magnetómetros de bombeo óptico (OPM-MEG)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tecnologia_cuantica_salud",
+   "nombre": "Tecnología cuántica aplicada a la salud (sensores, computación)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "cerca_magnetics",
+   "nombre": "Cerca Magnetics (spin-out de la U. de Nottingham)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "serie_a_cerca_2026",
+   "nombre": "Serie A de Cerca Magnetics (£3,8 M, abr-2026)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_cerca_financiamiento_total",
+   "nombre": "Cerca Magnetics acumula US$9,42 M de financiamiento total (Caplight)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "cifras_inconsistentes_fuentes",
+   "nombre": "Cifras que no coinciden entre fuentes",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "subvenciones_sbir_nih",
+   "nombre": "Subvenciones SBIR del NIH/NIMH",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "quspin",
+   "nombre": "QuSpin (fabricante de magnetómetros cuánticos, Colorado)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "programa_quantum_for_bio",
+   "nombre": "Programa Quantum for Bio de Wellcome Leap (hasta US$40 M + US$10 M en premios)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "taquilla_what_the_bleep",
+   "nombre": "Taquilla de 'What the Bleep Do We Know!?' (US$11,7 M según The Numbers)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "c_autofinanciamiento_bleep",
+   "nombre": "Los directores autofinanciaron 'What the Bleep' con ~US$5 M, sin dinero de Ramtha",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "directores_bleep_ramtha",
+   "nombre": "Directores de 'What the Bleep' (alumnos de la Ramtha's School of Enlightenment)",
+   "tipo": "organizacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ia_consciente_cuantica",
+   "p": "aplica_a",
+   "o": "nirvanic",
+   "f": "F-861",
+   "apoyo": "Nirvanic (CEO Suzanne Gildert, ex D-Wave) salió del modo stealth en nov-2024 para explorar IA consciente con computación cuántica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nirvanic",
+   "p": "tiene_limite",
+   "o": "dato_no_publicado",
+   "f": "F-861",
+   "apoyo": "La nota de The Quantum Insider no informa monto ni inversionistas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "autofinanciamiento_nirvanic",
+   "p": "refuta",
+   "o": "c_nirvanic_ronda_early_vc",
+   "f": "F-862",
+   "apoyo": "Nirvanic declara estar 'self-funded' y Crunchbase no muestra financiamiento: no hay ronda verificada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_nirvanic_ronda_early_vc",
+   "p": "tiene_limite",
+   "o": "dato_no_publicado",
+   "f": "F-862",
+   "apoyo": "Dealroom lista la ronda de nov-2024 con monto e inversionistas N/A.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "autofinanciamiento_nirvanic",
+   "p": "tiene_limite",
+   "o": "cifra_autodeclarada",
+   "f": "F-862",
+   "apoyo": "El autofinanciamiento lo declara la propia empresa en sus FAQ, sin fecha.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "opm_meg",
+   "p": "es_tipo_de",
+   "o": "tecnologia_cuantica_salud",
+   "f": "F-863",
+   "apoyo": "La MEG con magnetómetros de bombeo óptico es un uso real de sensores cuánticos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "opm_meg",
+   "p": "aplica_a",
+   "o": "cerca_magnetics",
+   "f": "F-863",
+   "apoyo": "Cerca Magnetics desarrolla OPM-MEG para imagen cerebral y busca un producto clínicamente aprobado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "serie_a_cerca_2026",
+   "p": "aplica_a",
+   "o": "cerca_magnetics",
+   "f": "F-863",
+   "apoyo": "Cerca cerró una Serie A de £3,8 M en abr-2026 con Guinness Ventures.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "serie_a_cerca_2026",
+   "p": "tiene_limite",
+   "o": "cifra_autodeclarada",
+   "f": "F-863",
+   "apoyo": "Pulse 2.0 cita el anuncio de la propia empresa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cerca_financiamiento_total",
+   "p": "aplica_a",
+   "o": "cerca_magnetics",
+   "f": "F-864",
+   "apoyo": "Caplight: Serie A del 22-abr-2026, valuación estimada US$37,5 M y financiamiento total US$9,42 M (incluye subvenciones 2023-2024 y seed de 2020).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cerca_financiamiento_total",
+   "p": "tiene_limite",
+   "o": "cifras_inconsistentes_fuentes",
+   "f": "F-864",
+   "apoyo": "Signalbase reporta ~US$5,1 M: las cifras no coinciden del todo con Caplight.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cerca_financiamiento_total",
+   "p": "tiene_limite",
+   "o": "estimacion_no_auditada",
+   "f": "F-864",
+   "apoyo": "Caplight es una base de venture con estimaciones no auditables.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "subvenciones_sbir_nih",
+   "p": "aplica_a",
+   "o": "quspin",
+   "f": "F-865",
+   "apoyo": "QuSpin se financia con subvenciones SBIR desde 2012 (primera Fase I del NIMH); el propio NIMH compra sus sensores.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "opm_meg",
+   "p": "aplica_a",
+   "o": "quspin",
+   "f": "F-865",
+   "apoyo": "Los magnetómetros cuánticos compactos de QuSpin derivaron en un MEG portátil.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "quspin",
+   "p": "tiene_limite",
+   "o": "dato_no_publicado",
+   "f": "F-865",
+   "apoyo": "En la historia de éxito del NIH no se vieron los montos exactos de las subvenciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "programa_quantum_for_bio",
+   "p": "aplica_a",
+   "o": "tecnologia_cuantica_salud",
+   "f": "F-866",
+   "apoyo": "Wellcome Leap lanzó 'Quantum for Bio' con hasta US$40 M de investigación + US$10 M en premios para computación cuántica aplicada a salud.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "programa_quantum_for_bio",
+   "p": "tiene_limite",
+   "o": "cifra_autodeclarada",
+   "f": "F-866",
+   "apoyo": "La nota cita el anuncio del propio programa. No financia conciencia cuántica: no se halló programa de Wellcome Leap sobre conciencia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "taquilla_what_the_bleep",
+   "p": "aplica_a",
+   "o": "pelicula_what_the_bleep",
+   "f": "F-867",
+   "apoyo": "The Numbers: taquilla doméstica US$10,94 M, internacional US$0,76 M, total US$11,70 M.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "taquilla_what_the_bleep",
+   "p": "tiene_limite",
+   "o": "cifras_inconsistentes_fuentes",
+   "f": "F-867",
+   "apoyo": "Wikipedia da ~US$21 M mundial; Box Office Mojo no se pudo ver para la película de 2004.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "taquilla_what_the_bleep",
+   "p": "tiene_limite",
+   "o": "estimacion_no_auditada",
+   "f": "F-867",
+   "apoyo": "The Numbers es una base de datos de taquilla no auditada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_autofinanciamiento_bleep",
+   "p": "origina_en",
+   "o": "directores_bleep_ramtha",
+   "f": "F-868",
+   "apoyo": "Salon: los tres directores, alumnos de la escuela de JZ Knight (Ramtha), dicen haber autofinanciado la película con ~US$5 M.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_autofinanciamiento_bleep",
+   "p": "tiene_limite",
+   "o": "cifras_inconsistentes_fuentes",
+   "f": "F-868",
+   "apoyo": "Otra fuente da US$4 M en lugar de US$5 M.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_autofinanciamiento_bleep",
+   "p": "tiene_limite",
+   "o": "fuente_parte_interesada",
+   "f": "F-868",
+   "apoyo": "Los directores niegan que Ramtha financiara la película, aunque Ramtha aparece en ella; la cifra es atribuida a ellos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "directores_bleep_ramtha",
+   "p": "aplica_a",
+   "o": "pelicula_what_the_bleep",
+   "f": "F-868",
+   "apoyo": "Los directores de la película son alumnos de la Ramtha's School of Enlightenment.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

@@ -1,0 +1,373 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-396",
+  "F-397",
+  "F-398",
+  "F-399",
+  "F-400",
+  "F-402",
+  "F-404",
+  "F-405"
+ ],
+ "entidades": [
+  {
+   "id": "equipo_dedicado_ds",
+   "nombre": "Equipo dedicado al design system",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "adopcion_design_system",
+   "nombre": "Confianza, adopción y satisfacción con el design system",
+   "tipo": "resultado"
+  },
+  {
+   "id": "supervivencia_design_system",
+   "nombre": "Supervivencia de design systems más allá de 18 meses (~40%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lim_no_verificado_primario",
+   "nombre": "Cifra o contenido no verificado contra el informe o documento primario",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_roi_ds_135",
+   "nombre": "Un design system devuelve 135% de ROI (US$2,35 por dólar a 5 años)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "calculadora_roi_ds_smashing",
+   "nombre": "Smashing Magazine 2022: calculadora del ROI de un design system",
+   "tipo": "estudio"
+  },
+  {
+   "id": "eco_cita",
+   "nombre": "Cadena de eco de cita (una cifra reciclada sin medición ni fuente primaria verificable)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "consenso_analistas_figma",
+   "nombre": "Consenso de precio objetivo de analistas sobre Figma (FIG)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "lim_opinion_analistas",
+   "nombre": "El consenso de analistas es opinión, no dato auditado, y varía según el compilador",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "personalizacion_genui",
+   "nombre": "Generative UI personalizada (condicionada al perfil o a preferencias adaptativas)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "estudio_personalizacion_genui",
+   "nombre": "Efficient Personalization of Generative User Interfaces (arXiv 2604.09876)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "lim_no_longitudinal",
+   "nombre": "No longitudinal: no repite la tarea con la misma persona en ≥5 sesiones",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "lim_sin_revision_pares",
+   "nombre": "Sin revisión por pares (preprint, blog, libro o venue no arbitrado)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "genui_study_dis2025",
+   "nombre": "The GenUI Study (ACM DIS 2025): 37 profesionales de UX, una semana con diario",
+   "tipo": "estudio"
+  },
+  {
+   "id": "lim_sin_comparacion_ui_estatica",
+   "nombre": "No compara generative UI contra UI estática en tiempo de tarea ni aprendibilidad",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "compromiso_cognitivo_eeg",
+   "nombre": "Compromiso cognitivo medido por EEG (razón θ/α) y parpadeo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "biometria_fisiologica",
+   "nombre": "Medidas fisiológicas (EEG, eye-tracking, EDA, HRV)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "burelli_2026_biometria",
+   "nombre": "Burelli et al. 2026: biometría del desempeño en programación asistida por IA (arXiv 2606.20598)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "lim_dominio_codigo",
+   "nombre": "Dominio de programación, no de diseño",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "dzone_blog_seniors",
+   "nombre": "DZone 2025: Why Sr. Devs Are Actually Less Productive with AI Copilot (blog sin autor)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_verificacion_modera_productividad",
+   "nombre": "El impuesto de verificación modera el efecto de la IA: negativo en código maduro, positivo en construcción nueva (H19)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "wang_2026_verification_tax",
+   "nombre": "Wang 2026: The Verification Tax, límites de la auditoría de IA en régimen de errores raros",
+   "tipo": "estudio"
+  },
+  {
+   "id": "auditoria_calibracion_ia",
+   "nombre": "Auditoría de calibración de modelos de IA",
+   "tipo": "concepto"
+  },
+  {
+   "id": "colision_nombre_verification_tax",
+   "nombre": "Colisión de nombre: 'verification tax' designa dos cosas distintas",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "equipo_dedicado_ds",
+   "p": "asocia_con",
+   "o": "adopcion_design_system",
+   "f": "F-396",
+   "apoyo": "+5% de organizaciones con equipo dedicado; tenerlo correlaciona con más confianza, adopción y satisfacción. La satisfacción con el buy-in cae de 42% a 32%.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "supervivencia_design_system",
+   "p": "tiene_limite",
+   "o": "lim_no_verificado_primario",
+   "f": "F-396",
+   "apoyo": "Solo ~40% de los design systems siguen activos tras 18 meses, dato citado en la cobertura y no verificado contra el informe.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "zeroheight_report",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-396",
+   "apoyo": "Encuesta del proveedor de la herramienta (interés directo), con muestra y método no auditados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "supervivencia_design_system",
+   "p": "aplica_a",
+   "o": "design_system",
+   "f": "F-396",
+   "apoyo": "Gartner ubica a los design systems deslizándose al valle de la desilusión; la cifra de supervivencia describe esa categoría.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_roi_ds_135",
+   "p": "origina_en",
+   "o": "calculadora_roi_ds_smashing",
+   "f": "F-397",
+   "apoyo": "El 135% proviene de un modelo: US$646.000 invertidos frente a US$1.517.400 de ahorro de tiempo estimado, ~US$2,35 por dólar a 5 años.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_roi_ds_135",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-397",
+   "apoyo": "No es un estudio sino una calculadora: nadie ejecutó y midió; los insumos son cifras autorreportadas por la industria (Klüver 2019, Ray 2018, Slack 2019).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_roi_ds_135",
+   "p": "es_tipo_de",
+   "o": "c_narrativa_multiplicadores_diseno",
+   "f": "F-397",
+   "apoyo": "Cifra de retorno del diseño que circula en 2026 como resultado medido, con el mismo defecto que el +35,26% de Baymard.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_roi_ds_135",
+   "p": "es_tipo_de",
+   "o": "eco_cita",
+   "f": "F-397",
+   "apoyo": "Cuarta cadena de eco de cita detectada: un modelo de 2022 que reaparece en 2026 como resultado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_accion_figma",
+   "p": "respalda",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-398",
+   "apoyo": "Al 13-jul-2026 FIG cotizaba ~US$23,57, ~−83% desde el pico (US$142,92) y bajo el precio de IPO (US$33).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "revenue_figma_q1",
+   "p": "respalda",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-398",
+   "apoyo": "Desacople: crecimiento de 46% interanual y NDR de 139% conviven con la acción bajo el precio de salida.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "consenso_analistas_figma",
+   "p": "tiene_limite",
+   "o": "lim_opinion_analistas",
+   "f": "F-398",
+   "apoyo": "Precio objetivo medio a 12 meses US$30,56 (rango 22-38), 5 compras y 0 ventas: opinión de analistas de agregadores financieros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "personalizacion_genui",
+   "p": "es_tipo_de",
+   "o": "generative_ui",
+   "f": "F-399",
+   "apoyo": "Compara 4 condiciones de generative UI (zero-shot, condicionada al perfil, preferencia adaptativa) en una fase de arena.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "estudio_personalizacion_genui",
+   "p": "tiene_limite",
+   "o": "lim_no_longitudinal",
+   "f": "F-399",
+   "apoyo": "No repite tarea con la misma persona en ≥5 sesiones, que es lo que H3 exige: no mueve la hipótesis.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "estudio_personalizacion_genui",
+   "p": "tiene_limite",
+   "o": "lim_sin_revision_pares",
+   "f": "F-399",
+   "apoyo": "Preprint sin revisión por pares; comparación entre condiciones de corto horizonte.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "genui_study_dis2025",
+   "p": "aplica_a",
+   "o": "profesionales_ux",
+   "f": "F-400",
+   "apoyo": "37 profesionales de UX en un ejercicio de una semana con journaling diario sobre generative UI (venue arbitrado).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "genui_study_dis2025",
+   "p": "tiene_limite",
+   "o": "lim_sin_comparacion_ui_estatica",
+   "f": "F-400",
+   "apoyo": "Estudio formativo y cualitativo de diseño de herramienta: no compara contra UI estática y no sirve para cerrar H3.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "reduce",
+   "o": "compromiso_cognitivo_eeg",
+   "f": "F-402",
+   "apoyo": "Diseño cruzado dentro de sujetos, multisitio (Bari/Copenhague): con asistencia de IA la razón θ/α de EEG baja y el parpadeo sube, consistente con menor compromiso al delegar.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "biometria_fisiologica",
+   "p": "mide",
+   "o": "compromiso_cognitivo_eeg",
+   "f": "F-402",
+   "apoyo": "Combina rúbrica objetiva, NASA-TLX y EEG, eye-tracking, EDA y HRV en el mismo estudio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "burelli_2026_biometria",
+   "p": "tiene_limite",
+   "o": "lim_dominio_codigo",
+   "f": "F-402",
+   "apoyo": "Es el diseño que H5 pide (objetivo + percibido + fisiológico), pero en código, no en diseño.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "burelli_2026_biometria",
+   "p": "tiene_limite",
+   "o": "lim_sin_revision_pares",
+   "f": "F-402",
+   "apoyo": "Preprint sin venue final verificado, aunque metodológicamente ejemplar.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cifra_verificacion_4_3",
+   "p": "origina_en",
+   "o": "dzone_blog_seniors",
+   "f": "F-404",
+   "apoyo": "El punto más profundo del rastreo es un blog que dice 'in a recent study of 250 developers across five organizations' sin nombrar autor, institución ni enlace.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cifra_verificacion_4_3",
+   "p": "es_tipo_de",
+   "o": "eco_cita",
+   "f": "F-404",
+   "apoyo": "La frase se recicla casi literal en Sonar, Faros AI, Augment Code, Entrepreneur y mariothomas.com: una pieza sin fuente, no seis evidencias.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "dzone_blog_seniors",
+   "p": "tiene_limite",
+   "o": "lim_cifra_sin_origen_primario",
+   "f": "F-404",
+   "apoyo": "Blog sin arbitraje que no identifica el estudio que cita.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_verificacion_modera_productividad",
+   "p": "tiene_limite",
+   "o": "lim_cifra_sin_origen_primario",
+   "f": "F-404",
+   "apoyo": "La cifra ancla de H19 no tiene fuente primaria verificable: la hipótesis se degrada y no debe reingresar como dato duro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "wang_2026_verification_tax",
+   "p": "aplica_a",
+   "o": "auditoria_calibracion_ia",
+   "f": "F-405",
+   "apoyo": "Prueba matemática sobre límites de la auditoría de calibración de modelos; no tiene datos de desarrolladores.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_cifra_verificacion_4_3",
+   "p": "tiene_limite",
+   "o": "colision_nombre_verification_tax",
+   "f": "F-405",
+   "apoyo": "Una búsqueda por 'verification tax' devuelve este paper riguroso, que nada tiene que ver con tiempos de revisión y podría prestarle autoridad a la cifra sin fuente.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

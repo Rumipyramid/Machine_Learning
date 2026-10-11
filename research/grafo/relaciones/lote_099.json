@@ -1,0 +1,323 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-541",
+  "F-543",
+  "F-547",
+  "F-549",
+  "F-550",
+  "F-554",
+  "F-556",
+  "F-557"
+ ],
+ "entidades": [
+  {
+   "id": "c_90_startups_fracasan",
+   "nombre": "El 90% de las startups fracasa",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "startup_genome_2011",
+   "nombre": "Startup Genome Report (650 startups, mayo de 2011)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "escalamiento_prematuro",
+   "nombre": "Escalamiento prematuro de una startup",
+   "tipo": "concepto"
+  },
+  {
+   "id": "homo_silicus",
+   "nombre": "Homo silicus: LLMs como agentes económicos simulados",
+   "tipo": "concepto"
+  },
+  {
+   "id": "precision_dap_llm",
+   "nombre": "Precisión de la disposición a pagar estimada con LLM",
+   "tipo": "resultado"
+  },
+  {
+   "id": "agentes_generativos_entrevista",
+   "nombre": "Agentes generativos construidos con entrevistas de 2 h (1.052 personas)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "replica_respuestas_individuales",
+   "nombre": "Réplica de las respuestas individuales de personas reales (GSS)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "precision_normalizada_test_retest",
+   "nombre": "El 85% es relativo a la consistencia test-retest humana, no precisión bruta",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "prediccion_experimentos_llm",
+   "nombre": "Predicción de resultados de experimentos de ciencias sociales con LLM",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_llm_predice_experimentos",
+   "nombre": "Los LLMs predicen la dirección de los resultados de experimentos de ciencias sociales",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_llm_sobreestima_efectos",
+   "nombre": "Los LLMs sobreestiman los tamaños de efecto de los experimentos con humanos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "juego_11_20",
+   "nombre": "Juego 11-20 (profundidad de razonamiento estratégico)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "falsos_positivos_llm",
+   "nombre": "Efectos significativos en el LLM donde el estudio original era nulo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "insensibilidad_significado_llm",
+   "nombre": "El LLM no cambia su respuesta ante redacciones que alteran mucho el significado",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_90_startups_fracasan",
+   "p": "origina_en",
+   "o": "startup_genome_2011",
+   "f": "F-541",
+   "apoyo": "El '90% de las startups fracasa' se rastrea a este reporte, que lo usa como premisa ('más del 90% de las startups financiadas fracasa') y no lo mide.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_90_startups_fracasan",
+   "p": "tiene_limite",
+   "o": "eco_de_cita",
+   "f": "F-541",
+   "apoyo": "Eco de cita: un documento identificable que no mide la cifra que se le atribuye.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "escalamiento_prematuro",
+   "p": "asocia_con",
+   "o": "fracaso_producto_nuevo",
+   "f": "F-541",
+   "apoyo": "Hallazgo propio del reporte (encuesta no probabilística): el 70% de las startups que fracasan escaló prematuramente.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "homo_silicus",
+   "p": "respalda",
+   "o": "c_llm_sesgos_humanos",
+   "f": "F-543",
+   "apoyo": "Los LLMs replican experimentos clásicos de economía conductual (Charness-Rabin, equidad de Kahneman et al. 1986, sesgo de statu quo) con resultados cualitativamente similares.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "homo_silicus",
+   "p": "es_tipo_de",
+   "o": "experimento_turing",
+   "f": "F-543",
+   "apoyo": "Texto fundacional de usar LLMs como sujetos simulados para replicar experimentos con humanos.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "homo_silicus",
+   "p": "aplica_a",
+   "o": "modelos_conductuales_economicos",
+   "f": "F-543",
+   "apoyo": "Aplica LLMs a juegos y decisiones de economía conductual; sin cifras de ajuste verificadas (documento de trabajo).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precision_dap_llm",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-547",
+   "apoyo": "La disposición a pagar estimada con GPT a veces se parece a la humana, pero a menudo es inexacta y a veces tiene el signo errado.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ajuste_fino_datos_sociales",
+   "p": "aumenta",
+   "o": "precision_dap_llm",
+   "f": "F-547",
+   "apoyo": "Lo que mejor funciona es afinar el modelo con datos humanos previos de la misma categoría.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "aplica_a",
+   "o": "precision_dap_llm",
+   "f": "F-547",
+   "apoyo": "Uso de LLMs para investigación de mercado: estimar la disposición a pagar.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "agentes_generativos_entrevista",
+   "p": "aumenta",
+   "o": "replica_respuestas_individuales",
+   "f": "F-549",
+   "apoyo": "Los agentes reproducen las respuestas de sus personas a la GSS al 85% normalizado frente a la consistencia test-retest humana a 2 semanas.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "replica_respuestas_individuales",
+   "p": "tiene_limite",
+   "o": "precision_normalizada_test_retest",
+   "f": "F-549",
+   "apoyo": "Eco: circula como '85% de precisión', pero la cifra está normalizada por la consistencia humana.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "agentes_generativos_entrevista",
+   "p": "reduce",
+   "o": "aplanamiento_identidades",
+   "f": "F-549",
+   "apoyo": "Construir el agente con entrevistas reduce sesgos frente a darle solo la demografía.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "agentes_generativos_entrevista",
+   "p": "es_tipo_de",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-549",
+   "apoyo": "Personas simuladas con LLM; base técnica de la startup Simile.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "prediccion_experimentos_llm",
+   "p": "respalda",
+   "o": "c_llm_predice_experimentos",
+   "f": "F-550",
+   "apoyo": "En 70 experimentos preregistrados (≈476 efectos, ≈105 mil participantes), GPT-4 predice efectos con r=0,85 (r=0,90 en estudios no publicados antes de su corte).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "prediccion_experimentos_llm",
+   "p": "respalda",
+   "o": "c_llm_sobreestima_efectos",
+   "f": "F-550",
+   "apoyo": "GPT-4 sobreestima sistemáticamente los tamaños de efecto.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "aplica_a",
+   "o": "prediccion_experimentos_llm",
+   "f": "F-550",
+   "apoyo": "Las predicciones se hicieron con GPT-4 sobre experimentos de ciencias sociales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "juego_11_20",
+   "p": "refuta",
+   "o": "c_llm_sesgos_humanos",
+   "f": "F-554",
+   "apoyo": "En el juego 11-20, casi todos los modelos y técnicas fallan en replicar la distribución humana de profundidad de razonamiento.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "sensibilidad_redaccion_llm",
+   "f": "F-554",
+   "apoyo": "Las fallas cambian de forma impredecible con el idioma, el rol asignado y las salvaguardas.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "juego_11_20",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-554",
+   "apoyo": "Advierten tomar precaución al usar LLMs como sustitutos de sujetos humanos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "respalda",
+   "o": "c_llm_predice_experimentos",
+   "f": "F-556",
+   "apoyo": "Réplica de 154 experimentos con GPT-4: 76% de efectos principales y 47% de interacciones replicados en dirección.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "respalda",
+   "o": "c_llm_sobreestima_efectos",
+   "f": "F-556",
+   "apoyo": "Los efectos obtenidos con GPT-4 son 2-3 veces mayores que los originales.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "modelos_chatgpt",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-556",
+   "apoyo": "Solo 19,4% de los intervalos contiene el efecto original; peor en raza, género y ética.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "muestras_sinteticas_llm",
+   "p": "tiene_limite",
+   "o": "falsos_positivos_llm",
+   "f": "F-556",
+   "apoyo": "71,6% de resultados significativos donde el original era nulo.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "centaur",
+   "p": "tiene_limite",
+   "o": "insensibilidad_significado_llm",
+   "f": "F-557",
+   "apoyo": "Cambios de redacción que alteran mucho el significado no mueven la respuesta del LLM ni la de Centaur, pero sí la humana.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "insensibilidad_significado_llm",
+   "p": "refuta",
+   "o": "c_centaur_generaliza",
+   "f": "F-557",
+   "apoyo": "Si el modelo no responde al significado, no captura la cognición sino la forma de la tarea.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "insensibilidad_significado_llm",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-557",
+   "apoyo": "Los LLMs no simulan la psicología humana: piden validar contra humanos en cada aplicación nueva.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-541: 'fracaso_producto_nuevo' se usa como el resultado más cercano a 'fracaso de startup'; no hay entidad específica de fracaso de startups en el catálogo. | F-550: Publicación en Nature reportada por cobertura secundaria; no verificada."
+}

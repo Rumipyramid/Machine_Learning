@@ -1,0 +1,299 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-607",
+  "F-608",
+  "F-609",
+  "F-610",
+  "F-611",
+  "F-612",
+  "F-613",
+  "F-614"
+ ],
+ "entidades": [
+  {
+   "id": "experimento_zurich_cmv",
+   "nombre": "Experimento no autorizado de la Universidad de Zúrich en r/changemyview",
+   "tipo": "estudio"
+  },
+  {
+   "id": "sin_consentimiento_informado",
+   "nombre": "Experimento sin consentimiento de los participantes",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "usuarios_reddit_cmv",
+   "nombre": "Usuarios de Reddit (r/changemyview)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "c_ia_poder_persuasivo",
+   "nombre": "La IA tiene un gran poder persuasivo (relato mediático del caso Zúrich)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "eco_sindicacion",
+   "nombre": "Eco de sindicación: la misma nota repetida en varios medios no son confirmaciones independientes",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "demanda_modelo_calido",
+   "nombre": "Demanda de usuarios por el regreso de GPT-4o, el modelo 'cálido' (#keep4o)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_usuarios_rechazan_adulacion",
+   "nombre": "Los usuarios rechazan la IA aduladora",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "psicosis_ia",
+   "nombre": "Psicosis asociada al uso de IA ('psicosis por IA')",
+   "tipo": "resultado"
+  },
+  {
+   "id": "seleccion_vulnerables_ia",
+   "nombre": "La IA podría atraer a personas ya vulnerables en vez de causar el daño",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_psicosis_ia_establecida",
+   "nombre": "La 'psicosis por IA' es un fenómeno establecido por estudios",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "revision_lancet_psicosis_ia",
+   "nombre": "Revisión de Lancet Psychiatry sobre psicosis por IA (basada en ≈20 reportes de prensa)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "eco_circular_prensa",
+   "nombre": "Eco circular: una revisión basada en prensa que luego la prensa cita como estudio",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "adopcion_compania_ia",
+   "nombre": "Uso de compañeros de IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "adolescentes_eeuu",
+   "nombre": "Adolescentes de EE.UU.",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "encuesta_common_sense_media",
+   "nombre": "Encuesta de Common Sense Media sobre compañeros de IA (2025)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "america_latina",
+   "nombre": "Mercados de América Latina",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "c_comercio_agentico_opera",
+   "nombre": "El comercio agéntico ya opera con compras reales",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "redes_pago_visa_mastercard",
+   "nombre": "Visa y Mastercard (comunicados de redes de pago)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "churnalism",
+   "nombre": "Churnalism: medios que replican casi literal un comunicado de prensa",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "confianza_comercio_agentico",
+   "nombre": "Comodidad y confianza del consumidor en que un agente compre por él",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "experimento_zurich_cmv",
+   "p": "tiene_limite",
+   "o": "sin_consentimiento_informado",
+   "f": "F-607",
+   "apoyo": "Bots con IA intentaron persuadir a usuarios sin consentimiento; rechazo casi unánime, los investigadores se disculparon y no publicaron.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "experimento_zurich_cmv",
+   "p": "aplica_a",
+   "o": "usuarios_reddit_cmv",
+   "f": "F-607",
+   "apoyo": "El experimento se corrió sobre usuarios de r/changemyview; moderadores y el abogado general de Reddit lo rechazaron.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "experimento_zurich_cmv",
+   "p": "es_tipo_de",
+   "o": "persuasion_ia",
+   "f": "F-607",
+   "apoyo": "Es un caso de persuasión conversacional con bots de IA en un foro real.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ia_poder_persuasivo",
+   "p": "origina_en",
+   "o": "experimento_zurich_cmv",
+   "f": "F-608",
+   "apoyo": "NPR (may-2025) lleva el caso Zúrich/CMV al público general como revelación de los poderes persuasivos de la IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ia_poder_persuasivo",
+   "p": "tiene_limite",
+   "o": "eco_sindicacion",
+   "f": "F-608",
+   "apoyo": "La misma nota se repite en 4+ emisoras: eco de sindicación, no confirmaciones independientes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "demanda_modelo_calido",
+   "p": "respalda",
+   "o": "c_preferencia_adulacion",
+   "f": "F-609",
+   "apoyo": "Movimiento #keep4o (ago-2025): tras el lanzamiento de GPT-5 los usuarios exigieron el regreso del modelo 'cálido' y OpenAI lo restituyó.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "demanda_modelo_calido",
+   "p": "refuta",
+   "o": "c_usuarios_rechazan_adulacion",
+   "f": "F-609",
+   "apoyo": "Validación conductual en contra de la retórica anti-adulación (prensa tecnológica).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "psicosis_ia",
+   "p": "tiene_limite",
+   "o": "seleccion_vulnerables_ia",
+   "f": "F-610",
+   "apoyo": "Alexander estima una incidencia de 1/10.000 a 1/100.000 al año y plantea si la IA la causa o solo atrae a personas ya vulnerables (encuesta a lectores, sin muestreo).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "personas_susceptibles",
+   "p": "asocia_con",
+   "o": "psicosis_ia",
+   "f": "F-610",
+   "apoyo": "Hipótesis del autor: la 'psicosis por IA' podría concentrarse en personas ya vulnerables.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_psicosis_ia_establecida",
+   "p": "origina_en",
+   "o": "revision_lancet_psicosis_ia",
+   "f": "F-611",
+   "apoyo": "La prensa cita como estudio la revisión de Lancet Psychiatry, que a su vez se basa en ≈20 reportes de prensa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "revision_lancet_psicosis_ia",
+   "p": "tiene_limite",
+   "o": "eco_circular_prensa",
+   "f": "F-611",
+   "apoyo": "Nota de higiene de la ficha: eco circular entre prensa y revisión.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_psicosis_ia_establecida",
+   "p": "aplica_a",
+   "o": "psicosis_ia",
+   "f": "F-611",
+   "apoyo": "Fortune (ago-2025): el CEO de Microsoft AI, Suleyman, legitima el término 'psicosis por IA'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_compania_ia",
+   "p": "aplica_a",
+   "o": "adolescentes_eeuu",
+   "f": "F-612",
+   "apoyo": "72% de adolescentes de EE.UU. probó un compañero de IA y 13% lo usa a diario.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_compania_ia",
+   "p": "origina_en",
+   "o": "encuesta_common_sense_media",
+   "f": "F-612",
+   "apoyo": "Las cifras vienen de una encuesta de Common Sense Media con método propio, reportada por TechCrunch.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_compania_ia",
+   "p": "parte_de",
+   "o": "compania_ia",
+   "f": "F-612",
+   "apoyo": "Mide cuánto se usan los compañeros de IA entre adolescentes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "comercio_agentico",
+   "p": "aplica_a",
+   "o": "america_latina",
+   "f": "F-613",
+   "apoyo": "Mastercard (mar-2026), Santander y Visa lanzan comercio agéntico en 5 países de LatAm.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_comercio_agentico_opera",
+   "p": "origina_en",
+   "o": "redes_pago_visa_mastercard",
+   "f": "F-613",
+   "apoyo": "'No son demos, son compras reales': el contenido replica casi literal comunicados de Visa y Mastercard.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_comercio_agentico_opera",
+   "p": "tiene_limite",
+   "o": "churnalism",
+   "f": "F-613",
+   "apoyo": "Forbes Argentina reproduce comunicados casi literales: hype regional, no verificación independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "confianza_comercio_agentico",
+   "p": "aplica_a",
+   "o": "comercio_agentico",
+   "f": "F-614",
+   "apoyo": "Encuesta de Riskified (ago-2026): 55% de consumidores se declara incómodo con que un agente compre por él y 46,5% no confía en ninguna empresa para hacerlo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "confianza_comercio_agentico",
+   "p": "es_tipo_de",
+   "o": "confianza_en_ia",
+   "f": "F-614",
+   "apoyo": "Es la confianza en la IA aplicada a delegar compras en un agente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

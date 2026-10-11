@@ -1,0 +1,348 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-363",
+  "F-364",
+  "F-365",
+  "F-366",
+  "F-367",
+  "F-368",
+  "F-369",
+  "F-370"
+ ],
+ "entidades": [
+  {
+   "id": "ipo_ethos",
+   "nombre": "IPO de Ethos en NASDAQ (ene-2026, US$19 por acción, ~US$200M)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ethos",
+   "nombre": "Ethos Technologies (agencia de seguro de vida digital, NASDAQ: LIFE)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "fracaso_insurtech_vida",
+   "nombre": "Fracaso o absorción de insurtechs de vida digitales (Policygenius adquirida, Health IQ en quiebra)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "humano_red_seguridad_ambiguos",
+   "nombre": "Agente licenciado como red de seguridad cuando la entrevista de salud conversacional es ambigua",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "arr_bowtie",
+   "nombre": "ARR de Bowtie (>US$80M a may-2025, +100% interanual)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "bowtie",
+   "nombre": "Bowtie (aseguradora 100% virtual de Hong Kong)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "rentabilidad_no_confirmada",
+   "nombre": "Rentabilidad neta no confirmada (solo métricas de crecimiento o unit economics)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "pivote_bestow_b2b",
+   "nombre": "Bestow vende su aseguradora directa al consumidor (2024) y pivota a software B2B para aseguradoras",
+   "tipo": "resultado"
+  },
+  {
+   "id": "layoffs_insurtech",
+   "nombre": "Despidos en insurtechs por presión de inversionistas (Bestow, Vouch, Ethos, Cover, Loop, TrustLayer, Policygenius)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "adquisicion_singlife_sumitomo",
+   "nombre": "Adquisición mayoritaria de Singlife por Sumitomo Life (dic-2023, US$1.210M; valuación ~US$3.440M)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_digital_first_independiente",
+   "nombre": "Las aseguradoras digital-first se sostienen como competidoras independientes de las incumbentes",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "venta_digital_asistida",
+   "nombre": "Canal digital asistido: compra online combinada con consultoría telefónica",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "crecimiento_gwp_agregadores_india",
+   "nombre": "Crecimiento de primas (GWP) de agregadores digitales en India (Acko +132%, Digit +74%, PolicyBazaar +46%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "periodo_no_especificado",
+   "nombre": "Periodo de la cifra no especificado con precisión",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "demanda_hibrida_digital_asesor",
+   "nombre": "Consumidores menores de 40 que buscan acceso digital junto con un asesor (67%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "licencia_aseguradora_virtual_hk",
+   "nombre": "Licencia de aseguradora virtual de Hong Kong (Fast Track, dic-2018): prohíbe vender vía agentes o bancos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "productos_estandarizados",
+   "nombre": "Productos de seguro estandarizados (VHIS, vida a término)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "complejidad_suscripcion",
+   "nombre": "Complejidad de suscripción que obliga a un intermediario",
+   "tipo": "constructo"
+  },
+  {
+   "id": "cotizacion_sin_datos_personales",
+   "nombre": "Cotización instantánea sin pedir datos personales",
+   "tipo": "intervencion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ipo_ethos",
+   "p": "aplica_a",
+   "o": "ethos",
+   "f": "F-363",
+   "apoyo": "Ethos salió a bolsa en enero de 2026 a US$19 por acción (~US$200M); +500.000 pólizas emitidas, ~200.000 activadas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "venta_digital_seguro_vida",
+   "p": "asocia_con",
+   "o": "fracaso_insurtech_vida",
+   "f": "F-363",
+   "apoyo": "En el mismo espacio fracasaron competidores: Policygenius fue adquirida y Health IQ quebró; Ethos muestra supervivencia relativa, no solo crecimiento.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ipo_ethos",
+   "p": "tiene_limite",
+   "o": "fuente_no_verificada",
+   "f": "F-363",
+   "apoyo": "Prensa de mercados sin filing propio citado; snippet no releído en la sesión.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ethos",
+   "p": "es_tipo_de",
+   "o": "intermediarios_seguros",
+   "f": "F-364",
+   "apoyo": "Ethos es una agencia licenciada que distribuye pólizas de aseguradoras terceras (Banner Life, Ameritas, TruStage, Protective); no asume el riesgo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "humano_red_seguridad_ambiguos",
+   "p": "parte_de",
+   "o": "venta_digital_seguro_vida",
+   "f": "F-364",
+   "apoyo": "El flujo de Ethos no es 100% sin humano: un agente interviene cuando la entrevista de salud da respuestas ambiguas, antes del motor de suscripción.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "humano_red_seguridad_ambiguos",
+   "p": "respalda",
+   "o": "c_digital_potencia_agente",
+   "f": "F-364",
+   "apoyo": "Incluso el caso de mayor éxito es 'digital-first con humano como red de seguridad': refuerza el modelo híbrido.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "arr_bowtie",
+   "p": "aplica_a",
+   "o": "bowtie",
+   "f": "F-365",
+   "apoyo": "Bowtie: ARR >US$80M a mayo de 2025 (+100%), proyectado sobre US$100M a fin de año; #1 en canal directo de Hong Kong y 9° en pólizas individuales nuevas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "arr_bowtie",
+   "p": "tiene_limite",
+   "o": "rentabilidad_no_confirmada",
+   "f": "F-365",
+   "apoyo": "No se encontró confirmación de rentabilidad neta; solo unit economics (>US$100M de protección por empleado).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "arr_bowtie",
+   "p": "tiene_limite",
+   "o": "eco_cita_comunicado",
+   "f": "F-365",
+   "apoyo": "Comunicado propio redistribuido por varios medios: no es triangulación independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "arr_bowtie",
+   "p": "respalda",
+   "o": "c_venta_digital_directa_vida_viable",
+   "f": "F-365",
+   "apoyo": "Una aseguradora 100% digital llegó al top 10 de vida en Hong Kong en 5 años, aunque sin rentabilidad confirmada (respaldo parcial).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pivote_bestow_b2b",
+   "p": "refuta",
+   "o": "c_venta_digital_directa_vida_viable",
+   "f": "F-366",
+   "apoyo": "Bestow vendió Bestow Life Insurance Company a Sammons Financial en 2024 y pasó a vender software B2B: abandonó la venta digital directa que la hizo conocida.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "layoffs_insurtech",
+   "p": "asocia_con",
+   "o": "fracaso_insurtech_vida",
+   "f": "F-366",
+   "apoyo": "Se reportan despidos en Bestow, Vouch, Ethos, Cover, Loop, TrustLayer y Policygenius por presión de inversionistas ante desempeño débil.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pivote_bestow_b2b",
+   "p": "tiene_limite",
+   "o": "rentabilidad_no_confirmada",
+   "f": "F-366",
+   "apoyo": "Bestow presenta la rentabilidad como 'en el horizonte' (ARR 3x en 2024, comunicado propio); levantó una Serie D de US$120M.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adquisicion_singlife_sumitomo",
+   "p": "refuta",
+   "o": "c_digital_first_independiente",
+   "f": "F-367",
+   "apoyo": "El desenlace mayor de la insignia digital-first de Singapur fue ser absorbida por una aseguradora japonesa tradicional (US$1.210M en dic-2023), no seguir independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adquisicion_singlife_sumitomo",
+   "p": "tiene_limite",
+   "o": "eco_cita_comunicado",
+   "f": "F-367",
+   "apoyo": "Monto ampliamente reportado: verificar eco de cita antes de usar la cifra exacta.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "venta_digital_asistida",
+   "p": "asocia_con",
+   "o": "crecimiento_gwp_agregadores_india",
+   "f": "F-368",
+   "apoyo": "Agregadores digitales de India que combinan compra online con consultoría telefónica crecieron fuerte en primas: Acko +132%, Digit +74%, PolicyBazaar +46%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_gwp_agregadores_india",
+   "p": "respalda",
+   "o": "c_digital_potencia_agente",
+   "f": "F-368",
+   "apoyo": "Es evidencia de crecimiento del canal digital asistido, no de un flujo 100% sin contacto humano.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "venta_digital_asistida",
+   "p": "es_tipo_de",
+   "o": "multicanal_humano_digital_seguros",
+   "f": "F-368",
+   "apoyo": "Los agregadores indios son brokers que combinan canal digital y asesoría humana telefónica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_gwp_agregadores_india",
+   "p": "tiene_limite",
+   "o": "periodo_no_especificado",
+   "f": "F-368",
+   "apoyo": "El snippet de Mordor Intelligence no precisa el periodo de crecimiento; metodología no auditada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "demanda_hibrida_digital_asesor",
+   "p": "respalda",
+   "o": "c_digital_potencia_agente",
+   "f": "F-369",
+   "apoyo": "67% de los consumidores menores de 40 busca acceso digital junto con apoyo de un asesor, no en su reemplazo: la demanda real es híbrida.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "multicanal_humano_digital_seguros",
+   "p": "asocia_con",
+   "o": "demanda_hibrida_digital_asesor",
+   "f": "F-369",
+   "apoyo": "La preferencia por digital más asesor coincide con el modelo multicanal liderado por humanos y habilitado por tecnología.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "demanda_hibrida_digital_asesor",
+   "p": "tiene_limite",
+   "o": "fuente_no_verificada",
+   "f": "F-369",
+   "apoyo": "Sitio de agregación sin muestra ni método verificables; igual que el +44% de pólizas online y el 32% de suscripción con IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "licencia_aseguradora_virtual_hk",
+   "p": "es_tipo_de",
+   "o": "canal_directo_seguros",
+   "f": "F-370",
+   "apoyo": "Bowtie recibió la primera licencia de aseguradora virtual de Hong Kong (dic-2018), que por diseño prohíbe vender vía agentes o bancos: comisión cero, toda la prima va a protección.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "productos_estandarizados",
+   "p": "reduce",
+   "o": "complejidad_suscripcion",
+   "f": "F-370",
+   "apoyo": "Al enfocarse en productos estandarizados (VHIS y vida a término), Bowtie reduce la complejidad de suscripción que en otros mercados obliga a un intermediario.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "complejidad_suscripcion",
+   "p": "asocia_con",
+   "o": "intermediarios_seguros",
+   "f": "F-370",
+   "apoyo": "La complejidad de suscripción es lo que en otros mercados hace necesario al intermediario.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cotizacion_sin_datos_personales",
+   "p": "aplica_a",
+   "o": "bowtie",
+   "f": "F-370",
+   "apoyo": "Bowtie cotiza al instante sin pedir datos personales y cobra mensual tipo suscripción sin permanencia; condiciones autorreportadas por la empresa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

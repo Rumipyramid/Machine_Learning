@@ -1,0 +1,301 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-467",
+  "F-468",
+  "F-479",
+  "F-510",
+  "F-511",
+  "F-512",
+  "F-513",
+  "F-520"
+ ],
+ "entidades": [
+  {
+   "id": "c_meta_disuelve_ri_2026",
+   "nombre": "Meta disolvió su equipo de Responsible Innovation en 2026",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "resumen_motor_busqueda",
+   "nombre": "Resumen automático de un motor de búsqueda",
+   "tipo": "concepto"
+  },
+  {
+   "id": "disolucion_responsible_innovation_meta",
+   "nombre": "Disolución del equipo Responsible Innovation de Meta (sep-2022)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "cinismo_interno_innovacion",
+   "nombre": "Cinismo interno de empleados sobre programas de innovación",
+   "tipo": "resultado"
+  },
+  {
+   "id": "senal_aislada",
+   "nombre": "Señal aislada: una sola pieza sin fecha ni conteo de reacciones",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "unh_8k_q2_2026",
+   "nombre": "8-K de UnitedHealth del Q2 2026 (registrado como F-198)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "precio_accion_lemonade",
+   "nombre": "Precio de la acción de Lemonade (LMND)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_mercado_castiga_perdida_neta",
+   "nombre": "El mercado castiga la pérdida neta del insurtech, no su siniestralidad",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "acuerdo_ftc_amazon_prime_2025",
+   "nombre": "Acuerdo FTC–Amazon por US$2.500M por inscripción engañosa y cancelación difícil de Prime (sept-2025)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "regla_click_to_cancel",
+   "nombre": "Regla 'Click to Cancel' de la FTC (anulada jul-2025; reiniciada ene-2026)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "sin_multas_eaa_primer_ano",
+   "nombre": "Ninguna multa en la UE en el primer año del EAA",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "ui_generada_ia_cruda",
+   "nombre": "Interfaces generadas por IA sin optimizar",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "optimizacion_prompts_ui",
+   "nombre": "Optimizar con prompts las interfaces generadas por IA",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "senales_visuales_incertidumbre",
+   "nombre": "Indicadores visuales de incertidumbre o confianza en salidas de LLM",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_senales_incertidumbre_calibran",
+   "nombre": "Más señales visuales de incertidumbre calibran mejor la confianza en la IA",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_meta_disuelve_ri_2026",
+   "p": "origina_en",
+   "o": "resumen_motor_busqueda",
+   "f": "F-467",
+   "apoyo": "Un resumen de motor de búsqueda atribuyó el evento a 2026, lo que lo habría vuelto falsa evidencia de un pico en el año en curso.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "disolucion_responsible_innovation_meta",
+   "p": "refuta",
+   "o": "c_meta_disuelve_ri_2026",
+   "f": "F-467",
+   "apoyo": "Verificado contra TechTimes, Fortune y CNBC: la disolución fue en septiembre de 2022, no en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_meta_disuelve_ri_2026",
+   "p": "tiene_limite",
+   "o": "error_fecha_evento",
+   "f": "F-467",
+   "apoyo": "Recordatorio operativo: verificar la fecha antes de leer un evento como señal de tendencia actual.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "labs_innovacion_corporativos",
+   "p": "asocia_con",
+   "o": "cinismo_interno_innovacion",
+   "f": "F-468",
+   "apoyo": "Hilo de Blind sobre despidos e innovación en big tech registra malestar interno con los programas de innovación.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cinismo_interno_innovacion",
+   "p": "tiene_limite",
+   "o": "senal_aislada",
+   "f": "F-468",
+   "apoyo": "Una sola pieza sin fecha precisa ni conteo verificable de reacciones: no es consenso ni medición.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mcr_unh",
+   "p": "origina_en",
+   "o": "unh_8k_q2_2026",
+   "f": "F-479",
+   "apoyo": "El medical care ratio de UnitedHealth (86,7% vs. 89,4%) proviene del 8-K del Q2 2026, ya registrado como F-198; este ID quedó sin uso.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mcr_unh",
+   "p": "es_tipo_de",
+   "o": "mlr_mercados_salud_eeuu",
+   "f": "F-479",
+   "apoyo": "El medical care ratio es la proporción de primas que se gasta en atención médica, una forma de medical loss ratio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_accion_lemonade",
+   "p": "respalda",
+   "o": "c_mercado_castiga_perdida_neta",
+   "f": "F-510",
+   "apoyo": "La acción de Lemonade cerró −24% el día del reporte del Q2 2026 pese a la mejora del loss ratio y al nombramiento de un nuevo CFO.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "loss_ratio_bruto_lemonade",
+   "p": "asocia_con",
+   "o": "precio_accion_lemonade",
+   "f": "F-510",
+   "apoyo": "Mejoró el loss ratio del Q2 2026 y, aun así, la acción cayó 24% ese día.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_accion_lemonade",
+   "p": "aplica_a",
+   "o": "lemonade_inc",
+   "f": "F-510",
+   "apoyo": "Reacción bursátil de Lemonade al reporte del Q2 2026 (prensa especializada de seguros).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "acuerdo_ftc_amazon_prime_2025",
+   "p": "reduce",
+   "o": "cancelacion_dificil_suscripcion",
+   "f": "F-511",
+   "apoyo": "Acuerdo de US$2.500M con cambios obligatorios en las interfaces de alta y baja de Prime; Care.com, US$8M.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "regla_click_to_cancel",
+   "p": "aplica_a",
+   "o": "cancelacion_dificil_suscripcion",
+   "f": "F-511",
+   "apoyo": "El 8.º Circuito anuló la regla en jul-2025 y la FTC reinició el proceso normativo el 30-ene-2026, en una ola de fiscalización a vendedores de negative option.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cancelacion_dificil_suscripcion",
+   "p": "es_tipo_de",
+   "o": "dark_patterns",
+   "f": "F-511",
+   "apoyo": "La inscripción engañosa y la cancelación difícil son dark patterns con consecuencia legal y financiera (C14, H8).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "european_accessibility_act",
+   "p": "tiene_limite",
+   "o": "sin_multas_eaa_primer_ano",
+   "f": "F-512",
+   "apoyo": "Primer año del EAA: demandas en Francia, sentencia contra Carrefour (jun-2026) y 28 investigaciones en Suecia, pero ninguna multa en la UE.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "european_accessibility_act",
+   "p": "aumenta",
+   "o": "accesibilidad_obligacion",
+   "f": "F-512",
+   "apoyo": "La obligación existe: la sentencia contra Carrefour ordena hacer accesible su web y app en seis meses bajo multa diaria.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "european_accessibility_act",
+   "p": "aplica_a",
+   "o": "accesibilidad_web",
+   "f": "F-512",
+   "apoyo": "El EAA, exigible desde el 28-jun-2025, se fiscaliza sobre webs y apps de grandes minoristas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ui_generada_ia_cruda",
+   "p": "aumenta",
+   "o": "carga_cognitiva",
+   "f": "F-513",
+   "apoyo": "Estudio intra-sujetos (N=62, 12 interfaces): las interfaces crudas generadas por IA dan más carga cognitiva percibida, más complejidad visual y más tiempo de evaluación.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ui_generada_ia_cruda",
+   "p": "es_tipo_de",
+   "o": "generative_ui",
+   "f": "F-513",
+   "apoyo": "Interfaces diseñadas por IA generativa, comparadas contra una línea base diseñada por humanos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ui_generada_ia_cruda",
+   "p": "refuta",
+   "o": "c_generative_ui_usabilidad",
+   "f": "F-513",
+   "apoyo": "Las interfaces crudas de IA tienen menor facilidad de tarea que las humanas.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "optimizacion_prompts_ui",
+   "p": "reduce",
+   "o": "carga_cognitiva",
+   "f": "F-513",
+   "apoyo": "Las optimizadas con prompts mejoran, pero siguen distinguibles de las diseñadas por humanos.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "senales_visuales_incertidumbre",
+   "p": "aumenta",
+   "o": "sobreconfianza_ia",
+   "f": "F-520",
+   "apoyo": "Experimento preregistrado 2×2×2 (N=495): los indicadores amplificaron el acuerdo conductual con salidas incorrectas.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "senales_visuales_incertidumbre",
+   "p": "refuta",
+   "o": "c_senales_incertidumbre_calibran",
+   "f": "F-520",
+   "apoyo": "Mejoraron la sensibilidad subjetiva a la precisión, pero no calibraron la conducta: más señales no calibran mejor la confianza.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "verificabilidad",
+   "p": "modera",
+   "o": "c_senales_incertidumbre_calibran",
+   "f": "F-520",
+   "apoyo": "Respalda C8: lo que calibra es la verificabilidad, no la señal visual.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-479: ID reservado sin fuente propia; los triples documentan solo el redireccionamiento a F-198. | F-512: Fuente D (blogs de proveedores de auditoría); las resoluciones no se abrieron."
+}

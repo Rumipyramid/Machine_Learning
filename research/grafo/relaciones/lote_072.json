@@ -1,0 +1,328 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-95",
+  "F-96",
+  "F-98",
+  "F-99",
+  "F-101",
+  "F-108",
+  "F-113",
+  "F-114"
+ ],
+ "entidades": [
+  {
+   "id": "diseno_mercados_salud_regulados",
+   "nombre": "Diseño de mercados de seguro de salud regulados (sostener los pools)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "tebaldi_2024",
+   "nombre": "Tebaldi 2024 (NBER w32586): ajuste de riesgo vs. subsidios en mercados de salud regulados",
+   "tipo": "estudio"
+  },
+  {
+   "id": "preprint_sin_revision",
+   "nombre": "Preprint o working paper sin revisión por pares",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "competencia_gestionada",
+   "nombre": "Competencia gestionada (managed competition, modelo de Enthoven)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "paises_bajos",
+   "nombre": "Países Bajos (sistema de seguro de salud)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "ajuste_riesgo_incompleto",
+   "nombre": "El ajuste de riesgo no neutraliza del todo los incentivos a seleccionar riesgos",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "acos",
+   "nombre": "ACOs (organizaciones responsables del cuidado con capitación o pago basado en valor)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "servicios_bajo_valor",
+   "nombre": "Uso de servicios de salud de bajo valor clínico",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_acos_reducen_costo_sin_calidad",
+   "nombre": "Las ACOs reducen costos sin reducir la calidad",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "vitality_apple_watch",
+   "nombre": "Incentivos de Vitality combinados con Apple Watch",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "medishield_life_singapur",
+   "nombre": "MediShield Life: seguro de salud catastrófico universal (Singapur)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "sesgo_ideologico_think_tank",
+   "nombre": "Think tank con perspectiva ideológica declarada, sin revisión por pares",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "duracion_consulta",
+   "nombre": "Duración de la consulta médica",
+   "tipo": "resultado"
+  },
+  {
+   "id": "beneficiarios_medicare",
+   "nombre": "Beneficiarios de Medicare (EE.UU.)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "perdidas_oak_street_2023",
+   "nombre": "Pérdidas de Oak Street Health en 2023 (>USD 200 M esperados)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ajuste_riesgo",
+   "p": "parte_de",
+   "o": "diseno_mercados_salud_regulados",
+   "f": "F-95",
+   "apoyo": "Tebaldi compara el ajuste de riesgo con los subsidios como mecanismos de diseño de mercado para sostener pools de seguro de salud regulados.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "subsidios_penalidades_afiliacion",
+   "p": "parte_de",
+   "o": "diseno_mercados_salud_regulados",
+   "f": "F-95",
+   "apoyo": "Los subsidios son la otra palanca de diseño de mercado comparada con el ajuste de riesgo.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "tebaldi_2024",
+   "p": "tiene_limite",
+   "o": "preprint_sin_revision",
+   "f": "F-95",
+   "apoyo": "NBER working paper: investigación en curso, NO revisada por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ajuste_riesgo",
+   "p": "parte_de",
+   "o": "competencia_gestionada",
+   "f": "F-96",
+   "apoyo": "La competencia gestionada de Enthoven opera con ajuste de riesgo entre aseguradoras.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "competencia_gestionada",
+   "p": "aplica_a",
+   "o": "paises_bajos",
+   "f": "F-96",
+   "apoyo": "NEJM 2007 ('Going Dutch'): la competencia gestionada holandesa es 'uno de los mejores modelos en práctica'.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ajuste_riesgo",
+   "p": "tiene_limite",
+   "o": "ajuste_riesgo_incompleto",
+   "f": "F-96",
+   "apoyo": "El ajuste de riesgo aún no logra neutralizar del todo los incentivos a seleccionar riesgos.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ajuste_riesgo",
+   "p": "reduce",
+   "o": "seleccion_adversa",
+   "f": "F-96",
+   "apoyo": "Mecanismo que funciona solo parcialmente para navegar la tensión entre selección de riesgos y solidaridad.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "acos",
+   "p": "reduce",
+   "o": "gasto_salud",
+   "f": "F-98",
+   "apoyo": "Los ACOs públicos y privados redujeron costos sin reducir calidad, vía menor gasto ambulatorio (revisión sistemática no verificada).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "acos",
+   "p": "reduce",
+   "o": "servicios_bajo_valor",
+   "f": "F-98",
+   "apoyo": "Parte de los ahorros vino de usar menos servicios de bajo valor.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_acos_reducen_costo_sin_calidad",
+   "p": "tiene_limite",
+   "o": "fuente_primaria_no_identificada",
+   "f": "F-98",
+   "apoyo": "La búsqueda no devolvió autor ni revista de la revisión sistemática citada; tratar como no confirmado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "vitality_apple_watch",
+   "p": "parte_de",
+   "o": "vitality_discovery",
+   "f": "F-99",
+   "apoyo": "Estudio de Vitality sobre su programa de incentivos combinado con Apple Watch.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "vitality_apple_watch",
+   "p": "es_tipo_de",
+   "o": "incentivos_financieros_salud",
+   "f": "F-99",
+   "apoyo": "Combina incentivos con un dispositivo de seguimiento para cambiar la actividad física.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "vitality_apple_watch",
+   "p": "aumenta",
+   "o": "conducta_salud",
+   "f": "F-99",
+   "apoyo": "Vitality reporta aumentos significativos y sostenidos de actividad física con incentivos + Apple Watch.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "vitality_apple_watch",
+   "p": "tiene_limite",
+   "o": "autorreporte_corporativo_sin_auditoria",
+   "f": "F-99",
+   "apoyo": "Autopublicado por la empresa cuyo producto se evalúa: conflicto de interés directo, sin arbitraje externo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "medisave_singapur",
+   "p": "parte_de",
+   "o": "financiamiento_salud_singapur_3m",
+   "f": "F-101",
+   "apoyo": "El AEI describe el sistema '3M' de Singapur (Medisave, Medishield, Medifund) como modelo de gestión del costo de salud.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "medishield_life_singapur",
+   "p": "parte_de",
+   "o": "financiamiento_salud_singapur_3m",
+   "f": "F-101",
+   "apoyo": "Medishield es uno de los tres pilares del sistema 3M de Singapur.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "medifund_singapur",
+   "p": "parte_de",
+   "o": "financiamiento_salud_singapur_3m",
+   "f": "F-101",
+   "apoyo": "Medifund es uno de los tres pilares del sistema 3M de Singapur.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "financiamiento_salud_singapur_3m",
+   "p": "tiene_limite",
+   "o": "sesgo_ideologico_think_tank",
+   "f": "F-101",
+   "apoyo": "La descripción proviene del AEI, think tank de libre mercado con perspectiva ideológica declarada y sin revisión por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "direct_primary_care",
+   "p": "aumenta",
+   "o": "duracion_consulta",
+   "f": "F-108",
+   "apoyo": "En el modelo DPC (cuota mensual de USD 50-150) las visitas duran 30-60 minutos, frente a 12-15 minutos en la atención primaria tradicional.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "direct_primary_care",
+   "p": "reduce",
+   "o": "visitas_urgencias",
+   "f": "F-108",
+   "apoyo": "J Gen Intern Med 2024: el DPC se asocia a menos visitas a emergencias en beneficiarios de Medicare.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "direct_primary_care",
+   "p": "reduce",
+   "o": "visitas_hospitalarias",
+   "f": "F-108",
+   "apoyo": "J Gen Intern Med 2024: el DPC se asocia a menos admisiones hospitalarias en beneficiarios de Medicare.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "direct_primary_care",
+   "p": "aplica_a",
+   "o": "beneficiarios_medicare",
+   "f": "F-108",
+   "apoyo": "La asociación con menos emergencias y admisiones se reporta en beneficiarios de Medicare de EE.UU.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adquisicion_oak_street_cvs",
+   "p": "respalda",
+   "o": "c_pe_valor_viable",
+   "f": "F-113",
+   "apoyo": "CVS compró Oak Street Health (169 centros en 21 estados) por USD 10.600 M para expandir su atención primaria basada en valor: el modelo encuentra comprador corporativo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adquisicion_oak_street_cvs",
+   "p": "aplica_a",
+   "o": "pago_basado_valor_ap",
+   "f": "F-113",
+   "apoyo": "La adquisición de USD 10.600 M busca expandir la plataforma de atención primaria basada en valor de CVS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adquisicion_oak_street_cvs",
+   "p": "tiene_limite",
+   "o": "exit_no_rentabilidad",
+   "f": "F-114",
+   "apoyo": "Filing SEC 2023: Oak Street operaba con pérdidas; la compra por USD 10.600 M valida la estrategia pero no equivale a rentabilidad actual del modelo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "perdidas_oak_street_2023",
+   "p": "modera",
+   "o": "c_pe_valor_viable",
+   "f": "F-114",
+   "apoyo": "Oak Street esperaba perder más de USD 200 M en 2023 y no ser rentable antes de 2025: la viabilidad es de venta, no de operación.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

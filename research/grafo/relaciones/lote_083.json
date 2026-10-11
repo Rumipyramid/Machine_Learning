@@ -1,0 +1,274 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-288",
+  "F-289",
+  "F-290",
+  "F-291",
+  "F-292",
+  "F-293",
+  "F-294",
+  "F-296"
+ ],
+ "entidades": [
+  {
+   "id": "anti_ai_crafting",
+   "nombre": "Anti-AI Crafting (rebautizo corporativo de Landor de la tendencia anti-slop)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "post_viral_liquid_glass",
+   "nombre": "Post viral 'Steve Jobs would have fired everyone' sobre el Control Center de iOS 26",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ajuste_liquid_glass_apple",
+   "nombre": "Ajustes de Apple a Liquid Glass tras el backlash",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "control_tinted_ios26",
+   "nombre": "Control 'Tinted' de iOS 26.1 que atenúa Liquid Glass",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_conducta_corporativa_valida_backlash",
+   "nombre": "Que una empresa cambie su producto valida un backlash más que el volumen de comentarios",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "slider_transparencia_ios27",
+   "nombre": "Slider de transparencia de Liquid Glass en iOS 27 (jun-2026)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "criticas_usuarios_figma_make",
+   "nombre": "Críticas técnicas de usuarios a Figma Make y Sites en el foro oficial",
+   "tipo": "resultado"
+  },
+  {
+   "id": "figma_make",
+   "nombre": "Figma Make (diseño a código con IA de Figma)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "techo_lovable_70",
+   "nombre": "Lovable llega como máximo al ~70% del producto: no está lista para producción",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lovable_herramienta",
+   "nombre": "Lovable (herramienta de diseño a código con IA)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "micro_gestion_fidelidad",
+   "nombre": "Exige demasiada micro-gestión para lograr fidelidad de diseño",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "reviews_superblocks_bonanza",
+   "nombre": "Reviews de Lovable y Figma Make de Superblocks y Bonanza Studios (2026)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "chatgpt_images_2",
+   "nombre": "Lanzamiento de ChatGPT Images 2.0 (21-abr-2026)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "panico_muerte_diseno",
+   "nombre": "Pico de pánico gremial de 'el diseño ha muerto'",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_ciclo_muerte_diseno_recurrente",
+   "nombre": "El ciclo 'el diseño ha muerto' es recurrente y estacional: el UX evoluciona, no muere",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "anti_ai_crafting",
+   "p": "origina_en",
+   "o": "movimiento_anti_slop",
+   "f": "F-288",
+   "apoyo": "El director creativo ejecutivo global de Landor adopta la tendencia anti-slop y la renombra 'Anti-AI Crafting': salto de capa más significativo que cualquier conteo de menciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "anti_ai_crafting",
+   "p": "respalda",
+   "o": "c_reapropiacion_anticonsumista",
+   "f": "F-288",
+   "apoyo": "El rebautizo de Landor es evidencia de captura corporativa de una rebelión comunitaria (respaldo por analogía, no evidencia sobre social o speculative design).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "liquid_glass_ios26",
+   "p": "aumenta",
+   "o": "backlash_consumidor",
+   "f": "F-289",
+   "apoyo": "La captura del Control Center de iOS 26 con 'Steve Jobs would have fired everyone' ancla el backlash contra Liquid Glass.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "post_viral_liquid_glass",
+   "p": "parte_de",
+   "o": "backlash_consumidor",
+   "f": "F-289",
+   "apoyo": "Post ancla de @Greggertruck, amplificado después por prensa tecnológica (Notebookcheck, AOL).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "post_viral_liquid_glass",
+   "p": "tiene_limite",
+   "o": "sin_validacion_empirica",
+   "f": "F-289",
+   "apoyo": "Post viral individual, sin metodología.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "backlash_consumidor",
+   "p": "aumenta",
+   "o": "ajuste_liquid_glass_apple",
+   "f": "F-290",
+   "apoyo": "TechCrunch 2026: Apple cedió ante el backlash y ajustó su controvertido diseño Liquid Glass.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ajuste_liquid_glass_apple",
+   "p": "aplica_a",
+   "o": "liquid_glass_ios26",
+   "f": "F-290",
+   "apoyo": "Los ajustes se aplican al rediseño Liquid Glass introducido en iOS 26.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "control_tinted_ios26",
+   "p": "es_tipo_de",
+   "o": "ajuste_liquid_glass_apple",
+   "f": "F-291",
+   "apoyo": "En iOS 26.1 beta 4 Apple introduce el control 'Tinted', que atenúa Liquid Glass.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "control_tinted_ios26",
+   "p": "respalda",
+   "o": "c_conducta_corporativa_valida_backlash",
+   "f": "F-291",
+   "apoyo": "El control 'Tinted' es validación conductual del backlash: evidencia de conducta corporativa, más fuerte que cualquier volumen de comentarios (regla C6).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "slider_transparencia_ios27",
+   "p": "es_tipo_de",
+   "o": "ajuste_liquid_glass_apple",
+   "f": "F-292",
+   "apoyo": "iOS 27 (jun-2026) suma un slider de transparencia para Liquid Glass.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "slider_transparencia_ios27",
+   "p": "aplica_a",
+   "o": "liquid_glass_ios26",
+   "f": "F-292",
+   "apoyo": "Con el slider, el tema Liquid Glass pasa de la fase de controversia a la de refinamiento.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "criticas_usuarios_figma_make",
+   "p": "aplica_a",
+   "o": "figma_make",
+   "f": "F-293",
+   "apoyo": "Usuarios del foro de Figma critican con especificidad técnica: 'Sites en contexto separado lo hace más torpe', 'menos atención al producto CORE', 'soluciones a medias para hobbistas'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "criticas_usuarios_figma_make",
+   "p": "tiene_limite",
+   "o": "no_verificado_primera_mano",
+   "f": "F-293",
+   "apoyo": "Foro sin metodología, no verificado de primera mano (error 403).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "techo_lovable_70",
+   "p": "aplica_a",
+   "o": "lovable_herramienta",
+   "f": "F-294",
+   "apoyo": "Lovable 'te lleva como máximo al 70%, no es production-ready'; seguridad y manejo de datos inmaduros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "figma_make",
+   "p": "tiene_limite",
+   "o": "micro_gestion_fidelidad",
+   "f": "F-294",
+   "apoyo": "Figma Make exige demasiada micro-gestión para lograr fidelidad de diseño.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reviews_superblocks_bonanza",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-294",
+   "apoyo": "Reviews de industria escritas por vendors competidores de las herramientas evaluadas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "chatgpt_images_2",
+   "p": "aumenta",
+   "o": "panico_muerte_diseno",
+   "f": "F-296",
+   "apoyo": "El lanzamiento de ChatGPT Images 2.0 el 21-abr-2026 detonó el pico de pánico gremial de abril de 2026, que volvió a declarar muerto el diseño gráfico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "panico_muerte_diseno",
+   "p": "respalda",
+   "o": "c_ciclo_muerte_diseno_recurrente",
+   "f": "F-296",
+   "apoyo": "Creative Bloq documenta el pánico de abril de 2026 y su pushback como un pico más: evidencia de la estacionalidad del ciclo 'el diseño ha muerto'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "chatgpt_images_2",
+   "p": "asocia_con",
+   "o": "homogeneizacion_creativa",
+   "f": "F-296",
+   "apoyo": "El pushback gremial a ChatGPT Images 2.0: las imágenes salen 'todas iguales', un 'boleto a la homogeneidad central'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "panico_muerte_diseno",
+   "p": "parte_de",
+   "o": "percepcion_campo_diseno",
+   "f": "F-296",
+   "apoyo": "El pánico gremial de abril de 2026 forma parte de cómo el gremio percibe el estado del campo del diseño.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

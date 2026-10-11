@@ -15964,7 +15964,7 @@
     },
     "nodes": 20,
     "outputs": 5,
-    "wikilinks": 122,
+    "wikilinks": 142,
     "derivaciones": 12,
     "fuentes_citadas_en_nodes": 766,
     "diseno": {
@@ -15983,11 +15983,11 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 2001,
+     "lines": 2005,
      "cites": 274
     },
     "fecha": "2026-10-11",
-    "commit": "51bb9c6",
+    "commit": "33c8f95",
     "fuente": "git"
    }
   ],

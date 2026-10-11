@@ -1,0 +1,266 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-522",
+  "F-526",
+  "F-527",
+  "F-528",
+  "F-529",
+  "F-532",
+  "F-535",
+  "F-536"
+ ],
+ "entidades": [
+  {
+   "id": "disenadores_profesionales",
+   "nombre": "Diseñadores profesionales",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "c_cifras_disenadores_ia_73_93_54",
+   "nombre": "73% de diseñadores ve a la IA como colaboradora de mayor impacto, 93% ya usa IA generativa y 54% dice que sus clientes quieren saltar a la IA",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "cartera_innovacion_credicorp",
+   "nombre": "Cartera de innovación de Credicorp como % de ingresos ajustados por riesgo (8,1% en el 4T25)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "innovation_rate_henkel",
+   "nombre": "Innovation rate de Henkel (participación en ventas de productos recientes; ~30% del grupo en 2017)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "agregadores_estadisticas_ux",
+   "nombre": "Agregadores de estadísticas UX/diseño ('40+ UX statistics 2026')",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_estadisticas_ux_atribuidas_falsas",
+   "nombre": "Las estadísticas UX atribuidas a Gartner, Forrester o NN/g no existen como se citan (H23)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_forrester_ux_400",
+   "nombre": "Una mejor UX puede subir la conversión hasta 400% (Forrester)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "metodo_no_visible",
+   "nombre": "Método no visible (texto completo tras muro de pago)",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "adopcion_ia_disenadores",
+   "p": "aplica_a",
+   "o": "disenadores_profesionales",
+   "f": "F-522",
+   "apoyo": "Estudio mixto de 233 diseñadores (perfiles latentes + entrevistas): la adopción es heterogénea, con perfiles como 'adoptantes motivados'.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "herramientas_ia_generativas",
+   "p": "asocia_con",
+   "o": "adopcion_ia_disenadores",
+   "f": "F-522",
+   "apoyo": "No hay un patrón único de uso de IA generativa en diseño: hace falta segmentar por perfil, no promediar.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "costo_ia_inferencia",
+   "p": "reduce",
+   "o": "margen_bruto_figma",
+   "f": "F-526",
+   "apoyo": "Guía Q3 2026: margen bruto ~86% (vs. 90% previo), atribuido a costos de IA con varios productos de IA aún sin créditos de pago.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "margen_bruto_figma",
+   "p": "respalda",
+   "o": "c_impuesto_margen_ia",
+   "f": "F-526",
+   "apoyo": "Primera señal contable a favor del 'impuesto de margen' de la IA (H32), con ingresos guiados de US$373-375M (+36%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_impuesto_margen_ia",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-526",
+   "apoyo": "Es guía, no resultado: se resuelve con el margen bruto reportado del Q3 (≈ nov-2026).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_accion_figma",
+   "p": "refuta",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-527",
+   "apoyo": "La acción cayó ~16% tras el Q2 2026 y los analistas citan costos y rentabilidad, no demanda: opex US$426,9M, I+D +101,5%, margen operativo no-GAAP de 16% a 10%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "costo_ia_inferencia",
+   "p": "asocia_con",
+   "o": "precio_accion_figma",
+   "f": "F-527",
+   "apoyo": "El costo de ingresos subió 117% por infraestructura de IA y la acción cayó ~16%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ingresos_figma_q2",
+   "p": "asocia_con",
+   "o": "precio_accion_figma",
+   "f": "F-527",
+   "apoyo": "La acción cayó pese a ingresos de US$370,08M (+48%); la guía Q3 de +36% marca desaceleración.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ndr_figma",
+   "p": "refuta",
+   "o": "c_estandar_reporting_se_degrada",
+   "f": "F-527",
+   "apoyo": "En Figma no se activa H16: el Q2 reporta NDR 136% y 15.964 clientes >US$10 mil (+34%) y 1.635 >US$100 mil (+46%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cifras_disenadores_ia_73_93_54",
+   "p": "tiene_limite",
+   "o": "eco_de_cita",
+   "f": "F-528",
+   "apoyo": "Las mismas tres cifras aparecen en piezas en español, portugués e inglés (Lyssna) sin nombrar un estudio: eco de cita translingüe.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cifras_disenadores_ia_73_93_54",
+   "p": "respalda",
+   "o": "c_cifras_importadas_sin_fuente",
+   "f": "F-528",
+   "apoyo": "Coherente con H20 (cifras importadas sin su fuente), pero no verificable sin el texto completo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cifras_disenadores_ia_73_93_54",
+   "p": "tiene_limite",
+   "o": "texto_no_verificado_bloqueo",
+   "f": "F-528",
+   "apoyo": "Vistas solo por resumen de búsqueda; el texto completo estaba bloqueado por la red.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cartera_innovacion_credicorp",
+   "p": "refuta",
+   "o": "c_metas_innovacion_no_reportadas",
+   "f": "F-529",
+   "apoyo": "Credicorp reporta cada trimestre su cartera de innovación ante la SEC: 5,4% → 7,4% (3T25) → 8,1% (4T25), con meta de 10% hacia 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cartera_innovacion_credicorp",
+   "p": "mide",
+   "o": "meta_innovacion_bcp",
+   "f": "F-529",
+   "apoyo": "La métrica trimestral (Yape, neobanco, adquirencia MIPYME, insurtech, wealthtech) permite verificar el avance de la meta de 10%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cartera_innovacion_credicorp",
+   "p": "es_tipo_de",
+   "o": "kpi_innovacion_ventas_productos_nuevos",
+   "f": "F-529",
+   "apoyo": "KPI de participación de los ingresos que proviene de innovación, reportado públicamente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "innovation_rate_henkel",
+   "p": "es_tipo_de",
+   "o": "kpi_innovacion_ventas_productos_nuevos",
+   "f": "F-532",
+   "apoyo": "Henkel reporta una innovation rate de ~30% del grupo (2017; 40% Beauty Care, 45% Laundry & Home Care).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "innovation_rate_henkel",
+   "p": "refuta",
+   "o": "c_metas_innovacion_no_reportadas",
+   "f": "F-532",
+   "apoyo": "Evidencia débil: la métrica se reporta públicamente (>45% en consumo, 30% en adhesivos), pero meta y cumplimiento no se verificaron.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "agregadores_estadisticas_ux",
+   "p": "respalda",
+   "o": "c_estadisticas_ux_atribuidas_falsas",
+   "f": "F-535",
+   "apoyo": "De 9 cifras atribuidas, 6 rastreables: 4 no existen como se citan (Gartner 68%, Gartner >80%, NN/g +200%, IDF +83% que es de NN/g). Respaldo parcial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_forrester_ux_400",
+   "p": "refuta",
+   "o": "c_estadisticas_ux_atribuidas_falsas",
+   "f": "F-535",
+   "apoyo": "No todas fallan: 2 de 6 existen como se citan (Gartner 40% agentes, Forrester 400% de conversión); por eso H23 pasa a parcial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "agregadores_estadisticas_ux",
+   "p": "tiene_limite",
+   "o": "eco_de_cita",
+   "f": "F-535",
+   "apoyo": "Listas de marketing sin método que repiten cifras de terceros; la muestra auditada no es aleatoria y 3 cifras quedaron sin rastrear.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_forrester_ux_400",
+   "p": "origina_en",
+   "o": "forrester_six_steps_ux_2016",
+   "f": "F-536",
+   "apoyo": "La cifra 'una mejor UX puede subir la conversión hasta 400%' es atribuible a este reporte de Forrester de dic-2016.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "forrester_six_steps_ux_2016",
+   "p": "tiene_limite",
+   "o": "metodo_no_visible",
+   "f": "F-536",
+   "apoyo": "Solo se vio la página del reporte y su resumen; el método no es visible.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "forrester_six_steps_ux_2016",
+   "p": "aplica_a",
+   "o": "c_narrativa_multiplicadores_diseno",
+   "f": "F-536",
+   "apoyo": "No resuelve el multiplicador '$1→$100' (H2): eso exige leer el texto completo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-529: Matiza F-460: la meta que F-460 fechaba en 2025 aparece como 2026 en los reportes."
+}

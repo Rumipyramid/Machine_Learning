@@ -1,0 +1,292 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-853",
+  "F-854",
+  "F-855",
+  "F-856",
+  "F-857",
+  "F-858",
+  "F-859",
+  "F-860"
+ ],
+ "entidades": [
+  {
+   "id": "sanacion_cuantica",
+   "nombre": "'Sanación cuántica' (término acuñado por Deepak Chopra en 1989)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "chopra_global",
+   "nombre": "Deepak Chopra y su marca de bienestar Chopra Global",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "ig_nobel_chopra_1998",
+   "nombre": "Ig Nobel de Física 1998 a Deepak Chopra (sátira)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "anuncio_sanacion_cuantica_iquique",
+   "nombre": "Anuncio de 'sanación cuántica' en un policlínico de Iquique (Servicio de Salud Tarapacá, ene-2024)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "retiro_claims_pseudocientificos",
+   "nombre": "Retiro de anuncios o afirmaciones pseudocientíficas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sin_respaldo_cientifico",
+   "nombre": "Sin respaldo científico ni regulación sanitaria",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "aclaracion_minsal_sanacion_cuantica",
+   "nombre": "Aclaración del Minsal de Chile sobre la 'sanación cuántica' (2024)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "salto_cuantico_autoayuda",
+   "nombre": "'Salto cuántico' (quantum jumping) de autoayuda",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "visualizaciones_quantumjumping_tiktok",
+   "nombre": "Visualizaciones del hashtag #quantumjumping en TikTok (105 M)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "cifra_no_verificada",
+   "nombre": "Cifra reportada por un medio, no verificada directamente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "iniciativa_arc_templeton",
+   "nombre": "Iniciativa ARC de Templeton World Charity (US$30 M para investigación sobre conciencia)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "financiamiento_filantropico_conciencia",
+   "nombre": "Financiamiento filantrópico de la investigación sobre conciencia",
+   "tipo": "concepto"
+  },
+  {
+   "id": "subvencion_twcf_orch_or_2021",
+   "nombre": "Subvención TWCF de US$230.000 para probar Orch-OR (Tuszynski, 2021)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "donacion_fetzer_arizona",
+   "nombre": "Donación del Fetzer Institute (US$1,4 M a cuatro años) al centro de estudios de la conciencia de Arizona",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "dato_no_publicado",
+   "nombre": "Dato financiero no publicado o no encontrado",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "sanacion_cuantica",
+   "p": "es_tipo_de",
+   "o": "misticismo_cuantico",
+   "f": "F-853",
+   "apoyo": "La 'sanación cuántica' aplica la física cuántica a la salud y la vida, blanco de la sátira más citada contra el misticismo cuántico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sanacion_cuantica",
+   "p": "origina_en",
+   "o": "chopra_global",
+   "f": "F-853",
+   "apoyo": "Deepak Chopra acuñó el término 'sanación cuántica' en 1989.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ig_nobel_chopra_1998",
+   "p": "aplica_a",
+   "o": "sanacion_cuantica",
+   "f": "F-853",
+   "apoyo": "Chopra recibió el Ig Nobel de Física de 1998 por su 'interpretación única de la física cuántica aplicada a la vida, la libertad y la búsqueda de la felicidad económica'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "anuncio_sanacion_cuantica_iquique",
+   "p": "es_tipo_de",
+   "o": "sanacion_cuantica",
+   "f": "F-854",
+   "apoyo": "El Servicio de Salud Tarapacá anunció 'sanación cuántica' en un policlínico de Iquique (ene-2024).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desmentido_publico",
+   "p": "aplica_a",
+   "o": "anuncio_sanacion_cuantica_iquique",
+   "f": "F-854",
+   "apoyo": "La física Carla Hermann la calificó de posible 'fraude muy peligroso'; lo cubrieron Emol, CNN Chile, Chilevisión, Radio Agricultura y CIPER.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desmentido_publico",
+   "p": "aumenta",
+   "o": "retiro_claims_pseudocientificos",
+   "f": "F-854",
+   "apoyo": "La reacción en redes y de la física Carla Hermann llevó a borrar la publicación del Servicio de Salud.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sanacion_cuantica",
+   "p": "tiene_limite",
+   "o": "sin_respaldo_cientifico",
+   "f": "F-855",
+   "apoyo": "El Minsal aclara que la 'sanación cuántica' no está regulada ni respaldada y no forma parte de las prestaciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "aclaracion_minsal_sanacion_cuantica",
+   "p": "aplica_a",
+   "o": "anuncio_sanacion_cuantica_iquique",
+   "f": "F-855",
+   "apoyo": "El Minsal explica como error la información sobre la 'sanación cuántica' en Iquique.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "aclaracion_minsal_sanacion_cuantica",
+   "p": "refuta",
+   "o": "c_desmentido_circula_menos",
+   "f": "F-855",
+   "apoyo": "Caso raro (contraejemplo parcial): el desmentido institucional circuló tanto como el anuncio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "salto_cuantico_autoayuda",
+   "p": "es_tipo_de",
+   "o": "misticismo_cuantico",
+   "f": "F-856",
+   "apoyo": "El Imparcial presenta el 'salto cuántico' como experiencia metafísica que lleva a otras realidades, tendencia de coaches y divulgadores espirituales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "salto_cuantico_autoayuda",
+   "p": "aplica_a",
+   "o": "audiencia_hispana_latam",
+   "f": "F-856",
+   "apoyo": "La prensa mexicana de estilo de vida lo presenta sin crítica: el misticismo cuántico se normaliza.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "visualizaciones_quantumjumping_tiktok",
+   "p": "aplica_a",
+   "o": "salto_cuantico_autoayuda",
+   "f": "F-857",
+   "apoyo": "Según L'ADN, #quantumjumping sumaba 105 millones de visualizaciones en TikTok, con deriva hacia productividad y estética.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "visualizaciones_quantumjumping_tiktok",
+   "p": "tiene_limite",
+   "o": "cifra_no_verificada",
+   "f": "F-857",
+   "apoyo": "La cifra la reporta L'ADN; no se verificó directamente y la fecha del artículo tampoco.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "iniciativa_arc_templeton",
+   "p": "es_tipo_de",
+   "o": "financiamiento_filantropico_conciencia",
+   "f": "F-858",
+   "apoyo": "La iniciativa ARC de la TWCF es un compromiso de US$30 millones para acelerar la investigación sobre conciencia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "colaboracion_adversarial",
+   "p": "parte_de",
+   "o": "iniciativa_arc_templeton",
+   "f": "F-858",
+   "apoyo": "Dos tercios se reservan para hasta cinco colaboraciones adversariales estructuradas (p. ej. IIT vs. GNWT, financiada en mayo de 2019).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "iniciativa_arc_templeton",
+   "p": "tiene_limite",
+   "o": "cifra_autodeclarada",
+   "f": "F-858",
+   "apoyo": "Compromiso autodeclarado por el financiador; no se vio el monto por proyecto ni un estado auditado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "subvencion_twcf_orch_or_2021",
+   "p": "es_tipo_de",
+   "o": "financiamiento_filantropico_conciencia",
+   "f": "F-859",
+   "apoyo": "Subvención de US$230.000 (ene-dic 2021): única cifra pública hallada de dinero filantrópico dirigido explícitamente a la conciencia cuántica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "subvencion_twcf_orch_or_2021",
+   "p": "aplica_a",
+   "o": "orch_or",
+   "f": "F-859",
+   "apoyo": "El proyecto busca probar experimentalmente Orch-OR (Penrose-Hameroff), con protocolo prerregistrado en OSF.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "subvencion_twcf_orch_or_2021",
+   "p": "aplica_a",
+   "o": "vibraciones_microtubulos",
+   "f": "F-859",
+   "apoyo": "Estudia los efectos de moléculas anestésicas sobre vibraciones cuánticas en microtúbulos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "donacion_fetzer_arizona",
+   "p": "es_tipo_de",
+   "o": "financiamiento_filantropico_conciencia",
+   "f": "F-860",
+   "apoyo": "El Fetzer Institute donó US$1,4 millones a cuatro años al programa de estudios de la conciencia de la U. de Arizona.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "donacion_fetzer_arizona",
+   "p": "aplica_a",
+   "o": "center_consciousness_studies_arizona",
+   "f": "F-860",
+   "apoyo": "El Center for Consciousness Studies nació con esa donación; su conferencia 'The Science of Consciousness' corre desde 1994.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "center_consciousness_studies_arizona",
+   "p": "tiene_limite",
+   "o": "dato_no_publicado",
+   "f": "F-860",
+   "apoyo": "No se encontró presupuesto actual del centro ni de su conferencia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

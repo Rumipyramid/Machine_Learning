@@ -1,0 +1,369 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-1",
+  "F-5",
+  "F-12",
+  "F-13",
+  "F-14",
+  "F-15",
+  "F-25",
+  "F-30"
+ ],
+ "entidades": [
+  {
+   "id": "tenencia_seguro_peru",
+   "nombre": "Tenencia de seguro en Perú (~4 de cada 10 tiene o tuvo uno en 2 años)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "sbs_peru",
+   "nombre": "SBS (Superintendencia de Banca, Seguros y AFP del Perú)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "conocimiento_soat",
+   "nombre": "Conocimiento del SOAT entre peruanos (94%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "confusion_seguro_salud_publica",
+   "nombre": "Confusión de 'seguro' con la salud pública (SIS/EsSalud)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "seguro_desastres_hogares_peru",
+   "nombre": "Hogares peruanos con seguro ante sismos y desastres (~3,3%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "apeseg",
+   "nombre": "APESEG (Asociación Peruana de Empresas de Seguros)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "c_subaseguramiento_catastrofes",
+   "nombre": "La gente no asegura riesgos de baja probabilidad y alta consecuencia (catástrofes): rompecabezas del subaseguramiento",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "guia_sbs_para_vivir_seguros",
+   "nombre": "Guía 'Para vivir seguros' de educación financiera de la SBS",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "educacion_financiera_seguros",
+   "nombre": "Educación financiera sobre seguros",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "glosario_seguro_salud_peru",
+   "nombre": "Glosario de seguro de salud en Perú en lenguaje claro (proyecto)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "lenguaje_claro",
+   "nombre": "Lenguaje claro (plain language): sin jerga, voz activa, lectura ≤ grado 8, definir en contexto",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "norma_practica_sin_evidencia_experimental",
+   "nombre": "Estándar de práctica autoritativo como norma, sin evidencia experimental de efecto",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "cobertura_riesgos_nombrados",
+   "nombre": "Cobertura de riesgos nombrados (named perils) frente a todo riesgo",
+   "tipo": "concepto"
+  },
+  {
+   "id": "creencia_cobertura_total",
+   "nombre": "Creencia errónea de que la póliza lo cubre todo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_9pct_entiende_terminos_seguro",
+   "nombre": "Solo ~9% de las personas entiende los términos básicos de seguro",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "unitedhealth",
+   "nombre": "UnitedHealth Group",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "sin_metodologia_publicada",
+   "nombre": "Contenido sin metodología propia publicada (PR, blogs o agencias)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "fuente_primaria_no_identificada",
+   "nombre": "Fuente primaria (autor, revista o documento) no identificada ni verificable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "valor_compartido_seguros",
+   "nombre": "Seguro de valor compartido (shared-value insurance)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "mortalidad_asegurados",
+   "nombre": "Mortalidad de los asegurados",
+   "tipo": "resultado"
+  },
+  {
+   "id": "autorreporte_corporativo_sin_auditoria",
+   "nombre": "Cifras autorreportadas por la empresa evaluada, sin auditoría externa (conflicto de interés)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "hippo_insurance",
+   "nombre": "Hippo (insurtech de seguro de hogar, EE.UU.)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "insurtech",
+   "nombre": "Insurtech (aseguradora nativa digital)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "resultado_hippo_q1_2026",
+   "nombre": "Resultado de Hippo Q1 2026 (utilidad ~US$7,1M; ratio combinado 99,5%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_insurtechs_pueden_escalar",
+   "nombre": "Las insurtechs pueden escalar y volverse rentables",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "tenencia_seguro_peru",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-1",
+   "apoyo": "Encuesta SBS 2023 sobre demanda de seguros: alrededor de 4 de cada 10 peruanos tiene o tuvo un seguro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tenencia_seguro_peru",
+   "p": "origina_en",
+   "o": "sbs_peru",
+   "f": "F-1",
+   "apoyo": "La cifra de tenencia (~4/10) proviene del Estudio de Conocimiento y Percepción de la Demanda de Seguros de la SBS (2023), encuesta con metodología publicada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "conocimiento_soat",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-1",
+   "apoyo": "El SOAT es conocido por el 94% de los encuestados por la SBS (2023).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "confusion_seguro_salud_publica",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-1",
+   "apoyo": "La encuesta SBS 2023 encuentra que la gente confunde 'seguros' con la salud pública (SIS/EsSalud).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_desastres_hogares_peru",
+   "p": "origina_en",
+   "o": "apeseg",
+   "f": "F-5",
+   "apoyo": "Infobae (2025) reporta la cifra primaria de APESEG: solo ~3,3% de los hogares peruanos tiene seguro contra sismos y desastres.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_desastres_hogares_peru",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-5",
+   "apoyo": "~3,3% de hogares asegurados ante desastres en un país altamente sísmico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_desastres_hogares_peru",
+   "p": "respalda",
+   "o": "c_subaseguramiento_catastrofes",
+   "f": "F-5",
+   "apoyo": "Dato de subaseguramiento sísmico: apenas ~3,3% de hogares asegurados ante desastres pese a la alta exposición sísmica del Perú.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "guia_sbs_para_vivir_seguros",
+   "p": "es_tipo_de",
+   "o": "educacion_financiera_seguros",
+   "f": "F-12",
+   "apoyo": "Guía oficial de la SBS con material de educación financiera sobre seguros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "guia_sbs_para_vivir_seguros",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-12",
+   "apoyo": "Material de educación financiera sobre seguros dirigido al público general en Perú.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "guia_sbs_para_vivir_seguros",
+   "p": "aplica_a",
+   "o": "glosario_seguro_salud_peru",
+   "f": "F-12",
+   "apoyo": "Usada como referencia de lenguaje y conceptos para el glosario de seguro de salud del proyecto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lenguaje_claro",
+   "p": "aplica_a",
+   "o": "glosario_seguro_salud_peru",
+   "f": "F-13",
+   "apoyo": "Las reglas de lenguaje claro de Digital.gov, ONS y el Style Manual australiano (evitar jerga, voz activa, nivel ≤ grado 8, definir en contexto) rigen la redacción del glosario.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "lenguaje_claro",
+   "p": "tiene_limite",
+   "o": "norma_practica_sin_evidencia_experimental",
+   "f": "F-13",
+   "apoyo": "Son estándares de práctica gubernamental: autoritativos como norma, pero no evidencia experimental de que mejoren la comprensión.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cobertura_riesgos_nombrados",
+   "p": "asocia_con",
+   "o": "creencia_cobertura_total",
+   "f": "F-14",
+   "apoyo": "'Riesgos nombrados' es contraintuitivo: la gente cree que la póliza cubre todo, cuando solo cubre los riesgos listados.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "creencia_cobertura_total",
+   "p": "es_tipo_de",
+   "o": "ilusion_comprension",
+   "f": "F-14",
+   "apoyo": "Creer que 'riesgos nombrados' cubre todo es un ejemplo de término de seguro que la gente cree entender y no entiende.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cobertura_riesgos_nombrados",
+   "p": "aplica_a",
+   "o": "glosario_seguro_salud_peru",
+   "f": "F-14",
+   "apoyo": "Usado como ejemplo de término contraintuitivo al definir el glosario (/seeker 2026-06-25).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_9pct_entiende_terminos_seguro",
+   "p": "origina_en",
+   "o": "unitedhealth",
+   "f": "F-15",
+   "apoyo": "La cifra de ~9% que entiende términos básicos se atribuye a una encuesta de UnitedHealth vista en resultados de búsqueda.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_9pct_entiende_terminos_seguro",
+   "p": "tiene_limite",
+   "o": "sin_metodologia_publicada",
+   "f": "F-15",
+   "apoyo": "PR de industria sin metodología publicada; registrada para advertir que NO debe citarse como dato.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_9pct_entiende_terminos_seguro",
+   "p": "tiene_limite",
+   "o": "fuente_primaria_no_identificada",
+   "f": "F-15",
+   "apoyo": "No hay fuente primaria verificable de la cifra del 9%; marcada como descartada en /seeker 2026-06-25.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "vitality_discovery",
+   "p": "es_tipo_de",
+   "o": "valor_compartido_seguros",
+   "f": "F-25",
+   "apoyo": "Vitality (Discovery) es el modelo pionero de seguro de valor compartido: 40+ mercados y 40 M de miembros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "vitality_discovery",
+   "p": "asocia_con",
+   "o": "mortalidad_asegurados",
+   "f": "F-25",
+   "apoyo": "Vitality reporta que sus miembros más activos (engaged) tienen 76% menor mortalidad; benchmark direccional, no cifra dura.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "vitality_drive",
+   "p": "reduce",
+   "o": "conductas_riesgo_manejo",
+   "f": "F-25",
+   "apoyo": "Según Vitality, los conductores del programa Vitalitydrive mejoran 15% su conducción.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "vitality_discovery",
+   "p": "tiene_limite",
+   "o": "autorreporte_corporativo_sin_auditoria",
+   "f": "F-25",
+   "apoyo": "Los resultados (mortalidad −76%, conducción +15%) son autorreportados por la empresa sin auditoría externa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "hippo_insurance",
+   "p": "es_tipo_de",
+   "o": "insurtech",
+   "f": "F-30",
+   "apoyo": "Hippo es una insurtech cuyos resultados trimestrales reporta Insurance Journal.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "resultado_hippo_q1_2026",
+   "p": "aplica_a",
+   "o": "hippo_insurance",
+   "f": "F-30",
+   "apoyo": "Hippo pasó de una pérdida neta de US$47,7M (Q1 2025) a una utilidad de ~US$7,1M (Q1 2026); ratio combinado 99,5% vs. 159,2% un año antes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "resultado_hippo_q1_2026",
+   "p": "respalda",
+   "o": "c_insurtechs_pueden_escalar",
+   "f": "F-30",
+   "apoyo": "La reversión de pérdida a utilidad y la caída del ratio combinado de 159,2% a 99,5% es un caso a favor de que una insurtech alcance rentabilidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

@@ -1,0 +1,355 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-209",
+  "F-210",
+  "F-211",
+  "F-212",
+  "F-213",
+  "F-214",
+  "F-215",
+  "F-216"
+ ],
+ "entidades": [
+  {
+   "id": "proyeccion_sp500_morgan_stanley",
+   "nombre": "Proyección de Morgan Stanley: S&P 500 +12% en 12 meses",
+   "tipo": "resultado"
+  },
+  {
+   "id": "morgan_stanley",
+   "nombre": "Morgan Stanley (banco de inversión)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "cita_segunda_mano",
+   "nombre": "Cifra o caso citado de segunda mano, sin acceso al reporte primario",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "menciones_redes_acciones",
+   "nombre": "Menciones y sentimiento de tickers en Reddit/WallStreetBets",
+   "tipo": "metrica"
+  },
+  {
+   "id": "atencion_social_acciones",
+   "nombre": "Atención social (ruido en redes) sobre una acción",
+   "tipo": "constructo"
+  },
+  {
+   "id": "tickers_mencionados_fundamentales_debiles",
+   "nombre": "Varios de los tickers más mencionados tienen fundamentales débiles",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_trending_senal_compra",
+   "nombre": "Lo más mencionado en redes es señal de compra",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "ranking_retorno_observado",
+   "nombre": "Ranking de acciones por retorno observado en el mes",
+   "tipo": "metrica"
+  },
+  {
+   "id": "retornos_acciones_julio_2026",
+   "nombre": "Retornos observados de acciones en julio de 2026 (MPC +21%, PYPL +26,7%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "acciones_large_cap_eeuu",
+   "nombre": "Acciones de gran capitalización (large-caps) de EE.UU.",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "lanzamiento_kimi_k3",
+   "nombre": "Lanzamiento de Kimi K3 (Moonshot AI, China, jul-2026)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "capitalizacion_semiconductores",
+   "nombre": "Capitalización bursátil global de semiconductores",
+   "tipo": "resultado"
+  },
+  {
+   "id": "multiplos_valoracion_ia",
+   "nombre": "Múltiplos de valoración (S&P 500 23x forward; NVIDIA y Broadcom >30x price-to-sales)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "c_burbuja_acciones_ia",
+   "nombre": "Las acciones de IA están sobrevaluadas, con riesgo de burbuja",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_valoracion_ia_justificada",
+   "nombre": "El alza de las acciones de IA está fundamentalmente justificada por el crecimiento",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "retornos_bvl_1s_2026",
+   "nombre": "Retornos realizados en la BVL en el 1S 2026 (índice +28%; Atacocha +99%, Nexa Perú +67%, InRetail +46%, Credicorp +43%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "bvl_acciones",
+   "nombre": "Acciones de la Bolsa de Valores de Lima (BVL)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "c_tesis_mineras_financieras_bvl",
+   "nombre": "Las acciones mineras, financieras y de consumo peruanas tienen la mejor perspectiva en 2026",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_picks_sab_bvl",
+   "nombre": "Alicorp, Ferreycorp, InRetail y Minsur son los top picks 2026 de las casas de bolsa peruanas",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "casas_bolsa_peru",
+   "nombre": "Casas de bolsa (SAB) peruanas: Credicorp Capital, Kallpa, Coril, Renta4",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "utilidades_bvl_q2_2026",
+   "nombre": "Utilidades trimestrales récord del índice selectivo BVL (Q2 2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "precio_cobre",
+   "nombre": "Precio del cobre (proyección UBS: US$10.750/t a junio de 2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ubs",
+   "nombre": "UBS (banco de inversión global)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "produccion_cobre_peru",
+   "nombre": "Producción de cobre del Perú (estancada por cuarto año, sin nuevas operaciones)",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "proyeccion_sp500_morgan_stanley",
+   "p": "origina_en",
+   "o": "morgan_stanley",
+   "f": "F-209",
+   "apoyo": "Motley Fool cita una proyección de Morgan Stanley de +12% para el S&P 500 en los próximos 12 meses.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "proyeccion_sp500_morgan_stanley",
+   "p": "tiene_limite",
+   "o": "cita_segunda_mano",
+   "f": "F-209",
+   "apoyo": "La cifra de Morgan Stanley es de segunda mano: la cita Motley Fool, no el reporte primario del banco.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "proyeccion_sp500_morgan_stanley",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-209",
+   "apoyo": "El +12% del S&P 500 es una proyección a 12 meses, no un retorno observado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "picks_editoriales_acciones",
+   "p": "tiene_limite",
+   "o": "sin_dato_auditado",
+   "f": "F-209",
+   "apoyo": "Picks de julio 2026 de Motley Fool (Eagle Materials, Occidental, WM; opciones sobre PayPal e Intuitive Surgical): misma naturaleza editorial que Forbes/Zacks.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "menciones_redes_acciones",
+   "p": "mide",
+   "o": "atencion_social_acciones",
+   "f": "F-210",
+   "apoyo": "AltIndex rastrea menciones en Reddit: Google, NVIDIA y AMD lideran con sentimiento alcista; SpaceX salta +70% de menciones en 24 h.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tickers_mencionados_fundamentales_debiles",
+   "p": "refuta",
+   "o": "c_trending_senal_compra",
+   "f": "F-210",
+   "apoyo": "La propia fuente aclara que 'trending no es lo mismo que señal de compra': algunos de los más mencionados tienen fundamentales débiles pese al ruido.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ranking_retorno_observado",
+   "p": "mide",
+   "o": "retornos_acciones_julio_2026",
+   "f": "F-211",
+   "apoyo": "StockTitan ordena acciones por retorno real del mes: dato de desempeño observado, no recomendación ni predicción; más verificable que los picks editoriales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "retornos_acciones_julio_2026",
+   "p": "aplica_a",
+   "o": "acciones_large_cap_eeuu",
+   "f": "F-211",
+   "apoyo": "Marathon Petroleum lidera el momentum de julio 2026 en large-caps (+21%); PayPal +26,73% en el mes; sectores líderes: Salud y Materiales Básicos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lanzamiento_kimi_k3",
+   "p": "reduce",
+   "o": "capitalizacion_semiconductores",
+   "f": "F-212",
+   "apoyo": "Julio 2026: caída de US$3,3 billones en capitalización global de semiconductores tras el lanzamiento de Kimi K3, reavivando temores tipo 'DeepSeek 2.0'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "multiplos_valoracion_ia",
+   "p": "respalda",
+   "o": "c_burbuja_acciones_ia",
+   "f": "F-212",
+   "apoyo": "S&P 500 a 23x forward earnings; NVIDIA y Broadcom sobre 30x price-to-sales: múltiplos que históricamente precedieron correcciones (Ruchir Sharma advierte burbuja si suben tasas).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_valoracion_ia_justificada",
+   "p": "contradice",
+   "o": "c_burbuja_acciones_ia",
+   "f": "F-212",
+   "apoyo": "Goldman Sachs y J.P. Morgan sostienen que el crecimiento está fundamentalmente justificado; otros analistas ven burbuja: divergencia abierta entre bancos grandes.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_burbuja_acciones_ia",
+   "p": "contradice",
+   "o": "c_infra_ia_oportunidad_inversion",
+   "f": "F-212",
+   "apoyo": "Contraevidencia directa al entusiasmo por picks de IA: señal de sobrevaluación en semiconductores y múltiplos altos (tensión parcial: no niega la demanda, sí el precio).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "retornos_bvl_1s_2026",
+   "p": "aplica_a",
+   "o": "bvl_acciones",
+   "f": "F-213",
+   "apoyo": "Retornos reales del 1S 2026 en la BVL: Nexa Atacocha +99%, Nexa Perú +67%, InRetail +46%, Credicorp +43%; la BVL acumula +28% en el año.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "retornos_bvl_1s_2026",
+   "p": "respalda",
+   "o": "c_tesis_mineras_financieras_bvl",
+   "f": "F-213",
+   "apoyo": "Los mayores retornos realizados del semestre son de mineras (Nexa +99% y +67%), consumo (InRetail +46%) y finanzas (Credicorp +43%): resultado observado, no proyección.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_picks_sab_bvl",
+   "p": "origina_en",
+   "o": "casas_bolsa_peru",
+   "f": "F-214",
+   "apoyo": "Convergencia entre varias SAB independientes en Alicorp, Ferreycorp, InRetail y Minsur como top picks 2026: la señal de negocio más fuerte de la ronda.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_picks_sab_bvl",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-214",
+   "apoyo": "Los retornos citados son proyecciones de cada SAB (Kallpa: InRetail +60%, Alicorp +30%; Coril: Alicorp +31%; Renta4: ~36% + ~6% dividendos), no resultado observado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_picks_sab_bvl",
+   "p": "tiene_limite",
+   "o": "cita_segunda_mano",
+   "f": "F-214",
+   "apoyo": "Borsista.com compila las recomendaciones primarias de las casas de bolsa; no es fuente primaria en sí misma.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_picks_sab_bvl",
+   "p": "aplica_a",
+   "o": "bvl_acciones",
+   "f": "F-214",
+   "apoyo": "Los picks convergentes de las SAB son acciones listadas en la Bolsa de Valores de Lima para 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidades_bvl_q2_2026",
+   "p": "aplica_a",
+   "o": "bvl_acciones",
+   "f": "F-215",
+   "apoyo": "Gestión: las ganancias de empresas de la BVL rompen marca histórica; cinco embolsan S/ 11.000 M en tres meses (Southern Copper S/ 5.549 M, Credicorp S/ 2.048 M).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "utilidades_bvl_q2_2026",
+   "p": "respalda",
+   "o": "c_tesis_mineras_financieras_bvl",
+   "f": "F-215",
+   "apoyo": "Utilidad realizada Q2 2026: Southern Copper S/ 5.549 M, Credicorp S/ 2.048 M, Cerro Verde S/ 1.593 M, Buenaventura S/ 969 M, Minsur S/ 929 M: ancla de los picks mineros y financieros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_cobre",
+   "p": "origina_en",
+   "o": "ubs",
+   "f": "F-216",
+   "apoyo": "Proyección de UBS, vía Bloomberg: el cobre alcanzaría US$10.750 por tonelada métrica a junio de 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_cobre",
+   "p": "tiene_limite",
+   "o": "cita_segunda_mano",
+   "f": "F-216",
+   "apoyo": "La proyección de UBS llega citada por prensa minera (Rumbo Minero), no desde el reporte primario del banco.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_cobre",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-216",
+   "apoyo": "US$10.750/t es un precio proyectado por un banco de inversión, no un precio observado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "produccion_cobre_peru",
+   "p": "refuta",
+   "o": "c_tesis_mineras_financieras_bvl",
+   "f": "F-216",
+   "apoyo": "Producción de cobre estancada por cuarto año, sin nuevas operaciones, más bloqueos sociales y escasez de talento: la historia minera sería de precio, no de volumen (refutación parcial).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

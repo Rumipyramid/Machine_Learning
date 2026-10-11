@@ -1,0 +1,355 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-79",
+  "F-81",
+  "F-82",
+  "F-84",
+  "F-85",
+  "F-86",
+  "F-87",
+  "F-88"
+ ],
+ "entidades": [
+  {
+   "id": "primas_globales_por_ramo",
+   "nombre": "Primas globales por ramo (vida €2.861 bn, P&C €2.320 bn, salud €1.688 bn)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "envejecimiento_poblacional",
+   "nombre": "Envejecimiento poblacional",
+   "tipo": "concepto"
+  },
+  {
+   "id": "mercado_vida_asia",
+   "nombre": "Mercado de seguros de vida de Asia (el más grande del mundo)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "bajo_alcance_pensiones_publicas",
+   "nombre": "Bajo alcance de las pensiones públicas",
+   "tipo": "concepto"
+  },
+  {
+   "id": "cifras_nps_inconsistentes",
+   "nombre": "Cifras de NPS del sector inconsistentes entre fuentes y con metodología no transparente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "brecha_nps_aseguradoras",
+   "nombre": "Brecha de NPS entre aseguradoras individuales (Allianz 79 vs. Liberty Mutual 10)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_ejecucion_marca_pesa_mas_que_ramo",
+   "nombre": "En el NPS de aseguradoras pesa más la ejecución de la marca que el ramo",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "rothschild_stiglitz_1976",
+   "nombre": "Rothschild y Stiglitz 1976 (QJE): equilibrio en mercados de seguros competitivos con información imperfecta",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_equilibrio_puede_no_existir",
+   "nombre": "Con selección adversa, el equilibrio competitivo de un mercado de seguros puede no existir",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "equilibrio_separador",
+   "nombre": "Equilibrio separador: alto riesgo con cobertura completa, bajo riesgo con cobertura parcial como señal",
+   "tipo": "concepto"
+  },
+  {
+   "id": "kunreuther_seguros_conducta_2013",
+   "nombre": "Kunreuther, Pauly y McMorrow: Insurance and Behavioral Economics (Cambridge UP, 2013)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_sobreasegura_riesgos_menores",
+   "nombre": "La gente sobreasegura eventos de alta probabilidad y baja consecuencia",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "libro_sin_arbitraje_ciego",
+   "nombre": "Libro de editorial académica con revisión editorial, sin arbitraje ciego de revista",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "seguro_rc_vehicular_obligatorio",
+   "nombre": "Seguro obligatorio de responsabilidad civil vehicular frente a terceros (TPL)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "solo_cubre_terceros",
+   "nombre": "Cubre solo a terceros, nunca el vehículo del propio asegurado",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "esperanza_vida_global",
+   "nombre": "Esperanza de vida global (46 años en 1950 → más de 70 en 2023)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_gente_vive_mas",
+   "nombre": "La gente vive más (sube la esperanza de vida global)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "agregador_no_verificado",
+   "nombre": "Agregador que cita a WHO/ONU sin enlace a la base primaria; no verificado contra la fuente oficial",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "enfermedades_cronicas_multimorbilidad",
+   "nombre": "Prevalencia de enfermedades crónicas, síndromes geriátricos y multimorbilidad",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_vivir_mas_cuesta_mas",
+   "nombre": "Vivir más implica siniestrarse más y elevar el costo de salud",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "bmc_ageing_2025",
+   "nombre": "BMC Public Health 2025: Ageing populations, new challenges in longevity",
+   "tipo": "estudio"
+  },
+  {
+   "id": "nueva_tecnologia_medica",
+   "nombre": "Nueva tecnología médica",
+   "tipo": "concepto"
+  },
+  {
+   "id": "deterioro_sistemas_publicos_salud",
+   "nombre": "Deterioro de los sistemas públicos de salud",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_tecnologia_principal_driver_costo",
+   "nombre": "El principal impulsor del costo médico es la nueva tecnología, no el envejecimiento",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "primas_globales_por_ramo",
+   "p": "respalda",
+   "o": "c_salud_ramo_mas_rapido",
+   "f": "F-79",
+   "apoyo": "Allianz: vida €2.861 bn (el más grande), P&C €2.320 bn, salud €1.688 bn, este último con el crecimiento más rápido (6,7% anual proyectado).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "envejecimiento_poblacional",
+   "p": "aumenta",
+   "o": "mercado_vida_asia",
+   "f": "F-79",
+   "apoyo": "Asia es el mercado de vida más grande del mundo por el envejecimiento poblacional.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "bajo_alcance_pensiones_publicas",
+   "p": "aumenta",
+   "o": "mercado_vida_asia",
+   "f": "F-79",
+   "apoyo": "El bajo alcance de las pensiones públicas, junto con el envejecimiento, explica el tamaño del mercado de vida asiático.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "nps_cliente_seguros",
+   "p": "tiene_limite",
+   "o": "cifras_nps_inconsistentes",
+   "f": "F-81",
+   "apoyo": "El NPS promedio del sector se reporta como 35 en una fuente y 23 en otra; tensión no resuelta y metodología no transparente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "brecha_nps_aseguradoras",
+   "p": "respalda",
+   "o": "c_ejecucion_marca_pesa_mas_que_ramo",
+   "f": "F-81",
+   "apoyo": "La brecha enorme entre aseguradoras (Allianz 79 vs. Liberty Mutual 10) sugiere que la ejecución de marca pesa más que el ramo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nps_cliente_seguros",
+   "p": "mide",
+   "o": "experiencia_cliente_seguros",
+   "f": "F-81",
+   "apoyo": "El NPS se usa como medida de valoración y satisfacción del consumidor de seguros; salud suele puntuar más alto que P&C.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "rothschild_stiglitz_1976",
+   "p": "respalda",
+   "o": "c_equilibrio_puede_no_existir",
+   "f": "F-82",
+   "apoyo": "Paper fundacional (QJE, revisado por pares): bajo selección adversa el equilibrio competitivo puede no existir.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "equilibrio_separador",
+   "p": "aplica_a",
+   "o": "seleccion_adversa",
+   "f": "F-82",
+   "apoyo": "Cuando el equilibrio existe, los de alto riesgo obtienen cobertura completa y los de bajo riesgo cobertura incompleta como señal costosa para distinguirse.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "equilibrio_separador",
+   "p": "origina_en",
+   "o": "rothschild_stiglitz_1976",
+   "f": "F-82",
+   "apoyo": "El equilibrio con cobertura parcial como señal proviene del modelo de Rothschild y Stiglitz (1976).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "kunreuther_seguros_conducta_2013",
+   "p": "respalda",
+   "o": "c_subaseguramiento_catastrofes",
+   "f": "F-84",
+   "apoyo": "Rompecabezas del subaseguramiento: la gente no asegura catástrofes ni subsidiadas; ~60% de las catástrofes naturales de 1960-2011 quedaron sin asegurar.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "kunreuther_seguros_conducta_2013",
+   "p": "respalda",
+   "o": "c_sobreasegura_riesgos_menores",
+   "f": "F-84",
+   "apoyo": "En contraste con las catástrofes, la gente sí sobreasegura eventos de alta probabilidad y baja consecuencia.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_subaseguramiento_catastrofes",
+   "p": "contradice",
+   "o": "c_sobreasegura_riesgos_menores",
+   "f": "F-84",
+   "apoyo": "Tensión parcial: el seguro de catástrofes, el más racional de tener, es el 'anti-ejemplo' del seguro más comprado, mientras los riesgos menores se sobreaseguran.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "kunreuther_seguros_conducta_2013",
+   "p": "tiene_limite",
+   "o": "libro_sin_arbitraje_ciego",
+   "f": "F-84",
+   "apoyo": "Rigor variable: libro con revisión editorial, no arbitraje ciego; algunos artículos relacionados sí son revisados por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "seguro_rc_vehicular_obligatorio",
+   "p": "aumenta",
+   "o": "demanda_seguros",
+   "f": "F-85",
+   "apoyo": "Es obligatorio en la gran mayoría de países (UE, Reino Unido desde 1930, Australia, India, Medio Oriente): probablemente el seguro más comprado en número de pólizas, no en primas.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "seguro_rc_vehicular_obligatorio",
+   "p": "tiene_limite",
+   "o": "solo_cubre_terceros",
+   "f": "F-85",
+   "apoyo": "El seguro de responsabilidad civil vehicular cubre SOLO a terceros, nunca el vehículo propio del asegurado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "esperanza_vida_global",
+   "p": "respalda",
+   "o": "c_gente_vive_mas",
+   "f": "F-86",
+   "apoyo": "La esperanza de vida global subió de 46 años (1950) a más de 70 (2023), y de 64,6 (1990) a 73,3 (2022).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "esperanza_vida_global",
+   "p": "asocia_con",
+   "o": "envejecimiento_poblacional",
+   "f": "F-86",
+   "apoyo": "La población de 65+ pasará de 524M (2010) a ~1.500M (2050); los de 60+ serán más del 20% de la población mundial hacia 2050.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "esperanza_vida_global",
+   "p": "tiene_limite",
+   "o": "agregador_no_verificado",
+   "f": "F-86",
+   "apoyo": "Sitios agregadores (Worldmetrics, Sogevity) que citan WHO/ONU sin enlace directo; no verificado contra la fuente oficial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "envejecimiento_poblacional",
+   "p": "asocia_con",
+   "o": "enfermedades_cronicas_multimorbilidad",
+   "f": "F-87",
+   "apoyo": "El envejecimiento poblacional se asocia a mayor prevalencia de enfermedades crónicas, síndromes geriátricos y multimorbilidad.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "enfermedades_cronicas_multimorbilidad",
+   "p": "media",
+   "o": "c_vivir_mas_cuesta_mas",
+   "f": "F-87",
+   "apoyo": "La carga crónica y la multimorbilidad son el mecanismo directo entre 'vivir más' y 'siniestrarse más'.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "bmc_ageing_2025",
+   "p": "respalda",
+   "o": "c_vivir_mas_cuesta_mas",
+   "f": "F-87",
+   "apoyo": "Artículo revisado por pares (BMC Public Health 2025) que documenta el vínculo envejecimiento-enfermedad crónica.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "nueva_tecnologia_medica",
+   "p": "aumenta",
+   "o": "gasto_salud",
+   "f": "F-88",
+   "apoyo": "El costo médico global sube 9,5% (2024), 10% (2025) y 10,3% (2026 proy.); el 74% de las aseguradoras señala la nueva tecnología médica como impulsor #1.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "deterioro_sistemas_publicos_salud",
+   "p": "aumenta",
+   "o": "gasto_salud",
+   "f": "F-88",
+   "apoyo": "Segundo impulsor del costo médico según el 52% de las aseguradoras; le siguen los avances farmacéuticos (49%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_tecnologia_principal_driver_costo",
+   "p": "contradice",
+   "o": "c_vivir_mas_cuesta_mas",
+   "f": "F-88",
+   "apoyo": "Tensión parcial: la encuesta WTW pone a la tecnología, no al envejecimiento, como motor principal; matiza la causalidad simple 'vive más → cuesta más'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

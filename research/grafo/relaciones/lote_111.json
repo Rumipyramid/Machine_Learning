@@ -1,0 +1,296 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-869",
+  "F-870",
+  "F-871",
+  "F-872",
+  "F-873",
+  "F-874",
+  "F-875"
+ ],
+ "entidades": [
+  {
+   "id": "adquisicion_chopra_global_2023",
+   "nombre": "Compra de los activos de Chopra Global por The Healing Company (mar-2023)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_precio_chopra_5m",
+   "nombre": "La compra de Chopra Global fue por hasta US$5 M en efectivo + acciones y hasta US$3 M de earnout (filing SEC)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "healing_company",
+   "nombre": "The Healing Company (Healing Co Inc., HLCO)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "duda_empresa_en_marcha",
+   "nombre": "Duda sustancial sobre la continuidad como empresa en marcha",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_valor_anticipado_20m",
+   "nombre": "La compra de Chopra Global tiene un 'valor anticipado' de US$20 M a cinco años",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sancion_ftc_quantum_wellness_2020",
+   "nombre": "Acuerdo FTC con Quantum Wellness Botanical Institute (US$660.000, 2020)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "sancion_regulatoria_claims_cuanticos",
+   "nombre": "Sanciones regulatorias a productos de salud con etiqueta 'cuántica'",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_pildora_rejuvenation_cura",
+   "nombre": "La píldora ReJuvenation cura casi todas las dolencias de la edad",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "warning_fda_scio_quest9",
+   "nombre": "Carta de advertencia de la FDA a Mandelay Kft por SCIO y Quest 9 (2020)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "dispositivo_cuantico_salud",
+   "nombre": "Dispositivos de salud con etiqueta 'cuántica' (SCIO, Quest 9, Quantum Laser, analizadores de resonancia)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "lectura_parcial_documento",
+   "nombre": "Solo se vio una parte del documento fuente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "fallo_asa_quantum_laser",
+   "nombre": "Fallo de la ASA (Reino Unido) contra la publicidad de 'Quantum Laser Light' (2019)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "alerta_invima_analizador_cuantico",
+   "nombre": "Alerta sanitaria INVIMA 006-2025 sobre el 'Quantum Resonance Magnetic Analyzer'",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_analizador_diagnostica_52",
+   "nombre": "El 'Quantum Resonance Magnetic Analyzer' diagnostica hasta 52 enfermedades",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "mercado_body_mind_energy_healing",
+   "nombre": "Mercado global 'Body, Mind and Energy Healing' (US$98,9 mil M en 2024 → US$360,7 mil M en 2030)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ambiguedad_categoria_mercado",
+   "nombre": "Misma palabra, mercado distinto (ambigüedad de la categoría de mercado)",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "adquisicion_chopra_global_2023",
+   "p": "aplica_a",
+   "o": "chopra_global",
+   "f": "F-869",
+   "apoyo": "The Healing Company compró los activos de Chopra Global (app de meditación, productos, licencias) el 3-mar-2023.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_precio_chopra_5m",
+   "p": "aplica_a",
+   "o": "adquisicion_chopra_global_2023",
+   "f": "F-869",
+   "apoyo": "10-K: hasta US$5 M en efectivo + acciones (valor razonable al cierre: US$3,5 M + 1,4 M de acciones) y hasta US$3 M de earnout.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "healing_company",
+   "p": "tiene_limite",
+   "o": "duda_empresa_en_marcha",
+   "f": "F-869",
+   "apoyo": "El 10-Q a marzo de 2023 advierte 'duda sustancial' sobre la continuidad de la empresa en marcha.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_valor_anticipado_20m",
+   "p": "origina_en",
+   "o": "healing_company",
+   "f": "F-870",
+   "apoyo": "El comprador presentó la operación con un 'valor anticipado' de US$20 M a cinco años (efectivo + regalías).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_valor_anticipado_20m",
+   "p": "contradice",
+   "o": "c_precio_chopra_5m",
+   "f": "F-870",
+   "apoyo": "Tensión parcial: el comunicado habla de US$20 M; el filing, de hasta US$5 M en efectivo + acciones de una empresa con duda de continuidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_valor_anticipado_20m",
+   "p": "tiene_limite",
+   "o": "fuente_parte_interesada",
+   "f": "F-870",
+   "apoyo": "Athletech News reproduce el comunicado del comprador.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sancion_ftc_quantum_wellness_2020",
+   "p": "es_tipo_de",
+   "o": "sancion_regulatoria_claims_cuanticos",
+   "f": "F-871",
+   "apoyo": "En ene-2020 los vendedores de la píldora ReJuvenation ('Quantum Wellness') aceptaron pagar US$660.000 a la FTC.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sancion_ftc_quantum_wellness_2020",
+   "p": "refuta",
+   "o": "c_pildora_rejuvenation_cura",
+   "f": "F-871",
+   "apoyo": "La FTC sancionó afirmar sin evidencia que la píldora curaba casi todas las dolencias de la edad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_pildora_rejuvenation_cura",
+   "p": "tiene_limite",
+   "o": "sin_respaldo_cientifico",
+   "f": "F-871",
+   "apoyo": "La orden prohíbe esas afirmaciones sin respaldo científico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "warning_fda_scio_quest9",
+   "p": "es_tipo_de",
+   "o": "sancion_regulatoria_claims_cuanticos",
+   "f": "F-872",
+   "apoyo": "La FDA (CDRH) emitió una carta de advertencia el 3-feb-2020 tras inspeccionar al fabricante húngaro (oct-2019).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "warning_fda_scio_quest9",
+   "p": "aplica_a",
+   "o": "dispositivo_cuantico_salud",
+   "f": "F-872",
+   "apoyo": "La FDA declaró adulterados el SCIO System y el 'Quantum University Energetic System Technology 9' por no cumplir 21 CFR 820.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "warning_fda_scio_quest9",
+   "p": "tiene_limite",
+   "o": "lectura_parcial_documento",
+   "f": "F-872",
+   "apoyo": "Se vio solo la primera parte de la carta de la FDA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fallo_asa_quantum_laser",
+   "p": "es_tipo_de",
+   "o": "sancion_regulatoria_claims_cuanticos",
+   "f": "F-873",
+   "apoyo": "La ASA declaró engañosa la publicidad de 'Quantum Laser Light' (reglas 3.1, 3.7 y 12.1 del Código CAP); no puede volver a emitirse así.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fallo_asa_quantum_laser",
+   "p": "aplica_a",
+   "o": "dispositivo_cuantico_salud",
+   "f": "F-873",
+   "apoyo": "El aparato prometía tratar dolor, heridas, fracturas y condiciones neurológicas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "dispositivo_cuantico_salud",
+   "p": "tiene_limite",
+   "o": "sin_respaldo_cientifico",
+   "f": "F-873",
+   "apoyo": "La ASA concluyó que las promesas terapéuticas del 'Quantum Laser Light' eran engañosas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "alerta_invima_analizador_cuantico",
+   "p": "es_tipo_de",
+   "o": "sancion_regulatoria_claims_cuanticos",
+   "f": "F-874",
+   "apoyo": "En ene-2025 el INVIMA (Colombia) emitió la alerta y la reiteró en jul-2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "alerta_invima_analizador_cuantico",
+   "p": "refuta",
+   "o": "c_analizador_diagnostica_52",
+   "f": "F-874",
+   "apoyo": "El analizador, vendido por internet y que promete diagnosticar hasta 52 enfermedades, no tiene registro sanitario y se considera fraudulento.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "alerta_invima_analizador_cuantico",
+   "p": "aplica_a",
+   "o": "dispositivo_cuantico_salud",
+   "f": "F-874",
+   "apoyo": "La alerta del INVIMA cubre un dispositivo médico con etiqueta 'cuántica'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_body_mind_energy_healing",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-875",
+   "apoyo": "GIA estima US$98,9 mil M (2024) → US$360,7 mil M (2030), CAGR 24,1%: el valor a 2030 es proyección.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_body_mind_energy_healing",
+   "p": "tiene_limite",
+   "o": "cifras_inconsistentes_fuentes",
+   "f": "F-875",
+   "apoyo": "Grand View da US$394,7 mil M al 2030 (CAGR 26,2%), distinto de GIA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_body_mind_energy_healing",
+   "p": "tiene_limite",
+   "o": "estimacion_no_auditada",
+   "f": "F-875",
+   "apoyo": "Informe de pago con metodología no auditable; solo se vio el resumen comercial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_body_mind_energy_healing",
+   "p": "tiene_limite",
+   "o": "ambiguedad_categoria_mercado",
+   "f": "F-875",
+   "apoyo": "'Energy-based therapeutics' (IMARC) son dispositivos médicos (láser, RF) de ~US$8 mil M: misma palabra, mercado distinto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

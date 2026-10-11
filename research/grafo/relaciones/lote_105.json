@@ -1,0 +1,352 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-623",
+  "F-624",
+  "F-625",
+  "F-626",
+  "F-627",
+  "F-628",
+  "F-630",
+  "F-632"
+ ],
+ "entidades": [
+  {
+   "id": "arr_listen_labs",
+   "nombre": "ARR de Listen Labs ('de ocho cifras', 15x en 9 meses)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_investigacion_asistida_mas_probada",
+   "nombre": "El negocio más probado es la investigación asistida por IA con personas reales, no el reemplazo sintético",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "entrevistas_ia_personas_reales",
+   "nombre": "Entrevistas con personas reales moderadas por IA",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "edge_audiences_qualtrics",
+   "nombre": "Qualtrics Edge Audiences (panel sintético afinado con ≈25 años de encuestas)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_edge_12x_preciso",
+   "nombre": "Edge Audiences es '12 veces más preciso que un LLM genérico'",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "harmonaize_personas_toluna",
+   "nombre": "Personas sintéticas HarmonAIze de Toluna",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "gemelos_sinteticos_bain",
+   "nombre": "Gemelos sintéticos que replicaron ≈90% de un conjoint previo (backtest de Bain)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "varianza_preguntas_ambiguas",
+   "nombre": "La varianza de las respuestas sintéticas sube con preguntas ambiguas",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "caso_unico_no_auditable",
+   "nombre": "Un solo caso o cliente, con método no auditable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "precios_sinteticos_inflados",
+   "nombre": "Precios sintéticos por encima de los reales y orden lógico de precios roto",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mezcla_datos_reales_sinteticos",
+   "nombre": "Mezclar respuestas sintéticas con datos reales",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "pronosticos_electorales_aaru",
+   "nombre": "Pronósticos electorales de Aaru en 2024 (Haley en New Hampshire, Harris en el Colegio Electoral)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_comercio_agentico_5_billones",
+   "nombre": "Los agentes orquestarán hasta US$1 billón del retail de EE.UU. y US$3-5 billones global al 2030",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "mckinsey_company",
+   "nombre": "McKinsey & Company",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "definicion_amplia_orquestado",
+   "nombre": "Definición amplia de ingreso 'orquestado' por agentes",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "instant_checkout_openai",
+   "nombre": "Instant Checkout de OpenAI (compra dentro de ChatGPT, con Stripe)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_instant_checkout_conversion_baja",
+   "nombre": "Instant Checkout convirtió menos de 1% frente a 3-4% de la industria",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "cifra_no_verificada_primaria",
+   "nombre": "Cifra no verificada en la fuente primaria (solo prensa)",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "arr_listen_labs",
+   "p": "respalda",
+   "o": "c_investigacion_asistida_mas_probada",
+   "f": "F-623",
+   "apoyo": "Listen Labs levantó US$69M (Sequoia y Ribbit, ene-2026) para entrevistas con personas reales moderadas por IA, con ARR 'de ocho cifras'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "arr_listen_labs",
+   "p": "tiene_limite",
+   "o": "autodeclarado_vendedor",
+   "f": "F-623",
+   "apoyo": "El crecimiento de 15x en 9 meses es autodeclarado (anuncio del inversor).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_investigacion_asistida_mas_probada",
+   "p": "contradice",
+   "o": "c_sinteticos_negocio_validado",
+   "f": "F-623",
+   "apoyo": "Si lo que más tracción prueba es la investigación asistida con personas reales, el reemplazo sintético no está igual de validado (tensión parcial).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "entrevistas_ia_personas_reales",
+   "p": "aplica_a",
+   "o": "c_investigacion_asistida_mas_probada",
+   "f": "F-623",
+   "apoyo": "La afirmación se refiere al modelo de entrevistas humanas moderadas por IA de Listen Labs.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "edge_audiences_qualtrics",
+   "p": "es_tipo_de",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-624",
+   "apoyo": "Qualtrics lanzó Edge Audiences (mar-2025, ampliado en mar-2026): un incumbente normaliza los paneles sintéticos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "edge_audiences_qualtrics",
+   "p": "es_tipo_de",
+   "o": "ajuste_fino_datos_sociales",
+   "f": "F-624",
+   "apoyo": "El modelo está afinado con ≈25 años de datos de encuestas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_edge_12x_preciso",
+   "p": "tiene_limite",
+   "o": "autodeclarado_vendedor",
+   "f": "F-624",
+   "apoyo": "La cifra de '12 veces más preciso' viene de un blog corporativo, sin método replicable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "harmonaize_personas_toluna",
+   "p": "es_tipo_de",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-625",
+   "apoyo": "Toluna (feb-2025) construye personas sintéticas sobre un panel de 19,4 M personas en EE.UU.; >1 M personas sintéticas en 15 mercados (oct-2025).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "harmonaize_personas_toluna",
+   "p": "tiene_limite",
+   "o": "autodeclarado_vendedor",
+   "f": "F-625",
+   "apoyo": "Nota de prensa corporativa con cifras autodeclaradas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "gemelos_sinteticos_bain",
+   "p": "respalda",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-626",
+   "apoyo": "En un backtest contra un conjoint previo de un cliente de tecnología de consumo, los gemelos sintéticos replicaron ≈90% de los resultados clave (respaldo parcial).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "gemelos_sinteticos_bain",
+   "p": "tiene_limite",
+   "o": "varianza_preguntas_ambiguas",
+   "f": "F-626",
+   "apoyo": "La varianza subió con preguntas ambiguas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "gemelos_sinteticos_bain",
+   "p": "tiene_limite",
+   "o": "caso_unico_no_auditable",
+   "f": "F-626",
+   "apoyo": "Consultora, un solo cliente, método no auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precios_sinteticos_inflados",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-627",
+   "apoyo": "Frente a 3.000 personas reales, los precios de 2 proveedores sintéticos salieron 16% más altos y el orden lógico de precios se rompió en 68% de los casos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "mezcla_datos_reales_sinteticos",
+   "p": "reduce",
+   "o": "precios_sinteticos_inflados",
+   "f": "F-627",
+   "apoyo": "Al mezclar con datos reales, el orden de precios roto baja de 68% a 32,8%.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "precios_sinteticos_inflados",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_fuente",
+   "f": "F-627",
+   "apoyo": "Estudio de una consultora competidora (Strat7), método no auditado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precios_sinteticos_inflados",
+   "p": "aplica_a",
+   "o": "juicio_precio",
+   "f": "F-627",
+   "apoyo": "La falla se observa en las respuestas sobre precios y disposición a pagar.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pronosticos_electorales_aaru",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-628",
+   "apoyo": "Aaru pronosticó la victoria de Nikki Haley en New Hampshire y la de Harris en el Colegio Electoral 2024; ambas fallaron.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pronosticos_electorales_aaru",
+   "p": "aplica_a",
+   "o": "encuestas_electorales",
+   "f": "F-628",
+   "apoyo": "Los fallos ocurrieron en pronósticos electorales hechos con IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pronosticos_electorales_aaru",
+   "p": "origina_en",
+   "o": "aaru",
+   "f": "F-628",
+   "apoyo": "Los pronósticos los hizo Aaru, que los defendió ante Semafor (nov-2024).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_comercio_agentico_5_billones",
+   "p": "origina_en",
+   "o": "mckinsey_company",
+   "f": "F-630",
+   "apoyo": "Pronóstico de McKinsey (vía Digital Commerce 360, oct-2025).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_comercio_agentico_5_billones",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-630",
+   "apoyo": "Es un pronóstico, no una medición.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_comercio_agentico_5_billones",
+   "p": "tiene_limite",
+   "o": "definicion_amplia_orquestado",
+   "f": "F-630",
+   "apoyo": "Usa una definición amplia: ingreso 'orquestado' por agentes, no compras hechas por ellos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_comercio_agentico_5_billones",
+   "p": "aplica_a",
+   "o": "comercio_agentico",
+   "f": "F-630",
+   "apoyo": "La proyección se refiere al comercio agéntico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "instant_checkout_openai",
+   "p": "es_tipo_de",
+   "o": "comercio_agentico",
+   "f": "F-632",
+   "apoyo": "Lanzado en sep-2025 con Stripe y retirado a inicios de mar-2026; OpenAI giró a apps de comercios.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "instant_checkout_openai",
+   "p": "asocia_con",
+   "o": "conversion_checkout",
+   "f": "F-632",
+   "apoyo": "Conversión reportada menor a 1%, frente a 3-4% del promedio de la industria.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_instant_checkout_conversion_baja",
+   "p": "tiene_limite",
+   "o": "cifra_no_verificada_primaria",
+   "f": "F-632",
+   "apoyo": "La cifra de conversión solo aparece en prensa (The Information, TechCrunch, vía un blog); no se verificó en la fuente primaria.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_instant_checkout_conversion_baja",
+   "p": "refuta",
+   "o": "c_comercio_agentico_5_billones",
+   "f": "F-632",
+   "apoyo": "Señal de problema: el retiro de Instant Checkout por baja conversión choca con el pronóstico de agentes que orquestan billones (refutación parcial, por prensa).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

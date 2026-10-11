@@ -1,0 +1,375 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-388",
+  "F-389",
+  "F-390",
+  "F-391",
+  "F-392",
+  "F-393",
+  "F-394",
+  "F-395"
+ ],
+ "entidades": [
+  {
+   "id": "c_cifra_verificacion_4_3",
+   "nombre": "La verificación de sugerencias de IA cuesta ~4,3 min a seniors vs. ~1,2 min a juniors (250 devs, 5 organizaciones)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "lim_cifra_sin_origen_primario",
+   "nombre": "Cifra sin origen primario rastreable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_ia_desplaza_esfuerzo_verificacion",
+   "nombre": "La IA desplaza el esfuerzo de generar código hacia verificarlo ('impuesto de verificación')",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "madurez_codigo_base",
+   "nombre": "Madurez del código base",
+   "tipo": "constructo"
+  },
+  {
+   "id": "ibpad_ia_design_2025",
+   "nombre": "Môre Design + IBPAD: IA no Design 2025 (N=823 diseñadores brasileños)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_desfase_geografico_latam",
+   "nombre": "El ciclo identitario del gremio de diseño llega a Perú/LatAm desfasado o atenuado (H17)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "adopcion_ia_disenadores",
+   "nombre": "Adopción de IA entre diseñadores",
+   "tipo": "resultado"
+  },
+  {
+   "id": "disenadores_brasil",
+   "nombre": "Diseñadores brasileños",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "shadow_ai",
+   "nombre": "Shadow AI: uso de IA con cuentas personales sin lineamientos corporativos",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ai_slop_neobrutalismo",
+   "nombre": "Fatiga visual post-IA ('AI slop') y giro estético al neo-brutalismo",
+   "tipo": "concepto"
+  },
+  {
+   "id": "medios_hispanohablantes",
+   "nombre": "Medios y comunidades de diseño hispanohablantes",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "xataka_basura_visual",
+   "nombre": "Xataka 2026: 'Basura visual' y la corriente hacia el neo-brutalismo",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_conducta_local_discurso_importado",
+   "nombre": "La conducta es local y el discurso es importado: LatAm/España consumen el marco interpretativo traducido del inglés (H20)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "despidos_ux_mercadolibre",
+   "nombre": "Desvinculación de 119 personas del área de UX de MercadoLibre en LatAm",
+   "tipo": "resultado"
+  },
+  {
+   "id": "compresion_rol_diseno",
+   "nombre": "Compresión del rol de diseño hacia el generalista apoyada en IA",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ux_writers_contenido",
+   "nombre": "UX writers y especialistas de contenido",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "despidos_tech_2026",
+   "nombre": "Despidos en empresas tecnológicas en 2026 (~45.000)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lim_atribucion_autodeclarada",
+   "nombre": "Atribución a la IA autodeclarada por el empleador (no prueba causalidad)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "ecosistema_tech_latam",
+   "nombre": "Ecosistema tecnológico latinoamericano",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "ensayo_arico_2025",
+   "nombre": "Aricò (Design Mavericks): Service Design, What's Next?",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_silencio_service_design_madurez",
+   "nombre": "El silencio del service design es señal de madurez, no de irrelevancia (H18)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "service_design",
+   "nombre": "Service design (diseño de servicios)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "lim_valor_diseno_no_demostrado",
+   "nombre": "Equipos de diseño sin posicionamiento claro ni valor demostrado",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "lim_promesa_dt_incumplida",
+   "nombre": "El design thinking no cumplió la promesa de resolverlo todo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "lim_testimonio_sin_muestra",
+   "nombre": "Opinión o testimonio sin método ni muestra",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "comunidad_sd_lima",
+   "nombre": "Service Design Lima (comunidad activa desde 2017)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "sdn",
+   "nombre": "Service Design Network (SDN)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "lim_sin_cifras_membresia",
+   "nombre": "Sin cifras públicas de membresía para medir crecimiento o declive",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_cifra_verificacion_4_3",
+   "p": "tiene_limite",
+   "o": "lim_cifra_sin_origen_primario",
+   "f": "F-388",
+   "apoyo": "Corrección 2026-08-02: el rastreo de la cifra 4,3/1,2 min termina en un blog sin autor ni estudio enlazado; el preprint es de autor único y cita cifras de terceros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ia_desplaza_esfuerzo_verificacion",
+   "p": "media",
+   "o": "c_ia_ralentiza_expertos",
+   "f": "F-388",
+   "apoyo": "Propuesto como explicación causal candidata de la divergencia entre METR (−19% en repos maduros) y el preprint DS-aware (−46/−69% en componentes nuevos).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "madurez_codigo_base",
+   "p": "modera",
+   "o": "c_ia_desplaza_esfuerzo_verificacion",
+   "f": "F-388",
+   "apoyo": "El impuesto de verificación escala con la madurez del código base y puede exceder el ahorro de generación (mecanismo propuesto, sin experimento propio).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ibpad_ia_design_2025",
+   "p": "refuta",
+   "o": "c_desfase_geografico_latam",
+   "f": "F-389",
+   "apoyo": "N=823: el 94% de los diseñadores brasileños ya usa IA (vs. 89% del dato anglosajón de Figma) y 66% a diario: no hay desfase.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_ia_disenadores",
+   "p": "aplica_a",
+   "o": "disenadores_brasil",
+   "f": "F-389",
+   "apoyo": "94% usa IA; ChatGPT 89%, Gemini 82%, Figma AI 68%; usos: redacción (82%), ideación (67%), referencias (56%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "shadow_ai",
+   "p": "aplica_a",
+   "o": "disenadores_brasil",
+   "f": "F-389",
+   "apoyo": "60% usa cuentas personales sin lineamientos corporativos; 51% aprendió por cuenta propia y solo 14% recibió capacitación de la empresa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ibpad_ia_design_2025",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-389",
+   "apoyo": "Estudio coproducido por una consultora de diseño (interés del emisor declarado), aunque con instituto de datos y muestra declarada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ai_slop_neobrutalismo",
+   "p": "aplica_a",
+   "o": "medios_hispanohablantes",
+   "f": "F-390",
+   "apoyo": "El vocabulario 'AI slop', fatiga visual post-IA y neo-brutalismo circula en español en 2026 en medios masivos (Xataka, Dominio Libre, Substacks).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "xataka_basura_visual",
+   "p": "respalda",
+   "o": "c_conducta_local_discurso_importado",
+   "f": "F-390",
+   "apoyo": "Chequeo de eco: el material es mayoritariamente traducción del debate anglosajón, no evidencia ni casos locales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "despidos_ux_mercadolibre",
+   "p": "es_tipo_de",
+   "o": "compresion_rol_diseno",
+   "f": "F-391",
+   "apoyo": "MercadoLibre desvinculó 119 personas de UX en LatAm (32 en Argentina) en una reestructuración que integra diseño y contenido apoyándose en IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "despidos_ux_mercadolibre",
+   "p": "refuta",
+   "o": "c_desfase_geografico_latam",
+   "f": "F-391",
+   "apoyo": "Es el equivalente latinoamericano del fenómeno anglosajón de compresión del rol, como decisión corporativa documentada; evidencia central de la refutación de H17.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "compresion_rol_diseno",
+   "p": "aplica_a",
+   "o": "ux_writers_contenido",
+   "f": "F-391",
+   "apoyo": "Los perfiles más afectados por la reestructuración fueron UX writers y especialistas de contenido.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "recortes_atribuidos_ia",
+   "p": "parte_de",
+   "o": "despidos_tech_2026",
+   "f": "F-392",
+   "apoyo": "De ~45.000 despidos tech en 2026, las propias empresas atribuyen el 20% a la IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "recortes_atribuidos_ia",
+   "p": "tiene_limite",
+   "o": "lim_atribucion_autodeclarada",
+   "f": "F-392",
+   "apoyo": "Informe agregador sin metodología auditada; la atribución a IA es declarada por los empleadores: atribución declarada no es causalidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "despidos_tech_2026",
+   "p": "aplica_a",
+   "o": "ecosistema_tech_latam",
+   "f": "F-392",
+   "apoyo": "LatAm registra ~3.800 despidos, volumen bajo pero proporcionalmente alto para el ecosistema regional (México, Colombia, Argentina, Brasil).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ensayo_arico_2025",
+   "p": "refuta",
+   "o": "c_silencio_service_design_madurez",
+   "f": "F-393",
+   "apoyo": "Una voz de autoridad del service design describe el campo en 'crisis de la práctica': impide leer su silencio social como madurez sin más (refutación parcial).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "service_design",
+   "p": "tiene_limite",
+   "o": "lim_valor_diseno_no_demostrado",
+   "f": "F-393",
+   "apoyo": "La crisis se atribuye a que las organizaciones invirtieron en diseño durante el crecimiento sin posicionar bien los equipos ni demostrar valor.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "design_thinking",
+   "p": "tiene_limite",
+   "o": "lim_promesa_dt_incumplida",
+   "f": "F-393",
+   "apoyo": "Según el ensayo, el design thinking no cumplió la promesa de resolverlo todo.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ensayo_arico_2025",
+   "p": "tiene_limite",
+   "o": "lim_testimonio_sin_muestra",
+   "f": "F-393",
+   "apoyo": "Ensayo de opinión de una figura reconocida, sin método ni datos propios: vale como testimonio interno cualificado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "comunidad_sd_lima",
+   "p": "respalda",
+   "o": "c_silencio_service_design_madurez",
+   "f": "F-394",
+   "apoyo": "Hay comunidad de service design en Perú desde junio de 2017, activa en 2026: lo que falta es su presencia en la conversación identitaria del gremio, no su existencia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "comunidad_sd_lima",
+   "p": "parte_de",
+   "o": "service_design",
+   "f": "F-394",
+   "apoyo": "Organiza el Service Design Jam Lima (48 h, dentro del Global Service Jam en 85 ciudades) y sesiones 'Cafecito SDL'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sdn",
+   "p": "respalda",
+   "o": "c_silencio_service_design_madurez",
+   "f": "F-395",
+   "apoyo": "La institucionalidad sigue operando: SDN (fundada en 2004), conferencia global anual 2026 y revista Touchpoint (may-2026).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sdn",
+   "p": "tiene_limite",
+   "o": "lim_sin_cifras_membresia",
+   "f": "F-395",
+   "apoyo": "Hallazgo negativo: no hay cifras públicas de membresía, lo que impide cerrar H18 en cualquier dirección con dato duro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sdn",
+   "p": "parte_de",
+   "o": "service_design",
+   "f": "F-395",
+   "apoyo": "Red institucional del service design con conferencia global y publicación periódica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-388: La ficha mantiene la cifra 4,3/1,2 min en el resumen pese a la corrección que la invalida como dato duro; solo el fenómeno cualitativo queda en pie. | F-391: F-419 (desmentido oficial) convierte este caso en contestado; la ficha F-391 no lo menciona."
+}

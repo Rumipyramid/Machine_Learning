@@ -1,0 +1,317 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-443",
+  "F-444",
+  "F-445",
+  "F-446",
+  "F-450",
+  "F-451",
+  "F-453",
+  "F-455"
+ ],
+ "entidades": [
+  {
+   "id": "innovation_speak",
+   "nombre": "'Innovation-speak': la ideología de la innovación",
+   "tipo": "concepto"
+  },
+  {
+   "id": "valoracion_mantenimiento",
+   "nombre": "Valoración del trabajo de mantenimiento",
+   "tipo": "resultado"
+  },
+  {
+   "id": "vinsel_russell_2020",
+   "nombre": "Vinsel y Russell 2020: The Innovation Delusion",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_disciplina_legitima_crecimiento",
+   "nombre": "El diseño y la innovación funcionan como dispositivos de legitimación del crecimiento",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_90_labs_fracasan",
+   "nombre": "El 90% de los innovation labs corporativos fracasa",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "huerfano_de_cita",
+   "nombre": "Cifra huérfana de cita (no se localiza ninguna fuente primaria)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_intraemprendimiento_70_90_fracasa",
+   "nombre": "El 70-90% del intraemprendimiento fracasa (atribuido a Harvard)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "comentario_aula_christensen",
+   "nombre": "Comentario de aula de Clayton Christensen (no un paper)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_stage_gate_exito_63_78",
+   "nombre": "Stage-Gate eleva el éxito de productos nuevos de 24% (ad hoc) a 63-78% (Cooper)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "stage_gate_international",
+   "nombre": "Stage-Gate International y Cora Systems (vendedores del método)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "competitividad_aseguradoras",
+   "nombre": "Competitividad y desempeño de las aseguradoras",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_disrupcion_insurtech_generalizada",
+   "nombre": "La disrupción insurtech perjudica la competitividad de las aseguradoras en general",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "combined_ratio_lemonade",
+   "nombre": "Combined ratio de Lemonade (~139% en 2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_insurtech_consumo_rentable",
+   "nombre": "El insurtech de consumo con IA en suscripción es rentable (tesis única)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "valuacion_wefox",
+   "nombre": "Valuación y desempeño de Wefox (de US$4.500M a <US$1.000M)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "innovation_premium_forbes",
+   "nombre": "Innovation Premium de Forbes/HOLT (valor de mercado no explicado por los negocios existentes)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "c_innovation_premium_retorno",
+   "nombre": "El ranking de empresas más innovadoras de Forbes anticipa retorno al inversionista",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_campo_no_corrige_acumula",
+   "nombre": "El campo no corrige sus métricas defectuosas: las sigue citando (C17)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "encuesta_innovacion_bcg",
+   "nombre": "Encuesta anual de innovación de BCG (>1.000 ejecutivos)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "preparacion_innovacion_empresas",
+   "nombre": "Empresas que se consideran 'listas' para innovar",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "innovation_speak",
+   "p": "reduce",
+   "o": "valoracion_mantenimiento",
+   "f": "F-443",
+   "apoyo": "Tesis: el innovation-speak devalúa sistemáticamente el mantenimiento, donde ocurre la mayor parte del trabajo que sostiene el valor.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "vinsel_russell_2020",
+   "p": "respalda",
+   "o": "c_disciplina_legitima_crecimiento",
+   "f": "F-443",
+   "apoyo": "Análogo de la crítica de Pater al diseño: la contraliteratura sostiene que la disciplina legitima el crecimiento. Tesis de los autores, no consenso.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "vinsel_russell_2020",
+   "p": "tiene_limite",
+   "o": "lim_sin_revision_pares",
+   "f": "F-443",
+   "apoyo": "Libro de divulgación de dos historiadores de la tecnología (trade press), sin revisión por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_90_labs_fracasan",
+   "p": "tiene_limite",
+   "o": "huerfano_de_cita",
+   "f": "F-444",
+   "apoyo": "El '90% de los labs fracasa' se atribuye a un informe de Capgemini con año inconsistente (2016 vs. 2017) y sin original localizable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_intraemprendimiento_70_90_fracasa",
+   "p": "tiene_limite",
+   "o": "huerfano_de_cita",
+   "f": "F-444",
+   "apoyo": "El '70-90% del intraemprendimiento fracasa (según Harvard)' circula sin enlace a ningún documento.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_mito_fracaso_80_95",
+   "p": "origina_en",
+   "o": "comentario_aula_christensen",
+   "f": "F-444",
+   "apoyo": "El '80-95% de productos nuevos fracasa' se rastrea a un comentario de aula de Christensen, no a un paper.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_mito_fracaso_80_95",
+   "p": "tiene_limite",
+   "o": "huerfano_de_cita",
+   "f": "F-444",
+   "apoyo": "Sin fuente primaria localizable y refutada por los datos del propio campo; un huérfano de cita no se puede refutar por método, solo por ausencia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_stage_gate_exito_63_78",
+   "p": "origina_en",
+   "o": "stage_gate_international",
+   "f": "F-445",
+   "apoyo": "La cifra de Cooper (24% ad hoc vs. 63-78% con Stage-Gate) solo la citan dos vendedores comerciales del método, sin acceso al estudio original.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_stage_gate_exito_63_78",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-445",
+   "apoyo": "Quien vende el método publica la cifra, sin diseño de estudio auditable (misma estructura que el '47% más rápido' de Sparkbox).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_stage_gate_exito_63_78",
+   "p": "aplica_a",
+   "o": "exito_producto_nuevo",
+   "f": "F-445",
+   "apoyo": "La cifra se refiere a la tasa de éxito de productos nuevos; se registró para que no reingrese como dato duro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "competitividad_aseguradoras",
+   "p": "refuta",
+   "o": "c_disrupcion_insurtech_generalizada",
+   "f": "F-446",
+   "apoyo": "Estudios econométricos 2023-2025: la disrupción insurtech perjudica a las aseguradoras pequeñas, pero es neutra o estimulante en las grandes; no respalda una disrupción generalizada.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "tamano_firma",
+   "p": "modera",
+   "o": "c_disrupcion_insurtech_generalizada",
+   "f": "F-446",
+   "apoyo": "El efecto del insurtech cambia de signo según el tamaño: daña a las pequeñas, neutro o positivo en las grandes.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "competitividad_aseguradoras",
+   "p": "tiene_limite",
+   "o": "evidencia_debil_acceso_calidad",
+   "f": "F-446",
+   "apoyo": "Los propios autores califican la evidencia como mixta y todavía delgada; autoría y N no verificados caso por caso.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "combined_ratio_lemonade",
+   "p": "aplica_a",
+   "o": "lemonade_inc",
+   "f": "F-450",
+   "apoyo": "Lemonade 2025: combined ratio ~139% (aún con pérdida técnica), gross loss ratio TTM 74% (−16 pp interanual), EBITDA ajustado positivo guiado recién para Q4 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "combined_ratio_lemonade",
+   "p": "refuta",
+   "o": "c_insurtech_consumo_rentable",
+   "f": "F-450",
+   "apoyo": "Con el mismo modelo que Root, Lemonade sigue en pérdida técnica: dos empresas del mismo subsector van en direcciones contrarias; la pregunta es bajo qué condiciones funciona.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "valuacion_wefox",
+   "p": "refuta",
+   "o": "c_insurtech_consumo_rentable",
+   "f": "F-451",
+   "apoyo": "Wefox, el insurtech privado más valioso de Europa: EBITDA ajustado −€72M sobre €739M de revenue (FY2023), riesgo de insolvencia en 2024 y refinanciamiento de emergencia de €170M en 2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "valuacion_wefox",
+   "p": "tiene_limite",
+   "o": "exit_no_rentabilidad",
+   "f": "F-451",
+   "apoyo": "Mubadala dispuesta a vender en €550M: el precio de transacción no mide la rentabilidad operativa; cifras de revenue y EBITDA autorreportadas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "innovation_premium_forbes",
+   "p": "refuta",
+   "o": "c_innovation_premium_retorno",
+   "f": "F-453",
+   "apoyo": "Los propios autores declaran que el ranking no correlaciona con el retorno real al inversionista y que un precio con expectativas altas puede rendir menos a futuro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "innovation_premium_forbes",
+   "p": "respalda",
+   "o": "c_campo_no_corrige_acumula",
+   "f": "F-453",
+   "apoyo": "El emisor admite en su documentación que el ranking no predice retorno y aun así se sigue citando.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "design_value_index_dmi",
+   "p": "respalda",
+   "o": "c_campo_no_corrige_acumula",
+   "f": "F-453",
+   "apoyo": "Análogo en diseño: el sesgo de look-ahead del Design Value Index lo detectó una auditoría externa, y el índice se siguió usando.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "encuesta_innovacion_bcg",
+   "p": "mide",
+   "o": "preparacion_innovacion_empresas",
+   "f": "F-455",
+   "apoyo": "El 83% de las empresas prioriza la innovación, pero solo el 3% se considera 'lista' (20% en 2022).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "encuesta_innovacion_bcg",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-455",
+   "apoyo": "BCG vende consultoría de innovación: el hallazgo de que solo el 3% está listo expande el mercado de quien lo publica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-450: 'contradice' se usa entre dos resultados (combined ratios) y no entre afirmaciones; si el validador lo exige estricto, reemplazar por la relación refuta ya incluida. | F-453: Fuente no leída directamente (403); sostenida en snippets. | F-455: La limitación 'fuente_unica_microsoft' (dato de una sola organización) se reutiliza por analogía; su nombre alude a Microsoft. Si se prefiere, crear una limitación genérica de autorreporte."
+}

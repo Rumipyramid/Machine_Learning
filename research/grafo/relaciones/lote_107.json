@@ -1,0 +1,297 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-645",
+  "F-838",
+  "F-839",
+  "F-840",
+  "F-841",
+  "F-842",
+  "F-843",
+  "F-844"
+ ],
+ "entidades": [
+  {
+   "id": "ia_analisis_siniestros_rimac",
+   "nombre": "IA de Rímac para analizar siniestros vehiculares",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tiempo_analisis_siniestro",
+   "nombre": "Tiempo de análisis de un siniestro",
+   "tipo": "resultado"
+  },
+  {
+   "id": "nudging_conductual_ia",
+   "nombre": "Nudging conductual con IA",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "sin_evidencia_medida_peru",
+   "nombre": "Sin evidencia medida en aseguradoras peruanas",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_anestesia_ratas_apoya_orch_or",
+   "nombre": "El estudio de anestesia en ratas (2024) apoya la base cuántica de la conciencia (Orch-OR)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "nota_prensa_wellesley_2024",
+   "nombre": "Nota de prensa de Wellesley College (2024) sobre microtúbulos y anestesia",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sin_evidencia_cuantica_microtubulos",
+   "nombre": "No hay medición ni evidencia de cómputo cuántico en microtúbulos (el encuadre cuántico es interpretación)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "cobertura_microtubulos_2024",
+   "nombre": "Cobertura mediática de 2024 del estudio de microtúbulos y anestesia",
+   "tipo": "concepto"
+  },
+  {
+   "id": "eco_nota_prensa",
+   "nombre": "Eco de una sola nota de prensa replicada en muchos medios (churnalism), no cobertura independiente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_sin_mecanismo_clasico_anestesia",
+   "nombre": "No hay mecanismo clásico conocido que explique el efecto observado en microtúbulos (frase de Wiest)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "titular_inflado",
+   "nombre": "Titular inflado: afirma más de lo que el estudio mide",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_conciencia_conecta_universo",
+   "nombre": "La conciencia puede conectarse con todo el universo",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "audiencia_hispana_latam",
+   "nombre": "Audiencia de prensa en español de Latinoamérica",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "desmentido_publico",
+   "nombre": "Desmentido público (científicos, autoridades o usuarios en redes)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sin_replicacion",
+   "nombre": "Hallazgo sin replicación independiente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "divulgacion_audiovisual_orch_or",
+   "nombre": "Divulgación audiovisual sobre Orch-OR (PBS Space Time, NOVA)",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ia_analisis_siniestros_rimac",
+   "p": "reduce",
+   "o": "tiempo_analisis_siniestro",
+   "f": "F-645",
+   "apoyo": "La prensa atribuye a Rímac bajar el análisis de un siniestro vehicular de 48 h a 1 minuto (autodeclarado; nota no abierta).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_analisis_siniestros_rimac",
+   "p": "aplica_a",
+   "o": "reclamos_seguro_auto",
+   "f": "F-645",
+   "apoyo": "Caso IMD: Rímac escala IA en el análisis de siniestros vehiculares; único caso de negocio peruano hallado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_analisis_siniestros_rimac",
+   "p": "tiene_limite",
+   "o": "cifra_autodeclarada",
+   "f": "F-645",
+   "apoyo": "La reducción de 48 h a 1 minuto es autodeclarada y el caso de IMD no se pudo abrir: sin métricas extraídas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nudging_conductual_ia",
+   "p": "tiene_limite",
+   "o": "sin_evidencia_medida_peru",
+   "f": "F-645",
+   "apoyo": "No se halló evidencia de nudging conductual con IA medido en aseguradoras peruanas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "epotilona_b",
+   "p": "aumenta",
+   "o": "latencia_perdida_conciencia",
+   "f": "F-838",
+   "apoyo": "Estudio en ratas (eNeuro, ago-2024): la epotilona B retrasa la pérdida de conciencia con isoflurano.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_anestesia_ratas_apoya_orch_or",
+   "p": "origina_en",
+   "o": "nota_prensa_wellesley_2024",
+   "f": "F-838",
+   "apoyo": "Wellesley presenta el estudio de ratas como apoyo al modelo cuántico de Penrose-Hameroff: es el origen de la cadena mediática de 2024.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_anestesia_ratas_apoya_orch_or",
+   "p": "tiene_limite",
+   "o": "sin_evidencia_cuantica_microtubulos",
+   "f": "F-838",
+   "apoyo": "El encuadre 'cuántico' es del autor (Wiest), no un resultado medido por el experimento.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cobertura_microtubulos_2024",
+   "p": "origina_en",
+   "o": "nota_prensa_wellesley_2024",
+   "f": "F-839",
+   "apoyo": "ScienceDaily (05-09-2024) republica la nota de prensa de Wellesley.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cobertura_microtubulos_2024",
+   "p": "tiene_limite",
+   "o": "eco_nota_prensa",
+   "f": "F-839",
+   "apoyo": "La pieza de ScienceDaily es eco de la misma nota (churnalism), no cobertura independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_sin_mecanismo_clasico_anestesia",
+   "p": "origina_en",
+   "o": "nota_prensa_wellesley_2024",
+   "f": "F-839",
+   "apoyo": "La frase de Wiest de que no hay mecanismo clásico conocido viaja tal cual desde la nota de Wellesley.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_anestesia_ratas_apoya_orch_or",
+   "p": "tiene_limite",
+   "o": "titular_inflado",
+   "f": "F-840",
+   "apoyo": "Neuroscience News convierte 'consistente con' en 'apoya la base cuántica de la conciencia'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cobertura_microtubulos_2024",
+   "p": "tiene_limite",
+   "o": "eco_nota_prensa",
+   "f": "F-840",
+   "apoyo": "Neuroscience News repite el encuadre de la nota de Wellesley: misma pieza, otra vitrina.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_conciencia_conecta_universo",
+   "p": "parte_de",
+   "o": "cobertura_microtubulos_2024",
+   "f": "F-841",
+   "apoyo": "Popular Mechanics (sindicado en AOL) lleva el estudio de 2024 a la prensa generalista con este titular; se replicó en Neowin y en Reddit.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_conciencia_conecta_universo",
+   "p": "tiene_limite",
+   "o": "titular_inflado",
+   "f": "F-841",
+   "apoyo": "Conectar la conciencia con todo el universo es algo que el estudio de ratas no mide.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "cobertura_microtubulos_2024",
+   "p": "aplica_a",
+   "o": "audiencia_hispana_latam",
+   "f": "F-842",
+   "apoyo": "N+ (México) lleva el titular de Wellesley a la prensa latinoamericana, sin contrapeso visible.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_anestesia_ratas_apoya_orch_or",
+   "p": "origina_en",
+   "o": "nota_prensa_wellesley_2024",
+   "f": "F-842",
+   "apoyo": "N+ titula que la conciencia podría ser un efecto cuántico, con el encuadre favorable de la nota de Wellesley.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desmentido_publico",
+   "p": "refuta",
+   "o": "c_anestesia_ratas_apoya_orch_or",
+   "f": "F-843",
+   "apoyo": "Physics Forums: los usuarios señalan que el experimento no mide nada cuántico y que Orch-OR está desacreditado; hay una minoría favorable.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_anestesia_ratas_apoya_orch_or",
+   "p": "tiene_limite",
+   "o": "sin_replicacion",
+   "f": "F-843",
+   "apoyo": "En el foro se recuerda que el estudio de 2024 no se ha replicado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_anestesia_ratas_apoya_orch_or",
+   "p": "tiene_limite",
+   "o": "sin_evidencia_cuantica_microtubulos",
+   "f": "F-843",
+   "apoyo": "Principal desmentido social del estudio: el experimento no mide ningún efecto cuántico.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "superradiancia_triptofano",
+   "p": "aplica_a",
+   "o": "microtubulos_neuronales",
+   "f": "F-844",
+   "apoyo": "PBS Space Time (T10E16, jul-2024) explica la superradiancia del triptófano en microtúbulos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "superradiancia_triptofano",
+   "p": "tiene_limite",
+   "o": "decoherencia_cuantica_cerebro",
+   "f": "F-844",
+   "apoyo": "El episodio mantiene la objeción de que el cerebro es demasiado cálido y ruidoso para efectos cuánticos útiles.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "divulgacion_audiovisual_orch_or",
+   "p": "aplica_a",
+   "o": "orch_or",
+   "f": "F-844",
+   "apoyo": "El título '¿Tenía razón Penrose?' instala la pregunta sobre Orch-OR en el público; vistas no verificadas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

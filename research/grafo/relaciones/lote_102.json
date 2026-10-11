@@ -1,0 +1,255 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-599",
+  "F-600",
+  "F-601",
+  "F-602",
+  "F-603",
+  "F-604",
+  "F-605",
+  "F-606"
+ ],
+ "entidades": [
+  {
+   "id": "c_critica_calculadora_guest",
+   "nombre": "Estudiar Centaur para entender la mente es como estudiar una calculadora para entender la suma (Guest)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_centaur_simula_mente",
+   "nombre": "Centaur simula la mente humana",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "prediccion_no_es_explicacion",
+   "nombre": "Predecir la conducta no equivale a explicar la mente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_encuesta_sin_personas",
+   "nombre": "Una encuesta que no pregunta a gente real no es una encuesta (es un modelo)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "encuestas_electorales",
+   "nombre": "Encuestas electorales y políticas",
+   "tipo": "concepto"
+  },
+  {
+   "id": "silicon_sampling",
+   "nombre": "Silicon sampling: encuestas con respondentes simulados por IA",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_sinteticos_homeopatia",
+   "nombre": "Los encuestados sintéticos son la 'homeopatía' de la investigación de mercados",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "conflicto_interes_fuente",
+   "nombre": "Conflicto de interés de la fuente (competidor o vendedor de la alternativa)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "usuarios_sinteticos_ux",
+   "nombre": "Usuarios sintéticos para investigación de experiencia de usuario (UX)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "estudio_prolific_sinteticos",
+   "nombre": "Estudio de Prolific sobre encuestados sintéticos frente a medición humana",
+   "tipo": "estudio"
+  },
+  {
+   "id": "metodo_ssr_pymc",
+   "nombre": "Método SSR de PyMC Labs para respuestas sintéticas de encuesta",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_llm_encuestas_90_precision",
+   "nombre": "Los LLMs simulan respuestas de encuesta con '90% de precisión'",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "confiabilidad_test_retest_90",
+   "nombre": "90% de la confiabilidad test-retest humana (PyMC Labs con Colgate)",
+   "tipo": "metrica"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_critica_calculadora_guest",
+   "p": "contradice",
+   "o": "c_centaur_simula_mente",
+   "f": "F-599",
+   "apoyo": "La cobertura del NYT sobre Centaur (jul-2025) ya incluía el escepticismo de Olivia Guest: estudiarlo para entender la mente es como estudiar una calculadora para entender la suma.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "centaur",
+   "p": "tiene_limite",
+   "o": "prediccion_no_es_explicacion",
+   "f": "F-599",
+   "apoyo": "Según la crítica recogida por el NYT, que Centaur imite la conducta no explica cómo funciona la mente.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_centaur_simula_mente",
+   "p": "origina_en",
+   "o": "centaur",
+   "f": "F-600",
+   "apoyo": "Science (noticias): los investigadores afirman que su modelo de IA simula la mente humana.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_centaur_simula_mente",
+   "p": "tiene_limite",
+   "o": "prediccion_no_es_explicacion",
+   "f": "F-600",
+   "apoyo": "El escepticismo de científicos cognitivos sobre Centaur estuvo presente desde el día de la publicación.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_encuesta_sin_personas",
+   "p": "contradice",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-601",
+   "apoyo": "Nate Silver (abr-2026) excluye de sus promedios las encuestas generadas con IA y propone llamarlas modelos (opinión, sin método propio).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_encuesta_sin_personas",
+   "p": "aplica_a",
+   "o": "encuestas_electorales",
+   "f": "F-601",
+   "apoyo": "La exclusión se aplica a los promedios de encuestas electorales; punto de inflexión del debate público sobre muestras sintéticas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "silicon_sampling",
+   "p": "es_tipo_de",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-602",
+   "apoyo": "El 'silicon sampling' reemplaza personas por bots que responden encuestas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "silicon_sampling",
+   "p": "aplica_a",
+   "o": "encuestas_electorales",
+   "f": "F-602",
+   "apoyo": "New Statesman (may-2026): ya se usa en consultoras políticas (Aaru, Prime Radiant); tono entre fascinación y alarma.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_sinteticos_homeopatia",
+   "p": "contradice",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-603",
+   "apoyo": "La frase de Conjointly se volvió meme del rechazo a los encuestados sintéticos dentro de la propia industria de investigación de mercados.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_sinteticos_homeopatia",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_fuente",
+   "f": "F-603",
+   "apoyo": "Es la opinión de un proveedor competidor, sin método propio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "usuarios_sinteticos_ux",
+   "p": "es_tipo_de",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-604",
+   "apoyo": "Son personas simuladas con LLM usadas en lugar de usuarios reales en estudios de UX.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "usuarios_sinteticos_ux",
+   "p": "tiene_limite",
+   "o": "aplanamiento_identidades",
+   "f": "F-604",
+   "apoyo": "Frente a tres estudios con usuarios reales (Nielsen Norman), los usuarios sintéticos resultaron planos y 'parecen preocuparse por todo'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "usuarios_sinteticos_ux",
+   "p": "asocia_con",
+   "o": "adulacion_ia",
+   "f": "F-604",
+   "apoyo": "Los practicantes de UX los describen como aduladores.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "usuarios_sinteticos_ux",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-604",
+   "apoyo": "La evaluación de NN/g concluye que eran demasiado superficiales para ser útiles (vía blog que la resume).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "estudio_prolific_sinteticos",
+   "p": "refuta",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-605",
+   "apoyo": "Un estudio de Prolific concluye que los encuestados sintéticos no reemplazan la medición humana.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "estudio_prolific_sinteticos",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_fuente",
+   "f": "F-605",
+   "apoyo": "Prolific vende paneles humanos: conflicto de interés.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "metodo_ssr_pymc",
+   "p": "es_tipo_de",
+   "o": "muestras_sinteticas_llm",
+   "f": "F-606",
+   "apoyo": "El método SSR de PyMC Labs genera respuestas de encuesta con LLMs.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "metodo_ssr_pymc",
+   "p": "respalda",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-606",
+   "apoyo": "Contraevidencia a favor de la industria: PyMC Labs con Colgate reporta '90% de la confiabilidad test-retest' con el método SSR (respaldo parcial).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_llm_encuestas_90_precision",
+   "p": "origina_en",
+   "o": "confiabilidad_test_retest_90",
+   "f": "F-606",
+   "apoyo": "Los titulares convirtieron '90% de la confiabilidad test-retest' en '90% de precisión' (eco de cita).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

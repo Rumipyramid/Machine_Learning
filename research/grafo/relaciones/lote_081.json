@@ -1,0 +1,398 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-261",
+  "F-268",
+  "F-269",
+  "F-270",
+  "F-271",
+  "F-273",
+  "F-274",
+  "F-275"
+ ],
+ "entidades": [
+  {
+   "id": "ux_agentica",
+   "nombre": "UX agéntica (principios de interacción humano-agente de IA)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "forrester_six_steps_ux_2016",
+   "nombre": "Forrester: The Six Steps For Justifying Better UX (dic-2016)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "curva_costo_cambio_boehm",
+   "nombre": "Curva de costo de cambio de Boehm (~100x por corregir un error tarde)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "metodologia_no_auditable",
+   "nombre": "Metodología no auditable (reporte de pago o encuesta propia no publicada)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_design_system_47_rapido",
+   "nombre": "Trabajar con un design system es 47% más rápido",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sparkbox_2022",
+   "nombre": "Estudio Sparkbox sobre el valor de los design systems (N=8 desarrolladores, IBM Carbon)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "design_system",
+   "nombre": "Design system (sistema de diseño compartido, p. ej. IBM Carbon)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "n8_sin_cegamiento_orden",
+   "nombre": "N=8 sin cegamiento y con efecto de orden no controlado",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "conflicto_interes_vendedor",
+   "nombre": "Conflicto de interés: quien publica vende la herramienta, servicio o curso",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "satisfaccion_buyin_design_system",
+   "nombre": "Satisfacción con el buy-in de design systems (42% → 32% interanual)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_design_systems_valle_desilusion",
+   "nombre": "Los design systems se deslizan al valle de la desilusión",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "gartner",
+   "nombre": "Gartner (consultora de análisis tecnológico)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "adopcion_design_tokens",
+   "nombre": "Adopción de design tokens (56% → 84%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "zeroheight_report",
+   "nombre": "Design Systems Report de zeroheight (2025-2026, N=294)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "muestra_autoseleccionada",
+   "nombre": "Muestra autoseleccionada",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "modelo_madurez_diseno_invision",
+   "nombre": "Modelo de madurez de diseño de InVision (5 niveles)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "madurez_diseno_organizacional",
+   "nombre": "Madurez de diseño de la organización",
+   "tipo": "constructo"
+  },
+  {
+   "id": "invision_2019",
+   "nombre": "InVision 2019: The New Design Frontier (2.200 organizaciones)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "varianza_metodo_comun",
+   "nombre": "Varianza de método común (predictor y resultado medidos con el mismo instrumento autorreportado)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "correlacion_como_causalidad",
+   "nombre": "Correlación presentada como causalidad (sin significancia ni análisis de sesgo de muestreo)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "mauro_2023_critica_mdi",
+   "nombre": "Crítica metodológica de Mauro Usability Science al índice de diseño de McKinsey (2023)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_hcd_insuficiente",
+   "nombre": "El diseño centrado en el humano es insuficiente y potencialmente dañino",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "diseno_centrado_humano",
+   "nombre": "Diseño centrado en el humano (human-centered design)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ignora_efectos_sistemicos",
+   "nombre": "Optimiza el problema inmediato del individuo e ignora efectos sistémicos",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "ciclos_producto_vida_corta",
+   "nombre": "Monetización del consumidor y ciclos de producto de vida corta",
+   "tipo": "resultado"
+  },
+  {
+   "id": "diseno_centrado_humanidad",
+   "nombre": "Diseño centrado en la humanidad (humanity-centered design, Norman)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "diseno_ontologico",
+   "nombre": "Diseño ontológico: el diseño fabrica el mundo (world-making)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "c_diseno_resuelve_problemas",
+   "nombre": "El diseño resuelve problemas dentro de un mundo dado (solucionismo)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "giro_decolonial_diseno",
+   "nombre": "Giro decolonial en la teoría del diseño",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ux_agentica",
+   "p": "tiene_limite",
+   "o": "sin_validacion_empirica",
+   "f": "F-261",
+   "apoyo": "Los propios autores declaran que los frameworks de agentic UX son predominantemente teóricos, sin validación empírica sistemática ni métricas estandarizadas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ux_agentica",
+   "p": "aplica_a",
+   "o": "proyectos_ia_agentica",
+   "f": "F-261",
+   "apoyo": "Los preprints proponen principios de UX para la interacción humano-agente de IA en el trabajo y en contextos de negocio.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ux_agentica",
+   "p": "tiene_limite",
+   "o": "preprint_sin_revision",
+   "f": "F-261",
+   "apoyo": "Ambos trabajos son preprints sin revisión por pares y con autoría no verificada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_narrativa_multiplicadores_diseno",
+   "p": "origina_en",
+   "o": "forrester_six_steps_ux_2016",
+   "f": "F-268",
+   "apoyo": "El '$1 invertido en UX devuelve $100' se atribuye a este reporte de Forrester de 2016, que prácticamente ningún citante ha leído.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_narrativa_multiplicadores_diseno",
+   "p": "origina_en",
+   "o": "curva_costo_cambio_boehm",
+   "f": "F-268",
+   "apoyo": "Indicios fuertes de conflación de tres claims, incluida la curva de Boehm (~100x por corregir un error tarde), que no es un ROI de inversión en UX.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "forrester_six_steps_ux_2016",
+   "p": "tiene_limite",
+   "o": "metodologia_no_auditable",
+   "f": "F-268",
+   "apoyo": "Reporte de pago (~US$1.495), no auditable por quienes lo citan.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_narrativa_multiplicadores_diseno",
+   "p": "tiene_limite",
+   "o": "eco_cita_fuentes",
+   "f": "F-268",
+   "apoyo": "Cadena de cita rota: la cifra 100:1 circula atribuida a un reporte casi nunca leído y mezclada con otros claims.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_design_system_47_rapido",
+   "p": "origina_en",
+   "o": "sparkbox_2022",
+   "f": "F-269",
+   "apoyo": "Origen único del '47% más rápido con design system': mediana de 4,2 h a 2,0 h usando IBM Carbon.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "design_system",
+   "p": "aumenta",
+   "o": "velocidad_tarea",
+   "f": "F-269",
+   "apoyo": "Con design system la tarea bajó de 4,2 h a 2,0 h (mediana) y hubo mayor consistencia visual en 7 de 8 casos; genera hipótesis, no prueba efecto.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "c_design_system_47_rapido",
+   "p": "tiene_limite",
+   "o": "n8_sin_cegamiento_orden",
+   "f": "F-269",
+   "apoyo": "8 desarrolladores, sin cegamiento; todos hicieron primero la versión desde cero, así que el efecto de orden no está controlado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sparkbox_2022",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-269",
+   "apoyo": "Los participantes son desarrolladores de la propia agencia que vende design systems.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "satisfaccion_buyin_design_system",
+   "p": "respalda",
+   "o": "c_design_systems_valle_desilusion",
+   "f": "F-270",
+   "apoyo": "La satisfacción con el buy-in de design systems cayó de 42% a 32% interanual, con subfinanciamiento y brecha entre expectativas y capacidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_design_systems_valle_desilusion",
+   "p": "origina_en",
+   "o": "gartner",
+   "f": "F-270",
+   "apoyo": "El reporte cita a Gartner, que ubica a los design systems deslizándose al valle de la desilusión.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_design_tokens",
+   "p": "aplica_a",
+   "o": "design_system",
+   "f": "F-270",
+   "apoyo": "En contraste con la caída de satisfacción, la adopción de design tokens subió a 84% desde 56%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "zeroheight_report",
+   "p": "tiene_limite",
+   "o": "muestra_autoseleccionada",
+   "f": "F-270",
+   "apoyo": "Encuesta de industria con N=294 participantes autoseleccionados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelo_madurez_diseno_invision",
+   "p": "mide",
+   "o": "madurez_diseno_organizacional",
+   "f": "F-271",
+   "apoyo": "Modelo de madurez de diseño aplicado a 2.200 organizaciones: 41% queda en el nivel 1.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "invision_2019",
+   "p": "tiene_limite",
+   "o": "varianza_metodo_comun",
+   "f": "F-271",
+   "apoyo": "100% autorreporte: predictor y resultado se miden con el mismo instrumento, ejemplo del problema que señala la regla C11.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mckinsey_design_index",
+   "p": "tiene_limite",
+   "o": "correlacion_como_causalidad",
+   "f": "F-273",
+   "apoyo": "Mauro (2023): el MDI presenta correlación como causalidad, sin significancia, sin citas y sin análisis de sesgo de muestreo; pide su retractación.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_diseno_firma",
+   "p": "tiene_limite",
+   "o": "correlacion_como_causalidad",
+   "f": "F-273",
+   "apoyo": "La tesis de que diseñar bien mejora el desempeño de la firma, en su versión McKinsey, descansa en correlaciones presentadas como causales.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "mauro_2023_critica_mdi",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-273",
+   "apoyo": "La crítica es sustantiva, pero sale del blog de una consultora competidora: conflicto de interés propio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_hcd_insuficiente",
+   "p": "aplica_a",
+   "o": "diseno_centrado_humano",
+   "f": "F-274",
+   "apoyo": "Norman (2023), fundador del human-centered design, lo declara insuficiente y potencialmente dañino; es tesis atribuible a él, no consenso.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_centrado_humano",
+   "p": "tiene_limite",
+   "o": "ignora_efectos_sistemicos",
+   "f": "F-274",
+   "apoyo": "Optimiza el problema inmediato de un individuo ignorando efectos sistémicos.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_centrado_humano",
+   "p": "aumenta",
+   "o": "ciclos_producto_vida_corta",
+   "f": "F-274",
+   "apoyo": "Según Norman, el HCD ha servido para monetizar consumidores y acelerar ciclos de producto de vida corta.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_centrado_humanidad",
+   "p": "reduce",
+   "o": "ignora_efectos_sistemicos",
+   "f": "F-274",
+   "apoyo": "Norman propone 'humanity-centered design' como respuesta a la ceguera sistémica del diseño centrado en el individuo.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_ontologico",
+   "p": "refuta",
+   "o": "c_diseno_resuelve_problemas",
+   "f": "F-275",
+   "apoyo": "Escobar (2018): el diseño no resuelve problemas dentro de un mundo dado; fabrica el mundo en el que los problemas aparecen.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_ontologico",
+   "p": "parte_de",
+   "o": "giro_decolonial_diseno",
+   "f": "F-275",
+   "apoyo": "Designs for the Pluriverse es la referencia canónica del giro decolonial en teoría del diseño.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

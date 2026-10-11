@@ -1,0 +1,283 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-315",
+  "F-319",
+  "F-322",
+  "F-325",
+  "F-326",
+  "F-327",
+  "F-328",
+  "F-329"
+ ],
+ "entidades": [
+  {
+   "id": "mercado_software_creativo",
+   "nombre": "Tamaño del mercado de software creativo/diseño (~US$11,2B en 2026 según Grand View)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "grand_view_research",
+   "nombre": "Grand View Research (vendor de informes de mercado)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "dispersion_cifras_vendors",
+   "nombre": "Dispersión de ~75% entre vendors de informes de mercado para el mismo año",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "competencia_herramientas_diseno",
+   "nombre": "Competencia en herramientas de diseño (Adobe, Canva, Figma frente a modelos de IA generalistas)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "webflow_silencio_metricas",
+   "nombre": "Webflow dejó de comunicar métricas (último ARR duro 2023: US$200M; layoffs may-2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "framer_arr",
+   "nombre": "ARR de Framer (~US$50M, ago-2025; Serie D de US$100M a US$2B)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "arr_estimado_tercero",
+   "nombre": "ARR estimado por un tercero para empresas privadas (orden de magnitud, no verificado)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "bolt_arr",
+   "nombre": "ARR de Bolt.new (~US$40M a los 5-6 meses)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "absorcion_accenture_song",
+   "nombre": "Absorción de Accenture Song en Reinvention Services (de 8 divisiones a 4 prácticas)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "cotizacion_no_verificada",
+   "nombre": "Cotización no verificada en fuente de mercado (prensa financiera secundaria)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_roi_671_design_systems",
+   "nombre": "Los design systems dan 671% de ROI (atribuido a Forrester)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "eco_cita_sin_primario",
+   "nombre": "Eco de cita sin estudio primario rastreable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "forrester_tei_invision",
+   "nombre": "Forrester TEI de InVision (2019, comisionado por el vendor): 475% de ROI",
+   "tipo": "estudio"
+  },
+  {
+   "id": "teletriaje_enfermera",
+   "nombre": "Teletriaje por enfermera en línea de asesoría (recomendar urgent care, urgencias o atención primaria)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "pagador_publico_integrado",
+   "nombre": "Evidencia de pagador público integrado (VA), no de aseguradora comercial",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "mercado_software_creativo",
+   "p": "origina_en",
+   "o": "grand_view_research",
+   "f": "F-315",
+   "apoyo": "La cifra de ~US$11,2B en 2026 (CAGR 7,1% a 2030) proviene de Grand View Research, con metodología propietaria no auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_software_creativo",
+   "p": "tiene_limite",
+   "o": "dispersion_cifras_vendors",
+   "f": "F-315",
+   "apoyo": "Otros vendors dan US$10,5B, 11,13B o 18,36B para el mismo año (75% de dispersión): ninguna cifra sirve sin declarar vendor y definición.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lanzamiento_claude_design",
+   "p": "aumenta",
+   "o": "competencia_herramientas_diseno",
+   "f": "F-319",
+   "apoyo": "Fast Company encuadra el mercado de herramientas de diseño como 'era de frenemies' tras la entrada de Claude Design y otros modelos de IA generalistas frente a Adobe, Canva y Figma.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "competencia_herramientas_diseno",
+   "p": "respalda",
+   "o": "c_ia_baja_barrera_entrada",
+   "f": "F-319",
+   "apoyo": "Que modelos de IA generalistas entren a la categoría de herramientas de diseño es consistente con una barrera de entrada más baja (encuadre periodístico, no dato).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "competencia_herramientas_diseno",
+   "p": "parte_de",
+   "o": "mercado_software_creativo",
+   "f": "F-319",
+   "apoyo": "El reacomodo competitivo ocurre dentro del mercado de software creativo y de diseño.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "webflow_silencio_metricas",
+   "p": "respalda",
+   "o": "c_estandar_reporting_se_degrada",
+   "f": "F-322",
+   "apoyo": "Webflow: último ARR duro de 2023 (US$200M), valuación de mar-2022 (US$4B) y layoffs en may-2026; dejó de comunicar métricas, normalmente porque dejaron de ser favorables.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "framer_arr",
+   "p": "tiene_limite",
+   "o": "arr_estimado_tercero",
+   "f": "F-322",
+   "apoyo": "El ARR de Framer (~US$50M) es estimado por Sacra para una empresa privada: orden de magnitud, no cifra verificada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "bolt_arr",
+   "p": "tiene_limite",
+   "o": "arr_estimado_tercero",
+   "f": "F-322",
+   "apoyo": "Bolt.new ~US$40M a los 5-6 meses, Vercel US$340M run-rate y v0 ~US$42M (dato de 17 meses) son estimaciones de Sacra.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "absorcion_accenture_song",
+   "p": "respalda",
+   "o": "c_crisis_consultoras",
+   "f": "F-325",
+   "apoyo": "Accenture Song pasó de 8 divisiones a 4 prácticas y luego fue absorbida en 'Reinvention Services', perdiendo su condición de línea propia: cuarta señal convergente de la crisis de la consultora de diseño.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "absorcion_accenture_song",
+   "p": "asocia_con",
+   "o": "accenture_song_no_reportado",
+   "f": "F-325",
+   "apoyo": "Al ser absorbida, Song deja de existir como línea de negocio propia dentro de Accenture.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_accion_figma",
+   "p": "respalda",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-326",
+   "apoyo": "La acción de Figma cae −49% en el año y ~−83/87% desde el pico mientras su crecimiento acelera: el desacople entre precio y crecimiento es el hallazgo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_accion_figma",
+   "p": "asocia_con",
+   "o": "precio_ipo_figma",
+   "f": "F-326",
+   "apoyo": "FIG cotiza bajo su precio de IPO de US$33, con recortes de precio objetivo en cadena (Piper 70→35, Goldman 35→30, RBC 22).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_accion_figma",
+   "p": "tiene_limite",
+   "o": "cotizacion_no_verificada",
+   "f": "F-326",
+   "apoyo": "Cifras de prensa financiera secundaria (Parameter, TIKR, TradingKey); no se pudieron verificar en fuente de mercado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_roi_671_design_systems",
+   "p": "tiene_limite",
+   "o": "eco_cita_sin_primario",
+   "f": "F-327",
+   "apoyo": "La cifra de 671% de ROI tiene cientos de repeticiones en blogs y LinkedIn y cero estudio original localizable. No usar.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_roi_671_design_systems",
+   "p": "es_tipo_de",
+   "o": "c_narrativa_multiplicadores_diseno",
+   "f": "F-327",
+   "apoyo": "El '671% de ROI' es un caso testigo de la narrativa de multiplicadores de retorno del diseño.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_roi_671_design_systems",
+   "p": "origina_en",
+   "o": "forrester_tei_invision",
+   "f": "F-328",
+   "apoyo": "Lo más cercano que existe es el TEI de Forrester para InVision (475% de ROI); por rastreo, explica de dónde pudo degradarse el mítico 671%.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "forrester_tei_invision",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendor",
+   "f": "F-328",
+   "apoyo": "Estudio TEI comisionado y pagado por InVision; modelo de 'organización compuesta' armado con 4 entrevistas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "forrester_tei_invision",
+   "p": "respalda",
+   "o": "c_narrativa_multiplicadores_diseno",
+   "f": "F-328",
+   "apoyo": "Reporta 475% de ROI para una herramienta de diseño, pero es un modelo pagado por el vendor: respaldo débil.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "reduce",
+   "o": "gasto_salud",
+   "f": "F-329",
+   "apoyo": "Diseño cuasi-aleatorio por enfermera disponible: la recomendación de urgent care reduce el costo a 28 días en US$404 frente a urgencias y US$247 frente a atención primaria.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "aplica_a",
+   "o": "afiliados_va",
+   "f": "F-329",
+   "apoyo": "Datos multianuales de la línea de asesoría de Veterans Affairs (EE.UU.).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "teletriaje_enfermera",
+   "p": "tiene_limite",
+   "o": "pagador_publico_integrado",
+   "f": "F-329",
+   "apoyo": "Evidencia transferida: proviene de un pagador público integrado (VA), no de una aseguradora comercial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-329: Autoría y año no verificables: ScienceDirect bloqueó el acceso."
+}

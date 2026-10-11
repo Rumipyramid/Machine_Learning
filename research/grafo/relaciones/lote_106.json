@@ -1,0 +1,381 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-633",
+  "F-634",
+  "F-635",
+  "F-638",
+  "F-639",
+  "F-640",
+  "F-643",
+  "F-644"
+ ],
+ "entidades": [
+  {
+   "id": "adopcion_real_comercio_agentico",
+   "nombre": "Transacciones con agentes en comercios (3%) frente a preparación (89%)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "fuente_unica_metodo_desconocido",
+   "nombre": "Fuente única con método desconocido",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_ia_canal_descubrimiento",
+   "nombre": "Lo que crece es la IA como canal de descubrimiento, no las compras hechas por agentes",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "agente_comet_perplexity",
+   "nombre": "Agente de compras Comet de Perplexity",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reglas_acceso_agentes_inestables",
+   "nombre": "Reglas legales de acceso de los agentes a plataformas aún inestables",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "mortalidad_adultos",
+   "nombre": "Mortalidad y esperanza de vida de adultos",
+   "tipo": "resultado"
+  },
+  {
+   "id": "autoseleccion_participantes",
+   "nombre": "Autoselección de participantes (quienes eligen participar difieren de quienes no)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "fuente_parte_interesada",
+   "nombre": "Fuente con interés propio en la conclusión (vende el producto o promueve la teoría)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "erica_bofa",
+   "nombre": "Erica, asistente virtual de Bank of America",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "asistente_financiero_ia",
+   "nombre": "Asistente financiero conversacional con IA",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "interacciones_asistente_ia",
+   "nombre": "Número de interacciones con un asistente de IA",
+   "tipo": "metrica"
+  },
+  {
+   "id": "interaccion_no_es_resultado",
+   "nombre": "El conteo de interacciones no es un resultado conductual",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "cifra_autodeclarada",
+   "nombre": "Cifra autodeclarada por la propia organización, sin verificación independiente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "cleo_ai",
+   "nombre": "Cleo: asistente financiero con IA para la generación Z",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "generacion_z",
+   "nombre": "Generación Z (jóvenes adultos)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "arr_cleo",
+   "nombre": "ARR de Cleo (≈US$185 M a fin de 2024; ≈US$250-280 M a mediados de 2025)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "estimacion_no_auditada",
+   "nombre": "Estimación de analista o base de datos privada, no auditada",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "detector_autenticidad_prolific",
+   "nombre": "Detector de respuestas de LLM de Prolific (authenticity checks, may-2025)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "prevalencia_agentes_encuestas",
+   "nombre": "Prevalencia de agentes de IA entre participantes de encuestas online",
+   "tipo": "resultado"
+  },
+  {
+   "id": "participantes_plataformas_encuestas",
+   "nombre": "Participantes de plataformas de encuestas online (Prolific, MTurk y otras)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "fraude_encuestas_online",
+   "nombre": "Fraude en encuestas online (30-40% de las respuestas, según la industria)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "estudio_norc_fraude_2026",
+   "nombre": "Trabajo con NORC (2026) que estima 31% de fraude en encuestas online",
+   "tipo": "estudio"
+  }
+ ],
+ "triples": [
+  {
+   "s": "adopcion_real_comercio_agentico",
+   "p": "refuta",
+   "o": "c_comercio_agentico_opera",
+   "f": "F-633",
+   "apoyo": "89% de comercios se prepara para el comercio agéntico, pero solo 3% de sus transacciones involucra agentes (refutación parcial: existe, pero marginal).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_real_comercio_agentico",
+   "p": "tiene_limite",
+   "o": "fuente_unica_metodo_desconocido",
+   "f": "F-633",
+   "apoyo": "Prensa con fuente única y método desconocido (Forkast).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_real_comercio_agentico",
+   "p": "parte_de",
+   "o": "comercio_agentico",
+   "f": "F-633",
+   "apoyo": "Mide la adopción real del comercio agéntico entre comercios.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "trafico_referido_llm",
+   "p": "asocia_con",
+   "o": "compra_ecommerce",
+   "f": "F-634",
+   "apoyo": "Navidad 2025 (Adobe): tráfico de IA generativa hacia retail +693% interanual, con conversión 31% mayor y +254% de ingreso por visita.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "trafico_referido_llm",
+   "p": "respalda",
+   "o": "c_ia_canal_descubrimiento",
+   "f": "F-634",
+   "apoyo": "Adobe mide referidos desde la IA, no compras hechas por agentes: lo que crece es la IA como canal de descubrimiento.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "trafico_referido_llm",
+   "p": "tiene_limite",
+   "o": "autodeclarado_vendedor",
+   "f": "F-634",
+   "apoyo": "Datos propios del proveedor (Adobe Analytics), no auditados por terceros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ia_canal_descubrimiento",
+   "p": "contradice",
+   "o": "c_comercio_agentico_opera",
+   "f": "F-634",
+   "apoyo": "El crecimiento medido es de descubrimiento vía IA, no de compras ejecutadas por agentes (tensión parcial).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "agente_comet_perplexity",
+   "p": "es_tipo_de",
+   "o": "comercio_agentico",
+   "f": "F-635",
+   "apoyo": "Comet es el agente de Perplexity que compraba en Amazon.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "comercio_agentico",
+   "p": "tiene_limite",
+   "o": "reglas_acceso_agentes_inestables",
+   "f": "F-635",
+   "apoyo": "Medida cautelar a favor de Amazon contra Comet (mar-2026, CFAA), revertida por el 9º Circuito en ago-2026 según cobertura posterior.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "conducta_salud",
+   "p": "reduce",
+   "o": "mortalidad_adultos",
+   "f": "F-638",
+   "apoyo": "Vitality UK con la LSE: 465.000 miembros seguidos 7 años; hasta −57% de mortalidad en quienes pasan de inactivos a activos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "vitality_discovery",
+   "p": "asocia_con",
+   "o": "mortalidad_adultos",
+   "f": "F-638",
+   "apoyo": "Vitality reporta que su programa extiende la esperanza de vida de sus miembros hasta en cinco años (465.000 miembros, 7 años de seguimiento).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "vitality_discovery",
+   "p": "tiene_limite",
+   "o": "autoseleccion_participantes",
+   "f": "F-638",
+   "apoyo": "La caída de mortalidad en quienes se vuelven activos no descarta autoselección: los que eligen activarse pueden ser distintos de antemano.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "vitality_discovery",
+   "p": "tiene_limite",
+   "o": "fuente_parte_interesada",
+   "f": "F-638",
+   "apoyo": "Estudio propio de Vitality con revisión de la LSE, sin peer review de revista confirmado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "erica_bofa",
+   "p": "es_tipo_de",
+   "o": "asistente_financiero_ia",
+   "f": "F-639",
+   "apoyo": "Erica es el asistente con IA de Bank of America para sus clientes de banca.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "interacciones_asistente_ia",
+   "p": "aplica_a",
+   "o": "erica_bofa",
+   "f": "F-639",
+   "apoyo": "Erica supera 3.000 M de interacciones acumuladas; en 2025 tuvo 20,6 M de usuarios y ≈700 M de interacciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "interacciones_asistente_ia",
+   "p": "tiene_limite",
+   "o": "interaccion_no_es_resultado",
+   "f": "F-639",
+   "apoyo": "El volumen de interacciones de Erica no prueba un cambio en la conducta financiera del cliente.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "interacciones_asistente_ia",
+   "p": "tiene_limite",
+   "o": "cifra_autodeclarada",
+   "f": "F-639",
+   "apoyo": "Las cifras de Erica vienen de una nota corporativa de Bank of America, sin auditoría independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cleo_ai",
+   "p": "es_tipo_de",
+   "o": "asistente_financiero_ia",
+   "f": "F-640",
+   "apoyo": "Cleo es un asistente financiero con IA conversacional.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cleo_ai",
+   "p": "aplica_a",
+   "o": "generacion_z",
+   "f": "F-640",
+   "apoyo": "Cleo se dirige a usuarios de la generación Z.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cleo_ai",
+   "p": "asocia_con",
+   "o": "arr_cleo",
+   "f": "F-640",
+   "apoyo": "Sacra: el ARR de Cleo pasó de ≈US$185 M (fin de 2024) a ≈US$250-280 M (mediados de 2025); cerca del punto de equilibrio en 2024.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "arr_cleo",
+   "p": "tiene_limite",
+   "o": "estimacion_no_auditada",
+   "f": "F-640",
+   "apoyo": "El ARR de Cleo es una estimación de analista (Sacra, arr.club), no una cifra auditada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "detector_autenticidad_prolific",
+   "p": "es_tipo_de",
+   "o": "controles_atencion_encuestas",
+   "f": "F-643",
+   "apoyo": "Prolific lanzó en may-2025 un detector de respuestas generadas por LLM en sus encuestas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "prevalencia_agentes_encuestas",
+   "p": "aplica_a",
+   "o": "participantes_plataformas_encuestas",
+   "f": "F-643",
+   "apoyo": "En 5.200 participantes de 10 plataformas, los agentes de IA detectados fueron ≤1%, salvo en MTurk.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "controles_atencion_encuestas",
+   "p": "mide",
+   "o": "prevalencia_agentes_encuestas",
+   "f": "F-643",
+   "apoyo": "Prolific usa su detector (98,7% de precisión, 0,6% de falsos positivos, autodeclarado) para estimar cuántos participantes son agentes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "detector_autenticidad_prolific",
+   "p": "tiene_limite",
+   "o": "fuente_parte_interesada",
+   "f": "F-643",
+   "apoyo": "La precisión del detector la declara Prolific en su blog; es parte interesada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fraude_encuestas_online",
+   "p": "reduce",
+   "o": "validez_encuestas_online",
+   "f": "F-644",
+   "apoyo": "CloudResearch cita que 30-40% de las encuestas online ya son fraudulentas: la detección de bots se volvió producto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fraude_encuestas_online",
+   "p": "origina_en",
+   "o": "estudio_norc_fraude_2026",
+   "f": "F-644",
+   "apoyo": "La cifra de fraude se apoya, entre otros, en un trabajo con NORC de 2026 que encontró 31%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "prevalencia_agentes_encuestas",
+   "p": "tiene_limite",
+   "o": "fuente_parte_interesada",
+   "f": "F-644",
+   "apoyo": "CloudResearch reporta agentes autónomos en <0,1% de su tráfico, pero es la empresa que vende el detector.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

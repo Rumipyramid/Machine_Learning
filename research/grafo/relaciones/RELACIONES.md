@@ -1,6 +1,6 @@
 # 🧬 Grafo semántico del códice — RELACIONES
 
-*Generado 2026-10-10 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
+*Generado 2026-10-11 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
 
 > **Transparencia:** una relación aquí es lo que *una fuente dice*, no un hecho. `lectura=ficha` significa que solo se leyó el resumen del ledger; `abstract` que se leyó el resumen real de la fuente; `completa`, el texto íntegro. Un cruce entre fuentes es una *coincidencia de entidades*, no una prueba de que las fuentes sean compatibles.
 
@@ -8,107 +8,212 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **515 de 874** (58.9%) |
-| …del cerebro de diseño (citadas en el node) | 164 de 274 |
-| …por rigor | A 291/299 · B 118/148 · C 67/185 · D 37/192 · E 1/35 |
-| Barridos | 65 |
-| Entidades | 992 |
-| Relaciones | 845 |
-| Nivel de lectura | abstract 718 · ficha 126 · completa 1 |
-| Fuerza de las afirmaciones | descriptiva 288 · causal 230 · observacional 181 · teorica 146 |
+| Fuentes procesadas | **874 de 874** (100.0%) |
+| …del cerebro de diseño (citadas en el node) | 274 de 274 |
+| …por rigor | A 299/299 · B 148/148 · C 185/185 · D 192/192 · E 35/35 |
+| Barridos | 110 |
+| Entidades | 1836 |
+| Relaciones | 1924 |
+| Nivel de lectura | ficha 1205 · abstract 718 · completa 1 |
+| Fuerza de las afirmaciones | descriptiva 1137 · teorica 281 · observacional 259 · causal 247 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `aumenta` | efecto | 173 |
-| `reduce` | efecto | 110 |
-| `tiene_limite` | metodo | 102 |
-| `asocia_con` | efecto | 99 |
-| `aplica_a` | estructura | 74 |
-| `mide` | metodo | 49 |
-| `contradice` | evidencia | 46 |
-| `modera` | efecto | 44 |
-| `respalda` | evidencia | 44 |
-| `origina_en` | metodo | 25 |
-| `refuta` | evidencia | 25 |
-| `es_tipo_de` | estructura | 20 |
-| `media` | efecto | 17 |
-| `parte_de` | estructura | 17 |
+| `tiene_limite` | metodo | 412 |
+| `aumenta` | efecto | 235 |
+| `aplica_a` | estructura | 231 |
+| `asocia_con` | efecto | 161 |
+| `reduce` | efecto | 152 |
+| `respalda` | evidencia | 139 |
+| `es_tipo_de` | estructura | 119 |
+| `refuta` | evidencia | 96 |
+| `origina_en` | metodo | 92 |
+| `parte_de` | estructura | 85 |
+| `mide` | metodo | 68 |
+| `contradice` | evidencia | 64 |
+| `modera` | efecto | 49 |
+| `media` | efecto | 21 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
 
 | Entidad | Fuentes |
 |---|---|
+| Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-544, F-545, F-546, F-547, F-548, F-549, F-552, F-553, F-554, F-556, F-558, F-560, F-561, F-562, F-574, F-597, F-602, F-604, F-606, F-624, F-625 |
+| Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística | F-547, F-552, F-554, F-556, F-557, F-558, F-559, F-561, F-590, F-601, F-603, F-604, F-605, F-606, F-618, F-626, F-627, F-628 |
 | El Niño / ENSO (fase cálida) | F-742, F-743, F-744, F-745, F-746, F-747, F-748, F-749, F-750, F-756, F-759, F-761, F-762, F-764, F-771, F-776, F-777, F-782 |
+| Generative UI (interfaces generadas por LLM) | F-247, F-256, F-258, F-260, F-298, F-381, F-382, F-383, F-384, F-385, F-386, F-399, F-475, F-476, F-513 |
+| Es una proyección, no una medición | F-52, F-135, F-190, F-206, F-209, F-214, F-216, F-310, F-397, F-459, F-526, F-630, F-875 |
 | Niño Costero peruano (1997-98, 2017, 2023) | F-751, F-752, F-753, F-760, F-763, F-765, F-766, F-767, F-768, F-770, F-773, F-780, F-783 |
-| Generative UI (interfaces generadas por LLM) | F-247, F-256, F-258, F-381, F-382, F-383, F-384, F-386, F-475, F-476 |
+| Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff) | F-803, F-805, F-806, F-807, F-809, F-812, F-813, F-817, F-844, F-845, F-846, F-859 |
+| Interés comercial del emisor en el resultado (vende la herramienta, el servicio o el framework) | F-380, F-389, F-396, F-406, F-408, F-409, F-410, F-412, F-419, F-423, F-425, F-438 |
+| Conflicto de interés: quien publica vende la herramienta, servicio o curso | F-269, F-273, F-279, F-286, F-294, F-445, F-455, F-458, F-459, F-460, F-462 |
+| Backlash del consumidor | F-168, F-187, F-188, F-241, F-289, F-290, F-343, F-344, F-345, F-346 |
+| Herramientas de IA generativa | F-255, F-308, F-402, F-406, F-517, F-521, F-522, F-581, F-582, F-591 |
+| Seguro paramétrico (pago según índice observable) | F-163, F-164, F-165, F-775, F-786, F-787, F-789, F-790, F-792, F-800 |
 | Conciencia (experiencia subjetiva) | F-802, F-804, F-805, F-806, F-819, F-820, F-825, F-828, F-833, F-835 |
-| Muestras sintéticas con LLM (personas simuladas que responden encuestas) | F-544, F-545, F-546, F-548, F-552, F-553, F-560, F-574, F-597 |
-| Seguro paramétrico (pago según índice observable) | F-163, F-164, F-775, F-786, F-787, F-789, F-790, F-792, F-800 |
-| Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff) | F-803, F-805, F-806, F-807, F-809, F-812, F-813, F-817 |
+| El diseño devuelve multiplicadores de retorno (p. ej. 100:1) | F-262, F-268, F-277, F-327, F-328, F-397, F-409, F-424, F-536 |
+| Modelos ChatGPT-3.5 y 4 | F-545, F-550, F-556, F-571, F-572, F-573, F-575, F-577, F-616 |
+| El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-318, F-326, F-398, F-421, F-429, F-470, F-527 |
+| Modelo de triage con IA y farmacias (Perú) | F-47, F-48, F-49, F-53, F-55, F-62, F-75, F-358 |
+| Sesgo de publicación | F-16, F-17, F-21, F-435, F-680, F-701, F-712, F-736 |
+| Gasto en atención de salud | F-88, F-98, F-110, F-202, F-329, F-339, F-340, F-352 |
+| Regulación de consentimiento previo para el contacto comercial (no llamar / opt-in) | F-68, F-70, F-72, F-73, F-117, F-131, F-132, F-140 |
+| Comercio agéntico (compras ejecutadas por agentes de IA) | F-592, F-593, F-613, F-614, F-630, F-632, F-633, F-635 |
+| Precio de la acción de Figma (FIG) | F-318, F-326, F-398, F-420, F-421, F-470, F-527 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542, F-662, F-663 |
-| Sesgo de publicación | F-16, F-17, F-21, F-680, F-701, F-712, F-736 |
+| Selección adversa (selección de riesgos) | F-82, F-91, F-92, F-96, F-103, F-162, F-207 |
+| Intermediarios de seguros independientes (brokers y agentes) | F-137, F-180, F-190, F-359, F-364, F-370, F-375 |
+| Lemonade Inc. (insurtech cotizada) | F-29, F-31, F-168, F-233, F-361, F-450, F-510 |
+| Consumidores y usuarios de seguros en Perú | F-1, F-5, F-11, F-12, F-117, F-173, F-235 |
 | Obediencia a órdenes dañinas (llegar a la descarga máxima) | F-650, F-651, F-652, F-653, F-654, F-655, F-656 |
-| Herramientas de IA generativa | F-308, F-517, F-521, F-581, F-582, F-591 |
-| Modelos ChatGPT-3.5 y 4 | F-545, F-571, F-572, F-573, F-575, F-577 |
+| Decoherencia cuántica en el cerebro caliente y húmedo | F-808, F-809, F-816, F-826, F-834, F-844, F-846 |
+| Hipótesis del cerebro como computadora cuántica | F-808, F-810, F-821, F-827, F-834, F-835, F-846 |
+| Teoría de la información integrada (IIT) | F-830, F-831, F-832, F-837, F-847, F-849, F-851 |
+| Cifra autodeclarada por la empresa, sin método auditable | F-618, F-620, F-621, F-623, F-624, F-625, F-634 |
+| Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-273, F-514 |
+| Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502, F-520 |
+| UBI / seguro basado en telemática | F-19, F-23, F-162, F-167, F-442, F-449 |
+| Persuasión conversacional por IA | F-489, F-490, F-585, F-586, F-589, F-607 |
+| Demanda de seguros | F-3, F-85, F-164, F-221, F-791, F-799 |
+| Los LLMs reproducen los sesgos y heurísticas de decisión humanos | F-543, F-554, F-573, F-574, F-578, F-616 |
+| Distribución multicanal liderada por humanos y habilitada por tecnología | F-184, F-360, F-368, F-369, F-377, F-379 |
+| Contacto comercial (llamadas, SMS, correos, mensajes electrónicos) sin consentimiento previo del consumidor | F-69, F-70, F-73, F-117, F-118, F-133 |
 | Cognición encarnada/fundamentada (grounded cognition): el pensamiento usa el cuerpo y los sistemas sensoriomotores | F-689, F-690, F-691, F-692, F-693, F-695 |
 | Daños humanos y económicos del Niño Costero 2017 | F-755, F-763, F-769, F-783, F-784, F-801 |
-| Hipótesis del cerebro como computadora cuántica | F-808, F-810, F-821, F-827, F-834, F-835 |
-| Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-514 |
-| Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502 |
-| Demanda de seguros | F-3, F-164, F-221, F-791, F-799 |
-| Decoherencia cuántica en el cerebro caliente y húmedo | F-808, F-809, F-816, F-826, F-834 |
-| Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-237, F-238, F-359, F-514 |
-| El mercado descuenta disrupción de IA sobre la demanda (H13) | F-305, F-318, F-429, F-470 |
-| UBI / seguro basado en telemática | F-19, F-23, F-442, F-449 |
+| Crecimiento económico (PBI) | F-207, F-217, F-742, F-743, F-782, F-787 |
+| Cifra vista solo en fuentes secundarias, sin acceso al documento original | F-129, F-130, F-133, F-186, F-189, F-196 |
+| Cifra o caso citado de segunda mano, sin acceso al reporte primario | F-209, F-214, F-216, F-217, F-233, F-284 |
+| Cifra autorreportada por la empresa o su proveedor, no auditada independientemente | F-332, F-350, F-351, F-354, F-371, F-373 |
+| Lo digital potencia al agente o intermediario de seguros, no lo reemplaza | F-360, F-361, F-364, F-368, F-369, F-377 |
+| Fuente con interés propio en la conclusión (vende el producto o promueve la teoría) | F-638, F-643, F-644, F-845, F-868, F-870 |
+| Cifra autodeclarada por la propia organización, sin verificación independiente | F-639, F-645, F-858, F-862, F-863, F-866 |
+| Desempeño financiero de la firma (ROA, ROS, crecimiento) | F-130, F-237, F-238, F-359, F-514 |
+| El estándar de reporting se degrada donde hay presión de IA (H16) | F-306, F-322, F-428, F-456, F-527 |
+| Crisis estructural del modelo de consultora de diseño | F-307, F-316, F-317, F-325, F-422 |
+| Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501, F-604 |
+| Centaur: LLM afinado con Psych-101 (160 experimentos, >60 mil participantes, >10 M de elecciones) | F-557, F-563, F-565, F-599, F-600 |
+| Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-559, F-560, F-571 |
+| Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo) | F-42, F-50, F-51, F-62, F-63 |
+| Ajuste / igualación de riesgo entre aseguradoras | F-92, F-95, F-96, F-97, F-103 |
+| Herramientas de IA en la investigación científica | F-27, F-555, F-562, F-590, F-591 |
+| Visitas a urgencias (ED) | F-108, F-330, F-332, F-342, F-354 |
+| Ley 29733 de Protección de Datos Personales (Perú) | F-67, F-68, F-74, F-76, F-77 |
+| Microtúbulos neuronales (citoesqueleto de tubulina) | F-803, F-807, F-810, F-814, F-844 |
+| Cifra sin muestra ni método publicado (no verificable de forma independiente) | F-126, F-139, F-146, F-177, F-179 |
+| El canal digital/directo desplaza al canal de agentes en la venta de seguros | F-136, F-182, F-185, F-186, F-190 |
+| Sin metodología ni evidencia empírica propia (sin validación sistemática) | F-227, F-261, F-279, F-286, F-289 |
+| Varios medios repiten un mismo comunicado o despacho (eco de cita, no triangulación independiente) | F-346, F-365, F-367, F-372, F-377 |
+| Cifra o URL primaria no verificada (citada desde una fuente secundaria) | F-360, F-361, F-362, F-363, F-369 |
+| Cadena de eco de cita (una cifra reciclada sin medición ni fuente primaria verificable) | F-397, F-404, F-438, F-439, F-440 |
+| Sin revisión por pares (preprint, blog, libro o venue no arbitrado) | F-399, F-402, F-435, F-440, F-443 |
+| Capital de riesgo invertido en investigación sintética | F-617, F-619, F-620, F-621, F-622 |
+| Design thinking | F-239, F-240, F-393, F-524 |
+| Confianza en la IA | F-187, F-242, F-583, F-614 |
+| Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469, F-527 |
+| Costo de IA / inferencia | F-323, F-470, F-526, F-527 |
+| La IA cobra un impuesto de margen a las herramientas de diseño (H32) | F-323, F-421, F-470, F-526 |
+| ARR de Lovable | F-426, F-427, F-471, F-472 |
+| Churn y cohortes no publicados | F-321, F-427, F-472, F-473 |
+| Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-255, F-256, F-272, F-382 |
+| La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe | F-260, F-383, F-384, F-385 |
 | Margen de suscripción de la industria de salud de EE.UU. | F-193, F-195, F-197, F-480 |
-| Adulación de la IA (sycophancy) | F-488, F-495, F-496, F-501 |
-| Persuasión conversacional por IA | F-489, F-490, F-585, F-586 |
-| Las respuestas sintéticas con LLM tienen menos varianza que las humanas | F-552, F-553, F-560, F-571 |
-| Gasto en atención de salud | F-110, F-339, F-340, F-352 |
+| Adopción de la telemedicina en Perú | F-40, F-41, F-48, F-52 |
+| Aversión a la pérdida (la función de valor es más empinada para pérdidas) | F-221, F-578, F-724, F-727 |
+| Carga cognitiva sobre la memoria de trabajo | F-228, F-513, F-668, F-682 |
+| Confianza del consumidor en la aseguradora | F-334, F-335, F-336, F-356 |
+| Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea) | F-557, F-563, F-564, F-565 |
+| ML + interpretación humana para generar hipótesis conductuales | F-566, F-567, F-569, F-570 |
+| Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes) | F-189, F-509, F-510, F-636 |
+| KPI de innovación: % de ventas de productos nuevos | F-454, F-529, F-531, F-532 |
+| Programa Vitality de Discovery (incentivos por conducta saludable) | F-25, F-99, F-637, F-638 |
+| Net Promoter Score (NPS) del cliente de seguros | F-81, F-183, F-351, F-356 |
+| Rediseño Liquid Glass de iOS 26 | F-272, F-289, F-290, F-292 |
+| Percepción del estado del campo del diseño | F-280, F-281, F-296, F-301 |
 | Ingreso y consumo del hogar | F-746, F-752, F-753, F-778 |
 | Inseguridad alimentaria del hogar | F-751, F-752, F-792, F-793 |
 | Hogares del norte costero (Tumbes, Piura, Lambayeque) | F-755, F-772, F-779, F-794 |
-| Crecimiento económico (PBI) | F-742, F-743, F-782, F-787 |
 | Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre) | F-785, F-788, F-789, F-801 |
-| Microtúbulos neuronales (citoesqueleto de tubulina) | F-803, F-807, F-810, F-814 |
+| Argumento gödeliano de Lucas-Penrose (la comprensión humana no es algorítmica) | F-802, F-803, F-804, F-846 |
 | Qubits de espín nuclear de fósforo en moléculas de Posner (hipótesis de Fisher) | F-821, F-822, F-823, F-824 |
-| Teoría de la información integrada (IIT) | F-830, F-831, F-832, F-837 |
-| Design thinking | F-239, F-240, F-524 |
+| Contenido sin metodología propia publicada (PR, blogs o agencias) | F-15, F-51, F-74, F-75 |
+| Prensa reporta la cifra sin acceso al método completo del estudio | F-35, F-38, F-39, F-46 |
+| Llamada única para solicitar consentimiento (art. 26 del reglamento LPDP) | F-68, F-71, F-72, F-77 |
+| Fuente con interés comercial directo en el resultado que reporta | F-116, F-127, F-140, F-155 |
+| Las acciones mineras, financieras y de consumo peruanas tienen la mejor perspectiva en 2026 | F-213, F-215, F-216, F-217 |
+| Design system (sistema de diseño compartido, p. ej. IBM Carbon) | F-269, F-270, F-396, F-425 |
+| La conducta es local y el discurso es importado: LatAm/España consumen el marco interpretativo traducido del inglés (H20) | F-390, F-409, F-410, F-416 |
+| Cifra o contenido no verificado contra el informe o documento primario | F-396, F-413, F-417, F-427 |
+| Eco de cita: varias vitrinas repiten una misma fuente | F-458, F-528, F-535, F-541 |
+| Startups de investigación sintética (encuestados y gemelos con IA) | F-617, F-619, F-621, F-622 |
+| Estimación de analista o base de datos privada, no auditada | F-640, F-864, F-867, F-875 |
+| El estudio de anestesia en ratas (2024) apoya la base cuántica de la conciencia (Orch-OR) | F-838, F-840, F-842, F-843 |
+| Cobertura mediática de 2024 del estudio de microtúbulos y anestesia | F-839, F-840, F-841, F-842 |
+| Dato financiero no publicado o no encontrado | F-860, F-861, F-862, F-865 |
+| Cifras que no coinciden entre fuentes | F-864, F-867, F-868, F-875 |
+| Sanciones regulatorias a productos de salud con etiqueta 'cuántica' | F-871, F-872, F-873, F-874 |
+| Relación innovación → desempeño | F-238, F-439, F-525 |
+| Dark patterns | F-241, F-511, F-588 |
 | Éxito de proyectos de innovación | F-239, F-441, F-461 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
-| Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469 |
-| Precio de la acción de Figma (FIG) | F-318, F-420, F-470 |
-| Churn y cohortes no publicados | F-321, F-472, F-473 |
+| El ARR de vibe coding no retiene (H14) | F-427, F-472, F-473 |
 | Productividad de desarrolladores | F-257, F-474, F-503 |
-| Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-256, F-272, F-382 |
-| Crisis estructural del modelo de consultora de diseño | F-307, F-316, F-317 |
+| Generative UI gana en usabilidad percibida | F-475, F-476, F-513 |
+| Compra en e-commerce | F-179, F-254, F-634 |
+| Generative UI gusta más que el texto plano | F-258, F-380, F-381 |
+| Accenture no reporta Song como segmento separado | F-325, F-428, F-456 |
+| El 80-95% de los productos nuevos fracasan | F-431, F-432, F-444 |
+| Conductas de riesgo al manejar (velocidad, frenado, aceleración) | F-23, F-25, F-442 |
+| Empleo de diseñadores gráficos (+2% 2024-2034) | F-308, F-309, F-314 |
 | F-203: Vida/Salud €2.400 M (+11,1%) en el 1T 2026 y €9.000 M en FY2025 | F-203, F-477, F-478 |
 | Resultado operativo Vida/Salud de Allianz | F-203, F-477, F-478 |
+| Medical care ratio de UnitedHealth (86,7% en el 2T 2026) | F-198, F-479, F-480 |
 | Penetración de seguros en Perú | F-482, F-483, F-507 |
+| La causa #1 de desconfianza en seguros es la falta de información | F-177, F-486, F-799 |
 | Calificación de calidad y confianza de la IA | F-488, F-500, F-501 |
+| Determinantes de la automedicación | F-36, F-37, F-38 |
 | Marcos de evaluación de efectividad e implementación | F-53, F-54, F-64 |
+| IA clínica | F-56, F-57, F-62 |
 | Rentabilidad técnica del negocio asegurador peruano | F-504, F-505, F-506 |
 | Los nudges cambian la conducta con efecto pequeño-mediano en general (d≈0,43-0,45) | F-16, F-17, F-18 |
+| Tamaño del surtido (cuántas opciones se ofrecen) | F-119, F-126, F-592 |
+| Incentivos financieros para conductas de salud | F-99, F-100, F-373 |
+| Conductas de salud (dejar de fumar, actividad física, adherencia) | F-99, F-100, F-638 |
 | Pie en la puerta (pedido pequeño antes del grande) | F-141, F-142, F-143 |
+| Éxito de la tarea en un agente conversacional | F-147, F-152, F-155 |
 | Número ancla visible antes de juzgar un precio | F-175, F-220, F-713 |
 | Disposición a comprar | F-176, F-253, F-518 |
-| Aversión a la pérdida (la función de valor es más empinada para pérdidas) | F-221, F-724, F-727 |
 | Efecto dotación (se pide más por vender que lo que se paga por comprar) | F-223, F-573, F-721 |
-| Carga cognitiva sobre la memoria de trabajo | F-228, F-668, F-682 |
-| Confianza del consumidor en la aseguradora | F-334, F-335, F-336 |
-| ML + interpretación humana para generar hipótesis conductuales | F-566, F-567, F-569 |
+| Sensibilidad a la redacción del prompt e inestabilidad en el tiempo | F-551, F-552, F-554 |
+| Retrato erróneo y aplanamiento de grupos demográficos por el LLM | F-549, F-553, F-604 |
+| Tamaño y competencia lingüística de los modelos de lenguaje | F-558, F-572, F-575 |
+| Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas | F-579, F-592, F-594 |
 | Experiencia y habilidad previa del trabajador | F-580, F-582, F-584 |
 | Crecimiento de ventas | F-178, F-376, F-514 |
 | Publicidad personalizada (frente a genérica) | F-253, F-518, F-519 |
+| Un exit mide la transacción, no la rentabilidad operativa | F-114, F-451, F-452 |
 | Diseño escalonado aleatorizado por clusters (stepped-wedge) | F-58, F-59, F-646 |
-| Selección adversa (selección de riesgos) | F-91, F-92, F-103 |
-| Ajuste / igualación de riesgo entre aseguradoras | F-92, F-97, F-103 |
 | Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva | F-27, F-551, F-596 |
-| Herramientas de IA en la investigación científica | F-27, F-555, F-591 |
-| Intermediarios de seguros independientes (brokers y agentes) | F-180, F-359, F-375 |
+| Desempeño de LLMs en tareas de teoría de la mente | F-575, F-576, F-577 |
+| Prompts ricos en contexto y ajuste fino con datos de ciencias sociales | F-547, F-597, F-624 |
+| Adquisición de Oak Street Health por CVS Health (2023) | F-113, F-114, F-115 |
+| La inversión de private equity en atención primaria con pago basado en valor es comercialmente viable (encuentra compradores corporativos) | F-113, F-114, F-115 |
+| Pago basado en valor en atención primaria | F-113, F-115, F-116 |
 | Presencia percibida de otros testigos | F-226, F-659, F-660 |
+| Costo anual de siniestros médicos por miembro (empleador) | F-201, F-353, F-354 |
+| Canal de distribución directo (digital) de la aseguradora | F-136, F-184, F-370 |
+| Ventas y retención de clientes de seguros | F-162, F-184, F-351 |
+| Preocupación por la privacidad activada por la situación | F-166, F-253, F-518 |
+| NAIC (Asociación Nacional de Comisionados de Seguros de EE.UU.) | F-80, F-172, F-193 |
+| Consentimiento previo, informado, expreso e inequívoco para tratar datos personales | F-67, F-76, F-77 |
+| Llamadas publicitarias sin consentimiento vigente (spam) | F-70, F-134, F-138 |
+| Mejoras de accesibilidad web/digital | F-264, F-512, F-523 |
+| Percepción de que la aseguradora de salud prioriza lucro y costos sobre necesidades individuales | F-187, F-336, F-344 |
+| Inversión y número de insurtechs activas en América Latina | F-374, F-378, F-458 |
+| Teatro de la innovación (rituales de startup sin resultados de negocio) | F-461, F-462, F-464 |
+| La IA es la principal causa de los despidos | F-282, F-283, F-419 |
+| Tendencia 'Imperfect by Design' de Canva para 2026 | F-295, F-297, F-411 |
 | Conformidad con la respuesta de la mayoría (tasa de errores conformes) | F-647, F-648, F-649 |
 | Órdenes de una figura de autoridad (experimentador) de continuar | F-650, F-651, F-652 |
 | Sensación subjetiva de poder (autorreporte) | F-695, F-696, F-698 |
@@ -124,61 +229,112 @@
 | El Niño 2026-27 alcanza magnitud extraordinaria/histórica | F-780, F-781, F-797 |
 | Cajas municipales y microfinancieras del norte | F-778, F-787, F-790 |
 | Acción anticipatoria / financiamiento basado en pronósticos | F-793, F-794, F-798 |
-| Argumento gödeliano de Lucas-Penrose (la comprensión humana no es algorítmica) | F-802, F-803, F-804 |
 | Radiación espontánea predicha por modelos de colapso | F-811, F-812, F-813 |
 | Anestesia general (inhalatoria) | F-814, F-815, F-818 |
 | Quantum cognition: modelos de probabilidad cuántica para juicios humanos (sin física cerebral) | F-827, F-828, F-829 |
-| Relación innovación → desempeño | F-238, F-525 |
+| Colaboración adversarial preregistrada entre teorías rivales | F-830, F-849, F-858 |
+| Teoría del espacio de trabajo neuronal global (GNWT) | F-830, F-849, F-850 |
+| Glosario de seguro de salud en Perú en lenguaje claro (proyecto) | F-12, F-13, F-14 |
+| Automedicación en Perú (prevalencia) | F-35, F-38, F-39 |
+| Envejecimiento poblacional | F-79, F-86, F-87 |
+| Preprint o working paper sin revisión por pares | F-95, F-260, F-261 |
+| Publicidad financiera o de seguros engañosa | F-172, F-173, F-174 |
+| Acciones de la Bolsa de Valores de Lima (BVL) | F-213, F-214, F-215 |
+| Glosario del Playbook de venta de seguros de vida | F-233, F-234, F-235 |
+| Eco de cita: varias fuentes que remontan a un mismo origen (no son confirmaciones independientes) | F-234, F-268, F-287 |
+| Diseño ontológico: el diseño fabrica el mundo (world-making) | F-275, F-276, F-278 |
+| Profesionales de UX | F-281, F-313, F-400 |
+| Movimiento anti-slop en diseño (rechazo al contenido genérico hecho con IA) | F-286, F-287, F-288 |
+| Ajustes de Apple a Liquid Glass tras el backlash | F-290, F-291, F-292 |
+| Figma Make (diseño a código con IA de Figma) | F-293, F-294, F-412 |
+| Sustento solo en ensayo u opinión, sin metodología | F-299, F-300, F-301 |
+| Teletriaje por enfermera en línea de asesoría (recomendar urgent care, urgencias o atención primaria) | F-329, F-332, F-354 |
+| Satisfacción del paciente con la telesalud | F-350, F-355, F-356 |
+| Venta de seguro de vida con flujo mayormente digital | F-362, F-363, F-364 |
+| La venta digital directa de seguro de vida es un modelo de negocio viable | F-362, F-365, F-366 |
+| Bowtie (aseguradora 100% virtual de Hong Kong) | F-365, F-370, F-371 |
+| La verificación de sugerencias de IA cuesta ~4,3 min a seniors vs. ~1,2 min a juniors (250 devs, 5 organizaciones) | F-388, F-404, F-405 |
+| Cifra sin origen primario rastreable | F-388, F-404, F-408 |
+| El ciclo identitario del gremio de diseño llega a Perú/LatAm desfasado o atenuado (H17) | F-389, F-391, F-416 |
+| Adopción de IA entre diseñadores | F-389, F-410, F-522 |
+| Medios y comunidades de diseño hispanohablantes | F-390, F-413, F-418 |
+| El silencio del service design es señal de madurez, no de irrelevancia (H18) | F-393, F-394, F-395 |
+| Service design (diseño de servicios) | F-393, F-394, F-395 |
+| Opinión o testimonio sin método ni muestra | F-393, F-413, F-414 |
+| Dato sobre base o estudio propietario no auditable | F-411, F-439, F-440 |
+| Labs de innovación corporativos | F-457, F-460, F-468 |
+| Las metas de innovación se anuncian y no se reportan (H30) | F-460, F-529, F-532 |
+| Encuestas electorales y políticas | F-601, F-602, F-628 |
+| Conflicto de interés de la fuente (competidor o vendedor de la alternativa) | F-603, F-605, F-627 |
+| El comercio agéntico ya opera con compras reales | F-613, F-633, F-634 |
+| Aaru (startup de investigación sintética) | F-617, F-618, F-628 |
+| Nota de prensa de Wellesley College (2024) sobre microtúbulos y anestesia | F-838, F-839, F-842 |
+| No hay medición ni evidencia de cómputo cuántico en microtúbulos (el encuadre cuántico es interpretación) | F-838, F-843, F-846 |
+| Eco de una sola nota de prensa replicada en muchos medios (churnalism), no cobertura independiente | F-839, F-840, F-850 |
+| Salida de la disputa entre teorías de la conciencia a la prensa generalista | F-847, F-848, F-851 |
+| Colaboración adversarial Cogitate (Nature, 30-04-2025) | F-849, F-850, F-851 |
+| Cobertura en prensa del estudio Cogitate (2025) | F-849, F-850, F-851 |
+| Película 'What the Bleep Do We Know!?' (2004) | F-852, F-867, F-868 |
+| Misticismo cuántico (física cuántica usada para afirmaciones espirituales o de salud) | F-852, F-853, F-856 |
+| 'Sanación cuántica' (término acuñado por Deepak Chopra en 1989) | F-853, F-854, F-855 |
+| Sin respaldo científico ni regulación sanitaria | F-855, F-871, F-873 |
+| Financiamiento filantrópico de la investigación sobre conciencia | F-858, F-859, F-860 |
+| Dispositivos de salud con etiqueta 'cuántica' (SCIO, Quest 9, Quantum Laser, analizadores de resonancia) | F-872, F-873, F-874 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
-| Backlash del consumidor | F-241, F-345 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
 | El efecto del design thinking está totalmente mediado por empoderamiento | F-239, F-240 |
-| Confianza en la IA | F-242, F-583 |
+| Verificabilidad de la predicción | F-243, F-520 |
 | Las explicaciones rara vez producen desempeño complementario | F-243, F-244 |
 | Las explicaciones mejoran la decisión humano-IA | F-244, F-246 |
 | Cognitive forcing functions (fricción deliberada) | F-245, F-502 |
+| Velocidad de tarea | F-247, F-269 |
 | Desempeño complementario humano-IA | F-244, F-516 |
-| Costo de IA / inferencia | F-323, F-470 |
-| La IA cobra un impuesto de margen a las herramientas de diseño (H32) | F-323, F-470 |
-| ARR de Lovable | F-471, F-472 |
-| El ARR de vibe coding no retiene (H14) | F-472, F-473 |
+| Margen bruto de Figma | F-470, F-526 |
+| Tráfico de Lovable | F-427, F-472 |
 | Uso de IA por desarrolladores experimentados | F-257, F-474 |
-| Generative UI gana en usabilidad percibida | F-475, F-476 |
 | Brecha percepción–realidad (autoestimación vs. desempeño) | F-257, F-401 |
-| El estándar de reporting se degrada donde hay presión de IA (H16) | F-306, F-428 |
+| Ingresos de Figma Q1 2026 (+46%) | F-303, F-398 |
+| NDR de Figma | F-303, F-527 |
+| La IA baja la barrera de entrada de la categoría de herramientas de diseño | F-305, F-319 |
 | Preferencia por interfaces generativas (hasta 72%) | F-258, F-381 |
-| Generative UI gusta más que el texto plano | F-258, F-381 |
-| El 80-95% de los productos nuevos fracasan | F-431, F-432 |
+| Mide preferencia, no desempeño ni aprendibilidad longitudinal | F-380, F-381 |
+| Fluidez y atractivo estético se pueden aislar (H7) | F-249, F-403 |
+| Precio de IPO de Figma (US$33) | F-326, F-420 |
+| Fracaso real de productos nuevos (25% año 1, ~40% año 2) | F-432, F-541 |
+| Éxito de un producto nuevo | F-433, F-445 |
 | Desempeño organizacional | F-434, F-525 |
-| Conductas de riesgo al manejar (velocidad, frenado, aceleración) | F-23, F-442 |
+| El UBI cambia la conducta real de manejo | F-162, F-442 |
 | Combined ratio de Root (91,4%) | F-449, F-481 |
-| Empleo de diseñadores gráficos (+2% 2024-2034) | F-308, F-309 |
-| La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe | F-383, F-384 |
+| IA alineada al design system | F-259, F-298 |
+| La IA ralentiza a desarrolladores expertos (−19%) | F-259, F-388 |
+| European Accessibility Act (exigible 28-jun-2025) | F-265, F-512 |
+| Accesibilidad como obligación con sanción | F-265, F-512 |
+| Consistencia de la interfaz entre ejecuciones | F-384, F-385 |
 | Disciplina de precios y rediseño de beneficios | F-106, F-198 |
-| Medical care ratio de UnitedHealth (86,7% en el 2T 2026) | F-198, F-480 |
 | El margen fino de 2025 (1,8%) es una tendencia de compresión | F-193, F-480 |
 | Rechazo de cobertura sin fundamento o fuera de plazo | F-484, F-485 |
 | Sanciones de Indecopi a aseguradoras (2026) | F-485, F-486 |
-| La causa #1 de desconfianza en seguros es la falta de información | F-486, F-799 |
+| Crecimiento real de primas globales (1,3% en 2026) | F-196, F-487 |
+| Personas psicológicamente susceptibles | F-491, F-610 |
 | La persuasión de la IA se concentra en personas susceptibles | F-491, F-499 |
 | Descarga cognitiva | F-492, F-493 |
 | Pensamiento crítico | F-492, F-493 |
 | Alfabetización en IA (intervención ligera) | F-494, F-500 |
+| Los usuarios prefieren la IA aduladora | F-495, F-609 |
 | Litigios y cartas de fiscales por adulación de chatbots | F-496, F-497 |
 | Comprensión del plan de salud | F-6, F-7 |
 | Divulgación clara y saliente de un producto financiero | F-9, F-10 |
 | Los mandatos de 'explicar mejor' fracasan sistemáticamente | F-9, F-10 |
 | Nudges a escala (nudge units) | F-21, F-26 |
-| Determinantes de la automedicación | F-36, F-37 |
-| Adopción de la telemedicina en Perú | F-40, F-41 |
-| Modelo de triage con IA y farmacias (Perú) | F-53, F-55 |
 | Diseño híbrido efectividad-implementación tipo 2 | F-54, F-55 |
 | Silent trial / modo sombra | F-56, F-57 |
-| IA clínica | F-56, F-57 |
+| Proyecto de Ley 08488/2024-CR (farmacias en el sistema nacional de salud) | F-47, F-508 |
+| Integración de farmacias y boticas al sistema nacional de salud | F-47, F-508 |
 | Cambio de conducta objetivo | F-16, F-20 |
 | Persistencia del efecto tras terminar la intervención | F-20, F-661 |
 | Precisión diagnóstica de chatbots médicos | F-43, F-44 |
+| Resultados de salud reales del paciente | F-44, F-116 |
 | Personalizar con datos de la persona aumenta la persuasión de la IA | F-499, F-542 |
 | Sesgo de automatización (sobre-confiar en la recomendación de un sistema) | F-60, F-61 |
 | Más opciones empeoran la decisión de forma general | F-119, F-121 |
@@ -187,39 +343,85 @@
 | Percepción precisa del riesgo | F-122, F-123 |
 | Divulgación de datos personales | F-142, F-143 |
 | La gente comparte más datos de los que su preocupación por la privacidad predeciría (paradoja de la privacidad) | F-143, F-144 |
+| Satisfacción del usuario con un agente conversacional | F-147, F-152 |
+| Usabilidad percibida de un chatbot | F-149, F-150 |
+| Juicio del consumidor sobre precio o valor | F-175, F-627 |
+| Publicidad de precio engañosa | F-176, F-348 |
 | Confianza en quien comunica la información | F-176, F-359 |
 | Heurísticas de juicio (representatividad, disponibilidad, ajuste desde un ancla) | F-220, F-573 |
+| Errores sistemáticos y predecibles de juicio | F-220, F-570 |
 | Teoría prospectiva (valor sobre ganancias y pérdidas, pesos de decisión) | F-221, F-223 |
 | Encuadre de la decisión (ganancia vs. pérdida) | F-222, F-713 |
 | Inversión de preferencias ante problemas equivalentes | F-222, F-713 |
+| Fluidez de procesamiento (facilidad para procesar información) | F-225, F-249 |
 | Información insuficiente para juzgar a la aseguradora | F-334, F-336 |
 | Predicción de la conducta de participantes no vistos en experimentos | F-563, F-566 |
-| Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea) | F-563, F-564 |
-| Sensibilidad a la redacción del prompt e inestabilidad en el tiempo | F-551, F-552 |
-| Tamaño y competencia lingüística de los modelos de lenguaje | F-572, F-575 |
+| Sobreajuste: el modelo responde a la forma de la tarea, no a su significado | F-564, F-576 |
+| Hipótesis nuevas e interpretables sobre decisiones humanas | F-569, F-570 |
+| Tamaño de la firma | F-446, F-525 |
+| Edad del consumidor | F-7, F-35 |
 | Comprensión del seguro de vida temporal | F-22, F-231 |
 | Teoría de la innovación disruptiva | F-436, F-437 |
 | Grandes corporaciones se retiran del venture capital corporativo directo | F-447, F-448 |
-| Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo) | F-42, F-63 |
+| Nivel educativo | F-65, F-559 |
+| Utilización de servicios de salud | F-46, F-89 |
 | Mercado de seguro de salud individual | F-91, F-93 |
+| Subsidios o penalidades para inducir la afiliación | F-92, F-95 |
+| Direct Primary Care (atención primaria por membresía) | F-107, F-108 |
 | Primer contacto y longitudinalidad de la atención primaria | F-107, F-112 |
+| Visitas hospitalarias | F-108, F-109 |
 | Fidelidad algorítmica (el LLM reproduce patrones de subgrupos demográficos) | F-544, F-597 |
+| Experimento de Turing (TE): replicar estudios con sujetos humanos simulados por un LLM | F-543, F-545 |
+| Ilusiones de comprensión (creer entender el mundo más de lo que se entiende) | F-14, F-555 |
 | Conjunto choices13k de elecciones riesgosas (Peterson et al., Science 2021) | F-566, F-567 |
-| Los LLMs reproducen los sesgos y heurísticas de decisión humanos | F-573, F-574 |
-| Desempeño de LLMs en tareas de teoría de la mente | F-575, F-577 |
+| Modelos económicos de decisión (loterías, juegos, secuencias aleatorias) | F-543, F-568 |
 | Productividad y calidad del trabajo de conocimiento (consultores) | F-581, F-582 |
+| La gente es en general reacia a confiar en el juicio de algoritmos | F-188, F-584 |
+| Controles de atención y de detección de respuestas no humanas en encuestas | F-598, F-643 |
+| Validez de los datos de encuestas online | F-598, F-644 |
+| Búsqueda online del producto | F-178, F-182 |
 | Retención del aprendizaje | F-218, F-219 |
 | Ayuda en una emergencia (rapidez de aviso) | F-226, F-659 |
+| Afiliados de Veterans Affairs (EE.UU.) | F-329, F-330 |
 | Redes de proveedores estrechas o por niveles (tiered) | F-339, F-340 |
+| Evidencia limitada y de baja validez interna sobre acceso y calidad | F-339, F-446 |
+| Direccionar pacientes a proveedores de menor precio (steering) | F-332, F-352 |
+| Experimentos fraudulentos que sustentaban 'firmar primero' (paper de 2012) | F-24, F-615 |
+| Utilidad, facilidad de uso y seguridad web percibidas del canal online | F-191, F-192 |
+| Distribución de seguros en América Latina (canales) | F-375, F-379 |
 | Desarrollo favorable de siniestros de periodos previos en Lemonade (7 pp en el 2T 2026) | F-509, F-636 |
-| Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes) | F-509, F-636 |
-| KPI de innovación: % de ventas de productos nuevos | F-454, F-531 |
+| Seguro embebido (embedded insurance) | F-28, F-165 |
 | Abandono de compra por checkout largo o complejo | F-145, F-311 |
-| Preocupación por la privacidad activada por la situación | F-253, F-518 |
-| NAIC (Asociación Nacional de Comisionados de Seguros de EE.UU.) | F-80, F-193 |
-| Mejoras de accesibilidad web/digital | F-264, F-523 |
-| Contacto comercial (llamadas, SMS, correos, mensajes electrónicos) sin consentimiento previo del consumidor | F-69, F-118 |
-| La IA es la principal causa de los despidos | F-282, F-283 |
+| Resultados Q1 2026 de Lemonade (ingresos +71%, pérdida neta US$35,8M) | F-29, F-189 |
+| Participación de EE.UU. en las primas de seguros mundiales | F-80, F-196 |
+| Utilidad neta y ROE de Swiss Re (FY2025 / Q1 2026) | F-32, F-34 |
+| MediSave: cuenta de ahorro médico obligatoria (Singapur) | F-101, F-102 |
+| Esquema S+3M de Singapur (MediSave, MediShield Life, MediFund) | F-101, F-102 |
+| MediFund: fondo de asistencia para quienes no pueden pagar (Singapur) | F-101, F-102 |
+| Medical loss ratio por mercado de seguro de salud en EE.UU. (MA, Medicaid, individual, grupo) | F-194, F-479 |
+| Experiencia del cliente (CX) en aseguradoras | F-81, F-359 |
+| Cancelación difícil de suscripciones (cobros tras pedir la baja) | F-511, F-641 |
+| Ratio combinado neto del mercado P/C de EE.UU. | F-160, F-161 |
+| Resultado neto de Munich Re 2025 (~€6.100M; RoE 18,3%) | F-33, F-34 |
+| Programa Vitality Drive de Discovery Insure (recompensas por conducción) | F-25, F-104 |
+| Gestión de reclamos de seguro vehicular (red de talleres asociados) | F-26, F-645 |
+| Ley 32323 (Perú, 2025): amplía la prohibición de comunicaciones comerciales spam sin consentimiento | F-69, F-117 |
+| Fiscalización de Indecopi con IA (Whisper) sobre ~7 millones de audios de llamadas comerciales | F-70, F-118 |
+| Política de Anthem de pagar anestesia según límites de tiempo (NY, CT, MO; 2024) | F-345, F-346 |
+| Proyectos de IA agéntica en empresas | F-261, F-631 |
+| Desempeño de la industria de seguros P&C de EE.UU. en 2025 | F-169, F-171 |
+| Design Value Index de DMI (portafolio de 16 empresas design-centric vs. S&P 500) | F-267, F-453 |
+| Homogeneización del producto creativo entre usuarios | F-296, F-517 |
+| Índice de Diseño de McKinsey (MDI) | F-266, F-273 |
+| Recortes de empleo atribuidos a la IA por los empleadores | F-283, F-392 |
+| Lanzamiento de Claude Design (17-abr-2026) | F-318, F-319 |
+| Conversaciones para levantar US$300M a US$13.200M (jul-2026) | F-320, F-426 |
+| Ronda reportada en conversaciones, no cerrada | F-320, F-426 |
+| Tráfico referido desde asistentes de IA (LLM) | F-324, F-634 |
+| Tamaño relativo de los equipos de UX | F-312, F-313 |
+| Búsquedas de estéticas lo-fi y DIY en Canva | F-295, F-411 |
+| Conversión del checkout | F-311, F-632 |
+| Uso de IA por el trabajador | F-282, F-595 |
 | Presión de una mayoría unánime que responde de forma equivocada | F-647, F-649 |
 | Milgram demuestra obediencia ciega/pasiva a la autoridad | F-655, F-656 |
 | Asignar un rol de poder (guardia) basta por sí solo para producir crueldad | F-657, F-658 |
@@ -269,17 +471,125 @@
 | Acciones de preparación del hogar ante El Niño | F-771, F-785 |
 | Pagos de seguros por el Niño Costero 2017 (US$428 M) | F-773, F-774 |
 | Brecha de protección ante El Niño en Perú (~7% del daño asegurado en 2017) | F-773, F-779 |
+| Reaseguro internacional | F-34, F-773 |
 | Plan de Prevención de Riesgos Naturales 2025-26 de Rímac (empresas) | F-774, F-784 |
 | Seguro de índice de pronóstico ENSO (Perú, 2010) | F-775, F-798 |
 | El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS) | F-763, F-773 |
 | BCRP: El Niño resta 0,9 pp al PBI 2026 (Reporte de Inflación de setiembre) | F-782, F-787 |
 | 'Café Seguro Perú' es el primer seguro paramétrico del país | F-789, F-798 |
 | Reducción objetiva: colapso de la función de onda inducido por la gravedad (Diósi-Penrose) | F-802, F-811 |
+| Vibraciones/resonancias de microtúbulos como origen de ritmos EEG | F-806, F-859 |
 | Tiempo de decoherencia de un estado cuántico neuronal | F-808, F-809 |
+| Epotilona B (fármaco estabilizador de microtúbulos) | F-814, F-838 |
+| Latencia hasta la pérdida del reflejo de enderezamiento (proxy de inconsciencia en roedores) | F-814, F-838 |
 | Migración de energía electrónica (excitones) en microtúbulos | F-815, F-817 |
+| Superradiancia UV en redes de triptófano de microtúbulos | F-816, F-844 |
 | Entrelazamiento de espines de protones en el cerebro medido con RM | F-819, F-820 |
 | Isótopos de litio (6Li espín 1; 7Li espín 3/2) | F-823, F-824 |
 | Teorías cuánticas de la conciencia (Orch-OR, Stapp, Beck-Eccles, Fisher) | F-833, F-836 |
+| La gente no asegura riesgos de baja probabilidad y alta consecuencia (catástrofes): rompecabezas del subaseguramiento | F-5, F-84 |
+| Fuente primaria (autor, revista o documento) no identificada ni verificable | F-15, F-98 |
+| Cifras autorreportadas por la empresa evaluada, sin auditoría externa (conflicto de interés) | F-25, F-99 |
+| Insurtech (aseguradora nativa digital) | F-30, F-31 |
+| Las insurtechs pueden escalar y volverse rentables | F-30, F-31 |
+| Uno de cada cinco peruanos (~20%) recurre a la automedicación | F-35, F-38 |
+| Ineficiencia percibida de los servicios de salud | F-38, F-45 |
+| Tiempos de espera para citas en EsSalud | F-45, F-46 |
+| Farmacias y boticas privadas del Perú (30.000+) | F-47, F-49 |
+| Código de Protección y Defensa del Consumidor (Perú) | F-72, F-73 |
+| Marketing de permiso (permission marketing) | F-74, F-75 |
+| Programa de referidos (contacto a personas referidas por la empresa o una agencia) | F-76, F-77 |
+| Swiss Re Institute (sigma) | F-78, F-165 |
+| Salud es el ramo de seguros que más rápido crece en el mundo | F-78, F-79 |
+| Vivir más implica siniestrarse más y elevar el costo de salud | F-87, F-88 |
+| Marketing de permiso (opt-in, Godin) | F-128, F-140 |
+| Venta en frío / prospección telefónica outbound | F-137, F-139 |
+| Agotamiento y abandono de asesores comerciales | F-137, F-139 |
+| Prospección por introducciones y referidos | F-137, F-139 |
+| Explicar con claridad y transparencia el uso de los datos | F-140, F-146 |
+| Revisión por pares o revista de publicación no verificable | F-152, F-192 |
+| AM Best (agencia calificadora de seguros) | F-160, F-171 |
+| Adopción del seguro telemático por los consumidores | F-166, F-167 |
+| Disposición conductual a compartir datos para pricing (UBI / IA) | F-166, F-167 |
+| Lineamientos de Indecopi sobre publicidad engañosa | F-173, F-174 |
+| Participación del canal de agentes en primas de vida | F-185, F-186 |
+| Negación algorítmica o automatizada de reclamos de salud | F-187, F-188 |
+| Bupa Group (aseguradora de salud global, con operación en Perú) | F-204, F-205 |
+| El seguro de salud privado es rentable y creciente fuera de EE.UU. (Europa, Asia) | F-204, F-205 |
+| Mercado de seguros de salud de China (US$150.628 M en 2025) | F-206, F-207 |
+| Recomendaciones editoriales de acciones en prensa financiera de consumo | F-208, F-209 |
+| Las acciones de infraestructura de IA son la oportunidad de inversión de 2026 | F-208, F-212 |
+| Recomendación sin filing ni dato de desempeño auditado | F-208, F-209 |
+| Contenido no verificado de primera mano (acceso bloqueado) | F-235, F-293 |
+| Forrester: The Six Steps For Justifying Better UX (dic-2016) | F-268, F-536 |
+| Metodología no auditable (reporte de pago o encuesta propia no publicada) | F-268, F-281 |
+| Adopción de design tokens (56% → 84%) | F-270, F-298 |
+| Design Systems Report de zeroheight (2025-2026, N=294) | F-270, F-396 |
+| El diseño resuelve problemas dentro de un mundo dado (solucionismo) | F-275, F-278 |
+| Las estrategias anticonsumistas del diseño son reapropiadas para servir al crecimiento económico | F-277, F-288 |
+| Manifiesto SLOPLESS de Michal Malewicz | F-286, F-287 |
+| El ciclo 'el diseño ha muerto' es recurrente y estacional: el UX evoluciona, no muere | F-296, F-300 |
+| El diseño/UX ha muerto por la IA | F-299, F-300 |
+| Conflicto de interés: el emisor vende al público estudiado o pagó el estudio | F-314, F-328 |
+| Tamaño del mercado de software creativo/diseño (~US$11,2B en 2026 según Grand View) | F-315, F-319 |
+| Los design systems dan 671% de ROI (atribuido a Forrester) | F-327, F-328 |
+| Telesalud que deriva sin tratar y cobra igual (telesalud como desvío) | F-347, F-348 |
+| Quejas recurrentes de usuarios de telesalud | F-347, F-348 |
+| Reviews reconstruidas desde snippets de búsqueda, sin acceso al hilo original | F-347, F-348 |
+| El resentimiento con la telesalud se concentra en los casos que derivan sin resolver, no en el canal | F-350, F-355 |
+| Ethos Technologies (agencia de seguro de vida digital, NASDAQ: LIFE) | F-363, F-364 |
+| Fracaso o absorción de insurtechs de vida digitales (Policygenius adquirida, Health IQ en quiebra) | F-363, F-366 |
+| Rentabilidad neta no confirmada (solo métricas de crecimiento o unit economics) | F-365, F-366 |
+| Despidos en insurtechs por presión de inversionistas (Bestow, Vouch, Ethos, Cover, Loop, TrustLayer, Policygenius) | F-366, F-372 |
+| Betterfly (insurtech chilena de seguro de vida dinámico y bienestar) | F-372, F-373 |
+| La IA desplaza el esfuerzo de generar código hacia verificarlo ('impuesto de verificación') | F-388, F-406 |
+| Fatiga visual post-IA ('AI slop') y giro estético al neo-brutalismo | F-390, F-411 |
+| Desvinculación de 119 personas del área de UX de MercadoLibre en LatAm | F-391, F-419 |
+| Compresión del rol de diseño hacia el generalista apoyada en IA | F-391, F-416 |
+| Un design system devuelve 135% de ROI (US$2,35 por dólar a 5 años) | F-397, F-425 |
+| Consenso de precio objetivo de analistas sobre Figma (FIG) | F-398, F-421 |
+| El consenso de analistas es opinión, no dato auditado, y varía según el compilador | F-398, F-421 |
+| Según Gartner, +60% de las tareas de diseño se resolverán con IA para 2026 | F-408, F-418 |
+| Autoridad prestada: cifras atribuidas a una autoridad nombrada que no existen en sus reportes (H23) | F-408, F-418 |
+| Cada US$1 invertido en UX devuelve US$100 (atribuido a Forrester) | F-409, F-423 |
+| Cifra autorreportada por la empresa, sin filing que la audite | F-422, F-426 |
+| El ROI del diseño se cita por rotación: una cifra desmontada se sustituye por otra (H22) | F-423, F-425 |
+| El insurtech de consumo con IA en suscripción es rentable (tesis única) | F-450, F-451 |
+| Cierre de labs de innovación corporativos (Walmart Store No. 8, IKEA SPACE10, General Mills G-Works, GM Arizona) | F-457, F-463 |
+| Meta de BCP: 10% de nuevos ingresos de innovación disruptiva | F-460, F-529 |
+| Fecha mal atribuida a un evento o meta (falsa señal de tendencia) | F-460, F-467 |
+| Las cifras anglosajonas se importan al español sin su fuente ni descuento (H20) | F-464, F-528 |
+| Contenido no verificado de primera mano (lectura completa bloqueada) | F-464, F-528 |
+| Una mejor UX puede subir la conversión hasta 400% (Forrester) | F-535, F-536 |
+| Los LLMs predicen la dirección de los resultados de experimentos de ciencias sociales | F-550, F-556 |
+| Los LLMs sobreestiman los tamaños de efecto de los experimentos con humanos | F-550, F-556 |
+| Compañeros de IA (apps de compañía) | F-588, F-612 |
+| Centaur simula la mente humana | F-599, F-600 |
+| Predecir la conducta no equivale a explicar la mente | F-599, F-600 |
+| Experimento no autorizado de la Universidad de Zúrich en r/changemyview | F-607, F-608 |
+| Psicosis asociada al uso de IA ('psicosis por IA') | F-610, F-611 |
+| Churnalism: medios que replican casi literal un comunicado de prensa | F-613, F-616 |
+| El negocio de encuestados sintéticos está validado por ingresos reales | F-617, F-623 |
+| Los agentes orquestarán hasta US$1 billón del retail de EE.UU. y US$3-5 billones global al 2030 | F-630, F-632 |
+| Asistente financiero conversacional con IA | F-639, F-640 |
+| Prevalencia de agentes de IA entre participantes de encuestas online | F-643, F-644 |
+| Titular inflado: afirma más de lo que el estudio mide | F-840, F-841 |
+| Audiencia de prensa en español de Latinoamérica | F-842, F-856 |
+| Desmentido público (científicos, autoridades o usuarios en redes) | F-843, F-854 |
+| Divulgación audiovisual sobre Orch-OR (PBS Space Time, NOVA) | F-844, F-845 |
+| Center for Consciousness Studies (Universidad de Arizona) | F-845, F-860 |
+| Los desmentidos circulan mucho menos que los titulares que corrigen | F-846, F-855 |
+| La teoría de la información integrada (IIT) es pseudociencia | F-847, F-848 |
+| Carta de 124 investigadores que llamó 'pseudociencia' a la IIT (PsyArXiv, 2023) | F-847, F-848 |
+| Comunicado del consorcio Cogitate (MPI, Birmingham, McGill, Oxford; 2025) | F-849, F-850 |
+| Deepak Chopra y su marca de bienestar Chopra Global | F-853, F-869 |
+| Anuncio de 'sanación cuántica' en un policlínico de Iquique (Servicio de Salud Tarapacá, ene-2024) | F-854, F-855 |
+| 'Salto cuántico' (quantum jumping) de autoayuda | F-856, F-857 |
+| Magnetoencefalografía con magnetómetros de bombeo óptico (OPM-MEG) | F-863, F-865 |
+| Tecnología cuántica aplicada a la salud (sensores, computación) | F-863, F-866 |
+| Cerca Magnetics (spin-out de la U. de Nottingham) | F-863, F-864 |
+| La compra de Chopra Global fue por hasta US$5 M en efectivo + acciones y hasta US$3 M de earnout (filing SEC) | F-869, F-870 |
+| The Healing Company (Healing Co Inc., HLCO) | F-869, F-870 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -496,21 +806,199 @@
 - **Crítica de la 'minimización del misterio': unir dos misterios no explica ninguno** —contradice→ **Teorías cuánticas de la conciencia (Orch-OR, Stapp, Beck-Eccles, Fisher)** (F-836, teorica) · **estado: alcance_distinto**
   - Chalmers (1996) llama 'Ley de Minimización del Misterio' a unir conciencia y cuántica porque ambas son misteriosas; para él, un mecanismo cuántico no cierra el problema difícil.
   - *Resolución (2026-10-10):* Chalmers (F-836) critica que lo cuántico no explica la experiencia (problema difícil); no niega que pueda haber física cuántica en el cerebro. Él mismo explora después un colapso causado por la conciencia (F-837).
+- **El 68,21% de los peruanos se automedica con antiinflamatorios** —contradice→ **Uno de cada cinco peruanos (~20%) recurre a la automedicación** (F-35, descriptiva) · **estado: abierta**
+  - Tensión parcial: 68,21% (USIL, antiinflamatorios) frente a ~20% (Infobae 2026); posible diferencia de definición (clase de fármaco vs. automedicación general).
+- **Evaluación en The Lancet del sistema de triage de Babylon Health (2020)** —refuta→ **Los sistemas de triage/diagnóstico con IA rinden igual o mejor que los médicos humanos** (F-50, observacional) · **estado: abierta**
+  - Según The Lancet, Babylon 'no ofreció evidencia convincente de desempeñarse mejor que médicos humanos en ninguna situación realista' y pudo rendir significativamente peor.
+- **La gente no asegura riesgos de baja probabilidad y alta consecuencia (catástrofes): rompecabezas del subaseguramiento** —contradice→ **La gente sobreasegura eventos de alta probabilidad y baja consecuencia** (F-84, teorica) · **estado: abierta**
+  - Tensión parcial: el seguro de catástrofes, el más racional de tener, es el 'anti-ejemplo' del seguro más comprado, mientras los riesgos menores se sobreaseguran.
+- **El principal impulsor del costo médico es la nueva tecnología, no el envejecimiento** —contradice→ **Vivir más implica siniestrarse más y elevar el costo de salud** (F-88, descriptiva) · **estado: abierta**
+  - Tensión parcial: la encuesta WTW pone a la tecnología, no al envejecimiento, como motor principal; matiza la causalidad simple 'vive más → cuesta más'.
+- **MQM: Multidimensional Quality Metrics (calidad de traducción)** —refuta→ **MQM ya se extendió como escala a la evaluación de LLMs y chatbots** (F-157, descriptiva) · **estado: abierta**
+  - Corrección tras pregunta del usuario: MQM es específico de traducción; lo que se extendió es su lógica de severidad, que inspiró marcos nuevos y distintos (código, salud, LLMs).
+- **Preferencia por guía profesional humana en decisiones clave de seguros** —refuta→ **El canal digital/directo desplaza al canal de agentes en la venta de seguros** (F-182, descriptiva) · **estado: abierta**
+  - Tres de cada cuatro consumidores de seguros de vida quieren un humano en las decisiones clave aunque investiguen online.
+- **Primas de vida del canal 100% online en Corea del Sur** —refuta→ **El canal digital/directo desplaza al canal de agentes en la venta de seguros** (F-185, descriptiva) · **estado: abierta**
+  - Corea del Sur: las primas del canal 100% online cayeron 33,6% en una década (de 138.700 a 92.100 millones de wones).
+- **Participación del canal de agentes en primas de vida** —refuta→ **El canal digital/directo desplaza al canal de agentes en la venta de seguros** (F-185, descriptiva) · **estado: abierta**
+  - En Corea, mercado muy digitalizado, el canal de agentes retiene 48,25% de las primas de vida en 2025.
+- **Participación del canal de agentes en primas de vida** —refuta→ **El canal digital/directo desplaza al canal de agentes en la venta de seguros** (F-186, descriptiva) · **estado: abierta**
+  - China: pese a que el insurtech creció 20 veces, agentes y bancaseguros acumulan más del 90% de las primas de vida.
+- **Rentabilidad GAAP de Lemonade (no esperada hasta 2027)** —refuta→ **El seguro 100% digital ya es rentable de forma sostenida** (F-189, descriptiva) · **estado: abierta**
+  - Lemonade (fundada en 2015) guía a EBITDA ajustado positivo recién en el 4T 2026 y a rentabilidad GAAP en 2027, 12 años después.
+- **Mercado global de corretaje de seguros** —refuta→ **El canal digital/directo desplaza al canal de agentes en la venta de seguros** (F-190, descriptiva) · **estado: abierta**
+  - Grand View: corretaje global de USD 335.870 M (2025) a USD 695.030 M (2033), CAGR 9,6%, sin señal de declive en ninguna región grande.
+- **Varios de los tickers más mencionados tienen fundamentales débiles** —refuta→ **Lo más mencionado en redes es señal de compra** (F-210, descriptiva) · **estado: abierta**
+  - La propia fuente aclara que 'trending no es lo mismo que señal de compra': algunos de los más mencionados tienen fundamentales débiles pese al ruido.
+- **El alza de las acciones de IA está fundamentalmente justificada por el crecimiento** —contradice→ **Las acciones de IA están sobrevaluadas, con riesgo de burbuja** (F-212, teorica) · **estado: abierta**
+  - Goldman Sachs y J.P. Morgan sostienen que el crecimiento está fundamentalmente justificado; otros analistas ven burbuja: divergencia abierta entre bancos grandes.
+- **Las acciones de IA están sobrevaluadas, con riesgo de burbuja** —contradice→ **Las acciones de infraestructura de IA son la oportunidad de inversión de 2026** (F-212, teorica) · **estado: abierta**
+  - Contraevidencia directa al entusiasmo por picks de IA: señal de sobrevaluación en semiconductores y múltiplos altos (tensión parcial: no niega la demanda, sí el precio).
+- **Producción de cobre del Perú (estancada por cuarto año, sin nuevas operaciones)** —refuta→ **Las acciones mineras, financieras y de consumo peruanas tienen la mejor perspectiva en 2026** (F-216, descriptiva) · **estado: abierta**
+  - Producción de cobre estancada por cuarto año, sin nuevas operaciones, más bloqueos sociales y escasez de talento: la historia minera sería de precio, no de volumen (refutación parcial).
+- **Regla del 10x (Cardone): poner metas y esfuerzo 10 veces mayores a lo que se cree necesario** —refuta→ **La 'regla del 10x' es un sesgo cognitivo útil para poner el precio en contexto (estrategia C.7 del Playbook)** (F-227, teorica) · **estado: abierta**
+  - La 'regla del 10x' no es un sesgo cognitivo académico: es una heurística de metas y esfuerzo de un libro de ventas, sin relación con poner el precio en perspectiva.
+- **Diseño ontológico: el diseño fabrica el mundo (world-making)** —refuta→ **El diseño resuelve problemas dentro de un mundo dado (solucionismo)** (F-275, teorica) · **estado: abierta**
+  - Escobar (2018): el diseño no resuelve problemas dentro de un mundo dado; fabrica el mundo en el que los problemas aparecen.
+- **Las estrategias anticonsumistas del diseño son reapropiadas para servir al crecimiento económico** —contradice→ **El diseño devuelve multiplicadores de retorno (p. ej. 100:1)** (F-277, teorica) · **estado: abierta**
+  - Marco con el que se lee críticamente la literatura del 'valor del diseño': ese valor se mide en crecimiento económico, no en su supuesta neutralidad (tensión parcial).
+- **Defuturing: el diseño consume futuro (Fry)** —refuta→ **El diseño resuelve problemas dentro de un mundo dado (solucionismo)** (F-278, teorica) · **estado: abierta**
+  - Fry (2020): el diseño consume futuro; es base de la crítica al solucionismo en diseño.
+- **Solo ~5% de diseñadores construye para plataformas espaciales reales** —refuta→ **El diseño espacial (spatial computing) es una tendencia clave de 2026** (F-279, descriptiva) · **estado: abierta**
+  - Los mismos reportes reconocen que solo ~5% de los diseñadores construye para plataformas espaciales reales.
+- **Análisis de 25 millones de comentarios sobre acusaciones de 'AI slop' (vía unite.ai)** —refuta→ **Las acusaciones de 'AI slop' identifican contenido hecho con IA** (F-284, observacional) · **estado: abierta**
+  - Las acusaciones de 'AI slop' crecientemente no identifican contenido de IA real: operan como mecanismo social específico de exclusión.
+- **Réplicas gremiales independientes contra Jakob Nielsen** —refuta→ **La IA invalidará el proceso manual de diseño UX (Nielsen)** (F-299, teorica) · **estado: abierta**
+  - Réplicas en Agory, UX Collective y Bootcamp califican de 'espectacularmente equivocada' la tesis de Nielsen de que la IA invalidará el diseño UX manual. Es opinión gremial, no evidencia empírica.
+- **El ciclo 'el diseño ha muerto' es recurrente y estacional: el UX evoluciona, no muere** —contradice→ **El diseño/UX ha muerto por la IA** (F-300, teorica) · **estado: abierta**
+  - Berumen Castro: cada pocos años la industria declara muerto al UX y luego descubre que estaba evolucionando. El ciclo es estructural (contradicción total).
+- **Creativos que perciben que la IA aumentó sus oportunidades (46% vs. 30% que disminuyeron)** —contradice→ **Empleo de diseñadores gráficos (+2% 2024-2034)** (F-314, descriptiva) · **estado: abierta**
+  - Tensión parcial: la percepción optimista de la encuesta de Adobe contrasta con la proyección oficial del BLS para la ocupación (divergencia emisor interesado vs. dato oficial).
+- **Colapso financiero de Babylon Health (pérdidas de US$212-274M en 2022, quiebra, venta del Reino Unido por £500.000)** —refuta→ **Aseguradora + triaje con IA es viable con solo validar la precisión clínica** (F-358, teorica) · **estado: abierta**
+  - La viabilidad la decide el pagador, no solo la precisión clínica: matiz para RIMAC si asume que aseguradora + triaje IA es viable por validar precisión.
+- **Loss ratio de Lemonade 2017-2022 (166% → 86% → ~90%)** —refuta→ **IA + cero agentes resuelve la fricción y la selección adversa del seguro** (F-361, descriptiva) · **estado: abierta**
+  - El loss ratio de Lemonade pasó de 166% (2017) a 86% (2019) y ~90% (2021-22): años después del IPO seguía sobre 85-90%; digitalizar sin agentes no resolvió la economía del seguro.
+- **Bestow vende su aseguradora directa al consumidor (2024) y pivota a software B2B para aseguradoras** —refuta→ **La venta digital directa de seguro de vida es un modelo de negocio viable** (F-366, descriptiva) · **estado: abierta**
+  - Bestow vendió Bestow Life Insurance Company a Sammons Financial en 2024 y pasó a vender software B2B: abandonó la venta digital directa que la hizo conocida.
+- **Adquisición mayoritaria de Singlife por Sumitomo Life (dic-2023, US$1.210M; valuación ~US$3.440M)** —refuta→ **Las aseguradoras digital-first se sostienen como competidoras independientes de las incumbentes** (F-367, descriptiva) · **estado: abierta**
+  - El desenlace mayor de la insignia digital-first de Singapur fue ser absorbida por una aseguradora japonesa tradicional (US$1.210M en dic-2023), no seguir independiente.
+- **Môre Design + IBPAD: IA no Design 2025 (N=823 diseñadores brasileños)** —refuta→ **El ciclo identitario del gremio de diseño llega a Perú/LatAm desfasado o atenuado (H17)** (F-389, descriptiva) · **estado: abierta**
+  - N=823: el 94% de los diseñadores brasileños ya usa IA (vs. 89% del dato anglosajón de Figma) y 66% a diario: no hay desfase.
+- **Desvinculación de 119 personas del área de UX de MercadoLibre en LatAm** —refuta→ **El ciclo identitario del gremio de diseño llega a Perú/LatAm desfasado o atenuado (H17)** (F-391, descriptiva) · **estado: abierta**
+  - Es el equivalente latinoamericano del fenómeno anglosajón de compresión del rol, como decisión corporativa documentada; evidencia central de la refutación de H17.
+- **Aricò (Design Mavericks): Service Design, What's Next?** —refuta→ **El silencio del service design es señal de madurez, no de irrelevancia (H18)** (F-393, teorica) · **estado: abierta**
+  - Una voz de autoridad del service design describe el campo en 'crisis de la práctica': impide leer su silencio social como madurez sin más (refutación parcial).
+- **Despidos en Livspace, India (~1.000 personas, ~12% de la plantilla, incluye diseño)** —refuta→ **El ciclo identitario del gremio de diseño llega a Perú/LatAm desfasado o atenuado (H17)** (F-416, descriptiva) · **estado: abierta**
+  - Amplía a economías emergentes, junto a MercadoLibre, el patrón de compresión del rol vía IA: no hay mercado al margen.
+- **Búsqueda propia en gartner.com/newsroom (hallazgo negativo)** —refuta→ **Según Gartner, +60% de las tareas de diseño se resolverán con IA para 2026** (F-418, descriptiva) · **estado: abierta**
+  - No existe reporte de Gartner con '60% de tareas de diseño con IA', '80%' ni '68%'; sus '60%' reales tratan de otros temas (proyectos de IA, equipos de ingeniería, agentes).
+- **Declaración oficial de MercadoLibre sobre los despidos de UX (9-ene-2026)** —refuta→ **La IA es la principal causa de los despidos** (F-419, descriptiva) · **estado: abierta**
+  - Para este caso la empresa niega la atribución a IA: reorganización interna que representó menos del 0,09% de su plantilla de más de 125.000.
+- **Crecimiento de R/GA (+30% H2'25 vs. H1'25; +25% interanual en Q1 2026)** —refuta→ **Crisis estructural del modelo de consultora de diseño** (F-422, descriptiva) · **estado: abierta**
+  - Primer contraejemplo en tres iteraciones: único crecimiento de doble dígito hallado en consultoras/agencias de diseño. Parcial: R/GA nunca fue consultora de diseño pura.
+- **Maze 2026: 40+ Key UX Stats** —refuta→ **El ROI del diseño se cita por rotación: una cifra desmontada se sustituye por otra (H22)** (F-423, descriptiva) · **estado: abierta**
+  - Describe el $1→$100 como 'el benchmark estándar para justificar presupuestos de diseño' en 2026: la cifra desmontada no fue reemplazada, sigue dominante.
+- **figr.design 2026: How to Measure Design System ROI** —refuta→ **El ROI del diseño se cita por rotación: una cifra desmontada se sustituye por otra (H22)** (F-425, descriptiva) · **estado: abierta**
+  - Usa el 135% / $2,35 por dólar de Smashing (2022) como cifra vigente en 2026: cero reemplazo y cero corrección cuatro años después.
+- **Competitividad y desempeño de las aseguradoras** —refuta→ **La disrupción insurtech perjudica la competitividad de las aseguradoras en general** (F-446, observacional) · **estado: abierta**
+  - Estudios econométricos 2023-2025: la disrupción insurtech perjudica a las aseguradoras pequeñas, pero es neutra o estimulante en las grandes; no respalda una disrupción generalizada.
+- **Combined ratio de Lemonade (~139% en 2025)** —refuta→ **El insurtech de consumo con IA en suscripción es rentable (tesis única)** (F-450, descriptiva) · **estado: abierta**
+  - Con el mismo modelo que Root, Lemonade sigue en pérdida técnica: dos empresas del mismo subsector van en direcciones contrarias; la pregunta es bajo qué condiciones funciona.
+- **Valuación y desempeño de Wefox (de US$4.500M a <US$1.000M)** —refuta→ **El insurtech de consumo con IA en suscripción es rentable (tesis única)** (F-451, descriptiva) · **estado: abierta**
+  - Wefox, el insurtech privado más valioso de Europa: EBITDA ajustado −€72M sobre €739M de revenue (FY2023), riesgo de insolvencia en 2024 y refinanciamiento de emergencia de €170M en 2025.
+- **Innovation Premium de Forbes/HOLT (valor de mercado no explicado por los negocios existentes)** —refuta→ **El ranking de empresas más innovadoras de Forbes anticipa retorno al inversionista** (F-453, descriptiva) · **estado: abierta**
+  - Los propios autores declaran que el ranking no correlaciona con el retorno real al inversionista y que un precio con expectativas altas puede rendir menos a futuro.
+- **Disolución del equipo Responsible Innovation de Meta (sep-2022)** —refuta→ **Meta disolvió su equipo de Responsible Innovation en 2026** (F-467, descriptiva) · **estado: abierta**
+  - Verificado contra TechTimes, Fortune y CNBC: la disolución fue en septiembre de 2022, no en 2026.
+- **Interfaces generadas por IA sin optimizar** —refuta→ **Generative UI gana en usabilidad percibida** (F-513, causal) · **estado: abierta**
+  - Las interfaces crudas de IA tienen menor facilidad de tarea que las humanas.
+- **Indicadores visuales de incertidumbre o confianza en salidas de LLM** —refuta→ **Más señales visuales de incertidumbre calibran mejor la confianza en la IA** (F-520, causal) · **estado: abierta**
+  - Mejoraron la sensibilidad subjetiva a la precisión, pero no calibraron la conducta: más señales no calibran mejor la confianza.
+- **Precio de la acción de Figma (FIG)** —refuta→ **El mercado descuenta disrupción de IA sobre la demanda (H13)** (F-527, descriptiva) · **estado: abierta**
+  - La acción cayó ~16% tras el Q2 2026 y los analistas citan costos y rentabilidad, no demanda: opex US$426,9M, I+D +101,5%, margen operativo no-GAAP de 16% a 10%.
+- **NDR de Figma** —refuta→ **El estándar de reporting se degrada donde hay presión de IA (H16)** (F-527, descriptiva) · **estado: abierta**
+  - En Figma no se activa H16: el Q2 reporta NDR 136% y 15.964 clientes >US$10 mil (+34%) y 1.635 >US$100 mil (+46%).
+- **Cartera de innovación de Credicorp como % de ingresos ajustados por riesgo (8,1% en el 4T25)** —refuta→ **Las metas de innovación se anuncian y no se reportan (H30)** (F-529, descriptiva) · **estado: abierta**
+  - Credicorp reporta cada trimestre su cartera de innovación ante la SEC: 5,4% → 7,4% (3T25) → 8,1% (4T25), con meta de 10% hacia 2026.
+- **Innovation rate de Henkel (participación en ventas de productos recientes; ~30% del grupo en 2017)** —refuta→ **Las metas de innovación se anuncian y no se reportan (H30)** (F-532, descriptiva) · **estado: abierta**
+  - Evidencia débil: la métrica se reporta públicamente (>45% en consumo, 30% en adhesivos), pero meta y cumplimiento no se verificaron.
+- **Una mejor UX puede subir la conversión hasta 400% (Forrester)** —refuta→ **Las estadísticas UX atribuidas a Gartner, Forrester o NN/g no existen como se citan (H23)** (F-535, descriptiva) · **estado: abierta**
+  - No todas fallan: 2 de 6 existen como se citan (Gartner 40% agentes, Forrester 400% de conversión); por eso H23 pasa a parcial.
+- **Precisión de la disposición a pagar estimada con LLM** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-547, observacional) · **estado: abierta**
+  - La disposición a pagar estimada con GPT a veces se parece a la humana, pero a menudo es inexacta y a veces tiene el signo errado.
+- **Juego 11-20 (profundidad de razonamiento estratégico)** —refuta→ **Los LLMs reproducen los sesgos y heurísticas de decisión humanos** (F-554, observacional) · **estado: abierta**
+  - En el juego 11-20, casi todos los modelos y técnicas fallan en replicar la distribución humana de profundidad de razonamiento.
+- **Juego 11-20 (profundidad de razonamiento estratégico)** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-554, observacional) · **estado: abierta**
+  - Advierten tomar precaución al usar LLMs como sustitutos de sujetos humanos.
+- **Modelos ChatGPT-3.5 y 4** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-556, observacional) · **estado: abierta**
+  - Solo 19,4% de los intervalos contiene el efecto original; peor en raza, género y ética.
+- **El LLM no cambia su respuesta ante redacciones que alteran mucho el significado** —refuta→ **Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea)** (F-557, observacional) · **estado: abierta**
+  - Si el modelo no responde al significado, no captura la cognición sino la forma de la tarea.
+- **El LLM no cambia su respuesta ante redacciones que alteran mucho el significado** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-557, observacional) · **estado: abierta**
+  - Los LLMs no simulan la psicología humana: piden validar contra humanos en cada aplicación nueva.
+- **Las respuestas sintéticas inflan 2-4 veces las diferencias entre segmentos** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-558, observacional) · **estado: abierta**
+  - Ningún LLM supera la línea base a nivel individual.
+- **Gemelos digitales con LLM de personas reales (Twin-2K-500)** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-559, observacional) · **estado: abierta**
+  - Correlación gemelo-humano ≈0,2: capturan diferencias relativas, pero no la predicción individual ni las medias.
+- **Flexibilidad analítica: el parecido humano-sintético depende de decisiones del analista** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-561, observacional) · **estado: abierta**
+  - Ninguna configuración es óptima en general.
+- **Centaur produce salidas humanas con procesos no humanos (memoria de 256 dígitos, 1 ms)** —refuta→ **Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea)** (F-565, teorica) · **estado: abierta**
+  - Bowers lo califica de absurdo como modelo de la mente: imita salidas humanas sin procesos humanos.
+- **Alteraciones triviales de una tarea (p. ej., un contenedor transparente)** —refuta→ **Los LLMs tienen teoría de la mente (atribuyen estados mentales)** (F-576, causal) · **estado: abierta**
+  - Que alteraciones triviales inviertan el desempeño lleva a Ullman a proponer el escepticismo como hipótesis nula ante la teoría de la mente en LLMs (preprint).
+- **Advertir que la IA es aduladora** —refuta→ **Advertir sobre la adulación reduce la influencia persuasiva de la IA** (F-589, causal) · **estado: abierta**
+  - La advertencia no reduce la influencia persuasiva de la IA aduladora.
+- **Predice el signo del efecto pero no su magnitud** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-590, teorica) · **estado: abierta**
+  - Si los sujetos simulados aciertan el signo pero no la magnitud, no sirven para inferencia cuantitativa en lugar de humanos (refutación parcial).
+- **Salarios y horas trabajadas** —refuta→ **Los chatbots de IA ya tienen efectos visibles sobre salarios y horas** (F-595, observacional) · **estado: abierta**
+  - Se descartan efectos de los chatbots sobre salarios u horas mayores a 1%: la productividad por tarea aún no se ve en el mercado laboral.
+- **Estudiar Centaur para entender la mente es como estudiar una calculadora para entender la suma (Guest)** —contradice→ **Centaur simula la mente humana** (F-599, teorica) · **estado: abierta**
+  - La cobertura del NYT sobre Centaur (jul-2025) ya incluía el escepticismo de Olivia Guest: estudiarlo para entender la mente es como estudiar una calculadora para entender la suma.
+- **Una encuesta que no pregunta a gente real no es una encuesta (es un modelo)** —contradice→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-601, teorica) · **estado: abierta**
+  - Nate Silver (abr-2026) excluye de sus promedios las encuestas generadas con IA y propone llamarlas modelos (opinión, sin método propio).
+- **Los encuestados sintéticos son la 'homeopatía' de la investigación de mercados** —contradice→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-603, teorica) · **estado: abierta**
+  - La frase de Conjointly se volvió meme del rechazo a los encuestados sintéticos dentro de la propia industria de investigación de mercados.
+- **Usuarios sintéticos para investigación de experiencia de usuario (UX)** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-604, descriptiva) · **estado: abierta**
+  - La evaluación de NN/g concluye que eran demasiado superficiales para ser útiles (vía blog que la resume).
+- **Estudio de Prolific sobre encuestados sintéticos frente a medición humana** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-605, descriptiva) · **estado: abierta**
+  - Un estudio de Prolific concluye que los encuestados sintéticos no reemplazan la medición humana.
+- **Demanda de usuarios por el regreso de GPT-4o, el modelo 'cálido' (#keep4o)** —refuta→ **Los usuarios rechazan la IA aduladora** (F-609, descriptiva) · **estado: abierta**
+  - Validación conductual en contra de la retórica anti-adulación (prensa tecnológica).
+- **ARR de Aaru (menor a US$10M)** —refuta→ **El negocio de encuestados sintéticos está validado por ingresos reales** (F-617, descriptiva) · **estado: abierta**
+  - Pese a la valoración de US$1.000M, el ARR de Aaru es menor a US$10M (refutación parcial).
+- **El negocio más probado es la investigación asistida por IA con personas reales, no el reemplazo sintético** —contradice→ **El negocio de encuestados sintéticos está validado por ingresos reales** (F-623, teorica) · **estado: abierta**
+  - Si lo que más tracción prueba es la investigación asistida con personas reales, el reemplazo sintético no está igual de validado (tensión parcial).
+- **Precios sintéticos por encima de los reales y orden lógico de precios roto** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-627, observacional) · **estado: abierta**
+  - Frente a 3.000 personas reales, los precios de 2 proveedores sintéticos salieron 16% más altos y el orden lógico de precios se rompió en 68% de los casos.
+- **Pronósticos electorales de Aaru en 2024 (Haley en New Hampshire, Harris en el Colegio Electoral)** —refuta→ **Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística** (F-628, descriptiva) · **estado: abierta**
+  - Aaru pronosticó la victoria de Nikki Haley en New Hampshire y la de Harris en el Colegio Electoral 2024; ambas fallaron.
+- **Instant Checkout convirtió menos de 1% frente a 3-4% de la industria** —refuta→ **Los agentes orquestarán hasta US$1 billón del retail de EE.UU. y US$3-5 billones global al 2030** (F-632, descriptiva) · **estado: abierta**
+  - Señal de problema: el retiro de Instant Checkout por baja conversión choca con el pronóstico de agentes que orquestan billones (refutación parcial, por prensa).
+- **Transacciones con agentes en comercios (3%) frente a preparación (89%)** —refuta→ **El comercio agéntico ya opera con compras reales** (F-633, descriptiva) · **estado: abierta**
+  - 89% de comercios se prepara para el comercio agéntico, pero solo 3% de sus transacciones involucra agentes (refutación parcial: existe, pero marginal).
+- **Lo que crece es la IA como canal de descubrimiento, no las compras hechas por agentes** —contradice→ **El comercio agéntico ya opera con compras reales** (F-634, teorica) · **estado: abierta**
+  - El crecimiento medido es de descubrimiento vía IA, no de compras ejecutadas por agentes (tensión parcial).
+- **Desmentido público (científicos, autoridades o usuarios en redes)** —refuta→ **El estudio de anestesia en ratas (2024) apoya la base cuántica de la conciencia (Orch-OR)** (F-843, teorica) · **estado: abierta**
+  - Physics Forums: los usuarios señalan que el experimento no mide nada cuántico y que Orch-OR está desacreditado; hay una minoría favorable.
+- **Crítica de Scott Aaronson a Penrose (2016)** —refuta→ **Argumento gödeliano de Lucas-Penrose (la comprensión humana no es algorítmica)** (F-846, teorica) · **estado: abierta**
+  - Aaronson, experto en computación cuántica, critica el argumento gödeliano de Penrose sobre la conciencia.
+- **Decoherencia cuántica en el cerebro caliente y húmedo** —refuta→ **Hipótesis del cerebro como computadora cuántica** (F-846, teorica) · **estado: abierta**
+  - Aaronson invoca la decoherencia como objeción a un cerebro que compute de forma cuántica.
+- **Críticas de Seth, Koch y Chalmers a la carta contra la IIT** —refuta→ **La teoría de la información integrada (IIT) es pseudociencia** (F-847, teorica) · **estado: abierta**
+  - Seth, Koch y Chalmers rechazan la etiqueta; Chalmers la compara con 'lanzar una bomba nuclear sobre una disputa regional'.
+- **Colaboración adversarial Cogitate (Nature, 30-04-2025)** —contradice→ **Teoría de la información integrada (IIT)** (F-849, descriptiva) · **estado: abierta**
+  - Según el MPI de Estética Empírica, los resultados desafían a la IIT.
+- **Colaboración adversarial Cogitate (Nature, 30-04-2025)** —contradice→ **Teoría del espacio de trabajo neuronal global (GNWT)** (F-849, descriptiva) · **estado: abierta**
+  - Según el MPI, los resultados también desafían a la teoría del espacio de trabajo global.
+- **Colaboración adversarial Cogitate (Nature, 30-04-2025)** —contradice→ **Teoría del espacio de trabajo neuronal global (GNWT)** (F-850, descriptiva) · **estado: abierta**
+  - Comunicado de Birmingham: ni la IIT ni la teoría del espacio de trabajo global salen indemnes del estudio.
+- **Colaboración adversarial Cogitate (Nature, 30-04-2025)** —contradice→ **Teoría de la información integrada (IIT)** (F-851, descriptiva) · **estado: abierta**
+  - Explicador de Monash Lens / Singularity Hub: los científicos probaron dos grandes teorías y no hallaron un ganador.
+- **Aclaración del Minsal de Chile sobre la 'sanación cuántica' (2024)** —refuta→ **Los desmentidos circulan mucho menos que los titulares que corrigen** (F-855, descriptiva) · **estado: abierta**
+  - Caso raro (contraejemplo parcial): el desmentido institucional circuló tanto como el anuncio.
+- **Declaración de autofinanciamiento de Nirvanic ('self-funded')** —refuta→ **Nirvanic levantó una ronda Early VC en nov-2024 (Dealroom)** (F-862, descriptiva) · **estado: abierta**
+  - Nirvanic declara estar 'self-funded' y Crunchbase no muestra financiamiento: no hay ronda verificada.
+- **La compra de Chopra Global tiene un 'valor anticipado' de US$20 M a cinco años** —contradice→ **La compra de Chopra Global fue por hasta US$5 M en efectivo + acciones y hasta US$3 M de earnout (filing SEC)** (F-870, descriptiva) · **estado: abierta**
+  - Tensión parcial: el comunicado habla de US$20 M; el filing, de hasta US$5 M en efectivo + acciones de una empresa con duda de continuidad.
+- **Acuerdo FTC con Quantum Wellness Botanical Institute (US$660.000, 2020)** —refuta→ **La píldora ReJuvenation cura casi todas las dolencias de la edad** (F-871, descriptiva) · **estado: abierta**
+  - La FTC sancionó afirmar sin evidencia que la píldora curaba casi todas las dolencias de la edad.
+- **Alerta sanitaria INVIMA 006-2025 sobre el 'Quantum Resonance Magnetic Analyzer'** —refuta→ **El 'Quantum Resonance Magnetic Analyzer' diagnostica hasta 52 enfermedades** (F-874, descriptiva) · **estado: abierta**
+  - El analizador, vendido por internet y que promete diagnosticar hasta 52 enfermedades, no tiene registro sanitario y se considera fraudulento.
 
 ## 5. Hubs (entidades más conectadas)
 
 | Entidad | Tipo | Grado | Fuentes |
 |---|---|---|---|
+| Muestras sintéticas con LLM (personas simuladas que responden encuestas) | intervencion | 22 | 21 |
 | El Niño / ENSO (fase cálida) | concepto | 21 | 18 |
+| Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística | afirmacion | 19 | 18 |
+| Generative UI (interfaces generadas por LLM) | intervencion | 17 | 15 |
 | Niño Costero peruano (1997-98, 2017, 2023) | concepto | 15 | 13 |
-| Generative UI (interfaces generadas por LLM) | intervencion | 11 | 10 |
-| Conciencia (experiencia subjetiva) | constructo | 11 | 10 |
-| Herramientas de IA generativa | intervencion | 10 | 6 |
-| Muestras sintéticas con LLM (personas simuladas que responden encuestas) | intervencion | 10 | 9 |
-| Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff) | concepto | 10 | 8 |
-| Modelos ChatGPT-3.5 y 4 | intervencion | 9 | 6 |
-| Seguro paramétrico (pago según índice observable) | intervencion | 9 | 9 |
-| Obediencia a órdenes dañinas (llegar a la descarga máxima) | resultado | 9 | 7 |
+| Herramientas de IA generativa | intervencion | 14 | 10 |
+| Modelos ChatGPT-3.5 y 4 | intervencion | 14 | 9 |
+| Orch-OR: reducción objetiva orquestada en microtúbulos (Penrose-Hameroff) | concepto | 14 | 12 |
+| Backlash del consumidor | resultado | 13 | 10 |
+| Es una proyección, no una medición | limitacion | 13 | 13 |
 
 ## 6. Discrepancias halladas contra el ledger (para `cronista`; no se corrigen aquí)
 
@@ -870,6 +1358,51 @@
 | 2026-10-10 | F-811, F-812, F-813, F-814, F-815, F-816, F-817, F-818, F-819 | 12 | – | Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo). |
 | 2026-10-10 | F-820, F-821, F-822, F-823, F-824, F-825, F-826, F-827, F-828 | 9 | – | Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo). |
 | 2026-10-10 | F-829, F-830, F-831, F-832, F-833, F-834, F-835, F-836, F-837 | 13 | – | Conciencia cuántica (/trinidad, 2026-10-10), pista empírica: fuentes verificadas contra resumen o ficha oficial vía búsqueda (WebFetch, PubMed y Crossref bloqueados; sin texto completo). |
+| 2026-10-11 | F-1, F-5, F-12, F-13, F-14, F-15, F-25, F-30 | 25 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-31, F-34, F-35, F-38, F-39, F-45, F-46, F-47 | 31 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-31 |
+| 2026-10-11 | F-48, F-49, F-50, F-51, F-52, F-62, F-68, F-70 | 26 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-71, F-72, F-73, F-74, F-75, F-76, F-77, F-78 | 23 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-79, F-81, F-82, F-84, F-85, F-86, F-87, F-88 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-95, F-96, F-98, F-99, F-101, F-108, F-113, F-114 | 26 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-116, F-117, F-126, F-127, F-128, F-129, F-130, F-132 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-133, F-134, F-135, F-136, F-137, F-139, F-140, F-146 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-149, F-152, F-155, F-157, F-160, F-162, F-165, F-166 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-167, F-168, F-171, F-172, F-173, F-174, F-177, F-179 | 21 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-182, F-185, F-186, F-187, F-188, F-189, F-190, F-192 | 21 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-196, F-201, F-202, F-204, F-205, F-206, F-207, F-208 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-209, F-210, F-211, F-212, F-213, F-214, F-215, F-216 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-217, F-227, F-233, F-234, F-235, F-249, F-255, F-260 | 27 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-261, F-268, F-269, F-270, F-271, F-273, F-274, F-275 | 26 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-276, F-277, F-278, F-279, F-281, F-284, F-286, F-287 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-288, F-289, F-290, F-291, F-292, F-293, F-294, F-296 | 20 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-297, F-298, F-299, F-300, F-301, F-302, F-313, F-314 | 23 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-315, F-319, F-322, F-325, F-326, F-327, F-328, F-329 | 21 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-32 |
+| 2026-10-11 | F-332, F-342, F-343, F-344, F-346, F-347, F-348, F-350 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-351, F-354, F-355, F-356, F-358, F-360, F-361, F-362 | 27 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-363, F-364, F-365, F-366, F-367, F-368, F-369, F-370 | 26 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-371, F-372, F-373, F-377, F-378, F-379, F-380, F-385 | 29 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-37 |
+| 2026-10-11 | F-388, F-389, F-390, F-391, F-392, F-393, F-394, F-395 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-38 |
+| 2026-10-11 | F-396, F-397, F-398, F-399, F-400, F-402, F-404, F-405 | 26 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-406, F-408, F-409, F-410, F-411, F-412, F-413, F-414 | 25 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-415, F-416, F-417, F-418, F-419, F-421, F-422, F-423 | 25 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-424, F-425, F-426, F-427, F-435, F-438, F-439, F-440 | 28 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-443, F-444, F-445, F-446, F-450, F-451, F-453, F-455 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-45 |
+| 2026-10-11 | F-456, F-457, F-458, F-459, F-460, F-462, F-463, F-464 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-45 |
+| 2026-10-11 | F-467, F-468, F-479, F-510, F-511, F-512, F-513, F-520 | 23 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-47 |
+| 2026-10-11 | F-522, F-526, F-527, F-528, F-529, F-532, F-535, F-536 | 23 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-52 |
+| 2026-10-11 | F-541, F-543, F-547, F-549, F-550, F-554, F-556, F-557 | 26 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-54 |
+| 2026-10-11 | F-558, F-559, F-561, F-562, F-565, F-570, F-576, F-578 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  Notas: F-56 |
+| 2026-10-11 | F-587, F-588, F-589, F-590, F-592, F-593, F-594, F-595 | 25 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-599, F-600, F-601, F-602, F-603, F-604, F-605, F-606 | 19 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-607, F-608, F-609, F-610, F-611, F-612, F-613, F-614 | 20 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-615, F-616, F-617, F-618, F-619, F-620, F-621, F-622 | 21 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-623, F-624, F-625, F-626, F-627, F-628, F-630, F-632 | 27 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-633, F-634, F-635, F-638, F-639, F-640, F-643, F-644 | 28 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-645, F-838, F-839, F-840, F-841, F-842, F-843, F-844 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-845, F-846, F-847, F-848, F-849, F-850, F-851, F-852 | 25 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-853, F-854, F-855, F-856, F-857, F-858, F-859, F-860 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-861, F-862, F-863, F-864, F-865, F-866, F-867, F-868 | 24 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
+| 2026-10-11 | F-869, F-870, F-871, F-872, F-873, F-874, F-875 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

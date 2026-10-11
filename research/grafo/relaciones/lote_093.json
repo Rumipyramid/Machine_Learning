@@ -1,0 +1,339 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-415",
+  "F-416",
+  "F-417",
+  "F-418",
+  "F-419",
+  "F-421",
+  "F-422",
+  "F-423"
+ ],
+ "entidades": [
+  {
+   "id": "muestra_ux_is_dead",
+   "nombre": "Muestra de piezas 'UX is dead / el diseño ha muerto' (n≈8, may-jun 2026)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_doom_modelo_negocio",
+   "nombre": "El discurso de 'la IA mata al diseño' tiene modelo de negocio (H11)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_antidoom_tambien_negocio",
+   "nombre": "El discurso que corrige el pánico también tiene modelo de negocio",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "lim_muestra_conveniencia",
+   "nombre": "Muestra de conveniencia recogida por búsqueda, no censo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "despidos_livspace",
+   "nombre": "Despidos en Livspace, India (~1.000 personas, ~12% de la plantilla, incluye diseño)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "encuestas_ia_espana_2026",
+   "nombre": "Encuestas de confianza y adopción de IA en España (may-2026, reproducidas por blogs)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_brecha_actitud_conducta_ia_general",
+   "nombre": "El rechazo declarado a la IA convive con una adopción alta (población general)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "poblacion_espana",
+   "nombre": "Población general de España",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "c_brecha_actitud_conducta_disenadores",
+   "nombre": "Brecha actitud-conducta en diseñadores: discurso anti-IA con adopción altísima (H9)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "busqueda_gartner_newsroom",
+   "nombre": "Búsqueda propia en gartner.com/newsroom (hallazgo negativo)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "caso_contestado",
+   "nombre": "Caso contestado: versiones opuestas de la empresa y de ex-empleados, ninguna verificable",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "desmentido_mercadolibre",
+   "nombre": "Declaración oficial de MercadoLibre sobre los despidos de UX (9-ene-2026)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "notas_analistas_figma_2026",
+   "nombre": "Notas de analistas sobre Figma, julio 2026 (BofA, RBC, Citi)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "crecimiento_rga",
+   "nombre": "Crecimiento de R/GA (+30% H2'25 vs. H1'25; +25% interanual en Q1 2026)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "lim_cifra_autorreportada",
+   "nombre": "Cifra autorreportada por la empresa, sin filing que la audite",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "pivote_ia_consultoras",
+   "nombre": "Pivote de agencias y consultoras de diseño a implementadoras de IA",
+   "tipo": "concepto"
+  },
+  {
+   "id": "forrester_2016_ux_roi",
+   "nombre": "Forrester 2016 (estudio tras paywall sobre retorno de la inversión en UX)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "maze_ux_stats_2026",
+   "nombre": "Maze 2026: 40+ Key UX Stats",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_roi_diseno_rotacion",
+   "nombre": "El ROI del diseño se cita por rotación: una cifra desmontada se sustituye por otra (H22)",
+   "tipo": "afirmacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "muestra_ux_is_dead",
+   "p": "respalda",
+   "o": "c_doom_modelo_negocio",
+   "f": "F-415",
+   "apoyo": "~60-70% de los amplificadores muestreados tiene incentivo comercial identificable (bootcamp, Substack de pago, YouTube monetizado, agencia).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "muestra_ux_is_dead",
+   "p": "respalda",
+   "o": "c_antidoom_tambien_negocio",
+   "f": "F-415",
+   "apoyo": "Varias piezas que piden dejar de decir que el diseño murió son newsletters o bootcamps que necesitan tráfico; una lo llama 'el truco de engagement más viejo'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "muestra_ux_is_dead",
+   "p": "tiene_limite",
+   "o": "lim_muestra_conveniencia",
+   "f": "F-415",
+   "apoyo": "Opinión sin método; muestra de conveniencia de unas 8 piezas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "despidos_livspace",
+   "p": "es_tipo_de",
+   "o": "compresion_rol_diseno",
+   "f": "F-416",
+   "apoyo": "Feb-2026: ~1.000 despidos (~12% de la plantilla) con funciones de diseño incluidas; tercer mercado emergente con conducta corporativa fechada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "despidos_livspace",
+   "p": "refuta",
+   "o": "c_desfase_geografico_latam",
+   "f": "F-416",
+   "apoyo": "Amplía a economías emergentes, junto a MercadoLibre, el patrón de compresión del rol vía IA: no hay mercado al margen.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "despidos_livspace",
+   "p": "respalda",
+   "o": "c_conducta_local_discurso_importado",
+   "f": "F-416",
+   "apoyo": "La conducta es local pero la cobertura es solo en inglés: refuerza H20 desde el otro lado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "encuestas_ia_espana_2026",
+   "p": "respalda",
+   "o": "c_brecha_actitud_conducta_ia_general",
+   "f": "F-417",
+   "apoyo": "49% de españoles rechaza o se preocupa por la IA, pero 82% ya la usa y 62% ahorra tiempo cada semana; confianza 68% empleados vs. 92% ejecutivos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "encuestas_ia_espana_2026",
+   "p": "aplica_a",
+   "o": "poblacion_espana",
+   "f": "F-417",
+   "apoyo": "Medido en población general, no en el gremio de diseño.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_brecha_actitud_conducta_ia_general",
+   "p": "respalda",
+   "o": "c_brecha_actitud_conducta_disenadores",
+   "f": "F-417",
+   "apoyo": "Solo como analogía de refuerzo: misma estructura de discurso de rechazo más adopción alta, pero en población general; H9 sigue abierta.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "encuestas_ia_espana_2026",
+   "p": "tiene_limite",
+   "o": "lim_no_verificado_primario",
+   "f": "F-417",
+   "apoyo": "Blogs de negocio reproducen encuestas de terceros sin acceso al informe primario.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "busqueda_gartner_newsroom",
+   "p": "refuta",
+   "o": "c_gartner_60_tareas_diseno",
+   "f": "F-418",
+   "apoyo": "No existe reporte de Gartner con '60% de tareas de diseño con IA', '80%' ni '68%'; sus '60%' reales tratan de otros temas (proyectos de IA, equipos de ingeniería, agentes).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "busqueda_gartner_newsroom",
+   "p": "respalda",
+   "o": "c_autoridad_prestada",
+   "f": "F-418",
+   "apoyo": "La cifra que circula bajo el nombre de Gartner no es una cita real: es autoridad fabricada o mal transcrita.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_gartner_60_tareas_diseno",
+   "p": "aplica_a",
+   "o": "medios_hispanohablantes",
+   "f": "F-418",
+   "apoyo": "La cifra atribuida a Gartner circula en blogs en español.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "despidos_ux_mercadolibre",
+   "p": "tiene_limite",
+   "o": "caso_contestado",
+   "f": "F-419",
+   "apoyo": "La empresa habla de reorganización para integrar Diseño y Contenido; ex-empleados dicen que entrenaban los sistemas que los reemplazan. Deja de ser conducta limpia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desmentido_mercadolibre",
+   "p": "refuta",
+   "o": "c_ia_principal_causa_despidos",
+   "f": "F-419",
+   "apoyo": "Para este caso la empresa niega la atribución a IA: reorganización interna que representó menos del 0,09% de su plantilla de más de 125.000.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desmentido_mercadolibre",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-419",
+   "apoyo": "Declaración de la parte interesada, contrastada con testimonio de ex-empleados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "precio_accion_figma",
+   "p": "respalda",
+   "o": "c_castigo_por_disrupcion",
+   "f": "F-421",
+   "apoyo": "Cierre de US$24,30 el 31-jul-2026, aún bajo la IPO de $33; precio objetivo promedio cae de ~$40 (marzo) a $31-33 y aparece la primera recomendación de venta entre 16 casas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "notas_analistas_figma_2026",
+   "p": "respalda",
+   "o": "c_impuesto_margen_ia",
+   "f": "F-421",
+   "apoyo": "RBC corta a $22 tras Config 2026 cuestionando el margen operativo no-GAAP guiado de solo ~9% por gasto en cómputo de IA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "consenso_analistas_figma",
+   "p": "tiene_limite",
+   "o": "lim_opinion_analistas",
+   "f": "F-421",
+   "apoyo": "Dispersión real entre compiladores ($30,56 / $32,67 / $36,11): reportar como rango, no como punto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_rga",
+   "p": "refuta",
+   "o": "c_crisis_consultoras",
+   "f": "F-422",
+   "apoyo": "Primer contraejemplo en tres iteraciones: único crecimiento de doble dígito hallado en consultoras/agencias de diseño. Parcial: R/GA nunca fue consultora de diseño pura.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_rga",
+   "p": "tiene_limite",
+   "o": "lim_cifra_autorreportada",
+   "f": "F-422",
+   "apoyo": "Agencia privada (management + Truelink Capital desde mar-2025); cifra difundida por prensa que cita a la propia empresa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "crecimiento_rga",
+   "p": "asocia_con",
+   "o": "pivote_ia_consultoras",
+   "f": "F-422",
+   "apoyo": "La nota enmarca el giro como pivote a IA y consolidación, no como recuperación del modelo de consultoría de diseño: encaja con la cláusula de escape de H15.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_forrester_1_100",
+   "p": "origina_en",
+   "o": "forrester_2016_ux_roi",
+   "f": "F-423",
+   "apoyo": "Maze atribuye el '$1 invertido → $100 de retorno' a Forrester (2016, tras paywall).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "maze_ux_stats_2026",
+   "p": "refuta",
+   "o": "c_roi_diseno_rotacion",
+   "f": "F-423",
+   "apoyo": "Describe el $1→$100 como 'el benchmark estándar para justificar presupuestos de diseño' en 2026: la cifra desmontada no fue reemplazada, sigue dominante.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "maze_ux_stats_2026",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-423",
+   "apoyo": "Compilación de estadísticas de un vendor de herramientas de research UX, sin método propio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

@@ -1,0 +1,340 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-276",
+  "F-277",
+  "F-278",
+  "F-279",
+  "F-281",
+  "F-284",
+  "F-286",
+  "F-287"
+ ],
+ "entidades": [
+  {
+   "id": "diseno_justicia",
+   "nombre": "Design justice: diseño liderado por comunidades marginadas",
+   "tipo": "concepto"
+  },
+  {
+   "id": "reproduccion_desigualdad_diseno",
+   "nombre": "Reproducción de estructuras de desigualdad por el diseño",
+   "tipo": "resultado"
+  },
+  {
+   "id": "poca_friccion_teorica",
+   "nombre": "Poca fricción crítica interna entre marcos teóricos del campo",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_reapropiacion_anticonsumista",
+   "nombre": "Las estrategias anticonsumistas del diseño son reapropiadas para servir al crecimiento económico",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "diseno_social_especulativo",
+   "nombre": "Diseño social y diseño especulativo",
+   "tipo": "concepto"
+  },
+  {
+   "id": "trabajo_diseno_grafico",
+   "nombre": "Trabajo del diseño gráfico (monedas, documentos, interfaces, branding)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "capitalismo",
+   "nombre": "Capitalismo (sistema económico)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "defuturing",
+   "nombre": "Defuturing: el diseño consume futuro (Fry)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "reportes_tendencias_vendors",
+   "nombre": "Reportes de tendencias UX/UI 2026 de fabricantes de herramientas (UXPin, Envato, Stan.vision)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_spatial_design_tendencia",
+   "nombre": "El diseño espacial (spatial computing) es una tendencia clave de 2026",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "disenadores_plataformas_espaciales",
+   "nombre": "Solo ~5% de diseñadores construye para plataformas espaciales reales",
+   "tipo": "resultado"
+  },
+  {
+   "id": "valor_percibido_ia_ux",
+   "nombre": "Valor percibido de la IA entre profesionales de UX (47% algún valor, 20% no impresionado)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "profesionales_ux",
+   "nombre": "Profesionales de UX",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "nngroup_state_ux_2026",
+   "nombre": "State of UX 2026 (Nielsen Norman Group)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "acusaciones_ai_slop",
+   "nombre": "Acusaciones de 'AI slop' en comentarios online",
+   "tipo": "resultado"
+  },
+  {
+   "id": "gatekeeping_social",
+   "nombre": "Gatekeeping social (control de quién pertenece a un grupo)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "analisis_25m_comentarios_slop",
+   "nombre": "Análisis de 25 millones de comentarios sobre acusaciones de 'AI slop' (vía unite.ai)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_slop_identifica_ia",
+   "nombre": "Las acusaciones de 'AI slop' identifican contenido hecho con IA",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "movimiento_anti_slop",
+   "nombre": "Movimiento anti-slop en diseño (rechazo al contenido genérico hecho con IA)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "manifiesto_slopless",
+   "nombre": "Manifiesto SLOPLESS de Michal Malewicz",
+   "tipo": "concepto"
+  },
+  {
+   "id": "eidos_slop_rebellion",
+   "nombre": "Newsletter Eidos Design, Vol. XXXII: The Slop Rebellion",
+   "tipo": "concepto"
+  }
+ ],
+ "triples": [
+  {
+   "s": "diseno_justicia",
+   "p": "reduce",
+   "o": "reproduccion_desigualdad_diseno",
+   "f": "F-276",
+   "apoyo": "Costanza-Chock (2020): el diseño reproduce estructuras de desigualdad salvo que sea liderado por comunidades marginadas.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_justicia",
+   "p": "asocia_con",
+   "o": "diseno_ontologico",
+   "f": "F-276",
+   "apoyo": "Se buscó fricción crítica entre este marco y el de Escobar (2024-2026) y no se encontró: se tratan como complementarios.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "diseno_justicia",
+   "p": "tiene_limite",
+   "o": "poca_friccion_teorica",
+   "f": "F-276",
+   "apoyo": "La ausencia de crítica cruzada con Escobar señala poca fricción interna del campo teórico.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_reapropiacion_anticonsumista",
+   "p": "aplica_a",
+   "o": "diseno_social_especulativo",
+   "f": "F-277",
+   "apoyo": "Pater (2021): las estrategias anticonsumistas, como el social design y el speculative design, son sistemáticamente reapropiadas para servir al crecimiento económico.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "trabajo_diseno_grafico",
+   "p": "parte_de",
+   "o": "capitalismo",
+   "f": "F-277",
+   "apoyo": "El capitalismo depende materialmente del trabajo del diseño gráfico: monedas, documentos, interfaces y branding.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_reapropiacion_anticonsumista",
+   "p": "contradice",
+   "o": "c_narrativa_multiplicadores_diseno",
+   "f": "F-277",
+   "apoyo": "Marco con el que se lee críticamente la literatura del 'valor del diseño': ese valor se mide en crecimiento económico, no en su supuesta neutralidad (tensión parcial).",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "defuturing",
+   "p": "refuta",
+   "o": "c_diseno_resuelve_problemas",
+   "f": "F-278",
+   "apoyo": "Fry (2020): el diseño consume futuro; es base de la crítica al solucionismo en diseño.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "defuturing",
+   "p": "asocia_con",
+   "o": "diseno_ontologico",
+   "f": "F-278",
+   "apoyo": "Ambos marcos se usan en la misma sección crítica del node como filosofías del diseño que cuestionan la idea de resolver problemas.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "reportes_tendencias_vendors",
+   "p": "tiene_limite",
+   "o": "sin_validacion_empirica",
+   "f": "F-279",
+   "apoyo": "Reportes sin método, sin muestra y sin datos; se registran como objeto de estudio de cómo se fabrica una tendencia, no como evidencia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reportes_tendencias_vendors",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-279",
+   "apoyo": "Contenido de marketing de quienes venden las herramientas de la tendencia ('AI-Native Interface', 'calm UI', 'generative UI', 'spatial design').",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_spatial_design_tendencia",
+   "p": "origina_en",
+   "o": "reportes_tendencias_vendors",
+   "f": "F-279",
+   "apoyo": "El discurso del diseño espacial como tendencia 2026 nace en los reportes de los fabricantes de herramientas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "disenadores_plataformas_espaciales",
+   "p": "refuta",
+   "o": "c_spatial_design_tendencia",
+   "f": "F-279",
+   "apoyo": "Los mismos reportes reconocen que solo ~5% de los diseñadores construye para plataformas espaciales reales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "valor_percibido_ia_ux",
+   "p": "aplica_a",
+   "o": "profesionales_ux",
+   "f": "F-281",
+   "apoyo": "NN/g 2026: los profesionales de UX están partidos sobre la IA: 47% le ve 'algún valor' y 20% no está impresionado. División, no pánico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "valor_percibido_ia_ux",
+   "p": "parte_de",
+   "o": "percepcion_campo_diseno",
+   "f": "F-281",
+   "apoyo": "La división sobre el valor de la IA es parte de cómo el gremio de UX percibe el estado de su campo en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nngroup_state_ux_2026",
+   "p": "tiene_limite",
+   "o": "metodologia_no_auditable",
+   "f": "F-281",
+   "apoyo": "Consultora de industria con encuesta propia; metodología no auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "acusaciones_ai_slop",
+   "p": "es_tipo_de",
+   "o": "gatekeeping_social",
+   "f": "F-284",
+   "apoyo": "Análisis de 25 M de comentarios: las acusaciones de 'AI slop' funcionan cada vez más como gatekeeping social, y su alza no es parte de un aumento general de hostilidad online.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "analisis_25m_comentarios_slop",
+   "p": "refuta",
+   "o": "c_slop_identifica_ia",
+   "f": "F-284",
+   "apoyo": "Las acusaciones de 'AI slop' crecientemente no identifican contenido de IA real: operan como mecanismo social específico de exclusión.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "analisis_25m_comentarios_slop",
+   "p": "tiene_limite",
+   "o": "cita_segunda_mano",
+   "f": "F-284",
+   "apoyo": "El análisis llega reportado por un vehículo de prensa tecnológica (unite.ai), no por la publicación primaria.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "movimiento_anti_slop",
+   "p": "origina_en",
+   "o": "manifiesto_slopless",
+   "f": "F-286",
+   "apoyo": "El manifiesto SLOPLESS de Malewicz (X, LinkedIn, slopless.design) es el origen rastreable del movimiento anti-slop.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "manifiesto_slopless",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendedor",
+   "f": "F-286",
+   "apoyo": "Malewicz vende cursos de diseño, publica a la vez 'Designers will OWN 2026-2030' y el manifiesto anti-slop, y admite provocar para medir reacciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "manifiesto_slopless",
+   "p": "tiene_limite",
+   "o": "sin_validacion_empirica",
+   "f": "F-286",
+   "apoyo": "Creador individual, sin metodología.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "eidos_slop_rebellion",
+   "p": "origina_en",
+   "o": "manifiesto_slopless",
+   "f": "F-287",
+   "apoyo": "Eidos Design sistematizó el movimiento anti-slop tras el manifiesto original: eslabón intermedio de la cadena de amplificación.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "eidos_slop_rebellion",
+   "p": "parte_de",
+   "o": "movimiento_anti_slop",
+   "f": "F-287",
+   "apoyo": "Newsletter amplificadora clave del movimiento anti-slop.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "eidos_slop_rebellion",
+   "p": "tiene_limite",
+   "o": "eco_cita_fuentes",
+   "f": "F-287",
+   "apoyo": "Amplificador sin reporteo propio: repite el manifiesto en vez de aportar una confirmación independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

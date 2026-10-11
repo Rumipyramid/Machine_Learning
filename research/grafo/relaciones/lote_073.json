@@ -1,0 +1,322 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-116",
+  "F-117",
+  "F-126",
+  "F-127",
+  "F-128",
+  "F-129",
+  "F-130",
+  "F-132"
+ ],
+ "entidades": [
+  {
+   "id": "modelo_chenmed",
+   "nombre": "Atención primaria basada en valor de ChenMed",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "incidencia_stroke",
+   "nombre": "Incidencia de accidente cerebrovascular (stroke)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "conflicto_interes_proveedor",
+   "nombre": "Fuente con interés comercial directo en el resultado que reporta",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "indecopi_proceso_pacifico_spam_2025",
+   "nombre": "Proceso sancionador de Indecopi a Pacífico Seguros por llamadas spam (2025)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tres_niveles_precio",
+   "nombre": "Página de precios con 3 niveles (good-better-best)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "conversion_pagina_precios",
+   "nombre": "Conversión de la página de precios",
+   "tipo": "resultado"
+  },
+  {
+   "id": "cifra_sin_metodo_publicado",
+   "nombre": "Cifra sin muestra ni método publicado (no verificable de forma independiente)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "plataforma_sales_enablement",
+   "nombre": "Plataformas de habilitación de ventas con contenido gestionado (Highspot, Seismic)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "win_rate_ventas",
+   "nombre": "Tasa de cierre de ventas (win rate)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "confusion_inversion_habilitacion",
+   "nombre": "La adopción de la plataforma coincide con más inversión general en ventas (confunde la causalidad)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "marketing_interrupcion",
+   "nombre": "Marketing de interrupción",
+   "tipo": "concepto"
+  },
+  {
+   "id": "sobrecarga_estimulos_medios",
+   "nombre": "Sobrecarga de estímulos y fragmentación de medios",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "marketing_permiso",
+   "nombre": "Marketing de permiso (opt-in, Godin)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "atencion_consumidor",
+   "nombre": "Atención y relación anticipada con el consumidor",
+   "tipo": "resultado"
+  },
+  {
+   "id": "inbound_marketing",
+   "nombre": "Inbound marketing (atraer leads en vez de prospectar en frío)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "costo_por_lead",
+   "nombre": "Costo por lead",
+   "tipo": "resultado"
+  },
+  {
+   "id": "fuente_secundaria_no_primaria",
+   "nombre": "Cifra vista solo en fuentes secundarias, sin acceso al documento original",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "alineacion_incentivos_estrategia",
+   "nombre": "Alinear el modelo de incentivos con los objetivos estratégicos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "tcpa",
+   "nombre": "Telephone Consumer Protection Act (TCPA, EE.UU.)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "regla_fcc_one_to_one",
+   "nombre": "Regla de consentimiento 'one-to-one' de la FCC",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "marco_tcpa_en_disputa",
+   "nombre": "Marco de consentimiento telefónico de EE.UU. en disputa judicial",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "modelo_chenmed",
+   "p": "es_tipo_de",
+   "o": "pago_basado_valor_ap",
+   "f": "F-116",
+   "apoyo": "ChenMed se presenta como atención primaria basada en valor, comparada contra fee-for-service.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "modelo_chenmed",
+   "p": "reduce",
+   "o": "incidencia_stroke",
+   "f": "F-116",
+   "apoyo": "ChenMed reporta 22% menos incidencia de stroke en pacientes con más de un año de inscripción (blog corporativo).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "modelo_chenmed",
+   "p": "aumenta",
+   "o": "outcomes_salud",
+   "f": "F-116",
+   "apoyo": "ChenMed reporta mejor desempeño que fee-for-service en tamizaje de cáncer de mama, HbA1c y estatinas (comparación 2020).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "modelo_chenmed",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_proveedor",
+   "f": "F-116",
+   "apoyo": "Cifras autopublicadas por la propia empresa evaluada, sin arbitraje externo; su NPS de 80-90 supera con mucho el 23-35 típico de aseguradoras.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "indecopi_proceso_pacifico_spam_2025",
+   "p": "aplica_a",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-117",
+   "apoyo": "Indecopi analizó 50.000 audios del call center Impulsa365 que ofrecía productos de Pacífico Seguros sin autorización explícita; multa potencial superior a S/2 M.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ley_32323_antispam",
+   "p": "aplica_a",
+   "o": "consumidores_seguros_peru",
+   "f": "F-117",
+   "apoyo": "El caso Pacífico es precedente directo en seguros bajo el art. 58.1.e del Código de Protección al Consumidor (Ley 32323).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "indecopi_proceso_pacifico_spam_2025",
+   "p": "parte_de",
+   "o": "regulacion_consentimiento_contacto_comercial",
+   "f": "F-117",
+   "apoyo": "El proceso aplica la exigencia de autorización explícita del consumidor antes de ofrecerle productos por teléfono.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tres_niveles_precio",
+   "p": "aumenta",
+   "o": "conversion_pagina_precios",
+   "f": "F-126",
+   "apoyo": "Blog de consultoría 2026: 3 niveles convierten ~1,4x más que 2; el nivel medio reencuadra la decisión de 'sí/no' a 'cuál'.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tamano_surtido",
+   "p": "reduce",
+   "o": "conversion_pagina_precios",
+   "f": "F-126",
+   "apoyo": "Según el mismo blog, pasar a 4 o más niveles de precio convierte peor que 3.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tres_niveles_precio",
+   "p": "tiene_limite",
+   "o": "cifra_sin_metodo_publicado",
+   "f": "F-126",
+   "apoyo": "La cifra 1,4x no tiene muestra ni método publicado; usar la estructura de 3 opciones como recomendación, no como dato duro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "plataforma_sales_enablement",
+   "p": "aumenta",
+   "o": "win_rate_ventas",
+   "f": "F-127",
+   "apoyo": "Highspot y Seismic publican mejoras de win rate de 10-25% atribuidas al contenido de venta gestionado, incluido material visual.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "plataforma_sales_enablement",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_proveedor",
+   "f": "F-127",
+   "apoyo": "Cifras 'vendor-attested', autoreportadas por las plataformas o sus revendedores.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "plataforma_sales_enablement",
+   "p": "tiene_limite",
+   "o": "confusion_inversion_habilitacion",
+   "f": "F-127",
+   "apoyo": "La adopción suele coincidir con mayor inversión general en habilitación de ventas: el dato es direccional, no causal.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "marketing_interrupcion",
+   "p": "tiene_limite",
+   "o": "sobrecarga_estimulos_medios",
+   "f": "F-128",
+   "apoyo": "Godin 1999: el marketing de interrupción pierde efectividad por sobrecarga de estímulos y fragmentación de medios.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "marketing_permiso",
+   "p": "aumenta",
+   "o": "atencion_consumidor",
+   "f": "F-128",
+   "apoyo": "Godin 1999: el opt-in construye una relación anticipada, personal y relevante; el consumidor 'vota' prestando atención.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "inbound_marketing",
+   "p": "reduce",
+   "o": "costo_por_lead",
+   "f": "F-129",
+   "apoyo": "Caso HBS de HubSpot (vía resúmenes): los leads inbound cuestan 5-7 veces menos que los outbound.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "inbound_marketing",
+   "p": "tiene_limite",
+   "o": "fuente_secundaria_no_primaria",
+   "f": "F-129",
+   "apoyo": "Cifras tomadas de resúmenes en Medium, UKEssays y SlideShare; no se accedió al caso original de HBS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "alineacion_incentivos_estrategia",
+   "p": "asocia_con",
+   "o": "desempeno_financiero_firma",
+   "f": "F-130",
+   "apoyo": "Atribuido a Bain: las empresas que alinean incentivos con su estrategia ven 15% más crecimiento de utilidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "alineacion_incentivos_estrategia",
+   "p": "tiene_limite",
+   "o": "fuente_secundaria_no_primaria",
+   "f": "F-130",
+   "apoyo": "La cifra del 15% se vio solo en blogs de consultoría (SalesGlobe, Alexander Group), no en el reporte original de Bain.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tcpa",
+   "p": "es_tipo_de",
+   "o": "regulacion_consentimiento_contacto_comercial",
+   "f": "F-132",
+   "apoyo": "El TCPA es el marco de EE.UU. que regula el consentimiento para la venta de seguros por teléfono.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "regla_fcc_one_to_one",
+   "p": "parte_de",
+   "o": "tcpa",
+   "f": "F-132",
+   "apoyo": "La FCC impuso la regla 'one-to-one' de consentimiento bajo el TCPA.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "regla_fcc_one_to_one",
+   "p": "tiene_limite",
+   "o": "marco_tcpa_en_disputa",
+   "f": "F-132",
+   "apoyo": "11.º Circuito 2025: la FCC excedió su autoridad al imponer un consentimiento más estricto que el texto del TCPA; el marco sigue en disputa activa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

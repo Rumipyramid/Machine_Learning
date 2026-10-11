@@ -1,0 +1,348 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-48",
+  "F-49",
+  "F-50",
+  "F-51",
+  "F-52",
+  "F-62",
+  "F-68",
+  "F-70"
+ ],
+ "entidades": [
+  {
+   "id": "plan_nacional_telesalud_2026",
+   "nombre": "Plan Nacional de Telesalud 2026 (RM 293-2026/MINSA)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "atencion_no_obtenida_peru",
+   "nombre": "Peruanos que necesitaron atención médica y no la obtuvieron (7 de cada 10 en 2022)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "minsa",
+   "nombre": "MINSA (Ministerio de Salud del Perú)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "inkafarma_mifarma",
+   "nombre": "InkaFarma + Mifarma (InRetail/Intercorp)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "delivery_farmacia_express",
+   "nombre": "Delivery express de medicamentos (30-45 min)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "babylon_triage",
+   "nombre": "Sistema de diagnóstico y triage con IA de Babylon Health",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "lancet_babylon_2020",
+   "nombre": "Evaluación en The Lancet del sistema de triage de Babylon Health (2020)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_ia_triage_igual_o_mejor_que_medicos",
+   "nombre": "Los sistemas de triage/diagnóstico con IA rinden igual o mejor que los médicos humanos",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "sobreclamo_ia_sin_validacion_clinica",
+   "nombre": "Sobreclamar el desempeño de una IA clínica sin validación clínica",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "ada_health",
+   "nombre": "Ada Health (verificador de síntomas con IA)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_validacion_clinica_diferencia_supervivencia",
+   "nombre": "La validación clínica rigurosa, no la tecnología de IA, distingue a las healthtech de triage que sobreviven",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "mercado_telemedicina_latam",
+   "nombre": "Mercado de telemedicina de América Latina (US$3.460M en 2026 → 12.340M en 2034)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mercado_salud_digital_latam",
+   "nombre": "Mercado de salud digital de América Latina (US$12.820M en 2024 → 66.400M en 2033)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "doble_validacion_samd",
+   "nombre": "Doble validación de software médico con IA: técnica (precisión, reproducibilidad) y clínica (valor en uso real)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "solo_validacion_tecnica",
+   "nombre": "Validar solo la precisión técnica del software y no su valor clínico en uso real",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "reglamento_lpdp_2025",
+   "nombre": "Reglamento de la Ley de Protección de Datos Personales (vigente desde 31-mar-2025)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "llamada_unica_consentimiento",
+   "nombre": "Llamada única para solicitar consentimiento (art. 26 del reglamento LPDP)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "llamada_unica_solo_pedir_consentimiento",
+   "nombre": "La llamada única solo sirve para pedir consentimiento (no vender) y exige datos de fuente lícita",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "sanciones_indecopi_spam_2025",
+   "nombre": "Sanciones de Indecopi por llamadas spam (26 empresas, S/2,6M en 2025; multas de hasta 450 UIT)",
+   "tipo": "intervencion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "plan_nacional_telesalud_2026",
+   "p": "aplica_a",
+   "o": "adopcion_telemedicina_peru",
+   "f": "F-48",
+   "apoyo": "La Red Nacional de Telemedicina conecta más de 2.000 establecimientos y Teleatiendo registra más de 3 millones de atenciones remotas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "atencion_no_obtenida_peru",
+   "p": "origina_en",
+   "o": "minsa",
+   "f": "F-48",
+   "apoyo": "Según el comunicado del MINSA, 7 de cada 10 peruanos que necesitaron atención médica en 2022 no la obtuvieron.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "plan_nacional_telesalud_2026",
+   "p": "aplica_a",
+   "o": "modelo_farmacias_triage",
+   "f": "F-48",
+   "apoyo": "Pista del proyecto: ya existen infraestructura y apetito estatal para un modelo de salud remoto-primero.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "inkafarma_mifarma",
+   "p": "parte_de",
+   "o": "boticas_privadas_peru",
+   "f": "F-49",
+   "apoyo": "InkaFarma+Mifarma suman 2.245 farmacias, el 18% de las boticas del país; ingresos de S/6.327M en 2022 (+5,1%).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "delivery_farmacia_express",
+   "p": "aplica_a",
+   "o": "inkafarma_mifarma",
+   "f": "F-49",
+   "apoyo": "El delivery express de 30-45 minutos ya opera a nivel nacional.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "delivery_farmacia_express",
+   "p": "parte_de",
+   "o": "modelo_farmacias_triage",
+   "f": "F-49",
+   "apoyo": "La infraestructura de delivery de 'farmacias cercanas' que requiere el modelo ya existe a escala, no es hipotética.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "babylon_triage",
+   "p": "es_tipo_de",
+   "o": "verificador_sintomas_electronico",
+   "f": "F-50",
+   "apoyo": "Babylon Health ofrecía un sistema de diagnóstico y triage automatizado (chatbot de síntomas).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lancet_babylon_2020",
+   "p": "refuta",
+   "o": "c_ia_triage_igual_o_mejor_que_medicos",
+   "f": "F-50",
+   "apoyo": "Según The Lancet, Babylon 'no ofreció evidencia convincente de desempeñarse mejor que médicos humanos en ninguna situación realista' y pudo rendir significativamente peor.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "babylon_triage",
+   "p": "tiene_limite",
+   "o": "sobreclamo_ia_sin_validacion_clinica",
+   "f": "F-50",
+   "apoyo": "Babylon colapsó (de ~US$4.200M de valuación a la bancarrota) tras sobreclamar el desempeño de su IA sin validación clínica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ada_health",
+   "p": "es_tipo_de",
+   "o": "verificador_sintomas_electronico",
+   "f": "F-51",
+   "apoyo": "Ada Health es una plataforma de chatbot de salud comparable a Babylon.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ada_health",
+   "p": "respalda",
+   "o": "c_validacion_clinica_diferencia_supervivencia",
+   "f": "F-51",
+   "apoyo": "A diferencia de Babylon, Ada sigue operando con foco en investigación clínica revisada por pares y alianzas con Novartis, Bayer y Pfizer.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ada_health",
+   "p": "tiene_limite",
+   "o": "sin_metodologia_publicada",
+   "f": "F-51",
+   "apoyo": "La comparación viene de una reseña de industria (IntuitionLabs) sin metodología propia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_telemedicina_latam",
+   "p": "parte_de",
+   "o": "mercado_salud_digital_latam",
+   "f": "F-52",
+   "apoyo": "Salud digital LatAm: ~US$12.820M (2024) → 66.400M (2033), CAGR ~20%; telemedicina: ~US$3.460M (2026) → 12.340M (2034), CAGR 17,2%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mercado_salud_digital_latam",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-52",
+   "apoyo": "Son proyecciones de firmas de investigación de mercado con metodología propia no auditable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "adopcion_telemedicina_peru",
+   "p": "parte_de",
+   "o": "mercado_telemedicina_latam",
+   "f": "F-52",
+   "apoyo": "Brasil lidera el mercado regional; Perú no aparece como líder: viento a favor fuerte, pero Perú es rezagado y tiene pocos comparables locales de escala.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doble_validacion_samd",
+   "p": "aplica_a",
+   "o": "ia_clinica",
+   "f": "F-62",
+   "apoyo": "El marco de la FDA para software como dispositivo médico separa la validación técnica de la validación clínica en el contexto de uso real.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_clinica",
+   "p": "tiene_limite",
+   "o": "solo_validacion_tecnica",
+   "f": "F-62",
+   "apoyo": "Error común: validar solo la precisión del software y no si su resultado es clínicamente significativo en uso real.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "doble_validacion_samd",
+   "p": "aplica_a",
+   "o": "verificador_sintomas_electronico",
+   "f": "F-62",
+   "apoyo": "Omaolo (Finlandia) está regulado como dispositivo médico clase IIa con marcado CE.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doble_validacion_samd",
+   "p": "aplica_a",
+   "o": "modelo_farmacias_triage",
+   "f": "F-62",
+   "apoyo": "La lógica de doble validación es aplicable al modelo de triage aunque el marco regulatorio peruano sea distinto.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "reglamento_lpdp_2025",
+   "p": "parte_de",
+   "o": "ley_29733_datos_personales",
+   "f": "F-68",
+   "apoyo": "Nuevo reglamento de la Ley de Protección de Datos Personales, vigente desde el 31/03/2025, que refuerza el consentimiento para llamadas publicitarias.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reglamento_lpdp_2025",
+   "p": "es_tipo_de",
+   "o": "regulacion_consentimiento_contacto_comercial",
+   "f": "F-68",
+   "apoyo": "El reglamento regula el consentimiento previo para recibir llamadas publicitarias.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "llamada_unica_consentimiento",
+   "p": "parte_de",
+   "o": "reglamento_lpdp_2025",
+   "f": "F-68",
+   "apoyo": "Art. 26: solo se permite una única llamada cuyo único fin sea solicitar consentimiento.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "llamada_unica_consentimiento",
+   "p": "tiene_limite",
+   "o": "llamada_unica_solo_pedir_consentimiento",
+   "f": "F-68",
+   "apoyo": "La llamada no puede vender, exige que los datos provengan de fuente lícita y no habilita un 'primer contacto' indiscriminado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "fiscalizacion_ia_indecopi_audios",
+   "p": "aplica_a",
+   "o": "llamadas_comerciales_sin_consentimiento",
+   "f": "F-70",
+   "apoyo": "Indecopi usa IA para analizar más de 7 millones de audios de llamadas comerciales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sanciones_indecopi_spam_2025",
+   "p": "aplica_a",
+   "o": "contacto_comercial_sin_consentimiento",
+   "f": "F-70",
+   "apoyo": "26 empresas sancionadas en 2025 por S/2,6M; multas de hasta 450 UIT (~S/2.407.500); Scotiabank con multa potencial de más de S/2,4M.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sanciones_indecopi_spam_2025",
+   "p": "parte_de",
+   "o": "regulacion_consentimiento_contacto_comercial",
+   "f": "F-70",
+   "apoyo": "Indecopi anuncia acciones drásticas por incumplir la nueva ley que prohíbe llamadas spam: riesgo de sanción real y activo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}

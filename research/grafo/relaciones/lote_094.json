@@ -1,0 +1,361 @@
+{
+ "fecha": "2026-10-11",
+ "f_ids": [
+  "F-424",
+  "F-425",
+  "F-426",
+  "F-427",
+  "F-435",
+  "F-438",
+  "F-439",
+  "F-440"
+ ],
+ "entidades": [
+  {
+   "id": "c_nielsen_83_conversion",
+   "nombre": "Invertir 10% en UX aumenta la conversión 83% (atribuido a Nielsen)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "nielsen_pre2000",
+   "nombre": "Trabajo de Nielsen anterior al año 2000",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_karat_1_10_100",
+   "nombre": "US$1 en investigación UX ahorra US$10 en desarrollo y US$100 en mantenimiento (atribuido a Karat)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "karat_pre2000",
+   "nombre": "Trabajo de Clare-Marie Karat anterior al año 2000",
+   "tipo": "estudio"
+  },
+  {
+   "id": "regla_costo_defectos_software",
+   "nombre": "Regla de ingeniería de software: corregir un defecto cuesta más cuanto más tarde se detecta",
+   "tipo": "concepto"
+  },
+  {
+   "id": "figr_ds_roi_2026",
+   "nombre": "figr.design 2026: How to Measure Design System ROI",
+   "tipo": "estudio"
+  },
+  {
+   "id": "ndr_lovable",
+   "nombre": "NDR declarada de Lovable (>100%)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "lim_ndr_oculta_churn",
+   "nombre": "Una NDR >100% es compatible con churn masivo si quienes quedan gastan mucho más",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "barclays_lovable",
+   "nombre": "Barclays: análisis de tráfico y valuación implícita de Lovable",
+   "tipo": "estudio"
+  },
+  {
+   "id": "open_innovation",
+   "nombre": "Innovación abierta (open innovation)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "chesbrough_2023",
+   "nombre": "Chesbrough 2023: retrospectiva de 20 años de open innovation",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_70_20_10_retorno",
+   "nombre": "El 70% del retorno de innovación viene del 10% transformacional del portafolio (70-20-10)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "hbr_70_20_10",
+   "nombre": "Nagji y Tuff 2012 (HBR): Managing Your Innovation Portfolio",
+   "tipo": "estudio"
+  },
+  {
+   "id": "lim_sin_replica_independiente",
+   "nombre": "Sin réplica independiente",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_innovacion_2_4x",
+   "nombre": "Las empresas con ≥5 de los 8 'esenciales' de innovación tienen 2,4x mejor desempeño financiero",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "mckinsey_innovation_commitment",
+   "nombre": "McKinsey (~2023): The Innovation Commitment, 8 esenciales de la innovación",
+   "tipo": "estudio"
+  },
+  {
+   "id": "c_ten_types_desempeno",
+   "nombre": "Usar más 'tipos' de innovación se asocia a mejor desempeño financiero",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "doblin_ten_types",
+   "nombre": "Doblin / Keeley: Ten Types of Innovation",
+   "tipo": "estudio"
+  }
+ ],
+ "triples": [
+  {
+   "s": "c_nielsen_83_conversion",
+   "p": "origina_en",
+   "o": "nielsen_pre2000",
+   "f": "F-424",
+   "apoyo": "IxDF atribuye el +83% de conversión por 10% de inversión en UX a Nielsen; origen anterior a 2000, recirculado sin fecha en 2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_karat_1_10_100",
+   "p": "origina_en",
+   "o": "karat_pre2000",
+   "f": "F-424",
+   "apoyo": "El '$1 en investigación UX ahorra $10 en desarrollo y $100 en mantenimiento' se atribuye a Clare-Marie Karat, origen anterior a 2000.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_narrativa_multiplicadores_diseno",
+   "p": "origina_en",
+   "o": "regla_costo_defectos_software",
+   "f": "F-424",
+   "apoyo": "Confirma la sospecha de que el '100x de UX' confunde una regla de ingeniería de software con un ROI de inversión en diseño.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_karat_1_10_100",
+   "p": "es_tipo_de",
+   "o": "c_narrativa_multiplicadores_diseno",
+   "f": "F-424",
+   "apoyo": "Nueva capa de conflación en la cadena de eco del ROI del diseño.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "figr_ds_roi_2026",
+   "p": "refuta",
+   "o": "c_roi_diseno_rotacion",
+   "f": "F-425",
+   "apoyo": "Usa el 135% / $2,35 por dólar de Smashing (2022) como cifra vigente en 2026: cero reemplazo y cero corrección cuatro años después.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_roi_ds_135",
+   "p": "aplica_a",
+   "o": "design_system",
+   "f": "F-425",
+   "apoyo": "Presentada en 2026 como la cifra para medir el ROI de un design system, aunque nació como modelo y no como medición.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "figr_ds_roi_2026",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-425",
+   "apoyo": "Blog de un proveedor que vende la herramienta cuyo ROI mide.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "conversaciones_ronda_lovable_2026",
+   "p": "tiene_limite",
+   "o": "ronda_no_cerrada",
+   "f": "F-426",
+   "apoyo": "Al 8-jul-2026 la ronda de $300M liderada por Menlo a $13,2B (el doble de $6,6B de dic-2025) seguía en conversaciones; al 2-ago no había confirmación de cierre.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lovable_arr",
+   "p": "tiene_limite",
+   "o": "lim_cifra_autorreportada",
+   "f": "F-426",
+   "apoyo": "ARR run-rate autorreportado: ~$400M (feb-2026) → ~$500M (jun-2026), con 146 empleados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "lovable_trafico",
+   "p": "respalda",
+   "o": "c_vibe_coding_no_retiene",
+   "f": "F-427",
+   "apoyo": "Barclays: tráfico −40% desde el pico y valuación implícita de US$1,8B, entre 3 y 7 veces menos que los $5-13,2B de la narrativa de ronda. Refuerza H14 sin cerrarla.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "lovable_arr",
+   "p": "tiene_limite",
+   "o": "lovable_churn_no_publicado",
+   "f": "F-427",
+   "apoyo": "Lovable se negó explícitamente a compartir su churn y el split mensual/anual al ser preguntada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ndr_lovable",
+   "p": "tiene_limite",
+   "o": "lim_ndr_oculta_churn",
+   "f": "F-427",
+   "apoyo": "La empresa sostiene NDR >100%, pero un analista señala que eso es compatible con churn masivo si los que quedan gastan más.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "barclays_lovable",
+   "p": "tiene_limite",
+   "o": "lim_no_verificado_primario",
+   "f": "F-427",
+   "apoyo": "Metodología de banco de inversión no leída en el documento original; posible exposición del emisor a competidores.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "open_innovation",
+   "p": "tiene_limite",
+   "o": "sesgo_publicacion",
+   "f": "F-435",
+   "apoyo": "Su propio creador reconoce que en la literatura de open innovation 'hay muchos más estudios de éxitos que de fracasos'.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "chesbrough_2023",
+   "p": "tiene_limite",
+   "o": "lim_sin_revision_pares",
+   "f": "F-435",
+   "apoyo": "Ensayo retrospectivo en venue de práctica gerencial no arbitrado, escrito por el autor del paradigma.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "chesbrough_2023",
+   "p": "aplica_a",
+   "o": "open_innovation",
+   "f": "F-435",
+   "apoyo": "Tesis atribuible al autor, no consenso del campo; es el gemelo del autocuestionamiento de Norman en diseño.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_70_20_10_retorno",
+   "p": "origina_en",
+   "o": "hbr_70_20_10",
+   "f": "F-438",
+   "apoyo": "Origen del canon 70-20-10 de portafolio de innovación, publicado en revista de práctica gerencial sin N ni muestra localizables.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_70_20_10_retorno",
+   "p": "tiene_limite",
+   "o": "lim_sin_replica_independiente",
+   "f": "F-438",
+   "apoyo": "Se buscó activamente réplica independiente en 12+ años de circulación y no existe ninguna.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "hbr_70_20_10",
+   "p": "tiene_limite",
+   "o": "lim_interes_emisor",
+   "f": "F-438",
+   "apoyo": "Los autores son socios de Monitor Group, la consultora que vende el framework.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_70_20_10_retorno",
+   "p": "es_tipo_de",
+   "o": "eco_cita",
+   "f": "F-438",
+   "apoyo": "Cadena de eco n.º 1 de innovación, gemela estructural del '$1 → $100' de Forrester.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_innovacion_2_4x",
+   "p": "origina_en",
+   "o": "mckinsey_innovation_commitment",
+   "f": "F-439",
+   "apoyo": "Base propietaria de economic profit (175-183 empresas, 7 años), correlacional y sin significancia publicada.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "mckinsey_innovation_commitment",
+   "p": "tiene_limite",
+   "o": "lim_dato_propietario_no_auditable",
+   "f": "F-439",
+   "apoyo": "Misma ausencia de significancia y de auditoría que el índice de diseño de McKinsey (+32/+56 pp); metodología no leída (403).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_innovacion_2_4x",
+   "p": "es_tipo_de",
+   "o": "eco_cita",
+   "f": "F-439",
+   "apoyo": "Cadena de eco n.º 2 de innovación: mismo emisor y mismo tipo de artefacto que en diseño, lo que es evidencia sobre el emisor, no sobre las disciplinas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_innovacion_2_4x",
+   "p": "es_tipo_de",
+   "o": "relacion_innovacion_desempeno",
+   "f": "F-439",
+   "apoyo": "Afirma que más prácticas de innovación se asocian a mejor desempeño financiero (2,4x).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ten_types_desempeno",
+   "p": "origina_en",
+   "o": "doblin_ten_types",
+   "f": "F-440",
+   "apoyo": "Framework propietario que dice haber estudiado 2.000+ innovaciones, sin publicación ni metodología accesible.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doblin_ten_types",
+   "p": "tiene_limite",
+   "o": "lim_dato_propietario_no_auditable",
+   "f": "F-440",
+   "apoyo": "El estudio de respaldo no es auditable: evidencia propietaria no verificable.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "doblin_ten_types",
+   "p": "tiene_limite",
+   "o": "lim_sin_revision_pares",
+   "f": "F-440",
+   "apoyo": "Nunca pasó por revisión por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ten_types_desempeno",
+   "p": "es_tipo_de",
+   "o": "eco_cita",
+   "f": "F-440",
+   "apoyo": "Cadena de eco n.º 3 de innovación; registrada para que no reingrese como dato duro.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura \"ficha\"), reutilizando entidades existentes cuando el concepto era el mismo. "
+}
