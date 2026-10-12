@@ -24,6 +24,8 @@ NODES = ROOT / "research" / "_nodes"
 LEDGER = ROOT / "research" / "fuentes" / "codice.md"
 OUT = Path(__file__).resolve().parent / "mu-corpus.json"
 MAX = 1800
+# Secciones que son índice o registro, no conocimiento: meterlas al buscador solo agrega ruido a las respuestas.
+OMITIR = re.compile(r"^(Conexiones\b|🔁 Cómo se usa|.*Bitácora)", re.I)
 
 
 def node_title(text, stem):
@@ -46,7 +48,7 @@ def split_node(stem, text):
         parts.append((head, "\n".join(buf).strip()))
     chunks = []
     for head, body in parts:
-        if not body:
+        if not body or OMITIR.match(head):
             continue
         while body:
             if len(body) <= MAX:
@@ -152,6 +154,19 @@ def mago_mesa():
             "cadenas": m["cadenas"][:200], "intuiciones": intu}
 
 
+def relaciones():
+    """Relaciones del grafo semántico en forma compacta: [sujeto, relación, objeto, fuente, fuerza, apoyo]."""
+    ents = json.loads((REL / "entidades.json").read_text(encoding="utf-8"))
+    nom = lambda i: (ents.get(i) or {}).get("nombre", i.replace("_", " "))
+    out = []
+    for line in (REL / "triples.jsonl").read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        t = json.loads(line)
+        out.append([nom(t["s"]), t["p"], nom(t["o"]), t["f"], t.get("fuerza", ""), (t.get("apoyo") or "")[:180]])
+    return out
+
+
 def estado():
     try:
         out = subprocess.run([sys.executable, str(ROOT / "research" / "grafo" / "mu.py")], capture_output=True,
@@ -171,12 +186,13 @@ def main():
     rub = json.loads(RUBRICA.read_text(encoding="utf-8"))["dimensiones"]
     data = {"generado": dt.date.today().isoformat(), "estado": estado(), "nodes": chunks, "fuentes": fuentes,
             "tensiones": tens, "discrepancias": disc, "hipotesis": hipotesis(), "mago": mago_mesa(),
+            "relaciones": relaciones(),
             "rubrica": {k: {"def": v["def"], "verde": v["verde"], "amarillo": v["amarillo"]} for k, v in rub.items()}}
     OUT.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"ok: {len(chunks)} fragmentos de {len(list(NODES.glob('*.md')))} nodes, {len(fuentes)} fuentes, "
           f"{len(tens)} contradicciones ({sum(t['abierta'] for t in tens)} abiertas), {len(data['hipotesis'])} hipótesis, "
           f"mesa del Mago {sum(len(v) for k, v in data['mago'].items() if k != 'intuiciones')} candidatos + "
-          f"{len(data['mago']['intuiciones'])} intuiciones, "
+          f"{len(data['mago']['intuiciones'])} intuiciones, {len(data['relaciones'])} relaciones, "
           f"{OUT.stat().st_size // 1024} KB → {OUT.relative_to(ROOT)}")
 
 
