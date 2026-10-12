@@ -256,6 +256,10 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     return out.sort((a, b) => b[0] - a[0]).slice(0, k).map(([s, i]) => ix.docs[i]);
   }
   const fuenteTxt = f => `${f.id} | ${f.autor} | ${f.anio} | ${f.titulo} | Rigor: ${f.rigor} | ${f.resumen}`;
+  // "Diseño" sin precisar es la disciplina completa (regla del usuario, 2026-10-12): se abre la búsqueda a los demás
+  // dominios para que lo digital, que domina el cerebro, no tape los servicios, lo público o la salud.
+  const DOMINIOS_DISENO = "servicios experiencia política pública intervenciones salud organizacional estratégico industrial físico espacios sostenibilidad social";
+  const ampliarDiseno = q => /dise[ñn]/i.test(q) && !/digital|\bux\b|\bui\b|interfaz|app\b|web\b|servicio|p[uú]blic|salud|industrial|gr[aá]fic|marca|espacio|arquitect|urban|sostenib|circular|social|organizac|estrat[eé]g/i.test(q) ? `${q} ${DOMINIOS_DISENO}` : q;
   const RIGOR_ORDEN = f => "ABCDE".indexOf(f.rig) < 0 ? 5 : "ABCDE".indexOf(f.rig);
   function retrieve(q) {
     // 1) Fragmentos: primero se eligen los nodos que de verdad tratan la pregunta (suma de sus 3 mejores fragmentos);
@@ -327,6 +331,7 @@ Reglas:
 6. Si una afirmación toca una contradicción ABIERTA del grafo, dila como "en disputa" y explica en una frase por qué sigue abierta. Si está resuelta, puedes usar la resolución.
 7. Cuando cites una hipótesis, usa su estado tal como figura (abierta, parcial, respaldada, refutada) y explica qué significa con palabras.
 8. Si la pregunta no es sobre lo que Mu investiga, dilo en una frase y ofrece qué sí puede responder.
+10. "Diseño" es una disciplina global, no solo diseño digital: incluye servicios, políticas e intervenciones públicas, salud, comunicación y marca, diseño estratégico y organizacional, producto físico, espacios, sostenibilidad y diseño social. Si la pregunta dice "diseño" sin precisar, no la reduzcas a producto digital: responde con los dominios que tienen evidencia en los extractos y di en una frase cuáles no cubre el cerebro.
 9. Usa las relaciones y las convergencias del grafo para explicar por qué ocurre algo (el mecanismo) y para decir cuándo varias fuentes distintas apuntan a lo mismo: una conclusión que sostienen varias fuentes independientes pesa más que una sola, y debes decirlo. Si una pieza de lo que recibes no toca la pregunta, ignórala.
 
 ${REDACCION}
@@ -935,7 +940,7 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
   async function ask(q) {
     q = q.trim(); if (!q || !CORPUS) return;
     const entry = newEntry(q);
-    const r = retrieve(q + " " + turns.filter(t => t.role === "user").slice(-1).map(t => t.q).join(" "));
+    const r = retrieve(ampliarDiseno(q) + " " + turns.filter(t => t.role === "user").slice(-1).map(t => t.q).join(" "));
     evidence(entry.ev, r);
     if (!sampleChecked) { try { sample = await window.claude?.use?.("sample"); } catch { sample = null; } sampleChecked = true; try { toolsOk = !!(sample && (await sample.limits()).tools); } catch { toolsOk = false; } }
     if (!sample) { offline(entry, r, "Para que Mu redacte una respuesta, abre esta página en claude.ai con tu sesión iniciada."); return; }

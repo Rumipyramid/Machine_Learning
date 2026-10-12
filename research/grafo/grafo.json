@@ -122,7 +122,7 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2195,
+   "lines": 2215,
    "cites": 373,
    "design": true
   },
@@ -17637,7 +17637,7 @@
      "cites": 373
     },
     "fecha": "2026-10-12",
-    "commit": "8426d40",
+    "commit": "2f57f27",
     "fuente": "git"
    }
   ],
@@ -17657,7 +17657,7 @@
     "⚔️": 4
    },
    "iterations": 9,
-   "lines": 2195,
+   "lines": 2215,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

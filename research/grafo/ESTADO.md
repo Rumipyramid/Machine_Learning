@@ -8,7 +8,7 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,763 líneas |
+| Nodes (`_nodes/`) | 20 | 8,783 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
 | Fuentes en el ledger | 976 | 🟢A 319 · 🔵B 171 · 🟡C 213 · 🟠D 217 · 🔴E 41 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 158 | recíprocas: 158 de 158 (100%) |
@@ -22,7 +22,7 @@
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 9 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02, 2026-10-12) | cuántas veces se confrontó el node |
-| Tamaño | 2,195 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Tamaño | 2,215 líneas | crecimiento ≠ calidad; ver trazabilidad |
 | Fuentes citadas explícitamente | 373 | F-n individuales dentro del node |
 | …de rigor A/B | 186 (50%) | solidez de la base |
 | Hipótesis vivas | 36: abierta 16 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
@@ -106,7 +106,7 @@
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-11 | `614bf74` | 879 | 20 | 5 | 142 | 770 | 2033 | 16 | 20 | 22 |
-| 2026-10-12 | `8426d40` | 976 | 20 | 5 | 158 | 870 | 2195 | 16 | 20 | 22 |
+| 2026-10-12 | `2f57f27` | 976 | 20 | 5 | 158 | 870 | 2195 | 16 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -137,7 +137,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2195 | 373 | 186 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
+| `tendencias-diseno-innovacion` | 2215 | 373 | 186 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
 | `convergencia-psicologia-economia-ia` | 251 | 119 | 51 | 12/12 | 2026-10-12 | 2026-10-12 v1.0 |
 | `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |

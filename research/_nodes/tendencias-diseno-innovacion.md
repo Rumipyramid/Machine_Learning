@@ -65,6 +65,26 @@ iteración a partir de la 4 debe:
 3. **No promediar los dominios.** Si el patrón se sostiene en diseño y falla en innovación, eso es un
    hallazgo — no se resuelve con una conclusión intermedia.
 
+### Qué entendemos por "diseño" (regla del usuario, 2026-10-12)
+"Diseño" es una disciplina global, no un sinónimo de diseño digital. Cuando alguien pregunta por diseño sin precisar, la
+pregunta abarca todos estos dominios, y la respuesta debe decir cuáles tienen evidencia en el cerebro y cuáles no.
+
+| Dominio | Qué incluye | Cobertura en este nodo (2026-10-12) |
+|---|---|---|
+| Producto digital e interfaces | UX/UI, interfaces con IA, design systems, conversión | 🟢 fuerte (§1-§16) |
+| Servicios y experiencia | Recorridos, diseño de servicios, atención, siniestros | 🟡 parcial (§10.2, §13.10, §17) |
+| Políticas e intervenciones públicas | Ciencias conductuales aplicadas, trámites, GovTech, laboratorios públicos | 🟡 parcial (§17; nodo de behavioral design) |
+| Salud | Diseño centrado en las personas en salud, diseño de planes y redes | 🟡 parcial (§17; nodos de salud) |
+| Comunicación, marca y visual | Identidad, lenguaje claro, estética | 🟡 parcial (estética e IA; lenguaje claro en otros nodos) |
+| Estratégico y organizacional | Diseño como función de negocio, liderazgo y madurez de diseño, diseño de modelos de negocio | 🟠 casi vacío |
+| Producto físico e industrial | Diseño industrial, empaque, objetos | 🟠 casi vacío (F-237, F-238) |
+| Espacios, arquitectura y ciudad | Diseño de espacios, retail físico, urbanismo | 🔴 vacío |
+| Sostenibilidad, circularidad y sistemas | Ecodiseño, economía circular, diseño sistémico y de transición | 🔴 vacío salvo la crítica teórica |
+| Social, participativo y especulativo | Co-diseño, diseño social, diseño de futuros | 🟠 casi vacío (solo marcos críticos) |
+
+**Regla para cada corrida y cada respuesta:** no reducir "diseño" a lo digital. Si una corrida solo trae evidencia de
+producto digital, declara qué dominios quedaron fuera. Si una respuesta se apoya en un solo dominio, lo dice.
+
 ⚠️ **Nota operativa para futuras sesiones:** el prompt de la rutina programada todavía dice
 "tendencias en diseño". **Este node manda sobre ese prompt**: el alcance vigente es el de esta
 sección. Si la rutina se edita alguna vez, ampliarlo allí también.

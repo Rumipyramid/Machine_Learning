@@ -368,6 +368,11 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   back-to-basics" → ✓ la lección, la idea o el tema dichos con palabras (el código, si hace falta, va entre paréntesis
   después). Las fuentes se cuentan (qué encontró, quién, cuándo, qué tan sólida es). Guía completa:
   `.claude/skills/mentes/REDACCION.md`.
+- **"Diseño" es global, no digital (regla del usuario, 2026-10-12).** Cuando el usuario dice "diseño" sin precisar, se
+  entiende la disciplina completa: producto digital e interfaces, servicios y experiencia, políticas e intervenciones
+  públicas, salud, comunicación y marca, estratégico y organizacional, producto físico e industrial, espacios y ciudad,
+  sostenibilidad y sistemas, y diseño social y especulativo. Investigaciones, nodos y respuestas de Mu no lo reducen a
+  lo digital; si la evidencia cubre solo algunos dominios, lo dicen. Mapa de cobertura en el §0 del nodo de diseño.
 - **Terminología (regla del usuario, 2026-10-11):** los temas del segundo cerebro (`research/_nodes/*.md`) se llaman
   **nodos** en todo texto para personas (páginas, respuestas de Mu, mentes, Criterio), nunca "documentos"; se dice de
   qué trata cada uno ("el nodo sobre seguros en Perú").
