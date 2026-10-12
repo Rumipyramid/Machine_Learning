@@ -82,11 +82,12 @@
    "id": "accesibilidad_web",
    "nombre": "Mejoras de accesibilidad web/digital",
    "tipo": "intervencion",
-   "grado": 4,
+   "grado": 5,
    "fuentes": [
     "F-264",
     "F-512",
-    "F-523"
+    "F-523",
+    "F-896"
    ]
   },
   {
@@ -1120,9 +1121,11 @@
    "id": "asistente_ia_soporte",
    "nombre": "Asistente conversacional de IA generativa para agentes de soporte",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 4,
    "fuentes": [
-    "F-580"
+    "F-580",
+    "F-888",
+    "F-889"
    ]
   },
   {
@@ -1425,6 +1428,15 @@
    "grado": 2,
    "fuentes": [
     "F-299"
+   ]
+  },
+  {
+   "id": "backlash_rediseno_apps",
+   "nombre": "Rechazo de usuarios a rediseños sin opción de volver atrás",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-900"
    ]
   },
   {
@@ -2616,6 +2628,15 @@
    ]
   },
   {
+   "id": "c_eco_32_confianza",
+   "nombre": "Solo 32% de los diseñadores confía en la salida de la IA",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-893"
+   ]
+  },
+  {
    "id": "c_edge_12x_preciso",
    "nombre": "Edge Audiences es '12 veces más preciso que un LLM genérico'",
    "tipo": "afirmacion",
@@ -3052,12 +3073,14 @@
    "id": "c_impuesto_margen_ia",
    "nombre": "La IA cobra un impuesto de margen a las herramientas de diseño (H32)",
    "tipo": "afirmacion",
-   "grado": 5,
+   "grado": 7,
    "fuentes": [
     "F-323",
     "F-421",
     "F-470",
-    "F-526"
+    "F-526",
+    "F-902",
+    "F-903"
    ]
   },
   {
@@ -3649,6 +3672,16 @@
    ]
   },
   {
+   "id": "c_proceso_diseno_murio",
+   "nombre": "El proceso de diseño tradicional murió con la IA",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-897",
+    "F-898"
+   ]
+  },
+  {
    "id": "c_proxies_vulnerabilidad_debiles",
    "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
    "tipo": "afirmacion",
@@ -3796,9 +3829,10 @@
    "id": "c_senales_incertidumbre_calibran",
    "nombre": "Más señales visuales de incertidumbre calibran mejor la confianza en la IA",
    "tipo": "afirmacion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
-    "F-520"
+    "F-520",
+    "F-885"
    ]
   },
   {
@@ -4259,6 +4293,15 @@
    "grado": 1,
    "fuentes": [
     "F-230"
+   ]
+  },
+  {
+   "id": "calidad_objetiva_servicio",
+   "nombre": "Calidad objetiva de la atención (reintentos, resolución)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-888"
    ]
   },
   {
@@ -4808,14 +4851,16 @@
    "id": "cifra_autorreportada_no_auditada",
    "nombre": "Cifra autorreportada por la empresa o su proveedor, no auditada independientemente",
    "tipo": "limitacion",
-   "grado": 6,
+   "grado": 8,
    "fuentes": [
     "F-332",
     "F-350",
     "F-351",
     "F-354",
     "F-371",
-    "F-373"
+    "F-373",
+    "F-905",
+    "F-907"
    ]
   },
   {
@@ -5241,9 +5286,11 @@
    "id": "competencia_herramientas_diseno",
    "nombre": "Competencia en herramientas de diseño (Adobe, Canva, Figma frente a modelos de IA generalistas)",
    "tipo": "resultado",
-   "grado": 3,
+   "grado": 5,
    "fuentes": [
-    "F-319"
+    "F-319",
+    "F-901",
+    "F-908"
    ]
   },
   {
@@ -5303,6 +5350,15 @@
    ]
   },
   {
+   "id": "compra_impulsiva",
+   "nombre": "Compra impulsiva en tiendas online",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-882"
+   ]
+  },
+  {
    "id": "comprension_plan_salud",
    "nombre": "Comprensión del plan de salud",
    "tipo": "resultado",
@@ -5335,10 +5391,12 @@
    "id": "compresion_rol_diseno",
    "nombre": "Compresión del rol de diseño hacia el generalista apoyada en IA",
    "tipo": "concepto",
-   "grado": 3,
+   "grado": 5,
    "fuentes": [
     "F-391",
-    "F-416"
+    "F-416",
+    "F-899",
+    "F-909"
    ]
   },
   {
@@ -5733,6 +5791,24 @@
    ]
   },
   {
+   "id": "consenso_multi_ia",
+   "nombre": "Consenso de varios asesores de IA",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-886"
+   ]
+  },
+  {
+   "id": "consentimiento_cookies",
+   "nombre": "Consentimiento de cookies",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-883"
+   ]
+  },
+  {
    "id": "consentimiento_previo_expreso_datos",
    "nombre": "Consentimiento previo, informado, expreso e inequívoco para tratar datos personales",
    "tipo": "concepto",
@@ -5971,12 +6047,14 @@
    "id": "costo_ia_inferencia",
    "nombre": "Costo de IA / inferencia",
    "tipo": "concepto",
-   "grado": 4,
+   "grado": 6,
    "fuentes": [
     "F-323",
     "F-470",
     "F-526",
-    "F-527"
+    "F-527",
+    "F-902",
+    "F-903"
    ]
   },
   {
@@ -6075,9 +6153,10 @@
    "id": "crecimiento_ingresos_canva",
    "nombre": "Crecimiento de ingresos previsto de Canva para 2026",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
-    "F-323"
+    "F-323",
+    "F-903"
    ]
   },
   {
@@ -6358,11 +6437,14 @@
    "id": "dark_patterns",
    "nombre": "Dark patterns",
    "tipo": "concepto",
-   "grado": 5,
+   "grado": 9,
    "fuentes": [
     "F-241",
     "F-511",
-    "F-588"
+    "F-588",
+    "F-881",
+    "F-882",
+    "F-884"
    ]
   },
   {
@@ -6858,6 +6940,15 @@
    "grado": 2,
    "fuentes": [
     "F-746"
+   ]
+  },
+  {
+   "id": "despidos_diseno_2026",
+   "nombre": "Despidos de roles de producto y diseño en 2026",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-909"
    ]
   },
   {
@@ -8548,6 +8639,15 @@
    ]
   },
   {
+   "id": "fallas_accesibilidad_webaim",
+   "nombre": "Portadas con fallas de accesibilidad detectables (95,9% en 2026)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-896"
+   ]
+  },
+  {
    "id": "fallas_razonamiento_causal",
    "nombre": "Fallas de razonamiento causal en LLMs",
    "tipo": "limitacion",
@@ -8618,6 +8718,15 @@
    "grado": 2,
    "fuentes": [
     "F-406"
+   ]
+  },
+  {
+   "id": "fatiga_intervencion",
+   "nombre": "Fatiga de intervención: la respuesta cae con la exposición repetida",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-890"
    ]
   },
   {
@@ -8872,9 +8981,10 @@
    "id": "framer_arr",
    "nombre": "ARR de Framer (~US$50M, ago-2025; Serie D de US$100M a US$2B)",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-322"
+    "F-322",
+    "F-908"
    ]
   },
   {
@@ -8921,6 +9031,15 @@
    "grado": 1,
    "fuentes": [
     "F-502"
+   ]
+  },
+  {
+   "id": "friccion_estructural_eleccion",
+   "nombre": "Fricción estructural en la decisión (opciones escondidas tras clics, defaults)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-883"
    ]
   },
   {
@@ -9495,9 +9614,10 @@
    "id": "homogeneizacion_salidas_llm",
    "nombre": "Homogeneización de las salidas de los LLMs (pérdida de diversidad)",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-285"
+    "F-285",
+    "F-894"
    ]
   },
   {
@@ -9614,6 +9734,16 @@
     "F-562",
     "F-590",
     "F-591"
+   ]
+  },
+  {
+   "id": "ia_generativa_proceso_diseno",
+   "nombre": "IA generativa en el proceso de diseño",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-887",
+    "F-895"
    ]
   },
   {
@@ -9793,6 +9923,16 @@
    ]
   },
   {
+   "id": "inconsistencia_eleccion_privacidad",
+   "nombre": "Inconsistencia de las elecciones de privacidad",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-881",
+    "F-884"
+   ]
+  },
+  {
    "id": "incumplimiento_consejo_triaje",
    "nombre": "Pacientes que acuden a urgencias pese a indicación de autocuidado o atención primaria",
    "tipo": "limitacion",
@@ -9952,6 +10092,15 @@
    ]
   },
   {
+   "id": "ingresos_adobe_q3_2026",
+   "nombre": "Ingresos de Adobe Q3 FY2026 (US$6.760 millones, +13%)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-901"
+   ]
+  },
+  {
    "id": "ingresos_bing",
    "nombre": "Ingresos de Bing",
    "tipo": "resultado",
@@ -9988,6 +10137,16 @@
    "grado": 1,
    "fuentes": [
     "F-629"
+   ]
+  },
+  {
+   "id": "ingresos_vercel",
+   "nombre": "Ingresos anualizados de Vercel (~US$340 millones, mar-2026)",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-906",
+    "F-907"
    ]
   },
   {
@@ -11345,6 +11504,15 @@
    ]
   },
   {
+   "id": "margen_base44",
+   "nombre": "Margen bruto de Base44, el creador de apps con IA de Wix (~0% → ~60% proyectado)",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-902"
+   ]
+  },
+  {
    "id": "margen_bruto_figma",
    "nombre": "Margen bruto de Figma",
    "tipo": "resultado",
@@ -12582,6 +12750,15 @@
    ]
   },
   {
+   "id": "novedad_percibida_diseno",
+   "nombre": "Novedad y creatividad percibidas del diseño",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-887"
+   ]
+  },
+  {
    "id": "npp_croda",
    "nombre": "Ventas de productos nuevos y protegidos (NPP) como % de ventas de Croda",
    "tipo": "metrica",
@@ -13008,6 +13185,15 @@
    "grado": 1,
    "fuentes": [
     "F-238"
+   ]
+  },
+  {
+   "id": "patrones_ux_agentica",
+   "nombre": "Marco de seis patrones para diseñar agentes de IA (control, consentimiento, deshacer)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-891"
    ]
   },
   {
@@ -14186,6 +14372,22 @@
    ]
   },
   {
+   "id": "prototipado_con_ia",
+   "nombre": "Prototipado con IA ('vibe coding')",
+   "tipo": "intervencion",
+   "grado": 8,
+   "fuentes": [
+    "F-892",
+    "F-894",
+    "F-895",
+    "F-897",
+    "F-898",
+    "F-899",
+    "F-904",
+    "F-906"
+   ]
+  },
+  {
    "id": "proximidad_linguistica_geografica",
    "nombre": "Proximidad lingüística y geográfica entre países",
    "tipo": "concepto",
@@ -14796,6 +14998,15 @@
    ]
   },
   {
+   "id": "remedio_transparencia",
+   "nombre": "Aviso de transparencia como remedio frente a patrones oscuros",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-881"
+   ]
+  },
+  {
    "id": "rentabilidad_gaap_lemonade",
    "nombre": "Rentabilidad GAAP de Lemonade (no esperada hasta 2027)",
    "tipo": "resultado",
@@ -15006,6 +15217,16 @@
    "grado": 1,
    "fuentes": [
     "F-854"
+   ]
+  },
+  {
+   "id": "retoque_visual_interfaz",
+   "nombre": "Retoques visuales de la interfaz (color, estilo) sin cambiar la estructura",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-883",
+    "F-900"
    ]
   },
   {
@@ -15480,6 +15701,16 @@
    ]
   },
   {
+   "id": "satisfaccion_ia_disenadores",
+   "nombre": "Satisfacción de los diseñadores con la IA (69% frente a 83% de desarrolladores)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-892",
+    "F-893"
+   ]
+  },
+  {
    "id": "satisfaccion_recompra_seguro_online",
    "nombre": "Satisfacción e intención de recompra de seguros online",
    "tipo": "resultado",
@@ -15707,12 +15938,22 @@
    ]
   },
   {
+   "id": "senales_verbales_incertidumbre",
+   "nombre": "Advertencias verbales de incertidumbre en respuestas de IA (hedging)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-520"
+   ]
+  },
+  {
    "id": "senales_visuales_incertidumbre",
    "nombre": "Indicadores visuales de incertidumbre o confianza en salidas de LLM",
    "tipo": "intervencion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
-    "F-520"
+    "F-520",
+    "F-885"
    ]
   },
   {
@@ -16207,14 +16448,15 @@
    "id": "sobreconfianza_ia",
    "nombre": "Sobre-confianza en la IA",
    "tipo": "resultado",
-   "grado": 7,
+   "grado": 8,
    "fuentes": [
     "F-244",
     "F-245",
     "F-246",
     "F-502",
     "F-520",
-    "F-60"
+    "F-60",
+    "F-886"
    ]
   },
   {
@@ -17253,6 +17495,15 @@
    ]
   },
   {
+   "id": "utilidad_diseno",
+   "nombre": "Utilidad y alineación de marca del diseño",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-887"
+   ]
+  },
+  {
    "id": "utilidad_facilidad_seguridad_web_percibidas",
    "nombre": "Utilidad, facilidad de uso y seguridad web percibidas del canal online",
    "tipo": "constructo",
@@ -17331,9 +17582,10 @@
    "id": "ux_agentica",
    "nombre": "UX agéntica (principios de interacción humano-agente de IA)",
    "tipo": "concepto",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
-    "F-261"
+    "F-261",
+    "F-891"
    ]
   },
   {
@@ -17474,6 +17726,16 @@
    ]
   },
   {
+   "id": "valuacion_replit",
+   "nombre": "Valuación de Replit (US$9.000 millones, mar-2026)",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-904",
+    "F-905"
+   ]
+  },
+  {
    "id": "valuacion_wefox",
    "nombre": "Valuación y desempeño de Wefox (de US$4.500M a <US$1.000M)",
    "tipo": "resultado",
@@ -17543,6 +17805,17 @@
    "grado": 1,
    "fuentes": [
     "F-705"
+   ]
+  },
+  {
+   "id": "velocidad_atencion",
+   "nombre": "Velocidad y calificación de la atención al cliente",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-888",
+    "F-889",
+    "F-890"
    ]
   },
   {
@@ -17639,6 +17912,15 @@
    "grado": 2,
    "fuentes": [
     "F-243",
+    "F-520"
+   ]
+  },
+  {
+   "id": "verificacion_independiente",
+   "nombre": "Verificación independiente de lo que dice la IA",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
     "F-520"
    ]
   },
@@ -41199,11 +41481,443 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-11",
    "clase": "estructura"
+  },
+  {
+   "id": "T-1947",
+   "s": "dark_patterns",
+   "p": "aumenta",
+   "o": "inconsistencia_eleccion_privacidad",
+   "f": "F-881",
+   "apoyo": "Tres patrones oscuros subieron entre 6 y 12 puntos la inconsistencia de elecciones de privacidad frente a un placebo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1948",
+   "s": "remedio_transparencia",
+   "p": "tiene_limite",
+   "o": "dark_patterns",
+   "f": "F-881",
+   "apoyo": "El aviso de transparencia no compensó el efecto de los patrones oscuros en el experimento.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1949",
+   "s": "dark_patterns",
+   "p": "aumenta",
+   "o": "compra_impulsiva",
+   "f": "F-882",
+   "apoyo": "Los patrones oscuros aumentaron la compra impulsiva frente al control en todos los diseños probados (compras hipotéticas).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1950",
+   "s": "friccion_estructural_eleccion",
+   "p": "aumenta",
+   "o": "consentimiento_cookies",
+   "f": "F-883",
+   "apoyo": "Esconder opciones detrás de clics es lo que más mueve la elección de cookies; un diseño obstructivo redujo el consentimiento ~17%.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1951",
+   "s": "retoque_visual_interfaz",
+   "p": "asocia_con",
+   "o": "consentimiento_cookies",
+   "f": "F-883",
+   "apoyo": "Los retoques visuales del banner casi no cambian la elección: pesa la estructura, no el aspecto.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1952",
+   "s": "dark_patterns",
+   "p": "aumenta",
+   "o": "inconsistencia_eleccion_privacidad",
+   "f": "F-884",
+   "apoyo": "Revisión sistemática de experimentos (CHI 2026) sobre cómo los patrones oscuros influyen en decisiones y daño.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1953",
+   "s": "senales_verbales_incertidumbre",
+   "p": "reduce",
+   "o": "verificacion_independiente",
+   "f": "F-520",
+   "apoyo": "Advertencias verbales y señales visuales juntas produjeron la mayor sobreconfianza en errores y la menor verificación independiente.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1954",
+   "s": "senales_visuales_incertidumbre",
+   "p": "refuta",
+   "o": "c_senales_incertidumbre_calibran",
+   "f": "F-885",
+   "apoyo": "La incertidumbre por palabra subió el acuerdo con la IA y la de nivel de relación redujo la verificación (N=192, preguntas médicas).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-1955",
+   "s": "consenso_multi_ia",
+   "p": "aumenta",
+   "o": "sobreconfianza_ia",
+   "f": "F-886",
+   "apoyo": "El consenso fuerte de varias IA induce sobredependencia; un disidente la reduce; paneles grandes no suman precisión.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1956",
+   "s": "ia_generativa_proceso_diseno",
+   "p": "aumenta",
+   "o": "novedad_percibida_diseno",
+   "f": "F-887",
+   "apoyo": "Anuncios hechos con IA generativa se juzgaron más creativos e inusuales (N=36, intra-sujetos).",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1957",
+   "s": "ia_generativa_proceso_diseno",
+   "p": "asocia_con",
+   "o": "utilidad_diseno",
+   "f": "F-887",
+   "apoyo": "Sin diferencia en atractivo, alineación de marca ni utilidad entre diseños con y sin IA.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1958",
+   "s": "asistente_ia_soporte",
+   "p": "aumenta",
+   "o": "velocidad_atencion",
+   "f": "F-888",
+   "apoyo": "Experimento de campo con ~6.000 agentes de Alibaba: mejoraron tiempos y calificaciones.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1959",
+   "s": "asistente_ia_soporte",
+   "p": "asocia_con",
+   "o": "calidad_objetiva_servicio",
+   "f": "F-888",
+   "apoyo": "Sin efecto en reintentos; ganaron los agentes más débiles y empeoraron los mejores.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1960",
+   "s": "asistente_ia_soporte",
+   "p": "asocia_con",
+   "o": "velocidad_atencion",
+   "f": "F-889",
+   "apoyo": "Experimento de campo (138 agentes, más de 250.000 chats): efecto mixto de las sugerencias de IA.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1961",
+   "s": "fatiga_intervencion",
+   "p": "modera",
+   "o": "velocidad_atencion",
+   "f": "F-890",
+   "apoyo": "En personalización, la respuesta a una intervención cae con la exposición repetida y se recupera lento (~500.000 clientes).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1962",
+   "s": "patrones_ux_agentica",
+   "p": "parte_de",
+   "o": "ux_agentica",
+   "f": "F-891",
+   "apoyo": "Seis patrones de práctica para diseñar agentes de IA; marco muy reciclado sin validación empírica.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-1963",
+   "s": "satisfaccion_ia_disenadores",
+   "p": "mide",
+   "o": "prototipado_con_ia",
+   "f": "F-892",
+   "apoyo": "Encuesta de Figma (n≈2.500): satisfacción con la IA 69% en diseñadores frente a 83% en desarrolladores.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1964",
+   "s": "c_eco_32_confianza",
+   "p": "origina_en",
+   "o": "satisfaccion_ia_disenadores",
+   "f": "F-893",
+   "apoyo": "El '32%' se atribuye a Figma, pero la página de Figma dice que 40% aún no confía: eco de cita no verificado.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1965",
+   "s": "prototipado_con_ia",
+   "p": "aumenta",
+   "o": "homogeneizacion_salidas_llm",
+   "f": "F-894",
+   "apoyo": "La generación de interfaces sin fricción agrava la homogeneización del diseño web (análisis sociotécnico, preprint).",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1966",
+   "s": "prototipado_con_ia",
+   "p": "parte_de",
+   "o": "ia_generativa_proceso_diseno",
+   "f": "F-895",
+   "apoyo": "UX Tools 2026 (n=1.478): la herramienta más usada después de Figma ya es una IA.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-1967",
+   "s": "fallas_accesibilidad_webaim",
+   "p": "mide",
+   "o": "accesibilidad_web",
+   "f": "F-896",
+   "apoyo": "WebAIM 2026: 95,9% de las portadas con fallas detectables (94,8% en 2025); la accesibilidad empeoró.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1968",
+   "s": "prototipado_con_ia",
+   "p": "respalda",
+   "o": "c_proceso_diseno_murio",
+   "f": "F-897",
+   "apoyo": "Wen (Anthropic): prototipar con IA vuelve obsoleto el proceso descubrir-maquetar-iterar (opinión).",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-1969",
+   "s": "compresion_rol_diseno",
+   "p": "asocia_con",
+   "o": "prototipado_con_ia",
+   "f": "F-899",
+   "apoyo": "Uso semanal de IA de 54% a 91% y 65% con más tareas de producto o ingeniería; eco del informe de Designer Fund.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1970",
+   "s": "backlash_rediseno_apps",
+   "p": "asocia_con",
+   "o": "retoque_visual_interfaz",
+   "f": "F-900",
+   "apoyo": "Rediseños sin opción de volver atrás bajaron calificaciones en tiendas (MyFitnessPal −1,7 estrellas; cifras secundarias).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1971",
+   "s": "ingresos_adobe_q3_2026",
+   "p": "mide",
+   "o": "competencia_herramientas_diseno",
+   "f": "F-901",
+   "apoyo": "Adobe Q3 FY2026: ingresos +13%; el ARR de IA crece >150% sin monto publicado.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1972",
+   "s": "costo_ia_inferencia",
+   "p": "reduce",
+   "o": "margen_base44",
+   "f": "F-902",
+   "apoyo": "El margen bruto de Base44 arrancó cerca de cero; la IA cuesta 30-40% de sus reservas; apunta a ~60% con modelo propio.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1973",
+   "s": "margen_base44",
+   "p": "respalda",
+   "o": "c_impuesto_margen_ia",
+   "f": "F-902",
+   "apoyo": "Caso de un creador de apps con IA cuyo margen depende del costo de inferencia.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-1974",
+   "s": "costo_ia_inferencia",
+   "p": "reduce",
+   "o": "crecimiento_ingresos_canva",
+   "f": "F-903",
+   "apoyo": "Canva recortó su crecimiento esperado de 2026 de 30% a ~20% por el costo de servir IA.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1975",
+   "s": "crecimiento_ingresos_canva",
+   "p": "respalda",
+   "o": "c_impuesto_margen_ia",
+   "f": "F-903",
+   "apoyo": "Tercera empresa con el mismo mecanismo: la IA presiona el margen, no la demanda.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-1976",
+   "s": "valuacion_replit",
+   "p": "mide",
+   "o": "prototipado_con_ia",
+   "f": "F-904",
+   "apoyo": "Serie D de US$400 millones a US$9.000 millones sin publicar ingresos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1977",
+   "s": "valuacion_replit",
+   "p": "tiene_limite",
+   "o": "cifra_autorreportada_no_auditada",
+   "f": "F-905",
+   "apoyo": "Ingresos de Replit estimados por un analista (US$525 millones anualizados), no publicados por la empresa.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1978",
+   "s": "ingresos_vercel",
+   "p": "mide",
+   "o": "prototipado_con_ia",
+   "f": "F-906",
+   "apoyo": "Vercel ~US$340 millones anualizados (estimación); v0 pierde terreno frente a Lovable y Replit.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1979",
+   "s": "ingresos_vercel",
+   "p": "tiene_limite",
+   "o": "cifra_autorreportada_no_auditada",
+   "f": "F-907",
+   "apoyo": "La ronda de Vercel (US$9.300 millones) la comunica el inversionista; ingresos no auditados.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1980",
+   "s": "framer_arr",
+   "p": "mide",
+   "o": "competencia_herramientas_diseno",
+   "f": "F-908",
+   "apoyo": "Framer: ~US$50 millones de ARR y Serie D a US$2.000 millones (ago-2025).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1981",
+   "s": "despidos_diseno_2026",
+   "p": "asocia_con",
+   "o": "compresion_rol_diseno",
+   "f": "F-909",
+   "apoyo": "Zillow recortó roles de producto y diseño, y negó que la IA fuera la causa: relación no establecida.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1982",
+   "s": "prototipado_con_ia",
+   "p": "tiene_limite",
+   "o": "c_proceso_diseno_murio",
+   "f": "F-898",
+   "apoyo": "Réplica a Wen: el proceso rígido es irreal, pero el proceso sostiene la intuición y la velocidad (opinión).",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
   }
  ],
- "generado": "2026-10-11",
+ "generado": "2026-10-12",
  "cobertura": {
-  "procesadas": 879,
-  "total": 879
+  "procesadas": 908,
+  "total": 908
  }
 }

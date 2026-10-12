@@ -1,6 +1,6 @@
 # 🧬 Grafo semántico del códice — RELACIONES
 
-*Generado 2026-10-11 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
+*Generado 2026-10-12 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
 
 > **Transparencia:** una relación aquí es lo que *una fuente dice*, no un hecho. `lectura=ficha` significa que solo se leyó el resumen del ledger; `abstract` que se leyó el resumen real de la fuente; `completa`, el texto íntegro. Un cruce entre fuentes es una *coincidencia de entidades*, no una prueba de que las fuentes sean compatibles.
 
@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **879 de 879** (100.0%) |
-| …del cerebro de diseño (citadas en el node) | 276 de 276 |
-| …por rigor | A 299/299 · B 148/148 · C 187/187 · D 195/195 · E 35/35 |
-| Barridos | 112 |
-| Entidades | 1854 |
-| Relaciones | 1946 |
-| Nivel de lectura | ficha 1205 · abstract 732 · completa 9 |
-| Fuerza de las afirmaciones | descriptiva 1154 · teorica 283 · observacional 262 · causal 247 |
+| Fuentes procesadas | **908 de 908** (100.0%) |
+| …del cerebro de diseño (citadas en el node) | 305 de 305 |
+| …por rigor | A 303/303 · B 152/152 · C 197/197 · D 203/203 · E 38/38 |
+| Barridos | 113 |
+| Entidades | 1881 |
+| Relaciones | 1982 |
+| Nivel de lectura | ficha 1205 · abstract 768 · completa 9 |
+| Fuerza de las afirmaciones | descriptiva 1170 · teorica 287 · observacional 265 · causal 260 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `tiene_limite` | metodo | 414 |
-| `aumenta` | efecto | 236 |
+| `tiene_limite` | metodo | 418 |
+| `aumenta` | efecto | 244 |
 | `aplica_a` | estructura | 232 |
-| `asocia_con` | efecto | 163 |
-| `reduce` | efecto | 154 |
-| `respalda` | evidencia | 143 |
+| `asocia_con` | efecto | 170 |
+| `reduce` | efecto | 157 |
+| `respalda` | evidencia | 146 |
 | `es_tipo_de` | estructura | 120 |
-| `refuta` | evidencia | 96 |
-| `origina_en` | metodo | 92 |
-| `parte_de` | estructura | 92 |
-| `mide` | metodo | 70 |
+| `refuta` | evidencia | 97 |
+| `parte_de` | estructura | 94 |
+| `origina_en` | metodo | 93 |
+| `mide` | metodo | 76 |
 | `contradice` | evidencia | 64 |
-| `modera` | efecto | 49 |
+| `modera` | efecto | 50 |
 | `media` | efecto | 21 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -61,6 +61,9 @@
 | Sesgo de publicación | F-16, F-17, F-21, F-435, F-680, F-701, F-712, F-736 |
 | Gasto en atención de salud | F-88, F-98, F-110, F-202, F-329, F-339, F-340, F-352 |
 | Regulación de consentimiento previo para el contacto comercial (no llamar / opt-in) | F-68, F-70, F-72, F-73, F-117, F-131, F-132, F-140 |
+| Cifra autorreportada por la empresa o su proveedor, no auditada independientemente | F-332, F-350, F-351, F-354, F-371, F-373, F-905, F-907 |
+| Prototipado con IA ('vibe coding') | F-892, F-894, F-895, F-897, F-898, F-899, F-904, F-906 |
+| Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502, F-520, F-886 |
 | Precio de la acción de Figma (FIG) | F-318, F-326, F-398, F-420, F-421, F-470, F-527 |
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542, F-662, F-663 |
 | Selección adversa (selección de riesgos) | F-82, F-91, F-92, F-96, F-103, F-162, F-207 |
@@ -73,8 +76,10 @@
 | Teoría de la información integrada (IIT) | F-830, F-831, F-832, F-837, F-847, F-849, F-851 |
 | Cifra autodeclarada por la empresa, sin método auditable | F-618, F-620, F-621, F-623, F-624, F-625, F-634 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-273, F-514 |
+| Dark patterns | F-241, F-511, F-588, F-881, F-882, F-884 |
 | Confianza en la IA | F-187, F-242, F-583, F-614, F-876, F-878 |
-| Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502, F-520 |
+| Costo de IA / inferencia | F-323, F-470, F-526, F-527, F-902, F-903 |
+| La IA cobra un impuesto de margen a las herramientas de diseño (H32) | F-323, F-421, F-470, F-526, F-902, F-903 |
 | UBI / seguro basado en telemática | F-19, F-23, F-162, F-167, F-442, F-449 |
 | Persuasión conversacional por IA | F-489, F-490, F-585, F-586, F-589, F-607 |
 | Demanda de seguros | F-3, F-85, F-164, F-221, F-791, F-799 |
@@ -86,7 +91,6 @@
 | Crecimiento económico (PBI) | F-207, F-217, F-742, F-743, F-782, F-787 |
 | Cifra vista solo en fuentes secundarias, sin acceso al documento original | F-129, F-130, F-133, F-186, F-189, F-196 |
 | Cifra o caso citado de segunda mano, sin acceso al reporte primario | F-209, F-214, F-216, F-217, F-233, F-284 |
-| Cifra autorreportada por la empresa o su proveedor, no auditada independientemente | F-332, F-350, F-351, F-354, F-371, F-373 |
 | Lo digital potencia al agente o intermediario de seguros, no lo reemplaza | F-360, F-361, F-364, F-368, F-369, F-377 |
 | Fuente con interés propio en la conclusión (vende el producto o promueve la teoría) | F-638, F-643, F-644, F-845, F-868, F-870 |
 | Cifra autodeclarada por la propia organización, sin verificación independiente | F-639, F-645, F-858, F-862, F-863, F-866 |
@@ -112,8 +116,6 @@
 | Capital de riesgo invertido en investigación sintética | F-617, F-619, F-620, F-621, F-622 |
 | Design thinking | F-239, F-240, F-393, F-524 |
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469, F-527 |
-| Costo de IA / inferencia | F-323, F-470, F-526, F-527 |
-| La IA cobra un impuesto de margen a las herramientas de diseño (H32) | F-323, F-421, F-470, F-526 |
 | ARR de Lovable | F-426, F-427, F-471, F-472 |
 | Churn y cohortes no publicados | F-321, F-427, F-472, F-473 |
 | Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-255, F-256, F-272, F-382 |
@@ -128,6 +130,7 @@
 | Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes) | F-189, F-509, F-510, F-636 |
 | KPI de innovación: % de ventas de productos nuevos | F-454, F-529, F-531, F-532 |
 | Programa Vitality de Discovery (incentivos por conducta saludable) | F-25, F-99, F-637, F-638 |
+| Mejoras de accesibilidad web/digital | F-264, F-512, F-523, F-896 |
 | Net Promoter Score (NPS) del cliente de seguros | F-81, F-183, F-351, F-356 |
 | Rediseño Liquid Glass de iOS 26 | F-272, F-289, F-290, F-292 |
 | Percepción del estado del campo del diseño | F-280, F-281, F-296, F-301 |
@@ -144,6 +147,7 @@
 | Las acciones mineras, financieras y de consumo peruanas tienen la mejor perspectiva en 2026 | F-213, F-215, F-216, F-217 |
 | Design system (sistema de diseño compartido, p. ej. IBM Carbon) | F-269, F-270, F-396, F-425 |
 | La conducta es local y el discurso es importado: LatAm/España consumen el marco interpretativo traducido del inglés (H20) | F-390, F-409, F-410, F-416 |
+| Compresión del rol de diseño hacia el generalista apoyada en IA | F-391, F-416, F-899, F-909 |
 | Cifra o contenido no verificado contra el informe o documento primario | F-396, F-413, F-417, F-427 |
 | Eco de cita: varias vitrinas repiten una misma fuente | F-458, F-528, F-535, F-541 |
 | Startups de investigación sintética (encuestados y gemelos con IA) | F-617, F-619, F-621, F-622 |
@@ -155,7 +159,6 @@
 | Cifras que no coinciden entre fuentes | F-864, F-867, F-868, F-875 |
 | Sanciones regulatorias a productos de salud con etiqueta 'cuántica' | F-871, F-872, F-873, F-874 |
 | Relación innovación → desempeño | F-238, F-439, F-525 |
-| Dark patterns | F-241, F-511, F-588 |
 | Éxito de proyectos de innovación | F-239, F-441, F-461 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
 | El ARR de vibe coding no retiene (H14) | F-427, F-472, F-473 |
@@ -190,6 +193,7 @@
 | Retrato erróneo y aplanamiento de grupos demográficos por el LLM | F-549, F-553, F-604 |
 | Tamaño y competencia lingüística de los modelos de lenguaje | F-558, F-572, F-575 |
 | Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas | F-579, F-592, F-594 |
+| Asistente conversacional de IA generativa para agentes de soporte | F-580, F-888, F-889 |
 | Experiencia y habilidad previa del trabajador | F-580, F-582, F-584 |
 | Crecimiento de ventas | F-178, F-376, F-514 |
 | Publicidad personalizada (frente a genérica) | F-253, F-518, F-519 |
@@ -209,7 +213,6 @@
 | NAIC (Asociación Nacional de Comisionados de Seguros de EE.UU.) | F-80, F-172, F-193 |
 | Consentimiento previo, informado, expreso e inequívoco para tratar datos personales | F-67, F-76, F-77 |
 | Llamadas publicitarias sin consentimiento vigente (spam) | F-70, F-134, F-138 |
-| Mejoras de accesibilidad web/digital | F-264, F-512, F-523 |
 | Percepción de que la aseguradora de salud prioriza lucro y costos sobre necesidades individuales | F-187, F-336, F-344 |
 | Inversión y número de insurtechs activas en América Latina | F-374, F-378, F-458 |
 | Teatro de la innovación (rituales de startup sin resultados de negocio) | F-461, F-462, F-464 |
@@ -249,6 +252,7 @@
 | Ajustes de Apple a Liquid Glass tras el backlash | F-290, F-291, F-292 |
 | Figma Make (diseño a código con IA de Figma) | F-293, F-294, F-412 |
 | Sustento solo en ensayo u opinión, sin metodología | F-299, F-300, F-301 |
+| Competencia en herramientas de diseño (Adobe, Canva, Figma frente a modelos de IA generalistas) | F-319, F-901, F-908 |
 | Teletriaje por enfermera en línea de asesoría (recomendar urgent care, urgencias o atención primaria) | F-329, F-332, F-354 |
 | Satisfacción del paciente con la telesalud | F-350, F-355, F-356 |
 | Venta de seguro de vida con flujo mayormente digital | F-362, F-363, F-364 |
@@ -283,6 +287,7 @@
 | Dispositivos de salud con etiqueta 'cuántica' (SCIO, Quest 9, Quantum Laser, analizadores de resonancia) | F-872, F-873, F-874 |
 | Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo) | F-876, F-877, F-880 |
 | Disposición a dejar que una IA reserve por uno (vuelo u hotel) | F-876, F-878, F-879 |
+| Velocidad y calificación de la atención al cliente | F-888, F-889, F-890 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
@@ -364,6 +369,7 @@
 | Tamaño de la firma | F-446, F-525 |
 | Edad del consumidor | F-7, F-35 |
 | Comprensión del seguro de vida temporal | F-22, F-231 |
+| Homogeneización de las salidas de los LLMs (pérdida de diversidad) | F-285, F-894 |
 | Teoría de la innovación disruptiva | F-436, F-437 |
 | Grandes corporaciones se retiran del venture capital corporativo directo | F-447, F-448 |
 | Nivel educativo | F-65, F-559 |
@@ -421,6 +427,7 @@
 | Conversaciones para levantar US$300M a US$13.200M (jul-2026) | F-320, F-426 |
 | Ronda reportada en conversaciones, no cerrada | F-320, F-426 |
 | Tráfico referido desde asistentes de IA (LLM) | F-324, F-634 |
+| Crecimiento de ingresos previsto de Canva para 2026 | F-323, F-903 |
 | Tamaño relativo de los equipos de UX | F-312, F-313 |
 | Búsquedas de estéticas lo-fi y DIY en Canva | F-295, F-411 |
 | Conversión del checkout | F-311, F-632 |
@@ -524,6 +531,7 @@
 | Las acciones de infraestructura de IA son la oportunidad de inversión de 2026 | F-208, F-212 |
 | Recomendación sin filing ni dato de desempeño auditado | F-208, F-209 |
 | Contenido no verificado de primera mano (acceso bloqueado) | F-235, F-293 |
+| UX agéntica (principios de interacción humano-agente de IA) | F-261, F-891 |
 | Forrester: The Six Steps For Justifying Better UX (dic-2016) | F-268, F-536 |
 | Metodología no auditable (reporte de pago o encuesta propia no publicada) | F-268, F-281 |
 | Adopción de design tokens (56% → 84%) | F-270, F-298 |
@@ -535,6 +543,7 @@
 | El diseño/UX ha muerto por la IA | F-299, F-300 |
 | Conflicto de interés: el emisor vende al público estudiado o pagó el estudio | F-314, F-328 |
 | Tamaño del mercado de software creativo/diseño (~US$11,2B en 2026 según Grand View) | F-315, F-319 |
+| ARR de Framer (~US$50M, ago-2025; Serie D de US$100M a US$2B) | F-322, F-908 |
 | Los design systems dan 671% de ROI (atribuido a Forrester) | F-327, F-328 |
 | Telesalud que deriva sin tratar y cobra igual (telesalud como desvío) | F-347, F-348 |
 | Quejas recurrentes de usuarios de telesalud | F-347, F-348 |
@@ -548,7 +557,6 @@
 | La IA desplaza el esfuerzo de generar código hacia verificarlo ('impuesto de verificación') | F-388, F-406 |
 | Fatiga visual post-IA ('AI slop') y giro estético al neo-brutalismo | F-390, F-411 |
 | Desvinculación de 119 personas del área de UX de MercadoLibre en LatAm | F-391, F-419 |
-| Compresión del rol de diseño hacia el generalista apoyada en IA | F-391, F-416 |
 | Un design system devuelve 135% de ROI (US$2,35 por dólar a 5 años) | F-397, F-425 |
 | Consenso de precio objetivo de analistas sobre Figma (FIG) | F-398, F-421 |
 | El consenso de analistas es opinión, no dato auditado, y varía según el compilador | F-398, F-421 |
@@ -563,6 +571,8 @@
 | Fecha mal atribuida a un evento o meta (falsa señal de tendencia) | F-460, F-467 |
 | Las cifras anglosajonas se importan al español sin su fuente ni descuento (H20) | F-464, F-528 |
 | Contenido no verificado de primera mano (lectura completa bloqueada) | F-464, F-528 |
+| Indicadores visuales de incertidumbre o confianza en salidas de LLM | F-520, F-885 |
+| Más señales visuales de incertidumbre calibran mejor la confianza en la IA | F-520, F-885 |
 | Una mejor UX puede subir la conversión hasta 400% (Forrester) | F-535, F-536 |
 | Los LLMs predicen la dirección de los resultados de experimentos de ciencias sociales | F-550, F-556 |
 | Los LLMs sobreestiman los tamaños de efecto de los experimentos con humanos | F-550, F-556 |
@@ -598,6 +608,13 @@
 | Memoria del cliente entre canales y plataformas | F-876, F-877 |
 | 'Impuesto de reinicio': empezar de nuevo al comprar porque el sistema no recuerda al cliente entre canales | F-876, F-877 |
 | Uso de la IA para buscar ideas y comparar opciones de viaje | F-876, F-877 |
+| Inconsistencia de las elecciones de privacidad | F-881, F-884 |
+| Retoques visuales de la interfaz (color, estilo) sin cambiar la estructura | F-883, F-900 |
+| IA generativa en el proceso de diseño | F-887, F-895 |
+| Satisfacción de los diseñadores con la IA (69% frente a 83% de desarrolladores) | F-892, F-893 |
+| El proceso de diseño tradicional murió con la IA | F-897, F-898 |
+| Valuación de Replit (US$9.000 millones, mar-2026) | F-904, F-905 |
+| Ingresos anualizados de Vercel (~US$340 millones, mar-2026) | F-906, F-907 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -1081,6 +1098,8 @@
 - **Alerta sanitaria INVIMA 006-2025 sobre el 'Quantum Resonance Magnetic Analyzer'** —refuta→ **El 'Quantum Resonance Magnetic Analyzer' diagnostica hasta 52 enfermedades** (F-874, descriptiva) · **estado: refutacion_directa**
   - El analizador, vendido por internet y que promete diagnosticar hasta 52 enfermedades, no tiene registro sanitario y se considera fraudulento.
   - *Resolución (2026-10-11):* El INVIMA alertó en ene-2025, y repitió en julio, que el analizador cuántico no tiene registro sanitario y lo considera fraudulento (F-874, regulador B). Desmiente que diagnostique 52 enfermedades por falta de respaldo, no por un ensayo propio. (juicio sobre lectura de ficha)
+- **Indicadores visuales de incertidumbre o confianza en salidas de LLM** —refuta→ **Más señales visuales de incertidumbre calibran mejor la confianza en la IA** (F-885, causal) · **estado: abierta**
+  - La incertidumbre por palabra subió el acuerdo con la IA y la de nivel de relación redujo la verificación (N=192, preguntas médicas).
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -1502,6 +1521,7 @@
 | 2026-10-11 | F-869, F-870, F-871, F-872, F-873, F-874, F-875 | 22 | – | Pase de amplitud para densificar el grafo (2026-10-11): relaciones extraídas de la ficha del registro (lectura "ficha"), reutilizando entidades existentes cuando el concepto era el mismo.  |
 | 2026-10-11 | F-876, F-877, F-878, F-879 | 14 | – | Integración a pedido del usuario: informe de McKinsey y Skift sobre el viajero (sep-2026) y su cobertura. Leído vía resumen, tabla de contenidos y prensa (el PDF y las páginas no se pudieron abrir des |
 | 2026-10-11 | F-880 | 8 | – | Aporte del usuario: gráfico 'Representative orbital booking journey' (McKinsey y Skift, sep-2026), leído completo desde la imagen. Fuente cualitativa de un solo sector. |
+| 2026-10-12 | F-520, F-881, F-882, F-883, F-884, F-885, F-886, F-887, F-888, F-889, F-890, F-891, F-892, F-893, F-894, F-895, F-896, F-897, F-898, F-899, F-900, F-901, F-902, F-903, F-904, F-905, F-906, F-907, F-908, F-909 | 36 | – | Iteración 6 del nodo de diseño (/trinidad 2026-10-12): diseño de producto digital y de servicios. Leído vía resúmenes (lectura 'abstract'). Incluye la lectura a fondo del resumen oficial de F-520. |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

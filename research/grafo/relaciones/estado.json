@@ -1843,6 +1843,44 @@
    "triples": 8,
    "sin_aporte": [],
    "notas": "Aporte del usuario: gráfico 'Representative orbital booking journey' (McKinsey y Skift, sep-2026), leído completo desde la imagen. Fuente cualitativa de un solo sector."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f_ids": [
+    "F-520",
+    "F-881",
+    "F-882",
+    "F-883",
+    "F-884",
+    "F-885",
+    "F-886",
+    "F-887",
+    "F-888",
+    "F-889",
+    "F-890",
+    "F-891",
+    "F-892",
+    "F-893",
+    "F-894",
+    "F-895",
+    "F-896",
+    "F-897",
+    "F-898",
+    "F-899",
+    "F-900",
+    "F-901",
+    "F-902",
+    "F-903",
+    "F-904",
+    "F-905",
+    "F-906",
+    "F-907",
+    "F-908",
+    "F-909"
+   ],
+   "triples": 36,
+   "sin_aporte": [],
+   "notas": "Iteración 6 del nodo de diseño (/trinidad 2026-10-12): diseño de producto digital y de servicios. Leído vía resúmenes (lectura 'abstract'). Incluye la lectura a fondo del resumen oficial de F-520."
   }
  ],
  "discrepancias": [
@@ -3808,6 +3846,12 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-11",
    "nota": "El INVIMA alertó en ene-2025, y repitió en julio, que el analizador cuántico no tiene registro sanitario y lo considera fraudulento (F-874, regulador B). Desmiente que diagnostique 52 enfermedades por falta de respaldo, no por un ensayo propio. (juicio sobre lectura de ficha)"
+  },
+  {
+   "triple": "T-1954",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-12",
+   "nota": "Converge con F-520 (Ojewale et al. 2026, preregistrado): más señales de incertidumbre no calibran la confianza; en F-885 la incertidumbre por palabra sube el acuerdo con la IA. Tareas distintas, no réplica; juicio sobre resúmenes."
   }
  ]
 }

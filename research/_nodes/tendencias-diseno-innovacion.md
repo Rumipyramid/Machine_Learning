@@ -950,6 +950,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 | 5h | 2026-10-03 | 🔁 **Intento de réplica sistemática de H20 y H25** (las dos hipótesis que más pueden caer) | **No se pudo ejecutar; ningún estado cambia.** Protocolo: reunir ≥30 piezas en español/portugués sobre 'tendencias de diseño 2026' con 5 búsquedas distintas, abrir cada una y contar (a) cifras con fuente nombrada, (b) cifras sin fuente, (c) origen del emisor. Resultado: se recolectaron ~15 piezas candidatas pero **8 de 8 aperturas fallaron** (todos los dominios editoriales hispanos/lusos estaban bloqueados por la red del entorno), así que no hay conteo. Lo único observable por resumen: las cifras 73% / 93% / 54% aparecen idénticas en piezas en español, portugués e inglés sin estudio nombrado (F-528, 🟠D) — coherente con H20, **no una prueba**. No se intentó sortear el bloqueo. | Pasar las piezas como texto o PDF (≥30), o una lista de URLs legibles; con eso la réplica se corre en una sesión y puede refutar H20/H25 |
 | 5i | 2026-10-03 | ⚔️ **Confrontar hipótesis abiertas con su propio criterio de refutación** (objetivo declarado: autocorrección ≥20%; regla: registrar el resultado sea cual sea) | **H22 → `refutada`** (corrección contable: 'Reformulada' estaba fuera del vocabulario; la reformulación se abre como **H35**). **H30 → `refutada`**: 5/5 metas públicas de innovación reportan (Credicorp 8,1% hacia meta 10% en 2026, DSM 21% vs. 20%, Croda, Henkel, 3M); el caso testigo de F-460 estaba mal. **H23 → `parcial`**: 4 de 6 cifras rastreables atribuidas a autoridades no existen como se citan; domina la mala atribución. **H27 → `refutada`**: 5/5 cifras de fracaso rastreables a un documento identificable (malo), igual que las de éxito; el eco de cita no distingue el signo. Autocorrección **1/17 → 4/20 (20%)**, con una refutación contable y dos de muestra no aleatoria. F-529 a F-541 | (a) **réplica con muestra aleatoria de H30 y H27**: si cualquiera vuelve, la autocorrección cae a 16% y debe registrarse; (b) **H30 con muestra aleatoria** (metas anunciadas en prensa, no empresas que ya reportan) para ver si la refutación aguanta; (c) **H35 se mide en 2026-S2** contra 2026-S1; (d) corregir F-460 en el ledger si el usuario lo autoriza |
 | 5j | 2026-10-11 | 🧭 **Aporte del usuario:** gráfico del recorrido en órbitas (McKinsey y Skift, viajes, sep-2026) | §13.10 nueva; F-880 (gráfico leído completo) y F-876 (informe, por resumen); hipótesis H36 nueva | Buscar un estudio equivalente en seguros; leer el PDF completo del informe |
+| 6 | 2026-10-12 | 🔁 **Pregunta acotada por el Criterio:** ¿qué es lo más relevante hoy en diseño de producto digital y de servicios? (`/trinidad`, tres pistas en paralelo) + lectura a fondo de F-520 | §14 nueva; 29 fuentes (F-881 a F-909); F-520 con autoría y revista completas; H32 suma apoyo (costo de IA en Canva y Wix) | Leer textos completos (tamaños de efecto de F-520); medir validación en redes; buscar un cuasi-experimento de service design |
 
 ---
 
@@ -1931,6 +1932,52 @@ Dos datos del mismo informe le dan escala: unos 65 puntos de contacto antes de r
 - **La memoria entre canales es la palanca principal.** McKinsey llama "impuesto de reinicio" a obligar al cliente a empezar de nuevo cuando un sistema no lo recuerda (F-876; ver [[conducta-humano-ia]] §2.11).
 
 **Para seguros (inferencia).** La compra de un seguro es más rara y más larga que la de un viaje. Si el patrón se sostiene, las órbitas serían menos frecuentes pero más largas, y el asesor sería quien guarda la memoria entre canales. Queda como idea en prueba (H36). Toca de cerca el frente de service design (H18, §10.2) y la venta de seguros de vida ([[proyecto-back-to-basics-ffvv-vida]]).
+
+---
+
+## 14. 🔁 Iteración 6 (2026-10-12) — ¿qué es lo más relevante hoy en diseño de producto digital y de servicios?
+*Origen: una pregunta del usuario a Mu ("¿Qué es lo más relevante hoy en diseño?") que el Criterio respondió solo en parte; propuso acotarla e investigarla con `/trinidad`. Las tres pistas se leyeron por resumen y resultados de búsqueda: el entorno no abre páginas web. Fuentes F-881 a F-909.*
+
+**En pocas palabras.** Lo más relevante hoy no es lo más ruidoso. El gremio habla sobre todo de la IA en el proceso de diseño y del cambio de rol del diseñador. En cambio, la evidencia más sólida está en dos temas menos vistosos: la estructura de las decisiones (patrones oscuros y fricción) y la calibración de la confianza en interfaces con IA. El negocio crece, pero el costo de servir IA ya le pasa factura al margen.
+
+### 14.1 🔬 Pista empírica — lo que tiene impacto medido
+1. **Los patrones oscuros mueven decisiones, y la transparencia no basta para revertirlos.** Un experimento publicado en 2026 encontró que tres patrones oscuros subieron entre 6 y 12 puntos la inconsistencia de las elecciones de privacidad, y que un aviso de transparencia no la corrigió (F-881). En compras, aumentaron la compra impulsiva en todos los diseños probados (F-882). Es evidencia experimental revisada por pares.
+2. **Lo que mueve la elección es la estructura, no el aspecto.** En el consentimiento de cookies, esconder opciones detrás de clics cambia la decisión; los retoques visuales casi no la cambian (F-883, experimento de campo aún sin arbitraje). Coincide con estudios previos sobre la fuerza de la fricción (§2.1) y con la revisión sistemática de 2026 (F-884).
+3. **Más señales de incertidumbre no calibran mejor la confianza en la IA.** Es el experimento de 2026 que el Criterio pidió leer a fondo, hecho por Ojewale y colegas, preregistrado y con 495 personas (F-520). Las señales visuales hicieron a la gente más sensible a la precisión en lo que declaraba, pero también más dispuesta a aceptar respuestas equivocadas. Las advertencias verbales bajaron el acuerdo sin mejorar la discriminación entre respuestas buenas y malas. Las dos juntas produjeron la mayor sobreconfianza y la menor verificación. Dos estudios de 2026 van en la misma dirección: la incertidumbre por palabra sube el acuerdo con la IA (F-885) y el consenso de varias IA empuja a la sobredependencia (F-886). No son réplicas: son tareas distintas que convergen. Los tamaños de efecto de F-520 no se vieron.
+4. **La IA en el servicio mejora la velocidad, no siempre la calidad, y no a todos por igual.** En un experimento de campo con unos 6.000 agentes de Alibaba, el asistente de IA mejoró tiempos y calificaciones sin cambiar la calidad objetiva; ganaron los agentes más débiles y empeoraron los mejores (F-888, preprint). Otro experimento de campo, publicado, encontró un efecto mixto (F-889).
+5. **La IA en el proceso de diseño sube la novedad, no la utilidad.** Los anuncios hechos con IA se juzgaron más creativos, pero no más útiles ni más alineados con la marca (F-887, preprint con 36 personas).
+
+**Contraevidencia que importa.** Un metaanálisis de 106 experimentos publicado en *Nature Human Behaviour* muestra que, en decisiones, la combinación humano-IA rinde en promedio peor que el mejor de los dos por separado; en tareas de creación, en cambio, gana (F-516). Las explicaciones de la IA suman poco (F-498), y el efecto promedio de los nudges se diluye al corregir el sesgo de publicación (F-16, F-17). En personalización hay fatiga: la respuesta cae con la exposición repetida (F-890). Cumplir el estándar de accesibilidad no siempre mejora las medidas de usabilidad. El service design sigue sin estudios cuasi-experimentales recientes: la revisión de 2021 halló resultados evaluados en menos de la mitad de los estudios (F-252), y en 2025-2026 no apareció ninguno nuevo.
+
+### 14.2 📱 Pista social — de qué se habla
+- 🔥 **La IA en el proceso y el prototipado con IA ("vibe coding")** dominan la conversación, con entusiasmo práctico y reservas de calidad: sirve para prototipar, no para producción. La encuesta de Figma muestra a los diseñadores menos convencidos que los desarrolladores (satisfacción 69% frente a 83%; solo 27% cree que la IA moverá las metas de la empresa este año) (F-892). La UX Tools Survey 2026 dice que la herramienta más usada después de Figma ya es una IA (F-895).
+- 🔥 **El cambio de rol** ("builder", "design engineer") se discute con réplica. La tesis de que "el proceso de diseño murió" (F-897) tuvo respuestas de matiz (F-898). Las cifras que circulan (91% de uso semanal de IA) vienen de un solo informe de un fondo, repetido por la prensa (F-899, eco de F-410).
+- 🌡️ **UX agéntica** (cómo diseñar el control y el consentimiento de los agentes): hay un marco de seis patrones muy reciclado (F-891), pero nadie lo ha validado empíricamente.
+- 🌡️ **Homogeneización ("AI slop")**: la queja de que las interfaces generadas se parecen todas tiene respaldo académico incipiente (F-894).
+- 🌡️ **Accesibilidad**: empeoró. El 95,9% de las portadas principales de la web tiene fallas detectables, contra 94,8% en 2025 (WebAIM 2026, vía F-896).
+- 💬 **Backlash a rediseños** sin opción de volver atrás, con caídas de calificación en las tiendas de apps (F-900; cifras secundarias).
+- **Ecos detectados:** el "32% de diseñadores confía en la IA" no coincide con la fuente que se le atribuye (F-893). Reddit, X y LinkedIn no se pudieron medir con la herramienta disponible.
+
+### 14.3 📈 Pista de negocio — qué rinde
+- **Lo más sólido son las empresas que cotizan.** Adobe reporta ingresos +13% en su último trimestre, aunque no publica cuánto factura su negocio de IA (F-901, documento ante la SEC). Figma mantiene una retención neta de 136% (ya en el registro). Wix crece 15% (F-902).
+- **El costo de servir IA presiona el margen en tres empresas distintas.** Canva recortó su crecimiento esperado de 30% a ~20% por ese costo (F-903). El creador de apps con IA de Wix arrancó con margen bruto cercano a cero (F-902). Figma ya lo había mostrado. Esto **suma apoyo a H32**, la idea de que la IA no destruye la demanda de las herramientas de diseño sino que les cobra un impuesto de margen.
+- **Los creadores de apps con IA crecen rápido, pero con cifras privadas o estimadas.** Replit vale US$9.000 millones sin publicar sus ingresos (F-904, F-905); Vercel tiene ~US$340 millones anualizados según una estimación de analista (F-906, F-907); Framer, ~US$50 millones (F-908). Ninguna publica su tasa de abandono de clientes.
+- **El retorno del diseño sigue sin medición independiente reciente.** Las cifras de ROI que circulan vienen de estudios pagados por el proveedor. Los despidos de diseño en 2026 existen, pero la relación con la IA está en disputa (F-909).
+
+### 14.4 ⚖️ Síntesis
+- **Divergencia principal.** Lo que más se discute (la IA en el proceso, el nuevo rol del diseñador) es lo que tiene menos evidencia de impacto en el usuario final. Lo que tiene evidencia sólida (la estructura de las decisiones, la calibración de la confianza) casi no aparece en la conversación.
+- **Convergencia.** Las tres pistas coinciden en un mensaje de cautela: "más" no es mejor. Más señales de incertidumbre no calibran mejor, más opciones generadas no son más útiles y más IA en el producto cuesta margen.
+- **Respuesta prudente a la pregunta original.** Hoy, lo más relevante con impacto demostrado en diseño de producto digital es:
+  1. Diseñar bien la estructura de cada decisión: dónde está la fricción y qué opción viene por defecto.
+  2. Diseñar cómo se calibra la confianza en las interfaces con IA, sin depender de señales visuales.
+
+  La IA en el proceso de diseño es lo más relevante por adopción, pero todavía no por impacto medido.
+
+### 14.5 Limitaciones
+- Todo se leyó por resúmenes: varios tamaños de efecto y tamaños de muestra quedaron sin ver, empezando por los de F-520.
+- La pista social no pudo medir la validación en Reddit, X ni LinkedIn.
+- Las cifras de negocio de las empresas privadas son órdenes de magnitud.
+- La evidencia de service design sigue siendo la más delgada.
 
 ---
 

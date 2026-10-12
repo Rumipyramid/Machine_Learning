@@ -749,6 +749,11 @@
   "nombre": "Réplicas gremiales independientes contra Jakob Nielsen",
   "tipo": "resultado"
  },
+ "backlash_rediseno_apps": {
+  "id": "backlash_rediseno_apps",
+  "nombre": "Rechazo de usuarios a rediseños sin opción de volver atrás",
+  "tipo": "resultado"
+ },
  "bain_lealtad_seguros_2023": {
   "id": "bain_lealtad_seguros_2023",
   "nombre": "Encuesta Bain Customer Behavior and Loyalty in Insurance 2023 (28.765 consumidores, 14 países)",
@@ -1364,6 +1369,11 @@
   "nombre": "Los mecanismos causales del design thinking no están establecidos",
   "tipo": "afirmacion"
  },
+ "c_eco_32_confianza": {
+  "id": "c_eco_32_confianza",
+  "nombre": "Solo 32% de los diseñadores confía en la salida de la IA",
+  "tipo": "afirmacion"
+ },
  "c_edge_12x_preciso": {
   "id": "c_edge_12x_preciso",
   "nombre": "Edge Audiences es '12 veces más preciso que un LLM genérico'",
@@ -1899,6 +1909,11 @@
   "nombre": "El priming de vejez no ralentiza la marcha con medición automática (Doyen et al. 2012)",
   "tipo": "afirmacion"
  },
+ "c_proceso_diseno_murio": {
+  "id": "c_proceso_diseno_murio",
+  "nombre": "El proceso de diseño tradicional murió con la IA",
+  "tipo": "afirmacion"
+ },
  "c_proxies_vulnerabilidad_debiles": {
   "id": "c_proxies_vulnerabilidad_debiles",
   "nombre": "Ingreso, educación y edad explican poco la susceptibilidad",
@@ -2212,6 +2227,11 @@
  "calidad_motivacion": {
   "id": "calidad_motivacion",
   "nombre": "Calidad de la motivación, desempeño y bienestar al perseguir metas",
+  "tipo": "resultado"
+ },
+ "calidad_objetiva_servicio": {
+  "id": "calidad_objetiva_servicio",
+  "nombre": "Calidad objetiva de la atención (reintentos, resolución)",
   "tipo": "resultado"
  },
  "calidad_recuperacion_rag": {
@@ -2749,6 +2769,11 @@
   "nombre": "Compra en e-commerce",
   "tipo": "resultado"
  },
+ "compra_impulsiva": {
+  "id": "compra_impulsiva",
+  "nombre": "Compra impulsiva en tiendas online",
+  "tipo": "resultado"
+ },
  "comprension_plan_salud": {
   "id": "comprension_plan_salud",
   "nombre": "Comprensión del plan de salud",
@@ -2958,6 +2983,16 @@
   "id": "consenso_analistas_figma",
   "nombre": "Consenso de precio objetivo de analistas sobre Figma (FIG)",
   "tipo": "metrica"
+ },
+ "consenso_multi_ia": {
+  "id": "consenso_multi_ia",
+  "nombre": "Consenso de varios asesores de IA",
+  "tipo": "intervencion"
+ },
+ "consentimiento_cookies": {
+  "id": "consentimiento_cookies",
+  "nombre": "Consentimiento de cookies",
+  "tipo": "resultado"
  },
  "consentimiento_previo_expreso_datos": {
   "id": "consentimiento_previo_expreso_datos",
@@ -3542,6 +3577,11 @@
  "desnutricion_cronica": {
   "id": "desnutricion_cronica",
   "nombre": "Desnutrición crónica infantil",
+  "tipo": "resultado"
+ },
+ "despidos_diseno_2026": {
+  "id": "despidos_diseno_2026",
+  "nombre": "Despidos de roles de producto y diseño en 2026",
   "tipo": "resultado"
  },
  "despidos_livspace": {
@@ -4424,6 +4464,11 @@
   "nombre": "Experiencia, estilo cognitivo, actitudes del usuario y diseño del sistema",
   "tipo": "concepto"
  },
+ "fallas_accesibilidad_webaim": {
+  "id": "fallas_accesibilidad_webaim",
+  "nombre": "Portadas con fallas de accesibilidad detectables (95,9% en 2026)",
+  "tipo": "metrica"
+ },
  "fallas_razonamiento_causal": {
   "id": "fallas_razonamiento_causal",
   "nombre": "Fallas de razonamiento causal en LLMs",
@@ -4463,6 +4508,11 @@
   "id": "faros_telemetria",
   "nombre": "Faros AI 2025: telemetría de +10.000 desarrolladores en 1.255 equipos",
   "tipo": "estudio"
+ },
+ "fatiga_intervencion": {
+  "id": "fatiga_intervencion",
+  "nombre": "Fatiga de intervención: la respuesta cae con la exposición repetida",
+  "tipo": "limitacion"
  },
  "fed_metrica": {
   "id": "fed_metrica",
@@ -4623,6 +4673,11 @@
   "id": "friccion_disliked",
   "nombre": "Los usuarios no gustan de la fricción cognitiva",
   "tipo": "limitacion"
+ },
+ "friccion_estructural_eleccion": {
+  "id": "friccion_estructural_eleccion",
+  "nombre": "Fricción estructural en la decisión (opciones escondidas tras clics, defaults)",
+  "tipo": "intervencion"
  },
  "friccion_no_precio": {
   "id": "friccion_no_precio",
@@ -4974,6 +5029,11 @@
   "nombre": "Herramientas de IA en la investigación científica",
   "tipo": "intervencion"
  },
+ "ia_generativa_proceso_diseno": {
+  "id": "ia_generativa_proceso_diseno",
+  "nombre": "IA generativa en el proceso de diseño",
+  "tipo": "intervencion"
+ },
  "ibpad_ia_design_2025": {
   "id": "ibpad_ia_design_2025",
   "nombre": "Môre Design + IBPAD: IA no Design 2025 (N=823 diseñadores brasileños)",
@@ -5069,6 +5129,11 @@
   "nombre": "Incidencia de accidente cerebrovascular (stroke)",
   "tipo": "resultado"
  },
+ "inconsistencia_eleccion_privacidad": {
+  "id": "inconsistencia_eleccion_privacidad",
+  "nombre": "Inconsistencia de las elecciones de privacidad",
+  "tipo": "resultado"
+ },
  "incumplimiento_consejo_triaje": {
   "id": "incumplimiento_consejo_triaje",
   "nombre": "Pacientes que acuden a urgencias pese a indicación de autocuidado o atención primaria",
@@ -5154,6 +5219,11 @@
   "nombre": "Ingreso y consumo del hogar",
   "tipo": "resultado"
  },
+ "ingresos_adobe_q3_2026": {
+  "id": "ingresos_adobe_q3_2026",
+  "nombre": "Ingresos de Adobe Q3 FY2026 (US$6.760 millones, +13%)",
+  "tipo": "metrica"
+ },
  "ingresos_bing": {
   "id": "ingresos_bing",
   "nombre": "Ingresos de Bing",
@@ -5173,6 +5243,11 @@
   "id": "ingresos_mind_gym",
   "nombre": "Ingresos de Mind Gym (FY2025 £38,6M −14%; FY2026 £29,9M −23%)",
   "tipo": "resultado"
+ },
+ "ingresos_vercel": {
+  "id": "ingresos_vercel",
+  "nombre": "Ingresos anualizados de Vercel (~US$340 millones, mar-2026)",
+  "tipo": "metrica"
  },
  "ingresos_wealthfront": {
   "id": "ingresos_wealthfront",
@@ -5874,6 +5949,11 @@
   "nombre": "Marco de consentimiento telefónico de EE.UU. en disputa judicial",
   "tipo": "limitacion"
  },
+ "margen_base44": {
+  "id": "margen_base44",
+  "nombre": "Margen bruto de Base44, el creador de apps con IA de Wix (~0% → ~60% proyectado)",
+  "tipo": "metrica"
+ },
  "margen_bruto_figma": {
   "id": "margen_bruto_figma",
   "nombre": "Margen bruto de Figma",
@@ -6504,6 +6584,11 @@
   "nombre": "Notas de analistas sobre Figma, julio 2026 (BofA, RBC, Citi)",
   "tipo": "estudio"
  },
+ "novedad_percibida_diseno": {
+  "id": "novedad_percibida_diseno",
+  "nombre": "Novedad y creatividad percibidas del diseño",
+  "tipo": "resultado"
+ },
  "npp_croda": {
   "id": "npp_croda",
   "nombre": "Ventas de productos nuevos y protegidos (NPP) como % de ventas de Croda",
@@ -6723,6 +6808,11 @@
   "id": "patentes_diseno_utilidad",
   "nombre": "Patentes de diseño + utilidad (ingenieros de diseño como inventores)",
   "tipo": "metrica"
+ },
+ "patrones_ux_agentica": {
+  "id": "patrones_ux_agentica",
+  "nombre": "Marco de seis patrones para diseñar agentes de IA (control, consentimiento, deshacer)",
+  "tipo": "intervencion"
  },
  "pausa_reflexion_compra": {
   "id": "pausa_reflexion_compra",
@@ -7344,6 +7434,11 @@
   "nombre": "Protocolo experimental de orden aleatorio (estímulos sin continuidad, poco natural)",
   "tipo": "limitacion"
  },
+ "prototipado_con_ia": {
+  "id": "prototipado_con_ia",
+  "nombre": "Prototipado con IA ('vibe coding')",
+  "tipo": "intervencion"
+ },
  "proximidad_linguistica_geografica": {
   "id": "proximidad_linguistica_geografica",
   "nombre": "Proximidad lingüística y geográfica entre países",
@@ -7659,6 +7754,11 @@
   "nombre": "Relevancia percibida del anuncio",
   "tipo": "constructo"
  },
+ "remedio_transparencia": {
+  "id": "remedio_transparencia",
+  "nombre": "Aviso de transparencia como remedio frente a patrones oscuros",
+  "tipo": "intervencion"
+ },
  "rentabilidad_gaap_lemonade": {
   "id": "rentabilidad_gaap_lemonade",
   "nombre": "Rentabilidad GAAP de Lemonade (no esperada hasta 2027)",
@@ -7773,6 +7873,11 @@
   "id": "retiro_claims_pseudocientificos",
   "nombre": "Retiro de anuncios o afirmaciones pseudocientíficas",
   "tipo": "resultado"
+ },
+ "retoque_visual_interfaz": {
+  "id": "retoque_visual_interfaz",
+  "nombre": "Retoques visuales de la interfaz (color, estilo) sin cambiar la estructura",
+  "tipo": "intervencion"
  },
  "retorno_procedimiento": {
   "id": "retorno_procedimiento",
@@ -8029,6 +8134,11 @@
   "nombre": "Satisfacción y carga percibida",
   "tipo": "resultado"
  },
+ "satisfaccion_ia_disenadores": {
+  "id": "satisfaccion_ia_disenadores",
+  "nombre": "Satisfacción de los diseñadores con la IA (69% frente a 83% de desarrolladores)",
+  "tipo": "resultado"
+ },
  "satisfaccion_recompra_seguro_online": {
   "id": "satisfaccion_recompra_seguro_online",
   "nombre": "Satisfacción e intención de recompra de seguros online",
@@ -8142,6 +8252,11 @@
  "senales_habilidad_azar": {
   "id": "senales_habilidad_azar",
   "nombre": "Señales de habilidad en tareas de azar (elección, involucramiento, competencia, familiaridad)",
+  "tipo": "intervencion"
+ },
+ "senales_verbales_incertidumbre": {
+  "id": "senales_verbales_incertidumbre",
+  "nombre": "Advertencias verbales de incertidumbre en respuestas de IA (hedging)",
   "tipo": "intervencion"
  },
  "senales_visuales_incertidumbre": {
@@ -8954,6 +9069,11 @@
   "nombre": "Utilidad operativa normalizada de Discovery Insure (+34%, R546M, interino a dic-2025)",
   "tipo": "resultado"
  },
+ "utilidad_diseno": {
+  "id": "utilidad_diseno",
+  "nombre": "Utilidad y alineación de marca del diseño",
+  "tipo": "resultado"
+ },
  "utilidad_facilidad_seguridad_web_percibidas": {
   "id": "utilidad_facilidad_seguridad_web_percibidas",
   "nombre": "Utilidad, facilidad de uso y seguridad web percibidas del canal online",
@@ -9074,6 +9194,11 @@
   "nombre": "Valoración de los usuarios a la transparencia en el manejo de sus datos",
   "tipo": "resultado"
  },
+ "valuacion_replit": {
+  "id": "valuacion_replit",
+  "nombre": "Valuación de Replit (US$9.000 millones, mar-2026)",
+  "tipo": "metrica"
+ },
  "valuacion_wefox": {
   "id": "valuacion_wefox",
   "nombre": "Valuación y desempeño de Wefox (de US$4.500M a <US$1.000M)",
@@ -9112,6 +9237,11 @@
  "velocidad_al_caminar": {
   "id": "velocidad_al_caminar",
   "nombre": "Velocidad al caminar",
+  "tipo": "resultado"
+ },
+ "velocidad_atencion": {
+  "id": "velocidad_atencion",
+  "nombre": "Velocidad y calificación de la atención al cliente",
   "tipo": "resultado"
  },
  "velocidad_tarea": {
@@ -9163,6 +9293,11 @@
   "id": "verificabilidad",
   "nombre": "Verificabilidad de la predicción",
   "tipo": "constructo"
+ },
+ "verificacion_independiente": {
+  "id": "verificacion_independiente",
+  "nombre": "Verificación independiente de lo que dice la IA",
+  "tipo": "resultado"
  },
  "verificador_sintomas_electronico": {
   "id": "verificador_sintomas_electronico",

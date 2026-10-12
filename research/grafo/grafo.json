@@ -122,8 +122,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2035,
-   "cites": 276,
+   "lines": 2082,
+   "cites": 305,
    "design": true
   },
   {
@@ -4846,7 +4846,7 @@
    "type": "fuente",
    "rigor": "B",
    "titulo": "More is not better: Visual uncertainty cues and the fragility of trust calibration in LLM-assisted decision making",
-   "autor": "Autoría no capturada — ScienceDirect (revista de IA y conducta)",
+   "autor": "Ojewale, V.; Ryan, J.; Venkatasubramanian, S.; Boykin, C. M. — *Computers in Human Behavior: Artificial Humans* 8 (may-2026), art. 100307, DOI 10.1016/j.chbah.2026.100307 (autoría y revista completadas el 2026-10-12 tras verificar el resumen oficial)",
    "anio": "2026",
    "huerfana": false
   },
@@ -8078,6 +8078,267 @@
    "rigor": "C",
    "titulo": "Gráfico 'Representative orbital booking journey' (Skift Research booking journey diary study, jul-2026), en *Winning Hearts in an Age of Inf",
    "autor": "Skift Research (estudio de diario de reservas), publicado por McKinsey & Company",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-881",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The transaction test: An experimental method for assessing online interfaces (Journal of Economic Behavior & Organization, vol. 244, art. 10",
+   "autor": "Bogliacino, F.; Pejsachowicz, L.; Liva, G.; Lupiáñez-Villanueva, F.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-882",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Dark patterns in online shopping: do they work and can nudges help mitigate impulse buying? (Behavioural Public Policy, 9(1), 61-87)",
+   "autor": "Sin, R.; Harris, T.; Nilsson, S.; Beck, T.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-883",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Designing Consent: Choice Architecture and Consumer Welfare in Data Sharing (NBER Working Paper 34025)",
+   "autor": "Farronato, C.; Fradkin, A.; Lin, T.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-884",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "A systematic review of user experiments on the effects of dark patterns (CHI 2026)",
+   "autor": "Schaffner, B.; Heysen, L.; Chetty, M.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-885",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Not All Uncertainty Is Equal: How Uncertainty Granularity Shapes Human Verification in LLM-Assisted Decision Making (arXiv 2605.28571; FAccT",
+   "autor": "Villavicencio, M.; Pan, S.; Wang, Q.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-886",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "More Isn't Always Better: Balancing Decision Accuracy and Conformity Pressures in Multi-AI Advice (arXiv 2603.22152; CHI 2026)",
+   "autor": "Tsuchiya, Y.; Baba, Y.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-887",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Creativity in the Age of AI: Evaluating the Impact of Generative AI on Design Outputs and Designers' Creative Thinking (arXiv 2411.00168)",
+   "autor": "Fu, Y.; Han, B. et al. (University of Washington)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-888",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Generative AI in Action: Field Experimental Evidence from Alibaba's Customer Service Operations (arXiv 2603.29888)",
+   "autor": "Ni, X.; Wang, Y. et al. (colaboración con Alibaba)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-889",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Engaging Customers with AI in Online Chats: Evidence from a Randomized Field Experiment (Management Science 72(1), DOI 10.1287/mnsc.2022.039",
+   "autor": "Zhang, S.; Narayandas, D.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-890",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Documento de trabajo sobre heterogeneidad de efectos y fatiga de intervención en experimentos de campo (versión 5-feb-2026; título exacto no",
+   "autor": "Ebbes, P.; Ascarza, E.; Netzer, O.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-891",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Designing For Agentic AI: Practical UX Patterns For Control, Consent, And Accountability (feb-2026)",
+   "autor": "Yocco, V. (ServiceNow), en Smashing Magazine",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-892",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Figma 2025 AI Report: Perspectives from Designers and Developers (n≈2.500, 7 países)",
+   "autor": "Figma",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-893",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "The 32% Problem: Why Designers Don't Trust AI Like Developers Do",
+   "autor": "Mistry, J. (Substack)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-894",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Interrogating Design Homogenization in Web Vibe Coding (arXiv 2603.13036)",
+   "autor": "Shin, D.; Gao, A.; Pang, R. Y.; Lee, J.; Reinecke, K.; Tseng, E.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-895",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "UX Tools Survey, Spring 2026: State of Prototyping (n=1.478, 18 regiones)",
+   "autor": "UX Tools",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-896",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Web Accessibility Is Getting Worse According to the 2026 WebAIM Million Report",
+   "autor": "Priority Pixels (resume WebAIM Million 2026)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-897",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "The design process is dead. Here's what's replacing it (Lenny's Newsletter)",
+   "autor": "Wen, J. (diseño de Claude, Anthropic); entrevista de Rachitsky, L.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-898",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "The design process is dead. Or is it?",
+   "autor": "The Cursor Mag (Substack)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-899",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "AI in design and design jobs 2026",
+   "autor": "Fast Company (reporta datos de Designer Fund y Foundation Capital)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-900",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Reseñas de actualizaciones de MyFitnessPal, Insight Timer y YNAB (abr-jun 2026)",
+   "autor": "mwm.ai (inteligencia de mercado)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-901",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Resultados del Q3 FY2026 (trimestre cerrado el 28-ago-2026), exhibit 99.1",
+   "autor": "Adobe Inc. (Form 8-K, SEC)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-902",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Wix Reports Second Quarter 2026 Results (4-ago-2026)",
+   "autor": "Wix.com Ltd. (GlobeNewswire)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-903",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Canva cuts revenue growth forecast on AI costs (12-ago-2026)",
+   "autor": "Fortune (cobertura de la carta a accionistas de Canva)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-904",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Replit snags $9B valuation 6 months after hitting $3B (11-mar-2026)",
+   "autor": "TechCrunch",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-905",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Replit passes $500M/year",
+   "autor": "Sacra",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-906",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "$340M/year: Heroku for Claude Code (Vercel)",
+   "autor": "Sacra",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-907",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Vercel closes Series F at $9.3B valuation to scale the AI cloud (30-sep-2025)",
+   "autor": "GIC (inversionista)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-908",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Framer raises $100M (ago-2025)",
+   "autor": "Sifted",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-909",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Zillow cut seven senior PMs, then said AI did not drive the layoffs",
+   "autor": "ZURB Radar",
    "anio": "2026",
    "huerfana": false
   }
@@ -13680,6 +13941,151 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-880",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-881",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-882",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-883",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-884",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-885",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-886",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-887",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-888",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-889",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-890",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-891",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-892",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-893",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-894",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-895",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-896",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-897",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-898",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-899",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-900",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-901",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-902",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-903",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-904",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-905",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-906",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-907",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-908",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-909",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -13967,6 +14373,19 @@
     "rigor": {
      "C": 2,
      "D": 3
+    }
+   },
+   {
+    "fecha": "2026-10-12",
+    "nuevas": 29,
+    "acumuladas": 908,
+    "AB": 8,
+    "rigor": {
+     "A": 4,
+     "B": 4,
+     "C": 10,
+     "D": 8,
+     "E": 3
     }
    }
   ],
@@ -16185,6 +16604,44 @@
     "fecha": "2026-10-11",
     "commit": "614bf74",
     "fuente": "git"
+   },
+   {
+    "fuentes": 879,
+    "rigor": {
+     "B": 148,
+     "A": 299,
+     "C": 187,
+     "D": 195,
+     "?": 15,
+     "E": 35
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 158,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 770,
+    "diseno": {
+     "hyp": {
+      "abierta": 16,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2035,
+     "cites": 276
+    },
+    "fecha": "2026-10-12",
+    "commit": "41e24ef",
+    "fuente": "git"
    }
   ],
   "design": {
@@ -16202,14 +16659,15 @@
     "🔴": 15,
     "⚔️": 4
    },
-   "iterations": 5,
-   "lines": 2035,
+   "iterations": 6,
+   "lines": 2082,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
     "2026-08-02",
     "2026-08-02",
-    "2026-10-02"
+    "2026-10-02",
+    "2026-10-12"
    ]
   }
  }
