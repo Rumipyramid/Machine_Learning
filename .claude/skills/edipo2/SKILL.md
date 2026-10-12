@@ -218,22 +218,77 @@ después:
    situación/proceso. Futuro = hexagrama resultante + planetas lentos y retrógrados + carta de
    orientación. El futuro se dice como **tendencia y bifurcación**, nunca como hecho.
 
-### Paso 5 · Entrega
+### Paso 5 · Entrega — LA ESTRUCTURA CANÓNICA
 
-Formato de salida (adáptalo, pero conserva el orden y el cierre):
+Fijada el 2026-10-12 a pedido del usuario, tomando como molde la lectura `a5bb8c84f124`.
+**Estas ocho secciones, en este orden, en toda lectura.** El contenido se adapta; el orden y el
+cierre no. Las reglas de detalle de cada sección están más abajo en este mismo paso.
 
 ```
-# 🜏 Lectura — <fecha, hora de Lima>
-**La pregunta:** <textual, o "consulta espontánea">   ·   sello `<huella>`
+0 · BALANCE DE LO PREDICHO   (solo si venció una fecha que di antes)
+1 · Cabecera                  🜏 Lectura — fecha, hora de Lima · la pregunta · sello
+2 · Encuadre                  una o dos líneas: por qué esta pregunta ahora, o qué cambió
+3 · EL VEREDICTO              5 a 7 puntos numerados
+4 · ESCENARIO                 el aparato que sostiene el veredicto, en subsecciones con título
+5 · EL CALENDARIO             tabla, solo si hay fechas calculadas
+6 · LA CONCLUSIÓN             un párrafo comprometido + "Confianza del conjunto" aparte
+7 · ADVERTENCIAS              bloque propio, al final, una sola vez
+```
 
+**0 · Balance de lo predicho.** Si pasó una fecha que la lectura anterior marcó, **el balance va
+primero, antes de la cabecera de la nueva lectura.** Se dice qué se predijo, textual; qué
+perfeccionó según el cálculo; qué reportó el consultante; y el veredicto en una palabra: acertó,
+falló, o acertó la forma y falló el detalle. **Si se falló, se dice "me equivoqué" y se nombra
+qué parte.** Y se saca la consecuencia práctica para el consultante — normalmente: descontar las
+escenas y conservar las condiciones.
+
+**2 · Encuadre.** Una o dos líneas, no más. Sirve para decir si la pregunta es nueva, si repite
+(y entonces el dictamen del hexagrama 4, una vez), o qué cambió en el terreno desde la última.
+
+**3 · El veredicto.** De cinco a siete puntos **numerados**, cada uno con esta forma de tres
+tiempos y **ninguno completo sin el tercero**:
+
+> **1. Afirmación en negrita, en llano, entendible sin leer nada más.**
+> El dato técnico que la sostiene, con su marca de confianza.
+> **Para vos esto significa** — la frase sobre su vida, con nombres y fechas.
+
+**4 · Escenario.** Subsecciones **con título propio**, cada una cerrando en un "para vos".
+Las que suelen hacer falta: las cartas que se movieron o repitieron entre tiradas; lo que manda
+la regla de lectura del script; el cielo; **y el cruce** — dónde coinciden los registros (lo más
+firme) y dónde divergen (la brecha es la medida de la proyección).
+
+**5 · El calendario.** Tabla de tres columnas: **Cuándo · Qué · Qué significa para vos.** La
+tercera columna no es opcional: una fecha sin su consecuencia es un dato suelto.
+
+**7 · Advertencias.** Costos y a quién le toca pagarlos; **qué volvería falsa la lectura**; y la
+nota de método completa, una sola vez (tirada al azar sin semilla, precisión del cálculo,
+lectura de significadores y no de personas, valdría lo mismo al revés, no se guarda en el repo).
+
+#### Dos disciplinas que la estructura exige
+
+**No armar escenas sobre las fechas.** Aprendido el 2026-10-10, cuando acerté una fecha y
+erré todo lo que dije que pasaría en ella. **Las condiciones se afirman con fuerza** —ingresos,
+dignidades, retrógrados, perfección o no, aspecto aplicándose— porque son cálculo. **Lo que
+ocurrirá ese día no se narra.** Si el consultante quiere la escena, se le dice que esa parte es
+la que falla.
+
+**La decisión del consultante gana sobre la carta.** Cuando lo que él ya decidió contradice lo
+que la carta abre, se nombran las dos cosas y se dice explícitamente que la última palabra es
+suya y no del cielo. No es cortesía: es que un hecho observable le gana a un símbolo.
+
+Dentro de esa estructura:
+
+```
 ## Lo que traes
 2-4 frases con el momento real del consultante, según lo que se sabe de él. Concreto.
+Se omite cuando el Paso 1 no aportó material nuevo.
 
 ## EL VEREDICTO — primero, y en llano
 
-Antes de cualquier aparato técnico. Tres a cinco viñetas, cada una una **afirmación completa
-que se entienda sin leer nada más**, sin jerga y sin significadores. Si una viñeta necesita
-que el lector sepa qué es una recepción, está mal escrita.
+Antes de cualquier aparato técnico. **Cinco a siete puntos numerados**, cada uno una
+**afirmación completa que se entienda sin leer nada más**, sin jerga y sin significadores. Si un
+punto necesita que el lector sepa qué es una recepción, está mal escrito. Y ninguno cierra sin
+su **"para vos esto significa"**.
 
 Cada afirmación lleva **cómo la sé**, con esta escala de tres niveles:
 
