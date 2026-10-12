@@ -106,7 +106,7 @@
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-11 | `614bf74` | 879 | 20 | 5 | 142 | 770 | 2033 | 16 | 20 | 22 |
-| 2026-10-12 | `00b560c` | 976 | 20 | 5 | 158 | 870 | 2194 | 16 | 20 | 22 |
+| 2026-10-12 | `8426d40` | 976 | 20 | 5 | 158 | 870 | 2195 | 16 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -121,7 +121,7 @@
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
 | M6 Integración (diseño↔resto) | 16/19 nodes enlazados; 14 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
 | M7 Lectura profunda (Lobo) | 196 fuentes leídas a fondo = 20% del ledger; 195 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
-| M8 Uso externo (`impacto.json`) | 17 preguntas · 1 personas · 0 valoradas (0% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
+| M8 Uso externo (`impacto.json`) | 32 preguntas · 1 personas · 1 valoradas (100% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
 
