@@ -161,7 +161,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
 
   <div class="sug" id="sug" aria-label="Preguntas de ejemplo">
     <button type="button">¿Qué es lo más relevante hoy en diseño?</button>
-    <button type="button">¿Qué sabe Mu sobre la IA que da la razón a todo?</button>
+    <button type="button">¿Qué está sucediendo con la IA últimamente?</button>
     <button type="button">¿Cómo está el mercado de seguros en Perú?</button>
     <button type="button">¿Funcionan los nudges?</button>
     <button type="button">¿Qué no sabe Mu todavía?</button>
@@ -203,7 +203,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
   // ---------- búsqueda ----------
   const STOP = new Set("para por con sin una uno unos unas los las del que qué como cómo cual cuál cuales cuando donde dónde este esta estos estas ese esa eso hay muy más mas pero porque sobre entre desde hasta tiene tienen ser son fue fueron está están han hoy todo toda todos todas cada sus nos les lo la el en de y o a se al es su sí no the and for with from that this are was were have has not but you your".split(" "));
   const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-  const toks = s => norm(s).split(/[^a-z0-9ñ\-]+/).filter(t => t.length > 2 && !STOP.has(t)).map(t => /^f-\d+$/.test(t) ? t : t.slice(0, 6));
+  const toks = s => norm(s).split(/[^a-z0-9ñ\-]+/).filter(t => (t.length > 2 || ["ia", "ai", "ux", "ui"].includes(t)) && !STOP.has(t)).map(t => /^f-\d+$/.test(t) ? t : t.slice(0, 6));
   function buildIndex(docs, textOf) {
     const df = new Map(), lens = [], tfs = [], raw = [];
     for (const d of docs) {
@@ -232,6 +232,12 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
         const idf = Math.log(1 + (ix.N - ix.df.get(t) + .5) / (ix.df.get(t) + .5));
         s += (QSTOP.has(t) && temas ? .3 : 1) * idf * (f * 2.2) / (f + 1.2 * (.25 + .75 * ix.lens[i] / ix.avg));
       }
+      if (s > 0 && ix.docs[i].titulo && ix.docs[i].k === "node") { // el nodo cuyo título nombra el tema de la pregunta
+        const tt = ix.tt || (ix.tt = new Map()); let set = tt.get(ix.docs[i].titulo);
+        if (!set) { set = new Set(toks(ix.docs[i].titulo.replace(/-/g, " "))); tt.set(ix.docs[i].titulo, set); }
+        if (!ix.tdf) { ix.tdf = new Map(); for (const t of new Set(ix.docs.map(d => d.titulo))) for (const w of new Set(toks(String(t).replace(/-/g, " ")))) ix.tdf.set(w, (ix.tdf.get(w) || 0) + 1); }
+        if (qt.some(t => !QSTOP.has(t) && set.has(t) && (ix.tdf.get(t) || 0) <= 4 && !/^(peru|segur|salud|lima)/.test(t))) s *= 1.5; // solo palabras que nombran pocos nodos
+      }
       if (s > 0 && ix.docs[i].seccion && /alcance/i.test(ix.docs[i].seccion)) s *= .6;
       if (s > 0 && ix.docs[i].k === "node" && ix.docs[i].texto.length < 400) s *= .6; // un párrafo suelto gana por ser corto, no por tratar el tema
       if (s > 0 && bg.length) { const hits = bg.filter(b => ix.raw[i].includes(b)).length; if (hits >= 2) s *= 1 + .35 * Math.min(hits, 5); }
@@ -258,7 +264,10 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
   const fuenteTxt = f => `${f.id} | ${f.autor} | ${f.anio} | ${f.titulo} | Rigor: ${f.rigor} | ${f.resumen}`;
   // "Diseño" sin precisar es la disciplina completa (regla del usuario, 2026-10-12): se abre la búsqueda a los demás
   // dominios para que lo digital, que domina el cerebro, no tape los servicios, lo público o la salud.
-  const DOMINIOS_DISENO = "servicios experiencia política pública intervenciones salud organizacional estratégico industrial físico espacios sostenibilidad social";
+  const DOMINIOS_DISENO = "servicios política pública intervenciones organizacional estratégico industrial físico espacios sostenibilidad";
+  // "IA" se escribe con dos letras y "últimamente" no dice el tema: se agregan sus equivalentes para que la búsqueda
+  // encuentre los nodos sobre inteligencia artificial y la evidencia reciente.
+  const ampliarIA = q => q + (/\b(ia|ai)\b/i.test(q) ? " inteligencia artificial generativa agentes confianza adulación persuasión" : "") + (/[uú]ltimamente|recientemente|\bhoy\b|\bahora\b|actualmente|[uú]ltimo/i.test(q) ? " reciente tendencia" : "");
   const ampliarDiseno = q => /dise[ñn]/i.test(q) && !/digital|\bux\b|\bui\b|interfaz|app\b|web\b|servicio|p[uú]blic|salud|industrial|gr[aá]fic|marca|espacio|arquitect|urban|sostenib|circular|social|organizac|estrat[eé]g/i.test(q) ? `${q} ${DOMINIOS_DISENO}` : q;
   const RIGOR_ORDEN = f => "ABCDE".indexOf(f.rig) < 0 ? 5 : "ABCDE".indexOf(f.rig);
   function retrieve(q) {
@@ -272,7 +281,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     for (const [v, i] of sc) {
       if (nodes.length >= 8 || (v < top * .25 && nodes.length >= 4)) break;
       const c = IDX.nodes.docs[i];
-      if ((!keep.has(c.node) && v < top * .7) || (per.get(c.node) || 0) >= 5) continue;
+      if ((!keep.has(c.node) && v < top * .7) || (per.get(c.node) || 0) >= 4) continue;
       per.set(c.node, (per.get(c.node) || 0) + 1); nodes.push(c);
     }
     // 2) Fichas: primero las que citan los fragmentos elegidos (en el orden de los fragmentos; las más sólidas antes),
@@ -940,7 +949,7 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
   async function ask(q) {
     q = q.trim(); if (!q || !CORPUS) return;
     const entry = newEntry(q);
-    const r = retrieve(ampliarDiseno(q) + " " + turns.filter(t => t.role === "user").slice(-1).map(t => t.q).join(" "));
+    const r = retrieve(ampliarDiseno(ampliarIA(q)) + " " + turns.filter(t => t.role === "user").slice(-1).map(t => t.q).join(" "));
     evidence(entry.ev, r);
     if (!sampleChecked) { try { sample = await window.claude?.use?.("sample"); } catch { sample = null; } sampleChecked = true; try { toolsOk = !!(sample && (await sample.limits()).tools); } catch { toolsOk = false; } }
     if (!sample) { offline(entry, r, "Para que Mu redacte una respuesta, abre esta página en claude.ai con tu sesión iniciada."); return; }
@@ -984,7 +993,7 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
     CORPUS = d;
     for (const f of d.fuentes) FUENTES.set(f.id, f);
     TENS = d.tensiones || [];
-    IDX = { nodes: buildIndex(d.nodes, c => `${c.titulo} ${c.seccion} ${c.seccion} ${c.texto}`), fuentes: buildIndex(d.fuentes, f => `${f.id} ${f.autor} ${f.titulo} ${f.titulo} ${f.resumen}`),
+    IDX = { nodes: buildIndex(d.nodes, c => `${c.titulo} ${c.titulo} ${c.titulo} ${c.seccion} ${c.seccion} ${c.texto}`), fuentes: buildIndex(d.fuentes, f => `${f.id} ${f.autor} ${f.titulo} ${f.titulo} ${f.resumen}`),
       tens: buildIndex(TENS, t => `${t.s} ${t.o} ${t.apoyo} ${t.nota}`), hyps: buildIndex(d.hipotesis || [], h => `${h.id} ${h.texto} ${h.texto} ${h.detalle}`),
       rels: buildIndex(d.relaciones || [], x => `${x[0]} ${x[2]} ${x[2]} ${x[5]}`) };
     for (const c of d.nodes) if (!TITULOS.has(c.node)) TITULOS.set(c.node, c.titulo);
