@@ -38,7 +38,7 @@ Bóveda persistente que Claude Code carga al iniciar cualquier sesión sobre
 | `research/lobo/opinion_experto.md` | Opinión de negocio acumulada de "El Lobo" | Tesis con evidencia F-n del ledger + confianza; refinada diariamente contra `cronista` |
 | `.claude/skills/lapuerta/` | Skill `/lapuerta`: generar + simular usuarios sintéticos | Autocontenido (incluye generador, ipf, validate, simulate_rules) |
 | `.claude/skills/cerrajero/` | Skill `/cerrajero`: barrido incremental (grupos de 5) de literatura 🟢A del códice para el modelo `lapuerta` | Nunca aplica solo — memoria en `research/updates/cerrajero_barrido_estado.json`, siempre pregunta antes de tocar el modelo |
-| `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot de Marsella en clave junguiana) cruzado con lo que se sabe del usuario | Autocontenido (solo stdlib); efemérides calculadas en local; no persiste lecturas salvo pedido explícito |
+| `.claude/skills/edipo2/` | Skill `/edipo2`: oráculo personal (I Ching + astros sobre Lima + tarot Waite/Marsella) cruzado con lo que se sabe del usuario | **Espacio propio, fuera del segundo cerebro** — no crea nodes ni registra en el ledger de `cronista`, y no aparece en `mu`/`grafo`/`chacal`. Autocontenido (solo stdlib); efemérides y mansión lunar calculadas en local; cuatro registros de lectura; estructura de entrega canónica de 8 secciones; no persiste lecturas salvo pedido explícito |
 | `.claude/skills/cronista/` · `codice/` · `seeker/` · `gossiper/` · `marketer/` · `trinidad/` · `beholder/` · `presentaciones-rimac/` · `rimac-slides/` · `actualizar/` · `contexto-peruano/` · `many-brains/` | Otras skills del proyecto | Fuentes (registrar / consultar), investigación (empírica/teórica, social, de negocio, o las tres a la vez), tablero Jira, decks Rimac (HTML + on-brand), publicar a main, data pública peruana (INEI/SBS/BCRP), organización de conocimiento |
 | `.github/workflows/` | Action programado (reporte quincenal desatendido) | — |
 | `.claude-plugin/marketplace.json` · `plugin.json` | Marketplace personal de plugins | Expone `.claude/skills/` como plugin instalable en cualquier máquina/cuenta — ver sección abajo |
@@ -205,41 +205,76 @@ variables al modelo `lapuerta`.
 - 2026-06-21 — `research/updates/2026-06-21_fortalecimiento_modelo.md`
 <!-- LAPUERTA_REPORTS_END -->
 
-### 📌 Skill: `edipo2` (oráculo personal)
-Lectura del presente y del futuro que cruza cuatro fuentes: (1) lo que el repo y la sesión
-saben del usuario como persona (`research/yopersona/perfil.md`, actividad reciente, nodes,
-agenda si el conector está disponible), (2) una tirada simulada de **I Ching** nueva en cada
-ejecución, (3) el **cielo del día sobre Lima** con posiciones planetarias calculadas en local,
-y (4) una tirada de **tarot de Marsella** leída con el marco de **Jung** (sincronicidad,
-sombra, ánima, función inferior, individuación).
+### 📌 Skill: `edipo2` (oráculo personal) — espacio propio, fuera del segundo cerebro
+
+> ⚠️ **Frontera declarada.** `edipo2` **no escribe en el segundo cerebro**: no crea nodes, no
+> registra en `research/fuentes/codice.md`, y no aparece en `mu` / `grafo` / `chacal`. Las
+> lecturas **no se guardan** salvo pedido explícito. Su documentación entera vive en
+> `.claude/skills/edipo2/`. Y "códice" acá significa **este archivo** (`CLAUDE.md`), no el
+> ledger de evidencia de `cronista` — son dos cosas distintas con el mismo apodo.
+> *Única excepción declarada (2026-09-28, a pedido del usuario):* el node
+> `research/_nodes/marcos-operativos-vinculo-corpus-magico.md` y las fuentes **F-329 a F-337**
+> son investigación filológica que sí entró al segundo cerebro, sin una línea de contexto personal.
+
+Lectura del presente y del futuro que cruza **lo que se sabe del usuario como persona** con tres
+oráculos generados en el momento: **I Ching** (tirada nueva en cada ejecución), el **cielo sobre
+Lima** calculado en local, y **tarot** — mazo **Rider-Waite-Smith por preferencia registrada del
+usuario**, o Marsella con `--baraja marsella`.
 
 - **Invocación:** `/edipo2` (con pregunta opcional; sin pregunta, la lectura es espontánea).
 - **Ubicación:** `.claude/skills/edipo2/` — `SKILL.md`, `scripts/` (`tirada.py` orquestador +
-  `iching.py`, `astro.py`, `tarot.py`, todos solo stdlib) y `references/` (64 hexagramas,
-  78 cartas con clave junguiana, `marco-jungiano.md` con la regla de convergencia).
-- **Astronomía real, no inventada:** `astro.py` usa elementos keplerianos de la JPL para los
-  planetas, la fórmula de baja precisión del Astronomical Almanac para la Luna, y calcula
-  Ascendente/MC por tiempo sidéreo local para Lima (UTC-5, 12°02'S). Verificado contra
-  ingresos planetarios y lunaciones conocidas: Sol exacto en equinoccios/solsticios, planetas
-  ~0.05°, Luna ~0.25°.
-- **Doble registro (desde 2026-07-31):** cada tirada se lee **dos veces** y se entregan las dos
-  por separado — (a) **adivinatoria/tradicional**, con significadores, casas, dignidades y
-  perfección del asunto, que sí habla de la situación y de terceros como figuras simbólicas y
-  cierra con veredicto en lenguaje llano; y (b) **junguiana/proyectiva**, que habla del
-  consultante. No se promedian: donde coinciden está lo más firme, y **donde divergen, la
-  brecha es la medida de la proyección**. Ver `references/marco-jungiano.md` §1b.
-- **Capa hermética (desde 2026-08-14):** tercer registro **operativo** que cierra cada lectura —
-  Paracelso (dosis), Dee (auditoría del canal), Crowley (Voluntad vs. deseo, soltar el resultado),
-  encadenados en círculo. De ahí se deriva la consigna. Ver `references/capa-hermetica.md`, que
-  incluye la advertencia de que los tres se usan como gramática operativa y no como autoridad.
-- **Reglas propias:** nunca `--seed` en consulta real (cada tirada debe ser nueva); nunca
-  inventar cartas ni posiciones; nunca afirmar el estado interior de una persona real como
-  hecho (sí leer su significador, etiquetado); no repetir la misma pregunta buscando otra
-  respuesta (dictamen del hexagrama 4); correspondencia privada (Gmail/Drive) solo si el
-  usuario lo pide en esa consulta; la lectura **no se guarda** en el repo salvo pedido
-  explícito (y si se guarda, va a `research/_outputs/edipo2/` con su fila en `research/alma.md`).
-- **Datos natales del usuario:** en `research/yopersona/perfil.md` (fecha 17-05-1989; hora y
-  lugar pendientes — sin ellos no hay Ascendente, casas ni grado exacto de la Luna natal).
+  `iching.py`, `astro.py`, `tarot.py`, solo stdlib) y `references/`: 64 hexagramas,
+  `tarot_marsella.json`, `tarot_waite.json` (78 cartas, VIII/XI intercambiados),
+  `marco-jungiano.md`, `capa-hermetica.md` y `operacion-triple.md`.
+- **Astronomía real, no inventada:** elementos keplerianos de la JPL, fórmula de baja precisión
+  del Astronomical Almanac para la Luna, Asc/MC por tiempo sidéreo local para Lima (UTC-5).
+  Verificado: Sol exacto en equinoccios/solsticios, planetas ~0.05°, Luna ~0.25°. Desde
+  2026-09-27 calcula también la **mansión lunar** (1 de 28) — solo el número: los significados
+  de las 28 **no están verificados** y no se interpretan.
+
+**Los cuatro registros.** Cada tirada se lee cuatro veces y no se promedian:
+
+1. **Adivinatorio** (tradicional): significadores, dignidades, recepción, perfección. Dice algo
+   del mundo y puede errar. Incluye el **léxico sexual explícito** que los marcos sí tienen
+   (Venus y Marte como significadores sexuales, casa 5 = placer, casa 8 = cuerpos compartidos).
+2. **Junguiano** (proyectivo): proyección, sombra, función inferior, individuación. Donde
+   coincide con el adivinatorio está lo más firme; **donde divergen, la brecha mide la proyección**.
+3. **Hermético** (prescriptivo, desde 2026-08-14): Paracelso (dosis) → Dee (canal) → Crowley
+   (Voluntad vs. deseo), en círculo. De ahí sale la consigna. Ver `references/capa-hermetica.md`.
+4. **Operativo** (ejecutivo, desde 2026-09-27): solo si se pide una operación. Cinco marcos
+   verificados con `/seeker` — Jámblico *De mysteriis* V.23, Paracelso *Opus Paramirum*,
+   Picatrix, Ficino *De amore*, Bruno *De vinculis* — más seis reglas de diseño y la plantilla
+   de tres actos. Ver `references/operacion-triple.md`.
+
+**Estructura canónica de entrega (fijada 2026-10-12).** Ocho secciones, en orden:
+`0 · balance de lo predicho` (si venció una fecha dada antes, va **antes** de la cabecera, y si
+se falló se dice "me equivoqué") · `1 · cabecera` · `2 · encuadre` · `3 · EL VEREDICTO` (5-7
+puntos numerados) · `4 · ESCENARIO` · `5 · EL CALENDARIO` · `6 · LA CONCLUSIÓN` (un párrafo
+comprometido + confianza aparte) · `7 · ADVERTENCIAS`.
+
+- **Tres tiempos obligatorios en cada afirmación:** qué salió → qué significa en el sistema →
+  **qué significa para él**, con nombres y fechas. Pararse en el segundo es glosar, no interpretar.
+- **Escala de confianza en cada punto:** `[calculado]` (aritmética) · `[regla]` (dictamen clásico
+  con linaje) · `[inferencia]` (lectura propia, lo primero a descartar).
+- **Se organiza por pregunta, no por tirada.** El sello es el archivo del oráculo, no la unidad
+  de interés de quien consulta.
+
+**Reglas propias.** Nunca `--seed` en consulta real · nunca inventar cartas ni posiciones · leer
+el significador de un tercero y decirlo en llano, **sin afirmar su estado interior como hecho** ·
+no repetir la misma pregunta buscando otra respuesta (dictamen del hexagrama 4), y si el usuario
+insiste, tirar sin repetir la advertencia · correspondencia privada (Gmail/Drive) solo si la pide
+en esa consulta · si una lectura se guarda, va a `research/_outputs/edipo2/`.
+
+**Dos disciplinas aprendidas a costa de errores reales (octubre 2026):**
+- **No armar escenas sobre las fechas.** Las condiciones (ingresos, dignidades, retrógrados,
+  perfección) se afirman con fuerza porque son cálculo; **lo que ocurrirá ese día no se narra.**
+- **La decisión del usuario gana sobre la carta**, y se dice explícitamente: un hecho observable
+  le gana a un símbolo.
+
+**Datos natales del usuario:** en `research/yopersona/perfil.md` — fecha 17-05-1989 y lugar
+(San Isidro, Lima) registrados; **la hora sigue pendiente de verificación y no se guarda hasta
+que el usuario la confirme**. Sin ella no hay Ascendente, casas ni grado exacto de la Luna natal,
+y por eso una pregunta del tipo "¿alguna vez…?" no es contestable por horaria.
 
 ### 📌 Marketplace personal de skills (portabilidad entre máquinas/cuentas)
 Este repo se auto-referencia como un **marketplace de plugins de Claude Code**
