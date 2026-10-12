@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-07-27 · Versión: v1.4
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-10-12 · Versión: v1.4
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -843,6 +843,50 @@ Producto); inicio de piloto (vie 07/08, CoE).
 describe en §1 (statement, pilares, motivaciones, journey) y de la hipótesis de copiloto descrita
 en §2 — sus resultados (indicador 6 en particular) son el insumo directo para decidir si las 16
 palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
+
+## 9. Plan puente sin IA (acta del 7 de octubre de 2026 y ajustes de Meli Ponce)
+
+**(Agregado 2026-10-12, incremental, compartido por el usuario.)** Las propuestas con capacidades de
+IA quedaron detenidas por cambios en las políticas de seguridad sobre uso de IA. El proyecto ganó
+visibilidad y ahora lo regula el equipo de capacidades, con trabas de trámite y de tiempo. Lo que
+sale primero es un **plan puente**: despliegue y piloto, sin el prototipo ni AIDA. Los pedidos llegan
+filtrados y priorizados por el equipo de clientes (que recoge a Producto, Canales, Learning y
+Marketing).
+
+- **Salida tentativa:** 19 de octubre de 2026, por validar con Learning y Canales. Sale con los
+  talleres y el Playbook cargado en Copilot corporativo. Prototipo y AIDA pasan a la fase siguiente.
+- **Medición en tres meses (acta):** mes 1 activación (asistencia y primeras señales de uso; funnel
+  desde el día 1 donde se pueda); mes 2 adopción (matriz de evaluación, línea base antes del Taller 1
+  y comparación tras el Taller 4; grabar requiere CUA; plan B: role-plays y acompañamiento en campo);
+  mes 3 resultados de negocio (dashboard de actividad, productividad, prima por asesor y cycle time,
+  de dueños del negocio). Alertas del acta: el role-play mide simulación, no campo; el jefe que
+  califica en vivo introduce sesgo.
+- **Dependencias para el prototipo:** presupuesto y refactoring de AIDA (Mauricio, VP; falta quién
+  le lleva el pedido), carga del Playbook en AIDA versión low (Jaime, Producto), herramienta de
+  entrenamiento del CoE (depende de presupuesto; Overlap la orquesta Learning, misma fecha tentativa
+  del 19 de octubre), Salud y Vehicular (Meli prioriza con Mili).
+- **Material de talleres:** lo prepara Learning desde el Playbook; si no puede, propuesta de valor y
+  producto con apoyo del CoE (el CoE aportaría criterios de contenido, práctica y retroalimentación).
+- **Reunión única** con Learning, Canales (Pati Romero o delegado), Segmentos y CoE: compromisos con
+  nombre y fecha, tiempo de asesores y jefes, agenda de talleres, estado de Overlap, material.
+  Convoca Segmentos; si no, el CoE con copia a Segmentos.
+- **Ajustes pedidos por Meli Ponce al material:** vincular cada bloque con su objetivo (qué se logra
+  con el asesor y qué con el cliente); dos o tres mínimos desplegables ya ("el equipo se entrampó en
+  el to be"); sacar Marketing del alcance (queda en tres ejes; los flyers pasan a herramientas);
+  renombrar "herramientas"; vista ejecutiva; qué se dicta en cada taller y qué pasa con lo no
+  priorizado (social selling, fidelización, referidos); mínimos en rojo frente a deseados;
+  medición desde el inicio conectada al market share vía prima por asesor, con comparación definida;
+  funnel por etapas con indicador y herramienta (vista cliente y asesor juntas); un dueño por
+  indicador (lo numérico es del negocio: Jaime, Fío; el CoE, lo cualitativo como shadowing);
+  gobernanza por herramienta (revisión semestral de la unidad de negocio); base de conocimiento como
+  proyecto aparte; si cargar en AIDA no es rápido, PDF o carpeta compartida; validar con Lu antes.
+- **Tensiones abiertas:** (1) el acta pone adopción en el mes 2 y Meli en el mes 1; (2) Copilot
+  corporativo también es IA: confirmar que la nueva política no lo frena; (3) Overlap y la salida
+  comparten fecha; (4) "mismos meses del año anterior" no aísla el efecto de los talleres
+  (estacionalidad, campañas, rotación); un grupo de comparación lo hace mejor.
+- **Antigüedad del proyecto según este repo:** el documento interno más antiguo registrado es el
+  Playbook v1.0 (junio de 2026); el node se creó el 2026-07-23. El repo no guarda la fecha de inicio
+  del proyecto; el equipo lo ubica cerca de un año.
 
 ---
 
