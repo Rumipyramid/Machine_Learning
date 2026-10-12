@@ -1,7 +1,7 @@
 # ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-10-04 · Versión: v1.0
+> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-10-12 · Versión: v1.0
 > (Actualización 2026-07-27, sin bump de versión, incremental: §3.7 ampliación sobre casos de
 > éxito comercial verificable en venta 100% digital de vida — Ethos, Bowtie, contraevidencia
 > Bestow/Singlife — afina la tesis existente, no la cambia.)
@@ -386,3 +386,5 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA: qué se está juntando, qué funciona y qué es humo]] — ese nodo reúne la evidencia de economía conductual sobre la desconfianza hacia los algoritmos y el negocio real de las aseguradoras que venden con IA.
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — ese nodo registra el rechazo de los consumidores a cambios de diseño y la evidencia sobre confianza en la IA, útiles para juzgar qué tecnología acepta el cliente del asesor.

@@ -1,7 +1,7 @@
 # Convergencia psicología + economía + IA: qué se está juntando, qué funciona y qué es humo
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-03 · Última actualización: 2026-10-11 · Versión: **v1.0 (iteración 1, `/trinidad`: empírica + social + negocio)**
+> Fecha de elaboración: 2026-10-03 · Última actualización: 2026-10-12 · Versión: **v1.0 (iteración 1, `/trinidad`: empírica + social + negocio)**
 > Origen: pedido del usuario: *"investigación profunda de cómo están acercándose la psicología, la economía y la IA"*.
 > Fuentes en `research/fuentes/codice.md`: **nuevas F-543 a F-645** (empírica F-543 a F-598 · social F-599 a F-616 · negocio F-617 a F-645) · ya existentes que se reusan: F-16, F-17, F-20, F-21, F-24, F-25, F-27, F-29, F-257, F-488, F-489, F-495, F-499, F-542.
 > Pregunta permanente: **¿en qué se están fundiendo la psicología, la economía y la IA, qué de eso tiene evidencia y qué implica para un equipo que diseña conducta en seguros y usa usuarios sintéticos (`lapuerta`)?**
@@ -245,3 +245,6 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — el estado de replicación en humanos de los efectos que los LLM "replican" (F-545 reprodujo Milgram); su PF4 prueba si un LLM también reproduce los efectos que en humanos no replicaron.
 - [[conciencia-cuantica|Conciencia cuántica]] — distingue la *quantum cognition* (probabilidad cuántica para modelar juicios, F-827 a F-829), que pertenece a esta convergencia, de las teorías físicas del cerebro cuántico.
 - [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics]] — comparten la evidencia sobre el tamaño real de los nudges (F-16, F-21) y el caso Lemonade (F-29); ese nodo advierte qué no se puede probar con personas sintéticas.
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud: presión actual y modelos que la navegan]] — ese nodo explica los modelos de salud que premian conductas (el programa Vitality de Discovery) y el desempeño de Lemonade que aquí se discuten como negocio de IA; ambos advierten que muchas de esas cifras las reporta la propia empresa.
+- [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario]] — ese nodo discute si la venta digital y la IA reemplazan al asesor de seguros; comparten la evidencia de que la gente desconfía del juicio de los algoritmos y el caso Lemonade.
+- [[material-visual-venta-consultiva|Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección]] — ese nodo trata cuántas opciones mostrar y cómo se juzga el precio en la venta consultiva; aquí se estudia lo mismo cuando quien compra es un agente de IA.

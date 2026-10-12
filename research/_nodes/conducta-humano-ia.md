@@ -1,7 +1,7 @@
 # Conducta humano-IA: cómo la IA cambia lo que la gente decide, cree y deja de pensar
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-02 · Última actualización: 2026-10-11 · Versión: **v1.1 (iteración 2; lectura a fondo de persuasión 2026-10-03)**
+> Fecha de elaboración: 2026-10-02 · Última actualización: 2026-10-12 · Versión: **v1.1 (iteración 2; lectura a fondo de persuasión 2026-10-03)**
 > Origen: auditoría del Chacal (2026-10-02, apunte: *"la evidencia humano-IA está repartida entre el node conductual y el de diseño"*) + `/trinidad` empírica. **Iteración 2 añade las pistas social y de negocio/legal (§2.8-2.9) y la primera búsqueda adversarial sobre las reglas (§2.10); ambas siguen siendo delgadas (ver §7).**
 > Fuentes en `research/fuentes/codice.md`: ya existentes F-16 a F-27, F-242 a F-246, F-254, F-257, F-401, F-442, F-474 · nuevas: iteración 1 F-488 a F-494 · iteración 2 F-495 a F-503 · lectura a fondo 2026-10-03: F-542 · integración 2026-10-11 (informe de viajes de McKinsey y Skift): F-876 a F-879.
 > Pregunta permanente: **¿qué evidencia hay de que la IA cambia la conducta y el juicio de las personas, y cómo debe diseñarse (y auditarse) con eso en mente?**
@@ -152,3 +152,4 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — el marco más amplio en que se inscribe este node (cinco frentes); aporta lo nuevo de 2025-2026 en persuasión (F-585, F-586, F-589) y compañía (F-587, F-588).
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — obediencia a la autoridad (§2.2) y fluidez de procesamiento (§5.7) como base psicológica de la sobre-confianza en respuestas de IA con tono experto.
 - [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics]] — comparten la evidencia de que los nudges rinden mucho menos a escala que en el laboratorio (F-16, F-21) y el experimento de seguro por uso (F-23); útil si el proyecto suma herramientas de IA para el asesor.
+- [[material-visual-venta-consultiva|Material visual en la venta consultiva: qué reduce la incertidumbre y facilita la elección]] — ese nodo aplica la evidencia sobre cuántas opciones mostrar (la sobrecarga de elección casi no existe en promedio, F-119) a las tablas de planes de la venta consultiva.

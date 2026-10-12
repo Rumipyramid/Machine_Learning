@@ -17,14 +17,14 @@
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 155,
+   "lines": 156,
    "cites": 46,
    "design": false
   },
   {
    "id": "convergencia-psicologia-economia-ia",
    "type": "node",
-   "lines": 248,
+   "lines": 251,
    "cites": 119,
    "design": false
   },
@@ -52,7 +52,7 @@
   {
    "id": "futuro-asesores-seguros-venta-digital",
    "type": "node",
-   "lines": 389,
+   "lines": 391,
    "cites": 23,
    "design": false
   },
@@ -73,7 +73,7 @@
   {
    "id": "material-visual-venta-consultiva",
    "type": "node",
-   "lines": 377,
+   "lines": 379,
    "cites": 17,
    "design": false
   },
@@ -87,7 +87,7 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 355,
+   "lines": 357,
    "cites": 57,
    "design": false
   },
@@ -108,7 +108,7 @@
   {
    "id": "proyecto-back-to-basics-ffvv-vida",
    "type": "node",
-   "lines": 937,
+   "lines": 939,
    "cites": 33,
    "design": false
   },
@@ -122,7 +122,7 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2033,
+   "lines": 2035,
    "cites": 276,
    "design": true
   },
@@ -136,7 +136,7 @@
   {
    "id": "venta-vida-digital-hibrida-latam",
    "type": "node",
-   "lines": 233,
+   "lines": 235,
    "cites": 8,
    "design": false
   },
@@ -8181,6 +8181,12 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "material-visual-venta-consultiva",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "mecanismos-seguros-salud",
    "k": "wikilink",
    "recip": true
@@ -8230,6 +8236,24 @@
   {
    "s": "convergencia-psicologia-economia-ia",
    "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "futuro-asesores-seguros-venta-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "material-visual-venta-consultiva",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "mecanismos-seguros-salud",
    "k": "wikilink",
    "recip": true
   },
@@ -8355,6 +8379,12 @@
   },
   {
    "s": "futuro-asesores-seguros-venta-digital",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "futuro-asesores-seguros-venta-digital",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
    "recip": true
@@ -8374,6 +8404,12 @@
   {
    "s": "futuro-asesores-seguros-venta-digital",
    "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "futuro-asesores-seguros-venta-digital",
+   "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
   },
@@ -8463,6 +8499,18 @@
   },
   {
    "s": "material-visual-venta-consultiva",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "material-visual-venta-consultiva",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "material-visual-venta-consultiva",
    "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
@@ -8535,6 +8583,12 @@
   },
   {
    "s": "mecanismos-seguros-salud",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
    "t": "futuro-asesores-seguros-venta-digital",
    "k": "wikilink",
    "recip": true
@@ -8554,6 +8608,12 @@
   {
    "s": "mecanismos-seguros-salud",
    "t": "modelo-salud-ia-farmacias-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "proyecto-back-to-basics-ffvv-vida",
    "k": "wikilink",
    "recip": true
   },
@@ -8691,6 +8751,12 @@
   },
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "mecanismos-seguros-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -8704,6 +8770,12 @@
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "transicion-venta-fria-a-opt-in",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "venta-vida-digital-hibrida-latam",
    "k": "wikilink",
    "recip": true
   },
@@ -8841,6 +8913,12 @@
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "futuro-asesores-seguros-venta-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "glosario-seguro-salud-peru",
    "k": "wikilink",
    "recip": true
@@ -8894,6 +8972,12 @@
    "recip": true
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "venta-vida-digital-hibrida-latam",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
    "s": "transicion-venta-fria-a-opt-in",
    "t": "futuro-asesores-seguros-venta-digital",
    "k": "wikilink",
@@ -8931,7 +9015,19 @@
   },
   {
    "s": "venta-vida-digital-hibrida-latam",
+   "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "venta-vida-digital-hibrida-latam",
    "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "venta-vida-digital-hibrida-latam",
+   "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
   },
@@ -13587,7 +13683,7 @@
   }
  ],
  "meta": {
-  "generado": "2026-10-11",
+  "generado": "2026-10-12",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -16053,11 +16149,11 @@
     "fuente": "git"
    },
    {
-    "fuentes": 878,
+    "fuentes": 879,
     "rigor": {
      "B": 148,
      "A": 299,
-     "C": 186,
+     "C": 187,
      "D": 195,
      "?": 15,
      "E": 35
@@ -16066,10 +16162,10 @@
     "outputs": 5,
     "wikilinks": 142,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 769,
+    "fuentes_citadas_en_nodes": 770,
     "diseno": {
      "hyp": {
-      "abierta": 15,
+      "abierta": 16,
       "parcial": 14,
       "refutada": 4,
       "respaldada": 2
@@ -16083,11 +16179,11 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 2005,
-     "cites": 274
+     "lines": 2033,
+     "cites": 276
     },
     "fecha": "2026-10-11",
-    "commit": "33b62f4",
+    "commit": "614bf74",
     "fuente": "git"
    }
   ],
@@ -16107,7 +16203,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 2033,
+   "lines": 2035,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

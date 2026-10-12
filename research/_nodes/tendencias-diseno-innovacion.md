@@ -4,7 +4,7 @@
 > 📌 *Este node se llamaba `tendencias-diseno.md` hasta el 2026-08-02, cuando el alcance se amplió
 > de **diseño** a **diseño e innovación** (ver §0). Las iteraciones 1 a 3 (§1 a §11) cubren solo la
 > mitad de diseño; la mitad de innovación arranca en §12.*
-> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-10-11 · Versión: **v4.1 (iteración 5; 5f sin cambio estructural)**
+> Fecha de elaboración: 2026-07-26 · Última actualización: 2026-10-12 · Versión: **v4.1 (iteración 5; 5f sin cambio estructural)**
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta permanente: **¿qué tendencias de diseño y de innovación tienen impacto tangible
 > demostrado y cuáles son propuestas todavía sin respaldo?**
@@ -2030,3 +2030,5 @@ Dos datos del mismo informe le dan escala: unos 65 puntos de contacto antes de r
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — comparten la evidencia sobre los límites de la divulgación y la simplificación en seguros (F-6, F-9, F-10, F-231); ese nodo la aplica a un glosario de cliente de seguro de vida.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — comparten la evidencia sobre los límites de la divulgación (F-6, F-9, F-10); ese nodo la aplica a un glosario de seguro de salud.
 - [[modelo-salud-ia-farmacias-peru|Modelo de cobertura de salud: triage con IA + farmacias + atención humana (Perú)]] — comparten la evidencia sobre el sesgo de automatización (F-60, F-61); ese nodo la aplica al triage con IA en farmacias, donde un error del sistema aceptado sin revisar tiene costo clínico.
+- [[venta-vida-digital-hibrida-latam|Venta de seguros de vida en LATAM: modelo digital vs. híbrido vs. tradicional, y cómo performa cada uno]] — ese nodo mide cómo va la venta de seguros de vida digital e híbrida en América Latina; comparten la evidencia sobre insurtech de la región e incentivos de salud.
+- [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario]] — ese nodo discute el futuro del asesor de seguros frente a la venta digital, con la misma evidencia sobre confianza en la IA y el caso Lemonade.

@@ -4,7 +4,7 @@
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
 > `fuentes/codice.md` (F-86 a F-116, F-193 a F-207; actualización 2026-10-02: F-477 a F-478, F-480, F-481 (y F-198), F-487).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-10-10 · Versión: v1.2
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-10-12 · Versión: v1.2
 > (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
 > con §2.6: contraste regional Europa/Asia/Perú-Latam — corrida adicional de `/trinidad`)
 
@@ -352,3 +352,5 @@ Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farma
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — aporta el contraste Root (combined ratio 91,4%) vs. Lemonade (~139%) con evidencia auditada (F-449, F-450): la innovación en seguros se evalúa por su disciplina de suscripción, no por su capa tecnológica (H29); aplica al análisis de qué modelos navegan bien la presión de costo.
 - [[conducta-humano-ia|Conducta humano-IA]] — el UBI/telemática (F-442) se consolida allí como caso causal de cambio de conducta, con el matiz de que el programa fue simulado.
 - [[conciencia-cuantica|Conciencia cuántica]] — sanciones a productos de "sanación cuántica" (F-871 a F-874) y retractación del Minsal chileno (F-854, F-855): riesgo regulatorio y reputacional para ofertas de salud o bienestar con lenguaje pseudocientífico.
+- [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA: qué se está juntando, qué funciona y qué es humo]] — ese nodo analiza a Lemonade y a Discovery como actores de IA y economía conductual, con la misma advertencia: muchas cifras las reporta la propia empresa, sin auditoría externa.
+- [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics]] — ese nodo usa la misma evidencia sobre el seguro por uso (telemática que mide cómo se maneja) y el caso Lemonade para repensar la venta de seguros de vida individual.

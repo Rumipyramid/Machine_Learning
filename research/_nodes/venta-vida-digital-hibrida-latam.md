@@ -1,7 +1,7 @@
 # Venta de seguros de vida en LATAM: modelo digital vs. híbrido vs. tradicional, y cómo performa cada uno
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-27 · Última actualización: 2026-10-04 · Versión: v1.0
+> Fecha de elaboración: 2026-07-27 · Última actualización: 2026-10-12 · Versión: v1.0
 > Origen: `/marketer` — investigación de espectro de negocio
 > Pregunta original: ¿cómo están funcionando las aseguradoras de LATAM en venta de seguros
 > de vida — 100% digital, híbrido, o tradicional — y cómo performa cada modelo?
@@ -230,3 +230,5 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 - `proyecto-back-to-basics-ffvv-vida.md` — caso real de RIMAC (Perú) donde la apuesta es
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
+- [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — ese nodo evalúa con qué evidencia se sostienen las innovaciones de insurtech de la región que aquí se usan como ejemplo.
+- [[proyecto-back-to-basics-ffvv-vida|Proyecto Back to Basics]] — ese nodo aplica la misma conclusión (lo digital potencia al asesor) al rediseño de la fuerza de ventas de vida individual de RIMAC.

@@ -7,7 +7,7 @@
 > la capa de **estado y decisiones internas de RIMAC**, esos otros son la capa de **evidencia
 > externa**.
 >
-> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-10-11 · Versión: v1.4
+> Fecha de elaboración: 2026-07-23 · Última actualización: 2026-10-12 · Versión: v1.4
 > (v1.0: mapa sistémico + estrategias de contacto + playbook + su cruce con evidencia/Lobo.
 > v1.1 antepone el marco que faltaba — el "Modelo de Experiencia de Venta Vida" presentado al VP,
 > con el diagnóstico Dx1-Dx3 ya formalizado — cambio estructural, no incremental, porque reordena
@@ -934,3 +934,5 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — comparten la advertencia sobre los límites de explicar mejor un seguro (F-6, F-9, F-10); ese nodo la aplica a un glosario de salud en lenguaje claro.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración de las personas frente a los seguros]] — comparten la evidencia sobre los sesgos que frenan la compra de seguros y la mala comprensión de las pólizas (F-3, F-6, F-9); ese nodo da el contexto de confianza y tenencia en Perú.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA: qué se está juntando, qué funciona y qué es humo]] — comparten la evidencia sobre nudges a escala (F-16, F-21) y el caso Lemonade (F-29); ese nodo es la referencia si el proyecto quiere probar mensajes con usuarios sintéticos antes de un piloto.
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud: presión actual y modelos que la navegan]] — ese nodo explica los mecanismos de seguros que premian conductas (telemática, incentivos de salud) y el desempeño real de Lemonade que este proyecto cita.
+- [[venta-vida-digital-hibrida-latam|Venta de seguros de vida en LATAM: modelo digital vs. híbrido vs. tradicional, y cómo performa cada uno]] — ese nodo muestra que en América Latina lo digital potencia al asesor de vida en vez de reemplazarlo, con una distribución multicanal liderada por personas.
