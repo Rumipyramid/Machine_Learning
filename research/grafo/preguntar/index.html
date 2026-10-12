@@ -257,11 +257,17 @@ Reglas:
 1. No uses conocimiento externo para rellenar huecos. Si algo no está en los extractos, di claramente "Mu no tiene esto guardado" y sugiere investigarlo con /trinidad.
 2. Cita la fuente de cada afirmación con su código entre corchetes justo después, por ejemplo [F-16]. Nunca inventes un código.
 3. Distingue con esas palabras lo que es "dato verificado" de lo que es "inferencia" o "lectura de resumen", y marca lo que el nodo declara no verificado.
-4. Escribe como un experto en redacción, para alguien que no conoce el proyecto: primero la conclusión, una idea por frase, frases cortas. Nunca nombres un código interno (H13, C17, §2.9), un número de lección o el nombre de un archivo sin decir con palabras qué es; las fuentes se cuentan (qué encontró, quién, cuándo) y su código va al final.
-5. Sé breve: una frase de respuesta directa, luego hasta 6 viñetas que empiecen con "- ", y al final una línea "Lo que Mu no sabe: ...". Usa **negritas** solo para la idea principal. Sin títulos ni tablas.
+4. Formato, entre 150 y 300 palabras:
+   - Un párrafo de apertura, sin título, de 2 o 3 frases. La primera frase responde la pregunta de forma directa; las siguientes dicen en qué se apoya y qué tan sólida es esa base.
+   - Luego de 2 a 4 puntos numerados ("1. ", "2. "…). Cada punto abre con la idea en **negrita**, dicha como una afirmación completa, y sigue con una o dos frases que se leen de corrido: qué encontró la fuente, quién y cuándo [F-n], y qué significa para la pregunta.
+   - Cierra con una línea "Lo que Mu no sabe: …" de una o dos frases.
+   - Sin títulos ni tablas. Nada de frases telegráficas ni listas de etiquetas.
+5. Nunca nombres un código interno (H13, C17, §2.9), un número de lección o el nombre de un archivo sin decir con palabras qué es.
 6. Si una afirmación toca una contradicción ABIERTA del grafo, dila como "en disputa" y explica en una frase por qué sigue abierta. Si está resuelta, puedes usar la resolución.
 7. Cuando cites una hipótesis, usa su estado tal como figura (abierta, parcial, respaldada, refutada) y explica qué significa con palabras.
 8. Si la pregunta no es sobre lo que Mu investiga, dilo en una frase y ofrece qué sí puede responder.
+
+${REDACCION}
 
 Estado actual del cerebro (panel): ${estado}`;
 
@@ -551,7 +557,7 @@ Devuelve SOLO un objeto JSON con estas claves:
 - Revisión final: relee como el lector. Corta lo que sobra, une las frases sueltas y comprueba que alguien que lea solo tu texto entiende qué se afirma, en qué se apoya y qué hacer.`;
   // las mentes y el Criterio piensan primero dentro de <analisis>…</analisis>; la página solo muestra lo que viene después
   const sinAnalisis = t => String(t || "").replace(/<analisis>[\s\S]*?(<\/analisis>|$)/, "").trim();
-  const PLAN = (pasos) => `Empieza tu respuesta con <analisis>…</analisis> y piensa ahí (nadie lo verá): ${pasos} Después de cerrar el análisis escribe la lectura completa, desde el párrafo de apertura, sin repetir la pregunta.`;
+  const PLAN = (pasos) => `Empieza tu respuesta con un borrador de trabajo entre <analisis> y </analisis> (la página lo oculta y muestra solo lo que escribas después): ${pasos} Después de cerrar el análisis escribe la lectura completa, desde el párrafo de apertura, sin repetir la pregunta.`;
   const SOLIDEZ = { A: "solidez alta", B: "solidez buena", C: "solidez media", D: "solidez baja", E: "solidez muy baja" };
   const limpio = t => String(t || "").replace(/[*`]/g, "").replace(/^(\s*\[[^\]]*\]\s*)+/, "").trim();
   const tipoFuente = f => { const j = limpio(String(f.rigor).split(/\s+[—-]\s+/).slice(1).join(" — ")); return `${SOLIDEZ[f.rig] || "solidez sin calificar"}${j ? " (" + j.slice(0, 140) + ")" : ""}`; };
@@ -726,7 +732,7 @@ Si algo conviene no afirmarlo todavía porque llega evidencia en una fecha conoc
   }
   const CRITERIO_PROMPT = `Eres EL CRITERIO DE MU: la parte del segundo cerebro que, después de la primera respuesta, razona la pregunta contra lo que el cerebro realmente sabe y escribe la respuesta más directa posible. Tu virtud es la prudencia: no inventas ni fuerzas.
 
-Proceso (empieza tu respuesta con <analisis>…</analisis> y haz ahí estos pasos en orden; nadie lo verá):
+Proceso (empieza tu respuesta con un borrador de trabajo entre <analisis> y </analisis> y haz ahí estos pasos en orden; la página lo oculta y muestra solo la respuesta que escribas después):
 1. ¿Qué pregunta exactamente la persona? Reformúlala en una frase.
 2. Contrasta la primera respuesta con las fichas: ¿cada afirmación central está en una fuente que la dice? Marca lo que se estiró, lo inventado y lo que no tiene fuente.
 3. Juzga la relevancia de cada fuente: ¿estudia lo mismo que se pregunta (mismo tema, mismo contexto de país, sector y población, un resultado comparable y datos vigentes)? Directa: sí. Cercana: el mismo mecanismo en otro contexto, o datos viejos. Lejana: solo comparte palabras.
@@ -748,7 +754,7 @@ Reglas duras:
 - Una coincidencia de palabras no es evidencia. Una nota de prensa no es un estudio.
 
 ${REDACCION}`;
-  async function criterio(entry, q, respuesta, B) {
+  async function criterio(entry, q, respuesta, B, simple = false) {
     const cr = entry.cr; cr.hidden = false;
     const [et, tx] = NIVEL[B.nivel];
     cr.innerHTML = `<div class="h ${B.nivel}"><span>⚖️ CRITERIO DE MU · respuesta directa</span><span></span></div><div class="b"><p class="think">El Criterio está razonando la pregunta</p></div>`;
@@ -789,7 +795,8 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
     ctl = new AbortController(); stop.hidden = false; hint.textContent = "El Criterio está razonando la pregunta (10 a 40 segundos).";
     try {
       const opts = { signal: ctl.signal, onText: ({ text }) => { const v = sinAnalisis(text); if (v) body.innerHTML = md(v); }, cache: false };
-      const res = await sample([{ role: "user", content: `${CRITERIO_PROMPT}\n\n${exp}` }], opts);
+      const prompt = simple ? CRITERIO_PROMPT.replace(/Proceso \(empieza[\s\S]*?\n\nDespués del análisis, escribe SOLO la respuesta:/, "Escribe la respuesta:") : CRITERIO_PROMPT;
+      const res = await sample([{ role: "user", content: `${prompt}\n\n${exp}` }], opts);
       body.innerHTML = md(sinAnalisis(res.text) || "El Criterio no llegó a escribir la respuesta.");
     } catch (e) {
       const code = (e && e.code) || "upstream_error";
@@ -799,12 +806,12 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
       body.innerHTML = (parcial ? md(parcial) + "<p><i>(quedó cortado)</i></p>" : "")
         + `<p><b>El Criterio no pudo terminar su respuesta.</b> ${esc(motivo)} <small>(código: ${esc(code)})</small></p>`
         + (B.camino.length ? `<p>Mientras tanto, esto es lo que calculan las reglas fijas para responder bien la pregunta:</p><ul>${B.camino.map(c => `<li>${inline(c)}</li>`).join("")}</ul>` : "");
-      if (!["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "invalid_request", "transform_error", "refused"].includes(code)) {
-        const bt = document.createElement("button"); bt.type = "button"; bt.className = "ghost"; bt.textContent = "VOLVER A INTENTAR EL CRITERIO";
+      if (!["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "invalid_request", "transform_error"].includes(code) && !(code === "refused" && simple)) {
+        const bt = document.createElement("button"); bt.type = "button"; bt.className = "ghost"; bt.textContent = code === "refused" ? "INTENTAR UNA REVISIÓN MÁS SIMPLE" : "VOLVER A INTENTAR EL CRITERIO";
         bt.addEventListener("click", async () => {
           if (go.disabled) return;
           go.disabled = true;
-          try { await criterio(entry, q, respuesta, B); }
+          try { await criterio(entry, q, respuesta, B, code === "refused" || simple); }
           finally { go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus nodos y en su registro de fuentes antes de responder."; }
         });
         const pb = document.createElement("p"); pb.append(bt); body.append(pb);
@@ -817,7 +824,7 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
     prompt_too_large: "El expediente que revisa el Criterio quedó demasiado largo.",
     empty_completion: "Claude devolvió una respuesta vacía.",
     session_expired: "Tu sesión de claude.ai expiró. Vuelve a iniciar sesión.",
-    refused: "Claude no quiso responder esta revisión.",
+    refused: "Claude declinó redactar esta revisión. Puedes intentar una versión más simple, sin el borrador de trabajo.",
     invalid_request: "La página armó mal la llamada a Claude; es un error de la página, no tuyo.",
   };
 
