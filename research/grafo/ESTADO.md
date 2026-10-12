@@ -8,23 +8,23 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,692 líneas |
+| Nodes (`_nodes/`) | 20 | 8,718 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
-| Fuentes en el ledger | 934 | 🟢A 312 · 🔵B 158 · 🟡C 205 · 🟠D 206 · 🔴E 38 · otras/sin clasificar 15 |
+| Fuentes en el ledger | 945 | 🟢A 312 · 🔵B 165 · 🟡C 209 · 🟠D 206 · 🔴E 38 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 158 | recíprocas: 158 de 158 (100%) |
-| Fuentes citadas por ≥1 node | 825 de 934 | 88% del ledger; **109 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 836 de 945 | 88% del ledger; **109 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 106 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 934 de 934 fuentes (100%) | 2010 relaciones · 114 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 945 de 945 fuentes (100%) | 2024 relaciones · 115 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
 
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
-| Iteraciones de bitácora | 7 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02, 2026-10-12) | cuántas veces se confrontó el node |
-| Tamaño | 2,137 líneas | crecimiento ≠ calidad; ver trazabilidad |
-| Fuentes citadas explícitamente | 331 | F-n individuales dentro del node |
-| …de rigor A/B | 163 (49%) | solidez de la base |
+| Iteraciones de bitácora | 8 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02, 2026-10-12) | cuántas veces se confrontó el node |
+| Tamaño | 2,153 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Fuentes citadas explícitamente | 336 | F-n individuales dentro del node |
+| …de rigor A/B | 167 (50%) | solidez de la base |
 | Hipótesis vivas | 36: abierta 16 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
 | **Falsabilidad ejercida** | 56% (20/36) | hipótesis que ya se movieron de `abierta` |
 | **Tasa de autocorrección** | 20% (4/20) | de las resueltas, cuántas se refutaron: 0% sostenido sería señal de confirmación sesgada |
@@ -38,17 +38,17 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 27 | 0.077 | ✅ |
-| `proyecto-back-to-basics-ffvv-vida` | 19 | 0.055 | ✅ |
-| `convergencia-psicologia-economia-ia` | 10 | 0.023 | ✅ |
+| `conducta-humano-ia` | 27 | 0.075 | ✅ |
+| `proyecto-back-to-basics-ffvv-vida` | 19 | 0.054 | ✅ |
+| `convergencia-psicologia-economia-ia` | 10 | 0.022 | ✅ |
 | `fenomenos-psicologicos` | 9 | 0.021 | ✅ |
-| `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.024 | ✅ |
-| `material-visual-venta-consultiva` | 8 | 0.024 | ✅ |
+| `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.023 | ✅ |
+| `material-visual-venta-consultiva` | 8 | 0.023 | ✅ |
 | `mecanismos-seguros-salud` | 7 | 0.018 | ✅ |
 | `behavioral-design-estado-disciplina` | 6 | 0.018 | ✅ |
 | `glosario-seguro-vida-peru` | 4 | 0.012 | ✅ |
 | `seguros-comportamiento-mundo-peru` | 4 | 0.011 | ✅ |
-| `transicion-venta-fria-a-opt-in` | 4 | 0.012 | ✅ |
+| `transicion-venta-fria-a-opt-in` | 4 | 0.011 | ✅ |
 | `glosario-seguro-salud-peru` | 3 | 0.009 | ✅ |
 | `modelo-salud-ia-farmacias-peru` | 2 | 0.006 | ✅ |
 | `conciencia-cuantica` | 0 | 0.0 | ❌ sin enlace |
@@ -89,7 +89,7 @@
 | 2026-10-07 | 60 | 800 | 33 | ███████████████ |
 | 2026-10-10 | 74 | 874 | 36 | ██████████████████ |
 | 2026-10-11 | 5 | 879 | 0 | █ |
-| 2026-10-12 | 55 | 934 | 23 | ██████████████ |
+| 2026-10-12 | 66 | 945 | 30 | ████████████████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -106,7 +106,7 @@
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-11 | `614bf74` | 879 | 20 | 5 | 142 | 770 | 2033 | 16 | 20 | 22 |
-| 2026-10-12 | `0ed3248` | 908 | 20 | 5 | 158 | 799 | 2082 | 16 | 20 | 22 |
+| 2026-10-12 | `8081605` | 934 | 20 | 5 | 158 | 825 | 2137 | 16 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -137,16 +137,16 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2137 | 331 | 163 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
+| `tendencias-diseno-innovacion` | 2153 | 336 | 167 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
 | `convergencia-psicologia-economia-ia` | 251 | 119 | 51 | 12/12 | 2026-10-12 | 2026-10-12 v1.0 |
 | `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
 | `fenomeno-el-nino-impacto-personas` | 404 | 58 | 32 | 3/3 | 2026-10-07 | 2026-10-07 v1.1 |
 | `mecanismos-seguros-salud` | 357 | 57 | 35 | 11/11 | 2026-10-12 | 2026-10-12 v1.2 |
-| `conducta-humano-ia` | 156 | 46 | 29 | 9/9 | 2026-10-12 | 2026-10-12 v1.1 |
+| `conducta-humano-ia` | 165 | 51 | 32 | 9/9 | 2026-10-12 | 2026-10-12 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 939 | 33 | 29 | 14/14 | 2026-10-12 | 2026-10-12 v1.4 |
+| `modelo-salud-ia-farmacias-peru` | 619 | 24 | 18 | 5/5 | 2026-10-11 | 2026-10-12 v1.0 |
 | `futuro-asesores-seguros-venta-digital` | 391 | 23 | 2 | 8/8 | 2026-10-12 | 2026-10-12 v1.0 |
-| `modelo-salud-ia-farmacias-peru` | 618 | 23 | 18 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
 | `seguros-comportamiento-mundo-peru` | 342 | 21 | 10 | 17/17 | 2026-10-11 | 2026-10-11 v1.1 |
 | `transicion-venta-fria-a-opt-in` | 326 | 18 | 7 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 256 | 17 | 11 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |

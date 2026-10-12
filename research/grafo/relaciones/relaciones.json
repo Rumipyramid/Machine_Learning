@@ -486,6 +486,15 @@
    ]
   },
   {
+   "id": "agentes_ia",
+   "nombre": "Agentes de IA (programas concretos)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-940"
+   ]
+  },
+  {
    "id": "agentes_ia_especificos_tarea",
    "nombre": "Agentes de IA específicos a una tarea integrados en software",
    "tipo": "intervencion",
@@ -5261,9 +5270,10 @@
    "id": "combinacion_humano_ia",
    "nombre": "Combinación humano-IA frente al mejor de los dos por separado",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-516"
+    "F-516",
+    "F-936"
    ]
   },
   {
@@ -5649,6 +5659,15 @@
     "F-335",
     "F-336",
     "F-356"
+   ]
+  },
+  {
+   "id": "confianza_capacidades_evaluacion",
+   "nombre": "Confianza, capacidades, evaluación y colaboración como condiciones de la IA en salud",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-946"
    ]
   },
   {
@@ -6921,6 +6940,15 @@
    "fuentes": [
     "F-169",
     "F-171"
+   ]
+  },
+  {
+   "id": "desempeno_percibido_trabajador",
+   "nombre": "Desempeño y disfrute del trabajo percibidos por quien usa IA",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-939"
    ]
   },
   {
@@ -8617,11 +8645,12 @@
    "id": "experiencia_trabajador",
    "nombre": "Experiencia y habilidad previa del trabajador",
    "tipo": "constructo",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
     "F-580",
     "F-582",
-    "F-584"
+    "F-584",
+    "F-936"
    ]
   },
   {
@@ -9816,6 +9845,15 @@
    ]
   },
   {
+   "id": "ia_agentica",
+   "nombre": "IA agéntica (sistemas que persiguen metas con autonomía)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-940"
+   ]
+  },
+  {
    "id": "ia_alineada_design_system",
    "nombre": "IA alineada al design system",
    "tipo": "intervencion",
@@ -9887,6 +9925,27 @@
    ]
   },
   {
+   "id": "ia_finanzas_personales",
+   "nombre": "IA como fuente de información y consejo financiero personal",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-941"
+   ]
+  },
+  {
+   "id": "ia_generativa",
+   "nombre": "IA generativa",
+   "tipo": "intervencion",
+   "grado": 4,
+   "fuentes": [
+    "F-936",
+    "F-937",
+    "F-939",
+    "F-944"
+   ]
+  },
+  {
    "id": "ia_generativa_proceso_diseno",
    "nombre": "IA generativa en el proceso de diseño",
    "tipo": "intervencion",
@@ -9894,6 +9953,15 @@
    "fuentes": [
     "F-887",
     "F-895"
+   ]
+  },
+  {
+   "id": "ia_salud",
+   "nombre": "IA en salud",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-946"
    ]
   },
   {
@@ -10070,6 +10138,15 @@
    "grado": 1,
    "fuentes": [
     "F-116"
+   ]
+  },
+  {
+   "id": "incidente_ia",
+   "nombre": "Incidente de IA (daño ocurrido)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-945"
    ]
   },
   {
@@ -13048,6 +13125,15 @@
    ]
   },
   {
+   "id": "ocde",
+   "nombre": "OCDE",
+   "tipo": "organizacion",
+   "grado": 1,
+   "fuentes": [
+    "F-943"
+   ]
+  },
+  {
    "id": "ocupaciones_administrativas",
    "nombre": "Ocupaciones administrativas (clerical support workers)",
    "tipo": "poblacion",
@@ -13084,6 +13170,15 @@
    "grado": 1,
    "fuentes": [
     "F-234"
+   ]
+  },
+  {
+   "id": "opacidad_modelos_terceros",
+   "nombre": "Modelos opacos y dependencia de proveedores externos",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-942"
    ]
   },
   {
@@ -13285,6 +13380,15 @@
    ]
   },
   {
+   "id": "paises_ingreso_bajo_medio",
+   "nombre": "Países de ingreso bajo y medio-bajo",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-938"
+   ]
+  },
+  {
    "id": "pandemia_2020",
    "nombre": "Pandemia de 2020",
    "tipo": "concepto",
@@ -13412,6 +13516,15 @@
     "F-852",
     "F-867",
     "F-868"
+   ]
+  },
+  {
+   "id": "peligro_ia",
+   "nombre": "Peligro de IA (daño potencial)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-945"
    ]
   },
   {
@@ -14410,6 +14523,16 @@
    ]
   },
   {
+   "id": "productividad_agregada_g7",
+   "nombre": "Crecimiento de la productividad laboral agregada (G7)",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-937",
+    "F-938"
+   ]
+  },
+  {
    "id": "productividad_devs",
    "nombre": "Productividad de desarrolladores",
    "tipo": "resultado",
@@ -14436,6 +14559,16 @@
    "grado": 1,
    "fuentes": [
     "F-591"
+   ]
+  },
+  {
+   "id": "productividad_tarea_ia",
+   "nombre": "Productividad por tarea con IA generativa",
+   "tipo": "resultado",
+   "grado": 4,
+   "fuentes": [
+    "F-936",
+    "F-938"
    ]
   },
   {
@@ -15668,6 +15801,16 @@
    ]
   },
   {
+   "id": "riesgos_ia_consumidor_financiero",
+   "nombre": "Riesgos para el consumidor financiero: sesgo, alucinaciones, influencia comercial, privacidad, exclusión",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-941",
+    "F-944"
+   ]
+  },
+  {
    "id": "robma",
    "nombre": "Meta-análisis bayesiano robusto (RoBMA)",
    "tipo": "metrica",
@@ -16259,6 +16402,15 @@
    "grado": 1,
    "fuentes": [
     "F-98"
+   ]
+  },
+  {
+   "id": "servicios_intensivos_conocimiento",
+   "nombre": "Peso de los servicios intensivos en conocimiento",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-938"
    ]
   },
   {
@@ -16880,6 +17032,15 @@
    "fuentes": [
     "F-816",
     "F-844"
+   ]
+  },
+  {
+   "id": "supervision_ia_finanzas",
+   "nombre": "Supervisión de la IA en finanzas",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-942"
    ]
   },
   {
@@ -17690,6 +17851,15 @@
    "grado": 1,
    "fuentes": [
     "F-110"
+   ]
+  },
+  {
+   "id": "uso_ia_gen_entidades_reguladas",
+   "nombre": "Uso de IA generativa en entidades financieras reguladas",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-943"
    ]
   },
   {
@@ -42543,11 +42713,179 @@
    "fuerza": "causal",
    "fecha": "2026-10-12",
    "clase": "efecto"
+  },
+  {
+   "id": "T-2011",
+   "s": "ia_generativa",
+   "p": "aumenta",
+   "o": "productividad_tarea_ia",
+   "f": "F-936",
+   "apoyo": "Revisión de experimentos: ganancias de ~5% a más de 25% en soporte al cliente, software y consultoría (cifra del blog oficial).",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2012",
+   "s": "experiencia_trabajador",
+   "p": "modera",
+   "o": "productividad_tarea_ia",
+   "f": "F-936",
+   "apoyo": "Las ganancias son mayores entre los trabajadores con menos experiencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2013",
+   "s": "combinacion_humano_ia",
+   "p": "tiene_limite",
+   "o": "productividad_tarea_ia",
+   "f": "F-936",
+   "apoyo": "El resultado depende del ajuste a la tarea, de la capacidad de evaluar la salida y de la confianza.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2014",
+   "s": "ia_generativa",
+   "p": "aumenta",
+   "o": "productividad_agregada_g7",
+   "f": "F-937",
+   "apoyo": "Proyección: +0,4 a 1,3 puntos anuales en EE.UU. y Reino Unido; +0,2 a 0,8 en Italia y Japón, a 10 años.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2015",
+   "s": "servicios_intensivos_conocimiento",
+   "p": "modera",
+   "o": "productividad_agregada_g7",
+   "f": "F-938",
+   "apoyo": "Los países con pocos servicios intensivos en conocimiento ganarían menos con la IA.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2016",
+   "s": "paises_ingreso_bajo_medio",
+   "p": "tiene_limite",
+   "o": "productividad_tarea_ia",
+   "f": "F-938",
+   "apoyo": "Barreras de infraestructura digital, habilidades, financiamiento y regulación limitan la ganancia en países rezagados.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2017",
+   "s": "ia_generativa",
+   "p": "aumenta",
+   "o": "desempeno_percibido_trabajador",
+   "f": "F-939",
+   "apoyo": "Cuatro de cada cinco trabajadores que usan IA dicen que mejoró su desempeño (autorreporte).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2018",
+   "s": "agentes_ia",
+   "p": "es_tipo_de",
+   "o": "ia_agentica",
+   "f": "F-940",
+   "apoyo": "La OCDE separa la IA agéntica (rasgo de sistemas) de los agentes de IA (programas concretos); no son sinónimos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2019",
+   "s": "ia_finanzas_personales",
+   "p": "aumenta",
+   "o": "riesgos_ia_consumidor_financiero",
+   "f": "F-941",
+   "apoyo": "La IA amplía el acceso a información financiera pero trae sesgo, alucinaciones, influencia comercial, privacidad y exclusión.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2020",
+   "s": "opacidad_modelos_terceros",
+   "p": "tiene_limite",
+   "o": "supervision_ia_finanzas",
+   "f": "F-942",
+   "apoyo": "Las normas bastan; el reto es aplicarlas a modelos opacos, proveedores externos y agentes sin supervisión humana constante.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2021",
+   "s": "ocde",
+   "p": "mide",
+   "o": "uso_ia_gen_entidades_reguladas",
+   "f": "F-943",
+   "apoyo": "Encuesta a 49 jurisdicciones: la IA generativa se usa poco en entidades reguladas, sobre todo en eficiencia interna y pruebas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2022",
+   "s": "ia_generativa",
+   "p": "aumenta",
+   "o": "riesgos_ia_consumidor_financiero",
+   "f": "F-944",
+   "apoyo": "Su uso amplio sin humano en el circuito podría magnificar riesgos existentes y crear nuevos.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2023",
+   "s": "peligro_ia",
+   "p": "origina_en",
+   "o": "incidente_ia",
+   "f": "F-945",
+   "apoyo": "El peligro es el daño potencial; el incidente es el daño ocurrido por el desarrollo, uso o falla de un sistema de IA.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2024",
+   "s": "confianza_capacidades_evaluacion",
+   "p": "parte_de",
+   "o": "ia_salud",
+   "f": "F-946",
+   "apoyo": "La OCDE propone actuar en confianza, capacidades, evaluación y colaboración para una IA responsable en salud.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "estructura"
   }
  ],
  "generado": "2026-10-12",
  "cobertura": {
-  "procesadas": 934,
-  "total": 934
+  "procesadas": 945,
+  "total": 945
  }
 }

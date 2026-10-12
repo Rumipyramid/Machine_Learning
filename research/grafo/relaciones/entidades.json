@@ -254,6 +254,11 @@
   "nombre": "Agentes generativos construidos con entrevistas de 2 h (1.052 personas)",
   "tipo": "intervencion"
  },
+ "agentes_ia": {
+  "id": "agentes_ia",
+  "nombre": "Agentes de IA (programas concretos)",
+  "tipo": "concepto"
+ },
  "agentes_ia_especificos_tarea": {
   "id": "agentes_ia_especificos_tarea",
   "nombre": "Agentes de IA específicos a una tarea integrados en software",
@@ -2919,6 +2924,11 @@
   "nombre": "Confianza del consumidor en la aseguradora",
   "tipo": "constructo"
  },
+ "confianza_capacidades_evaluacion": {
+  "id": "confianza_capacidades_evaluacion",
+  "nombre": "Confianza, capacidades, evaluación y colaboración como condiciones de la IA en salud",
+  "tipo": "concepto"
+ },
  "confianza_comercio_agentico": {
   "id": "confianza_comercio_agentico",
   "nombre": "Comodidad y confianza del consumidor en que un agente compre por él",
@@ -3567,6 +3577,11 @@
  "desempeno_pc_eeuu_2025": {
   "id": "desempeno_pc_eeuu_2025",
   "nombre": "Desempeño de la industria de seguros P&C de EE.UU. en 2025",
+  "tipo": "resultado"
+ },
+ "desempeno_percibido_trabajador": {
+  "id": "desempeno_percibido_trabajador",
+  "nombre": "Desempeño y disfrute del trabajo percibidos por quien usa IA",
   "tipo": "resultado"
  },
  "deseo_limpieza_fisica": {
@@ -5069,6 +5084,11 @@
   "nombre": "Enfoque individual (i-frame)",
   "tipo": "concepto"
  },
+ "ia_agentica": {
+  "id": "ia_agentica",
+  "nombre": "IA agéntica (sistemas que persiguen metas con autonomía)",
+  "tipo": "concepto"
+ },
  "ia_alineada_design_system": {
   "id": "ia_alineada_design_system",
   "nombre": "IA alineada al design system",
@@ -5104,9 +5124,24 @@
   "nombre": "Herramientas de IA en la investigación científica",
   "tipo": "intervencion"
  },
+ "ia_finanzas_personales": {
+  "id": "ia_finanzas_personales",
+  "nombre": "IA como fuente de información y consejo financiero personal",
+  "tipo": "intervencion"
+ },
+ "ia_generativa": {
+  "id": "ia_generativa",
+  "nombre": "IA generativa",
+  "tipo": "intervencion"
+ },
  "ia_generativa_proceso_diseno": {
   "id": "ia_generativa_proceso_diseno",
   "nombre": "IA generativa en el proceso de diseño",
+  "tipo": "intervencion"
+ },
+ "ia_salud": {
+  "id": "ia_salud",
+  "nombre": "IA en salud",
   "tipo": "intervencion"
  },
  "ibpad_ia_design_2025": {
@@ -5203,6 +5238,11 @@
   "id": "incidencia_stroke",
   "nombre": "Incidencia de accidente cerebrovascular (stroke)",
   "tipo": "resultado"
+ },
+ "incidente_ia": {
+  "id": "incidente_ia",
+  "nombre": "Incidente de IA (daño ocurrido)",
+  "tipo": "concepto"
  },
  "inconsistencia_eleccion_privacidad": {
   "id": "inconsistencia_eleccion_privacidad",
@@ -6734,6 +6774,11 @@
   "nombre": "Ser grabado en video durante el experimento (moderador propuesto por Strack)",
   "tipo": "limitacion"
  },
+ "ocde": {
+  "id": "ocde",
+  "nombre": "OCDE",
+  "tipo": "organizacion"
+ },
  "ocupaciones_administrativas": {
   "id": "ocupaciones_administrativas",
   "nombre": "Ocupaciones administrativas (clerical support workers)",
@@ -6753,6 +6798,11 @@
   "id": "omision_involuntaria_declaracion",
   "nombre": "Omisión involuntaria de algo leve o desconocido en la declaración de salud",
   "tipo": "concepto"
+ },
+ "opacidad_modelos_terceros": {
+  "id": "opacidad_modelos_terceros",
+  "nombre": "Modelos opacos y dependencia de proveedores externos",
+  "tipo": "limitacion"
  },
  "opcion_senuelo": {
   "id": "opcion_senuelo",
@@ -6854,6 +6904,11 @@
   "nombre": "Países Bajos (sistema de seguro de salud)",
   "tipo": "poblacion"
  },
+ "paises_ingreso_bajo_medio": {
+  "id": "paises_ingreso_bajo_medio",
+  "nombre": "Países de ingreso bajo y medio-bajo",
+  "tipo": "poblacion"
+ },
  "pandemia_2020": {
   "id": "pandemia_2020",
   "nombre": "Pandemia de 2020",
@@ -6922,6 +6977,11 @@
  "pelicula_what_the_bleep": {
   "id": "pelicula_what_the_bleep",
   "nombre": "Película 'What the Bleep Do We Know!?' (2004)",
+  "tipo": "concepto"
+ },
+ "peligro_ia": {
+  "id": "peligro_ia",
+  "nombre": "Peligro de IA (daño potencial)",
   "tipo": "concepto"
  },
  "peligro_percibido_emergencia": {
@@ -7449,6 +7509,11 @@
   "nombre": "Producción de cobre del Perú (estancada por cuarto año, sin nuevas operaciones)",
   "tipo": "resultado"
  },
+ "productividad_agregada_g7": {
+  "id": "productividad_agregada_g7",
+  "nombre": "Crecimiento de la productividad laboral agregada (G7)",
+  "tipo": "metrica"
+ },
  "productividad_devs": {
   "id": "productividad_devs",
   "nombre": "Productividad de desarrolladores",
@@ -7462,6 +7527,11 @@
  "productividad_investigacion": {
   "id": "productividad_investigacion",
   "nombre": "Productividad de la investigación (automatización de micro-tareas)",
+  "tipo": "resultado"
+ },
+ "productividad_tarea_ia": {
+  "id": "productividad_tarea_ia",
+  "nombre": "Productividad por tarea con IA generativa",
   "tipo": "resultado"
  },
  "productividad_trabajo_conocimiento": {
@@ -8109,6 +8179,11 @@
   "nombre": "Riesgo moral en seguros de salud",
   "tipo": "concepto"
  },
+ "riesgos_ia_consumidor_financiero": {
+  "id": "riesgos_ia_consumidor_financiero",
+  "nombre": "Riesgos para el consumidor financiero: sesgo, alucinaciones, influencia comercial, privacidad, exclusión",
+  "tipo": "resultado"
+ },
  "robma": {
   "id": "robma",
   "nombre": "Meta-análisis bayesiano robusto (RoBMA)",
@@ -8418,6 +8493,11 @@
   "id": "servicios_bajo_valor",
   "nombre": "Uso de servicios de salud de bajo valor clínico",
   "tipo": "resultado"
+ },
+ "servicios_intensivos_conocimiento": {
+  "id": "servicios_intensivos_conocimiento",
+  "nombre": "Peso de los servicios intensivos en conocimiento",
+  "tipo": "concepto"
  },
  "sesgo_automatizacion": {
   "id": "sesgo_automatizacion",
@@ -8743,6 +8823,11 @@
   "id": "superradiancia_triptofano",
   "nombre": "Superradiancia UV en redes de triptófano de microtúbulos",
   "tipo": "resultado"
+ },
+ "supervision_ia_finanzas": {
+  "id": "supervision_ia_finanzas",
+  "nombre": "Supervisión de la IA en finanzas",
+  "tipo": "intervencion"
  },
  "supervivencia_cancer": {
   "id": "supervivencia_cancer",
@@ -9168,6 +9253,11 @@
   "id": "uso_especialistas_hospitalizacion",
   "nombre": "Uso de especialistas y hospitalizaciones",
   "tipo": "resultado"
+ },
+ "uso_ia_gen_entidades_reguladas": {
+  "id": "uso_ia_gen_entidades_reguladas",
+  "nombre": "Uso de IA generativa en entidades financieras reguladas",
+  "tipo": "metrica"
  },
  "uso_ia_ideas_viaje": {
   "id": "uso_ia_ideas_viaje",

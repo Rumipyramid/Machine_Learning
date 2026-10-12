@@ -1,0 +1,238 @@
+{
+ "fecha": "2026-10-12",
+ "f_ids": [
+  "F-936",
+  "F-937",
+  "F-938",
+  "F-939",
+  "F-940",
+  "F-941",
+  "F-942",
+  "F-943",
+  "F-944",
+  "F-945",
+  "F-946"
+ ],
+ "entidades": [
+  {
+   "id": "productividad_tarea_ia",
+   "nombre": "Productividad por tarea con IA generativa",
+   "tipo": "resultado"
+  },
+  {
+   "id": "productividad_agregada_g7",
+   "nombre": "Crecimiento de la productividad laboral agregada (G7)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "paises_ingreso_bajo_medio",
+   "nombre": "Países de ingreso bajo y medio-bajo",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "servicios_intensivos_conocimiento",
+   "nombre": "Peso de los servicios intensivos en conocimiento",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ia_generativa",
+   "nombre": "IA generativa",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "desempeno_percibido_trabajador",
+   "nombre": "Desempeño y disfrute del trabajo percibidos por quien usa IA",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ia_agentica",
+   "nombre": "IA agéntica (sistemas que persiguen metas con autonomía)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "agentes_ia",
+   "nombre": "Agentes de IA (programas concretos)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ia_finanzas_personales",
+   "nombre": "IA como fuente de información y consejo financiero personal",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "riesgos_ia_consumidor_financiero",
+   "nombre": "Riesgos para el consumidor financiero: sesgo, alucinaciones, influencia comercial, privacidad, exclusión",
+   "tipo": "resultado"
+  },
+  {
+   "id": "supervision_ia_finanzas",
+   "nombre": "Supervisión de la IA en finanzas",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "opacidad_modelos_terceros",
+   "nombre": "Modelos opacos y dependencia de proveedores externos",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "uso_ia_gen_entidades_reguladas",
+   "nombre": "Uso de IA generativa en entidades financieras reguladas",
+   "tipo": "metrica"
+  },
+  {
+   "id": "incidente_ia",
+   "nombre": "Incidente de IA (daño ocurrido)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "peligro_ia",
+   "nombre": "Peligro de IA (daño potencial)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ia_salud",
+   "nombre": "IA en salud",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "confianza_capacidades_evaluacion",
+   "nombre": "Confianza, capacidades, evaluación y colaboración como condiciones de la IA en salud",
+   "tipo": "concepto"
+  },
+  {
+   "id": "ocde",
+   "nombre": "OCDE",
+   "tipo": "organizacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "ia_generativa",
+   "p": "aumenta",
+   "o": "productividad_tarea_ia",
+   "f": "F-936",
+   "apoyo": "Revisión de experimentos: ganancias de ~5% a más de 25% en soporte al cliente, software y consultoría (cifra del blog oficial).",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "experiencia_trabajador",
+   "p": "modera",
+   "o": "productividad_tarea_ia",
+   "f": "F-936",
+   "apoyo": "Las ganancias son mayores entre los trabajadores con menos experiencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "combinacion_humano_ia",
+   "p": "tiene_limite",
+   "o": "productividad_tarea_ia",
+   "f": "F-936",
+   "apoyo": "El resultado depende del ajuste a la tarea, de la capacidad de evaluar la salida y de la confianza.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ia_generativa",
+   "p": "aumenta",
+   "o": "productividad_agregada_g7",
+   "f": "F-937",
+   "apoyo": "Proyección: +0,4 a 1,3 puntos anuales en EE.UU. y Reino Unido; +0,2 a 0,8 en Italia y Japón, a 10 años.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "servicios_intensivos_conocimiento",
+   "p": "modera",
+   "o": "productividad_agregada_g7",
+   "f": "F-938",
+   "apoyo": "Los países con pocos servicios intensivos en conocimiento ganarían menos con la IA.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "paises_ingreso_bajo_medio",
+   "p": "tiene_limite",
+   "o": "productividad_tarea_ia",
+   "f": "F-938",
+   "apoyo": "Barreras de infraestructura digital, habilidades, financiamiento y regulación limitan la ganancia en países rezagados.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ia_generativa",
+   "p": "aumenta",
+   "o": "desempeno_percibido_trabajador",
+   "f": "F-939",
+   "apoyo": "Cuatro de cada cinco trabajadores que usan IA dicen que mejoró su desempeño (autorreporte).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "agentes_ia",
+   "p": "es_tipo_de",
+   "o": "ia_agentica",
+   "f": "F-940",
+   "apoyo": "La OCDE separa la IA agéntica (rasgo de sistemas) de los agentes de IA (programas concretos); no son sinónimos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "ia_finanzas_personales",
+   "p": "aumenta",
+   "o": "riesgos_ia_consumidor_financiero",
+   "f": "F-941",
+   "apoyo": "La IA amplía el acceso a información financiera pero trae sesgo, alucinaciones, influencia comercial, privacidad y exclusión.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "opacidad_modelos_terceros",
+   "p": "tiene_limite",
+   "o": "supervision_ia_finanzas",
+   "f": "F-942",
+   "apoyo": "Las normas bastan; el reto es aplicarlas a modelos opacos, proveedores externos y agentes sin supervisión humana constante.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ocde",
+   "p": "mide",
+   "o": "uso_ia_gen_entidades_reguladas",
+   "f": "F-943",
+   "apoyo": "Encuesta a 49 jurisdicciones: la IA generativa se usa poco en entidades reguladas, sobre todo en eficiencia interna y pruebas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_generativa",
+   "p": "aumenta",
+   "o": "riesgos_ia_consumidor_financiero",
+   "f": "F-944",
+   "apoyo": "Su uso amplio sin humano en el circuito podría magnificar riesgos existentes y crear nuevos.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "peligro_ia",
+   "p": "origina_en",
+   "o": "incidente_ia",
+   "f": "F-945",
+   "apoyo": "El peligro es el daño potencial; el incidente es el daño ocurrido por el desarrollo, uso o falla de un sistema de IA.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "confianza_capacidades_evaluacion",
+   "p": "parte_de",
+   "o": "ia_salud",
+   "f": "F-946",
+   "apoyo": "La OCDE propone actuar en confianza, capacidades, evaluación y colaboración para una IA responsable en salud.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Serie OECD Artificial Intelligence Papers (pedido del usuario, 2026-10-12). Leído vía resúmenes y blog oficial (lectura 'abstract'); la página de la serie no abre desde el entorno."
+}

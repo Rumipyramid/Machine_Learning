@@ -952,6 +952,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 | 5j | 2026-10-11 | 🧭 **Aporte del usuario:** gráfico del recorrido en órbitas (McKinsey y Skift, viajes, sep-2026) | §13.10 nueva; F-880 (gráfico leído completo) y F-876 (informe, por resumen); hipótesis H36 nueva | Buscar un estudio equivalente en seguros; leer el PDF completo del informe |
 | 6 | 2026-10-12 | 🔁 **Pregunta acotada por el Criterio:** ¿qué es lo más relevante hoy en diseño de producto digital y de servicios? (`/trinidad`, tres pistas en paralelo) + lectura a fondo de F-520 | §14 nueva; 29 fuentes (F-881 a F-909); F-520 con autoría y revista completas; H32 suma apoyo (costo de IA en Canva y Wix) | Leer textos completos (tamaños de efecto de F-520); medir validación en redes; buscar un cuasi-experimento de service design |
 | 7 | 2026-10-12 | 🔁 **Pregunta acotada por el Criterio:** ¿qué tendencia de diseño tiene efecto medido en conversión o retención? (`/trinidad`) + lectura a fondo de F-519 | §15 nueva; 26 fuentes (F-910 a F-935); F-519 con DOI; desacuerdo abierto sobre su hallazgo (la ruta por intrusión no fue significativa; mide intención, no conversión) | Leer textos completos (tamaños de efecto); buscar evidencia de seguros; corregir la ficha de F-519 si el usuario lo autoriza |
+| 8 | 2026-10-12 | 💡 **Aporte del usuario:** serie "OECD Artificial Intelligence Papers" | §16 nueva; F-936 a F-940 (productividad, trabajo y agentes); la serie confirma ganancias por tarea y modestas en el agregado | Leer los PDF completos; buscar la parte de la serie sobre adopción en pymes y América Latina |
 
 ---
 
@@ -2033,6 +2034,21 @@ Dos datos del mismo informe le dan escala: unos 65 puntos de contacto antes de r
 - La pista social no pudo medir Reddit ni LinkedIn.
 - Las cifras de Duolingo y Netflix las reporta la propia empresa.
 - Ninguna fuente estudia seguros ni Perú.
+
+## 16. 💡 Iteración 8 (2026-10-12) — lo que la OCDE sabe de la IA, la productividad y el trabajo
+*Origen: pedido del usuario de integrar la serie "OECD Artificial Intelligence Papers". La página de la serie no abre desde el entorno; un agente la catalogó con búsquedas (24 de al menos 62 números vistos) y aquí entran los que tocan innovación y diseño. Todo se leyó por resúmenes. Fuentes F-936 a F-940.*
+
+**En pocas palabras.** La OCDE confirma que la IA generativa sube la productividad por tarea, pero no de forma pareja. Las ganancias medidas son claras en tareas acotadas y menores en el agregado. Además, dependen de que la persona sepa evaluar lo que la IA produce, y los países con menos servicios de conocimiento, como Perú, ganarían menos.
+
+1. **La ganancia existe, pero es por tarea.** Una revisión de experimentos de la OCDE encontró mejoras de entre 5% y más de 25% en atención al cliente, programación y consultoría (F-936; la cifra viene del blog oficial). Ganan más los trabajadores con menos experiencia. Coincide con el experimento de campo con agentes de servicio (F-888) y con el metaanálisis que muestra que la combinación humano-IA rinde mejor en tareas de creación que en decisiones (F-516).
+2. **En el agregado, la cifra es modesta.** Un modelo de la OCDE proyecta que la IA sumaría entre 0,2 y 1,3 puntos al crecimiento anual de la productividad en el G7 durante diez años (F-937). Es una proyección con escenarios, no una medición. Sirve para descontar los titulares que prometen saltos de productividad de dos dígitos en toda la economía.
+3. **Los países rezagados ganarían menos.** Otro estudio advierte que los países de ingreso bajo y medio-bajo tienen pocos servicios intensivos en conocimiento, que es donde la IA más rinde (F-938). No analiza Perú, pero el mecanismo aplica: la ganancia depende de infraestructura digital, habilidades y financiamiento.
+4. **Los trabajadores lo valoran, según su propio reporte.** En encuestas de la OCDE, cuatro de cada cinco trabajadores que usan IA dicen que mejoró su desempeño (F-939). Es autorreporte: mide percepción, no productividad.
+5. **"Agente" y "agéntico" no son lo mismo.** La OCDE separa la "IA agéntica" (sistemas que persiguen metas con autonomía) de los "agentes de IA" (programas concretos) (F-940). Es un marco conceptual sin cifras de adopción. Sirve para ordenar la conversación sobre "UX agéntica" (§14.2), que sigue sin evidencia empírica.
+
+**Qué cambia para el nodo.** La idea de que la IA no destruye la demanda de herramientas de diseño sino que les cobra un costo de margen (H32) no se toca: la OCDE no mide empresas de diseño. Lo que sí cambia es el tono para hablar de productividad: la evidencia sostiene ganancias por tarea y condicionadas, no una transformación general.
+
+**Límites.** Todo viene de resúmenes y de un blog oficial. El catálogo de la serie quedó incompleto. Ningún estudio de la serie trata diseño, seguros ni América Latina.
 
 ---
 

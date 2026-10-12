@@ -2,7 +2,7 @@
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
-> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-11 (F-59 corregida: es un resumen de congreso de Dreischulte 2013; la revisión de Mdege 2011 pasa a F-646).
+> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-12 (marco de la OCDE sobre IA en salud, F-946).
 > Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada
@@ -594,6 +594,7 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   aprobó en diciembre de 2025 un dictamen conjunto con el PL 2522/2021-CR, pendiente de la
   Comisión Permanente; su avance posterior sigue sin verificar (ver
   [[seguros-comportamiento-mundo-peru]] §3.9).
+- **Marco de la OCDE (2024, F-946):** su revisión sobre IA responsable en salud pide actuar en cuatro frentes: confianza, capacidades, evaluación y colaboración entre países. No trae cifras ni casos de América Latina; sirve como lista de control para el piloto, no como evidencia de que el modelo funcione.
 - Las estrategias de testeo (§4) están validadas en la literatura de salud digital global;
   ninguna fue aplicada específicamente a un flujo idéntico (triage IA + backlog farmacéutico +
   delivery) en Perú — son la mejor práctica disponible, no una garantía de que funcionen

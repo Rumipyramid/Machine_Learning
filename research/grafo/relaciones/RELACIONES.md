@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **934 de 934** (100.0%) |
-| …del cerebro de diseño (citadas en el node) | 331 de 331 |
-| …por rigor | A 312/312 · B 158/158 · C 205/205 · D 206/206 · E 38/38 |
-| Barridos | 114 |
-| Entidades | 1911 |
-| Relaciones | 2010 |
-| Nivel de lectura | ficha 1205 · abstract 796 · completa 9 |
-| Fuerza de las afirmaciones | descriptiva 1177 · teorica 288 · observacional 274 · causal 271 |
+| Fuentes procesadas | **945 de 945** (100.0%) |
+| …del cerebro de diseño (citadas en el node) | 336 de 336 |
+| …por rigor | A 312/312 · B 165/165 · C 209/209 · D 206/206 · E 38/38 |
+| Barridos | 115 |
+| Entidades | 1929 |
+| Relaciones | 2024 |
+| Nivel de lectura | ficha 1205 · abstract 810 · completa 9 |
+| Fuerza de las afirmaciones | descriptiva 1181 · teorica 294 · observacional 278 · causal 271 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `tiene_limite` | metodo | 426 |
-| `aumenta` | efecto | 251 |
+| `tiene_limite` | metodo | 429 |
+| `aumenta` | efecto | 256 |
 | `aplica_a` | estructura | 232 |
 | `asocia_con` | efecto | 172 |
 | `reduce` | efecto | 160 |
 | `respalda` | evidencia | 146 |
-| `es_tipo_de` | estructura | 120 |
+| `es_tipo_de` | estructura | 121 |
 | `refuta` | evidencia | 98 |
-| `parte_de` | estructura | 96 |
-| `origina_en` | metodo | 94 |
-| `mide` | metodo | 79 |
+| `parte_de` | estructura | 97 |
+| `origina_en` | metodo | 95 |
+| `mide` | metodo | 80 |
 | `contradice` | evidencia | 64 |
-| `modera` | efecto | 51 |
+| `modera` | efecto | 53 |
 | `media` | efecto | 21 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -128,6 +128,7 @@
 | Confianza del consumidor en la aseguradora | F-334, F-335, F-336, F-356 |
 | Centaur generaliza a historias, estructuras y dominios nuevos (captura la cognición, no la forma de la tarea) | F-557, F-563, F-564, F-565 |
 | ML + interpretación humana para generar hipótesis conductuales | F-566, F-567, F-569, F-570 |
+| Experiencia y habilidad previa del trabajador | F-580, F-582, F-584, F-936 |
 | Loss ratio bruto de Lemonade (60% en el 2T 2026; 67% un año antes) | F-189, F-509, F-510, F-636 |
 | KPI de innovación: % de ventas de productos nuevos | F-454, F-529, F-531, F-532 |
 | Programa Vitality de Discovery (incentivos por conducta saludable) | F-25, F-99, F-637, F-638 |
@@ -160,6 +161,7 @@
 | Cifras que no coinciden entre fuentes | F-864, F-867, F-868, F-875 |
 | Sanciones regulatorias a productos de salud con etiqueta 'cuántica' | F-871, F-872, F-873, F-874 |
 | Usuarios activos diarios (DAU) | F-928, F-929, F-930, F-931 |
+| IA generativa | F-936, F-937, F-939, F-944 |
 | Relación innovación → desempeño | F-238, F-439, F-525 |
 | Éxito de proyectos de innovación | F-239, F-441, F-461 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
@@ -197,7 +199,6 @@
 | Tamaño y competencia lingüística de los modelos de lenguaje | F-558, F-572, F-575 |
 | Agentes de máquina (incluidos LLMs) que reciben instrucciones delegadas | F-579, F-592, F-594 |
 | Asistente conversacional de IA generativa para agentes de soporte | F-580, F-888, F-889 |
-| Experiencia y habilidad previa del trabajador | F-580, F-582, F-584 |
 | Crecimiento de ventas | F-178, F-376, F-514 |
 | Publicidad personalizada (frente a genérica) | F-253, F-518, F-519 |
 | Un exit mide la transacción, no la rentabilidad operativa | F-114, F-451, F-452 |
@@ -374,6 +375,7 @@
 | Predicción de la conducta de participantes no vistos en experimentos | F-563, F-566 |
 | Sobreajuste: el modelo responde a la forma de la tarea, no a su significado | F-564, F-576 |
 | Hipótesis nuevas e interpretables sobre decisiones humanas | F-569, F-570 |
+| Combinación humano-IA frente al mejor de los dos por separado | F-516, F-936 |
 | Tamaño de la firma | F-446, F-525 |
 | Edad del consumidor | F-7, F-35 |
 | Comprensión del seguro de vida temporal | F-22, F-231 |
@@ -626,6 +628,9 @@
 | Efecto de largo plazo de un cambio de producto | F-923, F-934 |
 | Duolingo | F-927, F-928 |
 | Cancelación de clientes (churn) | F-933, F-935 |
+| Productividad por tarea con IA generativa | F-936, F-938 |
+| Crecimiento de la productividad laboral agregada (G7) | F-937, F-938 |
+| Riesgos para el consumidor financiero: sesgo, alucinaciones, influencia comercial, privacidad, exclusión | F-941, F-944 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -1539,6 +1544,7 @@
 | 2026-10-11 | F-880 | 8 | – | Aporte del usuario: gráfico 'Representative orbital booking journey' (McKinsey y Skift, sep-2026), leído completo desde la imagen. Fuente cualitativa de un solo sector. |
 | 2026-10-12 | F-520, F-881, F-882, F-883, F-884, F-885, F-886, F-887, F-888, F-889, F-890, F-891, F-892, F-893, F-894, F-895, F-896, F-897, F-898, F-899, F-900, F-901, F-902, F-903, F-904, F-905, F-906, F-907, F-908, F-909 | 36 | – | Iteración 6 del nodo de diseño (/trinidad 2026-10-12): diseño de producto digital y de servicios. Leído vía resúmenes (lectura 'abstract'). Incluye la lectura a fondo del resumen oficial de F-520. |
 | 2026-10-12 | F-910, F-911, F-912, F-913, F-914, F-915, F-916, F-917, F-918, F-919, F-920, F-921, F-922, F-923, F-924, F-925, F-926, F-927, F-928, F-929, F-930, F-931, F-932, F-933, F-934, F-935, F-519, F-21 | 28 | – | Iteración 7 del nodo de diseño (/trinidad 2026-10-12): ¿qué tendencia de diseño tiene efecto medido en conversión o retención? Leído vía resúmenes (lectura 'abstract'). F-21 se usa como fuente de un l |
+| 2026-10-12 | F-936, F-937, F-938, F-939, F-940, F-941, F-942, F-943, F-944, F-945, F-946 | 14 | – | Serie OECD Artificial Intelligence Papers (pedido del usuario, 2026-10-12). Leído vía resúmenes y blog oficial (lectura 'abstract'); la página de la serie no abre desde el entorno. |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

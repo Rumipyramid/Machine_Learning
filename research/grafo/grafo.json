@@ -17,8 +17,8 @@
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 156,
-   "cites": 46,
+   "lines": 165,
+   "cites": 51,
    "design": false
   },
   {
@@ -101,8 +101,8 @@
   {
    "id": "modelo-salud-ia-farmacias-peru",
    "type": "node",
-   "lines": 618,
-   "cites": 23,
+   "lines": 619,
+   "cites": 24,
    "design": false
   },
   {
@@ -122,8 +122,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2137,
-   "cites": 331,
+   "lines": 2153,
+   "cites": 336,
    "design": true
   },
   {
@@ -8575,6 +8575,105 @@
    "autor": "Gomez-Uribe, C. A.; Hunt, N. (Netflix)",
    "anio": "2015",
    "huerfana": false
+  },
+  {
+   "id": "F-936",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The effects of generative AI on productivity, innovation and entrepreneurship · OECD Artificial Intelligence Papers, No. 39",
+   "autor": "Calvino, F.; Reijerink, J.; Samek, L. (OCDE)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-937",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Macroeconomic productivity gains from Artificial Intelligence in G7 economies · OECD Artificial Intelligence Papers, No. 41",
+   "autor": "Filippucci, F.; Gal, P.; Laengle, K.; Schief, M. (OCDE)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-938",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "AI and the global productivity divide: Fuel for the fast or a lift for the laggards? · OECD Artificial Intelligence Papers, No. 51",
+   "autor": "Chaar, T.; Filippucci, F.; Jona-Lasinio, C.; Nicoletti, G. (OCDE)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-939",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Using AI in the workplace: Opportunities, risks and policy responses · OECD Artificial Intelligence Papers, No. 11",
+   "autor": "OCDE",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-940",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The agentic AI landscape and its conceptual foundations · OECD Artificial Intelligence Papers, No. 56",
+   "autor": "Aranda, L.; Sugimoto, K. (OCDE)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-941",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Artificial intelligence and personal finance · OECD Artificial Intelligence Papers, No. 62",
+   "autor": "OCDE",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-942",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Supervision of artificial intelligence in finance: Challenges, policies and practices · OECD Artificial Intelligence Papers, No. 54",
+   "autor": "OCDE",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-943",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Regulatory approaches to artificial intelligence in finance · OECD Artificial Intelligence Papers, No. 24",
+   "autor": "OCDE",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-944",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Generative artificial intelligence in finance · OECD Artificial Intelligence Papers, No. 9",
+   "autor": "Nassr, I. K. (OCDE)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-945",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Defining AI incidents and related terms · OECD Artificial Intelligence Papers (número según fuente secundaria)",
+   "autor": "OCDE",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-946",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Collective action for responsible AI in health · OECD Artificial Intelligence Papers, No. 10",
+   "autor": "Anderson, B.; Sutherland, E. (OCDE)",
+   "anio": "2024",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -14450,6 +14549,61 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-935",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-936",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-937",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-938",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-939",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-940",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-941",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-942",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-943",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-944",
+   "k": "cita"
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "F-945",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-946",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -14741,13 +14895,13 @@
    },
    {
     "fecha": "2026-10-12",
-    "nuevas": 55,
-    "acumuladas": 934,
-    "AB": 23,
+    "nuevas": 66,
+    "acumuladas": 945,
+    "AB": 30,
     "rigor": {
      "A": 13,
-     "B": 10,
-     "C": 18,
+     "B": 17,
+     "C": 22,
      "D": 11,
      "E": 3
     }
@@ -16970,12 +17124,12 @@
     "fuente": "git"
    },
    {
-    "fuentes": 908,
+    "fuentes": 934,
     "rigor": {
-     "B": 152,
-     "A": 303,
-     "C": 197,
-     "D": 203,
+     "B": 158,
+     "A": 312,
+     "C": 205,
+     "D": 206,
      "?": 15,
      "E": 38
     },
@@ -16983,7 +17137,7 @@
     "outputs": 5,
     "wikilinks": 158,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 799,
+    "fuentes_citadas_en_nodes": 825,
     "diseno": {
      "hyp": {
       "abierta": 16,
@@ -16999,12 +17153,12 @@
       "🔴": 15,
       "⚔️": 4
      },
-     "iterations": 6,
-     "lines": 2082,
-     "cites": 305
+     "iterations": 7,
+     "lines": 2137,
+     "cites": 331
     },
     "fecha": "2026-10-12",
-    "commit": "0ed3248",
+    "commit": "8081605",
     "fuente": "git"
    }
   ],
@@ -17023,14 +17177,15 @@
     "🔴": 15,
     "⚔️": 4
    },
-   "iterations": 7,
-   "lines": 2137,
+   "iterations": 8,
+   "lines": 2153,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
     "2026-08-02",
     "2026-08-02",
     "2026-10-02",
+    "2026-10-12",
     "2026-10-12",
     "2026-10-12"
    ]

@@ -1917,6 +1917,25 @@
    "triples": 28,
    "sin_aporte": [],
    "notas": "Iteración 7 del nodo de diseño (/trinidad 2026-10-12): ¿qué tendencia de diseño tiene efecto medido en conversión o retención? Leído vía resúmenes (lectura 'abstract'). F-21 se usa como fuente de un límite sobre los defaults. Incluye la lectura a fondo del resumen de F-519; su desacuerdo con la ficha está en estado.json."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f_ids": [
+    "F-936",
+    "F-937",
+    "F-938",
+    "F-939",
+    "F-940",
+    "F-941",
+    "F-942",
+    "F-943",
+    "F-944",
+    "F-945",
+    "F-946"
+   ],
+   "triples": 14,
+   "sin_aporte": [],
+   "notas": "Serie OECD Artificial Intelligence Papers (pedido del usuario, 2026-10-12). Leído vía resúmenes y blog oficial (lectura 'abstract'); la página de la serie no abre desde el entorno."
   }
  ],
  "discrepancias": [

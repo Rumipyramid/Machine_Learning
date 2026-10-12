@@ -77,6 +77,14 @@ El mismo informe deja dos lecciones de diseño:
 
 **Para seguros (inferencia, no evidencia).** En viajes, una compra frecuente y fácil de deshacer, solo la mitad dejaría que la IA cierre. En seguros, una compra rara, compleja y de largo plazo, la delegación debería ser igual o menor. La IA serviría para informar y comparar, y el cierre seguiría pidiendo una persona o una confirmación explícita. Queda como idea en prueba (HC11).
 
+### 2.12 La IA en las finanzas personales: lo que dicen los reguladores (OCDE, 2023-2026)
+La OCDE ve la IA como una nueva puerta de entrada a la información financiera del consumidor, con más riesgos de los que hoy se supervisan bien. Un informe de 2026 encontró que la gente ya usa la IA para informarse, educarse y pedir consejo sobre su dinero. Eso amplía el acceso, pero trae sesgo, respuestas inventadas, influencia comercial, riesgos de privacidad y exclusión. Su efecto sobre el bienestar financiero de largo plazo todavía no se conoce (F-941).
+- **Las reglas existen; aplicarlas es lo difícil.** Según la OCDE, las normas financieras vigentes bastan en general. El problema es aplicarlas a modelos opacos, a la dependencia de proveedores externos y a agentes que actúan sin supervisión humana constante (F-942).
+- **En las entidades reguladas, la IA generativa todavía está detrás del mostrador.** Una encuesta a 49 jurisdicciones encontró que se usa sobre todo para eficiencia interna y pruebas, no de cara al cliente (F-943). Un marco previo advierte que su uso sin humano en el circuito podría crear riesgos nuevos (F-944).
+- **Un lenguaje común para los errores.** La OCDE distingue el "incidente de IA", un daño que ya ocurrió, del "peligro de IA", un daño posible (F-945). Sirve para clasificar las fallas de un asistente de seguros antes de que lleguen al regulador.
+
+**Para seguros (inferencia, no evidencia).** Esto refuerza lo que el nodo ya sabía de viajes (§2.11): el cliente usará la IA para informarse antes de hablar con la aseguradora. La consecuencia de diseño es que la aseguradora compite también con la respuesta que el cliente ya trae de un chatbot general, que puede estar equivocada o sesgada. Ninguna fuente de la OCDE mide esto en seguros ni en Perú.
+
 ## 3. ⚖️ Escala de madurez de evidencia
 
 | Afirmación | Estado | Base |
@@ -132,6 +140,7 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 | 2 | 2026-10-02 | Pistas social y de negocio/legal + búsqueda adversarial de RP1-RP5 | 9 fuentes (F-495 a F-503). **HC1 → parcial; HC3 reformulada** (en disputa F-491 vs. F-499); **HC9 y HC10 nuevas**; **RP2 → CH1 y RP5 → CH2** (reglas del node); RP1 y RP3 reformuladas; RP4 en disputa. Las 16 fuentes nuevas entraron al grafo semántico | Leer a texto completo F-488, F-491, F-494, F-500, F-501; pista social real (foros) más allá del caso GPT-4o; fuentes de seguros sobre IA conversacional |
 | 2b | 2026-10-03 | Lectura a fondo de los tres estudios de persuasión (resúmenes oficiales; texto completo bloqueado) | **F-488 publicado en *Science*** → HC2 a `parcial`. **F-491 tenía autoría y cifras de otro estudio:** el +81,7% es de Salvi et al. (F-542, nuevo). La disputa RP4 se resuelve como alcance distinto. Fichas F-488 y F-491 corregidas en el ledger con autorización | Réplica independiente de la adulación en contexto financiero; leer completos F-491 y F-542 cuando la red lo permita |
 | 3 | 2026-10-11 | Integración de un informe de McKinsey y Skift sobre viajes (pedido del usuario) | §2.11 nueva (delegar en la IA: investigar sí, comprar no) e idea en prueba HC11; fuentes F-876 a F-879 | Leer el PDF completo (bloqueado desde el entorno) y verificar las cifras de IA; buscar un dato equivalente en seguros |
+| 4 | 2026-10-12 | Integración de la serie de la OCDE sobre IA (pedido del usuario) | §2.12 nueva (la IA en las finanzas personales y su supervisión); fuentes F-941 a F-945 | Leer los informes completos; buscar datos de uso de IA para decisiones financieras en Perú (SBS) |
 
 
 ## 7. Limitaciones
