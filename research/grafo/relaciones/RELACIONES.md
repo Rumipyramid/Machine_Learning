@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **908 de 908** (100.0%) |
-| …del cerebro de diseño (citadas en el node) | 305 de 305 |
-| …por rigor | A 303/303 · B 152/152 · C 197/197 · D 203/203 · E 38/38 |
-| Barridos | 113 |
-| Entidades | 1881 |
-| Relaciones | 1982 |
-| Nivel de lectura | ficha 1205 · abstract 768 · completa 9 |
-| Fuerza de las afirmaciones | descriptiva 1170 · teorica 287 · observacional 265 · causal 260 |
+| Fuentes procesadas | **934 de 934** (100.0%) |
+| …del cerebro de diseño (citadas en el node) | 331 de 331 |
+| …por rigor | A 312/312 · B 158/158 · C 205/205 · D 206/206 · E 38/38 |
+| Barridos | 114 |
+| Entidades | 1911 |
+| Relaciones | 2010 |
+| Nivel de lectura | ficha 1205 · abstract 796 · completa 9 |
+| Fuerza de las afirmaciones | descriptiva 1177 · teorica 288 · observacional 274 · causal 271 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `tiene_limite` | metodo | 418 |
-| `aumenta` | efecto | 244 |
+| `tiene_limite` | metodo | 426 |
+| `aumenta` | efecto | 251 |
 | `aplica_a` | estructura | 232 |
-| `asocia_con` | efecto | 170 |
-| `reduce` | efecto | 157 |
+| `asocia_con` | efecto | 172 |
+| `reduce` | efecto | 160 |
 | `respalda` | evidencia | 146 |
 | `es_tipo_de` | estructura | 120 |
-| `refuta` | evidencia | 97 |
-| `parte_de` | estructura | 94 |
-| `origina_en` | metodo | 93 |
-| `mide` | metodo | 76 |
+| `refuta` | evidencia | 98 |
+| `parte_de` | estructura | 96 |
+| `origina_en` | metodo | 94 |
+| `mide` | metodo | 79 |
 | `contradice` | evidencia | 64 |
-| `modera` | efecto | 50 |
+| `modera` | efecto | 51 |
 | `media` | efecto | 21 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -75,6 +75,7 @@
 | Hipótesis del cerebro como computadora cuántica | F-808, F-810, F-821, F-827, F-834, F-835, F-846 |
 | Teoría de la información integrada (IIT) | F-830, F-831, F-832, F-837, F-847, F-849, F-851 |
 | Cifra autodeclarada por la empresa, sin método auditable | F-618, F-620, F-621, F-623, F-624, F-625, F-634 |
+| Experimentación A/B en línea | F-917, F-918, F-922, F-923, F-932, F-933, F-934 |
 | Diseño efectivo → mejor desempeño de la firma | F-237, F-238, F-266, F-267, F-273, F-514 |
 | Dark patterns | F-241, F-511, F-588, F-881, F-882, F-884 |
 | Confianza en la IA | F-187, F-242, F-583, F-614, F-876, F-878 |
@@ -158,6 +159,7 @@
 | Dato financiero no publicado o no encontrado | F-860, F-861, F-862, F-865 |
 | Cifras que no coinciden entre fuentes | F-864, F-867, F-868, F-875 |
 | Sanciones regulatorias a productos de salud con etiqueta 'cuántica' | F-871, F-872, F-873, F-874 |
+| Usuarios activos diarios (DAU) | F-928, F-929, F-930, F-931 |
 | Relación innovación → desempeño | F-238, F-439, F-525 |
 | Éxito de proyectos de innovación | F-239, F-441, F-461 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
@@ -189,6 +191,7 @@
 | Número ancla visible antes de juzgar un precio | F-175, F-220, F-713 |
 | Disposición a comprar | F-176, F-253, F-518 |
 | Efecto dotación (se pide más por vender que lo que se paga por comprar) | F-223, F-573, F-721 |
+| Opción por defecto (default) | F-21, F-337, F-910 |
 | Sensibilidad a la redacción del prompt e inestabilidad en el tiempo | F-551, F-552, F-554 |
 | Retrato erróneo y aplanamiento de grupos demográficos por el LLM | F-549, F-553, F-604 |
 | Tamaño y competencia lingüística de los modelos de lenguaje | F-558, F-572, F-575 |
@@ -207,17 +210,20 @@
 | Pago basado en valor en atención primaria | F-113, F-115, F-116 |
 | Presencia percibida de otros testigos | F-226, F-659, F-660 |
 | Costo anual de siniestros médicos por miembro (empleador) | F-201, F-353, F-354 |
+| Abandono de compra por checkout largo o complejo | F-145, F-311, F-920 |
 | Canal de distribución directo (digital) de la aseguradora | F-136, F-184, F-370 |
 | Ventas y retención de clientes de seguros | F-162, F-184, F-351 |
 | Preocupación por la privacidad activada por la situación | F-166, F-253, F-518 |
 | NAIC (Asociación Nacional de Comisionados de Seguros de EE.UU.) | F-80, F-172, F-193 |
 | Consentimiento previo, informado, expreso e inequívoco para tratar datos personales | F-67, F-76, F-77 |
 | Llamadas publicitarias sin consentimiento vigente (spam) | F-70, F-134, F-138 |
+| Cancelación difícil de suscripciones (cobros tras pedir la baja) | F-511, F-641, F-926 |
 | Percepción de que la aseguradora de salud prioriza lucro y costos sobre necesidades individuales | F-187, F-336, F-344 |
 | Inversión y número de insurtechs activas en América Latina | F-374, F-378, F-458 |
 | Teatro de la innovación (rituales de startup sin resultados de negocio) | F-461, F-462, F-464 |
 | La IA es la principal causa de los despidos | F-282, F-283, F-419 |
 | Tendencia 'Imperfect by Design' de Canva para 2026 | F-295, F-297, F-411 |
+| Conversión del checkout | F-311, F-632, F-913 |
 | Conformidad con la respuesta de la mayoría (tasa de errores conformes) | F-647, F-648, F-649 |
 | Órdenes de una figura de autoridad (experimentador) de continuar | F-650, F-651, F-652 |
 | Sensación subjetiva de poder (autorreporte) | F-695, F-696, F-698 |
@@ -288,6 +294,8 @@
 | Recorrido de compra en 'órbita' (bucle de búsqueda que sigue después de comprar, no un embudo) | F-876, F-877, F-880 |
 | Disposición a dejar que una IA reserve por uno (vuelo u hotel) | F-876, F-878, F-879 |
 | Velocidad y calificación de la atención al cliente | F-888, F-889, F-890 |
+| Intención de compra | F-519, F-910, F-912 |
+| Rachas (streaks) de Duolingo | F-927, F-929, F-930 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
@@ -400,7 +408,6 @@
 | Distribución de seguros en América Latina (canales) | F-375, F-379 |
 | Desarrollo favorable de siniestros de periodos previos en Lemonade (7 pp en el 2T 2026) | F-509, F-636 |
 | Seguro embebido (embedded insurance) | F-28, F-165 |
-| Abandono de compra por checkout largo o complejo | F-145, F-311 |
 | Resultados Q1 2026 de Lemonade (ingresos +71%, pérdida neta US$35,8M) | F-29, F-189 |
 | Participación de EE.UU. en las primas de seguros mundiales | F-80, F-196 |
 | Utilidad neta y ROE de Swiss Re (FY2025 / Q1 2026) | F-32, F-34 |
@@ -409,7 +416,6 @@
 | MediFund: fondo de asistencia para quienes no pueden pagar (Singapur) | F-101, F-102 |
 | Medical loss ratio por mercado de seguro de salud en EE.UU. (MA, Medicaid, individual, grupo) | F-194, F-479 |
 | Experiencia del cliente (CX) en aseguradoras | F-81, F-359 |
-| Cancelación difícil de suscripciones (cobros tras pedir la baja) | F-511, F-641 |
 | Ratio combinado neto del mercado P/C de EE.UU. | F-160, F-161 |
 | Resultado neto de Munich Re 2025 (~€6.100M; RoE 18,3%) | F-33, F-34 |
 | Programa Vitality Drive de Discovery Insure (recompensas por conducción) | F-25, F-104 |
@@ -430,7 +436,6 @@
 | Crecimiento de ingresos previsto de Canva para 2026 | F-323, F-903 |
 | Tamaño relativo de los equipos de UX | F-312, F-313 |
 | Búsquedas de estéticas lo-fi y DIY en Canva | F-295, F-411 |
-| Conversión del checkout | F-311, F-632 |
 | Uso de IA por el trabajador | F-282, F-595 |
 | Presión de una mayoría unánime que responde de forma equivocada | F-647, F-649 |
 | Milgram demuestra obediencia ciega/pasiva a la autoridad | F-655, F-656 |
@@ -585,6 +590,7 @@
 | Comodidad y confianza del consumidor en que un agente compre por él | F-614, F-879 |
 | El negocio de encuestados sintéticos está validado por ingresos reales | F-617, F-623 |
 | Los agentes orquestarán hasta US$1 billón del retail de EE.UU. y US$3-5 billones global al 2030 | F-630, F-632 |
+| McKinsey & Company | F-630, F-921 |
 | Asistente financiero conversacional con IA | F-639, F-640 |
 | Prevalencia de agentes de IA entre participantes de encuestas online | F-643, F-644 |
 | Titular inflado: afirma más de lo que el estudio mide | F-840, F-841 |
@@ -615,6 +621,11 @@
 | El proceso de diseño tradicional murió con la IA | F-897, F-898 |
 | Valuación de Replit (US$9.000 millones, mar-2026) | F-904, F-905 |
 | Ingresos anualizados de Vercel (~US$340 millones, mar-2026) | F-906, F-907 |
+| Conducta de compra observada | F-911, F-915 |
+| Ventas en línea | F-914, F-925 |
+| Efecto de largo plazo de un cambio de producto | F-923, F-934 |
+| Duolingo | F-927, F-928 |
+| Cancelación de clientes (churn) | F-933, F-935 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -1098,8 +1109,12 @@
 - **Alerta sanitaria INVIMA 006-2025 sobre el 'Quantum Resonance Magnetic Analyzer'** —refuta→ **El 'Quantum Resonance Magnetic Analyzer' diagnostica hasta 52 enfermedades** (F-874, descriptiva) · **estado: refutacion_directa**
   - El analizador, vendido por internet y que promete diagnosticar hasta 52 enfermedades, no tiene registro sanitario y se considera fraudulento.
   - *Resolución (2026-10-11):* El INVIMA alertó en ene-2025, y repitió en julio, que el analizador cuántico no tiene registro sanitario y lo considera fraudulento (F-874, regulador B). Desmiente que diagnostique 52 enfermedades por falta de respaldo, no por un ensayo propio. (juicio sobre lectura de ficha)
-- **Indicadores visuales de incertidumbre o confianza en salidas de LLM** —refuta→ **Más señales visuales de incertidumbre calibran mejor la confianza en la IA** (F-885, causal) · **estado: abierta**
+- **Indicadores visuales de incertidumbre o confianza en salidas de LLM** —refuta→ **Más señales visuales de incertidumbre calibran mejor la confianza en la IA** (F-885, causal) · **estado: refutacion_directa**
   - La incertidumbre por palabra subió el acuerdo con la IA y la de nivel de relación redujo la verificación (N=192, preguntas médicas).
+  - *Resolución (2026-10-12):* Converge con F-520 (Ojewale et al. 2026, preregistrado): más señales de incertidumbre no calibran la confianza; en F-885 la incertidumbre por palabra sube el acuerdo con la IA. Tareas distintas, no réplica; juicio sobre resúmenes.
+- **Réplica con alta potencia del efecto de botones redondeados (Kohavi et al., 2025)** —refuta→ **Redondear los botones sube 55% los clics** (F-919, causal) · **estado: refutacion_directa**
+  - Tres A/B con ~2.000 veces más usuarios hallaron un efecto ~100 veces menor, con intervalo que incluye cero.
+  - *Resolución (2026-10-12):* Réplica con potencia ~2.000 veces mayor (Kohavi et al., preprint 2025): efecto ~100 veces menor y compatible con cero frente al +55% original (n=919 visitas). Juicio sobre el resumen.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -1404,6 +1419,7 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-183** (2026-10-04, cerrada): Año 's.f.': publicado el 25-oct-2023.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
+- ⚠️ **F-519** (2026-10-12, abierta): Lectura a fondo del resumen (2026-10-12): la ruta por intrusividad percibida NO fue significativa (la ficha dice que es 'menor'); el efecto global es pequeño (d≈0,16, vía resumen de la ARF); incluye intenciones conductuales además de actitudes; no mide conversión observada. Corregir el hallazgo de la ficha requiere autorización del usuario.
 
 ## 7. Registro de barridos
 
@@ -1522,6 +1538,7 @@
 | 2026-10-11 | F-876, F-877, F-878, F-879 | 14 | – | Integración a pedido del usuario: informe de McKinsey y Skift sobre el viajero (sep-2026) y su cobertura. Leído vía resumen, tabla de contenidos y prensa (el PDF y las páginas no se pudieron abrir des |
 | 2026-10-11 | F-880 | 8 | – | Aporte del usuario: gráfico 'Representative orbital booking journey' (McKinsey y Skift, sep-2026), leído completo desde la imagen. Fuente cualitativa de un solo sector. |
 | 2026-10-12 | F-520, F-881, F-882, F-883, F-884, F-885, F-886, F-887, F-888, F-889, F-890, F-891, F-892, F-893, F-894, F-895, F-896, F-897, F-898, F-899, F-900, F-901, F-902, F-903, F-904, F-905, F-906, F-907, F-908, F-909 | 36 | – | Iteración 6 del nodo de diseño (/trinidad 2026-10-12): diseño de producto digital y de servicios. Leído vía resúmenes (lectura 'abstract'). Incluye la lectura a fondo del resumen oficial de F-520. |
+| 2026-10-12 | F-910, F-911, F-912, F-913, F-914, F-915, F-916, F-917, F-918, F-919, F-920, F-921, F-922, F-923, F-924, F-925, F-926, F-927, F-928, F-929, F-930, F-931, F-932, F-933, F-934, F-935, F-519, F-21 | 28 | – | Iteración 7 del nodo de diseño (/trinidad 2026-10-12): ¿qué tendencia de diseño tiene efecto medido en conversión o retención? Leído vía resúmenes (lectura 'abstract'). F-21 se usa como fuente de un l |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

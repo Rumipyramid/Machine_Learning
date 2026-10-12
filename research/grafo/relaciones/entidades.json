@@ -839,6 +839,11 @@
   "nombre": "ARR de Bolt.new (~US$40M a los 5-6 meses)",
   "tipo": "resultado"
  },
+ "booking_com": {
+  "id": "booking_com",
+  "nombre": "Booking.com",
+  "tipo": "organizacion"
+ },
  "boticas_privadas_peru": {
   "id": "boticas_privadas_peru",
   "nombre": "Farmacias y boticas privadas del Perú (30.000+)",
@@ -964,6 +969,11 @@
   "nombre": "Solo ~9% de las personas entiende los términos básicos de seguro",
   "tipo": "afirmacion"
  },
+ "c_abandono_70_perdida": {
+  "id": "c_abandono_70_perdida",
+  "nombre": "El 70% de abandono del carrito es pérdida evitable",
+  "tipo": "afirmacion"
+ },
  "c_acos_reducen_costo_sin_calidad": {
   "id": "c_acos_reducen_costo_sin_calidad",
   "nombre": "Las ACOs reducen costos sin reducir la calidad",
@@ -1079,6 +1089,11 @@
   "nombre": "BCRP: El Niño resta 0,9 pp al PBI 2026 (Reporte de Inflación de setiembre)",
   "tipo": "afirmacion"
  },
+ "c_botones_redondos_55": {
+  "id": "c_botones_redondos_55",
+  "nombre": "Redondear los botones sube 55% los clics",
+  "tipo": "afirmacion"
+ },
  "c_brecha_actitud_conducta_disenadores": {
   "id": "c_brecha_actitud_conducta_disenadores",
   "nombre": "Brecha actitud-conducta en diseñadores: discurso anti-IA con adopción altísima (H9)",
@@ -1147,6 +1162,11 @@
  "c_cerca_financiamiento_total": {
   "id": "c_cerca_financiamiento_total",
   "nombre": "Cerca Magnetics acumula US$9,42 M de financiamiento total (Caplight)",
+  "tipo": "afirmacion"
+ },
+ "c_chat_ia_x4_conversion": {
+  "id": "c_chat_ia_x4_conversion",
+  "nombre": "El chat con IA multiplica por cuatro la conversión",
   "tipo": "afirmacion"
  },
  "c_ciclo_muerte_diseno_recurrente": {
@@ -1844,6 +1864,11 @@
   "nombre": "El pensamiento puede afectar a la materia por vía cuántica",
   "tipo": "afirmacion"
  },
+ "c_personalizacion_40_ingresos": {
+  "id": "c_personalizacion_40_ingresos",
+  "nombre": "La personalización da 40% más ingresos",
+  "tipo": "afirmacion"
+ },
  "c_personalizacion_aumenta_persuasion": {
   "id": "c_personalizacion_aumenta_persuasion",
   "nombre": "Personalizar con datos de la persona aumenta la persuasión de la IA",
@@ -2294,6 +2319,11 @@
   "nombre": "Canales de captación pull: el cliente inicia el contacto (punto de venta, fidelización, redes sociales)",
   "tipo": "intervencion"
  },
+ "cancelacion_clientes": {
+  "id": "cancelacion_clientes",
+  "nombre": "Cancelación de clientes (churn)",
+  "tipo": "resultado"
+ },
  "cancelacion_dificil_suscripcion": {
   "id": "cancelacion_dificil_suscripcion",
   "nombre": "Cancelación difícil de suscripciones (cobros tras pedir la baja)",
@@ -2674,6 +2704,11 @@
   "nombre": "Hipótesis de que la conciencia (medida como información integrada) causa el colapso de la función de onda",
   "tipo": "concepto"
  },
+ "colas_gruesas_ideas": {
+  "id": "colas_gruesas_ideas",
+  "nombre": "Pocas ideas generan casi toda la ganancia (colas gruesas)",
+  "tipo": "concepto"
+ },
  "colectivismo_cultural": {
   "id": "colectivismo_cultural",
   "nombre": "Colectivismo cultural (vs individualismo)",
@@ -2834,9 +2869,19 @@
   "nombre": "Conciencia (experiencia subjetiva)",
   "tipo": "constructo"
  },
+ "conducta_aprendizaje": {
+  "id": "conducta_aprendizaje",
+  "nombre": "Conducta de aprendizaje",
+  "tipo": "resultado"
+ },
  "conducta_cliente_financiero": {
   "id": "conducta_cliente_financiero",
   "nombre": "Conducta real del cliente de servicios financieros",
+  "tipo": "resultado"
+ },
+ "conducta_compra_observada": {
+  "id": "conducta_compra_observada",
+  "nombre": "Conducta de compra observada",
   "tipo": "resultado"
  },
  "conducta_maquinas": {
@@ -2897,6 +2942,11 @@
  "confianza_investigacion_academica": {
   "id": "confianza_investigacion_academica",
   "nombre": "Confianza en la investigación académica y su publicación",
+  "tipo": "resultado"
+ },
+ "confianza_usabilidad_declarada": {
+  "id": "confianza_usabilidad_declarada",
+  "nombre": "Confianza y usabilidad declaradas",
   "tipo": "resultado"
  },
  "conflicto_civil": {
@@ -3839,6 +3889,11 @@
   "nombre": "Duda sustancial sobre la continuidad como empresa en marcha",
   "tipo": "limitacion"
  },
+ "duolingo": {
+  "id": "duolingo",
+  "nombre": "Duolingo",
+  "tipo": "organizacion"
+ },
  "duracion_consulta": {
   "id": "duracion_consulta",
   "nombre": "Duración de la consulta médica",
@@ -3953,6 +4008,11 @@
   "id": "efecto_dotacion",
   "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
   "tipo": "constructo"
+ },
+ "efecto_largo_plazo": {
+  "id": "efecto_largo_plazo",
+  "nombre": "Efecto de largo plazo de un cambio de producto",
+  "tipo": "resultado"
  },
  "efecto_mcgurk": {
   "id": "efecto_mcgurk",
@@ -4394,6 +4454,11 @@
   "nombre": "Experiencia y habilidad previa del trabajador",
   "tipo": "constructo"
  },
+ "experimentacion_ab": {
+  "id": "experimentacion_ab",
+  "nombre": "Experimentación A/B en línea",
+  "tipo": "concepto"
+ },
  "experimento_prision_stanford": {
   "id": "experimento_prision_stanford",
   "nombre": "Experimento de la prisión de Stanford (Zimbardo, 1971)",
@@ -4614,6 +4679,11 @@
   "nombre": "En sistemas maduros fluidez y estética mejoran a la vez",
   "tipo": "limitacion"
  },
+ "focalizacion_psicologica": {
+  "id": "focalizacion_psicologica",
+  "nombre": "Focalización psicológica (mensajes adaptados a la personalidad)",
+  "tipo": "intervencion"
+ },
  "foro_anonimo_no_representativo": {
   "id": "foro_anonimo_no_representativo",
   "nombre": "Publicaciones anónimas de foro sin muestra verificable",
@@ -4748,6 +4818,11 @@
   "id": "g_eval",
   "nombre": "G-Eval (un LLM puntúa cada texto con razonamiento paso a paso)",
   "tipo": "metrica"
+ },
+ "gamificacion": {
+  "id": "gamificacion",
+  "nombre": "Gamificación",
+  "tipo": "intervencion"
  },
  "ganancia_suscripcion_pc_q1_2026": {
   "id": "ganancia_suscripcion_pc_q1_2026",
@@ -5339,6 +5414,11 @@
   "nombre": "Intención de abandonar la app",
   "tipo": "resultado"
  },
+ "intencion_compra": {
+  "id": "intencion_compra",
+  "nombre": "Intención de compra",
+  "tipo": "resultado"
+ },
  "intencion_compra_online_seguro_vida": {
   "id": "intencion_compra_online_seguro_vida",
   "nombre": "Intención de comprar seguro de vida online",
@@ -5692,6 +5772,11 @@
  "lim_atribucion_autodeclarada": {
   "id": "lim_atribucion_autodeclarada",
   "nombre": "Atribución a la IA autodeclarada por el empleador (no prueba causalidad)",
+  "tipo": "limitacion"
+ },
+ "lim_autoseleccion": {
+  "id": "lim_autoseleccion",
+  "nombre": "Comparación entre grupos que se eligieron solos (autoselección)",
   "tipo": "limitacion"
  },
  "lim_baseline_debil": {
@@ -6073,6 +6158,11 @@
   "id": "mejora_kpi_rediseno",
   "nombre": "Mejora de KPIs tras un rediseño de usabilidad",
   "tipo": "resultado"
+ },
+ "memo_ia_duolingo": {
+  "id": "memo_ia_duolingo",
+  "nombre": "Anuncio 'primero la IA' de Duolingo (abr-2025)",
+  "tipo": "intervencion"
  },
  "memoria_cliente_entre_canales": {
   "id": "memoria_cliente_entre_canales",
@@ -6728,6 +6818,11 @@
   "id": "outcomes_salud",
   "nombre": "Resultados de salud reales del paciente",
   "tipo": "constructo"
+ },
+ "p_hacking_ab": {
+  "id": "p_hacking_ab",
+  "nombre": "Detener la prueba A/B al ver un resultado favorable (p-hacking)",
+  "tipo": "limitacion"
  },
  "pacientes_pediatricos": {
   "id": "pacientes_pediatricos",
@@ -7474,6 +7569,11 @@
   "nombre": "Proyectos de IA agéntica en empresas",
   "tipo": "intervencion"
  },
+ "prueba_social_resenas": {
+  "id": "prueba_social_resenas",
+  "nombre": "Prueba social con reseñas de clientes",
+  "tipo": "intervencion"
+ },
  "psicologia_de_maquinas": {
   "id": "psicologia_de_maquinas",
   "nombre": "Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva",
@@ -7524,6 +7624,11 @@
   "nombre": "QuSpin (fabricante de magnetómetros cuánticos, Colorado)",
   "tipo": "organizacion"
  },
+ "rachas_duolingo": {
+  "id": "rachas_duolingo",
+  "nombre": "Rachas (streaks) de Duolingo",
+  "tipo": "intervencion"
+ },
  "racionalidad_economica": {
   "id": "racionalidad_economica",
   "nombre": "Racionalidad económica (consistencia con maximización de utilidad por preferencia revelada)",
@@ -7548,6 +7653,11 @@
   "id": "ranking_expertos_diseno",
   "nombre": "Ranking de 138 expertos en diseño industrial",
   "tipo": "metrica"
+ },
+ "ranking_personalizado": {
+  "id": "ranking_personalizado",
+  "nombre": "Ranking de productos personalizado",
+  "tipo": "intervencion"
  },
  "ranking_retorno_observado": {
   "id": "ranking_retorno_observado",
@@ -7608,6 +7718,11 @@
   "id": "reclamos_seguro_auto",
   "nombre": "Gestión de reclamos de seguro vehicular (red de talleres asociados)",
   "tipo": "concepto"
+ },
+ "recomendaciones_netflix": {
+  "id": "recomendaciones_netflix",
+  "nombre": "Recomendaciones personalizadas de Netflix",
+  "tipo": "intervencion"
  },
  "recorrido_compra_orbital": {
   "id": "recorrido_compra_orbital",
@@ -7773,6 +7888,11 @@
   "id": "rentabilidad_tecnica_peru",
   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
   "tipo": "resultado"
+ },
+ "replica_botones_redondos": {
+  "id": "replica_botones_redondos",
+  "nombre": "Réplica con alta potencia del efecto de botones redondeados (Kohavi et al., 2025)",
+  "tipo": "estudio"
  },
  "replica_respuestas_individuales": {
   "id": "replica_respuestas_individuales",
@@ -8248,6 +8368,11 @@
   "id": "senal_aislada",
   "nombre": "Señal aislada: una sola pieza sin fecha ni conteo de reacciones",
   "tipo": "limitacion"
+ },
+ "senales_escasez": {
+  "id": "senales_escasez",
+  "nombre": "Señales de escasez",
+  "tipo": "intervencion"
  },
  "senales_habilidad_azar": {
   "id": "senales_habilidad_azar",
@@ -8739,6 +8864,11 @@
   "nombre": "Tasa de descuento implícita en elecciones entre hoy y el futuro",
   "tipo": "metrica"
  },
+ "tasa_exito_ab": {
+  "id": "tasa_exito_ab",
+  "nombre": "Proporción de pruebas A/B que ganan en su métrica principal",
+  "tipo": "metrica"
+ },
  "tasa_replicacion_psicologia": {
   "id": "tasa_replicacion_psicologia",
   "nombre": "Tasa de replicación de hallazgos de psicología",
@@ -8924,6 +9054,11 @@
   "nombre": "Trabajo del diseño gráfico (monedas, documentos, interfaces, branding)",
   "tipo": "concepto"
  },
+ "trafico_chatgpt": {
+  "id": "trafico_chatgpt",
+  "nombre": "Tráfico que llega desde ChatGPT",
+  "tipo": "concepto"
+ },
  "trafico_referido_llm": {
   "id": "trafico_referido_llm",
   "nombre": "Tráfico referido desde asistentes de IA (LLM)",
@@ -9047,6 +9182,11 @@
  "usr_metrica": {
   "id": "usr_metrica",
   "nombre": "USR: métrica no supervisada y sin referencia para diálogo",
+  "tipo": "metrica"
+ },
+ "usuarios_activos_diarios": {
+  "id": "usuarios_activos_diarios",
+  "nombre": "Usuarios activos diarios (DAU)",
   "tipo": "metrica"
  },
  "usuarios_reddit_cmv": {
@@ -9244,6 +9384,11 @@
   "nombre": "Velocidad y calificación de la atención al cliente",
   "tipo": "resultado"
  },
+ "velocidad_carga_pagina": {
+  "id": "velocidad_carga_pagina",
+  "nombre": "Velocidad de carga de la página",
+  "tipo": "intervencion"
+ },
  "velocidad_tarea": {
   "id": "velocidad_tarea",
   "nombre": "Velocidad de tarea",
@@ -9272,6 +9417,11 @@
  "ventas_innovacion_dsm": {
   "id": "ventas_innovacion_dsm",
   "nombre": "Participación de ventas de innovación en las ventas de DSM",
+  "tipo": "resultado"
+ },
+ "ventas_online": {
+  "id": "ventas_online",
+  "nombre": "Ventas en línea",
   "tipo": "resultado"
  },
  "ventas_retencion_seguros": {

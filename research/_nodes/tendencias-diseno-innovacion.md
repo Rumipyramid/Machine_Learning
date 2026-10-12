@@ -951,6 +951,7 @@ Una regla solo asciende aquí cuando sobrevivió al menos a una búsqueda advers
 | 5i | 2026-10-03 | ⚔️ **Confrontar hipótesis abiertas con su propio criterio de refutación** (objetivo declarado: autocorrección ≥20%; regla: registrar el resultado sea cual sea) | **H22 → `refutada`** (corrección contable: 'Reformulada' estaba fuera del vocabulario; la reformulación se abre como **H35**). **H30 → `refutada`**: 5/5 metas públicas de innovación reportan (Credicorp 8,1% hacia meta 10% en 2026, DSM 21% vs. 20%, Croda, Henkel, 3M); el caso testigo de F-460 estaba mal. **H23 → `parcial`**: 4 de 6 cifras rastreables atribuidas a autoridades no existen como se citan; domina la mala atribución. **H27 → `refutada`**: 5/5 cifras de fracaso rastreables a un documento identificable (malo), igual que las de éxito; el eco de cita no distingue el signo. Autocorrección **1/17 → 4/20 (20%)**, con una refutación contable y dos de muestra no aleatoria. F-529 a F-541 | (a) **réplica con muestra aleatoria de H30 y H27**: si cualquiera vuelve, la autocorrección cae a 16% y debe registrarse; (b) **H30 con muestra aleatoria** (metas anunciadas en prensa, no empresas que ya reportan) para ver si la refutación aguanta; (c) **H35 se mide en 2026-S2** contra 2026-S1; (d) corregir F-460 en el ledger si el usuario lo autoriza |
 | 5j | 2026-10-11 | 🧭 **Aporte del usuario:** gráfico del recorrido en órbitas (McKinsey y Skift, viajes, sep-2026) | §13.10 nueva; F-880 (gráfico leído completo) y F-876 (informe, por resumen); hipótesis H36 nueva | Buscar un estudio equivalente en seguros; leer el PDF completo del informe |
 | 6 | 2026-10-12 | 🔁 **Pregunta acotada por el Criterio:** ¿qué es lo más relevante hoy en diseño de producto digital y de servicios? (`/trinidad`, tres pistas en paralelo) + lectura a fondo de F-520 | §14 nueva; 29 fuentes (F-881 a F-909); F-520 con autoría y revista completas; H32 suma apoyo (costo de IA en Canva y Wix) | Leer textos completos (tamaños de efecto de F-520); medir validación en redes; buscar un cuasi-experimento de service design |
+| 7 | 2026-10-12 | 🔁 **Pregunta acotada por el Criterio:** ¿qué tendencia de diseño tiene efecto medido en conversión o retención? (`/trinidad`) + lectura a fondo de F-519 | §15 nueva; 26 fuentes (F-910 a F-935); F-519 con DOI; desacuerdo abierto sobre su hallazgo (la ruta por intrusión no fue significativa; mide intención, no conversión) | Leer textos completos (tamaños de efecto); buscar evidencia de seguros; corregir la ficha de F-519 si el usuario lo autoriza |
 
 ---
 
@@ -1978,6 +1979,60 @@ Dos datos del mismo informe le dan escala: unos 65 puntos de contacto antes de r
 - La pista social no pudo medir la validación en Reddit, X ni LinkedIn.
 - Las cifras de negocio de las empresas privadas son órdenes de magnitud.
 - La evidencia de service design sigue siendo la más delgada.
+
+## 15. 🔁 Iteración 7 (2026-10-12) — ¿qué tendencia de diseño tiene efecto medido en conversión o retención?
+*Origen: el Criterio de Mu propuso acotar la pregunta sobre qué priorizar en diseño y leer a fondo el metaanálisis de personalización que el cerebro ya tenía (F-519). Corrida de `/trinidad` con tres pistas en paralelo. Todo se leyó por resúmenes y fichas de revista: el entorno no abre páginas web. Fuentes F-910 a F-935.*
+
+**En pocas palabras.** Muy pocas prácticas de diseño tienen efecto medido sobre conversión o retención real. Las más sólidas son tres: la opción que viene por defecto, la velocidad de la página y los rankings o recomendaciones personalizados. Casi todo lo demás mide intención declarada, viene de proveedores o no se replicó con muestras grandes. Además, los efectos de una prueba corta no predicen bien lo que pasa a largo plazo, que es justo lo que importa para la retención.
+
+### 15.1 🔬 Pista empírica — qué tiene efecto medido
+1. **La opción por defecto es la palanca más fuerte, pero su cifra está inflada.** Un metaanálisis de 58 estudios y más de 73.000 personas encontró un efecto grande sobre la elección (F-910). Sin embargo, muchos estudios son de laboratorio, y en los programas reales los nudges rinden cerca de un cuarto de lo que reportan los artículos académicos (F-21). Conviene esperar un efecto real, pero mucho menor.
+2. **La velocidad de carga mueve ventas, y el paso de pago es el más sensible.** Un estudio con datos de transacciones de un minorista en línea mostró que las demoras reducen las ventas, con más fuerza en el pago (F-914). Es un estudio observacional con un método casi experimental. La cifra que circula ("10% más lento, 4,2% menos ventas") no se verificó en el artículo.
+3. **Personalizar el orden de los productos funciona; personalizar el mensaje según la personalidad, no.** Un experimento aleatorizado con un minorista encontró más búsqueda y más compras con rankings personalizados que con el de más vendidos (F-915). En cambio, un metaanálisis de 41 estudios halló que adaptar mensajes a la personalidad tiene un efecto sobre la conducta casi nulo (F-911).
+4. **La prueba social ayuda solo cuando hay suficientes reseñas.** En un experimento de campo, mostrar comentarios de clientes subió la conversión cuando había muchos y la bajó cuando había pocos (F-913). Mostrar prueba social sin volumen puede restar.
+5. **La escasez y la gamificación suben la intención, no necesariamente la conducta.** Un metaanálisis de 131 estudios encontró que las señales de escasez aumentan la intención de compra (F-912). La gamificación en educación tiene un efecto pequeño sobre la conducta, y se vuelve inestable en los estudios más rigurosos (F-916).
+
+**Lectura a fondo del metaanálisis de personalización (F-519).** Yeo, Chu y Li revisaron 53 experimentos con casi 12.000 personas y lo publicaron en el *Journal of Advertising Research* en 2025. Encontraron que la publicidad personalizada persuade más que la genérica, aunque con un efecto pequeño. El efecto pasa por la relevancia percibida: el anuncio parece más pertinente. La sensación de intrusión, en cambio, no tuvo un efecto detectable. Lo decisivo para esta pregunta es que el estudio mide actitudes e intenciones, no clics ni compras observadas. Por eso no prueba un efecto sobre conversión ni retención. La ficha del registro dice que la ruta por intrusión es "menor"; en realidad no fue significativa, y la ficha omite las intenciones y la magnitud. Corregirla requiere autorización del usuario: queda abierta como desacuerdo.
+
+**Contraevidencia que importa.**
+- Solo una de cada ocho pruebas A/B gana en su métrica principal, según 127.000 experimentos de Optimizely (F-922).
+- Cerca de tres de cada cuatro experimentadores detienen la prueba en cuanto ven un resultado favorable, lo que infla los aciertos (F-918).
+- Unas pocas ideas excepcionales generan casi toda la ganancia (F-917). Sumar muchos pequeños lifts no da lo que promete.
+- El famoso "+55% de clics por redondear botones" se probó con muestras dos mil veces mayores: el efecto fue unas cien veces menor y compatible con cero (F-919).
+- En Google, las pruebas cortas no predijeron el efecto a largo plazo cuando los usuarios aprendían a ignorar algo (F-934). Kohavi y colegas resumen: mover clics es fácil, reducir el abandono es difícil (F-933, F-923).
+
+**Vacíos.** No apareció ningún estudio revisado por pares sobre simplificar formularios o el checkout, sobre el onboarding ni sobre el efecto de las rachas en la retención.
+
+### 15.2 📱 Pista social — qué se repite
+- 🔥 **"El 70% abandona el carrito"** es la cifra más repetida. Baymard la compila de 50 estudios, pero advierte que buena parte es navegación normal, no pérdida por mal diseño (F-920).
+- 🔥 **"La personalización da 40% más ingresos"** circula en dos versiones. La original de McKinsey compara empresas que crecen rápido con las lentas; no mide un efecto causal (F-921).
+- 🔥 **"El chat con IA multiplica por cuatro la conversión"** compara a quienes eligieron usar el chat con quienes no. Esa diferencia refleja sobre todo la intención previa de comprar (F-924). El tráfico que llega desde ChatGPT convierte algo más, pero con pocas sesiones y atribución dudosa (F-925).
+- 🌡️ **El escepticismo sobre los A/B** gana terreno entre los propios practicantes: la mayoría de las pruebas no gana y muchas victorias publicadas no se repiten (F-922, F-923).
+- 💬 **Patrones oscuros en la cancelación.** Una encuesta con escenarios mostró menos confianza y usabilidad declaradas (F-926). Nadie midió si retienen o espantan clientes en la realidad.
+- 🌡️ **Duolingo y sus rachas** es el caso más admirado. Lo cuentan sus propios ejecutivos, con interés en el relato (F-927).
+
+### 15.3 📈 Pista de negocio — qué resultados publican las empresas
+- **Duolingo es el mejor caso público, pero no aísla el diseño.** Sus usuarios activos diarios crecieron 30% en 2025, y la empresa lo atribuye sobre todo a mejor retención (F-928, documento ante la SEC sin auditoría de esa métrica). Que la mayoría de sus usuarios tenga una racha larga es correlación: los leales acumulan racha (F-929). Su prueba interna más citada, separar la meta diaria de la racha, subió más de 40% la cantidad de usuarios con rachas de una semana (F-930, blog de la empresa). El crecimiento se frenó tras su anuncio de "primero la IA", sin datos que separen las causas (F-931).
+- **Netflix estima que sus recomendaciones valen unos US$1.000 millones al año**, sobre todo porque reducen las cancelaciones. Las recomendaciones personalizadas se eligen tres a cuatro veces más que la lista de populares. Es una estimación de la propia empresa (F-935).
+- **Booking.com corre más de mil experimentos a la vez**, pero no publica cuánto le suman (F-932).
+- Las cifras más espectaculares (el "un clic" de Amazon, el +50% de Shop Pay) no tienen autor ni método. Los casos con nombre muestran efectos diez a cuarenta veces menores.
+
+### 15.4 ⚖️ Síntesis
+- **Convergencia.** Las tres pistas coinciden: los efectos reales de diseño sobre conversión son pequeños, dependen del contexto y se inflan al publicarse. Las prácticas con efecto medido sobre conducta real son pocas: la opción por defecto, la velocidad, los rankings personalizados y la prueba social con volumen suficiente.
+- **Divergencia.** Lo que más se repite (checkout corto, personalización "+40%", chat con IA "x4") es justo lo que tiene menos evidencia causal. Esta brecha entre ruido y prueba es la misma de la iteración 6 (§14.4).
+- **Respuesta prudente: qué priorizar.**
+  1. Diseñar la estructura de la decisión: qué viene por defecto y dónde está la fricción.
+  2. Cuidar la velocidad, sobre todo en el paso de pago.
+  3. Personalizar el orden y las recomendaciones, no el tono del mensaje.
+
+  Y medir la retención con pruebas largas o con grupos de control que se mantengan, no con lifts de una semana.
+- **Para Rimac.** Ninguna de estas fuentes es de seguros. Las de mayor transferencia son la de opciones por defecto y la de velocidad; la de rachas y gamificación es la de menor transferencia, porque un seguro no se usa todos los días.
+
+### 15.5 Limitaciones
+- No se leyó ningún texto completo. Faltan los tamaños de efecto de varios estudios (rankings, prueba social, escasez y velocidad).
+- La pista social no pudo medir Reddit ni LinkedIn.
+- Las cifras de Duolingo y Netflix las reporta la propia empresa.
+- Ninguna fuente estudia seguros ni Perú.
 
 ---
 

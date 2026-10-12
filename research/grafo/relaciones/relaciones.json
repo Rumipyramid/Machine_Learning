@@ -15,10 +15,11 @@
    "id": "abandono_checkout_complejidad",
    "nombre": "Abandono de compra por checkout largo o complejo",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-145",
-    "F-311"
+    "F-311",
+    "F-920"
    ]
   },
   {
@@ -1594,6 +1595,15 @@
    ]
   },
   {
+   "id": "booking_com",
+   "nombre": "Booking.com",
+   "tipo": "organizacion",
+   "grado": 1,
+   "fuentes": [
+    "F-932"
+   ]
+  },
+  {
    "id": "boticas_privadas_peru",
    "nombre": "Farmacias y boticas privadas del Perú (30.000+)",
    "tipo": "poblacion",
@@ -1830,6 +1840,15 @@
    ]
   },
   {
+   "id": "c_abandono_70_perdida",
+   "nombre": "El 70% de abandono del carrito es pérdida evitable",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-920"
+   ]
+  },
+  {
    "id": "c_acos_reducen_costo_sin_calidad",
    "nombre": "Las ACOs reducen costos sin reducir la calidad",
    "tipo": "afirmacion",
@@ -2051,6 +2070,15 @@
    ]
   },
   {
+   "id": "c_botones_redondos_55",
+   "nombre": "Redondear los botones sube 55% los clics",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-919"
+   ]
+  },
+  {
    "id": "c_brecha_actitud_conducta_disenadores",
    "nombre": "Brecha actitud-conducta en diseñadores: discurso anti-IA con adopción altísima (H9)",
    "tipo": "afirmacion",
@@ -2187,6 +2215,15 @@
    "grado": 3,
    "fuentes": [
     "F-864"
+   ]
+  },
+  {
+   "id": "c_chat_ia_x4_conversion",
+   "nombre": "El chat con IA multiplica por cuatro la conversión",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-924"
    ]
   },
   {
@@ -3549,6 +3586,15 @@
    ]
   },
   {
+   "id": "c_personalizacion_40_ingresos",
+   "nombre": "La personalización da 40% más ingresos",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-921"
+   ]
+  },
+  {
    "id": "c_personalizacion_aumenta_persuasion",
    "nombre": "Personalizar con datos de la persona aumenta la persuasión de la IA",
    "tipo": "afirmacion",
@@ -4423,13 +4469,24 @@
    ]
   },
   {
+   "id": "cancelacion_clientes",
+   "nombre": "Cancelación de clientes (churn)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-933",
+    "F-935"
+   ]
+  },
+  {
    "id": "cancelacion_dificil_suscripcion",
    "nombre": "Cancelación difícil de suscripciones (cobros tras pedir la baja)",
    "tipo": "intervencion",
-   "grado": 4,
+   "grado": 5,
    "fuentes": [
     "F-511",
-    "F-641"
+    "F-641",
+    "F-926"
    ]
   },
   {
@@ -5165,6 +5222,15 @@
    ]
   },
   {
+   "id": "colas_gruesas_ideas",
+   "nombre": "Pocas ideas generan casi toda la ganancia (colas gruesas)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-917"
+   ]
+  },
+  {
    "id": "colectivismo_cultural",
    "nombre": "Colectivismo cultural (vs individualismo)",
    "tipo": "constructo",
@@ -5487,12 +5553,31 @@
    ]
   },
   {
+   "id": "conducta_aprendizaje",
+   "nombre": "Conducta de aprendizaje",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-916"
+   ]
+  },
+  {
    "id": "conducta_cliente_financiero",
    "nombre": "Conducta real del cliente de servicios financieros",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-229"
+   ]
+  },
+  {
+   "id": "conducta_compra_observada",
+   "nombre": "Conducta de compra observada",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-911",
+    "F-915"
    ]
   },
   {
@@ -5616,6 +5701,15 @@
    "grado": 1,
    "fuentes": [
     "F-24"
+   ]
+  },
+  {
+   "id": "confianza_usabilidad_declarada",
+   "nombre": "Confianza y usabilidad declaradas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-926"
    ]
   },
   {
@@ -5973,10 +6067,11 @@
    "id": "conversion_checkout",
    "nombre": "Conversión del checkout",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-311",
-    "F-632"
+    "F-632",
+    "F-913"
    ]
   },
   {
@@ -6532,9 +6627,11 @@
    "id": "default_nudge",
    "nombre": "Opción por defecto (default)",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
-    "F-337"
+    "F-21",
+    "F-337",
+    "F-910"
    ]
   },
   {
@@ -7432,6 +7529,16 @@
    ]
   },
   {
+   "id": "duolingo",
+   "nombre": "Duolingo",
+   "tipo": "organizacion",
+   "grado": 2,
+   "fuentes": [
+    "F-927",
+    "F-928"
+   ]
+  },
+  {
    "id": "duracion_consulta",
    "nombre": "Duración de la consulta médica",
    "tipo": "resultado",
@@ -7657,6 +7764,16 @@
     "F-223",
     "F-573",
     "F-721"
+   ]
+  },
+  {
+   "id": "efecto_largo_plazo",
+   "nombre": "Efecto de largo plazo de un cambio de producto",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-923",
+    "F-934"
    ]
   },
   {
@@ -8508,6 +8625,21 @@
    ]
   },
   {
+   "id": "experimentacion_ab",
+   "nombre": "Experimentación A/B en línea",
+   "tipo": "concepto",
+   "grado": 7,
+   "fuentes": [
+    "F-917",
+    "F-918",
+    "F-922",
+    "F-923",
+    "F-932",
+    "F-933",
+    "F-934"
+   ]
+  },
+  {
    "id": "experimento_prision_stanford",
    "nombre": "Experimento de la prisión de Stanford (Zimbardo, 1971)",
    "tipo": "estudio",
@@ -8921,6 +9053,15 @@
    ]
   },
   {
+   "id": "focalizacion_psicologica",
+   "nombre": "Focalización psicológica (mensajes adaptados a la personalidad)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-911"
+   ]
+  },
+  {
    "id": "foro_anonimo_no_representativo",
    "nombre": "Publicaciones anónimas de foro sin muestra verificable",
    "tipo": "limitacion",
@@ -9181,6 +9322,15 @@
    "grado": 2,
    "fuentes": [
     "F-156"
+   ]
+  },
+  {
+   "id": "gamificacion",
+   "nombre": "Gamificación",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-916"
    ]
   },
   {
@@ -10316,6 +10466,17 @@
    ]
   },
   {
+   "id": "intencion_compra",
+   "nombre": "Intención de compra",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-519",
+    "F-910",
+    "F-912"
+   ]
+  },
+  {
    "id": "intencion_compra_online_seguro_vida",
    "nombre": "Intención de comprar seguro de vida online",
    "tipo": "resultado",
@@ -10995,6 +11156,15 @@
    ]
   },
   {
+   "id": "lim_autoseleccion",
+   "nombre": "Comparación entre grupos que se eligieron solos (autoselección)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-924"
+   ]
+  },
+  {
    "id": "lim_baseline_debil",
    "nombre": "Comparación contra una línea base débil (salida markdown estándar del LLM)",
    "tipo": "limitacion",
@@ -11593,9 +11763,10 @@
    "id": "mckinsey_company",
    "nombre": "McKinsey & Company",
    "tipo": "organizacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-630"
+    "F-630",
+    "F-921"
    ]
   },
   {
@@ -11738,6 +11909,15 @@
    "grado": 1,
    "fuentes": [
     "F-534"
+   ]
+  },
+  {
+   "id": "memo_ia_duolingo",
+   "nombre": "Anuncio 'primero la IA' de Duolingo (abr-2025)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-931"
    ]
   },
   {
@@ -13039,6 +13219,15 @@
    ]
   },
   {
+   "id": "p_hacking_ab",
+   "nombre": "Detener la prueba A/B al ver un resultado favorable (p-hacking)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-918"
+   ]
+  },
+  {
    "id": "pacientes_pediatricos",
    "nombre": "Pacientes pediátricos y sus padres",
    "tipo": "poblacion",
@@ -13394,7 +13583,7 @@
    "id": "personalizacion_publicidad",
    "nombre": "Publicidad personalizada (frente a genérica)",
    "tipo": "intervencion",
-   "grado": 5,
+   "grado": 6,
    "fuentes": [
     "F-253",
     "F-518",
@@ -14464,6 +14653,15 @@
    ]
   },
   {
+   "id": "prueba_social_resenas",
+   "nombre": "Prueba social con reseñas de clientes",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-913"
+   ]
+  },
+  {
    "id": "psicologia_de_maquinas",
    "nombre": "Psicología de máquinas: estudiar LLMs con experimentos de psicología cognitiva",
    "tipo": "concepto",
@@ -14564,6 +14762,17 @@
    ]
   },
   {
+   "id": "rachas_duolingo",
+   "nombre": "Rachas (streaks) de Duolingo",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-927",
+    "F-929",
+    "F-930"
+   ]
+  },
+  {
    "id": "racionalidad_economica",
    "nombre": "Racionalidad económica (consistencia con maximización de utilidad por preferencia revelada)",
    "tipo": "resultado",
@@ -14608,6 +14817,15 @@
    "grado": 1,
    "fuentes": [
     "F-237"
+   ]
+  },
+  {
+   "id": "ranking_personalizado",
+   "nombre": "Ranking de productos personalizado",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-915"
    ]
   },
   {
@@ -14720,6 +14938,15 @@
    "fuentes": [
     "F-26",
     "F-645"
+   ]
+  },
+  {
+   "id": "recomendaciones_netflix",
+   "nombre": "Recomendaciones personalizadas de Netflix",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-935"
    ]
   },
   {
@@ -15034,6 +15261,15 @@
     "F-504",
     "F-505",
     "F-506"
+   ]
+  },
+  {
+   "id": "replica_botones_redondos",
+   "nombre": "Réplica con alta potencia del efecto de botones redondeados (Kohavi et al., 2025)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-919"
    ]
   },
   {
@@ -15928,6 +16164,15 @@
    ]
   },
   {
+   "id": "senales_escasez",
+   "nombre": "Señales de escasez",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-912"
+   ]
+  },
+  {
    "id": "senales_habilidad_azar",
    "nombre": "Señales de habilidad en tareas de azar (elección, involucramiento, competencia, familiaridad)",
    "tipo": "intervencion",
@@ -16120,7 +16365,7 @@
    "id": "sesgo_publicacion",
    "nombre": "Sesgo de publicación",
    "tipo": "limitacion",
-   "grado": 8,
+   "grado": 9,
    "fuentes": [
     "F-16",
     "F-17",
@@ -16860,6 +17105,15 @@
    ]
   },
   {
+   "id": "tasa_exito_ab",
+   "nombre": "Proporción de pruebas A/B que ganan en su métrica principal",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-922"
+   ]
+  },
+  {
    "id": "tasa_replicacion_psicologia",
    "nombre": "Tasa de replicación de hallazgos de psicología",
    "tipo": "metrica",
@@ -17220,6 +17474,15 @@
    ]
   },
   {
+   "id": "trafico_chatgpt",
+   "nombre": "Tráfico que llega desde ChatGPT",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-925"
+   ]
+  },
+  {
    "id": "trafico_referido_llm",
    "nombre": "Tráfico referido desde asistentes de IA (LLM)",
    "tipo": "concepto",
@@ -17456,6 +17719,18 @@
    "grado": 1,
    "fuentes": [
     "F-158"
+   ]
+  },
+  {
+   "id": "usuarios_activos_diarios",
+   "nombre": "Usuarios activos diarios (DAU)",
+   "tipo": "metrica",
+   "grado": 4,
+   "fuentes": [
+    "F-928",
+    "F-929",
+    "F-930",
+    "F-931"
    ]
   },
   {
@@ -17819,6 +18094,15 @@
    ]
   },
   {
+   "id": "velocidad_carga_pagina",
+   "nombre": "Velocidad de carga de la página",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-914"
+   ]
+  },
+  {
    "id": "velocidad_tarea",
    "nombre": "Velocidad de tarea",
    "tipo": "resultado",
@@ -17874,6 +18158,16 @@
    "grado": 1,
    "fuentes": [
     "F-530"
+   ]
+  },
+  {
+   "id": "ventas_online",
+   "nombre": "Ventas en línea",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-914",
+    "F-925"
    ]
   },
   {
@@ -41913,11 +42207,347 @@
    "fuerza": "teorica",
    "fecha": "2026-10-12",
    "clase": "metodo"
+  },
+  {
+   "id": "T-1983",
+   "s": "default_nudge",
+   "p": "aumenta",
+   "o": "intencion_compra",
+   "f": "F-910",
+   "apoyo": "Metaanálisis de 58 estudios (N≈73.675): las opciones por defecto cambian la elección con efecto grande (d=0,68), más fuerte en consumo; heterogeneidad alta.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1984",
+   "s": "sesgo_publicacion",
+   "p": "tiene_limite",
+   "o": "default_nudge",
+   "f": "F-21",
+   "apoyo": "La brecha entre nudges académicos (8,7 pp) y a escala (1,4 pp) se debe en ~70% a sesgo de publicación; el d=0,68 de los defaults viene del lado académico.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1985",
+   "s": "focalizacion_psicologica",
+   "p": "tiene_limite",
+   "o": "conducta_compra_observada",
+   "f": "F-911",
+   "apoyo": "Metaanálisis de 41 estudios: los mensajes adaptados a la personalidad tienen efecto conductual casi nulo al controlar defectos de diseño.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1986",
+   "s": "senales_escasez",
+   "p": "aumenta",
+   "o": "intencion_compra",
+   "f": "F-912",
+   "apoyo": "Metaanálisis de 131 estudios: la escasez sube la intención de compra, con moderadores por tipo de producto.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1987",
+   "s": "prueba_social_resenas",
+   "p": "modera",
+   "o": "conversion_checkout",
+   "f": "F-913",
+   "apoyo": "Experimento aleatorizado de campo: el sistema de reseñas sube la conversión solo sobre un umbral de comentarios y la baja por debajo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1988",
+   "s": "velocidad_carga_pagina",
+   "p": "aumenta",
+   "o": "ventas_online",
+   "f": "F-914",
+   "apoyo": "Datos de un minorista en línea: las demoras reducen las ventas, con más sensibilidad en el paso de pago.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1989",
+   "s": "ranking_personalizado",
+   "p": "aumenta",
+   "o": "conducta_compra_observada",
+   "f": "F-915",
+   "apoyo": "Experimento aleatorizado: el ranking personalizado generó más búsqueda y más compras que el de más vendidos.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1990",
+   "s": "gamificacion",
+   "p": "aumenta",
+   "o": "conducta_aprendizaje",
+   "f": "F-916",
+   "apoyo": "Metaanálisis: efecto pequeño sobre la conducta (g=0,25), inestable al restringir a estudios rigurosos.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-1991",
+   "s": "colas_gruesas_ideas",
+   "p": "parte_de",
+   "o": "experimentacion_ab",
+   "f": "F-917",
+   "apoyo": "En Bing la calidad de las ideas tiene colas muy gruesas: pocas ideas generan casi toda la ganancia.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-1992",
+   "s": "p_hacking_ab",
+   "p": "tiene_limite",
+   "o": "experimentacion_ab",
+   "f": "F-918",
+   "apoyo": "En 2.101 experimentos, ~73% paró al llegar a 90% de confianza; la tasa de falsos descubrimientos subió de 33% a 40%.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1993",
+   "s": "replica_botones_redondos",
+   "p": "refuta",
+   "o": "c_botones_redondos_55",
+   "f": "F-919",
+   "apoyo": "Tres A/B con ~2.000 veces más usuarios hallaron un efecto ~100 veces menor, con intervalo que incluye cero.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-1994",
+   "s": "c_abandono_70_perdida",
+   "p": "tiene_limite",
+   "o": "abandono_checkout_complejidad",
+   "f": "F-920",
+   "apoyo": "Baymard compila 70,22% de abandono de 50 estudios, pero advierte que buena parte es navegación normal, no pérdida por usabilidad.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1995",
+   "s": "c_personalizacion_40_ingresos",
+   "p": "origina_en",
+   "o": "mckinsey_company",
+   "f": "F-921",
+   "apoyo": "La cifra de 40% compara empresas de crecimiento rápido con lentas; no mide un efecto causal.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1996",
+   "s": "tasa_exito_ab",
+   "p": "mide",
+   "o": "experimentacion_ab",
+   "f": "F-922",
+   "apoyo": "En 127.000 experimentos de Optimizely, ~12% gana en la métrica principal.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1997",
+   "s": "experimentacion_ab",
+   "p": "tiene_limite",
+   "o": "efecto_largo_plazo",
+   "f": "F-923",
+   "apoyo": "Kohavi y colegas: malentendidos comunes inflan los resultados de las pruebas en línea; las victorias espectaculares suelen no sostenerse.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1998",
+   "s": "lim_autoseleccion",
+   "p": "tiene_limite",
+   "o": "c_chat_ia_x4_conversion",
+   "f": "F-924",
+   "apoyo": "12,3% de compra con chat frente a 3,1% sin chat: los grupos se eligieron solos y no separan el efecto del chat de la intención previa.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-1999",
+   "s": "trafico_chatgpt",
+   "p": "asocia_con",
+   "o": "ventas_online",
+   "f": "F-925",
+   "apoyo": "94 sitios: 1,81% de conversión desde ChatGPT frente a 1,39% del orgánico sin marca, con pocas sesiones y atribución dudosa.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2000",
+   "s": "cancelacion_dificil_suscripcion",
+   "p": "reduce",
+   "o": "confianza_usabilidad_declarada",
+   "f": "F-926",
+   "apoyo": "Encuesta con viñetas: flujos de cancelación oscuros bajaron 28% la confianza y 54% la usabilidad declaradas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2001",
+   "s": "rachas_duolingo",
+   "p": "parte_de",
+   "o": "duolingo",
+   "f": "F-927",
+   "apoyo": "Relato del ex-CPO: rachas, tablas y notificaciones explicarían el salto de usuarios activos; cifras internas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2002",
+   "s": "duolingo",
+   "p": "mide",
+   "o": "usuarios_activos_diarios",
+   "f": "F-928",
+   "apoyo": "10-K FY2025: DAU +30% (~52,7 M), atribuido sobre todo a mejor retención; métrica interna no auditada.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2003",
+   "s": "rachas_duolingo",
+   "p": "asocia_con",
+   "o": "usuarios_activos_diarios",
+   "f": "F-929",
+   "apoyo": "Carta a accionistas: gran parte de los DAU tiene rachas largas; es correlación, los leales acumulan racha.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2004",
+   "s": "rachas_duolingo",
+   "p": "aumenta",
+   "o": "usuarios_activos_diarios",
+   "f": "F-930",
+   "apoyo": "A/B interno: separar la meta diaria de la racha subió más de 40% los usuarios con rachas de 7+ días; autorreportado sin intervalos.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2005",
+   "s": "memo_ia_duolingo",
+   "p": "reduce",
+   "o": "usuarios_activos_diarios",
+   "f": "F-931",
+   "apoyo": "Sensor Tower vía Morgan Stanley: DAU de EE.UU. −5% en dos semanas tras el anuncio; la causa es hipótesis del analista.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2006",
+   "s": "booking_com",
+   "p": "mide",
+   "o": "experimentacion_ab",
+   "f": "F-932",
+   "apoyo": "Más de 1.000 experimentos concurrentes; el paper describe el sistema sin publicar efectos en conversión.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2007",
+   "s": "experimentacion_ab",
+   "p": "tiene_limite",
+   "o": "cancelacion_clientes",
+   "f": "F-933",
+   "apoyo": "Regla práctica de Microsoft: desplazar clics es fácil, reducir el abandono es difícil; los cambios rara vez dan grandes mejoras.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2008",
+   "s": "experimentacion_ab",
+   "p": "tiene_limite",
+   "o": "efecto_largo_plazo",
+   "f": "F-934",
+   "apoyo": "En Google, los A/B cortos no predijeron el efecto largo cuando el usuario aprende; hace falta medir el aprendizaje en el tiempo.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2009",
+   "s": "recomendaciones_netflix",
+   "p": "reduce",
+   "o": "cancelacion_clientes",
+   "f": "F-935",
+   "apoyo": "Netflix estima ~US$1.000 M/año de valor del recomendador, sobre todo por menor churn; cifra de la propia empresa.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2010",
+   "s": "personalizacion_publicidad",
+   "p": "aumenta",
+   "o": "intencion_compra",
+   "f": "F-519",
+   "apoyo": "Metaanálisis de 53 experimentos: la publicidad personalizada mejora actitudes e intenciones con efecto pequeño (d≈0,16); no mide conversión observada.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-12",
+   "clase": "efecto"
   }
  ],
  "generado": "2026-10-12",
  "cobertura": {
-  "procesadas": 908,
-  "total": 908
+  "procesadas": 934,
+  "total": 934
  }
 }

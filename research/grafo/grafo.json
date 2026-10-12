@@ -122,8 +122,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2082,
-   "cites": 305,
+   "lines": 2137,
+   "cites": 331,
    "design": true
   },
   {
@@ -4837,7 +4837,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "How Persuasive Is Personalized Advertising? A Meta-Analytic Review of Experimental Evidence of the Effects of Personalization on Ad Effectiv",
-   "autor": "Yeo, T. E. D.; Chu, T. H. & Li, Q. — Journal of Advertising Research 65(4):616-631 — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Autoría no capturada — Journal of Advertising'; metaanálisis de 53 estudios experimentales",
+   "autor": "Yeo, T. E. D.; Chu, T. H. & Li, Q. — Journal of Advertising Research 65(4):616-631, DOI 10.1080/00218499.2025.2467763 (DOI añadido el 2026-10-12) — ⚠️ corregido 2026-10-03 (regla permanente de datos bibliográficos): decía 'Autoría no capturada — Journal of Advertising'; metaanálisis de 53 estudios experimentales",
    "anio": "2025",
    "huerfana": false
   },
@@ -8340,6 +8340,240 @@
    "titulo": "Zillow cut seven senior PMs, then said AI did not drive the layoffs",
    "autor": "ZURB Radar",
    "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-910",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "When and why defaults influence decisions: a meta-analysis of default effects (Behavioural Public Policy 3(2):159-186)",
+   "autor": "Jachimowicz, J. M.; Duncan, S.; Weber, E. U.; Johnson, E. J.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-911",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The (in)effectiveness of psychological targeting: a meta-analytic review (Psychology & Marketing 43(3):575-590, DOI 10.1002/mar.70073)",
+   "autor": "Perla, R.; Maran, T.; Bagci, B.; Kraus, S.; Kanbach, D. K.; Bouncken, R. B.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-912",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Scarcity tactics in marketing: a meta-analysis of product scarcity effects on consumer purchase intentions (Journal of Retailing 98(4):741-7",
+   "autor": "Barton, B.; Zlatevska, N.; Oppewal, H.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-913",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Word-of-Mouth System Implementation and Customer Conversion: A Randomized Field Experiment (Information Systems Research 30(3):805-818)",
+   "autor": "Huang, N.; Sun, T.; Chen, P.; Golden, J. M.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-914",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Need for Speed: The Impact of In-Process Delays on Customer Behavior in Online Retail (Operations Research 71(3):876-894)",
+   "autor": "Gallino, S.; Karacaoglu, N.; Moreno, A.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-915",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Welfare Effects of Personalized Rankings (Marketing Science, según la ficha de Kellogg)",
+   "autor": "Morozov, I.; Donnelly, R.; Kanodia, A.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-916",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Gamification of Learning: a Meta-analysis (Educational Psychology Review 32(1):77-112)",
+   "autor": "Sailer, M.; Homner, L.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-917",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A/B Testing with Fat Tails (Journal of Political Economy 128(12):4614-4672)",
+   "autor": "Azevedo, E. M.; Deng, A.; Montiel Olea, J. L.; Rao, J.; Weyl, E. G.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-918",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "p-Hacking and False Discovery in A/B Testing (documento de trabajo, SSRN)",
+   "autor": "Berman, R.; Pekelis, L.; Scott, A.; Van den Bulte, C.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-919",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Power Analysis is Essential: High-Powered Tests Suggest Minimal to No Effect of Rounded Shapes on Click-Through Rates (arXiv 2512.24521)",
+   "autor": "Kohavi, R. et al.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-920",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "70.22% – average documented online shopping cart abandonment rate",
+   "autor": "Baymard Institute",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-921",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The value of getting personalization right—or wrong—is multiplying",
+   "autor": "McKinsey & Company (Arora, N. et al.)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-922",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Top 10 takeaways from running 127,000 experiments",
+   "autor": "Optimizely",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-923",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "A/B Testing Intuition Busters: Common Misunderstandings in Online Controlled Experiments (KDD 2022)",
+   "autor": "Kohavi, R.; Deng, A.; Vermeer, L.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-924",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "AI in Ecommerce Statistics: 32 Stats Every Online Retailer Should Know in 2026",
+   "autor": "Triple Whale (cita datos de Rep AI)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-925",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "ChatGPT vs. non-branded organic search conversions",
+   "autor": "Visibility Labs (vía Search Engine Land)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-926",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Dark patterns in subscription service cancellation processes (ECCE 2025)",
+   "autor": "Nembaware, F. E.; Sousa, S.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-927",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "How Duolingo reignited user growth",
+   "autor": "Mazal, J. (ex-CPO de Duolingo); Lenny's Newsletter",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-928",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Form 10-K, año fiscal 2025",
+   "autor": "Duolingo, Inc. (SEC)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-929",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Form 8-K, carta a accionistas 3T 2025",
+   "autor": "Duolingo, Inc. (SEC)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-930",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Improving the streak",
+   "autor": "Duolingo (blog corporativo)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-931",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Backlash to Duolingo's AI memo will hit Q2 numbers: Morgan Stanley",
+   "autor": "Sherwood News (cita a Morgan Stanley y Sensor Tower)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-932",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Democratizing online controlled experiments at Booking.com (arXiv 1710.08217)",
+   "autor": "Kaufman, R. L.; Pitchforth, J.; Vermeer, L. (Booking.com)",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-933",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Seven Rules of Thumb for Web Site Experimenters (KDD 2014)",
+   "autor": "Kohavi, R.; Deng, A.; Longbotham, R.; Xu, Y.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-934",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Focusing on the Long-term: It's Good for Users and Business (KDD 2015)",
+   "autor": "Hohnhold, H.; O'Brien, D.; Tang, D. (Google)",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-935",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The Netflix Recommender System: Algorithms, Business Value, and Innovation (ACM TMIS 6(4), art. 13)",
+   "autor": "Gomez-Uribe, C. A.; Hunt, N. (Netflix)",
+   "anio": "2015",
    "huerfana": false
   }
  ],
@@ -14086,6 +14320,136 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-909",
    "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-910",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-911",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-912",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-913",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-914",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-915",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-916",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-917",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-918",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-919",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-920",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-921",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-922",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-923",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-924",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-925",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-926",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-927",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-928",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-929",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-930",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-931",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-932",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-933",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-934",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-935",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -14377,14 +14741,14 @@
    },
    {
     "fecha": "2026-10-12",
-    "nuevas": 29,
-    "acumuladas": 908,
-    "AB": 8,
+    "nuevas": 55,
+    "acumuladas": 934,
+    "AB": 23,
     "rigor": {
-     "A": 4,
-     "B": 4,
-     "C": 10,
-     "D": 8,
+     "A": 13,
+     "B": 10,
+     "C": 18,
+     "D": 11,
      "E": 3
     }
    }
@@ -16606,20 +16970,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 879,
+    "fuentes": 908,
     "rigor": {
-     "B": 148,
-     "A": 299,
-     "C": 187,
-     "D": 195,
+     "B": 152,
+     "A": 303,
+     "C": 197,
+     "D": 203,
      "?": 15,
-     "E": 35
+     "E": 38
     },
     "nodes": 20,
     "outputs": 5,
     "wikilinks": 158,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 770,
+    "fuentes_citadas_en_nodes": 799,
     "diseno": {
      "hyp": {
       "abierta": 16,
@@ -16635,12 +16999,12 @@
       "🔴": 15,
       "⚔️": 4
      },
-     "iterations": 5,
-     "lines": 2035,
-     "cites": 276
+     "iterations": 6,
+     "lines": 2082,
+     "cites": 305
     },
     "fecha": "2026-10-12",
-    "commit": "41e24ef",
+    "commit": "0ed3248",
     "fuente": "git"
    }
   ],
@@ -16659,14 +17023,15 @@
     "🔴": 15,
     "⚔️": 4
    },
-   "iterations": 6,
-   "lines": 2082,
+   "iterations": 7,
+   "lines": 2137,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
     "2026-08-02",
     "2026-08-02",
     "2026-10-02",
+    "2026-10-12",
     "2026-10-12"
    ]
   }

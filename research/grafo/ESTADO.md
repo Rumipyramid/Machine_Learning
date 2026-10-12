@@ -8,23 +8,23 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,637 líneas |
+| Nodes (`_nodes/`) | 20 | 8,692 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
-| Fuentes en el ledger | 908 | 🟢A 303 · 🔵B 152 · 🟡C 197 · 🟠D 203 · 🔴E 38 · otras/sin clasificar 15 |
+| Fuentes en el ledger | 934 | 🟢A 312 · 🔵B 158 · 🟡C 205 · 🟠D 206 · 🔴E 38 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 158 | recíprocas: 158 de 158 (100%) |
-| Fuentes citadas por ≥1 node | 799 de 908 | 88% del ledger; **109 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 825 de 934 | 88% del ledger; **109 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 106 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 908 de 908 fuentes (100%) | 1982 relaciones · 113 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 934 de 934 fuentes (100%) | 2010 relaciones · 114 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
 
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
-| Iteraciones de bitácora | 6 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02, 2026-10-12) | cuántas veces se confrontó el node |
-| Tamaño | 2,082 líneas | crecimiento ≠ calidad; ver trazabilidad |
-| Fuentes citadas explícitamente | 305 | F-n individuales dentro del node |
-| …de rigor A/B | 148 (49%) | solidez de la base |
+| Iteraciones de bitácora | 7 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02, 2026-10-12) | cuántas veces se confrontó el node |
+| Tamaño | 2,137 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Fuentes citadas explícitamente | 331 | F-n individuales dentro del node |
+| …de rigor A/B | 163 (49%) | solidez de la base |
 | Hipótesis vivas | 36: abierta 16 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
 | **Falsabilidad ejercida** | 56% (20/36) | hipótesis que ya se movieron de `abierta` |
 | **Tasa de autocorrección** | 20% (4/20) | de las resueltas, cuántas se refutaron: 0% sostenido sería señal de confirmación sesgada |
@@ -38,18 +38,18 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 27 | 0.083 | ✅ |
-| `proyecto-back-to-basics-ffvv-vida` | 19 | 0.06 | ✅ |
-| `convergencia-psicologia-economia-ia` | 10 | 0.024 | ✅ |
-| `fenomenos-psicologicos` | 9 | 0.022 | ✅ |
-| `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.025 | ✅ |
-| `material-visual-venta-consultiva` | 8 | 0.025 | ✅ |
-| `mecanismos-seguros-salud` | 7 | 0.02 | ✅ |
-| `behavioral-design-estado-disciplina` | 6 | 0.019 | ✅ |
-| `glosario-seguro-vida-peru` | 4 | 0.013 | ✅ |
-| `seguros-comportamiento-mundo-peru` | 4 | 0.012 | ✅ |
-| `transicion-venta-fria-a-opt-in` | 4 | 0.013 | ✅ |
-| `glosario-seguro-salud-peru` | 3 | 0.01 | ✅ |
+| `conducta-humano-ia` | 27 | 0.077 | ✅ |
+| `proyecto-back-to-basics-ffvv-vida` | 19 | 0.055 | ✅ |
+| `convergencia-psicologia-economia-ia` | 10 | 0.023 | ✅ |
+| `fenomenos-psicologicos` | 9 | 0.021 | ✅ |
+| `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.024 | ✅ |
+| `material-visual-venta-consultiva` | 8 | 0.024 | ✅ |
+| `mecanismos-seguros-salud` | 7 | 0.018 | ✅ |
+| `behavioral-design-estado-disciplina` | 6 | 0.018 | ✅ |
+| `glosario-seguro-vida-peru` | 4 | 0.012 | ✅ |
+| `seguros-comportamiento-mundo-peru` | 4 | 0.011 | ✅ |
+| `transicion-venta-fria-a-opt-in` | 4 | 0.012 | ✅ |
+| `glosario-seguro-salud-peru` | 3 | 0.009 | ✅ |
 | `modelo-salud-ia-farmacias-peru` | 2 | 0.006 | ✅ |
 | `conciencia-cuantica` | 0 | 0.0 | ❌ sin enlace |
 | `fenomeno-el-nino-impacto-personas` | 0 | 0.0 | ❌ sin enlace |
@@ -89,7 +89,7 @@
 | 2026-10-07 | 60 | 800 | 33 | ███████████████ |
 | 2026-10-10 | 74 | 874 | 36 | ██████████████████ |
 | 2026-10-11 | 5 | 879 | 0 | █ |
-| 2026-10-12 | 29 | 908 | 8 | ███████ |
+| 2026-10-12 | 55 | 934 | 23 | ██████████████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -106,7 +106,7 @@
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-11 | `614bf74` | 879 | 20 | 5 | 142 | 770 | 2033 | 16 | 20 | 22 |
-| 2026-10-12 | `41e24ef` | 879 | 20 | 5 | 158 | 770 | 2035 | 16 | 20 | 22 |
+| 2026-10-12 | `0ed3248` | 908 | 20 | 5 | 158 | 799 | 2082 | 16 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -120,7 +120,7 @@
 | M4 Falsabilidad ejercida (diseño) | 56% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
 | M6 Integración (diseño↔resto) | 16/19 nodes enlazados; 13 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
-| M7 Lectura profunda (Lobo) | 196 fuentes leídas a fondo = 22% del ledger; 195 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
+| M7 Lectura profunda (Lobo) | 196 fuentes leídas a fondo = 21% del ledger; 195 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
 | M8 Uso externo (`impacto.json`) | 17 preguntas · 1 personas · 0 valoradas (0% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
@@ -137,7 +137,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2082 | 305 | 148 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
+| `tendencias-diseno-innovacion` | 2137 | 331 | 163 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
 | `convergencia-psicologia-economia-ia` | 251 | 119 | 51 | 12/12 | 2026-10-12 | 2026-10-12 v1.0 |
 | `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |

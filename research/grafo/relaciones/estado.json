@@ -1881,6 +1881,42 @@
    "triples": 36,
    "sin_aporte": [],
    "notas": "Iteración 6 del nodo de diseño (/trinidad 2026-10-12): diseño de producto digital y de servicios. Leído vía resúmenes (lectura 'abstract'). Incluye la lectura a fondo del resumen oficial de F-520."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f_ids": [
+    "F-910",
+    "F-911",
+    "F-912",
+    "F-913",
+    "F-914",
+    "F-915",
+    "F-916",
+    "F-917",
+    "F-918",
+    "F-919",
+    "F-920",
+    "F-921",
+    "F-922",
+    "F-923",
+    "F-924",
+    "F-925",
+    "F-926",
+    "F-927",
+    "F-928",
+    "F-929",
+    "F-930",
+    "F-931",
+    "F-932",
+    "F-933",
+    "F-934",
+    "F-935",
+    "F-519",
+    "F-21"
+   ],
+   "triples": 28,
+   "sin_aporte": [],
+   "notas": "Iteración 7 del nodo de diseño (/trinidad 2026-10-12): ¿qué tendencia de diseño tiene efecto medido en conversión o retención? Leído vía resúmenes (lectura 'abstract'). F-21 se usa como fuente de un límite sobre los defaults. Incluye la lectura a fondo del resumen de F-519; su desacuerdo con la ficha está en estado.json."
   }
  ],
  "discrepancias": [
@@ -2884,6 +2920,12 @@
    "detalle": "Año 's.f.': publicado el 25-oct-2023.",
    "estado": "cerrada",
    "resolucion": "Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente)."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-519",
+   "estado": "abierta",
+   "detalle": "Lectura a fondo del resumen (2026-10-12): la ruta por intrusividad percibida NO fue significativa (la ficha dice que es 'menor'); el efecto global es pequeño (d≈0,16, vía resumen de la ARF); incluye intenciones conductuales además de actitudes; no mide conversión observada. Corregir el hallazgo de la ficha requiere autorización del usuario."
   }
  ],
  "resoluciones": [
@@ -3852,6 +3894,12 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-12",
    "nota": "Converge con F-520 (Ojewale et al. 2026, preregistrado): más señales de incertidumbre no calibran la confianza; en F-885 la incertidumbre por palabra sube el acuerdo con la IA. Tareas distintas, no réplica; juicio sobre resúmenes."
+  },
+  {
+   "triple": "T-1993",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-12",
+   "nota": "Réplica con potencia ~2.000 veces mayor (Kohavi et al., preprint 2025): efecto ~100 veces menor y compatible con cero frente al +55% original (n=919 visitas). Juicio sobre el resumen."
   }
  ]
 }
