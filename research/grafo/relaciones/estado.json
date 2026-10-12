@@ -2943,8 +2943,9 @@
   {
    "fecha": "2026-10-12",
    "f": "F-519",
-   "estado": "abierta",
-   "detalle": "Lectura a fondo del resumen (2026-10-12): la ruta por intrusividad percibida NO fue significativa (la ficha dice que es 'menor'); el efecto global es pequeño (d≈0,16, vía resumen de la ARF); incluye intenciones conductuales además de actitudes; no mide conversión observada. Corregir el hallazgo de la ficha requiere autorización del usuario."
+   "estado": "cerrada",
+   "detalle": "Lectura a fondo del resumen (2026-10-12): la ruta por intrusividad percibida NO fue significativa (la ficha dice que es 'menor'); el efecto global es pequeño (d≈0,16, vía resumen de la ARF); incluye intenciones conductuales además de actitudes; no mide conversión observada. Corregir el hallazgo de la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: hallazgo de la ficha reescrito con autorización del usuario."
   }
  ],
  "resoluciones": [
