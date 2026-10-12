@@ -213,3 +213,6 @@
 | F-711 | 🟢 A | 2026-10-11 | Intuición 193 — réplicas directas con más poder no hallan el efecto Macbeth; el nulo bien hecho pesa más que el original |
 | F-751 | 🟢 A | 2026-10-11 | Intuición 194 — tras el Niño de 2017 la crisis aguda se disipa en ~12 meses; importa el momento del contacto (observacional) |
 | F-753 | 🟢 A | 2026-10-11 | Intuición 195 — el Niño de 2017 redujo el gasto en salud y educación de hogares rurales; el seguro vale por el recorte que evita |
+| F-727 | 🟢 A | 2026-10-12 | Intuición 196 — el coeficiente medio de aversión a la pérdida (~1,96) es punto de partida, no parámetro de producto; pedir dispersión y similitud con la decisión real |
+| F-542 | 🟢 A | 2026-10-12 | Intuición 197 — persuasión de GPT-4 con datos personales: real en debate de laboratorio, sin prueba de transferencia a conversión de ventas |
+| F-566 | 🟢 A | 2026-10-12 | Intuición 198 — un predictor flexible de elecciones diagnostica fallas de la teoría; no es teoría (lectura muy débil, solo ficha) |

@@ -5769,6 +5769,27 @@ F-753 (Malpartida & Guembes, Universidad de Piura, *Economía* PUCP, 95:69-93, 2
 - **Leído a fondo:** 2026-10-11 (`WebSearch`; lectura débil, sin tamaño del efecto)
 - **Conexión razonada, no forzada:** apoya la tesis 26 en el mecanismo (liquidez del hogar); no sube su confianza.
 
+### 196. Un coeficiente medio de aversión a la pérdida (~2) es un punto de partida, no un parámetro de producto
+F-727 (Brown, Imai, Vieider & Camerer, *Journal of Economic Literature* 62(2):485-516, 2024). Meta-análisis de 607 estimaciones de 150 artículos (1992-2017): el coeficiente medio es 1,955 (IC95% 1,820-2,102). Según el resumen, pocas características del diseño del estudio explican las diferencias entre estimaciones. La búsqueda no confirmó qué dice el texto sobre sesgo de publicación ni la dispersión entre estudios.
+**Heurística:** que las pérdidas pesen "casi el doble" es un promedio sobre tareas de laboratorio. Antes de ponerlo en un mensaje o en una cotización, pide la dispersión y la similitud entre esas tareas y la decisión real de seguros. Un promedio estrecho no garantiza que aplique a tu población.
+- **Fuente:** F-727 (🟢A; meta-análisis; leída por resumen y páginas secundarias, texto completo no abierto)
+- **Leído a fondo:** 2026-10-12 (`WebSearch`; lectura débil, declarada)
+- **Conexión razonada, no forzada:** ninguna tesis vigente cambia. Refuerza la tesis 6 (probar en la propia población, no copiar el tamaño de efecto de un paper).
+
+### 197. La persuasión de una IA con datos personales es real en el laboratorio; su tamaño exacto y su transferencia al campo no están probados
+F-542 (Salvi, Horta Ribeiro, Gallotti & West, *Nature Human Behaviour*, 2025). Experimento preregistrado con asignación aleatoria (diseño 2×2×3: oponente humano o GPT-4, con o sin datos sociodemográficos, tema de opinión más o menos fuerte). Los resúmenes coinciden en que GPT-4 con datos personales superó al humano: +81,2% de odds de cambiar la opinión y 64,4% de los pares no empatados. Las fuentes difieren en la muestra (900 en la versión publicada, 820 en el preprint), lo que confirma la nota del ledger. Las cifras salieron de resúmenes, no del artículo.
+**Heurística:** el hallazgo dice que personalizar con datos del cliente aumenta el cambio de opinión en un debate corto entre desconocidos. No dice que un asesor conversacional venda más. Debate de opinión no es compra, y el ledger ya trae evidencia de que personalizar con datos sensibles puede restar conversión. Si Rimac usa datos del cliente en un asesor de IA, lo defendible hoy es un piloto con conversión medida y revisión legal, no la cifra de +81%.
+- **Fuente:** F-542 (🟢A; experimento preregistrado; leída por resumen y fichas secundarias)
+- **Leído a fondo:** 2026-10-12 (`WebSearch`; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la tesis 22 (personalizar con datos sensibles tiene riesgo propio) y con el riesgo regulatorio de la tesis 8. No cambia su confianza.
+
+### 198. Un modelo que predice mejor las elecciones no es todavía una teoría: úsalo para detectar dónde falla la teoría vieja
+F-566 (Peterson, Bourgin, Agrawal, Reichman & Griffiths, *Science* 372:1209-1214, 2021). Con unos 13 mil problemas de elección con riesgo (choices13k), redes neuronales entrenadas con elecciones humanas superaron a 21 teorías previas y recuperaron rasgos de la teoría prospectiva. La búsqueda no devolvió el artículo; esta entrada se apoya en la ficha del ledger y en mi conocimiento previo, que declaro como tal.
+**Heurística:** el valor del modelo flexible es de diagnóstico: marca qué problemas la teoría clásica no explica, y ahí buscas el mecanismo. Pedirle recomendaciones de producto sin ese paso es confundir predicción con comprensión (misma cautela que en la entrada 184 sobre Centaur). Los problemas eran apuestas monetarias simples, no decisiones de seguros.
+- **Fuente:** F-566 (🟢A; megaexperimento con aprendizaje automático; leída solo por ficha, lectura muy débil)
+- **Leído a fondo:** 2026-10-12 (`WebSearch` sin acierto; lectura muy débil, declarada)
+- **Conexión razonada, no forzada:** ninguna tesis vigente cambia. Respalda la tesis 27 en la idea de ordenar hipótesis y no estimar efectos.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5944,48 +5965,8 @@ F-753 (Malpartida & Guembes, Universidad de Piura, *Economía* PUCP, 95:69-93, 2
 - **2026-09-10** — *(Detalle podado y fusionado al resumen el 2026-10-10)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 - **2026-09-11** — *(Detalle podado y fusionado al resumen el 2026-10-11)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-12** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward `2937e16→ff84439` que trajo consigo el propio commit del 2026-09-11 de esta
-  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
-  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 12 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  trigésimo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese
-  mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por
-  completar el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la
-  disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva treinta y un días sin
-  correr). **Poda de bitácora:** el bloque "2026-08-13" salió por completo de la ventana de ~30 días
-  (cutoff ≈2026-08-13) — lo fusioné con el bloque "2026-08-01 a 2026-08-12" en un resumen ampliado
-  "2026-08-01 a 2026-08-13"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
-  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
-  hoy:** recalculé por script el universo 🟢A del ledger con el filtro estricto (marcador de
-  rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra estable, contra
-  `fuentes_leidas_lobo.md` (105 ya leídas) — 29 pendientes — y elegí 3 al azar sin reemplazo (Python
-  `random.sample`, sin semilla fija): F-226 (Darley & Latané 1968, bystander/difusión de
-  responsabilidad, ya citada en el ledger solo por su nota de haber sido reemplazada como fuente de
-  C.6 del Playbook), F-254 (When AI advice backfires, *Journal of Retailing and Consumer Services*
-  2026, ya citada solo por su canal de intrusividad) y F-305 (Figma S-1, ya citada por sus cifras
-  pre-IPO y el riesgo declarado de IA bajando barreras de entrada). Las URLs directas de las tres
-  (doi.org, sciencedirect.com, sec.gov) dieron `EGRESS_BLOCKED` por el proxy del entorno; `WebSearch`
-  sí funcionó y permitió reconstruir el detalle completo de F-226 y F-254 vía fuentes secundarias
-  convergentes (PubMed/PMC/SciRP para F-226, cobertura que reproduce el resumen y hallazgo del propio
-  paper para F-254); F-305 no tuvo mirror del documento primario disponible, así que esa entrada se
-  apoya solo en cobertura secundaria y lo declaro como limitación de esa lectura, no como verificación
-  directa del filing. Sumé las entradas 106, 107 y 108 de Intuición acumulada: (106) el propio
-  ledger ya había corregido esta cita exacta (F-226→F-236) por encaje cuestionable entre el mecanismo
-  original (extraños ante una emergencia por intercomunicador, ayuda cayendo de 85% a 62% a 31% según
-  tamaño de grupo) y el uso pretendido (objeción de pareja/familia en venta) — heurística: pedir el
-  diseño experimental exacto antes de aceptar un efecto de psicología social "de marca" en un playbook
-  de venta; (107) el hallazgo real de F-254 es un modelo de doble vía donde la personalización con IA
-  **sí aumentó** la compra en el experimento de campo (la vía de utilidad percibida domina sobre la de
-  intrusividad) — citar solo el canal adverso invierte la recomendación práctica real de los autores,
-  matiza la regla C10 del node de diseño/innovación; (108) el riesgo de "IA baja la barrera de entrada"
-  que Figma declara en su S-1 apunta, según la cobertura secundaria consultada, específicamente al
-  lienzo colaborativo clásico y no a sus líneas de expansión (Dev Mode, Slides, Sites, Make) — conecta
-  con la intuición 14 (no declarar un moat erosionado sin precisar qué línea de producto específica
-  está expuesta). Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el
-  mecanismo paralelo de intuición. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
-  fuentes leídas hoy. Bitácora con 29 días de historial (2026-08-14 a hoy) tras la poda de hoy —
-  dentro de la ventana de ~30 días.
+- **2026-09-12** — *(Detalle podado y fusionado al resumen el 2026-10-12)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-13** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward `2937e16→45c1d02` que trajo consigo el propio commit del 2026-09-12 de esta
   opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
@@ -6780,3 +6761,5 @@ F-753 (Malpartida & Guembes, Universidad de Piura, *Economía* PUCP, 95:69-93, 2
 - **2026-10-10** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 140 pendientes → 137 tras hoy):** sorteo F-707, F-673 y F-553, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 190 (ego depletion: d≈0,62 en 1998-meta vs. d≈0,04 en réplica multilab de 2016; el desacuerdo es la señal), 191 (informar la espera reduce la sobreestimación pero puede empeorar la evaluación) y 192 (sujetos sintéticos: malrepresentan y aplanan al grupo; mirar dispersión). Pendiente para `cronista`: F-707 no recoge las réplicas de 2016 que cambian su lectura. Poda: 09-10 fusionado al resumen; Bitácora cubre 2026-09-11 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-11** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 135 pendientes → 132 tras hoy):** sorteo F-711, F-751 y F-753, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 193 (el nulo de réplicas directas pesa más que el estudio original), 194 (tras un desastre la crisis aguda se disipa en ~12 meses: importa el momento del contacto) y 195 (el hogar recorta salud y educación; el seguro vale por lo que evita recortar). F-751 y F-753 apoyan la tesis 26 sin subir su confianza (un evento, un contexto). Poda: 09-11 fusionado al resumen; Bitácora cubre 2026-09-12 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-12** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 132 pendientes → 129 tras hoy):** sorteo F-727, F-542 y F-566, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada; F-566 no apareció en la búsqueda y se apoya en la ficha). Entradas 196 (el coeficiente medio de aversión a la pérdida no es parámetro de producto), 197 (persuasión de IA con datos personales: real en laboratorio, no probada en campo) y 198 (un predictor flexible sirve para detectar fallas de la teoría, no como teoría). Poda: 09-12 fusionado al resumen; Bitácora cubre 2026-09-13 a hoy. `fuentes_leidas_lobo.md` actualizado.
