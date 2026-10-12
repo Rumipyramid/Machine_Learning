@@ -1984,6 +1984,62 @@
    "triples": 1,
    "sin_aporte": [],
    "notas": "Completa el lote 117: relación del recordatorio genérico (F-947)."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f_ids": [
+    "F-242",
+    "F-243",
+    "F-249",
+    "F-259",
+    "F-260",
+    "F-261",
+    "F-265",
+    "F-268",
+    "F-269",
+    "F-270",
+    "F-271",
+    "F-284",
+    "F-303",
+    "F-304",
+    "F-305",
+    "F-306",
+    "F-307",
+    "F-308",
+    "F-309",
+    "F-313",
+    "F-314",
+    "F-356",
+    "F-380",
+    "F-381",
+    "F-384",
+    "F-386",
+    "F-388",
+    "F-391",
+    "F-396",
+    "F-398",
+    "F-399",
+    "F-400",
+    "F-401",
+    "F-420",
+    "F-428",
+    "F-429",
+    "F-430",
+    "F-432",
+    "F-433",
+    "F-434",
+    "F-442",
+    "F-449",
+    "F-457",
+    "F-467",
+    "F-469",
+    "F-481",
+    "F-492",
+    "F-529"
+   ],
+   "triples": 90,
+   "sin_aporte": [],
+   "notas": "Pase de lectura profunda 2026-10-12: relaciones nuevas sacadas del resumen oficial de cada fuente (vía búsqueda; no se abrieron páginas)."
   }
  ],
  "discrepancias": [
@@ -2994,6 +3050,76 @@
    "estado": "cerrada",
    "detalle": "Lectura a fondo del resumen (2026-10-12): la ruta por intrusividad percibida NO fue significativa (la ficha dice que es 'menor'); el efecto global es pequeño (d≈0,16, vía resumen de la ARF); incluye intenciones conductuales además de actitudes; no mide conversión observada. Corregir el hallazgo de la ficha requiere autorización del usuario.",
    "cierre": "2026-10-12: hallazgo de la ficha reescrito con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-401",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha concluye que la brecha percepción-realidad es de ~1 punto y da N=452 para los dos estudios; el resumen habla de una sobreestimación de 4 puntos y de N=246 (estudio 1) y N=452 (estudio 2). Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-449",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha da a Root un combined ratio de 91,4% e ingreso neto trimestral de US$35,9M; lo publicado da 98,2% para 2025 (102,1% en el 3T25, con pérdida de ~US$5M) e ingreso neto anual de US$40,3M (US$30,9M fue 2024). Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-270",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha da N=294; el informe 2026 de zeroheight encuestó a 147 profesionales, y el 84% citado es del informe 2025. Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-434",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha describe el patrón como 'mediado, no directo'; el resumen habla de moderación por contexto y método, no de mediación. Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-314",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha atribuye a este informe una encuesta (N≈2.000; 46% ve más oportunidades con IA frente a 30%); el resumen describe un análisis de datos del BLS y O*NET de nueve ocupaciones, sin esa encuesta. Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-386",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha presenta como hallazgo un reencuadre de la usabilidad; la fuente es una convocatoria de taller, sin resultados publicados. Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-399",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha describe 4 condiciones en una fase de arena; el resumen describe 600 pares juzgados por 20 participantes, comparaciones con un evaluador preentrenado y un estudio en línea con 12 usuarios. Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-391",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha dice que la reestructuración se apoya explícitamente en IA; la empresa habla de integrar diseño y contenido, y el vínculo con la IA lo hacen exempleados y la prensa. Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-396",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La ficha da una caída del apoyo directivo de 42% a 32% como dato de zeroheight 2026; esa cifra solo aparece en un blog de terceros, y el material de zeroheight habla de 40% de insatisfacción. Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f": "F-306",
+   "estado": "cerrada",
+   "detalle": "Pase de lectura profunda (2026-10-12): La URL de la ficha apunta al informe del 1T del año fiscal 2026 de Adobe, pero las cifras citadas son del 2T (otro documento). Corregir la ficha requiere autorización del usuario.",
+   "cierre": "2026-10-12: ficha corregida con autorización del usuario."
   }
  ],
  "resoluciones": [

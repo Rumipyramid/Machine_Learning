@@ -122,7 +122,7 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2194,
+   "lines": 2195,
    "cites": 373,
    "design": true
   },
@@ -2506,7 +2506,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "Hidden Technical Debt in Generative (GenUI) and Malleable User Interfaces",
-   "autor": "Autoría no verificada",
+   "autor": "Cifliku, B. (arXiv, cs.HC; aceptado en un taller de CHI 2026) — ⚠️ autoría verificada 2026-10-12 contra la página oficial (regla permanente de datos bibliográficos); antes: 'Autoría no verificada'",
    "anio": "2026",
    "huerfana": false
   },
@@ -2515,7 +2515,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "A Framework of UX Principles for Human-AI Agent Interaction in the Workplace · Human-AI Agent Interaction in a Business Context",
-   "autor": "Autoría no verificada",
+   "autor": "Paimann, Valarini, Juhl (arXiv; preprints) — ⚠️ autoría verificada 2026-10-12 contra la página oficial (regla permanente de datos bibliográficos); antes: 'Autoría no verificada'",
    "anio": "2026",
    "huerfana": false
   },
@@ -3595,7 +3595,7 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Generative Interfaces for Language Models (Findings of the Association for Computational Linguistics 2026, paper 74)",
-   "autor": "Autoría no verificada en esta sesión (Findings of ACL 2026)",
+   "autor": "Chen, J.; Zhang, Y.; Zhang, Y.; Shao, Y.; Yang, D. — Findings of ACL 2026, paper 74, pp. 1499-1519 (ACL Anthology) — ⚠️ autoría verificada 2026-10-12 contra la página oficial (regla permanente de datos bibliográficos); antes: 'Autoría no verificada'",
    "anio": "2026",
    "huerfana": false
   },
@@ -3658,7 +3658,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "The Productivity-Reliability Paradox: Specification-Driven Governance for AI-Augmented Software Development",
-   "autor": "Autoría no verificada en esta sesión (arXiv 2605.01160)",
+   "autor": "Farrag, S. E. (University of East London; arXiv 2605.01160, autor único) — ⚠️ autoría verificada 2026-10-12 contra la página oficial (regla permanente de datos bibliográficos); antes: 'Autoría no verificada'",
    "anio": "2026",
    "huerfana": false
   },
@@ -3766,7 +3766,7 @@
    "type": "fuente",
    "rigor": "C",
    "titulo": "The GenUI Study (ACM DIS 2025)",
-   "autor": "Autoría no verificada (proxy 403 en ACM DL)",
+   "autor": "Chen, X. A.; Knearem, T.; Li, Y. (Google; arXiv 2501.13145) — ⚠️ autoría verificada 2026-10-12 contra la página oficial (regla permanente de datos bibliográficos); antes: 'Autoría no verificada'",
    "anio": "2025",
    "huerfana": false
   },
@@ -17603,20 +17603,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 945,
+    "fuentes": 976,
     "rigor": {
-     "B": 165,
-     "A": 312,
-     "C": 209,
-     "D": 206,
+     "B": 171,
+     "A": 319,
+     "C": 213,
+     "D": 217,
      "?": 15,
-     "E": 38
+     "E": 41
     },
     "nodes": 20,
     "outputs": 5,
     "wikilinks": 158,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 836,
+    "fuentes_citadas_en_nodes": 870,
     "diseno": {
      "hyp": {
       "abierta": 16,
@@ -17632,12 +17632,12 @@
       "🔴": 15,
       "⚔️": 4
      },
-     "iterations": 8,
-     "lines": 2153,
-     "cites": 336
+     "iterations": 9,
+     "lines": 2194,
+     "cites": 373
     },
     "fecha": "2026-10-12",
-    "commit": "1b07675",
+    "commit": "00b560c",
     "fuente": "git"
    }
   ],
@@ -17657,7 +17657,7 @@
     "⚔️": 4
    },
    "iterations": 9,
-   "lines": 2194,
+   "lines": 2195,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

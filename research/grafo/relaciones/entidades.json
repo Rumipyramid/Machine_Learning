@@ -364,6 +364,11 @@
   "nombre": "Capacidad del usuario de ajustar la interfaz generada a sus necesidades",
   "tipo": "resultado"
  },
+ "alcance_ia_no_generativa": {
+  "id": "alcance_ia_no_generativa",
+  "nombre": "Alcance limitado a IA no generativa",
+  "tipo": "limitacion"
+ },
  "alcance_mercado_digital": {
   "id": "alcance_mercado_digital",
   "nombre": "Alcance de mercado (más usuarios alcanzados)",
@@ -669,6 +674,11 @@
   "nombre": "Auditoría de calibración de modelos de IA",
   "tipo": "concepto"
  },
+ "autoconfianza_en_la_tarea": {
+  "id": "autoconfianza_en_la_tarea",
+  "nombre": "Autoconfianza del trabajador en su propia tarea",
+  "tipo": "constructo"
+ },
  "autodeclarado_vendedor": {
   "id": "autodeclarado_vendedor",
   "nombre": "Cifra autodeclarada por la empresa, sin método auditable",
@@ -839,6 +849,11 @@
   "nombre": "Betterfly (insurtech chilena de seguro de vida dinámico y bienestar)",
   "tipo": "organizacion"
  },
+ "bienes_consumo_envasados_eeuu": {
+  "id": "bienes_consumo_envasados_eeuu",
+  "nombre": "Bienes de consumo envasados en EE.UU. (31 categorías, 83.719 SKU, 2002-2009)",
+  "tipo": "poblacion"
+ },
  "bienestar_mercado_agentes": {
   "id": "bienestar_mercado_agentes",
   "nombre": "Bienestar del consumidor en mercados de agentes",
@@ -887,6 +902,11 @@
  "brecha_definir_aplicar": {
   "id": "brecha_definir_aplicar",
   "nombre": "Saber definir un término de seguro no implica saber aplicarlo en un cálculo",
+  "tipo": "limitacion"
+ },
+ "brecha_habilidades_construir_interfaces": {
+  "id": "brecha_habilidades_construir_interfaces",
+  "nombre": "Brecha de habilidades de usuarios para construir sus propias interfaces",
   "tipo": "limitacion"
  },
  "brecha_natcat": {
@@ -2489,6 +2509,11 @@
   "nombre": "Castellion y Markham 2013: perspectiva sobre las tasas de fracaso de productos nuevos (JPIM)",
   "tipo": "estudio"
  },
+ "categoria_alta_facturacion": {
+  "id": "categoria_alta_facturacion",
+  "nombre": "Categoría de producto de alta facturación",
+  "tipo": "constructo"
+ },
  "cdss_prescripcion": {
   "id": "cdss_prescripcion",
   "nombre": "Soporte de decisión clínica en prescripción",
@@ -2809,6 +2834,11 @@
   "nombre": "Combined ratio de Root (91,4%)",
   "tipo": "resultado"
  },
+ "combined_ratio_root_fy2025": {
+  "id": "combined_ratio_root_fy2025",
+  "nombre": "Combined ratio neto de Root FY2025 (98,2%; 2024: 96,4%)",
+  "tipo": "metrica"
+ },
  "comentario_aula_christensen": {
   "id": "comentario_aula_christensen",
   "nombre": "Comentario de aula de Clayton Christensen (no un paper)",
@@ -2902,6 +2932,11 @@
  "compromiso_cognitivo_lectura_web": {
   "id": "compromiso_cognitivo_lectura_web",
   "nombre": "Compromiso cognitivo al leer sitios web (usuarios sin discapacidad)",
+  "tipo": "resultado"
+ },
+ "compromiso_truelink_50m": {
+  "id": "compromiso_truelink_50m",
+  "nombre": "Compromiso de Truelink de al menos US$50 M para un fondo de innovacion de R/GA",
   "tipo": "resultado"
  },
  "computacion_cuantica_cerebral": {
@@ -3158,6 +3193,11 @@
   "id": "contenido_informativo_anuncio",
   "nombre": "Contenido informativo en anuncios",
   "tipo": "intervencion"
+ },
+ "contexto_mercado_producto_nuevo": {
+  "id": "contexto_mercado_producto_nuevo",
+  "nombre": "Contexto de mercado (servicios vs. bienes, región, intensidad tecnológica)",
+  "tipo": "constructo"
  },
  "contexto_y_metodo": {
   "id": "contexto_y_metodo",
@@ -3604,6 +3644,11 @@
   "nombre": "Desvío de pacientes de urgencias a atención primaria",
   "tipo": "resultado"
  },
+ "desacuerdo_entre_evaluadores_ui": {
+  "id": "desacuerdo_entre_evaluadores_ui",
+  "nombre": "Desacuerdo entre evaluadores de interfaces (alfa de Krippendorff = 0,25)",
+  "tipo": "metrica"
+ },
  "desalineacion_opinion_grupos": {
   "id": "desalineacion_opinion_grupos",
   "nombre": "Desalineación entre las opiniones de un LLM y las de grupos demográficos",
@@ -3754,6 +3799,11 @@
   "nombre": "Detector de respuestas de LLM de Prolific (authenticity checks, may-2025)",
   "tipo": "intervencion"
  },
+ "deterioro_plusvalia_publishing_adobe": {
+  "id": "deterioro_plusvalia_publishing_adobe",
+  "nombre": "Deterioro de plusvalía en Publishing & Advertising (Adobe, Q2 FY2026)",
+  "tipo": "resultado"
+ },
  "deterioro_sistemas_publicos_salud": {
   "id": "deterioro_sistemas_publicos_salud",
   "nombre": "Deterioro de los sistemas públicos de salud",
@@ -3798,6 +3848,11 @@
   "id": "directores_bleep_ramtha",
   "nombre": "Directores de 'What the Bleep' (alumnos de la Ramtha's School of Enlightenment)",
   "tipo": "organizacion"
+ },
+ "disciplina_especificacion_insuficiente": {
+  "id": "disciplina_especificacion_insuficiente",
+  "nombre": "Disciplina de especificación insuficiente",
+  "tipo": "constructo"
  },
  "disciplina_precios_salud": {
   "id": "disciplina_precios_salud",
@@ -4049,6 +4104,11 @@
   "nombre": "Eco de sindicación: la misma nota repetida en varios medios no son confirmaciones independientes",
   "tipo": "limitacion"
  },
+ "economia_costos_transaccion": {
+  "id": "economia_costos_transaccion",
+  "nombre": "Economía de costos de transacción",
+  "tipo": "concepto"
+ },
  "ecosistema_tech_latam": {
   "id": "ecosistema_tech_latam",
   "nombre": "Ecosistema tecnológico latinoamericano",
@@ -4103,6 +4163,11 @@
   "id": "efecto_dotacion",
   "nombre": "Efecto dotación (se pide más por vender que lo que se paga por comprar)",
   "tipo": "constructo"
+ },
+ "efecto_dunning_kruger": {
+  "id": "efecto_dunning_kruger",
+  "nombre": "Efecto Dunning-Kruger",
+  "tipo": "concepto"
  },
  "efecto_largo_plazo": {
   "id": "efecto_largo_plazo",
@@ -4219,6 +4284,11 @@
   "nombre": "Encuesta anual de innovación de BCG (>1.000 ejecutivos)",
   "tipo": "estudio"
  },
+ "encuesta_lee_chi2025": {
+  "id": "encuesta_lee_chi2025",
+  "nombre": "Encuesta de Lee et al. (CHI 2025) a 319 trabajadores del conocimiento",
+  "tipo": "estudio"
+ },
  "encuesta_naic_genz_2024": {
   "id": "encuesta_naic_genz_2024",
   "nombre": "Encuesta NAIC a adultos Gen Z de EE.UU. (2024, N=1.003)",
@@ -4288,6 +4358,11 @@
   "id": "equilibrio_separador",
   "nombre": "Equilibrio separador: alto riesgo con cobertura completa, bajo riesgo con cobertura parcial como señal",
   "tipo": "concepto"
+ },
+ "equipo_dedicado_design_system": {
+  "id": "equipo_dedicado_design_system",
+  "nombre": "Equipo dedicado a design systems (83% en 2026, 78% en 2025)",
+  "tipo": "metrica"
  },
  "equipo_dedicado_ds": {
   "id": "equipo_dedicado_ds",
@@ -4408,6 +4483,16 @@
   "id": "estudiantes_proyectos_empresa",
   "nombre": "160 estudiantes en 62 proyectos de innovación para empresas",
   "tipo": "poblacion"
+ },
+ "estudio_chen_2026_interfaces_generativas": {
+  "id": "estudio_chen_2026_interfaces_generativas",
+  "nombre": "Chen et al. 2026: Generative Interfaces for Language Models (Findings of ACL)",
+  "tipo": "estudio"
+ },
+ "estudio_formativo_cualitativo": {
+  "id": "estudio_formativo_cualitativo",
+  "nombre": "Estudio formativo cualitativo (diarios y entrevistas)",
+  "tipo": "concepto"
  },
  "estudio_norc_fraude_2026": {
   "id": "estudio_norc_fraude_2026",
@@ -4533,6 +4618,16 @@
   "id": "exito_transformacion",
   "nombre": "Éxito sostenido de una transformación",
   "tipo": "resultado"
+ },
+ "expansion_asientos_organizaciones": {
+  "id": "expansion_asientos_organizaciones",
+  "nombre": "Expansión de asientos en organizaciones enteras (Figma)",
+  "tipo": "concepto"
+ },
+ "expansion_asientos_renovacion": {
+  "id": "expansion_asientos_renovacion",
+  "nombre": "Expansión de asientos completos en la renovación",
+  "tipo": "concepto"
  },
  "expectativa_experimentador": {
   "id": "expectativa_experimentador",
@@ -4679,6 +4774,11 @@
   "nombre": "Faros AI 2025: telemetría de +10.000 desarrolladores en 1.255 equipos",
   "tipo": "estudio"
  },
+ "farrag_2026_paradoja_productividad": {
+  "id": "farrag_2026_paradoja_productividad",
+  "nombre": "Farrag 2026: paradoja productividad-fiabilidad (arXiv 2605.01160)",
+  "tipo": "estudio"
+ },
  "fatiga_intervencion": {
   "id": "fatiga_intervencion",
   "nombre": "Fatiga de intervención: la respuesta cae con la exposición repetida",
@@ -4788,6 +4888,11 @@
   "id": "focalizacion_psicologica",
   "nombre": "Focalización psicológica (mensajes adaptados a la personalidad)",
   "tipo": "intervencion"
+ },
+ "formatos_datos_no_adaptables": {
+  "id": "formatos_datos_no_adaptables",
+  "nombre": "Falta de formatos de datos adaptables para interfaces generativas",
+  "tipo": "limitacion"
  },
  "foro_anonimo_no_representativo": {
   "id": "foro_anonimo_no_representativo",
@@ -5069,6 +5174,16 @@
   "nombre": "Grand View Research (vendor de informes de mercado)",
   "tipo": "organizacion"
  },
+ "guia_anual_figma_2026": {
+  "id": "guia_anual_figma_2026",
+  "nombre": "Guía anual de ingresos 2026 de Figma (US$1,463-1,467B)",
+  "tipo": "resultado"
+ },
+ "guia_q3_figma": {
+  "id": "guia_q3_figma",
+  "nombre": "Guía de ingresos Q3 2026 de Figma (US$373-375M)",
+  "tipo": "resultado"
+ },
  "guia_sbs_para_vivir_seguros": {
   "id": "guia_sbs_para_vivir_seguros",
   "nombre": "Guía 'Para vivir seguros' de educación financiera de la SBS",
@@ -5113,6 +5228,11 @@
   "id": "herramientas_ia_generativas",
   "nombre": "Herramientas de IA generativa",
   "tipo": "intervencion"
+ },
+ "heterogeneidad_estimaciones_id": {
+  "id": "heterogeneidad_estimaciones_id",
+  "nombre": "Heterogeneidad alta entre estimaciones del retorno de I+D a nivel de firma",
+  "tipo": "resultado"
  },
  "heterogeneidad_nudge": {
   "id": "heterogeneidad_nudge",
@@ -5364,6 +5484,11 @@
   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
   "tipo": "intervencion"
  },
+ "industria_no_manufacturera": {
+  "id": "industria_no_manufacturera",
+  "nombre": "Industrias no manufactureras",
+  "tipo": "poblacion"
+ },
  "ineficiencia_servicios_salud": {
   "id": "ineficiencia_servicios_salud",
   "nombre": "Ineficiencia percibida de los servicios de salud",
@@ -5449,6 +5574,11 @@
   "nombre": "Ingresos de Ethos FY2025 (US$388M, +52%; 198.338 pólizas, +55%; margen EBITDA ajustado 23%)",
   "tipo": "resultado"
  },
+ "ingresos_figma_2024": {
+  "id": "ingresos_figma_2024",
+  "nombre": "Ingresos de Figma en 2024 (US$749,0M, +48%)",
+  "tipo": "resultado"
+ },
  "ingresos_figma_q2": {
   "id": "ingresos_figma_q2",
   "nombre": "Ingresos de Figma Q2 2026 (+48%)",
@@ -5457,6 +5587,11 @@
  "ingresos_mind_gym": {
   "id": "ingresos_mind_gym",
   "nombre": "Ingresos de Mind Gym (FY2025 £38,6M −14%; FY2026 £29,9M −23%)",
+  "tipo": "resultado"
+ },
+ "ingresos_suscripcion_grupos_clientes_adobe": {
+  "id": "ingresos_suscripcion_grupos_clientes_adobe",
+  "nombre": "Ingresos de suscripción de Adobe por grupos de clientes (US$6,39B en Q2 FY2026)",
   "tipo": "resultado"
  },
  "ingresos_vercel": {
@@ -5468,6 +5603,11 @@
   "id": "ingresos_wealthfront",
   "nombre": "Ingresos de Wealthfront (US$339M, 12 meses a jul-2025)",
   "tipo": "resultado"
+ },
+ "ingresos_yape_2025": {
+  "id": "ingresos_yape_2025",
+  "nombre": "Ingresos de Yape en 2025 (S/1.260,3 millones)",
+  "tipo": "metrica"
  },
  "iniciativa_arc_templeton": {
   "id": "iniciativa_arc_templeton",
@@ -5528,6 +5668,11 @@
   "id": "instant_checkout_openai",
   "nombre": "Instant Checkout de OpenAI (compra dentro de ChatGPT, con Stripe)",
   "tipo": "intervencion"
+ },
+ "insultos_inautenticidad_previos": {
+  "id": "insultos_inautenticidad_previos",
+  "nombre": "Insultos previos de inautenticidad (shill, astroturf, sockpuppet, troll)",
+  "tipo": "concepto"
  },
  "insurtech": {
   "id": "insurtech",
@@ -5614,6 +5759,11 @@
   "nombre": "Intermediarios de seguros independientes (brokers y agentes)",
   "tipo": "concepto"
  },
+ "interrupciones_tarea": {
+  "id": "interrupciones_tarea",
+  "nombre": "Interrupciones durante tareas de desarrollo",
+  "tipo": "resultado"
+ },
  "intervalo_retencion": {
   "id": "intervalo_retencion",
   "nombre": "Intervalo de retención (tiempo hasta la prueba final)",
@@ -5678,6 +5828,11 @@
   "id": "invision_2019",
   "nombre": "InVision 2019: The New Design Frontier (2.200 organizaciones)",
   "tipo": "estudio"
+ },
+ "ipg_racionalizacion_omnicom": {
+  "id": "ipg_racionalizacion_omnicom",
+  "nombre": "Racionalizacion de IPG antes de su adquisicion propuesta por Omnicom (venta de Huge y R/GA)",
+  "tipo": "concepto"
  },
  "ipg_venta_rga": {
   "id": "ipg_venta_rga",
@@ -5769,6 +5924,11 @@
   "nombre": "Baja justificación externa (paga pequeña) por actuar contra la propia opinión",
   "tipo": "intervencion"
  },
+ "justificacion_roi_ux": {
+  "id": "justificacion_roi_ux",
+  "nombre": "Justificación del retorno de la inversión en UX ante la empresa",
+  "tipo": "concepto"
+ },
  "kaiser_permanente_risant": {
   "id": "kaiser_permanente_risant",
   "nombre": "Kaiser Permanente y Risant Health (sistema integrado aseguradora-prestador)",
@@ -5793,6 +5953,11 @@
   "id": "kpi_innovacion_ventas_productos_nuevos",
   "nombre": "KPI de innovación: % de ventas de productos nuevos",
   "tipo": "metrica"
+ },
+ "krealo": {
+  "id": "krealo",
+  "nombre": "Krealo (brazo de venture corporativo de Credicorp)",
+  "tipo": "organizacion"
  },
  "kunreuther_seguros_conducta_2013": {
   "id": "kunreuther_seguros_conducta_2013",
@@ -5914,6 +6079,11 @@
   "nombre": "Liderazgo de identidad (el líder moviliza al grupo en nombre de una causa compartida)",
   "tipo": "intervencion"
  },
+ "lim_agregadores_inconsistentes": {
+  "id": "lim_agregadores_inconsistentes",
+  "nombre": "Agregadores financieros con cifras inconsistentes entre sí",
+  "tipo": "limitacion"
+ },
  "lim_ano_nota_no_verificado": {
   "id": "lim_ano_nota_no_verificado",
   "nombre": "Año real de la nota no verificado (comparación interanual inconsistente)",
@@ -5932,6 +6102,11 @@
  "lim_baseline_debil": {
   "id": "lim_baseline_debil",
   "nombre": "Comparación contra una línea base débil (salida markdown estándar del LLM)",
+  "tipo": "limitacion"
+ },
+ "lim_causa_ia_disputada": {
+  "id": "lim_causa_ia_disputada",
+  "nombre": "La causa atribuida a la IA es disputada (empresa vs. ex empleados y prensa)",
   "tipo": "limitacion"
  },
  "lim_ciclo_reaseguro": {
@@ -5959,9 +6134,24 @@
   "nombre": "Dominio de programación, no de diseño",
   "tipo": "limitacion"
  },
+ "lim_exencion_microempresas_eaa_servicios": {
+  "id": "lim_exencion_microempresas_eaa_servicios",
+  "nombre": "Exencion de microempresas en servicios (no en productos) bajo el EAA",
+  "tipo": "limitacion"
+ },
  "lim_interes_emisor": {
   "id": "lim_interes_emisor",
   "nombre": "Interés comercial del emisor en el resultado (vende la herramienta, el servicio o el framework)",
+  "tipo": "limitacion"
+ },
+ "lim_latencia_errores_generacion": {
+  "id": "lim_latencia_errores_generacion",
+  "nombre": "Generación lenta (1-2 min) y con errores ocasionales de código",
+  "tipo": "limitacion"
+ },
+ "lim_literatura_fragmentada_genui_nocode": {
+  "id": "lim_literatura_fragmentada_genui_nocode",
+  "nombre": "Literatura fragmentada: usabilidad y accesibilidad se estudian por separado, sin coherencia estetica ni estabilidad prompt-salida",
   "tipo": "limitacion"
  },
  "lim_muestra_conveniencia": {
@@ -5972,6 +6162,11 @@
  "lim_ndr_oculta_churn": {
   "id": "lim_ndr_oculta_churn",
   "nombre": "Una NDR >100% es compatible con churn masivo si quienes quedan gastan mucho más",
+  "tipo": "limitacion"
+ },
+ "lim_ndr_solo_clientes_mayores_10k": {
+  "id": "lim_ndr_solo_clientes_mayores_10k",
+  "nombre": "El NDR solo mide clientes de pago con más de US$10.000 de ARR",
   "tipo": "limitacion"
  },
  "lim_no_longitudinal": {
@@ -6024,6 +6219,11 @@
   "nombre": "Cohorte pequeña sin grupo control",
   "tipo": "limitacion"
  },
+ "lim_sin_interpretacion_causal": {
+  "id": "lim_sin_interpretacion_causal",
+  "nombre": "El informe describe datos y no interpreta su causa ni su futuro",
+  "tipo": "limitacion"
+ },
  "lim_sin_replica_independiente": {
   "id": "lim_sin_replica_independiente",
   "nombre": "Sin réplica independiente",
@@ -6037,6 +6237,11 @@
  "lim_testimonio_sin_muestra": {
   "id": "lim_testimonio_sin_muestra",
   "nombre": "Opinión o testimonio sin método ni muestra",
+  "tipo": "limitacion"
+ },
+ "lim_transicion_productos_eaa_2030": {
+  "id": "lim_transicion_productos_eaa_2030",
+  "nombre": "Periodo de transicion hasta 2030 para productos ya comercializados antes del 28-jun-2025",
   "tipo": "limitacion"
  },
  "lim_valor_diseno_no_demostrado": {
@@ -6179,6 +6384,11 @@
   "nombre": "Tácticas de manipulación emocional de apps de compañía al despedirse",
   "tipo": "intervencion"
  },
+ "marca_matriz_cuota_pequena": {
+  "id": "marca_matriz_cuota_pequena",
+  "nombre": "Marca matriz de menor cuota de mercado",
+  "tipo": "constructo"
+ },
  "marco_implementacion": {
   "id": "marco_implementacion",
   "nombre": "Marcos de evaluación de efectividad e implementación",
@@ -6188,6 +6398,11 @@
   "id": "marco_tcpa_en_disputa",
   "nombre": "Marco de consentimiento telefónico de EE.UU. en disputa judicial",
   "tipo": "limitacion"
+ },
+ "marco_ux_agentes_trabajo": {
+  "id": "marco_ux_agentes_trabajo",
+  "nombre": "Marco de ocho principios UX para interacción humano-agente en el trabajo (Paimann, Valarini y Juhl 2026)",
+  "tipo": "concepto"
  },
  "margen_base44": {
   "id": "margen_base44",
@@ -6264,6 +6479,11 @@
   "nombre": "Evaluación de usabilidad y ética de GUIs de IA generativa (Computers, MDPI 2025)",
   "tipo": "estudio"
  },
+ "mdpi_2026_slr_no_code": {
+  "id": "mdpi_2026_slr_no_code",
+  "nombre": "Revision sistematica MDPI 2026 sobre consistencia de interfaz en herramientas generativas no-code (20 estudios, 2021-2025)",
+  "tipo": "estudio"
+ },
  "medicamentos_glp1": {
   "id": "medicamentos_glp1",
   "nombre": "Medicamentos GLP-1 (pérdida de peso y diabetes)",
@@ -6272,6 +6492,11 @@
  "medicion_economia_diseno": {
   "id": "medicion_economia_diseno",
   "nombre": "Medición de la economía del diseño del Reino Unido (GVA y empleo)",
+  "tipo": "metrica"
+ },
+ "medidas_perceptuales_desempeno": {
+  "id": "medidas_perceptuales_desempeno",
+  "nombre": "Medidas perceptuales de desempeño (autorreporte)",
   "tipo": "metrica"
  },
  "medifund_singapur": {
@@ -6519,6 +6744,11 @@
   "nombre": "Miembros de aseguradora de salud comercial privada (EE.UU.)",
   "tipo": "poblacion"
  },
+ "miklian_katsos_2026": {
+  "id": "miklian_katsos_2026",
+  "nombre": "Miklian y Katsos 2026: 'That's AI Slop, You Bot!' (arXiv 2606.12073)",
+  "tipo": "estudio"
+ },
  "mind_gym": {
   "id": "mind_gym",
   "nombre": "Mind Gym plc (consultora de cambio conductual organizacional)",
@@ -6582,6 +6812,11 @@
  "modelo_farmacias_triage": {
   "id": "modelo_farmacias_triage",
   "nombre": "Modelo de triage con IA y farmacias (Perú)",
+  "tipo": "intervencion"
+ },
+ "modelo_gobernanza_especificaciones": {
+  "id": "modelo_gobernanza_especificaciones",
+  "nombre": "Modelo de Gobernanza de Especificaciones",
   "tipo": "intervencion"
  },
  "modelo_madurez_diseno_invision": {
@@ -7064,6 +7299,11 @@
   "nombre": "Paradoja de la fiabilidad (efectos robustos a nivel grupo, poco confiables para medir a cada persona)",
   "tipo": "limitacion"
  },
+ "paradoja_productividad_fiabilidad": {
+  "id": "paradoja_productividad_fiabilidad",
+  "nombre": "Paradoja productividad-fiabilidad (ganancia individual sin mejora a nivel sistema)",
+  "tipo": "resultado"
+ },
  "participacion_canal_agentes_vida": {
   "id": "participacion_canal_agentes_vida",
   "nombre": "Participación del canal de agentes en primas de vida",
@@ -7209,6 +7449,11 @@
   "nombre": "Generative UI personalizada (condicionada al perfil o a preferencias adaptativas)",
   "tipo": "intervencion"
  },
+ "personalizacion_juicios_pareados": {
+  "id": "personalizacion_juicios_pareados",
+  "nombre": "Personalización de UI generativa con pocos juicios pareados",
+  "tipo": "intervencion"
+ },
  "personalizacion_publicidad": {
   "id": "personalizacion_publicidad",
   "nombre": "Publicidad personalizada (frente a genérica)",
@@ -7338,6 +7583,11 @@
   "id": "podcast_ux_friends_93",
   "nombre": "Podcast UX Friends ep. 93: despidos, IA y ¿volverse generalista?",
   "tipo": "estudio"
+ },
+ "poder_adquisitivo_ocupaciones_creativas": {
+  "id": "poder_adquisitivo_ocupaciones_creativas",
+  "nombre": "Poder adquisitivo real de ocupaciones creativas (BLS, década)",
+  "tipo": "metrica"
  },
  "poder_explicativo_limitado_encarnada": {
   "id": "poder_explicativo_limitado_encarnada",
@@ -7509,6 +7759,11 @@
   "nombre": "Preferencia temporal pura (cuánto se valora lo inmediato frente a lo futuro)",
   "tipo": "constructo"
  },
+ "preferencia_usuarios_nuevos_genui": {
+  "id": "preferencia_usuarios_nuevos_genui",
+  "nombre": "Preferencia de usuarios nuevos por la UI personalizada (n=12)",
+  "tipo": "resultado"
+ },
  "pregunta_sugestiva": {
   "id": "pregunta_sugestiva",
   "nombre": "Pregunta con redacción sugestiva después de un evento",
@@ -7518,6 +7773,11 @@
   "id": "pregunta_vale_pena_seguro_vida",
   "nombre": "Pregunta recurrente '¿vale la pena un seguro de vida?' en foros en español",
   "tipo": "resultado"
+ },
+ "premios_ceo_2021": {
+  "id": "premios_ceo_2021",
+  "nombre": "Premios en acciones al CEO de 2021 (Market y Service Award)",
+  "tipo": "concepto"
  },
  "prensa_negocios_hispana": {
   "id": "prensa_negocios_hispana",
@@ -7584,6 +7844,11 @@
   "nombre": "Prima o pago que exige el programa",
   "tipo": "limitacion"
  },
+ "prima_por_poliza_root": {
+  "id": "prima_por_poliza_root",
+  "nombre": "Prima por póliza de Root (US$1.479 en el 2T26 vs. US$1.616 un año antes)",
+  "tipo": "metrica"
+ },
  "primas_cyber_marketing_corea": {
   "id": "primas_cyber_marketing_corea",
   "nombre": "Primas de vida del canal 100% online en Corea del Sur",
@@ -7633,6 +7898,11 @@
   "id": "priming_estereotipo_vejez",
   "nombre": "Activar palabras del estereotipo de vejez (p. ej., 'Florida', 'bingo')",
   "tipo": "intervencion"
+ },
+ "principio_control_humano": {
+  "id": "principio_control_humano",
+  "nombre": "Principio de control humano en agentes de IA (confirmar decisiones críticas)",
+  "tipo": "constructo"
  },
  "principios_gestalt": {
   "id": "principios_gestalt",
@@ -7747,6 +8017,11 @@
  "protocolo_orden_aleatorio": {
   "id": "protocolo_orden_aleatorio",
   "nombre": "Protocolo experimental de orden aleatorio (estímulos sin continuidad, poco natural)",
+  "tipo": "limitacion"
+ },
+ "protocolos_seguridad_obsoletos": {
+  "id": "protocolos_seguridad_obsoletos",
+  "nombre": "Protocolos de seguridad desactualizados para interfaces generativas",
   "tipo": "limitacion"
  },
  "prototipado_con_ia": {
@@ -7974,6 +8249,11 @@
   "nombre": "Desagrado recordado de un procedimiento",
   "tipo": "resultado"
  },
+ "recursos_insuficientes_equipos_ds": {
+  "id": "recursos_insuficientes_equipos_ds",
+  "nombre": "Recursos insuficientes en equipos de design system (61% con ≤5 personas; 23% con recursos adecuados)",
+  "tipo": "resultado"
+ },
  "redes_estrechas_niveles": {
   "id": "redes_estrechas_niveles",
   "nombre": "Redes de proveedores estrechas o por niveles (tiered)",
@@ -8094,6 +8374,11 @@
   "nombre": "Relevancia percibida del anuncio",
   "tipo": "constructo"
  },
+ "reliance_apropiada": {
+  "id": "reliance_apropiada",
+  "nombre": "Dependencia apropiada de la IA (reliance)",
+  "tipo": "constructo"
+ },
  "remedio_transparencia": {
   "id": "remedio_transparencia",
   "nombre": "Aviso de transparencia como remedio frente a patrones oscuros",
@@ -8159,6 +8444,11 @@
   "nombre": "Reproducción de estructuras de desigualdad por el diseño",
   "tipo": "resultado"
  },
+ "reservas_accenture_q3_fy26": {
+  "id": "reservas_accenture_q3_fy26",
+  "nombre": "Nuevas reservas de Accenture Q3 FY26 (US$19,32B, -2% en USD)",
+  "tipo": "metrica"
+ },
  "residencia_provincias": {
   "id": "residencia_provincias",
   "nombre": "Residir en provincias (fuera de Lima)",
@@ -8189,14 +8479,29 @@
   "nombre": "Resultado neto de Munich Re 2025 (~€6.100M; RoE 18,3%)",
   "tipo": "resultado"
  },
+ "resultado_neto_root_fy2025": {
+  "id": "resultado_neto_root_fy2025",
+  "nombre": "Resultado neto de Root FY2025 (~US$40,3M)",
+  "tipo": "metrica"
+ },
  "resultado_root_q1_2026": {
   "id": "resultado_root_q1_2026",
   "nombre": "Resultado de Root Q1 2026 (pérdida US$5,4M; primas brutas emitidas US$387M)",
   "tipo": "resultado"
  },
+ "resultado_root_q3_2025": {
+  "id": "resultado_root_q3_2025",
+  "nombre": "Resultado de Root Q3 2025 (pérdida neta ~US$5M)",
+  "tipo": "metrica"
+ },
  "resultados_design_thinking": {
   "id": "resultados_design_thinking",
   "nombre": "Resultados individuales y organizacionales de un proyecto de design thinking",
+  "tipo": "resultado"
+ },
+ "resultados_negocio_percibidos": {
+  "id": "resultados_negocio_percibidos",
+  "nombre": "Resultados de negocio atribuidos a la madurez de diseño (ahorro, ingresos, marca)",
   "tipo": "resultado"
  },
  "resumen_motor_busqueda": {
@@ -8243,6 +8548,11 @@
   "id": "retraccion_ariely_procrastinacion",
   "nombre": "Retracción del estudio de procrastinación de Ariely (2002) por signos de manipulación de datos",
   "tipo": "limitacion"
+ },
+ "reubicacion_expertos_en_producto": {
+  "id": "reubicacion_expertos_en_producto",
+  "nombre": "Reubicación de expertos de un equipo central dentro de las áreas de producto",
+  "tipo": "concepto"
  },
  "reutilizacion_toallas": {
   "id": "reutilizacion_toallas",
@@ -8298,6 +8608,11 @@
   "id": "revision_lancet_psicosis_ia",
   "nombre": "Revisión de Lancet Psychiatry sobre psicosis por IA (basada en ≈20 reportes de prensa)",
   "tipo": "estudio"
+ },
+ "revision_multivocal": {
+  "id": "revision_multivocal",
+  "nombre": "Revisión de literatura multivocal",
+  "tipo": "concepto"
  },
  "revision_rapida": {
   "id": "revision_rapida",
@@ -8413,6 +8728,11 @@
   "id": "s_frame",
   "nombre": "Enfoque estructural (s-frame)",
   "tipo": "concepto"
+ },
+ "salario_mediano_ux": {
+  "id": "salario_mediano_ux",
+  "nombre": "Salario mediano de profesionales de UX (US$120K en 2024)",
+  "tipo": "metrica"
  },
  "salarios_horas": {
   "id": "salarios_horas",
@@ -8544,6 +8864,11 @@
   "nombre": "Segmento público del seguro de salud en China (78,31% del mercado en 2025)",
   "tipo": "concepto"
  },
+ "segmentos_geograficos_accenture": {
+  "id": "segmentos_geograficos_accenture",
+  "nombre": "Segmentos reportables de Accenture por geografía (Americas, EMEA, Asia Pacífico)",
+  "tipo": "concepto"
+ },
  "seguidismo_comprometido": {
   "id": "seguidismo_comprometido",
   "nombre": "Seguidismo comprometido (engaged followership): identificarse con la meta colectiva de la autoridad",
@@ -8673,6 +8998,11 @@
   "id": "sesgo_conjunto_datos",
   "nombre": "Sesgo del conjunto de datos de entrenamiento (más ruido de decisión, equipreferencia)",
   "tipo": "limitacion"
+ },
+ "sesgo_estilistico_herramientas": {
+  "id": "sesgo_estilistico_herramientas",
+  "nombre": "Estilos por defecto propios de las herramientas generativas (no son traductoras neutrales)",
+  "tipo": "concepto"
  },
  "sesgo_favor_texto_llm": {
   "id": "sesgo_favor_texto_llm",
@@ -8959,6 +9289,11 @@
   "nombre": "Estudio Stetson, Fiesta y Eagleman 2007 (caída libre de 31 m)",
   "tipo": "estudio"
  },
+ "store_no_8_walmart": {
+  "id": "store_no_8_walmart",
+  "nombre": "Walmart Store No. 8 (laboratorio de innovación, cerrado en 2024)",
+  "tipo": "organizacion"
+ },
  "subsidio_parcial_aseguradora": {
   "id": "subsidio_parcial_aseguradora",
   "nombre": "Subsidio parcial de la aseguradora al bloque",
@@ -9049,6 +9384,11 @@
   "nombre": "Tamaño de la economía del diseño del Reino Unido",
   "tipo": "resultado"
  },
+ "tamano_equipo_diseno": {
+  "id": "tamano_equipo_diseno",
+  "nombre": "Tamaño del equipo de diseño",
+  "tipo": "concepto"
+ },
  "tamano_equipos_ux": {
   "id": "tamano_equipos_ux",
   "nombre": "Tamaño relativo de los equipos de UX",
@@ -9099,6 +9439,11 @@
   "nombre": "Tarea de laberinto con IA simulada (5 estudios)",
   "tipo": "concepto"
  },
+ "tareas_dificiles_de_verificar": {
+  "id": "tareas_dificiles_de_verificar",
+  "nombre": "Tareas donde la corrección de la IA no se puede verificar fácilmente",
+  "tipo": "limitacion"
+ },
  "tareas_sentimiento_lsat": {
   "id": "tareas_sentimiento_lsat",
   "nombre": "Tareas de sentimiento (reseñas) y LSAT (CHI 2021)",
@@ -9117,6 +9462,11 @@
  "tasa_exito_ab": {
   "id": "tasa_exito_ab",
   "nombre": "Proporción de pruebas A/B que ganan en su métrica principal",
+  "tipo": "metrica"
+ },
+ "tasa_preferencia_genui_sobre_markdown": {
+  "id": "tasa_preferencia_genui_sobre_markdown",
+  "nombre": "Tasa de preferencia por generative UI frente a markdown (83%)",
   "tipo": "metrica"
  },
  "tasa_replicacion_psicologia": {
@@ -9253,6 +9603,11 @@
   "id": "tiempo_analisis_siniestro",
   "nombre": "Tiempo de análisis de un siniestro",
   "tipo": "resultado"
+ },
+ "tiempo_aprendizaje_incluido": {
+  "id": "tiempo_aprendizaje_incluido",
+  "nombre": "Tiempo de aprendizaje del design system incluido en la medición",
+  "tipo": "limitacion"
  },
  "tiempo_decoherencia": {
   "id": "tiempo_decoherencia",
@@ -9414,6 +9769,11 @@
   "nombre": "Uso (take-up) de beneficios y seguros públicos",
   "tipo": "resultado"
  },
+ "uso_celular_manejo": {
+  "id": "uso_celular_manejo",
+  "nombre": "Uso del celular en la mano al conducir",
+  "tipo": "resultado"
+ },
  "uso_diario_chatbot": {
   "id": "uso_diario_chatbot",
   "nombre": "Intensidad de uso diario de un chatbot",
@@ -9423,6 +9783,11 @@
   "id": "uso_especialistas_hospitalizacion",
   "nombre": "Uso de especialistas y hospitalizaciones",
   "tipo": "resultado"
+ },
+ "uso_ia_en_design_systems": {
+  "id": "uso_ia_en_design_systems",
+  "nombre": "Uso de IA en el trabajo de design systems (56%; 15% dice cumplir la promesa)",
+  "tipo": "metrica"
  },
  "uso_ia_gen_entidades_reguladas": {
   "id": "uso_ia_gen_entidades_reguladas",
@@ -9487,6 +9852,11 @@
  "utilidad_niva_bupa_mar2026": {
   "id": "utilidad_niva_bupa_mar2026",
   "nombre": "Utilidad de Niva Bupa en el trimestre a marzo de 2026 (+67%)",
+  "tipo": "resultado"
+ },
+ "utilidad_no_gaap_figma_fy25": {
+  "id": "utilidad_no_gaap_figma_fy25",
+  "nombre": "Utilidad neta no-GAAP de Figma FY2025 (US$166,8M)",
   "tipo": "resultado"
  },
  "utilidad_rimac": {
@@ -9622,6 +9992,11 @@
  "variabilidad_respuestas": {
   "id": "variabilidad_respuestas",
   "nombre": "Variabilidad de las respuestas frente a la población humana",
+  "tipo": "resultado"
+ },
+ "variabilidad_tiempos_entrega": {
+  "id": "variabilidad_tiempos_entrega",
+  "nombre": "Variabilidad de los tiempos de entrega entre desarrolladores",
   "tipo": "resultado"
  },
  "variaciones_triviales_tarea": {
@@ -9802,6 +10177,11 @@
  "wocv_2026": {
   "id": "wocv_2026",
   "nombre": "World of Corporate Venturing 2026 (Global Corporate Venturing)",
+  "tipo": "estudio"
+ },
+ "workshop_chi2026_genui": {
+  "id": "workshop_chi2026_genui",
+  "nombre": "Workshop CHI 2026 'What does Generative UI mean for HCI Practice?' (Barcelona, 15-abr-2026)",
   "tipo": "estudio"
  },
  "xai_vs_solo_ia": {

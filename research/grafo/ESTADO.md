@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,762 líneas |
+| Nodes (`_nodes/`) | 20 | 8,763 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
 | Fuentes en el ledger | 976 | 🟢A 319 · 🔵B 171 · 🟡C 213 · 🟠D 217 · 🔴E 41 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 158 | recíprocas: 158 de 158 (100%) |
 | Fuentes citadas por ≥1 node | 870 de 976 | 89% del ledger; **106 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 111 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 976 de 976 fuentes (100%) | 2059 relaciones · 117 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 976 de 976 fuentes (100%) | 2149 relaciones · 118 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -22,7 +22,7 @@
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 9 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02, 2026-10-12) | cuántas veces se confrontó el node |
-| Tamaño | 2,194 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Tamaño | 2,195 líneas | crecimiento ≠ calidad; ver trazabilidad |
 | Fuentes citadas explícitamente | 373 | F-n individuales dentro del node |
 | …de rigor A/B | 186 (50%) | solidez de la base |
 | Hipótesis vivas | 36: abierta 16 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
@@ -106,7 +106,7 @@
 | 2026-10-08 | `686a858` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-11 | `614bf74` | 879 | 20 | 5 | 142 | 770 | 2033 | 16 | 20 | 22 |
-| 2026-10-12 | `1b07675` | 945 | 20 | 5 | 158 | 836 | 2153 | 16 | 20 | 22 |
+| 2026-10-12 | `00b560c` | 976 | 20 | 5 | 158 | 870 | 2194 | 16 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -137,7 +137,7 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2194 | 373 | 186 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
+| `tendencias-diseno-innovacion` | 2195 | 373 | 186 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
 | `convergencia-psicologia-economia-ia` | 251 | 119 | 51 | 12/12 | 2026-10-12 | 2026-10-12 v1.0 |
 | `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
@@ -151,7 +151,7 @@
 | `transicion-venta-fria-a-opt-in` | 326 | 18 | 7 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 256 | 17 | 11 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |
 | `material-visual-venta-consultiva` | 379 | 17 | 12 | 10/10 | 2026-10-12 | 2026-10-12 v1.1 |
-| `behavioral-design-estado-disciplina` | 323 | 12 | 11 | 9/9 | 2026-10-04 | 2026-10-12 v1.1 |
+| `behavioral-design-estado-disciplina` | 323 | 12 | 11 | 9/9 | 2026-10-12 | 2026-10-12 v1.1 |
 | `glosario-seguro-vida-peru` | 218 | 8 | 4 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 235 | 8 | 4 | 4/4 | 2026-10-12 | 2026-10-12 v1.0 |
 | `glosario-seguro-salud-peru` | 198 | 6 | 5 | 6/6 | 2026-10-11 | 2026-10-11 v1.0 |
