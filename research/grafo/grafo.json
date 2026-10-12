@@ -3,8 +3,8 @@
   {
    "id": "behavioral-design-estado-disciplina",
    "type": "node",
-   "lines": 320,
-   "cites": 9,
+   "lines": 323,
+   "cites": 12,
    "design": false
   },
   {
@@ -122,8 +122,8 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2153,
-   "cites": 336,
+   "lines": 2194,
+   "cites": 373,
    "design": true
   },
   {
@@ -3228,7 +3228,7 @@
    "titulo": "Enrollment In A Health Plan With A Tiered Provider Network Decreased Medical Spending By 5 Percent (Health Affairs)",
    "autor": "Sinaiko AD, Landrum MB, Chernew ME. Enrollment In A Health Plan With A Tiered Provider Network Decreased Medical Spending By 5 Percent. Health Affairs. 2017;36(5):870-875. DOI 10.1377/hlthaff.2016.1087 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Sinaiko, A.D.; Landrum, M.B.; Chernew, M.E.'",
    "anio": "2017",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-341",
@@ -3345,7 +3345,7 @@
    "titulo": "Vitality Impact Study",
    "autor": "Vitality Group; validación actuarial de Arbital Health",
    "anio": "2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-354",
@@ -3372,7 +3372,7 @@
    "titulo": "Healthcare NPS Benchmarks: 31 Scores + Industry Guide",
    "autor": "CustomerGauge",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-357",
@@ -8674,6 +8674,285 @@
    "autor": "Anderson, B.; Sutherland, E. (OCDE)",
    "anio": "2024",
    "huerfana": false
+  },
+  {
+   "id": "F-947",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The Effect of Behavioral Nudges via Mailed Letters on Subsidized Health Insurance Take-up in the United States (NBER Working Paper w30885)",
+   "autor": "Ericson, K. M.; Layton, T. J.; McIntyre, A.; Sacarny, A.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-948",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How effective are behavioral interventions to increase the take-up of social benefits? A systematic review of field experiments (Journal of ",
+   "autor": "Daigneault, P.-M.; Ouimet, M.; Fortier-Chouinard, A.; Nonki Tadida, E.; Baby-Bouchard, A.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-949",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Can Nudges Increase Take-Up of the EITC? Evidence from Multiple Field Experiments (AEJ: Economic Policy 14(4):432-452)",
+   "autor": "Linos, E.; Prohofsky, A.; Ramesh, A.; Rothstein, J.; Unrath, M.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-950",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Interventions to bolster benefits take-up: Assessing intensity, framing, and targeting of government outreach (PNAS, según la búsqueda; vers",
+   "autor": "Linos, E.; Lasky-Fink, J.; Dorie, V.; Rothstein, J.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-951",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Building State Capacity: Evidence from Biometric Smartcards in India (American Economic Review 106(10):2895-2929)",
+   "autor": "Muralidharan, K.; Niehaus, P.; Sukhtankar, S.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-952",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Human-centred design in global health: A scoping review of applications and contexts (PLoS ONE)",
+   "autor": "Bazzano, A. N. et al.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-953",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Narrative Review of Human-Centered Design in Public Health Interventions in Low- and Middle-Income Countries (Global Health: Science and Pra",
+   "autor": "Kang, et al.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-954",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Nudging for Tax Compliance: A Meta-Analysis (CESifo Working Paper 8500)",
+   "autor": "Antinyan, A.; Asatryan, Z.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-955",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The direct and indirect effects of messages on tax compliance: Experimental evidence from Peru (Journal of Economic Behavior & Organization ",
+   "autor": "Castro, E.; Velásquez, D.; Beltrán, A.; Yamada, G.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-956",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Leveraging behavioral insights to increase savings in low- and middle-income countries (Policy Bulletin)",
+   "autor": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-957",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Review of International and Private Sector Evidence on the Effectiveness of Digitising Services",
+   "autor": "RAND Europe (para el DWP del Reino Unido)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-958",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Public innovation labs around the world are closing, here's why",
+   "autor": "Apolitical",
+   "anio": "s.f. (relata cierres de 2018-2021)",
+   "huerfana": false
+  },
+  {
+   "id": "F-959",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "How Denmark lost its MindLab: the inside story",
+   "autor": "Apolitical",
+   "anio": "s.f. (cierre de 2018)",
+   "huerfana": false
+  },
+  {
+   "id": "F-960",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "12 fallacies of innovation labs",
+   "autor": "OECD OPSI (blog)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-961",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Lab is dead, long live lab: 10 years of LabGob and what's next",
+   "autor": "Rebolledo, N. (Creative Bureaucracy Festival)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-962",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Laboratorio de Gobierno cumple 10 años y lidera el Encuentro Iberoamericano de Innovación Pública 2025",
+   "autor": "Ministerio de Hacienda de Chile",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-963",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Is design dead?",
+   "autor": "Pragmatic Design (Substack)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-964",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "The role of service design in 2025",
+   "autor": "Tangerine (consultora)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-965",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "We need to talk about the GOV.UK redesign again",
+   "autor": "Design Week",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-966",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Government worked with Deloitte for delivery of GOV.UK app",
+   "autor": "Consultancy.uk",
+   "anio": "2025 (no confirmado)",
+   "huerfana": false
+  },
+  {
+   "id": "F-967",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "DSIT previews 'Humphrey' AI package for civil servants in £45bn productivity drive",
+   "autor": "Civil Service World",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-968",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Bad News For Nudges",
+   "autor": "The Behavioral Scientist",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-969",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "DPI: India's pipe dream for digital inclusion & sovereignty",
+   "autor": "SFLC.in",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-970",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Form 10-K, año fiscal 2025",
+   "autor": "Lemonade, Inc. (SEC)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-971",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Anuncio de resultados del año a junio de 2025",
+   "autor": "Discovery Limited (SENS, JSE)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-972",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Ping An Reports 2025 Performance on Positive Trends",
+   "autor": "Ping An Insurance",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-973",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "One Login expected to cost £305m – and deliver £1.75bn benefits",
+   "autor": "Civil Service World (cita a la Infrastructure and Projects Authority)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-974",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Capítulo sobre e-gobierno de Estonia",
+   "autor": "Oxford University Press (capítulo sobre el gobierno electrónico de Estonia)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-975",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Servicios públicos digitales y el reto de la equidad: hallazgos para Uruguay (y documentos sobre la digitalización de trámites en Chile)",
+   "autor": "BID (Banco Interamericano de Desarrollo)",
+   "anio": "varios años",
+   "huerfana": false
+  },
+  {
+   "id": "F-976",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "BIT joins Nesta as subsidiary",
+   "autor": "Research Live (con Nesta)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-977",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Rimac Seguros: IA reduce a un minuto el análisis de siniestros y agiliza la atención al cliente",
+   "autor": "Infomercado",
+   "anio": "2025",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -9957,6 +10236,11 @@
   },
   {
    "s": "fenomenos-psicologicos",
+   "t": "F-24",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-24",
    "k": "cita"
   },
@@ -11443,6 +11727,21 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-338",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-340",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-353",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-356",
    "k": "cita"
   },
   {
@@ -13801,6 +14100,11 @@
    "k": "cita"
   },
   {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-791",
+   "k": "cita"
+  },
+  {
    "s": "fenomeno-el-nino-impacto-personas",
    "t": "F-792",
    "k": "cita"
@@ -13827,6 +14131,11 @@
   },
   {
    "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-799",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "F-799",
    "k": "cita"
   },
@@ -14604,6 +14913,176 @@
    "s": "modelo-salud-ia-farmacias-peru",
    "t": "F-946",
    "k": "cita"
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "F-947",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-947",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-948",
+   "k": "cita"
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "F-949",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-949",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-950",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-951",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-952",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-953",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-954",
+   "k": "cita"
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "F-955",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-955",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-956",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-957",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-958",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-959",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-960",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-961",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-962",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-963",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-964",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-965",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-966",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-967",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-968",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-969",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-970",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-971",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-972",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-973",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-974",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-975",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-976",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-977",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -14895,15 +15374,15 @@
    },
    {
     "fecha": "2026-10-12",
-    "nuevas": 66,
-    "acumuladas": 945,
-    "AB": 30,
+    "nuevas": 97,
+    "acumuladas": 976,
+    "AB": 43,
     "rigor": {
-     "A": 13,
-     "B": 17,
-     "C": 22,
-     "D": 11,
-     "E": 3
+     "A": 20,
+     "B": 23,
+     "C": 26,
+     "D": 22,
+     "E": 6
     }
    }
   ],
@@ -17158,7 +17637,7 @@
      "cites": 336
     },
     "fecha": "2026-10-12",
-    "commit": "36ab54c",
+    "commit": "1b07675",
     "fuente": "git"
    }
   ],
@@ -17177,14 +17656,15 @@
     "🔴": 15,
     "⚔️": 4
    },
-   "iterations": 8,
-   "lines": 2153,
+   "iterations": 9,
+   "lines": 2194,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",
     "2026-08-02",
     "2026-08-02",
     "2026-10-02",
+    "2026-10-12",
     "2026-10-12",
     "2026-10-12",
     "2026-10-12"

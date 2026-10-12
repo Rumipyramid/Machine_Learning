@@ -1,0 +1,20 @@
+{
+ "fecha": "2026-10-12",
+ "f_ids": [
+  "F-947"
+ ],
+ "entidades": [],
+ "triples": [
+  {
+   "s": "recordatorio_generico",
+   "p": "aumenta",
+   "o": "uso_beneficios_sociales",
+   "f": "F-947",
+   "apoyo": "El recordatorio genérico subió la inscripción 4,5%, menos que la carta simplificada (11%).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Completa el lote 117: relación del recordatorio genérico (F-947)."
+}

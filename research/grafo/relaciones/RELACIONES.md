@@ -8,32 +8,32 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **945 de 945** (100.0%) |
-| …del cerebro de diseño (citadas en el node) | 336 de 336 |
-| …por rigor | A 312/312 · B 165/165 · C 209/209 · D 206/206 · E 38/38 |
-| Barridos | 115 |
-| Entidades | 1929 |
-| Relaciones | 2024 |
-| Nivel de lectura | ficha 1205 · abstract 810 · completa 9 |
-| Fuerza de las afirmaciones | descriptiva 1181 · teorica 294 · observacional 278 · causal 271 |
+| Fuentes procesadas | **976 de 976** (100.0%) |
+| …del cerebro de diseño (citadas en el node) | 373 de 373 |
+| …por rigor | A 319/319 · B 171/171 · C 213/213 · D 217/217 · E 41/41 |
+| Barridos | 117 |
+| Entidades | 1964 |
+| Relaciones | 2059 |
+| Nivel de lectura | ficha 1205 · abstract 845 · completa 9 |
+| Fuerza de las afirmaciones | descriptiva 1200 · teorica 298 · causal 282 · observacional 279 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `tiene_limite` | metodo | 429 |
-| `aumenta` | efecto | 256 |
+| `tiene_limite` | metodo | 441 |
+| `aumenta` | efecto | 265 |
 | `aplica_a` | estructura | 232 |
-| `asocia_con` | efecto | 172 |
-| `reduce` | efecto | 160 |
+| `asocia_con` | efecto | 178 |
+| `reduce` | efecto | 161 |
 | `respalda` | evidencia | 146 |
 | `es_tipo_de` | estructura | 121 |
+| `parte_de` | estructura | 99 |
 | `refuta` | evidencia | 98 |
-| `parte_de` | estructura | 97 |
-| `origina_en` | metodo | 95 |
-| `mide` | metodo | 80 |
-| `contradice` | evidencia | 64 |
-| `modera` | efecto | 53 |
+| `origina_en` | metodo | 96 |
+| `mide` | metodo | 82 |
+| `contradice` | evidencia | 65 |
+| `modera` | efecto | 54 |
 | `media` | efecto | 21 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -61,6 +61,7 @@
 | Sesgo de publicación | F-16, F-17, F-21, F-435, F-680, F-701, F-712, F-736 |
 | Gasto en atención de salud | F-88, F-98, F-110, F-202, F-329, F-339, F-340, F-352 |
 | Regulación de consentimiento previo para el contacto comercial (no llamar / opt-in) | F-68, F-70, F-72, F-73, F-117, F-131, F-132, F-140 |
+| Lemonade Inc. (insurtech cotizada) | F-29, F-31, F-168, F-233, F-361, F-450, F-510, F-970 |
 | Cifra autorreportada por la empresa o su proveedor, no auditada independientemente | F-332, F-350, F-351, F-354, F-371, F-373, F-905, F-907 |
 | Prototipado con IA ('vibe coding') | F-892, F-894, F-895, F-897, F-898, F-899, F-904, F-906 |
 | Sobre-confianza en la IA | F-60, F-244, F-245, F-246, F-502, F-520, F-886 |
@@ -68,7 +69,6 @@
 | Cambio de actitud de las personas | F-489, F-490, F-494, F-499, F-542, F-662, F-663 |
 | Selección adversa (selección de riesgos) | F-82, F-91, F-92, F-96, F-103, F-162, F-207 |
 | Intermediarios de seguros independientes (brokers y agentes) | F-137, F-180, F-190, F-359, F-364, F-370, F-375 |
-| Lemonade Inc. (insurtech cotizada) | F-29, F-31, F-168, F-233, F-361, F-450, F-510 |
 | Consumidores y usuarios de seguros en Perú | F-1, F-5, F-11, F-12, F-117, F-173, F-235 |
 | Obediencia a órdenes dañinas (llegar a la descarga máxima) | F-650, F-651, F-652, F-653, F-654, F-655, F-656 |
 | Decoherencia cuántica en el cerebro caliente y húmedo | F-808, F-809, F-816, F-826, F-834, F-844, F-846 |
@@ -106,6 +106,7 @@
 | Herramientas de IA en la investigación científica | F-27, F-555, F-562, F-590, F-591 |
 | Visitas a urgencias (ED) | F-108, F-330, F-332, F-342, F-354 |
 | Ley 29733 de Protección de Datos Personales (Perú) | F-67, F-68, F-74, F-76, F-77 |
+| Net Promoter Score (NPS) del cliente de seguros | F-81, F-183, F-351, F-356, F-977 |
 | Microtúbulos neuronales (citoesqueleto de tubulina) | F-803, F-807, F-810, F-814, F-844 |
 | Cifra sin muestra ni método publicado (no verificable de forma independiente) | F-126, F-139, F-146, F-177, F-179 |
 | El canal digital/directo desplaza al canal de agentes en la venta de seguros | F-136, F-182, F-185, F-186, F-190 |
@@ -114,6 +115,7 @@
 | Cifra o URL primaria no verificada (citada desde una fuente secundaria) | F-360, F-361, F-362, F-363, F-369 |
 | Cadena de eco de cita (una cifra reciclada sin medición ni fuente primaria verificable) | F-397, F-404, F-438, F-439, F-440 |
 | Sin revisión por pares (preprint, blog, libro o venue no arbitrado) | F-399, F-402, F-435, F-440, F-443 |
+| Cierre de labs de innovación corporativos (Walmart Store No. 8, IKEA SPACE10, General Mills G-Works, GM Arizona) | F-457, F-463, F-958, F-960, F-962 |
 | Capital de riesgo invertido en investigación sintética | F-617, F-619, F-620, F-621, F-622 |
 | Design thinking | F-239, F-240, F-393, F-524 |
 | Ingresos de Figma Q2 2026 (+48%) | F-303, F-420, F-469, F-527 |
@@ -122,6 +124,7 @@
 | Usabilidad funcional (heurísticas de soporte: ayuda, recuperación de errores) | F-255, F-256, F-272, F-382 |
 | La consistencia y la predictibilidad son valores centrales de HCI y generative UI los rompe | F-260, F-383, F-384, F-385 |
 | Margen de suscripción de la industria de salud de EE.UU. | F-193, F-195, F-197, F-480 |
+| Nudges a escala (nudge units) | F-21, F-26, F-968, F-976 |
 | Adopción de la telemedicina en Perú | F-40, F-41, F-48, F-52 |
 | Aversión a la pérdida (la función de valor es más empinada para pérdidas) | F-221, F-578, F-724, F-727 |
 | Carga cognitiva sobre la memoria de trabajo | F-228, F-513, F-668, F-682 |
@@ -133,7 +136,6 @@
 | KPI de innovación: % de ventas de productos nuevos | F-454, F-529, F-531, F-532 |
 | Programa Vitality de Discovery (incentivos por conducta saludable) | F-25, F-99, F-637, F-638 |
 | Mejoras de accesibilidad web/digital | F-264, F-512, F-523, F-896 |
-| Net Promoter Score (NPS) del cliente de seguros | F-81, F-183, F-351, F-356 |
 | Rediseño Liquid Glass de iOS 26 | F-272, F-289, F-290, F-292 |
 | Percepción del estado del campo del diseño | F-280, F-281, F-296, F-301 |
 | Ingreso y consumo del hogar | F-746, F-752, F-753, F-778 |
@@ -150,6 +152,7 @@
 | Design system (sistema de diseño compartido, p. ej. IBM Carbon) | F-269, F-270, F-396, F-425 |
 | La conducta es local y el discurso es importado: LatAm/España consumen el marco interpretativo traducido del inglés (H20) | F-390, F-409, F-410, F-416 |
 | Compresión del rol de diseño hacia el generalista apoyada en IA | F-391, F-416, F-899, F-909 |
+| Service design (diseño de servicios) | F-393, F-394, F-395, F-964 |
 | Cifra o contenido no verificado contra el informe o documento primario | F-396, F-413, F-417, F-427 |
 | Eco de cita: varias vitrinas repiten una misma fuente | F-458, F-528, F-535, F-541 |
 | Startups de investigación sintética (encuestados y gemelos con IA) | F-617, F-619, F-621, F-622 |
@@ -162,6 +165,8 @@
 | Sanciones regulatorias a productos de salud con etiqueta 'cuántica' | F-871, F-872, F-873, F-874 |
 | Usuarios activos diarios (DAU) | F-928, F-929, F-930, F-931 |
 | IA generativa | F-936, F-937, F-939, F-944 |
+| Uso (take-up) de beneficios y seguros públicos | F-947, F-948, F-949, F-950 |
+| Proyección, no medición ex post | F-957, F-967, F-973, F-974 |
 | Relación innovación → desempeño | F-238, F-439, F-525 |
 | Éxito de proyectos de innovación | F-239, F-441, F-461 |
 | Explicabilidad de la IA (explicaciones) | F-242, F-244, F-246 |
@@ -253,6 +258,7 @@
 | Acciones de la Bolsa de Valores de Lima (BVL) | F-213, F-214, F-215 |
 | Glosario del Playbook de venta de seguros de vida | F-233, F-234, F-235 |
 | Eco de cita: varias fuentes que remontan a un mismo origen (no son confirmaciones independientes) | F-234, F-268, F-287 |
+| Diseño centrado en el humano (human-centered design) | F-274, F-952, F-953 |
 | Diseño ontológico: el diseño fabrica el mundo (world-making) | F-275, F-276, F-278 |
 | Profesionales de UX | F-281, F-313, F-400 |
 | Movimiento anti-slop en diseño (rechazo al contenido genérico hecho con IA) | F-286, F-287, F-288 |
@@ -271,7 +277,6 @@
 | Adopción de IA entre diseñadores | F-389, F-410, F-522 |
 | Medios y comunidades de diseño hispanohablantes | F-390, F-413, F-418 |
 | El silencio del service design es señal de madurez, no de irrelevancia (H18) | F-393, F-394, F-395 |
-| Service design (diseño de servicios) | F-393, F-394, F-395 |
 | Opinión o testimonio sin método ni muestra | F-393, F-413, F-414 |
 | Dato sobre base o estudio propietario no auditable | F-411, F-439, F-440 |
 | Labs de innovación corporativos | F-457, F-460, F-468 |
@@ -297,6 +302,7 @@
 | Velocidad y calificación de la atención al cliente | F-888, F-889, F-890 |
 | Intención de compra | F-519, F-910, F-912 |
 | Rachas (streaks) de Duolingo | F-927, F-929, F-930 |
+| Laboratorios de innovación pública | F-959, F-960, F-961 |
 | Firmas públicas de EE.UU. (n=1.659, 1980-2015) | F-237, F-238 |
 | Susceptibilidad a dark patterns | F-241, F-251 |
 | Menor educación → mayor susceptibilidad a patterns leves | F-241, F-251 |
@@ -343,7 +349,7 @@
 | Comprensión del plan de salud | F-6, F-7 |
 | Divulgación clara y saliente de un producto financiero | F-9, F-10 |
 | Los mandatos de 'explicar mejor' fracasan sistemáticamente | F-9, F-10 |
-| Nudges a escala (nudge units) | F-21, F-26 |
+| Efecto de nudges a escala (~1,4 pp) | F-21, F-968 |
 | Diseño híbrido efectividad-implementación tipo 2 | F-54, F-55 |
 | Silent trial / modo sombra | F-56, F-57 |
 | Proyecto de Ley 08488/2024-CR (farmacias en el sistema nacional de salud) | F-47, F-508 |
@@ -407,6 +413,7 @@
 | Direccionar pacientes a proveedores de menor precio (steering) | F-332, F-352 |
 | Experimentos fraudulentos que sustentaban 'firmar primero' (paper de 2012) | F-24, F-615 |
 | Utilidad, facilidad de uso y seguridad web percibidas del canal online | F-191, F-192 |
+| Programa de bienestar Vitality para empleadores (EE.UU.) | F-353, F-971 |
 | Distribución de seguros en América Latina (canales) | F-375, F-379 |
 | Desarrollo favorable de siniestros de periodos previos en Lemonade (7 pp en el 2T 2026) | F-509, F-636 |
 | Seguro embebido (embedded insurance) | F-28, F-165 |
@@ -430,6 +437,7 @@
 | Design Value Index de DMI (portafolio de 16 empresas design-centric vs. S&P 500) | F-267, F-453 |
 | Homogeneización del producto creativo entre usuarios | F-296, F-517 |
 | Índice de Diseño de McKinsey (MDI) | F-266, F-273 |
+| Recorte de 32% de la plantilla de IDEO y cierre de oficinas (2023) | F-317, F-963 |
 | Recortes de empleo atribuidos a la IA por los empleadores | F-283, F-392 |
 | Lanzamiento de Claude Design (17-abr-2026) | F-318, F-319 |
 | Conversaciones para levantar US$300M a US$13.200M (jul-2026) | F-320, F-426 |
@@ -573,7 +581,6 @@
 | Cifra autorreportada por la empresa, sin filing que la audite | F-422, F-426 |
 | El ROI del diseño se cita por rotación: una cifra desmontada se sustituye por otra (H22) | F-423, F-425 |
 | El insurtech de consumo con IA en suscripción es rentable (tesis única) | F-450, F-451 |
-| Cierre de labs de innovación corporativos (Walmart Store No. 8, IKEA SPACE10, General Mills G-Works, GM Arizona) | F-457, F-463 |
 | Meta de BCP: 10% de nuevos ingresos de innovación disruptiva | F-460, F-529 |
 | Fecha mal atribuida a un evento o meta (falsa señal de tendencia) | F-460, F-467 |
 | Las cifras anglosajonas se importan al español sin su fuente ni descuento (H20) | F-464, F-528 |
@@ -595,6 +602,7 @@
 | McKinsey & Company | F-630, F-921 |
 | Asistente financiero conversacional con IA | F-639, F-640 |
 | Prevalencia de agentes de IA entre participantes de encuestas online | F-643, F-644 |
+| IA de Rímac para analizar siniestros vehiculares | F-645, F-977 |
 | Titular inflado: afirma más de lo que el estudio mide | F-840, F-841 |
 | Audiencia de prensa en español de Latinoamérica | F-842, F-856 |
 | Desmentido público (científicos, autoridades o usuarios en redes) | F-843, F-854 |
@@ -631,6 +639,15 @@
 | Productividad por tarea con IA generativa | F-936, F-938 |
 | Crecimiento de la productividad laboral agregada (G7) | F-937, F-938 |
 | Riesgos para el consumidor financiero: sesgo, alucinaciones, influencia comercial, privacidad, exclusión | F-941, F-944 |
+| Contacto de bajo costo (cartas, mensajes) | F-949, F-950 |
+| Evaluación de resultados del diseño | F-952, F-953 |
+| Cumplimiento tributario (pago de impuestos) | F-954, F-955 |
+| Ahorro por digitalizar servicios públicos | F-957, F-975 |
+| Cambio político y patrocinio estrecho | F-958, F-959 |
+| Laboratorio de Gobierno de Chile | F-961, F-962 |
+| El diseño (como oficio) murió | F-963, F-964 |
+| Polémica por costos de GOV.UK (cambio de marca y app) | F-965, F-966 |
+| GOV.UK (servicios digitales del gobierno británico) | F-965, F-966 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -1120,6 +1137,9 @@
 - **Réplica con alta potencia del efecto de botones redondeados (Kohavi et al., 2025)** —refuta→ **Redondear los botones sube 55% los clics** (F-919, causal) · **estado: refutacion_directa**
   - Tres A/B con ~2.000 veces más usuarios hallaron un efecto ~100 veces menor, con intervalo que incluye cero.
   - *Resolución (2026-10-12):* Réplica con potencia ~2.000 veces mayor (Kohavi et al., preprint 2025): efecto ~100 veces menor y compatible con cero frente al +55% original (n=919 visitas). Juicio sobre el resumen.
+- **Laboratorio de Gobierno de Chile** —contradice→ **Cierre de labs de innovación corporativos (Walmart Store No. 8, IKEA SPACE10, General Mills G-Works, GM Arizona)** (F-962, descriptiva) · **estado: alcance_distinto**
+  - LabGob sigue activo a los 10 años y reúne a 12 países: contraejemplo a la ola de cierres.
+  - *Resolución (2026-10-12):* Los cierres citados (MindLab, Lab CDMX, MinTIC) son de 2018-2021 y de otros países; LabGob Chile sigue activo en 2025. No hay ola de cierres actual demostrada: son casos distintos, no una refutación. Juicio sobre notas institucionales y prensa.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -1424,7 +1444,7 @@
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
 - ✅ **F-183** (2026-10-04, cerrada): Año 's.f.': publicado el 25-oct-2023.
   - *Resolución:* Cerrada: datos bibliográficos corregidos en el ledger el 2026-10-04 (regla permanente).
-- ⚠️ **F-519** (2026-10-12, abierta): Lectura a fondo del resumen (2026-10-12): la ruta por intrusividad percibida NO fue significativa (la ficha dice que es 'menor'); el efecto global es pequeño (d≈0,16, vía resumen de la ARF); incluye intenciones conductuales además de actitudes; no mide conversión observada. Corregir el hallazgo de la ficha requiere autorización del usuario.
+- ✅ **F-519** (2026-10-12, cerrada): Lectura a fondo del resumen (2026-10-12): la ruta por intrusividad percibida NO fue significativa (la ficha dice que es 'menor'); el efecto global es pequeño (d≈0,16, vía resumen de la ARF); incluye intenciones conductuales además de actitudes; no mide conversión observada. Corregir el hallazgo de la ficha requiere autorización del usuario.
 
 ## 7. Registro de barridos
 
@@ -1545,6 +1565,8 @@
 | 2026-10-12 | F-520, F-881, F-882, F-883, F-884, F-885, F-886, F-887, F-888, F-889, F-890, F-891, F-892, F-893, F-894, F-895, F-896, F-897, F-898, F-899, F-900, F-901, F-902, F-903, F-904, F-905, F-906, F-907, F-908, F-909 | 36 | – | Iteración 6 del nodo de diseño (/trinidad 2026-10-12): diseño de producto digital y de servicios. Leído vía resúmenes (lectura 'abstract'). Incluye la lectura a fondo del resumen oficial de F-520. |
 | 2026-10-12 | F-910, F-911, F-912, F-913, F-914, F-915, F-916, F-917, F-918, F-919, F-920, F-921, F-922, F-923, F-924, F-925, F-926, F-927, F-928, F-929, F-930, F-931, F-932, F-933, F-934, F-935, F-519, F-21 | 28 | – | Iteración 7 del nodo de diseño (/trinidad 2026-10-12): ¿qué tendencia de diseño tiene efecto medido en conversión o retención? Leído vía resúmenes (lectura 'abstract'). F-21 se usa como fuente de un l |
 | 2026-10-12 | F-936, F-937, F-938, F-939, F-940, F-941, F-942, F-943, F-944, F-945, F-946 | 14 | – | Serie OECD Artificial Intelligence Papers (pedido del usuario, 2026-10-12). Leído vía resúmenes y blog oficial (lectura 'abstract'); la página de la serie no abre desde el entorno. |
+| 2026-10-12 | F-947, F-948, F-949, F-950, F-951, F-952, F-953, F-954, F-955, F-956, F-957, F-958, F-959, F-960, F-961, F-962, F-963, F-964, F-965, F-966, F-967, F-968, F-969, F-970, F-971, F-972, F-973, F-974, F-975, F-976, F-977 | 34 | – | Iteración 9 del nodo de diseño (/trinidad 2026-10-12): diseño de servicios, políticas públicas y salud. Leído vía resúmenes (lectura 'abstract'). |
+| 2026-10-12 | F-947 | 1 | – | Completa el lote 117: relación del recordatorio genérico (F-947). |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

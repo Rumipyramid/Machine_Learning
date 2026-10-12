@@ -1936,6 +1936,54 @@
    "triples": 14,
    "sin_aporte": [],
    "notas": "Serie OECD Artificial Intelligence Papers (pedido del usuario, 2026-10-12). Leído vía resúmenes y blog oficial (lectura 'abstract'); la página de la serie no abre desde el entorno."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f_ids": [
+    "F-947",
+    "F-948",
+    "F-949",
+    "F-950",
+    "F-951",
+    "F-952",
+    "F-953",
+    "F-954",
+    "F-955",
+    "F-956",
+    "F-957",
+    "F-958",
+    "F-959",
+    "F-960",
+    "F-961",
+    "F-962",
+    "F-963",
+    "F-964",
+    "F-965",
+    "F-966",
+    "F-967",
+    "F-968",
+    "F-969",
+    "F-970",
+    "F-971",
+    "F-972",
+    "F-973",
+    "F-974",
+    "F-975",
+    "F-976",
+    "F-977"
+   ],
+   "triples": 34,
+   "sin_aporte": [],
+   "notas": "Iteración 9 del nodo de diseño (/trinidad 2026-10-12): diseño de servicios, políticas públicas y salud. Leído vía resúmenes (lectura 'abstract')."
+  },
+  {
+   "fecha": "2026-10-12",
+   "f_ids": [
+    "F-947"
+   ],
+   "triples": 1,
+   "sin_aporte": [],
+   "notas": "Completa el lote 117: relación del recordatorio genérico (F-947)."
   }
  ],
  "discrepancias": [
@@ -3920,6 +3968,12 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-12",
    "nota": "Réplica con potencia ~2.000 veces mayor (Kohavi et al., preprint 2025): efecto ~100 veces menor y compatible con cero frente al +55% original (n=919 visitas). Juicio sobre el resumen."
+  },
+  {
+   "triple": "T-2042",
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-12",
+   "nota": "Los cierres citados (MindLab, Lab CDMX, MinTIC) son de 2018-2021 y de otros países; LabGob Chile sigue activo en 2025. No hay ola de cierres actual demostrada: son casos distintos, no una refutación. Juicio sobre notas institucionales y prensa."
   }
  ]
 }

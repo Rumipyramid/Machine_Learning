@@ -1,7 +1,7 @@
 # Behavioral design: estado de la disciplina y del mercado
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-10-04 · Versión: v1.1
+> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-10-12 · Versión: v1.1
 > (migrado desde `research/behavioral_design_360.md` a Many Brains, sin cambios de fondo)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta: **¿cómo le va al behavioral design como disciplina y mercado, y qué se
@@ -169,6 +169,9 @@ siga vendiendo "el nudge universal" está una década atrás.
 | arXiv LLM sim., 2025 | Preprint | — | ⚠️ sin peer review | 🟡 Medio |
 
 ---
+
+### Actualización 2026-10-12: simplificar trámites en el sector público
+Nueva evidencia sobre intervenciones públicas (detalle en el nodo de diseño e innovación, §17). Simplificar una carta subió 11% la inscripción en un seguro de salud subsidiado en EE.UU., más que cualquier recordatorio (F-947). En cambio, seis experimentos con cartas para cobrar un crédito tributario no tuvieron efecto (F-949). En Lima, un experimento con cartas de impuesto predial encontró que el recordatorio simple y la norma social aumentaron el pago (F-955). La lección para seguros: simplificar la comunicación es lo más probado, pero no vence el freno del precio.
 
 ## 📱 Pista social/mediática (gossiper)
 

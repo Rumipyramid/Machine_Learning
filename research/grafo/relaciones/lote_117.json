@@ -1,0 +1,523 @@
+{
+ "fecha": "2026-10-12",
+ "f_ids": [
+  "F-947",
+  "F-948",
+  "F-949",
+  "F-950",
+  "F-951",
+  "F-952",
+  "F-953",
+  "F-954",
+  "F-955",
+  "F-956",
+  "F-957",
+  "F-958",
+  "F-959",
+  "F-960",
+  "F-961",
+  "F-962",
+  "F-963",
+  "F-964",
+  "F-965",
+  "F-966",
+  "F-967",
+  "F-968",
+  "F-969",
+  "F-970",
+  "F-971",
+  "F-972",
+  "F-973",
+  "F-974",
+  "F-975",
+  "F-976",
+  "F-977"
+ ],
+ "entidades": [
+  {
+   "id": "simplificacion_tramite",
+   "nombre": "Simplificar la comunicación o el trámite (carta, formulario)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "recordatorio_generico",
+   "nombre": "Recordatorio genérico",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "uso_beneficios_sociales",
+   "nombre": "Uso (take-up) de beneficios y seguros públicos",
+   "tipo": "resultado"
+  },
+  {
+   "id": "prima_a_pagar",
+   "nombre": "Prima o pago que exige el programa",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "contacto_bajo_costo",
+   "nombre": "Contacto de bajo costo (cartas, mensajes)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "asistencia_personal_tramite",
+   "nombre": "Asistencia personal para hacer el trámite",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "cumplimiento_tributario",
+   "nombre": "Cumplimiento tributario (pago de impuestos)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "mensaje_norma_social",
+   "nombre": "Mensaje de norma social",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "mensaje_moral_tributaria",
+   "nombre": "Mensaje de moral tributaria",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "mensaje_disuasion",
+   "nombre": "Mensaje de disuasión (sanción)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "pago_biometrico",
+   "nombre": "Pagos públicos con tarjeta biométrica",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "calidad_entrega_programas",
+   "nombre": "Rapidez y transparencia en la entrega de programas públicos",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ahorro_digitalizacion_publica",
+   "nombre": "Ahorro por digitalizar servicios públicos",
+   "tipo": "metrica"
+  },
+  {
+   "id": "ahorro_compromiso",
+   "nombre": "Productos de ahorro con compromiso",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "metas_ahorro",
+   "nombre": "Cumplimiento de metas de ahorro",
+   "tipo": "resultado"
+  },
+  {
+   "id": "evaluacion_resultados_diseno",
+   "nombre": "Evaluación de resultados del diseño",
+   "tipo": "metrica"
+  },
+  {
+   "id": "labs_innovacion_publica",
+   "nombre": "Laboratorios de innovación pública",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "cambio_politico",
+   "nombre": "Cambio político y patrocinio estrecho",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "labgob_chile",
+   "nombre": "Laboratorio de Gobierno de Chile",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "gov_uk",
+   "nombre": "GOV.UK (servicios digitales del gobierno británico)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "costo_gov_uk_polemica",
+   "nombre": "Polémica por costos de GOV.UK (cambio de marca y app)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_ia_ahorro_estado_uk",
+   "nombre": "La IA ahorraría £45.000 millones al año al Estado británico",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "infraestructura_publica_digital_india",
+   "nombre": "Infraestructura pública digital de India (Aadhaar)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "exclusion_inscripcion",
+   "nombre": "Exclusión de personas vulnerables al inscribirse",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_diseno_murio",
+   "nombre": "El diseño (como oficio) murió",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "automatizacion_siniestros",
+   "nombre": "Automatización del aviso y la resolución de siniestros",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "utilidad_vitality",
+   "nombre": "Utilidad operativa de Vitality (Discovery)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "portal_servicio_ia_ping_an",
+   "nombre": "Portal de servicio con IA de Ping An",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "costo_adquisicion_clientes",
+   "nombre": "Costo de adquirir clientes",
+   "tipo": "metrica"
+  },
+  {
+   "id": "c_identidad_digital_uk_beneficio",
+   "nombre": "El sistema de identidad digital del Reino Unido dará beneficios seis veces su costo",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_estonia_ahorra_2_pib",
+   "nombre": "La infraestructura digital de Estonia ahorra ~2% del PIB",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "brecha_uso_digital_educacion",
+   "nombre": "Brecha de uso de servicios digitales por nivel educativo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "behavioural_insights_team",
+   "nombre": "Behavioural Insights Team (BIT)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "rimac_seguros",
+   "nombre": "Rimac Seguros",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "lim_proyeccion_no_medicion",
+   "nombre": "Proyección, no medición ex post",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "simplificacion_tramite",
+   "p": "aumenta",
+   "o": "uso_beneficios_sociales",
+   "f": "F-947",
+   "apoyo": "Carta simplificada: +11% de inscripción en seguro de salud subsidiado (~43.000 hogares).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "prima_a_pagar",
+   "p": "modera",
+   "o": "uso_beneficios_sociales",
+   "f": "F-947",
+   "apoyo": "El efecto fue mayor (+6,1 puntos) cuando el plan no tenía prima.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "asistencia_personal_tramite",
+   "p": "aumenta",
+   "o": "uso_beneficios_sociales",
+   "f": "F-948",
+   "apoyo": "Revisión de 35 experimentos: información bien enmarcada y asistencia personal suben el uso de beneficios.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "contacto_bajo_costo",
+   "p": "tiene_limite",
+   "o": "uso_beneficios_sociales",
+   "f": "F-949",
+   "apoyo": "Seis experimentos con cartas sin efecto detectable en cobrar el crédito tributario.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "contacto_bajo_costo",
+   "p": "asocia_con",
+   "o": "uso_beneficios_sociales",
+   "f": "F-950",
+   "apoyo": "Intensidad, enmarcado y focalización importan; efectos mayores en hogares vulnerables (543.000 hogares).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "pago_biometrico",
+   "p": "aumenta",
+   "o": "calidad_entrega_programas",
+   "f": "F-951",
+   "apoyo": "Pagos más rápidos y con menos corrupción sin quitar acceso (157 subdistritos).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "diseno_centrado_humano",
+   "p": "tiene_limite",
+   "o": "evaluacion_resultados_diseno",
+   "f": "F-952",
+   "apoyo": "Revisión de alcance: vacíos de documentación y evaluación del HCD en salud pública.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "diseno_centrado_humano",
+   "p": "tiene_limite",
+   "o": "evaluacion_resultados_diseno",
+   "f": "F-953",
+   "apoyo": "Revisión 2025: falta medir resultados de diseño y de salud en países de ingreso bajo y medio.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "mensaje_disuasion",
+   "p": "aumenta",
+   "o": "cumplimiento_tributario",
+   "f": "F-954",
+   "apoyo": "Metaanálisis: la disuasión suma 1,5 a 2,5 puntos; la moral tributaria no funciona en promedio.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "mensaje_moral_tributaria",
+   "p": "tiene_limite",
+   "o": "cumplimiento_tributario",
+   "f": "F-954",
+   "apoyo": "Los mensajes de moral tributaria son ineficaces en promedio.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "mensaje_norma_social",
+   "p": "aumenta",
+   "o": "cumplimiento_tributario",
+   "f": "F-955",
+   "apoyo": "Lima: el recordatorio simple y la norma social aumentaron el pago del impuesto predial (10.228 contribuyentes).",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ahorro_compromiso",
+   "p": "aumenta",
+   "o": "metas_ahorro",
+   "f": "F-956",
+   "apoyo": "12 evaluaciones aleatorias: los productos de compromiso ayudan a cumplir metas de ahorro.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "ahorro_digitalizacion_publica",
+   "p": "tiene_limite",
+   "o": "lim_proyeccion_no_medicion",
+   "f": "F-957",
+   "apoyo": "Es difícil estimar con precisión costos y ahorros de digitalizar servicios públicos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cambio_politico",
+   "p": "aumenta",
+   "o": "cierre_labs_innovacion",
+   "f": "F-958",
+   "apoyo": "Cierres de MindLab, Lab CDMX y MinTIC atribuidos a cambio político y patrocinio estrecho.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "cambio_politico",
+   "p": "asocia_con",
+   "o": "labs_innovacion_publica",
+   "f": "F-959",
+   "apoyo": "El exdirector atribuye el cierre de MindLab a la lógica política.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "labs_innovacion_publica",
+   "p": "tiene_limite",
+   "o": "cierre_labs_innovacion",
+   "f": "F-960",
+   "apoyo": "No todo fin de un laboratorio es fracaso: algunos se transforman en otras unidades.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "labgob_chile",
+   "p": "parte_de",
+   "o": "labs_innovacion_publica",
+   "f": "F-961",
+   "apoyo": "Balance de diez años de LabGob: el modelo debe evolucionar.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "labgob_chile",
+   "p": "contradice",
+   "o": "cierre_labs_innovacion",
+   "f": "F-962",
+   "apoyo": "LabGob sigue activo a los 10 años y reúne a 12 países: contraejemplo a la ola de cierres.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_diseno_murio",
+   "p": "origina_en",
+   "o": "recorte_ideo_2023",
+   "f": "F-963",
+   "apoyo": "Opinión que responde a 'Is design dead?' con cifras de eco sin fuente primaria.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "service_design",
+   "p": "tiene_limite",
+   "o": "c_diseno_murio",
+   "f": "F-964",
+   "apoyo": "Una consultora sostiene que el diseño de servicios prospera (interés comercial).",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "costo_gov_uk_polemica",
+   "p": "asocia_con",
+   "o": "gov_uk",
+   "f": "F-965",
+   "apoyo": "Polémica por el cambio de marca de GOV.UK (£532.000 según prensa).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "costo_gov_uk_polemica",
+   "p": "asocia_con",
+   "o": "gov_uk",
+   "f": "F-966",
+   "apoyo": "Críticas a la app GOV.UK y a un contrato de hasta £50 millones.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_ia_ahorro_estado_uk",
+   "p": "tiene_limite",
+   "o": "lim_proyeccion_no_medicion",
+   "f": "F-967",
+   "apoyo": "La meta de £45.000 millones es una expectativa oficial, no un resultado.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "nudges_a_escala",
+   "p": "tiene_limite",
+   "o": "efecto_nudge_escala",
+   "f": "F-968",
+   "apoyo": "Divulgación: los ensayos de las unidades públicas rinden ~1,4 puntos (eco de F-21).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "infraestructura_publica_digital_india",
+   "p": "aumenta",
+   "o": "exclusion_inscripcion",
+   "f": "F-969",
+   "apoyo": "Una ONG sostiene que los más vulnerables quedan fuera al inscribirse.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "lemonade_inc",
+   "p": "mide",
+   "o": "automatizacion_siniestros",
+   "f": "F-970",
+   "apoyo": "96% de avisos de siniestro sin intervención humana y ~55% de reclamos resueltos de forma automática.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "programa_vitality_empleadores",
+   "p": "asocia_con",
+   "o": "utilidad_vitality",
+   "f": "F-971",
+   "apoyo": "Utilidad de Vitality +70%, atribuida por la empresa a precios, siniestralidad y gastos.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "portal_servicio_ia_ping_an",
+   "p": "reduce",
+   "o": "costo_adquisicion_clientes",
+   "f": "F-972",
+   "apoyo": "Costo de adquirir clientes por canal propio 35-45% menor (comunicado sin método).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_identidad_digital_uk_beneficio",
+   "p": "tiene_limite",
+   "o": "lim_proyeccion_no_medicion",
+   "f": "F-973",
+   "apoyo": "Beneficios de £1.750 millones proyectados frente a £305 millones de costo; sin medición posterior.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_estonia_ahorra_2_pib",
+   "p": "tiene_limite",
+   "o": "lim_proyeccion_no_medicion",
+   "f": "F-974",
+   "apoyo": "El ahorro de ~2% del PIB es una afirmación oficial sin auditoría.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "brecha_uso_digital_educacion",
+   "p": "tiene_limite",
+   "o": "ahorro_digitalizacion_publica",
+   "f": "F-975",
+   "apoyo": "Uruguay: la brecha de uso digital sigue la educación; Chile aún tiene 532 trámites no digitales.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "behavioural_insights_team",
+   "p": "parte_de",
+   "o": "nudges_a_escala",
+   "f": "F-976",
+   "apoyo": "Nesta compró el BIT por £15,4 millones en 2021 (más de 250 personas).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "rimac_seguros",
+   "p": "mide",
+   "o": "nps_cliente_seguros",
+   "f": "F-977",
+   "apoyo": "NPS de 67 frente a 45 del sector (proyección de cierre 2025, no verificada en la memoria).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ia_analisis_siniestros_rimac",
+   "p": "asocia_con",
+   "o": "rimac_seguros",
+   "f": "F-977",
+   "apoyo": "Análisis de siniestros en un minuto con IA, según la empresa.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "Iteración 9 del nodo de diseño (/trinidad 2026-10-12): diseño de servicios, políticas públicas y salud. Leído vía resúmenes (lectura 'abstract')."
+}
