@@ -12,14 +12,16 @@ nuevo (por ejemplo con `/trinidad`) y crear o ampliar su node.
 | Tema | Consultas | ✗ sin cobertura | ~ parcial | ✓ cubiertas | Protocolo |
 |---|---|---|---|---|---|
 | Fenomenología del niño y desarrollo psicológico | 1 | 1 | 0 | 0 | no |
-| Qué es lo más relevante hoy en diseño | 10 | 0 | 4 | 6 | no |
+| Qué es lo más relevante hoy en diseño | 12 | 0 | 4 | 8 | no |
 | Efectividad y limitaciones de los nudges | 9 | 0 | 1 | 8 | no |
+| IA que da la razón al usuario (sycophancy) | 3 | 0 | 2 | 1 | no |
 | Validez predictiva del autocontrol en la infancia | 3 | 0 | 1 | 2 | no |
 | Fenómenos psicológicos aplicables al diseño | 2 | 0 | 1 | 1 | no |
-| IA que da la razón al usuario (sycophancy) | 2 | 0 | 2 | 0 | no |
 | Fenómeno El Niño: impacto en personas y hogares | 2 | 0 | 1 | 1 | no |
+| Mercado de seguros en Perú | 1 | 0 | 1 | 0 | no |
+| Qué pasa con la IA y la conducta humana | 1 | 0 | 1 | 0 | no |
 | Conciencia cuántica: evidencia frente a especulación | 1 | 0 | 0 | 1 | no |
 | Seguros paramétricos climáticos para hogares en Perú | 1 | 0 | 1 | 0 | no |
 | Seguros para empresas en Perú | 1 | 0 | 1 | 0 | no |
 
-*Última revisión: 2026-10-12 (32 consultas, 10 temas, 0 protocolos activos).*
+*Última revisión: 2026-10-13 (37 consultas, 12 temas, 0 protocolos activos).*

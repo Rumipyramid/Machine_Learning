@@ -1,9 +1,9 @@
 {
  "_nota": "Generado por impacto.py. Decisiones autodeclaradas: prueban uso, no que la decisión fuera buena.",
- "generado": "2026-10-12",
+ "generado": "2026-10-13",
  "base": {
-  "foto": "2026-10-12",
-  "consultas": 32,
+  "foto": "2026-10-13",
+  "consultas": 37,
   "personas": 1,
   "dias_activos": 5,
   "valoradas": 1,
@@ -11,19 +11,20 @@
   "util": 1,
   "no_util": 0,
   "nodes_consultados": {
-   "tendencias-diseno-innovacion": 10,
+   "tendencias-diseno-innovacion": 12,
    "behavioral-design-estado-disciplina": 9,
    "fenomenos-psicologicos": 5,
+   "conducta-humano-ia": 4,
    "fenomeno-el-nino-impacto-personas": 3,
    "(ninguno)": 2,
-   "conducta-humano-ia": 2,
+   "seguros-comportamiento-mundo-peru": 1,
    "conciencia-cuantica": 1
   },
   "decisiones": []
  },
  "manuales": 0,
  "metricas": {
-  "consultas_reales": 32,
+  "consultas_reales": 37,
   "personas": 1,
   "valoradas": 1,
   "util_pct": 100,
