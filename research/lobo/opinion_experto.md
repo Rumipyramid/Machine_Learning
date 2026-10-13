@@ -5790,6 +5790,27 @@ F-566 (Peterson, Bourgin, Agrawal, Reichman & Griffiths, *Science* 372:1209-1214
 - **Leído a fondo:** 2026-10-12 (`WebSearch` sin acierto; lectura muy débil, declarada)
 - **Conexión razonada, no forzada:** ninguna tesis vigente cambia. Respalda la tesis 27 en la idea de ordenar hipótesis y no estimar efectos.
 
+### 199. Un golpe en el vientre materno deja huella medible años después; el seguro de hogar tiene que mirar también a los hijos por nacer
+F-745 (Rosales-Rueda, *Journal of Health Economics* 62:13-44, 2018; revisada por pares). Compara la intensidad de las inundaciones de El Niño 1997-98 en Ecuador según el trimestre de gestación. La exposición en el tercer trimestre se asocia con bajo peso al nacer y menor talla a los 5-7 años; la del primer trimestre, con menor puntaje cognitivo. Según versiones previas del trabajo, el hogar también perdió ingreso y consumo, y las pruebas de falsación descartan que expliquen el resultado la fecundidad selectiva, la migración o la mortalidad infantil. Leída vía `WebSearch`: resumen y versiones previas, no el texto final (lectura débil, declarada).
+**Heurística:** cuando un choque golpea al hogar, el costo más caro puede aparecer años después y en quien aún no nació. Un producto que solo repone el activo perdido no cubre ese costo; el que protege el consumo y la nutrición del hogar durante la crisis, sí. Es observacional con identificación geográfica: dice dirección y tamaño relativo, no cifra transferible a Perú.
+- **Fuente:** F-745 (🟢A; cuasi-experimento por intensidad geográfica y trimestre de gestación)
+- **Leído a fondo:** 2026-10-13 (`WebSearch`; resumen y versiones previas, lectura débil)
+- **Conexión razonada, no forzada:** refuerza la tesis 26 (el hueco está en la liquidez del hogar). No cambia su confianza.
+
+### 200. Una réplica de campo que confirma el mensaje y refuta la mejora prometida: separar «el mensaje funciona» de «la versión sofisticada funciona mejor»
+F-665 (Bohner y Schlüter, *PLoS ONE* 9(8):e104086, 2014; revisada por pares). Réplica del famoso experimento de las toallas de hotel en dos hoteles alemanes (N=724 y N=204), con reutilización observada sin que el huésped lo supiera. Cualquier mensaje, estándar o de norma descriptiva, subió la reutilización frente a no poner mensaje. La norma descriptiva no superó al mensaje ambiental estándar, y el efecto de la cercanía del grupo de referencia (huéspedes de esta habitación) fue inconsistente entre los dos estudios. Leída vía `WebSearch` (resumen y ficha; lectura débil, declarada). Es más débil que el original de Goldstein et al. (2008).
+**Heurística:** antes de pagar por una versión «social» o personalizada de un mensaje, medirla contra el mejor mensaje simple. Casi todo mensaje bate al silencio; la pregunta de negocio es cuánto agrega lo caro sobre lo barato. Es la misma lógica de la entrada 176 (el nulo del microtargeting), ahora con evidencia de campo.
+- **Fuente:** F-665 (🟢A; réplica de campo con observación encubierta)
+- **Leído a fondo:** 2026-10-13 (`WebSearch`; lectura débil)
+- **Conexión razonada, no forzada:** respalda la tesis 6 (testear en la propia población, no copiar tamaños de efecto). Sin cambio de confianza.
+
+### 201. Un efecto fundacional que no se replica con medición automática ni con experimentadores ciegos: no construir producto sobre él
+F-705 (Bargh, Chen y Burrows, *JPSP* 71(2):230-244, 1996; revisada por pares, muestras pequeñas y cronometraje manual). Activar sin aviso el estereotipo de vejez haría caminar más lento a los participantes. Doyen et al. (*PLoS ONE*, 2012) no lo hallaron con cronometraje automático y mayor muestra; según un resumen secundario, el efecto solo aparecía cuando el experimentador conocía la hipótesis. Bargh respondió con diferencias de procedimiento y de cultura de la muestra. Los comentaristas coinciden en que la réplica pone en duda el mecanismo, no prueba por sí sola que el efecto sea cero. Leída vía `WebSearch` sobre la controversia, no el artículo original (lectura débil, declarada).
+**Heurística:** cuando la medición original dependía del juicio humano y el estudio replicado con instrumentos automáticos no lo halla, el efecto vale como hipótesis, no como palanca. Un priming «de ambiente» (palabras, imágenes) no debería entrar a un flujo de venta o a una cotización sin prueba propia de campo.
+- **Fuente:** F-705 (🟢A; fundacional del priming conductual; sin replicación directa exitosa)
+- **Leído a fondo:** 2026-10-13 (`WebSearch`; lectura débil)
+- **Conexión razonada, no forzada:** consistente con las entradas 190 y 193 (el nulo bien hecho pesa más que el original). Sin cambio de tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5967,52 +5988,8 @@ F-566 (Peterson, Bourgin, Agrawal, Reichman & Griffiths, *Science* 372:1209-1214
 
 - **2026-09-12** — *(Detalle podado y fusionado al resumen el 2026-10-12)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-13** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward `2937e16→45c1d02` que trajo consigo el propio commit del 2026-09-12 de esta
-  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
-  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 13 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  trigesimoprimer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
-  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
-  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el
-  2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
-  treinta y dos días sin correr). **Poda de bitácora:** el bloque "2026-08-14" salió por completo de
-  la ventana de ~30 días (cutoff ≈2026-08-14) — lo fusioné con el bloque "2026-08-01 a 2026-08-13" en
-  un resumen ampliado "2026-08-01 a 2026-08-14"; no se pierde ningún dato porque el detalle de cada
-  tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
-  intuición sí pudo correr hoy** (herramientas de red disponibles, a diferencia de la caída del
-  2026-09-10): recalculé por script el universo 🟢A del ledger con el filtro estricto (marcador de
-  rigurosidad que *empieza* con 🟢A): **134 filas**, cifra estable, contra `fuentes_leidas_lobo.md`
-  (108 ya leídas) — 26 pendientes — y elegí 3 al azar sin reemplazo (Python `random.sample`, sin
-  semilla fija): F-257 (METR, RCT de productividad de desarrolladores con IA, ya citada en el node de
-  diseño/innovación solo por su cifra agregada de 19% más lentos / 20% de sobreestimación), F-381
-  (Chen et al. 2026, *Findings of ACL*, interfaces generativas de IA, ya citada solo por su cifra de
-  preferencia hasta 72%) y F-430 (Ugur, Trushin, Solomon & Guidi 2016, *Research Policy*,
-  meta-regresión jerárquica I+D-productividad, ya citada solo por su elasticidad/retorno agregados).
-  Las URLs directas de las tres (arxiv.org, aclanthology.org, sciencedirect.com) dieron
-  `EGRESS_BLOCKED` por el proxy del entorno, igual que sus mirrors institucionales directos
-  (metr.org, gala.gre.ac.uk, mpra.ub.uni-muenchen.de, papers.ssrn.com); `WebSearch` sí funcionó y
-  permitió reconstruir detalle de mecanismo/metodología nuevo en las tres vía cobertura secundaria
-  convergente (Let's Data Science/ActuIA para F-257; deeplearn.org/Papers with Code/página de
-  proyecto de los autores para F-381; RePEc-IDEAS/repositorio institucional de Greenwich para F-430),
-  no solo el resumen de una línea ya citado. Sumé las entradas 109, 110 y 111 de Intuición acumulada:
-  (109) el moderador que explica el resultado agregado del RCT de METR no es la familiaridad con la
-  herramienta de IA (horas de Cursor) sino con el repositorio de trabajo específico — y el único
-  desarrollador con 50+ horas de experiencia en Cursor mostró aceleración neta, indicio (N=1, débil)
-  de un techo de habilidad que el promedio agregado no captura; matiza la regla C11/H5 del node de
-  diseño/innovación sin bajar su confianza; (110) el 72% de preferencia de F-381 no es un promedio de
-  una sola pregunta — el marco del paper mide seis dimensiones separadas (consistencia, eficiencia de
-  tarea, usabilidad, aprendibilidad, estética, satisfacción de interacción) y el 72% es el techo de la
-  dimensión donde generative UI más domina, no un promedio parejo; matiza tesis 24 sin cambiar su
-  confianza (sigue Alta); (111) el método de F-430 corre en tres etapas — descriptiva/funnel plots,
-  meta-regresión bivariada que separa sesgo de publicación del efecto neto, y multivariada que busca
-  moderadores — el mismo diseño que Maier et al. (F-17) usó para desmontar el promedio de Mertens et
-  al. (F-16) en nudging; heurística transferible a cualquier cifra de "efecto promedio" citada de un
-  meta-análisis, conecta con intuición 81 y tesis 21 sin abrir tesis nueva. Ninguna tesis de negocio
-  cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las
-  entradas 109 y 110 sí matizan directamente la regla C11/H5 y la tesis 24 respectivamente. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
-  historial (2026-08-15 a hoy) tras la poda de hoy — dentro de la ventana de ~30 días.
+- **2026-09-13** — *(Detalle podado y fusionado al resumen el 2026-10-13)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-14** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward `2937e16→19e967d` que trajo consigo el propio commit del 2026-09-13 de esta
   opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
@@ -6763,3 +6740,5 @@ F-566 (Peterson, Bourgin, Agrawal, Reichman & Griffiths, *Science* 372:1209-1214
 - **2026-10-11** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 135 pendientes → 132 tras hoy):** sorteo F-711, F-751 y F-753, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 193 (el nulo de réplicas directas pesa más que el estudio original), 194 (tras un desastre la crisis aguda se disipa en ~12 meses: importa el momento del contacto) y 195 (el hogar recorta salud y educación; el seguro vale por lo que evita recortar). F-751 y F-753 apoyan la tesis 26 sin subir su confianza (un evento, un contexto). Poda: 09-11 fusionado al resumen; Bitácora cubre 2026-09-12 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-12** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 132 pendientes → 129 tras hoy):** sorteo F-727, F-542 y F-566, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada; F-566 no apareció en la búsqueda y se apoya en la ficha). Entradas 196 (el coeficiente medio de aversión a la pérdida no es parámetro de producto), 197 (persuasión de IA con datos personales: real en laboratorio, no probada en campo) y 198 (un predictor flexible sirve para detectar fallas de la teoría, no como teoría). Poda: 09-12 fusionado al resumen; Bitácora cubre 2026-09-13 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-13** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 129 pendientes → 126 tras hoy):** sorteo F-745, F-665 y F-705, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 199 (el choque en gestación deja huella años después; el seguro de hogar debe proteger consumo y nutrición), 200 (una réplica de campo confirma que el mensaje funciona, pero no que la versión sofisticada supere a la simple) y 201 (el priming fundacional de la vejez no se replica con medición automática; hipótesis, no palanca). Poda: 09-13 fusionado al resumen; Bitácora cubre 2026-09-14 a hoy. `fuentes_leidas_lobo.md` actualizado.

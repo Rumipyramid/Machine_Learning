@@ -216,3 +216,6 @@
 | F-727 | 🟢 A | 2026-10-12 | Intuición 196 — el coeficiente medio de aversión a la pérdida (~1,96) es punto de partida, no parámetro de producto; pedir dispersión y similitud con la decisión real |
 | F-542 | 🟢 A | 2026-10-12 | Intuición 197 — persuasión de GPT-4 con datos personales: real en debate de laboratorio, sin prueba de transferencia a conversión de ventas |
 | F-566 | 🟢 A | 2026-10-12 | Intuición 198 — un predictor flexible de elecciones diagnostica fallas de la teoría; no es teoría (lectura muy débil, solo ficha) |
+| F-745 | 🟢 A | 2026-10-13 | Intuición 199 — choque en gestación (El Niño, Ecuador): huella en talla y cognición años después; proteger consumo y nutrición del hogar (lectura débil) |
+| F-665 | 🟢 A | 2026-10-13 | Intuición 200 — réplica de campo: cualquier mensaje bate al silencio, la norma descriptiva no bate al mensaje estándar; medir lo caro contra lo simple (lectura débil) |
+| F-705 | 🟢 A | 2026-10-13 | Intuición 201 — priming de vejez (Bargh 1996) no replica con medición automática; hipótesis, no palanca (lectura débil) |
