@@ -219,3 +219,6 @@
 | F-745 | 🟢 A | 2026-10-13 | Intuición 199 — choque en gestación (El Niño, Ecuador): huella en talla y cognición años después; proteger consumo y nutrición del hogar (lectura débil) |
 | F-665 | 🟢 A | 2026-10-13 | Intuición 200 — réplica de campo: cualquier mensaje bate al silencio, la norma descriptiva no bate al mensaje estándar; medir lo caro contra lo simple (lectura débil) |
 | F-705 | 🟢 A | 2026-10-13 | Intuición 201 — priming de vejez (Bargh 1996) no replica con medición automática; hipótesis, no palanca (lectura débil) |
+| F-721 | 🟢 A | 2026-10-14 | Intuición 202 — la brecha pagar-vender se apaga y prende con el procedimiento y las réplicas se contradicen; el tamaño es del método (lectura débil) |
+| F-693 | 🟢 A | 2026-10-14 | Intuición 203 — priming de la taza caliente: n=41/53, réplicas multisitio sin efecto; pista, no palanca (lectura débil) |
+| F-582 | 🟢 A | 2026-10-14 | Intuición 204 — IA que ayuda dentro y daña fuera de su frontera; mapear el borde antes de desplegar (solo ficha, búsqueda fallida) |

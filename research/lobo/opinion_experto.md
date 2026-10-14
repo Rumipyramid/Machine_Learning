@@ -5811,6 +5811,27 @@ F-705 (Bargh, Chen y Burrows, *JPSP* 71(2):230-244, 1996; revisada por pares, mu
 - **Leído a fondo:** 2026-10-13 (`WebSearch`; lectura débil)
 - **Conexión razonada, no forzada:** consistente con las entradas 190 y 193 (el nulo bien hecho pesa más que el original). Sin cambio de tesis.
 
+### 202. Un efecto que «se apaga y prende» con el procedimiento: la brecha entre pagar y vender depende de cómo se pregunta, y aun eso se disputa
+F-721 (Plott y Zeiler, *American Economic Review* 95(3):530-545, 2005; revisada por pares). Con entrenamiento previo en el mecanismo de elicitación, los autores no hallan brecha entre lo que se paga por una taza y lo que se pide por venderla, y concluyen que la brecha observada puede ser malentendido del participante y no aversión a la pérdida. Dos réplicas posteriores matizan: Isoni, Loomes y Sugden (2011) sostienen que datos no publicados del mismo estudio sí muestran brecha en loterías (los autores admitieron contaminación en esos datos), y Fehr, Hakimov y Kübler (2015) no logran reproducir la desaparición de la brecha con tazas. Leída vía `WebSearch` (resumen y literatura secundaria; lectura débil, declarada).
+**Heurística:** cuando un efecto cambia de signo según el procedimiento, el tamaño que se cita es propiedad del método, no de la persona. Antes de usar la brecha de dotación para justificar un precio o un periodo de prueba, preguntar con qué procedimiento se midió y si se parece a cómo decide el cliente real. Es la misma lógica de la entrada 196 (aversión a la pérdida no es parámetro de producto).
+- **Fuente:** F-721 (🟢A; experimentos de laboratorio, crítica central al efecto dotación; la ficha no recoge las réplicas)
+- **Leído a fondo:** 2026-10-14 (`WebSearch`; lectura débil)
+- **Conexión razonada, no forzada:** respalda la tesis 6 (medir en la propia población). Sin cambio de confianza. Pendiente para `cronista`: anotar en la ficha las réplicas de 2011 y 2015.
+
+### 203. Muestras pequeñas, un solo laboratorio y medidas blandas: el patrón típico del priming encarnado que luego se cae
+F-693 (Williams y Bargh, *Science* 322(5901):606-607, 2008; revisada por pares). Sostener un café caliente haría juzgar a un extraño como más «cálido». Estudios de 41 y 53 participantes. Lynott et al. (2014, multisitio) no hallaron efecto, y dos réplicas con más del triple de muestra (128 y 177) y procedimiento doble ciego tampoco (efectos cercanos a cero). Williams aceptó que la réplica fue cuidadosa pero defendió la teoría general; los replicadores piden réplicas conceptuales para juzgarla. Leída vía `WebSearch` (secundarias; lectura débil, declarada).
+**Heurística:** un hallazgo de revista prestigiosa con unas decenas de participantes y una manipulación trivial (temperatura de una taza) es una pista para investigar, no una palanca de diseño. Si alguien propone «calidez física» o ambientación sensorial en una oficina o una pantalla de venta, pedir primero la réplica multisitio.
+- **Fuente:** F-693 (🟢A en origen, pero la ficha ya advierte que no replicó; el rigor del diseño original no garantiza el hallazgo)
+- **Leído a fondo:** 2026-10-14 (`WebSearch`; lectura débil)
+- **Conexión razonada, no forzada:** consistente con las entradas 193 y 201 (el nulo bien hecho pesa más que el original). Sin cambio de tesis.
+
+### 204. El experimento de campo que mapea la «frontera irregular» de la IA: ayuda dentro, daña fuera, y nadie ve dónde está el borde
+F-582 (Dell'Acqua, McFowland, Mollick et al., *Organization Science*, 2026; experimento de campo con 758 consultores de BCG). Según la ficha, dentro de la frontera de capacidades de la IA los consultores completan más tareas, más rápido y con más calidad; fuera de ella, resuelven 19 puntos menos de respuestas correctas. La búsqueda de hoy no devolvió el artículo (solo avisos de empleo), así que no pude verificar las cifras ni el diseño: esta lectura se apoya únicamente en la ficha del ledger. Lectura muy débil, declarada.
+**Heurística:** la pregunta útil sobre un asistente de IA no es «¿mejora la productividad?» sino «¿en qué tareas deja de ayudar y quién lo detecta?». Para un asesor conversacional de seguros, la ganancia media puede esconder el caso donde el cliente recibe una respuesta segura y equivocada. Mapear tareas dentro y fuera del borde antes de desplegar, y vigilar sobre todo lo que parece fácil pero no lo es.
+- **Fuente:** F-582 (🟢A; experimento de campo; ficha del ledger, sin verificación propia hoy)
+- **Leído a fondo:** 2026-10-14 (`WebSearch` fallida; solo ficha)
+- **Conexión razonada, no forzada:** refuerza la tesis 10 (riesgo de sobreclamar precisión sin validación formal). Sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -5990,48 +6011,8 @@ F-705 (Bargh, Chen y Burrows, *JPSP* 71(2):230-244, 1996; revisada por pares, mu
 
 - **2026-09-13** — *(Detalle podado y fusionado al resumen el 2026-10-13)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-14** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward `2937e16→19e967d` que trajo consigo el propio commit del 2026-09-13 de esta
-  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
-  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 14 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  trigesimosegundo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
-  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
-  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el
-  2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
-  treinta y tres días sin correr). **Poda de bitácora:** el bloque "2026-08-15" salió por completo de
-  la ventana de ~30 días (cutoff ≈2026-08-15) — lo fusioné con el bloque "2026-08-01 a 2026-08-14" en
-  un resumen ampliado "2026-08-01 a 2026-08-15"; no se pierde ningún dato porque el detalle de cada
-  tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
-  intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
-  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra
-  estable, contra `fuentes_leidas_lobo.md` (111 ya leídas) — 23 pendientes — y elegí 3 al azar sin
-  reemplazo (Python `random.sample`, sin semilla fija): F-357 (Mehta et al. 2025, RCT de framing
-  opt-out vs. opt-in en monitoreo remoto de presión arterial, ya citada solo por su veredicto de "no
-  superó"), F-162 (revisión bibliométrica de seguro vehicular basado en telemática, ya citada solo
-  por su conclusión agregada sobre riesgo moral/selección adversa) y F-115 (análisis académico de la
-  adquisición de Oak Street Health por CVS, ya citada solo por su conclusión de "viabilidad de
-  mercado"). Las URLs directas de las tres (jamanetwork.com, sciencedirect.com, cambridge.org) dieron
-  `EGRESS_BLOCKED` por el proxy del entorno, igual que el mirror de PMC de la primera
-  (pmc.ncbi.nlm.nih.gov); `WebSearch` sí funcionó y permitió reconstruir detalle de método/cifras
-  exactas en las tres vía cobertura secundaria convergente (PubMed/PMC para F-357, ResearchGate/
-  PubMed/OUCI para F-162, ResearchGate y prensa del cierre del deal para F-115), no solo el resumen
-  de una línea ya citado. Sumé las entradas 112, 113 y 114 de Intuición acumulada: (112) el brazo
-  "ganador" del RCT de framing (opt-out, 37,5% vs. 33,9% de opt-in, diferencia no significativa)
-  incluía además la entrega de un tensiómetro antes de inscribirse — un "empate" entre framing puro y
-  framing+regalo es en realidad más contundente en contra de que el framing por sí solo haga algo;
-  (113) una revisión bibliométrica mapea qué ha estudiado un campo, no mide un efecto propio — citar
-  F-162 como si fuera el hallazgo de que la telemática reduce el riesgo moral salta un nivel de
-  inferencia que solo los RCT primarios que cataloga (F-23, F-442) pueden sostener; (114) un análisis
-  académico que llama "reconfirmación de viabilidad de mercado" a una adquisición está leyendo el
-  precio que pagó el comprador (US$10.600M por Oak Street Health, con ~45% del capital en manos de PE
-  al momento de la venta), no el desempeño operativo del modelo — mismo error de lectura que el
-  proyecto ya corrigió para los exits de insurtech (F-452, F-426/F-427), ahora confirmado en un tercer
-  dominio (salud value-based). Ninguna tesis de negocio cambió de confianza numérica por esta
-  corrida — es el mecanismo paralelo de intuición, aunque la 112 sí endurece la lectura de cualquier
-  propuesta futura de opt-out para RIMAC. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
-  tres fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-16 a hoy) tras la poda de hoy —
-  dentro de la ventana de ~30 días.
+- **2026-09-14** — *(Detalle podado y fusionado al resumen el 2026-10-14)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-15** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward `2937e16→b8c3a63` que trajo consigo el propio commit del 2026-09-14 de esta
   opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
@@ -6742,3 +6723,5 @@ F-705 (Bargh, Chen y Burrows, *JPSP* 71(2):230-244, 1996; revisada por pares, mu
 - **2026-10-12** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 132 pendientes → 129 tras hoy):** sorteo F-727, F-542 y F-566, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada; F-566 no apareció en la búsqueda y se apoya en la ficha). Entradas 196 (el coeficiente medio de aversión a la pérdida no es parámetro de producto), 197 (persuasión de IA con datos personales: real en laboratorio, no probada en campo) y 198 (un predictor flexible sirve para detectar fallas de la teoría, no como teoría). Poda: 09-12 fusionado al resumen; Bitácora cubre 2026-09-13 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-13** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 129 pendientes → 126 tras hoy):** sorteo F-745, F-665 y F-705, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 199 (el choque en gestación deja huella años después; el seguro de hogar debe proteger consumo y nutrición), 200 (una réplica de campo confirma que el mensaje funciona, pero no que la versión sofisticada supere a la simple) y 201 (el priming fundacional de la vejez no se replica con medición automática; hipótesis, no palanca). Poda: 09-13 fusionado al resumen; Bitácora cubre 2026-09-14 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-14** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 126 pendientes → 123 tras hoy):** sorteo F-721, F-693 y F-582, leídas vía `WebSearch` (F-582 no apareció en la búsqueda y se apoya solo en la ficha; lectura débil, declarada). Entradas 202 (la brecha pagar-vender cambia con el procedimiento y las réplicas se contradicen), 203 (priming de la taza caliente: muestras pequeñas, réplicas multisitio sin efecto) y 204 (IA que ayuda dentro y daña fuera de su frontera; mapear el borde). Pendiente para `cronista`: F-721 no recoge las réplicas de 2011 y 2015. Poda: 09-14 fusionado al resumen; Bitácora cubre 2026-09-15 a hoy. `fuentes_leidas_lobo.md` actualizado.
