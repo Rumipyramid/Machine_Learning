@@ -230,3 +230,4 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 - `proyecto-back-to-basics-ffvv-vida.md` — caso real de RIMAC (Perú) donde la apuesta es
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
+- [[experiencias-phygital|Experiencias phygital]] — evidencia de retail de que la tecnología que desplaza al vendedor resta y que la alternativa humana compensa el autoservicio forzado; no hay estudios de phygital en seguros.
