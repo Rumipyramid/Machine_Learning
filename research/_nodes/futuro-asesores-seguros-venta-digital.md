@@ -386,3 +386,4 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[digitalizacion-seguros-mercados-emergentes|Digitalización de seguros en mercados emergentes]] — los casos de Policybazaar (India) y Azos (Brasil) refuerzan la tesis del intermediario con tecnología; ese node agrega la prueba de que conviene diseñar el acompañamiento humano en vez de segmentar por edad.

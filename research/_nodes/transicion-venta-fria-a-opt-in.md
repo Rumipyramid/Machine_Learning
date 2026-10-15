@@ -322,3 +322,4 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — retoma de este node la lógica de reducir la carga de «pedir antes de dar valor» como argumento a favor de potenciar al asesor con tecnología, no de reemplazarlo.
+- [[digitalizacion-seguros-mercados-emergentes|Digitalización de seguros en mercados emergentes]] — las sanciones de Indecopi por llamadas sin consentimiento y la venta engañosa en India muestran la fricción que se mueve a la conducta de venta cuando el canal digital escala.
