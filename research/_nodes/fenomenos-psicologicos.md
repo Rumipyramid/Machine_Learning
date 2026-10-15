@@ -544,3 +544,4 @@ Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita 
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — psicología del color y "leyes" de UX a confrontar con esta capa.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros]] — estado real de las barreras conductuales (aversión a la pérdida, sesgo del presente).
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — RF6 y PF6: sesgos como rangos.
+- [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — dónde se aplican la aversión a la pérdida (caducidad, niveles) y el progreso dotado en programas de lealtad, y qué demuestra el campo.
