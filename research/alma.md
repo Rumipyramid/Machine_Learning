@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-07.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-15.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -73,6 +73,7 @@ por afirmación cuando corresponda.
 | `_nodes/conducta-humano-ia.md` | Conducta humano-IA: confianza, sobre-confianza, adulación, persuasión y descarga cognitiva; tablero HC1-HC8 | 2026-10-04 | v1.1 (iteración 2: pistas social y de negocio/legal, búsqueda adversarial; reglas CH1-CH2; HC9-HC10) · **2026-10-03:** lectura a fondo de persuasión: F-488 en *Science* (HC2 → parcial), cifra +81,7% reatribuida a Salvi (F-542), RP4 resuelta como alcance distinto |
 | `_nodes/venta-vida-digital-hibrida-latam.md` | Venta de seguros de vida en LATAM (Brasil, Chile, Colombia; excluye Perú): modelo digital vs. híbrido vs. tradicional y cómo performa cada uno — extensión regional de `futuro-asesores-seguros-venta-digital.md` | 2026-10-04 | v1.0 |
 | `_nodes/fenomeno-el-nino-impacto-personas.md` | Fenómeno El Niño: impacto en la vida de las personas — evidencia cuanti y cualitativa (empírica + social + negocio), Perú primero, con coyuntura del Niño Costero extraordinario 2026-27 y §8 oportunidades para RIMAC | 2026-10-07 | v1.1 (`/trinidad` iter. 1-2; F-742 a F-801) |
+| `_nodes/digitalizacion-adultos-50-mas-latam-africa-asia.md` | Digitalización de adultos de 50+ en contextos de baja digitalización (LatAm, África, Asia): qué intervenciones hubo, cuáles dieron resultado y qué tan sólida es la evidencia (empírica + social + negocio); evidencia escasa y sin uso sostenido medido | 2026-10-15 | v1.0 (`/trinidad`; F-802 a F-825) |
 | `_nodes/convergencia-psicologia-economia-ia.md` | Convergencia psicología + economía + IA (`/trinidad`: empírica + social + negocio): LLMs como sujetos simulados y sus fallas, modelos fundacionales de cognición (Centaur), sesgos en la IA, agentes como actores económicos, encuestados sintéticos como negocio; implicaciones para `lapuerta` (§6); tablero PE1-PE8 | 2026-10-04 | v1.0 (iteración 1; F-543 a F-645, todo leído por resumen) |
 | `_nodes/fenomenos-psicologicos.md` | **Capa transversal** — Fenómenos psicológicos clásicos y su estado de replicación (44): influencia social (Asch, Milgram, Stanford, espectador, disonancia), percepción (tiempo, bouba/kiki, color-emoción, Gestalt, cegueras de atención), cognición encarnada y priming, juicio y memoria (pico-final, dotación, aversión a la pérdida, señuelo, anclaje); reglas RF1-RF6, preguntas PF1-PF6 | 2026-10-04 | v1.0 (F-647 a F-741, leído por resumen; todo en el grafo semántico) |
 
