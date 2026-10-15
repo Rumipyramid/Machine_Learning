@@ -15086,7 +15086,7 @@
   }
  ],
  "meta": {
-  "generado": "2026-10-13",
+  "generado": "2026-10-15",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -17638,6 +17638,44 @@
     },
     "fecha": "2026-10-12",
     "commit": "90d0074",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 976,
+    "rigor": {
+     "B": 171,
+     "A": 319,
+     "C": 213,
+     "D": 217,
+     "?": 15,
+     "E": 41
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 158,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 870,
+    "diseno": {
+     "hyp": {
+      "abierta": 16,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 9,
+     "lines": 2215,
+     "cites": 373
+    },
+    "fecha": "2026-10-13",
+    "commit": "a2dacd5",
     "fuente": "git"
    }
   ],
