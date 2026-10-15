@@ -5832,6 +5832,27 @@ F-582 (Dell'Acqua, McFowland, Mollick et al., *Organization Science*, 2026; expe
 - **Leído a fondo:** 2026-10-14 (`WebSearch` fallida; solo ficha)
 - **Conexión razonada, no forzada:** refuerza la tesis 10 (riesgo de sobreclamar precisión sin validación formal). Sin cambio de confianza.
 
+### 205. La ceguera por falta de atención: la mitad no ve lo evidente cuando la tarea absorbe, y no lo sabe
+F-682 (Simons & Chabris, *Perception*, 1999; paper revisado por pares, DOI 10.1068/p281059). Observadores que cuentan pases de básquet no ven, en cerca de la mitad de los casos, a una persona disfrazada de gorila que cruza la escena durante unos 5 segundos; con la tarea más difícil, falla más gente. La búsqueda de hoy no confirmó el tamaño de muestra (192) ni el desglose exacto: solo secundarias (resúmenes, un blog de réplicas). Lo que sí aparece es la extensión de Drew, Vo & Wolfe (2013), donde radiólogos expertos no vieron un gorila insertado en tomografías (cifra de 83%, sin verificar en el original). Lectura débil, declarada.
+**Heurística:** lo que el usuario no ve no prueba que no esté en pantalla: cuando la tarea lo absorbe, ignora lo inesperado, aunque sea grande. Un aviso clave (exclusión, plazo, cláusula) puesto en el flujo de una tarea exigente puede pasar inadvertido; hay que probarlo con gente haciendo la tarea real, no preguntando si «lo vieron» después. Y no confiar en que el experto lo detecte por ser experto.
+- **Fuente:** F-682 (🟢A; experimento original; secundarias hoy)
+- **Leído a fondo:** 2026-10-15 (`WebSearch`; resúmenes y secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza el punto de la tesis 1 (divulgar no basta si no se mira). Sin cambio de confianza.
+
+### 206. Bouba/kiki: un efecto robusto entre lenguas, pero con muestra por conveniencia y sin traducción a decisiones
+F-676 (Ćwiek et al., *Phil. Trans. R. Soc. B*, 2022; DOI 10.1098/rstb.2020.0390). Experimento en línea con hablantes de 25 lenguas, nueve familias y diez sistemas de escritura: «bouba» se asocia con la forma redondeada más que «kiki», y la escritura casi no modifica el efecto (los de escritura latina, apenas más). La búsqueda de hoy no confirmó la cifra de 917 hablantes del ledger. Una secundaria avisa que los participantes salieron de las redes de los autores, así que no representan a cada comunidad. Lectura débil.
+**Heurística:** un efecto percibido como universal puede ser real y aun así no servir para vender: que el sonido se asocie con la forma no dice cuánto pesa en el nombre de un seguro o en la elección. Antes de apoyar un nombre o un logo en esto, medir el efecto en la población propia y en la decisión real; pedir quién reclutó a los participantes.
+- **Fuente:** F-676 (🟢A; revisado por pares; muestra por conveniencia según una secundaria)
+- **Leído a fondo:** 2026-10-15 (`WebSearch`; resúmenes y repositorios; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con las entradas 188 y 200 (efecto robusto en el laboratorio ≠ palanca de negocio). Sin cambio de tesis. Pendiente para `cronista`: verificar la cifra de 917 hablantes en el artículo.
+
+### 207. Clima y conflicto: un resultado publicado en Nature puede depender de las decisiones del modelo, y las réplicas discrepan
+F-756 (Hsiang, Meng & Cane, *Nature*, 2011). Panel global 1950-2004: en los trópicos, la probabilidad de nuevos conflictos civiles se duplica en años de El Niño frente a La Niña (hasta 21% de los conflictos). La búsqueda de hoy no devolvió el artículo, sí la disputa vecina: Buhaug (2010) halló que el vínculo clima-conflicto no resiste otros modelos y medidas; Burke, Hsiang y Miguel respondieron que sí resiste, y en 2014 se acusaron mutuamente de errores de codificación y estadística. Esa disputa es sobre un trabajo hermano (África), no sobre este paper; el desacuerdo de F-757 en el ledger apunta a lo mismo. Lectura débil.
+**Heurística:** en un resultado de panel con consecuencias, preguntar qué decisiones del modelo (definición de conflicto, controles, periodo) lo sostienen, y buscar la reanálisis antes de citarlo. Para las tesis de El Niño: usar la relación como señal de contexto, no como cifra de impacto en el negocio de RIMAC.
+- **Fuente:** F-756 (🟢A; panel revisado por pares; conclusión en disputa según el ledger)
+- **Leído a fondo:** 2026-10-15 (`WebSearch`; el artículo no apareció; la disputa se conoce por trabajos hermanos; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya la cautela de la tesis 26 (un evento, un contexto). Sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6013,51 +6034,8 @@ F-582 (Dell'Acqua, McFowland, Mollick et al., *Organization Science*, 2026; expe
 
 - **2026-09-14** — *(Detalle podado y fusionado al resumen el 2026-10-14)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-15** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward `2937e16→b8c3a63` que trajo consigo el propio commit del 2026-09-14 de esta
-  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
-  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 15 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  trigesimotercer día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
-  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
-  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el
-  2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
-  treinta y cuatro días sin correr). **Poda de bitácora:** el bloque "2026-08-16" salió por completo
-  de la ventana de ~30 días (cutoff ≈2026-08-16) — lo fusioné con el bloque "2026-08-01 a 2026-08-15"
-  en un resumen ampliado "2026-08-01 a 2026-08-16"; no se pierde ningún dato porque el detalle de
-  cada tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
-  intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
-  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra
-  estable, contra `fuentes_leidas_lobo.md` (114 ya leídas) — 20 pendientes — y elegí 3 al azar sin
-  reemplazo (Python `random.sample`, sin semilla fija): F-83 (Arrow 1963, teoría fundacional de
-  incertidumbre en salud, ya citada solo como "teoría canónica detrás del seguro de salud"), F-20
-  (Milkman et al. 2021, megastudy de Nature, ya citada en detalle bajo tesis 7 pero solo por su
-  receta de diseño ganadora) y F-3 (Pitthan & De Witte 2021, survey de sesgos en demanda de seguros,
-  ya citada en detalle por la revisión profunda de `cronista` del 2026-07-21 pero solo por
-  miopía/narrow framing). Las URLs directas de las tres (pmc.ncbi.nlm.nih.gov, nature.com,
-  sciencedirect.com) dieron `EGRESS_BLOCKED` por el proxy del entorno, igual que sus mirrors
-  institucionales directos (cato.org, cris.maastrichtuniversity.nl); `WebSearch` sí funcionó y
-  permitió reconstruir detalle de mecanismo/metodología nuevo en las tres vía cobertura secundaria
-  convergente (PubMed, JSTOR/Columbia Scholarship Online y comentario económico secundario sobre el
-  uso político de Arrow para F-83; PubMed y la guía metodológica de los propios autores del
-  megastudy para F-20; RePEc/IDEAS y cobertura del survey completo para F-3), no solo el resumen ya
-  citado. Sumé las entradas 115, 116 y 117 de Intuición acumulada: (115) la lectura secundaria
-  coincide en que Arrow no concluye que la falla de mercado en salud justifique automáticamente
-  intervención estatal — separar el diagnóstico de un paper fundacional de la receta que otros
-  citantes le atribuyeron después; (116) un megastudy rankea diseños con fuerza dentro de su propia
-  población/outcome, pero la propia literatura metodológica de megastudies reconoce poca
-  construcción de teoría y poco entendimiento de heterogeneidad — extrapolar el diseño ganador de
-  F-20 (gimnasio) a seguros hereda cero validez interna, refuerza sin cambiar confianza el "prior
-  accionable" ya declarado en tesis 7; (117) el propio resultado de F-3 describe dos vías causales
-  distintas de infraseguro — estimación equivocada del riesgo (arreglable con información) y
-  ponderación de probabilidad distorsionada (de preferencia, no arreglable con el mismo remedio) —
-  y la receta de alfabetización financiera que el paper recomienda solo ataca la primera; añade
-  precisión mecanicista a tesis 1 sin cambiar su confianza (sigue Alta). Ninguna tesis de negocio
-  cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque la
-  117 sí sostiene con mayor precisión el escepticismo ya vigente de tesis 1 hacia soluciones de solo
-  divulgación/alfabetización. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 30 días de historial (2026-08-17 a hoy) tras la poda de hoy — dentro de
-  la ventana de ~30 días.
+- **2026-09-15** — *(Detalle podado y fusionado al resumen el 2026-10-15)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-16** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`; sin fast-forward, la rama ya estaba en `5aeb9c3`, el commit de la corrida de ayer,
   2026-09-15) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas,
@@ -6725,3 +6703,5 @@ F-582 (Dell'Acqua, McFowland, Mollick et al., *Organization Science*, 2026; expe
 - **2026-10-13** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 129 pendientes → 126 tras hoy):** sorteo F-745, F-665 y F-705, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 199 (el choque en gestación deja huella años después; el seguro de hogar debe proteger consumo y nutrición), 200 (una réplica de campo confirma que el mensaje funciona, pero no que la versión sofisticada supere a la simple) y 201 (el priming fundacional de la vejez no se replica con medición automática; hipótesis, no palanca). Poda: 09-13 fusionado al resumen; Bitácora cubre 2026-09-14 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-14** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 126 pendientes → 123 tras hoy):** sorteo F-721, F-693 y F-582, leídas vía `WebSearch` (F-582 no apareció en la búsqueda y se apoya solo en la ficha; lectura débil, declarada). Entradas 202 (la brecha pagar-vender cambia con el procedimiento y las réplicas se contradicen), 203 (priming de la taza caliente: muestras pequeñas, réplicas multisitio sin efecto) y 204 (IA que ayuda dentro y daña fuera de su frontera; mapear el borde). Pendiente para `cronista`: F-721 no recoge las réplicas de 2011 y 2015. Poda: 09-14 fusionado al resumen; Bitácora cubre 2026-09-15 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-15** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 123 pendientes → 120 tras hoy):** sorteo F-682, F-676 y F-756, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada; ninguna de las tres cifras de la ficha pudo confirmarse hoy). Entradas 205 (ceguera por falta de atención: la tarea absorbe y lo evidente no se ve), 206 (bouba/kiki robusto entre lenguas, pero muestra por conveniencia y sin paso a decisiones) y 207 (clima-conflicto: el resultado depende del modelo y las réplicas discrepan). Pendiente para `cronista`: confirmar la muestra de F-676 (917) y de F-682 (192) en los artículos. Poda: 09-15 fusionado al resumen; Bitácora cubre 2026-09-16 a hoy. `fuentes_leidas_lobo.md` actualizado.

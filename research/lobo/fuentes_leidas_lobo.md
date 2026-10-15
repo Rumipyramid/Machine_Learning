@@ -222,3 +222,6 @@
 | F-721 | 🟢 A | 2026-10-14 | Intuición 202 — la brecha pagar-vender se apaga y prende con el procedimiento y las réplicas se contradicen; el tamaño es del método (lectura débil) |
 | F-693 | 🟢 A | 2026-10-14 | Intuición 203 — priming de la taza caliente: n=41/53, réplicas multisitio sin efecto; pista, no palanca (lectura débil) |
 | F-582 | 🟢 A | 2026-10-14 | Intuición 204 — IA que ayuda dentro y daña fuera de su frontera; mapear el borde antes de desplegar (solo ficha, búsqueda fallida) |
+| F-682 | 🟢 A | 2026-10-15 | Intuición 205 — ceguera por falta de atención: la tarea absorbe y la mitad no ve lo evidente; probar avisos con la tarea real (lectura débil) |
+| F-676 | 🟢 A | 2026-10-15 | Intuición 206 — bouba/kiki robusto entre lenguas pero muestra por conveniencia; efecto universal ≠ palanca de venta (lectura débil) |
+| F-756 | 🟢 A | 2026-10-15 | Intuición 207 — clima-conflicto (Nature 2011): el resultado depende de decisiones del modelo y las réplicas discrepan (lectura débil) |
