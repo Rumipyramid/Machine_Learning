@@ -881,6 +881,12 @@ priorizar qué probar y reportar dispersión, no solo media; nunca citar un tama
 - **Confianza:** Media (la dirección la sostienen fuentes A y varios C coincidentes; los tamaños dependen de preprints aún sin revisión por pares).
 - **Actualizado:** 2026-10-08
 
+### 28. En lealtad y gamificación retail, lo que mueve la compra es el programa bien diseñado, no el juego — y en Perú y LatAm no hay una sola prueba causal
+El node `lealtad-gamificacion-recompensas-retail.md` (F-802 a F-846) deja un cuadro corto. El meta-análisis de 429 efectos (F-804, 🟢A) confirma que los programas de lealtad mueven la compra más que la actitud. Pero al corregir la autoselección de los miembros, el efecto sobre la cuota de gasto es unas 7 veces menor que el ingenuo (F-805, clásico de 2007). Un programa de umbral subió ventas de tienda ~6% durante 8 semanas (F-811, leído solo por secundaria). El único experimento fuerte de gamificación (F-807, centro comercial de Asia) dio +21-23% con insignias y tablas, y el efecto sobrevivió al retiro; el cupón subió más pero se apagó. En supermercado, el único campo aleatorizado dio nulo (F-818). Los rediseños que quitan valor al cliente generan rechazo (Starbucks 2016 y 2026, F-823 a F-827) y las cifras de éxito de las empresas son correlaciones (F-833, F-834, 🔴E/🟡C). En Perú y LatAm solo hay prensa e intenciones declaradas (Mifarma, Cencosud, Falabella; F-835 a F-837, 🟠D). **Jugada:** si RIMAC o un aliado de farmacia/retail va a premiar conductas (renovar, chequeos, uso de beneficios), tratarlo como hipótesis a testear con grupo control propio y medir margen y retiro del premio; no importar el +21% de Asia como proyección. Nunca citar el 6% ni los porcentajes de F-811 hacia fuera sin abrir el original. **Instinto (sin fuente en el ledger):** en seguros el premio por conducta choca con la selección adversa y con el riesgo de debilitar la motivación de quien ya cumplía; la entrada 6 de Intuición apunta a lo mismo.
+- **Evidencia:** F-804, F-805, F-807, F-818 (🟢A, arbitrados); F-811 (🟢A, solo secundaria); F-820 (🟡C); F-823 a F-827, F-835 a F-837 (🟠D/🔴E)
+- **Confianza:** Media-baja (la dirección la sostienen cuatro fuentes A, pero casi todas se leyeron por resumen y la mejor prueba de gamificación es un solo experimento; sin dato de Perú).
+- **Actualizado:** 2026-10-16
+
 ## 💰 Oportunidades
 
 - **Producto paramétrico de bajo costo contra sismos.** Categoría con ~96.7% de
@@ -5853,6 +5859,27 @@ F-756 (Hsiang, Meng & Cane, *Nature*, 2011). Panel global 1950-2004: en los tró
 - **Leído a fondo:** 2026-10-15 (`WebSearch`; el artículo no apareció; la disputa se conoce por trabajos hermanos; lectura débil, declarada)
 - **Conexión razonada, no forzada:** apoya la cautela de la tesis 26 (un evento, un contexto). Sin cambio de confianza.
 
+### 208. Asch se replica en 2023 con el mismo 33% de error, y el incentivo no lo borra
+F-649 (Franzen y Mader, *PLoS ONE*, 2023). Réplica con 210 participantes: el grupo sin incentivo erró 33% de las veces, igual que el original de Asch. Un brazo aleatorizado que pagaba por acertar bajó el error a 25%, no a cero. Con opiniones políticas la conformidad fue 38%. De los rasgos de personalidad probados, solo la apertura se asoció con la susceptibilidad. Es una réplica directa y abierta, de las pocas del grupo clásico que confirma el efecto.
+**Heurística:** cuando una réplica con muestra propia confirma un efecto, vale más que diez citas del original, pero el número sigue siendo de laboratorio. Para una decisión: usar la presión del grupo como hipótesis de diseño (mostrar qué hacen los demás) y medir en la población real; un incentivo económico no reemplaza al diseño social.
+- **Fuente:** F-649 (🟢A; réplica revisada por pares, N=210)
+- **Leído a fondo:** 2026-10-16 (`WebSearch`; resumen del artículo y prensa; lectura débil, declarada)
+- **Conexión razonada, no forzada:** complementa la entrada 189 (la unanimidad es frágil). Sin cambio de tesis.
+
+### 209. La prueba del malvavisco: la mitad del efecto original, y dos tercios menos con controles
+F-740 (Watts, Duncan y Quan, *Psychological Science*, 2018). Réplica conceptual con datos del estudio NICHD (unos 918 niños, según prensa). En hijos de madres sin título universitario, un minuto más de espera a los 4 años predijo ~0,1 desviación estándar más de logro a los 15. Con controles de familia, habilidad temprana y hogar, la asociación cayó cerca de dos tercios. Los autores concluyen que cambiar solo la espera, sin cambiar las capacidades de fondo, tendría efectos mínimos. Lectura: el rasgo medido en un niño se confunde con su contexto.
+**Heurística:** cuando una conducta "predice" un resultado, restar primero el contexto antes de tratarla como palanca. Para segmentar clientes por paciencia o ahorro (sesgo del presente en `lapuerta`), no atribuirle a la paciencia lo que es ingreso y entorno del hogar.
+- **Fuente:** F-740 (🟢A; réplica conceptual revisada por pares; tamaño de muestra exacto sin ver en fuente oficial)
+- **Leído a fondo:** 2026-10-16 (`WebSearch`; resumen y reseña de la APS; lectura débil, declarada)
+- **Conexión razonada, no forzada:** misma lógica que la entrada 188 (un efecto grande sobre un constructo heterogéneo no es una palanca). Sin cambio de tesis.
+
+### 210. Un programa de umbral sube ventas mientras dura, pero el retorno depende de quién canjea
+F-811 (Taylor y Neslin, 2005, clásico). Cuasiexperimento con control emparejado en una cadena de supermercados de EE.UU.: un programa de 8 semanas con premio al llegar a un umbral subió +6% las ventas de tienda. La reseña secundaria añade +17,5% de gasto semanal en las 4 semanas tras canjear y un retorno estimado cercano a 400%, con solo ~20% de clientes canjeando. La búsqueda de hoy no devolvió el artículo; todas las cifras vienen de una sola reseña de un proveedor de lealtad. Lectura muy débil.
+**Heurística:** en un programa de recompensa, el retorno vive en la tasa de canje y en quién canjea, no en el promedio de miembros. Pedir primero esa distribución. Y si la cifra solo está en la web de quien vende lealtad, tratarla como pista, no como dato.
+- **Fuente:** F-811 (🟢A según el ledger; verificación solo secundaria; título y revista sin confirmar)
+- **Leído a fondo:** 2026-10-16 (`WebSearch`; el artículo no apareció; lectura muy débil, declarada)
+- **Conexión razonada, no forzada:** apoya la tesis 28 sin subir su confianza. Pendiente para `cronista`: confirmar título y revista de F-811.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6036,55 +6063,8 @@ F-756 (Hsiang, Meng & Cane, *Nature*, 2011). Panel global 1950-2004: en los tró
 
 - **2026-09-15** — *(Detalle podado y fusionado al resumen el 2026-10-15)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-16** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`; sin fast-forward, la rama ya estaba en `5aeb9c3`, el commit de la corrida de ayer,
-  2026-09-15) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas,
-  F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 16 corridas, **cero
-  fuentes nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde
-  entonces, trigesimocuarto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis
-  vigentes contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz
-  de confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde
-  el 2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
-  treinta y cinco días sin correr). **Poda de bitácora:** el bloque "2026-08-17" salió por completo
-  de la ventana de ~30 días (cutoff ≈2026-08-17) — lo fusioné con el bloque "2026-08-01 a 2026-08-16"
-  en un resumen ampliado "2026-08-01 a 2026-08-17"; no se pierde ningún dato porque el detalle de
-  cada tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
-  intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
-  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra
-  estable, contra `fuentes_leidas_lobo.md` (117 ya leídas) — 17 pendientes — y elegí 3 al azar sin
-  reemplazo (Python `random.sample`, sin semilla fija): F-60 (Goddard, Roudsari & Wyatt 2012, *JAMIA*,
-  revisión sistemática de sesgo de automatización, ya citada solo por su tasa agregada), F-64
-  (Damschroder et al., CFIR simplificado, ya citada solo por su función genérica de 5 dominios) y
-  F-120 (Chernev, Böckenholt & Goodman 2015, *Journal of Consumer Psychology*, meta-análisis de
-  choice overload). **Hallazgo de auditoría antes de leer F-120:** al ir a leerla a fondo detecté que
-  **ya se había leído** — es la misma "réplica activa" que la Intuición 31 (2026-08-17) describe por
-  nombre de autor sin dar su F-n, y su hallazgo (4 moderadores: complejidad, dificultad de tarea,
-  incertidumbre de preferencia, meta de decisión) ya está documentado ahí. Corregí el gap de tracking
-  en `fuentes_leidas_lobo.md` (fila retroactiva para F-120, fecha real 2026-08-17, con nota) en vez de
-  duplicar la lectura, y sorteé un reemplazo de la lista pendiente sin F-120: F-110 (revisión
-  sistemática de gatekeeping de médico general, ya citada solo por su veredicto agregado de
-  "evidencia mixta"). Las URLs directas de las tres finales (academic.oup.com, ncbi.nlm.nih.gov,
-  pmc.ncbi.nlm.nih.gov) dieron `EGRESS_BLOCKED` por el proxy del entorno; `WebSearch` sí funcionó y
-  permitió reconstruir detalle de mecanismo/hallazgo nuevo en las tres vía cobertura secundaria
-  convergente (Semantic Scholar/ResearchGate para F-60, Semantic Scholar/ResearchGate/ScienceOpen
-  para F-64, PubMed/BJGP para F-110), no solo el resumen de una línea ya citado. Sumé las entradas
-  118, 119 y 120 de Intuición acumulada: (118) los mitigadores documentados del sesgo de
-  automatización (F-60) son decisiones de diseño concretas — presentar el output de la IA como
-  información y no como recomendación, y hacer responsable al usuario de la exactitud de su decisión
-  final, no de su desempeño general — no "capacitar mejor", directamente accionable para el diseño
-  del piloto farmacia+triage; (119) el propio paper metodológico de CFIR simplificado (F-64) enseña
-  con su propio ejemplo a reorganizar los dominios del framework alrededor de dónde concentra la
-  señal real (ascender "necesidades del paciente" a dominio propio, partir "contexto interno" en
-  capas jerárquicas) en vez de aplicar la taxonomía de fábrica; (120) la revisión de gatekeeping
-  (F-110) encontró peor supervivencia de cáncer bajo gatekeeping **sin** asociación general con
-  demora en la derivación — la vía causal de daño real probablemente es la exactitud diagnóstica en
-  la puerta de entrada, no la velocidad, lo que exige medir esa exactitud directamente en el piloto,
-  no solo el tiempo hasta derivación. Ninguna tesis de negocio cambió de confianza numérica por esta
-  corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy sí matizan tesis 9
-  y 10 (piloto farmacia+triage) sin tocar su nivel de confianza. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy y con la fila retroactiva de
-  F-120. Bitácora con 29 días de historial (2026-08-18 a hoy) tras la poda de hoy — dentro de la
-  ventana de ~30 días.
+- **2026-09-16** — *(Detalle podado y fusionado al resumen el 2026-10-16)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-17** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward `5aeb9c3→350961c` que trajo consigo el propio commit del 2026-09-16 de esta
   opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
@@ -6705,3 +6685,5 @@ F-756 (Hsiang, Meng & Cane, *Nature*, 2011). Panel global 1950-2004: en los tró
 - **2026-10-14** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 126 pendientes → 123 tras hoy):** sorteo F-721, F-693 y F-582, leídas vía `WebSearch` (F-582 no apareció en la búsqueda y se apoya solo en la ficha; lectura débil, declarada). Entradas 202 (la brecha pagar-vender cambia con el procedimiento y las réplicas se contradicen), 203 (priming de la taza caliente: muestras pequeñas, réplicas multisitio sin efecto) y 204 (IA que ayuda dentro y daña fuera de su frontera; mapear el borde). Pendiente para `cronista`: F-721 no recoge las réplicas de 2011 y 2015. Poda: 09-14 fusionado al resumen; Bitácora cubre 2026-09-15 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-15** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 123 pendientes → 120 tras hoy):** sorteo F-682, F-676 y F-756, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada; ninguna de las tres cifras de la ficha pudo confirmarse hoy). Entradas 205 (ceguera por falta de atención: la tarea absorbe y lo evidente no se ve), 206 (bouba/kiki robusto entre lenguas, pero muestra por conveniencia y sin paso a decisiones) y 207 (clima-conflicto: el resultado depende del modelo y las réplicas discrepan). Pendiente para `cronista`: confirmar la muestra de F-676 (917) y de F-682 (192) en los artículos. Poda: 09-15 fusionado al resumen; Bitácora cubre 2026-09-16 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-16** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), +45 desde mi última lectura (F-801)**: el node nuevo de lealtad, gamificación y recompensas en retail (F-802 a F-846, 2026-10-15). **Integrado:** tesis 28 (el programa bien diseñado mueve la compra más que el juego; solo un experimento fuerte de gamificación; cero prueba causal en Perú/LatAm; confianza Media-baja porque casi todo se leyó por resumen). Ninguna confianza previa cambió. **Intuición (nivel 🟢A; 138 pendientes → 135 tras hoy, incluidas 16 🟢A nuevas):** sorteo F-649, F-740 y F-811, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada; F-811 no apareció y las cifras salen de una reseña de proveedor). Entradas 208 (Asch replica con 33% y el incentivo no lo borra), 209 (malvavisco: mitad del efecto, y dos tercios menos con controles) y 210 (programa de umbral: el retorno depende de quién canjea). Pendiente para `cronista`: confirmar título y revista de F-811. Poda: 09-16 fusionado al resumen; Bitácora cubre 2026-09-17 a hoy. `fuentes_leidas_lobo.md` actualizado.

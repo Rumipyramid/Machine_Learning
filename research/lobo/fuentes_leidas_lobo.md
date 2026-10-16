@@ -225,3 +225,6 @@
 | F-682 | 🟢 A | 2026-10-15 | Intuición 205 — ceguera por falta de atención: la tarea absorbe y la mitad no ve lo evidente; probar avisos con la tarea real (lectura débil) |
 | F-676 | 🟢 A | 2026-10-15 | Intuición 206 — bouba/kiki robusto entre lenguas pero muestra por conveniencia; efecto universal ≠ palanca de venta (lectura débil) |
 | F-756 | 🟢 A | 2026-10-15 | Intuición 207 — clima-conflicto (Nature 2011): el resultado depende de decisiones del modelo y las réplicas discrepan (lectura débil) |
+| F-649 | 🟢 A | 2026-10-16 | Intuición 208 — Asch replica en 2023 (33% de error; incentivo lo baja a 25%, no a cero); réplica abierta que confirma el efecto de laboratorio |
+| F-740 | 🟢 A | 2026-10-16 | Intuición 209 — malvavisco: la asociación cae a la mitad en la réplica y dos tercios más con controles; restar contexto antes de tratar una conducta como palanca (lectura débil) |
+| F-811 | 🟢 A | 2026-10-16 | Intuición 210 — programa de umbral +6% en ventas mientras dura; el retorno vive en la tasa y el perfil de canje (solo reseña de proveedor; lectura muy débil) |
