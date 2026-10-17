@@ -5880,6 +5880,27 @@ F-811 (Taylor y Neslin, 2005, clásico). Cuasiexperimento con control emparejado
 - **Leído a fondo:** 2026-10-16 (`WebSearch`; el artículo no apareció; lectura muy débil, declarada)
 - **Conexión razonada, no forzada:** apoya la tesis 28 sin subir su confianza. Pendiente para `cronista`: confirmar título y revista de F-811.
 
+### 211. El nulo de 17 laboratorios con protocolo fijo pesa más que el estudio original, aunque el original sea famoso
+F-700 (Wagenmakers et al., 2016, *Perspectives on Psychological Science*). Informe de réplica registrado: 17 laboratorios siguen un mismo protocolo revisado antes de recolectar datos. La diferencia de "gracia" entre sonreír y fruncir con el lápiz en la boca es 0,03 puntos (IC 95%: −0,11 a 0,16), frente a 0,82 del estudio de 1988. La búsqueda de hoy confirmó cifras y diseño en el resumen y en copias del artículo; no recogió la respuesta de los autores originales, así que el debate sobre la conclusión queda sin cubrir.
+**Heurística:** cuando existe una réplica múltiple preregistrada, esa cifra manda sobre la del estudio fundacional. Antes de usar un efecto "de manual" en un producto, buscar si tiene réplica de este tipo. Es la misma lección de las entradas 193 y 201, ahora con el caso más limpio.
+- **Fuente:** F-700 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-17 (`WebSearch`; resumen y copias del artículo; lectura débil, declarada)
+- **Conexión razonada, no forzada:** no toca ninguna tesis de seguros. Es criterio para evaluar cualquier efecto de "cognición encarnada" que alguien proponga como palanca.
+
+### 212. Una muestra sintética puede acertar en la media y fallar en lo que se decide con ella
+F-552 (Bisbee, Clinton, Dorff, Kenkel y Larson, 2024, *Political Analysis* 32(4):401-416). Los autores piden a ChatGPT 3.5 Turbo que adopte perfiles y puntúe 11 grupos sociopolíticos; frente a la encuesta real, las medias se parecen pero hay menos varianza, coeficientes de regresión distintos y respuestas que cambian con la redacción del pedido y con el paso de meses. La búsqueda de hoy confirmó autoría, revista y que usar la muestra sintética llevaría a menudo a conclusiones distintas; el texto completo del hallazgo no pudo leerse.
+**Heurística:** validar una muestra sintética con la media no basta. Exigir comparar dispersión, coeficientes y estabilidad ante cambios de redacción. Aplica a `lapuerta` si alguna vez se simula con un LLM en lugar de reglas.
+- **Fuente:** F-552 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-17 (`WebSearch`; ficha y resumen; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya la tesis 27 sin subir su confianza; es un solo estudio, con un modelo antiguo.
+
+### 213. Un estudio de caso de un solo evento enseña qué falló, no cuánto pagaría el mercado
+F-755 (Yglesias-González et al., 2023, *PLOS ONE* 18(9), DOI 10.1371/journal.pone.0290767). Primer estudio integral del Niño Costero 2017 en Perú (economía, salud y gobernanza): clasifica el evento entre los tres más fuertes en lluvia e inundación de la literatura, con pérdidas económicas y daños de salud significativos, y concluye que las políticas deben basarse en el riesgo local y no en lineamientos nacionales. La búsqueda de hoy no abrió el texto completo; las cifras de personas afectadas de la ficha (~1,9 M, ~6%) no se confirmaron. Una cita posterior habla de más de 100 muertos y más de US$3.000 millones de pérdidas.
+**Heurística:** un caso bien documentado sirve para ubicar el hueco (aquí, preparación y datos locales), no para dimensionar demanda de un producto. Para el tamaño del mercado hace falta otra fuente.
+- **Fuente:** F-755 (🟢A según el ledger; estudio de caso, no causal)
+- **Leído a fondo:** 2026-10-17 (`WebSearch`; resumen y citas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya la tesis 26 (el índice solo sirve si hay riesgo local bien medido) sin subir su confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6065,49 +6086,7 @@ F-811 (Taylor y Neslin, 2005, clásico). Cuasiexperimento con control emparejado
 
 - **2026-09-16** — *(Detalle podado y fusionado al resumen el 2026-10-16)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-17** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward `5aeb9c3→350961c` que trajo consigo el propio commit del 2026-09-16 de esta
-  opinión) y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a
-  F-468 sin huecos ni duplicados** — mismo tope exacto que las últimas 17 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  trigesimosexto día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
-  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
-  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde el
-  2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
-  treinta y seis días sin correr). **Poda de bitácora:** el bloque "2026-08-18" salió por completo
-  de la ventana de ~30 días (cutoff ≈2026-08-18) — lo fusioné con el bloque "2026-08-01 a 2026-08-17"
-  en un resumen ampliado "2026-08-01 a 2026-08-18"; no se pierde ningún dato porque el detalle de
-  cada tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria de
-  intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
-  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, cifra
-  estable — 3 filas mixtas (F-149, F-457, F-466) siguen correctamente excluidas por no empezar con
-  🟢A — contra `fuentes_leidas_lobo.md` (121 ya leídas) — 13 pendientes — y elegí 3 al azar sin
-  reemplazo: F-44 (Milford 2024, *Bioethics*, ya citado en tesis 10 solo por su matiz de triage
-  clínico), F-58 (Hemming & Taljaard 2020, *IJE*, ya citado en tesis 10 solo por el riesgo de sesgo
-  del stepped-wedge) y, tras descartar mi primer sorteo (F-149, correctamente excluido del universo
-  por tener rigor mixto 🔴/🟢 con primario no-A, no un error de esta corrida sino confirmación de que
-  el filtro estricto ya vigente desde el 2026-08-20 sigue funcionando), su reemplazo F-245 (Buçinca,
-  Malaya & Gajos 2021, *PACM HCI*/CSCW, citado solo por su hallazgo de reducción de sobreconfianza,
-  sin el trade-off de satisfacción). Las URLs directas de las cuatro (ncbi.nlm.nih.gov,
-  pmc.ncbi.nlm.nih.gov, academic.oup.com, dl.acm.org, arxiv.org) dieron `EGRESS_BLOCKED` por el
-  proxy del entorno; `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las tres vía
-  cobertura secundaria convergente (Wiley/PubMed para F-44, Research Outreach/NIH ODP para F-58,
-  la página del propio grupo Gajos/Buçinca en Harvard y ResearchGate para F-245), no solo el resumen
-  ya citado en tesis 10 (F-44, F-58) o en el ledger (F-245). Sumé las entradas 121, 122 y 123 de
-  Intuición acumulada: (121) igualar la métrica principal de un canal automatizado no iguala
-  automáticamente el valor total que aportaba el canal humano que reemplaza — generaliza fuera del
-  triage clínico el mecanismo que F-44 ya sostiene en tesis 10; (122) un diseño de prueba elegido
-  primero por su ventaja ética no exime de justificar por qué el diseño más riguroso no era viable —
-  precisa con la recomendación normativa de los propios autores (preferir el CRT paralelo si es
-  factible) lo que tesis 10 ya cita de F-58 solo como hallazgo de riesgo de sesgo; (123) la fricción
-  que reduce la sobre-confianza en una IA cuesta satisfacción declarada y ese costo no se reparte
-  parejo por segmento (Need for Cognition) — añade el costado de costo/heterogeneidad que las
-  intuiciones 18 (F-243) y 42 (F-246) del mismo clúster de investigación no habían registrado.
-  Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo
-  de intuición, aunque las tres entradas de hoy sí matizan tesis 9 y 10 (piloto farmacia+triage) sin
-  tocar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 30 días de historial (2026-08-19 a hoy) tras la poda de hoy — cumple la
-  ventana de ~30 días.
+- **2026-09-17** — *(Detalle podado y fusionado al resumen el 2026-10-17)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 - **2026-09-18** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
   `git pull`, fast-forward `5aeb9c3→3fa24e4`, el commit de la corrida de ayer, working tree limpio)
   y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468
@@ -6687,3 +6666,5 @@ F-811 (Taylor y Neslin, 2005, clásico). Cuasiexperimento con control emparejado
 - **2026-10-15** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 123 pendientes → 120 tras hoy):** sorteo F-682, F-676 y F-756, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada; ninguna de las tres cifras de la ficha pudo confirmarse hoy). Entradas 205 (ceguera por falta de atención: la tarea absorbe y lo evidente no se ve), 206 (bouba/kiki robusto entre lenguas, pero muestra por conveniencia y sin paso a decisiones) y 207 (clima-conflicto: el resultado depende del modelo y las réplicas discrepan). Pendiente para `cronista`: confirmar la muestra de F-676 (917) y de F-682 (192) en los artículos. Poda: 09-15 fusionado al resumen; Bitácora cubre 2026-09-16 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-16** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), +45 desde mi última lectura (F-801)**: el node nuevo de lealtad, gamificación y recompensas en retail (F-802 a F-846, 2026-10-15). **Integrado:** tesis 28 (el programa bien diseñado mueve la compra más que el juego; solo un experimento fuerte de gamificación; cero prueba causal en Perú/LatAm; confianza Media-baja porque casi todo se leyó por resumen). Ninguna confianza previa cambió. **Intuición (nivel 🟢A; 138 pendientes → 135 tras hoy, incluidas 16 🟢A nuevas):** sorteo F-649, F-740 y F-811, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada; F-811 no apareció y las cifras salen de una reseña de proveedor). Entradas 208 (Asch replica con 33% y el incentivo no lo borra), 209 (malvavisco: mitad del efecto, y dos tercios menos con controles) y 210 (programa de umbral: el retorno depende de quién canjea). Pendiente para `cronista`: confirmar título y revista de F-811. Poda: 09-16 fusionado al resumen; Bitácora cubre 2026-09-17 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-17** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 134 pendientes → 131 tras hoy):** sorteo F-700, F-552 y F-755, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 211 (el nulo de 17 laboratorios con protocolo fijo pesa más que el original), 212 (una muestra sintética acierta la media y falla dispersión y coeficientes) y 213 (un estudio de caso dice qué falló, no cuánto demanda hay). Pendiente para `cronista`: confirmar en el artículo las cifras de personas afectadas de F-755. Poda: 09-17 fusionado al resumen; Bitácora cubre 2026-09-18 a hoy. `fuentes_leidas_lobo.md` actualizado.

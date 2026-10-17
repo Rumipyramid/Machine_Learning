@@ -228,3 +228,6 @@
 | F-649 | 🟢 A | 2026-10-16 | Intuición 208 — Asch replica en 2023 (33% de error; incentivo lo baja a 25%, no a cero); réplica abierta que confirma el efecto de laboratorio |
 | F-740 | 🟢 A | 2026-10-16 | Intuición 209 — malvavisco: la asociación cae a la mitad en la réplica y dos tercios más con controles; restar contexto antes de tratar una conducta como palanca (lectura débil) |
 | F-811 | 🟢 A | 2026-10-16 | Intuición 210 — programa de umbral +6% en ventas mientras dura; el retorno vive en la tasa y el perfil de canje (solo reseña de proveedor; lectura muy débil) |
+| F-700 | 🟢 A | 2026-10-17 | Intuición 211 — el nulo de 17 laboratorios con protocolo fijo pesa más que el estudio original (lápiz en la boca: 0,03 vs 0,82; lectura débil) |
+| F-552 | 🟢 A | 2026-10-17 | Intuición 212 — la muestra sintética acierta la media y falla dispersión, coeficientes y estabilidad (lectura débil) |
+| F-755 | 🟢 A | 2026-10-17 | Intuición 213 — estudio de caso del Niño Costero 2017: dice qué falló, no cuánta demanda hay (lectura débil) |
