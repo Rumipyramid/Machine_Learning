@@ -231,3 +231,6 @@
 | F-700 | 🟢 A | 2026-10-17 | Intuición 211 — el nulo de 17 laboratorios con protocolo fijo pesa más que el estudio original (lápiz en la boca: 0,03 vs 0,82; lectura débil) |
 | F-552 | 🟢 A | 2026-10-17 | Intuición 212 — la muestra sintética acierta la media y falla dispersión, coeficientes y estabilidad (lectura débil) |
 | F-755 | 🟢 A | 2026-10-17 | Intuición 213 — estudio de caso del Niño Costero 2017: dice qué falló, no cuánta demanda hay (lectura débil) |
+| F-791 | 🟢 A | 2026-10-18 | Intuición 214 — seguro de inundación sube ~9-10% tras el evento y se apaga; vecinos a un tercio (lectura débil) |
+| F-809 | 🟢 A | 2026-10-18 | Intuición 215 — canje de recompensas eleva compra antes y después, pero es observacional (lectura débil) |
+| F-585 | 🟢 A | 2026-10-18 | Intuición 216 — IA conversacional persuade con hechos, algunos inexactos (lectura débil) |
