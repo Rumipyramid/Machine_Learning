@@ -234,3 +234,6 @@
 | F-791 | 🟢 A | 2026-10-18 | Intuición 214 — seguro de inundación sube ~9-10% tras el evento y se apaga; vecinos a un tercio (lectura débil) |
 | F-809 | 🟢 A | 2026-10-18 | Intuición 215 — canje de recompensas eleva compra antes y después, pero es observacional (lectura débil) |
 | F-585 | 🟢 A | 2026-10-18 | Intuición 216 — IA conversacional persuade con hechos, algunos inexactos (lectura débil) |
+| F-716 | 🟢 A | 2026-10-19 | Intuición 217 — el recuerdo del dolor sigue al pico y al final, no a la duración; cuidar el cierre del siniestro (observacional; lectura débil) |
+| F-646 | 🟢 A | 2026-10-19 | Intuición 218 — el diseño escalonado evalúa lo ya desplegado; pedir plan de análisis antes de aceptar el piloto (lectura débil) |
+| F-679 | 🟢 A | 2026-10-19 | Intuición 219 — el efecto del rojo sobre el desempeño no sobrevive a réplicas ni a corrección por sesgo de publicación (lectura débil) |

@@ -5922,6 +5922,27 @@ F-585 (Lin, Czarnek, Lewis, White, Berinsky, Costello, Pennycook y Rand, 2025, *
 - **Leído a fondo:** 2026-10-18 (`WebSearch`; nota de prensa; lectura débil, declarada)
 - **Conexión razonada, no forzada:** apoya la cautela sobre agentes conversacionales de venta sin subir ninguna confianza. Es política, no seguros.
 
+### 217. Lo que el paciente recuerda del dolor sigue al pico y al final, no a la duración
+F-716 (Redelmeier y Kahneman, 1996, *Pain* 66(1):3-8). Observacional, con dolor registrado en tiempo real en colonoscopía (n=154) y litotricia (n=133): el dolor total recordado sigue al pico y a los últimos minutos, y los procedimientos largos no se recuerdan como peores. El estudio de los minutos extra con el endoscopio quieto es otro, posterior (Kahneman, Redelmeier y Katz); la divulgación suele mezclarlos.
+**Heurística:** el cliente juzga el servicio por su peor momento y por cómo termina, no por el promedio. En un siniestro, cuidar el cierre (pago, llamada final) vale más que acortar el trámite medio. Es observacional y de contexto clínico: se prueba en el flujo de reclamos propio antes de tratarlo como palanca.
+- **Fuente:** F-716 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-19 (`WebSearch`; secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya el diseño de la experiencia de siniestro; no sube ninguna tesis.
+
+### 218. El diseño escalonado se usa para evaluar lo que ya se despliega, y eso limita lo que prueba
+F-646 (Mdege, Man, Taylor y Torgerson, 2011, *J Clin Epidemiol* 64(9):936-948). Revisión de 25 ensayos hasta enero de 2010: el diseño escalonado se usa sobre todo para evaluar intervenciones durante su despliegue rutinario, muchas ya consideradas más útiles que dañinas. Los autores marcan análisis dispares y reporte insuficiente.
+**Heurística:** que un piloto sea escalonado no lo vuelve prueba fuerte: suele medir algo que ya se iba a desplegar, con tendencias temporales que hay que modelar. Pedir el plan de análisis antes de aceptar el resultado.
+- **Fuente:** F-646 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-19 (`WebSearch`; resumen oficial y secundarias; el recuento de 25 se confirmó)
+- **Conexión razonada, no forzada:** sostiene la cautela sobre el piloto de farmacias y triage con IA; sin cambio de confianza.
+
+### 219. El efecto del rojo sobre el desempeño no sobrevive a las réplicas
+F-679 (Elliot et al., 2007, *J Exp Psychol: General* 136(1):154-168). Seis experimentos de muestras pequeñas: ver rojo antes de una prueba empeora el desempeño. El meta-análisis de Gnambs (2020, 67 efectos, 38 muestras) halla d≈-0,06 en anagramas y d≈-0,04 en pruebas de conocimiento; el único efecto significativo (razonamiento, d≈-0,34) desaparece al corregir sesgo de publicación, y los estudios iniciales son los de efecto mayor.
+**Heurística:** un efecto de color o de ambiente con muestras chicas y efectos que se encogen con el tiempo no es palanca de diseño. No rediseñar una interfaz de cotización por eso.
+- **Fuente:** F-679 (🟢A según el ledger; el ledger no recoge la réplica de Gnambs: pendiente para `cronista`)
+- **Leído a fondo:** 2026-10-19 (`WebSearch`; secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** misma lección que las entradas 203 y 211; sin cambio de tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6108,47 +6129,8 @@ F-585 (Lin, Czarnek, Lewis, White, Berinsky, Costello, Pennycook y Rand, 2025, *
 - **2026-09-16** — *(Detalle podado y fusionado al resumen el 2026-10-16)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
 - **2026-09-17** — *(Detalle podado y fusionado al resumen el 2026-10-17)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-- **2026-09-18** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` +
-  `git pull`, fast-forward `5aeb9c3→3fa24e4`, el commit de la corrida de ayer, working tree limpio)
-  y verifiqué `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468
-  sin huecos ni duplicados** — mismo tope exacto que las últimas 18 corridas, **cero fuentes
-  nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces,
-  trigesimoséptimo día seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes
-  contra ese mismo tope: ninguna quedó desalineada con la evidencia y no forcé ningún matiz de
-  confianza solo por completar el paso — la revisión profunda de `cronista` sigue sin correr desde
-  el 2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva
-  treinta y siete días sin correr). **Poda de bitácora:** el bloque "2026-08-19" salió por completo
-  de la ventana de ~30 días (cutoff ≈2026-08-19) — lo fusioné con el bloque "2026-08-01 a 2026-08-18"
-  en un resumen ampliado "2026-08-01 a 2026-08-19"; no se pierde ningún dato porque el detalle de
-  cada tesis e intuición de ese día ya vive en sus propias secciones con fecha. **La rutina diaria
-  de intuición sí pudo correr hoy:** recalculé por script el universo 🟢A del ledger con el filtro
-  estricto (marcador de rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**,
-  misma cifra que las últimas corridas — 3 filas mixtas (F-149, F-457, F-466) siguen correctamente
-  excluidas por no empezar con 🟢A — contra `fuentes_leidas_lobo.md` (124 ya leídas tras la corrida
-  de ayer) — 10 pendientes — y elegí 3 al azar sin reemplazo: F-433 (Henard & Szymanski 2001,
-  *Journal of Marketing Research*, citado en el ledger solo por sus cinco predictores top de éxito
-  de producto nuevo), F-42 (Omaolo/Finlandia, ya citado en tesis 10 y en la revisión profunda de
-  `cronista` del 2026-07-29 solo por seguridad/coincidencia exacta) y F-159 (MT-Bench/Chatbot
-  Arena, ya citado en `_nodes/evaluacion-calidad-agentes-conversacionales-ia.md` solo por la
-  metodología general, sin las magnitudes de sesgo por modelo). Las URLs directas de las tres
-  (www.ncbi.nlm.nih.gov, arxiv.org, journals.sagepub.com) dieron `EGRESS_BLOCKED` por el proxy del
-  entorno; `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las tres vía cobertura
-  secundaria convergente (JMIR Human Factors/University of Helsinki para F-42, el PDF indexado de
-  arXiv + cobertura secundaria para F-159, Semantic Scholar + el meta-análisis actualizador para
-  F-433), no solo el resumen de una línea ya citado. Sumé las entradas 124, 125 y 126 de Intuición
-  acumulada: (124) un solo estudio de triage puede reportar cuatro métricas de desempeño que no se
-  mueven juntas (exact-match, tolerante a un nivel, sensibilidad/especificidad, % seguro) — F-42
-  ya se citaba con dos de las cuatro; (125) la robustez de un LLM-as-judge ante manipulación
-  adversarial depende del modelo juez elegido, con más de 10x de diferencia documentada entre
-  GPT-4 (8.7% de fallo) y Claude-v1/GPT-3.5 (>90%) en el mismo ataque de verbosidad — afila las
-  intuiciones 20 y 90 del mismo dominio; (126) los predictores canónicos de éxito de producto nuevo
-  de un meta-análisis de 2001 pueden tener menos poder hoy — un meta-análisis posterior encontró
-  erosión sistemática de esos mismos factores, generalizando fuera de diseño/innovación el patrón
-  que ya sostenía la intuición 95. Ninguna tesis de negocio cambió de confianza numérica por esta
-  corrida — es el mecanismo paralelo de intuición, aunque la entrada 124 sí profundiza tesis 10 sin
-  tocar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 30 días de historial (2026-08-20 a hoy) tras la poda de hoy — cumple la
-  ventana de ~30 días.
+- **2026-09-18** — *(Detalle podado y fusionado al resumen el 2026-10-19)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-19** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
@@ -6691,3 +6673,5 @@ F-585 (Lin, Czarnek, Lewis, White, Berinsky, Costello, Pennycook y Rand, 2025, *
 - **2026-10-17** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 134 pendientes → 131 tras hoy):** sorteo F-700, F-552 y F-755, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 211 (el nulo de 17 laboratorios con protocolo fijo pesa más que el original), 212 (una muestra sintética acierta la media y falla dispersión y coeficientes) y 213 (un estudio de caso dice qué falló, no cuánto demanda hay). Pendiente para `cronista`: confirmar en el artículo las cifras de personas afectadas de F-755. Poda: 09-17 fusionado al resumen; Bitácora cubre 2026-09-18 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-18** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. Lectura profunda de tres 🟢A nuevas, las tres con lectura débil declarada: F-791 (ventana de demanda tras un siniestro, ~10% y se apaga), F-809 (canje de recompensas, observacional) y F-585 (IA persuade con hechos no siempre exactos). Entradas 214 a 216. Pendiente para `cronista`: título y DOI de F-809.
+
+- **2026-10-19** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 129 pendientes → 126 tras hoy):** sorteo F-716, F-646 y F-679, leídas vía `WebSearch` (secundarias; lectura débil, declarada). Entradas 217 (el recuerdo del dolor sigue al pico y al final), 218 (el diseño escalonado evalúa lo ya desplegado) y 219 (el efecto del rojo no sobrevive a las réplicas). Pendiente para `cronista`: F-679 no recoge el meta-análisis de Gnambs (2020). Poda: 09-18 fusionado al resumen; Bitácora cubre 2026-09-19 a hoy. `fuentes_leidas_lobo.md` actualizado.
