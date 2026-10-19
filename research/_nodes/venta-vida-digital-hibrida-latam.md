@@ -231,3 +231,5 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización de seguros en mercados emergentes]] — extiende la comparación de este node a África, India y Sudeste Asiático, y suma los experimentos aleatorizados sobre momento del pago y confianza; mismo patrón: los mejores modelos combinan digital con persona.
+- [[literatura-baja-digitalizacion-seguros-por-region|Literatura sobre la baja digitalización de los seguros, por región]] — ubica Brasil, Chile y Colombia dentro del panorama regional y global.
+- [[senales-insurtech-mundo|Señales del mundo insurtech]] — financiamiento y ecosistema insurtech de América Latina.

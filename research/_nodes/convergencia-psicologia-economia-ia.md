@@ -242,3 +242,4 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — los usuarios sintéticos en UX (F-604) y la IA como canal de descubrimiento (F-634) son tendencias que allí se confrontan; la regla de "medir conducta, no autoinforme" aplica igual.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros (Mundo vs. Perú)]] — Lemonade (F-636) y Vitality (F-637, F-638) son los únicos casos de conducta + IA en seguros con métricas; falta el caso peruano.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — el estado de replicación en humanos de los efectos que los LLM "replican" (F-545 reprodujo Milgram); su PF4 prueba si un LLM también reproduce los efectos que en humanos no replicaron.
+- [[senales-insurtech-mundo|Señales del mundo insurtech]] — resultados 2026 de Lemonade, Hippo y Root, y el peso de la IA en el financiamiento.

@@ -1999,3 +1999,4 @@ aleatoria de cualquiera de las dos lo devolvería a 16%, y así debe registrarse
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — confronta la tendencia de usuarios sintéticos en UX con la literatura (refutada para magnitudes y segmentos, útil para dirección) y documenta la IA como canal de descubrimiento de compras (F-634).
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — capa contra la que confrontar la psicología del color (el efecto del rojo no replicó, F-680) y las "leyes" de UX que circulan en el gremio.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — caso de impacto declarado vs. demostrado: las cifras de empresas (Starbucks, Prime) son correlación; la evidencia independiente es modesta.
+- [[senales-insurtech-mundo|Señales del mundo insurtech]] — datos de 2026 sobre rentabilidad y financiamiento de insurtechs.

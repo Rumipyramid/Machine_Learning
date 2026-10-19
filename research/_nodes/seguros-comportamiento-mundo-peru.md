@@ -338,3 +338,4 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — Lemonade (F-636) y Vitality (F-637, F-638) como únicos casos de conducta + IA en seguros con métricas publicadas; ninguno peruano.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado real de replicación de las barreras conductuales que este node lista (aversión a la pérdida §5.4, sesgo del presente §5.11).
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización de seguros en mercados emergentes]] — qué intervenciones sobre confianza, momento del pago y renovación tienen respaldo en mercados parecidos a Perú, y qué hipótesis de edad se sostiene.
+- [[literatura-baja-digitalizacion-seguros-por-region|Literatura sobre la baja digitalización de los seguros, por región]] — contexto regional y marco regulatorio peruano de la digitalización.

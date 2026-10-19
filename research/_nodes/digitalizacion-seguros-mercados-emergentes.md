@@ -359,3 +359,5 @@ El modelo de usuarios sintéticos ya incluye generación, acceso digital y banca
 - [[transicion-venta-fria-a-opt-in|De venta fría a opt-in]] — consentimiento y llamadas no solicitadas (Indecopi) que aquí aparecen como fricción movida.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — contraste: allí también hay una sola prueba fuerte y nada causal en LatAm.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (`lapuerta`)]] — las variables de generación, acceso digital y bancarización que el §2 sugiere probar.
+- [[literatura-baja-digitalizacion-seguros-por-region|Qué dice la literatura sobre la baja digitalización de los seguros, por región]] — el mismo tema leído desde la literatura, de lo global a Perú.
+- [[senales-insurtech-mundo|Señales del mundo insurtech]] — financiamiento, IA, seguros embebidos y regulación hoy.

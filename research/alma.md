@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-15.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-19.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -77,6 +77,8 @@ por afirmación cuando corresponda.
 | `_nodes/fenomenos-psicologicos.md` | **Capa transversal** — Fenómenos psicológicos clásicos y su estado de replicación (44): influencia social (Asch, Milgram, Stanford, espectador, disonancia), percepción (tiempo, bouba/kiki, color-emoción, Gestalt, cegueras de atención), cognición encarnada y priming, juicio y memoria (pico-final, dotación, aversión a la pérdida, señuelo, anclaje); reglas RF1-RF6, preguntas PF1-PF6 | 2026-10-04 | v1.0 (F-647 a F-741, leído por resumen; todo en el grafo semántico) |
 | `_nodes/lealtad-gamificacion-recompensas-retail.md` | Gamificación, recompensas y lealtad en retail (`/trinidad`: empírica + social + negocio): catálogo de 31 intervenciones con diseño, método y efecto; solo 1 experimento fuerte de gamificación; sin evidencia causal en LatAm; F-802 a F-846 | 2026-10-15 | v1.0 |
 | `_nodes/digitalizacion-seguros-mercados-emergentes.md` | Digitalización de seguros en mercados emergentes (`/trinidad`: empírica + social/regulatoria + negocio): qué se digitaliza y para qué, inventario de intervenciones (momento del pago, prueba social, recordatorios, acompañamiento), quién queda fuera, hipótesis de edad (matizada), otras industrias, transferibilidad a Perú y mapa de oportunidades; F-847 a F-902 | 2026-10-15 | v1.0 |
+| `_nodes/literatura-baja-digitalizacion-seguros-por-region.md` | Qué dice la literatura sobre la baja digitalización de los seguros, de lo global a Perú (global, África, Asia, América Latina, Sudamérica, Perú): barreras de demanda, de oferta y regulatorias; F-903 a F-930 | 2026-10-19 | v1.0 |
+| `_nodes/senales-insurtech-mundo.md` | Señales del mundo insurtech a oct-2026: capital y concentración en IA, consolidación, IA en aseguradoras, fraude con IA, seguros embebidos y paramétricos, regulación y confianza del cliente; con fuerza de evidencia y lectura para Perú; F-931 a F-945 | 2026-10-19 | v1.0 |
 
 ---
 

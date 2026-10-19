@@ -139,3 +139,4 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros (Mundo vs. Perú)]] — la presión regulatoria sobre explicación previa y reclamos (§3.9) es el contexto donde HC1/HC6 tendrían que probarse.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — el marco más amplio en que se inscribe este node (cinco frentes); aporta lo nuevo de 2025-2026 en persuasión (F-585, F-586, F-589) y compañía (F-587, F-588).
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — obediencia a la autoridad (§2.2) y fluidez de procesamiento (§5.7) como base psicológica de la sobre-confianza en respuestas de IA con tono experto.
+- [[senales-insurtech-mundo|Señales del mundo insurtech]] — encuestas recientes: el cliente acepta la IA para preguntar, no para decidir el reclamo.

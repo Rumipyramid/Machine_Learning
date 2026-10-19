@@ -402,3 +402,4 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (`lapuerta`)]] — se propone una variable
   de exposición a inundación/Niño análoga a la exposición sísmica (§6.1); no aplicada.
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización de seguros en mercados emergentes]] — los experimentos de seguro de lluvia (pagos visibles, riesgo de base, subsidios) respaldan o condicionan el paramétrico con pago a billetera propuesto aquí.
+- [[literatura-baja-digitalizacion-seguros-por-region|Literatura sobre la baja digitalización de los seguros, por región]] — marco peruano (sandbox, paramétricos, microseguros) y brechas de protección globales.
