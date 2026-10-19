@@ -178,6 +178,12 @@
    "cites": 0
   },
   {
+   "id": "plan-investigacion-tienda-lima-norte-2026-10-19.md",
+   "type": "output",
+   "lines": 0,
+   "cites": 0
+  },
+  {
    "id": "F-1",
    "type": "fuente",
    "rigor": "B",
@@ -7961,6 +7967,33 @@
    "autor": "Perú Retail (citando a Google/Ipsos y a la Cámara de Comercio de Lima)",
    "anio": "2021-2023",
    "huerfana": false
+  },
+  {
+   "id": "F-867",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "¿Cuál es el perfil de un consumidor de Lima Norte?",
+   "autor": "Perú Retail (citando un estudio de Ipsos)",
+   "anio": "s/f (página fechada 2026; datos posiblemente de 2019-2021)",
+   "huerfana": true
+  },
+  {
+   "id": "F-868",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Nota sobre Lima Norte y sus centros comerciales",
+   "autor": "Perú Retail (citando a un ejecutivo de Mallplaza)",
+   "anio": "2019",
+   "huerfana": true
+  },
+  {
+   "id": "F-869",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "El trabajo independiente como alternativa para generar ingresos en Lima Norte",
+   "autor": "Observatorio Socio Económico Laboral (OSEL) Lima Norte, Universidad Católica Sedes Sapientiae",
+   "anio": "2010",
+   "huerfana": true
   }
  ],
  "edges": [
@@ -8826,6 +8859,26 @@
   {
    "s": "informe-el-nino-oportunidades-rimac-2026-10-07.md",
    "t": "fenomeno-el-nino-impacto-personas",
+   "k": "deriva"
+  },
+  {
+   "s": "plan-investigacion-tienda-lima-norte-2026-10-19.md",
+   "t": "experiencias-phygital",
+   "k": "deriva"
+  },
+  {
+   "s": "plan-investigacion-tienda-lima-norte-2026-10-19.md",
+   "t": "material-visual-venta-consultiva",
+   "k": "deriva"
+  },
+  {
+   "s": "plan-investigacion-tienda-lima-norte-2026-10-19.md",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "deriva"
+  },
+  {
+   "s": "plan-investigacion-tienda-lima-norte-2026-10-19.md",
+   "t": "transicion-venta-fria-a-opt-in",
    "k": "deriva"
   },
   {
@@ -13305,7 +13358,7 @@
   }
  ],
  "meta": {
-  "generado": "2026-10-15",
+  "generado": "2026-10-19",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -13579,6 +13632,16 @@
      "D": 20,
      "E": 3,
      "B": 1
+    }
+   },
+   {
+    "fecha": "2026-10-19",
+    "nuevas": 3,
+    "acumuladas": 868,
+    "AB": 0,
+    "rigor": {
+     "D": 2,
+     "C": 1
     }
    }
   ],
@@ -15250,20 +15313,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 845,
+    "fuentes": 865,
     "rigor": {
      "B": 125,
-     "A": 303,
+     "A": 318,
      "C": 184,
-     "D": 182,
+     "D": 187,
      "?": 15,
      "E": 36
     },
-    "nodes": 20,
+    "nodes": 21,
     "outputs": 5,
-    "wikilinks": 124,
+    "wikilinks": 134,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 738,
+    "fuentes_citadas_en_nodes": 758,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -15280,11 +15343,11 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 2002,
+     "lines": 2003,
      "cites": 274
     },
     "fecha": "2026-10-15",
-    "commit": "7d17c10",
+    "commit": "7faa05a",
     "fuente": "git"
    }
   ],
