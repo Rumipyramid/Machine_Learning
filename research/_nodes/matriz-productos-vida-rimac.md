@@ -181,3 +181,4 @@ lámina o deck ya construido que use "170%" como cifra puntual.
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — glosario de
   cliente que deliberadamente no cubre el detalle técnico de coberturas (IAFA, EG, ITP,
   PEI, DPP); ese detalle vive en el §3 de este node.
+- [[clientes-potenciales-vida-peru|Potenciales clientes de Vida Individual en Perú]] — mapea cada motivación de cliente a un producto de esta matriz y usa la dispensa de pago y el desempleo involuntario como respuesta a "qué pasa si dejo de pagar".

@@ -374,3 +374,4 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — es el node que enlaza a este como aplicación concreta: experimentar en la propia población y diseñar a nivel de producto, no solo de mensaje, es el patrón que aquí se aplica a explicar un producto de seguros.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — su §3 remite a este node para la pregunta abierta de cómo hacer comprensibles la cobertura y el coaseguro a quien decide.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — Gestalt (§3.10), señuelo (§5.5) y anclaje (§5.9): estado de replicación de los mecanismos que explican cómo se leen las tablas de planes.
+- [[clientes-potenciales-vida-peru|Potenciales clientes de Vida Individual en Perú]] — aplica las reglas de cifra headline y datos incompletos a todo el contenido de marketing de Vida.

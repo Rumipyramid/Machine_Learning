@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-15.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-20.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -76,6 +76,7 @@ por afirmación cuando corresponda.
 | `_nodes/convergencia-psicologia-economia-ia.md` | Convergencia psicología + economía + IA (`/trinidad`: empírica + social + negocio): LLMs como sujetos simulados y sus fallas, modelos fundacionales de cognición (Centaur), sesgos en la IA, agentes como actores económicos, encuestados sintéticos como negocio; implicaciones para `lapuerta` (§6); tablero PE1-PE8 | 2026-10-04 | v1.0 (iteración 1; F-543 a F-645, todo leído por resumen) |
 | `_nodes/fenomenos-psicologicos.md` | **Capa transversal** — Fenómenos psicológicos clásicos y su estado de replicación (44): influencia social (Asch, Milgram, Stanford, espectador, disonancia), percepción (tiempo, bouba/kiki, color-emoción, Gestalt, cegueras de atención), cognición encarnada y priming, juicio y memoria (pico-final, dotación, aversión a la pérdida, señuelo, anclaje); reglas RF1-RF6, preguntas PF1-PF6 | 2026-10-04 | v1.0 (F-647 a F-741, leído por resumen; todo en el grafo semántico) |
 | `_nodes/lealtad-gamificacion-recompensas-retail.md` | Gamificación, recompensas y lealtad en retail (`/trinidad`: empírica + social + negocio): catálogo de 31 intervenciones con diseño, método y efecto; solo 1 experimento fuerte de gamificación; sin evidencia causal en LatAm; F-802 a F-846 | 2026-10-15 | v1.0 |
+| `_nodes/clientes-potenciales-vida-peru.md` | Potenciales clientes de Vida Individual en Perú (Change Agents y Prosperous): qué los mueve y frena, y qué hacer en marketing — cruza el estudio interno del CoE con `/trinidad` (empírica + social + negocio) | 2026-10-20 | v1.0 (F-847 a F-868) |
 
 ---
 
@@ -87,6 +88,7 @@ por afirmación cuando corresponda.
 | `_outputs/guia-triaje-200-usuarios-sinteticos-2026-08-05.md` — simulación de la "Guía de preguntas" (estudio de triaje digital + kit) sobre 200 usuarios sintéticos `lapuerta` (18-65, NSE A/B/C). ⚠️ Parcial: 8 de 16 preguntas quedaron sin responder porque el prototipo no fue alcanzable desde el entorno | `modelo-salud-ia-farmacias-peru`, `modelo-personas-sinteticas`, `futuro-asesores-seguros-venta-digital` | 2026-08-05 | `requiere refresh` (2026-10-04: `modelo-salud-ia-farmacias-peru` corrigió la atribución de F-59 sobre el diseño escalonado) |
 | `_outputs/back-to-basics-presentacion-lowfi-2026-07-27.html` — presentación low-fi de Back to Basics (HTML) | `proyecto-back-to-basics-ffvv-vida`, `transicion-venta-fria-a-opt-in`, `futuro-asesores-seguros-venta-digital` | 2026-07-27 | `requiere refresh` (los nodes cambiaron después de esa fecha; no verificado contra el contenido) |
 | `_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md` — informe de diseño y transformación de negocio: impacto de El Niño en la vida de las personas y portafolio de oportunidades para RIMAC (O1-O9, hoja de ruta de 90 días) | `fenomeno-el-nino-impacto-personas` (v1.1), `seguros-comportamiento-mundo-peru`, `modelo-salud-ia-farmacias-peru` | 2026-10-07 | `al día` |
+| `_outputs/potenciales-clientes-vida-marketing-2026-10-20.html` — versión revisada del estudio de potenciales clientes de Vida, con implicaciones para marketing (posicionamiento, mapa de mensajes, qué decir y qué no, territorios de contenido, momentos, reglas y pruebas) | `clientes-potenciales-vida-peru`, `proyecto-back-to-basics-ffvv-vida`, `matriz-productos-vida-rimac`, `material-visual-venta-consultiva`, `glosario-seguro-vida-peru` | 2026-10-20 | `al día` |
 
 > **Estado**: `al día` o `requiere refresh`.
 

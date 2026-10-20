@@ -213,3 +213,4 @@ responder con honestidad.
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC]] — el vocabulario de
   coberturas (IAFA, EG, ITP, PEI, DPP) de ese node es el nivel de detalle técnico que este
   glosario deliberadamente no cubre en su primera capa — evitar duplicar, referenciar.
+- [[clientes-potenciales-vida-peru|Potenciales clientes de Vida Individual en Perú]] — convierte la pregunta "¿vale la pena?" y el precio sobreestimado en herramientas de contenido (calculadora, simulador de salida).

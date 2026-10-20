@@ -973,3 +973,4 @@ Marketing).
   reglas C1 y C2 (argumentar por **mecanismo**, no por multiplicador; prometer **acumulación**, no
   transformación) aplican directamente a cómo se sustenta ante el VP el valor del rediseño de la
   experiencia de venta.
+- [[clientes-potenciales-vida-peru|Potenciales clientes de Vida Individual en Perú]] — lleva las cuatro motivaciones de Vida Individual a mensajes, contenido y pruebas de marketing.
