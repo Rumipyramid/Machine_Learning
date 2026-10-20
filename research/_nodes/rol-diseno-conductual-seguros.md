@@ -3,7 +3,7 @@
 > Documento de **posicionamiento y definición de rol**. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v2.1** (v2.0: cambio de premisa, el rol facilita y también frena, y se descarta «diseño de agencia», §1.4; v2.1: el nombre queda abierto para que lo elija el equipo, §5)
 > Origen: reflexión del usuario (2026-10-20): *"quiero retar la cuestión del behavioral design… lo conductual se restringe a un dominio de lo puramente observable… quiero construir una definición completa, relevante y competitiva del rol"*, más verificación de antecedentes y rastros de mercado (`/seeker` + pista de negocio).
-> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-922** (F-916 a F-922: fricción y nombre, v2.0) · ya existentes que se reusan: F-109, F-110 (filtro del médico de cabecera), F-245 (fricción cognitiva ante la IA), F-342 (autorización previa), F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-346 (Anthem y la «emergencia evitable»), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
+> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-926** (F-916 a F-922: fricción y nombre, v2.0; F-923 a F-926: vanguardia 2024-2026) · ya existentes que se reusan: F-231 (comprensión en seguros), F-563, F-564 (Centaur y su crítica), F-586 (diálogos con IA), F-109, F-110 (filtro del médico de cabecera), F-245 (fricción cognitiva ante la IA), F-342 (autorización previa), F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-346 (Anthem y la «emergencia evitable»), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
 > Output derivado: deck "El diseño conductual ha muerto. Larga vida al diseño conductual." (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH; antes "Diseño de agencia" y "Arquitectura de la conducta").
 > Pregunta permanente: **¿qué rol viene después del behavioral design, cómo se define, cómo se llama y qué tiene que saber para competir?**
 
@@ -38,7 +38,15 @@ Este node define un rol y su argumento. **No** repite el estado de la disciplina
 
 **El límite, entonces, no está en lo que el equipo hace sino en la definición:** el trabajo ya toca varias capas, pero el nombre "behavioral design" y la idea de "cambiar conductas" lo siguen reduciendo al acto, y así se le pide y se le mide. En Lima, el diseño sigue siendo "un ave enjaulada" (palabras del usuario): vive en pantallas y campañas. **Lo que falta es que entre a otros ámbitos de la sociedad:** la salud pública, la escuela, la ciudad, el Estado.
 
-**La vanguardia del campo va en la misma dirección:**
+**La vanguardia del campo va en la misma dirección.** Lo más reciente (2024-2026, actualizado 2026-10-20 a pedido del usuario, porque la lista anterior se quedaba en 2021):
+- **Probar muchas ideas a la vez:** un megaestudio con 25 intervenciones y 32.059 personas: casi todas bajaron la hostilidad política, solo 6 movieron las actitudes antidemocráticas (F-923).
+- **El efecto depende de quién:** un torneo de 11 intervenciones climáticas en 63 países (59.440 personas) dio efectos pequeños, distintos según la creencia previa, y ninguno en una conducta costosa como plantar árboles (F-924).
+- **Elegir a quién por su efecto, no por su riesgo:** con aprendizaje automático, empujar a la mitad correcta de 53 mil estudiantes logró ~75% del efecto de empujar a todos (F-925).
+- **La IA entra al laboratorio:** un diálogo con IA redujo ~20% creencias conspirativas durante dos meses (F-586), y un modelo entrenado con 160 experimentos predice decisiones humanas (F-563), con críticas de sobreajuste (F-564).
+- **Auditar la fricción que sobra:** la OCDE acompañó auditorías de *sludge* de 16 equipos de 14 países y prepara un método internacional (F-926).
+- **Medir la comprensión en seguros:** resúmenes, preguntas frecuentes e íconos mejoraron 21% la comprensión del seguro de vida en dos ensayos (F-231, informe sin revisión por pares).
+
+Las bases de esa vanguardia:
 - El nudge aislado rinde poco a escala: 1,4 puntos en ensayos de dos unidades de nudge frente a 8,7 en artículos académicos (F-21); al corregir el sesgo de publicación, el efecto promedio deja de ser claro (F-17).
 - Los efectos dependen de la persona y el contexto, y hay que estudiar esa variación (F-910).
 - Los megaestudios prueban muchas intervenciones a la vez en la población real (F-20).
