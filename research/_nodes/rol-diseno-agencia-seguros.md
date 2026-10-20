@@ -3,7 +3,7 @@
 > Documento de **posicionamiento y definición de rol**. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v1.0**
 > Origen: reflexión del usuario (2026-10-20): *"quiero retar la cuestión del behavioral design… lo conductual se restringe a un dominio de lo puramente observable… quiero construir una definición completa, relevante y competitiva del rol"*, más verificación de antecedentes y rastros de mercado (`/seeker` + pista de negocio).
-> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-913** · ya existentes que se reusan: F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA).
+> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-915** · ya existentes que se reusan: F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
 > Output derivado: deck "Diseño de agencia" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH).
 > Pregunta permanente: **¿qué rol viene después del behavioral design, cómo se define, cómo se llama y qué tiene que saber para competir?**
 
@@ -31,8 +31,7 @@ Este node define un rol y su argumento. **No** repite el estado de la disciplina
 | Rahwan y otros, 2019 (F-596) | La conducta de las máquinas es objeto de la ciencia del comportamiento | La capa de las máquinas |
 
 **Lo que el equipo ya demostró (corregido 2026-10-20 a pedido del usuario: no solo cambiamos conductas ni solo dentro del negocio).** El equipo entrega efectos medidos, y no solo en conducta. Fuentes internas: `TABLERO_BEHOLDER.md`, `reportes/generar_matriz_status.py` y `research/yopersona/perfil.md`:
-- **Bienestar 360 (Q-10):** programa de hábitos saludables (piloto con colaboradores) medido en bienestar: +3 puntos Wellby, satisfacción 4,6/5, NPS 78. El impacto está en la vida de las personas, fuera de una métrica comercial.
-- **Riesgo cardiovascular:** una intervención conductual logró cambios médicos medibles y un NPS alto entre los participantes.
+- **Bienestar 360 (Q-10):** programa de hábitos para personas con riesgo cardiovascular (piloto con colaboradores). Se midió en tres planos: cambios médicos medibles, bienestar (+3 puntos Wellby) y experiencia (satisfacción 4,6/5, NPS 78). El impacto está en la vida de las personas, fuera de una métrica comercial. *(Corregido 2026-10-20: el usuario confirmó que la intervención de riesgo cardiovascular de su perfil y Bienestar 360 son el mismo proyecto.)*
 - **Guías resumidas (Q-1, Q-3):** trabajan la comprensión de la póliza (capa mente).
 - **Cobranzas B2B (Q-4):** la investigación encontró un correo de conciliación equivocado; corregirlo ayuda a liberar S/600 mil provisionados (capa de los objetos).
 - **Fuerza de ventas:** intervención sistémica con asesores y jefaturas, con impacto en productividad (capa social).
@@ -58,6 +57,15 @@ Ahí se libra la batalla más grande del diseño: **quien no diseña, vive dentr
 ### 1.2 El diseño puede valer más que el humanismo (tesis del usuario, no un hallazgo)
 
 El humanismo declara valores; el diseño los convierte en condiciones de vida. Puede valer más **con dos condiciones**: (1) de escala: que diseñen más personas y en más ámbitos, fuera de la agencia y de la pantalla; (2) ética: que diseñen por los motivos correctos, declarando a quién sirve cada diseño, para que facilitar no se vuelva manipular. Sin la segunda, la primera es peligrosa.
+
+### 1.3 La conducta se mueve (añadido 2026-10-20, idea del usuario)
+
+La conducta no es un interruptor que se prende una vez: **cambia, se apaga, vuelve y se resiste**. Por eso el rol diseña trayectorias, no momentos, y mide en el tiempo.
+- **Cambia, a su propio ritmo:** no hay un número mágico de días para formar un hábito; lavarse las manos en un hospital toma semanas e ir al gimnasio, meses (F-915).
+- **Se apaga:** tras una inundación, la contratación de seguros sube ~10% al año siguiente y vuelve a su nivel en ~15 años (F-791).
+- **Vuelve:** con los informes de consumo de energía, el ahorro sube con cada envío, cae entre uno y otro, y con el tiempo una parte se vuelve hábito (F-914).
+- **Se resiste:** si la intervención se siente como imposición aparece la reactancia; un default se percibe más amenazante para la libertad que una recomendación (F-337).
+- **En casa:** Bienestar 360 está hoy en fase de mantenimiento, porque un hábito también se cuida.
 
 ## 2. La conducta ocurre en entornos con condiciones distintas
 
@@ -93,7 +101,15 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 
 **Ejemplo transversal:** que alguien vaya a atención ambulatoria y no a emergencias depende de seis preguntas: ¿el canal está a un toque? (1) ¿confía en que le resuelven? (2) ¿qué le dice su familia? (3) ¿la app y la red de clínicas facilitan lo correcto? (4) ¿el copago premia la opción ambulatoria? (5) ¿qué responde el triaje con IA y cuándo deriva a una persona? (6).
 
-**El seguro como campo de juego:** prevención, uso de servicios, siniestro y fraude, confianza, distribución y riesgo de IA. Este último es nuevo: unas aseguradoras excluyen la IA (F-886) y otras la cubren con auditoría previa (F-888, F-889).
+**El seguro como canal de bienestar:** un seguro reparte el riesgo y, para funcionar, influye en la conducta (prevención, uso de servicios, siniestros, confianza, venta y riesgo de IA; unas aseguradoras excluyen la IA, F-886, y otras la cubren con auditoría previa, F-888, F-889). Bien diseñado puede hacer más: proteger el bienestar antes, durante y después del golpe.
+
+### 3.1 El caso que lo vuelve tangible: El Niño 2026-27 (añadido 2026-10-20, idea del usuario)
+
+Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para RIMAC (`research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`). **Son propuestas del informe, no proyectos en marcha.**
+
+- **Lo que está en juego:** el ENFEN proyecta un Niño Costero extraordinario (F-780); 19,9 M de peruanos viven en zonas de riesgo alto de inundación (F-772). En 2017 el seguro pagó US$428 M, sobre todo por activos de empresas (F-773), mientras 9 de cada 10 madres inundadas de Piura pasaron hambre severa (F-751) y los hogares se recuperaron con donaciones (F-752). Los niños expuestos miden y aprenden menos una década después (F-744 a F-746).
+- **El Niño en seis capas:** acto (reforzar la casa antes del pico; el 78% del norte ya lo prioriza, F-771) · mente (informar con calma, no con miedo) · lo social (llegar por cajas, cooperativas, municipios y empleadores) · objetos (pago por billetera, sin peritaje; verificador de cobertura) · reglas (paramétrico colectivo, permitido por la SBS desde set-2026, F-786; pagar 5 días antes redujo 36% los días sin comer, F-793) · máquinas (índices satelitales y alertas, auditados por riesgo de base).
+- **Cómo llega el diseño a la escuela y a la salud pública:** a través del seguro, con una institución que contrata en beneficio de su gente. Hogar («bono de lluvia») · primera infancia («Primeros 1.000 días») · escuela (póliza colectiva; solo 187 de ~50 mil colegios tienen seguro contra desastres, F-779; 3.222 dañados en 2017, F-763) · salud pública (preparar la red y el triaje digital para el pico de diarrea infantil y dengue) · municipio y región (liquidez el día 1).
 
 ## 4. Rastros del rol en el mercado
 
@@ -134,13 +150,15 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 ## 5.1 Manifiesto y propósito (versión del deck, 2026-10-20)
 
 1. Diseñamos condiciones, no clics.
-2. Medimos efectos en lo que la gente hace, entiende y vive.
-3. Miramos a la persona, su entorno y las reglas del sistema.
-4. Decimos a quién sirve cada diseño.
-5. Tratamos a las máquinas como actores que también se diseñan.
-6. Salimos de la pantalla: la salud, la escuela, la ciudad y el Estado también son nuestro campo.
+2. Diseñamos trayectorias, no momentos: la conducta cambia, se apaga, vuelve y se resiste.
+3. Medimos efectos en lo que la gente hace, entiende y vive.
+4. Miramos a la persona, su entorno, las reglas y las máquinas.
+5. Decimos a quién sirve cada diseño.
+6. Salimos de la pantalla: el hogar, la escuela, la salud y la ciudad también son nuestro campo.
 
-**Propósito:** llevar el diseño a donde se decide la vida de las personas, y hacerlo por los motivos correctos.
+**Propósito:** ampliar lo que el diseño aporta, a las personas, sus comunidades, su ciudad, su país y el planeta, y demostrarlo con evidencia, no con promesas. *(Corregido 2026-10-20: la versión anterior, «llevar el diseño a donde se decide la vida de las personas», era demasiado amplia y no decía lo que el usuario quiere decir.)*
+
+**Hilo narrativo del deck (v5, 28 diapositivas):** (1) Lo que ya hacemos: logros reales y un nombre que nos queda chico, con precedentes y vanguardia · (2) Cómo vemos la conducta: condiciones, tiempo, entornos y seis capas · (3) Lo que está en juego: la batalla de las reglas, las máquinas y el sentido del diseño · (4) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (5) El rol que proponemos: rastros, nombre, definición, aprendizajes, pasos y manifiesto.
 
 ## 6. Ámbitos que construyen el rol
 
@@ -151,8 +169,8 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 ## 7. Próximos pasos propuestos al equipo
 
 1. Ser dueños de un indicador de conducta, bienestar o riesgo, no de entregables (Bienestar 360 muestra que se puede).
-2. Sumar psicometría y etnografía al kit, junto al experimento.
-3. Un piloto: ambulatorio vs. emergencias, trabajado en las seis capas.
+2. Sumar psicometría, observación en terreno y medición en el tiempo al kit, junto al experimento.
+3. Un piloto para esta temporada de El Niño: el seguro como canal de bienestar del hogar (el caso ambulatorio vs. emergencias queda como ejemplo de las seis capas).
 4. Sentarse con TI y los equipos de IA a diseñar cómo se evalúan los asistentes.
 5. Declarar a quién sirve cada diseño, y llevar el método fuera de la empresa: salud pública, escuela, ciudad.
 
@@ -169,3 +187,4 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 - [[comportamiento-ia-alucinaciones-desalineamiento|Comportamiento de la IA]] — la capa 6 y el argumento de por qué la disciplina gana relevancia: las fallas de la IA son fallas de incentivos.
 - [[conducta-humano-ia|Conducta humano-IA]] — la conducta conjunta persona-IA de la capa 6 (sobre-confianza, adulación).
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado de seguros (Mundo vs. Perú)]] — los datos de confianza y del broker que alimentan las capas 2 y 3.
+- [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — el caso que vuelve tangible el rol (§3.1): el seguro como canal de bienestar del hogar, la escuela y la salud pública.
