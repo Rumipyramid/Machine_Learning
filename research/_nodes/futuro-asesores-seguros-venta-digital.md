@@ -364,6 +364,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
 
 ## Conexiones
 
+- [[riesgo-proteccion-seguros-sectores-populares-peru|Riesgo, protección y seguros en sectores populares del Perú]] — en sectores populares la confianza viaja por lazos personales (reputación familiar, paisanaje), lo que refuerza el valor del intermediario humano.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — ese node documenta que en Perú, específicamente, la
   confianza sube con intermediación de un broker (§3.3); este node aporta el marco

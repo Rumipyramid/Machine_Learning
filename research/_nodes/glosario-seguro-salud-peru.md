@@ -181,6 +181,7 @@ Por eso este glosario funciona mejor como parte de un sistema:
 
 ## Conexiones
 
+- [[riesgo-proteccion-seguros-sectores-populares-peru|Riesgo, protección y seguros en sectores populares del Perú]] — la confusión entre "seguro" y SIS/EsSalud aparece allí como barrera de capacidad documentada en sectores populares.
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros]] — la falta de
   información/comprensión es la causa #1 de desconfianza en Perú (§3.3 de ese node); este
   glosario es una respuesta directa a esa brecha.

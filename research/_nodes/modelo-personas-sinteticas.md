@@ -59,6 +59,7 @@ la disciplina]] identifica en la frontera de "AI Behavioral Science": pocos equi
 tienen simulación de consumidores calibrada con microdato nacional, no solo supuestos.
 
 ## Conexiones
+- [[riesgo-proteccion-seguros-sectores-populares-peru|Riesgo, protección y seguros en sectores populares del Perú]] — propone variables candidatas: generación migrante, pertenencia a junta o club provinciano y fuente principal de ayuda ante imprevistos (no aplicadas).
 - Propuesta pendiente desde → [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la
   vida de las personas]] §6.1: variable de exposición a inundación/Niño análoga a `exposicion_sismica`
   (no aplicada; decide `cerrajero`/usuario).

@@ -393,6 +393,7 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
 
 ## Conexiones
 
+- [[riesgo-proteccion-seguros-sectores-populares-peru|Riesgo, protección y seguros en sectores populares del Perú]] — mismo patrón de sustitutos informales (redes, préstamos, venta de bienes) documentado para imprevistos cotidianos en sectores populares.
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros (Mundo vs. Perú)]] —
   ese node documenta el ~3,3% de hogares con seguro de desastres. Este node muestra lo que esa brecha
   significa en una catástrofe real (2017: ~7% del daño asegurado, F-773) y lo que viene en 2026-27.

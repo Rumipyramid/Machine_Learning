@@ -603,6 +603,7 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
 
 ## Conexiones
 
+- [[riesgo-proteccion-seguros-sectores-populares-peru|Riesgo, protección y seguros en sectores populares del Perú]] — confirma con datos ENAHO que la farmacia es el primer punto de atención para la mitad de quienes buscan ayuda (F-871).
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — las
   olas de diarrea, dengue y malaria asociadas a El Niño (su §3.2) son picos de demanda de atención
   primaria y farmacia en el norte: caso de estrés para este modelo.

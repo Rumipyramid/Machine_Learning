@@ -352,6 +352,7 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
 
 ## Conexiones
 
+- [[riesgo-proteccion-seguros-sectores-populares-peru|Riesgo, protección y seguros en sectores populares del Perú]] — agrega la "prueba práctica" de confianza (experimento del IEP con Juntos, F-853) como complemento del material visual en una tienda física.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — este node aplica el problema general de confianza/déficit
   de información (§1.2-1.3 de ese node) al momento específico de explicación del producto
