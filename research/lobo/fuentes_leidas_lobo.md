@@ -237,3 +237,6 @@
 | F-716 | 🟢 A | 2026-10-19 | Intuición 217 — el recuerdo del dolor sigue al pico y al final, no a la duración; cuidar el cierre del siniestro (observacional; lectura débil) |
 | F-646 | 🟢 A | 2026-10-19 | Intuición 218 — el diseño escalonado evalúa lo ya desplegado; pedir plan de análisis antes de aceptar el piloto (lectura débil) |
 | F-679 | 🟢 A | 2026-10-19 | Intuición 219 — el efecto del rojo sobre el desempeño no sobrevive a réplicas ni a corrección por sesgo de publicación (lectura débil) |
+| F-818 | 🟢 A | 2026-10-20 | Intuición 220 — gamificar en tienda sin compromiso real puede bajar el uso de la oferta; el quiz es fricción (lectura débil) |
+| F-596 | 🟢 A | 2026-10-20 | Intuición 221 — Machine behaviour es un marco (Tinbergen), no un hallazgo; pedir el experimento (lectura débil) |
+| F-657 | 🟢 A | 2026-10-20 | Intuición 222 — Stanford: guardias instruidos y datos sesgados; el guion indujo la conducta; disputa abierta (lectura débil) |

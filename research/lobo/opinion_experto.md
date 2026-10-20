@@ -5943,6 +5943,27 @@ F-679 (Elliot et al., 2007, *J Exp Psychol: General* 136(1):154-168). Seis exper
 - **Leído a fondo:** 2026-10-19 (`WebSearch`; secundarias; lectura débil, declarada)
 - **Conexión razonada, no forzada:** misma lección que las entradas 203 y 211; sin cambio de tesis.
 
+### 220. Un juego en la tienda puede restar: si el cliente no entra al juego, usa menos la oferta
+F-818 (Högberg, Shams y Wästlund, 2019, *J Retail Consum Serv* 50:298-304; autoría confirmada hoy, el ledger decía "no verificados"). Experimento de campo en un supermercado con clientes reales, con seguimiento ocular, registro del celular y elección. Un grupo recibía la oferta solo tras un quiz y otro la recibía directa. Quien no hizo el quiz usó más la oferta. Resultado principal: nulo o mixto, y el juego sin compromiso real puede bajar la conversión.
+**Heurística:** poner una barrera lúdica delante de un beneficio es un costo de fricción, no un regalo. Antes de gamificar un canje o una cotización, probar la versión sin juego como control. Contrasta con el experimento del centro comercial asiático (F-807), donde insignias y tableros sí subieron ventas: el contexto manda.
+- **Fuente:** F-818 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-20 (`WebSearch`; ficha de IDEAS y nota de la universidad de Karlstad; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la tesis 28 (el programa bien diseñado mueve más que el juego); no cambia su confianza.
+
+### 221. Estudiar la conducta de una IA como se estudia a un animal: un marco útil, no un resultado
+F-596 (Rahwan et al., 2019, *Nature* 568:477-486). Es un artículo de perspectiva, sin datos primarios. Propone estudiar a las máquinas con las cuatro preguntas de Tinbergen (mecanismo, desarrollo, función, historia) y pide métodos de la etología y la psicología, no solo de ingeniería. Los propios autores admiten que la analogía con los organismos es imperfecta.
+**Heurística:** un marco ordena preguntas; no demuestra nada. Cuando alguien cite "la ciencia de la conducta de las máquinas" para respaldar una decisión, pedir el experimento que lo sostiene. Útil sí para planear la auditoría de un triage con IA: qué hace (mecanismo), cómo cambia con el uso (desarrollo), para qué sirve (función) y qué historia de datos arrastra.
+- **Fuente:** F-596 (🟢A según el ledger; peer-reviewed, pero agenda y no estudio)
+- **Leído a fondo:** 2026-10-20 (`WebSearch`; solo secundarias, sin el texto completo; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya la tesis 10 (el fallo de un triage con IA está en la validación); sin cambio de confianza.
+
+### 222. Un clásico desmontado por el archivo: antes de citar un experimento famoso, pedir quién dio las instrucciones
+F-657 (Le Texier, 2019, *American Psychologist* 74(7):823-839). Investigación de archivo y entrevistas a 15 participantes: los guardias recibieron instrucciones precisas sobre cómo tratar a los presos, no se les dijo que eran sujetos de estudio, y la recolección de datos fue sesgada. Zimbardo respondió que el entrenamiento no invalida la lección central; esa disputa sigue abierta.
+**Heurística:** cuando una conducta "emerge" en un experimento, mirar si el diseño la pidió. Vale igual para un piloto de venta o de triage: si el guion induce la conducta, el resultado mide el guion. Los detalles de las instrucciones salen de resúmenes de prensa; el texto del artículo no se pudo abrir.
+- **Fuente:** F-657 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-20 (`WebSearch`; resumen oficial y secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** misma lección que las entradas 203, 211 y 219; sin cambio de tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6131,52 +6152,7 @@ F-679 (Elliot et al., 2007, *J Exp Psychol: General* 136(1):154-168). Seis exper
 - **2026-09-17** — *(Detalle podado y fusionado al resumen el 2026-10-17)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 - **2026-09-18** — *(Detalle podado y fusionado al resumen el 2026-10-19)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-19** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 19 corridas, **cero fuentes nuevas** registradas
-  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, trigesimoctavo día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
-  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
-  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
-  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva treinta y ocho días sin correr).
-  **Poda de bitácora:** el bloque "2026-08-20" salió por completo de la ventana de ~30 días (cutoff
-  ≈2026-08-20) — lo fusioné con el bloque "2026-08-01 a 2026-08-19" en un resumen ampliado
-  "2026-08-01 a 2026-08-20"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
-  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
-  hoy:** recalculé por script el universo 🟢A del ledger con el filtro estricto (marcador de
-  rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, misma cifra que las últimas
-  corridas — contra `fuentes_leidas_lobo.md` (127 ya leídas tras la corrida de ayer) — **7
-  pendientes** (F-18, F-54, F-61, F-94, F-123, F-247, F-251) — y elegí 3 al azar sin reemplazo
-  (`random.sample`, sin semilla fija): F-123, F-61 y F-247. Las tres bloqueadas por el proxy en su
-  URL directa (openaccess.city.ac.uk, sciencedirect.com, dl.acm.org); `WebSearch` sí funcionó y
-  permitió reconstruir detalle nuevo en las tres vía cobertura secundaria convergente (City Research
-  Online/PubMed para F-61, PMC/ResearchGate/PubMed para F-123, el repositorio del propio grupo de
-  investigación en cs.ubc.ca para F-247), no solo el resumen de una línea ya citado. Sumé las
-  entradas 127, 128 y 129 de Intuición acumulada: (127) el estudio empírico de F-61 (26 médicos
-  generales, 20 escenarios) da los números que faltaban detrás de un rate agregado de sesgo de
-  automatización: exactitud pre-consejo 50,38% → post-consejo 58,27% (neto +8pp), pero el consejo
-  incorrecto volteó una decisión correcta a incorrecta en 5,2% de los casos — un daño real enmascarado
-  por el neto positivo — y el único mediador de quién cambia de decisión fue la experiencia clínica,
-  no la confianza general en el sistema; da ancla cuantitativa a la intuición 118 (F-60, mismos
-  autores) y un criterio operacional para el piloto farmacia+triage (tesis 9/10): reportar la tasa de
-  volteo, no solo el delta neto, y focalizar capacitación por experiencia del operador, no por
-  "generar confianza"; (128) hallazgo de eco de cita: el resumen de F-123 en el ledger describe la
-  literatura general de icon arrays (formato de frecuencia supera al porcentaje), pero el paper
-  específico (Recchia, Lawrence & Freeman 2022) testeó algo distinto y más angosto — cómo mostrar
-  *imprecisión*/rangos de incertidumbre dentro de un icon array — y su hallazgo real es que **no hubo
-  efecto del formato de visualización de rango** entre sus cuatro brazos; misma familia que las
-  intuiciones 79 y 104, matiza cualquier pieza de `material-visual-venta-consultiva` o `lapuerta` que
-  quiera apoyarse en esta fuente específica para justificar formato de frecuencia; (129) el
-  seguimiento de F-247 (Findlater & McGrenere, *IJHCS* 2010 y CHI 2008) agrega que la alta precisión
-  adaptativa no solo baja la conciencia de funciones — también perjudica el desempeño en tareas
-  nuevas, y su beneficio de eficiencia es mayor justo cuando la pantalla es más chica (mobile) — el
-  mismo contexto donde ese costo pega más fuerte; profundiza tesis 21/24 con una advertencia concreta
-  para cualquier personalización mobile-first en el proyecto. Ninguna tesis de negocio cambió de
-  confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las tres
-  entradas de hoy sí matizan tesis 9/10 y 21/24 y el material de venta consultiva. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
-  historial (2026-08-21 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.
+- **2026-09-19** — *(Detalle podado y fusionado al resumen el 2026-10-20)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 - **2026-09-20** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
@@ -6675,3 +6651,5 @@ F-679 (Elliot et al., 2007, *J Exp Psychol: General* 136(1):154-168). Seis exper
 - **2026-10-18** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. Lectura profunda de tres 🟢A nuevas, las tres con lectura débil declarada: F-791 (ventana de demanda tras un siniestro, ~10% y se apaga), F-809 (canje de recompensas, observacional) y F-585 (IA persuade con hechos no siempre exactos). Entradas 214 a 216. Pendiente para `cronista`: título y DOI de F-809.
 
 - **2026-10-19** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 129 pendientes → 126 tras hoy):** sorteo F-716, F-646 y F-679, leídas vía `WebSearch` (secundarias; lectura débil, declarada). Entradas 217 (el recuerdo del dolor sigue al pico y al final), 218 (el diseño escalonado evalúa lo ya desplegado) y 219 (el efecto del rojo no sobrevive a las réplicas). Pendiente para `cronista`: F-679 no recoge el meta-análisis de Gnambs (2020). Poda: 09-18 fusionado al resumen; Bitácora cubre 2026-09-19 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-20** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 126 pendientes → 123 tras hoy):** sorteo F-818, F-596 y F-657, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 220 (un juego en la tienda puede restar si el cliente no entra), 221 (marco de conducta de máquinas: ordena preguntas, no prueba nada) y 222 (el guion del experimento de Stanford indujo la conducta). Corrección de autoría aplicada en F-818 (Högberg, Shams y Wästlund). Pendiente para `cronista`: F-596 y F-657 sin texto completo verificado. Poda: 09-19 fusionado al resumen; Bitácora cubre 2026-09-20 a hoy. `fuentes_leidas_lobo.md` actualizado.
