@@ -141,9 +141,9 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 
 **Recomendación: dos nombres.** El concepto, para el pensamiento y la marca: *diseño de agencia*. El título, para el mercado: *Behavioral Systems Designer*.
 
-**Definición corta:** *Diseña y mide las condiciones (cognitivas, sociales, materiales, institucionales y algorítmicas) bajo las cuales personas, instituciones y máquinas deciden y actúan.* No menciona el seguro a propósito (corregido 2026-10-20: la versión anterior decía "frente al riesgo" y ataba el rol al seguro): el seguro es el campo de prueba, no el límite.
+**Definición corta:** *Buscamos entender y diseñamos las condiciones (mentales, sociales, materiales, institucionales y tecnológicas) bajo las cuales personas, instituciones y máquinas deciden y actúan.* (Corregido 2026-10-20 a pedido del usuario: antes decía "diseña y mide"; el verbo de partida es entender, no medir.) No menciona el seguro a propósito (corregido 2026-10-20: la versión anterior decía "frente al riesgo" y ataba el rol al seguro): el seguro es el campo de prueba, no el límite.
 
-**Definición completa:** el rol diseña sistemas de agencia: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Su unidad de trabajo no es la pantalla: es el efecto medido en lo que la gente hace (conducta), entiende (comprensión) y vive (bienestar y salud). Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
+**Definición completa:** el rol busca entender y diseña sistemas de agencia: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Su unidad de trabajo no es la pantalla: es el efecto medido en lo que la gente hace (conducta), entiende (comprensión) y vive (bienestar y salud). Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
 
 **Las tres formas del deck** tienen un solo significado en todo el documento: ○ persona (capas 1-2), □ entorno o institución (capas 3-4), △ sistema de reglas e intereses (capas 5-6).
 
