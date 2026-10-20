@@ -1,7 +1,7 @@
 # Behavioral design: estado de la disciplina y del mercado
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-10-04 · Versión: v1.1
+> Fecha de elaboración: 2026-07-12 · Última actualización: 2026-10-20 · Versión: v1.1
 > (migrado desde `research/behavioral_design_360.md` a Many Brains, sin cambios de fondo)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta: **¿cómo le va al behavioral design como disciplina y mercado, y qué se
@@ -318,3 +318,4 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — desarrolla con evidencia la frontera "AI Behavioral Science" (F-27) que este node identificó: sujetos sintéticos y sus fallas, ML que genera hipótesis, y la contracción de la consultoría conductual (F-629).
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos: qué sobrevive a la replicación]] — capa de base: estado de replicación de los efectos de laboratorio (anclaje, encuadre, aversión a la pérdida, priming, agotamiento del ego) que los nudges aplicados de este node presuponen.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — aplicación concreta a retail: casi no hay experimentos aleatorizados; el mejor resultado de gamificación viene de un solo experimento (F-807) y persiste tras retirarlo.
+- [[rol-diseno-agencia-seguros|El rol después del behavioral design: diseño de agencia]] — propone el rol que sigue a este estado de la disciplina: seis capas de agencia (acto, mente, lo social, las cosas, las reglas, las máquinas), con el seguro como campo de juego.
