@@ -3,7 +3,7 @@
 > Documento de **posicionamiento y definición de rol**. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v1.0**
 > Origen: reflexión del usuario (2026-10-20): *"quiero retar la cuestión del behavioral design… lo conductual se restringe a un dominio de lo puramente observable… quiero construir una definición completa, relevante y competitiva del rol"*, más verificación de antecedentes y rastros de mercado (`/seeker` + pista de negocio).
-> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-915** · ya existentes que se reusan: F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
+> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-915** · ya existentes que se reusan: F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-346 (Anthem y la «emergencia evitable»), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
 > Output derivado: deck "Diseño de agencia" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH).
 > Pregunta permanente: **¿qué rol viene después del behavioral design, cómo se define, cómo se llama y qué tiene que saber para competir?**
 
@@ -15,7 +15,7 @@ Este node define un rol y su argumento. **No** repite el estado de la disciplina
 
 ## 1. La tesis
 
-**El rol no es "behavioral design" en sentido estrecho. Es diseñar las condiciones bajo las cuales personas, grupos, organizaciones, objetos y máquinas deciden y actúan.** El seguro es su mejor campo de juego, porque es una institución hecha para gobernar la conducta frente al riesgo.
+**El rol no es "behavioral design" en sentido estrecho. Es diseñar las condiciones bajo las cuales personas, grupos, organizaciones, objetos y máquinas deciden y actúan.** El seguro es su mejor campo de juego: reparte el riesgo y, para funcionar, tiene que influir en la conducta.
 
 **La crítica, con su matiz.** La práctica del behavioral design se quedó con el **acto individual observable** (un clic, un pago, una cita) porque su método, el experimento con grupo de control, mide bien actos y mal todo lo demás. Quedan fuera la mente (psicometría, metacognición), lo social y la agencia de las cosas. Matiz: la economía conductual es cognitiva en teoría; el encierro viene de la vara de éxito, no de la teoría.
 
@@ -30,9 +30,9 @@ Este node define un rol y su argumento. **No** repite el estado de la disciplina
 | Verbeek, 2011 (F-900) | La tecnología media las decisiones morales; diseñarla es diseñar conducta | El encuadre ético |
 | Rahwan y otros, 2019 (F-596) | La conducta de las máquinas es objeto de la ciencia del comportamiento | La capa de las máquinas |
 
-**Lo que el equipo ya demostró (corregido 2026-10-20 a pedido del usuario: no solo cambiamos conductas ni solo dentro del negocio).** El equipo entrega efectos medidos, y no solo en conducta. Fuentes internas: `TABLERO_BEHOLDER.md`, `reportes/generar_matriz_status.py` y `research/yopersona/perfil.md`:
+**Lo que el equipo ya demostró (corregido 2026-10-20 a pedido del usuario: no solo cambiamos conductas ni solo dentro del negocio).** El equipo ya entrega efectos medidos en más de un plano, no solo en conducta; donde el efecto aún no se mide, se dice. Fuentes internas: `TABLERO_BEHOLDER.md`, `reportes/generar_matriz_status.py` y `research/yopersona/perfil.md`:
 - **Bienestar 360 (Q-10):** programa de hábitos para personas con riesgo cardiovascular (piloto con colaboradores). Se midió en tres planos: cambios médicos medibles, bienestar (+3 puntos Wellby) y experiencia (satisfacción 4,6/5, NPS 78). El impacto está en la vida de las personas, fuera de una métrica comercial. *(Corregido 2026-10-20: el usuario confirmó que la intervención de riesgo cardiovascular de su perfil y Bienestar 360 son el mismo proyecto.)*
-- **Guías resumidas (Q-1, Q-3):** trabajan la comprensión de la póliza (capa mente).
+- **Guías resumidas (Q-1, Q-3, en curso):** rediseñan la póliza para que la persona entienda qué tiene (capa mente). Su efecto aún no se mide: el tablero solo tiene un impacto estimado.
 - **Cobranzas B2B (Q-4):** la investigación encontró un correo de conciliación equivocado; corregirlo ayuda a liberar S/600 mil provisionados (capa de los objetos).
 - **Fuerza de ventas:** intervención sistémica con asesores y jefaturas, con impacto en productividad (capa social).
 
@@ -99,7 +99,7 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 | 5. Las reglas | Incentivos, precios, contratos, regulación | Economía, diseño de mecanismos | Deducibles, capitación, prevención con recompensa, paramétrico |
 | 6. Las máquinas | Conducta de agentes de IA y conducta conjunta persona-IA | Evaluaciones, auditorías | La empresa responde por su chatbot (F-884); asegurar IA exige auditarla (F-888, F-889) |
 
-**Ejemplo transversal:** que alguien vaya a atención ambulatoria y no a emergencias depende de seis preguntas: ¿el canal está a un toque? (1) ¿confía en que le resuelven? (2) ¿qué le dice su familia? (3) ¿la app y la red de clínicas facilitan lo correcto? (4) ¿el copago premia la opción ambulatoria? (5) ¿qué responde el triaje con IA y cuándo deriva a una persona? (6).
+**Ejemplo transversal:** que alguien vaya a atención ambulatoria y no a emergencias depende de seis preguntas: ¿el canal está a un toque? (1) ¿confía en que le resuelven? (2) ¿qué le dice su familia? (3) ¿la app y la red de clínicas facilitan lo correcto? (4) ¿el copago premia la opción ambulatoria? (5) ¿qué responde el triaje con IA y cuándo deriva a una persona? (6). **La trampa:** si la persona vive el cambio como ahorro de la aseguradora y no como cuidado, se resiste. En 2018 Anthem dejó de cubrir las emergencias que juzgaba «evitables»; los médicos de emergencia la demandaron y en enero de 2019 tuvo que modificar la política (F-346).
 
 **El seguro como canal de bienestar:** un seguro reparte el riesgo y, para funcionar, influye en la conducta (prevención, uso de servicios, siniestros, confianza, venta y riesgo de IA; unas aseguradoras excluyen la IA, F-886, y otras la cubren con auditoría previa, F-888, F-889). Bien diseñado puede hacer más: proteger el bienestar antes, durante y después del golpe.
 
@@ -109,6 +109,7 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 
 - **Lo que está en juego:** el ENFEN proyecta un Niño Costero extraordinario (F-780); 19,9 M de peruanos viven en zonas de riesgo alto de inundación (F-772). En 2017 el seguro pagó US$428 M, sobre todo por activos de empresas (F-773), mientras 9 de cada 10 madres inundadas de Piura pasaron hambre severa (F-751) y los hogares se recuperaron con donaciones (F-752). Los niños expuestos miden y aprenden menos una década después (F-744 a F-746).
 - **El Niño en seis capas:** acto (reforzar la casa antes del pico; el 78% del norte ya lo prioriza, F-771) · mente (informar con calma, no con miedo) · lo social (llegar por cajas, cooperativas, municipios y empleadores) · objetos (pago por billetera, sin peritaje; verificador de cobertura) · reglas (paramétrico colectivo, permitido por la SBS desde set-2026, F-786; pagar 5 días antes redujo 36% los días sin comer, F-793) · máquinas (índices satelitales y alertas, auditados por riesgo de base).
+- **Cuándo, según la priorización del informe:** saber si se está cubierto y cobrar sin fricción, antes de diciembre · bono de lluvia, piloto en dic-ene con una caja del norte · salud estacional, ene-jun 2027 · escuela y municipio, 2027-28 (dependen de compras públicas) · primera infancia, largo plazo (la evidencia más sólida, pero necesita cofinanciamiento).
 - **Cómo llega el diseño a la escuela y a la salud pública:** a través del seguro, con una institución que contrata en beneficio de su gente. Hogar («bono de lluvia») · primera infancia («Primeros 1.000 días») · escuela (póliza colectiva; solo 187 de ~50 mil colegios tienen seguro contra desastres, F-779; 3.222 dañados en 2017, F-763) · salud pública (preparar la red y el triaje digital para el pico de diarrea infantil y dengue) · municipio y región (liquidez el día 1).
 
 ## 4. Rastros del rol en el mercado
@@ -124,8 +125,9 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 | Gartner | "Decision intelligence": ingeniería de cómo se decide (F-904) | Analítica sin diseño |
 | Laboratorios de IA | Puestos de "Safety and Behaviour" (F-907) | Estudian máquinas, no personas |
 | MineduLAB (Perú) | 4 personas de ciencia del comportamiento en el Estado (F-905) | Educación pública |
+| RIMAC (nosotros) | Un CoE que reúne diseño conductual y de servicio ([[behavioral-design-estado-disciplina]]) | Un nombre y un alcance a su medida |
 
-**No encontrado:** ofertas de empleo de este tipo en Lima ni equipos conductuales visibles en BCP o RIMAC. Falta buscarlas en portales de empleo.
+**No encontrado:** ofertas de empleo de este tipo en Lima, ni equipos conductuales visibles en BCP. Falta buscarlas en portales de empleo. *(Corregido 2026-10-20 en la revisión contra el segundo cerebro: la versión anterior decía que no había equipos conductuales visibles en RIMAC, y el node de behavioral design registra que RIMAC ya opera ese CoE.)*
 
 ## 5. Nombre y definición
 
@@ -158,7 +160,7 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 
 **Propósito:** ampliar lo que el diseño aporta, a las personas, sus comunidades, su ciudad, su país y el planeta, y demostrarlo con evidencia, no con promesas. *(Corregido 2026-10-20: la versión anterior, «llevar el diseño a donde se decide la vida de las personas», era demasiado amplia y no decía lo que el usuario quiere decir.)*
 
-**Hilo narrativo del deck (v5, 28 diapositivas):** (1) Lo que ya hacemos: logros reales y un nombre que nos queda chico, con precedentes y vanguardia · (2) Cómo vemos la conducta: condiciones, tiempo, entornos y seis capas · (3) Lo que está en juego: la batalla de las reglas, las máquinas y el sentido del diseño · (4) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (5) El rol que proponemos: rastros, nombre, definición, aprendizajes, pasos y manifiesto.
+**Hilo narrativo del deck (v6, 28 diapositivas):** (1) Lo que ya hacemos: logros reales y un nombre que nos queda chico, con precedentes y vanguardia · (2) Cómo vemos la conducta: condiciones, tiempo, entornos y seis capas · (3) Lo que está en juego: la batalla de las reglas, las máquinas y el sentido del diseño · (4) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (5) El rol que proponemos: rastros, nombre, definición, aprendizajes, pasos y manifiesto.
 
 ## 6. Ámbitos que construyen el rol
 
@@ -170,8 +172,8 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 
 1. Ser dueños de un indicador de conducta, bienestar o riesgo, no de entregables (Bienestar 360 muestra que se puede).
 2. Sumar psicometría, observación en terreno y medición en el tiempo al kit, junto al experimento.
-3. Un piloto para esta temporada de El Niño: el seguro como canal de bienestar del hogar (el caso ambulatorio vs. emergencias queda como ejemplo de las seis capas).
-4. Sentarse con TI y los equipos de IA a diseñar cómo se evalúan los asistentes.
+3. Esta temporada de El Niño: que el cliente sepa si está cubierto, y un piloto de pago anticipado con una caja del norte (§3.1; el caso ambulatorio vs. emergencias queda como ejemplo de las seis capas).
+4. Diseñar con TI y los equipos de IA cómo evaluar nuestros asistentes: por las decisiones que producen, no por la satisfacción. Es la regla del node de conducta humano-IA (CH1): lo que la gente dice de un asistente no prueba que decida mejor con él ([[conducta-humano-ia]]).
 5. Declarar a quién sirve cada diseño, y llevar el método fuera de la empresa: salud pública, escuela, ciudad.
 
 ## 8. Limitaciones
@@ -180,6 +182,7 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 - Los rastros de mercado vienen de páginas corporativas y agregadores; no se revisaron portales de empleo ni hay datos de Perú fuera de MineduLAB.
 - Ostrom y Thaler y Sunstein se nombran como referencias conocidas, sin ficha propia en el ledger.
 - "Diseño de agencia" es una propuesta de este node, no un término establecido.
+- El programa de lealtad aparece como ejemplo de la capa 5, pero la revisión del equipo sobre lealtad y gamificación en retail encontró un solo experimento fuerte y ninguna evidencia causal en América Latina ([[lealtad-gamificacion-recompensas-retail]]): el piloto tiene que medirse bien antes de citarse como logro.
 
 ## Conexiones
 
@@ -188,3 +191,4 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 - [[conducta-humano-ia|Conducta humano-IA]] — la conducta conjunta persona-IA de la capa 6 (sobre-confianza, adulación).
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado de seguros (Mundo vs. Perú)]] — los datos de confianza y del broker que alimentan las capas 2 y 3.
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — el caso que vuelve tangible el rol (§3.1): el seguro como canal de bienestar del hogar, la escuela y la salud pública.
+- [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — la cautela sobre el piloto de lealtad que el rol cita como ejemplo de la capa de las reglas (§8).

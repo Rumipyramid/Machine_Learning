@@ -1,7 +1,7 @@
 # Gamificación, recompensas y lealtad en retail: qué intervenciones existen y qué efecto demostrado tuvieron
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-15 · Última actualización: 2026-10-15 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-15 · Última actualización: 2026-10-20 · Versión: **v1.0**
 > Origen: `/trinidad` (pista empírica + social + negocio), rol *behavioral designer researcher*.
 > Fuentes en `research/fuentes/codice.md`: **F-802 a F-846** (empírica F-802 a F-822 · social F-823 a F-830 y F-842 · negocio F-831 a F-841 y F-843 a F-846).
 > Pregunta permanente: **¿qué intervenciones de juego, recompensa y lealtad cambian de verdad lo que compra la gente, frente a un control creíble, y cuáles solo parecen funcionar?**
@@ -219,3 +219,4 @@
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado de replicación de la aversión a la pérdida (§5.4) y del sesgo del presente (§5.11), que sustentan caducidad, niveles y recompensas.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — Discovery Vitality es el caso de gamificación + recompensa en seguros; aquí se contrasta con lo que se sabe en retail.
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — la regla de confrontar el impacto declarado con el demostrado se aplica a las cifras de las empresas (F-833, F-834).
+- [[rol-diseno-agencia-seguros|El rol después del behavioral design: diseño de agencia]] — el piloto de lealtad del equipo es allí un ejemplo de la capa de las reglas; este node advierte que la evidencia causal es escasa y que el piloto debe medirse bien.
