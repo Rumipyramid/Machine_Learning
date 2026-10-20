@@ -3,7 +3,7 @@
 > Documento de **posicionamiento y definición de rol**. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v1.0**
 > Origen: reflexión del usuario (2026-10-20): *"quiero retar la cuestión del behavioral design… lo conductual se restringe a un dominio de lo puramente observable… quiero construir una definición completa, relevante y competitiva del rol"*, más verificación de antecedentes y rastros de mercado (`/seeker` + pista de negocio).
-> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-909** · ya existentes que se reusan: F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA).
+> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-913** · ya existentes que se reusan: F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA).
 > Output derivado: deck "Diseño de agencia" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH).
 > Pregunta permanente: **¿qué rol viene después del behavioral design, cómo se define, cómo se llama y qué tiene que saber para competir?**
 
@@ -30,7 +30,21 @@ Este node define un rol y su argumento. **No** repite el estado de la disciplina
 | Verbeek, 2011 (F-900) | La tecnología media las decisiones morales; diseñarla es diseñar conducta | El encuadre ético |
 | Rahwan y otros, 2019 (F-596) | La conducta de las máquinas es objeto de la ciencia del comportamiento | La capa de las máquinas |
 
-**Lo que el rol ya ganó:** demuestra causalidad. El diseño en general entrega artefactos; este rol entrega efectos medidos frente a un control. En Lima, el diseño sigue siendo "un ave enjaulada" (palabras del usuario): vive en pantallas y campañas. **Lo que falta es que entre a otros ámbitos de la sociedad:** la salud, la escuela, la ciudad, el Estado.
+**Lo que el equipo ya demostró (corregido 2026-10-20 a pedido del usuario: no solo cambiamos conductas ni solo dentro del negocio).** El equipo entrega efectos medidos, y no solo en conducta. Fuentes internas: `TABLERO_BEHOLDER.md`, `reportes/generar_matriz_status.py` y `research/yopersona/perfil.md`:
+- **Bienestar 360 (Q-10):** programa de hábitos saludables (piloto con colaboradores) medido en bienestar: +3 puntos Wellby, satisfacción 4,6/5, NPS 78. El impacto está en la vida de las personas, fuera de una métrica comercial.
+- **Riesgo cardiovascular:** una intervención conductual logró cambios médicos medibles y un NPS alto entre los participantes.
+- **Guías resumidas (Q-1, Q-3):** trabajan la comprensión de la póliza (capa mente).
+- **Cobranzas B2B (Q-4):** la investigación encontró un correo de conciliación equivocado; corregirlo ayuda a liberar S/600 mil provisionados (capa de los objetos).
+- **Fuerza de ventas:** intervención sistémica con asesores y jefaturas, con impacto en productividad (capa social).
+
+**El límite, entonces, no está en lo que el equipo hace sino en la definición:** el trabajo ya toca varias capas, pero el nombre "behavioral design" y la idea de "cambiar conductas" lo siguen reduciendo al acto, y así se le pide y se le mide. En Lima, el diseño sigue siendo "un ave enjaulada" (palabras del usuario): vive en pantallas y campañas. **Lo que falta es que entre a otros ámbitos de la sociedad:** la salud pública, la escuela, la ciudad, el Estado.
+
+**La vanguardia del campo va en la misma dirección:**
+- El nudge aislado rinde poco a escala: 1,4 puntos en ensayos de dos unidades de nudge frente a 8,7 en artículos académicos (F-21); al corregir el sesgo de publicación, el efecto promedio deja de ser claro (F-17).
+- Los efectos dependen de la persona y el contexto, y hay que estudiar esa variación (F-910).
+- Los megaestudios prueban muchas intervenciones a la vez en la población real (F-20).
+- El bienestar ya es un resultado de política pública: el Tesoro británico evalúa en WELLBY (F-911), la misma medida que usó Bienestar 360.
+- El propio campo publicó un manifiesto para ampliar alcance, métodos y valores (F-912), y sus críticos piden estudiar además cómo se forman las metas en procesos sociales (F-913).
 
 ### 1.1 La batalla está en el diseño de reglas (añadido 2026-10-20, idea del usuario)
 
@@ -113,14 +127,14 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 
 **Definición corta:** *Diseña y mide las condiciones (cognitivas, sociales, materiales, institucionales y algorítmicas) bajo las cuales personas, instituciones y máquinas deciden y actúan.* No menciona el seguro a propósito (corregido 2026-10-20: la versión anterior decía "frente al riesgo" y ataba el rol al seguro): el seguro es el campo de prueba, no el límite.
 
-**Definición completa:** el rol diseña sistemas de agencia: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Su unidad de trabajo no es la pantalla: es el efecto medido. Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
+**Definición completa:** el rol diseña sistemas de agencia: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Su unidad de trabajo no es la pantalla: es el efecto medido en lo que la gente hace (conducta), entiende (comprensión) y vive (bienestar y salud). Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
 
 **Las tres formas del deck** tienen un solo significado en todo el documento: ○ persona (capas 1-2), □ entorno o institución (capas 3-4), △ sistema de reglas e intereses (capas 5-6).
 
 ## 5.1 Manifiesto y propósito (versión del deck, 2026-10-20)
 
 1. Diseñamos condiciones, no clics.
-2. Probamos efectos. La opinión no nos basta.
+2. Medimos efectos en lo que la gente hace, entiende y vive.
 3. Miramos a la persona, su entorno y las reglas del sistema.
 4. Decimos a quién sirve cada diseño.
 5. Tratamos a las máquinas como actores que también se diseñan.
@@ -130,13 +144,13 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 
 ## 6. Ámbitos que construyen el rol
 
-- **Núcleo:** economía conductual y diseño de mecanismos; psicometría; inferencia causal; teoría del seguro (riesgo moral, selección adversa).
+- **Núcleo:** economía conductual y diseño de mecanismos; psicometría; medición del bienestar (WELLBY, F-911); inferencia causal; teoría del seguro (riesgo moral, selección adversa).
 - **Expansión:** ciencia y tecnología en sociedad (F-898, F-899); teoría de prácticas (F-896); ciencia cognitiva y metacognición (F-897); factores humanos y análisis de incidentes; comportamiento de máquinas y alineamiento de IA (F-596, [[comportamiento-ia-alucinaciones-desalineamiento]]); salud pública.
 - **Encuadre:** economía institucional (Ostrom); etnografía y antropología; ética y derecho del consumidor; filosofía de la tecnología (F-900).
 
 ## 7. Próximos pasos propuestos al equipo
 
-1. Ser dueños de un indicador de conducta o de riesgo, no de entregables.
+1. Ser dueños de un indicador de conducta, bienestar o riesgo, no de entregables (Bienestar 360 muestra que se puede).
 2. Sumar psicometría y etnografía al kit, junto al experimento.
 3. Un piloto: ambulatorio vs. emergencias, trabajado en las seis capas.
 4. Sentarse con TI y los equipos de IA a diseñar cómo se evalúan los asistentes.
