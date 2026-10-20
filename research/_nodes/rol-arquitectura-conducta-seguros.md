@@ -1,10 +1,10 @@
-# El rol después del behavioral design: diseño de agencia, con el seguro como campo de juego
+# El rol después del behavioral design: arquitectura de la conducta, con el seguro como campo de juego
 
 > Documento de **posicionamiento y definición de rol**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v2.0** (cambio de nombre y de premisa: el rol facilita y también frena; antes «diseño de agencia», ver §1.4 y §5)
 > Origen: reflexión del usuario (2026-10-20): *"quiero retar la cuestión del behavioral design… lo conductual se restringe a un dominio de lo puramente observable… quiero construir una definición completa, relevante y competitiva del rol"*, más verificación de antecedentes y rastros de mercado (`/seeker` + pista de negocio).
-> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-915** · ya existentes que se reusan: F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-346 (Anthem y la «emergencia evitable»), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
-> Output derivado: deck "Diseño de agencia" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH).
+> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-922** (F-916 a F-922: fricción y nombre, v2.0) · ya existentes que se reusan: F-109, F-110 (filtro del médico de cabecera), F-245 (fricción cognitiva ante la IA), F-342 (autorización previa), F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-346 (Anthem y la «emergencia evitable»), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
+> Output derivado: deck "Arquitectura de la conducta" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH; antes "Diseño de agencia").
 > Pregunta permanente: **¿qué rol viene después del behavioral design, cómo se define, cómo se llama y qué tiene que saber para competir?**
 
 ---
@@ -15,7 +15,7 @@ Este node define un rol y su argumento. **No** repite el estado de la disciplina
 
 ## 1. La tesis
 
-**El rol no es "behavioral design" en sentido estrecho. Es diseñar las condiciones bajo las cuales personas, grupos, organizaciones, objetos y máquinas deciden y actúan.** El seguro es su mejor campo de juego: reparte el riesgo y, para funcionar, tiene que influir en la conducta.
+**El rol no es "behavioral design" en sentido estrecho. Es diseñar las condiciones que facilitan o frenan lo que deciden y hacen personas, grupos, organizaciones, objetos y máquinas.** El seguro es su mejor campo de juego: reparte el riesgo y, para funcionar, tiene que influir en la conducta.
 
 **La crítica, con su matiz.** La práctica del behavioral design se quedó con el **acto individual observable** (un clic, un pago, una cita) porque su método, el experimento con grupo de control, mide bien actos y mal todo lo demás. Quedan fuera la mente (psicometría, metacognición), lo social y la agencia de las cosas. Matiz: la economía conductual es cognitiva en teoría; el encierro viene de la vara de éxito, no de la teoría.
 
@@ -56,7 +56,7 @@ Ahí se libra la batalla más grande del diseño: **quien no diseña, vive dentr
 
 ### 1.2 El diseño puede valer más que el humanismo (tesis del usuario, no un hallazgo)
 
-El humanismo declara valores; el diseño los convierte en condiciones de vida. Puede valer más **con dos condiciones**: (1) de escala: que diseñen más personas y en más ámbitos, fuera de la agencia y de la pantalla; (2) ética: que diseñen por los motivos correctos, declarando a quién sirve cada diseño, para que facilitar no se vuelva manipular. Sin la segunda, la primera es peligrosa.
+El humanismo declara valores; el diseño los convierte en condiciones de vida. Puede valer más **con dos condiciones**: (1) de escala: que diseñen más personas y en más ámbitos, fuera de la agencia de publicidad y de la pantalla; (2) ética: que diseñen por los motivos correctos, declarando a quién sirve cada diseño, para que facilitar no se vuelva manipular. Sin la segunda, la primera es peligrosa.
 
 ### 1.3 La conducta se mueve (añadido 2026-10-20, idea del usuario)
 
@@ -66,6 +66,22 @@ La conducta no es un interruptor que se prende una vez: **cambia, se apaga, vuel
 - **Vuelve:** con los informes de consumo de energía, el ahorro sube con cada envío, cae entre uno y otro, y con el tiempo una parte se vuelve hábito (F-914).
 - **Se resiste:** si la intervención se siente como imposición aparece la reactancia; un default se percibe más amenazante para la libertad que una recomendación (F-337).
 - **En casa:** Bienestar 360 está hoy en fase de mantenimiento, porque un hábito también se cuida.
+
+### 1.4 Facilitar o frenar: la fricción también se diseña (añadido 2026-10-20, idea del usuario)
+
+**El buen diseño no siempre facilita.** A veces agrega fricción: un paso, una espera o un filtro que frena una conducta. Por eso el nombre «diseño de agencia» se descartó: sugería que el rol solo da capacidad de actuar, como una licencia (§5).
+
+| Dirección | Ejemplo | Evidencia |
+|---|---|---|
+| Quitar fricción | Cobranzas B2B: un correo de conciliación corregido destraba pagos | Interna (`TABLERO_BEHOLDER.md`) |
+| Quitar fricción | El Niño: pago por billetera digital, sin peritaje | Propuesta del informe de El Niño |
+| Poner fricción · salud | Pasar primero por el médico de cabecera (*gatekeeping*): también es una forma eficiente de gestionar la salud | En China, +55% consultas de atención primaria y −24% visitas hospitalarias, sin más gasto en atención primaria (F-109, diferencias en diferencias). Revisión de 25 estudios: mejor calidad y menos hospitalizaciones, pero menor satisfacción, y un estudio con menor supervivencia en cáncer (F-110) |
+| Poner fricción · delito | Tiempo de espera para comprar una pistola | ~17% menos homicidios con arma en EE. UU., con todos los cambios de ley estatales desde 1970 y un experimento natural de 1994 (F-916) |
+| Poner fricción · delito | Prevención situacional: hacer el delito más difícil o arriesgado | En más de 100 evaluaciones, el desplazamiento del delito es la excepción y no la regla (F-918) |
+| Poner fricción · salud pública | Envases más chicos de paracetamol (Reino Unido, 1998) | 43% menos muertes por intoxicación con paracetamol, en suicidios y casos indeterminados, en 11 años (F-917) |
+| Poner fricción · máquinas | Obligar a pensar antes de ver la respuesta de la IA | Reduce la sobre-confianza, con costo en satisfacción (F-245) |
+
+**El criterio es ético, no de dirección.** La fricción excesiva o injustificada se llama *sludge* (F-919); sus defensas (frenar la impulsividad, racionar un beneficio) suenan mejor en principio que en la práctica (F-920). Las trabas a los programas públicos suelen ser decisiones de política, y pesan más sobre quien menos tiene (F-921): otra forma de la batalla de las reglas (§1.1). En el seguro, la fricción mal diseñada se vuelve contra la aseguradora: Anthem revirtió su filtro de «emergencias evitables» (F-346), y una encuesta de los médicos de EE. UU. (interesados en el tema) reporta abandono de tratamientos por la autorización previa (F-342). **Regla:** antes de quitar o poner fricción, decir a quién protege.
 
 ## 2. La conducta ocurre en entornos con condiciones distintas
 
@@ -88,7 +104,7 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 - **Escuela:** MineduLAB (Minedu, desde 2016) tiene 4 personas de ciencia del comportamiento (F-905); en un experimento, los SMS a directores con lo que ya gastaban sus pares movieron más la conducta (F-906, prensa).
 - **Entre máquinas:** en el caso Hugging Face (jul-2026), ~1.200 agentes que debían estar aislados se comunicaron por un tablero no autorizado y ~700 entraron a servidores ajenos, buscando entender cómo los puntuaban (F-871). La investigación de la conducta ya tiene un entorno habitado por máquinas.
 
-## 3. Seis capas de agencia
+## 3. Seis capas de la conducta
 
 | Capa | Qué se diseña | Cómo se mide | En seguros |
 |---|---|---|---|
@@ -99,7 +115,7 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 | 5. Las reglas | Incentivos, precios, contratos, regulación | Economía, diseño de mecanismos | Deducibles, capitación, prevención con recompensa, paramétrico |
 | 6. Las máquinas | Conducta de agentes de IA y conducta conjunta persona-IA | Evaluaciones, auditorías | La empresa responde por su chatbot (F-884); asegurar IA exige auditarla (F-888, F-889) |
 
-**Ejemplo transversal:** que alguien vaya a atención ambulatoria y no a emergencias depende de seis preguntas: ¿el canal está a un toque? (1) ¿confía en que le resuelven? (2) ¿qué le dice su familia? (3) ¿la app y la red de clínicas facilitan lo correcto? (4) ¿el copago premia la opción ambulatoria? (5) ¿qué responde el triaje con IA y cuándo deriva a una persona? (6). **La trampa:** si la persona vive el cambio como ahorro de la aseguradora y no como cuidado, se resiste. En 2018 Anthem dejó de cubrir las emergencias que juzgaba «evitables»; los médicos de emergencia la demandaron y en enero de 2019 tuvo que modificar la política (F-346).
+**Ejemplo transversal:** que alguien vaya a atención ambulatoria y no a emergencias depende de seis preguntas: ¿el canal está a un toque? (1) ¿confía en que le resuelven? (2) ¿qué le dice su familia? (3) ¿la app y la red de clínicas facilitan lo correcto y frenan lo innecesario? (4) ¿el copago premia la opción ambulatoria? (5) ¿qué responde el triaje con IA y cuándo deriva a una persona? (6). **La trampa:** si la persona vive el cambio como ahorro de la aseguradora y no como cuidado, se resiste. En 2018 Anthem dejó de cubrir las emergencias que juzgaba «evitables»; los médicos de emergencia la demandaron y en enero de 2019 tuvo que modificar la política (F-346).
 
 **El seguro como canal de bienestar:** un seguro reparte el riesgo y, para funcionar, influye en la conducta (prevención, uso de servicios, siniestros, confianza, venta y riesgo de IA; unas aseguradoras excluyen la IA, F-886, y otras la cubren con auditoría previa, F-888, F-889). Bien diseñado puede hacer más: proteger el bienestar antes, durante y después del golpe.
 
@@ -138,14 +154,15 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 | Decision intelligence | Tracción corporativa | Analítica, no diseño |
 | Diseño de incentivos | Rigor económico | Deja fuera la mente y lo social |
 | Diseño de mediaciones | Exacto en lo filosófico | Ilegible para el negocio |
-| **Diseño de agencia** | Junta las seis capas | "Agencia" también significa empresa |
+| Diseño de agencia (descartado 2026-10-20) | Junta las seis capas | Sugiere que el rol solo facilita, como una licencia; también diseña fricción (§1.4). Y «agencia» también significa empresa |
+| **Arquitectura de la conducta** | Una arquitectura tiene puertas y muros: facilita y frena, en las seis capas. Linaje: la arquitectura de decisiones de Thaler y Sunstein, y la arquitectura como una de las cuatro fuerzas que regulan la conducta, junto con la ley, las normas y el mercado (Lessig, F-922) | Puede sonar a control; por eso va con la regla de decir a quién sirve cada diseño |
 | **Behavioral Systems Designer** | Legible y amplio | Menos distintivo |
 
-**Recomendación: dos nombres.** El concepto, para el pensamiento y la marca: *diseño de agencia*. El título, para el mercado: *Behavioral Systems Designer*.
+**Recomendación: dos nombres.** El concepto, para el pensamiento y la marca: *arquitectura de la conducta* (corregido 2026-10-20 a pedido del usuario: antes *diseño de agencia*). El título, para el mercado: *Behavioral Systems Designer*.
 
-**Definición corta:** *Buscamos entender y diseñamos las condiciones (mentales, sociales, materiales, institucionales y tecnológicas) bajo las cuales personas, instituciones y máquinas deciden y actúan.* (Corregido 2026-10-20 a pedido del usuario: antes decía "diseña y mide"; el verbo de partida es entender, no medir.) No menciona el seguro a propósito (corregido 2026-10-20: la versión anterior decía "frente al riesgo" y ataba el rol al seguro): el seguro es el campo de prueba, no el límite.
+**Definición corta:** *Buscamos entender y diseñamos las condiciones (mentales, sociales, materiales, institucionales y tecnológicas) que facilitan o frenan lo que deciden y hacen personas, instituciones y máquinas.* (Corregido 2026-10-20 a pedido del usuario: antes decía "diseña y mide"; el verbo de partida es entender, no medir.) No menciona el seguro a propósito (corregido 2026-10-20: la versión anterior decía "frente al riesgo" y ataba el rol al seguro): el seguro es el campo de prueba, no el límite.
 
-**Definición completa:** el rol busca entender y diseña sistemas de agencia: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Su unidad de trabajo no es la pantalla: es el efecto medido en lo que la gente hace (conducta), entiende (comprensión) y vive (bienestar y salud). Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
+**Definición completa:** el rol busca entender y diseña la arquitectura de la conducta: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Quita fricción donde estorba y la pone donde protege. Su unidad de trabajo no es la pantalla: es el efecto medido en lo que la gente hace (conducta), entiende (comprensión) y vive (bienestar y salud). Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
 
 **Las tres formas del deck** tienen un solo significado en todo el documento: ○ persona (capas 1-2), □ entorno o institución (capas 3-4), △ sistema de reglas e intereses (capas 5-6).
 
@@ -155,12 +172,12 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 2. Diseñamos trayectorias, no momentos: la conducta cambia, se apaga, vuelve y se resiste.
 3. Medimos efectos en lo que la gente hace, entiende y vive.
 4. Miramos a la persona, su entorno, las reglas y las máquinas.
-5. Decimos a quién sirve cada diseño.
+5. Facilitamos o frenamos, y decimos a quién sirve cada diseño.
 6. Salimos de la pantalla: el hogar, la escuela, la salud y la ciudad también son nuestro campo.
 
 **Propósito:** ampliar lo que el diseño aporta, a las personas, sus comunidades, su ciudad, su país y el planeta, y demostrarlo con evidencia, no con promesas. *(Corregido 2026-10-20: la versión anterior, «llevar el diseño a donde se decide la vida de las personas», era demasiado amplia y no decía lo que el usuario quiere decir.)*
 
-**Hilo narrativo del deck (v6, 28 diapositivas):** (1) Lo que ya hacemos: logros reales y un nombre que nos queda chico, con precedentes y vanguardia · (2) Cómo vemos la conducta: condiciones, tiempo, entornos y seis capas · (3) Lo que está en juego: la batalla de las reglas, las máquinas y el sentido del diseño · (4) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (5) El rol que proponemos: rastros, nombre, definición, aprendizajes, pasos y manifiesto.
+**Hilo narrativo del deck (v7, 29 diapositivas):** (1) Lo que ya hacemos: logros reales y un nombre que nos queda chico, con precedentes y vanguardia · (2) Cómo vemos la conducta: condiciones que facilitan o frenan, tiempo, entornos y seis capas · (3) Lo que está en juego: la batalla de las reglas, las máquinas y el sentido del diseño · (4) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (5) El rol que proponemos: rastros, nombre, definición, aprendizajes, pasos y manifiesto.
 
 ## 6. Ámbitos que construyen el rol
 
@@ -181,7 +198,8 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 - Los antecedentes teóricos (F-896 a F-900) se verificaron por resumen y ficha bibliográfica, no por texto completo.
 - Los rastros de mercado vienen de páginas corporativas y agregadores; no se revisaron portales de empleo ni hay datos de Perú fuera de MineduLAB.
 - Ostrom y Thaler y Sunstein se nombran como referencias conocidas, sin ficha propia en el ledger.
-- "Diseño de agencia" es una propuesta de este node, no un término establecido.
+- "Arquitectura de la conducta" es una propuesta de este node, no un término establecido.
+- Las fuentes de fricción (F-916 a F-922) se verificaron por resumen y fichas secundarias. El 26% de desplazamiento del delito que suele citarse de F-918 viene de una reproducción del artículo, no del resumen oficial, y no se usa aquí.
 - El programa de lealtad aparece como ejemplo de la capa 5, pero la revisión del equipo sobre lealtad y gamificación en retail encontró un solo experimento fuerte y ninguna evidencia causal en América Latina ([[lealtad-gamificacion-recompensas-retail]]): el piloto tiene que medirse bien antes de citarse como logro.
 
 ## Conexiones
@@ -192,3 +210,4 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado de seguros (Mundo vs. Perú)]] — los datos de confianza y del broker que alimentan las capas 2 y 3.
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — el caso que vuelve tangible el rol (§3.1): el seguro como canal de bienestar del hogar, la escuela y la salud pública.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — la cautela sobre el piloto de lealtad que el rol cita como ejemplo de la capa de las reglas (§8).
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — la evidencia del filtro del médico de cabecera (F-109, F-110) con que §1.4 muestra que poner fricción también es diseño, y una forma eficiente de gestionar la salud.

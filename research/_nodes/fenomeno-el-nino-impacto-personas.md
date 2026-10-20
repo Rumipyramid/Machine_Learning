@@ -402,4 +402,4 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (`lapuerta`)]] — se propone una variable
   de exposición a inundación/Niño análoga a la exposición sísmica (§6.1); no aplicada.
 - [[comportamiento-ia-alucinaciones-desalineamiento|Comportamiento de la IA: alucinaciones, desalineamiento e incidentes]] — el seguro de desempeño de IA de Munich Re (F-889) usa la misma lógica paramétrica (paga al cruzar un umbral, sin probar culpa) que el seguro índice climático.
-- [[rol-diseno-agencia-seguros|El rol después del behavioral design: diseño de agencia]] — usa este node como el caso que vuelve tangible el rol: el seguro como canal de bienestar del hogar, la escuela y la salud pública ante El Niño 2026-27.
+- [[rol-arquitectura-conducta-seguros|El rol después del behavioral design: arquitectura de la conducta]] — usa este node como el caso que vuelve tangible el rol: el seguro como canal de bienestar del hogar, la escuela y la salud pública ante El Niño 2026-27.

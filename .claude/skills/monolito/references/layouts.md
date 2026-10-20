@@ -136,13 +136,13 @@ argumento. Puede llevar una figura central generada con `--color "#0E0B14" --ten
 ## Figuras centrales (triángulo, cuadrado, círculo)
 
 Genera el bloque con `scripts/figuras.py` y pégalo después del `<h2>`. Ejemplos ya publicados en el deck
-"Diseño de agencia":
+"Arquitectura de la conducta":
 
-- **Cuadrado:** lámina «Lo que ya demostramos» (cuatro proyectos, cuatro tipos de efecto, «Más que conducta» al
+- **Cuadrado:** lámina «Lo que ya hacemos» (cuatro proyectos, cuatro tipos de efecto, «Más que conducta» al
   centro, una frase de cierre centrada en y=800).
 - **Círculo de 4 pasos:** lámina «La conducta se mueve» (cambia → se apaga → vuelve → se resiste; «Trayectorias,
   no momentos» al centro).
-- **Triángulo jerárquico:** lámina «Seis capas de agencia» sobre fondo acento (el diseño de agencia arriba; persona,
+- **Triángulo jerárquico:** lámina «Seis capas de la conducta» sobre fondo acento (la arquitectura de la conducta arriba; persona,
   entorno y sistema en la base, con sus íconos).
 
 Reglas de las figuras centrales:

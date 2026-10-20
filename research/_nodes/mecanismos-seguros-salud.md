@@ -4,7 +4,7 @@
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
 > `fuentes/codice.md` (F-86 a F-116, F-193 a F-207; actualización 2026-10-02: F-477 a F-478, F-480, F-481 (y F-198), F-487).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-10-04 · Versión: v1.2
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-10-20 · Versión: v1.2
 > (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
 > con §2.6: contraste regional Europa/Asia/Perú-Latam — corrida adicional de `/trinidad`)
 
@@ -352,3 +352,4 @@ Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farma
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación: qué tiene impacto real y qué es propuesta]] — aporta el contraste Root (combined ratio 91,4%) vs. Lemonade (~139%) con evidencia auditada (F-449, F-450): la innovación en seguros se evalúa por su disciplina de suscripción, no por su capa tecnológica (H29); aplica al análisis de qué modelos navegan bien la presión de costo.
 - [[conducta-humano-ia|Conducta humano-IA]] — el UBI/telemática (F-442) se consolida allí como caso causal de cambio de conducta, con el matiz de que el programa fue simulado.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — contraste de Discovery Vitality con lo que se sabe de programas de recompensa en retail (efecto pequeño tras corregir autoselección).
+- [[rol-arquitectura-conducta-seguros|El rol después del behavioral design: arquitectura de la conducta]] — usa el gatekeeping de este node (F-109, F-110) como ejemplo de fricción bien diseñada: frenar también es diseño.

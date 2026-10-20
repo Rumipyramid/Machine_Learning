@@ -1,14 +1,14 @@
 ---
 name: monolito
-description: Crea presentaciones brutalistas, minimalistas y low-fi (fondo casi negro, texto violeta, Archivo Black + Space Mono, reglas gruesas) que funcionan como manifiesto o propuesta de equipo, con un hilo narrativo en partes, redacción de experto, evidencia citada y láminas con una figura central (triángulo, cuadrado o círculo). Úsala cuando el usuario invoque /monolito o pida "una presentación brutalista", "un deck low-fi negro y violeta", "un manifiesto en slides", "una presentación como la de Diseño de agencia", o quiera convertir una argumentación en un deck con este estilo. No la uses para piezas con la marca Rimac (usa `presentaciones-rimac` o `rimac-slides`) ni para piezas de Mu (usan la identidad de `.claude/skills/mu/IDENTIDAD.md`).
+description: Crea presentaciones brutalistas, minimalistas y low-fi (fondo casi negro, texto violeta, Archivo Black + Space Mono, reglas gruesas) que funcionan como manifiesto o propuesta de equipo, con un hilo narrativo en partes, redacción de experto, evidencia citada y láminas con una figura central (triángulo, cuadrado o círculo). Úsala cuando el usuario invoque /monolito o pida "una presentación brutalista", "un deck low-fi negro y violeta", "un manifiesto en slides", "una presentación como la de Arquitectura de la conducta" (antes "Diseño de agencia"), o quiera convertir una argumentación en un deck con este estilo. No la uses para piezas con la marca Rimac (usa `presentaciones-rimac` o `rimac-slides`) ni para piezas de Mu (usan la identidad de `.claude/skills/mu/IDENTIDAD.md`).
 ---
 
 # Monolito — presentaciones brutalistas que argumentan
 
 Un deck monolito no decora: **argumenta**. Cada diapositiva dice una sola idea, en frases cortas que se entienden sin
 haber estado en la conversación. El estilo es brutalista y austero para que el texto y las figuras hagan todo el
-trabajo. El ejemplo de referencia es el deck "Diseño de agencia" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH)
-y su node `research/_nodes/rol-diseno-agencia-seguros.md`.
+trabajo. El ejemplo de referencia es el deck "Arquitectura de la conducta" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH)
+y su node `research/_nodes/rol-arquitectura-conducta-seguros.md`.
 
 ## Cuándo usarla
 
@@ -115,7 +115,7 @@ El script imprime el SVG y las cajas de texto ya posicionadas, con marcadores `[
 El título de la lámina debe caber en una sola línea (unos 22 caracteres a 80 px), porque la figura empieza en y≈240.
 
 **Dos gramáticas, no las mezcles.** La figura central dice **cuántas ideas hay y cómo se relacionan**. Si el deck
-además usa íconos pequeños con significado (en "Diseño de agencia": ○ persona, □ entorno, △ sistema), decláralos
+además usa íconos pequeños con significado (en "Arquitectura de la conducta": ○ persona, □ entorno, △ sistema), decláralos
 una vez en una leyenda y mantenlos pequeños (36-64 px) para que no se confundan con la figura central.
 
 ## 6. Construir y publicar con el tipo «Slides»
