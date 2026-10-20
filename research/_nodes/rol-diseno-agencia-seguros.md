@@ -117,6 +117,17 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 
 **Las tres formas del deck** tienen un solo significado en todo el documento: ○ persona (capas 1-2), □ entorno o institución (capas 3-4), △ sistema de reglas e intereses (capas 5-6).
 
+## 5.1 Manifiesto y propósito (versión del deck, 2026-10-20)
+
+1. Diseñamos condiciones, no clics.
+2. Probamos efectos. La opinión no nos basta.
+3. Miramos a la persona, su entorno y las reglas del sistema.
+4. Decimos a quién sirve cada diseño.
+5. Tratamos a las máquinas como actores que también se diseñan.
+6. Salimos de la pantalla: la salud, la escuela, la ciudad y el Estado también son nuestro campo.
+
+**Propósito:** llevar el diseño a donde se decide la vida de las personas, y hacerlo por los motivos correctos.
+
 ## 6. Ámbitos que construyen el rol
 
 - **Núcleo:** economía conductual y diseño de mecanismos; psicometría; inferencia causal; teoría del seguro (riesgo moral, selección adversa).
