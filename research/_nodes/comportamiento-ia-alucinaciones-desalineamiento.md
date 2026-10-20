@@ -243,4 +243,4 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — sobreconfianza, obediencia y fluidez como base del lado humano (§4.3) y de la analogía de incentivos (§4.2).
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado de seguros (Mundo vs. Perú)]] — la carga regulatoria de explicar (§3.9) más el precedente Air Canada (F-884) definen la responsabilidad de un asistente de IA en una aseguradora (§8).
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño]] — el seguro paramétrico de desempeño de IA (Munich Re, F-889) usa la misma lógica que el seguro paramétrico climático.
-- [[rol-arquitectura-conducta-seguros|El rol después del behavioral design: arquitectura de la conducta]] — usa este node como argumento de por qué la disciplina gana relevancia (las fallas de la IA son fallas de incentivos) y como base de su capa 6.
+- [[rol-diseno-conductual-seguros|El rol que viene: el diseño conductual ha muerto, larga vida al diseño conductual]] — usa este node como argumento de por qué la disciplina gana relevancia (las fallas de la IA son fallas de incentivos) y como base de su capa 6.

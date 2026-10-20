@@ -7,11 +7,17 @@ pregunta que dejó abierta la anterior.
 
 | Parte | Pregunta que responde | Láminas típicas |
 |---|---|---|
-| 1 · Lo que ya hacemos | ¿Desde dónde hablamos? | Portada · logros reales (con cifras del repo) · el problema o límite · quién más lo ve (precedentes) · qué dice la vanguardia |
-| 2 · Cómo vemos el problema | ¿Qué entendemos que otros no? | La idea fuerza · el mecanismo (ciclos, entornos, capas) · un ejemplo que lo junta todo |
-| 3 · Lo que está en juego | ¿Por qué importa ahora? | La batalla de fondo · la novedad que lo vuelve urgente · la posición ética |
-| 4 · Dónde lo probamos | ¿Cómo se ve en concreto? | El canal o terreno · un caso real con cifras · el método aplicado al caso · el alcance |
-| 5 · Lo que proponemos | ¿Qué hacemos el lunes? | Qué existe hoy · nombre · definición · qué aprender · pasos · manifiesto de cierre |
+| 1 · El problema | ¿Qué dejó de funcionar? | Portada con un título que nombra el problema · la evidencia de la falla · el límite que nos afecta a nosotros |
+| 2 · Cómo evoluciona el campo | ¿Hacia dónde va? | Quién más lo ve (precedentes) · qué dice la vanguardia · lo que ya hacemos (logros reales, con cifras del repo) |
+| 3 · Cómo vemos el problema | ¿Qué entendemos que otros no? | La idea fuerza · el mecanismo (ciclos, entornos, capas) · un ejemplo que lo junta todo |
+| 4 · Lo que está en juego | ¿Por qué importa ahora? | La batalla de fondo · la novedad que lo vuelve urgente · la posición ética |
+| 5 · Dónde lo probamos | ¿Cómo se ve en concreto? | El canal o terreno · un caso real con cifras · el método aplicado al caso · el alcance |
+| 6 · Lo que proponemos | ¿Qué hacemos el lunes? | Qué existe hoy · definición · qué aprender · pasos · opciones para decidir juntos (por ejemplo, el nombre) · manifiesto de cierre |
+
+**Empieza por el problema** (preferencia del usuario, 2026-10-20). El título de portada nombra lo que dejó de
+funcionar y deja ver la salida, como en «El diseño conductual ha muerto. Larga vida al diseño conductual.». Lo que
+el equipo debe decidir (un nombre, una prioridad) se presenta como opciones con criterios, sin recomendación,
+cuando el usuario así lo pide.
 
 Adáptalo al propósito. Para una decisión, la parte 4 puede ser «opciones y recomendación». Para una
 investigación, la parte 1 puede ser «la pregunta» y la parte 3 «lo que encontramos».
@@ -19,9 +25,9 @@ investigación, la parte 1 puede ser «la pregunta» y la parte 3 «lo que encon
 ## Reglas del hilo
 
 1. **Escribe primero los títulos, en orden, y léelos solos.** Deben contar la historia completa sin el resto del texto.
-2. **Cada parte tiene nombre** y aparece en el pie de cada lámina (`Parte 2 · Cómo vemos la conducta · 07 / 28`).
+2. **Cada parte tiene nombre** y aparece en el pie de cada lámina (`Parte 3 · Cómo vemos la conducta · 07 / 30`).
 3. **Cada nota del orador termina con un puente**: una frase que plantea la pregunta de la lámina siguiente
-   («Puente: si ya hacemos todo esto, ¿por qué nos siguen viendo como el equipo que cambia clics?»).
+   («Puente: el problema, para nosotros, es que nuestra definición sigue describiendo ese empujón»).
 4. **Un caso concreto vuelve tangible lo abstracto.** Antes del cierre, aplica el argumento a un caso real del
    contexto del usuario, con cifras citadas y rotulado como propuesta si no está en marcha.
 5. **Cierra con lo que se puede repetir sin la presentación**: el manifiesto (seis principios y un propósito) o una

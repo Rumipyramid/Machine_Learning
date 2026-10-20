@@ -1,10 +1,10 @@
-# El rol después del behavioral design: arquitectura de la conducta, con el seguro como campo de juego
+# El diseño conductual ha muerto, larga vida al diseño conductual: el rol que viene, con el seguro como campo de juego
 
 > Documento de **posicionamiento y definición de rol**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v2.0** (cambio de nombre y de premisa: el rol facilita y también frena; antes «diseño de agencia», ver §1.4 y §5)
+> Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v2.1** (v2.0: cambio de premisa, el rol facilita y también frena, y se descarta «diseño de agencia», §1.4; v2.1: el nombre queda abierto para que lo elija el equipo, §5)
 > Origen: reflexión del usuario (2026-10-20): *"quiero retar la cuestión del behavioral design… lo conductual se restringe a un dominio de lo puramente observable… quiero construir una definición completa, relevante y competitiva del rol"*, más verificación de antecedentes y rastros de mercado (`/seeker` + pista de negocio).
 > Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-922** (F-916 a F-922: fricción y nombre, v2.0) · ya existentes que se reusan: F-109, F-110 (filtro del médico de cabecera), F-245 (fricción cognitiva ante la IA), F-342 (autorización previa), F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-346 (Anthem y la «emergencia evitable»), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
-> Output derivado: deck "Arquitectura de la conducta" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH; antes "Diseño de agencia").
+> Output derivado: deck "El diseño conductual ha muerto. Larga vida al diseño conductual." (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH; antes "Diseño de agencia" y "Arquitectura de la conducta").
 > Pregunta permanente: **¿qué rol viene después del behavioral design, cómo se define, cómo se llama y qué tiene que saber para competir?**
 
 ---
@@ -149,20 +149,20 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 
 | Nombre | Gana | Pierde |
 |---|---|---|
-| Behavioral designer | Legible en el mercado | Atado al acto |
+| Diseño conductual, ampliado (behavioral designer) | Es el nombre que ya existe y se entiende en el mercado: se amplía sin cambiarlo, como propone el título del deck | Arrastra la idea de «cambiar conductas» y el acto aislado |
 | Arquitectura de decisiones | Linaje (Thaler y Sunstein) | Solo el momento de elegir |
 | Decision intelligence | Tracción corporativa | Analítica, no diseño |
 | Diseño de incentivos | Rigor económico | Deja fuera la mente y lo social |
 | Diseño de mediaciones | Exacto en lo filosófico | Ilegible para el negocio |
 | Diseño de agencia (descartado 2026-10-20) | Junta las seis capas | Sugiere que el rol solo facilita, como una licencia; también diseña fricción (§1.4). Y «agencia» también significa empresa |
-| **Arquitectura de la conducta** | Una arquitectura tiene puertas y muros: facilita y frena, en las seis capas. Linaje: la arquitectura de decisiones de Thaler y Sunstein, y la arquitectura como una de las cuatro fuerzas que regulan la conducta, junto con la ley, las normas y el mercado (Lessig, F-922) | Puede sonar a control; por eso va con la regla de decir a quién sirve cada diseño |
-| **Behavioral Systems Designer** | Legible y amplio | Menos distintivo |
+| Arquitectura de la conducta | Una arquitectura tiene puertas y muros: facilita y frena, en las seis capas. Linaje: la arquitectura de decisiones de Thaler y Sunstein, y la arquitectura como una de las cuatro fuerzas que regulan la conducta, junto con la ley, las normas y el mercado (Lessig, F-922) | Puede sonar a control; por eso va con la regla de decir a quién sirve cada diseño |
+| Behavioral Systems Designer | Legible y amplio | Menos distintivo |
 
-**Recomendación: dos nombres.** El concepto, para el pensamiento y la marca: *arquitectura de la conducta* (corregido 2026-10-20 a pedido del usuario: antes *diseño de agencia*). El título, para el mercado: *Behavioral Systems Designer*.
+**Decisión abierta: el nombre lo elige el equipo** (pedido del usuario, 2026-10-20). El deck presenta las opciones sin recomendación, con tres criterios: que se entienda fuera del equipo, que abarque lo que el rol hace (facilitar y frenar, en las seis capas) y que no prometa lo que no hace. Historial: primero se recomendó *diseño de agencia* (descartado: sugiere solo facilitar) y luego *arquitectura de la conducta* con *Behavioral Systems Designer* como título de mercado; ambas recomendaciones se retiraron. «Diseño de agencia» no se ofrece al equipo.
 
 **Definición corta:** *Buscamos entender y diseñamos las condiciones (mentales, sociales, materiales, institucionales y tecnológicas) que facilitan o frenan lo que deciden y hacen personas, instituciones y máquinas.* (Corregido 2026-10-20 a pedido del usuario: antes decía "diseña y mide"; el verbo de partida es entender, no medir.) No menciona el seguro a propósito (corregido 2026-10-20: la versión anterior decía "frente al riesgo" y ataba el rol al seguro): el seguro es el campo de prueba, no el límite.
 
-**Definición completa:** el rol busca entender y diseña la arquitectura de la conducta: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Quita fricción donde estorba y la pone donde protege. Su unidad de trabajo no es la pantalla: es el efecto medido en lo que la gente hace (conducta), entiende (comprensión) y vive (bienestar y salud). Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
+**Definición completa:** el rol busca entender y diseña el sistema que produce una conducta: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Quita fricción donde estorba y la pone donde protege. Su unidad de trabajo no es la pantalla: es el efecto medido en lo que la gente hace (conducta), entiende (comprensión) y vive (bienestar y salud). Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
 
 **Las tres formas del deck** tienen un solo significado en todo el documento: ○ persona (capas 1-2), □ entorno o institución (capas 3-4), △ sistema de reglas e intereses (capas 5-6).
 
@@ -177,7 +177,7 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 
 **Propósito:** ampliar lo que el diseño aporta, a las personas, sus comunidades, su ciudad, su país y el planeta, y demostrarlo con evidencia, no con promesas. *(Corregido 2026-10-20: la versión anterior, «llevar el diseño a donde se decide la vida de las personas», era demasiado amplia y no decía lo que el usuario quiere decir.)*
 
-**Hilo narrativo del deck (v7, 29 diapositivas):** (1) Lo que ya hacemos: logros reales y un nombre que nos queda chico, con precedentes y vanguardia · (2) Cómo vemos la conducta: condiciones que facilitan o frenan, tiempo, entornos y seis capas · (3) Lo que está en juego: la batalla de las reglas, las máquinas y el sentido del diseño · (4) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (5) El rol que proponemos: rastros, nombre, definición, aprendizajes, pasos y manifiesto.
+**Hilo narrativo del deck (v8, 30 diapositivas; título: «El diseño conductual ha muerto. Larga vida al diseño conductual.», idea del usuario):** (1) Lo que murió: el problema; el empujón aislado rinde poco (F-21, F-17) y nuestra definición sigue describiéndolo · (2) Lo que vive: precedentes de la crítica, vanguardia del campo y lo que el equipo ya hace · (3) Cómo vemos la conducta: condiciones que facilitan o frenan, tiempo, entornos y seis capas · (4) Lo que está en juego: la batalla de las reglas, las máquinas y el sentido del diseño · (5) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (6) El rol que viene: rastros, definición, aprendizajes, pasos, nombres para elegir y manifiesto.
 
 ## 6. Ámbitos que construyen el rol
 
@@ -198,7 +198,7 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 - Los antecedentes teóricos (F-896 a F-900) se verificaron por resumen y ficha bibliográfica, no por texto completo.
 - Los rastros de mercado vienen de páginas corporativas y agregadores; no se revisaron portales de empleo ni hay datos de Perú fuera de MineduLAB.
 - Ostrom y Thaler y Sunstein se nombran como referencias conocidas, sin ficha propia en el ledger.
-- "Arquitectura de la conducta" es una propuesta de este node, no un término establecido.
+- "Arquitectura de la conducta" y "diseño conductual ampliado" son propuestas de este node, no términos establecidos.
 - Las fuentes de fricción (F-916 a F-922) se verificaron por resumen y fichas secundarias. El 26% de desplazamiento del delito que suele citarse de F-918 viene de una reproducción del artículo, no del resumen oficial, y no se usa aquí.
 - El programa de lealtad aparece como ejemplo de la capa 5, pero la revisión del equipo sobre lealtad y gamificación en retail encontró un solo experimento fuerte y ninguna evidencia causal en América Latina ([[lealtad-gamificacion-recompensas-retail]]): el piloto tiene que medirse bien antes de citarse como logro.
 
