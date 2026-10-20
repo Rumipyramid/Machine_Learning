@@ -9,6 +9,7 @@ Uso:
   python figuras.py circulo --pasos 4
   python figuras.py triangulo --modo tres
   python figuras.py triangulo --modo jerarquia --base 3
+  python figuras.py rombo --base 3
   python figuras.py cuadrado
   Opciones comunes: --color "#B9A2FF" --tenue "#8F7CC9"
 """
@@ -121,6 +122,30 @@ def triangulo_jerarquia(n, color, tenue):
     return "\n".join([svg, centro, cima, base])
 
 
+def rombo(n, color, tenue):
+    """Un concepto general (rombo) que ordena varias partes de la base (2 a 4).
+
+    Se prefiere al triángulo jerárquico cuando la base usa íconos ○ □ △: el rombo no se
+    confunde con ninguna de las partes."""
+    svg = (
+        f'<svg aria-label="Rombo: un concepto general sobre {n} partes" style="position:absolute;left:760px;top:250px;width:400px;height:400px" '
+        f'width="400" height="400" viewBox="0 0 400 400"><polygon points="200,8 392,200 200,392 8,200" fill="none" stroke="{color}" stroke-width="8"/></svg>'
+    )
+    centro = ('<p style="position:absolute;left:810px;top:419px;width:300px;font-size:26px;line-height:1.2;'
+              'font-weight:700;text-align:center">[Concepto general, 2 líneas]</p>')
+    cima = caja(1200, 250, 592, "left", "[Lo que el concepto afirma]", "[Máx. ~130 caracteres]", tenue, H3_MONO)
+    largo = {2: 150, 3: 100, 4: 70}[n]
+    items = "\n".join(
+        '<div style="flex:1;display:flex;flex-direction:column;gap:4px">'
+        f'<h3 style="font-size:30px;font-weight:700">[Parte {i}]</h3>'
+        f'<p style="font-size:24px;line-height:1.35;color:{tenue}">[Máx. ~{largo} caracteres]</p></div>'
+        for i in range(1, n + 1)
+    )
+    base = (f'<div style="position:absolute;left:{IZQ}px;top:704px;width:{DER - IZQ}px;display:flex;flex-direction:row;gap:48px;'
+            f'border-top:4px solid {color};padding:24px 0px 0px 0px">\n{items}\n</div>')
+    return "\n".join([svg, centro, cima, base])
+
+
 def cuadrado(color, tenue):
     """Cuatro ideas, una por esquina, con una palabra al centro."""
     svg = (
@@ -144,10 +169,10 @@ def cuadrado(color, tenue):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("figura", choices=["circulo", "triangulo", "cuadrado"])
+    ap.add_argument("figura", choices=["circulo", "triangulo", "cuadrado", "rombo"])
     ap.add_argument("--pasos", type=int, default=4, help="círculo: número de pasos (3 a 6)")
     ap.add_argument("--modo", choices=["tres", "jerarquia"], default="tres", help="triángulo: tres ideas o jerarquía")
-    ap.add_argument("--base", type=int, default=3, help="triángulo jerárquico: ideas en la base (2 a 4)")
+    ap.add_argument("--base", type=int, default=3, help="triángulo jerárquico o rombo: partes en la base (2 a 4)")
     ap.add_argument("--color", default="#B9A2FF")
     ap.add_argument("--tenue", default="#8F7CC9")
     a = ap.parse_args()
@@ -162,6 +187,10 @@ def main():
             if not 2 <= a.base <= 4:
                 ap.error("la base admite de 2 a 4 ideas")
             print(triangulo_jerarquia(a.base, a.color, a.tenue))
+    elif a.figura == "rombo":
+        if not 2 <= a.base <= 4:
+            ap.error("la base admite de 2 a 4 partes")
+        print(rombo(a.base, a.color, a.tenue))
     else:
         print(cuadrado(a.color, a.tenue))
 

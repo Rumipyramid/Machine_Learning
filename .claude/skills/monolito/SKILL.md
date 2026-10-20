@@ -1,6 +1,6 @@
 ---
 name: monolito
-description: Crea presentaciones brutalistas, minimalistas y low-fi (fondo casi negro, texto violeta, Archivo Black + Space Mono, reglas gruesas) que funcionan como manifiesto o propuesta de equipo, con un hilo narrativo en partes, redacción de experto, evidencia citada y láminas con una figura central (triángulo, cuadrado o círculo). Úsala cuando el usuario invoque /monolito o pida "una presentación brutalista", "un deck low-fi negro y violeta", "un manifiesto en slides", "una presentación como la de El diseño conductual ha muerto" (antes "Diseño de agencia"), o quiera convertir una argumentación en un deck con este estilo. No la uses para piezas con la marca Rimac (usa `presentaciones-rimac` o `rimac-slides`) ni para piezas de Mu (usan la identidad de `.claude/skills/mu/IDENTIDAD.md`).
+description: Crea presentaciones brutalistas, minimalistas y low-fi (fondo casi negro, texto violeta, Archivo Black + Space Mono, reglas gruesas) que funcionan como manifiesto o propuesta de equipo, con un hilo narrativo en partes, redacción de experto, evidencia citada y láminas con una figura central (triángulo, cuadrado, círculo o rombo). Úsala cuando el usuario invoque /monolito o pida "una presentación brutalista", "un deck low-fi negro y violeta", "un manifiesto en slides", "una presentación como la de El diseño conductual ha muerto" (antes "Diseño de agencia"), o quiera convertir una argumentación en un deck con este estilo. No la uses para piezas con la marca Rimac (usa `presentaciones-rimac` o `rimac-slides`) ni para piezas de Mu (usan la identidad de `.claude/skills/mu/IDENTIDAD.md`).
 ---
 
 # Monolito — presentaciones brutalistas que argumentan
@@ -90,14 +90,16 @@ Las plantillas completas están en `references/layouts.md`.
 | Cambio de parte o quiebre emocional | **Diapositiva acento** (fondo violeta) |
 | El cierre | **Manifiesto**: 6 principios en grilla + propósito |
 
-## 5. Figuras centrales: triángulo, cuadrado y círculo
+## 5. Figuras centrales: triángulo, cuadrado, círculo y rombo
 
 La figura va **en el centro** de la lámina, grande y de línea gruesa (8 px). Las ideas van **alrededor**, junto a
 cada vértice, esquina o punto. Dentro de la figura va una o dos palabras que nombran lo que une a las ideas.
 
 - **Triángulo, modo «tres»:** tres ideas que se relacionan entre sí (ninguna manda). Una idea por vértice.
-- **Triángulo, modo «jerarquía»:** una idea arriba que ordena varias en la base (2 a 4). La base es una fila
-  horizontal bajo el triángulo, separada por una regla de 4 px.
+- **Rombo:** un concepto general que ordena varias partes (2 a 4). Las partes van en una fila horizontal bajo el
+  rombo, separada por una regla de 4 px. Usa el rombo, y no el triángulo, cuando la base lleva íconos ○ □ △: así el
+  concepto general no se confunde con una de sus partes (regla del usuario, 2026-10-20).
+- **Triángulo, modo «jerarquía»:** igual que el rombo, pero solo si ninguna parte de la base usa el △.
 - **Cuadrado:** exactamente cuatro ideas, una por esquina (marcada con un punto).
 - **Círculo:** un ciclo de 3 a 6 pasos en sentido horario, con flechas entre pasos. Úsalo cuando algo vuelve, se
   repite o se retroalimenta. Si el orden no es fijo, dilo en las notas.
@@ -109,6 +111,7 @@ python .claude/skills/monolito/scripts/figuras.py circulo --pasos 4
 python .claude/skills/monolito/scripts/figuras.py triangulo --modo tres
 python .claude/skills/monolito/scripts/figuras.py triangulo --modo jerarquia --base 3
 python .claude/skills/monolito/scripts/figuras.py cuadrado
+python .claude/skills/monolito/scripts/figuras.py rombo --base 3
 # sobre fondo acento: --color "#0E0B14" --tenue "#0E0B14"
 ```
 
@@ -116,7 +119,7 @@ El script imprime el SVG y las cajas de texto ya posicionadas, con marcadores `[
 El título de la lámina debe caber en una sola línea (unos 22 caracteres a 80 px), porque la figura empieza en y≈240.
 
 **Dos gramáticas, no las mezcles.** La figura central dice **cuántas ideas hay y cómo se relacionan**. Si el deck
-además usa íconos pequeños con significado (en el deck de referencia: ○ persona, □ entorno, △ sistema), decláralos
+además usa íconos pequeños con significado (en el deck de referencia: ○ persona, □ entorno, △ sistema, ◇ concepto general), decláralos
 una vez en una leyenda y mantenlos pequeños (36-64 px) para que no se confundan con la figura central.
 
 ## 6. Construir y publicar con el tipo «Slides»

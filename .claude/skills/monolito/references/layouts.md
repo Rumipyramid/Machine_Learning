@@ -133,7 +133,7 @@ Máximo 7 caracteres por cifra (columnas de 520 px a 88 px). La fuente va en el 
 Fondo `#B9A2FF`, texto y reglas `#0E0B14`, pie también en `#0E0B14`. Úsala para abrir la parte central del
 argumento. Puede llevar una figura central generada con `--color "#0E0B14" --tenue "#0E0B14"`.
 
-## Figuras centrales (triángulo, cuadrado, círculo)
+## Figuras centrales (triángulo, cuadrado, círculo, rombo)
 
 Genera el bloque con `scripts/figuras.py` y pégalo después del `<h2>`. Ejemplos ya publicados en el deck
 «El diseño conductual ha muerto. Larga vida al diseño conductual.»:
@@ -142,8 +142,8 @@ Genera el bloque con `scripts/figuras.py` y pégalo después del `<h2>`. Ejemplo
   centro, una frase de cierre centrada en y=800).
 - **Círculo de 4 pasos:** lámina «La conducta se mueve» (cambia → se apaga → vuelve → se resiste; «Trayectorias,
   no momentos» al centro).
-- **Triángulo jerárquico:** lámina «Seis capas de la conducta» sobre fondo acento («El nuevo diseño conductual» arriba; persona,
-  entorno y sistema en la base, con sus íconos).
+- **Rombo:** lámina «Seis capas de la conducta» sobre fondo acento («El nuevo diseño conductual» dentro del rombo;
+  persona, entorno y sistema en la base, con sus íconos ○ □ △).
 
 Reglas de las figuras centrales:
 
@@ -154,6 +154,20 @@ Reglas de las figuras centrales:
   caracteres o menos.
 - Una frase de cierre opcional va centrada debajo (y≈800) solo en el cuadrado; en el círculo y el triángulo no hay
   espacio.
+
+## Grilla con habilitador transversal
+
+Cuando una idea no es una más de la lista sino que atraviesa a todas (un habilitador, una condición previa), va
+fuera de la grilla: en una franja de ancho completo, debajo, con fondo acento (`#B9A2FF`, texto `#0E0B14`), un rótulo
+«Habilitador transversal» y una frase que diga qué habilita. Ejemplo: lámina «Ocho preguntas» (siete describen el
+entorno; la octava, «¿Se puede experimentar?», decide el método).
+
+## Referencias (anexo)
+
+Última lámina del deck. Dos columnas de bloques, uno por parte: rótulo de 24 px en negrita y mayúsculas, y debajo las
+citas cortas (autor y año) separadas por « · », a 24 px con `line-height:1.2` en tono tenue. Al final, un bloque de
+«Fuentes internas». Si no cabe, acorta con «et al.» antes que bajar de 24 px. La lista completa (título, revista,
+rigor, enlace) va en el repo, en `research/_outputs/referencias-<deck>.md`, generada desde el códice por ID.
 
 ## Manifiesto (cierre)
 

@@ -42,6 +42,8 @@ investigación, la parte 1 puede ser «la pregunta» y la parte 3 «lo que encon
 - **Evidencia débil:** si un caso famoso no tiene evaluación independiente, úsalo como ejemplo y dilo en la lámina.
 - **Posición propia:** rotúlala en el pie («Es nuestra posición, no un hallazgo»).
 - **Propuestas:** rotúlalas como tales («Propuestas del informe, no proyectos en marcha»).
+- **Referencias:** cierra con un anexo de referencias por parte (formato en `layouts.md`) y deja la lista completa en el
+  repo. Las fuentes de la lámina de vanguardia deben ser recientes (últimos dos o tres años); lo anterior va como base.
 
 ## El propósito sin sonar ingenuo
 
