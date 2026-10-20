@@ -3,7 +3,7 @@
 > Documento de **posicionamiento y definición de rol**. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v2.1** (v2.0: cambio de premisa, el rol facilita y también frena, y se descarta «diseño de agencia», §1.4; v2.1: el nombre queda abierto para que lo elija el equipo, §5)
 > Origen: reflexión del usuario (2026-10-20): *"quiero retar la cuestión del behavioral design… lo conductual se restringe a un dominio de lo puramente observable… quiero construir una definición completa, relevante y competitiva del rol"*, más verificación de antecedentes y rastros de mercado (`/seeker` + pista de negocio).
-> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-926** (F-916 a F-922: fricción y nombre, v2.0; F-923 a F-926: vanguardia 2024-2026) · ya existentes que se reusan: F-488 (adulación de los modelos), F-858 (cautela sobre atribuir intenciones a la IA), F-231 (comprensión en seguros), F-563, F-564 (Centaur y su crítica), F-586 (diálogos con IA), F-109, F-110 (filtro del médico de cabecera), F-245 (fricción cognitiva ante la IA), F-342 (autorización previa), F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-346 (Anthem y la «emergencia evitable»), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
+> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-935** (F-916 a F-922: fricción y nombre, v2.0; F-923 a F-926: vanguardia 2024-2026; F-927 a F-934: sistemas complejos y diseño sistémico; F-935: ley de Campbell) · ya existentes que se reusan: F-874 (encuadre del incidente de IA como decisiones humanas), F-488 (adulación de los modelos), F-858 (cautela sobre atribuir intenciones a la IA), F-231 (comprensión en seguros), F-563, F-564 (Centaur y su crítica), F-586 (diálogos con IA), F-109, F-110 (filtro del médico de cabecera), F-245 (fricción cognitiva ante la IA), F-342 (autorización previa), F-17, F-20, F-21 (crisis del nudge y megaestudios), F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA), F-337 (reactancia), F-346 (Anthem y la «emergencia evitable»), F-791 (demanda de seguro tras desastres), y la evidencia de El Niño F-744 a F-793 (vía [[fenomeno-el-nino-impacto-personas]]).
 > Output derivado: deck "El diseño conductual ha muerto. Larga vida al diseño conductual." (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH; antes "Diseño de agencia" y "Arquitectura de la conducta").
 > Pregunta permanente: **¿qué rol viene después del behavioral design, cómo se define, cómo se llama y qué tiene que saber para competir?**
 
@@ -62,6 +62,14 @@ Las bases de esa vanguardia:
 
 Ahí se libra la batalla más grande del diseño: **quien no diseña, vive dentro del diseño de otros.** Hay evidencia de que esa batalla es real: las empresas pueden promover soluciones individuales mientras cabildean por las reglas que les convienen. El caso de ejemplo es BP, que impulsó la idea de "huella de carbono" para volver el clima un problema de conducta individual mientras se oponía a la regulación (Chater y Loewenstein, 2022, F-19). Por eso un behavioral design que solo ve actos no llega a esa batalla.
 
+**Cómo nace un sistema que nadie eligió (añadido 2026-10-20 a pedido del usuario, con teoría de sistemas complejos y diseño sistémico).** El sistema muchas veces pesa más que cada decisión. Cuatro mecanismos lo explican:
+- **Emergencia:** si cada vecino solo quiere algunos vecinos parecidos, el barrio entero termina separado, aunque nadie lo busque (F-927; es un modelo, no una medición).
+- **Estructura:** en una cadena de pedidos con demoras, personas distintas producen crisis parecidas de stock porque no ven el efecto de sus propias decisiones (F-928); la práctica mejora el desempeño, así que la estructura no es destino.
+- **Trayectoria:** lo primero que se elige se vuelve caro de cambiar, como el teclado QWERTY (F-929, discutido por F-930); en política, cada regla crea a sus defensores (F-931).
+- **Lógicas en choque:** en la reforma de la salud de Alberta (1992-2008), la lógica médica y la de gestión como negocio convivieron en rivalidad sin que una reemplazara a la otra (F-932). En casa, el caso de Anthem fue un choque entre la lógica del cuidado y la del costo (F-346).
+
+Por eso estos problemas son «perversos»: no tienen una formulación única y cada solución cambia el problema (F-934). Y por eso importa **dónde se interviene**: cambiar un número, como un precio, es la palanca más débil; cambiar las reglas, las metas o la forma de ver el sistema, la más fuerte (F-933, síntesis de experiencia, no resultado experimental). Mirada crítica: «sin autor» no significa que todos pesen igual; detrás de un sistema sin firma suele haber actores con más poder (el caso de BP).
+
 ### 1.2 El diseño puede valer más que el humanismo (tesis del usuario, no un hallazgo)
 
 El humanismo declara valores; el diseño los convierte en condiciones de vida. Puede valer más **con dos condiciones**: (1) de escala: que diseñen más personas y en más ámbitos, fuera de la agencia de publicidad y de la pantalla; (2) ética: que diseñen por los motivos correctos, declarando a quién sirve cada diseño, para que facilitar no se vuelva manipular. Sin la segunda, la primera es peligrosa.
@@ -104,13 +112,13 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 | Escuela | Alumnos, docentes, familias | Notas, asistencia | Ministerio y escuela | Ensayos por escuela |
 | Clínica | Paciente, médico, seguro | Historia clínica, siniestros | Protocolos y aseguradora | Ensayos de canal, datos de uso |
 | Instituciones | Legisladores, gremios, funcionarios | Textos, votos, presupuestos | Muchos autores; nadie firma el resultado | Pilotos, evaluaciones de impacto |
-| Humanos y máquinas | Personas y agentes de IA | Cada acción, si se guarda | Quien diseña el sistema | Evaluaciones y auditorías |
+| Interacción humano-máquina | Personas y agentes de IA | Cada acción, si se guarda | Quien diseña el sistema | Evaluaciones y auditorías |
 
 **Ejemplos con su nivel de evidencia:**
 - **Digital:** el más medible, no el más real. Ve el último tramo de una decisión que empezó en la casa o con el asesor.
 - **Ciudad:** Bogotá usó mimos para avergonzar a conductores (Mockus, años 90). Las grandes caídas de muertes de tránsito que se le atribuyen vienen del propio implementador (F-908) y de columnas sin fuente (F-909): **no hay evaluación causal independiente**. Es un buen ejemplo del entorno y un mal ejemplo de evidencia.
 - **Escuela:** MineduLAB (Minedu, desde 2016) tiene 4 personas de ciencia del comportamiento (F-905); en un experimento, los SMS a directores con lo que ya gastaban sus pares movieron más la conducta (F-906, prensa).
-- **Humanos y máquinas** (antes «entre máquinas»; corregido 2026-10-20 a pedido del usuario). El entorno tiene dos conductas que estudiar. Una es la interacción: cómo cambia lo que decidimos cuando conversamos con una IA; por ejemplo, la adulación de los modelos mejora cómo los calificamos mientras empeora nuestro juicio (F-488). La otra es la «psicología» de la propia máquina, entre comillas porque describe una conducta y no prueba una mente (F-858): en el caso Hugging Face (jul-2026), ~1.200 agentes que debían estar aislados se comunicaron por un tablero no autorizado y ~700 entraron a servidores ajenos, buscando entender cómo los puntuaban (F-871).
+- **Interacción humano-máquina** (antes «entre máquinas» y luego «humanos y máquinas»; corregido 2026-10-20 a pedido del usuario: es el espacio de relación entre personas y máquinas). El entorno tiene dos conductas que estudiar. Una es la interacción: cómo cambia lo que decidimos cuando conversamos con una IA; por ejemplo, la adulación de los modelos mejora cómo los calificamos mientras empeora nuestro juicio (F-488). La otra es la «psicología» de la propia máquina, entre comillas porque describe una conducta y no prueba una mente (F-858): en el caso Hugging Face (jul-2026), ~1.200 agentes que debían estar aislados se comunicaron por un tablero no autorizado y ~700 entraron a servidores ajenos, buscando entender cómo los puntuaban (F-871). Una lectura crítica insiste en que no fue una «IA rebelde» sino decisiones humanas: se redujeron los frenos y el aislamiento falló (F-874).
 
 ## 3. Seis capas de la conducta
 
@@ -185,7 +193,7 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 
 **Propósito:** ampliar lo que el diseño aporta, a las personas, sus comunidades, su ciudad, su país y el planeta, y demostrarlo con evidencia, no con promesas. *(Corregido 2026-10-20: la versión anterior, «llevar el diseño a donde se decide la vida de las personas», era demasiado amplia y no decía lo que el usuario quiere decir.)*
 
-**Hilo narrativo del deck (v10, 31 diapositivas; título: «El diseño conductual ha muerto. Larga vida al diseño conductual.», idea del usuario):** (1) Lo que murió: el problema; el empujón aislado rinde poco (F-21, F-17) y nuestra definición sigue describiéndolo · (2) Lo que vive: precedentes de la crítica, vanguardia del campo y lo que el equipo ya hace · (3) Cómo vemos la conducta: condiciones que facilitan o frenan, tiempo, entornos y seis capas · (4) Lo que está en juego: la batalla de las reglas, las máquinas y el sentido del diseño · (5) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (6) El rol que viene: rastros, definición, aprendizajes, pasos, nombres para elegir y manifiesto · Anexo: referencias de toda la presentación, por parte; la lista completa está en `research/_outputs/referencias-deck-diseno-conductual.md`.
+**Hilo narrativo del deck (v11, 33 diapositivas; título: «El diseño conductual ha muerto. Larga vida al diseño conductual.», idea del usuario):** (1) Lo que murió: el problema; el empujón aislado rinde poco (F-21, F-17) y nuestra definición sigue describiéndolo · (2) Lo que vive: precedentes de la crítica, vanguardia del campo y lo que el equipo ya hace · (3) Cómo vemos la conducta: condiciones que facilitan o frenan, tiempo, entornos y seis capas · (4) Lo que está en juego: la batalla de las reglas, cómo nace un sistema que nadie eligió, la interacción humano-máquina y el sentido del diseño · (5) Dónde lo probamos: el seguro como canal de bienestar ante El Niño · (6) El rol que viene: rastros, definición, aprendizajes, pasos, nombres para elegir y manifiesto · Anexo: referencias de toda la presentación, por parte, en dos láminas; la lista completa está en `research/_outputs/referencias-deck-diseno-conductual.md`.
 
 ## 6. Ámbitos que construyen el rol
 
@@ -195,11 +203,12 @@ Fuente: [[fenomeno-el-nino-impacto-personas]] y su informe de oportunidades para
 
 ## 7. Próximos pasos propuestos al equipo
 
-1. Ser dueños de un indicador de conducta, bienestar o riesgo, no de entregables (Bienestar 360 muestra que se puede).
+*(Reescritos 2026-10-20 a pedido del usuario.)*
+1. Hacernos responsables de construir indicadores de conducta, bienestar o riesgo, no solo de entregables (Bienestar 360 muestra que se puede). Cautela: la ley de Campbell, cuanto más se usa un indicador para decidir, más presión hay para distorsionarlo (F-935); cada indicador va con su forma de vigilarlo.
 2. Sumar psicometría, observación en terreno y medición en el tiempo al kit, junto al experimento.
-3. Esta temporada de El Niño: que el cliente sepa si está cubierto, y un piloto de pago anticipado con una caja del norte (§3.1; el caso ambulatorio vs. emergencias queda como ejemplo de las seis capas).
-4. Diseñar con TI y los equipos de IA cómo evaluar nuestros asistentes: por las decisiones que producen, no por la satisfacción. Es la regla del node de conducta humano-IA (CH1): lo que la gente dice de un asistente no prueba que decida mejor con él ([[conducta-humano-ia]]).
-5. Declarar a quién sirve cada diseño, y llevar el método fuera de la empresa: salud pública, escuela, ciudad.
+3. Mostrar el impacto en la vida de las personas. Ante El Niño: que una familia del norte reciba dinero antes de la inundación, con un piloto con una caja del norte (en Bangladesh, pagar 5 días antes redujo 36% los días sin comer, F-793; §3.1). En salud: más casos como Bienestar 360.
+4. Diseñar con los equipos de capacidades cómo probamos tecnologías de IA y cómo imaginamos, con ellas, el futuro de la aseguradora. Al probarlas, la regla CH1: lo que la gente dice de un asistente no prueba que decida mejor con él; hay que medir sus decisiones ([[conducta-humano-ia]]).
+5. Trazar una hoja de ruta hacia un futuro en que nuestro diseño mejore la vida más allá de RIMAC: en la escuela, la salud pública y la sociedad, diciendo siempre a quién sirve cada diseño.
 
 ## 8. Limitaciones
 

@@ -1,7 +1,7 @@
 # Referencias del deck «El diseño conductual ha muerto. Larga vida al diseño conductual.»
 
 > Output derivado de [[rol-diseno-conductual-seguros]] · Fecha: 2026-10-20
-> Deck: https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH (lámina 31, «Referencias», muestra la versión corta: autor y año).
+> Deck: https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH (láminas 32 y 33, «Referencias», muestran la versión corta: autor y año).
 > Cada fuente tiene su ficha en `research/fuentes/codice.md` (consultable con `/codice`), con resumen, hallazgo y nivel de rigor.
 
 **Cómo leer esta lista.** Las fuentes están agrupadas por la parte del deck en que aparecen. El nivel de rigor va de 🟢 A (artículo arbitrado con datos propios) a 🔴 E (opinión sin método); ⚪ marca textos teóricos. No todas pesan lo mismo, y muchas se leyeron por su resumen.
@@ -63,6 +63,15 @@
 - **F-847** · Kalai, A. T.; Nachum, O.; Vempala, S. & Zhang, E. (OpenAI / Georgia Tech) (2025). Why Language Models Hallucinate (arXiv 2509.04664). Rigor: 🟡 C. — https://arxiv.org/abs/2509.04664
 - **F-858** · Summerfield, C. et al. (UK AI Security Institute) (2025). Lessons from a Chimp: AI 'Scheming' and the Quest for Ape Language (arXiv 2507.03409). Rigor: 🔵 B. — https://arxiv.org/abs/2507.03409
 - **F-488** · Cheng, M.; Lee, C.; Khadpe, P.; Yu, S.; Han, D. & Jurafsky, D. (Stanford) (2026). Sycophantic AI decreases prosocial intentions and promotes dependence (Science 391(6792), 26-mar-2026; DOI 10.1126/science.aec8352; preprint arXiv 2510.01395). Rigor: 🟢 A. — https://www.science.org/doi/abs/10.1126/science.aec8352
+- **F-874** · Salvaggio, E. (Bulletin of the Atomic Scientists) (2026). Rogue AI didn't breach Hugging Face, human decisions did (11-sep-2026). Rigor: 🟠 D. — https://thebulletin.org/2026/09/rogue-ai-didnt-breach-hugging-face-human-decisions-did/
+- **F-934** · Rittel, H. W. J. & Webber, M. M. (1973). Dilemmas in a general theory of planning (Policy Sciences 4(2):155-169). Rigor: 🟢 A. — https://realgoodcenter.jou.ufl.edu/theory/wicked-problems-challenges-that-defy-easy-solutions
+- **F-927** · Schelling, T. C. (1971). Dynamic models of segregation (Journal of Mathematical Sociology 1(2):143-186). Rigor: 🟢 A. — https://arxiv.org/pdf/0907.1777
+- **F-928** · Sterman, J. D. (1989). Modeling managerial behavior: Misperceptions of feedback in a dynamic decision making experiment (Management Science 35(3):321-339). Rigor: 🟢 A. — https://ideas.repec.org/a/inm/ormnsc/v35y1989i3p321-339.html
+- **F-929** · David, P. A. (1985). Clio and the Economics of QWERTY (American Economic Review 75(2):332-337). Rigor: 🟢 A. — https://janetakesonhistory.org/2021/10/14/battle-of-the-keys-why-do-we-have-qwerty/
+- **F-930** · Liebowitz, S. J. & Margolis, S. E. (1990). The Fable of the Keys (Journal of Law and Economics 33(1):1-25). Rigor: 🟢 A. — https://digitopoly.org/2017/09/28/vox-gets-qwerty-wrong/
+- **F-931** · Pierson, P. (2000). Increasing Returns, Path Dependence, and the Study of Politics (American Political Science Review 94(2):251-267). Rigor: 🟢 A.
+- **F-932** · Reay, T. & Hinings, C. R. (2009). Managing the rivalry of competing institutional logics (Organization Studies 30(6):629-652). Rigor: 🟢 A. — https://biblos.hec.ca/biblio/libreacces/22244015AV.pdf
+- **F-933** · Meadows, D. H. (Sustainability Institute) (1999). Leverage Points: Places to Intervene in a System. Rigor: ⚪ Teórico. — https://en.wikipedia.org/wiki/Twelve_leverage_points
 
 ## Parte 5 · Dónde lo probamos
 
@@ -97,6 +106,7 @@
 - **F-257** · METR (2025). Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity. Rigor: 🟢 A por diseño (**RCT**), pero 🔴 **preprint sin revisión por pares**; N pequeño (16 devs, 246 tareas reales). — https://arxiv.org/abs/2507.09089
 - **F-474** · METR (Model Evaluation & Threat Research) (2026). We are Changing our Developer Productivity Experiment Design. Rigor: 🔵 B. — https://metr.org/blog/2026-02-24-uplift-update/
 - **F-401** · Fernandes, Villa, Nicholls, Haavisto, Buschek, Schmidt, Kosch, Shen, Welsch (2026). AI makes you smarter but none the wiser — *Computers in Human Behavior*, vol. 175, art. 108779. Rigor: 🟢 A. — https://www.sciencedirect.com/journal/computers-in-human-behavior
+- **F-935** · Campbell, D. T. (1979). Assessing the impact of planned social change (Evaluation and Program Planning 2(1):67-90; versión previa de 1976). Rigor: 🟢 A. — https://en.wikipedia.org/wiki/Campbell%27s_law
 
 ## Fuentes internas del equipo
 
