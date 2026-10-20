@@ -3,7 +3,7 @@
 > Documento de **posicionamiento y definición de rol**. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v1.0**
 > Origen: reflexión del usuario (2026-10-20): *"quiero retar la cuestión del behavioral design… lo conductual se restringe a un dominio de lo puramente observable… quiero construir una definición completa, relevante y competitiva del rol"*, más verificación de antecedentes y rastros de mercado (`/seeker` + pista de negocio).
-> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-909** · ya existentes que se reusan: F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA).
+> Fuentes en `research/fuentes/codice.md`: **nuevas F-896 a F-909** · ya existentes que se reusan: F-19 (Chater y Loewenstein, i-frame y s-frame), F-596 (Rahwan, comportamiento de máquinas), F-871 (caso Hugging Face), F-884 (Air Canada), F-886, F-888, F-889 (seguro de IA).
 > Output derivado: deck "Diseño de agencia" (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH).
 > Pregunta permanente: **¿qué rol viene después del behavioral design, cómo se define, cómo se llama y qué tiene que saber para competir?**
 
@@ -30,13 +30,26 @@ Este node define un rol y su argumento. **No** repite el estado de la disciplina
 | Verbeek, 2011 (F-900) | La tecnología media las decisiones morales; diseñarla es diseñar conducta | El encuadre ético |
 | Rahwan y otros, 2019 (F-596) | La conducta de las máquinas es objeto de la ciencia del comportamiento | La capa de las máquinas |
 
-**Lo que el rol ya ganó:** demuestra causalidad. El diseño en general entrega artefactos; este rol entrega efectos medidos frente a un control. En Lima, el diseño sigue siendo "un ave enjaulada" (palabras del usuario): para salir de la jaula hace falta más alcance, no más piezas.
+**Lo que el rol ya ganó:** demuestra causalidad. El diseño en general entrega artefactos; este rol entrega efectos medidos frente a un control. En Lima, el diseño sigue siendo "un ave enjaulada" (palabras del usuario): vive en pantallas y campañas. **Lo que falta es que entre a otros ámbitos de la sociedad:** la salud, la escuela, la ciudad, el Estado.
+
+### 1.1 La batalla está en el diseño de reglas (añadido 2026-10-20, idea del usuario)
+
+**Todo está diseñado, pero no todo tiene autor.** Hay tres formas de autoría, que el deck dibuja con tres figuras:
+- ○ **Un autor:** un producto, una app, una campaña. Alguien firma.
+- □ **Varios autores:** un programa, un hospital, una escuela. Muchos firman a medias.
+- △ **Sin autor:** leyes y reglas que resultan de intereses que chocan entre sí. Nadie firma el resultado.
+
+Ahí se libra la batalla más grande del diseño: **quien no diseña, vive dentro del diseño de otros.** Hay evidencia de que esa batalla es real: las empresas pueden promover soluciones individuales mientras cabildean por las reglas que les convienen. El caso de ejemplo es BP, que impulsó la idea de "huella de carbono" para volver el clima un problema de conducta individual mientras se oponía a la regulación (Chater y Loewenstein, 2022, F-19). Por eso un behavioral design que solo ve actos no llega a esa batalla.
+
+### 1.2 El diseño puede valer más que el humanismo (tesis del usuario, no un hallazgo)
+
+El humanismo declara valores; el diseño los convierte en condiciones de vida. Puede valer más **con dos condiciones**: (1) de escala: que diseñen más personas y en más ámbitos, fuera de la agencia y de la pantalla; (2) ética: que diseñen por los motivos correctos, declarando a quién sirve cada diseño, para que facilitar no se vuelva manipular. Sin la segunda, la primera es peligrosa.
 
 ## 2. La conducta ocurre en entornos con condiciones distintas
 
 La investigación de la conducta no sucede en un solo lugar. Lo digital es un entorno; la ciudad, la escuela, la clínica y ahora los entornos donde actúan máquinas son otros. Cada uno tiene **condiciones ontológicas** propias: qué existe y qué cuenta como conducta ahí.
 
-**Siete condiciones que cambian de un entorno a otro:** (1) quién actúa; (2) qué queda registrado; (3) quién pone las reglas; (4) la escala de tiempo; (5) el cuerpo y la materia; (6) la mirada de los otros; (7) si se puede experimentar.
+**Ocho condiciones que cambian de un entorno a otro:** (1) quién actúa; (2) qué queda registrado; (3) quién pone las reglas; (4) a quién sirve la regla (los intereses detrás del diseño, §1.1); (5) la escala de tiempo; (6) el cuerpo y la materia; (7) la mirada de los otros; (8) si se puede experimentar.
 
 | Entorno | Quién actúa | Qué se registra | Quién pone las reglas | Cómo se experimenta |
 |---|---|---|---|---|
@@ -44,6 +57,7 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 | Ciudad | Multitudes, infraestructura | Poco: censos, sensores | Municipio y costumbre | Experimentos naturales |
 | Escuela | Alumnos, docentes, familias | Notas, asistencia | Ministerio y escuela | Ensayos por escuela |
 | Clínica | Paciente, médico, seguro | Historia clínica, siniestros | Protocolos y aseguradora | Ensayos de canal, datos de uso |
+| Instituciones | Legisladores, gremios, funcionarios | Textos, votos, presupuestos | Muchos autores; nadie firma el resultado | Pilotos, evaluaciones de impacto |
 | Entre máquinas | Agentes de IA | Cada acción, si se guarda | Quien diseña la prueba | Evaluaciones e incidentes |
 
 **Ejemplos con su nivel de evidencia:**
@@ -97,9 +111,11 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 
 **Recomendación: dos nombres.** El concepto, para el pensamiento y la marca: *diseño de agencia*. El título, para el mercado: *Behavioral Systems Designer*.
 
-**Definición corta:** *Diseña y mide las condiciones (cognitivas, sociales, materiales, institucionales y algorítmicas) bajo las cuales personas, organizaciones y máquinas deciden y actúan frente al riesgo.*
+**Definición corta:** *Diseña y mide las condiciones (cognitivas, sociales, materiales, institucionales y algorítmicas) bajo las cuales personas, instituciones y máquinas deciden y actúan.* No menciona el seguro a propósito (corregido 2026-10-20: la versión anterior decía "frente al riesgo" y ataba el rol al seguro): el seguro es el campo de prueba, no el límite.
 
-**Definición completa:** el rol diseña sistemas de agencia: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Su unidad de trabajo no es la pantalla: es el efecto medido en conducta y en riesgo. Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico, y declara antes de empezar qué resultado va a medir.
+**Definición completa:** el rol diseña sistemas de agencia: el conjunto de mentes, relaciones, objetos, reglas y agentes artificiales que producen una conducta. Su unidad de trabajo no es la pantalla: es el efecto medido. Usa experimentos para lo observable, psicometría para lo que no se ve, etnografía para lo social y auditoría para lo maquínico. Declara antes de empezar qué resultado va a medir y a quién sirve el diseño.
+
+**Las tres formas del deck** tienen un solo significado en todo el documento: ○ persona (capas 1-2), □ entorno o institución (capas 3-4), △ sistema de reglas e intereses (capas 5-6).
 
 ## 6. Ámbitos que construyen el rol
 
@@ -113,6 +129,7 @@ La investigación de la conducta no sucede en un solo lugar. Lo digital es un en
 2. Sumar psicometría y etnografía al kit, junto al experimento.
 3. Un piloto: ambulatorio vs. emergencias, trabajado en las seis capas.
 4. Sentarse con TI y los equipos de IA a diseñar cómo se evalúan los asistentes.
+5. Declarar a quién sirve cada diseño, y llevar el método fuera de la empresa: salud pública, escuela, ciudad.
 
 ## 8. Limitaciones
 
