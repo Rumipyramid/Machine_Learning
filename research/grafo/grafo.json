@@ -115,8 +115,8 @@
   {
    "id": "riesgo-proteccion-seguros-sectores-populares-peru",
    "type": "node",
-   "lines": 230,
-   "cites": 42,
+   "lines": 286,
+   "cites": 50,
    "design": false
   },
   {
@@ -8132,6 +8132,69 @@
    "autor": "Fasecolda (Revista Fasecolda)",
    "anio": "s.f.",
    "huerfana": false
+  },
+  {
+   "id": "F-886",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Aseguradoras pagaron ~S/3.400 millones por fallecimientos por COVID-19 (2020-2021); siniestralidad de vida a marzo de 2021",
+   "autor": "APESEG (vía Andina, Infomercado y Diario Correo)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-887",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Decreto de Urgencia N° 017-2019 (cobertura universal de salud) y cifras de afiliación al SIS",
+   "autor": "Poder Ejecutivo (DU 017-2019) · SIS vía El Peruano y Andina",
+   "anio": "2019-2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-888",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The Global Findex Database 2021 — resultados para Perú",
+   "autor": "Banco Mundial — Global Findex 2021 (vía SBS, Gestión y Andina)",
+   "anio": "2022 (campo 2021)",
+   "huerfana": false
+  },
+  {
+   "id": "F-889",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Billeteras digitales: participación en transacciones y escala de Yape",
+   "autor": "BCRP (análisis de pagos minoristas) y Yape/BCP (vía Peru Retail y Gestión)",
+   "anio": "2023-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-890",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Resilience in the time of a pandemic: developing public policies for ollas comunes in Peru",
+   "autor": "Fort, R. & Alcázar, L. (GRADE)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-891",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Encuesta Lima Cómo Vamos 2014 — Salud (ayuda memoria)",
+   "autor": "Lima Cómo Vamos",
+   "anio": "2015 (campo 2014)",
+   "huerfana": false
+  },
+  {
+   "id": "F-892",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "El impacto socioeconómico de la COVID-19 en los hogares peruanos · Hambre en hogares de trabajadores informales de Lima",
+   "autor": "IEP con PNUD y OIT · WIEGO (vía Agraria.pe)",
+   "anio": "2020-2021",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -11631,6 +11694,11 @@
    "k": "cita"
   },
   {
+   "s": "riesgo-proteccion-seguros-sectores-populares-peru",
+   "t": "F-506",
+   "k": "cita"
+  },
+  {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "F-506",
    "k": "cita"
@@ -13644,6 +13712,41 @@
    "s": "riesgo-proteccion-seguros-sectores-populares-peru",
    "t": "F-885",
    "k": "cita"
+  },
+  {
+   "s": "riesgo-proteccion-seguros-sectores-populares-peru",
+   "t": "F-886",
+   "k": "cita"
+  },
+  {
+   "s": "riesgo-proteccion-seguros-sectores-populares-peru",
+   "t": "F-887",
+   "k": "cita"
+  },
+  {
+   "s": "riesgo-proteccion-seguros-sectores-populares-peru",
+   "t": "F-888",
+   "k": "cita"
+  },
+  {
+   "s": "riesgo-proteccion-seguros-sectores-populares-peru",
+   "t": "F-889",
+   "k": "cita"
+  },
+  {
+   "s": "riesgo-proteccion-seguros-sectores-populares-peru",
+   "t": "F-890",
+   "k": "cita"
+  },
+  {
+   "s": "riesgo-proteccion-seguros-sectores-populares-peru",
+   "t": "F-891",
+   "k": "cita"
+  },
+  {
+   "s": "riesgo-proteccion-seguros-sectores-populares-peru",
+   "t": "F-892",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -13925,13 +14028,13 @@
    },
    {
     "fecha": "2026-10-20",
-    "nuevas": 39,
-    "acumuladas": 884,
-    "AB": 16,
+    "nuevas": 46,
+    "acumuladas": 891,
+    "AB": 19,
     "rigor": {
-     "B": 8,
-     "D": 6,
-     "C": 16,
+     "B": 11,
+     "D": 7,
+     "C": 19,
      "A": 8,
      "E": 1
     }
@@ -15561,20 +15664,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 845,
+    "fuentes": 884,
     "rigor": {
-     "B": 125,
-     "A": 303,
-     "C": 184,
-     "D": 182,
+     "B": 133,
+     "A": 311,
+     "C": 200,
+     "D": 188,
      "?": 15,
-     "E": 36
+     "E": 37
     },
-    "nodes": 20,
+    "nodes": 21,
     "outputs": 5,
-    "wikilinks": 124,
+    "wikilinks": 140,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 738,
+    "fuentes_citadas_en_nodes": 778,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -15595,7 +15698,7 @@
      "cites": 274
     },
     "fecha": "2026-10-20",
-    "commit": "9ec515f",
+    "commit": "f3ff934",
     "fuente": "git"
    }
   ],

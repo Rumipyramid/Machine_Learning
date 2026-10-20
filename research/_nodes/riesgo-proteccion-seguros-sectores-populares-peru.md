@@ -1,9 +1,9 @@
 # Riesgo, protección y seguros en sectores populares del Perú: qué dice la evidencia de campo (foco Lima Norte y migrantes)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-20 · Última actualización: 2026-10-20 (§11 vigencia pospandemia) · Versión: **v1.0**
 > Origen: `/seeker` (registro empírico + teórico), rol de investigador/a senior en antropología económica y economía del comportamiento.
-> Fuentes en `research/fuentes/codice.md`: **F-847 a F-885**, más F-1 (estudio SBS 2023 de seguros) ya registrada.
+> Fuentes en `research/fuentes/codice.md`: **F-847 a F-892**, más F-1 (estudio SBS 2023 de seguros) ya registrada.
 > Uso previsto: hipótesis de barreras (COM-B) para la tienda física de una aseguradora en Lima Norte (zona MegaPlaza), para validarlas en campo.
 > ⚠️ **Limitación de esta corrida:** el proxy de la sesión bloqueó los dominios peruanos (sbs.gob.pe, inei.gob.pe, bcrp.gob.pe,
 > up.edu.pe, iep.org.pe y otros). Los informes oficiales y los papers peruanos se leyeron **por sus resúmenes y por extractos de
@@ -214,6 +214,62 @@ vienen ambas de APEIM. Las cifras de WIEGO en prensa (Infomercado) remiten a F-8
 - No se encontraron trabajos de GRADE, CIES, Ipsos (con ficha técnica) ni APESEG sobre seguros en sectores populares urbanos. Puede ser un vacío real o un límite de la búsqueda.
 - No se leyó el texto de Golte & Adams, Altamirano ni Matos Mar. Se usan por su tesis conocida, no por hallazgos citados.
 - Las microbases de CAF (2019, 2022) son públicas y permiten calcular las razones para no tener seguro por NSE y dominio. Es un análisis secundario barato y pendiente.
+
+## 11. Vigencia pospandemia: qué sigue en pie y qué hay que volver a probar
+
+> Agregado el 2026-10-20 a pedido de la usuaria: buena parte de la tabla de estudios es de antes de 2020, y la pandemia cambió
+> el contexto. Esta sección separa los estudios por fecha de campo y dice qué hallazgos siguen vigentes.
+
+### 11.1 Qué cambió desde 2020 (con dato)
+
+1. **Casi todos quedaron afiliados a un seguro público de salud.** Un decreto de noviembre de 2019 permitió afiliar al SIS a
+   cualquier residente sin seguro, sin importar su nivel socioeconómico. Se afiliaron ~2,5 millones en un mes y más de 4
+   millones durante 2020; el SIS pasó los 23,8 millones de afiliados en 2021 (F-887). Consecuencia: la frase "no tengo
+   seguro" casi desapareció. Esto **refuerza** la barrera de confundir "seguro" con SIS (C2): hoy casi todos pueden decir
+   que ya tienen uno.
+2. **El dinero se volvió digital en los sectores populares.** La tenencia de cuenta subió de 43% (2017) a 57% (2021) y los
+   pagos digitales de 34% a 49% (Global Findex; F-888). En 2023 las billeteras ya eran 52% de las transacciones y las
+   tarjetas 22% (BCRP); Yape reporta ~16 millones de usuarios activos y da crédito a quienes nunca lo tuvieron (F-889).
+   Consecuencia: los estudios que asumen que pagar una cuota exige ir a una agencia (canal, O1) quedaron viejos.
+3. **Por primera vez muchas familias vieron pagar un seguro.** Las aseguradoras pagaron ~S/3.400 millones por muertes por
+   COVID en 2020-2021, a ~75.000 familias, sobre todo por seguros de vida ley y de desgravamen (F-886). Esto **puede haber
+   cambiado** la desconfianza (M2): hay una historia nueva de "sí pagaron". No se encontró estudio que mida ese efecto.
+4. **Los colchones se vaciaron y la capacidad financiera bajó.** Los informales agotaron ahorros y vendieron bienes (F-874);
+   la encuesta SBS/CAF muestra que conocimientos y comportamientos financieros cayeron entre 2019 y 2022 (F-849); 2 de cada 3
+   hogares informales de Lima pasaron hambre en la cuarentena (F-892).
+5. **La reciprocidad cambió de forma.** La respuesta comunitaria más grande fueron las **ollas comunes**, organizadas sobre
+   todo por mujeres (F-890). Es la misma lógica de la pollada (F-861), pero ahora alrededor de comida y no de dinero.
+6. **La farmacia ya era el centro de salud antes de la pandemia.** En 2014, el 49% del NSE C de Lima acudía primero a la
+   farmacia (F-891); en 2020 la mitad de quienes buscaron atención fue a una farmacia (F-871). Este hallazgo **atraviesa** la
+   pandemia.
+
+### 11.2 Clasificación de los estudios por fecha de campo
+
+| Grupo | Estudios | Cómo usarlos |
+|---|---|---|
+| 🟢 **Pospandemia** (campo 2021 o después) | Encuesta SBS/CAF 2022 (F-849) · estudio SBS de seguros 2023 (F-1) · Barómetro de las Américas 2021 (F-875) · WIEGO 2020-21 (F-874) · ENAHO 2024 (F-871) · Indecopi 2019-22 (F-873) · informalidad 2022-23 (F-870) · NSE 2022-24 (F-868, F-869) | Base de las hipótesis |
+| 🟡 **Prepandemia, mecanismo estable** | Experimentos de confianza y recordatorios (F-853, F-854) · estudios comparables (F-855 a F-860, F-880, F-881) · censo 2017 (F-866, F-867) | Válidos como **mecanismo** (por qué la gente no compra o no renueva), no como cifra actual. Hay que reprobar la magnitud |
+| 🟠 **Prepandemia, contexto que cambió** | Encuesta SBS 2016 (F-847, F-850) · encuesta SBS/CAF 2019 (F-848) · polladas y juntas (F-861, F-862) · clubes de provincianos (F-863 a F-865) · experimentos con seguro agrícola y *cash-back* (F-851, F-852) · panorama de microseguros 2011-2016 (F-877, F-878) | Solo como **hipótesis por validar**. No citar sus cifras como descripción del presente |
+
+### 11.3 Qué hipótesis de barreras cambian
+
+| Barrera | Antes de 2020 | Hoy | Qué validar en campo |
+|---|---|---|---|
+| C2 · "Ya tengo seguro" (SIS) | Parcial: muchos sin seguro | **Más fuerte**: casi todos afiliados al SIS | Si distinguen SIS de un seguro privado y qué creen que el SIS no cubre |
+| O1 · Pago y canal | Efectivo, agencia, cobrador | Billetera digital masiva, incluso en NSE C y D | Si aceptarían pagar la cuota por Yape o Plin, y con qué frecuencia |
+| O2 · Sustitutos informales | Junta, pollada, préstamo familiar | Préstamo por app, crédito de Yape, olla común; ahorros vaciados | Qué usaron en el último imprevisto y qué usarían hoy |
+| M2 · "No pagan" | Historias de rechazo | Rechazo **y** ~75.000 familias cobradas en la pandemia | Si conocen a alguien que cobró un seguro en la pandemia y cómo lo cuentan |
+| M5 · Riesgo poco presente | Riesgo lejano | La muerte y la enfermedad se volvieron cercanas; no se sabe si duró | Si la pandemia cambió cómo piensan en proteger a su familia, o si ya se olvidó |
+| C1 · Capacidad financiera | Subiendo (2013-2019) | **Bajó** entre 2019 y 2022 | — (dato oficial suficiente) |
+
+### 11.4 Lo que sigue sin respuesta
+
+- **No se encontró ningún estudio pospandemia que mida actitudes hacia el seguro en sectores populares de Lima.** El
+  estudio SBS de 2023 (F-1) es el más cercano y no está desagregado por zona.
+- **No se sabe si el "efecto pandemia" duró.** El gremio esperaba más conciencia de riesgo (F-886), pero las primas de vida
+  casi no crecieron en 2021 y en el 1S de 2026 el mercado creció solo ~1% (F-506). La evidencia indirecta sugiere que el
+  efecto se diluyó, pero no está medido.
+- **No se encontró evidencia sobre juntas o panderos por WhatsApp o Yape.** Es una pregunta de campo directa.
 
 ---
 
