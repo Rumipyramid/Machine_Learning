@@ -35,10 +35,10 @@ investigación, la parte 1 puede ser «la pregunta» y la parte 3 «lo que encon
 
 ## Evidencia y honestidad
 
-- **Logros propios:** solo con fuente del repo (`TABLERO_BEHOLDER.md`, nodes, perfil) o dados por el usuario. Si un
+- **Logros propios:** solo con fuente del proyecto (tablero de proyectos, notas de investigación, perfil; en el repo de origen, `TABLERO_BEHOLDER.md`) o dados por el usuario. Si un
   número es estimado («est.» en el tablero), dilo o no lo uses.
 - **Fuentes externas:** autor y año en la lámina; en las notas, qué encontraron, dónde se publicó y qué tan sólido es.
-  Registra cada fuente nueva en el códice de `cronista`.
+  Registra cada fuente nueva en el registro de fuentes del proyecto, si lo tiene.
 - **Evidencia débil:** si un caso famoso no tiene evaluación independiente, úsalo como ejemplo y dilo en la lámina.
 - **Posición propia:** rotúlala en el pie («Es nuestra posición, no un hallazgo»).
 - **Propuestas:** rotúlalas como tales («Propuestas del informe, no proyectos en marcha»).

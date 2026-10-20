@@ -1,29 +1,33 @@
 ---
 name: monolito
-description: Crea presentaciones brutalistas, minimalistas y low-fi (fondo casi negro, texto violeta, Archivo Black + Space Mono, reglas gruesas) que funcionan como manifiesto o propuesta de equipo, con un hilo narrativo en partes, redacción de experto, evidencia citada y láminas con una figura central (triángulo, cuadrado, círculo o rombo). Úsala cuando el usuario invoque /monolito o pida "una presentación brutalista", "un deck low-fi negro y violeta", "un manifiesto en slides", "una presentación como la de El diseño conductual ha muerto" (antes "Diseño de agencia"), o quiera convertir una argumentación en un deck con este estilo. No la uses para piezas con la marca Rimac (usa `presentaciones-rimac` o `rimac-slides`) ni para piezas de Mu (usan la identidad de `.claude/skills/mu/IDENTIDAD.md`).
+description: Crea presentaciones brutalistas, minimalistas y low-fi (fondo casi negro, texto violeta, Archivo Black + Space Mono, reglas gruesas) que funcionan como manifiesto o propuesta de equipo, con un hilo narrativo en partes, redacción de experto, evidencia citada y láminas con una figura central (triángulo, cuadrado, círculo o rombo). Úsala cuando el usuario invoque /monolito o pida "una presentación brutalista", "un deck low-fi negro y violeta", "un manifiesto en slides", "una presentación como la de El diseño conductual ha muerto" (antes "Diseño de agencia"), o quiera convertir una argumentación en un deck con este estilo. No la uses cuando una marca o identidad propia manda sobre el estilo (en el repo de origen, la marca Rimac, que tiene `presentaciones-rimac` y `rimac-slides`, y la identidad de Mu).
 ---
 
 # Monolito — presentaciones brutalistas que argumentan
 
 Un deck monolito no decora: **argumenta**. Cada diapositiva dice una sola idea, en frases cortas que se entienden sin
 haber estado en la conversación. El estilo es brutalista y austero para que el texto y las figuras hagan todo el
-trabajo. El ejemplo de referencia es el deck "El diseño conductual ha muerto. Larga vida al diseño conductual." (https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH)
-y su node `research/_nodes/rol-diseno-conductual-seguros.md`.
+trabajo. El ejemplo de referencia es el deck «El diseño conductual ha muerto. Larga vida al diseño conductual.»:
+ocho de sus láminas están en `references/ejemplo/` (portada, cifras, grilla con habilitador, círculo, rombo,
+cuadrado, manifiesto y referencias), listas para copiar como modelo.
+
+Las rutas de esta guía son relativas a la carpeta de la skill (la que contiene este `SKILL.md`).
 
 ## Cuándo usarla
 
 - El usuario quiere convencer a un equipo, presentar una tesis, un manifiesto, una propuesta de rol o una estrategia.
 - El usuario pide explícitamente el estilo brutalista, low-fi, negro y violeta, o `/monolito`.
-- **No** para marca Rimac ni para Mu (ver la descripción). Si el usuario pide otros colores, cambia solo los tokens
+- **No** cuando una marca propia manda sobre el estilo (ver la descripción). Si el usuario pide otros colores, cambia solo los tokens
   de color (§3); todo lo demás se mantiene.
 
 ## 1. Proceso en seis pasos
 
 1. **Entiende el mensaje antes de escribir.** Escribe en una frase la idea que el público debe llevarse. Identifica
-   al público (qué sabe, qué no) y el propósito (inspirar, decidir, alinear). Lee lo que el repo ya sabe del tema:
-   `research/alma.md`, los nodes, `TABLERO_BEHOLDER.md` (proyectos del equipo) y `research/yopersona/perfil.md`.
-   **Nunca inventes logros, cifras ni proyectos**: si no están en el repo ni los dio el usuario, pregunta o deja
-   `[por confirmar]`.
+   al público (qué sabe, qué no) y el propósito (inspirar, decidir, alinear). Lee lo que el proyecto ya sabe del tema:
+   su índice de conocimiento, sus notas de investigación, el tablero de proyectos del equipo y el perfil del usuario,
+   si existen (en el repo de origen: `research/alma.md`, `research/_nodes/`, `TABLERO_BEHOLDER.md` y
+   `research/yopersona/perfil.md`). **Nunca inventes logros, cifras ni proyectos**: si no están en el proyecto ni los
+   dio el usuario, pregunta o deja `[por confirmar]`.
 2. **Arma el hilo antes que las diapositivas.** Divide el deck en 3 a 6 partes con nombre. Cada diapositiva tiene una
    sola idea y una frase puente (en las notas) que abre la siguiente. Para manifiestos o propuestas usa por defecto el
    arco de `references/narrativa.md`, que empieza por el problema: lo que dejó de funcionar → cómo evoluciona el campo
@@ -38,7 +42,7 @@ y su node `research/_nodes/rol-diseno-conductual-seguros.md`.
 
 ## 2. Redacción
 
-Sigue `.claude/skills/mentes/REDACCION.md` (regla del usuario para todo texto del proyecto). En resumen:
+Sigue `references/redaccion.md` (y la guía de redacción del proyecto, si tiene una). En resumen:
 
 - **Primero la conclusión.** El título de la diapositiva ya afirma algo ("El límite está en la definición"), no
   anuncia un tema ("Limitaciones").
@@ -84,9 +88,12 @@ Las plantillas completas están en `references/layouts.md`.
 | Tres cifras que cuentan un caso | **Cifras grandes** (88 px) con leyenda |
 | Tres conceptos distintos con significado | **Tres figuras** (○ □ △) en fila |
 | Algo pequeño dentro de algo grande | **Punto en cuadrado** (lo que se mide frente a lo que importa) |
-| Tres ideas relacionadas, o una que ordena varias | **Triángulo central** (§5) |
+| Tres ideas relacionadas | **Triángulo central** (§5) |
 | Cuatro ideas | **Cuadrado central** (§5) |
 | Un ciclo, un loop, algo que vuelve | **Círculo central** (§5) |
+| Un concepto general sobre varias partes | **Rombo central** (§5) |
+| Una lista con un elemento que atraviesa a los demás | **Grilla con franja de habilitador transversal** |
+| Las fuentes de todo el deck | **Referencias** (anexo final, por parte) |
 | Cambio de parte o quiebre emocional | **Diapositiva acento** (fondo violeta) |
 | El cierre | **Manifiesto**: 6 principios en grilla + propósito |
 
@@ -107,11 +114,11 @@ cada vértice, esquina o punto. Dentro de la figura va una o dos palabras que no
 **No calcules las coordenadas a mano.** Genera la figura con el script y pega el resultado en la diapositiva:
 
 ```bash
-python .claude/skills/monolito/scripts/figuras.py circulo --pasos 4
-python .claude/skills/monolito/scripts/figuras.py triangulo --modo tres
-python .claude/skills/monolito/scripts/figuras.py triangulo --modo jerarquia --base 3
-python .claude/skills/monolito/scripts/figuras.py cuadrado
-python .claude/skills/monolito/scripts/figuras.py rombo --base 3
+python scripts/figuras.py circulo --pasos 4
+python scripts/figuras.py triangulo --modo tres
+python scripts/figuras.py triangulo --modo jerarquia --base 3
+python scripts/figuras.py cuadrado
+python scripts/figuras.py rombo --base 3
 # sobre fondo acento: --color "#0E0B14" --tenue "#0E0B14"
 ```
 
@@ -123,6 +130,9 @@ además usa íconos pequeños con significado (en el deck de referencia: ○ per
 una vez en una leyenda y mantenlos pequeños (36-64 px) para que no se confundan con la figura central.
 
 ## 6. Construir y publicar con el tipo «Slides»
+
+Si no tienes la herramienta `Artifact` con el tipo «Slides», entrega un solo archivo HTML con una `<section>` de
+1920×1080 por lámina y las mismas reglas (estilos en línea, tipografías de Google Fonts, notas en un `<aside>`).
 
 1. Llama a `Artifact` con `action: "quickstart"`, `intent: "slides"` y `design_systems: false` (el estilo ya está
    definido aquí). Crea el deck con el `type_url` que devuelve, un `title` y `auto_open: "after_first_write"`.
@@ -151,10 +161,13 @@ una vez en una leyenda y mantenlos pequeños (36-64 px) para que no se confundan
 - **Posición frente a hallazgo:** ¿las tesis propias están rotuladas como tales?
 - No hace falta renderizar ni tomar capturas salvo que el usuario lo pida; si dudas de que algo quepa, acórtalo.
 
-## 8. Guardar en el repo
+## 8. Guardar lo aprendido
 
-- Si el deck nace de una investigación, sus fuentes van al códice de `cronista` (`research/fuentes/codice.md`) y la
-  idea vive en un node de `research/_nodes/`. Registra el deck como output en `research/alma.md`.
+- Si el proyecto lleva un registro de fuentes, cada fuente nueva del deck se anota ahí, y la idea vive en una nota
+  de investigación (en el repo de origen: el códice de `cronista` en `research/fuentes/codice.md`, los nodes de
+  `research/_nodes/` y el índice `research/alma.md`, donde el deck se registra como output).
+- La lista completa de referencias (título, revista, rigor, enlace) se guarda como documento junto al deck; la lámina
+  final muestra solo autor y año.
 - Las decisiones de contenido que el usuario corrige (un dato, un nombre, un propósito) se anotan en el node para que
   la próxima versión no repita el error.
 
@@ -163,6 +176,9 @@ una vez en una leyenda y mantenlos pequeños (36-64 px) para que no se confundan
 | Archivo | Qué contiene |
 |---|---|
 | `SKILL.md` | Este manual |
+| `LEEME.md` | Cómo instalar la skill en Claude Code o claude.ai y qué necesita |
 | `references/layouts.md` | Plantillas HTML de cada formato, `deck.json` de ejemplo y fórmulas para que el texto quepa |
 | `references/narrativa.md` | Arco narrativo por defecto, frases puente, manifiesto y cómo rotular evidencia |
-| `scripts/figuras.py` | Genera triángulo, cuadrado y círculo con sus etiquetas posicionadas (solo stdlib) |
+| `references/redaccion.md` | Reglas de redacción para que cada lámina se entienda sola |
+| `references/ejemplo/` | Ocho láminas reales del deck de referencia y su `deck.json`, para copiar como modelo |
+| `scripts/figuras.py` | Genera triángulo, cuadrado, círculo y rombo con sus etiquetas posicionadas (solo stdlib) |

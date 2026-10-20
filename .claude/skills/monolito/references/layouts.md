@@ -167,7 +167,9 @@ entorno; la octava, «¿Se puede experimentar?», decide el método).
 Última lámina del deck. Dos columnas de bloques, uno por parte: rótulo de 24 px en negrita y mayúsculas, y debajo las
 citas cortas (autor y año) separadas por « · », a 24 px con `line-height:1.2` en tono tenue. Al final, un bloque de
 «Fuentes internas». Si no cabe, acorta con «et al.» antes que bajar de 24 px. La lista completa (título, revista,
-rigor, enlace) va en el repo, en `research/_outputs/referencias-<deck>.md`, generada desde el códice por ID.
+rigor, enlace) va en un documento aparte junto al deck (en el repo de origen:
+`research/_outputs/referencias-<deck>.md`, generado desde el registro de fuentes por ID). Ejemplo en
+`ejemplo/slides/referencias.html`.
 
 ## Manifiesto (cierre)
 
