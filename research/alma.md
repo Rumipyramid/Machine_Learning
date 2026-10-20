@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-15.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-20.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -76,6 +76,7 @@ por afirmación cuando corresponda.
 | `_nodes/convergencia-psicologia-economia-ia.md` | Convergencia psicología + economía + IA (`/trinidad`: empírica + social + negocio): LLMs como sujetos simulados y sus fallas, modelos fundacionales de cognición (Centaur), sesgos en la IA, agentes como actores económicos, encuestados sintéticos como negocio; implicaciones para `lapuerta` (§6); tablero PE1-PE8 | 2026-10-04 | v1.0 (iteración 1; F-543 a F-645, todo leído por resumen) |
 | `_nodes/fenomenos-psicologicos.md` | **Capa transversal** — Fenómenos psicológicos clásicos y su estado de replicación (44): influencia social (Asch, Milgram, Stanford, espectador, disonancia), percepción (tiempo, bouba/kiki, color-emoción, Gestalt, cegueras de atención), cognición encarnada y priming, juicio y memoria (pico-final, dotación, aversión a la pérdida, señuelo, anclaje); reglas RF1-RF6, preguntas PF1-PF6 | 2026-10-04 | v1.0 (F-647 a F-741, leído por resumen; todo en el grafo semántico) |
 | `_nodes/lealtad-gamificacion-recompensas-retail.md` | Gamificación, recompensas y lealtad en retail (`/trinidad`: empírica + social + negocio): catálogo de 31 intervenciones con diseño, método y efecto; solo 1 experimento fuerte de gamificación; sin evidencia causal en LatAm; F-802 a F-846 | 2026-10-15 | v1.0 |
+| `_nodes/comportamiento-ia-alucinaciones-desalineamiento.md` | Comportamiento de la IA (`/trinidad`: empírica + social + negocio): por qué alucina, trampa de recompensa, desalineamiento agéntico y emergente, caso OpenAI–Hugging Face (jul-2026), y cuatro puertas de la psicología y el diseño conductual (método, incentivos, sesgo de automatización, antropomorfismo); costo legal y seguro de IA; tablero CI1-CI7 | 2026-10-20 | v1.0 (iteración 1; F-847 a F-895; 0 textos completos leídos) |
 
 ---
 

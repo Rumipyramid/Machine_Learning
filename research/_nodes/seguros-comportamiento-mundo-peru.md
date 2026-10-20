@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-10-07 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-10-20 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -337,3 +337,4 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[conducta-humano-ia|Conducta humano-IA]] — las hipótesis HC1/HC6 (explicación de la IA al cliente) son las que habría que probar en el contexto regulatorio y de reclamos de §3.9.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — Lemonade (F-636) y Vitality (F-637, F-638) como únicos casos de conducta + IA en seguros con métricas publicadas; ninguno peruano.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado real de replicación de las barreras conductuales que este node lista (aversión a la pérdida §5.4, sesgo del presente §5.11).
+- [[comportamiento-ia-alucinaciones-desalineamiento|Comportamiento de la IA: alucinaciones, desalineamiento e incidentes]] — el precedente Air Canada (la empresa responde por lo que dice su chatbot, F-884) y el mercado de seguro de IA que se parte entre excluir (F-886) y cubrir con auditoría previa (F-888, F-889).
