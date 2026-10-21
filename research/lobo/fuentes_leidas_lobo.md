@@ -240,3 +240,6 @@
 | F-818 | 🟢 A | 2026-10-20 | Intuición 220 — gamificar en tienda sin compromiso real puede bajar el uso de la oferta; el quiz es fricción (lectura débil) |
 | F-596 | 🟢 A | 2026-10-20 | Intuición 221 — Machine behaviour es un marco (Tinbergen), no un hallazgo; pedir el experimento (lectura débil) |
 | F-657 | 🟢 A | 2026-10-20 | Intuición 222 — Stanford: guardias instruidos y datos sesgados; el guion indujo la conducta; disputa abierta (lectura débil) |
+| F-706 | 🟢 A | 2026-10-21 | Intuición 223 — el priming de la caminata lenta aparece solo si el experimentador espera lentitud; quien mide no debe saber el grupo (lectura débil) |
+| F-678 | 🟢 A | 2026-10-21 | Intuición 224 — color-emoción: patrón casi universal (r = 0,88) pero el país predice más allá; partir de lo común y probar lo local (lectura débil) |
+| F-713 | 🟢 A | 2026-10-21 | Intuición 225 — Many Labs: 10 de 13 efectos replican, los de priming no; la replicabilidad vive en el efecto (lectura débil) |

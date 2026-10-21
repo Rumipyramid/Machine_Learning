@@ -5964,6 +5964,27 @@ F-657 (Le Texier, 2019, *American Psychologist* 74(7):823-839). Investigación d
 - **Leído a fondo:** 2026-10-20 (`WebSearch`; resumen oficial y secundarias; lectura débil, declarada)
 - **Conexión razonada, no forzada:** misma lección que las entradas 203, 211 y 219; sin cambio de tesis.
 
+### 223. Un efecto de priming que depende de lo que el experimentador espera: antes de citarlo, preguntar quién midió y qué creía
+F-706 (Doyen, Klein, Pichon y Cleeremans, 2012, *PLoS ONE* 7(1): e29081). Replican el estudio de la caminata lenta tras el priming de vejez, con cronómetro automático y más muestra: el primer experimento no halla efecto. En el segundo, el efecto aparece solo cuando los experimentadores creían que los participantes caminarían más lento. Los autores dicen que no es una simple profecía autocumplida y que el priming conductual puede existir por otros mecanismos; el debriefing sugiere que los participantes sí notaron los estímulos.
+**Heurística:** si quien mide sabe qué resultado se espera, la medida puede traer su expectativa. Para un piloto de venta o de triage, el que cuenta los resultados no debe saber a qué grupo pertenece cada cliente. Lectura por resumen oficial y prensa; el texto completo no se abrió.
+- **Fuente:** F-706 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-21 (`WebSearch`; resumen y secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** misma línea que las entradas 201, 203 y 211; sin cambio de tesis.
+
+### 224. Lo universal y lo local conviven: una asociación puede ser casi idéntica entre países y aun así depender del país
+F-678 (Jonauskaite et al., 2020, *Psychological Science* 31(10):1245-1260). Encuesta a 4.598 personas de 30 países y 22 lenguas, que asocian 20 emociones con 12 colores. Los patrones se parecen mucho entre países (similitud media r = 0,88), pero el país predice la asociación más allá del patrón común, y los países cercanos en lengua o geografía se parecen más entre sí.
+**Heurística:** «es universal» y «hay que localizar» no se contradicen. Para un mensaje, un color o un símbolo en seguros, partir del patrón común y probar la variación local en Perú antes de asumirla. La muestra es por encuesta y de conveniencia; no mide conducta de compra. Lectura por resumen y repositorios.
+- **Fuente:** F-678 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-21 (`WebSearch`; resumen y repositorios; lectura débil, declarada)
+- **Conexión razonada, no forzada:** matiz de la entrada 206 (bouba/kiki); sin cambio de tesis.
+
+### 225. Replicar muchos efectos a la vez enseña que la replicabilidad vive en el efecto, no en la muestra
+F-713 (Klein et al., 2014, *Social Psychology* 45(3):142-152). Trece efectos en 36 muestras (N = 6.344): diez se replicaron, uno con apoyo débil (contacto imaginado contra el prejuicio) y dos de priming no (bandera y conservadurismo; dinero y justificación del sistema). Laboratorio u online, EE.UU. o resto del mundo, casi no cambiaron los tamaños. No pude confirmar hoy el resultado del anclaje, que la ficha menciona.
+**Heurística:** al evaluar un efecto, preguntar por su historial de réplicas, no por el tamaño de la muestra del estudio que lo cita. Los efectos de priming son los que más fallan; los de anclaje y encuadre suelen aguantar, pero eso queda por verificar en el artículo. Útil como filtro previo a cualquier diseño de mensaje.
+- **Fuente:** F-713 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-21 (`WebSearch`; resumen y secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya las entradas 201, 203 y 219; sin cambio de tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6153,47 +6174,8 @@ F-657 (Le Texier, 2019, *American Psychologist* 74(7):823-839). Investigación d
 - **2026-09-18** — *(Detalle podado y fusionado al resumen el 2026-10-19)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
 - **2026-09-19** — *(Detalle podado y fusionado al resumen el 2026-10-20)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-- **2026-09-20** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 20 corridas, **cero fuentes nuevas** registradas
-  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, trigesimonoveno día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
-  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
-  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
-  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva treinta y nueve días sin correr).
-  **Poda de bitácora:** el bloque "2026-08-21" salió por completo de la ventana de ~30 días (cutoff
-  ≈2026-08-21) — lo fusioné con el bloque "2026-08-01 a 2026-08-20" en un resumen ampliado
-  "2026-08-01 a 2026-08-21"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
-  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
-  hoy:** recalculé por script el universo 🟢A del ledger con el filtro estricto (marcador de
-  rigurosidad que *empieza* con 🟢A, no solo lo menciona): **134 filas**, misma cifra que las últimas
-  corridas — 3 filas mixtas (F-149, F-457, F-466) siguen correctamente excluidas por no empezar con
-  🟢A — contra `fuentes_leidas_lobo.md` (130 ya leídas tras la corrida de ayer) — **4 pendientes**
-  (F-18, F-54, F-94, F-251) — y elegí 3 al azar sin reemplazo (`random.shuffle`, sin semilla fija):
-  F-94, F-18 y F-54 (queda F-251 pendiente para la próxima corrida). Las tres bloqueadas por el proxy
-  en su URL directa (pmc.ncbi.nlm.nih.gov, onlinelibrary.wiley.com, ncbi.nlm.nih.gov); `WebSearch` sí
-  funcionó y permitió reconstruir detalle nuevo en las tres vía cobertura secundaria convergente
-  (Semantic Scholar/Taylor & Francis/University of Edinburgh para F-94, ResearchGate/
-  Replicability-Index/página propia del autor para F-18, Cambridge Core/Frontiers/PMC para F-54), no
-  solo el resumen de una línea ya citado. Sumé las entradas 130, 131 y 132 de Intuición acumulada:
-  (130) el resumen del ledger para F-94 describía el paper como evidencia de que el mercado ya
-  responde a la presión del pool con más personalización — la lectura a fondo de McFall (2019)
-  concluye lo contrario: la personalización es poco probable porque choca con la infraestructura
-  regulatoria de community rating de la ACA, no con una barrera tecnológica; corrección de dirección
-  del hallazgo, no solo de detalle, con una traducción directa al techo regulatorio de la SBS que
-  `lapuerta` todavía no modela explícitamente; (131) el I²=99,89% de F-18 (Hu et al. 2025), ausente de
-  la revisión profunda de `cronista` del 2026-07-22 que ya usa esta fuente en tesis 6, es el número
-  que faltaba para explicar por qué "el efecto promedio del nudge" es casi sin contenido cuando el
-  agregado mezcla fenómenos tan distintos; (132) el ejemplo concreto detrás del framework DIeSEL de
-  F-54 (el proyecto STS4HIV) muestra que "testear efectividad e implementación en paralelo" en la
-  práctica significa una asignación aleatoria doble e independiente para la intervención clínica y
-  para la estrategia de implementación, no solo medir ambas cosas sobre un único brazo — estándar
-  operacional concreto para el piloto farmacia+triage. Ninguna tesis de negocio cambió de confianza
-  numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy
-  sí matizan tesis 6, 7, 9, 10 y 13. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
-  fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-22 a hoy) tras la poda de hoy —
-  cumple la ventana de ~30 días.
+- **2026-09-20** — *(Detalle podado y fusionado al resumen el 2026-10-21)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-21** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
@@ -6653,3 +6635,5 @@ F-657 (Le Texier, 2019, *American Psychologist* 74(7):823-839). Investigación d
 - **2026-10-19** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 129 pendientes → 126 tras hoy):** sorteo F-716, F-646 y F-679, leídas vía `WebSearch` (secundarias; lectura débil, declarada). Entradas 217 (el recuerdo del dolor sigue al pico y al final), 218 (el diseño escalonado evalúa lo ya desplegado) y 219 (el efecto del rojo no sobrevive a las réplicas). Pendiente para `cronista`: F-679 no recoge el meta-análisis de Gnambs (2020). Poda: 09-18 fusionado al resumen; Bitácora cubre 2026-09-19 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-20** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 126 pendientes → 123 tras hoy):** sorteo F-818, F-596 y F-657, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 220 (un juego en la tienda puede restar si el cliente no entra), 221 (marco de conducta de máquinas: ordena preguntas, no prueba nada) y 222 (el guion del experimento de Stanford indujo la conducta). Corrección de autoría aplicada en F-818 (Högberg, Shams y Wästlund). Pendiente para `cronista`: F-596 y F-657 sin texto completo verificado. Poda: 09-19 fusionado al resumen; Bitácora cubre 2026-09-20 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-21** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 122 pendientes → 119 tras hoy):** sorteo F-706, F-678 y F-713, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 223 (el priming de la caminata depende de lo que espera el experimentador), 224 (lo universal y lo local conviven en la asociación color-emoción) y 225 (la replicabilidad vive en el efecto, no en la muestra). Pendiente para `cronista`: confirmar en el artículo el resultado del anclaje de F-713. Poda: 09-20 fusionado al resumen; Bitácora cubre 2026-09-21 a hoy. `fuentes_leidas_lobo.md` actualizado.
