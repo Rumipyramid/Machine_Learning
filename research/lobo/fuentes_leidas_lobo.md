@@ -243,3 +243,6 @@
 | F-706 | 🟢 A | 2026-10-21 | Intuición 223 — el priming de la caminata lenta aparece solo si el experimentador espera lentitud; quien mide no debe saber el grupo (lectura débil) |
 | F-678 | 🟢 A | 2026-10-21 | Intuición 224 — color-emoción: patrón casi universal (r = 0,88) pero el país predice más allá; partir de lo común y probar lo local (lectura débil) |
 | F-713 | 🟢 A | 2026-10-21 | Intuición 225 — Many Labs: 10 de 13 efectos replican, los de priming no; la replicabilidad vive en el efecto (lectura débil) |
+| F-732 | 🟢 A | 2026-10-22 | Intuición 226 — el verbo de la pregunta moldea el recuerdo; neutralizar el guion del siniestro (secundarias; lectura débil) |
+| F-568 | 🟢 A | 2026-10-22 | Intuición 227 — completitud: medir cuánto de lo predecible explica un modelo antes de afinarlo (solo resumen; lectura débil) |
+| F-749 | 🟢 A | 2026-10-22 | Intuición 228 — clima y brotes: alerta temprana, no tarifa; diseño asociacional (lectura débil) |

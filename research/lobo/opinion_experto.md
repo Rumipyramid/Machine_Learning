@@ -5985,6 +5985,27 @@ F-713 (Klein et al., 2014, *Social Psychology* 45(3):142-152). Trece efectos en 
 - **Leído a fondo:** 2026-10-21 (`WebSearch`; resumen y secundarias; lectura débil, declarada)
 - **Conexión razonada, no forzada:** apoya las entradas 201, 203 y 219; sin cambio de tesis.
 
+### 226. Una frase cambia el recuerdo: el verbo de la pregunta moldea lo que el cliente dice haber visto
+F-732 (Loftus y Palmer, 1974, *Journal of Verbal Learning and Verbal Behavior* 13(5):585-589). Tras ver clips de choques, quienes oyeron "se estrellaron" (*smashed*) estimaron más velocidad que quienes oyeron "se golpearon", y una semana después más de ellos recordaron vidrios rotos que no existían. Las críticas que encontré hoy son de segunda mano: validez ecológica baja (clips de laboratorio), una réplica conceptual en deporte que no halló el efecto (Goldschmied, 2017) y una réplica multilaboratorio en preparación porque el material original está viejo y es difícil de reconstruir. No hallé un reanálisis estadístico publicado.
+**Heurística:** en un siniestro, el guion del ajustador y el formulario condicionan lo que el asegurado declara. Redactar las preguntas en neutro antes de usar ese relato como prueba o como dato de satisfacción. El efecto es plausible y fundacional, pero su tamaño actual no está medido.
+- **Fuente:** F-732 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-22 (`WebSearch`; secundarias y blogs; lectura débil, declarada)
+- **Conexión razonada, no forzada:** se apoya en la entrada 217 (el cierre del siniestro) y en la 222 (el guion induce la conducta); sin cambio de tesis.
+
+### 227. Antes de pulir una teoría, medir cuánto de lo predecible ya explica
+F-568 (Fudenberg, Kleinberg, Liang y Mullainathan, 2022, *Journal of Political Economy* 130(4):956-990). Proponen la "completitud": qué fracción de la variación predecible capta un modelo, usando aprendizaje automático como techo. La aplican a loterías, juego inicial en juegos y secuencias aleatorias. El difícil es estimar el ruido irreducible; una vía es una tabla de consulta cuando hay muchas observaciones por perfil. El texto completo está tras muro de pago; no pude verificar las cifras, y la ficha misma las marca como no verificadas.
+**Heurística:** ante un modelo de comportamiento (el nuestro de personas sintéticas incluido), preguntar cuánto queda por explicar antes de invertir en afinarlo. Si el techo es bajo, mejorar la teoría rinde poco; si es alto, hay variable por encontrar.
+- **Fuente:** F-568 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-22 (`WebSearch`; resumen y fichas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** complementa la entrada 198 (un predictor flexible diagnostica a la teoría); sin cambio de tesis.
+
+### 228. Clima y brotes: la asociación es real en cada sitio, pero no es una tarifa
+F-749 (Anyamba et al., 2019, *Scientific Reports* 9:1930; DOI 10.1038/s41598-018-38034-z). Asocia anomalías de 2015-16 con brotes: peste y cólera con lluvia sobre lo normal, dengue con temperatura sobre lo normal (p < 0,05), más hantavirus y Zika. El equipo emitió alertas basadas en pronósticos de NOAA y dice que varias se verificaron. El diseño es asociacional, y cada enfermedad responde a un factor distinto según la región. Hubo una corrección de autor en 2020 (afiliación y leyendas de figuras, no resultados).
+**Heurística:** un pronóstico de El Niño sirve como alerta temprana de salud, no como precio de un seguro: dice dónde mirar, no cuánto cobrar. Para el Niño Costero 2026-27 apoya cobertura de salud y asistencia con disparador temprano.
+- **Fuente:** F-749 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-22 (`WebSearch`; abstract, resumen y prensa; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya la tesis 26 sin subir su confianza (un evento global, sin Perú en el estudio); sin cambio de tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6176,48 +6197,8 @@ F-713 (Klein et al., 2014, *Social Psychology* 45(3):142-152). Trece efectos en 
 - **2026-09-19** — *(Detalle podado y fusionado al resumen el 2026-10-20)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 - **2026-09-20** — *(Detalle podado y fusionado al resumen el 2026-10-21)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-21** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 21 corridas, **cero fuentes nuevas** registradas
-  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo día seguido
-  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
-  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso
-  — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es
-  rutina de `cronista`, no de este proceso diario; ya lleva cuarenta días sin correr). **Poda de
-  bitácora:** el bloque "2026-08-22" salió por completo de la ventana de ~30 días (cutoff
-  ≈2026-08-22) — lo fusioné con el bloque "2026-08-01 a 2026-08-21" en un resumen ampliado
-  "2026-08-01 a 2026-08-22"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
-  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
-  hoy, con un giro respecto a corridas anteriores:** recalculé por script el universo 🟢A del ledger
-  con el filtro estricto (marcador de rigurosidad que *empieza* con 🟢A): **134 filas**, misma cifra
-  que las últimas corridas — contra `fuentes_leidas_lobo.md` (133 ya leídas tras la corrida de ayer)
-  — **solo 1 pendiente** (F-251). Siguiendo la regla del proceso ("al agotar todos los niveles,
-  reiniciar el ciclo" — aquí, al agotar el nivel actual dentro de la misma corrida, avanzar al
-  siguiente en vez de esperar al día siguiente): tomé F-251 (el último 🟢A pendiente, con lo que ese
-  nivel queda agotado) y, para completar las 3 fuentes del día, calculé el universo 🔵B (76 filas) —
-  ninguna con lectura previa del Lobo — y elegí 2 al azar sin reemplazo (`random.sample`, sin semilla
-  fija): F-104 y F-32. Las tres bloqueadas por el proxy en su URL directa (cambridge.org,
-  discovery.co.za, swissre.com); `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las
-  tres vía cobertura convergente (Oxford ORA/ResearchGate/ETH Library/SSRN para F-251,
-  discovery.co.za investor relations/Investing.com/Quartr para F-104, swissre.com/Asia Insurance
-  Review/Reinsurance News/xprimm.com/atlas-mag.net para F-32), no solo el resumen de una línea ya
-  citado. Sumé las entradas 133, 134 y 135 de Intuición acumulada: (133) F-251 trae fecha de
-  publicación corregida (2025, no 2021 como registra el ledger) y el hallazgo accionable que faltaba
-  — la fricción de confirmación de pago después del dark pattern reduce su efectividad, más útil que
-  el hallazgo negativo de "no hay grupo más vulnerable" que ya citaba el resumen; (134) F-32 empalma
-  dos comunicados oficiales distintos de Swiss Re (resultados FY2025 y resultados Q1 2026) bajo una
-  sola URL — ambas cifras son ciertas por separado (ROE FY2025 real 19.6%, ROE Q1 2026 real 23.6%)
-  pero la fila del ledger las presenta como si vinieran de la misma fuente citada, corrección de
-  higiene de cita pendiente sin tocar tesis 11; (135) F-104 distingue una categoría de evidencia que
-  el riesgo ya declarado sobre Vitality (F-25) no separaba — resultado financiero auditado bajo
-  obligación de disclosure vs. dato de bienestar autopublicado en marketing — y agrega una señal de
-  vigilancia nueva (lanzamiento de "Vitality AI" en H1 2026) para el riesgo reputacional de IA en
-  seguros que ya vigila el proyecto. Ninguna tesis de negocio cambió de confianza numérica por esta
-  corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy sí refuerzan tesis
-  11 y afinan el riesgo sobre Vitality. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres
-  fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-23 a hoy) tras la poda de hoy —
-  cumple la ventana de ~30 días.
+- **2026-09-21** — *(Detalle podado y fusionado al resumen el 2026-10-22)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
+
 - **2026-09-22** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
@@ -6637,3 +6618,5 @@ F-713 (Klein et al., 2014, *Social Psychology* 45(3):142-152). Trece efectos en 
 - **2026-10-20** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 126 pendientes → 123 tras hoy):** sorteo F-818, F-596 y F-657, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 220 (un juego en la tienda puede restar si el cliente no entra), 221 (marco de conducta de máquinas: ordena preguntas, no prueba nada) y 222 (el guion del experimento de Stanford indujo la conducta). Corrección de autoría aplicada en F-818 (Högberg, Shams y Wästlund). Pendiente para `cronista`: F-596 y F-657 sin texto completo verificado. Poda: 09-19 fusionado al resumen; Bitácora cubre 2026-09-20 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-21** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 122 pendientes → 119 tras hoy):** sorteo F-706, F-678 y F-713, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 223 (el priming de la caminata depende de lo que espera el experimentador), 224 (lo universal y lo local conviven en la asociación color-emoción) y 225 (la replicabilidad vive en el efecto, no en la muestra). Pendiente para `cronista`: confirmar en el artículo el resultado del anclaje de F-713. Poda: 09-20 fusionado al resumen; Bitácora cubre 2026-09-21 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-22** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 124 pendientes → 121 tras hoy):** sorteo F-732, F-568 y F-749, leídas vía `WebSearch` (secundarias y resúmenes; lectura débil, declarada). Entradas 226 (el verbo de la pregunta moldea el recuerdo; cuidar el guion del siniestro), 227 (medir la completitud de un modelo antes de afinarlo) y 228 (clima y brotes: alerta temprana, no tarifa). Pendiente para `cronista`: F-732 no recoge la réplica conceptual fallida de 2017 ni la réplica multilaboratorio en curso; F-568, sin cifras verificadas. Poda: 09-21 fusionado al resumen; Bitácora cubre 2026-09-22 a hoy. `fuentes_leidas_lobo.md` actualizado.
