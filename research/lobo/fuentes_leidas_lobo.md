@@ -246,3 +246,6 @@
 | F-732 | 🟢 A | 2026-10-22 | Intuición 226 — el verbo de la pregunta moldea el recuerdo; neutralizar el guion del siniestro (secundarias; lectura débil) |
 | F-568 | 🟢 A | 2026-10-22 | Intuición 227 — completitud: medir cuánto de lo predecible explica un modelo antes de afinarlo (solo resumen; lectura débil) |
 | F-749 | 🟢 A | 2026-10-22 | Intuición 228 — clima y brotes: alerta temprana, no tarifa; diseño asociacional (lectura débil) |
+| F-648 | 🟢 A | 2026-10-23 | Intuición 229 — la conformidad varía con cultura y época; no trasladar un efecto social sin medición local (resúmenes; lectura débil) |
+| F-650 | 🟢 A | 2026-10-23 | Intuición 230 — Milgram: guion improvisado según Perry y réplica de Burger solo hasta 150 V (reseñas; lectura débil) |
+| F-746 | 🟢 A | 2026-10-23 | Intuición 231 — choque temprano daña por ingreso y dieta; la transferencia no mitigó (año de la ficha sin confirmar; lectura débil) |

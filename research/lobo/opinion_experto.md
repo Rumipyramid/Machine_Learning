@@ -6006,6 +6006,27 @@ F-749 (Anyamba et al., 2019, *Scientific Reports* 9:1930; DOI 10.1038/s41598-018
 - **Leído a fondo:** 2026-10-22 (`WebSearch`; abstract, resumen y prensa; lectura débil, declarada)
 - **Conexión razonada, no forzada:** apoya la tesis 26 sin subir su confianza (un evento global, sin Perú en el estudio); sin cambio de tesis.
 
+### 229. La conformidad cambia con la cultura y con la época: un efecto "universal" necesita su fecha y su país
+F-648 (Bond y Smith, 1996, *Psychological Bulletin* 119(1):111-137). Meta-análisis de 133 estudios tipo Asch en 17 países. La conformidad es mayor en culturas colectivistas (Japón, Hong Kong, Fiji) que en individualistas (EE.UU., Reino Unido, Francia). Las fuentes que hallé hoy dicen además que bajó entre los años 50-60 y los 80-90; esa parte no pude confirmarla en el artículo. Todo lo leí en resúmenes didácticos, no en el texto.
+**Heurística:** un efecto social medido en un país y una década no se traslada sin prueba. Antes de usar presión de pares o prueba social en un mensaje para Perú, buscar medición local reciente. Es la base cultural de la regla "testear en la propia población".
+- **Fuente:** F-648 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-23 (`WebSearch`; resúmenes didácticos; lectura débil, declarada)
+- **Conexión razonada, no forzada:** complementa la entrada 208 (Asch replica con 33%); sin cambio de tesis.
+
+### 230. El experimento de obediencia más famoso tiene un guion que se improvisó y una réplica que solo llega hasta la mitad
+F-650 (Milgram, 1963, *Journal of Abnormal and Social Psychology* 67(4):371-378). 26 de 40 participantes (65%) llegaron a los 450 V, en una sola condición y sin grupo control. Gina Perry (*Behind the Shock Machine*) sostiene, tras revisar grabaciones y entrevistar a participantes, que los experimentadores improvisaron e insistieron más allá del guion, lo que pondría en duda qué midió el estudio. Burger (2009) replicó solo hasta 150 V con 70 adultos y halló obediencia apenas menor que la de 1963. No verifiqué las afirmaciones de archivo de Perry; las leí en reseñas.
+**Heurística:** cuando un resultado famoso descansa en un solo experimento con procedimiento flexible, preguntar si el guion se cumplió. En ventas, lo mismo: un asesor que insiste fuera de guion no mide la obediencia del cliente, mide su cansancio.
+- **Fuente:** F-650 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-23 (`WebSearch`; reseñas y resúmenes; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya las entradas 222 (el guion indujo la conducta) y 193 (la réplica pesa más que el original); sin cambio de tesis.
+
+### 231. Tras un choque en la primera infancia, lo que daña al niño es el ingreso y la dieta que caen, y una transferencia en efectivo no lo reparó
+F-746 (Aguilar y Vicarelli, *World Development* 150; el año 2022 de la ficha no pude confirmarlo, solo que existe versión de trabajo de 2012). Lluvias extremas de El Niño en el México rural: los niños expuestos entre el útero y los 2 años tienen +8,3 pp de desnutrición crónica y, 4-5 años después, puntajes 11-21% menores en lenguaje, memoria de trabajo y razonamiento visoespacial. El mecanismo son los ingresos, el consumo y la dieta. La reseña dice que el programa de transferencias Progresa no mitigó el daño; es un dato que no está en la ficha y conviene verificarlo.
+**Heurística:** el valor de proteger al hogar está en sostener consumo y nutrición durante el choque, no en compensar después. Una cobertura que paga tarde repara menos de lo que parece.
+- **Fuente:** F-746 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-23 (`WebSearch`; notas de prensa universitarias y resúmenes; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la entrada 199 y apoya la tesis 26 sin subir su confianza (México, no Perú; un evento); sin cambio de tesis.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6199,45 +6220,8 @@ F-749 (Anyamba et al., 2019, *Scientific Reports* 9:1930; DOI 10.1038/s41598-018
 
 - **2026-09-21** — *(Detalle podado y fusionado al resumen el 2026-10-22)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
 
-- **2026-09-22** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 22 corridas, **cero fuentes nuevas** registradas
-  por `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo primer día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope:
-  ninguna quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar
-  el paso — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo
-  aquí, es rutina de `cronista`, no de este proceso diario; ya lleva cuarenta y un días sin correr).
-  **Poda de bitácora:** el bloque "2026-08-23" salió por completo de la ventana de ~30 días (cutoff
-  ≈2026-08-23) — lo fusioné con el bloque "2026-08-01 a 2026-08-22" en un resumen ampliado
-  "2026-08-01 a 2026-08-23"; no se pierde ningún dato porque el detalle de cada tesis e intuición de
-  ese día ya vive en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr
-  hoy, agotado ya el nivel 🟢A desde el 2026-09-21:** recalculé por script el universo 🔵B del ledger
-  con el mismo filtro estricto (fila cuya rigurosidad *empieza* con 🔵B, sin contar filas mixtas como
-  F-333): **76 filas** — contra `fuentes_leidas_lobo.md` (2 ya leídas de este nivel tras la corrida de
-  ayer: F-104, F-32) — **74 pendientes** — y elegí 3 al azar sin reemplazo (Python `random.sample`,
-  sin semilla fija): F-359, F-37 y F-194. Las tres bloqueadas por el proxy en su URL directa
-  (mckinsey.com, inei.gob.pe, kff.org); `WebSearch` sí funcionó y permitió reconstruir detalle nuevo
-  en las tres vía cobertura convergente (dos búsquedas dirigidas sobre metodología/cifras del deck
-  McKinsey para F-359, cobertura secundaria sobre la Encuesta Nacional de Satisfacción de Usuarios del
-  Aseguramiento Universal 2014 del INEI para F-37, series de MLR/márgenes 2023-2025 de KFF y prensa
-  especializada para F-194), no solo el resumen de una línea ya citado. Sumé las entradas 136, 137 y
-  138 de Intuición acumulada: (136) el resumen de F-359 sobre "no sacrificar lo humano" resulta amarrado
-  a métricas financieras duras (TSR +20pp vida/+65pp P&C, +4pp revenue, +4pp EBIT) y a un desglose fino
-  que el ledger no capturaba — la ventaja de confianza humana (49% vs. chatbot) se concentra en el
-  reclamo, no en la venta — refuerzo cuantitativo nuevo para tesis 16; (137) una fila "s.f." en el
-  ledger puede ocultar un levantamiento de campo de más de una década (F-37 es la Encuesta Nacional de
-  Satisfacción de Usuarios 2014 del INEI, no un dato reciente) — matiza tesis 9 con un riesgo de
-  vigencia de dato que no tenía declarado, aunque la cifra de automedicación (52,3% sin receta) sigue
-  siendo relevante como conducta base a interceptar; (138) un punto de compresión de margen citado una
-  sola vez (2022) puede parecer ruido pandémico transitorio — la serie 2023-2025 de KFF confirma que no
-  lo fue (MLR subiendo en las cuatro líneas de negocio, márgenes por afiliado cayendo, loss ratio
-  individual llegando a 93% en 2025) — refuerza sin cambiar la confianza de tesis 17. Ninguna tesis de
-  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque
-  las tres entradas de hoy sí refuerzan tesis 16 y 17 y matizan tesis 9 con un riesgo de vigencia de
-  dato nuevo. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
-  Bitácora con 30 días de historial (2026-08-24 a hoy) tras la poda de hoy — cumple la ventana de ~30
-  días.
+- **2026-09-22** — *(Detalle podado y fusionado al resumen el 2026-10-23)*: corrida diaria de refinamiento; sin cambios de confianza.
+
 - **2026-09-23** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md` por
   conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto
@@ -6620,3 +6604,5 @@ F-749 (Anyamba et al., 2019, *Scientific Reports* 9:1930; DOI 10.1038/s41598-018
 - **2026-10-21** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 122 pendientes → 119 tras hoy):** sorteo F-706, F-678 y F-713, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 223 (el priming de la caminata depende de lo que espera el experimentador), 224 (lo universal y lo local conviven en la asociación color-emoción) y 225 (la replicabilidad vive en el efecto, no en la muestra). Pendiente para `cronista`: confirmar en el artículo el resultado del anclaje de F-713. Poda: 09-20 fusionado al resumen; Bitácora cubre 2026-09-21 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-22** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 124 pendientes → 121 tras hoy):** sorteo F-732, F-568 y F-749, leídas vía `WebSearch` (secundarias y resúmenes; lectura débil, declarada). Entradas 226 (el verbo de la pregunta moldea el recuerdo; cuidar el guion del siniestro), 227 (medir la completitud de un modelo antes de afinarlo) y 228 (clima y brotes: alerta temprana, no tarifa). Pendiente para `cronista`: F-732 no recoge la réplica conceptual fallida de 2017 ni la réplica multilaboratorio en curso; F-568, sin cifras verificadas. Poda: 09-21 fusionado al resumen; Bitácora cubre 2026-09-22 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-23** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 121 pendientes → 118 tras hoy):** sorteo F-648, F-650 y F-746, leídas vía `WebSearch` (resúmenes, reseñas y notas de prensa; lectura débil, declarada). Entradas 229 (la conformidad varía con cultura y época), 230 (Milgram: guion improvisado y réplica que llega solo a 150 V) y 231 (el choque temprano daña por ingreso y dieta; la transferencia no lo reparó). Pendiente para `cronista`: confirmar el año de publicación de F-746 (2022 no verificado) y que F-648 no recoge la tendencia temporal. Poda: 09-22 fusionado al resumen; Bitácora cubre 2026-09-23 a hoy. `fuentes_leidas_lobo.md` actualizado.
