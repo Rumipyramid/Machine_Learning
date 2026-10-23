@@ -1,16 +1,17 @@
 # Referencias del deck «El diseño conductual ha muerto. Larga vida al diseño conductual.»
 
-> Output derivado de [[rol-diseno-conductual-seguros]] · Fecha: 2026-10-20
-> Deck: https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH (láminas 32 y 33, «Referencias», muestran la versión corta: autor y año).
+> Output derivado de [[rol-diseno-conductual-seguros]] · Fecha: 2026-10-23
+> Deck: https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH (láminas 31 a 33, «Referencias», muestran la versión corta: autor y año).
 > Cada fuente tiene su ficha en `research/fuentes/codice.md` (consultable con `/codice`), con resumen, hallazgo y nivel de rigor.
 
-**Cómo leer esta lista.** Las fuentes están agrupadas por la parte del deck en que aparecen. El nivel de rigor va de 🟢 A (artículo arbitrado con datos propios) a 🔴 E (opinión sin método); ⚪ marca textos teóricos. No todas pesan lo mismo, y muchas se leyeron por su resumen.
+**Cómo leer esta lista.** Las fuentes están agrupadas por la parte del deck en que aparecen. El nivel de rigor va de 🟢 A (artículo arbitrado con datos propios) a 🔴 E (opinión sin método); ⚪ marca textos teóricos. No todas pesan lo mismo, y muchas se leyeron por su resumen. La sexta parte incluye las lecturas de base que el deck sugiere para reforzar el modelo.
 
 ## Parte 1 · Lo que murió
 
 - **F-21** · DellaVigna, S. & Linos, E. (2022). RCTs to Scale: Comprehensive Evidence From Two Nudge Units (Econometrica). Rigor: 🟢 A. — https://onlinelibrary.wiley.com/doi/10.3982/ECTA18709
 - **F-17** · Maier, M. et al. (2022). No evidence for nudging after adjusting for publication bias (PNAS). Rigor: 🟢 A. — https://www.pnas.org/doi/10.1073/pnas.2200300119
 - **F-24** · Bazerman, M. H. (2025). Inside an Academic Scandal: A Story of Fraud and Betrayal. Cambridge, MA: MIT Press, 200 pp. (ISBN 9780262049887). Rigor: 🔵 B. — https://www.science.org/content/article/after-honesty-researcher-s-retractions-colleagues-expand-scrutiny-her-work
+- **F-973** · Chater, N. & Loewenstein, G. (2026). It's On You: How Corporations Shift the Blame for Society's Problems onto Individuals (Basic Books, 27-ene-2026). Rigor: ⚪ Teórico. — https://www.hachettebookgroup.com/titles/nick-chater/its-on-you/9781541700130/
 
 ## Parte 2 · Lo que vive
 
@@ -48,13 +49,12 @@
 - **F-791** · Gallagher, J. (2014). Learning about an Infrequent Event: Evidence from Flood Insurance Take-Up in the United States (American Economic Journal: Applied Economics). Rigor: 🟢 A. — https://www.aeaweb.org/research/will-flood-insurance-takeup-spike
 - **F-914** · Allcott, H. & Rogers, T. (2014). The Short-Run and Long-Run Effects of Behavioral Interventions: Experimental Evidence from Energy Conservation (American Economic Review 104(10):3003-3037). Rigor: 🟢 A. — https://www.nber.org/papers/18492
 - **F-337** · Bruns, H. & Perino, G. (2023). The role of autonomy and reactance for nudging — Experimentally comparing defaults to recommendations and mandates (J. Behavioral and Experimental Economics). Rigor: 🟢 A. — https://www.sciencedirect.com/science/article/pii/S2214804323000733
-- **F-908** · Mockus, A. (BID) (2001). Cultura ciudadana: programa contra la violencia en Santa Fe de Bogotá, Colombia, 1995-1997. Rigor: 🟡 C. — https://webimages.iadb.org/publications/spanish/document/Cultura-ciudadana-programa-contra-la-violencia-en-Santa-Fe-de-Bogot%C3%A1-Colombia-1995-1997.pdf
-- **F-905** · OECD Observatory of Public Sector Innovation (2026). MineduLAB (ficha de unidad de ciencias del comportamiento). Rigor: 🔵 B. — https://oecd-opsi.org/bi-units/minedulab/
-- **F-906** · ComexPerú (2017). MineduLAB: innovando desde el Estado. Rigor: 🟠 D. — https://www.comexperu.org.pe/articulo/minedulab-innovando-desde-el-estado
-- **F-884** · BC Civil Resolution Tribunal (Moffatt v. Air Canada; vía Law360 y prensa jurídica). Rigor: 🔵 B. — https://www.law360.ca/ca/articles/1804075
+- **F-884** · BC Civil Resolution Tribunal (Moffatt v. Air Canada; vía Law360 y prensa jurídica) (2024). Moffatt v. Air Canada, 2024 BCCRT 149. Rigor: 🔵 B. — https://www.law360.ca/ca/articles/1804075
 - **F-807** · Ho, Y.-J.; Liu, S.; Wang, L. (2023). Fun Shopping: A Randomized Field Experiment on Gamification (Inf. Syst. Res. 34(2):766-785; DOI 10.1287/isre.2022.1147). Rigor: 🟢 A. — https://pubsonline.informs.org/doi/fpi/10.1287/isre.2022.1147
 - **F-330** · Tran, Rose, Suzuki, Urech, Vashi (2023). Medical advice lines offering on-demand access to providers reduced emergency department visits (Health Affairs Scholar 1(6)). Rigor: 🟢 A. — https://academic.oup.com/healthaffairsscholar/article/1/6/qxad079/7459835
 - **F-346** · NPR, AARP, Fierce Healthcare, Healthcare Dive (cobertura convergente, con eco de cita entre notas especializadas) (2018-2019). Política de "ER evitable" de Anthem — backlash y reversión. Rigor: 🟡 C.
+- **F-1011** · CDC (Centros para el Control y la Prevención de Enfermedades de EE. UU.), a partir de Dahlberg, L. L. & Krug, E. G. (Informe mundial sobre la violencia y la salud, OMS, 2002) (2002 (página vigente)). The Social-Ecological Model: A Framework for Prevention. Rigor: 🔵 B. — https://cdc.gov/violence-prevention/about/index.html
+- **F-1028** · Parkinson, J. A.; Gould, A.; Knowles, N.; West, J. & Goodman, A. M. (2025). Integrating Systems Thinking and Behavioural Science (Behavioral Sciences 15(4):403, DOI 10.3390/bs15040403). Rigor: 🔵 B. — https://doi.org/10.3390/bs15040403
 - SBS y APESEG — encuestas de percepción citadas en la investigación de seguros del equipo (`_nodes/seguros-comportamiento-mundo-peru.md`); sin ficha propia en el registro.
 
 ## Parte 4 · Lo que está en juego
@@ -99,9 +99,28 @@
 - **F-902** · RGA (2026). Behavioral Science (Knowledge Center). Rigor: 🟡 C. — https://www.rgare.com/knowledge-center/article/behavioural-economics-and-insurance
 - **F-903** · SCOR (2026). Bringing behavioral science to insurance. Rigor: 🟡 C. — https://www.scor.com/en/article/careers/bringing-behavioral-science-insurance
 - **F-904** · Gartner (vía Cloverpop y Aera) (2025). Hype Cycle for Artificial Intelligence 2025 — Decision Intelligence. Rigor: 🟠 D. — https://www.cloverpop.com/blog/the-2025-gartner-ai-hype-cycle-report-recognizes-decision-intelligence-as-transformational
+- **F-905** · OECD Observatory of Public Sector Innovation (2026). MineduLAB (ficha de unidad de ciencias del comportamiento). Rigor: 🔵 B. — https://oecd-opsi.org/bi-units/minedulab/
 - **F-907** · AISafety.com (bolsa de empleo) (2026). Research Scientist, Gemini Safety and Behaviour (publicado 1-oct-2026). Rigor: 🟠 D. — https://aisafety.com/jobs
 - **F-922** · Lessig, L. (1999). Code and Other Laws of Cyberspace (Basic Books). Rigor: ⚪ Teórico. — https://cs.stanford.edu/people/eroberts/cs181/projects/2010-11/CodeAndRegulation/about.html
 - Thaler, R. H. y Sunstein, C. R. (2008). *Nudge: Improving Decisions About Health, Wealth, and Happiness*. Yale University Press. — Referencia canónica, sin ficha propia en el registro.
+- **F-1016** · Simon, H. A. (1955). A Behavioral Model of Rational Choice (Quarterly Journal of Economics 69(1):99-118). Rigor: 🟢 A. — https://www.iris.unict.it/handle/20.500.11769/601841
+- **F-220** · Tversky, A. & Kahneman, D. (1974). Judgment under Uncertainty: Heuristics and Biases (Science, 185(4157):1124-1131). Rigor: 🟢 A. — https://www.science.org/doi/10.1126/science.185.4157.1124
+- **F-221** · Kahneman, D. & Tversky, A. (1979). Prospect Theory: An Analysis of Decision under Risk (Econometrica, 47(2):263-291). Rigor: 🟢 A. — https://www.jstor.org/stable/1914185
+- **F-1017** · Laibson, D. (1997). Golden Eggs and Hyperbolic Discounting (Quarterly Journal of Economics 112(2):443-477). Rigor: 🟢 A. — https://laibson.scholars.harvard.edu/publications/golden-eggs-and-hyperbolic-discounting
+- **F-1018** · Evans, J. St. B. T. & Stanovich, K. E. (2013). Dual-Process Theories of Higher Cognition: Advancing the Debate (Perspectives on Psychological Science 8(3):223-241). Rigor: 🟢 A. — https://journals.sagepub.com/doi/10.1177/1745691612460685
+- **F-1019** · Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry (American Psychologist 34(10):906-911). Rigor: 🟢 A. — https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.727116/epub
+- **F-230** · Deci, E. L. & Ryan, R. M. (2000). The "What" and "Why" of Goal Pursuits: Human Needs and the Self-Determination of Behavior (Psychological Inquiry, 11(4):227-268). Rigor: 🟢 A. — https://doi.org/10.1207/S15327965PLI1104_01
+- **F-1020** · Wood, W. & Neal, D. T. (2007). A new look at habits and the habit-goal interface (Psychological Review 114(4):843-863). Rigor: 🟢 A. — https://dornsife.usc.edu/wendy-wood/wp-content/uploads/sites/183/2023/10/wood.neal_.2007psychrev_a_new_look_at_habits_and_the_interface_between_habits_and_goals.pdf
+- **F-1021** · Michie, S.; van Stralen, M. M. & West, R. (2011). The behaviour change wheel: A new method for characterising and designing behaviour change interventions (Implementation Science 6:42). Rigor: 🟢 A. — https://discovery.ucl.ac.uk/1305716
+- **F-224** · Cialdini, R. B. & Goldstein, N. J. (2004). Social Influence: Compliance and Conformity (Annual Review of Psychology, 55:591-621). Rigor: 🟢 A. — https://doi.org/10.1146/annurev.psych.55.090902.142015
+- **F-1022** · Bicchieri, C. (2006). The Grammar of Society: The Nature and Dynamics of Social Norms (Cambridge University Press). Rigor: ⚪ Teórico. — https://discovery.inp.edu.eg/Record/2588/Details?lng=en
+- **F-1023** · Granovetter, M. S. (1973). The Strength of Weak Ties (American Journal of Sociology 78(6):1360-1380). Rigor: 🟢 A. — https://smg.media.mit.edu/classes/library/granovetter.weak.ties/granovetter.html
+- **F-1024** · Centola, D. (2010). The Spread of Behavior in an Online Social Network Experiment (Science 329(5996):1194-1197). Rigor: 🟢 A. — https://pubmed.ncbi.nlm.nih.gov/20813952
+- **F-1025** · Latour, B. (2005). Reassembling the Social: An Introduction to Actor-Network-Theory (Oxford University Press; reediciones con fecha 2007). Rigor: ⚪ Teórico. — https://academic.oup.com/book/52349
+- **F-83** · Arrow KJ. Uncertainty and the Welfare Economics of Medical Care. American Economic Review 1963;53(5):941-973. Reimpreso en Bulletin of the World Health Organization 2004;82(2):141-149 (sección Public Health Classics). Rigor: 🟢 A. — https://pmc.ncbi.nlm.nih.gov/articles/PMC2585909/
+- **F-82** · Rothschild, M. & Stiglitz, J. (1976). Equilibrium in Competitive Insurance Markets: An Essay on the Economics of Imperfect Information (Quarterly Journal of Economics). Rigor: 🟢 A. — https://www.nber.org/system/files/working_papers/w23556/w23556.pdf
+- **F-1026** · Lorenz, E. N. (1963). Deterministic Nonperiodic Flow (Journal of the Atmospheric Sciences 20(2):130-141). Rigor: 🟢 A. — https://www.sciencenews.org/article/born-half-century-ago-chaos-theory-languished-years
+- **F-1027** · Mitchell, M. (2009). Complexity: A Guided Tour (Oxford University Press). Rigor: ⚪ Teórico. — https://physicstoday.aip.org/reviews/complexity-a-guided-tour
 - Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press. — Referencia canónica, sin ficha propia en el registro.
 - **F-257** · METR (2025). Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity. Rigor: 🟢 A por diseño (**RCT**), pero 🔴 **preprint sin revisión por pares**; N pequeño (16 devs, 246 tareas reales). — https://arxiv.org/abs/2507.09089
 - **F-474** · METR (Model Evaluation & Threat Research) (2026). We are Changing our Developer Productivity Experiment Design. Rigor: 🔵 B. — https://metr.org/blog/2026-02-24-uplift-update/
@@ -113,4 +132,3 @@
 - Tablero de proyectos del equipo (`TABLERO_BEHOLDER.md`): Bienestar 360, guías resumidas, Cobranzas B2B, fuerza de ventas, lealtad y AIDA.
 - Informe de El Niño y oportunidades para RIMAC (`research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`).
 - Revisión del equipo sobre lealtad y gamificación en retail (`research/_nodes/lealtad-gamificacion-recompensas-retail.md`).
-- Regla del equipo para evaluar asistentes de IA por las decisiones que producen (`research/_nodes/conducta-humano-ia.md`).
