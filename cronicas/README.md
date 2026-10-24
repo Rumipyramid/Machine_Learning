@@ -24,6 +24,7 @@ seguros y diseño (Mu, grafo, códice) ni de su `alma.md`.
 | Mother Shipton, la profetisa de Knaresborough | `expedientes/mother-shipton.md` | 🕯️ leyenda sin rastro (la mujer) · 🧨 desmentido (las profecías famosas) | v1.0 | 2026-10-24 |
 | Liberaciones de archivos y videos de EE. UU. sobre ovnis y fenómenos paranormales (1969-2026) | `expedientes/liberaciones-archivos-ovni-eeuu.md` | 📂 documentado · 🔦 explicación probable (casos estrella) · 🌀 abierto (residuo sin datos) | v1.0 | 2026-10-24 |
 | Los casos más verosímiles de la historia paranormal (panorama) | `expedientes/panorama-casos-mas-verosimiles.md` | comparativo · ganador abierto: luces de Hessdalen 🌀 | v1.0 | 2026-10-24 |
+| Las luces de Hessdalen (Noruega) | `expedientes/luces-de-hessdalen.md` | 🌀 abierto (probablemente natural) | v1.0 | 2026-10-24 |
 
 Estados: 📂 documentado · 🕯️ leyenda sin rastro · 🔦 explicación probable · 🧨 desmentido ·
 🌀 abierto.
