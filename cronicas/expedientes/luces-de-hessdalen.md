@@ -4,7 +4,7 @@
 > **Versión:** v1.0 · **Abierto:** 2026-10-24 · **Actualizado:** 2026-10-24
 > **Tipo:** ovni / luces (fenómeno luminoso atmosférico con lugar fijo)
 > **Lugar y época:** valle de Hessdalen, municipio de Holtålen (Trøndelag, Noruega); desde fines de 1981 hasta hoy
-> **Fuentes:** `cronicas/grimorio.md` (G-56, G-57 y G-66 a G-78)
+> **Fuentes:** `cronicas/grimorio.md` (G-56, G-57 y G-66 a G-83)
 > ⚠️ **Límite de esta versión:** ningún artículo se leyó completo (la lectura web está bloqueada en este entorno). Todo sale de resúmenes de búsqueda; los datos llevan su fuente para verificarlos.
 
 ## 1. El caso en tres líneas
@@ -88,6 +88,25 @@ Desde noviembre de 1981, los vecinos de un valle rural de Noruega ven luces que 
 
 **Búsqueda adversarial:** se buscó a propósito una explicación que cierre el caso completo. No existe: la crítica de los faros de autos cubre parte de los datos de 2002, no el fenómeno entero. Se buscó también lo contrario: un estudio reciente con revisión por pares que confirme las propiedades anómalas. No se encontró ninguno posterior a 2010 con datos nuevos. La falta de publicaciones en revistas de primera línea es la crítica más repetida al caso (G-56, G-57).
 
+## 5.1 ¿Es único? Casos hermanos comparados (2026-10-24)
+
+No es único, pero sí es el mejor instrumentado de su familia: las "luces fantasma" de lugar fijo. Casi todos sus hermanos se cerraron con luces de autos o espejismos. Su único par en calidad de evidencia no tiene lugar fijo: las luces sísmicas.
+
+| Caso | Qué se hizo | Resultado | Estado | Fuente |
+|---|---|---|---|---|
+| **Luces sísmicas** (luces que aparecen antes o durante terremotos, en todo el mundo) | Catálogo de los 65 casos mejor documentados de América y Europa desde 1600, publicado en una revista de sismología con revisión por pares | El 85% aparece sobre o cerca de fosas tectónicas (rifts) y el 97% junto a fallas casi verticales. Hipótesis: cargas eléctricas de la roca sometida a presión que suben por la falla. Mecanismo no confirmado | 🔦 real y con patrón; mecanismo abierto | G-79 |
+| **Luces de Brown Mountain** (Carolina del Norte, EE. UU.) | Cámaras automáticas de la Universidad Estatal Appalachian durante años | Casi todo fueron aviones, estrellas y fogatas. En julio de 2016, dos cámaras registraron a la vez una esfera sin explicar. Su investigador sugiere rayo en bola | 🌀 abierto, pero muy raro (una captura en años) | G-80 |
+| **Luces de Marfa** (Texas, EE. UU.) | Estudiantes de la Universidad de Texas en Dallas (2004) con láseres, video de alta velocidad y monitoreo de tráfico | Gran parte coincide con faros de la carretera 67. Hay quien objeta que los relatos son anteriores a los autos | 🔦 explicación probable para la mayoría | G-81 |
+| **Luz Min Min** (Queensland, Australia) | El neurocientífico Jack Pettigrew observó y reprodujo el fenómeno (revista con revisión por pares, 2003) | Espejismo: una capa de aire frío lleva luces lejanas (faros a unos 10 km) por encima del horizonte | 🔦 explicación probable | G-82 |
+| **Luz de Paulding** (Michigan, EE. UU.) | Estudiantes de Michigan Tech (2010) con telescopio y espectrógrafo; ya en 1990 otro grupo llegó a lo mismo | Faros y luces traseras de autos en la carretera 45, a unos 8 km. Lo reprodujeron manejando un auto | 🧨 explicado (algunos dicen que esa "no es la verdadera") | G-83 |
+
+**Lo que muestra la comparación:**
+- Cuando alguien apunta un telescopio o maneja un auto de prueba, la mayoría de las luces fantasma se cierran en semanas: Marfa, Min Min, Paulding.
+- Hessdalen resistió 40 años de instrumentos sin cerrarse del todo. Eso lo separa del resto. La crítica de los faros de autos (G-69) cubre solo parte de sus registros.
+- Las luces sísmicas tienen mejor evidencia publicada que Hessdalen (un catálogo en revista de sismología), pero no se pueden esperar en un lugar fijo. Hessdalen sí.
+- Brown Mountain es el caso más parecido, pero ocurre tan poco que no se puede estudiar en serio.
+- No se pudo verificar con fuentes otros casos citados en la literatura del tema (las luces de la reserva Yakama en Washington y las de Piedmont, Misuri, en los años 70). Quedan fuera hasta tener fuente.
+
 ## 6. Síntesis
 
 Las tres pistas dicen lo mismo de distinta forma. El archivo prueba que hay un fenómeno repetido y medido. Las voces muestran un ciclo de anuncios de solución que nunca se confirman. La pista escéptica explica una parte (errores con luces de autos y aviones) y deja el resto abierto, con un modelo de física atmosférica plausible pero sin confirmar.
@@ -117,4 +136,5 @@ Para la crónica, la historia es la de un valle convertido en laboratorio por ob
 
 ## 9. Bitácora
 
+- 2026-10-24: §5.1, comparación con casos hermanos; fuentes G-79 a G-83.
 - 2026-10-24: v1.0, apertura con `/aquelarre`. 13 fuentes nuevas (G-66 a G-78), más G-56 y G-57 del panorama.
