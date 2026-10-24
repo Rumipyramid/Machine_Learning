@@ -249,3 +249,6 @@
 | F-648 | 🟢 A | 2026-10-23 | Intuición 229 — la conformidad varía con cultura y época; no trasladar un efecto social sin medición local (resúmenes; lectura débil) |
 | F-650 | 🟢 A | 2026-10-23 | Intuición 230 — Milgram: guion improvisado según Perry y réplica de Burger solo hasta 150 V (reseñas; lectura débil) |
 | F-746 | 🟢 A | 2026-10-23 | Intuición 231 — choque temprano daña por ingreso y dieta; la transferencia no mitigó (año de la ficha sin confirmar; lectura débil) |
+| F-659 | 🟢 A | 2026-10-24 | Intuición 232 — efecto espectador: g = −0,35 que se atenúa con peligro claro, agresor o costo físico; ubicar el caso en sus condiciones (resumen y reseñas; lectura débil) |
+| F-586 | 🟢 A | 2026-10-24 | Intuición 233 — diálogo con IA: −20% de creencia conspirativa, sostenido 2 meses; capacidad neutra, decide la exactitud (resumen; lectura débil) |
+| F-807 | 🟢 A | 2026-10-24 | Intuición 234 — gamificación vs. cupón: menos en el pico, más rastro al retirar; medir lo que queda (resumen; lectura débil) |

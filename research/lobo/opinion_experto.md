@@ -6027,6 +6027,27 @@ F-746 (Aguilar y Vicarelli, *World Development* 150; el año 2022 de la ficha no
 - **Leído a fondo:** 2026-10-23 (`WebSearch`; notas de prensa universitarias y resúmenes; lectura débil, declarada)
 - **Conexión razonada, no forzada:** refuerza la entrada 199 y apoya la tesis 26 sin subir su confianza (México, no Perú; un evento); sin cambio de tesis.
 
+### 232. El efecto espectador existe, pero se atenúa donde hay peligro claro, agresor presente o costo físico: no es una ley de "nadie ayuda"
+F-659 (Fischer et al., *Psychological Bulletin* 137(4), 2011). Meta-análisis de 105 efectos independientes y más de 7.700 participantes: efecto global g = −0,35 (modelo de efectos fijos), es decir, la presencia de otros reduce la ayuda. El efecto se atenúa cuando la emergencia se percibe peligrosa, cuando hay un agresor presente o cuando ayudar tiene costo físico. Los autores lo explican con un modelo de activación, costo y recompensa: el peligro se reconoce como real más rápido y eso sube la activación. El subgrupo exacto de emergencias peligrosas no apareció en el resumen; hace falta el texto completo. Varias reseñas exageran y hablan de "inversión" del efecto; el resumen dice atenuación.
+**Heurística:** un efecto social promedio no describe a todas las situaciones. Antes de usarlo en un diseño, preguntar en cuál de sus condiciones cae el caso propio. En un reclamo o una emergencia de cliente, la claridad del peligro vale más que cuántos observadores hay.
+- **Fuente:** F-659 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-24 (`WebSearch`; resumen oficial y reseñas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** ninguna tesis vigente; refuerza el uso del estado de replicación antes de apoyar una decisión en un efecto psicológico.
+
+### 233. Un diálogo con IA bajó ~20% la creencia conspirativa y se sostuvo dos meses: la misma herramienta sirve para corregir y para convencer
+F-586 (Costello, Pennycook y Rand, *Science*, 2024). Ensayo aleatorizado con 2.190 personas que creían en una teoría conspirativa. Cada una describió su teoría y su evidencia, y GPT-4 Turbo argumentó en contra de forma personalizada. La creencia cayó cerca de 20%, el efecto siguió dos meses después, se extendió a teorías no tratadas y apareció incluso en creencias muy arraigadas. Los autores advierten que la misma técnica podría usarse para instalar creencias falsas, y la muestra es de Estados Unidos. Contra la entrada 216 (la IA persuade con hechos que pueden ser falsos): aquí el efecto depende de que los argumentos sean precisos, y la búsqueda de hoy no pudo confirmar cómo se verificó esa precisión.
+**Heurística:** la persuasión conversacional es una capacidad neutra; lo que decide si ayuda o daña es la exactitud de lo que dice y quién la controla. Para un asistente de seguros, auditar la exactitud de los argumentos pesa más que medir cuánto convence.
+- **Fuente:** F-586 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-24 (`WebSearch`; resumen y notas institucionales; lectura débil, declarada)
+- **Conexión razonada, no forzada:** complementa la entrada 216 y la tesis 27 sin cambiar su confianza (muestra de Estados Unidos, tema ajeno a seguros).
+
+### 234. La gamificación mueve menos que el cupón mientras dura, pero deja efecto cuando se retira: comparar el rastro, no solo el pico
+F-807 (Ho, Liu y Wang, *Information Systems Research* 34(2), 2023). Experimento de campo aleatorizado en uno de los centros comerciales más grandes de Asia. Las insignias subieron las ventas 21,5% y las tablas de posiciones 22,5% durante el tratamiento; el cupón subió 31,7%. Al retirar el tratamiento, el efecto de la gamificación siguió significativo frente a la línea base y el del cupón se desvaneció. Las insignias alcanzan a un público amplio; las tablas de posiciones pueden animar o desanimar según la posición del cliente. Es un solo centro comercial en Asia, sin réplica en Perú.
+**Heurística:** al evaluar una intervención, medir también qué queda después de retirarla. El incentivo que gana en el pico puede perder en el rastro.
+- **Fuente:** F-807 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-24 (`WebSearch`; resumen oficial y fichas de repositorio; lectura débil, declarada)
+- **Conexión razonada, no forzada:** apoya la tesis 28 (el programa bien diseñado mueve más que el juego) con un matiz: el juego sí dura más que el cupón. No cambia su confianza (un contexto, sin prueba en LatAm).
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6222,42 +6243,7 @@ F-746 (Aguilar y Vicarelli, *World Development* 150; el año 2022 de la ficha no
 
 - **2026-09-22** — *(Detalle podado y fusionado al resumen el 2026-10-23)*: corrida diaria de refinamiento; sin cambios de confianza.
 
-- **2026-09-23** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, working tree limpio, sin fast-forward pendiente) y verifiqué `research/fuentes/codice.md` por
-  conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto
-  que las últimas 23 corridas, **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo segundo día
-  seguido sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope —
-  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es
-  rutina de `cronista`, no de este proceso diario; ya lleva cuarenta y dos días sin correr). **Poda de
-  bitácora:** el bloque "2026-08-24" salió por completo de la ventana de ~30 días (cutoff ≈2026-08-24)
-  — lo fusioné con el bloque "2026-08-01 a 2026-08-23" en un resumen ampliado "2026-08-01 a
-  2026-08-24"; no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive
-  en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr hoy, agotado ya el
-  nivel 🟢A y con el nivel 🔵B en curso:** recalculé por script el universo 🔵B del ledger con el mismo
-  filtro estricto: **76 filas** — contra `fuentes_leidas_lobo.md` (5 ya leídas de este nivel tras las
-  corridas de los dos días previos: F-104, F-32, F-359, F-37, F-194) — **71 pendientes** — y elegí 3 al
-  azar sin reemplazo (Python `random.shuffle`, sin semilla fija): F-7, F-256 y F-309. Las tres
-  bloqueadas por el proxy en su URL directa (kff.org, dl.acm.org, bls.gov); `WebSearch` sí funcionó y
-  permitió reconstruir detalle nuevo en las tres vía cobertura convergente (topline/metodología propia
-  de KFF y cobertura de KFF Health News para F-7, el resumen del propio ACM Digital Library para F-256,
-  la página oficial del BLS con desglose salarial por sub-rol para F-309), no solo el resumen de una
-  línea ya citado. Sumé las entradas 139, 140 y 141 de Intuición acumulada, y **esta vez sí hubo cambio
-  de confianza numérica en una tesis, no solo matiz:** (139) la lectura a fondo de F-7 (KFF, N=1,292,
-  🔵B) trae el desglose por edad que la tesis 3 exigía explícitamente desde el 2026-07-17 como
-  condición para subir de confianza (F-n con rigurosidad B o mejor que confirme el patrón
-  generacional) — el gradiente es real (4.7/10 en 18-29 vs. 6.4/10 en 50+) pero el piso sigue roto
-  incluso en el grupo que mejor entiende, así que **subí la confianza de tesis 3 de Media a Alta**,
-  manteniendo su conclusión de negocio intacta (simplificar el producto para toda la base, no educar
-  solo a los jóvenes); (140) F-256 (CHI 2026 EA) desglosa la brecha de usabilidad de interfaces
-  generadas por IA en cuatro heurísticas de soporte específicas (ayuda/documentación, recuperación de
-  errores, eficiencia, prevención de errores) — matiza tesis 24 con un checklist operativo sin cambiar
-  su confianza; (141) F-309 (BLS) trae el diferencial salarial exacto entre diseñador de interfaz
-  digital ($98,090) y desarrollador web ($90,930) dentro de la misma categoría ocupacional — refuerza
-  con dato de mercado laboral el argumento de tesis 21 sobre dónde vive el valor real del diseño, sin
-  tesis numerada propia todavía. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes
-  leídas hoy. Bitácora con 30 días de historial (2026-08-25 a hoy) tras la poda de hoy — cumple la
-  ventana de ~30 días.
+- **2026-09-23** — *(Detalle podado y fusionado al resumen el 2026-10-24)*: corrida diaria de refinamiento; subió la confianza de la tesis 3 de Media a Alta (F-7) y sumó las intuiciones 139 a 141.
 - **2026-09-24** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, working tree limpio, sin cambios pendientes de la corrida de ayer) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
@@ -6606,3 +6592,5 @@ F-746 (Aguilar y Vicarelli, *World Development* 150; el año 2022 de la ficha no
 - **2026-10-22** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 124 pendientes → 121 tras hoy):** sorteo F-732, F-568 y F-749, leídas vía `WebSearch` (secundarias y resúmenes; lectura débil, declarada). Entradas 226 (el verbo de la pregunta moldea el recuerdo; cuidar el guion del siniestro), 227 (medir la completitud de un modelo antes de afinarlo) y 228 (clima y brotes: alerta temprana, no tarifa). Pendiente para `cronista`: F-732 no recoge la réplica conceptual fallida de 2017 ni la réplica multilaboratorio en curso; F-568, sin cifras verificadas. Poda: 09-21 fusionado al resumen; Bitácora cubre 2026-09-22 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-23** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 121 pendientes → 118 tras hoy):** sorteo F-648, F-650 y F-746, leídas vía `WebSearch` (resúmenes, reseñas y notas de prensa; lectura débil, declarada). Entradas 229 (la conformidad varía con cultura y época), 230 (Milgram: guion improvisado y réplica que llega solo a 150 V) y 231 (el choque temprano daña por ingreso y dieta; la transferencia no lo reparó). Pendiente para `cronista`: confirmar el año de publicación de F-746 (2022 no verificado) y que F-648 no recoge la tendencia temporal. Poda: 09-22 fusionado al resumen; Bitácora cubre 2026-09-23 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-24** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 118 pendientes → 115 tras hoy):** sorteo F-659, F-586 y F-807, leídas vía `WebSearch` (resúmenes oficiales y reseñas; lectura débil, declarada). Entradas 232 (el efecto espectador se atenúa con peligro claro, agresor o costo físico), 233 (un diálogo con IA bajó ~20% la creencia conspirativa durante dos meses: capacidad neutra, decide la exactitud) y 234 (la gamificación rinde menos que el cupón en el pico pero deja efecto al retirarla; matiz a la tesis 28). Pendiente para `cronista`: F-659 no recoge el subgrupo de emergencias peligrosas; F-586, cómo se verificó la exactitud de los argumentos de la IA. Poda: 09-23 fusionado al resumen; Bitácora cubre 2026-09-24 a hoy. `fuentes_leidas_lobo.md` actualizado.
