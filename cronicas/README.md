@@ -22,6 +22,7 @@ seguros y diseño (Mu, grafo, códice) ni de su `alma.md`.
 | Caso | Expediente | Estado | Versión | Actualizado |
 |---|---|---|---|---|
 | Mother Shipton, la profetisa de Knaresborough | `expedientes/mother-shipton.md` | 🕯️ leyenda sin rastro (la mujer) · 🧨 desmentido (las profecías famosas) | v1.0 | 2026-10-24 |
+| Liberaciones de archivos y videos de EE. UU. sobre ovnis y fenómenos paranormales (1969-2026) | `expedientes/liberaciones-archivos-ovni-eeuu.md` | 📂 documentado · 🔦 explicación probable (casos estrella) · 🌀 abierto (residuo sin datos) | v1.0 | 2026-10-24 |
 
 Estados: 📂 documentado · 🕯️ leyenda sin rastro · 🔦 explicación probable · 🧨 desmentido ·
 🌀 abierto.
