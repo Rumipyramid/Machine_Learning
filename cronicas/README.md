@@ -21,7 +21,7 @@ seguros y diseño (Mu, grafo, códice) ni de su `alma.md`.
 
 | Caso | Expediente | Estado | Versión | Actualizado |
 |---|---|---|---|---|
-| *(vacío — el primer caso se abre con `/aquelarre`)* | | | | |
+| Mother Shipton, la profetisa de Knaresborough | `expedientes/mother-shipton.md` | 🕯️ leyenda sin rastro (la mujer) · 🧨 desmentido (las profecías famosas) | v1.0 | 2026-10-24 |
 
 Estados: 📂 documentado · 🕯️ leyenda sin rastro · 🔦 explicación probable · 🧨 desmentido ·
 🌀 abierto.
