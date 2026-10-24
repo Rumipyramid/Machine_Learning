@@ -1,6 +1,6 @@
 # Referencias del deck «El diseño conductual ha muerto. Larga vida al diseño conductual.»
 
-> Output derivado de [[rol-diseno-conductual-seguros]] · Fecha: 2026-10-23
+> Output derivado de [[rol-diseno-conductual-seguros]] · Fecha: 2026-10-24
 > Deck: https://claude.ai/artifact/3BdXWvAAGk5m2CnBGVmMtH (láminas 31 a 33, «Referencias», muestran la versión corta: autor y año).
 > Cada fuente tiene su ficha en `research/fuentes/codice.md` (consultable con `/codice`), con resumen, hallazgo y nivel de rigor.
 
@@ -10,8 +10,14 @@
 
 - **F-21** · DellaVigna, S. & Linos, E. (2022). RCTs to Scale: Comprehensive Evidence From Two Nudge Units (Econometrica). Rigor: 🟢 A. — https://onlinelibrary.wiley.com/doi/10.3982/ECTA18709
 - **F-17** · Maier, M. et al. (2022). No evidence for nudging after adjusting for publication bias (PNAS). Rigor: 🟢 A. — https://www.pnas.org/doi/10.1073/pnas.2200300119
+- **F-18** · Hu, Xia, Guo, Lu, Constantino & Ju (2025). Assessing Nudge Impact: A Comprehensive Second-Order Meta-Analysis (J. Behavioral Decision Making). Rigor: 🟢 A. — https://onlinelibrary.wiley.com/doi/10.1002/bdm.70053
+- **F-951** · Szaszi, B.; Higney, A.; Charlton, A.; Gelman, A.; Ziano, I.; Aczel, B.; Goldstein, D. G.; Yeager, D. S. & Tipton, E. (2022). No reason to expect large and consistent effects of nudge interventions (carta en PNAS 119(31)). Rigor: 🟢 A. — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9351519/
+- **F-712** · Open Science Collaboration (270 autores) (2015). Estimating the reproducibility of psychological science (Science, 349(6251):aac4716). Rigor: 🟢 A. — https://discovery.dundee.ac.uk/en/publications/estimating-the-reproducibility-of-psychological-science/
+- **F-966** · Department for Work and Pensions (Reino Unido), vía Employee Benefits (2024). Workplace pension participation and saving trends of eligible employees (estadística oficial). Rigor: 🔵 B. — https://employeebenefits.co.uk/pensions/89-of-eligible-british-staff-saved-into-workplace-pensions-in-2024/281091.article
 - **F-24** · Bazerman, M. H. (2025). Inside an Academic Scandal: A Story of Fraud and Betrayal. Cambridge, MA: MIT Press, 200 pp. (ISBN 9780262049887). Rigor: 🔵 B. — https://www.science.org/content/article/after-honesty-researcher-s-retractions-colleagues-expand-scrutiny-her-work
 - **F-973** · Chater, N. & Loewenstein, G. (2026). It's On You: How Corporations Shift the Blame for Society's Problems onto Individuals (Basic Books, 27-ene-2026). Rigor: ⚪ Teórico. — https://www.hachettebookgroup.com/titles/nick-chater/its-on-you/9781541700130/
+- **F-971** · Hreha, J. (2021). The Death of Behavioral Economics (blog The Behavioral Scientist). Rigor: 🔴 E. — https://www.thebehavioralscientist.com/articles/the-death-of-behavioral-economics
+- **F-972** · Alexander, S. (Astral Codex Ten) (2021). On Hreha On Behavioral Economics. Rigor: 🔴 E. — https://www.astralcodexten.com/p/on-hreha-on-behavioral-economics
 
 ## Parte 2 · Lo que vive
 
@@ -23,11 +29,15 @@
 - **F-900** · Verbeek, P.-P. (2011). Moralizing Technology: Understanding and Designing the Morality of Things (University of Chicago Press). Rigor: 🟢 A. — https://newbooksnetwork.com/peter-paul-verbeek-moralizing-technology-understanding-and-designing-the-morality-of-things-university-of-chicago-press-2011
 - **F-596** · Rahwan, I. et al. (2019). Machine behaviour (Nature 568:477-486). Rigor: 🟢 A. — https://www.nature.com/articles/s41586-019-1138-y
 - **F-923** · Voelkel, J. G.; Stagnaro, M. N.; Chu, J. Y. et al. (2024). Megastudy testing 25 treatments to reduce antidemocratic attitudes and partisan animosity (Science 386(6719), eadh4764). Rigor: 🟢 A. — https://www.hks.harvard.edu/publications/megastudy-testing-25-treatments-reduce-antidemocratic-attitudes-and-partisan-animosity
+- **F-938** · Milkman, K. L. et al. (2024). Megastudy shows that reminders boost vaccination but adding free rides does not (Nature 631:179-188). Rigor: 🟢 A. — https://doi.org/10.1038/s41586-024-07591-x
 - **F-924** · Vlasceanu, M.; Doell, K. C.; Bak-Coleman, J. B. et al. (2024). Addressing climate change with behavioral science: A global intervention tournament in 63 countries (Science Advances 10(6), eadj5778). Rigor: 🟢 A. — https://research.birmingham.ac.uk/en/publications/addressing-climate-change-with-behavioral-science-a-global-interv/
 - **F-925** · Athey, S.; Keleher, N. & Spiess, J. (2025). Machine learning who to nudge: causal vs predictive targeting in a field experiment on student financial aid renewal (Journal of Econometrics; versión de trabajo arXiv 2310.08672). Rigor: 🟢 A. — https://arxiv.org/abs/2310.08672
 - **F-586** · Costello, T. H.; Pennycook, G. & Rand, D. G. (2024). Durably reducing conspiracy beliefs through dialogues with AI (Science). Rigor: 🟢 A. — https://www.science.org/doi/10.1126/science.adq1814
+- **F-965** · Retraction Watch (sobre una nota de preocupación de Science) (2026). Science issues expression of concern for paper on AI chatbots debunking conspiracy theories (11-jun-2026). Rigor: 🟠 D. — https://retractionwatch.com/2026/06/11/science-ai-chatbots-debunk-conspiracy-theories-expression-of-concern/
 - **F-563** · Binz, M.; Akata, E.; … Schulz, E. (2025). A foundation model to predict and capture human cognition (Nature 644). Rigor: 🟢 A. — https://ideas.repec.org/a/nat/nature/v644y2025i8078d10.1038_s41586-025-09215-4.html
 - **F-564** · Liu, W.; Ding, N. et al. (Zhejiang; título exacto no capturado) (2026). Crítica de Centaur por sobreajuste (National Science Open, DOI 10.1360/nso/20250053). Rigor: 🟢 A. — https://nso-journal.org/10.1360/nso/20250053
+- **F-945** · Bastani, H.; Bastani, O.; Sungu, A.; Ge, H.; Kabakcı, Ö. & Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics (PNAS 122(26)). Rigor: 🟢 A. — https://ideas.repec.org/a/nas/journl/v122y2025pe2422633122.html
+- **F-936** · DellaVigna, S.; Kim, W. & Linos, E. (2024). Bottlenecks for Evidence Adoption (Journal of Political Economy 132(8):2748-2789). Rigor: 🟢 A. — https://www.nber.org/papers/w30144
 - **F-926** · OCDE (OECD) (2024). Fixing frictions: 'sludge audits' around the world (informe de políticas de gobernanza pública). Rigor: 🔵 B. — https://oecd-opsi.org/blog/reducing-frictions-in-public-services/
 - **F-231** · SOA Research Institute & RGA (Behavioral Science team) (2024). Searching for Simplicity: Improving Customer Comprehension in Life Insurance Through Behavioral Science. Rigor: 🔵 B. — https://www.rgare.com/knowledge-center/article/searching-for-simplicity--improving-customer-comprehension-in-life-insurance-through-behavioral-science
 - **F-910** · Bryan, C. J.; Tipton, E. & Yeager, D. S. (2021). Behavioural science is unlikely to change the world without a heterogeneity revolution (Nature Human Behaviour 5(8):980-989, DOI 10.1038/s41562-021-01143-3). Rigor: 🟢 A. — https://pmc.ncbi.nlm.nih.gov/articles/PMC8928154
@@ -48,6 +58,7 @@
 - **F-915** · Buyalskaya, A.; Ho, H.; Milkman, K. L.; Li, X.; Duckworth, A. L. & Camerer, C. (2023). What can machine learning teach us about habit formation? Evidence from exercise and hygiene (PNAS 120(17)). Rigor: 🟢 A. — https://pmc.ncbi.nlm.nih.gov/articles/PMC10151500
 - **F-791** · Gallagher, J. (2014). Learning about an Infrequent Event: Evidence from Flood Insurance Take-Up in the United States (American Economic Journal: Applied Economics). Rigor: 🟢 A. — https://www.aeaweb.org/research/will-flood-insurance-takeup-spike
 - **F-914** · Allcott, H. & Rogers, T. (2014). The Short-Run and Long-Run Effects of Behavioral Interventions: Experimental Evidence from Energy Conservation (American Economic Review 104(10):3003-3037). Rigor: 🟢 A. — https://www.nber.org/papers/18492
+- **F-947** · Maertens, R. et al. (2025). Experimentos longitudinales sobre la duración de la inoculación contra la desinformación (Nature Communications). Rigor: 🟢 A. — https://www.ox.ac.uk/news/2025-03-11-new-research-reveals-psychological-booster-shots-can-strengthen-resistance
 - **F-337** · Bruns, H. & Perino, G. (2023). The role of autonomy and reactance for nudging — Experimentally comparing defaults to recommendations and mandates (J. Behavioral and Experimental Economics). Rigor: 🟢 A. — https://www.sciencedirect.com/science/article/pii/S2214804323000733
 - **F-884** · BC Civil Resolution Tribunal (Moffatt v. Air Canada; vía Law360 y prensa jurídica) (2024). Moffatt v. Air Canada, 2024 BCCRT 149. Rigor: 🔵 B. — https://www.law360.ca/ca/articles/1804075
 - **F-807** · Ho, Y.-J.; Liu, S.; Wang, L. (2023). Fun Shopping: A Randomized Field Experiment on Gamification (Inf. Syst. Res. 34(2):766-785; DOI 10.1287/isre.2022.1147). Rigor: 🟢 A. — https://pubsonline.informs.org/doi/fpi/10.1287/isre.2022.1147
@@ -63,6 +74,7 @@
 - **F-847** · Kalai, A. T.; Nachum, O.; Vempala, S. & Zhang, E. (OpenAI / Georgia Tech) (2025). Why Language Models Hallucinate (arXiv 2509.04664). Rigor: 🟡 C. — https://arxiv.org/abs/2509.04664
 - **F-858** · Summerfield, C. et al. (UK AI Security Institute) (2025). Lessons from a Chimp: AI 'Scheming' and the Quest for Ape Language (arXiv 2507.03409). Rigor: 🔵 B. — https://arxiv.org/abs/2507.03409
 - **F-488** · Cheng, M.; Lee, C.; Khadpe, P.; Yu, S.; Han, D. & Jurafsky, D. (Stanford) (2026). Sycophantic AI decreases prosocial intentions and promotes dependence (Science 391(6792), 26-mar-2026; DOI 10.1126/science.aec8352; preprint arXiv 2510.01395). Rigor: 🟢 A. — https://www.science.org/doi/abs/10.1126/science.aec8352
+- **F-970** · Cherep, M. et al. (MIT), vía PsyPost (2026). AI Agents Are Sensitive to Nudges (PNAS 123(25), 15-jun-2026). Rigor: 🟢 A. — https://www.psypost.org/ai-models-are-far-more-susceptible-to-misleading-nudges-than-humans-study-shows/
 - **F-874** · Salvaggio, E. (Bulletin of the Atomic Scientists) (2026). Rogue AI didn't breach Hugging Face, human decisions did (11-sep-2026). Rigor: 🟠 D. — https://thebulletin.org/2026/09/rogue-ai-didnt-breach-hugging-face-human-decisions-did/
 - **F-934** · Rittel, H. W. J. & Webber, M. M. (1973). Dilemmas in a general theory of planning (Policy Sciences 4(2):155-169). Rigor: 🟢 A. — https://realgoodcenter.jou.ufl.edu/theory/wicked-problems-challenges-that-defy-easy-solutions
 - **F-927** · Schelling, T. C. (1971). Dynamic models of segregation (Journal of Mathematical Sociology 1(2):143-186). Rigor: 🟢 A. — https://arxiv.org/pdf/0907.1777
@@ -75,6 +87,10 @@
 
 ## Parte 5 · Dónde lo probamos
 
+- **F-1** · SBS (Superintendencia de Banca, Seguros y AFP) (2023). Estudio sobre Conocimiento y Percepción de la Demanda de Seguros. Rigor: 🔵 B. — https://www.sbs.gob.pe/Portals/4/jer/CIFRAS-ENCUESTA/2023/328-0922%20-%20Servicios%20de%20seguros%20-%20Informe%20de%20resultados.pdf
+- **F-507** · SBS (estadística oficial del Sistema de Seguros, setiembre 2025) (2025). Sistema de Seguros — Setiembre 2025 (SS-0003). Rigor: 🔵 B. — https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Setiembre/SS-0003-se2025.PDF
+- **F-5** · Infobae (cita a APESEG) (2025). Solo el 3% de los hogares peruanos cuenta con seguro contra sismos y desastres. Rigor: 🟠 D. — https://www.infobae.com/peru/2025/03/04/solo-el-3-de-los-hogares-peruanos-cuenta-con-un-seguro-contra-sismos-y-desastres-naturales-alerta-apeseg/
+- **F-442** · Equipo de investigación en seguridad vial (autoría no capturada en detalle) (2026). A national randomized field experiment testing the impact of simulated usage-based insurance programs on driver safety (*Accident Analysis & Prevention*). Rigor: 🟢 A. — https://www.sciencedirect.com/journal/accident-analysis-and-prevention · https://clinicaltrials.gov/study/NCT06101251
 - **F-886** · Financial Times (vía TechCrunch) (2025). AI is too risky to insure, say people whose job is insuring risk (23-nov-2025). Rigor: 🟠 D. — https://techcrunch.com/2025/11/23/ai-is-too-risky-to-insure-say-people-whose-job-is-insuring-risk/
 - **F-888** · AgentMarketCap (blog especializado; cita Armilla/Lloyd's, AIUC, Munich Re, Beazley) (2026). AI Agent Error Insurance Takes Shape: Inside the First Hallucination Liability Policies. Rigor: 🟠 D. — https://agentmarketcap.ai/blog/2026/04/15/ai-agent-error-insurance-lloyds-aig-beazley-hallucination-liability
 - **F-889** · Actuary.info (2026). Munich Re's aiSure and Mosaic Roll Out a Parametric AI-Error Cover With a €15M Per-Claim Limit. Rigor: 🟠 D. — https://actuary.info/insights/munich-re-aisure-mosaic-parametric-ai-error-cover-2026
@@ -101,6 +117,8 @@
 - **F-904** · Gartner (vía Cloverpop y Aera) (2025). Hype Cycle for Artificial Intelligence 2025 — Decision Intelligence. Rigor: 🟠 D. — https://www.cloverpop.com/blog/the-2025-gartner-ai-hype-cycle-report-recognizes-decision-intelligence-as-transformational
 - **F-905** · OECD Observatory of Public Sector Innovation (2026). MineduLAB (ficha de unidad de ciencias del comportamiento). Rigor: 🔵 B. — https://oecd-opsi.org/bi-units/minedulab/
 - **F-907** · AISafety.com (bolsa de empleo) (2026). Research Scientist, Gemini Safety and Behaviour (publicado 1-oct-2026). Rigor: 🟠 D. — https://aisafety.com/jobs
+- **F-979** · Boston Globe; AP/NBC (sindicada) (2025). Harvard revokes tenure of business professor accused of research fraud (27-may-2025). Rigor: 🟠 D. — https://www.bostonglobe.com/2025/05/27/metro/harvard-francesca-gino-tenure-revoked
+- **F-615** · Retraction Watch (2026). Procrastination study by Duke's Dan Ariely retracted after sleuths find signs of data tampering. Rigor: 🟠 D. — https://retractionwatch.com/2026/09/03/procrastination-study-duke-dan-ariely-psychological-science-data-colada-tampering-retraction/
 - **F-922** · Lessig, L. (1999). Code and Other Laws of Cyberspace (Basic Books). Rigor: ⚪ Teórico. — https://cs.stanford.edu/people/eroberts/cs181/projects/2010-11/CodeAndRegulation/about.html
 - Thaler, R. H. y Sunstein, C. R. (2008). *Nudge: Improving Decisions About Health, Wealth, and Happiness*. Yale University Press. — Referencia canónica, sin ficha propia en el registro.
 - **F-1016** · Simon, H. A. (1955). A Behavioral Model of Rational Choice (Quarterly Journal of Economics 69(1):99-118). Rigor: 🟢 A. — https://www.iris.unict.it/handle/20.500.11769/601841
