@@ -6,7 +6,7 @@
 
 **Cómo leer esta lista.** Las fuentes están agrupadas por la parte del deck en que aparecen. El nivel de rigor va de 🟢 A (artículo arbitrado con datos propios) a 🔴 E (opinión sin método); ⚪ marca textos teóricos. No todas pesan lo mismo, y muchas se leyeron por su resumen. La sexta parte incluye las lecturas de base que el deck sugiere para reforzar el modelo.
 
-## Parte 1 · Lo que murió
+## Parte 1 · Más que un mensaje
 
 - **F-21** · DellaVigna, S. & Linos, E. (2022). RCTs to Scale: Comprehensive Evidence From Two Nudge Units (Econometrica). Rigor: 🟢 A. — https://onlinelibrary.wiley.com/doi/10.3982/ECTA18709
 - **F-17** · Maier, M. et al. (2022). No evidence for nudging after adjusting for publication bias (PNAS). Rigor: 🟢 A. — https://www.pnas.org/doi/10.1073/pnas.2200300119
@@ -19,7 +19,7 @@
 - **F-971** · Hreha, J. (2021). The Death of Behavioral Economics (blog The Behavioral Scientist). Rigor: 🔴 E. — https://www.thebehavioralscientist.com/articles/the-death-of-behavioral-economics
 - **F-972** · Alexander, S. (Astral Codex Ten) (2021). On Hreha On Behavioral Economics. Rigor: 🔴 E. — https://www.astralcodexten.com/p/on-hreha-on-behavioral-economics
 
-## Parte 2 · Lo que vive
+## Parte 2 · Más que conducta
 
 - **F-896** · Shove, E. (2010). Beyond the ABC: Climate Change Policy and Theories of Social Change (Environment and Planning A 42(6):1273-1285, DOI 10.1068/a42282). Rigor: 🟢 A. — https://eprints.lancs.ac.uk/id/eprint/52976/
 - **F-897** · Hertwig, R. & Grüne-Yanoff, T. (2017). Nudging and Boosting: Steering or Empowering Good Decisions (Perspectives on Psychological Science 12(6):973-986). Rigor: 🟢 A. — https://pages.ucsd.edu/~mckenzie/Hertwig&Grune-Yanoff2017PerspectivesPsychSci.pdf
@@ -45,7 +45,7 @@
 - **F-911** · HM Treasury (vía Happier Lives Institute) (2021). Green Book — Wellbeing Supplementary Guidance (WELLBY). Rigor: 🔵 B. — https://www.happierlivesinstitute.org/the-wellby/
 - **F-912** · Hallsworth, M. (Behavioural Insights Team) (2023). A manifesto for applying behavioural science (Nature Human Behaviour; informe completo en bi.team). Rigor: 🟢 A. — https://www.bi.team/wp-content/uploads/2023/04/BIT_Manifesto.pdf
 
-## Parte 3 · Cómo vemos la conducta
+## Parte 3 · Más que un clic
 
 - **F-109** · Xu J, Powell-Jackson T, Mills A. Effectiveness of primary care gatekeeping: difference-in-differences evaluation of a pilot scheme in China. BMJ Global Health 2020;5(8):e002792. Rigor: 🟢 A. — https://pmc.ncbi.nlm.nih.gov/articles/PMC7430328/
 - **F-110** · Sripa P, Hayhoe B, Garg P, Majeed A, Greenfield G. Impact of GP gatekeeping on quality of care, and health outcomes, use, and expenditure: a systematic review. Br J Gen Pract. 2019;69(682):e294-e303. DOI 10.3399/bjgp19X702209. Rigor: 🟢 A. — https://pmc.ncbi.nlm.nih.gov/articles/PMC6478478/
@@ -60,22 +60,25 @@
 - **F-914** · Allcott, H. & Rogers, T. (2014). The Short-Run and Long-Run Effects of Behavioral Interventions: Experimental Evidence from Energy Conservation (American Economic Review 104(10):3003-3037). Rigor: 🟢 A. — https://www.nber.org/papers/18492
 - **F-947** · Maertens, R. et al. (2025). Experimentos longitudinales sobre la duración de la inoculación contra la desinformación (Nature Communications). Rigor: 🟢 A. — https://www.ox.ac.uk/news/2025-03-11-new-research-reveals-psychological-booster-shots-can-strengthen-resistance
 - **F-337** · Bruns, H. & Perino, G. (2023). The role of autonomy and reactance for nudging — Experimentally comparing defaults to recommendations and mandates (J. Behavioral and Experimental Economics). Rigor: 🟢 A. — https://www.sciencedirect.com/science/article/pii/S2214804323000733
+- **F-1028** · Parkinson, J. A.; Gould, A.; Knowles, N.; West, J. & Goodman, A. M. (2025). Integrating Systems Thinking and Behavioural Science (Behavioral Sciences 15(4):403, DOI 10.3390/bs15040403). Rigor: 🔵 B. — https://doi.org/10.3390/bs15040403
+
+## Parte 4 · Más que la persona
+
+- **F-1011** · CDC (Centros para el Control y la Prevención de Enfermedades de EE. UU.), a partir de Dahlberg, L. L. & Krug, E. G. (Informe mundial sobre la violencia y la salud, OMS, 2002) (2002 (página vigente)). The Social-Ecological Model: A Framework for Prevention. Rigor: 🔵 B. — https://cdc.gov/violence-prevention/about/index.html
+- SBS y APESEG — encuestas de percepción citadas en la investigación de seguros del equipo (`_nodes/seguros-comportamiento-mundo-peru.md`); sin ficha propia en el registro.
 - **F-884** · BC Civil Resolution Tribunal (Moffatt v. Air Canada; vía Law360 y prensa jurídica) (2024). Moffatt v. Air Canada, 2024 BCCRT 149. Rigor: 🔵 B. — https://www.law360.ca/ca/articles/1804075
 - **F-807** · Ho, Y.-J.; Liu, S.; Wang, L. (2023). Fun Shopping: A Randomized Field Experiment on Gamification (Inf. Syst. Res. 34(2):766-785; DOI 10.1287/isre.2022.1147). Rigor: 🟢 A. — https://pubsonline.informs.org/doi/fpi/10.1287/isre.2022.1147
 - **F-330** · Tran, Rose, Suzuki, Urech, Vashi (2023). Medical advice lines offering on-demand access to providers reduced emergency department visits (Health Affairs Scholar 1(6)). Rigor: 🟢 A. — https://academic.oup.com/healthaffairsscholar/article/1/6/qxad079/7459835
 - **F-346** · NPR, AARP, Fierce Healthcare, Healthcare Dive (cobertura convergente, con eco de cita entre notas especializadas) (2018-2019). Política de "ER evitable" de Anthem — backlash y reversión. Rigor: 🟡 C.
-- **F-1011** · CDC (Centros para el Control y la Prevención de Enfermedades de EE. UU.), a partir de Dahlberg, L. L. & Krug, E. G. (Informe mundial sobre la violencia y la salud, OMS, 2002) (2002 (página vigente)). The Social-Ecological Model: A Framework for Prevention. Rigor: 🔵 B. — https://cdc.gov/violence-prevention/about/index.html
-- **F-1028** · Parkinson, J. A.; Gould, A.; Knowles, N.; West, J. & Goodman, A. M. (2025). Integrating Systems Thinking and Behavioural Science (Behavioral Sciences 15(4):403, DOI 10.3390/bs15040403). Rigor: 🔵 B. — https://doi.org/10.3390/bs15040403
-- SBS y APESEG — encuestas de percepción citadas en la investigación de seguros del equipo (`_nodes/seguros-comportamiento-mundo-peru.md`); sin ficha propia en el registro.
-
-## Parte 4 · Lo que está en juego
-
 - **F-871** · METR & Redwood Research (2026). Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident (26-ago-2026). Rigor: 🟡 C. — https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
 - **F-847** · Kalai, A. T.; Nachum, O.; Vempala, S. & Zhang, E. (OpenAI / Georgia Tech) (2025). Why Language Models Hallucinate (arXiv 2509.04664). Rigor: 🟡 C. — https://arxiv.org/abs/2509.04664
 - **F-858** · Summerfield, C. et al. (UK AI Security Institute) (2025). Lessons from a Chimp: AI 'Scheming' and the Quest for Ape Language (arXiv 2507.03409). Rigor: 🔵 B. — https://arxiv.org/abs/2507.03409
 - **F-488** · Cheng, M.; Lee, C.; Khadpe, P.; Yu, S.; Han, D. & Jurafsky, D. (Stanford) (2026). Sycophantic AI decreases prosocial intentions and promotes dependence (Science 391(6792), 26-mar-2026; DOI 10.1126/science.aec8352; preprint arXiv 2510.01395). Rigor: 🟢 A. — https://www.science.org/doi/abs/10.1126/science.aec8352
 - **F-970** · Cherep, M. et al. (MIT), vía PsyPost (2026). AI Agents Are Sensitive to Nudges (PNAS 123(25), 15-jun-2026). Rigor: 🟢 A. — https://www.psypost.org/ai-models-are-far-more-susceptible-to-misleading-nudges-than-humans-study-shows/
 - **F-874** · Salvaggio, E. (Bulletin of the Atomic Scientists) (2026). Rogue AI didn't breach Hugging Face, human decisions did (11-sep-2026). Rigor: 🟠 D. — https://thebulletin.org/2026/09/rogue-ai-didnt-breach-hugging-face-human-decisions-did/
+
+## Parte 5 · Más que productos
+
 - **F-934** · Rittel, H. W. J. & Webber, M. M. (1973). Dilemmas in a general theory of planning (Policy Sciences 4(2):155-169). Rigor: 🟢 A. — https://realgoodcenter.jou.ufl.edu/theory/wicked-problems-challenges-that-defy-easy-solutions
 - **F-927** · Schelling, T. C. (1971). Dynamic models of segregation (Journal of Mathematical Sociology 1(2):143-186). Rigor: 🟢 A. — https://arxiv.org/pdf/0907.1777
 - **F-928** · Sterman, J. D. (1989). Modeling managerial behavior: Misperceptions of feedback in a dynamic decision making experiment (Management Science 35(3):321-339). Rigor: 🟢 A. — https://ideas.repec.org/a/inm/ormnsc/v35y1989i3p321-339.html
@@ -85,7 +88,7 @@
 - **F-932** · Reay, T. & Hinings, C. R. (2009). Managing the rivalry of competing institutional logics (Organization Studies 30(6):629-652). Rigor: 🟢 A. — https://biblos.hec.ca/biblio/libreacces/22244015AV.pdf
 - **F-933** · Meadows, D. H. (Sustainability Institute) (1999). Leverage Points: Places to Intervene in a System. Rigor: ⚪ Teórico. — https://en.wikipedia.org/wiki/Twelve_leverage_points
 
-## Parte 5 · Dónde lo probamos
+## Parte 6 · Más que el seguro
 
 - **F-1** · SBS (Superintendencia de Banca, Seguros y AFP) (2023). Estudio sobre Conocimiento y Percepción de la Demanda de Seguros. Rigor: 🔵 B. — https://www.sbs.gob.pe/Portals/4/jer/CIFRAS-ENCUESTA/2023/328-0922%20-%20Servicios%20de%20seguros%20-%20Informe%20de%20resultados.pdf
 - **F-507** · SBS (estadística oficial del Sistema de Seguros, setiembre 2025) (2025). Sistema de Seguros — Setiembre 2025 (SS-0003). Rigor: 🔵 B. — https://intranet2.sbs.gob.pe/estadistica/financiera/2025/Setiembre/SS-0003-se2025.PDF
@@ -109,7 +112,7 @@
 - **F-786** · SBS — Resolución SBS N.° 02260-2026 (vía El Peruano, LP Derecho, Infomercado) (2026). Reglamento de Seguros Paramétricos. Rigor: 🔵 B. — https://elperuano.pe/noticia/304594-sbs-aprueba-reglamento-de-seguros-parametricos-para-su-funcionamiento-en-el-mercado-peruano · https://lpderecho.pe/reglamento-de-seguros-parametricos-resolucion-sbs-02260-2026/
 - **F-793** · Pople, A.; Hill, R.; Dercon, S.; Brunckhorst, B. (CSAE, Oxford; evaluación del PMA) (2021). Anticipatory Cash Transfers in Climate Disaster Response. Rigor: 🔵 B. — https://www.csae.ox.ac.uk/node/2132846 · https://voxdev.org/node/74661
 
-## Parte 6 · El rol que viene
+## Parte 7 · Lo que somos
 
 - **F-901** · Swiss Re (2026). Behavioural science helps improve the way insurers connect with customers (Behavioural Research Unit, L&H). Rigor: 🟡 C. — https://www.swissre.com/reinsurance/life-and-health/solutions/behavioural-economics.html
 - **F-902** · RGA (2026). Behavioral Science (Knowledge Center). Rigor: 🟡 C. — https://www.rgare.com/knowledge-center/article/behavioural-economics-and-insurance
