@@ -38,6 +38,9 @@ se pierde.
 | **Indexado en** | `CLAUDE.md` (mapa de archivos). |
 | **Se consulta con** | skill `/codice` (`.claude/skills/codice/`) — `cronista` escribe/registra, `codice` muestra y responde consultas sobre lo ya registrado. |
 
+**Fuera de alcance:** las fuentes de las crónicas paranormales (`/aquelarre`) no van aquí;
+van al grimorio (`cronicas/grimorio.md`, skill `/grimorio`).
+
 Si el archivo no existe, **créalo** con la cabecera, la rúbrica de rigurosidad y la
 tabla vacía (ver *Plantilla del ledger* abajo) antes de añadir la primera entrada.
 Nunca disperses fuentes en otros archivos: el ledger es la fuente única de verdad.
