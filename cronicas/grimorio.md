@@ -28,7 +28,7 @@
 | Expediente | IDs |
 |---|---|
 | `expedientes/mother-shipton.md` | G-1 a G-27 |
-| `expedientes/liberaciones-archivos-ovni-eeuu.md` | G-28 a G-53 |
+| `expedientes/liberaciones-archivos-ovni-eeuu.md` | G-28 a G-55 |
 
 ## Fuentes registradas
 | ID | Autor | Año | Fuente / Título | Pista | Rigor | Cercanía | Resumen breve | Caso / expediente | URL / referencia | Registrado |
@@ -86,3 +86,5 @@
 | G-51 | NPR | 2023 | "U.S. recovered non-human 'biologics' from UFO crash sites, former intel official says" (27 jul. 2023) | 🗣️ voces | 🟠 D — prensa | P4 (para lo que Grusch afirma) | Audiencia del 26 jul. 2023 con Grusch, Graves y Fravor; Grusch habla de 'biológicos no humanos' pero admite que no los vio y que lo sabe por terceros. | liberaciones-archivos-ovni-eeuu | https://www.npr.org/2023/07/27/1190390376/ufo-uap-hearing-congress-takeaways | 2026-10-24 |
 | G-52 | West, Mick (Metabunk) | 2020 | Análisis de los videos Gimbal y GoFast | 🔬 escéptica | 🟡 C — análisis técnico reproducible sin revisión por pares; hay críticos técnicos | — | Gimbal: la rotación es artefacto del soporte de la cámara y el halo es el brillo infrarrojo de los motores. GoFast: la velocidad aparente es paralaje; probablemente un globo. | liberaciones-archivos-ovni-eeuu | https://metabunk.org/goto/post?id=238880 | 2026-10-24 |
 | G-53 | Archivo Nacional de EE. UU. · Fuerza Aérea de EE. UU. | s.f. | Project BLUE BOOK – Unidentified Flying Objects (guía de registros y hoja informativa) | 📜 archivo | 🔵 B — archivo y organismo oficial | P1 | 1948-1969: 12.618 avistamientos investigados, 701 sin explicar; cierre el 17 dic. 1969 apoyado en el Informe Condon; registros en el Archivo Nacional desde 1976. | liberaciones-archivos-ovni-eeuu | https://www.archives.gov/research/military/air-force/ufos | 2026-10-24 |
+| G-54 | Migflug (Afterburner) | 2026 | "The Nimitz Tic Tac: What the Navy Aircrew Actually Reported" | 🗣️ voces · 🔬 escéptica | 🟠 D — divulgación especializada en aviación que cita a terceros | P4 | AARO sigue listando FLIR1 como no resuelto, sin informe de cierre; resume el análisis cuadro a cuadro de Mick West (la aceleración final se debe al zoom) y el argumento del primer director de AARO sobre el error sin datos de distancia. | liberaciones-archivos-ovni-eeuu | https://migflug.com/afterburner/nimitz-tic-tac-2004-uap-evidence-fravor-underwood/ | 2026-10-24 |
+| G-55 | Metabunk (hilo de foro) | s.f. | "2004 USS Nimitz Tic Tac UFO FLIR footage (FLIR1)" | 🔬 escéptica | 🔴 E — discusión de foro, sin método único | — | Cuestiona las estimaciones de tamaño y distancia; según el relato de los pilotos, el radar no logró fijar el blanco. | liberaciones-archivos-ovni-eeuu | https://www.metabunk.org/goto/post?id=217220 | 2026-10-24 |

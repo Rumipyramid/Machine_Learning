@@ -4,7 +4,7 @@
 > **Versión:** v1.0 · **Abierto:** 2026-10-24 · **Actualizado:** 2026-10-24
 > **Tipo:** corpus de documentos oficiales sobre ovnis (hoy "fenómenos anómalos no identificados", UAP por su sigla en inglés) y programas psíquicos; no es un caso único
 > **Lugar y época:** Estados Unidos; del cierre del Proyecto Libro Azul (1969) al programa PURSUE (2026, en curso)
-> **Fuentes:** `cronicas/grimorio.md` (G-28 a G-53)
+> **Fuentes:** `cronicas/grimorio.md` (G-28 a G-55)
 > ⚠️ **Límites de esta versión:**
 > - La herramienta de lectura web no pudo abrir ningún documento: war.gov, Wikipedia y los archivos oficiales están bloqueados en este entorno. Todo sale de resúmenes de búsqueda que citan esas fuentes.
 > - El programa PURSUE es posterior al conocimiento de base del asistente (junio de 2026). Lo que se dice de él viene solo de la búsqueda web de hoy.
@@ -109,6 +109,26 @@ No se pudo medir la reacción en Reddit ni en TikTok: la búsqueda no llegó.
 
 **Búsqueda adversarial:** se buscó a propósito algún documento liberado que respalde un origen no humano con datos de sensor completos. No apareció en la cobertura de las siete entregas. Se buscó también lo contrario: casos que el escepticismo no logre cerrar. Existen (el triángulo de octubre, la foto del Apolo 17 que el Pentágono dice estar reanalizando con la película original), pero quedan abiertos por falta de datos, no por anomalías probadas.
 
+## 5.1 El caso más verosímil del corpus (2026-10-24)
+
+"Verosímil" aquí significa el caso más difícil de cerrar con lo que se sabe, no el que prueba algo extraterrestre. Hay cuatro criterios: varios testigos independientes, datos de sensor, testigos con formación y ninguna explicación natural que encaje.
+
+**El ganador es el incidente del portaaviones Nimitz (14 nov. 2004), el del video FLIR1 o "Tic Tac".** Es el único que junta tres cosas: testigos directos identificados (el piloto David Fravor hizo el contacto visual principal), registro de radar y un video infrarrojo grabado ese mismo día. La oficina del Pentágono para estos casos (AARO) todavía lo tiene entre los no resueltos y nunca publicó un informe de cierre, a diferencia de otro de los videos de 2020 (G-54).
+
+**Lo que lo debilita:**
+- El video no prueba lo que cuentan los testigos. El analista Mick West muestra que la "aceleración" final es un efecto del zoom, que duplica de golpe un desplazamiento lento que ya existía (G-54, G-55).
+- Sin datos de distancia, la velocidad calculada tiene un error enorme. Lo sostiene también el primer director de AARO, en un trabajo sin revisión por pares.
+- Según el relato de los propios pilotos, el radar no logró fijar el blanco (G-55).
+- Los datos de radar nunca se publicaron completos.
+
+**Los demás, de más a menos verosímil:**
+1. El triángulo negro de la entrega 7 (2026): testigos federales y un dato llamativo (sin firma térmica), pero un solo documento, sin imágenes ni datos de sensor publicados.
+2. "Gimbal" y "GoFast": tienen datos de sensor, pero también explicaciones ópticas probables.
+3. La foto del Apolo 17: pública desde 1973, con explicación probable de artefacto de imagen.
+4. Los "biológicos no humanos": testimonio de segunda mano, sin ningún documento.
+
+**Estado del caso Nimitz:** 🌀 abierto. Que esté abierto no prueba lo extraordinario: significa que falta el dato que lo cerraría, el registro de radar completo.
+
 ## 6. Síntesis
 
 Las tres pistas convergen en lo factual y divergen en lo social.
@@ -143,4 +163,5 @@ Hay un segundo hilo: el Estado como productor de lo paranormal. Pagó videntes d
 
 ## 9. Bitácora
 
+- 2026-10-24: §5.1, el caso más verosímil (Nimitz 2004); fuentes G-54 y G-55.
 - 2026-10-24: v1.0, apertura con `/aquelarre`, un día después de la entrega 7. 26 fuentes registradas (G-28 a G-53).
