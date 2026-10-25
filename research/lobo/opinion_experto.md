@@ -6048,6 +6048,27 @@ F-807 (Ho, Liu y Wang, *Information Systems Research* 34(2), 2023). Experimento 
 - **Leído a fondo:** 2026-10-24 (`WebSearch`; resumen oficial y fichas de repositorio; lectura débil, declarada)
 - **Conexión razonada, no forzada:** apoya la tesis 28 (el programa bien diseñado mueve más que el juego) con un matiz: el juego sí dura más que el cupón. No cambia su confianza (un contexto, sin prueba en LatAm).
 
+### 235. Un fenómeno robusto y bien explicado en el laboratorio no dice nada sobre el negocio: el Stroop es la prueba de que el efecto real puede ser inútil
+F-687 (MacLeod, *Psychological Bulletin* 109(2), 1991). Revisión integradora de unos 400 estudios en 50 años sobre el efecto Stroop (leer la palabra interfiere con nombrar el color de la tinta). El autor aísla un conjunto de hallazgos confiables, que según el resumen son 18 (el conteo no pude confirmarlo en el texto completo), que cualquier teoría debe explicar. Concluye que las dos teorías clásicas (velocidad relativa y automaticidad de la lectura) se quedan cortas y favorece modelos de procesamiento en paralelo. Es una revisión sin meta-análisis cuantitativo.
+**Heurística:** que un efecto sea de los más replicados de la psicología no lo vuelve palanca de venta. Antes de usarlo, preguntar qué decisión del cliente cambia y cuánto. Un efecto sólido sobre milisegundos de reacción no equivale a un efecto sobre contratar o renovar.
+- **Fuente:** F-687 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-25 (`WebSearch`; resumen oficial e índices; lectura débil, declarada)
+- **Conexión razonada, no forzada:** complementa la entrada 225 (la replicabilidad vive en el efecto) y la 206 (efecto universal no es palanca de venta). Ninguna tesis cambia de confianza.
+
+### 236. Las correspondencias entre sentidos (agudo = pequeño y brillante) ayudan al cerebro a unir señales, pero son un argumento sobre percepción, no sobre diseño de marca
+F-677 (Spence, *Attention, Perception, & Psychophysics* 73(4), 2011). Revisión tutorial: las personas emparejan de forma consistente rasgos de sentidos distintos, por ejemplo tono agudo con objeto pequeño, brillante y alto en el espacio. Spence propone que estas correspondencias son una restricción más, junto con la coincidencia semántica y la espacio-temporal, para decidir qué señales pertenecen al mismo objeto. No es un estudio con datos propios, y la búsqueda no me devolvió su sección aplicada; no afirmo nada sobre marketing a partir de esta lectura.
+**Heurística:** cuando una revisión sintetiza laboratorio, esperar que la traducción a empaque, sonido o color de marca sea una hipótesis por probar, no un resultado. Pedir la prueba A/B con clientes reales antes de rediseñar.
+- **Fuente:** F-677 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-25 (`WebSearch`; ficha del editor y repositorio de Oxford; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la entrada 206 (bouba/kiki). Sin cambio de tesis.
+
+### 237. La sequía se asocia a más violencia de pareja: un choque climático es también un choque de hogar, y el seguro que lo ignora lo mide a medias
+F-758 (Epstein, Bendavid, Nash, Charlebois y Weiser, *PLOS Medicine* 17(3), 2020). Estudio poblacional con 19 encuestas DHS (2011-2018) y 83.990 mujeres de 15 a 49 años en 19 países de África subsahariana. La sequía del año previo a la encuesta se asocia a más violencia física en mujeres adultas y adolescentes y a más violencia sexual en adultas, con asociaciones más fuertes entre adolescentes y mujeres sin empleo, y variables entre países. Los cálculos exactos del ledger (+3,0 pp de pareja controladora y +0,8 pp de violencia física) no pude cotejarlos en las notas que leí. Mide sequía, no El Niño, y es asociacional.
+**Heurística:** un choque climático golpea primero al hogar con menos colchón y reparte el daño de forma desigual dentro de él. Al diseñar cobertura o ayuda posterior, segmentar por quién queda más expuesto (jóvenes, sin empleo) y no solo por zona afectada.
+- **Fuente:** F-758 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-25 (`WebSearch`; resumen de la revista; lectura débil, declarada)
+- **Conexión razonada, no forzada:** se suma a la entrada 231 (choque temprano que daña por ingreso) y a la tesis 26 sin subir su confianza: es África, sequía y no El Niño en Perú. No genera oportunidad de producto por sí sola.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6244,44 +6265,8 @@ F-807 (Ho, Liu y Wang, *Information Systems Research* 34(2), 2023). Experimento 
 - **2026-09-22** — *(Detalle podado y fusionado al resumen el 2026-10-23)*: corrida diaria de refinamiento; sin cambios de confianza.
 
 - **2026-09-23** — *(Detalle podado y fusionado al resumen el 2026-10-24)*: corrida diaria de refinamiento; subió la confianza de la tesis 3 de Media a Alta (F-7) y sumó las intuiciones 139 a 141.
-- **2026-09-24** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, working tree limpio, sin cambios pendientes de la corrida de ayer) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 24 corridas, **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo tercer día seguido
-  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
-  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso —
-  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina
-  de `cronista`, no de este proceso diario; ya lleva cuarenta y tres días sin correr). **Poda de
-  bitácora:** el bloque "2026-08-25" salió por completo de la ventana de ~30 días (cutoff ≈2026-08-25)
-  — lo fusioné con el bloque "2026-08-01 a 2026-08-24" en un resumen ampliado "2026-08-01 a 2026-08-25";
-  no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive en sus propias
-  secciones con fecha. **La rutina diaria de intuición sí pudo correr hoy, con el nivel 🔵B todavía en
-  curso:** recalculé por script el universo 🔵B del ledger con el filtro estricto (fila cuya rigurosidad
-  *empieza* con 🔵B, sin contar filas mixtas como F-333): **79 filas** — contra
-  `fuentes_leidas_lobo.md` (8 ya leídas de este nivel tras las corridas de los tres días previos: F-104,
-  F-32, F-359, F-37, F-194, F-7, F-256, F-309) — **71 pendientes** — y elegí 3 al azar sin reemplazo
-  (Python `random.shuffle`, sin semilla fija): F-285, F-308 y F-132. Las tres bloqueadas por el proxy en
-  su URL directa (arxiv.org, bls.gov, media.ca11.uscourts.gov); `WebSearch` sí funcionó y permitió
-  reconstruir detalle nuevo en las tres vía cobertura convergente (abstract propio de arXiv + espejo en
-  unrulyabstractions.com para F-285, página oficial del BLS + cobertura del WEF *Future of Jobs Report
-  2025* para F-308, Justia/Wiley Law/Womble Bond Dickinson/Venable/Kelley Drye/Reed Smith/Consumer
-  Finance Insights para F-132), no solo el resumen de una línea ya citado. Sumé las entradas 142, 143 y
-  144 de Intuición acumulada: (142) F-132 trae el detalle de que la corte anuló dos restricciones a la
-  vez (one-to-one y "lógica y temáticamente relacionadas") y que la FCC ya derogó formalmente la regla
-  en sept. 2025 — un fallo que "vacates" una norma no cierra el riesgo regulatorio por sí solo, solo la
-  derogación posterior lo hace; sin conexión a tesis 8 (Perú/INDECOPI, jurisdicción y dirección
-  distintas); (143) F-285 resultó ser, leído a fondo, un paper de seguridad/ética de IA sobre diversidad
-  epistémica y daño a comunidades minorizadas — no un estudio sobre estética de diseño, pese a que el
-  node lo cita solo por su mecanismo técnico de *mode collapse*; señala una cita aplicada fuera de marco
-  que el node de diseño debería revisar; (144) F-308 confirma la cifra ya citada del BLS y agrega una
-  segunda señal convergente e independiente (WEF *Future of Jobs Report 2025*, 11° rol de más rápida
-  caída global, primera aparición en esa lista) que sugiere aceleración, no solo confirmación, del
-  mismo patrón que ya reforzaba tesis 21 vía F-309. Ninguna tesis de negocio cambió de confianza
-  numérica por esta corrida — es el mecanismo paralelo de intuición, aunque las tres entradas de hoy
-  matizan la trazabilidad de dos citas del node de diseño/innovación (F-285) y refuerzan tesis 21.
-  Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días
-  de historial (2026-08-26 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.
+- **2026-09-24** — *(Detalle podado y fusionado al resumen el 2026-10-25)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio; sumó las intuiciones 142 y 143 y verificó el ledger por conteo directo.
+
 - **2026-09-25** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward limpio de la corrida de ayer) y verifiqué `research/fuentes/codice.md` por conteo
   directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto que las
@@ -6594,3 +6579,5 @@ F-807 (Ho, Liu y Wang, *Information Systems Research* 34(2), 2023). Experimento 
 - **2026-10-23** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 121 pendientes → 118 tras hoy):** sorteo F-648, F-650 y F-746, leídas vía `WebSearch` (resúmenes, reseñas y notas de prensa; lectura débil, declarada). Entradas 229 (la conformidad varía con cultura y época), 230 (Milgram: guion improvisado y réplica que llega solo a 150 V) y 231 (el choque temprano daña por ingreso y dieta; la transferencia no lo reparó). Pendiente para `cronista`: confirmar el año de publicación de F-746 (2022 no verificado) y que F-648 no recoge la tendencia temporal. Poda: 09-22 fusionado al resumen; Bitácora cubre 2026-09-23 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-24** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 118 pendientes → 115 tras hoy):** sorteo F-659, F-586 y F-807, leídas vía `WebSearch` (resúmenes oficiales y reseñas; lectura débil, declarada). Entradas 232 (el efecto espectador se atenúa con peligro claro, agresor o costo físico), 233 (un diálogo con IA bajó ~20% la creencia conspirativa durante dos meses: capacidad neutra, decide la exactitud) y 234 (la gamificación rinde menos que el cupón en el pico pero deja efecto al retirarla; matiz a la tesis 28). Pendiente para `cronista`: F-659 no recoge el subgrupo de emergencias peligrosas; F-586, cómo se verificó la exactitud de los argumentos de la IA. Poda: 09-23 fusionado al resumen; Bitácora cubre 2026-09-24 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-25** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-20 por commit; sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 115 pendientes → 112 tras hoy):** sorteo F-687, F-677 y F-758, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 235 (el Stroop es sólido en laboratorio y no por eso una palanca de negocio), 236 (las correspondencias entre sentidos son hipótesis de diseño, no resultado) y 237 (la sequía se asocia a más violencia de pareja, sobre todo en adolescentes y mujeres sin empleo). Pendiente para `cronista`: confirmar en el texto completo el conteo de 18 hallazgos de F-687 y las cifras en puntos porcentuales de F-758. Poda: 09-24 fusionado al resumen; Bitácora cubre 2026-09-25 a hoy. `fuentes_leidas_lobo.md` actualizado.

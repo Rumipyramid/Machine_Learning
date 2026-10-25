@@ -252,3 +252,6 @@
 | F-659 | 🟢 A | 2026-10-24 | Intuición 232 — efecto espectador: g = −0,35 que se atenúa con peligro claro, agresor o costo físico; ubicar el caso en sus condiciones (resumen y reseñas; lectura débil) |
 | F-586 | 🟢 A | 2026-10-24 | Intuición 233 — diálogo con IA: −20% de creencia conspirativa, sostenido 2 meses; capacidad neutra, decide la exactitud (resumen; lectura débil) |
 | F-807 | 🟢 A | 2026-10-24 | Intuición 234 — gamificación vs. cupón: menos en el pico, más rastro al retirar; medir lo que queda (resumen; lectura débil) |
+| F-687 | 🟢 A | 2026-10-25 | Intuición 235 — el Stroop es un efecto robusto, pero robusto no es útil: preguntar qué decisión del cliente cambia (lectura débil) |
+| F-677 | 🟢 A | 2026-10-25 | Intuición 236 — correspondencias entre sentidos: hipótesis de diseño por probar con clientes reales (lectura débil) |
+| F-758 | 🟢 A | 2026-10-25 | Intuición 237 — sequía y violencia de pareja: el choque climático es choque de hogar; segmentar por quién queda más expuesto (lectura débil) |
