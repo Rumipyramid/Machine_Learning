@@ -18,6 +18,7 @@
 | 2026-10-25 | recuperacion | lectura profunda 52% + cifras de seguros verificadas | nodo correcto 100% · fuente clave 100% |
 | 2026-10-25 | recuperacion | nivel 6: lectura 60%, fichas corregidas | nodo correcto 100% · fuente clave 100% |
 | 2026-10-25 | recuperacion | pensar en dos pasos (plan + redacción) | nodo correcto 100% · fuente clave 100% |
+| 2026-10-25 | respuestas | pensar en dos pasos (plan + redacción) | puntaje medio 98 · 0 con fuentes inventadas · 0 con afirmaciones prohibidas · 3 con respaldo firme |
 
 ## Última corrida de recuperacion (2026-10-25)
 
@@ -51,18 +52,18 @@
 | Q01 | 100 | 4/4 | parcial | — |
 | Q02 | 100 | 3/3 | parcial | — |
 | Q03 | 100 | 2/2 | parcial | — |
-| Q04 | 83 | 2/3 | firme | faltan: (default/predetermin/preselecc) |
+| Q04 | 100 | 3/3 | firme | — |
 | Q05 | 100 | 3/3 | parcial | — |
 | Q06 | 100 | 2/2 | parcial | — |
 | Q07 | 100 | 3/3 | parcial | — |
 | Q08 | 100 | 1/1 | parcial | — |
-| Q09 | 100 | 2/2 | parcial | — |
-| Q10 | 100 | 2/2 | firme | — |
+| Q09 | 100 | 2/2 | firme | — |
+| Q10 | 75 | 1/2 | firme | faltan: (orch/penrose/hameroff) |
 | Q11 | 100 | 3/3 | parcial | — |
 | Q12 | 100 | 2/2 | parcial | — |
-| Q13 | 60 | 1/2 | parcial | faltan: (sesgo/homogene/varianza/promedio) |
+| Q13 | 100 | 2/2 | parcial | — |
 | Q14 | 100 | 2/2 | parcial | — |
-| Q15 | 75 | 1/2 | parcial | faltan: (seleccion/autoseleccion/correlaci/causal) |
+| Q15 | 100 | 2/2 | parcial | — |
 | Q16 | 75 | 1/2 | parcial | faltan: (confianza/desconfianza/datos) |
 | Q17 | 100 | 1/1 | parcial | — |
 | Q18 | 100 | 2/2 | parcial | — |
