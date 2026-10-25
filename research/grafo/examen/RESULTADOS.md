@@ -17,6 +17,7 @@
 | 2026-10-25 | recuperacion | sinónimos (LLM, sintéticos) + peso por solidez | nodo correcto 100% · fuente clave 100% |
 | 2026-10-25 | recuperacion | lectura profunda 52% + cifras de seguros verificadas | nodo correcto 100% · fuente clave 100% |
 | 2026-10-25 | recuperacion | nivel 6: lectura 60%, fichas corregidas | nodo correcto 100% · fuente clave 100% |
+| 2026-10-25 | recuperacion | pensar en dos pasos (plan + redacción) | nodo correcto 100% · fuente clave 100% |
 
 ## Última corrida de recuperacion (2026-10-25)
 

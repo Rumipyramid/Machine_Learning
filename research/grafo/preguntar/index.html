@@ -336,6 +336,53 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     return `EXTRACTOS DE LOS NODOS DE MU:\n${n || "(ninguno coincide)"}\n\nFICHAS DEL REGISTRO DE FUENTES (código | autor | año | título | rigor | resumen):\n${f || "(ninguna coincide)"}\n\nCONTRADICCIONES DEL GRAFO QUE TOCAN LA PREGUNTA (fuente | afirmación | relación | afirmación | estado):\n${tn || "(ninguna)"}\n\nHIPÓTESIS DEL TABLERO RELACIONADAS (código, estado y evidencia):\n${hy || "(ninguna)"}\n\nRELACIONES DEL GRAFO QUE TOCAN LA PREGUNTA (qué aumenta, reduce o explica qué, según cada fuente; entre paréntesis, si es causal, observacional o descriptiva):\n${rl || "(ninguna)"}\n\nCONVERGENCIAS (un mismo resultado que varias fuentes distintas explican o mueven):\n${cv || "(ninguna)"}`;
   }
 
+  // Paso 1 de 2: pensar. Una llamada en el nivel de más razonamiento arma un plan que no se muestra; el paso 2 lo redacta.
+  // Separar pensar de escribir evita que un borrador visible se coma el largo de la respuesta.
+  const PLANIFICAR = (ctx, q, previa) => `Eres el razonamiento interno de Mu, el segundo cerebro de un equipo de diseño estratégico que trabaja en seguros, diseño, conducta humano-IA y Perú. Todavía no escribes la respuesta: decides qué se puede sostener y cómo se razona. Usa SOLO lo que está en los extractos; no agregues conocimiento externo.
+
+${ctx}
+
+${previa ? `PREGUNTA ANTERIOR DE LA CONVERSACIÓN: ${previa}\n` : ""}PREGUNTA: ${q}
+
+Piensa así:
+1. Tipo de pregunta: "dato" (qué dice la evidencia sobre algo), "mecanismo" (por qué pasa), "comparacion", "prioridad" (qué importa más, qué es lo más relevante), "decision" (qué conviene hacer) o "fuera_de_alcance".
+2. Criterio: con qué vara se responde. En prioridad o decisión, defínelo pensando en quien pregunta (un equipo de diseño estratégico en seguros en Perú): por ejemplo, efecto medido × aplicabilidad a seguros en Perú × urgencia. No reemplaces la pregunta por otra más fácil (por ejemplo, "lo más relevante" no es lo mismo que "lo mejor medido").
+3. Afirmaciones candidatas: de 2 a 5, ordenadas por peso según el criterio. Cada una con los códigos de fuente que la sostienen, tal como aparecen en los extractos, y su solidez. No generalices más allá de lo que mide la fuente: di el alcance (dónde, en quién).
+4. Choques: dónde las fuentes se contradicen o una afirmación depende de una cifra sin verificar.
+5. Hilo: el mecanismo o la idea común que conecta las afirmaciones, si existe; usa las relaciones y convergencias del grafo. Si no hay hilo, déjalo vacío: no lo inventes.
+6. Descarta lo que llegó en los extractos pero no sirve para esta pregunta o este equipo.
+7. Conclusión: la respuesta directa en 1 o 2 frases, tan firme como la evidencia permite, ni más ni menos.
+8. Implicación: qué significa para el equipo (qué hacer, qué evitar o qué medir).
+
+Devuelve SOLO un objeto JSON con estas claves:
+{"tipo": "...", "criterio": "...", "afirmaciones": [{"idea": "afirmación completa", "fuentes": ["F-n"], "solidez": "dato verificado | lectura de resumen | inferencia | no verificado", "alcance": "dónde y en quién vale", "por_que_importa": "por qué pesa según el criterio"}], "choques": ["..."], "hilo": "...", "descartado": ["qué y por qué"], "conclusion": "...", "implicacion": "...", "no_sabe": "qué falta para responder mejor"}`;
+
+  // Valida el plan antes de usarlo: fuera códigos que no existen; sin fuente válida, la afirmación pasa a inferencia.
+  function planTexto(p) {
+    if (!p || typeof p !== "object" || !Array.isArray(p.afirmaciones)) return "";
+    const S = x => String(x ?? "").replace(/\s+/g, " ").trim().slice(0, 600);
+    const afs = p.afirmaciones.slice(0, 5).map((a, i) => {
+      const fs = (Array.isArray(a?.fuentes) ? a.fuentes : []).map(f => String(f).toUpperCase().replace(/^F-?\s?/, "F-")).filter(f => FUENTES.has(f));
+      const sol = fs.length ? S(a?.solidez) : "inferencia (sin fuente válida en el registro)";
+      return `${i + 1}. ${S(a?.idea)} | fuentes: ${fs.length ? fs.map(f => `[${f}]`).join(" ") : "ninguna"} | solidez: ${sol} | alcance: ${S(a?.alcance)} | por qué pesa: ${S(a?.por_que_importa)}`;
+    }).filter(l => l.length > 20);
+    if (!afs.length) return "";
+    const lista = xs => (Array.isArray(xs) ? xs : []).map(S).filter(Boolean).slice(0, 5).map(x => `- ${x}`).join("\n") || "- (ninguno)";
+    return `PLAN DE RAZONAMIENTO (lo hizo Mu antes de escribir; no lo muestres ni lo menciones, redáctalo):
+Tipo de pregunta: ${S(p.tipo)}
+Criterio: ${S(p.criterio)}
+Conclusión: ${S(p.conclusion)}
+Afirmaciones, en orden de peso:
+${afs.join("\n")}
+Hilo que las conecta: ${S(p.hilo) || "(ninguno)"}
+Choques y cifras sin verificar:
+${lista(p.choques)}
+Descartado por no servir a esta pregunta:
+${lista(p.descartado)}
+Implicación para el equipo: ${S(p.implicacion)}
+Lo que falta saber: ${S(p.no_sabe)}`;
+  }
+
   const RULES = (estado) => `Eres Mu, el segundo cerebro de investigación de un equipo de diseño estratégico que trabaja en seguros, diseño, conducta humano-IA y Perú. Respondes preguntas SOLO con lo que está guardado en tus nodos y en tu registro de fuentes, que te llegan como extractos en cada mensaje${toolsOk ? " y que puedes ampliar con las herramientas buscar_en_mu y leer_fuente si los extractos no bastan" : ""}.
 
 Reglas:
@@ -353,6 +400,7 @@ Reglas:
 8. Si la pregunta no es sobre lo que Mu investiga, dilo en una frase y ofrece qué sí puede responder.
 10. "Diseño" es una disciplina global, no solo diseño digital: incluye servicios, políticas e intervenciones públicas, salud, comunicación y marca, diseño estratégico y organizacional, producto físico, espacios, sostenibilidad y diseño social. Si la pregunta dice "diseño" sin precisar, no la reduzcas a producto digital: responde con los dominios que tienen evidencia en los extractos y di en una frase cuáles no cubre el cerebro.
 9. Usa las relaciones y las convergencias del grafo para explicar por qué ocurre algo (el mecanismo) y para decir cuándo varias fuentes distintas apuntan a lo mismo: una conclusión que sostienen varias fuentes independientes pesa más que una sola, y debes decirlo. Si una pieza de lo que recibes no toca la pregunta, ignórala.
+11. Si recibes un PLAN DE RAZONAMIENTO, la respuesta lo redacta y no lo contradice: la primera frase dice su conclusión; si la pregunta es de prioridad o de decisión, la apertura dice también el criterio con que se ordena; los puntos siguen el orden de sus afirmaciones y cada uno dice por qué pesa para la pregunta, no solo qué encontró la fuente; si el plan trae un hilo, dilo en una frase que conecte los puntos; cierra con la implicación para el equipo antes de "Lo que Mu no sabe". No agregues afirmaciones que el plan descartó ni des como dato verificado lo que el plan marca como inferencia o no verificado. En ese caso el largo puede llegar a 350 palabras.
 
 ${REDACCION}
 
@@ -968,12 +1016,20 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
     if (!sampleChecked) { try { sample = await window.claude?.use?.("sample"); } catch { sample = null; } sampleChecked = true; try { toolsOk = !!(sample && (await sample.limits()).tools); } catch { toolsOk = false; } }
     if (!sample) { offline(entry, r, "Para que Mu redacte una respuesta, abre esta página en claude.ai con tu sesión iniciada."); return; }
     const estado = (CORPUS.estado.lineas || []).join(" / ");
-    const msg = `${contextBlock(r)}\n\nPREGUNTA: ${q}`;
+    const ctx = contextBlock(r);
+    ctl = new AbortController(); go.disabled = true; stop.hidden = false; hint.textContent = "Mu está pensando (paso 1 de 2: razonar). Puede tardar entre 20 y 90 segundos.";
+    entry.body.innerHTML = '<p class="think">Pensando</p>';
+    // Paso 1: el plan. Si falla, Mu responde igual, sin plan (como antes).
+    let plan = "";
+    try {
+      const anterior = turns.filter(t => t.role === "user").slice(-1).map(t => t.q).join(" ");
+      plan = planTexto(await sample.json(PLANIFICAR(ctx, q, anterior), { modelTier: "complex", cache: false, signal: ctl.signal }));
+    } catch (e) { if (e?.code === "cancelled") { entry.body.innerHTML = "<p><i>Detenida.</i></p>"; go.disabled = false; stop.hidden = true; ctl = null; hint.textContent = "Mu busca en sus nodos y en su registro de fuentes antes de responder."; return; } }
+    hint.textContent = plan ? "Mu está redactando (paso 2 de 2)." : "Mu está redactando.";
+    const msg = `${ctx}\n\n${plan ? plan + "\n\n" : ""}PREGUNTA: ${q}`;
     const input = [{ role: "user", content: RULES(estado) }];
     for (const t of turns.slice(-6)) input.push({ role: t.role, content: t.content });
     input.push({ role: "user", content: msg });
-    ctl = new AbortController(); go.disabled = true; stop.hidden = false; hint.textContent = "Mu está pensando. Puede tardar entre 10 y 60 segundos.";
-    entry.body.innerHTML = '<p class="think">Pensando</p>';
     const tools = herramientas(entry, r);
     try {
       const opts = { signal: ctl.signal, onText: ({ text }) => { entry.body.innerHTML = md(text); } };

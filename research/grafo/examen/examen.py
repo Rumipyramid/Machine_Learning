@@ -54,7 +54,8 @@ def recuperar(a):
     filas, ok_n, ok_f, tot_f = [], 0, 0, 0
     for q in qs:
         r = res.get(q["id"], {})
-        (H / "prompts" / f"{q['id']}.txt").write_text(r.get("prompt", ""), encoding="utf-8")
+        (H / "prompts" / f"{q['id']}.txt").write_text(marcar_plan(r.get("prompt", "")), encoding="utf-8")
+        (H / "prompts" / f"{q['id']}_plan.txt").write_text(r.get("plan_prompt", ""), encoding="utf-8")
         aceptables = q["nodo"] if isinstance(q["nodo"], list) else [q["nodo"]]
         nodo_ok = q["nodo"] is None or any(n in r.get("nodos", []) for n in aceptables)
         fu = set(q["fuentes"])
@@ -71,6 +72,68 @@ def recuperar(a):
     for f in filas:
         if not f["nodo_ok"] or f["fuentes_ok"] is False:
             print(" ✗", f["id"], "nodos:", ", ".join(f["nodos"]), "· fuentes clave:", f["fuentes_clave_recuperadas"] or "ninguna")
+
+
+PLAN_RE = re.compile(r"PLAN DE RAZONAMIENTO.*?Lo que falta saber: [^\n]*\n*", re.S)
+
+
+def marcar_plan(prompt):
+    """Reemplaza el plan marcador del simulacro por <<PLAN>>; `armar` pone ahí el plan real."""
+    try:
+        turnos = json.loads(prompt)
+    except Exception:
+        return PLAN_RE.sub("<<PLAN>>\n\n", prompt)
+    for t in turnos:
+        if isinstance(t, dict) and isinstance(t.get("content"), str):
+            t["content"] = PLAN_RE.sub("<<PLAN>>\n\n", t["content"])
+    return json.dumps(turnos, ensure_ascii=False)
+
+
+def plan_texto(p, ledger):
+    """Mismo formato y validación que planTexto() de la página: fuera códigos inexistentes."""
+    if not isinstance(p, dict) or not isinstance(p.get("afirmaciones"), list):
+        return ""
+    S = lambda x: re.sub(r"\s+", " ", str(x if x is not None else "")).strip()[:600]
+    afs = []
+    for i, a in enumerate(p["afirmaciones"][:5]):
+        fs = [re.sub(r"^F-?\s?", "F-", str(f).upper()) for f in (a.get("fuentes") or [])]
+        fs = [f for f in fs if f[2:].isdigit() and int(f[2:]) in ledger]
+        sol = S(a.get("solidez")) if fs else "inferencia (sin fuente válida en el registro)"
+        afs.append(f"{i + 1}. {S(a.get('idea'))} | fuentes: {' '.join(f'[{f}]' for f in fs) or 'ninguna'} | solidez: {sol} | "
+                   f"alcance: {S(a.get('alcance'))} | por qué pesa: {S(a.get('por_que_importa'))}")
+    if not afs:
+        return ""
+    lista = lambda xs: "\n".join(f"- {S(x)}" for x in (xs or [])[:5] if S(x)) or "- (ninguno)"
+    return (f"PLAN DE RAZONAMIENTO (lo hizo Mu antes de escribir; no lo muestres ni lo menciones, redáctalo):\n"
+            f"Tipo de pregunta: {S(p.get('tipo'))}\nCriterio: {S(p.get('criterio'))}\nConclusión: {S(p.get('conclusion'))}\n"
+            f"Afirmaciones, en orden de peso:\n" + "\n".join(afs) +
+            f"\nHilo que las conecta: {S(p.get('hilo')) or '(ninguno)'}\nChoques y cifras sin verificar:\n{lista(p.get('choques'))}\n"
+            f"Descartado por no servir a esta pregunta:\n{lista(p.get('descartado'))}\n"
+            f"Implicación para el equipo: {S(p.get('implicacion'))}\nLo que falta saber: {S(p.get('no_sabe'))}")
+
+
+def armar(a):
+    """Inserta los planes (JSON {"Q01": {...}}) en los prompts de respuesta: prompts/Qnn_final.txt."""
+    sys.path.insert(0, str(GRAFO))
+    import build_grafo as bg
+    ledger = bg.parse_ledger((GRAFO.parent / "fuentes/codice.md").read_text(encoding="utf-8"))
+    planes = json.loads(Path(a.planes).read_text(encoding="utf-8"))
+    n = 0
+    for q in cargar():
+        base = (H / "prompts" / f"{q['id']}.txt").read_text(encoding="utf-8")
+        txt = plan_texto(planes.get(q["id"]), ledger)
+        poner = lambda t: t.replace("<<PLAN>>\n\n", (txt + "\n\n") if txt else "")
+        try:
+            turnos = json.loads(base)
+            for t in turnos:
+                if isinstance(t, dict) and isinstance(t.get("content"), str):
+                    t["content"] = poner(t["content"])
+            final = json.dumps(turnos, ensure_ascii=False)
+        except Exception:
+            final = poner(base)
+        (H / "prompts" / f"{q['id']}_final.txt").write_text(final, encoding="utf-8")
+        n += bool(txt)
+    print(f"ok: {n} prompts con plan → prompts/Qnn_final.txt")
 
 
 def criterio(q, texto):
@@ -171,8 +234,9 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     r = sub.add_parser("recuperar"); r.add_argument("--etiqueta")
     c = sub.add_parser("calificar"); c.add_argument("--respuestas", required=True); c.add_argument("--etiqueta")
+    m = sub.add_parser("armar"); m.add_argument("--planes", required=True)
     a = ap.parse_args()
-    recuperar(a) if a.cmd == "recuperar" else calificar(a)
+    {"recuperar": recuperar, "calificar": calificar, "armar": armar}[a.cmd](a)
 
 
 if __name__ == "__main__":

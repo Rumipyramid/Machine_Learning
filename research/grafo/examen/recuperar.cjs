@@ -25,7 +25,11 @@ const MOCK = `(() => {
   const sample = async (inp, o) => { const s = typeof inp === 'string' ? inp : JSON.stringify(inp);
     window.__calls = (window.__calls || []).concat([s]); const t = 'Respuesta de prueba.';
     if (o && o.onText) o.onText({ text: t, delta: t }); return { text: t, truncated: false } };
-  sample.json = async () => ({ tema_id: 'examen', tema: 'examen', cubierto: 'no', node: '' });
+  // El paso de planificación se registra aparte y devuelve un plan marcador: examen.py lo reemplaza por el plan real.
+  sample.json = async (inp) => { const s = typeof inp === 'string' ? inp : JSON.stringify(inp);
+    if (/razonamiento interno de Mu/.test(s)) { window.__plans = (window.__plans || []).concat([s]);
+      return { tipo: 'MARCADOR', criterio: 'MARCADOR', afirmaciones: [{ idea: 'PLAN_MARCADOR', fuentes: [] }], conclusion: 'MARCADOR' }; }
+    return { tema_id: 'examen', tema: 'examen', cubierto: 'no', node: '' }; };
   sample.limits = async () => ({ tools: false });
   window.claude = { use: async n => n === 'db' ? { collection: coll } : n === 'user' ? { id: async () => 'u_examen', can: async () => true } : n === 'sample' ? sample : null };
 })();`;
@@ -54,11 +58,12 @@ const MOCK = `(() => {
     // Cada pregunta en una página nueva: sin historial de la pregunta anterior.
     await pg.goto(`http://localhost:${port}/`);
     await pg.waitForFunction(() => !document.querySelector('#go').disabled, { timeout: 90000 });
-    await pg.evaluate(() => { window.__calls = [] });
+    await pg.evaluate(() => { window.__calls = []; window.__plans = [] });
     await pg.fill('#qbox', q.pregunta); await pg.click('#go');
     await pg.waitForFunction(() => (window.__calls || []).length > 0, { timeout: 30000 }).catch(() => {});
     const prompt = await pg.evaluate(() => (window.__calls || [])[0] || '');
-    out.push({ id: q.id, ...r, prompt });
+    const plan_prompt = await pg.evaluate(() => (window.__plans || [])[0] || '');
+    out.push({ id: q.id, ...r, prompt, plan_prompt });
     await pg.waitForFunction(() => !document.querySelector('#go').disabled, { timeout: 60000 }).catch(() => {});
   }
   fs.writeFileSync(outPath, JSON.stringify({ errores_pagina: errs, resultados: out }, null, 1));
