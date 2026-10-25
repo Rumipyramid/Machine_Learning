@@ -1,0 +1,17 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+ "fuentes":["F-595","F-559","F-587","F-547"],
+ "actualizaciones_en_su_sitio":{
+  "T-1693":"Resumen oficial (NBER WP 33777, 2025): efectos nulos precisos sobre ingresos y horas registradas, a nivel de trabajador y de lugar de trabajo. Descarta efectos mayores a 2% dos años después (otra versión del trabajo habla de 1%). Se sostiene en usuarios intensivos y adoptantes tempranos.",
+  "T-1652":"Resumen oficial: 19 estudios preregistrados y 164 resultados. Los gemelos, armados con más de 500 respuestas por persona, apenas superan al LLM base y se correlacionan débilmente con las respuestas humanas (r promedio = 0,20).",
+  "T-1653":"El resumen oficial nombra cinco distorsiones de los gemelos digitales; una es el sesgo ideológico. Las otras: poca individuación, estereotipos, sesgo de representación e hiperracionalidad.",
+  "T-1670":"Resumen de la versión 1 (mar-2025): RCT de 4 semanas, 981 personas, más de 300 mil mensajes. Más uso diario, en toda modalidad y tipo de conversación, se correlaciona con más soledad, dependencia y uso problemático, y menos socialización.",
+  "T-1672":"El resumen de la versión 1 habla de correlación entre uso diario y soledad. La versión 2 (oct-2025) no encuentra efectos significativos de las condiciones experimentales: la relación con el uso no es un efecto causal probado.",
+  "T-1628":"Resumen oficial (SSRN 4395751): la disposición a pagar estimada con LLM a veces es comparable a la de estudios humanos, pero a menudo es inexacta y a veces tiene el signo errado. Los autores la ven como complemento, no reemplazo, de estudios humanos.",
+  "T-1629":"Resumen oficial: afinar el modelo con datos de encuestas previas mejora el ajuste a las respuestas humanas en la misma categoría y población. No ayuda en categorías nuevas ni para diferencias entre segmentos.",
+  "T-1630":"Resumen oficial: el trabajo prueba si respuestas de encuesta generadas por LLM pueden sustituir la investigación de consumidores, estimando la disposición a pagar por productos y atributos."
+ },
+ "contradichas_por_el_resumen":[
+  {"triple":"T-1671","f":"F-587","nota":"La versión 1 dice que la voz pareció ayudar al inicio y el beneficio se diluyó con uso alto; la versión 2 vigente (oct-2025) no encuentra efectos significativos de la modalidad (texto vs. voz)."}
+ ],
+ "no_encontradas":["F-297","F-55","F-662","F-1","F-117","F-378","F-805","F-872","F-76","F-157","F-211","F-351","F-370","F-493","F-624","F-640"],
+ "nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda). Por el cupo compartido de búsquedas solo se buscaron 5 fuentes; F-662 se buscó pero solo aparecieron fuentes secundarias (sin las cifras). El resto queda sin buscar."}

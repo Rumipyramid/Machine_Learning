@@ -1,0 +1,22 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+"fuentes":["F-994","F-505","F-554","F-826","F-315","F-364","F-496","F-565","F-590","F-618","F-627","F-645"],
+"actualizaciones_en_su_sitio":{
+"T-1638":"Gao, Lee, Burtch y Fazelpour (arXiv 2410.19599) usan el juego 11-20: casi todos los enfoques avanzados no replican la distribución humana de conducta en muchos modelos.",
+"T-1639":"Según el resumen, las causas de la falla son diversas e impredecibles: dependen del idioma de entrada, del rol asignado y de las salvaguardas del modelo.",
+"T-1640":"El resumen concluye que hay que tener cautela al usar LLMs para estudiar conducta humana o como sustitutos y simulaciones de personas.",
+"T-1277":"La página de Grand View Research da US$9,4B en 2023 y US$11,2B en 2026, con CAGR de 7,1% entre 2024 y 2030 (US$14,98B en 2030).",
+"T-1352":"El centro de ayuda de Ethos dice que es una agencia licenciada que da servicios de productor, suscripción y administración (TPA); no es aseguradora y contrata con aseguradoras.",
+"T-145":"Kelley Drye (ene-2026): padres y exusuarios demandaron a OpenAI por no prevenir ideación suicida; una carta de 42 fiscales generales advierte que salidas 'aduladoras y delirantes' pueden violar leyes de consumo.",
+"T-1660":"Nota de la U. de Bristol: el equipo de Bowers halló que la memoria de corto plazo y los tiempos de reacción de Centaur difieren mucho de los humanos; sus procesos son demasiado distintos para informar sobre la cognición humana.",
+"T-1680":"Manning, Zhu y Horton: un método con LLMs genera hipótesis y las prueba en simulación con modelos causales estructurales, en cuatro escenarios (negociación, audiencia de fianza, entrevista de trabajo, subasta).",
+"T-1681":"El resumen reporta que, con su modelo causal ajustado, el LLM predice bien la dirección de los efectos, pero no su magnitud.",
+"T-1743":"Caso de Aaru: réplica a ciegas del estudio de EY (cerca de 3.600 clientes, más de 30 geografías) en un día; correlación de Spearman mediana de 0,90 y diferencia media de 7,1 pp en 53 preguntas.",
+"T-1745":"Las cifras vienen del caso publicado por Aaru; el resumen no muestra una réplica independiente ni una declaración de EY sobre la comparación.",
+"T-1810":"Ficha del caso IMD (dic-2022): Rímac usó visión por computadora para evaluar siniestros vehiculares, con gran reducción del tiempo de procesamiento y 95% de precisión.",
+"T-1811":"El caso IMD describe a Rímac escalando IA tras su transformación digital desde 2018; un uso es la evaluación de siniestros de seguro vehicular con visión por computadora."
+},
+"contradichas_por_el_resumen":[
+{"triple":"T-171","f":"F-505","nota":"La presentación a analistas de Mapfre 3M 2026 da para Perú un ratio combinado de 94,8% en 2026 frente a 102,4% del año anterior (mejora de 7,6 pp). El 102,4% sería la cifra de 2025, no de 2026 (orden de columnas inferido)."}
+],
+"no_encontradas":["F-355","F-682","F-62","F-173","F-985","F-96","F-190","F-379"],
+"nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda)."}

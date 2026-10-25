@@ -3376,6 +3376,54 @@
    "detalle": "El resumen oficial contradice la relación T-1559: La fuente sí está identificada: el informe Latam Insurtech Journey de Digital Insurance LatAm con apoyo de Mapfre (576 insurtechs, +14%, US$90M en el 1S 2026). Además el 1S 2025 aparece con US$121M.",
    "fecha": "2026-10-25",
    "cierre": "2026-10-25: dato bibliográfico (autoría o fuente primaria) corregido en la ficha sin preguntar, por la regla permanente de datos bibliográficos verificados."
+  },
+  {
+   "f": "F-623",
+   "triple": "T-1755",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1755: La Serie B de US$69M (ene-2026) la lideró Ribbit Capital; Sequoia participó, junto con Conviction y Pear VC. No la co-lideró. El ARR 'de ocho cifras' no aparece en lo encontrado.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial (F-505 queda marcada como cifra en disputa)."
+  },
+  {
+   "f": "F-587",
+   "triple": "T-1671",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1671: La versión 1 dice que la voz pareció ayudar al inicio y el beneficio se diluyó con uso alto; la versión 2 vigente (oct-2025) no encuentra efectos significativos de la modalidad (texto vs. voz).",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial (F-505 queda marcada como cifra en disputa)."
+  },
+  {
+   "f": "F-561",
+   "triple": "T-1655",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1655: El rango r=.23 a r=.84 (mediana .58) no sale de las 252 configuraciones: corresponde al estudio 2, en 53 de 66 configuraciones con salida usable. Las 252 configuraciones del estudio 1 miden orden de participantes, distribuciones y correlaciones entre escalas.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial (F-505 queda marcada como cifra en disputa)."
+  },
+  {
+   "f": "F-377",
+   "triple": "T-1384",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1384: El comunicado de resultados 2025 de Azos (vía Legismap) habla de más de 11 mil corredores socios en 24 ciudades, no de más de 9.000; Brazil Journal cita R$110.000M de capital asegurado.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial (F-505 queda marcada como cifra en disputa)."
+  },
+  {
+   "f": "F-614",
+   "triple": "T-1732",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1732: El artículo de Digital Transactions de la ficha (ago-2026) cubre otra encuesta (YouGov para ACI Worldwide, 2.080 adultos del R.U., 19% confía en agentes). Las cifras de 55% y 46,5% vienen del informe de Riskified de abril de 2026.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial (F-505 queda marcada como cifra en disputa)."
+  },
+  {
+   "f": "F-505",
+   "triple": "T-171",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-171: La presentación a analistas de Mapfre 3M 2026 da para Perú un ratio combinado de 94,8% en 2026 frente a 102,4% del año anterior (mejora de 7,6 pp). El 102,4% sería la cifra de 2025, no de 2026 (orden de columnas inferido).",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial (F-505 queda marcada como cifra en disputa)."
   }
  ],
  "resoluciones": [
@@ -4598,6 +4646,118 @@
     "F-277",
     "F-40",
     "F-198"
+   ]
+  },
+  {
+   "archivo": "pase_029.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 25,
+   "contradichas": 1,
+   "fuentes": [
+    "F-652",
+    "F-53",
+    "F-594",
+    "F-543",
+    "F-558",
+    "F-578",
+    "F-623",
+    "F-639",
+    "F-450",
+    "F-869",
+    "F-871",
+    "F-360",
+    "F-346",
+    "F-804",
+    "F-210"
+   ]
+  },
+  {
+   "archivo": "pase_030.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 8,
+   "contradichas": 1,
+   "fuentes": [
+    "F-595",
+    "F-559",
+    "F-587",
+    "F-547"
+   ]
+  },
+  {
+   "archivo": "pase_031.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 10,
+   "contradichas": 1,
+   "fuentes": [
+    "F-549",
+    "F-561",
+    "F-588",
+    "F-612"
+   ]
+  },
+  {
+   "archivo": "pase_032.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 23,
+   "contradichas": 2,
+   "fuentes": [
+    "F-674",
+    "F-817",
+    "F-172",
+    "F-874",
+    "F-84",
+    "F-362",
+    "F-377",
+    "F-495",
+    "F-550",
+    "F-562",
+    "F-589",
+    "F-614",
+    "F-626",
+    "F-644"
+   ]
+  },
+  {
+   "archivo": "pase_033.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 13,
+   "contradichas": 1,
+   "fuentes": [
+    "F-994",
+    "F-505",
+    "F-554",
+    "F-826",
+    "F-315",
+    "F-364",
+    "F-496",
+    "F-565",
+    "F-590",
+    "F-618",
+    "F-627",
+    "F-645"
+   ]
+  },
+  {
+   "archivo": "pase_034.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 8,
+   "contradichas": 0,
+   "fuentes": [
+    "F-556",
+    "F-592",
+    "F-570",
+    "F-704"
+   ]
+  },
+  {
+   "archivo": "pase_035.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 6,
+   "contradichas": 0,
+   "fuentes": [
+    "F-576",
+    "F-557",
+    "F-593"
    ]
   }
  ]

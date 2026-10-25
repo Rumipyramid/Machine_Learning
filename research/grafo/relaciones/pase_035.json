@@ -1,0 +1,14 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+ "fuentes":["F-576","F-557","F-593"],
+ "actualizaciones_en_su_sitio":{
+  "T-1664":"Ullman (2023, preprint): cambios pequeños que conservan los principios de teoría de la mente invierten los éxitos que se habían reportado para los LLMs.",
+  "T-1665":"Ullman (2023, preprint): como alteraciones pequeñas invierten los resultados, propone el escepticismo como postura por defecto al evaluar la psicología intuitiva de los modelos; los fallos atípicos pesan más que los promedios altos.",
+  "T-1647":"Schröder et al. (2025, preprint): los LLMs no simulan la psicología humana; son herramientas útiles pero poco fiables y deben validarse contra respuestas humanas en cada aplicación nueva.",
+  "T-1687":"Allouah, Besbes et al. (2025, preprint, auditoría ACES): los agentes de compra suelen concentrar la demanda en pocos productos 'modales' e ignoran por completo a otros.",
+  "T-1688":"Allouah, Besbes et al. (2025): ensayos aleatorios muestran sesgos de posición fuertes, distintos según proveedor y versión del modelo, que persisten incluso en interfaces solo de texto.",
+  "T-1689":"Allouah, Besbes et al. (2025): las actualizaciones del modelo del agente pueden reordenar drásticamente las cuotas de mercado entre productos."
+ },
+ "contradichas_por_el_resumen":[],
+ "no_encontradas":["F-278","F-647","F-792","F-70","F-217","F-661","F-865","F-52","F-128","F-206","F-344","F-367","F-485","F-501","F-620","F-638","F-803"],
+ "nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda). Cupo de búsquedas compartido: solo se buscaron 4 fuentes; F-647 (Asch) se buscó pero no apareció el resumen oficial. Las demás no se buscaron por cupo. T-1645, T-1646 y T-1666 quedan fuera: el resumen no dice lo que afirman con esa precisión."
+}

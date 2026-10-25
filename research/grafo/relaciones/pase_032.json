@@ -1,0 +1,33 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+"fuentes":["F-674","F-817","F-172","F-874","F-84","F-362","F-377","F-495","F-550","F-562","F-589","F-614","F-626","F-644"],
+"actualizaciones_en_su_sitio":{
+"T-598":"Harrison, Yeo y Hudson (CHI 2010): tras comparar estilos visuales de a pares, un experimento mide cuánto mejora la duración percibida frente a la barra sólida. Según la prensa, 20 voluntarios vieron descargas de 5 s; las barras animadas parecieron ~10% más rápidas.",
+"T-820":"Wiest (2025, Neurosci Conscious niaf011) es una revisión sin datos nuevos. Reúne los microtúbulos como blanco de anestésicos inhalados y efectos cuánticos en microtúbulos a temperatura ambiente, y sostiene que apoyan el estado cuántico colectivo que predice Orch-OR.",
+"T-1075":"La ley modelo 570 es del NAIC. Fija estándares mínimos para que la publicidad de seguros de vida y anualidades informe de forma completa y veraz. Se revisó por última vez en 2015; a fines de 2024, 35 estados la habían adoptado.",
+"T-1918":"El INVIMA (Colombia) emitió la alerta 006-2025 el 9-ene-2025, desde su Dirección de Dispositivos Médicos. Un comunicado del 29-jul-2025 repitió la advertencia y pidió suspender su uso.",
+"T-1919":"Según la alerta 006-2025, el aparato se vende en medios digitales, dice diagnosticar hasta 52 enfermedades y se considera fraudulento porque no tiene registro sanitario; el INVIMA no lo evaluó ni aprobó.",
+"T-1920":"La alerta aplica el Decreto 4725 de 2005: todo equipo que se promociona para diagnosticar enfermedades es un dispositivo médico y necesita registro sanitario del INVIMA.",
+"T-1345":"Comunicado de Ethos (25-feb-2026): ingresos 2025 de US$387,6M (+52%), tercer año seguido con más de 50% de crecimiento. En el 4T, EBITDA ajustado de US$25,8M (margen 23%). El conteo anual de pólizas no se verificó.",
+"T-1386":"Azos opera como MGA en alianza con la aseguradora Excelsior, sin licencia propia de la Susep, y distribuye su seguro de vida mediante una red de corredores socios.",
+"T-1387":"Las cifras de facturación y capital asegurado vienen de comunicados de la propia Azos. Según Bloomberg Línea, la empresa no revela su facturación. No hay datos independientes que las confirmen.",
+"T-1388":"Azos, insurtech brasileña de seguro de vida: Serie B de R$170M (Bloomberg Línea) y, menos de un año después, Serie C de R$125M liderada por Kaszek y Kevin Efrusy.",
+"T-143":"Abril de 2025: OpenAI retiró una actualización de GPT-4o que elogiaba casi cualquier idea, incluso dañina. Explicó que se centró demasiado en la retroalimentación de corto plazo (pulgares arriba o abajo).",
+"T-144":"OpenAI dijo que la actualización no consideró cómo cambian las interacciones con el tiempo. Anunció que pesará más la satisfacción de largo plazo al usar la retroalimentación.",
+"T-1635":"Con 70 experimentos de encuesta preregistrados y representativos de EE.UU., las predicciones de GPT-4 se correlacionan con los efectos reales (r=0,85), igual o mejor que pronosticadores humanos; r=0,90 en estudios no publicados.",
+"T-1636":"Versión posterior del resumen (Stanford GSB): pese a la alta correlación, las predicciones sobreestiman sistemáticamente los tamaños de efecto. En 15 megaestudios (606 efectos) la correlación fue menor.",
+"T-1637":"El resumen reporta que se le pidió a GPT-4 simular cómo responderían muestras representativas de estadounidenses a los estímulos de cada experimento.",
+"T-1657":"Desai, Card y Jacobs (U. de Michigan, arXiv jul-2026) revisan papers de 8 revistas insignia que usan LLMs como instrumento de medición: esas medidas suelen ser centrales en los análisis, pero su validación es inconsistente y limitada.",
+"T-1658":"El resumen incluye simular respuestas de encuestas entre los usos de LLMs como instrumento, y señala sesgo, alucinación y fragilidad entre contextos como amenazas de validez poco claras.",
+"T-1677":"Ye, Kraut y Rathje (preprint, jul-2026): una advertencia escrita (n=940) bajó la objetividad percibida de la IA; ver a la IA validar a otros (n=650) bajó el agrado. Efecto combinado sobre objetividad: g=-0,23.",
+"T-1678":"Ninguna de seis intervenciones (3.982 participantes) redujo la persuasión de la IA aduladora: efecto combinado sobre el cambio de actitud g=-0,04.",
+"T-1732":"Agentic Commerce Pulse de Riskified (1T 2026, publicado 27-abr-2026): 55% no se siente cómodo con que un agente de IA compre por él, 46,5% no confía en ninguna empresa para hacerlo y 73,9% espera salvaguardas fuertes.",
+"T-1764":"Bain contrastó gemelos digitales con un conjoint previo y grande de una empresa líder de tecnología de consumo (estudio excluido del entrenamiento): replicaron cerca de 90% de los resultados clave (Gemini 3.0, n=1.500).",
+"T-1765":"En otra prueba de Bain, contra una encuesta de consumidores de GLP-1, las respuestas sintéticas siguieron de cerca a las humanas; la varianza subió solo con preguntas más ambiguas.",
+"T-1809":"CloudResearch reporta agentes de IA autónomos en menos de 0,1% de su tráfico, detectados con su propio sistema antifraude (Sentry), que es el producto que vende."
+},
+"contradichas_por_el_resumen":[
+{"triple":"T-1384","f":"F-377","nota":"El comunicado de resultados 2025 de Azos (vía Legismap) habla de más de 11 mil corredores socios en 24 ciudades, no de más de 9.000; Brazil Journal cita R$110.000M de capital asegurado."},
+{"triple":"T-1732","f":"F-614","nota":"El artículo de Digital Transactions de la ficha (ago-2026) cubre otra encuesta (YouGov para ACI Worldwide, 2.080 adultos del R.U., 19% confía en agentes). Las cifras de 55% y 46,5% vienen del informe de Riskified de abril de 2026."}
+],
+"no_encontradas":["F-541","F-108","F-48","F-482","F-182","F-255"],
+"nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda)."}

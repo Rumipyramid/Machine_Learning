@@ -1,0 +1,16 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+ "fuentes":["F-556","F-592","F-570","F-704"],
+ "actualizaciones_en_su_sitio":{
+  "T-1641":"Resumen arXiv (v1, 2024): réplica de 154 experimentos (618 efectos principales, 138 interacciones) con GPT-4 como participante. Reprodujo cerca de tres cuartos de los efectos principales y menos de la mitad de las interacciones.",
+  "T-1642":"Resumen arXiv (v3, 2025; GPT-4, Claude 3.5 Sonnet y DeepSeek v3): los modelos dan de forma consistente tamaños de efecto mayores que los estudios con humanos.",
+  "T-1643":"Resumen arXiv: solo 19,44% de los intervalos de confianza de GPT-4 contiene el efecto original. La v3 reporta réplica más baja en temas sensibles (raza, género, ética) y concluye que los LLM complementan, no reemplazan, a los sujetos humanos.",
+  "T-1644":"Resumen arXiv (v1): 71,6% de resultados significativos inesperados donde el estudio original reportó un efecto nulo.",
+  "T-1683":"Resumen arXiv (Microsoft Research, 2025): todos los modelos probados mostraron un fuerte sesgo de primera propuesta, que da a quien responde más rápido una ventaja de 10 a 30 veces sobre ofertas de mayor calidad.",
+  "T-1686":"Resumen arXiv: en el mercado simulado, agentes asistentes actúan en nombre de los consumidores y agentes de servicio en nombre de negocios que compiten.",
+  "T-1661":"Resumen NBER w32422 / arXiv 2404.10111: un procedimiento usa un modelo de ML de caja negra, entrenado con elecciones entre loterías, para generar automáticamente anomalías a la utilidad esperada.",
+  "T-1662":"Resumen NBER: en experimentos incentivados, las personas violaron la utilidad esperada en las anomalías generadas a tasas similares a las de la paradoja de Allais y el efecto de razón común."
+ },
+ "contradichas_por_el_resumen":[],
+ "no_encontradas":["F-404","F-564","F-68","F-207","F-507","F-827","F-13","F-101","F-202","F-343","F-366","F-483","F-500","F-619","F-630","F-802"],
+ "nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda). Por el cupo compartido de búsquedas solo se buscaron 4 fuentes; las demás quedan en no_encontradas sin haberse buscado. F-704: el resumen confirma N = 2.696 + 737 online, pero no menciona el efecto peso-importancia (T-644 sin cambios). F-592: el resumen no dice nada sobre manipulación ni sobre los 100 resultados (T-1684, T-1685 sin cambios). F-556: el resumen no da la cifra de 2-3 veces."
+}

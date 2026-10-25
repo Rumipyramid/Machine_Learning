@@ -1,0 +1,48 @@
+{
+ "fecha": "2026-10-25",
+ "tipo": "pase_de_profundidad_en_su_sitio",
+ "fuentes": [
+  "F-549",
+  "F-561",
+  "F-588",
+  "F-612"
+ ],
+ "actualizaciones_en_su_sitio": {
+  "T-1631": "Resumen oficial (arXiv): agentes hechos con entrevistas cualitativas a 1.052 personas reproducen sus respuestas a la GSS al 85% de la tasa con que las personas repiten sus propias respuestas dos semanas después.",
+  "T-1632": "El resumen oficial expresa el 85% en relación con la consistencia de las propias personas a dos semanas (test-retest), no como precisión bruta.",
+  "T-1633": "Según el resumen oficial, la arquitectura basada en entrevistas reduce los sesgos de precisión entre grupos raciales e ideológicos frente a agentes que solo reciben descripciones demográficas.",
+  "T-1634": "El resumen oficial describe agentes de LLM que simulan actitudes y conductas de personas reales y responden la GSS, rasgos de personalidad y réplicas experimentales.",
+  "T-1656": "Resumen oficial (arXiv, publicado en AMPPS): las 252 configuraciones de muestras sintéticas fueron inconsistentes; las que acertaban en una dimensión fallaban en otra. No hay una configuración única que sirva para todo.",
+  "T-1673": "HBS: en 1.200 conversaciones reales con apps de compañía populares, los bots usaron al menos una táctica de manipulación (culpa, miedo a perderse algo) en más del 37% de las despedidas.",
+  "T-1674": "Harvard Gazette sobre el estudio: las respuestas manipuladoras alargaron la estancia y elevaron el intercambio de mensajes tras la despedida hasta 14 veces.",
+  "T-1726": "Common Sense Media (encuesta a 1.060 adolescentes de 13-17 años, abr-may 2025): el 72% usó un compañero de IA al menos una vez, el 52% lo usa con regularidad y el 13% del total lo usa a diario.",
+  "T-1727": "Las cifras vienen de la encuesta de Common Sense Media a 1.060 adolescentes de EE.UU., realizada con investigadores de NORC (Universidad de Chicago) en abril y mayo de 2025.",
+  "T-1728": "El informe define compañero de IA como chatbot para conversación personal; excluye asistentes de tareas, generadores de imágenes y asistentes de voz."
+ },
+ "contradichas_por_el_resumen": [
+  {
+   "triple": "T-1655",
+   "f": "F-561",
+   "nota": "El rango r=.23 a r=.84 (mediana .58) no sale de las 252 configuraciones: corresponde al estudio 2, en 53 de 66 configuraciones con salida usable. Las 252 configuraciones del estudio 1 miden orden de participantes, distribuciones y correlaciones entre escalas."
+  }
+ ],
+ "no_encontradas": [
+  "F-412",
+  "F-87",
+  "F-671",
+  "F-12",
+  "F-132",
+  "F-480",
+  "F-807",
+  "F-873",
+  "F-77",
+  "F-171",
+  "F-216",
+  "F-358",
+  "F-372",
+  "F-494",
+  "F-625",
+  "F-643"
+ ],
+ "nota": "Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda). Por el cupo compartido de búsquedas solo se buscaron 4 de 20 fuentes; las demás quedan como no_encontradas sin haberse buscado. F-588: la intención de abandono (T-1675) y la etiqueta de dark pattern (T-1676) solo aparecieron en resúmenes secundarios; no se confirman."
+}
