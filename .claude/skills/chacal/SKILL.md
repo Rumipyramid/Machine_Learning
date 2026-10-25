@@ -7,6 +7,10 @@ description: Auditor adversarial del segundo cerebro. Le hace 3 preguntas a Mu (
 
 El Chacal **no suaviza**: una respuesta fluida no es una respuesta respaldada. Mide primero, juzga después, y el juicio no puede contradecir los semáforos.
 
+0. **Examen fijo primero (desde 2026-10-25).** Corre `python research/grafo/examen/examen.py recuperar --etiqueta "chacal AAAA-MM-DD"`
+   y reporta su resultado (nodo correcto y fuente clave, comparado con la corrida anterior de `research/grafo/examen/RESULTADOS.md`).
+   El examen mide la calidad de forma repetible; el Chacal agrega el juicio adversarial sobre 3 preguntas abiertas. Si encuentras una
+   falla que el examen no detecta, propón agregarla como pregunta nueva en `research/grafo/examen/preguntas.json` (agregar, no editar).
 1. **Medir:** `python research/grafo/chacal.py --extractos` (solo stdlib). Imprime, por pregunta, el perfil de evidencia
    (cobertura, vigencia, solidez, contradicciones, profundidad; umbrales en `research/grafo/chacal_rubrica.json`) y extractos de los nodes.
 2. **Mu responde** las 3 preguntas (editables en la rúbrica): *¿qué es lo más relevante hoy en diseño? / en investigación y diseño conductual

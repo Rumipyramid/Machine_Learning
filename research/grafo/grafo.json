@@ -185,8 +185,8 @@
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 353,
-   "cites": 26,
+   "lines": 356,
+   "cites": 30,
    "design": false
   },
   {
@@ -596,8 +596,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Integrating Telehealth for Strengthening Health Systems in the Context of COVID-19: A Perspective from Peru",
-   "autor": "NCBI/PMC (perspectiva Perú)",
-   "anio": "2024",
+   "autor": "Curioso, W. H. et al. (International Journal of Environmental Research and Public Health) — ⚠️ corregido 2026-10-25 (autoría, revista y año verificados contra el resumen oficial; antes decía «NCBI/PMC (perspectiva Perú)», 2024)",
+   "anio": "2023",
    "huerfana": false
   },
   {
@@ -686,8 +686,8 @@
    "type": "fuente",
    "rigor": "A",
    "titulo": "Evaluación de Babylon Health's Diagnostic and Triage System",
-   "autor": "The Lancet (vía TechCrunch/The Week/Mansfield Advisors)",
-   "anio": "2020",
+   "autor": "The Lancet (vía TechCrunch/The Week/Mansfield Advisors) — ⚠️ corregido 2026-10-25 (año verificado: carta de noviembre de 2018; antes decía 2020)",
+   "anio": "2018",
    "huerfana": true
   },
   {
@@ -3872,7 +3872,7 @@
    "type": "fuente",
    "rigor": "E",
    "titulo": "Why Sr. Devs Are Actually Less Productive with AI Copilot — DZone",
-   "autor": "Autoría no declarada (blog sin arbitraje)",
+   "autor": "Elumalai, D. (blog en DZone, 11-12-2025) — ⚠️ corregido 2026-10-25 (autoría verificada; antes decía «Autoría no declarada»). El blog sigue sin nombrar ni enlazar el estudio que cita",
    "anio": "2025",
    "huerfana": false
   },
@@ -4358,7 +4358,7 @@
    "type": "fuente",
    "rigor": "D",
    "titulo": "Ecosistema insurtech LatAm: 536 startups (2025) → 576 (1S 2026, +14%); financiamiento US$199M (2025) → US$90M (1S 2026)",
-   "autor": "MAPFRE Perú, El Ecosistema Startup, Ámbito, Informe Operadores de Mercado (cobertura convergente de un mismo agregado)",
+   "autor": "Digital Insurance LatAm, informe Latam Insurtech Journey (con apoyo de MAPFRE), vía MAPFRE Perú, El Ecosistema Startup, Ámbito e Informe Operadores de Mercado — ⚠️ corregido 2026-10-25 (fuente primaria identificada)",
    "anio": "2025-2026",
    "huerfana": false
   },
@@ -9778,6 +9778,42 @@
    "titulo": "Leaving Insight to Digital Twins? Promise, Progress and Limits of Synthetic Respondents (año no verificado)",
    "autor": "NIM (Nuremberg Institute for Market Decisions)",
    "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-1062",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "sigma 2/2023 — Restoring resilience: the need to reload shock-absorbing capacity",
+   "autor": "Swiss Re Institute",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-1063",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Resilience Index 2024",
+   "autor": "Swiss Re Institute (vía Insurance Portal)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1064",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "El mercado asegurador latinoamericano en 2024",
+   "autor": "MAPFRE Economics (vía Revista Summa y otros medios)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-1065",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Protecta Seguros de Vida: para aumentar la penetración de los seguros masivos se debe fortalecer la confianza del público",
+   "autor": "Gestión (cita a un directivo que cita a Ipsos)",
+   "anio": "2023",
    "huerfana": false
   }
  ],
@@ -17806,6 +17842,26 @@
    "s": "convergencia-psicologia-economia-ia",
    "t": "F-1061",
    "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-1062",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-1063",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-1064",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-1065",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -18110,14 +18166,14 @@
    },
    {
     "fecha": "2026-10-25",
-    "nuevas": 84,
-    "acumuladas": 1060,
-    "AB": 50,
+    "nuevas": 88,
+    "acumuladas": 1064,
+    "AB": 52,
     "rigor": {
      "A": 28,
-     "B": 22,
-     "C": 16,
-     "D": 16,
+     "B": 24,
+     "C": 17,
+     "D": 17,
      "E": 2
     }
    }
@@ -20453,20 +20509,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 984,
+    "fuentes": 1060,
     "rigor": {
-     "B": 174,
-     "A": 323,
-     "C": 214,
-     "D": 217,
+     "B": 193,
+     "A": 347,
+     "C": 229,
+     "D": 233,
      "?": 15,
-     "E": 41
+     "E": 43
     },
-    "nodes": 20,
+    "nodes": 30,
     "outputs": 5,
-    "wikilinks": 158,
+    "wikilinks": 230,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 878,
+    "fuentes_citadas_en_nodes": 1023,
     "diseno": {
      "hyp": {
       "abierta": 16,
@@ -20483,11 +20539,11 @@
       "⚔️": 4
      },
      "iterations": 9,
-     "lines": 2215,
-     "cites": 373
+     "lines": 1124,
+     "cites": 444
     },
     "fecha": "2026-10-25",
-    "commit": "f786a03",
+    "commit": "8a0751f",
     "fuente": "git"
    }
   ],

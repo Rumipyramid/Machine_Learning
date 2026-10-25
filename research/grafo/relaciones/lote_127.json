@@ -1,0 +1,16 @@
+{"fecha": "2026-10-25", "f_ids": ["F-1062","F-1063","F-1064","F-1065"],
+ "entidades": [
+  {"id": "brecha_proteccion_global", "nombre": "Brecha mundial de protección de seguros", "tipo": "resultado"},
+  {"id": "riesgo_no_protegido_43", "nombre": "Riesgo mundial no protegido por activos ni seguros (~43% en 2022)", "tipo": "resultado"},
+  {"id": "penetracion_latam_2024", "nombre": "Penetración de seguros en Latinoamérica (3,2% del PBI en 2024)", "tipo": "resultado"},
+  {"id": "confianza_aseguradoras_peru", "nombre": "Confianza de los peruanos en las aseguradoras", "tipo": "resultado"},
+  {"id": "c_confianza_peru_23_25", "nombre": "La confianza plena en aseguradoras en Perú ronda 23-25%", "tipo": "afirmacion"}
+ ],
+ "triples": [
+  {"s": "riesgo_no_protegido_43", "p": "parte_de", "o": "brecha_proteccion_global", "f": "F-1062", "apoyo": "Swiss Re (sigma 2/2023): brecha de US$1,8 billones en 2022, +20% frente a 2018; ~43% del riesgo mundial sin protección.", "lectura": "ficha", "fuerza": "descriptiva"},
+  {"s": "brecha_proteccion_global", "p": "asocia_con", "o": "penetracion_latam_2024", "f": "F-1063", "apoyo": "Resilience Index 2024: la brecha llegó a US$1,83 billones y crece ~3,6% al año, al ritmo del PBI nominal.", "lectura": "ficha", "fuerza": "descriptiva"},
+  {"s": "penetracion_latam_2024", "p": "mide", "o": "brecha_proteccion_global", "f": "F-1064", "apoyo": "MAPFRE Economics: penetración regional de 3,2% del PBI en 2024, primas US$215.100 M (+5,8%) y brecha regional de US$315.945 M.", "lectura": "ficha", "fuerza": "descriptiva"},
+  {"s": "confianza_aseguradoras_peru", "p": "contradice", "o": "c_confianza_peru_23_25", "f": "F-1065", "apoyo": "Una encuesta de Ipsos citada en prensa da solo 14% de confianza en las aseguradoras, por debajo del 23-25% que el cerebro usaba sin fuente.", "lectura": "ficha", "fuerza": "descriptiva"}
+ ],
+ "discrepancias": [],
+ "notas": "Verificación de cifras base del nodo de seguros, 2026-10-25."}

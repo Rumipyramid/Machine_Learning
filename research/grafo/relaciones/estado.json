@@ -2180,6 +2180,18 @@
    "triples": 8,
    "sin_aporte": [],
    "notas": "Resolución de contradicciones abiertas, 2026-10-25: evidencia nueva vía búsqueda (resúmenes; F-1056 solo por prensa)."
+  },
+  {
+   "fecha": "2026-10-25",
+   "f_ids": [
+    "F-1062",
+    "F-1063",
+    "F-1064",
+    "F-1065"
+   ],
+   "triples": 4,
+   "sin_aporte": [],
+   "notas": "Verificación de cifras base del nodo de seguros, 2026-10-25."
   }
  ],
  "discrepancias": [
@@ -3260,6 +3272,100 @@
    "estado": "cerrada",
    "detalle": "Pase de lectura profunda (2026-10-12): La URL de la ficha apunta al informe del 1T del año fiscal 2026 de Adobe, pero las cifras citadas son del 2T (otro documento). Corregir la ficha requiere autorización del usuario.",
    "cierre": "2026-10-12: ficha corregida con autorización del usuario."
+  },
+  {
+   "f": "F-528",
+   "triple": "T-1610",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1610: El artículo original de Lyssna (17-12-2025) sí es visible y nombra su estudio: una encuesta a 100 diseñadores. El contenido ya no está solo sin verificar.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-404",
+   "triple": "T-1448",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1448: El artículo de DZone tiene autor: Dinesh Elumalai (11-12-2025). El extracto visible no muestra los 250 desarrolladores ni las 5 organizaciones.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: dato bibliográfico (autoría o fuente primaria) corregido en la ficha sin preguntar, por la regla permanente de datos bibliográficos verificados."
+  },
+  {
+   "f": "F-404",
+   "triple": "T-1450",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1450: El blog de DZone no es anónimo: lo firma Dinesh Elumalai (11-12-2025). Sigue sin verse el estudio que cita.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: dato bibliográfico (autoría o fuente primaria) corregido en la ficha sin preguntar, por la regla permanente de datos bibliográficos verificados."
+  },
+  {
+   "f": "F-510",
+   "triple": "T-1583",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1583: La cobertura financiera atribuye la caída de la acción a una guía de primas más débil de lo esperado y a la presión del mercado, no a la pérdida neta. La caída vista fue de 22,3% a mediodía; no se vio el cierre de -24%.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-541",
+   "triple": "T-1624",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1624: Startup Genome dice que el 70% de las startups de su base (más de 3.200 en el informe sobre escalamiento prematuro) escaló prematuramente. No dice que sea el 70% de las que fracasan, y la muestra no es la de 650 startups.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-450",
+   "triple": "T-1545",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1545: La carta Q4 2025 de Lemonade reporta loss ratio bruto de 52% en el trimestre (−11 pp) y 64% en 12 meses (73% un año antes), no 74% con −16 pp. La guía de EBITDA ajustado positivo en Q4 2026 sí coincide. El combined ratio de 139% no se pudo verificar.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-302",
+   "triple": "T-1269",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1269: ITJobsWatch muestra 459 contratos frente a 234 un año antes (casi el doble) y 467 dos años antes: la serie no muestra estancamiento en la demanda de contratos.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-419",
+   "triple": "T-1493",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1493: La declaración oficial habla de integrar Diseño y Contenido 'aprovechando la tecnología'; no es una negación explícita de que la IA haya influido.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-451",
+   "triple": "T-1547",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1547: La prensa hallada reporta pérdidas de €141M en 2023 y un paquete de €151M en julio 2025 (€76M de capital y €75M de refinanciamiento), no €170M; no aparecen los €739M de ingresos ni el EBITDA de −€72M.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-526",
+   "triple": "T-1601",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1601: No aparece una guía de margen de 86% vs. 90%. El margen bruto no-GAAP reportado del Q2 2026 fue 85% (GAAP 83,7% vs. 88,8% un año antes); el 10-Q sí atribuye a la IA la mayor parte del alza de costos.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-526",
+   "triple": "T-1603",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-1603: El margen del Q2 2026 ya es un resultado reportado (85% no-GAAP; GAAP bajó de 88,8% a 83,7% a/a), no solo una guía.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-1009",
+   "triple": "T-2215",
+   "estado": "abierta",
+   "detalle": "El resumen oficial contradice la relación T-2215: El comunicado de Ondo dice que LeakBot reduce el costo de siniestros por agua 'hasta 70%' (promedio 44% en tres países), no ≈70% del costo total; la severidad aparece como 50% en una página y 51% en el whitepaper. La frecuencia −39% sí coincide.",
+   "fecha": "2026-10-25"
+  },
+  {
+   "f": "F-458",
+   "triple": "T-1559",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1559: La fuente sí está identificada: el informe Latam Insurtech Journey de Digital Insurance LatAm con apoyo de Mapfre (576 insurtechs, +14%, US$90M en el 1S 2026). Además el 1S 2025 aparece con US$121M.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: dato bibliográfico (autoría o fuente primaria) corregido en la ficha sin preguntar, por la regla permanente de datos bibliográficos verificados."
   }
  ],
  "resoluciones": [
@@ -4306,6 +4412,183 @@
    "estado": "refutacion_directa",
    "fecha": "2026-10-25",
    "nota": "Con menos variación y sesgo positivo frente a personas (F-1061), y lo que ya sostienen las fuentes A del nodo de convergencia, las muestras sintéticas no reemplazan encuestas para inferencia estadística."
+  },
+  {
+   "triple": "T-2323",
+   "estado": "sin_verificar",
+   "fecha": "2026-10-25",
+   "nota": "Ni el 23-25% (sin fuente localizada) ni el 14% (Ipsos citado por un ejecutivo en prensa) se vieron en su estudio original. Hace falta el informe de Ipsos o de APESEG. Mientras, decir solo que una minoría confía."
+  }
+ ],
+ "pases": [
+  {
+   "archivo": "pase_023.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 37,
+   "contradichas": 3,
+   "fuentes": [
+    "F-1002",
+    "F-1014",
+    "F-1026",
+    "F-1043",
+    "F-996",
+    "F-1032",
+    "F-1047",
+    "F-402",
+    "F-435",
+    "F-471",
+    "F-536",
+    "F-1021",
+    "F-1052",
+    "F-296",
+    "F-328",
+    "F-410",
+    "F-460",
+    "F-528",
+    "F-1022",
+    "F-1038",
+    "F-404",
+    "F-445",
+    "F-993",
+    "F-278",
+    "F-41"
+   ]
+  },
+  {
+   "archivo": "pase_024.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 25,
+   "contradichas": 2,
+   "fuentes": [
+    "F-987",
+    "F-1003",
+    "F-1015",
+    "F-1027",
+    "F-997",
+    "F-1033",
+    "F-1048",
+    "F-406",
+    "F-510",
+    "F-634",
+    "F-1024",
+    "F-297",
+    "F-412",
+    "F-453",
+    "F-541",
+    "F-1039",
+    "F-1050",
+    "F-405",
+    "F-50",
+    "F-87"
+   ]
+  },
+  {
+   "archivo": "pase_025.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 35,
+   "contradichas": 2,
+   "fuentes": [
+    "F-988",
+    "F-1004",
+    "F-1016",
+    "F-1028",
+    "F-1007",
+    "F-1040",
+    "F-1051",
+    "F-416",
+    "F-450",
+    "F-511",
+    "F-986",
+    "F-1031",
+    "F-302",
+    "F-392",
+    "F-992",
+    "F-1025",
+    "F-1053",
+    "F-300",
+    "F-411",
+    "F-274",
+    "F-443"
+   ]
+  },
+  {
+   "archivo": "pase_026.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 27,
+   "contradichas": 4,
+   "fuentes": [
+    "F-1005",
+    "F-1017",
+    "F-1029",
+    "F-1011",
+    "F-1044",
+    "F-419",
+    "F-451",
+    "F-526",
+    "F-998",
+    "F-1034",
+    "F-291",
+    "F-417",
+    "F-439",
+    "F-994",
+    "F-1030",
+    "F-279",
+    "F-275",
+    "F-54"
+   ]
+  },
+  {
+   "archivo": "pase_027.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 26,
+   "contradichas": 0,
+   "fuentes": [
+    "F-1000",
+    "F-1006",
+    "F-1019",
+    "F-1041",
+    "F-990",
+    "F-1013",
+    "F-1045",
+    "F-527",
+    "F-1008",
+    "F-1036",
+    "F-292",
+    "F-325",
+    "F-455",
+    "F-995",
+    "F-276",
+    "F-55",
+    "F-180"
+   ]
+  },
+  {
+   "archivo": "pase_028.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 35,
+   "contradichas": 2,
+   "fuentes": [
+    "F-1001",
+    "F-1012",
+    "F-1020",
+    "F-1042",
+    "F-991",
+    "F-1018",
+    "F-1046",
+    "F-532",
+    "F-1009",
+    "F-294",
+    "F-395",
+    "F-423",
+    "F-458",
+    "F-1010",
+    "F-1037",
+    "F-289",
+    "F-397",
+    "F-277",
+    "F-40",
+    "F-198"
+   ]
   }
  ]
 }

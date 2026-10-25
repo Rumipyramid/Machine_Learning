@@ -16,6 +16,9 @@
 - **Confianza:** A nivel global, los seguros son de las industrias **menos confiables** (≈39% de
   los consumidores confía, vs. 50% en bancos). En Perú la confianza plena ronda el **23-25%** y
   **~48% desconfía** de las aseguradoras; la principal causa es la **falta de información**.
+  ⚠️ *Verificación 2026-10-25: no se localizó la fuente de "23-25% confía" ni de "48% desconfía". Una encuesta de Ipsos
+  citada en prensa da solo **14%** de confianza en las aseguradoras [F-1065] (rigor D). Usar estas cifras como orden de
+  magnitud ("una minoría confía") hasta encontrar el estudio original.*
 - **Tenencia:** En Perú solo **~4 de cada 10** personas tienen o tuvieron un seguro pagado en los
   últimos 2 años. El **SOAT** lidera el conocimiento (94%) [F-1] pero solo **~3.3% de los hogares** tiene
   seguro contra desastres naturales [F-5].
@@ -31,7 +34,7 @@
 
 ### 1.1 Penetración y tamaño de mercado
 - **Latinoamérica:** penetración del **3.2% del PBI** en 2024 (+0.1 pp interanual). El mercado
-  regional creció **5.8%**, alcanzando ~**US$215.1 mil millones** (MAPFRE Economics). Marco mundial de
+  regional creció **5.8%**, alcanzando ~**US$215.1 mil millones** (MAPFRE Economics [F-1064]). Marco mundial de
   penetración y primas por ramo: OCDE, 2025 [F-2].
 - Líderes de penetración en LatAm: Puerto Rico, **Chile (4.6%)**, Uruguay (3.6%), Brasil (3.3%),
   Colombia (3.3%).
@@ -62,7 +65,7 @@
   cliente le conviene más NO tenerlo → erosiona la confianza y la reputación del sector.
 
 ### 1.5 Brecha de protección (underinsurance)
-- Brecha global estimada en **~US$1.8 billones** (Swiss Re Resilience Index 2024); otras
+- Brecha global estimada en **~US$1.8 billones** para 2022 (Swiss Re, sigma 2/2023 [F-1062]; *corregido 2026-10-25: antes se atribuía al Resilience Index 2024*, que da **US$1,83 billones** [F-1063]); otras
   estimaciones la sitúan en ~£1.4 billones.
 - **2024:** catástrofes (incendios, inundaciones, tormentas, sismos) costaron **US$368 mil
   millones**; el **60%** quedó sin asegurar.

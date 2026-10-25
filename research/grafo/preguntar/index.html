@@ -238,6 +238,12 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
         if (!ix.tdf) { ix.tdf = new Map(); for (const t of new Set(ix.docs.map(d => d.titulo))) for (const w of new Set(toks(String(t).replace(/-/g, " ")))) ix.tdf.set(w, (ix.tdf.get(w) || 0) + 1); }
         if (qt.some(t => !QSTOP.has(t) && set.has(t) && (ix.tdf.get(t) || 0) <= 4 && !/^(peru|segur|salud|lima)/.test(t))) s *= 1.5; // solo palabras que nombran pocos nodos
       }
+      if (s > 0 && ix.docs[i].k === "node") { // a igual tema, pesa más el fragmento que se apoya en fuentes sólidas (A/B)
+        const ev = ix.ev || (ix.ev = new Map()); let r = ev.get(i);
+        if (r === undefined) { const c = [...new Set([...ix.docs[i].texto.matchAll(/F-(\d+)/g)].map(m => "F-" + m[1]))].filter(id => FUENTES.has(id));
+          r = c.length ? c.filter(id => /^[AB]/.test(FUENTES.get(id).rig || "")).length / c.length : 0; ev.set(i, r); }
+        s *= 1 + .3 * r;
+      }
       if (s > 0 && ix.docs[i].seccion && /alcance/i.test(ix.docs[i].seccion)) s *= .6;
       if (s > 0 && ix.docs[i].k === "node" && ix.docs[i].texto.length < 400) s *= .6; // un párrafo suelto gana por ser corto, no por tratar el tema
       if (s > 0 && bg.length) { const hits = bg.filter(b => ix.raw[i].includes(b)).length; if (hits >= 2) s *= 1 + .35 * Math.min(hits, 5); }
@@ -267,7 +273,12 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
   const DOMINIOS_DISENO = "servicios política pública intervenciones organizacional estratégico industrial físico espacios sostenibilidad";
   // "IA" se escribe con dos letras y "últimamente" no dice el tema: se agregan sus equivalentes para que la búsqueda
   // encuentre los nodos sobre inteligencia artificial y la evidencia reciente.
-  const ampliarIA = q => q + (/\b(ia|ai)\b/i.test(q) ? " inteligencia artificial generativa agentes confianza adulación persuasión" : "") + (/[uú]ltimamente|recientemente|\bhoy\b|\bahora\b|actualmente|[uú]ltimo/i.test(q) ? " reciente tendencia" : "");
+  // Sinónimos que la gente usa distinto que los nodos (la pregunta dice "modelos de lenguaje"; el nodo, "LLM").
+  const SINONIMOS = [
+    [/modelos? de lenguaje|chatgpt|\bgpt|\bllms?\b/i, " LLM LLMs modelos de lenguaje"],
+    [/sint[eé]tic/i, " encuestados sintéticos muestras sintéticas homo silicus"],
+    [/encuesta/i, " encuestados muestras"]];
+  const ampliarIA = q => q + (/\b(ia|ai)\b/i.test(q) ? " inteligencia artificial generativa agentes confianza adulación persuasión" : "") + (/[uú]ltimamente|recientemente|\bhoy\b|\bahora\b|actualmente|[uú]ltimo/i.test(q) ? " reciente tendencia" : "") + SINONIMOS.filter(([r]) => r.test(q)).map(([, s]) => s).join("");
   const ampliarDiseno = q => /dise[ñn]/i.test(q) && !/digital|\bux\b|\bui\b|interfaz|app\b|web\b|servicio|p[uú]blic|salud|industrial|gr[aá]fic|marca|espacio|arquitect|urban|sostenib|circular|social|organizac|estrat[eé]g/i.test(q) ? `${q} ${DOMINIOS_DISENO}` : q;
   const RIGOR_ORDEN = f => "ABCDE".indexOf(f.rig) < 0 ? 5 : "ABCDE".indexOf(f.rig);
   function retrieve(q) {

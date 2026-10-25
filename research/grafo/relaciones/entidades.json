@@ -1004,6 +1004,11 @@
   "nombre": "Brecha percepción–realidad (autoestimación vs. desempeño)",
   "tipo": "concepto"
  },
+ "brecha_proteccion_global": {
+  "id": "brecha_proteccion_global",
+  "nombre": "Brecha mundial de protección de seguros",
+  "tipo": "resultado"
+ },
  "brecha_proteccion_nino_peru": {
   "id": "brecha_proteccion_nino_peru",
   "nombre": "Brecha de protección ante El Niño en Perú (~7% del daño asegurado en 2017)",
@@ -1357,6 +1362,11 @@
  "c_conducta_local_discurso_importado": {
   "id": "c_conducta_local_discurso_importado",
   "nombre": "La conducta es local y el discurso es importado: LatAm/España consumen el marco interpretativo traducido del inglés (H20)",
+  "tipo": "afirmacion"
+ },
+ "c_confianza_peru_23_25": {
+  "id": "c_confianza_peru_23_25",
+  "nombre": "La confianza plena en aseguradoras en Perú ronda 23-25%",
   "tipo": "afirmacion"
  },
  "c_conformidad_universal_estable": {
@@ -3228,6 +3238,11 @@
   "id": "confianza_aseguradora",
   "nombre": "Confianza del consumidor en la aseguradora",
   "tipo": "constructo"
+ },
+ "confianza_aseguradoras_peru": {
+  "id": "confianza_aseguradoras_peru",
+  "nombre": "Confianza de los peruanos en las aseguradoras",
+  "tipo": "resultado"
  },
  "confianza_capacidades_evaluacion": {
   "id": "confianza_capacidades_evaluacion",
@@ -7989,6 +8004,11 @@
   "nombre": "Peligro percibido de la emergencia",
   "tipo": "constructo"
  },
+ "penetracion_latam_2024": {
+  "id": "penetracion_latam_2024",
+  "nombre": "Penetración de seguros en Latinoamérica (3,2% del PBI en 2024)",
+  "tipo": "resultado"
+ },
  "penetracion_peru": {
   "id": "penetracion_peru",
   "nombre": "Penetración de seguros en Perú",
@@ -9478,6 +9498,11 @@
   "id": "riesgo_moral",
   "nombre": "Riesgo moral en seguros de salud",
   "tipo": "concepto"
+ },
+ "riesgo_no_protegido_43": {
+  "id": "riesgo_no_protegido_43",
+  "nombre": "Riesgo mundial no protegido por activos ni seguros (~43% en 2022)",
+  "tipo": "resultado"
  },
  "riesgos_ia_consumidor_financiero": {
   "id": "riesgos_ia_consumidor_financiero",

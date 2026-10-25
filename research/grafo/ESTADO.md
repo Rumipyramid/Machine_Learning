@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 30 | 9,527 líneas |
+| Nodes (`_nodes/`) | 30 | 9,530 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
-| Fuentes en el ledger | 1060 | 🟢A 347 · 🔵B 193 · 🟡C 229 · 🟠D 233 · 🔴E 43 · otras/sin clasificar 15 |
+| Fuentes en el ledger | 1064 | 🟢A 347 · 🔵B 195 · 🟡C 230 · 🟠D 234 · 🔴E 43 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 230 | recíprocas: 230 de 230 (100%) |
-| Fuentes citadas por ≥1 node | 1023 de 1060 | 97% del ledger; **37 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 1027 de 1064 | 97% del ledger; **37 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 221 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 1060 de 1060 fuentes (100%) | 2319 relaciones · 125 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 1064 de 1064 fuentes (100%) | 2323 relaciones · 126 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion` y sus nodos de dominio `diseno-*`, `innovacion-evidencia`)
@@ -92,7 +92,7 @@
 | 2026-10-10 | 74 | 874 | 36 | ██████████████████ |
 | 2026-10-11 | 5 | 879 | 0 | █ |
 | 2026-10-12 | 97 | 976 | 43 | ████████████████████████ |
-| 2026-10-25 | 84 | 1060 | 50 | █████████████████████ |
+| 2026-10-25 | 88 | 1064 | 52 | ██████████████████████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -110,7 +110,7 @@
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-11 | `614bf74` | 879 | 20 | 5 | 142 | 770 | 2033 | 16 | 20 | 22 |
 | 2026-10-12 | `90d0074` | 976 | 20 | 5 | 158 | 870 | 2215 | 16 | 20 | 22 |
-| 2026-10-25 | `f786a03` | 984 | 20 | 5 | 158 | 878 | 2215 | 16 | 20 | 22 |
+| 2026-10-25 | `8a0751f` | 1060 | 30 | 5 | 230 | 1023 | 1124 | 16 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -141,36 +141,36 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 1124 | 266 | 139 | 24/24 | 2026-10-12 | 2026-10-12 v4.1 |
-| `diseno-producto-digital` | 781 | 148 | 60 | 5/5 | n/d | 2026-10-25 v1.0 |
-| `convergencia-psicologia-economia-ia` | 262 | 121 | 51 | 14/14 | 2026-10-12 | 2026-10-12 v1.0 |
+| `tendencias-diseno-innovacion` | 1124 | 266 | 139 | 24/24 | 2026-10-25 | 2026-10-25 v4.1 |
+| `diseno-producto-digital` | 781 | 148 | 60 | 5/5 | 2026-10-25 | 2026-10-25 v1.0 |
+| `convergencia-psicologia-economia-ia` | 262 | 121 | 51 | 14/14 | 2026-10-25 | 2026-10-25 v1.0 |
 | `fenomenos-psicologicos` | 561 | 115 | 112 | 10/10 | 2026-10-25 | 2026-10-25 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
-| `fenomeno-el-nino-impacto-personas` | 413 | 59 | 32 | 6/6 | 2026-10-07 | 2026-10-07 v1.1 |
-| `mecanismos-seguros-salud` | 358 | 57 | 35 | 12/12 | 2026-10-12 | 2026-10-12 v1.2 |
-| `innovacion-evidencia` | 329 | 55 | 22 | 2/2 | n/d | 2026-10-25 v1.0 |
-| `conducta-humano-ia` | 167 | 51 | 32 | 11/11 | 2026-10-12 | 2026-10-12 v1.1 |
-| `modelo-salud-ia-farmacias-peru` | 674 | 47 | 28 | 7/7 | 2026-10-12 | 2026-10-12 v1.0 |
-| `diseno-servicios-politicas-salud` | 57 | 41 | 22 | 5/5 | n/d | 2026-10-25 v1.0 |
-| `proyecto-back-to-basics-ffvv-vida` | 940 | 34 | 30 | 15/15 | 2026-10-12 | 2026-10-12 v1.4 |
-| `transicion-venta-fria-a-opt-in` | 415 | 31 | 12 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 353 | 26 | 12 | 20/20 | 2026-10-11 | 2026-10-11 v1.1 |
-| `futuro-asesores-seguros-venta-digital` | 392 | 23 | 2 | 9/9 | 2026-10-12 | 2026-10-12 v1.0 |
-| `rentabilidad-modelos-seguros` | 86 | 19 | 4 | 9/9 | n/d | 2026-10-25 v1.0 |
+| `fenomeno-el-nino-impacto-personas` | 413 | 59 | 32 | 6/6 | 2026-10-25 | 2026-10-25 v1.1 |
+| `mecanismos-seguros-salud` | 358 | 57 | 35 | 12/12 | 2026-10-25 | 2026-10-25 v1.2 |
+| `innovacion-evidencia` | 329 | 55 | 22 | 2/2 | 2026-10-25 | 2026-10-25 v1.0 |
+| `conducta-humano-ia` | 167 | 51 | 32 | 11/11 | 2026-10-25 | 2026-10-25 v1.1 |
+| `modelo-salud-ia-farmacias-peru` | 674 | 47 | 28 | 7/7 | 2026-10-25 | 2026-10-25 v1.0 |
+| `diseno-servicios-politicas-salud` | 57 | 41 | 22 | 5/5 | 2026-10-25 | 2026-10-25 v1.0 |
+| `proyecto-back-to-basics-ffvv-vida` | 940 | 34 | 30 | 15/15 | 2026-10-25 | 2026-10-25 v1.4 |
+| `transicion-venta-fria-a-opt-in` | 415 | 31 | 12 | 5/5 | 2026-10-25 | 2026-10-25 v1.0 |
+| `seguros-comportamiento-mundo-peru` | 356 | 30 | 14 | 20/20 | 2026-10-25 | 2026-10-25 v1.1 |
+| `futuro-asesores-seguros-venta-digital` | 392 | 23 | 2 | 9/9 | 2026-10-25 | 2026-10-25 v1.0 |
+| `rentabilidad-modelos-seguros` | 86 | 19 | 4 | 9/9 | 2026-10-25 | 2026-10-25 v1.0 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 256 | 17 | 11 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |
 | `material-visual-venta-consultiva` | 379 | 17 | 12 | 10/10 | 2026-10-12 | 2026-10-12 v1.1 |
-| `diseno-espacios-ciudad` | 87 | 15 | 10 | 4/4 | n/d | 2026-10-25 v1.0 |
-| `diseno-estrategico-organizacional` | 56 | 15 | 7 | 3/3 | n/d | 2026-10-25 v1.0 |
-| `diseno-producto-fisico-industrial` | 52 | 15 | 10 | 4/4 | n/d | 2026-10-25 v1.0 |
-| `diseno-sostenibilidad-circularidad` | 58 | 15 | 7 | 4/4 | n/d | 2026-10-25 v1.0 |
-| `diseno-social-participativo` | 59 | 14 | 9 | 3/3 | n/d | 2026-10-25 v1.0 |
-| `behavioral-design-estado-disciplina` | 327 | 12 | 11 | 13/13 | 2026-10-12 | 2026-10-12 v1.1 |
-| `recomendaciones-acciones-2026` | 72 | 10 | 1 | 3/3 | n/d | 2026-10-25 v1.0 |
+| `diseno-espacios-ciudad` | 87 | 15 | 10 | 4/4 | 2026-10-25 | 2026-10-25 v1.0 |
+| `diseno-estrategico-organizacional` | 56 | 15 | 7 | 3/3 | 2026-10-25 | 2026-10-25 v1.0 |
+| `diseno-producto-fisico-industrial` | 52 | 15 | 10 | 4/4 | 2026-10-25 | 2026-10-25 v1.0 |
+| `diseno-sostenibilidad-circularidad` | 58 | 15 | 7 | 4/4 | 2026-10-25 | 2026-10-25 v1.0 |
+| `diseno-social-participativo` | 59 | 14 | 9 | 3/3 | 2026-10-25 | 2026-10-25 v1.0 |
+| `behavioral-design-estado-disciplina` | 327 | 12 | 11 | 13/13 | 2026-10-25 | 2026-10-25 v1.1 |
+| `recomendaciones-acciones-2026` | 72 | 10 | 1 | 3/3 | 2026-10-25 | 2026-10-25 v1.0 |
 | `glosario-seguro-vida-peru` | 218 | 8 | 4 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
-| `venta-vida-digital-hibrida-latam` | 236 | 8 | 4 | 5/5 | 2026-10-12 | 2026-10-12 v1.0 |
+| `venta-vida-digital-hibrida-latam` | 236 | 8 | 4 | 5/5 | 2026-10-25 | 2026-10-25 v1.0 |
 | `glosario-seguro-salud-peru` | 198 | 6 | 5 | 6/6 | 2026-10-11 | 2026-10-11 v1.0 |
 | `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-26 v1.2 |
-| `modelo-personas-sinteticas` | 81 | 0 | 0 | 7/7 | 2026-10-07 | 2026-10-07 v1.0 |
+| `modelo-personas-sinteticas` | 81 | 0 | 0 | 7/7 | 2026-10-25 | 2026-10-25 v1.0 |
 
 ## 7. Límites declarados de esta medición
 
