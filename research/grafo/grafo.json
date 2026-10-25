@@ -3,8 +3,8 @@
   {
    "id": "behavioral-design-estado-disciplina",
    "type": "node",
-   "lines": 320,
-   "cites": 9,
+   "lines": 321,
+   "cites": 10,
    "design": false
   },
   {
@@ -38,8 +38,8 @@
   {
    "id": "fenomenos-psicologicos",
    "type": "node",
-   "lines": 547,
-   "cites": 106,
+   "lines": 569,
+   "cites": 117,
    "design": false
   },
   {
@@ -64,6 +64,13 @@
    "design": false
   },
   {
+   "id": "lealtad-gamificacion-recompensas-retail",
+   "type": "node",
+   "lines": 222,
+   "cites": 44,
+   "design": false
+  },
+  {
    "id": "material-visual-venta-consultiva",
    "type": "node",
    "lines": 377,
@@ -80,7 +87,7 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 354,
+   "lines": 355,
    "cites": 53,
    "design": false
   },
@@ -101,7 +108,7 @@
   {
    "id": "proyecto-back-to-basics-ffvv-vida",
    "type": "node",
-   "lines": 932,
+   "lines": 976,
    "cites": 33,
    "design": false
   },
@@ -115,7 +122,7 @@
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2001,
+   "lines": 2002,
    "cites": 274,
    "design": true
   },
@@ -7362,6 +7369,510 @@
    "autor": "Pacífico Seguros",
    "anio": "s.f. (vigente 2026)",
    "huerfana": false
+  },
+  {
+   "id": "F-802",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Endowed Progress Effect: How Artificial Advancement Increases Effort (revista JCR según fuente secundaria; vol. no verificado)",
+   "autor": "Nunes, J. C. & Drèze, X.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-803",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Goal-Gradient Hypothesis Resurrected (revista y datos no confirmados en la búsqueda)",
+   "autor": "Kivetz, R.; Urminsky, O.; Zheng, Y.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-804",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "40 years of loyalty programs: how effective are they? Generalizations from a meta-analysis (J. Acad. Mark. Sci. 50(1):147-173; DOI 10.1007/s",
+   "autor": "Belli, A. et al.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-805",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Do loyalty programs really enhance behavioral loyalty? An empirical analysis accounting for self-selecting members (Int. J. Res. Mark. 24(1)",
+   "autor": "Leenheer, J.; van Heerde, H.; Bijmolt, T.; Smidts, A.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-806",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Long-Term Impact of Loyalty Programs on Consumer Purchase Behavior and Loyalty (J. Mark. 71(4):19-35)",
+   "autor": "Liu, Y.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-807",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Fun Shopping: A Randomized Field Experiment on Gamification (Inf. Syst. Res. 34(2):766-785; DOI 10.1287/isre.2022.1147)",
+   "autor": "Ho, Y.-J.; Liu, S.; Wang, L.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-808",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How push messaging impacts consumer spending and reward redemption in store-loyalty programs (Int. J. Res. Mark.; revista inferida del ident",
+   "autor": "Bies, Bronnenberg & Gijsbrechts (iniciales no verificadas)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-809",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Estudio sobre canje de recompensas en programa sin caducidad (Int. J. Res. Mark.; título exacto no verificado)",
+   "autor": "Dorotic, M.; Verhoef, P. C. et al. (lista completa no verificada)",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-810",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Estudio sobre caducidad de puntos (Marketing Letters 28(4); título exacto no verificado)",
+   "autor": "Breugelmans, E. & Liu-Thompkins, Y.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-811",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Efecto de ventas de un programa de frecuencia de retail (título y revista no verificados; leído solo vía revisión secundaria)",
+   "autor": "Taylor, G. A. & Neslin, S. A.",
+   "anio": "2005",
+   "huerfana": false
+  },
+  {
+   "id": "F-812",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Grocery retail loyalty program effects: self-selection or purchase behavior change? (J. Acad. Mark. Sci.)",
+   "autor": "Autores no confirmados en la búsqueda (atribución de memoria, sin verificar: Meyer-Waarden & Benavent)",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-813",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Does Customer Demotion Jeopardize Loyalty? (J. Mark.)",
+   "autor": "Wagner, T.; Hennig-Thurau, T.; Rudolph, T.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-814",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Estudio de retiro de estatus en banco minorista de Corea del Sur (Asia Marketing Journal 22(1))",
+   "autor": "Chang (nombre completo no verificado)",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-815",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Designing successful temporary loyalty programs: An exploratory study on retailer and country differences (Int. J. Res. Mark.; año inferido ",
+   "autor": "Autores no verificados",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-816",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Impacto de programas de suscripción en la conducta del cliente (J. Mark. Res.; año 2022/2023 según la fuente)",
+   "autor": "Iyengar, R.; Park, Y.-H.; Yu, Q. (título exacto no verificado)",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-817",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Suscripción y conducta de compra en un gran retailer en línea (PACIS 2023; título exacto no verificado)",
+   "autor": "Fang; Wang; Wang; Leung",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-818",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Gamified in-store mobile marketing: The mixed effect of gamified point-of-purchase advertising (J. Retail. Consum. Serv. 50:298-304)",
+   "autor": "Högberg, J., Shams, P. & Wästlund, E.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-819",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Gamified loyalty programs in online grocery retail: A mixed-methods investigation of consumer engagement and behaviour (J. Retail. Consum. S",
+   "autor": "Autores no verificados",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-820",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "How does gamification affect customer behavior and revenue?",
+   "autor": "Autores y revista no verificados",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-821",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Gamificación y compra por impulso en Taobao/Tmall (PACIS 2019)",
+   "autor": "Autores no verificados",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-822",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Mecánicas de gamificación en compra grupal en línea (AMCIS 2019; Pinduoduo)",
+   "autor": "Autores no verificados",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-823",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "'I Am So Done' — Starbucks New Reward Program Has Customers Fuming",
+   "autor": "The Takeout",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-824",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Starbucks Rewards program changes 3/10/2026 (hilo y nota)",
+   "autor": "Slickdeals (foro de usuarios)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-825",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Starbucks Rewards changes devaluation elite status",
+   "autor": "One Mile at a Time",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-826",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Starbucks defends changes to rewards program; The new Starbucks Rewards program confused a lot of people",
+   "autor": "Fast Casual / Motley Fool",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-827",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Shoppers Drug Mart controversy (Optimum)",
+   "autor": "Castanet Kamloops (Canadian Press)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-828",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Have loyalty programs fallen miles behind customer needs?",
+   "autor": "Canadian Grocer",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-829",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "CMA probe into supermarket loyalty comes to nothing",
+   "autor": "Decision Marketing (UK)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-830",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Supermarkets hike prices to make loyalty card customers feel like they are getting a discount, new study claims",
+   "autor": "City A.M. (sobre estudio de Which?)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-831",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Formulario 10-K FY2016",
+   "autor": "Starbucks Corp.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-832",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Starbucks brings back chance to win free coffee (y nota 2017 'confused a lot of people')",
+   "autor": "Motley Fool (citando llamadas de resultados de Starbucks)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-833",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Starbucks Loyalty Program: Complete Breakdown of the 2026 Rewards Overhaul",
+   "autor": "Joy.so (blog de proveedor de lealtad)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-834",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Amazon Prime vs Walmart+ (informes de CIRP en Substack)",
+   "autor": "CIRP (Consumer Intelligence Research Partners)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-835",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Notas sobre Mifarma/Inkafarma (Monedero del Ahorro >12 M de suscriptores; ingresos 3T2020 +9,6%)",
+   "autor": "Peru Retail",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-836",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Cencosud cambia su programa de puntos: duplica la acumulación y reduce el mínimo para canjear",
+   "autor": "Peru Retail",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-837",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Grupo Falabella dice adiós a CMR Puntos y presenta Fpuntos",
+   "autor": "Peru Retail",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-838",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Pasivos del retail por canje de puntos superan los US$ 60 millones",
+   "autor": "Diario Financiero",
+   "anio": "2011",
+   "huerfana": true
+  },
+  {
+   "id": "F-839",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Programas de fidelización prefieren descuentos en productos",
+   "autor": "Nielsen (citado por Diario Financiero / CERET U. de Chile)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-840",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "More than 50% of Middle East and Africa consumers in loyalty programmes want freebies",
+   "autor": "Euromonitor International",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-841",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Loyalty programmes draw in shoppers",
+   "autor": "Business Report / Nielsen",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-842",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "The Sisyphean tasks of Pinduoduo's gamification (partes 1 y 2)",
+   "autor": "ChinaTalk",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-843",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Loyalty plans emerge as new battleground for drug chains (y notas afines)",
+   "autor": "Chain Drug Review",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-844",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "QSR gamification mechanics",
+   "autor": "Open Loyalty (proveedor de software)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-845",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Estudio de retail alimentario en Brasil",
+   "autor": "CVA Solutions (citado por ESM Magazine)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-846",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Ahora se podrán acumular CMR Puntos en Tottus con cualquier medio de pago",
+   "autor": "Chocale.cl",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-847",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "I knew it would happen: Remembered probabilities of once-future things (Organizational Behavior and Human Performance, 13(1):1-16)",
+   "autor": "Fischhoff, B.; Beyth, R.",
+   "anio": "1975",
+   "huerfana": false
+  },
+  {
+   "id": "F-848",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Hindsight ≠ foresight: The effect of outcome knowledge on judgment under uncertainty (Journal of Experimental Psychology: Human Perception a",
+   "autor": "Fischhoff, B.",
+   "anio": "1975",
+   "huerfana": false
+  },
+  {
+   "id": "F-849",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The hindsight bias: A meta-analysis (Organizational Behavior and Human Decision Processes, 48(1):147-168)",
+   "autor": "Christensen-Szalanski, J. J. J.; Willham, C. F.",
+   "anio": "1991",
+   "huerfana": false
+  },
+  {
+   "id": "F-850",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A meta-analysis of research on hindsight bias (Basic and Applied Social Psychology)",
+   "autor": "Guilbault, R. L.; Bryant, F. B.; Brockway, J. H.; Posavac, E. J.",
+   "anio": "2004",
+   "huerfana": false
+  },
+  {
+   "id": "F-851",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Réplica y extensión de Fischhoff (1975) y Slovic y Fischhoff (1977) (Journal of Experimental Social Psychology, 104154)",
+   "autor": "Chen, J. et al.",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-852",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Hindsight Bias: A Preregistered Replication Study Of Fischhoff (1975) With An Extension On Depressive Symptoms As Moderation (prerregistro; ",
+   "autor": "Seda et al.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-853",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "On the failure to eliminate hypotheses in a conceptual task (Quarterly Journal of Experimental Psychology, 12(3):129-140) — referencia compl",
+   "autor": "Wason, P. C.",
+   "anio": "1960",
+   "huerfana": false
+  },
+  {
+   "id": "F-854",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Confirmation bias: A ubiquitous phenomenon in many guises (Review of General Psychology, 2(2):175-220)",
+   "autor": "Nickerson, R. S.",
+   "anio": "1998",
+   "huerfana": false
+  },
+  {
+   "id": "F-855",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Confirmation, disconfirmation, and information in hypothesis testing (Psychological Review, 94(2):211-228)",
+   "autor": "Klayman, J.; Ha, Y.-W.",
+   "anio": "1987",
+   "huerfana": false
+  },
+  {
+   "id": "F-856",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Feeling validated versus being correct: A meta-analysis of selective exposure to information (Psychological Bulletin, 135(4):555-588)",
+   "autor": "Hart, W.; Albarracín, D.; Eagly, A. H.; Brechan, I.; Lindberg, M. J.; Merrill, L.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-857",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A comparison of disconfirmatory, confirmatory and control strategies on Wason's 2-4-6 task (Quarterly Journal of Experimental Psychology)",
+   "autor": "Gorman, M. E.; Gorman, M. E.",
+   "anio": "1984",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -7385,6 +7896,12 @@
   },
   {
    "s": "behavioral-design-estado-disciplina",
+   "t": "lealtad-gamificacion-recompensas-retail",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
    "recip": true
@@ -7560,6 +8077,12 @@
   {
    "s": "fenomenos-psicologicos",
    "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "lealtad-gamificacion-recompensas-retail",
    "k": "wikilink",
    "recip": true
   },
@@ -7666,6 +8189,30 @@
    "recip": true
   },
   {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "mecanismos-seguros-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
    "s": "material-visual-venta-consultiva",
    "t": "behavioral-design-estado-disciplina",
    "k": "wikilink",
@@ -7746,6 +8293,12 @@
   {
    "s": "mecanismos-seguros-salud",
    "t": "glosario-seguro-salud-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "lealtad-gamificacion-recompensas-retail",
    "k": "wikilink",
    "recip": true
   },
@@ -7992,6 +8545,12 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "lealtad-gamificacion-recompensas-retail",
    "k": "wikilink",
    "recip": true
   },
@@ -12270,10 +12829,290 @@
    "s": "fenomeno-el-nino-impacto-personas",
    "t": "F-801",
    "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-802",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-803",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-804",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-805",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-806",
+   "k": "cita"
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "F-807",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-807",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-808",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-809",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-810",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-811",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-812",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-813",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-814",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-815",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-816",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-817",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-818",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-819",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-820",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-821",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-822",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-823",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-824",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-825",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-826",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-827",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-828",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-829",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-830",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-831",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-832",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-833",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-834",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-835",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-836",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-837",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-839",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-840",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-841",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-842",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-843",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-844",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-845",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-846",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-847",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-848",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-849",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-850",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-851",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-852",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-853",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-854",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-855",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-856",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-857",
+   "k": "cita"
   }
  ],
  "meta": {
-  "generado": "2026-10-07",
+  "generado": "2026-10-25",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -12535,906 +13374,32 @@
      "C": 3,
      "D": 23
     }
+   },
+   {
+    "fecha": "2026-10-15",
+    "nuevas": 45,
+    "acumuladas": 845,
+    "AB": 17,
+    "rigor": {
+     "A": 16,
+     "C": 10,
+     "D": 15,
+     "E": 3,
+     "B": 1
+    }
+   },
+   {
+    "fecha": "2026-10-25",
+    "nuevas": 11,
+    "acumuladas": 856,
+    "AB": 11,
+    "rigor": {
+     "A": 10,
+     "B": 1
+    }
    }
   ],
   "hist": [
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-20",
-    "commit": "e8ba645",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-21",
-    "commit": "6324fc0",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-22",
-    "commit": "8cc091a",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-23",
-    "commit": "396f4cc",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-24",
-    "commit": "4d6b7c5",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-25",
-    "commit": "c5aadfa",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-26",
-    "commit": "e68ecd4",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-27",
-    "commit": "29b2246",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-28",
-    "commit": "5612e59",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-29",
-    "commit": "a1450e0",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-30",
-    "commit": "0386d20",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-31",
-    "commit": "426eec7",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-01",
-    "commit": "a2807ae",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-02",
-    "commit": "3156ce7",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-03",
-    "commit": "f6292dc",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-04",
-    "commit": "bf1c531",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-05",
-    "commit": "e0a7da3",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-06",
-    "commit": "0cc2b76",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-07",
-    "commit": "6c7c30a",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-08",
-    "commit": "2937e16",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-09",
-    "commit": "856aaf0",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-10",
-    "commit": "fb4eefb",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-11",
-    "commit": "ff84439",
-    "fuente": "git"
-   },
    {
     "fuentes": 468,
     "rigor": {
@@ -14255,27 +14220,26 @@
     "fuente": "git"
    },
    {
-    "fuentes": 528,
+    "fuentes": 645,
     "rigor": {
-     "B": 96,
-     "A": 144,
-     "C": 123,
-     "D": 122,
+     "B": 107,
+     "A": 179,
+     "C": 169,
+     "D": 143,
      "?": 14,
-     "E": 29
+     "E": 33
     },
-    "nodes": 16,
+    "nodes": 17,
     "outputs": 4,
-    "wikilinks": 84,
+    "wikilinks": 96,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 423,
+    "fuentes_citadas_en_nodes": 540,
     "diseno": {
      "hyp": {
-      "abierta": 17,
-      "parcial": 13,
-      "refutada": 1,
-      "respaldada": 2,
-      "otra": 1
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
      },
      "rules": 22,
      "rules_cited": 22,
@@ -14286,35 +14250,34 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1948,
-     "cites": 259
+     "lines": 2000,
+     "cites": 273
     },
     "fecha": "2026-10-03",
-    "commit": "0781a57",
+    "commit": "d80e14b",
     "fuente": "git"
    },
    {
-    "fuentes": 528,
+    "fuentes": 740,
     "rigor": {
-     "B": 96,
-     "A": 144,
-     "C": 123,
-     "D": 122,
+     "B": 110,
+     "A": 268,
+     "C": 171,
+     "D": 144,
      "?": 14,
-     "E": 29
+     "E": 33
     },
-    "nodes": 16,
+    "nodes": 18,
     "outputs": 4,
-    "wikilinks": 84,
+    "wikilinks": 110,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 423,
+    "fuentes_citadas_en_nodes": 636,
     "diseno": {
      "hyp": {
-      "abierta": 17,
-      "parcial": 13,
-      "refutada": 1,
-      "respaldada": 2,
-      "otra": 1
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
      },
      "rules": 22,
      "rules_cited": 22,
@@ -14325,35 +14288,34 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1948,
-     "cites": 259
+     "lines": 2001,
+     "cites": 274
     },
     "fecha": "2026-10-04",
-    "commit": "ab6bf54",
+    "commit": "b635cd4",
     "fuente": "git"
    },
    {
-    "fuentes": 528,
+    "fuentes": 740,
     "rigor": {
-     "B": 96,
-     "A": 144,
-     "C": 123,
-     "D": 122,
+     "B": 110,
+     "A": 268,
+     "C": 171,
+     "D": 144,
      "?": 14,
-     "E": 29
+     "E": 33
     },
-    "nodes": 16,
+    "nodes": 18,
     "outputs": 4,
-    "wikilinks": 84,
+    "wikilinks": 110,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 423,
+    "fuentes_citadas_en_nodes": 636,
     "diseno": {
      "hyp": {
-      "abierta": 17,
-      "parcial": 13,
-      "refutada": 1,
-      "respaldada": 2,
-      "otra": 1
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
      },
      "rules": 22,
      "rules_cited": 22,
@@ -14364,11 +14326,11 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1948,
-     "cites": 259
+     "lines": 2001,
+     "cites": 274
     },
     "fecha": "2026-10-05",
-    "commit": "5416451",
+    "commit": "643ba4f",
     "fuente": "git"
    },
    {
@@ -14411,27 +14373,26 @@
     "fuente": "git"
    },
    {
-    "fuentes": 588,
+    "fuentes": 800,
     "rigor": {
-     "B": 110,
-     "A": 163,
-     "C": 126,
-     "D": 145,
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
      "?": 15,
-     "E": 29
+     "E": 33
     },
-    "nodes": 17,
+    "nodes": 19,
     "outputs": 5,
-    "wikilinks": 90,
+    "wikilinks": 116,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 481,
+    "fuentes_citadas_en_nodes": 694,
     "diseno": {
      "hyp": {
-      "abierta": 17,
-      "parcial": 13,
-      "refutada": 1,
-      "respaldada": 2,
-      "otra": 1
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
      },
      "rules": 22,
      "rules_cited": 22,
@@ -14442,11 +14403,657 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1948,
-     "cites": 259
+     "lines": 2001,
+     "cites": 274
     },
     "fecha": "2026-10-07",
-    "commit": "9520c9d",
+    "commit": "7d6f508",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-08",
+    "commit": "a0bc891",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-09",
+    "commit": "de3c9ed",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-10",
+    "commit": "da11708",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-11",
+    "commit": "bf95a7c",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-12",
+    "commit": "e54ba41",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-13",
+    "commit": "0c0cb1b",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-14",
+    "commit": "0798365",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-15",
+    "commit": "d2adac5",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-16",
+    "commit": "c0a2c03",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-17",
+    "commit": "0c09965",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-18",
+    "commit": "2af3787",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-19",
+    "commit": "e34cc82",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-20",
+    "commit": "9ec515f",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-21",
+    "commit": "604f16e",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-22",
+    "commit": "a046a98",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-23",
+    "commit": "bbc486e",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-24",
+    "commit": "00d6d2e",
     "fuente": "git"
    }
   ],
@@ -14466,7 +15073,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 2001,
+   "lines": 2002,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

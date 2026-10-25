@@ -1,9 +1,9 @@
 # Fenómenos psicológicos clásicos: qué sobrevive a la replicación
 
 > Documento de investigación **acumulativo** — capa transversal del segundo cerebro. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-04 · Última actualización: 2026-10-04 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-04 · Última actualización: 2026-10-25 · Versión: **v1.0**
 > Origen: pedido del usuario: *"busca fenómenos psicológicos como el registrado por Asch, el de Milgram o los estudios en percepción del tiempo, forma, color, cognición encarnada, etc. como una capa más de conocimiento"*.
-> Método: cuatro investigaciones en paralelo (registro empírico + teórico/crítico); cada fuente verificada contra su resumen o ficha oficial. Fuentes **F-647 a F-741** (nuevas) + F-220 a F-226 y F-545 (ya en el ledger).
+> Método: cuatro investigaciones en paralelo (registro empírico + teórico/crítico); cada fuente verificada contra su resumen o ficha oficial. Fuentes **F-647 a F-741** (nuevas) + F-220 a F-226 y F-545 (ya en el ledger) + **F-847 a F-857** (2026-10-25: sesgo retrospectivo y sesgo de confirmación).
 
 ## 0. 🎯 Alcance: por qué es una "capa"
 
@@ -23,7 +23,7 @@ Los otros nodes del cerebro son **temas** (seguros, diseño, IA). Este es una **
 | 🟠 EN DISPUTA | El efecto mismo se discute (dato vs. artefacto de medición) | Hay crítica metodológica publicada y respuesta, sin cierre |
 | 🔴 NO REPLICADO | Réplicas de alto poder no lo encuentran | Registered Replication Report, Many Labs o réplica directa preregistrada con efecto ≈ 0 |
 
-**Tablero (44 fenómenos):** 🟢 ROBUSTO 13 · 🔵 REPLICADO CON MATICES 19 · 🟡 MIXTO 2 · 🟠 EN DISPUTA 2 · 🔴 NO REPLICADO 8
+**Tablero (46 fenómenos):** 🟢 ROBUSTO 13 · 🔵 REPLICADO CON MATICES 21 · 🟡 MIXTO 2 · 🟠 EN DISPUTA 2 · 🔴 NO REPLICADO 8
 
 **Dato verificado vs. inferencia:** "Qué es", "Replicación" y "Tamaño" vienen de los resúmenes oficiales verificados (cuando una cifra viene de una fuente secundaria se dice). "Para diseño, seguros e IA" es **inferencia** de este cerebro: hipótesis a probar, no hallazgo.
 
@@ -74,6 +74,8 @@ Los otros nodes del cerebro son **temas** (seguros, diseño, IA). Este es una **
 | Descuento hiperbólico / sesgo del presente | 🔵 REPLICADO CON MATICES | §5 | F-735 |
 | Ilusión de control | 🔵 REPLICADO CON MATICES | §5 | F-737 |
 | Test del malvavisco (demora de la gratificación) | 🟡 MIXTO | §5 | F-739 |
+| Sesgo retrospectivo ("ya lo sabía") | 🔵 REPLICADO CON MATICES | §5 | F-848 |
+| Sesgo de confirmación | 🔵 REPLICADO CON MATICES | §5 | F-853 |
 
 ## 2. Influencia social y obediencia
 
@@ -479,9 +481,27 @@ Los otros nodes del cerebro son **temas** (seguros, diseño, IA). Este es una **
 - **Para diseño, seguros e IA (inferencia):** Advierte contra usar rasgos de 'autocontrol' como predictores fuertes de conducta financiera (p. ej., para segmentar o tarifar); el contexto socioeconómico explica gran parte. Coherente con no sobre-dimensionar el sesgo del presente en lapuerta.
 - **Fuentes:** F-739, F-740
 
+### 5.14 Sesgo retrospectivo ("ya lo sabía") — 🔵 REPLICADO CON MATICES
+
+- **Qué es:** Después de conocer un desenlace, la gente lo juzga más predecible de lo que era y recuerda haberlo anticipado mejor de lo que lo hizo.
+- **Replicación:** Dos meta-análisis lo confirman: 122 estudios con efecto pequeño (r = 0,17, F-849) y 95 estudios con d = 0,39 (F-850). Una réplica grande de 2021 lo reproduce (N = 890, d = 0,60, F-851). Matiz: una réplica preregistrada de 2025 del experimento original de Fischhoff falló (F-852, sin revisión por pares confirmada), y las preguntas tipo almanaque inflan el efecto (F-849).
+- **Tamaño del efecto:** r = 0,17 (F-849); d = 0,39 (IC 95%: 0,36-0,42) (F-850)
+- **Mecanismo:** El desenlace se integra a lo que se sabe y reescribe el recuerdo de lo que se esperaba (F-847, F-848). Las manipulaciones para reducirlo no lo redujeron en el meta-análisis (F-850).
+- **Para diseño, seguros e IA (inferencia):** En la revisión de siniestros o de decisiones de suscripción, el evaluador que ya conoce el resultado sobreestima lo previsible que era: riesgo de culpar al cliente o al analista. Conviene registrar las estimaciones antes del desenlace. También explica por qué las "profecías cumplidas" se leen como aciertos cuando se publicaron después del hecho (ver el expediente de Mother Shipton en `cronicas/`).
+- **Fuentes:** F-847, F-848, F-849, F-850, F-851, F-852
+
+### 5.15 Sesgo de confirmación — 🔵 REPLICADO CON MATICES
+
+- **Qué es:** La tendencia a buscar, interpretar y recordar la información que confirma lo que ya se cree.
+- **Replicación:** El fenómeno general es amplio y consistente (revisión de F-854). El meta-análisis de exposición selectiva da una preferencia moderada por la información afín, d = 0,36 (F-856). Matices: (1) en la tarea clásica 2-4-6 (F-853), parte de lo que se llamó sesgo es una estrategia de prueba positiva que funciona bien en la mayoría de los problemas y falla solo en algunos (F-855); (2) el sesgo se debilita cuando el tema importa poco, la persona es poco cerrada o tiene alta confianza, y se invierte cuando la información contraria sirve a una meta presente (F-856); (3) instruir a buscar refutaciones puede mejorar el desempeño en la tarea 2-4-6 (F-857).
+- **Tamaño del efecto:** d = 0,36 en exposición selectiva (F-856)
+- **Mecanismo:** Motivación de defensa (sentirse validado) frente a motivación de precisión (acertar) (F-856); además, un atajo cognitivo de probar los casos esperados (F-855).
+- **Para diseño, seguros e IA (inferencia):** Un cliente que desconfía de las aseguradoras busca y recuerda los casos de reclamos rechazados: los mensajes deben servir a una meta presente (por ejemplo, entender qué cubre su póliza) para que la información contraria sea aceptada. En investigación interna, buscar a propósito la contraevidencia (como hacen `/seeker` y `/trinidad`) es la defensa directa. En el público, explica que cada liberación oficial de archivos sobre ovnis "sin nada" se lea como prueba de ocultamiento (ver el expediente de las liberaciones de EE. UU. en `cronicas/`).
+- **Fuentes:** F-853, F-854, F-855, F-856, F-857
+
 ## 6. ⚖️ Patrones transversales (lectura de este cerebro)
 
-Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita los casos que lo sostienen.
+Lo que sigue es **inferencia** a partir de los 46 fenómenos; cada patrón cita los casos que lo sostienen.
 
 1. **Lo que cae son los efectos "sorprendentes" de manipulación mínima.** Calidez de una taza (F-693 → F-694), peso de un portapapeles (F-703 → F-704), lavarse las manos tras una falta (F-710 → F-711), palabras de vejez que hacen caminar lento (F-705 → F-706), autocontrol que "se gasta" (F-707 → F-708, F-709), el rojo que empeora el rendimiento (F-679 → F-680) y la predicción central de la disonancia (F-662 → F-663). Todos comparten: un estímulo sutil, un efecto grande y muestras pequeñas en el original. Es el mismo perfil que la Open Science Collaboration encontró a escala: 36% de réplicas significativas y efectos de la mitad del tamaño (F-712).
 2. **Lo que sobrevive son los paradigmas simples con medida directa.** Stroop (F-687), agrupamiento Gestalt (F-681), cegueras de atención (F-682, F-683), bouba/kiki en 25 lenguas (F-676), anclaje y encuadre en 36 muestras (F-713), pico-final en meta-análisis y en un RCT clínico (F-717, F-718).
@@ -524,6 +544,7 @@ Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita 
 
 | # | Fecha | Qué se hizo | Resultado |
 |---|---|---|---|
+| 2 | 2026-10-25 | Se agregan el sesgo retrospectivo (§5.14) y el sesgo de confirmación (§5.15), detectados como hueco en tres expedientes de crónicas | **Incremental.** 46 fenómenos, 11 fuentes nuevas (F-847 a F-857), leídas por resumen; pendientes de cargar al grafo semántico |
 | 1 | 2026-10-04 | Creación de la capa: cuatro investigaciones en paralelo (influencia social, percepción, cognición encarnada, juicio y memoria) | **Creación.** 44 fenómenos, 94 fuentes nuevas (F-647 a F-741, sin el número 734, que se retiró por ser un duplicado de F-713), todas cargadas al grafo semántico; 6 reglas (RF1-RF6) y 6 preguntas (PF1-PF6) |
 
 ## 11. Limitaciones
@@ -532,7 +553,7 @@ Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita 
 - **Cifras de segunda mano, marcadas.** Algunas cifras vienen de prensa o de reproducciones del artículo, no del resumen: Festinger (+1,35 / −0,05), Goldstein (35,1% → 44,1%), barras de progreso (~10%), oddball (30-50%), bouba/kiki en 25 lenguas (>70%), gorila (46%), calidez (75% vs. 54%), y el N de Many Labs 3 (atlas FORRT).
 - **DOIs no confirmados se dejaron en blanco** (Milgram 1963, Droit-Volet & Meck 2007, Dehaene 2003, Antonides 2002, entre otros) en vez de escribirlos de memoria.
 - **Sherif (F-661) quedó sin réplica moderna verificada:** su estado descansa en la revisión F-224.
-- **Cobertura:** 44 fenómenos no son todo el canon (faltan, por ejemplo, el efecto de posición serial, el sesgo de confirmación y el efecto Dunning-Kruger). Se agregan en próximas iteraciones.
+- **Cobertura:** 46 fenómenos no son todo el canon (faltan, por ejemplo, el efecto de posición serial y el efecto Dunning-Kruger). El sesgo de confirmación y el retrospectivo se agregaron el 2026-10-25. La referencia completa de Wason (1960) se citó de memoria y queda por verificar.
 - **Las aplicaciones a diseño, seguros e IA son inferencias,** no hallazgos: las preguntas PF son la forma de probarlas.
 
 ## Conexiones

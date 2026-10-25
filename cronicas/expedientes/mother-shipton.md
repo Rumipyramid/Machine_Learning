@@ -93,7 +93,7 @@ No hay testigos directos de la vida de Mother Shipton. Los únicos testimonios d
 
 **Búsqueda adversarial:** se buscó a propósito alguna profecía de Shipton publicada *antes* del hecho que anuncia y confirmada después. No se encontró ninguna. Tampoco apareció ningún registro de su vida (parroquial, judicial ni de la ciudad). La investigación de escritorio no alcanzó a revisar directamente los registros de York y Knaresborough.
 
-**Hueco del segundo cerebro:** el node de fenómenos psicológicos (`research/_nodes/fenomenos-psicologicos.md`) no cubre el sesgo retrospectivo ni el sesgo de confirmación (su §cobertura los declara pendientes). Aquí se usó la fuente primaria de Fischhoff y Beyth (1975) sin un estado de replicación del proyecto.
+**Estado del efecto en el segundo cerebro (act. 2026-10-25):** el node de fenómenos psicológicos ya cubre el sesgo retrospectivo (`research/_nodes/fenomenos-psicologicos.md` §5.14): 🔵 replicado con matices. Dos meta-análisis lo confirman con efecto pequeño a moderado, y una réplica preregistrada de 2025 del experimento original falló.
 
 ## 6. Síntesis
 
