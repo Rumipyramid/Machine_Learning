@@ -1,6 +1,6 @@
 {
- "_nota": "Examen fijo de calidad de Mu. Cada pregunta trae el nodo que debería usar, fuentes clave (basta que aparezca una), ideas que la respuesta debe contener (expresiones regulares, sin tildes ni mayúsculas) y afirmaciones que no debe hacer. Las respuestas de referencia las redactó Claude a partir de los nodos el 2026-10-25: el usuario debe revisarlas y corregirlas; una vez revisada, poner revisada: true. Cambiar una pregunta invalida la comparación con corridas anteriores: agregar en vez de editar. \"nodo\" puede ser una lista de nodos aceptables (desde 2026-10-25, cuando el nodo de diseño se dividió en nodos de dominio).",
- "version": 1,
+ "_nota": "Examen fijo de calidad de Mu. Cada pregunta trae el nodo que debería usar, fuentes clave (basta que aparezca una), ideas que la respuesta debe contener (expresiones regulares, sin tildes ni mayúsculas) y afirmaciones que no debe hacer. Las respuestas de referencia las redactó Claude a partir de los nodos el 2026-10-25: el usuario debe revisarlas y corregirlas; una vez revisada, poner revisada: true. Cambiar una pregunta invalida la comparación con corridas anteriores: agregar en vez de editar. \"nodo\" puede ser una lista de nodos aceptables (desde 2026-10-25, cuando el nodo de diseño se dividió en nodos de dominio). v1.1 (2026-10-25): Q03 y Q05 recalibradas tras la primera corrida (falso positivo de \"no demuestra\" y sinónimos de confianza); las dos corridas de respuestas se recalificaron con v1.1.",
+ "version": 1.1,
  "preguntas": [
   {
    "id": "Q01",
@@ -60,7 +60,7 @@
     "(instrucc|guardias fueron|demanda)"
    ],
    "no_debe": [
-    "demuestra que el rol"
+    "(?<!no )demuestra que el rol"
    ],
    "referencia": "No. Es un estudio no replicado y cuestionado: los guardias recibieron instrucciones y hubo demanda del experimentador (Le Texier 2019). No sirve como evidencia de que el rol por sí solo produzca crueldad.",
    "revisada": false
@@ -98,8 +98,8 @@
    ],
    "debe": [
     "(adulaci|sycophan|da la razon|complac)",
-    "(confianza|confia)",
-    "(riesgo|dan|peor)"
+    "(confianza|confia|conviccion|prefier)",
+    "(riesgo|dan|peor|responsabilidad)"
    ],
    "no_debe": [],
    "referencia": "Los modelos tienden a adular: validan al usuario más que las personas, y eso aumenta la confianza y la preferencia por el modelo aunque empeore el juicio. Es un riesgo de diseño que se mitiga mostrando desacuerdo y evidencia.",

@@ -10,8 +10,9 @@
 |---|---|---|---|
 | 2026-10-25 | recuperacion | línea base | nodo correcto 100% · fuente clave 92% |
 | 2026-10-25 | recuperacion | raíces: plurales y gerundios | nodo correcto 100% · fuente clave 100% |
-| 2026-10-25 | respuestas | línea base (prompts con la pregunta anterior arrastrada: Q04 y Q13 afectados) | puntaje medio 90 · 0 con fuentes inventadas · 1 con afirmaciones prohibidas · 3 con respaldo firme |
 | 2026-10-25 | recuperacion | nodo de diseño dividido + 5 dominios + seguimiento corto | nodo correcto 100% · fuente clave 100% |
+| 2026-10-25 | respuestas | antes (línea base; la pregunta anterior se arrastraba a la búsqueda) | puntaje medio 92 · 0 con fuentes inventadas · 0 con afirmaciones prohibidas · 3 con respaldo firme |
+| 2026-10-25 | respuestas | después: nodo dividido, 5 dominios, seguimiento corto, raíces | puntaje medio 95 · 0 con fuentes inventadas · 0 con afirmaciones prohibidas · 2 con respaldo firme |
 
 ## Última corrida de recuperacion (2026-10-25)
 
@@ -44,21 +45,21 @@
 |---|---|---|---|---|
 | Q01 | 100 | 4/4 | parcial | — |
 | Q02 | 100 | 3/3 | parcial | — |
-| Q03 | 80 | 2/2 | parcial | prohibidas: demuestra que el rol |
-| Q04 | 35 | 0/3 | heuristica | faltan: (default/predetermin/preselecc), (sesgo de publicacion/publication bias/reanalisis), (pequen/modest/moderad) |
-| Q05 | 83 | 2/3 | parcial | faltan: (riesgo/dan/peor) |
+| Q03 | 100 | 2/2 | parcial | — |
+| Q04 | 83 | 2/3 | firme | faltan: (default/predetermin/preselecc) |
+| Q05 | 100 | 3/3 | parcial | — |
 | Q06 | 100 | 2/2 | parcial | — |
 | Q07 | 100 | 3/3 | parcial | — |
 | Q08 | 100 | 1/1 | parcial | — |
-| Q09 | 100 | 2/2 | firme | — |
-| Q10 | 100 | 2/2 | parcial | — |
+| Q09 | 100 | 2/2 | parcial | — |
+| Q10 | 100 | 2/2 | firme | — |
 | Q11 | 100 | 3/3 | parcial | — |
-| Q12 | 100 | 2/2 | firme | — |
-| Q13 | 35 | 0/2 | parcial | faltan: (no reemplaz/complement/prototip/explorac), (sesgo/homogene/varianza/promedio) |
+| Q12 | 100 | 2/2 | parcial | — |
+| Q13 | 60 | 1/2 | parcial | faltan: (sesgo/homogene/varianza/promedio) |
 | Q14 | 100 | 2/2 | parcial | — |
-| Q15 | 100 | 2/2 | parcial | — |
+| Q15 | 75 | 1/2 | parcial | faltan: (seleccion/autoseleccion/correlaci/causal) |
 | Q16 | 75 | 1/2 | parcial | faltan: (confianza/desconfianza/datos) |
-| Q17 | 100 | 1/1 | firme | — |
+| Q17 | 100 | 1/1 | parcial | — |
 | Q18 | 100 | 2/2 | parcial | — |
 | Q19 | 100 | 1/1 | parcial | — |
 | Q20 | 100 | 2/2 | parcial | — |
