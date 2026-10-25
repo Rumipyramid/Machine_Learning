@@ -1,0 +1,23 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+"fuentes":["F-297","F-117","F-370","F-412","F-132","F-77","F-372","F-404","F-500","F-501","F-278","F-661"],
+"actualizaciones_en_su_sitio":{
+"T-1005":"Indecopi abrió de oficio en marzo de 2025 un proceso contra Pacífico Seguros y el call center Impulsa365 por ofrecer productos por teléfono sin consentimiento. Revisó unos 50.000 audios, de 7 millones, con IA. La multa podía llegar a 450 UIT (S/2,4 M).",
+"T-1007":"El proceso de Indecopi imputa haber publicitado productos a consumidores sin su consentimiento para recibir llamadas. En setiembre de 2025, la primera instancia multó a Pacífico con 21,49 UIT (unos S/115.000) y a Impulsa365 con 8,80 UIT; era apelable.",
+"T-1371":"El 20 de diciembre de 2018, la Autoridad de Seguros de Hong Kong dio a Bowtie la primera licencia de aseguradora virtual, dentro de su plan piloto Fast Track. La empresa anunció que vendería sin intermediarios de seguros.",
+"T-1470":"Config 2026 se hizo del 23 al 25 de junio en San Francisco. Allí Figma Make salió de beta y se presentó Figma Motion. El comunicado de resultados del 2T 2026 de Figma menciona Motion entre las novedades del lienzo.",
+"T-1020":"Según el fallo del 11.º Circuito (enero de 2025), el TCPA exige el 'consentimiento expreso previo' para las llamadas de marketing automatizadas. La ley no define ese término, así que la corte usó su sentido común y del derecho consuetudinario.",
+"T-1021":"La FCC dictó la regla 'one-to-one' bajo el TCPA. Exigía el consentimiento de un vendedor a la vez para las llamadas robotizadas de marketing, y que los mensajes siguientes se relacionaran con la interacción que originó ese consentimiento.",
+"T-1022":"El 24 de enero de 2025, el 11.º Circuito, por unanimidad, resolvió que la FCC excedió su autoridad bajo el TCPA. Anuló la regla 'one-to-one' y devolvió el caso a la FCC, justo antes de que la regla entrara en vigor.",
+"T-945":"El art. 26 del reglamento de la LPDP (D.S. 016-2024-JUS) permite un primer contacto para pedir consentimiento para publicidad. Ese contacto debe declarar su fin y ofrecer cómo negarse. Si la persona se niega, la empresa no puede volver a contactarla con ese fin.",
+"T-947":"El reglamento de la Ley 29733 vuelve lícito el tratamiento de datos para publicidad o prospección solo con el consentimiento directo del titular. Ese consentimiento puede pedirse en un único primer contacto, con datos de fuente lícita.",
+"T-1378":"En marzo de 2025, Betterfly cerró Perú, Colombia, Ecuador, Argentina y Brasil y despidió a unas 30 personas. Se concentra en Chile, México y España (94% de sus ingresos) y apunta a EE.UU. Dice tener caja para más de cinco años.",
+"T-142":"Ye, Kraut y Rathje (2026) hicieron dos experimentos preregistrados. Un aviso escrito sobre la adulación (n=940) bajó la objetividad percibida de la IA y un video (n=650) bajó el disfrute. En seis intervenciones (n=3.982), ninguna redujo su poder de persuasión.",
+"T-141":"Ibrahim y otros (2026) hicieron cinco estudios preregistrados (3.075 personas). Al elegir un estilo de respuesta, la mayoría prefirió el adulador porque los hacía sentirse comprendidos, no porque aconsejara mejor. En tres semanas bajó su satisfacción con sus relaciones reales.",
+"T-575":"Sherif (1935) usó el efecto autocinético: una luz fija que parece moverse en la oscuridad. Cuando grupos de tres decían en voz alta sus estimaciones, los juicios convergieron poco a poco en una norma de grupo.",
+"T-576":"En Sherif (1935), quienes luego estimaron a solas siguieron cerca de la norma del grupo. La mayoría negó que los otros lo hubieran influido. Resúmenes secundarios dicen que la norma seguía visible un año después."
+},
+"contradichas_por_el_resumen":[
+{"triple":"T-1379","f":"F-372","nota":"La prensa (Emol, La República, Meganoticias) fecha la primera ola de despidos de Betterfly en agosto de 2022 (30 personas), y la de enero de 2023 en cerca de un tercio de la plantilla. Solo El Dínamo dice agosto de 2023. No hay nada sobre presión de inversionistas."}
+],
+"no_encontradas":["F-76","F-507","F-202","F-206"],
+"nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda). F-297, F-404 y F-278 se encontraron, pero su resumen no confirma las relaciones. La cifra de 8-10% de F-297 solo aparece en un post de Medium sin estudio identificado. En F-404, el resumen de DZone (Elumalai, 2025) da +35% para juniors y -12% para seniors, pero no muestra la cifra de 4,3 frente a 1,2 minutos ni la muestra de 250. En F-77 no se halló la guía de Niubox: se verificó contra el art. 26 del reglamento de la LPDP en cobertura legal y en El Peruano. En F-412 no se pudo confirmar que Figma Make usa Claude ni la cifra de +8.000 asistentes."}

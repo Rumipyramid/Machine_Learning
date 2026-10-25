@@ -3424,6 +3424,86 @@
    "detalle": "El resumen oficial contradice la relación T-171: La presentación a analistas de Mapfre 3M 2026 da para Perú un ratio combinado de 94,8% en 2026 frente a 102,4% del año anterior (mejora de 7,6 pp). El 102,4% sería la cifra de 2025, no de 2026 (orden de columnas inferido).",
    "fecha": "2026-10-25",
    "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial (F-505 queda marcada como cifra en disputa)."
+  },
+  {
+   "f": "F-372",
+   "triple": "T-1379",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1379: La prensa (Emol, La República, Meganoticias) fecha la primera ola de despidos de Betterfly en agosto de 2022 (30 personas), y la de enero de 2023 en cerca de un tercio de la plantilla. Solo El Dínamo dice agosto de 2023. No hay nada sobre presión de inversionistas.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-378",
+   "triple": "T-1389",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1389: La prensa especializada atribuye el +13,2% del vida individual en el 1S 2025 a un informe de Fenaprevi con datos de Susep, no a CNseg.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-493",
+   "triple": "T-138",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-138: El resumen (Si et al., Journal of Intelligence 2026) reporta 353 estudiantes, no 666. Halla cuatro perfiles de uso; la motivación predice mejor el pensamiento crítico, y una descarga más profunda se asocia con más dependencia. No reporta la mediación descrita.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-343",
+   "triple": "T-1305",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1305: Para Cigna, Axios reporta que cerca del 80% de las negaciones apeladas se revirtieron. El 90% de reversión en apelación se atribuye en otras fuentes al algoritmo nH Predict de UnitedHealth.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-367",
+   "triple": "T-1362",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1362: S&P Global: los US$1.210M (S$1.600M) pagaron la participación de 35,5% de TPG, no una mayoritaria; con la compra previa a Aviva, Sumitomo Life quedó dueña del 100% (completado mar-2024) a una valuación de S$4.600M. La absorción por la incumbente sí se confirma.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-351",
+   "triple": "T-1322",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1322: El NPS de 66 (y 87 entre hispanohablantes) aparece en la llamada de resultados del 1T 2024, no del 4T 2024; no se vio en el texto del 10-K. El 10-K sí confirma 1,68 M de miembros a dic-2024.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-643",
+   "triple": "T-1803",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1803: El anuncio de Prolific de sus authenticity checks (beta) que cita el 98,7% se fecha en septiembre de 2025, no en mayo de 2025.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-643",
+   "triple": "T-1805",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1805: El 98,7% de precisión se refiere a detectar respuestas abiertas escritas con LLM; para agentes de IA Prolific reporta otra prueba interna (100% de precisión). No son la misma medida.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-217",
+   "triple": "T-1157",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-1157: El 3,2% fue la proyección del BCRP de marzo de 2026; el Reporte de Inflación de junio de 2026 la subió a 3,4%. La cifra citada en julio ya estaba desactualizada.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
+  },
+  {
+   "f": "F-485",
+   "triple": "T-126",
+   "estado": "cerrada",
+   "detalle": "El resumen oficial contradice la relación T-126: El caso no es un rechazo de cobertura: Indecopi (Res. 3228-2025/SPC) sancionó con 5 UIT a cada empresa (Pacífico y RTS Perú) por liquidar la indemnización por debajo del valor real pactado en la póliza.",
+   "fecha": "2026-10-25",
+   "cierre": "2026-10-25: ficha corregida con autorización del usuario según el resumen oficial; relación reescrita."
   }
  ],
  "resoluciones": [
@@ -4758,6 +4838,100 @@
     "F-576",
     "F-557",
     "F-593"
+   ]
+  },
+  {
+   "archivo": "pase_036.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 14,
+   "contradichas": 1,
+   "fuentes": [
+    "F-297",
+    "F-117",
+    "F-370",
+    "F-412",
+    "F-132",
+    "F-77",
+    "F-372",
+    "F-404",
+    "F-500",
+    "F-501",
+    "F-278",
+    "F-661"
+   ]
+  },
+  {
+   "archivo": "pase_037.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 14,
+   "contradichas": 3,
+   "fuentes": [
+    "F-55",
+    "F-378",
+    "F-493",
+    "F-87",
+    "F-494",
+    "F-827",
+    "F-343",
+    "F-619",
+    "F-792",
+    "F-865",
+    "F-344",
+    "F-620"
+   ]
+  },
+  {
+   "archivo": "pase_038.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 20,
+   "contradichas": 1,
+   "fuentes": [
+    "F-624",
+    "F-671",
+    "F-216",
+    "F-625",
+    "F-68",
+    "F-13",
+    "F-366",
+    "F-630",
+    "F-367",
+    "F-638"
+   ]
+  },
+  {
+   "archivo": "pase_039.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 18,
+   "contradichas": 5,
+   "fuentes": [
+    "F-872",
+    "F-351",
+    "F-640",
+    "F-12",
+    "F-873",
+    "F-358",
+    "F-643",
+    "F-802",
+    "F-217",
+    "F-128",
+    "F-485",
+    "F-803"
+   ]
+  },
+  {
+   "archivo": "pase_040.json",
+   "fecha": "2026-10-25",
+   "actualizadas": 10,
+   "contradichas": 0,
+   "fuentes": [
+    "F-1062",
+    "F-1064",
+    "F-858",
+    "F-859",
+    "F-864",
+    "F-867",
+    "F-875",
+    "F-1063"
    ]
   }
  ]

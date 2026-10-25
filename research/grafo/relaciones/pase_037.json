@@ -1,0 +1,25 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+ "fuentes":["F-55","F-378","F-493","F-87","F-494","F-827","F-343","F-619","F-792","F-865","F-344","F-620"],
+ "actualizaciones_en_su_sitio":{
+  "T-168":"Cully et al. (Implementation Science 2012;7:64): protocolo de ensayo híbrido tipo 2. Prueba a la vez la efectividad de una TCC breve en atención primaria (VA) y una estrategia de implementación: capacitación en línea, auditoría y retroalimentación, y facilitación.",
+  "T-1391":"Informe de Fenaprevi con datos de Susep: el seguro de vida individual en Brasil creció 13,2% en primas en el 1S 2025 frente al 1S 2024. Las primas de seguros de personas sumaron R$ 37,8 mil M (+8,4%).",
+  "T-140":"Preprint (sept-2026, sin revisión por pares): una advertencia breve de que los LLM pueden persuadir y mostrar información selectiva redujo el cambio de creencias en cerca de la mitad (−48,1%). Dos experimentos, 3.208 estadounidenses. No bajó la confianza general en la IA.",
+  "T-1306":"La prensa (AP, Axios, ProPublica) reporta una demanda colectiva federal en Sacramento (2023) contra Cigna por usar el algoritmo PXDX para negar más de 300.000 reclamos en dos meses, con unos 1,2 segundos por caso. Cigna disputa los hechos.",
+  "T-1746":"Simile es una spin-off de Stanford. Su plataforma usa gemelos digitales de personas reales para que las empresas prueben decisiones en poblaciones sintéticas antes de ir a clientes reales.",
+  "T-1747":"Anuncio de Latham & Watkins (19-feb-2026): asesoró a Simile AI en su Serie A de US$100M. Fenwick representó al inversor líder, Index Ventures; participaron Bain Capital Ventures, A* y Hanabi Capital.",
+  "T-771":"Ensayo aleatorio en Kenia rural (AJAE 2019): el microseguro índice reduce ambas formas costosas de enfrentar la sequía. Los hogares más pobres redujeron en 49 puntos su recorte de comidas; los menos pobres fueron 96 puntos menos propensos a vender activos.",
+  "T-1891":"Historia de éxito de NIH SEED (feb-2025): QuSpin postula a subvenciones SBIR Fase I desde 2012; con la Fase I del NIMH produjo magnetómetros vectoriales compactos. El NIMH figura como comprador de sus magnetómetros triaxiales.",
+  "T-1892":"Según NIH SEED, la tecnología de QuSpin avanzó por fases sucesivas de SBIR hasta un sistema MEG portátil: sensores más baratos que los SQUID, a temperatura ambiente y compactos.",
+  "T-1893":"La historia de éxito de NIH SEED sobre QuSpin describe la secuencia de subvenciones SBIR, pero no publica los montos ni el financiamiento total.",
+  "T-1308":"CNN reportó que el post de UnitedHealth Group lamentando el asesinato de su CEO (4-dic-2024) tuvo 62.000 reacciones, 57.000 de ellas de risa. Conteos posteriores fueron mayores; la empresa ocultó las reacciones y cerró los comentarios.",
+  "T-1309":"La cobertura de prensa (dic-2024) describe una ola de memes, burla y hostilidad en línea contra las aseguradoras tras el asesinato, que expuso la frustración de los estadounidenses con el sistema de salud.",
+  "T-1748":"Anuncio del 30-jul-2026: Simile levantó más de US$200M a una valoración post-money de US$2.000M. TechCrunch: lideró Greenoaks, con Index, Bain Capital Ventures y CVS Health Ventures, entre otros.",
+  "T-1749":"Simile dice que su ingreso se multiplicó por cinco desde su lanzamiento, cinco meses antes. Es dato de la empresa; no hay cifras de ingreso independientes."
+ },
+ "contradichas_por_el_resumen":[
+  {"triple":"T-1389","f":"F-378","nota":"La prensa especializada atribuye el +13,2% del vida individual en el 1S 2025 a un informe de Fenaprevi con datos de Susep, no a CNseg."},
+  {"triple":"T-138","f":"F-493","nota":"El resumen (Si et al., Journal of Intelligence 2026) reporta 353 estudiantes, no 666. Halla cuatro perfiles de uso; la motivación predice mejor el pensamiento crítico, y una descarga más profunda se asocia con más dependencia. No reporta la mediación descrita."},
+  {"triple":"T-1305","f":"F-343","nota":"Para Cigna, Axios reporta que cerca del 80% de las negaciones apeladas se revirtieron. El 90% de reversión en apelación se atribuye en otras fuentes al algoritmo nH Predict de UnitedHealth."}
+ ],
+ "no_encontradas":["F-157","F-480","F-171","F-564"],
+ "nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda)."}

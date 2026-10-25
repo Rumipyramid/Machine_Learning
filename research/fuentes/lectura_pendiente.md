@@ -33,7 +33,6 @@ Total candidatas: 302 · se muestran 40.
 | 9 | F-469 — Figma, Inc. (comunicado y 8-K de resulta (2026) | B | resumen oficial | 2 hipótesis, 2 nodo(s) | — | https://investor.figma.com/news-events/news/news-details/2026/Figma-Announces-Second-Quarter-2026-Financial-Results/default.aspx |
 | 9 | F-488 — Cheng, M.; Lee, C.; Khadpe, P.; Yu, S.;  (2026) | A | resumen oficial | 1 hipótesis, 4 nodo(s) | — | https://www.science.org/doi/abs/10.1126/science.aec8352 |
 | 9 | F-532 — Henkel AG & Co. KGaA (vía resúmenes de p (2017-2025) | C | resumen oficial | 1 hipótesis, 2 nodo(s) | datos no verificados; leída por terceros | https://www.henkel.com/investors-and-analysts |
-| 9 | F-541 — Marmer, M., Herrmann, B. et al. (Startup (2011) | D | solo ficha | 1 regla(s), 1 hipótesis, 2 nodo(s) | — | https://steveblank.com/2011/08/29/it%E2%80%99s-not-how-big-it-is-%E2%80%93-it%E2%80%99s-how-well-it-performs-the-startup-genome-compass/ |
 | 9 | F-545 — Aher, G. V.; Arriaga, R. I.; Kalai, A. T (2023) | A | resumen oficial | 1 hipótesis, 2 nodo(s) | datos no verificados | https://proceedings.mlr.press/v202/aher23a.html |
 | 9 | F-814 — Khan, S.; Huang, Y.; Timuçin, D. et al.  (2024) | A | resumen oficial | 1 hipótesis, 2 nodo(s) | datos no verificados | https://www.eneuro.org/content/11/8/ENEURO.0291-24.2024 |
 | 9 | F-876 — McKinsey & Company y Skift Research (2026) | C | resumen oficial | 2 hipótesis, 4 nodo(s) | — | https://www.mckinsey.com/~/media/mckinsey/industries/travel/our%20insights/winning%20hearts%20in%20an%20age%20of%20infinite%20travel%20choices/winning-hearts-in-an-age-of-infinite-travel-choices.pdf |
@@ -52,3 +51,4 @@ Total candidatas: 302 · se muestran 40.
 | 8 | F-383 — Autoría no verificada en esta sesión (Ha (2024-2026) | B | solo ficha | 2 nodo(s) | datos no verificados | https://dl.acm.org/doi/10.1145/3686169.3686184 |
 | 8 | F-391 — Bloomberg Línea, Diario Financiero, iPro (2026) | C | resumen oficial | 1 regla(s), 1 hipótesis, 2 nodo(s) | — | https://www.bloomberglinea.com/negocios/despidos-en-mercadolibre-ponen-de-nuevo-a-la-ia-en-el-centro-del-debate-laboral/ |
 | 8 | F-406 — Faros AI (vendor de analítica de ingenie (2025) | C | resumen oficial | 1 regla(s), 1 hipótesis, 2 nodo(s) | — | https://www.faros.ai/ |
+| 8 | F-419 — MercadoLibre (declaración oficial), vía  (2026) | C | resumen oficial | 1 regla(s), 2 nodo(s) | leída por terceros | https://www.bloomberglinea.com/ |

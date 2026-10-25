@@ -1,0 +1,29 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+ "fuentes":["F-624","F-671","F-216","F-625","F-68","F-13","F-366","F-630","F-367","F-638"],
+ "actualizaciones_en_su_sitio":{
+  "T-1759":"Qualtrics presenta Edge Audiences como paneles sintéticos de consumidores de EE.UU.: respuestas generadas por un LLM afinado para investigación de mercado. Se lanzó en mar-2025 y se amplió en el X4 de mar-2026.",
+  "T-1760":"Según Qualtrics, el modelo de Edge Audiences está afinado con las respuestas de millones de encuestados reales a cientos de miles de preguntas, no es un LLM genérico.",
+  "T-1761":"Qualtrics dice que su modelo es 12 veces más preciso que un LLM genérico al replicar un estudio ya publicado. Es una prueba propia: no publica muestra, métrica ni método.",
+  "T-593":"Tse et al. 2004: un oddball poco probable dentro de una serie repetida se juzga más largo que los estímulos estándar aunque dure lo mismo. Lo atribuyen a la atención que capta el estímulo raro.",
+  "T-1153":"Bloomberg Línea (2025) reporta que UBS proyecta el cobre en US$10.000/t al cierre de 2025 y US$10.750/t a junio de 2026, por un déficit de mercado creciente.",
+  "T-1155":"La cifra de UBS es una previsión: US$10.750/t esperada para junio de 2026. UBS la elevó después (US$11.500/t para setiembre de 2026).",
+  "T-1762":"Nota de prensa de Toluna (4-feb-2025): HarmonAIze Personas son encuestados sintéticos construidos con datos anónimos de su panel de 19,4 M personas en EE.UU.; disponibles para pruebas de claims.",
+  "T-1763":"Las cifras vienen de la nota de prensa de la propia Toluna (Business Wire, feb-2025); no describe un método de validación externo.",
+  "T-922":"El DS 016-2024-JUS, vigente desde el 31-mar-2025, regula cómo pedir el consentimiento para recibir llamadas de publicidad o prospección comercial, para evitar llamadas no autorizadas.",
+  "T-923":"El art. 26 del reglamento permite una sola llamada para pedir el consentimiento por primera vez, solo si se cumplen ciertos requisitos.",
+  "T-924":"Art. 26: los datos deben venir de fuente lícita y la llamada solo puede pedir consentimiento, antes de ofrecer cualquier producto. Si la persona se niega, no se la puede volver a contactar con ese fin.",
+  "T-856":"Las guías de lenguaje claro de Digital.gov y del gobierno federal de EE.UU. piden evitar la jerga y usar voz activa y tiempo presente; esas reglas rigen la redacción del glosario.",
+  "T-1359":"Bestow anunció en mayo de 2024 la venta de su aseguradora de vida a Sammons Financial Group, para seguir con su estrategia de software empresarial (SaaS) sin aseguradora propia.",
+  "T-1774":"McKinsey (2025, 'The agentic commerce opportunity') proyecta que los agentes podrían orquestar hasta US$1 billón del retail B2C de EE.UU. al 2030 y US$3-5 billones a nivel global.",
+  "T-1775":"McKinsey lo plantea como oportunidad bajo supuestos moderados (EE.UU.: US$900.000M a 1 billón al 2030): es una proyección, no una medición.",
+  "T-1776":"McKinsey habla de ingreso 'orquestado' por agentes; la cifra cubre solo bienes, sin servicios ni mercado B2B.",
+  "T-1777":"La proyección de McKinsey se refiere al comercio agéntico: agentes de IA que buscan, negocian y compran por las personas.",
+  "T-1791":"Vitality (con revisión de la LSE): 465.000 miembros seguidos 7 años; pasar de inactivo a activo reduce la mortalidad hasta 57%, equivalente a unos cinco años más de esperanza de vida.",
+  "T-1792":"Vitality reporta que su programa puede extender la esperanza de vida hasta cinco años; las mayores ganancias, en quienes se activan cinco días por semana; con uno o dos días, más de dos años.",
+  "T-1794":"Es un estudio de la propia Vitality, revisado por la LSE según su nota de prensa; no se cita publicación en revista. Un medio indica que los datos son de miembros de Sudáfrica."
+ },
+ "contradichas_por_el_resumen":[
+  {"triple":"T-1362","f":"F-367","nota":"S&P Global: los US$1.210M (S$1.600M) pagaron la participación de 35,5% de TPG, no una mayoritaria; con la compra previa a Aviva, Sumitomo Life quedó dueña del 100% (completado mar-2024) a una valuación de S$4.600M. La absorción por la incumbente sí se confirma."}
+ ],
+ "no_encontradas":["F-662","F-805","F-211","F-807","F-70","F-52"],
+ "nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda)."}

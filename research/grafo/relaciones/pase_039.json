@@ -1,0 +1,31 @@
+{"fecha":"2026-10-25","tipo":"pase_de_profundidad_en_su_sitio",
+"fuentes":["F-872","F-351","F-640","F-12","F-873","F-358","F-643","F-802","F-217","F-128","F-485","F-803"],
+"actualizaciones_en_su_sitio":{
+"T-1912":"Carta de advertencia de la FDA (CDRH) del 3-feb-2020 a Mandelay Kft, tras inspeccionar su planta en Tököl, Hungría, del 14 al 17 de octubre de 2019. Es una acción regulatoria formal.",
+"T-1913":"La FDA determinó que el SCIO System y el Quest 9 son dispositivos médicos y los declaró adulterados (sección 501(h)) porque su fabricación no cumplía el reglamento de sistema de calidad (21 CFR 820).",
+"T-1799":"Sacra describe a Cleo como una app de asistente financiero con IA para consumidores; en 2024 sostuvo más de 74 millones de conversaciones con usuarios.",
+"T-1800":"Sacra presenta a Cleo como asistente financiero con IA dirigido a usuarios jóvenes; su mercado es casi solo EE.UU. (99,8% del ingreso).",
+"T-1801":"Sacra estima el ARR de Cleo en US$185 M a fin de 2024 y US$280 M en julio de 2025. Dice que la empresa llegó al punto de equilibrio en 2024.",
+"T-1802":"Las cifras de ARR de Cleo son estimaciones de Sacra, no cifras reportadas por la empresa ni auditadas.",
+"T-853":"El portal de la SBS lista 'Para vivir seguros' entre sus guías de material de educación financiera.",
+"T-1915":"La ASA dio por fundada (upheld) la queja contra la web de Light Therapy Revolution (GAC Group Ltd), vista el 21-mar-2019: sus promesas de eficacia sobre condiciones de salud no se pudieron sustentar.",
+"T-1916":"Según la ASA, el consumidor entendía que el 'Quantum Laser Light' podía tratar o diagnosticar dolor, hinchazón, inflamación, heridas, función nerviosa y otras patologías.",
+"T-1917":"La ASA concluyó que las promesas de eficacia del 'Quantum Laser Light' no estaban sustentadas; la empresa solo ofreció enlaces a sitios con ensayos sobre terapia de luz en general.",
+"T-1335":"Según un 8-K de Babylon ante la SEC (ago-2023), Centene terminó casi todos sus contratos con Babylon; esos contratos eran más del 48% de su negocio en EE.UU. en 2022. Luego Babylon pidió la quiebra (Cap. 7).",
+"T-1804":"Prolific reclutó 5.200 participantes en 10 plataformas y aplicó métodos de detección de IA: los agentes detectados fueron ≤1% en todos los tipos de plataforma, salvo Amazon MTurk.",
+"T-1806":"Las cifras de precisión las reporta la propia Prolific; según otra nota, su detector no se ha puesto a disposición de investigadores externos para validarlo.",
+"T-798":"Penrose desarrolló el argumento gödeliano de Lucas (1961) en The Emperor's New Mind (1989): en el cerebro ocurren procesos no computables y 'se necesita una nueva física' para explicarlos. El argumento es ampliamente rechazado.",
+"T-1014":"Reseñas del libro de Godin (1999): presenta el marketing de permiso como alternativa al 'marketing de interrupción', que veía como ruido saturado (clutter) que la gente no quiere.",
+"T-1015":"Godin define el marketing de permiso como el privilegio de enviar mensajes anticipados, personales y relevantes a quienes quieren recibirlos: la gente espera tener noticias de la marca.",
+"T-800":"En Shadows of the Mind (1994) Penrose sostiene que algunos aspectos de la mente están más allá de la computación y lo enlaza con estados cuánticos en el cerebro; el libro fue discutido en un simposio de Psyche.",
+"T-801":"Penrose (1994) sostiene que en la conciencia debe darse un estado cuántico global en grandes áreas del cerebro, y que esos efectos cuánticos colectivos residirían con más probabilidad en los microtúbulos."
+},
+"contradichas_por_el_resumen":[
+{"triple":"T-1322","f":"F-351","nota":"El NPS de 66 (y 87 entre hispanohablantes) aparece en la llamada de resultados del 1T 2024, no del 4T 2024; no se vio en el texto del 10-K. El 10-K sí confirma 1,68 M de miembros a dic-2024."},
+{"triple":"T-1803","f":"F-643","nota":"El anuncio de Prolific de sus authenticity checks (beta) que cita el 98,7% se fecha en septiembre de 2025, no en mayo de 2025."},
+{"triple":"T-1805","f":"F-643","nota":"El 98,7% de precisión se refiere a detectar respuestas abiertas escritas con LLM; para agentes de IA Prolific reporta otra prueba interna (100% de precisión). No son la misma medida."},
+{"triple":"T-1157","f":"F-217","nota":"El 3,2% fue la proyección del BCRP de marzo de 2026; el Reporte de Inflación de junio de 2026 la subió a 3,4%. La cifra citada en julio ya estaba desactualizada."},
+{"triple":"T-126","f":"F-485","nota":"El caso no es un rechazo de cobertura: Indecopi (Res. 3228-2025/SPC) sancionó con 5 UIT a cada empresa (Pacífico y RTS Perú) por liquidar la indemnización por debajo del valor real pactado en la póliza."}
+],
+"no_encontradas":["F-1","F-207","F-101","F-483"],
+"nota":"Pase de lectura profunda 2026-10-25: relaciones confirmadas contra el resumen oficial (vía búsqueda)."}
