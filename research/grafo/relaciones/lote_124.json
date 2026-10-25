@@ -1,0 +1,499 @@
+{
+ "fecha": "2026-10-25",
+ "f_ids": [
+  "F-1026",
+  "F-1027",
+  "F-1028",
+  "F-1029",
+  "F-1030",
+  "F-1031",
+  "F-1032",
+  "F-1033",
+  "F-1034",
+  "F-1035",
+  "F-1036",
+  "F-1037",
+  "F-1038",
+  "F-1039",
+  "F-1040"
+ ],
+ "entidades": [
+  {
+   "id": "reglamento_ecodiseno_espr",
+   "nombre": "Reglamento europeo de ecodiseño para productos sostenibles (ESPR, 2024)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "destruccion_textiles_no_vendidos",
+   "nombre": "Destrucción de textiles y calzado sin vender",
+   "tipo": "resultado"
+  },
+  {
+   "id": "pasaporte_digital_producto",
+   "nombre": "Pasaporte digital de producto",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "union_europea",
+   "nombre": "Unión Europea (mercado y consumidores)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "directiva_derecho_reparar",
+   "nombre": "Directiva europea de derecho a reparar (2024)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "reparacion_productos",
+   "nombre": "Reparación de productos en lugar de reemplazo",
+   "tipo": "resultado"
+  },
+  {
+   "id": "economia_circular",
+   "nombre": "Economía circular (cerrar ciclos de material: reuso, remanufactura, reciclaje)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "rebote_economia_circular",
+   "nombre": "Efecto rebote de la economía circular (más producción total que anula el beneficio)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "produccion_total_material",
+   "nombre": "Producción y consumo total de material",
+   "tipo": "resultado"
+  },
+  {
+   "id": "reuso_celulares",
+   "nombre": "Reuso de teléfonos celulares",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "c_circularidad_reduce_impacto",
+   "nombre": "Cerrar ciclos de material reduce por sí solo el impacto ambiental",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "hoja_ruta_circular_peru_2030",
+   "nombre": "Segunda Hoja de Ruta de Economía Circular de la industria y comercio del Perú al 2030 (Produce)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "peru",
+   "nombre": "Perú",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "valorizacion_residuos_peru",
+   "nombre": "Residuos valorizados en Perú (~4% de 19 mil t/día, dato no verificado)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "tasa_circularidad_global",
+   "nombre": "Tasa global de circularidad (material de fuentes recicladas: 6,9%)",
+   "tipo": "metrica"
+  },
+  {
+   "id": "reciclaje_material",
+   "nombre": "Volumen de material reciclado",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ecodiseno_etiquetado_energetico",
+   "nombre": "Ecodiseño y etiquetado energético de la UE",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "consumo_energia_primaria",
+   "nombre": "Consumo de energía primaria",
+   "tipo": "resultado"
+  },
+  {
+   "id": "gasto_energetico_hogares",
+   "nombre": "Gasto de los consumidores en energía",
+   "tipo": "resultado"
+  },
+  {
+   "id": "autoevaluacion_oficial",
+   "nombre": "Estimación del propio organismo que aplica la política (autoevaluación contra contrafactual)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "afirmaciones_ambientales_enganosas",
+   "nombre": "Afirmaciones ambientales vagas, engañosas o infundadas (greenwashing)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "durabilidad_productos",
+   "nombre": "Alargar la vida útil de los productos",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "emisiones_co2",
+   "nombre": "Emisiones de CO2",
+   "tipo": "resultado"
+  },
+  {
+   "id": "indice_reparabilidad_francia",
+   "nombre": "Índice de reparabilidad francés (etiqueta de 2021)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "decision_compra_consumidor",
+   "nombre": "Decisión de compra del consumidor",
+   "tipo": "resultado"
+  },
+  {
+   "id": "autodeclaracion_encuesta",
+   "nombre": "Respuesta autodeclarada en encuesta, sin medición de conducta",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "desconfianza_afirmacion_verde",
+   "nombre": "Desconfianza del consumidor ante una afirmación ambiental",
+   "tipo": "constructo"
+  },
+  {
+   "id": "sello_higg",
+   "nombre": "Índice Higg de la Sustainable Apparel Coalition (sello de cara al consumidor)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "industria_moda",
+   "nombre": "Industria de la moda y la confección",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "renewcell",
+   "nombre": "Renewcell (recicladora textil sueca, hoy Circulose)",
+   "tipo": "organizacion"
+  },
+  {
+   "id": "demanda_material_reciclado",
+   "nombre": "Demanda de material reciclado por las marcas",
+   "tipo": "resultado"
+  },
+  {
+   "id": "viabilidad_negocio_circular",
+   "nombre": "Viabilidad financiera de un negocio circular",
+   "tipo": "resultado"
+  },
+  {
+   "id": "reparacion_piezas_verdes_siniestros",
+   "nombre": "Reparar y usar piezas recuperadas en siniestros vehiculares en vez de reemplazar",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "costo_siniestro",
+   "nombre": "Costo del siniestro",
+   "tipo": "resultado"
+  },
+  {
+   "id": "nota_prensa_proveedor",
+   "nombre": "Nota de prensa del proveedor, método no visible",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "alianza_pacifico",
+   "nombre": "Alianza del Pacífico (Chile, Colombia, México, Perú)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "pib_empleo",
+   "nombre": "PIB y empleo",
+   "tipo": "resultado"
+  }
+ ],
+ "triples": [
+  {
+   "s": "reglamento_ecodiseno_espr",
+   "p": "reduce",
+   "o": "destruccion_textiles_no_vendidos",
+   "f": "F-1026",
+   "apoyo": "Prohíbe destruir textiles y calzado sin vender desde el 19-07-2026 (medianas empresas desde 2030; micro y pequeñas exentas). Fechas difieren entre resúmenes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pasaporte_digital_producto",
+   "p": "parte_de",
+   "o": "reglamento_ecodiseno_espr",
+   "f": "F-1026",
+   "apoyo": "El reglamento, vigente desde el 18-07-2024, prevé un pasaporte digital de producto hacia 2027-2028.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "directiva_derecho_reparar",
+   "p": "aumenta",
+   "o": "reparacion_productos",
+   "f": "F-1027",
+   "apoyo": "Obliga al fabricante a reparar a pedido del consumidor productos del Anexo II, gratis o a precio razonable, con formulario europeo y plataforma en línea; transposición hasta el 31-07-2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "directiva_derecho_reparar",
+   "p": "aplica_a",
+   "o": "union_europea",
+   "f": "F-1027",
+   "apoyo": "Directiva (UE) 2024/1799; los Estados miembros deben transponerla hasta el 31-07-2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "economia_circular",
+   "p": "aumenta",
+   "o": "produccion_total_material",
+   "f": "F-1028",
+   "apoyo": "Argumento con dos ecuaciones: cerrar ciclos puede elevar la producción total porque lo secundario no sustituye bien a lo primario y hay efectos precio.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "rebote_economia_circular",
+   "p": "refuta",
+   "o": "c_circularidad_reduce_impacto",
+   "f": "F-1028",
+   "apoyo": "El rebote puede anular, parcial o totalmente, los beneficios ambientales de cerrar ciclos.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "reuso_celulares",
+   "p": "aumenta",
+   "o": "rebote_economia_circular",
+   "f": "F-1029",
+   "apoyo": "En EE. UU., el reuso de celulares tuvo un rebote promedio de 29% (27%-46% según modelo) y en algunos escenarios superó 100% (ACV + encuestas + insumo-producto).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "rebote_economia_circular",
+   "p": "refuta",
+   "o": "c_circularidad_reduce_impacto",
+   "f": "F-1029",
+   "apoyo": "Con rebote sobre 100% en algunos escenarios, el reuso de celulares puede no reducir el impacto neto.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "hoja_ruta_circular_peru_2030",
+   "p": "aplica_a",
+   "o": "peru",
+   "f": "F-1030",
+   "apoyo": "Presentada por Produce en la Cumbre Circular de Lima con GIZ, UE, ONUDI, AECID y BID; prioriza reuso, remanufactura y reciclaje (vía prensa, documento no leído).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "valorizacion_residuos_peru",
+   "p": "aplica_a",
+   "o": "peru",
+   "f": "F-1030",
+   "apoyo": "La SNI reporta 19 mil t/día de residuos y ~4% valorizado; dato de otra nota, no verificado en fuente oficial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "tasa_circularidad_global",
+   "p": "mide",
+   "o": "economia_circular",
+   "f": "F-1031",
+   "apoyo": "Solo 6,9% de los ~106 mil millones de t de material usados al año viene de fuentes recicladas (7,2% dos años antes; −2,2 puntos vs. 2015).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reciclaje_material",
+   "p": "tiene_limite",
+   "o": "produccion_total_material",
+   "f": "F-1031",
+   "apoyo": "El reciclaje creció ~200 Mt entre 2018 y 2021, pero el consumo de material creció más, así que la tasa de circularidad cayó.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "ecodiseno_etiquetado_energetico",
+   "p": "reduce",
+   "o": "consumo_energia_primaria",
+   "f": "F-1032",
+   "apoyo": "Estimación oficial contra escenario contrafactual: recortan ~10% la energía primaria de la UE.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ecodiseno_etiquetado_energetico",
+   "p": "reduce",
+   "o": "gasto_energetico_hogares",
+   "f": "F-1032",
+   "apoyo": "Ahorran más de 60 mil millones €/año a los consumidores (~210 € por hogar al año), según la Comisión.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "ecodiseno_etiquetado_energetico",
+   "p": "tiene_limite",
+   "o": "autoevaluacion_oficial",
+   "f": "F-1032",
+   "apoyo": "Es autoevaluación de la Comisión; un estudio alemán halló ahorros reales menores (no verificado en detalle).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "afirmaciones_ambientales_enganosas",
+   "p": "aplica_a",
+   "o": "union_europea",
+   "f": "F-1033",
+   "apoyo": "53,3% de las afirmaciones ambientales examinadas eran vagas, engañosas o infundadas y 40% no tenía sustento (estudio oficial de 2020, base de Green Claims).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "durabilidad_productos",
+   "p": "reduce",
+   "o": "emisiones_co2",
+   "f": "F-1034",
+   "apoyo": "Alargar un año la vida de lavadoras, laptops, aspiradoras y celulares en la UE evitaría ~4 Mt CO2/año hacia 2030 (≈2 millones de autos fuera un año).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "durabilidad_productos",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-1034",
+   "apoyo": "Es una proyección con modelo propio de una ONG, no revisada por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "indice_reparabilidad_francia",
+   "p": "asocia_con",
+   "o": "decision_compra_consumidor",
+   "f": "F-1035",
+   "apoyo": "Encuesta de HOP (n=1.200): ~55% conocía el índice y ~3 de cada 4 de quienes lo vieron dijo que ayudó en su compra.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "indice_reparabilidad_francia",
+   "p": "tiene_limite",
+   "o": "autodeclaracion_encuesta",
+   "f": "F-1035",
+   "apoyo": "No hay medición de cambio en la tasa de reparación (línea base ~40% de electrónicos rotos reparados en 2020); el efecto es autodeclarado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "desconfianza_afirmacion_verde",
+   "p": "reduce",
+   "o": "decision_compra_consumidor",
+   "f": "F-1036",
+   "apoyo": "53% de quienes desconfían de una afirmación ambiental no compra el producto (encuesta a 6.500 consumidores en 13 países).",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "afirmaciones_ambientales_enganosas",
+   "p": "asocia_con",
+   "o": "desconfianza_afirmacion_verde",
+   "f": "F-1036",
+   "apoyo": "Más de 3 de cada 5 empresas temen que sus esfuerzos ambientales parezcan insinceros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "sello_higg",
+   "p": "es_tipo_de",
+   "o": "afirmaciones_ambientales_enganosas",
+   "f": "F-1037",
+   "apoyo": "La autoridad de consumo de Noruega declaró engañosas las afirmaciones basadas en Higg (caso Norrøna) y advirtió a H&M; la coalición pausó el sello.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "afirmaciones_ambientales_enganosas",
+   "p": "aplica_a",
+   "o": "industria_moda",
+   "f": "F-1037",
+   "apoyo": "Quartz halló que más de la mitad de las fichas de H&M exageraban; H&M las retiró.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "demanda_material_reciclado",
+   "p": "asocia_con",
+   "o": "viabilidad_negocio_circular",
+   "f": "F-1038",
+   "apoyo": "Renewcell podía producir 60.000 t/año pero vendió 18.000 t en 2023, menos de la mitad de su punto de equilibrio, y quebró en febrero de 2024.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "renewcell",
+   "p": "aplica_a",
+   "o": "industria_moda",
+   "f": "F-1038",
+   "apoyo": "Recicladora textil sueca que quebró en 2024 y luego se vendió como Circulose.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "reparacion_piezas_verdes_siniestros",
+   "p": "reduce",
+   "o": "emisiones_co2",
+   "f": "F-1039",
+   "apoyo": "Solera afirma que reparar y usar piezas verdes baja 60,3% el CO2; Allianz (AZT) comparó 9 piezas en 4 países y halló menos emisiones al reparar.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "reparacion_piezas_verdes_siniestros",
+   "p": "reduce",
+   "o": "costo_siniestro",
+   "f": "F-1039",
+   "apoyo": "Solera afirma una baja de 10,1% en el costo del siniestro y de 11,2% en el tiempo de reparación.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "reparacion_piezas_verdes_siniestros",
+   "p": "tiene_limite",
+   "o": "nota_prensa_proveedor",
+   "f": "F-1039",
+   "apoyo": "Cifras de una nota de prensa del proveedor sin método visible; el estudio primario de Allianz no se leyó.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "economia_circular",
+   "p": "aumenta",
+   "o": "pib_empleo",
+   "f": "F-1040",
+   "apoyo": "Simulaciones de la CEPAL muestran efecto positivo y creciente en PIB y empleo, y menores emisiones, en Chile, Colombia, México y Perú.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "economia_circular",
+   "p": "aplica_a",
+   "o": "alianza_pacifico",
+   "f": "F-1040",
+   "apoyo": "Modelación macroeconómica de la economía circular en los cuatro países de la Alianza del Pacífico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "pib_empleo",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-1040",
+   "apoyo": "Es proyección de un modelo de simulación, no resultado medido; no revisado por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "/trinidad 2026-10-25, dominio sostenibilidad, circularidad y sistemas: pase de amplitud a nivel ficha."
+}

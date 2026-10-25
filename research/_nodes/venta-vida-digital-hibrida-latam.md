@@ -220,6 +220,7 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 
 ## Conexiones
 
+- [[diseno-espacios-ciudad|Diseño de espacios, arquitectura y ciudad: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): qué pasa cuando se cierran sucursales físicas.
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — este node
   es la extensión regional (LATAM) de esa investigación global; confirma el mismo patrón
   (digital-first potencia al intermediario, no lo reemplaza) con evidencia propia de Brasil,

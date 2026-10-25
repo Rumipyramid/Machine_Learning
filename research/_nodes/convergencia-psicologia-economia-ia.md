@@ -1,7 +1,7 @@
 # Convergencia psicología + economía + IA: qué se está juntando, qué funciona y qué es humo
 
 > Documento de investigación **acumulativo**. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-03 · Última actualización: 2026-10-12 · Versión: **v1.0 (iteración 1, `/trinidad`: empírica + social + negocio)**
+> Fecha de elaboración: 2026-10-03 · Última actualización: 2026-10-25 · Versión: **v1.0 (iteración 1, `/trinidad`: empírica + social + negocio)**
 > Origen: pedido del usuario: *"investigación profunda de cómo están acercándose la psicología, la economía y la IA"*.
 > Fuentes en `research/fuentes/codice.md`: **nuevas F-543 a F-645** (empírica F-543 a F-598 · social F-599 a F-616 · negocio F-617 a F-645) · ya existentes que se reusan: F-16, F-17, F-20, F-21, F-24, F-25, F-27, F-29, F-257, F-488, F-489, F-495, F-499, F-542.
 > Pregunta permanente: **¿en qué se están fundiendo la psicología, la economía y la IA, qué de eso tiene evidencia y qué implica para un equipo que diseña conducta en seguros y usa usuarios sintéticos (`lapuerta`)?**
@@ -234,8 +234,19 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - **Pista de negocio:** se agotó el cupo de búsquedas antes de cubrir Betterfly, Vitality en LatAm y Pacífico. Las cifras de filings (F-636, F-642) vienen de extractos. La cifra de EBITDA de Lemonade del extracto es inconsistente y no se usa.
 - **Sin dominio de seguros:** ninguna fuente prueba la convergencia en decisiones de seguros.
 
+## Actualización 2026-10-25: dos piezas más sobre encuestados sintéticos
+
+- **Coinciden en lo grueso, fallan en la variación.** Un instituto de investigación de mercado halló que los encuestados
+  sintéticos coincidieron con las elecciones de marca reales cerca de 79% de las veces, pero sobreestimaron las actitudes
+  positivas hacia marcas conocidas y variaron menos que las personas [F-1061] (rigor C). Es el mismo patrón que ya muestran
+  las fuentes académicas de este nodo.
+- **El fallo electoral de Aaru no prueba que lo sintético sea peor.** En 2024 Aaru dio ventaja a Harris y ganó Trump, pero
+  pronosticadores tradicionales también la favorecían; no hay una comparación independiente del error [F-1060] (prensa, D).
+
 ## Conexiones
 
+- [[recomendaciones-acciones-2026|Recomendaciones de acciones (julio 2026): qué sostiene cada señal]] — foto fechada (julio 2026) de recomendaciones de acciones, separadas por tipo de evidencia; rescatada del registro de fuentes el 2026-10-25.
+- [[rentabilidad-modelos-seguros|Modelos de seguros rentables: qué está medido]] — qué modelos de seguros son rentables y con qué evidencia (telemática, paramétricos, reaseguro), rescatado del registro de fuentes el 2026-10-25.
 - [[conducta-humano-ia|Conducta humano-IA]] — este node le pasa la persuasión electoral (F-585), la reducción de creencias conspirativas (F-586), la compañía (F-587, F-588) y la advertencia que no inmuniza (F-589); aquel conserva el criterio sobre confianza, adulación y descarga cognitiva.
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — la agenda "AI Behavioral Science" (F-27) que allí se esbozó aquí se desarrolla con evidencia; la crisis del nudge (F-17, F-21) y los fraudes (F-24, F-615) explican por qué la disciplina migra hacia la IA y los datos.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — §6 evalúa qué fallas documentadas de las muestras sintéticas afectan al modelo y propone PE1-PE3 como pruebas.

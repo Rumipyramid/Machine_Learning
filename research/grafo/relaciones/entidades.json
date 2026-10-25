@@ -14,6 +14,11 @@
   "nombre": "Abandono de una compra importante por información incompleta",
   "tipo": "resultado"
  },
+ "abandono_temprano_malas_ideas": {
+  "id": "abandono_temprano_malas_ideas",
+  "nombre": "Abandono temprano de ideas de negocio malas (pivote o salida)",
+  "tipo": "resultado"
+ },
  "abandono_tratamiento": {
   "id": "abandono_tratamiento",
   "nombre": "Abandono de tratamiento por fricción administrativa",
@@ -124,6 +129,11 @@
   "nombre": "Acusaciones de 'AI slop' en comentarios online",
   "tipo": "resultado"
  },
+ "acusaciones_slop_vigilancia": {
+  "id": "acusaciones_slop_vigilancia",
+  "nombre": "Acusaciones de 'AI slop' como vigilancia de pertenencia",
+  "tipo": "resultado"
+ },
  "ada_health": {
   "id": "ada_health",
   "nombre": "Ada Health (verificador de síntomas con IA)",
@@ -229,6 +239,11 @@
   "nombre": "Afiliados de Veterans Affairs (EE.UU.)",
   "tipo": "poblacion"
  },
+ "afirmaciones_ambientales_enganosas": {
+  "id": "afirmaciones_ambientales_enganosas",
+  "nombre": "Afirmaciones ambientales vagas, engañosas o infundadas (greenwashing)",
+  "tipo": "concepto"
+ },
  "afirmaciones_inexactas_ia": {
   "id": "afirmaciones_inexactas_ia",
   "nombre": "Afirmaciones inexactas en la persuasión de la IA",
@@ -247,6 +262,11 @@
  "agente_encuestado_sintetico": {
   "id": "agente_encuestado_sintetico",
   "nombre": "Agente autónomo con LLM que responde encuestas online",
+  "tipo": "intervencion"
+ },
+ "agentes_corresponsales": {
+  "id": "agentes_corresponsales",
+  "nombre": "Agentes corresponsales bancarios",
   "tipo": "intervencion"
  },
  "agentes_generativos_entrevista": {
@@ -384,6 +404,11 @@
   "nombre": "Alfabetización en IA (intervención ligera)",
   "tipo": "intervencion"
  },
+ "alianza_pacifico": {
+  "id": "alianza_pacifico",
+  "nombre": "Alianza del Pacífico (Chile, Colombia, México, Perú)",
+  "tipo": "poblacion"
+ },
  "alianzas_externas_ia": {
   "id": "alianzas_externas_ia",
   "nombre": "Implementar IA con socios externos (frente a desarrollo interno)",
@@ -474,6 +499,11 @@
   "nombre": "Antecedentes familiares, habilidad cognitiva temprana y entorno del hogar",
   "tipo": "limitacion"
  },
+ "antes_despues_sin_control": {
+  "id": "antes_despues_sin_control",
+  "nombre": "Diseños antes/después sin grupo de control y con errores de análisis",
+  "tipo": "limitacion"
+ },
  "anthem_er_evitable": {
   "id": "anthem_er_evitable",
   "nombre": "Política de 'urgencia evitable' de Anthem (2018): no pagar visitas a urgencias juzgadas evitables",
@@ -502,6 +532,11 @@
  "apelacion_asistida_ia": {
   "id": "apelacion_asistida_ia",
   "nombre": "Apelación de reclamos negados asistida por IA (p. ej., Fight Health Insurance)",
+  "tipo": "intervencion"
+ },
+ "apertura_tienda_fisica": {
+  "id": "apertura_tienda_fisica",
+  "nombre": "Apertura de una tienda física",
   "tipo": "intervencion"
  },
  "apeseg": {
@@ -558,6 +593,11 @@
   "id": "arbitraje_ligero",
   "nombre": "Publicación con arbitraje ligero (p. ej., CHI Extended Abstracts), no revisión completa por pares",
   "tipo": "limitacion"
+ },
+ "area_verde_lima": {
+  "id": "area_verde_lima",
+  "nombre": "Área verde por habitante en Lima (menos de 3,5 m²)",
+  "tipo": "resultado"
  },
  "argumento_godeliano_penrose": {
   "id": "argumento_godeliano_penrose",
@@ -629,6 +669,11 @@
   "nombre": "Disposición a asumir responsabilidad y reparar",
   "tipo": "resultado"
  },
+ "atencion_basica_sucursal": {
+  "id": "atencion_basica_sucursal",
+  "nombre": "Atención básica en sucursal (saludar, atender rápido, agradecer)",
+  "tipo": "intervencion"
+ },
  "atencion_consumidor": {
   "id": "atencion_consumidor",
   "nombre": "Atención y relación anticipada con el consumidor",
@@ -648,6 +693,16 @@
   "id": "atencion_social_acciones",
   "nombre": "Atención social (ruido en redes) sobre una acción",
   "tipo": "constructo"
+ },
+ "atmosfera_tienda": {
+  "id": "atmosfera_tienda",
+  "nombre": "Atmósfera del punto de venta (música, aroma, color)",
+  "tipo": "intervencion"
+ },
+ "atractivo_paquete": {
+  "id": "atractivo_paquete",
+  "nombre": "Atractivo percibido del paquete",
+  "tipo": "resultado"
  },
  "atractivo_satisfaccion_ui": {
   "id": "atractivo_satisfaccion_ui",
@@ -679,10 +734,20 @@
   "nombre": "Autoconfianza del trabajador en su propia tarea",
   "tipo": "constructo"
  },
+ "autodeclaracion_encuesta": {
+  "id": "autodeclaracion_encuesta",
+  "nombre": "Respuesta autodeclarada en encuesta, sin medición de conducta",
+  "tipo": "limitacion"
+ },
  "autodeclarado_vendedor": {
   "id": "autodeclarado_vendedor",
   "nombre": "Cifra autodeclarada por la empresa, sin método auditable",
   "tipo": "limitacion"
+ },
+ "autoeficacia_apoyo_social": {
+  "id": "autoeficacia_apoyo_social",
+  "nombre": "Autoeficacia y apoyo social percibido",
+  "tipo": "resultado"
  },
  "autoeficacia_entrenamiento": {
   "id": "autoeficacia_entrenamiento",
@@ -698,6 +763,11 @@
   "id": "autoestimacion_desempeno",
   "nombre": "Autoestimación del desempeño (~+4 pts)",
   "tipo": "resultado"
+ },
+ "autoevaluacion_oficial": {
+  "id": "autoevaluacion_oficial",
+  "nombre": "Estimación del propio organismo que aplica la política (autoevaluación contra contrafactual)",
+  "tipo": "limitacion"
  },
  "autofinanciamiento_nirvanic": {
   "id": "autofinanciamiento_nirvanic",
@@ -812,6 +882,11 @@
  "bajo_peso_nacer": {
   "id": "bajo_peso_nacer",
   "nombre": "Bajo peso al nacer",
+  "tipo": "resultado"
+ },
+ "balaceras_heridos_graves": {
+  "id": "balaceras_heridos_graves",
+  "nombre": "Balaceras con heridos graves o muertos",
   "tipo": "resultado"
  },
  "bancaseguros_latam": {
@@ -1244,6 +1319,16 @@
   "nombre": "Las cifras anglosajonas se importan al español sin su fuente ni descuento (H20)",
   "tipo": "afirmacion"
  },
+ "c_circularidad_reduce_impacto": {
+  "id": "c_circularidad_reduce_impacto",
+  "nombre": "Cerrar ciclos de material reduce por sí solo el impacto ambiental",
+  "tipo": "afirmacion"
+ },
+ "c_codiseno_mejora_salud": {
+  "id": "c_codiseno_mejora_salud",
+  "nombre": "El co-diseño mejora la salud o el bienestar de los pacientes",
+  "tipo": "afirmacion"
+ },
  "c_cognicion_simbolos_amodales": {
   "id": "c_cognicion_simbolos_amodales",
   "nombre": "La cognición es cómputo sobre símbolos abstractos (amodales), independiente de la percepción y la acción",
@@ -1319,6 +1404,11 @@
   "nombre": "Grandes corporaciones se retiran del venture capital corporativo directo",
   "tipo": "afirmacion"
  },
+ "c_cx_aseguradoras_65_retorno": {
+  "id": "c_cx_aseguradoras_65_retorno",
+  "nombre": "Las aseguradoras que priorizan la experiencia de cliente logran hasta 65% más retorno al accionista (atribuido a McKinsey)",
+  "tipo": "afirmacion"
+ },
  "c_dano2017_3100": {
   "id": "c_dano2017_3100",
   "nombre": "El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS)",
@@ -1357,6 +1447,26 @@
  "c_design_systems_valle_desilusion": {
   "id": "c_design_systems_valle_desilusion",
   "nombre": "Los design systems se deslizan al valle de la desilusión",
+  "tipo": "afirmacion"
+ },
+ "c_design_thinking_absorbido_empresas": {
+  "id": "c_design_thinking_absorbido_empresas",
+  "nombre": "El método de design thinking ya se adoptó dentro de las empresas (ya no se compra afuera)",
+  "tipo": "afirmacion"
+ },
+ "c_design_thinking_ibm_roi_301": {
+  "id": "c_design_thinking_ibm_roi_301",
+  "nombre": "La práctica de design thinking de IBM devuelve 301% de retorno en 3 años (Forrester, encargado por IBM)",
+  "tipo": "afirmacion"
+ },
+ "c_design_thinking_paquete_comercial": {
+  "id": "c_design_thinking_paquete_comercial",
+  "nombre": "El design thinking es un paquete comercial de consultoras y universidades, no innovación significativa",
+  "tipo": "afirmacion"
+ },
+ "c_design_thinking_paquete_simplifica": {
+  "id": "c_design_thinking_paquete_simplifica",
+  "nombre": "El design thinking es un paquete comercial que simplifica los problemas sociales y enseña actitud en vez de habilidades",
   "tipo": "afirmacion"
  },
  "c_desmentido_circula_menos": {
@@ -1469,6 +1579,11 @@
   "nombre": "Lo que se ve más bello se percibe más usable (efecto estética-usabilidad)",
   "tipo": "afirmacion"
  },
+ "c_efecto_halo_tienda_fisica": {
+  "id": "c_efecto_halo_tienda_fisica",
+  "nombre": "Abrir tiendas físicas eleva las ventas en línea de la zona (efecto halo)",
+  "tipo": "afirmacion"
+ },
  "c_efecto_ia_productividad_incierto": {
   "id": "c_efecto_ia_productividad_incierto",
   "nombre": "El efecto de la IA sobre la productividad no es estimable con el diseño actual",
@@ -1527,6 +1642,11 @@
  "c_estadisticas_ux_atribuidas_falsas": {
   "id": "c_estadisticas_ux_atribuidas_falsas",
   "nombre": "Las estadísticas UX atribuidas a Gartner, Forrester o NN/g no existen como se citan (H23)",
+  "tipo": "afirmacion"
+ },
+ "c_estandar_oms_area_verde": {
+  "id": "c_estandar_oms_area_verde",
+  "nombre": "La OMS recomienda 8-9 m² de área verde por habitante",
   "tipo": "afirmacion"
  },
  "c_estandar_reporting_se_degrada": {
@@ -1612,6 +1732,11 @@
  "c_genui_peor_que_expertos": {
   "id": "c_genui_peor_que_expertos",
   "nombre": "Las interfaces generadas por LLM son peores que las diseñadas por expertos humanos",
+  "tipo": "afirmacion"
+ },
+ "c_habitacion_individual_reduce_infecciones": {
+  "id": "c_habitacion_individual_reduce_infecciones",
+  "nombre": "Las habitaciones individuales reducen las infecciones asociadas a la atención de salud",
   "tipo": "afirmacion"
  },
  "c_hcd_insuficiente": {
@@ -1989,6 +2114,11 @@
   "nombre": "La postura corporal afecta estados afectivos autorreportados (ánimo, sensación de poder)",
   "tipo": "afirmacion"
  },
+ "c_pp_gasto_salud_2_3_pp": {
+  "id": "c_pp_gasto_salud_2_3_pp",
+  "nombre": "El presupuesto participativo sube 2-3 puntos porcentuales el gasto en salud (cifra de prensa)",
+  "tipo": "afirmacion"
+ },
  "c_precio_chopra_5m": {
   "id": "c_precio_chopra_5m",
   "nombre": "La compra de Chopra Global fue por hasta US$5 M en efectivo + acciones y hasta US$3 M de earnout (filing SEC)",
@@ -2304,10 +2434,20 @@
   "nombre": "Todos los grupos de consumidores son susceptibles",
   "tipo": "afirmacion"
  },
+ "cajetilla_generica_advertencias": {
+  "id": "cajetilla_generica_advertencias",
+  "nombre": "Cajetilla genérica de cigarrillos con advertencias gráficas más grandes (Australia)",
+  "tipo": "intervencion"
+ },
  "calculadora_roi_ds_smashing": {
   "id": "calculadora_roi_ds_smashing",
   "nombre": "Smashing Magazine 2022: calculadora del ROI de un design system",
   "tipo": "estudio"
+ },
+ "calidad_aire_interior": {
+  "id": "calidad_aire_interior",
+  "nombre": "Calidad del aire interior (menos compuestos orgánicos volátiles, más ventilación)",
+  "tipo": "intervencion"
  },
  "calidad_decision_seguro": {
   "id": "calidad_decision_seguro",
@@ -2429,6 +2569,11 @@
   "nombre": "Capacidad de diseño-ingeniería",
   "tipo": "constructo"
  },
+ "capacidades_dinamicas_gerenciales": {
+  "id": "capacidades_dinamicas_gerenciales",
+  "nombre": "Capacidades dinámicas gerenciales (detectar y aprovechar oportunidades)",
+  "tipo": "constructo"
+ },
  "capitacion_ajustada_necesidad": {
   "id": "capitacion_ajustada_necesidad",
   "nombre": "Capitación ajustada por necesidad (fórmula de asignación / Global Sum del Reino Unido)",
@@ -2539,6 +2684,11 @@
   "nombre": "Center for Consciousness Studies (Universidad de Arizona)",
   "tipo": "organizacion"
  },
+ "centralidad_diseno": {
+  "id": "centralidad_diseno",
+  "nombre": "Centralidad del diseño en la estrategia de la empresa",
+  "tipo": "constructo"
+ },
  "cerca_magnetics": {
   "id": "cerca_magnetics",
   "nombre": "Cerca Magnetics (spin-out de la U. de Nottingham)",
@@ -2568,6 +2718,11 @@
   "id": "chesbrough_2023",
   "nombre": "Chesbrough 2023: retrospectiva de 20 años de open innovation",
   "tipo": "estudio"
+ },
+ "chile_hogares": {
+  "id": "chile_hogares",
+  "nombre": "Hogares de Chile (panel de compras)",
+  "tipo": "poblacion"
  },
  "choices13k": {
   "id": "choices13k",
@@ -2609,6 +2764,11 @@
   "nombre": "Sistema con LLMs que plantea hipótesis y corre experimentos con agentes simulados",
   "tipo": "intervencion"
  },
+ "cierre_agencias_bancarias": {
+  "id": "cierre_agencias_bancarias",
+  "nombre": "Cierre de agencias o sucursales bancarias",
+  "tipo": "intervencion"
+ },
  "cierre_assurance_iq": {
   "id": "cierre_assurance_iq",
   "nombre": "Cese de operaciones de Assurance IQ (insurtech de EE.UU.)",
@@ -2644,9 +2804,19 @@
   "nombre": "Cifra autorreportada por la empresa o su proveedor, no auditada independientemente",
   "tipo": "limitacion"
  },
+ "cifra_fuente_anonima": {
+  "id": "cifra_fuente_anonima",
+  "nombre": "Cifra de fuente anónima no verificada",
+  "tipo": "limitacion"
+ },
  "cifra_no_verificada": {
   "id": "cifra_no_verificada",
   "nombre": "Cifra reportada por un medio, no verificada directamente",
+  "tipo": "limitacion"
+ },
+ "cifra_no_verificada_original": {
+  "id": "cifra_no_verificada_original",
+  "nombre": "Cifra difundida en prensa que no se verificó en el estudio original",
   "tipo": "limitacion"
  },
  "cifra_no_verificada_primaria": {
@@ -2657,6 +2827,11 @@
  "cifra_sin_metodo_publicado": {
   "id": "cifra_sin_metodo_publicado",
   "nombre": "Cifra sin muestra ni método publicado (no verificable de forma independiente)",
+  "tipo": "limitacion"
+ },
+ "cifras_discrepan_resumenes": {
+  "id": "cifras_discrepan_resumenes",
+  "nombre": "Las cifras discrepan entre resúmenes secundarios del mismo informe",
   "tipo": "limitacion"
  },
  "cifras_ia_varian_entre_medios": {
@@ -2684,6 +2859,11 @@
   "nombre": "Cifra o caso citado de segunda mano, sin acceso al reporte primario",
   "tipo": "limitacion"
  },
+ "ciudad_15_minutos": {
+  "id": "ciudad_15_minutos",
+  "nombre": "Ciudad de 15 minutos y planes de tráfico local",
+  "tipo": "intervencion"
+ },
  "claude_design": {
   "id": "claude_design",
   "nombre": "Lanzamiento de Claude Design (Anthropic)",
@@ -2708,6 +2888,11 @@
   "id": "cobertura_cogitate_2025",
   "nombre": "Cobertura en prensa del estudio Cogitate (2025)",
   "tipo": "concepto"
+ },
+ "cobertura_distrital_bancaria": {
+  "id": "cobertura_distrital_bancaria",
+  "nombre": "Presencia de servicios bancarios en los distritos del Perú",
+  "tipo": "resultado"
  },
  "cobertura_microtubulos_2024": {
   "id": "cobertura_microtubulos_2024",
@@ -2743,6 +2928,11 @@
   "id": "coeficiente_aversion_perdida",
   "nombre": "Coeficiente de aversión a la pérdida (lambda)",
   "tipo": "metrica"
+ },
+ "coeficientes_no_verificados": {
+  "id": "coeficientes_no_verificados",
+  "nombre": "Coeficientes y conclusiones no verificados en el resumen disponible",
+  "tipo": "limitacion"
  },
  "cogitate_nature_2025": {
   "id": "cogitate_nature_2025",
@@ -2904,6 +3094,16 @@
   "nombre": "Compra impulsiva en tiendas online",
   "tipo": "resultado"
  },
+ "compra_sin_receta_ensusalud_2015": {
+  "id": "compra_sin_receta_ensusalud_2015",
+  "nombre": "Compra de medicamentos sin receta en Perú (54,8%, ENSUSALUD 2015)",
+  "tipo": "resultado"
+ },
+ "compras_bebidas_azucaradas": {
+  "id": "compras_bebidas_azucaradas",
+  "nombre": "Compras de bebidas azucaradas de los hogares",
+  "tipo": "resultado"
+ },
  "comprension_plan_salud": {
   "id": "comprension_plan_salud",
   "nombre": "Comprensión del plan de salud",
@@ -2944,6 +3144,11 @@
   "nombre": "Hipótesis del cerebro como computadora cuántica",
   "tipo": "afirmacion"
  },
+ "comunicacion_electronica_trabajo": {
+  "id": "comunicacion_electronica_trabajo",
+  "nombre": "Comunicación electrónica en el trabajo (correo, mensajería)",
+  "tipo": "resultado"
+ },
  "comunidad_sd_lima": {
   "id": "comunidad_sd_lima",
   "nombre": "Service Design Lima (comunidad activa desde 2017)",
@@ -2983,6 +3188,11 @@
   "id": "conducta_compra_observada",
   "nombre": "Conducta de compra observada",
   "tipo": "resultado"
+ },
+ "conducta_declarada": {
+  "id": "conducta_declarada",
+  "nombre": "Conducta declarada en encuesta, no observada",
+  "tipo": "limitacion"
  },
  "conducta_maquinas": {
   "id": "conducta_maquinas",
@@ -3094,6 +3304,11 @@
   "nombre": "La adopción de la plataforma coincide con más inversión general en ventas (confunde la causalidad)",
   "tipo": "limitacion"
  },
+ "confusion_otras_inversiones": {
+  "id": "confusion_otras_inversiones",
+  "nombre": "Confusión con otras inversiones públicas simultáneas",
+  "tipo": "limitacion"
+ },
  "confusion_seguro_salud_publica": {
   "id": "confusion_seguro_salud_publica",
   "nombre": "Confusión de 'seguro' con la salud pública (SIS/EsSalud)",
@@ -3122,6 +3337,11 @@
  "conocimiento_soat": {
   "id": "conocimiento_soat",
   "nombre": "Conocimiento del SOAT entre peruanos (94%)",
+  "tipo": "resultado"
+ },
+ "consecuencias_salud": {
+  "id": "consecuencias_salud",
+  "nombre": "Consecuencias de salud (resultados sanitarios)",
   "tipo": "resultado"
  },
  "consejo_experto_digital": {
@@ -3169,6 +3389,11 @@
   "nombre": "Consumidores y usuarios de seguros en Perú",
   "tipo": "poblacion"
  },
+ "consumo_energia_primaria": {
+  "id": "consumo_energia_primaria",
+  "nombre": "Consumo de energía primaria",
+  "tipo": "resultado"
+ },
  "contacto_bajo_costo": {
   "id": "contacto_bajo_costo",
   "nombre": "Contacto de bajo costo (cartas, mensajes)",
@@ -3198,6 +3423,11 @@
   "id": "contexto_mercado_producto_nuevo",
   "nombre": "Contexto de mercado (servicios vs. bienes, región, intensidad tecnológica)",
   "tipo": "constructo"
+ },
+ "contexto_servicios_vs_tiendas": {
+  "id": "contexto_servicios_vs_tiendas",
+  "nombre": "Contexto de servicios frente a tiendas",
+  "tipo": "concepto"
  },
  "contexto_y_metodo": {
   "id": "contexto_y_metodo",
@@ -3304,6 +3534,11 @@
   "nombre": "Costo de procesar siniestros",
   "tipo": "resultado"
  },
+ "costo_siniestro": {
+  "id": "costo_siniestro",
+  "nombre": "Costo del siniestro",
+  "tipo": "resultado"
+ },
  "costo_siniestros_medicos_empleador": {
   "id": "costo_siniestros_medicos_empleador",
   "nombre": "Costo anual de siniestros médicos por miembro (empleador)",
@@ -3337,6 +3572,11 @@
  "crecimiento_azos": {
   "id": "crecimiento_azos",
   "nombre": "Crecimiento de Azos (facturación duplicada por 2.º año; >R$100.000M de capital asegurado)",
+  "tipo": "resultado"
+ },
+ "crecimiento_economia_diseno_uk": {
+  "id": "crecimiento_economia_diseno_uk",
+  "nombre": "Crecimiento de la economía del diseño del Reino Unido (40% entre 2019 y 2023, frente a 24% del total)",
   "tipo": "resultado"
  },
  "crecimiento_gwp_agregadores_india": {
@@ -3399,6 +3639,11 @@
   "nombre": "Crecimiento de ventas",
   "tipo": "resultado"
  },
+ "credito_pequenas_empresas_local": {
+  "id": "credito_pequenas_empresas_local",
+  "nombre": "Crédito a pequeñas empresas en la zona de la agencia",
+  "tipo": "resultado"
+ },
  "creditos_ia_figma": {
   "id": "creditos_ia_figma",
   "nombre": "Monetización de créditos de IA de Figma",
@@ -3428,6 +3673,11 @@
   "id": "criterio_cientificidad",
   "nombre": "Criterio de cientificidad / comprobabilidad de una teoría de la conciencia",
   "tipo": "concepto"
+ },
+ "criterios_calidad_diseno_especulativo": {
+  "id": "criterios_calidad_diseno_especulativo",
+  "nombre": "Taxonomía de nueve criterios de calidad del diseño especulativo (especulativo, discursivo, de proceso)",
+  "tipo": "metrica"
  },
  "critica_aaronson_penrose": {
   "id": "critica_aaronson_penrose",
@@ -3529,6 +3779,11 @@
   "nombre": "Trazas digitales / logfiles de uso real",
   "tipo": "metrica"
  },
+ "decision_compra_consumidor": {
+  "id": "decision_compra_consumidor",
+  "nombre": "Decisión de compra del consumidor",
+  "tipo": "resultado"
+ },
  "decision_compra_hogar": {
   "id": "decision_compra_hogar",
   "nombre": "Decisión de compra en el hogar/pareja",
@@ -3604,6 +3859,11 @@
   "nombre": "Consumidores menores de 40 que buscan acceso digital junto con un asesor (67%)",
   "tipo": "resultado"
  },
+ "demanda_material_reciclado": {
+  "id": "demanda_material_reciclado",
+  "nombre": "Demanda de material reciclado por las marcas",
+  "tipo": "resultado"
+ },
  "demanda_modelo_calido": {
   "id": "demanda_modelo_calido",
   "nombre": "Demanda de usuarios por el regreso de GPT-4o, el modelo 'cálido' (#keep4o)",
@@ -3669,6 +3929,16 @@
   "nombre": "Descarga de trabajo cognitivo en el entorno (offloading)",
   "tipo": "concepto"
  },
+ "desconfianza_afirmacion_verde": {
+  "id": "desconfianza_afirmacion_verde",
+  "nombre": "Desconfianza del consumidor ante una afirmación ambiental",
+  "tipo": "constructo"
+ },
+ "desconfianza_comunidades": {
+  "id": "desconfianza_comunidades",
+  "nombre": "Desconfianza de las comunidades hacia los investigadores",
+  "tipo": "resultado"
+ },
  "desconfianza_medicos": {
   "id": "desconfianza_medicos",
   "nombre": "Desconfianza en los médicos",
@@ -3687,6 +3957,11 @@
  "desempeno_financiero_firma": {
   "id": "desempeno_financiero_firma",
   "nombre": "Desempeño financiero de la firma (ROA, ROS, crecimiento)",
+  "tipo": "resultado"
+ },
+ "desempeno_firma_rentabilidad_capitalizacion": {
+  "id": "desempeno_firma_rentabilidad_capitalizacion",
+  "nombre": "Rentabilidad y crecimiento de capitalización frente a la industria",
   "tipo": "resultado"
  },
  "desempeno_objetivo_razonamiento": {
@@ -3712,6 +3987,11 @@
  "deseo_limpieza_fisica": {
   "id": "deseo_limpieza_fisica",
   "nombre": "Deseo de limpieza física (productos, toallitas)",
+  "tipo": "resultado"
+ },
+ "desgaste_participacion_repetida": {
+  "id": "desgaste_participacion_repetida",
+  "nombre": "Desgaste por participar repetidamente",
   "tipo": "resultado"
  },
  "design_system": {
@@ -3769,6 +4049,11 @@
   "nombre": "Desnutrición crónica infantil",
   "tipo": "resultado"
  },
+ "despidos_disenadores_2023": {
+  "id": "despidos_disenadores_2023",
+  "nombre": "Despidos de diseñadores UX en 2023 (14,3% de encuestados de UX Collective)",
+  "tipo": "resultado"
+ },
  "despidos_diseno_2026": {
   "id": "despidos_diseno_2026",
   "nombre": "Despidos de roles de producto y diseño en 2026",
@@ -3787,6 +4072,11 @@
  "despidos_ux_mercadolibre": {
   "id": "despidos_ux_mercadolibre",
   "nombre": "Desvinculación de 119 personas del área de UX de MercadoLibre en LatAm",
+  "tipo": "resultado"
+ },
+ "destruccion_textiles_no_vendidos": {
+  "id": "destruccion_textiles_no_vendidos",
+  "nombre": "Destrucción de textiles y calzado sin vender",
   "tipo": "resultado"
  },
  "deteccion_faux_pas": {
@@ -3834,6 +4124,11 @@
   "nombre": "Dictamen conjunto de la Comisión de Salud (PL 2522/2021 y 8488/2024), dic-2025",
   "tipo": "intervencion"
  },
+ "dificil_evaluar_poder_participacion": {
+  "id": "dificil_evaluar_poder_participacion",
+  "nombre": "Es difícil evaluar si la participación transfiere poder real",
+  "tipo": "limitacion"
+ },
  "difusion_responsabilidad": {
   "id": "difusion_responsabilidad",
   "nombre": "Difusión de la responsabilidad",
@@ -3842,6 +4137,11 @@
  "direct_primary_care": {
   "id": "direct_primary_care",
   "nombre": "Direct Primary Care (atención primaria por membresía)",
+  "tipo": "intervencion"
+ },
+ "directiva_derecho_reparar": {
+  "id": "directiva_derecho_reparar",
+  "nombre": "Directiva europea de derecho a reparar (2024)",
   "tipo": "intervencion"
  },
  "directores_bleep_ramtha": {
@@ -3872,6 +4172,11 @@
  "disenadores_junior": {
   "id": "disenadores_junior",
   "nombre": "Diseñadores junior y recién graduados",
+  "tipo": "poblacion"
+ },
+ "disenadores_peru": {
+  "id": "disenadores_peru",
+  "nombre": "Diseñadores y líderes de diseño en empresas peruanas",
   "tipo": "poblacion"
  },
  "disenadores_plataformas_espaciales": {
@@ -3924,6 +4229,11 @@
   "nombre": "Diseño ontológico: el diseño fabrica el mundo (world-making)",
   "tipo": "concepto"
  },
+ "diseno_participativo_ia": {
+  "id": "diseno_participativo_ia",
+  "nombre": "Diseño participativo de sistemas de IA y aprendizaje automático",
+  "tipo": "intervencion"
+ },
  "diseno_publico": {
   "id": "diseno_publico",
   "nombre": "Diseño público y de servicios en el gobierno",
@@ -3962,6 +4272,11 @@
  "dispositivo_cuantico_salud": {
   "id": "dispositivo_cuantico_salud",
   "nombre": "Dispositivos de salud con etiqueta 'cuántica' (SCIO, Quest 9, Quantum Laser, analizadores de resonancia)",
+  "tipo": "intervencion"
+ },
+ "dispositivo_ia_humane": {
+  "id": "dispositivo_ia_humane",
+  "nombre": "Humane AI Pin (dispositivo de IA portátil)",
   "tipo": "intervencion"
  },
  "distorsion_hiperprecision": {
@@ -4044,6 +4359,11 @@
   "nombre": "Duolingo",
   "tipo": "organizacion"
  },
+ "durabilidad_productos": {
+  "id": "durabilidad_productos",
+  "nombre": "Alargar la vida útil de los productos",
+  "tipo": "intervencion"
+ },
  "duracion_consulta": {
   "id": "duracion_consulta",
   "nombre": "Duración de la consulta médica",
@@ -4103,6 +4423,16 @@
   "id": "eco_sindicacion",
   "nombre": "Eco de sindicación: la misma nota repetida en varios medios no son confirmaciones independientes",
   "tipo": "limitacion"
+ },
+ "ecodiseno_etiquetado_energetico": {
+  "id": "ecodiseno_etiquetado_energetico",
+  "nombre": "Ecodiseño y etiquetado energético de la UE",
+  "tipo": "intervencion"
+ },
+ "economia_circular": {
+  "id": "economia_circular",
+  "nombre": "Economía circular (cerrar ciclos de material: reuso, remanufactura, reciclaje)",
+  "tipo": "concepto"
  },
  "economia_costos_transaccion": {
   "id": "economia_costos_transaccion",
@@ -4194,6 +4524,11 @@
   "nombre": "Efecto del orden de las preguntas en encuestas",
   "tipo": "resultado"
  },
+ "efecto_salud_no_probado": {
+  "id": "efecto_salud_no_probado",
+  "nombre": "Efecto en la salud a largo plazo no probado",
+  "tipo": "limitacion"
+ },
  "efecto_stroop": {
   "id": "efecto_stroop",
   "nombre": "Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color)",
@@ -4224,14 +4559,29 @@
   "nombre": "Electric Twin (startup de simulación sintética)",
   "tipo": "organizacion"
  },
+ "eliminacion_ejecutivos_diseno": {
+  "id": "eliminacion_ejecutivos_diseno",
+  "nombre": "Eliminación de cargos ejecutivos de diseño en grandes empresas (IBM, Expedia)",
+  "tipo": "resultado"
+ },
  "elliot_2007_est": {
   "id": "elliot_2007_est",
   "nombre": "Estudio Elliot et al. 2007 (efecto del rojo en el logro)",
   "tipo": "estudio"
  },
+ "emisiones_co2": {
+  "id": "emisiones_co2",
+  "nombre": "Emisiones de CO2",
+  "tipo": "resultado"
+ },
  "emisor_experto": {
   "id": "emisor_experto",
   "nombre": "Presentar al emisor como experto",
+  "tipo": "intervencion"
+ },
+ "empaque_prueba_ninos": {
+  "id": "empaque_prueba_ninos",
+  "nombre": "Empaque a prueba de niños (medicamentos y aspirina)",
   "tipo": "intervencion"
  },
  "empleo_disenadores_graficos": {
@@ -4253,6 +4603,16 @@
   "id": "empoderamiento_psicologico",
   "nombre": "Empoderamiento psicológico",
   "tipo": "constructo"
+ },
+ "emprendedores_peru": {
+  "id": "emprendedores_peru",
+  "nombre": "Emprendedores y pequeños negocios en Perú",
+  "tipo": "poblacion"
+ },
+ "empresas_europeas_innobarometer": {
+  "id": "empresas_europeas_innobarometer",
+  "nombre": "Empresas europeas de la encuesta Innobarometer (más de 12.000)",
+  "tipo": "poblacion"
  },
  "encogimiento_efecto_replica": {
   "id": "encogimiento_efecto_replica",
@@ -4313,6 +4673,11 @@
   "id": "enfermedades_cronicas_multimorbilidad",
   "nombre": "Prevalencia de enfermedades crónicas, síndromes geriátricos y multimorbilidad",
   "tipo": "resultado"
+ },
+ "enfoque_cientifico_emprendimiento": {
+  "id": "enfoque_cientifico_emprendimiento",
+  "nombre": "Enfoque científico de decisión emprendedora (formular hipótesis y testearlas)",
+  "tipo": "intervencion"
  },
  "engagement_post_despedida": {
   "id": "engagement_post_despedida",
@@ -4419,6 +4784,11 @@
   "nombre": "Escepticismo del participante sobre la realidad del daño",
   "tipo": "limitacion"
  },
+ "escritorio_de_pie": {
+  "id": "escritorio_de_pie",
+  "nombre": "Escritorio de pie (sentarse y pararse) en el trabajo",
+  "tipo": "intervencion"
+ },
  "escrutinio_revision": {
   "id": "escrutinio_revision",
   "nombre": "Escrutinio activo en la revisión (comentarios en línea)",
@@ -4499,6 +4869,11 @@
   "nombre": "Estudio formativo cualitativo (diarios y entrevistas)",
   "tipo": "concepto"
  },
+ "estudio_laboratorio_pequeno_financiado": {
+  "id": "estudio_laboratorio_pequeno_financiado",
+  "nombre": "Estudio de laboratorio pequeño (n=24) financiado por la industria",
+  "tipo": "limitacion"
+ },
  "estudio_norc_fraude_2026": {
   "id": "estudio_norc_fraude_2026",
   "nombre": "Trabajo con NORC (2026) que estima 31% de fraude en encuestas online",
@@ -4523,6 +4898,11 @@
   "id": "ethos",
   "nombre": "Ethos Technologies (agencia de seguro de vida digital, NASDAQ: LIFE)",
   "tipo": "organizacion"
+ },
+ "etiquetado_frontal_advertencias": {
+  "id": "etiquetado_frontal_advertencias",
+  "nombre": "Etiquetado frontal de advertencia en alimentos (sellos u octógonos)",
+  "tipo": "intervencion"
  },
  "european_accessibility_act": {
   "id": "european_accessibility_act",
@@ -4564,6 +4944,11 @@
   "nombre": "Algoritmo ajustable 'the dial' de EviCore para enviar más autorizaciones previas a revisión",
   "tipo": "intervencion"
  },
+ "evidencia_calidad_baja": {
+  "id": "evidencia_calidad_baja",
+  "nombre": "Calidad de la evidencia baja o muy baja (estudios pequeños, mal ejecutados o mal reportados)",
+  "tipo": "limitacion"
+ },
  "evidencia_creativa_blog": {
   "id": "evidencia_creativa_blog",
   "nombre": "Evidencia Creativa 2026: reproducción en español de 'AI in Design 2026'",
@@ -4583,6 +4968,11 @@
   "id": "exactitud_fuera_frontera",
   "nombre": "Exactitud en tareas fuera de la frontera de capacidad de la IA",
   "tipo": "resultado"
+ },
+ "exceso_prospectiva": {
+  "id": "exceso_prospectiva",
+  "nombre": "Exceso de prospectiva (más preparación de la necesaria)",
+  "tipo": "constructo"
  },
  "exclusion_inscripcion": {
   "id": "exclusion_inscripcion",
@@ -4742,6 +5132,11 @@
  "factores_usuario_sistema": {
   "id": "factores_usuario_sistema",
   "nombre": "Experiencia, estilo cognitivo, actitudes del usuario y diseño del sistema",
+  "tipo": "concepto"
+ },
+ "falla_diseno_dispositivo": {
+  "id": "falla_diseno_dispositivo",
+  "nombre": "Fallas de diseño del aparato o de su software en dispositivos médicos",
   "tipo": "concepto"
  },
  "fallas_accesibilidad_webaim": {
@@ -4924,10 +5319,20 @@
   "nombre": "Forrester: The Six Steps For Justifying Better UX (dic-2016)",
   "tipo": "estudio"
  },
+ "forrester_tei_ibm_design_thinking": {
+  "id": "forrester_tei_ibm_design_thinking",
+  "nombre": "Forrester TEI de la práctica de design thinking de IBM (2018, encargado por IBM)",
+  "tipo": "estudio"
+ },
  "forrester_tei_invision": {
   "id": "forrester_tei_invision",
   "nombre": "Forrester TEI de InVision (2019, comisionado por el vendor): 475% de ROI",
   "tipo": "estudio"
+ },
+ "fracaso_dispositivo_hardware": {
+  "id": "fracaso_dispositivo_hardware",
+  "nombre": "Fracaso comercial de un dispositivo (devoluciones mayores que ventas, venta de activos bajo lo invertido)",
+  "tipo": "resultado"
  },
  "fracaso_insurtech_vida": {
   "id": "fracaso_insurtech_vida",
@@ -5069,6 +5474,11 @@
   "nombre": "Predicción de Gartner (2018): 85% de proyectos de IA con resultados erróneos por sesgo hasta 2022",
   "tipo": "estudio"
  },
+ "gasto_energetico_hogares": {
+  "id": "gasto_energetico_hogares",
+  "nombre": "Gasto de los consumidores en energía",
+  "tipo": "resultado"
+ },
  "gasto_farmaceutico_empleador": {
   "id": "gasto_farmaceutico_empleador",
   "nombre": "Gasto farmacéutico de los planes de salud de empleadores",
@@ -5179,6 +5589,11 @@
   "nombre": "Meta-análisis Gnambs 2020 (efecto del rojo en desempeño)",
   "tipo": "estudio"
  },
+ "gobierno_flandes": {
+  "id": "gobierno_flandes",
+  "nombre": "Gobierno de Flandes (Bélgica)",
+  "tipo": "organizacion"
+ },
  "gov_uk": {
   "id": "gov_uk",
   "nombre": "GOV.UK (servicios digitales del gobierno británico)",
@@ -5193,6 +5608,11 @@
   "id": "grand_view_research",
   "nombre": "Grand View Research (vendor de informes de mercado)",
   "tipo": "organizacion"
+ },
+ "grupos_desfavorecidos": {
+  "id": "grupos_desfavorecidos",
+  "nombre": "Grupos socialmente desfavorecidos",
+  "tipo": "poblacion"
  },
  "guia_anual_figma_2026": {
   "id": "guia_anual_figma_2026",
@@ -5218,6 +5638,11 @@
   "id": "habilitadores_institucionales",
   "nombre": "Habilitadores institucionales: liderazgo, capacidad, financiamiento, oportunidad de iterar",
   "tipo": "constructo"
+ },
+ "habitaciones_hospital_individuales": {
+  "id": "habitaciones_hospital_individuales",
+  "nombre": "Habitaciones individuales en el hospital",
+  "tipo": "intervencion"
  },
  "hackenburg_margetts_2024": {
   "id": "hackenburg_margetts_2024",
@@ -5278,6 +5703,16 @@
   "id": "hogares_pobres",
   "nombre": "Hogares pobres / de menores ingresos",
   "tipo": "poblacion"
+ },
+ "hoja_ruta_circular_peru_2030": {
+  "id": "hoja_ruta_circular_peru_2030",
+  "nombre": "Segunda Hoja de Ruta de Economía Circular de la industria y comercio del Perú al 2030 (Produce)",
+  "tipo": "intervencion"
+ },
+ "homicidios_violencia_barrio": {
+  "id": "homicidios_violencia_barrio",
+  "nombre": "Homicidios y violencia percibida en el barrio",
+  "tipo": "resultado"
  },
  "homo_silicus": {
   "id": "homo_silicus",
@@ -5429,6 +5864,11 @@
   "nombre": "Imitación por la IA de lo que la literatura científica escribió sobre sesgos",
   "tipo": "concepto"
  },
+ "impacto_declarado_octogonos": {
+  "id": "impacto_declarado_octogonos",
+  "nombre": "Impacto declarado de los octógonos en las compras (Lima)",
+  "tipo": "resultado"
+ },
  "impacto_pyg_genai": {
   "id": "impacto_pyg_genai",
   "nombre": "Impacto medible en el estado de resultados de la IA generativa",
@@ -5509,6 +5949,21 @@
   "nombre": "Independencia frente a la mayoría (respuestas correctas pese al grupo)",
   "tipo": "resultado"
  },
+ "indice_innovacion_publica": {
+  "id": "indice_innovacion_publica",
+  "nombre": "Índice de Innovación Pública (Chile)",
+  "tipo": "metrica"
+ },
+ "indice_reparabilidad_francia": {
+  "id": "indice_reparabilidad_francia",
+  "nombre": "Índice de reparabilidad francés (etiqueta de 2021)",
+  "tipo": "intervencion"
+ },
+ "industria_moda": {
+  "id": "industria_moda",
+  "nombre": "Industria de la moda y la confección",
+  "tipo": "poblacion"
+ },
  "industria_no_manufacturera": {
   "id": "industria_no_manufacturera",
   "nombre": "Industrias no manufactureras",
@@ -5568,6 +6023,11 @@
   "id": "informacion_tiempo_espera",
   "nombre": "Informar al cliente el tiempo esperado de espera",
   "tipo": "intervencion"
+ },
+ "informe_mckinsey_cx_seguros": {
+  "id": "informe_mckinsey_cx_seguros",
+  "nombre": "Informe de McKinsey sobre experiencia de cliente en seguros (no visto)",
+  "tipo": "estudio"
  },
  "infraestructura_mercado_seguro": {
   "id": "infraestructura_mercado_seguro",
@@ -5744,6 +6204,16 @@
   "nombre": "Intensidad en el peor momento (pico) y en el final de una experiencia",
   "tipo": "constructo"
  },
+ "intentos_dejar_fumar": {
+  "id": "intentos_dejar_fumar",
+  "nombre": "Intentos de dejar de fumar",
+  "tipo": "resultado"
+ },
+ "interaccion_cara_a_cara": {
+  "id": "interaccion_cara_a_cara",
+  "nombre": "Interacción cara a cara entre colegas",
+  "tipo": "resultado"
+ },
  "interaccion_inicial": {
   "id": "interaccion_inicial",
   "nombre": "Etapa inicial de la interacción interpersonal",
@@ -5758,6 +6228,11 @@
   "id": "interacciones_asistente_ia",
   "nombre": "Número de interacciones con un asistente de IA",
   "tipo": "metrica"
+ },
+ "interes_clientes_startup": {
+  "id": "interes_clientes_startup",
+  "nombre": "Interés de clientes y desempeño temprano de la startup",
+  "tipo": "resultado"
  },
  "interes_prevencion_riesgo_seguros": {
   "id": "interes_prevencion_riesgo_seguros",
@@ -5804,6 +6279,11 @@
   "nombre": "Ayuda en una emergencia (rapidez de aviso)",
   "tipo": "resultado"
  },
+ "intervencion_ergonomica_oficina": {
+  "id": "intervencion_ergonomica_oficina",
+  "nombre": "Intervenciones ergonómicas en oficinas (físicas, organizacionales o cognitivas)",
+  "tipo": "intervencion"
+ },
  "intrusividad_percibida": {
   "id": "intrusividad_percibida",
   "nombre": "Intrusividad percibida",
@@ -5813,6 +6293,11 @@
   "id": "invarianza_medicion",
   "nombre": "Violación de la invarianza de medición (se comparan estimaciones hechas sobre loterías distintas)",
   "tipo": "limitacion"
+ },
+ "inversion_diseno": {
+  "id": "inversion_diseno",
+  "nombre": "Inversión de la empresa en diseño",
+  "tipo": "intervencion"
  },
  "inversion_id": {
   "id": "inversion_id",
@@ -5824,6 +6309,11 @@
   "nombre": "Inversión y número de insurtechs activas en América Latina",
   "tipo": "resultado"
  },
+ "inversion_intensa_diseno": {
+  "id": "inversion_intensa_diseno",
+  "nombre": "Inversión intensa en diseño (efecto no lineal)",
+  "tipo": "concepto"
+ },
  "inversion_investigacion_sintetica": {
   "id": "inversion_investigacion_sintetica",
   "nombre": "Capital de riesgo invertido en investigación sintética",
@@ -5833,6 +6323,11 @@
   "id": "inversion_preferencias",
   "nombre": "Inversión de preferencias ante problemas equivalentes",
   "tipo": "resultado"
+ },
+ "investigacion_comunitaria": {
+  "id": "investigacion_comunitaria",
+  "nombre": "Investigación con comunidades",
+  "tipo": "intervencion"
  },
  "investigacion_exploratoria": {
   "id": "investigacion_exploratoria",
@@ -5878,6 +6373,11 @@
   "id": "irracionalidad_no_humana_llm",
   "nombre": "Irracionalidad de los LLMs distinta de los sesgos humanos e inconsistente",
   "tipo": "resultado"
+ },
+ "islas_excelencia": {
+  "id": "islas_excelencia",
+  "nombre": "Capacidad concentrada en islas de excelencia, integración incipiente",
+  "tipo": "limitacion"
  },
  "isotopos_litio": {
   "id": "isotopos_litio",
@@ -6519,6 +7019,11 @@
   "nombre": "Medición de la economía del diseño del Reino Unido (GVA y empleo)",
   "tipo": "metrica"
  },
+ "medicion_por_encuesta_muestra_incierta": {
+  "id": "medicion_por_encuesta_muestra_incierta",
+  "nombre": "Preparación medida por encuesta y tamaño de muestra no confirmado",
+  "tipo": "limitacion"
+ },
  "medidas_perceptuales_desempeno": {
   "id": "medidas_perceptuales_desempeno",
   "nombre": "Medidas perceptuales de desempeño (autorreporte)",
@@ -6578,6 +7083,11 @@
   "id": "menciones_redes_acciones",
   "nombre": "Menciones y sentimiento de tickers en Reddit/WallStreetBets",
   "tipo": "metrica"
+ },
+ "menor_variacion_sinteticos": {
+  "id": "menor_variacion_sinteticos",
+  "nombre": "Menor variación entre encuestados sintéticos que entre personas",
+  "tipo": "resultado"
  },
  "menos_educados": {
   "id": "menos_educados",
@@ -6679,6 +7189,11 @@
   "nombre": "Meta de BCP: 10% de nuevos ingresos de innovación disruptiva",
   "tipo": "intervencion"
  },
+ "meta_innovacion_henkel_30": {
+  "id": "meta_innovacion_henkel_30",
+  "nombre": "Meta de Henkel: 30% de ventas de productos de los últimos tres años",
+  "tipo": "resultado"
+ },
  "meta_ventas_innovacion_dsm": {
   "id": "meta_ventas_innovacion_dsm",
   "nombre": "Meta de DSM (2010): llevar las ventas de innovación de ~12% a ~20% hacia 2015",
@@ -6739,6 +7254,11 @@
   "nombre": "Cajas municipales y microfinancieras del norte",
   "tipo": "organizacion"
  },
+ "microseguros_emprendedores_peru": {
+  "id": "microseguros_emprendedores_peru",
+  "nombre": "Microseguros simples para emprendedores en Perú (A Tu Lado MAPFRE)",
+  "tipo": "intervencion"
+ },
  "microsoft_exp": {
   "id": "microsoft_exp",
   "nombre": "Plataforma de experimentación de Microsoft (ExP)",
@@ -6753,6 +7273,11 @@
   "id": "microtubulos_neuronales",
   "nombre": "Microtúbulos neuronales (citoesqueleto de tubulina)",
   "tipo": "concepto"
+ },
+ "mide_percepcion_no_resultado": {
+  "id": "mide_percepcion_no_resultado",
+  "nombre": "Mide percepción de funcionarios, no resultados de políticas",
+  "tipo": "limitacion"
  },
  "mide_tamano_no_efecto": {
   "id": "mide_tamano_no_efecto",
@@ -6849,6 +7374,11 @@
   "nombre": "Modelo de madurez de diseño de InVision (5 niveles)",
   "tipo": "metrica"
  },
+ "modelo_participacion": {
+  "id": "modelo_participacion",
+  "nombre": "Modelo o grado de participación de la comunidad",
+  "tipo": "constructo"
+ },
  "modelos_chatgpt": {
   "id": "modelos_chatgpt",
   "nombre": "Modelos ChatGPT-3.5 y 4",
@@ -6884,6 +7414,11 @@
   "nombre": "Mortalidad de los asegurados",
   "tipo": "resultado"
  },
+ "mortalidad_infantil_intoxicacion": {
+  "id": "mortalidad_infantil_intoxicacion",
+  "nombre": "Muertes de niños por intoxicación con medicamentos",
+  "tipo": "resultado"
+ },
  "mortalidad_temprana": {
   "id": "mortalidad_temprana",
   "nombre": "Mortalidad fetal, infantil y de la niñez",
@@ -6912,6 +7447,11 @@
  "muestra_pequena_plos_accesibilidad_2025": {
   "id": "muestra_pequena_plos_accesibilidad_2025",
   "nombre": "Muestra pequeña (N=20) en el estudio psicofisiológico de accesibilidad",
+  "tipo": "limitacion"
+ },
+ "muestra_pequena_retrospectiva": {
+  "id": "muestra_pequena_retrospectiva",
+  "nombre": "Estudio retrospectivo y observacional con muestra pequeña",
   "tipo": "limitacion"
  },
  "muestra_ux_is_dead": {
@@ -6948,6 +7488,11 @@
   "id": "munich_re_ambition_2025",
   "nombre": "Programa estratégico Ambition 2025 de Munich Re",
   "tipo": "intervencion"
+ },
+ "municipios_brasil": {
+  "id": "municipios_brasil",
+  "nombre": "Municipios de Brasil",
+  "tipo": "poblacion"
  },
  "n8_sin_cegamiento_orden": {
   "id": "n8_sin_cegamiento_orden",
@@ -7039,10 +7584,20 @@
   "nombre": "Capacidad de diseño no asignada al azar (observacional)",
   "tipo": "limitacion"
  },
+ "no_mide_consumo": {
+  "id": "no_mide_consumo",
+  "nombre": "Mide etiquetas, no consumo real",
+  "tipo": "limitacion"
+ },
  "no_renovacion_pagador": {
   "id": "no_renovacion_pagador",
   "nombre": "El pagador (Centene, ~50% del revenue) no renueva el contrato de triaje digital",
   "tipo": "concepto"
+ },
+ "no_separa_reformulacion": {
+  "id": "no_separa_reformulacion",
+  "nombre": "No separa el cambio de conducta del consumidor de la reformulación de los productos",
+  "tipo": "limitacion"
  },
  "no_verificado_marco_peruano": {
   "id": "no_verificado_marco_peruano",
@@ -7098,6 +7653,11 @@
   "id": "nota_prensa_cogitate_2025",
   "nombre": "Comunicado del consorcio Cogitate (MPI, Birmingham, McGill, Oxford; 2025)",
   "tipo": "concepto"
+ },
+ "nota_prensa_proveedor": {
+  "id": "nota_prensa_proveedor",
+  "nombre": "Nota de prensa del proveedor, método no visible",
+  "tipo": "limitacion"
  },
  "nota_prensa_wellesley_2024": {
   "id": "nota_prensa_wellesley_2024",
@@ -7189,6 +7749,11 @@
   "nombre": "Oferta de competidores ante El Niño (Pacífico, La Positiva, Mapfre)",
   "tipo": "intervencion"
  },
+ "oficina_planta_abierta": {
+  "id": "oficina_planta_abierta",
+  "nombre": "Oficina de planta abierta (open office)",
+  "tipo": "intervencion"
+ },
  "omision_involuntaria_declaracion": {
   "id": "omision_involuntaria_declaracion",
   "nombre": "Omisión involuntaria de algo leve o desconocido en la declaración de salud",
@@ -7254,6 +7819,16 @@
   "nombre": "Órdenes de una figura de autoridad (experimentador) de continuar",
   "tipo": "intervencion"
  },
+ "organizacion_modelo_compuesta": {
+  "id": "organizacion_modelo_compuesta",
+  "nombre": "Organización modelo compuesta a partir de pocas entrevistas (no una empresa real)",
+  "tipo": "limitacion"
+ },
+ "organizaciones_civiles": {
+  "id": "organizaciones_civiles",
+  "nombre": "Número de organizaciones de la sociedad civil",
+  "tipo": "resultado"
+ },
  "oscar_health": {
   "id": "oscar_health",
   "nombre": "Oscar Health (aseguradora de salud cotizada, EE.UU.)",
@@ -7268,6 +7843,11 @@
   "id": "p_hacking_ab",
   "nombre": "Detener la prueba A/B al ver un resultado favorable (p-hacking)",
   "tipo": "limitacion"
+ },
+ "pacientes_multimorbilidad": {
+  "id": "pacientes_multimorbilidad",
+  "nombre": "Personas con multimorbilidad (varias enfermedades crónicas a la vez)",
+  "tipo": "poblacion"
  },
  "pacientes_pediatricos": {
   "id": "pacientes_pediatricos",
@@ -7339,6 +7919,11 @@
   "nombre": "Participación del canal de venta directa en Hong Kong (2,9% en 2018 → 8,5% en 2023)",
   "tipo": "resultado"
  },
+ "participacion_comunitaria_salud": {
+  "id": "participacion_comunitaria_salud",
+  "nombre": "Participación comunitaria en intervenciones de salud pública",
+  "tipo": "intervencion"
+ },
  "participacion_eeuu_primas_mundiales": {
   "id": "participacion_eeuu_primas_mundiales",
   "nombre": "Participación de EE.UU. en las primas de seguros mundiales",
@@ -7349,6 +7934,11 @@
   "nombre": "Progressive supera a State Farm en seguro de auto personal de EE.UU.",
   "tipo": "resultado"
  },
+ "participacion_superficial": {
+  "id": "participacion_superficial",
+  "nombre": "Participación superficial o de fachada",
+  "tipo": "concepto"
+ },
  "participantes_plataformas_encuestas": {
   "id": "participantes_plataformas_encuestas",
   "nombre": "Participantes de plataformas de encuestas online (Prolific, MTurk y otras)",
@@ -7358,6 +7948,11 @@
   "id": "particularidades_economicas_atencion_medica",
   "nombre": "Problemas económicos especiales de la atención médica",
   "tipo": "concepto"
+ },
+ "pasaporte_digital_producto": {
+  "id": "pasaporte_digital_producto",
+  "nombre": "Pasaporte digital de producto",
+  "tipo": "intervencion"
  },
  "patentes_diseno_utilidad": {
   "id": "patentes_diseno_utilidad",
@@ -7424,6 +8019,11 @@
   "nombre": "Percepción del estado del campo del diseño",
   "tipo": "resultado"
  },
+ "percepcion_inseguridad_barrio": {
+  "id": "percepcion_inseguridad_barrio",
+  "nombre": "Crimen e inseguridad percibidos en el barrio",
+  "tipo": "resultado"
+ },
  "percepcion_lucro_aseguradora_salud": {
   "id": "percepcion_lucro_aseguradora_salud",
   "nombre": "Percepción de que la aseguradora de salud prioriza lucro y costos sobre necesidades individuales",
@@ -7442,6 +8042,11 @@
  "perdidas_oak_street_2023": {
   "id": "perdidas_oak_street_2023",
   "nombre": "Pérdidas de Oak Street Health en 2023 (>USD 200 M esperados)",
+  "tipo": "resultado"
+ },
+ "perfil_nutricional_envasados": {
+  "id": "perfil_nutricional_envasados",
+  "nombre": "Perfil nutricional de los alimentos envasados",
   "tipo": "resultado"
  },
  "periodo_no_especificado": {
@@ -7504,6 +8109,21 @@
   "nombre": "Pertenencia al mismo grupo social que el interlocutor",
   "tipo": "concepto"
  },
+ "pertinencia_usabilidad_aceptacion": {
+  "id": "pertinencia_usabilidad_aceptacion",
+  "nombre": "Pertinencia, usabilidad y aceptación del servicio diseñado",
+  "tipo": "resultado"
+ },
+ "peru": {
+  "id": "peru",
+  "nombre": "Perú",
+  "tipo": "poblacion"
+ },
+ "peru_alimentos": {
+  "id": "peru_alimentos",
+  "nombre": "Mercado de alimentos y bebidas envasados del Perú",
+  "tipo": "poblacion"
+ },
  "pesca_anchoveta": {
   "id": "pesca_anchoveta",
   "nombre": "Pesca de anchoveta y harina de pescado",
@@ -7517,6 +8137,11 @@
  "peticiones_trampa": {
   "id": "peticiones_trampa",
   "nombre": "Peticiones de trampa de los principales humanos",
+  "tipo": "resultado"
+ },
+ "pib_empleo": {
+  "id": "pib_empleo",
+  "nombre": "PIB y empleo",
   "tipo": "resultado"
  },
  "picks_editoriales_acciones": {
@@ -7563,6 +8188,11 @@
   "id": "plan_prevencion_rimac",
   "nombre": "Plan de Prevención de Riesgos Naturales 2025-26 de Rímac (empresas)",
   "tipo": "intervencion"
+ },
+ "plan_reconstruccion_2017": {
+  "id": "plan_reconstruccion_2017",
+  "nombre": "Plan de reconstrucción del Niño Costero 2017 (S/25.655 M, ~4% del PBI)",
+  "tipo": "resultado"
  },
  "plan_virtual_first": {
   "id": "plan_virtual_first",
@@ -7614,10 +8244,20 @@
   "nombre": "Poder adquisitivo real de ocupaciones creativas (BLS, década)",
   "tipo": "metrica"
  },
+ "poder_existente": {
+  "id": "poder_existente",
+  "nombre": "Relaciones de poder existentes",
+  "tipo": "constructo"
+ },
  "poder_explicativo_limitado_encarnada": {
   "id": "poder_explicativo_limitado_encarnada",
   "nombre": "La cognición encarnada no aporta explicaciones nuevas a los problemas clásicos de la psicología experimental",
   "tipo": "limitacion"
+ },
+ "poder_real_participantes": {
+  "id": "poder_real_participantes",
+  "nombre": "Poder real que la participación da a las personas",
+  "tipo": "resultado"
  },
  "polemica_teorias_conciencia_prensa": {
   "id": "polemica_teorias_conciencia_prensa",
@@ -7658,6 +8298,11 @@
   "id": "practica_espaciada",
   "nombre": "Práctica espaciada (distribuida) frente a práctica masiva",
   "tipo": "intervencion"
+ },
+ "practicas_extractivas": {
+  "id": "practicas_extractivas",
+  "nombre": "Prácticas de investigación extractivas y transaccionales, y participación simbólica previa",
+  "tipo": "concepto"
  },
  "practicas_investigacion_cuestionables": {
   "id": "practicas_investigacion_cuestionables",
@@ -7734,6 +8379,11 @@
   "nombre": "Precisión de triage moderada (coincidencia exacta ~54% con enfermera)",
   "tipo": "limitacion"
  },
+ "predicado_retirado_510k": {
+  "id": "predicado_retirado_510k",
+  "nombre": "Autorización FDA 510(k) basada en un dispositivo ya retirado",
+  "tipo": "intervencion"
+ },
  "prediccion_conducta_humana": {
   "id": "prediccion_conducta_humana",
   "nombre": "Predicción de la conducta de participantes no vistos en experimentos",
@@ -7809,6 +8459,11 @@
   "nombre": "Prensa y escuelas de negocio hispanohablantes",
   "tipo": "poblacion"
  },
+ "prensa_sin_metodo": {
+  "id": "prensa_sin_metodo",
+  "nombre": "Prensa que cita a otro medio, sin método propio",
+  "tipo": "limitacion"
+ },
  "preocupacion_privacidad_situacional": {
   "id": "preocupacion_privacidad_situacional",
   "nombre": "Preocupación por la privacidad activada por la situación",
@@ -7854,6 +8509,11 @@
   "nombre": "Preßler, Schmid y Hurtienne 2023 (CHI LBW): control estadístico de la fluidez de procesamiento",
   "tipo": "estudio"
  },
+ "presupuesto_participativo": {
+  "id": "presupuesto_participativo",
+  "nombre": "Presupuesto participativo municipal",
+  "tipo": "intervencion"
+ },
  "prevalencia_agentes_encuestas": {
   "id": "prevalencia_agentes_encuestas",
   "nombre": "Prevalencia de agentes de IA entre participantes de encuestas online",
@@ -7882,6 +8542,11 @@
  "primas_globales_por_ramo": {
   "id": "primas_globales_por_ramo",
   "nombre": "Primas globales por ramo (vida €2.861 bn, P&C €2.320 bn, salud €1.688 bn)",
+  "tipo": "resultado"
+ },
+ "primas_netas_ajuste_reservas_1s_2026": {
+  "id": "primas_netas_ajuste_reservas_1s_2026",
+  "nombre": "Primas netas con ajuste de reservas del sistema peruano en el 1S 2026 (+8%)",
   "tipo": "resultado"
  },
  "primas_peru": {
@@ -7934,6 +8599,11 @@
   "nombre": "Principios Gestalt de organización perceptual (proximidad, semejanza, continuidad, cierre, figura-fondo)",
   "tipo": "concepto"
  },
+ "probabilidad_innovar": {
+  "id": "probabilidad_innovar",
+  "nombre": "Probabilidad de que la empresa innove",
+  "tipo": "resultado"
+ },
  "problema_dificil_conciencia": {
   "id": "problema_dificil_conciencia",
   "nombre": "Problema difícil de la conciencia (por qué hay experiencia subjetiva)",
@@ -7954,6 +8624,16 @@
   "nombre": "Producción de cobre del Perú (estancada por cuarto año, sin nuevas operaciones)",
   "tipo": "resultado"
  },
+ "produccion_innovacion": {
+  "id": "produccion_innovacion",
+  "nombre": "Producción de innovación del equipo o la empresa",
+  "tipo": "resultado"
+ },
+ "produccion_total_material": {
+  "id": "produccion_total_material",
+  "nombre": "Producción y consumo total de material",
+  "tipo": "resultado"
+ },
  "productividad_agregada_g7": {
   "id": "productividad_agregada_g7",
   "nombre": "Crecimiento de la productividad laboral agregada (G7)",
@@ -7962,6 +8642,11 @@
  "productividad_devs": {
   "id": "productividad_devs",
   "nombre": "Productividad de desarrolladores",
+  "tipo": "resultado"
+ },
+ "productividad_empresa": {
+  "id": "productividad_empresa",
+  "nombre": "Productividad de la empresa",
   "tipo": "resultado"
  },
  "productividad_firmas_ocde": {
@@ -8034,6 +8719,11 @@
   "nombre": "Pronósticos electorales de Aaru en 2024 (Haley en New Hampshire, Harris en el Colegio Electoral)",
   "tipo": "resultado"
  },
+ "pronosticos_tradicionales_2024": {
+  "id": "pronosticos_tradicionales_2024",
+  "nombre": "Pronosticadores tradicionales que también favorecían a Harris en 2024",
+  "tipo": "resultado"
+ },
  "propiedad_psicologica": {
   "id": "propiedad_psicologica",
   "nombre": "Sentido de propiedad psicológica sobre un objeto",
@@ -8043,6 +8733,21 @@
   "id": "prospeccion_por_referidos",
   "nombre": "Prospección por introducciones y referidos",
   "tipo": "intervencion"
+ },
+ "prospectiva_corporativa": {
+  "id": "prospectiva_corporativa",
+  "nombre": "Prospectiva corporativa (preparación de la empresa para el futuro)",
+  "tipo": "intervencion"
+ },
+ "prospectiva_gobierno": {
+  "id": "prospectiva_gobierno",
+  "nombre": "Prospectiva estratégica en el gobierno",
+  "tipo": "intervencion"
+ },
+ "proteccion_parcial_empaque": {
+  "id": "proteccion_parcial_empaque",
+  "nombre": "La protección del empaque a prueba de niños es parcial (no elimina las intoxicaciones)",
+  "tipo": "limitacion"
  },
  "protocolo_orden_aleatorio": {
   "id": "protocolo_orden_aleatorio",
@@ -8078,6 +8783,11 @@
   "id": "proyeccion_pbi_peru_2026",
   "nombre": "Proyección del BCRP: PBI peruano +3,2% en 2026",
   "tipo": "resultado"
+ },
+ "proyeccion_sin_evaluacion": {
+  "id": "proyeccion_sin_evaluacion",
+  "nombre": "Meta proyectada sin evaluación de adopción",
+  "tipo": "limitacion"
  },
  "proyeccion_sp500_morgan_stanley": {
   "id": "proyeccion_sp500_morgan_stanley",
@@ -8224,6 +8934,11 @@
   "nombre": "Reaseguro internacional",
   "tipo": "concepto"
  },
+ "rebote_economia_circular": {
+  "id": "rebote_economia_circular",
+  "nombre": "Efecto rebote de la economía circular (más producción total que anula el beneficio)",
+  "tipo": "constructo"
+ },
  "recesion_2023_peru": {
   "id": "recesion_2023_peru",
   "nombre": "Recesión y alza de pobreza en Perú 2023",
@@ -8233,6 +8948,11 @@
   "id": "rechazo_cobertura_sin_fundamento",
   "nombre": "Rechazo de cobertura sin fundamento o fuera de plazo",
   "tipo": "concepto"
+ },
+ "reciclaje_material": {
+  "id": "reciclaje_material",
+  "nombre": "Volumen de material reciclado",
+  "tipo": "resultado"
  },
  "reclamo_digital_seguros": {
   "id": "reclamo_digital_seguros",
@@ -8279,9 +8999,19 @@
   "nombre": "Desagrado recordado de un procedimiento",
   "tipo": "resultado"
  },
+ "recuperacion_postquirurgica": {
+  "id": "recuperacion_postquirurgica",
+  "nombre": "Recuperación postquirúrgica (estancia, analgésicos, notas de enfermería)",
+  "tipo": "resultado"
+ },
  "recursos_insuficientes_equipos_ds": {
   "id": "recursos_insuficientes_equipos_ds",
   "nombre": "Recursos insuficientes en equipos de design system (61% con ≤5 personas; 23% con recursos adecuados)",
+  "tipo": "resultado"
+ },
+ "red_oficinas_bancarias_peru": {
+  "id": "red_oficinas_bancarias_peru",
+  "nombre": "Red de oficinas bancarias en Perú",
   "tipo": "resultado"
  },
  "redes_estrechas_niveles": {
@@ -8324,6 +9054,11 @@
   "nombre": "Reducción objetiva: colapso de la función de onda inducido por la gravedad (Diósi-Penrose)",
   "tipo": "concepto"
  },
+ "reformulacion_productos": {
+  "id": "reformulacion_productos",
+  "nombre": "Reformulación de productos procesados (menos azúcar, más edulcorantes no calóricos)",
+  "tipo": "resultado"
+ },
  "registro_gracias_no_insista": {
   "id": "registro_gracias_no_insista",
   "nombre": "Registro 'Gracias... no insista' de Indecopi (opt-out por lista)",
@@ -8364,6 +9099,11 @@
   "nombre": "Regla de medical loss ratio 80/20 de la ACA (reembolso si gasto médico < 80%/85%)",
   "tipo": "intervencion"
  },
+ "reglamento_ecodiseno_espr": {
+  "id": "reglamento_ecodiseno_espr",
+  "nombre": "Reglamento europeo de ecodiseño para productos sostenibles (ESPR, 2024)",
+  "tipo": "intervencion"
+ },
  "reglamento_lpdp_2025": {
   "id": "reglamento_lpdp_2025",
   "nombre": "Reglamento de la Ley de Protección de Datos Personales (vigente desde 31-mar-2025)",
@@ -8388,6 +9128,11 @@
   "id": "regulacion_estatal_denegaciones_ia",
   "nombre": "Regulación estatal de denegaciones con algoritmos (California, Texas)",
   "tipo": "resultado"
+ },
+ "rehabilitacion_lotes_baldios": {
+  "id": "rehabilitacion_lotes_baldios",
+  "nombre": "Rehabilitación de lotes baldíos (limpieza, corte de pasto o siembra de verde)",
+  "tipo": "intervencion"
  },
  "relacion_innovacion_desempeno": {
   "id": "relacion_innovacion_desempeno",
@@ -8419,6 +9164,11 @@
   "nombre": "Aviso de transparencia como remedio frente a patrones oscuros",
   "tipo": "intervencion"
  },
+ "renewcell": {
+  "id": "renewcell",
+  "nombre": "Renewcell (recicladora textil sueca, hoy Circulose)",
+  "tipo": "organizacion"
+ },
  "rentabilidad_gaap_lemonade": {
   "id": "rentabilidad_gaap_lemonade",
   "nombre": "Rentabilidad GAAP de Lemonade (no esperada hasta 2027)",
@@ -8432,6 +9182,16 @@
  "rentabilidad_tecnica_peru": {
   "id": "rentabilidad_tecnica_peru",
   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
+  "tipo": "resultado"
+ },
+ "reparacion_piezas_verdes_siniestros": {
+  "id": "reparacion_piezas_verdes_siniestros",
+  "nombre": "Reparar y usar piezas recuperadas en siniestros vehiculares en vez de reemplazar",
+  "tipo": "intervencion"
+ },
+ "reparacion_productos": {
+  "id": "reparacion_productos",
+  "nombre": "Reparación de productos en lugar de reemplazo",
   "tipo": "resultado"
  },
  "replica_asch_reino_unido": {
@@ -8474,6 +9234,11 @@
   "nombre": "Reportes de tendencias UX/UI 2026 de fabricantes de herramientas (UXPin, Envato, Stan.vision)",
   "tipo": "estudio"
  },
+ "representacion_gerencial_disenadores": {
+  "id": "representacion_gerencial_disenadores",
+  "nombre": "Representación de diseñadores en cargos gerenciales o de poder",
+  "tipo": "resultado"
+ },
  "representacion_logaritmica_numero": {
   "id": "representacion_logaritmica_numero",
   "nombre": "Representación logarítmica de la cantidad en el cerebro",
@@ -8503,6 +9268,11 @@
   "id": "responsabilidad_tratamiento_tercerizado",
   "nombre": "La empresa sigue siendo responsable del tratamiento de datos aunque subcontrate el contacto",
   "tipo": "concepto"
+ },
+ "respuesta_compra_punto_venta": {
+  "id": "respuesta_compra_punto_venta",
+  "nombre": "Respuestas de compra del cliente en el punto de venta",
+  "tipo": "resultado"
  },
  "respuestas_casi_uniformes": {
   "id": "respuestas_casi_uniformes",
@@ -8564,10 +9334,25 @@
   "nombre": "Retiro de anuncios o afirmaciones pseudocientíficas",
   "tipo": "resultado"
  },
+ "retiro_dispositivo_medico": {
+  "id": "retiro_dispositivo_medico",
+  "nombre": "Retiro grave (clase I) de dispositivos médicos del mercado en EE.UU.",
+  "tipo": "resultado"
+ },
  "retoque_visual_interfaz": {
   "id": "retoque_visual_interfaz",
   "nombre": "Retoques visuales de la interfaz (color, estilo) sin cambiar la estructura",
   "tipo": "intervencion"
+ },
+ "retorno_accionista_aseguradoras": {
+  "id": "retorno_accionista_aseguradoras",
+  "nombre": "Retorno total al accionista de las aseguradoras",
+  "tipo": "resultado"
+ },
+ "retorno_bursatil_firma": {
+  "id": "retorno_bursatil_firma",
+  "nombre": "Retorno bursátil de la empresa",
+  "tipo": "resultado"
  },
  "retorno_procedimiento": {
   "id": "retorno_procedimiento",
@@ -8593,6 +9378,11 @@
   "id": "reubicacion_expertos_en_producto",
   "nombre": "Reubicación de expertos de un equipo central dentro de las áreas de producto",
   "tipo": "concepto"
+ },
+ "reuso_celulares": {
+  "id": "reuso_celulares",
+  "nombre": "Reuso de teléfonos celulares",
+  "tipo": "intervencion"
  },
  "reutilizacion_toallas": {
   "id": "reutilizacion_toallas",
@@ -8859,6 +9649,11 @@
   "nombre": "Satisfacción e intención de recompra de seguros online",
   "tipo": "resultado"
  },
+ "satisfaccion_sucursal_bancaria": {
+  "id": "satisfaccion_sucursal_bancaria",
+  "nombre": "Satisfacción del cliente en la sucursal bancaria",
+  "tipo": "resultado"
+ },
  "satisfaccion_telesalud": {
   "id": "satisfaccion_telesalud",
   "nombre": "Satisfacción del paciente con la telesalud",
@@ -8964,6 +9759,11 @@
   "nombre": "La IA podría atraer a personas ya vulnerables en vez de causar el daño",
   "tipo": "limitacion"
  },
+ "sello_higg": {
+  "id": "sello_higg",
+  "nombre": "Índice Higg de la Sustainable Apparel Coalition (sello de cara al consumidor)",
+  "tipo": "intervencion"
+ },
  "senal_aislada": {
   "id": "senal_aislada",
   "nombre": "Señal aislada: una sola pieza sin fecha ni conteo de reacciones",
@@ -8998,6 +9798,11 @@
   "id": "sensibilidad_redaccion_llm",
   "nombre": "Sensibilidad a la redacción del prompt e inestabilidad en el tiempo",
   "tipo": "limitacion"
+ },
+ "sensor_fugas_agua": {
+  "id": "sensor_fugas_agua",
+  "nombre": "Sensor doméstico de fugas de agua conectado (LeakBot)",
+  "tipo": "intervencion"
  },
  "sequia": {
   "id": "sequia",
@@ -9199,9 +10004,19 @@
   "nombre": "Hallazgo no verificado para el sector seguros",
   "tipo": "limitacion"
  },
+ "sin_marco_evaluacion_prospectiva": {
+  "id": "sin_marco_evaluacion_prospectiva",
+  "nombre": "No hay marco para evaluar el impacto de la prospectiva",
+  "tipo": "limitacion"
+ },
  "sin_mecanismo_fisico_plausible": {
   "id": "sin_mecanismo_fisico_plausible",
   "nombre": "Sin mecanismo físico plausible propuesto",
+  "tipo": "limitacion"
+ },
+ "sin_medicion_impacto": {
+  "id": "sin_medicion_impacto",
+  "nombre": "No mide impacto ni resultados",
   "tipo": "limitacion"
  },
  "sin_metodologia_publicada": {
@@ -9228,6 +10043,16 @@
   "id": "sin_validacion_empirica",
   "nombre": "Sin metodología ni evidencia empírica propia (sin validación sistemática)",
   "tipo": "limitacion"
+ },
+ "siniestros_dano_agua": {
+  "id": "siniestros_dano_agua",
+  "nombre": "Frecuencia y severidad de siniestros por daño de agua en el hogar",
+  "tipo": "resultado"
+ },
+ "sintomas_depresivos": {
+  "id": "sintomas_depresivos",
+  "nombre": "Sentirse deprimido (síntomas depresivos)",
+  "tipo": "resultado"
  },
  "sistema_escritura": {
   "id": "sistema_escritura",
@@ -9323,6 +10148,11 @@
   "id": "startups_investigacion_sintetica",
   "nombre": "Startups de investigación sintética (encuestados y gemelos con IA)",
   "tipo": "concepto"
+ },
+ "startups_italianas": {
+  "id": "startups_italianas",
+  "nombre": "Startups italianas en etapa temprana",
+  "tipo": "poblacion"
  },
  "steering_proveedor_precio": {
   "id": "steering_proveedor_precio",
@@ -9499,6 +10329,11 @@
   "nombre": "Tarificación por experiencia (experience rating)",
   "tipo": "intervencion"
  },
+ "tasa_circularidad_global": {
+  "id": "tasa_circularidad_global",
+  "nombre": "Tasa global de circularidad (material de fuentes recicladas: 6,9%)",
+  "tipo": "metrica"
+ },
  "tasa_descuento_implicita": {
   "id": "tasa_descuento_implicita",
   "nombre": "Tasa de descuento implícita en elecciones entre hoy y el futuro",
@@ -9584,6 +10419,11 @@
   "nombre": "Teletriaje por enfermera en línea de asesoría (recomendar urgent care, urgencias o atención primaria)",
   "tipo": "intervencion"
  },
+ "temas_comunes_design_thinking": {
+  "id": "temas_comunes_design_thinking",
+  "nombre": "Cinco temas comunes del design thinking (foco en el usuario, encuadre del problema, visualización, experimentación, diversidad)",
+  "tipo": "concepto"
+ },
  "tendencia_imperfect_by_design": {
   "id": "tendencia_imperfect_by_design",
   "nombre": "Tendencia 'Imperfect by Design' de Canva para 2026",
@@ -9634,6 +10474,11 @@
   "nombre": "Estrés postraumático (TEPT)",
   "tipo": "resultado"
  },
+ "tesis_sin_revision_pares": {
+  "id": "tesis_sin_revision_pares",
+  "nombre": "Tesis de maestría sin revisión por pares",
+  "tipo": "limitacion"
+ },
  "texto_no_verificado_bloqueo": {
   "id": "texto_no_verificado_bloqueo",
   "nombre": "Contenido no verificado de primera mano (lectura completa bloqueada)",
@@ -9674,6 +10519,11 @@
   "nombre": "Tiempo de revisión de código",
   "tipo": "resultado"
  },
+ "tiempo_sentado_trabajo": {
+  "id": "tiempo_sentado_trabajo",
+  "nombre": "Tiempo sentado durante la jornada laboral",
+  "tipo": "resultado"
+ },
  "tiempo_vida_entrelazamiento": {
   "id": "tiempo_vida_entrelazamiento",
   "nombre": "Tiempo de vida del entrelazamiento de espines nucleares",
@@ -9688,6 +10538,11 @@
   "id": "tipo_tarea_decision_creacion",
   "nombre": "Tipo de tarea: decisión vs. creación de contenido",
   "tipo": "constructo"
+ },
+ "tipologia_participacion_trabajo_consulta_justicia": {
+  "id": "tipologia_participacion_trabajo_consulta_justicia",
+  "nombre": "Participación como trabajo, como consulta y como justicia",
+  "tipo": "concepto"
  },
  "titular_inflado": {
   "id": "titular_inflado",
@@ -9744,6 +10599,11 @@
   "nombre": "Migración de energía electrónica (excitones) en microtúbulos",
   "tipo": "resultado"
  },
+ "trastornos_brazo_cuello": {
+  "id": "trastornos_brazo_cuello",
+  "nombre": "Trastornos musculoesqueléticos de brazo y cuello en oficinistas",
+  "tipo": "resultado"
+ },
  "tres_niveles_precio": {
   "id": "tres_niveles_precio",
   "nombre": "Página de precios con 3 niveles (good-better-best)",
@@ -9779,15 +10639,30 @@
   "nombre": "Interfaces generadas por IA sin optimizar",
   "tipo": "intervencion"
  },
+ "una_sola_empresa": {
+  "id": "una_sola_empresa",
+  "nombre": "Estudio en una sola empresa (generalización limitada)",
+  "tipo": "limitacion"
+ },
  "unh_8k_q2_2026": {
   "id": "unh_8k_q2_2026",
   "nombre": "8-K de UnitedHealth del Q2 2026 (registrado como F-198)",
   "tipo": "estudio"
  },
+ "union_europea": {
+  "id": "union_europea",
+  "nombre": "Unión Europea (mercado y consumidores)",
+  "tipo": "poblacion"
+ },
  "unitedhealth": {
   "id": "unitedhealth",
   "nombre": "UnitedHealth Group",
   "tipo": "organizacion"
+ },
+ "urbanismo_social_metrocable": {
+  "id": "urbanismo_social_metrocable",
+  "nombre": "Metrocable y obras de urbanismo social en barrios de Medellín",
+  "tipo": "intervencion"
  },
  "usabilidad_chatbot": {
   "id": "usabilidad_chatbot",
@@ -9823,6 +10698,11 @@
   "id": "uso_diario_chatbot",
   "nombre": "Intensidad de uso diario de un chatbot",
   "tipo": "intervencion"
+ },
+ "uso_espacio_exterior": {
+  "id": "uso_espacio_exterior",
+  "nombre": "Uso del espacio exterior por los vecinos",
+  "tipo": "resultado"
  },
  "uso_especialistas_hospitalizacion": {
   "id": "uso_especialistas_hospitalizacion",
@@ -10014,6 +10894,11 @@
   "nombre": "Valoración de los usuarios a la transparencia en el manejo de sus datos",
   "tipo": "resultado"
  },
+ "valorizacion_residuos_peru": {
+  "id": "valorizacion_residuos_peru",
+  "nombre": "Residuos valorizados en Perú (~4% de 19 mil t/día, dato no verificado)",
+  "tipo": "resultado"
+ },
  "valuacion_replit": {
   "id": "valuacion_replit",
   "nombre": "Valuación de Replit (US$9.000 millones, mar-2026)",
@@ -10022,6 +10907,11 @@
  "valuacion_wefox": {
   "id": "valuacion_wefox",
   "nombre": "Valuación y desempeño de Wefox (de US$4.500M a <US$1.000M)",
+  "tipo": "resultado"
+ },
+ "variabilidad_concepto_design_thinking": {
+  "id": "variabilidad_concepto_design_thinking",
+  "nombre": "El concepto de design thinking varía según la empresa que lo aplica",
   "tipo": "resultado"
  },
  "variabilidad_estimulo": {
@@ -10058,6 +10948,11 @@
   "id": "varianza_preguntas_ambiguas",
   "nombre": "La varianza de las respuestas sintéticas sube con preguntas ambiguas",
   "tipo": "limitacion"
+ },
+ "vecinos_ciudad_eeuu": {
+  "id": "vecinos_ciudad_eeuu",
+  "nombre": "Residentes de barrios urbanos de EE.UU. (Filadelfia)",
+  "tipo": "poblacion"
  },
  "velocidad_al_caminar": {
   "id": "velocidad_al_caminar",
@@ -10109,6 +11004,11 @@
   "nombre": "Ventas en línea",
   "tipo": "resultado"
  },
+ "ventas_por_innovacion": {
+  "id": "ventas_por_innovacion",
+  "nombre": "Ventas provenientes de productos innovadores",
+  "tipo": "resultado"
+ },
  "ventas_retencion_seguros": {
   "id": "ventas_retencion_seguros",
   "nombre": "Ventas y retención de clientes de seguros",
@@ -10139,6 +11039,11 @@
   "nombre": "Verificador de síntomas electrónico (symptom checker, p. ej. Omaolo)",
   "tipo": "intervencion"
  },
+ "viabilidad_negocio_circular": {
+  "id": "viabilidad_negocio_circular",
+  "nombre": "Viabilidad financiera de un negocio circular",
+  "tipo": "resultado"
+ },
  "vibraciones_microtubulos": {
   "id": "vibraciones_microtubulos",
   "nombre": "Vibraciones/resonancias de microtúbulos como origen de ritmos EEG",
@@ -10168,6 +11073,11 @@
   "id": "visitas_urgencias",
   "nombre": "Visitas a urgencias (ED)",
   "tipo": "resultado"
+ },
+ "vista_naturaleza_ventana": {
+  "id": "vista_naturaleza_ventana",
+  "nombre": "Vista a la naturaleza (árboles) desde la ventana del paciente",
+  "tipo": "intervencion"
  },
  "visualizaciones_quantumjumping_tiktok": {
   "id": "visualizaciones_quantumjumping_tiktok",

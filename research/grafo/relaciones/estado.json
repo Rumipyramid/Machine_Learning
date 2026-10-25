@@ -2056,6 +2056,130 @@
    "triples": 12,
    "sin_aporte": [],
    "notas": "/seeker 2026-10-25: contraste adversarial de la regla pico-final y del paradigma de Asch (resúmenes oficiales o fuentes secundarias vía búsqueda)."
+  },
+  {
+   "fecha": "2026-10-25",
+   "f_ids": [
+    "F-986",
+    "F-987",
+    "F-988",
+    "F-989",
+    "F-990",
+    "F-991",
+    "F-992",
+    "F-993",
+    "F-994",
+    "F-995",
+    "F-996"
+   ],
+   "triples": 29,
+   "sin_aporte": [],
+   "notas": "/trinidad 2026-10-25, dominio diseño estratégico y organizacional: pase de amplitud a nivel ficha."
+  },
+  {
+   "fecha": "2026-10-25",
+   "f_ids": [
+    "F-997",
+    "F-998",
+    "F-999",
+    "F-1000",
+    "F-1001",
+    "F-1002",
+    "F-1003",
+    "F-1004",
+    "F-1005",
+    "F-1006",
+    "F-1007",
+    "F-1008",
+    "F-1009",
+    "F-1010"
+   ],
+   "triples": 28,
+   "sin_aporte": [],
+   "notas": "/trinidad 2026-10-25, dominio producto físico e industrial: pase de amplitud a nivel ficha."
+  },
+  {
+   "fecha": "2026-10-25",
+   "f_ids": [
+    "F-1011",
+    "F-1012",
+    "F-1013",
+    "F-1014",
+    "F-1015",
+    "F-1016",
+    "F-1017",
+    "F-1018",
+    "F-1019",
+    "F-1020",
+    "F-1021",
+    "F-1022",
+    "F-1023",
+    "F-1024",
+    "F-1025"
+   ],
+   "triples": 28,
+   "sin_aporte": [],
+   "notas": "/trinidad 2026-10-25, dominio espacios, arquitectura y ciudad: pase de amplitud a nivel ficha."
+  },
+  {
+   "fecha": "2026-10-25",
+   "f_ids": [
+    "F-1026",
+    "F-1027",
+    "F-1028",
+    "F-1029",
+    "F-1030",
+    "F-1031",
+    "F-1032",
+    "F-1033",
+    "F-1034",
+    "F-1035",
+    "F-1036",
+    "F-1037",
+    "F-1038",
+    "F-1039",
+    "F-1040"
+   ],
+   "triples": 32,
+   "sin_aporte": [],
+   "notas": "/trinidad 2026-10-25, dominio sostenibilidad, circularidad y sistemas: pase de amplitud a nivel ficha."
+  },
+  {
+   "fecha": "2026-10-25",
+   "f_ids": [
+    "F-1041",
+    "F-1042",
+    "F-1043",
+    "F-1044",
+    "F-1045",
+    "F-1046",
+    "F-1047",
+    "F-1048",
+    "F-1049",
+    "F-1050",
+    "F-1051",
+    "F-1052",
+    "F-1053"
+   ],
+   "triples": 33,
+   "sin_aporte": [],
+   "notas": "/trinidad 2026-10-25, dominio social, participativo y especulativo: pase de amplitud a nivel ficha."
+  },
+  {
+   "fecha": "2026-10-25",
+   "f_ids": [
+    "F-1054",
+    "F-1055",
+    "F-1056",
+    "F-1057",
+    "F-1058",
+    "F-1059",
+    "F-1060",
+    "F-1061"
+   ],
+   "triples": 8,
+   "sin_aporte": [],
+   "notas": "Resolución de contradicciones abiertas, 2026-10-25: evidencia nueva vía búsqueda (resúmenes; F-1056 solo por prensa)."
   }
  ],
  "discrepancias": [
@@ -3225,9 +3349,9 @@
   },
   {
    "triple": "T-173",
-   "estado": "sin_verificar",
-   "fecha": "2026-10-03",
-   "nota": "Verificación 2026-10-03: una segunda búsqueda independiente reproduce +1,1% (S/9.451 M), utilidad S/1.391 M (+7,5%), penetración 2,01% y densidad US$212, lo que apunta a que la cifra viene de un reporte con datos de la SBS; pero gestion.pe, sbs.gob.pe y PCR están bloqueados y la tabla oficial no se abrió. Sigue sin_verificar hasta contrastar con la SBS (el usuario puede aportar el PDF/boletín del 2T 2026). La tesis de mercado peruano ya lleva la reserva."
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-25",
+   "nota": "Miden cosas distintas: +1,1% son primas de seguros (S/9.451 M); las primas netas con ajuste de reservas crecieron 8% (S/12.385 M) según Gestión con datos de la SBS (F-1054). Falta la tabla oficial de la SBS."
   },
   {
    "triple": "T-179",
@@ -3483,9 +3607,9 @@
   },
   {
    "triple": "T-790",
-   "estado": "sin_verificar",
-   "fecha": "2026-10-07",
-   "nota": "Probable diferencia de base (APESEG con necesidades de reconstrucción; INDECI/OPS con pérdidas). No se abrió ninguna fuente primaria: no citar el 7% sin la advertencia."
+   "estado": "alcance_distinto",
+   "fecha": "2026-10-25",
+   "nota": "La cifra alta se acerca a la base de reconstrucción: el plan oficial sumaba S/25.655 M, ~4% del PBI (F-1055), que es inversión planificada, no pérdidas. La de INDECI/OPS mide pérdidas. No se vio la fuente primaria de APESEG: citar cada cifra con su base."
   },
   {
    "triple": "T-793",
@@ -3567,9 +3691,9 @@
   },
   {
    "triple": "T-879",
-   "estado": "sin_verificar",
-   "fecha": "2026-10-11",
-   "nota": "F-35 (68% se automedica con antiinflamatorios) y F-38 (~20% se automedica) son prensa D sin método. La 'diferencia de definición' no cierra: si 68% usa antiinflamatorios, la automedicación total no puede ser 20%. Falta el denominador y el periodo de recuerdo de cada estudio. (juicio sobre lectura de ficha)"
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Las dos cifras son prensa sin método. La encuesta oficial ENSUSALUD 2015 (INEI, vía F-1056) reporta 54,8% de compra sin receta: el ~20% no se sostiene; el 68% es específico de antiinflamatorios. Usar el dato del INEI y su año."
   },
   {
    "triple": "T-909",
@@ -3687,9 +3811,9 @@
   },
   {
    "triple": "T-1226",
-   "estado": "sin_verificar",
-   "fecha": "2026-10-11",
-   "nota": "F-284 llega vía unite.ai (C/D) sobre un análisis de 25 millones de comentarios. No se sabe cómo se determinó si el contenido acusado era o no de IA. Falta el reporte primario y su método de verificación para juzgar si las acusaciones fallan. (juicio sobre lectura de ficha)"
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Estudio primario verificado (F-1059, preprint): las acusaciones crecieron más de diez veces y funcionan como vigilancia de pertenencia. No mide si el contenido acusado era de IA, así que matiza la idea de que identifican IA, no la refuta."
   },
   {
    "triple": "T-1261",
@@ -3849,9 +3973,9 @@
   },
   {
    "triple": "T-1615",
-   "estado": "sin_verificar",
-   "fecha": "2026-10-11",
-   "nota": "Henkel publica su tasa de innovación (~30% en 2017; F-532), pero solo se vio por fuentes secundarias y no hay meta ni cumplimiento verificados. No prueba ni refuta que las metas se anuncien sin reportarse. Faltan los informes anuales con la meta declarada. (juicio sobre lectura de ficha)"
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Henkel sí anuncia una meta (30% de ventas de productos de los últimos tres años, F-1058) y reporta tasas por segmento (F-1057). El caso contradice la idea para Henkel; un solo caso no refuta el patrón general."
   },
   {
    "triple": "T-1617",
@@ -3957,9 +4081,9 @@
   },
   {
    "triple": "T-1703",
-   "estado": "sin_verificar",
-   "fecha": "2026-10-11",
-   "nota": "Llamar 'homeopatía' a los encuestados sintéticos es retórica de un proveedor competidor, sin datos (F-603, E). La tensión con el reemplazo la sostienen F-556 y F-558, no esta fuente. Faltaría la evidencia en que se apoya Conjointly. (juicio sobre lectura de ficha)"
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "La etiqueta de \"homeopatía\" es retórica sin datos; la tensión de fondo la sostienen fuentes con datos (F-1061 y las del nodo de convergencia): los sintéticos no reemplazan encuestas para inferencia."
   },
   {
    "triple": "T-1708",
@@ -3969,9 +4093,9 @@
   },
   {
    "triple": "T-1709",
-   "estado": "sin_verificar",
-   "fecha": "2026-10-11",
-   "nota": "Solo hay prensa del sector sobre un estudio de Prolific, que vende paneles humanos y tiene conflicto de interés (F-605, D). La conclusión coincide con F-556 y F-558, pero faltan el método, la muestra y las cifras del estudio. (juicio sobre lectura de ficha)"
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "El estudio de Prolific sigue sin verificarse, pero la conclusión de fondo la sostienen fuentes independientes: menor variación y sesgo positivo de los sintéticos (F-1061) y las fuentes A del nodo de convergencia."
   },
   {
    "triple": "T-1720",
@@ -3999,9 +4123,9 @@
   },
   {
    "triple": "T-1771",
-   "estado": "sin_verificar",
-   "fecha": "2026-10-11",
-   "nota": "Aaru falló dos pronósticos de 2024: Haley y Harris (F-628, prensa). Pero las encuestas humanas también fallaron ese año, y dos casos no miden el error. Faltaría comparar el error de Aaru con el de los sondeos tradicionales en las mismas elecciones. (juicio sobre lectura de ficha)"
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Los pronosticadores tradicionales también favorecían a Harris (F-1060). Dos fallos no muestran que lo sintético sea peor; la tensión de fondo (no reemplazan encuestas para inferencia) la sostienen otras fuentes."
   },
   {
    "triple": "T-1781",
@@ -4079,7 +4203,7 @@
    "triple": "T-1881",
    "estado": "sin_verificar",
    "fecha": "2026-10-11",
-   "nota": "Nirvanic dice ser 'self-funded' en unas FAQ sin fecha. Dealroom lista una ronda Early VC de nov-2024 sin monto ni inversionistas, y Crunchbase no muestra nada (F-862). Ninguna fuente es firme. Faltaría un registro societario o una declaración fechada. (juicio sobre lectura de ficha)"
+   "nota": "Nirvanic dice ser 'self-funded' en unas FAQ sin fecha. Dealroom lista una ronda Early VC de nov-2024 sin monto ni inversionistas, y Crunchbase no muestra nada (F-862). Ninguna fuente es firme. Faltaría un registro societario o una declaración fechada. (juicio sobre lectura de ficha) | 2026-10-25: nueva búsqueda sin resultados sobre la empresa; sigue abierta."
   },
   {
    "triple": "T-1907",
@@ -4116,6 +4240,72 @@
    "estado": "alcance_distinto",
    "fecha": "2026-10-12",
    "nota": "Los cierres citados (MindLab, Lab CDMX, MinTIC) son de 2018-2021 y de otros países; LabGob Chile sigue activo en 2025. No hay ola de cierres actual demostrada: son casos distintos, no una refutación. Juicio sobre notas institucionales y prensa."
+  },
+  {
+   "triple": "T-2160",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-25",
+   "nota": "Réplica casi sin conformidad (F-984) y meta-análisis que muestra variación por cultura y época (F-648): la conformidad de Asch no es universal ni estable."
+  },
+  {
+   "triple": "T-2161",
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Los datos de Asch muestran conformidad e independencia a la vez (~1/3 y ~2/3 de los ensayos críticos); los manuales enfatizan solo la primera (F-985)."
+  },
+  {
+   "triple": "T-2182",
+   "estado": "mecanismo_en_disputa",
+   "fecha": "2026-10-25",
+   "nota": "Opinión (F-993, E) frente a un estudio pagado por el proveedor (F-989, C): ninguna de las dos es evidencia independiente del retorno. Lo resolvería una evaluación independiente o un experimento con resultados financieros."
+  },
+  {
+   "triple": "T-2224",
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "La crítica es metodológica (F-1013): la evidencia a favor de habitaciones individuales es de baja calidad, no hay un estudio primario que muestre lo contrario. Tratar el beneficio como plausible, no probado."
+  },
+  {
+   "triple": "T-2252",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-25",
+   "nota": "El rebote documentado (F-1028, argumento; F-1029, medición en celulares) muestra que cerrar ciclos no reduce el impacto por sí solo: depende de si desplaza producción nueva."
+  },
+  {
+   "triple": "T-2254",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-25",
+   "nota": "Medición en reuso de celulares en EE.UU. (F-1029): con rebote sobre 100% en algunos escenarios, el beneficio neto desaparece."
+  },
+  {
+   "triple": "T-2281",
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Refutación parcial (F-1041): el co-diseño mejora aceptabilidad y uso, pero solo 2 proyectos midieron salud y 4 de 17 resultados lo favorecieron. No está probado que mejore la salud; tampoco que no."
+  },
+  {
+   "triple": "T-2314",
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Misma resolución que T-879: la encuesta oficial (54,8% compra sin receta, F-1056) hace inverosímil el ~20%."
+  },
+  {
+   "triple": "T-2315",
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Misma resolución que T-1615: Henkel reporta tasas de innovación (F-1057); un caso no refuta el patrón general."
+  },
+  {
+   "triple": "T-2316",
+   "estado": "matizada",
+   "fecha": "2026-10-25",
+   "nota": "Misma resolución que T-1615: Henkel anunció una meta explícita (F-1058); un caso no refuta el patrón general."
+  },
+  {
+   "triple": "T-2319",
+   "estado": "refutacion_directa",
+   "fecha": "2026-10-25",
+   "nota": "Con menos variación y sesgo positivo frente a personas (F-1061), y lo que ya sostienen las fuentes A del nodo de convergencia, las muestras sintéticas no reemplazan encuestas para inferencia estadística."
   }
  ]
 }

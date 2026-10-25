@@ -8,23 +8,23 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,794 líneas |
+| Nodes (`_nodes/`) | 30 | 9,527 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
-| Fuentes en el ledger | 984 | 🟢A 323 · 🔵B 174 · 🟡C 214 · 🟠D 217 · 🔴E 41 · otras/sin clasificar 15 |
-| Aristas wikilink (node→node) | 158 | recíprocas: 158 de 158 (100%) |
-| Fuentes citadas por ≥1 node | 878 de 984 | 89% del ledger; **106 viven solo en el ledger** |
-| Fuentes citadas por ≥2 nodes (transversales) | 111 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 984 de 984 fuentes (100%) | 2161 relaciones · 119 barridos · detalle en `relaciones/RELACIONES.md` |
+| Fuentes en el ledger | 1060 | 🟢A 347 · 🔵B 193 · 🟡C 229 · 🟠D 233 · 🔴E 43 · otras/sin clasificar 15 |
+| Aristas wikilink (node→node) | 230 | recíprocas: 230 de 230 (100%) |
+| Fuentes citadas por ≥1 node | 1023 de 1060 | 97% del ledger; **37 viven solo en el ledger** |
+| Fuentes citadas por ≥2 nodes (transversales) | 221 | evidencia reutilizada entre temas |
+| **Grafo semántico** (relaciones extraídas) | 1060 de 1060 fuentes (100%) | 2319 relaciones · 125 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
-## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
+## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion` y sus nodos de dominio `diseno-*`, `innovacion-evidencia`)
 
 | Indicador | Valor | Cómo leerlo |
 |---|---|---|
 | Iteraciones de bitácora | 9 (2026-07-26, 2026-07-29, 2026-08-02, 2026-10-02, 2026-10-12) | cuántas veces se confrontó el node |
-| Tamaño | 2,215 líneas | crecimiento ≠ calidad; ver trazabilidad |
-| Fuentes citadas explícitamente | 373 | F-n individuales dentro del node |
-| …de rigor A/B | 186 (50%) | solidez de la base |
+| Tamaño | 1,124 líneas | crecimiento ≠ calidad; ver trazabilidad |
+| Fuentes citadas explícitamente | 444 | F-n individuales dentro del node |
+| …de rigor A/B | 229 (52%) | solidez de la base |
 | Hipótesis vivas | 36: abierta 16 · parcial 14 · respaldada 2 · refutada 4 | tablero §6 |
 | **Falsabilidad ejercida** | 56% (20/36) | hipótesis que ya se movieron de `abierta` |
 | **Tasa de autocorrección** | 20% (4/20) | de las resueltas, cuántas se refutaron: 0% sostenido sería señal de confirmación sesgada |
@@ -38,24 +38,26 @@
 
 | Node | F-n compartidas | Jaccard | Enlazado |
 |---|---|---|---|
-| `conducta-humano-ia` | 27 | 0.068 | ✅ |
-| `proyecto-back-to-basics-ffvv-vida` | 19 | 0.049 | ✅ |
-| `convergencia-psicologia-economia-ia` | 11 | 0.023 | ✅ |
-| `fenomenos-psicologicos` | 10 | 0.021 | ✅ |
-| `behavioral-design-estado-disciplina` | 9 | 0.024 | ✅ |
-| `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.021 | ✅ |
-| `material-visual-venta-consultiva` | 8 | 0.021 | ✅ |
-| `mecanismos-seguros-salud` | 7 | 0.017 | ✅ |
-| `glosario-seguro-vida-peru` | 4 | 0.011 | ✅ |
-| `seguros-comportamiento-mundo-peru` | 4 | 0.01 | ✅ |
-| `transicion-venta-fria-a-opt-in` | 4 | 0.01 | ✅ |
-| `glosario-seguro-salud-peru` | 3 | 0.008 | ✅ |
-| `fenomeno-el-nino-impacto-personas` | 2 | 0.005 | ❌ sin enlace |
-| `modelo-salud-ia-farmacias-peru` | 2 | 0.005 | ✅ |
+| `conducta-humano-ia` | 27 | 0.058 | ✅ |
+| `proyecto-back-to-basics-ffvv-vida` | 19 | 0.041 | ✅ |
+| `convergencia-psicologia-economia-ia` | 11 | 0.02 | ✅ |
+| `fenomenos-psicologicos` | 10 | 0.018 | ✅ |
+| `behavioral-design-estado-disciplina` | 9 | 0.02 | ✅ |
+| `evaluacion-calidad-agentes-conversacionales-ia` | 8 | 0.018 | ✅ |
+| `material-visual-venta-consultiva` | 8 | 0.018 | ✅ |
+| `mecanismos-seguros-salud` | 7 | 0.014 | ✅ |
+| `glosario-seguro-vida-peru` | 4 | 0.009 | ✅ |
+| `seguros-comportamiento-mundo-peru` | 4 | 0.009 | ✅ |
+| `transicion-venta-fria-a-opt-in` | 4 | 0.008 | ✅ |
+| `glosario-seguro-salud-peru` | 3 | 0.007 | ✅ |
+| `fenomeno-el-nino-impacto-personas` | 2 | 0.004 | ❌ sin enlace |
+| `modelo-salud-ia-farmacias-peru` | 2 | 0.004 | ✅ |
 | `conciencia-cuantica` | 0 | 0.0 | ❌ sin enlace |
 | `futuro-asesores-seguros-venta-digital` | 0 | 0.0 | ✅ |
 | `matriz-productos-vida-rimac` | 0 | 0.0 | ❌ sin enlace |
 | `modelo-personas-sinteticas` | 0 | 0.0 | ✅ |
+| `recomendaciones-acciones-2026` | 0 | 0.0 | ❌ sin enlace |
+| `rentabilidad-modelos-seguros` | 0 | 0.0 | ❌ sin enlace |
 | `venta-vida-digital-hibrida-latam` | 0 | 0.0 | ✅ |
 
 ## 3. Evolución
@@ -90,7 +92,7 @@
 | 2026-10-10 | 74 | 874 | 36 | ██████████████████ |
 | 2026-10-11 | 5 | 879 | 0 | █ |
 | 2026-10-12 | 97 | 976 | 43 | ████████████████████████ |
-| 2026-10-25 | 8 | 984 | 7 | ██ |
+| 2026-10-25 | 84 | 1060 | 50 | █████████████████████ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -108,6 +110,7 @@
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-11 | `614bf74` | 879 | 20 | 5 | 142 | 770 | 2033 | 16 | 20 | 22 |
 | 2026-10-12 | `90d0074` | 976 | 20 | 5 | 158 | 870 | 2215 | 16 | 20 | 22 |
+| 2026-10-25 | `f786a03` | 984 | 20 | 5 | 158 | 878 | 2215 | 16 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -116,12 +119,12 @@
 | Métrica | Valor | Qué dice | Qué NO dice |
 |---|---|---|---|
 | M1 Base sólida (A+B / ledger) | 51% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
-| M2 Cobertura de citación | 89% | cuánto del ledger sostiene algún node | un node puede citar mal |
+| M2 Cobertura de citación | 97% | cuánto del ledger sostiene algún node | un node puede citar mal |
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 56% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
-| M6 Integración (diseño↔resto) | 16/19 nodes enlazados; 14 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
-| M7 Lectura profunda (Lobo) | 196 fuentes leídas a fondo = 20% del ledger; 195 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
+| M6 Integración (diseño↔resto) | 16/21 nodes enlazados; 14 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
+| M7 Lectura profunda (Lobo) | 196 fuentes leídas a fondo = 18% del ledger; 195 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
 | M8 Uso externo (`impacto.json`) | 38 preguntas · 1 personas · 1 valoradas (100% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
@@ -138,26 +141,36 @@
 
 | Node | Líneas | F-n citadas | A/B | Enlaces ent./sal. | Última modif. visible (git) | alma |
 |---|---|---|---|---|---|---|
-| `tendencias-diseno-innovacion` | 2215 | 373 | 186 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
-| `convergencia-psicologia-economia-ia` | 251 | 119 | 51 | 12/12 | 2026-10-12 | 2026-10-12 v1.0 |
-| `fenomenos-psicologicos` | 560 | 115 | 112 | 9/9 | 2026-10-11 | 2026-10-25 v1.0 |
+| `tendencias-diseno-innovacion` | 1124 | 266 | 139 | 24/24 | 2026-10-12 | 2026-10-12 v4.1 |
+| `diseno-producto-digital` | 781 | 148 | 60 | 5/5 | n/d | 2026-10-25 v1.0 |
+| `convergencia-psicologia-economia-ia` | 262 | 121 | 51 | 14/14 | 2026-10-12 | 2026-10-12 v1.0 |
+| `fenomenos-psicologicos` | 561 | 115 | 112 | 10/10 | 2026-10-25 | 2026-10-25 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
-| `fenomeno-el-nino-impacto-personas` | 404 | 58 | 32 | 3/3 | 2026-10-07 | 2026-10-07 v1.1 |
-| `mecanismos-seguros-salud` | 357 | 57 | 35 | 11/11 | 2026-10-12 | 2026-10-12 v1.2 |
-| `conducta-humano-ia` | 165 | 51 | 32 | 9/9 | 2026-10-12 | 2026-10-12 v1.1 |
-| `proyecto-back-to-basics-ffvv-vida` | 939 | 33 | 29 | 14/14 | 2026-10-12 | 2026-10-12 v1.4 |
-| `modelo-salud-ia-farmacias-peru` | 619 | 24 | 18 | 5/5 | 2026-10-12 | 2026-10-12 v1.0 |
-| `futuro-asesores-seguros-venta-digital` | 391 | 23 | 2 | 8/8 | 2026-10-12 | 2026-10-12 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 342 | 21 | 10 | 17/17 | 2026-10-11 | 2026-10-11 v1.1 |
-| `transicion-venta-fria-a-opt-in` | 326 | 18 | 7 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
+| `fenomeno-el-nino-impacto-personas` | 413 | 59 | 32 | 6/6 | 2026-10-07 | 2026-10-07 v1.1 |
+| `mecanismos-seguros-salud` | 358 | 57 | 35 | 12/12 | 2026-10-12 | 2026-10-12 v1.2 |
+| `innovacion-evidencia` | 329 | 55 | 22 | 2/2 | n/d | 2026-10-25 v1.0 |
+| `conducta-humano-ia` | 167 | 51 | 32 | 11/11 | 2026-10-12 | 2026-10-12 v1.1 |
+| `modelo-salud-ia-farmacias-peru` | 674 | 47 | 28 | 7/7 | 2026-10-12 | 2026-10-12 v1.0 |
+| `diseno-servicios-politicas-salud` | 57 | 41 | 22 | 5/5 | n/d | 2026-10-25 v1.0 |
+| `proyecto-back-to-basics-ffvv-vida` | 940 | 34 | 30 | 15/15 | 2026-10-12 | 2026-10-12 v1.4 |
+| `transicion-venta-fria-a-opt-in` | 415 | 31 | 12 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
+| `seguros-comportamiento-mundo-peru` | 353 | 26 | 12 | 20/20 | 2026-10-11 | 2026-10-11 v1.1 |
+| `futuro-asesores-seguros-venta-digital` | 392 | 23 | 2 | 9/9 | 2026-10-12 | 2026-10-12 v1.0 |
+| `rentabilidad-modelos-seguros` | 86 | 19 | 4 | 9/9 | n/d | 2026-10-25 v1.0 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 256 | 17 | 11 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |
 | `material-visual-venta-consultiva` | 379 | 17 | 12 | 10/10 | 2026-10-12 | 2026-10-12 v1.1 |
-| `behavioral-design-estado-disciplina` | 323 | 12 | 11 | 9/9 | 2026-10-12 | 2026-10-12 v1.1 |
+| `diseno-espacios-ciudad` | 87 | 15 | 10 | 4/4 | n/d | 2026-10-25 v1.0 |
+| `diseno-estrategico-organizacional` | 56 | 15 | 7 | 3/3 | n/d | 2026-10-25 v1.0 |
+| `diseno-producto-fisico-industrial` | 52 | 15 | 10 | 4/4 | n/d | 2026-10-25 v1.0 |
+| `diseno-sostenibilidad-circularidad` | 58 | 15 | 7 | 4/4 | n/d | 2026-10-25 v1.0 |
+| `diseno-social-participativo` | 59 | 14 | 9 | 3/3 | n/d | 2026-10-25 v1.0 |
+| `behavioral-design-estado-disciplina` | 327 | 12 | 11 | 13/13 | 2026-10-12 | 2026-10-12 v1.1 |
+| `recomendaciones-acciones-2026` | 72 | 10 | 1 | 3/3 | n/d | 2026-10-25 v1.0 |
 | `glosario-seguro-vida-peru` | 218 | 8 | 4 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
-| `venta-vida-digital-hibrida-latam` | 235 | 8 | 4 | 4/4 | 2026-10-12 | 2026-10-12 v1.0 |
+| `venta-vida-digital-hibrida-latam` | 236 | 8 | 4 | 5/5 | 2026-10-12 | 2026-10-12 v1.0 |
 | `glosario-seguro-salud-peru` | 198 | 6 | 5 | 6/6 | 2026-10-11 | 2026-10-11 v1.0 |
 | `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-08-16, historial truncado) | 2026-07-26 v1.2 |
-| `modelo-personas-sinteticas` | 80 | 0 | 0 | 6/6 | 2026-10-07 | 2026-10-07 v1.0 |
+| `modelo-personas-sinteticas` | 81 | 0 | 0 | 7/7 | 2026-10-07 | 2026-10-07 v1.0 |
 
 ## 7. Límites declarados de esta medición
 

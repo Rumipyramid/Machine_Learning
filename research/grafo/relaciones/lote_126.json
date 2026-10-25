@@ -1,0 +1,22 @@
+{"fecha": "2026-10-25", "f_ids": ["F-1054","F-1055","F-1056","F-1057","F-1058","F-1059","F-1060","F-1061"],
+ "entidades": [
+  {"id": "primas_netas_ajuste_reservas_1s_2026", "nombre": "Primas netas con ajuste de reservas del sistema peruano en el 1S 2026 (+8%)", "tipo": "resultado"},
+  {"id": "plan_reconstruccion_2017", "nombre": "Plan de reconstrucción del Niño Costero 2017 (S/25.655 M, ~4% del PBI)", "tipo": "resultado"},
+  {"id": "compra_sin_receta_ensusalud_2015", "nombre": "Compra de medicamentos sin receta en Perú (54,8%, ENSUSALUD 2015)", "tipo": "resultado"},
+  {"id": "meta_innovacion_henkel_30", "nombre": "Meta de Henkel: 30% de ventas de productos de los últimos tres años", "tipo": "resultado"},
+  {"id": "acusaciones_slop_vigilancia", "nombre": "Acusaciones de 'AI slop' como vigilancia de pertenencia", "tipo": "resultado"},
+  {"id": "pronosticos_tradicionales_2024", "nombre": "Pronosticadores tradicionales que también favorecían a Harris en 2024", "tipo": "resultado"},
+  {"id": "menor_variacion_sinteticos", "nombre": "Menor variación entre encuestados sintéticos que entre personas", "tipo": "resultado"}
+ ],
+ "triples": [
+  {"s": "primas_netas_ajuste_reservas_1s_2026", "p": "tiene_limite", "o": "primas_sistema_1s_2026", "f": "F-1054", "apoyo": "Con datos de la SBS: primas de seguros +1,1% (S/9.451 M) frente a primas netas con ajuste de reservas +8% (S/12.385 M); son medidas distintas.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "plan_reconstruccion_2017", "p": "asocia_con", "o": "c_dano2017_9200", "f": "F-1055", "apoyo": "El plan de reconstrucción sumaba S/25.655 M (~4% del PBI): inversión planificada, no pérdidas; la cifra alta de daño se acerca a la base de reconstrucción.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "compra_sin_receta_ensusalud_2015", "p": "contradice", "o": "c_automedicacion_20", "f": "F-1056", "apoyo": "La encuesta oficial ENSUSALUD 2015 reporta 54,8% de compra sin receta, muy por encima del ~20% de automedicación citado en prensa.", "lectura": "ficha", "fuerza": "descriptiva"},
+  {"s": "innovation_rate_henkel", "p": "contradice", "o": "c_metas_innovacion_no_reportadas", "f": "F-1057", "apoyo": "Henkel publica tasas de innovación por segmento (2017: ~30% a ~45%).", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "meta_innovacion_henkel_30", "p": "contradice", "o": "c_metas_innovacion_no_reportadas", "f": "F-1058", "apoyo": "Henkel anunció una meta explícita: 30% de ventas de productos lanzados en los últimos tres años.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "analisis_25m_comentarios_slop", "p": "aumenta", "o": "acusaciones_slop_vigilancia", "f": "F-1059", "apoyo": "25 M de comentarios 2023-2026: las acusaciones peyorativas de IA crecieron más de diez veces, sin alza en insultos placebo; los autores las leen como vigilancia de pertenencia.", "lectura": "abstract", "fuerza": "observacional"},
+  {"s": "pronosticos_tradicionales_2024", "p": "modera", "o": "pronosticos_electorales_aaru", "f": "F-1060", "apoyo": "Aaru falló a favor de Harris, como también Silver Bulletin y Split Ticket; sin comparación independiente del error.", "lectura": "abstract", "fuerza": "descriptiva"},
+  {"s": "menor_variacion_sinteticos", "p": "contradice", "o": "c_sinteticas_reemplazan_encuestas", "f": "F-1061", "apoyo": "Coinciden ~79% con elecciones de marca reales, pero sobreestiman actitudes positivas y muestran menos variación que las personas.", "lectura": "abstract", "fuerza": "observacional"}
+ ],
+ "discrepancias": [],
+ "notas": "Resolución de contradicciones abiertas, 2026-10-25: evidencia nueva vía búsqueda (resúmenes; F-1056 solo por prensa)."}

@@ -364,6 +364,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
 
 ## Conexiones
 
+- [[rentabilidad-modelos-seguros|Modelos de seguros rentables: qué está medido]] — qué modelos de seguros son rentables y con qué evidencia (telemática, paramétricos, reaseguro), rescatado del registro de fuentes el 2026-10-25.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — ese node documenta que en Perú, específicamente, la
   confianza sube con intermediación de un broker (§3.3); este node aporta el marco

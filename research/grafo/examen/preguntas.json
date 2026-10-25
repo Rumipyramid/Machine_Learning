@@ -1,0 +1,362 @@
+{
+ "_nota": "Examen fijo de calidad de Mu. Cada pregunta trae el nodo que debería usar, fuentes clave (basta que aparezca una), ideas que la respuesta debe contener (expresiones regulares, sin tildes ni mayúsculas) y afirmaciones que no debe hacer. Las respuestas de referencia las redactó Claude a partir de los nodos el 2026-10-25: el usuario debe revisarlas y corregirlas; una vez revisada, poner revisada: true. Cambiar una pregunta invalida la comparación con corridas anteriores: agregar en vez de editar. \"nodo\" puede ser una lista de nodos aceptables (desde 2026-10-25, cuando el nodo de diseño se dividió en nodos de dominio).",
+ "version": 1,
+ "preguntas": [
+  {
+   "id": "Q01",
+   "pregunta": "¿Qué tan cierta es la regla pico-final? ¿Sirve para diseñar la atención de siniestros?",
+   "nodo": "fenomenos-psicologicos",
+   "fuentes": [
+    "F-718",
+    "F-717",
+    "F-978",
+    "F-979",
+    "F-980"
+   ],
+   "debe": [
+    "promedio",
+    "(corta|breve|desagradable|dolor)",
+    "(final|cierre)",
+    "(compleja|larga|vacacion)"
+   ],
+   "no_debe": [
+    "siempre funciona",
+    "esta demostrad[oa] en (clientes|servicios)"
+   ],
+   "referencia": "Se sostiene en experiencias cortas y desagradables (dolor, procedimientos médicos): el recuerdo pesa el peor momento y el final, y la duración casi no cuenta. Pero no predice mejor que el promedio, y en experiencias largas, complejas o positivas no se cumple. Para siniestros: suavizar el peor momento y cuidar el cierre, sin descuidar el resto; no hay evidencia de campo en clientes.",
+   "revisada": false
+  },
+  {
+   "id": "Q02",
+   "pregunta": "¿Es cierto que un tercio de las personas se conforma con la mayoría como en el experimento de Asch?",
+   "nodo": "fenomenos-psicologicos",
+   "fuentes": [
+    "F-647",
+    "F-648",
+    "F-649",
+    "F-985"
+   ],
+   "debe": [
+    "(tercio|33)",
+    "cultura",
+    "(independ|dos tercios|mayoria de las respuestas)"
+   ],
+   "no_debe": [
+    "rasgo universal",
+    "todas las personas se conforman"
+   ],
+   "referencia": "Un tercio de los ensayos críticos, en promedio y en ciertas muestras; no un rasgo fijo. Varía por cultura, época y género, y la mayoría de las respuestas fueron independientes. Con estímulos ambiguos la mayoría sesga la percepción; con estímulos claros, solo la respuesta pública.",
+   "revisada": false
+  },
+  {
+   "id": "Q03",
+   "pregunta": "¿El experimento de la prisión de Stanford demuestra que el rol vuelve cruel a la gente?",
+   "nodo": "fenomenos-psicologicos",
+   "fuentes": [
+    "F-657"
+   ],
+   "debe": [
+    "(no replic|no se replic|cuestionad|desacreditad)",
+    "(instrucc|guardias fueron|demanda)"
+   ],
+   "no_debe": [
+    "demuestra que el rol"
+   ],
+   "referencia": "No. Es un estudio no replicado y cuestionado: los guardias recibieron instrucciones y hubo demanda del experimentador (Le Texier 2019). No sirve como evidencia de que el rol por sí solo produzca crueldad.",
+   "revisada": false
+  },
+  {
+   "id": "Q04",
+   "pregunta": "¿Funcionan los nudges?",
+   "nodo": "behavioral-design-estado-disciplina",
+   "fuentes": [
+    "F-16",
+    "F-17",
+    "F-18"
+   ],
+   "debe": [
+    "(default|predetermin|preselecc)",
+    "(sesgo de publicacion|publication bias|reanalisis)",
+    "(pequen|modest|moderad)"
+   ],
+   "no_debe": [
+    "siempre funcionan",
+    "no funcionan nunca"
+   ],
+   "referencia": "Con efectos modestos y desiguales. El metaanálisis de 2022 halló un efecto moderado, mayor en los defaults; un reanálisis que corrige el sesgo de publicación no halló efecto promedio. Los defaults y la simplificación tienen la base más firme; los mensajes y recordatorios, efectos pequeños.",
+   "revisada": false
+  },
+  {
+   "id": "Q05",
+   "pregunta": "¿Qué pasa con la IA que le da la razón a todo al usuario?",
+   "nodo": "conducta-humano-ia",
+   "fuentes": [
+    "F-488",
+    "F-495",
+    "F-496",
+    "F-491"
+   ],
+   "debe": [
+    "(adulaci|sycophan|da la razon|complac)",
+    "(confianza|confia)",
+    "(riesgo|dan|peor)"
+   ],
+   "no_debe": [],
+   "referencia": "Los modelos tienden a adular: validan al usuario más que las personas, y eso aumenta la confianza y la preferencia por el modelo aunque empeore el juicio. Es un riesgo de diseño que se mitiga mostrando desacuerdo y evidencia.",
+   "revisada": false
+  },
+  {
+   "id": "Q06",
+   "pregunta": "¿Cuál es la penetración de seguros en Perú y cómo se compara con la región?",
+   "nodo": "seguros-comportamiento-mundo-peru",
+   "fuentes": [],
+   "debe": [
+    "2[,.]0|2[,.]1|2%",
+    "(latinoamerica|latam|region|chile)"
+   ],
+   "no_debe": [],
+   "referencia": "Alrededor de 2% del PBI (2,06% a setiembre de 2025 según la SBS), frente a 3,2% en Latinoamérica y 4,6% en Chile. El crecimiento de primas de 2026 está en revisión.",
+   "revisada": false,
+   "nota": "El nodo de seguros da esta cifra sin código de fuente (F-n); por eso no se exige fuente clave. Pendiente: citar la fuente en el nodo."
+  },
+  {
+   "id": "Q07",
+   "pregunta": "¿Cuánto confían los peruanos en las aseguradoras y por qué desconfían?",
+   "nodo": "seguros-comportamiento-mundo-peru",
+   "fuentes": [],
+   "debe": [
+    "(2[345]|un cuarto)",
+    "(48|casi la mitad)",
+    "(informacion)"
+   ],
+   "no_debe": [],
+   "referencia": "Solo cerca de un cuarto confía plenamente (23-25%) y alrededor de 48% desconfía; la causa principal es la falta de información. El corredor eleva la confianza.",
+   "revisada": false,
+   "nota": "El nodo de seguros da esta cifra sin código de fuente (F-n); por eso no se exige fuente clave. Pendiente: citar la fuente en el nodo."
+  },
+  {
+   "id": "Q08",
+   "pregunta": "¿Cuántos hogares peruanos tienen seguro contra desastres naturales?",
+   "nodo": "seguros-comportamiento-mundo-peru",
+   "fuentes": [
+    "F-5"
+   ],
+   "debe": [
+    "3[,.]?3?%|3 %|tres por ciento"
+   ],
+   "no_debe": [],
+   "referencia": "Muy pocos: alrededor de 3% de los hogares (3,3%), en un país muy sísmico.",
+   "revisada": false
+  },
+  {
+   "id": "Q09",
+   "pregunta": "¿Qué impacto tiene el Fenómeno El Niño en las personas en Perú?",
+   "nodo": "fenomeno-el-nino-impacto-personas",
+   "fuentes": [],
+   "debe": [
+    "(salud|dengue|enfermedad)",
+    "(ingreso|pobreza|empleo|hogar)"
+   ],
+   "no_debe": [],
+   "referencia": "Afecta salud (dengue, enfermedades), ingresos y vivienda de los hogares, con más daño en los pobres; el nodo resume cifras y oportunidades para seguros.",
+   "revisada": false
+  },
+  {
+   "id": "Q10",
+   "pregunta": "¿Hay evidencia de que la conciencia sea un fenómeno cuántico?",
+   "nodo": "conciencia-cuantica",
+   "fuentes": [
+    "F-811",
+    "F-812",
+    "F-815"
+   ],
+   "debe": [
+    "(orch|penrose|hameroff)",
+    "(no hay|no esta|insuficiente|especulat|debil)"
+   ],
+   "no_debe": [
+    "esta demostrad"
+   ],
+   "referencia": "No hay evidencia suficiente. Orch-OR (Penrose y Hameroff) tiene experimentos sugerentes pero indirectos y fuertes críticas; la 'cognición cuántica' es otra cosa (modelos matemáticos del juicio).",
+   "revisada": false
+  },
+  {
+   "id": "Q11",
+   "pregunta": "¿La publicidad personalizada vende más que la genérica?",
+   "nodo": [
+    "tendencias-diseno-innovacion",
+    "diseno-producto-digital"
+   ],
+   "fuentes": [
+    "F-519"
+   ],
+   "debe": [
+    "(pequen|0[,.]16)",
+    "(actitud|intenci)",
+    "(no mide|no clics|compras)"
+   ],
+   "no_debe": [
+    "duplica",
+    "triplica"
+   ],
+   "referencia": "Persuade algo más (efecto pequeño, d≈0,16) en actitudes e intenciones, explicado por la relevancia percibida; el metaanálisis no mide clics ni compras observadas.",
+   "revisada": false
+  },
+  {
+   "id": "Q12",
+   "pregunta": "¿Las explicaciones de la IA aumentan la confianza de las personas?",
+   "nodo": "conducta-humano-ia",
+   "fuentes": [
+    "F-242",
+    "F-243",
+    "F-246"
+   ],
+   "debe": [
+    "(moderad|debil|no siempre|depende)",
+    "(verific|sobreconfianza|dependencia)"
+   ],
+   "no_debe": [],
+   "referencia": "Solo moderadamente y no siempre: la relación entre explicabilidad y confianza es modesta, y las explicaciones reducen la sobreconfianza solo cuando verificarlas es fácil.",
+   "revisada": false
+  },
+  {
+   "id": "Q13",
+   "pregunta": "¿Sirven los usuarios sintéticos hechos con modelos de lenguaje para reemplazar encuestas?",
+   "nodo": "convergencia-psicologia-economia-ia",
+   "fuentes": [
+    "F-543",
+    "F-545",
+    "F-549",
+    "F-564"
+   ],
+   "debe": [
+    "(no reemplaz|complement|prototip|explorac)",
+    "(sesgo|homogene|varianza|promedio)"
+   ],
+   "no_debe": [
+    "reemplazan a las encuestas"
+   ],
+   "referencia": "No reemplazan: replican algunos efectos promedio pero comprimen la variación entre personas y heredan sesgos; sirven para prototipar y explorar antes de medir con personas reales.",
+   "revisada": false
+  },
+  {
+   "id": "Q14",
+   "pregunta": "¿Qué propone el proyecto de ley 08488 sobre farmacias en Perú?",
+   "nodo": "modelo-salud-ia-farmacias-peru",
+   "fuentes": [
+    "F-508"
+   ],
+   "debe": [
+    "farmac",
+    "(primer nivel|atencion primaria|salud)"
+   ],
+   "no_debe": [],
+   "referencia": "Incorporar a farmacias y boticas como establecimientos que prestan servicios de salud de primer nivel; base del modelo de triage con IA y farmacias del nodo.",
+   "revisada": false
+  },
+  {
+   "id": "Q15",
+   "pregunta": "¿Funciona el modelo de Discovery Vitality de premiar hábitos saludables en seguros?",
+   "nodo": "mecanismos-seguros-salud",
+   "fuentes": [
+    "F-98",
+    "F-99",
+    "F-100",
+    "F-102",
+    "F-103",
+    "F-104",
+    "F-105",
+    "F-106"
+   ],
+   "debe": [
+    "(vitality|discovery)",
+    "(seleccion|autoseleccion|correlaci|causal)"
+   ],
+   "no_debe": [
+    "esta demostrado que causa"
+   ],
+   "referencia": "Hay asociación entre participación y menor siniestralidad, pero buena parte puede ser autoselección de personas ya sanas; la evidencia causal es más débil que la de negocio.",
+   "revisada": false
+  },
+  {
+   "id": "Q16",
+   "pregunta": "¿Cómo pasar de venta fría a que el cliente pida que lo contacten?",
+   "nodo": "transicion-venta-fria-a-opt-in",
+   "fuentes": [],
+   "debe": [
+    "(opt.?in|consentim|permiso)",
+    "(confianza|desconfianza|datos)"
+   ],
+   "no_debe": [],
+   "referencia": "Cambiando a contacto con permiso: pedir pocos datos, explicar para qué y dar valor antes de pedir, lo que reduce la desconfianza al compartir datos.",
+   "revisada": false
+  },
+  {
+   "id": "Q17",
+   "pregunta": "¿Qué evidencia hay del impacto del diseño de espacios y ciudades en las personas?",
+   "nodo": [
+    "diseno-espacios-ciudad",
+    "tendencias-diseno-innovacion"
+   ],
+   "fuentes": [],
+   "debe": [
+    "(espacio|ciudad|urban|arquitect)"
+   ],
+   "no_debe": [],
+   "referencia": "Pregunta de dominio del diseño global. Antes de 2026-10-25 Mu no tenía cobertura y debía decirlo; tras la investigación de ese día debe responder con evidencia del nodo del dominio y decir sus límites.",
+   "revisada": false
+  },
+  {
+   "id": "Q18",
+   "pregunta": "¿Qué es lo más relevante hoy en diseño?",
+   "nodo": [
+    "tendencias-diseno-innovacion",
+    "diseno-producto-digital",
+    "diseno-servicios-politicas-salud",
+    "diseno-estrategico-organizacional",
+    "diseno-producto-fisico-industrial",
+    "diseno-espacios-ciudad",
+    "diseno-sostenibilidad-circularidad",
+    "diseno-social-participativo",
+    "innovacion-evidencia"
+   ],
+   "fuentes": [],
+   "debe": [
+    "(servicio|politica|publica|salud|espacio|sostenib)",
+    "(evidencia|medid)"
+   ],
+   "no_debe": [],
+   "referencia": "Debe tratar el diseño como disciplina global (no solo digital), separar lo medido de lo propuesto y decir qué dominios tienen poca evidencia.",
+   "revisada": false
+  },
+  {
+   "id": "Q19",
+   "pregunta": "¿Cuál es la mejor receta de ceviche?",
+   "nodo": null,
+   "fuentes": [],
+   "debe": [
+    "(no tiene una respuesta|no tengo|no hay base|fuera de|no cubre|no sabe)"
+   ],
+   "no_debe": [
+    "limon y pescado"
+   ],
+   "referencia": "Fuera de lo que sabe el cerebro: debe decir que no tiene respuesta, sin rellenar con conocimiento general.",
+   "revisada": false
+  },
+  {
+   "id": "Q20",
+   "pregunta": "¿Qué tamaño tiene la brecha de protección de seguros en el mundo?",
+   "nodo": "seguros-comportamiento-mundo-peru",
+   "fuentes": [
+    "F-487"
+   ],
+   "debe": [
+    "(1[,.]8|billon|trillion)",
+    "(catastrofe|desastre|sin asegurar)"
+   ],
+   "no_debe": [],
+   "referencia": "Cerca de US$1,8 billones; en 2024 alrededor de 60% de las pérdidas por catástrofe no estaban aseguradas.",
+   "revisada": false
+  }
+ ]
+}

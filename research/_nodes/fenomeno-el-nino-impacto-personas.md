@@ -1,7 +1,7 @@
 # Fenómeno El Niño: qué le hace a la vida de las personas (evidencia cuanti y cualitativa)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-10-07 · Versión: **v1.1** (iter. 2: el alcance
+> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-10-25 · Versión: **v1.1** (iter. 2: el alcance
 > se amplía a la aplicación de negocio para RIMAC, §8)
 > Origen: `/trinidad` (pista empírica/teórica + social/mediática + negocio), a pedido del usuario:
 > *"la documentación y evidencia más sólida, cuanti y cualitativa, que retrate el impacto del fenómeno
@@ -391,8 +391,17 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
 
 ---
 
+## Actualización 2026-10-25: las cifras de daño del Niño Costero 2017 tienen bases distintas
+
+La cifra alta que circula (US$9.200 M) se parece más a una base de reconstrucción que a una de pérdidas. El plan oficial
+de reconstrucción sumaba S/25.655 M, casi 4% del PBI: es inversión planificada, no daño medido [F-1055]. La cifra de
+INDECI/OPS (~US$3.100 M, 1,6% del PBI) mide pérdidas. No se vio la fuente primaria de APESEG: citar cada cifra con su base.
+
 ## Conexiones
 
+- [[rentabilidad-modelos-seguros|Modelos de seguros rentables: qué está medido]] — qué modelos de seguros son rentables y con qué evidencia (telemática, paramétricos, reaseguro), rescatado del registro de fuentes el 2026-10-25.
+- [[diseno-espacios-ciudad|Diseño de espacios, arquitectura y ciudad: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): ciudad, vivienda y riesgo físico.
+- [[diseno-sostenibilidad-circularidad|Diseño para la sostenibilidad y la circularidad: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): riesgo climático y reparación.
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros (Mundo vs. Perú)]] —
   ese node documenta el ~3,3% de hogares con seguro de desastres. Este node muestra lo que esa brecha
   significa en una catástrofe real (2017: ~7% del daño asegurado, F-773) y lo que viene en 2026-27.

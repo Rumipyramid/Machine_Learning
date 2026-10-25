@@ -3,7 +3,7 @@
   {
    "id": "behavioral-design-estado-disciplina",
    "type": "node",
-   "lines": 323,
+   "lines": 327,
    "cites": 12,
    "design": false
   },
@@ -17,15 +17,64 @@
   {
    "id": "conducta-humano-ia",
    "type": "node",
-   "lines": 165,
+   "lines": 167,
    "cites": 51,
    "design": false
   },
   {
    "id": "convergencia-psicologia-economia-ia",
    "type": "node",
-   "lines": 251,
-   "cites": 119,
+   "lines": 262,
+   "cites": 121,
+   "design": false
+  },
+  {
+   "id": "diseno-espacios-ciudad",
+   "type": "node",
+   "lines": 87,
+   "cites": 15,
+   "design": false
+  },
+  {
+   "id": "diseno-estrategico-organizacional",
+   "type": "node",
+   "lines": 56,
+   "cites": 15,
+   "design": false
+  },
+  {
+   "id": "diseno-producto-digital",
+   "type": "node",
+   "lines": 781,
+   "cites": 148,
+   "design": false
+  },
+  {
+   "id": "diseno-producto-fisico-industrial",
+   "type": "node",
+   "lines": 52,
+   "cites": 15,
+   "design": false
+  },
+  {
+   "id": "diseno-servicios-politicas-salud",
+   "type": "node",
+   "lines": 57,
+   "cites": 41,
+   "design": false
+  },
+  {
+   "id": "diseno-social-participativo",
+   "type": "node",
+   "lines": 59,
+   "cites": 14,
+   "design": false
+  },
+  {
+   "id": "diseno-sostenibilidad-circularidad",
+   "type": "node",
+   "lines": 58,
+   "cites": 15,
    "design": false
   },
   {
@@ -38,21 +87,21 @@
   {
    "id": "fenomeno-el-nino-impacto-personas",
    "type": "node",
-   "lines": 404,
-   "cites": 58,
+   "lines": 413,
+   "cites": 59,
    "design": false
   },
   {
    "id": "fenomenos-psicologicos",
    "type": "node",
-   "lines": 560,
+   "lines": 561,
    "cites": 115,
    "design": false
   },
   {
    "id": "futuro-asesores-seguros-venta-digital",
    "type": "node",
-   "lines": 391,
+   "lines": 392,
    "cites": 23,
    "design": false
   },
@@ -68,6 +117,13 @@
    "type": "node",
    "lines": 218,
    "cites": 8,
+   "design": false
+  },
+  {
+   "id": "innovacion-evidencia",
+   "type": "node",
+   "lines": 329,
+   "cites": 55,
    "design": false
   },
   {
@@ -87,56 +143,70 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 357,
+   "lines": 358,
    "cites": 57,
    "design": false
   },
   {
    "id": "modelo-personas-sinteticas",
    "type": "node",
-   "lines": 80,
+   "lines": 81,
    "cites": 0,
    "design": false
   },
   {
    "id": "modelo-salud-ia-farmacias-peru",
    "type": "node",
-   "lines": 619,
-   "cites": 24,
+   "lines": 674,
+   "cites": 47,
    "design": false
   },
   {
    "id": "proyecto-back-to-basics-ffvv-vida",
    "type": "node",
-   "lines": 939,
-   "cites": 33,
+   "lines": 940,
+   "cites": 34,
+   "design": false
+  },
+  {
+   "id": "recomendaciones-acciones-2026",
+   "type": "node",
+   "lines": 72,
+   "cites": 10,
+   "design": false
+  },
+  {
+   "id": "rentabilidad-modelos-seguros",
+   "type": "node",
+   "lines": 86,
+   "cites": 19,
    "design": false
   },
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 342,
-   "cites": 21,
+   "lines": 353,
+   "cites": 26,
    "design": false
   },
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2215,
-   "cites": 373,
+   "lines": 1124,
+   "cites": 266,
    "design": true
   },
   {
    "id": "transicion-venta-fria-a-opt-in",
    "type": "node",
-   "lines": 326,
-   "cites": 18,
+   "lines": 415,
+   "cites": 31,
    "design": false
   },
   {
    "id": "venta-vida-digital-hibrida-latam",
    "type": "node",
-   "lines": 235,
+   "lines": 236,
    "cites": 8,
    "design": false
   },
@@ -177,7 +247,7 @@
    "titulo": "Estudio sobre Conocimiento y Percepción de la Demanda de Seguros",
    "autor": "SBS (Superintendencia de Banca, Seguros y AFP)",
    "anio": "2023",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-2",
@@ -186,7 +256,7 @@
    "titulo": "Global Insurance Market Trends 2025",
    "autor": "OECD",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-3",
@@ -204,7 +274,7 @@
    "titulo": "Customer Behavior and Loyalty in Insurance (Global Edition)",
    "autor": "Bain & Company",
    "anio": "2023",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-5",
@@ -213,7 +283,7 @@
    "titulo": "Solo el 3% de los hogares peruanos cuenta con seguro contra sismos y desastres",
    "autor": "Infobae (cita a APESEG)",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-6",
@@ -402,7 +472,7 @@
    "titulo": "Lessons from corporate behavioral-science units / Behavioral science in insurance",
    "autor": "Güntner, A.; Lucks, K.; Sperling-Magro, J. (ene-2019). Lessons from the front line of corporate nudging. McKinsey Quarterly. La ficha también menciona 'Behavioral science in insurance', un post distinto del blog de seguros de McKinsey. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'McKinsey & Company'",
    "anio": "2019-24",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-27",
@@ -420,7 +490,7 @@
    "titulo": "Embedded Insurance Market Report 2026",
    "autor": "Research and Markets",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-29",
@@ -438,7 +508,7 @@
    "titulo": "Hippo 'Off to a Fast Start' With Reversal of Q1 Loss a Year Ago",
    "autor": "Insurance Journal",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-31",
@@ -447,7 +517,7 @@
    "titulo": "Lemonade, Root earnings show insurtechs can scale",
    "autor": "Insurance Journal / eMarketer",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-32",
@@ -456,7 +526,7 @@
    "titulo": "Swiss Re delivers record Group net income of USD 4.8 billion in 2025 / Q1 2026 press release",
    "autor": "Swiss Re (27-feb-2026). Swiss Re delivers record Group net income of USD 4.8 billion in 2025 [comunicado FY2025]; y Swiss Re (7-may-2026). Swiss Re delivers a net income of USD 1.5 billion for the first quarter [comunicado Q1 2026]. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'Swiss Re'",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-33",
@@ -465,7 +535,7 @@
    "titulo": "Media release FY2025 results / 2026-2030 targets",
    "autor": "Munich Re",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-34",
@@ -474,7 +544,7 @@
    "titulo": "Big Four European reinsurers post record ROE in 2025, 2026 outlook weakens",
    "autor": "Intelligent Insurer",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-35",
@@ -771,7 +841,7 @@
    "titulo": "Ley N° 29733 — Ley de Protección de Datos Personales",
    "autor": "Congreso de la República del Perú",
    "anio": "2011",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-68",
@@ -780,7 +850,7 @@
    "titulo": "Nuevo reglamento de Protección de Datos Personales refuerza el consentimiento de usuarios para recibir llamadas publicitarias",
    "autor": "MINJUS (Ministerio de Justicia y DD.HH.) / ANPD",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-69",
@@ -789,7 +859,7 @@
    "titulo": "Ley N° 32323 — modifica el Código de Protección y Defensa del Consumidor para ampliar la prohibición de comunicaciones SPAM",
    "autor": "Congreso de la República del Perú",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-70",
@@ -798,7 +868,7 @@
    "titulo": "Indecopi exhorta a las empresas a cumplir con nueva ley que prohíbe llamadas spam y anuncia drásticas acciones por incumplimiento",
    "autor": "INDECOPI",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-71",
@@ -807,7 +877,7 @@
    "titulo": "Nuevo reglamento de datos busca acabar con llamadas spam pero experto alerta que las legalizaría",
    "autor": "Infobae",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-72",
@@ -816,7 +886,7 @@
    "titulo": "El consentimiento en el nuevo reglamento de Protección de Datos Personales",
    "autor": "Estudio Ugaz Zegarra (firma legal)",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-73",
@@ -825,7 +895,7 @@
    "titulo": "Registro \"Gracias... no insista\" quedó obsoleto",
    "autor": "ConNuestroPeru.com / PeruWeek (histórico del registro)",
    "anio": "2018",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-74",
@@ -834,7 +904,7 @@
    "titulo": "Guías de email marketing legal en Perú bajo Ley 29733",
    "autor": "Mailpro / Yumayus (agencias de marketing)",
    "anio": "s.f./2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-75",
@@ -843,7 +913,7 @@
    "titulo": "Estrategias de captación de clientes en farmacias (punto de venta, fidelización, redes sociales)",
    "autor": "Increnta / Asefarma (agencias de marketing farmacéutico)",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-76",
@@ -852,7 +922,7 @@
    "titulo": "Datos personales y el envío de publicidad sin consentimiento a través de las redes",
    "autor": "Manrique, M. & Proaño, G. (IUS360 / IUS ET VERITAS)",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-77",
@@ -861,7 +931,7 @@
    "titulo": "Data Protection in Peru: Overview",
    "autor": "Multilaw / Niubox Legal (guías comparadas de protección de datos)",
    "anio": "2023",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-78",
@@ -1356,7 +1426,7 @@
    "titulo": "Insurance Marketing Coalition Limited v. Federal Communications Commission",
    "autor": "US Court of Appeals, 11th Circuit",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-133",
@@ -1482,7 +1552,7 @@
    "titulo": "Designing for UX Trust: Security, Privacy & Transparency",
    "autor": "Think Design / MoldStud (blogs de diseño UX, compilación de estadísticas)",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-147",
@@ -1608,7 +1678,7 @@
    "titulo": "U.S. P/C Insurers Post Biggest Q1 Underwriting Profit in 25 Years",
    "autor": "AM Best (vía Carrier Management)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-161",
@@ -1617,7 +1687,7 @@
    "titulo": "P/C Insurance Market Profitability Improves in 2024; Expected to Continue in 2025 y 2026",
    "autor": "Triple-I & Milliman",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-162",
@@ -1626,7 +1696,7 @@
    "titulo": "Bibliometric review of telematics-based automobile insurance",
    "autor": "ScienceDirect (revisión bibliométrica, telemática UBI)",
    "anio": "2023",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-163",
@@ -1635,7 +1705,7 @@
    "titulo": "The Growth of Parametric Insurance",
    "autor": "Cappelletti, A. (Society of Actuaries)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-164",
@@ -1644,7 +1714,7 @@
    "titulo": "On the design of optimal parametric insurance (The Geneva Risk and Insurance Review)",
    "autor": "Louaas A, Picard P. On the design of optimal parametric insurance. Documento de trabajo HAL hal-04511811 (2024); según el preprint arXiv 2604.21372 que lo cita, publicado en The Geneva Risk and Insurance Review (2026), lo que no se confirmó en la página del editor. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Louaas, A. & Picard, P.'",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-165",
@@ -1653,7 +1723,7 @@
    "titulo": "Triggers paramétricos y reducción de costos de siniestros",
    "autor": "Swiss Re Institute (citado vía InsureTech Trends)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-166",
@@ -1662,7 +1732,7 @@
    "titulo": "UK insurers warned privacy concerns are stalling telematics pricing adoption",
    "autor": "Insurance Business Mag (UK)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-167",
@@ -1671,7 +1741,7 @@
    "titulo": "Telematics and Trust: How Usage-Based Insurance Is Transforming Auto Coverage",
    "autor": "Carrier Management",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-168",
@@ -1680,7 +1750,7 @@
    "titulo": "Lemonade backtracks AI comments after accusations of discrimination",
    "autor": "Forbes / Claims Journal (cobertura del hilo viral de Lemonade en Twitter)",
    "anio": "2021",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-169",
@@ -1689,7 +1759,7 @@
    "titulo": "US P&C industry sees decade-high performance in 2025",
    "autor": "AM Best (vía Reinsurance News)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-170",
@@ -1698,7 +1768,7 @@
    "titulo": "Global Insurance Report 2025: Searching for profitable growth in commercial lines",
    "autor": "McKinsey & Company",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-171",
@@ -1707,7 +1777,7 @@
    "titulo": "Commercial Insurance Market Performance Data: 2025 metrics",
    "autor": "Datos agregados de industria (AM Best/Verisk, vía Hotaling Insurance Services)",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-172",
@@ -2040,7 +2110,7 @@
    "titulo": "9 Best Stocks To Buy Now For July 2026 / Best Stocks to Buy Now for July 2026",
    "autor": "Forbes / Zacks",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-209",
@@ -2049,7 +2119,7 @@
    "titulo": "My Top Ranked Stock to Buy Right Now in July (2026) / Best Stocks to Buy Now: Our Picks for July 2026",
    "autor": "The Motley Fool",
    "anio": "2026-07-03",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-210",
@@ -2058,7 +2128,7 @@
    "titulo": "Trending Stocks — July 2026 / WallStreetBets Stocks — Most Mentioned Tickers",
    "autor": "AltIndex",
    "anio": "2026-07",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-211",
@@ -2067,7 +2137,7 @@
    "titulo": "Best Performing Stocks in July 2026 - Monthly Gainers",
    "autor": "StockTitan",
    "anio": "2026-07",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-212",
@@ -2076,7 +2146,7 @@
    "titulo": "'Yet another way in which 2026 is looking like 1999' / Investors grow increasingly concerned about AI valuations",
    "autor": "Fortune / eciks.org",
    "anio": "2026-06-08 y 2026-07",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-213",
@@ -2085,7 +2155,7 @@
    "titulo": "Acciones peruanas para invertir en la BVL: análisis y perspectivas 2026 / Las acciones más rentables de la BVL en el primer semestre 2026",
    "autor": "Rankia Perú / trii.pe",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-214",
@@ -2094,7 +2164,7 @@
    "titulo": "SAB LOCALES COMPARTEN SUS TOP PICKS PARA LA BVL EN EL 2026",
    "autor": "Borsista.com (compilación de casas de bolsa)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-215",
@@ -2103,7 +2173,7 @@
    "titulo": "Bolsa de Valores de Lima: Ganancias de empresas rompen marca histórica y estas 5 embolsan S/ 11,000 millones en tres meses",
    "autor": "Gestión.pe",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-216",
@@ -2112,7 +2182,7 @@
    "titulo": "El precio del cobre en perspectiva geopolítica",
    "autor": "UBS (citado en Rumbo Minero)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-217",
@@ -2121,7 +2191,7 @@
    "titulo": "Acciones con potencial para invertir en julio de 2026: análisis completo",
    "autor": "BCRP (citado en Rankia Perú)",
    "anio": "2026",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-218",
@@ -2130,7 +2200,7 @@
    "titulo": "Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis (Psychological Bulletin)",
    "autor": "Cepeda, N. J.; Pashler, H.; Vul, E.; Wixted, J. T.; Rohrer, D.",
    "anio": "2006",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-219",
@@ -3129,7 +3199,7 @@
    "titulo": "Tele-triage, care substitution, and health: Evidence from quasi-randomly assigned nurses (Journal of Health Economics)",
    "autor": "Autor no confirmado (bloqueo de acceso al PDF)",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-330",
@@ -3138,7 +3208,7 @@
    "titulo": "Medical advice lines offering on-demand access to providers reduced emergency department visits (Health Affairs Scholar 1(6))",
    "autor": "Tran, Rose, Suzuki, Urech, Vashi",
    "anio": "2023",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-331",
@@ -3147,7 +3217,7 @@
    "titulo": "Triaging and Referring In Adjacent General and Emergency Departments (TRIAGE trial)",
    "autor": "Morreel S, et al. Triaging and referring in adjacent general and emergency departments (the TRIAGE trial): A cluster randomised controlled trial. PLoS One. 2021 (nov). Universidad de Amberes, Bélgica. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Autores del TRIAGE trial'",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-332",
@@ -3156,7 +3226,7 @@
    "titulo": "Medical Mutual Nurse Triage Case Study",
    "autor": "Conduit Health Partners",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-333",
@@ -3165,7 +3235,7 @@
    "titulo": "Patient compliance with NHS 111 advice",
    "autor": "Lewis J, Stone T, Simpson R, Jacques R, O'Keeffe C, Croft S, Mason S. Patient compliance with NHS 111 advice: Analysis of adult call and ED attendance data 2013-2017. PLoS One. 2021;16(5):e0251362. DOI 10.1371/journal.pone.0251362 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Revisión rápida de evidencia, vía NCBI Bookshelf / PLOS One'",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-334",
@@ -3192,7 +3262,7 @@
    "titulo": "Exploring Trust in Health Insurers: Insights from Enrollees' Perceptions and Experiences (MDPI)",
    "autor": "van der Hulst, F.J.P.; Huijgen, S.; Brabers, A.E.M.; de Jong, J.D. (2025). Exploring Trust in Health Insurers: Insights from Enrollees' Perceptions and Experiences. Journal of Market Access & Health Policy (MDPI), 13(2), 29. Nivel. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'van der Hulst, F.J.P.; Huijgen, S.; Brabers, A.E.M.; de Jong, J.D.'",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-337",
@@ -3219,7 +3289,7 @@
    "titulo": "The Impact of Narrow and Tiered Networks on Costs, Access, Quality, and Patient Steering: A Systematic Review (Medical Care Research and Rev",
    "autor": "Mazurenko O, Taylor HL, Menachemi N. The Impact of Narrow and Tiered Networks on Costs, Access, Quality, and Patient Steering: A Systematic Review. Medical Care Research and Review. 2022;79(5):607-617. DOI 10.1177/10775587211055923 — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Mazurenko, O.; Taylor, E.; Menachemi, N.'",
    "anio": "2022",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-340",
@@ -3237,7 +3307,7 @@
    "titulo": "Estudio en Journal of Health Economics sobre disposición a pagar por continuidad y aversión a redes estrechas (PubMed 29940410)",
    "autor": "Higuera L, Carlin CS, Dowd B. Narrow provider networks and willingness to pay for continuity of care and network breadth. Journal of Health Economics. 2018;60:90-97. — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Autores no especificados en el resumen'",
    "anio": "2018",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-342",
@@ -3246,7 +3316,7 @@
    "titulo": "Encuesta de autorización previa (prior authorization) — pacientes, empleados de proveedores y de pagadores",
    "autor": "American Medical Association (AMA)",
    "anio": "2024-2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-343",
@@ -3255,7 +3325,7 @@
    "titulo": "Denegaciones algorítmicas de Cigna (300,000 reclamos en 2 meses, 1.2 seg/revisión, 90% de reversión en apelación) y regulación estatal (Cali",
    "autor": "AAPC / KFF / Bloomberg Law (múltiples piezas sobre el mismo caso)",
    "anio": "2025",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-344",
@@ -3264,7 +3334,7 @@
    "titulo": "Reacción social al asesinato del CEO de UnitedHealthcare (dic. 2024) — 62,000 reacciones en post de condolencias, 57,000 de risa",
    "autor": "CNN Business, NBC News, ABC7, NPR (cobertura convergente del mismo evento)",
    "anio": "2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-345",
@@ -3273,7 +3343,7 @@
    "titulo": "Anthem revierte política de límite de tiempo de anestesia tras presión (dic. 2024)",
    "autor": "NBC News, Healthcare Brew, oficinas de los senadores Hawley y Blumenthal",
    "anio": "2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-346",
@@ -3282,7 +3352,7 @@
    "titulo": "Política de \"ER evitable\" de Anthem — backlash y reversión",
    "autor": "NPR, AARP, Fierce Healthcare, Healthcare Dive (cobertura convergente, con eco de cita entre notas especializadas)",
    "anio": "2018-2019",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-347",
@@ -3291,7 +3361,7 @@
    "titulo": "Quejas recurrentes sobre 98point6: deriva a urgent care sin tratar, cobra copago igual",
    "autor": "Reviews de usuarios vía Trustpilot / App Store (agregadas por motor de búsqueda)",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-348",
@@ -3300,7 +3370,7 @@
    "titulo": "Quejas sobre Included Health/Doctor On Demand: negativa a recetar, publicidad de \"$0 visita\" con cobros posteriores",
    "autor": "Reviews de usuarios vía BBB / Trustpilot (agregadas por motor de búsqueda)",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-349",
@@ -3309,7 +3379,7 @@
    "titulo": "Investigación sobre EviCore (\"the dial\") — algoritmo ajustable de aseguradoras (Cigna, UnitedHealthcare, Aetna) para subir tasa de denegació",
    "autor": "ProPublica y The Capitol Forum (2024, 23-oct). \"Not Medically Necessary\": Inside the Company Helping America's Biggest Health Insurers Deny Coverage for Care. ProPublica. — ⚠️ datos bibliográficos verificados 2026-10-04 contra la fuente oficial (regla permanente); antes: 'ProPublica'",
    "anio": "2023-2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-350",
@@ -3318,7 +3388,7 @@
    "titulo": "Plan \"virtual-first\" de Priority Health — ~5,000 inscritos, 60% de encuestados calificó su satisfacción en 4.8/5",
    "autor": "KFF Health News, BusinessWire",
    "anio": "2020-2021",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-351",
@@ -3327,7 +3397,7 @@
    "titulo": "Formulario 10-K, año fiscal 2024 (SEC)",
    "autor": "Oscar Health",
    "anio": "2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-352",
@@ -3336,7 +3406,7 @@
    "titulo": "What Are The Potential Savings From Steering Patients To Lower-Priced Providers? A Static Analysis (American Journal of Managed Care)",
    "autor": "Desai S, Hatfield LA, Hicks AL, Chernew ME, Mehrotra A. What Are the Potential Savings From Steering Patients to Lower-Priced Providers? A Static Analysis. American Journal of Managed Care. 2019;25(7). — ⚠️ datos bibliográficos verificados 2026-10-04 contra el resumen oficial (regla permanente); antes: 'Desai, S.; Hatfield, L.A.; Hicks, A.L.; Chernew, M.E.; Mehrotra, A. (Harvard Medical School)'",
    "anio": "2019",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-353",
@@ -3354,7 +3424,7 @@
    "titulo": "How a remote nurse-first triage model reduces benefits spend for employers (sistema de salud del Medio Oeste EE.UU. anonimizado, 35,000 vida",
    "autor": "Patient Safety & Quality Healthcare (PSQH), artículo patrocinado por vendor de nurse-triage",
    "anio": "s.f.",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-355",
@@ -3363,7 +3433,7 @@
    "titulo": "Patient and Parent Experience with Pediatric Care Providers During the COVID-19 Pandemic: A Comparison of Press Ganey Survey Scores for Tele",
    "autor": "Gotthardt, C.J.; Haynes, S.C.; Murphy, R.K.; Marcin, P.",
    "anio": "2024",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-356",
@@ -3390,7 +3460,7 @@
    "titulo": "Colapso financiero de Babylon Health — pérdidas de $212-274M en 2022, no renovación de contrato con Centene (~50% del revenue), quiebra Cap.",
    "autor": "TechCrunch, Hospitalogy, Healthcare Dive (cobertura convergente)",
    "anio": "2023",
-   "huerfana": true
+   "huerfana": false
   },
   {
    "id": "F-359",
@@ -9025,6 +9095,690 @@
    "autor": "Friend, R.; Rafferty, Y.; Bramel, D.",
    "anio": "1990",
    "huerfana": false
+  },
+  {
+   "id": "F-986",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Total Economic Impact of IBM's Design Thinking Practice",
+   "autor": "Forrester Consulting (encargado por IBM)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-987",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Design centrality and innovation (título exacto no verificado) (Industrial and Corporate Change, 29(2):351-374)",
+   "autor": "Montresor, S.; Vezzani, A.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-988",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A scientific approach to entrepreneurial decision making: Evidence from a randomized control trial (Management Science, 66(2); páginas no ve",
+   "autor": "Camuffo, A.; Cordova, A.; Gambardella, A.; Spina, C.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-989",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Developing managerial dynamic capabilities: A quasi-experimental field study of the effects of design thinking training (Academy of Manageme",
+   "autor": "Kurtmollaiev, S.; Pedersen, P. E.; Fjuk, A.; Kvale, K.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-990",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Framing Design Thinking: The Concept in Idea and Enactment (Creativity and Innovation Management, 25(1):38-57)",
+   "autor": "Carlgren, L.; Rauth, I.; Elmquist, M.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-991",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Design investment, innovation and productivity (título exacto no verificado; ERC Insight Paper)",
+   "autor": "Roper, S. (Enterprise Research Centre, con apoyo del Design Council)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-992",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Design giant Ideo cuts a third of staff and closes offices as the era of design thinking ends",
+   "autor": "Wilson, M. (Fast Company)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-993",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Design Thinking is Kind of Like Syphilis — It's Contagious and Rots Your Brains (Medium; republicado 2018 como \"The Design Thinking Movement",
+   "autor": "Vinsel, L.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-994",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "What do the big tech layoffs mean for designers?",
+   "autor": "Fast Company (autor no verificado); cita UX Collective \"State of UX 2024\"",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-995",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Customer experience helps life insurers generate higher returns",
+   "autor": "eMarketer (resumen de investigación de McKinsey; autor no verificado)",
+   "anio": "no verificado",
+   "huerfana": false
+  },
+  {
+   "id": "F-996",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Tesis de maestría sobre equipos de diseño estratégico en Perú (título exacto no verificado)",
+   "autor": "Pérez Quintana (nombre completo no verificado), Universidad de Palermo",
+   "anio": "no verificado",
+   "huerfana": false
+  },
+  {
+   "id": "F-997",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The impact of industrial design effectiveness on corporate financial performance (revista no verificada; citada como Journal of Product Inno",
+   "autor": "Hertenstein, J. H.; Platt, M. B.; Veryzer, R. W.",
+   "anio": "2005",
+   "huerfana": false
+  },
+  {
+   "id": "F-998",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Design Economy (datos de 2023)",
+   "autor": "Design Council (Reino Unido)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-999",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The safety effects of child-resistant packaging for oral prescription drugs. Two decades of experience (JAMA; volumen y páginas no verificad",
+   "autor": "Rodgers, G. B.",
+   "anio": "1996",
+   "huerfana": false
+  },
+  {
+   "id": "F-1000",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Análisis de regresión de mortalidad infantil por aspirina 1958-1990 y empaque a prueba de niños",
+   "autor": "No verificado (artículo en JAMA Pediatrics / Arch Pediatr Adolesc Med)",
+   "anio": "no verificado",
+   "huerfana": false
+  },
+  {
+   "id": "F-1001",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Workplace interventions for reducing sitting at work (Cochrane Database of Systematic Reviews, CD010912.pub5)",
+   "autor": "Shrestha, N. et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-1002",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Ergonomic interventions for preventing work-related musculoskeletal disorders of the upper limb and neck among office workers (Cochrane Data",
+   "autor": "Hoe, V. C. W. et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-1003",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Use of recalled devices in new device authorizations under the US FDA 510(k) pathway (JAMA, 329(2):136-143; título no verificado textualment",
+   "autor": "Kadakia, K. et al. (lista completa de autores no verificada)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-1004",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Australian adult smokers' responses to plain packaging with larger graphic health warnings 1 year after implementation (Tobacco Control, 24:",
+   "autor": "Wakefield, M. et al.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-1005",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "An evaluation of Chile's Law of Food Labeling and Advertising on sugar-sweetened beverage purchases (PLOS Medicine; título no verificado tex",
+   "autor": "Taillie, L. S. et al.",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-1006",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Reformulation of top-selling processed and ultra-processed foods and beverages in the Peruvian food supply after front-of-package warning la",
+   "autor": "Saavedra-Garcia, L. et al.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-1007",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Evaluating nutrient profiles of packaged foods in Peru pre- and post-introduction of front-of-pack warning labels, 2018-2021 (Romanian Journ",
+   "autor": "Mamani-Urrutia, V.; Durán, R.; Bustamante-López, A.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-1008",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Alimentación y vida saludable (encuesta en Lima)",
+   "autor": "Ipsos Perú",
+   "anio": "no verificado",
+   "huerfana": false
+  },
+  {
+   "id": "F-1009",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Estudio de LeakBot sobre siniestros de daño por agua (comunicado bursátil)",
+   "autor": "Ondo InsurTech (estudio con Consumer Intelligence)",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-1010",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Humane's AI Pin is dead, as HP buys startup's assets for $116M",
+   "autor": "TechCrunch",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-1011",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "View through a window may influence recovery from surgery (Science, 224(4647):420-421)",
+   "autor": "Ulrich, R. S.",
+   "anio": "1984",
+   "huerfana": false
+  },
+  {
+   "id": "F-1012",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The impact of the 'open' workspace on human collaboration (Philosophical Transactions of the Royal Society B; volumen no visto)",
+   "autor": "Bernstein, E. S.; Turban, S.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-1013",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Relationship between hospital ward design and healthcare associated infection rates: what does the evidence really tell us? Comment on Still",
+   "autor": "Wilson; Dunnett; Loveday (iniciales no verificadas)",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-1014",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Citywide cluster randomized trial to restore blighted vacant land and its effects on violence, crime, and fear (PNAS)",
+   "autor": "Branas, C. C.; South, E.; Kondo, M. C.; et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-1015",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Effect of greening vacant land on mental health of community-dwelling adults: a cluster randomized trial (JAMA Network Open, 1(3):e180298)",
+   "autor": "South, E. C.; Hohl, B. C.; Kondo, M. C.; MacDonald, J. M.; Branas, C. C.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-1016",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Effect of remediating blighted vacant land on shootings: a citywide cluster randomized trial (American Journal of Public Health)",
+   "autor": "Moyer, R.; MacDonald, J. M.; Ridgeway, G.; Branas, C. C.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-1017",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Reducing violence by transforming neighborhoods: a natural experiment in Medellín, Colombia (American Journal of Epidemiology, 175(10):1045-",
+   "autor": "Cerdá, M.; Morenoff, J. D.; Hansen, B. B.; Tessari Hicks, K. J.; Duque, L. F.; Restrepo, A.; Diez-Roux, A. V.",
+   "anio": "2012",
+   "huerfana": false
+  },
+  {
+   "id": "F-1018",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "COGfx Study: indoor air quality and cognitive function (página del programa; paper en Environmental Health Perspectives no verificado direct",
+   "autor": "Harvard T.H. Chan School of Public Health, Healthy Buildings Program (Allen, J. G., líder)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-1019",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Calibrating 30 years of experimental research: a meta-analysis of the atmospheric effects of music, scent, and color (Journal of Retailing, ",
+   "autor": "Roschk, H.; Loureiro, S. M. C.; Breitsohl, J.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-1020",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Are credit markets still local? Evidence from bank branch closings (American Economic Journal: Applied Economics, 11(1):1-32)",
+   "autor": "Nguyen, H.-L. Q.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-1021",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Halo Effect III: Where the Halo Shines (informe de gremio)",
+   "autor": "ICSC (estudio 2018 realizado por Alexander Babbage)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-1022",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "How '15-minute cities' turned into an international conspiracy theory (nota de prensa)",
+   "autor": "CNN (vía KTVZ)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-1023",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Mariana Alegre: Tenemos un problema con la concepción del espacio público y el valor que le damos (entrevista)",
+   "autor": "Actualidad Ambiental (entrevista a Mariana Alegre, Lima Cómo Vamos)",
+   "anio": "no verificado",
+   "huerfana": false
+  },
+  {
+   "id": "F-1024",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "2024 U.S. Retail Banking Satisfaction Study (nota de prensa)",
+   "autor": "J.D. Power",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1025",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Banca cambia de estrategia: quiere menos agencias y más agentes corresponsales (nota de prensa, citando a la SBS)",
+   "autor": "Gestión",
+   "anio": "no verificado",
+   "huerfana": false
+  },
+  {
+   "id": "F-1026",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Reglamento (UE) 2024/1781 de ecodiseño para productos sostenibles (ESPR)",
+   "autor": "Unión Europea (Parlamento y Consejo); leído vía resumen del Gobierno de Irlanda y circular de Hong Kong",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1027",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Directiva (UE) 2024/1799 sobre reparación de bienes (\"derecho a reparar\")",
+   "autor": "Unión Europea; leído vía análisis de Bird & Bird",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1028",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Circular Economy Rebound (Journal of Industrial Ecology, 21(3):593-602)",
+   "autor": "Zink, T.; Geyer, R.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-1029",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Does the Circular Economy Grow the Pie? The Case of Rebound Effects From Smartphone Reuse (Frontiers in Energy Research, 6:39)",
+   "autor": "Makov, T.; Font Vivanco, D.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-1030",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Segunda Hoja de Ruta de Economía Circular de la Industria Manufacturera y el Comercio Interno al 2030",
+   "autor": "Ministerio de la Producción del Perú; leído vía nota de EFE (ABC Color)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-1031",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Circularity Gap Report 2025",
+   "autor": "Circle Economy; Deloitte",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-1032",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Ecodesign Impact Accounting Report 2021",
+   "autor": "Comisión Europea (DG Energía)",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-1033",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Estudio/inventario de afirmaciones ambientales en la UE (base de la propuesta de Green Claims 2023)",
+   "autor": "Comisión Europea",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-1034",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Coolproducts don't cost the Earth",
+   "autor": "Zuloaga, F.; Schweitzer, J.-P.; Anastasio, M.; Arditi, S. (European Environmental Bureau)",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-1035",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Evaluación del índice de reparabilidad francés al año de su lanzamiento",
+   "autor": "HOP (Halte à l'Obsolescence Programmée); leído vía The Recycler",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-1036",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "A World in Balance 2024",
+   "autor": "Capgemini Research Institute",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1037",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Sustainable Apparel Coalition pausa el programa Higg de cara al consumidor tras el informe de la autoridad noruega",
+   "autor": "FashionUnited / Business of Fashion (sobre la Autoridad de Consumo de Noruega e investigación de Quartz)",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-1038",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Sweden's Renewcell bankruptcy and the circular economy in fashion",
+   "autor": "Fortune (con datos de Bloomberg)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1039",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Solera Launches Global Circularity Consortium",
+   "autor": "Insurance Edge (sobre Solera); Guidewire (sobre Allianz Center for Technology)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-1040",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Estudio de modelación macroeconómica de la economía circular en la Alianza del Pacífico (Chile, Colombia, México, Perú)",
+   "autor": "CEPAL",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-1041",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Co-designing care for multimorbidity: a systematic review (BMC Medicine)",
+   "autor": "Sumner J, Ng CWT, Teo KEL, Peh ALT, Lim YW",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1042",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The effectiveness of community engagement in public health interventions for disadvantaged groups: a meta-analysis (BMC Public Health, 15:12",
+   "autor": "O'Mara-Eves A et al.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-1043",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Effects of Participatory Budgeting on Municipal Expenditures and Infant Mortality in Brazil (World Development, 53:94-110)",
+   "autor": "Gonçalves S",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-1044",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Improving Social Well-Being Through New Democratic Institutions (Comparative Political Studies; volumen no verificado; título no verificado,",
+   "autor": "Touchton M, Wampler B",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-1045",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Corporate foresight and its impact on firm performance: A longitudinal analysis (Technological Forecasting & Social Change, 129:105-116)",
+   "autor": "Rohrbeck R, Etingue Kum M",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-1046",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Participation is not a Design Fix for Machine Learning (EAAMO 2022; preprint arXiv 2020)",
+   "autor": "Sloane M, Moss E, Awomolo O, Forlano L",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-1047",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The Participatory Turn in AI Design: Theoretical Foundations and the Current State of Practice (arXiv 2310.00907)",
+   "autor": "Delgado F, Yang S, Madaio M, Yang Q",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-1048",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Revisión de alcance sobre la calidad del diseño especulativo, la ficción de diseño y el diseño crítico (título exacto y revista no verificad",
+   "autor": "Ringfort-Felner R et al.",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-1049",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Community research (informe de sesión, NCRM)",
+   "autor": "National Centre for Research Methods (Reino Unido)",
+   "anio": "no verificado",
+   "huerfana": false
+  },
+  {
+   "id": "F-1050",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Design Thinking is Kind of Like Syphilis — It's Contagious and Rots Your Brains (Medium)",
+   "autor": "Vinsel L",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-1051",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "The Strategic Foresight System of the Government of Flanders, Belgium",
+   "autor": "OCDE",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1052",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Estudio de evaluación del Índice de Innovación Pública (nota de prensa del Ministerio de Hacienda; año inferido del resumen de la CEPAL)",
+   "autor": "Laboratorio de Gobierno de Chile, CEPAL/ILPES",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-1053",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "A Tu Lado MAPFRE: microseguros para emprendedores en Perú (comunicado corporativo)",
+   "autor": "MAPFRE",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-1054",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Ganancias bajan en la mitad de las compañías de seguros: ¿cuánto gana la suya?",
+   "autor": "Gestión (con datos de la SBS)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-1055",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Reconstrucción: exposición ante la Comisión Especial del Congreso (22 set. 2017)",
+   "autor": "de la Flor, P. (Autoridad para la Reconstrucción con Cambios)",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-1056",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Conoce los peligros de la automedicación",
+   "autor": "El Búho (cita a INEI, ENSUSALUD 2015)",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-1057",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Henkel investor factsheet (agosto 2018)",
+   "autor": "Henkel AG",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-1058",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Prism 2006 (entrevista a Lehner)",
+   "autor": "Arthur D. Little (entrevista a Ulrich Lehner, CEO de Henkel)",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-1059",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "\"That's AI Slop, You Bot!\" (arXiv 2606.12073)",
+   "autor": "Miklian, J.; Katsos, J. E.",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-1060",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "AI polling firm admits flaws in US election predictions",
+   "autor": "CO/AI y Semafor",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-1061",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Leaving Insight to Digital Twins? Promise, Progress and Limits of Synthetic Respondents (año no verificado)",
+   "autor": "NIM (Nuremberg Institute for Market Decisions)",
+   "anio": "2025",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -9042,6 +9796,24 @@
   },
   {
    "s": "behavioral-design-estado-disciplina",
+   "t": "diseno-estrategico-organizacional",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "diseno-producto-fisico-industrial",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "diseno-servicios-politicas-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
    "t": "fenomenos-psicologicos",
    "k": "wikilink",
    "recip": true
@@ -9067,6 +9839,12 @@
   {
    "s": "behavioral-design-estado-disciplina",
    "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "rentabilidad-modelos-seguros",
    "k": "wikilink",
    "recip": true
   },
@@ -9114,6 +9892,12 @@
   },
   {
    "s": "conducta-humano-ia",
+   "t": "diseno-producto-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
    "k": "wikilink",
    "recip": true
@@ -9139,6 +9923,12 @@
   {
    "s": "conducta-humano-ia",
    "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "conducta-humano-ia",
+   "t": "rentabilidad-modelos-seguros",
    "k": "wikilink",
    "recip": true
   },
@@ -9216,12 +10006,192 @@
   },
   {
    "s": "convergencia-psicologia-economia-ia",
+   "t": "recomendaciones-acciones-2026",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "rentabilidad-modelos-seguros",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
   },
   {
    "s": "convergencia-psicologia-economia-ia",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "diseno-sostenibilidad-circularidad",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "fenomeno-el-nino-impacto-personas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "venta-vida-digital-hibrida-latam",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "innovacion-evidencia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "diseno-servicios-politicas-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "rentabilidad-modelos-seguros",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "diseno-sostenibilidad-circularidad",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
+   "t": "diseno-producto-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
+   "t": "diseno-social-participativo",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
+   "t": "modelo-salud-ia-farmacias-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "diseno-servicios-politicas-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "modelo-salud-ia-farmacias-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "diseno-espacios-ciudad",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "diseno-producto-fisico-industrial",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "fenomeno-el-nino-impacto-personas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
    "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
@@ -9252,6 +10222,18 @@
   },
   {
    "s": "fenomeno-el-nino-impacto-personas",
+   "t": "diseno-espacios-ciudad",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "diseno-sostenibilidad-circularidad",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
    "t": "modelo-personas-sinteticas",
    "k": "wikilink",
    "recip": true
@@ -9259,6 +10241,12 @@
   {
    "s": "fenomeno-el-nino-impacto-personas",
    "t": "modelo-salud-ia-farmacias-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "rentabilidad-modelos-seguros",
    "k": "wikilink",
    "recip": true
   },
@@ -9312,6 +10300,12 @@
   },
   {
    "s": "fenomenos-psicologicos",
+   "t": "recomendaciones-acciones-2026",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -9343,6 +10337,12 @@
   {
    "s": "futuro-asesores-seguros-venta-digital",
    "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "futuro-asesores-seguros-venta-digital",
+   "t": "rentabilidad-modelos-seguros",
    "k": "wikilink",
    "recip": true
   },
@@ -9432,6 +10432,18 @@
   },
   {
    "s": "glosario-seguro-vida-peru",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "diseno-estrategico-organizacional",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "innovacion-evidencia",
    "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
@@ -9564,6 +10576,12 @@
   },
   {
    "s": "mecanismos-seguros-salud",
+   "t": "rentabilidad-modelos-seguros",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -9600,6 +10618,12 @@
   },
   {
    "s": "modelo-personas-sinteticas",
+   "t": "rentabilidad-modelos-seguros",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-personas-sinteticas",
    "t": "seguros-comportamiento-mundo-peru",
    "k": "wikilink",
    "recip": true
@@ -9607,6 +10631,18 @@
   {
    "s": "modelo-personas-sinteticas",
    "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "diseno-servicios-politicas-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "diseno-social-participativo",
    "k": "wikilink",
    "recip": true
   },
@@ -9655,6 +10691,12 @@
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "diseno-producto-digital",
    "k": "wikilink",
    "recip": true
   },
@@ -9725,6 +10767,78 @@
    "recip": true
   },
   {
+   "s": "recomendaciones-acciones-2026",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "conducta-humano-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "diseno-producto-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "fenomeno-el-nino-impacto-personas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "futuro-asesores-seguros-venta-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "mecanismos-seguros-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "modelo-personas-sinteticas",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "behavioral-design-estado-disciplina",
    "k": "wikilink",
@@ -9739,6 +10853,12 @@
   {
    "s": "seguros-comportamiento-mundo-peru",
    "t": "convergencia-psicologia-economia-ia",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "diseno-producto-fisico-industrial",
    "k": "wikilink",
    "recip": true
   },
@@ -9810,6 +10930,18 @@
   },
   {
    "s": "seguros-comportamiento-mundo-peru",
+   "t": "recomendaciones-acciones-2026",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "rentabilidad-modelos-seguros",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
    "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
@@ -9846,6 +10978,48 @@
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "diseno-espacios-ciudad",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "diseno-estrategico-organizacional",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "diseno-producto-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "diseno-producto-fisico-industrial",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "diseno-servicios-politicas-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "diseno-social-participativo",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "diseno-sostenibilidad-circularidad",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
    "k": "wikilink",
    "recip": true
@@ -9871,6 +11045,12 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "glosario-seguro-vida-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "innovacion-evidencia",
    "k": "wikilink",
    "recip": true
   },
@@ -9949,6 +11129,12 @@
   {
    "s": "transicion-venta-fria-a-opt-in",
    "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "venta-vida-digital-hibrida-latam",
+   "t": "diseno-espacios-ciudad",
    "k": "wikilink",
    "recip": true
   },
@@ -10037,6 +11223,16 @@
    "k": "deriva"
   },
   {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-1",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-2",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-3",
    "k": "cita"
@@ -10049,6 +11245,16 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-3",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-4",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-5",
    "k": "cita"
   },
   {
@@ -10162,6 +11368,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-16",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-16",
    "k": "cita"
@@ -10183,6 +11394,16 @@
   },
   {
    "s": "convergencia-psicologia-economia-ia",
+   "t": "F-17",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-17",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-17",
    "k": "cita"
   },
@@ -10263,6 +11484,16 @@
   },
   {
    "s": "convergencia-psicologia-economia-ia",
+   "t": "F-21",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-21",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-21",
    "k": "cita"
   },
@@ -10307,18 +11538,23 @@
    "k": "cita"
   },
   {
-   "s": "fenomenos-psicologicos",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-24",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "fenomenos-psicologicos",
    "t": "F-24",
    "k": "cita"
   },
   {
    "s": "convergencia-psicologia-economia-ia",
    "t": "F-25",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-26",
    "k": "cita"
   },
   {
@@ -10337,6 +11573,11 @@
    "k": "cita"
   },
   {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-28",
+   "k": "cita"
+  },
+  {
    "s": "convergencia-psicologia-economia-ia",
    "t": "F-29",
    "k": "cita"
@@ -10344,6 +11585,31 @@
   {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-29",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-30",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-31",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-32",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-33",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-34",
    "k": "cita"
   },
   {
@@ -10464,6 +11730,61 @@
   {
    "s": "modelo-salud-ia-farmacias-peru",
    "t": "F-66",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-67",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-68",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-69",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-70",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-71",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-72",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-73",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-74",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-75",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-76",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-77",
    "k": "cita"
   },
   {
@@ -10748,6 +12069,11 @@
   },
   {
    "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-132",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
    "t": "F-133",
    "k": "cita"
   },
@@ -10834,6 +12160,11 @@
   {
    "s": "transicion-venta-fria-a-opt-in",
    "t": "F-145",
+   "k": "cita"
+  },
+  {
+   "s": "transicion-venta-fria-a-opt-in",
+   "t": "F-146",
    "k": "cita"
   },
   {
@@ -10934,6 +12265,66 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-159",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-160",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-161",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-162",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-163",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-164",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-165",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-166",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-167",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-168",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-169",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-170",
+   "k": "cita"
+  },
+  {
+   "s": "rentabilidad-modelos-seguros",
+   "t": "F-171",
    "k": "cita"
   },
   {
@@ -11137,6 +12528,61 @@
    "k": "cita"
   },
   {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-208",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-209",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-210",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-211",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-212",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-213",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-214",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-215",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-216",
+   "k": "cita"
+  },
+  {
+   "s": "recomendaciones-acciones-2026",
+   "t": "F-217",
+   "k": "cita"
+  },
+  {
+   "s": "proyecto-back-to-basics-ffvv-vida",
+   "t": "F-218",
+   "k": "cita"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-219",
    "k": "cita"
@@ -11317,8 +12763,18 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-238",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-238",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-239",
    "k": "cita"
   },
   {
@@ -11387,6 +12843,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-247",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-247",
    "k": "cita"
@@ -11394,6 +12855,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-248",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-249",
    "k": "cita"
   },
   {
@@ -11409,6 +12875,16 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-251",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-252",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
+   "t": "F-252",
    "k": "cita"
   },
   {
@@ -11457,6 +12933,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-259",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-259",
    "k": "cita"
@@ -11487,8 +12968,33 @@
    "k": "cita"
   },
   {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-266",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-266",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-266",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-266",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-267",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-267",
    "k": "cita"
   },
   {
@@ -11497,8 +13003,23 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-268",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-268",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-268",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-269",
    "k": "cita"
   },
   {
@@ -11512,13 +13033,33 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-271",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
    "t": "F-271",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-271",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
    "t": "F-272",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-272",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-274",
    "k": "cita"
   },
   {
@@ -11532,8 +13073,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-social-participativo",
+   "t": "F-276",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-276",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-277",
    "k": "cita"
   },
   {
@@ -11552,6 +13103,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-280",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-280",
    "k": "cita"
@@ -11559,6 +13115,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-281",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-282",
    "k": "cita"
   },
   {
@@ -11652,6 +13213,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-301",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-301",
    "k": "cita"
@@ -11727,8 +13293,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-servicios-politicas-salud",
+   "t": "F-317",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-317",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-318",
    "k": "cita"
   },
   {
@@ -11782,6 +13358,31 @@
    "k": "cita"
   },
   {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-329",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-330",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-331",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-332",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-333",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-334",
    "k": "cita"
@@ -11789,6 +13390,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-335",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-336",
    "k": "cita"
   },
   {
@@ -11802,23 +13408,103 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-339",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-340",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-341",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-342",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-343",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-344",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-345",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-346",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-347",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-348",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-349",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-350",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-351",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-352",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-353",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-354",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-355",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-356",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-357",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-358",
    "k": "cita"
   },
   {
@@ -11927,6 +13613,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-380",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-380",
    "k": "cita"
@@ -11937,8 +13628,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-381",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-381",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-382",
    "k": "cita"
   },
   {
@@ -11947,8 +13648,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-383",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-383",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-384",
    "k": "cita"
   },
   {
@@ -11957,8 +13668,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-385",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-385",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-386",
    "k": "cita"
   },
   {
@@ -11967,8 +13688,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-387",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-387",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-388",
    "k": "cita"
   },
   {
@@ -11977,13 +13708,28 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-389",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-389",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
    "t": "F-390",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-390",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-391",
    "k": "cita"
   },
   {
@@ -11997,8 +13743,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-393",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-393",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-394",
    "k": "cita"
   },
   {
@@ -12007,8 +13763,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-395",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-395",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-396",
    "k": "cita"
   },
   {
@@ -12017,8 +13783,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-397",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-397",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-398",
    "k": "cita"
   },
   {
@@ -12027,8 +13803,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-399",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-399",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-400",
    "k": "cita"
   },
   {
@@ -12042,8 +13828,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-401",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-401",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-402",
    "k": "cita"
   },
   {
@@ -12052,8 +13848,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-403",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-403",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-404",
    "k": "cita"
   },
   {
@@ -12062,13 +13868,28 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-405",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-405",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
    "t": "F-406",
+   "k": "cita"
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "F-406",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-407",
    "k": "cita"
   },
   {
@@ -12082,8 +13903,13 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-410",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-411",
    "k": "cita"
   },
   {
@@ -12092,8 +13918,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-412",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-412",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-414",
    "k": "cita"
   },
   {
@@ -12102,8 +13938,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-415",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-415",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-416",
    "k": "cita"
   },
   {
@@ -12112,8 +13958,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-417",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-417",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-418",
    "k": "cita"
   },
   {
@@ -12122,18 +13978,28 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-419",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-419",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
    "t": "F-420",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-421",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-422",
    "k": "cita"
   },
   {
@@ -12142,13 +14008,23 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-423",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-423",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
    "t": "F-424",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-425",
    "k": "cita"
   },
   {
@@ -12157,13 +14033,23 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-426",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-427",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-428",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-428",
    "k": "cita"
   },
   {
@@ -12172,8 +14058,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-429",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-429",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-430",
    "k": "cita"
   },
   {
@@ -12182,8 +14078,18 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-431",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-431",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-432",
    "k": "cita"
   },
   {
@@ -12192,8 +14098,18 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-433",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-433",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-434",
    "k": "cita"
   },
   {
@@ -12202,8 +14118,18 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-435",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-435",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-436",
    "k": "cita"
   },
   {
@@ -12212,8 +14138,18 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-437",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-437",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-438",
    "k": "cita"
   },
   {
@@ -12222,8 +14158,18 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-439",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-439",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-440",
    "k": "cita"
   },
   {
@@ -12232,12 +14178,22 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-441",
    "k": "cita"
   },
   {
    "s": "conducta-humano-ia",
+   "t": "F-442",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-442",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
    "t": "F-442",
    "k": "cita"
   },
@@ -12252,8 +14208,18 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-443",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-444",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-444",
    "k": "cita"
   },
   {
@@ -12262,8 +14228,18 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-445",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-445",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-446",
    "k": "cita"
   },
   {
@@ -12282,6 +14258,11 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-449",
+   "k": "cita"
+  },
+  {
    "s": "mecanismos-seguros-salud",
    "t": "F-449",
    "k": "cita"
@@ -12289,6 +14270,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-449",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-450",
    "k": "cita"
   },
   {
@@ -12302,13 +14288,18 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-451",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-452",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-453",
    "k": "cita"
   },
   {
@@ -12317,13 +14308,28 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
+   "t": "F-454",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
    "t": "F-454",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-454",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
    "t": "F-455",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-456",
    "k": "cita"
   },
   {
@@ -12337,8 +14343,13 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-458",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-459",
    "k": "cita"
   },
   {
@@ -12347,23 +14358,38 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
+   "t": "F-460",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
    "t": "F-460",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-460",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
    "t": "F-461",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-462",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-463",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-464",
    "k": "cita"
   },
   {
@@ -12372,8 +14398,18 @@
    "k": "cita"
   },
   {
+   "s": "innovacion-evidencia",
+   "t": "F-465",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-465",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-466",
    "k": "cita"
   },
   {
@@ -12382,7 +14418,7 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-467",
    "k": "cita"
   },
@@ -12392,8 +14428,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-469",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-469",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-470",
    "k": "cita"
   },
   {
@@ -12402,8 +14448,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-471",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-471",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-472",
    "k": "cita"
   },
   {
@@ -12412,7 +14468,7 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-473",
    "k": "cita"
   },
@@ -12422,13 +14478,23 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-474",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-475",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-475",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-476",
    "k": "cita"
   },
   {
@@ -12449,6 +14515,11 @@
   {
    "s": "mecanismos-seguros-salud",
    "t": "F-480",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-481",
    "k": "cita"
   },
   {
@@ -12587,6 +14658,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-498",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-498",
    "k": "cita"
@@ -12667,6 +14743,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-509",
+   "k": "cita"
+  },
+  {
    "s": "mecanismos-seguros-salud",
    "t": "F-509",
    "k": "cita"
@@ -12674,6 +14755,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-509",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-510",
    "k": "cita"
   },
   {
@@ -12712,6 +14798,16 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-516",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-516",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-516",
    "k": "cita"
@@ -12727,8 +14823,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-519",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-519",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-520",
    "k": "cita"
   },
   {
@@ -12749,6 +14855,11 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "F-523",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-524",
    "k": "cita"
   },
   {
@@ -12777,8 +14888,23 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-529",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-529",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-529",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-530",
    "k": "cita"
   },
   {
@@ -12787,8 +14913,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-531",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-531",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-532",
    "k": "cita"
   },
   {
@@ -12797,8 +14933,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-533",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-533",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-534",
    "k": "cita"
   },
   {
@@ -12807,8 +14953,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-535",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-535",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-536",
    "k": "cita"
   },
   {
@@ -12817,8 +14973,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-537",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-537",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-538",
    "k": "cita"
   },
   {
@@ -12832,8 +14998,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-540",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-540",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-541",
    "k": "cita"
   },
   {
@@ -14167,12 +16343,12 @@
    "k": "cita"
   },
   {
-   "s": "fenomeno-el-nino-impacto-personas",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-791",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "fenomeno-el-nino-impacto-personas",
    "t": "F-791",
    "k": "cita"
   },
@@ -14202,12 +16378,12 @@
    "k": "cita"
   },
   {
-   "s": "fenomeno-el-nino-impacto-personas",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-799",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "fenomeno-el-nino-impacto-personas",
    "t": "F-799",
    "k": "cita"
   },
@@ -14627,6 +16803,11 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-876",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-876",
    "k": "cita"
@@ -14652,8 +16833,18 @@
    "k": "cita"
   },
   {
+   "s": "diseno-producto-digital",
+   "t": "F-880",
+   "k": "cita"
+  },
+  {
    "s": "tendencias-diseno-innovacion",
    "t": "F-880",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-881",
    "k": "cita"
   },
   {
@@ -14662,138 +16853,148 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-882",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-883",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-884",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-885",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-886",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-887",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-888",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
+   "t": "F-888",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
    "t": "F-889",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-890",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-891",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-892",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-893",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-894",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-895",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-896",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-897",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-898",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-899",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-900",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-901",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-902",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-903",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-904",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-905",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-906",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-907",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-908",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-909",
    "k": "cita"
   },
   {
@@ -14802,128 +17003,138 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-910",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-910",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
    "t": "F-911",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-912",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-913",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-914",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-915",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-916",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-917",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-918",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-919",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-920",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-921",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-922",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-923",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-924",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-925",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-926",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-927",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-928",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-929",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-930",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-931",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-932",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-933",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-producto-digital",
    "t": "F-934",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-935",
    "k": "cita"
   },
   {
@@ -14932,23 +17143,33 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-936",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-936",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
    "t": "F-937",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-938",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "innovacion-evidencia",
    "t": "F-939",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-940",
    "k": "cita"
   },
   {
@@ -14992,12 +17213,17 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-947",
    "k": "cita"
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "F-947",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-948",
    "k": "cita"
   },
@@ -15007,32 +17233,32 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-949",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-950",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-951",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-952",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-953",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-954",
    "k": "cita"
   },
@@ -15042,113 +17268,118 @@
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-955",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-956",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-957",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-958",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-959",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-960",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-961",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-962",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-963",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-964",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-965",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-966",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-967",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-968",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-969",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-970",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-971",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-972",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-973",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-974",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-975",
    "k": "cita"
   },
   {
-   "s": "tendencias-diseno-innovacion",
+   "s": "diseno-servicios-politicas-salud",
    "t": "F-976",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-servicios-politicas-salud",
+   "t": "F-977",
    "k": "cita"
   },
   {
@@ -15194,6 +17425,386 @@
   {
    "s": "fenomenos-psicologicos",
    "t": "F-985",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-986",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-987",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-988",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-989",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-990",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-991",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-992",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-993",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-994",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-995",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-estrategico-organizacional",
+   "t": "F-996",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-997",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-998",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-999",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1000",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1001",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1002",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1003",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1004",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1005",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1006",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1007",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1008",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1009",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-fisico-industrial",
+   "t": "F-1010",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1011",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1012",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1013",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1014",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1015",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1016",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1017",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1018",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1019",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1020",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1021",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1022",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1023",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1024",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-espacios-ciudad",
+   "t": "F-1025",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1026",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1027",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1028",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1029",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1030",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1031",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1032",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1033",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1034",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1035",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1036",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1037",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1038",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1039",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-sostenibilidad-circularidad",
+   "t": "F-1040",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1041",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1042",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1043",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1044",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1045",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1046",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1047",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1048",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1049",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1050",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1051",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1052",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-social-participativo",
+   "t": "F-1053",
+   "k": "cita"
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
+   "t": "F-1054",
+   "k": "cita"
+  },
+  {
+   "s": "fenomeno-el-nino-impacto-personas",
+   "t": "F-1055",
+   "k": "cita"
+  },
+  {
+   "s": "modelo-salud-ia-farmacias-peru",
+   "t": "F-1056",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-1057",
+   "k": "cita"
+  },
+  {
+   "s": "innovacion-evidencia",
+   "t": "F-1058",
+   "k": "cita"
+  },
+  {
+   "s": "diseno-producto-digital",
+   "t": "F-1059",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-1060",
+   "k": "cita"
+  },
+  {
+   "s": "convergencia-psicologia-economia-ia",
+   "t": "F-1061",
    "k": "cita"
   }
  ],
@@ -15499,13 +18110,15 @@
    },
    {
     "fecha": "2026-10-25",
-    "nuevas": 8,
-    "acumuladas": 984,
-    "AB": 7,
+    "nuevas": 84,
+    "acumuladas": 1060,
+    "AB": 50,
     "rigor": {
-     "A": 4,
-     "B": 3,
-     "C": 1
+     "A": 28,
+     "B": 22,
+     "C": 16,
+     "D": 16,
+     "E": 2
     }
    }
   ],
@@ -17838,6 +20451,44 @@
     "fecha": "2026-10-15",
     "commit": "3ed2b38",
     "fuente": "git"
+   },
+   {
+    "fuentes": 984,
+    "rigor": {
+     "B": 174,
+     "A": 323,
+     "C": 214,
+     "D": 217,
+     "?": 15,
+     "E": 41
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 158,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 878,
+    "diseno": {
+     "hyp": {
+      "abierta": 16,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 9,
+     "lines": 2215,
+     "cites": 373
+    },
+    "fecha": "2026-10-25",
+    "commit": "f786a03",
+    "fuente": "git"
    }
   ],
   "design": {
@@ -17856,7 +20507,7 @@
     "⚔️": 4
    },
    "iterations": 9,
-   "lines": 2215,
+   "lines": 1124,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

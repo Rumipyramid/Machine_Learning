@@ -548,6 +548,7 @@ Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita 
 
 ## Conexiones
 
+- [[recomendaciones-acciones-2026|Recomendaciones de acciones (julio 2026): qué sostiene cada señal]] — foto fechada (julio 2026) de recomendaciones de acciones, separadas por tipo de evidencia; rescatada del registro de fuentes el 2026-10-25.
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — la crisis del nudge allá, la de los efectos de laboratorio aquí; misma lección de replicación.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — los LLM como sujetos que "replican" estudios clásicos (F-545, Milgram); PF4 prueba si imitan la literatura.
 - [[conducta-humano-ia|Conducta humano-IA]] — obediencia a la autoridad y fluidez como base de la sobre-confianza en la IA.

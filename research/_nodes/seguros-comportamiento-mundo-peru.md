@@ -4,7 +4,7 @@
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-06-21
-> Última actualización: 2026-10-11 · Versión: v1.1 (amplía alcance: mercado global por ramo)
+> Última actualización: 2026-10-25 · Versión: v1.1 (amplía alcance: mercado global por ramo)
 
 ---
 
@@ -17,8 +17,8 @@
   los consumidores confía, vs. 50% en bancos). En Perú la confianza plena ronda el **23-25%** y
   **~48% desconfía** de las aseguradoras; la principal causa es la **falta de información**.
 - **Tenencia:** En Perú solo **~4 de cada 10** personas tienen o tuvieron un seguro pagado en los
-  últimos 2 años. El **SOAT** lidera el conocimiento (94%) pero solo **~3.3% de los hogares** tiene
-  seguro contra desastres naturales.
+  últimos 2 años. El **SOAT** lidera el conocimiento (94%) [F-1] pero solo **~3.3% de los hogares** tiene
+  seguro contra desastres naturales [F-5].
 - **Barreras universales:** precio/asequibilidad, desconfianza, falta de información/educación
   financiera, y **sesgos conductuales** (cortoplacismo, inercia, procrastinación: "lo contrato
   más adelante").
@@ -31,7 +31,8 @@
 
 ### 1.1 Penetración y tamaño de mercado
 - **Latinoamérica:** penetración del **3.2% del PBI** en 2024 (+0.1 pp interanual). El mercado
-  regional creció **5.8%**, alcanzando ~**US$215.1 mil millones** (MAPFRE Economics).
+  regional creció **5.8%**, alcanzando ~**US$215.1 mil millones** (MAPFRE Economics). Marco mundial de
+  penetración y primas por ramo: OCDE, 2025 [F-2].
 - Líderes de penetración en LatAm: Puerto Rico, **Chile (4.6%)**, Uruguay (3.6%), Brasil (3.3%),
   Colombia (3.3%).
 - El ramo **Vida** gana peso: a nivel de mercados maduros y también en Perú representa la mayor
@@ -55,7 +56,7 @@
 - Implicación: el canal digital y la personalización pesan más en segmentos jóvenes.
 
 ### 1.4 Expectativas de valor
-- En una encuesta de **28,765 consumidores en 14 países** (Bain), **~80%** quiere que las
+- En una encuesta de **28,765 consumidores en 14 países** (Bain) [F-4], **~80%** quiere que las
   aseguradoras integren criterios **ESG** (ambientales, sociales y de gobernanza) en su propuesta.
 - **Regla del valor percibido:** si un producto paga en siniestros **<30%** de las primas, al
   cliente le conviene más NO tenerlo → erosiona la confianza y la reputación del sector.
@@ -298,8 +299,18 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - **No encontrado:** resultados del 2T de Pacífico e Interseguro; las estadísticas de la SBS al 2T 2026 en el documento original; el avance del PL 08488 después del dictamen de diciembre de 2025. **2026-10-03:** la red de este entorno bloquea SBS, SMV, El Peruano y el Congreso; esos documentos solo pueden verificarse si el usuario los aporta.
 - **Lectura a fondo de fundamentos (2026-10-03, resúmenes oficiales):** (1) solo **14%** de los asegurados en EE.UU. entiende coaseguro, copago, deducible y gasto de bolsillo, y **11%** sabe calcular su parte de una cuenta (F-6); (2) en un experimento con **124.000** ahorristas, la mejor divulgación subió el cambio de producto apenas **0,7 puntos** (8,7% → 9,5%), y la causa son **creencias pesimistas** sobre lo que se ganaría (F-9). Para Perú, donde la desconfianza nace de la falta de información, la implicancia es que **explicar más no basta**: hay que cambiar lo que la persona cree que va a ganar o perder.
 
+## Actualización 2026-10-25: por qué conviven el +1,1% y el +8% en primas de 2026
+
+Las dos cifras del primer semestre de 2026 miden cosas distintas. Las **primas de seguros** crecieron 1,1% (S/9.451 M);
+las **primas netas con ajuste de reservas técnicas** crecieron 8% (S/12.385 M). La utilidad del sistema subió 7,5%
+(S/1.391 M), pero 7 de 17 empresas ganaron menos. Lo reporta Gestión con datos de la SBS [F-1054]; falta la tabla
+oficial. Al citar el crecimiento del mercado, decir cuál de las dos medidas se usa.
+
 ## Conexiones
 
+- [[recomendaciones-acciones-2026|Recomendaciones de acciones (julio 2026): qué sostiene cada señal]] — foto fechada (julio 2026) de recomendaciones de acciones, separadas por tipo de evidencia; rescatada del registro de fuentes el 2026-10-25.
+- [[rentabilidad-modelos-seguros|Modelos de seguros rentables: qué está medido]] — qué modelos de seguros son rentables y con qué evidencia (telemática, paramétricos, reaseguro), rescatado del registro de fuentes el 2026-10-25.
+- [[diseno-producto-fisico-industrial|Diseño de producto físico e industrial: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): sensores que previenen siniestros y etiquetas claras para pólizas (inferencia).
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — caso
   real de la brecha de protección (~3,3% de hogares con seguro de desastres): en el Niño Costero 2017 el seguro cubrió ~7% del daño
   (F-773) y los hogares se recuperaron con donaciones, no con indemnizaciones (F-752); coyuntura 2026-27.

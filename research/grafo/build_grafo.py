@@ -20,6 +20,8 @@ HERE = Path(__file__).resolve().parent
 RES = HERE.parent
 ROOT = RES.parent
 DESIGN = "tendencias-diseno-innovacion"
+# Familia del cerebro de diseño: el nodo índice y sus nodos de dominio (separados el 2026-10-25).
+design_family = lambda n: n == DESIGN or n.startswith("diseno-") or n == "innovacion-evidencia"
 # Rangos F-n que CLAUDE.md declara como cosecha de diseño/innovación (para medir huérfanos).
 DESIGN_RANGES = [(237, 328, "diseño"), (380, 429, "diseño"), (430, 468, "innovación")]
 RIGOR = {"🟢": "A", "🔵": "B", "🟡": "C", "🟠": "D", "🔴": "E"}
@@ -166,7 +168,7 @@ def snapshot_at(commit):
             "derivaciones": len(derive), "fuentes_citadas_en_nodes": len(cited & set(led))}
     if d:
         snap["diseno"] = {k: d[k] for k in ("hyp", "rules", "rules_cited", "scale", "iterations", "lines")}
-        snap["diseno"]["cites"] = len(explicit_cites(nodes[DESIGN]) & set(led))
+        snap["diseno"]["cites"] = len(set().union(*(explicit_cites(t) for n, t in nodes.items() if design_family(n))) & set(led))
     return snap
 
 
@@ -212,11 +214,11 @@ def compute(nodes, outs, ledger):
     allc = set().union(*cites.values()) if cites else set()
     cnt = Counter(f for s in cites.values() for f in s)
     des = parse_design(nodes[DESIGN]) if DESIGN in nodes else None
-    dcit = cites.get(DESIGN, set())
+    dcit = set().union(*(c for n, c in cites.items() if design_family(n)))
     in_range = {f for a, b, _ in DESIGN_RANGES for f in range(a, b + 1) if f in ledger}
     jacc = []
     for n in names:
-        if n == DESIGN:
+        if design_family(n):
             continue
         u = dcit | cites[n]
         j = len(dcit & cites[n]) / len(u) if u else 0
@@ -295,7 +297,7 @@ def report(nodes, outs, ledger, M, hist, tl, lobo, alma):
         w(f"| **Grafo semántico** (relaciones extraídas) | {nf} de {len(ledger)} fuentes ({pct(nf,len(ledger))}) | {nt} relaciones · {len(rj['barridos'])} barridos · detalle en `relaciones/RELACIONES.md` |")
     w(f"| Componentes conexas del grafo de nodes | {len(M['comps'])} | {'grafo conexo' if len(M['comps'])==1 else 'HAY islas: ' + '; '.join(sorted(','.join(sorted(c)) for c in M['comps'] if len(c)<len(nodes)))} |\n")
     # 2 diseño
-    w("## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)\n")
+    w("## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion` y sus nodos de dominio `diseno-*`, `innovacion-evidencia`)\n")
     if des:
         hy = des["hyp"]; tot = sum(hy.values()); res = tot - hy.get("abierta", 0)
         dab = M["ab"](dcit)

@@ -203,7 +203,7 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
   // ---------- búsqueda ----------
   const STOP = new Set("para por con sin una uno unos unas los las del que qué como cómo cual cuál cuales cuando donde dónde este esta estos estas ese esa eso hay muy más mas pero porque sobre entre desde hasta tiene tienen ser son fue fueron está están han hoy todo toda todos todas cada sus nos les lo la el en de y o a se al es su sí no the and for with from that this are was were have has not but you your".split(" "));
   const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-  const toks = s => norm(s).split(/[^a-z0-9ñ\-]+/).filter(t => (t.length > 2 || ["ia", "ai", "ux", "ui"].includes(t)) && !STOP.has(t)).map(t => /^f-\d+$/.test(t) ? t : t.slice(0, 6));
+  const toks = s => norm(s).split(/[^a-z0-9ñ\-]+/).filter(t => (t.length > 2 || ["ia", "ai", "ux", "ui"].includes(t)) && !STOP.has(t)).map(t => /^f-\d+$/.test(t) ? t : (t.length > 5 ? t.replace(/(ing|es|s)$/, "") : t).slice(0, 6));
   function buildIndex(docs, textOf) {
     const df = new Map(), lens = [], tfs = [], raw = [];
     for (const d of docs) {
@@ -949,7 +949,10 @@ ${B.camino.map(c => "- " + c).join("\n") || "(ninguno)"}`;
   async function ask(q) {
     q = q.trim(); if (!q || !CORPUS) return;
     const entry = newEntry(q);
-    const r = retrieve(ampliarDiseno(ampliarIA(q)) + " " + turns.filter(t => t.role === "user").slice(-1).map(t => t.q).join(" "));
+    // La pregunta anterior solo se suma a la búsqueda cuando la nueva es un seguimiento corto ("¿y en Perú?"):
+    // si el usuario cambia de tema, arrastrarla trae contexto equivocado.
+    const previa = toks(q).length < 4 ? turns.filter(t => t.role === "user").slice(-1).map(t => t.q).join(" ") : "";
+    const r = retrieve(ampliarDiseno(ampliarIA(q)) + " " + previa);
     evidence(entry.ev, r);
     if (!sampleChecked) { try { sample = await window.claude?.use?.("sample"); } catch { sample = null; } sampleChecked = true; try { toolsOk = !!(sample && (await sample.limits()).tools); } catch { toolsOk = false; } }
     if (!sample) { offline(entry, r, "Para que Mu redacte una respuesta, abre esta página en claude.ai con tu sesión iniciada."); return; }

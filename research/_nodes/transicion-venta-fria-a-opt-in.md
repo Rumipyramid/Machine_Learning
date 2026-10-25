@@ -1,7 +1,7 @@
 # Transición de venta fría a venta opt-in: cómo lo hacen las organizaciones
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-10-11 · Versión: v1.0
+> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-10-25 · Versión: v1.0
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 
 ---
@@ -303,6 +303,95 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   documentando públicamente el proceso completo de transición de su fuerza de ventas de
   frío a opt-in con métricas de antes/después — el hueco de evidencia más relevante para
   RIMAC específicamente.
+
+---
+
+## Marco legal peruano para contactar sin consentimiento (rescate 2026-10-25)
+
+En Perú, una empresa no puede llamar, escribir ni mandar SMS a un consumidor para venderle
+algo si él no pidió antes ese contacto. La única excepción es una sola llamada para pedir
+permiso, y esa excepción es estrecha y discutida. Para RIMAC esto significa que el
+referido no abre una puerta legal nueva: la aseguradora sigue respondiendo por cómo se
+obtuvo y se usó cada dato. Esta sección reúne la base legal que el resto del nodo da por
+sabida cuando menciona la Ley 32323 y el reglamento de datos.
+
+### 7.1 Pista legal: qué dicen las normas (rigor B, salvo donde se indica)
+
+- **La regla de fondo es el consentimiento previo.** La Ley de Protección de Datos
+  Personales de 2011 exige un consentimiento libre, previo, expreso, informado e
+  inequívoco para usar datos con fines de publicidad o prospección comercial [F-67].
+- **La ley antispam de 2025 cierra el contacto masivo.** La Ley 32323, vigente desde el 10
+  de mayo de 2025, prohíbe ofrecer productos por llamadas, SMS o correos masivos sin ese
+  consentimiento. El permiso debe nacer de la iniciativa del consumidor, se puede revocar
+  en cualquier momento y su incumplimiento es infracción muy grave [F-69].
+- **La protección ya no depende de inscribirse en una lista.** Desde 2018 el registro
+  "Gracias, no insista" quedó sin uso, porque el Código del Consumidor protege a todos por
+  defecto. Lo reporta prensa sin método propio (rigor D) [F-73]. En la práctica, nadie
+  tiene que pedir que no lo llamen: la empresa tiene que tener el permiso antes.
+- **La única excepción es una llamada para pedir permiso, una sola vez.** El reglamento de
+  datos vigente desde el 31 de marzo de 2025 permite una única llamada cuyo único fin sea
+  pedir el consentimiento, no vender, y solo con datos de fuente lícita [F-68]. Una guía
+  legal de una firma internacional (rigor C) precisa que ese permiso se pide en el primer
+  contacto: no se puede volver a pedir después ni tras un rechazo [F-77]. No hay reintentos.
+
+### 7.2 La excepción está en disputa (rigor C y D)
+
+Dos lecturas expertas acotan o cuestionan esa llamada única:
+
+- **Para consumidores, el primer contacto sigue prohibido.** Un análisis del Estudio Ugaz
+  Zegarra (rigor C) sostiene que el Código del Consumidor solo permite el contacto que
+  inicia el propio consumidor. Según esa lectura, la llamada única del reglamento solo
+  serviría con quien no es consumidor final, por ejemplo un contacto entre empresas a un
+  correo corporativo [F-72]. Si esta lectura prevalece, la excepción no sirve para vender
+  seguros a personas.
+- **Otro experto teme que la excepción legalice el spam.** Infobae recogió en 2025 la
+  advertencia de un abogado: la llamada para pedir permiso podría terminar legalizando
+  parte de las llamadas que la norma quería prohibir. Es prensa que resume una opinión,
+  sin el análisis completo (rigor D) [F-71].
+
+La conclusión prudente es no apoyar una estrategia comercial en la llamada única hasta que
+Compliance la valide.
+
+### 7.3 Los referidos no trasladan la responsabilidad (rigor C)
+
+Un análisis jurídico de Manrique y Proaño, publicado en un portal académico-legal sin
+revisión por pares formal, concluye que la empresa sigue respondiendo por el tratamiento de
+datos hecho en su beneficio, aunque subcontrate el contacto [F-76]. Esto aplica a una
+agencia o a un programa de referidos. Sumado a la regla de una sola oportunidad [F-77], el
+modelo en que "la empresa llama al referido" carga el mismo riesgo que una llamada en frío.
+El diseño que sí calza con la norma es el que ya plantea la Estrategia 4 de RIMAC: que el
+referido se registre por su cuenta.
+
+### 7.4 Pista de negocio: el riesgo de sanción es activo
+
+- **INDECOPI ya fiscaliza a escala.** En 2025 anunció multas de hasta 450 UIT, cerca de
+  S/2,4 millones. Dijo usar IA para analizar más de 7 millones de audios de llamadas
+  comerciales. Ese año sancionó a 26 empresas por S/2,6 millones y Scotiabank enfrentaba una
+  multa potencial de más de S/2,4 millones. Es un comunicado oficial del regulador (rigor B)
+  [F-70]. Esto amplía lo que §3.1 ya cuenta sobre BBVA.
+- **Los canales que funcionan sin permiso previo son de atracción.** Guías de agencias de
+  marketing farmacéutico (rigor D) describen captación en la que el cliente da el primer
+  paso: señalización en el punto de venta, programas de fidelización y redes sociales
+  [F-75]. Es un ejemplo de otro sector, no evidencia de resultados.
+- **Cómo pedir el permiso en un formulario.** Agencias de email marketing (rigor D)
+  recomiendan doble confirmación, casillas sin marcar por defecto e identificar quién
+  trata los datos [F-74]. Complementa la lista práctica de §4.1 y §6.2.
+
+### 7.5 Comparación con EE.UU.: la regla tampoco está resuelta allá (rigor B)
+
+En 2025 la Corte de Apelaciones del 11.º Circuito falló a favor de una coalición de
+marketing de seguros contra la FCC. Determinó que la FCC se excedió al exigir un
+consentimiento "uno a uno", más estricto de lo que permite la ley TCPA [F-132]. El marco
+estadounidense sigue en disputa. Por eso los casos de EE.UU. de §3 sirven como analogía de
+presión regulatoria, no como guía de qué exige hoy la norma peruana, que es más estricta en
+el primer contacto.
+
+### 7.6 Confianza al pedir datos: una señal débil (rigor D)
+
+Blogs de diseño UX citan que 80% de usuarios valora explicaciones claras del uso de sus
+datos y 73% prefiere la transparencia sobre otras consideraciones [F-146]. Esas cifras no
+tienen fuente primaria verificable. Solo confirman la dirección que §6.2 ya sostiene con
+mejor evidencia; no deben citarse como dato duro.
 
 ---
 

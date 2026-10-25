@@ -29,7 +29,7 @@ def ledger():
         m = re.match(r"\| F-(\d+) \|", l)
         if m:
             full[int(m.group(1))] = l
-    dn = (RES / "_nodes/tendencias-diseno-innovacion.md").read_text()
+    dn = "\n".join(p.read_text() for p in (RES / "_nodes").glob("*.md") if bg.design_family(p.stem))
     return rows, full, bg.explicit_cites(dn)
 
 

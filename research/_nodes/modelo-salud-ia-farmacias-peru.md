@@ -2,7 +2,7 @@
 
 > Documento de investigación consolidado. Fuente persistente y versionada en el repositorio.
 > Desarrollado con `/trinidad` (investigación de 360°) y `/seeker` (estrategias de testeo).
-> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-12 (marco de la OCDE sobre IA en salud, F-946).
+> Fecha de elaboración: 2026-07-06. · Última actualización: 2026-10-25 (rescate de evidencia sobre telesalud, triage y desvío de pacientes, F-329 a F-358).
 > Fuentes citadas indexadas en [`research/fuentes/codice.md`](fuentes/codice.md) (F-35 a F-66).
 
 ## 0. Propuesta evaluada
@@ -602,8 +602,63 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
 
 ---
 
+## Telesalud, triage y desvío de pacientes: lo que dice la evidencia (rescate 2026-10-25)
+
+Orientar a un paciente hacia un canal más barato funciona y ahorra, pero casi toda la prueba sólida viene de sistemas públicos, no de aseguradoras privadas. Cuando quien orienta es la aseguradora, la gente sospecha que lo hace para ahorrar, y esa sospecha ya produjo reversiones, demandas y regulación en EE.UU. Para este modelo, la lección es que el triage debe resolver de verdad y no solo derivar; si no, el ahorro se pierde y la confianza cae.
+
+Este material llegó al cerebro desde un documento externo del usuario sobre triage remoto, que no vive en el repositorio. Las tres pistas se presentan por separado porque miden cosas distintas.
+
+### Pista empírica: el triage remoto ahorra, pero casi todo se probó en sistemas públicos
+
+1. **Un triage por enfermera bien hecho baja costos y visitas a urgencias.** Un estudio en el Journal of Health Economics aprovechó que los pacientes de la línea de asesoría de veteranos de EE.UU. (VA) caían casi al azar con una u otra enfermera. Cuando la enfermera recomendaba atención de urgencia menor en vez de emergencia, el costo a 28 días bajaba en US$404; frente a atención primaria, en US$247. Es un estudio revisado por pares, pero no se pudo verificar su autoría ni su año porque la editorial bloqueó el acceso [F-329]. Otro estudio sobre más de un millón de llamadas a la misma red, con despliegue escalonado, encontró que dar acceso inmediato a un médico en la línea bajó del 38% al 36% la proporción de llamantes que luego fue a emergencias (Tran y colegas, 2023, revisado por pares) [F-330].
+
+2. **El desvío puede ser seguro, pero solo para una fracción de casos.** Un ensayo aleatorizado por centros en Amberes, Bélgica, usó triage por enfermera para mandar pacientes de urgencias a una cooperativa de médicos generales contigua. Desvió de forma segura al 9,5% de los pacientes, y solo el 2,4% de los asignados a la cooperativa terminó hospitalizado (Morreel y colegas, 2021, revisado por pares) [F-331].
+
+3. **Que el paciente no siga la indicación no siempre es desobediencia: a veces el triage se equivocó.** Un análisis de 3,6 millones de llamadas a la línea NHS 111 del Reino Unido (2013-2017), cruzadas con visitas a urgencias, halló que el 11% fue a urgencias pese a que le indicaron autocuidado o atención primaria. De ellos, el 88% fue clasificado como urgente y el 37% fue hospitalizado, lo que sugiere muchos casos mal clasificados (Lewis y colegas, 2021, revisado por pares) [F-333]. Para este modelo, eso significa medir el error de derivación, no solo la tasa de obediencia.
+
+4. **Las redes de proveedores más estrechas ahorran, y la gente paga por conservar a su médico.** Una revisión sistemática de 2022 sobre dos décadas de estudios encontró que las redes estrechas o por niveles reducen costos totales en la mayoría de medidas; la evidencia sobre acceso y calidad es más débil, sin daños sistemáticos (Mazurenko y colegas, revisada por pares) [F-339]. Un estudio de elección de planes en EE.UU. (2018) halló que la gente está dispuesta a pagar entre US$84 y US$275 al mes por una red que incluya a su médico de atención primaria habitual. Cubierto eso, solo rechaza las redes más estrechas (Higuera y colegas, revisado por pares) [F-341]. Ambos estudian el desvío entre proveedores, no entre canales como la telesalud o la farmacia, así que se aplican aquí por analogía.
+
+5. **La única medición directa en una aseguradora privada es la más débil.** Un caso de estudio del proveedor Conduit Health Partners reporta que la línea de enfermería de Medical Mutual, en Ohio, desvió al 50% de los llamantes que iban a emergencias en su primer año, y llegó a cerca del 90% con el tiempo. Es justo la decisión que importa aquí (la aseguradora empuja un canal barato y el afiliado acepta), pero lo publica el propio vendedor y no se puede auditar [F-332].
+
+6. **La fricción para contener costos puede producir el efecto contrario.** Una encuesta de la American Medical Association (2024-2025) a pacientes y personal de salud reporta que el 82% abandonó algún tratamiento por trabas de autorización previa. El 42% dice que esas trabas terminan desviando a los pacientes hacia urgencias. La AMA tiene interés declarado contra esas trabas, así que la cifra es una señal de alerta, no una medición neutral [F-342].
+
+### Pista social: la gente desconfía cuando la aseguradora decide por ella
+
+7. **La desconfianza nace de creer que la aseguradora prioriza ahorrar sobre la necesidad del paciente.** Diecisiete entrevistas a afiliados en Países Bajos (van der Hulst y colegas, 2025) encontraron que perciben al asegurador como motivado por el lucro. Además, no conocen su rol regulado, lo que agrava la sospecha. Es un estudio revisado por pares pero cualitativo y pequeño, así que indica el mecanismo, no su tamaño [F-336].
+
+8. **Los desvíos percibidos como abusivos ya se revirtieron bajo presión pública.** En diciembre de 2024, Anthem anunció un límite de tiempo para la anestesia en cirugías; la sociedad de anestesiólogos lo llamó un intento cínico de ahorrar, y la gobernadora de Nueva York y dos senadores exigieron revertirlo. Anthem lo retiró en cinco días (comunicados oficiales y prensa establecida) [F-345]. El mismo patrón ocurrió en 2018: su política de negar cobertura a visitas a emergencias "evitables" provocó demandas de los médicos de emergencia, que advirtieron muertes por miedo a la factura. Anthem la modificó en enero de 2019 (cobertura de prensa con cierto eco entre notas) [F-346].
+
+9. **El rechazo social al "la aseguradora niega para ahorrar" llegó a ser masivo.** Tras el asesinato del CEO de UnitedHealthcare en diciembre de 2024, la publicación de condolencias de la empresa recibió 62.000 reacciones, 57.000 de ellas de risa, según prensa establecida que reportó esas métricas [F-344]. Una investigación de ProPublica y The Capitol Forum (2024), basada en documentos internos, mostró que el proveedor EviCore ofrecía a grandes aseguradoras un ajuste para subir la tasa de denegaciones [F-349]. Periodismo especializado sobre Cigna reportó 300.000 reclamos negados en dos meses, a 1,2 segundos por revisión, con 90% revertidos en apelación, y regulación estatal en respuesta [F-343].
+
+10. **La queja contra la telesalud se concentra en el "te derivo sin resolverte".** Reseñas de usuarios de 98point6 y de Included Health/Doctor On Demand se quejan de pagar para que les digan que vayan a otro lado, o de que no les recetaran y sí lo hicieran en una clínica al día siguiente. Son reseñas reconstruidas de fragmentos de búsqueda, sin acceso al texto completo, y muestran una queja recurrente, no viral [F-347] [F-348]. En cambio, el plan con telesalud como primera puerta de Priority Health reportó una satisfacción de 4,8 sobre 5 entre quienes respondieron, según cifras de la propia aseguradora citadas en prensa [F-350].
+
+### Pista de negocio: el ahorro existe, pero lo decide el pagador
+
+11. **El ahorro potencial de dirigir pacientes a proveedores más baratos es grande.** Un estudio de Harvard sobre casi 700.000 afiliados comerciales de California (Desai y colegas, 2019, revisado por pares, datos de 2013-2014) calculó que mandar a cada paciente a un proveedor de precio mediano ahorraría 42% en laboratorio, 45% en imágenes y 15% en equipo médico duradero [F-352]. Un caso anónimo publicado en un medio afín a vendedores de triage reporta que las visitas a emergencias bajaron de 242 a 192 por cada 1.000 trabajadores, con un costo de triage de unos US$30 frente a US$1.200-1.400 por visita a emergencias. Sirve como orden de magnitud, no es verificable [F-354].
+
+12. **La telesalud bien medida puntúa igual o mejor que la presencial.** Un estudio pediátrico revisado por pares (Gotthardt y colegas, 2024), con la encuesta estandarizada Press Ganey, dio 94,9% a las videoconsultas frente a 92,5% a las presenciales, con mejor nota en acceso [F-355]. Oscar Health reportó en su informe anual a la SEC de 2024 una puntuación de recomendación de 66 y 1,68 millones de miembros (+61% en un año). Esa puntuación es una métrica propia, no auditada [F-351].
+
+13. **Babylon Health no cayó por el rechazo de los pacientes, sino porque su pagador no renovó.** Prensa especializada que cita documentos de quiebra reporta pérdidas de US$212-274 millones en 2022. El golpe final fue que la aseguradora Centene, cerca de la mitad de sus ingresos, no renovó el contrato. La operación británica se vendió por £500.000, frente a una valuación de US$4.200 millones en 2021 [F-358]. Esto completa lo dicho arriba sobre su falla clínica: validar la precisión no basta si quien paga no ve el retorno.
+
+### Qué cambia para este modelo
+
+Lo más firme, con estudios revisados por pares, es que el triage remoto puede bajar costos y visitas a urgencias de forma segura en una parte de los casos [F-329] [F-330] [F-331]. Pero ninguno de esos estudios se hizo en una aseguradora privada ni en Perú. Lo más sensible es la confianza: si el afiliado lee la derivación a farmacia como una forma de ahorrar a su costa, el patrón de EE.UU. sugiere reversiones y presión regulatoria, que en Perú pasaría por INDECOPI, el ente de protección al consumidor [F-336] [F-343] [F-345]. Esto es una deducción por analogía, no un hallazgo local.
+
+La acción concreta es agregar al piloto dos medidas: cuántos derivados terminan igual en urgencias y fueron mal clasificados, como en el estudio de NHS 111 [F-333], y cuántos sienten que el sistema los "rebotó" sin resolverles. La segunda pregunta se puede sumar a las de alcance y efectividad del §3.
+
+---
+
+## Actualización 2026-10-25: cuántos peruanos compran medicamentos sin receta
+
+La cifra oficial más usada es de la encuesta nacional de usuarios de salud del INEI (ENSUSALUD 2015): 54,8% compró
+medicamentos sin receta, según prensa que la cita [F-1056] (rigor D; un artículo académico reporta 84,8% para la misma
+encuesta y la diferencia no está explicada). Eso hace inverosímil el "uno de cada cinco" que circula. Para el modelo de
+farmacias, usar el dato del INEI con su año y verificarlo en el informe original antes de presentarlo.
+
 ## Conexiones
 
+- [[diseno-servicios-politicas-salud|Diseño de servicios, políticas públicas y salud: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): diseño de servicios de salud aplicado al modelo de farmacias.
+- [[diseno-social-participativo|Diseño social, participativo y especulativo: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): participación de comunidades en salud (inferencia).
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — las
   olas de diarrea, dengue y malaria asociadas a El Niño (su §3.2) son picos de demanda de atención
   primaria y farmacia en el norte: caso de estrés para este modelo.

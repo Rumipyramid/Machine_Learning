@@ -1,0 +1,463 @@
+{
+ "fecha": "2026-10-25",
+ "f_ids": [
+  "F-986",
+  "F-987",
+  "F-988",
+  "F-989",
+  "F-990",
+  "F-991",
+  "F-992",
+  "F-993",
+  "F-994",
+  "F-995",
+  "F-996"
+ ],
+ "entidades": [
+  {
+   "id": "c_design_thinking_ibm_roi_301",
+   "nombre": "La práctica de design thinking de IBM devuelve 301% de retorno en 3 años (Forrester, encargado por IBM)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "forrester_tei_ibm_design_thinking",
+   "nombre": "Forrester TEI de la práctica de design thinking de IBM (2018, encargado por IBM)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "organizacion_modelo_compuesta",
+   "nombre": "Organización modelo compuesta a partir de pocas entrevistas (no una empresa real)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "centralidad_diseno",
+   "nombre": "Centralidad del diseño en la estrategia de la empresa",
+   "tipo": "constructo"
+  },
+  {
+   "id": "probabilidad_innovar",
+   "nombre": "Probabilidad de que la empresa innove",
+   "tipo": "resultado"
+  },
+  {
+   "id": "ventas_por_innovacion",
+   "nombre": "Ventas provenientes de productos innovadores",
+   "tipo": "resultado"
+  },
+  {
+   "id": "inversion_intensa_diseno",
+   "nombre": "Inversión intensa en diseño (efecto no lineal)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "empresas_europeas_innobarometer",
+   "nombre": "Empresas europeas de la encuesta Innobarometer (más de 12.000)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "corte_transversal",
+   "nombre": "Datos de corte transversal (un solo momento, sin dirección causal)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "enfoque_cientifico_emprendimiento",
+   "nombre": "Enfoque científico de decisión emprendedora (formular hipótesis y testearlas)",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "interes_clientes_startup",
+   "nombre": "Interés de clientes y desempeño temprano de la startup",
+   "tipo": "resultado"
+  },
+  {
+   "id": "abandono_temprano_malas_ideas",
+   "nombre": "Abandono temprano de ideas de negocio malas (pivote o salida)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "startups_italianas",
+   "nombre": "Startups italianas en etapa temprana",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "capacidades_dinamicas_gerenciales",
+   "nombre": "Capacidades dinámicas gerenciales (detectar y aprovechar oportunidades)",
+   "tipo": "constructo"
+  },
+  {
+   "id": "produccion_innovacion",
+   "nombre": "Producción de innovación del equipo o la empresa",
+   "tipo": "resultado"
+  },
+  {
+   "id": "gerentes_telecom",
+   "nombre": "Gerentes de una empresa de telecomunicaciones (529)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "una_sola_empresa",
+   "nombre": "Estudio en una sola empresa (generalización limitada)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "resultados_no_financieros",
+   "nombre": "Resultados en capacidades o percepción, no en desempeño financiero",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "temas_comunes_design_thinking",
+   "nombre": "Cinco temas comunes del design thinking (foco en el usuario, encuadre del problema, visualización, experimentación, diversidad)",
+   "tipo": "concepto"
+  },
+  {
+   "id": "variabilidad_concepto_design_thinking",
+   "nombre": "El concepto de design thinking varía según la empresa que lo aplica",
+   "tipo": "resultado"
+  },
+  {
+   "id": "inversion_diseno",
+   "nombre": "Inversión de la empresa en diseño",
+   "tipo": "intervencion"
+  },
+  {
+   "id": "productividad_empresa",
+   "nombre": "Productividad de la empresa",
+   "tipo": "resultado"
+  },
+  {
+   "id": "empresas_uk_innovation_survey",
+   "nombre": "Empresas de la UK Innovation Survey (~15.000)",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "coeficientes_no_verificados",
+   "nombre": "Coeficientes y conclusiones no verificados en el resumen disponible",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "c_design_thinking_paquete_comercial",
+   "nombre": "El design thinking es un paquete comercial de consultoras y universidades, no innovación significativa",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "c_design_thinking_absorbido_empresas",
+   "nombre": "El método de design thinking ya se adoptó dentro de las empresas (ya no se compra afuera)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "cifra_fuente_anonima",
+   "nombre": "Cifra de fuente anónima no verificada",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "eliminacion_ejecutivos_diseno",
+   "nombre": "Eliminación de cargos ejecutivos de diseño en grandes empresas (IBM, Expedia)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "despidos_disenadores_2023",
+   "nombre": "Despidos de diseñadores UX en 2023 (14,3% de encuestados de UX Collective)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "retorno_accionista_aseguradoras",
+   "nombre": "Retorno total al accionista de las aseguradoras",
+   "tipo": "resultado"
+  },
+  {
+   "id": "c_cx_aseguradoras_65_retorno",
+   "nombre": "Las aseguradoras que priorizan la experiencia de cliente logran hasta 65% más retorno al accionista (atribuido a McKinsey)",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "cifras_discrepan_resumenes",
+   "nombre": "Las cifras discrepan entre resúmenes secundarios del mismo informe",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "informe_mckinsey_cx_seguros",
+   "nombre": "Informe de McKinsey sobre experiencia de cliente en seguros (no visto)",
+   "tipo": "estudio"
+  },
+  {
+   "id": "representacion_gerencial_disenadores",
+   "nombre": "Representación de diseñadores en cargos gerenciales o de poder",
+   "tipo": "resultado"
+  },
+  {
+   "id": "disenadores_peru",
+   "nombre": "Diseñadores y líderes de diseño en empresas peruanas",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "tesis_sin_revision_pares",
+   "nombre": "Tesis de maestría sin revisión por pares",
+   "tipo": "limitacion"
+  }
+ ],
+ "triples": [
+  {
+   "s": "forrester_tei_ibm_design_thinking",
+   "p": "respalda",
+   "o": "c_design_thinking_ibm_roi_301",
+   "f": "F-986",
+   "apoyo": "Estima beneficios de 48,4 M USD frente a costos de 12 M USD en 3 años: valor presente neto de 36,3 M USD y retorno de 301%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_design_thinking_ibm_roi_301",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendor",
+   "f": "F-986",
+   "apoyo": "Estudio pagado por IBM, que vende la práctica evaluada; se basa en 4 clientes entrevistados, 60 ejecutivos encuestados y una organización modelo compuesta, sin réplica independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_design_thinking_ibm_roi_301",
+   "p": "tiene_limite",
+   "o": "organizacion_modelo_compuesta",
+   "f": "F-986",
+   "apoyo": "El retorno se calcula sobre una organización modelo compuesta armada desde pocas entrevistas, no sobre una empresa observada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "centralidad_diseno",
+   "p": "asocia_con",
+   "o": "probabilidad_innovar",
+   "f": "F-987",
+   "apoyo": "En más de 12.000 empresas europeas (Innobarometer), más centralidad del diseño se asocia con más probabilidad de innovar; datos de corte transversal.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "inversion_intensa_diseno",
+   "p": "modera",
+   "o": "ventas_por_innovacion",
+   "f": "F-987",
+   "apoyo": "Las ventas por innovación solo suben en las empresas que invierten intensamente en diseño: la relación no es lineal.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "centralidad_diseno",
+   "p": "aplica_a",
+   "o": "empresas_europeas_innobarometer",
+   "f": "F-987",
+   "apoyo": "Muestra de más de 12.000 empresas europeas de la encuesta Innobarometer de la Comisión Europea.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "enfoque_cientifico_emprendimiento",
+   "p": "aumenta",
+   "o": "interes_clientes_startup",
+   "f": "F-988",
+   "apoyo": "Ensayo aleatorio con 116 startups italianas: las entrenadas en formular hipótesis y testearlas recibieron más del doble de interés de clientes.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "enfoque_cientifico_emprendimiento",
+   "p": "aumenta",
+   "o": "abandono_temprano_malas_ideas",
+   "f": "F-988",
+   "apoyo": "Las startups entrenadas abandonaron antes las malas ideas; réplica del mismo grupo con ~750 empresas en 4 ensayos, sin réplica independiente vista.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "enfoque_cientifico_emprendimiento",
+   "p": "aplica_a",
+   "o": "startups_italianas",
+   "f": "F-988",
+   "apoyo": "El ensayo se hizo con startups italianas en etapa temprana.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "design_thinking",
+   "p": "aumenta",
+   "o": "capacidades_dinamicas_gerenciales",
+   "f": "F-989",
+   "apoyo": "Cuasi-experimento con 529 gerentes de una telecom: el entrenamiento en design thinking, frente a un control con QFD, elevó la capacidad de detectar y aprovechar oportunidades.",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "design_thinking",
+   "p": "aumenta",
+   "o": "produccion_innovacion",
+   "f": "F-989",
+   "apoyo": "Los gerentes entrenados en design thinking mostraron más producción de innovación (según resumen secundario).",
+   "lectura": "ficha",
+   "fuerza": "causal"
+  },
+  {
+   "s": "resultados_design_thinking",
+   "p": "tiene_limite",
+   "o": "una_sola_empresa",
+   "f": "F-989",
+   "apoyo": "Estudio en una sola empresa y con resultados en capacidades, no financieros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "temas_comunes_design_thinking",
+   "p": "parte_de",
+   "o": "design_thinking",
+   "f": "F-990",
+   "apoyo": "Entrevistas en 6 grandes organizaciones identifican cinco temas comunes: foco en el usuario, encuadre del problema, visualización, experimentación y diversidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "design_thinking",
+   "p": "asocia_con",
+   "o": "variabilidad_concepto_design_thinking",
+   "f": "F-990",
+   "apoyo": "El concepto de design thinking varía de una empresa a otra en cómo se entiende y se practica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "inversion_diseno",
+   "p": "asocia_con",
+   "o": "productividad_empresa",
+   "f": "F-991",
+   "apoyo": "Econometría sobre ~15.000 empresas de la UK Innovation Survey que prueba vínculos entre diseño, innovación y productividad; coeficientes no verificados en el resumen visto.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "inversion_diseno",
+   "p": "asocia_con",
+   "o": "produccion_innovacion",
+   "f": "F-991",
+   "apoyo": "Analiza el vínculo entre inversión en diseño e innovación en empresas británicas; documento de trabajo sin revisión por pares vista.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "inversion_diseno",
+   "p": "tiene_limite",
+   "o": "coeficientes_no_verificados",
+   "f": "F-991",
+   "apoyo": "La ficha advierte que coeficientes y conclusiones no se verificaron en el resumen disponible.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "recorte_ideo_2023",
+   "p": "respalda",
+   "o": "c_crisis_consultoras",
+   "f": "F-992",
+   "apoyo": "IDEO recortó 32% de su personal en 2023 y cerró Múnich y Tokio; la prensa lo lee como fin de la era del design thinking.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "recorte_ideo_2023",
+   "p": "asocia_con",
+   "o": "c_design_thinking_absorbido_empresas",
+   "f": "F-992",
+   "apoyo": "El CEO de IDEO atribuye el recorte a la pandemia, a presupuestos y a que el método ya se adoptó dentro de las empresas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "recorte_ideo_2023",
+   "p": "tiene_limite",
+   "o": "cifra_fuente_anonima",
+   "f": "F-992",
+   "apoyo": "La caída de ingresos de 300 a 100 M USD viene de una fuente anónima y no está verificada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_design_thinking_paquete_comercial",
+   "p": "contradice",
+   "o": "c_design_thinking_ibm_roi_301",
+   "f": "F-993",
+   "apoyo": "Ensayo de opinión: sostiene que el design thinking es un paquete comercial de consultoras y universidades, no innovación significativa; tensión parcial con las cifras de retorno del vendor.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "c_design_thinking_paquete_comercial",
+   "p": "asocia_con",
+   "o": "design_thinking",
+   "f": "F-993",
+   "apoyo": "Un historiador de la tecnología critica el movimiento del design thinking como moda contagiosa vendida por consultoras.",
+   "lectura": "ficha",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "eliminacion_ejecutivos_diseno",
+   "p": "aplica_a",
+   "o": "disenadores_profesionales",
+   "f": "F-994",
+   "apoyo": "IBM y Expedia prescindieron de ejecutivos de diseño (IBM eliminó el cargo); solo un nombramiento de director de diseño recordado en el 2S 2023 (PayPal).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "despidos_disenadores_2023",
+   "p": "tiene_limite",
+   "o": "muestra_autoseleccionada",
+   "f": "F-994",
+   "apoyo": "14,3% de encuestados de UX Collective dijo haber sido despedido en 2023; encuesta de comunidad con muestra pequeña y autoseleccionada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "experiencia_cliente_seguros",
+   "p": "asocia_con",
+   "o": "retorno_accionista_aseguradoras",
+   "f": "F-995",
+   "apoyo": "Atribuye a McKinsey 65% más retorno al accionista en aseguradoras de daños y 20% en vida que priorizan la experiencia de cliente; base de 8.500 clientes norteamericanos.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "c_cx_aseguradoras_65_retorno",
+   "p": "origina_en",
+   "o": "informe_mckinsey_cx_seguros",
+   "f": "F-995",
+   "apoyo": "La cifra es un resumen secundario de un informe de McKinsey no visto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "c_cx_aseguradoras_65_retorno",
+   "p": "tiene_limite",
+   "o": "cifras_discrepan_resumenes",
+   "f": "F-995",
+   "apoyo": "Otra fuente aplica el 65% sin distinguir ramo: las cifras discrepan entre resúmenes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "representacion_gerencial_disenadores",
+   "p": "aplica_a",
+   "o": "disenadores_peru",
+   "f": "F-996",
+   "apoyo": "Tesis con entrevistas a líderes de diseño y encuesta a diseñadores peruanos: los diseñadores rara vez están en cargos gerenciales o de poder en empresas peruanas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  },
+  {
+   "s": "representacion_gerencial_disenadores",
+   "p": "tiene_limite",
+   "o": "tesis_sin_revision_pares",
+   "f": "F-996",
+   "apoyo": "El hallazgo viene de una tesis de maestría de la Universidad de Palermo, sin revisión por pares; autor y título exactos no verificados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "/trinidad 2026-10-25, dominio diseño estratégico y organizacional: pase de amplitud a nivel ficha."
+}

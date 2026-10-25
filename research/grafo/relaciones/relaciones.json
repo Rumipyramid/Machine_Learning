@@ -32,6 +32,15 @@
    ]
   },
   {
+   "id": "abandono_temprano_malas_ideas",
+   "nombre": "Abandono temprano de ideas de negocio malas (pivote o salida)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-988"
+   ]
+  },
+  {
    "id": "abandono_tratamiento",
    "nombre": "Abandono de tratamiento por fricción administrativa",
    "tipo": "resultado",
@@ -235,6 +244,15 @@
    "grado": 2,
    "fuentes": [
     "F-284"
+   ]
+  },
+  {
+   "id": "acusaciones_slop_vigilancia",
+   "nombre": "Acusaciones de 'AI slop' como vigilancia de pertenencia",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1059"
    ]
   },
   {
@@ -442,6 +460,17 @@
    ]
   },
   {
+   "id": "afirmaciones_ambientales_enganosas",
+   "nombre": "Afirmaciones ambientales vagas, engañosas o infundadas (greenwashing)",
+   "tipo": "concepto",
+   "grado": 4,
+   "fuentes": [
+    "F-1033",
+    "F-1036",
+    "F-1037"
+   ]
+  },
+  {
    "id": "afirmaciones_inexactas_ia",
    "nombre": "Afirmaciones inexactas en la persuasión de la IA",
    "tipo": "resultado",
@@ -475,6 +504,15 @@
    "grado": 1,
    "fuentes": [
     "F-598"
+   ]
+  },
+  {
+   "id": "agentes_corresponsales",
+   "nombre": "Agentes corresponsales bancarios",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1025"
    ]
   },
   {
@@ -738,6 +776,15 @@
    ]
   },
   {
+   "id": "alianza_pacifico",
+   "nombre": "Alianza del Pacífico (Chile, Colombia, México, Perú)",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1040"
+   ]
+  },
+  {
    "id": "alianzas_externas_ia",
    "nombre": "Implementar IA con socios externos (frente a desarrollo interno)",
    "tipo": "intervencion",
@@ -852,8 +899,9 @@
    "id": "analisis_25m_comentarios_slop",
    "nombre": "Análisis de 25 millones de comentarios sobre acusaciones de 'AI slop' (vía unite.ai)",
    "tipo": "estudio",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-1059",
     "F-284"
    ]
   },
@@ -904,6 +952,15 @@
    "grado": 1,
    "fuentes": [
     "F-740"
+   ]
+  },
+  {
+   "id": "antes_despues_sin_control",
+   "nombre": "Diseños antes/después sin grupo de control y con errores de análisis",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1013"
    ]
   },
   {
@@ -960,6 +1017,15 @@
    "grado": 1,
    "fuentes": [
     "F-188"
+   ]
+  },
+  {
+   "id": "apertura_tienda_fisica",
+   "nombre": "Apertura de una tienda física",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1021"
    ]
   },
   {
@@ -1061,6 +1127,15 @@
    "grado": 1,
    "fuentes": [
     "F-249"
+   ]
+  },
+  {
+   "id": "area_verde_lima",
+   "nombre": "Área verde por habitante en Lima (menos de 3,5 m²)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1023"
    ]
   },
   {
@@ -1196,6 +1271,15 @@
    ]
   },
   {
+   "id": "atencion_basica_sucursal",
+   "nombre": "Atención básica en sucursal (saludar, atender rápido, agradecer)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1024"
+   ]
+  },
+  {
    "id": "atencion_consumidor",
    "nombre": "Atención y relación anticipada con el consumidor",
    "tipo": "resultado",
@@ -1229,6 +1313,24 @@
    "grado": 1,
    "fuentes": [
     "F-210"
+   ]
+  },
+  {
+   "id": "atmosfera_tienda",
+   "nombre": "Atmósfera del punto de venta (música, aroma, color)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1019"
+   ]
+  },
+  {
+   "id": "atractivo_paquete",
+   "nombre": "Atractivo percibido del paquete",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1004"
    ]
   },
   {
@@ -1287,6 +1389,15 @@
    ]
   },
   {
+   "id": "autodeclaracion_encuesta",
+   "nombre": "Respuesta autodeclarada en encuesta, sin medición de conducta",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1035"
+   ]
+  },
+  {
    "id": "autodeclarado_vendedor",
    "nombre": "Cifra autodeclarada por la empresa, sin método auditable",
    "tipo": "limitacion",
@@ -1299,6 +1410,15 @@
     "F-624",
     "F-625",
     "F-634"
+   ]
+  },
+  {
+   "id": "autoeficacia_apoyo_social",
+   "nombre": "Autoeficacia y apoyo social percibido",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1042"
    ]
   },
   {
@@ -1327,6 +1447,15 @@
    "grado": 1,
    "fuentes": [
     "F-401"
+   ]
+  },
+  {
+   "id": "autoevaluacion_oficial",
+   "nombre": "Estimación del propio organismo que aplica la política (autoevaluación contra contrafactual)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1032"
    ]
   },
   {
@@ -1549,6 +1678,15 @@
    "grado": 1,
    "fuentes": [
     "F-745"
+   ]
+  },
+  {
+   "id": "balaceras_heridos_graves",
+   "nombre": "Balaceras con heridos graves o muertos",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1016"
    ]
   },
   {
@@ -2059,8 +2197,9 @@
    "id": "c_automedicacion_20",
    "nombre": "Uno de cada cinco peruanos (~20%) recurre a la automedicación",
    "tipo": "afirmacion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-1056",
     "F-35",
     "F-38"
    ]
@@ -2369,6 +2508,25 @@
    ]
   },
   {
+   "id": "c_circularidad_reduce_impacto",
+   "nombre": "Cerrar ciclos de material reduce por sí solo el impacto ambiental",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-1028",
+    "F-1029"
+   ]
+  },
+  {
+   "id": "c_codiseno_mejora_salud",
+   "nombre": "El co-diseño mejora la salud o el bienestar de los pacientes",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1041"
+   ]
+  },
+  {
    "id": "c_cognicion_simbolos_amodales",
    "nombre": "La cognición es cómputo sobre símbolos abstractos (amodales), independiente de la percepción y la acción",
    "tipo": "afirmacion",
@@ -2481,13 +2639,14 @@
    "id": "c_crisis_consultoras",
    "nombre": "Crisis estructural del modelo de consultora de diseño",
    "tipo": "afirmacion",
-   "grado": 5,
+   "grado": 6,
    "fuentes": [
     "F-307",
     "F-316",
     "F-317",
     "F-325",
-    "F-422"
+    "F-422",
+    "F-992"
    ]
   },
   {
@@ -2519,6 +2678,15 @@
    ]
   },
   {
+   "id": "c_cx_aseguradoras_65_retorno",
+   "nombre": "Las aseguradoras que priorizan la experiencia de cliente logran hasta 65% más retorno al accionista (atribuido a McKinsey)",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-995"
+   ]
+  },
+  {
    "id": "c_dano2017_3100",
    "nombre": "El daño del Niño Costero 2017 fue de ~US$3.100 M, 1,6% del PBI (INDECI/OPS)",
    "tipo": "afirmacion",
@@ -2532,8 +2700,9 @@
    "id": "c_dano2017_9200",
    "nombre": "El daño físico del Niño Costero 2017 fue de US$9.200 M (APESEG)",
    "tipo": "afirmacion",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-1055",
     "F-773"
    ]
   },
@@ -2593,6 +2762,43 @@
    "grado": 2,
    "fuentes": [
     "F-270"
+   ]
+  },
+  {
+   "id": "c_design_thinking_absorbido_empresas",
+   "nombre": "El método de design thinking ya se adoptó dentro de las empresas (ya no se compra afuera)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-992"
+   ]
+  },
+  {
+   "id": "c_design_thinking_ibm_roi_301",
+   "nombre": "La práctica de design thinking de IBM devuelve 301% de retorno en 3 años (Forrester, encargado por IBM)",
+   "tipo": "afirmacion",
+   "grado": 4,
+   "fuentes": [
+    "F-986",
+    "F-993"
+   ]
+  },
+  {
+   "id": "c_design_thinking_paquete_comercial",
+   "nombre": "El design thinking es un paquete comercial de consultoras y universidades, no innovación significativa",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-993"
+   ]
+  },
+  {
+   "id": "c_design_thinking_paquete_simplifica",
+   "nombre": "El design thinking es un paquete comercial que simplifica los problemas sociales y enseña actitud en vez de habilidades",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1050"
    ]
   },
   {
@@ -2815,6 +3021,15 @@
    ]
   },
   {
+   "id": "c_efecto_halo_tienda_fisica",
+   "nombre": "Abrir tiendas físicas eleva las ventas en línea de la zona (efecto halo)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1021"
+   ]
+  },
+  {
    "id": "c_efecto_ia_productividad_incierto",
    "nombre": "El efecto de la IA sobre la productividad no es estimable con el diseño actual",
    "tipo": "afirmacion",
@@ -2922,6 +3137,15 @@
    "grado": 2,
    "fuentes": [
     "F-535"
+   ]
+  },
+  {
+   "id": "c_estandar_oms_area_verde",
+   "nombre": "La OMS recomienda 8-9 m² de área verde por habitante",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-1023"
    ]
   },
   {
@@ -3091,6 +3315,15 @@
    "grado": 1,
    "fuentes": [
     "F-380"
+   ]
+  },
+  {
+   "id": "c_habitacion_individual_reduce_infecciones",
+   "nombre": "Las habitaciones individuales reducen las infecciones asociadas a la atención de salud",
+   "tipo": "afirmacion",
+   "grado": 2,
+   "fuentes": [
+    "F-1013"
    ]
   },
   {
@@ -3511,8 +3744,10 @@
    "id": "c_metas_innovacion_no_reportadas",
    "nombre": "Las metas de innovación se anuncian y no se reportan (H30)",
    "tipo": "afirmacion",
-   "grado": 3,
+   "grado": 5,
    "fuentes": [
+    "F-1057",
+    "F-1058",
     "F-460",
     "F-529",
     "F-532"
@@ -3821,6 +4056,15 @@
    ]
   },
   {
+   "id": "c_pp_gasto_salud_2_3_pp",
+   "nombre": "El presupuesto participativo sube 2-3 puntos porcentuales el gasto en salud (cifra de prensa)",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1043"
+   ]
+  },
+  {
    "id": "c_precio_chopra_5m",
    "nombre": "La compra de Chopra Global fue por hasta US$5 M en efectivo + acciones y hasta US$3 M de earnout (filing SEC)",
    "tipo": "afirmacion",
@@ -4095,8 +4339,9 @@
    "id": "c_sinteticas_reemplazan_encuestas",
    "nombre": "Las muestras sintéticas con LLM pueden reemplazar encuestas humanas para inferencia estadística",
    "tipo": "afirmacion",
-   "grado": 19,
+   "grado": 20,
    "fuentes": [
+    "F-1061",
     "F-547",
     "F-552",
     "F-554",
@@ -4438,12 +4683,30 @@
    ]
   },
   {
+   "id": "cajetilla_generica_advertencias",
+   "nombre": "Cajetilla genérica de cigarrillos con advertencias gráficas más grandes (Australia)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1004"
+   ]
+  },
+  {
    "id": "calculadora_roi_ds_smashing",
    "nombre": "Smashing Magazine 2022: calculadora del ROI de un design system",
    "tipo": "estudio",
    "grado": 1,
    "fuentes": [
     "F-397"
+   ]
+  },
+  {
+   "id": "calidad_aire_interior",
+   "nombre": "Calidad del aire interior (menos compuestos orgánicos volátiles, más ventilación)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1018"
    ]
   },
   {
@@ -4632,8 +4895,9 @@
    "id": "cancelacion_clientes",
    "nombre": "Cancelación de clientes (churn)",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-1024",
     "F-933",
     "F-935"
    ]
@@ -4674,6 +4938,15 @@
    "grado": 4,
    "fuentes": [
     "F-238"
+   ]
+  },
+  {
+   "id": "capacidades_dinamicas_gerenciales",
+   "nombre": "Capacidades dinámicas gerenciales (detectar y aprovechar oportunidades)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-989"
    ]
   },
   {
@@ -4884,6 +5157,15 @@
    ]
   },
   {
+   "id": "centralidad_diseno",
+   "nombre": "Centralidad del diseño en la estrategia de la empresa",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-987"
+   ]
+  },
+  {
    "id": "cerca_magnetics",
    "nombre": "Cerca Magnetics (spin-out de la U. de Nottingham)",
    "tipo": "organizacion",
@@ -4936,6 +5218,15 @@
    "grado": 2,
    "fuentes": [
     "F-435"
+   ]
+  },
+  {
+   "id": "chile_hogares",
+   "nombre": "Hogares de Chile (panel de compras)",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1005"
    ]
   },
   {
@@ -5011,6 +5302,15 @@
    "grado": 2,
    "fuentes": [
     "F-590"
+   ]
+  },
+  {
+   "id": "cierre_agencias_bancarias",
+   "nombre": "Cierre de agencias o sucursales bancarias",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1020"
    ]
   },
   {
@@ -5093,12 +5393,30 @@
    ]
   },
   {
+   "id": "cifra_fuente_anonima",
+   "nombre": "Cifra de fuente anónima no verificada",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-992"
+   ]
+  },
+  {
    "id": "cifra_no_verificada",
    "nombre": "Cifra reportada por un medio, no verificada directamente",
    "tipo": "limitacion",
    "grado": 1,
    "fuentes": [
     "F-857"
+   ]
+  },
+  {
+   "id": "cifra_no_verificada_original",
+   "nombre": "Cifra difundida en prensa que no se verificó en el estudio original",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1043"
    ]
   },
   {
@@ -5121,6 +5439,15 @@
     "F-146",
     "F-177",
     "F-179"
+   ]
+  },
+  {
+   "id": "cifras_discrepan_resumenes",
+   "nombre": "Las cifras discrepan entre resúmenes secundarios del mismo informe",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-995"
    ]
   },
   {
@@ -5178,6 +5505,15 @@
    ]
   },
   {
+   "id": "ciudad_15_minutos",
+   "nombre": "Ciudad de 15 minutos y planes de tráfico local",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1022"
+   ]
+  },
+  {
    "id": "claude_design",
    "nombre": "Lanzamiento de Claude Design (Anthropic)",
    "tipo": "intervencion",
@@ -5222,6 +5558,15 @@
     "F-849",
     "F-850",
     "F-851"
+   ]
+  },
+  {
+   "id": "cobertura_distrital_bancaria",
+   "nombre": "Presencia de servicios bancarios en los distritos del Perú",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1025"
    ]
   },
   {
@@ -5277,8 +5622,9 @@
    "id": "codiseno_servicios_salud",
    "nombre": "Participación del público en el diseño de servicios de salud",
    "tipo": "intervencion",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
+    "F-1041",
     "F-252"
    ]
   },
@@ -5289,6 +5635,15 @@
    "grado": 1,
    "fuentes": [
     "F-727"
+   ]
+  },
+  {
+   "id": "coeficientes_no_verificados",
+   "nombre": "Coeficientes y conclusiones no verificados en el resumen disponible",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-991"
    ]
   },
   {
@@ -5609,6 +5964,24 @@
    ]
   },
   {
+   "id": "compra_sin_receta_ensusalud_2015",
+   "nombre": "Compra de medicamentos sin receta en Perú (54,8%, ENSUSALUD 2015)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1056"
+   ]
+  },
+  {
+   "id": "compras_bebidas_azucaradas",
+   "nombre": "Compras de bebidas azucaradas de los hogares",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1005"
+   ]
+  },
+  {
    "id": "comprension_plan_salud",
    "nombre": "Comprensión del plan de salud",
    "tipo": "resultado",
@@ -5689,6 +6062,15 @@
     "F-834",
     "F-835",
     "F-846"
+   ]
+  },
+  {
+   "id": "comunicacion_electronica_trabajo",
+   "nombre": "Comunicación electrónica en el trabajo (correo, mensajería)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1012"
    ]
   },
   {
@@ -5774,6 +6156,15 @@
    ]
   },
   {
+   "id": "conducta_declarada",
+   "nombre": "Conducta declarada en encuesta, no observada",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1008"
+   ]
+  },
+  {
    "id": "conducta_maquinas",
    "nombre": "Conducta de las máquinas (machine behaviour) como campo científico",
    "tipo": "concepto",
@@ -5805,9 +6196,10 @@
    "id": "conducta_salud",
    "nombre": "Conductas de salud (dejar de fumar, actividad física, adherencia)",
    "tipo": "resultado",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
     "F-100",
+    "F-1042",
     "F-638",
     "F-99"
    ]
@@ -5979,10 +6371,13 @@
    "id": "conflicto_interes_vendor",
    "nombre": "Conflicto de interés: el emisor vende al público estudiado o pagó el estudio",
    "tipo": "limitacion",
-   "grado": 2,
+   "grado": 5,
    "fuentes": [
+    "F-1009",
+    "F-1021",
     "F-314",
-    "F-328"
+    "F-328",
+    "F-986"
    ]
   },
   {
@@ -6007,6 +6402,15 @@
    "grado": 1,
    "fuentes": [
     "F-127"
+   ]
+  },
+  {
+   "id": "confusion_otras_inversiones",
+   "nombre": "Confusión con otras inversiones públicas simultáneas",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1017"
    ]
   },
   {
@@ -6061,6 +6465,15 @@
    "grado": 1,
    "fuentes": [
     "F-1"
+   ]
+  },
+  {
+   "id": "consecuencias_salud",
+   "nombre": "Consecuencias de salud (resultados sanitarios)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1042"
    ]
   },
   {
@@ -6155,6 +6568,15 @@
    ]
   },
   {
+   "id": "consumo_energia_primaria",
+   "nombre": "Consumo de energía primaria",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1032"
+   ]
+  },
+  {
    "id": "contacto_bajo_costo",
    "nombre": "Contacto de bajo costo (cartas, mensajes)",
    "tipo": "intervencion",
@@ -6212,6 +6634,15 @@
    "grado": 1,
    "fuentes": [
     "F-433"
+   ]
+  },
+  {
+   "id": "contexto_servicios_vs_tiendas",
+   "nombre": "Contexto de servicios frente a tiendas",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-1019"
    ]
   },
   {
@@ -6416,6 +6847,15 @@
    ]
   },
   {
+   "id": "costo_siniestro",
+   "nombre": "Costo del siniestro",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1039"
+   ]
+  },
+  {
    "id": "costo_siniestros_medicos_empleador",
    "nombre": "Costo anual de siniestros médicos por miembro (empleador)",
    "tipo": "resultado",
@@ -6478,6 +6918,15 @@
    "grado": 4,
    "fuentes": [
     "F-377"
+   ]
+  },
+  {
+   "id": "crecimiento_economia_diseno_uk",
+   "nombre": "Crecimiento de la economía del diseño del Reino Unido (40% entre 2019 y 2023, frente a 24% del total)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-998"
    ]
   },
   {
@@ -6598,6 +7047,15 @@
    ]
   },
   {
+   "id": "credito_pequenas_empresas_local",
+   "nombre": "Crédito a pequeñas empresas en la zona de la agencia",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1020"
+   ]
+  },
+  {
    "id": "creditos_ia_figma",
    "nombre": "Monetización de créditos de IA de Figma",
    "tipo": "intervencion",
@@ -6619,8 +7077,9 @@
    "id": "creencias_conspirativas",
    "nombre": "Creencia en teorías conspirativas",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-1022",
     "F-586"
    ]
   },
@@ -6649,6 +7108,15 @@
    "grado": 1,
    "fuentes": [
     "F-831"
+   ]
+  },
+  {
+   "id": "criterios_calidad_diseno_especulativo",
+   "nombre": "Taxonomía de nueve criterios de calidad del diseño especulativo (especulativo, discursivo, de proceso)",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-1048"
    ]
   },
   {
@@ -6846,6 +7314,16 @@
    ]
   },
   {
+   "id": "decision_compra_consumidor",
+   "nombre": "Decisión de compra del consumidor",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1035",
+    "F-1036"
+   ]
+  },
+  {
    "id": "decision_compra_hogar",
    "nombre": "Decisión de compra en el hogar/pareja",
    "tipo": "concepto",
@@ -6991,6 +7469,15 @@
    ]
   },
   {
+   "id": "demanda_material_reciclado",
+   "nombre": "Demanda de material reciclado por las marcas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1038"
+   ]
+  },
+  {
    "id": "demanda_modelo_calido",
    "nombre": "Demanda de usuarios por el regreso de GPT-4o, el modelo 'cálido' (#keep4o)",
    "tipo": "resultado",
@@ -7118,6 +7605,24 @@
    ]
   },
   {
+   "id": "desconfianza_afirmacion_verde",
+   "nombre": "Desconfianza del consumidor ante una afirmación ambiental",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-1036"
+   ]
+  },
+  {
+   "id": "desconfianza_comunidades",
+   "nombre": "Desconfianza de las comunidades hacia los investigadores",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1049"
+   ]
+  },
+  {
    "id": "desconfianza_medicos",
    "nombre": "Desconfianza en los médicos",
    "tipo": "constructo",
@@ -7130,8 +7635,9 @@
    "id": "desempeno_cognitivo",
    "nombre": "Desempeño en pruebas cognitivas o de logro",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-1018",
     "F-679"
    ]
   },
@@ -7150,13 +7656,23 @@
    "id": "desempeno_financiero_firma",
    "nombre": "Desempeño financiero de la firma (ROA, ROS, crecimiento)",
    "tipo": "resultado",
-   "grado": 6,
+   "grado": 7,
    "fuentes": [
     "F-130",
     "F-237",
     "F-238",
     "F-359",
-    "F-514"
+    "F-514",
+    "F-997"
+   ]
+  },
+  {
+   "id": "desempeno_firma_rentabilidad_capitalizacion",
+   "nombre": "Rentabilidad y crecimiento de capitalización frente a la industria",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1045"
    ]
   },
   {
@@ -7207,6 +7723,15 @@
    ]
   },
   {
+   "id": "desgaste_participacion_repetida",
+   "nombre": "Desgaste por participar repetidamente",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1049"
+   ]
+  },
+  {
    "id": "design_system",
    "nombre": "Design system (sistema de diseño compartido, p. ej. IBM Carbon)",
    "tipo": "intervencion",
@@ -7231,12 +7756,16 @@
    "id": "design_thinking",
    "nombre": "Design thinking",
    "tipo": "intervencion",
-   "grado": 5,
+   "grado": 11,
    "fuentes": [
+    "F-1050",
     "F-239",
     "F-240",
     "F-393",
-    "F-524"
+    "F-524",
+    "F-989",
+    "F-990",
+    "F-993"
    ]
   },
   {
@@ -7315,6 +7844,15 @@
    ]
   },
   {
+   "id": "despidos_disenadores_2023",
+   "nombre": "Despidos de diseñadores UX en 2023 (14,3% de encuestados de UX Collective)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-994"
+   ]
+  },
+  {
    "id": "despidos_diseno_2026",
    "nombre": "Despidos de roles de producto y diseño en 2026",
    "tipo": "resultado",
@@ -7349,6 +7887,15 @@
    "fuentes": [
     "F-391",
     "F-419"
+   ]
+  },
+  {
+   "id": "destruccion_textiles_no_vendidos",
+   "nombre": "Destrucción de textiles y calzado sin vender",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1026"
    ]
   },
   {
@@ -7435,6 +7982,15 @@
    ]
   },
   {
+   "id": "dificil_evaluar_poder_participacion",
+   "nombre": "Es difícil evaluar si la participación transfiere poder real",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1047"
+   ]
+  },
+  {
    "id": "difusion_responsabilidad",
    "nombre": "Difusión de la responsabilidad",
    "tipo": "constructo",
@@ -7451,6 +8007,15 @@
    "fuentes": [
     "F-107",
     "F-108"
+   ]
+  },
+  {
+   "id": "directiva_derecho_reparar",
+   "nombre": "Directiva europea de derecho a reparar (2024)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1027"
    ]
   },
   {
@@ -7509,6 +8074,15 @@
    ]
   },
   {
+   "id": "disenadores_peru",
+   "nombre": "Diseñadores y líderes de diseño en empresas peruanas",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-996"
+   ]
+  },
+  {
    "id": "disenadores_plataformas_espaciales",
    "nombre": "Solo ~5% de diseñadores construye para plataformas espaciales reales",
    "tipo": "resultado",
@@ -7521,9 +8095,10 @@
    "id": "disenadores_profesionales",
    "nombre": "Diseñadores profesionales",
    "tipo": "poblacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-522"
+    "F-522",
+    "F-994"
    ]
   },
   {
@@ -7570,9 +8145,10 @@
    "id": "diseno_industrial_efectivo",
    "nombre": "Efectividad de diseño industrial",
    "tipo": "constructo",
-   "grado": 2,
+   "grado": 4,
    "fuentes": [
-    "F-237"
+    "F-237",
+    "F-997"
    ]
   },
   {
@@ -7605,6 +8181,16 @@
    ]
   },
   {
+   "id": "diseno_participativo_ia",
+   "nombre": "Diseño participativo de sistemas de IA y aprendizaje automático",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-1046",
+    "F-1047"
+   ]
+  },
+  {
    "id": "diseno_publico",
    "nombre": "Diseño público y de servicios en el gobierno",
    "tipo": "intervencion",
@@ -7617,8 +8203,9 @@
    "id": "diseno_social_especulativo",
    "nombre": "Diseño social y diseño especulativo",
    "tipo": "concepto",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-1048",
     "F-277"
    ]
   },
@@ -7681,6 +8268,15 @@
     "F-872",
     "F-873",
     "F-874"
+   ]
+  },
+  {
+   "id": "dispositivo_ia_humane",
+   "nombre": "Humane AI Pin (dispositivo de IA portátil)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1010"
    ]
   },
   {
@@ -7834,6 +8430,15 @@
    ]
   },
   {
+   "id": "durabilidad_productos",
+   "nombre": "Alargar la vida útil de los productos",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1034"
+   ]
+  },
+  {
    "id": "duracion_consulta",
    "nombre": "Duración de la consulta médica",
    "tipo": "resultado",
@@ -7955,6 +8560,26 @@
    "grado": 1,
    "fuentes": [
     "F-608"
+   ]
+  },
+  {
+   "id": "ecodiseno_etiquetado_energetico",
+   "nombre": "Ecodiseño y etiquetado energético de la UE",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-1032"
+   ]
+  },
+  {
+   "id": "economia_circular",
+   "nombre": "Economía circular (cerrar ciclos de material: reuso, remanufactura, reciclaje)",
+   "tipo": "concepto",
+   "grado": 4,
+   "fuentes": [
+    "F-1028",
+    "F-1031",
+    "F-1040"
    ]
   },
   {
@@ -8128,6 +8753,15 @@
    ]
   },
   {
+   "id": "efecto_salud_no_probado",
+   "nombre": "Efecto en la salud a largo plazo no probado",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1001"
+   ]
+  },
+  {
    "id": "efecto_stroop",
    "nombre": "Efecto Stroop (tardar más en nombrar el color de la tinta cuando la palabra escrita es otro color)",
    "tipo": "resultado",
@@ -8200,6 +8834,15 @@
    ]
   },
   {
+   "id": "eliminacion_ejecutivos_diseno",
+   "nombre": "Eliminación de cargos ejecutivos de diseño en grandes empresas (IBM, Expedia)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-994"
+   ]
+  },
+  {
    "id": "elliot_2007_est",
    "nombre": "Estudio Elliot et al. 2007 (efecto del rojo en el logro)",
    "tipo": "estudio",
@@ -8209,12 +8852,32 @@
    ]
   },
   {
+   "id": "emisiones_co2",
+   "nombre": "Emisiones de CO2",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1034",
+    "F-1039"
+   ]
+  },
+  {
    "id": "emisor_experto",
    "nombre": "Presentar al emisor como experto",
    "tipo": "intervencion",
    "grado": 1,
    "fuentes": [
     "F-337"
+   ]
+  },
+  {
+   "id": "empaque_prueba_ninos",
+   "nombre": "Empaque a prueba de niños (medicamentos y aspirina)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-1000",
+    "F-999"
    ]
   },
   {
@@ -8253,6 +8916,24 @@
    "grado": 2,
    "fuentes": [
     "F-239"
+   ]
+  },
+  {
+   "id": "emprendedores_peru",
+   "nombre": "Emprendedores y pequeños negocios en Perú",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1053"
+   ]
+  },
+  {
+   "id": "empresas_europeas_innobarometer",
+   "nombre": "Empresas europeas de la encuesta Innobarometer (más de 12.000)",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-987"
    ]
   },
   {
@@ -8364,6 +9045,15 @@
    "grado": 2,
    "fuentes": [
     "F-87"
+   ]
+  },
+  {
+   "id": "enfoque_cientifico_emprendimiento",
+   "nombre": "Enfoque científico de decisión emprendedora (formular hipótesis y testearlas)",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-988"
    ]
   },
   {
@@ -8564,6 +9254,15 @@
    ]
   },
   {
+   "id": "escritorio_de_pie",
+   "nombre": "Escritorio de pie (sentarse y pararse) en el trabajo",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1001"
+   ]
+  },
+  {
    "id": "escrutinio_revision",
    "nombre": "Escrutinio activo en la revisión (comentarios en línea)",
    "tipo": "resultado",
@@ -8712,6 +9411,15 @@
    ]
   },
   {
+   "id": "estudio_laboratorio_pequeno_financiado",
+   "nombre": "Estudio de laboratorio pequeño (n=24) financiado por la industria",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1018"
+   ]
+  },
+  {
    "id": "estudio_norc_fraude_2026",
    "nombre": "Trabajo con NORC (2026) que estima 31% de fraude en encuestas online",
    "tipo": "estudio",
@@ -8758,6 +9466,18 @@
    ]
   },
   {
+   "id": "etiquetado_frontal_advertencias",
+   "nombre": "Etiquetado frontal de advertencia en alimentos (sellos u octógonos)",
+   "tipo": "intervencion",
+   "grado": 8,
+   "fuentes": [
+    "F-1005",
+    "F-1006",
+    "F-1007",
+    "F-1008"
+   ]
+  },
+  {
    "id": "european_accessibility_act",
    "nombre": "European Accessibility Act (exigible 28-jun-2025)",
    "tipo": "intervencion",
@@ -8781,8 +9501,9 @@
    "id": "evaluacion_resultados_codiseno",
    "nombre": "Evaluación de resultados del codiseño",
    "tipo": "metrica",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
+    "F-1041",
     "F-252"
    ]
   },
@@ -8837,6 +9558,15 @@
    ]
   },
   {
+   "id": "evidencia_calidad_baja",
+   "nombre": "Calidad de la evidencia baja o muy baja (estudios pequeños, mal ejecutados o mal reportados)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1002"
+   ]
+  },
+  {
    "id": "evidencia_creativa_blog",
    "nombre": "Evidencia Creativa 2026: reproducción en español de 'AI in Design 2026'",
    "tipo": "estudio",
@@ -8873,6 +9603,15 @@
    "grado": 1,
    "fuentes": [
     "F-582"
+   ]
+  },
+  {
+   "id": "exceso_prospectiva",
+   "nombre": "Exceso de prospectiva (más preparación de la necesaria)",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-1045"
    ]
   },
   {
@@ -8985,10 +9724,11 @@
    "id": "experiencia_cliente_seguros",
    "nombre": "Experiencia del cliente (CX) en aseguradoras",
    "tipo": "constructo",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
     "F-359",
-    "F-81"
+    "F-81",
+    "F-995"
    ]
   },
   {
@@ -9187,6 +9927,15 @@
    "grado": 1,
    "fuentes": [
     "F-60"
+   ]
+  },
+  {
+   "id": "falla_diseno_dispositivo",
+   "nombre": "Fallas de diseño del aparato o de su software en dispositivos médicos",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-1003"
    ]
   },
   {
@@ -9527,12 +10276,30 @@
    ]
   },
   {
+   "id": "forrester_tei_ibm_design_thinking",
+   "nombre": "Forrester TEI de la práctica de design thinking de IBM (2018, encargado por IBM)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-986"
+   ]
+  },
+  {
    "id": "forrester_tei_invision",
    "nombre": "Forrester TEI de InVision (2019, comisionado por el vendor): 475% de ROI",
    "tipo": "estudio",
    "grado": 3,
    "fuentes": [
     "F-328"
+   ]
+  },
+  {
+   "id": "fracaso_dispositivo_hardware",
+   "nombre": "Fracaso comercial de un dispositivo (devoluciones mayores que ventas, venta de activos bajo lo invertido)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1010"
    ]
   },
   {
@@ -9697,8 +10464,10 @@
    "id": "fuente_secundaria_no_primaria",
    "nombre": "Cifra vista solo en fuentes secundarias, sin acceso al documento original",
    "tipo": "limitacion",
-   "grado": 6,
+   "grado": 8,
    "fuentes": [
+    "F-1023",
+    "F-1025",
     "F-129",
     "F-130",
     "F-133",
@@ -9807,6 +10576,15 @@
    ]
   },
   {
+   "id": "gasto_energetico_hogares",
+   "nombre": "Gasto de los consumidores en energía",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1032"
+   ]
+  },
+  {
    "id": "gasto_farmaceutico_empleador",
    "nombre": "Gasto farmacéutico de los planes de salud de empleadores",
    "tipo": "resultado",
@@ -9828,8 +10606,9 @@
    "id": "gasto_salud",
    "nombre": "Gasto en atención de salud",
    "tipo": "resultado",
-   "grado": 9,
+   "grado": 10,
    "fuentes": [
+    "F-1043",
     "F-110",
     "F-202",
     "F-329",
@@ -10031,6 +10810,15 @@
    ]
   },
   {
+   "id": "gobierno_flandes",
+   "nombre": "Gobierno de Flandes (Bélgica)",
+   "tipo": "organizacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1051"
+   ]
+  },
+  {
    "id": "gov_uk",
    "nombre": "GOV.UK (servicios digitales del gobierno británico)",
    "tipo": "organizacion",
@@ -10056,6 +10844,15 @@
    "grado": 1,
    "fuentes": [
     "F-315"
+   ]
+  },
+  {
+   "id": "grupos_desfavorecidos",
+   "nombre": "Grupos socialmente desfavorecidos",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1042"
    ]
   },
   {
@@ -10101,6 +10898,15 @@
    "grado": 1,
    "fuentes": [
     "F-387"
+   ]
+  },
+  {
+   "id": "habitaciones_hospital_individuales",
+   "nombre": "Habitaciones individuales en el hospital",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1013"
    ]
   },
   {
@@ -10223,6 +11029,24 @@
     "F-750",
     "F-754",
     "F-788"
+   ]
+  },
+  {
+   "id": "hoja_ruta_circular_peru_2030",
+   "nombre": "Segunda Hoja de Ruta de Economía Circular de la industria y comercio del Perú al 2030 (Produce)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1030"
+   ]
+  },
+  {
+   "id": "homicidios_violencia_barrio",
+   "nombre": "Homicidios y violencia percibida en el barrio",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1017"
    ]
   },
   {
@@ -10513,6 +11337,15 @@
    ]
   },
   {
+   "id": "impacto_declarado_octogonos",
+   "nombre": "Impacto declarado de los octógonos en las compras (Lima)",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1008"
+   ]
+  },
+  {
    "id": "impacto_pyg_genai",
    "nombre": "Impacto medible en el estado de resultados de la IA generativa",
    "tipo": "resultado",
@@ -10662,6 +11495,34 @@
    ]
   },
   {
+   "id": "indice_innovacion_publica",
+   "nombre": "Índice de Innovación Pública (Chile)",
+   "tipo": "metrica",
+   "grado": 2,
+   "fuentes": [
+    "F-1052"
+   ]
+  },
+  {
+   "id": "indice_reparabilidad_francia",
+   "nombre": "Índice de reparabilidad francés (etiqueta de 2021)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1035"
+   ]
+  },
+  {
+   "id": "industria_moda",
+   "nombre": "Industria de la moda y la confección",
+   "tipo": "poblacion",
+   "grado": 2,
+   "fuentes": [
+    "F-1037",
+    "F-1038"
+   ]
+  },
+  {
    "id": "industria_no_manufacturera",
    "nombre": "Industrias no manufactureras",
    "tipo": "poblacion",
@@ -10769,6 +11630,15 @@
    "grado": 2,
    "fuentes": [
     "F-673"
+   ]
+  },
+  {
+   "id": "informe_mckinsey_cx_seguros",
+   "nombre": "Informe de McKinsey sobre experiencia de cliente en seguros (no visto)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-995"
    ]
   },
   {
@@ -10944,8 +11814,9 @@
    "id": "innovation_rate_henkel",
    "nombre": "Innovation rate de Henkel (participación en ventas de productos recientes; ~30% del grupo en 2017)",
    "tipo": "metrica",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-1057",
     "F-532"
    ]
   },
@@ -11104,6 +11975,24 @@
    ]
   },
   {
+   "id": "intentos_dejar_fumar",
+   "nombre": "Intentos de dejar de fumar",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1004"
+   ]
+  },
+  {
+   "id": "interaccion_cara_a_cara",
+   "nombre": "Interacción cara a cara entre colegas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1012"
+   ]
+  },
+  {
    "id": "interaccion_inicial",
    "nombre": "Etapa inicial de la interacción interpersonal",
    "tipo": "concepto",
@@ -11128,6 +12017,15 @@
    "grado": 3,
    "fuentes": [
     "F-639"
+   ]
+  },
+  {
+   "id": "interes_clientes_startup",
+   "nombre": "Interés de clientes y desempeño temprano de la startup",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-988"
    ]
   },
   {
@@ -11219,6 +12117,15 @@
    ]
   },
   {
+   "id": "intervencion_ergonomica_oficina",
+   "nombre": "Intervenciones ergonómicas en oficinas (físicas, organizacionales o cognitivas)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1002"
+   ]
+  },
+  {
    "id": "intrusividad_percibida",
    "nombre": "Intrusividad percibida",
    "tipo": "constructo",
@@ -11234,6 +12141,15 @@
    "grado": 1,
    "fuentes": [
     "F-726"
+   ]
+  },
+  {
+   "id": "inversion_diseno",
+   "nombre": "Inversión de la empresa en diseño",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-991"
    ]
   },
   {
@@ -11257,6 +12173,15 @@
    ]
   },
   {
+   "id": "inversion_intensa_diseno",
+   "nombre": "Inversión intensa en diseño (efecto no lineal)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-987"
+   ]
+  },
+  {
    "id": "inversion_investigacion_sintetica",
    "nombre": "Capital de riesgo invertido en investigación sintética",
    "tipo": "resultado",
@@ -11277,6 +12202,15 @@
    "fuentes": [
     "F-222",
     "F-713"
+   ]
+  },
+  {
+   "id": "investigacion_comunitaria",
+   "nombre": "Investigación con comunidades",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1049"
    ]
   },
   {
@@ -11359,6 +12293,15 @@
    "grado": 2,
    "fuentes": [
     "F-574"
+   ]
+  },
+  {
+   "id": "islas_excelencia",
+   "nombre": "Capacidad concentrada en islas de excelencia, integración incipiente",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1051"
    ]
   },
   {
@@ -11600,8 +12543,9 @@
    "id": "labs_innovacion_publica",
    "nombre": "Laboratorios de innovación pública",
    "tipo": "organizacion",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
+    "F-1052",
     "F-959",
     "F-960",
     "F-961"
@@ -12601,9 +13545,19 @@
    "id": "medicion_economia_diseno",
    "nombre": "Medición de la economía del diseño del Reino Unido (GVA y empleo)",
    "tipo": "metrica",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
-    "F-263"
+    "F-263",
+    "F-998"
+   ]
+  },
+  {
+   "id": "medicion_por_encuesta_muestra_incierta",
+   "nombre": "Preparación medida por encuesta y tamaño de muestra no confirmado",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1045"
    ]
   },
   {
@@ -12717,6 +13671,15 @@
    "grado": 1,
    "fuentes": [
     "F-210"
+   ]
+  },
+  {
+   "id": "menor_variacion_sinteticos",
+   "nombre": "Menor variación entre encuestados sintéticos que entre personas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1061"
    ]
   },
   {
@@ -12905,6 +13868,15 @@
    ]
   },
   {
+   "id": "meta_innovacion_henkel_30",
+   "nombre": "Meta de Henkel: 30% de ventas de productos de los últimos tres años",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1058"
+   ]
+  },
+  {
    "id": "meta_ventas_innovacion_dsm",
    "nombre": "Meta de DSM (2010): llevar las ventas de innovación de ~12% a ~20% hacia 2015",
    "tipo": "intervencion",
@@ -13019,6 +13991,15 @@
    ]
   },
   {
+   "id": "microseguros_emprendedores_peru",
+   "nombre": "Microseguros simples para emprendedores en Perú (A Tu Lado MAPFRE)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1053"
+   ]
+  },
+  {
    "id": "microsoft_exp",
    "nombre": "Plataforma de experimentación de Microsoft (ExP)",
    "tipo": "organizacion",
@@ -13047,6 +14028,15 @@
     "F-810",
     "F-814",
     "F-844"
+   ]
+  },
+  {
+   "id": "mide_percepcion_no_resultado",
+   "nombre": "Mide percepción de funcionarios, no resultados de políticas",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1052"
    ]
   },
   {
@@ -13234,6 +14224,15 @@
    ]
   },
   {
+   "id": "modelo_participacion",
+   "nombre": "Modelo o grado de participación de la comunidad",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-1042"
+   ]
+  },
+  {
    "id": "modelos_chatgpt",
    "nombre": "Modelos ChatGPT-3.5 y 4",
    "tipo": "intervencion",
@@ -13306,11 +14305,23 @@
    ]
   },
   {
-   "id": "mortalidad_temprana",
-   "nombre": "Mortalidad fetal, infantil y de la niñez",
+   "id": "mortalidad_infantil_intoxicacion",
+   "nombre": "Muertes de niños por intoxicación con medicamentos",
    "tipo": "resultado",
    "grado": 2,
    "fuentes": [
+    "F-1000",
+    "F-999"
+   ]
+  },
+  {
+   "id": "mortalidad_temprana",
+   "nombre": "Mortalidad fetal, infantil y de la niñez",
+   "tipo": "resultado",
+   "grado": 4,
+   "fuentes": [
+    "F-1043",
+    "F-1044",
     "F-750"
    ]
   },
@@ -13338,9 +14349,10 @@
    "id": "muestra_autoseleccionada",
    "nombre": "Muestra autoseleccionada",
    "tipo": "limitacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-270"
+    "F-270",
+    "F-994"
    ]
   },
   {
@@ -13359,6 +14371,15 @@
    "grado": 1,
    "fuentes": [
     "F-523"
+   ]
+  },
+  {
+   "id": "muestra_pequena_retrospectiva",
+   "nombre": "Estudio retrospectivo y observacional con muestra pequeña",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1011"
    ]
   },
   {
@@ -13447,6 +14468,15 @@
    "grado": 1,
    "fuentes": [
     "F-33"
+   ]
+  },
+  {
+   "id": "municipios_brasil",
+   "nombre": "Municipios de Brasil",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1044"
    ]
   },
   {
@@ -13632,12 +14662,30 @@
    ]
   },
   {
+   "id": "no_mide_consumo",
+   "nombre": "Mide etiquetas, no consumo real",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1007"
+   ]
+  },
+  {
    "id": "no_renovacion_pagador",
    "nombre": "El pagador (Centene, ~50% del revenue) no renueva el contrato de triaje digital",
    "tipo": "concepto",
    "grado": 1,
    "fuentes": [
     "F-358"
+   ]
+  },
+  {
+   "id": "no_separa_reformulacion",
+   "nombre": "No separa el cambio de conducta del consumidor de la reformulación de los productos",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1005"
    ]
   },
   {
@@ -13742,6 +14790,15 @@
    "fuentes": [
     "F-849",
     "F-850"
+   ]
+  },
+  {
+   "id": "nota_prensa_proveedor",
+   "nombre": "Nota de prensa del proveedor, método no visible",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1039"
    ]
   },
   {
@@ -13926,6 +14983,15 @@
    ]
   },
   {
+   "id": "oficina_planta_abierta",
+   "nombre": "Oficina de planta abierta (open office)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1012"
+   ]
+  },
+  {
    "id": "omision_involuntaria_declaracion",
    "nombre": "Omisión involuntaria de algo leve o desconocido en la declaración de salud",
    "tipo": "concepto",
@@ -14057,6 +15123,24 @@
    ]
   },
   {
+   "id": "organizacion_modelo_compuesta",
+   "nombre": "Organización modelo compuesta a partir de pocas entrevistas (no una empresa real)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-986"
+   ]
+  },
+  {
+   "id": "organizaciones_civiles",
+   "nombre": "Número de organizaciones de la sociedad civil",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1044"
+   ]
+  },
+  {
    "id": "oscar_health",
    "nombre": "Oscar Health (aseguradora de salud cotizada, EE.UU.)",
    "tipo": "organizacion",
@@ -14082,6 +15166,15 @@
    "grado": 1,
    "fuentes": [
     "F-918"
+   ]
+  },
+  {
+   "id": "pacientes_multimorbilidad",
+   "nombre": "Personas con multimorbilidad (varias enfermedades crónicas a la vez)",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1041"
    ]
   },
   {
@@ -14215,6 +15308,15 @@
    ]
   },
   {
+   "id": "participacion_comunitaria_salud",
+   "nombre": "Participación comunitaria en intervenciones de salud pública",
+   "tipo": "intervencion",
+   "grado": 5,
+   "fuentes": [
+    "F-1042"
+   ]
+  },
+  {
    "id": "participacion_eeuu_primas_mundiales",
    "nombre": "Participación de EE.UU. en las primas de seguros mundiales",
    "tipo": "resultado",
@@ -14234,6 +15336,15 @@
    ]
   },
   {
+   "id": "participacion_superficial",
+   "nombre": "Participación superficial o de fachada",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-1046"
+   ]
+  },
+  {
    "id": "participantes_plataformas_encuestas",
    "nombre": "Participantes de plataformas de encuestas online (Prolific, MTurk y otras)",
    "tipo": "poblacion",
@@ -14249,6 +15360,15 @@
    "grado": 1,
    "fuentes": [
     "F-83"
+   ]
+  },
+  {
+   "id": "pasaporte_digital_producto",
+   "nombre": "Pasaporte digital de producto",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1026"
    ]
   },
   {
@@ -14378,6 +15498,15 @@
    ]
   },
   {
+   "id": "percepcion_inseguridad_barrio",
+   "nombre": "Crimen e inseguridad percibidos en el barrio",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1014"
+   ]
+  },
+  {
    "id": "percepcion_lucro_aseguradora_salud",
    "nombre": "Percepción de que la aseguradora de salud prioriza lucro y costos sobre necesidades individuales",
    "tipo": "constructo",
@@ -14414,6 +15543,15 @@
    "grado": 1,
    "fuentes": [
     "F-114"
+   ]
+  },
+  {
+   "id": "perfil_nutricional_envasados",
+   "nombre": "Perfil nutricional de los alimentos envasados",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1007"
    ]
   },
   {
@@ -14536,6 +15674,33 @@
    ]
   },
   {
+   "id": "pertinencia_usabilidad_aceptacion",
+   "nombre": "Pertinencia, usabilidad y aceptación del servicio diseñado",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1041"
+   ]
+  },
+  {
+   "id": "peru",
+   "nombre": "Perú",
+   "tipo": "poblacion",
+   "grado": 2,
+   "fuentes": [
+    "F-1030"
+   ]
+  },
+  {
+   "id": "peru_alimentos",
+   "nombre": "Mercado de alimentos y bebidas envasados del Perú",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1006"
+   ]
+  },
+  {
    "id": "pesca_anchoveta",
    "nombre": "Pesca de anchoveta y harina de pescado",
    "tipo": "resultado",
@@ -14561,6 +15726,15 @@
    "grado": 1,
    "fuentes": [
     "F-579"
+   ]
+  },
+  {
+   "id": "pib_empleo",
+   "nombre": "PIB y empleo",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1040"
    ]
   },
   {
@@ -14647,6 +15821,15 @@
    "fuentes": [
     "F-774",
     "F-784"
+   ]
+  },
+  {
+   "id": "plan_reconstruccion_2017",
+   "nombre": "Plan de reconstrucción del Niño Costero 2017 (S/25.655 M, ~4% del PBI)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1055"
    ]
   },
   {
@@ -14741,12 +15924,30 @@
    ]
   },
   {
+   "id": "poder_existente",
+   "nombre": "Relaciones de poder existentes",
+   "tipo": "constructo",
+   "grado": 1,
+   "fuentes": [
+    "F-1046"
+   ]
+  },
+  {
    "id": "poder_explicativo_limitado_encarnada",
    "nombre": "La cognición encarnada no aporta explicaciones nuevas a los problemas clásicos de la psicología experimental",
    "tipo": "limitacion",
    "grado": 1,
    "fuentes": [
     "F-692"
+   ]
+  },
+  {
+   "id": "poder_real_participantes",
+   "nombre": "Poder real que la participación da a las personas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1047"
    ]
   },
   {
@@ -14822,6 +16023,15 @@
    "grado": 2,
    "fuentes": [
     "F-218"
+   ]
+  },
+  {
+   "id": "practicas_extractivas",
+   "nombre": "Prácticas de investigación extractivas y transaccionales, y participación simbólica previa",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-1049"
    ]
   },
   {
@@ -14969,6 +16179,15 @@
    ]
   },
   {
+   "id": "predicado_retirado_510k",
+   "nombre": "Autorización FDA 510(k) basada en un dispositivo ya retirado",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1003"
+   ]
+  },
+  {
    "id": "prediccion_conducta_humana",
    "nombre": "Predicción de la conducta de participantes no vistos en experimentos",
    "tipo": "resultado",
@@ -15107,6 +16326,15 @@
    ]
   },
   {
+   "id": "prensa_sin_metodo",
+   "nombre": "Prensa que cita a otro medio, sin método propio",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1010"
+   ]
+  },
+  {
    "id": "preocupacion_privacidad_situacional",
    "nombre": "Preocupación por la privacidad activada por la situación",
    "tipo": "constructo",
@@ -15195,6 +16423,16 @@
    ]
   },
   {
+   "id": "presupuesto_participativo",
+   "nombre": "Presupuesto participativo municipal",
+   "tipo": "intervencion",
+   "grado": 5,
+   "fuentes": [
+    "F-1043",
+    "F-1044"
+   ]
+  },
+  {
    "id": "prevalencia_agentes_encuestas",
    "nombre": "Prevalencia de agentes de IA entre participantes de encuestas online",
    "tipo": "resultado",
@@ -15250,6 +16488,15 @@
    ]
   },
   {
+   "id": "primas_netas_ajuste_reservas_1s_2026",
+   "nombre": "Primas netas con ajuste de reservas del sistema peruano en el 1S 2026 (+8%)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1054"
+   ]
+  },
+  {
    "id": "primas_peru",
    "nombre": "Primas netas de Perú (S/24.034 M a dic-2025, +8,3%)",
    "tipo": "resultado",
@@ -15280,8 +16527,9 @@
    "id": "primas_sistema_1s_2026",
    "nombre": "Primas netas del sistema peruano en el 1S 2026 (+1,1%)",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-1054",
     "F-506"
    ]
   },
@@ -15341,6 +16589,15 @@
    ]
   },
   {
+   "id": "probabilidad_innovar",
+   "nombre": "Probabilidad de que la empresa innove",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-987"
+   ]
+  },
+  {
    "id": "problema_dificil_conciencia",
    "nombre": "Problema difícil de la conciencia (por qué hay experiencia subjetiva)",
    "tipo": "constructo",
@@ -15377,6 +16634,26 @@
    ]
   },
   {
+   "id": "produccion_innovacion",
+   "nombre": "Producción de innovación del equipo o la empresa",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-989",
+    "F-991"
+   ]
+  },
+  {
+   "id": "produccion_total_material",
+   "nombre": "Producción y consumo total de material",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1028",
+    "F-1031"
+   ]
+  },
+  {
    "id": "productividad_agregada_g7",
    "nombre": "Crecimiento de la productividad laboral agregada (G7)",
    "tipo": "metrica",
@@ -15395,6 +16672,15 @@
     "F-257",
     "F-474",
     "F-503"
+   ]
+  },
+  {
+   "id": "productividad_empresa",
+   "nombre": "Productividad de la empresa",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-991"
    ]
   },
   {
@@ -15525,9 +16811,19 @@
    "id": "pronosticos_electorales_aaru",
    "nombre": "Pronósticos electorales de Aaru en 2024 (Haley en New Hampshire, Harris en el Colegio Electoral)",
    "tipo": "resultado",
-   "grado": 3,
+   "grado": 4,
    "fuentes": [
+    "F-1060",
     "F-628"
+   ]
+  },
+  {
+   "id": "pronosticos_tradicionales_2024",
+   "nombre": "Pronosticadores tradicionales que también favorecían a Harris en 2024",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1060"
    ]
   },
   {
@@ -15547,6 +16843,33 @@
    "fuentes": [
     "F-137",
     "F-139"
+   ]
+  },
+  {
+   "id": "prospectiva_corporativa",
+   "nombre": "Prospectiva corporativa (preparación de la empresa para el futuro)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1045"
+   ]
+  },
+  {
+   "id": "prospectiva_gobierno",
+   "nombre": "Prospectiva estratégica en el gobierno",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-1051"
+   ]
+  },
+  {
+   "id": "proteccion_parcial_empaque",
+   "nombre": "La protección del empaque a prueba de niños es parcial (no elimina las intoxicaciones)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1000"
    ]
   },
   {
@@ -15605,8 +16928,10 @@
    "id": "proyeccion_no_medicion",
    "nombre": "Es una proyección, no una medición",
    "tipo": "limitacion",
-   "grado": 13,
+   "grado": 15,
    "fuentes": [
+    "F-1034",
+    "F-1040",
     "F-135",
     "F-190",
     "F-206",
@@ -15629,6 +16954,15 @@
    "grado": 2,
    "fuentes": [
     "F-217"
+   ]
+  },
+  {
+   "id": "proyeccion_sin_evaluacion",
+   "nombre": "Meta proyectada sin evaluación de adopción",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1053"
    ]
   },
   {
@@ -15912,6 +17246,16 @@
    ]
   },
   {
+   "id": "rebote_economia_circular",
+   "nombre": "Efecto rebote de la economía circular (más producción total que anula el beneficio)",
+   "tipo": "constructo",
+   "grado": 3,
+   "fuentes": [
+    "F-1028",
+    "F-1029"
+   ]
+  },
+  {
    "id": "recesion_2023_peru",
    "nombre": "Recesión y alza de pobreza en Perú 2023",
    "tipo": "resultado",
@@ -15928,6 +17272,15 @@
    "fuentes": [
     "F-484",
     "F-485"
+   ]
+  },
+  {
+   "id": "reciclaje_material",
+   "nombre": "Volumen de material reciclado",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1031"
    ]
   },
   {
@@ -15991,10 +17344,11 @@
    "id": "recorte_ideo_2023",
    "nombre": "Recorte de 32% de la plantilla de IDEO y cierre de oficinas (2023)",
    "tipo": "concepto",
-   "grado": 2,
+   "grado": 5,
    "fuentes": [
     "F-317",
-    "F-963"
+    "F-963",
+    "F-992"
    ]
   },
   {
@@ -16017,12 +17371,30 @@
    ]
   },
   {
+   "id": "recuperacion_postquirurgica",
+   "nombre": "Recuperación postquirúrgica (estancia, analgésicos, notas de enfermería)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1011"
+   ]
+  },
+  {
    "id": "recursos_insuficientes_equipos_ds",
    "nombre": "Recursos insuficientes en equipos de design system (61% con ≤5 personas; 23% con recursos adecuados)",
    "tipo": "resultado",
    "grado": 1,
    "fuentes": [
     "F-396"
+   ]
+  },
+  {
+   "id": "red_oficinas_bancarias_peru",
+   "nombre": "Red de oficinas bancarias en Perú",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1025"
    ]
   },
   {
@@ -16100,6 +17472,15 @@
    ]
   },
   {
+   "id": "reformulacion_productos",
+   "nombre": "Reformulación de productos procesados (menos azúcar, más edulcorantes no calóricos)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1006"
+   ]
+  },
+  {
    "id": "registro_gracias_no_insista",
    "nombre": "Registro 'Gracias... no insista' de Indecopi (opt-out por lista)",
    "tipo": "intervencion",
@@ -16172,6 +17553,15 @@
    ]
   },
   {
+   "id": "reglamento_ecodiseno_espr",
+   "nombre": "Reglamento europeo de ecodiseño para productos sostenibles (ESPR, 2024)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1026"
+   ]
+  },
+  {
    "id": "reglamento_lpdp_2025",
    "nombre": "Reglamento de la Ley de Protección de Datos Personales (vigente desde 31-mar-2025)",
    "tipo": "intervencion",
@@ -16221,6 +17611,17 @@
    "grado": 1,
    "fuentes": [
     "F-343"
+   ]
+  },
+  {
+   "id": "rehabilitacion_lotes_baldios",
+   "nombre": "Rehabilitación de lotes baldíos (limpieza, corte de pasto o siembra de verde)",
+   "tipo": "intervencion",
+   "grado": 6,
+   "fuentes": [
+    "F-1014",
+    "F-1015",
+    "F-1016"
    ]
   },
   {
@@ -16280,6 +17681,15 @@
    ]
   },
   {
+   "id": "renewcell",
+   "nombre": "Renewcell (recicladora textil sueca, hoy Circulose)",
+   "tipo": "organizacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1038"
+   ]
+  },
+  {
    "id": "rentabilidad_gaap_lemonade",
    "nombre": "Rentabilidad GAAP de Lemonade (no esperada hasta 2027)",
    "tipo": "resultado",
@@ -16307,6 +17717,24 @@
     "F-504",
     "F-505",
     "F-506"
+   ]
+  },
+  {
+   "id": "reparacion_piezas_verdes_siniestros",
+   "nombre": "Reparar y usar piezas recuperadas en siniestros vehiculares en vez de reemplazar",
+   "tipo": "intervencion",
+   "grado": 3,
+   "fuentes": [
+    "F-1039"
+   ]
+  },
+  {
+   "id": "reparacion_productos",
+   "nombre": "Reparación de productos en lugar de reemplazo",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1027"
    ]
   },
   {
@@ -16383,6 +17811,15 @@
    ]
   },
   {
+   "id": "representacion_gerencial_disenadores",
+   "nombre": "Representación de diseñadores en cargos gerenciales o de poder",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-996"
+   ]
+  },
+  {
    "id": "representacion_logaritmica_numero",
    "nombre": "Representación logarítmica de la cantidad en el cerebro",
    "tipo": "concepto",
@@ -16434,6 +17871,15 @@
    "grado": 2,
    "fuentes": [
     "F-76"
+   ]
+  },
+  {
+   "id": "respuesta_compra_punto_venta",
+   "nombre": "Respuestas de compra del cliente en el punto de venta",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1019"
    ]
   },
   {
@@ -16495,9 +17941,10 @@
    "id": "resultados_design_thinking",
    "nombre": "Resultados individuales y organizacionales de un proyecto de design thinking",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
-    "F-524"
+    "F-524",
+    "F-989"
    ]
   },
   {
@@ -16547,6 +17994,15 @@
    ]
   },
   {
+   "id": "retiro_dispositivo_medico",
+   "nombre": "Retiro grave (clase I) de dispositivos médicos del mercado en EE.UU.",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1003"
+   ]
+  },
+  {
    "id": "retoque_visual_interfaz",
    "nombre": "Retoques visuales de la interfaz (color, estilo) sin cambiar la estructura",
    "tipo": "intervencion",
@@ -16554,6 +18010,24 @@
    "fuentes": [
     "F-883",
     "F-900"
+   ]
+  },
+  {
+   "id": "retorno_accionista_aseguradoras",
+   "nombre": "Retorno total al accionista de las aseguradoras",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-995"
+   ]
+  },
+  {
+   "id": "retorno_bursatil_firma",
+   "nombre": "Retorno bursátil de la empresa",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-997"
    ]
   },
   {
@@ -16599,6 +18073,15 @@
    "grado": 1,
    "fuentes": [
     "F-467"
+   ]
+  },
+  {
+   "id": "reuso_celulares",
+   "nombre": "Reuso de teléfonos celulares",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1029"
    ]
   },
   {
@@ -17095,6 +18578,15 @@
    ]
   },
   {
+   "id": "satisfaccion_sucursal_bancaria",
+   "nombre": "Satisfacción del cliente en la sucursal bancaria",
+   "tipo": "resultado",
+   "grado": 2,
+   "fuentes": [
+    "F-1024"
+   ]
+  },
+  {
    "id": "satisfaccion_telesalud",
    "nombre": "Satisfacción del paciente con la telesalud",
    "tipo": "resultado",
@@ -17303,6 +18795,15 @@
    ]
   },
   {
+   "id": "sello_higg",
+   "nombre": "Índice Higg de la Sustainable Apparel Coalition (sello de cara al consumidor)",
+   "tipo": "intervencion",
+   "grado": 1,
+   "fuentes": [
+    "F-1037"
+   ]
+  },
+  {
    "id": "senal_aislada",
    "nombre": "Señal aislada: una sola pieza sin fecha ni conteo de reacciones",
    "tipo": "limitacion",
@@ -17369,6 +18870,15 @@
     "F-551",
     "F-552",
     "F-554"
+   ]
+  },
+  {
+   "id": "sensor_fugas_agua",
+   "nombre": "Sensor doméstico de fugas de agua conectado (LeakBot)",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1009"
    ]
   },
   {
@@ -17748,12 +19258,30 @@
    ]
   },
   {
+   "id": "sin_marco_evaluacion_prospectiva",
+   "nombre": "No hay marco para evaluar el impacto de la prospectiva",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1051"
+   ]
+  },
+  {
    "id": "sin_mecanismo_fisico_plausible",
    "nombre": "Sin mecanismo físico plausible propuesto",
    "tipo": "limitacion",
    "grado": 1,
    "fuentes": [
     "F-852"
+   ]
+  },
+  {
+   "id": "sin_medicion_impacto",
+   "nombre": "No mide impacto ni resultados",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-1048"
    ]
   },
   {
@@ -17808,6 +19336,24 @@
     "F-279",
     "F-286",
     "F-289"
+   ]
+  },
+  {
+   "id": "siniestros_dano_agua",
+   "nombre": "Frecuencia y severidad de siniestros por daño de agua en el hogar",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1009"
+   ]
+  },
+  {
+   "id": "sintomas_depresivos",
+   "nombre": "Sentirse deprimido (síntomas depresivos)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1015"
    ]
   },
   {
@@ -17991,6 +19537,15 @@
     "F-619",
     "F-621",
     "F-622"
+   ]
+  },
+  {
+   "id": "startups_italianas",
+   "nombre": "Startups italianas en etapa temprana",
+   "tipo": "poblacion",
+   "grado": 1,
+   "fuentes": [
+    "F-988"
    ]
   },
   {
@@ -18182,9 +19737,10 @@
    "id": "tamano_economia_diseno",
    "nombre": "Tamaño de la economía del diseño del Reino Unido",
    "tipo": "resultado",
-   "grado": 1,
+   "grado": 3,
    "fuentes": [
-    "F-263"
+    "F-263",
+    "F-998"
    ]
   },
   {
@@ -18315,6 +19871,15 @@
    "grado": 1,
    "fuentes": [
     "F-91"
+   ]
+  },
+  {
+   "id": "tasa_circularidad_global",
+   "nombre": "Tasa global de circularidad (material de fuentes recicladas: 6,9%)",
+   "tipo": "metrica",
+   "grado": 1,
+   "fuentes": [
+    "F-1031"
    ]
   },
   {
@@ -18479,6 +20044,15 @@
    ]
   },
   {
+   "id": "temas_comunes_design_thinking",
+   "nombre": "Cinco temas comunes del design thinking (foco en el usuario, encuadre del problema, visualización, experimentación, diversidad)",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-990"
+   ]
+  },
+  {
    "id": "tendencia_imperfect_by_design",
    "nombre": "Tendencia 'Imperfect by Design' de Canva para 2026",
    "tipo": "concepto",
@@ -18584,6 +20158,15 @@
    ]
   },
   {
+   "id": "tesis_sin_revision_pares",
+   "nombre": "Tesis de maestría sin revisión por pares",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-996"
+   ]
+  },
+  {
    "id": "texto_no_verificado_bloqueo",
    "nombre": "Contenido no verificado de primera mano (lectura completa bloqueada)",
    "tipo": "limitacion",
@@ -18659,6 +20242,15 @@
    ]
   },
   {
+   "id": "tiempo_sentado_trabajo",
+   "nombre": "Tiempo sentado durante la jornada laboral",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1001"
+   ]
+  },
+  {
    "id": "tiempo_vida_entrelazamiento",
    "nombre": "Tiempo de vida del entrelazamiento de espines nucleares",
    "tipo": "metrica",
@@ -18683,6 +20275,15 @@
    "grado": 1,
    "fuentes": [
     "F-516"
+   ]
+  },
+  {
+   "id": "tipologia_participacion_trabajo_consulta_justicia",
+   "nombre": "Participación como trabajo, como consulta y como justicia",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-1046"
    ]
   },
   {
@@ -18789,6 +20390,15 @@
    ]
   },
   {
+   "id": "trastornos_brazo_cuello",
+   "nombre": "Trastornos musculoesqueléticos de brazo y cuello en oficinistas",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1002"
+   ]
+  },
+  {
    "id": "tres_niveles_precio",
    "nombre": "Página de precios con 3 niveles (good-better-best)",
    "tipo": "intervencion",
@@ -18857,6 +20467,15 @@
    ]
   },
   {
+   "id": "una_sola_empresa",
+   "nombre": "Estudio en una sola empresa (generalización limitada)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-989"
+   ]
+  },
+  {
    "id": "unh_8k_q2_2026",
    "nombre": "8-K de UnitedHealth del Q2 2026 (registrado como F-198)",
    "tipo": "estudio",
@@ -18866,12 +20485,31 @@
    ]
   },
   {
+   "id": "union_europea",
+   "nombre": "Unión Europea (mercado y consumidores)",
+   "tipo": "poblacion",
+   "grado": 2,
+   "fuentes": [
+    "F-1027",
+    "F-1033"
+   ]
+  },
+  {
    "id": "unitedhealth",
    "nombre": "UnitedHealth Group",
    "tipo": "organizacion",
    "grado": 1,
    "fuentes": [
     "F-15"
+   ]
+  },
+  {
+   "id": "urbanismo_social_metrocable",
+   "nombre": "Metrocable y obras de urbanismo social en barrios de Medellín",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1017"
    ]
   },
   {
@@ -18942,6 +20580,15 @@
    "grado": 1,
    "fuentes": [
     "F-587"
+   ]
+  },
+  {
+   "id": "uso_espacio_exterior",
+   "nombre": "Uso del espacio exterior por los vecinos",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1014"
    ]
   },
   {
@@ -19298,6 +20945,15 @@
    ]
   },
   {
+   "id": "valorizacion_residuos_peru",
+   "nombre": "Residuos valorizados en Perú (~4% de 19 mil t/día, dato no verificado)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1030"
+   ]
+  },
+  {
    "id": "valuacion_replit",
    "nombre": "Valuación de Replit (US$9.000 millones, mar-2026)",
    "tipo": "metrica",
@@ -19314,6 +20970,15 @@
    "grado": 2,
    "fuentes": [
     "F-451"
+   ]
+  },
+  {
+   "id": "variabilidad_concepto_design_thinking",
+   "nombre": "El concepto de design thinking varía según la empresa que lo aplica",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-990"
    ]
   },
   {
@@ -19377,6 +21042,16 @@
    "grado": 1,
    "fuentes": [
     "F-626"
+   ]
+  },
+  {
+   "id": "vecinos_ciudad_eeuu",
+   "nombre": "Residentes de barrios urbanos de EE.UU. (Filadelfia)",
+   "tipo": "poblacion",
+   "grado": 2,
+   "fuentes": [
+    "F-1015",
+    "F-1016"
    ]
   },
   {
@@ -19470,10 +21145,20 @@
    "id": "ventas_online",
    "nombre": "Ventas en línea",
    "tipo": "resultado",
-   "grado": 2,
+   "grado": 3,
    "fuentes": [
+    "F-1021",
     "F-914",
     "F-925"
+   ]
+  },
+  {
+   "id": "ventas_por_innovacion",
+   "nombre": "Ventas provenientes de productos innovadores",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-987"
    ]
   },
   {
@@ -19538,6 +21223,15 @@
    ]
   },
   {
+   "id": "viabilidad_negocio_circular",
+   "nombre": "Viabilidad financiera de un negocio circular",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-1038"
+   ]
+  },
+  {
    "id": "vibraciones_microtubulos",
    "nombre": "Vibraciones/resonancias de microtúbulos como origen de ritmos EEG",
    "tipo": "afirmacion",
@@ -19595,6 +21289,15 @@
     "F-332",
     "F-342",
     "F-354"
+   ]
+  },
+  {
+   "id": "vista_naturaleza_ventana",
+   "nombre": "Vista a la naturaleza (árboles) desde la ventana del paciente",
+   "tipo": "intervencion",
+   "grado": 2,
+   "fuentes": [
+    "F-1011"
    ]
   },
   {
@@ -45670,11 +47373,1907 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-25",
    "clase": "evidencia"
+  },
+  {
+   "id": "T-2162",
+   "s": "forrester_tei_ibm_design_thinking",
+   "p": "respalda",
+   "o": "c_design_thinking_ibm_roi_301",
+   "f": "F-986",
+   "apoyo": "Estima beneficios de 48,4 M USD frente a costos de 12 M USD en 3 años: valor presente neto de 36,3 M USD y retorno de 301%.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2163",
+   "s": "c_design_thinking_ibm_roi_301",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendor",
+   "f": "F-986",
+   "apoyo": "Estudio pagado por IBM, que vende la práctica evaluada; se basa en 4 clientes entrevistados, 60 ejecutivos encuestados y una organización modelo compuesta, sin réplica independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2164",
+   "s": "c_design_thinking_ibm_roi_301",
+   "p": "tiene_limite",
+   "o": "organizacion_modelo_compuesta",
+   "f": "F-986",
+   "apoyo": "El retorno se calcula sobre una organización modelo compuesta armada desde pocas entrevistas, no sobre una empresa observada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2165",
+   "s": "centralidad_diseno",
+   "p": "asocia_con",
+   "o": "probabilidad_innovar",
+   "f": "F-987",
+   "apoyo": "En más de 12.000 empresas europeas (Innobarometer), más centralidad del diseño se asocia con más probabilidad de innovar; datos de corte transversal.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2166",
+   "s": "inversion_intensa_diseno",
+   "p": "modera",
+   "o": "ventas_por_innovacion",
+   "f": "F-987",
+   "apoyo": "Las ventas por innovación solo suben en las empresas que invierten intensamente en diseño: la relación no es lineal.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2167",
+   "s": "centralidad_diseno",
+   "p": "aplica_a",
+   "o": "empresas_europeas_innobarometer",
+   "f": "F-987",
+   "apoyo": "Muestra de más de 12.000 empresas europeas de la encuesta Innobarometer de la Comisión Europea.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2168",
+   "s": "enfoque_cientifico_emprendimiento",
+   "p": "aumenta",
+   "o": "interes_clientes_startup",
+   "f": "F-988",
+   "apoyo": "Ensayo aleatorio con 116 startups italianas: las entrenadas en formular hipótesis y testearlas recibieron más del doble de interés de clientes.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2169",
+   "s": "enfoque_cientifico_emprendimiento",
+   "p": "aumenta",
+   "o": "abandono_temprano_malas_ideas",
+   "f": "F-988",
+   "apoyo": "Las startups entrenadas abandonaron antes las malas ideas; réplica del mismo grupo con ~750 empresas en 4 ensayos, sin réplica independiente vista.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2170",
+   "s": "enfoque_cientifico_emprendimiento",
+   "p": "aplica_a",
+   "o": "startups_italianas",
+   "f": "F-988",
+   "apoyo": "El ensayo se hizo con startups italianas en etapa temprana.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2171",
+   "s": "design_thinking",
+   "p": "aumenta",
+   "o": "capacidades_dinamicas_gerenciales",
+   "f": "F-989",
+   "apoyo": "Cuasi-experimento con 529 gerentes de una telecom: el entrenamiento en design thinking, frente a un control con QFD, elevó la capacidad de detectar y aprovechar oportunidades.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2172",
+   "s": "design_thinking",
+   "p": "aumenta",
+   "o": "produccion_innovacion",
+   "f": "F-989",
+   "apoyo": "Los gerentes entrenados en design thinking mostraron más producción de innovación (según resumen secundario).",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2173",
+   "s": "resultados_design_thinking",
+   "p": "tiene_limite",
+   "o": "una_sola_empresa",
+   "f": "F-989",
+   "apoyo": "Estudio en una sola empresa y con resultados en capacidades, no financieros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2174",
+   "s": "temas_comunes_design_thinking",
+   "p": "parte_de",
+   "o": "design_thinking",
+   "f": "F-990",
+   "apoyo": "Entrevistas en 6 grandes organizaciones identifican cinco temas comunes: foco en el usuario, encuadre del problema, visualización, experimentación y diversidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2175",
+   "s": "design_thinking",
+   "p": "asocia_con",
+   "o": "variabilidad_concepto_design_thinking",
+   "f": "F-990",
+   "apoyo": "El concepto de design thinking varía de una empresa a otra en cómo se entiende y se practica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2176",
+   "s": "inversion_diseno",
+   "p": "asocia_con",
+   "o": "productividad_empresa",
+   "f": "F-991",
+   "apoyo": "Econometría sobre ~15.000 empresas de la UK Innovation Survey que prueba vínculos entre diseño, innovación y productividad; coeficientes no verificados en el resumen visto.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2177",
+   "s": "inversion_diseno",
+   "p": "asocia_con",
+   "o": "produccion_innovacion",
+   "f": "F-991",
+   "apoyo": "Analiza el vínculo entre inversión en diseño e innovación en empresas británicas; documento de trabajo sin revisión por pares vista.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2178",
+   "s": "inversion_diseno",
+   "p": "tiene_limite",
+   "o": "coeficientes_no_verificados",
+   "f": "F-991",
+   "apoyo": "La ficha advierte que coeficientes y conclusiones no se verificaron en el resumen disponible.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2179",
+   "s": "recorte_ideo_2023",
+   "p": "respalda",
+   "o": "c_crisis_consultoras",
+   "f": "F-992",
+   "apoyo": "IDEO recortó 32% de su personal en 2023 y cerró Múnich y Tokio; la prensa lo lee como fin de la era del design thinking.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2180",
+   "s": "recorte_ideo_2023",
+   "p": "asocia_con",
+   "o": "c_design_thinking_absorbido_empresas",
+   "f": "F-992",
+   "apoyo": "El CEO de IDEO atribuye el recorte a la pandemia, a presupuestos y a que el método ya se adoptó dentro de las empresas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2181",
+   "s": "recorte_ideo_2023",
+   "p": "tiene_limite",
+   "o": "cifra_fuente_anonima",
+   "f": "F-992",
+   "apoyo": "La caída de ingresos de 300 a 100 M USD viene de una fuente anónima y no está verificada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2182",
+   "s": "c_design_thinking_paquete_comercial",
+   "p": "contradice",
+   "o": "c_design_thinking_ibm_roi_301",
+   "f": "F-993",
+   "apoyo": "Ensayo de opinión: sostiene que el design thinking es un paquete comercial de consultoras y universidades, no innovación significativa; tensión parcial con las cifras de retorno del vendor.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2183",
+   "s": "c_design_thinking_paquete_comercial",
+   "p": "asocia_con",
+   "o": "design_thinking",
+   "f": "F-993",
+   "apoyo": "Un historiador de la tecnología critica el movimiento del design thinking como moda contagiosa vendida por consultoras.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2184",
+   "s": "eliminacion_ejecutivos_diseno",
+   "p": "aplica_a",
+   "o": "disenadores_profesionales",
+   "f": "F-994",
+   "apoyo": "IBM y Expedia prescindieron de ejecutivos de diseño (IBM eliminó el cargo); solo un nombramiento de director de diseño recordado en el 2S 2023 (PayPal).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2185",
+   "s": "despidos_disenadores_2023",
+   "p": "tiene_limite",
+   "o": "muestra_autoseleccionada",
+   "f": "F-994",
+   "apoyo": "14,3% de encuestados de UX Collective dijo haber sido despedido en 2023; encuesta de comunidad con muestra pequeña y autoseleccionada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2186",
+   "s": "experiencia_cliente_seguros",
+   "p": "asocia_con",
+   "o": "retorno_accionista_aseguradoras",
+   "f": "F-995",
+   "apoyo": "Atribuye a McKinsey 65% más retorno al accionista en aseguradoras de daños y 20% en vida que priorizan la experiencia de cliente; base de 8.500 clientes norteamericanos.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2187",
+   "s": "c_cx_aseguradoras_65_retorno",
+   "p": "origina_en",
+   "o": "informe_mckinsey_cx_seguros",
+   "f": "F-995",
+   "apoyo": "La cifra es un resumen secundario de un informe de McKinsey no visto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2188",
+   "s": "c_cx_aseguradoras_65_retorno",
+   "p": "tiene_limite",
+   "o": "cifras_discrepan_resumenes",
+   "f": "F-995",
+   "apoyo": "Otra fuente aplica el 65% sin distinguir ramo: las cifras discrepan entre resúmenes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2189",
+   "s": "representacion_gerencial_disenadores",
+   "p": "aplica_a",
+   "o": "disenadores_peru",
+   "f": "F-996",
+   "apoyo": "Tesis con entrevistas a líderes de diseño y encuesta a diseñadores peruanos: los diseñadores rara vez están en cargos gerenciales o de poder en empresas peruanas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2190",
+   "s": "representacion_gerencial_disenadores",
+   "p": "tiene_limite",
+   "o": "tesis_sin_revision_pares",
+   "f": "F-996",
+   "apoyo": "El hallazgo viene de una tesis de maestría de la Universidad de Palermo, sin revisión por pares; autor y título exactos no verificados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2191",
+   "s": "diseno_industrial_efectivo",
+   "p": "asocia_con",
+   "o": "desempeno_financiero_firma",
+   "f": "F-997",
+   "apoyo": "Con productos de unas 93 empresas en nueve sectores, el diseño eficaz se asocia con mayor retorno sobre ventas y sobre activos.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2192",
+   "s": "diseno_industrial_efectivo",
+   "p": "asocia_con",
+   "o": "retorno_bursatil_firma",
+   "f": "F-997",
+   "apoyo": "El diseño eficaz se asocia con mayor retorno bursátil; cifras de efecto no vistas y venue no verificado.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2193",
+   "s": "medicion_economia_diseno",
+   "p": "mide",
+   "o": "tamano_economia_diseno",
+   "f": "F-998",
+   "apoyo": "La economía del diseño aportó £136.700 millones de valor agregado en 2023 (≈5,5% del total).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2194",
+   "s": "crecimiento_economia_diseno_uk",
+   "p": "parte_de",
+   "o": "tamano_economia_diseno",
+   "f": "F-998",
+   "apoyo": "La economía del diseño creció 40% entre 2019 y 2023, frente a 24% de la economía; mide tamaño, no efecto causal.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2195",
+   "s": "empaque_prueba_ninos",
+   "p": "reduce",
+   "o": "mortalidad_infantil_intoxicacion",
+   "f": "F-999",
+   "apoyo": "Serie temporal de mortalidad: el empaque a prueba de niños evitó unas 460 muertes de niños de 4 años o menos entre 1974 y 1992.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2196",
+   "s": "empaque_prueba_ninos",
+   "p": "reduce",
+   "o": "mortalidad_infantil_intoxicacion",
+   "f": "F-1000",
+   "apoyo": "Regresión 1958-1990: el empaque se asocia con 34% menos mortalidad infantil por aspirina, ≈90 muertes evitadas en 1973-1990.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2197",
+   "s": "empaque_prueba_ninos",
+   "p": "tiene_limite",
+   "o": "proteccion_parcial_empaque",
+   "f": "F-1000",
+   "apoyo": "Los autores dicen que la protección del empaque es parcial.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2198",
+   "s": "escritorio_de_pie",
+   "p": "reduce",
+   "o": "tiempo_sentado_trabajo",
+   "f": "F-1001",
+   "apoyo": "Revisión Cochrane (34 estudios, 3.397 participantes): los escritorios de pie reducen 84-116 minutos sentado por jornada, sin daños ni pérdida de productividad.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2199",
+   "s": "escritorio_de_pie",
+   "p": "tiene_limite",
+   "o": "efecto_salud_no_probado",
+   "f": "F-1001",
+   "apoyo": "El efecto en la salud no está probado y la calidad de la evidencia es muy baja a baja.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2200",
+   "s": "intervencion_ergonomica_oficina",
+   "p": "asocia_con",
+   "o": "trastornos_brazo_cuello",
+   "f": "F-1002",
+   "apoyo": "Revisión Cochrane (15 estudios, 2.165 trabajadores): ninguna intervención física, organizacional o cognitiva tiene efecto demostrado para prevenir trastornos de brazo y cuello.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2201",
+   "s": "intervencion_ergonomica_oficina",
+   "p": "tiene_limite",
+   "o": "evidencia_calidad_baja",
+   "f": "F-1002",
+   "apoyo": "14 de los 15 estudios tuvieron mala ejecución o reporte; el apoyo de brazo para el mouse 'puede o no' servir.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2202",
+   "s": "falla_diseno_dispositivo",
+   "p": "aumenta",
+   "o": "retiro_dispositivo_medico",
+   "f": "F-1003",
+   "apoyo": "De 135 retiros graves (clase I, 2017-2021), 33,3% fueron por fallas de diseño del aparato o software y 3% por error de uso.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2203",
+   "s": "predicado_retirado_510k",
+   "p": "aumenta",
+   "o": "retiro_dispositivo_medico",
+   "f": "F-1003",
+   "apoyo": "Usar como base un dispositivo ya retirado multiplica por 6,4 el riesgo de retiro.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2204",
+   "s": "cajetilla_generica_advertencias",
+   "p": "reduce",
+   "o": "atractivo_paquete",
+   "f": "F-1004",
+   "apoyo": "Encuestas transversales continuas en Australia (antes, transición y primer año): la cajetilla genérica redujo el atractivo del paquete.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2205",
+   "s": "cajetilla_generica_advertencias",
+   "p": "aumenta",
+   "o": "intentos_dejar_fumar",
+   "f": "F-1004",
+   "apoyo": "Se asoció con más intentos de dejar de fumar, impulsados por las advertencias más grandes; tamaños de efecto no vistos.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2206",
+   "s": "etiquetado_frontal_advertencias",
+   "p": "reduce",
+   "o": "compras_bebidas_azucaradas",
+   "f": "F-1005",
+   "apoyo": "Panel de 2.383 hogares chilenos 2015-2017: las compras de bebidas azucaradas cayeron ≈23,7% tras la ley de 2016.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2207",
+   "s": "etiquetado_frontal_advertencias",
+   "p": "tiene_limite",
+   "o": "no_separa_reformulacion",
+   "f": "F-1005",
+   "apoyo": "El diseño antes-después no separa el cambio de conducta de la reformulación de productos.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2208",
+   "s": "etiquetado_frontal_advertencias",
+   "p": "aplica_a",
+   "o": "chile_hogares",
+   "f": "F-1005",
+   "apoyo": "Evaluación de la Ley de Etiquetado y Publicidad de Alimentos de Chile con datos de Kantar.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2209",
+   "s": "etiquetado_frontal_advertencias",
+   "p": "aumenta",
+   "o": "reformulacion_productos",
+   "f": "F-1006",
+   "apoyo": "94 productos top en Perú: azúcar mediano en bebidas bajó de 9,0 a 5,9 g/100 ml; con sello pasaron de 59% a 31%, con más edulcorantes no calóricos.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2210",
+   "s": "etiquetado_frontal_advertencias",
+   "p": "aplica_a",
+   "o": "peru_alimentos",
+   "f": "F-1006",
+   "apoyo": "Reformulación medida en la oferta peruana tras la política de octógonos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2211",
+   "s": "etiquetado_frontal_advertencias",
+   "p": "aumenta",
+   "o": "perfil_nutricional_envasados",
+   "f": "F-1007",
+   "apoyo": "1.137 etiquetas peruanas 2018-2021: el perfil nutricional mejora tras los octógonos; prensa reporta repunte en algunas categorías después de 2021.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2212",
+   "s": "etiquetado_frontal_advertencias",
+   "p": "tiene_limite",
+   "o": "no_mide_consumo",
+   "f": "F-1007",
+   "apoyo": "Estudio transversal sobre etiquetas; no mide consumo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2213",
+   "s": "etiquetado_frontal_advertencias",
+   "p": "asocia_con",
+   "o": "impacto_declarado_octogonos",
+   "f": "F-1008",
+   "apoyo": "Encuesta en Lima: 85% vio las advertencias y 37% dice que su impacto en sus compras fue alto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2214",
+   "s": "impacto_declarado_octogonos",
+   "p": "tiene_limite",
+   "o": "conducta_declarada",
+   "f": "F-1008",
+   "apoyo": "Encuesta de mercado con método no detallado; conducta declarada, no observada.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2215",
+   "s": "sensor_fugas_agua",
+   "p": "reduce",
+   "o": "siniestros_dano_agua",
+   "f": "F-1009",
+   "apoyo": "Hogares con sensor en Reino Unido: 39% menos frecuencia de siniestros por agua y 50% menos severidad (≈70% menos costo total).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2216",
+   "s": "sensor_fugas_agua",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendor",
+   "f": "F-1009",
+   "apoyo": "Estudio encargado por el fabricante (Ondo) y difundido por comunicado bursátil, sin revisión independiente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2217",
+   "s": "dispositivo_ia_humane",
+   "p": "asocia_con",
+   "o": "fracaso_dispositivo_hardware",
+   "f": "F-1010",
+   "apoyo": "Devoluciones superaron ventas, precio bajó de US$699 a 499; HP compró activos por US$116 M frente a ≈US$240 M invertidos; servidores apagados el 28-02-2025.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2218",
+   "s": "fracaso_dispositivo_hardware",
+   "p": "tiene_limite",
+   "o": "prensa_sin_metodo",
+   "f": "F-1010",
+   "apoyo": "Prensa tecnológica que cita a The Verge, sin método propio.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2219",
+   "s": "vista_naturaleza_ventana",
+   "p": "asocia_con",
+   "o": "recuperacion_postquirurgica",
+   "f": "F-1011",
+   "apoyo": "23 pacientes con vista a árboles tuvieron estancias más cortas, menos analgésicos fuertes y menos notas negativas de enfermería que 23 pares con vista a un muro.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2220",
+   "s": "vista_naturaleza_ventana",
+   "p": "tiene_limite",
+   "o": "muestra_pequena_retrospectiva",
+   "f": "F-1011",
+   "apoyo": "Estudio retrospectivo y observacional con 46 pacientes: muestra asociación, no causalidad.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2221",
+   "s": "oficina_planta_abierta",
+   "p": "reduce",
+   "o": "interaccion_cara_a_cara",
+   "f": "F-1012",
+   "apoyo": "En dos sedes Fortune 500, al pasar a planta abierta la interacción cara a cara cayó cerca de 70% (medición objetiva antes/después; prensa reporta 70-73%).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2222",
+   "s": "oficina_planta_abierta",
+   "p": "aumenta",
+   "o": "comunicacion_electronica_trabajo",
+   "f": "F-1012",
+   "apoyo": "Tras el cambio a planta abierta subió la comunicación electrónica (correo +22% a +56% según el medio).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2223",
+   "s": "c_habitacion_individual_reduce_infecciones",
+   "p": "tiene_limite",
+   "o": "antes_despues_sin_control",
+   "f": "F-1013",
+   "apoyo": "Comentario crítico: 6 de 9 estudios que sostienen la conclusión eran antes/después sin control, y la revisión original tiene errores de análisis.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2224",
+   "s": "habitaciones_hospital_individuales",
+   "p": "refuta",
+   "o": "c_habitacion_individual_reduce_infecciones",
+   "f": "F-1013",
+   "apoyo": "Cuestiona que la evidencia sostenga que las habitaciones individuales reducen infecciones; refutación metodológica, no un estudio primario con resultado contrario.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2225",
+   "s": "rehabilitacion_lotes_baldios",
+   "p": "reduce",
+   "o": "percepcion_inseguridad_barrio",
+   "f": "F-1014",
+   "apoyo": "Ensayo aleatorio por conglomerados (541 lotes, 110 grupos, 38 meses, 445 vecinos): los vecinos de lotes tratados percibieron menos crimen y menos inseguridad al salir.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2226",
+   "s": "rehabilitacion_lotes_baldios",
+   "p": "aumenta",
+   "o": "uso_espacio_exterior",
+   "f": "F-1014",
+   "apoyo": "En el mismo ensayo, los vecinos de lotes rehabilitados usaron más el espacio exterior.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2227",
+   "s": "rehabilitacion_lotes_baldios",
+   "p": "reduce",
+   "o": "sintomas_depresivos",
+   "f": "F-1015",
+   "apoyo": "Ensayo aleatorio por conglomerados con 342 adultos: sentirse deprimido bajó 41,5% junto a lotes con verde vs. control; la caída de 'salud mental mala' no fue significativa.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2228",
+   "s": "rehabilitacion_lotes_baldios",
+   "p": "aplica_a",
+   "o": "vecinos_ciudad_eeuu",
+   "f": "F-1015",
+   "apoyo": "El ensayo se hizo con adultos residentes de barrios urbanos con lotes baldíos en EE.UU.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2229",
+   "s": "rehabilitacion_lotes_baldios",
+   "p": "reduce",
+   "o": "balaceras_heridos_graves",
+   "f": "F-1016",
+   "apoyo": "Ensayo aleatorio citywide: balaceras con heridos graves o muertos bajaron 6,8% con verde y 9,2% con solo limpieza y corte de pasto.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2230",
+   "s": "rehabilitacion_lotes_baldios",
+   "p": "aplica_a",
+   "o": "vecinos_ciudad_eeuu",
+   "f": "F-1016",
+   "apoyo": "Ensayo a escala de toda la ciudad sobre lotes baldíos en EE.UU.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2231",
+   "s": "urbanismo_social_metrocable",
+   "p": "reduce",
+   "o": "homicidios_violencia_barrio",
+   "f": "F-1017",
+   "apoyo": "Experimento natural: 25 barrios con Metrocable y obras vs. 23 comparables; homicidios y violencia percibida bajaron más en los intervenidos (cifra exacta varía entre resúmenes).",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2232",
+   "s": "urbanismo_social_metrocable",
+   "p": "tiene_limite",
+   "o": "confusion_otras_inversiones",
+   "f": "F-1017",
+   "apoyo": "El efecto puede confundirse con otras inversiones públicas simultáneas en los mismos barrios.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2233",
+   "s": "calidad_aire_interior",
+   "p": "aumenta",
+   "o": "desempeno_cognitivo",
+   "f": "F-1018",
+   "apoyo": "Estudio controlado doble ciego: puntaje cognitivo 61% mayor con bajos compuestos orgánicos volátiles y 101% mayor sumando ventilación; +26,4% en 10 edificios certificados.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2234",
+   "s": "calidad_aire_interior",
+   "p": "tiene_limite",
+   "o": "estudio_laboratorio_pequeno_financiado",
+   "f": "F-1018",
+   "apoyo": "Estudio pequeño (n=24), de laboratorio y financiado por United Technologies; paper original no verificado directamente.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2235",
+   "s": "atmosfera_tienda",
+   "p": "aumenta",
+   "o": "respuesta_compra_punto_venta",
+   "f": "F-1019",
+   "apoyo": "Metaanálisis de 66 estudios, 135 efectos y 15.621 personas: música, aroma y color influyen en las respuestas de compra; tamaños de efecto no vistos.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2236",
+   "s": "contexto_servicios_vs_tiendas",
+   "p": "modera",
+   "o": "atmosfera_tienda",
+   "f": "F-1019",
+   "apoyo": "Los efectos atmosféricos tienden a ser mayores en servicios que en tiendas.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2237",
+   "s": "cierre_agencias_bancarias",
+   "p": "reduce",
+   "o": "credito_pequenas_empresas_local",
+   "f": "F-1020",
+   "apoyo": "Con variable instrumental (fusiones): tras cerrar una agencia, el crédito anual a pequeñas empresas cae US$453.000 sobre US$4,7 M, dura hasta 6 años y se concentra en ~6 millas.",
+   "lectura": "ficha",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2238",
+   "s": "apertura_tienda_fisica",
+   "p": "aumenta",
+   "o": "ventas_online",
+   "f": "F-1021",
+   "apoyo": "69 minoristas y 2.103 tiendas: abrir una tienda sube las ventas en línea de su zona 6,9% (13,9% en marcas directas) y cerrarla las baja 11,5%.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2239",
+   "s": "c_efecto_halo_tienda_fisica",
+   "p": "tiene_limite",
+   "o": "conflicto_interes_vendor",
+   "f": "F-1021",
+   "apoyo": "Informe comisionado por el gremio de centros comerciales, con método no visto.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2240",
+   "s": "ciudad_15_minutos",
+   "p": "asocia_con",
+   "o": "creencias_conspirativas",
+   "f": "F-1022",
+   "apoyo": "Nota de prensa: el plan de tráfico de Oxford se convirtió en teoría conspirativa en redes, con protestas de miles y acoso a autoridades locales.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2241",
+   "s": "c_estandar_oms_area_verde",
+   "p": "tiene_limite",
+   "o": "fuente_secundaria_no_primaria",
+   "f": "F-1023",
+   "apoyo": "El estándar de 8-9 m² de área verde por habitante se atribuye a la OMS, pero el observatorio Lima Cómo Vamos nunca halló la fuente primaria.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2242",
+   "s": "area_verde_lima",
+   "p": "aplica_a",
+   "o": "c_estandar_oms_area_verde",
+   "f": "F-1023",
+   "apoyo": "Lima tiene menos de 3,5 m² de área verde por habitante según la Municipalidad (2025, dato de otra nota), bajo el estándar atribuido a la OMS.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2243",
+   "s": "atencion_basica_sucursal",
+   "p": "aumenta",
+   "o": "satisfaccion_sucursal_bancaria",
+   "f": "F-1024",
+   "apoyo": "Encuesta a 105.355 clientes: la satisfacción en sucursal llega a 830 (de 1.000) frente a 707 cuando el banco cumple lo básico: saludar, atender rápido y agradecer.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2244",
+   "s": "satisfaccion_sucursal_bancaria",
+   "p": "asocia_con",
+   "o": "cancelacion_clientes",
+   "f": "F-1024",
+   "apoyo": "El estudio reporta que 13% de los clientes piensa cambiar de banco en los próximos 12 meses.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2245",
+   "s": "red_oficinas_bancarias_peru",
+   "p": "origina_en",
+   "o": "fuente_secundaria_no_primaria",
+   "f": "F-1025",
+   "apoyo": "Las oficinas bancarias bajaron 9% a 4.200 frente a fines de 2019; cifra de la SBS citada por prensa sin tabla oficial vista.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2246",
+   "s": "agentes_corresponsales",
+   "p": "aumenta",
+   "o": "cobertura_distrital_bancaria",
+   "f": "F-1025",
+   "apoyo": "Los agentes corresponsales llegaron a 79.354, con presencia en 88% de los distritos, mientras la banca reduce agencias.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2247",
+   "s": "reglamento_ecodiseno_espr",
+   "p": "reduce",
+   "o": "destruccion_textiles_no_vendidos",
+   "f": "F-1026",
+   "apoyo": "Prohíbe destruir textiles y calzado sin vender desde el 19-07-2026 (medianas empresas desde 2030; micro y pequeñas exentas). Fechas difieren entre resúmenes.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2248",
+   "s": "pasaporte_digital_producto",
+   "p": "parte_de",
+   "o": "reglamento_ecodiseno_espr",
+   "f": "F-1026",
+   "apoyo": "El reglamento, vigente desde el 18-07-2024, prevé un pasaporte digital de producto hacia 2027-2028.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2249",
+   "s": "directiva_derecho_reparar",
+   "p": "aumenta",
+   "o": "reparacion_productos",
+   "f": "F-1027",
+   "apoyo": "Obliga al fabricante a reparar a pedido del consumidor productos del Anexo II, gratis o a precio razonable, con formulario europeo y plataforma en línea; transposición hasta el 31-07-2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2250",
+   "s": "directiva_derecho_reparar",
+   "p": "aplica_a",
+   "o": "union_europea",
+   "f": "F-1027",
+   "apoyo": "Directiva (UE) 2024/1799; los Estados miembros deben transponerla hasta el 31-07-2026.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2251",
+   "s": "economia_circular",
+   "p": "aumenta",
+   "o": "produccion_total_material",
+   "f": "F-1028",
+   "apoyo": "Argumento con dos ecuaciones: cerrar ciclos puede elevar la producción total porque lo secundario no sustituye bien a lo primario y hay efectos precio.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2252",
+   "s": "rebote_economia_circular",
+   "p": "refuta",
+   "o": "c_circularidad_reduce_impacto",
+   "f": "F-1028",
+   "apoyo": "El rebote puede anular, parcial o totalmente, los beneficios ambientales de cerrar ciclos.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2253",
+   "s": "reuso_celulares",
+   "p": "aumenta",
+   "o": "rebote_economia_circular",
+   "f": "F-1029",
+   "apoyo": "En EE. UU., el reuso de celulares tuvo un rebote promedio de 29% (27%-46% según modelo) y en algunos escenarios superó 100% (ACV + encuestas + insumo-producto).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2254",
+   "s": "rebote_economia_circular",
+   "p": "refuta",
+   "o": "c_circularidad_reduce_impacto",
+   "f": "F-1029",
+   "apoyo": "Con rebote sobre 100% en algunos escenarios, el reuso de celulares puede no reducir el impacto neto.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2255",
+   "s": "hoja_ruta_circular_peru_2030",
+   "p": "aplica_a",
+   "o": "peru",
+   "f": "F-1030",
+   "apoyo": "Presentada por Produce en la Cumbre Circular de Lima con GIZ, UE, ONUDI, AECID y BID; prioriza reuso, remanufactura y reciclaje (vía prensa, documento no leído).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2256",
+   "s": "valorizacion_residuos_peru",
+   "p": "aplica_a",
+   "o": "peru",
+   "f": "F-1030",
+   "apoyo": "La SNI reporta 19 mil t/día de residuos y ~4% valorizado; dato de otra nota, no verificado en fuente oficial.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2257",
+   "s": "tasa_circularidad_global",
+   "p": "mide",
+   "o": "economia_circular",
+   "f": "F-1031",
+   "apoyo": "Solo 6,9% de los ~106 mil millones de t de material usados al año viene de fuentes recicladas (7,2% dos años antes; −2,2 puntos vs. 2015).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2258",
+   "s": "reciclaje_material",
+   "p": "tiene_limite",
+   "o": "produccion_total_material",
+   "f": "F-1031",
+   "apoyo": "El reciclaje creció ~200 Mt entre 2018 y 2021, pero el consumo de material creció más, así que la tasa de circularidad cayó.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2259",
+   "s": "ecodiseno_etiquetado_energetico",
+   "p": "reduce",
+   "o": "consumo_energia_primaria",
+   "f": "F-1032",
+   "apoyo": "Estimación oficial contra escenario contrafactual: recortan ~10% la energía primaria de la UE.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2260",
+   "s": "ecodiseno_etiquetado_energetico",
+   "p": "reduce",
+   "o": "gasto_energetico_hogares",
+   "f": "F-1032",
+   "apoyo": "Ahorran más de 60 mil millones €/año a los consumidores (~210 € por hogar al año), según la Comisión.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2261",
+   "s": "ecodiseno_etiquetado_energetico",
+   "p": "tiene_limite",
+   "o": "autoevaluacion_oficial",
+   "f": "F-1032",
+   "apoyo": "Es autoevaluación de la Comisión; un estudio alemán halló ahorros reales menores (no verificado en detalle).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2262",
+   "s": "afirmaciones_ambientales_enganosas",
+   "p": "aplica_a",
+   "o": "union_europea",
+   "f": "F-1033",
+   "apoyo": "53,3% de las afirmaciones ambientales examinadas eran vagas, engañosas o infundadas y 40% no tenía sustento (estudio oficial de 2020, base de Green Claims).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2263",
+   "s": "durabilidad_productos",
+   "p": "reduce",
+   "o": "emisiones_co2",
+   "f": "F-1034",
+   "apoyo": "Alargar un año la vida de lavadoras, laptops, aspiradoras y celulares en la UE evitaría ~4 Mt CO2/año hacia 2030 (≈2 millones de autos fuera un año).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2264",
+   "s": "durabilidad_productos",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-1034",
+   "apoyo": "Es una proyección con modelo propio de una ONG, no revisada por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2265",
+   "s": "indice_reparabilidad_francia",
+   "p": "asocia_con",
+   "o": "decision_compra_consumidor",
+   "f": "F-1035",
+   "apoyo": "Encuesta de HOP (n=1.200): ~55% conocía el índice y ~3 de cada 4 de quienes lo vieron dijo que ayudó en su compra.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2266",
+   "s": "indice_reparabilidad_francia",
+   "p": "tiene_limite",
+   "o": "autodeclaracion_encuesta",
+   "f": "F-1035",
+   "apoyo": "No hay medición de cambio en la tasa de reparación (línea base ~40% de electrónicos rotos reparados en 2020); el efecto es autodeclarado.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2267",
+   "s": "desconfianza_afirmacion_verde",
+   "p": "reduce",
+   "o": "decision_compra_consumidor",
+   "f": "F-1036",
+   "apoyo": "53% de quienes desconfían de una afirmación ambiental no compra el producto (encuesta a 6.500 consumidores en 13 países).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2268",
+   "s": "afirmaciones_ambientales_enganosas",
+   "p": "asocia_con",
+   "o": "desconfianza_afirmacion_verde",
+   "f": "F-1036",
+   "apoyo": "Más de 3 de cada 5 empresas temen que sus esfuerzos ambientales parezcan insinceros.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2269",
+   "s": "sello_higg",
+   "p": "es_tipo_de",
+   "o": "afirmaciones_ambientales_enganosas",
+   "f": "F-1037",
+   "apoyo": "La autoridad de consumo de Noruega declaró engañosas las afirmaciones basadas en Higg (caso Norrøna) y advirtió a H&M; la coalición pausó el sello.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2270",
+   "s": "afirmaciones_ambientales_enganosas",
+   "p": "aplica_a",
+   "o": "industria_moda",
+   "f": "F-1037",
+   "apoyo": "Quartz halló que más de la mitad de las fichas de H&M exageraban; H&M las retiró.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2271",
+   "s": "demanda_material_reciclado",
+   "p": "asocia_con",
+   "o": "viabilidad_negocio_circular",
+   "f": "F-1038",
+   "apoyo": "Renewcell podía producir 60.000 t/año pero vendió 18.000 t en 2023, menos de la mitad de su punto de equilibrio, y quebró en febrero de 2024.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2272",
+   "s": "renewcell",
+   "p": "aplica_a",
+   "o": "industria_moda",
+   "f": "F-1038",
+   "apoyo": "Recicladora textil sueca que quebró en 2024 y luego se vendió como Circulose.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2273",
+   "s": "reparacion_piezas_verdes_siniestros",
+   "p": "reduce",
+   "o": "emisiones_co2",
+   "f": "F-1039",
+   "apoyo": "Solera afirma que reparar y usar piezas verdes baja 60,3% el CO2; Allianz (AZT) comparó 9 piezas en 4 países y halló menos emisiones al reparar.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2274",
+   "s": "reparacion_piezas_verdes_siniestros",
+   "p": "reduce",
+   "o": "costo_siniestro",
+   "f": "F-1039",
+   "apoyo": "Solera afirma una baja de 10,1% en el costo del siniestro y de 11,2% en el tiempo de reparación.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2275",
+   "s": "reparacion_piezas_verdes_siniestros",
+   "p": "tiene_limite",
+   "o": "nota_prensa_proveedor",
+   "f": "F-1039",
+   "apoyo": "Cifras de una nota de prensa del proveedor sin método visible; el estudio primario de Allianz no se leyó.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2276",
+   "s": "economia_circular",
+   "p": "aumenta",
+   "o": "pib_empleo",
+   "f": "F-1040",
+   "apoyo": "Simulaciones de la CEPAL muestran efecto positivo y creciente en PIB y empleo, y menores emisiones, en Chile, Colombia, México y Perú.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2277",
+   "s": "economia_circular",
+   "p": "aplica_a",
+   "o": "alianza_pacifico",
+   "f": "F-1040",
+   "apoyo": "Modelación macroeconómica de la economía circular en los cuatro países de la Alianza del Pacífico.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2278",
+   "s": "pib_empleo",
+   "p": "tiene_limite",
+   "o": "proyeccion_no_medicion",
+   "f": "F-1040",
+   "apoyo": "Es proyección de un modelo de simulación, no resultado medido; no revisado por pares.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2279",
+   "s": "codiseno_servicios_salud",
+   "p": "aumenta",
+   "o": "pertinencia_usabilidad_aceptacion",
+   "f": "F-1041",
+   "apoyo": "Revisión sistemática de 13 proyectos de co-diseño para multimorbilidad: mejora la pertinencia, la usabilidad y la aceptación de los servicios.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2280",
+   "s": "codiseno_servicios_salud",
+   "p": "aplica_a",
+   "o": "pacientes_multimorbilidad",
+   "f": "F-1041",
+   "apoyo": "La revisión incluyó 13 proyectos de co-diseño de atención para personas con multimorbilidad, entre 14.376 reportes revisados.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2281",
+   "s": "evaluacion_resultados_codiseno",
+   "p": "refuta",
+   "o": "c_codiseno_mejora_salud",
+   "f": "F-1041",
+   "apoyo": "Solo 2 proyectos midieron salud o bienestar (un ensayo de 134 personas y una cohorte de 1.933) y apenas 4 de 17 resultados favorecieron al co-diseño: el beneficio clínico no está claro (refutación parcial).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2282",
+   "s": "participacion_comunitaria_salud",
+   "p": "aumenta",
+   "o": "conducta_salud",
+   "f": "F-1042",
+   "apoyo": "Metaanálisis de 131 estudios en grupos desfavorecidos: efecto en conducta de salud d = 0,33 (IC 0,26-0,40).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2283",
+   "s": "participacion_comunitaria_salud",
+   "p": "aumenta",
+   "o": "consecuencias_salud",
+   "f": "F-1042",
+   "apoyo": "Efecto menor sobre las consecuencias de salud, d = 0,16.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2284",
+   "s": "participacion_comunitaria_salud",
+   "p": "aumenta",
+   "o": "autoeficacia_apoyo_social",
+   "f": "F-1042",
+   "apoyo": "Efecto sobre autoeficacia y apoyo social, d = 0,41.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2285",
+   "s": "participacion_comunitaria_salud",
+   "p": "aplica_a",
+   "o": "grupos_desfavorecidos",
+   "f": "F-1042",
+   "apoyo": "El metaanálisis se restringe a intervenciones de salud pública para grupos desfavorecidos.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2286",
+   "s": "modelo_participacion",
+   "p": "modera",
+   "o": "participacion_comunitaria_salud",
+   "f": "F-1042",
+   "apoyo": "Hallazgo nulo: el modelo de participación no modera el efecto de la intervención.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2287",
+   "s": "presupuesto_participativo",
+   "p": "aumenta",
+   "o": "gasto_salud",
+   "f": "F-1043",
+   "apoyo": "Panel de municipios brasileños 1990-2004: los que adoptaron presupuesto participativo destinaron más gasto a salud y saneamiento.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2288",
+   "s": "presupuesto_participativo",
+   "p": "reduce",
+   "o": "mortalidad_temprana",
+   "f": "F-1043",
+   "apoyo": "En esos municipios la mortalidad infantil bajó más (panel observacional).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2289",
+   "s": "c_pp_gasto_salud_2_3_pp",
+   "p": "tiene_limite",
+   "o": "cifra_no_verificada_original",
+   "f": "F-1043",
+   "apoyo": "La cifra de prensa de +2-3 puntos porcentuales de gasto no se verificó en el artículo original.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2290",
+   "s": "presupuesto_participativo",
+   "p": "asocia_con",
+   "o": "organizaciones_civiles",
+   "f": "F-1044",
+   "apoyo": "Los programas de presupuesto participativo en Brasil se asocian con más organizaciones civiles, más gasto en salud y menor mortalidad infantil.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2291",
+   "s": "presupuesto_participativo",
+   "p": "reduce",
+   "o": "mortalidad_temprana",
+   "f": "F-1044",
+   "apoyo": "Se asocia con menor mortalidad infantil en municipios brasileños; corrobora el hallazgo de Gonçalves (ficha vista solo de forma indirecta).",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2292",
+   "s": "presupuesto_participativo",
+   "p": "aplica_a",
+   "o": "municipios_brasil",
+   "f": "F-1044",
+   "apoyo": "Estudio observacional sobre municipios de Brasil.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2293",
+   "s": "prospectiva_corporativa",
+   "p": "aumenta",
+   "o": "desempeno_firma_rentabilidad_capitalizacion",
+   "f": "F-1045",
+   "apoyo": "La preparación para el futuro medida en 2008 predijo superar a la industria en rentabilidad y crecimiento de capitalización en 2015.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2294",
+   "s": "exceso_prospectiva",
+   "p": "reduce",
+   "o": "desempeno_firma_rentabilidad_capitalizacion",
+   "f": "F-1045",
+   "apoyo": "Las empresas con exceso de prospectiva rindieron mal.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2295",
+   "s": "prospectiva_corporativa",
+   "p": "tiene_limite",
+   "o": "medicion_por_encuesta_muestra_incierta",
+   "f": "F-1045",
+   "apoyo": "La preparación se mide con encuesta y la muestra no está confirmada (70/83/~90); las cifras de prensa (+33% rentabilidad, +200% crecimiento) no se verificaron.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2296",
+   "s": "participacion_superficial",
+   "p": "aumenta",
+   "o": "poder_existente",
+   "f": "F-1046",
+   "apoyo": "Ensayo conceptual: la participación superficial en el diseño de aprendizaje automático refuerza el poder existente.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2297",
+   "s": "tipologia_participacion_trabajo_consulta_justicia",
+   "p": "parte_de",
+   "o": "diseno_participativo_ia",
+   "f": "F-1046",
+   "apoyo": "Distingue tres tipos de participación en ML: como trabajo, como consulta y como justicia; propone una base de datos de fracasos.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2298",
+   "s": "diseno_participativo_ia",
+   "p": "tiene_limite",
+   "o": "dificil_evaluar_poder_participacion",
+   "f": "F-1047",
+   "apoyo": "Marco conceptual y 12 entrevistas: es difícil evaluar si los enfoques participativos en IA dan poder real a las personas.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2299",
+   "s": "diseno_participativo_ia",
+   "p": "asocia_con",
+   "o": "poder_real_participantes",
+   "f": "F-1047",
+   "apoyo": "Ofrece una guía para alinear los objetivos de participación (incluido el poder real) con las restricciones prácticas.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2300",
+   "s": "criterios_calidad_diseno_especulativo",
+   "p": "mide",
+   "o": "diseno_social_especulativo",
+   "f": "F-1048",
+   "apoyo": "Revisión de alcance de 63 publicaciones: taxonomía de nueve criterios de calidad del diseño especulativo en tres grupos (especulativo, discursivo, de proceso).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2301",
+   "s": "criterios_calidad_diseno_especulativo",
+   "p": "tiene_limite",
+   "o": "sin_medicion_impacto",
+   "f": "F-1048",
+   "apoyo": "La revisión no reporta medición de impacto del diseño especulativo.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2302",
+   "s": "practicas_extractivas",
+   "p": "aumenta",
+   "o": "desconfianza_comunidades",
+   "f": "F-1049",
+   "apoyo": "Informe de taller: las comunidades desconfían por experiencias previas de investigación extractiva y participación simbólica.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2303",
+   "s": "investigacion_comunitaria",
+   "p": "asocia_con",
+   "o": "desgaste_participacion_repetida",
+   "f": "F-1049",
+   "apoyo": "Las comunidades sufren desgaste por participar repetidamente en investigaciones.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2304",
+   "s": "c_design_thinking_paquete_simplifica",
+   "p": "aplica_a",
+   "o": "design_thinking",
+   "f": "F-1050",
+   "apoyo": "Ensayo de opinión: describe el design thinking como paquete comercial de consultoras y universidades que simplifica problemas sociales y enseña actitud en lugar de habilidades.",
+   "lectura": "ficha",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2305",
+   "s": "prospectiva_gobierno",
+   "p": "tiene_limite",
+   "o": "sin_marco_evaluacion_prospectiva",
+   "f": "F-1051",
+   "apoyo": "Evaluación de la OCDE: no existe un marco para evaluar el impacto de la prospectiva en gobierno.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2306",
+   "s": "prospectiva_gobierno",
+   "p": "tiene_limite",
+   "o": "islas_excelencia",
+   "f": "F-1051",
+   "apoyo": "En Flandes la práctica es por proyectos, su integración está 'en su infancia' y la capacidad queda en islas de excelencia.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2307",
+   "s": "prospectiva_gobierno",
+   "p": "aplica_a",
+   "o": "gobierno_flandes",
+   "f": "F-1051",
+   "apoyo": "Caso evaluado: el sistema de prospectiva estratégica del Gobierno de Flandes (Bélgica).",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2308",
+   "s": "indice_innovacion_publica",
+   "p": "mide",
+   "o": "labs_innovacion_publica",
+   "f": "F-1052",
+   "apoyo": "Encuesta a 550 funcionarios del Laboratorio de Gobierno y CEPAL: el 81,3% considera adecuadas las dimensiones del índice.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2309",
+   "s": "indice_innovacion_publica",
+   "p": "tiene_limite",
+   "o": "mide_percepcion_no_resultado",
+   "f": "F-1052",
+   "apoyo": "El estudio mide percepción de funcionarios, no resultados de políticas.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2310",
+   "s": "microseguros_emprendedores_peru",
+   "p": "aplica_a",
+   "o": "emprendedores_peru",
+   "f": "F-1053",
+   "apoyo": "Comunicado de MAPFRE: productos simples de enfermedad, accidentes, sepelio, vivienda y pequeño negocio para emprendedores en Perú.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "estructura"
+  },
+  {
+   "id": "T-2311",
+   "s": "microseguros_emprendedores_peru",
+   "p": "tiene_limite",
+   "o": "proyeccion_sin_evaluacion",
+   "f": "F-1053",
+   "apoyo": "La meta de 250.000 clientes a fin de año es una proyección, no un resultado; no hay evaluación de adopción.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2312",
+   "s": "primas_netas_ajuste_reservas_1s_2026",
+   "p": "tiene_limite",
+   "o": "primas_sistema_1s_2026",
+   "f": "F-1054",
+   "apoyo": "Con datos de la SBS: primas de seguros +1,1% (S/9.451 M) frente a primas netas con ajuste de reservas +8% (S/12.385 M); son medidas distintas.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2313",
+   "s": "plan_reconstruccion_2017",
+   "p": "asocia_con",
+   "o": "c_dano2017_9200",
+   "f": "F-1055",
+   "apoyo": "El plan de reconstrucción sumaba S/25.655 M (~4% del PBI): inversión planificada, no pérdidas; la cifra alta de daño se acerca a la base de reconstrucción.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2314",
+   "s": "compra_sin_receta_ensusalud_2015",
+   "p": "contradice",
+   "o": "c_automedicacion_20",
+   "f": "F-1056",
+   "apoyo": "La encuesta oficial ENSUSALUD 2015 reporta 54,8% de compra sin receta, muy por encima del ~20% de automedicación citado en prensa.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2315",
+   "s": "innovation_rate_henkel",
+   "p": "contradice",
+   "o": "c_metas_innovacion_no_reportadas",
+   "f": "F-1057",
+   "apoyo": "Henkel publica tasas de innovación por segmento (2017: ~30% a ~45%).",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2316",
+   "s": "meta_innovacion_henkel_30",
+   "p": "contradice",
+   "o": "c_metas_innovacion_no_reportadas",
+   "f": "F-1058",
+   "apoyo": "Henkel anunció una meta explícita: 30% de ventas de productos lanzados en los últimos tres años.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2317",
+   "s": "analisis_25m_comentarios_slop",
+   "p": "aumenta",
+   "o": "acusaciones_slop_vigilancia",
+   "f": "F-1059",
+   "apoyo": "25 M de comentarios 2023-2026: las acusaciones peyorativas de IA crecieron más de diez veces, sin alza en insultos placebo; los autores las leen como vigilancia de pertenencia.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2318",
+   "s": "pronosticos_tradicionales_2024",
+   "p": "modera",
+   "o": "pronosticos_electorales_aaru",
+   "f": "F-1060",
+   "apoyo": "Aaru falló a favor de Harris, como también Silver Bulletin y Split Ticket; sin comparación independiente del error.",
+   "lectura": "abstract",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2319",
+   "s": "menor_variacion_sinteticos",
+   "p": "contradice",
+   "o": "c_sinteticas_reemplazan_encuestas",
+   "f": "F-1061",
+   "apoyo": "Coinciden ~79% con elecciones de marca reales, pero sobreestiman actitudes positivas y muestran menos variación que las personas.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
   }
  ],
  "generado": "2026-10-25",
  "cobertura": {
-  "procesadas": 984,
-  "total": 984
+  "procesadas": 1060,
+  "total": 1060
  }
 }

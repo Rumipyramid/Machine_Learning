@@ -257,7 +257,7 @@ historia, perfiles, firma; Nivel 2: redes completas, banco de contenido) · Play
 (storytelling de asesoría + materiales simplificados: flyer, brochure, cartaplan) · Estrategia de
 contacto (validada con Legal/Cumplimiento/CUA — ver §3; plantillas WhatsApp y correo) ·
 **Universidad Vida** (programa nuevo, no mencionado antes en este node: onboarding con práctica
-espaciada desde el día 1 — ver también "Despliegue" más abajo).
+espaciada desde el día 1 — la práctica espaciada supera a la concentrada según un meta-análisis de 317 experimentos [F-218]; ver también "Despliegue" más abajo).
 
 **Backlog estructurado de siguientes pasos (agregado 2026-07-27, vía deck low-fi, láminas 15-16
 — más específico y accionable que las "16 palancas sin priorizar" ya documentadas arriba):**
@@ -883,6 +883,7 @@ palancas de la Mesa Back to Basics (§1) pasan de preliminares a priorizadas.
 
 ## Conexiones
 
+- [[diseno-producto-digital|Diseño de producto digital: confrontaciones de hipótesis y evidencia de conversión]] — nodo de dominio del diseño (2026-10-25): la iteración 5 corrige cifras que ese proyecto usaba para su piloto.
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC — catálogo y coberturas]] —
   catálogo de qué cubre y cuánto cuesta cada producto real (VFP, Plan Vida Flexible, Vida
   Contigo, Vida Temporal Total); insumo directo del Bloque 4 del Playbook del Asesor (§4 de ese

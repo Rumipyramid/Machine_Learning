@@ -296,6 +296,10 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
 
 ## Conexiones
 
+- [[rentabilidad-modelos-seguros|Modelos de seguros rentables: qué está medido]] — qué modelos de seguros son rentables y con qué evidencia (telemática, paramétricos, reaseguro), rescatado del registro de fuentes el 2026-10-25.
+- [[diseno-servicios-politicas-salud|Diseño de servicios, políticas públicas y salud: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): simplificación de trámites y ciencias conductuales en el sector público.
+- [[diseno-estrategico-organizacional|Diseño estratégico y organizacional: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): madurez de una disciplina vecina que también sobrevendió su efecto.
+- [[diseno-producto-fisico-industrial|Diseño de producto físico e industrial: qué impacto está medido]] — nodo de dominio del diseño (2026-10-25): los octógonos de advertencia son una intervención conductual con efecto medido.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — el caso Vitality y la brecha de confianza en seguros que
   describe ese node son parte de la evidencia de negocio de este.

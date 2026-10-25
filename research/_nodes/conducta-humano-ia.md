@@ -153,6 +153,8 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 
 ## Conexiones
 
+- [[rentabilidad-modelos-seguros|Modelos de seguros rentables: qué está medido]] — qué modelos de seguros son rentables y con qué evidencia (telemática, paramétricos, reaseguro), rescatado del registro de fuentes el 2026-10-25.
+- [[diseno-producto-digital|Diseño de producto digital: confrontaciones de hipótesis y evidencia de conversión]] — nodo de dominio del diseño (2026-10-25): la iteración 5 cruza sus hallazgos de confianza y adulación de la IA.
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — fuente del contexto (crisis del nudge, megastudies, *s-frame*, "AI Behavioral Science"); este node asume esa base y reúne la evidencia humano-IA que allí estaba solo esbozada.
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — su §2.2 (explicabilidad, sobre-confianza) y las reglas C8/C11 son el antecedente directo de §2.1-2.2; la evidencia de generative UI (preferencia vs. soporte funcional) ilustra RP3.
 - [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de calidad de agentes conversacionales de IA]] — la adulación (F-488) es un problema de calidad que ese node debería medir: satisfacción alta con juicio degradado.
