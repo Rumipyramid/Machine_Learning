@@ -4285,7 +4285,7 @@
    "id": "F-450",
    "type": "fuente",
    "rigor": "C",
-   "titulo": "Combined ratio ~**139%** (aún con pérdida técnica); gross loss ratio TTM 74% (mejora de 16 pp interanual); guía a EBITDA ajustado positivo r",
+   "titulo": "Combined ratio ~**139%** (aún con pérdida técnica); gross loss ratio de 52% en el Q4 2025 (−11 pp) y de 64% en los últimos 12 meses (73% un ",
    "autor": "Lemonade, Inc. (NYSE: LMND) — carta a accionistas Q4 2025 / 8-K; combined ratio vía AlphaQuery",
    "anio": "2025",
    "huerfana": false
@@ -20509,12 +20509,12 @@
     "fuente": "git"
    },
    {
-    "fuentes": 1060,
+    "fuentes": 1064,
     "rigor": {
-     "B": 193,
+     "B": 195,
      "A": 347,
-     "C": 229,
-     "D": 233,
+     "C": 230,
+     "D": 234,
      "?": 15,
      "E": 43
     },
@@ -20522,7 +20522,7 @@
     "outputs": 5,
     "wikilinks": 230,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 1023,
+    "fuentes_citadas_en_nodes": 1027,
     "diseno": {
      "hyp": {
       "abierta": 16,
@@ -20543,7 +20543,7 @@
      "cites": 444
     },
     "fecha": "2026-10-25",
-    "commit": "8a0751f",
+    "commit": "7fc545d",
     "fuente": "git"
    }
   ],
