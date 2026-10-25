@@ -26,6 +26,7 @@ seguros y diseño (Mu, grafo, códice) ni de su `alma.md`.
 | Los casos más verosímiles de la historia paranormal (panorama) | `expedientes/panorama-casos-mas-verosimiles.md` | comparativo · ganador abierto: luces de Hessdalen 🌀 | v1.0 | 2026-10-24 |
 | Las luces de Hessdalen (Noruega) | `expedientes/luces-de-hessdalen.md` | 🌀 abierto (probablemente natural) | v1.0 | 2026-10-24 |
 | Las luces sísmicas (con el caso de Lima, Pisco 2007) | `expedientes/luces-sismicas.md` | 📂 documentado · 🌀 abierto (mecanismo) | v1.0 | 2026-10-24 |
+| Los pishtacos de 2009 (Perú) | `expedientes/pishtacos-2009.md` | 🧨 desmentido (la banda de grasa) · 🕯️ leyenda (el pishtaco) | v1.0 | 2026-10-25 |
 
 Estados: 📂 documentado · 🕯️ leyenda sin rastro · 🔦 explicación probable · 🧨 desmentido ·
 🌀 abierto.
