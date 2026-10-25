@@ -4464,6 +4464,11 @@
   "nombre": "Estimación de analista o base de datos privada, no auditada",
   "tipo": "limitacion"
  },
+ "estimulo_ambiguo": {
+  "id": "estimulo_ambiguo",
+  "nombre": "Estímulo o decisión ambigua",
+  "tipo": "concepto"
+ },
  "estimulo_oddball": {
   "id": "estimulo_oddball",
   "nombre": "Estímulo inesperado o distinto dentro de una serie repetida (oddball)",
@@ -4653,6 +4658,16 @@
   "id": "experiencia_trabajador",
   "nombre": "Experiencia y habilidad previa del trabajador",
   "tipo": "constructo"
+ },
+ "experiencias_largas_complejas": {
+  "id": "experiencias_largas_complejas",
+  "nombre": "Experiencias largas, variadas o complejas (vacaciones, episodios de varias partes)",
+  "tipo": "limitacion"
+ },
+ "experiencias_positivas_simples": {
+  "id": "experiencias_positivas_simples",
+  "nombre": "Experiencias positivas pequeñas y simples (p. ej. recibir regalos)",
+  "tipo": "limitacion"
  },
  "experimentacion_ab": {
   "id": "experimentacion_ab",
@@ -5109,6 +5124,11 @@
   "nombre": "Generative UI (interfaces generadas por LLM)",
   "tipo": "intervencion"
  },
+ "genero_y_cultura": {
+  "id": "genero_y_cultura",
+  "nombre": "Género, cultura y época de la muestra",
+  "tipo": "poblacion"
+ },
  "genui_study_dis2025": {
   "id": "genui_study_dis2025",
   "nombre": "The GenUI Study (ACM DIS 2025): 37 profesionales de UX, una semana con diario",
@@ -5483,6 +5503,11 @@
   "id": "indecopi_sanciones_2026",
   "nombre": "Sanciones de Indecopi a aseguradoras (2026)",
   "tipo": "intervencion"
+ },
+ "independencia_mayoria": {
+  "id": "independencia_mayoria",
+  "nombre": "Independencia frente a la mayoría (respuestas correctas pese al grupo)",
+  "tipo": "resultado"
  },
  "industria_no_manufacturera": {
   "id": "industria_no_manufacturera",
@@ -7994,6 +8019,11 @@
   "nombre": "Prohibición del primer contacto comercial a consumidores finales salvo que el consumidor lo inicie",
   "tipo": "concepto"
  },
+ "promedio_momentos_experiencia": {
+  "id": "promedio_momentos_experiencia",
+  "nombre": "Promedio de todos los momentos de una experiencia",
+  "tipo": "constructo"
+ },
  "pronostico_triple_i_milliman_2025": {
   "id": "pronostico_triple_i_milliman_2025",
   "nombre": "Pronóstico Triple-I/Milliman del mercado P/C (ene-2025)",
@@ -8369,6 +8399,11 @@
   "nombre": "Relación médico-paciente",
   "tipo": "concepto"
  },
+ "relato_manuales_asch": {
+  "id": "relato_manuales_asch",
+  "nombre": "Relato de los manuales de Asch como prueba de conformidad",
+  "tipo": "afirmacion"
+ },
  "relevancia_percibida": {
   "id": "relevancia_percibida",
   "nombre": "Relevancia percibida del anuncio",
@@ -8398,6 +8433,11 @@
   "id": "rentabilidad_tecnica_peru",
   "nombre": "Rentabilidad técnica del negocio asegurador peruano",
   "tipo": "resultado"
+ },
+ "replica_asch_reino_unido": {
+  "id": "replica_asch_reino_unido",
+  "nombre": "Réplica de Asch con estudiantes británicos de ciencias (1980)",
+  "tipo": "estudio"
  },
  "replica_botones_redondos": {
   "id": "replica_botones_redondos",
@@ -9058,6 +9098,11 @@
   "id": "sesgo_tendencias_seculares",
   "nombre": "Riesgo de sesgo por mala especificación de tendencias seculares",
   "tipo": "limitacion"
+ },
+ "sesgo_toma_evidencia_sensorial": {
+  "id": "sesgo_toma_evidencia_sensorial",
+  "nombre": "Sesgo en la información sensorial que se absorbe (percepción, no solo respuesta)",
+  "tipo": "resultado"
  },
  "sesgos_chatgpt_mitad_pruebas": {
   "id": "sesgos_chatgpt_mitad_pruebas",

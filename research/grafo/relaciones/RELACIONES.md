@@ -1,6 +1,6 @@
 # 🧬 Grafo semántico del códice — RELACIONES
 
-*Generado 2026-10-12 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
+*Generado 2026-10-25 por `relaciones.py render`. No editar a mano. Cada relación vive en `triples.jsonl` con fuente F-n, apoyo, nivel de lectura y fuerza.*
 
 > **Transparencia:** una relación aquí es lo que *una fuente dice*, no un hecho. `lectura=ficha` significa que solo se leyó el resumen del ledger; `abstract` que se leyó el resumen real de la fuente; `completa`, el texto íntegro. Un cruce entre fuentes es una *coincidencia de entidades*, no una prueba de que las fuentes sean compatibles.
 
@@ -8,23 +8,23 @@
 
 | | |
 |---|---|
-| Fuentes procesadas | **976 de 976** (100.0%) |
+| Fuentes procesadas | **984 de 984** (100.0%) |
 | …del cerebro de diseño (citadas en el node) | 373 de 373 |
-| …por rigor | A 319/319 · B 171/171 · C 213/213 · D 217/217 · E 41/41 |
-| Barridos | 118 |
-| Entidades | 2040 |
-| Relaciones | 2149 |
-| Nivel de lectura | ficha 1143 · abstract 997 · completa 9 |
-| Fuerza de las afirmaciones | descriptiva 1260 · teorica 305 · observacional 298 · causal 286 |
+| …por rigor | A 323/323 · B 174/174 · C 214/214 · D 217/217 · E 41/41 |
+| Barridos | 119 |
+| Entidades | 2049 |
+| Relaciones | 2161 |
+| Nivel de lectura | ficha 1146 · abstract 1006 · completa 9 |
+| Fuerza de las afirmaciones | descriptiva 1261 · teorica 306 · observacional 304 · causal 290 |
 
 ## 2. Relaciones por tipo
 
 | Relación | Clase | n |
 |---|---|---|
-| `tiene_limite` | metodo | 460 |
-| `aumenta` | efecto | 268 |
+| `tiene_limite` | metodo | 463 |
+| `aumenta` | efecto | 270 |
 | `aplica_a` | estructura | 238 |
-| `asocia_con` | efecto | 206 |
+| `asocia_con` | efecto | 208 |
 | `reduce` | efecto | 164 |
 | `respalda` | evidencia | 148 |
 | `es_tipo_de` | estructura | 124 |
@@ -32,8 +32,8 @@
 | `origina_en` | metodo | 100 |
 | `mide` | metodo | 98 |
 | `refuta` | evidencia | 98 |
-| `contradice` | evidencia | 65 |
-| `modera` | efecto | 57 |
+| `contradice` | evidencia | 67 |
+| `modera` | efecto | 60 |
 | `media` | efecto | 22 |
 
 ## 3. Convergencias: entidades sostenidas por ≥2 fuentes
@@ -71,6 +71,7 @@
 | Selección adversa (selección de riesgos) | F-82, F-91, F-92, F-96, F-103, F-162, F-207 |
 | Intermediarios de seguros independientes (brokers y agentes) | F-137, F-180, F-190, F-359, F-364, F-370, F-375 |
 | Consumidores y usuarios de seguros en Perú | F-1, F-5, F-11, F-12, F-117, F-173, F-235 |
+| Conformidad con la respuesta de la mayoría (tasa de errores conformes) | F-647, F-648, F-649, F-981, F-982, F-983, F-984 |
 | Obediencia a órdenes dañinas (llegar a la descarga máxima) | F-650, F-651, F-652, F-653, F-654, F-655, F-656 |
 | Decoherencia cuántica en el cerebro caliente y húmedo | F-808, F-809, F-816, F-826, F-834, F-844, F-846 |
 | Hipótesis del cerebro como computadora cuántica | F-808, F-810, F-821, F-827, F-834, F-835, F-846 |
@@ -107,6 +108,8 @@
 | Visitas a urgencias (ED) | F-108, F-330, F-332, F-342, F-354 |
 | Ley 29733 de Protección de Datos Personales (Perú) | F-67, F-68, F-74, F-76, F-77 |
 | Net Promoter Score (NPS) del cliente de seguros | F-81, F-183, F-351, F-356, F-977 |
+| Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto) | F-715, F-716, F-718, F-978, F-979 |
+| Intensidad en el peor momento (pico) y en el final de una experiencia | F-716, F-718, F-978, F-979, F-980 |
 | Microtúbulos neuronales (citoesqueleto de tubulina) | F-803, F-807, F-810, F-814, F-844 |
 | Cifra sin muestra ni método publicado (no verificable de forma independiente) | F-126, F-139, F-146, F-177, F-179 |
 | El canal digital/directo desplaza al canal de agentes en la venta de seguros | F-136, F-182, F-185, F-186, F-190 |
@@ -237,14 +240,12 @@
 | Lanzamiento de Claude Design (17-abr-2026) | F-318, F-319, F-429 |
 | Tendencia 'Imperfect by Design' de Canva para 2026 | F-295, F-297, F-411 |
 | Conversión del checkout | F-311, F-632, F-913 |
-| Conformidad con la respuesta de la mayoría (tasa de errores conformes) | F-647, F-648, F-649 |
 | Órdenes de una figura de autoridad (experimentador) de continuar | F-650, F-651, F-652 |
 | Sensación subjetiva de poder (autorreporte) | F-695, F-696, F-698 |
 | Las poses de poder suben la testosterona, bajan el cortisol y aumentan la tolerancia al riesgo (Carney et al. 2010) | F-695, F-696, F-697 |
 | Experiencia emocional autorreportada (felicidad, humor percibido) | F-699, F-701, F-702 |
 | Ejercer autocontrol agota un recurso común y reduce el autocontrol posterior (Baumeister et al. 1998) | F-707, F-708, F-709 |
 | Tasa de replicación de hallazgos de psicología | F-712, F-713, F-714 |
-| Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto) | F-715, F-716, F-718 |
 | Negligencia de la duración: la duración casi no pesa en el recuerdo | F-715, F-716, F-718 |
 | En balance, las pérdidas no tienen más impacto que las ganancias | F-723, F-724, F-727 |
 | Hogares pobres / de menores ingresos | F-750, F-754, F-788 |
@@ -452,6 +453,7 @@
 | Búsquedas de estéticas lo-fi y DIY en Canva | F-295, F-411 |
 | Uso de IA por el trabajador | F-282, F-595 |
 | Presión de una mayoría unánime que responde de forma equivocada | F-647, F-649 |
+| La conformidad de Asch es un rasgo universal y estable en el tiempo | F-648, F-984 |
 | Milgram demuestra obediencia ciega/pasiva a la autoridad | F-655, F-656 |
 | Asignar un rol de poder (guardia) basta por sí solo para producir crueldad | F-657, F-658 |
 | Mensaje de norma descriptiva ('la mayoría de personas como tú hace X') | F-664, F-665 |
@@ -475,7 +477,6 @@
 | Replicación multilaboratorio preregistrada (Many Labs, RRR) | F-713, F-714 |
 | La replicabilidad depende más del efecto estudiado que de la muestra o el contexto | F-713, F-714 |
 | Agregar un tramo final menos desagradable a una experiencia | F-715, F-717 |
-| Intensidad en el peor momento (pico) y en el final de una experiencia | F-716, F-718 |
 | Exposición repetida a un estímulo | F-719, F-720 |
 | Agrado por un estímulo (actitud afectiva) | F-719, F-720 |
 | Las pérdidas pesan más que las ganancias equivalentes como principio general | F-723, F-725 |
@@ -655,6 +656,10 @@
 | El diseño (como oficio) murió | F-963, F-964 |
 | Polémica por costos de GOV.UK (cambio de marca y app) | F-965, F-966 |
 | GOV.UK (servicios digitales del gobierno británico) | F-965, F-966 |
+| Experiencias largas, variadas o complejas (vacaciones, episodios de varias partes) | F-978, F-979 |
+| Promedio de todos los momentos de una experiencia | F-978, F-979 |
+| Sesgo en la información sensorial que se absorbe (percepción, no solo respuesta) | F-981, F-982 |
+| Género, cultura y época de la muestra | F-983, F-984 |
 
 ## 4. Tensiones declaradas (`contradice` / `refuta`)
 
@@ -1147,6 +1152,10 @@
 - **Laboratorio de Gobierno de Chile** —contradice→ **Cierre de labs de innovación corporativos (Walmart Store No. 8, IKEA SPACE10, General Mills G-Works, GM Arizona)** (F-962, descriptiva) · **estado: alcance_distinto**
   - LabGob sigue activo a los 10 años y reúne a 12 países: contraejemplo a la ola de cierres.
   - *Resolución (2026-10-12):* Los cierres citados (MindLab, Lab CDMX, MinTIC) son de 2018-2021 y de otros países; LabGob Chile sigue activo en 2025. No hay ola de cierres actual demostrada: son casos distintos, no una refutación. Juicio sobre notas institucionales y prensa.
+- **Réplica de Asch con estudiantes británicos de ciencias (1980)** —contradice→ **La conformidad de Asch es un rasgo universal y estable en el tiempo** (F-984, observacional) · **estado: abierta**
+  - Una réplica exacta casi sin conformidad contradice que el efecto de Asch sea universal y estable.
+- **Independencia frente a la mayoría (respuestas correctas pese al grupo)** —contradice→ **Relato de los manuales de Asch como prueba de conformidad** (F-985, descriptiva) · **estado: abierta**
+  - Cerca de 2/3 de los ensayos críticos de Asch fueron correctos y solo 6 de 123 personas se conformaron en todos; los manuales enfatizan la conformidad.
 
 ## 5. Hubs (entidades más conectadas)
 
@@ -1585,6 +1594,7 @@
 | 2026-10-12 | F-947, F-948, F-949, F-950, F-951, F-952, F-953, F-954, F-955, F-956, F-957, F-958, F-959, F-960, F-961, F-962, F-963, F-964, F-965, F-966, F-967, F-968, F-969, F-970, F-971, F-972, F-973, F-974, F-975, F-976, F-977 | 34 | – | Iteración 9 del nodo de diseño (/trinidad 2026-10-12): diseño de servicios, políticas públicas y salud. Leído vía resúmenes (lectura 'abstract'). |
 | 2026-10-12 | F-947 | 1 | – | Completa el lote 117: relación del recordatorio genérico (F-947). |
 | 2026-10-12 | F-242, F-243, F-249, F-259, F-260, F-261, F-265, F-268, F-269, F-270, F-271, F-284, F-303, F-304, F-305, F-306, F-307, F-308, F-309, F-313, F-314, F-356, F-380, F-381, F-384, F-386, F-388, F-391, F-396, F-398, F-399, F-400, F-401, F-420, F-428, F-429, F-430, F-432, F-433, F-434, F-442, F-449, F-457, F-467, F-469, F-481, F-492, F-529 | 90 | – | Pase de lectura profunda 2026-10-12: relaciones nuevas sacadas del resumen oficial de cada fuente (vía búsqueda; no se abrieron páginas). |
+| 2026-10-25 | F-978, F-979, F-980, F-981, F-982, F-983, F-984, F-985 | 12 | – | /seeker 2026-10-25: contraste adversarial de la regla pico-final y del paradigma de Asch (resúmenes oficiales o fuentes secundarias vía búsqueda). |
 
 ---
 *Visor: `relaciones.html` · datos: `relaciones.json` · siguiente lote: `python research/grafo/relaciones/relaciones.py next`*

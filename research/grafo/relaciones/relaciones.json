@@ -2432,9 +2432,10 @@
    "id": "c_conformidad_universal_estable",
    "nombre": "La conformidad de Asch es un rasgo universal y estable en el tiempo",
    "tipo": "afirmacion",
-   "grado": 1,
+   "grado": 2,
    "fuentes": [
-    "F-648"
+    "F-648",
+    "F-984"
    ]
   },
   {
@@ -5988,11 +5989,15 @@
    "id": "conformidad_mayoria",
    "nombre": "Conformidad con la respuesta de la mayoría (tasa de errores conformes)",
    "tipo": "resultado",
-   "grado": 4,
+   "grado": 8,
    "fuentes": [
     "F-647",
     "F-648",
-    "F-649"
+    "F-649",
+    "F-981",
+    "F-982",
+    "F-983",
+    "F-984"
    ]
   },
   {
@@ -8644,6 +8649,15 @@
    ]
   },
   {
+   "id": "estimulo_ambiguo",
+   "nombre": "Estímulo o decisión ambigua",
+   "tipo": "concepto",
+   "grado": 1,
+   "fuentes": [
+    "F-981"
+   ]
+  },
+  {
    "id": "estimulo_oddball",
    "nombre": "Estímulo inesperado o distinto dentro de una serie repetida (oddball)",
    "tipo": "intervencion",
@@ -8786,11 +8800,13 @@
    "id": "evaluacion_retrospectiva",
    "nombre": "Evaluación retrospectiva de una experiencia (cómo se la recuerda en conjunto)",
    "tipo": "resultado",
-   "grado": 5,
+   "grado": 7,
    "fuentes": [
     "F-715",
     "F-716",
-    "F-718"
+    "F-718",
+    "F-978",
+    "F-979"
    ]
   },
   {
@@ -9005,6 +9021,25 @@
     "F-582",
     "F-584",
     "F-936"
+   ]
+  },
+  {
+   "id": "experiencias_largas_complejas",
+   "nombre": "Experiencias largas, variadas o complejas (vacaciones, episodios de varias partes)",
+   "tipo": "limitacion",
+   "grado": 2,
+   "fuentes": [
+    "F-978",
+    "F-979"
+   ]
+  },
+  {
+   "id": "experiencias_positivas_simples",
+   "nombre": "Experiencias positivas pequeñas y simples (p. ej. recibir regalos)",
+   "tipo": "limitacion",
+   "grado": 1,
+   "fuentes": [
+    "F-980"
    ]
   },
   {
@@ -9892,6 +9927,16 @@
    ]
   },
   {
+   "id": "genero_y_cultura",
+   "nombre": "Género, cultura y época de la muestra",
+   "tipo": "poblacion",
+   "grado": 2,
+   "fuentes": [
+    "F-983",
+    "F-984"
+   ]
+  },
+  {
    "id": "genui_study_dis2025",
    "nombre": "The GenUI Study (ACM DIS 2025): 37 profesionales de UX, una semana con diario",
    "tipo": "estudio",
@@ -10608,6 +10653,15 @@
    ]
   },
   {
+   "id": "independencia_mayoria",
+   "nombre": "Independencia frente a la mayoría (respuestas correctas pese al grupo)",
+   "tipo": "resultado",
+   "grado": 1,
+   "fuentes": [
+    "F-985"
+   ]
+  },
+  {
    "id": "industria_no_manufacturera",
    "nombre": "Industrias no manufactureras",
    "tipo": "poblacion",
@@ -11040,10 +11094,13 @@
    "id": "intensidad_pico_final",
    "nombre": "Intensidad en el peor momento (pico) y en el final de una experiencia",
    "tipo": "constructo",
-   "grado": 2,
+   "grado": 5,
    "fuentes": [
     "F-716",
-    "F-718"
+    "F-718",
+    "F-978",
+    "F-979",
+    "F-980"
    ]
   },
   {
@@ -15446,6 +15503,16 @@
    ]
   },
   {
+   "id": "promedio_momentos_experiencia",
+   "nombre": "Promedio de todos los momentos de una experiencia",
+   "tipo": "constructo",
+   "grado": 2,
+   "fuentes": [
+    "F-978",
+    "F-979"
+   ]
+  },
+  {
    "id": "pronostico_triple_i_milliman_2025",
    "nombre": "Pronóstico Triple-I/Milliman del mercado P/C (ene-2025)",
    "tipo": "estudio",
@@ -16177,6 +16244,15 @@
    ]
   },
   {
+   "id": "relato_manuales_asch",
+   "nombre": "Relato de los manuales de Asch como prueba de conformidad",
+   "tipo": "afirmacion",
+   "grado": 1,
+   "fuentes": [
+    "F-985"
+   ]
+  },
+  {
    "id": "relevancia_percibida",
    "nombre": "Relevancia percibida del anuncio",
    "tipo": "constructo",
@@ -16231,6 +16307,15 @@
     "F-504",
     "F-505",
     "F-506"
+   ]
+  },
+  {
+   "id": "replica_asch_reino_unido",
+   "nombre": "Réplica de Asch con estudiantes británicos de ciencias (1980)",
+   "tipo": "estudio",
+   "grado": 1,
+   "fuentes": [
+    "F-984"
    ]
   },
   {
@@ -17475,6 +17560,16 @@
    "grado": 1,
    "fuentes": [
     "F-58"
+   ]
+  },
+  {
+   "id": "sesgo_toma_evidencia_sensorial",
+   "nombre": "Sesgo en la información sensorial que se absorbe (percepción, no solo respuesta)",
+   "tipo": "resultado",
+   "grado": 3,
+   "fuentes": [
+    "F-981",
+    "F-982"
    ]
   },
   {
@@ -45431,11 +45526,155 @@
    "fuerza": "descriptiva",
    "fecha": "2026-10-12",
    "clase": "estructura"
+  },
+  {
+   "id": "T-2150",
+   "s": "intensidad_pico_final",
+   "p": "tiene_limite",
+   "o": "experiencias_largas_complejas",
+   "f": "F-978",
+   "apoyo": "En vacaciones de ~7 días con registro diario de felicidad, el pico y el final no predijeron el recuerdo mejor que el promedio de los días.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2151",
+   "s": "promedio_momentos_experiencia",
+   "p": "asocia_con",
+   "o": "evaluacion_retrospectiva",
+   "f": "F-978",
+   "apoyo": "Medidas resumen como el promedio diario predijeron razonablemente bien la felicidad recordada de las vacaciones.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2152",
+   "s": "intensidad_pico_final",
+   "p": "tiene_limite",
+   "o": "experiencias_largas_complejas",
+   "f": "F-979",
+   "apoyo": "En una experiencia de realidad virtual compleja y heterogénea, pico y final predijeron el recuerdo peor que el promedio de valencia y activación del episodio.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2153",
+   "s": "promedio_momentos_experiencia",
+   "p": "asocia_con",
+   "o": "evaluacion_retrospectiva",
+   "f": "F-979",
+   "apoyo": "El promedio de valencia y activación sobre todo el episodio predijo mejor la experiencia recordada que el pico y el final.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2154",
+   "s": "intensidad_pico_final",
+   "p": "tiene_limite",
+   "o": "experiencias_positivas_simples",
+   "f": "F-980",
+   "apoyo": "Tres experimentos con 988 personas de 2 a 97 años no encontraron la regla pico-final al recibir pequeños regalos.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "metodo"
+  },
+  {
+   "id": "T-2155",
+   "s": "conformidad_mayoria",
+   "p": "aumenta",
+   "o": "sesgo_toma_evidencia_sensorial",
+   "f": "F-981",
+   "apoyo": "Con modelo de difusión, la influencia social alteró la toma de la evidencia sensorial disponible; los participantes no ajustaron su criterio de decisión.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2156",
+   "s": "conformidad_mayoria",
+   "p": "aumenta",
+   "o": "sesgo_toma_evidencia_sensorial",
+   "f": "F-982",
+   "apoyo": "Con EEG y modelo de difusión, la conformidad se debió a una toma sesgada de la información del estímulo, con procesamiento más cuidadoso.",
+   "lectura": "abstract",
+   "fuerza": "causal",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2157",
+   "s": "estimulo_ambiguo",
+   "p": "modera",
+   "o": "sesgo_toma_evidencia_sensorial",
+   "f": "F-981",
+   "apoyo": "El efecto perceptivo se midió en tareas perceptivas difíciles o ambiguas, a diferencia de las líneas claras de Asch.",
+   "lectura": "abstract",
+   "fuerza": "teorica",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2158",
+   "s": "genero_y_cultura",
+   "p": "modera",
+   "o": "conformidad_mayoria",
+   "f": "F-983",
+   "apoyo": "En Japón, sin cómplices, las mujeres se conformaron 4,41 de 12 ensayos críticos (Asch: 3,44) y los hombres no se conformaron.",
+   "lectura": "abstract",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2159",
+   "s": "genero_y_cultura",
+   "p": "modera",
+   "o": "conformidad_mayoria",
+   "f": "F-984",
+   "apoyo": "Con estudiantes británicos de ciencias, solo 1 de 396 ensayos se unió a la mayoría equivocada; los autores lo atribuyen a la época y la cultura.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "efecto"
+  },
+  {
+   "id": "T-2160",
+   "s": "replica_asch_reino_unido",
+   "p": "contradice",
+   "o": "c_conformidad_universal_estable",
+   "f": "F-984",
+   "apoyo": "Una réplica exacta casi sin conformidad contradice que el efecto de Asch sea universal y estable.",
+   "lectura": "ficha",
+   "fuerza": "observacional",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
+  },
+  {
+   "id": "T-2161",
+   "s": "independencia_mayoria",
+   "p": "contradice",
+   "o": "relato_manuales_asch",
+   "f": "F-985",
+   "apoyo": "Cerca de 2/3 de los ensayos críticos de Asch fueron correctos y solo 6 de 123 personas se conformaron en todos; los manuales enfatizan la conformidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva",
+   "fecha": "2026-10-25",
+   "clase": "evidencia"
   }
  ],
- "generado": "2026-10-12",
+ "generado": "2026-10-25",
  "cobertura": {
-  "procesadas": 976,
-  "total": 976
+  "procesadas": 984,
+  "total": 984
  }
 }

@@ -1,6 +1,6 @@
 # 🕸️ Grafo del segundo cerebro — ESTADO
 
-*Generado: 2026-10-15 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
+*Generado: 2026-10-25 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
 
 > **Transparencia:** cada cifra de este reporte sale de contar archivos del repo. Lo que no se puede medir está listado en §7. Un número alto aquí significa *más material y mejor enlazado*, **no** que el conocimiento sea *verdadero* ni que haya tenido impacto fuera del repo.
 
@@ -8,13 +8,13 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,783 líneas |
+| Nodes (`_nodes/`) | 20 | 8,794 líneas |
 | Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
-| Fuentes en el ledger | 976 | 🟢A 319 · 🔵B 171 · 🟡C 213 · 🟠D 217 · 🔴E 41 · otras/sin clasificar 15 |
+| Fuentes en el ledger | 984 | 🟢A 323 · 🔵B 174 · 🟡C 214 · 🟠D 217 · 🔴E 41 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 158 | recíprocas: 158 de 158 (100%) |
-| Fuentes citadas por ≥1 node | 870 de 976 | 89% del ledger; **106 viven solo en el ledger** |
+| Fuentes citadas por ≥1 node | 878 de 984 | 89% del ledger; **106 viven solo en el ledger** |
 | Fuentes citadas por ≥2 nodes (transversales) | 111 | evidencia reutilizada entre temas |
-| **Grafo semántico** (relaciones extraídas) | 976 de 976 fuentes (100%) | 2149 relaciones · 118 barridos · detalle en `relaciones/RELACIONES.md` |
+| **Grafo semántico** (relaciones extraídas) | 984 de 984 fuentes (100%) | 2161 relaciones · 119 barridos · detalle en `relaciones/RELACIONES.md` |
 | Componentes conexas del grafo de nodes | 1 | grafo conexo |
 
 ## 2. Segundo cerebro de DISEÑO (`tendencias-diseno-innovacion`)
@@ -90,6 +90,7 @@
 | 2026-10-10 | 74 | 874 | 36 | ██████████████████ |
 | 2026-10-11 | 5 | 879 | 0 | █ |
 | 2026-10-12 | 97 | 976 | 43 | ████████████████████████ |
+| 2026-10-25 | 8 | 984 | 7 | ██ |
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
@@ -114,7 +115,7 @@
 
 | Métrica | Valor | Qué dice | Qué NO dice |
 |---|---|---|---|
-| M1 Base sólida (A+B / ledger) | 50% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
+| M1 Base sólida (A+B / ledger) | 51% | proporción de evidencia primaria/oficial | no que el hallazgo sea cierto |
 | M2 Cobertura de citación | 89% | cuánto del ledger sostiene algún node | un node puede citar mal |
 | M3 Reciprocidad de enlaces | 100% | cumplimiento de la regla 5 de `alma.md` | calidad del enlace |
 | M4 Falsabilidad ejercida (diseño) | 56% | el node confronta, no solo acumula | que las pruebas fueran rigurosas |
@@ -139,7 +140,7 @@
 |---|---|---|---|---|---|---|
 | `tendencias-diseno-innovacion` | 2215 | 373 | 186 | 16/16 | 2026-10-12 | 2026-10-12 v4.1 |
 | `convergencia-psicologia-economia-ia` | 251 | 119 | 51 | 12/12 | 2026-10-12 | 2026-10-12 v1.0 |
-| `fenomenos-psicologicos` | 549 | 107 | 105 | 9/9 | 2026-10-11 | 2026-10-11 v1.0 |
+| `fenomenos-psicologicos` | 560 | 115 | 112 | 9/9 | 2026-10-11 | 2026-10-25 v1.0 |
 | `conciencia-cuantica` | 352 | 72 | 36 | 3/3 | 2026-10-10 | 2026-10-10 v1.0 |
 | `fenomeno-el-nino-impacto-personas` | 404 | 58 | 32 | 3/3 | 2026-10-07 | 2026-10-07 v1.1 |
 | `mecanismos-seguros-salud` | 357 | 57 | 35 | 11/11 | 2026-10-12 | 2026-10-12 v1.2 |

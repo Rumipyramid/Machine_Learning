@@ -1,0 +1,172 @@
+{
+ "fecha": "2026-10-25",
+ "f_ids": [
+  "F-978",
+  "F-979",
+  "F-980",
+  "F-981",
+  "F-982",
+  "F-983",
+  "F-984",
+  "F-985"
+ ],
+ "entidades": [
+  {
+   "id": "experiencias_largas_complejas",
+   "nombre": "Experiencias largas, variadas o complejas (vacaciones, episodios de varias partes)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "experiencias_positivas_simples",
+   "nombre": "Experiencias positivas pequeñas y simples (p. ej. recibir regalos)",
+   "tipo": "limitacion"
+  },
+  {
+   "id": "promedio_momentos_experiencia",
+   "nombre": "Promedio de todos los momentos de una experiencia",
+   "tipo": "constructo"
+  },
+  {
+   "id": "sesgo_toma_evidencia_sensorial",
+   "nombre": "Sesgo en la información sensorial que se absorbe (percepción, no solo respuesta)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "estimulo_ambiguo",
+   "nombre": "Estímulo o decisión ambigua",
+   "tipo": "concepto"
+  },
+  {
+   "id": "genero_y_cultura",
+   "nombre": "Género, cultura y época de la muestra",
+   "tipo": "poblacion"
+  },
+  {
+   "id": "independencia_mayoria",
+   "nombre": "Independencia frente a la mayoría (respuestas correctas pese al grupo)",
+   "tipo": "resultado"
+  },
+  {
+   "id": "relato_manuales_asch",
+   "nombre": "Relato de los manuales de Asch como prueba de conformidad",
+   "tipo": "afirmacion"
+  },
+  {
+   "id": "replica_asch_reino_unido",
+   "nombre": "Réplica de Asch con estudiantes británicos de ciencias (1980)",
+   "tipo": "estudio"
+  }
+ ],
+ "triples": [
+  {
+   "s": "intensidad_pico_final",
+   "p": "tiene_limite",
+   "o": "experiencias_largas_complejas",
+   "f": "F-978",
+   "apoyo": "En vacaciones de ~7 días con registro diario de felicidad, el pico y el final no predijeron el recuerdo mejor que el promedio de los días.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "promedio_momentos_experiencia",
+   "p": "asocia_con",
+   "o": "evaluacion_retrospectiva",
+   "f": "F-978",
+   "apoyo": "Medidas resumen como el promedio diario predijeron razonablemente bien la felicidad recordada de las vacaciones.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "intensidad_pico_final",
+   "p": "tiene_limite",
+   "o": "experiencias_largas_complejas",
+   "f": "F-979",
+   "apoyo": "En una experiencia de realidad virtual compleja y heterogénea, pico y final predijeron el recuerdo peor que el promedio de valencia y activación del episodio.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "promedio_momentos_experiencia",
+   "p": "asocia_con",
+   "o": "evaluacion_retrospectiva",
+   "f": "F-979",
+   "apoyo": "El promedio de valencia y activación sobre todo el episodio predijo mejor la experiencia recordada que el pico y el final.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "intensidad_pico_final",
+   "p": "tiene_limite",
+   "o": "experiencias_positivas_simples",
+   "f": "F-980",
+   "apoyo": "Tres experimentos con 988 personas de 2 a 97 años no encontraron la regla pico-final al recibir pequeños regalos.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "conformidad_mayoria",
+   "p": "aumenta",
+   "o": "sesgo_toma_evidencia_sensorial",
+   "f": "F-981",
+   "apoyo": "Con modelo de difusión, la influencia social alteró la toma de la evidencia sensorial disponible; los participantes no ajustaron su criterio de decisión.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "conformidad_mayoria",
+   "p": "aumenta",
+   "o": "sesgo_toma_evidencia_sensorial",
+   "f": "F-982",
+   "apoyo": "Con EEG y modelo de difusión, la conformidad se debió a una toma sesgada de la información del estímulo, con procesamiento más cuidadoso.",
+   "lectura": "abstract",
+   "fuerza": "causal"
+  },
+  {
+   "s": "estimulo_ambiguo",
+   "p": "modera",
+   "o": "sesgo_toma_evidencia_sensorial",
+   "f": "F-981",
+   "apoyo": "El efecto perceptivo se midió en tareas perceptivas difíciles o ambiguas, a diferencia de las líneas claras de Asch.",
+   "lectura": "abstract",
+   "fuerza": "teorica"
+  },
+  {
+   "s": "genero_y_cultura",
+   "p": "modera",
+   "o": "conformidad_mayoria",
+   "f": "F-983",
+   "apoyo": "En Japón, sin cómplices, las mujeres se conformaron 4,41 de 12 ensayos críticos (Asch: 3,44) y los hombres no se conformaron.",
+   "lectura": "abstract",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "genero_y_cultura",
+   "p": "modera",
+   "o": "conformidad_mayoria",
+   "f": "F-984",
+   "apoyo": "Con estudiantes británicos de ciencias, solo 1 de 396 ensayos se unió a la mayoría equivocada; los autores lo atribuyen a la época y la cultura.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "replica_asch_reino_unido",
+   "p": "contradice",
+   "o": "c_conformidad_universal_estable",
+   "f": "F-984",
+   "apoyo": "Una réplica exacta casi sin conformidad contradice que el efecto de Asch sea universal y estable.",
+   "lectura": "ficha",
+   "fuerza": "observacional"
+  },
+  {
+   "s": "independencia_mayoria",
+   "p": "contradice",
+   "o": "relato_manuales_asch",
+   "f": "F-985",
+   "apoyo": "Cerca de 2/3 de los ensayos críticos de Asch fueron correctos y solo 6 de 123 personas se conformaron en todos; los manuales enfatizan la conformidad.",
+   "lectura": "ficha",
+   "fuerza": "descriptiva"
+  }
+ ],
+ "discrepancias": [],
+ "notas": "/seeker 2026-10-25: contraste adversarial de la regla pico-final y del paradigma de Asch (resúmenes oficiales o fuentes secundarias vía búsqueda)."
+}

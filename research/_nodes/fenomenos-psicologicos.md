@@ -1,7 +1,7 @@
 # Fenómenos psicológicos clásicos: qué sobrevive a la replicación
 
 > Documento de investigación **acumulativo** — capa transversal del segundo cerebro. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-04 · Última actualización: 2026-10-11 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-04 · Última actualización: 2026-10-25 · Versión: **v1.0**
 > Origen: pedido del usuario: *"busca fenómenos psicológicos como el registrado por Asch, el de Milgram o los estudios en percepción del tiempo, forma, color, cognición encarnada, etc. como una capa más de conocimiento"*.
 > Método: cuatro investigaciones en paralelo (registro empírico + teórico/crítico); cada fuente verificada contra su resumen o ficha oficial. Fuentes **F-647 a F-741** (nuevas) + F-220 a F-226 y F-545 (ya en el ledger).
 
@@ -61,7 +61,7 @@ Los otros nodes del cerebro son **temas** (seguros, diseño, IA). Este es una **
 | Agotamiento del ego | 🔴 NO REPLICADO | §4 | F-707 |
 | Efecto Macbeth (limpieza física ↔ moralidad) | 🔴 NO REPLICADO | §4 | F-710 |
 | Crisis de replicación: qué sobrevivió | 🟢 ROBUSTO | §4 | F-712 |
-| Regla pico-final y negligencia de la duración | 🟢 ROBUSTO | §5 | F-715 |
+| Regla pico-final y negligencia de la duración | 🔵 REPLICADO CON MATICES | §5 | F-715 |
 | Efecto de mera exposición | 🔵 REPLICADO CON MATICES | §5 | F-719 |
 | Efecto de dotación (brecha WTA-WTP) | 🟠 EN DISPUTA | §5 | F-223 |
 | Aversión a la pérdida | 🔵 REPLICADO CON MATICES | §5 | F-221 |
@@ -84,7 +84,12 @@ Los otros nodes del cerebro son **temas** (seguros, diseño, IA). Este es una **
 - **Tamaño del efecto:** ~1/3 de ensayos críticos conformes (Asch 1956; Franzen & Mader 2023: 33%; 25% con incentivo). Bond & Smith: magnitud media no disponible en el resumen leído.
 - **Mecanismo:** Dos motivos clásicos: influencia informativa (el grupo como evidencia de lo correcto) e influencia normativa (evitar desentonar/rechazo); ver F-224 (metas de precisión, afiliación y autoimagen). Que el incentivo reduzca pero no elimine la conformidad sugiere que ambos operan. Los rasgos de personalidad casi no la predicen (solo apertura, en Franzen & Mader).
 - **Para diseño, seguros e IA (inferencia):** en venta asistida o en grupo (familia, comité de empresa) la opinión de la mayoría presente puede pesar más que el análisis de la póliza; poner en juego la precisión (consecuencias reales de equivocarse, como el incentivo) reduce el arrastre. En interfaces con varios agentes de IA o con 'votos' visibles, una mayoría unánime puede arrastrar el juicio del usuario aunque esté equivocada; mostrar disenso o evidencia independiente es una salvaguarda. El efecto varía por cultura: no transferir cifras de EE.UU./Europa a Perú sin medir.
-- **Fuentes:** F-647, F-648, F-649, F-224
+- **Actualización 2026-10-25 (/seeker, búsqueda adversarial):**
+  - *Asch midió más independencia que conformidad.* Cerca de dos tercios de los ensayos críticos fueron correctos y solo 6 de 123 personas se conformaron siempre; los manuales lo cuentan al revés (F-985, leído en fuente secundaria).
+  - *El efecto depende de quién y cuándo.* Una réplica exacta con estudiantes británicos de ciencias casi no lo encontró: 1 de 396 ensayos (F-984, débil: boletín breve y otra muestra). Una réplica en Japón sin actores lo reprodujo en mujeres (4,41 de 12 ensayos frente a 3,44 en Asch) y no en hombres (F-983).
+  - *¿Cambia lo que se ve o solo lo que se dice?* Las dos cosas, según la tarea. Con líneas claras, como en Asch, la mayoría de quienes se conformaron sabía en privado que el grupo se equivocaba: es complacencia pública. Con estímulos ambiguos, la mayoría sesga la información sensorial que la persona absorbe y no solo su criterio de respuesta (modelo de difusión y EEG: F-981, F-982; muestras pequeñas y tareas simples).
+  - *Lectura:* "un tercio se conforma" es cierto como promedio de ensayos en ciertas muestras, no como rasgo humano fijo. Para seguros: la presión del grupo pesa más cuando la decisión es ambigua (cuánto cubrir), justo donde además cambia la percepción y no solo la respuesta.
+- **Fuentes:** F-647, F-648, F-649, F-224, F-981, F-982, F-983, F-984, F-985
 
 ### 2.2 Obediencia a la autoridad (paradigma de Milgram) — 🔵 REPLICADO CON MATICES
 
@@ -362,14 +367,20 @@ Los otros nodes del cerebro son **temas** (seguros, diseño, IA). Este es una **
 
 ## 5. Juicio, memoria y preferencia
 
-### 5.1 Regla pico-final y negligencia de la duración — 🟢 ROBUSTO
+### 5.1 Regla pico-final y negligencia de la duración — 🔵 REPLICADO CON MATICES (bajó de 🟢 ROBUSTO el 2026-10-25)
 
 - **Qué es:** Al recordar una experiencia, la gente la juzga sobre todo por su peor (o mejor) momento y por cómo terminó; la duración casi no cuenta.
 - **Replicación:** Confirmado en clínica (colonoscopía n=154, litotricia n=133; F-716), en un RCT con 682 pacientes (F-717) y en meta-análisis de 174 efectos: r=0,581 (IC95% 0,487-0,661), con efecto de la duración esencialmente nulo (F-718). Matiz: el pico-final predice tanto como el promedio de todos los momentos, no más.
 - **Tamaño del efecto:** r=0,581 (IC95% 0,487-0,661) sobre la evaluación retrospectiva (F-718)
 - **Mecanismo:** La memoria guarda 'momentos representativos' y no integra la experiencia a lo largo del tiempo (Kahneman: yo que experimenta vs. yo que recuerda). Alternativa: el pico y el final son simplemente buenos indicadores del promedio, por eso predicen casi igual que la media.
 - **Para diseño, seguros e IA (inferencia):** En siniestros y reclamos, el recuerdo del cliente lo definirán el peor momento (p. ej., un rechazo o una espera) y el cierre: invertir en un cierre cálido (pago confirmado, llamada de seguimiento) y en suavizar el pico, más que en acortar todo el proceso. En agentes de IA: cuidar el último turno de la conversación. El RCT de 2003 sugiere efecto en la conducta (volver a repetir el procedimiento), no solo en la opinión.
-- **Fuentes:** F-715, F-716, F-717, F-718
+- **Actualización 2026-10-25 (/seeker, búsqueda adversarial). Por qué bajó a "replicado con matices":**
+  - *Sólido en experiencias cortas, simples y dolorosas.* Agua fría y procedimientos médicos (F-715 a F-717); el meta-análisis lo confirma (F-718).
+  - *No supera al promedio.* El pico y el final predicen el recuerdo igual que el promedio de todos los momentos, no mejor (F-718). En vacaciones reales de una semana no fue mejor predictor que el promedio diario (F-978). En una experiencia compleja de realidad virtual predijo peor que el promedio (F-979).
+  - *Falla con experiencias positivas pequeñas.* Una réplica con 988 personas de 2 a 97 años no lo encontró al recibir regalos (F-980).
+  - *Lo que sí se sostiene:* la duración casi no cuenta en el recuerdo, y un final mejor puede mejorar el recuerdo de un episodio desagradable.
+  - *Lectura para servicios:* sirve para suavizar el peor momento y cuidar el cierre de un trámite doloroso (siniestro, reclamo). No justifica descuidar el resto del recorrido: en experiencias largas y variadas, el recuerdo sigue al conjunto. No se encontró evidencia de campo que mida su efecto en satisfacción o lealtad de clientes.
+- **Fuentes:** F-715, F-716, F-717, F-718, F-978, F-979, F-980
 
 ### 5.2 Efecto de mera exposición — 🔵 REPLICADO CON MATICES
 
@@ -484,7 +495,7 @@ Los otros nodes del cerebro son **temas** (seguros, diseño, IA). Este es una **
 Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita los casos que lo sostienen.
 
 1. **Lo que cae son los efectos "sorprendentes" de manipulación mínima.** Calidez de una taza (F-693 → F-694), peso de un portapapeles (F-703 → F-704), lavarse las manos tras una falta (F-710 → F-711), palabras de vejez que hacen caminar lento (F-705 → F-706), autocontrol que "se gasta" (F-707 → F-708, F-709), el rojo que empeora el rendimiento (F-679 → F-680) y la predicción central de la disonancia (F-662 → F-663). Todos comparten: un estímulo sutil, un efecto grande y muestras pequeñas en el original. Es el mismo perfil que la Open Science Collaboration encontró a escala: 36% de réplicas significativas y efectos de la mitad del tamaño (F-712).
-2. **Lo que sobrevive son los paradigmas simples con medida directa.** Stroop (F-687), agrupamiento Gestalt (F-681), cegueras de atención (F-682, F-683), bouba/kiki en 25 lenguas (F-676), anclaje y encuadre en 36 muestras (F-713), pico-final en meta-análisis y en un RCT clínico (F-717, F-718).
+2. **Lo que sobrevive son los paradigmas simples con medida directa.** Stroop (F-687), agrupamiento Gestalt (F-681), cegueras de atención (F-682, F-683), bouba/kiki en 25 lenguas (F-676), anclaje y encuadre en 36 muestras (F-713), pico-final en meta-análisis y en un RCT clínico (F-717, F-718), aunque solo en episodios cortos y desagradables: en experiencias largas, complejas o positivas no supera al promedio (F-978 a F-980).
 3. **A veces no cae el dato sino la interpretación.** La obediencia de Milgram se reproduce (F-651, F-652), pero su promedio real es más bajo (43,6% en 21 condiciones, F-653) y la explicación "obediencia ciega" compite con la de "seguidores comprometidos con una causa" (F-655, F-656). En Stanford, el archivo muestra que a los guardias se les pidió dureza (F-657, F-658). El efecto espectador baja la ayuda individual (F-659) pero en conflictos reales grabados casi siempre alguien interviene (F-660). Las poses de poder cambian cómo se siente la persona, no sus hormonas (F-696).
 4. **El promedio esconde a las personas.** El efecto McGurk va de 0% a 100% según la persona (F-685); la conformidad cambia con la cultura y la época (F-648); la aversión a la pérdida es mayor en personas mayores y menor en quien conoce el producto (F-724), aunque su promedio se sostiene (λ ≈ 1,96, F-727). Para segmentar clientes, el promedio de un efecto clásico dice poco.
 5. **"Asociar" no es "causar".** El color se asocia con emociones de forma muy parecida en 30 países (F-678), pero el efecto causal del rojo sobre el rendimiento desaparece al corregir el sesgo de publicación (F-680). La psicología del color usada en marketing suele confundir ambos.

@@ -45,8 +45,8 @@
   {
    "id": "fenomenos-psicologicos",
    "type": "node",
-   "lines": 549,
-   "cites": 107,
+   "lines": 560,
+   "cites": 115,
    "design": false
   },
   {
@@ -8953,6 +8953,78 @@
    "autor": "Infomercado",
    "anio": "2025",
    "huerfana": false
+  },
+  {
+   "id": "F-978",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "A test of the peak-end rule with extended autobiographical events (Memory & Cognition, 36(1):132-138)",
+   "autor": "Kemp, S.; Burt, C. D. B.; Furneaux, L.",
+   "anio": "2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-979",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "From Experience to Memory: On the Robustness of the Peak-and-End-Rule for Complex, Heterogeneous Experiences (Frontiers in Psychology, 10:17",
+   "autor": "Strijbosch, W. et al. (coautores no verificados)",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-980",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "No Peak-End Rule for Simple Positive Experiences Observed in Children and Adults (Journal of Applied Research in Memory and Cognition, 8:337",
+   "autor": "Mah, E. Y.; Bernstein, D. M.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-981",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Social Influence and Perceptual Decision Making: A Diffusion Model Analysis (Personality and Social Psychology Bulletin, 40(2):217-231)",
+   "autor": "Germar, M.; Schlemmer, A.; Krug, K.; Voss, A.; Mojzisch, A.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-982",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Social conformity is due to biased stimulus processing: electrophysiological and diffusion analyses (revista y páginas no verificadas; regis",
+   "autor": "Germar, M.; Albrecht, T.; Voss, A.; Mojzisch, A.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-983",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Réplica del experimento de Asch sin cómplices (International Journal of Psychology, 45(5):390-397; título exacto no verificado)",
+   "autor": "Mori, K.; Arai, M.",
+   "anio": "2010",
+   "huerfana": false
+  },
+  {
+   "id": "F-984",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The Asch effect: a child of its time? (Bulletin of the British Psychological Society; volumen y páginas no verificados)",
+   "autor": "Perrin, S.; Spencer, C.",
+   "anio": "1980",
+   "huerfana": false
+  },
+  {
+   "id": "F-985",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Análisis de cómo los manuales de psicología reportan el estudio de Asch (título, revista y páginas no verificados)",
+   "autor": "Friend, R.; Rafferty, Y.; Bramel, D.",
+   "anio": "1990",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -15083,10 +15155,50 @@
    "s": "tendencias-diseno-innovacion",
    "t": "F-977",
    "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-978",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-979",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-980",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-981",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-982",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-983",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-984",
+   "k": "cita"
+  },
+  {
+   "s": "fenomenos-psicologicos",
+   "t": "F-985",
+   "k": "cita"
   }
  ],
  "meta": {
-  "generado": "2026-10-15",
+  "generado": "2026-10-25",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -15383,6 +15495,17 @@
      "C": 26,
      "D": 22,
      "E": 6
+    }
+   },
+   {
+    "fecha": "2026-10-25",
+    "nuevas": 8,
+    "acumuladas": 984,
+    "AB": 7,
+    "rigor": {
+     "A": 4,
+     "B": 3,
+     "C": 1
     }
    }
   ],
@@ -17676,6 +17799,44 @@
     },
     "fecha": "2026-10-13",
     "commit": "a2dacd5",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 976,
+    "rigor": {
+     "B": 171,
+     "A": 319,
+     "C": 213,
+     "D": 217,
+     "?": 15,
+     "E": 41
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 158,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 870,
+    "diseno": {
+     "hyp": {
+      "abierta": 16,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 9,
+     "lines": 2215,
+     "cites": 373
+    },
+    "fecha": "2026-10-15",
+    "commit": "3ed2b38",
     "fuente": "git"
    }
   ],
