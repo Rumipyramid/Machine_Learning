@@ -230,3 +230,4 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 - `proyecto-back-to-basics-ffvv-vida.md` — caso real de RIMAC (Perú) donde la apuesta es
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
+- [[digitalizacion-seguros-latam-360|Digitalización en seguros (LatAm y mercados emergentes)]] — amplía este panorama a todos los ramos y a India, Sudeste Asiático y África: qué intervenciones cambian la conducta (aval, calendario de pago, recordatorios), edad y canal, bancaseguros y competencia digital en Perú (F-847 a F-940).

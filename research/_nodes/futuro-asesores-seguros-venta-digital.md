@@ -386,3 +386,4 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[digitalizacion-seguros-latam-360|Digitalización en seguros (LatAm y mercados emergentes)]] — suma evidencia causal sobre el papel del aval de un tercero de confianza (+40% de compra, F-847) y sobre renovación digital (F-856); es consistente con que el intermediario persista cuando hay asimetría de información.

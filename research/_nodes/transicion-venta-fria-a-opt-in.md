@@ -322,3 +322,4 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — retoma de este node la lógica de reducir la carga de «pedir antes de dar valor» como argumento a favor de potenciar al asesor con tecnología, no de reemplazarlo.
+- [[digitalizacion-seguros-latam-360|Digitalización en seguros (LatAm y mercados emergentes)]] — el consentimiento como base para monetizar sin spam en productos de pocos toques; recordatorios útiles pero sin efecto extra al repetirse (F-859).
