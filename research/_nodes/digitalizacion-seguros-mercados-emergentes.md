@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-26 · Versión: v1.0
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-26 · Versión: v1.1 (suma §8: estado de la digitalización por etapa, relación con insurtech y líneas de las láminas de banca de México)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-914). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-937). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -373,9 +373,9 @@ región: pendiente.
 
 ---
 
-## 7. Ledger de fuentes (F-847 a F-914)
+## 7. Ledger de fuentes (F-847 a F-937)
 
-Resumen, rigurosidad completa y URL de cada fuente: `research/fuentes/codice.md`. 🔬 empírica · 📱 percepción/social · ⚖️ regulación · 🏛️ contexto Perú · 💼 negocio. Fuentes reutilizadas del ledger previo: F-362 a F-366, F-372 a F-377, F-442, F-509, F-807.
+Resumen, rigurosidad completa y URL de cada fuente: `research/fuentes/codice.md`. 🔬 empírica · 📱 percepción/social · ⚖️ regulación · 🏛️ contexto Perú · 💼 negocio. Fuentes reutilizadas del ledger previo: F-362 a F-366, F-372 a F-377, F-442, F-485, F-509, F-807. F-917, F-919 y F-920 vienen de las láminas del usuario y **no están verificadas**.
 
 | ID | Pista | Autor | Año | Título | Rigor |
 |---|---|---|---|---|---|
@@ -447,6 +447,98 @@ Resumen, rigurosidad completa y URL de cada fuente: `research/fuentes/codice.md`
 | F-912 | 💼 | Insurance Business, Intelligent Insurer y Swiss Re (vía prensa) | 2026 | Responsabilidad por IA y ciber para pymes como nuevo territorio | 🟡 C |
 | F-913 | 💼 | Gestión y Andina (notas sobre repartidores de delivery) | 2019-2021 | Repartidores de delivery: qué derechos tienen y qué les depara el futuro | 🟠 D |
 | F-914 | 💼 | 8x8, AWS, Stripe y CleverTap (blogs y casos de proveedores) | 2025-2026 | Insurance customer engagement: cómo mejorar retención, crecimiento y experiencia digital | 🔴 E |
+| F-915 | 🔬 | Buell, R. W. & Norton, M. I. | 2011 | The Labor Illusion: How Operational Transparency Increases Perceived Value (Management Science 57(9):1564-1579) | 🟢 A |
+| F-916 | 🔬 | Nienaber, A.-M.; Hofeditz, M. & Searle, R. H. (según resumen de búsqueda; título exacto no verificado) | 2014 | Meta-análisis de confianza organizacional en el sector de servicios financieros (International Journal of Bank Marketing) | 🟢 A |
+| F-917 | 🔬 | De Oliveira Santini, F.; Eberle, L.; Ladeira, W. J.; Milan, G. S.; Graciola, A. P. & Sampaio, C. H. | 2023 | Trust in the financial services context: a meta-analysis (International Journal of Bank Marketing 41(7):1693-1714; DOI 10.1108/ijbm-06-2022-0248) | 🟡 C |
+| F-918 | 🔬 | Greene, C. & Stavins, J. | 2020 | Consumer Payment Choice for Bill Payments (Federal Reserve Bank of Boston, Working Paper 20-9) | 🔵 B |
+| F-919 | 🔬 | Kosse, A. | 2021 | An empirical analysis of bill payment choices (Bank of Canada, Staff Working Paper 2021-23) | 🟡 C |
+| F-920 | 📱 | Fiserv (citada en lámina del usuario) | 2023 | Números que hablan (Edición México) | 🟡 C |
+| F-921 | 🔬 | Ericson, K. M. | 2014 | Consumer Inertia and Firm Pricing in the Medicare Part D Prescription Drug Insurance Exchange (American Economic Journal: Economic Policy 6(1):38-64; NBER WP 18359, 2012) | 🟢 A |
+| F-922 | 🔬 | Experimento en Uganda (autoría no verificada), Mobarak y Rosenzweig (India) y otros | s.f. | Redes informales de riesgo y demanda de seguro formal: experimento en Uganda rural; seguro de lluvia en jatis de India | 🔵 B |
+| F-923 | 🔬 | Eling, M. & Lehmann, M. (y Eling, Nuessle & Staubli, 2022) | 2018 | The impact of digitalization on the insurance value chain and the insurability of risks (Geneva Papers on Risk and Insurance 43(3):359-396); The effect of AI on the insurance industry (2022) | 🟢 A |
+| F-924 | 💼 | McKinsey & Company | 2025 | The UK insurtech landscape: strong, shifting, collaborative | 🟡 C |
+| F-925 | 💼 | NTT DATA (vía Kapronasia) | 2025 | Insurtech Global Outlook Report 2025 | 🟠 D |
+| F-926 | 💼 | Capgemini y Efma (vía Insurance Business) | 2018-2019 | Informe mundial de insurtech: colaboración entre aseguradoras e insurtechs | 🟡 C |
+| F-927 | 💼 | Gen Re | 2025 | 2025 U.S. Individual Life Next Gen Underwriting Survey | 🟡 C |
+| F-928 | 💼 | Bain & Company (vía Insurance Business) | 2025 | Claims Maturity Assessment 2025 (81 aseguradoras P&C) | 🟡 C |
+| F-929 | 💼 | BCG, Wavestone y Datos Insights (vía eMarketer y prensa) | 2025-2026 | Aseguradoras e IA: pilotos frente a escala | 🟡 C |
+| F-930 | 💼 | Adacta (encuesta europea 2025), Insurance Global Operations (200 aseguradoras de EE.UU.) y Datos Insights (STP 2019) | 2019-2025 | Modernización de sistemas centrales de seguros y procesamiento directo | 🟡 C |
+| F-931 | 📱 | J.D. Power (dic-2025; vía Business Wire y Repairer Driven News) | 2025 | 2025 U.S. Claims Digital Experience Study (complementa F-868) | 🟡 C |
+| F-932 | 🏛️ | Gestión (publirreportaje de Insurance Day 2023, organizado por APESEG) | 2023 | Insurance Day 2023: tendencias que marcarán las estrategias empresariales del sector asegurador | 🟠 D |
+| F-933 | 💼 | Forbes Perú (sobre Interseguro) | 2022 | Interseguro proyecta crecimiento de doble dígito en 2022 y mayores ventas en su canal digital | 🟠 D |
+| F-934 | 🏛️ | Gestión (nota de junio de 2023), con una encuesta de Ipsos y un blog de Sovos | 2023 | Aseguradoras simplifican contratos y aceleran respuesta digital a siniestros | 🟠 D |
+| F-935 | ⚖️ | SBS (Resolución 1121-2017, modificada por la 277-2021; vía ProActivo y El Peruano) | 2017-2021 | Reglamento de Comercialización de Productos de Seguros | 🟠 D |
+| F-936 | 🏛️ | SBS, Paysafe, Peru Retail, Infomercado y Mercado Negro | 2025-2026 | Billeteras digitales en el Perú: usuarios y frecuencia | 🟠 D |
+| F-937 | 💼 | Swiss Re Institute | 2023 | sigma 5/2023: The economics of digitalisation in insurance | 🔵 B |
+
+---
+
+## 8. Adenda v1.1 (2026-10-26): estado de la digitalización, insurtech y líneas de las láminas de banca
+
+*Origen: pedido del usuario de ir "un paso más": (1) qué está digitalizado y qué no en seguros (mundo, LATAM, Perú), (2) cómo se relacionan digitalización, seguros e insurtech, y (3) trasladar a seguros la línea de investigación de cinco láminas de una presentación de banca en México. Los fragmentos sobre BanCoppel llegan después y no están integrados.*
+
+### 8.1 Las láminas como líneas de investigación para seguros
+
+Las láminas son del usuario. Lo que sigue separa lo que se pudo verificar de lo que no. **Cada traducción a seguros es hipótesis, no hallazgo.**
+
+| Lámina | Qué afirma | Verificación | Traducción a seguros (hipótesis) | Cómo probarla |
+|---|---|---|---|---|
+| **Uso general de servicios financieros en México** (sin fuente visible) | 32% de adultos sin producto formal, 24% con uno, 28% con 2-3, 11% con 4-5, 5% con 6 o más; más de 90% de las transferencias en efectivo; ante imprevistos, primero la red de familiares y amigos | No verificable: la lámina no cita fuente. En Perú: 59% con cuenta (Findex 2024, F-880) y 67% con cuenta o billetera (SBS, fin de 2025, F-936) | El seguro cae en la categoría "resiliencia", donde compite con la red informal. La evidencia sobre si la red desplaza al seguro es **mixta**: sí en Uganda; en India depende del riesgo de base (F-922) | Preguntar a quién recurre el cliente ante un evento (familia, ahorro, crédito, seguro) antes de diseñar el canal |
+| **¿Cómo es la relación con la banca móvil?** (Fiserv, 2023) | 90% opera por banca móvil, 68% muy satisfecho; se usa para saldo (83%) y transferencias (82%), poco para reportar robos (20%) e invertir (12%); fallas de acceso, de transacción y alertas tardías | **No verificada** (F-920): proveedor, método desconocido, es banca | Mismo patrón esperable en seguros: digital en tareas rutinarias y de bajo riesgo; poco en eventos de alto riesgo. Peru: SOAT ~90% digital frente a vida sin evidencia digital (§8.2) | Medir qué hace el cliente en la app (consultar póliza, constancia, pago) y qué no (siniestro, cambio de cobertura); ranking de tareas |
+| **Transparencia operacional** (Buell y Norton, 2011) | Mostrar el proceso hace preferir servicios con más espera; la lámina da 62% vs. 42% (30 s) y 63% vs. 23% (60 s) | **Existe y el efecto central se confirma** (5 experimentos, F-915). Las cifras de la lámina **no se verificaron**. Esperas de 10-60 segundos en viajes y citas, no en trámites de días | Aplicable al siniestro y a la emisión: mostrar "qué se está revisando" en vez de "en proceso". La velocidad extrema ("1 minuto", F-889) y la transparencia son estrategias distintas y nadie las comparó en seguros. Evidencia indirecta: solo 22% de las aseguradoras da actualizaciones adecuadas y la satisfacción es mayor con actualizaciones por app (F-931) | A/B en el seguimiento del siniestro: pasos visibles frente a estado genérico; medir llamadas por estado, percepción de valor y confianza |
+| **Confianza, un factor clave** (meta-análisis) | Más confianza en el banco sube compromiso, lealtad, intención de compra y costos de cambio; palancas: comunicación oportuna, influencia social, facilidad de uso, utilidad, satisfacción, competencia, seguridad, privacidad y aseguramiento estructural | **El paper citado (De Oliveira Santini et al., 2023) no apareció en la búsqueda** (F-917). Sí se verificó otro meta-análisis (93 estudios, F-916): el **entorno regulatorio** pesa más en servicios financieros que en otras industrias | En seguros se suma un antecedente que el marco bancario no destaca: **el pago del siniestro** (F-851, F-852). La regulación como "aseguramiento estructural" se vuelve comunicable (SBS, Indecopi) | Medir los antecedentes de la lámina como moderadores de renovación y reclamo; comparar el peso del pago del siniestro |
+| **¿Hay usuarios propensos a automatizar?** (Greene y Stavins, 2020; Kosse, 2021) | El nivel socioeconómico condiciona programar pagos; de ahí hipótesis de dolor de pago y aversión a la pérdida | Greene y Stavins verificado (F-918): pagan en automático quienes tienen más ingreso y gasto en facturas, **sin efecto de saliencia**; Kosse **no verificado** (F-919). El salto a dolor de pago y aversión a la pérdida **no está en el resumen** | Autopago y renovación automática diferenciados por segmento. **Riesgo:** la inercia tiene efectos persistentes y las aseguradoras suben precio a los antiguos (~10% más, Ericson 2014, F-921). En Perú el default del desgravamen ya se eliminó (F-877) | Mensajes diferenciados por ingreso; consentimiento explícito; vigilar precio a renovantes; resultados de ReachUHC pendientes (F-856) |
+
+**Cambio a la definición de cliente digitalmente sano (§5b).** Se agrega una capa de **fiabilidad**: tasa de fallas de acceso, de transacción y de notificaciones. La lámina de banca móvil las lista como los problemas dominantes (F-920, no verificada) y en seguros solo 22% de las veces se dan actualizaciones adecuadas (F-931). Un cliente no puede ser "sano digital" si el canal le falla.
+
+### 8.2 Qué está digitalizado y qué no
+
+**Cómo leerlo.** 🟢 digitalizado a escala con alguna cifra · 🟡 parcial o solo anuncios · 🔴 poco o nada · ⬜ sin dato hallado. La columna "Lectura" es inferencia mía. **No se halló participación de venta digital sobre primas para Brasil, Colombia ni México; en Perú solo cifras sueltas de gremio y publirreportaje.**
+
+| Etapa | Mundo | LATAM | Perú | Lectura |
+|---|---|---|---|---|
+| **Buscar y cotizar** | Las herramientas de comparación casi duplican la probabilidad de considerar comprar (EE.UU., F-867) | ⬜ | 67% prefiere lo digital para buscar y cotizar, no para comprar (publirreportaje, 2023, F-932) | 🟢 como consulta |
+| **Comprar un producto simple** | ~47% de las compras en EE.UU. son digitales (F-867) | ⬜ por país | SOAT ~90% digital (gremio, F-884); Interseguro ~70% de su SOAT (2022, F-933); **pero solo 21% de las pólizas online (2023, F-932)**: no concilian | 🟢 en SOAT, 🟡 en el resto |
+| **Comprar un producto complejo** (vida, salud, empresas) | Confianza, asesoría y complejidad frenan la compra digital de punta a punta (F-885); Corea: lo online en vida cayó 33,6% en una década (`futuro-asesores-seguros-venta-digital`) | Bancaseguros domina vida en Brasil; corredores/agentes 80-85% de no vida (F-887) | Sin evidencia digital de vida | 🔴 humano o híbrido |
+| **Suscripción** | EE.UU. vida: 59% de solicitudes califica a suscripción acelerada (F-927); en líneas complejas el procesamiento directo es bajo (2019, F-930) | Azos: suscripción digital que se distribuye por corredores (F-377) | ⬜ | 🟡 (🟢 en vida simple, EE.UU.) |
+| **Emisión y póliza electrónica** | ⬜ | ⬜ | Venta a distancia regulada; documentos dentro de 15 días; pólizas de una hoja; "el regulador a veces prefiere el papel" (F-934, F-935) | 🟡 |
+| **Cobranza** | ⬜ | ⬜ | **Infraestructura sí:** 67% de adultos con cuenta o billetera, Yape ~16 M (F-936); Pacífico cobra seguros por Yape (F-888). **Porcentaje de primas cobradas digitalmente: sin dato** | 🟢 la infraestructura; ⬜ su uso en seguros |
+| **Servicio y autogestión** | Satisfacción en servicio 695/1000 (−4); solo 11% usa chatbot (F-867) | ⬜ | Apps de La Positiva y Pacífico; uso desconocido (F-890) | 🟡 |
+| **Aviso de siniestro** | Lemonade: la detección de choque por app acelera el primer aviso (F-904) | Mapfre Brasil por WhatsApp con IA (F-893); caso de proveedor en México (F-894) | Chatbot de Rímac (F-889); app de La Positiva (F-890) | 🟡 anuncios sin resultados |
+| **Seguimiento y decisión del siniestro** | Actualizaciones adecuadas **solo 22% de las veces** (F-931); **4% escaló IA generativa en siniestros y 27% busca transformarlos por completo** (F-928) | ⬜ | Reclamos y sanciones se concentran en plazos y rechazos (F-875, F-876) | 🔴 el punto menos digitalizado y más sensible |
+| **Renovación** | La inercia tiene efectos persistentes (F-921) | ⬜ | ⬜ | ⬜ |
+| **Sistemas centrales** | 42% califica su sistema con C o menos y 63% tiene el mismo hace 11 años o más (EE.UU.); 51,8% de decisores europeos está modernizando (F-930) | ⬜ | ⬜ | 🔴 cuello de botella estructural (sin dato local) |
+
+**Patrón (inferencia):** lo digital está **en los bordes** (buscar, comprar algo simple, pagar) y lo manual **en el medio** (suscripción compleja, decisión y seguimiento del siniestro, sistemas centrales). Es el mismo patrón que la lámina de banca móvil (mucho en saldo y transferencias, poco en inversión y reportes). Y es coherente con Swiss Re: más digitalización no implica compra digital de punta a punta (F-885).
+
+**Por ramo en Perú.** SOAT 🟢 · Salud 🟡 (Seguro Salud Yape con teleconsulta, F-888) · Vehicular 🟡 (Rímac, La Positiva) · Vida 🔴/⬜ (sin evidencia digital; ver `proyecto-back-to-basics-ffvv-vida`) · Hogar y robo ⬜ (las multas de Indecopi son por peritaje y condiciones, no por canal, F-485) · Riesgos generales y empresas ⬜ · Microseguros ⬜ (diagnóstico del PNUD sin abrir, F-882) · Agrario ⬜.
+
+**Dos distinciones útiles.** (1) Que Perú tenga rieles de pago digitales (Yape, Plin) **no** significa que el seguro esté digitalizado: la infraestructura es de la banca. (2) Un anuncio de producto digital no es uso: casi ningún actor publica cuántos clientes lo usan.
+
+**Contradicciones nuevas, sin resolver.**
+- **Venta digital en Perú:** 21% de las pólizas online (F-932) frente a SOAT 90% y 70% (F-884, F-933). Pueden medir cosas distintas (pólizas frente a emisiones, años distintos), pero no concilian.
+- **Confianza en aseguradoras:** 14% (Ipsos 2023, F-934) frente a ~23-25% del node previo.
+- **Cuentas y billeteras:** 59% (Findex 2024, F-880) frente a 67% (SBS, fin de 2025, F-936): años y definiciones distintos.
+- **Plin:** 4 M (Peru Retail) frente a 8 M (Infomercado) de usuarios (F-936).
+
+### 8.3 Digitalización, seguros e insurtech
+
+- **Marco teórico.** La digitalización toca toda la cadena de valor y además cambia lo que es asegurable: mejora la experiencia, simplifica procesos, habilita productos nuevos y expone a competidores de otras industrias; la información adicional cambia la asimetría y el pooling, y la conectividad aumenta la interdependencia de riesgos (Eling y Lehmann, 2018, F-923). Esto conecta con la selección adversa del node de comportamiento.
+- **Quién la hace.** La evidencia, débil y en parte de otros países, apunta a que la digitalización es sobre todo un proyecto de las aseguradoras tradicionales con insurtechs como **habilitadores**:
+  - En el Reino Unido, ~75% de las insurtechs son habilitadores y solo 9% del financiamiento de 2024 fue a entidades aseguradoras (75% en 2021) (F-924).
+  - Las insurtechs de pila completa luchan con costos de adquisición y poco historial de suscripción (F-925, informe leído por blog).
+  - ~96% de las aseguradoras tradicionales se declaraba abierta a colaborar (2018-2019, dato antiguo, F-926).
+  - El caso insignia de pila completa, Lemonade, sigue con pérdida neta (F-509); Azos crece distribuyendo por corredores (F-377).
+- **Tamaño regional.** 576 insurtechs en LATAM y US$90 M en el 1S 2026 (F-374) frente a US$2.440 M globales en el 2T 2026, con 99,1% a IA (F-901). La región es un jugador pequeño del capital de riesgo.
+- **Digitalizar no es penetrar.** Perú sigue en ~2% del PBI y el sistema creció +1,1% en el 1S 2026 (F-506). Ninguna fuente prueba que la digitalización haya movido la penetración.
+- **Pendiente:** no se buscó el ecosistema insurtech peruano (qué actores, qué casos). Y falta el rol del **banco como canal digital**, que es justo lo que ilustran las láminas de banca (ver §8.4).
+
+### 8.4 Pendientes y supuestos
+
+1. **Fragmentos de BanCoppel.** No los he visto. Una búsqueda sobre BanCoppel solo devolvió su app y el modelo "phygital" en tiendas Coppel; **nada sobre seguros ni sobre "señales"** (sin registrar en el ledger). **Supuesto por confirmar:** por "señales" entiendo comportamiento observable del cliente usado para decidir a quién ofrecer qué y cuándo. Si es otra cosa (por ejemplo, señales de mercado o de scoring), se reorienta.
+2. **Verificar** F-917 (confianza), F-919 (Kosse) y F-920 (Fiserv) con los resúmenes oficiales.
+3. **Porcentaje de primas por canal** de Brasil (SUSEP, CNseg), México (AMIS, CNSF), Colombia (Fasecolda) y Perú (SBS, APESEG): hay que abrirlos directo; los hosts relevantes estaban bloqueados o la búsqueda no los trajo.
+4. **Auditoría de experiencia** (cliente incógnito) de las apps peruanas.
 
 ---
 
