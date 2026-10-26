@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-26 · Versión: v1.1 (suma §8: estado de la digitalización por etapa, relación con insurtech y líneas de las láminas de banca de México)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-26 · Versión: v1.2 (v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 suma §9: defaults, pago y automatización, literatura de seguros y foresight de señales)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-937). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -373,9 +373,9 @@ región: pendiente.
 
 ---
 
-## 7. Ledger de fuentes (F-847 a F-937)
+## 7. Ledger de fuentes (F-847 a F-968)
 
-Resumen, rigurosidad completa y URL de cada fuente: `research/fuentes/codice.md`. 🔬 empírica · 📱 percepción/social · ⚖️ regulación · 🏛️ contexto Perú · 💼 negocio. Fuentes reutilizadas del ledger previo: F-362 a F-366, F-372 a F-377, F-442, F-485, F-509, F-807. F-917, F-919 y F-920 vienen de las láminas del usuario y **no están verificadas**.
+Resumen, rigurosidad completa y URL de cada fuente: `research/fuentes/codice.md`. 🔬 empírica · 📱 percepción/social · ⚖️ regulación · 🏛️ contexto Perú · 💼 negocio. Fuentes reutilizadas del ledger previo: F-362 a F-366, F-372 a F-377, F-442, F-485, F-509, F-807 y, en §9, F-221, F-357, F-615, F-724 (node de fenómenos psicológicos y de tendencias). F-917, F-919 y F-920 vienen de las láminas del usuario y **no están verificadas**.
 
 | ID | Pista | Autor | Año | Título | Rigor |
 |---|---|---|---|---|---|
@@ -470,6 +470,37 @@ Resumen, rigurosidad completa y URL de cada fuente: `research/fuentes/codice.md`
 | F-935 | ⚖️ | SBS (Resolución 1121-2017, modificada por la 277-2021; vía ProActivo y El Peruano) | 2017-2021 | Reglamento de Comercialización de Productos de Seguros | 🟠 D |
 | F-936 | 🏛️ | SBS, Paysafe, Peru Retail, Infomercado y Mercado Negro | 2025-2026 | Billeteras digitales en el Perú: usuarios y frecuencia | 🟠 D |
 | F-937 | 💼 | Swiss Re Institute | 2023 | sigma 5/2023: The economics of digitalisation in insurance | 🔵 B |
+| F-938 | 🔬 | Sakaguchi, H.; Stewart, N.; Gathergood, J.; Adams, P.; Guttman-Kenney, B.; Hayes, L. & Hunt, S. | 2022 | Default Effects of Credit Card Minimum Payments (Journal of Marketing Research 59(4):775-796; DOI 10.1177/00222437211070589) | 🟢 A |
+| F-939 | 🔬 | Keys, B. J. & Wang, J. | 2019 (versión final no verificada; documento de trabajo desde 2014; Journal of Financial Economics según listados) | Perverse Nudges: Minimum Payments and Debt Paydown in Consumer Credit Cards | 🔵 B |
+| F-940 | 🔬 | Guttman-Kenney, B.; Leary, J. & Stewart, N. (según la lámina; autoría exacta no verificada) | 2018 | Weighing anchor on credit card debt (FCA, Occasional Paper 43) | 🔵 B |
+| F-941 | 🔬 | Medina, P. C. | 2021 | Side Effects of Nudging: Evidence from a Randomized Intervention in the Credit Card Market (Review of Financial Studies 34(5):2580-2607) | 🟢 A |
+| F-942 | 🔬 | Agarwal, S.; Chomsisengphet, S.; Mahoney, N. & Stroebel, J. | 2015 | Regulating Consumer Financial Products: Evidence from Credit Cards (Quarterly Journal of Economics 130(1):111-164) | 🟢 A |
+| F-943 | 🔬 | Soll, J. B.; Keeney, R. L. & Larrick, R. P. | 2013 (la lámina dice 2012) | Consumer Misunderstanding of Credit Card Use, Payments, and Debt: Causes and Solutions (Journal of Public Policy & Marketing 32(1):66-81) | 🟢 A |
+| F-944 | 🔬 | Gathergood, J.; Mahoney, N.; Stewart, N. & Weber, J. | 2019 | How Do Individuals Repay Their Debt? The Balance-Matching Heuristic (American Economic Review 109(3):844-875) | 🟢 A |
+| F-945 | 🔬 | Reshadi, F. & Fitzgerald, M. P. | 2023 | The pain of payment: A review and research agenda (Psychology & Marketing 40(5):1672-1688; DOI 10.1002/mar.21825) | 🟢 A |
+| F-946 | 🔬 | Jachimowicz, J. M.; Duncan, S.; Weber, E. U. & Johnson, E. J. | 2019 | When and why defaults influence decisions: a meta-analysis of default effects (Behavioural Public Policy 3(2):159-186) | 🟢 A |
+| F-947 | 🔬 | Barsky, R. B.; Juster, F. T.; Kimball, M. S. & Shapiro, M. D. | 1997 | Preference Parameters and Behavioral Heterogeneity: An Experimental Approach in the Health and Retirement Study (Quarterly Journal of Economics 112(2):537-579; NBER WP 5213) | 🟢 A |
+| F-948 | 🔬 | Gächter, S.; Johnson, E. J. & Herrmann, A. | 2022 (revista no verificada) | Individual-level loss aversion in riskless and risky choices | 🔵 B |
+| F-949 | 🔬 | Yechiam (2022) y Quentin & De Langhe (2021) (vía resultados de búsqueda; revistas no verificadas) | 2021-2022 | Críticas a la aversión a la pérdida (replicación con apuestas pequeñas y no invarianza de medida) | 🟡 C |
+| F-950 | 🔬 | Mani, A.; Mullainathan, S.; Shafir, E. & Zhao, J. (más dos réplicas pequeñas) | 2013 (Science) | Poverty impedes cognitive function y réplicas con resultado nulo (Bogotá, n=417; pescadores de Tanzania, tesis) | 🟢 A |
+| F-951 | 🔬 | Handel, B. R. | 2013 | Adverse Selection and Inertia in Health Insurance Markets: When Nudging Hurts (American Economic Review) | 🟢 A |
+| F-952 | 🔬 | Abaluck, J. & Gruber, J. (y la disputa de Ketcham et al., 2012) | 2011 | Choice Inconsistencies among the Elderly: Evidence from Plan Choice in the Medicare Part D Program (American Economic Review) | 🟢 A |
+| F-953 | 🔬 | Bhargava, S.; Loewenstein, G. & Sydnor, J. | 2017 (versión publicada no verificada; NBER WP 21160, 2015) | Choose to Lose: Health Plan Choices from a Menu with Dominated Option (Quarterly Journal of Economics) | 🟢 A |
+| F-954 | 🔬 | Sydnor, J. | 2010 | (Over)insuring Modest Risks (American Economic Journal: Applied Economics) | 🟢 A |
+| F-955 | 🔬 | Gottlieb, D. & Smetters, K. | 2021 (NBER WP 18601, 2012, "Narrow Framing and Life Insurance") | Lapse-Based Insurance (American Economic Review) | 🟢 A |
+| F-956 | 💼 | LIMRA y SOA (vía MarketFacts) | 2020 | Life and Disability Lapse Behavior | 🟡 C |
+| F-957 | 🔬 | PNAS (estudio sobre frecuencia de pago de ingresos; autoría no verificada) | c. 2022 | Frecuencia de pago de ingresos (salario, beneficios, lotería) y presupuesto (PNAS, artículo 2205877119) | 🔵 B |
+| F-958 | 🔬 | FCA (Financial Conduct Authority, Reino Unido) | 2015 | Occasional Paper 12: Encouraging consumers to act at renewal — evidence from field trials in the home and motor insurance markets | 🔵 B |
+| F-959 | ⚖️ | FCA y resúmenes de HFW, Clifford Chance y RTE (Banco Central de Irlanda) | 2022-2025 | Prohibición del *price walking* en seguros de hogar y auto (vigente desde enero de 2022) y su evaluación | 🟠 D |
+| F-960 | 🔬 | Data Colada, PNAS (retractación) y Kristal et al. (2020) | 2012-2021 | Retractación de "Signing at the beginning makes ethics salient" (Shu, Mazar, Gino, Ariely y Bazerman, PNAS 2012) | 🔵 B |
+| F-961 | 🔬 | Godet, M. (con Monti, Meunier y Roubelat) | 2000 (4.ª edición; primera versión de 1991) | La caja de herramientas de la prospectiva estratégica (Cuadernos de LIPS n.º 5) | 🟡 C |
+| F-962 | 🔬 | Hiltunen, E. (y Ansoff, vía fuentes secundarias) | 2008 (Ansoff: años 1970, fecha exacta no verificada) | The future sign and its three dimensions (Futures) y definición de señal débil | 🟢 A |
+| F-963 | 🏛️ | CEPLAN (vía Andina y su informe de 2022) | 2022-2026 | Perú 2050: Tendencias globales y regionales; fichas del Observatorio Nacional de Prospectiva | 🔵 B |
+| F-964 | ⚖️ | Peru Retail, La República, Caretas y Buk (sobre la Ley 32413 y el DS 011-2026-EF) | 2025-2026 | Pago de sueldos, CTS, gratificaciones y pensiones por billeteras digitales | 🟠 D |
+| F-965 | ⚖️ | El Peruano, Diario Bitcoin y Fiskil (sobre la SBS y el BCRP) | 2026 | Hoja de ruta de finanzas abiertas y reglamento de iniciadores de pago | 🟠 D |
+| F-966 | 🔬 | Deque, Digital.gov y otros (sobre estudios de Nielsen Norman Group) | 2014-2025 | Los *placeholders* en campos de formulario son perjudiciales | 🟠 D |
+| F-967 | 🏛️ | Banxico y Publimetro (México); Minsait Payments vía Infomercado (Perú) | 2022-2024 | Domiciliación (cobro automático) en México y preferencia de medio de pago en Perú | 🟠 D |
+| F-968 | 💼 | Advanced Hindsight (caso de Irrational Labs) | 2018 | Aligning automatic payments with income (Beneficial State Bank) | 🟠 D |
 
 ---
 
@@ -542,6 +573,99 @@ Las láminas son del usuario. Lo que sigue separa lo que se pudo verificar de lo
 
 ---
 
+## 9. Adenda v1.2 (2026-10-26): defaults, pago y automatización, literatura de seguros y foresight de señales
+
+*Origen: cinco láminas más de banca (defaults y pago mínimo, pagos automáticos, incertidumbre y aversión a la pérdida, malentendidos en el pago, dolor del pago) y varios links; el usuario pidió ir más allá de la banca y precisó que "señales" son señales de cambio, como en un ejercicio de foresight a la Godet. Es un campo exploratorio: salvo donde se cita evidencia, lo que sigue son hipótesis.*
+
+### 9.1 Verificación de las cinco láminas
+
+| Lámina | Lo que afirma | Lo que se encontró | Veredicto |
+|---|---|---|---|
+| **Defaults y pago mínimo** | La gente se ancla en el mínimo y deja de ahorrar 19,8% en intereses; la información adicional es ineficaz; ocultar el mínimo y mostrar el saldo sube el pago medio 26,74% | Sakaguchi et al. (F-938) existe. En la versión publicada, el pago automático al mínimo explica **~8% de todo el interés pagado** (12% en un borrador de 2018); proponen ocultar el mínimo y dirigir la atención al saldo total. Keys y Wang (F-939): pagos bimodales, 29% cerca del mínimo, **menos de 1%** adopta un pago alternativo sugerido. Agarwal et al. (F-942): el aviso de ahorro movió 0,5 pp sin cambiar el pago total. Un resumen sobre el documento de la FCA (F-940) dice que el mínimo funciona **más como meta que como ancla**. Navarro-Martinez (2011): no apareció | **Dirección confirmada. Las cifras 19,8% y 26,74% no se verificaron.** Matiz: "ancla" frente a "meta" |
+| **Pagos automáticos** | Reducen 12% los pagos no hechos a tiempo; el experimento de Irrational Labs da +14%; alinear con la nómina lleva las faltas a ~0; en automático muchos eligen el mínimo y el total pagado cae 75% | Sakaguchi (F-938): quien automatiza al mínimo **paga más interés del que evita en mora**. Irrational Labs (F-968): resumen cualitativo, mejora inscripción y repago; sin cifras. Baugh (2017): no apareció. ⚠️ El 8% y el 12% de Sakaguchi son **porcentajes del interés pagado**, no de usuarios morosos: la lámina puede haber confundido el 12% | **Mecanismo confirmado (ahorra mora, cuesta interés). Cifras 12%, 14% y 75% sin verificar** |
+| **Incertidumbre y aversión a la pérdida** | La aversión a la pérdida es mayor con menor ingreso; por eso los de rentas bajas automatizan menos | Barsky et al. (F-947) mide tolerancia al riesgo y la liga a no tener seguro, pero explica poco y **no muestra que el menor ingreso implique más aversión**. Gächter et al. (F-948): la aversión a la pérdida **sube con la edad, el ingreso y la riqueza**. El node de fenómenos psicológicos la reporta mayor en mayores y menor en quien conoce el producto (F-724). Críticas de replicación en apuestas pequeñas (F-949) | **No sostenida como está escrita.** La hipótesis final (los de menor ingreso automatizan menos por querer control) puede ser cierta por otras vías (§9.2: liquidez y desfase de ingreso) |
+| **Malentendidos en el pago** | El *payment-interest bias* surge de la numeracia y de la información desglosada; además se olvida pagar o no se puede | Soll, Keeney y Larrick (F-943; es de **2013**, no 2012): se subestima el tiempo de pago y los menos numerados fijan pagos muy bajos; el estado de cuenta rediseñado por la ley CARD redujo los sesgos. El nombre *payment-interest bias* no apareció. Gathergood et al. (F-944, no está en la lámina): se reparte el pago por saldo y no por tasa, aun con más en juego | **Confirmada en lo central.** Lusardi y Tufano (2009) no se verificó |
+| **El dolor del pago** | Con ingreso de 8.000, 400 duelen más que con 20.000; la automatización reduce el dolor pero también la atención a los pagos | Reshadi y Fitzgerald (F-945) existe: dolor **inmediato o anticipado**, con cualquier recurso que dé seguridad; "tacaños" lo sienten más. **El ejemplo del ingreso y el efecto de la automatización no se verificaron** | **Concepto confirmado; las dos afirmaciones concretas, sin verificar** |
+
+**Links adicionales.** Buell y Norton (F-915): verificado. El meta-análisis de confianza del enlace de Emerald es F-917: sigue sin abrirse. El estudio de Treo y arXiv 1803.05032: **no los pude abrir** (la búsqueda no los halló y el acceso directo a esos sitios falla); si me dices el título, los busco por nombre. El artículo de NN/g sobre *placeholders* (F-966): solo por resúmenes secundarios. JSTOR 2951245: no lo abrí; no confirmo que sea Barsky.
+
+### 9.2 Qué agrega la literatura para seguros (más allá de los links)
+
+| Tema | Hallazgo | Evidencia | Qué significa para seguros |
+|---|---|---|---|
+| **Defaults** | Efecto medio d = 0,68 (58 estudios) con **mucha variación**, algunos nulos y dos negativos (F-946). El node de tendencias ya registra que el *opt-out* no superó al *opt-in* en un enrolamiento (F-357) | Meta-análisis | No hay "default universal". Hay que probarlo en cada decisión |
+| **Inercia y precio** | Los defectos iniciales persisten y los planes antiguos pagaban ~10% más (F-921). Quitar la inercia puede **empeorar** el mercado: Handel duplica la pérdida por selección adversa (F-951). La prohibición británica del *price walking* (2022) proyectó £3.700-4.200 M de ahorro; su evaluación de 2025 halla menores precios en auto y nada en hogar, con franquicias obligatorias más altas en auto (F-959) | Observacional y regulatorio; evaluación vía resúmenes | La renovación automática sin vigilancia es un riesgo de conducta, y un "nudge" bien intencionado puede dañar al conjunto |
+| **Caducidad: olvido frente a liquidez** | En una aseguradora, **el olvido explica 37,8% de las caducidades recientes y la liquidez inesperada 15,4%** (F-955) | Encuesta + modelo, AER | El autopago ataca la causa mayor, pero solo en ese contexto. **No hay dato peruano** |
+| **Automatizar tiene un costo de atención** | Quien automatiza al mínimo paga más interés (F-938). Los recordatorios bajaron la mora 14% pero subieron 9% los sobregiros, **5% más caro en conjunto para quien ya usaba sobregiros** (F-941) | RCT y datos transaccionales | La fricción se mueve: quien tiene ingreso irregular puede pasar de caducar por olvido a quedarse sin fondos el día del cobro |
+| **Información** | Un aviso de ahorro movió 0,5 pp y no cambió el pago total (F-942); menos de 1% adopta el pago sugerido (F-939). **Pero** en seguros de hogar, poner la **prima del año anterior** en el aviso de renovación subió 11-18% los que cambian o negocian; en auto no hubo efecto; avisos simplificados, folletos y recordatorios casi no movieron nada (F-958) | Experimentos de campo | La información que **compara con un punto de referencia propio** puede mover; la que solo explica, casi no. Coincide con "explicar más no basta" (F-6, F-9) |
+| **Anclas y menús** | Se eligen deducibles bajos con primas muy superiores al valor esperado (F-954); los mayores subponderan costos de bolsillo frente a la prima (F-952); con una opción dominada muchos eligen peor (F-953) | Observacional, AER y QJE | El deducible y la suma asegurada son anclas; el menú importa más que la explicación |
+| **Frecuencia de pago** | Más frecuencia se asocia a más caducidad (¿efecto recordatorio?) pero es observacional (F-956); **72% de quien elige cobro mensual lo hace para presupuestar** (F-957, no es seguros) | Industria + PNAS | Tensión sin resolver: lo mensual ayuda a presupuestar y puede aumentar la caducidad |
+| **Pobreza y atención** | El efecto "la escasez resta capacidad cognitiva" tiene dos réplicas pequeñas sin efecto (F-950) | Original arbitrado + réplicas débiles | No sostener decisiones de diseño sobre "ancho de banda" como hecho firme |
+| **Honestidad al declarar** | "Firmar al inicio" se apoyaba en un estudio con una aseguradora de autos cuyos **datos estaban fabricados**; se retractó y no replicó (F-960; ver F-615) | Retractación | No usar esa táctica como "probada" en declaraciones de siniestro o de millaje |
+| **Reparto de pagos** | La gente reparte por saldo y no por tasa, aunque el error cueste más (F-944) | 1,4 M de personas | Con varias obligaciones (créditos, seguros), el pago de la prima puede quedar en el último lugar **sin que sea desinterés** |
+
+**Tres lecciones.**
+1. **Automatizar lo que se olvida, no lo que exige atención.** El autopago resuelve el olvido, pero tiene trampas conocidas (el mínimo, el desfase de liquidez) (F-938, F-941).
+2. **La información útil compara con algo propio.** Lo genérico casi no mueve; la prima del año anterior sí, al menos en hogar (F-958).
+3. **Un nudge puede mover el daño de lugar.** Medina (F-941) y Handel (F-951) lo muestran en dos niveles distintos: en la persona y en el mercado.
+
+### 9.3 Diseño del pago de primas: hipótesis para probar
+
+Son hipótesis de diseño, no resultados. El análogo del "pago mínimo" en seguros no es el interés sino la **cobertura**: pagar menos o tarde no genera deuda, genera suspensión.
+
+| # | Hipótesis | Apoyo | Cómo probarla | Riesgo |
+|---|---|---|---|---|
+| **DP1** | **Antes de diseñar, medir por qué caducan en Perú:** olvido, falta de liquidez, desinterés o insatisfacción | F-955 (37,8% frente a 15,4% en otro contexto) | Encuesta a recién caducados + clasificación de cobros fallidos | Que el autopago se invierta sobre una causa que no es la mayor |
+| **DP2** | **Cobrar cuando entra el ingreso, no en una fecha fija** (sueldo en billetera o entrada de dinero) | F-847 (pago al cosechar), F-968, F-964 | A/B con grupo de control en billetera | Sobregiros o cobros fallidos (F-941); informales sin día fijo |
+| **DP3** | **Autopago con "latido":** aviso previo al cobro, revisión periódica y comparación con el precio anterior | F-958, F-921, F-959, F-945 (atención) | A/B de renovación con y sin comparación | Consentimiento y fiscalización por Indecopi |
+| **DP4** | **Mostrar la consecuencia en cobertura** ("tu cobertura se suspende el [fecha]") al pagar menos o tarde | Adaptación de la lámina; F-945 (dolor anticipado) | A/B de texto en el pago | El encuadre de pérdida es "replicado con matices" y varía por persona (F-221, F-724) |
+| **DP5** | **Frecuencia de pago:** mensual con recordatorio frente a anual | F-956, F-957 | Cohortes por frecuencia con emparejamiento | Observacional: no separa causa |
+| **DP6** | **Formularios de pago con etiqueta visible** y la opción "otra cantidad" sin texto que desaparece | F-966 (solo secundaria) | Prueba de usabilidad | Evidencia débil |
+| **DP7** | **Menús de deducible y cobertura sin opciones dominadas** y con default explícito | F-952, F-953, F-954 | Experimento de arquitectura de elección | Manipulación si se usa el señuelo a propósito (node de fenómenos psicológicos) |
+
+**Cambio a las definiciones basales (§5b).** En **fidelidad**, la caducidad por olvido no es deslealtad: hay que **clasificar la causa de cada caducidad** antes de leer "caducó" como "no era fiel". En **cliente digitalmente sano**, el autopago no es un éxito por sí mismo: cuenta si el cliente conserva atención sobre lo que paga (revisión periódica, sin sobrecobros).
+
+### 9.4 Foresight: señales de cambio (primer radar, exploratorio)
+
+**Marco.** La prospectiva estratégica de Godet busca anticipar para actuar, no predecir: identifica **variables clave** (análisis estructural por influencia y dependencia), el **juego de actores** y **escenarios** (F-961; no pude leer sus capítulos de gérmenes de cambio). Hiltunen describe una **señal futura** con tres dimensiones: la señal (visibilidad), el tema (difusión) y la interpretación (qué significa para quien la lee) (F-962). Ansoff define las señales débiles como advertencias demasiado incompletas para estimar su impacto. Aquí uso cuatro tipos: **tendencia pesada** (casi segura), **germen de cambio** (señal débil que ya aparece), **incertidumbre crítica** (puede ir en dos direcciones) y **comodín** (poco probable, gran impacto). **Esto es un radar armado con búsquedas, no un ejercicio con expertos: faltan taller, análisis estructural y juego de actores.**
+
+| # | Señal | Evidencia | Tipo | Por qué importa a seguros digitales | Indicador a vigilar | Confianza |
+|---|---|---|---|---|---|---|
+| 1 | **Sueldo en billetera** (Ley 32413; reglamento DS 011-2026-EF) | Aprobada con 95 votos; pago por acuerdo; el empleador no impone plataforma (F-964) | Germen de cambio | Permite alinear el cobro con el día de pago (DP2) y acerca a quien no tiene cuenta | Proporción de trabajadores pagados por billetera; fiscalización de Sunafil | Media: la norma existe, la adopción no se conoce |
+| 2 | **Finanzas abiertas** | SBS: reglamento de BaaS (jul-2026), norma general a inicios de 2027, primeros intercambios en 2028 (otra nota dice 2029), empiezan los cuatro bancos más grandes (F-965) | Germen de cambio / incertidumbre | Datos con consentimiento podrían cambiar la suscripción y el servicio; **no se verificó si incluye seguros** | Texto del alcance de la norma; participación de aseguradoras | Media-baja: fuentes discrepan |
+| 3 | **Iniciadores de pago (BCRP)** | Reglamento en evaluación; modelo centralizado o bilateral (F-965) | Germen de cambio | Pagar desde la cuenta sin tarjeta cambiaría la cobranza de primas | Publicación del reglamento | Baja |
+| 4 | **La billetera como centro de la vida financiera** | 67% de adultos con cuenta o billetera; Yape ~16 M; Pacífico ya vende dentro (F-936, F-888) | Incertidumbre crítica | ¿El seguro será una función de la billetera o una relación directa con la aseguradora? | Seguros vendidos y **renovados** en billeteras; quién guarda los datos del cliente | Media |
+| 5 | **Envejecimiento y urbanización** | ~40 M de peruanos y esperanza de vida de 83 años en 2050; ~35 M urbanos (85-88%) (CEPLAN, F-963) | Tendencia pesada | Vida, salud y rentas; mayores con necesidades distintas (la edad no es criterio digital, §2) | Proyecciones de población del INEI (no obtenidas) | Media-alta |
+| 6 | **IA en siniestros** | 99,1% del financiamiento insurtech va a IA; solo 4% escaló IA generativa en siniestros; pilotos de agentes en 74% de aseguradoras grandes (F-901, F-928, F-929) | Germen de cambio | Mayor velocidad y riesgo reputacional (Lemonade, F-869); decisiones automatizadas bajo vigilancia | Porcentaje de siniestros resueltos sin humano; reclamos por decisiones automatizadas | Media |
+| 7 | **Supervisión de conducta en el siniestro y fin del default** | Res. SBS 01923-2026 más exigente; multas de Indecopi; desgravamen opcional desde sep-2025 (F-484, F-875, F-877) | Tendencia pesada | Elige quien tenga mejor siniestro y consentimiento explícito | Sanciones por plazos y rechazos | Media-alta |
+| 8 | **Clima: Niño Costero 2026-27** | Ver `fenomeno-el-nino-impacto-personas` | Tendencia pesada / comodín | Demanda de cobertura paramétrica y presión sobre siniestros (O9) | ENFEN y pagos de siniestros por desastre | Media |
+| 9 | **Informalidad persistente** | 70,7% (2025); rural 94,8% (F-879) | Tendencia pesada | Limita contratos formales y planilla; define el techo digital | Informalidad y cobertura por billeteras | Alta |
+| 10 | **Confianza en aseguradoras** | 14% (Ipsos 2023) o ~23-25% (node previo); confianza institucional 45% (F-934, F-881) | Incertidumbre crítica | Todo lo digital depende de que el pago del siniestro sea creíble (F-851, F-852) | Encuesta propia de confianza; reclamos | Baja: las cifras no concilian |
+| 11 | **Trabajadores de plataformas** | Vacío de cobertura de 2019; sin oferta vigente hallada (F-913) | Germen débil | Segmento sin seguro por falta de empleador | Normas sobre repartidores; oferta de plataformas | Baja |
+| 12 | **Pérdida de confianza masiva en un canal** (falla de una billetera, estafas con pólizas falsas como las del SOAT de 2022) | Caso puntual (F-884) | Comodín | Un evento podría frenar lo digital | Incidentes de fraude | Baja: sin evidencia directa |
+
+**Variables clave candidatas (a validar con análisis estructural):** confianza en el pago del siniestro · quién posee la relación digital con el cliente · costo de servir por canal · regulación de conducta · apertura de datos (finanzas abiertas) · formalización del ingreso · conectividad rural · uso de IA en siniestros · exposición climática · envejecimiento · tecnología de pagos · poder de los canales (bancos, billeteras, corredores).
+
+**Dos incertidumbres críticas para un primer 2×2 a 2035 (hipótesis, sin probabilidades):**
+
+| | **Confianza en el pago del siniestro: baja** | **Confianza en el pago del siniestro: alta** |
+|---|---|---|
+| **La billetera o el banco posee la relación** | *Seguro como accesorio barato:* micropólizas dentro de apps, poca renovación y poca reclamación; la aseguradora es proveedor invisible | *Seguro como función de la billetera:* el cliente confía y renueva dentro de la app; la aseguradora compite por ser la elegida en el menú |
+| **La aseguradora o el corredor posee la relación** | *Híbrido defensivo:* corredor y papel siguen siendo el ancla; lo digital queda en cotizar y pagar | *Relación directa con datos abiertos:* la aseguradora usa finanzas abiertas con consentimiento y gestiona el ciclo completo |
+
+Cada escenario cambia las tres definiciones: en el de "accesorio", la fidelidad (renovar por elección) sería escasa y el "cliente de alto valor" se definiría casi solo por costo de servir; en el de "función de la billetera", el cliente digital sano depende del canal ajeno y la fiabilidad (F-920) pasa a ser del partner.
+
+**Cómo convertirlo en un ejercicio Godet completo:** (1) taller con expertos de la aseguradora y de fuera para validar y priorizar las variables; (2) análisis estructural (mapa de influencia y dependencia); (3) juego de actores (aseguradoras, bancos, billeteras, reguladores, corredores); (4) escenarios con el método de ejes o SMIC; (5) revisar el radar cada trimestre con las rutinas de `/trinidad`.
+
+### 9.5 Pendientes de esta adenda
+
+1. **Abrir** el estudio de Treo, arXiv 1803.05032 y el artículo de NN/g (necesito el título o que me lo pegues).
+2. **Verificar** F-917 y F-919 (láminas) y las cifras de las láminas 6-10 contra los papers.
+3. **Medir en Perú** lo que la literatura sugiere y no tiene dato local: causa de caducidad (DP1), cobro automático de primas, proporción de cobro por billetera.
+4. **Foresight:** taller y análisis estructural; proyecciones del INEI de población adulta mayor; alcance de finanzas abiertas sobre seguros.
+
+---
+
 ## Conexiones
 
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros (Mundo vs. Perú)]] —
@@ -562,3 +686,4 @@ Las láminas son del usuario. Lo que sigue separa lo que se pudo verificar de lo
   para medir un chatbot de siniestros.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas `lapuerta`]] — segmentos de la matriz (§4) se pueden
   simular con sus variables (informalidad, bancarización, acceso digital, confianza).
+- [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado de replicación de la aversión a la pérdida y del anclaje que usan las láminas de pago (§9.1); ahí está F-724 (mayor en mayores).
