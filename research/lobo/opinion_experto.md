@@ -6069,6 +6069,27 @@ F-758 (Epstein, Bendavid, Nash, Charlebois y Weiser, *PLOS Medicine* 17(3), 2020
 - **Leído a fondo:** 2026-10-25 (`WebSearch`; resumen de la revista; lectura débil, declarada)
 - **Conexión razonada, no forzada:** se suma a la entrada 231 (choque temprano que daña por ingreso) y a la tesis 26 sin subir su confianza: es África, sequía y no El Niño en Perú. No genera oportunidad de producto por sí sola.
 
+### 238. La IA que "entiende por nosotros" produce más y comprende menos: antes de comprar un modelo, preguntar qué parte del juicio humano sustituye
+F-555 (Messeri y Crockett, *Nature* 627, 2024). Perspectiva teórica con revisión por pares, sin datos propios. Ordena los usos de la IA en ciencia en cuatro papeles (oráculo, sustituto de participantes, cuantificador, árbitro) y advierte que cada uno trae una ilusión: de profundidad explicativa, de amplitud exploratoria y de objetividad. El riesgo que nombra es un "monocultivo" de métodos y preguntas. Es un marco, no una medición.
+**Heurística:** cuando un proveedor promete que su modelo "entiende" al cliente, preguntar en cuál de los cuatro papeles actúa y qué validación humana queda. Un modelo que produce más análisis no prueba que la empresa comprenda más.
+- **Fuente:** F-555 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-26 (`WebSearch`; resúmenes y notas de la universidad; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la tesis 27 (muestras sintéticas ordenan hipótesis, no estiman efectos) sin subir su confianza: aporta el marco, no evidencia nueva.
+
+### 239. El cliente sigue más un consejo que cree algorítmico, pero el experto lo sigue menos y se equivoca más
+F-584 (Logg, Minson y Moore, *OBHDP* 151, 2019). En seis experimentos, los legos siguen más el consejo si creen que viene de un algoritmo que de una persona. La apreciación cae cuando eligen entre el algoritmo y su propia estimación, y los profesionales de pronóstico lo usaron menos, lo que empeoró su precisión.
+**Heurística:** la confianza en la IA no es una constante: depende de quién decide y de qué compite contra qué. Al diseñar un asistente, probar por separado al cliente lego y al asesor experto; el asesor que ignora la recomendación puede costar precisión.
+- **Fuente:** F-584 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-26 (`WebSearch`; ficha de la revista y resúmenes; lectura débil, declarada)
+- **Conexión razonada, no forzada:** matiza la entrada 233 (la IA persuade con independencia de su exactitud). Son experimentos en línea con tareas de estimación, no seguros.
+
+### 240. El "progreso dotado" funciona en un lavado de autos; en un programa de seguros nadie lo ha medido
+F-802 (Nunes y Drèze, *Journal of Consumer Research* 32(4), 2006). Experimento de campo: tarjetas de sellos de 8 casillas contra tarjetas de 10 con 2 ya marcadas, mismo esfuerzo real. El ledger registra 34% contra 19% de canje. La búsqueda de hoy no confirmó esas cifras: una nota de segunda mano habla de 82% más de finalización y otra de "casi el doble de velocidad". Además, no hallé réplica.
+**Heurística:** una cifra vistosa repetida por blogs no es una cifra verificada. Para un programa de lealtad, pedir la réplica en el mismo rubro antes de dar por hecho el truco. La probabilidad de que viaje a un seguro es baja: la compra de un seguro no es una tarjeta de sellos.
+- **Fuente:** F-802 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-26 (`WebSearch`; ficha de IDEAS/RePEc y notas secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la tesis 28 (el programa bien diseñado mueve más que el juego); sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6267,51 +6288,8 @@ F-758 (Epstein, Bendavid, Nash, Charlebois y Weiser, *PLOS Medicine* 17(3), 2020
 - **2026-09-23** — *(Detalle podado y fusionado al resumen el 2026-10-24)*: corrida diaria de refinamiento; subió la confianza de la tesis 3 de Media a Alta (F-7) y sumó las intuiciones 139 a 141.
 - **2026-09-24** — *(Detalle podado y fusionado al resumen el 2026-10-25)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio; sumó las intuiciones 142 y 143 y verificó el ledger por conteo directo.
 
-- **2026-09-25** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward limpio de la corrida de ayer) y verifiqué `research/fuentes/codice.md` por conteo
-  directo con script: **468 filas, F-1 a F-468 sin huecos ni duplicados** — mismo tope exacto que las
-  últimas 25 corridas, **cero fuentes nuevas** registradas por `cronista`/`/trinidad`/`/seeker`/
-  `/gossip`/`/marketer` desde entonces, cuadragésimo cuarto día seguido sin cambios sustanciales en el
-  ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna quedó desalineada con la
-  evidencia y no forcé ningún matiz de confianza solo por completar el paso — la revisión profunda de
-  `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina de `cronista`, no de
-  este proceso diario; ya lleva cuarenta y cuatro días sin correr). **Poda de bitácora:** el bloque
-  "2026-08-26" salió por completo de la ventana de ~30 días (cutoff ≈2026-08-26) — lo fusioné con el
-  bloque "2026-08-01 a 2026-08-25" en un resumen ampliado "2026-08-01 a 2026-08-26"; no se pierde
-  ningún dato porque el detalle de cada tesis e intuición de ese día ya vive en sus propias secciones
-  con fecha. **La rutina diaria de intuición sí pudo correr hoy, con el nivel 🔵B todavía en curso:**
-  recalculé por script el universo 🔵B del ledger con el filtro estricto (fila cuya rigurosidad
-  *empieza* con 🔵B, sin contar filas mixtas como F-333): **76 filas** — la corrida de ayer (09-24)
-  había reportado 79, una cifra que no cuadra con que el ledger siguiera fijo en F-468 desde hace 44
-  días; recontar hoy con script limpio da 76, el mismo número que las corridas del 09-22 y 09-23 —
-  documento la discrepancia como probable error de cálculo de la corrida de ayer, no como fuente nueva
-  (el conteo total del ledger, 468, sí se verificó sin ambigüedad las tres veces). Contra
-  `fuentes_leidas_lobo.md` (11 ya leídas de este nivel tras las corridas de los cuatro días previos:
-  F-104, F-32, F-359, F-37, F-194, F-7, F-256, F-309, F-285, F-308, F-132) — **65 pendientes** — y
-  elegí 3 al azar sin reemplazo (Python `random.shuffle`, sin semilla fija): F-383, F-105 y F-360. Las
-  tres bloqueadas por el proxy en su URL directa (dl.acm.org, about.kaiserpermanente.org,
-  mckinsey.com); `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las tres vía cobertura
-  convergente (resumen propio de ACM Digital Library con el escenario ilustrativo completo para F-383,
-  Becker's Hospital Review + Fierce Healthcare con el desglose financiero exacto para F-105, el propio
-  artículo de McKinsey con el ejemplo de partnership ride-hailing + microseguro para F-360), no solo el
-  resumen de una línea ya citado. Sumé las entradas 145, 146 y 147 de Intuición acumulada: (145) F-383
-  trae el escenario concreto de dos colaboradores viendo interfaces generativas distintas y perdiendo
-  coordinación — más contundente que el principio abstracto de consistencia ya citado — y de paso
-  recuperé la autoría real (Okopnyi, Nordberg & Guribye) que el ledger tenía sin verificar, disponible
-  para que `cronista` la corrija; (146) F-105 muestra que la caída de ingreso neto de Kaiser
-  (USD 12.9B→9.3B) fue por la desaparición de una ganancia de M&A de una sola vez (USD 6.8B en 2024),
-  mientras el ingreso operativo más que se duplicó (USD 569M→1.4B, margen 1.1%) — matiza sin cambiar de
-  nivel el Riesgo ya registrado sobre esperar rentabilidad rápida de modelos de atención primaria
-  basada en valor: el margen de Kaiser mejoró, no empeoró, aunque sigue delgado bajo presión de costo;
-  (147) F-360 confirma la cifra de mix de canal de Asia-Pacífico ya citada y trae el ejemplo concreto
-  que faltaba (partnership de una insurtech de vida con una plataforma de ride-hailing para microseguro
-  de enfermedad crítica dirigido a conductores) — conecta como instinto, sin tesis numerada propia, con
-  las variables `trabajo_plataforma_digital` y `propension_microseguro` de `lapuerta`. Ninguna tesis de
-  negocio cambió de confianza numérica por esta corrida — es el mecanismo paralelo de intuición, aunque
-  las tres entradas de hoy matizan un Riesgo existente y aportan una corrección de autoría disponible
-  para `cronista`. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy.
-  Bitácora con 30 días de historial (2026-08-27 a hoy) tras la poda de hoy — cumple la ventana de ~30
-  días.
+- **2026-09-25** — *(Detalle podado y fusionado al resumen el 2026-10-26)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
+
 - **2026-09-26** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward limpio hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
@@ -6581,3 +6559,5 @@ F-758 (Epstein, Bendavid, Nash, Charlebois y Weiser, *PLOS Medicine* 17(3), 2020
 - **2026-10-24** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 118 pendientes → 115 tras hoy):** sorteo F-659, F-586 y F-807, leídas vía `WebSearch` (resúmenes oficiales y reseñas; lectura débil, declarada). Entradas 232 (el efecto espectador se atenúa con peligro claro, agresor o costo físico), 233 (un diálogo con IA bajó ~20% la creencia conspirativa durante dos meses: capacidad neutra, decide la exactitud) y 234 (la gamificación rinde menos que el cupón en el pico pero deja efecto al retirarla; matiz a la tesis 28). Pendiente para `cronista`: F-659 no recoge el subgrupo de emergencias peligrosas; F-586, cómo se verificó la exactitud de los argumentos de la IA. Poda: 09-23 fusionado al resumen; Bitácora cubre 2026-09-24 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-25** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-20 por commit; sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 115 pendientes → 112 tras hoy):** sorteo F-687, F-677 y F-758, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 235 (el Stroop es sólido en laboratorio y no por eso una palanca de negocio), 236 (las correspondencias entre sentidos son hipótesis de diseño, no resultado) y 237 (la sequía se asocia a más violencia de pareja, sobre todo en adolescentes y mujeres sin empleo). Pendiente para `cronista`: confirmar en el texto completo el conteo de 18 hallazgos de F-687 y las cifras en puntos porcentuales de F-758. Poda: 09-24 fusionado al resumen; Bitácora cubre 2026-09-25 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-26** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 114 pendientes → 111 tras hoy):** sorteo F-555, F-584 y F-802, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 238 (la IA que produce más no prueba que se comprenda más: preguntar qué juicio humano sustituye), 239 (el lego sigue más el consejo algorítmico, el experto menos y pierde precisión) y 240 (el progreso dotado: las cifras del ledger no se confirmaron hoy y no hay réplica a la vista). Pendiente para `cronista`: confirmar en el artículo las cifras de F-802 (34% contra 19%) y su volumen. Poda: 09-25 fusionado al resumen; Bitácora cubre 2026-09-26 a hoy. `fuentes_leidas_lobo.md` actualizado.

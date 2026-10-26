@@ -255,3 +255,6 @@
 | F-687 | 🟢 A | 2026-10-25 | Intuición 235 — el Stroop es un efecto robusto, pero robusto no es útil: preguntar qué decisión del cliente cambia (lectura débil) |
 | F-677 | 🟢 A | 2026-10-25 | Intuición 236 — correspondencias entre sentidos: hipótesis de diseño por probar con clientes reales (lectura débil) |
 | F-758 | 🟢 A | 2026-10-25 | Intuición 237 — sequía y violencia de pareja: el choque climático es choque de hogar; segmentar por quién queda más expuesto (lectura débil) |
+| F-555 | 🟢 A | 2026-10-26 | Intuición 238 — la IA que produce más no prueba que se comprenda más; preguntar en qué papel actúa y qué juicio humano sustituye (marco teórico; lectura débil) |
+| F-584 | 🟢 A | 2026-10-26 | Intuición 239 — el lego sigue más el consejo algorítmico, el experto menos y pierde precisión; probar por segmento (resumen; lectura débil) |
+| F-802 | 🟢 A | 2026-10-26 | Intuición 240 — progreso dotado: cifras del ledger sin confirmar y sin réplica a la vista; no trasladar a seguros (secundarias; lectura débil) |
