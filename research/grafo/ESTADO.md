@@ -1,6 +1,6 @@
 # 🕸️ Grafo del segundo cerebro — ESTADO
 
-*Generado: 2026-10-25 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
+*Generado: 2026-10-26 por `research/grafo/build_grafo.py` (determinista, sin LLM). No editar a mano: se regenera. Definiciones: `METRICAS.md`.*
 
 > **Transparencia:** cada cifra de este reporte sale de contar archivos del repo. Lo que no se puede medir está listado en §7. Un número alto aquí significa *más material y mejor enlazado*, **no** que el conocimiento sea *verdadero* ni que haya tenido impacto fuera del repo.
 
@@ -110,7 +110,7 @@
 | 2026-10-09 | `de3c9ed` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-11 | `614bf74` | 879 | 20 | 5 | 142 | 770 | 2033 | 16 | 20 | 22 |
 | 2026-10-12 | `90d0074` | 976 | 20 | 5 | 158 | 870 | 2215 | 16 | 20 | 22 |
-| 2026-10-25 | `fb8cfa9` | 1064 | 30 | 5 | 230 | 1027 | 1124 | 16 | 20 | 22 |
+| 2026-10-25 | `f258445` | 1064 | 30 | 5 | 230 | 1027 | 1124 | 16 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -125,7 +125,7 @@
 | M5 Trazabilidad de reglas (diseño) | 100% | las reglas se apoyan en fuentes | que la fuente sea la correcta |
 | M6 Integración (diseño↔resto) | 16/21 nodes enlazados; 14 comparten evidencia | el diseño informa a los demás temas | uso real por personas |
 | M7 Lectura profunda (Lobo) | 196 fuentes leídas a fondo = 18% del ledger; 195 intuiciones | el cerebro se relee, no solo crece | que las intuiciones sean correctas |
-| M8 Uso externo (`impacto.json`) | 38 preguntas · 1 personas · 1 valoradas (100% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
+| M8 Uso externo (`impacto.json`) | 42 preguntas · 1 personas · 1 valoradas (100% útiles) · 0 decisiones | Mu se usa fuera del repo | que las decisiones fueran buenas (son autodeclaradas) |
 
 ## 5. Auditoría de integridad (fallas reales, sin maquillar)
 
