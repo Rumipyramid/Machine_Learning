@@ -401,3 +401,4 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
   norte. Es un caso de estrés para el diseño del triage.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (`lapuerta`)]] — se propone una variable
   de exposición a inundación/Niño análoga a la exposición sísmica (§6.1); no aplicada.
+- [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — cobertura paramétrica anticipatoria como oportunidad O9 y su riesgo de base (F-900).

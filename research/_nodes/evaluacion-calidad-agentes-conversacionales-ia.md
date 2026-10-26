@@ -253,3 +253,4 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   descontarse frente a la medición objetiva.
 - [[conducta-humano-ia|Conducta humano-IA]] — la adulación de la IA (F-488) y la brecha preferencia-juicio son un problema de calidad que las escalas de ese node deberían medir: satisfacción alta con juicio degradado.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — la fragilidad de los LLMs ante la redacción (F-557, F-561) y la dependencia de la versión del modelo (F-572) son problemas de medición que las escalas de este node deberían controlar.
+- [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — qué medir en un chatbot de siniestros (resolución autónoma, recontacto, silencio).

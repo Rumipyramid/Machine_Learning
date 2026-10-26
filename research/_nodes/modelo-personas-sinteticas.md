@@ -74,6 +74,7 @@ tienen simulación de consumidores calibrada con microdato nacional, no solo sup
   documentadas de las muestras sintéticas con LLM (varianza comprimida, segmentos exagerados 2-4x, peor ajuste en
   NSE bajo) afectan al generador y a la app de preguntas libres, con las pruebas PE1-PE3.
 - Parametrizado con cautela por → [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] (RF6/PF6: sesgo del presente y aversión a la pérdida como rangos, no constantes)
+- Segmentos de uso → [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]]: la matriz intervención × segmento (§4) puede simularse con `acceso_digital`, `bancarizado`, `situacion_laboral` y `confianza`; no aplicado.
 
 [^1]: `research/personas/generador/matriz_usuarios_sinteticos.md` §2-3, notas v1.1-v1.3; medido
     con `validate.py --check`.

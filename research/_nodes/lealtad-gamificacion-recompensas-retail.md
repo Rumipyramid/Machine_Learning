@@ -219,3 +219,4 @@
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado de replicación de la aversión a la pérdida (§5.4) y del sesgo del presente (§5.11), que sustentan caducidad, niveles y recompensas.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — Discovery Vitality es el caso de gamificación + recompensa en seguros; aquí se contrasta con lo que se sabe en retail.
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — la regla de confrontar el impacto declarado con el demostrado se aplica a las cifras de las empresas (F-833, F-834).
+- [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — sin evidencia de gamificación en seguros; el rubro depende de un solo experimento fuerte (F-807).
