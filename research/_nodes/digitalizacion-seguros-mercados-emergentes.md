@@ -855,6 +855,7 @@ Pista: 🔬 empírica/teórica · 📱 social · 💼 negocio · ⚖️ regulaci
 | 7 | MAPFRE, financiación insurtech 1S 2026 | Aseguradora patrocinadora (eco de F-1003 y F-1044) | 💼 | 🟡 C | Por resumen | **Life & Care: 26% de las insurtechs y 76% del financiamiento**; 576 insurtechs (+14%); Brasil 217, México 150, Chile 112, Argentina 110; MAPFRE compra 38,9% de Tuio | §11 y foresight §11 (F-1068) |
 | 8 | Research and Markets, *Global Insurtech Market 2020 to 2025* | Informe de pago de 2020 | 💼 | 🔴 E | Por resumen de Business Wire | Pronóstico de US$10,14 mil M a 2025 con TCAC de 10,8%; otras casas dan 36% a 43% | **Se descarta** (F-1070) |
 | 9 | MPM Software, tendencias 2026 | Proveedor de software, blog | 💼 | 🔴 E | Por resumen | Seis tendencias; 'seguro invisible' en 2027; reducción de 40% del costo de emisión (cifra propia). La brecha de 81% coincide con MAPFRE Economics | **No se usa como evidencia** (F-1071) |
+| 10 | Artículo subido después: Enríquez, Alvarado y Romero, *Aplicación de la economía conductual en el mercado de los seguros* (*Desafíos* n.º 8, 2025) | Revista universitaria | 🔬 | 🟡 C | **Sí, completo** (documento subido por la persona usuaria) | Revisión narrativa con series de la SBS; **varias citas con cifras no coinciden con sus fuentes**; revela experimentos agrícolas en el Perú | `economia-conductual-seguros-literatura` §8 (F-1073 a F-1078) |
 
 Además, al verificar los datos se sumaron dos fuentes que no estaban en la lista: el **proyecto de reglamento de finanzas abiertas de la SBS** (Res. 02433-2026 y 02519-2026, F-1064, 🔵 B) y el **informe climático de MAPFRE Economics** (F-1069, 🔵 B).
 
@@ -873,7 +874,7 @@ Además, al verificar los datos se sumaron dos fuentes que no estaban en la list
 **Pendientes.**
 
 1. Si la persona usuaria sube también el PDF de Pérez-Llorca (es público), se puede leer a fondo y reclasificar; el de Deloitte ya se leyó (§12.5).
-2. Decir a qué artículo del número 495 de la revista se refería.
+2. **Probablemente resuelto:** el artículo que la persona usuaria subió después es del n.º 8 de *Desafíos* (jul-dic 2025) y parece ser el que buscaba; falta confirmar que ese número sea el 495 del enlace.
 3. Abrir el texto del proyecto de finanzas abiertas de la SBS en `sbs.gob.pe` y buscar la mención de seguros.
 4. Verificar con AMIS el dato de 15% a 20% de aseguradoras que usan IA.
 
