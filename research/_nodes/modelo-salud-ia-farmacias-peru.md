@@ -614,3 +614,4 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   documento.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para la
   comunicación del flujo con usuarios finales.
+- [[digitalizacion-ramos-vehicular-salud-microseguros|Digitalización por ramo: vehicular/SOAT, salud y microseguros]] — cuándo conviene una app y cuándo no (siete pruebas), y cómo lo digital se junta con el servicio en salud.

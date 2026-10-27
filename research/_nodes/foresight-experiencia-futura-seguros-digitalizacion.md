@@ -567,3 +567,4 @@ Solidez: 🟢 con causalidad · 🔵 institucional o con método · 🟡 encuest
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas `lapuerta`]] — segmentos para simular escenarios.
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — cómo medir hoy la recurrencia que algunas de estas experiencias futuras darían por supuesta.
 - [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — la tendencia de envejecimiento (señal 16 y pregunta 8) desarrollada con evidencia.
+- [[digitalizacion-ramos-vehicular-salud-microseguros|Digitalización por ramo: vehicular/SOAT, salud y microseguros]] — cuándo conviene una app y cuándo no (siete pruebas), y cómo lo digital se junta con el servicio en salud.

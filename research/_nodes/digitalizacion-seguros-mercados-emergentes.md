@@ -1339,6 +1339,8 @@ Tú nombraste banca y finanzas, microseguros, techs, IA, salud y vehicular. Mi p
 | 7 | **Retail y telecomunicaciones** | Tigo freemium (cifra de la empresa), retail con tarjetas | F-898 | ¿Hay un caso peruano con resultado? |
 | 8 | **Educación y servicios públicos** | Poca evidencia de seguros; útiles solo como analogía de **cobro por recibo** | — | Dejar para el final, salvo que tengas una hipótesis concreta |
 
+**Actualización (2026-10-27):** las tres primeras (vehicular y SOAT, salud, microseguros) se investigaron en el node [[digitalizacion-ramos-vehicular-salud-microseguros]].
+
 **Qué necesito de ti.** Confirma las 2 o 3 que quieres que investigue primero (mi sugerencia: **vehicular, salud y microseguros**), y si tu equipo tiene datos propios de uso por canal, porque son lo único que cerraría las preguntas de WhatsApp y de renovación.
 
 ### 16.8 Límites y pendientes
@@ -1373,3 +1375,4 @@ Tú nombraste banca y finanzas, microseguros, techs, IA, salud y vehicular. Mi p
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — doble clic sobre fidelidad, activación, bancaseguros y recurrencia: qué se puede responder afuera y qué no.
 - [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.
 - [[conducta-humano-ia|Conducta humano-IA]] — aceptación de la IA que asiste frente a la que decide, control percibido y costo de revelar (§14.2).
+- [[digitalizacion-ramos-vehicular-salud-microseguros|Digitalización por ramo: vehicular/SOAT, salud y microseguros]] — cuándo conviene una app y cuándo no (siete pruebas), y cómo lo digital se junta con el servicio en salud.
