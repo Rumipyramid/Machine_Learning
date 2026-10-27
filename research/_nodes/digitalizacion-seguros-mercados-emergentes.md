@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.3 (v1.3 suma §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.4 (v1.4 suma §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -107,6 +107,8 @@ Leyenda: **Nivel** = RCT · cuasi-experimento · observacional · caso de negoci
 opinión. **Quién reporta** = tercero o PR (propia empresa).
 
 ### 3.1 Seguros y microseguros
+
+*Para México, Colombia, Chile y Argentina, ver §11.*
 
 | Caso | País / industria | Qué digitalizó | Población objetivo | Intervención / estrategia | Mecanismo conductual | Resultado y duración | Nivel · fuente |
 |---|---|---|---|---|---|---|---|
@@ -738,6 +740,92 @@ Kantar, Datum, BCG) no se contrastaron con sus originales.
 4. Buscar una revisión sistemática de adopción de seguros digitales y modelos para América Latina.
 5. Abrir el informe completo de GSMA (solo se leyó el comunicado).
 6. Si la aseguradora tiene dato, probar las 17 variables juntas en un modelo explicativo de adopción y renovación.
+
+---
+
+## 11. Adenda v1.4 (2026-10-27): casos conductuales y estratégicos en México, Colombia, Chile y Argentina
+
+*Origen: pedido del usuario de ver qué casos hay en estos cuatro países para la lógica de §3. Se buscó con la metodología de `/trinidad` (pista empírica/teórica y pista de negocio; la social no se corrió). Todo se leyó por resúmenes de búsqueda y notas de prensa; muchas notas no traen fecha.*
+
+### 11.1 Respuesta corta
+
+- **Hay casos estratégicos, casi ninguno conductual medido.** No se halló **ni un experimento de campo sobre seguros** en estos cuatro países. Lo más cercano está en países vecinos: un experimento aleatorizado de seguro de salud para trabajadores informales en Nicaragua (inscripción de solo 20%), un experimento de laboratorio sobre empujones en Bolivia y un experimento de conducta con seguro de rendimiento por área en Perú (F-1060).
+- **Los casos mejor documentados son de regulación y de diseño del sistema, no de plataformas.** En Chile, la licitación de seguros ligados a créditos hipotecarios (2012). En Argentina, el botón de baja obligatorio (2025). En Colombia, una brecha entre renovación deseada y efectiva, y el fraude en el SOAT que se compra en línea. En México, la venta telefónica con cargo a tarjeta.
+- **De las plataformas (Mercado Pago, OXXO, Nequi, Falabella) no hay resultados públicos:** ni pólizas por país, ni renovación, ni retención. Solo anuncios de producto y precio.
+- **Lo más útil para tus hipótesis:** Colombia dice que la gente **quiere renovar más de lo que renueva** (70,2% frente a 39,1%), y Argentina cambió por ley qué tan fácil es **irse**, lo que cambia qué significa medir fidelidad.
+
+### 11.2 Casos por país
+
+Mismo esquema que §3.1, resumido. **Nivel** = encuesta oficial · regulación · caso de negocio · observacional. "Mecanismo" es inferencia mía salvo que se indique. Sin resultado medido = sin cifra pública de pólizas, renovación o retención.
+
+**México**
+
+| Caso | Qué digitalizó o diseñó | Intervención | Mecanismo (inferencia) | Resultado y quién reporta | Nivel · fuente |
+|---|---|---|---|---|---|
+| Mercado Pago con Cardif y con Chubb | Venta embebida en la billetera | Seguro contra robo de **$41 al mes** desde la app; seguro para pymes desde **$55 al mes** (oct-2026) | Baja fricción y precio mínimo en el sitio donde ya paga | **Sin resultados.** Una cifra de 83% de negocios sin seguro es de una fuente secundaria | Caso de negocio · PR · F-1052 |
+| OXXO con GNP | Venta en un punto de pago cotidiano | Microseguros de cáncer y primer infarto a **$99 y $149**, tarjeta que se activa por llamada | Compra donde ya se paga en efectivo | **Sin resultados**; fecha del anuncio no clara | Caso de negocio · prensa · F-1053 |
+| Compartamos con Mapfre | Distribución por una institución de microfinanzas | Vida incluida en los créditos para mujeres y cobertura voluntaria adicional; la aseguradora se queda con la prima y paga la distribución | Confianza en la institución que ya presta; producto ligado al crédito | Más de **2 millones de asegurados** y ~40% del microseguro de vida (2011, informe del propio banco); sin datos de renovación | Caso de negocio · PR + estudio de Milliman · F-1055 |
+| Venta telefónica con cargo a tarjeta | Venta por llamada | Seguros que se cobran a la tarjeta de crédito | Fricción de salida: cuesta cancelar (inferencia) | Condusef advierte contra comprar seguros por teléfono y dice que cancelar por teléfono **no se ha logrado**; las quejas de aseguradoras son por **negativa de pago, cancelaciones sin respuesta y demoras** | Regulador · prensa sin fecha · F-1054 |
+| Guros | Seguro de auto digital | Insurtech levantó US$5,8 M; 7 de cada 10 autos sin seguro (AMIS, vía nota) | — | **Sin resultados** | Caso de negocio · prensa · F-1056 |
+
+**Colombia**
+
+| Caso | Qué digitalizó o diseñó | Intervención | Mecanismo (inferencia) | Resultado y quién reporta | Nivel · fuente |
+|---|---|---|---|---|---|
+| Primer estudio de demanda de seguros (Superfinanciera, Banca de las Oportunidades y Fasecolda) | No es digital: mide demanda de hogares | Encuesta nacional | **Brecha entre intención y conducta** | **Renovación efectiva 39,1%; deseada 70,2%**; 90,3% de los hogares tiene algún esquema de protección, pero solo 30,3% obtuvo un seguro de forma voluntaria; 86,8% de los hogares con servicios adicionales no los usa | Encuesta oficial · F-1045 |
+| SOAT que se compra en línea | Venta digital de un seguro obligatorio | Compra por web y WhatsApp; el precio está regulado | Confianza **en el canal** y precio como señal (si hay "descuento", es estafa) | **2.870 reportes de posible fraude** (2022-2025); Fasecolda: **5.267 casos en 2023** (4.742 en 2022); en oct-2026 un tribunal ordenó a la Superfinanciera un plan de canales digitales seguros en seis meses; AXA Colpatria vende el SOAT por una cuenta verificada de WhatsApp | Litigio y regulación · prensa · F-1047 |
+| Interacciones digitales | Atención y servicio | Respuestas inmediatas | — | Las interacciones digitales entre aseguradoras y clientes crecieron **más de 30% en dos años** (Fasecolda, vía prensa); producción del 1T 2026 de $14,8 billones (+4,5%) | Gremio · prensa · F-1048 |
+| Seguro agropecuario paramétrico | Pago por índice | Seguro con cofinanciación nacional | Pago rápido y verificable | El ramo pagó más de **$81.000 millones en 2024** a más de **98.000 productores**; penetración de **~5% del área cultivada** | Gremio · prensa · F-1046 |
+
+**Chile**
+
+| Caso | Qué digitalizó o diseñó | Intervención | Mecanismo (inferencia) | Resultado y quién reporta | Nivel · fuente |
+|---|---|---|---|---|---|
+| Licitación de seguros ligados a créditos hipotecarios (Ley 20.552, 2012) | No es digital: rediseña quién compra | El **banco licita** el seguro de desgravamen e incendio cada año entre aseguradoras, en vez de imponer una a cada cliente | La decisión pasa del individuo a un comprador institucional que compara precios | En las 37 licitaciones de jul-dic 2012, el precio bajó **59,53% en promedio** (según la SVS de entonces; cifra de segunda mano); la CMF califica el balance de positivo; en 2021 se prohibió exigir corredor en las bases y que corredores que asesoran al banco ofrezcan | Regulación · cuasi-experimento natural, sin análisis causal formal · F-1049 |
+| Ecosistema insurtech | Nuevos entrantes | 112 insurtechs (+26%) | — | Tercer ecosistema de la región; Betterfly cerró en cinco de ocho países (§3.1) | Informe patrocinado · F-1044 |
+| Finanzas abiertas | Datos con consentimiento | NCG 514 (jul-2024); entrada prevista para jul-2026, con propuesta de extender a **jul-2027** | — | **No se halló calendario para aseguradoras**; fuentes discrepan en el plazo | Regulación · prensa · F-1050 |
+
+**Argentina**
+
+| Caso | Qué digitalizó o diseñó | Intervención | Mecanismo (inferencia) | Resultado y quién reporta | Nivel · fuente |
+|---|---|---|---|---|---|
+| Botón de baja obligatorio (Res. SSN 435/2025) | Venta y gestión en línea | Quien vende pólizas por canales electrónicos debe mostrar un **botón visible para pedir la baja**, en el sitio y en las apps (desde el 21-ago-2025); desde 2022 hay un Registro de Canales Digitales | **Reducir la fricción de salida** | **Sin resultados todavía** | Regulación · estudio jurídico · F-1057 |
+| Inflación y suma asegurada | Actualización del valor | Algunas aseguradoras pasaron de actualizar semestralmente a hacerlo trimestral o mensual | Ilusión monetaria; el valor asegurado se queda atrás | Dilema entre subir cuotas y captar clientes; aumenta el infraseguro; **sin dato de caducidad** | Prensa · F-1058 |
+| Mercado Pago | Venta embebida con servicio | Vida y accidentes con teleconsulta y reintegro de 50% en medicamentos desde **$2.822 al mes** | Servicio inmediato junto a la cobertura | 80% destaca la rapidez (autodeclarado); 11 millones de clientes con pólizas en la región (sin desglose por país) | Caso de negocio · PR · F-1051 |
+| Paramétrico agrícola | Pago por índice | Pólizas para sequía de maíz y soja | Pago rápido | Pólizas **duplicadas en un año** (nota sin fecha) | Prensa · F-1059 |
+
+### 11.3 Qué se aprende (inferencias mías)
+
+1. **La mejor evidencia sobre cambio de conducta viene de reglas, no de apps.** Chile cambió quién decide y el precio bajó; Argentina cambió qué tan fácil es salir; Colombia mide la brecha entre lo que se quiere y lo que se hace. Ninguno es un experimento aleatorizado, pero todos tienen un antes y un después o una medición oficial.
+2. **La brecha entre intención y conducta en la renovación es el dato más fuerte de la región.** Colombia: se quiere renovar 70,2% y se renueva 39,1%. Es compatible con la lectura de §9.2 (caducidad por olvido o falta de liquidez) y con la idea de que **la digitalización se mide en renovación, no en venta**. El estudio no es digital ni dice por qué.
+3. **La confianza en el canal es una variable aparte (N6, §10).** El SOAT colombiano es obligatorio y de precio regulado, y aun así el canal en línea acumula miles de reportes de fraude. Digitalizar un producto con demanda segura no elimina la desconfianza en el canal.
+4. **Chile y Perú tomaron caminos opuestos con el mismo producto.** Chile convirtió el seguro de desgravamen en una licitación institucional; Perú lo hizo opcional y portable (F-877). Son dos teorías distintas de dónde está el fallo: en quién compra o en que sea obligatorio. No se halló comparación de resultados entre ambos.
+5. **Facilitar la salida cambia el significado de "fidelidad".** Con botón de baja (Argentina) la retención que queda es más informativa que con un seguro difícil de cancelar (México por teléfono, F-1054). Para las definiciones de fidelidad de §5b, conviene registrar si la salida es fácil o difícil en cada canal.
+6. **Lo embebido en la región tiene anuncios, no resultados.** Mercado Pago, OXXO y las demás no publican pólizas, renovación ni siniestros por país; solo hay una cifra regional de Mercado Libre.
+
+### 11.4 Qué no se halló, por país
+
+| Pregunta | México | Colombia | Chile | Argentina |
+|---|---|---|---|---|
+| Participación del canal digital en las primas | No hallado | No hallado (solo interacciones, +30%) | No hallado | No hallado (bancos >40% de las ventas, 2023, dato de una empresa) |
+| Renovación o retención de un producto embebido | No hallado | No hallado | No hallado | No hallado |
+| Experimento de campo en seguros | No hallado | No hallado | No hallado | No hallado |
+| Dato oficial de seguros digitales | No hallado | Estudio de demanda; interacciones | Licitación (no digital) | Resoluciones de la SSN |
+
+La mezcla de canales de la región cambió poco: agentes y corredores aportan 60-65% de las primas (McKinsey 2025, vía F-1057; coincide con F-375).
+
+### 11.5 Límites y pendientes
+
+**Límites.** Todo es resumen de búsqueda o prensa; muchas notas no traen fecha (OXXO, Condusef, paramétrico en Argentina); las cifras de la SVS (59,53%) y de Colombia (renovación) vienen de resultados sin abrir el documento original; el informe de la ONU sobre insurtech en América Latina y el Caribe (nov-2025) no se leyó.
+
+**Pendientes (en orden de valor).**
+
+1. Estadísticas oficiales por canal y persistencia: AMIS y CNSF (México), Fasecolda y Superfinanciera (Colombia), CMF (Chile) y SSN (Argentina).
+2. Abrir el estudio de demanda de Colombia: fecha, método y si distingue el canal digital.
+3. Abrir los documentos de la CMF y de la UC sobre la licitación chilena para verificar el efecto en precios y comisiones.
+4. Abrir el brief de Milliman sobre microseguro de vida en México (resultados sobre gastos funerarios y renovación).
+5. Seguir el efecto de la Res. SSN 435/2025 sobre las bajas.
+6. Buscar casos de seguro embebido con resultado (Nequi, Falabella, Mach, Ualá) en informes anuales o comunicados de resultados.
 
 ---
 
