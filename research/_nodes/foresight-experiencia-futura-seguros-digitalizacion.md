@@ -1,7 +1,7 @@
 # Foresight: la experiencia futura de los seguros y la digitalización — preguntas profundas y radar de señales
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.1 (v1.1 suma §11: cuatro señales nuevas y actualización de la 14)
+> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.2 (v1.2 suma §12: mapa de tendencias globales y de LATAM por pregunta abierta; v1.1 sumó §11: cuatro señales nuevas y actualización de la 14)
 > Origen: `/trinidad` (empírica/teórica + social + negocio) pedida por el usuario para reconstruir el radar de señales que se
 > retiró de `digitalizacion-seguros-mercados-emergentes` (§9.4). Pregunta de partida: *¿cuál es la experiencia futura de los
 > seguros y la digitalización?* y, detrás de ella, *¿cuáles son las preguntas más profundas?*
@@ -346,6 +346,78 @@ Todas están en `research/fuentes/codice.md`.
 - **No cambia la conclusión de §1:** la credibilidad del pago sigue siendo la pregunta de fondo.
 
 **Pendiente actualizado.** El pendiente 3 de §9 (leer el texto de finanzas abiertas) avanzó: el proyecto existe y está en consulta, pero **falta abrir el texto y buscar la mención de seguros**.
+
+---
+
+## 12. Actualización v1.2 (2026-10-27): tendencias globales y de LATAM, ordenadas por las preguntas abiertas de un documento de estrategia
+
+*Origen: la persona usuaria pidió las **tendencias globales y latinoamericanas** en seguros, insurtech y digitalización, tomando como punto de partida un documento interno de estrategia que cuestiona varias cosas. Ese documento **no se copia ni se resume aquí** (repositorio público); solo se reformulan, en términos genéricos, las **preguntas** que abre, y se busca qué dicen las fuentes públicas sobre cada una. Todo se leyó por resumen de búsqueda; la pista social no se corrió.*
+
+### 12.1 Respuesta corta
+
+**Las tendencias globales más repetidas tienen más promesa que resultado medido.** Siete, de más a menos respaldadas por datos:
+
+1. **Costos médicos de dos dígitos y persistentes:** 10,3% global proyectado para 2026, 14,0% en Asia-Pacífico y **11,9% en América Latina** (desde 10,5%), la mayor aceleración; 55% de las aseguradoras de salud espera que se mantenga más de tres años (F-1102).
+2. **La IA pasa de asistente a agente, pero casi no escala:** solo 22% de las aseguradoras la llevó a producción a escala, aunque 66% de la plantilla ya usa herramientas de IA; el cuello de botella sería confianza y gobierno, no tecnología (F-1103; coincide con F-928 y F-929).
+3. **El capital se concentra en la IA:** 95% del financiamiento insurtech del 1T 2026 y 99,1% del 2T fue a empresas de IA (F-1065, F-901).
+4. **De pagar a prevenir:** es el discurso dominante (F-1103, F-996), pero la prueba causal es mínima: un experimento de seguro por uso (F-442) y un programa digital de diabetes cuyo ahorro desaparece al segundo año (F-1108).
+5. **Embebido y plataformas toman la relación con el cliente:** las estimaciones de mercado varían de 5 a 10 veces según la firma (F-998); aseguradoras y comparadores ya cotizan en asistentes de IA, y la compra se cierra en su propio sitio (F-981).
+6. **Más riesgo que no se deja asegurar:** ciber es el riesgo n.º 1 de las empresas y la IA el n.º 2 (F-989); las aseguradoras se retiran de zonas de alto riesgo climático (F-987, F-988).
+7. **Regulación de la IA y de los datos:** en Europa, la IA que fija precios en vida y salud es de alto riesgo (F-986).
+
+**En América Latina y Perú**, de más a menos respaldadas:
+
+1. **Costo médico y brecha de protección:** 11,9% de tendencia médica (F-1102) y 81,0% de brecha de protección frente a catástrofes (F-1069).
+2. **Ecosistema insurtech que madura y se concentra:** 576 empresas, mortalidad anual de 6,9% (de 12,7% en 2024), 76% del financiamiento a vida y salud con 26% de las empresas (F-1068). Informe patrocinado por una aseguradora.
+3. **Distribución todavía intermediada:** agentes y corredores aportan 60-65% de las primas en la región (F-375), ~50% en México (F-1072); en Perú hay plataformas para corredores, sin cifra de participación reciente (F-1107).
+4. **Compra digital en productos simples y obligatorios, con fraude:** ~90% de los SOAT peruanos son digitales (F-884) y el SOAT en línea acumula miles de reportes de fraude en Colombia (F-1047).
+5. **Regulación en movimiento:** proyecto de finanzas abiertas de la SBS en consulta pública (F-1064; alcance a seguros sin verificar), sandbox ampliado (F-1106), reglamento de IA vigente (F-1005); en Chile el calendario de finanzas abiertas se mueve a 2027 (F-1050).
+6. **IA con datos contradictorios:** 43% de aseguradoras latinoamericanas con IA generativa en producción (Celent, de segunda mano, F-1003) frente a 15%-20% de aseguradoras mexicanas que usan IA (AMIS, F-1063).
+7. **Mercado lento:** en Perú, primas del 1S 2026 con solo +1,1% (F-506) y siniestralidad retenida del sistema de 39,3% (2025) a 40,6% (1T 2026) (F-1105).
+
+### 12.2 Las preguntas abiertas y lo que dicen las fuentes
+
+Solidez: 🟢 con causalidad · 🔵 institucional o con método · 🟡 encuesta o estudio de consultora · 🟠 prensa, proveedor o cifra propia.
+
+| # | Pregunta que abre el documento | Tendencia global | América Latina y Perú | Solidez | Qué sigue abierto |
+|---|---|---|---|---|---|
+| 1 | **¿Con qué se mide lo digital: venta y uso, o resultado?** | Los estudios que miden resultado relacionan madurez digital con rentabilidad relativa, sin causalidad (F-1099, F-1101); la compra digital sube (47% de pólizas nuevas de auto y hogar en EE.UU.) mientras baja la satisfacción y solo 11% usa un chatbot (F-1094) | No hay medición pública local | 🟡 | Efecto causal de lo digital en el ratio combinado |
+| 2 | **¿Dónde está el dinero: siniestralidad o costo de servir?** | Propiedad y accidentes de EE.UU. 2024: siniestros 71,0% y gastos 25,2% de la prima (F-1091); las aseguradoras esperan mejorar la siniestralidad 3 a 8 puntos y ahorrar 10% a 20% en otras partes (F-1100) | Siniestralidad retenida del sistema peruano 39,3% (2025) y 40,6% (1T 2026) (F-1105); en salud, la tendencia médica de 11,9% (F-1102) | 🟡 / 🟠 | Peso de gastos y siniestros por ramo en Perú (no público por ramo) |
+| 3 | **¿La autogestión resuelve o termina en llamada?** | Brecha entre lo que se ofrece y lo que se quiere: 59% de menores de 40 quiere relación digital directa y 31% de aseguradoras la ofrece (F-1096); el uso de chatbots es bajo (F-1094) | Siniestros por WhatsApp con IA en Brasil, sin resultados (F-893); SOAT vendido por una cuenta verificada de WhatsApp en Colombia (F-1047) | 🟡 | Tasa de resolución sin humano (no se publica) |
+| 4 | **¿Una sola relación con el cliente (un perfil, una entrada)?** | Ping An: 2,94 contratos por cliente y 99% de retención en quienes tienen tres o más categorías (selección) (F-1092); agrupar productos se asocia a más retención (F-1018) | Billeteras con seguros (Yape, Mercado Pago, OXXO: F-888, F-1051 a F-1053), sin resultados; finanzas abiertas en consulta en Perú (F-1064) | 🟠 | Si la vista única causa mejor retención o solo la refleja |
+| 5 | **¿Prevenir en lugar de indemnizar?** | Es el discurso de 2026 (F-1103, F-996); un RCT de seguro por uso cambia la conducta (F-442); un programa digital de diabetes ahorra en el año 1 y no en el 2 (F-1108); en Discovery, 30% menos siniestros de auto entre los 'avanzados y comprometidos', con selección (F-1093) | Interés alto en prevención en Brasil (97%) (F-1095); parámetrico para el Niño Costero (ver `fenomeno-el-nino-impacto-personas`) | 🟢 un RCT; 🟠 el resto | Evidencia causal de prevención en salud y vehículos; quién paga el dispositivo |
+| 6 | **¿La IA como motor de decisión (suscripción, precio, siniestros)? ¿Depende del dato?** | 22% escaló la IA y 66% de la plantilla la usa (F-1103); IA generativa a escala en 4% (F-928) y 7% (F-929); IA de precios en vida y salud, de alto riesgo en la UE (F-986); la confianza del cliente baja a 40% (F-983) | 43% (Celent, dudoso) frente a 15%-20% (AMIS) de uso de IA (F-1003, F-1063); decreto peruano de IA vigente, sin detalle para seguros (F-1005) | 🟡 / 🟠 | Calidad y unificación del dato como cuello de botella: sin evidencia pública local |
+| 7 | **¿El corredor como principal usuario de lo digital?** | Las agencias más digitales crecen más rápido, con selección (F-1097) | Agentes y corredores, 60-65% regional (F-375), ~50% en México (F-1072); plataformas para corredores en Perú, la mayoría de 2022 (F-1107) | 🟡 / 🟠 | Participación del corredor en Perú 2025-2026 (no hallada) |
+| 8 | **¿Qué se vende en digital y qué no, según el ramo?** | Auto y hogar: 47% digital en EE.UU. (F-1094); vida: 59% frente a 31% de oferta (F-1096) | SOAT ~90% digital (F-884), producto obligatorio y de precio regulado; el financiamiento va a vida y salud (F-1068) | 🟡 / 🟠 | Participación digital por ramo en Perú |
+| 9 | **¿Qué pasa con los costos médicos?** | 10,3% global; Asia-Pacífico 14,0%; Norteamérica 9,2%; Europa 8,2% (F-1102) | **11,9% en América Latina**, excluyendo Argentina, desde 10,5% (F-1102) | 🟡 | Impulsores para LATAM y siniestralidad de salud en Perú |
+| 10 | **¿Entran terceros con seguro embebido?** | Estimaciones incomparables (F-998); cotización en asistentes de IA (F-981); embebido europeo de US$49.000 M a 2030, sin verificar (F-1104); MAPFRE toma 38,9% de Tuio (F-1068) | Mercado Pago y OXXO lanzan micropólizas sin resultados públicos (F-1052, F-1053); Fitch lo ve como requisito para competir (F-1065) | 🟠 | Pólizas, renovación y siniestros de lo embebido en LATAM: ninguno público |
+| 11 | **¿Qué regulan el dato y la IA, y se puede cruzar datos para tarificar?** | Alto riesgo para precios de vida y salud en la UE (F-986) | Peru: finanzas abiertas en consulta (F-1064), sandbox ampliado (F-1106), decreto de IA (F-1005); Chile: finanzas abiertas a 2027 (F-1050); México: sin ley general de IA (F-1063) | 🔵 / 🟠 | Si las finanzas abiertas del Perú alcanzan a seguros (no verificado) |
+| 12 | **¿Qué riesgos y qué ciclo presionan?** | Ciber n.º 1 e IA n.º 2 (F-989); retirada de zonas climáticas (F-987); mercado blando en líneas comerciales (F-1065) | Brecha de protección de 81,0% (F-1069); mercado peruano lento en 2026 (F-506) | 🟡 / 🔵 | Impacto del Niño Costero 2026-27 en siniestros |
+
+### 12.3 Lectura (inferencias mías)
+
+1. **Las preguntas 1, 4 y 6 no se pueden responder con fuentes públicas.** Las tendencias globales dicen hacia dónde va la industria, no si una decisión local rinde. Se responden con dato propio y con diseños que separen la selección.
+2. **Donde hay cifra sólida es en el entorno:** costos médicos, brecha de protección y estructura de costos de otros mercados. Es lo que sirve para dimensionar.
+3. **Casi todas las tendencias de oferta (IA, embebido, prevención) vienen de proveedores o de las propias aseguradoras.** Las de demanda (lo que quiere el cliente) vienen de encuestas de consultoras en mercados maduros.
+4. **Perú tiene pocos datos públicos locales por ramo:** primas y siniestralidad por ramo, participación de corredores y del canal digital no se hallaron.
+
+### 12.4 Discrepancias de las fuentes que conviene conocer
+
+- **Primas del sistema peruano:** las cifras de prensa no coinciden entre sí (S/19.915 M de 2024, S/24.520 M anualizadas a marzo de 2026); se miden de maneras distintas y hay que ver la definición antes de usarlas (F-1105).
+- **Resolución SBS 01747-2026:** las fuentes secundarias la describen como condiciones para abrir cuentas y créditos por plataformas digitales, no como un reglamento de productos digitales innovadores; **no se pudo confirmar** (F-1106).
+- **Adopción de IA en LATAM:** 43% (Celent, de segunda mano) frente a 15%-20% en México (AMIS) no se concilian: miden países, definiciones y fechas distintos.
+
+### 12.5 Límites y pendientes
+
+**Límites.** Todo se leyó por resumen. Las encuestas son de proveedores y consultoras. No se corrió la pista social. No se abrieron las normas peruanas.
+
+**Pendientes.**
+
+1. Estadísticas de la SBS por ramo y por compañía: primas, siniestralidad y gastos.
+2. Participación de los corredores y del canal digital en las primas peruanas.
+3. Texto de finanzas abiertas de la SBS: ¿incluye seguros?
+4. Desglose de impulsores del costo médico para LATAM en el informe de WTW.
+5. Verificar Celent frente a AMIS sobre uso de IA.
 
 ---
 

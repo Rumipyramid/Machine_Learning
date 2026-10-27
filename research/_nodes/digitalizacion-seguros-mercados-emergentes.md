@@ -920,7 +920,7 @@ Lo que sostiene el resto de la sección:
 
 1. **Lo que las empresas declaran** es eficiencia y experiencia del cliente: en una encuesta a 43 ejecutivos, 60% marcó eficiencia operativa y 58% experiencia del cliente (F-1085); en otra, 59% espera de la IA, sobre todo, eficiencia (F-1086). Son encuestas de proveedores.
 2. **Lo que miden y publican** es volumen, velocidad, costo y uso (ventas digitales, tiempo de respuesta, usuarios activos). **Casi nunca publican el efecto sobre el resultado técnico** (siniestralidad y gastos).
-3. **Lo que está probado con causalidad independiente es muy poco:** un experimento aleatorizado de seguro por uso que cambió la conducta de manejo (F-442). El resto son correlaciones con selección (F-1087, F-1097) o cifras de las propias empresas (F-1092, F-1093).
+3. **Lo que está probado con causalidad independiente es muy poco:** un experimento aleatorizado de seguro por uso que cambió la conducta de manejo (F-442). El resto son correlaciones con selección (F-1099, F-1101, F-1097) o cifras de las propias empresas (F-1092, F-1093).
 4. **La tensión de fondo (inferencia mía):** en seguros de propiedad y accidentes de EE.UU., los siniestros pesan casi tres veces lo que los gastos (71,0% frente a 25,2% de la prima en 2024; F-1091), pero la digitalización se ha usado más en venta y servicio. El siniestro es el bolsillo grande y más difícil de mover; los gastos son el chico y más controlable. La literatura pública no dice cuál rinde más.
 5. **No hay evidencia independiente de que "más uso" (MAU, tráfico) mejore el resultado.** En EE.UU., la compra digital sube (47% de las pólizas nuevas de auto y hogar) mientras la satisfacción con esa compra baja (523, −12 puntos) y solo 11% usa un chatbot (F-1094).
 
@@ -929,7 +929,7 @@ Lo que sostiene el resto de la sección:
 | # | Objetivo | Qué buscan | Qué se encontró | Solidez |
 |---|---|---|---|---|
 | 1 | **Vender más y mejor** | Captar en digital, sobre todo en productos simples; vender por comparador, billetera o plataforma | 47% de las pólizas nuevas de auto y hogar en EE.UU. ya se compran en digital (F-1094); en Perú, ~90% de los SOAT se emiten digitales, un seguro obligatorio y de precio regulado (F-884). **No se halló que lo digital haya movido la penetración agregada** (§3.2) | 🟡 adopción medida; efecto total no |
-| 2 | **Gastar menos en servir y operar** | Autogestión, automatización, menos llamadas, procesos más cortos | Los autoservicios fallan y terminan en llamada (cifra de 31% en auto en EE.UU. no confirmada, F-1095); solo 11% usa un chatbot (F-1094); mejor ratio combinado de 6% en adoptantes tempranos de Lloyd's (F-1087); proveedores prometen −40% de costo de emisión (F-1071) | 🟠 correlación o cifra de proveedor |
+| 2 | **Gastar menos en servir y operar** | Autogestión, automatización, menos llamadas, procesos más cortos | Los autoservicios fallan y terminan en llamada (cifra de 31% en auto en EE.UU. no confirmada, F-1095); solo 11% usa un chatbot (F-1094); ventaja de 6 puntos del ratio combinado en los sindicatos más avanzados de Lloyd's, con selección (F-1101); proveedores prometen −40% de costo de emisión (F-1071) | 🟠 correlación o cifra de proveedor |
 | 3 | **Pagar menos siniestros** | Prevención, detección de fraude, selección y precio más fino, control del siniestro | **Un RCT:** el seguro por uso cambia la conducta de manejo (F-442). Sensores de fuga con cifras de proveedores (F-1001). 57% de las aseguradoras del mundo usa IA contra el fraude (F-1072, de segunda mano). Discovery: 30% menos siniestros entre conductores 'avanzados y comprometidos', con selección (F-1093) | 🟢 un RCT; 🟠 el resto |
 | 4 | **Retener y profundizar** | Más productos por cliente, menos caducidad, relación continua | Ping An: 2,94 contratos por cliente y 99% de retención entre quienes tienen tres o más categorías (F-1092): **selección**, quien compra mucho ya era leal. Agrupar auto y hogar: retención de 95% frente a 85% (F-1018). Sin prueba causal de que la app retenga (§0 de `hipotesis-digitalizacion-seguros-evidencia-publica`) | 🟠 correlación |
 | 5 | **Dar lo que el cliente pide** | Experiencia sin fricción, relación digital directa, atención asistida | 59% de los menores de 40 quiere relación digital directa y solo 31% de las aseguradoras la ofrece; 67% quiere digital con un asesor dedicado y 16% lo recibe (F-1096). Interés en prevención muy alto en Brasil (97%) (F-1095). **La satisfacción con lo digital cae** (F-1094, F-1009) | 🟡 encuestas |
@@ -950,15 +950,39 @@ Lo que sostiene el resto de la sección:
 
 **Lectura (inferencia mía):** hay una brecha entre el 'para qué' declarado y lo que se mide. Casi todo lo que se mide es de **actividad** (uso, velocidad, volumen) y casi nada es de **resultado** (siniestralidad, ratio combinado, retención causal). Que no se mida no prueba que no funcione, pero **impide saber qué objetivo rinde más**.
 
-### 13.4 ¿Hay estudios que midan el efecto de lo digital en el resultado de las aseguradoras?
+### 13.4 'Se asocia con más creación de valor': qué significa, cómo se mide y qué no prueba
 
-Hay pocos y débiles:
+**Conclusión.** Esa frase describe una **correlación entre el nivel de digitalización de una aseguradora y su rentabilidad relativa**, no una prueba de que digitalizar cause mayor rentabilidad. Hay dos estudios que la sostienen y ambos tienen el mismo límite: las aseguradoras que ya ganan más pueden invertir antes y más en lo digital.
 
-- Un análisis de 49 sindicatos de Lloyd's halló un ratio combinado 6% mejor en los adoptantes tempranos; ACORD y Swiss Re relacionan madurez digital con creación de valor en 200 aseguradoras con una métrica propia (F-1087). Son correlaciones de corte transversal.
-- Un estudio de 23 aseguradoras sauditas halla que **la rentabilidad y la solvencia predicen la adopción** de insurtech, no al revés (F-1088): puede que las que ganan más inviertan más, y no que lo digital las haga ganar más.
+**Estudio 1: ACORD, Digital Maturity Study (F-1099).**
+
+- **Quién:** ACORD, un gremio de estándares de datos del sector, que **vende** el estudio. El PDF que circula con el sello de Swiss Re es la edición de 2022 (julio de 2023). Las de 2025 y 2026 evalúan **210** aseguradoras de vida, propiedad y accidentes y reaseguro.
+- **Cómo mide la madurez digital:** ocho capacidades (plataformas de clientes, analítica de datos, infraestructura, operaciones, automatización, inversión, modelos de negocio y cultura), evaluadas **en relación con las demás aseguradoras**. Las ordena en cinco niveles.
+- **Qué es el 'valor':** un **beneficio relativo indexado**: la rentabilidad de cada aseguradora frente a la del promedio del estudio, con el promedio fijado cerca de 100. No es un monto ni un ratio combinado.
+- **Qué halló (edición 2026):** solo el nivel superior (~7%, 'competidores digitales') superó el promedio, con **135,7 frente a 102,5**; los otros cuatro niveles quedaron por debajo del promedio. En ediciones anteriores los dos niveles superiores solían superarlo. Un resumen de 2025 añade que solo una cuarta parte había digitalizado de verdad la cadena de valor.
+- **Qué hacen distinto los líderes (según el estudio):** parten del objetivo de negocio y planifican a más largo plazo que el siguiente punto de solución.
+
+**Estudio 2: WTW sobre Lloyd's (F-1101).** 49 sindicatos (~85% del mercado) se clasificaron **ellos mismos** por su avance digital. El ratio combinado operativo agregado de 2022 fue **89%** en el grupo más avanzado, **93%** en el intermedio y **95%** en el menos avanzado: una ventaja de **6 puntos** del ratio combinado, no de 6%. Es un solo año y una sola plaza (el mercado de Londres, de seguros comerciales y especializados).
+
+**Un tercer dato, de metas y no de resultados (F-1100):** Swiss Re Institute reporta que las aseguradoras se proponen mejorar la siniestralidad entre **3 y 8 puntos porcentuales** y ahorrar **10% a 20%** en otras partes de la cadena con la transformación digital. Son lo que **esperan**, no lo que lograron.
+
+**Por qué no prueba que lo digital cause el valor:**
+
+1. **Causalidad inversa.** En un estudio de 23 aseguradoras sauditas, la rentabilidad y la solvencia **predicen** la adopción de insurtech (F-1088). Las que ganan más pueden pagar más tecnología.
+2. **Medición relativa.** Si el índice es relativo a los pares, el promedio siempre es 100: que unas suban implica que otras bajen, sin que cambie el resultado agregado del sector.
+3. **Autoclasificación y métrica propia.** WTW clasificó a los sindicatos por su autoevaluación; ACORD usa su índice y su métrica de beneficio, que **no son auditables desde afuera**.
+4. **Otros factores.** Las aseguradoras mejor gestionadas pueden tener a la vez mejor tecnología y mejor suscripción, sin que lo uno cause lo otro.
+5. **Quién publica.** ACORD vende el estudio, WTW vende asesoría de transformación y Swiss Re es reaseguradora de las que digitalizan: todos tienen interés en que el resultado sea positivo.
+6. **Plazo y sectores.** Un año en Lloyd's y comparaciones entre grandes aseguradoras no dicen nada de aseguradoras medianas de mercados emergentes.
+
+**Qué sí dice (inferencia mía):** las aseguradoras más digitalizadas **no parecen ir peor**, y el nivel superior sí se separa del promedio. Es una señal para investigar con diseños que separen la selección (emparejamiento y diferencias en diferencias, §6 de `hipotesis-digitalizacion-seguros-evidencia-publica`), no una cifra para prometer.
+
+**Otros hallazgos sobre el efecto en el resultado:**
+
 - Un panel dinámico ucraniano sobre digitalización y desempeño financiero existe, pero **solo se vio su resumen** (F-1088).
-- La literatura académica sobre insurtech se concentra en tecnología (IA y blockchain) más que en el efecto económico (F-1090) y ofrece modelos de cómo se crea valor sin medirlo (F-1089).
-- Las agencias más digitales crecen 70% más rápido (EE.UU., encuesta de aseguradoras de 2022), pero con selección (F-1097).
+- La literatura académica sobre insurtech se concentra en la tecnología (IA y blockchain) más que en el efecto económico (F-1090) y ofrece modelos de cómo se crea valor sin medirlo (F-1089).
+- Las agencias más digitales crecen 70% más rápido (EE.UU., encuesta patrocinada por aseguradoras de 2022), pero con selección (F-1097).
+- **Prevención:** un programa digital de prevención de diabetes redujo el gasto de salud US$1.169 por participante en el primer año frente a un grupo emparejado, pero **ya no fue significativo al segundo año** y es observacional y ligado a un proveedor (F-1108). No se halló un experimento aleatorizado de una aseguradora con costos de siniestros como resultado.
 
 ### 13.5 Qué busca el cliente frente a lo que buscan las aseguradoras
 
