@@ -323,3 +323,4 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — retoma de este node la lógica de reducir la carga de «pedir antes de dar valor» como argumento a favor de potenciar al asesor con tecnología, no de reemplazarlo.
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — el consentimiento al pedir datos y la renovación automática (O3) se apoyan en esta transición.
+- [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — confianza, redes y asesoría en la decisión de asegurarse.

@@ -231,3 +231,4 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — suma evidencia causal de demanda, el barrido de la oferta peruana y los criterios de las tres definiciones basales.
+- [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — el sesgo del consejo por comisión (F-977) matiza el rol del corredor.

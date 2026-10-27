@@ -1,7 +1,7 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-26 · Versión: v1.2 (v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 suma §9: defaults, pago y automatización, literatura de seguros y foresight de señales)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-26 · Versión: v1.2 (v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 suma §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
@@ -573,9 +573,9 @@ Las láminas son del usuario. Lo que sigue separa lo que se pudo verificar de lo
 
 ---
 
-## 9. Adenda v1.2 (2026-10-26): defaults, pago y automatización, literatura de seguros y foresight de señales
+## 9. Adenda v1.2 (2026-10-26): defaults, pago y automatización
 
-*Origen: cinco láminas más de banca (defaults y pago mínimo, pagos automáticos, incertidumbre y aversión a la pérdida, malentendidos en el pago, dolor del pago) y varios links; el usuario pidió ir más allá de la banca y precisó que "señales" son señales de cambio, como en un ejercicio de foresight a la Godet. Es un campo exploratorio: salvo donde se cita evidencia, lo que sigue son hipótesis.*
+*Origen: cinco láminas más de banca (defaults y pago mínimo, pagos automáticos, incertidumbre y aversión a la pérdida, malentendidos en el pago, dolor del pago) y varios links; el usuario pidió ir más allá de la banca hacia seguros. Las señales de cambio (foresight) **no se incorporan aquí**: el usuario las tratará en un acápite propio. Es un campo exploratorio: salvo donde se cita evidencia, lo que sigue son hipótesis.*
 
 ### 9.1 Verificación de las cinco láminas
 
@@ -589,7 +589,9 @@ Las láminas son del usuario. Lo que sigue separa lo que se pudo verificar de lo
 
 **Links adicionales.** Buell y Norton (F-915): verificado. El meta-análisis de confianza del enlace de Emerald es F-917: sigue sin abrirse. El estudio de Treo y arXiv 1803.05032: **no los pude abrir** (la búsqueda no los halló y el acceso directo a esos sitios falla); si me dices el título, los busco por nombre. El artículo de NN/g sobre *placeholders* (F-966): solo por resúmenes secundarios. JSTOR 2951245: no lo abrí; no confirmo que sea Barsky.
 
-### 9.2 Qué agrega la literatura para seguros (más allá de los links)
+### 9.2 Qué agrega la literatura para seguros: pago, renovación y caducidad
+
+*Esta sección cubre solo el tramo de pago y mantenimiento. El resto del ciclo (considerar, elegir, creer, asesoría, selección) está en [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]].*
 
 | Tema | Hallazgo | Evidencia | Qué significa para seguros |
 |---|---|---|---|
@@ -625,44 +627,11 @@ Son hipótesis de diseño, no resultados. El análogo del "pago mínimo" en segu
 
 **Cambio a las definiciones basales (§5b).** En **fidelidad**, la caducidad por olvido no es deslealtad: hay que **clasificar la causa de cada caducidad** antes de leer "caducó" como "no era fiel". En **cliente digitalmente sano**, el autopago no es un éxito por sí mismo: cuenta si el cliente conserva atención sobre lo que paga (revisión periódica, sin sobrecobros).
 
-### 9.4 Foresight: señales de cambio (primer radar, exploratorio)
-
-**Marco.** La prospectiva estratégica de Godet busca anticipar para actuar, no predecir: identifica **variables clave** (análisis estructural por influencia y dependencia), el **juego de actores** y **escenarios** (F-961; no pude leer sus capítulos de gérmenes de cambio). Hiltunen describe una **señal futura** con tres dimensiones: la señal (visibilidad), el tema (difusión) y la interpretación (qué significa para quien la lee) (F-962). Ansoff define las señales débiles como advertencias demasiado incompletas para estimar su impacto. Aquí uso cuatro tipos: **tendencia pesada** (casi segura), **germen de cambio** (señal débil que ya aparece), **incertidumbre crítica** (puede ir en dos direcciones) y **comodín** (poco probable, gran impacto). **Esto es un radar armado con búsquedas, no un ejercicio con expertos: faltan taller, análisis estructural y juego de actores.**
-
-| # | Señal | Evidencia | Tipo | Por qué importa a seguros digitales | Indicador a vigilar | Confianza |
-|---|---|---|---|---|---|---|
-| 1 | **Sueldo en billetera** (Ley 32413; reglamento DS 011-2026-EF) | Aprobada con 95 votos; pago por acuerdo; el empleador no impone plataforma (F-964) | Germen de cambio | Permite alinear el cobro con el día de pago (DP2) y acerca a quien no tiene cuenta | Proporción de trabajadores pagados por billetera; fiscalización de Sunafil | Media: la norma existe, la adopción no se conoce |
-| 2 | **Finanzas abiertas** | SBS: reglamento de BaaS (jul-2026), norma general a inicios de 2027, primeros intercambios en 2028 (otra nota dice 2029), empiezan los cuatro bancos más grandes (F-965) | Germen de cambio / incertidumbre | Datos con consentimiento podrían cambiar la suscripción y el servicio; **no se verificó si incluye seguros** | Texto del alcance de la norma; participación de aseguradoras | Media-baja: fuentes discrepan |
-| 3 | **Iniciadores de pago (BCRP)** | Reglamento en evaluación; modelo centralizado o bilateral (F-965) | Germen de cambio | Pagar desde la cuenta sin tarjeta cambiaría la cobranza de primas | Publicación del reglamento | Baja |
-| 4 | **La billetera como centro de la vida financiera** | 67% de adultos con cuenta o billetera; Yape ~16 M; Pacífico ya vende dentro (F-936, F-888) | Incertidumbre crítica | ¿El seguro será una función de la billetera o una relación directa con la aseguradora? | Seguros vendidos y **renovados** en billeteras; quién guarda los datos del cliente | Media |
-| 5 | **Envejecimiento y urbanización** | ~40 M de peruanos y esperanza de vida de 83 años en 2050; ~35 M urbanos (85-88%) (CEPLAN, F-963) | Tendencia pesada | Vida, salud y rentas; mayores con necesidades distintas (la edad no es criterio digital, §2) | Proyecciones de población del INEI (no obtenidas) | Media-alta |
-| 6 | **IA en siniestros** | 99,1% del financiamiento insurtech va a IA; solo 4% escaló IA generativa en siniestros; pilotos de agentes en 74% de aseguradoras grandes (F-901, F-928, F-929) | Germen de cambio | Mayor velocidad y riesgo reputacional (Lemonade, F-869); decisiones automatizadas bajo vigilancia | Porcentaje de siniestros resueltos sin humano; reclamos por decisiones automatizadas | Media |
-| 7 | **Supervisión de conducta en el siniestro y fin del default** | Res. SBS 01923-2026 más exigente; multas de Indecopi; desgravamen opcional desde sep-2025 (F-484, F-875, F-877) | Tendencia pesada | Elige quien tenga mejor siniestro y consentimiento explícito | Sanciones por plazos y rechazos | Media-alta |
-| 8 | **Clima: Niño Costero 2026-27** | Ver `fenomeno-el-nino-impacto-personas` | Tendencia pesada / comodín | Demanda de cobertura paramétrica y presión sobre siniestros (O9) | ENFEN y pagos de siniestros por desastre | Media |
-| 9 | **Informalidad persistente** | 70,7% (2025); rural 94,8% (F-879) | Tendencia pesada | Limita contratos formales y planilla; define el techo digital | Informalidad y cobertura por billeteras | Alta |
-| 10 | **Confianza en aseguradoras** | 14% (Ipsos 2023) o ~23-25% (node previo); confianza institucional 45% (F-934, F-881) | Incertidumbre crítica | Todo lo digital depende de que el pago del siniestro sea creíble (F-851, F-852) | Encuesta propia de confianza; reclamos | Baja: las cifras no concilian |
-| 11 | **Trabajadores de plataformas** | Vacío de cobertura de 2019; sin oferta vigente hallada (F-913) | Germen débil | Segmento sin seguro por falta de empleador | Normas sobre repartidores; oferta de plataformas | Baja |
-| 12 | **Pérdida de confianza masiva en un canal** (falla de una billetera, estafas con pólizas falsas como las del SOAT de 2022) | Caso puntual (F-884) | Comodín | Un evento podría frenar lo digital | Incidentes de fraude | Baja: sin evidencia directa |
-
-**Variables clave candidatas (a validar con análisis estructural):** confianza en el pago del siniestro · quién posee la relación digital con el cliente · costo de servir por canal · regulación de conducta · apertura de datos (finanzas abiertas) · formalización del ingreso · conectividad rural · uso de IA en siniestros · exposición climática · envejecimiento · tecnología de pagos · poder de los canales (bancos, billeteras, corredores).
-
-**Dos incertidumbres críticas para un primer 2×2 a 2035 (hipótesis, sin probabilidades):**
-
-| | **Confianza en el pago del siniestro: baja** | **Confianza en el pago del siniestro: alta** |
-|---|---|---|
-| **La billetera o el banco posee la relación** | *Seguro como accesorio barato:* micropólizas dentro de apps, poca renovación y poca reclamación; la aseguradora es proveedor invisible | *Seguro como función de la billetera:* el cliente confía y renueva dentro de la app; la aseguradora compite por ser la elegida en el menú |
-| **La aseguradora o el corredor posee la relación** | *Híbrido defensivo:* corredor y papel siguen siendo el ancla; lo digital queda en cotizar y pagar | *Relación directa con datos abiertos:* la aseguradora usa finanzas abiertas con consentimiento y gestiona el ciclo completo |
-
-Cada escenario cambia las tres definiciones: en el de "accesorio", la fidelidad (renovar por elección) sería escasa y el "cliente de alto valor" se definiría casi solo por costo de servir; en el de "función de la billetera", el cliente digital sano depende del canal ajeno y la fiabilidad (F-920) pasa a ser del partner.
-
-**Cómo convertirlo en un ejercicio Godet completo:** (1) taller con expertos de la aseguradora y de fuera para validar y priorizar las variables; (2) análisis estructural (mapa de influencia y dependencia); (3) juego de actores (aseguradoras, bancos, billeteras, reguladores, corredores); (4) escenarios con el método de ejes o SMIC; (5) revisar el radar cada trimestre con las rutinas de `/trinidad`.
-
-### 9.5 Pendientes de esta adenda
+### 9.4 Pendientes de esta adenda
 
 1. **Abrir** el estudio de Treo, arXiv 1803.05032 y el artículo de NN/g (necesito el título o que me lo pegues).
 2. **Verificar** F-917 y F-919 (láminas) y las cifras de las láminas 6-10 contra los papers.
 3. **Medir en Perú** lo que la literatura sugiere y no tiene dato local: causa de caducidad (DP1), cobro automático de primas, proporción de cobro por billetera.
-4. **Foresight:** taller y análisis estructural; proyecciones del INEI de población adulta mayor; alcance de finanzas abiertas sobre seguros.
 
 ---
 
@@ -687,3 +656,4 @@ Cada escenario cambia las tres definiciones: en el de "accesorio", la fidelidad 
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas `lapuerta`]] — segmentos de la matriz (§4) se pueden
   simular con sus variables (informalidad, bancarización, acceso digital, confianza).
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado de replicación de la aversión a la pérdida y del anclaje que usan las láminas de pago (§9.1); ahí está F-724 (mayor en mayores).
+- [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — el resto del ciclo de decisión (demanda, elección, confianza, asesoría, selección, ahorro) que aquí no se cubre.

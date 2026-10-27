@@ -546,3 +546,4 @@ Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita 
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — RF6 y PF6: sesgos como rangos.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — dónde se aplican la aversión a la pérdida (caducidad, niveles) y el progreso dotado en programas de lealtad, y qué demuestra el campo.
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — contrasta las láminas de pago de banca con la evidencia: la aversión a la pérdida no es mayor con menor ingreso (F-948) y el efecto de escasez tiene réplicas nulas (F-950).
+- [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — aplicación de la aversión a la pérdida, el aprendizaje y el olvido a decisiones de seguro, con su estado de replicación.
