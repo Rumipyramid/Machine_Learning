@@ -821,7 +821,7 @@ La mezcla de canales de la región cambió poco: agentes y corredores aportan 60
 
 1. Estadísticas oficiales por canal y persistencia: AMIS y CNSF (México), Fasecolda y Superfinanciera (Colombia), CMF (Chile) y SSN (Argentina).
 2. Abrir el estudio de demanda de Colombia: fecha, método y si distingue el canal digital.
-3. ~~Abrir los documentos de la licitación chilena~~ **Coloma (UC, 2019) leído completo el 2026-10-27** (F-1145; §16.1): tras la primera ronda de 105 licitaciones, desgravamen −62,1% e incendio y sismo −34,3%; la baja de −59,53% de §11.2 **no está** en ese documento. Falta leer la modificación de la NCG 330 de la CMF (2022).
+3. ~~Abrir los documentos de la licitación chilena~~ **Coloma (UC, 2019) leído el 2026-10-27 (resumen ejecutivo y búsqueda de cifras, no las 62 páginas)** (F-1145; §16.1): tras la primera ronda de 105 licitaciones, desgravamen −62,1% e incendio y sismo −34,3%; la baja de −59,53% de §11.2 **no está** en ese documento. Falta leer la modificación de la NCG 330 de la CMF (2022).
 4. ~~Abrir el brief de Milliman sobre microseguro de vida en México~~ **Leído completo el 2026-10-27** (F-1055; §16.1): es un estudio cualitativo de 32 familias aseguradas y 36 no aseguradas; **no mide renovación**.
 5. Seguir el efecto de la Res. SSN 435/2025 sobre las bajas.
 6. Buscar casos de seguro embebido con resultado (Nequi, Falabella, Mach, Ualá) en informes anuales o comunicados de resultados.
@@ -1126,7 +1126,7 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 ### 15.2 Qué se corrigió o se retira
 
 1. **La encuesta de McKinsey de 25.000 personas en 7 países se retira.** No la pude localizar. Lo verificado es otra: McKinsey con LIMRA, 1.000 consumidores en Chile, Colombia, México y Perú (marzo de 2022): valoran seguridad, confianza y tratar con una persona; y un estudio de 2022 en Perú que dejó a los seguros **en último lugar de satisfacción entre 20 industrias** (F-1144). Link del informe donde está: https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/insurance/global%20insurance%20report%202023%20capturing%20growth%20in%20latin%20america/global-insurance-report-2023-capturing-growth-in-latin-america-spanish.pdf
-2. **La licitación chilena tiene cifras que no coinciden:** −59,53% (F-1049, de un resultado de búsqueda; **no está en el documento de la UC**), ~−40% del costo total (boletín de la SVS, 2012-2013), −62,1% en desgravamen y −34,3% en incendio y sismo tras la primera ronda de 105 licitaciones (Coloma, leído completo) y −4,11% a −77,34% en 20 licitaciones **con 3 alzas** (CMF, 2022). La CMF también advierte que **bajó el interés de las aseguradoras**, es decir, menos competencia. La licitación **sí cambió el precio**, pero decir "el precio bajó" no dice que el deudor esté mejor.
+2. **La licitación chilena tiene cifras que no coinciden:** −59,53% (F-1049, de un resultado de búsqueda; **no está en el documento de la UC**), ~−40% del costo total (boletín de la SVS, 2012-2013), −62,1% en desgravamen y −34,3% en incendio y sismo tras la primera ronda de 105 licitaciones (Coloma, resumen ejecutivo) y −4,11% a −77,34% en 20 licitaciones **con 3 alzas** (CMF, 2022). La CMF también advierte que **bajó el interés de las aseguradoras**, es decir, menos competencia. La licitación **sí cambió el precio**, pero decir "el precio bajó" no dice que el deudor esté mejor.
 3. **El estudio de demanda colombiano es de 2018**, no de fecha desconocida.
 4. **Los microseguros peruanos tienen varias cifras que no concilian** (S/ 167 M y 5,8 M de asegurados en 2024 según la SBS vía PNUD; S/ 223 M y 4,8 M en 2023 según microfinanzas.pe; US$ 171,4 M y 9,8 M con una definición más amplia): ahora usa la de la SBS vía PNUD, leída completa (§16, F-882, F-1146).
 
@@ -1206,7 +1206,7 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 
 **Por qué quedaron pendientes.** Las primeras rondas priorizaron aseguradoras, insurtech y fintech con productos de seguro. Educación, servicios públicos, microfinanzas y retail se dejaron para después. **No hay un bloqueo**; faltaba tiempo y decidir cuáles importan más.
 
-**Qué hice ahora.** Una pasada corta sobre microfinanzas y retail del Perú, y después la lectura completa del informe del PNUD (§16): el microseguro peruano es casi todo seguro de saldo deudor vendido por bancos y microfinancieras. **No hallé oferta ni resultados de Mibanco, cajas municipales, Falabella o Ripley**; educación y servicios públicos **siguen sin cubrir**.
+**Qué hice ahora.** Una pasada corta sobre microfinanzas y retail del Perú, y después la lectura de las partes pertinentes del informe del PNUD (§16): el microseguro peruano es casi todo seguro de saldo deudor vendido por bancos y microfinancieras. **No hallé oferta ni resultados de Mibanco, cajas municipales, Falabella o Ripley**; educación y servicios públicos **siguen sin cubrir**.
 
 **Qué necesito de ti para avanzar bien.** (1) Cuáles te interesan más (propuesta priorizada en §16.7); (2) ~~el diagnóstico del PNUD~~ **ya aportado y leído** (§16); (3) si hay un estudio propio sobre canales (WhatsApp, app, web) con datos de uso, porque es lo único que cerraría la pregunta de WhatsApp.
 
@@ -1243,7 +1243,7 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 
 ## 16. Adenda v1.9 (2026-10-27): lectura de los documentos aportados (PNUD, McKinsey, UC, Milliman), Plin WhatsApp y propuesta de industrias
 
-**En corto.** (1) Retiro dos cifras de Plin WhatsApp que no pude confirmar (7.000 afiliados y 2,7 M de activos). (2) El informe del PNUD, leído completo, muestra que el microseguro peruano es **casi todo seguro de saldo deudor vendido por bancos y microfinancieras**, con siniestralidad de 16,7%: la base de "asegurados" sobre la que se habla de inclusión es en gran parte crédito. (3) Plin por WhatsApp **no tiene aún un caso de seguros publicado**; la oportunidad es una hipótesis que sale de que Interbank e Interseguro son del mismo grupo y de que los productos baratos caben en el límite del chat. (4) Propongo un orden de industrias análogas: **vehicular, salud, microseguros, IA y súper-apps**.
+**En corto.** (1) Retiro dos cifras de Plin WhatsApp que no pude confirmar (7.000 afiliados y 2,7 M de activos). (2) El informe del PNUD, leído en sus partes pertinentes, muestra que el microseguro peruano es **casi todo seguro de saldo deudor vendido por bancos y microfinancieras**, con siniestralidad de 16,7%: la base de "asegurados" sobre la que se habla de inclusión es en gran parte crédito. (3) Plin por WhatsApp **no tiene aún un caso de seguros publicado**; la oportunidad es una hipótesis que sale de que Interbank e Interseguro son del mismo grupo y de que los productos baratos caben en el límite del chat. (4) Propongo un orden de industrias análogas: **vehicular, salud, microseguros, IA y súper-apps**.
 
 ### 16.1 Lo que dicen los cuatro documentos
 
@@ -1343,7 +1343,7 @@ Tú nombraste banca y finanzas, microseguros, techs, IA, salud y vehicular. Mi p
 
 ### 16.8 Límites y pendientes
 
-**Límites.** El informe del PNUD, McKinsey, Coloma y Milliman se leyeron completos en lo que aquí se usa, pero la lectura de Coloma fue de resumen ejecutivo y búsquedas, no de las 62 páginas; las demás fuentes siguen siendo extractos; no pude abrir la web de Interbank; la pista social no se corrió.
+**Límites.** Los cuatro documentos aportados se leyeron **solo en las partes que aquí se usan** (PNUD: resumen ejecutivo, mercado de microseguros, percepción y recomendaciones; McKinsey: pasajes sobre consumidores, digital y Perú; Coloma: resumen ejecutivo y búsqueda de cifras; Milliman: la mayor parte), no página por página; las demás fuentes siguen siendo extractos; no pude abrir la web de Interbank; la pista social no se corrió.
 
 **Pendientes.** (1) Confirmar límites y alcance de Plin WhatsApp (si una aseguradora puede cobrar) con el banco; (2) leer la NCG 330 de la CMF (2022); (3) cifras de uso de Plin WhatsApp; (4) fuente del estudio peruano de 2022 de experiencia de cliente en 20 industrias (McKinsey no la cita); (5) las industrias priorizadas en §16.7.
 
