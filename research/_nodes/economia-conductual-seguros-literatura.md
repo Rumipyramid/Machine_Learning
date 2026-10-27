@@ -3,7 +3,7 @@
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.0
 > Origen: ampliación pedida por el usuario sobre `digitalizacion-seguros-mercados-emergentes` (§9.2 cubría solo el
-> tramo de pago, renovación y caducidad). Registro empírico y teórico (`/seeker`); sin pistas social ni de negocio.
+> tramo de pago, renovación y caducidad). Registro empírico y teórico con el método de `/seeker` aplicado a mano (no se invocó la skill ni `/trinidad`); sin pistas social ni de negocio.
 > Pregunta: más allá del pago, ¿qué sabemos de cómo las personas deciden sobre seguros?
 > Fuentes registradas en `research/fuentes/codice.md` (F-969 a F-980); reutiliza F-847 a F-852, F-921, F-938 a F-955,
 > F-958 y F-6, F-9, F-221, F-724 de otros nodes.
