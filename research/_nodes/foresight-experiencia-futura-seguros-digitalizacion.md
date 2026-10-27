@@ -1,12 +1,12 @@
 # Foresight: la experiencia futura de los seguros y la digitalización — preguntas profundas y radar de señales
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.2 (v1.2 suma §12: mapa de tendencias globales y de LATAM por pregunta abierta; v1.1 sumó §11: cuatro señales nuevas y actualización de la 14)
+> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.2 (v1.2 suma §12: mapa de tendencias globales y de LATAM por pregunta abierta, y §12.6 con cifras de la SBS y regulación peruana de 2026; v1.1 sumó §11: cuatro señales nuevas y actualización de la 14)
 > Origen: `/trinidad` (empírica/teórica + social + negocio) pedida por el usuario para reconstruir el radar de señales que se
 > retiró de `digitalizacion-seguros-mercados-emergentes` (§9.4). Pregunta de partida: *¿cuál es la experiencia futura de los
 > seguros y la digitalización?* y, detrás de ella, *¿cuáles son las preguntas más profundas?*
 > Fuentes registradas en `research/fuentes/codice.md` (F-981 a F-1006); reutiliza F-961 a F-965 (marco y señales de Perú),
-> F-442, F-851, F-852, F-869, F-875, F-877, F-879, F-881, F-884, F-888, F-901, F-905, F-913, F-923, F-928, F-929, F-934, F-936.
+> F-1099 a F-1112 (§12), F-442, F-851, F-852, F-869, F-875, F-877, F-879, F-881, F-884, F-888, F-901, F-905, F-913, F-923, F-928, F-929, F-934, F-936.
 > Solo fuentes públicas. Ningún material confidencial de clientes o empleadores se usó en este node.
 
 ---
@@ -403,23 +403,64 @@ Solidez: 🟢 con causalidad · 🔵 institucional o con método · 🟡 encuest
 
 ### 12.4 Discrepancias de las fuentes que conviene conocer
 
-- **Primas del sistema peruano:** las cifras de prensa no coinciden entre sí (S/19.915 M de 2024, S/24.520 M anualizadas a marzo de 2026); se miden de maneras distintas y hay que ver la definición antes de usarlas (F-1105).
-- **Resolución SBS 01747-2026:** las fuentes secundarias la describen como condiciones para abrir cuentas y créditos por plataformas digitales, no como un reglamento de productos digitales innovadores; **no se pudo confirmar** (F-1106).
+- **Primas del sistema peruano:** las cifras de prensa no coinciden porque miden cosas distintas. Al 1S 2026, las **primas** (que descuentan el ajuste por reservas técnicas) crecieron +1,1% hasta S/ 9.451 M, y las **primas netas** crecieron +8% hasta S/ 12.385 M (SBS, vía Gestión; F-1105). La diferencia es el ajuste por reservas, que pesa más en aseguradoras con rentas vitalicias. Aun así, hay que ver la definición antes de comparar con S/ 19.915 M de 2024 o S/ 24.520 M anualizadas a marzo de 2026. Es una explicación de la prensa; no la verifiqué en las tablas de la SBS.
+- **Resolución SBS 01747-2026 (corregido el 2026-10-27):** es el **Reglamento de Banking as a Service (BaaS)**, no un reglamento general de productos digitales innovadores ni solo de apertura de cuentas y créditos. Su lista de servicios incluye también **bancaseguros** (F-1111). Las dos descripciones de prensa que había leído eran parciales.
 - **Adopción de IA en LATAM:** 43% (Celent, de segunda mano) frente a 15%-20% en México (AMIS) no se concilian: miden países, definiciones y fechas distintos.
 
 ### 12.5 Límites y pendientes
 
-**Límites.** Todo se leyó por resumen. Las encuestas son de proveedores y consultoras. No se corrió la pista social. No se abrieron las normas peruanas.
+**Límites.** Todo se leyó por resumen o extracto. Las encuestas son de proveedores y consultoras. No se corrió la pista social. Las normas peruanas no se abrieron; se leyeron a través de análisis jurídicos y de un boletín de abogados.
 
 **Pendientes.**
 
-1. Estadísticas de la SBS por ramo y por compañía: primas, siniestralidad y gastos.
+1. Estadísticas de la SBS por ramo y por compañía: primas, siniestralidad y gastos (solo hay totales del sistema).
 2. Participación de los corredores y del canal digital en las primas peruanas.
-3. Texto de finanzas abiertas de la SBS: ¿incluye seguros?
+3. Texto completo del reglamento BaaS y de la norma de finanzas abiertas: ¿puede una aseguradora ser proveedora o receptora, o solo entra por bancaseguros?
 4. Desglose de impulsores del costo médico para LATAM en el informe de WTW.
 5. Verificar Celent frente a AMIS sobre uso de IA.
+6. Abrir el PDF de Moody's Local (abril de 2026): la cifra de primas totales de 2025 no se localizó en los extractos.
+7. Leer en la norma original si el reglamento de la Ley 31814 trata la tarificación de seguros como IA de alto riesgo.
 
----
+### 12.6 Actualización SBS y regulación peruana (2026-10-27)
+
+**Fuentes.** Boletín de Pérez-Llorca del tercer trimestre de 2026 (sección de Perú y carta inicial; F-1110), reglamento BaaS (F-1111) e informe de Moody's Local (F-1112). El boletín es de un estudio de abogados que resume normas para sus clientes (🟡 C); lo usé para saber qué normas existen y qué dicen en lo grueso, no para citarlas.
+
+**El mercado en cifras (medidas distintas, no mezclar):**
+
+| Medida | Cifra | Fuente | Nota |
+|---|---|---|---|
+| Primas, 1S 2026 (descuentan reservas) | S/ 9.451 M, +1,1% | SBS vía Gestión (F-1105) | Mide menos que las primas netas |
+| Primas netas, 1S 2026 | S/ 12.385 M, +8% | SBS vía Gestión (F-1105) | |
+| Utilidad neta conjunta, 1S 2026 | S/ 1.391 M, +7,5% | SBS vía Gestión (F-1105) | 7 de 17 empresas a la baja y una con pérdidas |
+| Primas netas anualizadas, mar-2026 | S/ 24.520 M, +8,8% | APESEG vía Gestión (F-1105) | |
+| Siniestralidad retenida | 39,30% a fines de 2025 (42,19% en 2024); 40,6% al 1T 2026 | Moody's Local (F-1112); APESEG (F-1105) | Moody's espera peor siniestralidad en 2026 por un posible Niño |
+| Resultado técnico 2025 | −13,64% | Moody's Local (F-1112) | Más comisiones, gastos técnicos y siniestros |
+| Crecimiento esperado 2026 | 8%-9% | Moody's Local (F-1112) | Proyección, no dato |
+| Penetración y densidad | ~2% del PBI; ~US$ 203 por habitante | Moody's Local vía Gestión | |
+
+**Lectura (inferencia mía).** Las primas netas crecen, pero lo que queda después de reservas, comisiones y siniestros se aprieta (resultado técnico de 2025 en −13,64%). Ese es el contexto en que se decide cuánto invertir en digitalizar. Esto es coherente con la pregunta 2 de §12.2 (¿dónde está el dinero?), pero con totales del sistema no se puede decir qué ramo o qué empresa lo explica.
+
+**Normas peruanas de 2026 que tocan lo digital** (según el boletín; sin abrir los textos):
+
+| Norma | Qué hace | Por qué importa a la experiencia digital | Estado |
+|---|---|---|---|
+| Res. SBS 01747-2026 (BaaS) | Una plataforma no financiera se alía con un banco o caja para ofrecer cuentas, créditos, tarjetas y bancaseguros; el banco o caja sigue respondiendo ante el cliente | Es la vía por la que el seguro podría venderse dentro de apps ajenas, con el banco o caja como responsable (pregunta 10, *embebido*) | Vigente 180 días después de su publicación (hacia fines de dic-2026, cálculo mío) |
+| Res. SBS 1029 y 1923-2026 (infracciones) | El deber de asesorar abarca oferta, suscripción, ejecución, reclamo y cobro; la intermediación a distancia debe informar del producto y del derecho de arrepentimiento; el rechazo de cobertura se comunica con su sustento | Lo digital queda bajo supervisión de conducta en todo el ciclo, no solo en la venta | Vigentes |
+| Res. SBS 2260-2026 (paramétricos) | Reglamento de seguros paramétricos solo para riesgos climáticos y de la naturaleza; aviso de activación en 2 días y pago en 10 días calendario; sin deducibles ni coaseguro | Primer marco para pago automático por umbral, pero **el público inicial no es el minorista** (organismos públicos, corporativos, grandes empresas) | Vigente |
+| Proyecto de ley de delegación (28-ago) | Activación paramétrica de compensaciones del FOGASA y base legal para consultar identidad en RENIEC | La verificación de identidad en línea es un cuello de botella de la contratación digital | **Solo proyecto**, sin aprobar |
+| Res. SBS 2133-2026 (autorización de empresas) | Tres modalidades de autorización, precalificación y menos plazos | Probablemente baja la barrera de entrada: la SBS autorizó a Nacional de Seguros como la aseguradora n.º 18 (Res. 1317-2026) | Vigente |
+| Proyecto de gestión actuarial (Res. 1771-2026) | Calidad de datos, actuario designado, backtesting y juicio experto regulado | Los modelos de tarificación y de datos alternativos tendrían que ser documentados y auditables (pregunta 11) | **Solo consulta pública** |
+| Reglamento de la Ley 31814 (IA, set-2025) | Marco general de IA con niveles de riesgo, usos prohibidos y de alto riesgo | Regula la IA en general; el boletín **no dice** si cubre la tarificación de seguros | Vigente |
+
+**En la región (según el boletín):** la UE trata como alto riesgo la IA de tarificación en seguros de vida y salud de personas; Colombia tiene la política CONPES 4144 y un proyecto de ley inspirado en el reglamento europeo; México regula con la Circular Única de la CNSF y la ley de protección de datos, sin ley general de IA. **Inferencia mía:** Perú y la UE tienen norma aplicable hoy; Colombia y México todavía no.
+
+**Qué cambia para las preguntas abiertas.**
+
+1. *¿Quién tiene la relación?* (pregunta 4) El BaaS abre una vía legal para que la relación la tenga una plataforma ajena, pero con el banco o caja como responsable. Si una aseguradora puede ser proveedora o solo entra por bancaseguros, no se sabe.
+2. *¿Qué se vende digital?* (pregunta 8) Los paramétricos entran por empresas, no por personas: el seguro paramétrico minorista que se discute por el Niño no tiene aún reglamento propio.
+3. *Regulación de datos e IA* (pregunta 11) Hay norma general de IA vigente y un borrador actuarial que exige calidad de datos; falta saber cómo se aplican a la tarificación.
+
+**Casos de INDECOPI que muestran por dónde se disputa lo digital** (sobre decisiones de primera instancia, resumidas por el boletín): una aseguradora alegó que el cliente eligió una cobertura por su canal de comercio electrónico y que le avisó del cambio por correo un día después del siniestro; la comisión no encontró pruebas de la negativa de cobertura y declaró prescrita la modificación unilateral, pero dejó la vía judicial abierta. Es un solo caso; indica que la **prueba de lo que el cliente vio y aceptó en un canal digital** es un tema de litigio, no que sea frecuente.
 
 ## Conexiones
 
