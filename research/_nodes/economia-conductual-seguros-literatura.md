@@ -150,3 +150,4 @@ sano** (la confianza en el pago es un requisito previo).
   intermediario que aquí se matiza con F-977.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — selección adversa y riesgo moral en salud (F-951,
   F-980 aportan evidencia).
+- [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — qué de esta base conductual (confianza, elección, asesoría) condiciona las experiencias futuras (P1, P3).

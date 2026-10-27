@@ -657,3 +657,4 @@ Son hipótesis de diseño, no resultados. El análogo del "pago mínimo" en segu
   simular con sus variables (informalidad, bancarización, acceso digital, confianza).
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado de replicación de la aversión a la pérdida y del anclaje que usan las láminas de pago (§9.1); ahí está F-724 (mayor en mayores).
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — el resto del ciclo de decisión (demanda, elección, confianza, asesoría, selección, ahorro) que aquí no se cubre.
+- [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — radar de 23 señales, preguntas profundas y escenarios a 2035 (reemplaza al radar que se retiró de este node).

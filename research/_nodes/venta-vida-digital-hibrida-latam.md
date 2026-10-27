@@ -232,3 +232,4 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
   regional es la misma apuesta que ya está validando el proyecto.
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — suma evidencia causal de demanda, el barrido de la oferta peruana y los criterios de las tres definiciones basales.
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — el sesgo del consejo por comisión (F-977) matiza el rol del corredor.
+- [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — escenarios a 2035 sobre quién posee la relación con el cliente (P6).

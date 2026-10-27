@@ -78,3 +78,4 @@ tienen simulación de consumidores calibrada con microdato nacional, no solo sup
 
 [^1]: `research/personas/generador/matriz_usuarios_sinteticos.md` §2-3, notas v1.1-v1.3; medido
     con `validate.py --check`.
+- [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — escenarios y experiencias futuras que se pueden simular con las variables de `lapuerta`.

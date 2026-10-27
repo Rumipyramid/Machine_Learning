@@ -353,3 +353,4 @@ Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farma
 - [[conducta-humano-ia|Conducta humano-IA]] — el UBI/telemática (F-442) se consolida allí como caso causal de cambio de conducta, con el matiz de que el programa fue simulado.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — contraste de Discovery Vitality con lo que se sabe de programas de recompensa en retail (efecto pequeño tras corregir autoselección).
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — selección con dos dimensiones y elección de planes en salud.
+- [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — tensión entre personalización y solidaridad en salud (P2).

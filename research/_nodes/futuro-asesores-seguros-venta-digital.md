@@ -387,3 +387,4 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — extiende el patrón híbrido a mercados emergentes y a intervenciones conductuales (F-847 a F-914).
+- [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — qué queda humano en una experiencia asistida por IA (P7).
