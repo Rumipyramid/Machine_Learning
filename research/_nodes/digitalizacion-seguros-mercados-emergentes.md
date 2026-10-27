@@ -7,7 +7,7 @@
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098; §14: F-1125 a F-1131). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098; §14: F-1125 a F-1132). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -1034,7 +1034,7 @@ Todo se leyó por resumen de búsqueda. Las encuestas son de proveedores o consu
 
 ## 14. Adenda v1.7 (2026-10-27): benchmark de canales digitales aportado por la persona usuaria
 
-**En corto.** El benchmark (19 láminas, set-2026) dice dos cosas. Una es de conducta: la gente declara querer más servicios, datos compartidos y IA, pero lo que hace es mucho menor, y el seguro se usa unas 2,7 veces al año. La otra es de diseño: las webs son puertas de decisión y las apps concentran el uso continuo. Verifiqué las cifras contra las fuentes que pude abrir: **la parte conductual se sostiene en lo esencial, pero seis cifras no se confirmaron y la tesis de diseño es una lectura del equipo sin datos de uso.** Todo está registrado en el ledger (F-1125 a F-1131). Lo leí por láminas; verifiqué cada fuente por resumen o extracto.
+**En corto.** El benchmark (19 láminas, set-2026) dice dos cosas. Una es de conducta: la gente declara querer más servicios, datos compartidos y IA, pero lo que hace es mucho menor, y el seguro se usa unas 2,7 veces al año. La otra es de diseño: las webs son puertas de decisión y las apps concentran el uso continuo. Verifiqué las cifras contra las fuentes que pude abrir: **la parte conductual se sostiene en lo esencial; las cifras de Accenture y Capgemini ya se confirmaron con los informes originales (una está mal atribuida), varias otras siguen sin confirmar, y la tesis de diseño es una lectura del equipo sin datos de uso.** Todo está registrado en el ledger (F-1125 a F-1132). Lo leí por láminas; verifiqué cada fuente por resumen o extracto.
 
 ### 14.1 Qué es el documento y cómo lo traté
 
@@ -1046,8 +1046,9 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 | Solo 8% a 21% comparte datos de dispositivos; uso real de 4,3% (Brasil) y 1,6% (Países Bajos) | Bain 2023 | ✗ No confirmadas. Bain dice que pocos comparten datos, pero no hallé esas cifras |
 | Autoevaluación y conocimiento real casi sin relación (r=0,128); R=0,67 y 0,64 con confianza e intención | Luna-Cortés y Brady, 2024 | ◐ El resumen confirma que no hay relación entre ambos y que la educación sube confianza e intención; **las cifras de correlación no se confirmaron** (F-1126) |
 | 72% de los mercados emergentes nunca tuvo educación formal en seguros | "Ranasinghe et al., 2019, *Sustainability*" | ✗ **No localizado.** El artículo más parecido de ese año en esa revista es de Weedige y colegas (Sri Lanka, n=300) y no trae ese dato |
-| 60%, 58% y 63% compartirían más datos por rapidez, asesoría o transparencia | Accenture 2023 (n=49.000) | ◐ Se confirma la muestra (33 mercados, campo jul-ago de 2022) pero no las cifras (F-1131) |
-| 53% se preocupa por cuántos datos se recogen; 42% ve la contratación "compleja y larga"; 27% cambió de proveedor | Capgemini 2024 (n=3.323) y fuente no visible | ✗ No confirmadas |
+| 60% y 58% compartirían mucha información por servicios más rápidos o por asesoría más relevante | Accenture 2023 (n=49.000) | ✔ **Confirmadas** con el informe original (F-1131) |
+| 63% compartiría más datos por transparencia y descuentos | Accenture 2023 | ✗ **Mal atribuida:** es de **Capgemini 2024** y la frase completa añade "y la seguridad de que su información está protegida" (F-1132) |
+| 53% se preocupa por cuántos datos recogen; 42% ve la contratación "compleja y larga"; 27% cambió de proveedor | Capgemini 2024 (n=3.323) | ✔ **Confirmadas** con el informe original, con matices: el 42% habla del proceso de **suscripción**, y el 27% es de líneas personales de **seguros generales** (F-1132) |
 | 26% de los peruanos en nivel alcanzado de inclusión financiera (15% en 2021) | Credicorp, IIF 2024 | ✔ Confirmada (F-1130). **Hay una edición posterior con 29% y 47,7 puntos** |
 | 35% nivel bajo, 39% en progreso, 58% con billetera móvil | Credicorp, IIF 2024 | ✗ No confirmadas; una búsqueda sugiere que el 58% podría ser de otro país |
 | 24 de cada 100 peruanos tienen algún seguro; solo 3% de los hogares tiene seguro de desastres | Credicorp, APESEG vía Infobae, Swiss Re | ◐ El 3% coincide con el 3,3% que ya tenemos; el 24% no se halló |
@@ -1063,7 +1064,9 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 1. **El techo de uso del seguro es la frecuencia.** Se necesita algo de la aseguradora unas 2,7 veces al año, frente a cientos de interacciones en una billetera. La comparación con Yape no es válida mientras no se aclare la unidad. Las aseguradoras que multiplicaron interacciones lo hicieron con programas de bienestar (Vitality, John Hancock), pero ambas cifras son autorreportadas y Vitality tiene caducidad documentada del engagement (F-1027, F-99). Es consistente con la tesis de recurrencia de F-1020, no la prueba.
 2. **Interés declarado frente a uso real.** El 59% que quiere recompensas por vivir sano es la actitud; los datos de uso del benchmark serían de un dígito, pero **no pude confirmar esas cifras**. Es el mismo patrón de la brecha entre actitud y conducta que ya teníamos (F-1095).
 3. **La alfabetización importa y la autoevaluación no sirve para medirla.** Es el hallazgo mejor sostenido del benchmark: una escala objetiva y un experimento (F-1126). **Pero es de seguro de viaje.** Extenderlo a seguros de vida, salud o autos es una hipótesis. Para el diseño: no preguntar "¿cuánto sabes de seguros?" como filtro del onboarding.
-4. **"Dan datos a cambio de algo" es intención, no conducta.** Las tres cifras de 58% a 63% son de una encuesta de disposición. Cuando el mismo benchmark muestra que solo una fracción comparte datos de dispositivos, la lectura "intercambio explícito" queda como hipótesis. **La lámina 7 contradice a la 5 si se la lee como conducta.**
+4. **"Dan datos a cambio de algo" es intención, no conducta, y viene de dos encuestas distintas.** Los 58% y 60% son de Accenture (consumidores con cuenta bancaria y al menos un seguro, campo en 2022) y el 63% es de Capgemini (asegurados de seguros generales, campo en 2024). Preguntan por disposición, no por lo que hacen. Los mismos informes traen la otra cara que la lámina recorta: **76% se preocupa por cómo las empresas usan sus datos** (Accenture, 3 puntos más que antes) y **53% por cuántos datos recogen sus aseguradoras** (Capgemini). Cuando el benchmark muestra que pocos comparten datos de dispositivos (Bain), la lectura "intercambio explícito" queda como hipótesis. **La lámina 7 contradice a la 5 si se la lee como conducta.**
+   - **Una limitación para Perú:** la muestra de Accenture exige tener cuenta bancaria y un seguro; no incluye a quien no tiene ninguno. Con tres de cada cuatro peruanos sin seguro en el benchmark, esa es justo la población que no está representada.
+   - **Cambiar de proveedor es sobre todo por precio:** entre quienes cambiaron, 60% buscaba primas más bajas y 53% mejor cobertura (Capgemini). Que 27% haya cambiado no dice que el canal digital sea un diferenciador.
 5. **"El digitalizable es el 39%" es una etiqueta del equipo.** El 26% alcanzado está confirmado; el resto no. Lo que el índice llama "en progreso" (tiene productos, usa efectivo) no mide qué porcentaje aceptaría un seguro digital. Hay una edición posterior (29%) que conviene usar. También hay otras medidas de acceso que no coinciden: 67% con cuenta o billetera (SBS, F-936) y 59% con cuenta (Global Findex, F-880).
 6. **"Tres de cada cuatro peruanos no son clientes de nadie" (24%) no coincide con la base actual** (~4 de cada 10 tiene o tuvo seguro en dos años). Las dos medidas no tienen la misma definición (personas u hogares, algún seguro hoy o en dos años, con o sin SOAT). Hasta conciliarlas, usar las dos como rango y no una sola.
 7. **IA: aceptan que asista, no que decida.** Es la lectura más sólida. Los mecanismos (resistencia por "no considera lo que me hace único", control percibido, costo de revelar) son reales pero vienen de IA médica, pronósticos y ventas por llamada. **No hay evidencia conductual peruana de IA en seguros**, igual que ya registraba el node de conducta humano-IA. El matiz de Luo: el bot sin declarar rindió como un vendedor experto, y declarar su identidad hoy se exige en varios marcos; el costo de revelarlo es un dato de diseño, no una razón para ocultarlo.
@@ -1098,7 +1101,7 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 1. Cifras de Bain sobre uso real de prevención y de datos de dispositivos (4,3%, 1,6%, 8% a 21%).
 2. Correlaciones de Luna-Cortés y Brady, y si la escala se aplicó a otros seguros.
 3. El 72% de educación formal en seguros: localizar la fuente original (la cita "Ranasinghe 2019" no apareció).
-4. Cifras de Accenture 2023 y de Capgemini 2024 (60%, 58%, 63%, 53%, 42%, 27%).
+4. ~~Cifras de Accenture y Capgemini~~ **Resuelto el 2026-10-27** con los informes originales (ver §14.1).
 5. Origen del 2,7 y del NPS de 90 puntos, y la unidad de la cifra de Yape.
 6. Edición posterior del índice de inclusión de Credicorp, con 29%.
 7. El 24% con seguro: Swiss Re y APESEG.
