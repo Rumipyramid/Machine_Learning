@@ -22,6 +22,7 @@
 | 2026-10-27 | recuperacion | juicio acumulado en preguntas de prioridad + 4 preguntas nuevas | nodo correcto 100% · fuente clave 100% |
 | 2026-10-27 | recuperacion | juicio acumulado (secciones de síntesis y criterio) | nodo correcto 100% · fuente clave 100% |
 | 2026-10-27 | recuperacion | juicio acumulado también en comparaciones | nodo correcto 100% · fuente clave 100% |
+| 2026-10-27 | respuestas | dos pasos + juicio acumulado (24 preguntas) | puntaje medio 98 · 0 con fuentes inventadas · 0 con afirmaciones prohibidas · 5 con respaldo firme |
 
 ## Última corrida de recuperacion (2026-10-27)
 
@@ -52,12 +53,12 @@
 | Q23 | sí | — | transicion-venta-fria-a-opt-in, diseno-servicios-politicas-salud, tendencias-diseno-innovacion |
 | Q24 | sí | sí | conducta-humano-ia, convergencia-psicologia-economia-ia, evaluacion-calidad-agentes-conversacionales-ia |
 
-## Última corrida de respuestas (2026-10-25)
+## Última corrida de respuestas (2026-10-27)
 
 | Pregunta | Puntaje | Ideas | Respaldo | Problemas |
 |---|---|---|---|---|
 | Q01 | 100 | 4/4 | parcial | — |
-| Q02 | 100 | 3/3 | parcial | — |
+| Q02 | 100 | 3/3 | firme | — |
 | Q03 | 100 | 2/2 | parcial | — |
 | Q04 | 100 | 3/3 | firme | — |
 | Q05 | 100 | 3/3 | parcial | — |
@@ -67,7 +68,7 @@
 | Q09 | 100 | 2/2 | firme | — |
 | Q10 | 75 | 1/2 | firme | faltan: (orch/penrose/hameroff) |
 | Q11 | 100 | 3/3 | parcial | — |
-| Q12 | 100 | 2/2 | parcial | — |
+| Q12 | 100 | 2/2 | firme | — |
 | Q13 | 100 | 2/2 | parcial | — |
 | Q14 | 100 | 2/2 | parcial | — |
 | Q15 | 100 | 2/2 | parcial | — |
@@ -76,3 +77,7 @@
 | Q18 | 100 | 2/2 | parcial | — |
 | Q19 | 100 | 1/1 | parcial | — |
 | Q20 | 100 | 2/2 | parcial | — |
+| Q21 | 100 | 3/3 | parcial | — |
+| Q22 | 100 | 3/3 | parcial | — |
+| Q23 | 100 | 3/3 | parcial | — |
+| Q24 | 100 | 3/3 | parcial | — |
