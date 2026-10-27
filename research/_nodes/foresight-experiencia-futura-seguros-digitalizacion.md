@@ -1,12 +1,12 @@
 # Foresight: la experiencia futura de los seguros y la digitalización — preguntas profundas y radar de señales
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.2 (v1.2 suma §12: mapa de tendencias globales y de LATAM por pregunta abierta, y §12.6 con cifras de la SBS y regulación peruana de 2026; v1.1 sumó §11: cuatro señales nuevas y actualización de la 14)
+> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.2 (v1.2 suma §12: mapa de tendencias globales y de LATAM por pregunta abierta, §12.6 con cifras de la SBS y regulación peruana de 2026, §12.7 sobre finanzas abiertas y §12.8 sobre seguros en Yape; v1.1 sumó §11: cuatro señales nuevas y actualización de la 14)
 > Origen: `/trinidad` (empírica/teórica + social + negocio) pedida por el usuario para reconstruir el radar de señales que se
 > retiró de `digitalizacion-seguros-mercados-emergentes` (§9.4). Pregunta de partida: *¿cuál es la experiencia futura de los
 > seguros y la digitalización?* y, detrás de ella, *¿cuáles son las preguntas más profundas?*
 > Fuentes registradas en `research/fuentes/codice.md` (F-981 a F-1006); reutiliza F-961 a F-965 (marco y señales de Perú),
-> F-1099 a F-1112 (§12), F-442, F-851, F-852, F-869, F-875, F-877, F-879, F-881, F-884, F-888, F-901, F-905, F-913, F-923, F-928, F-929, F-934, F-936.
+> F-1099 a F-1117 (§12), F-442, F-851, F-852, F-869, F-875, F-877, F-879, F-881, F-884, F-888, F-901, F-905, F-913, F-923, F-928, F-929, F-934, F-936.
 > Solo fuentes públicas. Ningún material confidencial de clientes o empleadores se usó en este node.
 
 ---
@@ -415,7 +415,7 @@ Solidez: 🟢 con causalidad · 🔵 institucional o con método · 🟡 encuest
 
 1. Estadísticas de la SBS por ramo y por compañía: primas, siniestralidad y gastos (solo hay totales del sistema).
 2. Participación de los corredores y del canal digital en las primas peruanas.
-3. Texto completo del reglamento BaaS y de la norma de finanzas abiertas: ¿puede una aseguradora ser proveedora o receptora, o solo entra por bancaseguros?
+3. Texto completo del reglamento BaaS y de la norma de finanzas abiertas: ¿puede una aseguradora ser proveedora o receptora, o solo entra por bancaseguros? (el calendario general ya está en §12.7)
 4. Desglose de impulsores del costo médico para LATAM en el informe de WTW.
 5. Verificar Celent frente a AMIS sobre uso de IA.
 6. Abrir el PDF de Moody's Local (abril de 2026): la cifra de primas totales de 2025 no se localizó en los extractos.
@@ -461,6 +461,63 @@ Solidez: 🟢 con causalidad · 🔵 institucional o con método · 🟡 encuest
 3. *Regulación de datos e IA* (pregunta 11) Hay norma general de IA vigente y un borrador actuarial que exige calidad de datos; falta saber cómo se aplican a la tarificación.
 
 **Casos de INDECOPI que muestran por dónde se disputa lo digital** (sobre decisiones de primera instancia, resumidas por el boletín): una aseguradora alegó que el cliente eligió una cobertura por su canal de comercio electrónico y que le avisó del cambio por correo un día después del siniestro; la comisión no encontró pruebas de la negativa de cobertura y declaró prescrita la modificación unilateral, pero dejó la vía judicial abierta. Es un solo caso; indica que la **prueba de lo que el cliente vio y aceptó en un canal digital** es un tema de litigio, no que sea frecuente.
+
+### 12.7 Finanzas abiertas (open banking y open insurance): qué hay (2026-10-27)
+
+**En corto.** La banca abierta va primero en todos lados y el seguro abierto va detrás. Brasil es el único caso con open insurance funcionando y no hay cifras públicas de beneficio para el consumidor. En Perú, los seguros entrarían hacia 2029; antes llegan el reglamento BaaS (fines de 2026) y la banca abierta (2028). Es lo que alcancé a leer en extractos y notas de prensa; las fechas discrepan entre fuentes.
+
+| País | Estado | ¿Entran los seguros? | Fuente |
+|---|---|---|---|
+| **Brasil** | Open Insurance en operación desde la Resolución CNSP 425/2021, supervisado por la Susep; la Res. Susep 61/2025 afina el modelo; el grupo de trabajo se prorrogó un año (2026) con foco en simplificar el consentimiento | **Sí, ya** (obligatorio al inicio para las aseguradoras más grandes) | F-1115 |
+| **Colombia** | Decreto 368 de 2026: finanzas abiertas obligatorias para las entidades vigiladas; el cronograma de estandarización se ampliaría 6 meses (según un solo boletín de bufete) | **Sí, por decreto**; su hoja de ruta se fija en el cronograma de la SFC | F-1114 |
+| **Chile** | NCG 514 de 2024; la entrada prevista para jul-2026 se propone mover a jul-2027 | Sin calendario para aseguradoras | F-1050 |
+| **México** | Ley Fintech de 2018; reglas de datos abiertos pendientes | No se halló norma para seguros | búsqueda sin fuente registrada |
+| **Perú** | Hoja de ruta de la SBS (feb-2026) en cuatro fases: regulación y estándares 2026-2027, banca abierta 2027-2029, finanzas abiertas desde 2029; consulta del reglamento general en curso (octubre-noviembre de 2026) | **Después de la banca**: seguros, pensiones, cooperativas y fintechs "desde 2029", sin lista de aseguradoras | F-1113 |
+
+**Qué muestran las tendencias (inferencias mías).**
+
+1. **El seguro abierto llega tarde y sin prueba de beneficio.** El único indicador público de Brasil son las llamadas técnicas a las APIs (de 8,4 M a 15,2 M entre 2023 y 2024). Eso mide uso técnico, no consentimientos ni mejores ofertas. El propio comité del sistema pide convertir los datos compartidos en servicios útiles para el consumidor (F-1115).
+2. **El consentimiento es un problema de diseño de conducta.** Que Brasil priorice "simplificar el trayecto de consentimiento" indica fricción. No encontré tasas de consentimiento en seguros. Es una hipótesis para probar, no un hallazgo.
+3. **Para una aseguradora peruana, lo primero que cambia no es el open finance.** Orden probable: (a) reglamento BaaS, vigente hacia fines de 2026, que permite vender bancaseguros dentro de apps ajenas (F-1111); (b) banca abierta desde 2028, que le da a los bancos datos transaccionales del cliente (F-1113); (c) seguros abiertos hacia 2029, si se cumple el calendario. La obligación para las aseguradoras llega al final. Es una lectura del calendario, y el calendario puede moverse.
+4. **Quien tenga los datos bancarios tendrá ventaja para ofrecer seguros.** Es plausible, no probado: con consentimiento, un banco o una billetera podría ajustar la oferta a ingresos y gastos. Las aseguradoras sin banco no verían esos datos hasta el seguro abierto.
+5. **Colombia es el caso regional más cercano de obligación para aseguradoras y corredores.** Su cronograma, aún por publicar, mostrará cómo se implementa en seguros.
+
+**Pendiente de verificar.** El texto de los lineamientos y del reglamento (qué datos de seguros y cuándo); si las fechas de comentarios son las de la SBS o las de la prensa; el Decreto 1489 de Colombia (solo hay un boletín); consentimientos reales del Open Insurance de Brasil.
+
+### 12.8 Seguros que se venden por Yape: qué cambia y qué todavía no se sabe (2026-10-27)
+
+**En corto.** Cambia la distribución y quién tiene la relación con el cliente. Todavía no se sabe si cambia la economía del seguro: no hay cifras públicas de ventas por Yape, renovación ni siniestralidad.
+
+**Lo observado (dato).**
+
+- **Qué se vende.** En la app hay seguros de vida (S/ 5,99 al mes por S/ 10.000), de salud (S/ 9,90 con teleconsultas y S/ 500 por hospitalización), de robo del celular (desde S/ 4,90), de fraude en cuentas Yape y BCP (S/ 4,99 por hasta S/ 3.500), SOAT y uno para emprendedores. La aseguradora es Pacífico. Los precios vienen de notas de 2024-2025 y pueden haber cambiado (F-1116).
+- **Quién es el dueño.** Yape, el BCP y Pacífico pertenecen al mismo grupo (Credicorp). Los reportes de Credicorp incluyen *insurtech* dentro de una cartera de innovación que pesó 8,1% de los ingresos ajustados por riesgo en el 4T25 (F-529).
+- **Escala del canal.** Entre 15,9 M y 17 M de usuarios activos según la fuente y la fecha; Credicorp reporta 16,4 M y un ingreso por usuario de S/ 10,3 (+65%), sin decir cuánto viene de seguros (F-1117, F-936).
+- **Resultados de seguros.** Un publirreportaje dice que la alianza llegó a más de un millón de clientes de Pacífico, sin separar por producto ni año. La meta de salud era de 30.000 afiliados en el primer año, cerca de 0,18% de los usuarios (F-888). El resultado de suscripción de seguros de Credicorp cayó 9,1% en el 2T26 por líneas comerciales, autos y vida, no por Yape (F-1117).
+
+**Lo que cambia (inferencias mías, ordenadas de más a menos firmes).**
+
+1. **El costo de llegar al cliente baja casi a cero.** El seguro se ofrece en una pantalla que el usuario ya abre cada día, con precios de microproducto. Es inferencia desde la oferta; no conozco el costo real de adquisición.
+2. **La relación queda en la billetera, que es del mismo grupo.** Esto encaja con el escenario *seguro como accesorio barato* del 2×2 de §6: la billetera posee la relación y la confianza en el pago del siniestro es baja. No hallé aseguradoras competidoras vendiendo dentro de Yape ni si hay exclusividad; solo no las encontré. Tampoco encontré seguros de otras aseguradoras en Plin o en billeteras de otros bancos.
+3. **El producto se diseña alrededor de un riesgo cotidiano.** Celular robado, fraude en la propia cuenta, una atención médica por teléfono. Son riesgos que la persona ve ese mismo día, no seguros de vida o salud completos. Es un cambio de producto, no solo de canal.
+4. **El cobro se mueve a la billetera.** Pacífico ya cobra pólizas por Yape, y la Ley 32413 (sueldo en billetera) acerca el cobro al día de pago (F-964). Es una hipótesis de cobranza que no probé con datos de morosidad.
+5. **La regulación pesa más sobre quien vende en la app.** La SBS amplió el deber de asesorar a toda la vida del contrato, y la venta a distancia debe informar del producto y del derecho de arrepentimiento (F-1110). Con el BaaS, el banco o caja responde ante el cliente aunque la plataforma lo venda (F-1111).
+
+**Lo que probablemente no cambia (hipótesis).** Que la persona confíe en que le pagarán el siniestro, y que renueve. No encontré ningún estudio independiente de renovación o siniestralidad de seguros embebidos en billeteras; solo blogs de proveedores con cifras propias. En otros países hay escala de pólizas (GCash tiene 51,4 M de pólizas con 76% de clases D y E, cifra de la empresa; F-896) pero tampoco publican renovación ni siniestralidad.
+
+**Cómo leer la cifra "más de un millón de clientes".** Es un conteo acumulado, sin período, producto ni pago. Un cliente con una póliza de S/ 4,90 que no se renueva cuenta igual. Eso no dice cuántas pólizas siguen vigentes, cuántos eran nuevos en seguros ni cuánta prima se cobra.
+
+**Qué mediría para saber si cambia el juego** (con datos propios, no públicos):
+
+| Pregunta | Indicador | Por qué |
+|---|---|---|
+| ¿Llega a gente nueva? | Parte de compradores sin seguro previo | Distingue inclusión de canibalización |
+| ¿Se queda? | Persistencia al mes 13 frente al mismo producto por otro canal | La venta es un momento; la renovación es la relación |
+| ¿Cumple la promesa? | Siniestros reclamados, pagados y tiempo de pago | La confianza se juega en el pago |
+| ¿Es por el canal o por quien compra? | Prueba con grupo que no ve la oferta (aleatorio) | Sin eso, compra y persistencia se confunden con quién elige comprar |
+| ¿Cuánto cuesta? | Costo de adquisición, comisión a la plataforma y gasto de servicio por póliza | El precio de S/ 4,90 solo funciona con costos mínimos |
+
+**Límites de esta sección.** Todo se leyó por páginas comerciales, publirreportajes y resúmenes de resultados. No se corrió la pista social (qué dicen los usuarios de Yape sobre estos seguros). No se verificó exclusividad ni cuántas pólizas siguen vigentes.
 
 ## Conexiones
 
