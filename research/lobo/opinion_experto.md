@@ -6090,6 +6090,27 @@ F-802 (Nunes y Drèze, *Journal of Consumer Research* 32(4), 2006). Experimento 
 - **Leído a fondo:** 2026-10-26 (`WebSearch`; ficha de IDEAS/RePEc y notas secundarias; lectura débil, declarada)
 - **Conexión razonada, no forzada:** consistente con la tesis 28 (el programa bien diseñado mueve más que el juego); sin cambio de confianza.
 
+### 241. La IA generativa sube mucho el desempeño del novato y casi nada el del experto: sirve para difundir el saber de los mejores, no para reemplazarlos
+F-580 (Brynjolfsson, Li y Raymond, *Quarterly Journal of Economics* 140(2), 2025). Cuasiexperimento con despliegue escalonado en una empresa de software: un asistente de chat sugiere respuestas a los agentes de soporte. Resultado: +14% de casos resueltos por hora en promedio, +34% en novatos y poco efecto en expertos. Los autores lo explican así: la herramienta transmite lo que hacen los mejores. El ledger dice 5.172 agentes; la versión de trabajo hablaba de 5.179. Hoy no pude verificar la cifra final en la revista.
+**Heurística:** antes de comprar una herramienta de IA para un equipo comercial o de siniestros, preguntar quién gana más. Si gana el novato, el valor está en nivelar hacia arriba y en retener; si el equipo ya es experto, el retorno será pequeño. Es un solo sitio y una sola empresa: no lo traslado a Perú sin piloto.
+- **Fuente:** F-580 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-27 (`WebSearch`; fichas de NBER, SSRN y reseñas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la intuición 239 (el experto sigue menos el consejo algorítmico); sin cambio de confianza en ninguna tesis.
+
+### 242. Un modelo de lenguaje que "responde como el público" se equivoca justo con ciertos grupos, y pedirle que imite a uno no lo arregla
+F-548 (Santurkar et al., ICML 2023). Compararon las respuestas de varios modelos con encuestas reales del Pew (1.498 preguntas, 60 grupos de EE.UU.). La distancia entre el modelo y la opinión pública es tan grande como la que separa a demócratas de republicanos sobre el cambio climático. Persiste aun cuando se le pide adoptar la visión de un grupo. Los peor representados fueron mayores de 65 y viudos. Los números por modelo no los obtuve hoy.
+**Heurística:** si alguien propone sustituir una encuesta por "clientes sintéticos", pedir el error por grupo, no el promedio. Los grupos que peor se simulan suelen ser los que el negocio más necesita entender, y el mayor y el viudo son justo clientes de seguro de vida y de salud. Es evidencia de EE.UU., sobre modelos de 2022-2023.
+- **Fuente:** F-548 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-27 (`WebSearch`; ficha oficial de PMLR, arXiv y repositorio de datos; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza lo ya sabido sobre las fallas de las muestras sintéticas (intuición 212); sin cambio de confianza.
+
+### 243. En un programa temporal de puntos, canjear se asocia a gastar más, pero quien canjea ya era el cliente que gastaba: sin comparación, el canje no prueba efecto
+F-815 (Bombaij, Gelper y Dekimpe, *International Journal of Research in Marketing* 39(4), 2022; el ledger los daba como "autores no verificados" y la búsqueda de hoy los identifica). Analizan casi 900 programas temporales de supermercados en 45 países y toman la tasa de canje como medida de éxito. El ledger recoge que quien canjeó gastó más (coef. 0,207) y quien no canjeó no cambió. El detalle por país no lo obtuve.
+**Heurística:** la tasa de canje mide a quien participa, no lo que el programa causó. Pedir siempre el grupo comparable que no canjeó y el gasto antes del programa. Esto es consistente con que el canje sea una señal de cliente ya comprometido.
+- **Fuente:** F-815 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-27 (`WebSearch`; repositorios de Tilburg y UvA; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la tesis 28 y con la intuición 215 (el canje es observacional); sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6290,44 +6311,8 @@ F-802 (Nunes y Drèze, *Journal of Consumer Research* 32(4), 2006). Experimento 
 
 - **2026-09-25** — *(Detalle podado y fusionado al resumen el 2026-10-26)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
 
-- **2026-09-26** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward limpio hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 26 corridas, **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo quinto día seguido
-  sin cambios sustanciales en el ledger. Repasé las 25 tesis vigentes contra ese mismo tope: ninguna
-  quedó desalineada con la evidencia y no forcé ningún matiz de confianza solo por completar el paso —
-  la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12 (no la disparo aquí, es rutina
-  de `cronista`, no de este proceso diario; ya lleva cuarenta y cinco días sin correr). **Poda de
-  bitácora:** el bloque "2026-08-27" salió por completo de la ventana de ~30 días (cutoff ≈2026-08-27)
-  — lo fusioné con el bloque "2026-08-01 a 2026-08-26" en un resumen ampliado "2026-08-01 a
-  2026-08-27"; no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive
-  en sus propias secciones con fecha. **La rutina diaria de intuición sí pudo correr hoy, con el nivel
-  🟢A ya agotado por completo (134/134 leídas) y el nivel 🔵B en curso:** recalculé por script el
-  universo 🔵B del ledger con el filtro estricto (fila cuya rigurosidad *empieza* con 🔵B, sin contar
-  filas mixtas como F-333): **76 filas** — contra `fuentes_leidas_lobo.md` (14 ya leídas de este nivel
-  tras las corridas de los cinco días previos: F-104, F-32, F-359, F-37, F-194, F-7, F-256, F-309,
-  F-285, F-308, F-132, F-383, F-105, F-360) — **62 pendientes** — y elegí 3 al azar sin reemplazo
-  (Python `random.shuffle`, sin semilla fija): F-1, F-231 y F-207. Las tres bloqueadas por el proxy en
-  su URL directa (sbs.gob.pe, rgare.com, swissre.com); `WebSearch` sí funcionó y permitió reconstruir
-  detalle nuevo en las tres vía cobertura convergente (búsqueda directa sobre la ficha técnica de la
-  encuesta SBS 2023 para F-1; soa.org, theactuarymagazine.org y PR Newswire para F-231; cobertura de
-  prensa especializada de reaseguros para F-207), no solo el resumen de una línea ya citado. Sumé las
-  entradas 148, 149 y 150 de Intuición acumulada: (148) F-1 trae la jerarquía informal de defensa
-  financiera (ahorro → familia → recorte de gasto → recién entidad financiera) que la gente ya usa antes
-  de considerar un seguro, y la cifra de que 77% exige respaldo institucional de un tercero — matiza
-  tesis 1 y 4 con el mecanismo competidor concreto y refuerza sin tesis numerada propia el argumento de
-  bancaseguros de tesis 16; (149) F-207 muestra que las primas de salud comercial en China casi se
-  triplicaron en una década (CAGR 20%, 2014-2023) mientras la brecha de protección se duplicaba en el
-  mismo periodo (US$377.000M en 2024) — crecimiento de mercado y cierre de brecha son trayectorias
-  independientes, matiza tesis 17 y 11 sin cambiar su confianza; (150) F-231 nombra el mecanismo
-  explícito detrás de la cifra ya citada en tesis 20: "fricción positiva" de Sistema 2 (listar
-  beneficiarios + calculadora de necesidad) que sube 59% la comprensión de terminología, la misma
-  familia de mecanismo que la intuición 63 (F-225) aplicada con una técnica operacional concreta para
-  seguros. Ninguna tesis de negocio cambió de confianza numérica por esta corrida — es el mecanismo
-  paralelo de intuición, aunque las tres entradas de hoy matizan tesis 1, 4, 11, 16, 17 y 20. Actualicé
-  `research/lobo/fuentes_leidas_lobo.md` con las tres fuentes leídas hoy. Bitácora con 30 días de
-  historial (2026-08-28 a hoy) tras la poda de hoy — cumple la ventana de ~30 días.
+- **2026-09-26** — *(Detalle podado y fusionado al resumen el 2026-10-27)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
+
 - **2026-09-27** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
   pull`, fast-forward limpio hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
   `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
@@ -6561,3 +6546,5 @@ F-802 (Nunes y Drèze, *Journal of Consumer Research* 32(4), 2006). Experimento 
 - **2026-10-25** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (último cambio: 2026-10-20 por commit; sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 115 pendientes → 112 tras hoy):** sorteo F-687, F-677 y F-758, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 235 (el Stroop es sólido en laboratorio y no por eso una palanca de negocio), 236 (las correspondencias entre sentidos son hipótesis de diseño, no resultado) y 237 (la sequía se asocia a más violencia de pareja, sobre todo en adolescentes y mujeres sin empleo). Pendiente para `cronista`: confirmar en el texto completo el conteo de 18 hallazgos de F-687 y las cifras en puntos porcentuales de F-758. Poda: 09-24 fusionado al resumen; Bitácora cubre 2026-09-25 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-26** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 114 pendientes → 111 tras hoy):** sorteo F-555, F-584 y F-802, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 238 (la IA que produce más no prueba que se comprenda más: preguntar qué juicio humano sustituye), 239 (el lego sigue más el consejo algorítmico, el experto menos y pierde precisión) y 240 (el progreso dotado: las cifras del ledger no se confirmaron hoy y no hay réplica a la vista). Pendiente para `cronista`: confirmar en el artículo las cifras de F-802 (34% contra 19%) y su volumen. Poda: 09-25 fusionado al resumen; Bitácora cubre 2026-09-26 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-27** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 105 pendientes → 102 tras hoy):** sorteo F-580, F-548 y F-815, leídas vía `WebSearch` (fichas y resúmenes; lectura débil, declarada). Entradas 241 (la IA generativa ayuda sobre todo al novato: preguntar quién gana), 242 (el modelo que imita al público falla con grupos concretos: pedir el error por grupo) y 243 (la tasa de canje mide a quien participa, no el efecto). Pendiente para `cronista`: F-815 ya tiene autores (Bombaij, Gelper y Dekimpe), año 2022 y DOI 10.1016/j.ijresmar.2022.04.005 verificados en fichas de Tilburg; y F-580 debe confirmar 5.172 vs. 5.179 agentes. Poda: 09-26 fusionado al resumen; Bitácora cubre 2026-09-27 a hoy. `fuentes_leidas_lobo.md` actualizado.

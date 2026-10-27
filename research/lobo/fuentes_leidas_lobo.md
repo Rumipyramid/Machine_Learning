@@ -258,3 +258,6 @@
 | F-555 | 🟢 A | 2026-10-26 | Intuición 238 — la IA que produce más no prueba que se comprenda más; preguntar en qué papel actúa y qué juicio humano sustituye (marco teórico; lectura débil) |
 | F-584 | 🟢 A | 2026-10-26 | Intuición 239 — el lego sigue más el consejo algorítmico, el experto menos y pierde precisión; probar por segmento (resumen; lectura débil) |
 | F-802 | 🟢 A | 2026-10-26 | Intuición 240 — progreso dotado: cifras del ledger sin confirmar y sin réplica a la vista; no trasladar a seguros (secundarias; lectura débil) |
+| F-580 | 🟢 A | 2026-10-27 | Intuición 241 — la IA generativa sube +34% al novato y poco al experto; preguntar quién gana (cifra final sin confirmar; lectura débil) |
+| F-548 | 🟢 A | 2026-10-27 | Intuición 242 — el modelo que imita al público falla con grupos concretos (mayores, viudos); pedir el error por grupo (lectura débil) |
+| F-815 | 🟢 A | 2026-10-27 | Intuición 243 — la tasa de canje mide a quien participa, no el efecto; pedir el grupo comparable (lectura débil) |
