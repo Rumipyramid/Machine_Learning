@@ -340,3 +340,4 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — evidencia causal de demanda y confianza (Kenia, India, Ghana, China), edad y definiciones basales; marca una ambigüedad en el 60-65% de corredores (F-375 frente a F-887).
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — evidencia sobre demanda, elección, confianza y asesoría que respalda o matiza las barreras conductuales de este node.
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — señales de cambio sobre confianza, canal y asegurabilidad a partir de este contexto.
+- [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.

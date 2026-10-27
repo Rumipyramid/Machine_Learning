@@ -354,3 +354,4 @@ Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farma
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — contraste de Discovery Vitality con lo que se sabe de programas de recompensa en retail (efecto pequeño tras corregir autoselección).
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — selección con dos dimensiones y elección de planes en salud.
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — tensión entre personalización y solidaridad en salud (P2).
+- [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.

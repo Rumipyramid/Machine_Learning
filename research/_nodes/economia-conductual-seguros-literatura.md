@@ -258,3 +258,4 @@ Las citas se verificaron por resumen, no leyendo cada paper. Las Figuras 2 y 3 d
   F-980 aportan evidencia).
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — qué de esta base conductual (confianza, elección, asesoría) condiciona las experiencias futuras (P1, P3).
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — selección y retención aplicadas a la fidelidad del cliente digital.
+- [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.

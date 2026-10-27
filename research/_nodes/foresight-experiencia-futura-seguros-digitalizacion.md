@@ -1,12 +1,12 @@
 # Foresight: la experiencia futura de los seguros y la digitalización — preguntas profundas y radar de señales
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.2 (v1.2 suma §12: mapa de tendencias globales y de LATAM por pregunta abierta, §12.6 con cifras de la SBS y regulación peruana de 2026, §12.7 sobre finanzas abiertas y §12.8 sobre seguros en Yape; v1.1 sumó §11: cuatro señales nuevas y actualización de la 14)
+> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.2 (v1.2 suma §12: mapa de tendencias globales y de LATAM por pregunta abierta, §12.6 con cifras de la SBS y regulación peruana de 2026, §12.7 sobre finanzas abiertas, §12.8 sobre seguros en Yape y §12.9 sobre los pagos que ve el BCRP; v1.1 sumó §11: cuatro señales nuevas y actualización de la 14)
 > Origen: `/trinidad` (empírica/teórica + social + negocio) pedida por el usuario para reconstruir el radar de señales que se
 > retiró de `digitalizacion-seguros-mercados-emergentes` (§9.4). Pregunta de partida: *¿cuál es la experiencia futura de los
 > seguros y la digitalización?* y, detrás de ella, *¿cuáles son las preguntas más profundas?*
 > Fuentes registradas en `research/fuentes/codice.md` (F-981 a F-1006); reutiliza F-961 a F-965 (marco y señales de Perú),
-> F-1099 a F-1117 (§12), F-442, F-851, F-852, F-869, F-875, F-877, F-879, F-881, F-884, F-888, F-901, F-905, F-913, F-923, F-928, F-929, F-934, F-936.
+> F-1099 a F-1118 (§12), F-442, F-851, F-852, F-869, F-875, F-877, F-879, F-881, F-884, F-888, F-901, F-905, F-913, F-923, F-928, F-929, F-934, F-936.
 > Solo fuentes públicas. Ningún material confidencial de clientes o empleadores se usó en este node.
 
 ---
@@ -519,6 +519,39 @@ Solidez: 🟢 con causalidad · 🔵 institucional o con método · 🟡 encuest
 
 **Límites de esta sección.** Todo se leyó por páginas comerciales, publirreportajes y resúmenes de resultados. No se corrió la pista social (qué dicen los usuarios de Yape sobre estos seguros). No se verificó exclusividad ni cuántas pólizas siguen vigentes.
 
+### 12.9 Lo que mira el BCRP: pagos iniciados y la plataforma TAPP (2026-10-27)
+
+**En corto.** El "open banking" tiene dos mitades en el Perú y las ven dos reguladores distintos. La SBS ve los **datos** (finanzas abiertas, §12.7). El BCRP ve los **pagos** (iniciación de pagos). Para una aseguradora, la mitad de pagos llega antes: el piloto de TAPP está previsto para diciembre de 2026. Falta saber si soporta cobros recurrentes, que es lo que importa para primas mensuales.
+
+**Qué se sabe (dato, según el BCRP y la prensa; F-1118).**
+
+- Un *iniciador de pagos* es una empresa autorizada y registrada por el BCRP que **transmite la orden de pago autorizada por el usuario y no toca su dinero**. Intervienen tres: el usuario o comercio, el iniciador y la entidad donde está la cuenta.
+- Hay dos vías: una **centralizada** (plataforma del BCRP) y otra **descentralizada** (acuerdos bilaterales entre fintechs y entidades financieras).
+- **TAPP** es la plataforma pública de iniciación de pagos. Es la **Fase 4** de la estrategia de interoperabilidad, que empezó con Yape y Plin (mar-2023) y siguió con transferencias inmediatas y QR (set-2023). El piloto está previsto para **diciembre de 2026 con unas 20 entidades**; una fuente dice que operaría en 2027.
+- El Reglamento del Sistema Nacional de Pagos, vigente desde abril de 2026, ya reconoce al iniciador. El reglamento específico se esperaba para el 2T 2026 y no encontré que se haya publicado.
+- Yape concentra cerca de un tercio de las operaciones interoperables, y el total de transacciones crece más de 50% al año (BCRP, marzo 2026).
+
+**Qué cambia para los seguros (inferencias mías; nada de esto está probado).**
+
+| Oportunidad | Por qué podría abrirse | Qué lo frena o no se sabe |
+|---|---|---|
+| **Cobrar la prima sin tarjeta ni app bancaria** | El cliente autoriza el pago desde la web o app de la aseguradora y lo confirma su banco, sin pasar por una tarjeta | No hay datos de peruanos sin tarjeta que sí pagarían así; se desconoce el costo para la aseguradora |
+| **Renovar o cobrar cada mes** | Si TAPP permite autorizar cobros periódicos, la prima mensual sería un débito consentido | **Ninguna fuente describe pagos recurrentes.** Si cada cobro exige que la persona vuelva a aprobar, la renovación pierde la inercia y aparece fricción en cada mes |
+| **Pagar el siniestro al instante** | Las transferencias inmediatas entre apps existen desde 2023; el reglamento paramétrico exige pagar en 10 días y tener pagos masivos (F-1110) | Hace falta tener la cuenta o billetera del beneficiario; el pago masivo de un paramétrico a personas aún no tiene marco para minoristas |
+| **No depender de una billetera dominante** | Si cualquier entidad puede iniciar pagos desde cualquier cuenta, una aseguradora o un corredor podría cobrar sin estar dentro de Yape. Esto empuja hacia el cuadrante "la aseguradora o el corredor posee la relación" del 2×2 (§6) | Depende de que los bancos y billeteras participen y de la regla de responsabilidad si el pago falla |
+| **Vender en comercios y plataformas ajenas con cobro en el momento** | El pago de la póliza se confirma en un clic dentro de otro sitio (embebido, §12.8) | La responsabilidad ante el cliente seguiría siendo del banco o caja (BaaS) |
+
+**Línea de tiempo de lo que llega** (fechas de prensa y de la SBS y el BCRP, a verificar):
+
+| Cuándo | Qué | Quién |
+|---|---|---|
+| Dic-2026 | Piloto de TAPP (~20 entidades); BaaS entra en vigencia hacia fines de mes | BCRP; SBS |
+| 2027 | TAPP en operación (según una fuente); reglamento general de finanzas abiertas | BCRP; SBS |
+| 2028 | Los cuatro bancos más grandes comparten datos | SBS |
+| 2029 | Seguros, pensiones, cooperativas y fintechs en finanzas abiertas | SBS |
+
+**Pendiente.** El reglamento de iniciadores; si TAPP admite cobros recurrentes; qué entidades participan en el piloto y si hay aseguradoras o corredores entre los 20; quién responde cuando falla un pago iniciado por un tercero.
+
 ## Conexiones
 
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — de dónde viene este radar
@@ -533,3 +566,4 @@ Solidez: 🟢 con causalidad · 🔵 institucional o con método · 🟡 encuest
 - [[venta-vida-digital-hibrida-latam|Venta de vida digital vs. híbrida en LATAM]] — comparación con LATAM (P6).
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas `lapuerta`]] — segmentos para simular escenarios.
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — cómo medir hoy la recurrencia que algunas de estas experiencias futuras darían por supuesta.
+- [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — la tendencia de envejecimiento (señal 16 y pregunta 8) desarrollada con evidencia.

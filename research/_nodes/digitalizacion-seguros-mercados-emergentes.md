@@ -1056,3 +1056,4 @@ Todo se leyó por resumen de búsqueda. Las encuestas son de proveedores o consu
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — el resto del ciclo de decisión (demanda, elección, confianza, asesoría, selección, ahorro) que aquí no se cubre.
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — radar de 23 señales, preguntas profundas y escenarios a 2035 (reemplaza al radar que se retiró de este node).
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — doble clic sobre fidelidad, activación, bancaseguros y recurrencia: qué se puede responder afuera y qué no.
+- [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.
