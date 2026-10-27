@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-26 · Versión: v1.2 (v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 suma §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.3 (v1.3 suma §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -96,7 +96,8 @@ las fuentes sobre edad son de EE.UU. o genéricas de compra online, no de seguro
 
 **Variables que explican mejor (hipótesis, no hallazgos):** el momento (comprar frente a siniestrarse: Swiss
 Re, F-885), la confianza en la contraparte (F-849, F-850), la liquidez e irregularidad del ingreso (F-847), la
-complejidad del producto y la habilidad percibida (F-861, F-862).
+complejidad del producto y la habilidad percibida (F-861, F-862). **§10 amplía esta lista** con
+habilitadores y entorno.
 
 ---
 
@@ -632,6 +633,111 @@ Son hipótesis de diseño, no resultados. El análogo del "pago mínimo" en segu
 1. **Abrir** el estudio de Treo, arXiv 1803.05032 y el artículo de NN/g (necesito el título o que me lo pegues).
 2. **Verificar** F-917 y F-919 (láminas) y las cifras de las láminas 6-10 contra los papers.
 3. **Medir en Perú** lo que la literatura sugiere y no tiene dato local: causa de caducidad (DP1), cobro automático de primas, proporción de cobro por billetera.
+
+---
+
+## 10. Adenda v1.3 (2026-10-27): qué más explica la digitalización, además de las cuatro variables
+
+### 10.1 Respuesta corta
+
+**Sí hay más, y conviene reordenarlas.** Las cuatro variables de §2 (momento, confianza, liquidez e irregularidad del
+ingreso, complejidad y habilidad percibida) describen sobre todo **la disposición de la persona**: si quiere y le
+conviene. Dejan fuera dos grupos:
+
+- **Los habilitadores:** si **puede** (tener dispositivo, conexión, habilidades, un medio de pago digital y poder
+  identificarse).
+- **El entorno:** si el sistema se lo **facilita** (la gente cercana, la regulación, cómo le llega el producto y la
+  calidad de lo digital que se le ofrece).
+
+Con eso la lista pasa de 4 a 17 candidatas (las 4 originales más 13 nuevas, algunas de las cuales refinan una original) en tres familias (§10.3). **Ninguna evidencia de las que siguen modela estas
+variables juntas para seguros en Perú:** son candidatas, no hallazgos, y "explican mejor" sigue sin comprobarse (§2 ya lo
+marcaba como hipótesis).
+
+### 10.2 Qué tan sólidas son las cuatro originales
+
+Antes de sumar, conviene decir que las cuatro no tienen el mismo respaldo:
+
+| Variable original | Respaldo | Fuente | Lectura |
+|---|---|---|---|
+| **O1 · Confianza en la contraparte** | 🟢 Fuerte | RCT de campo en Kenia y China (F-849, F-850); una encuesta independiente en Jordania la halla como el factor de mayor peso (β = 0,52; F-1030) | La mejor sostenida |
+| **O2 · Liquidez e irregularidad del ingreso** | 🟢 Fuerte, pero agrícola | RCT en Kenia (F-847) | Causal, en cañeros; el traslado a asalariados e informales urbanos es hipótesis |
+| **O3 · Momento (comprar frente a siniestrarse)** | 🟡 Moderado | Swiss Re (F-885): la digitalización sube, pero la compra de punta a punta la frenan confianza, asesoría y complejidad | Informe de reaseguradora; no causal |
+| **O4 · Complejidad y habilidad percibida** | 🟡 Débil | Un estudio ruso de 244 personas de 50+ y una tesis de Lima (F-861, F-862) | No son de seguros; muestras pequeñas |
+
+### 10.3 Las variables que se suman, por familia
+
+Tres familias (**puede, quiere, le llega**) y 17 variables: las cuatro originales (O1 a O4) y trece nuevas (N1 a N13);
+N2, N5, N6 y N8 refinan o separan una original. Es una organización mía, no un modelo validado.
+
+**Familia 1 · Puede (habilitadores)**
+
+| # | Variable | Qué evidencia hay | Dato peruano | Apoyo |
+|---|---|---|---|---|
+| N1 | **Dispositivo y conexión** (incluye brecha de género) | Estudios con datos de Findex hallan que tener celular y conexión son los mayores impulsores de adopción fintech (F-1033). GSMA: un celular básico cuesta 24% del ingreso mensual de una mujer frente a 12% del de un hombre, y las mujeres son 14% menos propensas a usar internet móvil en países de ingreso bajo y medio (F-1034) | 95,7% de hogares con celular (rural 88,1%); 60,1% con internet en el hogar (rural 23,4%); 82,0% de la población usa internet, 89,2% desde el celular (4T 2025; F-1035) | 🟡 |
+| N2 | **Habilidades digitales y financieras** (distinto de la habilidad *percibida* de O4) | Una revisión con metaanálisis en África subsahariana halla que facilidad y utilidad percibidas son los mayores predictores de adopción de fintech móvil (F-1032); GSMA cita las habilidades como segunda barrera (F-1034). **Educar no basta:** en microseguros la educación al cliente subió el conocimiento pero no la demanda (F-1037) | El BCRP encuentra menor adopción de medios digitales entre quienes tienen menos instrucción (F-1041) | 🟡 |
+| N3 | **Medio de pago digital y uso del efectivo** | El cobro alineado al ingreso es lo que mejor funcionó (F-847); en Perú condiciona la cobranza digital (DP2 de §9.3) | Cuentas: 59% (2024) y dinero móvil 42% (F-880); 14% usó solo efectivo en el mes; en los niveles D y E predomina el efectivo (65%) (F-1041; fuentes discrepantes en el nivel) | 🟡 |
+| N4 | **Identificación y verificación (KYC)** | En países de ingreso bajo, 26% de los adultos sin cuenta cita no tener documentación (Findex 2017); las mujeres pobres tienen ~30% menos probabilidad de tener documento (F-1036). Un resumen de MicroSave dice que quien no pasa el KYC queda fuera de seguros y pensiones (F-1036) | No hallado. **Hipótesis mía:** en Perú el documento de identidad probablemente no sea el límite; la fricción de verificar en el alta sí puede serlo (cifras de abandono de 40-68% vienen de guías de proveedores, F-1025 de `hipotesis-digitalizacion-seguros-evidencia-publica`) | 🟠 |
+
+**Familia 2 · Quiere (disposición)** (O1 confianza, O2 liquidez, O3 momento, O4 complejidad ya están aquí)
+
+| # | Variable | Qué evidencia hay | Dato peruano | Apoyo |
+|---|---|---|---|---|
+| N5 | **Utilidad y facilidad percibidas** | Metaanálisis en África subsahariana (F-1032). En un estudio de seguros en Jordania de 346 personas, una vez que entran confianza y actitud, el esfuerzo esperado no tiene efecto directo (preprint, F-1031) | No hallado | 🟡 |
+| N6 | **Riesgo percibido (fraude y datos)** | En Jordania el riesgo percibido resta (β = −0,18; F-1030). **El efecto de la preocupación por la privacidad no está establecido:** en un preprint el signo se invierte al corregir endogeneidad (F-1031) | 67% teme el fraude y 66% el robo de datos bancarios al comprar en línea (Ipsos, 2023); 39% se siente seguro en plataformas financieras en línea (Kaspersky, 2024). **No son de seguros** (F-1039) | 🟡 |
+| N7 | **Propuesta de valor percibida y sustitutos informales** | Una revisión de ~30 estudios (OIT, 2013) lista cinco determinantes de la demanda: comprensión, propuesta de valor, liquidez, confianza y **otros mecanismos para enfrentar el riesgo** (F-1037). Las redes informales pueden desplazar o complementar al seguro (F-922) | De los peruanos que perdieron ingresos, 19% tenía respaldo asegurador (F-1006); 48% desconfía por no entender su póliza (Datum, vía prensa; F-1039) | 🟡 |
+| N8 | **Preferencia por un contacto humano** (refina "confianza" y "complejidad") | Accenture: 58% confía en un asesor presencial para un reclamo frente a 12% en un servicio automatizado (año no verificado); J.D. Power 2016: solo 7% prefiere un canal digital para reportar el siniestro (F-1040); Insurity 2025: 59% de los *baby boomers* prefiere hablar con una persona (F-865) | Entre quienes no compran en línea, 55% quiere ver el producto antes (Kantar); casi la mitad prefiere lo presencial al comprar seguros (BCG, vía prensa) (F-1039) | 🟡 |
+
+**Dos confianzas distintas (inferencia mía).** O1 mezcla la confianza **en la aseguradora** (que pagará) y la confianza **en el canal** (que no
+habrá fraude ni error). N6 y N8 son la segunda; F-849 y F-850 son la primera. Conviene medirlas por separado.
+
+**Familia 3 · Le llega (entorno y oferta)**
+
+| # | Variable | Qué evidencia hay | Dato peruano | Apoyo |
+|---|---|---|---|---|
+| N9 | **Gente cercana (redes e influencia social)** | En China, un amigo tratado equivale a una rebaja de 13% en la prima, por difusión de conocimiento (F-978). En Pakistán, los hogares de una misma red renuevan de forma parecida, y eso puede amplificar la selección adversa; en Tanzania, la responsabilidad conjunta genera el incentivo de no asegurarse y apoyarse en los pares (F-1038). En modelos de intención de seguros en Jordania, la influencia social aparece débil (F-1031) | No hallado | 🟡 |
+| N10 | **Regulación y protección percibida** | En Jordania la protección regulatoria sube la intención (β = 0,12) y la confianza: actúa en parte **a través de la confianza** (F-1030) | Reglamento de IA vigente desde enero de 2026 (F-1005); sanciones por plazos y rechazos (F-875, F-484); desgravamen opcional (F-877). Que esto sea una señal de confianza para el cliente es **inferencia mía** | 🟡 |
+| N11 | **Cómo llega el producto** (obligatorio, embebido o elegido) | El SOAT, obligatorio, se emite ~90% digital (F-884); **eso no prueba adopción voluntaria** (inferencia). Los defectos cambian cómo se decide (§9.1). Un titular patrocinado dice que 43% compraría un seguro integrado a otra compra (solo el titular, F-1043) | Idem | 🟠 |
+| N12 | **Calidad de la oferta digital** | La revisión de África subsahariana señala que **el lado de la oferta está poco estudiado** (F-1032). En EE.UU. la satisfacción con webs y apps de seguros bajó, muchos no encuentran lo que buscan y muchos ignoran los asistentes virtuales (F-1009); entre 21% y 28% evitó reclamar por la frustración del proceso (F-865) | No hallado | 🟡 |
+| N13 | **Intermediario como puerta** (agente o corredor con herramienta digital) | En mercados emergentes agentes y corredores siguen dominando; hay plataformas con más de 30.000 agentes de punto de venta (India), **sin resultados medidos** de efecto en contratación o renovación (F-1042) | Corredores 60-65% (ambiguo; F-887) | 🟠 |
+
+### 10.4 Cómo se ordenan por etapa (inferencia mía)
+
+Las familias pesan distinto según la etapa; coincide con el mapa de §8.2:
+
+| Etapa | Pregunta | Familia y variables dominantes (hipótesis) |
+|---|---|---|
+| Entrar a lo digital | ¿Puede? | Habilitadores (N1 a N4) |
+| Contratar | ¿Quiere y confía? | Disposición: confianza (O1), utilidad (N5), riesgo percibido (N6), valor (N7), complejidad (O4) y momento de compra (O3) |
+| Usar y reclamar | ¿Cumplen y me atienden? | Momento de siniestro (O3), contacto humano (N8), calidad de la oferta (N12) |
+| Renovar | ¿Se queda? | Liquidez y cobro (O2, N3), cómo llegó el producto (N11), gente cercana (N9), experiencia del pago del siniestro (O1) |
+
+### 10.5 Qué cambia para el diseño y la medición
+
+1. **Separar "no puede" de "no quiere" y de "no le llegó bien".** El mismo "no digital" tiene causas distintas, y cada una
+   pide una respuesta distinta (conexión, confianza o rediseño de la interfaz). Es la misma distinción entre "no funciona"
+   y "no se intentó" de `hipotesis-digitalizacion-seguros-evidencia-publica`.
+2. **Lo que `lapuerta` ya modela y lo que no.** Ya tiene acceso digital, bancarizado, educación financiera, confianza,
+   canal, apertura a datos e IA y disposición a compartir datos. **No tiene** preferencia por contacto humano, uso de efectivo
+   frente a medio digital, cómo llegó el producto, calidad percibida de la oferta digital ni influencia de la red. Es solo una
+   propuesta: cualquier cambio al modelo pasa por `/cerrajero`, que pregunta antes de aplicarlo.
+3. **Perú no tiene un estudio que mida estas variables juntas para seguros.** Solo hay datos por variable (conexión,
+   cuentas, medios de pago, miedo al fraude) y casi ninguno es de seguros.
+
+### 10.6 Límites y pendientes
+
+**Límites.** Todo se leyó por resúmenes. Los estudios de Jordania y de Bangladesh son encuestas transversales y de
+conveniencia, y el de África subsahariana trata fintech móvil, no seguros. No se halló revisión sistemática de adopción de
+*insurtech*. Las cifras del INEI son preliminares en algunos informes. Las cifras de prensa peruana (Ipsos, Kaspersky,
+Kantar, Datum, BCG) no se contrastaron con sus originales.
+
+**Pendientes (en orden de valor).**
+
+1. Tablas peruanas de Findex 2025 por edad, ingreso y género, con los motivos de no tener cuenta.
+2. Cortes de la ENAHO sobre motivos de no uso de internet y uso por edad y nivel socioeconómico.
+3. Contrastar las cifras de Datum y BCG con sus informes.
+4. Buscar una revisión sistemática de adopción de seguros digitales y modelos para América Latina.
+5. Abrir el informe completo de GSMA (solo se leyó el comunicado).
+6. Si la aseguradora tiene dato, probar las 17 variables juntas en un modelo explicativo de adopción y renovación.
 
 ---
 
