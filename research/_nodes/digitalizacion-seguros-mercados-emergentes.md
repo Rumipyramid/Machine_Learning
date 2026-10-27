@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.7 (v1.7 suma §14: benchmark de canales digitales aportado por la persona usuaria; v1.6 suma §13: para qué digitalizan y qué buscan; v1.5 sumó §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.8 (v1.8 suma §15: glosario de términos, correcciones, penetración, medición y beneficio para la persona; v1.7 suma §14: benchmark de canales digitales aportado por la persona usuaria; v1.6 suma §13: para qué digitalizan y qué buscan; v1.5 sumó §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098; §14: F-1125 a F-1134). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098; §14: F-1125 a F-1134; §15: F-1135 a F-1147). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -294,9 +294,8 @@ o en zona rural; (5) SOAT comprado sin identificar al asegurado; (6) mayores; (7
 alta. Cada una reduce lo "gestionable" por canal digital y se mide con la base propia.
 
 **Bancaseguros: ¿a quién culpa el cliente?** No se halló encuesta que lo mida. Lo que sí hay es normativo:
-reguladores y jueces hacen responsable al banco cuando falla su rol (F-874). Una encuesta de McKinsey citada
-por la búsqueda (25.000 entrevistados, 7 países) indicaría mayor confianza en el banco como marca para líneas
-personales; no se abrió. **Contradicción a vigilar:** el 60-65% de corredores y agentes que F-375 usa como dato
+reguladores y jueces hacen responsable al banco cuando falla su rol (F-874). ~~Una encuesta de McKinsey citada
+por la búsqueda (25.000 entrevistados, 7 países) indicaría mayor confianza en el banco como marca~~ **(retirado el 2026-10-27: no se pudo localizar esa encuesta y no debe usarse).** Lo que sí se verificó es una encuesta de McKinsey con LIMRA a 1.000 consumidores de Chile, Colombia, México y Perú (mar-2022): valoran la seguridad, la confianza y tratar con una persona (F-1144). **Contradicción a vigilar:** el 60-65% de corredores y agentes que F-375 usa como dato
 regional podría ser el dato de México (F-887).
 
 ---
@@ -772,7 +771,7 @@ Mismo esquema que §3.1, resumido. **Nivel** = encuesta oficial · regulación �
 
 | Caso | Qué digitalizó o diseñó | Intervención | Mecanismo (inferencia) | Resultado y quién reporta | Nivel · fuente |
 |---|---|---|---|---|---|
-| Primer estudio de demanda de seguros (Superfinanciera, Banca de las Oportunidades y Fasecolda) | No es digital: mide demanda de hogares | Encuesta nacional | **Brecha entre intención y conducta** | **Renovación efectiva 39,1%; deseada 70,2%**; 90,3% de los hogares tiene algún esquema de protección, pero solo 30,3% obtuvo un seguro de forma voluntaria; 86,8% de los hogares con servicios adicionales no los usa | Encuesta oficial · F-1045 |
+| Primer estudio de demanda de seguros (Superfinanciera, Banca de las Oportunidades y Fasecolda; **trabajo de 2018, publicado en feb-2019**) | No es digital: mide demanda de hogares | Encuesta nacional | **Brecha entre intención y conducta** | **Renovación efectiva 39,1%; deseada 70,2%**; 90,3% de los hogares tiene algún esquema de protección, pero solo 30,3% obtuvo un seguro de forma voluntaria; 86,8% de los hogares con servicios adicionales no los usa | Encuesta oficial · F-1045 |
 | SOAT que se compra en línea | Venta digital de un seguro obligatorio | Compra por web y WhatsApp; el precio está regulado | Confianza **en el canal** y precio como señal (si hay "descuento", es estafa) | **2.870 reportes de posible fraude** (2022-2025); Fasecolda: **5.267 casos en 2023** (4.742 en 2022); en oct-2026 un tribunal ordenó a la Superfinanciera un plan de canales digitales seguros en seis meses; AXA Colpatria vende el SOAT por una cuenta verificada de WhatsApp | Litigio y regulación · prensa · F-1047 |
 | Interacciones digitales | Atención y servicio | Respuestas inmediatas | — | Las interacciones digitales entre aseguradoras y clientes crecieron **más de 30% en dos años** (Fasecolda, vía prensa); producción del 1T 2026 de $14,8 billones (+4,5%) | Gremio · prensa · F-1048 |
 | Seguro agropecuario paramétrico | Pago por índice | Seguro con cofinanciación nacional | Pago rápido y verificable | El ramo pagó más de **$81.000 millones en 2024** a más de **98.000 productores**; penetración de **~5% del área cultivada** | Gremio · prensa · F-1046 |
@@ -822,8 +821,8 @@ La mezcla de canales de la región cambió poco: agentes y corredores aportan 60
 
 1. Estadísticas oficiales por canal y persistencia: AMIS y CNSF (México), Fasecolda y Superfinanciera (Colombia), CMF (Chile) y SSN (Argentina).
 2. Abrir el estudio de demanda de Colombia: fecha, método y si distingue el canal digital.
-3. Abrir los documentos de la CMF y de la UC sobre la licitación chilena para verificar el efecto en precios y comisiones.
-4. Abrir el brief de Milliman sobre microseguro de vida en México (resultados sobre gastos funerarios y renovación).
+3. Abrir los documentos de la licitación chilena: Coloma (UC, 2019) y la modificación de la NCG 330 de la CMF (2022) (F-1145; **ya localizados, falta leerlos completos**). Ojo: la baja de −59,53% de §11.2 **no coincide** con ~40% (SVS, 2012-2013) ni con el rango de −4,11% a −77,34% con 3 alzas (CMF, 2022).
+4. Abrir el brief de Milliman sobre microseguro de vida en México (MILK Brief 16, F-1055): https://microinsurancecentre.milliman.com/en/Insight/milk-brief-16-doing-the-math-life-microinsurance-in-mexico (resultados sobre gastos funerarios y renovación).
 5. Seguir el efecto de la Res. SSN 435/2025 sobre las bajas.
 6. Buscar casos de seguro embebido con resultado (Nequi, Falabella, Mach, Ualá) en informes anuales o comunicados de resultados.
 
@@ -1105,6 +1104,142 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 5. Origen del 2,7 y del NPS de 90 puntos, y la unidad de la cifra de Yape.
 6. ~~Edición 2026 del índice de Credicorp~~ **Leída el 2026-10-27** (F-1133, desde el informe aportado). Falta confirmar el 69% de billetera, que sale de la prensa y no aparece en el texto del informe.
 7. Conciliar el 13% de seguro privado de Credicorp con el ~4 de cada 10 que usa este repositorio, y confirmar qué mide el 24% del benchmark.
+
+## 15. Adenda v1.8 (2026-10-27): glosario, correcciones, penetración, medición y beneficio para la persona
+
+**En corto.** (1) Varias etiquetas de este node eran jerga sin explicar: las defino abajo. (2) Corregí tres cosas: el 90% de banca móvil es de **México**, la "encuesta de McKinsey de 25.000 personas" no se pudo localizar y la licitación chilena tiene tres cifras distintas de ahorro. (3) **No hallé ningún país donde digitalizar el seguro haya movido la penetración**; hay casos con base digital enorme y penetración plana. (4) **No hay una métrica única** para medir la digitalización: hay de país, de empresa, operativas y de resultado para el cliente, y casi ninguna conecta lo digital con que la persona esté mejor. (5) La evidencia de que la digitalización ayuda a la persona es **sólida para pagos, mixta para crédito y casi inexistente para seguros**. Lo leí todo por extractos y resúmenes.
+
+### 15.1 Qué significa cada término (en palabras simples)
+
+| Término | Qué es | Qué nos dice y qué no |
+|---|---|---|
+| **45 fusiones y adquisiciones de corredores en Brasil (2021-2023)** | Entre 2021 y 2023, corredores de seguros brasileños **se compraron entre sí** 45 veces (McKinsey, F-887) | Muestra que la distribución se concentra y que los corredores se profesionalizan. **No es una cifra digital**, viene de un resumen de consultora y no sabemos cuántas fueron grandes |
+| **Freemium atado a recarga (55% pasa a pago)** | Un operador de telefonía regala un seguro a quien recarga su saldo; después, parte de esos clientes **pasa a pagarlo**. Es el caso Tigo con BIMA en Ghana y Senegal | El 55% es una cifra **de la propia empresa** (GSMA, F-898). No sabemos cuánto dura el pago ni si es gente que ya iba a pagar. No hay evaluación independiente ni caso peruano |
+| **Pago por uso con bloqueo de dispositivo (repago ~mediados de 90%)** | M-KOPA vende celulares, paneles solares y artefactos **a cuotas** y **apaga el aparato a distancia** si no se paga. Cobra ~90% y tantos pagos | Con un aparato se puede apagar; con un seguro, **suspender la cobertura por un atraso chico** deja a la persona sin protección cuando más la necesita y choca con la protección al consumidor. Por eso lo marqué "no transferible". La cifra es de la empresa (F-908) |
+| **Seguro embebido en una súper-app (GCash, Grab)** | El seguro **se vende dentro de otra app** que la persona ya usa para otra cosa (pagar, pedir un viaje), en el momento en que se necesita. Una *súper-app* es una app con muchos servicios (pagos, transporte, comida, préstamos) | GCash reporta 51,4 M de pólizas y Grab más de 100 M, **todos cifras de las empresas**; no publican renovación, siniestros ni primas. En Filipinas la penetración sigue en 1,79% (F-896). **Contar pólizas no es contar personas protegidas** |
+| **Insurtech de pila completa (*full-stack*)** | Una insurtech que **es la aseguradora**: tiene licencia, suscribe el riesgo, vende y paga los siniestros, todo con su tecnología. Lemonade u Oscar. Se opone a las que **solo distribuyen** o venden software a aseguradoras | Cargan todo el riesgo: altos costos de captar clientes, marca por construir y poco historial para calcular precios (F-925, leído por blog). Lemonade sigue con pérdida neta (F-509) |
+| **"Primer estudio de demanda de seguros" (Colombia)** | Una **encuesta nacional a hogares** de la Superfinanciera, la Banca de las Oportunidades y Fasecolda, con trabajo de campo de 2018 (informe de feb-2019), que pregunta cuánto, por qué y cómo se compra seguro. **No es digital** | La cifra de 30,3% de hogares que compró seguro de forma voluntaria se confirmó con otra fuente. **No pude confirmar** la renovación efectiva de 39,1% frente a 70,2% deseada. Es una brecha entre lo que se quiere y lo que se hace; el estudio no dice por qué (F-1045) |
+| **"21% de las pólizas online" (Perú, 2023)** | Una frase de un **publirreportaje** del Insurance Day 2023 (APESEG, en Gestión): solo 21% de las pólizas se compró en línea. **No dice qué pólizas ni de dónde sale** | Puede incluir SOAT, vehicular, salud y vida mezclados; el SOAT se emite ~90% digital (F-884). Por eso no concilia con él. **La cifra no tiene fuente y no debería citarse sola** (F-932) |
+| **"90% opera por banca móvil" (¿Perú?)** | **No es Perú: es México.** Es de una lámina que cita el estudio *Números que hablan, Edición México* de Fiserv (2023), una empresa de tecnología financiera | Proveedor, método y muestra desconocidos; no se abrió (F-920). En Perú no tengo una cifra equivalente |
+| **Plin: 4 M frente a 8 M de usuarios** | Son dos cifras de prensa distintas. 8 M es de 2023, cuando Yape y Plin empezaron a interoperar; 4 M es de Peru Retail. Además hay 2,7 M de **clientes activos al mes** (Gestión) y un comparador que dice ~5 M sin fuente | **Cada cifra mide algo distinto** (registrados, con la función activada, activos en el mes) y a distinta fecha. Sin ver la definición **no se pueden comparar**. Para dimensionar, el dato más específico es el de activos al mes, y está sin verificar (F-1142) |
+
+### 15.2 Qué se corrigió o se retira
+
+1. **La encuesta de McKinsey de 25.000 personas en 7 países se retira.** No la pude localizar. Lo verificado es otra: McKinsey con LIMRA, 1.000 consumidores en Chile, Colombia, México y Perú (marzo de 2022): valoran seguridad, confianza y tratar con una persona; y un estudio de 2022 en Perú que dejó a los seguros **en último lugar de satisfacción entre 20 industrias** (F-1144). Link del informe donde está: https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/insurance/global%20insurance%20report%202023%20capturing%20growth%20in%20latin%20america/global-insurance-report-2023-capturing-growth-in-latin-america-spanish.pdf
+2. **La licitación chilena tiene tres cifras que no coinciden:** −59,53% (F-1049, de un resultado de búsqueda), ~−40% del costo total (boletín de la SVS, 2012-2013) y −4,11% a −77,34% en 20 licitaciones **con 3 alzas** (CMF, 2022). La CMF también advierte que **bajó el interés de las aseguradoras**, es decir, menos competencia. La licitación **sí cambió el precio**, pero decir "el precio bajó" no dice que el deudor esté mejor.
+3. **El estudio de demanda colombiano es de 2018**, no de fecha desconocida.
+4. **Los microseguros peruanos tienen dos cifras de prima que no concilian**: S/ 223 M (2023) y S/ 126 M (2022) (F-1146).
+
+### 15.3 ¿Digitalizar es penetrar? Lo que hay y no hay
+
+**Respuesta corta: no encontré ningún país donde se haya demostrado que digitalizar la venta o la gestión de seguros haya aumentado la penetración. Hay asociaciones en algunos estudios y varios casos donde la base digital es enorme y la penetración no se mueve.**
+
+| Caso o estudio | Qué muestra | Qué no muestra |
+|---|---|---|
+| **Perú** (F-1133) | 67% a 69% con cuenta o billetera, pero **13% con seguro privado, el más bajo de ocho países**; penetración ~2% del PBI | El avance se concentra en pagos; no hay causa |
+| **Kenia** (F-1139) | M-Pesa llega a **más de 80% de los adultos**; penetración de seguros **2,41% (2023) y 2,44% (2024)**, o 2,2% en el 1S 2025 según otra fuente | Que la causa sea el producto, la confianza o el ingreso; las fuentes difieren en la serie |
+| **Filipinas** (F-896) | GCash: 51,4 M de pólizas; penetración **1,79%** a fines de 2025 | Cuánto de esas pólizas sigue vigente |
+| **China, hogares** (F-1138) | Más desarrollo de finanzas digitales se asocia con **+8,6 puntos porcentuales** en la probabilidad de comprar seguro | Causalidad; es un panel de hogares, no entre países |
+| **Países nuevos de la UE** (F-1138) | Más internet se asocia con más desarrollo del seguro | Usa **activos sobre PIB** y no primas |
+| **Revisión de países en desarrollo** (F-1138) | **Vínculos mínimos** entre adopción digital y penetración; Japón e Israel: alta adopción y penetración moderada | Es una revisión poco conocida, sin método verificado |
+| **Índice de Swiss Re** (F-1137) | Sube en >80% de los países | Sus indicadores **se escogieron por correlacionar con la penetración**, así que no puede probarla |
+
+**Tres cautelas para leerlo.**
+
+1. **La penetración (prima sobre PBI) mide mal la cobertura.** Un microseguro de S/ 4,90 al mes protege a una persona más y casi no mueve la prima total. La penetración puede quedarse plana mientras sube el número de personas protegidas, y viceversa. Hacen falta medidas de **cobertura de personas** (tenencia, renovación), no solo de primas.
+2. **Digitalizar el pago o el acceso no es digitalizar la protección.** Los casos de arriba son países con pagos digitales masivos; lo que muestran es que **eso no basta**.
+3. **No pregunté todavía qué pasó en Brasil, México o China en penetración y venta digital con series largas.** Esa comparación está pendiente y es la que más valor tendría.
+
+### 15.4 Qué dicen las mejores prácticas sobre cómo medir la digitalización
+
+**No encontré una métrica única ni un estándar.** Hay cuatro familias, que miden cosas distintas:
+
+| Familia | Qué mide | Ejemplo y fuente | Límite |
+|---|---|---|---|
+| **País** (¿puede?) | Qué tan lista está la economía digital para el seguro | Índice de Swiss Re: 8 indicadores de acceso, uso, innovación y apertura (F-1137); índice de inclusión de Credicorp (F-1133) | Mide el **entorno**, no a las aseguradoras ni a las personas |
+| **Empresa: madurez** (¿tiene la capacidad?) | Capacidades digitales de una aseguradora, ordenadas frente a otras | ACORD y WTW (F-1099, F-1101) | Autoclasificación, medida relativa; no prueba causa (§13.4) |
+| **Operación** (¿funciona?) | Procesos sin intervención humana, tiempos, costos | Porcentaje de siniestros sin humano (STP), tiempo de ciclo, costo de servir, retención, NPS, adopción de autoservicio; Novarica propuso 21 indicadores hace ~10 años | Salen de **blogs de proveedores**; las cifras de referencia (STP de 10% a 15%, ahorros de 20% a 35%) no se pueden verificar |
+| **Resultado para el cliente** (¿le sirve?) | Si la persona está mejor protegida | Manual de indicadores de microseguros (FinDev Gateway) y Microinsurance Network: **razón de siniestros incurridos, renovación, rechazo de siniestros y tiempo de pago** (F-1141) | **No fue diseñado para medir digitalización**; existe sobre todo para microseguro |
+
+**Lectura (inferencia mía).** La brecha está en el cruce: casi nadie conecta "qué tan digital es" con "qué le pasa a la persona". Una propuesta para probar, que **no viene de una fuente**, sería medir tres niveles a la vez: (1) *puede*: porcentaje de gestiones que se pueden completar sin ayuda; (2) *lo hace*: porcentaje de clientes que realmente las completan; (3) *está mejor*: renovación al mes 13, siniestro pagado en N días, rechazo, quejas por mil pólizas y costo de servir, **comparando clientes que usan lo digital con los que no, y mirando aparte a quien queda excluido**. Esto se alinea con lo que ya se definía en §5b y §12.8.
+
+### 15.5 ¿La digitalización ayuda a la persona? Con cautela sobre las fuentes
+
+**Respuesta corta: depende del servicio. En pagos hay buena evidencia de beneficio; en crédito, los efectos medios son modestos y los daños se concentran; en seguros digitales no hay evidencia de beneficio para la persona, solo de alcance y de volumen de pólizas.**
+
+| Servicio | Qué dice la evidencia | Calidad de la evidencia |
+|---|---|---|
+| **Pagos y dinero móvil** | Bajan costos de transacción y fortalecen la resiliencia (J-PAL); se cita un estimado de 2% de hogares kenianos fuera de la pobreza (un estudio) (F-1140) | Revisiones de centros de investigación; el estimado es de un solo estudio, sin revisar críticas |
+| **Crédito digital** | Efectos medios modestos, ningún estudio con efectos medios negativos en la revisión, más bienestar subjetivo; **pero** morosidad alta (31% en default en Kenia y 56% con pagos atrasados en Tanzania según el Banco Mundial) y más atraso con menos transparencia (F-1140) | Revisiones; los daños dependen de la población y del diseño |
+| **Microseguro** | Reduce vulnerabilidad donde se toma, pero **la adopción es muy baja**; siniestralidad mediana de 23% (F-1141) | Revisión narrativa, un experimento aleatorizado con agricultores, un estudio observacional |
+| **Seguro digital** | Solo alcance y número de pólizas; **ninguna fuente mide renovación, siniestros pagados ni bienestar** (§14, F-896, F-897) | Comunicados de empresas |
+
+**Puntos ciegos que veo desde seguros, insurtech y banca** (mezcla de lo que dicen las fuentes y mis inferencias):
+
+1. **Contar pólizas no es proteger.** 51,4 M de pólizas en GCash con 1,79% de penetración; "más de un millón de clientes" en Yape sin renovación ni período (F-896, F-1116). Puede haber muchas pólizas de S/ 5 que no se renuevan o no pagan nunca.
+2. **El valor de un seguro llega en el siniestro, no en la compra.** Digitalizar la venta no resuelve el momento clave: pagar. En Perú los seguros están **últimos de 20 industrias en satisfacción** (F-1144) y la confianza plena en aseguradoras es ~23% a 25%. Una mediana de **siniestralidad de 23% en microseguros** sugiere poco valor para el dinero, aunque puede deberse a productos nuevos con carencias (F-1141).
+3. **Quien no está digital queda afuera y es justo el que más lo necesita.** 49% de los mayores no usa internet y en el hogar rural solo 23,4% tiene internet (F-1119, §3). Las revisiones y el IAIS advierten **exclusión de los no digitales y sesgo algorítmico** (F-1135, F-1136).
+4. **Menos humano, menos confianza.** Los consumidores valoran tratar con una persona (F-1144); y la aceptación de la IA cae cuando decide en vez de asistir (§14.2).
+5. **El fraude se desplaza al canal digital.** Según un director de la policía, 90% de los casos de fraude informático pasa por billeteras (dato de más de un año y sin período); las transferencias son instantáneas e irrevocables (F-1147).
+6. **Datos a cambio de qué.** 76% se preocupa por cómo se usan sus datos y solo 20% evalúa bien la imagen de las entidades (§14.2, F-1133).
+7. **Fricción de salida y reclamos.** Hay casos de seguros difíciles de cancelar por canales digitales o telefónicos (§11) y botones de baja obligatorios en Argentina sin resultados aún.
+8. **Se mide lo que fue fácil de medir.** Usuarios, pólizas, transacciones y rapidez son fáciles; renovación, siniestros pagados y bienestar son difíciles y casi nadie los publica.
+
+**Qué tan confiables son mis fuentes (crítica).**
+
+| Tipo de fuente | Qué aportan | Qué interés tienen | Cómo la trato |
+|---|---|---|---|
+| Comunicados y publirreportajes de aseguradoras, billeteras y operadores (GCash, Grab, Tigo, Yape-Pacífico, M-KOPA) | Escala y precios | Mostrar éxito | **Existencia del producto sí; resultados no** |
+| Consultoras y proveedores (McKinsey, Accenture, Capgemini, Fiserv, vendors de KPI) | Encuestas y tendencias | Vender el cambio digital | Intención declarada, no conducta; **cifras de referencia sin verificar** |
+| Gremios y reguladores (Fasecolda, SBS, CMF, IAIS) | Normas, cifras agregadas | Algunos defienden al sector | Útiles para hechos normativos; sus guías no miden resultados |
+| Revisiones y estudios académicos | Efectos medios | Menos interés comercial | Mejor evidencia, pero **casi toda es de pagos y crédito, no de seguros**; no verifiqué la revisión por pares ni abrí los estudios |
+| Prensa | Casos y datos de segunda mano | Variado | Solo como pista; las cifras de prensa **no concilian** (Plin, primas, microseguros) |
+
+### 15.6 Plin por WhatsApp de Interbank y el uso de WhatsApp
+
+- **Qué es.** Desde fines de octubre de 2025, Interbank permite enviar dinero por Plin **desde el chat de WhatsApp**: se activa en la app con una clave de 4 dígitos y biometría, se pide por texto o por audio a un bot, el tope es de **S/ 100 por operación**, sin costo, y solo para clientes de Interbank (F-1142).
+- **Cuánto se usa.** **~7.000 afiliados** en un trimestre de 2026 (una nota de Gestión, fecha sin confirmar) frente a 2,7 M de clientes activos al mes de Plin. Son dos medidas distintas, pero indican **adopción inicial baja**. No hay datos de operaciones.
+- **¿Hay un estudio similar sobre WhatsApp?** **No encontré ninguno de WhatsApp en seguros ni en pagos peruanos.** Lo más cercano: **57% de los adultos** de Argentina, Brasil, Chile, Colombia y México ya habló con una marca por una cuenta oficial (Mobile Time y Blend, 2025; **no incluye Perú**; Brasil 74%, México 47%) y cerca de cuatro quintos de los adultos de la región usó WhatsApp en la última semana (F-1143). En seguros, en Colombia AXA Colpatria vende el SOAT por una cuenta verificada de WhatsApp y el SOAT virtual acumula miles de reportes de fraude (F-1047). Un blog de un proveedor da 4% a 8% de conversión de contactos de seguros por WhatsApp; **no lo uso** (método y cifras poco fiables en la misma página).
+- **Inferencia mía.** WhatsApp podría ser un canal de **trato casi personal** a gran escala, coherente con que el consumidor valore tratar con una persona (F-1144), pero **no hay prueba de que mejore conversión ni confianza en seguros**.
+
+### 15.7 Industrias análogas pendientes: por qué y qué necesito
+
+**Por qué quedaron pendientes.** Las primeras rondas priorizaron aseguradoras, insurtech y fintech con productos de seguro. Educación, servicios públicos, microfinanzas y retail se dejaron para después. **No hay un bloqueo**; faltaba tiempo y decidir cuáles importan más.
+
+**Qué hice ahora.** Una pasada corta sobre microfinanzas y retail del Perú: hay microseguros (4,8 M de asegurados, S/ 223 M de prima en 2023, con la cifra discutida; F-1146) y el reglamento de microseguros (Res. 2829-2016, prima máxima de S/ 30 al mes), pero **no hallé oferta ni resultados de Mibanco, cajas municipales, Falabella o Ripley**; educación y servicios públicos **siguen sin cubrir**.
+
+**Qué necesito de ti para avanzar bien.** (1) Cuáles te interesan más; (2) si puedes abrir el **diagnóstico de microseguros del PNUD** (https://www.undp.org/es/peru/publicaciones/diagnostico-de-microseguros-en-el-peru), que no pude leer (F-882); (3) si hay un estudio propio sobre canales (WhatsApp, app, web) con datos de uso, porque es lo único que cerraría la pregunta de WhatsApp.
+
+### 15.8 Revisión sistemática de adopción de seguros digitales para América Latina
+
+**No existe una que cubra América Latina, hasta donde pude ver.** Lo más cercano (F-1136): una revisión de insurtech e inclusión (JRFM, PRISMA-P, https://doi.org/10.3390/jrfm19020122), una de adopción de seguros digitales centrada en venta en línea (IJACSA 2025, https://thesai.org/Publications/ViewPaper?Volume=16&Issue=4&Code=ijacsa&SerialNo=70) y el estudio de CENFRI de 2017 con 157 iniciativas (https://cenfri.org/wp-content/uploads/2017/11/InsurTech-Research-Study_March-2017.pdf). Hay un artículo empírico sobre insurtech y usuarios en Bogotá (revista *Ingeniería: Ciencia, Tecnología e Innovación*) que no es una revisión. **Es un hueco real de la literatura**, y una revisión PRISMA propia sería un aporte (con Scopus o Web of Science, que desde aquí no uso).
+
+### 15.9 De dónde salen las inferencias de §11.3 (con sus límites)
+
+| Inferencia | Estudios y fuentes | Límite |
+|---|---|---|
+| 1. La mejor evidencia de cambio de conducta viene de reglas, no de apps | Chile: Ley 20.552 y licitación (F-1049, F-1145); Argentina: botón de baja (F-1057); Colombia: estudio de demanda (F-1045) | Antes y después, sin aleatorización; **cifras de Chile que no concilian**; la baja de precio no prueba bienestar y la CMF anota menos competencia |
+| 2. La brecha intención y conducta en renovación es el dato regional más fuerte | Colombia 70,2% frente a 39,1% (F-1045); caducidad por olvido o liquidez (§9, F-1060) | **No confirmé esas dos cifras**; el estudio es de 2018 y no es digital |
+| 3. La confianza en el canal es una variable aparte | Fraude en el SOAT colombiano: 2.870 reportes y 5.267 casos (F-1047) y fallo de oct-2026 | Prensa; el fallo no se abrió |
+| 4. Chile y Perú tomaron caminos opuestos con el mismo producto | Chile: licitación (F-1049, F-1145); Perú: desgravamen opcional y portable (F-877) | Sin comparación de resultados |
+| 5. Facilitar la salida cambia el significado de fidelidad | Botón de baja en Argentina (F-1057); cancelar por teléfono en México (F-1054) | Es una **hipótesis mía**; ninguno mide retención con y sin salida fácil |
+| 6. Lo embebido en la región tiene anuncios y no resultados | Mercado Pago, OXXO (F-1051 a F-1053); GCash y Grab (F-896, F-897) | Comunicados y prensa |
+
+### 15.10 Documentos que puedes abrir
+
+- **PNUD, diagnóstico de microseguros en Perú (F-882):** https://www.undp.org/es/peru/publicaciones/diagnostico-de-microseguros-en-el-peru
+- **Swiss Re, sigma insights 06/2026 (F-885):** https://www.swissre.com/institute/research/sigma-research/sigma-insights-06-2026-scaling-digital-economy-trust-is-key.html y el índice: https://www.swissre.com/risk-knowledge/advancing-societal-benefits-digitalisation/insurance-digitalisation-index.html
+- **McKinsey, crecimiento en América Latina (F-887):** https://www.mckinsey.com/industries/financial-services/our-insights/pursuing-insurance-growth-in-latin-america
+- **Licitación en Chile:** Coloma (UC, 2019) https://economia.uc.cl/wp-content/uploads/2022/10/dpp-Coloma-01.pdf · CMF (NCG 330, 2022) https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite_ver_archivo.php?id=2022022507&seq=1 · Ministerio de Economía (2012) https://www.economia.gob.cl/wp-content/uploads/2012/10/Boletin-efecto-licitaci%C3%B3n-de-seguros.pdf
+- **Milliman, microseguro de vida en México (F-1055):** https://microinsurancecentre.milliman.com/en/Insight/milk-brief-16-doing-the-math-life-microinsurance-in-mexico
+- **Colombia, primer estudio de demanda (2018, F-1045):** https://bancadelasoportunidades.gov.co/sites/default/files/2019-02/Banca_InformeSeguros_WEB-Final%20vsImpresa-Feb2019_0.pdf
+- **IAIS, tecnología digital en seguros inclusivos (F-1135):** https://www.iais.org/uploads/2022/01/181112-Application-Paper-on-the-Use-of-Digital-Technology-in-Inclusive-Insurance.pdf
+
+### 15.11 Límites y pendientes
+
+**Límites.** Todo es lectura por extractos de buscador; no abrí los estudios de crédito digital ni de microseguros; no verifiqué si las revistas son arbitradas; la pista social no se corrió; algunas fuentes de prensa no tienen fecha.
+
+**Pendientes.** (1) Series largas de penetración y venta digital en Brasil, México y China; (2) leer completos Coloma (UC), la NCG 330 y el estudio colombiano; (3) PNUD sobre microseguros; (4) cifras de renovación y siniestros pagados de cualquier seguro embebido; (5) una revisión PRISMA propia de adopción en América Latina; (6) educación, servicios públicos, Mibanco, cajas municipales y retail.
 
 ## Conexiones
 
