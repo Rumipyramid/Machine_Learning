@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.4 (v1.4 suma §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.5 (v1.5 suma §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1071). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -826,6 +826,56 @@ La mezcla de canales de la región cambió poco: agentes y corredores aportan 60
 4. Abrir el brief de Milliman sobre microseguro de vida en México (resultados sobre gastos funerarios y renovación).
 5. Seguir el efecto de la Res. SSN 435/2025 sobre las bajas.
 6. Buscar casos de seguro embebido con resultado (Nequi, Falabella, Mach, Ualá) en informes anuales o comunicados de resultados.
+
+---
+
+## 12. Adenda v1.5 (2026-10-27): fuentes aportadas por el usuario, con clasificación y confiabilidad
+
+*Origen: la persona usuaria compartió nueve enlaces y pidió clasificarlos (`/trinidad`), revisar que fueran confiables y ubicarlos donde correspondan.*
+
+### 12.1 Respuesta corta
+
+- **Ningún enlace se pudo abrir directamente:** la red de este entorno bloquea esos sitios (error 403 o de DNS) y no se intentó evadirlo. Cada fuente se leyó por **búsqueda dirigida a su sitio**, es decir, por resumen. Tres piezas (el PDF de Deloitte, el PDF de Pérez-Llorca y el número 495 de la revista de la Universidad de Lima) **no se leyeron**; de ellas solo se conoce lo que dicen sus fichas y páginas hermanas.
+- **Confiables como evidencia hay pocas.** Con reserva por ser parte interesada: el informe climático de MAPFRE Economics (F-1069). Con rigor académico y no de seguros: el artículo de la Universidad de Lima (F-1066). Los demás son consultoras, bufetes, corredoras o aseguradoras que describen su mercado (🟡 C), prensa o consultoras que se describen a sí mismas (🟠 D) y dos que **conviene descartar** como evidencia (🔴 E).
+- **Dos de las nueve se repiten a otras:** el reportaje de LexLatin resume el boletín de Pérez-Llorca, y la nota de MAPFRE repite el informe de Digital Insurance LATAM que ya estaba en el ledger (F-1003, F-1044). Cuentan como **una** fuente cada par, no como dos.
+- **Lo más útil que dejaron:** que el proyecto de reglamento de finanzas abiertas de la SBS ya está en consulta pública (F-1064), y que el financiamiento insurtech de la región se concentra en vida y salud (F-1068).
+
+### 12.2 Clasificación
+
+Pista: 🔬 empírica/teórica · 📱 social · 💼 negocio · ⚖️ regulación. Rigor: 🟢 A · 🔵 B · 🟡 C · 🟠 D · 🔴 E.
+
+| # | Fuente (enlace dado) | Qué es | Pista | Rigor | ¿Se leyó? | Qué aporta | Dónde se usa |
+|---|---|---|---|---|---|---|---|
+| 1 | Deloitte, folleto *Seguros Latinoamérica* (2025) | Consultora | 💼 | 🟡 C | **PDF no**; páginas hermanas de Deloitte por resumen | Penetración ~3% del PIB frente a ~7% mundial; más de 500 insurtechs; México 3,2% frente a 9,3% de la OCDE; Argentina: vida muy baja por inflación y restricciones cambiarias. **No agrega evidencia nueva** a lo ya usado | Contexto de §8.3 y §11 (F-1061) |
+| 2 | Pérez-Llorca, *Actualidad Iberoamericana de Seguros* 3T 2026 | Bufete, boletín | ⚖️ | 🟡 C | **PDF no**; solo la ficha | Cubre Colombia, España, México, Portugal y, **desde esta edición, Perú** (13-oct-2026) | Foresight §11 (F-1062) |
+| 3 | LexLatin, reportaje de seguros, finanzas abiertas e IA | Medio jurídico (eco de la anterior) | ⚖️ | 🟠 D | Por resumen | La SBS contempla aseguradoras en finanzas abiertas; **AMIS: 15% a 20% de las aseguradoras mexicanas usa IA**; México sin ley general de IA; oportunidades en paramétricos, ciber y billeteras | Foresight §11 (F-1063) |
+| 4 | Gallagher Perú, 5 tendencias del mercado en LATAM 2026 | Corredora y reaseguradora | 💼 | 🟡 C | Por resumen | Mercado blando, regulación, cambio, clima; **insurtech abre nichos como Perú** (una frase); 95% del financiamiento insurtech del 1T 2026 fue a IA. Casi todo es de líneas comerciales | Foresight §11 (F-1065) |
+| 5 | Universidad de Lima, revista *Desafíos* (número 495) | Revista académica | 🔬 | 🔵 B | **El número no**; se halló un artículo de otro número | Más uso de tecnología sube la probabilidad de inclusión financiera; la informalidad la baja. Autoría con vínculos con bancos y retail | §10 N1 y N3 (F-1066) |
+| 6 | BeWay, etiqueta *seguros* | Consultora conductual | 🔬 práctica | 🟠 D | Etiqueta **no**; solo un artículo hallado | Caso con 'aceptación de más de 30%' autodeclarado y sin línea base; cumbre con casos de Coppel y BBVA, sin detalle de seguros | `economia-conductual-seguros-literatura` §7 (F-1067) |
+| 7 | MAPFRE, financiación insurtech 1S 2026 | Aseguradora patrocinadora (eco de F-1003 y F-1044) | 💼 | 🟡 C | Por resumen | **Life & Care: 26% de las insurtechs y 76% del financiamiento**; 576 insurtechs (+14%); Brasil 217, México 150, Chile 112, Argentina 110; MAPFRE compra 38,9% de Tuio | §11 y foresight §11 (F-1068) |
+| 8 | Research and Markets, *Global Insurtech Market 2020 to 2025* | Informe de pago de 2020 | 💼 | 🔴 E | Por resumen de Business Wire | Pronóstico de US$10,14 mil M a 2025 con TCAC de 10,8%; otras casas dan 36% a 43% | **Se descarta** (F-1070) |
+| 9 | MPM Software, tendencias 2026 | Proveedor de software, blog | 💼 | 🔴 E | Por resumen | Seis tendencias; 'seguro invisible' en 2027; reducción de 40% del costo de emisión (cifra propia). La brecha de 81% coincide con MAPFRE Economics | **No se usa como evidencia** (F-1071) |
+
+Además, al verificar los datos se sumaron dos fuentes que no estaban en la lista: el **proyecto de reglamento de finanzas abiertas de la SBS** (Res. 02433-2026 y 02519-2026, F-1064, 🔵 B) y el **informe climático de MAPFRE Economics** (F-1069, 🔵 B).
+
+### 12.3 Qué cambia en los nodes
+
+1. **Finanzas abiertas en Perú ya está en consulta pública.** La SBS puso en consulta el proyecto del Reglamento General el 2-oct-2026 (18 días de plazo) y después los Títulos V a VII (F-1064). LexLatin, que cita el boletín de un bufete, dice que contempla a las aseguradoras; **el texto no se abrió, así que el alcance a seguros sigue sin verificar.** Esto actualiza el cronograma de F-965 (reglamento general a inicios de 2027) y la pendiente de §8.4.
+2. **El financiamiento insurtech se concentra en vida y salud.** Con 26% de las empresas, Life & Care recibió 76% del dinero del 1S 2026; movilidad, con 211 empresas, 9% (F-1068). Es consistente con la lectura de §8.3 de que vida y salud lideran, pero es un informe patrocinado por una aseguradora.
+3. **Brecha de protección frente a catástrofes de 81,0% en LATAM** (promedio 2015-2024; MAPFRE Economics con datos de Swiss Re, F-1069). Sirve a la pregunta de asegurabilidad del foresight.
+4. **IA en aseguradoras mexicanas: 15% a 20% (AMIS, vía LexLatin).** Dato de gremio de segunda mano; no verificado.
+5. **Parte interesada:** MAPFRE patrocina el informe sobre el ecosistema insurtech, produce el estudio climático y compra una parte de Tuio (que aparece en el foresight como una de las aseguradoras que cotiza en ChatGPT, F-981). Sus cifras se leen como del sector que describe.
+
+### 12.4 Límites y pendientes
+
+**Límites.** Todo se leyó por resumen de búsqueda. El PDF de Deloitte, el PDF de Pérez-Llorca y el número 495 de la revista no se abrieron. De BeWay no se abrió la etiqueta que se indicó. Las fechas de varias páginas de MPM y de Gallagher no son consistentes.
+
+**Pendientes.**
+
+1. Si la persona usuaria pega aquí el texto de los dos PDF (son públicos), se pueden leer a fondo y reclasificar.
+2. Decir a qué artículo del número 495 de la revista se refería.
+3. Abrir el texto del proyecto de finanzas abiertas de la SBS en `sbs.gob.pe` y buscar la mención de seguros.
+4. Verificar con AMIS el dato de 15% a 20% de aseguradoras que usan IA.
 
 ---
 

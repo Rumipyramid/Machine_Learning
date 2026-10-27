@@ -1,7 +1,7 @@
 # Foresight: la experiencia futura de los seguros y la digitalización — preguntas profundas y radar de señales
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.0
+> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.1 (v1.1 suma §11: cuatro señales nuevas y actualización de la 14)
 > Origen: `/trinidad` (empírica/teórica + social + negocio) pedida por el usuario para reconstruir el radar de señales que se
 > retiró de `digitalizacion-seguros-mercados-emergentes` (§9.4). Pregunta de partida: *¿cuál es la experiencia futura de los
 > seguros y la digitalización?* y, detrás de ella, *¿cuáles son las preguntas más profundas?*
@@ -323,6 +323,29 @@ Fuentes nuevas: **F-981 a F-1006** (empírica/teórica F-990 a F-994 · percepci
 F-995 a F-1004 · regulación F-986, F-987, F-1005 · contexto F-1006 · prensa F-988). Reutiliza F-961 a F-965, F-442, F-509,
 F-851, F-852, F-869, F-875, F-877, F-879, F-881, F-884, F-888, F-901, F-905, F-913, F-923, F-928, F-929, F-934, F-936.
 Todas están en `research/fuentes/codice.md`.
+
+---
+
+## 11. Actualización v1.1 (2026-10-27): nuevas señales tras revisar fuentes aportadas
+
+*Origen: nueve fuentes aportadas por la persona usuaria, clasificadas en `digitalizacion-seguros-mercados-emergentes` §12. Todo se leyó por resumen de búsqueda.*
+
+**Qué cambia en una línea:** la señal 14 (finanzas abiertas) pasó de "norma futura" a "proyecto en consulta pública", y se suman cuatro señales (24 a 27). El radar queda en **27 señales**.
+
+| # | Señal | Evidencia | Tipo | Pregunta profunda | Indicador a vigilar | Confianza | Pista |
+|---|---|---|---|---|---|---|---|
+| 14 (actualiza) | **Finanzas abiertas en Perú: consulta pública** | La SBS autorizó el 2-oct-2026 la consulta del proyecto de Reglamento General (Res. 02433-2026; 18 días) y después de los Títulos V a VII (Res. 02519-2026) (F-1064). Un reportaje que cita el boletín de un bufete dice que contempla a las aseguradoras (F-1063, F-1062) | Germen de cambio | P6 | Texto final; mención expresa de seguros; calendario de entrada; en Chile el plazo se movió de jul-2026 a jul-2027 (F-1050) | Media-baja: el alcance a seguros **no se verificó en la norma** | ⚖️ |
+| 24 | **Financiamiento insurtech concentrado en vida y salud** | Life & Care: 26% de las insurtechs y 76% del financiamiento del 1S 2026; movilidad: 211 empresas y 9%; ticket medio de US$8,2 M (F-1068) | Germen de cambio | P6, P7 | Reparto por segmento en el 2S 2026 y 2027 | Media-baja: informe patrocinado por una aseguradora | 📈 |
+| 25 | **Aseguradoras tradicionales compran distribuidores digitales** | En jul-2026 MAPFRE anunció que adquiriría 38,9% de Tuio, que ya cotizaba en ChatGPT (F-1068, F-981) | Germen de cambio | P6 | Otras compras o alianzas de aseguradoras con distribuidores de IA | Media: nota de MAPFRE, parte interesada | 📈 |
+| 26 | **Brecha de protección frente a catástrofes en LATAM** | 81,0% en 2015-2024: solo 19% de US$100.000 M de pérdidas aseguradas; Asia 82,8%, Norteamérica 43,2% (F-1069) | Tendencia pesada | P5 | Informe de MAPFRE Economics y Swiss Re cada año | Media: parte interesada con datos de reaseguradora | 💼 |
+| 27 | **Adopción de IA por aseguradoras mexicanas** | Entre 15% y 20% usa IA, sobre todo en fraude, suscripción y atención (AMIS, vía LexLatin; F-1063) | Germen de cambio | P3, P7 | Encuesta de AMIS repetida; reglas de IA en México (hoy sin ley general) | Baja: gremio, de segunda mano | ⚖️ |
+
+**Reglas de lectura.**
+- La señal 25 une dos piezas del foresight: la distribución dentro de asistentes de IA (señal 1) y la estrategia de una aseguradora tradicional. No se halló que Tuio venda dentro de ChatGPT con resultados; solo que cotiza.
+- La señal 26 refuerza P5 (asegurabilidad) con un dato latinoamericano; antes solo había Europa (F-987).
+- **No cambia la conclusión de §1:** la credibilidad del pago sigue siendo la pregunta de fondo.
+
+**Pendiente actualizado.** El pendiente 3 de §9 (leer el texto de finanzas abiertas) avanzó: el proyecto existe y está en consulta, pero **falta abrir el texto y buscar la mención de seguros**.
 
 ---
 

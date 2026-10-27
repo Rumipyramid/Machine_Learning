@@ -1,7 +1,7 @@
 # Economía conductual de los seguros: qué dice la literatura sobre demanda, elección, confianza, asesoría, selección y ahorro
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.0
+> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v1.0 (§7 nota de práctica agregada el mismo día)
 > Origen: ampliación pedida por el usuario sobre `digitalizacion-seguros-mercados-emergentes` (§9.2 cubría solo el
 > tramo de pago, renovación y caducidad). Registro empírico y teórico con el método de `/seeker` aplicado a mano (no se invocó la skill ni `/trinidad`); sin pistas social ni de negocio.
 > Pregunta: más allá del pago, ¿qué sabemos de cómo las personas deciden sobre seguros?
@@ -131,6 +131,12 @@
 (renovación después del evento) y CS7 (qué pasa al salirse) afectan la **definición de fidelidad**; CS5 y CS6
 afectan al **cliente de alto valor** (el canal que recomienda y su incentivo); CS2 afecta al **cliente digitalmente
 sano** (la confianza en el pago es un requisito previo).
+
+---
+
+## 7. Nota de práctica (señal débil, 2026-10-27)
+
+Una consultora conductual de España y LATAM (BeWay) publica que una aseguradora cambió el discurso de sus agentes con principios conductuales y que, en cuatro semanas, **la aceptación del servicio superó 30%** (F-1067). **Es una cifra autodeclarada, sin línea base, sin grupo de comparación y sin segunda fuente (🟠 D).** Sirve para saber que existe práctica conductual aplicada en seguros de la región, no como evidencia de efecto. Su artículo sobre seguro marítimo sostiene que el cambio de lenguaje comercial es una palanca; la lectura de este node sobre asesoría (§3) pide probar esa idea con un grupo de control. Los casos de Grupo Coppel (México) que se anuncian en su cumbre de 2024 no traen detalle de seguros.
 
 ---
 
