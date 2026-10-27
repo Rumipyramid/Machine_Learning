@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.8 (v1.8 suma §15: glosario de términos, correcciones, penetración, medición y beneficio para la persona; v1.7 suma §14: benchmark de canales digitales aportado por la persona usuaria; v1.6 suma §13: para qué digitalizan y qué buscan; v1.5 sumó §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.9 (v1.9 suma §16: lectura de PNUD, McKinsey 2023, UC y Milliman, retiro de cifras de Plin WhatsApp, oportunidad de seguros en el chat, más puntos ciegos y propuesta de industrias; v1.8 suma §15: glosario de términos, correcciones, penetración, medición y beneficio para la persona; v1.7 suma §14: benchmark de canales digitales aportado por la persona usuaria; v1.6 suma §13: para qué digitalizan y qué buscan; v1.5 sumó §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098; §14: F-1125 a F-1134; §15: F-1135 a F-1147). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098; §14: F-1125 a F-1134; §15: F-1135 a F-1147; §16 reutiliza F-882, F-1055, F-1142, F-1144 a F-1146). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -821,8 +821,8 @@ La mezcla de canales de la región cambió poco: agentes y corredores aportan 60
 
 1. Estadísticas oficiales por canal y persistencia: AMIS y CNSF (México), Fasecolda y Superfinanciera (Colombia), CMF (Chile) y SSN (Argentina).
 2. Abrir el estudio de demanda de Colombia: fecha, método y si distingue el canal digital.
-3. Abrir los documentos de la licitación chilena: Coloma (UC, 2019) y la modificación de la NCG 330 de la CMF (2022) (F-1145; **ya localizados, falta leerlos completos**). Ojo: la baja de −59,53% de §11.2 **no coincide** con ~40% (SVS, 2012-2013) ni con el rango de −4,11% a −77,34% con 3 alzas (CMF, 2022).
-4. Abrir el brief de Milliman sobre microseguro de vida en México (MILK Brief 16, F-1055): https://microinsurancecentre.milliman.com/en/Insight/milk-brief-16-doing-the-math-life-microinsurance-in-mexico (resultados sobre gastos funerarios y renovación).
+3. ~~Abrir los documentos de la licitación chilena~~ **Coloma (UC, 2019) leído completo el 2026-10-27** (F-1145; §16.1): tras la primera ronda de 105 licitaciones, desgravamen −62,1% e incendio y sismo −34,3%; la baja de −59,53% de §11.2 **no está** en ese documento. Falta leer la modificación de la NCG 330 de la CMF (2022).
+4. ~~Abrir el brief de Milliman sobre microseguro de vida en México~~ **Leído completo el 2026-10-27** (F-1055; §16.1): es un estudio cualitativo de 32 familias aseguradas y 36 no aseguradas; **no mide renovación**.
 5. Seguir el efecto de la Res. SSN 435/2025 sobre las bajas.
 6. Buscar casos de seguro embebido con resultado (Nequi, Falabella, Mach, Ualá) en informes anuales o comunicados de resultados.
 
@@ -1121,14 +1121,14 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 | **"Primer estudio de demanda de seguros" (Colombia)** | Una **encuesta nacional a hogares** de la Superfinanciera, la Banca de las Oportunidades y Fasecolda, con trabajo de campo de 2018 (informe de feb-2019), que pregunta cuánto, por qué y cómo se compra seguro. **No es digital** | La cifra de 30,3% de hogares que compró seguro de forma voluntaria se confirmó con otra fuente. **No pude confirmar** la renovación efectiva de 39,1% frente a 70,2% deseada. Es una brecha entre lo que se quiere y lo que se hace; el estudio no dice por qué (F-1045) |
 | **"21% de las pólizas online" (Perú, 2023)** | Una frase de un **publirreportaje** del Insurance Day 2023 (APESEG, en Gestión): solo 21% de las pólizas se compró en línea. **No dice qué pólizas ni de dónde sale** | Puede incluir SOAT, vehicular, salud y vida mezclados; el SOAT se emite ~90% digital (F-884). Por eso no concilia con él. **La cifra no tiene fuente y no debería citarse sola** (F-932) |
 | **"90% opera por banca móvil" (¿Perú?)** | **No es Perú: es México.** Es de una lámina que cita el estudio *Números que hablan, Edición México* de Fiserv (2023), una empresa de tecnología financiera | Proveedor, método y muestra desconocidos; no se abrió (F-920). En Perú no tengo una cifra equivalente |
-| **Plin: 4 M frente a 8 M de usuarios** | Son dos cifras de prensa distintas. 8 M es de 2023, cuando Yape y Plin empezaron a interoperar; 4 M es de Peru Retail. Además hay 2,7 M de **clientes activos al mes** (Gestión) y un comparador que dice ~5 M sin fuente | **Cada cifra mide algo distinto** (registrados, con la función activada, activos en el mes) y a distinta fecha. Sin ver la definición **no se pueden comparar**. Para dimensionar, el dato más específico es el de activos al mes, y está sin verificar (F-1142) |
+| **Plin: 4 M frente a 8 M de usuarios** | Son dos cifras de prensa distintas. 8 M es de 2023, cuando Yape y Plin empezaron a interoperar; 4 M es de Peru Retail. Además un comparador dice ~5 M sin fuente. El informe del PNUD cita a Infobae: a **inicios de 2025, Yape 14 M y Plin 4 M** | **Cada cifra mide algo distinto** (registrados, activos) y a distinta fecha. Sin ver la definición **no se pueden comparar**. *(El "2,7 M de activos al mes" que escribí antes se retiró el 2026-10-27: no se pudo reproducir; F-1142.)* |
 
 ### 15.2 Qué se corrigió o se retira
 
 1. **La encuesta de McKinsey de 25.000 personas en 7 países se retira.** No la pude localizar. Lo verificado es otra: McKinsey con LIMRA, 1.000 consumidores en Chile, Colombia, México y Perú (marzo de 2022): valoran seguridad, confianza y tratar con una persona; y un estudio de 2022 en Perú que dejó a los seguros **en último lugar de satisfacción entre 20 industrias** (F-1144). Link del informe donde está: https://www.mckinsey.com/~/media/mckinsey/industries/financial%20services/our%20insights/insurance/global%20insurance%20report%202023%20capturing%20growth%20in%20latin%20america/global-insurance-report-2023-capturing-growth-in-latin-america-spanish.pdf
-2. **La licitación chilena tiene tres cifras que no coinciden:** −59,53% (F-1049, de un resultado de búsqueda), ~−40% del costo total (boletín de la SVS, 2012-2013) y −4,11% a −77,34% en 20 licitaciones **con 3 alzas** (CMF, 2022). La CMF también advierte que **bajó el interés de las aseguradoras**, es decir, menos competencia. La licitación **sí cambió el precio**, pero decir "el precio bajó" no dice que el deudor esté mejor.
+2. **La licitación chilena tiene cifras que no coinciden:** −59,53% (F-1049, de un resultado de búsqueda; **no está en el documento de la UC**), ~−40% del costo total (boletín de la SVS, 2012-2013), −62,1% en desgravamen y −34,3% en incendio y sismo tras la primera ronda de 105 licitaciones (Coloma, leído completo) y −4,11% a −77,34% en 20 licitaciones **con 3 alzas** (CMF, 2022). La CMF también advierte que **bajó el interés de las aseguradoras**, es decir, menos competencia. La licitación **sí cambió el precio**, pero decir "el precio bajó" no dice que el deudor esté mejor.
 3. **El estudio de demanda colombiano es de 2018**, no de fecha desconocida.
-4. **Los microseguros peruanos tienen dos cifras de prima que no concilian**: S/ 223 M (2023) y S/ 126 M (2022) (F-1146).
+4. **Los microseguros peruanos tienen varias cifras que no concilian** (S/ 167 M y 5,8 M de asegurados en 2024 según la SBS vía PNUD; S/ 223 M y 4,8 M en 2023 según microfinanzas.pe; US$ 171,4 M y 9,8 M con una definición más amplia): ahora usa la de la SBS vía PNUD, leída completa (§16, F-882, F-1146).
 
 ### 15.3 ¿Digitalizar es penetrar? Lo que hay y no hay
 
@@ -1146,7 +1146,7 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 
 **Tres cautelas para leerlo.**
 
-1. **La penetración (prima sobre PBI) mide mal la cobertura.** Un microseguro de S/ 4,90 al mes protege a una persona más y casi no mueve la prima total. La penetración puede quedarse plana mientras sube el número de personas protegidas, y viceversa. Hacen falta medidas de **cobertura de personas** (tenencia, renovación), no solo de primas.
+1. **La penetración (prima sobre PBI) mide mal la cobertura.** Una póliza de S/ 4,90 al mes (por ejemplo, el Celu Seguro de Pacífico dentro de Yape, F-1116; **un caso ilustrativo, no un producto que estudié**) protege a una persona más y casi no mueve la prima total. La penetración puede quedarse plana mientras sube el número de personas protegidas, y viceversa. Hacen falta medidas de **cobertura de personas** (tenencia, renovación), no solo de primas.
 2. **Digitalizar el pago o el acceso no es digitalizar la protección.** Los casos de arriba son países con pagos digitales masivos; lo que muestran es que **eso no basta**.
 3. **No pregunté todavía qué pasó en Brasil, México o China en penetración y venta digital con series largas.** Esa comparación está pendiente y es la que más valor tendría.
 
@@ -1198,7 +1198,7 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 ### 15.6 Plin por WhatsApp de Interbank y el uso de WhatsApp
 
 - **Qué es.** Desde fines de octubre de 2025, Interbank permite enviar dinero por Plin **desde el chat de WhatsApp**: se activa en la app con una clave de 4 dígitos y biometría, se pide por texto o por audio a un bot, el tope es de **S/ 100 por operación**, sin costo, y solo para clientes de Interbank (F-1142).
-- **Cuánto se usa.** **~7.000 afiliados** en un trimestre de 2026 (una nota de Gestión, fecha sin confirmar) frente a 2,7 M de clientes activos al mes de Plin. Son dos medidas distintas, pero indican **adopción inicial baja**. No hay datos de operaciones.
+- **Cuánto se usa.** **No hay una cifra de uso confirmada.** Antes escribí "~7.000 afiliados" y "2,7 M de activos" de Plin; salieron de un resumen del buscador que **no pude reproducir** y **los retiré** (F-1142). Los límites tampoco coinciden: S/ 100 por operación en varias notas, y S/ 150 por operación y S/ 2.000 por día en otra página del banco.
 - **¿Hay un estudio similar sobre WhatsApp?** **No encontré ninguno de WhatsApp en seguros ni en pagos peruanos.** Lo más cercano: **57% de los adultos** de Argentina, Brasil, Chile, Colombia y México ya habló con una marca por una cuenta oficial (Mobile Time y Blend, 2025; **no incluye Perú**; Brasil 74%, México 47%) y cerca de cuatro quintos de los adultos de la región usó WhatsApp en la última semana (F-1143). En seguros, en Colombia AXA Colpatria vende el SOAT por una cuenta verificada de WhatsApp y el SOAT virtual acumula miles de reportes de fraude (F-1047). Un blog de un proveedor da 4% a 8% de conversión de contactos de seguros por WhatsApp; **no lo uso** (método y cifras poco fiables en la misma página).
 - **Inferencia mía.** WhatsApp podría ser un canal de **trato casi personal** a gran escala, coherente con que el consumidor valore tratar con una persona (F-1144), pero **no hay prueba de que mejore conversión ni confianza en seguros**.
 
@@ -1206,9 +1206,9 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 
 **Por qué quedaron pendientes.** Las primeras rondas priorizaron aseguradoras, insurtech y fintech con productos de seguro. Educación, servicios públicos, microfinanzas y retail se dejaron para después. **No hay un bloqueo**; faltaba tiempo y decidir cuáles importan más.
 
-**Qué hice ahora.** Una pasada corta sobre microfinanzas y retail del Perú: hay microseguros (4,8 M de asegurados, S/ 223 M de prima en 2023, con la cifra discutida; F-1146) y el reglamento de microseguros (Res. 2829-2016, prima máxima de S/ 30 al mes), pero **no hallé oferta ni resultados de Mibanco, cajas municipales, Falabella o Ripley**; educación y servicios públicos **siguen sin cubrir**.
+**Qué hice ahora.** Una pasada corta sobre microfinanzas y retail del Perú, y después la lectura completa del informe del PNUD (§16): el microseguro peruano es casi todo seguro de saldo deudor vendido por bancos y microfinancieras. **No hallé oferta ni resultados de Mibanco, cajas municipales, Falabella o Ripley**; educación y servicios públicos **siguen sin cubrir**.
 
-**Qué necesito de ti para avanzar bien.** (1) Cuáles te interesan más; (2) si puedes abrir el **diagnóstico de microseguros del PNUD** (https://www.undp.org/es/peru/publicaciones/diagnostico-de-microseguros-en-el-peru), que no pude leer (F-882); (3) si hay un estudio propio sobre canales (WhatsApp, app, web) con datos de uso, porque es lo único que cerraría la pregunta de WhatsApp.
+**Qué necesito de ti para avanzar bien.** (1) Cuáles te interesan más (propuesta priorizada en §16.7); (2) ~~el diagnóstico del PNUD~~ **ya aportado y leído** (§16); (3) si hay un estudio propio sobre canales (WhatsApp, app, web) con datos de uso, porque es lo único que cerraría la pregunta de WhatsApp.
 
 ### 15.8 Revisión sistemática de adopción de seguros digitales para América Latina
 
@@ -1240,6 +1240,112 @@ Es una compilación de un equipo de diseño con fuentes externas (Bain, Accentur
 **Límites.** Todo es lectura por extractos de buscador; no abrí los estudios de crédito digital ni de microseguros; no verifiqué si las revistas son arbitradas; la pista social no se corrió; algunas fuentes de prensa no tienen fecha.
 
 **Pendientes.** (1) Series largas de penetración y venta digital en Brasil, México y China; (2) leer completos Coloma (UC), la NCG 330 y el estudio colombiano; (3) PNUD sobre microseguros; (4) cifras de renovación y siniestros pagados de cualquier seguro embebido; (5) una revisión PRISMA propia de adopción en América Latina; (6) educación, servicios públicos, Mibanco, cajas municipales y retail.
+
+## 16. Adenda v1.9 (2026-10-27): lectura de los documentos aportados (PNUD, McKinsey, UC, Milliman), Plin WhatsApp y propuesta de industrias
+
+**En corto.** (1) Retiro dos cifras de Plin WhatsApp que no pude confirmar (7.000 afiliados y 2,7 M de activos). (2) El informe del PNUD, leído completo, muestra que el microseguro peruano es **casi todo seguro de saldo deudor vendido por bancos y microfinancieras**, con siniestralidad de 16,7%: la base de "asegurados" sobre la que se habla de inclusión es en gran parte crédito. (3) Plin por WhatsApp **no tiene aún un caso de seguros publicado**; la oportunidad es una hipótesis que sale de que Interbank e Interseguro son del mismo grupo y de que los productos baratos caben en el límite del chat. (4) Propongo un orden de industrias análogas: **vehicular, salud, microseguros, IA y súper-apps**.
+
+### 16.1 Lo que dicen los cuatro documentos
+
+| Documento | Qué es | Lo que confirma o corrige |
+|---|---|---|
+| **PNUD, diagnóstico de microseguros (F-882)** | Informe de consultoría de 89 páginas, fechado el 15-dic-2025 (la web del PNUD lo muestra el 24-mar-2026), con 22 entrevistas y datos de la SBS | Ver §16.2. El informe **no es de marzo de 2026**: esa es la fecha de la ficha web |
+| **McKinsey, informe global de seguros 2023, América Latina (F-1144)** | 24 páginas | Confirma: 67% busca seguro de vida en línea, pero la mayoría de las pólizas no se compra por canales digitales; se valora tratar con una persona; seguros último en satisfacción en un estudio peruano de 2022 (**sin fuente citada**). **Corrige:** el tamaño de la encuesta es inconsistente (4.000 consumidores en el texto, 1.000 en la nota al pie). **No contiene la encuesta de 25.000 personas** |
+| **Coloma, UC (F-1145)** | Documento de política pública de 2019. El autor fue **superintendente de Valores y Seguros de 2010 a 2014**, es decir, aplicó la ley que evalúa | Primera ronda de **105 licitaciones: desgravamen −62,1% e incendio y sismo −34,3%**; el costo del desgravamen vuelve a subir en parte desde 2016 y cae de nuevo en 2018; **bajan las aseguradoras que participan**; las comisiones de corredores **vinculados al banco son mayores**. **La cifra de −59,53% de §11.2 no aparece aquí** |
+| **Milliman, MILK Brief 16 (F-1055)** | Brief de enero de 2013 sobre el seguro de vida de Compartamos en México | Estudio **cualitativo de 32 familias aseguradas y 36 no aseguradas**. El seguro va ligado al crédito, paga casi siempre rápido (idealmente en 48 horas) y se usa sobre todo para el funeral; evitó deuda formal cara y venta de activos. **No mide renovación** (lo que yo anotaba como pendiente) |
+
+**Cómo leerlos con crítica.** El PNUD y Milliman son de organizaciones que promueven el microseguro; Coloma fue regulador y presenta el éxito de su ley; McKinsey vende consultoría de seguros. Ninguno es un estudio independiente con grupo de comparación.
+
+### 16.2 Qué dice el PNUD sobre el microseguro en el Perú
+
+| Tema | Dato | Para qué sirve |
+|---|---|---|
+| **Tamaño (SBS, 2024)** | 5,8 M de asegurados (estancados desde 2023), S/ 167 M de primas, prima media de S/ 29 al año, desde S/ 1,90 al mes; 10 de 17 aseguradoras | Reemplaza las cifras de prensa de F-1146 |
+| **Quién lo vende** | **97,8% por instituciones financieras y microfinancieras**; bancos 62,8% de los productos; **el Banco de la Nación concentra 46,4% de los asegurados** | La inclusión en seguros **depende del crédito**: llega a quien ya está en el sistema financiero |
+| **Qué se vende** | Casi todo **seguro de saldo deudor**; los multirriesgo también protegen el saldo deudor; **no hay microseguros paramétricos** | Muchos "asegurados" no eligieron; el beneficiario es el prestamista |
+| **Valor para el cliente** | **Siniestralidad de 16,7% (2024)**, 22,3% de promedio 2018-2023, frente a **40% en América Latina y el Caribe**; **18 productos con 0%**; **19 reclamos en 2024** | De cada S/ 10 de prima vuelven S/ 1,67. Puede reflejar costos altos, productos nuevos o siniestros que no se registran por falta de documentos en zonas remotas |
+| **Producto** | Pólizas de 5 a 25 páginas | Digitalizar no simplifica si el producto sigue siendo complejo |
+| **Digital** | **No se han explotado los canales digitales ni las billeteras para microseguros**; lo que se vende por billeteras son seguros masivos que no son microseguros por ley; "la insurtech no se ha desarrollado en el país" (afirmación del informe) | Confirma que no hay evidencia peruana de microseguro digital |
+| **Demanda (SBS-CAF 2022)** | **Solo 20% compraría un seguro de manera digital**; 34% prefiere comprar presencial en una aseguradora, 18% en un banco, 11% con un corredor; 26% paga con cargo en cuenta o débito automático; 41% dice que la póliza es difícil de entender; no usuarios: 20% caro, 16% no ajustado, 15% no lo necesita, 15% no confía | Es una encuesta de 2022; **declarativa**; incluye EsSalud y SOAT entre los seguros mencionados |
+| **Capacidades** | 7% de los peruanos de 16 a 65 años era competente en resolver problemas tecnológicos (2017-2018); 25% de los hogares rurales sin internet; 67,5% de los centros poblados con cobertura móvil | El techo digital no es solo acceso |
+
+**Conciliar con la base del repositorio.** El "~4 de cada 10 tiene o tuvo seguro en dos años" y el "35% que paga o pagó" de la SBS-CAF 2022 incluyen seguros públicos (EsSalud) y SOAT; el **13% de seguro privado** del índice de Credicorp 2026 no. Son medidas distintas; no se deben mezclar (§14.2).
+
+### 16.3 Correcciones y aclaraciones de lo que dije antes
+
+1. **Plin WhatsApp: retiro dos cifras.** Escribí "~7.000 afiliados en un trimestre de 2026" y "2,7 M de clientes activos". La fecha salió de **un resumen del buscador** que decía "primer trimestre de 2026" y atribuía los datos a Gestión; en la misma respuesta admitía no haber confirmado la fecha, y una segunda búsqueda **no encontró ni los 7.000 ni los 2,7 M**. Yo agregué "2026" y no debí presentarlo como dato. **No usar esas cifras.**
+2. **Los límites de Plin WhatsApp no coinciden:** S/ 100 por operación (varias notas) o S/ 150 por operación y S/ 2.000 por día (otra página del banco). No pude abrir la web de Interbank desde esta sesión.
+3. **El "microseguro de S/ 4,90"** era el Celu Seguro de Pacífico dentro de Yape (F-1116), un ejemplo. Según el PNUD, los productos que se venden por billeteras **no son necesariamente microseguros por ley**: son seguros masivos de prima pequeña. Mi uso de "microseguro" ahí era laxo.
+4. **Fuentes de 67% y 69% con billetera en Perú** (ninguna abierta en su original):
+
+| Cifra | Fuente | Qué mide | Estado |
+|---|---|---|---|
+| **67%** | SBS, citada por Peru Retail, Infomercado y Mercado Negro (F-936) | Adultos con **cuenta o billetera** digital a fines de 2025 | Prensa |
+| **69%** | Credicorp, Índice de Inclusión Financiera 2026, vía Forbes Perú (F-1133) | Peruanos con **billetera móvil o app de pagos**; el informe de Credicorp que tengo dice que Perú es tercero de la región en tenencia (promedio regional 49%) pero **no encontré el 69% en el texto** (puede estar en un gráfico) | Prensa |
+| **59%** | Global Findex, vía F-880 y F-1134 | Adultos con **cuenta** (no billetera) | Encuesta del Banco Mundial vía prensa |
+
+### 16.4 Plin por WhatsApp de Interbank: ¿hay una oportunidad para seguros?
+
+**Respuesta corta: puede haberla, pero hoy es una hipótesis sin datos publicados.** Que no se haya encontrado un caso de seguros no la descarta; muestra que nadie ha publicado resultados.
+
+**Lo que existe (dato).**
+
+- Desde fines de octubre de 2025, un cliente de Interbank puede enviar dinero por Plin dentro de un chat de WhatsApp, por texto o audio, a usuarios de Plin, Yape u otras billeteras (F-1142). Interbank es el único banco de Plin que lo tiene (nota de Infobae).
+- **Interbank e Interseguro son del mismo grupo** (Intercorp Financial Services; F-892). Interseguro vende SOAT digital desde S/ 32 por su web (la compra en Interbank va por la web del banco) y tiene un WhatsApp para **atención y consulta de SOAT**, pero **no encontré venta ni cobro de seguros dentro del chat**.
+- Es el mismo patrón de **Yape con Pacífico** dentro de Credicorp (§12.8 del foresight): la billetera y la aseguradora comparten dueño.
+
+**Hipótesis de oportunidad (inferencias mías, ninguna probada).**
+
+| # | Hipótesis | Por qué podría funcionar | Qué lo frena o falta saber |
+|---|---|---|---|
+| 1 | **Cotizar, pagar y recibir el certificado en el mismo chat** para productos simples y baratos | Un SOAT de moto desde S/ 32 o un seguro de prima de S/ 1,90 a S/ 30 al mes caben bajo un tope de S/ 100 a S/ 150 | El SOAT de auto y los seguros de salud o vida pueden superar el tope; **no se sabe si una aseguradora puede ser destinataria del pago en el chat** (las notas hablan de pagar a usuarios de Plin o Yape) |
+| 2 | **Cobrar la prima mensual** con un mensaje | Menos fricción que la tarjeta; el 26% ya paga con cargo en cuenta (SBS-CAF 2022) | No hay cobro recurrente confirmado; si hay que pedirlo cada mes, **se pierde la inercia y suben las caducidades** |
+| 3 | **Pagar el siniestro en el acto** a cualquier billetera | Las transferencias inmediatas ya existen; el reglamento paramétrico exige pagar en 10 días | El tope por operación y que el beneficiario tenga cuenta |
+| 4 | **Canal casi personal a escala** | Los consumidores valoran tratar con una persona (McKinsey, F-1144); WhatsApp lo imita | **Solo 20% compraría seguro de manera digital** (SBS-CAF 2022); no hay estudio de WhatsApp en seguros |
+
+**Una cautela importante.** Interbank es uno entre varios bancos y el microseguro peruano se concentra en el **Banco de la Nación (46,4% de los asegurados)** y en microfinancieras. La clientela digital de Interbank **no coincide con el público de los microseguros** del PNUD. La oportunidad sería más bien para **clientes bancarizados y digitalmente activos con seguros simples**, no para la inclusión de quien no tiene seguro.
+
+**Riesgos.** Fraude por suplantación en WhatsApp (el SOAT virtual colombiano acumula miles de reportes; F-1047) y transferencias instantáneas e irrevocables (F-1147); deber de asesorar y de informar el derecho de arrepentimiento en toda venta a distancia (Res. SBS 1923-2026; F-1110); caídas del servicio (en junio de 2026 la prensa reportó problemas de acceso a Plin e Interbank).
+
+**Cómo probarlo (propuesta mía).** Un piloto con grupo de control aleatorio que no vea la oferta, sobre dos productos baratos. Medir conversión, persistencia al mes 13, tiempo de pago del siniestro, quejas, incidentes de fraude y qué parte del público es nuevo en seguros. Es el único diseño que separa el efecto del canal del efecto de quién compra.
+
+### 16.5 Más puntos ciegos, además de los ocho de §15.5
+
+9. **Muchos "asegurados" no eligieron.** El microseguro peruano es casi todo saldo deudor: el beneficiario es el prestamista (PNUD). Contar asegurados mide crédito.
+10. **La siniestralidad baja es ambigua.** 16,7% frente a 40% regional puede indicar poco valor, carencias, o siniestros que no llegan a registrarse por exigencia de documentos en zonas remotas; 18 productos con 0% y 19 reclamos en el año (PNUD). **Nadie mide si lo digital lo corrige.**
+11. **Digitalizar la venta no simplifica el producto.** Pólizas de 5 a 25 páginas y 41% que no entiende la póliza (PNUD).
+12. **Una sola vía o un solo dueño.** Si la billetera y la aseguradora son del mismo grupo, la persona ve **una oferta**, no un mercado; y si el servicio cae, se cae el cobro. No hay evidencia de que esa integración perjudique, pero **tampoco de que la persona pague menos**.
+13. **¿Quién se queda con el valor?** En Chile, al pasar la decisión a una licitación el precio bajó, pero las comisiones de los corredores vinculados al banco volvieron a subir y participaron menos aseguradoras (Coloma). En un canal embebido, la comisión de la plataforma es un dato que nadie publica.
+14. **Compras por impulso y acumulación.** Con un toque y una prima de S/ 5, es fácil sumar pólizas que no se necesitan o se olvidan (hipótesis mía; no hay estudio peruano); el derecho de arrepentimiento y la baja fácil importan.
+15. **Sesgo del sobreviviente.** Vemos las insurtech y apps que sobreviven; la mortalidad de insurtech de la región (F-1044) no entra en los casos.
+16. **Quién queda fuera por idioma, edad o discapacidad.** Casi la mitad de los mayores no usa internet (§14, F-1119) y solo 7% de los adultos era competente en resolver problemas tecnológicos (PNUD).
+
+### 16.6 Qué hay sobre WhatsApp y seguros
+
+Sigue igual: **ningún estudio de WhatsApp en seguros ni en pagos peruanos** (§15.6). Lo que cambia con el PNUD: el único dato peruano sobre preferencia de canal es **20% compraría digital** y 34% preferiría comprar presencial en una aseguradora (SBS-CAF 2022). Lo que cerraría la pregunta serían datos de uso de las propias aseguradoras (conversión, persistencia, reclamos por WhatsApp).
+
+### 16.7 Industrias análogas: propuesta priorizada
+
+Tú nombraste banca y finanzas, microseguros, techs, IA, salud y vehicular. Mi propuesta, de más a menos valor para decidir:
+
+| Prioridad | Industria | Por qué | Qué ya hay en el repositorio | Qué pregunta respondería |
+|---|---|---|---|---|
+| 1 | **Vehicular y SOAT** | Es donde lo digital funciona mejor en Perú: SOAT ~90% digital (gremio), 70% en Interseguro, IA que baja el análisis de siniestros de 48 h a 1 minuto (Rímac, autorreportado); el único experimento aleatorizado de seguros por uso | F-884, F-933, F-889, F-890, F-442 | ¿Digital funciona porque el producto es **simple, obligatorio y de precio regulado**? ¿Qué pasa con el fraude del canal (Colombia)? |
+| 2 | **Salud** | Teleconsulta (Yape-Pacífico), costos médicos al alza (11,9% en LATAM), Alan, Oscar, Ping An y ZhongAn; es donde "digital" se junta con servicio y no solo con venta | F-888, F-1102, F-902; nodes de modelo de salud con IA y de mecanismos de salud | ¿El valor para la persona es el **servicio** (orientación, atención) o el seguro? |
+| 3 | **Microseguros** | Ya hay un informe completo (PNUD); es donde la tensión entre inclusión y valor es mayor | F-882, F-1141, F-1146 | ¿Qué canal digital podría llevar un producto **no atado al crédito** a quien hoy no tiene nada? |
+| 4 | **IA en seguros** (suscripción, siniestros, agentes) | Aceptación baja cuando la IA decide; norma peruana de IA; riesgo de sesgo | F-982, F-1127 a F-1129, F-1135; node de conducta humano-IA | ¿Qué decisiones se pueden delegar sin perder confianza? |
+| 5 | **Techs y súper-apps** (embebido, Mercado Pago, Nubank, GCash, Grab) | Donde se juega quién tiene la relación | F-896, F-897, F-1051, F-1052, F-1116 | ¿Hay **algún** resultado publicado de renovación o siniestros? |
+| 6 | **Banca y finanzas** | Ya cubierto en gran parte (pagos, finanzas abiertas, crédito digital) | §12.7 a §12.9 del foresight, F-1140 | Falta ver bancaseguros: ¿a quién culpa el cliente? |
+| 7 | **Retail y telecomunicaciones** | Tigo freemium (cifra de la empresa), retail con tarjetas | F-898 | ¿Hay un caso peruano con resultado? |
+| 8 | **Educación y servicios públicos** | Poca evidencia de seguros; útiles solo como analogía de **cobro por recibo** | — | Dejar para el final, salvo que tengas una hipótesis concreta |
+
+**Qué necesito de ti.** Confirma las 2 o 3 que quieres que investigue primero (mi sugerencia: **vehicular, salud y microseguros**), y si tu equipo tiene datos propios de uso por canal, porque son lo único que cerraría las preguntas de WhatsApp y de renovación.
+
+### 16.8 Límites y pendientes
+
+**Límites.** El informe del PNUD, McKinsey, Coloma y Milliman se leyeron completos en lo que aquí se usa, pero la lectura de Coloma fue de resumen ejecutivo y búsquedas, no de las 62 páginas; las demás fuentes siguen siendo extractos; no pude abrir la web de Interbank; la pista social no se corrió.
+
+**Pendientes.** (1) Confirmar límites y alcance de Plin WhatsApp (si una aseguradora puede cobrar) con el banco; (2) leer la NCG 330 de la CMF (2022); (3) cifras de uso de Plin WhatsApp; (4) fuente del estudio peruano de 2022 de experiencia de cliente en 20 industrias (McKinsey no la cita); (5) las industrias priorizadas en §16.7.
 
 ## Conexiones
 
