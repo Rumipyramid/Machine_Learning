@@ -77,3 +77,4 @@ tienen simulación de consumidores calibrada con microdato nacional, no solo sup
 
 [^1]: `research/personas/generador/matriz_usuarios_sinteticos.md` §2-3, notas v1.1-v1.3; medido
     con `validate.py --check`.
+- [[lima-norte-megaplaza-plaza-norte|Lima Norte, Megaplaza y Plaza Norte]] — estudios del consumidor de Lima Norte; el generador aún no tiene variable de zona de Lima.
