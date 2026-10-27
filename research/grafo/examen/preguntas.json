@@ -1,6 +1,6 @@
 {
- "_nota": "Examen fijo de calidad de Mu. Cada pregunta trae el nodo que debería usar, fuentes clave (basta que aparezca una), ideas que la respuesta debe contener (expresiones regulares, sin tildes ni mayúsculas) y afirmaciones que no debe hacer. Las respuestas de referencia las redactó Claude a partir de los nodos el 2026-10-25: el usuario debe revisarlas y corregirlas; una vez revisada, poner revisada: true. Cambiar una pregunta invalida la comparación con corridas anteriores: agregar en vez de editar. \"nodo\" puede ser una lista de nodos aceptables (desde 2026-10-25, cuando el nodo de diseño se dividió en nodos de dominio). v1.1 (2026-10-25): Q03 y Q05 recalibradas tras la primera corrida (falso positivo de \"no demuestra\" y sinónimos de confianza); las dos corridas de respuestas se recalificaron con v1.1.",
- "version": 1.1,
+ "_nota": "Examen fijo de calidad de Mu. Cada pregunta trae el nodo que debería usar, fuentes clave (basta que aparezca una), ideas que la respuesta debe contener (expresiones regulares, sin tildes ni mayúsculas) y afirmaciones que no debe hacer. Las respuestas de referencia las redactó Claude a partir de los nodos el 2026-10-25: el usuario debe revisarlas y corregirlas; una vez revisada, poner revisada: true. Cambiar una pregunta invalida la comparación con corridas anteriores: agregar en vez de editar. \"nodo\" puede ser una lista de nodos aceptables (desde 2026-10-25, cuando el nodo de diseño se dividió en nodos de dominio). v1.1 (2026-10-25): Q03 y Q05 recalibradas tras la primera corrida (falso positivo de \"no demuestra\" y sinónimos de confianza); las dos corridas de respuestas se recalificaron con v1.1. v1.2 (2026-10-25/27): se agregan Q21-Q24, preguntas de prioridad, decisión y comparación que exigen criterio explícito e implicación para el equipo.",
+ "version": 1.2,
  "preguntas": [
   {
    "id": "Q01",
@@ -356,6 +356,101 @@
    ],
    "no_debe": [],
    "referencia": "Cerca de US$1,8 billones; en 2024 alrededor de 60% de las pérdidas por catástrofe no estaban aseguradas.",
+   "revisada": false
+  },
+  {
+   "id": "Q21",
+   "tipo": "decision",
+   "pregunta": "¿En qué debería invertir primero un equipo de diseño en una aseguradora peruana?",
+   "nodo": [
+    "tendencias-diseno-innovacion",
+    "diseno-producto-digital",
+    "diseno-servicios-politicas-salud",
+    "diseno-estrategico-organizacional",
+    "diseno-producto-fisico-industrial",
+    "diseno-espacios-ciudad",
+    "diseno-sostenibilidad-circularidad",
+    "diseno-social-participativo",
+    "innovacion-evidencia",
+    "behavioral-design-estado-disciplina"
+   ],
+   "fuentes": [],
+   "debe": [
+    "(criterio|ordeno|orden[oa]|según (cu[aá]nto|qu[eé])|combina|pesa m[aá]s|vara)",
+    "(para el equipo|conviene|priorizar|empezar|primero|recomend|el siguiente paso|probar)",
+    "(medid|evidencia|probad)"
+   ],
+   "no_debe": [
+    "garantiza",
+    "siempre funciona"
+   ],
+   "referencia": "Debe declarar el criterio (efecto medido × aplicabilidad a seguros en Perú × urgencia), ordenar opciones con su evidencia, conectar los puntos y cerrar con qué hacer primero y cómo probarlo.",
+   "revisada": false
+  },
+  {
+   "id": "Q22",
+   "tipo": "decision",
+   "pregunta": "¿Conviene usar usuarios sintéticos para decidir el lanzamiento de un producto de seguros?",
+   "nodo": [
+    "convergencia-psicologia-economia-ia",
+    "modelo-personas-sinteticas"
+   ],
+   "fuentes": [
+    "F-545",
+    "F-556",
+    "F-558",
+    "F-1061"
+   ],
+   "debe": [
+    "(no (conviene|reemplaz|basta|sirve)|solo para|complement|explorar|prototip)",
+    "(decid|decisi[oó]n|lanzamiento)",
+    "(para el equipo|conviene|priorizar|empezar|primero|recomend|el siguiente paso|probar)"
+   ],
+   "no_debe": [
+    "reemplazan a las encuestas",
+    "basta con usuarios sint"
+   ],
+   "referencia": "No para decidir el lanzamiento: sirven para explorar y prototipar; comprimen la variación y sesgan hacia lo positivo; la decisión pide datos de personas reales.",
+   "revisada": false
+  },
+  {
+   "id": "Q23",
+   "tipo": "comparacion",
+   "pregunta": "Para ganar confianza en seguros, ¿qué pesa más: explicar mejor la póliza o simplificarla?",
+   "nodo": [
+    "seguros-comportamiento-mundo-peru",
+    "behavioral-design-estado-disciplina",
+    "diseno-servicios-politicas-salud",
+    "glosario-seguro-salud-peru"
+   ],
+   "fuentes": [],
+   "debe": [
+    "(criterio|ordeno|orden[oa]|según (cu[aá]nto|qu[eé])|combina|pesa m[aá]s|vara)",
+    "(simplific)",
+    "(explic|informaci[oó]n|divulg)"
+   ],
+   "no_debe": [],
+   "referencia": "Debe comparar con un criterio explícito; la evidencia sobre divulgación obligatoria y simplificación sugiere que simplificar y diseñar la elección pesa más que agregar explicaciones, con matices.",
+   "revisada": false
+  },
+  {
+   "id": "Q24",
+   "tipo": "prioridad",
+   "pregunta": "¿Qué riesgo de la IA debería preocuparnos más al diseñar servicios para clientes?",
+   "nodo": [
+    "conducta-humano-ia",
+    "convergencia-psicologia-economia-ia"
+   ],
+   "fuentes": [
+    "F-488"
+   ],
+   "debe": [
+    "(criterio|ordeno|orden[oa]|según (cu[aá]nto|qu[eé])|combina|pesa m[aá]s|vara)",
+    "(adulaci|sobreconfianza|dependencia|da la razon|persuasi)",
+    "(para el equipo|conviene|priorizar|empezar|primero|recomend|el siguiente paso|probar)"
+   ],
+   "no_debe": [],
+   "referencia": "Debe ordenar riesgos con un criterio (daño × probabilidad × evidencia) y priorizar, por ejemplo, la adulación y la sobreconfianza, con implicaciones de diseño.",
    "revisada": false
   }
  ]

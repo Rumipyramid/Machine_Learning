@@ -281,6 +281,8 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
   const ampliarIA = q => q + (/\b(ia|ai)\b/i.test(q) ? " inteligencia artificial generativa agentes confianza adulación persuasión" : "") + (/[uú]ltimamente|recientemente|\bhoy\b|\bahora\b|actualmente|[uú]ltimo/i.test(q) ? " reciente tendencia" : "") + SINONIMOS.filter(([r]) => r.test(q)).map(([, s]) => s).join("");
   const ampliarDiseno = q => /dise[ñn]/i.test(q) && !/digital|\bux\b|\bui\b|interfaz|app\b|web\b|servicio|p[uú]blic|salud|industrial|gr[aá]fic|marca|espacio|arquitect|urban|sostenib|circular|social|organizac|estrat[eé]g/i.test(q) ? `${q} ${DOMINIOS_DISENO}` : q;
   const RIGOR_ORDEN = f => "ABCDE".indexOf(f.rig) < 0 ? 5 : "ABCDE".indexOf(f.rig);
+  // Preguntas que piden juzgar (qué importa, qué conviene, qué priorizar), no solo saber qué dice la evidencia.
+  const EVALUATIVA = /relevan|importan|priori|conviene|convendr|deber[ií]a|recomiend|qu[eé] hago|qu[eé] hacer|vale la pena|invertir|enfoc|preocup|lo mejor|empezar|primero|pesa m[aá]s|m[aá]s importante|m[aá]s efectiv|funciona mejor/i;
   function retrieve(q) {
     // 1) Fragmentos: primero se eligen los nodos que de verdad tratan la pregunta (suma de sus 3 mejores fragmentos);
     //    de otros nodos solo entra un fragmento si es casi tan bueno como el mejor. Nada por debajo del 35% del mejor.
@@ -322,7 +324,16 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     const ts = scored(IDX.tens, q), ttop = ts.length ? ts[0][0] : 0;
     const tens = TENS.filter(t => ids.has(t.f)).slice(0, 6);
     for (const [v, i] of ts.slice(0, 3)) if (v >= ttop * .7 && !tens.includes(IDX.tens.docs[i]) && tens.length < 8) tens.push(IDX.tens.docs[i]);
-    return { nodes, fuentes: [...ids].map(id => FUENTES.get(id)), hyps, tens, rels, conv };
+    // 4) Juicio acumulado: en preguntas de prioridad o de decisión, la parte pensada del cerebro (síntesis, escala de
+    //    madurez, reglas de criterio) y las lecciones del equipo, aunque la búsqueda por palabras no las haya elegido.
+    let juicio = [], lecciones = [];
+    if (EVALUATIVA.test(q)) {
+      const vistos = new Set(nodes);
+      juicio = sc.filter(([, i]) => /s[ií]ntesis|escala de madurez|criterio e intuici|reglas de criterio|veredicto|resumen ejecutivo/i.test(IDX.nodes.docs[i].seccion || ""))
+        .map(([, i]) => IDX.nodes.docs[i]).filter(c => !vistos.has(c)).slice(0, 2);
+      if (IDX.intu) { const ls = scored(IDX.intu, q), lt = ls.length ? ls[0][0] : 0; lecciones = ls.filter(([v]) => v >= lt * .4).slice(0, 3).map(([, i]) => IDX.intu.docs[i]); }
+    }
+    return { nodes, fuentes: [...ids].map(id => FUENTES.get(id)), hyps, tens, rels, conv, juicio, lecciones };
   }
   function contextBlock(r) {
     const n = r.nodes.map((c, i) => `[[Nodo ${i + 1}: "${c.titulo}" — sección "${c.seccion}" (archivo ${c.node}.md)]]\n${c.texto}`).join("\n\n");
@@ -333,7 +344,11 @@ footer{margin-top:36px;border-top:2px solid var(--fg);padding-top:8px;font-size:
     const rv = x => `"${x[0]}" ${VERBO[x[1]] || x[1].replace(/_/g, " ")} "${x[2]}" [${x[3]}]`;
     const rl = (r.rels || []).map(x => `- ${rv(x)}${x[4] ? ` (${x[4]})` : ""}: ${x[5]}`).join("\n");
     const cv = (r.conv || []).map(([o, a]) => `- "${o}": ${a.length} fuentes distintas — ${a.slice(0, 5).map(x => `"${x[0]}" ${VERBO[x[1]] || x[1].replace(/_/g, " ")} [${x[3]}]`).join("; ")}`).join("\n");
-    return `EXTRACTOS DE LOS NODOS DE MU:\n${n || "(ninguno coincide)"}\n\nFICHAS DEL REGISTRO DE FUENTES (código | autor | año | título | rigor | resumen):\n${f || "(ninguna coincide)"}\n\nCONTRADICCIONES DEL GRAFO QUE TOCAN LA PREGUNTA (fuente | afirmación | relación | afirmación | estado):\n${tn || "(ninguna)"}\n\nHIPÓTESIS DEL TABLERO RELACIONADAS (código, estado y evidencia):\n${hy || "(ninguna)"}\n\nRELACIONES DEL GRAFO QUE TOCAN LA PREGUNTA (qué aumenta, reduce o explica qué, según cada fuente; entre paréntesis, si es causal, observacional o descriptiva):\n${rl || "(ninguna)"}\n\nCONVERGENCIAS (un mismo resultado que varias fuentes distintas explican o mueven):\n${cv || "(ninguna)"}`;
+    const ju = (r.juicio || []).map(c => `[[Juicio del cerebro: "${c.titulo}" — sección "${c.seccion}"]]\n${c.texto}`).join("\n\n");
+    const le = (r.lecciones || []).map(l => `- ${l.titulo}: ${String(l.texto).slice(0, 600)}`).join("\n");
+    const extra = (ju ? `\n\nJUICIO ACUMULADO DEL CEREBRO (síntesis, escala de madurez y reglas de criterio que el equipo ya destiló; úsalo para fijar el criterio y ordenar):\n${ju}` : "") +
+      (le ? `\n\nLECCIONES DEL EQUIPO (heurísticas de juicio destiladas de lecturas a fondo; sirven como criterio declarado, no como evidencia: dilas como lección del equipo):\n${le}` : "");
+    return `EXTRACTOS DE LOS NODOS DE MU:\n${n || "(ninguno coincide)"}\n\nFICHAS DEL REGISTRO DE FUENTES (código | autor | año | título | rigor | resumen):\n${f || "(ninguna coincide)"}\n\nCONTRADICCIONES DEL GRAFO QUE TOCAN LA PREGUNTA (fuente | afirmación | relación | afirmación | estado):\n${tn || "(ninguna)"}\n\nHIPÓTESIS DEL TABLERO RELACIONADAS (código, estado y evidencia):\n${hy || "(ninguna)"}\n\nRELACIONES DEL GRAFO QUE TOCAN LA PREGUNTA (qué aumenta, reduce o explica qué, según cada fuente; entre paréntesis, si es causal, observacional o descriptiva):\n${rl || "(ninguna)"}\n\nCONVERGENCIAS (un mismo resultado que varias fuentes distintas explican o mueven):\n${cv || "(ninguna)"}${extra}`;
   }
 
   // Paso 1 de 2: pensar. Una llamada en el nivel de más razonamiento arma un plan que no se muestra; el paso 2 lo redacta.
@@ -346,7 +361,7 @@ ${previa ? `PREGUNTA ANTERIOR DE LA CONVERSACIÓN: ${previa}\n` : ""}PREGUNTA: $
 
 Piensa así:
 1. Tipo de pregunta: "dato" (qué dice la evidencia sobre algo), "mecanismo" (por qué pasa), "comparacion", "prioridad" (qué importa más, qué es lo más relevante), "decision" (qué conviene hacer) o "fuera_de_alcance".
-2. Criterio: con qué vara se responde. En prioridad o decisión, defínelo pensando en quien pregunta (un equipo de diseño estratégico en seguros en Perú): por ejemplo, efecto medido × aplicabilidad a seguros en Perú × urgencia. No reemplaces la pregunta por otra más fácil (por ejemplo, "lo más relevante" no es lo mismo que "lo mejor medido").
+2. Criterio: con qué vara se responde. Si llega un JUICIO ACUMULADO o LECCIONES DEL EQUIPO, apóyate en ellos para fijar el criterio y el orden (las lecciones son criterio declarado del equipo, no evidencia). En prioridad o decisión, defínelo pensando en quien pregunta (un equipo de diseño estratégico en seguros en Perú): por ejemplo, efecto medido × aplicabilidad a seguros en Perú × urgencia. No reemplaces la pregunta por otra más fácil (por ejemplo, "lo más relevante" no es lo mismo que "lo mejor medido").
 3. Afirmaciones candidatas: de 2 a 5, ordenadas por peso según el criterio. Cada una con los códigos de fuente que la sostienen, tal como aparecen en los extractos, y su solidez. No generalices más allá de lo que mide la fuente: di el alcance (dónde, en quién).
 4. Choques: dónde las fuentes se contradicen o una afirmación depende de una cifra sin verificar.
 5. Hilo: el mecanismo o la idea común que conecta las afirmaciones, si existe; usa las relaciones y convergencias del grafo. Si no hay hilo, déjalo vacío: no lo inventes.

@@ -19,8 +19,11 @@
 | 2026-10-25 | recuperacion | nivel 6: lectura 60%, fichas corregidas | nodo correcto 100% · fuente clave 100% |
 | 2026-10-25 | recuperacion | pensar en dos pasos (plan + redacción) | nodo correcto 100% · fuente clave 100% |
 | 2026-10-25 | respuestas | pensar en dos pasos (plan + redacción) | puntaje medio 98 · 0 con fuentes inventadas · 0 con afirmaciones prohibidas · 3 con respaldo firme |
+| 2026-10-27 | recuperacion | juicio acumulado en preguntas de prioridad + 4 preguntas nuevas | nodo correcto 100% · fuente clave 100% |
+| 2026-10-27 | recuperacion | juicio acumulado (secciones de síntesis y criterio) | nodo correcto 100% · fuente clave 100% |
+| 2026-10-27 | recuperacion | juicio acumulado también en comparaciones | nodo correcto 100% · fuente clave 100% |
 
-## Última corrida de recuperacion (2026-10-25)
+## Última corrida de recuperacion (2026-10-27)
 
 | Pregunta | Nodo correcto | Fuente clave | Nodos recuperados |
 |---|---|---|---|
@@ -44,6 +47,10 @@
 | Q18 | sí | — | tendencias-diseno-innovacion, diseno-producto-fisico-industrial, diseno-servicios-politicas-salud |
 | Q19 | sí | — | modelo-salud-ia-farmacias-peru, diseno-producto-fisico-industrial |
 | Q20 | sí | sí | seguros-comportamiento-mundo-peru, mecanismos-seguros-salud, fenomeno-el-nino-impacto-personas |
+| Q21 | sí | — | diseno-estrategico-organizacional, diseno-producto-fisico-industrial, diseno-servicios-politicas-salud |
+| Q22 | sí | sí | convergencia-psicologia-economia-ia, rentabilidad-modelos-seguros, matriz-productos-vida-rimac |
+| Q23 | sí | — | transicion-venta-fria-a-opt-in, diseno-servicios-politicas-salud, tendencias-diseno-innovacion |
+| Q24 | sí | sí | conducta-humano-ia, convergencia-psicologia-economia-ia, evaluacion-calidad-agentes-conversacionales-ia |
 
 ## Última corrida de respuestas (2026-10-25)
 
