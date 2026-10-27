@@ -150,6 +150,7 @@ Una consultora conductual de España y LATAM (BeWay) publica que una aseguradora
 - **Es el primer trabajo peruano publicado que se halló que junta economía conductual y seguros.** Pero no es un estudio con datos de consumidores: es una **revisión narrativa** de los cinco sesgos clásicos, más una **descripción gráfica de las primas de la SBS** de 2006 a 2024. Lo que llama "enfoque empírico" es mirar esas series y atribuir sus variaciones a sesgos, sin probarlo.
 - **Varias cifras de efecto que atribuye a otros estudios no coinciden con esos estudios.** Dos se pudieron comprobar como mal atribuidas y varias más no se pudieron confirmar (§8.2). **No conviene usar esas cifras.**
 - **Lo más valioso son sus referencias:** hay **experimentos de campo en el Perú sobre demanda de seguro agrícola** (Galarza y Carter, 2010; Pétraud, Boucher y Carter, 2015). Esto corrige la frase de §0 de que no había estudio peruano: no lo hay **en consumidores urbanos**, pero sí en productores agrícolas (F-1060, F-1074).
+- **La teoría prospectiva y la racionalidad limitada** se tratan en §8.5: el marco es el clásico y es correcto; los problemas están en cómo lo aplica a seguros.
 - **Calificación: 🟡 C.** Revista universitaria con fechas de recepción y aceptación (arbitraje no verificado), de acceso abierto; útil como mapa, débil como evidencia.
 
 ### 8.2 Qué se puede usar y qué no
@@ -195,6 +196,47 @@ Las citas se verificaron por resumen, no leyendo cada paper. Las Figuras 2 y 3 d
 1. Abrir las memorias de la SBS de 2008, 2020 y 2023 y confirmar las cifras de la fila 1.
 2. Leer el texto de Galarza y Carter (2010) y de Pétraud et al. (2015) completos.
 3. Si la persona usuaria quiere, escribir a la revista o a los autores con la lista de citas que no coinciden (filas 7, 9, 12 y 13).
+
+
+### 8.5 La teoría prospectiva, la racionalidad limitada y los casos del artículo
+
+*Esta parte se agregó porque la primera lectura (§8.1 a §8.4) trató los sesgos y las citas con cifras, pero no desarrolló el marco teórico del artículo (teoría prospectiva y racionalidad limitada) ni varios de sus casos.*
+
+**Conclusión.** La parte teórica del artículo es **correcta pero conocida**: reproduce el marco clásico de Kahneman y Tversky y de Simon sin aportar un hallazgo nuevo. Los problemas aparecen al **aplicarla a seguros**, donde usa la misma teoría para predecir más y menos demanda sin decir cuándo pesa cada lectura, y donde varias aplicaciones tienen una evidencia más débil de lo que se presenta.
+
+**La teoría prospectiva: qué dice el artículo y cómo se sostiene**
+
+| Idea del artículo | Qué se comprobó | Estado |
+|---|---|---|
+| Las personas evalúan ganancias y pérdidas respecto de un **punto de referencia**, con una función de valor no lineal y sensibilidad decreciente (Kahneman y Tversky, 1979; 1984; Tversky y Kahneman, 1992) | Es el núcleo clásico de la teoría | 🟢 teoría clásica |
+| **Aversión a la pérdida:** 'las pérdidas duelen aproximadamente el doble' (Kahneman y Tversky, 1979, p. 279, entre comillas) | En 1979 la asimetría se plantea de forma cualitativa; el coeficiente de ~2,25 viene de 1992 y se estimó con 25 estudiantes de posgrado (fuentes secundarias, F-1084); el meta-análisis de 607 estimaciones da **1,955** (F-727) | 🟡 la cita textual no se confirmó; usar 1,955 |
+| **Ponderación de probabilidades:** se sobrepesan las pequeñas y se subpesan las medianas | Marco clásico de la versión de 1992 | 🟢 teoría clásica |
+| **Efecto reflejo:** aversión al riesgo en ganancias y búsqueda de riesgo en pérdidas | Marco clásico; su estado de replicación no se revisó aquí | 🟡 usar con cuidado |
+| **Encuadre** con el problema de la enfermedad asiática (Tversky y Kahneman, 1981) | El ejemplo es el correcto; el encuadre ganancia/pérdida replicó en 36 muestras (F-713) | 🟢 robusto |
+| Un estudio de Villarreal y Córdoba (2017) mostraría que la aversión a la pérdida afecta a inversionistas de mercados emergentes | El título de ese trabajo es de contabilidad (§8.2, fila 12) | 🔴 no corresponde |
+| **Efecto disposición** (Barberis y Thaler, 2003) | Es de finanzas de inversión, no de seguros | 🟡 analogía |
+
+**Aplicación a seguros: tres tensiones que el artículo no resuelve (inferencias mías)**
+
+1. **La misma teoría predice más y menos demanda.** El artículo dice que la aversión a la pérdida lleva a preferir deducibles bajos y coberturas amplias (más demanda) y también que la gente evita la prima como una pérdida segura (menos demanda). La evidencia real es mixta: en un experimento brasileño pequeño, pagar un deducible **aumentó** la aversión al riesgo (F-1079); en datos de EE.UU., los más aversos a la pérdida tienen **menos** ciertos seguros (F-1076). Depende del punto de referencia, que el artículo no define.
+2. **Sobrepesar las probabilidades pequeñas debería elevar la demanda de seguro contra eventos raros, pero el artículo también dice que esos eventos están poco asegurados.** La literatura explica esa subcontratación con otras ideas (se ignoran los desastres, las emociones; F-971, F-972), no con la ponderación de la teoría prospectiva. El artículo atribuye ambas cosas a la teoría.
+3. **Que haya sesgo no implica que la teoría prospectiva sea la mejor explicación.** En el experimento de Pisco, ni la teoría prospectiva ni la utilidad esperada predicen bien la demanda real (F-1074), y reencuadrar movió la elección 8% frente al 24% que predecía el modelo.
+
+**Los casos de aplicación del artículo**
+
+| Caso | Qué se comprobó | Estado |
+|---|---|---|
+| **Seguro de auto en Brasil** (Graminha y Afonso, 2022): el artículo dice que los participantes prefirieron opciones que eliminan la incertidumbre y pagaron más por seguros en ciudades percibidas como peligrosas | Experimento presencial con 163 personas de una institución educativa; los más jóvenes, solteros y hombres, más propensos al riesgo; pagar un deducible aumentó la aversión al riesgo; **el efecto certeza salió contrario a lo esperado**; el resumen no menciona las ciudades peligrosas (F-1079) | 🔵 experimento real y latinoamericano, pero pequeño; la descripción del artículo no coincide con el resumen |
+| **Seguro cibernético** (Joshi et al., 2024): 'un estudio reciente demostró' que las empresas piden más seguro si el riesgo se enmarca como pérdida catastrófica | Es un preprint de modelado teórico, no una demostración empírica (F-1081) | 🟡 exagerado |
+| **Seguro agrícola** (Du et al., 2017): los agricultores se apoyan en intuición y normas tradicionales | Es un estudio de productores de EE.UU. con seguro subsidiado: sus elecciones contradicen la utilidad esperada y una prima de bolsillo mayor reduce la elección (F-1080); no habla de normas tradicionales | 🟡 se extrapola a 'zonas agrícolas' |
+| **Países y crecimiento** (Baronio et al., 2023): +1% del PIB per cápita se asocia con +2,7% de penetración | Documento de trabajo entre 59 países; las estimaciones no se vieron (F-1082) | 🟠 no verificado; es correlacional |
+| **Subida de primas tras un incendio** (California, +40% a +50%) como ejemplo de racionalidad limitada | No se verificó la cifra; **el ejemplo es de reprecio por parte del asegurador**, no de limitación del consumidor | 🟠 ejemplo mal ubicado (inferencia mía) |
+| **Subaseguro en Australia** (83% creía tener seguro de hogar) | No se verificó la cifra (una encuesta del Consejo de Seguros de Australia vía prensa) | 🟠 no verificado |
+| **IAG y la 'lealtad'** (2024) | Hay demandas colectivas sin resolver por un presunto 'impuesto a la lealtad': acusación de que un algoritmo identificaba a quienes menos cambiarían (F-1083) | 🟠 acusaciones; es un caso de inercia aprovechada por la aseguradora, no de racionalidad limitada |
+
+**La racionalidad limitada (Simon, 1955).** El artículo la presenta bien: las personas se conforman con soluciones satisfactorias y usan atajos por información, tiempo y capacidad limitados, y distingue racionalidad normativa y descriptiva. Es teoría clásica, no un hallazgo. Su aplicación principal es la **renovación automática sin comparar** (cifras de 65% y 60%, no verificadas, §8.2 filas 9 y 10). La evidencia real sobre inercia en seguros que ya está en el ledger es mejor: Ericson (2014) sobre inercia y precios en seguros de medicamentos (F-921), Handel (2013) sobre inercia y selección en seguro de salud (F-951), Handel y Kolstad (2015; F-975), y la prohibición del *price walking* en el Reino Unido (F-959).
+
+**Las recomendaciones del artículo** (encuadres positivos, productos más accesibles y transparentes, educación financiera y regulación) son razonables pero **no salen de datos propios**: el propio artículo admite que 'no existen referentes plenamente comparables en el ámbito local'. La evidencia disponible matiza dos de ellas: educar no basta (F-1037) y el encuadre mueve menos la elección de lo que predice el modelo (F-1074).
 
 ---
 
