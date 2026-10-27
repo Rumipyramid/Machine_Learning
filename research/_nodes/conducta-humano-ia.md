@@ -140,3 +140,4 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — el marco más amplio en que se inscribe este node (cinco frentes); aporta lo nuevo de 2025-2026 en persuasión (F-585, F-586, F-589) y compañía (F-587, F-588).
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — obediencia a la autoridad (§2.2) y fluidez de procesamiento (§5.7) como base psicológica de la sobre-confianza en respuestas de IA con tono experto.
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — cuánto delegará la gente a un agente de IA en seguros (gradiente de comodidad, P3 y P7).
+- [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — §14: aceptación de la IA en seguros que asiste frente a la que decide, con los experimentos de Longoni, Dietvorst y Luo.

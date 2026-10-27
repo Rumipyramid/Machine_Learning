@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.6 (v1.6 suma §13: para qué digitalizan y qué buscan; v1.5 sumó §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.7 (v1.7 suma §14: benchmark de canales digitales aportado por la persona usuaria; v1.6 suma §13: para qué digitalizan y qué buscan; v1.5 sumó §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098; §14: F-1125 a F-1131). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -1032,6 +1032,77 @@ Todo se leyó por resumen de búsqueda. Las encuestas son de proveedores o consu
 
 ---
 
+## 14. Adenda v1.7 (2026-10-27): benchmark de canales digitales aportado por la persona usuaria
+
+**En corto.** El benchmark (19 láminas, set-2026) dice dos cosas. Una es de conducta: la gente declara querer más servicios, datos compartidos y IA, pero lo que hace es mucho menor, y el seguro se usa unas 2,7 veces al año. La otra es de diseño: las webs son puertas de decisión y las apps concentran el uso continuo. Verifiqué las cifras contra las fuentes que pude abrir: **la parte conductual se sostiene en lo esencial, pero seis cifras no se confirmaron y la tesis de diseño es una lectura del equipo sin datos de uso.** Todo está registrado en el ledger (F-1125 a F-1131). Lo leí por láminas; verifiqué cada fuente por resumen o extracto.
+
+### 14.1 Qué es el documento y cómo lo traté
+
+Es una compilación de un equipo de diseño con fuentes externas (Bain, Accenture, Capgemini, Credicorp, Insurity y artículos académicos) y capturas de webs y apps públicas de otras aseguradoras y fintech. **Su parte de datos cita fuentes en casi todas las láminas; su parte de webs y apps es observación descriptiva, sin métricas.** Lo clasifiqué como 🟡 C (F-1125). Verificación por afirmación:
+
+| Afirmación del benchmark | Fuente que declara | Estado |
+|---|---|---|
+| 59% quiere que su aseguradora de vida premie el estilo de vida saludable | Bain 2023 (28.765 consumidores, 14 países) | ✔ Confirmada (F-1095) |
+| Solo 8% a 21% comparte datos de dispositivos; uso real de 4,3% (Brasil) y 1,6% (Países Bajos) | Bain 2023 | ✗ No confirmadas. Bain dice que pocos comparten datos, pero no hallé esas cifras |
+| Autoevaluación y conocimiento real casi sin relación (r=0,128); R=0,67 y 0,64 con confianza e intención | Luna-Cortés y Brady, 2024 | ◐ El resumen confirma que no hay relación entre ambos y que la educación sube confianza e intención; **las cifras de correlación no se confirmaron** (F-1126) |
+| 72% de los mercados emergentes nunca tuvo educación formal en seguros | "Ranasinghe et al., 2019, *Sustainability*" | ✗ **No localizado.** El artículo más parecido de ese año en esa revista es de Weedige y colegas (Sri Lanka, n=300) y no trae ese dato |
+| 60%, 58% y 63% compartirían más datos por rapidez, asesoría o transparencia | Accenture 2023 (n=49.000) | ◐ Se confirma la muestra (33 mercados, campo jul-ago de 2022) pero no las cifras (F-1131) |
+| 53% se preocupa por cuántos datos se recogen; 42% ve la contratación "compleja y larga"; 27% cambió de proveedor | Capgemini 2024 (n=3.323) y fuente no visible | ✗ No confirmadas |
+| 26% de los peruanos en nivel alcanzado de inclusión financiera (15% en 2021) | Credicorp, IIF 2024 | ✔ Confirmada (F-1130). **Hay una edición posterior con 29% y 47,7 puntos** |
+| 35% nivel bajo, 39% en progreso, 58% con billetera móvil | Credicorp, IIF 2024 | ✗ No confirmadas; una búsqueda sugiere que el 58% podría ser de otro país |
+| 24 de cada 100 peruanos tienen algún seguro; solo 3% de los hogares tiene seguro de desastres | Credicorp, APESEG vía Infobae, Swiss Re | ◐ El 3% coincide con el 3,3% que ya tenemos; el 24% no se halló |
+| Comodidad con IA: 46%, 39%, 38% (asiste) y 22%, 16% (decide) | Insurity 2026 (EE.UU., n>1.000) | ✔ Coincide con F-982 |
+| Resistencia a la IA se elimina si apoya en vez de reemplazar o si el usuario puede ajustar el resultado | Longoni 2019; Dietvorst 2018 | ✔ Confirmada, **pero en IA médica y en pronósticos**, no en seguros (F-1128, F-1129) |
+| −79,7% de compra al declarar que es un bot | Luo 2019 (n>6.200) | ✔ Confirmada (F-1127), con un matiz: **un bot que no se declaró vendió tanto como un vendedor experto** |
+| 2,7 interacciones al año; 5 o más dan hasta 90 puntos más de NPS | Sin fuente visible | ◐ Es coherente con "dos o tres solicitudes por cliente al año" (ZS, F-1020); **el dato de NPS no tiene fuente** |
+| Vitality 144, John Hancock 240-360 y Yape 800 interacciones al año | Sin fuente visible | ✗ **Unidades inconsistentes:** la lámina rotula a Yape como "804 transacciones al mes" sobre una escala "por año". Vitality es autorreportado (F-1027) |
+| Ipsos AI Monitor: 66% entusiasmo y 47% nerviosismo en Perú | Ipsos 2025 | ◐ El propio benchmark los marca "pendientes de verificar" |
+
+### 14.2 Lo que dice sobre conducta (y cómo lo leo)
+
+1. **El techo de uso del seguro es la frecuencia.** Se necesita algo de la aseguradora unas 2,7 veces al año, frente a cientos de interacciones en una billetera. La comparación con Yape no es válida mientras no se aclare la unidad. Las aseguradoras que multiplicaron interacciones lo hicieron con programas de bienestar (Vitality, John Hancock), pero ambas cifras son autorreportadas y Vitality tiene caducidad documentada del engagement (F-1027, F-99). Es consistente con la tesis de recurrencia de F-1020, no la prueba.
+2. **Interés declarado frente a uso real.** El 59% que quiere recompensas por vivir sano es la actitud; los datos de uso del benchmark serían de un dígito, pero **no pude confirmar esas cifras**. Es el mismo patrón de la brecha entre actitud y conducta que ya teníamos (F-1095).
+3. **La alfabetización importa y la autoevaluación no sirve para medirla.** Es el hallazgo mejor sostenido del benchmark: una escala objetiva y un experimento (F-1126). **Pero es de seguro de viaje.** Extenderlo a seguros de vida, salud o autos es una hipótesis. Para el diseño: no preguntar "¿cuánto sabes de seguros?" como filtro del onboarding.
+4. **"Dan datos a cambio de algo" es intención, no conducta.** Las tres cifras de 58% a 63% son de una encuesta de disposición. Cuando el mismo benchmark muestra que solo una fracción comparte datos de dispositivos, la lectura "intercambio explícito" queda como hipótesis. **La lámina 7 contradice a la 5 si se la lee como conducta.**
+5. **"El digitalizable es el 39%" es una etiqueta del equipo.** El 26% alcanzado está confirmado; el resto no. Lo que el índice llama "en progreso" (tiene productos, usa efectivo) no mide qué porcentaje aceptaría un seguro digital. Hay una edición posterior (29%) que conviene usar. También hay otras medidas de acceso que no coinciden: 67% con cuenta o billetera (SBS, F-936) y 59% con cuenta (Global Findex, F-880).
+6. **"Tres de cada cuatro peruanos no son clientes de nadie" (24%) no coincide con la base actual** (~4 de cada 10 tiene o tuvo seguro en dos años). Las dos medidas no tienen la misma definición (personas u hogares, algún seguro hoy o en dos años, con o sin SOAT). Hasta conciliarlas, usar las dos como rango y no una sola.
+7. **IA: aceptan que asista, no que decida.** Es la lectura más sólida. Los mecanismos (resistencia por "no considera lo que me hace único", control percibido, costo de revelar) son reales pero vienen de IA médica, pronósticos y ventas por llamada. **No hay evidencia conductual peruana de IA en seguros**, igual que ya registraba el node de conducta humano-IA. El matiz de Luo: el bot sin declarar rindió como un vendedor experto, y declarar su identidad hoy se exige en varios marcos; el costo de revelarlo es un dato de diseño, no una razón para ocultarlo.
+
+### 14.3 Qué muestra el benchmark de webs, apps y fintech (observación descriptiva)
+
+**Lo que se ve, según el documento** (sin métricas de uso ni de conversión; no verifiqué los sitios):
+
+| Tipo | Referentes y rol según el benchmark | Capacidades que distinguen a cada rol |
+|---|---|---|
+| **Webs** | Alan (*humaniza*: entra por tipo de cliente, lenguaje cercano), Oscar Health (*conecta*: perfil y necesidad, dos rutas claras), AXA (*resuelve*: accesos directos por producto, cotizar o reportar), Getsafe (*centraliza*: agrupa seguros en una plataforma) | De seis capacidades (cotización autoservicio, pago en la misma sesión, comparación de planes, distinguir miembro de prospecto, delegar la conversión, mostrar venta cruzada), **solo el rol "antesala hacia otro canal digital" cumple las seis**; la venta consultiva humana no distingue miembro de prospecto ni delega la conversión |
+| **Apps de aseguradoras** | Lemonade (*resuelve*: contrata, ajusta coberturas, reporta siniestros), Alan (*acompaña*: reembolsos, atención virtual con IA), Discovery (*previene*: metas de bienestar y recompensas), Ping An (*conecta*: integra salud y seguros), Allianz Allz (*asiste*: organiza pólizas y viajes con asistencia contextual) | Los roles "bienestar conectado" y "compañero de salud" son los únicos con retos, incentivos y prevención; **todos permiten enviar un reclamo o reembolso**; la atención virtual y la orientación de salud completas solo están en el compañero de salud |
+| **Patrones fintech** | Revolut (*prioriza*), N26 (*reorganiza*, revelación progresiva), Wise (*transparenta*: costo total antes de pagar), Chime (*adapta*: empieza con una protección simple y amplía según conducta), Monzo (*experimenta*: mide antes de escalar) | El benchmark propone cinco patrones transferibles a seguros |
+
+**La tesis del documento:** la web es la puerta de entrada a la decisión de compra y la app concentra la relación y el uso continuo.
+
+**Cómo la leo.**
+
+- Es una **clasificación y una hipótesis del equipo**; no hay datos de conversión, retención ni uso que la respalden. Los referentes (Alan, Oscar, Lemonade, Discovery, Ping An) son los más citados en la literatura de insurtech y pueden estar sobrerrepresentados frente a los que fracasaron.
+- **Los patrones fintech son ideas de diseño, no evidencia de resultado en seguros.** Que Chime adapte beneficios por conducta no dice que renovar suba.
+- **Choca con lo que vimos en Yape (§12.8 del foresight):** el benchmark supone que la relación vive en una app de la aseguradora, y los seguros vendidos dentro de una billetera de otro actor ponen la relación en la app de un tercero. Son dos futuros distintos; ninguna fuente los resuelve.
+- **Lo más útil para diseño** (hipótesis para probar): revelación progresiva, costo total antes de pagar y empezar con una protección simple. Las tres son coherentes con la alfabetización baja y la desconfianza de §14.2.
+
+### 14.4 Cruces con el resto del node
+
+- **Coinciden:** el techo de frecuencia (F-1020), la comodidad con IA (F-982), el 3,3% de seguro de desastres, y la importancia de la alfabetización (F-859).
+- **Tensiones:** (1) intención de compartir datos frente a conducta observada; (2) engagement de Vitality y John Hancock frente a la caducidad documentada (F-1027); (3) relación en la app propia frente a relación en la billetera ajena; (4) 24% con seguro frente a ~4 de cada 10 en nuestra base.
+- **Vacíos que se mantienen:** no hay evidencia conductual peruana de IA en seguros; ninguna fuente mide el efecto de un rol de web o app sobre conversión o retención.
+
+### 14.5 Pendientes de verificación
+
+1. Cifras de Bain sobre uso real de prevención y de datos de dispositivos (4,3%, 1,6%, 8% a 21%).
+2. Correlaciones de Luna-Cortés y Brady, y si la escala se aplicó a otros seguros.
+3. El 72% de educación formal en seguros: localizar la fuente original (la cita "Ranasinghe 2019" no apareció).
+4. Cifras de Accenture 2023 y de Capgemini 2024 (60%, 58%, 63%, 53%, 42%, 27%).
+5. Origen del 2,7 y del NPS de 90 puntos, y la unidad de la cifra de Yape.
+6. Edición posterior del índice de inclusión de Credicorp, con 29%.
+7. El 24% con seguro: Swiss Re y APESEG.
+
 ## Conexiones
 
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a seguros (Mundo vs. Perú)]] —
@@ -1057,3 +1128,4 @@ Todo se leyó por resumen de búsqueda. Las encuestas son de proveedores o consu
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — radar de 23 señales, preguntas profundas y escenarios a 2035 (reemplaza al radar que se retiró de este node).
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — doble clic sobre fidelidad, activación, bancaseguros y recurrencia: qué se puede responder afuera y qué no.
 - [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.
+- [[conducta-humano-ia|Conducta humano-IA]] — aceptación de la IA que asiste frente a la que decide, control percibido y costo de revelar (§14.2).
