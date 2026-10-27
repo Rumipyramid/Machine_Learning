@@ -339,3 +339,4 @@ Todas están en `research/fuentes/codice.md`.
 - [[futuro-asesores-seguros-venta-digital|Futuro de los asesores de seguros y venta digital]] — qué queda humano (P7).
 - [[venta-vida-digital-hibrida-latam|Venta de vida digital vs. híbrida en LATAM]] — comparación con LATAM (P6).
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas `lapuerta`]] — segmentos para simular escenarios.
+- [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — cómo medir hoy la recurrencia que algunas de estas experiencias futuras darían por supuesta.
