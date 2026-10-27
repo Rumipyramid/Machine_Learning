@@ -1,13 +1,13 @@
 # Digitalización en seguros en mercados emergentes: qué se digitaliza, para qué, qué conducta cambia y qué definir para Perú
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.5 (v1.5 suma §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
+> Fecha de elaboración: 2026-10-26 · Última actualización: 2026-10-27 · Versión: v1.6 (v1.6 suma §13: para qué digitalizan y qué buscan; v1.5 sumó §12: clasificación de fuentes aportadas por el usuario; v1.4 sumó §11: casos de México, Colombia, Chile y Argentina; v1.3 sumó §10: qué más explica la digitalización además de las cuatro variables de §2; v1.1 sumó §8: estado de la digitalización por etapa, insurtech y láminas de banca de México; v1.2 sumó §9: defaults, pago y automatización; el resto de la literatura conductual de seguros vive en `economia-conductual-seguros-literatura`)
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 > Pregunta original: cómo y para qué se digitalizan las aseguradoras, qué intervenciones conductuales se
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072; §13: F-1085 a F-1098). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -907,6 +907,104 @@ Además, al verificar los datos se sumaron dos fuentes que no estaban en la list
 **Lo que no está en el folleto:** nada específico de Perú más allá de su penetración y participación en primas y de que la SBS automatiza la captura de datos; nada de renovación, caducidad, activación ni de comportamiento del cliente. **No contesta ninguna de las hipótesis de §2 ni de §10.**
 
 **Dónde se aprovecha:** como referencia de contexto (§8.3 y §11), para verificar la participación de agentes en México (F-1072 frente a F-375) y como lista de afirmaciones de la industria que conviene probar con dato propio (`hipotesis-digitalizacion-seguros-evidencia-publica`).
+
+## 13. Adenda v1.6 (2026-10-27): para qué digitalizan las aseguradoras y qué buscan
+
+*Origen: la persona usuaria preguntó **para qué digitalizan y qué se busca al hacerlo**, antes de entrar a la estrategia. Partió de un documento interno (no versionado: repositorio público); de él solo se usaron las **fuentes públicas de referencia**, que se verificaron aquí. `/trinidad` con pista empírica/teórica y pista de negocio; **la pista social no se corrió.***
+
+### 13.1 Respuesta corta
+
+**Las aseguradoras digitalizan para siete cosas, que no pesan lo mismo ni se miden igual:** vender más, gastar menos en servir y operar, pagar menos siniestros, retener y profundizar la relación, dar al cliente lo que pide, crear productos y mercados nuevos, y defenderse de nuevos competidores. La literatura académica las agrupa en cuatro tareas: mejorar la experiencia, simplificar procesos, lanzar productos nuevos y prepararse para competidores de otras industrias (Eling y Lehmann, 2018; F-923).
+
+Lo que sostiene el resto de la sección:
+
+1. **Lo que las empresas declaran** es eficiencia y experiencia del cliente: en una encuesta a 43 ejecutivos, 60% marcó eficiencia operativa y 58% experiencia del cliente (F-1085); en otra, 59% espera de la IA, sobre todo, eficiencia (F-1086). Son encuestas de proveedores.
+2. **Lo que miden y publican** es volumen, velocidad, costo y uso (ventas digitales, tiempo de respuesta, usuarios activos). **Casi nunca publican el efecto sobre el resultado técnico** (siniestralidad y gastos).
+3. **Lo que está probado con causalidad independiente es muy poco:** un experimento aleatorizado de seguro por uso que cambió la conducta de manejo (F-442). El resto son correlaciones con selección (F-1087, F-1097) o cifras de las propias empresas (F-1092, F-1093).
+4. **La tensión de fondo (inferencia mía):** en seguros de propiedad y accidentes de EE.UU., los siniestros pesan casi tres veces lo que los gastos (71,0% frente a 25,2% de la prima en 2024; F-1091), pero la digitalización se ha usado más en venta y servicio. El siniestro es el bolsillo grande y más difícil de mover; los gastos son el chico y más controlable. La literatura pública no dice cuál rinde más.
+5. **No hay evidencia independiente de que "más uso" (MAU, tráfico) mejore el resultado.** En EE.UU., la compra digital sube (47% de las pólizas nuevas de auto y hogar) mientras la satisfacción con esa compra baja (523, −12 puntos) y solo 11% usa un chatbot (F-1094).
+
+### 13.2 Los siete objetivos: qué buscan, qué hay y qué tan sólido es
+
+| # | Objetivo | Qué buscan | Qué se encontró | Solidez |
+|---|---|---|---|---|
+| 1 | **Vender más y mejor** | Captar en digital, sobre todo en productos simples; vender por comparador, billetera o plataforma | 47% de las pólizas nuevas de auto y hogar en EE.UU. ya se compran en digital (F-1094); en Perú, ~90% de los SOAT se emiten digitales, un seguro obligatorio y de precio regulado (F-884). **No se halló que lo digital haya movido la penetración agregada** (§3.2) | 🟡 adopción medida; efecto total no |
+| 2 | **Gastar menos en servir y operar** | Autogestión, automatización, menos llamadas, procesos más cortos | Los autoservicios fallan y terminan en llamada (cifra de 31% en auto en EE.UU. no confirmada, F-1095); solo 11% usa un chatbot (F-1094); mejor ratio combinado de 6% en adoptantes tempranos de Lloyd's (F-1087); proveedores prometen −40% de costo de emisión (F-1071) | 🟠 correlación o cifra de proveedor |
+| 3 | **Pagar menos siniestros** | Prevención, detección de fraude, selección y precio más fino, control del siniestro | **Un RCT:** el seguro por uso cambia la conducta de manejo (F-442). Sensores de fuga con cifras de proveedores (F-1001). 57% de las aseguradoras del mundo usa IA contra el fraude (F-1072, de segunda mano). Discovery: 30% menos siniestros entre conductores 'avanzados y comprometidos', con selección (F-1093) | 🟢 un RCT; 🟠 el resto |
+| 4 | **Retener y profundizar** | Más productos por cliente, menos caducidad, relación continua | Ping An: 2,94 contratos por cliente y 99% de retención entre quienes tienen tres o más categorías (F-1092): **selección**, quien compra mucho ya era leal. Agrupar auto y hogar: retención de 95% frente a 85% (F-1018). Sin prueba causal de que la app retenga (§0 de `hipotesis-digitalizacion-seguros-evidencia-publica`) | 🟠 correlación |
+| 5 | **Dar lo que el cliente pide** | Experiencia sin fricción, relación digital directa, atención asistida | 59% de los menores de 40 quiere relación digital directa y solo 31% de las aseguradoras la ofrece; 67% quiere digital con un asesor dedicado y 16% lo recibe (F-1096). Interés en prevención muy alto en Brasil (97%) (F-1095). **La satisfacción con lo digital cae** (F-1094, F-1009) | 🟡 encuestas |
+| 6 | **Crear productos y mercados nuevos** | Embebido, paramétrico, microseguro, inclusión | Estimaciones de mercado que no concilian (F-998, F-999); casos de escala con cifras propias (GCash, Grab; §3.1); RCT de demanda en agricultura (F-847, F-849) | 🟠 PR; 🟢 solo los RCT agrícolas |
+| 7 | **Defenderse y habilitar** | Modelo operativo digital como requisito para competir; datos para la IA | Fitch: será un requisito para competir en LATAM (Fitch vía prensa); 74% lo ve como prioridad (F-1085); 99,1% del financiamiento insurtech del 2T 2026 fue a IA (F-901) | 🟡 opinión de analistas |
+
+### 13.3 Declarado, medido y probado
+
+| Objetivo | Lo que declaran | Lo que miden | ¿Está probado el efecto? |
+|---|---|---|---|
+| Vender más | Inclusión y penetración | Pólizas y primas digitales | No: no se mide el efecto en el total |
+| Gastar menos | Eficiencia | Tiempo, costo por trámite, uso de autoservicio | No de forma independiente; sí cifras de empresas |
+| Pagar menos siniestros | Prevención, fraude | Cuando se mide, siniestros de quienes participan | **Parcial:** un RCT de seguro por uso; el resto, con selección |
+| Retener | Fidelidad | Caducidad y contratos por cliente de quienes usan la app | No: la selección no se separa |
+| Dar lo pedido | Experiencia | Satisfacción y NPS | Correlación; la satisfacción digital baja |
+| Productos nuevos | Penetración y acceso | Pólizas vendidas | Solo en RCT agrícolas |
+| Defensa | Supervivencia | Inversión y lanzamientos | No aplica |
+
+**Lectura (inferencia mía):** hay una brecha entre el 'para qué' declarado y lo que se mide. Casi todo lo que se mide es de **actividad** (uso, velocidad, volumen) y casi nada es de **resultado** (siniestralidad, ratio combinado, retención causal). Que no se mida no prueba que no funcione, pero **impide saber qué objetivo rinde más**.
+
+### 13.4 ¿Hay estudios que midan el efecto de lo digital en el resultado de las aseguradoras?
+
+Hay pocos y débiles:
+
+- Un análisis de 49 sindicatos de Lloyd's halló un ratio combinado 6% mejor en los adoptantes tempranos; ACORD y Swiss Re relacionan madurez digital con creación de valor en 200 aseguradoras con una métrica propia (F-1087). Son correlaciones de corte transversal.
+- Un estudio de 23 aseguradoras sauditas halla que **la rentabilidad y la solvencia predicen la adopción** de insurtech, no al revés (F-1088): puede que las que ganan más inviertan más, y no que lo digital las haga ganar más.
+- Un panel dinámico ucraniano sobre digitalización y desempeño financiero existe, pero **solo se vio su resumen** (F-1088).
+- La literatura académica sobre insurtech se concentra en tecnología (IA y blockchain) más que en el efecto económico (F-1090) y ofrece modelos de cómo se crea valor sin medirlo (F-1089).
+- Las agencias más digitales crecen 70% más rápido (EE.UU., encuesta de aseguradoras de 2022), pero con selección (F-1097).
+
+### 13.5 Qué busca el cliente frente a lo que buscan las aseguradoras
+
+| Lo que busca la aseguradora | Lo que dice buscar el cliente | Distancia |
+|---|---|---|
+| Eficiencia en servir | Digital para lo simple y humano para lo complejo (§12; F-1096) | El autoservicio que falla se vuelve llamada |
+| Vender en digital | Poder comparar precios y coberturas (F-1094) | Hoy sube la compra y baja la satisfacción |
+| Pagar menos siniestros | Servicios de prevención: interés alto, sobre todo en Brasil (F-1095) | El uso actual es mucho menor que el interés (cifra no confirmada) |
+| Retener | Relación digital directa, con asesor dedicado (F-1096) | 59% frente a 31%; 67% frente a 16% |
+
+**Cautela:** son encuestas de mercados maduros (EE.UU., Europa, 14 a 18 países) de consultoras. **No hay medición equivalente para Perú.**
+
+### 13.6 El benchmark público verificado
+
+Las fuentes públicas citadas en el documento de la persona usuaria se revisaron en esta sesión (por resumen). ✔ confirmado · ✗ no confirmado.
+
+| Dato citado | Fuente | Verificación |
+|---|---|---|
+| 47% de las pólizas nuevas de auto y hogar se compran en digital; satisfacción de 523 (−12); 11% usó un chatbot; 11.553 evaluaciones | J.D. Power 2026 | ✔ (la caída de 12 puntos de segunda mano) |
+| Con herramientas de comparación, la compra pasa de 21% a 39% | J.D. Power 2026 | ✗ la prensa habla de **consideración** que casi se duplica; no se confirmó la cifra de compra |
+| Encuesta de 28.765 consumidores en 14 países; interés en prevención | Bain 2023 | ✔ (Brasil 97%, Japón 81%) |
+| Interés de 60% a 80% y uso actual de 2% a 4%; 31% de fallas del autoservicio | Bain 2023 | ✗ no se confirmaron |
+| 59% frente a 31%; muestra de 6.176 menores de 40 años | Capgemini y LIMRA | ✔ (además 67% frente a 16%) |
+| 77% espera recomendaciones basadas en datos frente a 16% | Capgemini y LIMRA | ✗ no se confirmó el 77% |
+| Agencias con mayor madurez digital crecen 70% más rápido | Agent for the Future | ✔ pero es el estudio de **2022**, de agentes de EE.UU. patrocinado por aseguradoras (el de 2021 daba 60%) |
+| Discovery: 30% menos siniestros de auto entre los mejor calificados | Shared Value Africa | ✔ 'avanzados y comprometidos': 30% menos frecuencia y 34% menos severidad, con selección |
+| Discovery: hospitalizaciones 10% menos, estancias 25% más cortas, siniestros de vida 45% menores, caídas de póliza 67% menores | Shared Value Africa | ✗ no se vieron esas cifras |
+| Ping An: 251 millones de clientes y 2,94 contratos por cliente | Resultados de 2025 | ✔ |
+| Ping An: prima de primer año 1,5 veces mayor en clientes de servicios de salud | Resultados de 2025 | ✗ no se halló (sí 99% de retención en 3 o más categorías y 1,7 veces más contratos a los 5 años) |
+| McKinsey 2020 (mercado alemán): 84% usa pasos digitales y 55% no se imaginaba comprar en línea | McKinsey | ✗ no se verificó en esta sesión |
+
+**Qué implica:** las cifras de J.D. Power, Bain, Capgemini y Ping An son verificables en lo central, pero **varias de las más llamativas no se pudieron confirmar**. Conviene citar solo lo ✔ y abrir la fuente de lo ✗ antes de usarlo en un entregable.
+
+### 13.7 Qué falta para responder del todo
+
+1. **Dimensionar los dos bolsillos en Perú.** Con las estadísticas de la SBS, el peso de los gastos y de los siniestros por ramo y por compañía. Hoy solo hay el dato de EE.UU. (F-1091). Es la pieza que permite decir cuánto vale cada objetivo.
+2. **Un estudio que mida el efecto de lo digital en el ratio combinado**, con diseño que separe selección (emparejamiento, diferencias en diferencias; §6 de `hipotesis-digitalizacion-seguros-evidencia-publica`).
+3. **Leer el panel dinámico ucraniano** y buscar paneles en *Journal of Risk and Insurance* y *Geneva Papers* (F-1088).
+4. **Medir lo que quiere el cliente peruano** (prevención, relación directa), no extrapolarlo de encuestas globales.
+5. **La pista social** no se corrió: falta ver qué se discute públicamente sobre para qué digitalizan las aseguradoras y qué reclaman los clientes.
+
+### 13.8 Límites
+
+Todo se leyó por resumen de búsqueda. Las encuestas son de proveedores o consultoras. Los datos de costos son de EE.UU. y de propiedad y accidentes. El documento interno de la persona usuaria **no se copió ni se resume aquí** (repositorio público); solo se usó su lista de fuentes públicas.
+
+---
 
 ---
 
