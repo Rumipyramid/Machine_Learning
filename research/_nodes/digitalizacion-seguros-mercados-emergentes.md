@@ -7,7 +7,7 @@
 > aplicaron y sobre quiénes, dónde hay oportunidades de diseño en mercados emergentes, qué se aprende de otras
 > industrias y con qué criterios definir al cliente digitalmente sano, la fidelidad y el cliente de alto valor
 > en una aseguradora peruana.
-> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1071). Reutiliza fuentes previas del ledger
+> Fuentes registradas en `research/fuentes/codice.md` (F-847 a F-968; §10: F-1030 a F-1043; §11: F-1044 a F-1060; §12: F-1061 a F-1072). Reutiliza fuentes previas del ledger
 > (F-372 a F-377, F-509, F-362 a F-366, F-442, F-807) citadas por ID.
 
 ---
@@ -835,7 +835,7 @@ La mezcla de canales de la región cambió poco: agentes y corredores aportan 60
 
 ### 12.1 Respuesta corta
 
-- **Ningún enlace se pudo abrir directamente:** la red de este entorno bloquea esos sitios (error 403 o de DNS) y no se intentó evadirlo. Cada fuente se leyó por **búsqueda dirigida a su sitio**, es decir, por resumen. Tres piezas (el PDF de Deloitte, el PDF de Pérez-Llorca y el número 495 de la revista de la Universidad de Lima) **no se leyeron**; de ellas solo se conoce lo que dicen sus fichas y páginas hermanas.
+- **Ningún enlace se pudo abrir directamente:** la red de este entorno bloquea esos sitios (error 403 o de DNS) y no se intentó evadirlo. Cada fuente se leyó por **búsqueda dirigida a su sitio**, es decir, por resumen. El PDF de Deloitte se leyó completo después, con la copia que subió la persona usuaria (§12.5). Dos piezas (el PDF de Pérez-Llorca y el número 495 de la revista de la Universidad de Lima) **siguen sin leerse**; de ellas solo se conoce lo que dicen sus fichas.
 - **Confiables como evidencia hay pocas.** Con reserva por ser parte interesada: el informe climático de MAPFRE Economics (F-1069). Con rigor académico y no de seguros: el artículo de la Universidad de Lima (F-1066). Los demás son consultoras, bufetes, corredoras o aseguradoras que describen su mercado (🟡 C), prensa o consultoras que se describen a sí mismas (🟠 D) y dos que **conviene descartar** como evidencia (🔴 E).
 - **Dos de las nueve se repiten a otras:** el reportaje de LexLatin resume el boletín de Pérez-Llorca, y la nota de MAPFRE repite el informe de Digital Insurance LATAM que ya estaba en el ledger (F-1003, F-1044). Cuentan como **una** fuente cada par, no como dos.
 - **Lo más útil que dejaron:** que el proyecto de reglamento de finanzas abiertas de la SBS ya está en consulta pública (F-1064), y que el financiamiento insurtech de la región se concentra en vida y salud (F-1068).
@@ -846,7 +846,7 @@ Pista: 🔬 empírica/teórica · 📱 social · 💼 negocio · ⚖️ regulaci
 
 | # | Fuente (enlace dado) | Qué es | Pista | Rigor | ¿Se leyó? | Qué aporta | Dónde se usa |
 |---|---|---|---|---|---|---|---|
-| 1 | Deloitte, folleto *Seguros Latinoamérica* (2025) | Consultora | 💼 | 🟡 C | **PDF no**; páginas hermanas de Deloitte por resumen | Penetración ~3% del PIB frente a ~7% mundial; más de 500 insurtechs; México 3,2% frente a 9,3% de la OCDE; Argentina: vida muy baja por inflación y restricciones cambiarias. **No agrega evidencia nueva** a lo ya usado | Contexto de §8.3 y §11 (F-1061) |
+| 1 | Deloitte, folleto *Seguros Latinoamérica* (2025) | Consultora | 💼 | 🟡 C | **Sí, completo** (PDF subido por la persona usuaria) | Cifras de penetración, de participación en primas y de canales de México; datos de Chile; **pero casi todo es de segunda mano y no mide retención** (ver §12.5) | §12.5 (F-1072; F-1061 queda como las páginas hermanas) |
 | 2 | Pérez-Llorca, *Actualidad Iberoamericana de Seguros* 3T 2026 | Bufete, boletín | ⚖️ | 🟡 C | **PDF no**; solo la ficha | Cubre Colombia, España, México, Portugal y, **desde esta edición, Perú** (13-oct-2026) | Foresight §11 (F-1062) |
 | 3 | LexLatin, reportaje de seguros, finanzas abiertas e IA | Medio jurídico (eco de la anterior) | ⚖️ | 🟠 D | Por resumen | La SBS contempla aseguradoras en finanzas abiertas; **AMIS: 15% a 20% de las aseguradoras mexicanas usa IA**; México sin ley general de IA; oportunidades en paramétricos, ciber y billeteras | Foresight §11 (F-1063) |
 | 4 | Gallagher Perú, 5 tendencias del mercado en LATAM 2026 | Corredora y reaseguradora | 💼 | 🟡 C | Por resumen | Mercado blando, regulación, cambio, clima; **insurtech abre nichos como Perú** (una frase); 95% del financiamiento insurtech del 1T 2026 fue a IA. Casi todo es de líneas comerciales | Foresight §11 (F-1065) |
@@ -868,14 +868,44 @@ Además, al verificar los datos se sumaron dos fuentes que no estaban en la list
 
 ### 12.4 Límites y pendientes
 
-**Límites.** Todo se leyó por resumen de búsqueda. El PDF de Deloitte, el PDF de Pérez-Llorca y el número 495 de la revista no se abrieron. De BeWay no se abrió la etiqueta que se indicó. Las fechas de varias páginas de MPM y de Gallagher no son consistentes.
+**Límites.** Todo se leyó por resumen de búsqueda, salvo el PDF de Deloitte (§12.5). El PDF de Pérez-Llorca y el número 495 de la revista no se abrieron. De BeWay no se abrió la etiqueta que se indicó. Las fechas de varias páginas de MPM y de Gallagher no son consistentes.
 
 **Pendientes.**
 
-1. Si la persona usuaria pega aquí el texto de los dos PDF (son públicos), se pueden leer a fondo y reclasificar.
+1. Si la persona usuaria sube también el PDF de Pérez-Llorca (es público), se puede leer a fondo y reclasificar; el de Deloitte ya se leyó (§12.5).
 2. Decir a qué artículo del número 495 de la revista se refería.
 3. Abrir el texto del proyecto de finanzas abiertas de la SBS en `sbs.gob.pe` y buscar la mención de seguros.
 4. Verificar con AMIS el dato de 15% a 20% de aseguradoras que usan IA.
+
+### 12.5 Lo que dice el folleto de Deloitte (leído completo) y qué tan firme es
+
+**Qué es.** Un folleto de 11 páginas de Monitor Deloitte México (Deloitte S-LATAM, 2025). Es un **punto de vista**, no una investigación: no declara método, muestra ni fechas de campo. Argumenta que la digitalización es una necesidad estratégica en cuatro frentes: oferta (del seguro a la medida al embebido), canales, modelos de negocio y eficiencia operativa.
+
+**Conclusión sobre su solidez.** Sirve como **mapa de lo que la industria dice**, no como evidencia de efecto. Casi todo está sostenido en 16 referencias secundarias: prensa del sector, notas de prensa de empresas, blogs de proveedores, y solo tres fuentes institucionales (OCDE, FIDES y la CNSF vía Hacienda de México).
+
+**Datos útiles, con su fuente real (F-1072):**
+
+| Dato | Fuente real que cita | Cómo leerlo |
+|---|---|---|
+| Penetración por país (% del PIB): Chile 4,5; Brasil 3,3; Colombia 3,3; Uruguay 2,9; México 2,7; **Perú 2,6**; Ecuador 2,4; Argentina 2,0; promedio OCDE 8,8 | OCDE (2024) | Institucional. **Perú aparece con 2,6%, mientras la SBS da 2,06%**: definiciones distintas, no se concilian aquí |
+| Participación en primas de la región: Brasil 41,93%; México 22,96%; Argentina 10,43%; Chile 7,86%; Colombia 6%; **Perú 4,8%** | FIDES (2023) | Institucional. El texto dice que los cinco mayores suman 85%, y las cifras de la gráfica suman ~89% |
+| México, canales: agentes ~50% de las primas, bancaseguros 17%, *retailers* 18%, venta directa 10% | CNSF vía Hacienda (2024) | Institucional. **No confirma el 60-65% de agentes y corredores de McKinsey para la región (F-375)**: son definiciones y alcances distintos |
+| Primas de la región +17,1% en 2023, hasta US$203.354 M | Latino Insurance (prensa del sector) | Secundaria |
+| Penetración de ~3% frente a 7% mundial | Un blog de un proveedor (MPM) | **Débil: el 7% mundial no viene de Swiss Re ni de la OCDE sino de un blog comercial** (el mismo que se descartó en F-1071) |
+| Más de 500 insurtechs; tipo más frecuente (31% en la gráfica): propiedad, accidentes y corredor multilínea | Digital Insurance LATAM (2025) | Informe patrocinado; ya está en F-1003 y F-1044 |
+| Chile: 92% de las aseguradoras trabaja con al menos dos insurtechs; digitalización total de procesos de 18% (+50% en 2024); cerca de un tercio con más de 80% de flujos parcialmente digitalizados | InsurteChile (2024) | Gremio de insurtechs y aseguradoras chilenas: parte interesada. Mide procesos, no clientes |
+| Embebido: 4,5 M de clientes activos y más de US$200 M en primas, comisiones y otros ingresos | Nota de prensa de MetLife (no nombrada en el texto) | **Autodeclarado**, mezcla primas con comisiones |
+| 57% de las aseguradoras del mundo usa IA para detectar fraude | Latino Insurance (2025) | Secundaria |
+
+**Lo que afirma sin respaldo (importante para tus hipótesis):**
+- **"Pagar un siniestro de auto al instante hace al cliente más propenso a renovar o ampliar la póliza."** No trae cita ni medición. Es justo la hipótesis de la promesa y la prueba (P1 del foresight, FH1) que sigue sin probarse.
+- **"La IA predice la propensión a cancelar de cada cliente y activa campañas de retención."** Sin cita ni resultados. Es una práctica declarada, no un efecto medido.
+- **La conclusión dice que los casos muestran 'mejora en la retención de clientes'.** En el documento no hay ninguna medición de retención; los casos son anónimos o de notas de prensa.
+- **Un caso mexicano de vida personalizada por app y WhatsApp**, sin nombre de empresa y con un blog como referencia (Truora). No se puede usar como caso.
+
+**Lo que no está en el folleto:** nada específico de Perú más allá de su penetración y participación en primas y de que la SBS automatiza la captura de datos; nada de renovación, caducidad, activación ni de comportamiento del cliente. **No contesta ninguna de las hipótesis de §2 ni de §10.**
+
+**Dónde se aprovecha:** como referencia de contexto (§8.3 y §11), para verificar la participación de agentes en México (F-1072 frente a F-375) y como lista de afirmaciones de la industria que conviene probar con dato propio (`hipotesis-digitalizacion-seguros-evidencia-publica`).
 
 ---
 
