@@ -403,3 +403,4 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
   de exposición a inundación/Niño análoga a la exposición sísmica (§6.1); no aplicada.
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — cobertura paramétrica anticipatoria como oportunidad O9 y su riesgo de base (F-900).
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — el Niño Costero como caso de prueba del pago paramétrico y de la asegurabilidad (P4, P5).
+- [[seguros-embebidos-insurance-as-a-service|Seguros embebidos e Insurance-as-a-Service]] — seguros paramétricos con pago automático y el antecedente de pérdidas altas de 2017 (§10).

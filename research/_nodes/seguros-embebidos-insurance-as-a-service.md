@@ -3,7 +3,7 @@
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-28 · Versión: v0.1 (exploratorio)
 > Origen: pregunta de la persona usuaria: *"¿qué hay de las Insurance-as-a-Service o Embedded Insurance?"*, dentro del ciclo de digitalización de seguros.
-> Método de `/trinidad` sin la pista social. Fuentes nuevas registradas en `research/fuentes/codice.md` (F-1195 a F-1204); reutiliza F-882, F-896, F-897, F-900, F-998, F-1043, F-1116, F-1145, F-1178 y F-1189.
+> Método de `/trinidad` sin la pista social. Fuentes nuevas registradas en `research/fuentes/codice.md` (F-1195 a F-1217); reutiliza F-882, F-896, F-897, F-900, F-998, F-1043, F-1116, F-1145, F-1178 y F-1189.
 > Solo fuentes públicas. **Todo lo nuevo se leyó por fragmentos de buscador (nivel N2)**: los sitios no se abren desde la sesión. Las cifras de conversión y de tamaño son de proveedores y firmas de estudios de mercado.
 
 ---
@@ -144,7 +144,65 @@ Ordenadas por cuán bien calzan con lo que ya se sabe y con las señales de merc
 
 ## 9. Límites
 
-Todo lo nuevo es nivel N2 (fragmentos de buscador); no abrí ningún informe. El FCA, EIOPA y NBER se leyeron por extractos. Las cifras de conversión y tamaño son de proveedores y firmas de mercado. La pista social no se corrió. Las notas de Gestión que la persona usuaria está descargando pueden cambiar o precisar §4.
+Todo lo nuevo es nivel N2 (fragmentos de buscador); no abrí ningún informe. La lista de casos de §10 la aportó la persona usuaria y se contrastó solo con fragmentos de buscador. El FCA, EIOPA y NBER se leyeron por extractos. Las cifras de conversión y tamaño son de proveedores y firmas de mercado. La pista social no se corrió. Las notas de Gestión que la persona usuaria está descargando pueden cambiar o precisar §4.
+
+## 10. Otros terrenos: dónde se puede digitalizar y dónde no (más allá del seguro en sí)
+
+Esta sección usa una lista de casos aportada por la persona usuaria (ejemplos de seguro como servicio y de banca como servicio fuera del seguro tradicional) y los contrasta con fragmentos de fuentes públicas. **Los casos se verificaron solo por fragmentos de buscador (N2); casi todo lo que dicen las empresas es autoinformado.** El foco es responder en qué terrenos conviene digitalizar y en cuáles no.
+
+### 10.1 La regla que sale de los casos (inferencia mía)
+
+Digitalizar rinde cuando se cumplen estas condiciones, ordenadas de más a menos importantes:
+
+1. **El evento se mide con un dato externo y objetivo** (lluvia, vuelo, turno conectado, vulnerabilidad en una red). Entonces la cobertura se activa y se paga sola.
+2. **No hace falta evaluar una pérdida con una persona** (peritaje, diagnóstico, discusión de un monto). Si hace falta, lo digital queda en los bordes: cotizar, pagar, avisar.
+3. **El costo de la pérdida no lo fija un proveedor que el seguro no controla** (médicos, veterinarios). Si lo fija, la digitalización no baja el costo.
+4. **La persona entiende qué compra y quién queda asegurado.**
+5. **El riesgo de que el dato no coincida con la pérdida (riesgo de base) es bajo o corregible.**
+6. **La comisión del socio no premia vender sin importar el valor** (§5).
+7. **Hay evidencia independiente de resultados.** Casi nunca la hay.
+
+### 10.2 Terreno por terreno
+
+| Terreno | Casos de la lista | Qué se digitaliza bien | Qué no | Evidencia | En el Perú (fuentes públicas) | Veredicto |
+|---|---|---|---|---|---|---|
+| **Agro y clima (paramétrico)** | IBISA, Descartes | Activación por dato satelital y pago sin peritaje | El riesgo de base: que el índice no refleje la pérdida | Un ensayo en Kenia: el seguro con **fotos** subió la contratación frente al seguro índice (20% a 21%) y la confianza en 12 a 17 puntos; la demanda sube si se ven pagos (F-1209) | La Positiva lanzó uno ligado a El Niño en 2013; en 2017 su siniestralidad llegó a 125% y se anunciaron alzas; hay un seguro público catastrófico y un reglamento paramétrico de la SBS de 2026 (F-1217) | **Sí, con corrección del riesgo de base y con precio que resista un evento grande** |
+| **Eventos y clima** | Sensible Weather, Companjon (no hallados); Beazley, REVO | Pago automático al cruzar un umbral de lluvia | Paga por el umbral, no por la pérdida; complementa al seguro tradicional | Descripciones de aseguradoras (F-1213) | No hallé oferta | **Sí, como complemento** |
+| **Plataformas (repartidores, transporte)** | Qover con Deliveroo y Wolt | Cobertura que se activa al conectarse a la app | Quien trabaja en varias apps o fuera de ella | Solo del proveedor: tope de € 7.500 médicos, 90% de satisfacción autoinformada (F-1207) | No hallé producto vigente; Rappi anunció uno en 2020 y hubo reclamos sindicales por un seguro de accidentes (F-1217) | **Sí en la activación; falta saber qué queda fuera** |
+| **Ciberseguridad para pymes** | Coalition, Cowbell | Escaneo continuo, alertas y respuesta; la prevención forma parte del producto | El pago de rescates y las exclusiones; que la pyme entienda | Cowbell: siniestralidad de 43% en 2022; Coalition: ~1,5% de asegurados con siniestro frente a ~6% del mercado, ambos de las propias empresas (F-1210) | Menos de 100 organizaciones con ciberseguro, según una consultora (F-1210) | **Sí; el valor está en la prevención, y hay un hueco grande de cobertura** |
+| **Telecomunicaciones (micropagos con saldo prepago)** | Bima con Tigo y Airtel | Cobro de centavos con el saldo; alta masiva; pago por dinero móvil | Que la cobertura sea gratis condicionada al uso (puede ser un producto de fidelización más que de protección) | 500.000 suscriptores en Tanzania (2016); 50.000 reclamos por GHS 22 millones en Ghana (2020), de las empresas (F-1208) | No hallé caso en telcos peruanas | **Sí para llegar; falta medir el valor** |
+| **Fintech, neobancos y súper-apps** | Chubb con Nubank, Rappi y Mercado Pago | Venta simple dentro de la app; cobro de la misma cuenta | La renovación y el siniestro no se muestran | Nubank Vida: 150.000 pólizas en el primer mes a ~US$ 2 al mes; antes, 20% tenía seguro de vida y 70% interés (F-1205) | Pacífico en Yape (F-1116, F-1203) | **Sí para productos simples; pedir renovación y siniestros** |
+| **Viajes y retail con pago en cuotas** | Cover Genius con Booking y Ryanair; Klarna | Protección en el pago; pago de siniestros instantáneo (declarado) | **El costo de la protección sumado a las cuotas** es el complemento oculto que advirtió el regulador británico (§5.2) | Solo del proveedor (F-1206) | RedBus y Ticketmaster con Pacífico (F-1203) | **Sí, con precio visible y adhesión diferida** |
+| **Movilidad y telemetría** | Tesla Insurance | Prima que se ajusta con la conducción | Que el puntaje prediga siniestros; el manejo de siniestros | Sin evidencia independiente; una publicación sectorial reporta pérdida técnica en 2024 y reguladores de California citaron demoras en siniestros (F-1214) | No hallé | **Cuidado: probar con grupo de control** |
+| **Salud con servicio** | Sanitas Blua, Oscar con Holy Cross, Discovery Vitality | Teleconsulta, citas, autorizaciones sin papel | La capacidad, el costo médico y la continuidad (node de ramos §8) | Más de 3 millones de videoconsultas en Blua, sin resultados independientes (F-1215); Oscar cerró 2025 con siniestralidad de 87,4% (F-1170) | Tsana, Seguro Salud Yape | **Sí en los bordes; el servicio es lo que cuenta** |
+| **Mascotas** | Fletch, Wrisk, FirstVet | Cita, teleconsulta veterinaria y copago en el punto de atención | **El costo lo fijan las veterinarias**, y suben; las quejas crecen | Reino Unido: 600 quejas en el primer trimestre de 2025 (+26%), 52% a favor del cliente (F-1211) | La Positiva (2020) y Mapfre; Rímac solo en una tesis (F-1211) | **Cuidado: digitalizar la cita no controla el costo** |
+| **Alquiler (garantía)** | Rhino, The Guarantors | Cobro mensual junto con la renta | La persona no entiende que **asegura al propietario**; la cuota no se devuelve | Periodismo de investigación; algunas ciudades obligan a ofrecer alternativas al depósito (F-1212) | No hallé oferta | **Cuidado alto de conducta; solo con explicación clara** |
+| **Asistencia B2B2C** | Mawdy (Mapfre) | Asistencias en el checkout de distribuidores | Sin datos de socios | Resultado de asistencia de Mapfre: de 207,2 a 256,0 millones de euros a nueve meses de 2025 (F-1216) | No hallé | **Sí; sin evidencia de resultados para el cliente** |
+
+### 10.3 Dónde no (o no solo así)
+
+- **Donde la pérdida se evalúa con una persona y el costo lo fija un tercero** (salud, mascotas, taller): lo digital ordena la entrada pero **no baja el costo**. Lo que decide es la red, el precio negociado y la capacidad.
+- **Donde el producto confunde sobre quién está asegurado o qué se devuelve** (garantía de alquiler): digitalizar acelera una venta mal entendida.
+- **Donde el dato no representa la pérdida** (paramétrico sin corrección de riesgo de base): se vende un seguro que no paga cuando se necesita, y la confianza se pierde.
+- **Donde el socio vende sin que se vea el costo** (complementos en cuotas): es el patrón que el regulador británico y los casos de reparación mostraron (§5.2).
+- **Donde no hay evidencia independiente de resultados** (casi todos los casos de esta tabla): se puede probar, pero no se debe escalar sin medir renovación, siniestros pagados y quejas.
+
+### 10.4 Lo que esto dice sobre novedad en el Perú
+
+- **El modelo de seguro embebido no es nuevo en el mercado peruano.** Existen la alianza de Rímac con Insurama (anunciada en febrero de 2024, con una expectativa de 20.000 a 25.000 clientes en su primer año en Perú y Chile) y con Grupo EFE, Pacífico con Yape, Chubb con Falabella y seguros de mascotas desde 2020 (F-1203, F-1217). Lo que no hay públicamente es **escala ni resultados**.
+- **Lo que sí aparece nuevo, o poco explorado,** son los terrenos donde el dato decide: **paramétrico** (con reglamento de la SBS de 2026 y con un antecedente de pérdidas altas en 2017), **ciberseguro para pymes** (menos de 100 organizaciones aseguradas según una consultora), **plataformas** y **eventos**. Para el paramétrico, el contexto de El Niño costero 2026-2027 (node de El Niño) hace el tema urgente y el antecedente de 2013 hace el riesgo conocido.
+- **La diferencia de fondo no está en "tener" un embebido, sino en cuatro decisiones:** quién tiene la relación con el cliente (la plataforma o la aseguradora), si se vende solo o con un servicio, si el precio y la comisión son visibles, y si se miden renovación y siniestros desde el primer día.
+
+### 10.5 Hipótesis (para probar con datos propios)
+
+| # | Hipótesis | Cómo probarla |
+|---|---|---|
+| EM9 | Un seguro paramétrico con corrección de riesgo de base (por ejemplo, con fotos o dato de campo) tiene más contratación y renovación que uno por índice puro | Comparar dos diseños con grupo de control |
+| EM10 | El ciberseguro para pymes que incluye servicios de prevención reduce los siniestros respecto a uno sin ellos | Comparar frecuencia de siniestros por cohorte |
+| EM11 | La cobertura por turno de plataformas deja sin proteger una parte relevante del tiempo de trabajo | Medir horas trabajadas conectado y no conectado |
+| EM12 | En seguros de mascotas, la cita digital sube la asistencia a prevención pero no baja el costo del siniestro | Comparar costo por siniestro con y sin canal digital |
+| EM13 | Un producto que se cobra con saldo o dinero móvil tiene más caducidad que uno con débito, si la persona no ve el valor | Comparar caducidad por esquema de cobro |
+| EM14 | Mostrar el costo de la protección sumado a cuotas baja la contratación a corto plazo y sube la renovación | Prueba A/B de visibilidad del costo |
 
 ## Conexiones
 
@@ -153,4 +211,5 @@ Todo lo nuevo es nivel N2 (fragmentos de buscador); no abrí ningún informe. El
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight de la experiencia futura de los seguros]] — "dónde vive la relación", finanzas abiertas, pagos del BCRP y banca como servicio.
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros]] — sesgo del presente, atributos ocultos y por qué la gente compara poco.
 - [[seguros-comportamiento-mundo-peru|Seguros: comportamiento y mercado, Mundo vs. Perú]] — desconfianza y brecha de protección.
+- [[fenomeno-el-nino-impacto-personas|Impacto del Fenómeno El Niño en las personas]] — el paramétrico y el contexto de El Niño costero 2026-2027 (§10).
 - [[conducta-humano-ia|Conducta humano-IA]] — IA que decide y venta conversacional dentro de una plataforma.
