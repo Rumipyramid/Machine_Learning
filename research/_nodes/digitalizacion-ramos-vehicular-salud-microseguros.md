@@ -4,7 +4,7 @@
 > Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-28 · Versión: v0.2 (exploratorio; suma §8 salud en general, §9 vida, §10 terrenos de oportunidad y §11 puntos ciegos)
 > Origen: pedido de la persona usuaria de investigar tres ramos (vehicular, salud y microseguros) y de responder si el camino
 > correcto es digitalizar, si digitalizar significa tener una app y qué hay detrás de "en salud lo digital se junta con el servicio".
-> Método de `/trinidad` sin la pista social. Fuentes registradas en `research/fuentes/codice.md` (F-1148 a F-1158 en v0.1; F-1159 a F-1190 en v0.2); reutiliza
+> Método de `/trinidad` sin la pista social. Fuentes registradas en `research/fuentes/codice.md` (F-1148 a F-1158 en v0.1; F-1159 a F-1194 en v0.2); reutiliza
 > F-41, F-48, F-442, F-855, F-882, F-884, F-888, F-889, F-890, F-931, F-933, F-1047, F-1125, F-1141 y F-1146.
 > Solo fuentes públicas. Todo se leyó por extractos de buscador, notas de prensa y resúmenes; ningún estudio se abrió completo.
 
@@ -388,6 +388,8 @@ Precios y suscripción con IA (*pricing*); reaseguro; reforma de EsSalud, SIS y 
 
 ## 12. Mapa final: dónde sí hay oportunidad, de qué forma y dónde no
 
+> **Aclaración del 2026-10-28.** La lista de "dónde no" (§12.3) mide dónde **falta evidencia de efecto** o hay un **riesgo conocido**, no dónde falta oportunidad. Cuando varias empresas con datos propios convergen en una misma práctica (por ejemplo, la conversación por WhatsApp, §15), eso es una **señal de mercado** que se trata como oportunidad a probar, aunque aún no haya prueba de efecto. Lo que cambia entonces es qué hay que medir y qué cuidados poner, no si vale la pena mirarlo. Ver §15 y §16.
+
 Es una **síntesis mía** de §2 a §11. Ordena las hipótesis por cuánto las respalda la evidencia revisada y por si cumplen cuatro condiciones: hay una fricción repetida y barata de quitar, existe capacidad detrás (médicos, talleres, asesores), el resultado se puede medir y la persona gana algo verificable. **Ninguna tiene aún prueba causal en el Perú.**
 
 ### 12.1 Dónde sí, y de qué forma
@@ -413,7 +415,7 @@ Es una **síntesis mía** de §2 a §11. Ordena las hipótesis por cuánto las r
 | **Integración con clínicas y farmacias propias** | Depende del poder de mercado y de que se evalúe calidad y costo (F-1181) |
 | **Canal asistido para mayores** | Es requisito más que oportunidad: casi 49% sin internet y menos uso de video (F-1119, F-1182) |
 
-### 12.3 Dónde no (o no solo digital)
+### 12.3 Dónde no (o no solo así): lo que hay que corregir o probar antes de escalar
 
 | Terreno | Por qué no |
 |---|---|
@@ -475,6 +477,7 @@ Pegar el texto de las notas de Gestión que más importen (basta el cuerpo del a
 | **Riesgo lejano frente a tangible** | La gente compra más cuando el riesgo le parece tangible; los seguros baratos de accidentes personales rara vez se contratan (columna argentina, 2017) | Baja: opinión |
 | **Terceros pesan más que la propia experiencia** | Un estudio de Fasecolda halló que la opinión de terceros pesa más que la experiencia propia en la compra | Baja: fragmento |
 | **Tabú y optimismo** | Evitar hablar de la muerte y creer que no ocurrirá pronto frenan la compra de vida (blog de MAG Seguros, Brasil) | Baja: blog de corredores |
+| **La prima duele hoy; el beneficio es abstracto** | Según fragmentos de un blog de consultoría conductual (BeWay): la prima se vive como pérdida inmediata y tangible, mientras la cobertura es un beneficio futuro difícil de visualizar, lo que lleva a posponer; también define sesgo del presente y heurística de disponibilidad (F-1191) | Muy baja: blog, fragmentos; **no pude leer la página de la etiqueta de seguros** |
 | **Prevención** | Solo 32% de los peruanos asociaría el seguro con prevención (columnista, sin fuente visible) | Muy baja |
 | **Desconfianza** | 7 de cada 10 confían poco (39%) o desconfían (30%) de las instituciones financieras (nota de Gestión, fecha no visible); la desconfianza en SBS-CAF 2022 ya estaba en el node de comportamiento | Baja-media |
 
@@ -495,6 +498,100 @@ Pegar el texto de las notas de Gestión que más importen (basta el cuerpo del a
 | D3 | Un riesgo concreto y cercano (evento tangible) mueve más la compra que la probabilidad abstracta | Prueba A/B de mensaje; vigilar que no sea manipulación |
 | D4 | Cobros pequeños y frecuentes por billetera bajan la postergación frente a un pago anual | Comparar conversión y caducidad entre esquemas de cobro |
 
+## 15. Señal de mercado: la conversación por WhatsApp como carril común
+
+**En corto.** Bancos, aseguradoras y servicios de salud peruanos están convergiendo en el mismo canal: el chat de WhatsApp. Cuando actores independientes y con datos propios eligen lo mismo, es una **señal de mercado** y no un detalle de canal. No dice que funcione (nadie ha publicado resultados), pero sí dónde se están moviendo los que ven sus propios números. Es el caso más claro de "digital no es una app".
+
+### 15.1 Qué hacen los actores (nivel de lectura entre paréntesis)
+
+| Actor | Qué hace por WhatsApp | Fuente |
+|---|---|---|
+| **Interbank (Plin WhatsApp)** | Pagar por chat, con texto o voz, gratis e inmediato, con tope de S/ 100 por operación; unos 7.000 afiliados "en el primer trimestre" (año no visible) | F-1189 (N2) |
+| **Pacífico Salud (Tsana)** | Orientación médica 24/7 con médicos, gratis; también gestión de citas y ayuda para encontrar medicamentos; menos de 3 meses en operación | F-1188 (N1, declaración de la empresa) |
+| **Bancos y cajas** | Créditos y pagos por WhatsApp como "nueva ventanilla", con fricciones (solo titular de Gestión) | F-1189 (N3) |
+| **Interseguro** | Más de 30% de ventas y 70% de interacciones de servicio digitales (declarado; no dice qué canal) | F-1189 (N2) |
+| **Mapfre y Pacífico (seguros)** | Números de WhatsApp de atención (Mapfre en un plan de salud; Pacífico en su web, según un comparador poco confiable) | F-1193 (N2) |
+| **Rímac** | Una ejecutiva dijo años atrás que WhatsApp es más efectivo que Messenger para vender seguros (nota antigua) | nota de Gestión de la lista por abrir (N3) |
+
+### 15.2 Por qué lo leo como señal (inferencia mía)
+
+1. **Convergencia.** Un banco, una aseguradora de salud y varias aseguradoras eligen el mismo canal sin depender unos de otros. Una sola empresa podría equivocarse; varias son una tendencia.
+2. **Costo de entrada para la persona casi cero.** No instala nada, ya sabe usarlo y no recuerda una contraseña nueva. Eso encaja con que el seguro se usa pocas veces al año (§2.2).
+3. **Alcance.** 85% de los usuarios de redes sociales peruanos tenía WhatsApp en 2022 y 46% de los usuarios de internet de 55 años o más lo usó para informarse en 2024 (F-1193). Si la cifra de adultos mayores se sostiene, el chat podría ser **la puerta digital de los mayores**, que en el node de economía plateada aparecían como el grupo que quedaba fuera de apps y webs.
+4. **Junta servicio, venta y pago en un solo hilo.** Plin WhatsApp muestra que el pago puede vivir dentro de la conversación; Tsana muestra que el servicio también. Falta que el seguro se contrate y se cobre en el mismo hilo (no hallé que ya exista).
+
+**Límites de la señal.** Dice qué eligen las empresas, no qué logran. No sé qué dato vio Pacífico para decidirse (puede ser comportamiento de sus clientes, costo, rapidez de lanzamiento u otra razón). Y las empresas publican lo que va bien.
+
+### 15.3 Oportunidades que abre (hipótesis; ninguna con prueba en el Perú)
+
+| Ramo o grupo | Qué podría hacerse por el chat | Qué habría que medir |
+|---|---|---|
+| **Salud** | Orientación con médico que escala; citas y recordatorios; ubicar medicamentos; seguimiento de crónicos con contacto humano | Orientaciones, % resuelto sin derivar, conversión a consulta paga o plan, emergencias evitadas, subtriaje |
+| **Vehicular y SOAT** | Aviso de siniestro con fotos y seguimiento; recordatorio y compra del SOAT; verificación de vigencia | Tiempo hasta el pago, quejas, renovación a tiempo |
+| **Vida** | Conversación con el asesor (cotizar, resolver dudas, cobrar); avisos de Vida Ley al dejar un empleo; recordatorio de pago | Cierre asistido por chat frente a llamada, persistencia a 13 meses |
+| **Microseguros** | Alta con DNI y pago de montos pequeños dentro del tope de Plin WhatsApp (S/ 100) | Conversión, renovación, siniestros pagados visibles |
+| **Mayores y familiares cuidadores** | Chat como canal asistido, con un familiar que ayuda | Uso real por tramo de edad |
+| **Corredores y asesores** | Herramientas que funcionen sobre WhatsApp, donde ya conversan con sus clientes | Primas intermediadas gestionadas por chat, tiempo de emisión |
+
+**Un cruce que conviene explorar.** Productos masivos como el Seguro Salud Yape (S/ 9,90 al mes) caben bajo el tope de S/ 100 de Plin WhatsApp. Si el pago por chat admitiera cobros recurrentes a una aseguradora, la prima mensual se podría cobrar en el mismo hilo donde se da el servicio. **Ninguna fuente dice que hoy se pueda**; falta confirmarlo con el banco (ya estaba en los pendientes del node de digitalización).
+
+### 15.4 Qué cuidar (no son razones para no hacerlo, sino condiciones)
+
+- **Escalamiento a un humano** claro y rápido, sobre todo en salud: la evidencia de triaje automático es débil (F-1159), y un humano en el hilo es lo que reduce ese riesgo.
+- **Datos de salud por un canal de terceros:** privacidad, consentimiento y conservación; no verifiqué la ley de datos personales en esta ronda.
+- **Dependencia de la plataforma** (reglas y costos del canal los fija otra empresa): inferencia mía, sin fuente.
+- **Costo de atender 24/7** con médicos: nadie lo ha publicado.
+- **Regulación:** venta a distancia con información veraz y conservada (F-1178), telesalud (F-1178) y el reglamento de IA, que trata salud como riesgo alto (F-1189).
+- **Equidad:** quien no tiene datos móviles o no usa el chat queda fuera.
+
+### 15.5 Qué evidencia hay del efecto
+
+**No hallé ninguna revisión específica de WhatsApp.** Lo más cercano son revisiones de mensajes de texto en África: el efecto clínico es incierto, salvo la asistencia a citas, que varía según la condición (F-1194), y la revisión Cochrane de recordatorios (F-1152). Esto es, a la vez, una **brecha y una oportunidad**: quien mida primero y bien el efecto de la conversación por chat tendrá evidencia que hoy nadie publica.
+
+### 15.6 Hipótesis
+
+| # | Hipótesis | Cómo probarla |
+|---|---|---|
+| W1 | La orientación gratuita por chat convierte a consulta paga o plan en una proporción medible y no sube las emergencias evitables | Embudo completo con grupo de control |
+| W2 | El aviso de siniestro con fotos por chat acorta el tiempo hasta el pago sin subir las quejas | Comparar con el canal actual, por tipo de siniestro |
+| W3 | El recordatorio por chat sube la asistencia a citas y la renovación del SOAT más que el SMS | Prueba aleatoria entre canales de recordatorio |
+| W4 | El cierre de una vida temporal con asesor por chat persiste igual o mejor que el cierre por llamada | Persistencia a 13 meses, ajustando por perfil |
+| W5 | Los mayores que no usan apps sí usan el chat si un familiar lo activa | Uso por tramo de edad y por quién abrió el hilo |
+| W6 | Cobrar la prima mensual dentro del chat baja la caducidad frente al débito o el pago manual | Comparar caducidad entre esquemas |
+
+## 16. EsSalud y el sector privado: señales de que la frontera se está moviendo
+
+**Límite principal.** Todo sale de fragmentos de buscador y titulares de prensa (F-1192, nivel N2), no de documentos oficiales. El estado de cada medida no está confirmado. **Sanna no apareció en ninguna fuente como parte de un convenio con EsSalud**; el vínculo que sí apareció es con **Auna**.
+
+### 16.1 Qué encontré
+
+| Señal | Qué es | Estado según lo que vi |
+|---|---|---|
+| **Intercambio EsSalud–EPS** | Que asegurados de EsSalud se atiendan en clínicas de EPS y viceversa, con compensación económica y convenios tarifarios (titulares del 30 de julio de 2026) | **Proyecto**; no hallé que esté aprobado ni vigente |
+| **Auna y EsSalud (Torre Trecca)** | Asociación público-privada: una filial de Auna construye y opera un centro ambulatorio en Lima; EsSalud pagaría un monto mensual según un **volumen mínimo garantizado** | Auna comunicó que se cumplieron las condiciones previas para construir; hubo una adenda en febrero (año no visible) |
+| **Salog** | Asociación público-privada para la logística de medicinas de EsSalud; dice estar en conversaciones con el sector privado | Contrato con EsSalud; sin contratos privados firmados |
+| **Farmacia Vecina** | Pacientes crónicos de EsSalud recogen sus medicinas en farmacias privadas (Inkafarma, de 29 a más de 100 locales en la pandemia; otra nota dice ~150) | Programa existente; fechas no claras |
+| **Libre elección** | La Asociación de Clínicas Particulares propone que el asegurado de EsSalud elija prestador, con costos compartidos, y dice que el Estado le debe más de S/ 100 millones | Propuesta y reclamo del gremio |
+| **Pandemia (2020)** | EsSalud contrató 12 clínicas para casos de COVID-19; una investigación periodística cuestionó la eficacia | Antecedente |
+
+### 16.2 Por qué es una señal (inferencia mía)
+
+1. **El cuello de botella de EsSalud es capacidad** (esperas medias de consulta externa de 10,4 días en 2019 a 25,2 en 2025, y hasta 197 días en servicios de alta demanda, según Gestión; F-1189). Comprarle capacidad al sector privado es la salida que reaparece (pandemia, Torre Trecca, intercambio, libre elección). Eso confirma lo que decía §4.5: **el problema no es la app, es la oferta de atención**.
+2. **Se desdibuja la frontera** entre seguro social y seguro privado. Eso cambia quién es cliente de quién y qué papel juega una EPS.
+3. **El modelo de pago de Torre Trecca (volumen mínimo garantizado)** es un contrato de capacidad, no de pago por acto. Es distinto a lo que paga hoy un seguro privado y podría extenderse a otros servicios.
+4. **La farmacia ya es un punto de entrega** del seguro social (Farmacia Vecina), lo que refuerza la hipótesis de farmacia y adherencia (S6).
+
+### 16.3 Oportunidades y riesgos (hipótesis)
+
+| # | Oportunidad | Qué la respaldaría | Riesgo |
+|---|---|---|---|
+| E1 | **Puerta digital de orientación que enruta entre sistemas** (EsSalud, EPS, clínicas) para quien no encuentra cita | Esperas largas (F-1189); orientación por chat que ya existe en lo privado (F-1188) | Quién es responsable de la derivación; datos entre sistemas |
+| E2 | **Capacidad contratada** (centros ambulatorios, imágenes, diagnóstico) con pago por volumen garantizado | Torre Trecca (F-1192) | Pagos atrasados del Estado, que reclama el gremio de clínicas |
+| E3 | **Medicinas por farmacias privadas** para crónicos, con receta electrónica y recordatorio | Farmacia Vecina; efecto medio de la farmacia en adherencia (F-1166) | Costo y quién paga la dispensación |
+| E4 | **Productos complementarios** para quien tiene EsSalud (EPS complementaria, oncológico) | Intercambio en proyecto; Ley del Olvido Oncológico (nota de Gestión, Ley 32357) | Antiselección y uso doble |
+
+**Qué falta saber.** Si el intercambio EsSalud–EPS avanzó, con qué compensación y para qué servicios; qué hizo Sanna, si algo; cuánto debe el Estado hoy a las clínicas; si Torre Trecca ya recibe pacientes.
+
 ## Conexiones
 
 - [[digitalizacion-seguros-mercados-emergentes|Digitalización en seguros en mercados emergentes]] — node raíz: §15 y §16 (penetración, medición, beneficio para la persona, PNUD y priorización de industrias).
@@ -504,6 +601,6 @@ Pegar el texto de las notas de Gestión que más importen (basta el cuerpo del a
 - [[conducta-humano-ia|Conducta humano-IA]] — IA que asiste frente a IA que decide, relevante para siniestros y orientación.
 - [[venta-vida-digital-hibrida-latam|Venta de vida digital vs. híbrida en LATAM]] — el modelo híbrido en productos complejos.
 - [[futuro-asesores-seguros-venta-digital|Futuro de los asesores y venta digital]] — qué se queda humano.
-- [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — mayores: acceso digital, canal asistido y oferta de rentas y salud (§8, §9).
+- [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — mayores: acceso digital, canal asistido y oferta de rentas y salud (§8, §9, §15).
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — asesoría, confianza y ahorro con compromiso, base de §9.
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — recurrencia y persistencia por canal, que §9.2 muestra contradictoria.

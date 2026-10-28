@@ -270,6 +270,23 @@ Si prefieres PDF, imprime la nota desde tu sesión de suscriptor (Imprimir, Guar
 | G-90 | 2 | SBS modificó las reglas del seguro para afiliados a las AFP, antes de próxima licitación | SISCO IX | https://gestion.pe/tu-dinero/finanzas-personales/sbs-modifico-las-reglas-del-seguro-para-afiliados-a-las-afp-antes-de-proxima-licitacion-noticia/ |
 | G-91 | 2 | Afiliados a AFP pagarán menos por seguro de invalidez y sobrevivencia | SISCO VIII, prima de 1,37% | https://gestion.pe/tu-dinero/finanzas-personales/afiliados-a-afp-pagaran-menos-por-seguro-de-invalidez-y-sobrevivencia-noticia/ |
 
+### M. EsSalud y el sector privado
+
+| ID | Pri. | Titular | Qué resuelve | URL |
+|---|---|---|---|---|
+| G-92 | 1 | Torre Trecca: Auna Perú evalúa nueva inversión en su red de clínicas en Lima | Asociación público-privada con EsSalud: alcance, estado, pago | https://gestion.pe/g-de-gestion/reportaje/torre-trecca-auna-peru-evalua-nueva-inversion-en-su-red-de-clinicas-en-lima-noticia/ |
+| G-93 | 1 | Asociación de clínicas privadas propone la libre elección del prestador, ante alta demanda en EsSalud | Propuesta de libre elección | https://gestion.pe/peru/asociacion-de-clinicas-privadas-propone-la-libre-eleccion-del-prestador-ante-alta-demanda-en-essalud-noticia/ |
+| G-94 | 1 | Estado debe más de S/ 100 millones a clínicas privadas por atender asegurados del SIS y EsSalud, según ACP | Deuda del Estado con clínicas | https://gestion.pe/economia/empresas/estado-debe-mas-de-s-100-millones-a-clinicas-privadas-por-atender-asegurados-del-sis-y-essalud-segun-acp-rmmn-noticia/ |
+| G-95 | 2 | Más allá de EsSalud: ¿puede Salog replicar su modelo en el SIS y en clínicas privadas? | Asociación público-privada de medicinas | https://gestion.pe/economia/empresas/mas-alla-de-essalud-puede-salog-replicar-su-modelo-en-el-sis-y-en-clinicas-privadas-noticia/ |
+| G-96 | 2 | EsSalud: desgaste financiero se podría ver en la calidad y atención sin medidas correctivas | Presión financiera | https://gestion.pe/economia/essalud-desgaste-financiero-se-podria-ver-en-la-calidad-y-atencion-sin-medidas-correctivas-noticia/ |
+| G-97 | 2 | EsSalud destina S/ 196 millones para comprar medicinas oncológicas, ¿habrá más desembolsos? | Gasto en medicinas oncológicas | https://gestion.pe/peru/essalud-destina-s-196-millones-para-comprar-medicinas-oncologicas-habra-mas-desembolsos-noticia/ |
+| G-98 | 3 | Coronavirus: solo 43 pacientes del SIS y EsSalud pasaron a clínicas privadas para atención en UCI | Antecedente de derivación (2020) | https://gestion.pe/peru/coronavirus-solo-43-pacientes-del-sis-y-essalud-pasaron-clinicas-privadas-para-atencion-en-uci-nndc-noticia/ |
+| — | 1 | **No es de Gestión.** El Popular, 30-jul-2026: Afiliados a EsSalud podrían atenderse en clínicas privadas (intercambio EsSalud–EPS) | Estado y alcance del intercambio | https://elpopular.pe/actualidad/2026/07/30/afiliados-a-essalud-podrian-atenderse-en-clinicas-privadas-la-radical-medida-que-alista-el-gobierno-de-keiko-fujimori-para-el-sector-salud-2716680 |
+| — | 1 | **No es de Gestión.** wapa.pe, 30-jul-2026: misma noticia | Contraste | https://wapa.pe/actualidad/2026/07/30/afiliados-essalud-podrian-atenderse-en-clinicas-privadas-radical-medida-2856360 |
+| — | 1 | **No es de Gestión.** Auna (comunicado vía Stock Titan): condiciones previas cumplidas para la construcción del centro de EsSalud | Fecha y contrato de Torre Trecca | https://www.stocktitan.net/news/AUNA/auna-announces-fulfillment-of-all-conditions-precedent-for-1yy8819dc81b.html |
+
+*Sanna: no apareció ningún convenio con EsSalud. Si sabes de uno, pásame el titular.*
+
 ### Lo que busqué en Gestión y no encontré (conviene buscarlo a mano)
 
 - La nota de la salida de Betterfly del Perú.
