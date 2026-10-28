@@ -193,3 +193,4 @@ Por eso este glosario funciona mejor como parte de un sistema:
   plantilla y advertencia de fondo (F-6, F-9, F-10), aplicada al registro de seguro de
   vida en vez de salud.
 Definiciones alineadas al Glosario de términos de seguros de la SBS.*
+- [[valor-recurrencia-digital-seguros|Valor de la recurrencia digital en seguros]] — evidencia causal de que la información ambigua genera llamadas (F-850): el lenguaje claro es palanca de costo de servir.

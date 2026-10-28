@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-885, más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-894 (lectura conductual F-886 a F-894), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -297,6 +297,55 @@ para el ejercicio, no un hallazgo.
 
 ---
 
+## 9. Lectura conductual (capa transversal, agregada 2026-10-28)
+
+**Conclusión:** la pregunta conductual de fondo no es "cómo hacer que la gente entre más". Es **qué conducta
+tiene que ocurrir para que haya valor, y qué la frena**. Con esa lente aparecen cuatro distinciones que el
+benchmarking de negocio no ve: lealtad frente a inercia, uso frente a hábito, fricción mala frente a fricción
+protectora, y efecto frente a selección.
+
+Los efectos citados se revisaron contra su estado de replicación en
+[[fenomenos-psicologicos|Fenómenos psicológicos clásicos]]: la regla pico-final está 🟢 robusta; el sesgo del
+presente está 🔵 replicado con matices. Lo marcado "inferencia" es interpretación, no hallazgo.
+
+| Mecanismo de valor | Conducta que tiene que ocurrir | Qué la frena (lente conductual) | Evidencia | Palanca con respaldo |
+|---|---|---|---|---|
+| Costo de servir | Resolver sin llamar | **Ambigüedad:** la información ambigua genera duda y búsqueda de una persona que tranquilice | F-850 (causal) | Reducir la ambigüedad del contenido antes de mover el canal; lenguaje claro ([[glosario-seguro-salud-peru]]) |
+| Retención | Renovar | **Inercia y olvido**, no necesariamente lealtad. Los costos de cambio en seguros son grandes (F-889). El regulador británico prohibió cobrar más a quien renueva por inercia y documentó fricción deliberada para cancelar (F-886) | 🟢 A + 🔵 B | Separar renovación pasiva de elección activa. Recordatorios y renovación automática: el mejor ensayo está en curso, sin resultados (F-887) |
+| Venta cruzada | Comprar un segundo producto | **Sesgo del presente** frente a un beneficio futuro y abstracto; atención escasa | Inferencia sobre 🔵 matices | Anclar la oferta a un momento de vida o de uso, no a la sesión |
+| Prevención | Cambiar conducta de salud o manejo | **Autoselección:** participa quien ya cumple (F-854). La retroalimentación inmediata y concreta sí cambia el manejo (F-442) | 🟢 A | Retroalimentación concreta y frecuente atada al producto (telemetría); en salud, medir selección |
+| Confianza en el siniestro | Quedarse después del siniestro | **Regla pico-final:** el siniestro es el pico y su cierre es el final de la relación. Tras un siniestro, el cambio de aseguradora sube 35% aun con clientes satisfechos (F-890, proveedor; F-891) | 🟢 robusto (efecto) + 🟡 (dato de seguros) | Diseñar el cierre (pago, explicación, siguiente paso). La justicia del proceso se asocia a confianza (F-893, débil) |
+
+**Cuatro advertencias conductuales para la meta del canal:**
+
+1. **El hábito necesita frecuencia y contexto estable** (Wood y Neal, 2007, F-888). Con 1-2 interacciones al
+   año, un hábito en la app propia es improbable (inferencia). La recurrencia se toma prestada de hábitos
+   existentes (billetera, WhatsApp, banca) o de servicios adyacentes de alta frecuencia.
+2. **"Fidelidad" puede ser inercia.** Si se mide renovación sin distinguir elección activa de inercia, el
+   indicador premia la fricción para cancelar. El regulador británico ya sancionó esa práctica (F-886).
+3. **Empujar decisiones cambia el pool de riesgo.** Reducir la inercia en seguros de salud empeoró la selección
+   adversa cuando los precios se ajustaron (Handel, 2013, F-889). Quienes llegan cambiándose de otra
+   aseguradora siniestran el doble con igual historial (F-891). Un nudge de adquisición o de cambio tiene costo
+   actuarial.
+4. **No toda fricción es mala.** Una auditoría de fricciones distingue la fricción excesiva de la protectora
+   (Sunstein, 2022, F-894). En flujos de pago o de afiliación de tarjeta, la fricción suele bloquear justo el
+   mecanismo de compromiso (débito automático) que ayuda contra el sesgo del presente (inferencia).
+
+**Dónde entra en el trabajo de la gerencia (propuesta):**
+
+- **En las tres definiciones que hoy no existen.**
+  - *Fidelidad:* elección activa frente a renovación por inercia.
+  - *Cliente digitalmente sano:* resuelve lo que necesita cuando lo necesita, sin fricción excesiva; no es
+    cuántas veces entra.
+  - *Cliente de alto valor:* incluye el riesgo que trae y no solo la prima.
+- **Como columna del menú de teorías de valor (§5):** la conducta que hay que mover y su barrera.
+- **En el ejercicio con los ramos:** una auditoría de fricciones por recorrido, con la data de conversión de
+  cada flujo.
+- **En la validación de "el cliente digital es más fiel":** diseñar cohortes emparejadas o un despliegue
+  escalonado. Es trabajo propio del behavioral design.
+
+---
+
 ## Conexiones
 
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — la misma regla de
@@ -315,3 +364,5 @@ para el ejercicio, no un hallazgo.
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado de seguros, Mundo vs. Perú]] — la
   desconfianza y la baja frecuencia de interacción que encuadran por qué la recurrencia no sale del seguro
   mismo.
+- [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado de replicación de los efectos que usa la lectura conductual (§9): regla pico-final y sesgo del presente.
+- [[glosario-seguro-salud-peru|Glosario de seguro de salud en lenguaje claro]] — la palanca contra la ambigüedad que genera llamadas (§9).
