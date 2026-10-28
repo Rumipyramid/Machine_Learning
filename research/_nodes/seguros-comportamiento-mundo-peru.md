@@ -341,3 +341,4 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — evidencia sobre demanda, elección, confianza y asesoría que respalda o matiza las barreras conductuales de este node.
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — señales de cambio sobre confianza, canal y asegurabilidad a partir de este contexto.
 - [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.
+- [[seguros-embebidos-insurance-as-a-service|Seguros embebidos e Insurance-as-a-Service]] — cómo funcionan, casos en el Perú, evidencia de conversión frente a valor para la persona, regulación y oportunidades.

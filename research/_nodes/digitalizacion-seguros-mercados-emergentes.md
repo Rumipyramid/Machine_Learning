@@ -1376,3 +1376,4 @@ Tú nombraste banca y finanzas, microseguros, techs, IA, salud y vehicular. Mi p
 - [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.
 - [[conducta-humano-ia|Conducta humano-IA]] — aceptación de la IA que asiste frente a la que decide, control percibido y costo de revelar (§14.2).
 - [[digitalizacion-ramos-vehicular-salud-microseguros|Digitalización por ramo: vehicular/SOAT, salud y microseguros]] — cuándo conviene una app y cuándo no (siete pruebas), y cómo lo digital se junta con el servicio en salud.
+- [[seguros-embebidos-insurance-as-a-service|Seguros embebidos e Insurance-as-a-Service]] — cómo funcionan, casos en el Perú, evidencia de conversión frente a valor para la persona, regulación y oportunidades.

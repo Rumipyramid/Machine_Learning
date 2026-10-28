@@ -571,3 +571,4 @@ Pegar el texto de las notas de Gestión que más importen (basta el cuerpo del a
 - [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — mayores: acceso digital, canal asistido y oferta de rentas y salud (§8, §9, §15).
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — asesoría, confianza y ahorro con compromiso, base de §9.
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — recurrencia y persistencia por canal, que §9.2 muestra contradictoria.
+- [[seguros-embebidos-insurance-as-a-service|Seguros embebidos e Insurance-as-a-Service]] — cómo funcionan, casos en el Perú, evidencia de conversión frente a valor para la persona, regulación y oportunidades.

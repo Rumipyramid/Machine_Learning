@@ -568,3 +568,4 @@ Solidez: 🟢 con causalidad · 🔵 institucional o con método · 🟡 encuest
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — cómo medir hoy la recurrencia que algunas de estas experiencias futuras darían por supuesta.
 - [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — la tendencia de envejecimiento (señal 16 y pregunta 8) desarrollada con evidencia.
 - [[digitalizacion-ramos-vehicular-salud-microseguros|Digitalización por ramo: vehicular/SOAT, salud y microseguros]] — cuándo conviene una app y cuándo no (siete pruebas), y cómo lo digital se junta con el servicio en salud.
+- [[seguros-embebidos-insurance-as-a-service|Seguros embebidos e Insurance-as-a-Service]] — cómo funcionan, casos en el Perú, evidencia de conversión frente a valor para la persona, regulación y oportunidades.
