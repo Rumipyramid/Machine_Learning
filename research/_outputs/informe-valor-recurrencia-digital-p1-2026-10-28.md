@@ -1,7 +1,7 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 4 (incorpora
-quince documentos aportados por la usuaria)
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 5 (incorpora
+quince documentos aportados por la usuaria y cuatro papers verificados; dos documentos internos del equipo se omiten de esta copia)
 (el formato para la gerencia se define después)
 **Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.0, 2026-10-28). Las fuentes se
 citan como (Autor, año) y con su número del registro de fuentes del proyecto (F-n).
@@ -230,10 +230,19 @@ practitioners no son evidencia, pero abren mecanismos que coinciden con otras fu
    baja digitalización de dependientes del diagnóstico interno.
 4. **La fricción pequeña acumulada empuja a irse sin una decisión consciente**, y la confianza se gana cuando algo
    falla (F-899). Coincide con la fuga tras siniestro (F-890, F-872).
-5. **Delegar en una IA exige confirmar en cada paso sensible** para sentir control (F-899).
+5. **Delegar en una IA exige confirmar en cada paso sensible** para sentir control (F-899). **Esta hipótesis ya tiene
+   respaldo experimental:** revelar que era un bot antes de conversar bajó la compra más de 79,7% (Luo et al., 2019,
+   F-912); la gente resiste la IA porque cree que no considera lo que la hace única (Longoni et al., 2019, F-914); la
+   aversión baja si puede modificar el resultado (Dietvorst et al., 2018, F-915); y la comodidad cae de cotizar (46%)
+   a presentar un siniestro por mí (22%) (F-916). Ojo: ocultar al bot sube la venta, pero choca con la transparencia
+   que exige la regulación de IA (F-907).
 6. **El momento de vida pesa más que la edad**, y conviene ofrecer cuando el riesgo se siente cerca (F-899, F-909),
    como al comprar un auto (F-905).
 7. **La confianza se construye usando el producto** (F-898); completar la primera tarea genera confianza (F-895).
+
+Sobre los defaults: un meta-análisis de 58 estudios halló un efecto considerable (d=0,68) de las opciones por
+defecto (Jachimowicz et al., 2019, F-913), mientras que el efecto promedio de los nudges en general desaparece al
+corregir el sesgo de publicación (Maier et al., 2022, F-17).
 
 **Propuesta para las tres definiciones que hoy no existen:**
 
@@ -274,7 +283,7 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 
 **Pendientes para la siguiente versión:**
 
-- el resto de los documentos de la otra conversación (ya se incorporaron quince: ver §7);
+- el resto de los documentos de la otra conversación (ya se incorporaron quince documentos y cuatro papers: ver §7);
 - el resto del blog de Beway: el dominio `blog.beway.com` está bloqueado desde el entorno de trabajo (se leyó un artículo aportado por la usuaria);
 - las memorias anuales completas de Perú y LatAm;
 - la búsqueda de estudios causales de retención en seguros.
@@ -289,6 +298,7 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 | Whitepaper sobre apps de seguros de salud (F-895). ⚠️ El archivo venía rotulado como J.D. Power, pero es de Graphite Digital, una agencia | **Parcial.** Suma el "no lo usé" como razón de fuga y confirma el siniestro y la sobrecarga de información como puntos críticos. Intención declarada, con conflicto de interés |
 | Microseguro de vida en México (F-896) y su ensayo aleatorizado (F-897) | **Sí.** Da evidencia de LatAm para la confianza en el momento de verdad y para la cobertura por defecto. Matiza la puerta de entrada: funciona por defecto y anclada a una relación frecuente |
 | Estudio de inclusión financiera en México (F-898) | **No para esta pregunta.** Sí aporta que parte de la fuga es estructural (cambio de trabajo) y que los adultos mayores se alcanzan mejor por intermediarios |
+| Luo 2019, Jachimowicz 2019, Longoni 2019, Dietvorst 2018 (F-912 a F-915) | **Sí.** Respaldo experimental para la hipótesis de control al delegar en IA y para la fuerza de los defaults |
 | Índice de Inclusión Financiera de Credicorp 2026 (F-906) | **Sí, y matiza la puerta ajena.** La billetera se volvió diaria, pero los seguros no crecieron; Perú tiene la tenencia más baja (13%) |
 | Estudio global de consumidores de Accenture 2023 (F-905) | **Parcial.** El concesionario como puerta (42%) y la rapidez del siniestro como valor. Intención declarada |
 | Artículo de la Universidad de Lima (F-908) | **Parcial.** Suma una fuente peruana a la hipótesis de la red familiar. Sin diseño causal |
@@ -356,6 +366,8 @@ teoría de valor.
 - **Reglamento peruano de IA por niveles de riesgo (sept-2025)**, que alcanzará a la tarificación y los siniestros con
   IA (F-907).
 - **Seguros de vida que se usan en vida y cambian con la etapa** (Bradesco Vida Viva, F-905), sin cifras.
+- **La frontera de la delegación en IA:** se acepta que cotice o informe, no que presente un siniestro o cancele por
+  uno (F-916). Medirla en Perú es un vacío.
 - **Hubs de salud con valor diario como respuesta al "no lo usé"** (F-895; propuesta de una agencia, sin
   resultados).
 
@@ -368,12 +380,13 @@ ejercicio, no un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-909, más F-183, F-353 y F-442). Enlaces en el Anexo D.
+`research/fuentes/codice.md` (F-847 a F-916, más F-183, F-353 y F-442). Enlaces en el Anexo D.
 
 ## Anexo D · Referencias con enlace
 
 Cada fuente citada en el informe, con su número del registro de fuentes del proyecto. Los enlaces llevan a la fuente original o, si no estuvo accesible, al resumen o la cobertura desde donde se leyó. Los documentos aportados por la usuaria se indican como tales.
 
+- **F-17** · Maier, M. et al. (2022). *No evidence for nudging after adjusting for publication bias (PNAS)*. 🟢 A. [Ver fuente](https://www.pnas.org/doi/10.1073/pnas.2200300119)
 - **F-183** · Bain & Company, con datos de NPS Prism (2023). *Insurers Have a Digital Dilemma: Complex Claims*. 🟡 C. [Ver fuente](https://www.bain.com/insights/insurers-have-digital-dilemma-complex-claims-snap-chart/)
 - **F-353** · Vitality Group; validación actuarial de Arbital Health (2024). *Vitality Impact Study*. 🔵 B. [Ver fuente](https://vitalitygroup.com/insights/independent-actuaries-confirm-methodology-in-vitalitys-impact-study/)
 - **F-442** · Equipo de investigación en seguridad vial (autoría no capturada en detalle) (2026). *A national randomized field experiment testing the impact of simulated usage-based insurance programs on driver safety (Accident Analysis & Prevention)*. 🟢 A. [Ver registro del ensayo](https://clinicaltrials.gov/study/NCT06101251) · [Ver revista](https://www.sciencedirect.com/journal/accident-analysis-and-prevention)
@@ -432,3 +445,8 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-907** · Pérez-Llorca (equipos de Seguros y Reaseguros de Colombia, España, México, Portugal y Perú) (2026). *Actualidad Iberoamericana de Seguros, tercer trimestre 2026*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
 - **F-908** · Enríquez Quicaño, J. B.; Alvarado Mesa, M. F.; Romero Valdivia, M. S. (Desafíos: Economía y Empresa n.° 8, Universidad de Lima, pp. 11-38; DOI 10.26439/ddee2026.n008.7940) (2025). *Aplicación de la economía conductual en el mercado de los seguros*. 🟡 C. [Ver fuente](https://doi.org/10.26439/ddee2026.n008.7940) · Documento aportado por la usuaria.
 - **F-909** · Beway, en colaboración con la Asociación Latinoamericana de Suscriptores Marítimos (autoría individual no indicada) (s.f. (c. 2025-2026)). *Cerrar la brecha de aseguramiento marítimo en América Latina: una mirada desde las ciencias del comportamiento*. 🟠 D. Archivo de la usuaria: articulo-bewAY-_Brecha-aseguramiento-maritimo.md (blog.beway.com, dominio bloqueado desde la sesión).
+- **F-912** · Luo, X.; Tong, S.; Fang, Z.; Qu, Z. (Marketing Science 38(6):937-947; DOI 10.1287/mksc.2019.1192) (2019). *Frontiers: Machines vs. Humans: The Impact of Artificial Intelligence Chatbot Disclosure on Customer Purchases*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:inm:ormksc:v:38:y:2019:i:6:p:937-947)
+- **F-913** · Jachimowicz, J. M.; Duncan, S.; Weber, E. U.; Johnson, E. J. (Behavioural Public Policy 3(2):159-186; DOI 10.1017/bpp.2019.25) (2019). *When and why defaults influence decisions: a meta-analysis of default effects*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:cup:bpubpo:v:3:y:2019:i:02:p:159-186_00)
+- **F-914** · Longoni, C.; Bonezzi, A.; Morewedge, C. K. (Journal of Consumer Research) (2019). *Resistance to Medical Artificial Intelligence*. 🟢 A. [Ver fuente](https://www.scinapse.io/papers/2942858056)
+- **F-915** · Dietvorst, B. J.; Simmons, J. P.; Massey, C. (Management Science 64(3)) (2018). *Overcoming Algorithm Aversion: People Will Use Imperfect Algorithms If They Can (Even Slightly) Modify Them*. 🟢 A. [Ver fuente](https://pubsonline.informs.org/doi/10.1287/mnsc.2016.2643)
+- **F-916** · Insurity (cita secundaria) (2026). *Encuesta a consumidores de EE.UU. sobre comodidad con la IA en seguros*. 🟠 D. Cita secundaria; fuente original no consultada.

@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-899 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-909), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-899 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-916; F-910 y F-911 reservados), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -343,7 +343,7 @@ de campo, no como conclusiones.
 | 2 | **El ritmo de pago debe seguir al ritmo del ingreso.** Quien cobra por semana tiene menos seguros | Estudio mexicano (F-898, asociación en datos de 2018) | Microseguro con pago semanal junto al crédito (F-896) | Probar cobros semanales o atados al ingreso frente a cobros mensuales |
 | 3 | **El adulto mayor o el dependiente poco digital se alcanza a través de un familiar** | Estudio mexicano (F-898) | Baja digitalización de dependientes que muestra el diagnóstico interno de julio 2026 | Probar un rol de "usuario apoderado" en el app para el familiar que gestiona |
 | 4 | **La confianza se gana cuando algo falla, y la fricción pequeña acumulada empuja a irse sin una decisión consciente** | Practitioners (F-899) | Fuga tras siniestro aun con clientes satisfechos (F-890); riesgo de fuga con mala experiencia digital del siniestro (F-872) | Medir abandono tras secuencias de fallos pequeños, no solo tras un fallo grave |
-| 5 | **Delegar en una IA exige confirmar en cada paso sensible** (pago, reembolso) para sentir control | Practitioners (F-899) | Rechazo social a la IA en siniestros (F-881) | Prueba de usabilidad de un agente con y sin confirmaciones explícitas |
+| 5 | **Delegar en una IA exige confirmar en cada paso sensible** (pago, reembolso) para sentir control. ⬆ **Pasa de opinión a hipótesis con evidencia fuerte (lote 4)** | Practitioners (F-899) | Experimento de campo: revelar que es un bot antes de conversar bajó la compra más de 79,7% (F-912); la gente resiste la IA porque cree que no considera lo que la hace única (F-914); la aversión baja si puede modificar el resultado (F-915); la comodidad cae de cotizar (46%) a presentar un siniestro por mí (22%) (F-916). Rechazo social a la IA en siniestros (F-881) | Prueba de usabilidad de un agente con y sin confirmaciones explícitas y con opción de ajustar. Ojo: ocultar al bot sube la venta pero choca con la transparencia que exige la regulación (F-907) |
 | 6 | **El momento de vida pesa más que la edad**, y el mejor momento para ofrecer es cuando el riesgo se siente cerca | Practitioners (F-899) y Beway (F-909) | Compra de auto en el concesionario (F-905, 42%); alzas de demanda tras crisis (F-908, descriptivo) | Probar ofertas atadas a eventos (compra de auto, nacimiento, siniestro de un conocido) frente a ofertas por edad |
 | 7 | **La confianza se construye usando el producto** y superando el miedo en la interacción | Estudio mexicano (F-898) | Completar la primera tarea genera confianza (F-895, 35%) | Medir la confianza antes y después de la primera gestión resuelta |
 
@@ -396,6 +396,12 @@ confirma el problema de valor percibido en productos de baja frecuencia.
 | Boletín legal de Pérez-Llorca (3T 2026, F-907) | Perú ya tiene reglamento de IA por niveles de riesgo; en siniestros, la aseguradora puede pedir documentos sin límite de veces en los primeros 20 días | **Para señales y para la pregunta 2.** El tiempo del siniestro tiene una puerta abierta en la norma |
 | Artículo de Beway sobre seguro marítimo (F-909) | Sesgos que explican el subaseguro; seguro por defecto y "timing"; caso alemán de lenguaje conductual en siniestros (+30% de aceptación de talleres, −2% de siniestralidad, sin verificar) | **Parcial.** Es un caso de segunda mano, pero apunta a que el lenguaje en el momento del siniestro mueve conducta y costo |
 
+**Lote 4 (mismo día): cuatro papers y una encuesta.** Dos documentos internos del equipo (F-910 y F-911) se consultaron pero su contenido no se registra en este repositorio; esos números quedan reservados.
+
+| Fuente | Qué aporta | ¿Robustece? |
+|---|---|---|
+| Luo et al., 2019 (F-912); Jachimowicz et al., 2019 (F-913); Longoni et al., 2019 (F-914); Dietvorst et al., 2018 (F-915); Insurity, 2026 (F-916, cita secundaria) | Evidencia sobre revelar que es un bot, la fuerza de los defaults, la resistencia a la IA y la aversión a los algoritmos, verificada en esta sesión | **Sí.** Convierte dos hipótesis de practitioners en hipótesis con respaldo experimental |
+
 **Para el banco de señales (§6):**
 
 - **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones (Flat 101 sobre Revolut, F-899). Es una señal, sin resultados.
@@ -404,6 +410,7 @@ confirma el problema de valor percibido en productos de baja frecuencia.
 - **Seguros paramétricos en desarrollo en Perú** (una microfinanciera y el Ministerio de Desarrollo Agrario), aún sin oferta (F-902).
 - **Reglamento peruano de IA por niveles de riesgo (sept-2025)**, que alcanzará a la tarificación y los siniestros con IA (F-907).
 - **Seguros que se usan en vida y cambian con la etapa** (Bradesco Vida Viva, F-905), sin cifras.
+- **La frontera de la delegación en IA:** la gente acepta que la IA cotice o informe el estado de un siniestro, pero no que presente el siniestro o cancele por ella (F-916). Medirla en Perú es un vacío.
 
 ---
 
