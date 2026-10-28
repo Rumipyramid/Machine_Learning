@@ -270,6 +270,18 @@ Si prefieres PDF, imprime la nota desde tu sesión de suscriptor (Imprimir, Guar
 | G-90 | 2 | SBS modificó las reglas del seguro para afiliados a las AFP, antes de próxima licitación | SISCO IX | https://gestion.pe/tu-dinero/finanzas-personales/sbs-modifico-las-reglas-del-seguro-para-afiliados-a-las-afp-antes-de-proxima-licitacion-noticia/ |
 | G-91 | 2 | Afiliados a AFP pagarán menos por seguro de invalidez y sobrevivencia | SISCO VIII, prima de 1,37% | https://gestion.pe/tu-dinero/finanzas-personales/afiliados-a-afp-pagaran-menos-por-seguro-de-invalidez-y-sobrevivencia-noticia/ |
 
+### M. Seguros embebidos e Insurance-as-a-Service
+
+| ID | Pri. | Titular | Qué resuelve | URL |
+|---|---|---|---|---|
+| G-92 | 1 | Insurance Day 2025: ¿cómo las alianzas están redefiniendo el futuro del sector asegurador? (publirreportaje de APESEG) | Origen del estudio de BCG: 43% compraría un seguro integrado a otro producto, ~60% en jóvenes de ingreso medio-bajo | https://gestion.pe/publirreportaje/insurance-day-2025-como-las-alianzas-estan-redefiniendo-el-futuro-del-sector-asegurador-apeseg-noticia/ |
+| G-93 | 1 | Cinco cambios que acelerarán seguros en Perú | Qué cambios incluye el embebido | https://gestion.pe/tu-dinero/cinco-cambios-que-aceleraran-seguros-en-peru-noticia/ |
+| G-94 | 2 | Viajes: lanzan seguros desde S/ 3 para protección, ¿qué peligros cubren? | Caso de seguro por evento (RedBus, Ticketmaster) | https://gestion.pe/tu-dinero/viajes-lanzan-seguros-desde-s3-para-proteccion-que-peligros-cubren-noticia/ |
+| G-95 | 2 | Bancos: personas aceleran uso de seguros que protegen de robos a sus tarjetas | Protección de tarjetas (BCP, Interseguro) | https://gestion.pe/tu-dinero/finanzas-personales/bancos-personas-aceleran-uso-de-seguros-que-protegen-de-robos-a-sus-tarjetas-noticia/ |
+| — | 1 | **No es de Gestión.** Revista Economía: Panorama 2024, qué trae la protección embebida en Latinoamérica | Panorama regional | https://www.revistaeconomia.com/panorama-2024-que-trae-la-proteccion-embebida-en-latinoamerica/ |
+
+*Ya estaban en la lista: Avla e Iglú (G-26), Betterfly (G-27), Interseguro vehicular 100% digital (G-22), Plin WhatsApp (G-69), BaaS (G-42) y venta a distancia (G-45, G-48, G-49). **No encontré** la nota de Rímac con Grupo EFE (200 tiendas) ni la de la salida de Betterfly: si las tienes, pásamelas.*
+
 ### Lo que busqué en Gestión y no encontré (conviene buscarlo a mano)
 
 - La nota de la salida de Betterfly del Perú.
