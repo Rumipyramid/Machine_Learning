@@ -1,10 +1,10 @@
-# Digitalización por ramo en el Perú: vehicular y SOAT, salud y microseguros; cuándo conviene digitalizar y cuándo una app
+# Digitalización por ramo en el Perú: vehicular y SOAT, salud, vida y microseguros; cuándo conviene digitalizar y cuándo una app
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: v0.1 (exploratorio)
+> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-28 · Versión: v0.2 (exploratorio; suma §8 salud en general, §9 vida, §10 terrenos de oportunidad y §11 puntos ciegos)
 > Origen: pedido de la persona usuaria de investigar tres ramos (vehicular, salud y microseguros) y de responder si el camino
 > correcto es digitalizar, si digitalizar significa tener una app y qué hay detrás de "en salud lo digital se junta con el servicio".
-> Método de `/trinidad` sin la pista social. Fuentes registradas en `research/fuentes/codice.md` (F-1148 a F-1158); reutiliza
+> Método de `/trinidad` sin la pista social. Fuentes registradas en `research/fuentes/codice.md` (F-1148 a F-1158 en v0.1 y F-1159 a F-1185 en v0.2); reutiliza
 > F-41, F-48, F-442, F-855, F-882, F-884, F-888, F-889, F-890, F-931, F-933, F-1047, F-1125, F-1141 y F-1146.
 > Solo fuentes públicas. Todo se leyó por extractos de buscador, notas de prensa y resúmenes; ningún estudio se abrió completo.
 
@@ -23,6 +23,9 @@ evidencia; ninguna fuente las propone como tal.
 3. **Vehicular y SOAT** es donde lo digital mejor funciona en Perú, pero **~90% de SOAT digital no significa cumplimiento**: solo 3 de cada 10 motos tienen SOAT vigente y apenas 20% a 25% del parque tiene seguro vehicular.
 4. **En salud, "lo digital se junta con el servicio" quiere decir que el valor para la persona está en la cita, la consulta, el medicamento y el seguimiento, no en la póliza.** Lo digital solo ayuda si hay un servicio real detrás. La telemedicina **amplía el acceso pero no baja el gasto**, y en Perú el cuello de botella es la capacidad (citas de hasta cinco meses en EsSalud).
 5. **En microseguros, el problema anterior a lo digital es el valor**: 5,8 M de asegurados casi todos por crédito y siniestralidad de 16,7% (F-882). Digitalizar un producto que casi no paga no mejora a la persona.
+6. **(v0.2) En salud en general, la pieza menos probada es el triaje automático y la mejor respaldada es el recordatorio de citas**; la farmacia tiene respaldo medio en adherencia pero ninguna evaluación peruana ni de modelos farmacia-aseguradora (§8).
+7. **(v0.2) En vida, la respuesta cambia con el producto.** Cotizar, pagar y avisar conviene digitalizar; en **vida con inversión** el riesgo lo asume la persona y el costo es opaco, así que conviene informar en digital y **no cerrar sin controles de idoneidad** (§9). El asesor humano tampoco es garantía: la comisión desvía la recomendación (F-1173).
+8. **(v0.2) Casi toda la evidencia nueva es extranjera, de proveedores o leída por extractos** (§11): sirve para ordenar hipótesis y no para decidir.
 
 ## 2. ¿Digitalizar es hacer una app? Cuándo conviene y cuándo no
 
@@ -202,9 +205,186 @@ Que 7 de cada 10 peruanos que necesitaron atención en 2022 no la obtuvieron (F-
 1. Datos propios de uso por canal (app, web, WhatsApp) y de renovación del SOAT y del seguro vehicular.
 2. Cifras de uso de teleconsulta de Rímac, Pacífico y Sanitas, y de Seguro Salud Yape.
 3. Reportes de la SBS sobre SOAT y CAT (2025) y estadísticas de siniestros del ramo vehicular.
-4. Evidencia de hipertensión y diabetes en América Latina, y de navegación de atención (care navigation).
+4. Evidencia de hipertensión y diabetes en América Latina (la navegación de atención se revisó en v0.2: solo hay evidencia de proveedores, F-1165).
 5. Qué pasó con los productos móviles de microseguro de Zambia y otros casos (durabilidad).
-6. Casos de seguro de salud digital con resultados publicados (Alan, Oscar, Ping An).
+6. Casos de seguro de salud digital con resultados publicados: Oscar se revisó en v0.2 (F-1170); faltan Alan y Ping An.
+7. **(v0.2)** Abrir los textos completos de las fuentes de §8 a §11 (JAMA Network Open, npj Digital Medicine, Graetz, Anagol, D'Acunto) cuando el servidor permita esos sitios; leer los resultados de los estudios de la Comisión Europea sobre el documento de datos fundamentales (F-1184); verificar en la SBS qué exige para vida con ahorro e inversión; y correr la pista social.
+
+## 8. Salud en general: seguro, teleconsulta, triaje, farmacia y navegación
+
+Esta sección amplía §4 (que se centró en el recorrido de atención y en el Seguro Salud Yape). Aquí se mira el seguro de salud **en general**: qué dice la literatura sobre cada pieza (teleconsulta, triaje, farmacia, navegación, integración) y qué falta.
+
+### 8.1 En corto
+
+1. **La teleconsulta no baja el gasto de forma demostrada, y la evidencia está dividida.** Un estudio de reclamos de más de 3 millones de adultos en EE. UU. (2019-2023) no halló cambio en visitas ni en gasto, y lo leyó como sustitución (F-1160). Un estudio anterior de telemedicina directa al consumidor halló que **agrega** uso y gasto (F-1151). Mi lectura (hipótesis, no hallazgo): la teleconsulta **integrada** a la red sustituye, y la que funciona como **puerta lateral** suma.
+2. **El triaje automático tiene la evidencia más débil de toda la cadena.** Los verificadores de síntomas aciertan el triaje entre 48,8% y 90,1% de las veces y el diagnóstico solo entre 19% y 37,9%, con casos de subtriaje (F-1159). No hallé ningún ensayo terminado que mida si un *chatbot* de triaje baja las visitas a urgencias (F-1183). El triaje telefónico por enfermeras tiene evidencia más vieja y mixta (F-1164).
+3. **Medir satisfacción puede premiar la mala práctica.** En una plataforma de telemedicina directa, recibir un antibiótico fue el mayor predictor de satisfacción (F-1162). Si el seguro mide éxito por satisfacción o por velocidad, puede estar premiando lo que no conviene.
+4. **La continuidad importa.** Las reconsultas tras telemedicina suben más cuando el paciente es atendido por un médico distinto al suyo (F-1163).
+5. **La navegación de atención solo tiene evidencia de proveedores** (ahorros de 15% a 21%, con muestras pequeñas, comparaciones con referencias y ningún control aleatorio; F-1165). No es evidencia para decidir.
+6. **Un asegurador "digital" no garantiza resultados.** Oscar Health cerró 2025 con siniestralidad de 87,4% y pérdida neta de US$ 443 millones (F-1170).
+7. **La farmacia es la pieza mejor respaldada, y la menos evaluada en el Perú.** Las intervenciones de farmacéuticos mejoran la adherencia (efecto medio en asma; F-1166), y en el Perú **más de la mitad** compra medicamentos sin receta (F-1168). Pero no hay evaluación independiente de un modelo farmacia-aseguradora (F-1181) ni se sabe cuánto desplaza la farmacia a la consulta médica (F-1167).
+
+### 8.2 Lo que se sabe, pieza por pieza
+
+| Pieza | Qué dice la evidencia | Qué tan sólida | Límite principal |
+|---|---|---|---|
+| **Teleconsulta y gasto** | Sin cambio detectable en visitas y gasto, con intervalos que cruzan el nulo (EE. UU., 2019-2023); 25 de 31 estudios hallan menos costo, pero para pacientes y prestadores, no para el sistema (F-1160, F-1161) | Media: observacional, de EE. UU. | Nada sobre el Perú; el gasto del sistema casi no se mide |
+| **Calidad de la teleconsulta** | Más antibióticos en telemedicina directa al consumidor, sobre todo en niños; se corrige con educación y retroalimentación (F-1162) | Media: una plataforma o reclamos de 2015-2016 | Datos viejos; no mide resultado clínico |
+| **Continuidad** | Más reconsultas y urgencias tras telemedicina con médico no habitual (4,8 millones de visitas; F-1163) | Media: observacional | No hay resultado de salud a largo plazo |
+| **Triaje con verificadores de síntomas** | Triaje 48,8% a 90,1%; diagnóstico 19% a 37,9%; riesgo de subtriaje; los autores ven un riesgo para la seguridad si se usan solos (F-1159) | Alta como revisión; **baja como prueba de efecto**, porque mide precisión y no resultado | Mitad de los estudios con casos simulados |
+| **Triaje telefónico por enfermería** | Puede bajar la carga del médico, pero hay más reconsultas; urgencias sin diferencia en 6 de 7 estudios (F-1164) | Media-baja: revisión de 2005 | Antigua; modelos de enfermería de países ricos |
+| **Quioscos de triaje en urgencias** | Sobretriaje de 59,2% a 65,0%; efecto mixto en esperas (F-1183) | Media-baja | Solo urgencias hospitalarias |
+| **Triaje en países de ingreso bajo y medio** | Babylon en Ruanda terminó en 2023; sin evaluación independiente de resultados; una cifra de 7,8% de recomendaciones dañinas con modelo de lenguaje no se pudo verificar (F-1183) | Baja | Preprint y caso de gobernanza |
+| **Navegación de atención** | Ahorros declarados de 6 a 21% por proveedores (F-1165) | **Muy baja** | Conflicto de interés y selección |
+| **Farmacia: adherencia** | Efecto medio (d = 0,49) en asma; mejoras en hipolipemiantes y diabetes; falta evidencia clínica (F-1166) | Media | Autores y revistas no identificados; ensayos pequeños |
+| **Farmacia como puerta de atención** | Devon: la mitad de los usuarios habría ido a un servicio de guardia o comprado por su cuenta (F-1167) | Baja | Evaluaciones locales de los propios servicios |
+| **Perú: automedicación** | 54,8% sin receta (INEI, 2015); 53,4% antibióticos sin receta (INS, 2018) (F-1168) | Media-baja | Datos de 2015-2018; muestras locales |
+| **Perú: telemedicina en EsSalud** | Más de 1 millón de atenciones en 2026, con 211.764 de teletriaje; 1,6 millones en 2025 (F-1169) | Baja (cifra de la propia entidad) | Ninguna medición de resolución ni de derivación |
+| **IA que decide autorizaciones y reclamos** | Uso extendido en EE. UU., denuncias de negaciones masivas, rechazo de los aseguradores; riesgo de reforzar patrones de negación (F-1179) | Baja-media | Sobre todo periodismo y encuestas de gremio |
+| **Acceso desigual** | El video se usa menos entre mayores y personas de bajos ingresos, que usan más audio; 26,3% de beneficiarios de Medicare sin acceso digital en 2018 (F-1182) | Media | Todo de EE. UU. |
+
+### 8.3 Cuándo digitalizar y cuándo no, en salud (síntesis mía)
+
+| Conviene digitalizar | Con cuidado | No conviene (o no solo) |
+|---|---|---|
+| Recordatorios de cita y reprogramación (F-1152) | Teleconsulta de baja complejidad, **si queda en la historia clínica y puede derivar a la red** (F-1163) | Triaje automático que decide a dónde ir **sin un humano que pueda corregir**, sobre todo en niños, ojos y síntomas graves (F-1159) |
+| Envío de documentos de reembolso y estado del trámite | Teleorientación con enfermería con escalamiento claro (F-1164) | Teleconsulta como **puerta separada** de la red, sin continuidad (F-1163) |
+| Receta electrónica y entrega a domicilio de crónicos estables | Navegación de atención: probar con grupo de control antes de comprar (F-1165) | Medir el éxito solo por satisfacción o por rapidez (F-1162) |
+| Seguimiento de crónicos con **contacto humano** (F-1153) | Farmacia como punto de adherencia, no como sustituto del diagnóstico (F-1166) | Negar o demorar autorizaciones con IA sin revisión humana (F-1179) |
+| Información de red y copagos | Integración vertical con clínicas propias: depende del poder de mercado (F-1181) | Cualquier canal **solo digital** para mayores o zonas con poca conectividad (F-1182) |
+
+### 8.4 Terrenos de oportunidad en salud (hipótesis, de más a menos respaldo)
+
+| # | Oportunidad | Qué la respalda | Qué la debilita |
+|---|---|---|---|
+| S6 | **Farmacia + seguimiento para crónicos**: el farmacéutico como punto de adherencia con receta electrónica y recordatorio | Efecto medio en adherencia (F-1166); 54,8% compra sin receta (F-1168) | El farmacéutico no puede prescribir (según un resumen); no hay evaluación de costo |
+| S7 | **Teleorientación con enfermería antes de la cita**, con cita garantizada en la red | Teletriaje ya es 40% de las teleconsultas de EsSalud (F-1169); recomendaciones de continuidad (F-1163) | Evidencia vieja de triaje telefónico (F-1164); la oferta de citas es limitada |
+| S8 | **Seguro de baja prima centrado en el servicio** (teleconsulta, receta, descuento en farmacia) como puerta a un plan mayor | Seguro Salud Yape (F-888); solo 7% de las familias tiene seguro de salud según una nota (no verificada) | No hay resultados publicados; riesgo de que sea un producto de acceso, no de protección |
+| S9 | **Gestión de la inasistencia** con mensajes y reprogramación | Cochrane: 67,8% frente a 78,6% (F-1152) | Sin citas disponibles no sirve (§4.5) |
+| S10 | **Transparencia en autorizaciones** (estado, plazo y motivo de cada trámite) | Preocupación por IA que niega (F-1179) | Falta evidencia de que sube la confianza o la renovación |
+| S11 | **Integración con la red propia** (Pacífico Salud, Auna) | Escala creciente (F-1181) | Sin evaluación independiente del efecto en costo y calidad |
+| S12 | **Canal asistido para mayores** (llamada o familiar cuidador) | Brecha de uso del video (F-1182); 49% de mayores sin internet (F-1119) | Sin prueba de que rinda mejor |
+
+## 9. Vida, vida con ahorro y vida con inversión: cuándo digitalizar y cuándo no
+
+### 9.1 Qué es cada producto (y por qué cambia la respuesta)
+
+Las preguntas sobre digitalizar se contestan distinto según **quién asume el riesgo, cuánto dura el contrato y qué tan opaco es el costo**. En el Perú conviven al menos cinco productos:
+
+| Producto | Qué es | Quién asume el riesgo | Plazo y salida | Qué tan opaco |
+|---|---|---|---|---|
+| **Vida temporal** | Paga si la persona fallece en el plazo; no devuelve nada si no ocurre | La aseguradora | Años; se puede dejar de pagar | Bajo: precio contra cobertura |
+| **Vida Ley** | Seguro que el empleador debe contratar para trabajadores formales desde el primer día de trabajo (desde 2020) (F-1178) | La aseguradora; paga el empleador | Mientras dure el empleo, y puede mantenerse tras el cese desde mayo de 2025 (F-1178) | Bajo para el trabajador: no elige ni paga |
+| **Vida con ahorro o devolución** | Protección más una devolución de parte de lo pagado; ejemplo: productos de "devolución y ahorro" de Mapfre (no leí su detalle) | Mixto | Largo; **el rescate anticipado suele costar** | **Alto**: parte de la prima es ahorro y parte costo |
+| **Vida con inversión** (*unit-linked*) | Parte de la prima se invierte, según Gestión (2024) usualmente en **fondos mutuos del exterior**, con rendimientos variables (F-1180) | **La persona**, en la parte invertida | Largo; rescate y comisiones | **Muy alto**: costos, riesgo de mercado, comparación con alternativas |
+| **Renta vitalicia** | Convierte un ahorro en ingreso de por vida | La aseguradora (longevidad) | Irreversible | Alto; precio ligado a tasas y expectativa de vida |
+
+### 9.2 Lo que dice la evidencia
+
+| Tema | Hallazgo | Fuente | Confianza |
+|---|---|---|---|
+| **Investigar sí, cerrar solo no** | 92% investiga vida en línea, pero solo 25% está listo para completar la compra sin ayuda (EE. UU., 2025). Con un asesor, 97% quedó satisfecho; con una llamada web, 22% | LIMRA y Life Happens (F-1171) | Media-baja: encuestas de gremio, notas secundarias |
+| **La fricción de la solicitud importa** | 52% compraría más si no hubiera examen; unos 19 millones empiezan y no terminan; 3 de 4 aseguradoras de EE. UU. y Canadá tienen suscripción automatizada o acelerada | LIMRA (F-1171) | Media-baja |
+| **Preguntas más simples, no solo menos** | Pocas preguntas largas dan peores respuestas que más preguntas fáciles | Gen Re (F-1184) | Baja: practicante |
+| **Suscripción acelerada: experiencia corta** | Pocos años de datos; riesgo en edades altas, montos grandes y mala declaración | SOA, Milliman (F-1176) | Media |
+| **¿Persisten más las compras en línea?** | India: sí (86% frente a 67% al mes 13); Australia 2013: no (39% se pierde el primer año frente a 8,4%) | IRDAI vía prensa; Plan For Life (F-1172) | **Baja y contradictoria** |
+| **El asesor a comisión no es neutral** | Recomienda productos dominados en 60% a 80% de las visitas (India) | Anagol, Cole y Sarkar (F-1173) | Alta como diseño; lejos del Perú |
+| **Asesoría automatizada de inversión** | Mejora la diversificación en quienes casi no diversificaban; no ayuda a quien ya sabe; con rostro humano o nombre empeora el sesgo en el laboratorio | D'Acunto, Prabhala y Rossi (F-1174) | Alta, pero **de corretaje, no de seguros** |
+| **Apps y mensajes para ahorrar** | Efectos heterogéneos; lo que más mueve es la **menor fricción** y no la información; el mensaje que ayuda a un perfil falla en otro | Experimentos de campo (F-1175) | Media-baja: autores no identificados |
+| **Rescate y caducidad** | Suben con golpes de ingresos y deuda; 13,7% de quienes caducan compra otra póliza | Fier y Liebenberg y otros (F-1177) | Media |
+| **Mala venta de productos con inversión** | Quejas masivas en India; el regulador prohibió venderlos como inversión pura | Prensa india (F-1180) | Baja |
+| **Perú: peso de vida** | 33,5% de las primas en 2022; temporal desde US$ 30 al mes en una aseguradora | APESEG; Pacífico (F-1185) | Baja-media |
+| **Perú: vida con inversión crece** | Titular de Gestión: "crecen 64%" (marzo de 2026); sin periodo ni base | Gestión (F-1180) | **Muy baja** (solo titular) |
+
+### 9.3 Cuándo digitalizar y cuándo no (inferencia mía, a partir de lo anterior)
+
+Lo que sigue es una **regla de decisión propia**, no un hallazgo. Se apoya en tres criterios adicionales a las siete pruebas de §2.3: **quién asume el riesgo de inversión**, **qué tan costoso es equivocarse** y **qué tan opaco es el costo**.
+
+| Producto o paso | ¿Digitalizar? | Qué conviene hacer | Qué debe quedarse humano o regulado |
+|---|---|---|---|
+| **Cotizar y comparar vida temporal** | Sí | Simulador claro, precio visible, preguntas fáciles (F-1184) | Nada obligatorio |
+| **Contratar vida temporal de monto bajo** | Sí | Suscripción simplificada para sumas pequeñas; firma y pago digitales | Revisión humana de casos atípicos |
+| **Contratar vida temporal de monto alto o con salud compleja** | Parcial | Digital para pedir datos y agendar | Evaluación médica y asesor, por el riesgo de mala declaración y antiselección (F-1176) |
+| **Vida Ley** | Sí en alta, baja y conversión | Alta automática, certificado digital, aviso al cesar | Que el trabajador sepa que **puede mantener la cobertura** (F-1178) |
+| **Vida con ahorro o devolución** | Sí para **informar**; cierre con cuidado | Simulador del rescate en cada año y de cuánto se paga en costos; tiempo de reflexión | Cierre asistido o con confirmación explícita de que entendió el rescate |
+| **Vida con inversión** | **Informar sí; vender solo digital, no sin controles** | Perfil de riesgo y de horizonte; mostrar costos y escenarios; advertir que el riesgo es de la persona | **Idoneidad (adecuación del producto) verificable**, registro, y no presentarlo como inversión pura. Qué exige la SBS no lo verifiqué (F-1178) |
+| **Renta vitalicia** | Informar sí; contratar con asesor | Simulador de ingreso mensual y comparación | Irreversible: debe haber asesoría y tiempo |
+| **Pago de primas, recordatorios y cambios de beneficiario** | Sí | Débito, billetera o riel de pago | Nada |
+| **Siniestro de vida** | Parcial | Aviso y seguimiento digitales | Contacto humano con la familia en un momento de duelo |
+
+**Por qué vida con inversión es el caso más delicado (inferencia mía).** Digitalizar baja la fricción, y bajar la fricción en un producto de largo plazo y de costo opaco **facilita compras impulsivas o mal entendidas**. La evidencia de asesores automatizados que ayudan es de corretaje y de personas que casi no diversificaban (F-1174); no prueba que un cierre solo digital proteja a quien compra un seguro con inversión. Y el asesor humano tampoco es garantía, porque la comisión desvía la recomendación (F-1173). La salida plausible es **digital para informar y comparar, con controles de idoneidad y confirmación de comprensión**, y no "digital contra humano".
+
+### 9.4 Hipótesis de vida (para probar con datos propios)
+
+| # | Hipótesis | Cómo probarla |
+|---|---|---|
+| L1 | Una versión de la solicitud con menos exámenes y preguntas más fáciles sube la finalización sin subir la mala declaración | Prueba A/B con revisión posterior de una muestra de declaraciones |
+| L2 | La compra digital con **llamada de un asesor al final** persiste más que la 100% digital | Persistencia a 13 y 25 meses, ajustando por tipo de cliente; la evidencia disponible es contradictoria (F-1172) |
+| L3 | Mostrar el **valor de rescate y los costos año por año** baja los rescates tempranos en vida con ahorro | Prueba con grupo de control; medir caducidad al año 1 a 3 |
+| L4 | Un aviso al cesar el empleo, con opción de mantener o convertir la Vida Ley, genera conversiones a temporal individual | Tasa de conversión entre cesados avisados y no avisados |
+| L5 | Quienes compran vida con inversión sin asesor entienden menos los costos y el riesgo | Prueba de comprensión tras la compra, con y sin asesor |
+| L6 | Los recordatorios de pago por billetera reducen la caducidad por olvido | Caducidad en los dos primeros años, con y sin recordatorio |
+| L7 | La suscripción simplificada para montos bajos no empeora la siniestralidad | Siniestralidad por cohorte y monto (la experiencia pública aún es corta; F-1176) |
+
+## 10. Otros terrenos de oportunidad (transversales)
+
+Todo esto son **hipótesis**; ninguna tiene aún evidencia peruana. Las ordeno de mayor a menor respaldo en la literatura revisada.
+
+| # | Terreno | Por qué podría valer | Respaldo |
+|---|---|---|---|
+| T1 | **Recordatorios y gestión de olvidos** (renovación de SOAT, pago de vida, citas) | Intervención barata con efecto demostrado en citas (F-1152); falta probarla en seguros | 🔵 |
+| T2 | **Conversión de Vida Ley a seguro individual al dejar el empleo** | Cobertura obligatoria que termina o se mantiene por decisión (F-1178) | 🟠 |
+| T3 | **Farmacia y adherencia en crónicos** | Efecto medio demostrado en adherencia (F-1166) | 🔵 |
+| T4 | **Teleorientación de enfermería con cita en la red** | Teletriaje ya masivo en EsSalud (F-1169) y evidencia mixta (F-1164) | 🟡 |
+| T5 | **Simuladores de rescate y de costos en productos de ahorro** como diferenciador de confianza | Opacidad como riesgo de mala venta (F-1180); lección de la divulgación europea (F-1184) | 🟠 |
+| T6 | **Herramientas digitales para el asesor** (cotizador, firma, seguimiento) | El cierre sigue siendo asistido (F-1171, F-1157) | 🔵 |
+| T7 | **Decisión de renta o vida con inversión tras un retiro de AFP** (momento de decisión) | El CEO de Intercorp Financial Services espera que vida y rentas privadas crezcan más rápido (F-1124) | 🟠 |
+| T8 | **Transparencia de trámites** (autorizaciones, siniestros, reembolsos) | Preocupación pública por IA que niega (F-1179) | 🟠 |
+| T9 | **Canal asistido para mayores y zonas con poca conectividad** | Brecha de uso del video y del acceso digital (F-1182, F-1119) | 🟡 |
+
+Escala: 🔵 hay evidencia causal en otro contexto; 🟡 evidencia mixta; 🟠 solo inferencia o contexto. **Ninguna llega a evidencia causal en el Perú.**
+
+## 11. Puntos ciegos y lo que queda fuera del alcance
+
+### 11.1 Puntos ciegos de la evidencia
+
+1. **No hay evidencia peruana de efecto.** Casi todo viene de EE. UU., India, Reino Unido o África, y gran parte es de proveedores. Lo único peruano son cifras de uso de EsSalud (F-1169), automedicación de 2015 a 2018 (F-1168) y notas de prensa.
+2. **Se mide proceso, no resultado.** Asistencia a la cita, satisfacción y velocidad abundan; resolución del problema de salud, protección efectiva y costo total para la persona casi no se miden.
+3. **Sesgo de publicación y de autoselección.** Los proveedores publican sus éxitos (F-1165), y quien elige el canal digital ya es distinto de quien no (F-1172). Por eso comparar persistencia o costo entre canales no prueba que el canal sea la causa.
+4. **Evidencia que se contradice.** Telemedicina y gasto (F-1160 frente a F-1151) y persistencia por canal (India frente a Australia; F-1172). Aquí la honestidad es decir "depende" y no promediar.
+5. **Lectura limitada.** No pude abrir los textos completos de varias fuentes: el servidor de la sesión no resuelve JAMA, el repositorio de los NIH (PMC y PubMed), El Peruano ni CafeMutual. Todo lo de esta sección se leyó por **extractos de buscador**. Antes de citar una cifra en un entregable, conviene abrir la fuente.
+6. **La pista social no se corrió.** No sé qué dicen asegurados, corredores y médicos en el Perú sobre teleconsulta, triaje o seguros de vida en línea.
+
+### 11.2 Puntos ciegos del diseño y de la lógica
+
+1. **Digital que desplaza al médico de cabecera.** Puede subir el acceso y bajar la continuidad (F-1163).
+2. **Premiar la métrica equivocada.** Si se mide satisfacción, el antibiótico gana (F-1162); si se mide rapidez de siniestro, se puede apurar la negación.
+3. **Subtriaje.** Un triaje que subestima la gravedad es el riesgo más serio de la cadena (F-1159).
+4. **Equidad.** Mayores, bajos ingresos y zonas rurales usan menos video y más audio (F-1182). Optimizar para el usuario digital promedio puede empeorar la brecha.
+5. **El humano tampoco es neutral.** El asesor a comisión puede recomendar peor (F-1173). El debate no es "digital o humano", sino "con qué incentivos".
+6. **Quién gana.** Lo digital baja el costo de servir para la aseguradora; no necesariamente baja lo que paga la persona ni mejora lo que recibe (§15.4 del node raíz).
+7. **Selección adversa.** La suscripción simplificada y las compras sin examen pueden atraer más riesgo oculto (F-1176); el Perú no tiene datos públicos.
+
+### 11.3 Regulación, datos y riesgos operativos (no investigados a fondo)
+
+- **Venta a distancia:** la SBS la permite con deberes de información (F-1178); no verifiqué si hay exigencias adicionales para vida con ahorro o con inversión, ni las reglas de **idoneidad**.
+- **Telesalud:** existe el reglamento de la Ley 30421 (DS 005-2021-SA; F-1178); no revisé qué exige de plataformas privadas, de historia clínica y de interoperabilidad.
+- **Datos personales y de salud, e IA:** no verifiqué en esta ronda la ley de protección de datos, el reglamento de inteligencia artificial ni su aplicación a seguros.
+- **Productos emitidos en el exterior:** según un publirreportaje, la SBS advierte que no los supervisa (F-1180); falta verificarlo en una fuente oficial.
+- **Fraude y ciberseguridad** del canal digital (ya visto en el SOAT; F-1047).
+
+### 11.4 Fuera del alcance (no lo investigué)
+
+Precios y suscripción con IA (*pricing*); reaseguro; reforma de EsSalud, SIS y EPS, y reclamos ante SUSALUD (la búsqueda solo devolvió Colombia); salud mental y teleconsulta; oncológico y enfermedades de alto costo; seguros de vida grupo o empresariales; microseguro de vida y funerario; bancaseguros y sus conflictos de interés (venta atada al crédito); rentas vitalicias y pensiones en profundidad; competencia de billeteras y plataformas; la experiencia del corredor y del asesor; zonas rurales, lenguas originarias y confianza intercultural.
+
+### 11.5 Preguntas que solo se cierran con datos propios
+
+1. ¿Cuántos asegurados de salud usan teleconsulta, cuántos terminan en una cita presencial y cuánto cuesta cada ruta?
+2. ¿Qué proporción de las consultas por teleorientación se resuelve sin derivar, y con qué reconsultas?
+3. ¿Quién compra vida temporal por web, por billetera, por corredor y por banco, y cómo persiste cada grupo a 13 y 25 meses (controlando por perfil)?
+4. ¿Cuántos Vida Ley se convierten en individual al cesar?
+5. ¿Qué entienden de costos y riesgos quienes compran vida con ahorro o con inversión, según el canal?
+6. ¿Qué se pierde en equidad cuando el canal es solo digital?
 
 ## Conexiones
 
@@ -215,3 +395,6 @@ Que 7 de cada 10 peruanos que necesitaron atención en 2022 no la obtuvieron (F-
 - [[conducta-humano-ia|Conducta humano-IA]] — IA que asiste frente a IA que decide, relevante para siniestros y orientación.
 - [[venta-vida-digital-hibrida-latam|Venta de vida digital vs. híbrida en LATAM]] — el modelo híbrido en productos complejos.
 - [[futuro-asesores-seguros-venta-digital|Futuro de los asesores y venta digital]] — qué se queda humano.
+- [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — mayores: acceso digital, canal asistido y oferta de rentas y salud (§8, §9).
+- [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — asesoría, confianza y ahorro con compromiso, base de §9.
+- [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — recurrencia y persistencia por canal, que §9.2 muestra contradictoria.
