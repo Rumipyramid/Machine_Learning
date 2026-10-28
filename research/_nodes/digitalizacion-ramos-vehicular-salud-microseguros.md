@@ -4,7 +4,7 @@
 > Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-28 · Versión: v0.2 (exploratorio; suma §8 salud en general, §9 vida, §10 terrenos de oportunidad y §11 puntos ciegos)
 > Origen: pedido de la persona usuaria de investigar tres ramos (vehicular, salud y microseguros) y de responder si el camino
 > correcto es digitalizar, si digitalizar significa tener una app y qué hay detrás de "en salud lo digital se junta con el servicio".
-> Método de `/trinidad` sin la pista social. Fuentes registradas en `research/fuentes/codice.md` (F-1148 a F-1158 en v0.1 y F-1159 a F-1185 en v0.2); reutiliza
+> Método de `/trinidad` sin la pista social. Fuentes registradas en `research/fuentes/codice.md` (F-1148 a F-1158 en v0.1; F-1159 a F-1187 en v0.2); reutiliza
 > F-41, F-48, F-442, F-855, F-882, F-884, F-888, F-889, F-890, F-931, F-933, F-1047, F-1125, F-1141 y F-1146.
 > Solo fuentes públicas. Todo se leyó por extractos de buscador, notas de prensa y resúmenes; ningún estudio se abrió completo.
 
@@ -21,7 +21,7 @@ evidencia; ninguna fuente las propone como tal.
 1. **Digitalizar no es hacer una app.** Una app es una de ocho formas de digitalizar. Para un seguro que se usa **unas 2,7 veces al año** (F-1125), la app propia suele ser la forma menos adecuada; la web, WhatsApp, las billeteras y los rieles de pago llegan donde la persona ya está.
 2. **Conviene digitalizar los bordes (buscar, pagar, avisar, hacer seguimiento) y lo estandarizado. No conviene digitalizar solo** la decisión compleja, ni lo que depende de que haya capacidad física detrás (médicos, talleres, pago de siniestros).
 3. **Vehicular y SOAT** es donde lo digital mejor funciona en Perú, pero **~90% de SOAT digital no significa cumplimiento**: solo 3 de cada 10 motos tienen SOAT vigente y apenas 20% a 25% del parque tiene seguro vehicular.
-4. **En salud, "lo digital se junta con el servicio" quiere decir que el valor para la persona está en la cita, la consulta, el medicamento y el seguimiento, no en la póliza.** Lo digital solo ayuda si hay un servicio real detrás. La telemedicina **amplía el acceso pero no baja el gasto**, y en Perú el cuello de botella es la capacidad (citas de hasta cinco meses en EsSalud).
+4. **En salud, "lo digital se junta con el servicio" quiere decir que el valor para la persona está en la cita, la consulta, el medicamento y el seguimiento, no en la póliza.** Lo digital solo ayuda si hay un servicio real detrás. La telemedicina **amplía el acceso y no muestra un efecto consistente sobre el gasto** (nulo en EE. UU., -1,0% en Japón, más gasto en un estudio de 2017; ver §8), y en Perú el cuello de botella es la capacidad (citas de hasta cinco meses en EsSalud).
 5. **En microseguros, el problema anterior a lo digital es el valor**: 5,8 M de asegurados casi todos por crédito y siniestralidad de 16,7% (F-882). Digitalizar un producto que casi no paga no mejora a la persona.
 6. **(v0.2) En salud en general, la pieza menos probada es el triaje automático y la mejor respaldada es el recordatorio de citas**; la farmacia tiene respaldo medio en adherencia pero ninguna evaluación peruana ni de modelos farmacia-aseguradora (§8).
 7. **(v0.2) En vida, la respuesta cambia con el producto.** Cotizar, pagar y avisar conviene digitalizar; en **vida con inversión** el riesgo lo asume la persona y el costo es opaco, así que conviene informar en digital y **no cerrar sin controles de idoneidad** (§9). El asesor humano tampoco es garantía: la comisión desvía la recomendación (F-1173).
@@ -145,7 +145,7 @@ Es un seguro de S/ 9,90 al mes con **teleconsultas ilimitadas** (medicina genera
 
 ### 4.4 Costos médicos al alza: lo digital no toca el grueso
 
-El informe de WTW atribuye el aumento de 11,9% para 2026 en América Latina a **farmacia, servicios ambulatorios y profesionales, nuevas tecnologías y medicamentos, y más cáncer en jóvenes** (F-1102). La telemedicina **no baja el gasto** (F-1151), y el monitoreo remoto no tiene análisis de costo-efectividad (F-1153). **Inferencia mía:** lo digital mejora acceso y orden del recorrido, pero **no es una palanca principal para contener costos**; las palancas son compra de medicamentos, red de proveedores, pago y prevención. No hallé una fuente que pruebe lo contrario.
+El informe de WTW atribuye el aumento de 11,9% para 2026 en América Latina a **farmacia, servicios ambulatorios y profesionales, nuevas tecnologías y medicamentos, y más cáncer en jóvenes** (F-1102). La telemedicina **no muestra un efecto consistente sobre el gasto** (F-1151, F-1160, F-1161), y el monitoreo remoto no tiene análisis de costo-efectividad (F-1153). **Inferencia mía:** lo digital mejora acceso y orden del recorrido, pero **no es una palanca principal para contener costos**; las palancas son compra de medicamentos, red de proveedores, pago y prevención. El único estudio que halló una baja (Japón, 1,0% del gasto total; F-1161) viene de un sistema de pago distinto al peruano.
 
 ### 4.5 El cuello de botella peruano es la capacidad
 
@@ -216,7 +216,7 @@ Esta sección amplía §4 (que se centró en el recorrido de atención y en el S
 
 ### 8.1 En corto
 
-1. **La teleconsulta no baja el gasto de forma demostrada, y la evidencia está dividida.** Un estudio de reclamos de más de 3 millones de adultos en EE. UU. (2019-2023) no halló cambio en visitas ni en gasto, y lo leyó como sustitución (F-1160). Un estudio anterior de telemedicina directa al consumidor halló que **agrega** uso y gasto (F-1151). Mi lectura (hipótesis, no hallazgo): la teleconsulta **integrada** a la red sustituye, y la que funciona como **puerta lateral** suma.
+1. **La teleconsulta no sube el gasto de forma demostrada, pero tampoco lo baja de forma consistente.** Tres estudios, tres resultados. En EE. UU. (Mafi y colaboradores, *JAMA Network Open*, 2026; más de 3 millones de adultos, 2019-2023) no hubo cambio significativo en visitas ni en gasto, y los autores dicen que eso alivia la preocupación por grandes aumentos (F-1160). En Japón (Aihara, Kawachi y Sommers, 2025; cuasi-experimento con 126 millones de personas) hubo **1,0% menos gasto total** y 1,1% menos gasto hospitalario, sin diferencia en gasto ambulatorio y sin cambios en mortalidad, HbA1c, presión ni colesterol (F-1161). Un estudio de 2017 de telemedicina directa al consumidor halló que **agrega** uso y gasto (F-1151). Mi hipótesis, no un hallazgo: la teleconsulta integrada a la red tiende a sustituir y la que funciona como puerta aparte tiende a sumar; además, Japón y EE. UU. tienen sistemas de pago muy distintos al peruano.
 2. **El triaje automático tiene la evidencia más débil de toda la cadena.** Los verificadores de síntomas aciertan el triaje entre 48,8% y 90,1% de las veces y el diagnóstico solo entre 19% y 37,9%, con casos de subtriaje (F-1159). No hallé ningún ensayo terminado que mida si un *chatbot* de triaje baja las visitas a urgencias (F-1183). El triaje telefónico por enfermeras tiene evidencia más vieja y mixta (F-1164).
 3. **Medir satisfacción puede premiar la mala práctica.** En una plataforma de telemedicina directa, recibir un antibiótico fue el mayor predictor de satisfacción (F-1162). Si el seguro mide éxito por satisfacción o por velocidad, puede estar premiando lo que no conviene.
 4. **La continuidad importa.** Las reconsultas tras telemedicina suben más cuando el paciente es atendido por un médico distinto al suyo (F-1163).
@@ -228,7 +228,7 @@ Esta sección amplía §4 (que se centró en el recorrido de atención y en el S
 
 | Pieza | Qué dice la evidencia | Qué tan sólida | Límite principal |
 |---|---|---|---|
-| **Teleconsulta y gasto** | Sin cambio detectable en visitas y gasto, con intervalos que cruzan el nulo (EE. UU., 2019-2023); 25 de 31 estudios hallan menos costo, pero para pacientes y prestadores, no para el sistema (F-1160, F-1161) | Media: observacional, de EE. UU. | Nada sobre el Perú; el gasto del sistema casi no se mide |
+| **Teleconsulta y gasto** | EE. UU.: sin cambio significativo en visitas ni gasto (IC que cruzan el nulo); Japón: 1,0% menos gasto total y 1,1% menos hospitalario, sin cambio en resultados de salud; 25 de 31 estudios de una revisión hallan menos costo, pero para pacientes y prestadores (F-1160, F-1161) | Media-alta: dos estudios arbitrados de gran tamaño, leídos completos | Observacionales o cuasi-experimentales; nada sobre el Perú; el gasto del sistema casi no se mide |
 | **Calidad de la teleconsulta** | Más antibióticos en telemedicina directa al consumidor, sobre todo en niños; se corrige con educación y retroalimentación (F-1162) | Media: una plataforma o reclamos de 2015-2016 | Datos viejos; no mide resultado clínico |
 | **Continuidad** | Más reconsultas y urgencias tras telemedicina con médico no habitual (4,8 millones de visitas; F-1163) | Media: observacional | No hay resultado de salud a largo plazo |
 | **Triaje con verificadores de síntomas** | Triaje 48,8% a 90,1%; diagnóstico 19% a 37,9%; riesgo de subtriaje; los autores ven un riesgo para la seguridad si se usan solos (F-1159) | Alta como revisión; **baja como prueba de efecto**, porque mide precisión y no resultado | Mitad de los estudios con casos simulados |
@@ -241,7 +241,7 @@ Esta sección amplía §4 (que se centró en el recorrido de atención y en el S
 | **Perú: automedicación** | 54,8% sin receta (INEI, 2015); 53,4% antibióticos sin receta (INS, 2018) (F-1168) | Media-baja | Datos de 2015-2018; muestras locales |
 | **Perú: telemedicina en EsSalud** | Más de 1 millón de atenciones en 2026, con 211.764 de teletriaje; 1,6 millones en 2025 (F-1169) | Baja (cifra de la propia entidad) | Ninguna medición de resolución ni de derivación |
 | **IA que decide autorizaciones y reclamos** | Uso extendido en EE. UU., denuncias de negaciones masivas, rechazo de los aseguradores; riesgo de reforzar patrones de negación (F-1179) | Baja-media | Sobre todo periodismo y encuestas de gremio |
-| **Acceso desigual** | El video se usa menos entre mayores y personas de bajos ingresos, que usan más audio; 26,3% de beneficiarios de Medicare sin acceso digital en 2018 (F-1182) | Media | Todo de EE. UU. |
+| **Acceso desigual** | En California, 65% de residentes de bajos ingresos usó telesalud y 43% dependió de visitas solo por audio (38% en toda California); la banda ancha fija llega a 83% de zonas rurales y 99% de urbanas; menos de 1 de cada 10 reclamos nacionales de telesalud vino de mayores de 65 años a inicios de 2025 (F-1182). La cifra de 26,3% de Medicare sin acceso digital **no se pudo verificar** | Media: ficha de un programa de California, leída completa | De un solo estado de EE. UU. |
 
 ### 8.3 Cuándo digitalizar y cuándo no, en salud (síntesis mía)
 
@@ -352,7 +352,7 @@ Escala: 🔵 hay evidencia causal en otro contexto; 🟡 evidencia mixta; 🟠 s
 2. **Se mide proceso, no resultado.** Asistencia a la cita, satisfacción y velocidad abundan; resolución del problema de salud, protección efectiva y costo total para la persona casi no se miden.
 3. **Sesgo de publicación y de autoselección.** Los proveedores publican sus éxitos (F-1165), y quien elige el canal digital ya es distinto de quien no (F-1172). Por eso comparar persistencia o costo entre canales no prueba que el canal sea la causa.
 4. **Evidencia que se contradice.** Telemedicina y gasto (F-1160 frente a F-1151) y persistencia por canal (India frente a Australia; F-1172). Aquí la honestidad es decir "depende" y no promediar.
-5. **Lectura limitada.** No pude abrir los textos completos de las fuentes F-1159 a F-1185 (2026-10-28): la red de la sesión no resuelve JAMA Network, el repositorio de los NIH (PMC y PubMed), Nature, JMIR, BJGP, NBER, Stanford HAI, la SOA, arXiv, CHBRP, El Peruano ni CafeMutual; el resto de los sitios no lo probé porque el sistema indicó detenerme tras varios bloqueos. Todo lo de esta sección se leyó por **extractos de buscador**. Antes de citar una cifra en un entregable, conviene abrir la fuente.
+5. **Lectura limitada.** De las fuentes F-1159 a F-1185 pude leer completas, gracias a los PDF aportados por la persona usuaria, seis: Wallace (F-1159), Mafi (F-1160), Aihara (F-1161), la nota de Stanford HAI (F-1179), la ficha de CHBRP (F-1182) y el preprint de arXiv (F-1183); al leerlas corregí siete datos míos (ver la nota de verificación en cada ficha). El resto sigue leído por extractos. No pude abrir (2026-10-28): la red de la sesión no resuelve JAMA Network, el repositorio de los NIH (PMC y PubMed), Nature, JMIR, BJGP, NBER, Stanford HAI, la SOA, arXiv, CHBRP, El Peruano ni CafeMutual; tampoco gestion.pe; el resto de los sitios no lo probé porque el sistema indicó detenerme tras varios bloqueos. Todo lo de esta sección se leyó por **extractos de buscador**. Antes de citar una cifra en un entregable, conviene abrir la fuente.
 6. **La pista social no se corrió.** No sé qué dicen asegurados, corredores y médicos en el Perú sobre teleconsulta, triaje o seguros de vida en línea.
 
 ### 11.2 Puntos ciegos del diseño y de la lógica
@@ -424,9 +424,29 @@ Es una **síntesis mía** de §2 a §11. Ordena las hipótesis por cuánto las r
 | **Microseguro digital sin mejorar el valor** | 97,8% por instituciones financieras y siniestralidad de 16,7%: antes del canal está el valor (F-882) |
 | **IA que niega o demora autorizaciones y reclamos sin revisión humana** | Riesgo de reforzar patrones de negación y de daño reputacional (F-1179) |
 | **Medir el éxito por satisfacción o velocidad** | La satisfacción premia el antibiótico (F-1162) y la velocidad puede apurar negaciones |
-| **Usar lo digital como palanca para contener costos médicos** | Los motores son farmacia, ambulatorio y nuevas tecnologías (F-1102); la telemedicina no bajó el gasto de forma demostrada (F-1160) |
+| **Usar lo digital como palanca para contener costos médicos** | Los motores son farmacia, ambulatorio y nuevas tecnologías (F-1102); la telemedicina no muestra un efecto consistente sobre el gasto del sistema: nulo en EE. UU. (F-1160) y -1,0% en Japón (F-1161) |
 | **Suscripción acelerada en montos y edades altos** | Experiencia de mortalidad corta; fallas en edades altas, montos grandes y mala declaración (F-1176) |
 | **Canal solo digital para mayores o zonas con poco acceso** | Excluye a quien más necesita el servicio (F-1182) |
+
+## 13. Lo que dice la prensa económica reciente (Gestión): finanzas abiertas y Pacífico Salud
+
+**Límite principal:** no tengo acceso a gestion.pe (la red de la sesión no lo resuelve y, aunque lo resolviera, un suscriptor no pasa su sesión a mi herramienta). Lo que sigue sale de **titulares y fragmentos de buscador**, no de los artículos completos. Las cifras vienen de declaraciones de las empresas o de notas con fecha no confirmada (F-1186, F-1187). Hay que abrirlas o pegar el texto antes de citarlas en un entregable.
+
+### 13.1 Finanzas abiertas y pagos iniciados
+
+- **Lo que dicen los fragmentos:** la SBS publicó un primer bloque normativo (reglamento general, con proveedores de servicios basados en datos y un patrimonio mínimo de S/ 678.000); el inicio sería con cuentas de ahorro y tarjetas; una fuente fija el **1 de enero de 2028** para cuentas de ahorro y corrientes y dice que luego se sumarían **créditos, seguros y productos previsionales**. El reglamento de iniciadores de pago del BCRP se esperaba para el segundo trimestre de 2026 y no hallé confirmación de que se haya emitido (F-1186).
+- **Lo que no sé:** si el reglamento incluye a las aseguradoras y desde cuándo; otra búsqueda en Gestión no lo halló. Coincide con lo que ya estaba en el node de foresight (§12.7 y §12.9): fechas que no concilian y alcance a seguros sin confirmar.
+- **Qué cambiaría para los ramos de este node (inferencia mía):** el pago iniciado por el BCRP tocaría primero el **cobro de la prima** (SOAT, vida temporal, salud de baja prima) y el **pago del siniestro**; los datos abiertos de la SBS tocarían después la **cotización personalizada** con datos transaccionales. Ninguna fuente lo describe para seguros; es una hipótesis.
+
+### 13.2 Pacífico Salud: lo que declara y qué significa para salud
+
+- **Lo que dicen los fragmentos (todo declarado por la empresa, una nota es publirreportaje):** inversión en innovación de ~3% de los ingresos en 2025 frente a ~1% antes; telemedicina **Tsana** con más de 90.000 suscriptores; ampliación de Sanna Clínica San Borja por ~US$ 35 millones (de 100 a 200 camas, hasta 2027-2028); piloto de centros de bajo costo en Lima Norte en escalamiento; posible alianza con una empresa de servicios públicos con ~medio millón de personas; meta de 12 millones de peruanos hacia 2027; ~50% de las atenciones ambulatorias podrían resolverse virtualmente (F-1187).
+- **Qué refuerza de lo anterior:** una aseguradora peruana grande combina **capacidad física** (camas, clínicas) con **canal digital** (Tsana, app), que es justo la condición que §8 y §12 piden: lo digital sirve cuando hay un servicio detrás. También muestra que el piloto de bajo costo apunta a población sin seguro privado, como el Seguro Salud Yape.
+- **Qué no se sabe:** cuántos de los 90.000 suscriptores usan el servicio, cuántas teleconsultas se resuelven sin derivar, el costo por consulta y si el 50% es una meta o una medición. La cifra de 50% **no** está respaldada por la literatura revisada (§8) y la dan quienes venden el servicio.
+
+### 13.3 Qué hacer con esto
+
+Pegar el texto de las notas de Gestión que más importen (basta el cuerpo del artículo) o imprimirlas a PDF desde la sesión de suscriptor y subirlas: así se pueden leer completas y registrar con la fecha y la cifra exacta.
 
 ## Conexiones
 
