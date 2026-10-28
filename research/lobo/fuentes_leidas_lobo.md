@@ -261,3 +261,6 @@
 | F-580 | 🟢 A | 2026-10-27 | Intuición 241 — la IA generativa sube +34% al novato y poco al experto; preguntar quién gana (cifra final sin confirmar; lectura débil) |
 | F-548 | 🟢 A | 2026-10-27 | Intuición 242 — el modelo que imita al público falla con grupos concretos (mayores, viudos); pedir el error por grupo (lectura débil) |
 | F-815 | 🟢 A | 2026-10-27 | Intuición 243 — la tasa de canje mide a quien participa, no el efecto; pedir el grupo comparable (lectura débil) |
+| F-720 | 🟢 A | 2026-10-28 | Intuición 244 — la mera exposición tiene forma de U invertida; medir la curva de contactos antes de subir la frecuencia (resumen; lectura débil) |
+| F-731 | 🟢 A | 2026-10-28 | Intuición 245 — el efecto IKEA se replica en dirección, no en magnitud; medir abandono en cotizadores configurables (nota breve; lectura débil) |
+| F-744 | 🟢 A | 2026-10-28 | Intuición 246 — El Niño 1997-98 frenó el crecimiento infantil en hogares inundables de Tumbes; segmentar por vulnerabilidad del hogar (lectura débil) |
