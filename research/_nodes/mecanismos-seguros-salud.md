@@ -356,3 +356,4 @@ Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farma
 - [[foresight-experiencia-futura-seguros-digitalizacion|Foresight: la experiencia futura de los seguros y la digitalización]] — tensión entre personalización y solidaridad en salud (P2).
 - [[economia-plateada-seguros-peru-latam|Economía plateada y seguros en Perú y LATAM]] — personas mayores: demografía, acceso digital, oferta de rentas y salud, hipótesis SE1-SE6.
 - [[digitalizacion-ramos-vehicular-salud-microseguros|Digitalización por ramo: vehicular/SOAT, salud y microseguros]] — cuándo conviene una app y cuándo no (siete pruebas), y cómo lo digital se junta con el servicio en salud.
+- [[dolores-posventa-asegurado-servicios-digitales|Dolores posventa del asegurado]] — evidencia independiente sobre Vitality, bienestar y herramientas de precios.

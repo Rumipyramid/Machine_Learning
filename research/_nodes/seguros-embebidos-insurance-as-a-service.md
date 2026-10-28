@@ -213,3 +213,4 @@ Digitalizar rinde cuando se cumplen estas condiciones, ordenadas de más a menos
 - [[seguros-comportamiento-mundo-peru|Seguros: comportamiento y mercado, Mundo vs. Perú]] — desconfianza y brecha de protección.
 - [[fenomeno-el-nino-impacto-personas|Impacto del Fenómeno El Niño en las personas]] — el paramétrico y el contexto de El Niño costero 2026-2027 (§10).
 - [[conducta-humano-ia|Conducta humano-IA]] — IA que decide y venta conversacional dentro de una plataforma.
+- [[dolores-posventa-asegurado-servicios-digitales|Dolores posventa del asegurado]] — agendamiento, historial, autorizaciones y reembolsos: los terrenos que vienen después de la venta.

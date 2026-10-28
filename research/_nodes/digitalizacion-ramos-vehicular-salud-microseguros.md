@@ -572,3 +572,4 @@ Pegar el texto de las notas de Gestión que más importen (basta el cuerpo del a
 - [[economia-conductual-seguros-literatura|Economía conductual de los seguros: qué dice la literatura]] — asesoría, confianza y ahorro con compromiso, base de §9.
 - [[hipotesis-digitalizacion-seguros-evidencia-publica|Hipótesis de digitalización en seguros: evidencia pública y dato interno]] — recurrencia y persistencia por canal, que §9.2 muestra contradictoria.
 - [[seguros-embebidos-insurance-as-a-service|Seguros embebidos e Insurance-as-a-Service]] — cómo funcionan, casos en el Perú, evidencia de conversión frente a valor para la persona, regulación y oportunidades.
+- [[dolores-posventa-asegurado-servicios-digitales|Dolores posventa del asegurado]] — casos concretos (Vitality, NHS App, Kaiser, Alan) y evidencia por dolor.
