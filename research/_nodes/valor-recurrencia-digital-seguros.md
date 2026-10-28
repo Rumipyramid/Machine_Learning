@@ -1,7 +1,7 @@
 # Valor de la recurrencia digital en seguros: por qué mecanismos la actividad digital se vuelve valor de negocio
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-28 · Versión: v1.0
+> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-28 · Versión: v1.1
 > Origen: `/trinidad` (empírica como ancla, negocio como segundo pilar, social acotada al momento crítico).
 > Pregunta: ¿por qué mecanismos la actividad digital (recurrencia en app o web) se convierte en valor de
 > negocio en un seguro, quién lo ha demostrado y con qué evidencia?
@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-899 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-916; F-910 y F-911 reservados), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-929 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-929; F-910, F-911 y F-925 a F-929 reservados), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -42,6 +42,13 @@ en un seguro.
 
 **Implicancia para la meta:** el MAU mide entrar, no resolver. Según el mecanismo que se elija, el
 indicador correcto es otro, y en dos de los cinco casos un buen resultado **baja** la actividad.
+
+**Actualización v1.1 (2026-10-28, cambio estructural).** Con los documentos aportados, la conclusión central no
+cambia, pero se mueven tres cosas. (1) La confianza en el momento de verdad pasa a ser la teoría con más respaldo en
+Perú: reclamos que escalan cada vez más, microseguros que devuelven poco y desconfianza porque "no cumplen" (F-902,
+F-903). (2) La puerta de entrada ajena vende, pero no retiene sin la relación que la ancla: solo 12% mantiene el
+seguro de terremoto al terminar el crédito hipotecario (F-902). (3) Se agrega una lectura transversal: los canales
+conviven por función, y digitalizar lo que ya se vende es defensa, no ventaja (F-917 a F-924; §10, lote 5).
 
 ---
 
@@ -411,6 +418,18 @@ confirma el problema de valor percibido en productos de baja frecuencia.
 - **Reglamento peruano de IA por niveles de riesgo (sept-2025)**, que alcanzará a la tarificación y los siniestros con IA (F-907).
 - **Seguros que se usan en vida y cambian con la etapa** (Bradesco Vida Viva, F-905), sin cifras.
 - **La frontera de la delegación en IA:** la gente acepta que la IA cotice o informe el estado de un siniestro, pero no que presente el siniestro o cancele por ella (F-916). Medirla en Perú es un vacío.
+
+**Lote 5 (mismo día): ocho papers sobre canales y lectura completa de tres documentos.** Cinco documentos internos
+del equipo (F-925 a F-929) se consultaron, pero su contenido no se registra en este repositorio; esos números quedan
+reservados.
+
+| Fuente | Qué aporta | ¿Robustece? |
+|---|---|---|
+| Ocho papers de estrategia de canales, verificados por resumen a partir de la revisión de literatura aportada: Neslin et al., 2006 (F-917); Verhoef, Neslin y Vroomen, 2007 (F-918); Verhoef, Kannan e Inman, 2015 (F-919); Verhoef et al., 2021 (F-920); Dalla Pozza y Texier, 2014 (F-921); Holland y Kavuri, 2024 (F-922); Rubio-Misas, 2022 (F-923); Sharma y Gassenheimer, 2009 (F-924) | La gente busca en un canal y compra en otro; en Francia, 75%-90% termina de contratar por teléfono aun con la opción en línea (cifra de la revisión, no verificada en el texto); los canales caros sobreviven por calidad y servicio; los incumbentes digitalizan para defenderse; agregar el canal que todos agregan no da ventaja; digitizar, digitalizar y transformar son cosas distintas; la canibalización percibida baja el compromiso de los agentes solo en mercados con pocas oportunidades (la revisión lo presentaba como efecto general) | **Sí, como capa nueva.** Sostienen la lectura transversal "lo digital convive con lo asistido" (§3.6 del informe). Dos autorías que la revisión no había confirmado quedaron verificadas (Rubio-Misas; Sharma y Gassenheimer). La cifra de McKinsey sobre bancaseguros no se pudo verificar y no se usa |
+| Lectura completa de tres documentos que se habían leído en parte: diagnóstico del PNUD (F-902, sin el capítulo de riesgo de desastres), Índice de Inclusión Financiera de Credicorp (F-906) y artículo de la Universidad de Lima (F-908); más las páginas que faltaban del estudio de Treo (F-898) y del informe de Capgemini (F-901, donde solo quedaban créditos) | PNUD: los reclamos que escalan a Indecopi o la SBS subieron de 61,6 a 141 por mil (2018-2024); 38,4% de los reclamos de seguros ante Indecopi en 2023 fue por contratación o cargo indebido; solo 12% mantiene el seguro de terremoto al terminar el crédito. Credicorp: encuesta probabilística con 5.031 casos en Perú; 49% de peruanos no usó ningún canal físico; 35% de la región teme las transacciones digitales. Universidad de Lima: varias cifras atribuidas a estudios clásicos no parecen corresponderles. Treo: desconfianza casi general en la banca móvil | **Sí, para confianza (§2.5), venta cruzada (§2.3) y retención (§2.2).** Y una corrección: la versión anterior decía que "todo se leyó por resumen"; era inexacto. Lo encontrado en la web se leyó por resumen; los documentos aportados, completos, salvo las partes fuera de alcance que indica cada ficha |
+
+**Para el banco de señales (§6):** los canales de distribución conviven porque cada uno resuelve algo distinto
+(F-923); es práctica probada, no tendencia.
 
 ---
 

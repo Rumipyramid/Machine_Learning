@@ -1,9 +1,9 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 5 (incorpora
-quince documentos aportados por la usuaria y cuatro papers verificados; dos documentos internos del equipo se omiten de esta copia)
-(el formato para la gerencia se define después)
-**Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.0, 2026-10-28). Las fuentes se
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 6
+(integra quince documentos aportados por la usuaria y doce papers verificados a partir de ellos; siete documentos
+internos del equipo se omiten de esta copia; el formato para la gerencia se define después)
+**Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.1, 2026-10-28). Las fuentes se
 citan como (Autor, año) y con su número del registro de fuentes del proyecto (F-n).
 **Alcance:**
 - Seguros de Perú y LatAm primero.
@@ -11,6 +11,9 @@ citan como (Autor, año) y con su número del registro de fuentes del proyecto (
 - EE.UU., Europa y Asia solo como contraste (🌐), sin generalizar a Perú.
 - Periodo 2021-2026. Los estudios canónicos anteriores van marcados con 📚.
 - RIMAC está excluida como caso, fuente o benchmark.
+
+**Cómo leer las marcas:** 📎 señala lo que entró o cambió con los documentos aportados. Así se ve en qué secciones
+repercutieron. La §7 resume ese cambio teoría por teoría.
 
 ---
 
@@ -24,25 +27,42 @@ encontrada muestra que la frecuencia de uso, por sí sola, genere valor.
 digital puede producir valor. Cada una pide un indicador distinto. **En dos de ellas, un buen resultado
 baja la actividad**: un cliente que resolvió rápido no vuelve a entrar.
 
+📎 **Lo que agregaron los documentos aportados.** No cambiaron la conclusión; la anclaron en Perú y le sumaron
+cuatro matices:
+
+1. **La confianza en el momento de verdad es la forma de valor con más respaldo en Perú.** Antes descansaba en
+   encuestas de EE.UU. Ahora la sostienen datos peruanos de reclamos, microseguros y desconfianza, y un caso de
+   México. En Perú el problema está en cumplir y pagar, no en el canal.
+2. **La puerta de entrada ajena vende, pero no retiene ni basta.** La billetera diaria no subió la tenencia de
+   seguros. La puerta cobra comisiones altas y genera reclamos por cobros no consentidos. Cuando se acaba la
+   relación que ancla el seguro, el seguro se va.
+3. **Los canales conviven por función, no por atraso.** La gente busca en línea y contrata con una persona. Los
+   canales caros sobreviven por lo que resuelven. "Todo digital" puede ser la meta equivocada, no solo una meta
+   difícil.
+4. **Digitalizar lo que ya se vende es defensa, no ventaja.** Si todos agregan el mismo canal, todos cargan el costo
+   y nadie gana posición.
+
 **Lo que la gerencia tiene que decidir:** cuál de las cinco formas de valor persigue el canal digital, y
 por lo tanto qué indicador acompaña o reemplaza al MAU. Este informe no toma esa decisión. Entrega las
-opciones y qué tan probada está cada una.
+opciones y qué tan probada está cada una. 📎 Como inferencia, no como hallazgo: la evidencia acumulada favorece
+dos candidatas para Perú. Una es la confianza en el momento de verdad, medida con tiempo a resolución y reclamos
+escalados. La otra es el costo de servir, limitado a las tareas de información clara.
 
 ---
 
 ## 2. Menú de teorías de valor
 
-| # | Teoría de valor | Indicador en vez del MAU | Mejor evidencia | Qué tan probada |
-|---|---|---|---|---|
-| 1 | **Costo de servir:** resolver en digital lo que hoy va al teléfono | Contactos por necesidad resuelta, separados por tipo de tarea | 📚 En una aseguradora de salud, el portal bajó 29% las llamadas sobre información clara y fácil de encontrar, pero subió 14% el total de llamadas, porque generó llamadas sobre información ambigua (Kumar y Telang, 2012, F-850) | 🟢 Causal, efecto en ambas direcciones |
-| 2 | **Retención:** el cliente digital se queda más | Renovación o persistencia en cohortes emparejadas | 📚 En banca, adoptar lo digital se asocia a más retención aun controlando que adopta quien ya era fiel (Campbell y Frei, 2010, F-847). En un plan de salud, 96,9% contra 90,5% (Turley et al., 2012, F-851; observacional). **En seguros no hay ningún estudio causal** | 🔵 Plausible por analogía · ⚪ No demostrado en seguros |
-| 3 | **Venta cruzada:** el cliente digital compra más productos | Productos por cliente; lead a póliza; prima nueva de clientes existentes | Los usuarios digitales tienen más productos en banca (Xue et al., 2011, F-848; Becker et al., 2022, F-849). La venta digital de Porto Seguro es casi toda a clientes que ya tiene: 84%, según su meta 2025 (F-865) | 🟡 Asociación |
-| 4 | **Prevención:** lo digital cambia la conducta de riesgo | Siniestralidad por cohorte, separando selección de efecto | En auto, un experimento de campo con telemetría redujo velocidad y frenadas bruscas (F-442). En salud, dos ensayos aleatorizados de programas de bienestar no bajaron el gasto médico (Jones, Molitor y Reif, 2019, F-854; Song y Baicker, 2019, F-855) | 🟢 En auto (conducta) · 🔴 Negativa en salud (gasto) |
-| 5 | **Confianza en el momento de verdad:** resolver bien el siniestro | Tiempo a resolución; tasa de escalamiento de digital a humano; resuelto al primer intento | 🌐 Con mala experiencia digital del siniestro, 52% está en riesgo de irse; con experiencia excelente, 4% (J.D. Power, 2025, F-872). La confianza es el factor más importante del siniestro y el canal digital el menos importante, entre ocho (J.D. Power, 2025, F-874) | 🟡 Asociación, consistente entre fuentes |
+| # | Teoría de valor | Indicador en vez del MAU | Mejor evidencia | 📎 Respaldo en Perú y LatAm | Qué tan probada |
+|---|---|---|---|---|---|
+| 1 | **Costo de servir:** resolver en digital lo que hoy va al teléfono | Contactos por necesidad resuelta, separados por tipo de tarea | 📚 En una aseguradora de salud, el portal bajó 29% las llamadas sobre información clara y fácil de encontrar, pero subió 14% el total de llamadas, porque generó llamadas sobre información ambigua (Kumar y Telang, 2012, F-850) | Solo cifras de empresa (Pacífico: más de 60% de consultas por autoservicio, F-866). 📎 🌐 En Francia, entre 75% y 90% de las contrataciones termina por teléfono aun con opción en línea (F-921) | 🟢 Causal, efecto en ambas direcciones |
+| 2 | **Retención:** el cliente digital se queda más | Renovación o persistencia en cohortes emparejadas | 📚 En banca, adoptar lo digital se asocia a más retención aun controlando que adopta quien ya era fiel (Campbell y Frei, 2010, F-847). En un plan de salud, 96,9% contra 90,5% (Turley et al., 2012, F-851; observacional). **En seguros no hay ningún estudio causal** | 📎 Ningún estudio de retención. Sí motivos de fuga que no dependen del canal: en Perú, solo 12% mantiene el seguro de terremoto al terminar el crédito (F-902); en México, 47% lo pierde al cambiar de trabajo (F-898) | 🔵 Plausible por analogía · ⚪ No demostrado en seguros |
+| 3 | **Venta cruzada:** el cliente digital compra más productos | Productos por cliente; lead a póliza; prima nueva de clientes existentes | Los usuarios digitales tienen más productos en banca (Xue et al., 2011, F-848; Becker et al., 2022, F-849). La venta digital de Porto Seguro es casi toda a clientes que ya tiene: 84%, según su meta 2025 (F-865) | Puertas ajenas venden a escala (F-863, F-864, F-869). 📎 Pero la tenencia no sube con la billetera (F-906), la puerta cobra comisiones cercanas a 50% (F-902) y 38,4% de los reclamos de seguros ante Indecopi en 2023 fue por contratación o cargo indebido (F-902) | 🟡 Asociación |
+| 4 | **Prevención:** lo digital cambia la conducta de riesgo | Siniestralidad por cohorte, separando selección de efecto | En auto, un experimento de campo con telemetría redujo velocidad y frenadas bruscas (F-442). En salud, dos ensayos aleatorizados de programas de bienestar no bajaron el gasto médico (Jones, Molitor y Reif, 2019, F-854; Song y Baicker, 2019, F-855) | Solo un dato de empresa en Brasil (Justos, F-870) | 🟢 En auto (conducta) · 🔴 Negativa en salud (gasto) |
+| 5 | **Confianza en el momento de verdad:** resolver bien el siniestro | Tiempo a resolución; tasa de escalamiento de digital a humano; resuelto al primer intento; 📎 reclamos que escalan | 🌐 Con mala experiencia digital del siniestro, 52% está en riesgo de irse; con experiencia excelente, 4% (J.D. Power, 2025, F-872). La confianza es el factor más importante del siniestro y el canal digital el menos importante, entre ocho (J.D. Power, 2025, F-874) | 📎 La más respaldada: en México, pago en 9 días que evitó deuda cara (F-896); en Perú, los microseguros devuelven 16,7% de la prima (F-902), 47% de quienes desconfían dice que no cumplen (F-903) y los reclamos que escalan subieron de 61,6 a 141 por cada mil (F-902) | 🟡 Asociación · 📎 la más consistente y la única con evidencia peruana de varios tipos |
 
 **Lectura:** solo la teoría 1 tiene evidencia causal en seguros, y su efecto va en las dos direcciones. La
 teoría 2, que es la tesis central del canal ("el cliente digital es más fiel"), es la menos probada en
-seguros.
+seguros. 📎 La teoría 5 sigue siendo asociación, pero es la única que acumula evidencia peruana de varios tipos.
 
 ---
 
@@ -60,6 +80,8 @@ seguros.
   usan *menos* el call center (Becker et al., 2022, F-849).
 - **Perú:** Pacífico reporta que más de 60% de las consultas y solicitudes se resuelven por autoservicio (chatbot
   y app), según Forbes Perú (2022, F-866). Es una cifra de la empresa, sin método.
+- 📎 🌐 **Ofrecer el canal no traslada la tarea.** En Francia, la mayoría termina de contratar por teléfono aunque
+  pueda hacerlo en línea (detalle en §3.6).
 - **LatAm:** una aseguradora sin nombre desvía 30% de sus siniestros a una vía rápida por reglas, y otras pasaron la
   mayoría de sus siniestros de salud a digital con más satisfacción y menos costo, según McKinsey (2023, F-900), sin
   cifras verificables.
@@ -69,7 +91,8 @@ seguros.
 **Implicancia:** antes de mover un flujo al canal digital, hay que preguntarse si su información es clara o
 ambigua. En lo ambiguo, primero se rediseña el contenido; si no, el ahorro esperado se vuelve más llamadas.
 Este patrón coincide con lo que muestra el diagnóstico interno de julio: lo digital gana en consultar y pierde
-en gestionar y en lo urgente.
+en gestionar y en lo urgente. 📎 La meta no es mover todo a digital. Es que cada tarea se resuelva en el canal que
+mejor la resuelve, y medir la resolutividad por canal.
 
 ### 3.2 Retención: plausible en otras industrias, sin probar en seguros
 
@@ -82,18 +105,21 @@ en gestionar y en lo urgente.
   - Oscar atribuye la retención a su plataforma, sin publicar la tasa (F-858).
 - **🌐 Ser nativo digital no garantiza retención alta.** Lemonade retiene 85% de sus primas año a año, según su
   reporte anual auditado (F-857).
-- **El estudio de India sobre seguros de vida, leído completo, es el ejemplo típico de esta evidencia débil**
+- 📎 **El estudio de India sobre seguros de vida, leído completo, es el ejemplo típico de esta evidencia débil**
   (Singh, Panigrahi y Shekhar, 2024, F-856). Mide la retención como actitud ("siento lealtad", "estoy dispuesto
   a seguir") y no como renovación real. Su muestra es de usuarios digitales diarios, 67% de ingreso alto y 97%
   urbana.
-- **🌐 "No lo usé" es una razón para irse.** En una encuesta representativa del Reino Unido, 40% canceló o
+- 📎 **🌐 "No lo usé" es una razón para irse.** En una encuesta representativa del Reino Unido, 40% canceló o
   considera cancelar su seguro privado de salud. La razón más citada después del precio fue "no lo usé tanto como
   esperaba" (27%), y es la primera entre 18 y 34 años (Graphite Digital, 2025, F-895). Es intención declarada, y la
-  autora vende experiencia digital. Confirma el problema de valor percibido en productos de baja frecuencia.
-- **🌐 Al irse, pesa más el precio que lo digital.** 27% de asegurados cambió de aseguradora en dos años, sobre todo
+  autora vende experiencia digital.
+- 📎 **🌐 Al irse, pesa más el precio que lo digital.** 27% de asegurados cambió de aseguradora en dos años, sobre todo
   por precio (60%) y cobertura (53%) (Capgemini, 2024, F-901; encuesta de una consultora).
-- **Parte de la fuga es estructural.** En México, 47% de quienes dejaron de tener seguro lo atribuye a un cambio
-  de trabajo (Treo, c. 2021, F-898, con datos de la ENIF 2018). Ese tipo de fuga no la resuelve ningún canal.
+- 📎 **Cuando se acaba el ancla, se va el seguro.** En Perú, más del 90% de las viviendas aseguradas contra terremoto
+  lo están porque el banco lo exige con el crédito hipotecario. Al terminar de pagar, solo 12% mantiene el seguro
+  (representantes del sector citados por prensa, vía el diagnóstico del PNUD, F-902; cita secundaria). En México, 47%
+  de quienes dejaron de tener seguro lo atribuye a un cambio de trabajo (Treo, c. 2021, F-898, con datos de la ENIF
+  2018). Ese tipo de fuga no la resuelve ningún canal.
 - **La amenaza principal es la selección.** En un ensayo aleatorizado, quienes se inscriben en programas de
   bienestar ya tenían menor gasto y mejores hábitos antes de empezar (Jones et al., 2019, F-854). La misma
   lógica aplica al cliente digital: quien adopta ya era distinto.
@@ -102,7 +128,9 @@ en gestionar y en lo urgente.
   (Brockett et al., 2008, F-852).
 
 **Implicancia:** el benchmarking no puede probar la tesis "el cliente digital es más fiel". Solo se resuelve
-con data propia: cohortes emparejadas o un despliegue escalonado.
+con data propia: cohortes emparejadas o un despliegue escalonado. 📎 Los motivos de fuga que sí están documentados
+son precio, no uso, promesa incumplida y fin de la relación que anclaba el seguro. Ninguno depende de cuántas veces
+se entra al app.
 
 ### 3.3 Venta cruzada: la puerta de entrada a escala la tienen otros
 
@@ -114,21 +142,25 @@ con data propia: cohortes emparejadas o un despliegue escalonado.
   - Nubank tiene 2 millones de pólizas, pero con baja penetración: 1,6% de su base en 2023 (F-863).
   - Mercado Pago tiene 11 millones de clientes con póliza (F-864).
   - Yape vende SOAT y lanzó un seguro de salud (F-869).
-- **La puerta de entrada funciona en un caso de LatAm, pero por defecto y anclada a una relación frecuente.** En
+- 📎 **La puerta de entrada funciona en un caso de LatAm, pero por defecto y anclada a una relación frecuente.** En
   México, un microcrédito incluía cobertura de vida automática, y cerca de la mitad de los clientes compró módulos
   voluntarios (Poulton y Magnoni, 2013, F-896). En un ensayo aleatorizado con esos clientes, al quitar la
   cobertura automática la gente compró más por su cuenta, pero terminó menos protegida (Zimmerman et al., 2013,
   F-897). La relación era semanal (el pago del crédito) y no fue digital.
-- **La puerta ajena cobra peaje.** En Perú, los microseguros llegan 97,8% por bancos y microfinancieras, con comisiones
-  cercanas a 50% (Inga Falcón para el PNUD, 2025, F-902). En Chile, obligar a los bancos a licitar el seguro atado
-  al crédito hipotecario bajó el desgravamen 62% (Coloma, 2019, F-904). La puerta por defecto funciona, pero sin
-  competencia encarece el seguro.
-- **Tener la puerta no basta.** En LatAm, la billetera móvil pasó de 11% a 49% de la población en cinco años y se usa
+- 📎 **La puerta ajena cobra peaje.** En Perú, los microseguros llegan 97,8% por bancos y microfinancieras, con
+  comisiones cercanas a 50% (Inga Falcón para el PNUD, 2025, F-902). En Chile, obligar a los bancos a licitar el
+  seguro atado al crédito hipotecario bajó el desgravamen 62% (Coloma, 2019, F-904). La puerta por defecto funciona,
+  pero sin competencia encarece el seguro.
+- 📎 **La puerta por defecto genera reclamos si el consentimiento no es claro.** De 56.311 reclamos de seguros ante
+  Indecopi en 2023, 38,4% fue por contratación o cargo indebido, y 33,7% se resolvió a favor del consumidor (F-902,
+  con datos de Indecopi).
+- 📎 **Tener la puerta no basta.** En LatAm, la billetera móvil pasó de 11% a 49% de la población en cinco años y se usa
   a diario, pero la tenencia de seguros privados no creció; Perú tiene la más baja de la región (13%) pese a su alto
-  uso de billetera (Banco de Ideas Credicorp e Ipsos, 2026, F-906). El seguro no se suma solo a los hábitos diarios.
-- **El momento de compra funciona como puerta.** 42% compraría su seguro de auto en el concesionario, frente a 32% en
+  uso de billetera (Banco de Ideas Credicorp e Ipsos, 2026, F-906; encuesta probabilística, 5.031 casos en Perú). El
+  seguro no se suma solo a los hábitos diarios.
+- 📎 **El momento de compra funciona como puerta.** 42% compraría su seguro de auto en el concesionario, frente a 32% en
   2018 (Accenture, 2023, F-905; intención declarada).
-- **En Perú, la venta 100% digital tiene techo.** Solo 20% compraría un seguro de forma digital; el canal presencial
+- 📎 **En Perú, la venta 100% digital tiene techo.** Solo 20% compraría un seguro de forma digital; el canal presencial
   domina (encuesta SBS-CAF 2022, vía F-903). En LatAm, 67% empieza a buscar seguro de vida en línea, pero compra con
   una persona (McKinsey, 2023, F-900).
 - **No se encontró evidencia de que un producto propio de bajo ticket y frecuencia anual, como el SOAT, funcione
@@ -136,7 +168,9 @@ con data propia: cohortes emparejadas o un despliegue escalonado.
   renovación, pero sin cifra (F-867).
 
 **Implicancia:** si la apuesta es usar el SOAT como llave de entrada, hoy no hay evidencia que la respalde. Lo
-que sí muestra la región es que la relación diaria con el cliente la puede tener una billetera o un banco.
+que sí muestra la región es que la relación diaria con el cliente la puede tener una billetera o un banco. 📎 Esa
+puerta vende, pero no retiene por sí sola, cobra peaje y exige consentimiento claro. La pregunta deja de ser "tener
+una puerta" y pasa a ser con quién y en qué condiciones (pregunta 3).
 
 ### 3.4 Prevención: en auto cambia la conducta; en salud, el programa selecciona
 
@@ -164,36 +198,70 @@ legítimo, pero es **selección**, no prevención, y se mide distinto.
   escala pierde 11 puntos de NPS (Bain, 2023, F-183).
 - 🌐 **Satisfacción no es retención.** Tras un siniestro, la probabilidad de cambiarse de aseguradora sube 35%,
   aun entre clientes satisfechos (LexisNexis, 2023, F-890; dato de un proveedor).
-- **LatAm: el valor está en la rapidez y la justicia del pago.** En un microseguro de vida en México, el pago
+- 📎 **LatAm: el valor está en la rapidez y la justicia del pago.** En un microseguro de vida en México, el pago
   llegó en promedio 9 días después de la muerte. Las familias lo usaron como garantía para pedir prestado sin
   interés a su red, y evitaron deuda cara o vender activos. Después del siniestro, todos los asegurados dijeron que
   fue buena decisión (Poulton y Magnoni, 2013, F-896). La muestra es pequeña (32 familias aseguradas y 36 no
   aseguradas) y no aleatoria.
-- **Perú: la norma deja abierto el tiempo del siniestro.** La aseguradora tiene 30 días desde la documentación completa
-  para responder, pero puede pedir información adicional en los primeros 20 días sin un límite expreso de veces
-  (Pérez-Llorca, 2026, F-907).
-- **El lenguaje en el momento del siniestro mueve conducta y costo.** Una aseguradora alemana rediseñó el lenguaje de
-  sus agentes con ciencias del comportamiento: la aceptación de su red de talleres superó 30% y, al escalarlo, la
-  siniestralidad bajó 2% (caso citado por Beway, F-909; cifras no verificadas en el original).
-- **Perú: el problema está en pagar, no en el canal.** Los microseguros devuelven en siniestros solo 16,7% de la
+- 📎 **Perú: el problema está en pagar, no en el canal.** Los microseguros devuelven en siniestros solo 16,7% de la
   prima (en LatAm ronda 40%); 18 productos no pagaron ningún siniestro en 2024; reclamar exige documentos que no
   existen en zonas remotas (F-902). De quienes desconfían de las aseguradoras, 47% dice que no cumplen lo ofrecido
   (F-903). En un ranking de experiencia de cliente de 2022, los seguros quedaron últimos de 20 industrias (F-900).
-- **🌐 21% de quienes consideran dejar su seguro de salud cita la dificultad para reclamar** (Graphite Digital,
-  2025, F-895; intención declarada).
+- 📎 **Perú: los reclamos bajan, pero los que escalan suben.** Los reclamos de seguros por cada 10.000 pólizas bajaron de
+  16 (2018) a 8,9 (2024). Los que escalan a Indecopi o a la SBS por una respuesta insatisfactoria subieron de 61,6 a
+  141 por cada mil reclamos (MEF, 2025, vía F-902). Lo que no se resuelve bien a la primera, escala.
 - **Perú:** la fricción registrada está en la **resolución**, no en el canal. Indecopi recibió 8.248 reclamos de
   seguros entre 2019 y 2022. En 2025 sancionó demoras en indemnizaciones de SOAT y liquidaciones que no
   respetaban la póliza (F-883).
+- 📎 **Perú: la norma deja abierto el tiempo del siniestro.** La aseguradora tiene 30 días desde la documentación
+  completa para responder, pero puede pedir información adicional en los primeros 20 días sin un límite expreso de
+  veces (Pérez-Llorca, 2026, F-907).
+- 📎 **El lenguaje en el momento del siniestro mueve conducta y costo.** Una aseguradora alemana rediseñó el lenguaje de
+  sus agentes con ciencias del comportamiento: la aceptación de su red de talleres superó 30% y, al escalarlo, la
+  siniestralidad bajó 2% (caso citado por Beway, F-909; cifras no verificadas en el original).
+- 📎 **🌐 21% de quienes consideran dejar su seguro de salud cita la dificultad para reclamar** (Graphite Digital,
+  2025, F-895; intención declarada).
 
 **Implicancia:** el siniestro se diseña como híbrido. Lo digital sirve para iniciarlo y seguir su estado; una
-persona resuelve lo complejo. El indicador es el tiempo a resolución, no el uso del app.
+persona resuelve lo complejo. El indicador es el tiempo a resolución, no el uso del app. 📎 En Perú, esta es la
+teoría con más respaldo, y su indicador natural incluye los reclamos que escalan.
+
+### 3.6 📎 Transversal: lo digital convive con lo asistido
+
+Esta sección es nueva. La sostienen papers que verificamos a partir de la revisión de literatura aportada.
+
+- 📚 **La gente busca en un canal y compra en otro.** Se llama "research shopping": un canal sirve para buscar, otro
+  para cerrar, y el canal digital retiene poco al cliente hasta la compra (Verhoef, Neslin y Vroomen, 2007, F-918).
+  Calza con lo que se ve en la región: 67% busca seguro de vida en línea y compra con una persona (F-900).
+- 📚 🌐 **Ofrecer el canal no traslada la tarea.** En Francia, entre 75% y 90% de las contrataciones directas termina por
+  teléfono aunque exista la opción de terminar en línea (Dalla Pozza y Texier, 2014, F-921; cifra tomada de la revisión
+  aportada, no verificada en el texto).
+- 🌐 **Los canales caros sobreviven por lo que resuelven.** En vida en España, el canal bancario es más eficiente en
+  costos, pero agentes y corredores compensan con calidad de producto, más servicio y mejor manejo del conflicto de
+  intereses. No hay un sistema de distribución óptimo único (Rubio-Misas, 2022, F-923).
+- 🌐 **Digitalizar lo que ya se vende es defensa.** Los incumbentes usan la tecnología para defender su posición; los
+  nuevos entrantes, para crear productos (Holland y Kavuri, 2024, F-922; siete casos). 📚 Agregar un canal que todos
+  agregan funciona como un dilema del prisionero: todos cargan el costo y nadie gana posición (Neslin et al., 2006,
+  F-917, según la revisión aportada).
+- 📚 **El MAU es una métrica de gerente de canal.** Muchas organizaciones siguen organizadas por gerentes que optimizan su
+  propio canal, y esa es la barrera a la integración (Verhoef, Kannan e Inman, 2015, F-919, según la revisión aportada).
+  Inferencia nuestra: un indicador de uso del app premia al canal, no al cliente que resolvió.
+- 📚 **Digitizar, digitalizar y transformar no son lo mismo.** Pasar un certificado a PDF es digitizar. Automatizar la
+  venta del SOAT es digitalizar un proceso que ya existía. Cambiar cómo se crea valor es transformar (Verhoef et al.,
+  2021, F-920). La pregunta "para qué digitalizamos" exige decir en cuál de las tres se está.
+- 📚 **Mover tareas al canal digital tiene un costo interno.** Los agentes de seguros que sienten que internet les
+  quita ventas se comprometen menos, pero solo cuando el mercado ofrece pocas oportunidades (Sharma y Gassenheimer,
+  2009, F-924; 511 agentes).
+
+**Implicancia:** la pregunta útil no es cuánto se digitaliza, sino qué tarea va a qué canal y con qué indicador. Eso
+es la pregunta 2. "Salud 100% digital" o "todo al app" pueden ser metas equivocadas, no solo metas difíciles.
 
 ---
 
 ## 4. Lectura conductual
 
 La pregunta conductual no es "cómo hacemos que entren más". Es **qué conducta tiene que ocurrir para que haya
-valor, y qué la frena**. Esta lectura agrega cuatro distinciones que el análisis de negocio no ve:
+valor, y qué la frena**. Esta lectura agrega distinciones que el análisis de negocio no ve:
 
 1. **Lealtad o inercia.** En seguros, cambiarse cuesta mucho, y por eso la gente se queda donde está (Handel,
    2013, F-889). El regulador británico prohibió cobrarle más a quien renueva por inercia. También documentó
@@ -212,33 +280,37 @@ valor, y qué la frena**. Esta lectura agrega cuatro distinciones que el anális
      (estudio en Marketing Science, F-891).
 
    Todo empujón de adquisición o de cambio tiene un costo actuarial.
-5. **La cobertura por defecto pesa más que el mensaje.** En el ensayo de microseguro en México, quitar la
+5. 📎 **La cobertura por defecto pesa más que el mensaje.** En el ensayo de microseguro en México, quitar la
    cobertura automática redujo la protección total, y los mensajes emocionales o factuales no cambiaron la compra
    (Zimmerman et al., 2013, F-897). Lo que viene incluido define cuánto queda protegido. Pero el defecto también se
    presta para cobrar de más, y ahí interviene el regulador: en Chile, licitar el seguro atado al crédito bajó el
-   precio del desgravamen 62% (F-904).
+   precio del desgravamen 62% (F-904). 📎 Y el defecto no crea lealtad: cuando termina el crédito, 12% mantiene el
+   seguro de terremoto (F-902).
+6. 📎 **La seguridad pesa en el canal.** 35% de la región teme hacer transacciones digitales (F-906). En México, la
+   desconfianza en la banca móvil aparece en casi todos los perfiles estudiados (F-898).
 
 **Hipótesis conductuales para el trabajo de campo.** El estudio mexicano de inclusión financiera y las voces de
 practitioners no son evidencia, pero abren mecanismos que coinciden con otras fuentes. Valen como hipótesis:
 
-1. **La red familiar y el "guardadito" compiten con el seguro.** Ante un golpe, la gente recurre primero a familia,
+1. 📎 **La red familiar y el "guardadito" compiten con el seguro.** Ante un golpe, la gente recurre primero a familia,
    ahorros y recorte de gastos. Es la hipótesis más respaldada: coinciden cinco fuentes (F-896, F-898, F-903, F-906,
-   F-908). Implica diseñar el seguro como complemento de la red, no como su reemplazo.
-2. **El cobro debe seguir el ritmo del ingreso.** Quien cobra por semana tiene menos seguros (F-898); el microseguro
+   F-908), y en Perú la red pesa más que en cualquier otro país de la región (F-906). Implica diseñar el seguro como
+   complemento de la red, no como su reemplazo.
+2. 📎 **El cobro debe seguir el ritmo del ingreso.** Quien cobra por semana tiene menos seguros (F-898); el microseguro
    mexicano se pagaba cada semana junto al crédito (F-896).
-3. **El dependiente o el adulto mayor poco digital se alcanza a través de un familiar** (F-898). Se conecta con la
+3. 📎 **El dependiente o el adulto mayor poco digital se alcanza a través de un familiar** (F-898). Se conecta con la
    baja digitalización de dependientes del diagnóstico interno.
-4. **La fricción pequeña acumulada empuja a irse sin una decisión consciente**, y la confianza se gana cuando algo
+4. 📎 **La fricción pequeña acumulada empuja a irse sin una decisión consciente**, y la confianza se gana cuando algo
    falla (F-899). Coincide con la fuga tras siniestro (F-890, F-872).
-5. **Delegar en una IA exige confirmar en cada paso sensible** para sentir control (F-899). **Esta hipótesis ya tiene
+5. 📎 **Delegar en una IA exige confirmar en cada paso sensible** para sentir control (F-899). **Esta hipótesis ya tiene
    respaldo experimental:** revelar que era un bot antes de conversar bajó la compra más de 79,7% (Luo et al., 2019,
    F-912); la gente resiste la IA porque cree que no considera lo que la hace única (Longoni et al., 2019, F-914); la
    aversión baja si puede modificar el resultado (Dietvorst et al., 2018, F-915); y la comodidad cae de cotizar (46%)
    a presentar un siniestro por mí (22%) (F-916). Ojo: ocultar al bot sube la venta, pero choca con la transparencia
    que exige la regulación de IA (F-907).
-6. **El momento de vida pesa más que la edad**, y conviene ofrecer cuando el riesgo se siente cerca (F-899, F-909),
+6. 📎 **El momento de vida pesa más que la edad**, y conviene ofrecer cuando el riesgo se siente cerca (F-899, F-909),
    como al comprar un auto (F-905).
-7. **La confianza se construye usando el producto** (F-898); completar la primera tarea genera confianza (F-895).
+7. 📎 **La confianza se construye usando el producto** (F-898); completar la primera tarea genera confianza (F-895).
 
 Sobre los defaults: un meta-análisis de 58 estudios halló un efecto considerable (d=0,68) de las opciones por
 defecto (Jachimowicz et al., 2019, F-913), mientras que el efecto promedio de los nudges en general desaparece al
@@ -248,7 +320,7 @@ corregir el sesgo de publicación (Maier et al., 2022, F-17).
 
 - **Fidelidad:** elegir quedarse teniendo alternativas, a diferencia de renovar por inercia.
 - **Cliente digitalmente sano:** resuelve lo que necesita cuando lo necesita, sin fricción de más. No se mide
-  por cuántas veces entra.
+  por cuántas veces entra. 📎 Puede resolver por medio de su corredor o de otro canal y seguir siendo sano.
 - **Cliente de alto valor:** suma el riesgo que trae, no solo la prima que paga.
 
 **Herramienta para el ejercicio con los ramos:** una auditoría de fricciones por recorrido (Sunstein, 2022,
@@ -260,55 +332,97 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 
 | Hipótesis | Qué dice el benchmarking | Cómo se cierra |
 |---|---|---|
-| El cliente digital es más fiel | No confirmada para seguros. Las analogías dicen que puede ser cierta; la selección dice que puede ser falsa | Cohortes emparejadas o despliegue escalonado con data propia |
-| Hace falta una llave de entrada para cada cartera | Sin evidencia de que un producto propio de bajo ticket y uso anual abra la puerta. Funciona cuando la cobertura viene por defecto y anclada a una relación frecuente (microcrédito semanal en México, F-896 y F-897) o a una app ajena de uso diario | Decidir si se compite por esa puerta o se aliña con quien la tiene (pregunta 3) |
+| El cliente digital es más fiel | No confirmada para seguros. Las analogías dicen que puede ser cierta; la selección dice que puede ser falsa. 📎 Los motivos de fuga documentados (precio, no uso, promesa incumplida, fin del ancla) no dependen del canal | Cohortes emparejadas o despliegue escalonado con data propia |
+| Hace falta una llave de entrada para cada cartera | Sin evidencia de que un producto propio de bajo ticket y uso anual abra la puerta. Funciona cuando la cobertura viene por defecto y anclada a una relación frecuente (microcrédito semanal en México, F-896 y F-897) o a una app ajena de uso diario. 📎 Pero esa puerta no retiene sin el ancla (F-902), no basta por sí sola (F-906) y genera reclamos si el consentimiento no es claro (F-902) | Decidir si se compite por esa puerta o se alía con quien la tiene, y en qué condiciones (pregunta 3) |
+| Un canal digital ahorra costo por sí mismo | 📎 No por sí mismo: lo ambiguo vuelve al teléfono (F-850) y ofrecer el canal no traslada la tarea (F-921) | Medir resolutividad por canal y flujo |
 | La actividad la determina el producto, no el canal | Consistente con la baja frecuencia estructural del seguro y con que la recurrencia de los referentes venga de servicios cercanos | Validar por ramo en el ejercicio con los ramos |
 | La gente casi no interactúa con la propuesta de valor | Consistente con lo anterior | Igual que la anterior |
-| El siniestro debería resolverse en digital | La evidencia apunta a un modelo híbrido: digital para iniciar y seguir, persona para lo complejo | Rol del canal por momento (pregunta 2) |
+| El siniestro debería resolverse en digital | La evidencia apunta a un modelo híbrido: digital para iniciar y seguir, persona para lo complejo. 📎 En Perú, lo que falla es resolver y pagar, y lo mal resuelto escala (F-902, F-903) | Rol del canal por momento (pregunta 2) |
+| 📎 Implícita en la meta: más uso del app es mejor | No: en dos teorías, el buen resultado baja la actividad; y en el segmento que delega en su corredor, poca actividad propia no significa poco valor | Reemplazar o acompañar el MAU con el indicador de la teoría elegida |
+| 📎 Implícita: el objetivo es llevar todo (o salud) a 100% digital | La evidencia dice que los canales conviven por función (F-918, F-921, F-923) | Definir qué tarea va a qué canal (pregunta 2) |
 
 ---
 
 ## 6. Lo que no se pudo responder
 
-- **No hay evidencia causal de Perú ni de LatAm en ninguna de las cinco teorías.** Todo lo regional lo reportan
-  las propias empresas.
+- **No hay evidencia causal de Perú ni de LatAm en ninguna de las cinco teorías.** Lo regional son datos de
+  empresas, encuestas, registros de reclamos y un caso mexicano. 📎 El único ensayo aleatorizado regional (México) es
+  sobre la cobertura por defecto, no sobre lo digital.
 - **No hay ningún estudio causal sobre retención digital en seguros.** El ensayo más cercano, sobre
   recordatorios y renovación automática en un seguro de salud de Ghana, está en curso y sin resultados (F-887).
 - **Varios estudios académicos son anteriores a 2021.** Son canónicos y sus contextos son EE.UU. y Europa.
-- **Todo se leyó por resumen.** Tres dominios estuvieron bloqueados desde el entorno de trabajo: `arxiv.org`,
-  `pacifico.com.pe` y `quartr.com`. La Memoria Integrada 2025 de Pacífico queda pendiente.
+- 📎 **Cómo se leyó cada fuente.** Lo encontrado en la web (papers, reportes anuales, prensa) se leyó por su resumen,
+  la página del editor o la cobertura de prensa; no se abrió el texto completo de la mayoría, y tres dominios
+  estuvieron bloqueados desde el entorno de trabajo (`arxiv.org`, `pacifico.com.pe` y `quartr.com`). Los documentos
+  aportados se leyeron completos, con tres excepciones: del diagnóstico del PNUD no se leyó el capítulo de riesgo de
+  desastres (fuera de alcance); del boletín de Pérez-Llorca, solo las secciones de IA y de Perú (el resto son otros
+  países); y del documento de Coloma, solo el resumen ejecutivo (se leerá completo para la pregunta 3). Cada ficha del
+  registro de fuentes indica cómo se leyó.
+- 📎 **Dos fuentes piden cuidado.** El artículo de la Universidad de Lima atribuye a estudios clásicos cifras que no
+  parecen corresponderles; no se usan (F-908). La cifra francesa de contratación por teléfono viene de una revisión
+  y no se verificó en el texto (F-921).
 - **La pista social es la más débil.** No se encontró conversación pública sobre apps de aseguradoras peruanas.
 - **Varias cifras de Porto Seguro son metas, no resultados.** Las de Ping An que comparan usuarios con no
   usuarios vienen de prensa.
 
 **Pendientes para la siguiente versión:**
 
-- el resto de los documentos de la otra conversación (ya se incorporaron quince documentos y cuatro papers: ver §7);
-- el resto del blog de Beway: el dominio `blog.beway.com` está bloqueado desde el entorno de trabajo (se leyó un artículo aportado por la usuaria);
+- 📎 abrir el texto completo de los cinco papers que más pesan en las conclusiones: Kumar y Telang (F-850), Campbell y
+  Frei (F-847), Jones et al. (F-854), Handel (F-889) y Dalla Pozza y Texier (F-921);
+- el resto del blog de Beway: el dominio `blog.beway.com` está bloqueado desde el entorno de trabajo (se leyó un
+  artículo aportado por la usuaria);
 - las memorias anuales completas de Perú y LatAm;
-- la búsqueda de estudios causales de retención en seguros.
+- la búsqueda de estudios causales de retención en seguros;
+- 📎 para la pregunta 3: la cifra de McKinsey sobre el peso de bancaseguros en LatAm, que no se pudo verificar.
 
 ---
 
-## 7. Qué cambió con los documentos aportados
+## 7. 📎 Cómo cambió el informe con los documentos aportados
+
+### 7.1 Por teoría de valor
+
+La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectura con la actual.
+
+| Teoría | Versión 1 (solo búsqueda web) | Versión 6 (con los documentos) | Qué lo movió | ¿Cambia lo que se recomienda? |
+|---|---|---|---|---|
+| 1. Costo de servir | Causal en ambas direcciones (EE.UU.); en Perú, solo una cifra de empresa | Igual nivel. Se suma que ofrecer el canal no traslada la tarea y que los canales caros sobreviven por lo que resuelven | Dalla Pozza y Texier (F-921), Rubio-Misas (F-923) | **Sí, matiza.** La meta pasa de "mover a digital" a "resolver cada tarea en el canal que mejor la resuelve" |
+| 2. Retención | No demostrada en seguros; plausible por analogía con banca y salud | Sigue sin demostrarse. Ahora se conocen los motivos de fuga, y ninguno depende del canal | PNUD (F-902), Treo (F-898), Capgemini (F-901), Graphite (F-895) | **Sí.** La fidelidad se juega en valor percibido y en cumplir, no en uso; la meta debe separar renovación pasiva de elección |
+| 3. Venta cruzada | Asociación; las puertas ajenas venden a escala | Asociación. La puerta ajena vende, pero no basta, cobra peaje, genera reclamos y no retiene sin el ancla | Credicorp (F-906), PNUD (F-902), Coloma (F-904), MILK México (F-896, F-897) | **Sí.** La pregunta pasa de "tener una puerta" a "con quién y en qué condiciones" (pregunta 3) |
+| 4. Prevención | En auto cambia la conducta; en salud no baja el gasto | Igual. | Sin cambios de fondo en esta copia | No |
+| 5. Confianza en el momento de verdad | Asociación con encuestas de EE.UU. | Asociación, pero la más consistente y con evidencia peruana de varios tipos | PNUD (F-902), SBS-CAF (F-903), Pérez-Llorca (F-907), MILK México (F-896) | **Sí.** Pasa a ser la candidata con más respaldo para Perú |
+| Transversal (nueva) | No existía | Los canales conviven por función; digitalizar lo existente es defensa | Papers F-917 a F-924 | **Sí.** Abre la pregunta 2 con una hipótesis: "todo digital" puede ser la meta equivocada |
+
+### 7.2 Por sección
+
+- **§1 Conclusión:** la tesis central no cambió. Se agregaron cuatro matices y una inferencia rotulada sobre las dos
+  teorías con más respaldo en Perú.
+- **§2 Menú:** nueva columna con el respaldo en Perú y LatAm; la teoría 5 se marca como la más consistente.
+- **§3 Hallazgos:** cada teoría suma evidencia peruana o latinoamericana; se agrega la §3.6 sobre convivencia de
+  canales.
+- **§4 Lectura conductual:** se agregan el defecto que no crea lealtad, el peso de la seguridad en el canal.
+- **§5 Implicancias:** se actualizan cuatro hipótesis y se agregan dos que la meta de MAU da por supuestas.
+- **§6:** se corrige "todo se leyó por resumen", que era inexacto, y se detalla cómo se leyó cada fuente.
+
+### 7.3 Veredicto por documento
 
 | Documento | ¿Robustece lo que ya teníamos? |
 |---|---|
 | Estudio de India sobre seguros de vida (F-856) | **No.** Leído completo, confirma que es evidencia débil: mide actitud, no renovación, con una muestra sesgada a usuarios digitales de ingreso alto |
 | Whitepaper sobre apps de seguros de salud (F-895). ⚠️ El archivo venía rotulado como J.D. Power, pero es de Graphite Digital, una agencia | **Parcial.** Suma el "no lo usé" como razón de fuga y confirma el siniestro y la sobrecarga de información como puntos críticos. Intención declarada, con conflicto de interés |
 | Microseguro de vida en México (F-896) y su ensayo aleatorizado (F-897) | **Sí.** Da evidencia de LatAm para la confianza en el momento de verdad y para la cobertura por defecto. Matiza la puerta de entrada: funciona por defecto y anclada a una relación frecuente |
-| Estudio de inclusión financiera en México (F-898) | **No para esta pregunta.** Sí aporta que parte de la fuga es estructural (cambio de trabajo) y que los adultos mayores se alcanzan mejor por intermediarios |
+| Estudio de inclusión financiera en México (F-898) | **No para esta pregunta.** Sí aporta que parte de la fuga es estructural (cambio de trabajo), que los adultos mayores se alcanzan mejor por intermediarios y que la desconfianza en la banca móvil es casi general |
 | Luo 2019, Jachimowicz 2019, Longoni 2019, Dietvorst 2018 (F-912 a F-915) | **Sí.** Respaldo experimental para la hipótesis de control al delegar en IA y para la fuerza de los defaults |
-| Índice de Inclusión Financiera de Credicorp 2026 (F-906) | **Sí, y matiza la puerta ajena.** La billetera se volvió diaria, pero los seguros no crecieron; Perú tiene la tenencia más baja (13%) |
+| Índice de Inclusión Financiera de Credicorp 2026 (F-906) | **Sí, y matiza la puerta ajena.** La billetera se volvió diaria, pero los seguros no crecieron; Perú tiene la tenencia más baja (13%). Leído completo: su método es una encuesta probabilística con 5.031 casos en Perú |
 | Estudio global de consumidores de Accenture 2023 (F-905) | **Parcial.** El concesionario como puerta (42%) y la rapidez del siniestro como valor. Intención declarada |
-| Artículo de la Universidad de Lima (F-908) | **Parcial.** Suma una fuente peruana a la hipótesis de la red familiar. Sin diseño causal |
+| Artículo de la Universidad de Lima (F-908) | **Parcial y con cuidado.** Suma una fuente peruana a la hipótesis de la red familiar. Sin diseño causal; varias cifras que atribuye a estudios clásicos no se usan |
 | Boletín legal de Pérez-Llorca 3T 2026 (F-907) | **Para señales y la pregunta 2:** reglamento peruano de IA y plazos del siniestro con una puerta abierta |
 | Artículo de Beway sobre seguro marítimo (F-909) | **Parcial.** El lenguaje conductual en el siniestro mueve conducta y costo (caso de segunda mano) |
-| Diagnóstico de microseguros en el Perú para el PNUD (F-902) y encuesta SBS-CAF 2022 (F-903) | **Sí, el más fuerte para Perú.** Solo 20% compraría digital; la puerta ajena cobra comisiones cercanas a 50%; los siniestros devuelven poco valor. Refuerza que el problema está en pagar, no en el canal |
+| Diagnóstico de microseguros en el Perú para el PNUD (F-902) y encuesta SBS-CAF 2022 (F-903) | **Sí, el más fuerte para Perú.** Solo 20% compraría digital; la puerta ajena cobra comisiones cercanas a 50%; los siniestros devuelven poco valor; los reclamos que escalan subieron; 38,4% de los reclamos ante Indecopi fue por cargo indebido; solo 12% mantiene el seguro de terremoto al terminar el crédito |
 | Reporte de McKinsey sobre seguros en LatAm (F-900) | **Parcial.** Búsqueda en línea y compra con persona; seguros últimos en experiencia en Perú. Casos sin cifras verificables |
 | Licitación de seguros hipotecarios en Chile (F-904) | **Sí, para la puerta por defecto** (y para la pregunta 3): sin competencia, el seguro atado cobra de más |
 | Informe mundial de seguros generales de Capgemini (F-901) | **Débil.** Al irse, pesa más el precio que lo digital |
 | Voces de practitioners de Flat 101 (F-899) | **No valida; muestra que la idea ya circula** en el sector. Coincide con la evidencia sobre el siniestro y el escalamiento a una persona |
+| Ocho papers sobre estrategia de canales (F-917 a F-924), verificados a partir de una revisión de literatura aportada | **Sí.** Dan el marco de convivencia de canales (§3.6). El efecto de canibalización sobre los agentes es menor de lo que la revisión decía: solo aparece en mercados con pocas oportunidades |
 
 ---
 
@@ -347,7 +461,8 @@ teoría de valor.
 - en banca, lo digital se asocia a retención aun controlando la selección (F-847);
 - la retroalimentación telemática cambia la forma de manejar (F-442);
 - los programas de bienestar seleccionan más de lo que transforman (F-854, F-855);
-- la retención por inercia es explotable y el regulador la puede prohibir (F-886).
+- la retención por inercia es explotable y el regulador la puede prohibir (F-886);
+- 📎 los canales de distribución conviven porque cada uno resuelve algo distinto (F-923).
 
 **Señales emergentes** (sin resultados todavía):
 
@@ -359,16 +474,16 @@ teoría de valor.
 - **Indemnización instantánea en siniestros simples** (Porto Seguro, F-865).
 - **Gamificación de salud como motor de uso diario** (Alan, F-859).
 - **Recuperación de la inversión insurtech en LatAm en 2025, con más disciplina** (F-878).
-- **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones
+- 📎 **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones
   (practitioners de Flat 101, F-899; opinión).
-- **Finanzas abiertas en la agenda regulatoria peruana y "seguro abierto" en Brasil** (F-900, F-902).
-- **Seguros paramétricos en desarrollo en Perú**, aún sin oferta (F-902).
-- **Reglamento peruano de IA por niveles de riesgo (sept-2025)**, que alcanzará a la tarificación y los siniestros con
+- 📎 **Finanzas abiertas en la agenda regulatoria peruana y "seguro abierto" en Brasil** (F-900, F-902).
+- 📎 **Seguros paramétricos en desarrollo en Perú**, aún sin oferta (F-902).
+- 📎 **Reglamento peruano de IA por niveles de riesgo (sept-2025)**, que alcanzará a la tarificación y los siniestros con
   IA (F-907).
-- **Seguros de vida que se usan en vida y cambian con la etapa** (Bradesco Vida Viva, F-905), sin cifras.
-- **La frontera de la delegación en IA:** se acepta que cotice o informe, no que presente un siniestro o cancele por
+- 📎 **Seguros de vida que se usan en vida y cambian con la etapa** (Bradesco Vida Viva, F-905), sin cifras.
+- 📎 **La frontera de la delegación en IA:** se acepta que cotice o informe, no que presente un siniestro o cancele por
   uno (F-916). Medirla en Perú es un vacío.
-- **Hubs de salud con valor diario como respuesta al "no lo usé"** (F-895; propuesta de una agencia, sin
+- 📎 **Hubs de salud con valor diario como respuesta al "no lo usé"** (F-895; propuesta de una agencia, sin
   resultados).
 
 **Eje candidato para escenarios:** quién será dueño de la relación diaria con el cliente. Puede ser la
@@ -380,7 +495,8 @@ ejercicio, no un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-916, más F-183, F-353 y F-442). Enlaces en el Anexo D.
+`research/fuentes/codice.md` (F-847 a F-929, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-929 están
+reservados para documentos internos que no se publican aquí). Enlaces en el Anexo D.
 
 ## Anexo D · Referencias con enlace
 
@@ -450,3 +566,11 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-914** · Longoni, C.; Bonezzi, A.; Morewedge, C. K. (Journal of Consumer Research) (2019). *Resistance to Medical Artificial Intelligence*. 🟢 A. [Ver fuente](https://www.scinapse.io/papers/2942858056)
 - **F-915** · Dietvorst, B. J.; Simmons, J. P.; Massey, C. (Management Science 64(3)) (2018). *Overcoming Algorithm Aversion: People Will Use Imperfect Algorithms If They Can (Even Slightly) Modify Them*. 🟢 A. [Ver fuente](https://pubsonline.informs.org/doi/10.1287/mnsc.2016.2643)
 - **F-916** · Insurity (cita secundaria) (2026). *Encuesta a consumidores de EE.UU. sobre comodidad con la IA en seguros*. 🟠 D. Cita secundaria; fuente original no consultada.
+- **F-917** · Neslin, S. A.; Grewal, D.; Leghorn, R.; Shankar, V.; Teerling, M. L.; Thomas, J. S.; Verhoef, P. C. (Journal of Service Research 9(2):95-112) (2006). *Challenges and Opportunities in Multichannel Customer Management*. 🟢 A. [Ver fuente](https://doi.org/10.1177/1094670506293559)
+- **F-918** · Verhoef, P. C.; Neslin, S. A.; Vroomen, B. (International Journal of Research in Marketing 24(2):129-148) (2007). *Multichannel customer management: Understanding the research-shopper phenomenon*. 🟢 A. [Ver fuente](https://doi.org/10.1016/j.ijresmar.2006.11.002)
+- **F-919** · Verhoef, P. C.; Kannan, P. K.; Inman, J. J. (Journal of Retailing 91(2):174-181) (2015). *From Multi-Channel Retailing to Omni-Channel Retailing: Introduction to the Special Issue on Multi-Channel Retailing*. 🟢 A. [Ver fuente](https://doi.org/10.1016/j.jretai.2015.02.005)
+- **F-920** · Verhoef, P. C.; Broekhuizen, T.; Bart, Y.; Bhattacharya, A.; Dong, J. Q.; Fabian, N.; Haenlein, M. (Journal of Business Research 122:889-901) (2021). *Digital transformation: A multidisciplinary reflection and research agenda*. 🟢 A. [Ver fuente](https://doi.org/10.1016/j.jbusres.2019.09.022)
+- **F-921** · Dalla Pozza, I. & Texier, L. (Journal of Applied Business Research 30(3):863-868; versión previa IPAG Working Paper 2014-059) (2014). *Managing Multichannel Strategies in the Service Sector: The Example of the French Insurance Industry*. 🟢 A. [Ver fuente](https://clutejournals.com/index.php/JABR/article/view/8571)
+- **F-922** · Holland, C. P. & Kavuri, A. S. (The Geneva Papers on Risk and Insurance – Issues and Practice 50(1); DOI 10.1057/s41288-024-00341-0) (2024). *Insurtech strategies: a comparison of incumbent insurance firms with new entrants*. 🟢 A. [Ver fuente](https://link.springer.com/10.1057/s41288-024-00341-0)
+- **F-923** · Rubio-Misas, M. (International Journal of Bank Marketing 40(4):724-745; DOI 10.1108/IJBM-04-2021-0129) (2022). *Bancassurance and the coexistence of multiple insurance distribution channels*. 🟢 A. [Ver fuente](https://doi.org/10.1108/IJBM-04-2021-0129)
+- **F-924** · Sharma, D. & Gassenheimer, J. B. (European Journal of Marketing 43(7/8):1076-1091) (2009). *Internet channel and perceived cannibalization: Scale development and validation in a personal selling context*. 🟢 A. [Ver fuente](https://doi.org/10.1108/03090560910961524)
