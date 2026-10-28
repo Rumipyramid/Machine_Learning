@@ -388,7 +388,7 @@ Precios y suscripción con IA (*pricing*); reaseguro; reforma de EsSalud, SIS y 
 
 ## 12. Mapa final: dónde sí hay oportunidad, de qué forma y dónde no
 
-> **Aclaración del 2026-10-28.** La lista de "dónde no" (§12.3) mide dónde **falta evidencia de efecto** o hay un **riesgo conocido**, no dónde falta oportunidad. Cuando varias empresas con datos propios convergen en una misma práctica (por ejemplo, la conversación por WhatsApp, §15), eso es una **señal de mercado** que se trata como oportunidad a probar, aunque aún no haya prueba de efecto. Lo que cambia entonces es qué hay que medir y qué cuidados poner, no si vale la pena mirarlo. Ver §15 y §16.
+> **Aclaración del 2026-10-28.** La lista de "dónde no" (§12.3) mide dónde **falta evidencia de efecto** o hay un **riesgo conocido**, no dónde falta oportunidad. Cuando varias empresas con datos propios convergen en una misma práctica (por ejemplo, la conversación por WhatsApp, §15), eso es una **señal de mercado** que se trata como oportunidad a probar, aunque aún no haya prueba de efecto. Lo que cambia entonces es qué hay que medir y qué cuidados poner, no si vale la pena mirarlo. Ver §15.
 
 Es una **síntesis mía** de §2 a §11. Ordena las hipótesis por cuánto las respalda la evidencia revisada y por si cumplen cuatro condiciones: hay una fricción repetida y barata de quitar, existe capacidad detrás (médicos, talleres, asesores), el resultado se puede medir y la persona gana algo verificable. **Ninguna tiene aún prueba causal en el Perú.**
 
@@ -558,39 +558,6 @@ Pegar el texto de las notas de Gestión que más importen (basta el cuerpo del a
 | W4 | El cierre de una vida temporal con asesor por chat persiste igual o mejor que el cierre por llamada | Persistencia a 13 meses, ajustando por perfil |
 | W5 | Los mayores que no usan apps sí usan el chat si un familiar lo activa | Uso por tramo de edad y por quién abrió el hilo |
 | W6 | Cobrar la prima mensual dentro del chat baja la caducidad frente al débito o el pago manual | Comparar caducidad entre esquemas |
-
-## 16. EsSalud y el sector privado: señales de que la frontera se está moviendo
-
-**Límite principal.** Todo sale de fragmentos de buscador y titulares de prensa (F-1192, nivel N2), no de documentos oficiales. El estado de cada medida no está confirmado. **Sanna no apareció en ninguna fuente como parte de un convenio con EsSalud**; el vínculo que sí apareció es con **Auna**.
-
-### 16.1 Qué encontré
-
-| Señal | Qué es | Estado según lo que vi |
-|---|---|---|
-| **Intercambio EsSalud–EPS** | Que asegurados de EsSalud se atiendan en clínicas de EPS y viceversa, con compensación económica y convenios tarifarios (titulares del 30 de julio de 2026) | **Proyecto**; no hallé que esté aprobado ni vigente |
-| **Auna y EsSalud (Torre Trecca)** | Asociación público-privada: una filial de Auna construye y opera un centro ambulatorio en Lima; EsSalud pagaría un monto mensual según un **volumen mínimo garantizado** | Auna comunicó que se cumplieron las condiciones previas para construir; hubo una adenda en febrero (año no visible) |
-| **Salog** | Asociación público-privada para la logística de medicinas de EsSalud; dice estar en conversaciones con el sector privado | Contrato con EsSalud; sin contratos privados firmados |
-| **Farmacia Vecina** | Pacientes crónicos de EsSalud recogen sus medicinas en farmacias privadas (Inkafarma, de 29 a más de 100 locales en la pandemia; otra nota dice ~150) | Programa existente; fechas no claras |
-| **Libre elección** | La Asociación de Clínicas Particulares propone que el asegurado de EsSalud elija prestador, con costos compartidos, y dice que el Estado le debe más de S/ 100 millones | Propuesta y reclamo del gremio |
-| **Pandemia (2020)** | EsSalud contrató 12 clínicas para casos de COVID-19; una investigación periodística cuestionó la eficacia | Antecedente |
-
-### 16.2 Por qué es una señal (inferencia mía)
-
-1. **El cuello de botella de EsSalud es capacidad** (esperas medias de consulta externa de 10,4 días en 2019 a 25,2 en 2025, y hasta 197 días en servicios de alta demanda, según Gestión; F-1189). Comprarle capacidad al sector privado es la salida que reaparece (pandemia, Torre Trecca, intercambio, libre elección). Eso confirma lo que decía §4.5: **el problema no es la app, es la oferta de atención**.
-2. **Se desdibuja la frontera** entre seguro social y seguro privado. Eso cambia quién es cliente de quién y qué papel juega una EPS.
-3. **El modelo de pago de Torre Trecca (volumen mínimo garantizado)** es un contrato de capacidad, no de pago por acto. Es distinto a lo que paga hoy un seguro privado y podría extenderse a otros servicios.
-4. **La farmacia ya es un punto de entrega** del seguro social (Farmacia Vecina), lo que refuerza la hipótesis de farmacia y adherencia (S6).
-
-### 16.3 Oportunidades y riesgos (hipótesis)
-
-| # | Oportunidad | Qué la respaldaría | Riesgo |
-|---|---|---|---|
-| E1 | **Puerta digital de orientación que enruta entre sistemas** (EsSalud, EPS, clínicas) para quien no encuentra cita | Esperas largas (F-1189); orientación por chat que ya existe en lo privado (F-1188) | Quién es responsable de la derivación; datos entre sistemas |
-| E2 | **Capacidad contratada** (centros ambulatorios, imágenes, diagnóstico) con pago por volumen garantizado | Torre Trecca (F-1192) | Pagos atrasados del Estado, que reclama el gremio de clínicas |
-| E3 | **Medicinas por farmacias privadas** para crónicos, con receta electrónica y recordatorio | Farmacia Vecina; efecto medio de la farmacia en adherencia (F-1166) | Costo y quién paga la dispensación |
-| E4 | **Productos complementarios** para quien tiene EsSalud (EPS complementaria, oncológico) | Intercambio en proyecto; Ley del Olvido Oncológico (nota de Gestión, Ley 32357) | Antiselección y uso doble |
-
-**Qué falta saber.** Si el intercambio EsSalud–EPS avanzó, con qué compensación y para qué servicios; qué hizo Sanna, si algo; cuánto debe el Estado hoy a las clínicas; si Torre Trecca ya recibe pacientes.
 
 ## Conexiones
 
