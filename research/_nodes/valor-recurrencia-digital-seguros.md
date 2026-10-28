@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-929 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-929; F-910, F-911 y F-925 a F-929 reservados), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-930 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-930; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -430,6 +430,11 @@ reservados.
 
 **Para el banco de señales (§6):** los canales de distribución conviven porque cada uno resuelve algo distinto
 (F-923); es práctica probada, no tendencia.
+
+**Lote 6 (mismo día): un documento interno más y un cambio de rigor.** Un benchmark interno de apps de seguros (F-930)
+se consultó, pero su contenido no se registra en este repositorio; ese número queda reservado. Con autorización de la
+usuaria, el Índice de Inclusión Financiera de Credicorp (F-906) sube de 🟡 C a 🔵 B: es una encuesta probabilística
+representativa con anexo metodológico completo.
 
 ---
 

@@ -1,7 +1,7 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
 **Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 6
-(integra quince documentos aportados por la usuaria y doce papers verificados a partir de ellos; siete documentos
+(integra quince documentos aportados por la usuaria y doce papers verificados a partir de ellos; ocho documentos
 internos del equipo se omiten de esta copia; el formato para la gerencia se define después)
 **Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.1, 2026-10-28). Las fuentes se
 citan como (Autor, año) y con su número del registro de fuentes del proyecto (F-n).
@@ -156,7 +156,7 @@ se entra al app.
   con datos de Indecopi).
 - 📎 **Tener la puerta no basta.** En LatAm, la billetera móvil pasó de 11% a 49% de la población en cinco años y se usa
   a diario, pero la tenencia de seguros privados no creció; Perú tiene la más baja de la región (13%) pese a su alto
-  uso de billetera (Banco de Ideas Credicorp e Ipsos, 2026, F-906; encuesta probabilística, 5.031 casos en Perú). El
+  uso de billetera (Banco de Ideas Credicorp e Ipsos, 2026, F-906; encuesta probabilística, 5.031 casos en Perú; 🔵 B). El
   seguro no se suma solo a los hábitos diarios.
 - 📎 **El momento de compra funciona como puerta.** 42% compraría su seguro de auto en el concesionario, frente a 32% en
   2018 (Accenture, 2023, F-905; intención declarada).
@@ -495,7 +495,7 @@ ejercicio, no un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-929, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-929 están
+`research/fuentes/codice.md` (F-847 a F-930, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
 reservados para documentos internos que no se publican aquí). Enlaces en el Anexo D.
 
 ## Anexo D · Referencias con enlace
@@ -557,7 +557,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-903** · SBS y CAF (citada vía el diagnóstico del PNUD, F-902) (2022). *Encuesta de Capacidades Financieras del Perú 2022 (resultados sobre seguros)*. 🔵 B. Cita secundaria en F-902; documento original no consultado.
 - **F-904** · Coloma C., F. (Instituto de Economía, Pontificia Universidad Católica de Chile; ex Superintendente de Valores y Seguros) (2019). *Licitación de los seguros asociados a los créditos hipotecarios: algunos resultados y propuestas de mejoramiento (Documento de Política Pública)*. 🔵 B. PDF aportado por la usuaria (Documento de Política Pública, Instituto de Economía UC); URL pública no verificada.
 - **F-905** · Saldanha, K. & Staehle, T. (Accenture) (2023). *Seeing the people behind the policies: Accenture's Global Insurance Consumer Study 2023*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
-- **F-906** · Banco de Ideas Credicorp, con Ipsos (Rojas, P.; Wiener, L.; Pinedo, S.; Zamora, C.; Sánchez, L.) (2026). *Índice de Inclusión Financiera de Credicorp 2026: un vínculo más digital (octubre 2026)*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
+- **F-906** · Banco de Ideas Credicorp, con Ipsos (Rojas, P.; Wiener, L.; Pinedo, S.; Zamora, C.; Sánchez, L.) (2026). *Índice de Inclusión Financiera de Credicorp 2026: un vínculo más digital (octubre 2026)*. 🔵 B. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
 - **F-907** · Pérez-Llorca (equipos de Seguros y Reaseguros de Colombia, España, México, Portugal y Perú) (2026). *Actualidad Iberoamericana de Seguros, tercer trimestre 2026*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
 - **F-908** · Enríquez Quicaño, J. B.; Alvarado Mesa, M. F.; Romero Valdivia, M. S. (Desafíos: Economía y Empresa n.° 8, Universidad de Lima, pp. 11-38; DOI 10.26439/ddee2026.n008.7940) (2025). *Aplicación de la economía conductual en el mercado de los seguros*. 🟡 C. [Ver fuente](https://doi.org/10.26439/ddee2026.n008.7940) · Documento aportado por la usuaria.
 - **F-909** · Beway, en colaboración con la Asociación Latinoamericana de Suscriptores Marítimos (autoría individual no indicada) (s.f. (c. 2025-2026)). *Cerrar la brecha de aseguramiento marítimo en América Latina: una mirada desde las ciencias del comportamiento*. 🟠 D. Archivo de la usuaria: articulo-bewAY-_Brecha-aseguramiento-maritimo.md (blog.beway.com, dominio bloqueado desde la sesión).
