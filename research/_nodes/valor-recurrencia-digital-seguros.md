@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-894 (lectura conductual F-886 a F-894), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-899 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-899), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -96,7 +96,7 @@ teléfono.
   F-848). Los adoptantes de banca móvil compran más productos promovidos (F-849).
 - En seguros no-vida, el número de contratos y el canal de acceso inicial influyen en cuánto tarda la
   segunda compra (F-853, Suiza, observacional).
-- No se encontró evidencia académica de un producto obligatorio o de bajo ticket como puerta de entrada.
+- No se encontró evidencia académica de un producto obligatorio o de bajo ticket como puerta de entrada digital. **Matiz (§10):** en México, una cobertura de vida automática incluida en el microcrédito llevó a que cerca de la mitad comprara módulos voluntarios (F-896), y al quitar la cobertura automática la protección total cayó (F-897). Funciona anclada a una relación de alta frecuencia (el pago semanal del crédito), que un producto anual no tiene.
 
 ### 2.4 Siniestralidad y prevención
 
@@ -343,6 +343,27 @@ presente está 🔵 replicado con matices. Lo marcado "inferencia" es interpreta
   cada flujo.
 - **En la validación de "el cliente digital es más fiel":** diseñar cohortes emparejadas o un despliegue
   escalonado. Es trabajo propio del behavioral design.
+
+## 10. Contraste con documentos aportados por la usuaria (2026-10-28)
+
+**Conclusión:** los cinco documentos no cambian el veredicto central; lo afinan en tres puntos. (1) La "puerta de
+entrada" sí funciona en un caso de LatAm, pero anclada a una relación de alta frecuencia y por defecto, no por
+elección. (2) El valor del siniestro está en la rapidez y la justicia del pago, también en población de bajos
+ingresos. (3) Una razón importante para irse de un seguro de salud es "no lo usé tanto como esperaba", lo que
+confirma el problema de valor percibido en productos de baja frecuencia.
+
+| Documento | Qué aporta | ¿Robustece? |
+|---|---|---|
+| Estudio de India sobre seguros de vida (Singh, Panigrahi y Shekhar, 2024, F-856), leído completo | La "retención" se midió como actitud (sentir lealtad, intención de seguir pagando), no como renovación real. La muestra es intencional, de usuarios digitales diarios, 67% de ingreso alto y 97% urbana. El modelo usa lenguaje causal sobre una sola encuesta transversal | **No.** Es el ejemplo típico de la evidencia débil del §2.2. Confirma la calificación 🟡 C |
+| Whitepaper de Graphite Digital sobre apps de seguros de salud (2025, F-895). ⚠️ El archivo venía rotulado como J.D. Power, pero no es de J.D. Power | 40% canceló o considera cancelar. La razón más citada después del precio es "no lo usé tanto como esperaba" (27%), la primera entre 18 y 34 años. La mala experiencia digital y la dificultad para reclamar las citan 21% cada una. 45% se siente abrumado por la información | **Parcial.** Coincide con el siniestro como momento de verdad (§2.5) y con la sobrecarga de información que genera llamadas (§2.1). Es intención declarada y la autora vende experiencia digital |
+| Brief sobre microseguro de vida en México (Poulton y Magnoni, 2013, F-896) y el ensayo aleatorizado del mismo programa (Zimmerman et al., 2013, F-897) | El pago rápido y justo del siniestro permitió a las familias endeudarse sin interés con su red y evitar deuda cara. Después del siniestro, todos los asegurados lo valoraron. Al quitar la cobertura automática, la gente compró más por su cuenta, pero quedó menos protegida. Los mensajes emocionales o factuales no cambiaron la compra | **Sí, en dos teorías.** Confianza en el momento de verdad (§2.5) con evidencia de LatAm, y la cobertura por defecto como palanca (§9). Matiza la venta cruzada (§2.3) |
+| Estudio de inclusión financiera en México (Treo, c. 2021, F-898) | 47% de quienes dejaron de tener seguro lo atribuye a cambiar de trabajo. La educación y la formalidad predicen la tenencia de seguro. Recomienda llegar a adultos mayores por intermediarios familiares | **No para la pregunta 1** (no habla de recurrencia digital). **Sí para la diversidad de usuarios:** parte de la fuga es estructural (empleo) y no la resuelve un canal. Útil para la pregunta 2 y el foresight |
+| Voces de practitioners de Flat 101 (2025-2026, F-899), una sola fuente de origen | La confianza se gana cuando algo falla; la fidelidad no se automatiza; persona "a un clic"; delegar en IA exige confirmaciones; segmentar por momento vital y no por edad | **No valida; muestra que la idea circula** en el sector. Coincide con F-183, F-872 y F-890, que sí son evidencia |
+
+**Para el banco de señales (§6):**
+
+- **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones (Flat 101 sobre Revolut, F-899). Es una señal, sin resultados.
+- **Hubs de salud con valor diario** como respuesta al "no lo usé" (F-895). Es una propuesta de agencia, sin resultados.
 
 ---
 

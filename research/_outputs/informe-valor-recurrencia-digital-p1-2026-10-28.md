@@ -1,6 +1,7 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 2 (incorpora
+los documentos aportados por la usuaria)
 (el formato para la gerencia se define después)
 **Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.0, 2026-10-28). Las fuentes se
 citan como (Autor, año) y con su número del registro de fuentes del proyecto (F-n).
@@ -78,6 +79,16 @@ en gestionar y en lo urgente.
   - Oscar atribuye la retención a su plataforma, sin publicar la tasa (F-858).
 - **🌐 Ser nativo digital no garantiza retención alta.** Lemonade retiene 85% de sus primas año a año, según su
   reporte anual auditado (F-857).
+- **El estudio de India sobre seguros de vida, leído completo, es el ejemplo típico de esta evidencia débil**
+  (Singh, Panigrahi y Shekhar, 2024, F-856). Mide la retención como actitud ("siento lealtad", "estoy dispuesto
+  a seguir") y no como renovación real. Su muestra es de usuarios digitales diarios, 67% de ingreso alto y 97%
+  urbana.
+- **🌐 "No lo usé" es una razón para irse.** En una encuesta representativa del Reino Unido, 40% canceló o
+  considera cancelar su seguro privado de salud. La razón más citada después del precio fue "no lo usé tanto como
+  esperaba" (27%), y es la primera entre 18 y 34 años (Graphite Digital, 2025, F-895). Es intención declarada, y la
+  autora vende experiencia digital. Confirma el problema de valor percibido en productos de baja frecuencia.
+- **Parte de la fuga es estructural.** En México, 47% de quienes dejaron de tener seguro lo atribuye a un cambio
+  de trabajo (Treo, c. 2021, F-898, con datos de la ENIF 2018). Ese tipo de fuga no la resuelve ningún canal.
 - **La amenaza principal es la selección.** En un ensayo aleatorizado, quienes se inscriben en programas de
   bienestar ya tenían menor gasto y mejores hábitos antes de empezar (Jones et al., 2019, F-854). La misma
   lógica aplica al cliente digital: quien adopta ya era distinto.
@@ -98,8 +109,13 @@ con data propia: cohortes emparejadas o un despliegue escalonado.
   - Nubank tiene 2 millones de pólizas, pero con baja penetración: 1,6% de su base en 2023 (F-863).
   - Mercado Pago tiene 11 millones de clientes con póliza (F-864).
   - Yape vende SOAT y lanzó un seguro de salud (F-869).
-- **No se encontró evidencia de que un producto propio de bajo ticket, como el SOAT, funcione como puerta de
-  entrada.** La venta digital de SOAT de Interseguro creció 66% en 2019. Su memoria también dice que mejoró la
+- **La puerta de entrada funciona en un caso de LatAm, pero por defecto y anclada a una relación frecuente.** En
+  México, un microcrédito incluía cobertura de vida automática, y cerca de la mitad de los clientes compró módulos
+  voluntarios (Poulton y Magnoni, 2013, F-896). En un ensayo aleatorizado con esos clientes, al quitar la
+  cobertura automática la gente compró más por su cuenta, pero terminó menos protegida (Zimmerman et al., 2013,
+  F-897). La relación era semanal (el pago del crédito) y no fue digital.
+- **No se encontró evidencia de que un producto propio de bajo ticket y frecuencia anual, como el SOAT, funcione
+  como puerta de entrada.** La venta digital de SOAT de Interseguro creció 66% en 2019. Su memoria también dice que mejoró la
   renovación, pero sin cifra (F-867).
 
 **Implicancia:** si la apuesta es usar el SOAT como llave de entrada, hoy no hay evidencia que la respalde. Lo
@@ -131,6 +147,13 @@ legítimo, pero es **selección**, no prevención, y se mide distinto.
   escala pierde 11 puntos de NPS (Bain, 2023, F-183).
 - 🌐 **Satisfacción no es retención.** Tras un siniestro, la probabilidad de cambiarse de aseguradora sube 35%,
   aun entre clientes satisfechos (LexisNexis, 2023, F-890; dato de un proveedor).
+- **LatAm: el valor está en la rapidez y la justicia del pago.** En un microseguro de vida en México, el pago
+  llegó en promedio 9 días después de la muerte. Las familias lo usaron como garantía para pedir prestado sin
+  interés a su red, y evitaron deuda cara o vender activos. Después del siniestro, todos los asegurados dijeron que
+  fue buena decisión (Poulton y Magnoni, 2013, F-896). La muestra es pequeña (32 familias aseguradas y 36 no
+  aseguradas) y no aleatoria.
+- **🌐 21% de quienes consideran dejar su seguro de salud cita la dificultad para reclamar** (Graphite Digital,
+  2025, F-895; intención declarada).
 - **Perú:** la fricción registrada está en la **resolución**, no en el canal. Indecopi recibió 8.248 reclamos de
   seguros entre 2019 y 2022. En 2025 sancionó demoras en indemnizaciones de SOAT y liquidaciones que no
   respetaban la póliza (F-883).
@@ -162,6 +185,9 @@ valor, y qué la frena**. Esta lectura agrega cuatro distinciones que el anális
      (estudio en Marketing Science, F-891).
 
    Todo empujón de adquisición o de cambio tiene un costo actuarial.
+5. **La cobertura por defecto pesa más que el mensaje.** En el ensayo de microseguro en México, quitar la
+   cobertura automática redujo la protección total, y los mensajes emocionales o factuales no cambiaron la compra
+   (Zimmerman et al., 2013, F-897). Lo que viene incluido define cuánto queda protegido.
 
 **Propuesta para las tres definiciones que hoy no existen:**
 
@@ -180,7 +206,7 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 | Hipótesis | Qué dice el benchmarking | Cómo se cierra |
 |---|---|---|
 | El cliente digital es más fiel | No confirmada para seguros. Las analogías dicen que puede ser cierta; la selección dice que puede ser falsa | Cohortes emparejadas o despliegue escalonado con data propia |
-| Hace falta una llave de entrada para cada cartera | Sin evidencia de que un producto propio de bajo ticket abra la puerta. Las puertas que funcionan a escala son apps ajenas de alta frecuencia | Decidir si se compite por esa puerta o se aliña con quien la tiene (pregunta 3) |
+| Hace falta una llave de entrada para cada cartera | Sin evidencia de que un producto propio de bajo ticket y uso anual abra la puerta. Funciona cuando la cobertura viene por defecto y anclada a una relación frecuente (microcrédito semanal en México, F-896 y F-897) o a una app ajena de uso diario | Decidir si se compite por esa puerta o se aliña con quien la tiene (pregunta 3) |
 | La actividad la determina el producto, no el canal | Consistente con la baja frecuencia estructural del seguro y con que la recurrencia de los referentes venga de servicios cercanos | Validar por ramo en el ejercicio con los ramos |
 | La gente casi no interactúa con la propuesta de valor | Consistente con lo anterior | Igual que la anterior |
 | El siniestro debería resolverse en digital | La evidencia apunta a un modelo híbrido: digital para iniciar y seguir, persona para lo complejo | Rol del canal por momento (pregunta 2) |
@@ -202,9 +228,21 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 
 **Pendientes para la siguiente versión:**
 
-- los PDFs y fuentes de la otra conversación;
+- el resto de los documentos de la otra conversación (ya se incorporaron cinco: ver §7);
 - las memorias anuales completas de Perú y LatAm;
 - la búsqueda de estudios causales de retención en seguros.
+
+---
+
+## 7. Qué cambió con los documentos aportados
+
+| Documento | ¿Robustece lo que ya teníamos? |
+|---|---|
+| Estudio de India sobre seguros de vida (F-856) | **No.** Leído completo, confirma que es evidencia débil: mide actitud, no renovación, con una muestra sesgada a usuarios digitales de ingreso alto |
+| Whitepaper sobre apps de seguros de salud (F-895). ⚠️ El archivo venía rotulado como J.D. Power, pero es de Graphite Digital, una agencia | **Parcial.** Suma el "no lo usé" como razón de fuga y confirma el siniestro y la sobrecarga de información como puntos críticos. Intención declarada, con conflicto de interés |
+| Microseguro de vida en México (F-896) y su ensayo aleatorizado (F-897) | **Sí.** Da evidencia de LatAm para la confianza en el momento de verdad y para la cobertura por defecto. Matiza la puerta de entrada: funciona por defecto y anclada a una relación frecuente |
+| Estudio de inclusión financiera en México (F-898) | **No para esta pregunta.** Sí aporta que parte de la fuga es estructural (cambio de trabajo) y que los adultos mayores se alcanzan mejor por intermediarios |
+| Voces de practitioners de Flat 101 (F-899) | **No valida; muestra que la idea ya circula** en el sector. Coincide con la evidencia sobre el siniestro y el escalamiento a una persona |
 
 ---
 
@@ -255,6 +293,10 @@ teoría de valor.
 - **Indemnización instantánea en siniestros simples** (Porto Seguro, F-865).
 - **Gamificación de salud como motor de uso diario** (Alan, F-859).
 - **Recuperación de la inversión insurtech en LatAm en 2025, con más disciplina** (F-878).
+- **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones
+  (practitioners de Flat 101, F-899; opinión).
+- **Hubs de salud con valor diario como respuesta al "no lo usé"** (F-895; propuesta de una agencia, sin
+  resultados).
 
 **Eje candidato para escenarios:** quién será dueño de la relación diaria con el cliente. Puede ser la
 aseguradora, un banco o una billetera, el empleador o corredor, o una interfaz de IA. Es una hipótesis para el
@@ -265,15 +307,15 @@ ejercicio, no un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-894, más F-183, F-353 y F-442). Enlaces en el Anexo D.
+`research/fuentes/codice.md` (F-847 a F-899, más F-183, F-353 y F-442). Enlaces en el Anexo D.
 
 ## Anexo D · Referencias con enlace
 
-Cada fuente citada en el informe, con su número del registro de fuentes del proyecto. Los enlaces llevan a la fuente original o, si no estuvo accesible, al resumen o la cobertura desde donde se leyó.
+Cada fuente citada en el informe, con su número del registro de fuentes del proyecto. Los enlaces llevan a la fuente original o, si no estuvo accesible, al resumen o la cobertura desde donde se leyó. Los documentos aportados por la usuaria se indican como tales.
 
 - **F-183** · Bain & Company, con datos de NPS Prism (2023). *Insurers Have a Digital Dilemma: Complex Claims*. 🟡 C. [Ver fuente](https://www.bain.com/insights/insurers-have-digital-dilemma-complex-claims-snap-chart/)
 - **F-353** · Vitality Group; validación actuarial de Arbital Health (2024). *Vitality Impact Study*. 🔵 B. [Ver fuente](https://vitalitygroup.com/insights/independent-actuaries-confirm-methodology-in-vitalitys-impact-study/)
-- **F-442** · Equipo de investigación en seguridad vial (autoría no capturada en detalle) (2026). *A national randomized field experiment testing the impact of simulated usage-based insurance programs on driver safety* (Accident Analysis & Prevention). 🟢 A. [Ver registro del ensayo](https://clinicaltrials.gov/study/NCT06101251) · [Ver revista](https://www.sciencedirect.com/journal/accident-analysis-and-prevention)
+- **F-442** · Equipo de investigación en seguridad vial (autoría no capturada en detalle) (2026). *A national randomized field experiment testing the impact of simulated usage-based insurance programs on driver safety (Accident Analysis & Prevention)*. 🟢 A. [Ver registro del ensayo](https://clinicaltrials.gov/study/NCT06101251) · [Ver revista](https://www.sciencedirect.com/journal/accident-analysis-and-prevention)
 - **F-847** · Campbell, D. & Frei, F. (Management Science 56(1):4-24) (2010). *Cost Structure, Customer Profitability, and Retention Implications of Self-Service Distribution Channels*. 🟢 A. [Ver fuente](https://pubsonline.informs.org/doi/10.1287/mnsc.1090.1132)
 - **F-848** · Xue, M.; Hitt, L. M.; Chen, P. (Management Science 57(2):291-307) (2011). *Determinants and Outcomes of Internet Banking Adoption*. 🟢 A. [Ver fuente](https://doi.org/10.1287/mnsc.1100.1187)
 - **F-849** · Becker, Stolper & Walter (Zeitschrift für das gesamte Genossenschaftswesen 72(4):234-267) (2022). *The Impact of Mobile Banking Adoption on Retail Banking in Germany*. 🟢 A. [Ver fuente](https://doi.org/10.1515/zfgg-2022-0019)
@@ -282,7 +324,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-852** · Brockett, P. L.; Golden, L. L.; Guillen, M.; Nielsen, J. P.; Parner, J.; Pérez-Marín, A. M. (Journal of Risk and Insurance 75(3):713-737) (2008). *Survival Analysis of a Household Portfolio of Insurance Policies: How Much Time Do You Have to Stop Total Customer Defection?*. 🟢 A. [Ver fuente](https://ideas.repec.org/a/bla/jrinsu/v75y2008i3p713-737.html)
 - **F-854** · Jones, D.; Molitor, D.; Reif, J. (Quarterly Journal of Economics 134(4):1747-1791) (2019). *What Do Workplace Wellness Programs Do? Evidence from the Illinois Workplace Wellness Study*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:oup:qjecon:v:134:y:2019:i:4:p:1747-1791.)
 - **F-855** · Song, Z. & Baicker, K. (JAMA) (2019). *Effect of a Workplace Wellness Program on Employee Health and Economic Outcomes: A Randomized Clinical Trial*. 🟢 A. [Ver fuente](https://hcp.hms.harvard.edu/publication/effect-workplace-wellness-program-employee-health-and-economic-outcomes-randomized)
-- **F-856** · Singh et al. (Indian Journal of Marketing) (2024). *Fostering Digital Engagement and Customer Retention in Indian Insurance: An Empirical Study*. 🟡 C. [Ver fuente](https://indianjournalofmarketing.com/index.php/ijom/article/view/174017)
+- **F-856** · Singh, N.; Panigrahi, R.; Shekhar, R. (Indian Journal of Marketing 54(7):68-82; DOI 10.17010/ijom/2024/v54/i7/174017) (2024). *Fostering Digital Engagement and Customer Retention in Indian Insurance: An Empirical Study*. 🟡 C. [Ver fuente](https://indianjournalofmarketing.com/index.php/ijom/article/view/174017) · PDF aportado por la usuaria.
 - **F-857** · Lemonade, Inc. (Form 10-K FY2025 y cartas a accionistas 2025, SEC) (2026). *Form 10-K FY2025; Shareholder letters Q2-Q4 2025*. 🔵 B. [Ver fuente](https://www.sec.gov/Archives/edgar/data/1691421/000169142126000016/lmnd-20251231.htm)
 - **F-858** · Oscar Health, Inc. (Form 10-K FY2025; llamadas de resultados 1T25 y 1T26) (2026). *Form 10-K FY2025; earnings calls*. 🟡 C. [Ver fuente](https://www.sec.gov/Archives/edgar/data/1568651/000156865126000011/oscr-20251231.htm)
 - **F-859** · Alan (carta a accionistas Q2 2025) (2025). *Alan - 2025 Q2 Letter to Shareholders*. 🟠 D. [Ver fuente](https://alan.com/en/blog/discover-alan/a/alan-2025-q2-letter-to-shareholders)
@@ -314,3 +356,8 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-890** · LexisNexis Risk Solutions (2023). *Moment of Truth: claims satisfaction and auto insurance switching (whitepaper)*. 🟡 C. [Ver fuente](https://www.claimsjournal.com/news/national/2023/06/08/317385.htm)
 - **F-891** · INFORMS (nota de prensa sobre artículo en Marketing Science; autores no verificados) (s.f.). *Insurance companies: want to steal your competitors' customers? New research says it may cost you*. 🔵 B. [Ver fuente](https://www.informs.org/News-Room/INFORMS-Releases/News-Releases/Insurance-companies-want-to-steal-your-competitors-customers-New-research-says-it-may-cost-you)
 - **F-894** · Sunstein, C. R. (Behavioural Public Policy 6(4):654-673) (2022). *Sludge Audits*. 🟢 A. [Ver fuente](https://www.cambridge.org/core/journals/behavioural-public-policy/article/abs/sludge-audits/12A7E338984CE8807CC1E078EC4F13A7)
+- **F-895** · Graphite Digital (encuesta de Opinium por encargo) (2025). *Redefining digital experience in health insurance: strategic priorities for a changing market*. 🟡 C. [Ver fuente](https://graphitedigital.com) · PDF aportado por la usuaria.
+- **F-896** · Poulton, D. & Magnoni, B. (MicroInsurance Centre, proyecto MILK) (2013). *MILK Brief #16: 'Doing the Math' – Life Microinsurance in Mexico (Compartamos Banco)*. 🟡 C. [Ver fuente](https://microinsurancecentre.milliman.com/en/insight/milk-brief-16-doing-the-math-life-microinsurance-in-mexico) · PDF aportado por la usuaria.
+- **F-897** · Zimmerman, E.; Bauchet, J.; Magnoni, B.; Poulton, D. (MicroInsurance Centre, proyecto MILK); trabajo relacionado de Bauchet (8.700 prestatarios) (2013). *Protecting those left behind: an experimental study of life microinsurance purchase decisions of Compartamos Banco's borrowers*. 🔵 B. [Ver fuente](https://microinsurancecentre.milliman.com/en/insight/milk-rct-protecting-those-left-behind-an-experimental-study-of-life-microinsurance-purchase-decision)
+- **F-898** · Martínez Gutiérrez, A. L. (coord.); Hindriks, P.; Reséndiz Ruiz, C.; Santos Ochoa, J. (por encargo de Treo) (c. 2021 (año no visible en el documento)). *El camino a la tranquilidad financiera: oportunidades para la disrupción de las finanzas personales en México. Estudio completo*. 🟡 C. [Ver fuente](https://treo.mx) · PDF aportado por la usuaria.
+- **F-899** · Flat 101 (Vanessa Ballesteros Abad y Ricardo Tayar López; posts de LinkedIn resumidos por Claude a partir de capturas de la usuaria) — cuentan como una sola fuente de origen (2025-2026). *Voces de practitioners de behavioral design sobre confianza, fricción, delegación a IA y segmentación por situación*. 🔴 E. Documento aportado por la usuaria (voces-practitioners.md).
