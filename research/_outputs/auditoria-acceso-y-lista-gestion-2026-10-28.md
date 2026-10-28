@@ -50,8 +50,8 @@
 
 | Nivel de lectura | Qué es | Fichas aproximadas | Cómo tratar la cifra |
 |---|---|---|---|
-| **N1. Leído en un archivo** | PDF o docx subido | ~25 fichas | Se puede citar con su página; verificar el resto del documento si la decisión es grande |
-| **N2. Fragmento de buscador o nota de prensa** | Resumen del buscador de un artículo, informe o estudio | ~320 fichas (163 lo dicen en la ficha; **162 no indican cómo se leyeron**, por defecto es este nivel) | Tomar como **pista**, no como dato; abrir la fuente antes de citar |
+| **N1. Leído en un archivo** | PDF o docx subido | hasta ~30 fichas mencionan estos documentos o a sus autores; **no todas sus cifras vienen del archivo** (algunas citan al mismo autor a través de prensa) | Se puede citar con su página; verificar el resto del documento si la decisión es grande |
+| **N2. Fragmento de buscador o nota de prensa** | Resumen del buscador de un artículo, informe o estudio | el resto, unas ~300 fichas (según una clasificación por palabras clave, ~160 lo dicen en la ficha y **~160 no indican cómo se leyeron**; por defecto es este nivel). El conteo es aproximado | Tomar como **pista**, no como dato; abrir la fuente antes de citar |
 | **N3. Solo titular** | Titular de una lista de noticias | 6 fichas | No usar la cifra |
 
 **Hallazgo sobre el ledger.** La ficha no tiene una columna que diga cuánto se leyó. La rúbrica A a E mide el tipo de fuente, no mi nivel de acceso. Propongo agregar una columna "Nivel de lectura (N1, N2, N3)". No la agrego sin tu autorización porque cambia la estructura del ledger.
