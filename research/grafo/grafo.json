@@ -73,8 +73,8 @@
   {
    "id": "lima-norte-megaplaza-plaza-norte",
    "type": "node",
-   "lines": 113,
-   "cites": 20,
+   "lines": 134,
+   "cites": 30,
    "design": false
   },
   {
@@ -7912,9 +7912,9 @@
    "id": "F-861",
    "type": "fuente",
    "rigor": "C",
-   "titulo": "Espacios intermedios y dinámicas vecinales: entre el mercado de barrio y el comercio ambulatorio en Lima Norte",
-   "autor": "Autor no verificado (ResearchGate)",
-   "anio": "2024-25 (no verificado)",
+   "titulo": "Espacios intermedios y dinámicas vecinales: entre el mercado de barrio y el comercio ambulatorio en Lima Norte — *Ensayo: Revista de Arquite",
+   "autor": "Mayorca Huamán",
+   "anio": "2025",
    "huerfana": false
   },
   {
@@ -7960,6 +7960,96 @@
    "titulo": "Radiografía de la clase media en el Perú",
    "autor": "IEDEP – Cámara de Comercio de Lima",
    "anio": "s/f (no verificado)",
+   "huerfana": false
+  },
+  {
+   "id": "F-867",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Perfiles Zonales 2025: las 6 caras de Lima Metropolitana",
+   "autor": "Ipsos Perú",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-868",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Perfiles Zonales 2021 de Lima Metropolitana",
+   "autor": "Ipsos Perú",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-869",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Shopping crece en malls del norte del país: ¿lo mismo pasa en Megaplaza y Plaza Norte?",
+   "autor": "Gestión (estudio de Poken Perú Retail)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-870",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Afluencia a locales comerciales cambió tendencia negativa en mayo (nota del 18-jun-2026)",
+   "autor": "Gestión (Poken)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-871",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "MegaPlaza, de un mercado local al principal centro comercial de Lima Norte",
+   "autor": "Infobae",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-872",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "E-commerce y comportamiento del consumidor en el sector textil, Lima Norte, 2023",
+   "autor": "Autor no verificado — tesis UPN",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-873",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Lima Centro y Lima Norte: ¿en dónde se crean más empresas y de qué rubros?",
+   "autor": "INEI (vía Gestión)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-874",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Oferta de centros comerciales por zona de Lima",
+   "autor": "Arellano (vía Perú Retail)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-875",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Qué hace diferente a Lima Norte como polo de emprendimiento emergente en el Perú de 2026",
+   "autor": "Consulta RUC (blog)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-876",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Mercado Beauty en Lima 2026: hábitos de compra del consumidor limeño",
+   "autor": "Clientes Anónimos (consultora)",
+   "anio": "2026",
    "huerfana": false
   }
  ],
@@ -13278,10 +13368,60 @@
    "s": "lima-norte-megaplaza-plaza-norte",
    "t": "F-866",
    "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-867",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-868",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-869",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-870",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-871",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-872",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-873",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-874",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-875",
+   "k": "cita"
+  },
+  {
+   "s": "lima-norte-megaplaza-plaza-norte",
+   "t": "F-876",
+   "k": "cita"
   }
  ],
  "meta": {
-  "generado": "2026-10-27",
+  "generado": "2026-10-28",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -13568,6 +13708,18 @@
      "D": 7,
      "E": 1,
      "B": 3
+    }
+   },
+   {
+    "fecha": "2026-10-28",
+    "nuevas": 10,
+    "acumuladas": 875,
+    "AB": 1,
+    "rigor": {
+     "C": 3,
+     "D": 4,
+     "B": 1,
+     "E": 2
     }
    }
   ],
@@ -15188,20 +15340,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 845,
+    "fuentes": 865,
     "rigor": {
-     "B": 125,
-     "A": 303,
-     "C": 184,
-     "D": 182,
+     "B": 128,
+     "A": 304,
+     "C": 192,
+     "D": 189,
      "?": 15,
-     "E": 36
+     "E": 37
     },
-    "nodes": 20,
+    "nodes": 21,
     "outputs": 5,
-    "wikilinks": 124,
+    "wikilinks": 130,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 738,
+    "fuentes_citadas_en_nodes": 758,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -15222,7 +15374,7 @@
      "cites": 274
     },
     "fecha": "2026-10-27",
-    "commit": "33ba34e",
+    "commit": "346a107",
     "fuente": "git"
    }
   ],

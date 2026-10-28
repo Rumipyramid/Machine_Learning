@@ -1,9 +1,9 @@
 # Lima Norte, Megaplaza y Plaza Norte: qué estudios existen y qué tan sólidos son
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-27 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-28 · Versión: **v1.0**
 > Origen: `/seeker` (registro empírico + teórico/crítico).
-> Fuentes en `research/fuentes/codice.md`: **F-847 a F-866**.
+> Fuentes en `research/fuentes/codice.md`: **F-847 a F-876** (F-867 a F-876: barrido de los últimos 5 años, 2026-10-28).
 > Pregunta: **¿qué información y estudios hay sobre Lima Norte y sus dos grandes centros comerciales, Megaplaza y Plaza Norte?**
 
 ---
@@ -53,6 +53,27 @@ Además existe un volumen grande de **tesis de pregrado** (UCV, UPN, USIL) sobre
 | Gran Terminal de Plaza Norte: ~1 millón de personas al mes; muchos acompañantes no entran al mall | Estudio interno citado por Perú Retail (F-858) | 🟠 Estudio no publicado. |
 | 1T 2013: Megaplaza S/ 240 M en ventas vs. Plaza Norte S/ 218 M | Perú Retail (F-859) | 🟠 Viejo; no hay serie reciente pública. |
 
+### 2.3 Solo lo de los últimos 5 años (2021-2026)
+
+**Conclusión: en cinco años casi no hay investigación académica nueva sobre Lima Norte ni sobre sus malls.** Solo aparecieron dos artículos académicos. El dato más actual y útil es una encuesta de consultora (Ipsos 2025). Lo demás es prensa con cifras de tráfico.
+
+| Año | Estudio | Tipo y solidez | Qué dice |
+|---|---|---|---|
+| 2025 | Mayorca Huamán, *Ensayo* (PUCP) (F-861) | Cualitativo, 3 mercados · ⚠️ arbitraje no verificado | Los mercados de barrio y el comercio ambulante forman un "espacio intermedio" vecinal que el diseño de los mercados ignora. |
+| 2025 | Ipsos, Perfiles Zonales 2025 (F-867) | Encuesta de consultora · 🟡 | Lima Norte es la zona más poblada: 26% de 11,7 millones. Otras cifras (≈7 de 10 bancarizados, ingreso ~S/ 4.069) sin asignación verificada: el PDF no abrió. |
+| 2021 | Higa, *Territorios* (F-847) | Etnografía · 🟢 revisada por pares | El mall exige "saber ser consumidor"; en Megaplaza la apropiación es más tensa que en Jockey Plaza. |
+| 2021 | Ipsos, Perfiles Zonales 2021 (F-868) | Encuesta de consultora · 🟡 | Lima Norte concentraba el 43% del NSE E de Lima y la menor penetración de internet. |
+| 2023 | Tesis UPN (F-872) | Tesis · 🔴 sin arbitraje | Comercio electrónico y consumo textil en Lima Norte. |
+| 2023 | INEI vía Gestión (F-873) | Estadística oficial vía prensa · 🔵 | Se crean menos empresas en Lima Norte (6.018) que en Lima Centro (8.760); 42,5% son de comercio. |
+| 2023 | Gestión (F-857) | Prensa · 🟠 | Megaplaza recibe más de 2 millones de visitas al mes. |
+| 2026 | Gestión con datos de Poken (F-869) | Prensa con medición privada · 🟠 | Enero 2026: tráfico en tiendas de Megaplaza −7,9% y de Plaza Norte −3,6%, mientras otros malls de Lima subían. ⚠️ Dato de un solo resumen. |
+| 2026 | Gestión con datos de Poken (F-870) | Prensa · 🟠 | La afluencia a malls de Lima se recuperó en mayo de 2026, tras el golpe del calor del Niño Costero y la incertidumbre política. |
+| 2026 | Arellano vía Perú Retail (F-874) | Prensa · 🟠 | Lima Norte tiene seis malls, igual que Lima Moderna. |
+| 2024 | Infobae (F-871) | Prensa · 🟠 | Perfil histórico de Megaplaza, sin cifras nuevas. |
+| 2026 | Blog y consultora de belleza (F-875, F-876) | 🔴 sin método | Cifras sueltas; el 38% de población que da el blog contradice a Ipsos. No usar. |
+
+**Señal nueva que vale la pena seguir:** los dos malls de Independencia perdieron tráfico a inicios de 2026 mientras otros malls de Lima crecían (F-869). Si se confirma, contradice el relato de Lima Norte como zona de crecimiento continuo. Falta la fuente primaria (reporte de Poken).
+
 ---
 
 ## 3. La capa teórica: cómo se ha leído Lima Norte
@@ -98,7 +119,7 @@ No se encontró ningún estudio que refute de forma directa el poder de compra a
 
 ## 7. Limitaciones y siguientes pasos
 
-- No se abrieron los textos completos (sin acceso a Redalyc ni a los repositorios PUCP desde el entorno).
+- No se abrieron los textos completos: Redalyc, los repositorios PUCP e ipsos.com están fuera de los dominios permitidos de la sesión.
 - No se revisaron directamente: Golte y Adams (1987), Huber (2002), los reportes trimestrales de Parque Arauco (dan visitas y ventas por país) ni los de Cencosud/E. Wong.
 - **Dato oficial que sí existe y conviene bajar:** INEI (censos 2017, ENAHO por distrito) y APEIM (NSE por zona de Lima, que separa "Lima Norte" como zona). El skill `/contexto-peruano` es el camino para traerlo con cifra verificada.
 - Para Rimac: el modelo `lapuerta` no tiene variable de zona de Lima. Si se quiere simular al cliente de Lima Norte, haría falta una marginal APEIM por zona.
