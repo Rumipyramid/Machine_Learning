@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-899 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-904), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-899 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-909), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -331,6 +331,22 @@ presente está 🔵 replicado con matices. Lo marcado "inferencia" es interpreta
    (Sunstein, 2022, F-894). En flujos de pago o de afiliación de tarjeta, la fricción suele bloquear justo el
    mecanismo de compromiso (débito automático) que ayuda contra el sesgo del presente (inferencia).
 
+**Hipótesis conductuales que abren el estudio mexicano y las voces de practitioners (para validar en campo):**
+
+No son hallazgos. El estudio de inclusión financiera de México (F-898) y los practitioners (F-899, F-909) plantean
+mecanismos de conducta; varios coinciden con evidencia de otras fuentes. Por eso valen como hipótesis para el trabajo
+de campo, no como conclusiones.
+
+| # | Hipótesis conductual | De dónde sale | Con qué coincide | Cómo se probaría en campo |
+|---|---|---|---|---|
+| 1 | **La red familiar y el "guardadito" compiten con el seguro.** Ante un golpe, la gente recurre primero a familia, ahorros y recorte de gastos; el seguro no aparece | Estudio mexicano (F-898) | Microseguro en México: el pago sirvió para devolver préstamos de la familia (F-896); encuesta SBS-CAF (F-903); índice de Credicorp (F-906); artículo de la Universidad de Lima (F-908). **Cinco fuentes coinciden** | Preguntar qué hizo la persona en su último golpe económico, antes de hablar de seguros. Diseñar el seguro como complemento de la red, no como reemplazo |
+| 2 | **El ritmo de pago debe seguir al ritmo del ingreso.** Quien cobra por semana tiene menos seguros | Estudio mexicano (F-898, asociación en datos de 2018) | Microseguro con pago semanal junto al crédito (F-896) | Probar cobros semanales o atados al ingreso frente a cobros mensuales |
+| 3 | **El adulto mayor o el dependiente poco digital se alcanza a través de un familiar** | Estudio mexicano (F-898) | Baja digitalización de dependientes que muestra el diagnóstico interno de julio 2026 | Probar un rol de "usuario apoderado" en el app para el familiar que gestiona |
+| 4 | **La confianza se gana cuando algo falla, y la fricción pequeña acumulada empuja a irse sin una decisión consciente** | Practitioners (F-899) | Fuga tras siniestro aun con clientes satisfechos (F-890); riesgo de fuga con mala experiencia digital del siniestro (F-872) | Medir abandono tras secuencias de fallos pequeños, no solo tras un fallo grave |
+| 5 | **Delegar en una IA exige confirmar en cada paso sensible** (pago, reembolso) para sentir control | Practitioners (F-899) | Rechazo social a la IA en siniestros (F-881) | Prueba de usabilidad de un agente con y sin confirmaciones explícitas |
+| 6 | **El momento de vida pesa más que la edad**, y el mejor momento para ofrecer es cuando el riesgo se siente cerca | Practitioners (F-899) y Beway (F-909) | Compra de auto en el concesionario (F-905, 42%); alzas de demanda tras crisis (F-908, descriptivo) | Probar ofertas atadas a eventos (compra de auto, nacimiento, siniestro de un conocido) frente a ofertas por edad |
+| 7 | **La confianza se construye usando el producto** y superando el miedo en la interacción | Estudio mexicano (F-898) | Completar la primera tarea genera confianza (F-895, 35%) | Medir la confianza antes y después de la primera gestión resuelta |
+
 **Dónde entra en el trabajo de la gerencia (propuesta):**
 
 - **En las tres definiciones que hoy no existen.**
@@ -370,12 +386,24 @@ confirma el problema de valor percibido en productos de baja frecuencia.
 | Informe mundial de seguros generales de Capgemini (2024, F-901) | 27% cambió de aseguradora en dos años, sobre todo por precio (60%) y cobertura (53%). Se centra en la suscripción | **Débil.** Recuerda que el precio pesa más que lo digital al irse |
 | Blog de Beway sobre seguros | No se pudo leer: el dominio está bloqueado desde la sesión | Pendiente |
 
+**Lote 3 (mismo día):**
+
+| Documento | Qué aporta | ¿Robustece? |
+|---|---|---|
+| Índice de Inclusión Financiera de Credicorp 2026, con Ipsos (F-906) | La billetera pasó de 11% a 49% en cinco años y se usa a diario, pero la tenencia de seguros privados no creció; Perú tiene la más baja (13%) pese a su alto uso de billetera | **Sí, y matiza la "puerta ajena".** Tener la puerta de alta frecuencia no basta: el seguro no se suma solo a los hábitos diarios. Coincide con la baja penetración de Nubank (F-863) |
+| Estudio global de consumidores de seguros de Accenture (2023, F-905) | 42% compraría su seguro de auto en el concesionario (32% en 2018); 60% compartiría datos por siniestros sin formularios | **Parcial.** Apoya el momento de compra como puerta y la rapidez del siniestro como valor. Intención declarada |
+| Artículo de la Universidad de Lima sobre economía conductual en seguros en Perú (F-908) | Las redes familiares compiten con el seguro; desconfianza e informalidad; alzas de demanda tras crisis | **Parcial.** Suma una fuente peruana a la hipótesis de la red familiar. Es revisión y descripción, sin diseño causal |
+| Boletín legal de Pérez-Llorca (3T 2026, F-907) | Perú ya tiene reglamento de IA por niveles de riesgo; en siniestros, la aseguradora puede pedir documentos sin límite de veces en los primeros 20 días | **Para señales y para la pregunta 2.** El tiempo del siniestro tiene una puerta abierta en la norma |
+| Artículo de Beway sobre seguro marítimo (F-909) | Sesgos que explican el subaseguro; seguro por defecto y "timing"; caso alemán de lenguaje conductual en siniestros (+30% de aceptación de talleres, −2% de siniestralidad, sin verificar) | **Parcial.** Es un caso de segunda mano, pero apunta a que el lenguaje en el momento del siniestro mueve conducta y costo |
+
 **Para el banco de señales (§6):**
 
 - **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones (Flat 101 sobre Revolut, F-899). Es una señal, sin resultados.
 - **Hubs de salud con valor diario** como respuesta al "no lo usé" (F-895). Es una propuesta de agencia, sin resultados.
 - **Finanzas abiertas en la agenda regulatoria peruana y "seguro abierto" en Brasil**, que permitirían ofertas según datos compartidos por el cliente (F-900, F-902).
 - **Seguros paramétricos en desarrollo en Perú** (una microfinanciera y el Ministerio de Desarrollo Agrario), aún sin oferta (F-902).
+- **Reglamento peruano de IA por niveles de riesgo (sept-2025)**, que alcanzará a la tarificación y los siniestros con IA (F-907).
+- **Seguros que se usan en vida y cambian con la etapa** (Bradesco Vida Viva, F-905), sin cifras.
 
 ---
 

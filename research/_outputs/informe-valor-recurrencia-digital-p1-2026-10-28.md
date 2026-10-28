@@ -1,7 +1,7 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 3 (incorpora
-diez documentos aportados por la usuaria)
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 4 (incorpora
+quince documentos aportados por la usuaria)
 (el formato para la gerencia se define después)
 **Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.0, 2026-10-28). Las fuentes se
 citan como (Autor, año) y con su número del registro de fuentes del proyecto (F-n).
@@ -123,6 +123,11 @@ con data propia: cohortes emparejadas o un despliegue escalonado.
   cercanas a 50% (Inga Falcón para el PNUD, 2025, F-902). En Chile, obligar a los bancos a licitar el seguro atado
   al crédito hipotecario bajó el desgravamen 62% (Coloma, 2019, F-904). La puerta por defecto funciona, pero sin
   competencia encarece el seguro.
+- **Tener la puerta no basta.** En LatAm, la billetera móvil pasó de 11% a 49% de la población en cinco años y se usa
+  a diario, pero la tenencia de seguros privados no creció; Perú tiene la más baja de la región (13%) pese a su alto
+  uso de billetera (Banco de Ideas Credicorp e Ipsos, 2026, F-906). El seguro no se suma solo a los hábitos diarios.
+- **El momento de compra funciona como puerta.** 42% compraría su seguro de auto en el concesionario, frente a 32% en
+  2018 (Accenture, 2023, F-905; intención declarada).
 - **En Perú, la venta 100% digital tiene techo.** Solo 20% compraría un seguro de forma digital; el canal presencial
   domina (encuesta SBS-CAF 2022, vía F-903). En LatAm, 67% empieza a buscar seguro de vida en línea, pero compra con
   una persona (McKinsey, 2023, F-900).
@@ -164,6 +169,12 @@ legítimo, pero es **selección**, no prevención, y se mide distinto.
   interés a su red, y evitaron deuda cara o vender activos. Después del siniestro, todos los asegurados dijeron que
   fue buena decisión (Poulton y Magnoni, 2013, F-896). La muestra es pequeña (32 familias aseguradas y 36 no
   aseguradas) y no aleatoria.
+- **Perú: la norma deja abierto el tiempo del siniestro.** La aseguradora tiene 30 días desde la documentación completa
+  para responder, pero puede pedir información adicional en los primeros 20 días sin un límite expreso de veces
+  (Pérez-Llorca, 2026, F-907).
+- **El lenguaje en el momento del siniestro mueve conducta y costo.** Una aseguradora alemana rediseñó el lenguaje de
+  sus agentes con ciencias del comportamiento: la aceptación de su red de talleres superó 30% y, al escalarlo, la
+  siniestralidad bajó 2% (caso citado por Beway, F-909; cifras no verificadas en el original).
 - **Perú: el problema está en pagar, no en el canal.** Los microseguros devuelven en siniestros solo 16,7% de la
   prima (en LatAm ronda 40%); 18 productos no pagaron ningún siniestro en 2024; reclamar exige documentos que no
   existen en zonas remotas (F-902). De quienes desconfían de las aseguradoras, 47% dice que no cumplen lo ofrecido
@@ -207,6 +218,23 @@ valor, y qué la frena**. Esta lectura agrega cuatro distinciones que el anális
    presta para cobrar de más, y ahí interviene el regulador: en Chile, licitar el seguro atado al crédito bajó el
    precio del desgravamen 62% (F-904).
 
+**Hipótesis conductuales para el trabajo de campo.** El estudio mexicano de inclusión financiera y las voces de
+practitioners no son evidencia, pero abren mecanismos que coinciden con otras fuentes. Valen como hipótesis:
+
+1. **La red familiar y el "guardadito" compiten con el seguro.** Ante un golpe, la gente recurre primero a familia,
+   ahorros y recorte de gastos. Es la hipótesis más respaldada: coinciden cinco fuentes (F-896, F-898, F-903, F-906,
+   F-908). Implica diseñar el seguro como complemento de la red, no como su reemplazo.
+2. **El cobro debe seguir el ritmo del ingreso.** Quien cobra por semana tiene menos seguros (F-898); el microseguro
+   mexicano se pagaba cada semana junto al crédito (F-896).
+3. **El dependiente o el adulto mayor poco digital se alcanza a través de un familiar** (F-898). Se conecta con la
+   baja digitalización de dependientes del diagnóstico interno.
+4. **La fricción pequeña acumulada empuja a irse sin una decisión consciente**, y la confianza se gana cuando algo
+   falla (F-899). Coincide con la fuga tras siniestro (F-890, F-872).
+5. **Delegar en una IA exige confirmar en cada paso sensible** para sentir control (F-899).
+6. **El momento de vida pesa más que la edad**, y conviene ofrecer cuando el riesgo se siente cerca (F-899, F-909),
+   como al comprar un auto (F-905).
+7. **La confianza se construye usando el producto** (F-898); completar la primera tarea genera confianza (F-895).
+
 **Propuesta para las tres definiciones que hoy no existen:**
 
 - **Fidelidad:** elegir quedarse teniendo alternativas, a diferencia de renovar por inercia.
@@ -246,8 +274,8 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 
 **Pendientes para la siguiente versión:**
 
-- el resto de los documentos de la otra conversación (ya se incorporaron diez: ver §7);
-- el blog de Beway sobre seguros: el dominio `blog.beway.com` está bloqueado desde el entorno de trabajo;
+- el resto de los documentos de la otra conversación (ya se incorporaron quince: ver §7);
+- el resto del blog de Beway: el dominio `blog.beway.com` está bloqueado desde el entorno de trabajo (se leyó un artículo aportado por la usuaria);
 - las memorias anuales completas de Perú y LatAm;
 - la búsqueda de estudios causales de retención en seguros.
 
@@ -261,6 +289,11 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 | Whitepaper sobre apps de seguros de salud (F-895). ⚠️ El archivo venía rotulado como J.D. Power, pero es de Graphite Digital, una agencia | **Parcial.** Suma el "no lo usé" como razón de fuga y confirma el siniestro y la sobrecarga de información como puntos críticos. Intención declarada, con conflicto de interés |
 | Microseguro de vida en México (F-896) y su ensayo aleatorizado (F-897) | **Sí.** Da evidencia de LatAm para la confianza en el momento de verdad y para la cobertura por defecto. Matiza la puerta de entrada: funciona por defecto y anclada a una relación frecuente |
 | Estudio de inclusión financiera en México (F-898) | **No para esta pregunta.** Sí aporta que parte de la fuga es estructural (cambio de trabajo) y que los adultos mayores se alcanzan mejor por intermediarios |
+| Índice de Inclusión Financiera de Credicorp 2026 (F-906) | **Sí, y matiza la puerta ajena.** La billetera se volvió diaria, pero los seguros no crecieron; Perú tiene la tenencia más baja (13%) |
+| Estudio global de consumidores de Accenture 2023 (F-905) | **Parcial.** El concesionario como puerta (42%) y la rapidez del siniestro como valor. Intención declarada |
+| Artículo de la Universidad de Lima (F-908) | **Parcial.** Suma una fuente peruana a la hipótesis de la red familiar. Sin diseño causal |
+| Boletín legal de Pérez-Llorca 3T 2026 (F-907) | **Para señales y la pregunta 2:** reglamento peruano de IA y plazos del siniestro con una puerta abierta |
+| Artículo de Beway sobre seguro marítimo (F-909) | **Parcial.** El lenguaje conductual en el siniestro mueve conducta y costo (caso de segunda mano) |
 | Diagnóstico de microseguros en el Perú para el PNUD (F-902) y encuesta SBS-CAF 2022 (F-903) | **Sí, el más fuerte para Perú.** Solo 20% compraría digital; la puerta ajena cobra comisiones cercanas a 50%; los siniestros devuelven poco valor. Refuerza que el problema está en pagar, no en el canal |
 | Reporte de McKinsey sobre seguros en LatAm (F-900) | **Parcial.** Búsqueda en línea y compra con persona; seguros últimos en experiencia en Perú. Casos sin cifras verificables |
 | Licitación de seguros hipotecarios en Chile (F-904) | **Sí, para la puerta por defecto** (y para la pregunta 3): sin competencia, el seguro atado cobra de más |
@@ -320,6 +353,9 @@ teoría de valor.
   (practitioners de Flat 101, F-899; opinión).
 - **Finanzas abiertas en la agenda regulatoria peruana y "seguro abierto" en Brasil** (F-900, F-902).
 - **Seguros paramétricos en desarrollo en Perú**, aún sin oferta (F-902).
+- **Reglamento peruano de IA por niveles de riesgo (sept-2025)**, que alcanzará a la tarificación y los siniestros con
+  IA (F-907).
+- **Seguros de vida que se usan en vida y cambian con la etapa** (Bradesco Vida Viva, F-905), sin cifras.
 - **Hubs de salud con valor diario como respuesta al "no lo usé"** (F-895; propuesta de una agencia, sin
   resultados).
 
@@ -332,7 +368,7 @@ ejercicio, no un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-904, más F-183, F-353 y F-442). Enlaces en el Anexo D.
+`research/fuentes/codice.md` (F-847 a F-909, más F-183, F-353 y F-442). Enlaces en el Anexo D.
 
 ## Anexo D · Referencias con enlace
 
@@ -349,7 +385,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-852** · Brockett, P. L.; Golden, L. L.; Guillen, M.; Nielsen, J. P.; Parner, J.; Pérez-Marín, A. M. (Journal of Risk and Insurance 75(3):713-737) (2008). *Survival Analysis of a Household Portfolio of Insurance Policies: How Much Time Do You Have to Stop Total Customer Defection?*. 🟢 A. [Ver fuente](https://ideas.repec.org/a/bla/jrinsu/v75y2008i3p713-737.html)
 - **F-854** · Jones, D.; Molitor, D.; Reif, J. (Quarterly Journal of Economics 134(4):1747-1791) (2019). *What Do Workplace Wellness Programs Do? Evidence from the Illinois Workplace Wellness Study*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:oup:qjecon:v:134:y:2019:i:4:p:1747-1791.)
 - **F-855** · Song, Z. & Baicker, K. (JAMA) (2019). *Effect of a Workplace Wellness Program on Employee Health and Economic Outcomes: A Randomized Clinical Trial*. 🟢 A. [Ver fuente](https://hcp.hms.harvard.edu/publication/effect-workplace-wellness-program-employee-health-and-economic-outcomes-randomized)
-- **F-856** · Singh, N.; Panigrahi, R.; Shekhar, R. (Indian Journal of Marketing 54(7):68-82; DOI 10.17010/ijom/2024/v54/i7/174017) (2024). *Fostering Digital Engagement and Customer Retention in Indian Insurance: An Empirical Study*. 🟡 C. [Ver fuente](https://indianjournalofmarketing.com/index.php/ijom/article/view/174017) · PDF aportado por la usuaria.
+- **F-856** · Singh, N.; Panigrahi, R.; Shekhar, R. (Indian Journal of Marketing 54(7):68-82; DOI 10.17010/ijom/2024/v54/i7/174017) (2024). *Fostering Digital Engagement and Customer Retention in Indian Insurance: An Empirical Study*. 🟡 C. [Ver fuente](https://indianjournalofmarketing.com/index.php/ijom/article/view/174017) · Documento aportado por la usuaria.
 - **F-857** · Lemonade, Inc. (Form 10-K FY2025 y cartas a accionistas 2025, SEC) (2026). *Form 10-K FY2025; Shareholder letters Q2-Q4 2025*. 🔵 B. [Ver fuente](https://www.sec.gov/Archives/edgar/data/1691421/000169142126000016/lmnd-20251231.htm)
 - **F-858** · Oscar Health, Inc. (Form 10-K FY2025; llamadas de resultados 1T25 y 1T26) (2026). *Form 10-K FY2025; earnings calls*. 🟡 C. [Ver fuente](https://www.sec.gov/Archives/edgar/data/1568651/000156865126000011/oscr-20251231.htm)
 - **F-859** · Alan (carta a accionistas Q2 2025) (2025). *Alan - 2025 Q2 Letter to Shareholders*. 🟠 D. [Ver fuente](https://alan.com/en/blog/discover-alan/a/alan-2025-q2-letter-to-shareholders)
@@ -381,13 +417,18 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-890** · LexisNexis Risk Solutions (2023). *Moment of Truth: claims satisfaction and auto insurance switching (whitepaper)*. 🟡 C. [Ver fuente](https://www.claimsjournal.com/news/national/2023/06/08/317385.htm)
 - **F-891** · INFORMS (nota de prensa sobre artículo en Marketing Science; autores no verificados) (s.f.). *Insurance companies: want to steal your competitors' customers? New research says it may cost you*. 🔵 B. [Ver fuente](https://www.informs.org/News-Room/INFORMS-Releases/News-Releases/Insurance-companies-want-to-steal-your-competitors-customers-New-research-says-it-may-cost-you)
 - **F-894** · Sunstein, C. R. (Behavioural Public Policy 6(4):654-673) (2022). *Sludge Audits*. 🟢 A. [Ver fuente](https://www.cambridge.org/core/journals/behavioural-public-policy/article/abs/sludge-audits/12A7E338984CE8807CC1E078EC4F13A7)
-- **F-895** · Graphite Digital (encuesta de Opinium por encargo) (2025). *Redefining digital experience in health insurance: strategic priorities for a changing market*. 🟡 C. [Ver fuente](https://graphitedigital.com) · PDF aportado por la usuaria.
-- **F-896** · Poulton, D. & Magnoni, B. (MicroInsurance Centre, proyecto MILK) (2013). *MILK Brief #16: 'Doing the Math' – Life Microinsurance in Mexico (Compartamos Banco)*. 🟡 C. [Ver fuente](https://microinsurancecentre.milliman.com/en/insight/milk-brief-16-doing-the-math-life-microinsurance-in-mexico) · PDF aportado por la usuaria.
+- **F-895** · Graphite Digital (encuesta de Opinium por encargo) (2025). *Redefining digital experience in health insurance: strategic priorities for a changing market*. 🟡 C. [Ver fuente](https://graphitedigital.com) · Documento aportado por la usuaria.
+- **F-896** · Poulton, D. & Magnoni, B. (MicroInsurance Centre, proyecto MILK) (2013). *MILK Brief #16: 'Doing the Math' – Life Microinsurance in Mexico (Compartamos Banco)*. 🟡 C. [Ver fuente](https://microinsurancecentre.milliman.com/en/insight/milk-brief-16-doing-the-math-life-microinsurance-in-mexico) · Documento aportado por la usuaria.
 - **F-897** · Zimmerman, E.; Bauchet, J.; Magnoni, B.; Poulton, D. (MicroInsurance Centre, proyecto MILK); trabajo relacionado de Bauchet (8.700 prestatarios) (2013). *Protecting those left behind: an experimental study of life microinsurance purchase decisions of Compartamos Banco's borrowers*. 🔵 B. [Ver fuente](https://microinsurancecentre.milliman.com/en/insight/milk-rct-protecting-those-left-behind-an-experimental-study-of-life-microinsurance-purchase-decision)
-- **F-898** · Martínez Gutiérrez, A. L. (coord.); Hindriks, P.; Reséndiz Ruiz, C.; Santos Ochoa, J. (por encargo de Treo) (c. 2021 (año no visible en el documento)). *El camino a la tranquilidad financiera: oportunidades para la disrupción de las finanzas personales en México. Estudio completo*. 🟡 C. [Ver fuente](https://treo.mx) · PDF aportado por la usuaria.
+- **F-898** · Martínez Gutiérrez, A. L. (coord.); Hindriks, P.; Reséndiz Ruiz, C.; Santos Ochoa, J. (por encargo de Treo) (c. 2021 (año no visible en el documento)). *El camino a la tranquilidad financiera: oportunidades para la disrupción de las finanzas personales en México. Estudio completo*. 🟡 C. [Ver fuente](https://treo.mx) · Documento aportado por la usuaria.
 - **F-899** · Flat 101 (Vanessa Ballesteros Abad y Ricardo Tayar López; posts de LinkedIn resumidos por Claude a partir de capturas de la usuaria) — cuentan como una sola fuente de origen (2025-2026). *Voces de practitioners de behavioral design sobre confianza, fricción, delegación a IA y segmentación por situación*. 🔴 E. Archivo de la usuaria: voces-practitioners.md (posts de LinkedIn, sin URL individual).
 - **F-900** · Craddock, C.; Marchi, R.; Morales, J.; Spak, S.; Waisser, S. (McKinsey & Company) (2023). *Reporte Global de Seguros 2023: Capturando la siguiente ola de crecimiento en América Latina (septiembre 2023)*. 🟡 C. PDF aportado por la usuaria (versión en español); URL pública no verificada en esta sesión.
 - **F-901** · Capgemini Research Institute for Financial Services (2024). *World Property and Casualty Insurance Report 2024: Become an underwriting trailblazer*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
 - **F-902** · Inga Falcón, P. (por encargo de la Oficina de Perú del PNUD y su Iniciativa de Seguros y Financiamiento de Riesgos) (2025). *Informe de diagnóstico de microseguros en el Perú (15 de diciembre de 2025)*. 🔵 B. PDF aportado por la usuaria; URL pública no verificada en esta sesión.
 - **F-903** · SBS y CAF (citada vía el diagnóstico del PNUD, F-902) (2022). *Encuesta de Capacidades Financieras del Perú 2022 (resultados sobre seguros)*. 🔵 B. Cita secundaria en F-902; documento original no consultado.
 - **F-904** · Coloma C., F. (Instituto de Economía, Pontificia Universidad Católica de Chile; ex Superintendente de Valores y Seguros) (2019). *Licitación de los seguros asociados a los créditos hipotecarios: algunos resultados y propuestas de mejoramiento (Documento de Política Pública)*. 🔵 B. PDF aportado por la usuaria (Documento de Política Pública, Instituto de Economía UC); URL pública no verificada.
+- **F-905** · Saldanha, K. & Staehle, T. (Accenture) (2023). *Seeing the people behind the policies: Accenture's Global Insurance Consumer Study 2023*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
+- **F-906** · Banco de Ideas Credicorp, con Ipsos (Rojas, P.; Wiener, L.; Pinedo, S.; Zamora, C.; Sánchez, L.) (2026). *Índice de Inclusión Financiera de Credicorp 2026: un vínculo más digital (octubre 2026)*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
+- **F-907** · Pérez-Llorca (equipos de Seguros y Reaseguros de Colombia, España, México, Portugal y Perú) (2026). *Actualidad Iberoamericana de Seguros, tercer trimestre 2026*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
+- **F-908** · Enríquez Quicaño, J. B.; Alvarado Mesa, M. F.; Romero Valdivia, M. S. (Desafíos: Economía y Empresa n.° 8, Universidad de Lima, pp. 11-38; DOI 10.26439/ddee2026.n008.7940) (2025). *Aplicación de la economía conductual en el mercado de los seguros*. 🟡 C. [Ver fuente](https://doi.org/10.26439/ddee2026.n008.7940) · Documento aportado por la usuaria.
+- **F-909** · Beway, en colaboración con la Asociación Latinoamericana de Suscriptores Marítimos (autoría individual no indicada) (s.f. (c. 2025-2026)). *Cerrar la brecha de aseguramiento marítimo en América Latina: una mirada desde las ciencias del comportamiento*. 🟠 D. Archivo de la usuaria: articulo-bewAY-_Brecha-aseguramiento-maritimo.md (blog.beway.com, dominio bloqueado desde la sesión).
