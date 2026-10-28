@@ -386,3 +386,4 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   tradicional]] — extensión regional de este node (Brasil, Chile, Colombia); confirma el mismo
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
+- [[valor-recurrencia-digital-seguros|Valor de la recurrencia digital en seguros]] — extiende la regla de complejidad (lo simple migra, lo complejo pide persona) del canal de venta al servicio y al siniestro.

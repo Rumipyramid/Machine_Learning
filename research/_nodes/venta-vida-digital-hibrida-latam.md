@@ -230,3 +230,4 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 - `proyecto-back-to-basics-ffvv-vida.md` — caso real de RIMAC (Perú) donde la apuesta es
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
+- [[valor-recurrencia-digital-seguros|Valor de la recurrencia digital en seguros]] — muestra que en LatAm la puerta digital a escala la tienen bancos digitales y billeteras (Nubank, Mercado Pago, Yape), no las aseguradoras.

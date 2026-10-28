@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-15.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-28.*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las
@@ -76,6 +76,7 @@ por afirmación cuando corresponda.
 | `_nodes/convergencia-psicologia-economia-ia.md` | Convergencia psicología + economía + IA (`/trinidad`: empírica + social + negocio): LLMs como sujetos simulados y sus fallas, modelos fundacionales de cognición (Centaur), sesgos en la IA, agentes como actores económicos, encuestados sintéticos como negocio; implicaciones para `lapuerta` (§6); tablero PE1-PE8 | 2026-10-04 | v1.0 (iteración 1; F-543 a F-645, todo leído por resumen) |
 | `_nodes/fenomenos-psicologicos.md` | **Capa transversal** — Fenómenos psicológicos clásicos y su estado de replicación (44): influencia social (Asch, Milgram, Stanford, espectador, disonancia), percepción (tiempo, bouba/kiki, color-emoción, Gestalt, cegueras de atención), cognición encarnada y priming, juicio y memoria (pico-final, dotación, aversión a la pérdida, señuelo, anclaje); reglas RF1-RF6, preguntas PF1-PF6 | 2026-10-04 | v1.0 (F-647 a F-741, leído por resumen; todo en el grafo semántico) |
 | `_nodes/lealtad-gamificacion-recompensas-retail.md` | Gamificación, recompensas y lealtad en retail (`/trinidad`: empírica + social + negocio): catálogo de 31 intervenciones con diseño, método y efecto; solo 1 experimento fuerte de gamificación; sin evidencia causal en LatAm; F-802 a F-846 | 2026-10-15 | v1.0 |
+| `_nodes/valor-recurrencia-digital-seguros.md` | Valor de la recurrencia digital en seguros (`/trinidad`: empírica ancla + negocio + social acotada): menú de cinco teorías de valor (costo de servir, retención, venta cruzada, prevención, confianza en el siniestro) con indicador que reemplaza al MAU, nivel de evidencia y banco de señales para foresight; insumo del benchmarking para Gerencia de Digital de RIMAC (RIMAC excluida como caso); F-847 a F-885 | 2026-10-28 | v1.0 |
 
 ---
 
