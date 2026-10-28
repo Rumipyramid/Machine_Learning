@@ -4,7 +4,7 @@
 > Fecha de elaboración: 2026-10-27 · Última actualización: 2026-10-28 · Versión: v0.2 (exploratorio; suma §8 salud en general, §9 vida, §10 terrenos de oportunidad y §11 puntos ciegos)
 > Origen: pedido de la persona usuaria de investigar tres ramos (vehicular, salud y microseguros) y de responder si el camino
 > correcto es digitalizar, si digitalizar significa tener una app y qué hay detrás de "en salud lo digital se junta con el servicio".
-> Método de `/trinidad` sin la pista social. Fuentes registradas en `research/fuentes/codice.md` (F-1148 a F-1158 en v0.1; F-1159 a F-1187 en v0.2); reutiliza
+> Método de `/trinidad` sin la pista social. Fuentes registradas en `research/fuentes/codice.md` (F-1148 a F-1158 en v0.1; F-1159 a F-1190 en v0.2); reutiliza
 > F-41, F-48, F-442, F-855, F-882, F-884, F-888, F-889, F-890, F-931, F-933, F-1047, F-1125, F-1141 y F-1146.
 > Solo fuentes públicas. Todo se leyó por extractos de buscador, notas de prensa y resúmenes; ningún estudio se abrió completo.
 
@@ -444,9 +444,56 @@ Es una **síntesis mía** de §2 a §11. Ordena las hipótesis por cuánto las r
 - **Qué refuerza de lo anterior:** una aseguradora peruana grande combina **capacidad física** (camas, clínicas) con **canal digital** (Tsana, app), que es justo la condición que §8 y §12 piden: lo digital sirve cuando hay un servicio detrás. También muestra que el piloto de bajo costo apunta a población sin seguro privado, como el Seguro Salud Yape.
 - **Qué no se sabe:** cuántos de los 90.000 suscriptores usan el servicio, cuántas teleconsultas se resuelven sin derivar, el costo por consulta y si el 50% es una meta o una medición. La cifra de 50% **no** está respaldada por la literatura revisada (§8) y la dan quienes venden el servicio.
 
-### 13.3 Qué hacer con esto
+### 13.3 Cómo están haciendo la orientación médica: WhatsApp en Tsana (publicación de la propia empresa)
+
+Fuente: una publicación de LinkedIn del 27 de agosto (año no visible, probablemente 2026) de una líder de diseño e innovación de Pacífico Salud, y una captura de la web de Tsana, ambas aportadas por la persona usuaria (F-1188). Es una **declaración de la propia empresa** (🔴 E): dice qué hacen, no qué logran.
+
+- **Qué hacen.** Orientación médica por WhatsApp, 24/7 todo el año, atendida por **médicos reales**, para resolver malestares cotidianos y guiar a la persona cuando lo necesite: si duda entre ir a emergencia o esperar hasta mañana, o si solo quiere preguntarle algo a un médico. Llevaba poco menos de 3 meses y seguían iterando. El equipo dice haber diseñado también **gestión de citas** y **ayuda para encontrar medicamentos** por la misma vía.
+- **Cómo se ofrece.** La web de Tsana muestra dos puertas: **consulta virtual inmediata** y **orientación médica por WhatsApp, gratis**. El menú habla de "Mi plan", "Mis beneficiarios", "Precios" y "Activa tu cupón".
+- **La idea de diseño que declaran.** El mejor canal de una experiencia de salud no siempre es una app o una web, y diseñar una buena conversación es diseñar un buen servicio.
+- **Qué calza con lo que se revisó antes (inferencia mía).**
+  - Coincide con la hipótesis de teleorientación con médico o enfermería que escala (S7): **ya existe en el mercado peruano**, así que la pregunta pasa de "¿conviene?" a "¿qué resultado da?".
+  - Es un caso de "digital no es app" (§2): el canal es un chat que la persona ya usa.
+  - Pone un humano en el triaje, que es justo lo que la evidencia pide (los verificadores automáticos aciertan poco el diagnóstico y a veces subestiman; F-1159).
+  - La puerta **gratuita** actúa como contacto de valor antes de cualquier siniestro; ver §14.
+- **Qué no se sabe.** Cuántas orientaciones hubo, qué proporción se resolvió sin derivar, cuántas terminaron en consulta paga, cita o emergencia, qué cuesta atender 24/7 con médicos, ni si se mide el subtriaje. Tampoco cómo protegen los datos de salud que viajan por WhatsApp (la ley de datos personales los trata como sensibles; no verifiqué esa ley en esta ronda).
+- **Señal social.** La publicación tenía 56 reacciones y 1 compartido: señal débil.
+
+### 13.4 Qué hacer con esto
 
 Pegar el texto de las notas de Gestión que más importen (basta el cuerpo del artículo) o imprimirlas a PDF desde la sesión de suscriptor y subirlas: así se pueden leer completas y registrar con la fecha y la cifra exacta.
+
+## 14. Los seguros se perciben lejanos: sesgo del presente y qué cambia para lo digital
+
+**Límite principal.** La persona usuaria mencionó un artículo del blog de Beway donde esto se desarrolla con más profundidad. **No lo encontré ni lo leí** (la búsqueda no lo devolvió y el sitio no se abre desde la sesión). Lo que sigue sale de fragmentos de otras fuentes (F-1190, F-1189), todas nivel N2 o N3, y de lo ya trabajado en el node de economía conductual de los seguros.
+
+### 14.1 Lo que se sabe (dato, con nivel de confianza bajo)
+
+| Idea | Qué dicen los fragmentos | Confianza |
+|---|---|---|
+| **Sesgo del presente** | La gratificación inmediata hace que los clientes posterguen la compra, elijan un producto inadecuado o contraten una cobertura insuficiente (documento de una reaseguradora, 2019) | Baja: fragmento de un documento no abierto |
+| **Riesgo lejano frente a tangible** | La gente compra más cuando el riesgo le parece tangible; los seguros baratos de accidentes personales rara vez se contratan (columna argentina, 2017) | Baja: opinión |
+| **Terceros pesan más que la propia experiencia** | Un estudio de Fasecolda halló que la opinión de terceros pesa más que la experiencia propia en la compra | Baja: fragmento |
+| **Tabú y optimismo** | Evitar hablar de la muerte y creer que no ocurrirá pronto frenan la compra de vida (blog de MAG Seguros, Brasil) | Baja: blog de corredores |
+| **Prevención** | Solo 32% de los peruanos asociaría el seguro con prevención (columnista, sin fuente visible) | Muy baja |
+| **Desconfianza** | 7 de cada 10 confían poco (39%) o desconfían (30%) de las instituciones financieras (nota de Gestión, fecha no visible); la desconfianza en SBS-CAF 2022 ya estaba en el node de comportamiento | Baja-media |
+
+### 14.2 Lectura (inferencia mía)
+
+1. **Si el seguro se percibe lejano y el presente pesa más, el problema no es solo el canal: es cuándo y cómo aparece el valor.** Un seguro que solo se "siente" al pagar o al reclamar tiene poca presencia entre una y otra. Lo digital puede dar presencia (contactos útiles antes de un siniestro), pero **solo si el contacto sirve**; el que "cuenta algo de la empresa" no cambia la distancia.
+2. **La orientación médica gratuita por WhatsApp (§13.3) es un ejemplo de valor antes del siniestro:** la persona recibe algo útil sin haber tenido un evento cubierto. Que reduzca la distancia percibida es una **hipótesis**; no hay medición publicada.
+3. **Bajar el costo de actuar en el momento** (cotizar y pagar en un paso, por billetera o chat) ataca la postergación, pero la evidencia que tenemos es de recordatorios en citas (F-1152) y de mensajes de ahorro con efectos heterogéneos (F-1175); en seguros no hay prueba.
+4. **Riesgo ético.** Usar el sesgo del presente para empujar la compra puede llevar a vender mal, sobre todo en vida con ahorro e inversión (§9.3). La regla de §9.3 (informar en digital, cerrar con controles) vale aquí también.
+5. **Explicaciones alternativas** que no hay que descartar: precio e ingresos (en el IIF, 26% sin ningún seguro; F-1189), informalidad, desconfianza en el pago del siniestro, trámites. La "lejanía" puede ser consecuencia y no causa.
+
+### 14.3 Hipótesis (para probar con datos propios)
+
+| # | Hipótesis | Cómo probarla |
+|---|---|---|
+| D1 | Un contacto útil antes de cualquier siniestro (orientación médica, recordatorio de algo que le sirve) sube la percepción de utilidad y la renovación | Prueba con grupo de control; medir renovación y encuesta de utilidad percibida |
+| D2 | La puerta gratuita de orientación por WhatsApp convierte a plan pago o consulta paga en una proporción medible, sin subir los casos de emergencia evitable | Embudo: orientaciones, derivaciones, conversión, emergencias evitadas |
+| D3 | Un riesgo concreto y cercano (evento tangible) mueve más la compra que la probabilidad abstracta | Prueba A/B de mensaje; vigilar que no sea manipulación |
+| D4 | Cobros pequeños y frecuentes por billetera bajan la postergación frente a un pago anual | Comparar conversión y caducidad entre esquemas de cobro |
 
 ## Conexiones
 

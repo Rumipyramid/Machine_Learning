@@ -59,6 +59,7 @@ Toda entrada del ledger tiene **estos campos obligatorios**:
 | **Usado en / fundamenta** | Dónde y para qué la usaste en el proyecto | Ej. "dato de penetración 2.08% en `seguros_…md`". |
 | **URL / referencia** | Enlace o cita completa | Si es offline (libro/PDF local), pon la cita bibliográfica. |
 | **Registrado** | Fecha `YYYY-MM-DD` en que se anotó | Usa la fecha de hoy. |
+| **Nivel de lectura** | Cuánto de la fuente se abrió y se leyó (desde 2026-10-28): `N1` documento leído desde un archivo o captura aportados; `N2` solo resumen o fragmento de buscador o nota de prensa, el original no se abrió; `N3` solo titular o cita secundaria, no verificada | Márcalo siempre y **con honestidad**: si no abriste el documento, es N2 o N3 aunque la cifra venga de un estudio serio. No lo confundas con la rigurosidad (esa mide el tipo de fuente). |
 
 ---
 
@@ -127,9 +128,9 @@ Cuando crees el archivo por primera vez, úsalo exactamente con esta estructura:
 | E | 🔴 Débil | Opinión sin metodología, sin origen verificable o anónima. |
 
 ## Fuentes registradas
-| ID | Autor | Año | Fuente / Título | Rigurosidad | Resumen breve | Usado en / fundamenta | URL / referencia | Registrado |
-|---|---|---|---|---|---|---|---|---|
-| F-1 | … | … | … | 🟢 A — {justificación} | … | … | … | YYYY-MM-DD |
+| ID | Autor | Año | Fuente / Título | Rigurosidad | Resumen breve | Usado en / fundamenta | URL / referencia | Registrado | Nivel de lectura |
+|---|---|---|---|---|---|---|---|---|---|
+| F-1 | … | … | … | 🟢 A — {justificación} | … | … | … | YYYY-MM-DD | N1, N2 o N3 |
 ```
 
 ---
