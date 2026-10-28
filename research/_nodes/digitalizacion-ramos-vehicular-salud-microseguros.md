@@ -352,7 +352,7 @@ Escala: 🔵 hay evidencia causal en otro contexto; 🟡 evidencia mixta; 🟠 s
 2. **Se mide proceso, no resultado.** Asistencia a la cita, satisfacción y velocidad abundan; resolución del problema de salud, protección efectiva y costo total para la persona casi no se miden.
 3. **Sesgo de publicación y de autoselección.** Los proveedores publican sus éxitos (F-1165), y quien elige el canal digital ya es distinto de quien no (F-1172). Por eso comparar persistencia o costo entre canales no prueba que el canal sea la causa.
 4. **Evidencia que se contradice.** Telemedicina y gasto (F-1160 frente a F-1151) y persistencia por canal (India frente a Australia; F-1172). Aquí la honestidad es decir "depende" y no promediar.
-5. **Lectura limitada.** No pude abrir los textos completos de varias fuentes: el servidor de la sesión no resuelve JAMA, el repositorio de los NIH (PMC y PubMed), El Peruano ni CafeMutual. Todo lo de esta sección se leyó por **extractos de buscador**. Antes de citar una cifra en un entregable, conviene abrir la fuente.
+5. **Lectura limitada.** No pude abrir los textos completos de las fuentes F-1159 a F-1185 (2026-10-28): la red de la sesión no resuelve JAMA Network, el repositorio de los NIH (PMC y PubMed), Nature, JMIR, BJGP, NBER, Stanford HAI, la SOA, arXiv, CHBRP, El Peruano ni CafeMutual; el resto de los sitios no lo probé porque el sistema indicó detenerme tras varios bloqueos. Todo lo de esta sección se leyó por **extractos de buscador**. Antes de citar una cifra en un entregable, conviene abrir la fuente.
 6. **La pista social no se corrió.** No sé qué dicen asegurados, corredores y médicos en el Perú sobre teleconsulta, triaje o seguros de vida en línea.
 
 ### 11.2 Puntos ciegos del diseño y de la lógica
@@ -385,6 +385,48 @@ Precios y suscripción con IA (*pricing*); reaseguro; reforma de EsSalud, SIS y 
 4. ¿Cuántos Vida Ley se convierten en individual al cesar?
 5. ¿Qué entienden de costos y riesgos quienes compran vida con ahorro o con inversión, según el canal?
 6. ¿Qué se pierde en equidad cuando el canal es solo digital?
+
+## 12. Mapa final: dónde sí hay oportunidad, de qué forma y dónde no
+
+Es una **síntesis mía** de §2 a §11. Ordena las hipótesis por cuánto las respalda la evidencia revisada y por si cumplen cuatro condiciones: hay una fricción repetida y barata de quitar, existe capacidad detrás (médicos, talleres, asesores), el resultado se puede medir y la persona gana algo verificable. **Ninguna tiene aún prueba causal en el Perú.**
+
+### 12.1 Dónde sí, y de qué forma
+
+| Terreno | Forma que sugiere la evidencia | Por qué | Condición | Respaldo |
+|---|---|---|---|---|
+| **Recordatorios** de cita, pago, renovación (SOAT, vida) | SMS, llamada o chat; no app | Citas: 67,8% frente a 78,6% con mensajes y 80,3% con llamadas (F-1152); costo bajo | Que haya citas disponibles; en seguros es extrapolación, hay que probarlo | 🔵 en citas · 🟠 en seguros |
+| **Farmacia y adherencia en crónicos** | Farmacéutico como punto de contacto, receta electrónica y recordatorio | Efecto medio en adherencia (F-1166); más de la mitad compra sin receta (F-1168) | Definir qué puede hacer el farmacéutico y quién paga; sin evaluación peruana | 🔵 |
+| **Teleorientación de enfermería + cita en la red** | Línea o chat con enfermería que escala a un médico y deja la cita agendada | Teletriaje ya es masivo en EsSalud (F-1169); la continuidad reduce reconsultas (F-1163) | Historia clínica compartida y cupos; evidencia de triaje telefónico antigua (F-1164) | 🟡 |
+| **Vida temporal simple** | Web, billetera o chat para cotizar y pagar, suscripción simplificada en montos bajos y **llamada de un asesor al cierre** | Solo 25% cierra sin ayuda (F-1171); la fricción de la solicitud frena (F-1171, F-1184) | Montos bajos; vigilar siniestralidad (F-1176) | 🟡 |
+| **Vida Ley → seguro individual al dejar el empleo** | Aviso al cese con opción de mantener o convertir | Cobertura obligatoria que se mantiene por decisión desde 2025 (F-1178) | Idea mía; no hay dato de conversión | 🟠 |
+| **Herramientas para el asesor** (cotizador, firma, seguimiento) | Digital detrás, asesor al frente | El cierre sigue siendo asistido (F-1171, F-1157) | Que los incentivos del asesor no desvíen la venta (F-1173) | 🔵 |
+| **Transparencia** (rescate y costos año por año; estado de trámites) | Simulador y seguimiento en la web o el chat | Opacidad como riesgo de mala venta (F-1180); costo bajo | Sin prueba de que suba confianza o renovación | 🟠 |
+
+### 12.2 Dónde sí, pero con condiciones
+
+| Terreno | Condición que lo decide |
+|---|---|
+| **Teleconsulta como producto de baja prima** (ej.: Seguro Salud Yape) | Si es puerta de acceso a la red o un producto aparte; sin resultados publicados (F-888). Puede sumar uso y gasto (F-1151) |
+| **Seguimiento de crónicos** | Solo con contacto humano; efectos modestos (F-1153) |
+| **Vida con ahorro o devolución** | Digital para informar; cierre con confirmación de que entendió el rescate |
+| **Navegación de atención** | Probar con grupo de control antes de comprar: hoy solo hay evidencia de proveedores (F-1165) |
+| **Integración con clínicas y farmacias propias** | Depende del poder de mercado y de que se evalúe calidad y costo (F-1181) |
+| **Canal asistido para mayores** | Es requisito más que oportunidad: casi 49% sin internet y menos uso de video (F-1119, F-1182) |
+
+### 12.3 Dónde no (o no solo digital)
+
+| Terreno | Por qué no |
+|---|---|
+| **Triaje automático sin un humano que corrija** | Diagnóstico 19% a 37,9%, triaje 48,8% a 90,1%, subtriaje; sin ensayo que muestre menos visitas a urgencias (F-1159, F-1183) |
+| **Vida con inversión vendida solo digital y sin idoneidad** | El riesgo es de la persona y el costo es opaco; bajar la fricción facilita compras mal entendidas; la evidencia de robo-advice es de corretaje (F-1174, F-1180) |
+| **App propia para productos de uso raro** (SOAT, vida temporal) | Unas 2,7 interacciones al año (F-1125); web, billetera, chat y rieles de pago llegan donde la persona ya está |
+| **Digitalizar el SOAT esperando más cumplimiento** | Ya es ~90% digital pero solo 3 de cada 10 motos tienen SOAT vigente: el problema es obligación, precio y fiscalización (F-1149) |
+| **Microseguro digital sin mejorar el valor** | 97,8% por instituciones financieras y siniestralidad de 16,7%: antes del canal está el valor (F-882) |
+| **IA que niega o demora autorizaciones y reclamos sin revisión humana** | Riesgo de reforzar patrones de negación y de daño reputacional (F-1179) |
+| **Medir el éxito por satisfacción o velocidad** | La satisfacción premia el antibiótico (F-1162) y la velocidad puede apurar negaciones |
+| **Usar lo digital como palanca para contener costos médicos** | Los motores son farmacia, ambulatorio y nuevas tecnologías (F-1102); la telemedicina no bajó el gasto de forma demostrada (F-1160) |
+| **Suscripción acelerada en montos y edades altos** | Experiencia de mortalidad corta; fallas en edades altas, montos grandes y mala declaración (F-1176) |
+| **Canal solo digital para mayores o zonas con poco acceso** | Excluye a quien más necesita el servicio (F-1182) |
 
 ## Conexiones
 
